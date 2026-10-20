@@ -6,39 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.me
 
 # mlx.core.meshgrid
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.meshgrid.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.meshgrid
-
- Table of contents 
-
-## Contents
-
-# mlx.core.meshgrid
-
-**meshgrid(**arrays: array*, *sparse: bool | None = False*, *indexing: str | None = 'xy'*, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), ...]**
+**meshgrid(**arrays: array*, *sparse: bool | None = False*, *indexing: str | None = 'xy'*, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.md#mlx.core.array), ...]**
 : Generate multidimensional coordinate grids from 1-D coordinate arrays
 
 Parameters:
 
-***arrays** ([array](mlx.core.array.html#mlx.core.array)) – Input arrays.
+***arrays** ([array](mlx.core.array.md#mlx.core.array)) – Input arrays.
 **sparse** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, a sparse grid is returned in which each output
 array has a single non-zero element. If `False`, a dense grid is returned.
 Defaults to `False`.
@@ -49,6 +22,4 @@ Returns:
 The output arrays.
 
 Return type:
-[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.html#mlx.core.array))
-
-** Contents
+[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.md#mlx.core.array))

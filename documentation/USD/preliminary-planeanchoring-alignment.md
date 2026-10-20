@@ -1,6 +1,7 @@
 # preliminary:planeAnchoring:alignment
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 An option that specifies the orientation of a plane.
 
@@ -16,13 +17,13 @@ uniform token preliminary:planeAnchoring:alignment (
 )
 ```
 
-##### Plane Anchor Types
+##### Plane anchor types
 
 - **`horizontal`**: Requests that the runtime anchor the prim on a floor, table, ceiling, or other flat surface.
 - **`vertical`**: Requests that the runtime anchor the prim on a wall, door, window, or other vertical surface.
 - **`any`**: Requests that the runtime anchor the prim on the first horizontal or vertical surface detected.
 
-##### Anchor a Prim to a Horizontal Plane
+##### Anchor a prim to a horizontal plane
 
 The following asset definition requests that the runtime anchor this prim to the first surface the runtime detects that occupies a horizontal orientation in relation to the camera.
 
@@ -39,9 +40,10 @@ def Cube "PlaneAnchoredCube" (
 
 ## See Also
 
-- [preliminary:anchoring:type](preliminary-anchoring-type.md)
+### Properties
+- [preliminary:anchoring:type](./preliminary-anchoring-type.md)
   A option that specifies the type of anchor.
-- [preliminary:imageAnchoring:referenceImage](preliminary-imageanchoring-referenceimage.md)
+- [preliminary:imageAnchoring:referenceImage](./preliminary-imageanchoring-referenceimage.md)
   The characteristics of an image the runtime should scan for in order to attach a prim.
 
 

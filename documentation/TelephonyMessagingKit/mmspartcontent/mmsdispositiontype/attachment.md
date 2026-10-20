@@ -1,7 +1,8 @@
 # MMSPartContent.MMSDispositionType.attachment
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A disposition to render the content part as an attachment to the message.
 
@@ -16,7 +17,8 @@ case attachment
 
 ## See Also
 
-- [MMSPartContent.MMSDispositionType.inline](mmspartcontent/mmsdispositiontype/inline.md)
+### Working with disposition types
+- [MMSPartContent.MMSDispositionType.inline](./inline.md)
   A disposition to render the content part in line with the rest of the message.
 
 

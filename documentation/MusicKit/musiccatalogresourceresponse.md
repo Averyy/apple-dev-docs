@@ -1,7 +1,8 @@
 # MusicCatalogResourceResponse
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains results for a catalog resource request.
 
@@ -23,51 +24,52 @@ struct MusicCatalogResourceResponse<MusicItemType> where MusicItemType : MusicIt
 ## Topics
 
 ### Instance Properties
-- [let items: MusicItemCollection<MusicItemType>](musiccatalogresourceresponse/items.md)
-  A collection of items matching the filter used in the originating [`MusicCatalogResourceRequest`](musiccatalogresourcerequest.md).
+- [let items: MusicItemCollection<MusicItemType>](./musiccatalogresourceresponse/items.md)
+  A collection of items matching the filter used in the originating [`MusicCatalogResourceRequest`](./musiccatalogresourcerequest.md).
 ### Instance Methods
-- [func item(for: MusicItemID) -> MusicItemType?](musiccatalogresourceresponse/item(for:).md)
+- [func item(for: MusicItemID) -> MusicItemType?](./musiccatalogresourceresponse/item%28for%29.md)
   Returns the item in this response that corresponds to the given identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MusicCatalogResourceRequest](musiccatalogresourcerequest.md)
+### Resource Loading Using Filters
+- [struct MusicCatalogResourceRequest](./musiccatalogresourcerequest.md)
   A request that your app uses to fetch items from the Apple Music catalog using a filter.
-- [protocol AlbumFilter](albumfilter.md)
+- [protocol AlbumFilter](./albumfilter.md)
   Album properties your app uses as a filter for a catalog resource request.
-- [protocol ArtistFilter](artistfilter.md)
+- [protocol ArtistFilter](./artistfilter.md)
   Artist properties your app uses as a filter for a catalog resource request.
-- [protocol CuratorFilter](curatorfilter.md)
+- [protocol CuratorFilter](./curatorfilter.md)
   Curator properties your app uses as a filter for a catalog resource request.
-- [protocol GenreFilter](genrefilter.md)
+- [protocol GenreFilter](./genrefilter.md)
   Genre properties your app uses as a filter for a catalog resource request.
-- [protocol MusicVideoFilter](musicvideofilter.md)
+- [protocol MusicVideoFilter](./musicvideofilter.md)
   Music video properties your app uses as a filter for a catalog resource request.
-- [protocol PlaylistFilter](playlistfilter.md)
+- [protocol PlaylistFilter](./playlistfilter.md)
   Playlist properties your app uses as a filter for a catalog resource request.
-- [protocol RadioShowFilter](radioshowfilter.md)
+- [protocol RadioShowFilter](./radioshowfilter.md)
   Radio Show properties your app uses as a filter for a catalog resource request.
-- [protocol RecordLabelFilter](recordlabelfilter.md)
+- [protocol RecordLabelFilter](./recordlabelfilter.md)
   The set of record label properties your app uses as a filter for a catalog resource request.
-- [protocol SongFilter](songfilter.md)
+- [protocol SongFilter](./songfilter.md)
   Song properties your app uses as a filter for a catalog resource request.
-- [protocol StationFilter](stationfilter.md)
+- [protocol StationFilter](./stationfilter.md)
   The set of station properties your app uses as a filter for a catalog resource request.
-- [protocol FilterableMusicItem](filterablemusicitem.md)
+- [protocol FilterableMusicItem](./filterablemusicitem.md)
   A declaration of the associated type that contains the set of music item properties your app uses as a filter for a catalog resource request.
 
 

@@ -1,6 +1,8 @@
 # Providing touch gesture equivalents using Touch Alternatives
 
-**Framework**: Apple silicon
+**Framework**: Apple silicon  
+**Role**: Sample Code  
+**Download**: [ProvidingTouchGestureEquivalentsUsingTouchAlternatives.zip](https://docs-assets.developer.apple.com/published/7a8fac8d5d76/ProvidingTouchGestureEquivalentsUsingTouchAlternatives.zip)
 
 Enable Touch Alternatives to provide keyboard, mouse, and trackpad equivalents to your iOS app when it runs on a Mac with Apple silicon.
 
@@ -16,7 +18,7 @@ Touch Alternatives is a feature that provides keyboard, mouse, and trackpad equi
 
 This sample app displays a circle that you can move around using touch gestures. You can use the app to explore Touch Alternatives on your Mac with Apple silicon.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run the sample app:
 
@@ -48,7 +50,7 @@ The `requiredOnboarding` array can contain any of the following values:
 
 The values in the array indicate which alternatives to highlight in the Touch Alternatives tab of the app’s Settings window. The array should include only those values that make sense for the app. For example, the sample app doesn’t detect the device’s motion, so it doesn’t include `Tilt` in the array.
 
-```None
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -70,11 +72,12 @@ Starting with Xcode 14, developers can add the property list file `com.apple.uik
 
 ## See Also
 
-- [Running your iOS apps in macOS](running-your-ios-apps-in-macos.md)
+### iOS apps on Mac
+- [Running your iOS apps in macOS](./running-your-ios-apps-in-macos.md)
   Modernize the iOS apps you choose to run on a Mac with Apple silicon, or opt out of running on a Mac altogether.
-- [Adapting iOS code to run in the macOS environment](adapting-ios-code-to-run-in-the-macos-environment.md)
+- [Adapting iOS code to run in the macOS environment](./adapting-ios-code-to-run-in-the-macos-environment.md)
   Support modern iOS features that result in a better user experience when running on Apple silicon.
-- [Providing an edge-to-edge, full-screen experience in your iPad app running on a Mac](providing-an-edge-to-edge-full-screen-experience-in-your-ipad-app-running-on-a-mac.md)
+- [Providing an edge-to-edge, full-screen experience in your iPad app running on a Mac](./providing-an-edge-to-edge-full-screen-experience-in-your-ipad-app-running-on-a-mac.md)
   Take advantage of the true native resolution of a Mac display when running your iPad app in full-screen mode on a Mac.
 
 

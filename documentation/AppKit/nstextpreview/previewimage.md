@@ -1,7 +1,8 @@
 # previewImage
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image that contains the requested text from your view.
 
@@ -14,15 +15,20 @@ The image that contains the requested text from your view.
 var previewImage: CGImage { get }
 ```
 
+```objc
+@property (readonly) CGImageRef previewImage;
+```
+
 #### Discussion
 
 You specify this image at initialization time. The system uses it to implement any visual effects involving your view’s text. Create the image with your text on a transparent background.
 
 ## See Also
 
-- [var presentationFrame: NSRect](nstextpreview/presentationframe.md)
+### Getting the preview details
+- [var presentationFrame: NSRect](./presentationframe.md)
   The frame rectangle that places the preview image directly over the matching text.
-- [var candidateRects: [NSValue]](nstextpreview/candidaterects.md)
+- [var candidateRects: [NSValue]](./candidaterects.md)
   Rectangles that define the specific portions of text to highlight.
 
 

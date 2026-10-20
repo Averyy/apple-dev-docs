@@ -1,7 +1,8 @@
 # in(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Match against any of the Info.plist hashes in the provided list.
 

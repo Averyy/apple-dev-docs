@@ -1,7 +1,8 @@
 # kSecAttrProtocolTelnetS
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Telnet over TLS/SSL.
 
@@ -18,6 +19,10 @@ Telnet over TLS/SSL.
 
 ```swift
 let kSecAttrProtocolTelnetS: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolTelnetS;
 ```
 
 

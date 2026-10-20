@@ -1,7 +1,8 @@
 # event
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The CloudKit event that triggered this notification.
 

@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Scanner_RFID
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Scanner_RFID = 0x92
 ```
 

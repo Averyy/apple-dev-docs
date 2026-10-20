@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The error domain used by MetalKit when returning mesh initialization errors.
 
@@ -19,10 +20,15 @@ The error domain used by MetalKit when returning mesh initialization errors.
 static let domain: MTKModelError
 ```
 
+```c
+extern MTKModelError const MTKModelErrorDomain;
+```
+
 ## See Also
 
-- [static let key: MTKModelError](mtkmodelerror/key.md)
-  The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary.
+### Constants
+- [static let key: MTKModelError](./key.md)
+  The key used to retrieve an error string from an error object’s [`userInfo`](../../Foundation/nserror/userinfo.md) dictionary.
 
 
 ---

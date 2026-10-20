@@ -1,7 +1,8 @@
 # operationID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for a long-lived operation.
 
@@ -11,7 +12,7 @@ A unique identifier for a long-lived operation.
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 9.2+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -23,11 +24,12 @@ var operationID: CKOperation.ID { get }
 
 #### Discussion
 
-Pass this property’s value to the [`longLivedOperation(for:)`](ckcontainer/longlivedoperation(for:).md) method to fetch the corresponding long-lived operation. For more information, see [`Long-Lived Operations`](ckoperation#Long-Lived-Operations.md).
+Pass this property’s value to the [`longLivedOperation(for:)`](../ckcontainer/longlivedoperation%28for%29.md) method to fetch the corresponding long-lived operation. For more information, see [Long-Lived Operations](../ckoperation.md#Long-Lived-Operations).
 
 ## See Also
 
-- [CKOperation.ID](ckoperation/id.md)
+### Identifying the Operation
+- [CKOperation.ID](./id.md)
   A type that represents the ID of an operation.
 
 

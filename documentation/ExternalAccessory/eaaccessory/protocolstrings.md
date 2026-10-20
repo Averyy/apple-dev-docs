@@ -1,7 +1,8 @@
 # protocolStrings
 
 **Framework**: External Accessory  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The communication protocols supported by the accessory.
 
@@ -19,6 +20,10 @@ The communication protocols supported by the accessory.
 var protocolStrings: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * protocolStrings;
+```
+
 #### Discussion
 
 Protocol names are formatted as reverse-DNS strings. For example, the string “`com.apple.myProtocol`” might represent a custom protocol defined by Apple. Manufacturers can define custom protocols for their accessories or work with other manufacturers and organizations to define standard protocols for different accessory types.
@@ -29,19 +34,20 @@ If your application supports multiple protocols for a single accessory, your cod
 
 ## See Also
 
-- [var name: String](eaaccessory/name.md)
+### Getting the Manufacturer-Supplied Attributes
+- [var name: String](./name.md)
   The display name of the accessory.
-- [var manufacturer: String](eaaccessory/manufacturer.md)
+- [var manufacturer: String](./manufacturer.md)
   The name of the accessory’s manufacturer.
-- [var modelNumber: String](eaaccessory/modelnumber.md)
+- [var modelNumber: String](./modelnumber.md)
   The model information for the accessory.
-- [var serialNumber: String](eaaccessory/serialnumber.md)
+- [var serialNumber: String](./serialnumber.md)
   The serial number of the accessory.
-- [var firmwareRevision: String](eaaccessory/firmwarerevision.md)
+- [var firmwareRevision: String](./firmwarerevision.md)
   The current firmware version for the accessory.
-- [var hardwareRevision: String](eaaccessory/hardwarerevision.md)
+- [var hardwareRevision: String](./hardwarerevision.md)
   The hardware version of the accessory.
-- [var dockType: String](eaaccessory/docktype.md)
+- [var dockType: String](./docktype.md)
 
 
 ---

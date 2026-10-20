@@ -1,23 +1,25 @@
 # kIOUserNetworkMediaOptionFlowControl
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkMediaOptionFlowControl
 ```
 
 ## See Also
 
-- [kIOUserNetworkMediaOptionEEE](kiousernetworkmediaoptioneee.md)
-- [kIOUserNetworkMediaOptionFullDuplex](kiousernetworkmediaoptionfullduplex.md)
-- [kIOUserNetworkMediaOptionHalfDuplex](kiousernetworkmediaoptionhalfduplex.md)
-- [kIOUserNetworkMediaOptionLoopback](kiousernetworkmediaoptionloopback.md)
+### Getting the Media Options
+- [kIOUserNetworkMediaOptionEEE](./kiousernetworkmediaoptioneee.md)
+- [kIOUserNetworkMediaOptionFullDuplex](./kiousernetworkmediaoptionfullduplex.md)
+- [kIOUserNetworkMediaOptionHalfDuplex](./kiousernetworkmediaoptionhalfduplex.md)
+- [kIOUserNetworkMediaOptionLoopback](./kiousernetworkmediaoptionloopback.md)
 
 
 ---

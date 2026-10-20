@@ -1,7 +1,8 @@
 # id
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the item.
 

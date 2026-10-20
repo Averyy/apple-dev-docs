@@ -1,7 +1,8 @@
 # GLKViewDrawableMultisample.multisample4X
 
 **Framework**: GLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Multisampling is enabled.
 
@@ -16,9 +17,14 @@ Multisampling is enabled.
 case multisample4X
 ```
 
+```c
+GLKViewDrawableMultisample4X
+```
+
 ## See Also
 
-- [GLKViewDrawableMultisample.multisampleNone](glkviewdrawablemultisample/multisamplenone.md)
+### Constants
+- [GLKViewDrawableMultisample.multisampleNone](./multisamplenone.md)
   Multisampling is not enabled.
 
 

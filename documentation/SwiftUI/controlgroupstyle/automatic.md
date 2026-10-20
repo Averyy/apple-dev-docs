@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default control group style.
 
@@ -20,21 +21,24 @@ The default control group style.
 @export(implementation) @preconcurrency static var automatic: AutomaticControlGroupStyle { get }
 ```
 
+Available when `Self` is `AutomaticControlGroupStyle`.
+
 #### Discussion
 
 The default control group style can vary by platform. By default, both platforms use a momentary segmented control style that’s appropriate for the environment in which it is rendered.
 
-You can override a control group’s style. To apply the default style to a control group or to a view that contains a control group, use the [`controlGroupStyle(_:)`](view/controlgroupstyle(_:).md) modifier.
+You can override a control group’s style. To apply the default style to a control group or to a view that contains a control group, use the [`controlGroupStyle(_:)`](../view/controlgroupstyle%28_%29.md) modifier.
 
 ## See Also
 
-- [static var compactMenu: CompactMenuControlGroupStyle](controlgroupstyle/compactmenu.md)
+### Getting built-in control group styles
+- [static var compactMenu: CompactMenuControlGroupStyle](./compactmenu.md)
   A control group style that presents its content as a compact menu when the user presses the control, or as a submenu when nested within a larger menu.
-- [static var menu: MenuControlGroupStyle](controlgroupstyle/menu.md)
+- [static var menu: MenuControlGroupStyle](./menu.md)
   A control group style that presents its content as a menu when the user presses the control, or as a submenu when nested within a larger menu.
-- [static var navigation: NavigationControlGroupStyle](controlgroupstyle/navigation.md)
+- [static var navigation: NavigationControlGroupStyle](./navigation.md)
   The navigation control group style.
-- [static var palette: PaletteControlGroupStyle](controlgroupstyle/palette.md)
+- [static var palette: PaletteControlGroupStyle](./palette.md)
   A control group style that presents its content as a palette.
 
 

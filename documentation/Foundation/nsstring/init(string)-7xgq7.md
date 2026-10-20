@@ -1,7 +1,8 @@
 # init(string:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSString` object initialized by copying the characters from another given string.
 

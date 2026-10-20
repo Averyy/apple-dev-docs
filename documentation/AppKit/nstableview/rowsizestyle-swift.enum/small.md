@@ -1,7 +1,8 @@
 # NSTableView.RowSizeStyle.small
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The table will use a row height specified for a small table. It is required that the size be fully tested and supported if `NSTableViewRowSizeStyleCustom` is not used.
 
@@ -14,15 +15,20 @@ The table will use a row height specified for a small table. It is required that
 case small
 ```
 
+```c
+NSTableViewRowSizeStyleSmall
+```
+
 ## See Also
 
-- [NSTableView.RowSizeStyle.default](nstableview/rowsizestyle-swift.enum/default.md)
+### Constants
+- [NSTableView.RowSizeStyle.default](./default.md)
   The table will use the system default layout size: small, medium or large.
-- [NSTableView.RowSizeStyle.custom](nstableview/rowsizestyle-swift.enum/custom.md)
-  The table will use the [`rowHeight`](nstableview/rowheight.md) or invoke the delegate method [`tableView(_:heightOfRow:)`](nstableviewdelegate/tableview(_:heightofrow:).md), if implemented. The cell layout is not changed.
-- [NSTableView.RowSizeStyle.medium](nstableview/rowsizestyle-swift.enum/medium.md)
+- [NSTableView.RowSizeStyle.custom](./custom.md)
+  The table will use the [`rowHeight`](../rowheight.md) or invoke the delegate method [`tableView(_:heightOfRow:)`](../../nstableviewdelegate/tableview%28_,heightofrow%29.md), if implemented. The cell layout is not changed.
+- [NSTableView.RowSizeStyle.medium](./medium.md)
   The table will use a row height specified for a medium table. It is required that the size be fully tested and supported if `NSTableViewRowSizeStyleCustom` is not used.
-- [NSTableView.RowSizeStyle.large](nstableview/rowsizestyle-swift.enum/large.md)
+- [NSTableView.RowSizeStyle.large](./large.md)
   The table will use a row height specified for a large table. It is required that the size be fully tested and supported if `NSTableViewRowSizeStyleCustom` is not used.
 
 

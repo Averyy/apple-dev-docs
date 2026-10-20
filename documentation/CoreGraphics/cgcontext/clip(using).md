@@ -1,7 +1,8 @@
 # clip(using:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the current clipping path.
 
@@ -24,7 +25,7 @@ func clip(using rule: CGPathFillRule = .winding)
 
 A clipping path restricts the paintable area: painting operations take effect only for those areas in the interior of the clipping path. This method uses the specified rule to calculate the intersection of the current path with the current clipping path. The path resulting from the intersection is used as the new current clipping path for subsequent painting operations.
 
-If the current path contains any non-closed subpaths, this method treats each subpath as if it had been closed with the [`closePath()`](cgcontext/closepath().md) method, then applies the specified rule to determine which areas to fill.
+If the current path contains any non-closed subpaths, this method treats each subpath as if it had been closed with the [`closePath()`](./closepath%28%29.md) method, then applies the specified rule to determine which areas to fill.
 
 After determining the new clipping path, this method clears the context’s current path.
 
@@ -32,17 +33,20 @@ Unlike the current path, the current clipping path is part of the graphics state
 
 ## Parameters
 
-- `rule`: The rule for determining which areas to treat as the interior of the path. See [`CGPathFillRule`](cgpathfillrule.md). This parameter defaults to the [`CGPathFillRule.winding`](cgpathfillrule/winding.md) rule if unspecified.
+- `rule`: The rule for determining which areas to treat as the interior of the path. See [`CGPathFillRule`](../cgpathfillrule.md).
+
+  This parameter defaults to the [`CGPathFillRule.winding`](../cgpathfillrule/winding.md) rule if unspecified.
 
 ## See Also
 
-- [func clip(to: CGRect)](cgcontext/clip(to:)-7cbwq.md)
+### Working with the Current Clipping Path
+- [func clip(to: CGRect)](./clip%28to%29-7cbwq.md)
   Sets the clipping path to the intersection of the current clipping path with the area defined by the specified rectangle.
-- [func clip(to: [CGRect])](cgcontext/clip(to:)-2eg0.md)
+- [func clip(to: [CGRect])](./clip%28to%29-2eg0.md)
   Sets the clipping path to the intersection of the current clipping path with the region defined by an array of rectangles.
-- [func clip(to: CGRect, mask: CGImage)](cgcontext/clip(to:mask:).md)
+- [func clip(to: CGRect, mask: CGImage)](./clip%28to,mask%29.md)
   Maps a mask into the specified rectangle and intersects it with the current clipping area of the graphics context.
-- [var boundingBoxOfClipPath: CGRect](cgcontext/boundingboxofclippath.md)
+- [var boundingBoxOfClipPath: CGRect](./boundingboxofclippath.md)
   Returns the bounding box of a clipping path.
 
 

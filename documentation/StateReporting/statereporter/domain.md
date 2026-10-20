@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: StateReporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reverse DNS-style domain name that identifies this reporter.
 

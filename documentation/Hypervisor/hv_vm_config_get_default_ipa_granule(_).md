@@ -1,7 +1,8 @@
 # hv_vm_config_get_default_ipa_granule(_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 26.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func hv_vm_config_get_default_ipa_granule(_ granule: UnsafeMutablePointer<hv_ipa_granule_t>) -> hv_return_t
+```
+
+```c
+extern hv_return_t hv_vm_config_get_default_ipa_granule(hv_ipa_granule_t *granule);
 ```
 
 #### Return Value

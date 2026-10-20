@@ -1,7 +1,8 @@
 # AsyncThrowingFlatMapSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator that produces elements of the flat map sequence.
 
@@ -20,24 +21,26 @@ The iterator that produces elements of the flat map sequence.
 struct Iterator
 ```
 
+Available when `Base` conforms to `AsyncSequence` and `SegmentOfResult` conforms to `AsyncSequence`.
+
 ## Topics
 
 ### Instance Methods
-- [func next() async throws -> SegmentOfResult.Element?](asyncthrowingflatmapsequence/iterator/next.md)
+- [func next() async throws -> SegmentOfResult.Element?](./iterator/next%28%29.md)
   Produces the next element in the flat map sequence.
-- [func next(isolation: isolated (any Actor)?) async throws -> SegmentOfResult.Element?](asyncthrowingflatmapsequence/iterator/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws -> SegmentOfResult.Element?](./iterator/next%28isolation%29.md)
   Produces the next element in the flat map sequence.
 ### Type Aliases
-- [AsyncThrowingFlatMapSequence.Iterator.Element](asyncthrowingflatmapsequence/iterator/element.md)
+- [AsyncThrowingFlatMapSequence.Iterator.Element](./iterator/element.md)
 ### Default Implementations
-- [AsyncIteratorProtocol Implementations](asyncthrowingflatmapsequence/iterator/asynciteratorprotocol-implementations.md)
+- [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](asynciteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [AsyncIteratorProtocol](../asynciteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

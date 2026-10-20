@@ -1,7 +1,8 @@
 # init(participant:highlight:)
 
 **Framework**: Shared with You  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes the alert controller.
 
@@ -15,6 +16,10 @@ Creates and initializes the alert controller.
 
 ```swift
 convenience init(participant: SWPerson, highlight: SWCollaborationHighlight)
+```
+
+```objc
++ (instancetype) alertControllerWithParticipant:(SWPerson *) participant highlight:(SWCollaborationHighlight *) highlight;
 ```
 
 ## Parameters

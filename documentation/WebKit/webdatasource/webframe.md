@@ -1,17 +1,22 @@
 # webFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The web frame that represents this data source.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var webFrame: WebFrame! { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) WebFrame * webFrame;
 ```
 
 

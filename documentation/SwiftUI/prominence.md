@@ -1,7 +1,8 @@
 # Prominence
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type indicating the prominence of a view hierarchy.
 
@@ -23,24 +24,25 @@ enum Prominence
 ## Topics
 
 ### Getting prominence options
-- [Prominence.standard](prominence/standard.md)
+- [Prominence.standard](./prominence/standard.md)
   The standard prominence.
-- [Prominence.increased](prominence/increased.md)
+- [Prominence.increased](./prominence/increased.md)
   An increased prominence.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func headerProminence(Prominence) -> some View](view/headerprominence(_:).md)
+### Configuring headers
+- [func headerProminence(Prominence) -> some View](./view/headerprominence%28_%29.md)
   Sets the header prominence for this view.
-- [var headerProminence: Prominence](environmentvalues/headerprominence.md)
+- [var headerProminence: Prominence](./environmentvalues/headerprominence.md)
   The prominence to apply to section headers within a view.
 
 

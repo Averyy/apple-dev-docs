@@ -1,14 +1,15 @@
 # ConfigureReport_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 IOReturn ConfigureReport_Impl(OSData *channels, uint32_t action, uint32_t *outCount);
 ```
 

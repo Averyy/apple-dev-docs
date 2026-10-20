@@ -1,11 +1,12 @@
 # ShapeStyle Implementations
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [struct Resolved](color/resolved.md)
+- [struct Resolved](./resolved.md)
   A concrete color value.
 
 

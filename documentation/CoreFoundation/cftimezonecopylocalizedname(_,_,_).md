@@ -1,7 +1,8 @@
 # CFTimeZoneCopyLocalizedName(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the localized name of a given time zone.
 
@@ -20,9 +21,13 @@ Returns the localized name of a given time zone.
 func CFTimeZoneCopyLocalizedName(_ tz: CFTimeZone!, _ style: CFTimeZoneNameStyle, _ locale: CFLocale!) -> CFString!
 ```
 
+```c
+extern CFStringRefCFTimeZoneCopyLocalizedName(CFTimeZoneRef tz, CFTimeZoneNameStyle style, CFLocaleRef locale);
+```
+
 #### Return Value
 
-The name of `tz` localized for `locale`. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The name of `tz` localized for `locale`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
@@ -32,11 +37,12 @@ The name of `tz` localized for `locale`. Ownership follows the [`The Create Rule
 
 ## See Also
 
-- [func CFTimeZoneGetName(CFTimeZone!) -> CFString!](cftimezonegetname(_:).md)
+### Getting Information About Time Zones
+- [func CFTimeZoneGetName(CFTimeZone!) -> CFString!](./cftimezonegetname%28_%29.md)
   Returns the geopolitical region name that identifies a given time zone.
-- [func CFTimeZoneGetSecondsFromGMT(CFTimeZone!, CFAbsoluteTime) -> CFTimeInterval](cftimezonegetsecondsfromgmt(_:_:).md)
+- [func CFTimeZoneGetSecondsFromGMT(CFTimeZone!, CFAbsoluteTime) -> CFTimeInterval](./cftimezonegetsecondsfromgmt%28_,_%29.md)
   Returns the difference in seconds between the receiver and Greenwich Mean Time (GMT) at the specified date.
-- [func CFTimeZoneGetData(CFTimeZone!) -> CFData!](cftimezonegetdata(_:).md)
+- [func CFTimeZoneGetData(CFTimeZone!) -> CFData!](./cftimezonegetdata%28_%29.md)
   Returns the data that stores the information used by a time zone.
 
 

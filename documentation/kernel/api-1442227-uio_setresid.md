@@ -1,14 +1,15 @@
 # uio_setresid
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void uio_setresid(uio_t a_uio, user_ssize_t a_value);
 ```
 

@@ -1,7 +1,8 @@
 # setPassword(_:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the password from the supplied string.
 
@@ -11,7 +12,7 @@ Sets the password from the supplied string.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ func setPassword(_ password: String) throws
 
 #### Discussion
 
-Use this function to encrypt or decrypt an archive with the [`scrypt`](archiveencryptioncontext/encryptionmode-swift.struct/scrypt.md) encryption mode.
+Use this function to encrypt or decrypt an archive with the [`scrypt`](./encryptionmode-swift.struct/scrypt.md) encryption mode.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ Use this function to encrypt or decrypt an archive with the [`scrypt`](archiveen
 
 ## See Also
 
-- [var password: String?](archiveencryptioncontext/password.md)
+### Setting a password
+- [var password: String?](./password.md)
   The password used to encrypt or decrypt an archive.
-- [func generatePassword() throws -> String](archiveencryptioncontext/generatepassword.md)
+- [func generatePassword() throws -> String](./generatepassword%28%29.md)
   Generates a new password.
 
 

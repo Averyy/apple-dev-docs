@@ -1,7 +1,8 @@
 # CPTripEstimateStyle.light
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The light trip estimate display style.
 
@@ -16,9 +17,14 @@ The light trip estimate display style.
 case light
 ```
 
+```c
+CPTripEstimateStyleLight
+```
+
 ## See Also
 
-- [CPTripEstimateStyle.dark](cptripestimatestyle/dark.md)
+### Styles
+- [CPTripEstimateStyle.dark](./dark.md)
   The dark trip estimate display style.
 
 

@@ -1,7 +1,8 @@
 # IOUSBConfigurationDescriptorPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to a configuration descriptor.
 
@@ -10,17 +11,18 @@ A pointer to a configuration descriptor.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBConfigurationDescriptor *IOUSBConfigurationDescriptorPtr;
 ```
 
 ## See Also
 
-- [IOUSBConfigurationDescriptor](iousbconfigurationdescriptor.md)
+### Configuration Descriptors
+- [IOUSBConfigurationDescriptor](./iousbconfigurationdescriptor.md)
   The structure for storing a USB configuration descriptor.
-- [IOUSBConfigurationDescHeader](iousbconfigurationdescheader.md)
+- [IOUSBConfigurationDescHeader](./iousbconfigurationdescheader.md)
   The header of a configuration descriptor.
-- [IOUSBConfigurationDescHeaderPtr](iousbconfigurationdescheaderptr.md)
+- [IOUSBConfigurationDescHeaderPtr](./iousbconfigurationdescheaderptr.md)
   A pointer to a configuration descriptor header.
 
 

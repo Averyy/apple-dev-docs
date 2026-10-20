@@ -1,7 +1,8 @@
 # link
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Detect URLs in text and turn them into links.
 
@@ -17,21 +18,26 @@ Detect URLs in text and turn them into links.
 static var link: WKDataDetectorTypes { get }
 ```
 
+```c
+WKDataDetectorTypeLink
+```
+
 ## See Also
 
-- [static var phoneNumber: WKDataDetectorTypes](wkdatadetectortypes/phonenumber.md)
+### Data Detector Types
+- [static var phoneNumber: WKDataDetectorTypes](./phonenumber.md)
   Detect phone numbers in text and create a link to call the specified number.
-- [static var address: WKDataDetectorTypes](wkdatadetectortypes/address.md)
+- [static var address: WKDataDetectorTypes](./address.md)
   Detect addresses in text and turn them into links to display the location.
-- [static var calendarEvent: WKDataDetectorTypes](wkdatadetectortypes/calendarevent.md)
+- [static var calendarEvent: WKDataDetectorTypes](./calendarevent.md)
   Turn future dates and times into links to create calendar events.
-- [static var trackingNumber: WKDataDetectorTypes](wkdatadetectortypes/trackingnumber.md)
+- [static var trackingNumber: WKDataDetectorTypes](./trackingnumber.md)
   Detect tracking numbers in text and turn them into links.
-- [static var flightNumber: WKDataDetectorTypes](wkdatadetectortypes/flightnumber.md)
+- [static var flightNumber: WKDataDetectorTypes](./flightnumber.md)
   Detect flight numbers in text and turn them into links.
-- [static var lookupSuggestion: WKDataDetectorTypes](wkdatadetectortypes/lookupsuggestion.md)
+- [static var lookupSuggestion: WKDataDetectorTypes](./lookupsuggestion.md)
   Detect Spotlight suggestions and turn them into links.
-- [static var all: WKDataDetectorTypes](wkdatadetectortypes/all.md)
+- [static var all: WKDataDetectorTypes](./all.md)
   Detect all data types and turn them into links.
 
 

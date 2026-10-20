@@ -1,7 +1,8 @@
 # signature
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A digital signature widget type.
 
@@ -19,13 +20,18 @@ A digital signature widget type.
 static let signature: PDFAnnotationWidgetSubtype
 ```
 
+```c
+extern PDFAnnotationWidgetSubtype PDFAnnotationWidgetSubtypeSignature;
+```
+
 ## See Also
 
-- [static let button: PDFAnnotationWidgetSubtype](pdfannotationwidgetsubtype/button.md)
+### Configuring a Widget Subtype
+- [static let button: PDFAnnotationWidgetSubtype](./button.md)
   A button widget type, including push buttons, checkboxes, and radio buttons.
-- [static let choice: PDFAnnotationWidgetSubtype](pdfannotationwidgetsubtype/choice.md)
+- [static let choice: PDFAnnotationWidgetSubtype](./choice.md)
   A type that presents a list of choices the user can choose from.
-- [static let text: PDFAnnotationWidgetSubtype](pdfannotationwidgetsubtype/text.md)
+- [static let text: PDFAnnotationWidgetSubtype](./text.md)
   A text field the user can type text in.
 
 

@@ -1,19 +1,24 @@
 # UITextGranularity.character
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case character
+```
+
+```c
+UITextGranularityCharacter
 ```
 
 #### Discussion
@@ -22,11 +27,12 @@ The unit of text is a character.
 
 ## See Also
 
-- [UITextGranularity.word](uitextgranularity/word.md)
-- [UITextGranularity.sentence](uitextgranularity/sentence.md)
-- [UITextGranularity.paragraph](uitextgranularity/paragraph.md)
-- [UITextGranularity.line](uitextgranularity/line.md)
-- [UITextGranularity.document](uitextgranularity/document.md)
+### Constants
+- [UITextGranularity.word](./word.md)
+- [UITextGranularity.sentence](./sentence.md)
+- [UITextGranularity.paragraph](./paragraph.md)
+- [UITextGranularity.line](./line.md)
+- [UITextGranularity.document](./document.md)
 
 
 ---

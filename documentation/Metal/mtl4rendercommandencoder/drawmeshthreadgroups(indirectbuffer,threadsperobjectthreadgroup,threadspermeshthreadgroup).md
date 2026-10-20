@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a draw command that invokes a mesh shader and, optionally, an object shader with indirect arguments.
@@ -20,23 +21,28 @@ Encodes a draw command that invokes a mesh shader and, optionally, an object sha
 func drawMeshThreadgroups(indirectBuffer: MTLGPUAddress, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)
 ```
 
+```objc
+- (void) drawMeshThreadgroupsWithIndirectBuffer:(MTLGPUAddress) indirectBuffer threadsPerObjectThreadgroup:(MTLSize) threadsPerObjectThreadgroup threadsPerMeshThreadgroup:(MTLSize) threadsPerMeshThreadgroup;
+```
+
 #### Discussion
 
-This method enables you to determine the number of threadgroups per grid indirectly, in the GPU timeline. Metal expects this buffer’s contents to match the layout of structure [`MTLDispatchThreadgroupsIndirectArguments`](mtldispatchthreadgroupsindirectarguments.md). You are responsible for ensuring the address of this buffer has 4-byte alignment.
+This method enables you to determine the number of threadgroups per grid indirectly, in the GPU timeline. Metal expects this buffer’s contents to match the layout of structure [`MTLDispatchThreadgroupsIndirectArguments`](../mtldispatchthreadgroupsindirectarguments.md). You are responsible for ensuring the address of this buffer has 4-byte alignment.
 
-Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of the indirect buffer that the `indirectBuffer` parameter references.
+Use an instance of [`MTLResidencySet`](../mtlresidencyset.md) to mark residency of the indirect buffer that the `indirectBuffer` parameter references.
 
 ## Parameters
 
-- `indirectBuffer`: GPUAddress of an [`MTLBuffer`](mtlbuffer.md) instance with data that matches the layout of the [`MTLDispatchThreadgroupsIndirectArguments`](mtldispatchthreadgroupsindirectarguments.md) structure. This address requires 4-byte alignment.
-- `threadsPerObjectThreadgroup`: A [`MTLSize`](mtlsize.md) instance that represents the number of threads in an object shader threadgroup, if applicable.
-- `threadsPerMeshThreadgroup`: A [`MTLSize`](mtlsize.md) instance that represents the number of threads in a mesh shader threadgroup.
+- `indirectBuffer`: GPUAddress of an [`MTLBuffer`](../mtlbuffer.md) instance with data that matches the layout of the [`MTLDispatchThreadgroupsIndirectArguments`](../mtldispatchthreadgroupsindirectarguments.md) structure. This address requires 4-byte alignment.
+- `threadsPerObjectThreadgroup`: A [`MTLSize`](../mtlsize.md) instance that represents the number of threads in an object shader threadgroup, if applicable.
+- `threadsPerMeshThreadgroup`: A [`MTLSize`](../mtlsize.md) instance that represents the number of threads in a mesh shader threadgroup.
 
 ## See Also
 
-- [func drawMeshThreads(threadsPerGrid: MTLSize, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](mtl4rendercommandencoder/drawmeshthreads(threadspergrid:threadsperobjectthreadgroup:threadspermeshthreadgroup:).md)
+### Drawing with meshes
+- [func drawMeshThreads(threadsPerGrid: MTLSize, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](./drawmeshthreads%28threadspergrid,threadsperobjectthreadgroup,threadspermeshthreadgroup%29.md)
   Encodes a draw command that invokes a mesh shader and, optionally, an object shader with a grid of threads.
-- [func drawMeshThreadgroups(threadgroupsPerGrid: MTLSize, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](mtl4rendercommandencoder/drawmeshthreadgroups(threadgroupspergrid:threadsperobjectthreadgroup:threadspermeshthreadgroup:).md)
+- [func drawMeshThreadgroups(threadgroupsPerGrid: MTLSize, threadsPerObjectThreadgroup: MTLSize, threadsPerMeshThreadgroup: MTLSize)](./drawmeshthreadgroups%28threadgroupspergrid,threadsperobjectthreadgroup,threadspermeshthreadgroup%29.md)
   Encodes a draw command that invokes a mesh shader and, optionally, an object shader with a grid of threadgroups.
 
 

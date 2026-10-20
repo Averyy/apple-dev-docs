@@ -1,7 +1,8 @@
 # MLProgress.Metric.maximumError
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The metric for the model’s maximum error.
 
@@ -21,25 +22,26 @@ case maximumError
 
 ## See Also
 
-- [MLProgress.Metric.accuracy](mlprogress/metric/accuracy.md)
+### Retrieving metric keys
+- [MLProgress.Metric.accuracy](./accuracy.md)
   The metric for the model’s accuracy.
-- [MLProgress.Metric.contentLoss](mlprogress/metric/contentloss.md)
+- [MLProgress.Metric.contentLoss](./contentloss.md)
   The metric for the style transfer model’s content loss.
-- [MLProgress.Metric.loss](mlprogress/metric/loss.md)
+- [MLProgress.Metric.loss](./loss.md)
   The metric for the model’s loss.
-- [MLProgress.Metric.rootMeanSquaredError](mlprogress/metric/rootmeansquarederror.md)
+- [MLProgress.Metric.rootMeanSquaredError](./rootmeansquarederror.md)
   The metric for the model’s root mean squared error (RMSE).
-- [MLProgress.Metric.styleLoss](mlprogress/metric/styleloss.md)
+- [MLProgress.Metric.styleLoss](./styleloss.md)
   The metric for the style transfer model’s style loss.
-- [MLProgress.Metric.stylizedImageURL](mlprogress/metric/stylizedimageurl.md)
+- [MLProgress.Metric.stylizedImageURL](./stylizedimageurl.md)
   The location of the stylized image content in the file system.
-- [MLProgress.Metric.validationAccuracy](mlprogress/metric/validationaccuracy.md)
+- [MLProgress.Metric.validationAccuracy](./validationaccuracy.md)
   The metric for the model’s validation accuracy.
-- [MLProgress.Metric.validationLoss](mlprogress/metric/validationloss.md)
+- [MLProgress.Metric.validationLoss](./validationloss.md)
   The metric for the model’s validation loss.
-- [MLProgress.Metric.validationMaximumError](mlprogress/metric/validationmaximumerror.md)
+- [MLProgress.Metric.validationMaximumError](./validationmaximumerror.md)
   The metric for the model’s validation maximum error.
-- [MLProgress.Metric.validationRootMeanSquaredError](mlprogress/metric/validationrootmeansquarederror.md)
+- [MLProgress.Metric.validationRootMeanSquaredError](./validationrootmeansquarederror.md)
   The metric for the model’s validation root mean squared error (RMSE).
 
 

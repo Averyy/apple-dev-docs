@@ -1,7 +1,8 @@
 # audioTimePitchAlgorithm
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The processing algorithm used to manage audio pitch at different rates.
 
@@ -20,13 +21,18 @@ The processing algorithm used to manage audio pitch at different rates.
 var audioTimePitchAlgorithm: AVAudioTimePitchAlgorithm { get set }
 ```
 
+```objc
+@property (nonatomic, copy) AVAudioTimePitchAlgorithm audioTimePitchAlgorithm;
+```
+
 #### Discussion
 
-The default value on iOS is [`lowQualityZeroLatency`](avaudiotimepitchalgorithm/lowqualityzerolatency.md); on macOS, the default is [`timeDomain`](avaudiotimepitchalgorithm/timedomain.md). The device automatically mutes audio when [`timebase`](avqueuedsamplebufferrendering/timebase.md) is not supported by [`AVAudioTimePitchAlgorithm`](avaudiotimepitchalgorithm.md). Modifying this property while [`timebase`](avqueuedsamplebufferrendering/timebase.md) is not `0.0` may cause the rate to briefly change to `0.0`.
+The default value on iOS is [`lowQualityZeroLatency`](../avaudiotimepitchalgorithm/lowqualityzerolatency.md); on macOS, the default is [`timeDomain`](../avaudiotimepitchalgorithm/timedomain.md). The device automatically mutes audio when [`timebase`](../avqueuedsamplebufferrendering/timebase.md) is not supported by [`AVAudioTimePitchAlgorithm`](../avaudiotimepitchalgorithm.md). Modifying this property while [`timebase`](../avqueuedsamplebufferrendering/timebase.md) is not `0.0` may cause the rate to briefly change to `0.0`.
 
 ## See Also
 
-- [struct AVAudioTimePitchAlgorithm](avaudiotimepitchalgorithm.md)
+### Configuring time and pitch
+- [struct AVAudioTimePitchAlgorithm](../avaudiotimepitchalgorithm.md)
   An algorithm used to set the audio pitch as the rate changes.
 
 

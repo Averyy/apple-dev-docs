@@ -1,7 +1,8 @@
 # init(sampleType:predicate:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new descriptor for the data type and predicate you provided.
 
@@ -19,9 +20,13 @@ Creates a new descriptor for the data type and predicate you provided.
 init(sampleType: HKSampleType, predicate: NSPredicate?)
 ```
 
+```objc
+- (instancetype) initWithSampleType:(HKSampleType *) sampleType predicate:(NSPredicate *) predicate;
+```
+
 ## Parameters
 
-- `sampleType`: The data type of samples that match this descriptor. For more information, see [`Data types`](data-types.md).
+- `sampleType`: The data type of samples that match this descriptor. For more information, see [Data types](../data-types.md).
 - `predicate`: The predicate used to filter samples that match this descriptor. If the predicate is `nil`, the descriptor matches all samples of the specified data type.
 
 

@@ -1,7 +1,8 @@
 # credentialWithUV
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Credential to use when user verification is performed.
 

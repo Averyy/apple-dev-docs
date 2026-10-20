@@ -1,7 +1,8 @@
 # isCameraIntrinsicMatrixDeliveryEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the connection can configure the capture pipeline to deliver camera intrinsics information.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates whether the connection can configure the capture 
 var isCameraIntrinsicMatrixDeliveryEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isCameraIntrinsicMatrixDeliveryEnabled) BOOL cameraIntrinsicMatrixDeliveryEnabled;
+```
+
 #### Discussion
 
-You can set this property to [`true`](https://developer.apple.com/documentation/swift/true) for a video connection if [`isCameraIntrinsicMatrixDeliverySupported`](avcaptureconnection/iscameraintrinsicmatrixdeliverysupported.md) is [`true`](https://developer.apple.com/documentation/swift/true), and only before calling the [`AVCaptureSession`](avcapturesession.md) [`startRunning()`](avcapturesession/startrunning().md) method. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+You can set this property to [`true`](../../Swift/true.md) for a video connection if [`isCameraIntrinsicMatrixDeliverySupported`](./iscameraintrinsicmatrixdeliverysupported.md) is [`true`](../../Swift/true.md), and only before calling the [`AVCaptureSession`](../avcapturesession.md) [`startRunning()`](../avcapturesession/startrunning%28%29.md) method. The default value is [`false`](../../Swift/false.md).
 
-Camera intrinsics describe the current imaging parameters of a capture device in ways that you can use to render overlays or perform computer vision tasks. If [`true`](https://developer.apple.com/documentation/swift/true), any [`AVCaptureVideoDataOutput`](avcapturevideodataoutput.md) instance in this connection can include the [`kCMSampleBufferAttachmentKey_CameraIntrinsicMatrix`](https://developer.apple.com/documentation/coremedia/kcmsamplebufferattachmentkey_cameraintrinsicmatrix) attachment for each sample buffer it vends.
+Camera intrinsics describe the current imaging parameters of a capture device in ways that you can use to render overlays or perform computer vision tasks. If [`true`](../../Swift/true.md), any [`AVCaptureVideoDataOutput`](../avcapturevideodataoutput.md) instance in this connection can include the [`kCMSampleBufferAttachmentKey_CameraIntrinsicMatrix`](../../CoreMedia/kcmsamplebufferattachmentkey_cameraintrinsicmatrix.md) attachment for each sample buffer it vends.
 
 ## See Also
 
-- [var isCameraIntrinsicMatrixDeliverySupported: Bool](avcaptureconnection/iscameraintrinsicmatrixdeliverysupported.md)
+### Delivering camera calibration settings
+- [var isCameraIntrinsicMatrixDeliverySupported: Bool](./iscameraintrinsicmatrixdeliverysupported.md)
   A Boolean value that indicates whether the capture connection currently supports delivering camera intrinsics information.
 
 

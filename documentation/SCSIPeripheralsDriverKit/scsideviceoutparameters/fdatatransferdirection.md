@@ -1,7 +1,8 @@
 # fDataTransferDirection
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction for the caller to send data to or receive data from the device.
 
@@ -10,7 +11,7 @@ The direction for the caller to send data to or receive data from the device.
 
 ## Declaration
 
-```swift
+```c
 uint8_t fDataTransferDirection;
 ```
 
@@ -18,27 +19,28 @@ uint8_t fDataTransferDirection;
 
 Use the following `DriverKit/storage/SCSITask.h` direction values to populate this field:
 
-- [`kSCSIDataTransfer_NoDataTransfer`](https://developer.apple.com/documentation/iokit/1534749-data_transfer_direction/kscsidatatransfer_nodatatransfer)
-- [`kSCSIDataTransfer_FromInitiatorToTarget`](https://developer.apple.com/documentation/iokit/1534749-data_transfer_direction/kscsidatatransfer_frominitiatortotarget)
-- [`kSCSIDataTransfer_FromTargetToInitiator`](https://developer.apple.com/documentation/iokit/1534749-data_transfer_direction/kscsidatatransfer_fromtargettoinitiator)
+- [`kSCSIDataTransfer_NoDataTransfer`](../../iokit/api-1534749-data_transfer_direction/kscsidatatransfer_nodatatransfer.md)
+- [`kSCSIDataTransfer_FromInitiatorToTarget`](../../iokit/api-1534749-data_transfer_direction/kscsidatatransfer_frominitiatortotarget.md)
+- [`kSCSIDataTransfer_FromTargetToInitiator`](../../iokit/api-1534749-data_transfer_direction/kscsidatatransfer_fromtargettoinitiator.md)
 
 ## See Also
 
-- [fLogicalUnitNumber](scsideviceoutparameters/flogicalunitnumber.md)
+### Setting command parameters
+- [fLogicalUnitNumber](./flogicalunitnumber.md)
   The SCSI logical unit number of the device that receives the command.
-- [fTimeoutDuration](scsideviceoutparameters/ftimeoutduration.md)
+- [fTimeoutDuration](./ftimeoutduration.md)
   A timeout for the command, in milliseconds.
-- [fCommandDescriptorBlock](scsideviceoutparameters/fcommanddescriptorblock.md)
+- [fCommandDescriptorBlock](./fcommanddescriptorblock.md)
   A 16-byte opcode to fill out the Command Descriptor Block (CDB).
-- [fRequestedByteCountOfTransfer](scsideviceoutparameters/frequestedbytecountoftransfer.md)
+- [fRequestedByteCountOfTransfer](./frequestedbytecountoftransfer.md)
   The size of the data to transfer.
-- [fBufferDirection](scsideviceoutparameters/fbufferdirection.md)
+- [fBufferDirection](./fbufferdirection.md)
   The direction for the buffer to send or receive data.
-- [fSenseLengthRequested](scsideviceoutparameters/fsenselengthrequested.md)
+- [fSenseLengthRequested](./fsenselengthrequested.md)
   The length of sense data to read, in bytes.
-- [fDataBufferAddr](scsideviceoutparameters/fdatabufferaddr.md)
+- [fDataBufferAddr](./fdatabufferaddr.md)
   The virtual address of the buffer the dext creates to transfer data.
-- [fSenseBufferAddr](scsideviceoutparameters/fsensebufferaddr.md)
+- [fSenseBufferAddr](./fsensebufferaddr.md)
   The virtual address of the buffer that the dext creates to transfer sense data.
 
 

@@ -1,7 +1,8 @@
 # colToIm(_:outputShape:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a column to image operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a column to image operation and returns the result tensor.
 
 ```swift
 func colToIm(_ source: MPSGraphTensor, outputShape: [NSNumber], descriptor: MPSGraphImToColOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) colToImWithSourceTensor:(MPSGraphTensor *) source outputShape:(MPSShape *) outputShape descriptor:(MPSGraphImToColOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,6 +1,7 @@
 # Evaluating language model responses
 
-**Framework**: Evaluations
+**Framework**: Evaluations  
+**Role**: Article
 
 Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
 
@@ -8,7 +9,7 @@ Build an evaluation that runs your intelligence-powered feature against samples 
 
 Evaluations replace manual spot checks with structured, repeatable measurements of your model’s output quality. Define what success looks like by translating broad quality goals into concrete metrics, then run those metrics as often as you need, catching regressions, comparing prompt strategies, and building confidence before shipping.
 
-Because you define your metrics before tuning prompts or switching models, every change is measured against the same criteria. Your focus stays on measurable outcomes rather than subjective impressions of quality. For guidance on how to design your overall strategy for measuring and improving evaluations, see [`Designing effective evaluations`](designing-effective-evaluations.md).
+Because you define your metrics before tuning prompts or switching models, every change is measured against the same criteria. Your focus stays on measurable outcomes rather than subjective impressions of quality. For guidance on how to design your overall strategy for measuring and improving evaluations, see [Designing effective evaluations](./designing-effective-evaluations.md).
 
 An evaluation is a loop. For each sample in your dataset, the framework runs your feature, scores the response with your evaluators, and records a row of results. When the loop finishes, it aggregates those rows into summary statistics.
 
@@ -19,7 +20,7 @@ To create an evaluation, you supply the parts of that loop:
 - Add evaluators that score each response against metrics you define.
 - Aggregate those scores into a metric summary you compare across runs.
 
-All four are members of a single [`Evaluation`](evaluation.md) conformance:
+All four are members of a single [`Evaluation`](./evaluation.md) conformance:
 
 ```swift
 struct LetterCountEvaluation: Evaluation {
@@ -39,11 +40,11 @@ struct LetterCountEvaluation: Evaluation {
 
 The sections that follow fill in each member.
 
-To see these four steps in use in a complete app, with code-based and model-judge scoring, synthetic data, and tool-call evaluation, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
+To see these four steps in use in a complete app, with code-based and model-judge scoring, synthetic data, and tool-call evaluation, see [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
 
-#### Provide Input
+#### Provide input
 
-Define your dataset. Each sample carries a [`prompt`](modelsample/prompt.md) that the model receives and an optional [`expected`](modelsample/expected.md) value:
+Define your dataset. Each sample carries a [`prompt`](./modelsample/prompt.md) that the model receives and an optional [`expected`](./modelsample/expected.md) value:
 
 ```swift
 import Evaluations
@@ -60,11 +61,11 @@ struct LetterCountEvaluation: Evaluation {
 
 ```
 
-Building a large, comprehensive sample set by hand is tedious; see [`Generating synthetic datasets`](generating-synthetic-evaluation-datasets.md) for more details on generating samples synthetically.
+Building a large, comprehensive sample set by hand is tedious; see [Generating synthetic datasets](./generating-synthetic-evaluation-datasets.md) for more details on generating samples synthetically.
 
-#### Define the Subject
+#### Define the subject
 
-The *subject* is the model feature you’re testing. Implement the [`subject(from:)`](evaluation/subject(from:).md) method to call your intelligence-powered feature the same way you do in your app. The framework calls this method once for each sample in your dataset, and you return a [`ModelSubject`](modelsubject.md) that wraps the output alongside any conversation transcript:
+The *subject* is the model feature you’re testing. Implement the [`subject(from:)`](./evaluation/subject%28from%29.md) method to call your intelligence-powered feature the same way you do in your app. The framework calls this method once for each sample in your dataset, and you return a [`ModelSubject`](./modelsubject.md) that wraps the output alongside any conversation transcript:
 
 ```swift
 func subject(from sample: ModelSample<Int>) async throws -> ModelSubject<Int> {
@@ -83,9 +84,9 @@ func subject(from sample: ModelSample<Int>) async throws -> ModelSubject<Int> {
 
 You can inspect both the output and the transcript in the detailed results.
 
-#### Add Evaluators
+#### Add evaluators
 
-Add evaluators that score each response. For guidance on choosing between code-based and model-judge evaluators, see [`Designing specific, measurable criteria in an evaluation suite`](designing-evaluation-criteria.md). Declare a [`Metric`](metric.md) for each measurement, then return one of its result values: [`passing(rationale:)`](metric/passing(rationale:).md) or [`failing(rationale:)`](metric/failing(rationale:).md) for binary checks, and [`scoring(_:rationale:)`](metric/scoring(_:rationale:).md) for continuous values.
+Add evaluators that score each response. For guidance on choosing between code-based and model-judge evaluators, see [Designing specific, measurable criteria in an evaluation suite](./designing-evaluation-criteria.md). Declare a [`Metric`](./metric.md) for each measurement, then return one of its result values: [`passing(rationale:)`](./metric/passing%28rationale%29.md) or [`failing(rationale:)`](./metric/failing%28rationale%29.md) for binary checks, and [`scoring(_:rationale:)`](./metric/scoring%28_,rationale%29.md) for continuous values.
 
 The first evaluator below checks whether the count is exactly correct. The second measures how much the model’s answer deviates from the correct answer:
 
@@ -109,9 +110,9 @@ var evaluators: Evaluators {
 }
 ```
 
-#### Aggregate the Metric Summary
+#### Aggregate the metric summary
 
-Finally, implement [`aggregateMetrics(using:)`](evaluation/aggregatemetrics(using:).md) to define how the framework summarizes your metrics into high-level statistics:
+Finally, implement [`aggregateMetrics(using:)`](./evaluation/aggregatemetrics%28using%29.md) to define how the framework summarizes your metrics into high-level statistics:
 
 ```swift
 func aggregateMetrics(using aggregator: inout MetricsAggregator) {
@@ -135,9 +136,9 @@ func aggregateMetrics(using aggregator: inout MetricsAggregator) {
 }
 ```
 
-#### Run Your Evaluation
+#### Run your evaluation
 
-To run an evaluation, attach the [`EvaluationTrait`](evaluationtrait.md) to a test function using the [`evaluates(_:info:recordTranscripts:)`](https://developer.apple.com/documentation/testing/testtrait/evaluates(_:info:recordtranscripts:)) test trait.
+To run an evaluation, attach the [`EvaluationTrait`](./evaluationtrait.md) to a test function using the [`evaluates(_:info:recordTranscripts:)`](../Testing/testtrait/evaluates%28_,info,recordtranscripts%29.md) test trait.
 
 ```swift
 import Testing
@@ -157,21 +158,21 @@ struct LetterCountTests {
 
 When the run finishes, open the Report navigator and select the Evaluations item beneath the test run to open the evaluation report:
 
-![A screenshot of the Report navigator in Xcode. Beneath a completed LetterCount test run, the Evaluations item is selected, alongside the Insights, Coverage, Tests, and Log items.](/images/com.apple.evaluations/eval-report-navigator@2x.png)
+![A screenshot of the Report navigator in Xcode. Beneath a completed LetterCount test run, the Evaluations item is selected, alongside the Insights, Coverage, Tests, and Log items.](https://developer.apple.com/tutorials/images/com.apple.evaluations/eval-report-navigator@2x.png)
 
-The trait runs the evaluation loop before your test body runs. It loads the dataset, produces a subject for each sample, applies your evaluators, and aggregates the metrics. It then stores the finished [`EvaluationResult`](evaluationresult.md) in [`EvaluationContext`](evaluationcontext.md).
+The trait runs the evaluation loop before your test body runs. It loads the dataset, produces a subject for each sample, applies your evaluators, and aggregates the metrics. It then stores the finished [`EvaluationResult`](./evaluationresult.md) in [`EvaluationContext`](./evaluationcontext.md).
 
-The [`EvaluationResult`](evaluationresult.md) holds three values. The first two are [`DataFrame`](https://developer.apple.com/documentation/tabulardata/dataframe) from the TabularData framework. This collection arranges data in rows and columns.
+The [`EvaluationResult`](./evaluationresult.md) holds three values. The first two are [`DataFrame`](../TabularData/dataframe.md) from the TabularData framework. This collection arranges data in rows and columns.
 
-- **[`summary`](evaluationresult/summary.md)**: Aggregate statistics you compare across runs, as a column for each statistic you compute and a single row holding its value
-- **[`detailed`](evaluationresult/detailed.md)**: Per-sample values, as a row for each sample and columns for the input, the response, and each metric you define
-- **[`groupedSummary`](evaluationresult/groupedsummary.md)**: A preformatted string with aggregate statistics under the groups you defined in [`aggregateMetrics(using:)`](evaluation/aggregatemetrics(using:).md)
+- **[`summary`](./evaluationresult/summary.md)**: Aggregate statistics you compare across runs, as a column for each statistic you compute and a single row holding its value
+- **[`detailed`](./evaluationresult/detailed.md)**: Per-sample values, as a row for each sample and columns for the input, the response, and each metric you define
+- **[`groupedSummary`](./evaluationresult/groupedsummary.md)**: A preformatted string with aggregate statistics under the groups you defined in [`aggregateMetrics(using:)`](./evaluation/aggregatemetrics%28using%29.md)
 
-[`aggregateValue(_:)`](evaluationresult/aggregatevalue(_:).md) reads a single statistic out of the summary. Pass the same operation you registered in [`aggregateMetrics(using:)`](evaluation/aggregatemetrics(using:).md). Here, `.mean(of:)` matches the `computeMean(of: exactMatch)` call from the previous section. If the evaluation didn’t compute that statistic, the method returns a sentinel value of `-1`.
+[`aggregateValue(_:)`](./evaluationresult/aggregatevalue%28_%29.md) reads a single statistic out of the summary. Pass the same operation you registered in [`aggregateMetrics(using:)`](./evaluation/aggregatemetrics%28using%29.md). Here, `.mean(of:)` matches the `computeMean(of: exactMatch)` call from the previous section. If the evaluation didn’t compute that statistic, the method returns a sentinel value of `-1`.
 
-Each `compute` method on [`MetricsAggregator`](metricsaggregator.md) pairs with the operation of the same name, so [`computeStandardDeviation(of:)`](metricsaggregator/computestandarddeviation(of:).md) matches `.standardDeviation(of:)`. The exception is [`custom(of:label:_:)`](metricsaggregator/custom(of:label:_:).md), which you retrieve with `.custom(label:)` by passing the label you chose rather than the metric.
+Each `compute` method on [`MetricsAggregator`](./metricsaggregator.md) pairs with the operation of the same name, so [`computeStandardDeviation(of:)`](./metricsaggregator/computestandarddeviation%28of%29.md) matches `.standardDeviation(of:)`. The exception is [`custom(of:label:_:)`](./metricsaggregator/custom%28of,label,_%29.md), which you retrieve with `.custom(label:)` by passing the label you chose rather than the metric.
 
-To read the values from the [`detailed`](evaluationresult/detailed.md) data frame, subscript it with [`inputColumn`](evaluation/inputcolumn.md), [`responseColumn`](evaluation/responsecolumn.md), or [`expectedColumn`](evaluation/expectedcolumn.md) to get the sample data, or pass one of your metrics to [`subscript(metric:)`](https://developer.apple.com/documentation/tabulardata/dataframe/subscript(metric:)) to get its scores. Each subscript returns a [`Column`](https://developer.apple.com/documentation/tabulardata/column):
+To read the values from the [`detailed`](./evaluationresult/detailed.md) data frame, subscript it with [`inputColumn`](./evaluation/inputcolumn.md), [`responseColumn`](./evaluation/responsecolumn.md), or [`expectedColumn`](./evaluation/expectedcolumn.md) to get the sample data, or pass one of your metrics to [`subscript(metric:)`](../TabularData/dataframe/subscript%28metric%29.md) to get its scores. Each subscript returns a [`Column`](../TabularData/column.md):
 
 ```swift
 @Test(.evaluates(Self.evaluation))
@@ -196,13 +197,13 @@ func inspectDetailedResults() async throws {
 
 Use these lookups to identify failing samples for review, build follow-up datasets from edge cases, or write assertions that go beyond aggregate scores.
 
-For guidance on interpreting results and iterating on your feature, see [`Designing effective evaluations`](designing-effective-evaluations.md).
+For guidance on interpreting results and iterating on your feature, see [Designing effective evaluations](./designing-effective-evaluations.md).
 
-#### Evaluate Tool Calling Behavior
+#### Evaluate tool-calling behavior
 
 Your intelligence-powered features may rely on tools that fetch live data, perform calculations, or trigger actions. Evaluations let you verify that the model passes the correct arguments and calls tools in the expected order.
 
-For details on how to integrate tool calling with Foundation Models, see [`Expanding generation with tool calling`](https://developer.apple.com/documentation/foundationmodels/expanding-generation-with-tool-calling).
+For details on how to integrate tool calling with Foundation Models, see [Expanding generation with tool calling](../FoundationModels/expanding-generation-with-tool-calling.md).
 
 The following example defines a simple, letter-counting tool:
 
@@ -228,7 +229,7 @@ struct CountLetterOccurrences: Tool {
 }
 ```
 
-To verify the model calls this tool correctly, attach a [`TrajectoryExpectation`](trajectoryexpectation.md) to the sample with one or more [`ToolExpectation`](toolexpectation.md) entries:
+To verify the model calls this tool correctly, attach a [`TrajectoryExpectation`](./trajectoryexpectation.md) to the sample with one or more [`ToolExpectation`](./toolexpectation.md) entries:
 
 ```swift
 ModelSample(
@@ -250,7 +251,7 @@ ModelSample(
 ),
 ```
 
-Then, add a [`ToolCallEvaluator`](toolcallevaluator.md) to your evaluators list:
+Then, add a [`ToolCallEvaluator`](./toolcallevaluator.md) to your evaluators list:
 
 ```swift
 // Computed metrics.
@@ -273,17 +274,17 @@ var evaluators: Evaluators {
 
 Running the evaluation with and without the tool produces a summary row for each, so you can compare them at a glance. Here are both rows under the same test:
 
-![A screenshot of the Evaluations summary in the Xcode Test Report. Under the LetterCountTests group, the LetterCountEvaluation row shows an Exact Match ratio of 58 percent and the LetterCountEvaluationTools row shows 100 percent, each across 12 responses.](/images/com.apple.evaluations/eval-summary@2x.png)
+![A screenshot of the Evaluations summary in the Xcode Test Report. Under the LetterCountTests group, the LetterCountEvaluation row shows an Exact Match ratio of 58 percent and the LetterCountEvaluationTools row shows 100 percent, each across 12 responses.](https://developer.apple.com/tutorials/images/com.apple.evaluations/eval-summary@2x.png)
 
 For a side-by-side view, choose Compare and select a run for each side. This figure shows that adding the counting tool lifts the mean Exact Match score from 58 percent to 100 percent and brings every failing prompt up to a pass:
 
-![A screenshot of the Compare view in the Xcode Test Report showing LetterCountEvaluation beside LetterCountEvaluationTools. The mean Exact Match score rises from 58 percent without the tool to 100 percent with the tool, and the per-prompt table shows the prompts that fail without the tool passing with it.](/images/com.apple.evaluations/eval-run-comparison@2x.png)
+![A screenshot of the Compare view in the Xcode Test Report showing LetterCountEvaluation beside LetterCountEvaluationTools. The mean Exact Match score rises from 58 percent without the tool to 100 percent with the tool, and the per-prompt table shows the prompts that fail without the tool passing with it.](https://developer.apple.com/tutorials/images/com.apple.evaluations/eval-run-comparison@2x.png)
 
-For more on evaluating tool calling, see [`Evaluating tool-calling behavior`](evaluating-tool-calling-behavior.md).
+For more on evaluating tool calling, see [Evaluating tool-calling behavior](./evaluating-tool-calling-behavior.md).
 
-#### Evaluate Subjective Quality with a Model Judge
+#### Evaluate subjective quality with a model judge
 
-Not every quality dimension has a clear-cut programmatic test. For subjective criteria such as tone, helpfulness, or fluency, use a [`ModelJudgeEvaluator`](modeljudgeevaluator.md) to have a language model score responses on your behalf. Provide a rating scale and evaluation instructions, then add the model judge to your evaluators list:
+Not every quality dimension has a clear-cut programmatic test. For subjective criteria such as tone, helpfulness, or fluency, use a [`ModelJudgeEvaluator`](./modeljudgeevaluator.md) to have a language model score responses on your behalf. Provide a rating scale and evaluation instructions, then add the model judge to your evaluators list:
 
 ```swift
 var evaluators: Evaluators {
@@ -308,17 +309,18 @@ var evaluators: Evaluators {
 }
 ```
 
-The model judge scores each response on a numeric scale and provides a written rationale explaining its reasoning. For a complete walkthrough of building model-judge configurations, including pointwise and pairwise evaluation, scored examples, and prompt customization, see [`Scoring with model-judge evaluators`](scoring-with-model-as-judge-evaluators.md).
+The model judge scores each response on a numeric scale and provides a written rationale explaining its reasoning. For a complete walkthrough of building model-judge configurations, including pointwise and pairwise evaluation, scored examples, and prompt customization, see [Scoring with model-judge evaluators](./scoring-with-model-as-judge-evaluators.md).
 
 ## See Also
 
-- [Designing effective evaluations](designing-effective-evaluations.md)
+### Essentials
+- [Designing effective evaluations](./designing-effective-evaluations.md)
   Design evaluations that tell you how well your feature works, why it fails, and where to focus next.
-- [Book Tracker: Using Evaluations to evaluate an intelligent feature](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md)
+- [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md)
   Measure and improve the quality of your app’s intelligence-powered features using the Evaluations framework.
-- [Evaluating a Core AI model](evaluating-a-core-ai-model.md)
+- [Evaluating a Core AI model](./evaluating-a-core-ai-model.md)
   Bundle a model with your app and measure how well the model classifies sentiment compared to the default on-device model.
-- [protocol Evaluation](evaluation.md)
+- [protocol Evaluation](./evaluation.md)
   A type that defines an evaluation.
 
 

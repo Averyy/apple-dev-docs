@@ -1,7 +1,8 @@
 # typeDescription
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the type that the value should have been.
 
@@ -10,7 +11,7 @@ The name of the type that the value should have been.
 
 ## Declaration
 
-```swift
+```
 attribute string typeDescription;
 ```
 

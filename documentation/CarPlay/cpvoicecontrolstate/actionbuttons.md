@@ -1,7 +1,8 @@
 # actionButtons
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of action buttons displayed in the template.
 
@@ -14,6 +15,10 @@ An array of action buttons displayed in the template.
 
 ```swift
 var actionButtons: [CPButton] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<CPButton *> * actionButtons;
 ```
 
 #### Discussion

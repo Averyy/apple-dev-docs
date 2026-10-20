@@ -1,9 +1,10 @@
 # InfoPlistHash.OutType
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-The type of this constraint: [`InfoPlistHash`](infoplisthash.md).
+The type of this constraint: [`InfoPlistHash`](../infoplisthash.md).
 
 **Availability**:
 - iOS 17.4+

@@ -1,13 +1,14 @@
 # CGPSConverterReleaseInfoCallback
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Performs custom tasks when a PostScript converter is released.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Performs custom tasks when a PostScript converter is released.
 typealias CGPSConverterReleaseInfoCallback = (UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(void *) CGPSConverterReleaseInfoCallback;
+```
+
 ## Parameters
 
-- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](cgpsconverter/init(info:callbacks:options:).md).
+- `info`: A generic pointer to private data shared among your callback functions. This is the same pointer you supplied to [`init(info:callbacks:options:)`](./cgpsconverter/init%28info,callbacks,options%29.md).
 
 
 ---

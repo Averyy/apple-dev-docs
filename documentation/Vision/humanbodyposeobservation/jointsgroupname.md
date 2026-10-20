@@ -1,7 +1,8 @@
 # HumanBodyPoseObservation.JointsGroupName
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The joint group names available in the observation.
 
@@ -22,34 +23,35 @@ enum JointsGroupName
 ## Topics
 
 ### Getting the group names
-- [HumanBodyPoseObservation.JointsGroupName.face](humanbodyposeobservation/jointsgroupname/face.md)
+- [HumanBodyPoseObservation.JointsGroupName.face](./jointsgroupname/face.md)
   A group name that represents the face.
-- [HumanBodyPoseObservation.JointsGroupName.leftArm](humanbodyposeobservation/jointsgroupname/leftarm.md)
+- [HumanBodyPoseObservation.JointsGroupName.leftArm](./jointsgroupname/leftarm.md)
   A group name that represents left arm.
-- [HumanBodyPoseObservation.JointsGroupName.leftLeg](humanbodyposeobservation/jointsgroupname/leftleg.md)
+- [HumanBodyPoseObservation.JointsGroupName.leftLeg](./jointsgroupname/leftleg.md)
   A group name that represents the left leg.
-- [HumanBodyPoseObservation.JointsGroupName.rightArm](humanbodyposeobservation/jointsgroupname/rightarm.md)
+- [HumanBodyPoseObservation.JointsGroupName.rightArm](./jointsgroupname/rightarm.md)
   A group name that represents the right arm.
-- [HumanBodyPoseObservation.JointsGroupName.rightLeg](humanbodyposeobservation/jointsgroupname/rightleg.md)
+- [HumanBodyPoseObservation.JointsGroupName.rightLeg](./jointsgroupname/rightleg.md)
   A group name that represents the right leg.
-- [HumanBodyPoseObservation.JointsGroupName.torso](humanbodyposeobservation/jointsgroupname/torso.md)
+- [HumanBodyPoseObservation.JointsGroupName.torso](./jointsgroupname/torso.md)
   A group name that represents the torso.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [HumanBodyPoseObservation.JointName](humanbodyposeobservation/jointname.md)
+### Getting the joints
+- [HumanBodyPoseObservation.JointName](./jointname.md)
   The supported joint names for the body pose.
 
 

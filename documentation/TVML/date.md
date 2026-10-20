@@ -18,45 +18,46 @@ Here’s an example that sets the date to January 19, 2031.
 <date format="MMMM dd, yyyy">2031-01-19</date>
 ```
 
-##### Contained in
+##### Contained In
 
-- [`button`](button.md)
-- [`monogram`](monogram.md)
-- [`organizer`](organizer.md)
-- [`row`](row.md)
-- [`shelf`](shelf.md)
+- [button](./button.md)
+- [monogram](./monogram.md)
+- [organizer](./organizer.md)
+- [row](./row.md)
+- [shelf](./shelf.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [format](format.md)
+- [format](./format.md)
   Specifies how a date is displayed.
-- [locale](locale.md)
+- [locale](./locale.md)
   Sets the locale for the date element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [decorationLabel](decorationlabel.md)
+### Text Elements
+- [decorationLabel](./decorationlabel.md)
   Displays text that describes a displayed element.
-- [description](description.md)
+- [description](./description.md)
   Displays multiple lines of text.
-- [monogram](monogram.md)
+- [monogram](./monogram.md)
   Displays information below a `monogramLockup` element.
-- [ordinal](ordinal.md)
+- [ordinal](./ordinal.md)
   Displays a number.
-- [strike](strike.md)
+- [strike](./strike.md)
   Draws a line through the designated text.
-- [subtitle](subtitle.md)
+- [subtitle](./subtitle.md)
   Displays text below the subtitle’s containing element.
-- [text](text.md)
+- [text](./text.md)
   Displays text on the screen.
-- [title](title.md)
+- [title](./title.md)
   Displays a short amount of text.
 
 

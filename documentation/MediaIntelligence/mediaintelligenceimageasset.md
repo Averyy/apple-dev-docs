@@ -1,7 +1,8 @@
 # MediaIntelligenceImageAsset
 
 **Framework**: Media Intelligence  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An image asset to analyze.
 
@@ -21,40 +22,41 @@ struct MediaIntelligenceImageAsset
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](./detecting-and-grouping-faces-in-images.md)
 
 #### Overview
 
-Create a [`MediaIntelligenceImageAsset`](mediaintelligenceimageasset.md) to identify an image you want [`FaceGroupAnalyzer`](facegroupanalyzer.md) to process. Each asset has a unique identifier you assign, and a [`MediaIntelligenceImageAsset.Kind`](mediaintelligenceimageasset/kind-swift.enum.md) value that describes how the framework accesses the image data.
+Create a [`MediaIntelligenceImageAsset`](./mediaintelligenceimageasset.md) to identify an image you want [`FaceGroupAnalyzer`](./facegroupanalyzer.md) to process. Each asset has a unique identifier you assign, and a [`MediaIntelligenceImageAsset.Kind`](./mediaintelligenceimageasset/kind-swift.enum.md) value that describes how the framework accesses the image data.
 
-Use the same [`MediaIntelligenceImageAsset.ID`](mediaintelligenceimageasset/id-swift.struct.md) value consistently for a specified image. The framework uses this identifier to match new submissions against existing data, so changing the identifier causes the framework to treat the image as a new asset.
+Use the same [`MediaIntelligenceImageAsset.ID`](./mediaintelligenceimageasset/id-swift.struct.md) value consistently for a specified image. The framework uses this identifier to match new submissions against existing data, so changing the identifier causes the framework to treat the image as a new asset.
 
 ## Topics
 
 ### Creating an asset
-- [init(id: MediaIntelligenceImageAsset.ID, kind: MediaIntelligenceImageAsset.Kind)](mediaintelligenceimageasset/init(id:kind:).md)
+- [init(id: MediaIntelligenceImageAsset.ID, kind: MediaIntelligenceImageAsset.Kind)](./mediaintelligenceimageasset/init%28id,kind%29.md)
   Creates an image asset with the specified identifier and kind.
-- [MediaIntelligenceImageAsset.ID](mediaintelligenceimageasset/id-swift.struct.md)
+- [MediaIntelligenceImageAsset.ID](./mediaintelligenceimageasset/id-swift.struct.md)
   A unique identifier for an image asset.
-- [MediaIntelligenceImageAsset.Kind](mediaintelligenceimageasset/kind-swift.enum.md)
+- [MediaIntelligenceImageAsset.Kind](./mediaintelligenceimageasset/kind-swift.enum.md)
   A value that describes the source of an image asset’s data.
 ### Inspecting an asset
-- [let id: MediaIntelligenceImageAsset.ID](mediaintelligenceimageasset/id-swift.property.md)
+- [let id: MediaIntelligenceImageAsset.ID](./mediaintelligenceimageasset/id-swift.property.md)
   A unique identifier for the asset.
-- [let kind: MediaIntelligenceImageAsset.Kind](mediaintelligenceimageasset/kind-swift.property.md)
+- [let kind: MediaIntelligenceImageAsset.Kind](./mediaintelligenceimageasset/kind-swift.property.md)
   A value that describes how the framework accesses the image data.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+### Image analysis
+- [Detecting and grouping faces in images](./detecting-and-grouping-faces-in-images.md)
   Organize photos by person using on-device face detection.
-- [class FaceGroupAnalyzer](facegroupanalyzer.md)
+- [class FaceGroupAnalyzer](./facegroupanalyzer.md)
   An object that detects faces in images and groups them by person.
 
 

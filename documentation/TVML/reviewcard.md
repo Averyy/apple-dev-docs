@@ -17,52 +17,53 @@ Here’s a general example for a movie review.
 </reviewCard>
 ```
 
-##### Subelements of Reviewcard
+##### Subelements of reviewCard
 
-- [`badge`](badge.md)
-- [`description`](description.md)
-- [`img`](img.md)
-- [`organizer`](organizer.md)
-- [`ratingBadge`](ratingbadge.md)
-- [`text`](text.md)
-- [`title`](title.md)
+- [badge](./badge.md)
+- [description](./description.md)
+- [img](./img.md)
+- [organizer](./organizer.md)
+- [ratingBadge](./ratingbadge.md)
+- [text](./text.md)
+- [title](./title.md)
 
-##### Elements That Use Reviewcard
+##### Elements that Use reviewCard
 
-- [`section`](section.md)
+- [section](./section.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [background-color](background-color.md)
+- [background-color](./background-color.md)
   Changes the background color of an element.
-- [border-radius](border-radius.md)
+- [border-radius](./border-radius.md)
   Changes the shape of an element’s corner.
-- [height](element-shaping-height.md)
+- [height](./element-shaping-height.md)
   Specifies the height of an element.
-- [padding](padding.md)
+- [padding](./padding.md)
   Specifies the padding between the border and contents of an element.
-- [tv-align](tv-align.md)
+- [tv-align](./tv-align.md)
   Aligns an element horizontally inside its parent.
-- [tv-highlight-color](tv-highlight-color.md)
+- [tv-highlight-color](./tv-highlight-color.md)
   Changes an element’s color when it comes into focus.
-- [tv-position](tv-position.md)
+- [tv-position](./tv-position.md)
   Sets the position of an element inside of its parent element.
-- [width](element-shaping-width.md)
+- [width](./element-shaping-width.md)
   Specifies how wide an element is.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [card](card.md)
+### Card Elements
+- [card](./card.md)
   Creates a generic element with its contained elements arranged through TVML styles.
-- [ratingCard](ratingcard.md)
+- [ratingCard](./ratingcard.md)
   Contains rating information about a product.
 
 

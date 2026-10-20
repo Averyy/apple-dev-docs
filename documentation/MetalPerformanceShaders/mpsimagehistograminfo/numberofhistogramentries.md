@@ -1,22 +1,27 @@
 # numberOfHistogramEntries
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the number of histogram entries (*bins*) for each channel.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var numberOfHistogramEntries: Int
+```
+
+```c
+NSUInteger numberOfHistogramEntries;
 ```
 
 #### Discussion
@@ -29,11 +34,12 @@ For example, if you want 256 histogram bins then this value must be set to 256. 
 
 ## See Also
 
-- [var histogramForAlpha: ObjCBool](mpsimagehistograminfo/histogramforalpha.md)
+### Fields
+- [var histogramForAlpha: ObjCBool](./histogramforalpha.md)
   Specifies whether the histogram for the alpha channel should be computed or not.
-- [var minPixelValue: vector_float4](mpsimagehistograminfo/minpixelvalue.md)
+- [var minPixelValue: vector_float4](./minpixelvalue.md)
   Specifies the minimum pixel value. Any pixel value less than this will be clipped to this value (for the purposes of histogram calculation), and assigned to the first histogram entry. This minimum value is applied to each of the four channels separately.
-- [var maxPixelValue: vector_float4](mpsimagehistograminfo/maxpixelvalue.md)
+- [var maxPixelValue: vector_float4](./maxpixelvalue.md)
   Specifies the maximum pixel value.  Any pixel value greater than this will be clipped to this value (for the purposes of histogram calculation), and assigned to the first histogram entry. This maximum value is applied to each of the four channels separately.
 
 

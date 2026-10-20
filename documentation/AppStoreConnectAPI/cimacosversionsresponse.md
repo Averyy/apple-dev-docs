@@ -1,7 +1,8 @@
 # CiMacOsVersionsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of macOS versions supported by Xcode Cloud.
 
@@ -10,7 +11,7 @@ A response containing a list of macOS versions supported by Xcode Cloud.
 
 ## Declaration
 
-```swift
+```
 object CiMacOsVersionsResponse
 ```
 
@@ -23,11 +24,12 @@ object CiMacOsVersionsResponse
 
 ## See Also
 
-- [object CiMacOsVersion](cimacosversion.md)
+### Objects
+- [object CiMacOsVersion](./cimacosversion.md)
   A macOS version available in Xcode Cloud infrastructure for running workflow builds.
-- [object CiMacOsVersionResponse](cimacosversionresponse.md)
+- [object CiMacOsVersionResponse](./cimacosversionresponse.md)
   A response containing a single macOS version available in Xcode Cloud.
-- [object CiMacOsVersionXcodeVersionsLinkagesResponse](cimacosversionxcodeversionslinkagesresponse.md)
+- [object CiMacOsVersionXcodeVersionsLinkagesResponse](./cimacosversionxcodeversionslinkagesresponse.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Modify the build for an app store version
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Change the build that is attached to a specific App Store version.
 
@@ -16,7 +17,7 @@ Use this endpoint to associate a build with a version. The build you specify rep
 
 **Request**:
 
-```None
+```
 PATCH https://api.appstoreconnect.apple.com/v1/appStoreVersions/f5b10fc0-afda-4b31-b3e8-cdbcbe945622/relationships/build
 {
   "data": {
@@ -42,11 +43,11 @@ PATCH https://api.appstoreconnect.apple.com/v1/appStoreVersions/f5b10fc0-afda-4b
 }
 ```
 
-##### Remove the Build From a Version
+##### Remove the Build from a Version
 
 **Request**:
 
-```None
+```
 PATCH /v1/appStoreVersions/f5b10fc0-afda-4b31-b3e8-cdbcbe945622/relationships/build
 {
   "data": null
@@ -71,13 +72,32 @@ PATCH /v1/appStoreVersions/f5b10fc0-afda-4b31-b3e8-cdbcbe945622/relationships/bu
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the App Store version resource ID from the [`List all app store versions for an app`](get-v1-apps-_id_-appstoreversions.md) response.
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the App Store version resource ID from the [`List all app store versions for an app`](./get-v1-apps-_id_-appstoreversions.md) response.
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AppStoreVersionBuildLinkageRequest`
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read the build information of an app store version](get-v1-appstoreversions-_id_-build.md)
+### Attaching a Build to a Version
+- [Read the build information of an app store version](./get-v1-appstoreversions-_id_-build.md)
   Get the build that is attached to a specific App Store version.
-- [Get the build id for an app store version](get-v1-appstoreversions-_id_-relationships-build.md)
+- [Get the build id for an app store version](./get-v1-appstoreversions-_id_-relationships-build.md)
   Get the ID of the build that is attached to a specific App Store version.
 
 

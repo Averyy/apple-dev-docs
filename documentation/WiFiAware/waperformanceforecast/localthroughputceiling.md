@@ -1,7 +1,8 @@
 # localThroughputCeiling
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The highest throughput a connection from the local device to the remote device is capable of under ideal conditions, given the hardware capabilities of the local device. The actual throughput achieved can be lower in the presence of other active connections.
 

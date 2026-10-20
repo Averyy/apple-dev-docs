@@ -1,7 +1,8 @@
 # acceptAllowLoginUI
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests that the user interface to log in be presented.
 

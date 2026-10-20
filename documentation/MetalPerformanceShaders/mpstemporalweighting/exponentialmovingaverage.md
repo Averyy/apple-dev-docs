@@ -1,7 +1,8 @@
 # MPSTemporalWeighting.exponentialMovingAverage
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case exponentialMovingAverage
+```
+
+```c
+MPSTemporalWeightingExponentialMovingAverage
 ```
 
 

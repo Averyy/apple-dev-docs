@@ -1,7 +1,8 @@
 # birthDirection
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The possible initial directions for newly spawned particles, relative to the emitter shape.Defaults to normal.
 

@@ -1,7 +1,8 @@
 # shouldDifferentiateWithoutColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the Differentiate Without Color setting is in an enabled state.
 
@@ -19,37 +20,42 @@ A Boolean value that indicates whether the Differentiate Without Color setting i
 static var shouldDifferentiateWithoutColor: Bool { get }
 ```
 
+```c
+extern BOOL UIAccessibilityShouldDifferentiateWithoutColor();
+```
+
 ## See Also
 
-- [static var isAssistiveTouchRunning: Bool](uiaccessibility/isassistivetouchrunning.md)
+### Capabilities
+- [static var isAssistiveTouchRunning: Bool](./isassistivetouchrunning.md)
   A Boolean value that indicates whether AssistiveTouch is in an enabled state.
-- [static var isVoiceOverRunning: Bool](uiaccessibility/isvoiceoverrunning.md)
+- [static var isVoiceOverRunning: Bool](./isvoiceoverrunning.md)
   A Boolean value that indicates whether VoiceOver is in an enabled state.
-- [static var isSwitchControlRunning: Bool](uiaccessibility/isswitchcontrolrunning.md)
+- [static var isSwitchControlRunning: Bool](./isswitchcontrolrunning.md)
   A Boolean value that indicates whether the Switch Control setting is in an enabled state.
-- [static var isShakeToUndoEnabled: Bool](uiaccessibility/isshaketoundoenabled.md)
+- [static var isShakeToUndoEnabled: Bool](./isshaketoundoenabled.md)
   A Boolean value that indicates whether the Shake to Undo setting is in an enabled state.
-- [static var isClosedCaptioningEnabled: Bool](uiaccessibility/isclosedcaptioningenabled.md)
+- [static var isClosedCaptioningEnabled: Bool](./isclosedcaptioningenabled.md)
   A Boolean value that indicates whether the Closed Captions + SDH setting is in an enabled state.
-- [static var isBoldTextEnabled: Bool](uiaccessibility/isboldtextenabled.md)
+- [static var isBoldTextEnabled: Bool](./isboldtextenabled.md)
   A Boolean value that indicates whether the Bold Text setting is in an enabled state.
-- [static var isDarkerSystemColorsEnabled: Bool](uiaccessibility/isdarkersystemcolorsenabled.md)
+- [static var isDarkerSystemColorsEnabled: Bool](./isdarkersystemcolorsenabled.md)
   A Boolean value that indicates whether the Increase Contrast setting is in an enabled state.
-- [static var isGrayscaleEnabled: Bool](uiaccessibility/isgrayscaleenabled.md)
+- [static var isGrayscaleEnabled: Bool](./isgrayscaleenabled.md)
   A Boolean value that indicates whether the Color Filters and the Grayscale settings are in an enabled state.
-- [static var isGuidedAccessEnabled: Bool](uiaccessibility/isguidedaccessenabled.md)
+- [static var isGuidedAccessEnabled: Bool](./isguidedaccessenabled.md)
   A Boolean value that indicates whether the Guided Access setting is in an enabled state.
-- [static var isInvertColorsEnabled: Bool](uiaccessibility/isinvertcolorsenabled.md)
+- [static var isInvertColorsEnabled: Bool](./isinvertcolorsenabled.md)
   A Boolean value that indicates whether the Classic Invert setting is in an enabled state.
-- [static var isMonoAudioEnabled: Bool](uiaccessibility/ismonoaudioenabled.md)
+- [static var isMonoAudioEnabled: Bool](./ismonoaudioenabled.md)
   A Boolean value that indicates whether the Mono Audio setting is in an enabled state.
-- [static var isReduceMotionEnabled: Bool](uiaccessibility/isreducemotionenabled.md)
+- [static var isReduceMotionEnabled: Bool](./isreducemotionenabled.md)
   A Boolean value that indicates whether the Reduce Motion setting is in an enabled state.
-- [static var isReduceTransparencyEnabled: Bool](uiaccessibility/isreducetransparencyenabled.md)
+- [static var isReduceTransparencyEnabled: Bool](./isreducetransparencyenabled.md)
   A Boolean value that indicates whether the Reduce Transparency setting is in an enabled state.
-- [static var isSpeakScreenEnabled: Bool](uiaccessibility/isspeakscreenenabled.md)
+- [static var isSpeakScreenEnabled: Bool](./isspeakscreenenabled.md)
   A Boolean value that indicates whether the Speak Screen setting is in an enabled state.
-- [static var isSpeakSelectionEnabled: Bool](uiaccessibility/isspeakselectionenabled.md)
+- [static var isSpeakSelectionEnabled: Bool](./isspeakselectionenabled.md)
   A Boolean value that indicates whether the Speak Selection setting is in an enabled state.
 
 

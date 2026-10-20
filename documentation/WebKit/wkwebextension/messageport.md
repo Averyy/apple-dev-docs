@@ -1,7 +1,8 @@
 # WKWebExtension.MessagePort
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages message-based communication with a web extension.
 
@@ -19,6 +20,10 @@ An object that manages message-based communication with a web extension.
 class MessagePort
 ```
 
+```objc
+@interface WKWebExtensionMessagePort : NSObject
+```
+
 #### Overview
 
 Contains properties and methods to handle message exchanges with a web extension.
@@ -26,66 +31,67 @@ Contains properties and methods to handle message exchanges with a web extension
 ## Topics
 
 ### Structures
-- [WKWebExtension.MessagePort.Error](wkwebextension/messageport/error.md)
-  Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) domain.
+- [WKWebExtension.MessagePort.Error](./messageport/error.md)
+  Constants that indicate errors in the [`WKWebExtension.MessagePort`](./messageport.md) domain.
 ### Instance Properties
-- [var applicationIdentifier: String?](wkwebextension/messageport/applicationidentifier.md)
+- [var applicationIdentifier: String?](./messageport/applicationidentifier.md)
   The unique identifier for the app to which this port should be connected.
-- [var disconnectHandler: (((any Error)?) -> Void)?](wkwebextension/messageport/disconnecthandler.md)
+- [var disconnectHandler: (((any Error)?) -> Void)?](./messageport/disconnecthandler.md)
   The block to be executed when the port disconnects.
-- [var isDisconnected: Bool](wkwebextension/messageport/isdisconnected.md)
+- [var isDisconnected: Bool](./messageport/isdisconnected.md)
   Indicates whether the message port is disconnected.
-- [var messageHandler: ((Any?, (any Error)?) -> Void)?](wkwebextension/messageport/messagehandler.md)
+- [var messageHandler: ((Any?, (any Error)?) -> Void)?](./messageport/messagehandler.md)
   The block to be executed when a message is received from the web extension.
 ### Instance Methods
-- [func disconnect()](wkwebextension/messageport/disconnect.md)
+- [func disconnect()](./messageport/disconnect%28%29.md)
   Disconnects the port, terminating all further messages.
-- [func disconnect(throwing: (any Error)?)](wkwebextension/messageport/disconnect(throwing:).md)
+- [func disconnect(throwing: (any Error)?)](./messageport/disconnect%28throwing%29.md)
   Disconnects the port, terminating all further messages with an optional error.
-- [func sendMessage(Any?, completionHandler: (((any Error)?) -> Void)?)](wkwebextension/messageport/sendmessage(_:completionhandler:).md)
+- [func sendMessage(Any?, completionHandler: (((any Error)?) -> Void)?)](./messageport/sendmessage%28_,completionhandler%29.md)
   Sends a message to the connected web extension.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [class WKWebExtension](wkwebextension.md)
+### Web extensions
+- [class WKWebExtension](../wkwebextension.md)
   An object that encapsulates a web extension’s resources that the manifest file defines.
-- [protocol WKWebExtensionTab](wkwebextensiontab.md)
+- [protocol WKWebExtensionTab](../wkwebextensiontab.md)
   A protocol with methods that represent a tab to web extensions.
-- [protocol WKWebExtensionWindow](wkwebextensionwindow.md)
+- [protocol WKWebExtensionWindow](../wkwebextensionwindow.md)
   A protocol with methods that represent a window to web extensions.
-- [class WKWebExtensionContext](wkwebextensioncontext.md)
+- [class WKWebExtensionContext](../wkwebextensioncontext.md)
   An object that represents the runtime environment for a web extension.
-- [class WKWebExtensionController](wkwebextensioncontroller.md)
+- [class WKWebExtensionController](../wkwebextensioncontroller.md)
   An object that manages a set of loaded extension contexts.
-- [protocol WKWebExtensionControllerDelegate](wkwebextensioncontrollerdelegate.md)
+- [protocol WKWebExtensionControllerDelegate](../wkwebextensioncontrollerdelegate.md)
   A group of methods you use to customize web extension interactions.
-- [WKWebExtension.Action](wkwebextension/action.md)
+- [WKWebExtension.Action](./action.md)
   An object that encapsulates the properties for an individual web extension action.
-- [WKWebExtension.Command](wkwebextension/command.md)
+- [WKWebExtension.Command](./command.md)
   An object that encapsulates the properties for an individual web extension command.
-- [WKWebExtension.MatchPattern](wkwebextension/matchpattern.md)
+- [WKWebExtension.MatchPattern](./matchpattern.md)
   An object that represents a way to specify groups of URLs.
-- [WKWebExtension.DataRecord](wkwebextension/datarecord.md)
+- [WKWebExtension.DataRecord](./datarecord.md)
   An object that represents a record of stored data for a specific web extension context.
-- [WKWebExtension.TabConfiguration](wkwebextension/tabconfiguration.md)
+- [WKWebExtension.TabConfiguration](./tabconfiguration.md)
   An object that encapsulates configuration options for a tab in an extension.
-- [WKWebExtension.WindowConfiguration](wkwebextension/windowconfiguration.md)
+- [WKWebExtension.WindowConfiguration](./windowconfiguration.md)
   An object that encapsulates configuration options for a window in an extension.
-- [WKWebExtensionController.Configuration](wkwebextensioncontroller/configuration-swift.class.md)
-  A [`WKWebExtensionController.Configuration`](wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
+- [WKWebExtensionController.Configuration](../wkwebextensioncontroller/configuration-swift.class.md)
+  A [`WKWebExtensionController.Configuration`](../wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
 
 
 ---

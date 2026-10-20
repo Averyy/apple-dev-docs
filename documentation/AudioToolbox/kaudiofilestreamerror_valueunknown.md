@@ -1,17 +1,18 @@
 # kAudioFileStreamError_ValueUnknown
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The property value is not present in this file before the audio data.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,30 +20,35 @@ The property value is not present in this file before the audio data.
 var kAudioFileStreamError_ValueUnknown: OSStatus { get }
 ```
 
+```c
+kAudioFileStreamError_ValueUnknown
+```
+
 ## See Also
 
-- [Audio File Errors](1576500-audio-file-errors.md)
-- [var kAudioFileStreamError_UnsupportedFileType: OSStatus](kaudiofilestreamerror_unsupportedfiletype.md)
+### Result Codes
+- [Audio File Errors](./api-1576500-audio-file-errors.md)
+- [var kAudioFileStreamError_UnsupportedFileType: OSStatus](./kaudiofilestreamerror_unsupportedfiletype.md)
   The specified file type is not supported.
-- [var kAudioFileStreamError_UnsupportedDataFormat: OSStatus](kaudiofilestreamerror_unsupporteddataformat.md)
+- [var kAudioFileStreamError_UnsupportedDataFormat: OSStatus](./kaudiofilestreamerror_unsupporteddataformat.md)
   The data format is not supported by the specified file type.
-- [var kAudioFileStreamError_UnsupportedProperty: OSStatus](kaudiofilestreamerror_unsupportedproperty.md)
+- [var kAudioFileStreamError_UnsupportedProperty: OSStatus](./kaudiofilestreamerror_unsupportedproperty.md)
   The property is not supported.
-- [var kAudioFileStreamError_BadPropertySize: OSStatus](kaudiofilestreamerror_badpropertysize.md)
+- [var kAudioFileStreamError_BadPropertySize: OSStatus](./kaudiofilestreamerror_badpropertysize.md)
   The size of the buffer you provided for property data was not correct.
-- [var kAudioFileStreamError_NotOptimized: OSStatus](kaudiofilestreamerror_notoptimized.md)
+- [var kAudioFileStreamError_NotOptimized: OSStatus](./kaudiofilestreamerror_notoptimized.md)
   It is not possible to produce output packets because the streamed audio file’s packet table or other defining information is not present or appears after the audio data.
-- [var kAudioFileStreamError_InvalidPacketOffset: OSStatus](kaudiofilestreamerror_invalidpacketoffset.md)
+- [var kAudioFileStreamError_InvalidPacketOffset: OSStatus](./kaudiofilestreamerror_invalidpacketoffset.md)
   A packet offset was less than `0`, or past the end of the file, or a corrupt packet size was read when building the packet table.
-- [var kAudioFileStreamError_InvalidFile: OSStatus](kaudiofilestreamerror_invalidfile.md)
+- [var kAudioFileStreamError_InvalidFile: OSStatus](./kaudiofilestreamerror_invalidfile.md)
   The file is malformed, not a valid instance of an audio file of its type, or not recognized as an audio file.
-- [var kAudioFileStreamError_DataUnavailable: OSStatus](kaudiofilestreamerror_dataunavailable.md)
+- [var kAudioFileStreamError_DataUnavailable: OSStatus](./kaudiofilestreamerror_dataunavailable.md)
   The amount of data provided to the parser was insufficient to produce any result.
-- [var kAudioFileStreamError_IllegalOperation: OSStatus](kaudiofilestreamerror_illegaloperation.md)
+- [var kAudioFileStreamError_IllegalOperation: OSStatus](./kaudiofilestreamerror_illegaloperation.md)
   An illegal operation was attempted.
-- [var kAudioFileStreamError_UnspecifiedError: OSStatus](kaudiofilestreamerror_unspecifiederror.md)
+- [var kAudioFileStreamError_UnspecifiedError: OSStatus](./kaudiofilestreamerror_unspecifiederror.md)
   An unspecified error has occurred.
-- [var kAudioFileStreamError_DiscontinuityCantRecover: OSStatus](kaudiofilestreamerror_discontinuitycantrecover.md)
+- [var kAudioFileStreamError_DiscontinuityCantRecover: OSStatus](./kaudiofilestreamerror_discontinuitycantrecover.md)
   A discontinuity has occurred in the audio data, and Audio File Stream Services cannot recover.
 
 

@@ -1,7 +1,8 @@
 # writeAttributeGroupKeyMap(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeGroupKeyMap(withValue value: [Any], completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeGroupKeyMap(withValue value: [Any]) async throws
+```
+
+```objc
+- (void) writeAttributeGroupKeyMapWithValue:(NSArray *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

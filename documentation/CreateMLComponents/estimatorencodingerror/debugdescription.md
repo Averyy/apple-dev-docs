@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the error.
 

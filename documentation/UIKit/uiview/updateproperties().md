@@ -1,7 +1,8 @@
 # updateProperties()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the view’s content and styling properties before layout.
 
@@ -18,23 +19,28 @@ Configures the view’s content and styling properties before layout.
 func updateProperties()
 ```
 
+```objc
+- (void) updateProperties;
+```
+
 ## Mentions
 
-- [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
+- [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md)
 
 #### Overview
 
-Override this method to configure content and styling in your view subclass. Don’t call this method directly; instead, call [`setNeedsUpdateProperties()`](uiview/setneedsupdateproperties().md) to schedule an update.
+Override this method to configure content and styling in your view subclass. Don’t call this method directly; instead, call [`setNeedsUpdateProperties()`](./setneedsupdateproperties%28%29.md) to schedule an update.
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
+This method supports automatic observation tracking. For more information, see [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## See Also
 
-- [func layoutSubviews()](uiview/layoutsubviews.md)
+### Observing data in views
+- [func layoutSubviews()](./layoutsubviews%28%29.md)
   Lays out subviews.
-- [func updateConstraints()](uiview/updateconstraints.md)
+- [func updateConstraints()](./updateconstraints%28%29.md)
   Updates constraints for the view.
-- [func draw(CGRect)](uiview/draw(_:).md)
+- [func draw(CGRect)](./draw%28_%29.md)
   Draws the view’s image within the passed-in rectangle.
 
 

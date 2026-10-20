@@ -1,7 +1,8 @@
 # shouldPrintBackgrounds
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to include any background color or graphics when printing content.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether to include any background color or graphi
 var shouldPrintBackgrounds: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL shouldPrintBackgrounds;
+```
+
 #### Discussion
 
-The default value for this preference is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this preference is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var minimumFontSize: CGFloat](wkpreferences/minimumfontsize.md)
+### Setting Rendering Preferences
+- [var minimumFontSize: CGFloat](./minimumfontsize.md)
   The minimum font size, in points.
 
 

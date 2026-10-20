@@ -1,47 +1,49 @@
 # Sequence and Collection Protocols
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 Write generic code that works with any collection, or build your own collection types.
 
 ## Topics
 
 ### First Steps
-- [protocol IteratorProtocol](iteratorprotocol.md)
+- [protocol IteratorProtocol](./iteratorprotocol.md)
   A type that supplies the values of a sequence one at a time.
-- [protocol Sequence](sequence.md)
+- [protocol Sequence](./sequence.md)
   A type that provides sequential, iterated access to its elements.
-- [protocol Collection](collection.md)
+- [protocol Collection](./collection.md)
   A sequence whose elements can be traversed multiple times, nondestructively, and accessed by an indexed subscript.
 ### Collection Traversal
-- [protocol BidirectionalCollection](bidirectionalcollection.md)
+- [protocol BidirectionalCollection](./bidirectionalcollection.md)
   A collection that supports backward as well as forward traversal.
-- [protocol RandomAccessCollection](randomaccesscollection.md)
+- [protocol RandomAccessCollection](./randomaccesscollection.md)
   A collection that supports efficient random-access index traversal.
 ### Collection Mutability
-- [protocol MutableCollection](mutablecollection.md)
+- [protocol MutableCollection](./mutablecollection.md)
   A collection that supports subscript assignment.
-- [protocol RangeReplaceableCollection](rangereplaceablecollection.md)
+- [protocol RangeReplaceableCollection](./rangereplaceablecollection.md)
   A collection that supports replacement of an arbitrary subrange of elements with the elements of another collection.
 ### Borrowing Iteration
-- [protocol Iterable](iterable.md)
+- [protocol Iterable](./iterable.md)
   A type that provides sequential, borrowing access to its elements.
-- [protocol BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
+- [protocol BorrowingIteratorProtocol](./borrowingiteratorprotocol.md)
   A type that provides borrowed access to the values of a borrowing sequence.
-- [struct BorrowingIteratorAdapter](borrowingiteratoradapter.md)
+- [struct BorrowingIteratorAdapter](./borrowingiteratoradapter.md)
 ### Algebraic Sets
-- [protocol SetAlgebra](setalgebra.md)
+- [protocol SetAlgebra](./setalgebra.md)
   A type that provides mathematical set operations.
 ### Lazy Collections
-- [protocol LazySequenceProtocol](lazysequenceprotocol.md)
+- [protocol LazySequenceProtocol](./lazysequenceprotocol.md)
   A sequence on which normally-eager sequence operations are implemented lazily.
-- [protocol LazyCollectionProtocol](lazycollectionprotocol.md)
+- [protocol LazyCollectionProtocol](./lazycollectionprotocol.md)
 
 ## See Also
 
-- [Supporting Types](supporting-types.md)
+### Advanced Collection Topics
+- [Supporting Types](./supporting-types.md)
   Use wrappers, indices, and iterators in operations like slicing, flattening, and reversing a collection.
-- [Managed Buffers](managed-buffers.md)
+- [Managed Buffers](./managed-buffers.md)
   Build your own buffer-backed collection types.
 
 

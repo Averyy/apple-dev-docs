@@ -1,7 +1,8 @@
 # init(categories:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an ordinal encoder.
 

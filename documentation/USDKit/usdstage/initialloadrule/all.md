@@ -1,7 +1,8 @@
 # USDStage.InitialLoadRule.all
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Load all loadable prims.
 

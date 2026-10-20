@@ -1,7 +1,8 @@
 # init(rect:transform:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an immutable path of a rectangle.
 
@@ -10,7 +11,7 @@ Create an immutable path of a rectangle.
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Create an immutable path of a rectangle.
 
 ```swift
 init(rect: CGRect, transform: UnsafePointer<CGAffineTransform>?)
+```
+
+```c
+extern CGPathRefCGPathCreateWithRect(CGRect rect, const CGAffineTransform *transform);
 ```
 
 #### Return Value
@@ -28,7 +33,7 @@ A new, immutable path. You are responsible for releasing this object.
 
 This is a convenience function that creates a path of an rectangle. Using this convenience function is more efficient than creating a mutable path and adding an rectangle to it.
 
-Calling this function is equivalent to using [`CGRectGetMinX(_:)`](cgrectgetminx(_:).md) and related functions to find the corners of the rectangle, then using the [`CGPathMoveToPoint`](cgpathmovetopoint.md), [`CGPathAddLineToPoint`](cgpathaddlinetopoint.md), and [`closeSubpath()`](cgmutablepath/closesubpath().md) functions to draw the rectangle.
+Calling this function is equivalent to using [`CGRectGetMinX(_:)`](../cgrectgetminx%28_%29.md) and related functions to find the corners of the rectangle, then using the [`CGPathMoveToPoint`](../cgpathmovetopoint.md), [`CGPathAddLineToPoint`](../cgpathaddlinetopoint.md), and [`closeSubpath()`](../cgmutablepath/closesubpath%28%29.md) functions to draw the rectangle.
 
 ## Parameters
 
@@ -37,9 +42,10 @@ Calling this function is equivalent to using [`CGRectGetMinX(_:)`](cgrectgetminx
 
 ## See Also
 
-- [init(ellipseIn: CGRect, transform: UnsafePointer<CGAffineTransform>?)](cgpath/init(ellipsein:transform:).md)
+### Creating Graphics Paths
+- [init(ellipseIn: CGRect, transform: UnsafePointer<CGAffineTransform>?)](./init%28ellipsein,transform%29.md)
   Create an immutable path of an ellipse.
-- [init(roundedRect: CGRect, cornerWidth: CGFloat, cornerHeight: CGFloat, transform: UnsafePointer<CGAffineTransform>?)](cgpath/init(roundedrect:cornerwidth:cornerheight:transform:).md)
+- [init(roundedRect: CGRect, cornerWidth: CGFloat, cornerHeight: CGFloat, transform: UnsafePointer<CGAffineTransform>?)](./init%28roundedrect,cornerwidth,cornerheight,transform%29.md)
   Create an immutable path of a rounded rectangle.
 
 

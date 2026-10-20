@@ -1,7 +1,8 @@
 # MediaOutputDevice
 
 **Framework**: Media Device  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents a discoverable media output device such as a TV, speaker, or streaming stick.
 
@@ -18,72 +19,73 @@ struct MediaOutputDevice
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](./creating-a-media-device-extension.md)
 
 ## Topics
 
 ### Structures
-- [MediaOutputDevice.AuthorizationMethod](mediaoutputdevice/authorizationmethod.md)
+- [MediaOutputDevice.AuthorizationMethod](./mediaoutputdevice/authorizationmethod.md)
   Specifies what kind of authorization UI to present when connecting to a device.
-- [MediaOutputDevice.Capabilities](mediaoutputdevice/capabilities-swift.struct.md)
-  Defines the media capabilities supported by a [`MediaOutputDevice`](mediaoutputdevice.md).
+- [MediaOutputDevice.Capabilities](./mediaoutputdevice/capabilities-swift.struct.md)
+  Defines the media capabilities supported by a [`MediaOutputDevice`](./mediaoutputdevice.md).
 ### Operators
-- [static func == (MediaOutputDevice, MediaOutputDevice) -> Bool](mediaoutputdevice/==(_:_:).md)
+- [static func == (MediaOutputDevice, MediaOutputDevice) -> Bool](./mediaoutputdevice/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two devices are equal.
 ### Initializers
-- [init?(id: UUID, displayName: String, capabilities: MediaOutputDevice.Capabilities, canGroupWithCurrentlyActivatedDevices: Bool, deviceType: MediaOutputDevice.DeviceType, volumeControl: MediaOutputDevice.VolumeControl, canMute: Bool, requiredNetworkEndpoints: [NWEndpoint], txtRecords: [NWTXTRecord], supportsSimultaneousSessions: Bool)](mediaoutputdevice/init(id:displayname:capabilities:cangroupwithcurrentlyactivateddevices:devicetype:volumecontrol:canmute:requirednetworkendpoints:txtrecords:supportssimultaneoussessions:).md)
+- [init?(id: UUID, displayName: String, capabilities: MediaOutputDevice.Capabilities, canGroupWithCurrentlyActivatedDevices: Bool, deviceType: MediaOutputDevice.DeviceType, volumeControl: MediaOutputDevice.VolumeControl, canMute: Bool, requiredNetworkEndpoints: [NWEndpoint], txtRecords: [NWTXTRecord], supportsSimultaneousSessions: Bool)](./mediaoutputdevice/init%28id,displayname,capabilities,cangroupwithcurrentlyactivateddevices,devicetype,volumecontrol,canmute,requirednetworkendpoints,txtrecords,supportssimultaneoussessions%29.md)
   Creates a new media output device with the specified properties, requiring at least one network endpoint.
 ### Instance Properties
-- [let canGroupWithCurrentlyActivatedDevices: Bool](mediaoutputdevice/cangroupwithcurrentlyactivateddevices.md)
+- [let canGroupWithCurrentlyActivatedDevices: Bool](./mediaoutputdevice/cangroupwithcurrentlyactivateddevices.md)
   Indicates whether this device can be grouped with devices that are currently activated.
-- [let canMute: Bool](mediaoutputdevice/canmute.md)
+- [let canMute: Bool](./mediaoutputdevice/canmute.md)
   Indicates whether the device supports muting audio output.
-- [let capabilities: MediaOutputDevice.Capabilities](mediaoutputdevice/capabilities-swift.property.md)
+- [let capabilities: MediaOutputDevice.Capabilities](./mediaoutputdevice/capabilities-swift.property.md)
   The capabilities of the device.
-- [var description: String](mediaoutputdevice/description.md)
+- [var description: String](./mediaoutputdevice/description.md)
   A textual representation of the device.
-- [let deviceType: MediaOutputDevice.DeviceType](mediaoutputdevice/devicetype-swift.property.md)
+- [let deviceType: MediaOutputDevice.DeviceType](./mediaoutputdevice/devicetype-swift.property.md)
   The type of device, used for display in user interfaces.
-- [let displayName: String](mediaoutputdevice/displayname.md)
+- [let displayName: String](./mediaoutputdevice/displayname.md)
   A display name for the device, shown in user interfaces.
-- [let id: UUID](mediaoutputdevice/id.md)
+- [let id: UUID](./mediaoutputdevice/id.md)
   A unique identifier for the device.
-- [let networkEndpoints: [NWEndpoint]](mediaoutputdevice/networkendpoints.md)
+- [let networkEndpoints: [NWEndpoint]](./mediaoutputdevice/networkendpoints.md)
   The network endpoints for this device group.
-- [let supportsSimultaneousSessions: Bool](mediaoutputdevice/supportssimultaneoussessions.md)
-  Indicates whether the device supports receiving simultaneous media sessions via [`MediaOutputSession`](mediaoutputsession.md).
-- [let txtRecords: [NWTXTRecord]](mediaoutputdevice/txtrecords.md)
+- [let supportsSimultaneousSessions: Bool](./mediaoutputdevice/supportssimultaneoussessions.md)
+  Indicates whether the device supports receiving simultaneous media sessions via [`MediaOutputSession`](./mediaoutputsession.md).
+- [let txtRecords: [NWTXTRecord]](./mediaoutputdevice/txtrecords.md)
   TXT records associated with the device discovered via network protocols.
-- [let volumeControl: MediaOutputDevice.VolumeControl](mediaoutputdevice/volumecontrol-swift.property.md)
+- [let volumeControl: MediaOutputDevice.VolumeControl](./mediaoutputdevice/volumecontrol-swift.property.md)
   The type of volume control supported by this device.
 ### Instance Methods
-- [func hash(into: inout Hasher)](mediaoutputdevice/hash(into:).md)
+- [func hash(into: inout Hasher)](./mediaoutputdevice/hash%28into%29.md)
   Hashes the essential components of the device by feeding them into the given hasher.
 ### Enumerations
-- [MediaOutputDevice.DeviceType](mediaoutputdevice/devicetype-swift.enum.md)
+- [MediaOutputDevice.DeviceType](./mediaoutputdevice/devicetype-swift.enum.md)
   A device type used for display in user interfaces.
-- [MediaOutputDevice.VolumeControl](mediaoutputdevice/volumecontrol-swift.enum.md)
+- [MediaOutputDevice.VolumeControl](./mediaoutputdevice/volumecontrol-swift.enum.md)
   Defines the type of volume control supported by an output device or group.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MediaOutputDevice.Capabilities](mediaoutputdevice/capabilities-swift.struct.md)
-  Defines the media capabilities supported by a [`MediaOutputDevice`](mediaoutputdevice.md).
-- [MediaOutputDevice.DeviceType](mediaoutputdevice/devicetype-swift.enum.md)
+### Device discovery and management
+- [MediaOutputDevice.Capabilities](./mediaoutputdevice/capabilities-swift.struct.md)
+  Defines the media capabilities supported by a [`MediaOutputDevice`](./mediaoutputdevice.md).
+- [MediaOutputDevice.DeviceType](./mediaoutputdevice/devicetype-swift.enum.md)
   A device type used for display in user interfaces.
-- [MediaOutputDevice.VolumeControl](mediaoutputdevice/volumecontrol-swift.enum.md)
+- [MediaOutputDevice.VolumeControl](./mediaoutputdevice/volumecontrol-swift.enum.md)
   Defines the type of volume control supported by an output device or group.
-- [MediaOutputDevice.AuthorizationMethod](mediaoutputdevice/authorizationmethod.md)
+- [MediaOutputDevice.AuthorizationMethod](./mediaoutputdevice/authorizationmethod.md)
   Specifies what kind of authorization UI to present when connecting to a device.
 
 

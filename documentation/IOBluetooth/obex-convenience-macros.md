@@ -1,6 +1,7 @@
 # OBEX Convenience Macros
 
-**Framework**: IOBluetooth
+**Framework**: IOBluetooth  
+**Role**: API Collection
 
 Convenience Macros for working with OBEX Header Identifiers.
 

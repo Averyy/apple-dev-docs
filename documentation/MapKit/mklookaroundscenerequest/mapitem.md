@@ -1,7 +1,8 @@
 # mapItem
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A map item that describes the location of the LookAround scene.
 
@@ -18,9 +19,14 @@ A map item that describes the location of the LookAround scene.
 var mapItem: MKMapItem? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) MKMapItem * mapItem;
+```
+
 ## See Also
 
-- [var coordinate: CLLocationCoordinate2D](mklookaroundscenerequest/coordinate.md)
+### Specifying the request’s location
+- [var coordinate: CLLocationCoordinate2D](./coordinate.md)
   A coordinate value that describes the location of the LookAround scene.
 
 

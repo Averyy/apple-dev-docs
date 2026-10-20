@@ -1,7 +1,8 @@
 # isAvailable(forServiceType:)
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns A Boolean value that indicates whether you can send a request for a particular service type.
 
@@ -14,6 +15,10 @@ Returns A Boolean value that indicates whether you can send a request for a part
 
 ```swift
 class func isAvailable(forServiceType serviceType: String!) -> Bool
+```
+
+```objc
++ (BOOL) isAvailableForServiceType:(NSString *) serviceType;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ For the account to be available, the user must be logged into the social service
 
 ## See Also
 
-- [var serviceType: String!](slcomposeviewcontroller/servicetype.md)
+### Checking the Social Service Type
+- [var serviceType: String!](./servicetype.md)
   Specifies the social-networking service.
 
 

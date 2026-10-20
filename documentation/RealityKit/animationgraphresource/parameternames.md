@@ -1,7 +1,8 @@
 # parameterNames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of all parameters declared by the graph definition.
 

@@ -1,17 +1,22 @@
 # setupPanelDeviceSelectionChanged(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent by the default notification center when the device selection in the panel has changed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setupPanelDeviceSelectionChanged(_ aNotification: Notification!)
+```
+
+```objc
+- (void) setupPanelDeviceSelectionChanged:(NSNotification *) aNotification;
 ```
 
 #### Discussion

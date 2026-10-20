@@ -1,7 +1,8 @@
 # AttributedString.UnicodeScalarView
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view into the underlying storage of the attributed string, as Unicode scalars.
 
@@ -23,31 +24,32 @@ struct UnicodeScalarView
 ## Topics
 
 ### Default Implementations
-- [Collection Implementations](attributedstring/unicodescalarview/collection-implementations.md)
+- [Collection Implementations](./unicodescalarview/collection-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RangeReplaceableCollection](../swift/rangereplaceablecollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [RangeReplaceableCollection](../../Swift/rangereplaceablecollection.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [var characters: AttributedString.CharacterView](attributedstring/characters.md)
+### Accessing Views into the Attributed String
+- [var characters: AttributedString.CharacterView](./characters.md)
   The characters of the attributed string, as a view into the underlying string.
-- [AttributedString.CharacterView](attributedstring/characterview.md)
+- [AttributedString.CharacterView](./characterview.md)
   A view into the underlying storage of the attributed string, as Unicode characters.
-- [var unicodeScalars: AttributedString.UnicodeScalarView](attributedstring/unicodescalars.md)
+- [var unicodeScalars: AttributedString.UnicodeScalarView](./unicodescalars.md)
   The Unicode scalars of the attributed string, as a view into the underlying string.
-- [var runs: AttributedString.Runs](attributedstring/runs-swift.property.md)
+- [var runs: AttributedString.Runs](./runs-swift.property.md)
   The attributed runs of the attributed string, as a view into the underlying string.
-- [AttributedString.Runs](attributedstring/runs-swift.struct.md)
+- [AttributedString.Runs](./runs-swift.struct.md)
   An iterable view into segments of the attributed string, each of which indicates where a run of identical attributes begins or ends.
 
 

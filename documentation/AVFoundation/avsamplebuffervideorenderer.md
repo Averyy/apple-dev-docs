@@ -1,7 +1,8 @@
 # AVSampleBufferVideoRenderer
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that enqueues video sample buffers for rendering.
 
@@ -19,75 +20,80 @@ An object that enqueues video sample buffers for rendering.
 class AVSampleBufferVideoRenderer
 ```
 
+```objc
+@interface AVSampleBufferVideoRenderer : NSObject
+```
+
 ## Topics
 
 ### Flushing the renderer
-- [var requiresFlushToResumeDecoding: Bool](avsamplebuffervideorenderer/requiresflushtoresumedecoding.md)
+- [var requiresFlushToResumeDecoding: Bool](./avsamplebuffervideorenderer/requiresflushtoresumedecoding.md)
   A Boolean value that Indicates whether the renderer requires flushing to continue decoding frames.
-- [class let requiresFlushToResumeDecodingDidChangeNotification: NSNotification.Name](avsamplebuffervideorenderer/requiresflushtoresumedecodingdidchangenotification.md)
+- [class let requiresFlushToResumeDecodingDidChangeNotification: NSNotification.Name](./avsamplebuffervideorenderer/requiresflushtoresumedecodingdidchangenotification.md)
   A notification that indicates that the video renderer requires flushing to continue rendering sample buffers.
-- [let AVSampleBufferVideoRendererRequiresFlushToResumeDecodingDidChangeNotificationRequiresFlushKey: String](avsamplebuffervideorendererrequiresflushtoresumedecodingdidchangenotificationrequiresflushkey.md)
-- [func flush(removingDisplayedImage: Bool, completionHandler: (() -> Void)?)](avsamplebuffervideorenderer/flush(removingdisplayedimage:completionhandler:).md)
+- [let AVSampleBufferVideoRendererRequiresFlushToResumeDecodingDidChangeNotificationRequiresFlushKey: String](./avsamplebuffervideorendererrequiresflushtoresumedecodingdidchangenotificationrequiresflushkey.md)
+- [func flush(removingDisplayedImage: Bool, completionHandler: (() -> Void)?)](./avsamplebuffervideorenderer/flush%28removingdisplayedimage,completionhandler%29.md)
   Tells the video renderer to discard pending enqueued sample buffers.
 ### Setting presentation time expectations
-- [var presentationTimeExpectation: AVSampleBufferVideoRenderer.PresentationTimeExpectation](avsamplebuffervideorenderer/presentationtimeexpectation-swift.property.md)
-- [AVSampleBufferVideoRenderer.PresentationTimeExpectation](avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum.md)
+- [var presentationTimeExpectation: AVSampleBufferVideoRenderer.PresentationTimeExpectation](./avsamplebuffervideorenderer/presentationtimeexpectation-swift.property.md)
+- [AVSampleBufferVideoRenderer.PresentationTimeExpectation](./avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum.md)
   Options that specify the expected presentation time stamps of enqueue samples.
 ### Inspecting the status
-- [var status: AVQueuedSampleBufferRenderingStatus](avsamplebuffervideorenderer/status.md)
+- [var status: AVQueuedSampleBufferRenderingStatus](./avsamplebuffervideorenderer/status.md)
   A status value that indicates whether this object can enqueue and render sample buffers.
-- [var error: (any Error)?](avsamplebuffervideorenderer/error.md)
+- [var error: (any Error)?](./avsamplebuffervideorenderer/error.md)
   An object the describes the error that caused the rendering failure.
 ### Accessing the pixel buffer
-- [func displayedPixelBuffer() -> CVPixelBuffer?](avsamplebuffervideorenderer/displayedpixelbuffer.md)
-- [var recommendedPixelBufferAttributes: CVPixelBufferAttributes](avsamplebuffervideorenderer/recommendedpixelbufferattributes-6zrqb.md)
+- [func displayedPixelBuffer() -> CVPixelBuffer?](./avsamplebuffervideorenderer/displayedpixelbuffer%28%29.md)
+- [var recommendedPixelBufferAttributes: CVPixelBufferAttributes](./avsamplebuffervideorenderer/recommendedpixelbufferattributes-6zrqb.md)
   Recommended pixel buffer attributes for optimal performance when using CMSampleBuffers containing CVPixelbuffers.
 ### Handling decode failures
-- [class let didFailToDecodeNotification: NSNotification.Name](avsamplebuffervideorenderer/didfailtodecodenotification.md)
+- [class let didFailToDecodeNotification: NSNotification.Name](./avsamplebuffervideorenderer/didfailtodecodenotification.md)
   A notification that indicates the video renderer fails to decode a sample buffer.
-- [class let didFailToDecodeNotificationErrorKey: String](avsamplebuffervideorenderer/didfailtodecodenotificationerrorkey.md)
+- [class let didFailToDecodeNotificationErrorKey: String](./avsamplebuffervideorenderer/didfailtodecodenotificationerrorkey.md)
   A key to retrieve an error object that provides the details of the failure.
 ### Capturing performance metrics
-- [func loadVideoPerformanceMetrics(completionHandler: (AVVideoPerformanceMetrics?) -> Void)](avsamplebuffervideorenderer/loadvideoperformancemetrics(completionhandler:).md)
+- [func loadVideoPerformanceMetrics(completionHandler: (AVVideoPerformanceMetrics?) -> Void)](./avsamplebuffervideorenderer/loadvideoperformancemetrics%28completionhandler%29.md)
 ### Classes
-- [AVSampleBufferVideoRenderer.Receiver](avsamplebuffervideorenderer/receiver.md)
+- [AVSampleBufferVideoRenderer.Receiver](./avsamplebuffervideorenderer/receiver.md)
 ### Instance Properties
-- [var hasSufficientMediaDataForReliablePlaybackStart: Bool](avsamplebuffervideorenderer/hassufficientmediadataforreliableplaybackstart.md)
+- [var hasSufficientMediaDataForReliablePlaybackStart: Bool](./avsamplebuffervideorenderer/hassufficientmediadataforreliableplaybackstart.md)
   Indicates whether the enqueued media data meets the renderer’s preroll level.
-- [var isReadyForMoreMediaData: Bool](avsamplebuffervideorenderer/isreadyformoremediadata.md)
+- [var isReadyForMoreMediaData: Bool](./avsamplebuffervideorenderer/isreadyformoremediadata.md)
   Indicates the readiness of the receiver to accept more sample buffers.
 ### Instance Methods
-- [func enqueue(CMSampleBuffer)](avsamplebuffervideorenderer/enqueue(_:).md)
+- [func enqueue(CMSampleBuffer)](./avsamplebuffervideorenderer/enqueue%28_%29.md)
   Sends a sample buffer in order to render its contents.
-- [func flush()](avsamplebuffervideorenderer/flush.md)
+- [func flush()](./avsamplebuffervideorenderer/flush%28%29.md)
   Instructs the receiver to discard pending enqueued sample buffers.
-- [func requestMediaDataWhenReady(on: dispatch_queue_t, using: () -> Void)](avsamplebuffervideorenderer/requestmediadatawhenready(on:using:).md)
+- [func requestMediaDataWhenReady(on: dispatch_queue_t, using: () -> Void)](./avsamplebuffervideorenderer/requestmediadatawhenready%28on,using%29.md)
   Instructs the target to invoke a client-supplied block repeatedly, at its convenience, in order to gather sample buffers for playback.
-- [func stopRequestingMediaData()](avsamplebuffervideorenderer/stoprequestingmediadata.md)
+- [func stopRequestingMediaData()](./avsamplebuffervideorenderer/stoprequestingmediadata%28%29.md)
   Cancels any current requestMediaDataWhenReadyOnQueue:usingBlock: call.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [AVQueuedSampleBufferRendering](avqueuedsamplebufferrendering.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [AVQueuedSampleBufferRendering](./avqueuedsamplebufferrendering.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol AVQueuedSampleBufferRendering](avqueuedsamplebufferrendering.md)
+### Presentation
+- [protocol AVQueuedSampleBufferRendering](./avqueuedsamplebufferrendering.md)
   Methods you can implement to enqueue sample buffers for presentation.
-- [class AVSampleBufferRenderSynchronizer](avsamplebufferrendersynchronizer.md)
+- [class AVSampleBufferRenderSynchronizer](./avsamplebufferrendersynchronizer.md)
   An object used to synchronize multiple queued sample buffers to a single timeline.
-- [class AVSampleBufferDisplayLayer](avsamplebufferdisplaylayer.md)
+- [class AVSampleBufferDisplayLayer](./avsamplebufferdisplaylayer.md)
   An object that displays compressed or uncompressed video frames.
-- [class AVSampleBufferAudioRenderer](avsamplebufferaudiorenderer.md)
+- [class AVSampleBufferAudioRenderer](./avsamplebufferaudiorenderer.md)
   An object used to decompress audio and play compressed or uncompressed audio.
 
 

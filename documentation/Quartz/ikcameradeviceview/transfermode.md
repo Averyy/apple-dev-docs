@@ -1,7 +1,8 @@
 # transferMode
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines how the contents are saved by the delegate.
 
@@ -14,9 +15,13 @@ Determines how the contents are saved by the delegate.
 var transferMode: IKCameraDeviceViewTransferMode { get set }
 ```
 
+```objc
+@property IKCameraDeviceViewTransferMode transferMode;
+```
+
 #### Discussion
 
-The possible values are described in [`IKCameraDeviceViewTransferMode`](ikcameradeviceviewtransfermode.md).
+The possible values are described in [`IKCameraDeviceViewTransferMode`](../ikcameradeviceviewtransfermode.md).
 
 
 ---

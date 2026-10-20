@@ -1,7 +1,8 @@
 # NSTextView.DidEndEditingMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,16 +16,16 @@ struct DidEndEditingMessage
 ## Topics
 
 ### Initializers
-- [init(text: NSText, textMovement: Int?)](nstextview/didendeditingmessage/init(text:textmovement:).md)
+- [init(text: NSText, textMovement: Int?)](./didendeditingmessage/init%28text,textmovement%29.md)
 ### Instance Properties
-- [var text: NSText](nstextview/didendeditingmessage/text.md)
-- [var textMovement: Int?](nstextview/didendeditingmessage/textmovement.md)
+- [var text: NSText](./didendeditingmessage/text.md)
+- [var textMovement: Int?](./didendeditingmessage/textmovement.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

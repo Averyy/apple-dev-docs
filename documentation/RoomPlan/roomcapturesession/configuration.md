@@ -1,7 +1,8 @@
 # RoomCaptureSession.Configuration
 
 **Framework**: RoomPlan  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Settings that configure the room-scanning process.
 
@@ -18,24 +19,25 @@ struct Configuration
 
 #### Overview
 
-The `configuration` argument of a room-capture session’s  [`run(configuration:)`](roomcapturesession/run(configuration:).md) function is of this type.
+The `configuration` argument of a room-capture session’s  [`run(configuration:)`](./run%28configuration%29.md) function is of this type.
 
 ## Topics
 
 ### Creating a configuration
-- [init()](roomcapturesession/configuration/init.md)
+- [init()](./configuration/init%28%29.md)
   Creates a configuration.
 ### Configuring a session
-- [var isCoachingEnabled: Bool](roomcapturesession/configuration/iscoachingenabled.md)
+- [var isCoachingEnabled: Bool](./configuration/iscoachingenabled.md)
   An option that indicates that the session periodically provides user instructions.
 
 ## See Also
 
-- [func run(configuration: RoomCaptureSession.Configuration)](roomcapturesession/run(configuration:).md)
+### Controlling a session
+- [func run(configuration: RoomCaptureSession.Configuration)](./run%28configuration%29.md)
   Starts a room-capture session with the specified configuration.
-- [func stop()](roomcapturesession/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops the room-capture session.
-- [func stop(pauseARSession: Bool)](roomcapturesession/stop(pausearsession:).md)
+- [func stop(pauseARSession: Bool)](./stop%28pausearsession%29.md)
   Stops the room-capture session and indicates whether the app pauses the underlying AR session.
 
 

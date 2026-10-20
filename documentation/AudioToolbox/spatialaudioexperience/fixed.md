@@ -1,7 +1,8 @@
 # fixed
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A fixed spatial audio experience with an automatic sound stage size.
 
@@ -13,6 +14,8 @@ A fixed spatial audio experience with an automatic sound stage size.
 ```swift
 static var fixed: FixedSpatialAudio { get }
 ```
+
+Available when `Self` is `FixedSpatialAudio`.
 
 
 ---

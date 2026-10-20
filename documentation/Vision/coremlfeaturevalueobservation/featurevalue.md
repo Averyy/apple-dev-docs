@@ -1,7 +1,8 @@
 # featureValue
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The feature result of a request that outputs neither a classification nor an image.
 
@@ -22,7 +23,8 @@ let featureValue: MLSendableFeatureValue
 
 ## See Also
 
-- [let featureName: String](coremlfeaturevalueobservation/featurename.md)
+### Getting the feature name and value
+- [let featureName: String](./featurename.md)
   The name in the model description of the model that produces this observation.
 
 

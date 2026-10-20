@@ -1,7 +1,8 @@
 # index(_:offsetBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index that is the specified distance from the given index.
 

@@ -1,7 +1,8 @@
 # storage
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var storage: any MTRStorage { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) id<MTRStorage> storage;
 ```
 
 

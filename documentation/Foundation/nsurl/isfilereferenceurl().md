@@ -1,7 +1,8 @@
 # isFileReferenceURL()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the URL is a file reference URL.
 
@@ -20,15 +21,20 @@ Returns whether the URL is a file reference URL.
 func isFileReferenceURL() -> Bool
 ```
 
+```objc
+- (BOOL) isFileReferenceURL;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the URL is a file reference URL; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the URL is a file reference URL; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func checkResourceIsReachableAndReturnError(NSErrorPointer) -> Bool](nsurl/checkresourceisreachableandreturnerror(_:).md)
+### Querying an NSURL
+- [func checkResourceIsReachableAndReturnError(NSErrorPointer) -> Bool](./checkresourceisreachableandreturnerror%28_%29.md)
   Returns whether the resource pointed to by a file URL can be reached.
-- [var isFileURL: Bool](nsurl/isfileurl.md)
+- [var isFileURL: Bool](./isfileurl.md)
   A boolean value that determines whether the receiver is a file URL.
 
 

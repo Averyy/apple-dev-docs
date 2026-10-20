@@ -1,7 +1,8 @@
 # MediaList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface MediaList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](medialist/1631487-length.md)
-- [mediaText](medialist/1631013-mediatext.md)
+- [length](./medialist/api-1631487-length.md)
+- [mediaText](./medialist/api-1631013-mediatext.md)
 ### Instance Methods
-- [appendMedium](medialist/1633267-appendmedium.md)
-- [deleteMedium](medialist/1628892-deletemedium.md)
-- [item](medialist/1634088-item.md)
+- [appendMedium](./medialist/api-1633267-appendmedium.md)
+- [deleteMedium](./medialist/api-1628892-deletemedium.md)
+- [item](./medialist/api-1634088-item.md)
 
 
 ---

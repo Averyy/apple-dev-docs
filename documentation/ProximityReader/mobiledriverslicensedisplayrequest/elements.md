@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document elements you’re requesting.
 
@@ -18,13 +19,14 @@ var elements: [MobileDriversLicenseDisplayRequest.Element]
 
 #### Discussion
 
-> **Note**: A request isn’t considered valid if the list of elements is empty, contains duplicates, or contains both [`age`](mobiledriverslicensedisplayrequest/element/age.md) and [`ageAtLeast(_:)`](mobiledriverslicensedisplayrequest/element/ageatleast(_:).md). If you call [`requestDocument(_:)`](mobiledocumentreadersession/requestdocument(_:).md) with an invalid request, the framework throws an [`MobileDocumentReaderError.invalidRequest`](mobiledocumentreadererror/invalidrequest.md) error.
+> **Note**: A request isn’t considered valid if the list of elements is empty, contains duplicates, or contains both [`age`](./element/age.md) and [`ageAtLeast(_:)`](./element/ageatleast%28_%29.md). If you call [`requestDocument(_:)`](../mobiledocumentreadersession/requestdocument%28_%29.md) with an invalid request, the framework throws an [`MobileDocumentReaderError.invalidRequest`](../mobiledocumentreadererror/invalidrequest.md) error.
 
 ## See Also
 
-- [init(elements: [MobileDriversLicenseDisplayRequest.Element], options: MobileDriversLicenseDisplayRequest.Options)](mobiledriverslicensedisplayrequest/init(elements:options:).md)
+### Creating a display request
+- [init(elements: [MobileDriversLicenseDisplayRequest.Element], options: MobileDriversLicenseDisplayRequest.Options)](./init%28elements,options%29.md)
   Creates a new mobile driver’s license display request.
-- [MobileDriversLicenseDisplayRequest.Element](mobiledriverslicensedisplayrequest/element.md)
+- [MobileDriversLicenseDisplayRequest.Element](./element.md)
   A type that represents an element you can request from a mobile driver’s license.
 
 

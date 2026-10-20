@@ -1,9 +1,10 @@
 # httpsServer
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-An [`NEProxyServer`](neproxyserver.md) object containing the static HTTPS proxy server settings.
+An [`NEProxyServer`](../neproxyserver.md) object containing the static HTTPS proxy server settings.
 
 **Availability**:
 - iOS 9.0+
@@ -20,21 +21,27 @@ An [`NEProxyServer`](neproxyserver.md) object containing the static HTTPS proxy 
 var httpsServer: NEProxyServer? { get set }
 ```
 
+```objc
+@property (copy, nullable) NEProxyServer * HTTPSServer;
+```
+
 #### Discussion
 
-If [`autoProxyConfigurationEnabled`](neproxysettings/autoproxyconfigurationenabled.md) is [`false`](https://developer.apple.com/documentation/swift/false) and [`httpsEnabled`](neproxysettings/httpsenabled.md) is [`true`](https://developer.apple.com/documentation/swift/true), then the proxy server specified in this property will be used for HTTPS connections.
+If [`autoProxyConfigurationEnabled`](./autoproxyconfigurationenabled.md) is [`false`](../../Swift/false.md) and [`httpsEnabled`](./httpsenabled.md) is [`true`](../../Swift/true.md), then the proxy server specified in this property will be used for HTTPS connections.
 
 ## See Also
 
-- [var autoProxyConfigurationEnabled: Bool](neproxysettings/autoproxyconfigurationenabled.md)
+### Related Documentation
+- [var autoProxyConfigurationEnabled: Bool](./autoproxyconfigurationenabled.md)
   A Boolean indicating if proxy auto-configuration is enabled.
-- [var httpEnabled: Bool](neproxysettings/httpenabled.md)
+### Accessing Manual Proxy Properties
+- [var httpEnabled: Bool](./httpenabled.md)
   A Boolean indicating if a static HTTP proxy will be used.
-- [var httpServer: NEProxyServer?](neproxysettings/httpserver.md)
-  An [`NEProxyServer`](neproxyserver.md) object containing the static HTTP proxy server settings.
-- [var httpsEnabled: Bool](neproxysettings/httpsenabled.md)
+- [var httpServer: NEProxyServer?](./httpserver.md)
+  An [`NEProxyServer`](../neproxyserver.md) object containing the static HTTP proxy server settings.
+- [var httpsEnabled: Bool](./httpsenabled.md)
   A Boolean indicating if a static HTTPS proxy will be used.
-- [class NEProxyServer](neproxyserver.md)
+- [class NEProxyServer](../neproxyserver.md)
   `NEProxyServer` contains settings for a proxy server.
 
 

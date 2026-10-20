@@ -1,16 +1,17 @@
 # CF_HAS_TYPED_ALLOCATOR
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,10 +19,15 @@
 var CF_HAS_TYPED_ALLOCATOR: Int32 { get }
 ```
 
+```c
+#define CF_HAS_TYPED_ALLOCATOR
+```
+
 ## See Also
 
-- [var CGFLOAT_DEFINED: Int32](cgfloat_defined.md)
-- [var COREFOUNDATION_CFPLUGINCOM_SEPARATE: Int32](corefoundation_cfplugincom_separate.md)
+### Macros
+- [var CGFLOAT_DEFINED: Int32](./cgfloat_defined.md)
+- [var COREFOUNDATION_CFPLUGINCOM_SEPARATE: Int32](./corefoundation_cfplugincom_separate.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # enumerateBytes(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enumerates the contents of the data’s buffer.
 
@@ -13,7 +14,9 @@ Enumerates the contents of the data’s buffer.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 5.0
+
+> **Deprecated**: use `regions` or `for-in` instead
 
 ## Declaration
 
@@ -23,7 +26,7 @@ func enumerateBytes(_ block: (UnsafeBufferPointer<UInt8>, Data.Index, inout Bool
 
 #### Discussion
 
-In some cases, (for example, a [`Data`](data.md) backed by a `dispatch_data_t`, the bytes may be stored discontiguously. In those cases, this function invokes the closure for each contiguous region of bytes.
+In some cases, (for example, a [`Data`](../data.md) backed by a `dispatch_data_t`, the bytes may be stored discontiguously. In those cases, this function invokes the closure for each contiguous region of bytes.
 
 ## Parameters
 
@@ -31,9 +34,10 @@ In some cases, (for example, a [`Data`](data.md) backed by a `dispatch_data_t`, 
 
 ## See Also
 
-- [func makeIterator() -> Data.Iterator](data/makeiterator.md)
+### Iterating Over Bytes
+- [func makeIterator() -> Data.Iterator](./makeiterator%28%29.md)
   Returns an iterator over the contents of the data.
-- [struct Iterator](data/iterator.md)
+- [struct Iterator](./iterator.md)
   An iterator that operates over the contents of data.
 
 

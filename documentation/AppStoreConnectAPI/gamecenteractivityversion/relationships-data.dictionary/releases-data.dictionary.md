@@ -1,21 +1,22 @@
 # GameCenterActivityVersion.Relationships.Releases
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityVersion.Relationships.Releases
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterActivityVersion.Relationships.Releases.Data](gamecenteractivityversion/relationships-data.dictionary/releases-data.dictionary/data-data.dictionary.md)
+- [object GameCenterActivityVersion.Relationships.Releases.Data](./releases-data.dictionary/data-data.dictionary.md)
   The request body you use to update a activity.
 
 ## Properties

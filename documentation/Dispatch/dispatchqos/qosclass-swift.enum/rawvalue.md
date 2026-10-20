@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the raw type.
 
@@ -10,9 +11,9 @@ The value of the raw type.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ var rawValue: qos_class_t { get }
 
 ## See Also
 
-- [init?(rawValue: qos_class_t)](dispatchqos/qosclass-swift.enum/init(rawvalue:).md)
+### Initializing the Type
+- [init?(rawValue: qos_class_t)](./init%28rawvalue%29.md)
   Initializes the type with a raw value.
 
 

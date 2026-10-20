@@ -1,7 +1,8 @@
 # manifest
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The manifest of asset packs that are available to download.
 
@@ -21,15 +22,16 @@ var manifest: AssetPackManifest { get async throws }
 
 ## Mentions
 
-- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
+- [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
 ## See Also
 
-- [struct AssetPackManifest](assetpackmanifest.md)
+### Accessing asset packs
+- [struct AssetPackManifest](../assetpackmanifest.md)
   A manifest of asset packs that are available to download.
-- [var allAssetPacks: Set<AssetPack>](assetpackmanager/allassetpacks.md)
+- [var allAssetPacks: Set<AssetPack>](./allassetpacks.md)
   The asset packs that are available to download.
-- [func assetPack(withID: String) async throws -> AssetPack](assetpackmanager/assetpack(withid:).md)
+- [func assetPack(withID: String) async throws -> AssetPack](./assetpack%28withid%29.md)
   Returns the asset pack with the given ID.
 
 

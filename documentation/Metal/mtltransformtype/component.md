@@ -1,7 +1,8 @@
 # MTLTransformType.component
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case component
+```
+
+```c
+MTLTransformTypeComponent
 ```
 
 

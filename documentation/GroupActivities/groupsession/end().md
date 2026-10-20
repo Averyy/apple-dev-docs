@@ -1,7 +1,8 @@
 # end()
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends the activity for the entire group and stops the transfer of synchronized data.
 
@@ -21,19 +22,20 @@ final func end()
 
 ## Mentions
 
-- [Joining and managing a shared activity](joining-and-managing-a-shared-activity.md)
+- [Joining and managing a shared activity](../joining-and-managing-a-shared-activity.md)
 
 #### Discussion
 
-Call this method to end the activity for all participants. When you call this method, the session transitions to the [`GroupSession.State.invalidated(reason:)`](groupsession/state-swift.enum/invalidated(reason:).md) state and stops the delivery of session-related updates. After ending the session, you can’t join it again.
+Call this method to end the activity for all participants. When you call this method, the session transitions to the [`GroupSession.State.invalidated(reason:)`](./state-swift.enum/invalidated%28reason%29.md) state and stops the delivery of session-related updates. After ending the session, you can’t join it again.
 
-Don’t call this method on a session already in the [`GroupSession.State.invalidated(reason:)`](groupsession/state-swift.enum/invalidated(reason:).md) state.
+Don’t call this method on a session already in the [`GroupSession.State.invalidated(reason:)`](./state-swift.enum/invalidated%28reason%29.md) state.
 
 ## See Also
 
-- [func join()](groupsession/join.md)
+### Joining and leaving the session
+- [func join()](./join%28%29.md)
   Starts the shared activity on the current device.
-- [func leave()](groupsession/leave.md)
+- [func leave()](./leave%28%29.md)
   Leaves the current activity and stops receiving synchronized data.
 
 

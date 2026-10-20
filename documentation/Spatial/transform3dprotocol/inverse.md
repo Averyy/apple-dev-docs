@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns a transform that’s constructed by inverting an existing transform.

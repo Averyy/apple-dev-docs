@@ -1,7 +1,8 @@
 # com.apple.developer.upi-device-validation
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether your app can use UPI device enrollment for NPCI financial transactions.
 
@@ -9,9 +10,12 @@ A Boolean value that indicates whether your app can use UPI device enrollment fo
 - iOS 17.0+
 - iPadOS 17.0+
 
+## Details
+
+- **Name**: `com.apple.developer.upi-device-validation`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 
@@ -19,9 +23,9 @@ A Boolean value that indicates whether your app can use UPI device enrollment fo
 
 The Unified Payments Interface (UPI) system, developed by the National Payments Corporation of India (NPCI), supports mobile-app financial transactions. This entitlement allows your app to display a non-editable Messages share sheet with a predefined recipient and token, and includes methods to verify the token was successfully transmitted to the carrier network.
 
-With this entitlement, you can use [`setUPIVerificationCodeSendCompletion(_:)`](https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion(_:)), which configures the instance of [`MFMessageComposeViewController`](https://developer.apple.com/documentation/messageui/mfmessagecomposeviewcontroller) with non-editable recipients and body fields. You also need this entitlement to use [`CTCellularPlanStatus`](https://developer.apple.com/documentation/coretelephony/ctcellularplanstatus).
+With this entitlement, you can use [`setUPIVerificationCodeSendCompletion(_:)`](../../MessageUI/mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion%28_%29.md), which configures the instance of [`MFMessageComposeViewController`](../../MessageUI/mfmessagecomposeviewcontroller.md) with non-editable recipients and body fields. You also need this entitlement to use [`CTCellularPlanStatus`](../../CoreTelephony/ctcellularplanstatus.md).
 
-You must be an account holder of a development team to get permission to use this entitlement. To request access, see [`UPI device validation Entitlement Request`](https://developer.apple.comhttps://developer.apple.com/contact/request/upi-device-validation). Once you’re approved, add the entitlement to your app in the Xcode property list editor. Set the entitlement’s type to Boolean, and the corresponding value to YES.
+You must be an account holder of a development team to get permission to use this entitlement. To request access, see [UPI device validation Entitlement Request](https://developer.apple.com/contact/request/upi-device-validation). Once you’re approved, add the entitlement to your app in the Xcode property list editor. Set the entitlement’s type to Boolean, and the corresponding value to YES.
 
 
 ---

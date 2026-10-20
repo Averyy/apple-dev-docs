@@ -1,7 +1,8 @@
 # speechRecognitionMetadata
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains the metadata results for a speech recognition request.
 
@@ -18,11 +19,16 @@ An object that contains the metadata results for a speech recognition request.
 var speechRecognitionMetadata: SFSpeechRecognitionMetadata? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) SFSpeechRecognitionMetadata * speechRecognitionMetadata;
+```
+
 ## See Also
 
-- [var bestTranscription: SFTranscription](sfspeechrecognitionresult/besttranscription.md)
+### Getting transcriptions
+- [var bestTranscription: SFTranscription](./besttranscription.md)
   The transcription with the highest confidence level.
-- [var transcriptions: [SFTranscription]](sfspeechrecognitionresult/transcriptions.md)
+- [var transcriptions: [SFTranscription]](./transcriptions.md)
   An array of potential transcriptions, sorted in descending order of confidence.
 
 

@@ -1,14 +1,15 @@
 # kIOBlitHighlightOperation
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOBlitHighlightOperation = 0x00040000 | kIOBlitTypeOperationType0
 ```
 

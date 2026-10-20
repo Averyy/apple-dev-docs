@@ -1,7 +1,8 @@
 # fitzpatrickSkinType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A characteristic type identifier for the user’s skin type.
 
@@ -19,29 +20,35 @@ A characteristic type identifier for the user’s skin type.
 static let fitzpatrickSkinType: HKCharacteristicTypeIdentifier
 ```
 
+```c
+extern HKCharacteristicTypeIdentifier const HKCharacteristicTypeIdentifierFitzpatrickSkinType;
+```
+
 #### Discussion
 
-This type uses values from the [`HKFitzpatrickSkinType`](hkfitzpatrickskintype.md) enum.
+This type uses values from the [`HKFitzpatrickSkinType`](../hkfitzpatrickskintype.md) enum.
 
 ## See Also
 
-- [class HKCharacteristicType](hkcharacteristictype.md)
+### Related Documentation
+- [class HKCharacteristicType](../hkcharacteristictype.md)
   A type that represents data that doesn’t typically change over time.
-- [struct HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier.md)
+- [struct HKCharacteristicTypeIdentifier](../hkcharacteristictypeidentifier.md)
   The identifiers that create characteristic type objects.
-- [enum HKFitzpatrickSkinType](hkfitzpatrickskintype.md)
+- [enum HKFitzpatrickSkinType](../hkfitzpatrickskintype.md)
   Categories representing the user’s skin type based on the Fitzpatrick scale.
-- [class HKFitzpatrickSkinTypeObject](hkfitzpatrickskintypeobject.md)
-  This class acts as a wrapper for the [`HKFitzpatrickSkinType`](hkfitzpatrickskintype.md) enumeration.
-- [static let activityMoveMode: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/activitymovemode.md)
+- [class HKFitzpatrickSkinTypeObject](../hkfitzpatrickskintypeobject.md)
+  This class acts as a wrapper for the [`HKFitzpatrickSkinType`](../hkfitzpatrickskintype.md) enumeration.
+### Characteristic identifiers
+- [static let activityMoveMode: HKCharacteristicTypeIdentifier](./activitymovemode.md)
   A characteristic identifier for the user’s activity mode.
-- [static let biologicalSex: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/biologicalsex.md)
+- [static let biologicalSex: HKCharacteristicTypeIdentifier](./biologicalsex.md)
   A characteristic type identifier for the user’s sex.
-- [static let bloodType: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/bloodtype.md)
+- [static let bloodType: HKCharacteristicTypeIdentifier](./bloodtype.md)
   A characteristic type identifier for the user’s blood type.
-- [static let dateOfBirth: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/dateofbirth.md)
+- [static let dateOfBirth: HKCharacteristicTypeIdentifier](./dateofbirth.md)
   A characteristic type identifier for the user’s date of birth.
-- [static let wheelchairUse: HKCharacteristicTypeIdentifier](hkcharacteristictypeidentifier/wheelchairuse.md)
+- [static let wheelchairUse: HKCharacteristicTypeIdentifier](./wheelchairuse.md)
   A characteristic identifier for the user’s use of a wheelchair.
 
 

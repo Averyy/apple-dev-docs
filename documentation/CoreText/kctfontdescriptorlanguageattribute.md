@@ -1,7 +1,8 @@
 # kCTFontDescriptorLanguageAttribute
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCTFontDescriptorLanguageAttribute: CFString
+```
+
+```c
+extern CFStringRef const kCTFontDescriptorLanguageAttribute;
 ```
 
 #### Discussion

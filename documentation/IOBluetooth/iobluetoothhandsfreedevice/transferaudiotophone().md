@@ -1,7 +1,8 @@
 # transferAudioToPhone()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the audio for current or future calls to a phone.
 
@@ -14,9 +15,14 @@ Moves the audio for current or future calls to a phone.
 func transferAudioToPhone()
 ```
 
+```objc
+- (void) transferAudioToPhone;
+```
+
 ## See Also
 
-- [func transferAudioToComputer()](iobluetoothhandsfreedevice/transferaudiotocomputer.md)
+### Transferring Audio
+- [func transferAudioToComputer()](./transferaudiotocomputer%28%29.md)
   Moves the audio for current and future calls to a Mac.
 
 

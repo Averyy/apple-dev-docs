@@ -1,7 +1,8 @@
 # visibleRect
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The portion of the display where it is safe to place windows.
 

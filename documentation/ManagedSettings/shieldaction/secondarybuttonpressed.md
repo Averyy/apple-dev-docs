@@ -1,7 +1,8 @@
 # ShieldAction.secondaryButtonPressed
 
 **Framework**: Managed Settings  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user pressed the optional secondary button underneath the primary button of a shield.
 
@@ -18,11 +19,12 @@ case secondaryButtonPressed
 
 ## See Also
 
-- [ShieldAction.firstSecondarySubmenuItemPressed](shieldaction/firstsecondarysubmenuitempressed.md)
+### Responding to secondary button actions
+- [ShieldAction.firstSecondarySubmenuItemPressed](./firstsecondarysubmenuitempressed.md)
   An action that occurs when someone selects the first item in the secondary button’s submenu.
-- [ShieldAction.secondSecondarySubmenuItemPressed](shieldaction/secondsecondarysubmenuitempressed.md)
+- [ShieldAction.secondSecondarySubmenuItemPressed](./secondsecondarysubmenuitempressed.md)
   An action that occurs when someone selects the second item in the secondary button’s submenu.
-- [ShieldAction.thirdSecondarySubmenuItemPressed](shieldaction/thirdsecondarysubmenuitempressed.md)
+- [ShieldAction.thirdSecondarySubmenuItemPressed](./thirdsecondarysubmenuitempressed.md)
   An action that occurs when someone selects the third item in the secondary button’s submenu.
 
 

@@ -1,7 +1,8 @@
 # OptionalUnwrapper
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that unwraps optional elements and throws when encountering missing values.
 
@@ -23,34 +24,35 @@ struct OptionalUnwrapper<Element>
 ## Topics
 
 ### Creating a transformer
-- [init()](optionalunwrapper/init.md)
+- [init()](./optionalunwrapper/init%28%29.md)
   Creates a transformer that unwraps an optional element or throws if the value is nil.
 ### Performing the transformation
-- [func applied(to: Element?, eventHandler: EventHandler?) throws -> Element](optionalunwrapper/applied(to:eventhandler:).md)
+- [func applied(to: Element?, eventHandler: EventHandler?) throws -> Element](./optionalunwrapper/applied%28to,eventhandler%29.md)
   Unwraps an optional element or throws if the value is `nil`.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [struct LinearTransformer](lineartransformer.md)
+### Preprocessors
+- [struct LinearTransformer](./lineartransformer.md)
   A transformer that runs an input through a scale and offset.
-- [struct ImputeTransformer](imputetransformer.md)
+- [struct ImputeTransformer](./imputetransformer.md)
   A transformer that replaces missing values with a pre-defined value.
-- [struct OneHotEncoder](onehotencoder.md)
+- [struct OneHotEncoder](./onehotencoder.md)
   An estimator that encodes categorical values to an integer array.
-- [struct OrdinalEncoder](ordinalencoder.md)
+- [struct OrdinalEncoder](./ordinalencoder.md)
   An ordinal encoder estimator encodes categorical values to ordinal integer values.
-- [struct NumericImputer](numericimputer.md)
+- [struct NumericImputer](./numericimputer.md)
   An estimator that replaces missing values in the numeric input.
-- [struct Reshaper](reshaper.md)
+- [struct Reshaper](./reshaper.md)
   A transformer that reshapes a shaped array.
-- [struct CategoricalImputer](categoricalimputer.md)
+- [struct CategoricalImputer](./categoricalimputer.md)
   An estimator that replaces missing values in the categorical input.
 
 

@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The center of the effect as x and y coordinates.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ The center of the effect as x and y coordinates.
 var center: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint center;
+```
+
 ## See Also
 
-- [var falloff: Float](civignetteeffect/falloff.md)
+### Instance Properties
+- [var falloff: Float](./falloff.md)
   The falloff of the effect.
-- [var inputImage: CIImage?](civignetteeffect/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var intensity: Float](civignetteeffect/intensity.md)
+- [var intensity: Float](./intensity.md)
   The intensity of the effect.
-- [var radius: Float](civignetteeffect/radius.md)
+- [var radius: Float](./radius.md)
   The distance from the center of the effect.
 
 

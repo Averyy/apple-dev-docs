@@ -1,7 +1,8 @@
 # hidDescriptorType
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The type of the descriptor.
 
@@ -10,15 +11,16 @@ The type of the descriptor.
 
 ## Declaration
 
-```swift
+```c
 uint8_t hidDescriptorType;
 ```
 
 ## See Also
 
-- [hidDescriptorLengthHi](iousbhidreportdesc/1546199-hiddescriptorlengthhi.md)
+### Getting the Properties
+- [hidDescriptorLengthHi](./api-1546199-hiddescriptorlengthhi.md)
   The high byte length of the descriptor.
-- [hidDescriptorLengthLo](iousbhidreportdesc/1546355-hiddescriptorlengthlo.md)
+- [hidDescriptorLengthLo](./api-1546355-hiddescriptorlengthlo.md)
   The low byte length of the descriptor.
 
 

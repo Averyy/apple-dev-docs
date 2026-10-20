@@ -1,7 +1,8 @@
 # stopService(provider:)
 
 **Framework**: Core Media I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - macOS 14.4+
@@ -12,9 +13,14 @@
 class func stopService(provider: CMIOExtensionProvider)
 ```
 
+```objc
++ (void) stopServiceWithProvider:(CMIOExtensionProvider *) provider;
+```
+
 ## See Also
 
-- [class func ignoreSIGTERM()](cmioextensionprovider/ignoresigterm.md)
+### Type Methods
+- [class func ignoreSIGTERM()](./ignoresigterm%28%29.md)
 
 
 ---

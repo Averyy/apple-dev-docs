@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 **Availability**:

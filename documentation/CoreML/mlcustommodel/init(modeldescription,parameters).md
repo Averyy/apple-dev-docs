@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a custom model with the given description and parameters.
@@ -19,6 +20,10 @@ Creates a custom model with the given description and parameters.
 
 ```swift
 init(modelDescription: MLModelDescription, parameters: [String : Any]) throws
+```
+
+```objc
+- (instancetype) initWithModelDescription:(MLModelDescription *) modelDescription parameterDictionary:(NSDictionary<NSString *,id> *) parameters error:(NSError **) error;
 ```
 
 ## Parameters

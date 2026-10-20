@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Serializes a pipeline data set to an archive.
@@ -18,6 +19,10 @@ Serializes a pipeline data set to an archive.
 
 ```swift
 func serializeAsArchiveAndFlush(url: URL) throws
+```
+
+```objc
+- (BOOL) serializeAsArchiveAndFlushToURL:(NSURL *) url error:(NSError **) error;
 ```
 
 ## Parameters

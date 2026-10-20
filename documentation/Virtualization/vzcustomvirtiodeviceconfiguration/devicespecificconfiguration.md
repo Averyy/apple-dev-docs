@@ -1,7 +1,8 @@
 # deviceSpecificConfiguration
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device-specific configuration for the device.
 
@@ -12,6 +13,10 @@ The device-specific configuration for the device.
 
 ```swift
 var deviceSpecificConfiguration: VZVirtioDeviceSpecificConfiguration? { get set }
+```
+
+```objc
+@property (strong, nullable) VZVirtioDeviceSpecificConfiguration * deviceSpecificConfiguration;
 ```
 
 

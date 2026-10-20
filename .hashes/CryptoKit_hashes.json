@@ -2676,9 +2676,8 @@
       "hash": "57119609cc3c641d601672c0aa315533272e0b210fd4d5408296d47824c3fb91"
     },
     "https://developer.apple.com/documentation/cryptokit/performing_common_cryptographic_operations": {
-      "etag": "W/\"e1ea1e675bcf859875bf1e617f85a3eb\"",
       "file_path": "documentation/CryptoKit/performing_common_cryptographic_operations.md",
-      "hash": "b2947cce16944aa595d98431cb16fcc026846c3797f4f3bf3c69c52aa0998643"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/cryptokit/secureenclave": {
       "etag": "\"3199-65d55f7f7e485-df\"",
@@ -6206,9 +6205,8 @@
       "hash": "57119609cc3c641d601672c0aa315533272e0b210fd4d5408296d47824c3fb91"
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptokit/performing_common_cryptographic_operations.json": {
-      "etag": "W/\"e1ea1e675bcf859875bf1e617f85a3eb\"",
       "file_path": "documentation/CryptoKit/performing_common_cryptographic_operations.md",
-      "hash": "b2947cce16944aa595d98431cb16fcc026846c3797f4f3bf3c69c52aa0998643"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptokit/secureenclave.json": {
       "etag": "\"3199-65d55f7f7e485-df\"",
@@ -7062,6 +7060,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 1412
   }
 }

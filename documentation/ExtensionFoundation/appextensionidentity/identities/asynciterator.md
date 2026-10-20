@@ -1,12 +1,15 @@
 # AppExtensionIdentity.Identities.AsyncIterator
 
 **Framework**: ExtensionFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of the asynchronous iterator created by this asynchronous sequence.
 
 **Availability**:
-- macOS 13.0+
+- macOS 13.0+ - Deprecated in 26.0
+
+> **Deprecated**: Replaced with AppExtensionPoint.Monitor
 
 ## Declaration
 
@@ -17,23 +20,24 @@ struct AsyncIterator
 ## Topics
 
 ### Iterating Extensions
-- [AppExtensionIdentity.Identities.Element](appextensionidentity/identities/element.md)
+- [AppExtensionIdentity.Identities.Element](./element.md)
   The type of element produced by this asynchronous sequence.
-- [func next() async -> [AppExtensionIdentity]?](appextensionidentity/identities/asynciterator/next.md)
+- [func next() async -> [AppExtensionIdentity]?](./asynciterator/next%28%29.md)
   Asynchronously advances to the next element and returns it.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func next() async -> [AppExtensionIdentity]?](appextensionidentity/identities/asynciterator/next.md)
+### Iterating the Sequence
+- [func next() async -> [AppExtensionIdentity]?](./asynciterator/next%28%29.md)
   Asynchronously advances to the next element and returns it.
-- [AppExtensionIdentity.Identities.Element](appextensionidentity/identities/element.md)
+- [AppExtensionIdentity.Identities.Element](./element.md)
   The type of element produced by this asynchronous sequence.
-- [func makeAsyncIterator() -> AppExtensionIdentity.Identities.AsyncIterator](appextensionidentity/identities/makeasynciterator.md)
+- [func makeAsyncIterator() -> AppExtensionIdentity.Identities.AsyncIterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
 

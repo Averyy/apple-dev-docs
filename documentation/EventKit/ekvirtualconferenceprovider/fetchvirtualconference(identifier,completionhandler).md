@@ -1,7 +1,8 @@
 # fetchVirtualConference(identifier:completionHandler:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides details about a virtual conference that takes place in a room the user selects.
 
@@ -16,12 +17,20 @@ Provides details about a virtual conference that takes place in a room the user 
 ## Declaration
 
 ```swift
+func fetchVirtualConference(identifier: EKVirtualConferenceRoomTypeIdentifier, completionHandler: @escaping @Sendable (EKVirtualConferenceDescriptor?, (any Error)?) -> Void)
+```
+
+```swift
 func fetchVirtualConference(identifier: EKVirtualConferenceRoomTypeIdentifier) async throws -> EKVirtualConferenceDescriptor
+```
+
+```objc
+- (void) fetchVirtualConferenceForIdentifier:(EKVirtualConferenceRoomTypeIdentifier) identifier completionHandler:(void (^)(EKVirtualConferenceDescriptor *, NSError *)) completionHandler;
 ```
 
 #### Discussion
 
-To add calendar events using your virtual conference services, EventKit calls this method to retrieve the details for a virtual conference, including how a user joins the virtual conference. The room type identifier is one that your provider identified in a previous call to [`fetchAvailableRoomTypes(completionHandler:)`](ekvirtualconferenceprovider/fetchavailableroomtypes(completionhandler:).md).
+To add calendar events using your virtual conference services, EventKit calls this method to retrieve the details for a virtual conference, including how a user joins the virtual conference. The room type identifier is one that your provider identified in a previous call to [`fetchAvailableRoomTypes(completionHandler:)`](./fetchavailableroomtypes%28completionhandler%29.md).
 
 ```swift
 override func fetchVirtualConference(identifier: EKVirtualConferenceRoomTypeIdentifier, completionHandler: @escaping (EKVirtualConferenceDescriptor?, Error?) -> Void) {

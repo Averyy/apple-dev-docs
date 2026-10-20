@@ -1,7 +1,8 @@
 # applyingExifOrientation(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new semantic segmentation matte instance with the specified Exif orientation applied.
 
@@ -20,25 +21,30 @@ Returns a new semantic segmentation matte instance with the specified Exif orien
 func applyingExifOrientation(_ exifOrientation: CGImagePropertyOrientation) -> Self
 ```
 
+```objc
+- (instancetype) semanticSegmentationMatteByApplyingExifOrientation:(CGImagePropertyOrientation) exifOrientation;
+```
+
 #### Return Value
 
 A new semantic segmentation matte instance.
 
 #### Discussion
 
-This method throws an [`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception) if you pass an unrecognized `exifOrientation`.
+This method throws an [`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md) if you pass an unrecognized `exifOrientation`.
 
 ## Parameters
 
-- `exifOrientation`: A [`CGImagePropertyOrientation`](https://developer.apple.com/documentation/imageio/cgimagepropertyorientation) value expressing how the matte should be rotated or mirrored.
+- `exifOrientation`: A [`CGImagePropertyOrientation`](../../ImageIO/cgimagepropertyorientation.md) value expressing how the matte should be rotated or mirrored.
 
 ## See Also
 
-- [convenience init(fromImageSourceAuxiliaryDataType: CFString, dictionaryRepresentation: [AnyHashable : Any]) throws](avsemanticsegmentationmatte/init(fromimagesourceauxiliarydatatype:dictionaryrepresentation:).md)
+### Creating a segmentation matte
+- [convenience init(fromImageSourceAuxiliaryDataType: CFString, dictionaryRepresentation: [AnyHashable : Any]) throws](./init%28fromimagesourceauxiliarydatatype,dictionaryrepresentation%29.md)
   Returns a new semantic segmentation matte instance from auxiliary image information in an image file.
-- [func replacingSemanticSegmentationMatte(with: CVPixelBuffer) throws -> Self](avsemanticsegmentationmatte/replacingsemanticsegmentationmatte(with:).md)
+- [func replacingSemanticSegmentationMatte(with: CVPixelBuffer) throws -> Self](./replacingsemanticsegmentationmatte%28with%29.md)
   Returns a semantic segmentation matte instance that wraps the replacement pixel buffer.
-- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](avsemanticsegmentationmatte/dictionaryrepresentation(forauxiliarydatatype:).md)
+- [func dictionaryRepresentation(forAuxiliaryDataType: AutoreleasingUnsafeMutablePointer<NSString?>?) -> [AnyHashable : Any]?](./dictionaryrepresentation%28forauxiliarydatatype%29.md)
   Returns a dictionary of primitive map information to use when writing an image file with a semantic segmentation matte.
 
 

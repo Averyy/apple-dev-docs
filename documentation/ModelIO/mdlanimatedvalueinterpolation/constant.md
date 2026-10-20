@@ -1,7 +1,8 @@
 # MDLAnimatedValueInterpolation.constant
 
 **Framework**: Model I/O  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case constant
+```
+
+```c
+MDLAnimatedValueInterpolationConstant
 ```
 
 

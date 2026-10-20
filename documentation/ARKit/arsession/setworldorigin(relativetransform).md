@@ -1,7 +1,8 @@
 # setWorldOrigin(relativeTransform:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the basis for the AR world coordinate space using the specified transform.
 
@@ -13,6 +14,10 @@ Changes the basis for the AR world coordinate space using the specified transfor
 
 ```swift
 func setWorldOrigin(relativeTransform: simd_float4x4)
+```
+
+```objc
+- (void) setWorldOrigin:(simd_float4x4) relativeTransform;
 ```
 
 #### Discussion

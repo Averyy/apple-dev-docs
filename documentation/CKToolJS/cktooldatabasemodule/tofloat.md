@@ -1,7 +1,8 @@
 # toFloat
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a number or numeric string to a `Float`.
 
@@ -10,7 +11,7 @@ Converts a number or numeric string to a `Float`.
 
 ## Declaration
 
-```swift
+```
 static Float toFloat();
 ```
 

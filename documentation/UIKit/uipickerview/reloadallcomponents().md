@@ -1,7 +1,8 @@
 # reloadAllComponents()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads all components of the picker view.
 
@@ -17,13 +18,18 @@ Reloads all components of the picker view.
 func reloadAllComponents()
 ```
 
+```objc
+- (void) reloadAllComponents;
+```
+
 #### Discussion
 
 Calling this method causes the picker view to query the delegate for new data for all components.
 
 ## See Also
 
-- [func reloadComponent(Int)](uipickerview/reloadcomponent(_:).md)
+### Reloading the picker view
+- [func reloadComponent(Int)](./reloadcomponent%28_%29.md)
   Reloads a particular component of the picker view.
 
 

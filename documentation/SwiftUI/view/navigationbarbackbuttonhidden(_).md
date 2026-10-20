@@ -1,7 +1,8 @@
 # navigationBarBackButtonHidden(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hides the navigation bar back button for the view.
 
@@ -25,7 +26,7 @@ func navigationBarBackButtonHidden(_ hidesBackButton: Bool = true) -> some View
 
 Use `navigationBarBackButtonHidden(_:)` to hide the back button for this view.
 
-This modifier only takes effect when this view is inside of and visible within a [`NavigationStack`](navigationstack.md) or a [`NavigationSplitView`](navigationsplitview.md) in narrow size classes.
+This modifier only takes effect when this view is inside of and visible within a [`NavigationStack`](../navigationstack.md) or a [`NavigationSplitView`](../navigationsplitview.md) in narrow size classes.
 
 The example below demonstrates how to hide the navigation back button for a view within a navigation stack:
 
@@ -47,9 +48,10 @@ NavigationStack {
 
 ## See Also
 
-- [func navigationBarTitleDisplayMode(NavigationBarItem.TitleDisplayMode) -> some View](view/navigationbartitledisplaymode(_:).md)
+### Configuring the navigation bar
+- [func navigationBarTitleDisplayMode(NavigationBarItem.TitleDisplayMode) -> some View](./navigationbartitledisplaymode%28_%29.md)
   Configures the title display mode for this view.
-- [struct NavigationBarItem](navigationbaritem.md)
+- [struct NavigationBarItem](../navigationbaritem.md)
   A configuration for a navigation bar that represents a view at the top of a navigation stack.
 
 

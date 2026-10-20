@@ -1,7 +1,8 @@
 # init(numberOfVisibleItems:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a newly allocated proportional layout, configured to display the given number of items.
 
@@ -14,6 +15,10 @@ Initializes and returns a newly allocated proportional layout, configured to dis
 init(numberOfVisibleItems: Int)
 ```
 
+```objc
+- (instancetype) initWithNumberOfVisibleItems:(NSInteger) numberOfVisibleItems;
+```
+
 #### Return Value
 
 A properly initialized proportional layout object.
@@ -24,7 +29,8 @@ A properly initialized proportional layout object.
 
 ## See Also
 
-- [init(coder: NSCoder)](nsscrubberproportionallayout/init(coder:).md)
+### Initializing a proprotional layout
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Initializes and returns a newly allocated proprotional layout object from a storyboard or nib file.
 
 

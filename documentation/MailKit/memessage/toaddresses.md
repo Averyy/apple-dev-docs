@@ -1,7 +1,8 @@
 # toAddresses
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of email addresses for the primary recipients of the message.
 
@@ -14,6 +15,10 @@ An array of email addresses for the primary recipients of the message.
 var toAddresses: [MEEmailAddress] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<MEEmailAddress *> * toAddresses;
+```
+
 #### Discussion
 
 This property corresponds to the To header in the message.
@@ -22,15 +27,16 @@ The entries in the array specify the email addresses only, and don’t include a
 
 ## See Also
 
-- [var fromAddress: MEEmailAddress](memessage/fromaddress.md)
+### Accessing the Sender and Recipients
+- [var fromAddress: MEEmailAddress](./fromaddress.md)
   The sender’s email address.
-- [var ccAddresses: [MEEmailAddress]](memessage/ccaddresses.md)
+- [var ccAddresses: [MEEmailAddress]](./ccaddresses.md)
   An array of email addresses for the secondary recipients of the message.
-- [var bccAddresses: [MEEmailAddress]](memessage/bccaddresses.md)
+- [var bccAddresses: [MEEmailAddress]](./bccaddresses.md)
   An array of email addresses for the concealed tertiary recipients of the message.
-- [var replyToAddresses: [MEEmailAddress]](memessage/replytoaddresses.md)
+- [var replyToAddresses: [MEEmailAddress]](./replytoaddresses.md)
   An array of email addresses to use when replying to the message.
-- [var allRecipientAddresses: [MEEmailAddress]](memessage/allrecipientaddresses.md)
+- [var allRecipientAddresses: [MEEmailAddress]](./allrecipientaddresses.md)
   An array of email addresses for all recipients of the message.
 
 

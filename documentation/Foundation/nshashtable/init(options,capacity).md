@@ -1,7 +1,8 @@
 # init(options:capacity:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a hash table initialized with the given attributes.
 
@@ -20,19 +21,25 @@ Returns a hash table initialized with the given attributes.
 init(options: NSPointerFunctions.Options = [], capacity initialCapacity: Int)
 ```
 
+```objc
+- (instancetype) initWithOptions:(NSPointerFunctionsOptions) options capacity:(NSUInteger) initialCapacity;
+```
+
 #### Return Value
 
 A hash table initialized with options specified by `options` and initial capacity of `capacity`.
 
 ## Parameters
 
-- `options`: A bit field that specifies the options for the elements in the hash table. For possible values, see [`NSHashTableOptions`](nshashtableoptions.md).
+- `options`: A bit field that specifies the options for the elements in the hash table. For possible values, see [`NSHashTableOptions`](../nshashtableoptions.md).
 - `initialCapacity`: The initial number of elements the hash table can hold.
 
 ## See Also
 
-- [Collections Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
-- [init(pointerFunctions: NSPointerFunctions, capacity: Int)](nshashtable/init(pointerfunctions:capacity:).md)
+### Related Documentation
+- [Collections Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Collections/Collections.html#//apple_ref/doc/uid/10000034i)
+### Initialization
+- [init(pointerFunctions: NSPointerFunctions, capacity: Int)](./init%28pointerfunctions,capacity%29.md)
   Returns a hash table initialized with the given functions and capacity.
 
 

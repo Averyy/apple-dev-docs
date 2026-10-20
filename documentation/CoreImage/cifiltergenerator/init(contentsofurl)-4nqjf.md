@@ -1,7 +1,8 @@
 # init(contentsOfURL:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.5+

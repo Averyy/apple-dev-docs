@@ -1,7 +1,8 @@
 # passRetained(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an unmanaged reference with an unbalanced retain.
 

@@ -2,6 +2,7 @@
 
 **Framework**: TranslationUIProvider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Completes the translation after which the framework closes the sheet.
@@ -23,7 +24,8 @@ func finish(translation: AttributedString?)
 
 ## See Also
 
-- [func expandSheet()](translationuiprovidercontext/expandsheet.md)
+### Instance Methods
+- [func expandSheet()](./expandsheet%28%29.md)
   The framework requests that the sheet expand.
 
 

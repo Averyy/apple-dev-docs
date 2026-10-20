@@ -1,7 +1,8 @@
 # subscribe(to:_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Subscribes to a serializable action event and returns a `ActionResult`.
 
@@ -20,6 +21,13 @@ Subscribes to a serializable action event and returns a `ActionResult`.
 @preconcurrency static func subscribe(to eventType: ActionEventType, _ handler: @escaping @MainActor (ActionEvent<Self>) -> ActionResult)
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency static func subscribe(to eventType: ActionEventType, _ handler: @escaping @MainActor (ActionEvent<Self>) -> Void)
+```
+
 #### Discussion
 
 For example, you can call this method to subscribe to the update event, which the system calls each frame it evaluates the action:
@@ -36,7 +44,8 @@ MyAction.subscribe(to: .updated) { event in
 
 ## See Also
 
-- [static func subscribe(to: ActionEventType, (ActionEvent<Self>) -> Void)](behaviortreeaction/subscribe(to:_:)-3p0pj.md)
+### Subscribing to events
+- [static func subscribe(to: ActionEventType, (ActionEvent<Self>) -> Void)](./subscribe%28to,_%29-3p0pj.md)
   Shadows the `EntityAction.subscribe(to:_:)` overload that takes a `-> Void` closure.
 
 

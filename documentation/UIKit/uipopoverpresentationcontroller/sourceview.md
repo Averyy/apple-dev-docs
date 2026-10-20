@@ -1,7 +1,8 @@
 # sourceView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view containing the anchor rectangle for the popover.
 
@@ -17,23 +18,28 @@ The view containing the anchor rectangle for the popover.
 var sourceView: UIView? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIView * sourceView;
+```
+
 ## Mentions
 
-- [Getting the user’s attention with alerts and action sheets](getting-the-user-s-attention-with-alerts-and-action-sheets.md)
+- [Getting the user’s attention with alerts and action sheets](../getting-the-user-s-attention-with-alerts-and-action-sheets.md)
 
 #### Discussion
 
-Use this property in conjunction with the [`sourceRect`](uipopoverpresentationcontroller/sourcerect.md) property to specify the anchor location for the popover. Alternatively, you may specify the anchor location for the popover using the [`barButtonItem`](uipopoverpresentationcontroller/barbuttonitem.md) property.
+Use this property in conjunction with the [`sourceRect`](./sourcerect.md) property to specify the anchor location for the popover. Alternatively, you may specify the anchor location for the popover using the [`barButtonItem`](./barbuttonitem.md) property.
 
 ## See Also
 
-- [var sourceItem: (any UIPopoverPresentationControllerSourceItem)?](uipopoverpresentationcontroller/sourceitem.md)
+### Specifying the popover’s anchor point
+- [var sourceItem: (any UIPopoverPresentationControllerSourceItem)?](./sourceitem.md)
   The item on which to anchor the popover.
-- [protocol UIPopoverPresentationControllerSourceItem](uipopoverpresentationcontrollersourceitem.md)
+- [protocol UIPopoverPresentationControllerSourceItem](../uipopoverpresentationcontrollersourceitem.md)
   A type that can be an anchor for a popover presentation controller.
-- [var sourceRect: CGRect](uipopoverpresentationcontroller/sourcerect.md)
+- [var sourceRect: CGRect](./sourcerect.md)
   The area in the source view in which you anchor the popover.
-- [var barButtonItem: UIBarButtonItem?](uipopoverpresentationcontroller/barbuttonitem.md)
+- [var barButtonItem: UIBarButtonItem?](./barbuttonitem.md)
   The bar button item on which to anchor the popover.
 
 

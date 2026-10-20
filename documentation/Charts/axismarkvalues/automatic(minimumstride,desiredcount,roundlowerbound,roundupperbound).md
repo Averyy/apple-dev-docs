@@ -1,7 +1,8 @@
 # automatic(minimumStride:desiredCount:roundLowerBound:roundUpperBound:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.0+

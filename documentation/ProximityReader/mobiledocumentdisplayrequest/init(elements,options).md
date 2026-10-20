@@ -1,7 +1,8 @@
 # init(elements:options:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new mobile document display request.
 
@@ -18,7 +19,8 @@ init(elements: [MobileDocumentDisplayRequest.Element] = [], options: MobileDocum
 
 ## See Also
 
-- [MobileDocumentDisplayRequest.Element](mobiledocumentdisplayrequest/element.md)
+### Creating a display request
+- [MobileDocumentDisplayRequest.Element](./element.md)
   A type that represents an element you can request from a mobile document.
 
 

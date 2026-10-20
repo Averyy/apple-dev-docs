@@ -1,7 +1,8 @@
 # primaryRotation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A primary rotation operation.
 

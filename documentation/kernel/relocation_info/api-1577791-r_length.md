@@ -1,7 +1,8 @@
 # r_length
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Indicates the length of the item containing the address to be relocated. 
 
@@ -10,7 +11,7 @@ Indicates the length of the item containing the address to be relocated.
 
 ## Declaration
 
-```swift
+```c
 uint32_t r_length:2;
 ```
 

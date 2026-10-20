@@ -1,7 +1,8 @@
 # supportedKnownFolders
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of known folders that the domain can replicate.
 
@@ -14,11 +15,16 @@ A list of known folders that the domain can replicate.
 var supportedKnownFolders: NSFileProviderKnownFolders { get set }
 ```
 
+```objc
+@property (assign, readwrite) NSFileProviderKnownFolders supportedKnownFolders;
+```
+
 ## See Also
 
-- [var replicatedKnownFolders: NSFileProviderKnownFolders](nsfileproviderdomain/replicatedknownfolders.md)
+### Syncing Desktop and Documents folders
+- [var replicatedKnownFolders: NSFileProviderKnownFolders](./replicatedknownfolders.md)
   A list of known folders that the domain currently replicates.
-- [struct NSFileProviderKnownFolders](nsfileproviderknownfolders.md)
+- [struct NSFileProviderKnownFolders](../nsfileproviderknownfolders.md)
   Constants that identify known folders.
 
 

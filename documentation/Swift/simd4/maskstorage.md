@@ -1,7 +1,8 @@
 # SIMD4.MaskStorage
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The mask type resulting from pointwise comparisons of this vector type.
 

@@ -1,7 +1,8 @@
 # deauthorize(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the authorization state to unauthorized and locks the lock icon in the view.
 
@@ -14,9 +15,13 @@ Sets the authorization state to unauthorized and locks the lock icon in the view
 func deauthorize(_ inSender: Any!) -> Bool
 ```
 
+```objc
+- (BOOL) deauthorize:(id) inSender;
+```
+
 #### Discussion
 
-If this method succeeds, it returns [`true`](https://developer.apple.com/documentation/swift/true); if it fails, the lock icon remains unlocked and the method returns [`false`](https://developer.apple.com/documentation/swift/false).
+If this method succeeds, it returns [`true`](../../Swift/true.md); if it fails, the lock icon remains unlocked and the method returns [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -24,7 +29,8 @@ If this method succeeds, it returns [`true`](https://developer.apple.com/documen
 
 ## See Also
 
-- [func authorize(Any!) -> Bool](sfauthorizationview/authorize(_:).md)
+### Setting the authorization state
+- [func authorize(Any!) -> Bool](./authorize%28_%29.md)
   Attempts to unlock the lock icon in the view.
 
 

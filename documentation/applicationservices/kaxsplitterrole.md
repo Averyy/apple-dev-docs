@@ -1,7 +1,8 @@
 # kAXSplitterRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A splitter bar control.
 
@@ -12,6 +13,10 @@ A splitter bar control.
 
 ```swift
 var kAXSplitterRole: String { get }
+```
+
+```c
+#define kAXSplitterRole
 ```
 
 

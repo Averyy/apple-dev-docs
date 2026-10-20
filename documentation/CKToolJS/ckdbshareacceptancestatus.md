@@ -1,7 +1,8 @@
 # CKDBShareAcceptanceStatus
 
 **Framework**: CKTool JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that indicates the status of accepting the shared record.
 
@@ -10,7 +11,7 @@ An enumeration that indicates the status of accepting the shared record.
 
 ## Declaration
 
-```swift
+```
 interface CKDBShareAcceptanceStatus {
 	const string INVITED;
 	const string ACCEPTED;
@@ -31,23 +32,24 @@ import { CKDBShareAcceptanceStatus } from "@apple/cktool.database";
 ## Topics
 
 ### Enumeration Cases
-- [ACCEPTED](ckdbshareacceptancestatus/accepted.md)
-- [INVITED](ckdbshareacceptancestatus/invited.md)
-- [REMOVED](ckdbshareacceptancestatus/removed.md)
-- [UNKNOWN](ckdbshareacceptancestatus/unknown.md)
-- [UNSUBSCRIBED](ckdbshareacceptancestatus/unsubscribed.md)
+- [ACCEPTED](./ckdbshareacceptancestatus/accepted.md)
+- [INVITED](./ckdbshareacceptancestatus/invited.md)
+- [REMOVED](./ckdbshareacceptancestatus/removed.md)
+- [UNKNOWN](./ckdbshareacceptancestatus/unknown.md)
+- [UNSUBSCRIBED](./ckdbshareacceptancestatus/unsubscribed.md)
 
 ## See Also
 
-- [CKDBPermissionType](ckdbpermissiontype.md)
+### Enumerations
+- [CKDBPermissionType](./ckdbpermissiontype.md)
   The participant’s read and write permissions.
-- [CKDBQueryFilterType](ckdbqueryfiltertype.md)
+- [CKDBQueryFilterType](./ckdbqueryfiltertype.md)
   An object that represents the type of a filter that indicates the comparison operator when applying the filter.
-- [CKDBQuerySortOrder](ckdbquerysortorder.md)
+- [CKDBQuerySortOrder](./ckdbquerysortorder.md)
   An enumeration that represents the order to use when sorting records.
-- [CKDBRecordReferenceAction](ckdbrecordreferenceaction.md)
+- [CKDBRecordReferenceAction](./ckdbrecordreferenceaction.md)
   An object that represents the action to be performed for the referenced record.
-- [CKDBShareParticipantType](ckdbshareparticipanttype.md)
+- [CKDBShareParticipantType](./ckdbshareparticipanttype.md)
   An enumeration that represents the type of a share participant.
 
 

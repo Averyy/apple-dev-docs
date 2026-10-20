@@ -1,7 +1,8 @@
 # autocorrectMode
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow Autocorrect during an assessment.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates whether to allow Autocorrect during an assessment
 var autocorrectMode: AEAssessmentConfiguration.AutocorrectMode { get set }
 ```
 
+```objc
+@property (nonatomic, assign) AEAutocorrectMode autocorrectMode;
+```
+
 #### Discussion
 
-Users can turn on autocorrect in the Settings app (General > Keyboard > Auto-Correction). An assessment session disables this feature by default, but you can allow it by setting [`autocorrectMode`](aeassessmentconfiguration/autocorrectmode-swift.property.md) in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session. Set the mode’s value to some combination of the the values from the [`AEAssessmentConfiguration.AutocorrectMode`](aeassessmentconfiguration/autocorrectmode-swift.struct.md) structure.
+Users can turn on autocorrect in the Settings app (General > Keyboard > Auto-Correction). An assessment session disables this feature by default, but you can allow it by setting [`autocorrectMode`](./autocorrectmode-swift.property.md) in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session. Set the mode’s value to some combination of the the values from the [`AEAssessmentConfiguration.AutocorrectMode`](./autocorrectmode-swift.struct.md) structure.
 
 ## See Also
 
-- [var allowsSpellCheck: Bool](aeassessmentconfiguration/allowsspellcheck.md)
+### Allowing corrections
+- [var allowsSpellCheck: Bool](./allowsspellcheck.md)
   A Boolean value that indicates whether to allow spell check during an assessment.
-- [AEAssessmentConfiguration.AutocorrectMode](aeassessmentconfiguration/autocorrectmode-swift.struct.md)
+- [AEAssessmentConfiguration.AutocorrectMode](./autocorrectmode-swift.struct.md)
   The set of autocorrect features that you can enable during an assessment.
 
 

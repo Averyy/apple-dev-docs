@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a language from an identifier.
 
@@ -26,11 +27,12 @@ init(identifier: String)
 
 ## See Also
 
-- [init(components: Locale.Language.Components)](locale/language-swift.struct/init(components:).md)
+### Creating a language
+- [init(components: Locale.Language.Components)](./init%28components%29.md)
   Creates a language from its component values.
-- [Locale.Language.Components](locale/language-swift.struct/components.md)
+- [Locale.Language.Components](./components.md)
   A type that identifies a language by its various components.
-- [init(languageCode: Locale.LanguageCode?, script: Locale.Script?, region: Locale.Region?)](locale/language-swift.struct/init(languagecode:script:region:).md)
+- [init(languageCode: Locale.LanguageCode?, script: Locale.Script?, region: Locale.Region?)](./init%28languagecode,script,region%29.md)
   Creates a language from a given language code, script, and region.
 
 

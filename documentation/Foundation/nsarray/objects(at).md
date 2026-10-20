@@ -1,7 +1,8 @@
 # objects(at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the objects in the array at the indexes specified by a given index set.
 
@@ -20,6 +21,10 @@ Returns an array containing the objects in the array at the indexes specified by
 func objects(at indexes: IndexSet) -> [Any]
 ```
 
+```objc
+- (NSArray<id> *) objectsAtIndexes:(NSIndexSet *) indexes;
+```
+
 #### Return Value
 
 An array containing the objects in the array at the indexes specified by `indexes`.
@@ -28,25 +33,26 @@ An array containing the objects in the array at the indexes specified by `indexe
 
 The returned objects are in the ascending order of their indexes in `indexes`, so that object in returned array with higher index in indexes will follow the object with smaller index in `indexes`.
 
-Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any location in `indexes` exceeds the bounds of the array, `indexes` is `nil`.
+Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any location in `indexes` exceeds the bounds of the array, `indexes` is `nil`.
 
 ## See Also
 
-- [func contains(Any) -> Bool](nsarray/contains(_:).md)
+### Querying an Array
+- [func contains(Any) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether a given object is present in the array.
-- [var count: Int](nsarray/count.md)
+- [var count: Int](./count.md)
   The number of objects in the array.
-- [var firstObject: Any?](nsarray/firstobject.md)
+- [var firstObject: Any?](./firstobject.md)
   The first object in the array.
-- [var lastObject: Any?](nsarray/lastobject.md)
+- [var lastObject: Any?](./lastobject.md)
   The last object in the array.
-- [func object(at: Int) -> Any](nsarray/object(at:).md)
+- [func object(at: Int) -> Any](./object%28at%29.md)
   Returns the object located at the specified index.
-- [subscript(Int) -> Any](nsarray/subscript(_:).md)
+- [subscript(Int) -> Any](./subscript%28_%29.md)
   Returns the object at the specified index.
-- [func objectEnumerator() -> NSEnumerator](nsarray/objectenumerator.md)
+- [func objectEnumerator() -> NSEnumerator](./objectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the array.
-- [func reverseObjectEnumerator() -> NSEnumerator](nsarray/reverseobjectenumerator.md)
+- [func reverseObjectEnumerator() -> NSEnumerator](./reverseobjectenumerator%28%29.md)
   Returns an enumerator object that lets you access each object in the array, in reverse order.
 
 

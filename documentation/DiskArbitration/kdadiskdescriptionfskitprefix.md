@@ -1,7 +1,8 @@
 # kDADiskDescriptionFSKitPrefix
 
 **Framework**: Disk Arbitration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 17.4+
@@ -11,6 +12,10 @@
 
 ```swift
 let kDADiskDescriptionFSKitPrefix: CFString
+```
+
+```c
+extern CFStringRef const kDADiskDescriptionFSKitPrefix;
 ```
 
 

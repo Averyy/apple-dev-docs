@@ -1,11 +1,12 @@
 # ParseableFormatStyle Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var parseStrategy: PersonNameComponents.ParseStrategy](personnamecomponents/formatstyle/parsestrategy.md)
+- [var parseStrategy: PersonNameComponents.ParseStrategy](./parsestrategy.md)
   The strategy used to parse a string into person name components.
 
 

@@ -1,7 +1,8 @@
 # allowsAccessibilityAlternativeInputMethods
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow alternative input methods for accessibility features during an assessment.
 
@@ -15,11 +16,15 @@ A Boolean value that indicates whether to allow alternative input methods for ac
 var allowsAccessibilityAlternativeInputMethods: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsAccessibilityAlternativeInputMethods;
+```
+
 #### Discussion
 
-When the Accessibility Keyboard or Switch Control is enabled, alternative input methods such as Dwell Control may be available. An assessment session disables these alternative input methods by default, but you can allow them by setting [`allowsAccessibilityAlternativeInputMethods`](aeassessmentconfiguration/allowsaccessibilityalternativeinputmethods.md) to `YES` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
+When the Accessibility Keyboard or Switch Control is enabled, alternative input methods such as Dwell Control may be available. An assessment session disables these alternative input methods by default, but you can allow them by setting [`allowsAccessibilityAlternativeInputMethods`](./allowsaccessibilityalternativeinputmethods.md) to `YES` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 
-> **Note**: This property only takes effect when [`allowsAccessibilityKeyboard`](aeassessmentconfiguration/allowsaccessibilitykeyboard.md) or [`allowsAccessibilitySwitchControl`](aeassessmentconfiguration/allowsaccessibilityswitchcontrol.md) is `YES`.
+> **Note**: This property only takes effect when [`allowsAccessibilityKeyboard`](./allowsaccessibilitykeyboard.md) or [`allowsAccessibilitySwitchControl`](./allowsaccessibilityswitchcontrol.md) is `YES`.
 
 
 ---

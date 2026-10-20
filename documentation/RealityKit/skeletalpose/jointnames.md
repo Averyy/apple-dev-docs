@@ -1,7 +1,8 @@
 # jointNames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the joints in the pose in specific order.
 
@@ -21,9 +22,9 @@ var jointNames: [String] { get set }
 
 #### Discussion
 
-Each joint name has a corresponding transformation value in [`jointTransforms`](skeletalpose/jointtransforms.md) at the same index.
+Each joint name has a corresponding transformation value in [`jointTransforms`](./jointtransforms.md) at the same index.
 
-Updates of the value results in resizing or reordering of the pose’s [`jointTransforms`](skeletalpose/jointtransforms.md) to match. New joint names add identity transformations at the matching indices.
+Updates of the value results in resizing or reordering of the pose’s [`jointTransforms`](./jointtransforms.md) to match. New joint names add identity transformations at the matching indices.
 
 
 ---

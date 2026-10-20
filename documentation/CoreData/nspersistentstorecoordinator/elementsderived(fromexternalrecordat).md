@@ -1,17 +1,24 @@
 # elementsDerived(fromExternalRecordAt:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a dictionary containing the parsed elements derived from the Spotlight external record file that is specified by the given URL.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.13
+
+> **Deprecated**: Spotlight integration is deprecated. Use CoreSpotlight integration instead.
 
 ## Declaration
 
 ```swift
 class func elementsDerived(fromExternalRecordAt fileURL: URL) -> [AnyHashable : Any]
+```
+
+```objc
++ (NSDictionary *) elementsDerivedFromExternalRecordURL:(NSURL *) fileURL;
 ```
 
 #### Return Value
@@ -20,7 +27,7 @@ A dictionary containing the parsed elements derived from the Spotlight support f
 
 #### Discussion
 
-Dictionary keys and the corresponding values are described in [`Spotlight record keys`](spotlight-record-keys.md).
+Dictionary keys and the corresponding values are described in [Spotlight record keys](../spotlight-record-keys.md).
 
 ## Parameters
 
@@ -28,19 +35,20 @@ Dictionary keys and the corresponding values are described in [`Spotlight record
 
 ## See Also
 
-- [class func metadataForPersistentStore(with: URL) throws -> [AnyHashable : Any]](nspersistentstorecoordinator/metadataforpersistentstore(with:).md)
+### Deprecated type methods
+- [class func metadataForPersistentStore(with: URL) throws -> [AnyHashable : Any]](./metadataforpersistentstore%28with%29.md)
   Returns a dictionary that contains the metadata stored in the persistent store at the specified location.
-- [class func metadataForPersistentStore(ofType: String?, at: URL) throws -> [String : Any]](nspersistentstorecoordinator/metadataforpersistentstore(oftype:at:).md)
+- [class func metadataForPersistentStore(ofType: String?, at: URL) throws -> [String : Any]](./metadataforpersistentstore%28oftype,at%29.md)
   Returns a dictionary containing the metadata stored in the persistent store at a given URL.
-- [class func metadataForPersistentStore(ofType: String, at: URL, options: [AnyHashable : Any]?) throws -> [String : Any]](nspersistentstorecoordinator/metadataforpersistentstore(oftype:at:options:).md)
+- [class func metadataForPersistentStore(ofType: String, at: URL, options: [AnyHashable : Any]?) throws -> [String : Any]](./metadataforpersistentstore%28oftype,at,options%29.md)
   Returns the metadata of a specific type of persistent store at the provided location.
-- [class func registerStoreClass(AnyClass?, forStoreType: String)](nspersistentstorecoordinator/registerstoreclass(_:forstoretype:).md)
+- [class func registerStoreClass(AnyClass?, forStoreType: String)](./registerstoreclass%28_,forstoretype%29.md)
   Registers a persistent store subclass using the specified store type identifier.
-- [class func removeUbiquitousContentAndPersistentStore(at: URL, options: [AnyHashable : Any]?) throws](nspersistentstorecoordinator/removeubiquitouscontentandpersistentstore(at:options:).md)
+- [class func removeUbiquitousContentAndPersistentStore(at: URL, options: [AnyHashable : Any]?) throws](./removeubiquitouscontentandpersistentstore%28at,options%29.md)
   Deletes all ubiquitous content for all peers for the persistent store at a given URL and also delete the local store file.
-- [class func setMetadata([String : Any]?, forPersistentStoreOfType: String?, at: URL) throws](nspersistentstorecoordinator/setmetadata(_:forpersistentstoreoftype:at:).md)
+- [class func setMetadata([String : Any]?, forPersistentStoreOfType: String?, at: URL) throws](./setmetadata%28_,forpersistentstoreoftype,at%29.md)
   Sets the metadata for a given store.
-- [class func setMetadata([String : Any]?, forPersistentStoreOfType: String, at: URL, options: [AnyHashable : Any]?) throws](nspersistentstorecoordinator/setmetadata(_:forpersistentstoreoftype:at:options:).md)
+- [class func setMetadata([String : Any]?, forPersistentStoreOfType: String, at: URL, options: [AnyHashable : Any]?) throws](./setmetadata%28_,forpersistentstoreoftype,at,options%29.md)
   Updates the metadata of a specific type of persistent store at the provided location.
 
 

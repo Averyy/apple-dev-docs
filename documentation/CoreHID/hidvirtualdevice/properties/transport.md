@@ -1,7 +1,8 @@
 # transport
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data transport for the device.
 
@@ -16,7 +17,7 @@ let transport: HIDDeviceTransport?
 
 #### Discussion
 
-The data transport is typically [`HIDDeviceTransport.virtual`](hiddevicetransport/virtual.md), but it can be any [`HIDDeviceTransport`](hiddevicetransport.md).
+The data transport is typically [`HIDDeviceTransport.virtual`](../../hiddevicetransport/virtual.md), but it can be any [`HIDDeviceTransport`](../../hiddevicetransport.md).
 
 
 ---

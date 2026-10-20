@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier representing the subject in the frame.
 
@@ -19,11 +20,12 @@ let identifier: Int
 
 ## See Also
 
-- [let faceYawAngle: Measurement<UnitAngle>?](dockaccessory/observation/faceyawangle.md)
+### Getting properties
+- [let faceYawAngle: Measurement<UnitAngle>?](./faceyawangle.md)
   The angle of the face in radians.
-- [let rect: CGRect](dockaccessory/observation/rect.md)
+- [let rect: CGRect](./rect.md)
   The coordinates of the subject in the frame.
-- [let type: DockAccessory.Observation.ObservationType](dockaccessory/observation/type.md)
+- [let type: DockAccessory.Observation.ObservationType](./type.md)
   The type of subject in the frame.
 
 

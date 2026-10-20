@@ -1,7 +1,8 @@
 # localizedSuggestion
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A label for the suggestion, usually the search term the suggestion represents.
 
@@ -18,15 +19,20 @@ A label for the suggestion, usually the search term the suggestion represents.
 var localizedSuggestion: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * localizedSuggestion;
+```
+
 ## See Also
 
-- [var localizedAttributedSuggestion: NSAttributedString?](uisearchsuggestionitem/localizedattributedsuggestion.md)
+### Describing a search suggestion
+- [var localizedAttributedSuggestion: NSAttributedString?](./localizedattributedsuggestion.md)
   An attributed label for the suggestion, usually the search term the suggestion represents.
-- [var localizedDescription: String?](uisearchsuggestionitem/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A description of the suggestion.
-- [var iconImage: UIImage?](uisearchsuggestionitem/iconimage.md)
+- [var iconImage: UIImage?](./iconimage.md)
   An image for display on the suggestion.
-- [var representedObject: Any?](uisearchsuggestionitem/representedobject.md)
+- [var representedObject: Any?](./representedobject.md)
   An object for tracking supplementary information about the search suggestion.
 
 

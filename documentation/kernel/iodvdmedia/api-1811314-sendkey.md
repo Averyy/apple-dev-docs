@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn sendKey(
  IOMemoryDescriptor *buffer, 
  const DVDKeyClasskeyClass, 
@@ -13,7 +13,7 @@ virtual IOReturn sendKey(
  const DVDKeyFormatformat );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the status of the data transfer.
 
@@ -30,12 +30,13 @@ Issue an MMC SEND KEY command.
 
 ## See Also
 
-- [getSpeed](iodvdmedia/1811144-getspeed.md)
-- [readDiscInfo](iodvdmedia/1811197-readdiscinfo.md)
-- [readRZoneInfo](iodvdmedia/1811250-readrzoneinfo.md)
-- [readStructure](iodvdmedia/1811277-readstructure.md)
-- [reportKey](iodvdmedia/1811294-reportkey.md)
-- [setSpeed](iodvdmedia/1811329-setspeed.md)
+### Miscellaneous
+- [getSpeed](./api-1811144-getspeed.md)
+- [readDiscInfo](./api-1811197-readdiscinfo.md)
+- [readRZoneInfo](./api-1811250-readrzoneinfo.md)
+- [readStructure](./api-1811277-readstructure.md)
+- [reportKey](./api-1811294-reportkey.md)
+- [setSpeed](./api-1811329-setspeed.md)
 
 
 ---

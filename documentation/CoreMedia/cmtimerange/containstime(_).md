@@ -1,7 +1,8 @@
 # containsTime(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the time range contains a time.
 
@@ -22,7 +23,7 @@ func containsTime(_ time: CMTime) -> Bool
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the time range contains the `time` value; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the time range contains the `time` value; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -30,7 +31,8 @@ func containsTime(_ time: CMTime) -> Bool
 
 ## See Also
 
-- [func containsTimeRange(CMTimeRange) -> Bool](cmtimerange/containstimerange(_:).md)
+### Finding Elements
+- [func containsTimeRange(CMTimeRange) -> Bool](./containstimerange%28_%29.md)
   Returns a Boolean value that indicates whether the time range contains another time range.
 
 

@@ -1,7 +1,8 @@
 # RequestDescriptor.recognizeTextRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a recognize text request.
 
@@ -21,7 +22,8 @@ case recognizeTextRequest(RecognizeTextRequest.Revision)
 
 ## See Also
 
-- [case detectTextRectanglesRequest(DetectTextRectanglesRequest.Revision)](requestdescriptor/detecttextrectanglesrequest(_:).md)
+### Getting the text descriptor
+- [case detectTextRectanglesRequest(DetectTextRectanglesRequest.Revision)](./detecttextrectanglesrequest%28_%29.md)
   A descriptor that describes a detect text rectangles request.
 
 

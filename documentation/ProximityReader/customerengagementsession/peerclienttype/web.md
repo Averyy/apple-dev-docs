@@ -1,7 +1,8 @@
 # CustomerEngagementSession.PeerClientType.web
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This case indicates a peer web application client connection via a server relay.
 

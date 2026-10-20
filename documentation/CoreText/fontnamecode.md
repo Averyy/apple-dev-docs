@@ -1,16 +1,17 @@
 # FontNameCode
 
 **Framework**: Core Text  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,23 +19,28 @@
 typealias FontNameCode = UInt32
 ```
 
+```c
+typedef UInt32 FontNameCode;
+```
+
 ## See Also
 
-- [typealias BslnBaselineClass](bslnbaselineclass.md)
-- [typealias BslnBaselineRecord](bslnbaselinerecord.md)
-- [typealias BslnTableFormat](bslntableformat.md)
-- [typealias BslnTablePtr](bslntableptr.md)
-- [typealias FontLanguageCode](fontlanguagecode.md)
-- [typealias FontPlatformCode](fontplatformcode.md)
-- [typealias FontScriptCode](fontscriptcode.md)
-- [typealias JustPCActionType](justpcactiontype.md)
-- [typealias JustPCUnconditionalAddAction](justpcunconditionaladdaction.md)
-- [typealias JustificationFlags](justificationflags.md)
-- [typealias KernArrayOffset](kernarrayoffset.md)
-- [typealias KernKerningValue](kernkerningvalue.md)
-- [typealias KernOffsetTablePtr](kernoffsettableptr.md)
-- [typealias KernOrderedListEntryPtr](kernorderedlistentryptr.md)
-- [typealias KernSubtableHeaderPtr](kernsubtableheaderptr.md)
+### Type Aliases
+- [typealias BslnBaselineClass](./bslnbaselineclass.md)
+- [typealias BslnBaselineRecord](./bslnbaselinerecord.md)
+- [typealias BslnTableFormat](./bslntableformat.md)
+- [typealias BslnTablePtr](./bslntableptr.md)
+- [typealias FontLanguageCode](./fontlanguagecode.md)
+- [typealias FontPlatformCode](./fontplatformcode.md)
+- [typealias FontScriptCode](./fontscriptcode.md)
+- [typealias JustPCActionType](./justpcactiontype.md)
+- [typealias JustPCUnconditionalAddAction](./justpcunconditionaladdaction.md)
+- [typealias JustificationFlags](./justificationflags.md)
+- [typealias KernArrayOffset](./kernarrayoffset.md)
+- [typealias KernKerningValue](./kernkerningvalue.md)
+- [typealias KernOffsetTablePtr](./kernoffsettableptr.md)
+- [typealias KernOrderedListEntryPtr](./kernorderedlistentryptr.md)
+- [typealias KernSubtableHeaderPtr](./kernsubtableheaderptr.md)
 
 
 ---

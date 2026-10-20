@@ -1,7 +1,8 @@
 # ubiquityIdentityDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about a file manager’s ubiquity identity changing.
 
@@ -20,9 +21,11 @@ An identifier for a message about a file manager’s ubiquity identity changing.
 static var ubiquityIdentityDidChange: NotificationCenter.BaseMessageIdentifier<FileManager.UbiquityIdentityDidChangeMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<FileManager.UbiquityIdentityDidChangeMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`FileManager.UbiquityIdentityDidChangeMessage`](filemanager/ubiquityidentitydidchangemessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`FileManager.UbiquityIdentityDidChangeMessage`](../../filemanager/ubiquityidentitydidchangemessage.md).
 
 
 ---

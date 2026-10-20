@@ -1,9 +1,10 @@
 # NSUserUnixTask.CompletionHandler
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-Implement this block to retrieve an error from the Unix scripted executed by [`execute(withArguments:completionHandler:)`](nsuserunixtask/execute(witharguments:completionhandler:).md).
+Implement this block to retrieve an error from the Unix scripted executed by [`execute(withArguments:completionHandler:)`](./execute%28witharguments,completionhandler%29.md).
 
 **Availability**:
 - macOS 10.0+
@@ -12,6 +13,10 @@ Implement this block to retrieve an error from the Unix scripted executed by [`e
 
 ```swift
 typealias CompletionHandler = @Sendable ((any Error)?) -> Void
+```
+
+```c
+typedef void (^)(NSError *) NSUserUnixTaskCompletionHandler;
 ```
 
 

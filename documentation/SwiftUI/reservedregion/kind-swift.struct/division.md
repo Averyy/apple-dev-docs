@@ -1,7 +1,8 @@
 # division
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A region that splits your view into separate parts.
 
@@ -26,7 +27,8 @@ A division region is an area, such as the fold of iPhone Duo, that splits your v
 
 ## See Also
 
-- [static var occlusion: ReservedRegion.Kind](reservedregion/kind-swift.struct/occlusion.md)
+### Getting reserved region kinds
+- [static var occlusion: ReservedRegion.Kind](./occlusion.md)
   A region that covers part of your view.
 
 

@@ -1,7 +1,8 @@
 # buffers
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ordered buffer slot descriptions for this function.
 
@@ -19,15 +20,16 @@ var buffers: [LowLevelMaterialParameterMapping.Buffer] { get }
 
 ## See Also
 
-- [LowLevelMaterialParameterMapping.Buffer](lowlevelmaterialparametermapping/buffer.md)
+### Accessing parameter mappings
+- [LowLevelMaterialParameterMapping.Buffer](./buffer.md)
   The contents of a buffer slot, either a collection of packed constants or a single structured buffer.
-- [LowLevelMaterialParameterMapping.BufferParameter](lowlevelmaterialparametermapping/bufferparameter.md)
+- [LowLevelMaterialParameterMapping.BufferParameter](./bufferparameter.md)
   A structured buffer parameter.
-- [var textures: [LowLevelMaterialParameterMapping.TextureParameter]](lowlevelmaterialparametermapping/textures.md)
+- [var textures: [LowLevelMaterialParameterMapping.TextureParameter]](./textures.md)
   The ordered texture slot descriptions for this function.
-- [LowLevelMaterialParameterMapping.TextureParameter](lowlevelmaterialparametermapping/textureparameter.md)
+- [LowLevelMaterialParameterMapping.TextureParameter](./textureparameter.md)
   A texture parameter.
-- [LowLevelMaterialParameterMapping.ConstantParameter](lowlevelmaterialparametermapping/constantparameter.md)
+- [LowLevelMaterialParameterMapping.ConstantParameter](./constantparameter.md)
   A constant parameter embedded within a buffer slot.
 
 

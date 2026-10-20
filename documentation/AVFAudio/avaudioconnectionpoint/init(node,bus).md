@@ -1,7 +1,8 @@
 # init(node:bus:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a connection point object.
 
@@ -18,6 +19,10 @@ Creates a connection point object.
 
 ```swift
 init(node: AVAudioNode, bus: AVAudioNodeBus)
+```
+
+```objc
+- (instancetype) initWithNode:(AVAudioNode *) node bus:(AVAudioNodeBus) bus;
 ```
 
 #### Discussion

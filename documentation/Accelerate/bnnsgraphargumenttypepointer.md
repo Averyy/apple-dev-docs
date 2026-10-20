@@ -1,7 +1,8 @@
 # BNNSGraphArgumentTypePointer
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A pointer to the raw data for the tensor.
 
@@ -20,11 +21,16 @@ A pointer to the raw data for the tensor.
 var BNNSGraphArgumentTypePointer: BNNSGraphArgumentType { get }
 ```
 
+```c
+BNNSGraphArgumentTypePointer
+```
+
 ## See Also
 
-- [var rawValue: UInt32](bnnsgraphargumenttype/rawvalue.md)
+### Instance Properties
+- [var rawValue: UInt32](./bnnsgraphargumenttype/rawvalue.md)
   The corresponding value of the raw type.
-- [var BNNSGraphArgumentTypeTensor: BNNSGraphArgumentType](bnnsgraphargumenttypetensor.md)
+- [var BNNSGraphArgumentTypeTensor: BNNSGraphArgumentType](./bnnsgraphargumenttypetensor.md)
   A tensor structure.
 
 

@@ -1,7 +1,8 @@
 # getVaList(_:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a `CVaListPointer` that is backed by autoreleased storage, built from the given array of arguments.
 
@@ -22,7 +23,7 @@ func getVaList(_ args: [any CVarArg]) -> CVaListPointer
 
 ## Mentions
 
-- [Using Imported C Functions in Swift](using-imported-c-functions-in-swift.md)
+- [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
 
 #### Return Value
 
@@ -40,10 +41,11 @@ If you need to pass an optional pointer as a `CVarArg` argument, use the `Int(bi
 
 ## See Also
 
-- [func withVaList<R>([any CVarArg], (CVaListPointer) -> R) -> R](withvalist(_:_:).md)
+### C Variadic Functions
+- [func withVaList<R>([any CVarArg], (CVaListPointer) -> R) -> R](./withvalist%28_,_%29.md)
   Invokes the given closure with a C `va_list` argument derived from the given array of arguments.
-- [struct CVaListPointer](cvalistpointer.md)
-- [protocol CVarArg](cvararg.md)
+- [struct CVaListPointer](./cvalistpointer.md)
+- [protocol CVarArg](./cvararg.md)
   A type whose instances can be encoded, and appropriately passed, as elements of a C `va_list`.
 
 

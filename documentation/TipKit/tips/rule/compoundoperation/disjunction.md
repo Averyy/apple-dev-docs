@@ -1,7 +1,8 @@
 # Tips.Rule.CompoundOperation.disjunction
 
 **Framework**: TipKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Type used for `or` rules.
 

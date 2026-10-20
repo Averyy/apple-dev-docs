@@ -1,7 +1,8 @@
 # CadenceThresholdAlert
 
 **Framework**: WorkoutKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An alert for a cadence threshold.
 
@@ -21,30 +22,31 @@ struct CadenceThresholdAlert
 ## Topics
 
 ### Creating new cadence threshold alerts
-- [init(target: Measurement<UnitFrequency>)](cadencethresholdalert/init(target:).md)
+- [init(target: Measurement<UnitFrequency>)](./cadencethresholdalert/init%28target%29.md)
   Create a new cadence threshold alert for the target measurement.
 ### Accessing the alert data
-- [var target: Measurement<UnitFrequency>](cadencethresholdalert/target.md)
+- [var target: Measurement<UnitFrequency>](./cadencethresholdalert/target.md)
   The target threshold.
-- [var targetQuantity: HKQuantity](cadencethresholdalert/targetquantity.md)
+- [var targetQuantity: HKQuantity](./cadencethresholdalert/targetquantity.md)
   A HealthKit quantity that represents the target cadence threshold.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [WorkoutAlert](workoutalert.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [WorkoutAlert](./workoutalert.md)
 
 ## See Also
 
-- [static func cadence(ClosedRange<Double>, unit: UnitFrequency) -> Self](workoutalert/cadence(_:unit:)-y8da.md)
+### Creating cadence alerts
+- [static func cadence(ClosedRange<Double>, unit: UnitFrequency) -> Self](./workoutalert/cadence%28_,unit%29-y8da.md)
   Creates a new alert for a range of cadence values.
-- [struct CadenceRangeAlert](cadencerangealert.md)
+- [struct CadenceRangeAlert](./cadencerangealert.md)
   An alert for a range of cadence values.
-- [static func cadence(Double, unit: UnitFrequency) -> Self](workoutalert/cadence(_:unit:)-3fnpg.md)
+- [static func cadence(Double, unit: UnitFrequency) -> Self](./workoutalert/cadence%28_,unit%29-3fnpg.md)
   Creates an alert for the specified cadence threshold.
 
 

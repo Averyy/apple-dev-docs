@@ -1,7 +1,8 @@
 # paddingConstant
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The padding value for `boundaryMode = MPSGraphPaddingModeConstant`.
 
@@ -17,6 +18,10 @@ The padding value for `boundaryMode = MPSGraphPaddingModeConstant`.
 
 ```swift
 var paddingConstant: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float paddingConstant;
 ```
 
 #### Discussion

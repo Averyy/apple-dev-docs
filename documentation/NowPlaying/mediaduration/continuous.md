@@ -1,7 +1,8 @@
 # MediaDuration.continuous
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Content with no defined duration that isn’t a live broadcast.
 

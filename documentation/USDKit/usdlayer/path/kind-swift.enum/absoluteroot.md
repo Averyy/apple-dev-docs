@@ -1,7 +1,8 @@
 # USDLayer.Path.Kind.absoluteRoot
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The path is the absolute root, `/`.
 

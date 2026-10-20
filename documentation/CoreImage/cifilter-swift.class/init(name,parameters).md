@@ -1,7 +1,8 @@
 # init(name:parameters:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new filter of type ‘name’. The filter’s input parameters are set from the dictionary of key-value pairs. On OSX, any of the filter input parameters not specified in the dictionary will be undefined. On iOS, any of the filter input parameters not specified in the dictionary will be set to default values.
 
@@ -10,13 +11,17 @@ Creates a new filter of type ‘name’. The filter’s input parameters are set
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init?(name: String, parameters params: [String : Any]?)
+```
+
+```objc
++ (CIFilter *) filterWithName:(NSString *) name withInputParameters:(NSDictionary<NSString *,id> *) params;
 ```
 
 

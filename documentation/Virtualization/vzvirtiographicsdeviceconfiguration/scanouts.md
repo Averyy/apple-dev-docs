@@ -1,7 +1,8 @@
 # scanouts
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of output devices.
 
@@ -14,9 +15,14 @@ The array of output devices.
 var scanouts: [VZVirtioGraphicsScanoutConfiguration] { get set }
 ```
 
+```objc
+@property (copy) NSArray<VZVirtioGraphicsScanoutConfiguration *> * scanouts;
+```
+
 ## See Also
 
-- [class VZVirtioGraphicsScanoutConfiguration](vzvirtiographicsscanoutconfiguration.md)
+### Instance properties
+- [class VZVirtioGraphicsScanoutConfiguration](../vzvirtiographicsscanoutconfiguration.md)
   The configuration for a Virtio graphics device that configures the dimensions of the graphics device for a Linux VM.
 
 

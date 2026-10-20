@@ -1,7 +1,8 @@
 # TranslationSession.BatchResponse.Element
 
 **Framework**: Translation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element produced by this asynchronous sequence.
 
@@ -19,7 +20,8 @@ typealias Element = TranslationSession.Response
 
 ## See Also
 
-- [TranslationSession.BatchResponse.AsyncIterator](translationsession/batchresponse/asynciterator.md)
+### Iteration types
+- [TranslationSession.BatchResponse.AsyncIterator](./asynciterator.md)
   The type of asynchronous iterator that produces elements of this asynchronous sequence.
 
 

@@ -1,7 +1,8 @@
 # requestAssets(completionHandler:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests embedding model assets and downloads them if available.
 
@@ -17,10 +18,18 @@ Requests embedding model assets and downloads them if available.
 ## Declaration
 
 ```swift
+func requestAssets(completionHandler: @escaping @Sendable (NLContextualEmbedding.AssetsResult, (any Error)?) -> Void)
+```
+
+```swift
 func requestAssets() async throws -> NLContextualEmbedding.AssetsResult
 ```
 
-#### Asynchronous Alternative
+```objc
+- (void) requestEmbeddingAssetsWithCompletionHandler:(void (^)(NLContextualEmbeddingAssetsResult result, NSError *error)) completionHandler;
+```
+
+#### Asynchronous alternative
 
 You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 
@@ -28,11 +37,11 @@ You can call this method from synchronous code using a completion handler, as sh
 func requestAssets() async throws -> NLContextualEmbedding.AssetsResult
 ```
 
-For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 #### Discussion
 
-You use a contextual embedding after loading the necessary assets onto the device. Use [`hasAvailableAssets`](nlcontextualembedding/hasavailableassets.md) to determine whether assets are available. This method returns immediately if the framework knows the state of the assets or if an error occurs.
+You use a contextual embedding after loading the necessary assets onto the device. Use [`hasAvailableAssets`](./hasavailableassets.md) to determine whether assets are available. This method returns immediately if the framework knows the state of the assets or if an error occurs.
 
 ## Parameters
 
@@ -40,7 +49,8 @@ You use a contextual embedding after loading the necessary assets onto the devic
 
 ## See Also
 
-- [NLContextualEmbedding.AssetsResult](nlcontextualembedding/assetsresult.md)
+### Requesting assets
+- [NLContextualEmbedding.AssetsResult](./assetsresult.md)
   The availability of the contextual embedding model assets.
 
 

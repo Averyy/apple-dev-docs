@@ -1,7 +1,8 @@
 # resetCommands(buffer:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a command that resets a range of commands in an indirect command buffer.
 
@@ -21,7 +22,7 @@ func resetCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)
 
 ## Parameters
 
-- `buffer`: An [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) the command resets.
+- `buffer`: An [`MTLIndirectCommandBuffer`](../mtlindirectcommandbuffer.md) the command resets.
 - `range`: A range of commands within `buffer`.
 
 

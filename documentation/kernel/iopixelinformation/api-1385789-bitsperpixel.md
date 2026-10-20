@@ -1,7 +1,8 @@
 # bitsPerPixel
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of bits per pixel, including unused bits and alpha.
 
@@ -10,7 +11,7 @@ The number of bits per pixel, including unused bits and alpha.
 
 ## Declaration
 
-```swift
+```c
 UInt32 bitsPerPixel;
 ```
 

@@ -1,7 +1,8 @@
 # init(rating:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for a route rating.
 
@@ -14,6 +15,10 @@ Creates additional route information for a route rating.
 
 ```swift
 convenience init(rating: Double)
+```
+
+```objc
++ (instancetype) routeDetailWithRating:(double) rating;
 ```
 
 #### Return Value

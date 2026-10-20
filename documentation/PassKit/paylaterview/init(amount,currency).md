@@ -1,12 +1,13 @@
 # init(amount:currency:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -14,6 +15,8 @@
 nonisolated
 init(amount: Decimal, currency: Locale.Currency)
 ```
+
+Available when `FallbackView` is `EmptyView`.
 
 
 ---

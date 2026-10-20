@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.DisplayPoint
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A point-based representation of a place in Apple Maps.
 
@@ -10,14 +11,14 @@ A point-based representation of a place in Apple Maps.
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.DisplayPoint
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.DisplayPoint.Coordinates](appclipadvancedexperiencecreaterequest/data-data.dictionary/attributes-data.dictionary/place-data.dictionary/displaypoint-data.dictionary/coordinates-data.dictionary.md)
+- [object AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.DisplayPoint.Coordinates](./displaypoint-data.dictionary/coordinates-data.dictionary.md)
   The coordinates for a point of interest or business in Apple Maps.
 
 ## Properties
@@ -25,11 +26,14 @@ object AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.DisplayPoint
 - `coordinates` (AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.DisplayPoint.Coordinates): The GPS coordinates of a place in Apple Maps you associate with the Advanced App Clip experience.
 - `source` (string): A string that describes the means by which you captured the data for a display point.
 
+  **Allowed Values**: `CALCULATED`, `MANUALLY_PLACED`
+
 ## See Also
 
-- [object AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.MainAddress](appclipadvancedexperiencecreaterequest/data-data.dictionary/attributes-data.dictionary/place-data.dictionary/mainaddress-data.dictionary.md)
+### Objects
+- [object AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.MainAddress](./mainaddress-data.dictionary.md)
   The main address for a point of interest or business in Apple Maps.
-- [object AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.PhoneNumber](appclipadvancedexperiencecreaterequest/data-data.dictionary/attributes-data.dictionary/place-data.dictionary/phonenumber-data.dictionary.md)
+- [object AppClipAdvancedExperienceCreateRequest.Data.Attributes.Place.PhoneNumber](./phonenumber-data.dictionary.md)
   The phone number of a point of interest or business in Apple Maps.
 
 

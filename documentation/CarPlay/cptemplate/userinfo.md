@@ -1,7 +1,8 @@
 # userInfo
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Any custom data or object that you want to associate with the template.
 
@@ -16,9 +17,13 @@ Any custom data or object that you want to associate with the template.
 var userInfo: Any? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id userInfo;
+```
+
 #### Discussion
 
-Use [`userInfo`](cptemplate/userinfo.md) to store additional information on the template that is useful in other areas of your app.
+Use [`userInfo`](./userinfo.md) to store additional information on the template that is useful in other areas of your app.
 
 
 ---

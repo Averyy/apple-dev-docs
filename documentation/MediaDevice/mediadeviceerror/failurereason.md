@@ -1,7 +1,8 @@
 # failureReason
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized explanation of the reason for the error.
 

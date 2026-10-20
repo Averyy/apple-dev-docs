@@ -1,9 +1,10 @@
 # DocumentWriteConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The context SwiftUI passes to [`writer(configuration:)`](writabledocument/writer(configuration:).md).
+The context SwiftUI passes to [`writer(configuration:)`](./writabledocument/writer%28configuration%29.md).
 
 **Availability**:
 - iOS 27.0+
@@ -20,34 +21,35 @@ struct DocumentWriteConfiguration
 
 #### Overview
 
-Contains the [`contentType`](documentwriteconfiguration/contenttype.md) of the file being written (one of the document’s [`writableContentTypes`](writabledocument/writablecontenttypes.md)). Use it to choose the correct serialization strategy when a document supports exporting to multiple formats.
+Contains the [`contentType`](./documentwriteconfiguration/contenttype.md) of the file being written (one of the document’s [`writableContentTypes`](./writabledocument/writablecontenttypes.md)). Use it to choose the correct serialization strategy when a document supports exporting to multiple formats.
 
-Access this type through the [`WritableDocument.WriteConfiguration`](writabledocument/writeconfiguration.md) typealias.
+Access this type through the [`WritableDocument.WriteConfiguration`](./writabledocument/writeconfiguration.md) typealias.
 
 ## Topics
 
 ### Accessing write properties
-- [var contentType: UTType](documentwriteconfiguration/contenttype.md)
+- [var contentType: UTType](./documentwriteconfiguration/contenttype.md)
   The content type of the file being written.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [struct DocumentReadConfiguration](documentreadconfiguration.md)
-  The context SwiftUI passes to [`reader(configuration:)`](readabledocument/reader(configuration:).md).
-- [protocol DocumentReader](documentreader.md)
+### Reading and writing documents
+- [struct DocumentReadConfiguration](./documentreadconfiguration.md)
+  The context SwiftUI passes to [`reader(configuration:)`](./readabledocument/reader%28configuration%29.md).
+- [protocol DocumentReader](./documentreader.md)
   A type that reads a document’s content from a file.
-- [protocol DocumentWriter](documentwriter.md)
+- [protocol DocumentWriter](./documentwriter.md)
   A type that writes a document’s content to a file.
-- [struct FileWrapperDocumentReader](filewrapperdocumentreader.md)
+- [struct FileWrapperDocumentReader](./filewrapperdocumentreader.md)
   A document reader that deserializes a `FileWrapper` into a snapshot.
-- [struct FileWrapperDocumentWriter](filewrapperdocumentwriter.md)
+- [struct FileWrapperDocumentWriter](./filewrapperdocumentwriter.md)
   A document writer that serializes a snapshot into a `FileWrapper`.
 
 

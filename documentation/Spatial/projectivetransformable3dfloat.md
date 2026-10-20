@@ -1,7 +1,8 @@
 # ProjectiveTransformable3DFloat
 
 **Framework**: Spatial  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.0+
@@ -21,30 +22,31 @@ protocol ProjectiveTransformable3DFloat : ProjectiveTransformable3D
 ## Topics
 
 ### Instance Methods
-- [func applying(ProjectiveTransform3DFloat) -> Self](projectivetransformable3dfloat/applying(_:).md)
+- [func applying(ProjectiveTransform3DFloat) -> Self](./projectivetransformable3dfloat/applying%28_%29.md)
   Returns a transformed copy of the value
 
 ## Relationships
 
 ### Inherits From
-- [ProjectiveTransformable3D](projectivetransformable3d.md)
+- [ProjectiveTransformable3D](./projectivetransformable3d.md)
 ### Conforming Types
-- [Point3DFloat](point3dfloat.md)
-- [Pose3DFloat](pose3dfloat.md)
-- [Ray3DFloat](ray3dfloat.md)
-- [Rect3DFloat](rect3dfloat.md)
-- [Rotation3DFloat](rotation3dfloat.md)
-- [Vector3DFloat](vector3dfloat.md)
+- [Point3DFloat](./point3dfloat.md)
+- [Pose3DFloat](./pose3dfloat.md)
+- [Ray3DFloat](./ray3dfloat.md)
+- [Rect3DFloat](./rect3dfloat.md)
+- [Rotation3DFloat](./rotation3dfloat.md)
+- [Vector3DFloat](./vector3dfloat.md)
 
 ## See Also
 
-- [protocol CoordinateSpace3D](coordinatespace3d.md)
+### Converting between coordinate spaces
+- [protocol CoordinateSpace3D](./coordinatespace3d.md)
   A type that represents a coordinate space which you can use to convert values to and from other coordinate spaces.
-- [protocol CoordinateSpace3DFloat](coordinatespace3dfloat.md)
-- [protocol CoordinateSpaceValue3D](coordinatespacevalue3d.md)
+- [protocol CoordinateSpace3DFloat](./coordinatespace3dfloat.md)
+- [protocol CoordinateSpaceValue3D](./coordinatespacevalue3d.md)
   An opaque value which can be resolved to a concrete value in a `CoordinateSpace3D`
-- [protocol ProjectiveTransformable3D](projectivetransformable3d.md)
-- [struct WorldReferenceCoordinateSpace](worldreferencecoordinatespace.md)
+- [protocol ProjectiveTransformable3D](./projectivetransformable3d.md)
+- [struct WorldReferenceCoordinateSpace](./worldreferencecoordinatespace.md)
   A coordinate space that represents a world reference point.
 
 

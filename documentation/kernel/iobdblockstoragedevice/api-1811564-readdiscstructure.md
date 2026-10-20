@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn readDiscStructure(
  IOMemoryDescriptor *buffer, 
  UInt8format, 
@@ -15,7 +15,7 @@ virtual IOReturn readDiscStructure(
  UInt8type ) = 0;
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the status of the data transfer.
 
@@ -34,8 +34,9 @@ Issue an MMC READ DISC STRUCTURE command.
 
 ## See Also
 
-- [init](iobdblockstoragedevice/1811554-init.md)
-- [splitTrack](iobdblockstoragedevice/1811575-splittrack.md)
+### Miscellaneous
+- [init](./api-1811554-init.md)
+- [splitTrack](./api-1811575-splittrack.md)
 
 
 ---

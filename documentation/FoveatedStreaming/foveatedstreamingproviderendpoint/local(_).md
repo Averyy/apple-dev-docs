@@ -1,7 +1,8 @@
 # FoveatedStreamingProviderEndpoint.local(_:)
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A local streaming endpoint on the same network.
 

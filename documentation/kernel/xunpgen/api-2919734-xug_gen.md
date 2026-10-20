@@ -1,14 +1,15 @@
 # xug_gen
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 unp_gen_t xug_gen;
 ```
 

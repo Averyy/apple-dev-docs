@@ -1,12 +1,13 @@
 # shared
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns a shared instance of `NSGlyphGenerator`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,10 +15,15 @@ Returns a shared instance of `NSGlyphGenerator`.
 class var shared: NSGlyphGenerator { get }
 ```
 
+```objc
+@property (class, strong, readonly) NSGlyphGenerator * sharedGlyphGenerator;
+```
+
 ## See Also
 
-- [protocol NSGlyphStorage](nsglyphstorage.md)
-  A set of methods that a glyph storage object must implement to interact properly with [`NSGlyphGenerator`](nsglyphgenerator.md).
+### Related Documentation
+- [protocol NSGlyphStorage](../nsglyphstorage.md)
+  A set of methods that a glyph storage object must implement to interact properly with [`NSGlyphGenerator`](../nsglyphgenerator.md).
 
 
 ---

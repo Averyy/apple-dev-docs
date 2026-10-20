@@ -1,14 +1,15 @@
 # preprocessAsset(configuration:subprogress:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Preprocesses the asset by generating a disparity track, writing the result to the URL specified in `configuration`. Required for assets whose `cinematicCapability` is `.needsPreprocessing`; on success the returned `CNAssetInfo` will be `.renderable`.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 27.0+
 
 ## Declaration
@@ -27,7 +28,7 @@ Ensure `resourceStatus` is `.ready` before calling — download resources first 
 
 Cancellation: this method responds to Swift Task cancellation. If the calling task is cancelled, the preprocessing stops; any partially processed destination asset is discarded.
 
-> **Note**: `CNCinematicError` on failure.
+> **Throws**: `CNCinematicError` on failure.
 
 ## Parameters
 

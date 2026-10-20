@@ -1,7 +1,8 @@
 # kMDItemSpeed
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
  The speed of the item, in kilometers per hour. A CFString.
 
@@ -12,6 +13,10 @@
 
 ```swift
 let kMDItemSpeed: CFString!
+```
+
+```c
+const CFStringRef kMDItemSpeed;
 ```
 
 

@@ -1,7 +1,8 @@
 # resetVisibility()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets all tab sidebar visibilities back to the default, preserving the section customizations.
 

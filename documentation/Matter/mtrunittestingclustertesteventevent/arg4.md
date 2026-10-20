@@ -1,7 +1,8 @@
 # arg4
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var arg4: MTRUnitTestingClusterSimpleStruct { get set }
+```
+
+```objc
+@property (nonatomic, copy) MTRUnitTestingClusterSimpleStruct * arg4;
 ```
 
 

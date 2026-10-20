@@ -1,7 +1,8 @@
 # MTRClusterGroups
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,44 +19,48 @@
 class MTRClusterGroups
 ```
 
+```objc
+@interface MTRClusterGroups : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrclustergroups/init(device:endpoint:queue:).md)
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclustergroups/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrclustergroups/init%28device,endpoint,queue%29.md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclustergroups/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func addGroup(with: MTRGroupsClusterAddGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRGroupsClusterAddGroupResponseParams?, (any Error)?) -> Void)](mtrclustergroups/addgroup(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func addGroup(with: MTRGroupsClusterAddGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRGroupsClusterAddGroupResponseParams?, (any Error)?) -> Void)](mtrclustergroups/addgroup(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func addGroupIfIdentifying(with: MTRGroupsClusterAddGroupIfIdentifyingParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustergroups/addgroupifidentifying(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func addGroupIfIdentifying(with: MTRGroupsClusterAddGroupIfIdentifyingParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclustergroups/addgroupifidentifying(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func getGroupMembership(with: MTRGroupsClusterGetGroupMembershipParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRGroupsClusterGetGroupMembershipResponseParams?, (any Error)?) -> Void)](mtrclustergroups/getgroupmembership(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func getGroupMembership(with: MTRGroupsClusterGetGroupMembershipParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRGroupsClusterGetGroupMembershipResponseParams?, (any Error)?) -> Void)](mtrclustergroups/getgroupmembership(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustergroups/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclustergroups/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclustergroups/readattributeclusterrevision(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclustergroups/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclustergroups/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeNameSupport(with: MTRReadParams?) -> [String : Any]?](mtrclustergroups/readattributenamesupport(with:).md)
-- [func removeAllGroups(with: MTRGroupsClusterRemoveAllGroupsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustergroups/removeallgroups(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func removeAllGroups(with: MTRGroupsClusterRemoveAllGroupsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclustergroups/removeallgroups(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func removeAllGroups(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](mtrclustergroups/removeallgroups(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func removeAllGroups(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](mtrclustergroups/removeallgroups(withexpectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func removeGroup(with: MTRGroupsClusterRemoveGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRGroupsClusterRemoveGroupResponseParams?, (any Error)?) -> Void)](mtrclustergroups/removegroup(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func removeGroup(with: MTRGroupsClusterRemoveGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRGroupsClusterRemoveGroupResponseParams?, (any Error)?) -> Void)](mtrclustergroups/removegroup(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func viewGroup(with: MTRGroupsClusterViewGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRGroupsClusterViewGroupResponseParams?, (any Error)?) -> Void)](mtrclustergroups/viewgroup(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func viewGroup(with: MTRGroupsClusterViewGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRGroupsClusterViewGroupResponseParams?, (any Error)?) -> Void)](mtrclustergroups/viewgroup(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
+- [func addGroup(with: MTRGroupsClusterAddGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRGroupsClusterAddGroupResponseParams?, (any Error)?) -> Void)](./mtrclustergroups/addgroup%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func addGroup(with: MTRGroupsClusterAddGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRGroupsClusterAddGroupResponseParams?, (any Error)?) -> Void)](./mtrclustergroups/addgroup%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func addGroupIfIdentifying(with: MTRGroupsClusterAddGroupIfIdentifyingParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclustergroups/addgroupifidentifying%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func addGroupIfIdentifying(with: MTRGroupsClusterAddGroupIfIdentifyingParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclustergroups/addgroupifidentifying%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func getGroupMembership(with: MTRGroupsClusterGetGroupMembershipParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRGroupsClusterGetGroupMembershipResponseParams?, (any Error)?) -> Void)](./mtrclustergroups/getgroupmembership%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func getGroupMembership(with: MTRGroupsClusterGetGroupMembershipParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRGroupsClusterGetGroupMembershipResponseParams?, (any Error)?) -> Void)](./mtrclustergroups/getgroupmembership%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclustergroups/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclustergroups/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclustergroups/readattributeclusterrevision%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclustergroups/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclustergroups/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeNameSupport(with: MTRReadParams?) -> [String : Any]?](./mtrclustergroups/readattributenamesupport%28with%29.md)
+- [func removeAllGroups(with: MTRGroupsClusterRemoveAllGroupsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclustergroups/removeallgroups%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func removeAllGroups(with: MTRGroupsClusterRemoveAllGroupsParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclustergroups/removeallgroups%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func removeAllGroups(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: ((any Error)?) -> Void)](./mtrclustergroups/removeallgroups%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func removeAllGroups(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: ((any Error)?) -> Void)](./mtrclustergroups/removeallgroups%28withexpectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func removeGroup(with: MTRGroupsClusterRemoveGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRGroupsClusterRemoveGroupResponseParams?, (any Error)?) -> Void)](./mtrclustergroups/removegroup%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func removeGroup(with: MTRGroupsClusterRemoveGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRGroupsClusterRemoveGroupResponseParams?, (any Error)?) -> Void)](./mtrclustergroups/removegroup%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func viewGroup(with: MTRGroupsClusterViewGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRGroupsClusterViewGroupResponseParams?, (any Error)?) -> Void)](./mtrclustergroups/viewgroup%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func viewGroup(with: MTRGroupsClusterViewGroupParams, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRGroupsClusterViewGroupResponseParams?, (any Error)?) -> Void)](./mtrclustergroups/viewgroup%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

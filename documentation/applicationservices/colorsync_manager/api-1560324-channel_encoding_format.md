@@ -7,7 +7,7 @@ Specify an encoding format for sRGB64.
 ## Topics
 
 ### Constants
-- [var cmSRGB16ChannelEncoding: Int](cmsrgb16channelencoding.md)
+- [var cmSRGB16ChannelEncoding: Int](../cmsrgb16channelencoding.md)
   Used for sRGB64 encoding ( ±3.12 format)
 
 

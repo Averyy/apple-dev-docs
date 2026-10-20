@@ -1,7 +1,8 @@
 # init(capacity:initializingWith:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new array with the specified capacity, directly initializing its storage using an output span.
 

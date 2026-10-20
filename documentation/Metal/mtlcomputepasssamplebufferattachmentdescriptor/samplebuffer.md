@@ -1,7 +1,8 @@
 # sampleBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A specialized memory buffer that the GPU uses to store its counter data during a compute pass.
 
@@ -19,19 +20,24 @@ A specialized memory buffer that the GPU uses to store its counter data during a
 var sampleBuffer: (any MTLCounterSampleBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLCounterSampleBuffer> sampleBuffer;
+```
+
 ## Mentions
 
-- [Sampling GPU data into counter sample buffers](sampling-gpu-data-into-counter-sample-buffers.md)
+- [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
 #### Discussion
 
-The property defaults to `nil`, which means the GPU doesn’t save any GPU counter information during the compute pass. For more information, see [`Creating a counter sample buffer to store a GPU’s counter data during a pass`](creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md) and [`Sampling GPU data into counter sample buffers`](sampling-gpu-data-into-counter-sample-buffers.md).
+The property defaults to `nil`, which means the GPU doesn’t save any GPU counter information during the compute pass. For more information, see [Creating a counter sample buffer to store a GPU’s counter data during a pass](../creating-a-counter-sample-buffer-to-store-a-gpus-counter-data-during-a-pass.md) and [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md).
 
 ## See Also
 
-- [var startOfEncoderSampleIndex: Int](mtlcomputepasssamplebufferattachmentdescriptor/startofencodersampleindex.md)
+### Configuring the sample buffer attachment
+- [var startOfEncoderSampleIndex: Int](./startofencodersampleindex.md)
   An index within a counter sample buffer that tells the GPU where to store counter data from the start of a compute pass.
-- [var endOfEncoderSampleIndex: Int](mtlcomputepasssamplebufferattachmentdescriptor/endofencodersampleindex.md)
+- [var endOfEncoderSampleIndex: Int](./endofencodersampleindex.md)
   An index within a counter sample buffer that tells the GPU where to store counter data from the end of a compute pass.
 
 

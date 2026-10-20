@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use the a dismissal behavior that’s appropriate for the given context.
 
@@ -22,13 +23,14 @@ static let automatic: MenuActionDismissBehavior
 
 #### Discussion
 
-In most cases, the default behavior is [`enabled`](menuactiondismissbehavior/enabled.md). There are some cases, like [`Stepper`](stepper.md), that use [`disabled`](menuactiondismissbehavior/disabled.md) by default.
+In most cases, the default behavior is [`enabled`](./enabled.md). There are some cases, like [`Stepper`](../stepper.md), that use [`disabled`](./disabled.md) by default.
 
 ## See Also
 
-- [static let disabled: MenuActionDismissBehavior](menuactiondismissbehavior/disabled.md)
+### Getting dismiss behaviors
+- [static let disabled: MenuActionDismissBehavior](./disabled.md)
   Never dismiss the presented menu after performing an action.
-- [static let enabled: MenuActionDismissBehavior](menuactiondismissbehavior/enabled.md)
+- [static let enabled: MenuActionDismissBehavior](./enabled.md)
   Always dismiss the presented menu after performing an action.
 
 

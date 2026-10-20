@@ -1,7 +1,8 @@
 # FeatureSet.Feature.shapeStrokes
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Supports shapes with strokes.
 
@@ -20,11 +21,12 @@ case shapeStrokes
 
 ## See Also
 
-- [FeatureSet.Feature.shapeFills](featureset/feature/shapefills.md)
+### Describing shape features
+- [FeatureSet.Feature.shapeFills](./shapefills.md)
   Supports shapes with fills.
-- [FeatureSet.Feature.shapeOpacity](featureset/feature/shapeopacity.md)
+- [FeatureSet.Feature.shapeOpacity](./shapeopacity.md)
   Supports shapes with opacity.
-- [FeatureSet.Feature.text](featureset/feature/text.md)
+- [FeatureSet.Feature.text](./text.md)
   Supports shapes with text.
 
 

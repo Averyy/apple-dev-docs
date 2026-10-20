@@ -1,7 +1,8 @@
 # index
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The system interface index associated with the interface.
 
@@ -22,11 +23,12 @@ var index: Int { get }
 
 ## See Also
 
-- [var type: NWInterface.InterfaceType](nwinterface/type.md)
+### Inspecting Interfaces
+- [var type: NWInterface.InterfaceType](./type.md)
   The type of the interface, such as Wi-Fi or loopback.
-- [NWInterface.InterfaceType](nwinterface/interfacetype.md)
+- [NWInterface.InterfaceType](./interfacetype.md)
   Types of network interfaces, based on their link layer media types.
-- [var name: String](nwinterface/name.md)
+- [var name: String](./name.md)
   The name of the interface.
 
 

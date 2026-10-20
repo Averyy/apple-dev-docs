@@ -1,7 +1,8 @@
 # init(function:input:output:weights:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new reduction layer.
 
@@ -11,8 +12,10 @@ Returns a new reduction layer.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -22,7 +25,7 @@ convenience init?(function reductionFunction: BNNS.ReductionFunction, input: BNN
 
 #### Discussion
 
-> ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions, and equal to the number of weights dimensions. The reduction layer only supports `float`, with the exception of [`BNNSReduceFunctionLogicalOr`](bnnsreducefunctionlogicalor.md) and [`BNNSReduceFunctionLogicalAnd`](bnnsreducefunctionlogicaland.md) that support `float` and `BNNSDataTypeBoolean`.
+> ❗ **Important**:  The number of input dimensions must be equal to number of output dimensions, and equal to the number of weights dimensions. The reduction layer only supports `float`, with the exception of [`BNNSReduceFunctionLogicalOr`](../../bnnsreducefunctionlogicalor.md) and [`BNNSReduceFunctionLogicalAnd`](../../bnnsreducefunctionlogicaland.md) that support `float` and `BNNSDataTypeBoolean`.
 
 ## Parameters
 

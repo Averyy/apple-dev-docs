@@ -1,7 +1,8 @@
 # commonMetadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of metadata items for each common metadata key for which a value is available.
 
@@ -20,17 +21,22 @@ An array of metadata items for each common metadata key for which a value is ava
 var commonMetadata: [AVMetadataItem] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVMetadataItem *> * commonMetadata;
+```
+
 #### Discussion
 
-You can filter the array of [`AVMetadataItem`](avmetadataitem.md) objects according to locale using [`metadataItems(from:with:)`](avmetadataitem/metadataitems(from:with:).md), key using [`metadataItems(from:withKey:keySpace:)`](avmetadataitem/metadataitems(from:withkey:keyspace:).md), or language using [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](avmetadataitem/metadataitems(from:filteredandsortedaccordingtopreferredlanguages:).md).
+You can filter the array of [`AVMetadataItem`](../avmetadataitem.md) objects according to locale using [`metadataItems(from:with:)`](../avmetadataitem/metadataitems%28from,with%29.md), key using [`metadataItems(from:withKey:keySpace:)`](../avmetadataitem/metadataitems%28from,withkey,keyspace%29.md), or language using [`metadataItems(from:filteredAndSortedAccordingToPreferredLanguages:)`](../avmetadataitem/metadataitems%28from,filteredandsortedaccordingtopreferredlanguages%29.md).
 
-Clients that are filtering media selection options by language should be prepared to handle cases in which the [`extendedLanguageTag`](avmediaselectionoption/extendedlanguagetag.md) property value is `nil`. Further, they should be prepared to handle cases in which an `extendedLanguageTag` is present but indicates that the language is “undetermined” (a language value of @“und”, as defined in ISO 639-2).
+Clients that are filtering media selection options by language should be prepared to handle cases in which the [`extendedLanguageTag`](./extendedlanguagetag.md) property value is `nil`. Further, they should be prepared to handle cases in which an `extendedLanguageTag` is present but indicates that the language is “undetermined” (a language value of @“und”, as defined in ISO 639-2).
 
 ## See Also
 
-- [var availableMetadataFormats: [String]](avmediaselectionoption/availablemetadataformats.md)
+### Managing metadata
+- [var availableMetadataFormats: [String]](./availablemetadataformats.md)
   The metadata formats that contain metadata associated with the option.
-- [func metadata(forFormat: String) -> [AVMetadataItem]](avmediaselectionoption/metadata(forformat:).md)
+- [func metadata(forFormat: String) -> [AVMetadataItem]](./metadata%28forformat%29.md)
   Returns an array of metadata items—one for each metadata item in the container of a given format.
 
 

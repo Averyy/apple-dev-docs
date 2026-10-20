@@ -1,7 +1,8 @@
 # activityViewControllerShareRecipients(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 optional func activityViewControllerShareRecipients(_ activityViewController: UIActivityViewController) -> [INPerson]
+```
+
+```objc
+- (NSArray<INPerson *> *) activityViewControllerShareRecipients:(UIActivityViewController *) activityViewController;
 ```
 
 #### Discussion

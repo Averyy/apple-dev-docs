@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A constraint target offset.
 

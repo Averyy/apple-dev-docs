@@ -1,7 +1,8 @@
 # GKError.Code.notSupported
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app doesn’t have Game Center enabled.
 
@@ -20,11 +21,16 @@ The app doesn’t have Game Center enabled.
 case notSupported
 ```
 
+```c
+GKErrorNotSupported
+```
+
 ## See Also
 
-- [GKError.Code.gameUnrecognized](gkerror/code/gameunrecognized.md)
+### Configuration Errors
+- [GKError.Code.gameUnrecognized](./gameunrecognized.md)
   The system can’t complete the requested operation because Game Center doesn’t recognize the app.
-- [GKError.Code.appUnlisted](gkerror/code/appunlisted.md)
+- [GKError.Code.appUnlisted](./appunlisted.md)
   The system can’t complete the requested operation because the game isn’t available on the App Store.
 
 

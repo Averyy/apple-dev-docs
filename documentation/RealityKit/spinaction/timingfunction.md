@@ -1,7 +1,8 @@
 # timingFunction
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A timing function that controls the progress of the animation.
 
@@ -21,7 +22,7 @@ var timingFunction: AnimationTimingFunction
 
 #### Discussion
 
-The default value of this property is [`default`](animationtimingfunction/default.md). This produces an ease transition.
+The default value of this property is [`default`](../animationtimingfunction/default.md). This produces an ease transition.
 
 
 ---

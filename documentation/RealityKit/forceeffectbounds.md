@@ -1,7 +1,8 @@
 # ForceEffectBounds
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The boundary options for a force effect.
 
@@ -22,14 +23,15 @@ enum ForceEffectBounds
 ## Topics
 
 ### Enumeration Cases
-- [ForceEffectBounds.sphere(radius:)](forceeffectbounds/sphere(radius:).md)
+- [ForceEffectBounds.sphere(radius:)](./forceeffectbounds/sphere%28radius%29.md)
   A spherical boundary that’s centered at the origin of the force effect and has a non-negative radius.
 
 ## See Also
 
-- [struct SpatialForceFalloff](spatialforcefalloff.md)
+### Force effect constraints
+- [struct SpatialForceFalloff](./spatialforcefalloff.md)
   A type that modulates the force strength based on the distance of rigid bodies.
-- [struct TimedForceFalloff](timedforcefalloff.md)
+- [struct TimedForceFalloff](./timedforcefalloff.md)
   A type that modulates the force strength based on how long the force effect has run.
 
 

@@ -1,7 +1,8 @@
 # AVMetricEventStreamPublisher
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type for objects that publish metric events to the event stream.
 
@@ -20,30 +21,35 @@ A type for objects that publish metric events to the event stream.
 protocol AVMetricEventStreamPublisher
 ```
 
+```objc
+@protocol AVMetricEventStreamPublisher
+```
+
 ## Topics
 
 ### Getting the metrics
-- [func allMetrics() -> AVMetrics<AVMetricEvent>](avmetriceventstreampublisher/allmetrics.md)
-- [func metrics<MetricEvent>(forType: MetricEvent.Type) -> AVMetrics<MetricEvent>](avmetriceventstreampublisher/metrics(fortype:).md)
+- [func allMetrics() -> AVMetrics<AVMetricEvent>](./avmetriceventstreampublisher/allmetrics%28%29.md)
+- [func metrics<MetricEvent>(forType: MetricEvent.Type) -> AVMetrics<MetricEvent>](./avmetriceventstreampublisher/metrics%28fortype%29.md)
 
 ## Relationships
 
 ### Conforming Types
-- [AVPlayerItem](avplayeritem.md)
+- [AVPlayerItem](./avplayeritem.md)
 
 ## See Also
 
-- [struct AVMetrics](avmetrics.md)
+### Metrics
+- [struct AVMetrics](./avmetrics.md)
   An asynchronous stream of metric information.
-- [struct AVMergedMetrics](avmergedmetrics.md)
+- [struct AVMergedMetrics](./avmergedmetrics.md)
   An asynchronous stream of metric information from different publishers.
-- [class AVVideoPerformanceMetrics](avvideoperformancemetrics.md)
+- [class AVVideoPerformanceMetrics](./avvideoperformancemetrics.md)
   An object that provides metrics related to video playback quality.
-- [class AVMetricEvent](avmetricevent.md)
+- [class AVMetricEvent](./avmetricevent.md)
   A base class that represents a metric event.
-- [class AVMetricErrorEvent](avmetricerrorevent.md)
+- [class AVMetricErrorEvent](./avmetricerrorevent.md)
   An object that represents a metric event when an error occurs.
-- [Metric event types](metric-event-types.md)
+- [Metric event types](./metric-event-types.md)
 
 
 ---

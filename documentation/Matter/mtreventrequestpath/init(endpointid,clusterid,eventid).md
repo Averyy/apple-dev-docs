@@ -1,7 +1,8 @@
 # init(endpointID:clusterID:eventID:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(endpointID: NSNumber?, clusterID: NSNumber?, eventID: NSNumber?)
+```
+
+```objc
++ (MTREventRequestPath *) requestPathWithEndpointID:(NSNumber *) endpointID clusterID:(NSNumber *) clusterID eventID:(NSNumber *) eventID;
 ```
 
 

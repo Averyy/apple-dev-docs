@@ -1,7 +1,8 @@
 # SVGFEPointLightElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,21 +10,21 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGFEPointLightElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [x](svgfepointlightelement/1634278-x.md)
-- [y](svgfepointlightelement/1630274-y.md)
-- [z](svgfepointlightelement/1632889-z.md)
+- [x](./svgfepointlightelement/api-1634278-x.md)
+- [y](./svgfepointlightelement/api-1630274-y.md)
+- [z](./svgfepointlightelement/api-1632889-z.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kAUAudioMixParameter_Style
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var kAUAudioMixParameter_Style: AudioUnitParameterID { get }
+```
+
+```c
+kAUAudioMixParameter_Style
 ```
 
 

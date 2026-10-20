@@ -1,7 +1,8 @@
 # traitCollectionDidChange(_:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the view when the device orientation changes.
 
@@ -18,7 +19,7 @@ Notifies the view when the device orientation changes.
 
 #### Overview
 
-This property inherits from [`UIView`](https://developer.apple.com/documentation/uikit/uiview).
+This property inherits from [`UIView`](../../UIKit/uiview.md).
 
 ## Parameters
 
@@ -26,11 +27,12 @@ This property inherits from [`UIView`](https://developer.apple.com/documentation
 
 ## See Also
 
-- [var subviews: [UIView]](roomcaptureview/subviews.md)
+### Accessing view features
+- [var subviews: [UIView]](./subviews.md)
   An array that contains the view’s subviews.
-- [func layoutSubviews()](roomcaptureview/layoutsubviews.md)
+- [func layoutSubviews()](./layoutsubviews%28%29.md)
   Instructs the view’s subviews to position within the view.
-- [func encode(with: NSCoder)](roomcaptureview/encode(with:).md)
+- [func encode(with: NSCoder)](./encode%28with%29.md)
   Serializes the view to the specified coder.
 
 

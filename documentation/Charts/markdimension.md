@@ -1,7 +1,8 @@
 # MarkDimension
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An individual dimension representing a mark’s width or height.
 
@@ -24,46 +25,47 @@ struct MarkDimension
 ## Topics
 
 ### Supporting types
-- [struct MarkDimensions](markdimensions.md)
+- [struct MarkDimensions](./markdimensions.md)
 ### Initializers
-- [init(floatLiteral: Double)](markdimension/init(floatliteral:).md)
+- [init(floatLiteral: Double)](./markdimension/init%28floatliteral%29.md)
   Creates a constant width or height from a floating point value.
-- [init(integerLiteral: Int)](markdimension/init(integerliteral:).md)
+- [init(integerLiteral: Int)](./markdimension/init%28integerliteral%29.md)
   Creates a constant width or height from an integer.
 ### Type Properties
-- [static var automatic: MarkDimension](markdimension/automatic.md)
+- [static var automatic: MarkDimension](./markdimension/automatic.md)
   A dimension that determines its value automatically.
 ### Type Methods
-- [static func fixed(CGFloat) -> MarkDimension](markdimension/fixed(_:).md)
+- [static func fixed(CGFloat) -> MarkDimension](./markdimension/fixed%28_%29.md)
   A constant dimension.
-- [static func inset(CGFloat) -> MarkDimension](markdimension/inset(_:).md)
+- [static func inset(CGFloat) -> MarkDimension](./markdimension/inset%28_%29.md)
   A dimension that’s the step size minus the specified inset value on each side.
-- [static func ratio(CGFloat) -> MarkDimension](markdimension/ratio(_:).md)
+- [static func ratio(CGFloat) -> MarkDimension](./markdimension/ratio%28_%29.md)
   A dimension that’s proportional to the scale step size, using the specified ratio.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByFloatLiteral](../Swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../Swift/expressiblebyintegerliteral.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MarkStackingMethod](markstackingmethod.md)
+### Mark configuration
+- [struct MarkStackingMethod](./markstackingmethod.md)
   The ways in which you can stack marks in a chart.
-- [struct InterpolationMethod](interpolationmethod.md)
+- [struct InterpolationMethod](./interpolationmethod.md)
   The ways in which line or area marks interpolate their data.
-- [struct BasicChartSymbolShape](basicchartsymbolshape.md)
+- [struct BasicChartSymbolShape](./basicchartsymbolshape.md)
   A basic chart symbol shape.
-- [protocol ChartSymbolShape](chartsymbolshape.md)
+- [protocol ChartSymbolShape](./chartsymbolshape.md)
   A type that can act as a shape for the marks that you add to a chart.
-- [struct AnyChartSymbolShape](anychartsymbolshape.md)
+- [struct AnyChartSymbolShape](./anychartsymbolshape.md)
   A type-erased plotting shape.
 
 

@@ -1,17 +1,22 @@
 # isPaired()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the target device is paired.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func isPaired() -> Bool
+```
+
+```objc
+- (BOOL) isPaired;
 ```
 
 #### Return Value

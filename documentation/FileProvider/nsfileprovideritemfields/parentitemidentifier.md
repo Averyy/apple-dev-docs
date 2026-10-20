@@ -1,7 +1,8 @@
 # parentItemIdentifier
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identity of the directory that contains the item.
 
@@ -16,6 +17,10 @@ The identity of the directory that contains the item.
 
 ```swift
 static var parentItemIdentifier: NSFileProviderItemFields { get }
+```
+
+```c
+NSFileProviderItemParentItemIdentifier
 ```
 
 

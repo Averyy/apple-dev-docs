@@ -1,7 +1,8 @@
 # AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the response body.
 
@@ -10,7 +11,7 @@ The data element of the response body.
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse.Data
 ```
 
@@ -18,6 +19,8 @@ object AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the response.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appStoreVersions`
 
 
 ---

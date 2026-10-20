@@ -1,7 +1,8 @@
 # title
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,10 +16,15 @@
 var title: String { get set }
 ```
 
+```objc
+@property (copy) NSString * title;
+```
+
 ## See Also
 
-- [var image: UIImage?](nsbuttontouchbaritem/image.md)
-- [var bezelColor: UIColor?](nsbuttontouchbaritem/bezelcolor.md)
+### Configuring button appearance
+- [var image: UIImage?](./image.md)
+- [var bezelColor: UIColor?](./bezelcolor.md)
 
 
 ---

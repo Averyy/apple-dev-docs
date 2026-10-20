@@ -1,7 +1,8 @@
 # AuditQuery
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Request body for the Query Change History endpoint.
 
@@ -10,13 +11,13 @@ Request body for the Query Change History endpoint.
 
 ## Declaration
 
-```swift
+```
 object AuditQuery
 ```
 
 #### Overview
 
-The `AuditQuery` object is the request payload for `POST /v1/change-history/query` ([`Query Change History`](query-audit-summary-_-grouped-by-transaction.md)). Every valid request must include at least one `filters` entry targeting `eventTime` using `BETWEEN`, `GREATER_THAN`, or `LESS_THAN`. All other fields are optional and default to reasonable values when omitted.
+The `AuditQuery` object is the request payload for `POST /v1/change-history/query` ([`Query Change History`](./query-audit-summary-_-grouped-by-transaction.md)). Every valid request must include at least one `filters` entry targeting `eventTime` using `BETWEEN`, `GREATER_THAN`, or `LESS_THAN`. All other fields are optional and default to reasonable values when omitted.
 
 ##### Example
 
@@ -44,7 +45,7 @@ A minimal valid request looks like this:
 | Filterable Field | Supported Operators | Accepted Values |
 | --- | --- | --- |
 | `eventTime` | `BETWEEN`, `GREATER_THAN`, `LESS_THAN` | ISO 8601 date strings, for example, `"2025-03-01"`. Maximum lookback is 6 months. `BETWEEN` requires two values. `GREATER_THAN` and `LESS_THAN` take one. |
-| `entityType` | `IN` | Not a closed enum. A string matching the name of the API entity that changed, such as `Campaign`, `AdGroup`, `Keyword`, `NegativeKeyword`, `Ad`, `Creative`, `AdAccount`, `Org`, or `LocationGroup`. See [`Change History Endpoints`](change-history-endpoints.md) for the entity types this endpoint reports on. |
+| `entityType` | `IN` | Not a closed enum. A string matching the name of the API entity that changed, such as `Campaign`, `AdGroup`, `Keyword`, `NegativeKeyword`, `Ad`, `Creative`, `AdAccount`, `Org`, or `LocationGroup`. See [Change History Endpoints](./change-history-endpoints.md) for the entity types this endpoint reports on. |
 | `eventType` | `IN` | `CREATE`, `UPDATE`, `DELETE` |
 | `userType` | `IN` | `CUSTOMER`, `CUSTOMER_API`, `APPLE_SUPPORT` |
 | `campaignId` | `EQUALS`, `IN` | Campaign ID string(s). Available when `entityType` is `AdGroup`, `Keyword`, or `NegativeKeyword`. |
@@ -75,7 +76,7 @@ A minimal valid request looks like this:
 }
 ```
 
-##### Combine Filters
+##### Combine filters
 
 The API combines multiple `filters` entries with logical AND. For example, to retrieve only `Campaign` `UPDATE` events in a time window:
 
@@ -160,7 +161,7 @@ To retrieve changes made by a specific user across multiple ad groups:
 }
 ```
 
-##### Handle Time Zones
+##### Handle time zones
 
 When `timeZone` is `"ORTZ"`, the server converts the `eventTime` filter values from the org’s configured timezone to UTC before executing the query. The `eventTime` values returned in the response are always in UTC regardless of this setting.
 
@@ -172,23 +173,23 @@ When `timeZone` is `"ORTZ"`, the server converts the `eventTime` filter values f
 ## Topics
 
 ### Dictionaries
-- [object AuditQuery.Options](auditquery/options-data.dictionary.md)
+- [object AuditQuery.Options](./auditquery/options-data.dictionary.md)
   A flat key-value map of additional query controls.
 
 ## Properties
 
-- `filters` ([AuditFilter]): An array of filter conditions applied to the audit log. Every request requires a filter on `eventTime`. Use `BETWEEN` for a bounded range or `GREATER_THAN` or `LESS_THAN` for an open-ended range. Requests that omit this filter return a `400 Bad Request` error. Additional filters on `entityType`, `eventType`, and `userType` narrow results further and can be combined in a single request. Each entry is an [`AuditFilter`](auditfilter.md) object with `field`, `operator`, and `value` keys. See the Filterable Field table below.
-- `sorting` ([AuditSorting]): An array of sort directives. Each entry is an [`AuditSorting`](auditsorting.md) object specifying a `field` name and an `order` of `ASC` or `DESC`. When you omit this array, the API sorts results by `eventTime` descending.
-- `pagination` (Pagination): Controls the page offset and page size for the response. See [`Pagination`](pagination.md). Uses `offset` (zero-based row index) and `pageSize` (maximum rows per page, must be ≥ 1).
-- `options` (AuditQuery.Options): A flat key-value map of additional query controls. See [`AuditQuery.Options`](auditquery/options-data.dictionary.md). All keys and values are strings. See the Option Key table below.
+- `filters` ([AuditFilter]): An array of filter conditions applied to the audit log. Every request requires a filter on `eventTime`. Use `BETWEEN` for a bounded range or `GREATER_THAN` or `LESS_THAN` for an open-ended range. Requests that omit this filter return a `400 Bad Request` error. Additional filters on `entityType`, `eventType`, and `userType` narrow results further and can be combined in a single request. Each entry is an [`AuditFilter`](./auditfilter.md) object with `field`, `operator`, and `value` keys. See the Filterable Field table below.
+- `sorting` ([AuditSorting]): An array of sort directives. Each entry is an [`AuditSorting`](./auditsorting.md) object specifying a `field` name and an `order` of `ASC` or `DESC`. When you omit this array, the API sorts results by `eventTime` descending.
+- `pagination` (Pagination): Controls the page offset and page size for the response. See [`Pagination`](./pagination.md). Uses `offset` (zero-based row index) and `pageSize` (maximum rows per page, must be ≥ 1).
+- `options` (AuditQuery.Options): A flat key-value map of additional query controls. See [`AuditQuery.Options`](./auditquery/options-data.dictionary.md). All keys and values are strings. See the Option Key table below.
 
 ## See Also
 
-- [object AuditFilter](auditfilter.md)
+- [object AuditFilter](./auditfilter.md)
   A single filter condition in an audit query request, specifying the field to filter on, the comparison operator, and one or more values to match against.
-- [object AuditSorting](auditsorting.md)
+- [object AuditSorting](./auditsorting.md)
   A sort directive in an audit query request, specifying a field to sort by and the direction.
-- [object Pagination](pagination.md)
+- [object Pagination](./pagination.md)
   Pagination state in change history list responses.
 
 

@@ -1,7 +1,8 @@
 # kCMIOExposureControlPropertyLockThreshold
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,16 +14,21 @@
 var kCMIOExposureControlPropertyLockThreshold: Int { get }
 ```
 
+```c
+kCMIOExposureControlPropertyLockThreshold
+```
+
 ## See Also
 
-- [var kCMIOExposureControlPropertyConvergenceSpeed: Int](kcmioexposurecontrolpropertyconvergencespeed.md)
-- [var kCMIOExposureControlPropertyIntegrationTime: Int](kcmioexposurecontrolpropertyintegrationtime.md)
-- [var kCMIOExposureControlPropertyMaximumGain: Int](kcmioexposurecontrolpropertymaximumgain.md)
-- [var kCMIOExposureControlPropertyRegionOfInterest: Int](kcmioexposurecontrolpropertyregionofinterest.md)
-- [var kCMIOExposureControlPropertyStability: Int](kcmioexposurecontrolpropertystability.md)
-- [var kCMIOExposureControlPropertyStable: Int](kcmioexposurecontrolpropertystable.md)
-- [var kCMIOExposureControlPropertyTarget: Int](kcmioexposurecontrolpropertytarget.md)
-- [var kCMIOExposureControlPropertyUnlockThreshold: Int](kcmioexposurecontrolpropertyunlockthreshold.md)
+### Constants
+- [var kCMIOExposureControlPropertyConvergenceSpeed: Int](./kcmioexposurecontrolpropertyconvergencespeed.md)
+- [var kCMIOExposureControlPropertyIntegrationTime: Int](./kcmioexposurecontrolpropertyintegrationtime.md)
+- [var kCMIOExposureControlPropertyMaximumGain: Int](./kcmioexposurecontrolpropertymaximumgain.md)
+- [var kCMIOExposureControlPropertyRegionOfInterest: Int](./kcmioexposurecontrolpropertyregionofinterest.md)
+- [var kCMIOExposureControlPropertyStability: Int](./kcmioexposurecontrolpropertystability.md)
+- [var kCMIOExposureControlPropertyStable: Int](./kcmioexposurecontrolpropertystable.md)
+- [var kCMIOExposureControlPropertyTarget: Int](./kcmioexposurecontrolpropertytarget.md)
+- [var kCMIOExposureControlPropertyUnlockThreshold: Int](./kcmioexposurecontrolpropertyunlockthreshold.md)
 
 
 ---

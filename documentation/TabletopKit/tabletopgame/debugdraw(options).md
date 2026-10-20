@@ -1,7 +1,8 @@
 # debugDraw(options:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enable or disable debug visualizations
 

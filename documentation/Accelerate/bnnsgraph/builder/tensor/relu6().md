@@ -1,7 +1,8 @@
 # relu6()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Rectified Linear Unit 6 (ReLU6)  activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a Rectified Linear Unit 6 (ReLU6)  activation operation to the current grap
 ```swift
 func relu6() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

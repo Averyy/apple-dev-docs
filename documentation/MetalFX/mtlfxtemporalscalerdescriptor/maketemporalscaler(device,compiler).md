@@ -1,7 +1,8 @@
 # makeTemporalScaler(device:compiler:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a temporal scaler instance for a Metal device.
 
@@ -16,6 +17,10 @@ Creates a temporal scaler instance for a Metal device.
 
 ```swift
 func makeTemporalScaler(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXTemporalScaler)?
+```
+
+```objc
+- (id<MTL4FXTemporalScaler>) newTemporalScalerWithDevice:(id<MTLDevice>) device compiler:(id<MTL4Compiler>) compiler;
 ```
 
 #### Return Value

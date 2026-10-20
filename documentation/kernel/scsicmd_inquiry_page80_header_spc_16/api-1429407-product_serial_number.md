@@ -1,14 +1,15 @@
 # PRODUCT_SERIAL_NUMBER
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 UInt8 PRODUCT_SERIAL_NUMBER;
 ```
 

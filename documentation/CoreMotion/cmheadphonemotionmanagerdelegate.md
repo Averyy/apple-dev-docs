@@ -1,7 +1,8 @@
 # CMHeadphoneMotionManagerDelegate
 
 **Framework**: Core Motion  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that defines an interface for connecting and disconnecting headphones.
 
@@ -18,24 +19,29 @@ A set of methods that defines an interface for connecting and disconnecting head
 protocol CMHeadphoneMotionManagerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol CMHeadphoneMotionManagerDelegate <NSObject>
+```
+
 ## Topics
 
 ### Connecting and Disconnecting Headphones
-- [func headphoneMotionManagerDidConnect(CMHeadphoneMotionManager)](cmheadphonemotionmanagerdelegate/headphonemotionmanagerdidconnect(_:).md)
+- [func headphoneMotionManagerDidConnect(CMHeadphoneMotionManager)](./cmheadphonemotionmanagerdelegate/headphonemotionmanagerdidconnect%28_%29.md)
   Performs a callback to the delegate after you connect headphones.
-- [func headphoneMotionManagerDidDisconnect(CMHeadphoneMotionManager)](cmheadphonemotionmanagerdelegate/headphonemotionmanagerdiddisconnect(_:).md)
+- [func headphoneMotionManagerDidDisconnect(CMHeadphoneMotionManager)](./cmheadphonemotionmanagerdelegate/headphonemotionmanagerdiddisconnect%28_%29.md)
   Performs a callback to the delegate after you disconnect headphones.
-- [CMHeadphoneMotionManager.DeviceMotionHandler](cmheadphonemotionmanager/devicemotionhandler.md)
+- [CMHeadphoneMotionManager.DeviceMotionHandler](./cmheadphonemotionmanager/devicemotionhandler.md)
   The type of block callback for handling headphone-motion data.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any CMHeadphoneMotionManagerDelegate)?](cmheadphonemotionmanager/delegate.md)
+### Getting the Delegate
+- [var delegate: (any CMHeadphoneMotionManagerDelegate)?](./cmheadphonemotionmanager/delegate.md)
   The object that receives headphone motion manager events.
 
 

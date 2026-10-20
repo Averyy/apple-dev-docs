@@ -1,10 +1,11 @@
 # kBluetoothL2CAPSegmentationAndReassemblyEndOfSDU
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothL2CAPSegmentationAndReassemblyEndOfSDU: BluetoothL2CAPSegmentationAndReassembly { get }
 ```
 
+```c
+kBluetoothL2CAPSegmentationAndReassemblyEndOfSDU
+```
+
 ## See Also
 
-- [var kBluetoothL2CAPSegmentationAndReassemblyContinuationOfSDU: BluetoothL2CAPSegmentationAndReassembly](kbluetoothl2capsegmentationandreassemblycontinuationofsdu.md)
-- [var kBluetoothL2CAPSegmentationAndReassemblyStartOfSDU: BluetoothL2CAPSegmentationAndReassembly](kbluetoothl2capsegmentationandreassemblystartofsdu.md)
-- [var kBluetoothL2CAPSegmentationAndReassemblyUnsegmentedSDU: BluetoothL2CAPSegmentationAndReassembly](kbluetoothl2capsegmentationandreassemblyunsegmentedsdu.md)
+### Constants
+- [var kBluetoothL2CAPSegmentationAndReassemblyContinuationOfSDU: BluetoothL2CAPSegmentationAndReassembly](./kbluetoothl2capsegmentationandreassemblycontinuationofsdu.md)
+- [var kBluetoothL2CAPSegmentationAndReassemblyStartOfSDU: BluetoothL2CAPSegmentationAndReassembly](./kbluetoothl2capsegmentationandreassemblystartofsdu.md)
+- [var kBluetoothL2CAPSegmentationAndReassemblyUnsegmentedSDU: BluetoothL2CAPSegmentationAndReassembly](./kbluetoothl2capsegmentationandreassemblyunsegmentedsdu.md)
 
 
 ---

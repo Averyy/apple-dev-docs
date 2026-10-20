@@ -1,14 +1,15 @@
 # kHIDUsage_KeypadComma
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_KeypadComma = 0x85
 ```
 

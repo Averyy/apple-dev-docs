@@ -1,7 +1,8 @@
 # SMPTETimeType.type25
 
 **Framework**: Core Audio Types  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 2.0+
@@ -18,23 +19,28 @@
 case type25
 ```
 
+```c
+kSMPTETimeType25
+```
+
 #### Discussion
 
 25 video frames per second—standard for PAL and SECAM video.
 
 ## See Also
 
-- [SMPTETimeType.type2398](smptetimetype/type2398.md)
-- [SMPTETimeType.type24](smptetimetype/type24.md)
-- [SMPTETimeType.type2997](smptetimetype/type2997.md)
-- [SMPTETimeType.type2997Drop](smptetimetype/type2997drop.md)
-- [SMPTETimeType.type30](smptetimetype/type30.md)
-- [SMPTETimeType.type30Drop](smptetimetype/type30drop.md)
-- [SMPTETimeType.type50](smptetimetype/type50.md)
-- [SMPTETimeType.type5994](smptetimetype/type5994.md)
-- [SMPTETimeType.type5994Drop](smptetimetype/type5994drop.md)
-- [SMPTETimeType.type60](smptetimetype/type60.md)
-- [SMPTETimeType.type60Drop](smptetimetype/type60drop.md)
+### Constants
+- [SMPTETimeType.type2398](./type2398.md)
+- [SMPTETimeType.type24](./type24.md)
+- [SMPTETimeType.type2997](./type2997.md)
+- [SMPTETimeType.type2997Drop](./type2997drop.md)
+- [SMPTETimeType.type30](./type30.md)
+- [SMPTETimeType.type30Drop](./type30drop.md)
+- [SMPTETimeType.type50](./type50.md)
+- [SMPTETimeType.type5994](./type5994.md)
+- [SMPTETimeType.type5994Drop](./type5994drop.md)
+- [SMPTETimeType.type60](./type60.md)
+- [SMPTETimeType.type60Drop](./type60drop.md)
 
 
 ---

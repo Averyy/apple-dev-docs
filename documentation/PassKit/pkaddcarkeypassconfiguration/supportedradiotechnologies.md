@@ -1,7 +1,8 @@
 # supportedRadioTechnologies
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The wireless radio technology that the key uses.
 
@@ -9,7 +10,7 @@ The wireless radio technology that the key uses.
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ The wireless radio technology that the key uses.
 var supportedRadioTechnologies: PKRadioTechnology { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PKRadioTechnology supportedRadioTechnologies;
+```
+
 ## See Also
 
-- [struct PKRadioTechnology](pkradiotechnology.md)
+### Setting the wireless radio technology
+- [struct PKRadioTechnology](../pkradiotechnology.md)
   Constants that describe the type of wireless radio technology that a pass uses.
 
 

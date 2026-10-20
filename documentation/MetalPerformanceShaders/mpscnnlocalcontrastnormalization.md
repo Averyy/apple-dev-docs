@@ -1,7 +1,8 @@
 # MPSCNNLocalContrastNormalization
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A local-contrast normalization kernel.
 
@@ -19,88 +20,93 @@ A local-contrast normalization kernel.
 class MPSCNNLocalContrastNormalization
 ```
 
+```objc
+@interface MPSCNNLocalContrastNormalization : MPSCNNKernel
+```
+
 #### Overview
 
-The local contrast normalization kernel is quite similar to the spatial normalization kernel, described in the [`MPSCNNSpatialNormalization`](mpscnnspatialnormalization.md) class, in that it applies the kernel over local regions which extend spatially, but are in separate feature channels (i.e., they have the shape `1 x kernel width x kernel height`). However, instead of dividing by the local “energy” of the feature, the denominator uses the local variance of the feature - effectively the mean value of the feature is subtracted from the signal. For each feature channel, the function computes the variance `VAR(i,j)` and mean `M(i,j)` of `X(i,j)` inside each rectangle around the spatial point `(i,j)`. Then the result is computed for each element of `X` as follows:
+The local contrast normalization kernel is quite similar to the spatial normalization kernel, described in the [`MPSCNNSpatialNormalization`](./mpscnnspatialnormalization.md) class, in that it applies the kernel over local regions which extend spatially, but are in separate feature channels (i.e., they have the shape `1 x kernel width x kernel height`). However, instead of dividing by the local “energy” of the feature, the denominator uses the local variance of the feature - effectively the mean value of the feature is subtracted from the signal. For each feature channel, the function computes the variance `VAR(i,j)` and mean `M(i,j)` of `X(i,j)` inside each rectangle around the spatial point `(i,j)`. Then the result is computed for each element of `X` as follows:
 
-![Y(i,j) = pm + ps * ( X(i,j) - p0 * M(i,j)) / (delta + alpha * VAR(i,j))^beta](/images/com.apple.metalperformanceshaders/media-2903532@2x.png)
+![Y(i,j) = pm + ps * ( X(i,j) - p0 * M(i,j)) / (delta + alpha * VAR(i,j))^beta](https://developer.apple.com/tutorials/images/com.apple.metalperformanceshaders/media-2903532@2x.png)
 
-Where `kw` and `kh` are the values of the `kernelWidth` and the `kernelHeight` properties, respectively, and the values of the [`pm`](mpscnnlocalcontrastnormalization/pm.md), [`ps`](mpscnnlocalcontrastnormalization/ps.md), and [`p0`](mpscnnlocalcontrastnormalization/p0.md) properties can be used to offset and scale the result in various ways. For example setting `pm=0`, `ps=1`, `p0=1`, `delta=0`, `alpha=1.0` and `beta=0.5` scales input data so that the result has unit variance and zero mean, provided that input variance is positive.
+Where `kw` and `kh` are the values of the `kernelWidth` and the `kernelHeight` properties, respectively, and the values of the [`pm`](./mpscnnlocalcontrastnormalization/pm.md), [`ps`](./mpscnnlocalcontrastnormalization/ps.md), and [`p0`](./mpscnnlocalcontrastnormalization/p0.md) properties can be used to offset and scale the result in various ways. For example setting `pm=0`, `ps=1`, `p0=1`, `delta=0`, `alpha=1.0` and `beta=0.5` scales input data so that the result has unit variance and zero mean, provided that input variance is positive.
 
-It is your responsibility to ensure that the combination of the values of the [`delta`](mpscnnlocalcontrastnormalization/delta.md) and [`alpha`](mpscnnlocalcontrastnormalization/alpha.md) properties does not result in a situation where the denominator becomes zero - in such situations the resulting pixel-value is undefined. A good way to guard against tiny variances is to regulate the expression with a small delta value, for example `delta=1/1024`.
+It is your responsibility to ensure that the combination of the values of the [`delta`](./mpscnnlocalcontrastnormalization/delta.md) and [`alpha`](./mpscnnlocalcontrastnormalization/alpha.md) properties does not result in a situation where the denominator becomes zero - in such situations the resulting pixel-value is undefined. A good way to guard against tiny variances is to regulate the expression with a small delta value, for example `delta=1/1024`.
 
-> 💡 **Tip**:  The encoding methods in the [`MPSUnaryImageKernel`](mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNLocalContrastNormalization`](mpscnnlocalcontrastnormalization.md) object to a [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) object.
+> 💡 **Tip**:  The encoding methods in the [`MPSUnaryImageKernel`](./mpsunaryimagekernel.md) class can be used to encode an [`MPSCNNLocalContrastNormalization`](./mpscnnlocalcontrastnormalization.md) object to a [`MTLCommandBuffer`](../Metal/mtlcommandbuffer.md) object.
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnnlocalcontrastnormalization/init(coder:device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpscnnlocalcontrastnormalization/init%28coder,device%29.md)
   Initializes a local contrast normalization kernel.
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnlocalcontrastnormalization/init(device:kernelwidth:kernelheight:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](./mpscnnlocalcontrastnormalization/init%28device,kernelwidth,kernelheight%29.md)
   Initializes a local contrast normalization kernel.
 ### Instance Properties
-- [var alpha: Float](mpscnnlocalcontrastnormalization/alpha.md)
+- [var alpha: Float](./mpscnnlocalcontrastnormalization/alpha.md)
   The “alpha” variable of the kernel function.
-- [var beta: Float](mpscnnlocalcontrastnormalization/beta.md)
+- [var beta: Float](./mpscnnlocalcontrastnormalization/beta.md)
   The “beta” variable of the kernel function.
-- [var delta: Float](mpscnnlocalcontrastnormalization/delta.md)
+- [var delta: Float](./mpscnnlocalcontrastnormalization/delta.md)
   The “delta” variable of the kernel function.
-- [var p0: Float](mpscnnlocalcontrastnormalization/p0.md)
+- [var p0: Float](./mpscnnlocalcontrastnormalization/p0.md)
   The “p0” variable of the kernel function.
-- [var pm: Float](mpscnnlocalcontrastnormalization/pm.md)
+- [var pm: Float](./mpscnnlocalcontrastnormalization/pm.md)
   The “pm” variable of the kernel function.
-- [var ps: Float](mpscnnlocalcontrastnormalization/ps.md)
+- [var ps: Float](./mpscnnlocalcontrastnormalization/ps.md)
   The “ps” variable of the kernel function.
 ### Instance Methods
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnlocalcontrastnormalization/init(device:kernelwidth:kernelheight:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](./mpscnnlocalcontrastnormalization/init%28device,kernelwidth,kernelheight%29.md)
   Initializes a local contrast normalization kernel.
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNKernel](mpscnnkernel.md)
+- [MPSCNNKernel](./mpscnnkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNCrossChannelNormalization](mpscnncrosschannelnormalization.md)
+### Normalization Layers
+- [class MPSCNNCrossChannelNormalization](./mpscnncrosschannelnormalization.md)
   A normalization kernel applied across feature channels.
-- [class MPSCNNCrossChannelNormalizationGradient](mpscnncrosschannelnormalizationgradient.md)
+- [class MPSCNNCrossChannelNormalizationGradient](./mpscnncrosschannelnormalizationgradient.md)
   A gradient normalization kernel applied across feature channels.
-- [class MPSCNNLocalContrastNormalizationGradient](mpscnnlocalcontrastnormalizationgradient.md)
+- [class MPSCNNLocalContrastNormalizationGradient](./mpscnnlocalcontrastnormalizationgradient.md)
   A gradient local-contrast normalization kernel.
-- [class MPSCNNSpatialNormalization](mpscnnspatialnormalization.md)
+- [class MPSCNNSpatialNormalization](./mpscnnspatialnormalization.md)
   A spatial normalization kernel.
-- [class MPSCNNSpatialNormalizationGradient](mpscnnspatialnormalizationgradient.md)
+- [class MPSCNNSpatialNormalizationGradient](./mpscnnspatialnormalizationgradient.md)
   A gradient spatial normalization kernel.
-- [class MPSCNNBatchNormalization](mpscnnbatchnormalization.md)
+- [class MPSCNNBatchNormalization](./mpscnnbatchnormalization.md)
   A batch normalization kernel.
-- [class MPSCNNBatchNormalizationGradient](mpscnnbatchnormalizationgradient.md)
+- [class MPSCNNBatchNormalizationGradient](./mpscnnbatchnormalizationgradient.md)
   A gradient batch normalization kernel.
-- [class MPSCNNBatchNormalizationState](mpscnnbatchnormalizationstate.md)
+- [class MPSCNNBatchNormalizationState](./mpscnnbatchnormalizationstate.md)
   An object that stores data required to execute batch normalization.
-- [class MPSCNNNormalizationMeanAndVarianceState](mpscnnnormalizationmeanandvariancestate.md)
+- [class MPSCNNNormalizationMeanAndVarianceState](./mpscnnnormalizationmeanandvariancestate.md)
   An object that stores mean and variance terms used to execute batch normalization.
-- [class MPSCNNBatchNormalizationStatistics](mpscnnbatchnormalizationstatistics.md)
+- [class MPSCNNBatchNormalizationStatistics](./mpscnnbatchnormalizationstatistics.md)
   An object that stores statistics required to execute batch normalization.
-- [class MPSCNNBatchNormalizationStatisticsGradient](mpscnnbatchnormalizationstatisticsgradient.md)
+- [class MPSCNNBatchNormalizationStatisticsGradient](./mpscnnbatchnormalizationstatisticsgradient.md)
   An object that stores the gradient of the loss function with respect to the batch statistics and batch normalization weights.
-- [class MPSCNNInstanceNormalization](mpscnninstancenormalization.md)
+- [class MPSCNNInstanceNormalization](./mpscnninstancenormalization.md)
   An instance normalization kernel.
-- [class MPSCNNInstanceNormalizationGradient](mpscnninstancenormalizationgradient.md)
+- [class MPSCNNInstanceNormalizationGradient](./mpscnninstancenormalizationgradient.md)
   A gradient instance normalization kernel.
-- [class MPSCNNInstanceNormalizationGradientState](mpscnninstancenormalizationgradientstate.md)
+- [class MPSCNNInstanceNormalizationGradientState](./mpscnninstancenormalizationgradientstate.md)
   An object that stores information required to execute a gradient pass for instance normalization.
-- [class MPSCNNNormalizationGammaAndBetaState](mpscnnnormalizationgammaandbetastate.md)
+- [class MPSCNNNormalizationGammaAndBetaState](./mpscnnnormalizationgammaandbetastate.md)
   An object that stores gamma and beta terms used to apply a scale and bias in instance- or batch-normalization operations.
 
 

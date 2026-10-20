@@ -1,15 +1,20 @@
 # kBluetoothConnectionHandleSerialDeviceReserved
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kBluetoothConnectionHandleSerialDeviceReserved: Int { get }
+```
+
+```c
+kBluetoothConnectionHandleSerialDeviceReserved
 ```
 
 

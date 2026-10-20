@@ -1,7 +1,8 @@
 # init(audioComponentDescription:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a MIDI instrument audio unit with the component description you specify.
 
@@ -19,9 +20,13 @@ Creates a MIDI instrument audio unit with the component description you specify.
 init(audioComponentDescription description: AudioComponentDescription)
 ```
 
+```objc
+- (instancetype) initWithAudioComponentDescription:(AudioComponentDescription) description;
+```
+
 #### Return Value
 
-A new [`AVAudioUnitMIDIInstrument`](avaudiounitmidiinstrument.md) instance.
+A new [`AVAudioUnitMIDIInstrument`](../avaudiounitmidiinstrument.md) instance.
 
 #### Discussion
 

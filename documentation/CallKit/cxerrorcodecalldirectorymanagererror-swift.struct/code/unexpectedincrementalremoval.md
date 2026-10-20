@@ -1,7 +1,8 @@
 # CXErrorCodeCallDirectoryManagerError.Code.unexpectedIncrementalRemoval
 
 **Framework**: CallKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A request occurred before confirming incremental loading.
 
@@ -18,23 +19,28 @@ A request occurred before confirming incremental loading.
 case unexpectedIncrementalRemoval
 ```
 
+```c
+CXErrorCodeCallDirectoryManagerErrorUnexpectedIncrementalRemoval
+```
+
 ## See Also
 
-- [CXErrorCodeCallDirectoryManagerError.Code.unknown](cxerrorcodecalldirectorymanagererror-swift.struct/code/unknown.md)
+### Constants
+- [CXErrorCodeCallDirectoryManagerError.Code.unknown](./unknown.md)
   An unknown error occurred.
-- [CXErrorCodeCallDirectoryManagerError.Code.noExtensionFound](cxerrorcodecalldirectorymanagererror-swift.struct/code/noextensionfound.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.noExtensionFound](./noextensionfound.md)
   The call directory manager could not find a corresponding app extension.
-- [CXErrorCodeCallDirectoryManagerError.Code.currentlyLoading](cxerrorcodecalldirectorymanagererror-swift.struct/code/currentlyloading.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.currentlyLoading](./currentlyloading.md)
   The call directory manager is loading the app extension.
-- [CXErrorCodeCallDirectoryManagerError.Code.loadingInterrupted](cxerrorcodecalldirectorymanagererror-swift.struct/code/loadinginterrupted.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.loadingInterrupted](./loadinginterrupted.md)
   The call directory manager was interrupted while loading the app extension.
-- [CXErrorCodeCallDirectoryManagerError.Code.entriesOutOfOrder](cxerrorcodecalldirectorymanagererror-swift.struct/code/entriesoutoforder.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.entriesOutOfOrder](./entriesoutoforder.md)
   The entries in the call directory are out of order.
-- [CXErrorCodeCallDirectoryManagerError.Code.duplicateEntries](cxerrorcodecalldirectorymanagererror-swift.struct/code/duplicateentries.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.duplicateEntries](./duplicateentries.md)
   There are duplicate entries in the call directory.
-- [CXErrorCodeCallDirectoryManagerError.Code.maximumEntriesExceeded](cxerrorcodecalldirectorymanagererror-swift.struct/code/maximumentriesexceeded.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.maximumEntriesExceeded](./maximumentriesexceeded.md)
   There are too many entries in the call directory.
-- [CXErrorCodeCallDirectoryManagerError.Code.extensionDisabled](cxerrorcodecalldirectorymanagererror-swift.struct/code/extensiondisabled.md)
+- [CXErrorCodeCallDirectoryManagerError.Code.extensionDisabled](./extensiondisabled.md)
   The call directory extension isn’t enabled by the system.
 
 

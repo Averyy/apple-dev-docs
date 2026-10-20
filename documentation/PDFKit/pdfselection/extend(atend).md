@@ -1,7 +1,8 @@
 # extend(atEnd:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Extends the selection from its end toward the end of the document.
 
@@ -19,17 +20,22 @@ Extends the selection from its end toward the end of the document.
 func extend(atEnd succeed: Int)
 ```
 
+```objc
+- (void) extendSelectionAtEnd:(NSInteger) succeed;
+```
+
 #### Discussion
 
 The selection may be extended by any amount, up to and including the end of the document.
 
 ## See Also
 
-- [func add(PDFSelection)](pdfselection/add(_:)-8c2r.md)
+### Modifying a Selection
+- [func add(PDFSelection)](./add%28_%29-8c2r.md)
   Adds the specified selection to the receiving selection.
-- [func add([PDFSelection])](pdfselection/add(_:)-3fyld.md)
+- [func add([PDFSelection])](./add%28_%29-3fyld.md)
   Adds the specified array of selections to the receiving selection.
-- [func extend(atStart: Int)](pdfselection/extend(atstart:).md)
+- [func extend(atStart: Int)](./extend%28atstart%29.md)
   Extends the selection from its start toward the beginning of the document.
 
 

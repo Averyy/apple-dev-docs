@@ -1,7 +1,8 @@
 # urlSession(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A task that responds to background URL sessions matching the given identifier.
 
@@ -30,9 +31,10 @@ A background task that you can handle with your app or extension.
 
 ## See Also
 
-- [static var urlSession: BackgroundTask<String, Void>](backgroundtask/urlsession.md)
+### Responding to URL sessions
+- [static var urlSession: BackgroundTask<String, Void>](./urlsession.md)
   A task that responds to background URL sessions.
-- [static func urlSession(matching: (String) -> Bool) -> BackgroundTask<String, Void>](backgroundtask/urlsession(matching:).md)
+- [static func urlSession(matching: (String) -> Bool) -> BackgroundTask<String, Void>](./urlsession%28matching%29.md)
   A task that responds to background URL sessions matching the given predicate.
 
 

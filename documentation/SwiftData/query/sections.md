@@ -1,7 +1,8 @@
 # sections
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sections computed from the current results, grouped by the `sectionBy` key path.
 
@@ -20,6 +21,8 @@ The sections computed from the current results, grouped by the `sectionBy` key p
 @MainActor
 @preconcurrency var sections: SectionedResults<Element, String> { get }
 ```
+
+Available when `Element` conforms to `PersistentModel`.
 
 #### Discussion
 

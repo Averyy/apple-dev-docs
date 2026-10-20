@@ -1,7 +1,8 @@
 # BNNSDirectApplyInTopK(_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies an in-top-k filter directly to an input.
 
@@ -20,9 +21,13 @@ Applies an in-top-k filter directly to an input.
 func BNNSDirectApplyInTopK(_ K: Int, _ axis: Int, _ batch_size: Int, _ input: UnsafePointer<BNNSNDArrayDescriptor>, _ input_batch_stride: Int, _ test_indices: UnsafePointer<BNNSNDArrayDescriptor>, _ test_indices_batch_stride: Int, _ output: UnsafeMutablePointer<BNNSNDArrayDescriptor>, _ output_batch_stride: Int, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> Int32
 ```
 
+```c
+int BNNSDirectApplyInTopK(size_t K, size_t axis, size_t batch_size, const BNNSNDArrayDescriptor *input, size_t input_batch_stride, const BNNSNDArrayDescriptor *test_indices, size_t test_indices_batch_stride, BNNSNDArrayDescriptor *output, size_t output_batch_stride, const BNNSFilterParameters *filter_params);
+```
+
 #### Discussion
 
-Use [`BNNSDirectApplyInTopK(_:_:_:_:_:_:_:_:_:_:)`](bnnsdirectapplyintopk(_:_:_:_:_:_:_:_:_:_:).md) to test whether elements in a tensor are in the top k entries. Note the the number of dimensions for the test indices and output tensors are one less than the input tensor.
+Use [`BNNSDirectApplyInTopK(_:_:_:_:_:_:_:_:_:_:)`](./bnnsdirectapplyintopk%28_,_,_,_,_,_,_,_,_,_%29.md) to test whether elements in a tensor are in the top k entries. Note the the number of dimensions for the test indices and output tensors are one less than the input tensor.
 
 > ❗ **Important**:  The input data type must be `float`, the test indices data type must be `int32`, and the output data type must be `BNNSDataTypeBoolean`.
 
@@ -117,7 +122,8 @@ On return, the output contains `[true, true, false, false]`. The operation calcu
 
 ## See Also
 
-- [func BNNSDirectApplyTopK(Int, Int, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnsdirectapplytopk(_:_:_:_:_:_:_:_:_:_:).md)
+### Top-k layers
+- [func BNNSDirectApplyTopK(Int, Int, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnsdirectapplytopk%28_,_,_,_,_,_,_,_,_,_%29.md)
   Applies a top-k filter directly to an input.
 
 

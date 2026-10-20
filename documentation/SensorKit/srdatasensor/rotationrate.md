@@ -1,7 +1,8 @@
 # rotationRate
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,8 @@
 ```swift
 static var rotationRate: SRRotationRateSensor { get }
 ```
+
+Available when `Self` is `SRRotationRateSensor`.
 
 
 ---

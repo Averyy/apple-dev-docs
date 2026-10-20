@@ -1,7 +1,8 @@
 # MTLMotionBorderMode.vanish
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that specifies that times outside the specified endpoint need to prevent any ray-intersections with the primitive.
 
@@ -19,9 +20,14 @@ A mode that specifies that times outside the specified endpoint need to prevent 
 case vanish
 ```
 
+```c
+MTLMotionBorderModeVanish
+```
+
 ## See Also
 
-- [MTLMotionBorderMode.clamp](mtlmotionbordermode/clamp.md)
+### Specifying motion modes
+- [MTLMotionBorderMode.clamp](./clamp.md)
   A mode that specifies treating times outside the specified endpoint as if they were at the endpoint.
 
 

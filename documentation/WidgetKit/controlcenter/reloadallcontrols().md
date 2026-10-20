@@ -1,7 +1,8 @@
 # reloadAllControls()
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the templates for all configured controls belonging to the containing app.
 

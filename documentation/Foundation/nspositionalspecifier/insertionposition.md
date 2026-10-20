@@ -1,7 +1,8 @@
 # NSPositionalSpecifier.InsertionPosition
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The following constants are defined by `NSPositionalSpecifier` to specify an insertion position.
 
@@ -15,45 +16,49 @@ The following constants are defined by `NSPositionalSpecifier` to specify an ins
 enum InsertionPosition
 ```
 
+```c
+enum NSInsertionPosition : NSUInteger;
+```
+
 #### Overview
 
-These constants are described in [`NSPositionalSpecifier`](nspositionalspecifier.md).
+These constants are described in [`NSPositionalSpecifier`](../nspositionalspecifier.md).
 
 ## Topics
 
 ### Constants
-- [NSPositionalSpecifier.InsertionPosition.after](nspositionalspecifier/insertionposition/after.md)
+- [NSPositionalSpecifier.InsertionPosition.after](./insertionposition/after.md)
   Specifies a position after another object.
-- [NSPositionalSpecifier.InsertionPosition.before](nspositionalspecifier/insertionposition/before.md)
+- [NSPositionalSpecifier.InsertionPosition.before](./insertionposition/before.md)
   Specifies a position before another object.
-- [NSPositionalSpecifier.InsertionPosition.beginning](nspositionalspecifier/insertionposition/beginning.md)
+- [NSPositionalSpecifier.InsertionPosition.beginning](./insertionposition/beginning.md)
   Specifies a position at the beginning of a collection.
-- [NSPositionalSpecifier.InsertionPosition.end](nspositionalspecifier/insertionposition/end.md)
+- [NSPositionalSpecifier.InsertionPosition.end](./insertionposition/end.md)
   Specifies a position at the end of a collection.
-- [NSPositionalSpecifier.InsertionPosition.replace](nspositionalspecifier/insertionposition/replace.md)
+- [NSPositionalSpecifier.InsertionPosition.replace](./insertionposition/replace.md)
   Specifies a position in the place of another object.
-- [NSPositionalSpecifier.InsertionPosition.after](nspositionalspecifier/insertionposition/after.md)
+- [NSPositionalSpecifier.InsertionPosition.after](./insertionposition/after.md)
   Specifies a position after another object.
-- [NSPositionalSpecifier.InsertionPosition.before](nspositionalspecifier/insertionposition/before.md)
+- [NSPositionalSpecifier.InsertionPosition.before](./insertionposition/before.md)
   Specifies a position before another object.
-- [NSPositionalSpecifier.InsertionPosition.beginning](nspositionalspecifier/insertionposition/beginning.md)
+- [NSPositionalSpecifier.InsertionPosition.beginning](./insertionposition/beginning.md)
   Specifies a position at the beginning of a collection.
-- [NSPositionalSpecifier.InsertionPosition.end](nspositionalspecifier/insertionposition/end.md)
+- [NSPositionalSpecifier.InsertionPosition.end](./insertionposition/end.md)
   Specifies a position at the end of a collection.
-- [NSPositionalSpecifier.InsertionPosition.replace](nspositionalspecifier/insertionposition/replace.md)
+- [NSPositionalSpecifier.InsertionPosition.replace](./insertionposition/replace.md)
   Specifies a position in the place of another object.
 ### Initializers
-- [init?(rawValue: UInt)](nspositionalspecifier/insertionposition/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./insertionposition/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

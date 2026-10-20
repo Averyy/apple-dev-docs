@@ -1,7 +1,8 @@
 # GLKFogMode.linear
 
 **Framework**: GLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The fog component is calculated as `(end - distance) / (end - start)` and clamped to the range `[0.0, 1.0]`.
 
@@ -17,11 +18,16 @@ The fog component is calculated as `(end - distance) / (end - start)` and clampe
 case linear
 ```
 
+```c
+GLKFogModeLinear
+```
+
 ## See Also
 
-- [GLKFogMode.exp](glkfogmode/exp.md)
+### Constants
+- [GLKFogMode.exp](./exp.md)
   The fog component is calculated as `exp(-density * distance)` and clamped to the range `[0.0, 1.0]`.
-- [GLKFogMode.exp2](glkfogmode/exp2.md)
+- [GLKFogMode.exp2](./exp2.md)
   The fog component is calculated as `exp(-(density * distance)^2)` and clamped to the range `[0.0, 1.0]`.
 
 

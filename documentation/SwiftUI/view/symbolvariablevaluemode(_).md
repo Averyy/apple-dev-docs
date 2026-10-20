@@ -1,7 +1,8 @@
 # symbolVariableValueMode(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the variable value mode mode for symbol images within this view.
 
@@ -31,11 +32,12 @@ A view that uses the symbol variable value mode you supply.
 
 ## See Also
 
-- [func symbolRenderingMode(SymbolRenderingMode?) -> some View](view/symbolrenderingmode(_:).md)
+### Symbol appearance
+- [func symbolRenderingMode(SymbolRenderingMode?) -> some View](./symbolrenderingmode%28_%29.md)
   Sets the rendering mode for symbol images within this view.
-- [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> some View](view/symbolcolorrenderingmode(_:).md)
+- [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> some View](./symbolcolorrenderingmode%28_%29.md)
   Sets the color rendering mode for symbol images.
-- [func symbolVariant(SymbolVariants) -> some View](view/symbolvariant(_:).md)
+- [func symbolVariant(SymbolVariants) -> some View](./symbolvariant%28_%29.md)
   Makes symbols within the view show a particular variant.
 
 

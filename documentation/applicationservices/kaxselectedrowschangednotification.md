@@ -1,7 +1,8 @@
 # kAXSelectedRowsChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification that the set of selected rows changed.
 
@@ -12,6 +13,10 @@ Notification that the set of selected rows changed.
 
 ```swift
 var kAXSelectedRowsChangedNotification: String { get }
+```
+
+```c
+#define kAXSelectedRowsChangedNotification
 ```
 
 

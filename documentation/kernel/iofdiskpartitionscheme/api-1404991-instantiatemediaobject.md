@@ -1,14 +1,15 @@
 # instantiateMediaObject
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOMedia * instantiateMediaObject(fdisk_part *partition, UInt32 partitionID, UInt32 fdiskBlock);
 ```
 

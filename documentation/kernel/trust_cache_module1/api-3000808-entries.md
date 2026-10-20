@@ -1,14 +1,15 @@
 # entries
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 struct trust_cache_entry1 entries[];
 ```
 

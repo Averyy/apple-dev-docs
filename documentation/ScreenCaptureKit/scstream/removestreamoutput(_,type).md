@@ -1,7 +1,8 @@
 # removeStreamOutput(_:type:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a destination from receiving stream output.
 
@@ -19,6 +20,10 @@ Removes a destination from receiving stream output.
 func removeStreamOutput(_ output: any SCStreamOutput, type: SCStreamOutputType) throws
 ```
 
+```objc
+- (BOOL) removeStreamOutput:(id<SCStreamOutput>) output type:(SCStreamOutputType) type error:(NSError **) error;
+```
+
 ## Parameters
 
 - `output`: The object to remove that conforms to the stream output protocol.
@@ -26,7 +31,8 @@ func removeStreamOutput(_ output: any SCStreamOutput, type: SCStreamOutputType) 
 
 ## See Also
 
-- [func addStreamOutput(any SCStreamOutput, type: SCStreamOutputType, sampleHandlerQueue: dispatch_queue_t?) throws](scstream/addstreamoutput(_:type:samplehandlerqueue:).md)
+### Adding and removing stream output
+- [func addStreamOutput(any SCStreamOutput, type: SCStreamOutputType, sampleHandlerQueue: dispatch_queue_t?) throws](./addstreamoutput%28_,type,samplehandlerqueue%29.md)
   Adds a destination that receives the stream output.
 
 

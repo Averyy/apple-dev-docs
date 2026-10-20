@@ -1,7 +1,8 @@
 # MobileDocumentReaderError
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error type that indicates problems when preparing a mobile document reader session and performing document requests.
 
@@ -18,47 +19,48 @@ enum MobileDocumentReaderError
 
 ## Mentions
 
-- [Adopting the Verifier API in your iPhone app](adopting-the-verifier-api-in-your-iphone-app.md)
+- [Adopting the Verifier API in your iPhone app](./adopting-the-verifier-api-in-your-iphone-app.md)
 
 ## Topics
 
 ### Getting the error code
-- [MobileDocumentReaderError.cancelled](mobiledocumentreadererror/cancelled.md)
+- [MobileDocumentReaderError.cancelled](./mobiledocumentreadererror/cancelled.md)
   An error that indicates the mobile document request was canceled.
-- [MobileDocumentReaderError.invalidRequest](mobiledocumentreadererror/invalidrequest.md)
+- [MobileDocumentReaderError.invalidRequest](./mobiledocumentreadererror/invalidrequest.md)
   An error that indicates the request isn’t valid.
-- [MobileDocumentReaderError.invalidResponse](mobiledocumentreadererror/invalidresponse.md)
+- [MobileDocumentReaderError.invalidResponse](./mobiledocumentreadererror/invalidresponse.md)
   An error that indicates the response isn’t valid.
-- [MobileDocumentReaderError.invalidToken](mobiledocumentreadererror/invalidtoken.md)
+- [MobileDocumentReaderError.invalidToken](./mobiledocumentreadererror/invalidtoken.md)
   An error that indicates the provided reader token for framework’s prepare method isn’t valid.
-- [MobileDocumentReaderError.networkUnavailable](mobiledocumentreadererror/networkunavailable.md)
+- [MobileDocumentReaderError.networkUnavailable](./mobiledocumentreadererror/networkunavailable.md)
   An error that indicates the system can’t reach the network.
-- [MobileDocumentReaderError.notAllowed](mobiledocumentreadererror/notallowed.md)
+- [MobileDocumentReaderError.notAllowed](./mobiledocumentreadererror/notallowed.md)
   An error that indicates the device isn’t allowed to perform the mobile document request.
-- [MobileDocumentReaderError.notSupported](mobiledocumentreadererror/notsupported.md)
+- [MobileDocumentReaderError.notSupported](./mobiledocumentreadererror/notsupported.md)
   An error that indicates mobile document reading isn’t supported on the current device.
-- [MobileDocumentReaderError.serviceUnavailable](mobiledocumentreadererror/serviceunavailable.md)
+- [MobileDocumentReaderError.serviceUnavailable](./mobiledocumentreadererror/serviceunavailable.md)
   An error that occurs when mobile document reader service is unavailable.
-- [MobileDocumentReaderError.sessionExpired](mobiledocumentreadererror/sessionexpired.md)
+- [MobileDocumentReaderError.sessionExpired](./mobiledocumentreadererror/sessionexpired.md)
   An error that indicates the current reader session has expired.
-- [MobileDocumentReaderError.systemBusy](mobiledocumentreadererror/systembusy.md)
+- [MobileDocumentReaderError.systemBusy](./mobiledocumentreadererror/systembusy.md)
   An error that indicates the system is busy.
-- [MobileDocumentReaderError.unknown](mobiledocumentreadererror/unknown.md)
+- [MobileDocumentReaderError.unknown](./mobiledocumentreadererror/unknown.md)
   An error that indicates the framework encountered a problem which the system can’t interpret.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum PaymentCardReaderError](paymentcardreadererror.md)
+### Errors
+- [enum PaymentCardReaderError](./paymentcardreadererror.md)
   An error type that indicates problems with the configuration of the reader.
 
 

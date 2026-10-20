@@ -1,31 +1,33 @@
 # init
 
 **Framework**: PCIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the device.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if initialization was successful, or [`false`](https://developer.apple.com/documentation/swift/false) if it was unsuccessful.
+[`true`](../../Swift/true.md) if initialization was successful, or [`false`](../../Swift/false.md) if it was unsuccessful.
 
 ## See Also
 
-- [Open](iopcidevice/open.md)
+### Running the Service
+- [Open](./open.md)
   Opens a session to the PCI device.
-- [Close](iopcidevice/close.md)
+- [Close](./close.md)
   Closes the session to the PCI device.
-- [free](iopcidevice/free.md)
+- [free](./free.md)
   Performs any final cleanup for the object.
 
 

@@ -1,7 +1,8 @@
 # UIContextMenuConfiguration.ElementOrder
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define the ordering strategy for menu elements in a context menu.
 
@@ -18,31 +19,36 @@ Constants that define the ordering strategy for menu elements in a context menu.
 enum ElementOrder
 ```
 
+```c
+enum UIContextMenuConfigurationElementOrder : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIContextMenuConfiguration.ElementOrder.automatic](uicontextmenuconfiguration/elementorder/automatic.md)
+- [UIContextMenuConfiguration.ElementOrder.automatic](./elementorder/automatic.md)
   A constant that allows the system to choose an ordering strategy according to the current context.
-- [UIContextMenuConfiguration.ElementOrder.priority](uicontextmenuconfiguration/elementorder/priority.md)
+- [UIContextMenuConfiguration.ElementOrder.priority](./elementorder/priority.md)
   A constant that displays menu elements according to their priority.
-- [UIContextMenuConfiguration.ElementOrder.fixed](uicontextmenuconfiguration/elementorder/fixed.md)
+- [UIContextMenuConfiguration.ElementOrder.fixed](./elementorder/fixed.md)
   A constant that displays menu elements in a fixed order.
 ### Initializers
-- [init?(rawValue: Int)](uicontextmenuconfiguration/elementorder/init(rawvalue:).md)
+- [init?(rawValue: Int)](./elementorder/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder](uicontextmenuconfiguration/preferredmenuelementorder.md)
+### Specifying the order of menu elements
+- [var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder](./preferredmenuelementorder.md)
   The preferred menu-element ordering strategy for the menu.
 
 

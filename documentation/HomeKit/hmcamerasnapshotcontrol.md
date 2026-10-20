@@ -1,7 +1,8 @@
 # HMCameraSnapshotControl
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that can take an image snapshot from a camera.
 
@@ -19,40 +20,45 @@ An object that can take an image snapshot from a camera.
 class HMCameraSnapshotControl
 ```
 
+```objc
+@interface HMCameraSnapshotControl : HMCameraControl
+```
+
 ## Topics
 
 ### Taking snapshots
-- [func takeSnapshot()](hmcamerasnapshotcontrol/takesnapshot.md)
+- [func takeSnapshot()](./hmcamerasnapshotcontrol/takesnapshot%28%29.md)
   Takes an image snapshot.
-- [var mostRecentSnapshot: HMCameraSnapshot?](hmcamerasnapshotcontrol/mostrecentsnapshot.md)
+- [var mostRecentSnapshot: HMCameraSnapshot?](./hmcamerasnapshotcontrol/mostrecentsnapshot.md)
   The camera’s most recent snapshot.
-- [class HMCameraSnapshot](hmcamerasnapshot.md)
+- [class HMCameraSnapshot](./hmcamerasnapshot.md)
   An object that represents a snapshot taken from a camera.
 ### Observing snapshot activity
-- [var delegate: (any HMCameraSnapshotControlDelegate)?](hmcamerasnapshotcontrol/delegate.md)
+- [var delegate: (any HMCameraSnapshotControlDelegate)?](./hmcamerasnapshotcontrol/delegate.md)
   Delegate that receives updates as the camera takes snapshots.
-- [protocol HMCameraSnapshotControlDelegate](hmcamerasnapshotcontroldelegate.md)
+- [protocol HMCameraSnapshotControlDelegate](./hmcamerasnapshotcontroldelegate.md)
   A set of methods used to observe the camera’s snapshot activity.
 ### Initializers
-- [init()](hmcamerasnapshotcontrol/init.md)
+- [init()](./hmcamerasnapshotcontrol/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [HMCameraControl](hmcameracontrol.md)
+- [HMCameraControl](./hmcameracontrol.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var snapshotControl: HMCameraSnapshotControl?](hmcameraprofile/snapshotcontrol.md)
+### Capturing snapshots
+- [var snapshotControl: HMCameraSnapshotControl?](./hmcameraprofile/snapshotcontrol.md)
   Controls the camera’s snapshot function.
 
 

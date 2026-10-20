@@ -1,7 +1,8 @@
 # batchRepresentation()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func batchRepresentation() -> [MPSImage]
+```
+
+```objc
+- (MPSImageBatch *) batchRepresentation;
 ```
 
 

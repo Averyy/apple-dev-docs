@@ -1,7 +1,8 @@
 # Automator
 
 **Framework**: Automator  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Develop actions that the Automator app can load and run. View, edit, and run Automator workflows in your app.
 
@@ -16,32 +17,32 @@ The Automator framework supports the development of actions for the Automator ap
 ## Topics
 
 ### Actions
-- [class AMBundleAction](ambundleaction.md)
+- [class AMBundleAction](./ambundleaction.md)
   An object that represents an Automator action that’s a loadable bundle.
-- [class AMShellScriptAction](amshellscriptaction.md)
+- [class AMShellScriptAction](./amshellscriptaction.md)
   An object that represents Automator actions whose runtime behavior is driven by a shell script or by a Perl or Python script.
-- [class AMAction](amaction.md)
+- [class AMAction](./amaction.md)
   An abstract class that defines the interface and general characteristics of Automator actions.
 ### Workflows
-- [class AMWorkflow](amworkflow.md)
+- [class AMWorkflow](./amworkflow.md)
   An object that lets you use an Automator workflow in your app.
-- [class AMWorkflowController](amworkflowcontroller.md)
+- [class AMWorkflowController](./amworkflowcontroller.md)
   An object that lets you manage an Automator workflow in your app.
-- [class AMWorkflowView](amworkflowview.md)
+- [class AMWorkflowView](./amworkflowview.md)
   An object that lets you view and edit Automator workflows in your app.
-- [class AMWorkspace](amworkspace.md)
+- [class AMWorkspace](./amworkspace.md)
   A workspace for running an Automator workflow.
 ### Errors
-- [var AMAutomatorErrorDomain: String](amautomatorerrordomain.md)
+- [var AMAutomatorErrorDomain: String](./amautomatorerrordomain.md)
   A string that identifies the Automator error domain.
-- [var AMActionErrorKey: String](amactionerrorkey.md)
+- [var AMActionErrorKey: String](./amactionerrorkey.md)
   A key to retrieve the action that caused an error.
-- [struct AMError](amerror.md)
+- [struct AMError](./amerror.md)
   An Automator error.
-- [AMError.Code](amerror/code.md)
+- [AMError.Code](./amerror/code.md)
   Automator error codes.
 ### Deprecated
-- [class AMAppleScriptAction](amapplescriptaction.md)
+- [class AMAppleScriptAction](./amapplescriptaction.md)
   An object that represents Automator actions whose runtime behavior is driven by an AppleScript script.
 
 

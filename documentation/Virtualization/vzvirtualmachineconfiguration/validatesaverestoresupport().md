@@ -1,7 +1,8 @@
 # validateSaveRestoreSupport()
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the framework can save or restore the VM’s current configuration.
 
@@ -14,16 +15,21 @@ Determines whether the framework can save or restore the VM’s current configur
 func validateSaveRestoreSupport() throws
 ```
 
+```objc
+- (BOOL) validateSaveRestoreSupportWithError:(NSError **) error;
+```
+
 #### Discussion
 
 Use this method to verify that a virtual machine with this configuration is savable.
 
 - Not all configuration options can be safely saved and restored from the configuration file on disk.
-- If this method returns `false`, the caller should expect future calls to [`saveMachineStateTo(url:completionHandler:)`](vzvirtualmachine/savemachinestateto(url:completionhandler:).md) to fail.
+- If this method returns `false`, the caller should expect future calls to [`saveMachineStateTo(url:completionHandler:)`](../vzvirtualmachine/savemachinestateto%28url,completionhandler%29.md) to fail.
 
 ## See Also
 
-- [func validate() throws](vzvirtualmachineconfiguration/validate.md)
+### Validating the configuration
+- [func validate() throws](./validate%28%29.md)
   Validates the current configuration settings and reports any issues that might prevent the successful initialization of the VM.
 
 

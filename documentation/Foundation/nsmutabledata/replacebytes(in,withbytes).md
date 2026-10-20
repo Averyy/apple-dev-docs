@@ -1,7 +1,8 @@
 # replaceBytes(in:withBytes:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces with a given set of bytes a given range within the contents of the receiver.
 
@@ -20,11 +21,15 @@ Replaces with a given set of bytes a given range within the contents of the rece
 func replaceBytes(in range: NSRange, withBytes bytes: UnsafeRawPointer)
 ```
 
+```objc
+- (void) replaceBytesInRange:(NSRange) range withBytes:(const void *) bytes;
+```
+
 #### Discussion
 
 If the location of `range` isn’t within the receiver’s range of bytes, an `NSRangeException` is raised. The receiver is resized to accommodate the new bytes, if necessary.
 
-A sample using this method is given in [`Working With Mutable Binary Data`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/BinaryData/Tasks/WorkingMutableData.html#//apple_ref/doc/uid/20002150).
+A sample using this method is given in [Working With Mutable Binary Data](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/BinaryData/Tasks/WorkingMutableData.html#//apple_ref/doc/uid/20002150).
 
 ## Parameters
 
@@ -33,11 +38,12 @@ A sample using this method is given in [`Working With Mutable Binary Data`](http
 
 ## See Also
 
-- [func replaceBytes(in: NSRange, withBytes: UnsafeRawPointer?, length: Int)](nsmutabledata/replacebytes(in:withbytes:length:).md)
+### Modifying Bytes
+- [func replaceBytes(in: NSRange, withBytes: UnsafeRawPointer?, length: Int)](./replacebytes%28in,withbytes,length%29.md)
   Replaces with a given set of bytes a given range within the contents of the receiver.
-- [func resetBytes(in: NSRange)](nsmutabledata/resetbytes(in:).md)
+- [func resetBytes(in: NSRange)](./resetbytes%28in%29.md)
   Replaces with zeroes the contents of the receiver in a given range.
-- [func setData(Data)](nsmutabledata/setdata(_:).md)
+- [func setData(Data)](./setdata%28_%29.md)
   Replaces the entire contents of the receiver with the contents of another data object.
 
 

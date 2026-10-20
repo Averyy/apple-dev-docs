@@ -1,16 +1,17 @@
 # copyBytes(to:from:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,8 +21,9 @@ func copyBytes<DestinationType>(to buffer: UnsafeMutableBufferPointer<Destinatio
 
 ## See Also
 
-- [func copyBytes(to: UnsafeMutableRawBufferPointer, count: Int)](dispatchdata/copybytes(to:count:)-3j0qx.md)
-- [func copyBytes(to: UnsafeMutableRawBufferPointer, from: Range<DispatchData.Index>)](dispatchdata/copybytes(to:from:)-60yai.md)
+### Copying Bytes
+- [func copyBytes(to: UnsafeMutableRawBufferPointer, count: Int)](./copybytes%28to,count%29-3j0qx.md)
+- [func copyBytes(to: UnsafeMutableRawBufferPointer, from: Range<DispatchData.Index>)](./copybytes%28to,from%29-60yai.md)
 
 
 ---

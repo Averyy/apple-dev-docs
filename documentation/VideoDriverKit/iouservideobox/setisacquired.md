@@ -1,7 +1,8 @@
 # SetIsAcquired
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value indicating the box’s acquisition state.
 
@@ -10,7 +11,7 @@ Sets the value indicating the box’s acquisition state.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetIsAcquired(bool in_is_acquired);
 ```
 
@@ -24,17 +25,18 @@ The object sends a notification to the host to update the object state on succes
 
 ## See Also
 
-- [HandleChangeAcquireBox](iouservideobox/handlechangeacquirebox.md)
+### Managing acquirability
+- [HandleChangeAcquireBox](./handlechangeacquirebox.md)
   Called when host is attempting to the change the box acquisition
-- [IsAcquired](iouservideobox/isacquired.md)
+- [IsAcquired](./isacquired.md)
   A Boolean value indicating if box is acquired.
-- [SetIsAcquirable](iouservideobox/setisacquirable.md)
+- [SetIsAcquirable](./setisacquirable.md)
   Sets the value for the box’s acquirability.
-- [IsAcquirable](iouservideobox/isacquirable.md)
+- [IsAcquirable](./isacquirable.md)
   A Boolean value indicating if box can be acquired.
-- [SetAcquisitionFailure](iouservideobox/setacquisitionfailure.md)
+- [SetAcquisitionFailure](./setacquisitionfailure.md)
   Sets the error for the box’s acquisition failure.
-- [GetAcquisitionFailure](iouservideobox/getacquisitionfailure.md)
+- [GetAcquisitionFailure](./getacquisitionfailure.md)
   Gets the acquisition failure of the video box.
 
 

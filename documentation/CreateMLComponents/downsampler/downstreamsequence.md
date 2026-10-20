@@ -1,7 +1,8 @@
 # Downsampler.DownStreamSequence
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An async sequence of down stream elements.
 
@@ -20,24 +21,27 @@ An async sequence of down stream elements.
 struct DownStreamSequence
 ```
 
+Available when `Input` conforms to `Sendable`.
+
 ## Topics
 
 ### Getting the count
-- [var count: Int?](downsampler/downstreamsequence/count.md)
+- [var count: Int?](./downstreamsequence/count.md)
   The count of elements.
 ### Creating an iterator
-- [Downsampler.DownStreamSequence.Iterator](downsampler/downstreamsequence/iterator.md)
+- [Downsampler.DownStreamSequence.Iterator](./downstreamsequence/iterator.md)
   An async iterator of down stream sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [TemporalSequence](temporalsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [TemporalSequence](../temporalsequence.md)
 
 ## See Also
 
-- [func applied<S>(to: S, eventHandler: EventHandler?) throws -> Downsampler<Input>.DownStreamSequence](downsampler/applied(to:eventhandler:).md)
+### Performing the transformation
+- [func applied<S>(to: S, eventHandler: EventHandler?) throws -> Downsampler<Input>.DownStreamSequence](./applied%28to,eventhandler%29.md)
   Down samples the input sequence
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Asks the delegate for items that represent the objects to be shared.
@@ -16,9 +17,13 @@ Asks the delegate for items that represent the objects to be shared.
 func items(for pickerTouchBarItem: NSSharingServicePickerTouchBarItem) -> [Any]
 ```
 
+```objc
+- (NSArray *) itemsForSharingServicePickerTouchBarItem:(NSSharingServicePickerTouchBarItem *) pickerTouchBarItem;
+```
+
 #### Return Value
 
-An array of items that represents the objects to be shared. Each element of the array must either conform to the [`NSPasteboardWriting`](nspasteboardwriting.md) protocol, or be an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider).
+An array of items that represents the objects to be shared. Each element of the array must either conform to the [`NSPasteboardWriting`](../nspasteboardwriting.md) protocol, or be an [`NSItemProvider`](../../Foundation/nsitemprovider.md).
 
 ## Parameters
 

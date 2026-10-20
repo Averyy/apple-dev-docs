@@ -1,7 +1,8 @@
 # session(_:didUpdateAlgorithmConvergence:for:)
 
 **Framework**: Nearby Interaction  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides recommended actions the user can take to facilitate the framework’s Camera Assistance.
 
@@ -17,9 +18,13 @@ Provides recommended actions the user can take to facilitate the framework’s C
 optional func session(_ session: NISession, didUpdateAlgorithmConvergence convergence: NIAlgorithmConvergence, for object: NINearbyObject?)
 ```
 
+```objc
+- (void) session:(NISession *) session didUpdateAlgorithmConvergence:(NIAlgorithmConvergence *) convergence forObject:(NINearbyObject *) object;
+```
+
 #### Discussion
 
-The framework invokes this callback when [`isCameraAssistanceEnabled`](ninearbypeerconfiguration/iscameraassistanceenabled.md) is `true` to notify the app of the current convergence state and user-coaching recommendations.
+The framework invokes this callback when [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md) is `true` to notify the app of the current convergence state and user-coaching recommendations.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ The framework invokes this callback when [`isCameraAssistanceEnabled`](ninearbyp
 
 ## See Also
 
-- [enum NIAlgorithmConvergenceStatus](nialgorithmconvergencestatus-2fnve.md)
+### Coaching the user
+- [enum NIAlgorithmConvergenceStatus](../nialgorithmconvergencestatus-2fnve.md)
   The possible states of Camera Assistance.
-- [NIAlgorithmConvergenceStatus.Reason](nialgorithmconvergencestatus-2fnve/reason.md)
+- [NIAlgorithmConvergenceStatus.Reason](../nialgorithmconvergencestatus-2fnve/reason.md)
   The possible reasons for the Camera Assistance status.
 
 

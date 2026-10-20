@@ -1,7 +1,8 @@
 # alertBody
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text of the alert message.
 
@@ -10,7 +11,7 @@ The text of the alert message.
 
 ## Declaration
 
-```swift
+```
 attribute String alertBody;
 ```
 

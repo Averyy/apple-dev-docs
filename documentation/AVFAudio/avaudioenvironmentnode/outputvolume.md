@@ -1,7 +1,8 @@
 # outputVolume
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mixer’s output volume.
 
@@ -19,11 +20,16 @@ The mixer’s output volume.
 var outputVolume: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float outputVolume;
+```
+
 ## See Also
 
-- [var outputType: AVAudioEnvironmentOutputType](avaudioenvironmentnode/outputtype.md)
+### Configuring the output
+- [var outputType: AVAudioEnvironmentOutputType](./outputtype.md)
   The type of output hardware.
-- [enum AVAudioEnvironmentOutputType](avaudioenvironmentoutputtype.md)
+- [enum AVAudioEnvironmentOutputType](../avaudioenvironmentoutputtype.md)
   The output types for using with the automatic 3D mixing rendering algorithm.
 
 

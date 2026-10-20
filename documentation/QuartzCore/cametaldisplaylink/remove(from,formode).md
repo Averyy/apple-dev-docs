@@ -1,7 +1,8 @@
 # remove(from:forMode:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a mode’s display link from a run loop.
 
@@ -19,6 +20,10 @@ Removes a mode’s display link from a run loop.
 func remove(from runloop: RunLoop, forMode mode: RunLoop.Mode)
 ```
 
+```objc
+- (void) removeFromRunLoop:(NSRunLoop *) runloop forMode:(NSRunLoopMode) mode;
+```
+
 #### Discussion
 
 The run loop releases the display link if it no longer associates with any run modes.
@@ -30,7 +35,8 @@ The run loop releases the display link if it no longer associates with any run m
 
 ## See Also
 
-- [func invalidate()](cametaldisplaylink/invalidate.md)
+### Deregistering for callbacks
+- [func invalidate()](./invalidate%28%29.md)
   Removes the display link from all run loops for all modes.
 
 

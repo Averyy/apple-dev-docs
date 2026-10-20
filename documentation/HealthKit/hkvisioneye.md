@@ -1,7 +1,8 @@
 # HKVisionEye
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that specifies the eye for a vision prescription.
 
@@ -19,43 +20,48 @@ A value that specifies the eye for a vision prescription.
 enum HKVisionEye
 ```
 
+```c
+enum HKVisionEye : NSInteger;
+```
+
 ## Topics
 
 ### Eyes
-- [HKVisionEye.left](hkvisioneye/left.md)
+- [HKVisionEye.left](./hkvisioneye/left.md)
   The left eye.
-- [HKVisionEye.right](hkvisioneye/right.md)
+- [HKVisionEye.right](./hkvisioneye/right.md)
   The right eye.
 ### Initializers
-- [init?(rawValue: Int)](hkvisioneye/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkvisioneye/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var eye: HKVisionEye](hkvisionprism/eye.md)
+### Accessing lens specification data
+- [var eye: HKVisionEye](./hkvisionprism/eye.md)
   A value indicating which eye the correction applies to.
-- [var amount: HKQuantity](hkvisionprism/amount.md)
+- [var amount: HKQuantity](./hkvisionprism/amount.md)
   The strength of the correction.
-- [var angle: HKQuantity](hkvisionprism/angle.md)
+- [var angle: HKQuantity](./hkvisionprism/angle.md)
   The orientation of the adjustment.
-- [var horizontalAmount: HKQuantity](hkvisionprism/horizontalamount.md)
+- [var horizontalAmount: HKQuantity](./hkvisionprism/horizontalamount.md)
   The strength of the horizontal correction.
-- [var horizontalBase: HKPrismBase](hkvisionprism/horizontalbase.md)
+- [var horizontalBase: HKPrismBase](./hkvisionprism/horizontalbase.md)
   The orientation of the horizontal portion of the correction.
-- [var verticalAmount: HKQuantity](hkvisionprism/verticalamount.md)
+- [var verticalAmount: HKQuantity](./hkvisionprism/verticalamount.md)
   The strength of the vertical correction.
-- [var verticalBase: HKPrismBase](hkvisionprism/verticalbase.md)
+- [var verticalBase: HKPrismBase](./hkvisionprism/verticalbase.md)
   The orientation of the vertical portion of the correction.
-- [enum HKPrismBase](hkprismbase.md)
+- [enum HKPrismBase](./hkprismbase.md)
   The orientation of the prism correction, represented by the location of the prism’s base (the thickest part of the prism).
 
 

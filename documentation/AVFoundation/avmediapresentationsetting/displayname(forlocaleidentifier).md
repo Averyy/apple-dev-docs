@@ -1,7 +1,8 @@
 # displayName(forLocaleIdentifier:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the display name for the selectable setting that best matches the specified locale identifier.
 
@@ -20,9 +21,14 @@ Returns the display name for the selectable setting that best matches the specif
 func displayName(forLocaleIdentifier localeIdentifier: String) -> String
 ```
 
+```objc
+- (NSString *) displayNameForLocaleIdentifier:(NSString *) localeIdentifier;
+```
+
 ## See Also
 
-- [var mediaCharacteristic: AVMediaCharacteristic](avmediapresentationsetting/mediacharacteristic.md)
+### Identifying the setting
+- [var mediaCharacteristic: AVMediaCharacteristic](./mediacharacteristic.md)
   Provides the media characteristic that corresponds to the selectable setting.
 
 

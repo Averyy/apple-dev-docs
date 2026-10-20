@@ -1,7 +1,8 @@
 # init(code:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a one-time passcode (OTP) credential.
 
@@ -16,6 +17,10 @@ Creates a one-time passcode (OTP) credential.
 
 ```swift
 init(code: String)
+```
+
+```objc
+- (instancetype) initWithCode:(NSString *) code;
 ```
 
 ## Parameters

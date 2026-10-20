@@ -1,7 +1,8 @@
 # kMDItemAuthorAddresses
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 This attribute indicates the author addresses of the document. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ This attribute indicates the author addresses of the document. A CFArray of CFSt
 
 ```swift
 let kMDItemAuthorAddresses: CFString!
+```
+
+```c
+const CFStringRef kMDItemAuthorAddresses;
 ```
 
 

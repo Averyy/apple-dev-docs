@@ -1,18 +1,19 @@
 # Providing access to directories
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Use a document picker to access the content of a directory outside your app’s container.
 
 #### Overview
 
-In iOS 12 and earlier, users can open and interact with files outside the app’s container. The [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) and [`UIDocumentPickerViewController`](uidocumentpickerviewcontroller.md) provide access to files in the system’s local file provider, in iCloud, or in third-party services that use a File Provider extension. Users can select multiple files at a time — but they need to select each file individually.
+In iOS 12 and earlier, users can open and interact with files outside the app’s container. The [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) and [`UIDocumentPickerViewController`](./uidocumentpickerviewcontroller.md) provide access to files in the system’s local file provider, in iCloud, or in third-party services that use a File Provider extension. Users can select multiple files at a time — but they need to select each file individually.
 
-In iOS 13, users can select a directory from any of the available file providers using a [`UIDocumentPickerViewController`](uidocumentpickerviewcontroller.md). The document picker returns a *security-scoped URL* for the directory that permits your app to access content outside its container. In this case, the URL lets your app recursively access the directory and all of its contents, which includes accessing any new items you add to the directory in the future. Your app can even save a bookmark for this URL, letting it access the directory the next time it launches.
+In iOS 13, users can select a directory from any of the available file providers using a [`UIDocumentPickerViewController`](./uidocumentpickerviewcontroller.md). The document picker returns a *security-scoped URL* for the directory that permits your app to access content outside its container. In this case, the URL lets your app recursively access the directory and all of its contents, which includes accessing any new items you add to the directory in the future. Your app can even save a bookmark for this URL, letting it access the directory the next time it launches.
 
-##### Ask the User to Select a Directory
+##### Ask the user to select a directory
 
-To prompt the user to select a directory, create a document picker and set the content type to open to the type [`folder`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/folder). Then set the document picker’s delegate and present it.
+To prompt the user to select a directory, create a document picker and set the content type to open to the type [`folder`](../UniformTypeIdentifiers/uttype-swift.struct/folder.md). Then set the document picker’s delegate and present it.
 
 ```swift
 // Create a document picker for directories.
@@ -27,25 +28,25 @@ documentPicker.directoryURL = startingDirectory
 present(documentPicker, animated: true, completion: nil)
 ```
 
-As soon as you call the [`present(_:animated:completion:)`](uiviewcontroller/present(_:animated:completion:).md) method, the system displays the document picker to the user. If you specify the [`directoryURL`](uidocumentpickerviewcontroller/directoryurl.md) property, the document picker starts with the selected directory. Otherwise, it starts with the most recent directory the user chose.
+As soon as you call the [`present(_:animated:completion:)`](./uiviewcontroller/present%28_,animated,completion%29.md) method, the system displays the document picker to the user. If you specify the [`directoryURL`](./uidocumentpickerviewcontroller/directoryurl.md) property, the document picker starts with the selected directory. Otherwise, it starts with the most recent directory the user chose.
 
-![A screenshot of the document picker with the TextEdit directory in a selected state.](/images/com.apple.uikit/media-3332331@2x.png)
+![A screenshot of the document picker with the TextEdit directory in a selected state.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3332331@2x.png)
 
-After the user taps Done, the system calls your delegate’s [`documentPicker(_:didPickDocumentsAt:)`](uidocumentpickerdelegate/documentpicker(_:didpickdocumentsat:).md) method, passing an array of security-scoped URLs for the user’s selected directories. Use a security-scoped URL to enumerate the content of the directory and any of its subdirectories, or to add, remove, or modify any files.
+After the user taps Done, the system calls your delegate’s [`documentPicker(_:didPickDocumentsAt:)`](./uidocumentpickerdelegate/documentpicker%28_,didpickdocumentsat%29.md) method, passing an array of security-scoped URLs for the user’s selected directories. Use a security-scoped URL to enumerate the content of the directory and any of its subdirectories, or to add, remove, or modify any files.
 
-If the user taps Cancel, the system calls [`documentPickerWasCancelled(_:)`](uidocumentpickerdelegate/documentpickerwascancelled(_:).md) instead.
+If the user taps Cancel, the system calls [`documentPickerWasCancelled(_:)`](./uidocumentpickerdelegate/documentpickerwascancelled%28_%29.md) instead.
 
-> **Note**:  The [`UIDocumentBrowserViewController`](uidocumentbrowserviewcontroller.md) doesn’t support the [`folder`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/folder) document type. To provide access to directories, use the [`UIDocumentPickerViewController`](uidocumentpickerviewcontroller.md) instead.
+> **Note**:  The [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) doesn’t support the [`folder`](../UniformTypeIdentifiers/uttype-swift.struct/folder.md) document type. To provide access to directories, use the [`UIDocumentPickerViewController`](./uidocumentpickerviewcontroller.md) instead.
 
-##### Access the Directorys Content
+##### Access the directory’s content
 
 When the user selects a directory in the document picker, the system gives your app permission to access that directory and all of its contents. The document picker returns a security-scoped URL for the directory. When you use one of these URLs to enumerate the directory’s content, the resulting URLs are also security-scoped. You can save a security-scoped URL as a bookmark and later resolve it back into a security-scoped URL.
 
 To access the content of a security-scoped URL, you must do the following:
 
-1. Before accessing the URL, call [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource()).
+1. Before accessing the URL, call [`startAccessingSecurityScopedResource()`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md).
 2. Use a file coordinator to perform read or write operations on the URL’s contents.
-3. After you access the URL, call [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/stopaccessingsecurityscopedresource()).
+3. After you access the URL, call [`stopAccessingSecurityScopedResource()`](../Foundation/nsurl/stopaccessingsecurityscopedresource%28%29.md).
 
 ```swift
 func documentPicker(_ controller:UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
@@ -89,9 +90,9 @@ func documentPicker(_ controller:UIDocumentPickerViewController, didPickDocument
 }
 ```
 
-##### Save the Url As a Bookmark
+##### Save the URL as a bookmark
 
-To access the URL in the future, save the URL as a [`minimalBookmark`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkcreationoptions/minimalbookmark) using its [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](https://developer.apple.com/documentation/foundation/nsurl/bookmarkdata(options:includingresourcevaluesforkeys:relativeto:)) method.
+To access the URL in the future, save the URL as a [`minimalBookmark`](../Foundation/nsurl/bookmarkcreationoptions/minimalbookmark.md) using its [`bookmarkData(options:includingResourceValuesForKeys:relativeTo:)`](../Foundation/nsurl/bookmarkdata%28options,includingresourcevaluesforkeys,relativeto%29.md) method.
 
 ```swift
 do {
@@ -133,29 +134,30 @@ catch let error {
 }
 ```
 
-##### Respond to Permission Changes
+##### Respond to permission changes
 
 Users always have complete control over the apps that can access directories. After selecting a directory from the document picker, your app appears in Settings > Privacy > Files and Folders. This page lists all the apps that have permission to access shared directories, and users can revoke or restore permission for each app at any time.
 
-This means your app must be ready to handle failures when accessing a directory’s content. Calls to the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/url/startaccessingsecurityscopedresource()) method can fail, as well as any attempts to read or write to the URL. This is especially true when saving and resolving bookmarks to security-scoped URLs because using saved bookmarks can greatly increase the amount of time users have to possibly change your app’s permissions.
+This means your app must be ready to handle failures when accessing a directory’s content. Calls to the [`startAccessingSecurityScopedResource()`](../Foundation/url/startaccessingsecurityscopedresource%28%29.md) method can fail, as well as any attempts to read or write to the URL. This is especially true when saving and resolving bookmarks to security-scoped URLs because using saved bookmarks can greatly increase the amount of time users have to possibly change your app’s permissions.
 
 ## See Also
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+### Documents and directories
+- [Customizing a document-based app’s launch experience](./customizing-a-document-based-app-s-launch-experience.md)
   Add unique elements to your app’s document launch scene.
-- [Adding a document browser to your app](adding-a-document-browser-to-your-app.md)
+- [Adding a document browser to your app](./adding-a-document-browser-to-your-app.md)
   Give people access to their local or remote documents from within your app.
-- [Building an app with a document browser](building-an-app-with-a-document-browser.md)
+- [Building an app with a document browser](./building-an-app-with-a-document-browser.md)
   Provide access to on-device and cloud files by adding a document browser to your app.
-- [Building a document browser app for custom file formats](building-a-document-browser-app-for-custom-file-formats.md)
+- [Building a document browser app for custom file formats](./building-a-document-browser-app-for-custom-file-formats.md)
   Implement a custom document file format to manage user interactions with files on different cloud storage providers.
-- [class UIDocumentViewController](uidocumentviewcontroller.md)
+- [class UIDocumentViewController](./uidocumentviewcontroller.md)
   A view controller that manages and presents a document stored locally or in the cloud.
-- [class UIDocumentBrowserViewController](uidocumentbrowserviewcontroller.md)
+- [class UIDocumentBrowserViewController](./uidocumentbrowserviewcontroller.md)
   A view controller for browsing and performing actions on documents that you store locally and in the cloud.
-- [class UIDocumentPickerViewController](uidocumentpickerviewcontroller.md)
+- [class UIDocumentPickerViewController](./uidocumentpickerviewcontroller.md)
   A view controller that provides access to documents or destinations outside your app’s sandbox.
-- [class UIDocumentInteractionController](uidocumentinteractioncontroller.md)
+- [class UIDocumentInteractionController](./uidocumentinteractioncontroller.md)
   A view controller that previews, opens, or prints files with a file format that your app can’t handle directly.
 
 

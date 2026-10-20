@@ -1,7 +1,8 @@
 # canExportSlideshowItem(at:toApplication:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports whether the export button should be enabled for a slideshow item.
 
@@ -14,17 +15,22 @@ Reports whether the export button should be enabled for a slideshow item.
 optional func canExportSlideshowItem(at index: Int, toApplication applicationBundleIdentifier: String!) -> Bool
 ```
 
+```objc
+- (BOOL) canExportSlideshowItemAtIndex:(NSUInteger) index toApplication:(NSString *) applicationBundleIdentifier;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the export button should be enabled for an item; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the export button should be enabled for an item; otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func numberOfSlideshowItems() -> Int](ikslideshowdatasource/numberofslideshowitems.md)
+### Providing Slideshow Information
+- [func numberOfSlideshowItems() -> Int](./numberofslideshowitems%28%29.md)
   Returns the number of items in a slideshow.
-- [func slideshowItem(at: Int) -> Any!](ikslideshowdatasource/slideshowitem(at:).md)
+- [func slideshowItem(at: Int) -> Any!](./slideshowitem%28at%29.md)
   Returns the item for a given index
-- [func nameOfSlideshowItem(at: Int) -> String!](ikslideshowdatasource/nameofslideshowitem(at:).md)
+- [func nameOfSlideshowItem(at: Int) -> String!](./nameofslideshowitem%28at%29.md)
   Returns the display name for item at the specified index.
 
 

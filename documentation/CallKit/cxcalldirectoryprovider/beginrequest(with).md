@@ -1,7 +1,8 @@
 # beginRequest(with:)
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the extension to prepare for a host app’s request.
 
@@ -17,9 +18,13 @@ Tells the extension to prepare for a host app’s request.
 func beginRequest(with context: CXCallDirectoryExtensionContext)
 ```
 
+```objc
+- (void) beginRequestWithExtensionContext:(CXCallDirectoryExtensionContext *) context;
+```
+
 ## Mentions
 
-- [Identifying and blocking calls](identifying-and-blocking-calls.md)
+- [Identifying and blocking calls](../identifying-and-blocking-calls.md)
 
 #### Discussion
 

@@ -1,7 +1,8 @@
 # Search for places that meet specific criteria to autocomplete a place search
 
 **Framework**: Apple Maps Server API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Find results that you can use to autocomplete searches.
 
@@ -14,7 +15,7 @@ Find results that you can use to autocomplete searches.
 
 **Request**:
 
-```None
+```
 curl -si -H "Authorization: Bearer <maps_access_token>" \
 "https://maps-api.apple.com/v1/searchAutocomplete?q=museum&searchLocation=37.7753881,-122.3931773"
 ```
@@ -393,42 +394,71 @@ curl -si -H "Authorization: Bearer <maps_access_token>" \
 
 ## Parameters
 
+### Query Parameters
+
 - `q` (string) *(required)*: The query to autocomplete. For example, `q=eiffel`.
-- `excludePoiCategories` ([PoiCategory]): A comma-separated list of strings that describes the points of interest to exclude from the search results. For example, `excludePoiCategories=Restaurant,Cafe`. See [`PoiCategory`](poicategory.md) for a complete list of possible values.
-- `includePoiCategories` ([PoiCategory]): A comma-separated list of strings that describes the points of interest to include in the search results. For example, `includePoiCategories=Restaurant,Cafe`. See [`PoiCategory`](poicategory.md) for a complete list of possible values.
+- `excludePoiCategories` ([PoiCategory]): A comma-separated list of strings that describes the points of interest to exclude from the search results. For example, `excludePoiCategories=Restaurant,Cafe`.
+
+  See [`PoiCategory`](./poicategory.md) for a complete list of possible values.
+- `includePoiCategories` ([PoiCategory]): A comma-separated list of strings that describes the points of interest to include in the search results. For example, `includePoiCategories=Restaurant,Cafe`.
+
+  See [`PoiCategory`](./poicategory.md) for a complete list of possible values.
 - `lang` (Lang): The language the server uses when returning the response, specified using a BCP 47 language code. For example, for English, use `lang=en-US`.
-- `limitToCountries` ([string]): A comma-separated list of two-letter ISO 3166-1 codes of the countries to limit the results to. For example, `limitToCountries=US,CA` limits the search to the United States and Canada. If you specify two or more countries, the results reflect the best available results for some or all of the countries rather than everything related to the query for those countries.
+
+  **Default**: `en-US`
+- `limitToCountries` ([string]): A comma-separated list of two-letter ISO 3166-1 codes of the countries to limit the results to. For example, `limitToCountries=US,CA` limits the search to the United States and Canada.
+
+  If you specify two or more countries, the results reflect the best available results for some or all of the countries rather than everything related to the query for those countries.
 - `resultTypeFilter` ([SearchACResultType]): A comma-separated list of strings that describes the kind of result types to include in the response. For example, `resultTypeFilter=Poi`.
-- `searchLocation` (SearchLocation): A location the app defines as a hint. Specify the location as a comma-separated string containing the latitude and longitude. For example, `searchLocation=37.78,-122.42`. If you don’t provide a `searchLocation`, the server uses `userLocation` and `searchRegion` as fallback hints.
+- `searchLocation` (SearchLocation): A location the app defines as a hint. Specify the location as a comma-separated string containing the latitude and longitude. For example, `searchLocation=37.78,-122.42`.
+
+  If you don’t provide a `searchLocation`, the server uses `userLocation` and `searchRegion` as fallback hints.
 - `searchRegion` (SearchRegion): A region the app defines as a hint for the search. Specify the region as a comma-separated string that describes the region in the form of a north-latitude, east-longitude, south-latitude, west-longitude string. If you don’t provide `searchLocation`, the server uses `userLocation` and `searchRegion` as fallback hints. For example, `searchRegion=38,-122.1,37.5,-122.5`.
-- `userLocation` (UserLocation): The location of the user, specified as a comma-separated string that contains the latitude and longitude. For example, `userLocation=37.78,-122.42`. Certain APIs, such as Search, may opt to use the `userLocation`, if specified, as a fallback for the `searchLocation`.
+- `userLocation` (UserLocation): The location of the user, specified as a comma-separated string that contains the latitude and longitude. For example, `userLocation=37.78,-122.42`.
+
+  Certain APIs, such as Search, may opt to use the `userLocation`, if specified, as a fallback for the `searchLocation`.
 - `searchRegionPriority` (string): A value that indicates the importance of the configured region.
-- `includeAddressCategories` ([AddressCategory]): A comma-separated list of strings that describes the addresses to include in the search results. For example, `includeAddressCategories=SubLocality,PostalCode`. If you use this parameter, you must include `address` in `resultTypeFilter`. See [`AddressCategory`](addresscategory.md) for a complete list of possible values.
-- `excludeAddressCategories` ([AddressCategory]): A comma-separated list of strings that describes the addresses to exclude in the search results. For example, `excludeAddressCategories=Country,AdministrativeArea`. If you use this parameter, you must include `address` in `resultTypeFilter`. See [`AddressCategory`](addresscategory.md) for a complete list of possible values.
+
+  **Allowed Values**: `default`, `required`
+- `includeAddressCategories` ([AddressCategory]): A comma-separated list of strings that describes the addresses to include in the search results. For example, `includeAddressCategories=SubLocality,PostalCode`. If you use this parameter, you must include `address` in `resultTypeFilter`.
+
+  See [`AddressCategory`](./addresscategory.md) for a complete list of possible values.
+- `excludeAddressCategories` ([AddressCategory]): A comma-separated list of strings that describes the addresses to exclude in the search results. For example, `excludeAddressCategories=Country,AdministrativeArea`. If you use this parameter, you must include `address` in `resultTypeFilter`.
+
+  See [`AddressCategory`](./addresscategory.md) for a complete list of possible values.
+
+## Responses
+
+- `200` OK (`SearchAutocompleteResponse`, `application/json`): Returns a list of [`SearchAutocompleteResponse`](./searchautocompleteresponse.md) results.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An [`ErrorResponse`](./errorresponse.md) object that contains an error message and an array of strings that contain additional details about the error.
+- `401` Unauthorized (`ErrorResponse`, `application/json`): An [`ErrorResponse`](./errorresponse.md) object that contains an error message that indicates the Maps access token is missing or invalid, and an array of strings that contains additional details about the error.
+- `429` (`ErrorResponse`, `application/json`): An [`ErrorResponse`](./errorresponse.md) object that indicates the call exceeds the daily service call quota for the authorization token. The app can try again later. If your app requires a larger daily quota, submit a [quota increase request form](https://developer.apple.com/contact/request/mapkitjs/).
+- `500` Internal Server Error (`ErrorResponse`, `application/json`): An [`ErrorResponse`](./errorresponse.md) object that contains a server error message and an array of strings that describe additional details about the error.
 
 ## See Also
 
-- [type AddressCategory](addresscategory.md)
+### Searching
+- [type AddressCategory](./addresscategory.md)
   Search categories related to political geographical boundaries.
-- [type SearchACResultType](searchacresulttype.md)
+- [type SearchACResultType](./searchacresulttype.md)
   An enumerated string that indicates the result type for the search request.
-- [type SearchResultType](searchresulttype.md)
+- [type SearchResultType](./searchresulttype.md)
   An enumerated string that indicates the result type for the search autocomplete request.
-- [object AlternateIdsResponse](alternateidsresponse.md)
+- [object AlternateIdsResponse](./alternateidsresponse.md)
   A list of alternate Place IDs and associated errors.
-- [object AlternateIdsResponse.AlternateIds](alternateidsresponse/alternateids.md)
+- [object AlternateIdsResponse.AlternateIds](./alternateidsresponse/alternateids.md)
   Contains a list of alternate Place IDs for a given Place ID.
-- [object PlacesResponse](placesresponse.md)
+- [object PlacesResponse](./placesresponse.md)
   A list of Place IDs and errors.
-- [object PlacesResponse.PlaceLookupError](placesresponse/placelookuperror.md)
+- [object PlacesResponse.PlaceLookupError](./placesresponse/placelookuperror.md)
   An error associated with a lookup call.
-- [Search for places that match specific criteria](-v1-search.md)
+- [Search for places that match specific criteria](./v1-search.md)
   Find places by name or by specific search criteria.
-- [Search for a place using an identifier](-v1-place-:id.md)
+- [Search for a place using an identifier](./v1-place-_id.md)
   Obtain a Place object for a given Place ID.
-- [Search for places using mulitple identifiers](-v1-place.md)
+- [Search for places using mulitple identifiers](./v1-place.md)
   Obtain a set of Place objects for a given set of Place IDs.
-- [Obtain a list of alternate place identifiers](-v1-place-alternateids.md)
+- [Obtain a list of alternate place identifiers](./v1-place-alternateids.md)
   Get a list of alternate Place IDs given one or more Place IDs.
 
 

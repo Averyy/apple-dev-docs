@@ -1,7 +1,8 @@
 # blockedIdentities
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of users blocked from requesting access to this share.
 
@@ -20,9 +21,13 @@ A list of users blocked from requesting access to this share.
 var blockedIdentities: [CKShare.BlockedIdentity] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<CKShareBlockedIdentity *> * blockedIdentities;
+```
+
 #### Discussion
 
-Identities remain in this list until an owner or administrator calls [`unblockIdentities(_:)`](ckshare/unblockidentities(_:).md).
+Identities remain in this list until an owner or administrator calls [`unblockIdentities(_:)`](./unblockidentities%28_%29.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # NWPath.LinkQuality.good
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Link quality is good
 

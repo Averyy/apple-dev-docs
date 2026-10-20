@@ -1,7 +1,8 @@
 # Span.Index
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The representation for an index in `Span`.
 

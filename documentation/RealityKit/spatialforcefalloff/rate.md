@@ -1,7 +1,8 @@
 # rate
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spatial falloff / attenuation rate.
 

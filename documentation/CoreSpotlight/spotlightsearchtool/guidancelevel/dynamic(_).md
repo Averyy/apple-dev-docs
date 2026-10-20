@@ -1,7 +1,8 @@
 # SpotlightSearchTool.GuidanceLevel.dynamic(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to search using only the specified techniques.
 
@@ -20,17 +21,18 @@ case dynamic(SpotlightSearchTool.GuidanceProfile)
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
 #### Discussion
 
-Choose this option to specify the subset of search techniques to use on your content. The [`SpotlightSearchTool.GuidanceProfile`](spotlightsearchtool/guidanceprofile.md) structure you specify contains properties with the available search techniques. Enable the ones that apply to your app’s content and disable any that don’t apply. For example, if you want to perform only literal searches on strings, enable the [`textMatch`](spotlightsearchtool/guidanceprofile/textmatch.md) property and disable the [`similarityMatch`](spotlightsearchtool/guidanceprofile/similaritymatch.md) property.
+Choose this option to specify the subset of search techniques to use on your content. The [`SpotlightSearchTool.GuidanceProfile`](../guidanceprofile.md) structure you specify contains properties with the available search techniques. Enable the ones that apply to your app’s content and disable any that don’t apply. For example, if you want to perform only literal searches on strings, enable the [`textMatch`](../guidanceprofile/textmatch.md) property and disable the [`similarityMatch`](../guidanceprofile/similaritymatch.md) property.
 
 ## See Also
 
-- [SpotlightSearchTool.GuidanceLevel.complete](spotlightsearchtool/guidancelevel/complete.md)
+### Getting the guidance levels
+- [SpotlightSearchTool.GuidanceLevel.complete](./complete.md)
   An option to use all available search techniques.
-- [case focused(SpotlightSearchTool.ContentDomain)](spotlightsearchtool/guidancelevel/focused(_:).md)
+- [case focused(SpotlightSearchTool.ContentDomain)](./focused%28_%29.md)
   An option to search only specific types of content.
 
 

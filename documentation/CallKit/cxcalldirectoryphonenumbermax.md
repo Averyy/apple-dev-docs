@@ -1,7 +1,8 @@
 # CXCallDirectoryPhoneNumberMax
 
 **Framework**: CallKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum allowable value for a phone number.
 
@@ -19,9 +20,14 @@ The maximum allowable value for a phone number.
 var CXCallDirectoryPhoneNumberMax: CXCallDirectoryPhoneNumber { get }
 ```
 
+```c
+static const CXCallDirectoryPhoneNumber CXCallDirectoryPhoneNumberMax;
+```
+
 ## See Also
 
-- [typealias CXCallDirectoryPhoneNumber](cxcalldirectoryphonenumber.md)
+### Types
+- [typealias CXCallDirectoryPhoneNumber](./cxcalldirectoryphonenumber.md)
   A value that represents a phone number consisting of a country calling code followed by a sequence of digits.
 
 

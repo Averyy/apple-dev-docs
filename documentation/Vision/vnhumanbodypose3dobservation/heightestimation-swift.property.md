@@ -1,7 +1,8 @@
 # heightEstimation
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The technique the framework uses to estimate body height.
 
@@ -19,11 +20,16 @@ The technique the framework uses to estimate body height.
 var heightEstimation: VNHumanBodyPose3DObservation.HeightEstimation { get }
 ```
 
+```objc
+@property (readonly) VNHumanBodyPose3DObservationHeightEstimation heightEstimation;
+```
+
 ## See Also
 
-- [VNHumanBodyPose3DObservation.HeightEstimation](vnhumanbodypose3dobservation/heightestimation-swift.enum.md)
+### Getting the Body Height
+- [VNHumanBodyPose3DObservation.HeightEstimation](./heightestimation-swift.enum.md)
   Constants that identify body height estimation techniques.
-- [var bodyHeight: Float](vnhumanbodypose3dobservation/bodyheight.md)
+- [var bodyHeight: Float](./bodyheight.md)
   The estimated human body height, in meters.
 
 

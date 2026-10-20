@@ -1,7 +1,8 @@
 # SFCertificateViewDisclosureStateDidChange
 
 **Framework**: Security Interface  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.3+
@@ -12,15 +13,20 @@
 let SFCertificateViewDisclosureStateDidChange: String
 ```
 
+```c
+extern NSString * SFCertificateViewDisclosureStateDidChange;
+```
+
 #### Discussion
 
 Sent when the disclosure triangle is opened or closed.
 
 ## See Also
 
-- [Plug-in View Keys](plug-in-view-keys.md)
-  Keys for the user dictionary passed to [`willActivate(withUser:)`](sfauthorizationpluginview/willactivate(withuser:).md).
-- [let SFDisplayViewException: String](sfdisplayviewexception.md)
+### Constants
+- [Plug-in View Keys](./plug-in-view-keys.md)
+  Keys for the user dictionary passed to [`willActivate(withUser:)`](./sfauthorizationpluginview/willactivate%28withuser%29.md).
+- [let SFDisplayViewException: String](./sfdisplayviewexception.md)
   Raised when an error occurs in displaying the authorization dialog.
 
 

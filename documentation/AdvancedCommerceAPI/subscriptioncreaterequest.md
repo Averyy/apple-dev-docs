@@ -1,7 +1,8 @@
 # SubscriptionCreateRequest
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request data your app provides when a customer purchases an auto-renewable subscription.
 
@@ -10,16 +11,16 @@ The request data your app provides when a customer purchases an auto-renewable s
 
 ## Declaration
 
-```swift
+```
 object SubscriptionCreateRequest
 ```
 
 ## Mentions
 
-- [Creating SKUs for your Apple In-App Purchases](creating-your-purchases.md)
-- [Creating SKUs for the Mini Apps Partner Program](creating-skus-for-the-mini-app-partner-program.md)
+- [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md)
+- [Creating SKUs for the Mini Apps Partner Program](./creating-skus-for-the-mini-app-partner-program.md)
 
-##### Example Subscription with a Single Item
+##### Example: subscription with a single item
 
 ```json
 {
@@ -47,7 +48,7 @@ object SubscriptionCreateRequest
 }
 ```
 
-##### Example Subscription with Multiple Items and an Offer
+##### Example: subscription with multiple items and an offer
 
 ```json
 {
@@ -92,7 +93,7 @@ object SubscriptionCreateRequest
 - `currency` (currency) *(required)*
 - `descriptors` (Descriptors) *(required)*
 - `items` ([SubscriptionCreateItem]) *(required)*
-- `operation` (string) *(required)*
+- `operation` (string) *(required)*: **Allowed Values**: `CREATE_SUBSCRIPTION`
 - `period` (period) *(required)*
 - `previousTransactionId` (transactionId)
 - `requestInfo` (RequestInfo) *(required)*
@@ -102,7 +103,8 @@ object SubscriptionCreateRequest
 
 ## See Also
 
-- [object SubscriptionCreateItem](subscriptioncreateitem.md)
+### Subscription creation in the app
+- [object SubscriptionCreateItem](./subscriptioncreateitem.md)
   The data that describes a subscription item.
 
 

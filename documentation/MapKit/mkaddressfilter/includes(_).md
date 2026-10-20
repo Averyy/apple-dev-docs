@@ -1,7 +1,8 @@
 # includes(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether options are included for filtering.
 
@@ -20,6 +21,10 @@ Indicates whether options are included for filtering.
 func includes(_ options: MKAddressFilter.Options) -> Bool
 ```
 
+```objc
+- (BOOL) includesOptions:(MKAddressFilterOption) options;
+```
+
 #### Return Value
 
 Returns `true` if the passed options are included in the filtering options; otherwise, `false`.
@@ -33,7 +38,7 @@ let filter = MKAddressFilter(including: [.locality,  .subLocality])
 let result = filter.includes(.locality)
 ```
 
-The method returns `true` because `filter` includes [`Locality`](https://developer.apple.com/documentation/mapkitjs/addresscategory/locality).
+The method returns `true` because `filter` includes [`Locality`](../../MapKitJS/addresscategory/locality.md).
 
 ## Parameters
 
@@ -41,13 +46,14 @@ The method returns `true` because `filter` includes [`Locality`](https://devel
 
 ## See Also
 
-- [MKAddressFilter.Options](mkaddressfilter/options.md)
+### Filtering results
+- [MKAddressFilter.Options](./options.md)
   A structure that contains options for filtering results in a search.
-- [class var excludingAll: MKAddressFilter](mkaddressfilter/excludingall.md)
+- [class var excludingAll: MKAddressFilter](./excludingall.md)
   A list of categories to exclude from a search.
-- [class var includingAll: MKAddressFilter](mkaddressfilter/includingall.md)
+- [class var includingAll: MKAddressFilter](./includingall.md)
   A list of categories to include in a search.
-- [func excludes(MKAddressFilter.Options) -> Bool](mkaddressfilter/excludes(_:).md)
+- [func excludes(MKAddressFilter.Options) -> Bool](./excludes%28_%29.md)
   Indicates whether options are excluded from filtering.
 
 

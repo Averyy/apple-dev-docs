@@ -1,23 +1,25 @@
 # addReporterLegend
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static IOReturn addReporterLegend(IOService *reportingService, IOReporter *reporter, const char *groupName, const char *subGroupName);
 ```
 
 ## See Also
 
-- [with](ioreportlegend/with.md)
+### Type Methods
+- [with](./with.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UISceneClassName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the scene class you want UIKit to instantiate.
 
@@ -10,17 +11,19 @@ The name of the scene class you want UIKit to instantiate.
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `UISceneClassName` (Class Name)
+- **Type**: string
 
 #### Discussion
 
-Specify [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) for scenes meant for your app or an external display. Don’t specify [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene).
+Specify [`UIWindowScene`](../../../../../UIKit/uiwindowscene.md) for scenes meant for your app or an external display. Don’t specify [`UIScene`](../../../../../UIKit/uiscene.md).
 
 ## See Also
 
-- [UISceneDelegateClassName](information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uiscenedelegateclassname.md)
+### Scene objects
+- [UISceneDelegateClassName](./uiscenedelegateclassname.md)
   The name of the app-specific class that you want UIKit to instantiate and use as the scene delegate object.
 
 

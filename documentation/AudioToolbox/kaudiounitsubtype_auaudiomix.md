@@ -1,7 +1,8 @@
 # kAudioUnitSubType_AUAudioMix
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var kAudioUnitSubType_AUAudioMix: UInt32 { get }
+```
+
+```c
+kAudioUnitSubType_AUAudioMix
 ```
 
 

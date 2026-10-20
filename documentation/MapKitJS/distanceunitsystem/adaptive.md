@@ -1,7 +1,8 @@
 # Adaptive
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A measurement system that adapts to the map’s language.
 
@@ -10,7 +11,7 @@ A measurement system that adapts to the map’s language.
 
 ## Declaration
 
-```swift
+```
 readonly Adaptive: "adaptive";
 ```
 
@@ -20,9 +21,10 @@ MapKit JS chooses the measurement system — either metric or imperial — based
 
 ## See Also
 
-- [Metric](distanceunitsystem/metric.md)
+### Distance values
+- [Metric](./metric.md)
   The metric measurement system.
-- [Imperial](distanceunitsystem/imperial.md)
+- [Imperial](./imperial.md)
   The imperial measurement system.
 
 

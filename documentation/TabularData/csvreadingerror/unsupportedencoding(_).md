@@ -1,7 +1,8 @@
 # CSVReadingError.unsupportedEncoding(_:)
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the CSV reader doesn’t support an encoding.
 
@@ -26,19 +27,20 @@ The associated value contains a description of the error.
 
 ## See Also
 
-- [var column: Int?](csvreadingerror/column.md)
+### Getting Error Information
+- [var column: Int?](./column.md)
   The index of the column that contains the error.
-- [var row: Int](csvreadingerror/row.md)
+- [var row: Int](./row.md)
   The index of the row that contains the error.
-- [case badEncoding(row: Int, column: Int, cellContents: Data)](csvreadingerror/badencoding(row:column:cellcontents:).md)
+- [case badEncoding(row: Int, column: Int, cellContents: Data)](./badencoding%28row,column,cellcontents%29.md)
   An error that indicates CSV data contains an invalid UTF-8 byte sequence.
-- [case failedToParse(row: Int, column: Int, type: CSVType, cellContents: Data)](csvreadingerror/failedtoparse(row:column:type:cellcontents:).md)
+- [case failedToParse(row: Int, column: Int, type: CSVType, cellContents: Data)](./failedtoparse%28row,column,type,cellcontents%29.md)
   An error that indicates the CSV reader can’t parse data in the file.
-- [CSVReadingError.misplacedQuote(row:column:)](csvreadingerror/misplacedquote(row:column:).md)
+- [CSVReadingError.misplacedQuote(row:column:)](./misplacedquote%28row,column%29.md)
   An error that indicates the CSV data contains a misplaced quote.
-- [CSVReadingError.missingColumn(columnName:)](csvreadingerror/missingcolumn(columnname:).md)
+- [CSVReadingError.missingColumn(columnName:)](./missingcolumn%28columnname%29.md)
   An error that indicates the CSV is missing a required column.
-- [case wrongNumberOfColumns(row: Int, columns: Int, expected: Int)](csvreadingerror/wrongnumberofcolumns(row:columns:expected:).md)
+- [case wrongNumberOfColumns(row: Int, columns: Int, expected: Int)](./wrongnumberofcolumns%28row,columns,expected%29.md)
   An error that indicates the CSV data contains a row with a mismatched number of columns.
 
 

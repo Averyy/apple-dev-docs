@@ -1,7 +1,8 @@
 # currency(code:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a format style to use floating-point currency notation.
 
@@ -26,9 +27,9 @@ A floating-point format style that uses the specified currency code.
 
 #### Discussion
 
-Use the dot-notation form of this method when the call point allows the use of [`FloatingPointFormatStyle`](floatingpointformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryFloatingPoint`](https://developer.apple.com/documentation/swift/binaryfloatingpoint).
+Use the dot-notation form of this method when the call point allows the use of [`FloatingPointFormatStyle`](../floatingpointformatstyle.md). You typically do this when calling the `formatted` methods of types that conform to [`BinaryFloatingPoint`](../../Swift/binaryfloatingpoint.md).
 
-The following example creates an array of doubles, then uses [`formatted(_:)`](https://developer.apple.com/documentation/swift/binaryfloatingpoint/formatted(_:)-83x4n) and the currency style provided by this method to format the doubles as US dollars:
+The following example creates an array of doubles, then uses [`formatted(_:)`](../../Swift/binaryfloatingpoint/formatted%28_%29-83x4n.md) and the currency style provided by this method to format the doubles as US dollars:
 
 ```swift
 let nums: [Double] = [100.01, 1000.02, 10000.03, 100000.04, 1000000.05]
@@ -42,9 +43,10 @@ let currencyNums = nums.map { $0.formatted(
 
 ## See Also
 
-- [static func currency<V>(code: String) -> Self](formatstyle/currency(code:)-is0v.md)
+### Applying currency styles
+- [static func currency<V>(code: String) -> Self](./currency%28code%29-is0v.md)
   Returns a format style to use integer currency notation.
-- [static func currency(code: String) -> Self](formatstyle/currency(code:)-6fhr2.md)
+- [static func currency(code: String) -> Self](./currency%28code%29-6fhr2.md)
   Returns a format style to use decimal currency notation.
 
 

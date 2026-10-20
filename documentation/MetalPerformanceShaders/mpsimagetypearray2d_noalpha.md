@@ -1,20 +1,25 @@
 # MPSImageTypeArray2d_noAlpha
 
 **Framework**: Metal Performance Shaders  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var MPSImageTypeArray2d_noAlpha: MPSImageType { get }
+```
+
+```c
+MPSImageTypeArray2d_noAlpha
 ```
 
 

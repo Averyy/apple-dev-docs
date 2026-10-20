@@ -1,7 +1,8 @@
 # SRTextInputSession.SessionType
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Methods to input text during a session.
 
@@ -16,37 +17,42 @@ Methods to input text during a session.
 enum SessionType
 ```
 
+```c
+enum SRTextInputSessionType : NSInteger;
+```
+
 #### Overview
 
-This class defines available options for the [`sessionType`](srtextinputsession/sessiontype-swift.property.md) property.
+This class defines available options for the [`sessionType`](./sessiontype-swift.property.md) property.
 
 ## Topics
 
 ### Sources
-- [SRTextInputSession.SessionType.dictation](srtextinputsession/sessiontype-swift.enum/dictation.md)
+- [SRTextInputSession.SessionType.dictation](./sessiontype-swift.enum/dictation.md)
   Indicates that the session contains spoken text.
-- [SRTextInputSession.SessionType.keyboard](srtextinputsession/sessiontype-swift.enum/keyboard.md)
+- [SRTextInputSession.SessionType.keyboard](./sessiontype-swift.enum/keyboard.md)
   Indicates that the session contains text from keyboard input.
-- [SRTextInputSession.SessionType.pencil](srtextinputsession/sessiontype-swift.enum/pencil.md)
+- [SRTextInputSession.SessionType.pencil](./sessiontype-swift.enum/pencil.md)
   Indicates that the session contains text drawn with Apple Pencil.
-- [SRTextInputSession.SessionType.thirdPartyKeyboard](srtextinputsession/sessiontype-swift.enum/thirdpartykeyboard.md)
+- [SRTextInputSession.SessionType.thirdPartyKeyboard](./sessiontype-swift.enum/thirdpartykeyboard.md)
   Indicates that the session contains text from a third-party keyboard.
 ### Initializers
-- [init?(rawValue: Int)](srtextinputsession/sessiontype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./sessiontype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var sessionType: SRTextInputSession.SessionType](srtextinputsession/sessiontype-swift.property.md)
+### Inspecting Text Source
+- [var sessionType: SRTextInputSession.SessionType](./sessiontype-swift.property.md)
 
 
 ---

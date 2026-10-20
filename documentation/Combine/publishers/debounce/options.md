@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Scheduler options that customize this publisher’s delivery of elements.
 
@@ -22,11 +23,12 @@ let options: Context.SchedulerOptions?
 
 ## See Also
 
-- [let upstream: Upstream](publishers/debounce/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
-- [let dueTime: Context.SchedulerTimeType.Stride](publishers/debounce/duetime.md)
+- [let dueTime: Context.SchedulerTimeType.Stride](./duetime.md)
   The amount of time the publisher should wait before publishing an element.
-- [let scheduler: Context](publishers/debounce/scheduler.md)
+- [let scheduler: Context](./scheduler.md)
   The scheduler on which this publisher delivers elements.
 
 

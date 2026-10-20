@@ -1,7 +1,8 @@
 # SubscriptionPlanAvailabilityCreateRequest.Data.Relationships.Subscription
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The subscription to associate with the new subscription plan availability.
 
@@ -10,14 +11,14 @@ The subscription to associate with the new subscription plan availability.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPlanAvailabilityCreateRequest.Data.Relationships.Subscription
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object SubscriptionPlanAvailabilityCreateRequest.Data.Relationships.Subscription.Data](subscriptionplanavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionPlanAvailabilityCreateRequest.Data.Relationships.Subscription.Data](./subscription-data.dictionary/data-data.dictionary.md)
   The request body you use to create a subscription plan availability.
 
 ## Properties

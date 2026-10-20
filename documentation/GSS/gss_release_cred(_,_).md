@@ -1,7 +1,8 @@
 # gss_release_cred(_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Releases the memory of a credential.
 
@@ -18,17 +19,21 @@ Releases the memory of a credential.
 func gss_release_cred(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ cred_handle: UnsafeMutablePointer<gss_cred_id_t?>) -> OM_uint32
 ```
 
+```c
+OM_uint32 gss_release_cred(OM_uint32 *minor_status, gss_cred_id_t*cred_handle);
+```
+
 ## Mentions
 
-- [Allocating and Releasing Objects](allocating-and-releasing-objects.md)
+- [Allocating and Releasing Objects](./allocating-and-releasing-objects.md)
 
 #### Return Value
 
-A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Function Status`](function-status.md) for a description of other status outputs.
+A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
 #### Discussion
 
-This function frees the memory associated with the credential, but doesn’t necessarily purge that memory of the credential’s data. If you need to ensure no trace of the credential remains in memory, use [`gss_destroy_cred(_:_:)`](gss_destroy_cred(_:_:).md) instead. That function first removes the credential data from memory and then frees the memory using a call to this function.
+This function frees the memory associated with the credential, but doesn’t necessarily purge that memory of the credential’s data. If you need to ensure no trace of the credential remains in memory, use [`gss_destroy_cred(_:_:)`](./gss_destroy_cred%28_,_%29.md) instead. That function first removes the credential data from memory and then frees the memory using a call to this function.
 
 ## Parameters
 
@@ -37,15 +42,16 @@ This function frees the memory associated with the credential, but doesn’t nec
 
 ## See Also
 
-- [func gss_init_sec_context(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t?, UnsafeMutablePointer<gss_ctx_id_t?>, gss_name_t, gss_OID?, OM_uint32, OM_uint32, gss_channel_bindings_t?, gss_buffer_t?, UnsafeMutablePointer<gss_OID?>?, gss_buffer_t, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<OM_uint32>?) -> OM_uint32](gss_init_sec_context(_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+### Creation and Deletion
+- [func gss_init_sec_context(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t?, UnsafeMutablePointer<gss_ctx_id_t?>, gss_name_t, gss_OID?, OM_uint32, OM_uint32, gss_channel_bindings_t?, gss_buffer_t?, UnsafeMutablePointer<gss_OID?>?, gss_buffer_t, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<OM_uint32>?) -> OM_uint32](./gss_init_sec_context%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Initiates a security context with a peer.
-- [func gss_accept_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, gss_cred_id_t?, gss_buffer_t?, gss_channel_bindings_t?, UnsafeMutablePointer<gss_name_t?>?, UnsafeMutablePointer<gss_OID?>?, gss_buffer_t, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<gss_cred_id_t?>?) -> OM_uint32](gss_accept_sec_context(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func gss_accept_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, gss_cred_id_t?, gss_buffer_t?, gss_channel_bindings_t?, UnsafeMutablePointer<gss_name_t?>?, UnsafeMutablePointer<gss_OID?>?, gss_buffer_t, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<gss_cred_id_t?>?) -> OM_uint32](./gss_accept_sec_context%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Accepts a security context initiated by a peer.
-- [func gss_delete_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, gss_buffer_t?) -> OM_uint32](gss_delete_sec_context(_:_:_:).md)
+- [func gss_delete_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, gss_buffer_t?) -> OM_uint32](./gss_delete_sec_context%28_,_,_%29.md)
   Deletes a security context.
-- [func gss_process_context_token(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, gss_buffer_t) -> OM_uint32](gss_process_context_token(_:_:_:).md)
+- [func gss_process_context_token(UnsafeMutablePointer<OM_uint32>, gss_ctx_id_t, gss_buffer_t) -> OM_uint32](./gss_process_context_token%28_,_,_%29.md)
   Processes a token from a peer asynchronously.
-- [func gss_set_sec_context_option(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t>?, gss_OID, gss_buffer_t?) -> OM_uint32](gss_set_sec_context_option(_:_:_:_:).md)
+- [func gss_set_sec_context_option(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t>?, gss_OID, gss_buffer_t?) -> OM_uint32](./gss_set_sec_context_option%28_,_,_,_%29.md)
   Sets an option on a context.
 
 

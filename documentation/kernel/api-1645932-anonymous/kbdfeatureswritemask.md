@@ -1,14 +1,15 @@
 # kBDFeaturesWriteMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBDFeaturesWriteMask = (1 << kBDFeaturesWriteBit)
 ```
 

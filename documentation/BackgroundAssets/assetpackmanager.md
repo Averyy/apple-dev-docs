@@ -1,7 +1,8 @@
 # AssetPackManager
 
 **Framework**: Background Assets  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An actor that manages asset packs.
 
@@ -21,104 +22,105 @@ actor AssetPackManager
 
 ## Mentions
 
-- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
+- [Reducing download and storage demands with localized asset packs](./reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
 #### Overview
 
 The first time that your code refers to the shared manager, Background Assets considers that your app is opting into automatic system management of your asset packs.
 
-> ❗ **Important**: When using the asset-pack manager, make sure that you also adopt the corresponding managed extension protocol, [`ManagedDownloaderExtension`](manageddownloaderextension.md) (for self-hosted asset packs) or `StoreDownloaderExtension` from StoreKit (for Apple-hosted asset packs). Not doing so is a programmer error.
+> ❗ **Important**: When using the asset-pack manager, make sure that you also adopt the corresponding managed extension protocol, [`ManagedDownloaderExtension`](./manageddownloaderextension.md) (for self-hosted asset packs) or `StoreDownloaderExtension` from StoreKit (for Apple-hosted asset packs). Not doing so is a programmer error.
 
 ## Topics
 
 ### Getting the shared manager
-- [static let shared: AssetPackManager](assetpackmanager/shared.md)
+- [static let shared: AssetPackManager](./assetpackmanager/shared.md)
   The shared manager.
 ### Tracking downloads
-- [let statusUpdates: some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>](assetpackmanager/statusupdates.md)
+- [let statusUpdates: some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>](./assetpackmanager/statusupdates.md)
   An asynchronous sequence of download-status updates for all asset packs.
 - [func statusUpdates(forAssetPackWithID: String) -> some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>
-](assetpackmanager/statusupdates(forassetpackwithid:).md)
+](./assetpackmanager/statusupdates%28forassetpackwithid%29.md)
   Returns an asynchronous sequence of download-status updates for the asset pack with the specified ID.
-- [AssetPackManager.DownloadStatusUpdate](assetpackmanager/downloadstatusupdate.md)
+- [AssetPackManager.DownloadStatusUpdate](./assetpackmanager/downloadstatusupdate.md)
   Statuses of an asset-pack download.
 ### Accessing asset packs
-- [var manifest: AssetPackManifest](assetpackmanager/manifest.md)
+- [var manifest: AssetPackManifest](./assetpackmanager/manifest.md)
   The manifest of asset packs that are available to download.
-- [struct AssetPackManifest](assetpackmanifest.md)
+- [struct AssetPackManifest](./assetpackmanifest.md)
   A manifest of asset packs that are available to download.
-- [var allAssetPacks: Set<AssetPack>](assetpackmanager/allassetpacks.md)
+- [var allAssetPacks: Set<AssetPack>](./assetpackmanager/allassetpacks.md)
   The asset packs that are available to download.
-- [func assetPack(withID: String) async throws -> AssetPack](assetpackmanager/assetpack(withid:).md)
+- [func assetPack(withID: String) async throws -> AssetPack](./assetpackmanager/assetpack%28withid%29.md)
   Returns the asset pack with the given ID.
 ### Accessing asset contents
-- [func contents(at: FilePath, searchingInAssetPackWithID: String?, options: Data.ReadingOptions) throws -> Data](assetpackmanager/contents(at:searchinginassetpackwithid:options:).md)
+- [func contents(at: FilePath, searchingInAssetPackWithID: String?, options: Data.ReadingOptions) throws -> Data](./assetpackmanager/contents%28at,searchinginassetpackwithid,options%29.md)
   Returns the contents of an asset file at the specified relative path.
-- [func contents(at: FilePath, asLocalizedFor: Locale.Language, options: Data.ReadingOptions) throws -> Data](assetpackmanager/contents(at:aslocalizedfor:options:).md)
+- [func contents(at: FilePath, asLocalizedFor: Locale.Language, options: Data.ReadingOptions) throws -> Data](./assetpackmanager/contents%28at,aslocalizedfor,options%29.md)
   Returns the contents of a localized asset file at the specified relative path.
-- [func descriptor(for: FilePath, searchingInAssetPackWithID: String?) throws -> FileDescriptor](assetpackmanager/descriptor(for:searchinginassetpackwithid:).md)
+- [func descriptor(for: FilePath, searchingInAssetPackWithID: String?) throws -> FileDescriptor](./assetpackmanager/descriptor%28for,searchinginassetpackwithid%29.md)
   Opens and returns a file descriptor for an asset file at the specified relative path.
-- [func descriptor(for: FilePath, asLocalizedFor: Locale.Language) throws -> FileDescriptor](assetpackmanager/descriptor(for:aslocalizedfor:).md)
+- [func descriptor(for: FilePath, asLocalizedFor: Locale.Language) throws -> FileDescriptor](./assetpackmanager/descriptor%28for,aslocalizedfor%29.md)
   Opens and returns a file descriptor for a localized asset file at the specified relative path.
-- [func url(for: FilePath) throws -> URL](assetpackmanager/url(for:).md)
+- [func url(for: FilePath) throws -> URL](./assetpackmanager/url%28for%29.md)
   Returns a URL for the specified relative path.
-- [func url(for: FilePath, asLocalizedFor: Locale.Language) throws -> URL](assetpackmanager/url(for:aslocalizedfor:).md)
+- [func url(for: FilePath, asLocalizedFor: Locale.Language) throws -> URL](./assetpackmanager/url%28for,aslocalizedfor%29.md)
   Returns a URL for the specified relative path.
 ### Managing asset packs
-- [func checkForUpdates() async throws -> (updatingIDs: Set<String>, removedIDs: Set<String>)](assetpackmanager/checkforupdates.md)
+- [func checkForUpdates() async throws -> (updatingIDs: Set<String>, removedIDs: Set<String>)](./assetpackmanager/checkforupdates%28%29.md)
   Gets the latest asset-pack information from the server, updates outdated asset packs, and removes obsolete asset packs.
-- [func ensureLocalAvailability(of: AssetPack, requireLatestVersion: Bool) async throws](assetpackmanager/ensurelocalavailability(of:requirelatestversion:).md)
+- [func ensureLocalAvailability(of: AssetPack, requireLatestVersion: Bool) async throws](./assetpackmanager/ensurelocalavailability%28of,requirelatestversion%29.md)
   Ensures that an asset pack is available locally, performing a download if necessary.
-- [func ensureLocalAvailability(of: Set<AssetPack>, requireLatestVersions: Bool) async throws](assetpackmanager/ensurelocalavailability(of:requirelatestversions:).md)
+- [func ensureLocalAvailability(of: Set<AssetPack>, requireLatestVersions: Bool) async throws](./assetpackmanager/ensurelocalavailability%28of,requirelatestversions%29.md)
   Ensures the specified asset packs are available locally, performing a batch download if necessary.
-- [func assetPackIsAvailableLocally(withID: String) -> Bool](assetpackmanager/assetpackisavailablelocally(withid:).md)
+- [func assetPackIsAvailableLocally(withID: String) -> Bool](./assetpackmanager/assetpackisavailablelocally%28withid%29.md)
   Checks whether an asset pack is available locally.
-- [func status(relativeTo: AssetPack) async throws -> AssetPack.Status](assetpackmanager/status(relativeto:).md)
+- [func status(relativeTo: AssetPack) async throws -> AssetPack.Status](./assetpackmanager/status%28relativeto%29.md)
   Checks the current status relative to a particular asset pack.
-- [func localStatus(ofAssetPackWithID: String) async -> AssetPack.Status](assetpackmanager/localstatus(ofassetpackwithid:).md)
+- [func localStatus(ofAssetPackWithID: String) async -> AssetPack.Status](./assetpackmanager/localstatus%28ofassetpackwithid%29.md)
   Checks an asset pack’s local status.
-- [AssetPack.Status](assetpack/status.md)
+- [AssetPack.Status](./assetpack/status.md)
   The status of an asset pack.
-- [func remove(assetPackWithID: String) async throws](assetpackmanager/remove(assetpackwithid:).md)
+- [func remove(assetPackWithID: String) async throws](./assetpackmanager/remove%28assetpackwithid%29.md)
   Removes the specified asset pack from the device.
-- [func status(ofAssetPackWithID: String) async throws -> AssetPack.Status](assetpackmanager/status(ofassetpackwithid:).md)
+- [func status(ofAssetPackWithID: String) async throws -> AssetPack.Status](./assetpackmanager/status%28ofassetpackwithid%29.md)
   Checks an asset pack’s status.
-- [func ensureLocalAvailability(of: AssetPack) async throws](assetpackmanager/ensurelocalavailability(of:).md)
+- [func ensureLocalAvailability(of: AssetPack) async throws](./assetpackmanager/ensurelocalavailability%28of%29.md)
   Ensures that the specified asset pack is available locally, performing a download if necessary.
 ### Inspecting language support
-- [var locallyAvailableLanguages: [Locale.Language]](assetpackmanager/locallyavailablelanguages.md)
+- [var locallyAvailableLanguages: [Locale.Language]](./assetpackmanager/locallyavailablelanguages.md)
   The languages used by asset packs that are localized and are available locally.
-- [var resolvedLanguage: Locale.Language?](assetpackmanager/resolvedlanguage.md)
+- [var resolvedLanguage: Locale.Language?](./assetpackmanager/resolvedlanguage.md)
   The language that best matches current preferences and for which the system automatically makes localized asset packs available locally.
-- [func reconcilePreferredLanguages() async throws](assetpackmanager/reconcilepreferredlanguages.md)
+- [func reconcilePreferredLanguages() async throws](./assetpackmanager/reconcilepreferredlanguages%28%29.md)
   Reconciles the set of locally available asset packs with the current preferred languages.
 ### Handling errors
-- [AssetPackManager.LocalAvailabilityError](assetpackmanager/localavailabilityerror.md)
+- [AssetPackManager.LocalAvailabilityError](./assetpackmanager/localavailabilityerror.md)
   An error that provides information about local asset pack availability, distinguishing between successes and failures.
 ### Instance Methods
-- [func localSize(ofAssetPackWithID: String, calculationMethod: SizeCalculationMethod) async throws -> Int64](assetpackmanager/localsize(ofassetpackwithid:calculationmethod:).md)
+- [func localSize(ofAssetPackWithID: String, calculationMethod: SizeCalculationMethod) async throws -> Int64](./assetpackmanager/localsize%28ofassetpackwithid,calculationmethod%29.md)
   Calculates a locally available asset pack’s installation size.
-- [func localVersion(ofAssetPackWithID: String) throws -> Int](assetpackmanager/localversion(ofassetpackwithid:).md)
+- [func localVersion(ofAssetPackWithID: String) throws -> Int](./assetpackmanager/localversion%28ofassetpackwithid%29.md)
   Returns a locally available asset pack’s version number.
 
 ## Relationships
 
 ### Conforms To
-- [Actor](../swift/actor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Actor](../Swift/actor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AssetPack](assetpack.md)
+### Managed asset packs
+- [struct AssetPack](./assetpack.md)
   An archive of assets that the system downloads together.
-- [struct AssetPackManifest](assetpackmanifest.md)
+- [struct AssetPackManifest](./assetpackmanifest.md)
   A manifest of asset packs that are available to download.
-- [protocol ManagedDownloaderExtension](manageddownloaderextension.md)
+- [protocol ManagedDownloaderExtension](./manageddownloaderextension.md)
   An app extension that uses the system implementation to schedule asset-pack downloads automatically.
-- [BAAppGroupID](../bundleresources/information-property-list/baappgroupid.md)
+- [BAAppGroupID](../BundleResources/information-property-list/baappgroupid.md)
   The app group identifier that you share between your app and the extension that uses asset packs.
-- [BAHasManagedAssetPacks](../bundleresources/information-property-list/bahasmanagedassetpacks.md)
+- [BAHasManagedAssetPacks](../BundleResources/information-property-list/bahasmanagedassetpacks.md)
   A Boolean value that indicates whether you let the system automatically manage your asset packs.
 
 

@@ -1,7 +1,8 @@
 # BulkNegativeKeywordUpdate.Status
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The updated negative keyword status for a bulk negative-keyword update item.
 
@@ -10,9 +11,14 @@ The updated negative keyword status for a bulk negative-keyword update item.
 
 ## Declaration
 
-```swift
+```
 string BulkNegativeKeywordUpdate.Status
 ```
+
+## Possible Values
+
+- `ENABLED`: The negative keyword is active and will suppress ad delivery for matching search queries.
+- `PAUSED`: The negative keyword is paused and will not suppress any search queries until re-enabled.
 
 #### Discussion
 

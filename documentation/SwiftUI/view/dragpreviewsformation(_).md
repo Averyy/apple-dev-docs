@@ -1,7 +1,8 @@
 # dragPreviewsFormation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Describes the way dragged previews are visually composed.
 
@@ -17,9 +18,10 @@ func dragPreviewsFormation(_ formation: DragDropPreviewsFormation) -> some View
 
 ## See Also
 
-- [func dropPreviewsFormation(DragDropPreviewsFormation) -> some View](view/droppreviewsformation(_:).md)
+### Describing preview formations
+- [func dropPreviewsFormation(DragDropPreviewsFormation) -> some View](./droppreviewsformation%28_%29.md)
   Describes the way previews for a drop are composed.
-- [struct DragDropPreviewsFormation](dragdroppreviewsformation.md)
+- [struct DragDropPreviewsFormation](../dragdroppreviewsformation.md)
   On macOS, describes the way the dragged previews are visually composed. Both drag sources and drop destination can specify their desired preview formation.
 
 

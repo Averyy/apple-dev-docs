@@ -1,7 +1,8 @@
 # UIWindowScene.WindowingControlStyle
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Describes the placement and style of the system windowing controls for a scene
 
@@ -18,29 +19,33 @@ Describes the placement and style of the system windowing controls for a scene
 class WindowingControlStyle
 ```
 
+```objc
+@interface UISceneWindowingControlStyle : NSObject
+```
+
 ## Topics
 
 ### Type Properties
-- [class var automatic: UIWindowScene.WindowingControlStyle](uiwindowscene/windowingcontrolstyle/automatic.md)
+- [class var automatic: UIWindowScene.WindowingControlStyle](./windowingcontrolstyle/automatic.md)
   Windowing controls will use the default system style
-- [class var minimal: UIWindowScene.WindowingControlStyle](uiwindowscene/windowingcontrolstyle/minimal.md)
+- [class var minimal: UIWindowScene.WindowingControlStyle](./windowingcontrolstyle/minimal.md)
   Windowing controls will occupy as little of the scene’s space as possible
-- [class var unified: UIWindowScene.WindowingControlStyle](uiwindowscene/windowingcontrolstyle/unified.md)
+- [class var unified: UIWindowScene.WindowingControlStyle](./windowingcontrolstyle/unified.md)
   Windowing controls will appear as part of the scene’s content
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

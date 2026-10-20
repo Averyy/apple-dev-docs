@@ -1,7 +1,8 @@
 # GCProductCategoryCoalescedRemote
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Apple TV Remote product category for physical and virtual remotes that Game Center combines into a single device.
 
@@ -19,19 +20,24 @@ The Apple TV Remote product category for physical and virtual remotes that Game 
 let GCProductCategoryCoalescedRemote: String
 ```
 
+```c
+extern NSString * const GCProductCategoryCoalescedRemote;
+```
+
 #### Discussion
 
-Game Controller merges the physical Apple TV Remote with the virtual Apple TV Remote app into one [`GCDevice`](gcdevice.md) object by default. To disable this behavior, or if you fully support the second-generation Siri Remote, set the [`GCSupportsMultipleMicroGamepads`](https://developer.apple.com/documentation/bundleresources/information-property-list/gcsupportsmultiplemicrogamepads) key to `YES` in the information property list.
+Game Controller merges the physical Apple TV Remote with the virtual Apple TV Remote app into one [`GCDevice`](./gcdevice.md) object by default. To disable this behavior, or if you fully support the second-generation Siri Remote, set the [`GCSupportsMultipleMicroGamepads`](../BundleResources/information-property-list/gcsupportsmultiplemicrogamepads.md) key to `YES` in the information property list.
 
 ## See Also
 
-- [let GCProductCategorySiriRemote1stGen: String](gcproductcategorysiriremote1stgen.md)
+### Apple TV remote categories
+- [let GCProductCategorySiriRemote1stGen: String](./gcproductcategorysiriremote1stgen.md)
   The first-generation Siri Remote or first-generation Apple TV Remote product category.
-- [let GCProductCategorySiriRemote2ndGen: String](gcproductcategorysiriremote2ndgen.md)
+- [let GCProductCategorySiriRemote2ndGen: String](./gcproductcategorysiriremote2ndgen.md)
   The second-generation Siri Remote or second-generation Apple TV Remote product category.
-- [let GCProductCategoryControlCenterRemote: String](gcproductcategorycontrolcenterremote.md)
+- [let GCProductCategoryControlCenterRemote: String](./gcproductcategorycontrolcenterremote.md)
   The virtual remote in the Control Center on iOS and tvOS devices for controlling the Apple TV.
-- [let GCProductCategoryUniversalElectronicsRemote: String](gcproductcategoryuniversalelectronicsremote.md)
+- [let GCProductCategoryUniversalElectronicsRemote: String](./gcproductcategoryuniversalelectronicsremote.md)
   The product category for a Universal Electronics remote that works with Apple TV.
 
 

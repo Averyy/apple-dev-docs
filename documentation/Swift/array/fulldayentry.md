@@ -1,7 +1,8 @@
 # fullDayEntry
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The full day interval entry spanning the entire report collection period.
 
@@ -16,6 +17,8 @@ The full day interval entry spanning the entire report collection period.
 ```swift
 var fullDayEntry: MetricReport.IntervalEntry { get }
 ```
+
+Available when `Element` is `MetricReport.IntervalEntry`.
 
 #### Discussion
 

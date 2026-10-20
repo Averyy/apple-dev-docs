@@ -1,7 +1,8 @@
 # reserved
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Reserved, set to zero.
 
@@ -10,7 +11,7 @@ Reserved, set to zero.
 
 ## Declaration
 
-```swift
+```c
 UInt32 reserved[5];
 ```
 

@@ -1,7 +1,8 @@
 # init(cellularServiceID:fileURL:contentType:thumbnailURL:thumbnailContentType:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new file upload request with the given parameters.
 

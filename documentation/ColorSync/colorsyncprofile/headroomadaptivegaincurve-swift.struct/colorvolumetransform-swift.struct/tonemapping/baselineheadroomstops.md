@@ -1,7 +1,8 @@
 # baselineHeadroomStops
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Baseline headroom in stops above reference white.
 

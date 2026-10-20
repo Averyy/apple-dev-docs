@@ -1,6 +1,8 @@
 # Migrating OpenGL code to Metal
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [MigratingOpenGLCodeToMetal.zip](https://docs-assets.developer.apple.com/published/7eb52e0c29cd/MigratingOpenGLCodeToMetal.zip)
 
 Replace your app’s deprecated OpenGL code with Metal.
 
@@ -13,9 +15,9 @@ Replace your app’s deprecated OpenGL code with Metal.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC 2019 session [`611: Bringing OpenGL Apps to Metal`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/611/).
+> **Note**: This sample code project is associated with WWDC 2019 session [611: Bringing OpenGL Apps to Metal](https://developer.apple.com/videos/play/wwdc2019/611/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run the app:
 
@@ -24,7 +26,8 @@ To run the app:
 
 ## See Also
 
-- [Mixing Metal and OpenGL rendering in a view](mixing-metal-and-opengl-rendering-in-a-view.md)
+### OpenGL
+- [Mixing Metal and OpenGL rendering in a view](./mixing-metal-and-opengl-rendering-in-a-view.md)
   Draw with Metal and OpenGL in the same view using an interoperable texture.
 
 

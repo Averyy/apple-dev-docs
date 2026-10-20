@@ -1,7 +1,8 @@
 # requester
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The network peer requesting ownership.
 
@@ -11,7 +12,7 @@ The network peer requesting ownership.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ let requester: any SynchronizationPeerID
 
 ## See Also
 
-- [let entity: Entity](synchronizationevents/ownershiprequest/entity.md)
+### Getting the involved parties
+- [let entity: Entity](./entity.md)
   The entity over which the network peer would like to gain ownership.
 
 

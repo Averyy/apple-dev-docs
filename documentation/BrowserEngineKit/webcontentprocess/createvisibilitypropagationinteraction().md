@@ -1,7 +1,8 @@
 # createVisibilityPropagationInteraction()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an interaction that associates a view with the web content process.
 
@@ -23,9 +24,10 @@ If your web content extension prepares content for multiple views, create a sepa
 
 ## See Also
 
-- [Propagating view visibility information to extension processes](propagating-view-visibility-information-to-browser-extensions.md)
+### Visibility propagation
+- [Propagating view visibility information to extension processes](../propagating-view-visibility-information-to-browser-extensions.md)
   Register the extensions that contribute to preparing your browser app’s UI.
-- [func createVisibilityPropagationInteraction() -> any UIInteraction](renderingprocess/createvisibilitypropagationinteraction.md)
+- [func createVisibilityPropagationInteraction() -> any UIInteraction](../renderingprocess/createvisibilitypropagationinteraction%28%29.md)
   Returns an interaction that associates a view with the rendering process.
 
 

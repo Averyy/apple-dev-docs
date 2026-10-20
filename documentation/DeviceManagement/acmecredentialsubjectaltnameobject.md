@@ -1,7 +1,8 @@
 # ACMECredentialSubjectAltNameObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Specifies the subject’s alternative name that the device requests for the certificate that the ACME server issues. The ACME server may override or ignore this field in the certificate it issues.
 
@@ -16,7 +17,7 @@ Specifies the subject’s alternative name that the device requests for the cert
 
 ## Declaration
 
-```swift
+```
 object ACMECredentialSubjectAltNameObject
 ```
 

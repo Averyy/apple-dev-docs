@@ -1,7 +1,8 @@
 # init(device:kernelWidth:kernelHeight:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the kernel with a specified width and height.
 
@@ -17,6 +18,10 @@ Initializes the kernel with a specified width and height.
 
 ```swift
 init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device kernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight;
 ```
 
 #### Return Value

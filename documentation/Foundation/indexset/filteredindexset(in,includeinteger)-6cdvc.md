@@ -1,7 +1,8 @@
 # filteredIndexSet(in:includeInteger:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an IndexSet filtered according to the result of `includeInteger`.
 
@@ -27,9 +28,10 @@ func filteredIndexSet(in range: Range<IndexSet.Element>, includeInteger: (IndexS
 
 ## See Also
 
-- [func filteredIndexSet(in: ClosedRange<IndexSet.Element>, includeInteger: (IndexSet.Element) throws -> Bool) rethrows -> IndexSet](indexset/filteredindexset(in:includeinteger:)-9dn86.md)
+### Selecting Elements
+- [func filteredIndexSet(in: ClosedRange<IndexSet.Element>, includeInteger: (IndexSet.Element) throws -> Bool) rethrows -> IndexSet](./filteredindexset%28in,includeinteger%29-9dn86.md)
   Returns an IndexSet filtered according to the result of `includeInteger`.
-- [func filteredIndexSet(includeInteger: (IndexSet.Element) throws -> Bool) rethrows -> IndexSet](indexset/filteredindexset(includeinteger:).md)
+- [func filteredIndexSet(includeInteger: (IndexSet.Element) throws -> Bool) rethrows -> IndexSet](./filteredindexset%28includeinteger%29.md)
   Returns an IndexSet filtered according to the result of `includeInteger`.
 
 

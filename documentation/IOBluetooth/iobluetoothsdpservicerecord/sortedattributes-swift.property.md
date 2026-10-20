@@ -1,17 +1,22 @@
 # sortedAttributes
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a sorted array of SDP attributes
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var sortedAttributes: [Any]! { get }
+```
+
+```objc
+@property (copy, readonly) NSArray * sortedAttributes;
 ```
 
 #### Return Value

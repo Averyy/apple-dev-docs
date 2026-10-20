@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 func drop(_ dragItem: UIDragItem, intoRowAt indexPath: IndexPath, rect: CGRect) -> any UIDragAnimating
 ```
 
+```objc
+- (id<UIDragAnimating>) dropItem:(UIDragItem *) dragItem intoRowAtIndexPath:(NSIndexPath *) indexPath rect:(CGRect) rect;
+```
+
 #### Discussion
 
 Use this method to animate drops where you incorporate the dragged items into another item of your table view. For example, when incorporating items into a folder, you would use this method to animate the items in a way that makes it look like they were placed into the folder.
@@ -28,11 +33,12 @@ Use this method to animate drops where you incorporate the dragged items into an
 
 ## See Also
 
-- [func drop(UIDragItem, toRowAt: IndexPath) -> any UIDragAnimating](uitableviewdropcoordinator/drop(_:torowat:).md)
+### Animating rows to their destination
+- [func drop(UIDragItem, toRowAt: IndexPath) -> any UIDragAnimating](./drop%28_,torowat%29.md)
   Animates the item to the specified index path in the table view.
-- [func drop(UIDragItem, to: UIDragPreviewTarget) -> any UIDragAnimating](uitableviewdropcoordinator/drop(_:to:)-57wx.md)
+- [func drop(UIDragItem, to: UIDragPreviewTarget) -> any UIDragAnimating](./drop%28_,to%29-57wx.md)
   Animates the item to an arbitrary location in your view hierarchy.
-- [func drop(UIDragItem, to: UITableViewDropPlaceholder) -> any UITableViewDropPlaceholderContext](uitableviewdropcoordinator/drop(_:to:)-3znax.md)
+- [func drop(UIDragItem, to: UITableViewDropPlaceholder) -> any UITableViewDropPlaceholderContext](./drop%28_,to%29-3znax.md)
   Animates the item to the specified location and inserts a placeholder cell at that location.
 
 

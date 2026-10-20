@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kFWAVCConsumerMode_JUNK](1645901-anonymous/kfwavcconsumermode_junk.md)
-- [kFWAVCConsumerMode_LAST](1645901-anonymous/kfwavcconsumermode_last.md)
-- [kFWAVCConsumerMode_LESS](1645901-anonymous/kfwavcconsumermode_less.md)
-- [kFWAVCConsumerMode_LOST](1645901-anonymous/kfwavcconsumermode_lost.md)
-- [kFWAVCConsumerMode_MORE](1645901-anonymous/kfwavcconsumermode_more.md)
+- [kFWAVCConsumerMode_JUNK](./api-1645901-anonymous/kfwavcconsumermode_junk.md)
+- [kFWAVCConsumerMode_LAST](./api-1645901-anonymous/kfwavcconsumermode_last.md)
+- [kFWAVCConsumerMode_LESS](./api-1645901-anonymous/kfwavcconsumermode_less.md)
+- [kFWAVCConsumerMode_LOST](./api-1645901-anonymous/kfwavcconsumermode_lost.md)
+- [kFWAVCConsumerMode_MORE](./api-1645901-anonymous/kfwavcconsumermode_more.md)
 
 
 ---

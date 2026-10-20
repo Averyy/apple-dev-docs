@@ -1,16 +1,17 @@
 # UITextInputTokenizer
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A tokenizer, which is an object that allows the text input system to evaluate text units of different granularities.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,41 +20,46 @@ A tokenizer, which is an object that allows the text input system to evaluate te
 protocol UITextInputTokenizer : NSObjectProtocol
 ```
 
+```objc
+@protocol UITextInputTokenizer <NSObject>
+```
+
 #### Overview
 
 Granularities of text units are always evaluated with reference to a storage or reference direction.
 
-Text-processing objects that conform to the [`UITextInput`](uitextinput.md) protocol must hold a reference to a tokenizer (through the [`tokenizer`](uitextinput/tokenizer.md) property). The [`UITextInputStringTokenizer`](uitextinputstringtokenizer.md) class provides a default base implementation of the [`UITextInputTokenizer`](uitextinputtokenizer.md) protocol. Tokenizers of this class are suitable for most western-language keyboards. Apps with different requirements may adopt the [`UITextInputTokenizer`](uitextinputtokenizer.md) protocol and create their own tokenizers.
+Text-processing objects that conform to the [`UITextInput`](./uitextinput.md) protocol must hold a reference to a tokenizer (through the [`tokenizer`](./uitextinput/tokenizer.md) property). The [`UITextInputStringTokenizer`](./uitextinputstringtokenizer.md) class provides a default base implementation of the [`UITextInputTokenizer`](./uitextinputtokenizer.md) protocol. Tokenizers of this class are suitable for most western-language keyboards. Apps with different requirements may adopt the [`UITextInputTokenizer`](./uitextinputtokenizer.md) protocol and create their own tokenizers.
 
 ## Topics
 
 ### Determining text positions relative to unit boundaries
-- [func isPosition(UITextPosition, atBoundary: UITextGranularity, inDirection: UITextDirection) -> Bool](uitextinputtokenizer/isposition(_:atboundary:indirection:).md)
+- [func isPosition(UITextPosition, atBoundary: UITextGranularity, inDirection: UITextDirection) -> Bool](./uitextinputtokenizer/isposition%28_,atboundary,indirection%29.md)
   Return whether a text position is at a boundary of a text unit of a specified granularity in a specified direction.
-- [func isPosition(UITextPosition, withinTextUnit: UITextGranularity, inDirection: UITextDirection) -> Bool](uitextinputtokenizer/isposition(_:withintextunit:indirection:).md)
+- [func isPosition(UITextPosition, withinTextUnit: UITextGranularity, inDirection: UITextDirection) -> Bool](./uitextinputtokenizer/isposition%28_,withintextunit,indirection%29.md)
   Return whether a text position is within a text unit of a specified granularity in a specified direction.
 ### Computing text position by unit boundaries
-- [func position(from: UITextPosition, toBoundary: UITextGranularity, inDirection: UITextDirection) -> UITextPosition?](uitextinputtokenizer/position(from:toboundary:indirection:).md)
+- [func position(from: UITextPosition, toBoundary: UITextGranularity, inDirection: UITextDirection) -> UITextPosition?](./uitextinputtokenizer/position%28from,toboundary,indirection%29.md)
   Return the next text position at a boundary of a text unit of the given granularity in a given direction.
 ### Getting ranges of specific text units
-- [func rangeEnclosingPosition(UITextPosition, with: UITextGranularity, inDirection: UITextDirection) -> UITextRange?](uitextinputtokenizer/rangeenclosingposition(_:with:indirection:).md)
+- [func rangeEnclosingPosition(UITextPosition, with: UITextGranularity, inDirection: UITextDirection) -> UITextRange?](./uitextinputtokenizer/rangeenclosingposition%28_,with,indirection%29.md)
   Return the range for the text enclosing a text position in a text unit of a given granularity in a given direction.
 ### Constants
-- [struct UITextDirection](uitextdirection.md)
+- [struct UITextDirection](./uitextdirection.md)
   The direction of the text.
-- [enum UITextGranularity](uitextgranularity.md)
+- [enum UITextGranularity](./uitextgranularity.md)
   The granularity of a unit of text.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [UITextInputStringTokenizer](uitextinputstringtokenizer.md)
+- [UITextInputStringTokenizer](./uitextinputstringtokenizer.md)
 
 ## See Also
 
-- [class UITextInputStringTokenizer](uitextinputstringtokenizer.md)
+### Text tokenizer
+- [class UITextInputStringTokenizer](./uitextinputstringtokenizer.md)
   A base implementation of the text-input tokenizer protocol.
 
 

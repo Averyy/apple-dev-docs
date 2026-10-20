@@ -1,7 +1,8 @@
 # range
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of characters in the original text corresponding to the match.
 
@@ -30,9 +31,10 @@ To extract semantic information from a match, examine its details properties.
 
 ## See Also
 
-- [let details: DataDetector.Match.SemanticDetails](datadetector/match/details.md)
+### Match details
+- [let details: DataDetector.Match.SemanticDetails](./details.md)
   A property that contains the type and semantic data found in a match.
-- [let preferredHighlightStyle: DataDetector.Match.HighlightStyle](datadetector/match/preferredhighlightstyle.md)
+- [let preferredHighlightStyle: DataDetector.Match.HighlightStyle](./preferredhighlightstyle.md)
   A value that suggests a highlight style for a match.
 
 

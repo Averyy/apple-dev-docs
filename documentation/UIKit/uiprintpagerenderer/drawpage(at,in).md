@@ -1,7 +1,8 @@
 # drawPage(at:in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a page of content for the printer.
 
@@ -17,11 +18,15 @@ Draws a page of content for the printer.
 func drawPage(at pageIndex: Int, in printableRect: CGRect)
 ```
 
+```objc
+- (void) drawPageAtIndex:(NSInteger) pageIndex inRect:(CGRect) printableRect;
+```
+
 #### Discussion
 
-The default implementation of this method calls, in sequence, [`drawHeaderForPage(at:in:)`](uiprintpagerenderer/drawheaderforpage(at:in:).md), [`drawContentForPage(at:in:)`](uiprintpagerenderer/drawcontentforpage(at:in:).md), [`drawPrintFormatter(_:forPageAt:)`](uiprintpagerenderer/drawprintformatter(_:forpageat:).md), and [`drawFooterForPage(at:in:)`](uiprintpagerenderer/drawfooterforpage(at:in:).md). Override this method to draw the specified page of content for the printer.
+The default implementation of this method calls, in sequence, [`drawHeaderForPage(at:in:)`](./drawheaderforpage%28at,in%29.md), [`drawContentForPage(at:in:)`](./drawcontentforpage%28at,in%29.md), [`drawPrintFormatter(_:forPageAt:)`](./drawprintformatter%28_,forpageat%29.md), and [`drawFooterForPage(at:in:)`](./drawfooterforpage%28at,in%29.md). Override this method to draw the specified page of content for the printer.
 
-The system configures this method for drawing to the current graphics context according to [`UIGraphicsGetCurrentContext()`](uigraphicsgetcurrentcontext().md).
+The system configures this method for drawing to the current graphics context according to [`UIGraphicsGetCurrentContext()`](../uigraphicsgetcurrentcontext%28%29.md).
 
 ## Parameters
 
@@ -30,13 +35,14 @@ The system configures this method for drawing to the current graphics context ac
 
 ## See Also
 
-- [func drawHeaderForPage(at: Int, in: CGRect)](uiprintpagerenderer/drawheaderforpage(at:in:).md)
+### Drawing a page
+- [func drawHeaderForPage(at: Int, in: CGRect)](./drawheaderforpage%28at,in%29.md)
   Draws the header of a page.
-- [func drawContentForPage(at: Int, in: CGRect)](uiprintpagerenderer/drawcontentforpage(at:in:).md)
+- [func drawContentForPage(at: Int, in: CGRect)](./drawcontentforpage%28at,in%29.md)
   Draws the content of a page.
-- [func drawPrintFormatter(UIPrintFormatter, forPageAt: Int)](uiprintpagerenderer/drawprintformatter(_:forpageat:).md)
+- [func drawPrintFormatter(UIPrintFormatter, forPageAt: Int)](./drawprintformatter%28_,forpageat%29.md)
   Performs custom drawing in addition to the specified print formatter’s drawing for a page.
-- [func drawFooterForPage(at: Int, in: CGRect)](uiprintpagerenderer/drawfooterforpage(at:in:).md)
+- [func drawFooterForPage(at: Int, in: CGRect)](./drawfooterforpage%28at,in%29.md)
   Draws the footer of a page.
 
 

@@ -1,7 +1,8 @@
 # guestIdentifier
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A developer-created string that identifies a guest player.
 
@@ -19,9 +20,22 @@ A developer-created string that identifies a guest player.
 var guestIdentifier: String? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * guestIdentifier;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, nullable) NSString * guestIdentifier;
+```
+
 ## See Also
 
-- [class func anonymousGuestPlayer(withIdentifier: String) -> Self](gkplayer/anonymousguestplayer(withidentifier:).md)
+### Creating a guest player
+- [class func anonymousGuestPlayer(withIdentifier: String) -> Self](./anonymousguestplayer%28withidentifier%29.md)
   Creates a guest player with the specified identifier.
 
 

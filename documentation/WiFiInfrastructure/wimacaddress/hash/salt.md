@@ -1,7 +1,8 @@
 # salt
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The salt used to generate the hash.
 

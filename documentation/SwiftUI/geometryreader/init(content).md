@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -21,7 +22,8 @@ init(@ContentBuilder content: @escaping (GeometryProxy) -> Content)
 
 ## See Also
 
-- [var content: (GeometryProxy) -> Content](geometryreader/content.md)
+### Creating a geometry reader
+- [var content: (GeometryProxy) -> Content](./content.md)
 
 
 ---

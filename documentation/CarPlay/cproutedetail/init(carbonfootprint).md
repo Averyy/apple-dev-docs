@@ -1,7 +1,8 @@
 # init(carbonFootprint:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for carbon footprint.
 
@@ -14,6 +15,10 @@ Creates additional route information for carbon footprint.
 
 ```swift
 convenience init(carbonFootprint: Measurement<UnitMass>)
+```
+
+```objc
++ (instancetype) routeDetailWithCarbonFootprint:(NSMeasurement<NSUnitMass *> *) carbonFootprint;
 ```
 
 #### Return Value
@@ -30,8 +35,10 @@ The system formats the measurement with appropriate units and precision. Measure
 
 ## Parameters
 
-- `carbonFootprint`: A measurement of carbon emissions using @c NSUnitMass. Typical units include: - @c NSUnitMass.grams for small emissions (e.g., short trips, efficient vehicles)
-- @c NSUnitMass.kilograms for larger emissions (e.g., long journeys, less efficient vehicles)
+- `carbonFootprint`: A measurement of carbon emissions using @c NSUnitMass. Typical units include:
+
+  - @c NSUnitMass.grams for small emissions (e.g., short trips, efficient vehicles)
+  - @c NSUnitMass.kilograms for larger emissions (e.g., long journeys, less efficient vehicles)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text-replacement option with the specified underlying value.
 

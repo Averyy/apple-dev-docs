@@ -1,7 +1,8 @@
 # GKGameActivity.State.paused
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The game activity is paused.
 
@@ -17,6 +18,10 @@ The game activity is paused.
 
 ```swift
 case paused
+```
+
+```c
+GKGameActivityStatePaused
 ```
 
 

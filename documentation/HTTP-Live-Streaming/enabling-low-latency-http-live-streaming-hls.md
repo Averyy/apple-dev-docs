@@ -1,6 +1,7 @@
 # Enabling Low-Latency HTTP Live Streaming (HLS)
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Add Low-Latency HLS to your content streams to maintain scalability.
 
@@ -16,7 +17,7 @@ Backend production tools and content delivery systems must implement new rules t
 - Using preload hints
 - Rendition reports
 
-The HLS specification defines low-latency extensions in [`HTTP Live Streaming 2nd Edition`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis) revision 7 and later.
+The HLS specification defines low-latency extensions in [HTTP Live Streaming 2nd Edition](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis) revision 7 and later.
 
 ##### Generate Partial Media Segments
 
@@ -26,13 +27,13 @@ While regular Media Segments might be 6 seconds each, an example Partial Segment
 
 You add Partial Segments to the Media Playlist using the new `EXT-X-PART` tag. You can place other Media Segment Tags (such as `EXT-X-DISCONTINUITY`) at Parent Segment boundaries.
 
-A Partial Segment must be in one of the Supported Media Segment Formats described in section 3.1 of [`HTTP Live Streaming 2nd Edition`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis).
+A Partial Segment must be in one of the Supported Media Segment Formats described in section 3.1 of [HTTP Live Streaming 2nd Edition](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis).
 
 ##### Provide Playlist Delta Updates
 
 Clients transfer playlists more frequently with Low-Latency HLS. They can request and servers can provide Playlist Delta Updates, which reduce this transfer cost. These updates replace a considerable portion of the Playlist that the client already has with the new `EXT-X-SKIP` tag.
 
-##### Blocking Playlist Reloads
+##### Blocking Playlist reloads
 
 To support efficient client notification of new Media Segments and Partial Segments, Low-Latency HLS introduces the ability to block a Playlist reload request. When a client issues an HTTP GET to request a Media Playlist update, it can add special query parameters called Delivery Directives to specify that it wants the Playlist response to include a future segment. The server then holds onto the request (blocks) until a version of the Playlist that contains that segment is available. Blocking Playlist Reloads eliminates Playlist polling.
 
@@ -44,7 +45,7 @@ Eliminating unnecessary round trips is critical when delivering low-latency stre
 
 When playing at low latency, the client must be able to switch renditions with a minimum number of round trips in order to perform bit-rate adaptation. To support this, the server adds Rendition Reports on the other renditions in the Multivariant Playlist to each Media Playlist. The `EXT-X-RENDITION-REPORT` tag carries a Rendition Report and provides information, such as the last Media Sequence Number and Part currently in the Media Playlist of that rendition.
 
-##### Add Low Latency Hls Delivery Directives
+##### Add Low-Latency HLS Delivery Directives
 
 HLS now defines Delivery Directives, which are special query parameters that can be added to the URL of a GET request for a Playlist. These Delivery Directives include:
 
@@ -52,26 +53,30 @@ HLS now defines Delivery Directives, which are special query parameters that can
 - **`_HLS_part=<N>`**: Indicates, in combination with `_HLS_msn`, that the server must hold the request until a Playlist contains Partial Segment N of Media Sequence Number M or later. The first Partial Segment of a segment is `_HLS_part=0`, the second is `_HLS_part=1`, and so on. The `_HLS_part` parameter requires an `_HLS_msn` parameter.
 - **`_HLS_skip=YES|v2`**: Requests a Playlist Delta Update, in which the earlier portion of the Playlist is replaced with an `EXT-X-SKIP` tag.
 
-##### Utilize New Media Playlist Tags for Low Latency Hls
+##### Utilize New Media Playlist Tags for Low-Latency HLS
 
 The following Playlist tags support Low-Latency HLS.
 
 - **`EXT-X-SERVER-CONTROL`**: Allows the server to indicate support for features such as Blocking Playlist Reload and Playlist Delta Updates.
 - **`EXT-X-PART-INF`**: Provides information about HLS Partial Segments in the Playlist.
 - **`EXT-X-PART`**: Identifies a Partial Segment in the Playlist.
-- **`EXT-X-PRELOAD-HINT`**: Hints that a resource or a byte range of a resource are needed to play back an upcoming part of the presentation. Note that when a hinted Partial Segment eventually appears in the Playlist as an `EXT-X-PART` tag, it may be different than previous Partial Segment. It may have a different Discontinuity Sequence Number, Media Initialization Section, or encryption configuration. In other words, the Partial Segment can be preceded by an `EXTINF` tag indicating the end of the previous Parent Segment and an `EXT-X-DISCONTINUITY`, `EXT-X-MAP`, or `EXT-X-KEY` tag. A server may choose not to publish a previously hinted Partial Segment if the planned segmentation changes, such as in the case of early return from an ad.
+- **`EXT-X-PRELOAD-HINT`**: Hints that a resource or a byte range of a resource are needed to play back an upcoming part of the presentation.
+
+  Note that when a hinted Partial Segment eventually appears in the Playlist as an `EXT-X-PART` tag, it may be different than previous Partial Segment. It may have a different Discontinuity Sequence Number, Media Initialization Section, or encryption configuration. In other words, the Partial Segment can be preceded by an `EXTINF` tag indicating the end of the previous Parent Segment and an `EXT-X-DISCONTINUITY`, `EXT-X-MAP`, or `EXT-X-KEY` tag.
+
+  A server may choose not to publish a previously hinted Partial Segment if the planned segmentation changes, such as in the case of early return from an ad.
 - **`EXT-X-RENDITION-REPORT`**: Carries information about an associated rendition that’s as up to date as the Playlist that contains it.
 - **`EXT-X-SKIP`**: When a server issues a Playlist Delta Update, it replaces Media Segments earlier than the Skip Boundary and their associated tags with an` EXT-X-SKIP` tag.
 
-##### Comply with the Low Latency Server Configuration Profile
+##### Comply with the Low-Latency Server Configuration Profile
 
-To support timely delivery of media, Low-Latency HLS requires certain transport features beyond what is necessary for regular HLS. These requirements are defined in the Low-Latency Server Configuration Profile. Because the Low-Latency HLS syntax is backward-compatible with existing HLS, clients fall back to regular-latency HLS playback if they discover that the server doesn’t support an aspect of the required configuration. [`HTTP Live Streaming 2nd Edition`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis) defines the Low-Latency Server Configuration Profile in Appendix B.
+To support timely delivery of media, Low-Latency HLS requires certain transport features beyond what is necessary for regular HLS. These requirements are defined in the Low-Latency Server Configuration Profile. Because the Low-Latency HLS syntax is backward-compatible with existing HLS, clients fall back to regular-latency HLS playback if they discover that the server doesn’t support an aspect of the required configuration. [HTTP Live Streaming 2nd Edition](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis) defines the Low-Latency Server Configuration Profile in Appendix B.
 
-##### Expect Delivery From Cdn Tune in
+##### Expect Delivery from CDN Tune-In
 
-Players of Low-Latency HLS should expect delivery of low-latency streams through CDNs and other HTTP caches. To start playback at low latency, the client must first obtain a reasonably up-to-date version of the Media Playlist. Appendix C of [`HTTP Live Streaming 2nd Edition`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis) describes an efficient approach for obtaining an up-to-date Media Playlist served through an HTTP cache.
+Players of Low-Latency HLS should expect delivery of low-latency streams through CDNs and other HTTP caches. To start playback at low latency, the client must first obtain a reasonably up-to-date version of the Media Playlist. Appendix C of [HTTP Live Streaming 2nd Edition](https://datatracker.ietf.org/doc/html/draft-pantos-hls-rfc8216bis) describes an efficient approach for obtaining an up-to-date Media Playlist served through an HTTP cache.
 
-##### Examine a Low Latency Hls Playlist
+##### Examine a Low-Latency HLS Playlist
 
 Here’s an example of a low-latency playlist. As mentioned above, the Low-Latency HLS syntax is backward-compatible, so we can use a version number of six. Clients that do not understand the Low-Latency tags will ignore them.
 
@@ -199,7 +204,7 @@ fileSequence272.mp4
 #EXT-X-RENDITION-REPORT:URI="../4M/waitForMSN.php",LAST-MSN=273,LAST-PART=3
 ```
 
-##### Examine Byterange Addressed Parts
+##### Examine Byterange-Addressed Parts
 
 Here’s an example of a byterange-addressed part. In a real playlist at least some of the EXT-X-PART tags would contain an INDEPENDENT attribute. Those have been removed to make the example clearer.
 
@@ -257,23 +262,24 @@ The following table describes the changes to the Protocol Extension for Low-Late
 
 ## See Also
 
-- [HTTP Live Streaming (HLS) authoring specification for Apple devices](hls-authoring-specification-for-apple-devices.md)
+### Specifications and other documents
+- [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md)
   Learn the requirements for live and on-demand audio and video content delivery using HLS.
-- [HLS for Apple Podcasts](hls-for-podcasts.md)
+- [HLS for Apple Podcasts](./hls-for-podcasts.md)
   Deliver HTTP Live Streaming (HLS) video-on-demand content to Apple Podcasts.
-- [Using content protection systems with HLS](using-content-protection-systems-with-hls.md)
+- [Using content protection systems with HLS](./using-content-protection-systems-with-hls.md)
   Adding encryption keys to media playlists
-- [About the Common Media Application Format with HTTP Live Streaming (HLS)](about-the-common-media-application-format-with-http-live-streaming-hls.md)
+- [About the Common Media Application Format with HTTP Live Streaming (HLS)](./about-the-common-media-application-format-with-http-live-streaming-hls.md)
   Learn the Common Media Application Format as it applies to HLS.
-- [Links to additional specifications and videos](links-to-additional-specifications-and-videos.md)
+- [Links to additional specifications and videos](./links-to-additional-specifications-and-videos.md)
   Review additional specifications and documents.
-- [Videos about HLS](videos-about-hls.md)
+- [Videos about HLS](./videos-about-hls.md)
   Review informational videos about HTTP Live Streaming.
-- [Providing metadata for xHE-AAC video soundtracks](providing-metadata-for-xhe-aac-video-soundtracks.md)
+- [Providing metadata for xHE-AAC video soundtracks](./providing-metadata-for-xhe-aac-video-soundtracks.md)
   Ensure volume normalization by including metadata for loudness and dynamic range control.
-- [Adjusting anchor loudness](adjusting-anchor-loudness.md)
+- [Adjusting anchor loudness](./adjusting-anchor-loudness.md)
   Adjust anchor loudness when measurements of speech-gated loudness for a full mix may be inaccurate, such as when speech activity is low.
-- [Providing JavaScript Object Notation (JSON) chapters](providing-javascript-object-notation-json-chapters.md)
+- [Providing JavaScript Object Notation (JSON) chapters](./providing-javascript-object-notation-json-chapters.md)
   Prepare JSON chapters for HTTP Live Streaming.
 
 

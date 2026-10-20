@@ -1,9 +1,10 @@
 # LowLevelDeformation.Renormalization
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-An accessor for the renormalization buffers of a [`LowLevelDeformation`](lowleveldeformation.md).
+An accessor for the renormalization buffers of a [`LowLevelDeformation`](../lowleveldeformation.md).
 
 **Availability**:
 - iOS 27.0+
@@ -20,11 +21,11 @@ struct Renormalization
 ## Topics
 
 ### Instance Methods
-- [func replaceAdjacencies<R>((inout MutableRawSpan) -> R) throws -> R](lowleveldeformation/renormalization-swift.struct/replaceadjacencies(_:).md)
+- [func replaceAdjacencies<R>((inout MutableRawSpan) -> R) throws -> R](./renormalization-swift.struct/replaceadjacencies%28_%29.md)
   Fills the adjacency buffer using the given closure.
-- [func replaceAdjacencyEndIndices<R>((inout MutableRawSpan) -> R) throws -> R](lowleveldeformation/renormalization-swift.struct/replaceadjacencyendindices(_:).md)
+- [func replaceAdjacencyEndIndices<R>((inout MutableRawSpan) -> R) throws -> R](./renormalization-swift.struct/replaceadjacencyendindices%28_%29.md)
   Fills the per-vertex adjacency end-indices buffer using the given closure.
-- [func replaceTriangleIndices<R>((inout MutableRawSpan) -> R) throws -> R](lowleveldeformation/renormalization-swift.struct/replacetriangleindices(_:).md)
+- [func replaceTriangleIndices<R>((inout MutableRawSpan) -> R) throws -> R](./renormalization-swift.struct/replacetriangleindices%28_%29.md)
   Fills the triangle index buffer using the given closure.
 
 

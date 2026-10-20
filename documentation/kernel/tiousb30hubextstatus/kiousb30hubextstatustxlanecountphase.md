@@ -1,7 +1,8 @@
 # kIOUSB30HubExtStatusTxLaneCountPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The transmit lane count phase.
 
@@ -10,7 +11,7 @@ The transmit lane count phase.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30HubExtStatusTxLaneCountPhase = IOUSBBitRangePhase(12, 15)
 ```
 

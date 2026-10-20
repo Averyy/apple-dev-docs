@@ -1,7 +1,8 @@
 # DigitalAudioInterface
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A stream to or from a digital audio interface, defined by ISO 60958.
 
@@ -10,7 +11,7 @@ A stream to or from a digital audio interface, defined by ISO 60958.
 
 ## Declaration
 
-```swift
+```c
 DigitalAudioInterface
 ```
 
@@ -20,7 +21,8 @@ This type of interface is also known as SPDIF or AES/EBU. This terminal type app
 
 ## See Also
 
-- [Line](audiodriverkit/iouseraudiostreamterminaltype/line.md)
+### Audio Interfaces
+- [Line](./line.md)
   A line-level stream.
 
 

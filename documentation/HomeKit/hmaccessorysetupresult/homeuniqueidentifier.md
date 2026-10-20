@@ -1,7 +1,8 @@
 # homeUniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The home that accessories were added to.
 
@@ -16,13 +17,18 @@ The home that accessories were added to.
 var homeUniqueIdentifier: UUID { get }
 ```
 
+```objc
+@property (copy, readonly) NSUUID * homeUniqueIdentifier;
+```
+
 #### Discussion
 
-See [`uniqueIdentifier`](hmhome/uniqueidentifier.md) for more information.
+See [`uniqueIdentifier`](../hmhome/uniqueidentifier.md) for more information.
 
 ## See Also
 
-- [var accessoryUniqueIdentifiers: [UUID]](hmaccessorysetupresult/accessoryuniqueidentifiers.md)
+### Getting results
+- [var accessoryUniqueIdentifiers: [UUID]](./accessoryuniqueidentifiers.md)
   The values corresponding to accessories that are set up.
 
 

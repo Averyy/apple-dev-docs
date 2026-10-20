@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a category type using the provided identifier.
 
@@ -10,7 +11,7 @@ Creates a category type using the provided identifier.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ convenience init(_ identifier: HKCategoryTypeIdentifier)
 
 ## Parameters
 
-- `identifier`: An identifier that specifies the type of data to store in the sample. For a complete list of category type identifiers, see [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
+- `identifier`: An identifier that specifies the type of data to store in the sample. For a complete list of category type identifiers, see [`HKCategoryTypeIdentifier`](../hkcategorytypeidentifier.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # NSOutlineView.ColumnDidResizeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct ColumnDidResizeMessage
 ## Topics
 
 ### Initializers
-- [init(outlineView: NSOutlineView, tableColumn: NSTableColumn, oldWidth: CGFloat)](nsoutlineview/columndidresizemessage/init(outlineview:tablecolumn:oldwidth:).md)
+- [init(outlineView: NSOutlineView, tableColumn: NSTableColumn, oldWidth: CGFloat)](./columndidresizemessage/init%28outlineview,tablecolumn,oldwidth%29.md)
 ### Instance Properties
-- [var oldWidth: CGFloat](nsoutlineview/columndidresizemessage/oldwidth.md)
-- [var outlineView: NSOutlineView](nsoutlineview/columndidresizemessage/outlineview.md)
-- [var tableColumn: NSTableColumn](nsoutlineview/columndidresizemessage/tablecolumn.md)
+- [var oldWidth: CGFloat](./columndidresizemessage/oldwidth.md)
+- [var outlineView: NSOutlineView](./columndidresizemessage/outlineview.md)
+- [var tableColumn: NSTableColumn](./columndidresizemessage/tablecolumn.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

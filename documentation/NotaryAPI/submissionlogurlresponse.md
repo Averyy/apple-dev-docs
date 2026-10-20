@@ -1,7 +1,8 @@
 # SubmissionLogURLResponse
 
 **Framework**: Notary API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The notary service’s response to a request for the log information about a completed submission.
 
@@ -10,20 +11,20 @@ The notary service’s response to a request for the log information about a com
 
 ## Declaration
 
-```swift
+```
 object SubmissionLogURLResponse
 ```
 
 #### Discussion
 
-You receive a structure of this type in response to a call to the [`Get Submission Log`](get-submission-log.md) endpoint.
+You receive a structure of this type in response to a call to the [`Get Submission Log`](./get-submission-log.md) endpoint.
 
 ## Topics
 
 ### Objects
-- [object SubmissionLogURLResponse.Data](submissionlogurlresponse/data-data.dictionary.md)
+- [object SubmissionLogURLResponse.Data](./submissionlogurlresponse/data-data.dictionary.md)
   Data that indicates how to get the log information for a particular submission.
-- [object SubmissionLogURLResponse.Meta](submissionlogurlresponse/meta-data.dictionary.md)
+- [object SubmissionLogURLResponse.Meta](./submissionlogurlresponse/meta-data.dictionary.md)
   An empty object.
 
 ## Properties
@@ -33,11 +34,12 @@ You receive a structure of this type in response to a call to the [`Get Submissi
 
 ## See Also
 
-- [Get Submission Status](get-submission-status.md)
+### Notarization results
+- [Get Submission Status](./get-submission-status.md)
   Fetch the status of a software notarization submission.
-- [object SubmissionResponse](submissionresponse.md)
+- [object SubmissionResponse](./submissionresponse.md)
   The notary service’s response to a request for the status of a submission.
-- [Get Submission Log](get-submission-log.md)
+- [Get Submission Log](./get-submission-log.md)
   Fetch details about a single completed notarization.
 
 

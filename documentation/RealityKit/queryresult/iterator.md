@@ -1,7 +1,8 @@
 # QueryResult.Iterator
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of iterator used for entity query results.
 
@@ -11,7 +12,7 @@ The type of iterator used for entity query results.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,17 +23,18 @@ struct Iterator
 ## Topics
 
 ### Advancing the iterator
-- [func next() -> Element?](queryresult/iterator/next.md)
+- [func next() -> Element?](./iterator/next%28%29.md)
   Advances to the next entity and returns it.
 
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](../swift/iteratorprotocol.md)
+- [IteratorProtocol](../../Swift/iteratorprotocol.md)
 
 ## See Also
 
-- [func makeIterator() -> QueryResult<Element>.Iterator](queryresult/makeiterator.md)
+### Creating an iterator
+- [func makeIterator() -> QueryResult<Element>.Iterator](./makeiterator%28%29.md)
   Returns an iterator for the contained entities.
 
 

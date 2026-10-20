@@ -1,7 +1,8 @@
 # sources
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing all the sources contributing to these statistics.
 
@@ -19,17 +20,22 @@ An array containing all the sources contributing to these statistics.
 var sources: [HKSource]? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSArray<HKSource *> * sources;
+```
+
 #### Discussion
 
-If the [`separateBySource`](hkstatisticsoptions/separatebysource.md) option was specified, this property holds an array of all the sources included in the calculations. If the [`separateBySource`](hkstatisticsoptions/separatebysource.md) option was not specified, the property contains `nil`.
+If the [`separateBySource`](../hkstatisticsoptions/separatebysource.md) option was specified, this property holds an array of all the sources included in the calculations. If the [`separateBySource`](../hkstatisticsoptions/separatebysource.md) option was not specified, the property contains `nil`.
 
 ## See Also
 
-- [var startDate: Date](hkstatistics/startdate.md)
+### Getting Property Data
+- [var startDate: Date](./startdate.md)
   The start of the time period included in these statistics.
-- [var endDate: Date](hkstatistics/enddate.md)
+- [var endDate: Date](./enddate.md)
   The end of the time period included in these statistics.
-- [var quantityType: HKQuantityType](hkstatistics/quantitytype.md)
+- [var quantityType: HKQuantityType](./quantitytype.md)
   The quantity type of the samples used to calculate these statistics.
 
 

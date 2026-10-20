@@ -1,7 +1,8 @@
 # JPKIPassContents.Error.invalidInput
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The PIN or password doesn’t meet the specified conditions.
 
@@ -21,13 +22,14 @@ This error occurs when there’s an attempt to update the PIN or password for a 
 
 ## See Also
 
-- [JPKIPassContents.Error.appNotForeground](jpkipasscontents/error/appnotforeground.md)
+### Error cases
+- [JPKIPassContents.Error.appNotForeground](./appnotforeground.md)
   The calling app isn’t in the foreground.
-- [JPKIPassContents.Error.biometricUnavailable](jpkipasscontents/error/biometricunavailable.md)
+- [JPKIPassContents.Error.biometricUnavailable](./biometricunavailable.md)
   Biometric authorization isn’t available.
-- [JPKIPassContents.Error.incorrectUserAuthentication](jpkipasscontents/error/incorrectuserauthentication.md)
+- [JPKIPassContents.Error.incorrectUserAuthentication](./incorrectuserauthentication.md)
   The provided credential authentication request wasn’t accepted.
-- [JPKIPassContents.Error.resourceNotAvailable](jpkipasscontents/error/resourcenotavailable.md)
+- [JPKIPassContents.Error.resourceNotAvailable](./resourcenotavailable.md)
   The system resouce is currently unavailable.
 
 

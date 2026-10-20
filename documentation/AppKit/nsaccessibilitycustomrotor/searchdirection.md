@@ -1,7 +1,8 @@
 # NSAccessibilityCustomRotor.SearchDirection
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the direction to search for an item result.
 
@@ -14,29 +15,34 @@ Constants that describe the direction to search for an item result.
 enum SearchDirection
 ```
 
+```c
+enum NSAccessibilityCustomRotorSearchDirection : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSAccessibilityCustomRotor.SearchDirection.previous](nsaccessibilitycustomrotor/searchdirection/previous.md)
+- [NSAccessibilityCustomRotor.SearchDirection.previous](./searchdirection/previous.md)
   The previous search item.
-- [NSAccessibilityCustomRotor.SearchDirection.next](nsaccessibilitycustomrotor/searchdirection/next.md)
+- [NSAccessibilityCustomRotor.SearchDirection.next](./searchdirection/next.md)
   The next search item.
 ### Initializers
-- [init?(rawValue: Int)](nsaccessibilitycustomrotor/searchdirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./searchdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var searchDirection: NSAccessibilityCustomRotor.SearchDirection](nsaccessibilitycustomrotor/searchparameters/searchdirection.md)
+### Specifying Search Direction
+- [var searchDirection: NSAccessibilityCustomRotor.SearchDirection](./searchparameters/searchdirection.md)
   The direction to search for an item result.
 
 

@@ -1,7 +1,8 @@
 # collisionOptions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Options for kinematic collision reporting.
 

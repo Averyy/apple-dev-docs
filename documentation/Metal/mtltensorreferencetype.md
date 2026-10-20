@@ -1,7 +1,8 @@
 # MTLTensorReferenceType
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a tensor in the shading language in a struct or array.
 
@@ -19,54 +20,59 @@ An object that represents a tensor in the shading language in a struct or array.
 class MTLTensorReferenceType
 ```
 
+```objc
+@interface MTLTensorReferenceType : MTLType
+```
+
 ## Topics
 
 ### Instance Properties
-- [var access: MTLBindingAccess](mtltensorreferencetype/access.md)
+- [var access: MTLBindingAccess](./mtltensorreferencetype/access.md)
   A value that represents the read/write permissions of the tensor.
-- [var auxiliaryPlanes: [MTLTensorAuxiliaryPlaneType]](mtltensorreferencetype/auxiliaryplanes.md)
+- [var auxiliaryPlanes: [MTLTensorAuxiliaryPlaneType]](./mtltensorreferencetype/auxiliaryplanes.md)
   The auxiliary planes that this tensor reference requires.
-- [var dimensions: MTLTensorExtents?](mtltensorreferencetype/dimensions.md)
+- [var dimensions: MTLTensorExtents?](./mtltensorreferencetype/dimensions.md)
   The array of sizes, in elements, one for each dimension of this tensor.
-- [var indexType: MTLDataType](mtltensorreferencetype/indextype.md)
+- [var indexType: MTLDataType](./mtltensorreferencetype/indextype.md)
   The data format you use for indexing into the tensor.
-- [var tensorDataType: MTLTensorDataType](mtltensorreferencetype/tensordatatype.md)
+- [var tensorDataType: MTLTensorDataType](./mtltensorreferencetype/tensordatatype.md)
   The underlying data format of the tensor.
 
 ## Relationships
 
 ### Inherits From
-- [MTLType](mtltype.md)
+- [MTLType](./mtltype.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTLTensor](mtltensor.md)
+### Tensors
+- [protocol MTLTensor](./mtltensor.md)
   A resource representing a multi-dimensional array that you can use with machine learning workloads.
-- [class MTLTensorDescriptor](mtltensordescriptor.md)
+- [class MTLTensorDescriptor](./mtltensordescriptor.md)
   A configuration type for creating new tensor instances.
-- [class MTLTensorExtents](mtltensorextents.md)
+- [class MTLTensorExtents](./mtltensorextents.md)
   An integer array that holds per-dimension values such as tensor sizes, strides, or block factors
-- [struct MTLTensorUsage](mtltensorusage.md)
+- [struct MTLTensorUsage](./mtltensorusage.md)
   The contexts in which you can use a tensor.
-- [let MTLTensorDomain: String](mtltensordomain.md)
+- [let MTLTensorDomain: String](./mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
-- [protocol MTLTensorBinding](mtltensorbinding.md)
+- [protocol MTLTensorBinding](./mtltensorbinding.md)
   An object that represents a tensor bound to a graphics or compute function or a machine learning function.
-- [struct MTLTensorError](mtltensorerror-swift.struct.md)
-- [MTLTensorError.Code](mtltensorerror-swift.struct/code.md)
+- [struct MTLTensorError](./mtltensorerror-swift.struct.md)
+- [MTLTensorError.Code](./mtltensorerror-swift.struct/code.md)
   The error codes that Metal can raise when you create a tensor.
-- [enum MTLTensorDataType](mtltensordatatype.md)
+- [enum MTLTensorDataType](./mtltensordatatype.md)
   The possible data types for the elements of a tensor.
-- [let MTLTensorDomain: String](mtltensordomain.md)
+- [let MTLTensorDomain: String](./mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
-- [var MTL_TENSOR_MAX_RANK: Int32](mtl_tensor_max_rank.md)
+- [var MTL_TENSOR_MAX_RANK: Int32](./mtl_tensor_max_rank.md)
 
 
 ---

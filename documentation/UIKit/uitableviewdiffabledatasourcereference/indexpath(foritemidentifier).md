@@ -1,7 +1,8 @@
 # indexPath(forItemIdentifier:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index path for the item with the specified identifier in the table view.
 
@@ -18,6 +19,10 @@ Returns an index path for the item with the specified identifier in the table vi
 func indexPath(forItemIdentifier identifier: Any) -> IndexPath?
 ```
 
+```objc
+- (NSIndexPath *) indexPathForItemIdentifier:(ItemIdentifierType) identifier;
+```
+
 #### Return Value
 
 The item’s index path, or `nil` if no item is found with the provided item identifier.
@@ -32,7 +37,8 @@ This method is a constant time operation, O(1), which means you can look up an i
 
 ## See Also
 
-- [func itemIdentifier(for: IndexPath) -> Any?](uitableviewdiffabledatasourcereference/itemidentifier(for:).md)
+### Identifying items
+- [func itemIdentifier(for: IndexPath) -> Any?](./itemidentifier%28for%29.md)
   Returns an identifier for the item at the specified index path in the table view.
 
 

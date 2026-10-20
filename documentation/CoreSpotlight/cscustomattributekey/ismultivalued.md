@@ -1,7 +1,8 @@
 # isMultiValued
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the custom attribute is likely to have multiple values, such as arrays, associated with it.
 
@@ -18,19 +19,24 @@ A Boolean value that indicates if the custom attribute is likely to have multipl
 var isMultiValued: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isMultiValued) BOOL multiValued;
+```
+
 #### Discussion
 
 The default value of this property is `false`.
 
 ## See Also
 
-- [var keyName: String](cscustomattributekey/keyname.md)
+### Getting the attribute details
+- [var keyName: String](./keyname.md)
   The name of the custom attribute key.
-- [var isSearchable: Bool](cscustomattributekey/issearchable.md)
+- [var isSearchable: Bool](./issearchable.md)
   A Boolean value that indicates if the custom attribute can be specified as a search term.
-- [var isSearchableByDefault: Bool](cscustomattributekey/issearchablebydefault.md)
+- [var isSearchableByDefault: Bool](./issearchablebydefault.md)
   A Boolean value that indicates if the custom attribute should be searchable by default.
-- [var isUnique: Bool](cscustomattributekey/isunique.md)
+- [var isUnique: Bool](./isunique.md)
   A Boolean value that indicates if duplicate custom attribute values should be treated as the same value to save storage space.
 
 

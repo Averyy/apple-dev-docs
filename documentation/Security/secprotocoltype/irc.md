@@ -1,7 +1,8 @@
 # SecProtocolType.IRC
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates IRC.
 
@@ -13,6 +14,10 @@ Indicates IRC.
 
 ```swift
 case IRC
+```
+
+```c
+kSecProtocolTypeIRC
 ```
 
 

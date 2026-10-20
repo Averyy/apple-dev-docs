@@ -1,7 +1,8 @@
 # Manipulable.Event
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes an event generated during a manipulation gesture.
 
@@ -17,24 +18,24 @@ struct Event
 ## Topics
 
 ### Structures
-- [Manipulable.Event.Value](manipulable/event/value-swift.struct.md)
+- [Manipulable.Event.Value](./event/value-swift.struct.md)
   Describes the value associated with a manipulation gesture event.
 ### Instance Properties
-- [var phase: Manipulable.Event.Phase](manipulable/event/phase-swift.property.md)
+- [var phase: Manipulable.Event.Phase](./event/phase-swift.property.md)
   The phase of the event.
-- [var value: Manipulable.Event.Value?](manipulable/event/value-swift.property.md)
+- [var value: Manipulable.Event.Value?](./event/value-swift.property.md)
   The value associated with the event.
 ### Enumerations
-- [Manipulable.Event.Phase](manipulable/event/phase-swift.enum.md)
+- [Manipulable.Event.Phase](./event/phase-swift.enum.md)
   Describes the phase of a manipulation gesture.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

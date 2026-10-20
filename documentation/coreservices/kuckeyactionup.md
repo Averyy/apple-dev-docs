@@ -1,7 +1,8 @@
 # kUCKeyActionUp
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The user is releasing the key.
 

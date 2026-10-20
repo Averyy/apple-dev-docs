@@ -1,7 +1,8 @@
 # BEAvailability
 
 **Framework**: BrowserKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that tests whether a device is eligible to run an alternative browser engine.
 
@@ -15,30 +16,35 @@ A class that tests whether a device is eligible to run an alternative browser en
 class BEAvailability
 ```
 
+```objc
+@interface BEAvailability : NSObject
+```
+
 ## Topics
 
 ### Testing eligibility
-- [class func isEligible(for: BEAvailability.Context, completionHandler: (Bool, (any Error)?) -> Void)](beavailability/iseligible(for:completionhandler:).md)
+- [class func isEligible(for: BEAvailability.Context, completionHandler: (Bool, (any Error)?) -> Void)](./beavailability/iseligible%28for,completionhandler%29.md)
   Tests whether the device is eligible to use an app that contains an alternative browser engine.
 ### Identifying contexts
-- [BEAvailability.Context](beavailability/context.md)
+- [BEAvailability.Context](./beavailability/context.md)
   The category of app for which you determine eligibility.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Transferring browsing data to another browser](transferring-browsing-data-to-another-browser.md)
+### Essentials
+- [Transferring browsing data to another browser](./transferring-browsing-data-to-another-browser.md)
   Allow people to transfer browsing history, bookmarks, reading lists, and browser extensions to or from your app using a system-provided sheet.
 
 

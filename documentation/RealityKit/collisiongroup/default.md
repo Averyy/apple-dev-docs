@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default collision group for objects.
 
@@ -11,7 +12,7 @@ The default collision group for objects.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ static let `default`: CollisionGroup
 
 #### Discussion
 
-If no [`CollisionFilter`](collisionfilter.md) is assigned to an entity, that entity will be part of this default collision group.
+If no [`CollisionFilter`](../collisionfilter.md) is assigned to an entity, that entity will be part of this default collision group.
 
 ## See Also
 
-- [static let all: CollisionGroup](collisiongroup/all.md)
+### Standard collision groups
+- [static let all: CollisionGroup](./all.md)
   The collision group that represents all groups.
-- [static let sceneUnderstanding: CollisionGroup](collisiongroup/sceneunderstanding.md)
+- [static let sceneUnderstanding: CollisionGroup](./sceneunderstanding.md)
   The default collision group for scene-understanding meshes.
 
 

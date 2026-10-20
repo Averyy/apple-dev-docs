@@ -1,7 +1,8 @@
 # sortDescriptors
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of sort descriptors that specify the order of the results returned by this query.
 
@@ -19,15 +20,20 @@ An array of sort descriptors that specify the order of the results returned by t
 var sortDescriptors: [NSSortDescriptor]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<NSSortDescriptor *> * sortDescriptors;
+```
+
 #### Discussion
 
-This property contains the value passed to the [`init(documentType:predicate:limit:sortDescriptors:includeDocumentData:resultsHandler:)`](hkdocumentquery/init(documenttype:predicate:limit:sortdescriptors:includedocumentdata:resultshandler:).md) method’s `sortDescriptors` parameter.
+This property contains the value passed to the [`init(documentType:predicate:limit:sortDescriptors:includeDocumentData:resultsHandler:)`](./init%28documenttype,predicate,limit,sortdescriptors,includedocumentdata,resultshandler%29.md) method’s `sortDescriptors` parameter.
 
 ## See Also
 
-- [var includeDocumentData: Bool](hkdocumentquery/includedocumentdata.md)
+### Accessing the Document Query’s Properties
+- [var includeDocumentData: Bool](./includedocumentdata.md)
   A Boolean value that indicates whether the sample includes the full document’s data.
-- [var limit: Int](hkdocumentquery/limit.md)
+- [var limit: Int](./limit.md)
   The maximum number of documents the receiver will return upon completion.
 
 

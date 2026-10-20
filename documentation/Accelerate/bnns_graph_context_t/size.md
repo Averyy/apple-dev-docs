@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size, in bytes, of the opaque graph context object.
 
@@ -20,9 +21,14 @@ The size, in bytes, of the opaque graph context object.
 var size: Int
 ```
 
+```c
+size_t size;
+```
+
 ## See Also
 
-- [var data: UnsafeMutableRawPointer?](bnns_graph_context_t/data.md)
+### Specifying a context’s properties
+- [var data: UnsafeMutableRawPointer?](./data.md)
   A pointer to the opaque graph context object.
 
 

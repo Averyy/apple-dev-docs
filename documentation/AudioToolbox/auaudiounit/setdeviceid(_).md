@@ -1,12 +1,13 @@
 # setDeviceID(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the I/O hardware device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,19 @@ Sets the I/O hardware device.
 func setDeviceID(_ deviceID: AUAudioObjectID) throws
 ```
 
+```objc
+- (BOOL) setDeviceID:(AUAudioObjectID) deviceID error:(NSError **) outError;
+```
+
 #### Discussion
 
-- [`false`](https://developer.apple.com/documentation/swift/false) if the operation failed.
+- [`false`](../../Swift/false.md) if the operation failed.
 
 #### Discussion
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -28,29 +35,30 @@ func setDeviceID(_ deviceID: AUAudioObjectID) throws
 
 ## See Also
 
-- [var deviceID: AUAudioObjectID](auaudiounit/deviceid.md)
+### Configuring the Device
+- [var deviceID: AUAudioObjectID](./deviceid.md)
   Gets the I/O hardware device.
-- [var canPerformInput: Bool](auaudiounit/canperforminput.md)
+- [var canPerformInput: Bool](./canperforminput.md)
   Determines whether the I/O device can perform input.
-- [var canPerformOutput: Bool](auaudiounit/canperformoutput.md)
+- [var canPerformOutput: Bool](./canperformoutput.md)
   Determines whether the I/O device can perform output.
-- [var isInputEnabled: Bool](auaudiounit/isinputenabled.md)
+- [var isInputEnabled: Bool](./isinputenabled.md)
   A flag enabling audio input from the unit.
-- [var isOutputEnabled: Bool](auaudiounit/isoutputenabled.md)
+- [var isOutputEnabled: Bool](./isoutputenabled.md)
   A flag enabling audio output from the unit.
-- [var inputHandler: AUInputHandler?](auaudiounit/inputhandler.md)
+- [var inputHandler: AUInputHandler?](./inputhandler.md)
   The block that the output unit will call to notify when input is available.
-- [var outputProvider: AURenderPullInputBlock?](auaudiounit/outputprovider.md)
+- [var outputProvider: AURenderPullInputBlock?](./outputprovider.md)
   The block that the output unit will call to get audio to send to the output.
-- [var deviceInputLatency: TimeInterval](auaudiounit/deviceinputlatency.md)
+- [var deviceInputLatency: TimeInterval](./deviceinputlatency.md)
   The audio device’s input latency, in seconds.
-- [var deviceOutputLatency: TimeInterval](auaudiounit/deviceoutputlatency.md)
+- [var deviceOutputLatency: TimeInterval](./deviceoutputlatency.md)
   The audio devic’s output latency, in seconds.
-- [func startHardware() throws](auaudiounit/starthardware.md)
+- [func startHardware() throws](./starthardware%28%29.md)
   Starts the audio hardware.
-- [func stopHardware()](auaudiounit/stophardware.md)
+- [func stopHardware()](./stophardware%28%29.md)
   Stops the audio hardware.
-- [typealias AURenderPullInputBlock](aurenderpullinputblock.md)
+- [typealias AURenderPullInputBlock](../aurenderpullinputblock.md)
   A block to supply audio input to a render block.
 
 

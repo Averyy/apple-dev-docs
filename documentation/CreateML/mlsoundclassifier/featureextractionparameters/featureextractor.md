@@ -1,7 +1,8 @@
 # featureExtractor
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The algorithm type the session uses to extract features from audio files.
 
@@ -20,9 +21,10 @@ var featureExtractor: MLSoundClassifier.ModelParameters.FeatureExtractorType
 
 ## See Also
 
-- [var overlapFactor: Double](mlsoundclassifier/featureextractionparameters/overlapfactor.md)
+### Accessing feature extraction parameters
+- [var overlapFactor: Double](./overlapfactor.md)
   The proportion of overlap that the feature-extraction session uses to analyze two consecutive windows in the audio data.
-- [var featureExtractionTimeWindowSize: TimeInterval](mlsoundclassifier/featureextractionparameters/featureextractiontimewindowsize.md)
+- [var featureExtractionTimeWindowSize: TimeInterval](./featureextractiontimewindowsize.md)
   A time duration, in seconds, that determines how much audio data the feature-extraction session reads each time it samples an audio file.
 
 

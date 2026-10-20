@@ -1,7 +1,8 @@
 # reactionEffectsInProgress
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of reaction effects that the device is currently performing, sorted by timestamp.
 
@@ -18,23 +19,28 @@ An array of reaction effects that the device is currently performing, sorted by 
 var reactionEffectsInProgress: [AVCaptureReactionEffectState] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCaptureReactionEffectState *> * reactionEffectsInProgress;
+```
+
 #### Discussion
 
-Key-value observe this property to determine when reaction effects begin and end. If your key-value observing callback provides old and new values, any in-progress reaction effects in the new array have a value of [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid) for their [`endTime`](avcapturereactioneffectstate/endtime.md) property value. Completed reaction effects are only in the old array, and have their [`endTime`](avcapturereactioneffectstate/endtime.md) property value set to the presentation time of the first frame where the reaction effect was no longer present.
+Key-value observe this property to determine when reaction effects begin and end. If your key-value observing callback provides old and new values, any in-progress reaction effects in the new array have a value of [`invalid`](../../CoreMedia/cmtime/invalid.md) for their [`endTime`](../avcapturereactioneffectstate/endtime.md) property value. Completed reaction effects are only in the old array, and have their [`endTime`](../avcapturereactioneffectstate/endtime.md) property value set to the presentation time of the first frame where the reaction effect was no longer present.
 
 ## See Also
 
-- [class var reactionEffectsEnabled: Bool](avcapturedevice/reactioneffectsenabled.md)
+### Performing reaction effects
+- [class var reactionEffectsEnabled: Bool](./reactioneffectsenabled.md)
   A Boolean value that indicates whether the app supports performing reaction effects.
-- [var canPerformReactionEffects: Bool](avcapturedevice/canperformreactioneffects.md)
+- [var canPerformReactionEffects: Bool](./canperformreactioneffects.md)
   A Boolean value that indicates whether you can perform reaction effects on a capture device.
-- [var availableReactionTypes: Set<AVCaptureReactionType>](avcapturedevice/availablereactiontypes.md)
+- [var availableReactionTypes: Set<AVCaptureReactionType>](./availablereactiontypes.md)
   A set of reactions types that a device supports performing.
-- [class var reactionEffectGesturesEnabled: Bool](avcapturedevice/reactioneffectgesturesenabled.md)
+- [class var reactionEffectGesturesEnabled: Bool](./reactioneffectgesturesenabled.md)
   A Boolean value that indicates whether gesture detection triggers reaction effects on the video stream.
-- [func performEffect(for: AVCaptureReactionType)](avcapturedevice/performeffect(for:).md)
+- [func performEffect(for: AVCaptureReactionType)](./performeffect%28for%29.md)
   Performs the specified reaction type on the video stream.
-- [class AVCaptureReactionEffectState](avcapturereactioneffectstate.md)
+- [class AVCaptureReactionEffectState](../avcapturereactioneffectstate.md)
   An object that reports the state of a reaction effect performed on a capture device.
 
 

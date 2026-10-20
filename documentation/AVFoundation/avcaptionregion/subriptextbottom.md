@@ -1,7 +1,8 @@
 # subRipTextBottom
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The bottom caption region for SubRip Text (SRT) format captions.
 
@@ -17,19 +18,24 @@ The bottom caption region for SubRip Text (SRT) format captions.
 class var subRipTextBottom: AVCaptionRegion { get }
 ```
 
+```objc
+@property (class, readonly) AVCaptionRegion * subRipTextBottomRegion;
+```
+
 #### Discussion
 
-This region is suitable for SRT format, and it occupies the entire video display area. The region uses a [`AVCaptionRegion.WritingMode.leftToRightAndTopToBottom`](avcaptionregion/writingmode-swift.enum/lefttorightandtoptobottom.md) writing mode, where a line progresses left to right and the block extends from top to bottom. The system stacks each line of text with bottom justification.
+This region is suitable for SRT format, and it occupies the entire video display area. The region uses a [`AVCaptionRegion.WritingMode.leftToRightAndTopToBottom`](./writingmode-swift.enum/lefttorightandtoptobottom.md) writing mode, where a line progresses left to right and the block extends from top to bottom. The system stacks each line of text with bottom justification.
 
 ## See Also
 
-- [class var appleITTTop: AVCaptionRegion](avcaptionregion/appleitttop.md)
+### Accessing defined regions
+- [class var appleITTTop: AVCaptionRegion](./appleitttop.md)
   The top region for iTT format captions.
-- [class var appleITTBottom: AVCaptionRegion](avcaptionregion/appleittbottom.md)
+- [class var appleITTBottom: AVCaptionRegion](./appleittbottom.md)
   The bottom region for iTT format captions.
-- [class var appleITTLeft: AVCaptionRegion](avcaptionregion/appleittleft.md)
+- [class var appleITTLeft: AVCaptionRegion](./appleittleft.md)
   The left region for iTT format captions.
-- [class var appleITTRight: AVCaptionRegion](avcaptionregion/appleittright.md)
+- [class var appleITTRight: AVCaptionRegion](./appleittright.md)
   The right region for iTT format captions.
 
 

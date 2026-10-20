@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A debug description.
 

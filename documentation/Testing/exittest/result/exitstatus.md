@@ -1,7 +1,8 @@
 # exitStatus
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The exit status reported by the process hosting the exit test.
 
@@ -17,7 +18,7 @@ var exitStatus: ExitStatus
 
 ## Mentions
 
-- [Exit testing](exit-testing.md)
+- [Exit testing](../../exit-testing.md)
 
 
 ---

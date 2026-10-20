@@ -1,7 +1,8 @@
 # timing
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Timing information of the sample.
 
@@ -22,7 +23,7 @@ var timing: CMSampleTimingInfo
 
 #### Discussion
 
-Set to [`invalid`](cmsampletiminginfo/invalid.md) if unknown. Individual fields may be set to [`invalid`](cmtime/invalid.md) if unknown.
+Set to [`invalid`](../../cmsampletiminginfo/invalid.md) if unknown. Individual fields may be set to [`invalid`](../../cmtime/invalid.md) if unknown.
 
 
 ---

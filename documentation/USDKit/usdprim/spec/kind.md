@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The prim’s kind, or `nil` if not authored.
 

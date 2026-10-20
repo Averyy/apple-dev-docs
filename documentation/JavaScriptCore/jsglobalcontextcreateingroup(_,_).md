@@ -1,7 +1,8 @@
 # JSGlobalContextCreateInGroup(_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a global JavaScript execution context in the provided context group.
 
@@ -19,13 +20,17 @@ Creates a global JavaScript execution context in the provided context group.
 func JSGlobalContextCreateInGroup(_ group: JSContextGroupRef!, _ globalObjectClass: JSClassRef!) -> JSGlobalContextRef!
 ```
 
+```c
+JSGlobalContextRefJSGlobalContextCreateInGroup(JSContextGroupRef group, JSClassRef globalObjectClass);
+```
+
 #### Return Value
 
-A [`JSGlobalContextRef`](jsglobalcontextref.md) with a global object of class `globalObjectClass` and a context group equal to `group`.
+A [`JSGlobalContextRef`](./jsglobalcontextref.md) with a global object of class `globalObjectClass` and a context group equal to `group`.
 
 #### Discussion
 
-[`JSGlobalContextCreateInGroup(_:_:)`](jsglobalcontextcreateingroup(_:_:).md) allocates a global object and populates it with all the built-in JavaScript objects, such as `Object`, `Function`, `String`, and `Array`.
+[`JSGlobalContextCreateInGroup(_:_:)`](./jsglobalcontextcreateingroup%28_,_%29.md) allocates a global object and populates it with all the built-in JavaScript objects, such as `Object`, `Function`, `String`, and `Array`.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ A [`JSGlobalContextRef`](jsglobalcontextref.md) with a global object of class `g
 
 ## See Also
 
-- [func JSGlobalContextCreate(JSClassRef!) -> JSGlobalContextRef!](jsglobalcontextcreate(_:).md)
+### Creating a global context
+- [func JSGlobalContextCreate(JSClassRef!) -> JSGlobalContextRef!](./jsglobalcontextcreate%28_%29.md)
   Creates a global JavaScript execution context.
-- [func JSGlobalContextRetain(JSGlobalContextRef!) -> JSGlobalContextRef!](jsglobalcontextretain(_:).md)
+- [func JSGlobalContextRetain(JSGlobalContextRef!) -> JSGlobalContextRef!](./jsglobalcontextretain%28_%29.md)
   Retains a global JavaScript execution context.
-- [func JSGlobalContextRelease(JSGlobalContextRef!)](jsglobalcontextrelease(_:).md)
+- [func JSGlobalContextRelease(JSGlobalContextRef!)](./jsglobalcontextrelease%28_%29.md)
   Releases a global JavaScript execution context.
 
 

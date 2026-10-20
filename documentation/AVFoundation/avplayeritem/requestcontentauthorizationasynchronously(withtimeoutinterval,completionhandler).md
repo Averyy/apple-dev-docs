@@ -1,7 +1,8 @@
 # requestContentAuthorizationAsynchronously(withTimeoutInterval:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents the user the opportunity to authorize the content for playback.
 
@@ -11,16 +12,24 @@ Presents the user the opportunity to authorize the content for playback.
 ## Declaration
 
 ```swift
+func requestContentAuthorizationAsynchronously(withTimeoutInterval timeoutInterval: TimeInterval, completionHandler handler: @escaping @Sendable () -> Void)
+```
+
+```swift
 func requestContentAuthorization(withTimeoutInterval timeoutInterval: TimeInterval) async
+```
+
+```objc
+- (void) requestContentAuthorizationAsynchronouslyWithTimeoutInterval:(NSTimeInterval) timeoutInterval completionHandler:(void (^)()) handler;
 ```
 
 #### Discussion
 
 Calling this method will present the user with the opportunity to authorize the content (for example, by launching iTunes and prompting the user to enter their Apple ID and password).
 
-When the user has taken action (or the timeout has elapsed), the completion handler is invoked. You determine the status of the authorization attempt by checking the value of the [`contentAuthorizationRequestStatus`](avplayeritem/contentauthorizationrequeststatus.md) property.
+When the user has taken action (or the timeout has elapsed), the completion handler is invoked. You determine the status of the authorization attempt by checking the value of the [`contentAuthorizationRequestStatus`](./contentauthorizationrequeststatus.md) property.
 
-Even if the status indicates a completed authorization, the content may still not be authorized (for example, if the user authorizes an Apple ID other than that associated with the content).  You should re-check the value of [`contentAuthorizationRequestStatus`](avplayeritem/contentauthorizationrequeststatus.md) to verify whether the content has actually been authorized before continuing.  It is not necessary to call this method if the value of [`contentAuthorizationRequestStatus`](avplayeritem/contentauthorizationrequeststatus.md) is already true.
+Even if the status indicates a completed authorization, the content may still not be authorized (for example, if the user authorizes an Apple ID other than that associated with the content).  You should re-check the value of [`contentAuthorizationRequestStatus`](./contentauthorizationrequeststatus.md) to verify whether the content has actually been authorized before continuing.  It is not necessary to call this method if the value of [`contentAuthorizationRequestStatus`](./contentauthorizationrequeststatus.md) is already true.
 
 ## Parameters
 
@@ -29,17 +38,18 @@ Even if the status indicates a completed authorization, the content may still no
 
 ## See Also
 
-- [var isContentAuthorizedForPlayback: Bool](avplayeritem/iscontentauthorizedforplayback.md)
+### Managing playback authorization in macOS
+- [var isContentAuthorizedForPlayback: Bool](./iscontentauthorizedforplayback.md)
   A Boolean value that indicates whether the content has been authorized by the user.
-- [var isAuthorizationRequiredForPlayback: Bool](avplayeritem/isauthorizationrequiredforplayback.md)
+- [var isAuthorizationRequiredForPlayback: Bool](./isauthorizationrequiredforplayback.md)
   A Boolean value that indicates whether authorization is required to play the content.
-- [var isApplicationAuthorizedForPlayback: Bool](avplayeritem/isapplicationauthorizedforplayback.md)
+- [var isApplicationAuthorizedForPlayback: Bool](./isapplicationauthorizedforplayback.md)
   A Boolean value that indicates whether the application can be used to play the content.
-- [var contentAuthorizationRequestStatus: AVContentAuthorizationStatus](avplayeritem/contentauthorizationrequeststatus.md)
+- [var contentAuthorizationRequestStatus: AVContentAuthorizationStatus](./contentauthorizationrequeststatus.md)
   The status of the most recent content authorization request.
-- [enum AVContentAuthorizationStatus](avcontentauthorizationstatus.md)
+- [enum AVContentAuthorizationStatus](../avcontentauthorizationstatus.md)
   A value representing the status of a content authorization request.
-- [func cancelContentAuthorizationRequest()](avplayeritem/cancelcontentauthorizationrequest.md)
+- [func cancelContentAuthorizationRequest()](./cancelcontentauthorizationrequest%28%29.md)
   Cancels the currently outstanding content authorization request.
 
 

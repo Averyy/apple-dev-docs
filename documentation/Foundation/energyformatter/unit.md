@@ -1,7 +1,8 @@
 # EnergyFormatter.Unit
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The units supported by the `NSEnergyFormatter` class.
 
@@ -20,29 +21,33 @@ The units supported by the `NSEnergyFormatter` class.
 enum Unit
 ```
 
+```c
+enum NSEnergyFormatterUnit : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EnergyFormatter.Unit.joule](energyformatter/unit/joule.md)
+- [EnergyFormatter.Unit.joule](./unit/joule.md)
   The joule unit.
-- [EnergyFormatter.Unit.kilojoule](energyformatter/unit/kilojoule.md)
+- [EnergyFormatter.Unit.kilojoule](./unit/kilojoule.md)
   The kilojoule unit.
-- [EnergyFormatter.Unit.calorie](energyformatter/unit/calorie.md)
+- [EnergyFormatter.Unit.calorie](./unit/calorie.md)
   The calorie unit. This unit is often used in chemistry. It is abbreviated as “cal.”
-- [EnergyFormatter.Unit.kilocalorie](energyformatter/unit/kilocalorie.md)
+- [EnergyFormatter.Unit.kilocalorie](./unit/kilocalorie.md)
   The kilocalorie unit. This unit is used for food calories in some locales. In general, it is abbreviated as “kcal.” However, it may be abbreviated as “C” when used to represent food calories.
 ### Initializers
-- [init?(rawValue: Int)](energyformatter/unit/init(rawvalue:).md)
+- [init?(rawValue: Int)](./unit/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

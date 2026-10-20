@@ -1,7 +1,8 @@
 # encode(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a given Core Media time range structure and associates it with a specified key.
 
@@ -20,6 +21,10 @@ Encodes a given Core Media time range structure and associates it with a specifi
 func encode(_ timeRange: CMTimeRange, forKey key: String)
 ```
 
+```objc
+- (void) encodeCMTimeRange:(CMTimeRange) timeRange forKey:(NSString *) key;
+```
+
 ## Parameters
 
 - `timeRange`: A `CMTimeRange` structure.
@@ -27,11 +32,13 @@ func encode(_ timeRange: CMTimeRange, forKey key: String)
 
 ## See Also
 
-- [func decodeTimeRange(forKey: String) -> CMTimeRange](nscoder/decodetimerange(forkey:).md)
+### Related Documentation
+- [func decodeTimeRange(forKey: String) -> CMTimeRange](./decodetimerange%28forkey%29.md)
   Returns the Core Media time range structure associated with a given key.
-- [func encode(CMTime, forKey: String)](nscoder/encode(_:forkey:)-6wbby.md)
+### Encoding Core Media Time Structures
+- [func encode(CMTime, forKey: String)](./encode%28_,forkey%29-6wbby.md)
   Encodes a given Core Media time structure and associates it with a specified key.
-- [func encode(CMTimeMapping, forKey: String)](nscoder/encode(_:forkey:)-8tefb.md)
+- [func encode(CMTimeMapping, forKey: String)](./encode%28_,forkey%29-8tefb.md)
   Encodes a given Core Media time mapping structure and associates it with a specified key.
 
 

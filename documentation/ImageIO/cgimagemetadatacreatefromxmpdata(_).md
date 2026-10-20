@@ -1,7 +1,8 @@
 # CGImageMetadataCreateFromXMPData(_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a collection of metadata tags from the specified XMP data.
 
@@ -20,9 +21,13 @@ Creates a collection of metadata tags from the specified XMP data.
 func CGImageMetadataCreateFromXMPData(_ data: CFData) -> CGImageMetadata?
 ```
 
+```c
+extern CGImageMetadataRefCGImageMetadataCreateFromXMPData(CFDataRef data);
+```
+
 #### Return Value
 
-A [`CGImageMetadata`](cgimagemetadata.md) object that contains the parsed metadata information, or `NULL` if an error occurs. You are responsible for releasing the returned object.
+A [`CGImageMetadata`](./cgimagemetadata.md) object that contains the parsed metadata information, or `NULL` if an error occurs. You are responsible for releasing the returned object.
 
 #### Discussion
 

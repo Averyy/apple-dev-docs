@@ -1,7 +1,8 @@
 # mediaTypes
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media types that media item picker presents.
 
@@ -16,19 +17,24 @@ The media types that media item picker presents.
 var mediaTypes: MPMediaType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPMediaType mediaTypes;
+```
+
 #### Discussion
 
-[`MPMediaType`](mpmediatype.md) lists the available media types.
+[`MPMediaType`](../mpmediatype.md) lists the available media types.
 
 ## See Also
 
-- [var allowsPickingMultipleItems: Bool](mpmediapickercontroller/allowspickingmultipleitems.md)
+### Using a media item picker
+- [var allowsPickingMultipleItems: Bool](./allowspickingmultipleitems.md)
   A Boolean value specifying the default selection behavior for a media item picker.
-- [var showsCloudItems: Bool](mpmediapickercontroller/showsclouditems.md)
+- [var showsCloudItems: Bool](./showsclouditems.md)
   A Boolean value specifying whether to display iCloud Media Library items for a media picker.
-- [var prompt: String?](mpmediapickercontroller/prompt.md)
+- [var prompt: String?](./prompt.md)
   A prompt, for the user, that appears above the navigation bar buttons.
-- [var showsItemsWithProtectedAssets: Bool](mpmediapickercontroller/showsitemswithprotectedassets.md)
+- [var showsItemsWithProtectedAssets: Bool](./showsitemswithprotectedassets.md)
   A Boolean value that specifies whether the media item picker displays protected assets.
 
 

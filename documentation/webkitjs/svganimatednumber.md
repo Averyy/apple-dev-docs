@@ -1,7 +1,8 @@
 # SVGAnimatedNumber
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGAnimatedNumber
 ```
 
 ## Topics
 
 ### Instance Properties
-- [animVal](svganimatednumber/1630644-animval.md)
-- [baseVal](svganimatednumber/1634163-baseval.md)
+- [animVal](./svganimatednumber/api-1630644-animval.md)
+- [baseVal](./svganimatednumber/api-1634163-baseval.md)
 
 
 ---

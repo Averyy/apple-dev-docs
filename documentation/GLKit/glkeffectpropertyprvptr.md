@@ -1,7 +1,8 @@
 # GLKEffectPropertyPrvPtr
 
 **Framework**: GLKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 5.0+
@@ -13,6 +14,10 @@
 
 ```swift
 typealias GLKEffectPropertyPrvPtr = OpaquePointer
+```
+
+```c
+typedef struct GLKEffectPropertyPrv * GLKEffectPropertyPrvPtr;
 ```
 
 

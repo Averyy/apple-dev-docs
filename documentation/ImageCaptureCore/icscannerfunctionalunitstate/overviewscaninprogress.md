@@ -1,7 +1,8 @@
 # ICScannerFunctionalUnitState.overviewScanInProgress
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A flag indicating that the functional unit is performing an overview scan.
 
@@ -14,11 +15,16 @@ A flag indicating that the functional unit is performing an overview scan.
 case overviewScanInProgress
 ```
 
+```c
+ICScannerFunctionalUnitStateOverviewScanInProgress
+```
+
 ## See Also
 
-- [ICScannerFunctionalUnitState.ready](icscannerfunctionalunitstate/ready.md)
+### Constants
+- [ICScannerFunctionalUnitState.ready](./ready.md)
   A flag indicating that the functional unit is ready for operation.
-- [ICScannerFunctionalUnitState.scanInProgress](icscannerfunctionalunitstate/scaninprogress.md)
+- [ICScannerFunctionalUnitState.scanInProgress](./scaninprogress.md)
   A flag indicating that the functional unit is performing a scan.
 
 

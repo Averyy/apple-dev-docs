@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the default data store, which stores data persistently to disk.
 
@@ -18,6 +19,10 @@ Returns the default data store, which stores data persistently to disk.
 class func `default`() -> WKWebsiteDataStore
 ```
 
+```objc
++ (WKWebsiteDataStore *) defaultDataStore;
+```
+
 #### Return Value
 
 The default data store for websites.
@@ -28,9 +33,10 @@ A web view configured with the default data store saves website data persistenly
 
 ## See Also
 
-- [class func nonPersistent() -> WKWebsiteDataStore](wkwebsitedatastore/nonpersistent.md)
+### Creating a data store object
+- [class func nonPersistent() -> WKWebsiteDataStore](./nonpersistent%28%29.md)
   Creates a new data store object that stores website data in memory, and doesn’t write that data to disk.
-- [init(forIdentifier: UUID)](wkwebsitedatastore/init(foridentifier:).md)
+- [init(forIdentifier: UUID)](./init%28foridentifier%29.md)
   Returns the persistent data store with the unique identifier you provide.
 
 

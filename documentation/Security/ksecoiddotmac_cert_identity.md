@@ -1,7 +1,8 @@
 # kSecOIDDOTMAC_CERT_IDENTITY
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDDOTMAC_CERT_IDENTITY: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDDOTMAC_CERT_IDENTITY;
 ```
 
 

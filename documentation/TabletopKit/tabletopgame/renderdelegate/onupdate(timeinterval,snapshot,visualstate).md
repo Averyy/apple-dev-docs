@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -13,9 +14,15 @@
 func onUpdate(timeInterval: Double, snapshot: TableSnapshot, visualState: TableVisualState)
 ```
 
+## Default Implementations
+
+### TabletopGame.RenderDelegate Implementations
+- [func onUpdate(timeInterval: Double, snapshot: TableSnapshot, visualState: TableVisualState)](./onupdate%28timeinterval,snapshot,visualstate%29-5f78q.md)
+
 ## See Also
 
-- [func updateRootPose(Pose3D)](tabletopgame/renderdelegate/updaterootpose(_:).md)
+### Rendering the game
+- [func updateRootPose(Pose3D)](./updaterootpose%28_%29.md)
 
 
 ---

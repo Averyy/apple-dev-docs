@@ -1,7 +1,8 @@
 # purchase
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A transaction reason that indicates a purchase is initiated by a customer.
 
@@ -26,7 +27,8 @@ The customer initiated the purchase, which may be for any Apple In-App Purchase 
 
 ## See Also
 
-- [static let renewal: Transaction.Reason](transaction/reason-swift.struct/renewal.md)
+### Transaction reasons
+- [static let renewal: Transaction.Reason](./renewal.md)
   A transaction reason that indicates the App Store server initiated a purchase transaction to renew an auto-renewable subscription.
 
 

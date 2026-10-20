@@ -1,7 +1,8 @@
 # hairLoss
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category type that records hair loss as a symptom.
 
@@ -19,15 +20,20 @@ A category type that records hair loss as a symptom.
 static let hairLoss: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierHairLoss;
+```
+
 #### Discussion
 
-These samples use values from the  [`HKCategoryValueSeverity`](hkcategoryvalueseverity.md) enumeration.
+These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 
 ## See Also
 
-- [static let acne: HKCategoryTypeIdentifier](hkcategorytypeidentifier/acne.md)
+### Skin and Hair
+- [static let acne: HKCategoryTypeIdentifier](./acne.md)
   A category type that records acne as a symptom.
-- [static let drySkin: HKCategoryTypeIdentifier](hkcategorytypeidentifier/dryskin.md)
+- [static let drySkin: HKCategoryTypeIdentifier](./dryskin.md)
   A category type that records dry skin as a symptom.
 
 

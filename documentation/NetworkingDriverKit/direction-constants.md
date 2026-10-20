@@ -1,17 +1,18 @@
 # Direction Constants
 
-**Framework**: NetworkingDriverKit
+**Framework**: NetworkingDriverKit  
+**Role**: API Collection
 
 Constants indicating package transmission direction.
 
 ## Topics
 
 ### Getting the Packet Directions
-- [kIOUserNetworkPacketDirectionNone](kiousernetworkpacketdirectionnone.md)
+- [kIOUserNetworkPacketDirectionNone](./kiousernetworkpacketdirectionnone.md)
   The packet is not moving.
-- [kIOUserNetworkPacketDirectionRx](kiousernetworkpacketdirectionrx.md)
+- [kIOUserNetworkPacketDirectionRx](./kiousernetworkpacketdirectionrx.md)
   The packet is moving from the device to the networking stack.
-- [kIOUserNetworkPacketDirectionTx](kiousernetworkpacketdirectiontx.md)
+- [kIOUserNetworkPacketDirectionTx](./kiousernetworkpacketdirectiontx.md)
   The packet is moving from the networking stack to the device.
 
 

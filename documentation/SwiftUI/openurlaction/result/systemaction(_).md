@@ -1,7 +1,8 @@
 # systemAction(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The handler asks the system to open the modified URL.
 
@@ -30,11 +31,12 @@ The action invokes its completion handler with a value that depends on the outco
 
 ## See Also
 
-- [static let discarded: OpenURLAction.Result](openurlaction/result/discarded.md)
+### Getting the results
+- [static let discarded: OpenURLAction.Result](./discarded.md)
   The handler discarded the URL.
-- [static let handled: OpenURLAction.Result](openurlaction/result/handled.md)
+- [static let handled: OpenURLAction.Result](./handled.md)
   The handler opened the URL.
-- [static let systemAction: OpenURLAction.Result](openurlaction/result/systemaction.md)
+- [static let systemAction: OpenURLAction.Result](./systemaction.md)
   The handler asks the system to open the original URL.
 
 

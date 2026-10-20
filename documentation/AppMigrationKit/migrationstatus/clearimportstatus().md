@@ -1,7 +1,8 @@
 # clearImportStatus()
 
 **Framework**: AppMigrationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets the import status to a nil value to prevent further notification.
 
@@ -17,11 +18,12 @@ static func clearImportStatus()
 
 #### Discussion
 
-Calling this method sets [`importStatus`](migrationstatus/importstatus.md) to `nil`, which indicates that the app has notified the person using the app of the migration’s completion, and doesn’t need further notifications.
+Calling this method sets [`importStatus`](./importstatus.md) to `nil`, which indicates that the app has notified the person using the app of the migration’s completion, and doesn’t need further notifications.
 
 ## See Also
 
-- [static var importStatus: MigrationStatus?](migrationstatus/importstatus.md)
+### Accessing the import status
+- [static var importStatus: MigrationStatus?](./importstatus.md)
   A property to indicate the status of import from another device into the app.
 
 

@@ -1,7 +1,8 @@
 # resetSectionOrder()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets ordering back to the default for all sections, preserving the customized tab visibilities.
 

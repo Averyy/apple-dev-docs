@@ -1,7 +1,8 @@
 # hides
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether you want the app to hide itself after it launches.
 
@@ -14,21 +15,26 @@ A Boolean value indicating whether you want the app to hide itself after it laun
 var hides: Bool { get set }
 ```
 
+```objc
+@property BOOL hides;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), which leaves the app in its default state after launch. Setting the property to [`true`](https://developer.apple.com/documentation/swift/true) causes the app to hide itself.
+The default value of this property is [`false`](../../../Swift/false.md), which leaves the app in its default state after launch. Setting the property to [`true`](../../../Swift/true.md) causes the app to hide itself.
 
 ## See Also
 
-- [var activates: Bool](nsworkspace/openconfiguration/activates.md)
+### Specifying app-related behaviors
+- [var activates: Bool](./activates.md)
   A Boolean value indicating whether the system activates the app and brings it to the foreground.
-- [var addsToRecentItems: Bool](nsworkspace/openconfiguration/addstorecentitems.md)
+- [var addsToRecentItems: Bool](./addstorecentitems.md)
   A Boolean value indicating whether to add the app or documents to the Recent Items menu.
-- [var allowsRunningApplicationSubstitution: Bool](nsworkspace/openconfiguration/allowsrunningapplicationsubstitution.md)
+- [var allowsRunningApplicationSubstitution: Bool](./allowsrunningapplicationsubstitution.md)
   A Boolean value that indicates whether to use a running instance of an application even if it’s at a different URL.
-- [var createsNewApplicationInstance: Bool](nsworkspace/openconfiguration/createsnewapplicationinstance.md)
+- [var createsNewApplicationInstance: Bool](./createsnewapplicationinstance.md)
   A Boolean value indicating whether you want the system to launch a new instance of the app.
-- [var hidesOthers: Bool](nsworkspace/openconfiguration/hidesothers.md)
+- [var hidesOthers: Bool](./hidesothers.md)
   A Boolean value indicating whether you want to hide all apps except the one that launched.
 
 

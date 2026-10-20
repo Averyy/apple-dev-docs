@@ -1,33 +1,34 @@
 # Comparable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func ... (Self) -> PartialRangeFrom<Self>](int32/'...(_:)-33g6y.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./dotdotdot%28_%29-33g6y.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](int32/'...(_:)-67bt7.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./dotdotdot%28_%29-67bt7.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](int32/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](int32/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](int32/'.._(_:_:).md)
+- [static func ..< (Self, Self) -> Range<Self>](./dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func < (Self, Self) -> Bool](int32/_(_:_:)-4d2t4.md)
+- [static func < (Self, Self) -> Bool](./op%28_,_%29-4d2t4.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (borrowing Self, borrowing Self) -> Bool](int32/_(_:_:)-4oaul.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](./op%28_,_%29-4oaul.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func > (Int32, Int32) -> Bool](int32/_(_:_:)-5p8ms.md)
+- [static func > (Int32, Int32) -> Bool](./op%28_,_%29-5p8ms.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Int32, Int32) -> Bool](int32/_=(_:_:)-1ukxu.md)
+- [static func >= (Int32, Int32) -> Bool](./opeq%28_,_%29-1ukxu.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (Int32, Int32) -> Bool](int32/_=(_:_:)-5corj.md)
+- [static func <= (Int32, Int32) -> Bool](./opeq%28_,_%29-5corj.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func <= (borrowing Self, borrowing Self) -> Bool](int32/_=(_:_:)-7d66.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-7d66.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (borrowing Self, borrowing Self) -> Bool](int32/_=(_:_:)-t4e8.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-t4e8.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

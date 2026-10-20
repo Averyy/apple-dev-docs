@@ -1,12 +1,13 @@
 # NSUserDefaultsController
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A controller that accesses user preference information for your app from the user’s defaults database.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,57 +15,62 @@ A controller that accesses user preference information for your app from the use
 class NSUserDefaultsController
 ```
 
+```objc
+@interface NSUserDefaultsController : NSController
+```
+
 #### Overview
 
-[`NSUserDefaultsController`](nsuserdefaultscontroller.md) is a Cocoa bindings–compatible controller class. Properties of the shared instance of this class can be bound to user interface elements to access and modify values stored in [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults).
+[`NSUserDefaultsController`](./nsuserdefaultscontroller.md) is a Cocoa bindings–compatible controller class. Properties of the shared instance of this class can be bound to user interface elements to access and modify values stored in [`UserDefaults`](../Foundation/userdefaults.md).
 
 ## Topics
 
 ### Obtaining the shared instance
-- [class var shared: NSUserDefaultsController](nsuserdefaultscontroller/shared.md)
+- [class var shared: NSUserDefaultsController](./nsuserdefaultscontroller/shared.md)
   Returns the shared instance of NSUserDefaultsController, creating it if necessary.
 ### Initializing a user defaults controller
-- [init(defaults: UserDefaults?, initialValues: [String : Any]?)](nsuserdefaultscontroller/init(defaults:initialvalues:).md)
+- [init(defaults: UserDefaults?, initialValues: [String : Any]?)](./nsuserdefaultscontroller/init%28defaults,initialvalues%29.md)
   Returns an initialized NSUserDefaultsController object using the NSUserDefaults instance specified in `defaults` and the initial default values contained in the `initialValues` dictionary.
-- [init?(coder: NSCoder)](nsuserdefaultscontroller/init(coder:).md)
+- [init?(coder: NSCoder)](./nsuserdefaultscontroller/init%28coder%29.md)
 ### Managing user defaults values
-- [var defaults: UserDefaults](nsuserdefaultscontroller/defaults.md)
+- [var defaults: UserDefaults](./nsuserdefaultscontroller/defaults.md)
   Returns the instance of NSUserDefaults in use by the receiver.
-- [var initialValues: [String : Any]?](nsuserdefaultscontroller/initialvalues.md)
+- [var initialValues: [String : Any]?](./nsuserdefaultscontroller/initialvalues.md)
   Returns a dictionary containing the receiver’s initial default values.
-- [var hasUnappliedChanges: Bool](nsuserdefaultscontroller/hasunappliedchanges.md)
+- [var hasUnappliedChanges: Bool](./nsuserdefaultscontroller/hasunappliedchanges.md)
   Returns whether the receiver has user default values that have not been saved to NSUserDefaults.
-- [var appliesImmediately: Bool](nsuserdefaultscontroller/appliesimmediately.md)
+- [var appliesImmediately: Bool](./nsuserdefaultscontroller/appliesimmediately.md)
   Returns whether any changes made to bound user default properties are saved immediately.
-- [var values: Any](nsuserdefaultscontroller/values.md)
+- [var values: Any](./nsuserdefaultscontroller/values.md)
   Returns a key value coding compliant object that is used to access the user default properties.
-- [func revert(Any?)](nsuserdefaultscontroller/revert(_:).md)
+- [func revert(Any?)](./nsuserdefaultscontroller/revert%28_%29.md)
   Causes the receiver to discard any unsaved changes to bound user default properties, restoring their previous values.
-- [func revertToInitialValues(Any?)](nsuserdefaultscontroller/reverttoinitialvalues(_:).md)
-  Causes the receiver to discard all edits and replace the values of all the user default properties with any corresponding values in the [`initialValues`](nsuserdefaultscontroller/initialvalues.md) dictionary.
-- [func save(Any?)](nsuserdefaultscontroller/save(_:).md)
+- [func revertToInitialValues(Any?)](./nsuserdefaultscontroller/reverttoinitialvalues%28_%29.md)
+  Causes the receiver to discard all edits and replace the values of all the user default properties with any corresponding values in the [`initialValues`](./nsuserdefaultscontroller/initialvalues.md) dictionary.
+- [func save(Any?)](./nsuserdefaultscontroller/save%28_%29.md)
   Saves the values of the receiver’s user default properties.
 
 ## Relationships
 
 ### Inherits From
-- [NSController](nscontroller.md)
+- [NSController](./nscontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSEditor](nseditor.md)
-- [NSEditorRegistration](nseditorregistration.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSEditor](./nseditor.md)
+- [NSEditorRegistration](./nseditorregistration.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSUbiquitousKeyValueStore](../foundation/nsubiquitouskeyvaluestore.md)
+### User Preferences
+- [class NSUbiquitousKeyValueStore](../Foundation/nsubiquitouskeyvaluestore.md)
   An iCloud-based container of key-value pairs you share among instances of your app running on a person’s devices.
 
 

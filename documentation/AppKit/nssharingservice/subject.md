@@ -1,7 +1,8 @@
 # subject
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subject of the post.
 
@@ -14,11 +15,16 @@ The subject of the post.
 var subject: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * subject;
+```
+
 ## See Also
 
-- [var menuItemTitle: String](nssharingservice/menuitemtitle.md)
+### Configuring the Service
+- [var menuItemTitle: String](./menuitemtitle.md)
   The title of the service in the Share menu.
-- [var recipients: [String]?](nssharingservice/recipients.md)
+- [var recipients: [String]?](./recipients.md)
   An array containing the user handles of the desired recipients.
 
 

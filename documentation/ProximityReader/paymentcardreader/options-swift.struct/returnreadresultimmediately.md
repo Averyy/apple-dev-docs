@@ -1,7 +1,8 @@
 # returnReadResultImmediately
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the framework returns a result as soon as possible before closing the system UI.
 
@@ -20,11 +21,12 @@ var returnReadResultImmediately: Bool
 
 The default value  is `false`.
 
-After the framework reads a payment card, by default, the UI shows an animation before closing then returning the result. When you set this option to `true`, the framework returns [`PaymentCardReadResult`](paymentcardreadresult.md)  immediately without waiting for the system UI to close.
+After the framework reads a payment card, by default, the UI shows an animation before closing then returning the result. When you set this option to `true`, the framework returns [`PaymentCardReadResult`](../../paymentcardreadresult.md)  immediately without waiting for the system UI to close.
 
 ## See Also
 
-- [var includeErrorInReadResult: Bool](paymentcardreader/options-swift.struct/includeerrorinreadresult.md)
+### Setting read behaviors
+- [var includeErrorInReadResult: Bool](./includeerrorinreadresult.md)
   A Boolean value that indicates whether the framework returns a result instead of throwing an error when some data is retrievable.
 
 

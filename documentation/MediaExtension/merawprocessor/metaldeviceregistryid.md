@@ -1,7 +1,8 @@
 # metalDeviceRegistryID
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Requests the processor use the provided Metal device for processing.
 
@@ -14,17 +15,22 @@ Requests the processor use the provided Metal device for processing.
 optional var metalDeviceRegistryID: UInt64 { get set }
 ```
 
+```objc
+@property (nonatomic) uint64_t metalDeviceRegistryID;
+```
+
 #### Discussion
 
-This optional property requests that [`MERAWProcessor`](merawprocessor.md) use `MTLDevice` corresponding to this ID for any Metal-based processing. This is optional and doesn’t need to be implemented if the processor does not use Metal.
+This optional property requests that [`MERAWProcessor`](../merawprocessor.md) use `MTLDevice` corresponding to this ID for any Metal-based processing. This is optional and doesn’t need to be implemented if the processor does not use Metal.
 
 ## See Also
 
-- [var outputColorAttachments: [String : Any]](merawprocessor/outputcolorattachments.md)
+### Inspecting a RAW processor
+- [var outputColorAttachments: [String : Any]](./outputcolorattachments.md)
   Returns the color-related Core Video image buffer keys and values that become attachments to the output pixel buffers.
-- [var processingParameters: [MERAWProcessingParameter]](merawprocessor/processingparameters.md)
+- [var processingParameters: [MERAWProcessingParameter]](./processingparameters.md)
   Provides a list of processing parameters that can be changed by the client of Video Toolbox session to influence processing behavior.
-- [var isReadyForMoreMediaData: Bool](merawprocessor/isreadyformoremediadata.md)
+- [var isReadyForMoreMediaData: Bool](./isreadyformoremediadata.md)
   Indicates the readiness of the processor to accept more sample buffers.
 
 

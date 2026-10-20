@@ -1,10 +1,11 @@
 # NSCollectionViewPrefetching
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,20 +13,25 @@
 protocol NSCollectionViewPrefetching : NSObjectProtocol
 ```
 
+```objc
+@protocol NSCollectionViewPrefetching <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func collectionView(NSCollectionView, cancelPrefetchingForItemsAt: [IndexPath])](nscollectionviewprefetching/collectionview(_:cancelprefetchingforitemsat:).md)
-- [func collectionView(NSCollectionView, prefetchItemsAt: [IndexPath])](nscollectionviewprefetching/collectionview(_:prefetchitemsat:).md)
+- [func collectionView(NSCollectionView, cancelPrefetchingForItemsAt: [IndexPath])](./nscollectionviewprefetching/collectionview%28_,cancelprefetchingforitemsat%29.md)
+- [func collectionView(NSCollectionView, prefetchItemsAt: [IndexPath])](./nscollectionviewprefetching/collectionview%28_,prefetchitemsat%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var prefetchDataSource: (any NSCollectionViewPrefetching)?](nscollectionview/prefetchdatasource.md)
+### Prefetching Collection View Cells and Data
+- [var prefetchDataSource: (any NSCollectionViewPrefetching)?](./nscollectionview/prefetchdatasource.md)
 
 
 ---

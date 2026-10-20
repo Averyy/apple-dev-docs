@@ -1,7 +1,8 @@
 # kSCPropNetLocalHostName
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Network key `LocalHostName`, whose value is of type `CFString`.
 
@@ -12,6 +13,10 @@ The Network key `LocalHostName`, whose value is of type `CFString`.
 
 ```swift
 let kSCPropNetLocalHostName: CFString
+```
+
+```c
+extern CFStringRef const kSCPropNetLocalHostName;
 ```
 
 

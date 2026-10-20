@@ -1,16 +1,17 @@
 # kCMSubtitleFormatType_WebVTT
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@
 var kCMSubtitleFormatType_WebVTT: CMSubtitleFormatType { get }
 ```
 
+```c
+kCMSubtitleFormatType_WebVTT
+```
+
 ## See Also
 
-- [var kCMSubtitleFormatType_3GText: CMSubtitleFormatType](kcmsubtitleformattype_3gtext.md)
+### Constants
+- [var kCMSubtitleFormatType_3GText: CMSubtitleFormatType](./kcmsubtitleformattype_3gtext.md)
 
 
 ---

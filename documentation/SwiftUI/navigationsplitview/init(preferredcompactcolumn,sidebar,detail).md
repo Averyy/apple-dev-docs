@@ -1,7 +1,8 @@
 # init(preferredCompactColumn:sidebar:detail:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a two-column navigation split view that enables programmatic control over which column appears on top when the view collapses into a single column in narrow sizes.
 
@@ -21,15 +22,18 @@ nonisolated
 init(preferredCompactColumn: Binding<NavigationSplitViewColumn>, @ContentBuilder sidebar: () -> Sidebar, @ContentBuilder detail: () -> Detail) where Content == EmptyView
 ```
 
+Available when `Sidebar` conforms to `View`, `Content` conforms to `View`, and `Detail` conforms to `View`.
+
 ## Parameters
 
-- `preferredCompactColumn`: A [`Binding`](binding.md) to state that controls which column appears on top when the view collapses.
+- `preferredCompactColumn`: A [`Binding`](../binding.md) to state that controls which column appears on top when the view collapses.
 - `sidebar`: The view to show in the leading column.
 - `detail`: The view to show in the detail area.
 
 ## See Also
 
-- [init(preferredCompactColumn: Binding<NavigationSplitViewColumn>, sidebar: () -> Sidebar, content: () -> Content, detail: () -> Detail)](navigationsplitview/init(preferredcompactcolumn:sidebar:content:detail:).md)
+### Specifying a preferred compact column
+- [init(preferredCompactColumn: Binding<NavigationSplitViewColumn>, sidebar: () -> Sidebar, content: () -> Content, detail: () -> Detail)](./init%28preferredcompactcolumn,sidebar,content,detail%29.md)
   Creates a three-column navigation split view that enables programmatic control over which column appears on top when the view collapses into a single column in narrow sizes.
 
 

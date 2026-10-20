@@ -1,7 +1,8 @@
 # init(primaryItem:time:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an interstitial event for the specified time.
 
@@ -20,6 +21,10 @@ Creates an interstitial event for the specified time.
 convenience init(primaryItem: AVPlayerItem, time: CMTime)
 ```
 
+```objc
++ (instancetype) interstitialEventWithPrimaryItem:(AVPlayerItem *) primaryItem time:(CMTime) time;
+```
+
 ## Parameters
 
 - `primaryItem`: A player item that provides the primary playback content. It defines the timeline during which an interstitial event occurs. The item must have an asset that provides an intrinsic mapping from its timeline to real-time dates.
@@ -27,11 +32,12 @@ convenience init(primaryItem: AVPlayerItem, time: CMTime)
 
 ## See Also
 
-- [convenience init(primaryItem: AVPlayerItem, date: Date)](avplayerinterstitialevent/init(primaryitem:date:).md)
+### Creating an event
+- [convenience init(primaryItem: AVPlayerItem, date: Date)](./init%28primaryitem,date%29.md)
   Creates an interstitial event for the specified date.
-- [convenience init(primaryItem: AVPlayerItem, identifier: String?, time: CMTime, templateItems: [AVPlayerItem], restrictions: AVPlayerInterstitialEvent.Restrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: [String : Any])](avplayerinterstitialevent/init(primaryitem:identifier:time:templateitems:restrictions:resumptionoffset:playoutlimit:userdefinedattributes:).md)
+- [convenience init(primaryItem: AVPlayerItem, identifier: String?, time: CMTime, templateItems: [AVPlayerItem], restrictions: AVPlayerInterstitialEvent.Restrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: [String : Any])](./init%28primaryitem,identifier,time,templateitems,restrictions,resumptionoffset,playoutlimit,userdefinedattributes%29.md)
   Creates an interstitial event, with user-defined attributes, for the specified time.
-- [convenience init(primaryItem: AVPlayerItem, identifier: String?, date: Date, templateItems: [AVPlayerItem], restrictions: AVPlayerInterstitialEvent.Restrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: [String : Any])](avplayerinterstitialevent/init(primaryitem:identifier:date:templateitems:restrictions:resumptionoffset:playoutlimit:userdefinedattributes:).md)
+- [convenience init(primaryItem: AVPlayerItem, identifier: String?, date: Date, templateItems: [AVPlayerItem], restrictions: AVPlayerInterstitialEvent.Restrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: [String : Any])](./init%28primaryitem,identifier,date,templateitems,restrictions,resumptionoffset,playoutlimit,userdefinedattributes%29.md)
   Creates an interstitial event, with user-defined attributes, for the specified date.
 
 

@@ -1,9 +1,10 @@
 # takeDeformationAddition(id:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Consumes and returns the [`USDPlayer.DeformationData`](usdplayer/deformationdata.md) for the given deformation addition.
+Consumes and returns the [`USDPlayer.DeformationData`](../deformationdata.md) for the given deformation addition.
 
 **Availability**:
 - iOS 27.0+

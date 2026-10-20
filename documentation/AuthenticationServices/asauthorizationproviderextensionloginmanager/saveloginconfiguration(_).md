@@ -1,7 +1,8 @@
 # saveLoginConfiguration(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Saves or replaces the login configuration.
 
@@ -14,19 +15,24 @@ Saves or replaces the login configuration.
 func saveLoginConfiguration(_ loginConfiguration: ASAuthorizationProviderExtensionLoginConfiguration) throws
 ```
 
+```objc
+- (BOOL) saveLoginConfiguration:(ASAuthorizationProviderExtensionLoginConfiguration *) loginConfiguration error:(NSError **) error;
+```
+
 ## Parameters
 
 - `loginConfiguration`: The login configuration to save or replace.
 
 ## See Also
 
-- [var loginUserName: String?](asauthorizationproviderextensionloginmanager/loginusername.md)
+### Performing registration
+- [var loginUserName: String?](./loginusername.md)
   The user name to use when authenticating with the identity provider.
-- [var registrationToken: String?](asauthorizationproviderextensionloginmanager/registrationtoken.md)
+- [var registrationToken: String?](./registrationtoken.md)
   The device registration token from the mobile device management profile.
-- [func presentRegistrationViewController(completion: ((any Error)?) -> Void)](asauthorizationproviderextensionloginmanager/presentregistrationviewcontroller(completion:).md)
+- [func presentRegistrationViewController(completion: ((any Error)?) -> Void)](./presentregistrationviewcontroller%28completion%29.md)
   Requests platform single sign-on to show the extension’s view controller to the user.
-- [func saveCertificate(SecCertificate, keyType: ASAuthorizationProviderExtensionKeyType)](asauthorizationproviderextensionloginmanager/savecertificate(_:keytype:).md)
+- [func saveCertificate(SecCertificate, keyType: ASAuthorizationProviderExtensionKeyType)](./savecertificate%28_,keytype%29.md)
   Saves the provided certificate for the key type.
 
 

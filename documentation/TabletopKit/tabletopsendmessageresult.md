@@ -1,7 +1,8 @@
 # TabletopSendMessageResult
 
 **Framework**: TabletopKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible results of sending messages in a network session.
 
@@ -17,24 +18,25 @@ enum TabletopSendMessageResult
 ## Topics
 
 ### Message results
-- [TabletopSendMessageResult.success](tabletopsendmessageresult/success.md)
+- [TabletopSendMessageResult.success](./tabletopsendmessageresult/success.md)
   Message was sent successfully
-- [TabletopSendMessageResult.failure](tabletopsendmessageresult/failure.md)
+- [TabletopSendMessageResult.failure](./tabletopsendmessageresult/failure.md)
   Message sending failed, and network condition is effectively disconnected
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class TabletopNetworkSession](tabletopnetworksession.md)
+### Multiplayer network session
+- [class TabletopNetworkSession](./tabletopnetworksession.md)
   An object that coordinates network-related tasks in multiplayer games.
-- [protocol TabletopNetworkSessionCoordinator](tabletopnetworksessioncoordinator.md)
+- [protocol TabletopNetworkSessionCoordinator](./tabletopnetworksessioncoordinator.md)
   A protocol for objects that manage network sessions between peers.
 
 

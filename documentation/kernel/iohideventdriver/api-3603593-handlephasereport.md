@@ -1,14 +1,15 @@
 # handlePhaseReport
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 void handlePhaseReport(AbsoluteTime timeStamp, UInt32 reportID);
 ```
 

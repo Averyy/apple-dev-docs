@@ -1,7 +1,8 @@
 # angle
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation angle, in radians, of newly spawned particles. Defaults to 0.
 

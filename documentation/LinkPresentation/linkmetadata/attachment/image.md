@@ -1,7 +1,8 @@
 # image
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The descriptor for an image attachment. The corresponding media type must support the content type of the metadata’s image data.
 

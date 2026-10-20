@@ -1,7 +1,8 @@
 # kSecCFErrorPath
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a URL indicating the subcomponent containing the error.
 
@@ -13,6 +14,10 @@ A key whose value is a URL indicating the subcomponent containing the error.
 
 ```swift
 let kSecCFErrorPath: CFString
+```
+
+```c
+extern CFStringRef const kSecCFErrorPath;
 ```
 
 

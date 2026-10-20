@@ -1,7 +1,8 @@
 # init(identityProvider:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a single sign-on (SSO) authorization provider.
 
@@ -16,6 +17,10 @@ Creates a single sign-on (SSO) authorization provider.
 
 ```swift
 convenience init(identityProvider url: URL)
+```
+
+```objc
++ (instancetype) authorizationProviderWithIdentityProviderURL:(NSURL *) url;
 ```
 
 #### Return Value

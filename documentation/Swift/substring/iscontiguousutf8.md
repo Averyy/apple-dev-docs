@@ -1,7 +1,8 @@
 # isContiguousUTF8
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether this string’s storage contains validly-encoded UTF-8 contents in contiguous memory.
 

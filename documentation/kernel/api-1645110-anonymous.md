@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOFBAVSignalTypeDP](1645110-anonymous/kiofbavsignaltypedp.md)
-- [kIOFBAVSignalTypeDVI](1645110-anonymous/kiofbavsignaltypedvi.md)
-- [kIOFBAVSignalTypeHDMI](1645110-anonymous/kiofbavsignaltypehdmi.md)
-- [kIOFBAVSignalTypeUnknown](1645110-anonymous/kiofbavsignaltypeunknown.md)
-- [kIOFBAVSignalTypeVGA](1645110-anonymous/kiofbavsignaltypevga.md)
+- [kIOFBAVSignalTypeDP](./api-1645110-anonymous/kiofbavsignaltypedp.md)
+- [kIOFBAVSignalTypeDVI](./api-1645110-anonymous/kiofbavsignaltypedvi.md)
+- [kIOFBAVSignalTypeHDMI](./api-1645110-anonymous/kiofbavsignaltypehdmi.md)
+- [kIOFBAVSignalTypeUnknown](./api-1645110-anonymous/kiofbavsignaltypeunknown.md)
+- [kIOFBAVSignalTypeVGA](./api-1645110-anonymous/kiofbavsignaltypevga.md)
 
 
 ---

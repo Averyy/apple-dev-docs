@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingCustomizationStatus
 
 **Framework**: Game Controller  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An additional returned flag indicating whether a setting has been modified by the user.
 
@@ -18,25 +19,29 @@ An additional returned flag indicating whether a setting has been modified by th
 enum GCControllerHomeButtonSettingCustomizationStatus
 ```
 
+```c
+enum GCControllerHomeButtonSettingCustomizationStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [GCControllerHomeButtonSettingCustomizationStatus.systemDefault](gccontrollerhomebuttonsettingcustomizationstatus/systemdefault.md)
+- [GCControllerHomeButtonSettingCustomizationStatus.systemDefault](./gccontrollerhomebuttonsettingcustomizationstatus/systemdefault.md)
   The user has not customized this setting.
-- [GCControllerHomeButtonSettingCustomizationStatus.user](gccontrollerhomebuttonsettingcustomizationstatus/user.md)
+- [GCControllerHomeButtonSettingCustomizationStatus.user](./gccontrollerhomebuttonsettingcustomizationstatus/user.md)
   The user has customized this setting at least once.
 ### Initializers
-- [init?(rawValue: Int)](gccontrollerhomebuttonsettingcustomizationstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./gccontrollerhomebuttonsettingcustomizationstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

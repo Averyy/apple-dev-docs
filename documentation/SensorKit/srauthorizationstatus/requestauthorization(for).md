@@ -1,7 +1,8 @@
 # requestAuthorization(for:)
 
 **Framework**: SensorKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 27.0+

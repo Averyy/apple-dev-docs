@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance, suitable for debugging.
 
@@ -9,7 +10,7 @@ A textual representation of this instance, suitable for debugging.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var id: AssignableDocument.CorrectMarkType](assignabledocument/correctmarktype/id.md)
+### Inspecting a type
+- [var id: AssignableDocument.CorrectMarkType](./id.md)
   The stable identity of this enum value.
 
 

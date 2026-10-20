@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view that represents the body of labeled content.
@@ -24,9 +25,10 @@ Creates a view that represents the body of labeled content.
 
 ## See Also
 
-- [LabeledContentStyle.Configuration](labeledcontentstyle/configuration.md)
+### Creating custom labeled content styles
+- [LabeledContentStyle.Configuration](./configuration.md)
   The properties of a labeled content instance.
-- [associatedtype Body : View](labeledcontentstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the appearance and behavior of labeled content.
 
 

@@ -1,7 +1,8 @@
 # AnchorStateEvents.DidFailToAnchor.Reason.maximumLimitReached
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 anchor fails to be added, due to anchor tracking provider reaching its maximum anchor limit
 
@@ -21,7 +22,7 @@ case maximumLimitReached
 
 #### Discussion
 
-See [`WorldTrackingProvider.Error`](https://developer.apple.com/documentation/arkit/worldtrackingprovider/error)
+See [`WorldTrackingProvider.Error`](../../../../ARKit/worldtrackingprovider/error.md)
 
 
 ---

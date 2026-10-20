@@ -1,7 +1,8 @@
 # TVRemote
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the Apple TV remote.
 
@@ -13,7 +14,7 @@ The payload that configures the Apple TV remote.
 
 ## Declaration
 
-```swift
+```
 object TVRemote
 ```
 
@@ -21,7 +22,7 @@ object TVRemote
 
 Specify `com.apple.tvremote` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +34,7 @@ Specify `com.apple.tvremote` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -79,19 +80,24 @@ Specify `com.apple.tvremote` as the payload type.
 ## Topics
 
 ### Objects
-- [object TVRemote.AllowedRemotesItem](tvremote/allowedremotesitem.md)
+- [object TVRemote.AllowedRemotesItem](./tvremote/allowedremotesitem.md)
   The array of valid devices that Apple TV can connect to.
-- [object TVRemote.AllowedTVsItem](tvremote/allowedtvsitem.md)
+- [object TVRemote.AllowedTVsItem](./tvremote/allowedtvsitem.md)
   The array of valid Apple TV identifiers that the remote can connect to.
 
 ## Properties
 
-- `AllowedRemotes` ([TVRemote.AllowedRemotesItem]): The array of valid devices that Apple TV can connect to. Available: tvOS 11.3+
-- `AllowedTVs` ([TVRemote.AllowedTVsItem]): The array of valid Apple TV identifiers that the remote can connect to. Available: iOS 11.3+ | iPadOS 11.3+
+- `AllowedRemotes` ([TVRemote.AllowedRemotesItem]): The array of valid devices that Apple TV can connect to.
+
+  Available: tvOS 11.3+
+- `AllowedTVs` ([TVRemote.AllowedTVsItem]): The array of valid Apple TV identifiers that the remote can connect to.
+
+  Available: iOS 11.3+ | iPadOS 11.3+
 
 ## See Also
 
-- [object ConferenceRoomDisplay](conferenceroomdisplay.md)
+### Apple TV
+- [object ConferenceRoomDisplay](./conferenceroomdisplay.md)
   The payload that configures Conference Room Display mode for Apple TV.
 
 

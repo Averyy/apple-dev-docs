@@ -1,7 +1,8 @@
 # BNNS.LossLayer
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer object that wraps a loss filter and manages its deinitialization.
 
@@ -11,8 +12,10 @@ A layer object that wraps a loss filter and manages its deinitialization.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,46 +26,47 @@ class LossLayer
 ## Topics
 
 ### Creating a Loss Layer
-- [convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, lossFunction: BNNS.LossFunction, lossReduction: BNNS.LossReduction, filterParameters: BNNSFilterParameters?)](bnns/losslayer/init(input:output:lossfunction:lossreduction:filterparameters:).md)
+- [convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, lossFunction: BNNS.LossFunction, lossReduction: BNNS.LossReduction, filterParameters: BNNSFilterParameters?)](./losslayer/init%28input,output,lossfunction,lossreduction,filterparameters%29.md)
   Returns a new loss layer.
 ### Specifying a Loss Function
-- [BNNS.LossFunction](bnns/lossfunction.md)
+- [BNNS.LossFunction](./lossfunction.md)
   Constants that describe loss functions.
 ### Specifying a Loss Reduction Function
-- [BNNS.LossReduction](bnns/lossreduction.md)
+- [BNNS.LossReduction](./lossreduction.md)
   An enumeration that describes loss reduction functions.
 ### Applying a Loss Layer
-- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, labels: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor) throws](bnns/losslayer/apply(batchsize:input:labels:output:generatinginputgradient:).md)
+- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, labels: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor) throws](./losslayer/apply%28batchsize,input,labels,output,generatinginputgradient%29.md)
   Applies the layer to a set of input objects, writing the result to a set of output objects.
 ### Instance Methods
-- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, labels: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, weights: BNNSNDArrayDescriptor?, broadcastsWeights: Bool, generatingInputGradient: BNNSNDArrayDescriptor) throws](bnns/losslayer/apply(batchsize:input:labels:output:weights:broadcastsweights:generatinginputgradient:).md)
+- [func apply(batchSize: Int, input: BNNSNDArrayDescriptor, labels: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, weights: BNNSNDArrayDescriptor?, broadcastsWeights: Bool, generatingInputGradient: BNNSNDArrayDescriptor) throws](./losslayer/apply%28batchsize,input,labels,output,weights,broadcastsweights,generatinginputgradient%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [BNNS.Layer](bnns/layer.md)
+- [BNNS.Layer](./layer.md)
 
 ## See Also
 
-- [struct BNNSLossFunction](bnnslossfunction.md)
+### Loss layers
+- [struct BNNSLossFunction](../bnnslossfunction.md)
   Constants that describe loss functions.
-- [struct BNNSLossReductionFunction](bnnslossreductionfunction.md)
+- [struct BNNSLossReductionFunction](../bnnslossreductionfunction.md)
   Constants that describe reduction functions used by a loss layer.
-- [struct BNNSLayerParametersLossBase](bnnslayerparameterslossbase.md)
+- [struct BNNSLayerParametersLossBase](../bnnslayerparameterslossbase.md)
   A structure that contains the parameters of a loss layer.
-- [struct BNNSLayerParametersLossHuber](bnnslayerparameterslosshuber.md)
+- [struct BNNSLayerParametersLossHuber](../bnnslayerparameterslosshuber.md)
   A structure that contains the parameters of a Huber loss layer.
-- [struct BNNSLayerParametersLossSigmoidCrossEntropy](bnnslayerparameterslosssigmoidcrossentropy.md)
+- [struct BNNSLayerParametersLossSigmoidCrossEntropy](../bnnslayerparameterslosssigmoidcrossentropy.md)
   A structure that contains the parameters of a sigmoid cross entropy loss layer.
-- [struct BNNSLayerParametersLossSoftmaxCrossEntropy](bnnslayerparameterslosssoftmaxcrossentropy.md)
+- [struct BNNSLayerParametersLossSoftmaxCrossEntropy](../bnnslayerparameterslosssoftmaxcrossentropy.md)
   A structure that contains the parameters of a softmax cross entropy loss layer.
-- [struct BNNSLayerParametersLossYolo](bnnslayerparameterslossyolo.md)
+- [struct BNNSLayerParametersLossYolo](../bnnslayerparameterslossyolo.md)
   A structure that contains the parameters of a You Only Look Once (YOLO) loss layer.
-- [func BNNSFilterCreateLayerLoss(UnsafeRawPointer, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerloss(_:_:).md)
+- [func BNNSFilterCreateLayerLoss(UnsafeRawPointer, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](../bnnsfiltercreatelayerloss%28_,_%29.md)
   Returns a new loss layer.
-- [func BNNSLossFilterApplyBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeRawPointer, Int, UnsafeRawPointer?, Int, UnsafeMutableRawPointer, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int) -> Int32](bnnslossfilterapplybatch(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSLossFilterApplyBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeRawPointer, Int, UnsafeRawPointer?, Int, UnsafeMutableRawPointer, UnsafeMutablePointer<BNNSNDArrayDescriptor>?, Int) -> Int32](../bnnslossfilterapplybatch%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Applies a loss filter to a set of input objects, writing the result to a set of output objects.
-- [func BNNSLossFilterApplyBackwardBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeRawPointer, Int, UnsafeRawPointer?, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int) -> Int32](bnnslossfilterapplybackwardbatch(_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func BNNSLossFilterApplyBackwardBatch(BNNSFilter?, Int, UnsafeRawPointer, Int, UnsafeMutablePointer<BNNSNDArrayDescriptor>, Int, UnsafeRawPointer, Int, UnsafeRawPointer?, Int, UnsafePointer<BNNSNDArrayDescriptor>, Int) -> Int32](../bnnslossfilterapplybackwardbatch%28_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Applies a loss filter backward to generate gradients.
 
 

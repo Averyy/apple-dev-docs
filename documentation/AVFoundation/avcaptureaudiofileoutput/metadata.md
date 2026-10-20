@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of metadata to be written to the receiver’s output files.
 
@@ -14,13 +15,18 @@ A collection of metadata to be written to the receiver’s output files.
 var metadata: [AVMetadataItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<AVMetadataItem *> * metadata;
+```
+
 #### Discussion
 
 The value of this property is an array of `AVMetadataItem` objects representing the collection of top-level metadata to be written in each output file. Only ID3 v2.2, v2.3, or v2.4 style metadata items are supported.
 
 ## See Also
 
-- [var audioSettings: [String : Any]?](avcaptureaudiofileoutput/audiosettings.md)
+### Configuring output
+- [var audioSettings: [String : Any]?](./audiosettings.md)
   The settings used to decode or re-encode audio before it is output by the receiver.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a nested container and returns an `Encoder` instance for encoding `super` into that container.

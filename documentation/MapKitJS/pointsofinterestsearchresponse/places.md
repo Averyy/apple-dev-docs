@@ -1,7 +1,8 @@
 # places
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The list of points of interest that match the request options.
 
@@ -10,7 +11,7 @@ The list of points of interest that match the request options.
 
 ## Declaration
 
-```swift
+```
 places: Place[];
 ```
 

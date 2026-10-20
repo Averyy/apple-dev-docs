@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment of subviews.
 
@@ -22,9 +23,10 @@ var alignment: Alignment
 
 ## See Also
 
-- [var horizontalSpacing: CGFloat?](gridlayout/horizontalspacing.md)
+### Getting the grid’s properties
+- [var horizontalSpacing: CGFloat?](./horizontalspacing.md)
   The horizontal distance between adjacent subviews.
-- [var verticalSpacing: CGFloat?](gridlayout/verticalspacing.md)
+- [var verticalSpacing: CGFloat?](./verticalspacing.md)
   The vertical distance between adjacent subviews.
 
 

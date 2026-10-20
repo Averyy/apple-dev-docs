@@ -1,30 +1,32 @@
 # Execution Arguments
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
-Arguments to the method [`execute(_:atTime:withArguments:)`](qcplugin/execute(_:attime:witharguments:).md).
+Arguments to the method [`execute(_:atTime:withArguments:)`](./qcplugin/execute%28_,attime,witharguments%29.md).
 
 ## Topics
 
 ### Constants
-- [let QCPlugInExecutionArgumentEventKey: String](qcpluginexecutionargumenteventkey.md)
+- [let QCPlugInExecutionArgumentEventKey: String](./qcpluginexecutionargumenteventkey.md)
   The current event.
-- [let QCPlugInExecutionArgumentMouseLocationKey: String](qcpluginexecutionargumentmouselocationkey.md)
+- [let QCPlugInExecutionArgumentMouseLocationKey: String](./qcpluginexecutionargumentmouselocationkey.md)
   The current location of the mouse (as an `NSPoint` object stored in an `NSValue` object) in normalized coordinates relative to the OpenGL context viewport ([0,1]x[0,1] with the origin (`0,0`) at the lower-left corner).
 
 ## See Also
 
-- [Patch Attributes](patch-attributes.md)
+### Constants
+- [Patch Attributes](./patch-attributes.md)
   Attributes for custom patches.
-- [Input and Output Port Attributes](input-and-output-port-attributes.md)
+- [Input and Output Port Attributes](./input-and-output-port-attributes.md)
   Attributes for input and output ports.
-- [Port Input and Output Types](port-input-and-output-types.md)
+- [Port Input and Output Types](./port-input-and-output-types.md)
   Data types for input and output ports.
-- [Pixel Formats](pixel-formats.md)
+- [Pixel Formats](./pixel-formats.md)
   Supported image pixel formats.
-- [struct QCPlugInExecutionMode](qcpluginexecutionmode.md)
+- [struct QCPlugInExecutionMode](./qcpluginexecutionmode.md)
   Execution modes for custom patches.
-- [struct QCPlugInTimeMode](qcplugintimemode.md)
+- [struct QCPlugInTimeMode](./qcplugintimemode.md)
   Time modes for custom patches.
 
 

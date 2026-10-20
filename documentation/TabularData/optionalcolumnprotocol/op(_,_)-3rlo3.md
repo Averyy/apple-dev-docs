@@ -1,7 +1,8 @@
 # /(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Generates a floating-point column by dividing each element in an optional column type by the corresponding elements of another.
 
@@ -20,6 +21,8 @@ Generates a floating-point column by dividing each element in an optional column
 static func / (lhs: Self, rhs: Self) -> Column<Self.WrappedElement>
 ```
 
+Available when `WrappedElement` conforms to `FloatingPoint`.
+
 #### Return Value
 
 A new column.
@@ -31,15 +34,16 @@ A new column.
 
 ## See Also
 
-- [static func / (Self, Self) -> Column<Self.WrappedElement>](optionalcolumnprotocol/_(_:_:)-4nmnl.md)
+### Generating an Optional Column by Dividing Two Columns
+- [static func / (Self, Self) -> Column<Self.WrappedElement>](./op%28_,_%29-4nmnl.md)
   Generates an integer column by dividing each element in an optional column type by the corresponding elements of another.
-- [func / <L, R>(L, R) -> Column<L.Element>](_(_:_:)-9v3nw.md)
+- [func / <L, R>(L, R) -> Column<L.Element>](../op%28_,_%29-9v3nw.md)
   Generates an integer column by dividing each element in a column type by the corresponding elements of an optional column type.
-- [func / <L, R>(L, R) -> Column<R.Element>](_(_:_:)-4igyw.md)
+- [func / <L, R>(L, R) -> Column<R.Element>](../op%28_,_%29-4igyw.md)
   Generates an integer column by dividing each element in an optional column type by the corresponding elements of a column type.
-- [func / <L, R>(L, R) -> Column<L.Element>](_(_:_:)-4pr65.md)
+- [func / <L, R>(L, R) -> Column<L.Element>](../op%28_,_%29-4pr65.md)
   Generates a floating-point column by dividing each element in a column type by the corresponding elements of an optional column type.
-- [func / <L, R>(L, R) -> Column<R.Element>](_(_:_:)-58kg6.md)
+- [func / <L, R>(L, R) -> Column<R.Element>](../op%28_,_%29-58kg6.md)
   Generates a floating-point column by dividing each element in an optional column type by the corresponding elements of a column type.
 
 

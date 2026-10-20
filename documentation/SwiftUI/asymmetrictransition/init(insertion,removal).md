@@ -1,7 +1,8 @@
 # init(insertion:removal:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a composite `Transition` that uses a different transition for insertion versus removal.
 

@@ -1,7 +1,8 @@
 # nw_ethernet_channel_state_waiting
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The channel is waiting for its interface to become available.
 
@@ -20,17 +21,22 @@ The channel is waiting for its interface to become available.
 var nw_ethernet_channel_state_waiting: nw_ethernet_channel_state_t { get }
 ```
 
+```c
+nw_ethernet_channel_state_waiting
+```
+
 ## See Also
 
-- [var nw_ethernet_channel_state_invalid: nw_ethernet_channel_state_t](nw_ethernet_channel_state_invalid.md)
+### States
+- [var nw_ethernet_channel_state_invalid: nw_ethernet_channel_state_t](./nw_ethernet_channel_state_invalid.md)
   The channel is not valid.
-- [var nw_ethernet_channel_state_preparing: nw_ethernet_channel_state_t](nw_ethernet_channel_state_preparing.md)
+- [var nw_ethernet_channel_state_preparing: nw_ethernet_channel_state_t](./nw_ethernet_channel_state_preparing.md)
   The channel is registering with the interface.
-- [var nw_ethernet_channel_state_ready: nw_ethernet_channel_state_t](nw_ethernet_channel_state_ready.md)
+- [var nw_ethernet_channel_state_ready: nw_ethernet_channel_state_t](./nw_ethernet_channel_state_ready.md)
   The channel is able to send and receive Ethernet frames.
-- [var nw_ethernet_channel_state_failed: nw_ethernet_channel_state_t](nw_ethernet_channel_state_failed.md)
+- [var nw_ethernet_channel_state_failed: nw_ethernet_channel_state_t](./nw_ethernet_channel_state_failed.md)
   The channel has encountered a fatal error.
-- [var nw_ethernet_channel_state_cancelled: nw_ethernet_channel_state_t](nw_ethernet_channel_state_cancelled.md)
+- [var nw_ethernet_channel_state_cancelled: nw_ethernet_channel_state_t](./nw_ethernet_channel_state_cancelled.md)
   The channel has been canceled.
 
 

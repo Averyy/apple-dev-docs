@@ -1,7 +1,8 @@
 # handleIdentifier
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A key that identifies the type of contact property represented by the person object’s handle.
 
@@ -18,17 +19,22 @@ A key that identifies the type of contact property represented by the person obj
 var handleIdentifier: String { get }
 ```
 
+```objc
+@property (readonly) NSString * handleIdentifier;
+```
+
 #### Discussion
 
-The value of this property is a [`CNContact`](https://developer.apple.com/documentation/contacts/cncontact) property key, such as [`CNContactPhoneNumbersKey`](https://developer.apple.com/documentation/contacts/cncontactphonenumberskey) or [`CNContactEmailAddressesKey`](https://developer.apple.com/documentation/contacts/cncontactemailaddresseskey).
+The value of this property is a [`CNContact`](../../Contacts/cncontact.md) property key, such as [`CNContactPhoneNumbersKey`](../../Contacts/cncontactphonenumberskey.md) or [`CNContactEmailAddressesKey`](../../Contacts/cncontactemailaddresseskey.md).
 
 ## See Also
 
-- [var contactIdentifier: String?](csperson/contactidentifier.md)
+### Accessing person properties
+- [var contactIdentifier: String?](./contactidentifier.md)
   The identifier for the contact associated with the person.
-- [var displayName: String?](csperson/displayname.md)
+- [var displayName: String?](./displayname.md)
   A display name for the person.
-- [var handles: [String]](csperson/handles.md)
+- [var handles: [String]](./handles.md)
   An array of contact handles related to the person.
 
 

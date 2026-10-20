@@ -1,7 +1,8 @@
 # ErrorCodePlatformSSORequired
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error response that indicates Platform SSO is required.
 
@@ -10,13 +11,13 @@ An error response that indicates Platform SSO is required.
 
 ## Declaration
 
-```swift
+```
 object ErrorCodePlatformSSORequired
 ```
 
 ## Mentions
 
-- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
+- [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 
 #### Discussion
 
@@ -27,25 +28,28 @@ The MDM server returns this response when a device enrolls in MDM during Setup A
 ## Topics
 
 ### Objects
-- [object ErrorCodePlatformSSORequired.Details](errorcodeplatformssorequired/details-data.dictionary.md)
+- [object ErrorCodePlatformSSORequired.Details](./errorcodeplatformssorequired/details-data.dictionary.md)
   A dictionary that contains additional data about the error code.
 
 ## Properties
 
 - `code` (string) *(required)*: Indicates that the device needs to do Platform SSO before enrollment and setup can proceed.
+
+  **Allowed Values**: `com.apple.psso.required`
 - `description` (string): A description of the error. Only use this for logging purposes and don’t display it to the user.
 - `details` (ErrorCodePlatformSSORequired.Details) *(required)*: A dictionary that contains additional data about the error code.
 - `message` (string): A description of the error to display to the user.
 
 ## See Also
 
-- [object ErrorCodePairingTokenMissing](errorcodepairingtokenmissing.md)
+### Enrollment errors
+- [object ErrorCodePairingTokenMissing](./errorcodepairingtokenmissing.md)
   An error response that indicates a missing pairing token.
-- [object ErrorCodeSoftwareUpdateRequired](errorcodesoftwareupdaterequired.md)
+- [object ErrorCodeSoftwareUpdateRequired](./errorcodesoftwareupdaterequired.md)
   An error response that indicates the system requires a software update.
-- [object ErrorUnrecognizedDevice](errorunrecognizeddevice.md)
+- [object ErrorUnrecognizedDevice](./errorunrecognizeddevice.md)
   An error response that indicates a device needs to unenroll.
-- [object ErrorWellKnownFailed](errorwellknownfailed.md)
+- [object ErrorWellKnownFailed](./errorwellknownfailed.md)
   An error response that indicates a well-known service discovery request failed.
 
 

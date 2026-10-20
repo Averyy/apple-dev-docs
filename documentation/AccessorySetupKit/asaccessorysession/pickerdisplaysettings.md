@@ -1,7 +1,8 @@
 # pickerDisplaySettings
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Settings that affect the display of the accessory picker.
 
@@ -16,13 +17,18 @@ Settings that affect the display of the accessory picker.
 var pickerDisplaySettings: ASPickerDisplaySettings? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) ASPickerDisplaySettings * pickerDisplaySettings;
+```
+
 #### Discussion
 
 Use this property to configure settings like the picker timeout.
 
 ## See Also
 
-- [class ASPickerDisplaySettings](aspickerdisplaysettings.md)
+### Customizing picker behavior
+- [class ASPickerDisplaySettings](../aspickerdisplaysettings.md)
   A type that contains settings to customize the display of the accessory picker
 
 

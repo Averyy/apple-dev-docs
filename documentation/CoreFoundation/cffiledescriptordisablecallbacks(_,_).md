@@ -1,7 +1,8 @@
 # CFFileDescriptorDisableCallBacks(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Disables callbacks for a given CFFileDescriptor.
 
@@ -20,14 +21,19 @@ Disables callbacks for a given CFFileDescriptor.
 func CFFileDescriptorDisableCallBacks(_ f: CFFileDescriptor!, _ callBackTypes: CFOptionFlags)
 ```
 
+```c
+extern void CFFileDescriptorDisableCallBacks(CFFileDescriptorRef f, CFOptionFlags callBackTypes);
+```
+
 ## Parameters
 
 - `f`: A CFFileDescriptor.
-- `callBackTypes`: A bitmask that specifies which callbacks to disable (see [`Callback Identifiers`](1477595-callback-identifiers.md) for possible components).
+- `callBackTypes`: A bitmask that specifies which callbacks to disable (see [Callback Identifiers](./api-1477595-callback-identifiers.md) for possible components).
 
 ## See Also
 
-- [func CFFileDescriptorEnableCallBacks(CFFileDescriptor!, CFOptionFlags)](cffiledescriptorenablecallbacks(_:_:).md)
+### Managing Callbacks
+- [func CFFileDescriptorEnableCallBacks(CFFileDescriptor!, CFOptionFlags)](./cffiledescriptorenablecallbacks%28_,_%29.md)
   Enables callbacks for a given CFFileDescriptor.
 
 

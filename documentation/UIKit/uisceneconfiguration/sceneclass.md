@@ -1,7 +1,8 @@
 # sceneClass
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The class of the scene object that you want UIKit to create.
 
@@ -18,17 +19,22 @@ The class of the scene object that you want UIKit to create.
 var sceneClass: AnyClass? { get set }
 ```
 
+```objc
+@property (nonatomic, nullable) Class sceneClass;
+```
+
 #### Discussion
 
-The class you specify must be [`UIScene`](uiscene.md) or one of its subclasses. Typically, you specify the [`UIWindowScene`](uiwindowscene.md) class for all windows associated with your app.
+The class you specify must be [`UIScene`](../uiscene.md) or one of its subclasses. Typically, you specify the [`UIWindowScene`](../uiwindowscene.md) class for all windows associated with your app.
 
-UIKit sets this property’s initial value using the [`UISceneClassName`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneclassname) key from the appropriate scene in your app’s `Info.plist` file.
+UIKit sets this property’s initial value using the [`UISceneClassName`](../../BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneclassname.md) key from the appropriate scene in your app’s `Info.plist` file.
 
 ## See Also
 
-- [var delegateClass: AnyClass?](uisceneconfiguration/delegateclass.md)
+### Specifying the scene creation details
+- [var delegateClass: AnyClass?](./delegateclass.md)
   The class of the custom delegate object that you want UIKit to create.
-- [var storyboard: UIStoryboard?](uisceneconfiguration/storyboard.md)
+- [var storyboard: UIStoryboard?](./storyboard.md)
   The storyboard object that contains your scene’s initial view controller.
 
 

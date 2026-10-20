@@ -1,7 +1,8 @@
 # encodeConditionalObject(_:forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An encoding method for subclasses to override to conditionally encode an object, preserving common references to it, only if it has been unconditionally encoded.
 
@@ -20,43 +21,48 @@ An encoding method for subclasses to override to conditionally encode an object,
 func encodeConditionalObject(_ object: Any?, forKey key: String)
 ```
 
+```objc
+- (void) encodeConditionalObject:(id) object forKey:(NSString *) key;
+```
+
 #### Discussion
 
 Subclasses must override this method if they support keyed coding.
 
-The encoded object is decoded with the [`decodeObject(forKey:)`](nscoder/decodeobject(forkey:).md) method. If `objv` was never encoded unconditionally, [`decodeObject(forKey:)`](nscoder/decodeobject(forkey:).md) returns `nil` in place of `objv`.
+The encoded object is decoded with the [`decodeObject(forKey:)`](./decodeobject%28forkey%29.md) method. If `objv` was never encoded unconditionally, [`decodeObject(forKey:)`](./decodeobject%28forkey%29.md) returns `nil` in place of `objv`.
 
 ## See Also
 
-- [func encodeArray(ofObjCType: UnsafePointer<CChar>, count: Int, at: UnsafeRawPointer)](nscoder/encodearray(ofobjctype:count:at:).md)
+### Encoding General Data
+- [func encodeArray(ofObjCType: UnsafePointer<CChar>, count: Int, at: UnsafeRawPointer)](./encodearray%28ofobjctype,count,at%29.md)
   Encodes an array of the given Objective-C type, provided the number of items and a pointer.
-- [func encode(Bool, forKey: String)](nscoder/encode(_:forkey:)-7o6mu.md)
+- [func encode(Bool, forKey: String)](./encode%28_,forkey%29-7o6mu.md)
   Encodes a Boolean value and associates it with the string `key`.
-- [func encodeBycopyObject(Any?)](nscoder/encodebycopyobject(_:).md)
+- [func encodeBycopyObject(Any?)](./encodebycopyobject%28_%29.md)
   An encoding method for subclasses to override such that it creates a copy, rather than a proxy, when decoded.
-- [func encodeByrefObject(Any?)](nscoder/encodebyrefobject(_:).md)
+- [func encodeByrefObject(Any?)](./encodebyrefobject%28_%29.md)
   An encoding method for subclasses to override such that it creates a proxy, rather than a copy, when decoded.
-- [func encodeBytes(UnsafeRawPointer?, length: Int)](nscoder/encodebytes(_:length:).md)
+- [func encodeBytes(UnsafeRawPointer?, length: Int)](./encodebytes%28_,length%29.md)
   Encodes a buffer of data of an unspecified type.
-- [func encodeBytes(UnsafePointer<UInt8>?, length: Int, forKey: String)](nscoder/encodebytes(_:length:forkey:).md)
+- [func encodeBytes(UnsafePointer<UInt8>?, length: Int, forKey: String)](./encodebytes%28_,length,forkey%29.md)
   Encodes a buffer of data, given its length and a pointer, and associates it with a string key.
-- [func encodeConditionalObject(Any?)](nscoder/encodeconditionalobject(_:).md)
+- [func encodeConditionalObject(Any?)](./encodeconditionalobject%28_%29.md)
   An encoding method for subclasses to override to conditionally encode an object, preserving common references to it.
-- [func encode(Data)](nscoder/encode(_:)-1qd1e.md)
+- [func encode(Data)](./encode%28_%29-1qd1e.md)
   Encodes a given data object.
-- [func encode(Double, forKey: String)](nscoder/encode(_:forkey:)-9xiiu.md)
+- [func encode(Double, forKey: String)](./encode%28_,forkey%29-9xiiu.md)
   Encodes a double-precision floating point value and associates it with the string key.
-- [func encode(Float, forKey: String)](nscoder/encode(_:forkey:)-84cez.md)
+- [func encode(Float, forKey: String)](./encode%28_,forkey%29-84cez.md)
   Encodes a floating point value and associates it with the string key.
-- [func encodeCInt(Int32, forKey: String)](nscoder/encodecint(_:forkey:).md)
+- [func encodeCInt(Int32, forKey: String)](./encodecint%28_,forkey%29.md)
   Encodes a C integer value and associates it with the string key.
-- [func encode(Int, forKey: String)](nscoder/encode(_:forkey:)-2dprz.md)
+- [func encode(Int, forKey: String)](./encode%28_,forkey%29-2dprz.md)
   Encodes an integer value and associates it with the string key.
-- [func encode(Int32, forKey: String)](nscoder/encode(_:forkey:)-5sk4z.md)
+- [func encode(Int32, forKey: String)](./encode%28_,forkey%29-5sk4z.md)
   Encodes a 32-bit integer value and associates it with the string key.
-- [func encode(Int64, forKey: String)](nscoder/encode(_:forkey:)-dixg.md)
+- [func encode(Int64, forKey: String)](./encode%28_,forkey%29-dixg.md)
   Encodes a 64-bit integer value and associates it with the string key.
-- [func encode(Any?)](nscoder/encode(_:)-9648d.md)
+- [func encode(Any?)](./encode%28_%29-9648d.md)
   Encodes an object.
 
 

@@ -1,22 +1,27 @@
 # PHASECurveType.inverseCubed
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A curve that increases at a rate of one divided by the input’s cube.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case inverseCubed
+```
+
+```c
+PHASECurveTypeInverseCubed
 ```
 
 #### Discussion
@@ -25,25 +30,26 @@ The function `y` `=` `1` `/` `x^3` shapes this curve.
 
 ## See Also
 
-- [PHASECurveType.linear](phasecurvetype/linear.md)
+### Types
+- [PHASECurveType.linear](./linear.md)
   A curve that increases uniformly with its input.
-- [PHASECurveType.squared](phasecurvetype/squared.md)
+- [PHASECurveType.squared](./squared.md)
   A curve that increases at a rate that squares its input.
-- [PHASECurveType.inverseSquared](phasecurvetype/inversesquared.md)
+- [PHASECurveType.inverseSquared](./inversesquared.md)
   A curve that increases at a rate of one divided by the input’s square.
-- [PHASECurveType.cubed](phasecurvetype/cubed.md)
+- [PHASECurveType.cubed](./cubed.md)
   A curve that increases at a rate that cubes its input.
-- [PHASECurveType.sine](phasecurvetype/sine.md)
+- [PHASECurveType.sine](./sine.md)
   A sine curve.
-- [PHASECurveType.inverseSine](phasecurvetype/inversesine.md)
+- [PHASECurveType.inverseSine](./inversesine.md)
   An inverse sine curve.
-- [PHASECurveType.sigmoid](phasecurvetype/sigmoid.md)
+- [PHASECurveType.sigmoid](./sigmoid.md)
   A sigmoid curve.
-- [PHASECurveType.inverseSigmoid](phasecurvetype/inversesigmoid.md)
+- [PHASECurveType.inverseSigmoid](./inversesigmoid.md)
   An inverse sigmoid curve.
-- [PHASECurveType.holdStartValue](phasecurvetype/holdstartvalue.md)
+- [PHASECurveType.holdStartValue](./holdstartvalue.md)
   A curve that equals its start value for the entire duration.
-- [PHASECurveType.jumpToEndValue](phasecurvetype/jumptoendvalue.md)
+- [PHASECurveType.jumpToEndValue](./jumptoendvalue.md)
   A curve that equals its end value for the entire duration.
 
 

@@ -1,7 +1,8 @@
 # typedef
 
 **Framework**: WebKit JS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 typedef(
     ArrayBufferView or ArrayBuffer
 );

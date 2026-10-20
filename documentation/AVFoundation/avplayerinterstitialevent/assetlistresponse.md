@@ -1,7 +1,8 @@
 # assetListResponse
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asset list JSON response as a dictionary.
 
@@ -20,9 +21,13 @@ The asset list JSON response as a dictionary.
 var assetListResponse: [AnyHashable : any Sendable]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSDictionary * assetListResponse;
+```
+
 #### Discussion
 
-The value of this property is `nil` if there is no asset list loaded for the event. If this value is `nil` and the event’s [`templateItems`](avplayerinterstitialevent/templateitems.md) is empty, then an asset list read is expected. If this value is `nil` and [`templateItems`](avplayerinterstitialevent/templateitems.md) isn’t empty, an asset list read isn’t expected.
+The value of this property is `nil` if there is no asset list loaded for the event. If this value is `nil` and the event’s [`templateItems`](./templateitems.md) is empty, then an asset list read is expected. If this value is `nil` and [`templateItems`](./templateitems.md) isn’t empty, an asset list read isn’t expected.
 
 
 ---

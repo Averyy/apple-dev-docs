@@ -775,7 +775,7 @@ that don't have any required methods or properties:
   as discussed in [Sendable Types](Concurrency.md#Sendable-Types).
 - [`Copyable`][] for values that Swift can copy
   when you pass them to a function,
-  as discussed in [Borrowing and Consuming Parameters](Declarations.md#Borrowing-and-Consuming-Parameters).
+  as discussed in [Borrowing and Consuming Parameters](../ReferenceManual/Declarations.md#Borrowing-and-Consuming-Parameters).
 - [`BitwiseCopyable`][] for values that can be copied, bit-by-bit.
 
 [`BitwiseCopyable`]: https://developer.apple.com/documentation/swift/bitwisecopyable
@@ -857,7 +857,7 @@ requires casting at runtime.
 For information about using protocols as generic constraints,
 see [Generics](Generics.md).
 For information about opaque types, and boxed protocol types,
-see [Opaque Types](OpaqueTypes.md).
+see [Opaque and Boxed Protocol Types](OpaqueTypes.md).
 
 <!--
 Performance impact from SE-0335:
@@ -953,7 +953,7 @@ lets the `DiceGame` class
 declare that its delegate must use a weak reference.
 A class-only protocol
 is marked by its inheritance from `AnyObject`,
-as discussed in [Class Only Protocols](Protocols.md#Class-Only-Protocols).
+as discussed in [Class-Only Protocols](Protocols.md#Class-Only-Protocols).
 
 `DiceGame.Delegate` provides three methods for tracking the progress of a game.
 These three methods are incorporated into the game logic

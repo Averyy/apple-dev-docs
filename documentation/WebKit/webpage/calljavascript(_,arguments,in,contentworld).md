@@ -1,7 +1,8 @@
 # callJavaScript(_:arguments:in:contentWorld:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the specified string as an async JavaScript function.
 
@@ -43,7 +44,7 @@ await p;
 return p;
 ```
 
-> **Note**: An error if a problem occurred while evaluating the JavaScript.
+> **Throws**: An error if a problem occurred while evaluating the JavaScript.
 
 ## Parameters
 

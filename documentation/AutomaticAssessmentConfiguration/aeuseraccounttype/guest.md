@@ -1,7 +1,8 @@
 # AEUserAccountType.guest
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Requires a guest user account.
 
@@ -13,6 +14,10 @@ Requires a guest user account.
 
 ```swift
 case guest
+```
+
+```c
+AEUserAccountTypeGuest
 ```
 
 

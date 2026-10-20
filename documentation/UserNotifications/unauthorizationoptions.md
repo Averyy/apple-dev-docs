@@ -1,7 +1,8 @@
 # UNAuthorizationOptions
 
 **Framework**: User Notifications  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that determine the authorized features of local and remote notifications.
 
@@ -20,46 +21,51 @@ Options that determine the authorized features of local and remote notifications
 struct UNAuthorizationOptions
 ```
 
+```c
+enum UNAuthorizationOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Options
-- [static var badge: UNAuthorizationOptions](unauthorizationoptions/badge.md)
+- [static var badge: UNAuthorizationOptions](./unauthorizationoptions/badge.md)
   The ability to update the app’s badge.
-- [static var sound: UNAuthorizationOptions](unauthorizationoptions/sound.md)
+- [static var sound: UNAuthorizationOptions](./unauthorizationoptions/sound.md)
   The ability to play sounds.
-- [static var alert: UNAuthorizationOptions](unauthorizationoptions/alert.md)
+- [static var alert: UNAuthorizationOptions](./unauthorizationoptions/alert.md)
   The ability to display alerts.
-- [static var carPlay: UNAuthorizationOptions](unauthorizationoptions/carplay.md)
+- [static var carPlay: UNAuthorizationOptions](./unauthorizationoptions/carplay.md)
   The ability to display notifications in a CarPlay environment.
-- [static var criticalAlert: UNAuthorizationOptions](unauthorizationoptions/criticalalert.md)
+- [static var criticalAlert: UNAuthorizationOptions](./unauthorizationoptions/criticalalert.md)
   The ability to play sounds for critical alerts.
-- [static var providesAppNotificationSettings: UNAuthorizationOptions](unauthorizationoptions/providesappnotificationsettings.md)
+- [static var providesAppNotificationSettings: UNAuthorizationOptions](./unauthorizationoptions/providesappnotificationsettings.md)
   An option indicating the system should display a button for in-app notification settings.
-- [static var provisional: UNAuthorizationOptions](unauthorizationoptions/provisional.md)
+- [static var provisional: UNAuthorizationOptions](./unauthorizationoptions/provisional.md)
   The ability to post noninterrupting notifications provisionally to the Notification Center.
 ### Initializers
-- [init(rawValue: UInt)](unauthorizationoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./unauthorizationoptions/init%28rawvalue%29.md)
   Initializes an authorization options constant using the specified raw value.
 ### Deprecated
-- [static var announcement: UNAuthorizationOptions](unauthorizationoptions/announcement.md)
+- [static var announcement: UNAuthorizationOptions](./unauthorizationoptions/announcement.md)
   The ability for Siri to automatically read out messages over AirPods.
-- [static var timeSensitive: UNAuthorizationOptions](unauthorizationoptions/timesensitive.md)
+- [static var timeSensitive: UNAuthorizationOptions](./unauthorizationoptions/timesensitive.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func requestAuthorization(options: UNAuthorizationOptions, completionHandler: (Bool, (any Error)?) -> Void)](unusernotificationcenter/requestauthorization(options:completionhandler:).md)
+### Requesting authorization
+- [func requestAuthorization(options: UNAuthorizationOptions, completionHandler: (Bool, (any Error)?) -> Void)](./unusernotificationcenter/requestauthorization%28options,completionhandler%29.md)
   Requests a person’s authorization to allow local and remote notifications for your app.
 
 

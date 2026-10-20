@@ -1,7 +1,8 @@
 # setValue(_:forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets the arbitrary keyed-data for the specified key.
 
@@ -19,6 +20,10 @@ Sets the arbitrary keyed-data for the specified key.
 class func setValue(_ anObject: Any?, forKey key: String)
 ```
 
+```objc
++ (void) setValue:(id) anObject forKey:(NSString *) key;
+```
+
 #### Discussion
 
 Nested transactions have nested data scope; setting a key always sets it in the innermost scope.
@@ -30,7 +35,8 @@ Nested transactions have nested data scope; setting a key always sets it in the 
 
 ## See Also
 
-- [class func value(forKey: String) -> Any?](catransaction/value(forkey:).md)
+### Getting and Setting Transaction Properties
+- [class func value(forKey: String) -> Any?](./value%28forkey%29.md)
   Returns the arbitrary keyed-data specified by the given key.
 
 

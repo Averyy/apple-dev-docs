@@ -1,6 +1,7 @@
 # AXRoleConstants.h
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 #### Overview
 
@@ -39,7 +40,7 @@ Every attribute supported by a given role may have one or more symbols after its
 ## Topics
 
 ### Constants
-- [Miscellaneous Defines](axroleconstants_h/miscellaneous_defines.md)
+- [Miscellaneous Defines](./axroleconstants_h/miscellaneous_defines.md)
 
 
 ---

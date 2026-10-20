@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 UInt32 state;
 ```
 
@@ -15,9 +15,10 @@ state-semaphore for use by IOATAController
 
 ## See Also
 
-- [syncer](ioatabuscommand/syncer.md)
-- [reserved](ioatabuscommand/reserved.md)
-- [queueChain](ioatabuscommand/queuechain.md)
+### Instance Variables
+- [syncer](./syncer.md)
+- [reserved](./reserved.md)
+- [queueChain](./queuechain.md)
 
 
 ---

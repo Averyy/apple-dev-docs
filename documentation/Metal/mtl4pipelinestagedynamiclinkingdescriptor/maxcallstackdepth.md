@@ -1,7 +1,8 @@
 # maxCallStackDepth
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Limits the maximum depth of the call stack for indirect function calls in the pipeline stage function.
 
@@ -17,6 +18,10 @@ Limits the maximum depth of the call stack for indirect function calls in the pi
 
 ```swift
 var maxCallStackDepth: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger maxCallStackDepth;
 ```
 
 

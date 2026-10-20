@@ -1,7 +1,8 @@
 # resetBytes(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a region of the data buffer to `0`.
 
@@ -30,11 +31,12 @@ If `range` exceeds the bounds of the data, then the data is resized to fit.
 
 ## See Also
 
-- [init()](data/init.md)
+### Creating Empty Data
+- [init()](./init%28%29.md)
   Creates an empty data buffer.
-- [init(capacity: Int)](data/init(capacity:).md)
+- [init(capacity: Int)](./init%28capacity%29.md)
   Creates an empty data buffer of a specified size.
-- [init(count: Int)](data/init(count:).md)
+- [init(count: Int)](./init%28count%29.md)
   Creates a new data buffer with the specified count of zeroed bytes.
 
 

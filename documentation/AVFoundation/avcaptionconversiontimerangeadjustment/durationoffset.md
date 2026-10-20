@@ -1,7 +1,8 @@
 # durationOffset
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time value by which the system offsets the durations of captions to correct a problem.
 
@@ -17,13 +18,18 @@ The time value by which the system offsets the durations of captions to correct 
 var durationOffset: CMTime { get }
 ```
 
+```objc
+@property (readonly) CMTime durationOffset;
+```
+
 #### Discussion
 
 The value may any numeric value, positive, negative, or zero.
 
 ## See Also
 
-- [var startTimeOffset: CMTime](avcaptionconversiontimerangeadjustment/starttimeoffset.md)
+### Accessing time offsets
+- [var startTimeOffset: CMTime](./starttimeoffset.md)
   The time value by which the system offsets the start times of captions to correct a problem.
 
 

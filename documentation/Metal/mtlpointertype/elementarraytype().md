@@ -1,7 +1,8 @@
 # elementArrayType()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a description of the underlying array when the pointer points to an array.
 
@@ -19,13 +20,18 @@ Provides a description of the underlying array when the pointer points to an arr
 func elementArrayType() -> MTLArrayType?
 ```
 
+```objc
+- (MTLArrayType *) elementArrayType;
+```
+
 #### Return Value
 
 An object that describes the array. If the pointer does not point to an array, this method returns `nil`.
 
 ## See Also
 
-- [func elementStructType() -> MTLStructType?](mtlpointertype/elementstructtype.md)
+### Obtaining details for complex pointer elements
+- [func elementStructType() -> MTLStructType?](./elementstructtype%28%29.md)
   Provides a description of the underlying struct when the pointer points to a struct.
 
 

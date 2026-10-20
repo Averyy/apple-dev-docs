@@ -1,7 +1,8 @@
 # integrityCheckedRepresentation
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The integrity-checked data representation of the private key.
 
@@ -26,9 +27,10 @@ This representation is 64 bytes long, and contains the seed and a hash of the pu
 
 ## See Also
 
-- [var publicKey: MLDSA87.PublicKey](mldsa87/privatekey/publickey.md)
+### Inspecting a private key’s properties
+- [var publicKey: MLDSA87.PublicKey](./publickey.md)
   The associated public key.
-- [var seedRepresentation: Data](mldsa87/privatekey/seedrepresentation.md)
+- [var seedRepresentation: Data](./seedrepresentation.md)
   The seed representation of the private key.
 
 

@@ -1,7 +1,8 @@
 # FSVolume.KernelCacheCoherencyType
 
 **Framework**: FSKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that defines how the kernel caches data.
 
@@ -14,39 +15,44 @@ A type that defines how the kernel caches data.
 enum KernelCacheCoherencyType
 ```
 
+```c
+enum FSKernelCacheCoherencyType : NSInteger;
+```
+
 ## Topics
 
 ### Coherency types
-- [FSVolume.KernelCacheCoherencyType.noCache](fsvolume/kernelcachecoherencytype/nocache.md)
+- [FSVolume.KernelCacheCoherencyType.noCache](./kernelcachecoherencytype/nocache.md)
   A type that indicates all I/O goes directly to storage, without caching.
-- [FSVolume.KernelCacheCoherencyType.readCache](fsvolume/kernelcachecoherencytype/readcache.md)
+- [FSVolume.KernelCacheCoherencyType.readCache](./kernelcachecoherencytype/readcache.md)
   A type that indicates that writes bypass the cache and go directly to storage.
-- [FSVolume.KernelCacheCoherencyType.writeBack](fsvolume/kernelcachecoherencytype/writeback.md)
+- [FSVolume.KernelCacheCoherencyType.writeBack](./kernelcachecoherencytype/writeback.md)
   A type that indicates writes immediately update the cache only, followed by a deferred write to storage.
-- [FSVolume.KernelCacheCoherencyType.writeThrough](fsvolume/kernelcachecoherencytype/writethrough.md)
+- [FSVolume.KernelCacheCoherencyType.writeThrough](./kernelcachecoherencytype/writethrough.md)
   A type that indicates writes update cache and storage synchronously.
 ### Initializers
-- [init?(rawValue: Int)](fsvolume/kernelcachecoherencytype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./kernelcachecoherencytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setCacheState(for: FSItem, cacheMode: FSVolume.DataCacheMode, coherencyType: FSVolume.KernelCacheCoherencyType, action: FSVolume.KernelCacheCoherencyAction) -> (any Error)?](fsvolume/setcachestate(for:cachemode:coherencytype:action:).md)
+### Managing caching behavior
+- [func setCacheState(for: FSItem, cacheMode: FSVolume.DataCacheMode, coherencyType: FSVolume.KernelCacheCoherencyType, action: FSVolume.KernelCacheCoherencyAction) -> (any Error)?](./setcachestate%28for,cachemode,coherencytype,action%29.md)
   Sends a synchronous cache state update request from the module to the kernel.
-- [class FSItem](fsitem.md)
+- [class FSItem](../fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
-- [FSVolume.DataCacheMode](fsvolume/datacachemode.md)
+- [FSVolume.DataCacheMode](./datacachemode.md)
   A type that defines the cache mode requested by the kernel for data operations.
-- [FSVolume.KernelCacheCoherencyAction](fsvolume/kernelcachecoherencyaction.md)
+- [FSVolume.KernelCacheCoherencyAction](./kernelcachecoherencyaction.md)
   A type that defines actions for cache state changes.
 
 

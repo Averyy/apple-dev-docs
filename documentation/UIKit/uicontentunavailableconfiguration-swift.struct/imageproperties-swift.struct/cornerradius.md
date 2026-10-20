@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred corner radius for the image.
 
@@ -10,7 +11,7 @@ The preferred corner radius for the image.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

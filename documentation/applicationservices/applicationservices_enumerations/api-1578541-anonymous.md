@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [var kICNilProfileID: Int](kicnilprofileid.md)
+- [var kICNilProfileID: Int](../kicnilprofileid.md)
 
 
 ---

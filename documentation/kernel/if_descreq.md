@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_descreq {
     ...
 };
@@ -17,9 +17,9 @@ struct if_descreq {
 ## Topics
 
 ### Instance Properties
-- [ifdr_desc](if_descreq/3943743-ifdr_desc.md)
-- [ifdr_len](if_descreq/3943744-ifdr_len.md)
-- [ifdr_name](if_descreq/3943745-ifdr_name.md)
+- [ifdr_desc](./if_descreq/api-3943743-ifdr_desc.md)
+- [ifdr_len](./if_descreq/api-3943744-ifdr_len.md)
+- [ifdr_name](./if_descreq/api-3943745-ifdr_name.md)
 
 
 ---

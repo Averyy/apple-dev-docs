@@ -1,7 +1,8 @@
 # CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.AlgorithmKind
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Specifies the camera calibration methodology.
 
@@ -23,17 +24,17 @@ enum AlgorithmKind
 ## Topics
 
 ### Enumeration Cases
-- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.AlgorithmKind.parametric](cmformatdescription/extensions-swift.struct/value/cameracalibrationdatalenscollection/algorithmkind/parametric.md)
+- [CMFormatDescription.Extensions.Value.CameraCalibrationDataLensCollection.AlgorithmKind.parametric](./algorithmkind/parametric.md)
   The camera lens calibration requires camera intrinsic and extrinsic parameters.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AppLibrary.App
 
 **Framework**: MarketplaceKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Information about an app that someone installs from a marketplace, including its ID and installation status.
 
@@ -18,56 +19,57 @@ final class App
 
 ## Mentions
 
-- [Providing age-rating appropriate content](providing-age-rating-appropriate-content.md)
+- [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md)
 
 ## Topics
 
 ### Inspecting an app’s version and account
-- [var installedMetadata: AppLibrary.App.Metadata?](applibrary/app/installedmetadata.md)
+- [var installedMetadata: AppLibrary.App.Metadata?](./app/installedmetadata.md)
   The app version and the account that’s installing the app
-- [AppLibrary.App.Metadata](applibrary/app/metadata.md)
+- [AppLibrary.App.Metadata](./app/metadata.md)
   Information about an app’s version and account.
 ### Inspecting app installation and update status
-- [var installation: AppLibrary.App.Installation?](applibrary/app/installation-swift.property.md)
+- [var installation: AppLibrary.App.Installation?](./app/installation-swift.property.md)
   The progress of the app’s installation.
-- [AppLibrary.App.Installation](applibrary/app/installation-swift.struct.md)
+- [AppLibrary.App.Installation](./app/installation-swift.struct.md)
   A structure that provides progress information for a specific app installation.
-- [var isInstalled: Bool](applibrary/app/isinstalled.md)
+- [var isInstalled: Bool](./app/isinstalled.md)
   A Boolean value that indicates whether the app’s installation is complete.
-- [var isInstalling: Bool](applibrary/app/isinstalling.md)
+- [var isInstalling: Bool](./app/isinstalling.md)
   A Boolean value that indicates whether the app’s installation is in progress.
-- [var isUpdating: Bool](applibrary/app/isupdating.md)
+- [var isUpdating: Bool](./app/isupdating.md)
   A Boolean value that indicates whether an app’s update is in progress.
-- [var installationError: MarketplaceKitError?](applibrary/app/installationerror.md)
+- [var installationError: MarketplaceKitError?](./app/installationerror.md)
   An error that occurs during the installation of an app that resides on a marketplace.
 ### Requesting installation approval
-- [func presentAgeExceptionApproveInPersonSheet() async throws](applibrary/app/presentageexceptionapproveinpersonsheet.md)
+- [func presentAgeExceptionApproveInPersonSheet() async throws](./app/presentageexceptionapproveinpersonsheet%28%29.md)
   Presents a sheet that enables a parent or guardian to approve age-exception requests.
 ### Requesting app deletion
-- [func requestDeletion(in: UIWindowScene) async throws](applibrary/app/requestdeletion(in:).md)
+- [func requestDeletion(in: UIWindowScene) async throws](./app/requestdeletion%28in%29.md)
   Prompts the person to delete the app.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Observable](../../Observation/observable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AppLibrary.InstallationRequest](applibrary/installationrequest.md)
+### Installing apps as a marketplace
+- [AppLibrary.InstallationRequest](./installationrequest.md)
   A request to install an app distribution package for a given account.
-- [var installingApps: Set<AppLibrary.App>](applibrary/installingapps.md)
+- [var installingApps: Set<AppLibrary.App>](./installingapps.md)
   The set of apps that are pending installation completion.
-- [var isLoading: Bool](applibrary/isloading.md)
+- [var isLoading: Bool](./isloading.md)
   A Boolean value that indicates whether the library is currently loading apps.
-- [func requestAppInstallation(AppLibrary.InstallationRequest) async throws](applibrary/requestappinstallation(_:).md)
+- [func requestAppInstallation(AppLibrary.InstallationRequest) async throws](./requestappinstallation%28_%29.md)
   Requests the installation of the given app distribution package for the given account.
 
 

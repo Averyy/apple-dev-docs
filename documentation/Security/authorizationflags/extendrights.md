@@ -1,7 +1,8 @@
 # extendRights
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that permits the Security Server to attempt to grant the rights requested.
 
@@ -13,6 +14,10 @@ A flag that permits the Security Server to attempt to grant the rights requested
 
 ```swift
 static var extendRights: AuthorizationFlags { get }
+```
+
+```c
+kAuthorizationFlagExtendRights
 ```
 
 #### Discussion

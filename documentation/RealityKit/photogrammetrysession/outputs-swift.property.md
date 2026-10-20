@@ -1,7 +1,8 @@
 # outputs
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the outputs message stream which can be asynchronously iterated on.
 
@@ -19,15 +20,16 @@ var outputs: PhotogrammetrySession.Outputs { get }
 
 ## Mentions
 
-- [Creating 3D objects from photographs](creating-3d-objects-from-photographs.md)
+- [Creating 3D objects from photographs](../creating-3d-objects-from-photographs.md)
 
 ## See Also
 
-- [var activeRequests: [PhotogrammetrySession.Request]](photogrammetrysession/activerequests.md)
+### Monitoring the session
+- [var activeRequests: [PhotogrammetrySession.Request]](./activerequests.md)
   The session’s active request objects.
-- [var isProcessing: Bool](photogrammetrysession/isprocessing.md)
+- [var isProcessing: Bool](./isprocessing.md)
   The session is actively processing requests.
-- [PhotogrammetrySession.Output](photogrammetrysession/output.md)
+- [PhotogrammetrySession.Output](./output.md)
   Status updates on the object-creation process.
 
 

@@ -1,7 +1,8 @@
 # kUSBPowerRequestWakeReallocate
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The system requests power reallocation upon waking.
 
@@ -10,13 +11,13 @@ The system requests power reallocation upon waking.
 
 ## Declaration
 
-```swift
+```c
 kUSBPowerRequestWakeReallocate = 4
 ```
 
 #### Discussion
 
-When you use this enumeration with [`ReturnExtraPower`](https://developer.apple.com/documentation/iokit/iousbdeviceinterface942/2977171-returnextrapower), it sends a message to all devices to return more wake power because some devices have released it.
+When you use this enumeration with [`ReturnExtraPower`](../../iokit/iousbdeviceinterface942/api-2977171-returnextrapower.md), it sends a message to all devices to return more wake power because some devices have released it.
 
 
 ---

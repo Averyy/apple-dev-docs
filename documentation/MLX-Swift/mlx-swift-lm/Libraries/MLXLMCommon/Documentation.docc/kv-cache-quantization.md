@@ -225,6 +225,6 @@ when exact fp16-parity decode matters more than footprint.
   kept fp16 rotating caches. Hybrid recurrent layers are likewise left
   untouched.
 - A bounded compressed rotating cache is not implemented.
-- For memory estimation with wired limits see <doc:wired-memory>; effective
+- For memory estimation with wired limits see [Wired Memory and Weight Reservations](wired-memory.md); effective
   bytes per element follow from the table above (for example `turbo8v3` is
   about 0.73 bytes per K/V element pair average against 4 for fp16).

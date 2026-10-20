@@ -1,7 +1,8 @@
 # urlInvalid
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that represents a problem with a file URL.
 
@@ -21,9 +22,10 @@ static var urlInvalid: MTLIOError.Code { get }
 
 ## See Also
 
-- [static var `internal`: MTLIOError.Code](mtlioerror-swift.struct/internal.md)
+### Error codes
+- [static var `internal`: MTLIOError.Code](./internal.md)
   An error that represents a problem internal to the Metal framework.
-- [MTLIOError.Code](mtlioerror-swift.struct/code.md)
+- [MTLIOError.Code](./code.md)
   The error codes for creating an input/output file handle.
 
 

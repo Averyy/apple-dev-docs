@@ -1,7 +1,8 @@
 # markerAttributes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of attributed string keys and IDs that represent the list’s marker attributes.
 
@@ -12,6 +13,10 @@ A dictionary of attributed string keys and IDs that represent the list’s marke
 
 ```swift
 var markerAttributes: [NSAttributedString.Key : Any]? { get }
+```
+
+```objc
+@property (strong, readonly, nullable) NSDictionary<NSString *,id> * markerAttributes;
 ```
 
 

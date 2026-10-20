@@ -1,7 +1,8 @@
 # init(eventType:device:)
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event object that conveys status for a discovered device of interest.
 
@@ -9,13 +10,17 @@ Creates an event object that conveys status for a discovered device of interest.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init(eventType type: DDDeviceEvent.EventType, device: DDDevice)
+```
+
+```objc
+- (instancetype) initWithEventType:(DDEventType) type device:(DDDevice *) device;
 ```
 
 ## Parameters

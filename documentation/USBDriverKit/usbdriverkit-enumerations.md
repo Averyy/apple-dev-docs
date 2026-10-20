@@ -1,19 +1,21 @@
 # USBDriverKit Enumerations
 
-**Framework**: USBDriverKit
+**Framework**: USBDriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Enumeration Cases
-- [kIOUSB30RetimerDepthLimit](kiousb30retimerdepthlimit.md)
+- [kIOUSB30RetimerDepthLimit](./kiousb30retimerdepthlimit.md)
 ### Enumerations
-- [tIOUSBTopology](tiousbtopology.md)
+- [tIOUSBTopology](./tiousbtopology.md)
 
 ## See Also
 
-- [USBDriverKit Functions](usbdriverkit-functions.md)
-- [USBDriverKit Data Types](usbdriverkit-data-types.md)
-- [USBDriverKit Macros](usbdriverkit-macros.md)
+### References
+- [USBDriverKit Functions](./usbdriverkit-functions.md)
+- [USBDriverKit Data Types](./usbdriverkit-data-types.md)
+- [USBDriverKit Macros](./usbdriverkit-macros.md)
 
 
 ---

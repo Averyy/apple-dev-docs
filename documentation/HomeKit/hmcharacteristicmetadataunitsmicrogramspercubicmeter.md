@@ -1,7 +1,8 @@
 # HMCharacteristicMetadataUnitsMicrogramsPerCubicMeter
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The unit of the characteristic is micrograms per cubic meter.
 
@@ -17,6 +18,10 @@ The unit of the characteristic is micrograms per cubic meter.
 
 ```swift
 let HMCharacteristicMetadataUnitsMicrogramsPerCubicMeter: String
+```
+
+```c
+extern NSString * const HMCharacteristicMetadataUnitsMicrogramsPerCubicMeter;
 ```
 
 

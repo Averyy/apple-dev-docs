@@ -1,7 +1,8 @@
 # Transcript.HistoryView.Index
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A position of an entry within a history view.
 
@@ -22,12 +23,12 @@ struct Index
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Strideable](../swift/strideable.md)
+- [Comparable](../../../Swift/comparable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [Strideable](../../../Swift/strideable.md)
 
 
 ---

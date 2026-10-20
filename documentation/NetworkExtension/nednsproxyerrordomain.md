@@ -1,7 +1,8 @@
 # NEDNSProxyErrorDomain
 
 **Framework**: Network Extension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The DNS proxy error domain.
 
@@ -18,9 +19,14 @@ The DNS proxy error domain.
 let NEDNSProxyErrorDomain: String
 ```
 
+```c
+extern NSString * const NEDNSProxyErrorDomain;
+```
+
 ## See Also
 
-- [enum NEDNSProxyManagerError](nednsproxymanagererror.md)
+### Errors
+- [enum NEDNSProxyManagerError](./nednsproxymanagererror.md)
   The possible DNS proxy manager errors.
 
 

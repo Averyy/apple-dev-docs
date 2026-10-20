@@ -1,7 +1,8 @@
 # preferredContentSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred size for the view controller’s view.
 
@@ -9,7 +10,7 @@ The preferred size for the view controller’s view.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,27 +19,32 @@ The preferred size for the view controller’s view.
 var preferredContentSize: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic) CGSize preferredContentSize;
+```
+
 #### Discussion
 
 The value in this property is used primarily when displaying the view controller’s content in a popover but may also be used in other situations. Changing the value of this property while the view controller is being displayed in a popover animates the size change; however, the change is not animated if you specify a width or height of `0.0`.
 
 ## See Also
 
-- [var view: UIView!](uiviewcontroller/view.md)
+### Managing the view
+- [var view: UIView!](./view.md)
   The view that the controller manages.
-- [var viewIfLoaded: UIView?](uiviewcontroller/viewifloaded.md)
+- [var viewIfLoaded: UIView?](./viewifloaded.md)
   The view controller’s view, or `nil` if the view isn’t yet loaded.
-- [var isViewLoaded: Bool](uiviewcontroller/isviewloaded.md)
+- [var isViewLoaded: Bool](./isviewloaded.md)
   A Boolean value indicating whether the view is currently loaded into memory.
-- [func loadView()](uiviewcontroller/loadview.md)
+- [func loadView()](./loadview%28%29.md)
   Creates the view that the controller manages.
-- [func viewDidLoad()](uiviewcontroller/viewdidload.md)
+- [func viewDidLoad()](./viewdidload%28%29.md)
   Called after the controller’s view is loaded into memory.
-- [func loadViewIfNeeded()](uiviewcontroller/loadviewifneeded.md)
+- [func loadViewIfNeeded()](./loadviewifneeded%28%29.md)
   Loads the view controller’s view if it’s not loaded yet.
-- [var title: String?](uiviewcontroller/title.md)
+- [var title: String?](./title.md)
   A localized string that represents the view this controller manages.
-- [var ornaments: [UIOrnament]](uiviewcontroller/ornaments.md)
+- [var ornaments: [UIOrnament]](./ornaments.md)
   SwiftUI ornaments to display adjacent to the view controller.
 
 

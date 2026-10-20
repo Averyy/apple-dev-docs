@@ -1,7 +1,8 @@
 # GET /attribution/{language}
 
 **Framework**: WeatherKit REST API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Receive attribution information.
 
@@ -14,11 +15,18 @@ Receive attribution information.
 
 ## Parameters
 
+### Path Parameters
+
 - `language` (string) *(required)*: The language tag to use for localizing responses.
+
+## Responses
+
+- `200` OK (`Attribution`, `application/json`): The request is successful. The attribution information is in the response.
 
 ## See Also
 
-- [object Attribution](attribution.md)
+### Performing attribution
+- [object Attribution](./attribution.md)
   A list of image asset URLs for attribution.
 
 

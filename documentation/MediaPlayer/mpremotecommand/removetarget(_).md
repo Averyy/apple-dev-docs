@@ -1,7 +1,8 @@
 # removeTarget(_:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a target from the remote command object.
 
@@ -20,9 +21,13 @@ Removes a target from the remote command object.
 func removeTarget(_ target: Any?)
 ```
 
+```objc
+- (void) removeTarget:(id) target;
+```
+
 #### Discussion
 
-Call the [`removeTarget(_:)`](mpremotecommand/removetarget(_:).md) method to remove the specified target and all actions associated with the target.
+Call the [`removeTarget(_:)`](./removetarget%28_%29.md) method to remove the specified target and all actions associated with the target.
 
 ## Parameters
 
@@ -30,13 +35,14 @@ Call the [`removeTarget(_:)`](mpremotecommand/removetarget(_:).md) method to rem
 
 ## See Also
 
-- [func addTarget(handler: (MPRemoteCommandEvent) -> MPRemoteCommandHandlerStatus) -> Any](mpremotecommand/addtarget(handler:).md)
+### Handling events
+- [func addTarget(handler: (MPRemoteCommandEvent) -> MPRemoteCommandHandlerStatus) -> Any](./addtarget%28handler%29.md)
   Adds a block to be called when an event is received.
-- [func addTarget(Any, action: Selector)](mpremotecommand/addtarget(_:action:).md)
+- [func addTarget(Any, action: Selector)](./addtarget%28_,action%29.md)
   Adds a target object to be called when an event is received.
-- [func removeTarget(Any, action: Selector?)](mpremotecommand/removetarget(_:action:).md)
+- [func removeTarget(Any, action: Selector?)](./removetarget%28_,action%29.md)
   Removes a target and action from a remote command object.
-- [enum MPRemoteCommandHandlerStatus](mpremotecommandhandlerstatus.md)
+- [enum MPRemoteCommandHandlerStatus](../mpremotecommandhandlerstatus.md)
   Constants indicating the status of a command.
 
 

@@ -1,7 +1,8 @@
 # didReorderProperties
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the properties list of a prim was reordered.
 

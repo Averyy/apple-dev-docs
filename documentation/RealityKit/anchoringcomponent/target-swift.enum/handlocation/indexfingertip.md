@@ -1,7 +1,8 @@
 # indexFingerTip
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An anchor location at the tip of the index finger.
 

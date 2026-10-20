@@ -1,7 +1,8 @@
 # CVDisplayLinkOutputCallback
 
 **Framework**: Core Video  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type for a display link callback function that the system invokes when it’s time for the app to output a video frame.
 
@@ -13,6 +14,10 @@ A type for a display link callback function that the system invokes when it’s 
 
 ```swift
 typealias CVDisplayLinkOutputCallback = (CVDisplayLink, UnsafePointer<CVTimeStamp>, UnsafePointer<CVTimeStamp>, CVOptionFlags, UnsafeMutablePointer<CVOptionFlags>, UnsafeMutableRawPointer?) -> CVReturn
+```
+
+```c
+typedef int (*)(struct __CVDisplayLink *, const CVTimeStamp *, const CVTimeStamp *, unsigned long long, unsigned long long *, void *) CVDisplayLinkOutputCallback;
 ```
 
 #### Discussion
@@ -30,7 +35,8 @@ Your app must register a callback function for the system to invoke with the dat
 
 ## See Also
 
-- [typealias CVDisplayLinkOutputHandler](cvdisplaylinkoutputhandler.md)
+### Callbacks
+- [typealias CVDisplayLinkOutputHandler](./cvdisplaylinkoutputhandler.md)
 
 
 ---

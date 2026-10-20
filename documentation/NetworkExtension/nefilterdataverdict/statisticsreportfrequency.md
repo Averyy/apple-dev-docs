@@ -1,7 +1,8 @@
 # statisticsReportFrequency
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frequencty at which to provide flow statistics to the data provider.
 
@@ -14,11 +15,15 @@ The frequencty at which to provide flow statistics to the data provider.
 var statisticsReportFrequency: NEFilterReport.Frequency { get set }
 ```
 
+```objc
+@property NEFilterReportFrequency statisticsReportFrequency;
+```
+
 #### Discussion
 
-This property determines the frequency at which the provider receives a call to its [`handle(_:)`](nefilterprovider/handle(_:).md) method with an [`NEFilterReport.Event.statistics`](nefilterreport/event-swift.enum/statistics.md) event.
+This property determines the frequency at which the provider receives a call to its [`handle(_:)`](../nefilterprovider/handle%28_%29.md) method with an [`NEFilterReport.Event.statistics`](../nefilterreport/event-swift.enum/statistics.md) event.
 
-The default value of this property [`NEFilterReport.Frequency.none`](nefilterreport/frequency/none.md), meaning that the provider receives no statistics by default.
+The default value of this property [`NEFilterReport.Frequency.none`](../nefilterreport/frequency/none.md), meaning that the provider receives no statistics by default.
 
 
 ---

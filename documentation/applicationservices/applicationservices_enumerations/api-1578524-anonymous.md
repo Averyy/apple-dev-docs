@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kICComponentVersion: Int](kiccomponentversion.md)
-- [var kICNumVersion: Int](kicnumversion.md)
+- [var kICComponentVersion: Int](../kiccomponentversion.md)
+- [var kICNumVersion: Int](../kicnumversion.md)
 
 
 ---

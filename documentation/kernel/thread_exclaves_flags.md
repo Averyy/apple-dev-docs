@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum thread_exclaves_flags : uint32_t {
     ...
 };
@@ -17,9 +17,9 @@ enum thread_exclaves_flags : uint32_t {
 ## Topics
 
 ### Constants
-- [kExclaveRPCActive](thread_exclaves_flags/kexclaverpcactive.md)
-- [kExclaveSchedulerRequest](thread_exclaves_flags/kexclaveschedulerrequest.md)
-- [kExclaveUpcallActive](thread_exclaves_flags/kexclaveupcallactive.md)
+- [kExclaveRPCActive](./thread_exclaves_flags/kexclaverpcactive.md)
+- [kExclaveSchedulerRequest](./thread_exclaves_flags/kexclaveschedulerrequest.md)
+- [kExclaveUpcallActive](./thread_exclaves_flags/kexclaveupcallactive.md)
 
 
 ---

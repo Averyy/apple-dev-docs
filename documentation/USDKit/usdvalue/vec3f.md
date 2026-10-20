@@ -1,7 +1,8 @@
 # USDValue.Vec3f
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 3-component single-precision vector.
 
@@ -23,37 +24,37 @@ struct Vec3f
 ## Topics
 
 ### Initializers
-- [init()](usdvalue/vec3f/init.md)
+- [init()](./vec3f/init%28%29.md)
   Creates a zero vector.
-- [init(SIMD3<Float>)](usdvalue/vec3f/init(_:).md)
+- [init(SIMD3<Float>)](./vec3f/init%28_%29.md)
   Creates a vector from a `SIMD3<Float>`.
-- [init(Float, Float, Float)](usdvalue/vec3f/init(_:_:_:).md)
+- [init(Float, Float, Float)](./vec3f/init%28_,_,_%29.md)
   Creates a vector with the given components.
 ### Instance Properties
-- [var simd: SIMD3<Float>](usdvalue/vec3f/simd.md)
+- [var simd: SIMD3<Float>](./vec3f/simd.md)
   The vector as a `SIMD3<Float>`.
-- [var x: Float](usdvalue/vec3f/x.md)
-- [var y: Float](usdvalue/vec3f/y.md)
-- [var z: Float](usdvalue/vec3f/z.md)
+- [var x: Float](./vec3f/x.md)
+- [var y: Float](./vec3f/y.md)
+- [var z: Float](./vec3f/z.md)
 ### Subscripts
-- [subscript(Int) -> Float](usdvalue/vec3f/subscript(_:).md)
+- [subscript(Int) -> Float](./vec3f/subscript%28_%29.md)
   Accesses the component at the specified index.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](../usdstage/object/metadatavalue.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 
 ---

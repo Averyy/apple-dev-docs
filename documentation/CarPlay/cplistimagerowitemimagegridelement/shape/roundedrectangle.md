@@ -1,7 +1,8 @@
 # CPListImageRowItemImageGridElement.Shape.roundedRectangle
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The list item will render a condensed list of rounded rectangle elements.
 
@@ -14,6 +15,10 @@ The list item will render a condensed list of rounded rectangle elements.
 
 ```swift
 case roundedRectangle
+```
+
+```c
+CPListImageRowItemImageGridElementShapeRoundedRectangle
 ```
 
 

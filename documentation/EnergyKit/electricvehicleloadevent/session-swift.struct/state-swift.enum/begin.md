@@ -1,14 +1,15 @@
 # ElectricVehicleLoadEvent.Session.State.begin
 
 **Framework**: EnergyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that represents the start of the session.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,7 +19,7 @@ case begin
 
 ## Mentions
 
-- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
+- [Providing charging history for electric vehicles](../../../providing-informative-charging-history-for-electric-vehicles.md)
 
 #### Discussion
 

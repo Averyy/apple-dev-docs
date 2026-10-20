@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionKeyType.currentDeviceEncryption
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 14.0+
@@ -12,16 +13,21 @@
 case currentDeviceEncryption
 ```
 
+```c
+ASAuthorizationProviderExtensionKeyTypeCurrentDeviceEncryption
+```
+
 ## Mentions
 
-- [Registering devices and users](registering-devices-and-users.md)
+- [Registering devices and users](../registering-devices-and-users.md)
 
 ## See Also
 
-- [ASAuthorizationProviderExtensionKeyType.currentDeviceSigning](asauthorizationproviderextensionkeytype/currentdevicesigning.md)
-- [ASAuthorizationProviderExtensionKeyType.sharedDeviceEncryption](asauthorizationproviderextensionkeytype/shareddeviceencryption.md)
-- [ASAuthorizationProviderExtensionKeyType.sharedDeviceSigning](asauthorizationproviderextensionkeytype/shareddevicesigning.md)
-- [ASAuthorizationProviderExtensionKeyType.userSmartCard](asauthorizationproviderextensionkeytype/usersmartcard.md)
+### Enumeration Cases
+- [ASAuthorizationProviderExtensionKeyType.currentDeviceSigning](./currentdevicesigning.md)
+- [ASAuthorizationProviderExtensionKeyType.sharedDeviceEncryption](./shareddeviceencryption.md)
+- [ASAuthorizationProviderExtensionKeyType.sharedDeviceSigning](./shareddevicesigning.md)
+- [ASAuthorizationProviderExtensionKeyType.userSmartCard](./usersmartcard.md)
 
 
 ---

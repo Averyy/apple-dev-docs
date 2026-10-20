@@ -1,17 +1,22 @@
 # selectInAddressBook(_:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Launches Address Book and selects the item selected in the people picker.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func selectInAddressBook(_ sender: Any!)
+```
+
+```objc
+- (void) selectInAddressBook:(id) sender;
 ```
 
 ## Parameters
@@ -20,15 +25,16 @@ func selectInAddressBook(_ sender: Any!)
 
 ## See Also
 
-- [func clearSearchField(Any!)](abpeoplepickerview/clearsearchfield(_:).md)
+### Managing Actions
+- [func clearSearchField(Any!)](./clearsearchfield%28_%29.md)
   Clears the search field and resets the list of displayed records.
-- [func editInAddressBook(Any!)](abpeoplepickerview/editinaddressbook(_:).md)
+- [func editInAddressBook(Any!)](./editinaddressbook%28_%29.md)
   Launches Address Book to edit the item selected in the people picker.
-- [var groupDoubleAction: Selector!](abpeoplepickerview/groupdoubleaction.md)
+- [var groupDoubleAction: Selector!](./groupdoubleaction.md)
   The action to be invoked when a group is double-clicked.
-- [var nameDoubleAction: Selector!](abpeoplepickerview/namedoubleaction.md)
+- [var nameDoubleAction: Selector!](./namedoubleaction.md)
   The action to be invoked when a name is double-clicked.
-- [var target: AnyObject!](abpeoplepickerview/target.md)
+- [var target: AnyObject!](./target.md)
   The target for double-click actions.
 
 

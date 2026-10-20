@@ -1,7 +1,8 @@
 # Transcript.Reasoning
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A reasoning entry from the model.
 
@@ -22,35 +23,36 @@ struct Reasoning
 ## Topics
 
 ### Creating a reasoning instance
-- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment], signature: Data?)](transcript/reasoning/init(id:metadata:segments:signature:).md)
+- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment], signature: Data?)](./reasoning/init%28id,metadata,segments,signature%29.md)
   Creates a reasoning entry that contains the segments you provide.
 ### Inspecting the reasoning
-- [var description: String](transcript/reasoning/description.md)
+- [var description: String](./reasoning/description.md)
   A textual representation of the reasoning entry.
-- [var metadata: [String : GeneratedContent]](transcript/reasoning/metadata.md)
+- [var metadata: [String : GeneratedContent]](./reasoning/metadata.md)
   Metadata produced by the model while generating this reasoning entry.
-- [var segments: [Transcript.Segment]](transcript/reasoning/segments.md)
+- [var segments: [Transcript.Segment]](./reasoning/segments.md)
   Ordered reasoning segments.
-- [var signature: Data?](transcript/reasoning/signature.md)
+- [var signature: Data?](./reasoning/signature.md)
   Opaque producer-supplied signature for this reasoning entry.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transcript.Entry](transcript/entry.md)
+### Transcript entries
+- [Transcript.Entry](./entry.md)
   An entry in a transcript.
-- [Transcript.Instructions](transcript/instructions.md)
+- [Transcript.Instructions](./instructions.md)
   Instructions you provide to the model that define its behavior.
-- [Transcript.Prompt](transcript/prompt.md)
+- [Transcript.Prompt](./prompt.md)
   A prompt from the user to the model.
-- [Transcript.Response](transcript/response.md)
+- [Transcript.Response](./response.md)
   A response from the model.
 
 

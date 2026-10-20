@@ -1,7 +1,8 @@
 # installName
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For a dynamic library, the name to use when installing the library.
 
@@ -19,9 +20,14 @@ For a dynamic library, the name to use when installing the library.
 var installName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * installName;
+```
+
 ## See Also
 
-- [var libraryType: MTLLibraryType](mtlcompileoptions/librarytype.md)
+### Configuring the library output options
+- [var libraryType: MTLLibraryType](./librarytype.md)
   The kind of library to create.
 
 

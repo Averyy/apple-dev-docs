@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a notification presentation options object using the specified raw value.
 

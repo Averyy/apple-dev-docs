@@ -1,7 +1,8 @@
 # minorVersion
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minor release number, such as 9 in version 10.9.3.
 
@@ -20,15 +21,20 @@ The minor release number, such as 9 in version 10.9.3.
 var minorVersion: Int
 ```
 
+```c
+NSInteger minorVersion;
+```
+
 ## See Also
 
-- [var majorVersion: Int](operatingsystemversion/majorversion.md)
+### Version Components
+- [var majorVersion: Int](./majorversion.md)
   The major release number, such as 10 in version 10.9.3.
-- [var patchVersion: Int](operatingsystemversion/patchversion.md)
+- [var patchVersion: Int](./patchversion.md)
   The update release number, such as 3 in version 10.9.3.
-- [var majorVersion: Int](operatingsystemversion/majorversion.md)
+- [var majorVersion: Int](./majorversion.md)
   The major release number, such as 10 in version 10.9.3.
-- [var patchVersion: Int](operatingsystemversion/patchversion.md)
+- [var patchVersion: Int](./patchversion.md)
   The update release number, such as 3 in version 10.9.3.
 
 

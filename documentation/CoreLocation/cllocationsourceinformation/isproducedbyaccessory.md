@@ -1,7 +1,8 @@
 # isProducedByAccessory
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system receives the location from an external accessory.
 
@@ -20,13 +21,18 @@ A Boolean value that indicates whether the system receives the location from an 
 var isProducedByAccessory: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isProducedByAccessory;
+```
+
 #### Discussion
 
-Core Location sets [`isProducedByAccessory`](cllocationsourceinformation/isproducedbyaccessory.md) to `true` if the system retrieved the location from an external accessory attached to the device, such as a Made for iPhone GPS dongle or CarPlay. Otherwise, the default value is `false`.
+Core Location sets [`isProducedByAccessory`](./isproducedbyaccessory.md) to `true` if the system retrieved the location from an external accessory attached to the device, such as a Made for iPhone GPS dongle or CarPlay. Otherwise, the default value is `false`.
 
 ## See Also
 
-- [var isSimulatedBySoftware: Bool](cllocationsourceinformation/issimulatedbysoftware.md)
+### Identifying the source of location data
+- [var isSimulatedBySoftware: Bool](./issimulatedbysoftware.md)
   A Boolean value that indicates whether the system generates the location using on-device software simulation.
 
 

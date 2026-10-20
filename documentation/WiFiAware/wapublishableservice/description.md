@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the service.
 

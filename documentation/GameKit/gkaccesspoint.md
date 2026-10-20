@@ -1,7 +1,8 @@
 # GKAccessPoint
 
 **Framework**: GameKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that allows players to view and manage their Game Center information from within your game.
 
@@ -19,97 +20,102 @@ An object that allows players to view and manage their Game Center information f
 class GKAccessPoint
 ```
 
+```objc
+@interface GKAccessPoint : NSObject
+```
+
 ## Mentions
 
-- [Adding an access point to your game](adding-an-access-point-to-your-game.md)
+- [Adding an access point to your game](./adding-an-access-point-to-your-game.md)
 
 #### Overview
 
 The access point displays a control in a corner of your game that opens a Game Center dashboard when the player taps or clicks it.
 
-Use the [`shared`](gkaccesspoint/shared.md) property to get the shared access point object. GameKit attaches the access point to the window you specify in the [`parentWindow`](gkaccesspoint/parentwindow.md) property, in the corner you specify using the [`location`](gkaccesspoint/location-swift.property.md) property. If you don’t specify a parent window, GameKit infers an appropriate location. For the location of the access point on visionOS, see [`Configure the access point on visionOS`](adding-an-access-point-to-your-game#Configure-the-access-point-on-visionOS.md).
+Use the [`shared`](./gkaccesspoint/shared.md) property to get the shared access point object. GameKit attaches the access point to the window you specify in the [`parentWindow`](./gkaccesspoint/parentwindow.md) property, in the corner you specify using the [`location`](./gkaccesspoint/location-swift.property.md) property. If you don’t specify a parent window, GameKit infers an appropriate location. For the location of the access point on visionOS, see [Configure the access point on visionOS](./adding-an-access-point-to-your-game.md#Configure-the-access-point-on-visionOS).
 
-To display highlights, set the [`showHighlights`](gkaccesspoint/showhighlights.md) property to [`true`](https://developer.apple.com/documentation/swift/true). Then set [`isActive`](gkaccesspoint/isactive.md) to [`true`](https://developer.apple.com/documentation/swift/true) to display the access point control.
+To display highlights, set the [`showHighlights`](./gkaccesspoint/showhighlights.md) property to [`true`](../Swift/true.md). Then set [`isActive`](./gkaccesspoint/isactive.md) to [`true`](../Swift/true.md) to display the access point control.
 
 ## Topics
 
 ### Getting the shared access point
-- [class var shared: GKAccessPoint](gkaccesspoint/shared.md)
+- [class var shared: GKAccessPoint](./gkaccesspoint/shared.md)
   The shared access point object.
 ### Managing the location
-- [var location: GKAccessPoint.Location](gkaccesspoint/location-swift.property.md)
+- [var location: GKAccessPoint.Location](./gkaccesspoint/location-swift.property.md)
   The corner of the screen to display the access point.
-- [GKAccessPoint.Location](gkaccesspoint/location-swift.enum.md)
+- [GKAccessPoint.Location](./gkaccesspoint/location-swift.enum.md)
   Specifies the corner of the screen to display the access point.
-- [var frameInScreenCoordinates: CGRect](gkaccesspoint/frameinscreencoordinates.md)
+- [var frameInScreenCoordinates: CGRect](./gkaccesspoint/frameinscreencoordinates.md)
   The frame of the access point in screen coordinates.
-- [var parentWindow: UIWindow?](gkaccesspoint/parentwindow.md)
+- [var parentWindow: UIWindow?](./gkaccesspoint/parentwindow.md)
   The window that contains the access point.
 ### Displaying the access point
-- [var isActive: Bool](gkaccesspoint/isactive.md)
+- [var isActive: Bool](./gkaccesspoint/isactive.md)
   A Boolean value that determines whether to display the access point.
-- [var isPresentingGameCenter: Bool](gkaccesspoint/ispresentinggamecenter.md)
+- [var isPresentingGameCenter: Bool](./gkaccesspoint/ispresentinggamecenter.md)
   A Boolean value that indicates whether the game is presenting the Game Center dashboard.
-- [var isVisible: Bool](gkaccesspoint/isvisible.md)
+- [var isVisible: Bool](./gkaccesspoint/isvisible.md)
   A Boolean value that indicates whether the access point is visible.
-- [var showHighlights: Bool](gkaccesspoint/showhighlights.md)
+- [var showHighlights: Bool](./gkaccesspoint/showhighlights.md)
   A Boolean value that indicates whether to display highlights for achievements and current ranks for leaderboards.
 ### Managing the access point
-- [var isFocused: Bool](gkaccesspoint/isfocused.md)
+- [var isFocused: Bool](./gkaccesspoint/isfocused.md)
   A Boolean value that indicates whether the access point is in focus on tvOS.
-- [func trigger(handler: () -> Void)](gkaccesspoint/trigger(handler:).md)
+- [func trigger(handler: () -> Void)](./gkaccesspoint/trigger%28handler%29.md)
   Displays the Game Center dashboard as if the player taps or presses the access point.
-- [func trigger(state: GKGameCenterViewControllerState, handler: () -> Void)](gkaccesspoint/trigger(state:handler:).md)
+- [func trigger(state: GKGameCenterViewControllerState, handler: () -> Void)](./gkaccesspoint/trigger%28state,handler%29.md)
   Displays the Game Center dashboard in the specified state as if the player taps or presses the access point.
-- [func trigger(player: GKPlayer, handler: (() -> Void)?)](gkaccesspoint/trigger(player:handler:).md)
+- [func trigger(player: GKPlayer, handler: (() -> Void)?)](./gkaccesspoint/trigger%28player,handler%29.md)
   Displays the Game Center dashboard in a state that shows a player profile.
-- [func trigger(achievementID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(achievementid:handler:).md)
+- [func trigger(achievementID: String, handler: (() -> Void)?)](./gkaccesspoint/trigger%28achievementid,handler%29.md)
   Displays the Game Center dashboard in a state that shows a specific achievement.
-- [func trigger(leaderboardID: String, playerScope: GKLeaderboard.PlayerScope, timeScope: GKLeaderboard.TimeScope, handler: (() -> Void)?)](gkaccesspoint/trigger(leaderboardid:playerscope:timescope:handler:).md)
+- [func trigger(leaderboardID: String, playerScope: GKLeaderboard.PlayerScope, timeScope: GKLeaderboard.TimeScope, handler: (() -> Void)?)](./gkaccesspoint/trigger%28leaderboardid,playerscope,timescope,handler%29.md)
   Displays the Game Center dashboard in a state that shows a specific leaderboard.
-- [func trigger(leaderboardSetID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(leaderboardsetid:handler:).md)
+- [func trigger(leaderboardSetID: String, handler: (() -> Void)?)](./gkaccesspoint/trigger%28leaderboardsetid,handler%29.md)
   Displays the Game Center dashboard in a state that shows a specific leaderboard set.
 ### Instance Methods
-- [func trigger(challengeDefinitionID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(challengedefinitionid:handler:).md)
+- [func trigger(challengeDefinitionID: String, handler: (() -> Void)?)](./gkaccesspoint/trigger%28challengedefinitionid,handler%29.md)
   Displays the challenge creation view for the provided challenge definition ID.
-- [func trigger(gameActivity: GKGameActivity, handler: (() -> Void)?)](gkaccesspoint/trigger(gameactivity:handler:)-6lnz8.md)
-- [func trigger(gameActivity: GKGameActivity, handler: (() -> Void)?)](gkaccesspoint/trigger(gameactivity:handler:)-8i6w7.md)
+- [func trigger(gameActivity: GKGameActivity, handler: (() -> Void)?)](./gkaccesspoint/trigger%28gameactivity,handler%29-6lnz8.md)
+- [func trigger(gameActivity: GKGameActivity, handler: (() -> Void)?)](./gkaccesspoint/trigger%28gameactivity,handler%29-8i6w7.md)
   Displays the game activity view for the provided activity instance.
-- [func trigger(gameActivityDefinitionID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(gameactivitydefinitionid:handler:)-9hemd.md)
+- [func trigger(gameActivityDefinitionID: String, handler: (() -> Void)?)](./gkaccesspoint/trigger%28gameactivitydefinitionid,handler%29-9hemd.md)
   Displays the game activity creation view for the provided activity definition ID.
-- [func trigger(gameActivityDefinitionID: String, handler: (() -> Void)?)](gkaccesspoint/trigger(gameactivitydefinitionid:handler:)-9m45r.md)
-- [func triggerForArcade(handler: (() -> Void)?)](gkaccesspoint/triggerforarcade(handler:).md)
+- [func trigger(gameActivityDefinitionID: String, handler: (() -> Void)?)](./gkaccesspoint/trigger%28gameactivitydefinitionid,handler%29-9m45r.md)
+- [func triggerForArcade(handler: (() -> Void)?)](./gkaccesspoint/triggerforarcade%28handler%29.md)
   Brings up the Arcade dashboard.
-- [func triggerForChallenges(handler: (() -> Void)?)](gkaccesspoint/triggerforchallenges(handler:).md)
+- [func triggerForChallenges(handler: (() -> Void)?)](./gkaccesspoint/triggerforchallenges%28handler%29.md)
   Displays the view that allows players to engage each other with challenges.
-- [func triggerForFriending(handler: (() -> Void)?)](gkaccesspoint/triggerforfriending(handler:).md)
+- [func triggerForFriending(handler: (() -> Void)?)](./gkaccesspoint/triggerforfriending%28handler%29.md)
   Brings up the invite friends view.
-- [func triggerForPlayTogether(handler: (() -> Void)?)](gkaccesspoint/triggerforplaytogether(handler:).md)
+- [func triggerForPlayTogether(handler: (() -> Void)?)](./gkaccesspoint/triggerforplaytogether%28handler%29.md)
   Displays the view that allows players to engage each other with activities and challenges.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Adding an access point to your game](adding-an-access-point-to-your-game.md)
+### Game Center interfaces
+- [Adding an access point to your game](./adding-an-access-point-to-your-game.md)
   Provide your users a convenient connection to the Game Center dashboard.
-- [Displaying the Game Center dashboard](displaying-the-game-center-dashboard.md)
+- [Displaying the Game Center dashboard](./displaying-the-game-center-dashboard.md)
   Provide an interface for players to navigate to their Game Center data from your game.
-- [class GKDialogController](gkdialogcontroller.md)
+- [class GKDialogController](./gkdialogcontroller.md)
   An object that provides the ability to present the dashboard in macOS games.
-- [protocol GKViewController](gkviewcontroller.md)
+- [protocol GKViewController](./gkviewcontroller.md)
   The abstract base protocol adopted by GameKit view controller classes.
 
 

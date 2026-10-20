@@ -1,7 +1,8 @@
 # prioritized
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The focus group priority that indicates an item is more important than others.
 
@@ -17,13 +18,18 @@ The focus group priority that indicates an item is more important than others.
 static var prioritized: UIFocusGroupPriority { get }
 ```
 
+```c
+static const UIFocusGroupPriority UIFocusGroupPriorityPrioritized;
+```
+
 ## See Also
 
-- [static var ignored: UIFocusGroupPriority](uifocusgrouppriority/ignored.md)
+### Constants
+- [static var ignored: UIFocusGroupPriority](./ignored.md)
   The lowest focus group priority, assigned by default.
-- [static var previouslyFocused: UIFocusGroupPriority](uifocusgrouppriority/previouslyfocused.md)
+- [static var previouslyFocused: UIFocusGroupPriority](./previouslyfocused.md)
   The focus group priority of a previously focused item.
-- [static var currentlyFocused: UIFocusGroupPriority](uifocusgrouppriority/currentlyfocused.md)
+- [static var currentlyFocused: UIFocusGroupPriority](./currentlyfocused.md)
   The focus group priority of the currently focused item, the highest possible priority.
 
 

@@ -1,7 +1,8 @@
 # MTRDeviceControllerRegistrationControllerNodeIDKey
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.3+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRDeviceControllerRegistrationControllerNodeIDKey: String
+```
+
+```c
+extern NSString * const MTRDeviceControllerRegistrationControllerNodeIDKey;
 ```
 
 

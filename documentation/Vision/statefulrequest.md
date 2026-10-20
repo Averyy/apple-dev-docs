@@ -1,7 +1,8 @@
 # StatefulRequest
 
 **Framework**: Vision  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol for a type that builds evidence of a condition over time.
 
@@ -23,55 +24,56 @@ protocol StatefulRequest : VisionRequest
 ## Topics
 
 ### Inspecting the request
-- [var frameAnalysisSpacing: CMTime](statefulrequest/frameanalysisspacing.md)
+- [var frameAnalysisSpacing: CMTime](./statefulrequest/frameanalysisspacing.md)
   The reciprocal of the maximum rate to process buffers.
-- [var minimumLatencyFrameCount: Int](statefulrequest/minimumlatencyframecount.md)
+- [var minimumLatencyFrameCount: Int](./statefulrequest/minimumlatencyframecount.md)
   The minimum number of frames that the request has to process before reporting any observations.
 ### Comparing the request
-- [static func == (Self, Self) -> Bool](statefulrequest/==(_:_:).md)
+- [static func == (Self, Self) -> Bool](./statefulrequest/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 ### Hashing the request
-- [func hash(into: inout Hasher)](statefulrequest/hash(into:).md)
+- [func hash(into: inout Hasher)](./statefulrequest/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
-- [Equatable Implementations](statefulrequest/equatable-implementations.md)
-- [Hashable Implementations](statefulrequest/hashable-implementations.md)
+- [Equatable Implementations](./statefulrequest/equatable-implementations.md)
+- [Hashable Implementations](./statefulrequest/hashable-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionRequest](visionrequest.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionRequest](./visionrequest.md)
 ### Conforming Types
-- [DetectHumanBodyPose3DRequest](detecthumanbodypose3drequest.md)
-- [DetectTrajectoriesRequest](detecttrajectoriesrequest.md)
-- [GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
-- [TrackHomographicImageRegistrationRequest](trackhomographicimageregistrationrequest.md)
-- [TrackObjectRequest](trackobjectrequest.md)
-- [TrackOpticalFlowRequest](trackopticalflowrequest.md)
-- [TrackRectangleRequest](trackrectanglerequest.md)
-- [TrackTranslationalImageRegistrationRequest](tracktranslationalimageregistrationrequest.md)
+- [DetectHumanBodyPose3DRequest](./detecthumanbodypose3drequest.md)
+- [DetectTrajectoriesRequest](./detecttrajectoriesrequest.md)
+- [GeneratePersonSegmentationRequest](./generatepersonsegmentationrequest.md)
+- [TrackHomographicImageRegistrationRequest](./trackhomographicimageregistrationrequest.md)
+- [TrackObjectRequest](./trackobjectrequest.md)
+- [TrackOpticalFlowRequest](./trackopticalflowrequest.md)
+- [TrackRectangleRequest](./trackrectanglerequest.md)
+- [TrackTranslationalImageRegistrationRequest](./tracktranslationalimageregistrationrequest.md)
 
 ## See Also
 
-- [protocol ImageProcessingRequest](imageprocessingrequest.md)
+### Protocols
+- [protocol ImageProcessingRequest](./imageprocessingrequest.md)
   A type for image-analysis requests that focus on a specific part of an image.
-- [protocol PoseProviding](poseproviding.md)
+- [protocol PoseProviding](./poseproviding.md)
   An observation that provides a collection of joints that make up a pose.
-- [protocol TargetedRequest](targetedrequest.md)
+- [protocol TargetedRequest](./targetedrequest.md)
   A type for analyzing two images together.
-- [protocol VisionObservation](visionobservation.md)
+- [protocol VisionObservation](./visionobservation.md)
   A type for objects produced by image-analysis requests.
-- [protocol VisionRequest](visionrequest.md)
+- [protocol VisionRequest](./visionrequest.md)
   A type for image-analysis requests.
-- [protocol DownloadableAssetsRequest](downloadableassetsrequest.md)
+- [protocol DownloadableAssetsRequest](./downloadableassetsrequest.md)
   A request whose execution depends on assets that may need to be downloaded.
-- [enum DownloadableAssetsRequestStatus](downloadableassetsrequeststatus.md)
-  The status of the assets required by a [`DownloadableAssetsRequest`](downloadableassetsrequest.md).
+- [enum DownloadableAssetsRequestStatus](./downloadableassetsrequeststatus.md)
+  The status of the assets required by a [`DownloadableAssetsRequest`](./downloadableassetsrequest.md).
 
 
 ---

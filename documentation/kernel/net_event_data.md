@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct net_event_data {
     ...
 };
@@ -17,9 +17,9 @@ struct net_event_data {
 ## Topics
 
 ### Instance Properties
-- [if_family](net_event_data/1492534-if_family.md)
-- [if_name](net_event_data/1492482-if_name.md)
-- [if_unit](net_event_data/1492487-if_unit.md)
+- [if_family](./net_event_data/api-1492534-if_family.md)
+- [if_name](./net_event_data/api-1492482-if_name.md)
+- [if_unit](./net_event_data/api-1492487-if_unit.md)
 
 
 ---

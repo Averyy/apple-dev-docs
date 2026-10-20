@@ -1,7 +1,8 @@
 # initialize(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes this pointer’s memory with a single instance of the given value.
 

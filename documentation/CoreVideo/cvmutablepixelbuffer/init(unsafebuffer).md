@@ -1,7 +1,8 @@
 # init(unsafeBuffer:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a mutable pixel buffer by transferring existing CVPixelBuffer value.
 

@@ -1,17 +1,22 @@
 # endXMLStructure
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Called when an XML structure has ended.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var endXMLStructure: CFXMLParserEndXMLStructureCallBack!
+```
+
+```c
+CFXMLParserEndXMLStructureCallBack endXMLStructure;
 ```
 
 

@@ -1,7 +1,8 @@
 # LanguageModelSession.ResponseStream.AsyncIterator
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous iterator that produces snapshots of partially generated content.
 
@@ -19,10 +20,12 @@ An asynchronous iterator that produces snapshots of partially generated content.
 struct AsyncIterator
 ```
 
+Available when `Content` conforms to `Generable`.
+
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # menuItemTitle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the service in the Share menu.
 
@@ -14,15 +15,20 @@ The title of the service in the Share menu.
 var menuItemTitle: String { get set }
 ```
 
+```objc
+@property (copy) NSString * menuItemTitle;
+```
+
 #### Discussion
 
-By default, this title is the same as the value of the [`title`](nssharingservice/title.md) property. Your app can modify this value.
+By default, this title is the same as the value of the [`title`](./title.md) property. Your app can modify this value.
 
 ## See Also
 
-- [var recipients: [String]?](nssharingservice/recipients.md)
+### Configuring the Service
+- [var recipients: [String]?](./recipients.md)
   An array containing the user handles of the desired recipients.
-- [var subject: String?](nssharingservice/subject.md)
+- [var subject: String?](./subject.md)
   The subject of the post.
 
 

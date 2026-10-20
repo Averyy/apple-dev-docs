@@ -1,16 +1,20 @@
 # NSGestureRecognizerSuppressesMainMenuActions
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether keyboard shortcuts for menu items are ignored while any gesture recognizer is active.
 
 **Availability**:
 - macOS 27.0+
 
+## Details
+
+- **Name**: `NSGestureRecognizerSuppressesMainMenuActions`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `NO`
 

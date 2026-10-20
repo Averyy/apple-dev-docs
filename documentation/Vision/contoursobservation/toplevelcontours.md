@@ -1,7 +1,8 @@
 # topLevelContours
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of contours that don’t have another contour enclosing them.
 
@@ -26,9 +27,10 @@ This array constitutes the top of the contour hierarchy. You can iterate over ea
 
 ## See Also
 
-- [var contourCount: Int](contoursobservation/contourcount.md)
+### Inspecting an observation
+- [var contourCount: Int](./contourcount.md)
   The total number of detected contours.
-- [var normalizedPath: CGPath](contoursobservation/normalizedpath.md)
+- [var normalizedPath: CGPath](./normalizedpath.md)
   The detected contours as a path object in normalized coordinates.
 
 

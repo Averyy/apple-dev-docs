@@ -1,7 +1,8 @@
 # footer
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A multiline text at the bottom of the summary section.
 

@@ -2,6 +2,7 @@
 
 **Framework**: XcodeKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Performs the action associated with the command using the information in an invocation.
@@ -12,13 +13,21 @@ Performs the action associated with the command using the information in an invo
 ## Declaration
 
 ```swift
+func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func perform(with invocation: XCSourceEditorCommandInvocation) async throws
+```
+
+```objc
+- (void) performCommandWithInvocation:(XCSourceEditorCommandInvocation *) invocation completionHandler:(void (^)(NSError *nilOrError)) completionHandler;
 ```
 
 ## Mentions
 
-- [Creating a Source Editor Extension](creating-a-source-editor-extension.md)
-- [Testing Your Source Editor Extension](testing-your-source-editor-extension.md)
+- [Creating a Source Editor Extension](../creating-a-source-editor-extension.md)
+- [Testing Your Source Editor Extension](../testing-your-source-editor-extension.md)
 
 #### Discussion
 

@@ -1,18 +1,19 @@
 # NSFetchedResultsControllerDelegate
 
 **Framework**: Core Data  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A delegate protocol that describes the methods that the associated fetched results controller calls when the fetch results change.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,19 @@ A delegate protocol that describes the methods that the associated fetched resul
 protocol NSFetchedResultsControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSFetchedResultsControllerDelegate <NSObject>
+```
+
 #### Overview
 
-Consider whether to update the table view for each change. For a large number of simultaneous modifications simultaneously, such as if your app reads data on a background thread, it may be computationally expensive to animate all the changes. Rather than respond to changes individually (as illustrated in [`Typical use`](nsfetchedresultscontrollerdelegate#Typical-use.md)), implement [`controllerDidChangeContent(_:)`](nsfetchedresultscontrollerdelegate/controllerdidchangecontent(_:).md) to reload the table view after the system processes all pending changes.
+Consider whether to update the table view for each change. For a large number of simultaneous modifications simultaneously, such as if your app reads data on a background thread, it may be computationally expensive to animate all the changes. Rather than respond to changes individually (as illustrated in [Typical use](./nsfetchedresultscontrollerdelegate.md#Typical-use)), implement [`controllerDidChangeContent(_:)`](./nsfetchedresultscontrollerdelegate/controllerdidchangecontent%28_%29.md) to reload the table view after the system processes all pending changes.
 
 > **Note**:  The fetched results controller reports changes to its section before changes to the fetched objects themselves.
 
-##### Typical Use
+##### Typical use
 
-When a fetched results controller provides the content to a table view, you can use [`controllerWillChangeContent(_:)`](nsfetchedresultscontrollerdelegate/controllerwillchangecontent(_:).md) and [`controllerDidChangeContent(_:)`](nsfetchedresultscontrollerdelegate/controllerdidchangecontent(_:).md) to bracket updates to the table view, as shown in the following example:
+When a fetched results controller provides the content to a table view, you can use [`controllerWillChangeContent(_:)`](./nsfetchedresultscontrollerdelegate/controllerwillchangecontent%28_%29.md) and [`controllerDidChangeContent(_:)`](./nsfetchedresultscontrollerdelegate/controllerdidchangecontent%28_%29.md) to bracket updates to the table view, as shown in the following example:
 
 ```swift
 // Find out when the fetched results controller is about to start making changes.
@@ -94,11 +99,11 @@ func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>,
 }
 ```
 
-##### User Driven Updates
+##### User-driven updates
 
-In general, [`NSFetchedResultsControllerDelegate`](nsfetchedresultscontrollerdelegate.md) responds to changes at the model layer. If you allow a user to reorder table rows, then your implementation of the delegate methods needs to take this into account.
+In general, [`NSFetchedResultsControllerDelegate`](./nsfetchedresultscontrollerdelegate.md) responds to changes at the model layer. If you allow a user to reorder table rows, then your implementation of the delegate methods needs to take this into account.
 
-Typically, if you allow the user to reorder table rows, your model object has an attribute that specifies its index. When the user moves a row, you update this attribute accordingly. This, however, has the side effect of causing the fetched results controller to also notice the change, which causes it to inform its delegate of the update (using [`controller(_:didChange:at:for:newIndexPath:)`](nsfetchedresultscontrollerdelegate/controller(_:didchange:at:for:newindexpath:).md)). If you use the implementation of this method shown in the section above, then the delegate attempts to update the table view. However, the table view is already in the appropriate state because of the user’s action.
+Typically, if you allow the user to reorder table rows, your model object has an attribute that specifies its index. When the user moves a row, you update this attribute accordingly. This, however, has the side effect of causing the fetched results controller to also notice the change, which causes it to inform its delegate of the update (using [`controller(_:didChange:at:for:newIndexPath:)`](./nsfetchedresultscontrollerdelegate/controller%28_,didchange,at,for,newindexpath%29.md)). If you use the implementation of this method shown in the section above, then the delegate attempts to update the table view. However, the table view is already in the appropriate state because of the user’s action.
 
 Therefore, if you support user-driven updates, you should check if the user intitiated a move, such as by setting a flag. In the implementation of your delegate methods, bypass the method implementation if the user initiated the move, for example:
 
@@ -119,42 +124,43 @@ func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>,
 }
 ```
 
-> **Note**:  Prior to iOS 4.0, [`NSFetchedResultsController`](nsfetchedresultscontroller.md) doesn’t support deleting sections as a result of a UI-driven change.
+> **Note**:  Prior to iOS 4.0, [`NSFetchedResultsController`](./nsfetchedresultscontroller.md) doesn’t support deleting sections as a result of a UI-driven change.
 
 ## Topics
 
 ### Responding to Changes
-- [func controller(NSFetchedResultsController<any NSFetchRequestResult>, didChangeContentWith: NSDiffableDataSourceSnapshot)](nsfetchedresultscontrollerdelegate/controller(_:didchangecontentwith:)-4kezq.md)
+- [func controller(NSFetchedResultsController<any NSFetchRequestResult>, didChangeContentWith: NSDiffableDataSourceSnapshot)](./nsfetchedresultscontrollerdelegate/controller%28_,didchangecontentwith%29-4kezq.md)
   Notifies the receiver about changes to the content in the fetched results controller, by using a diffable data source snapshot.
-- [func controller(NSFetchedResultsController<any NSFetchRequestResult>, didChangeContentWith: CollectionDifference<NSManagedObjectID>)](nsfetchedresultscontrollerdelegate/controller(_:didchangecontentwith:)-5ullb.md)
+- [func controller(NSFetchedResultsController<any NSFetchRequestResult>, didChangeContentWith: CollectionDifference<NSManagedObjectID>)](./nsfetchedresultscontrollerdelegate/controller%28_,didchangecontentwith%29-5ullb.md)
   Notifies the receiver about changes to the content in the fetched results controller, by using a collection difference.
-- [func controllerWillChangeContent(NSFetchedResultsController<any NSFetchRequestResult>)](nsfetchedresultscontrollerdelegate/controllerwillchangecontent(_:).md)
+- [func controllerWillChangeContent(NSFetchedResultsController<any NSFetchRequestResult>)](./nsfetchedresultscontrollerdelegate/controllerwillchangecontent%28_%29.md)
   Notifies the receiver that the fetched results controller is about to start processing of one or more changes due to an add, remove, move, or update.
-- [func controller(NSFetchedResultsController<any NSFetchRequestResult>, didChange: Any, at: IndexPath?, for: NSFetchedResultsChangeType, newIndexPath: IndexPath?)](nsfetchedresultscontrollerdelegate/controller(_:didchange:at:for:newindexpath:).md)
+- [func controller(NSFetchedResultsController<any NSFetchRequestResult>, didChange: Any, at: IndexPath?, for: NSFetchedResultsChangeType, newIndexPath: IndexPath?)](./nsfetchedresultscontrollerdelegate/controller%28_,didchange,at,for,newindexpath%29.md)
   Notifies the receiver that a fetched object has been changed due to an add, remove, move, or update.
-- [func controller(NSFetchedResultsController<any NSFetchRequestResult>, didChange: any NSFetchedResultsSectionInfo, atSectionIndex: Int, for: NSFetchedResultsChangeType)](nsfetchedresultscontrollerdelegate/controller(_:didchange:atsectionindex:for:).md)
+- [func controller(NSFetchedResultsController<any NSFetchRequestResult>, didChange: any NSFetchedResultsSectionInfo, atSectionIndex: Int, for: NSFetchedResultsChangeType)](./nsfetchedresultscontrollerdelegate/controller%28_,didchange,atsectionindex,for%29.md)
   Notifies the receiver of the addition or removal of a section.
-- [func controllerDidChangeContent(NSFetchedResultsController<any NSFetchRequestResult>)](nsfetchedresultscontrollerdelegate/controllerdidchangecontent(_:).md)
+- [func controllerDidChangeContent(NSFetchedResultsController<any NSFetchRequestResult>)](./nsfetchedresultscontrollerdelegate/controllerdidchangecontent%28_%29.md)
   Notifies the receiver that the fetched results controller has completed processing of one or more changes due to an add, remove, move, or update.
 ### Customizing Section Names
-- [func controller(NSFetchedResultsController<any NSFetchRequestResult>, sectionIndexTitleForSectionName: String) -> String?](nsfetchedresultscontrollerdelegate/controller(_:sectionindextitleforsectionname:).md)
+- [func controller(NSFetchedResultsController<any NSFetchRequestResult>, sectionIndexTitleForSectionName: String) -> String?](./nsfetchedresultscontrollerdelegate/controller%28_,sectionindextitleforsectionname%29.md)
   Returns the name for a given section.
 ### Constants
-- [enum NSFetchedResultsChangeType](nsfetchedresultschangetype.md)
+- [enum NSFetchedResultsChangeType](./nsfetchedresultschangetype.md)
   Constants that specify the possible types of changes that are reported.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSFetchedResultsSectionInfo](nsfetchedresultssectioninfo.md)
+### Responding to Changes
+- [protocol NSFetchedResultsSectionInfo](./nsfetchedresultssectioninfo.md)
   A protocol that defines the interface for section objects vended by a fetched results controller.
-- [struct NSFetchRequestResultType](nsfetchrequestresulttype.md)
+- [struct NSFetchRequestResultType](./nsfetchrequestresulttype.md)
   Constants that specify the possible result types a fetch request can return.
-- [enum NSFetchedResultsChangeType](nsfetchedresultschangetype.md)
+- [enum NSFetchedResultsChangeType](./nsfetchedresultschangetype.md)
   Constants that specify the possible types of changes that are reported.
 
 

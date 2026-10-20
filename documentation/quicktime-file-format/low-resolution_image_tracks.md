@@ -1,6 +1,7 @@
 # Low-resolution image tracks
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Create low resolution image tracks for low memory conditions.
 
@@ -12,7 +13,8 @@ It’s possible to store one or more low-resolution versions of a panoramic imag
 
 ## See Also
 
-- [Track reference entry structure](track_reference_entry_structure.md)
+### Hot spot image tracks
+- [Track reference entry structure](./track_reference_entry_structure.md)
   A data structure you use to specify information about any low-resolution image tracks contained in a movie.
 
 

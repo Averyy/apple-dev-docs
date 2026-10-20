@@ -1,7 +1,8 @@
 # perspective(leftTangent:rightTangent:topTangent:bottomTangent:nearZ:farZ:reverseZ:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an off-axis perspective projection from explicit frustum tangents.
 
@@ -19,7 +20,7 @@ static func perspective(leftTangent: Float, rightTangent: Float, topTangent: Flo
 
 #### Return Value
 
-An off-axis perspective [`LowLevelRenderer.Camera.Projection`](lowlevelrenderer/camera/projection-swift.struct.md).
+An off-axis perspective [`LowLevelRenderer.Camera.Projection`](../projection-swift.struct.md).
 
 ## Parameters
 
@@ -33,7 +34,8 @@ An off-axis perspective [`LowLevelRenderer.Camera.Projection`](lowlevelrenderer/
 
 ## See Also
 
-- [static func perspective(fovYRadians: Float, aspectRatio: Float, nearZ: Float, farZ: Float, reverseZ: Bool) -> LowLevelRenderer.Camera.Projection](lowlevelrenderer/camera/projection-swift.struct/perspective(fovyradians:aspectratio:nearz:farz:reversez:).md)
+### Creating perspective projections
+- [static func perspective(fovYRadians: Float, aspectRatio: Float, nearZ: Float, farZ: Float, reverseZ: Bool) -> LowLevelRenderer.Camera.Projection](./perspective%28fovyradians,aspectratio,nearz,farz,reversez%29.md)
   Creates a symmetric perspective projection from a vertical field-of-view angle.
 
 

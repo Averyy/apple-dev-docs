@@ -1,7 +1,8 @@
 # CharacterControllerStateComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that represents the state of a character controller.
 
@@ -11,7 +12,7 @@ A component that represents the state of a character controller.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,30 +22,31 @@ struct CharacterControllerStateComponent
 
 #### Overview
 
-RealityKit adds this component to an entity when you add a [`CharacterControllerComponent`](charactercontrollercomponent.md) instance to it. Manually adding this component to an entity that has a character controller component has no effect because it’s redundant.
+RealityKit adds this component to an entity when you add a [`CharacterControllerComponent`](./charactercontrollercomponent.md) instance to it. Manually adding this component to an entity that has a character controller component has no effect because it’s redundant.
 
 ## Topics
 
 ### Creating a state component
-- [init()](charactercontrollerstatecomponent/init.md)
+- [init()](./charactercontrollerstatecomponent/init%28%29.md)
 ### Accessing character controller state
-- [let isOnGround: Bool](charactercontrollerstatecomponent/isonground.md)
+- [let isOnGround: Bool](./charactercontrollerstatecomponent/isonground.md)
   A Boolean value that indicates whether the character controller is on the ground.
-- [let velocity: SIMD3<Float>](charactercontrollerstatecomponent/velocity.md)
+- [let velocity: SIMD3<Float>](./charactercontrollerstatecomponent/velocity.md)
   The linear speed relative to the origin in physics space.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [struct CharacterControllerComponent](charactercontrollercomponent.md)
+### Character control
+- [struct CharacterControllerComponent](./charactercontrollercomponent.md)
   A component that manages character movement.
-- [CharacterControllerComponent.Collision](charactercontrollercomponent/collision.md)
+- [CharacterControllerComponent.Collision](./charactercontrollercomponent/collision.md)
   A container that holds collision state for the character controller.
-- [CharacterControllerComponent.CollisionFlags](charactercontrollercomponent/collisionflags.md)
+- [CharacterControllerComponent.CollisionFlags](./charactercontrollercomponent/collisionflags.md)
   An option set that specifies which parts of the character capsule have collided with other objects.
 
 

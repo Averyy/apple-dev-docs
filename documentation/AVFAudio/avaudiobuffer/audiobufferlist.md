@@ -1,7 +1,8 @@
 # audioBufferList
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer’s underlying audio buffer list.
 
@@ -20,17 +21,22 @@ The buffer’s underlying audio buffer list.
 var audioBufferList: UnsafePointer<AudioBufferList> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) const AudioBufferList * audioBufferList;
+```
+
 #### Discussion
 
 A buffer list is a variable length array that contains an array of audio buffer instances. You use it with lower-level Core Audio and Audio Toolbox API.
 
 You must not modify the buffer list structure, although you can modify buffer contents.
 
-The `mDataByteSize` fields of this audio buffer list express the buffer’s current [`frameLength`](avaudiopcmbuffer/framelength.md).
+The `mDataByteSize` fields of this audio buffer list express the buffer’s current [`frameLength`](../avaudiopcmbuffer/framelength.md).
 
 ## See Also
 
-- [var mutableAudioBufferList: UnsafeMutablePointer<AudioBufferList>](avaudiobuffer/mutableaudiobufferlist.md)
+### Getting the audio buffers
+- [var mutableAudioBufferList: UnsafeMutablePointer<AudioBufferList>](./mutableaudiobufferlist.md)
   A mutable version of the buffer’s underlying audio buffer list.
 
 

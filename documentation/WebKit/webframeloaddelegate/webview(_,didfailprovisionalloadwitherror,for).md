@@ -1,17 +1,22 @@
 # webView(_:didFailProvisionalLoadWithError:for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called if an error occurs when starting to load data for a page.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ sender: WebView!, didFailProvisionalLoadWithError error: (any Error)!, for frame: WebFrame!)
+```
+
+```objc
+- (void) webView:(WebView *) sender didFailProvisionalLoadWithError:(NSError *) error forFrame:(WebFrame *) frame;
 ```
 
 #### Discussion

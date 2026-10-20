@@ -1,7 +1,8 @@
 # share(_:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents UI for sharing the selected text.
 
@@ -17,9 +18,13 @@ Presents UI for sharing the selected text.
 optional func share(_ sender: Any?)
 ```
 
+```objc
+- (void) share:(id) sender;
+```
+
 #### Discussion
 
-To present the standard system UI for sharing content, call [`share(text:from:)`](betextinteraction/share(text:from:).md) in your implementation of this method.
+To present the standard system UI for sharing content, call [`share(text:from:)`](../betextinteraction/share%28text,from%29.md) in your implementation of this method.
 
 ## Parameters
 
@@ -27,7 +32,8 @@ To present the standard system UI for sharing content, call [`share(text:from:)`
 
 ## See Also
 
-- [func lookup(Any?)](berespondereditactions/lookup(_:).md)
+### Defining and sharing text
+- [func lookup(Any?)](./lookup%28_%29.md)
   Presents a dictionary definition for the selected content.
 
 

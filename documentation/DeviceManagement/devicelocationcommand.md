@@ -1,7 +1,8 @@
 # DeviceLocationCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to request the location of a device when in Lost Mode.
 
@@ -12,14 +13,14 @@ The command to request the location of a device when in Lost Mode.
 
 ## Declaration
 
-```swift
+```
 object DeviceLocationCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object DeviceLocationCommand.Command](devicelocationcommand/command-data.dictionary.md)
+- [object DeviceLocationCommand.Command](./devicelocationcommand/command-data.dictionary.md)
   The command to request the location of a device when in Lost Mode.
 
 ## Properties
@@ -29,7 +30,8 @@ object DeviceLocationCommand
 
 ## See Also
 
-- [object DeviceLocationResponse](devicelocationresponse.md)
+### Commands and responses
+- [object DeviceLocationResponse](./devicelocationresponse.md)
   A response from the device after it processes the command to request the location of a device when in Lost Mode.
 
 

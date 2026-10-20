@@ -1,7 +1,8 @@
 # WKApplicationState.active
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Watch app is running in the foreground and currently receiving events.
 
@@ -14,17 +15,22 @@ The Watch app is running in the foreground and currently receiving events.
 case active
 ```
 
+```c
+WKApplicationStateActive
+```
+
 ## Mentions
 
-- [Handling Common State Transitions](handling-common-state-transitions.md)
-- [Working with the watchOS app life cycle](working-with-the-watchos-app-life-cycle.md)
-- [Using extended runtime sessions](using-extended-runtime-sessions.md)
+- [Handling Common State Transitions](../handling-common-state-transitions.md)
+- [Working with the watchOS app life cycle](../working-with-the-watchos-app-life-cycle.md)
+- [Using extended runtime sessions](../using-extended-runtime-sessions.md)
 
 ## See Also
 
-- [WKApplicationState.inactive](wkapplicationstate/inactive.md)
+### Constants
+- [WKApplicationState.inactive](./inactive.md)
   The Watch app is running in the foreground, but is not yet responding to actions from controls or gestures.
-- [WKApplicationState.background](wkapplicationstate/background.md)
+- [WKApplicationState.background](./background.md)
   The Watch app is running in the background.
 
 

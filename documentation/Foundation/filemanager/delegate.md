@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the file manager object.
 
@@ -20,11 +21,15 @@ The delegate of the file manager object.
 unowned(unsafe) var delegate: (any FileManagerDelegate)? { get set }
 ```
 
+```objc
+@property (assign, nullable) id<NSFileManagerDelegate> delegate;
+```
+
 #### Discussion
 
-It is recommended that you assign a delegate to the file manager object only if you allocated and initialized the object yourself. Avoid assigning a delegate to the shared file manager obtained from the [`default`](filemanager/default.md) method.
+It is recommended that you assign a delegate to the file manager object only if you allocated and initialized the object yourself. Avoid assigning a delegate to the shared file manager obtained from the [`default`](./default.md) method.
 
-The default value of this property is `nil`. When assigning a delegate to this property, your object must conform to the [`FileManagerDelegate`](filemanagerdelegate.md) protocol.
+The default value of this property is `nil`. When assigning a delegate to this property, your object must conform to the [`FileManagerDelegate`](../filemanagerdelegate.md) protocol.
 
 
 ---

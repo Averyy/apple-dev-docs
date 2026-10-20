@@ -1,7 +1,8 @@
 # Date.ISO8601FormatStyle.DateSeparator.dash
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a dash character separating year, month, and day components in an ISO 8601 date format style.
 
@@ -26,7 +27,8 @@ The `rawValue` of `dash` is “`-`”.
 
 ## See Also
 
-- [Date.ISO8601FormatStyle.DateSeparator.omitted](date/iso8601formatstyle/dateseparator-swift.enum/omitted.md)
+### Specifying ISO 8601 Format Style Date Separators
+- [Date.ISO8601FormatStyle.DateSeparator.omitted](./omitted.md)
   Specifies no separator between the year, month, and day components in an ISO 8601 date format style.
 
 

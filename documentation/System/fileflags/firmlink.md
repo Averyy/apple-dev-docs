@@ -1,7 +1,8 @@
 # firmlink
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 File is a firmlink.
 

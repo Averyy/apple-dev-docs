@@ -1,7 +1,8 @@
 # kMIDIPropertySupportsMMC
 
 **Framework**: Core MIDI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value that indicates whether the device or entity implements the MIDI Machine Control portion of the MIDI specification.
 
@@ -18,11 +19,16 @@ A Boolean value that indicates whether the device or entity implements the MIDI 
 let kMIDIPropertySupportsMMC: CFString
 ```
 
+```c
+extern CFStringRef const kMIDIPropertySupportsMMC;
+```
+
 ## See Also
 
-- [let kMIDIPropertySupportsGeneralMIDI: CFString](kmidipropertysupportsgeneralmidi.md)
+### Capabilities
+- [let kMIDIPropertySupportsGeneralMIDI: CFString](./kmidipropertysupportsgeneralmidi.md)
   A Boolean value that indicates whether the device or entity implements the General MIDI specification.
-- [let kMIDIPropertySupportsShowControl: CFString](kmidipropertysupportsshowcontrol.md)
+- [let kMIDIPropertySupportsShowControl: CFString](./kmidipropertysupportsshowcontrol.md)
   A Boolean value that indicates whether the device implements the MIDI Show Control specification.
 
 

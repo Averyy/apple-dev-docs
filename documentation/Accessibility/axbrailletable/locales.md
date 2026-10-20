@@ -1,7 +1,8 @@
 # locales
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All locales this table supports.
 
@@ -18,6 +19,10 @@ All locales this table supports.
 
 ```swift
 var locales: Set<Locale> { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSSet<NSLocale *> * locales;
 ```
 
 

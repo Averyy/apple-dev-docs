@@ -1,7 +1,8 @@
 # AVPlayer.TimeControlStatus.paused
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the player paused playback indefinitely.
 
@@ -20,15 +21,20 @@ A state that indicates the player paused playback indefinitely.
 case paused
 ```
 
+```c
+AVPlayerTimeControlStatusPaused
+```
+
 #### Discussion
 
-In this state, the player pauses indefinitely and doesn’t resume playback until you call its play method. You can also resume playback if the player has sufficent data to start playback by calling the player’s [`setRate(_:time:atHostTime:)`](avplayer/setrate(_:time:athosttime:).md) or [`playImmediately(atRate:)`](avplayer/playimmediately(atrate:).md) method with a nonzero rate value.
+In this state, the player pauses indefinitely and doesn’t resume playback until you call its play method. You can also resume playback if the player has sufficent data to start playback by calling the player’s [`setRate(_:time:atHostTime:)`](../setrate%28_,time,athosttime%29.md) or [`playImmediately(atRate:)`](../playimmediately%28atrate%29.md) method with a nonzero rate value.
 
 ## See Also
 
-- [AVPlayer.TimeControlStatus.waitingToPlayAtSpecifiedRate](avplayer/timecontrolstatus-swift.enum/waitingtoplayatspecifiedrate.md)
+### Status values
+- [AVPlayer.TimeControlStatus.waitingToPlayAtSpecifiedRate](./waitingtoplayatspecifiedrate.md)
   A state that indicates that the player is waiting for network conditions to improve before it can start or resume playback.
-- [AVPlayer.TimeControlStatus.playing](avplayer/timecontrolstatus-swift.enum/playing.md)
+- [AVPlayer.TimeControlStatus.playing](./playing.md)
   A state that indicates that the player is currently playing media.
 
 

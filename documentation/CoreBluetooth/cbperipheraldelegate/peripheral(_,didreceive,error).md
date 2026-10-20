@@ -1,7 +1,8 @@
 # peripheral(_:didReceive:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 optional func peripheral(_ peripheral: CBPeripheral, didReceive results: CBChannelSoundingProcedureResults?, error: (any Error)?)
+```
+
+```objc
+- (void) peripheral:(CBPeripheral *) peripheral didReceiveChannelSoundingProcedureResults:(CBChannelSoundingProcedureResults *) results error:(NSError *) error;
 ```
 
 #### Discussion

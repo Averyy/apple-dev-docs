@@ -1,7 +1,8 @@
 # setFragmentSamplerStates(_:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns multiple sampler states to a range of entries in the fragment shader argument table.
 
@@ -11,7 +12,7 @@ Assigns multiple sampler states to a range of entries in the fragment shader arg
 - Mac Catalyst 8.0+
 - macOS 10.11+
 - tvOS 8.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,20 +24,21 @@ func setFragmentSamplerStates(_ samplers: [(any MTLSamplerState)?], range: Range
 
 By default, the sampler state at each index is `nil`.
 
-> **Note**:  The Objective-C version of this method is [`setFragmentSamplerStates:withRange:`](mtlrendercommandencoder/setfragmentsamplerstates:withrange:.md).
+> **Note**:  The Objective-C version of this method is [`setFragmentSamplerStates:withRange:`](./setfragmentsamplerstates_withrange_.md).
 
 ## Parameters
 
-- `samplers`: An array of [`MTLSamplerState`](mtlsamplerstate.md) instances the command assigns to entries in the fragment shader argument table for sampler states.
+- `samplers`: An array of [`MTLSamplerState`](../mtlsamplerstate.md) instances the command assigns to entries in the fragment shader argument table for sampler states.
 - `range`: A span of integers that represent the entries in the fragment shader argument table for sampler states. Each entry stores a record of the corresponding element in `samplers`.
 
 ## See Also
 
-- [func setFragmentSamplerState((any MTLSamplerState)?, index: Int)](mtlrendercommandencoder/setfragmentsamplerstate(_:index:).md)
+### Assigning sampler states
+- [func setFragmentSamplerState((any MTLSamplerState)?, index: Int)](./setfragmentsamplerstate%28_,index%29.md)
   Assigns a sampler state to an entry in the fragment shader argument table.
-- [func setFragmentSamplerState((any MTLSamplerState)?, lodMinClamp: Float, lodMaxClamp: Float, index: Int)](mtlrendercommandencoder/setfragmentsamplerstate(_:lodminclamp:lodmaxclamp:index:).md)
+- [func setFragmentSamplerState((any MTLSamplerState)?, lodMinClamp: Float, lodMaxClamp: Float, index: Int)](./setfragmentsamplerstate%28_,lodminclamp,lodmaxclamp,index%29.md)
   Assigns a sampler state and clamp values to an entry in the fragment shader argument table.
-- [func setFragmentSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](mtlrendercommandencoder/setfragmentsamplerstates(_:lodminclamps:lodmaxclamps:range:).md)
+- [func setFragmentSamplerStates([(any MTLSamplerState)?], lodMinClamps: [Float], lodMaxClamps: [Float], range: Range<Int>)](./setfragmentsamplerstates%28_,lodminclamps,lodmaxclamps,range%29.md)
   Assigns multiple sampler states and clamp values to a range of entries in the fragment shader argument table.
 
 

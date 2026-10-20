@@ -1,7 +1,8 @@
 # StatusDeviceSystemHealth
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the device’s system health.
 
@@ -12,13 +13,13 @@ The status item that reports the device’s system health.
 
 ## Declaration
 
-```swift
+```
 object StatusDeviceSystemHealth
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -29,7 +30,7 @@ object StatusDeviceSystemHealth
 | Allowed in system scope | iOS, Shared iPad |
 | Allowed in user scope | N/A |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -48,43 +49,48 @@ object StatusDeviceSystemHealth
 ## Topics
 
 ### Objects
-- [object StatusDeviceSystemHealthDeviceSystemHealthObject](statusdevicesystemhealthdevicesystemhealthobject.md)
+- [object StatusDeviceSystemHealthDeviceSystemHealthObject](./statusdevicesystemhealthdevicesystemhealthobject.md)
   A dictionary where each key represents a hardware component name and each value is a string indicating the component’s health status, which has the following values:
 
 ## Properties
 
-- `device.system.health` (StatusDeviceSystemHealthDeviceSystemHealthObject) *(required)*: A dictionary where each key represents a hardware component name and each value is a string indicating the component’s health status, which has the following values: - `ok`: The component is operating normally.
-- `error`: The component has a detected error or failure.
-- `non-genuine`: The component isn’t a genuine Apple component.
-- `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair. Not all keys are supported on each device. The dictionary includes only components that are present and reportable on the device.
+- `device.system.health` (StatusDeviceSystemHealthDeviceSystemHealthObject) *(required)*: A dictionary where each key represents a hardware component name and each value is a string indicating the component’s health status, which has the following values:
+
+  - `ok`: The component is operating normally.
+  - `error`: The component has a detected error or failure.
+  - `non-genuine`: The component isn’t a genuine Apple component.
+  - `pending-repair`: The component is a genuine Apple component that requires a restart to finish its repair.
+
+  Not all keys are supported on each device. The dictionary includes only components that are present and reportable on the device.
 
 ## See Also
 
-- [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
+### Device property items
+- [object StatusDeviceBatteryHealth](./statusdevicebatteryhealth.md)
   The status item that reports the device’s battery health.
-- [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
+- [object StatusDeviceModelFamily](./statusdevicemodelfamily.md)
   The status item that reports the device’s hardware model family.
-- [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
+- [object StatusDeviceModelIdentifier](./statusdevicemodelidentifier.md)
   The status item that reports the device’s hardware model identifier.
-- [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
+- [object StatusDeviceModelMarketingName](./statusdevicemodelmarketingname.md)
   The status item that reports the device’s model marketing name.
-- [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
+- [object StatusDeviceModelNumber](./statusdevicemodelnumber.md)
   The status item that reports the device’s hardware number.
-- [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
+- [object StatusDeviceOperatingSystemBuildVersion](./statusdeviceoperatingsystembuildversion.md)
   The status item that reports the device’s operating system build version.
-- [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
+- [object StatusDeviceOperatingSystemFamily](./statusdeviceoperatingsystemfamily.md)
   The status item that reports the device’s operating system family.
-- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
+- [object StatusDeviceOperatingSystemMarketingName](./statusdeviceoperatingsystemmarketingname.md)
   The status item that reports the device’s operating system marketing name.
-- [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
+- [object StatusDeviceOperatingSystemSupplementalBuildVersion](./statusdeviceoperatingsystemsupplementalbuildversion.md)
   The status item that reports the device’s operating system supplemental build version and Background Security Improvement version.
-- [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
+- [object StatusDeviceOperatingSystemSupplementalExtraVersion](./statusdeviceoperatingsystemsupplementalextraversion.md)
   The status item that reports the device’s operating system Background Security Improvement version.
-- [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
+- [object StatusDeviceOperatingSystemVersion](./statusdeviceoperatingsystemversion.md)
   The status item that reports the device’s operating system version.
-- [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
+- [object StatusDeviceSerialNumber](./statusdeviceserialnumber.md)
   The status item that reports the device’s serial number.
-- [object StatusDeviceUDID](statusdeviceudid.md)
+- [object StatusDeviceUDID](./statusdeviceudid.md)
   The status item that reports the device’s UDID.
 
 

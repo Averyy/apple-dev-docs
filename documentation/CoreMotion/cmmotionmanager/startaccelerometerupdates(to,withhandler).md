@@ -1,7 +1,8 @@
 # startAccelerometerUpdates(to:withHandler:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts accelerometer updates on an operation queue and with a specified handler.
 
@@ -18,30 +19,35 @@ Starts accelerometer updates on an operation queue and with a specified handler.
 func startAccelerometerUpdates(to queue: OperationQueue, withHandler handler: @escaping CMAccelerometerHandler)
 ```
 
+```objc
+- (void) startAccelerometerUpdatesToQueue:(NSOperationQueue *) queue withHandler:(CMAccelerometerHandler) handler;
+```
+
 ## Mentions
 
-- [Getting raw accelerometer events](getting-raw-accelerometer-events.md)
+- [Getting raw accelerometer events](../getting-raw-accelerometer-events.md)
 
 #### Discussion
 
-You must call [`stopAccelerometerUpdates()`](cmmotionmanager/stopaccelerometerupdates().md) when you no longer want your app to process accelerometer updates.
+You must call [`stopAccelerometerUpdates()`](./stopaccelerometerupdates%28%29.md) when you no longer want your app to process accelerometer updates.
 
 ## Parameters
 
 - `queue`: An operation queue provided by the caller. Because the processed events might arrive at a high rate, using the main operation queue is not recommended.
-- `handler`: A block that is invoked with each update to handle new accelerometer data. The block must conform to the [`CMAccelerometerHandler`](cmaccelerometerhandler.md) type.
+- `handler`: A block that is invoked with each update to handle new accelerometer data. The block must conform to the [`CMAccelerometerHandler`](../cmaccelerometerhandler.md) type.
 
 ## See Also
 
-- [var accelerometerUpdateInterval: TimeInterval](cmmotionmanager/accelerometerupdateinterval.md)
+### Managing Accelerometer Updates
+- [var accelerometerUpdateInterval: TimeInterval](./accelerometerupdateinterval.md)
   The interval, in seconds, for providing accelerometer updates to the block handler.
-- [func startAccelerometerUpdates()](cmmotionmanager/startaccelerometerupdates.md)
+- [func startAccelerometerUpdates()](./startaccelerometerupdates%28%29.md)
   Starts accelerometer updates without a handler.
-- [func stopAccelerometerUpdates()](cmmotionmanager/stopaccelerometerupdates.md)
+- [func stopAccelerometerUpdates()](./stopaccelerometerupdates%28%29.md)
   Stops accelerometer updates.
-- [var accelerometerData: CMAccelerometerData?](cmmotionmanager/accelerometerdata.md)
+- [var accelerometerData: CMAccelerometerData?](./accelerometerdata.md)
   The latest sample of accelerometer data.
-- [typealias CMAccelerometerHandler](cmaccelerometerhandler.md)
+- [typealias CMAccelerometerHandler](../cmaccelerometerhandler.md)
   The type of block callback for handling accelerometer data.
 
 

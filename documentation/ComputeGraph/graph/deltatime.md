@@ -1,13 +1,14 @@
 # graph::deltaTime
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the time elapsed since the last frame.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The delta time in seconds
 
 Delta time represents the duration between the current frame and the previous frame, allowing for frame-rate independent animations and simulations.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/graph__deltaTime.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/graph__deltaTime.svg)
 
 
 ---

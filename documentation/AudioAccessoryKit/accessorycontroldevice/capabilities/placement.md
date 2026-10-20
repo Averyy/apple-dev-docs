@@ -1,7 +1,8 @@
 # placement
 
 **Framework**: AudioAccessoryKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A capability indicating the device supports placement detection.
 
@@ -16,11 +17,12 @@ static let placement: AccessoryControlDevice.Capabilities
 
 ## Mentions
 
-- [Supporting automatic audio switching for third-party accessories](supporting-automatic-audio-switching.md)
+- [Supporting automatic audio switching for third-party accessories](../../supporting-automatic-audio-switching.md)
 
 ## See Also
 
-- [static let audioSwitching: AccessoryControlDevice.Capabilities](accessorycontroldevice/capabilities/audioswitching.md)
+### Capability options
+- [static let audioSwitching: AccessoryControlDevice.Capabilities](./audioswitching.md)
   A capability indicating the device supports automatic audio switching.
 
 

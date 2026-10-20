@@ -1,7 +1,8 @@
 # sint16
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias sint16 = Int16
+```
+
+```c
+typedef int16_t sint16;
 ```
 
 

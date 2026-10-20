@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIONetworkDataAccessTypeMask](1644201-anonymous/kionetworkdataaccesstypemask.md)
-- [kIONetworkDataAccessTypeRead](1644201-anonymous/kionetworkdataaccesstyperead.md)
-- [kIONetworkDataAccessTypeReset](1644201-anonymous/kionetworkdataaccesstypereset.md)
-- [kIONetworkDataAccessTypeSerialize](1644201-anonymous/kionetworkdataaccesstypeserialize.md)
-- [kIONetworkDataAccessTypeWrite](1644201-anonymous/kionetworkdataaccesstypewrite.md)
+- [kIONetworkDataAccessTypeMask](./api-1644201-anonymous/kionetworkdataaccesstypemask.md)
+- [kIONetworkDataAccessTypeRead](./api-1644201-anonymous/kionetworkdataaccesstyperead.md)
+- [kIONetworkDataAccessTypeReset](./api-1644201-anonymous/kionetworkdataaccesstypereset.md)
+- [kIONetworkDataAccessTypeSerialize](./api-1644201-anonymous/kionetworkdataaccesstypeserialize.md)
+- [kIONetworkDataAccessTypeWrite](./api-1644201-anonymous/kionetworkdataaccesstypewrite.md)
 
 
 ---

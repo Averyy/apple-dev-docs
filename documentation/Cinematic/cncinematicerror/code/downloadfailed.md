@@ -1,7 +1,8 @@
 # CNCinematicError.Code.downloadFailed
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 case downloadFailed
+```
+
+```c
+CNCinematicErrorCodeDownloadFailed
 ```
 
 

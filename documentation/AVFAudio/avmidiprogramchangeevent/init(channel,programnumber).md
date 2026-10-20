@@ -1,7 +1,8 @@
 # init(channel:programNumber:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a program change event with a channel and program number.
 
@@ -19,9 +20,13 @@ Creates a program change event with a channel and program number.
 init(channel: UInt32, programNumber: UInt32)
 ```
 
+```objc
+- (instancetype) initWithChannel:(UInt32) channel programNumber:(UInt32) programNumber;
+```
+
 #### Discussion
 
-The instrument this chooses depends on [`AVMIDIControlChangeEvent.MessageType.bankSelect`](avmidicontrolchangeevent/messagetype-swift.enum/bankselect.md) events sent prior to this event.
+The instrument this chooses depends on [`AVMIDIControlChangeEvent.MessageType.bankSelect`](../avmidicontrolchangeevent/messagetype-swift.enum/bankselect.md) events sent prior to this event.
 
 ## Parameters
 

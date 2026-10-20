@@ -1,7 +1,8 @@
 # string
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to be tokenized.
 
@@ -20,17 +21,22 @@ The text to be tokenized.
 var string: String? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSString * string;
+```
+
 ## Mentions
 
-- [Tokenizing natural language text](tokenizing-natural-language-text.md)
+- [Tokenizing natural language text](../tokenizing-natural-language-text.md)
 
 ## See Also
 
-- [func setLanguage(NLLanguage)](nltokenizer/setlanguage(_:).md)
+### Configuring a tokenizer
+- [func setLanguage(NLLanguage)](./setlanguage%28_%29.md)
   Sets the language of the text to be tokenized.
-- [var unit: NLTokenUnit](nltokenizer/unit.md)
+- [var unit: NLTokenUnit](./unit.md)
   The linguistic unit that this tokenizer uses.
-- [NLTokenizer.Attributes](nltokenizer/attributes.md)
+- [NLTokenizer.Attributes](./attributes.md)
   Hints about the contents of the string for the tokenizer.
 
 

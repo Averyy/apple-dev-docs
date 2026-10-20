@@ -1,6 +1,7 @@
 # Examining the fields in a crash report
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Understand the structure of a crash report and the information each field contains.
 
@@ -8,7 +9,7 @@ Understand the structure of a crash report and the information each field contai
 
 Each section of a crash report contains information to help you diagnose the source of a crash.
 
-![An outline of a crash report showing where each section is located.](/images/com.apple.Xcode/examining-the-fields-in-a-crash-report-1@2x.png)
+![An outline of a crash report showing where each section is located.](https://developer.apple.com/tutorials/images/com.apple.Xcode/examining-the-fields-in-a-crash-report-1@2x.png)
 
 ##### Header
 
@@ -38,14 +39,14 @@ The fields in the header can contain the following information. No single crash 
 - `CrashReporter Key`: An anonymized per-device identifier. Two reports from the same device contain identical values. This identifier is reset upon erasing the device.
 - `Beta Identifier`: A unique identifier for the combination of the device and vendor of the crashed application. Two reports for apps from the same vendor and from the same device contain identical values. This field is only present for TestFlight builds of an app, and replaces the `CrashReporter Key` field.
 - `Hardware Model`: The specific device model the app was running on.
-- `Process`: The executable name for the process that crashed. This matches the [`CFBundleExecutable`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleexecutable) value in the app’s information property list. The number in brackets is the process ID.
+- `Process`: The executable name for the process that crashed. This matches the [`CFBundleExecutable`](../BundleResources/information-property-list/cfbundleexecutable.md) value in the app’s information property list. The number in brackets is the process ID.
 - `Path`: The location of the executable on disk. macOS replaces user-identifable path components with placeholder values to protect privacy.
-- `Identifier`: The [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) of the process that crashed. If the binary doesn’t have a [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier), this field contains either the process name or a placeholder value.
-- `Version`: The version of the process that crashed. The value is a concatenation of the app’s [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion) and [`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring).
+- `Identifier`: The [`CFBundleIdentifier`](../BundleResources/information-property-list/cfbundleidentifier.md) of the process that crashed. If the binary doesn’t have a [`CFBundleIdentifier`](../BundleResources/information-property-list/cfbundleidentifier.md), this field contains either the process name or a placeholder value.
+- `Version`: The version of the process that crashed. The value is a concatenation of the app’s [`CFBundleVersion`](../BundleResources/information-property-list/cfbundleversion.md) and [`CFBundleShortVersionString`](../BundleResources/information-property-list/cfbundleshortversionstring.md).
 - `AppStoreTools`: The version of Xcode used to compile your app’s bitcode and to thin your app to device specific variants.
 - `AppVariant`: The specific variant of your app produced by app thinning. This field contains multiple values, described later in this section.
 - `Code Type`: The CPU architecture of the process that crashed. The architecture is `ARM-64`, `ARM`, `X86-64`, or `X86`. If the app executes through Rosetta translation, this field appends `(Translated)`; otherwise, it appends `(Native)`.
-- `Role`: The [`task_role_t`](https://developer.apple.com/documentation/kernel/task_role_t) assigned to the process at the time it crashes. This field is generally not helpful when you analyze a crash report.
+- `Role`: The [task_role](../kernel/task_role_t.md) assigned to the process at the time it crashes. This field is generally not helpful when you analyze a crash report.
 - `Parent Process`: The name and process ID (in square brackets) of the process that launched the crashed process.
 - `Coalition`: The name of the process coalition containing the app. Process coalitions track resource usage among groups of related processes, such as an operating system process supporting a specific API’s functionality in an app. Most processes, including app extensions, form their own coalition.
 - `Date/Time`: The date and time of the crash.
@@ -58,7 +59,7 @@ The `AppVariant` field contains three values separated by colons, for example, `
 - The name of the thinning variant. The variant represents a class of devices with similar characteristics, such as screen scale, memory class, and Metal GPU family. The thinning variant’s name doesn’t indicate the exact hardware model the crash report is from, and may differ from the `Hardware Model` field. In the example, this value is `iPhone10,6`.
 - The operating system version variant. For each class of devices, app thinning creates additional variants for different versions of the operating system. In the example, this value is `12.2`, indicating this variant targets iOS devices running iOS 12.2 or higher.
 
-##### Exception Information
+##### Exception information
 
 Every crash report contains exception information. This information section tells you how the process quit, but it may not fully explain why the app quit. This information is important, but is often overlooked.
 
@@ -71,7 +72,7 @@ Exception Codes: 0x0000000000000001, 0x0000000102afb3d0
 
 The following fields provide information about the exception. No single crash report contains all of these fields.
 
-- `Exception Type`: The name of the Mach exception that quit the process, along with the name of the corresponding BSD signal in parentheses. See [`Understanding the exception types in a crash report`](understanding-the-exception-types-in-a-crash-report.md).
+- `Exception Type`: The name of the Mach exception that quit the process, along with the name of the corresponding BSD signal in parentheses. See [Understanding the exception types in a crash report](./understanding-the-exception-types-in-a-crash-report.md).
 - `Exception Codes`: Processor specific information about the exception encoded into one or more 64-bit hexadecimal numbers. Typically, this field isn’t present because the operating system presents the information as human-readable information in the other fields of this section.
 - `Exception Subtype`: The human-readable description of the exception codes.
 - `Exception Message`: Additional human-readable information extracted from the exception codes.
@@ -79,11 +80,11 @@ The following fields provide information about the exception. No single crash re
 - `Termination Reason`: Exit reason information specified when the operating system quits a process. Key operating system components, both inside and outside of a process, quit the process upon encountering a fatal error and record the reason in this field. Examples of the information you can find in this field are messages about an invalid code signature, a missing dependent library, or accessing privacy sensitive information without a purpose string.
 - `Triggered by Thread` or `Crashed Thread`: The thread on which the exception originated.
 
-##### Diagnostic Messages
+##### Diagnostic messages
 
 The operating system sometimes includes additional diagnostic information. This information uses a variety of formats, depending on reason for the crash, and isn’t present in every crash report.
 
-Framework error messages occurring just before the process exits appear in the `Application Specific Information` field. In this example, the [`Dispatch`](https://developer.apple.com/documentation/dispatch) framework logged an error about incorrect use of a dispatch queue:
+Framework error messages occurring just before the process exits appear in the `Application Specific Information` field. In this example, the [Dispatch](../Dispatch/Dispatch.md) framework logged an error about incorrect use of a dispatch queue:
 
 ```other
 Application Specific Information:
@@ -100,7 +101,7 @@ Termination Description: SPRINGBOARD,
     exhausted real (wall clock) time allowance of 19.97 seconds 
 ```
 
-[`Addressing watchdog terminations`](addressing-watchdog-terminations.md) goes into more detail about watchdog terminations and how to interpret this information.
+[Addressing watchdog terminations](./addressing-watchdog-terminations.md) goes into more detail about watchdog terminations and how to interpret this information.
 
 Process crashes due to a memory access issue contain information about the virtual memory regions in the `VM Region Info` field.
 
@@ -112,13 +113,13 @@ VM Region Info: 0 is not in any region.  Bytes before following region: 43070095
       __TEXT                 0000000100b7c000-0000000100b84000 [   32K] r-x/r-x SM=COW  ...pp/MyGreatApp
 ```
 
-[`Investigating memory access crashes`](investigating-memory-access-crashes.md) goes into more detail about this information.
+[Investigating memory access crashes](./investigating-memory-access-crashes.md) goes into more detail about this information.
 
 ##### Backtraces
 
-The system captures each thread of the crashed process as a backtrace, documenting the code running on the thread when the process ends. The backtraces are similar to what you see when you pause the process with the debugger. Crashes caused by a language exception include an additional backtrace, the `Last Exception Backtrace`, located before the first thread. If your crash report contains a `Last Exception Backtrace`, see [`Addressing language exception crashes`](addressing-language-exception-crashes.md) for information specific to language exception crashes.
+The system captures each thread of the crashed process as a backtrace, documenting the code running on the thread when the process ends. The backtraces are similar to what you see when you pause the process with the debugger. Crashes caused by a language exception include an additional backtrace, the `Last Exception Backtrace`, located before the first thread. If your crash report contains a `Last Exception Backtrace`, see [Addressing language exception crashes](./addressing-language-exception-crashes.md) for information specific to language exception crashes.
 
-The first line of each backtrace lists the thread number and the thread name. For privacy reasons, crash reports delivered through the [`Crashes Organizer`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev675635e70) in Xcode don’t contain thread names. This example shows the backtraces for three threads; `Thread 0` crashed, and is identified as the app’s main thread by its name:
+The first line of each backtrace lists the thread number and the thread name. For privacy reasons, crash reports delivered through the [Crashes Organizer](https://help.apple.com/xcode/mac/current/#/dev675635e70) in Xcode don’t contain thread names. This example shows the backtraces for three threads; `Thread 0` crashed, and is identified as the app’s main thread by its name:
 
 ```other
 Thread 0 name:  Dispatch queue: com.apple.main-thread
@@ -175,9 +176,9 @@ In some situations, the file name or the line number information won’t corresp
 - If the source file name is `<compiler-generated>`, the compiler created the code for that frame, and the code isn’t in your source files. If this is top frame in the crashed thread, look at the preceeding few stack frames for clues.
 - If the line number for a source file is `0`, this means the backtrace doesn’t map to a specific line of code in the original code. This is because the compiler optimized the code, such as by inlining functions, and the code executing at the time of the crash doesn’t correspond to an exact line in the orignial code. The function name for the frame is still a clue in this situation.
 
-##### Thread State
+##### Thread state
 
-The thread state section of a crash report lists the CPU registers and their values for the crashed thread when the app crashes. Understanding the thread state is an advanced topic that requires understanding of the application binary interface (ABI). See [`Writing ARM64 code for Apple platforms`](writing-arm64-code-for-apple-platforms.md).
+The thread state section of a crash report lists the CPU registers and their values for the crashed thread when the app crashes. Understanding the thread state is an advanced topic that requires understanding of the application binary interface (ABI). See [Writing ARM64 code for Apple platforms](./writing-arm64-code-for-apple-platforms.md).
 
 ```other
 Thread 0 crashed with ARM Thread State (64-bit):
@@ -193,9 +194,9 @@ Thread 0 crashed with ARM Thread State (64-bit):
    esr: 0xf2000001  Address size fault
 ```
 
-Registers provide extra information for crashes caused by memory access issues. [`Understand the crashed thread’s registers`](analyzing-a-crash-report#Understand-the-crashed-threads-registers.md) discusses that scenario further.
+Registers provide extra information for crashes caused by memory access issues. [Understand the crashed thread’s registers](./analyzing-a-crash-report.md#Understand-the-crashed-threads-registers) discusses that scenario further.
 
-##### Binary Images
+##### Binary images
 
 The binary images section of a crash report lists all code loaded in the process at the time that it crashes, such as the app executable and system frameworks. Each line in the Binary Images section represents a single binary image. iOS, iPadOS, tvOS, visionOS, and watchOS use the following format:
 
@@ -207,10 +208,10 @@ Binary Images:
 
 This list contains the components from the preceding example:
 
-- `0x102aec000 - 0x102b03fff`. The binary image’s address range within the process. The first address is the binary’s load address. See [`Symbolicate the crash report using a command-line tool`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-using-a-command-line-tool.md) for how to use this value.
+- `0x102aec000 - 0x102b03fff`. The binary image’s address range within the process. The first address is the binary’s load address. See [Symbolicate the crash report using a command-line tool](./adding-identifiable-symbol-names-to-a-crash-report.md#Symbolicate-the-crash-report-using-a-command-line-tool) for how to use this value.
 - `TouchCanvas`. The binary name.
 - `arm64`. The CPU architecture from the binary image that the operating system loaded into the process.
-- `fe7745ae12db30fa886c8baa1980437a`. A build UUID that uniquely identifies the binary image. Use this value to locate the corresponding `dSYM` file when symbolicating the crash report. See [`Building your app to include debugging information`](building-your-app-to-include-debugging-information.md) for more information on build UUIDs.
+- `fe7745ae12db30fa886c8baa1980437a`. A build UUID that uniquely identifies the binary image. Use this value to locate the corresponding `dSYM` file when symbolicating the crash report. See [Building your app to include debugging information](./building-your-app-to-include-debugging-information.md) for more information on build UUIDs.
 - `/var/containers/.../TouchCanvas.app/TouchCanvas`. The path to the binary on disk. macOS replaces user-identifable path components with placeholder values to protect privacy.
 
 macOS uses the following format for this section:
@@ -222,23 +223,24 @@ Binary Images:
 
 This list contains the components from the preceding example:
 
-- `0x105f97000 - 0x105f98ffb`. The binary image’s address range within the process. The first address is the binary’s load address. See [`Symbolicate the crash report using a command-line tool`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-using-a-command-line-tool.md) for how to use this value.
-- `+com.example.apple-samplecode.TouchCanvas`. The [`CFBundleIdentifier`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleidentifier) of the binary. The `+` prefix indicates the binary is not part of macOS.
-- `1.0 - 1`. The binary’s [`CFBundleShortVersionString`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleshortversionstring) and [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion).
-- `5ED9BD63-2A55-3DDD-B3FF-EFCF61382F6F`. A build UUID that uniquely identifies the binary image. Use this value to locate the corresponding `dSYM` file when symbolicating the crash report. See [`Building your app to include debugging information`](building-your-app-to-include-debugging-information.md) for more information on build UUIDs.
+- `0x105f97000 - 0x105f98ffb`. The binary image’s address range within the process. The first address is the binary’s load address. See [Symbolicate the crash report using a command-line tool](./adding-identifiable-symbol-names-to-a-crash-report.md#Symbolicate-the-crash-report-using-a-command-line-tool) for how to use this value.
+- `+com.example.apple-samplecode.TouchCanvas`. The [`CFBundleIdentifier`](../BundleResources/information-property-list/cfbundleidentifier.md) of the binary. The `+` prefix indicates the binary is not part of macOS.
+- `1.0 - 1`. The binary’s [`CFBundleShortVersionString`](../BundleResources/information-property-list/cfbundleshortversionstring.md) and [`CFBundleVersion`](../BundleResources/information-property-list/cfbundleversion.md).
+- `5ED9BD63-2A55-3DDD-B3FF-EFCF61382F6F`. A build UUID that uniquely identifies the binary image. Use this value to locate the corresponding `dSYM` file when symbolicating the crash report. See [Building your app to include debugging information](./building-your-app-to-include-debugging-information.md) for more information on build UUIDs.
 - `/Users/USER/*/TouchCanvas.app/Contents/MacOS/TouchCanvas`. The path to the binary on disk. macOS replaces user-identifable path components with placeholder values to protect privacy.
 
 ## See Also
 
-- [Adding identifiable symbol names to a crash report](adding-identifiable-symbol-names-to-a-crash-report.md)
+### Crash reports
+- [Adding identifiable symbol names to a crash report](./adding-identifiable-symbol-names-to-a-crash-report.md)
   Replace hexadecimal addresses in a crash report with function names and line numbers that correspond to your app’s code.
-- [Identifying the cause of common crashes](identifying-the-cause-of-common-crashes.md)
+- [Identifying the cause of common crashes](./identifying-the-cause-of-common-crashes.md)
   Find patterns in crash reports that identify common problems, and investigate the issue based on the pattern.
-- [Analyzing a crash report](analyzing-a-crash-report.md)
+- [Analyzing a crash report](./analyzing-a-crash-report.md)
   Identify clues in a crash report that help you diagnose problems.
-- [Interpreting the JSON format of a crash report](interpreting-the-json-format-of-a-crash-report.md)
+- [Interpreting the JSON format of a crash report](./interpreting-the-json-format-of-a-crash-report.md)
   Understand the structure and properties of the objects the system includes in the JSON of a crash report.
-- [Understanding the exception types in a crash report](understanding-the-exception-types-in-a-crash-report.md)
+- [Understanding the exception types in a crash report](./understanding-the-exception-types-in-a-crash-report.md)
   Learn what the exception type tells you about why your app crashed.
 
 

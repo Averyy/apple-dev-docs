@@ -1,7 +1,8 @@
 # url
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The full address of the printer.
 
@@ -15,6 +16,10 @@ The full address of the printer.
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (copy, readonly) NSURL * URL;
 ```
 
 #### Discussion

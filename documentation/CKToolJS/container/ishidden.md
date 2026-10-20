@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the container is hidden.
 
@@ -10,7 +11,7 @@ Whether the container is hidden.
 
 ## Declaration
 
-```swift
+```
 attribute boolean? isHidden;
 ```
 

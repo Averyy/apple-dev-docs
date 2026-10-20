@@ -1,7 +1,8 @@
 # ProjectiveTransformable3D
 
 **Framework**: Spatial  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 26.0+
@@ -21,36 +22,37 @@ protocol ProjectiveTransformable3D
 ## Topics
 
 ### Instance Methods
-- [func applying(ProjectiveTransform3D) -> Self](projectivetransformable3d/applying(_:).md)
+- [func applying(ProjectiveTransform3D) -> Self](./projectivetransformable3d/applying%28_%29.md)
   Returns a transformed copy of the value.
 
 ## Relationships
 
 ### Inherited By
-- [ProjectiveTransformable3DFloat](projectivetransformable3dfloat.md)
+- [ProjectiveTransformable3DFloat](./projectivetransformable3dfloat.md)
 ### Conforming Types
-- [Point3D](point3d.md)
-- [Point3DFloat](point3dfloat.md)
-- [Pose3D](pose3d.md)
-- [Pose3DFloat](pose3dfloat.md)
-- [Ray3D](ray3d.md)
-- [Ray3DFloat](ray3dfloat.md)
-- [Rect3D](rect3d.md)
-- [Rect3DFloat](rect3dfloat.md)
-- [Rotation3D](rotation3d.md)
-- [Rotation3DFloat](rotation3dfloat.md)
-- [Vector3D](vector3d.md)
-- [Vector3DFloat](vector3dfloat.md)
+- [Point3D](./point3d.md)
+- [Point3DFloat](./point3dfloat.md)
+- [Pose3D](./pose3d.md)
+- [Pose3DFloat](./pose3dfloat.md)
+- [Ray3D](./ray3d.md)
+- [Ray3DFloat](./ray3dfloat.md)
+- [Rect3D](./rect3d.md)
+- [Rect3DFloat](./rect3dfloat.md)
+- [Rotation3D](./rotation3d.md)
+- [Rotation3DFloat](./rotation3dfloat.md)
+- [Vector3D](./vector3d.md)
+- [Vector3DFloat](./vector3dfloat.md)
 
 ## See Also
 
-- [protocol CoordinateSpace3D](coordinatespace3d.md)
+### Converting between coordinate spaces
+- [protocol CoordinateSpace3D](./coordinatespace3d.md)
   A type that represents a coordinate space which you can use to convert values to and from other coordinate spaces.
-- [protocol CoordinateSpace3DFloat](coordinatespace3dfloat.md)
-- [protocol CoordinateSpaceValue3D](coordinatespacevalue3d.md)
+- [protocol CoordinateSpace3DFloat](./coordinatespace3dfloat.md)
+- [protocol CoordinateSpaceValue3D](./coordinatespacevalue3d.md)
   An opaque value which can be resolved to a concrete value in a `CoordinateSpace3D`
-- [protocol ProjectiveTransformable3DFloat](projectivetransformable3dfloat.md)
-- [struct WorldReferenceCoordinateSpace](worldreferencecoordinatespace.md)
+- [protocol ProjectiveTransformable3DFloat](./projectivetransformable3dfloat.md)
+- [struct WorldReferenceCoordinateSpace](./worldreferencecoordinatespace.md)
   A coordinate space that represents a world reference point.
 
 

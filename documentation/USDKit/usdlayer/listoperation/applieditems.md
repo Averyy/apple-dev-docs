@@ -1,7 +1,8 @@
 # appliedItems
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The composed result of applying all operations from strongest to weakest opinion.
 

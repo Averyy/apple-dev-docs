@@ -1,14 +1,15 @@
 # ip_scriptvp
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 struct vnode *ip_scriptvp;
 ```
 

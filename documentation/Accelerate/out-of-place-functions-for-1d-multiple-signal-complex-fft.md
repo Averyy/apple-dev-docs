@@ -1,6 +1,7 @@
 # Out-of-Place Functions for 1D Multiple-Signal Complex FFT
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Perform fast Fourier transforms out of place on multiple-signal 1D complex data.
 
@@ -40,7 +41,8 @@ The temporary buffer versions perform the same operation but use a temporary buf
 
 ## See Also
 
-- [In-Place Functions for 1D Multiple-Signal Complex FFT](in-place-functions-for-1d-multiple-signal-complex-fft.md)
+### Functions for 1D Multiple-Signal Complex FFT
+- [In-Place Functions for 1D Multiple-Signal Complex FFT](./in-place-functions-for-1d-multiple-signal-complex-fft.md)
   Perform fast Fourier transforms in place on multiple-signal 1D complex data.
 
 

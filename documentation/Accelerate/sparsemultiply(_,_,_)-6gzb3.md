@@ -1,7 +1,8 @@
 # SparseMultiply(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs the multiplication `y = Ax` for complex float values
 
@@ -20,6 +21,10 @@ Performs the multiplication `y = Ax` for complex float values
 func SparseMultiply(_ A: SparseMatrix_Complex_Float, _ x: DenseVector_Complex_Float, _ y: DenseVector_Complex_Float)
 ```
 
+```c
+static void SparseMultiply(SparseMatrix_Complex_Float A, DenseVector_Complex_Float x, DenseVector_Complex_Float y);
+```
+
 ## Parameters
 
 - `A`: (Input) sparse matrix.
@@ -28,7 +33,8 @@ func SparseMultiply(_ A: SparseMatrix_Complex_Float, _ x: DenseVector_Complex_Fl
 
 ## See Also
 
-- [func SparseMultiply(SparseMatrix_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double)](sparsemultiply(_:_:_:)-6xiv8.md)
+### Complex multiplication functions
+- [func SparseMultiply(SparseMatrix_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double)](./sparsemultiply%28_,_,_%29-6xiv8.md)
   Performs the multiplication `y = Ax` for complex double values
 
 

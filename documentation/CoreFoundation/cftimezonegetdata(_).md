@@ -1,18 +1,19 @@
 # CFTimeZoneGetData(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the data that stores the information used by a time zone.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns the data that stores the information used by a time zone.
 func CFTimeZoneGetData(_ tz: CFTimeZone!) -> CFData!
 ```
 
+```c
+extern CFDataRefCFTimeZoneGetData(CFTimeZoneRef tz);
+```
+
 #### Return Value
 
-The data used to store `tz`. Ownership follows the [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1). May be `NULL` if the timezone does not have any data or use Olson data for its information.
+The data used to store `tz`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1). May be `NULL` if the timezone does not have any data or use Olson data for its information.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ The data used to store `tz`. Ownership follows the [`The Get Rule`](https://deve
 
 ## See Also
 
-- [func CFTimeZoneGetName(CFTimeZone!) -> CFString!](cftimezonegetname(_:).md)
+### Getting Information About Time Zones
+- [func CFTimeZoneGetName(CFTimeZone!) -> CFString!](./cftimezonegetname%28_%29.md)
   Returns the geopolitical region name that identifies a given time zone.
-- [func CFTimeZoneCopyLocalizedName(CFTimeZone!, CFTimeZoneNameStyle, CFLocale!) -> CFString!](cftimezonecopylocalizedname(_:_:_:).md)
+- [func CFTimeZoneCopyLocalizedName(CFTimeZone!, CFTimeZoneNameStyle, CFLocale!) -> CFString!](./cftimezonecopylocalizedname%28_,_,_%29.md)
   Returns the localized name of a given time zone.
-- [func CFTimeZoneGetSecondsFromGMT(CFTimeZone!, CFAbsoluteTime) -> CFTimeInterval](cftimezonegetsecondsfromgmt(_:_:).md)
+- [func CFTimeZoneGetSecondsFromGMT(CFTimeZone!, CFAbsoluteTime) -> CFTimeInterval](./cftimezonegetsecondsfromgmt%28_,_%29.md)
   Returns the difference in seconds between the receiver and Greenwich Mean Time (GMT) at the specified date.
 
 

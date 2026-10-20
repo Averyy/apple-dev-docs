@@ -1,7 +1,8 @@
 # metadata(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -10,6 +11,8 @@
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
+
+> **Deprecated**: Use UInt32 for uint or UInt64 for uint64.
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # List users
 
 **Framework**: Roster API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 List users in an Apple School Manager organization.
 
@@ -14,7 +15,7 @@ List users in an Apple School Manager organization.
 
 **Request**:
 
-```None
+```
 curl "https://api-school.apple.com/rosterapi/v1/users?role=Student&limit=1" \
     -H "Authorization: Bearer ${ACCESS_TOKEN}"
 ```
@@ -52,21 +53,34 @@ curl "https://api-school.apple.com/rosterapi/v1/users?role=Student&limit=1" \
 
 ## Parameters
 
+### Query Parameters
+
 - `limit` (string): The maximum amount of user objects to return. The default is 100.
 - `pageToken` (string): A token to retrieve the next set of records when the number of users is greater than the `limit` parameter.
 - `role` (string): The role of the user in the organization.
 
+  **Allowed Values**: `Student`, `Instructor`, `Staff`
+
+## Responses
+
+- `200` OK (`Users`, `application/json`): The request was successful.
+- `401` Unauthorized: The access token was invalid.
+- `403` Forbidden: Access to the requested user was forbidden.
+- `429`: The client made too many requests. The response includes an `X-Retry-After` header that indicates the number of seconds to wait before making another request.
+- `500` Internal Server Error: The server encountered an internal error.
+
 ## See Also
 
-- [Read a user](returns-a-specific-user-in-an-apple-school-manager-organization.md)
+### Information about users
+- [Read a user](./returns-a-specific-user-in-an-apple-school-manager-organization.md)
   Read a user in an Apple School Manager organization.
-- [object User](user.md)
+- [object User](./user.md)
   A user in an Apple School Manager organization.
-- [object RoleLocation](rolelocation.md)
+- [object RoleLocation](./rolelocation.md)
   A mapping between a role assumed by a user in an Apple School Manager organization, and the corresponding location.
-- [List users in a class](returns-a-users-for-an-apple-school-manager-class.md)
+- [List users in a class](./returns-a-users-for-an-apple-school-manager-class.md)
   List users in a class of an Apple School Manager organization.
-- [object Users](users.md)
+- [object Users](./users.md)
   A list of users, with a token for pagination.
 
 

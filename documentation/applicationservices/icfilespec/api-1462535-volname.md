@@ -1,7 +1,8 @@
 # volName
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var volName: Str31
+```
+
+```c
+Str31 volName;
 ```
 
 

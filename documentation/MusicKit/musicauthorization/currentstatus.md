@@ -1,7 +1,8 @@
 # currentStatus
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The authorization status the user sets for accessing MusicKit.
 

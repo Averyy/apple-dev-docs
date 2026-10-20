@@ -1,7 +1,8 @@
 # rendersCameraGrain
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A flag that determines whether SceneKit applies image noise characteristics to your app’s virtual content.
 
@@ -15,15 +16,20 @@ A flag that determines whether SceneKit applies image noise characteristics to y
 var rendersCameraGrain: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL rendersCameraGrain;
+```
+
 #### Discussion
 
 Enabled by default. When set, SceneKit adds a camera grain effect to your app’s virtual content that matches the image noise characteristics ARKit observes in the camera feed.
 
-![Screenshot showing the before and after cases of applying image noise to an app’s virtual content.](/images/com.apple.arkit/media-3281981@2x.png)
+![Screenshot showing the before and after cases of applying image noise to an app’s virtual content.](https://developer.apple.com/tutorials/images/com.apple.arkit/media-3281981@2x.png)
 
 ## See Also
 
-- [var rendersMotionBlur: Bool](arscnview/rendersmotionblur.md)
+### Managing Rendering Effects
+- [var rendersMotionBlur: Bool](./rendersmotionblur.md)
   Determines whether the view renders motion blur.
 
 

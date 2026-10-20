@@ -1,12 +1,13 @@
 # ABSearchConjunction
 
 **Framework**: Address Book  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Constants used to create compound search elements.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ Constants used to create compound search elements.
 typealias ABSearchConjunction = CFIndex
 ```
 
+```c
+typedef CFIndex ABSearchConjunction;
+```
+
 #### Discussion
 
-These constants are used to create compound search elementswith the [`ABSearchElementCreateWithConjunction(_:_:)`](absearchelementcreatewithconjunction(_:_:).md) function.
+These constants are used to create compound search elementswith the [`ABSearchElementCreateWithConjunction(_:_:)`](./absearchelementcreatewithconjunction%28_,_%29.md) function.
 
 ## Topics
 
 ### Constants
-- [var kABSearchAnd: _ABSearchConjunction](kabsearchand.md)
+- [var kABSearchAnd: _ABSearchConjunction](./kabsearchand.md)
   Join the search elements together with theAND operand.
-- [var kABSearchOr: _ABSearchConjunction](kabsearchor.md)
+- [var kABSearchOr: _ABSearchConjunction](./kabsearchor.md)
   Join the search elements together with theOR operand.
 
 ## See Also
 
-- [typealias ABSearchComparison](absearchcomparison.md)
+### Constants
+- [typealias ABSearchComparison](./absearchcomparison.md)
   Constants used to specify the type of comparison beingmade.
 
 

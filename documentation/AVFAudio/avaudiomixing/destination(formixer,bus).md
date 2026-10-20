@@ -2,6 +2,7 @@
 
 **Framework**: AVFAudio  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the audio mixing destination object that corresponds to the specified mixer node and input bus.
@@ -21,13 +22,17 @@ Gets the audio mixing destination object that corresponds to the specified mixer
 func destination(forMixer mixer: AVAudioNode, bus: AVAudioNodeBus) -> AVAudioMixingDestination?
 ```
 
+```objc
+- (AVAudioMixingDestination *) destinationForMixer:(AVAudioNode *) mixer bus:(AVAudioNodeBus) bus;
+```
+
 #### Return Value
 
 Returns `self` if the specified mixer or input bus matches its connection point. If the mixer or input bus doesn’t match its connection point, or if the source node isn’t in a connected state to the mixer or input bus, the method returns `nil.`
 
 #### Discussion
 
-When you connect a source node to multiple mixers downstream, setting [`AVAudioMixing`](avaudiomixing.md) properties directly on the source node applies the change to all of them. Use this method to get the corresponding [`AVAudioMixingDestination`](avaudiomixingdestination.md) for a specific mixer. Properties set on individual destination instances don’t reflect at the source node level.
+When you connect a source node to multiple mixers downstream, setting [`AVAudioMixing`](../avaudiomixing.md) properties directly on the source node applies the change to all of them. Use this method to get the corresponding [`AVAudioMixingDestination`](../avaudiomixingdestination.md) for a specific mixer. Properties set on individual destination instances don’t reflect at the source node level.
 
 If there’s any disconnection between the source and mixer nodes, the return value can be invalid. Fetch the return value every time you want to set or get properties on a specific mixer.
 
@@ -38,7 +43,8 @@ If there’s any disconnection between the source and mixer nodes, the return va
 
 ## See Also
 
-- [class AVAudioMixingDestination](avaudiomixingdestination.md)
+### Getting and setting the destination
+- [class AVAudioMixingDestination](../avaudiomixingdestination.md)
   An object that represents a connection to a mixer node from a node that conforms to the audio mixing protocol.
 
 

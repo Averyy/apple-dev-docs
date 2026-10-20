@@ -1,7 +1,8 @@
 # width
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the mesh, i.e. the number of vertices per row.
 

@@ -1,14 +1,15 @@
 # CPU_ACTIVE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 CPU_ACTIVE
 ```
 

@@ -1,7 +1,8 @@
 # GLKMatrix4SetRow(_:_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a new `4x4` matrix with one row replaced by a new vector.
 
@@ -15,6 +16,10 @@ Returns a new `4x4` matrix with one row replaced by a new vector.
 
 ```swift
 func GLKMatrix4SetRow(_ matrix: GLKMatrix4, _ row: Int32, _ vector: GLKVector4) -> GLKMatrix4
+```
+
+```c
+static GLKMatrix4 GLKMatrix4SetRow(GLKMatrix4 matrix, int row, GLKVector4 vector);
 ```
 
 #### Return Value
@@ -33,15 +38,16 @@ The last component of rows `0` through `2` correspond to the translation values 
 
 ## See Also
 
-- [func GLKMatrix4GetMatrix2(GLKMatrix4) -> GLKMatrix2](glkmatrix4getmatrix2(_:).md)
+### Working With Parts of a Matrix
+- [func GLKMatrix4GetMatrix2(GLKMatrix4) -> GLKMatrix2](./glkmatrix4getmatrix2%28_%29.md)
   Returns the upper-left `2x2` section of a `4x4` matrix.
-- [func GLKMatrix4GetMatrix3(GLKMatrix4) -> GLKMatrix3](glkmatrix4getmatrix3(_:).md)
+- [func GLKMatrix4GetMatrix3(GLKMatrix4) -> GLKMatrix3](./glkmatrix4getmatrix3%28_%29.md)
   Returns the upper-left `3x3` section of a `4x4` matrix.
-- [func GLKMatrix4GetColumn(GLKMatrix4, Int32) -> GLKVector4](glkmatrix4getcolumn(_:_:).md)
+- [func GLKMatrix4GetColumn(GLKMatrix4, Int32) -> GLKVector4](./glkmatrix4getcolumn%28_,_%29.md)
   Retrieves a column from a `4x4` matrix.
-- [func GLKMatrix4GetRow(GLKMatrix4, Int32) -> GLKVector4](glkmatrix4getrow(_:_:).md)
+- [func GLKMatrix4GetRow(GLKMatrix4, Int32) -> GLKVector4](./glkmatrix4getrow%28_,_%29.md)
   Retrieves a row from a `4x4` matrix.
-- [func GLKMatrix4SetColumn(GLKMatrix4, Int32, GLKVector4) -> GLKMatrix4](glkmatrix4setcolumn(_:_:_:).md)
+- [func GLKMatrix4SetColumn(GLKMatrix4, Int32, GLKVector4) -> GLKMatrix4](./glkmatrix4setcolumn%28_,_,_%29.md)
   Returns a new `4x4` matrix with one column replaced by a new vector.
 
 

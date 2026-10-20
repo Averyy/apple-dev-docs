@@ -1,7 +1,8 @@
 # update(deltaTime:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any custom periodic actions defined by the component subclass.
 
@@ -19,11 +20,15 @@ Performs any custom periodic actions defined by the component subclass.
 func update(deltaTime seconds: TimeInterval)
 ```
 
+```objc
+- (void) updateWithDeltaTime:(NSTimeInterval) seconds;
+```
+
 #### Discussion
 
-Override this method to implement per-frame logic specific to your component class. GameplayKit calls this method when you call the [`update(deltaTime:)`](gkentity/update(deltatime:).md) method of the entity owning a component, or when you call the [`update(deltaTime:)`](gkcomponentsystem/update(deltatime:).md) method of a [`GKComponentSystem`](gkcomponentsystem.md) object that manages all components of a specific [`GKComponent`](gkcomponent.md) subclass. Typically, you call one of those methods in response to a per-frame game loop method such as [`update(_:)`](https://developer.apple.com/documentation/spritekit/skscene/update(_:)) (SpriteKit) or [`renderer(_:updateAtTime:)`](https://developer.apple.com/documentation/scenekit/scnscenerendererdelegate/renderer(_:updateattime:)) (SceneKit).
+Override this method to implement per-frame logic specific to your component class. GameplayKit calls this method when you call the [`update(deltaTime:)`](../gkentity/update%28deltatime%29.md) method of the entity owning a component, or when you call the [`update(deltaTime:)`](../gkcomponentsystem/update%28deltatime%29.md) method of a [`GKComponentSystem`](../gkcomponentsystem.md) object that manages all components of a specific [`GKComponent`](../gkcomponent.md) subclass. Typically, you call one of those methods in response to a per-frame game loop method such as [`update(_:)`](../../SpriteKit/skscene/update%28_%29.md) (SpriteKit) or [`renderer(_:updateAtTime:)`](../../SceneKit/scnscenerendererdelegate/renderer%28_,updateattime%29.md) (SceneKit).
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 

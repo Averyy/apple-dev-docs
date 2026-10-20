@@ -1,7 +1,8 @@
 # variants
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of variants that an asset contains.
 
@@ -20,9 +21,11 @@ An array of variants that an asset contains.
 static var variants: AVAsyncProperty<Root, [AVAssetVariant]> { get }
 ```
 
+Available when `Root` inherits `AVURLAsset`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 Some variants may not be playable according to the current device configuration.
 

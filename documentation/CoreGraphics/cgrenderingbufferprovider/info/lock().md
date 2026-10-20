@@ -2,6 +2,7 @@
 
 **Framework**: Core Graphics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:

@@ -1,7 +1,8 @@
 # drop(while:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Omits elements from the base sequence until a given error-throwing closure returns false, after which it passes through all remaining elements.
 
@@ -57,23 +58,24 @@ After the predicate returns `false`, the sequence never executes it again, and f
 
 ## See Also
 
-- [func dropFirst(Int) -> AsyncDropFirstSequence<Self>](asyncsequence/dropfirst(_:).md)
+### Excluding Elements
+- [func dropFirst(Int) -> AsyncDropFirstSequence<Self>](./dropfirst%28_%29.md)
   Omits a specified number of elements from the base asynchronous sequence, then passes through all remaining elements.
-- [struct AsyncDropFirstSequence](asyncdropfirstsequence.md)
+- [struct AsyncDropFirstSequence](../asyncdropfirstsequence.md)
   An asynchronous sequence which omits a specified number of elements from the base asynchronous sequence, then passes through all remaining elements.
-- [func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>](asyncsequence/drop(while:)-9sp3b.md)
+- [func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>](./drop%28while%29-9sp3b.md)
   Omits elements from the base asynchronous sequence until a given closure returns false, after which it passes through all remaining elements.
-- [struct AsyncDropWhileSequence](asyncdropwhilesequence.md)
+- [struct AsyncDropWhileSequence](../asyncdropwhilesequence.md)
   An asynchronous sequence which omits elements from the base sequence until a given closure returns false, after which it passes through all remaining elements.
-- [struct AsyncThrowingDropWhileSequence](asyncthrowingdropwhilesequence.md)
+- [struct AsyncThrowingDropWhileSequence](../asyncthrowingdropwhilesequence.md)
   An asynchronous sequence which omits elements from the base sequence until a given error-throwing closure returns false, after which it passes through all remaining elements.
-- [func filter((Self.Element) async -> Bool) -> AsyncFilterSequence<Self>](asyncsequence/filter(_:)-435af.md)
+- [func filter((Self.Element) async -> Bool) -> AsyncFilterSequence<Self>](./filter%28_%29-435af.md)
   Creates an asynchronous sequence that contains, in order, the elements of the base sequence that satisfy the given predicate.
-- [struct AsyncFilterSequence](asyncfiltersequence.md)
+- [struct AsyncFilterSequence](../asyncfiltersequence.md)
   An asynchronous sequence that contains, in order, the elements of the base sequence that satisfy a given predicate.
-- [func filter((Self.Element) async throws -> Bool) -> AsyncThrowingFilterSequence<Self>](asyncsequence/filter(_:)-2cc0l.md)
+- [func filter((Self.Element) async throws -> Bool) -> AsyncThrowingFilterSequence<Self>](./filter%28_%29-2cc0l.md)
   Creates an asynchronous sequence that contains, in order, the elements of the base sequence that satisfy the given error-throwing predicate.
-- [struct AsyncThrowingFilterSequence](asyncthrowingfiltersequence.md)
+- [struct AsyncThrowingFilterSequence](../asyncthrowingfiltersequence.md)
   An asynchronous sequence that contains, in order, the elements of the base sequence that satisfy the given error-throwing predicate.
 
 

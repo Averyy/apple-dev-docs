@@ -1,7 +1,8 @@
 # addValue(_:forHTTPHeaderField:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a value to the header field.
 
@@ -20,11 +21,15 @@ Adds a value to the header field.
 func addValue(_ value: String, forHTTPHeaderField field: String)
 ```
 
+```objc
+- (void) addValue:(NSString *) value forHTTPHeaderField:(NSString *) field;
+```
+
 #### Discussion
 
 This method provides the ability to add values to header fields incrementally. If a value was previously set for the specified field, the supplied value is appended to the existing value using the appropriate field delimiter (a comma).
 
-Certain header fields are reserved (see [`Reserved HTTP headers`](nsurlrequest#Reserved-HTTP-headers.md)). Do not use this method to change such headers.
+Certain header fields are reserved (see [Reserved HTTP headers](../nsurlrequest.md#Reserved-HTTP-headers)). Do not use this method to change such headers.
 
 ## Parameters
 
@@ -33,11 +38,13 @@ Certain header fields are reserved (see [`Reserved HTTP headers`](nsurlrequest#R
 
 ## See Also
 
-- [func value(forHTTPHeaderField: String) -> String?](nsurlrequest/value(forhttpheaderfield:).md)
+### Related Documentation
+- [func value(forHTTPHeaderField: String) -> String?](../nsurlrequest/value%28forhttpheaderfield%29.md)
   Returns the value of the specified HTTP header field.
-- [var allHTTPHeaderFields: [String : String]?](nsmutableurlrequest/allhttpheaderfields.md)
+### Accessing header fields
+- [var allHTTPHeaderFields: [String : String]?](./allhttpheaderfields.md)
   A dictionary containing all of the HTTP header fields for a request.
-- [func setValue(String?, forHTTPHeaderField: String)](nsmutableurlrequest/setvalue(_:forhttpheaderfield:).md)
+- [func setValue(String?, forHTTPHeaderField: String)](./setvalue%28_,forhttpheaderfield%29.md)
   Sets a value for the header field.
 
 

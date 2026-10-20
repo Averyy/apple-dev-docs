@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,13 +12,13 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated methods
-- [func column(of: NSMatrix) -> Int](nsbrowser/column(of:).md)
+- [func column(of: NSMatrix) -> Int](./nsbrowser/column%28of%29.md)
   Returns the column number in which the given matrix is located.
-- [func matrix(inColumn: Int) -> NSMatrix?](nsbrowser/matrix(incolumn:).md)
+- [func matrix(inColumn: Int) -> NSMatrix?](./nsbrowser/matrix%28incolumn%29.md)
   Returns the matrix located in the specified column.
-- [func matrixClass() -> AnyClass](nsbrowser/matrixclass.md)
+- [func matrixClass() -> AnyClass](./nsbrowser/matrixclass%28%29.md)
   Returns the matrix class used in the browser’s columns.
-- [func setMatrixClass(AnyClass)](nsbrowser/setmatrixclass(_:).md)
+- [func setMatrixClass(AnyClass)](./nsbrowser/setmatrixclass%28_%29.md)
   Sets the matrix class to be used in the browser’s columns.
 
 

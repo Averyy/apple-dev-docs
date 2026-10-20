@@ -1,7 +1,8 @@
 # init(coordinate:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a LookAround scene at the specified coordinates.
 
@@ -18,13 +19,18 @@ Creates a LookAround scene at the specified coordinates.
 init(coordinate: CLLocationCoordinate2D)
 ```
 
+```objc
+- (instancetype) initWithCoordinate:(CLLocationCoordinate2D) coordinate;
+```
+
 ## Parameters
 
-- `coordinate`: A [`CLLocationCoordinate2D`](https://developer.apple.com/documentation/corelocation/cllocationcoordinate2d) coordinate that indicates the location for the LookAround scene.
+- `coordinate`: A [`CLLocationCoordinate2D`](../../CoreLocation/cllocationcoordinate2d.md) coordinate that indicates the location for the LookAround scene.
 
 ## See Also
 
-- [init(mapItem: MKMapItem)](mklookaroundscenerequest/init(mapitem:).md)
+### Creating a LookAround scene
+- [init(mapItem: MKMapItem)](./init%28mapitem%29.md)
   Creates a LookAround scene with the location described by the specified map item.
 
 

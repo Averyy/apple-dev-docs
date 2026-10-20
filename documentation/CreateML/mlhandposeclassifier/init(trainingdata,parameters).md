@@ -1,7 +1,8 @@
 # init(trainingData:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hand pose classifier by starting a synchronous training session.
 
@@ -20,8 +21,8 @@ init(trainingData: MLHandPoseClassifier.DataSource, parameters: MLHandPoseClassi
 
 ## Parameters
 
-- `trainingData`: An [`MLHandPoseClassifier.DataSource`](mlhandposeclassifier/datasource.md) instance.
-- `parameters`: An [`MLHandPoseClassifier.ModelParameters`](mlhandposeclassifier/modelparameters-swift.struct.md) instance you use to configure the model for the training session.
+- `trainingData`: An [`MLHandPoseClassifier.DataSource`](./datasource.md) instance.
+- `parameters`: An [`MLHandPoseClassifier.ModelParameters`](./modelparameters-swift.struct.md) instance you use to configure the model for the training session.
 
 
 ---

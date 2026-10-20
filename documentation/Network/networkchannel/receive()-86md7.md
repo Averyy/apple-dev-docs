@@ -1,7 +1,8 @@
 # receive()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receive data from a connection.
 
@@ -19,6 +20,8 @@ Receive data from a connection.
 ```swift
 func receive() async throws -> ApplicationProtocol.Message<Data>
 ```
+
+Available when `ApplicationProtocol` is `WebSocket`.
 
 #### Discussion
 

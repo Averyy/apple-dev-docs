@@ -1,7 +1,8 @@
 # animatedValue
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var animatedValue: MDLAnimatedVector3 { get }
+```
+
+```objc
+@property (nonatomic, readonly) MDLAnimatedVector3 * animatedValue;
 ```
 
 

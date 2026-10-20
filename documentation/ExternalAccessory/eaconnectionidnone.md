@@ -1,7 +1,8 @@
 # EAConnectionIDNone
 
 **Framework**: External Accessory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 3.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var EAConnectionIDNone: Int { get }
+```
+
+```c
+EAConnectionIDNone
 ```
 
 #### Discussion

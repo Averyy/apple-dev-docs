@@ -1,7 +1,8 @@
 # NonDocumentTypeChildNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface NonDocumentTypeChildNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [nextElementSibling](nondocumenttypechildnode/1631817-nextelementsibling.md)
-- [previousElementSibling](nondocumenttypechildnode/1633125-previouselementsibling.md)
+- [nextElementSibling](./nondocumenttypechildnode/api-1631817-nextelementsibling.md)
+- [previousElementSibling](./nondocumenttypechildnode/api-1633125-previouselementsibling.md)
 
 
 ---

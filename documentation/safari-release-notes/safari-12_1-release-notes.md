@@ -1,6 +1,7 @@
 # Safari 12.1 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released March 25, 2019 — Version 12.1 (14607.1.40)
 
@@ -33,8 +34,8 @@ New features of Safari 12.1 include:
 
 ###### New Features
 
-- Added warnings displayed to the user when loading insecure pages in both Safari and in [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller).
-- Added Motion & Orientation settings on iOS to enable the [`DeviceMotionEvent`](https://developer.apple.com/documentation/webkitjs/devicemotionevent) and [`DeviceOrientationEvent`](https://developer.apple.com/documentation/webkitjs/deviceorientationevent) events.
+- Added warnings displayed to the user when loading insecure pages in both Safari and in [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md).
+- Added Motion & Orientation settings on iOS to enable the [`DeviceMotionEvent`](../webkitjs/devicemotionevent.md) and [`DeviceOrientationEvent`](../webkitjs/deviceorientationevent.md) events.
 - Removed support for the expired Do Not Track standard to prevent potential use as a fingerprinting variable.
 - Updated the link behavior for `"target=_blank"` to include `rel="noopener" implicitly`.
 
@@ -45,7 +46,7 @@ New features of Safari 12.1 include:
 - Removed support for partitioned cookies for domains with cross-site tracking capabilities. The Storage Access API now provides third-party access to cookies.
 - Improved Intelligent Tracking Prevention to limit long-term tracking based on client-side first-party cookies and to verify partitioned cache entries.
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -55,16 +56,16 @@ New features of Safari 12.1 include:
 - Added support for `<input type="color">`.
 - Added support for the `<datalist>` element.
 
-##### Payment Request Api
+##### Payment Request API
 
 ###### New Features
 
 - Added support for granular errors.
 - Added support in Wallet & Apple Pay preferences for using the default contact information for the shipping address, email, and phone. On iOS, set preferences in the Transaction Defaults category in Settings > Wallet & Apple Pay. On Mac, set preferences in System Preferences > Wallet & Apple Pay > Contacts and Shipping.
 - Added support for the default addresses and contacts configured in the Contacts and Shipping in the Wallet system preferences on iOS and macOS.
-- Added support for special fields for Japan including `phoneticName`, [`subLocality`](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentcontact/sublocality), and [`subAdministrativeArea`](https://developer.apple.com/documentation/applepayontheweb/applepaypaymentcontact/subadministrativearea).
+- Added support for special fields for Japan including `phoneticName`, [`subLocality`](../ApplePayontheWeb/applepaypaymentcontact/sublocality.md), and [`subAdministrativeArea`](../ApplePayontheWeb/applepaypaymentcontact/subadministrativearea.md).
 
-##### Css and Text
+##### CSS and Text
 
 ###### New Features
 
@@ -79,17 +80,17 @@ New features of Safari 12.1 include:
 - Added support for H.264 simulcast and VP8 in WebRTC to improve support for multi-party video conferencing.
 - Enabled cross-browser Encrypted Media Extensions (EME) by adding APIs without the `webkit` prefix.
 
-##### Safari App Extension Api
+##### Safari App Extension API
 
 ###### New Features
 
-- Added [`getAllWindows(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafariapplication/getallwindows(completionhandler:)) and [`getAllTabs(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafariwindow/getalltabs(completionhandler:)) for iterating over all open windows and tabs.
-- Added [`getContainingTab(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafaripage/getcontainingtab(completionhandler:)) and [`getContainingWindow(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafaritab/getcontainingwindow(completionhandler:)) access to the containing tab and window objects.
-- Added a `close` method to [`SFSafariWindow`](https://developer.apple.com/documentation/safariservices/sfsafariwindow) and [`SFSafariTab`](https://developer.apple.com/documentation/safariservices/sfsafaritab) for closing windows and tabs.
-- Added [`navigate(to:)`](https://developer.apple.com/documentation/safariservices/sfsafaritab/navigate(to:)) for changing the URL of a tab.
-- Added [`getScreenshotOfVisibleArea(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafaripage/getscreenshotofvisiblearea(completionhandler:)) for taking a screenshot of the visible contents of a page.
-- Added [`showPopover()`](https://developer.apple.com/documentation/safariservices/sfsafaritoolbaritem/showpopover()) and [`dismissPopover()`](https://developer.apple.com/documentation/safariservices/sfsafariextensionviewcontroller/dismisspopover()) for showing and dismissing extension popovers.
-- Added [`getBaseURI(completionHandler:)`](https://developer.apple.com/documentation/safariservices/sfsafariextension/getbaseuri(completionhandler:)) for retrieving the base URI in the app extension process.
+- Added [`getAllWindows(completionHandler:)`](../SafariServices/sfsafariapplication/getallwindows%28completionhandler%29.md) and [`getAllTabs(completionHandler:)`](../SafariServices/sfsafariwindow/getalltabs%28completionhandler%29.md) for iterating over all open windows and tabs.
+- Added [`getContainingTab(completionHandler:)`](../SafariServices/sfsafaripage/getcontainingtab%28completionhandler%29.md) and [`getContainingWindow(completionHandler:)`](../SafariServices/sfsafaritab/getcontainingwindow%28completionhandler%29.md) access to the containing tab and window objects.
+- Added a `close` method to [`SFSafariWindow`](../SafariServices/sfsafariwindow.md) and [`SFSafariTab`](../SafariServices/sfsafaritab.md) for closing windows and tabs.
+- Added [`navigate(to:)`](../SafariServices/sfsafaritab/navigate%28to%29.md) for changing the URL of a tab.
+- Added [`getScreenshotOfVisibleArea(completionHandler:)`](../SafariServices/sfsafaripage/getscreenshotofvisiblearea%28completionhandler%29.md) for taking a screenshot of the visible contents of a page.
+- Added [`showPopover()`](../SafariServices/sfsafaritoolbaritem/showpopover%28%29.md) and [`dismissPopover()`](../SafariServices/sfsafariextensionviewcontroller/dismisspopover%28%29.md) for showing and dismissing extension popovers.
+- Added [`getBaseURI(completionHandler:)`](../SafariServices/sfsafariextension/getbaseuri%28completionhandler%29.md) for retrieving the base URI in the app extension process.
 - Improved support for navigating backwards and forwards.
 
 ##### Web Inspector and Tools
@@ -102,7 +103,8 @@ New features of Safari 12.1 include:
 
 ## See Also
 
-- [Safari 12 Release Notes](safari-12-release-notes.md)
+### Version 12
+- [Safari 12 Release Notes](./safari-12-release-notes.md)
   Released September 17, 2018 — Version 12 (14606.1.36)
 
 

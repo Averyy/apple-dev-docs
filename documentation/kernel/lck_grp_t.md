@@ -1,14 +1,15 @@
 # lck_grp_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef struct _lck_grp_ lck_grp_t;
 ```
 

@@ -1,14 +1,15 @@
 # ExpressibleByUnicodeScalarLiteral Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(unicodeScalarLiteral: Unicode.Scalar)](unicode/scalar/init(unicodescalarliteral:).md)
+- [init(unicodeScalarLiteral: Unicode.Scalar)](./init%28unicodescalarliteral%29.md)
   Creates a Unicode scalar with the specified value.
 ### Type Aliases
-- [Unicode.Scalar.UnicodeScalarLiteralType](unicode/scalar/unicodescalarliteraltype.md)
+- [Unicode.Scalar.UnicodeScalarLiteralType](./unicodescalarliteraltype.md)
   A type that represents a Unicode scalar literal.
 
 

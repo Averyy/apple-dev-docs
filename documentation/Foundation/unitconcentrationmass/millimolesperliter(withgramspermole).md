@@ -1,7 +1,8 @@
 # millimolesPerLiter(withGramsPerMole:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the millimoles per liter unit with the specified number of grams per mole.
 
@@ -20,6 +21,10 @@ Returns the millimoles per liter unit with the specified number of grams per mol
 class func millimolesPerLiter(withGramsPerMole gramsPerMole: Double) -> UnitConcentrationMass
 ```
 
+```objc
++ (NSUnitConcentrationMass *) millimolesPerLiterWithGramsPerMole:(double) gramsPerMole;
+```
+
 #### Return Value
 
 A unit expressing millimoles per liter with the specified molar mass.
@@ -30,9 +35,10 @@ A unit expressing millimoles per liter with the specified molar mass.
 
 ## See Also
 
-- [class var gramsPerLiter: UnitConcentrationMass](unitconcentrationmass/gramsperliter.md)
+### Accessing Predefined Units
+- [class var gramsPerLiter: UnitConcentrationMass](./gramsperliter.md)
   The grams per liter unit of concentration.
-- [class var milligramsPerDeciliter: UnitConcentrationMass](unitconcentrationmass/milligramsperdeciliter.md)
+- [class var milligramsPerDeciliter: UnitConcentrationMass](./milligramsperdeciliter.md)
   The milligrams per deciliter unit of concentration.
 
 

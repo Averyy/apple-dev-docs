@@ -1,7 +1,8 @@
 # SRAcousticSettings.Accessibility.HeadphoneAccommodations.MediaEnhanceApplication.media
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 case media
+```
+
+```c
+SRAcousticSettingsAccessibilityHeadphoneAccommodationsMediaEnhanceApplicationMedia
 ```
 
 

@@ -1,7 +1,8 @@
 # role
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the role of the person.
 
@@ -18,7 +19,8 @@ var role: DeviceActivityData.User.FamilyRole
 
 ## See Also
 
-- [DeviceActivityData.User.FamilyRole](deviceactivitydata/user-swift.struct/familyrole.md)
+### Defining the account role
+- [DeviceActivityData.User.FamilyRole](./familyrole.md)
   Role of a person in their iCloud family.
 
 

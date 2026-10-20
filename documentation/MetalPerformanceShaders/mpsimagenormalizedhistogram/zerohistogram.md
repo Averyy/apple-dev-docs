@@ -1,7 +1,8 @@
 # zeroHistogram
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var zeroHistogram: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) BOOL zeroHistogram;
 ```
 
 

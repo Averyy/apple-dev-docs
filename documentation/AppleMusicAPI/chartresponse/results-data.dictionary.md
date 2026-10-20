@@ -1,7 +1,8 @@
 # ChartResponse.Results
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A mapping of a requested type to an array of charts.
 
@@ -10,20 +11,20 @@ A mapping of a requested type to an array of charts.
 
 ## Declaration
 
-```swift
+```
 object ChartResponse.Results
 ```
 
 ## Topics
 
 ### Related Objects
-- [object ChartResponse.Results.AlbumsChart](chartresponse/results-data.dictionary/albumschart.md)
+- [object ChartResponse.Results.AlbumsChart](./results-data.dictionary/albumschart.md)
   The albums results of a chart.
-- [object ChartResponse.Results.MusicVideosChart](chartresponse/results-data.dictionary/musicvideoschart.md)
+- [object ChartResponse.Results.MusicVideosChart](./results-data.dictionary/musicvideoschart.md)
   The music videos results of a chart.
-- [object ChartResponse.Results.PlaylistsChart](chartresponse/results-data.dictionary/playlistschart.md)
+- [object ChartResponse.Results.PlaylistsChart](./results-data.dictionary/playlistschart.md)
   The playlists results of a chart.
-- [object ChartResponse.Results.SongsChart](chartresponse/results-data.dictionary/songschart.md)
+- [object ChartResponse.Results.SongsChart](./results-data.dictionary/songschart.md)
   The songs results of a chart.
 
 ## Properties

@@ -1,14 +1,15 @@
 # nd_opt_pvd_id
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 u_int8_t nd_opt_pvd_id[1];
 ```
 

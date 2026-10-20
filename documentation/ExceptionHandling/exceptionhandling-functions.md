@@ -1,16 +1,18 @@
 # ExceptionHandling Functions
 
-**Framework**: Exception Handling
+**Framework**: Exception Handling  
+**Role**: API Collection
 
 ## Topics
 
 ### Functions
-- [func NSExceptionHandlerResume()](nsexceptionhandlerresume().md)
+- [func NSExceptionHandlerResume()](./nsexceptionhandlerresume%28%29.md)
 
 ## See Also
 
-- [ExceptionHandling Enumerations](exceptionhandling-enumerations.md)
-- [ExceptionHandling Constants](exceptionhandling-constants.md)
+### Reference
+- [ExceptionHandling Enumerations](./exceptionhandling-enumerations.md)
+- [ExceptionHandling Constants](./exceptionhandling-constants.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior.disabled
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use this value to disable collision resolution.
 
@@ -16,7 +17,8 @@ case disabled
 
 ## See Also
 
-- [TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior.automatic](tabletopinteraction/directpickupbehavior/collisionresolutionbehavior/automatic.md)
+### Resolution behaviors
+- [TabletopInteraction.DirectPickupBehavior.CollisionResolutionBehavior.automatic](./automatic.md)
   The automatic behavior moves and rotates the object to ensure that it does not penetrate the collision targets.
 
 

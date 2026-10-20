@@ -1,7 +1,8 @@
 # init(tagType:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 init(tagType type: CGPDFTagType)
+```
+
+```c
+extern CGPDFStructureElementRefCGPDFStructureElementCreate(CGPDFTagType type);
 ```
 
 

@@ -1,7 +1,8 @@
 # disableAutoLayoutConversion()
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Turns off Automatic Layout Conversion (for conv like operations) for GPU.
 
@@ -17,6 +18,10 @@ Turns off Automatic Layout Conversion (for conv like operations) for GPU.
 
 ```swift
 func disableAutoLayoutConversion()
+```
+
+```objc
+- (void) disableAutoLayoutConversion;
 ```
 
 

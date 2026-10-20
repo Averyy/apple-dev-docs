@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The image data format to use for this image type.
 
@@ -19,15 +20,20 @@ The image data format to use for this image type.
 class var contentType: UTType { get }
 ```
 
+```objc
+@property (class, readonly) UTType * contentType;
+```
+
 #### Discussion
 
 Use this type when you need to specify the type of the image data. Adaptive images are compatible with the HEIC format, but include extra metadata about the supported resolutions and sizes.
 
 ## See Also
 
-- [var contentIdentifier: String](nsadaptiveimageglyph/contentidentifier.md)
+### Getting the content metadata
+- [var contentIdentifier: String](./contentidentifier.md)
   A unique identifier for this image.
-- [var contentDescription: String](nsadaptiveimageglyph/contentdescription.md)
+- [var contentDescription: String](./contentdescription.md)
   An alternate textual description of the image contents.
 
 

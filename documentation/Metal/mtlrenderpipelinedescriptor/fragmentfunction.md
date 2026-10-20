@@ -1,7 +1,8 @@
 # fragmentFunction
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fragment function the pipeline calls to process fragments.
 
@@ -10,7 +11,7 @@ The fragment function the pipeline calls to process fragments.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ The fragment function the pipeline calls to process fragments.
 var fragmentFunction: (any MTLFunction)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) id<MTLFunction> fragmentFunction;
+```
+
 #### Discussion
 
 The default value is `nil`. If this value is `nil`, then there is no fragment function and therefore no writes to the color render target occur. Depth and stencil writes and visibility result counting can still proceed.
 
 ## See Also
 
-- [var vertexFunction: (any MTLFunction)?](mtlrenderpipelinedescriptor/vertexfunction.md)
+### Specifying graphics functions and associated data
+- [var vertexFunction: (any MTLFunction)?](./vertexfunction.md)
   The vertex function the pipeline calls to process vertices.
-- [var maxVertexCallStackDepth: Int](mtlrenderpipelinedescriptor/maxvertexcallstackdepth.md)
+- [var maxVertexCallStackDepth: Int](./maxvertexcallstackdepth.md)
   The maximum function call depth from the top-most vertex shader function.
-- [var maxFragmentCallStackDepth: Int](mtlrenderpipelinedescriptor/maxfragmentcallstackdepth.md)
+- [var maxFragmentCallStackDepth: Int](./maxfragmentcallstackdepth.md)
   The maximum function call depth from the top-most fragment shader function.
 
 

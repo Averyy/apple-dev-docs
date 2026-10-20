@@ -1,7 +1,8 @@
 # isImmediateUploadRequestByPresentingApplication
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to require the upload to complete before calling the completion handler.
 
@@ -16,6 +17,10 @@ An option to require the upload to complete before calling the completion handle
 
 ```swift
 static var isImmediateUploadRequestByPresentingApplication: NSFileProviderModifyItemOptions { get }
+```
+
+```c
+NSFileProviderModifyItemIsImmediateUploadRequestByPresentingApplication
 ```
 
 #### Discussion

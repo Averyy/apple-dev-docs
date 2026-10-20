@@ -1,21 +1,26 @@
 # init(descriptor:inputWeights:hiddenWeights:biases:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an LSTM layer with the descriptor, input and hidden weights, and biases you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 convenience init?(descriptor: MLCLSTMDescriptor, inputWeights: [MLCTensor], hiddenWeights: [MLCTensor], biases: [MLCTensor]?)
+```
+
+```objc
++ (instancetype) layerWithDescriptor:(MLCLSTMDescriptor *) descriptor inputWeights:(NSArray<MLCTensor *> *) inputWeights hiddenWeights:(NSArray<MLCTensor *> *) hiddenWeights biases:(NSArray<MLCTensor *> *) biases;
 ```
 
 ## Parameters
@@ -27,13 +32,14 @@ convenience init?(descriptor: MLCLSTMDescriptor, inputWeights: [MLCTensor], hidd
 
 ## See Also
 
-- [convenience init?(descriptor: MLCLSTMDescriptor, inputWeights: [MLCTensor], hiddenWeights: [MLCTensor], peepholeWeights: [MLCTensor]?, biases: [MLCTensor]?)](mlclstmlayer/init(descriptor:inputweights:hiddenweights:peepholeweights:biases:).md)
+### Creating LSTM Layers
+- [convenience init?(descriptor: MLCLSTMDescriptor, inputWeights: [MLCTensor], hiddenWeights: [MLCTensor], peepholeWeights: [MLCTensor]?, biases: [MLCTensor]?)](./init%28descriptor,inputweights,hiddenweights,peepholeweights,biases%29.md)
   Creates an LSTM layer with the descriptor, weights, and biases you specify.
-- [convenience init?(descriptor: MLCLSTMDescriptor, inputWeights: [MLCTensor], hiddenWeights: [MLCTensor], peepholeWeights: [MLCTensor]?, biases: [MLCTensor]?, gateActivations: [MLCActivationDescriptor], outputResultActivation: MLCActivationDescriptor)](mlclstmlayer/init(descriptor:inputweights:hiddenweights:peepholeweights:biases:gateactivations:outputresultactivation:).md)
+- [convenience init?(descriptor: MLCLSTMDescriptor, inputWeights: [MLCTensor], hiddenWeights: [MLCTensor], peepholeWeights: [MLCTensor]?, biases: [MLCTensor]?, gateActivations: [MLCActivationDescriptor], outputResultActivation: MLCActivationDescriptor)](./init%28descriptor,inputweights,hiddenweights,peepholeweights,biases,gateactivations,outputresultactivation%29.md)
   Creates an LSTM layer using the descriptor, weights, biases, gate activations, and output result activation that you specify.
-- [class MLCLSTMDescriptor](mlclstmdescriptor.md)
+- [class MLCLSTMDescriptor](../mlclstmdescriptor.md)
   The configuration object you use to create the LSTM layer.
-- [enum MLCLSTMResultMode](mlclstmresultmode.md)
+- [enum MLCLSTMResultMode](../mlclstmresultmode.md)
   Constants that describe the result of an LSTM layer.
 
 

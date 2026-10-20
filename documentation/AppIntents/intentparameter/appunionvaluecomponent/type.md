@@ -1,7 +1,8 @@
 # IntentParameter.AppUnionValueComponent.type
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The case name component of this union value parameter.
 

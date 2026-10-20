@@ -1,7 +1,8 @@
 # HPKE.KEM.XWingMLKEM768X25519
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A key encapsulation mechanism using the X-Wing (ML-KEM-768 with X25519) key encapsulation mechanism and SHA-2 hashing with a 256-bit digest.
 

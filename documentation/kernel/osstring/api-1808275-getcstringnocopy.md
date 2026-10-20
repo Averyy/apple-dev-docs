@@ -7,45 +7,46 @@ Returns a pointer to the internal C string buffer.
 
 ## Declaration
 
-```swift
+```cpp
 virtual const char * getCStringNoCopy() const;
 ```
 
-#### Return_value
+#### Return Value
 
 A pointer to the internal C string buffer.
 
 ## See Also
 
-- [free](osstring/1808271-free.md)
+### Miscellaneous
+- [free](./api-1808271-free.md)
   Deallocates or releases any resources used by the OSString instance.
-- [getChar](osstring/1808273-getchar.md)
+- [getChar](./api-1808273-getchar.md)
   Returns the character at a given index in the string object.
-- [getLength](osstring/1808278-getlength.md)
+- [getLength](./api-1808278-getlength.md)
   Returns the number of characters in the OSString object.
-- [initWithCString](osstring/1808281-initwithcstring.md)
+- [initWithCString](./api-1808281-initwithcstring.md)
   Initializes an OSString from a C string.
-- [initWithCStringNoCopy](osstring/1808284-initwithcstringnocopy.md)
+- [initWithCStringNoCopy](./api-1808284-initwithcstringnocopy.md)
   Initializes an immutable OSString to share the provided C string buffer.
-- [initWithString](osstring/1808286-initwithstring.md)
+- [initWithString](./api-1808286-initwithstring.md)
   Initializes an OSString from another OSString.
-- [isEqualTo(const char *)](osstring/1808288-isequalto.md)
+- [isEqualTo(const char *)](./api-1808288-isequalto.md)
   Tests the equality of an OSString object with a C string.
-- [isEqualTo(const OSData *)](osstring/1808292-isequalto.md)
+- [isEqualTo(const OSData *)](./api-1808292-isequalto.md)
   Tests the equality of an OSData object and the OSString instance.
-- [isEqualTo(const OSMetaClassBase *)](osstring/1808295-isequalto.md)
+- [isEqualTo(const OSMetaClassBase *)](./api-1808295-isequalto.md)
   Tests the equality of an OSString object to an arbitrary object.
-- [isEqualTo(const OSString *)](osstring/1808297-isequalto.md)
+- [isEqualTo(const OSString *)](./api-1808297-isequalto.md)
   Tests the equality of two OSString objects.
-- [serialize](osstring/1808298-serialize.md)
+- [serialize](./api-1808298-serialize.md)
   Archives the receiver into the provided OSSerialize object.
-- [setChar](osstring/1808300-setchar.md)
+- [setChar](./api-1808300-setchar.md)
   Replaces a character at a given index in the string object.
-- [withCString](osstring/1808301-withcstring.md)
+- [withCString](./api-1808301-withcstring.md)
   Creates and initializes an OSString from a C string.
-- [withCStringNoCopy](osstring/1808304-withcstringnocopy.md)
+- [withCStringNoCopy](./api-1808304-withcstringnocopy.md)
   Creates and initializes an immutable OSString that shares the provided C string buffer.
-- [withString](osstring/1808306-withstring.md)
+- [withString](./api-1808306-withstring.md)
   Creates and initializes an OSString from another OSString.
 
 

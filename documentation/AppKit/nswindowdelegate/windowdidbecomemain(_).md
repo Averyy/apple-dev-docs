@@ -1,7 +1,8 @@
 # windowDidBecomeMain(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the window has become main.
 
@@ -15,17 +16,22 @@ Tells the delegate that the window has become main.
 optional func windowDidBecomeMain(_ notification: Notification)
 ```
 
+```objc
+- (void) windowDidBecomeMain:(NSNotification *) notification;
+```
+
 #### Discussion
 
-You can retrieve the window object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) to `notification`.
+You can retrieve the window object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 
 ## Parameters
 
-- `notification`: A notification named [`didBecomeMainNotification`](nswindow/didbecomemainnotification.md).
+- `notification`: A notification named [`didBecomeMainNotification`](../nswindow/didbecomemainnotification.md).
 
 ## See Also
 
-- [func windowDidResignMain(Notification)](nswindowdelegate/windowdidresignmain(_:).md)
+### Managing Main Status
+- [func windowDidResignMain(Notification)](./windowdidresignmain%28_%29.md)
   Tells the delegate that the window has resigned main window status.
 
 

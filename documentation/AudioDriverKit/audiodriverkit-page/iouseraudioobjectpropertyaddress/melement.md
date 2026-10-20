@@ -1,7 +1,8 @@
 # mElement
 
 **Framework**: AudioDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The element for the property.
 
@@ -10,15 +11,16 @@ The element for the property.
 
 ## Declaration
 
-```swift
+```c
 IOUserAudioObjectPropertyElement mElement;
 ```
 
 ## See Also
 
-- [mSelector](audiodriverkit/iouseraudioobjectpropertyaddress/mselector.md)
+### Address Members
+- [mSelector](./mselector.md)
   The selector for the property.
-- [mScope](audiodriverkit/iouseraudioobjectpropertyaddress/mscope.md)
+- [mScope](./mscope.md)
   The scope for the property.
 
 

@@ -1,7 +1,8 @@
 # MarketplaceWebhookUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represent a marketplace webhook resource.
 
@@ -10,21 +11,21 @@ The data structure that represent a marketplace webhook resource.
 
 ## Declaration
 
-```swift
+```
 object MarketplaceWebhookUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object MarketplaceWebhookUpdateRequest.Data.Attributes](marketplacewebhookupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object MarketplaceWebhookUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe a marketplace webhook resource.
 
 ## Properties
 
 - `attributes` (MarketplaceWebhookUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `marketplaceWebhooks`
 
 
 ---

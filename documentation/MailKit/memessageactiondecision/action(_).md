@@ -1,7 +1,8 @@
 # action(_:)
 
 **Framework**: MailKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - macOS 12.0+
@@ -12,9 +13,14 @@
 class func action(_ action: MEMessageAction) -> Self
 ```
 
+```objc
++ (instancetype) decisionApplyingAction:(MEMessageAction *) action;
+```
+
 ## See Also
 
-- [class func actions([MEMessageAction]) -> Self](memessageactiondecision/actions(_:).md)
+### Type Methods
+- [class func actions([MEMessageAction]) -> Self](./actions%28_%29.md)
 
 
 ---

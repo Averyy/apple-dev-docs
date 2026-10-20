@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/usage/launching_distributed.htm
 
 # Launching Distributed Programs
 
-**
-
-- [.rst](../_sources/usage/launching_distributed.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Launching Distributed Programs
-
- Table of contents 
-
-## Contents
-
-# Launching Distributed Programs
-
 The MLX python package provides two utilities to help you configure
 your Macs for distributed computation and also launch distributed programs on
 multiple nodes or with many processes in a single node. These utilities are aptly named
@@ -61,7 +34,7 @@ We will analyse 3 cases of using `mlx.distributed_config`
 
 ### JACCL
 
-After following [the steps to enable RDMA](distributed.html#jaccl-section) you can run the
+After following [the steps to enable RDMA](distributed.md#jaccl-section) you can run the
 following command to configure the nodes and create the hostfile.
 
 ```
@@ -123,7 +96,7 @@ will export a [GraphViz](https://graphviz.org) representation of the
 connections between the nodes which makes it very easy to figure out which
 cable is not connected correctly.
 
-See [the JACCL section](distributed.html#jaccl-section) for an example.
+See [the JACCL section](distributed.md#jaccl-section) for an example.
 
 ## mlx.launch
 
@@ -179,7 +152,7 @@ host and on the same path. A good checklist to debug errors is the following:
 
 ### Ring Specifics
 
-The [ring](distributed.html#ring-section) backend, which is also the default
+The [ring](distributed.md#ring-section) backend, which is also the default
 backend, can be explicitly selected with the argument `--backend ring`. The
 ring backend has some specific requirements and arguments that are different to
 other backends:
@@ -196,14 +169,14 @@ between neighboring nodes. This corresponds to `--mca btl_tcp_links 2` for
 
 ### JACCL Specifics
 
-The [JACCL](distributed.html#jaccl-section) backend can be selected with the argument
+The [JACCL](distributed.md#jaccl-section) backend can be selected with the argument
 `--backend jaccl`. A hostfile is necessary to launch with this backend
 because it needs to contain the RDMA devices connecting each node to each other
 node.
 
 ### NCCL Specifics
 
-The [NCCL](distributed.html#nccl-section) backend is the default backend for CUDA
+The [NCCL](distributed.md#nccl-section) backend is the default backend for CUDA
 environments. When launching from a Mac to a Linux machine with CUDA then the
 backend should be selected using `--backend nccl`.
 
@@ -234,5 +207,3 @@ to choose a specific interface for the byte-transfer-layer of MPI we can call
 ```
 mlx.launch --backend mpi --mpi-arg '--mca btl_tcp_if_include en0' --hostfile hosts.json my_script.py
 ```
-
-** Contents

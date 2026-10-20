@@ -1,7 +1,8 @@
 # title
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the shape annotation.
 
@@ -20,14 +21,20 @@ The title of the shape annotation.
 var title: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * title;
+```
+
 #### Discussion
 
 The shape displays this string in the callout for the associated annotation view. The default value of this property is `nil`.
 
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [var subtitle: String?](mkshape/subtitle.md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Accessing the shape attributes
+- [var subtitle: String?](./subtitle.md)
   The subtitle of the shape annotation.
 
 

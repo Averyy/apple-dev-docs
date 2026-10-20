@@ -1,7 +1,8 @@
 # endDelimiter
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The end delimiter for an embedded command. By default, the end delimiter is “`]]`”.
 
@@ -12,6 +13,10 @@ The end delimiter for an embedded command. By default, the end delimiter is “`
 
 ```swift
 var endDelimiter: (UInt8, UInt8)
+```
+
+```c
+Byte endDelimiter[2];
 ```
 
 

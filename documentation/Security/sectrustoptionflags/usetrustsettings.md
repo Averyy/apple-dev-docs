@@ -1,7 +1,8 @@
 # useTrustSettings
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use TrustSettings instead of anchors.
 
@@ -12,6 +13,10 @@ Use TrustSettings instead of anchors.
 
 ```swift
 static var useTrustSettings: SecTrustOptionFlags { get }
+```
+
+```c
+kSecTrustOptionUseTrustSettings
 ```
 
 

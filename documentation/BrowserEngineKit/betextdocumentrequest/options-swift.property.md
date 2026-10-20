@@ -1,7 +1,8 @@
 # options
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of options that describes the contextual information the system requests from the document.
 
@@ -17,9 +18,14 @@ A set of options that describes the contextual information the system requests f
 var options: BETextDocumentRequest.Options { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BETextDocumentRequestOptions options;
+```
+
 ## See Also
 
-- [BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct.md)
+### Specifying the requested information
+- [BETextDocumentRequest.Options](./options-swift.struct.md)
   Options that describe the contextual information for a text document request.
 
 

@@ -1,7 +1,8 @@
 # discoverabilityTitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An elaborated title that explains the purpose of the action.
 
@@ -18,25 +19,30 @@ An elaborated title that explains the purpose of the action.
 var discoverabilityTitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * discoverabilityTitle;
+```
+
 #### Discussion
 
-The system uses this property to display information about the command. In iOS, the system displays this title in the discoverability heads-up display (HUD). If this property is `nil`, the HUD displays the [`title`](uiaction/title.md) property.
+The system uses this property to display information about the command. In iOS, the system displays this title in the discoverability heads-up display (HUD). If this property is `nil`, the HUD displays the [`title`](./title.md) property.
 
 In Mac apps built with Mac Catalyst, the system displays the discoverability title as a tooltip.
 
 ## See Also
 
-- [var title: String](uiaction/title.md)
+### Getting information about the action
+- [var title: String](./title.md)
   The action’s title.
-- [var image: UIImage?](uiaction/image.md)
+- [var image: UIImage?](./image.md)
   The action’s image.
-- [var identifier: UIAction.Identifier](uiaction/identifier-swift.property.md)
+- [var identifier: UIAction.Identifier](./identifier-swift.property.md)
   The unique identifier for the action.
-- [var attributes: UIMenuElement.Attributes](uiaction/attributes.md)
+- [var attributes: UIMenuElement.Attributes](./attributes.md)
   The attributes indicating the style of the action.
-- [var state: UIMenuElement.State](uiaction/state.md)
+- [var state: UIMenuElement.State](./state.md)
   The state of the action.
-- [var sender: Any?](uiaction/sender.md)
+- [var sender: Any?](./sender.md)
   The object responsible for the action handler.
 
 

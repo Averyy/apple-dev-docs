@@ -1,7 +1,8 @@
 # AnyUserIdentity.Error.cannotDecode
 
 **Framework**: Assignables  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unable to decode the user identity.
 
@@ -9,7 +10,7 @@ Unable to decode the user identity.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

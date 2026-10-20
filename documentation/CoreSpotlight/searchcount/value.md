@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The count value.
 
@@ -20,7 +21,8 @@ let value: Int
 
 ## See Also
 
-- [let header: String?](searchcount/header.md)
+### Getting the counted information
+- [let header: String?](./header.md)
   A short description of what was counted (e.g., “Emails from John since 2003”).
 
 

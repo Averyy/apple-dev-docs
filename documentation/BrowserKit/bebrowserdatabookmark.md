@@ -1,7 +1,8 @@
 # BEBrowserDataBookmark
 
 **Framework**: BrowserKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that transfers bookmark information between browsers.
 
@@ -15,55 +16,60 @@ A class that transfers bookmark information between browsers.
 class BEBrowserDataBookmark
 ```
 
+```objc
+@interface BEBrowserDataBookmark : BEBrowserData
+```
+
 #### Overview
 
-This class represents a single bookmark or bookmark folder with its associated metadata including title, URL, and relationship to other bookmarks. Bookmarks reside in a folder structure according to the [`parentIdentifier`](bebrowserdatabookmark/parentidentifier.md) property.
+This class represents a single bookmark or bookmark folder with its associated metadata including title, URL, and relationship to other bookmarks. Bookmarks reside in a folder structure according to the [`parentIdentifier`](./bebrowserdatabookmark/parentidentifier.md) property.
 
 ## Topics
 
 ### Creating a bookmark
-- [init(isFolder: Bool, title: String, identifier: String, url: URL?, parentIdentifier: String?)](bebrowserdatabookmark/init(isfolder:title:identifier:url:parentidentifier:).md)
+- [init(isFolder: Bool, title: String, identifier: String, url: URL?, parentIdentifier: String?)](./bebrowserdatabookmark/init%28isfolder,title,identifier,url,parentidentifier%29.md)
   Creates a bookmark.
 ### Accessing bookmark properties
-- [var identifier: String](bebrowserdatabookmark/identifier.md)
+- [var identifier: String](./bebrowserdatabookmark/identifier.md)
   A unique identifier for a bookmark.
-- [var isFolder: Bool](bebrowserdatabookmark/isfolder.md)
+- [var isFolder: Bool](./bebrowserdatabookmark/isfolder.md)
   A Boolean value that indicates whether a bookmark represents a folder.
-- [var title: String](bebrowserdatabookmark/title.md)
+- [var title: String](./bebrowserdatabookmark/title.md)
   A localized title for a bookmark.
-- [var url: URL?](bebrowserdatabookmark/url.md)
+- [var url: URL?](./bebrowserdatabookmark/url.md)
   A URL to which a bookmark points.
 ### Managing bookmark hierarchy
-- [var parentIdentifier: String?](bebrowserdatabookmark/parentidentifier.md)
+- [var parentIdentifier: String?](./bebrowserdatabookmark/parentidentifier.md)
   A string that identifies the bookmark’s parent folder.
 ### Initializers
-- [init(asFolder: Bool, title: String, identifier: String, url: URL?, parentIdentifier: String?)](bebrowserdatabookmark/init(asfolder:title:identifier:url:parentidentifier:).md)
+- [init(asFolder: Bool, title: String, identifier: String, url: URL?, parentIdentifier: String?)](./bebrowserdatabookmark/init%28asfolder,title,identifier,url,parentidentifier%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [BEBrowserData](bebrowserdata.md)
+- [BEBrowserData](./bebrowserdata.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class BEBrowserDataHistoryVisit](bebrowserdatahistoryvisit.md)
+### Browser data
+- [class BEBrowserDataHistoryVisit](./bebrowserdatahistoryvisit.md)
   A class that transfers page visit history between browsers.
-- [class BEBrowserDataReadingListItem](bebrowserdatareadinglistitem.md)
+- [class BEBrowserDataReadingListItem](./bebrowserdatareadinglistitem.md)
   A class that transfers reading list data between browsers.
-- [class BEBrowserDataExtension](bebrowserdataextension.md)
+- [class BEBrowserDataExtension](./bebrowserdataextension.md)
   A class that transfers browser extension information between browsers.
-- [class BEBrowserData](bebrowserdata.md)
+- [class BEBrowserData](./bebrowserdata.md)
   A representation of browsing data from a source browser app.
 
 

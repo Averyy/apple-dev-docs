@@ -1,7 +1,8 @@
 # init(channelLayout:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a channel mixer with the given channel layout.
 
@@ -19,13 +20,18 @@ Creates a channel mixer with the given channel layout.
 init(channelLayout layout: AVAudioChannelLayout)
 ```
 
+```objc
+- (instancetype) initWithChannelLayout:(AVAudioChannelLayout *) layout;
+```
+
 ## Parameters
 
 - `layout`: A channel configuration for the mixer’s input audio.
 
 ## See Also
 
-- [convenience init(channelLayout: AVAudioChannelLayout, identifier: String)](phasechannelmixerdefinition/init(channellayout:identifier:).md)
+### Creating a Channel Mixer
+- [convenience init(channelLayout: AVAudioChannelLayout, identifier: String)](./init%28channellayout,identifier%29.md)
   Creates a named channel mixer with the given channel layout.
 
 

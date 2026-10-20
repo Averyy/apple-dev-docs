@@ -1,7 +1,8 @@
 # MPSGraphPaddingMode.periodic
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Periodic `x[-2] -> x[L-3], where L is size of x.`
 
@@ -17,6 +18,10 @@ Periodic `x[-2] -> x[L-3], where L is size of x.`
 
 ```swift
 case periodic
+```
+
+```c
+MPSGraphPaddingModePeriodic
 ```
 
 

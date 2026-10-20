@@ -1,7 +1,8 @@
 # isTabBar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The accessibility element is a tab bar.
 

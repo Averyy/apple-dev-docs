@@ -1,7 +1,8 @@
 # Database
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface Database
 ```
 
 ## Topics
 
 ### Instance Properties
-- [version](database/1628955-version.md)
+- [version](./database/api-1628955-version.md)
 ### Instance Methods
-- [changeVersion](database/1629528-changeversion.md)
-- [readTransaction](database/1630063-readtransaction.md)
-- [transaction](database/1631713-transaction.md)
+- [changeVersion](./database/api-1629528-changeversion.md)
+- [readTransaction](./database/api-1630063-readtransaction.md)
+- [transaction](./database/api-1631713-transaction.md)
 
 
 ---

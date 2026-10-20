@@ -1,17 +1,22 @@
 # openL2CAPChannelAsync(_:withPSM:delegate:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens a new L2CAP channel to the target device. Returns immediately after starting the opening process.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func openL2CAPChannelAsync(_ newChannel: AutoreleasingUnsafeMutablePointer<IOBluetoothL2CAPChannel?>!, withPSM psm: BluetoothL2CAPPSM, delegate channelDelegate: Any!) -> IOReturn
+```
+
+```objc
+- (IOReturn) openL2CAPChannelAsync:(IOBluetoothL2CAPChannel **) newChannel withPSM:(BluetoothL2CAPPSM) psm delegate:(id) channelDelegate;
 ```
 
 #### Return Value

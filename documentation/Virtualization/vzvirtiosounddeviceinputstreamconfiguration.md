@@ -1,7 +1,8 @@
 # VZVirtioSoundDeviceInputStreamConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A PCM stream of input audio data, such as from a microphone.
 
@@ -14,46 +15,51 @@ A PCM stream of input audio data, such as from a microphone.
 class VZVirtioSoundDeviceInputStreamConfiguration
 ```
 
+```objc
+@interface VZVirtioSoundDeviceInputStreamConfiguration : VZVirtioSoundDeviceStreamConfiguration
+```
+
 #### Overview
 
-This device represents a PCM stream of audio data. Don’t instantiate `VZVirtioSoundDeviceStreamConfiguration` directly. Instead, use one of its subclasses such as [`VZVirtioSoundDeviceInputStreamConfiguration`](vzvirtiosounddeviceinputstreamconfiguration.md) or [`VZVirtioSoundDeviceOutputStreamConfiguration`](vzvirtiosounddeviceoutputstreamconfiguration.md).
+This device represents a PCM stream of audio data. Don’t instantiate `VZVirtioSoundDeviceStreamConfiguration` directly. Instead, use one of its subclasses such as [`VZVirtioSoundDeviceInputStreamConfiguration`](./vzvirtiosounddeviceinputstreamconfiguration.md) or [`VZVirtioSoundDeviceOutputStreamConfiguration`](./vzvirtiosounddeviceoutputstreamconfiguration.md).
 
 ## Topics
 
 ### Creating an input stream configuration
-- [init()](vzvirtiosounddeviceinputstreamconfiguration/init.md)
+- [init()](./vzvirtiosounddeviceinputstreamconfiguration/init%28%29.md)
   Creates a new sound device input stream configuration.
 ### Accessing the sound source
-- [var source: VZAudioInputStreamSource?](vzvirtiosounddeviceinputstreamconfiguration/source.md)
+- [var source: VZAudioInputStreamSource?](./vzvirtiosounddeviceinputstreamconfiguration/source.md)
   An audio stream source that defines how the host supplies audio data for the guest.
 ### Input source
-- [class VZHostAudioInputStreamSource](vzhostaudioinputstreamsource.md)
+- [class VZHostAudioInputStreamSource](./vzhostaudioinputstreamsource.md)
   The host audio input stream source that provides audio from the host system’s default input device.
-- [class VZAudioInputStreamSource](vzaudioinputstreamsource.md)
+- [class VZAudioInputStreamSource](./vzaudioinputstreamsource.md)
   The base class for an audio input stream source.
 
 ## Relationships
 
 ### Inherits From
-- [VZVirtioSoundDeviceStreamConfiguration](vzvirtiosounddevicestreamconfiguration.md)
+- [VZVirtioSoundDeviceStreamConfiguration](./vzvirtiosounddevicestreamconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioSoundDeviceConfiguration](vzvirtiosounddeviceconfiguration.md)
+### Configurations
+- [class VZVirtioSoundDeviceConfiguration](./vzvirtiosounddeviceconfiguration.md)
   An object that defines a Virtio sound device configuration.
-- [class VZVirtioSoundDeviceOutputStreamConfiguration](vzvirtiosounddeviceoutputstreamconfiguration.md)
+- [class VZVirtioSoundDeviceOutputStreamConfiguration](./vzvirtiosounddeviceoutputstreamconfiguration.md)
   An object that defines a Virtio sound device output stream configuration.
-- [class VZAudioDeviceConfiguration](vzaudiodeviceconfiguration.md)
+- [class VZAudioDeviceConfiguration](./vzaudiodeviceconfiguration.md)
   The base class for an audio device configuration.
-- [class VZVirtioSoundDeviceStreamConfiguration](vzvirtiosounddevicestreamconfiguration.md)
+- [class VZVirtioSoundDeviceStreamConfiguration](./vzvirtiosounddevicestreamconfiguration.md)
   An object that defines a Virtio sound device stream configuration.
 
 

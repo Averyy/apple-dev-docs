@@ -1,7 +1,8 @@
 # description
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string describing the current condition.
 
@@ -22,7 +23,8 @@ var description: String { get }
 
 ## See Also
 
-- [var accessibilityDescription: String](weathercondition/accessibilitydescription.md)
+### Describing the weather condition
+- [var accessibilityDescription: String](./accessibilitydescription.md)
   A localized accessibility description describing the weather condition.
 
 

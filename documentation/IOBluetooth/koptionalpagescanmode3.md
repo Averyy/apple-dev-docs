@@ -1,10 +1,11 @@
 # kOptionalPageScanMode3
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kOptionalPageScanMode3: BluetoothHCIPageScanModes { get }
 ```
 
+```c
+kOptionalPageScanMode3
+```
+
 ## See Also
 
-- [var kMandatoryPageScanMode: BluetoothHCIPageScanModes](kmandatorypagescanmode.md)
-- [var kOptionalPageScanMode1: BluetoothHCIPageScanModes](koptionalpagescanmode1.md)
-- [var kOptionalPageScanMode2: BluetoothHCIPageScanModes](koptionalpagescanmode2.md)
+### Constants
+- [var kMandatoryPageScanMode: BluetoothHCIPageScanModes](./kmandatorypagescanmode.md)
+- [var kOptionalPageScanMode1: BluetoothHCIPageScanModes](./koptionalpagescanmode1.md)
+- [var kOptionalPageScanMode2: BluetoothHCIPageScanModes](./koptionalpagescanmode2.md)
 
 
 ---

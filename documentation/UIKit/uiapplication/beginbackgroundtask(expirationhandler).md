@@ -1,7 +1,8 @@
 # beginBackgroundTask(expirationHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks the start of a task that should continue if the app enters the background.
 
@@ -9,7 +10,7 @@ Marks the start of a task that should continue if the app enters the background.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,25 +20,29 @@ nonisolated
 func beginBackgroundTask(expirationHandler handler: (@MainActor @Sendable () -> Void)? = nil) -> UIBackgroundTaskIdentifier
 ```
 
+```objc
+- (UIBackgroundTaskIdentifier) beginBackgroundTaskWithExpirationHandler:(void (^)(void)) handler;
+```
+
 #### Return Value
 
-A unique identifier for the new background task. You must pass this value to the [`endBackgroundTask(_:)`](uiapplication/endbackgroundtask(_:).md) method to mark the end of this task. This method returns [`invalid`](uibackgroundtaskidentifier/invalid.md) if running in the background isn’t possible.
+A unique identifier for the new background task. You must pass this value to the [`endBackgroundTask(_:)`](./endbackgroundtask%28_%29.md) method to mark the end of this task. This method returns [`invalid`](../uibackgroundtaskidentifier/invalid.md) if running in the background isn’t possible.
 
 #### Discussion
 
-This method requests additional background execution time for your app. Call this method when leaving a task unfinished might be detrimental to your app’s user experience. For example, call this method before writing data to a file to prevent the system from suspending your app while the operation is in progress. For background tasks requiring more time, use [`Background Tasks`](https://developer.apple.com/documentation/backgroundtasks).
+This method requests additional background execution time for your app. Call this method when leaving a task unfinished might be detrimental to your app’s user experience. For example, call this method before writing data to a file to prevent the system from suspending your app while the operation is in progress. For background tasks requiring more time, use [Background Tasks](../../BackgroundTasks/BackgroundTasks.md).
 
-Call this method as early as possible before starting your task, preferably before your app actually enters the background. The method requests the task assertion for your app asynchronously. If you call this method shortly before your app is due to be suspended, there’s a chance that the system might suspend your app before that task assertion is granted. For example, don’t call this method at the very end of your [`applicationDidEnterBackground(_:)`](uiapplicationdelegate/applicationdidenterbackground(_:).md) method and expect your app to continue running. If the system is unable to grant the task assertion, it calls your expiration handler.
+Call this method as early as possible before starting your task, preferably before your app actually enters the background. The method requests the task assertion for your app asynchronously. If you call this method shortly before your app is due to be suspended, there’s a chance that the system might suspend your app before that task assertion is granted. For example, don’t call this method at the very end of your [`applicationDidEnterBackground(_:)`](../uiapplicationdelegate/applicationdidenterbackground%28_%29.md) method and expect your app to continue running. If the system is unable to grant the task assertion, it calls your expiration handler.
 
-Each call to this method must be balanced by a matching call to the [`endBackgroundTask(_:)`](uiapplication/endbackgroundtask(_:).md) method. Apps running background tasks have a finite amount of time in which to run them. (You can find out the maximum background time available using the [`backgroundTimeRemaining`](uiapplication/backgroundtimeremaining.md) property.) If you don’t call [`endBackgroundTask(_:)`](uiapplication/endbackgroundtask(_:).md) for each task before time expires, the system kills the app. If you provide a block object in the `handler` parameter, the system calls your handler before time expires to give you a chance to end the task.
+Each call to this method must be balanced by a matching call to the [`endBackgroundTask(_:)`](./endbackgroundtask%28_%29.md) method. Apps running background tasks have a finite amount of time in which to run them. (You can find out the maximum background time available using the [`backgroundTimeRemaining`](./backgroundtimeremaining.md) property.) If you don’t call [`endBackgroundTask(_:)`](./endbackgroundtask%28_%29.md) for each task before time expires, the system kills the app. If you provide a block object in the `handler` parameter, the system calls your handler before time expires to give you a chance to end the task.
 
 You can call this method at any point in your app’s execution. You may also call this method multiple times to mark the beginning of several background tasks that run in parallel. However, each task must be ended separately. You identify a given task using the value returned by this method.
 
-To assist with debugging, this method generates a name for the task, based on the name of the calling method or function. If you want to specify a custom name, use the [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method instead.
+To assist with debugging, this method generates a name for the task, based on the name of the calling method or function. If you want to specify a custom name, use the [`beginBackgroundTask(withName:expirationHandler:)`](./beginbackgroundtask%28withname,expirationhandler%29.md) method instead.
 
-This method can be safely called on a non-main thread. To extend the execution time of an app extension, use the [`performExpiringActivity(withReason:using:)`](https://developer.apple.com/documentation/foundation/processinfo/performexpiringactivity(withreason:using:)) method of [`ProcessInfo`](https://developer.apple.com/documentation/foundation/processinfo) instead.
+This method can be safely called on a non-main thread. To extend the execution time of an app extension, use the [`performExpiringActivity(withReason:using:)`](../../Foundation/processinfo/performexpiringactivity%28withreason,using%29.md) method of [`ProcessInfo`](../../Foundation/processinfo.md) instead.
 
-> **Note**:  If you’re having trouble debugging your background task code, you might try using the [`beginBackgroundTask(withName:expirationHandler:)`](uiapplication/beginbackgroundtask(withname:expirationhandler:).md) method instead of this one. That method provides the same behavior but lets you specify a debugger-visible name for your task.
+> **Note**:  If you’re having trouble debugging your background task code, you might try using the [`beginBackgroundTask(withName:expirationHandler:)`](./beginbackgroundtask%28withname,expirationhandler%29.md) method instead of this one. That method provides the same behavior but lets you specify a debugger-visible name for your task.
 
 ## Parameters
 
@@ -45,21 +50,23 @@ This method can be safely called on a non-main thread. To extend the execution t
 
 ## See Also
 
-- [Background Tasks](../backgroundtasks/backgroundtasks.md)
+### Related Documentation
+- [Background Tasks](../../BackgroundTasks/BackgroundTasks.md)
   Support background processing in your app by wrapping your app’s most critical work in framework-provided tasks.
-- [var backgroundRefreshStatus: UIBackgroundRefreshStatus](uiapplication/backgroundrefreshstatus.md)
+### Managing background tasks
+- [var backgroundRefreshStatus: UIBackgroundRefreshStatus](./backgroundrefreshstatus.md)
   Indicates whether the app can refresh content when running in the background.
-- [enum UIBackgroundRefreshStatus](uibackgroundrefreshstatus.md)
+- [enum UIBackgroundRefreshStatus](../uibackgroundrefreshstatus.md)
   Constants that indicate whether background execution is enabled for the app.
-- [class let backgroundRefreshStatusDidChangeNotification: NSNotification.Name](uiapplication/backgroundrefreshstatusdidchangenotification.md)
+- [class let backgroundRefreshStatusDidChangeNotification: NSNotification.Name](./backgroundrefreshstatusdidchangenotification.md)
   A notification that posts when the app’s status for downloading content in the background changes.
-- [func beginBackgroundTask(withName: String?, expirationHandler: (() -> Void)?) -> UIBackgroundTaskIdentifier](uiapplication/beginbackgroundtask(withname:expirationhandler:).md)
+- [func beginBackgroundTask(withName: String?, expirationHandler: (() -> Void)?) -> UIBackgroundTaskIdentifier](./beginbackgroundtask%28withname,expirationhandler%29.md)
   Marks the start of a task with a custom name that should continue if the app enters the background.
-- [func endBackgroundTask(UIBackgroundTaskIdentifier)](uiapplication/endbackgroundtask(_:).md)
+- [func endBackgroundTask(UIBackgroundTaskIdentifier)](./endbackgroundtask%28_%29.md)
   Marks the end of a specific long-running background task.
-- [struct UIBackgroundTaskIdentifier](uibackgroundtaskidentifier.md)
+- [struct UIBackgroundTaskIdentifier](../uibackgroundtaskidentifier.md)
   A unique token that identifies a request to run in the background.
-- [var backgroundTimeRemaining: TimeInterval](uiapplication/backgroundtimeremaining.md)
+- [var backgroundTimeRemaining: TimeInterval](./backgroundtimeremaining.md)
   The maximum amount of time remaining for the app to run in the background.
 
 

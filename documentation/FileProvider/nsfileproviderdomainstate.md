@@ -1,7 +1,8 @@
 # NSFileProviderDomainState
 
 **Framework**: File Provider  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An object that contains global state data about the domain.
 
@@ -18,22 +19,27 @@ An object that contains global state data about the domain.
 protocol NSFileProviderDomainState : NSObjectProtocol
 ```
 
+```objc
+@protocol NSFileProviderDomainState <NSObject>
+```
+
 ## Topics
 
 ### Accessing State Data
-- [var domainVersion: NSFileProviderDomainVersion](nsfileproviderdomainstate/domainversion.md)
+- [var domainVersion: NSFileProviderDomainVersion](./nsfileproviderdomainstate/domainversion.md)
   An opaque object that uniquely identifies the domain’s version.
-- [var userInfo: [AnyHashable : Any]](nsfileproviderdomainstate/userinfo.md)
+- [var userInfo: [AnyHashable : Any]](./nsfileproviderdomainstate/userinfo.md)
   Global state information about the current domain version.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSFileProviderDomainVersion](nsfileproviderdomainversion.md)
+### Domains
+- [class NSFileProviderDomainVersion](./nsfileproviderdomainversion.md)
   An opaque object that identifies a specific version of a domain.
 
 

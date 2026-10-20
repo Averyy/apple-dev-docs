@@ -1,6 +1,7 @@
 # Analyzing audio performance with Instruments
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: Article
 
 Ensure a smooth and immersive audio experience in your apps using Audio System Trace.
 
@@ -12,7 +13,7 @@ Poor quality audio playback can ruin the immersive experience in your app, makin
 
 From Xcode’s Product menu, choose Profile, or press Command-I. After Instruments launches, select Audio System Trace, then click Choose.
 
-![A screenshot of the profiling templates in Instruments that shows Audio System Trace selected. At the bottom, there are two buttons: Cancel and Choose.](/images/com.apple.audiotoolbox/media-4306594@2x.png)
+![A screenshot of the profiling templates in Instruments that shows Audio System Trace selected. At the bottom, there are two buttons: Cancel and Choose.](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4306594@2x.png)
 
 The Audio System Trace template includes the following instrument tracks:
 
@@ -27,34 +28,34 @@ The Audio System Trace template includes the following instrument tracks:
 - **Audio Server**: Tracks engine timestamp and I/O cycle load and related points of interest.
 - **Hangs**: Labels intervals by severity, measuring the duration of main thread blockage.
 
-##### Explore the Audio System Trace Instruments
+##### Explore the Audio System Trace instruments
 
 Audio System Trace instruments include tracks to help you isolate where glitches are occurring and identify the cause of audio performance issues. You can view the audio system performance captured in an audio system trace in two ways:
 
 - You can capture a trace by clicking the Record button in the toolbar. Your app launches Audio System Trace and starts recording. Within your app, perform the actions that reproduce the audio performance issue you want to analyze, and then click the Stop button to stop recording.
 - You can open an audio system trace you previously recorded. In Instruments, choose File > Open, select a trace file, and click Open.
 
-![A screenshot of recording an Audio System Trace. At the top, there is a recording button. Clicking the recording button starts the recording.](/images/com.apple.audiotoolbox/media-4306618@2x.png)
+![A screenshot of recording an Audio System Trace. At the top, there is a recording button. Clicking the recording button starts the recording.](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4306618@2x.png)
 
 The audio system trace appears in a new window, along with the timeline and detail panes, as shown in the following screenshot.
 
-![A screenshot of the highlights and the areas of interest of a trace: Audio Instruments, Recording Controls, Audio Client track, Audio Statistics track, Audio Server track, Process track, Run Information, Timeline pane, inspector pane, and detail pane. ](/images/com.apple.audiotoolbox/media-4309270@2x.png)
+![A screenshot of the highlights and the areas of interest of a trace: Audio Instruments, Recording Controls, Audio Client track, Audio Statistics track, Audio Server track, Process track, Run Information, Timeline pane, inspector pane, and detail pane. ](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4309270@2x.png)
 
 Move your pointer along the top of the trace timeline pane to see points of interest along the Audio Client and Audio Server tracks. To identify audio performance issues, click the points of interest to view errors and warnings.
 
-![A screenshot of the trace timeline pane. It shows points of interest along the different tracks.](/images/com.apple.audiotoolbox/media-4309315@2x.png)
+![A screenshot of the trace timeline pane. It shows points of interest along the different tracks.](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4309315@2x.png)
 
 To have better granularity for a specific track, use your mouse or trackpad to zoom in to the corresponding area of the track for more information. Click a point of interest to update the detail pane for that selected track and view any corresponding detail information.
 
-![A screenshot of points of interest along the various tracts. It shows the contents of a point of interest displayed when you click it.  ](/images/com.apple.audiotoolbox/media-4309314@2x.png)
+![A screenshot of points of interest along the various tracts. It shows the contents of a point of interest displayed when you click it.  ](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4309314@2x.png)
 
-##### Analyze Audio Performance Statistics
+##### Analyze audio performance statistics
 
 The Audio Statistics track gives an overview of each engine’s jitter and sample time information to provide insights into the system’s audio performance. The track displays two graphs: Engine Jitter and I/O Threads. The Engine Jitter graph quantifies deviations from an expected tick cadence. The I/O Threads graph shows the number of concurrent audio threads. The Engine represents a collection of one or more audio devices bound together.
 
 Click the arrow next to the instrument name to switch between these two graphs.
 
-![A screenshot of the Audio Statistics Instrument button selected in the Audio Statistics track. Clicking the Instrument button displays the two buttons you can choose for the track information. The buttons are Engine Jitter and I/O Threads.](/images/com.apple.audiotoolbox/media-4306636@2x.png)
+![A screenshot of the Audio Statistics Instrument button selected in the Audio Statistics track. Clicking the Instrument button displays the two buttons you can choose for the track information. The buttons are Engine Jitter and I/O Threads.](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4306636@2x.png)
 
 The table below describes the colors and associated jitter times in the Audio Statistics track.
 
@@ -73,7 +74,7 @@ The Audio Statistics track’s detail pane includes the following menu items:
 - **Std Dev Jitter**: The standard deviation from the mean jitter value during a recording.
 - **Count**: The number of events recorded in the run of the instrument tool.
 
-##### Identify Glitches with the Audio Server Track
+##### Identify glitches with the Audio Server track
 
 The Audio Server track provides Engine Time Stamp and I/O Cycle Load graphs, and related points of interest. Engine timestamp refers to the time when the audio engine processes audio, and it can help determine where a delay or other problem occurred in the audio processing chain. I/O cycle load refers to the time the system spends processing an audio buffer relative to the available time to process that buffer.
 
@@ -81,19 +82,19 @@ If the client doesn’t complete its operation during the allotted cycle time, t
 
 Click the arrow next to the instrument name to switch between the Engine Time Stamp and I/O Cycle Load graphs.
 
-![A screenshot of the Audio Server Instrument button selected in the Audio Server Track. Clicking the Instrument button displays the two buttons you can select for the track information. The buttons are I/O Cycle Load and Engine Time Stamp.](/images/com.apple.audiotoolbox/media-4309276@2x.png)
+![A screenshot of the Audio Server Instrument button selected in the Audio Server Track. Clicking the Instrument button displays the two buttons you can select for the track information. The buttons are I/O Cycle Load and Engine Time Stamp.](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4309276@2x.png)
 
 As you view these tracks, pay particular attention to the red points of interest, which help you isolate where the audio issues occur. Typically, these issues occur when the I/O cycle takes too long. The points of interest include overloads, clock discontinuity errors, reanchors, and read safety violations.
 
 An overload occurs if you don’t deliver data on time, leading to issues in real-time audio playback. It’s indicated in red on the graph and has a red point of interest. If you don’t promptly write audio data to the output buffer, the speakers lack the necessary information for continuous playback and glitch until they receive the missing data. A clock discontinuity occurs when the clock has failed to stay in sync or there has been a break in the device’s continuous samples. When detecting a clock discontinuity, Core Audio actively attempts to reanchor the device’s clock with the timeline. A read safety violation tracks how close to a driver’s safety offset a read was.
 
-##### View Zero Timestamp Information
+##### View zero timestamp information
 
 Switching to the Zero Time Stamp detail pane in the Audio Server track can help you determine if an operation doesn’t complete within an audio I/O cycle, leading to overloads and glitches.
 
 A ring buffer is a fixed-size data structure where the last element connects to the first. Every time the audio driver completes a loop of the ring buffer, it generates a new zero timestamp. The following screenshot shows the Audio Server’s detail pane with zero timestamp information.
 
-![A screenshot of the tracks in the template. It shows a callout to the zero timestamp selection at the bottom of the screen, and the detail pane updates with the Zero Time Stamp events. ](/images/com.apple.audiotoolbox/media-4311862@2x.png)
+![A screenshot of the tracks in the template. It shows a callout to the zero timestamp selection at the bottom of the screen, and the detail pane updates with the Zero Time Stamp events. ](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4311862@2x.png)
 
 The following menu items describe the zero timestamp information in the Audio Server track’s detail pane shown above:
 
@@ -103,49 +104,50 @@ The following menu items describe the zero timestamp information in the Audio Se
 - **Actual Host Ticks per Frame**: The number of host ticks per audio frame.
 - **Jitter**: The deviation (in microseconds) from the expected timestamp.
 
-##### Inspect the Audio Client Track
+##### Inspect the Audio Client track
 
 The audio stack has a client/server architecture. To analyze audio system performance, you may want to examine what happens between the server and the client (your app). The Audio Client track provides information about the timing of I/O process callbacks for your app. Points of interest show issues with your app’s audio performance and correlate to points of interest in the Audio Server track.
 
-![A screenshot of the Audio Client track and detail pane for the track. It shows the point of interest for the track on overloads in the detail pane at the bottom.](/images/com.apple.audiotoolbox/media-4311403@2x.png)
+![A screenshot of the Audio Client track and detail pane for the track. It shows the point of interest for the track on overloads in the detail pane at the bottom.](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4311403@2x.png)
 
-##### Use Real Time Operations
+##### Use real-time operations
 
 In the screenshot below, overloads are visible in the Audio Server track and are likely to cause glitches. Client operations might be conducting non–real-time operations that aren’t safe, which can cause overloads. Blocking on a lock, allocating memory, or performing complex operations that exceed the allotted audio server time are examples of non–real-time operations that can cause glitches.
 
-![A screenshot of the Audio Server track with overloads. ](/images/com.apple.audiotoolbox/media-4311436@2x.png)
+![A screenshot of the Audio Server track with overloads. ](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4311436@2x.png)
 
-##### Complete Multiple Audio Threads By a Common Deadline
+##### Complete multiple audio threads by a common deadline
 
 Completing multiple real-time audio threads by a common deadline is important, or glitches can occur. An audio workgroup consists of real-time threads collaborating across various processes — such as the audio server, client apps, and plug-ins — to generate audio by a common deadline. The system uses audio workgroups to effectively monitor the CPU utilization of real-time threads, aiming to optimize the trade-off between energy efficiency and system performance.
 
-> 💡 **Tip**:  Use Audio Workgroups API to optimize your audio threads’ performance, giving the operating system insight into active real-time threads, including auxiliary ones that other apps and Audio Unit plug-ins created. For further insights into audio workgroups, see [`Understanding Audio Workgroups`](understanding-audio-workgroups.md).
+> 💡 **Tip**:  Use Audio Workgroups API to optimize your audio threads’ performance, giving the operating system insight into active real-time threads, including auxiliary ones that other apps and Audio Unit plug-ins created. For further insights into audio workgroups, see [Understanding Audio Workgroups](./understanding-audio-workgroups.md).
 
-##### Analyze Backtrace Information
+##### Analyze backtrace information
 
 With your app’s track, you can select the detail row where the overload occurs to see the corresponding backtrace in the inspector pane, as shown in the screenshot below. The backtrace information can take you to your code that’s causing audio performance issues.
 
-![A screenshot of the app’s track selected. It shows the detail pane and displays a corresponding backtrace in the inspector pane.](/images/com.apple.audiotoolbox/media-4311883@2x.png)
+![A screenshot of the app’s track selected. It shows the detail pane and displays a corresponding backtrace in the inspector pane.](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4311883@2x.png)
 
-##### Confirm Tracks Have No Errors or Warnings
+##### Confirm tracks have no errors or warnings
 
 When you’ve corrected all glitches appearing in your Audio Client and Audio Server tracks, you see the Audio Server track with the client audio completed within the time allotted by the server. As shown below, there are no errors or warnings in the tracks.
 
-![A screenshot of the Audio Client, Audio Statistics, and Audio Server tracks. It shows no errors or warnings in the tracks.](/images/com.apple.audiotoolbox/media-4311885@2x.png)
+![A screenshot of the Audio Client, Audio Statistics, and Audio Server tracks. It shows no errors or warnings in the tracks.](https://developer.apple.com/tutorials/images/com.apple.audiotoolbox/media-4311885@2x.png)
 
 ## See Also
 
-- [Audio Converter Services](audio-converter-services.md)
+### Utilities
+- [Audio Converter Services](./audio-converter-services.md)
   Convert between linear PCM audio formats, and between linear PCM and compressed formats.
-- [Audio Session Support](audio-session-support.md)
+- [Audio Session Support](./audio-session-support.md)
   Describe the properties that you associate with audio sessions and audio routes.
-- [Audio Toolbox Debugging](audio-toolbox-debugging.md)
+- [Audio Toolbox Debugging](./audio-toolbox-debugging.md)
   Obtain the internal state of Core Audio objects during the development and debugging of your code.
-- [Workgroup Management](workgroup-management.md)
+- [Workgroup Management](./workgroup-management.md)
   Coordinate the activity of custom real-time audio threads with those of the system and other processes.
-- [Audio Codec](audio-codec.md)
+- [Audio Codec](./audio-codec.md)
   Translate audio data from one format to another.
-- [Clock Utilities](clock-utilities.md)
+- [Clock Utilities](./clock-utilities.md)
   Manage time-related information associated with audio playback.
 
 

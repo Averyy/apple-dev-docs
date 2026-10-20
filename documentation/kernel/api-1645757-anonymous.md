@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,14 +18,14 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOMediumOptionEEE](1645757-anonymous/kiomediumoptioneee.md)
-- [kIOMediumOptionFlag0](1645757-anonymous/kiomediumoptionflag0.md)
-- [kIOMediumOptionFlag1](1645757-anonymous/kiomediumoptionflag1.md)
-- [kIOMediumOptionFlag2](1645757-anonymous/kiomediumoptionflag2.md)
-- [kIOMediumOptionFlowControl](1645757-anonymous/kiomediumoptionflowcontrol.md)
-- [kIOMediumOptionFullDuplex](1645757-anonymous/kiomediumoptionfullduplex.md)
-- [kIOMediumOptionHalfDuplex](1645757-anonymous/kiomediumoptionhalfduplex.md)
-- [kIOMediumOptionLoopback](1645757-anonymous/kiomediumoptionloopback.md)
+- [kIOMediumOptionEEE](./api-1645757-anonymous/kiomediumoptioneee.md)
+- [kIOMediumOptionFlag0](./api-1645757-anonymous/kiomediumoptionflag0.md)
+- [kIOMediumOptionFlag1](./api-1645757-anonymous/kiomediumoptionflag1.md)
+- [kIOMediumOptionFlag2](./api-1645757-anonymous/kiomediumoptionflag2.md)
+- [kIOMediumOptionFlowControl](./api-1645757-anonymous/kiomediumoptionflowcontrol.md)
+- [kIOMediumOptionFullDuplex](./api-1645757-anonymous/kiomediumoptionfullduplex.md)
+- [kIOMediumOptionHalfDuplex](./api-1645757-anonymous/kiomediumoptionhalfduplex.md)
+- [kIOMediumOptionLoopback](./api-1645757-anonymous/kiomediumoptionloopback.md)
 
 
 ---

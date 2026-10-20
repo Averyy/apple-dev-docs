@@ -1,14 +1,15 @@
 # BTP_KERN_OFFSET_32
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```c
 BTP_KERN_OFFSET_32
 ```
 

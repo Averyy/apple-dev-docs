@@ -1,7 +1,8 @@
 # subtract(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the elements of the given set from this set.
 

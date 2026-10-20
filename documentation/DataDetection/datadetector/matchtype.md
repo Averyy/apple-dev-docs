@@ -1,7 +1,8 @@
 # DataDetector.MatchType
 
 **Framework**: DataDetection  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of types of matches that the system can find in a string.
 
@@ -27,50 +28,51 @@ struct MatchType
 ## Topics
 
 ### Supported match types
-- [static let all: DataDetector.MatchType](datadetector/matchtype/all.md)
+- [static let all: DataDetector.MatchType](./matchtype/all.md)
   A set of types that includes all publicly useable types.
-- [static let calendarEvent: DataDetector.MatchType](datadetector/matchtype/calendarevent.md)
+- [static let calendarEvent: DataDetector.MatchType](./matchtype/calendarevent.md)
   The type that represents calendar events, such as dates and times, or date and time ranges.
-- [static let emailAddress: DataDetector.MatchType](datadetector/matchtype/emailaddress.md)
+- [static let emailAddress: DataDetector.MatchType](./matchtype/emailaddress.md)
   The type that represents email addresses.
-- [static let flightNumber: DataDetector.MatchType](datadetector/matchtype/flightnumber.md)
+- [static let flightNumber: DataDetector.MatchType](./matchtype/flightnumber.md)
   The type that represents flight numbers.
-- [static let link: DataDetector.MatchType](datadetector/matchtype/link.md)
+- [static let link: DataDetector.MatchType](./matchtype/link.md)
   The type that represents links, not limited to web links.
-- [static let measurement: DataDetector.MatchType](datadetector/matchtype/measurement.md)
+- [static let measurement: DataDetector.MatchType](./matchtype/measurement.md)
   The type that represents measurements, such as distances and weights.
-- [static let moneyAmount: DataDetector.MatchType](datadetector/matchtype/moneyamount.md)
+- [static let moneyAmount: DataDetector.MatchType](./matchtype/moneyamount.md)
   The type that represents monetary amounts.
-- [static let paymentIdentifier: DataDetector.MatchType](datadetector/matchtype/paymentidentifier.md)
+- [static let paymentIdentifier: DataDetector.MatchType](./matchtype/paymentidentifier.md)
   The type that represents payment identifiers, such as Universal Payments Interface (UPI) identifiers.
-- [static let phoneNumber: DataDetector.MatchType](datadetector/matchtype/phonenumber.md)
+- [static let phoneNumber: DataDetector.MatchType](./matchtype/phonenumber.md)
   The type that represents phone numbers.
-- [static let postalAddress: DataDetector.MatchType](datadetector/matchtype/postaladdress.md)
+- [static let postalAddress: DataDetector.MatchType](./matchtype/postaladdress.md)
   The type that represents postal addresses.
-- [static let shipmentTrackingNumber: DataDetector.MatchType](datadetector/matchtype/shipmenttrackingnumber.md)
+- [static let shipmentTrackingNumber: DataDetector.MatchType](./matchtype/shipmenttrackingnumber.md)
   The type that represents shipment tracking numbers.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [DataDetector.Match](datadetector/match.md)
+### Structures
+- [DataDetector.Match](./match.md)
   A representation of a match that includes common properties and an enumeration that represents the match type and its specific semantic components.
-- [DataDetector.Options](datadetector/options.md)
+- [DataDetector.Options](./options.md)
   A set of options you can use to refine the behavior of text scanning, and better interpret the semantic domain of the matches.
 
 

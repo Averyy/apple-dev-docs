@@ -1,7 +1,8 @@
 # PartialRangeUpTo
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A partial half-open interval up to, but not including, an upper bound.
 
@@ -48,42 +49,43 @@ print(numbers[..<3])
 ## Topics
 
 ### Initializers
-- [init(Bound)](partialrangeupto/init(_:).md)
+- [init(Bound)](./partialrangeupto/init%28_%29.md)
 ### Instance Properties
-- [let upperBound: Bound](partialrangeupto/upperbound.md)
+- [let upperBound: Bound](./partialrangeupto/upperbound.md)
 ### Default Implementations
-- [Decodable Implementations](partialrangeupto/decodable-implementations.md)
-- [Encodable Implementations](partialrangeupto/encodable-implementations.md)
-- [RangeExpression Implementations](partialrangeupto/rangeexpression-implementations.md)
+- [Decodable Implementations](./partialrangeupto/decodable-implementations.md)
+- [Encodable Implementations](./partialrangeupto/encodable-implementations.md)
+- [RangeExpression Implementations](./partialrangeupto/rangeexpression-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BNNSGraph.Builder.SliceIndex](../accelerate/bnnsgraph/builder/sliceindex.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [ConvertibleFromBytes](convertiblefrombytes.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomTestStringConvertible](../testing/customteststringconvertible.md)
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Escapable](escapable.md)
-- [MLShapedArrayRangeExpression](../coreml/mlshapedarrayrangeexpression.md)
-- [MLTensorRangeExpression](../coreml/mltensorrangeexpression.md)
-- [NDArray.RangeExpression](../coreai/ndarray/rangeexpression.md)
-- [RangeExpression](rangeexpression.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BNNSGraph.Builder.SliceIndex](../Accelerate/bnnsgraph/builder/sliceindex.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [ConvertibleFromBytes](./convertiblefrombytes.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomTestStringConvertible](../Testing/customteststringconvertible.md)
+- [Decodable](./decodable.md)
+- [Encodable](./encodable.md)
+- [Escapable](./escapable.md)
+- [MLShapedArrayRangeExpression](../CoreML/mlshapedarrayrangeexpression.md)
+- [MLTensorRangeExpression](../CoreML/mltensorrangeexpression.md)
+- [NDArray.RangeExpression](../CoreAI/ndarray/rangeexpression.md)
+- [RangeExpression](./rangeexpression.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct PartialRangeThrough](partialrangethrough.md)
+### Range Expressions
+- [struct PartialRangeThrough](./partialrangethrough.md)
   A partial interval up to, and including, an upper bound.
-- [struct PartialRangeFrom](partialrangefrom.md)
+- [struct PartialRangeFrom](./partialrangefrom.md)
   A partial interval extending upward from a lower bound.
-- [protocol RangeExpression](rangeexpression.md)
+- [protocol RangeExpression](./rangeexpression.md)
   A type that can be used to slice a collection.
-- [enum UnboundedRange_](unboundedrange_.md)
+- [enum UnboundedRange_](./unboundedrange_.md)
   A range expression that represents the entire range of a collection.
 
 

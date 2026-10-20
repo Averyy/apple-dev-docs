@@ -1,7 +1,8 @@
 # getResponseHeader
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Retrieves the field value from the response that is contained in the specified header.
 
@@ -12,13 +13,23 @@ Retrieves the field value from the response that is contained in the specified h
 
 ## Declaration
 
-```swift
+*tvOS*
+
+```
+String getResponseHeader(
+    in String header
+);
+```
+
+*Safari Desktop, Safari Mobile*
+
+```
 DOMString? getResponseHeader(
     DOMString header
 );
 ```
 
-#### Return_value
+#### Return Value
 
 The header field value.
 
@@ -32,9 +43,10 @@ If the header value is `Set-Cookie` or `Set-Cookie2`, the value inside the heade
 
 ## See Also
 
-- [getAllResponseHeaders](xmlhttprequest/1627343-getallresponseheaders.md)
+### Manipulating the Header List
+- [getAllResponseHeaders](./api-1627343-getallresponseheaders.md)
   Returns all of the response headers.
-- [setRequestHeader](xmlhttprequest/1627317-setrequestheader.md)
+- [setRequestHeader](./api-1627317-setrequestheader.md)
   Appends a header to the list of request headers.
 
 

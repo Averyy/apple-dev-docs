@@ -1,7 +1,8 @@
 # controllerNodeID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var controllerNodeID: NSNumber? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSNumber * controllerNodeID;
 ```
 
 

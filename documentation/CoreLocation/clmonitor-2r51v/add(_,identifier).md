@@ -1,7 +1,8 @@
 # add(_:identifier:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the given condition for monitoring.
 
@@ -19,7 +20,7 @@ func add(_ Condition: any CLCondition, identifier: String)
 
 #### Discussion
 
-The framework encapsulates the condition in an instance of [`CLMonitor.Record`](clmonitor-2r51v/record.md) and then associates the record, along with the condition with the given identifier. The initial state is [`CLRegionState.unknown`](clregionstate/unknown.md).
+The framework encapsulates the condition in an instance of [`CLMonitor.Record`](./record.md) and then associates the record, along with the condition with the given identifier. The initial state is [`CLRegionState.unknown`](../clregionstate/unknown.md).
 
 ## Parameters
 
@@ -28,11 +29,12 @@ The framework encapsulates the condition in an instance of [`CLMonitor.Record`](
 
 ## See Also
 
-- [func add(any CLCondition, identifier: String, assuming: CLMonitor.Event.State)](clmonitor-2r51v/add(_:identifier:assuming:).md)
+### Adding and removing conditions
+- [func add(any CLCondition, identifier: String, assuming: CLMonitor.Event.State)](./add%28_,identifier,assuming%29.md)
   Adds the monitoring condition with the identifier and initial state you specify.
-- [func record(for: String) -> CLMonitor.Record?](clmonitor-2r51v/record(for:).md)
+- [func record(for: String) -> CLMonitor.Record?](./record%28for%29.md)
   A record that contains a condition and the most recent event your app receives.
-- [func remove(String)](clmonitor-2r51v/remove(_:).md)
+- [func remove(String)](./remove%28_%29.md)
   Removes the condition and its enclosed record associated with the identifier you provide.
 
 

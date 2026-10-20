@@ -1,7 +1,8 @@
 # Publishers.Breakpoint.Failure
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of errors this publisher might publish.
 
@@ -26,7 +27,8 @@ This publisher uses its upstream publisher’s failure type.
 
 ## See Also
 
-- [Publishers.Breakpoint.Output](publishers/breakpoint/output.md)
+### Declaring supporting types
+- [Publishers.Breakpoint.Output](./output.md)
   The kind of values published by this publisher.
 
 

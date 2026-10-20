@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Objective-C Runtime
+**Framework**: Objective-C Runtime  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](selector/description.md)
+- [var description: String](./description.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # useClassicalSignature
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,10 @@
 
 ```swift
 static var useClassicalSignature: SecCSFlags { get }
+```
+
+```c
+kSecCSUseClassicalSignature
 ```
 
 #### Discussion

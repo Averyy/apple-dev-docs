@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether the two arguments are equal.
 
@@ -27,9 +28,10 @@ func == <T>(lhs: T, rhs: T) -> Bool where T : RawRepresentable, T.RawValue : Equ
 
 ## See Also
 
-- [func != <T>(T, T) -> Bool](!=(_:_:)-9wy5n.md)
+### Comparing Values
+- [func != <T>(T, T) -> Bool](./noteq%28_,_%29-9wy5n.md)
   Returns a Boolean value indicating whether the two arguments are not equal.
-- [func != <T>(T, T) -> Bool](!=(_:_:)-8pggn.md)
+- [func != <T>(T, T) -> Bool](./noteq%28_,_%29-8pggn.md)
   Returns a Boolean value indicating whether the two arguments are not equal.
 
 

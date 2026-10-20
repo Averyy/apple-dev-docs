@@ -1,7 +1,8 @@
 # shouldArchiveValue(forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies whether the value of the property for a given key is archived.
 
@@ -19,15 +20,19 @@ Specifies whether the value of the property for a given key is archived.
 func shouldArchiveValue(forKey key: String) -> Bool
 ```
 
+```objc
+- (BOOL) shouldArchiveValueForKey:(NSString *) key;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified property should be archived, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the specified property should be archived, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
 Called by the object’s implementation of `encodeWithCoder:`. The object must implement keyed archiving.
 
-The default implementation returns [`true`](https://developer.apple.com/documentation/swift/true).
+The default implementation returns [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -35,7 +40,8 @@ The default implementation returns [`true`](https://developer.apple.com/document
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
 
 
 ---

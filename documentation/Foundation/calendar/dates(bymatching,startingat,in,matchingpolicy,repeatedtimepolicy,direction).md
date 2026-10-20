@@ -1,7 +1,8 @@
 # dates(byMatching:startingAt:in:matchingPolicy:repeatedTimePolicy:direction:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the dates which match (or most closely match) a given set of components, returned as a `Sequence`.
 

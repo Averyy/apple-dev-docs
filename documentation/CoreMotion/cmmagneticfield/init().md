@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Motion  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 4.0+
@@ -19,7 +20,8 @@ init()
 
 ## See Also
 
-- [init(x: Double, y: Double, z: Double)](cmmagneticfield/init(x:y:z:).md)
+### Initializers
+- [init(x: Double, y: Double, z: Double)](./init%28x,y,z%29.md)
 
 
 ---

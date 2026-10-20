@@ -1,7 +1,8 @@
 # PartialRangeFrom.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator for a `PartialRangeFrom` instance.
 
@@ -21,26 +22,28 @@ The iterator for a `PartialRangeFrom` instance.
 struct Iterator
 ```
 
+Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
+
 ## Topics
 
 ### Instance Methods
-- [func next() -> Bound?](partialrangefrom/iterator/next.md)
+- [func next() -> Bound?](./iterator/next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 ### Type Aliases
-- [PartialRangeFrom.Iterator.Element](partialrangefrom/iterator/element.md)
+- [PartialRangeFrom.Iterator.Element](./iterator/element.md)
   The type of element traversed by the iterator.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [ConvertibleFromBytes](convertiblefrombytes.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [ConvertibleFromBytes](../convertiblefrombytes.md)
+- [ConvertibleToBytes](../convertibletobytes.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(implementation:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new protocol definition based on your protocol implementation.
 

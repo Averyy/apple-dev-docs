@@ -1,7 +1,8 @@
 # QDPutPicProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias QDPutPicProcPtr = (UnsafeRawPointer?, Int16) -> Void
+```
+
+```c
+typedef void (*QDPutPicProcPtr)(const void *dataPtr, short byteCount);
 ```
 
 

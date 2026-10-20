@@ -1,7 +1,8 @@
 # AVKitError.Code.unknown
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unknown error.
 
@@ -18,15 +19,20 @@ An unknown error.
 case unknown
 ```
 
+```c
+AVKitErrorUnknown
+```
+
 ## See Also
 
-- [AVKitError.Code.contentRatingUnknown](avkiterror-swift.struct/code/contentratingunknown.md)
+### Error codes
+- [AVKitError.Code.contentRatingUnknown](./contentratingunknown.md)
   The media content rating is missing or unrecognized.
-- [AVKitError.Code.contentDisallowedByPasscode](avkiterror-swift.struct/code/contentdisallowedbypasscode.md)
+- [AVKitError.Code.contentDisallowedByPasscode](./contentdisallowedbypasscode.md)
   A restriction disallows access to this content, but the user can override the restriction by entering the device passcode.
-- [AVKitError.Code.pictureInPictureStartFailed](avkiterror-swift.struct/code/pictureinpicturestartfailed.md)
+- [AVKitError.Code.pictureInPictureStartFailed](./pictureinpicturestartfailed.md)
   The system failed to start Picture in Picture.
-- [AVKitError.Code.contentDisallowedByProfile](avkiterror-swift.struct/code/contentdisallowedbyprofile.md)
+- [AVKitError.Code.contentDisallowedByProfile](./contentdisallowedbyprofile.md)
   An installed profile restricts access to this content.
 
 

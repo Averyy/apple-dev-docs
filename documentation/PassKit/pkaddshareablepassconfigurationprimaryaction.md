@@ -1,7 +1,8 @@
 # PKAddShareablePassConfigurationPrimaryAction
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The kind of add action that the system performs with a pass.
 
@@ -9,7 +10,7 @@ The kind of add action that the system performs with a pass.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,31 +19,36 @@ The kind of add action that the system performs with a pass.
 enum PKAddShareablePassConfigurationPrimaryAction
 ```
 
+```c
+enum PKAddShareablePassConfigurationPrimaryAction : NSUInteger;
+```
+
 ## Topics
 
 ### Shareable pass configuration actions
-- [PKAddShareablePassConfigurationPrimaryAction.add](pkaddshareablepassconfigurationprimaryaction/add.md)
+- [PKAddShareablePassConfigurationPrimaryAction.add](./pkaddshareablepassconfigurationprimaryaction/add.md)
   A constant that indicates the system adds a pass to a device.
-- [PKAddShareablePassConfigurationPrimaryAction.share](pkaddshareablepassconfigurationprimaryaction/share.md)
+- [PKAddShareablePassConfigurationPrimaryAction.share](./pkaddshareablepassconfigurationprimaryaction/share.md)
   A constant that indicates the system shares the pass with another user.
 ### Initializers
-- [init?(rawValue: UInt)](pkaddshareablepassconfigurationprimaryaction/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./pkaddshareablepassconfigurationprimaryaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class PKAddShareablePassConfiguration](pkaddshareablepassconfiguration.md)
+### Shareable passes
+- [class PKAddShareablePassConfiguration](./pkaddshareablepassconfiguration.md)
   An object that represents the data and action for a shared copy of pass.
-- [class PKShareablePassMetadata](pkshareablepassmetadata.md)
+- [class PKShareablePassMetadata](./pkshareablepassmetadata.md)
   Information that you use to configure the sharing sheet for a pass.
 
 

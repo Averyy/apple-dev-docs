@@ -1,7 +1,8 @@
 # LowLevelTextureResource
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for texture data in a custom format.
 
@@ -21,42 +22,43 @@ final class LowLevelTextureResource
 
 Use `LowLevelTextureResource` when you want to bring your own texture data to the renderer or update your data frequently. Textures are updated on the GPU by writing to a `MTLTexture` returned by `replace(commandBuffer:)`. The descriptor is analogous to `MTLTextureDescriptor`.
 
-Create a `LowLevelTextureResource` using [`makeTextureResource(descriptor:)`](lowlevelrendercontext/maketextureresource(descriptor:).md).
+Create a `LowLevelTextureResource` using [`makeTextureResource(descriptor:)`](./lowlevelrendercontext/maketextureresource%28descriptor%29.md).
 
 ## Topics
 
 ### Accessing the descriptor
-- [var descriptor: LowLevelTextureResource.Descriptor](lowleveltextureresource/descriptor-swift.property.md)
+- [var descriptor: LowLevelTextureResource.Descriptor](./lowleveltextureresource/descriptor-swift.property.md)
   The descriptor used to create this texture resource.
-- [LowLevelTextureResource.Descriptor](lowleveltextureresource/descriptor-swift.struct.md)
+- [LowLevelTextureResource.Descriptor](./lowleveltextureresource/descriptor-swift.struct.md)
   The configuration for a new low-level texture resource.
 ### Reading and writing texture data
-- [func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture](lowleveltextureresource/read(commandbuffer:).md)
+- [func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture](./lowleveltextureresource/read%28commandbuffer%29.md)
   Returns a Metal texture containing the current contents of the texture resource for GPU read operations.
-- [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture](lowleveltextureresource/replace(commandbuffer:).md)
+- [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture](./lowleveltextureresource/replace%28commandbuffer%29.md)
   Returns a Metal texture you populate on the GPU with the new contents of the texture resource.
 
 ## See Also
 
-- [class LowLevelMeshResource](lowlevelmeshresource.md)
+### GPU resources
+- [class LowLevelMeshResource](./lowlevelmeshresource.md)
   A container for vertex and index data in a custom format.
-- [class LowLevelMeshPart](lowlevelmeshpart.md)
+- [class LowLevelMeshPart](./lowlevelmeshpart.md)
   An object that describes a range of primitives to draw from a mesh resource.
-- [class LowLevelMeshInstance](lowlevelmeshinstance.md)
+- [class LowLevelMeshInstance](./lowlevelmeshinstance.md)
   A single drawable object pairing a mesh part with a compiled pipeline state, optional per-draw argument tables, a transform, and a sort category.
-- [class LowLevelMeshInstanceArray](lowlevelmeshinstancearray.md)
+- [class LowLevelMeshInstanceArray](./lowlevelmeshinstancearray.md)
   A fixed-capacity collection of mesh instances submitted to the renderer.
-- [class LowLevelInstanceTransformResource](lowlevelinstancetransformresource.md)
+- [class LowLevelInstanceTransformResource](./lowlevelinstancetransformresource.md)
   A GPU-managed buffer that stores an array of per-instance transforms for GPU instancing.
-- [class LowLevelBufferResource](lowlevelbufferresource.md)
+- [class LowLevelBufferResource](./lowlevelbufferresource.md)
   A GPU-managed buffer for arbitrary per-draw data such as uniforms and custom parameters.
-- [struct LowLevelBufferSlice](lowlevelbufferslice.md)
+- [struct LowLevelBufferSlice](./lowlevelbufferslice.md)
   A reference to a sub-range of a buffer resource, used to bind a region of a buffer to an argument table slot.
-- [class LowLevelMaterialResource](lowlevelmaterialresource.md)
+- [class LowLevelMaterialResource](./lowlevelmaterialresource.md)
   A compiled material composed of three independently-replaceable shader functions.
-- [class LowLevelDeviceResource](lowleveldeviceresource.md)
+- [class LowLevelDeviceResource](./lowleveldeviceresource.md)
   Encapsulates a GPU device resource created by the application. On visionOS, resources must be allocated in shared memory that can be used by the renderer process. Once a device resource is in use by the renderer, changing its contents is unsafe and undefined.
-- [struct BoundingSphereBox](boundingspherebox.md)
+- [struct BoundingSphereBox](./boundingspherebox.md)
   A combined bounding volume consisting of a bounding sphere and an optional axis-aligned bounding box.
 
 

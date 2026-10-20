@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of notifications published by this publisher.
 
@@ -22,9 +23,10 @@ let name: Notification.Name
 
 ## See Also
 
-- [let center: NotificationCenter](notificationcenter/publisher/center.md)
+### Inspecting Notification Center Properties
+- [let center: NotificationCenter](./center.md)
   The notification center this publisher uses as a source.
-- [let object: AnyObject?](notificationcenter/publisher/object.md)
+- [let object: AnyObject?](./object.md)
   The object posting the named notfication.
 
 

@@ -1,7 +1,8 @@
 # accessibilityLinkedGroup(id:in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Links multiple accessibility elements so that the user can quickly navigate from one element to another, even when the elements are not near each other in the accessibility hierarchy.
 
@@ -34,9 +35,10 @@ When all elements in the linked group are text views (`Text`, `TextEditor`, or `
 
 ## See Also
 
-- [func accessibilityRotorEntry<ID>(id: ID, in: Namespace.ID) -> some View](view/accessibilityrotorentry(id:in:).md)
+### Configuring rotors
+- [func accessibilityRotorEntry<ID>(id: ID, in: Namespace.ID) -> some View](./accessibilityrotorentry%28id,in%29.md)
   Defines an explicit identifier tying an Accessibility element for this view to an entry in an Accessibility Rotor.
-- [func accessibilitySortPriority(Double) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilitysortpriority(_:).md)
+- [func accessibilitySortPriority(Double) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./accessibilitysortpriority%28_%29.md)
   Sets the sort priority order for this view’s accessibility element, relative to other elements at the same level.
 
 

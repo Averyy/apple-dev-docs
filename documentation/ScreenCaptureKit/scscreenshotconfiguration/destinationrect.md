@@ -1,7 +1,8 @@
 # destinationRect
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle that specifies whether to output screenshots in a subset of the output image.
 
@@ -13,6 +14,10 @@ A rectangle that specifies whether to output screenshots in a subset of the outp
 
 ```swift
 var destinationRect: CGRect { get set }
+```
+
+```objc
+@property (nonatomic, assign) CGRect destinationRect;
 ```
 
 #### Discussion

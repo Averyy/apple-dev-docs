@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether or not to show the item in the large content viewer.
@@ -18,9 +19,13 @@ A Boolean value that indicates whether or not to show the item in the large cont
 var showsLargeContentViewer: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL showsLargeContentViewer;
+```
+
 #### Discussion
 
-For this property to take effect, the item or an ancestor view must have a [`UILargeContentViewerInteraction`](uilargecontentviewerinteraction.md).
+For this property to take effect, the item or an ancestor view must have a [`UILargeContentViewerInteraction`](../uilargecontentviewerinteraction.md).
 
 
 ---

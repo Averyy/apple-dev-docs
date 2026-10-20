@@ -1,7 +1,8 @@
 # LowLevelMaterialParameterMapping.Buffer.constants(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A buffer slot containing packed constants.
 
@@ -19,7 +20,8 @@ case constants([LowLevelMaterialParameterMapping.ConstantParameter])
 
 ## See Also
 
-- [case buffer(LowLevelMaterialParameterMapping.BufferParameter)](lowlevelmaterialparametermapping/buffer/buffer(_:).md)
+### Creating a buffer mapping
+- [case buffer(LowLevelMaterialParameterMapping.BufferParameter)](./buffer%28_%29.md)
   A buffer slot containing a single structured buffer.
 
 

@@ -1,7 +1,8 @@
 # environmentTexture
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A cube-map texture that represents the view in all directions from the probe anchor’s position.
 
@@ -15,9 +16,13 @@ A cube-map texture that represents the view in all directions from the probe anc
 var environmentTexture: (any MTLTexture)? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) id<MTLTexture> environmentTexture;
+```
+
 #### Discussion
 
-This texture is in the format [`MTLPixelFormat.bgra8Unorm_srgb`](https://developer.apple.com/documentation/metal/mtlpixelformat/bgra8unorm_srgb).
+This texture is in the format [`MTLPixelFormat.bgra8Unorm_srgb`](../../Metal/mtlpixelformat/bgra8unorm_srgb.md).
 
 
 ---

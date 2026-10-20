@@ -1,7 +1,8 @@
 # DOMError
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMError
 ```
 
 ## Topics
 
 ### Instance Properties
-- [message](domerror/1777812-message.md)
-- [name](domerror/1633459-name.md)
+- [message](./domerror/api-1777812-message.md)
+- [name](./domerror/api-1633459-name.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # start
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 The moment to begin an animation.
 
@@ -16,17 +17,18 @@ uniform double start = 0.0
 
 ## See Also
 
-- [info:id](info-id.md)
+### Properties
+- [info:id](./info-id.md)
   The action’s unique identifier.
-- [affectedObjects](affectedobjects.md)
+- [affectedObjects](./affectedobjects.md)
   A list of prims that respond to the notification.
-- [duration](duration.md)
+- [duration](./duration.md)
   The amount of time that the objects face the camera.
-- [reversed](reversed.md)
+- [reversed](./reversed.md)
   A Boolean value that determines the clip playback direction.
-- [animationSpeed](animationspeed.md)
+- [animationSpeed](./animationspeed.md)
   A factor to apply to the animation speed.
-- [reverses](reverses.md)
+- [reverses](./reverses.md)
   A Boolean value that indicates whether the animation plays from beginning to end, then again from end to beginning.
 
 

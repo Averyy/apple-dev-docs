@@ -1,7 +1,8 @@
 # init(handles:)
 
 **Framework**: PermissionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a permission question that asks parents or guardians for permission to communicate with multiple people.
 
@@ -18,17 +19,20 @@ Creates a permission question that asks parents or guardians for permission to c
 convenience init(handles: [CommunicationHandle])
 ```
 
+Available when `Topic` is `CommunicationTopic`.
+
 ## Parameters
 
 - `handles`: The communication handles for the people the child wants to communicate with, such as phone numbers, email addresses, or custom identifiers.
 
 ## See Also
 
-- [convenience init(handle: CommunicationHandle)](permissionquestion/init(handle:).md)
+### Creating permission requests
+- [convenience init(handle: CommunicationHandle)](./init%28handle%29.md)
   Creates a permission question that asks parents or guardians for permission to communicate with a person.
-- [convenience init(communicationTopic: Topic)](permissionquestion/init(communicationtopic:).md)
+- [convenience init(communicationTopic: Topic)](./init%28communicationtopic%29.md)
   Creates a permission question that asks parents or guardians for communication permission.
-- [convenience init(significantAppUpdateTopic: Topic)](permissionquestion/init(significantappupdatetopic:).md)
+- [convenience init(significantAppUpdateTopic: Topic)](./init%28significantappupdatetopic%29.md)
   Creates a permission question that asks parents or guardians for permission to continue using your app after a significant update.
 
 

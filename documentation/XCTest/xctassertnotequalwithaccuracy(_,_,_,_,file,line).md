@@ -1,9 +1,12 @@
 # XCTAssertNotEqualWithAccuracy(_:_:_:_:file:line:)
 
 **Framework**: XCTest  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Asserts that two values are not equal within a certain accuracy.
+
+> **Deprecated**: Use [`XCTAssertNotEqual(_:_:accuracy:_:file:line:)`](./xctassertnotequal%28_,_,accuracy,_,file,line%29-7jcd6.md) instead.
 
 ## Declaration
 
@@ -13,21 +16,22 @@ func XCTAssertNotEqualWithAccuracy<T>(_ expression1: @autoclosure () throws -> T
 
 #### Discussion
 
-`expression1`, `expression2`, and `accuracy` must all be of the same type `T` that conforms to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint).
+`expression1`, `expression2`, and `accuracy` must all be of the same type `T` that conforms to [`FloatingPoint`](../Swift/floatingpoint.md).
 
 ## Parameters
 
-- `expression1`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint).
-- `expression2`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint).
-- `accuracy`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](https://developer.apple.com/documentation/swift/floatingpoint). Describes the maximum difference between `expression1` and `expression2` for these values to be considered not equal.
+- `expression1`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](../Swift/floatingpoint.md).
+- `expression2`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](../Swift/floatingpoint.md).
+- `accuracy`: An expression of type `T`, where `T` conforms to [`FloatingPoint`](../Swift/floatingpoint.md). Describes the maximum difference between `expression1` and `expression2` for these values to be considered not equal.
 - `message`: An optional description of the failure.
 - `file`: The file in which failure occurred. Defaults to the file name of the test case in which this function was called.
 - `line`: The line number on which failure occurred. Defaults to the line number on which this function was called.
 
 ## See Also
 
-- [func XCTSelfTestMain() -> Int32](xctselftestmain().md)
-- [func XCTAssertEqualWithAccuracy<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, accuracy: T, @autoclosure () -> String, file: StaticString, line: UInt)](xctassertequalwithaccuracy(_:_:accuracy:_:file:line:).md)
+### Deprecated Functions
+- [func XCTSelfTestMain() -> Int32](./xctselftestmain%28%29.md)
+- [func XCTAssertEqualWithAccuracy<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, accuracy: T, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertequalwithaccuracy%28_,_,accuracy,_,file,line%29.md)
   Asserts that two values are equal within a certain accuracy.
 
 

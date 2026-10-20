@@ -1,12 +1,15 @@
 # resourceImage(name:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the image for the given resource
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Returns the image for the given resource
 optional func resourceImage(name resourceName: String) -> UIImage?
 ```
 
+```objc
+- (UIImage *) imageForResource:(NSString *) resourceName;
+```
+
 #### Return Value
 
-The [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) associated with the resource name. Returns `nil` if no image matches the resource name or if the event is not handled.
+The [`UIImage`](../../UIKit/uiimage.md) associated with the resource name. Returns `nil` if no image matches the resource name or if the event is not handled.
 
 #### Discussion
 
@@ -28,7 +35,8 @@ The `resourceName` parameter comes from a resource URL specified in certain elem
 
 ## See Also
 
-- [func resourceURL(name: String) -> URL?](tvinterfacecreating/resourceurl(name:).md)
+### Retrieving Resource Information
+- [func resourceURL(name: String) -> URL?](./resourceurl%28name%29.md)
   Returns a URL for the given resource.
 
 

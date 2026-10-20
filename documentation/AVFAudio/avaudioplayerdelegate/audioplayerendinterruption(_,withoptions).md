@@ -1,22 +1,29 @@
 # audioPlayerEndInterruption(_:withOptions:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the audio session interruption ends with options.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
+- iOS 6.0+ - Deprecated in 8.0
+- iPadOS 6.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 - tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Observe audio session interruption notifications instead. See [Handling audio interruptions](../handling-audio-interruptions.md) for more information.
 
 ## Declaration
 
 ```swift
 optional func audioPlayerEndInterruption(_ player: AVAudioPlayer, withOptions flags: Int)
+```
+
+```objc
+- (void) audioPlayerEndInterruption:(AVAudioPlayer *) player withOptions:(NSUInteger) flags;
 ```
 
 ## Parameters
@@ -26,11 +33,12 @@ optional func audioPlayerEndInterruption(_ player: AVAudioPlayer, withOptions fl
 
 ## See Also
 
-- [func audioPlayerBeginInterruption(AVAudioPlayer)](avaudioplayerdelegate/audioplayerbegininterruption(_:).md)
+### Responding to audio interruptions
+- [func audioPlayerBeginInterruption(AVAudioPlayer)](./audioplayerbegininterruption%28_%29.md)
   Tells the delegate when the system interrupts the audio player’s playback.
-- [func audioPlayerEndInterruption(AVAudioPlayer)](avaudioplayerdelegate/audioplayerendinterruption(_:).md)
+- [func audioPlayerEndInterruption(AVAudioPlayer)](./audioplayerendinterruption%28_%29.md)
   Tells the delegate when the audio session interruption ends.
-- [func audioPlayerEndInterruption(AVAudioPlayer, withFlags: Int)](avaudioplayerdelegate/audioplayerendinterruption(_:withflags:).md)
+- [func audioPlayerEndInterruption(AVAudioPlayer, withFlags: Int)](./audioplayerendinterruption%28_,withflags%29.md)
   Tells the delegate when the audio session interruption ends with flags.
 
 

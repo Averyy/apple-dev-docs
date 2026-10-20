@@ -1,7 +1,8 @@
 # MTLDataType.pointer
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A pointer.
 
@@ -19,11 +20,16 @@ A pointer.
 case pointer
 ```
 
+```c
+MTLDataTypePointer
+```
+
 ## See Also
 
-- [MTLDataType.struct](mtldatatype/struct.md)
+### Collection types
+- [MTLDataType.struct](./struct.md)
   A structure instance.
-- [MTLDataType.array](mtldatatype/array.md)
+- [MTLDataType.array](./array.md)
   An array instance.
 
 

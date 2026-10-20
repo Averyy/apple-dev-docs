@@ -1,7 +1,8 @@
 # denyMultiplayerGaming
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata associated with the setting that prevents users from joining multiplayer games.
 
@@ -18,11 +19,12 @@ static let denyMultiplayerGaming: SettingMetadata<Bool>
 
 #### Discussion
 
-Use `denyMultiplayerGaming` to access the metadata for [`denyMultiplayerGaming`](gamecentersettings/denymultiplayergaming-swift.property.md). The default value is `false`.
+Use `denyMultiplayerGaming` to access the metadata for [`denyMultiplayerGaming`](./denymultiplayergaming-swift.property.md). The default value is `false`.
 
 ## See Also
 
-- [var denyMultiplayerGaming: Bool?](gamecentersettings/denymultiplayergaming-swift.property.md)
+### Denying the ability to join multiplayer games
+- [var denyMultiplayerGaming: Bool?](./denymultiplayergaming-swift.property.md)
   A Boolean value that indicates whether your app prevents the user joining multiplayer games.
 
 

@@ -1,7 +1,8 @@
 # ASImportableCredentialScope
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The scope for where a credential should be usable.
 
@@ -21,26 +22,26 @@ struct ASImportableCredentialScope
 ## Topics
 
 ### Structures
-- [ASImportableCredentialScope.AndroidAppCertificationFingerprint](asimportablecredentialscope/androidappcertificationfingerprint.md)
-- [ASImportableCredentialScope.AndroidAppID](asimportablecredentialscope/androidappid.md)
+- [ASImportableCredentialScope.AndroidAppCertificationFingerprint](./asimportablecredentialscope/androidappcertificationfingerprint.md)
+- [ASImportableCredentialScope.AndroidAppID](./asimportablecredentialscope/androidappid.md)
   An identifier for an Android app.
 ### Initializers
-- [init(urls: [URL], androidApps: [ASImportableCredentialScope.AndroidAppID])](asimportablecredentialscope/init(urls:androidapps:).md)
+- [init(urls: [URL], androidApps: [ASImportableCredentialScope.AndroidAppID])](./asimportablecredentialscope/init%28urls,androidapps%29.md)
 ### Instance Properties
-- [var androidApps: [ASImportableCredentialScope.AndroidAppID]](asimportablecredentialscope/androidapps.md)
+- [var androidApps: [ASImportableCredentialScope.AndroidAppID]](./asimportablecredentialscope/androidapps.md)
   Android apps that are associated with this credential.
-- [var urls: [URL]](asimportablecredentialscope/urls.md)
+- [var urls: [URL]](./asimportablecredentialscope/urls.md)
   URLs where that are associated with this credential.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CMAbsoluteAltitudeData
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Data that records a change in absolute altitude.
 
@@ -18,6 +19,10 @@ Data that records a change in absolute altitude.
 class CMAbsoluteAltitudeData
 ```
 
+```objc
+@interface CMAbsoluteAltitudeData : CMLogItem
+```
+
 #### Overview
 
 Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or SE and later.
@@ -25,33 +30,34 @@ Absolute altitude is only available on iPhone 12 and later and Apple Watch 6 or 
 ## Topics
 
 ### Accessing Altitude Data
-- [var altitude: Double](cmabsolutealtitudedata/altitude.md)
+- [var altitude: Double](./cmabsolutealtitudedata/altitude.md)
   The absolute altitude of the device relative to sea level, measured in meters.
-- [var accuracy: Double](cmabsolutealtitudedata/accuracy.md)
+- [var accuracy: Double](./cmabsolutealtitudedata/accuracy.md)
   The estimated uncertainty of the altimeter in meters, based on one standard deviation.
-- [var precision: Double](cmabsolutealtitudedata/precision.md)
+- [var precision: Double](./cmabsolutealtitudedata/precision.md)
   The recommended resolution for the altitude, in meters.
 
 ## Relationships
 
 ### Inherits From
-- [CMLogItem](cmlogitem.md)
+- [CMLogItem](./cmlogitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CMAltimeter](cmaltimeter.md)
+### Altitude data
+- [class CMAltimeter](./cmaltimeter.md)
   An object that initiates the delivery of altitude-related changes.
-- [class CMAltitudeData](cmaltitudedata.md)
+- [class CMAltitudeData](./cmaltitudedata.md)
   Data for a recorded change in altitude.
 
 

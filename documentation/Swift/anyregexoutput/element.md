@@ -1,7 +1,8 @@
 # AnyRegexOutput.Element
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An individual match output value.
 
@@ -23,15 +24,15 @@ struct Element
 ## Topics
 
 ### Instance Properties
-- [var name: String?](anyregexoutput/element/name.md)
+- [var name: String?](./element/name.md)
   The name of this capture, if the capture is named.
-- [var range: Range<String.Index>?](anyregexoutput/element/range.md)
+- [var range: Range<String.Index>?](./element/range.md)
   The range over which a value was captured, if there was a capture.
-- [var substring: Substring?](anyregexoutput/element/substring.md)
+- [var substring: Substring?](./element/substring.md)
   The slice of the input which was captured, if there was a capture.
-- [var type: any Any.Type](anyregexoutput/element/type.md)
+- [var type: any Any.Type](./element/type.md)
   The type of this capture.
-- [var value: Any?](anyregexoutput/element/value.md)
+- [var value: Any?](./element/value.md)
   The captured value, if there was a capture.
 
 

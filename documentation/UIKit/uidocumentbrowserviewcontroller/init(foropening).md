@@ -1,7 +1,8 @@
 # init(forOpening:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a document browser view controller that can open the specified file types.
 
@@ -17,13 +18,22 @@ Initializes and returns a document browser view controller that can open the spe
 init(forOpening contentTypes: [UTType]?)
 ```
 
+```objc
+- (instancetype) initForOpeningContentTypes:(NSArray<UTType *> *) contentTypes;
+```
+
 ## Parameters
 
-- `contentTypes`: An array of uniform type identifiers. If `nil`, the browser uses the document types that the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes) key specifies in the app’s `Info.plist` file. For detailed instructions about setting the `CFBundleDocumentTypes` key, see [`Setting up a document browser app`](setting-up-a-document-browser-app.md). For more information about type identifiers, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
+- `contentTypes`: An array of uniform type identifiers. If `nil`, the browser uses the document types that the [`CFBundleDocumentTypes`](../../BundleResources/information-property-list/cfbundledocumenttypes.md) key specifies in the app’s `Info.plist` file.
+
+  For detailed instructions about setting the `CFBundleDocumentTypes` key, see [Setting up a document browser app](../setting-up-a-document-browser-app.md).
+
+  For more information about type identifiers, see [Uniform Type Identifiers](../../UniformTypeIdentifiers/UniformTypeIdentifiers.md).
 
 ## See Also
 
-- [Adding a document browser to your app](adding-a-document-browser-to-your-app.md)
+### Creating a document browser
+- [Adding a document browser to your app](../adding-a-document-browser-to-your-app.md)
   Give people access to their local or remote documents from within your app.
 
 

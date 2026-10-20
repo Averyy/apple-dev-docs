@@ -1,7 +1,8 @@
 # willExit(to:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs custom actions when a state machine transitions out of this state.
 
@@ -19,6 +20,10 @@ Performs custom actions when a state machine transitions out of this state.
 func willExit(to nextState: GKState)
 ```
 
+```objc
+- (void) willExitWithNextState:(GKState *) nextState;
+```
+
 #### Discussion
 
 Override this method when the actions you want to perform in response to a state change should be associated with state being exited, or when those actions depend on which state a state machine will enter as a result of the transition.
@@ -33,9 +38,10 @@ Or, in a game where each enemy character has Chase, Flee, Dead, and Respawn stat
 
 ## See Also
 
-- [func didEnter(from: GKState?)](gkstate/didenter(from:).md)
+### Handling State Transitions and Updates
+- [func didEnter(from: GKState?)](./didenter%28from%29.md)
   Performs custom actions when a state machine transitions into this state.
-- [func update(deltaTime: TimeInterval)](gkstate/update(deltatime:).md)
+- [func update(deltaTime: TimeInterval)](./update%28deltatime%29.md)
   Performs custom actions when a state machine updates while in this state.
 
 

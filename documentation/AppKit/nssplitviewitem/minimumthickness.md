@@ -1,7 +1,8 @@
 # minimumThickness
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum thickness of the split view item.
 
@@ -14,21 +15,26 @@ The minimum thickness of the split view item.
 var minimumThickness: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat minimumThickness;
+```
+
 #### Discussion
 
 This value affects the split view item’s width (for a vertical split view) or height (for a horizontal split view).
 
-The default value of this property is [`unspecifiedDimension`](nssplitviewitem/unspecifieddimension.md), which means the split view item doesn’t enforce a minimum size. However, layout constraints in the contained view hierarchy might specify a minimum size regardless.
+The default value of this property is [`unspecifiedDimension`](./unspecifieddimension.md), which means the split view item doesn’t enforce a minimum size. However, layout constraints in the contained view hierarchy might specify a minimum size regardless.
 
 ## See Also
 
-- [var automaticMaximumThickness: CGFloat](nssplitviewitem/automaticmaximumthickness.md)
+### Managing the item thickness
+- [var automaticMaximumThickness: CGFloat](./automaticmaximumthickness.md)
   The maximum thickness of the split view item when it resizes due to automatic sizing.
-- [var preferredThicknessFraction: CGFloat](nssplitviewitem/preferredthicknessfraction.md)
+- [var preferredThicknessFraction: CGFloat](./preferredthicknessfraction.md)
   The preferred thickness of the split view item relative to the split view.
-- [var maximumThickness: CGFloat](nssplitviewitem/maximumthickness.md)
+- [var maximumThickness: CGFloat](./maximumthickness.md)
   The maximum thickness of the split view item.
-- [class let unspecifiedDimension: CGFloat](nssplitviewitem/unspecifieddimension.md)
+- [class let unspecifiedDimension: CGFloat](./unspecifieddimension.md)
   A constant that resets a dimension’s value.
 
 

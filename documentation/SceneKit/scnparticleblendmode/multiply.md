@@ -1,18 +1,19 @@
 # SCNParticleBlendMode.multiply
 
 **Framework**: SceneKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The source color is multiplied by the destination color.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The source color is multiplied by the destination color.
 case multiply
 ```
 
+```c
+SCNParticleBlendModeMultiply
+```
+
 ## See Also
 
-- [SCNParticleBlendMode.additive](scnparticleblendmode/additive.md)
+### Constants
+- [SCNParticleBlendMode.additive](./additive.md)
   The source and destination colors are added together.
-- [SCNParticleBlendMode.subtract](scnparticleblendmode/subtract.md)
+- [SCNParticleBlendMode.subtract](./subtract.md)
   The source color is subtracted from the destination color.
-- [SCNParticleBlendMode.screen](scnparticleblendmode/screen.md)
+- [SCNParticleBlendMode.screen](./screen.md)
   The source color is added to the destination color times the inverted source color.
-- [SCNParticleBlendMode.alpha](scnparticleblendmode/alpha.md)
+- [SCNParticleBlendMode.alpha](./alpha.md)
   The source and destination colors are blended by multiplying the source alpha value.
-- [SCNParticleBlendMode.replace](scnparticleblendmode/replace.md)
+- [SCNParticleBlendMode.replace](./replace.md)
   The source color replaces the destination color.
 
 

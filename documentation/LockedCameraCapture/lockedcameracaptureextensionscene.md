@@ -1,7 +1,8 @@
 # LockedCameraCaptureExtensionScene
 
 **Framework**: LockedCameraCapture  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that provides the UI for the locked camera capture extension.
 
@@ -18,18 +19,19 @@ protocol LockedCameraCaptureExtensionScene : AppExtensionScene
 
 #### Overview
 
-Implement this protocol with the [`LockedCameraCaptureUIScene`](lockedcameracaptureuiscene.md) providing the UI.
+Implement this protocol with the [`LockedCameraCaptureUIScene`](./lockedcameracaptureuiscene.md) providing the UI.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtensionScene](../extensionkit/appextensionscene.md)
+- [AppExtensionScene](../ExtensionKit/appextensionscene.md)
 ### Conforming Types
-- [LockedCameraCaptureUIScene](lockedcameracaptureuiscene.md)
+- [LockedCameraCaptureUIScene](./lockedcameracaptureuiscene.md)
 
 ## See Also
 
-- [protocol LockedCameraCaptureExtension](lockedcameracaptureextension.md)
+### Extension
+- [protocol LockedCameraCaptureExtension](./lockedcameracaptureextension.md)
   A protocol that creates a locked camera capture extension.
 
 

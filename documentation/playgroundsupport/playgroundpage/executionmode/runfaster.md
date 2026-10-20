@@ -1,7 +1,8 @@
 # PlaygroundPage.ExecutionMode.runFaster
 
 **Framework**: Playground Support  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 An execution mode that runs more quickly than usual.
 
@@ -17,9 +18,10 @@ case runFaster
 
 ## See Also
 
-- [PlaygroundPage.ExecutionMode.run](playgroundpage/executionmode/run.md)
+### Controlling Execution Speed
+- [PlaygroundPage.ExecutionMode.run](./run.md)
   An execution mode that runs at the normal speed.
-- [PlaygroundPage.ExecutionMode.runFastest](playgroundpage/executionmode/runfastest.md)
+- [PlaygroundPage.ExecutionMode.runFastest](./runfastest.md)
   An execution mode that runs at the fastest possible speed.
 
 

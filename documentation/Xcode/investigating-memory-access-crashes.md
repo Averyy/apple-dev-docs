@@ -1,6 +1,7 @@
 # Investigating memory access crashes
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Identify crashes that arise from memory access issues, and investigate the cause of the crash.
 
@@ -22,7 +23,7 @@ Exception Codes: SEGV_MAPERR at 0x41e0af0c5ab8
 
 Xcode provides several tools that can help identify the source of a memory access issue. Further analysis of each section in the crash report may provide further insight and clues to help you diagnose the problem.
 
-##### Investigate the Crash with Xcode
+##### Investigate the crash with Xcode
 
 Once you’ve identified that a crash report is for a memory access issue through the exception type, use Xcode to continue your investigation. Xcode contains a suite of debugging tools you can use to identify memory access issues as your app runs. These tools are most effective when your tests execute as many code branches in the app as possible:
 
@@ -30,15 +31,15 @@ Once you’ve identified that a crash report is for a memory access issue throug
 - Undefined Behavior Sanitizer
 - Thread Sanitizer
 
-For more information about these tools, see [`Diagnosing memory, thread, and crash issues early`](diagnosing-memory-thread-and-crash-issues-early.md).
+For more information about these tools, see [Diagnosing memory, thread, and crash issues early](./diagnosing-memory-thread-and-crash-issues-early.md).
 
-If your app contains code in Objective-C, C, or C++, run the static analyzer, and fix all issues it discovers. The static analyzer analyzes your app’s code at build time, and identifies common programming mistakes, including some types of memory management issues. See [`Analyze your code for potential flaws`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devb7babe820).
+If your app contains code in Objective-C, C, or C++, run the static analyzer, and fix all issues it discovers. The static analyzer analyzes your app’s code at build time, and identifies common programming mistakes, including some types of memory management issues. See [Analyze your code for potential flaws](https://help.apple.com/xcode/mac/current/#/devb7babe820).
 
-Beyond the exception type in the crash report, other sections of the crash report may contain additional clues that suggest applying additional debugging tools. For example, if a zombie object caused the crash, telltale signs are in the crash report. See [`Check the crashed thread’s backtrace for clues about the source of the memory access issue`](investigating-memory-access-crashes#Check-the-crashed-threads-backtrace-for-clues-about-the-source-of-the-memory-access-issue.md) for information on the specific clues.
+Beyond the exception type in the crash report, other sections of the crash report may contain additional clues that suggest applying additional debugging tools. For example, if a zombie object caused the crash, telltale signs are in the crash report. See [Check the crashed thread’s backtrace for clues about the source of the memory access issue](./investigating-memory-access-crashes.md#Check-the-crashed-threads-backtrace-for-clues-about-the-source-of-the-memory-access-issue) for information on the specific clues.
 
-For difficult to diagnose memory access crashes, the malloc debugging features, such as Guard Malloc, can help. See [`Enabling the Malloc Debugging Features`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/ManagingMemory/Articles/MallocDebug.html#//apple_ref/doc/uid/20001884) for information about these tools. You enable these tools through the Xcode scheme editor, as described by [`Run your app with sanitizers, API checks, and memory management diagnostics`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/devcef23c572).
+For difficult to diagnose memory access crashes, the malloc debugging features, such as Guard Malloc, can help. See [Enabling the Malloc Debugging Features](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/ManagingMemory/Articles/MallocDebug.html#//apple_ref/doc/uid/20001884) for information about these tools. You enable these tools through the Xcode scheme editor, as described by [Run your app with sanitizers, API checks, and memory management diagnostics](https://help.apple.com/xcode/mac/current/#/devcef23c572).
 
-##### Examine the Exception Subtype to Determine Why Access Was Invalid
+##### Examine the exception subtype to determine why access was invalid
 
 The `Exception Subtype` field in the crash report contains a `kern_return_t` value describing the error and the address of the memory that was incorrectly accessed, such as:
 
@@ -56,8 +57,8 @@ Exception Codes:       KERN_MEMORY_ERROR at 0x00000001098c1000
 
 There are several exception subtypes:
 
-- `KERN_INVALID_ADDRESS`. The crashed thread accessed unmapped memory, either by accessing data or an instruction fetch. [`Identify the type of memory access that caused the issue`](investigating-memory-access-crashes#Identify-the-type-of-memory-access-that-caused-the-issue.md) describes how to tell the difference.
-- `KERN_PROTECTION_FAILURE`. The crashed thread tried to use a valid memory address that’s protected. Some types of protected memory include read-only memory regions, or nonexecutable memory regions. See [`Use VM Region Info to locate the memory in your app’s address space`](investigating-memory-access-crashes#Use-VM-Region-Info-to-locate-the-memory-in-your-apps-address-space.md) for how to distinguish the type of protected memory.
+- `KERN_INVALID_ADDRESS`. The crashed thread accessed unmapped memory, either by accessing data or an instruction fetch. [Identify the type of memory access that caused the issue](./investigating-memory-access-crashes.md#Identify-the-type-of-memory-access-that-caused-the-issue) describes how to tell the difference.
+- `KERN_PROTECTION_FAILURE`. The crashed thread tried to use a valid memory address that’s protected. Some types of protected memory include read-only memory regions, or nonexecutable memory regions. See [Use VM Region Info to locate the memory in your app’s address space](./investigating-memory-access-crashes.md#Use-VM-Region-Info-to-locate-the-memory-in-your-apps-address-space) for how to distinguish the type of protected memory.
 - `KERN_MEMORY_ERROR`. The crashed thread tried to access memory that couldn’t return data at that moment, such as a memory-mapped file that became unavailable.
 - `EXC_ARM_DA_ALIGN`. The crashed thread tried to access memory that isn’t appropriately aligned. This exception code is rare because 64-bit ARM CPUs work with misaligned data. However, you may see this exception subtype if the memory address is both misaligned and located in an unmapped memory region. You may have other crash reports that show a memory access issue with a different exception subtype, which are likely caused by the same underlying memory access issue.
 
@@ -70,9 +71,9 @@ Exception Subtype: KERN_INVALID_ADDRESS at 0x00006f126c1a9aa0 -> 0x000000126c1a9
 
 An invalid memory access, where high-order bits are erroneously set, can look like a pointer authentication failure, even if the cause is due to a memory corruption problem in the app.
 
-See [`Preparing your app to work with pointer authentication`](https://developer.apple.com/documentation/security/preparing-your-app-to-work-with-pointer-authentication) for more information about pointer authentication.
+See [Preparing your app to work with pointer authentication](../Security/preparing-your-app-to-work-with-pointer-authentication.md) for more information about pointer authentication.
 
-##### Use Vm Region Info to Locate the Memory in Your Apps Address Space
+##### Use VM Region Info to locate the memory in your app’s address space
 
 The `VM Region Info` field of the crash report shows the location of the specific memory that your app incorrectly accessed in relation to other sections of the app’s address space. Consider this example:
 
@@ -104,18 +105,18 @@ In this example, the dereferenced memory address is `0x000000016c070a30`, with t
 
 Because the stack guard region has no permissions, all memory accesses to this region are invalid, and the crash report is identifying this memory access as a violation of the memory protection attributes. The stack guard is just one example of protected memory—there are others types of protected memory regions, with different combinations of the protection attributes.
 
-See [`Interpreting vmmap’s Output`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/ManagingMemory/Articles/VMPages.html#//apple_ref/doc/uid/20001985-97652) for more information on the `VM Region Info` field.
+See [Interpreting vmmap’s Output](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/ManagingMemory/Articles/VMPages.html#//apple_ref/doc/uid/20001985-97652) for more information on the `VM Region Info` field.
 
-##### Check the Crashed Threads Backtrace for Clues About the Source of the Memory Access Issue
+##### Check the crashed thread’s backtrace for clues about the source of the memory access issue
 
 Consult the crashed thread’s backtrace for clues on where the memory access issue is occurring. Some types of memory access issues, such as dereferencing a `NULL` pointer, are easy to identify when looking at the backtrace and comparing it to the source code. Other memory access issues are identified by the stack frame at the top of the crashed thread’s backtrace:
 
-- If [`objc_msgSend`](https://developer.apple.com/documentation/objectivec/objc_msgsend), `objc_retain`, or `objc_release` is at the top of the backtrace, the crash is due to a zombie object. See [`Investigating crashes for zombie objects`](investigating-crashes-for-zombie-objects.md).
-- If `gpus_ReturnNotPermittedKillClient` is at the top of the backtrace, the operating system terminated the process because it attempted to do rendering with OpenGL ES while in the background. To resolve a crash with this symbol in the backtrace, migrate your OpenGL ES code to Metal. See [`Migrating OpenGL code to Metal`](https://developer.apple.com/documentation/metal/migrating-opengl-code-to-metal).
+- If [`objc_msgSend`](../ObjectiveC/objc_msgsend.md), `objc_retain`, or `objc_release` is at the top of the backtrace, the crash is due to a zombie object. See [Investigating crashes for zombie objects](./investigating-crashes-for-zombie-objects.md).
+- If `gpus_ReturnNotPermittedKillClient` is at the top of the backtrace, the operating system terminated the process because it attempted to do rendering with OpenGL ES while in the background. To resolve a crash with this symbol in the backtrace, migrate your OpenGL ES code to Metal. See [Migrating OpenGL code to Metal](../Metal/migrating-opengl-code-to-metal.md).
 
-In other cases, the cause of a memory access issue isn’t present in the backtrace. *Memory corruption* occurs when a memory location is unexpectedly modified. After this modification, another part of your app may crash when it tries to use that memory location. The backtrace shows the code accessing the modified memory, but not the code that unexpectedly modified the memory. The unexpected modification may have occurred a long time before the crash, so the source of the issue isn’t visible in the backtrace. If you have numerous crash reports with signs of a memory access issue, but with different backtraces, you may have a memory corruption issue. The information in [`Investigate the crash with Xcode`](investigating-memory-access-crashes#Investigate-the-crash-with-Xcode.md) can help identify the source of the memory corruption.
+In other cases, the cause of a memory access issue isn’t present in the backtrace. *Memory corruption* occurs when a memory location is unexpectedly modified. After this modification, another part of your app may crash when it tries to use that memory location. The backtrace shows the code accessing the modified memory, but not the code that unexpectedly modified the memory. The unexpected modification may have occurred a long time before the crash, so the source of the issue isn’t visible in the backtrace. If you have numerous crash reports with signs of a memory access issue, but with different backtraces, you may have a memory corruption issue. The information in [Investigate the crash with Xcode](./investigating-memory-access-crashes.md#Investigate-the-crash-with-Xcode) can help identify the source of the memory corruption.
 
-##### Identify the Type of Memory Access That Caused the Issue
+##### Identify the type of memory access that caused the issue
 
 There are two categories of memory access issues: invalid memory fetches and invalid instruction fetches. An *invalid memory fetch* occurs when code dereferences an invalid pointer. An *invalid instruction fetch* occurs when a function jumps to another function through a bad function pointer, or through a function call to an unexpected object. To determine which type of memory access issue caused a crash, focus on the *program counter*, a register that contains the address of the instruction that caused the memory access exception. On ARM CPU architectures, this is the `pc` register. On the `x86_64` CPU architecture, this is the `rip` register.
 
@@ -175,13 +176,15 @@ The link register contains `0x00000001021063c4`, which is an instruction address
 -[ViewController loadData] (in MyCoolApp) (ViewController.m:38)
 ```
 
-[`Symbolicate the crash report using a command-line tool`](adding-identifiable-symbol-names-to-a-crash-report#Symbolicate-the-crash-report-using-a-command-line-tool.md) discusses how to use the `atos` command line tool in more detail.
+[Symbolicate the crash report using a command-line tool](./adding-identifiable-symbol-names-to-a-crash-report.md#Symbolicate-the-crash-report-using-a-command-line-tool) discusses how to use the `atos` command line tool in more detail.
 
 ## See Also
 
-- [Analyzing a crash report](analyzing-a-crash-report.md)
+### Related Documentation
+- [Analyzing a crash report](./analyzing-a-crash-report.md)
   Identify clues in a crash report that help you diagnose problems.
-- [Investigating crashes for zombie objects](investigating-crashes-for-zombie-objects.md)
+### Memory access errors
+- [Investigating crashes for zombie objects](./investigating-crashes-for-zombie-objects.md)
   Identify the signature of a zombie and investigate the cause of the crash.
 
 

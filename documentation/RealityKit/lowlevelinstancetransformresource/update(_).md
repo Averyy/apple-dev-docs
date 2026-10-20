@@ -1,7 +1,8 @@
 # update(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the transform data in place synchronously on the CPU.
 
@@ -21,7 +22,7 @@ final func update<R, E>(_ body: @_lifetime(0: copy 0) (inout MutableSpan<float4x
 
 You pass a closure that receives a mutable span representing the transform data, which the closure may modify. This span is valid only for the duration of the closure.
 
-> **Note**: Any error thrown by `body`.
+> **Throws**: Any error thrown by `body`.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # SetIsHidden
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a Boolean value to indicate whether the device is hidden.
 
@@ -10,13 +11,13 @@ Sets a Boolean value to indicate whether the device is hidden.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetIsHidden(bool in_is_hidden);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -28,13 +29,14 @@ A true value indicates the device isn’t included in the normal list of devices
 
 ## See Also
 
-- [GetDeviceIsRunning](iouseraudioclockdevice/getdeviceisrunning.md)
+### Working with Clock Device State
+- [GetDeviceIsRunning](./getdeviceisrunning.md)
   Gets a Boolean value that indicates whether the device is running.
-- [SetDeviceIsAlive](iouseraudioclockdevice/setdeviceisalive.md)
+- [SetDeviceIsAlive](./setdeviceisalive.md)
   Sets a Boolean value to represent whether the device is alive.
-- [GetDeviceIsAlive](iouseraudioclockdevice/getdeviceisalive.md)
+- [GetDeviceIsAlive](./getdeviceisalive.md)
   Gets a Boolean value that represents whether the device is alive.
-- [GetIsHidden](iouseraudioclockdevice/getishidden.md)
+- [GetIsHidden](./getishidden.md)
   Gets a Boolean value that indicates whether the device is hidden.
 
 

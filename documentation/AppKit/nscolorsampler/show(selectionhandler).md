@@ -1,7 +1,8 @@
 # show(selectionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the system color-sampling interface asynchronously and reports the selected color back to your app.
 
@@ -11,7 +12,15 @@ Displays the system color-sampling interface asynchronously and reports the sele
 ## Declaration
 
 ```swift
+func show(selectionHandler: @escaping @Sendable (NSColor?) -> Void)
+```
+
+```swift
 func sample() async -> NSColor?
+```
+
+```objc
+- (void) showSamplerWithSelectionHandler:(void (^)(NSColor *selectedColor)) selectionHandler;
 ```
 
 #### Discussion
@@ -20,7 +29,9 @@ This method displays the color-sampling interface and returns immediately. The c
 
 ## Parameters
 
-- `selectionHandler`: The handler block for processing the user-selected color. AppKit calls this block on your app’s main thread. This block has no return value and takes the following parameter: - **selectedColor**: The selected color.
+- `selectionHandler`: The handler block for processing the user-selected color. AppKit calls this block on your app’s main thread. This block has no return value and takes the following parameter:
+
+  - **selectedColor**: The selected color.
 
 
 ---

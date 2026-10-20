@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared Live Caller ID Lookup manager instance for the app.
 

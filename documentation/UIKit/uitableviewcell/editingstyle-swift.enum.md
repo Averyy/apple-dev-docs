@@ -1,16 +1,17 @@
 # UITableViewCell.EditingStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The editing control used by a cell.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,43 +19,48 @@ The editing control used by a cell.
 enum EditingStyle
 ```
 
+```c
+enum UITableViewCellEditingStyle : NSInteger;
+```
+
 #### Overview
 
-Use these constants with the [`editingStyle`](uitableviewcell/editingstyle-swift.property.md) property.
+Use these constants with the [`editingStyle`](./editingstyle-swift.property.md) property.
 
 ## Topics
 
 ### Constants
-- [UITableViewCell.EditingStyle.none](uitableviewcell/editingstyle-swift.enum/none.md)
+- [UITableViewCell.EditingStyle.none](./editingstyle-swift.enum/none.md)
   The cell has no editing control.
-- [UITableViewCell.EditingStyle.delete](uitableviewcell/editingstyle-swift.enum/delete.md)
+- [UITableViewCell.EditingStyle.delete](./editingstyle-swift.enum/delete.md)
   The cell has the delete editing control; this control is a red circle enclosing a minus sign.
-- [UITableViewCell.EditingStyle.insert](uitableviewcell/editingstyle-swift.enum/insert.md)
+- [UITableViewCell.EditingStyle.insert](./editingstyle-swift.enum/insert.md)
   The cell has the insert editing control; this control is a green circle enclosing a plus sign.
 ### Initializers
-- [init?(rawValue: Int)](uitableviewcell/editingstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./editingstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isEditing: Bool](uitableviewcell/isediting.md)
+### Editing the cell
+- [var isEditing: Bool](./isediting.md)
   A Boolean value that indicates whether the cell is in an editable state.
-- [func setEditing(Bool, animated: Bool)](uitableviewcell/setediting(_:animated:).md)
+- [func setEditing(Bool, animated: Bool)](./setediting%28_,animated%29.md)
   Toggles the cell into and out of editing mode.
-- [var editingStyle: UITableViewCell.EditingStyle](uitableviewcell/editingstyle-swift.property.md)
+- [var editingStyle: UITableViewCell.EditingStyle](./editingstyle-swift.property.md)
   The editing style of the cell.
-- [var showingDeleteConfirmation: Bool](uitableviewcell/showingdeleteconfirmation.md)
+- [var showingDeleteConfirmation: Bool](./showingdeleteconfirmation.md)
   A Boolean value that indicates whether the cell is currently showing the delete-confirmation button.
-- [var showsReorderControl: Bool](uitableviewcell/showsreordercontrol.md)
+- [var showsReorderControl: Bool](./showsreordercontrol.md)
   A Boolean value that determines whether the cell shows the reordering control.
 
 

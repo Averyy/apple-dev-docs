@@ -1,7 +1,8 @@
 # close()
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes the engagement session.
 
@@ -18,7 +19,7 @@ final func close() async throws
 
 ## Mentions
 
-- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+- [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
 #### Discussion
 
@@ -26,13 +27,14 @@ When this device disconnects, any paired device that is still connected receives
 
 ## See Also
 
-- [CustomerEngagementSession.Configuration](customerengagementsession/configuration-swift.struct.md)
+### Configuring a session
+- [CustomerEngagementSession.Configuration](./configuration-swift.struct.md)
   A set of configuration options for a customer engagement session.
-- [let configuration: CustomerEngagementSession.Configuration](customerengagementsession/configuration-swift.property.md)
+- [let configuration: CustomerEngagementSession.Configuration](./configuration-swift.property.md)
   Configuration for this session.
-- [func open(using: CustomerEngagement.Token?) async throws](customerengagementsession/open(using:).md)
+- [func open(using: CustomerEngagement.Token?) async throws](./open%28using%29.md)
   Opens the engagement session.
-- [CustomerEngagementSession.Token](customerengagementsession/token-swift.struct.md)
+- [CustomerEngagementSession.Token](./token-swift.struct.md)
   A session token.
 
 

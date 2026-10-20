@@ -1,7 +1,8 @@
 # captureDevice
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capture device generating the video.
 
@@ -19,13 +20,14 @@ let captureDevice: AVCaptureDevice.DeviceType
 
 ## See Also
 
-- [let cameraPosition: AVCaptureDevice.Position](dockaccessory/camerainformation/cameraposition.md)
+### Getting camera information
+- [let cameraPosition: AVCaptureDevice.Position](./cameraposition.md)
   The physical position of the capture device.
-- [let cameraIntrinsics: matrix_float3x3?](dockaccessory/camerainformation/cameraintrinsics.md)
+- [let cameraIntrinsics: matrix_float3x3?](./cameraintrinsics.md)
   A matrix that represents the characteristics of the lens.
-- [let orientation: DockAccessory.CameraOrientation](dockaccessory/camerainformation/orientation.md)
+- [let orientation: DockAccessory.CameraOrientation](./orientation.md)
   The orientation of the capture device.
-- [let referenceDimensions: CGSize?](dockaccessory/camerainformation/referencedimensions.md)
+- [let referenceDimensions: CGSize?](./referencedimensions.md)
   The size of the video frame.
 
 

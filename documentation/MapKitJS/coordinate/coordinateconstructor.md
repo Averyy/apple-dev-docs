@@ -1,7 +1,8 @@
 # new Coordinate(latitude, longitude)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a coordinate object with the specified latitude and longitude.
 
@@ -10,7 +11,7 @@ Creates a coordinate object with the specified latitude and longitude.
 
 ## Declaration
 
-```swift
+```
 constructor(latitude?: number, longitude?: number);
 ```
 
@@ -30,7 +31,8 @@ coordinate.equals(otherCoordinate) // Returns true if otherCoordinate is at the 
 
 ## See Also
 
-- [interface CoordinateData](coordinatedata.md)
+### Creating a coordinate
+- [interface CoordinateData](../coordinatedata.md)
   A plain object representation of a coordinate.
 
 

@@ -1,7 +1,8 @@
 # display()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Redraws the dock tile’s content.
 
@@ -12,6 +13,10 @@ Redraws the dock tile’s content.
 
 ```swift
 func display()
+```
+
+```objc
+- (void) display;
 ```
 
 #### Discussion

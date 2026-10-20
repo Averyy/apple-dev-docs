@@ -1,7 +1,8 @@
 # FeatureSet.Feature.shapeFills
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Supports shapes with fills.
 
@@ -24,11 +25,12 @@ If you disable strokes, shapes can always have fills.
 
 ## See Also
 
-- [FeatureSet.Feature.shapeStrokes](featureset/feature/shapestrokes.md)
+### Describing shape features
+- [FeatureSet.Feature.shapeStrokes](./shapestrokes.md)
   Supports shapes with strokes.
-- [FeatureSet.Feature.shapeOpacity](featureset/feature/shapeopacity.md)
+- [FeatureSet.Feature.shapeOpacity](./shapeopacity.md)
   Supports shapes with opacity.
-- [FeatureSet.Feature.text](featureset/feature/text.md)
+- [FeatureSet.Feature.text](./text.md)
   Supports shapes with text.
 
 

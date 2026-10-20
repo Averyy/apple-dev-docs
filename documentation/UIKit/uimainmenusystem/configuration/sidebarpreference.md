@@ -1,7 +1,8 @@
 # sidebarPreference
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies a preference for sidebar elements in the main menu.
 
@@ -16,6 +17,10 @@ Specifies a preference for sidebar elements in the main menu.
 
 ```swift
 var sidebarPreference: UIMenuSystem.ElementGroupPreference { get set }
+```
+
+```objc
+@property (nonatomic, assign) UIMenuSystemElementGroupPreference sidebarPreference;
 ```
 
 

@@ -1,7 +1,8 @@
 # ErrorCodePairingTokenMissing.Details
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that contains additional data about the token-missing error code.
 
@@ -10,7 +11,7 @@ A dictionary that contains additional data about the token-missing error code.
 
 ## Declaration
 
-```swift
+```
 object ErrorCodePairingTokenMissing.Details
 ```
 

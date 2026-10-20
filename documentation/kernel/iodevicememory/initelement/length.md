@@ -7,9 +7,10 @@ Length of the range.
 
 ## See Also
 
-- [start](iodevicememory/initelement/start.md)
+### Fields
+- [start](./start.md)
   First physical address in the range.
-- [tag](iodevicememory/initelement/tag.md)
+- [tag](./tag.md)
   32-bit value not interpreted by IODeviceMemory or IOMemoryDescriptor, for use by the bus family.
 
 

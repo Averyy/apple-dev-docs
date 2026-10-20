@@ -1,7 +1,8 @@
 # supportedViewingModes(for:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The viewing modes supported by the provided image source.
 
@@ -12,6 +13,12 @@ The viewing modes supported by the provided image source.
 
 ```swift
 static func supportedViewingModes(for imageSource: CGImageSource) -> Set<ImagePresentationComponent.ViewingMode>
+```
+
+**Other overloads**:
+
+```swift
+static func supportedViewingModes(for spatial3DImage: ImagePresentationComponent.Spatial3DImage) -> Set<ImagePresentationComponent.ViewingMode>
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # UISearchSuggestionItem
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A selectable search parameter.
 
@@ -19,58 +20,63 @@ A selectable search parameter.
 class UISearchSuggestionItem
 ```
 
+```objc
+@interface UISearchSuggestionItem : NSObject
+```
+
 #### Overview
 
-This class provides a basic implementation of the [`UISearchSuggestion`](uisearchsuggestion.md) protocol.
+This class provides a basic implementation of the [`UISearchSuggestion`](./uisearchsuggestion.md) protocol.
 
 ## Topics
 
 ### Creating a search suggestion
-- [init(localizedSuggestion: String, localizedDescription: String?, iconImage: UIImage?)](uisearchsuggestionitem/init(localizedsuggestion:localizeddescription:iconimage:).md)
+- [init(localizedSuggestion: String, localizedDescription: String?, iconImage: UIImage?)](./uisearchsuggestionitem/init%28localizedsuggestion,localizeddescription,iconimage%29.md)
   Creates a search suggestion with the specified text and image attributes.
-- [init(localizedAttributedSuggestion: NSAttributedString, localizedDescription: String?, iconImage: UIImage?)](uisearchsuggestionitem/init(localizedattributedsuggestion:localizeddescription:iconimage:).md)
+- [init(localizedAttributedSuggestion: NSAttributedString, localizedDescription: String?, iconImage: UIImage?)](./uisearchsuggestionitem/init%28localizedattributedsuggestion,localizeddescription,iconimage%29.md)
   Creates a search suggestion with the specified attributed label, accessibility description, and image.
-- [init(localizedSuggestion: String, localizedDescription: String?)](uisearchsuggestionitem/init(localizedsuggestion:localizeddescription:).md)
+- [init(localizedSuggestion: String, localizedDescription: String?)](./uisearchsuggestionitem/init%28localizedsuggestion,localizeddescription%29.md)
   Creates a search suggestion with the specified label and accessibility description.
-- [init(localizedAttributedSuggestion: NSAttributedString, localizedDescription: String?)](uisearchsuggestionitem/init(localizedattributedsuggestion:localizeddescription:).md)
+- [init(localizedAttributedSuggestion: NSAttributedString, localizedDescription: String?)](./uisearchsuggestionitem/init%28localizedattributedsuggestion,localizeddescription%29.md)
   Creates a search suggestion with the specified attributed label and accessibility description.
-- [init(localizedSuggestion: String)](uisearchsuggestionitem/init(localizedsuggestion:).md)
+- [init(localizedSuggestion: String)](./uisearchsuggestionitem/init%28localizedsuggestion%29.md)
   Creates a search suggestion with the specified label.
-- [init(localizedAttributedSuggestion: NSAttributedString)](uisearchsuggestionitem/init(localizedattributedsuggestion:).md)
+- [init(localizedAttributedSuggestion: NSAttributedString)](./uisearchsuggestionitem/init%28localizedattributedsuggestion%29.md)
   Creates a search suggestion with the specified attributed label.
 ### Describing a search suggestion
-- [var localizedSuggestion: String?](uisearchsuggestionitem/localizedsuggestion.md)
+- [var localizedSuggestion: String?](./uisearchsuggestionitem/localizedsuggestion.md)
   A label for the suggestion, usually the search term the suggestion represents.
-- [var localizedAttributedSuggestion: NSAttributedString?](uisearchsuggestionitem/localizedattributedsuggestion.md)
+- [var localizedAttributedSuggestion: NSAttributedString?](./uisearchsuggestionitem/localizedattributedsuggestion.md)
   An attributed label for the suggestion, usually the search term the suggestion represents.
-- [var localizedDescription: String?](uisearchsuggestionitem/localizeddescription.md)
+- [var localizedDescription: String?](./uisearchsuggestionitem/localizeddescription.md)
   A description of the suggestion.
-- [var iconImage: UIImage?](uisearchsuggestionitem/iconimage.md)
+- [var iconImage: UIImage?](./uisearchsuggestionitem/iconimage.md)
   An image for display on the suggestion.
-- [var representedObject: Any?](uisearchsuggestionitem/representedobject.md)
+- [var representedObject: Any?](./uisearchsuggestionitem/representedobject.md)
   An object for tracking supplementary information about the search suggestion.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UISearchSuggestion](uisearchsuggestion.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UISearchSuggestion](./uisearchsuggestion.md)
 
 ## See Also
 
-- [var searchSuggestions: [any UISearchSuggestion]?](uisearchcontroller/searchsuggestions.md)
+### Providing search suggestions
+- [var searchSuggestions: [any UISearchSuggestion]?](./uisearchcontroller/searchsuggestions.md)
   A list of suggestions to offer as shortcuts below the search field.
-- [var ignoresSearchSuggestionsForSearchBarPlacementStacked: Bool](uisearchcontroller/ignoressearchsuggestionsforsearchbarplacementstacked.md)
+- [var ignoresSearchSuggestionsForSearchBarPlacementStacked: Bool](./uisearchcontroller/ignoressearchsuggestionsforsearchbarplacementstacked.md)
   A Boolean value you use to specify whether the search controller prevents search suggestions from displaying for a stacked search bar.
-- [protocol UISearchSuggestion](uisearchsuggestion.md)
+- [protocol UISearchSuggestion](./uisearchsuggestion.md)
   A set of attributes that a selectable search suggestion must provide.
 
 

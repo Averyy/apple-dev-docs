@@ -1,7 +1,8 @@
 # NSBatchDeleteRequestResultType
 
 **Framework**: Core Data  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of result a batch delete request can provide when it executes.
 
@@ -20,31 +21,36 @@ The types of result a batch delete request can provide when it executes.
 enum NSBatchDeleteRequestResultType
 ```
 
+```c
+enum NSBatchDeleteRequestResultType : NSUInteger;
+```
+
 ## Topics
 
 ### Result Types
-- [NSBatchDeleteRequestResultType.resultTypeCount](nsbatchdeleterequestresulttype/resulttypecount.md)
+- [NSBatchDeleteRequestResultType.resultTypeCount](./nsbatchdeleterequestresulttype/resulttypecount.md)
   Returns the number of managed objects the request deletes.
-- [NSBatchDeleteRequestResultType.resultTypeObjectIDs](nsbatchdeleterequestresulttype/resulttypeobjectids.md)
+- [NSBatchDeleteRequestResultType.resultTypeObjectIDs](./nsbatchdeleterequestresulttype/resulttypeobjectids.md)
   Returns an array of the deleted managed objects’ identifiers.
-- [NSBatchDeleteRequestResultType.resultTypeStatusOnly](nsbatchdeleterequestresulttype/resulttypestatusonly.md)
+- [NSBatchDeleteRequestResultType.resultTypeStatusOnly](./nsbatchdeleterequestresulttype/resulttypestatusonly.md)
   Returns a Boolean value that indicates if the request succeeds.
 ### Initializers
-- [init?(rawValue: UInt)](nsbatchdeleterequestresulttype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nsbatchdeleterequestresulttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var resultType: NSBatchDeleteRequestResultType](nsbatchdeleterequest/resulttype.md)
+### Configuring the Result Type
+- [var resultType: NSBatchDeleteRequestResultType](./nsbatchdeleterequest/resulttype.md)
   The type of result the request provides when it executes.
 
 

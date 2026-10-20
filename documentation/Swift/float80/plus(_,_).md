@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Adds two values and produces their sum, rounded to a representable value.
 
@@ -24,7 +25,7 @@ let y = x + 2.25
 // y == 3.75
 ```
 
-The `+` operator implements the addition operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `+` operator implements the addition operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 

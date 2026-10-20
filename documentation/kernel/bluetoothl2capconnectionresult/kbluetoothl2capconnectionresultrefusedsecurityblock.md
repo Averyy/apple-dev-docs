@@ -1,14 +1,15 @@
 # kBluetoothL2CAPConnectionResultRefusedSecurityBlock
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPConnectionResultRefusedSecurityBlock = 0x0003
 ```
 

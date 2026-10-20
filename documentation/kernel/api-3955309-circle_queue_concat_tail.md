@@ -1,14 +1,15 @@
 # circle_queue_concat_tail
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 bool circle_queue_concat_tail(circle_queue_t dq, circle_queue_t sq);
 ```
 

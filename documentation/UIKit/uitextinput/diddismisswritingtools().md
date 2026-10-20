@@ -1,7 +1,8 @@
 # didDismissWritingTools()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,9 +16,13 @@
 optional func didDismissWritingTools()
 ```
 
+```objc
+- (void) didDismissWritingTools;
+```
+
 ## Mentions
 
-- [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
+- [Customizing Writing Tools behavior for UIKit views](../customizing-writing-tools-behavior-for-system-views.md)
 
 
 ---

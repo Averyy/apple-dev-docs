@@ -1,7 +1,8 @@
 # connectionPoint
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying mixer connection point.
 
@@ -18,6 +19,10 @@ The underlying mixer connection point.
 
 ```swift
 var connectionPoint: AVAudioConnectionPoint { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVAudioConnectionPoint * connectionPoint;
 ```
 
 

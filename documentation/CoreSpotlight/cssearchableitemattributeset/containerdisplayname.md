@@ -1,7 +1,8 @@
 # containerDisplayName
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string that specifies the name of a container to which the item belongs, suitable to display in the user interface.
 
@@ -18,17 +19,22 @@ A localized string that specifies the name of a container to which the item belo
 var containerDisplayName: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * containerDisplayName;
+```
+
 #### Discussion
 
 For example, a container display name might be the title of a series of books. When you specify the containment properties, Spotlight can treat individual items as part of an ordered set.
 
 ## See Also
 
-- [var containerIdentifier: String?](cssearchableitemattributeset/containeridentifier.md)
+### Describing containment
+- [var containerIdentifier: String?](./containeridentifier.md)
   The identifier of the container to which the item belongs.
-- [var containerOrder: NSNumber?](cssearchableitemattributeset/containerorder.md)
+- [var containerOrder: NSNumber?](./containerorder.md)
   The order of the item within the container.
-- [var containerTitle: String?](cssearchableitemattributeset/containertitle.md)
+- [var containerTitle: String?](./containertitle.md)
   The title of the container to which the item belongs.
 
 

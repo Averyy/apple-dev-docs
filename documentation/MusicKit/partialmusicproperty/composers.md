@@ -1,7 +1,8 @@
 # composers
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the relationship property that returns the song’s composers.
 
@@ -19,6 +20,8 @@ An identifier for the relationship property that returns the song’s composers.
 ```swift
 static let composers: MusicRelationshipProperty<Song, Artist>
 ```
+
+Available when `Root` is `Song`.
 
 
 ---

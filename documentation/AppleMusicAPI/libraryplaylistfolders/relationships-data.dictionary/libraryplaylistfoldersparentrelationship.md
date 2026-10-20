@@ -1,7 +1,8 @@
 # LibraryPlaylistFolders.Relationships.LibraryPlaylistFoldersParentRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object that represents the parent relationship of a library playlist folder.
 
@@ -10,7 +11,7 @@ A resource object that represents the parent relationship of a library playlist 
 
 ## Declaration
 
-```swift
+```
 object LibraryPlaylistFolders.Relationships.LibraryPlaylistFoldersParentRelationship
 ```
 
@@ -22,7 +23,8 @@ object LibraryPlaylistFolders.Relationships.LibraryPlaylistFoldersParentRelation
 
 ## See Also
 
-- [object LibraryPlaylistFolders.Relationships.LibraryPlaylistFoldersChildrenRelationship](libraryplaylistfolders/relationships-data.dictionary/libraryplaylistfolderschildrenrelationship.md)
+### Related Objects
+- [object LibraryPlaylistFolders.Relationships.LibraryPlaylistFoldersChildrenRelationship](./libraryplaylistfolderschildrenrelationship.md)
   A resource object that represents the children relationship of a library playlist folder.
 
 

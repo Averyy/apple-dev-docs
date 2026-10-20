@@ -1,7 +1,8 @@
 # MigrationAssistantSettings
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure Migration Assistant settings.
 
@@ -10,7 +11,7 @@ The declaration to configure Migration Assistant settings.
 
 ## Declaration
 
-```swift
+```
 object MigrationAssistantSettings
 ```
 
@@ -20,11 +21,11 @@ Specify `com.apple.configuration.migration-assistant.settings` as the declaratio
 
 This declaration allows the device management service to configure Migration Assistant when it runs during Setup Assistant on a Mac. This makes it easy for users to do Mac-to-Mac migrations of enterprise devices when they setup a new Mac.
 
-Configure the device to use the `AwaitingConfiguration` state after it enrolls with the server. The server needs to send the configuration and verify the configuration as both active and valid using the Declarative Device Management status, before it sends the [`DeviceConfiguredCommand`](deviceconfiguredcommand.md) command to exit that state.
+Configure the device to use the `AwaitingConfiguration` state after it enrolls with the server. The server needs to send the configuration and verify the configuration as both active and valid using the Declarative Device Management status, before it sends the [`DeviceConfiguredCommand`](./deviceconfiguredcommand.md) command to exit that state.
 
-The device reports Migration Assistant progress using the [`StatusMigrationAssistantState`](statusmigrationassistantstate.md) status item, and provides a report when migration completes using the [`StatusMigrationAssistantReport`](statusmigrationassistantreport.md) status item.
+The device reports Migration Assistant progress using the [`StatusMigrationAssistantState`](./statusmigrationassistantstate.md) status item, and provides a report when migration completes using the [`StatusMigrationAssistantReport`](./statusmigrationassistantreport.md) status item.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +37,7 @@ The device reports Migration Assistant progress using the [`StatusMigrationAssis
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration Example
+##### Configuration example
 
 This configuration provides settings for a Mac to Mac migration.
 
@@ -71,35 +72,36 @@ This configuration provides settings for a Mac to Mac migration.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

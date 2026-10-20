@@ -1,7 +1,8 @@
 # differentiateWithoutColorDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that UIKit posts when the system’s Differentiate Without Color setting changes.
 
@@ -19,9 +20,14 @@ nonisolated
 static let differentiateWithoutColorDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityShouldDifferentiateWithoutColorDidChangeNotification;
+```
+
 ## See Also
 
-- [static var shouldDifferentiateWithoutColor: Bool](uiaccessibility/shoulddifferentiatewithoutcolor.md)
+### Differentiate without color
+- [static var shouldDifferentiateWithoutColor: Bool](./shoulddifferentiatewithoutcolor.md)
   A Boolean value that indicates whether the Differentiate Without Color setting is in an enabled state.
 
 

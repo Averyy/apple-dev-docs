@@ -1,7 +1,8 @@
 # Playlists.Views.PlaylistsMoreByCuratorView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attribute metadata for the view containing additional content by the same curator for this playlist.
 
@@ -10,7 +11,7 @@ Attribute metadata for the view containing additional content by the same curato
 
 ## Declaration
 
-```swift
+```
 object Playlists.Views.PlaylistsMoreByCuratorView.Attributes
 ```
 

@@ -1,7 +1,8 @@
 # emailAddress
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates a contact’s email address.
 
@@ -19,15 +20,20 @@ A constant that indicates a contact’s email address.
 static let emailAddress: PKContactField
 ```
 
+```c
+extern PKContactField const PKContactFieldEmailAddress;
+```
+
 ## See Also
 
-- [static let name: PKContactField](pkcontactfield/name.md)
+### Types of contact fields
+- [static let name: PKContactField](./name.md)
   A constant that indicates a contact’s name.
-- [static let phoneNumber: PKContactField](pkcontactfield/phonenumber.md)
+- [static let phoneNumber: PKContactField](./phonenumber.md)
   A constant that indicates a contact’s telephone number.
-- [static let phoneticName: PKContactField](pkcontactfield/phoneticname.md)
+- [static let phoneticName: PKContactField](./phoneticname.md)
   A constant that indicates a contact’s phonetic name.
-- [static let postalAddress: PKContactField](pkcontactfield/postaladdress.md)
+- [static let postalAddress: PKContactField](./postaladdress.md)
   A constant that indicates a contact’s postal address.
 
 

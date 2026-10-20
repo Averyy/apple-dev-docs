@@ -1,7 +1,8 @@
 # pixelBuffer
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to the multiarray’s underlying pixel buffer.
 
@@ -20,10 +21,15 @@ A reference to the multiarray’s underlying pixel buffer.
 var pixelBuffer: CVPixelBuffer? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CVPixelBufferRef pixelBuffer;
+```
+
 ## See Also
 
-- [subscript(_:)](mlmultiarray/subscript(_:).md)
-- [var dataPointer: UnsafeMutableRawPointer](mlmultiarray/datapointer.md)
+### Accessing a multiarray’s elements
+- [subscript(_:)](./subscript%28_%29.md)
+- [var dataPointer: UnsafeMutableRawPointer](./datapointer.md)
   A pointer to the multiarray’s underlying memory.
 
 

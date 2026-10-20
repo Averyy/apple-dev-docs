@@ -1,14 +1,15 @@
 # kHIDUsage_BCS_GRWTIBeep_LampAfterTransmit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_BCS_GRWTIBeep_LampAfterTransmit = 0x8A
 ```
 

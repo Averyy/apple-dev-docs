@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a simd packed vector from a Spatial spherical coordinates structure .
 
@@ -19,6 +20,8 @@ Creates a simd packed vector from a Spatial spherical coordinates structure .
 ```swift
 init(_ point: SphericalCoordinates3DFloat)
 ```
+
+Available when `Scalar` is `Float`.
 
 
 ---

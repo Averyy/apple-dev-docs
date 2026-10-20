@@ -1,7 +1,8 @@
 # CSSearchQuery.Results.Iterator
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -19,11 +20,12 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [CSSearchQuery.Results.Item](cssearchquery/results-swift.struct/item.md)
+### Structures
+- [CSSearchQuery.Results.Item](./item.md)
 
 
 ---

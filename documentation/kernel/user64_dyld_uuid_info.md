@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct user64_dyld_uuid_info {
     ...
 };
@@ -17,8 +17,8 @@ struct user64_dyld_uuid_info {
 ## Topics
 
 ### Instance Properties
-- [imageLoadAddress](user64_dyld_uuid_info/1644319-imageloadaddress.md)
-- [imageUUID](user64_dyld_uuid_info/1644307-imageuuid.md)
+- [imageLoadAddress](./user64_dyld_uuid_info/api-1644319-imageloadaddress.md)
+- [imageUUID](./user64_dyld_uuid_info/api-1644307-imageuuid.md)
 
 
 ---

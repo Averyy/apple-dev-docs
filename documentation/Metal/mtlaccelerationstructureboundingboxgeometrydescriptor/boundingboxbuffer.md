@@ -1,7 +1,8 @@
 # boundingBoxBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A buffer that contains an array of bounding box structures.
 
@@ -19,15 +20,20 @@ A buffer that contains an array of bounding box structures.
 var boundingBoxBuffer: (any MTLBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLBuffer> boundingBoxBuffer;
+```
+
 #### Discussion
 
-The buffer contains an array of [`MTLAxisAlignedBoundingBox`](mtlaxisalignedboundingbox-c.struct.md) structures, one for each bounding box in the geometry.
+The buffer contains an array of [`MTLAxisAlignedBoundingBox`](../mtlaxisalignedboundingbox-c.struct.md) structures, one for each bounding box in the geometry.
 
 ## See Also
 
-- [var boundingBoxBufferOffset: Int](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxbufferoffset.md)
+### Specifying bounding boxes data
+- [var boundingBoxBufferOffset: Int](./boundingboxbufferoffset.md)
   The offset, in bytes, to the first bounding box in the buffer.
-- [var boundingBoxStride: Int](mtlaccelerationstructureboundingboxgeometrydescriptor/boundingboxstride.md)
+- [var boundingBoxStride: Int](./boundingboxstride.md)
   The stride, in bytes, between bounding boxes in the buffer.
 
 

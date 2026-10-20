@@ -1,7 +1,8 @@
 # displayStyle
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A suggested display style for the reflected subject.
 

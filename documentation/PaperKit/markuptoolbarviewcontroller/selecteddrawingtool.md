@@ -1,7 +1,8 @@
 # selectedDrawingTool
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected drawing tool.
 
@@ -22,7 +23,8 @@ Default is `PKInkingTool(.monoline)`. Setting this property to a color-bearing t
 
 ## See Also
 
-- [var selectedDrawingToolItem: PKToolPickerItem](markuptoolbarviewcontroller/selecteddrawingtoolitem.md)
+### Managing drawing tools
+- [var selectedDrawingToolItem: PKToolPickerItem](./selecteddrawingtoolitem.md)
   The currently selected drawing tool.
 
 

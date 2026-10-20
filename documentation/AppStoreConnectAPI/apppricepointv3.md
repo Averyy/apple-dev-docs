@@ -1,7 +1,8 @@
 # AppPricePointV3
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A specific price tier in App Store pricing, defining the customer price and developer proceeds across territories.
 
@@ -10,20 +11,20 @@ A specific price tier in App Store pricing, defining the customer price and deve
 
 ## Declaration
 
-```swift
+```
 object AppPricePointV3
 ```
 
 ## Mentions
 
-- [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
+- [App Store Connect API 2.3 release notes](./app-store-connect-api-2-3-release-notes.md)
 
 ## Topics
 
 ### Objects
-- [object AppPricePointV3.Attributes](apppricepointv3/attributes-data.dictionary.md)
+- [object AppPricePointV3.Attributes](./apppricepointv3/attributes-data.dictionary.md)
   Attributes that describe an app price point v3 resource.
-- [object AppPricePointV3.Relationships](apppricepointv3/relationships-data.dictionary.md)
+- [object AppPricePointV3.Relationships](./apppricepointv3/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -32,39 +33,40 @@ object AppPricePointV3
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (AppPricePointV3.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appPricePoints`
 
 ## See Also
 
-- [object App](app.md)
+### Objects and data types
+- [object App](./app.md)
   An app registered in App Store Connect, representing all versions, metadata, and configuration for your iOS, macOS, tvOS, or watchOS application.
-- [object AppWithoutIncludesResponse](appwithoutincludesresponse.md)
+- [object AppWithoutIncludesResponse](./appwithoutincludesresponse.md)
   A response containing a single app, without including related resources.
-- [object AppsWithoutIncludesResponse](appswithoutincludesresponse.md)
+- [object AppsWithoutIncludesResponse](./appswithoutincludesresponse.md)
   A response containing a list of apps, without including related resources.
-- [object AppUpdateRequest](appupdaterequest.md)
+- [object AppUpdateRequest](./appupdaterequest.md)
   The request body you use to update an App Update.
-- [object AppClipsResponse](appclipsresponse.md)
+- [object AppClipsResponse](./appclipsresponse.md)
   The response body for endpoints that list App Clips for an app.
-- [object AppResponse](appresponse.md)
+- [object AppResponse](./appresponse.md)
   The response body for endpoints that read or modify a single app in your team.
-- [object AppsResponse](appsresponse.md)
+- [object AppsResponse](./appsresponse.md)
   A response containing a list of apps registered in your App Store Connect team.
-- [object InAppPurchase](inapppurchase.md)
+- [object InAppPurchase](./inapppurchase.md)
   A one-time purchasable item available in an app, such as a consumable, non-consumable, or non-renewing subscription.
-- [object InAppPurchaseResponse](inapppurchaseresponse.md)
+- [object InAppPurchaseResponse](./inapppurchaseresponse.md)
   The response body for endpoints that read a single In-App Purchase.
-- [object InAppPurchasesResponse](inapppurchasesresponse.md)
+- [object InAppPurchasesResponse](./inapppurchasesresponse.md)
   The response body for endpoints that list In-App Purchases for an app.
-- [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
+- [object AppBetaTestersLinkagesRequest](./appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
-- [object AppPricePointV3Response](apppricepointv3response.md)
+- [object AppPricePointV3Response](./apppricepointv3response.md)
   A response containing a single App Store price point with its territory-specific pricing details.
-- [object AppPricePointsV3Response](apppricepointsv3response.md)
+- [object AppPricePointsV3Response](./apppricepointsv3response.md)
   A response containing a list of available App Store price points.
-- [object AppPriceSchedule](apppriceschedule.md)
+- [object AppPriceSchedule](./apppriceschedule.md)
   The pricing schedule for an app, specifying base territory prices, manual prices for other territories, and scheduled price changes.
-- [object AppPriceScheduleCreateRequest](apppriceschedulecreaterequest.md)
+- [object AppPriceScheduleCreateRequest](./apppriceschedulecreaterequest.md)
   The request body you use to create an app price schedule.
 
 

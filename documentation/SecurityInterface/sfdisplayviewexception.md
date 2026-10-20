@@ -1,7 +1,8 @@
 # SFDisplayViewException
 
 **Framework**: Security Interface  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Raised when an error occurs in displaying the authorization dialog.
 
@@ -14,11 +15,16 @@ Raised when an error occurs in displaying the authorization dialog.
 let SFDisplayViewException: String
 ```
 
+```c
+extern NSString * const SFDisplayViewException;
+```
+
 ## See Also
 
-- [Plug-in View Keys](plug-in-view-keys.md)
-  Keys for the user dictionary passed to [`willActivate(withUser:)`](sfauthorizationpluginview/willactivate(withuser:).md).
-- [let SFCertificateViewDisclosureStateDidChange: String](sfcertificateviewdisclosurestatedidchange.md)
+### Constants
+- [Plug-in View Keys](./plug-in-view-keys.md)
+  Keys for the user dictionary passed to [`willActivate(withUser:)`](./sfauthorizationpluginview/willactivate%28withuser%29.md).
+- [let SFCertificateViewDisclosureStateDidChange: String](./sfcertificateviewdisclosurestatedidchange.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UITextInlinePredictionType.no
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that turns off inline text predictions.
 
@@ -18,11 +19,16 @@ A constant that turns off inline text predictions.
 case no
 ```
 
+```c
+UITextInlinePredictionTypeNo
+```
+
 ## See Also
 
-- [UITextInlinePredictionType.default](uitextinlinepredictiontype/default.md)
+### Constants
+- [UITextInlinePredictionType.default](./default.md)
   A constant that determines the behavior of inline text predictions according to the context.
-- [UITextInlinePredictionType.yes](uitextinlinepredictiontype/yes.md)
+- [UITextInlinePredictionType.yes](./yes.md)
   A constant that turns on inline text predictions.
 
 

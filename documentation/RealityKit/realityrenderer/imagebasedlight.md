@@ -1,7 +1,8 @@
 # RealityRenderer.ImageBasedLight
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describe the lighting properties for the scene.
 
@@ -22,23 +23,24 @@ struct ImageBasedLight
 ## Topics
 
 ### Instance Properties
-- [var intensityExponent: Float](realityrenderer/imagebasedlight/intensityexponent.md)
+- [var intensityExponent: Float](./imagebasedlight/intensityexponent.md)
   The intensity value of the light. The intensity modulates the intensity specified in the diffuse and specular textures An intensity of 0 means using the diffuse/specular intensities as-is Otherwise the intensity is multiplied by 2^intensity
-- [var resource: EnvironmentResource?](realityrenderer/imagebasedlight/resource.md)
+- [var resource: EnvironmentResource?](./imagebasedlight/resource.md)
   The corresponding `EnvironmentResource` used for your Image Based Light.
 
 ## See Also
 
-- [class RealityRenderer](realityrenderer.md)
+### Metal workflow rendering
+- [class RealityRenderer](../realityrenderer.md)
   A renderer that displays a RealityKit scene in an existing Metal workflow.
-- [RealityRenderer.CameraSettings](realityrenderer/camerasettings-swift.struct.md)
+- [RealityRenderer.CameraSettings](./camerasettings-swift.struct.md)
   Settings for rendering with a camera.
-- [RealityRenderer.CameraOutput](realityrenderer/cameraoutput.md)
+- [RealityRenderer.CameraOutput](./cameraoutput.md)
   Output produced by rendering with a camera.
-- [RealityRenderer.MetalEventAction](realityrenderer/metaleventaction.md)
+- [RealityRenderer.MetalEventAction](./metaleventaction.md)
   The structure describing an event and value to be signaled or waited for.
-- [RealityRenderer.EntityCollection](realityrenderer/entitycollection.md)
-  A collection of entities in a [`RealityRenderer`](realityrenderer.md).
+- [RealityRenderer.EntityCollection](./entitycollection.md)
+  A collection of entities in a [`RealityRenderer`](../realityrenderer.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # salientObjects
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of objects describing the distinct areas of the saliency heat map.
 
@@ -17,6 +18,10 @@ A collection of objects describing the distinct areas of the saliency heat map.
 
 ```swift
 var salientObjects: [VNRectangleObservation]? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSArray<VNRectangleObservation *> * salientObjects;
 ```
 
 #### Discussion

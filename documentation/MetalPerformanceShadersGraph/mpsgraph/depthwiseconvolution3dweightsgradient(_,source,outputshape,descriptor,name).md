@@ -1,7 +1,8 @@
 # depthwiseConvolution3DWeightsGradient(_:source:outputShape:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 3D depthwise convolution gradient for weights operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a 3D depthwise convolution gradient for weights operation and returns th
 
 ```swift
 func depthwiseConvolution3DWeightsGradient(_ incomingGradient: MPSGraphTensor, source: MPSGraphTensor, outputShape: [NSNumber], descriptor: MPSGraphDepthwiseConvolution3DOpDescriptor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) depthwiseConvolution3DWeightsGradientWithIncomingGradientTensor:(MPSGraphTensor *) incomingGradient sourceTensor:(MPSGraphTensor *) source outputShape:(MPSShape *) outputShape descriptor:(MPSGraphDepthwiseConvolution3DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

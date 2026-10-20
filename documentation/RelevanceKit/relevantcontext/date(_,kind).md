@@ -1,7 +1,8 @@
 # date(_:kind:)
 
 **Framework**: RelevanceKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Tells the system a widget is relevant at a specific date and provides an additional contextual hint.
 
@@ -26,9 +27,9 @@ A contextual clue that the system uses to determine the relevance of a widget in
 
 #### Discussion
 
-Several widgets might be relevant to a person at a specific time. To help the system show a widget when it’s most relevant, provide a `DateKind` as an additional contextual hint to help it determine the widget’s relevance. For example, a widget that’s related to a person’s schedule or requires an action, pass [`scheduled`](relevantcontext/datekind/scheduled.md).
+Several widgets might be relevant to a person at a specific time. To help the system show a widget when it’s most relevant, provide a `DateKind` as an additional contextual hint to help it determine the widget’s relevance. For example, a widget that’s related to a person’s schedule or requires an action, pass [`scheduled`](./datekind/scheduled.md).
 
-> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](https://developer.apple.com/documentation/widgetkit/widget-suggestions-in-smart-stacks).
+> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [Increasing the visibility of widgets in Smart Stacks](../../WidgetKit/widget-suggestions-in-smart-stacks.md).
 
 ## Parameters
 
@@ -37,15 +38,16 @@ Several widgets might be relevant to a person at a specific time. To help the sy
 
 ## See Also
 
-- [static func date(Date) -> RelevantContext](relevantcontext/date(_:).md)
+### Time clues
+- [static func date(Date) -> RelevantContext](./date%28_%29.md)
   Tells the system a widget is relevant at a specific date.
-- [static func date(interval: DateInterval, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(interval:kind:).md)
+- [static func date(interval: DateInterval, kind: RelevantContext.DateKind) -> RelevantContext](./date%28interval,kind%29.md)
   Tells the system a widget is relevant for a time interval and provides an additional contextual hint.
-- [static func date(range: ClosedRange<Date>, kind: RelevantContext.DateKind) -> RelevantContext](relevantcontext/date(range:kind:).md)
+- [static func date(range: ClosedRange<Date>, kind: RelevantContext.DateKind) -> RelevantContext](./date%28range,kind%29.md)
   Tells the system a widget is relevant for a known date range and provides an additional contextual hint.
-- [RelevantContext.DateKind](relevantcontext/datekind.md)
+- [RelevantContext.DateKind](./datekind.md)
   Values the system uses as additional context for time-based relevance clues.
-- [static func date(from: Date, to: Date) -> RelevantContext](relevantcontext/date(from:to:).md)
+- [static func date(from: Date, to: Date) -> RelevantContext](./date%28from,to%29.md)
   Tells the system a widget is relevant between two dates.
 
 

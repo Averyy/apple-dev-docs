@@ -1,7 +1,8 @@
 # printInteractionController(_:cutLengthFor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for a length to use when cutting the page.
 
@@ -17,6 +18,10 @@ Asks the delegate for a length to use when cutting the page.
 optional func printInteractionController(_ printInteractionController: UIPrintInteractionController, cutLengthFor paper: UIPrintPaper) -> CGFloat
 ```
 
+```objc
+- (CGFloat) printInteractionController:(UIPrintInteractionController *) printInteractionController cutLengthForPaper:(UIPrintPaper *) paper;
+```
+
 #### Return Value
 
 The physical length of the page in points.
@@ -27,14 +32,15 @@ Some printers can cut a roll of print paper at a particular length. If you imple
 
 ## Parameters
 
-- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](uiprintinteractioncontroller.md) that is managing the print job.
-- `paper`: A [`UIPrintPaper`](uiprintpaper.md) that specifies the maximum physical and printable areas of the page.
+- `printInteractionController`: The shared instance of [`UIPrintInteractionController`](../uiprintinteractioncontroller.md) that is managing the print job.
+- `paper`: A [`UIPrintPaper`](../uiprintpaper.md) that specifies the maximum physical and printable areas of the page.
 
 ## See Also
 
-- [func printInteractionController(UIPrintInteractionController, choosePaper: [UIPrintPaper]) -> UIPrintPaper](uiprintinteractioncontrollerdelegate/printinteractioncontroller(_:choosepaper:).md)
+### Choosing a Paper Size for the Print Job
+- [func printInteractionController(UIPrintInteractionController, choosePaper: [UIPrintPaper]) -> UIPrintPaper](./printinteractioncontroller%28_,choosepaper%29.md)
   Asks the delegate for an object that encapsulates the paper size and printing area for the print job.
-- [func printInteractionController(UIPrintInteractionController, chooseCutterBehavior: [Any]) -> UIPrinter.CutterBehavior](uiprintinteractioncontrollerdelegate/printinteractioncontroller(_:choosecutterbehavior:).md)
+- [func printInteractionController(UIPrintInteractionController, chooseCutterBehavior: [Any]) -> UIPrinter.CutterBehavior](./printinteractioncontroller%28_,choosecutterbehavior%29.md)
   Asks the delegate for the cutter behavior for the print job.
 
 

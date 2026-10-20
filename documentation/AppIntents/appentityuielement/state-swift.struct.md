@@ -1,7 +1,8 @@
 # AppEntityUIElement.State
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The current UI state of the entity that’s visible onscreen.
 
@@ -23,17 +24,17 @@ struct State
 ## Topics
 
 ### Initializers
-- [init(isSelected: Bool)](appentityuielement/state-swift.struct/init(isselected:).md)
+- [init(isSelected: Bool)](./state-swift.struct/init%28isselected%29.md)
   Creates the state that describes if a UI element is selected.
 ### Instance Properties
-- [var isSelected: Bool](appentityuielement/state-swift.struct/isselected.md)
+- [var isSelected: Bool](./state-swift.struct/isselected.md)
   A Boolean value that indicates whether the UI element is selected.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

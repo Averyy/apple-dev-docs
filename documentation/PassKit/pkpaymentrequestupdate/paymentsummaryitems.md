@@ -1,7 +1,8 @@
 # paymentSummaryItems
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of payment summary items for the instance.
 
@@ -19,9 +20,14 @@ The list of payment summary items for the instance.
 var paymentSummaryItems: [PKPaymentSummaryItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<PKPaymentSummaryItem *> * paymentSummaryItems;
+```
+
 ## See Also
 
-- [class PKPaymentSummaryItem](pkpaymentsummaryitem.md)
+### Updating summary items
+- [class PKPaymentSummaryItem](../pkpaymentsummaryitem.md)
   An object that defines a summary item in a payment request, taxes, discounts, shipping, a grand total, and the like.
 
 

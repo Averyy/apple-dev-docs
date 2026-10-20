@@ -1,14 +1,15 @@
 # matchInternal
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 bool matchInternal(OSDictionary *table, uint32_t options, unsigned int *did);
 ```
 

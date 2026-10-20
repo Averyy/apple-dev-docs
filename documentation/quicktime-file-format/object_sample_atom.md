@@ -1,9 +1,12 @@
 # Object sample atom
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that describes a single object.
+
+> **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
 #### Overview
 
@@ -45,55 +48,55 @@ QT
 ## Topics
 
 ### Data fields
-- [majorVersion](object_sample_atom/majorversion.md)
+- [majorVersion](./object_sample_atom/majorversion.md)
   The major version number of the file format.
-- [minorVersion](object_sample_atom/minorversion.md)
+- [minorVersion](./object_sample_atom/minorversion.md)
   The minor version number of the file format.
-- [movieType](object_sample_atom/movietype.md)
+- [movieType](./object_sample_atom/movietype.md)
   The movie controller type.
-- [viewStateCount](object_sample_atom/viewstatecount.md)
+- [viewStateCount](./object_sample_atom/viewstatecount.md)
   The number of view states of the object.
-- [defaultViewState](object_sample_atom/defaultviewstate.md)
+- [defaultViewState](./object_sample_atom/defaultviewstate.md)
   The 1-based index of the default view state.
-- [mouseDownViewState](object_sample_atom/mousedownviewstate.md)
+- [mouseDownViewState](./object_sample_atom/mousedownviewstate.md)
   The 1-based index of the mouse-down view state.
-- [viewDuration](object_sample_atom/viewduration.md)
+- [viewDuration](./object_sample_atom/viewduration.md)
   The total movie duration of all image frames contained in an object’s view.
-- [columns](object_sample_atom/columns.md)
+- [columns](./object_sample_atom/columns.md)
   The number of columns in the object image array.
-- [rows](object_sample_atom/rows.md)
+- [rows](./object_sample_atom/rows.md)
   The number of rows in the object image array.
-- [mouseMotionScale](object_sample_atom/mousemotionscale.md)
+- [mouseMotionScale](./object_sample_atom/mousemotionscale.md)
   The mouse motion scale factor.
-- [minPan](object_sample_atom/minpan.md)
+- [minPan](./object_sample_atom/minpan.md)
   The minimum pan angle, in degrees.
-- [maxPan](object_sample_atom/maxpan.md)
+- [maxPan](./object_sample_atom/maxpan.md)
   The maximum pan angle, in degrees.
-- [defaultPan](object_sample_atom/defaultpan.md)
+- [defaultPan](./object_sample_atom/defaultpan.md)
   The default pan angle, in degrees.
-- [minTilt](object_sample_atom/mintilt.md)
+- [minTilt](./object_sample_atom/mintilt.md)
   The minimum tilt angle, in degrees.
-- [maxTilt](object_sample_atom/maxtilt.md)
+- [maxTilt](./object_sample_atom/maxtilt.md)
   The maximum tilt angle, in degrees.
-- [defaultTilt](object_sample_atom/defaulttilt.md)
+- [defaultTilt](./object_sample_atom/defaulttilt.md)
   The default tilt angle, in degrees.
-- [minFieldOfView](object_sample_atom/minfieldofview.md)
+- [minFieldOfView](./object_sample_atom/minfieldofview.md)
   The minimum field of view to which the object can zoom.
-- [fieldOfView](object_sample_atom/fieldofview.md)
+- [fieldOfView](./object_sample_atom/fieldofview.md)
   The image field of view, in degrees, for the entire object.
-- [defaultFieldOfView](object_sample_atom/defaultfieldofview.md)
+- [defaultFieldOfView](./object_sample_atom/defaultfieldofview.md)
   The default field of view for the object.
-- [defaultViewCenterH](object_sample_atom/defaultviewcenterh.md)
+- [defaultViewCenterH](./object_sample_atom/defaultviewcenterh.md)
   The default horizontal view center.
-- [defaultViewCenterV](object_sample_atom/defaultviewcenterv.md)
+- [defaultViewCenterV](./object_sample_atom/defaultviewcenterv.md)
   The default vertical view center.
-- [viewRate](object_sample_atom/viewrate.md)
+- [viewRate](./object_sample_atom/viewrate.md)
   The view rate.
-- [frameRate](object_sample_atom/framerate.md)
+- [frameRate](./object_sample_atom/framerate.md)
   The frame rate.
-- [animationSettings](object_sample_atom/animationsettings.md)
+- [animationSettings](./object_sample_atom/animationsettings.md)
   A set of 32-bit flags that encode information about the animation settings of the object.
-- [controlSettings](object_sample_atom/controlsettings.md)
+- [controlSettings](./object_sample_atom/controlsettings.md)
   A set of 32-bit flags that encode information about the control settings of the object.
 
 

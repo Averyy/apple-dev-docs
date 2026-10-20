@@ -1,7 +1,8 @@
 # init(item:attachedTo:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a behavior where the centers of two dynamic items are attached to each other.
 
@@ -9,13 +10,17 @@ Initializes a behavior where the centers of two dynamic items are attached to ea
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 convenience init(item item1: any UIDynamicItem, attachedTo item2: any UIDynamicItem)
+```
+
+```objc
+- (instancetype) initWithItem:(id<UIDynamicItem>) item1 attachedToItem:(id<UIDynamicItem>) item2;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ The initialized attachment behavior, or `nil` if there was a problem initializin
 
 The behavior created by this method acts like a solid rod connecting the two items at their center points. Forces applied to one item push or pull the other item accordingly. The items are free to rotate around each other but always remain the same distance apart.
 
-The attachment object returned by this method is of type [`UIAttachmentBehavior.AttachmentType.items`](uiattachmentbehavior/attachmenttype/items.md).
+The attachment object returned by this method is of type [`UIAttachmentBehavior.AttachmentType.items`](./attachmenttype/items.md).
 
 ## Parameters
 
@@ -35,21 +40,22 @@ The attachment object returned by this method is of type [`UIAttachmentBehavior.
 
 ## See Also
 
-- [class func slidingAttachment(with: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](uiattachmentbehavior/slidingattachment(with:attachmentanchor:axisoftranslation:).md)
+### Creating and initializing attachment behavior objects
+- [class func slidingAttachment(with: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](./slidingattachment%28with,attachmentanchor,axisoftranslation%29.md)
   Creates and returns an attachment behavior where one item slides along the specified axis.
-- [class func slidingAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](uiattachmentbehavior/slidingattachment(with:attachedto:attachmentanchor:axisoftranslation:).md)
+- [class func slidingAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint, axisOfTranslation: CGVector) -> Self](./slidingattachment%28with,attachedto,attachmentanchor,axisoftranslation%29.md)
   Creates and returns an attachment behavior where two items are fixed to points that slide along the specified axis.
-- [class func fixedAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](uiattachmentbehavior/fixedattachment(with:attachedto:attachmentanchor:).md)
+- [class func fixedAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](./fixedattachment%28with,attachedto,attachmentanchor%29.md)
   Creates and returns an attachment behavior where the two items are fixed together through the specified anchor point.
-- [class func limitAttachment(with: any UIDynamicItem, offsetFromCenter: UIOffset, attachedTo: any UIDynamicItem, offsetFromCenter: UIOffset) -> Self](uiattachmentbehavior/limitattachment(with:offsetfromcenter:attachedto:offsetfromcenter:).md)
+- [class func limitAttachment(with: any UIDynamicItem, offsetFromCenter: UIOffset, attachedTo: any UIDynamicItem, offsetFromCenter: UIOffset) -> Self](./limitattachment%28with,offsetfromcenter,attachedto,offsetfromcenter%29.md)
   Creates and returns an attachment behavior object where two items are constrained by a maximum distance from one another.
-- [class func pinAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](uiattachmentbehavior/pinattachment(with:attachedto:attachmentanchor:).md)
+- [class func pinAttachment(with: any UIDynamicItem, attachedTo: any UIDynamicItem, attachmentAnchor: CGPoint) -> Self](./pinattachment%28with,attachedto,attachmentanchor%29.md)
   Creates and returns an attachment behavior where the two items are pinned to, and move around, an anchor point
-- [convenience init(item: any UIDynamicItem, attachedToAnchor: CGPoint)](uiattachmentbehavior/init(item:attachedtoanchor:).md)
+- [convenience init(item: any UIDynamicItem, attachedToAnchor: CGPoint)](./init%28item,attachedtoanchor%29.md)
   Initializes a behavior where the center of a dynamic item is attached to the specified anchor point.
-- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedToAnchor: CGPoint)](uiattachmentbehavior/init(item:offsetfromcenter:attachedtoanchor:).md)
+- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedToAnchor: CGPoint)](./init%28item,offsetfromcenter,attachedtoanchor%29.md)
   Initializes a behavior where the specified point in a dynamic item is attached to an anchor point.
-- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedTo: any UIDynamicItem, offsetFromCenter: UIOffset)](uiattachmentbehavior/init(item:offsetfromcenter:attachedto:offsetfromcenter:).md)
+- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedTo: any UIDynamicItem, offsetFromCenter: UIOffset)](./init%28item,offsetfromcenter,attachedto,offsetfromcenter%29.md)
   Initializes an attachment behavior that connects a specified point in one dynamic item to a specified point in another dynamic item.
 
 

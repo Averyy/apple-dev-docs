@@ -1,7 +1,8 @@
 # PKPaymentButtonType
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The Apple Pay button types you can display to initiate Apple Pay transactions.
 
@@ -19,67 +20,72 @@ The Apple Pay button types you can display to initiate Apple Pay transactions.
 enum PKPaymentButtonType
 ```
 
+```c
+enum PKPaymentButtonType : NSInteger;
+```
+
 #### Overview
 
-The button type you use for payments made with Apple Pay can affect the purchasing experience. Choose a button type that best fits with the terminology and flow of your purchase or payment experience. For design guidance, see [`Human Interface Guidelines > Apple Pay > Buttons and Marks`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
+The button type you use for payments made with Apple Pay can affect the purchasing experience. Choose a button type that best fits with the terminology and flow of your purchase or payment experience. For design guidance, see [Human Interface Guidelines > Apple Pay > Buttons and Marks](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 
-Before using a specific button type, check that it’s available to the iOS version that your app is running on. Create buttons using the [`buttonWithType:style:`](pkpaymentbutton/buttonwithtype:style:.md) method.
+Before using a specific button type, check that it’s available to the iOS version that your app is running on. Create buttons using the [`buttonWithType:style:`](./pkpaymentbutton/buttonwithtype_style_.md) method.
 
 ## Topics
 
 ### Payment button types
-- [PKPaymentButtonType.plain](pkpaymentbuttontype/plain.md)
+- [PKPaymentButtonType.plain](./pkpaymentbuttontype/plain.md)
   An Apple Pay button with the Apple Pay logo only, useful when an additional call to action isn’t needed.
-- [PKPaymentButtonType.buy](pkpaymentbuttontype/buy.md)
+- [PKPaymentButtonType.buy](./pkpaymentbuttontype/buy.md)
   An Apple Pay button useful for product purchases.
-- [PKPaymentButtonType.addMoney](pkpaymentbuttontype/addmoney.md)
+- [PKPaymentButtonType.addMoney](./pkpaymentbuttontype/addmoney.md)
   An Apple Pay button useful for adding money to a card, account, or payment system.
-- [PKPaymentButtonType.book](pkpaymentbuttontype/book.md)
+- [PKPaymentButtonType.book](./pkpaymentbuttontype/book.md)
   An Apple Pay button useful for booking trips, flights, or other experiences.
-- [PKPaymentButtonType.checkout](pkpaymentbuttontype/checkout.md)
+- [PKPaymentButtonType.checkout](./pkpaymentbuttontype/checkout.md)
   An Apple Pay button useful for purchase experiences that include other payment buttons that start with “Check out”.
-- [PKPaymentButtonType.continue](pkpaymentbuttontype/continue.md)
+- [PKPaymentButtonType.continue](./pkpaymentbuttontype/continue.md)
   An Apple Pay button useful for general purchases.
-- [PKPaymentButtonType.contribute](pkpaymentbuttontype/contribute.md)
+- [PKPaymentButtonType.contribute](./pkpaymentbuttontype/contribute.md)
   An Apple Pay button useful to help people contribute money to projects, causes, organizations, and other entities.
-- [PKPaymentButtonType.donate](pkpaymentbuttontype/donate.md)
+- [PKPaymentButtonType.donate](./pkpaymentbuttontype/donate.md)
   An Apple Pay button used by approved nonprofit organization that lets people make donations.
-- [PKPaymentButtonType.inStore](pkpaymentbuttontype/instore.md)
+- [PKPaymentButtonType.inStore](./pkpaymentbuttontype/instore.md)
   An Apple Pay button useful for paying bills or invoices.
-- [PKPaymentButtonType.order](pkpaymentbuttontype/order.md)
+- [PKPaymentButtonType.order](./pkpaymentbuttontype/order.md)
   An Apple Pay button useful for placing orders for such as like meals or flowers.
-- [PKPaymentButtonType.reload](pkpaymentbuttontype/reload.md)
+- [PKPaymentButtonType.reload](./pkpaymentbuttontype/reload.md)
   An Apple Pay button useful for adding money to a card, account, or payment system.
-- [PKPaymentButtonType.rent](pkpaymentbuttontype/rent.md)
+- [PKPaymentButtonType.rent](./pkpaymentbuttontype/rent.md)
   An Apple Pay button useful for renting items such as cars or scooters.
-- [PKPaymentButtonType.setUp](pkpaymentbuttontype/setup.md)
+- [PKPaymentButtonType.setUp](./pkpaymentbuttontype/setup.md)
   An Apple Pay button useful for prompting the user to set up a card.
-- [PKPaymentButtonType.subscribe](pkpaymentbuttontype/subscribe.md)
+- [PKPaymentButtonType.subscribe](./pkpaymentbuttontype/subscribe.md)
   An Apple Pay button useful for purchasing a subscription such as a gym membership or meal-kit delivery service.
-- [PKPaymentButtonType.support](pkpaymentbuttontype/support.md)
+- [PKPaymentButtonType.support](./pkpaymentbuttontype/support.md)
   An Apple Pay button useful supporting people give money to projects, causes, organizations, and other entities.
-- [PKPaymentButtonType.tip](pkpaymentbuttontype/tip.md)
+- [PKPaymentButtonType.tip](./pkpaymentbuttontype/tip.md)
   An Apple Pay button useful useful for letting people tip for goods or services.
-- [PKPaymentButtonType.topUp](pkpaymentbuttontype/topup.md)
+- [PKPaymentButtonType.topUp](./pkpaymentbuttontype/topup.md)
   An Apple Pay button useful for adding money to a card, account, or payment system.
 ### Initializers
-- [init?(rawValue: Int)](pkpaymentbuttontype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pkpaymentbuttontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum PKPaymentButtonStyle](pkpaymentbuttonstyle.md)
+### Configuring the appearance
+- [enum PKPaymentButtonStyle](./pkpaymentbuttonstyle.md)
   A type that indicates the available appearances for an Apple Pay button.
-- [var cornerRadius: CGFloat](pkpaymentbutton/cornerradius.md)
+- [var cornerRadius: CGFloat](./pkpaymentbutton/cornerradius.md)
   The radius, in points, for the rounded corners on the button.
 
 

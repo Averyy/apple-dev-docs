@@ -1,7 +1,8 @@
 # endSpecifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the object specifier representing the last object of the range to a given object.
 
@@ -15,13 +16,18 @@ Sets the object specifier representing the last object of the range to a given o
 var endSpecifier: NSScriptObjectSpecifier? { get set }
 ```
 
+```objc
+@property (retain, nullable) NSScriptObjectSpecifier * endSpecifier;
+```
+
 ## Parameters
 
 - `endSpec`: The object specifier representing the last object of the range.
 
 ## See Also
 
-- [var startSpecifier: NSScriptObjectSpecifier?](nsrangespecifier/startspecifier.md)
+### Accessing a range specifier
+- [var startSpecifier: NSScriptObjectSpecifier?](./startspecifier.md)
   Returns the object specifier representing the first object of the range.
 
 

@@ -1,16 +1,17 @@
 # init(version:colorspace_info:bitmap_info:bits_per_component:bytes_per_row:intent:decode:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(version: UInt32, colorspace_info: Unmanaged<CFTypeRef>!, bitmap_info: CGBit
 
 ## See Also
 
-- [init()](cgcolordataformat/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

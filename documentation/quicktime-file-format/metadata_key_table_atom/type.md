@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit unsigned integer value.
 
@@ -11,9 +12,10 @@ Set to `'keys’`.
 
 ## See Also
 
-- [Size](metadata_key_table_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Metadata key table](metadata_key_table_atom/metadata_key_table.md)
+- [Metadata key table](./metadata_key_table.md)
   An array of metadata key atoms.
 
 

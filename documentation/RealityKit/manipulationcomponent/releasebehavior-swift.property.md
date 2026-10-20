@@ -1,7 +1,8 @@
 # releaseBehavior
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The behavior to apply to the object’s transform when someone releases it.
 
@@ -16,15 +17,16 @@ var releaseBehavior: ManipulationComponent.ReleaseBehavior
 
 #### Discussion
 
-By default, the `releaseBehavior` is [`reset`](manipulationcomponent/releasebehavior-swift.struct/reset.md), which animates the object to its initial pose relative to its parent.
+By default, the `releaseBehavior` is [`reset`](./releasebehavior-swift.struct/reset.md), which animates the object to its initial pose relative to its parent.
 
 ## See Also
 
-- [static func configureEntity(Entity, hoverEffect: HoverEffectComponent.HoverEffect?, allowedInputTypes: InputTargetComponent.InputType?, collisionShapes: [ShapeResource]?)](manipulationcomponent/configureentity(_:hovereffect:allowedinputtypes:collisionshapes:).md)
+### Configuring the manipulation
+- [static func configureEntity(Entity, hoverEffect: HoverEffectComponent.HoverEffect?, allowedInputTypes: InputTargetComponent.InputType?, collisionShapes: [ShapeResource]?)](./configureentity%28_,hovereffect,allowedinputtypes,collisionshapes%29.md)
   Apply a default configuration to an entity to enable to it for use with manipulation component.
-- [var audioConfiguration: ManipulationComponent.AudioConfiguration](manipulationcomponent/audioconfiguration-swift.property.md)
+- [var audioConfiguration: ManipulationComponent.AudioConfiguration](./audioconfiguration-swift.property.md)
   The audio configuration to apply to the object over the course of the interaction.
-- [var dynamics: ManipulationComponent.Dynamics](manipulationcomponent/dynamics-swift.property.md)
+- [var dynamics: ManipulationComponent.Dynamics](./dynamics-swift.property.md)
   The dynamics controlling the object’s movement and behaviors during the interaction.
 
 

@@ -1,7 +1,8 @@
 # sameSitePolicy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to restrict the cookie to requests sent back to the same site that created it.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether to restrict the cookie to requests sent b
 var sameSitePolicy: HTTPCookieStringPolicy? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSHTTPCookieStringPolicy sameSitePolicy;
+```
+
 #### Discussion
 
-Along with the policy values defined by [`HTTPCookieStringPolicy`](httpcookiestringpolicy.md), this property may also be `nil`. In this case, cross-site requests include the cookie.
+Along with the policy values defined by [`HTTPCookieStringPolicy`](../httpcookiestringpolicy.md), this property may also be `nil`. In this case, cross-site requests include the cookie.
 
 ## See Also
 
-- [var isHTTPOnly: Bool](httpcookie/ishttponly.md)
+### Securing cookies
+- [var isHTTPOnly: Bool](./ishttponly.md)
   A Boolean value that indicates whether the cookie should only be sent to HTTP servers.
-- [var isSecure: Bool](httpcookie/issecure.md)
+- [var isSecure: Bool](./issecure.md)
   A Boolean value that indicates whether the cookie may only be sent over secure channels.
-- [struct HTTPCookieStringPolicy](httpcookiestringpolicy.md)
+- [struct HTTPCookieStringPolicy](../httpcookiestringpolicy.md)
   Values that indicate whether to restrict the cookie to requests sent back to the same site that created it.
 
 

@@ -1,7 +1,8 @@
 # customPlaygroundQuickLook
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom playground Quick Look for this instance.
 
@@ -13,6 +14,8 @@ A custom playground Quick Look for this instance.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
+
+> **Deprecated**: CGSize.customPlaygroundQuickLook will be removed in a future Swift version
 
 ## Declaration
 
@@ -26,8 +29,9 @@ If this type has value semantics, the `PlaygroundQuickLook` instance should be u
 
 ## See Also
 
-- [var dictionaryRepresentation: CFDictionary](cgsize/dictionaryrepresentation.md)
-- [init?(dictionaryRepresentation: CFDictionary)](cgsize/init(dictionaryrepresentation:).md)
+### Alternate Representations
+- [var dictionaryRepresentation: CFDictionary](./dictionaryrepresentation.md)
+- [init?(dictionaryRepresentation: CFDictionary)](./init%28dictionaryrepresentation%29.md)
 
 
 ---

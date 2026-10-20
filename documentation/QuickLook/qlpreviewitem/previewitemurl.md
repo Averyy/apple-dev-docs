@@ -2,6 +2,7 @@
 
 **Framework**: Quick Look  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -14,6 +15,10 @@
 
 ```swift
 var previewItemURL: URL? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSURL * previewItemURL;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a newly initialized query option using the provided integer.
 

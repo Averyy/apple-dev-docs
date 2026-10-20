@@ -1,7 +1,8 @@
 # MTLPatchType.none
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that indicates that this isn’t a post-tessellation vertex function.
 
@@ -19,11 +20,16 @@ An option that indicates that this isn’t a post-tessellation vertex function.
 case none
 ```
 
+```c
+MTLPatchTypeNone
+```
+
 ## See Also
 
-- [MTLPatchType.triangle](mtlpatchtype/triangle.md)
+### Patch types
+- [MTLPatchType.triangle](./triangle.md)
   A triangle patch.
-- [MTLPatchType.quad](mtlpatchtype/quad.md)
+- [MTLPatchType.quad](./quad.md)
   A quad patch.
 
 

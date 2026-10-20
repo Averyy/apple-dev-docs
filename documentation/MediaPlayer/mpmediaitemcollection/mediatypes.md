@@ -1,7 +1,8 @@
 # mediaTypes
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of the media items in a collection.
 
@@ -17,17 +18,22 @@ The types of the media items in a collection.
 var mediaTypes: MPMediaType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPMediaType mediaTypes;
+```
+
 #### Discussion
 
-The [`MPMediaType`](mpmediatype.md) enumeration in [`MPMediaItem`](mpmediaitem.md) lists the media types.
+The [`MPMediaType`](../mpmediatype.md) enumeration in [`MPMediaItem`](../mpmediaitem.md) lists the media types.
 
 ## See Also
 
-- [var items: [MPMediaItem]](mpmediaitemcollection/items.md)
+### Using a media item collection
+- [var items: [MPMediaItem]](./items.md)
   The media items in a media item collection.
-- [var representativeItem: MPMediaItem?](mpmediaitemcollection/representativeitem.md)
+- [var representativeItem: MPMediaItem?](./representativeitem.md)
   A media item whose properties are representative of the other media items in a collection.
-- [var count: Int](mpmediaitemcollection/count.md)
+- [var count: Int](./count.md)
   The number of media items in a collection.
 
 

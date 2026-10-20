@@ -1,14 +1,15 @@
 # kauth_cred_ismember_gid
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int kauth_cred_ismember_gid(kauth_cred_t _cred, gid_t _gid, int *_resultp);
 ```
 

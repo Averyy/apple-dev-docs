@@ -1,7 +1,8 @@
 # SetZeroTimeStampPeriod
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the zero time stamp of the clock device.
 
@@ -10,19 +11,19 @@ Sets the zero time stamp of the clock device.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetZeroTimeStampPeriod(uint32_t in_zts_period);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-The parameter indicates the number of sample frames the host can expect between successive timestamps returned from [`GetCurrentZeroTimestamp`](iouseraudioclockdevice/getcurrentzerotimestamp.md). In other words, if [`GetCurrentZeroTimestamp`](iouseraudioclockdevice/getcurrentzerotimestamp.md) returns a sample time of `x`, the host can expect that the next valid timestamp it recieves will be `x + in_zero_timestamp_period`.
+The parameter indicates the number of sample frames the host can expect between successive timestamps returned from [`GetCurrentZeroTimestamp`](./getcurrentzerotimestamp.md). In other words, if [`GetCurrentZeroTimestamp`](./getcurrentzerotimestamp.md) returns a sample time of `x`, the host can expect that the next valid timestamp it recieves will be `x + in_zero_timestamp_period`.
 
-Only set this value during the [`PerformDeviceConfigurationChange`](iouseraudioclockdevice/performdeviceconfigurationchange.md) call. If you need to change the value at any other time, call [`RequestDeviceConfigurationChange`](iouseraudioclockdevice/requestdeviceconfigurationchange.md). This allows I/O to stop and calls [`PerformDeviceConfigurationChange`](iouseraudioclockdevice/performdeviceconfigurationchange.md), during which you can set the value.
+Only set this value during the [`PerformDeviceConfigurationChange`](./performdeviceconfigurationchange.md) call. If you need to change the value at any other time, call [`RequestDeviceConfigurationChange`](./requestdeviceconfigurationchange.md). This allows I/O to stop and calls [`PerformDeviceConfigurationChange`](./performdeviceconfigurationchange.md), during which you can set the value.
 
 This method synchronizes by using the work queue created by the object.
 
@@ -32,17 +33,18 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [GetSupportsPrewarming](iouseraudioclockdevice/getsupportsprewarming.md)
+### Working with Timing and Latency
+- [GetSupportsPrewarming](./getsupportsprewarming.md)
   Returns a Boolean value that indicates clock device’s support for prewarming.
-- [GetZeroTimestampPeriod](iouseraudioclockdevice/getzerotimestampperiod.md)
+- [GetZeroTimestampPeriod](./getzerotimestampperiod.md)
   Gets the zero time stamp of the clock device.
-- [SetOutputLatency](iouseraudioclockdevice/setoutputlatency.md)
+- [SetOutputLatency](./setoutputlatency.md)
   Sets the output latency of the clock device.
-- [GetOutputLatency](iouseraudioclockdevice/getoutputlatency.md)
+- [GetOutputLatency](./getoutputlatency.md)
   Gets the output latency of the clock device.
-- [SetInputLatency](iouseraudioclockdevice/setinputlatency.md)
+- [SetInputLatency](./setinputlatency.md)
   Sets the input latency of the clock device.
-- [GetInputLatency](iouseraudioclockdevice/getinputlatency.md)
+- [GetInputLatency](./getinputlatency.md)
   Get the input latency of the clock device.
 
 

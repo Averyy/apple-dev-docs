@@ -1,7 +1,8 @@
 # CGImageMetadataTagGetType(_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type of the metadata tag’s value.
 
@@ -20,13 +21,17 @@ Returns the type of the metadata tag’s value.
 func CGImageMetadataTagGetType(_ tag: CGImageMetadataTag) -> CGImageMetadataType
 ```
 
+```c
+extern CGImageMetadataType CGImageMetadataTagGetType(CGImageMetadataTagRef tag);
+```
+
 #### Return Value
 
-A constant that indicates the type of the value. For a list of possible return values, see [`CGImageMetadataType`](cgimagemetadatatype.md).
+A constant that indicates the type of the value. For a list of possible return values, see [`CGImageMetadataType`](./cgimagemetadatatype.md).
 
 #### Discussion
 
-To get the value itself, call [`CGImageMetadataTagCopyValue(_:)`](cgimagemetadatatagcopyvalue(_:).md). Metadata tags store string, number, and Boolean values using the [`CGImageMetadataType.string`](cgimagemetadatatype/string.md) type.
+To get the value itself, call [`CGImageMetadataTagCopyValue(_:)`](./cgimagemetadatatagcopyvalue%28_%29.md). Metadata tags store string, number, and Boolean values using the [`CGImageMetadataType.string`](./cgimagemetadatatype/string.md) type.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ To get the value itself, call [`CGImageMetadataTagCopyValue(_:)`](cgimagemetadat
 
 ## See Also
 
-- [enum CGImageMetadataType](cgimagemetadatatype.md)
+### Getting the Tag Type
+- [enum CGImageMetadataType](./cgimagemetadatatype.md)
   Constants that indicate the XMP type for a metadata tag.
 
 

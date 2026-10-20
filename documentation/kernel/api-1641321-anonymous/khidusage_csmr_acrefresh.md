@@ -1,14 +1,15 @@
 # kHIDUsage_Csmr_ACRefresh
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Csmr_ACRefresh = 0x227
 ```
 

@@ -1,7 +1,8 @@
 # HKPredicateKeyPathClinicalRecordFHIRResourceIdentifier
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key path for accessing the clinical record’s Fast Healthcare Interoperability Resources (FHIR) identifier.
 
@@ -18,13 +19,18 @@ The key path for accessing the clinical record’s Fast Healthcare Interoperabil
 let HKPredicateKeyPathClinicalRecordFHIRResourceIdentifier: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathClinicalRecordFHIRResourceIdentifier;
+```
+
 #### Discussion
 
 The FHIR resource identifier is only unique for a particular resource type from a given source. To uniquely identify a FHIR resource, you must compare the identifier, the resource type, and the source.
 
 ## See Also
 
-- [let HKPredicateKeyPathClinicalRecordFHIRResourceType: String](hkpredicatekeypathclinicalrecordfhirresourcetype.md)
+### Clinical record keys
+- [let HKPredicateKeyPathClinicalRecordFHIRResourceType: String](./hkpredicatekeypathclinicalrecordfhirresourcetype.md)
   The key path for accessing the resource type of a Fast Healthcare Interoperability Resources (FHIR) record.
 
 

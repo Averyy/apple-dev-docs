@@ -1,7 +1,8 @@
 # callAsFunction()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the current window.
 
@@ -21,21 +22,22 @@ Dismisses the current window.
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`dismissWindow`](environmentvalues/dismisswindow.md) action:
+Don’t call this method directly. SwiftUI calls it when you call the [`dismissWindow`](../environmentvalues/dismisswindow.md) action:
 
 ```swift
 dismissWindow()
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations#Methods-with-Special-Names) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations#Methods-with-Special-Names) in *The Swift Programming Language*.
 
 ## See Also
 
-- [func callAsFunction(id: String)](dismisswindowaction/callasfunction(id:).md)
+### Calling the action
+- [func callAsFunction(id: String)](./callasfunction%28id%29.md)
   Dismisses the window that’s associated with the specified identifier.
-- [func callAsFunction<D>(id: String, value: D)](dismisswindowaction/callasfunction(id:value:).md)
+- [func callAsFunction<D>(id: String, value: D)](./callasfunction%28id,value%29.md)
   Dismisses the window defined by the window group that is presenting the specified value type and that’s associated with the specified identifier.
-- [func callAsFunction<D>(value: D)](dismisswindowaction/callasfunction(value:).md)
+- [func callAsFunction<D>(value: D)](./callasfunction%28value%29.md)
   Dismisses the window defined by the window group that is presenting the specified value type.
 
 

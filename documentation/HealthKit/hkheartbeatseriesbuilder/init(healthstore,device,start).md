@@ -1,7 +1,8 @@
 # init(healthStore:device:start:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new heartbeat series builder.
 
@@ -19,6 +20,10 @@ Creates a new heartbeat series builder.
 init(healthStore: HKHealthStore, device: HKDevice?, start startDate: Date)
 ```
 
+```objc
+- (instancetype) initWithHealthStore:(HKHealthStore *) healthStore device:(HKDevice *) device startDate:(NSDate *) startDate;
+```
+
 ## Parameters
 
 - `healthStore`: The HealthKit store.
@@ -27,7 +32,8 @@ init(healthStore: HKHealthStore, device: HKDevice?, start startDate: Date)
 
 ## See Also
 
-- [class var maximumCount: Int](hkheartbeatseriesbuilder/maximumcount.md)
+### Creating a Heartbeat Series Builder
+- [class var maximumCount: Int](./maximumcount.md)
   The maximum number of heartbeats you can add to the sample.
 
 

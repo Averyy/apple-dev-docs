@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Create ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the given position.
 
@@ -17,6 +18,24 @@ Accesses the element at the given position.
 
 ```swift
 subscript(index: Int) -> MLDataValue { get }
+```
+
+**Other overloads**:
+
+```swift
+subscript(mask: MLDataColumn<Bool>) -> MLUntypedColumn { get }
+```
+
+```swift
+subscript(mask: MLUntypedColumn) -> MLUntypedColumn { get }
+```
+
+```swift
+subscript(slice: Range<Int>) -> MLUntypedColumn { get }
+```
+
+```swift
+subscript<R>(slice: R) -> MLUntypedColumn where R : RangeExpression, R.Bound == Int { get }
 ```
 
 #### Return Value

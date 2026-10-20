@@ -1,7 +1,8 @@
 # componentKey
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Unique key that identifies text formatting view component.
 
@@ -15,6 +16,10 @@ Unique key that identifies text formatting view component.
 
 ```swift
 var componentKey: UITextFormattingViewController.ComponentKey { get }
+```
+
+```objc
+@property (nonatomic, readonly) UITextFormattingViewControllerComponentKey componentKey;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(name:protectionClass:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an on-device index with the specified name and data protection class.
 
@@ -18,9 +19,13 @@ Returns an on-device index with the specified name and data protection class.
 init(name: String, protectionClass: FileProtectionType?)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name protectionClass:(NSFileProtectionType) protectionClass;
+```
+
 ## Mentions
 
-- [Adding your app’s content to Spotlight indexes](adding-your-app-s-content-to-spotlight-indexes.md)
+- [Adding your app’s content to Spotlight indexes](../adding-your-app-s-content-to-spotlight-indexes.md)
 
 #### Return Value
 
@@ -33,13 +38,14 @@ Use this method to specify a protection class for an index. You can specify a de
 ## Parameters
 
 - `name`: A name that pertains to your custom organization.
-- `protectionClass`: The file protection class. Acceptable values are [`none`](https://developer.apple.com/documentation/foundation/fileprotectiontype/none), [`complete`](https://developer.apple.com/documentation/foundation/fileprotectiontype/complete), [`completeUnlessOpen`](https://developer.apple.com/documentation/foundation/fileprotectiontype/completeunlessopen), or [`completeUntilFirstUserAuthentication`](https://developer.apple.com/documentation/foundation/fileprotectiontype/completeuntilfirstuserauthentication).
+- `protectionClass`: The file protection class. Acceptable values are [`none`](../../Foundation/fileprotectiontype/none.md), [`complete`](../../Foundation/fileprotectiontype/complete.md), [`completeUnlessOpen`](../../Foundation/fileprotectiontype/completeunlessopen.md), or [`completeUntilFirstUserAuthentication`](../../Foundation/fileprotectiontype/completeuntilfirstuserauthentication.md).
 
 ## See Also
 
-- [class func `default`() -> Self](cssearchableindex/default.md)
+### Creating an index
+- [class func `default`() -> Self](./default%28%29.md)
   Returns the default on-device index.
-- [init(name: String)](cssearchableindex/init(name:).md)
+- [init(name: String)](./init%28name%29.md)
   Returns an on-device index with the specified name.
 
 

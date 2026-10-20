@@ -1,7 +1,8 @@
 # IOUSBHostCIPortStatus
 
 **Framework**: IOUSBHost  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,12 +14,17 @@
 typealias IOUSBHostCIPortStatus = UInt32
 ```
 
+```c
+typedef uint32_t IOUSBHostCIPortStatus;
+```
+
 ## See Also
 
-- [typealias IOUSBHostCIDoorbell](iousbhostcidoorbell.md)
-- [typealias IOUSBHostControllerInterfaceCommandHandler](iousbhostcontrollerinterfacecommandhandler.md)
-- [typealias IOUSBHostControllerInterfaceDoorbellHandler](iousbhostcontrollerinterfacedoorbellhandler.md)
-- [typealias IOUSBHostIsochronousTransactionCompletionHandler](iousbhostisochronoustransactioncompletionhandler.md)
+### Data Types
+- [typealias IOUSBHostCIDoorbell](./iousbhostcidoorbell.md)
+- [typealias IOUSBHostControllerInterfaceCommandHandler](./iousbhostcontrollerinterfacecommandhandler.md)
+- [typealias IOUSBHostControllerInterfaceDoorbellHandler](./iousbhostcontrollerinterfacedoorbellhandler.md)
+- [typealias IOUSBHostIsochronousTransactionCompletionHandler](./iousbhostisochronoustransactioncompletionhandler.md)
 
 
 ---

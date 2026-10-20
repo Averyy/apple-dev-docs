@@ -1,7 +1,8 @@
 # minPixelClock
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Minimum pixel clock frequency in Hz, with error.
 
@@ -10,7 +11,7 @@ Minimum pixel clock frequency in Hz, with error.
 
 ## Declaration
 
-```swift
+```c
 UInt64 minPixelClock;
 ```
 

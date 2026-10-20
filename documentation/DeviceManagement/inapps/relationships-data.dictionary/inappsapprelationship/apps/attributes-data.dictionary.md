@@ -1,28 +1,29 @@
 # InApps.Relationships.InAppsAppRelationship.Apps.Attributes
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 ## Declaration
 
-```swift
+```
 object InApps.Relationships.InAppsAppRelationship.Apps.Attributes
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Artwork](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/artwork-data.dictionary.md)
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.ContentRatingsBySystem](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/contentratingsbysystem-data.dictionary.md)
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.DescriptionAttribute](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/descriptionattribute.md)
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.FileSizeByDevice](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/filesizebydevice-data.dictionary.md)
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.LatestVersionInfo](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/latestversioninfo-data.dictionary.md)
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Offers](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/offers-data.dictionary.md)
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.RequirementsByDeviceFamily](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/requirementsbydevicefamily-data.dictionary.md)
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.ScreenshotsByType](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/screenshotsbytype-data.dictionary.md)
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.TaxExclusivePrices](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/taxexclusiveprices-data.dictionary.md)
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.UserRating](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/userrating-data.dictionary.md)
-- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.VersionHistory](inapps/relationships-data.dictionary/inappsapprelationship/apps/attributes-data.dictionary/versionhistory-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Artwork](./attributes-data.dictionary/artwork-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.ContentRatingsBySystem](./attributes-data.dictionary/contentratingsbysystem-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.DescriptionAttribute](./attributes-data.dictionary/descriptionattribute.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.FileSizeByDevice](./attributes-data.dictionary/filesizebydevice-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.LatestVersionInfo](./attributes-data.dictionary/latestversioninfo-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.Offers](./attributes-data.dictionary/offers-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.RequirementsByDeviceFamily](./attributes-data.dictionary/requirementsbydevicefamily-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.ScreenshotsByType](./attributes-data.dictionary/screenshotsbytype-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.TaxExclusivePrices](./attributes-data.dictionary/taxexclusiveprices-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.UserRating](./attributes-data.dictionary/userrating-data.dictionary.md)
+- [object InApps.Relationships.InAppsAppRelationship.Apps.Attributes.VersionHistory](./attributes-data.dictionary/versionhistory-data.dictionary.md)
 
 ## Properties
 

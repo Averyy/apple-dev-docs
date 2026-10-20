@@ -1,7 +1,8 @@
 # nw_ws_opcode_binary
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A binary data message.
 
@@ -20,11 +21,16 @@ A binary data message.
 var nw_ws_opcode_binary: nw_ws_opcode_t { get }
 ```
 
+```c
+nw_ws_opcode_binary
+```
+
 ## See Also
 
-- [var nw_ws_opcode_text: nw_ws_opcode_t](nw_ws_opcode_text.md)
+### Data Types
+- [var nw_ws_opcode_text: nw_ws_opcode_t](./nw_ws_opcode_text.md)
   A text data message.
-- [var nw_ws_opcode_cont: nw_ws_opcode_t](nw_ws_opcode_cont.md)
+- [var nw_ws_opcode_cont: nw_ws_opcode_t](./nw_ws_opcode_cont.md)
   A continuation message.
 
 

@@ -1,18 +1,19 @@
 # CFMachPortCreate(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a CFMachPort object with a new Mach port.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,20 +21,25 @@ Creates a CFMachPort object with a new Mach port.
 func CFMachPortCreate(_ allocator: CFAllocator!, _ callout: CFMachPortCallBack!, _ context: UnsafeMutablePointer<CFMachPortContext>!, _ shouldFreeInfo: UnsafeMutablePointer<DarwinBoolean>!) -> CFMachPort!
 ```
 
+```c
+extern CFMachPortRefCFMachPortCreate(CFAllocatorRef allocator, CFMachPortCallBack callout, CFMachPortContext *context, Boolean *shouldFreeInfo);
+```
+
 #### Return Value
 
-The new CFMachPort object or `NULL` on failure. The CFMachPort object has both send and receive rights. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The new CFMachPort object or `NULL` on failure. The CFMachPort object has both send and receive rights. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
-- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](kcfallocatordefault.md) to use the current default allocator.
+- `allocator`: The allocator to use to allocate memory for the new object. Pass `NULL` or [`kCFAllocatorDefault`](./kcfallocatordefault.md) to use the current default allocator.
 - `callout`: The callback function invoked when a message is received on the new Mach port.
 - `context`: A structure holding contextual information for the new Mach port. The function copies the information out of the structure, so the memory pointed to by `context` does not need to persist beyond the function call.
 - `shouldFreeInfo`: A flag set by the function to indicate whether the `info` member of `context` should be freed. The flag is set to `true` on failure, `false` otherwise. `shouldFreeInfo` can be `NULL`.
 
 ## See Also
 
-- [func CFMachPortCreateWithPort(CFAllocator!, mach_port_t, CFMachPortCallBack!, UnsafeMutablePointer<CFMachPortContext>!, UnsafeMutablePointer<DarwinBoolean>!) -> CFMachPort!](cfmachportcreatewithport(_:_:_:_:_:).md)
+### Creating a CFMachPort Object
+- [func CFMachPortCreateWithPort(CFAllocator!, mach_port_t, CFMachPortCallBack!, UnsafeMutablePointer<CFMachPortContext>!, UnsafeMutablePointer<DarwinBoolean>!) -> CFMachPort!](./cfmachportcreatewithport%28_,_,_,_,_%29.md)
   Creates a CFMachPort object for a pre-existing native Mach port.
 
 

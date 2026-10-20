@@ -1,7 +1,8 @@
 # descriptor
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor for this function’s inputs, outputs, and states.
 

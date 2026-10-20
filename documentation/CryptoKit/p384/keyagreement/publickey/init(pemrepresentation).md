@@ -1,7 +1,8 @@
 # init(pemRepresentation:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a P-384 public key for key agreement from a Privacy-Enhanced Mail (PEM) representation.
 
@@ -26,15 +27,16 @@ init(pemRepresentation: String) throws
 
 ## See Also
 
-- [init<D>(rawRepresentation: D) throws](p384/keyagreement/publickey/init(rawrepresentation:).md)
+### Creating a public key
+- [init<D>(rawRepresentation: D) throws](./init%28rawrepresentation%29.md)
   Creates a P-384 public key for key agreement from a collection of bytes.
-- [init<Bytes>(compactRepresentation: Bytes) throws](p384/keyagreement/publickey/init(compactrepresentation:).md)
+- [init<Bytes>(compactRepresentation: Bytes) throws](./init%28compactrepresentation%29.md)
   Creates a P-384 public key for key agreement from a compact representation of the key.
-- [init<Bytes>(derRepresentation: Bytes) throws](p384/keyagreement/publickey/init(derrepresentation:).md)
+- [init<Bytes>(derRepresentation: Bytes) throws](./init%28derrepresentation%29.md)
   Creates a P-384 public key for key agreement from a Distinguished Encoding Rules (DER) encoded representation.
-- [init<Bytes>(x963Representation: Bytes) throws](p384/keyagreement/publickey/init(x963representation:).md)
+- [init<Bytes>(x963Representation: Bytes) throws](./init%28x963representation%29.md)
   Creates a P-384 public key for key agreement from an ANSI x9.63 representation.
-- [init<Bytes>(compressedRepresentation: Bytes) throws](p384/keyagreement/publickey/init(compressedrepresentation:).md)
+- [init<Bytes>(compressedRepresentation: Bytes) throws](./init%28compressedrepresentation%29.md)
   Creates a P-384 public key for key agreement from a compressed representation of the key.
 
 

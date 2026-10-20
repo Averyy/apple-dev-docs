@@ -1,7 +1,8 @@
 # lowercased()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a lowercase version of the string.
 
@@ -34,11 +35,12 @@ print(cafe.lowercased())
 // Prints "bbq café 🍵"
 ```
 
-> **Note**: O(*n*)
+> **Complexity**: O(*n*)
 
 ## See Also
 
-- [func uppercased() -> String](string/uppercased.md)
+### Changing Case
+- [func uppercased() -> String](./uppercased%28%29.md)
   Returns an uppercase version of the string.
 
 

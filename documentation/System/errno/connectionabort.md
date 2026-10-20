@@ -1,7 +1,8 @@
 # connectionAbort
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Software caused a connection abort.
 
@@ -22,7 +23,7 @@ static var connectionAbort: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,27 +33,28 @@ The corresponding C error is `ECONNABORTED`.
 
 ## See Also
 
-- [static var connectionRefused: Errno](errno/connectionrefused.md)
+### Network Errors
+- [static var connectionRefused: Errno](./connectionrefused.md)
   Connection refused.
-- [static var connectionReset: Errno](errno/connectionreset.md)
+- [static var connectionReset: Errno](./connectionreset.md)
   Connection reset by peer.
-- [static var hostIsDown: Errno](errno/hostisdown.md)
+- [static var hostIsDown: Errno](./hostisdown.md)
   The host is down.
-- [static var messageTooLong: Errno](errno/messagetoolong.md)
+- [static var messageTooLong: Errno](./messagetoolong.md)
   Message too long.
-- [static var networkDown: Errno](errno/networkdown.md)
+- [static var networkDown: Errno](./networkdown.md)
   Network is down.
-- [static var networkReset: Errno](errno/networkreset.md)
+- [static var networkReset: Errno](./networkreset.md)
   Network dropped connection on reset.
-- [static var networkUnreachable: Errno](errno/networkunreachable.md)
+- [static var networkUnreachable: Errno](./networkunreachable.md)
   Network is unreachable.
-- [static var noBufferSpace: Errno](errno/nobufferspace.md)
+- [static var noBufferSpace: Errno](./nobufferspace.md)
   No buffer space available.
-- [static var noRouteToHost: Errno](errno/noroutetohost.md)
+- [static var noRouteToHost: Errno](./noroutetohost.md)
   No route to host.
-- [static var notSupported: Errno](errno/notsupported.md)
+- [static var notSupported: Errno](./notsupported.md)
   Not supported.
-- [static var timedOut: Errno](errno/timedout.md)
+- [static var timedOut: Errno](./timedout.md)
   Operation timed out.
 
 

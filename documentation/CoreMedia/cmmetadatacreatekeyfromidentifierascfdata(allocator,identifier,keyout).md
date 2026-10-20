@@ -1,7 +1,8 @@
 # CMMetadataCreateKeyFromIdentifierAsCFData(allocator:identifier:keyOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a copy of the key by using an identifier, and results in a core foundation data object.
 
@@ -20,9 +21,13 @@ Creates a copy of the key by using an identifier, and results in a core foundati
 func CMMetadataCreateKeyFromIdentifierAsCFData(allocator: CFAllocator?, identifier: CFString, keyOut: UnsafeMutablePointer<CFData?>) -> OSStatus
 ```
 
+```c
+extern OSStatus CMMetadataCreateKeyFromIdentifierAsCFData(CFAllocatorRef allocator, CFStringRef identifier, CFDataRef*keyOut);
+```
+
 #### Return Value
 
-If successful, a nonzero result code. See [`Metadata Identifier Error Codes`](metadata-identifier-errors.md).
+If successful, a nonzero result code. See [Metadata Identifier Error Codes](./metadata-identifier-errors.md).
 
 #### Discussion
 
@@ -36,11 +41,12 @@ The bytes in the `CFData` correspond to how they are serialized in the file.
 
 ## See Also
 
-- [func CMMetadataCreateIdentifierForKeyAndKeySpace(allocator: CFAllocator?, key: CFTypeRef, keySpace: CFString, identifierOut: UnsafeMutablePointer<CFString?>) -> OSStatus](cmmetadatacreateidentifierforkeyandkeyspace(allocator:key:keyspace:identifierout:).md)
+### Creating Metadata Identifiers
+- [func CMMetadataCreateIdentifierForKeyAndKeySpace(allocator: CFAllocator?, key: CFTypeRef, keySpace: CFString, identifierOut: UnsafeMutablePointer<CFString?>) -> OSStatus](./cmmetadatacreateidentifierforkeyandkeyspace%28allocator,key,keyspace,identifierout%29.md)
   Creates a URL-like string identifier that represents a key or keyspace tuple.
-- [func CMMetadataCreateKeyFromIdentifier(allocator: CFAllocator?, identifier: CFString, keyOut: UnsafeMutablePointer<CFTypeRef?>) -> OSStatus](cmmetadatacreatekeyfromidentifier(allocator:identifier:keyout:).md)
+- [func CMMetadataCreateKeyFromIdentifier(allocator: CFAllocator?, identifier: CFString, keyOut: UnsafeMutablePointer<CFTypeRef?>) -> OSStatus](./cmmetadatacreatekeyfromidentifier%28allocator,identifier,keyout%29.md)
   Creates a copy of the key by using an identifier.
-- [func CMMetadataCreateKeySpaceFromIdentifier(allocator: CFAllocator?, identifier: CFString, keySpaceOut: UnsafeMutablePointer<CFString?>) -> OSStatus](cmmetadatacreatekeyspacefromidentifier(allocator:identifier:keyspaceout:).md)
+- [func CMMetadataCreateKeySpaceFromIdentifier(allocator: CFAllocator?, identifier: CFString, keySpaceOut: UnsafeMutablePointer<CFString?>) -> OSStatus](./cmmetadatacreatekeyspacefromidentifier%28allocator,identifier,keyspaceout%29.md)
   Creates a copy of the keyspace by using an identifier.
 
 

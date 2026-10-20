@@ -1,7 +1,8 @@
 # SummaryColumnIDs
 
 **Framework**: TabularData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The summary data frame column identifiers.
 
@@ -23,44 +24,45 @@ enum SummaryColumnIDs
 ## Topics
 
 ### Type Properties
-- [static let columnName: ColumnID<String>](summarycolumnids/columnname.md)
+- [static let columnName: ColumnID<String>](./summarycolumnids/columnname.md)
   The identifier that represents the summary’s column that contains the column names in a data frame.
-- [static let firstQuartile: ColumnID<Double>](summarycolumnids/firstquartile.md)
+- [static let firstQuartile: ColumnID<Double>](./summarycolumnids/firstquartile.md)
   The identifier that represents the summary’s column of first quartiles.
-- [static let maximum: ColumnID<Double>](summarycolumnids/maximum.md)
+- [static let maximum: ColumnID<Double>](./summarycolumnids/maximum.md)
   The identifier that represents the summary’s column of maximums.
-- [static let mean: ColumnID<Double>](summarycolumnids/mean.md)
+- [static let mean: ColumnID<Double>](./summarycolumnids/mean.md)
   The identifier that represents the summary’s column of arithmetic means.
-- [static let median: ColumnID<Double>](summarycolumnids/median.md)
+- [static let median: ColumnID<Double>](./summarycolumnids/median.md)
   The identifier that represents the summary’s column of medians.
-- [static let minimum: ColumnID<Double>](summarycolumnids/minimum.md)
+- [static let minimum: ColumnID<Double>](./summarycolumnids/minimum.md)
   The identifier that represents the summary’s column of minimums.
-- [static let mode: ColumnID<[Any]>](summarycolumnids/mode.md)
+- [static let mode: ColumnID<[Any]>](./summarycolumnids/mode.md)
   The identifier that represents the summary’s column of most frequent elements.
-- [static let noneCount: ColumnID<Int>](summarycolumnids/nonecount.md)
+- [static let noneCount: ColumnID<Int>](./summarycolumnids/nonecount.md)
   The identifier that represents the summary’s column of missing counts.
-- [static let someCount: ColumnID<Int>](summarycolumnids/somecount.md)
+- [static let someCount: ColumnID<Int>](./summarycolumnids/somecount.md)
   The identifier that represents the summary’s column of non-missing counts.
-- [static let standardDeviation: ColumnID<Double>](summarycolumnids/standarddeviation.md)
+- [static let standardDeviation: ColumnID<Double>](./summarycolumnids/standarddeviation.md)
   The identifier that represents the summary’s column of standard deviations.
-- [static let thirdQuartile: ColumnID<Double>](summarycolumnids/thirdquartile.md)
+- [static let thirdQuartile: ColumnID<Double>](./summarycolumnids/thirdquartile.md)
   The identifier that represents the summary’s column of third quartiles.
-- [static let uniqueCount: ColumnID<Int>](summarycolumnids/uniquecount.md)
+- [static let uniqueCount: ColumnID<Int>](./summarycolumnids/uniquecount.md)
   The identifier that represents the summary’s column of unique counts.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func summary() -> DataFrame](dataframe/summary.md)
+### Summarizing a Data Frame
+- [func summary() -> DataFrame](./dataframe/summary%28%29.md)
   Generates a data frame that summarizes the columns of the data frame.
-- [func summary(of: String...) -> DataFrame](dataframe/summary(of:).md)
+- [func summary(of: String...) -> DataFrame](./dataframe/summary%28of%29.md)
   Generates a data frame that summarizes the columns you select by name.
-- [func summary(ofColumns: Int...) -> DataFrame](dataframe/summary(ofcolumns:).md)
+- [func summary(ofColumns: Int...) -> DataFrame](./dataframe/summary%28ofcolumns%29.md)
   Generates a data frame that summarizes the columns you select by index.
 
 

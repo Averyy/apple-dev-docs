@@ -1,7 +1,8 @@
 # adding(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index path containing the nodes in the receiving index path plus another given index.
 
@@ -20,6 +21,10 @@ Returns an index path containing the nodes in the receiving index path plus anot
 func adding(_ index: Int) -> IndexPath
 ```
 
+```objc
+- (NSIndexPath *) indexPathByAddingIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
 A new index path containing the receiving index path’s indexes and `index`.
@@ -30,7 +35,8 @@ A new index path containing the receiving index path’s indexes and `index`.
 
 ## See Also
 
-- [func removingLastIndex() -> IndexPath](nsindexpath/removinglastindex.md)
+### Adding and Removing Nodes
+- [func removingLastIndex() -> IndexPath](./removinglastindex%28%29.md)
   Returns an index path with the nodes in the receiving index path, excluding the last one.
 
 

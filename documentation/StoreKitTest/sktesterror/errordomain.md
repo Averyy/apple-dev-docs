@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The domain of the error.
 

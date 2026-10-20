@@ -1,7 +1,8 @@
 # List locations
 
 **Framework**: Roster API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Returns a list of locations in an Apple School Manager organization.
 
@@ -16,7 +17,7 @@ Access to the `locations` resource requires authorization to either the `edu.use
 
 **Request**:
 
-```None
+```
 curl "https://api-school.apple.com/rosterapi/v1/locations?limit=1" -H "Authorization: Bearer ${TOKEN}"
 ```
 
@@ -36,16 +37,27 @@ curl "https://api-school.apple.com/rosterapi/v1/locations?limit=1" -H "Authoriza
 
 ## Parameters
 
+### Query Parameters
+
 - `limit` (string): The maximum number of locations to return. The default is 100.
-- `pageToken` (string): A token for paging through a large number of results. If the number of locations in the organization is greater than the `limit` parameter, pass the token returned in [`Locations`](locations.md).
+- `pageToken` (string): A token for paging through a large number of results. If the number of locations in the organization is greater than the `limit` parameter, pass the token returned in [`Locations`](./locations.md).
+
+## Responses
+
+- `200` OK (`Locations`, `application/json`): The request was successful.
+- `401` Unauthorized: The access token was invalid.
+- `403` Forbidden: You don’t have permission to access the locations.
+- `429`: The client made too many requests. The response includes an `X-Retry-After` header that indicates the number of seconds to wait before making another request.
+- `500` Internal Server Error: The server encountered an internal error.
 
 ## See Also
 
-- [Read a location](returns-a-specific-location-in-an-apple-school-manager-organization.md)
+### Information about locations
+- [Read a location](./returns-a-specific-location-in-an-apple-school-manager-organization.md)
   Returns a specific location in an Apple School Manager organization.
-- [object Location](location.md)
+- [object Location](./location.md)
   A location in an Apple School Manager organization.
-- [object Locations](locations.md)
+- [object Locations](./locations.md)
   A list of locations, with a token for pagination.
 
 

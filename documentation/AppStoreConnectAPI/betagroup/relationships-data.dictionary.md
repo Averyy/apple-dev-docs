@@ -1,7 +1,8 @@
 # BetaGroup.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,22 +11,22 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BetaGroup.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaGroup.Relationships.App](betagroup/relationships-data.dictionary/app-data.dictionary.md)
+- [object BetaGroup.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object BetaGroup.Relationships.BetaTesters](betagroup/relationships-data.dictionary/betatesters-data.dictionary.md)
+- [object BetaGroup.Relationships.BetaTesters](./relationships-data.dictionary/betatesters-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object BetaGroup.Relationships.Builds](betagroup/relationships-data.dictionary/builds-data.dictionary.md)
+- [object BetaGroup.Relationships.Builds](./relationships-data.dictionary/builds-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 ### Dictionaries
-- [object BetaGroup.Relationships.BetaRecruitmentCriteria](betagroup/relationships-data.dictionary/betarecruitmentcriteria-data.dictionary.md)
-- [object BetaGroup.Relationships.BetaRecruitmentCriterionCompatibleBuildCheck](betagroup/relationships-data.dictionary/betarecruitmentcriterioncompatiblebuildcheck-data.dictionary.md)
+- [object BetaGroup.Relationships.BetaRecruitmentCriteria](./relationships-data.dictionary/betarecruitmentcriteria-data.dictionary.md)
+- [object BetaGroup.Relationships.BetaRecruitmentCriterionCompatibleBuildCheck](./relationships-data.dictionary/betarecruitmentcriterioncompatiblebuildcheck-data.dictionary.md)
 
 ## Properties
 
@@ -37,7 +38,8 @@ object BetaGroup.Relationships
 
 ## See Also
 
-- [object BetaGroup.Attributes](betagroup/attributes-data.dictionary.md)
+### Objects
+- [object BetaGroup.Attributes](./attributes-data.dictionary.md)
   Attributes with values that describe a beta group update request.
 
 

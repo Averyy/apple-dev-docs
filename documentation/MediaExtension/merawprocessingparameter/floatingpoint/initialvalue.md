@@ -1,7 +1,8 @@
 # initialValue
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial value for this parameter as defined in the sequence metadata.
 
@@ -14,13 +15,18 @@ The initial value for this parameter as defined in the sequence metadata.
 var initialValue: Float { get }
 ```
 
+```objc
+@property (readonly) float initialValue;
+```
+
 ## See Also
 
-- [var currentValue: Float](merawprocessingparameter/floatingpoint/currentvalue.md)
+### Properties
+- [var currentValue: Float](./currentvalue.md)
   Get or set the current value for this parameter.
-- [var maximumValue: Float](merawprocessingparameter/floatingpoint/maximumvalue.md)
+- [var maximumValue: Float](./maximumvalue.md)
   The maximum value for this parameter.
-- [var minimumValue: Float](merawprocessingparameter/floatingpoint/minimumvalue.md)
+- [var minimumValue: Float](./minimumvalue.md)
   The minimum value for this parameter.
 
 

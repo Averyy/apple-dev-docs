@@ -1,7 +1,8 @@
 # TossableRepresentation.CubeFace.b
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 26.0+
@@ -14,11 +15,12 @@ case b
 
 ## See Also
 
-- [TossableRepresentation.CubeFace.a](tossablerepresentation/cubeface/a.md)
-- [TossableRepresentation.CubeFace.c](tossablerepresentation/cubeface/c.md)
-- [TossableRepresentation.CubeFace.d](tossablerepresentation/cubeface/d.md)
-- [TossableRepresentation.CubeFace.e](tossablerepresentation/cubeface/e.md)
-- [TossableRepresentation.CubeFace.f](tossablerepresentation/cubeface/f.md)
+### Faces
+- [TossableRepresentation.CubeFace.a](./a.md)
+- [TossableRepresentation.CubeFace.c](./c.md)
+- [TossableRepresentation.CubeFace.d](./d.md)
+- [TossableRepresentation.CubeFace.e](./e.md)
+- [TossableRepresentation.CubeFace.f](./f.md)
 
 
 ---

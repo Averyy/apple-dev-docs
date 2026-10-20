@@ -1,7 +1,8 @@
 # ceil()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an element-wise ceiling operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an element-wise ceiling operation to the current graph.
 ```swift
 func ceil() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

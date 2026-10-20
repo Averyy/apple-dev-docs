@@ -1,14 +1,15 @@
 # kThreadWaitPortSend
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12.4+
 
 ## Declaration
 
-```swift
+```c
 kThreadWaitPortSend = 0x04
 ```
 

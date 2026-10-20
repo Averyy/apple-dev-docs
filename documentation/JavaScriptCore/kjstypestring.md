@@ -1,7 +1,8 @@
 # kJSTypeString
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A primitive string value.
 
@@ -19,19 +20,24 @@ A primitive string value.
 var kJSTypeString: JSType { get }
 ```
 
+```c
+kJSTypeString
+```
+
 ## See Also
 
-- [var kJSTypeUndefined: JSType](kjstypeundefined.md)
+### Constants
+- [var kJSTypeUndefined: JSType](./kjstypeundefined.md)
   The unique undefined value.
-- [var kJSTypeNull: JSType](kjstypenull.md)
+- [var kJSTypeNull: JSType](./kjstypenull.md)
   The unique null value.
-- [var kJSTypeBoolean: JSType](kjstypeboolean.md)
+- [var kJSTypeBoolean: JSType](./kjstypeboolean.md)
   A primitive Boolean value.
-- [var kJSTypeNumber: JSType](kjstypenumber.md)
+- [var kJSTypeNumber: JSType](./kjstypenumber.md)
   A primitive number value.
-- [var kJSTypeObject: JSType](kjstypeobject.md)
+- [var kJSTypeObject: JSType](./kjstypeobject.md)
   An object value.
-- [var kJSTypeSymbol: JSType](kjstypesymbol.md)
+- [var kJSTypeSymbol: JSType](./kjstypesymbol.md)
   A primitive symbol value.
 
 

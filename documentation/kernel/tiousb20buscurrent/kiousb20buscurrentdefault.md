@@ -1,7 +1,8 @@
 # kIOUSB20BusCurrentDefault
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The default bus current.
 
@@ -10,7 +11,7 @@ The default bus current.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB20BusCurrentDefault = 500
 ```
 

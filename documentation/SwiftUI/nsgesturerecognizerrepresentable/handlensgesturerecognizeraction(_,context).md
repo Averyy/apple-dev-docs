@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles recognition of the represented `NSGestureRecognizer`.
@@ -24,6 +25,12 @@ If you implement this method, SwiftUI calls it when the wrapped gesture recogniz
 
 - `recognizer`: An instance of the represented gesture recognizer.
 - `context`: A context structure containing information about the current state of the system, such as the current coordinator instance.
+
+## Default Implementations
+
+### NSGestureRecognizerRepresentable Implementations
+- [func handleNSGestureRecognizerAction(Self.NSGestureRecognizerType, context: Self.Context)](./handlensgesturerecognizeraction%28_,context%29-8n3is.md)
+  Handles recognition of the represented `NSGestureRecognizer`.
 
 
 ---

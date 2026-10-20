@@ -1,7 +1,8 @@
 # operating_modes_t.VMNET_BRIDGED_MODE
 
 **Framework**: vmnet  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 case VMNET_BRIDGED_MODE
+```
+
+```c
+VMNET_BRIDGED_MODE
 ```
 
 

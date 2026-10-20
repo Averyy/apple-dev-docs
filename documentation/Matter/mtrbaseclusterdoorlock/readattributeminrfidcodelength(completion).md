@@ -1,7 +1,8 @@
 # readAttributeMinRFIDCodeLength(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMinRFIDCodeLength(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMinRFIDCodeLength() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeMinRFIDCodeLengthWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

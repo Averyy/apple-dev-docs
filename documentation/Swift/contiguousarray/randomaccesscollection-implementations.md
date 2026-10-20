@@ -1,40 +1,41 @@
 # RandomAccessCollection Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var endIndex: Int](contiguousarray/endindex.md)
+- [var endIndex: Int](./endindex.md)
   The array’s “past the end” position—that is, the position one greater than the last valid subscript argument.
-- [var indices: Range<Self.Index>](contiguousarray/indices-swift.property.md)
+- [var indices: Range<Self.Index>](./indices-swift.property.md)
   The indices that are valid for subscripting the collection, in ascending order.
-- [var startIndex: Int](contiguousarray/startindex.md)
+- [var startIndex: Int](./startindex.md)
   The position of the first element in a nonempty array.
 ### Instance Methods
-- [func distance(from: Int, to: Int) -> Int](contiguousarray/distance(from:to:).md)
+- [func distance(from: Int, to: Int) -> Int](./distance%28from,to%29.md)
   Returns the distance between two indices.
-- [func formIndex(after: inout Int)](contiguousarray/formindex(after:).md)
+- [func formIndex(after: inout Int)](./formindex%28after%29.md)
   Replaces the given index with its successor.
-- [func formIndex(before: inout Int)](contiguousarray/formindex(before:).md)
+- [func formIndex(before: inout Int)](./formindex%28before%29.md)
   Replaces the given index with its predecessor.
-- [func index(Int, offsetBy: Int) -> Int](contiguousarray/index(_:offsetby:).md)
+- [func index(Int, offsetBy: Int) -> Int](./index%28_,offsetby%29.md)
   Returns an index that is the specified distance from the given index.
-- [func index(Int, offsetBy: Int, limitedBy: Int) -> Int?](contiguousarray/index(_:offsetby:limitedby:).md)
+- [func index(Int, offsetBy: Int, limitedBy: Int) -> Int?](./index%28_,offsetby,limitedby%29.md)
   Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
-- [func index(after: Int) -> Int](contiguousarray/index(after:).md)
+- [func index(after: Int) -> Int](./index%28after%29.md)
   Returns the position immediately after the given index.
-- [func index(before: Int) -> Int](contiguousarray/index(before:).md)
+- [func index(before: Int) -> Int](./index%28before%29.md)
   Returns the position immediately before the given index.
 ### Subscripts
-- [subscript(Range<Int>) -> ArraySlice<Element>](contiguousarray/subscript(_:)-41wt7.md)
+- [subscript(Range<Int>) -> ArraySlice<Element>](./subscript%28_%29-41wt7.md)
   Accesses a contiguous subrange of the array’s elements.
-- [subscript(Int) -> Element](contiguousarray/subscript(_:)-899p6.md)
+- [subscript(Int) -> Element](./subscript%28_%29-899p6.md)
   Accesses the element at the specified position.
 ### Type Aliases
-- [ContiguousArray.Index](contiguousarray/index.md)
+- [ContiguousArray.Index](./index.md)
   The index type for arrays, `Int`.
-- [ContiguousArray.Indices](contiguousarray/indices.md)
+- [ContiguousArray.Indices](./indices.md)
   The type that represents the indices that are valid for subscripting an array, in ascending order.
 
 

@@ -1,14 +1,15 @@
 # CompleteAsyncIOBundled
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 void CompleteAsyncIOBundled(OSAction *action, uint32_t ioCompletionIndex, uint32_t ioCompletionCount, const unsigned int *actualByteCountArray, int actualByteCountArrayCount, const int *statusArray, int statusArrayCount, OSDispatchMethod supermethod);
 ```
 

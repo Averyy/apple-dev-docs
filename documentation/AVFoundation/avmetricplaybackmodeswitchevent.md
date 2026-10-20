@@ -1,7 +1,8 @@
 # AVMetricPlaybackModeSwitchEvent
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents a change in playback state, entering one of AVMetricPlaybackMode
 
@@ -20,6 +21,10 @@ Represents a change in playback state, entering one of AVMetricPlaybackMode
 class AVMetricPlaybackModeSwitchEvent
 ```
 
+```objc
+@interface AVMetricPlaybackModeSwitchEvent : AVMetricEvent
+```
+
 #### Overview
 
 Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
@@ -27,28 +32,29 @@ Subclasses of this type that are used from Swift must fulfill the requirements o
 ## Topics
 
 ### Identifying the playback mode
-- [var mode: AVMetricPlaybackMode](avmetricplaybackmodeswitchevent/mode.md)
+- [var mode: AVMetricPlaybackMode](./avmetricplaybackmodeswitchevent/mode.md)
   Returns the mode into which playback entered.
 
 ## Relationships
 
 ### Inherits From
-- [AVMetricEvent](avmetricevent.md)
+- [AVMetricEvent](./avmetricevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum AVMetricPlaybackMode](avmetricplaybackmode.md)
+### Playback mode
+- [enum AVMetricPlaybackMode](./avmetricplaybackmode.md)
   These constants are the possible playback modes returned by the property “mode” on AVMetricPlaybackModeSwitchEvent
 
 

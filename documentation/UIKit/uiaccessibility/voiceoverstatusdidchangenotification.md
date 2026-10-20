@@ -1,7 +1,8 @@
 # voiceOverStatusDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that UIKit posts when VoiceOver starts or stops.
 
@@ -19,19 +20,24 @@ nonisolated
 static let voiceOverStatusDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityVoiceOverStatusDidChangeNotification;
+```
+
 #### Discussion
 
-Use this notification to customize your app’s UI for VoiceOver users. For example, if you display a UI element that briefly overlays other parts of your UI, you can make the display persistent for VoiceOver users, but allow it to not appear for users who aren’t using VoiceOver. You can also use the [`isVoiceOverRunning`](uiaccessibility/isvoiceoverrunning.md) function to determine whether VoiceOver is currently running.
+Use this notification to customize your app’s UI for VoiceOver users. For example, if you display a UI element that briefly overlays other parts of your UI, you can make the display persistent for VoiceOver users, but allow it to not appear for users who aren’t using VoiceOver. You can also use the [`isVoiceOverRunning`](./isvoiceoverrunning.md) function to determine whether VoiceOver is currently running.
 
 Observe this notification using the default notification center. This notification doesn’t include a parameter.
 
 ## See Also
 
-- [static let announcement: UIAccessibility.Notification](uiaccessibility/notification/announcement.md)
+### VoiceOver
+- [static let announcement: UIAccessibility.Notification](./notification/announcement.md)
   A notification that an app posts when it needs to convey an announcement to the assistive app.
-- [static let announcementDidFinishNotification: NSNotification.Name](uiaccessibility/announcementdidfinishnotification.md)
+- [static let announcementDidFinishNotification: NSNotification.Name](./announcementdidfinishnotification.md)
   A notification that UIKit posts when the system finishes reading an announcement.
-- [let UIAccessibilityVoiceOverStatusChanged: String](uiaccessibilityvoiceoverstatuschanged.md)
+- [let UIAccessibilityVoiceOverStatusChanged: String](../uiaccessibilityvoiceoverstatuschanged.md)
   A notification that UIKit posts when VoiceOver starts or stops.
 
 

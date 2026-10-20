@@ -1,7 +1,8 @@
 # allowTransparentBackground
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the PDF may have a transparent background.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the PDF may have a transparent background
 
 ```swift
 var allowTransparentBackground: Bool { get set }
+```
+
+```objc
+@property (nonatomic) BOOL allowTransparentBackground;
 ```
 
 

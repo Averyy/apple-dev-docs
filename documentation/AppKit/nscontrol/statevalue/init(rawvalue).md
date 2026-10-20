@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a state value from a raw value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(rawValue: Int)
 
 ## See Also
 
-- [init(Int)](nscontrol/statevalue/init(_:).md)
+### Creating a State Value
+- [init(Int)](./init%28_%29.md)
   Initializes a control state object.
 
 

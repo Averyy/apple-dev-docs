@@ -1,12 +1,13 @@
 # centimeters
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The units are centimeters.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The units are centimeters.
 static let centimeters: NSAccessibility.RulerUnitValue
 ```
 
+```c
+extern NSAccessibilityRulerUnitValue const NSAccessibilityCentimetersUnitValue;
+```
+
 ## See Also
 
-- [static let inches: NSAccessibility.RulerUnitValue](nsaccessibility-swift.struct/rulerunitvalue/inches.md)
+### Units
+- [static let inches: NSAccessibility.RulerUnitValue](./inches.md)
   The units are inches.
-- [static let picas: NSAccessibility.RulerUnitValue](nsaccessibility-swift.struct/rulerunitvalue/picas.md)
+- [static let picas: NSAccessibility.RulerUnitValue](./picas.md)
   The units are picas.
-- [static let points: NSAccessibility.RulerUnitValue](nsaccessibility-swift.struct/rulerunitvalue/points.md)
+- [static let points: NSAccessibility.RulerUnitValue](./points.md)
   The units are points.
-- [static let unknown: NSAccessibility.RulerUnitValue](nsaccessibility-swift.struct/rulerunitvalue/unknown.md)
+- [static let unknown: NSAccessibility.RulerUnitValue](./unknown.md)
   The units are unknown.
 
 

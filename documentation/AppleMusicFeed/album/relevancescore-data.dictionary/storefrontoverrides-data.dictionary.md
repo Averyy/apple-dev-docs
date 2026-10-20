@@ -1,7 +1,8 @@
 # Album.RelevanceScore.StorefrontOverrides
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A mapping of storefront country code to relevance score.
 
@@ -10,7 +11,7 @@ A mapping of storefront country code to relevance score.
 
 ## Declaration
 
-```swift
+```
 object Album.RelevanceScore.StorefrontOverrides
 ```
 

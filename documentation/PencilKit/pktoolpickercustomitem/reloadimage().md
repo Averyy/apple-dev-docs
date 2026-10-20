@@ -1,7 +1,8 @@
 # reloadImage()
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a new image for the custom tool item from the image provider.
 
@@ -17,11 +18,15 @@ Requests a new image for the custom tool item from the image provider.
 func reloadImage()
 ```
 
+```objc
+- (void) reloadImage;
+```
+
 #### Discussion
 
-Calling this method requests a new image for the custom tool item from the [`imageProvider`](pktoolpickercustomitem/configuration-swift.struct/imageprovider.md) of the [`configuration`](pktoolpickercustomitem/configuration-v7e5.md).
+Calling this method requests a new image for the custom tool item from the [`imageProvider`](./configuration-swift.struct/imageprovider.md) of the [`configuration`](./configuration-v7e5.md).
 
-The system automatically calls this method when PencilKit attributes like [`color`](pktoolpickercustomitem/color.md) or [`width`](pktoolpickercustomitem/width.md) change. You can call this method when you need to generate a new image for the custom tool item that’s different from the current image.
+The system automatically calls this method when PencilKit attributes like [`color`](./color.md) or [`width`](./width.md) change. You can call this method when you need to generate a new image for the custom tool item that’s different from the current image.
 
 
 ---

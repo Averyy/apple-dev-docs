@@ -1,7 +1,8 @@
 # writeAttributeStructAttr(withValue:params:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeStructAttr(withValue value: MTRUnitTestingClusterSimpleStruct, params: MTRWriteParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeStructAttr(withValue value: MTRUnitTestingClusterSimpleStruct, params: MTRWriteParams?) async throws
+```
+
+```objc
+- (void) writeAttributeStructAttrWithValue:(MTRUnitTestingClusterSimpleStruct *) value params:(MTRWriteParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # InAppPurchaseVersion.Relationships.Localizations
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The localizations for the In-App Purchase version.
 
@@ -10,14 +11,14 @@ The localizations for the In-App Purchase version.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseVersion.Relationships.Localizations
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseVersion.Relationships.Localizations.Data](inapppurchaseversion/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseVersion.Relationships.Localizations.Data](./localizations-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -28,11 +29,12 @@ object InAppPurchaseVersion.Relationships.Localizations
 
 ## See Also
 
-- [object InAppPurchaseVersion.Relationships.InAppPurchase](inapppurchaseversion/relationships-data.dictionary/inapppurchase-data.dictionary.md)
+### Objects
+- [object InAppPurchaseVersion.Relationships.InAppPurchase](./inapppurchase-data.dictionary.md)
   The In-App Purchase for the In-App Purchase version.
-- [object InAppPurchaseVersion.Relationships.Image](inapppurchaseversion/relationships-data.dictionary/image-data.dictionary.md)
+- [object InAppPurchaseVersion.Relationships.Image](./image-data.dictionary.md)
   The review image for the In-App Purchase version.
-- [object InAppPurchaseVersion.Relationships.Images](inapppurchaseversion/relationships-data.dictionary/images-data.dictionary.md)
+- [object InAppPurchaseVersion.Relationships.Images](./images-data.dictionary.md)
   The review images for the In-App Purchase version.
 
 

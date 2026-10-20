@@ -1,12 +1,13 @@
 # addProgressMark(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the progress mark to the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Adds the progress mark to the receiver.
 func addProgressMark(_ progressMark: NSAnimation.Progress)
 ```
 
+```objc
+- (void) addProgressMark:(NSAnimationProgress) progressMark;
+```
+
 #### Discussion
 
-A progress mark represents a percentage of the animation completed. When the animation reaches a progress mark, an [`animation(_:didReachProgressMark:)`](nsanimationdelegate/animation(_:didreachprogressmark:).md) message is sent to the delegate and an [`progressMarkNotification`](nsanimation/progressmarknotification.md) is broadcast to all observers. You might receive multiple notifications of progress advances over multiple marks.
+A progress mark represents a percentage of the animation completed. When the animation reaches a progress mark, an [`animation(_:didReachProgressMark:)`](../nsanimationdelegate/animation%28_,didreachprogressmark%29.md) message is sent to the delegate and an [`progressMarkNotification`](./progressmarknotification.md) is broadcast to all observers. You might receive multiple notifications of progress advances over multiple marks.
 
 ## Parameters
 
@@ -24,11 +29,13 @@ A progress mark represents a percentage of the animation completed. When the ani
 
 ## See Also
 
-- [var currentProgress: NSAnimation.Progress](nsanimation/currentprogress.md)
+### Related Documentation
+- [var currentProgress: NSAnimation.Progress](./currentprogress.md)
   The current progress of the animation.
-- [func removeProgressMark(NSAnimation.Progress)](nsanimation/removeprogressmark(_:).md)
+### Managing Progress Marks
+- [func removeProgressMark(NSAnimation.Progress)](./removeprogressmark%28_%29.md)
   Removes progress mark from the receiver.
-- [var progressMarks: [NSNumber]](nsanimation/progressmarks.md)
+- [var progressMarks: [NSNumber]](./progressmarks.md)
   An array of floating-point numbers representing current progress marks.
 
 

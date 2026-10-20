@@ -1,7 +1,8 @@
 # boundarySupplementaryItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the supplementary items that are associated with the boundary edges of the entire layout, such as global headers and footers.
 
@@ -12,6 +13,10 @@ An array of the supplementary items that are associated with the boundary edges 
 
 ```swift
 var boundarySupplementaryItems: [NSCollectionLayoutBoundarySupplementaryItem] { get set }
+```
+
+```objc
+@property (copy) NSArray<NSCollectionLayoutBoundarySupplementaryItem *> * boundarySupplementaryItems;
 ```
 
 

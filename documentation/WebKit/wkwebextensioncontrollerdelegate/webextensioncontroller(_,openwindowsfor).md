@@ -1,7 +1,8 @@
 # webExtensionController(_:openWindowsFor:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an extension context requests the list of ordered open windows.
 
@@ -18,11 +19,15 @@ Called when an extension context requests the list of ordered open windows.
 optional func webExtensionController(_ controller: WKWebExtensionController, openWindowsFor extensionContext: WKWebExtensionContext) -> [any WKWebExtensionWindow]
 ```
 
+```objc
+- (NSArray<id<WKWebExtensionWindow>> *) webExtensionController:(WKWebExtensionController *) controller openWindowsForExtensionContext:(WKWebExtensionContext *) extensionContext;
+```
+
 #### Discussion
 
-This method should be implemented by the app to provide the extension with the ordered open windows. Depending on your app’s requirements, you may return different windows for each extension or the same windows for all extensions. The first window in the returned array must correspond to the currently focused window and match the result of [`webExtensionController(_:focusedWindowFor:)`](wkwebextensioncontrollerdelegate/webextensioncontroller(_:focusedwindowfor:).md).
+This method should be implemented by the app to provide the extension with the ordered open windows. Depending on your app’s requirements, you may return different windows for each extension or the same windows for all extensions. The first window in the returned array must correspond to the currently focused window and match the result of [`webExtensionController(_:focusedWindowFor:)`](./webextensioncontroller%28_,focusedwindowfor%29.md).
 
-If [`webExtensionController(_:focusedWindowFor:)`](wkwebextensioncontrollerdelegate/webextensioncontroller(_:focusedwindowfor:).md) returns `nil`, indicating that no window has focus or the focused window is not visible to the extension, the first window in the list returned by this method will be considered the presumed focused window. An empty result indicates no open windows are available for the extension. Defaults to an empty array if not implemented.
+If [`webExtensionController(_:focusedWindowFor:)`](./webextensioncontroller%28_,focusedwindowfor%29.md) returns `nil`, indicating that no window has focus or the focused window is not visible to the extension, the first window in the list returned by this method will be considered the presumed focused window. An empty result indicates no open windows are available for the extension. Defaults to an empty array if not implemented.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ If [`webExtensionController(_:focusedWindowFor:)`](wkwebextensioncontrollerdeleg
 
 ## See Also
 
-- [func webExtensionController(WKWebExtensionController, focusedWindowFor: WKWebExtensionContext) -> (any WKWebExtensionWindow)?](wkwebextensioncontrollerdelegate/webextensioncontroller(_:focusedwindowfor:).md)
+### Related Documentation
+- [func webExtensionController(WKWebExtensionController, focusedWindowFor: WKWebExtensionContext) -> (any WKWebExtensionWindow)?](./webextensioncontroller%28_,focusedwindowfor%29.md)
   Called when an extension context requests the currently focused window.
 
 

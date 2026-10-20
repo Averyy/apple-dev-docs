@@ -1,7 +1,8 @@
 # stepSize
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var stepSize: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat stepSize;
 ```
 
 

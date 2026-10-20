@@ -1,7 +1,8 @@
 # init(forExporting:asCopy:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a document picker that can export or copy the types of documents you specify.
 
@@ -17,6 +18,10 @@ Creates and returns a document picker that can export or copy the types of docum
 init(forExporting urls: [URL], asCopy: Bool)
 ```
 
+```objc
+- (instancetype) initForExportingURLs:(NSArray<NSURL *> *) urls asCopy:(BOOL) asCopy;
+```
+
 ## Parameters
 
 - `urls`: An array of documents that the document picker exports or copies.
@@ -24,13 +29,14 @@ init(forExporting urls: [URL], asCopy: Bool)
 
 ## See Also
 
-- [init?(coder: NSCoder)](uidocumentpickerviewcontroller/init(coder:).md)
+### Creating a document picker
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns an initialized object from data in a specified unarchiver.
-- [convenience init(forExporting: [URL])](uidocumentpickerviewcontroller/init(forexporting:).md)
+- [convenience init(forExporting: [URL])](./init%28forexporting%29.md)
   Creates and returns a document picker that can export the types of documents you specify.
-- [convenience init(forOpeningContentTypes: [UTType])](uidocumentpickerviewcontroller/init(foropeningcontenttypes:).md)
+- [convenience init(forOpeningContentTypes: [UTType])](./init%28foropeningcontenttypes%29.md)
   Creates and returns a document picker that can open the types of documents you specify.
-- [init(forOpeningContentTypes: [UTType], asCopy: Bool)](uidocumentpickerviewcontroller/init(foropeningcontenttypes:ascopy:).md)
+- [init(forOpeningContentTypes: [UTType], asCopy: Bool)](./init%28foropeningcontenttypes,ascopy%29.md)
   Creates and returns a document picker that can open or copy the types of documents you specify.
 
 

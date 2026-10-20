@@ -1,7 +1,8 @@
 # bitwiseAnd(_:ordering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic bitwise AND operation and return the old and new value, applying the specified memory ordering.
 
@@ -20,6 +21,8 @@ Perform an atomic bitwise AND operation and return the old and new value, applyi
 @discardableResult
 func bitwiseAnd(_ operand: UInt128, ordering: AtomicUpdateOrdering) -> (oldValue: UInt128, newValue: UInt128)
 ```
+
+Available when `Value` is `UInt128`.
 
 #### Return Value
 

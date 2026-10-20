@@ -1,7 +1,8 @@
 # lossOfSmell
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category type that records loss of smell as a symptom.
 
@@ -19,19 +20,24 @@ A category type that records loss of smell as a symptom.
 static let lossOfSmell: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierLossOfSmell;
+```
+
 #### Discussion
 
-These samples use values from the  [`HKCategoryValueSeverity`](hkcategoryvalueseverity.md) enumeration.
+These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 
 ## See Also
 
-- [static let lossOfTaste: HKCategoryTypeIdentifier](hkcategorytypeidentifier/lossoftaste.md)
+### Nose and Throat
+- [static let lossOfTaste: HKCategoryTypeIdentifier](./lossoftaste.md)
   A category type that records loss of taste as a symptom.
-- [static let runnyNose: HKCategoryTypeIdentifier](hkcategorytypeidentifier/runnynose.md)
+- [static let runnyNose: HKCategoryTypeIdentifier](./runnynose.md)
   A category type that records runny nose as a symptom.
-- [static let soreThroat: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sorethroat.md)
+- [static let soreThroat: HKCategoryTypeIdentifier](./sorethroat.md)
   A category type that records sore throat as a symptom.
-- [static let sinusCongestion: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sinuscongestion.md)
+- [static let sinusCongestion: HKCategoryTypeIdentifier](./sinuscongestion.md)
   A category type that records sinus congestion as a symptom.
 
 

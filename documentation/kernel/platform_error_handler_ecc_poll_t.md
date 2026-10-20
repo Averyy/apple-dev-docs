@@ -1,14 +1,15 @@
 # platform_error_handler_ecc_poll_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 14.2+
 
 ## Declaration
 
-```swift
+```c
 typedef int (*platform_error_handler_ecc_poll_t)(uint64_t *addrs, uint32_t *error_count);
 ```
 

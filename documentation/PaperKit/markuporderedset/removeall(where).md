@@ -1,7 +1,8 @@
 # removeAll(where:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all the elements that satisfy the given predicate.
 
@@ -24,15 +25,16 @@ mutating func removeAll(where shouldBeRemoved: (MarkupOrderedSet.Element) throws
 
 ## See Also
 
-- [func remove(MarkupOrderedSet.Element) -> MarkupOrderedSet.Element?](markuporderedset/remove(_:).md)
+### Removing elements
+- [func remove(MarkupOrderedSet.Element) -> MarkupOrderedSet.Element?](./remove%28_%29.md)
   Removes the given element from the set.
-- [func remove(at: Int) -> MarkupOrderedSet.Element](markuporderedset/remove(at:).md)
+- [func remove(at: Int) -> MarkupOrderedSet.Element](./remove%28at%29.md)
   Removes and returns the element at the specified position.
-- [func removeElement<T>(for: MarkupID<T>) -> T?](markuporderedset/removeelement(for:)-4pqof.md)
+- [func removeElement<T>(for: MarkupID<T>) -> T?](./removeelement%28for%29-4pqof.md)
   Removes the associated element for the given id from the set.
-- [func removeElement(for: MarkupOrderedSet.ElementID) -> MarkupOrderedSet.Element?](markuporderedset/removeelement(for:)-5khjd.md)
+- [func removeElement(for: MarkupOrderedSet.ElementID) -> MarkupOrderedSet.Element?](./removeelement%28for%29-5khjd.md)
   Removes the associated element for the given id from the set.
-- [func removeStroke(for: UUID) -> PKStroke?](markuporderedset/removestroke(for:).md)
+- [func removeStroke(for: UUID) -> PKStroke?](./removestroke%28for%29.md)
   Removes the associated stroke for the given id from the set.
 
 

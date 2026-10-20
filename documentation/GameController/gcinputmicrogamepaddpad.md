@@ -1,7 +1,8 @@
 # GCInputMicroGamepadDpad
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the micro gamepad’s primary directional pad.
 
@@ -19,13 +20,18 @@ The name of the micro gamepad’s primary directional pad.
 let GCInputMicroGamepadDpad: String
 ```
 
+```c
+extern NSString * const GCInputMicroGamepadDpad;
+```
+
 #### Discussion
 
 For the second-generation Siri Remote and later, this represents the entire touch surface.
 
 ## See Also
 
-- [var dpad: GCControllerDirectionPad](gcmicrogamepad/dpad.md)
+### Related Documentation
+- [var dpad: GCControllerDirectionPad](./gcmicrogamepad/dpad.md)
   The controller’s directional pad element.
 
 

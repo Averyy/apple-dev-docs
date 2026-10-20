@@ -1,17 +1,22 @@
 # isEqual(to:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the target IOBluetoothSDPUUID object with the given otherUUID object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func isEqual(to otherUUID: IOBluetoothSDPUUID!) -> Bool
+```
+
+```objc
+- (BOOL) isEqualToUUID:(IOBluetoothSDPUUID *) otherUUID;
 ```
 
 #### Return Value

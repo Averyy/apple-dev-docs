@@ -1,7 +1,8 @@
 # coordinateSeek(to:options:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Coordinates a seek to the specified time for all connected participants.
 
@@ -19,9 +20,13 @@ Coordinates a seek to the specified time for all connected participants.
 func coordinateSeek(to time: CMTime, options: AVDelegatingPlaybackCoordinatorSeekOptions = [])
 ```
 
+```objc
+- (void) coordinateSeekToTime:(CMTime) time options:(AVDelegatingPlaybackCoordinatorSeekOptions) options;
+```
+
 #### Discussion
 
-To end a suspension and also affect the group timing, see [`end(proposingNewTime:)`](avcoordinatedplaybacksuspension/end(proposingnewtime:).md).
+To end a suspension and also affect the group timing, see [`end(proposingNewTime:)`](../avcoordinatedplaybacksuspension/end%28proposingnewtime%29.md).
 
 > **Note**:  Calling this method while the coordinator is in a suspended state affects only the local playback object. It doesn’t affect group state, even after the suspension ends.
 
@@ -32,15 +37,16 @@ To end a suspension and also affect the group timing, see [`end(proposingNewTime
 
 ## See Also
 
-- [func coordinateRateChange(to: Float, options: AVDelegatingPlaybackCoordinatorRateChangeOptions)](avdelegatingplaybackcoordinator/coordinateratechange(to:options:).md)
+### Coordinating state changes
+- [func coordinateRateChange(to: Float, options: AVDelegatingPlaybackCoordinatorRateChangeOptions)](./coordinateratechange%28to,options%29.md)
   Coordinates a rate change across all participants, waiting for others to become ready, if necessary.
-- [func transitionToItem(withIdentifier: String?, proposingInitialTimingBasedOn: CMTimebase?)](avdelegatingplaybackcoordinator/transitiontoitem(withidentifier:proposinginitialtimingbasedon:).md)
+- [func transitionToItem(withIdentifier: String?, proposingInitialTimingBasedOn: CMTimebase?)](./transitiontoitem%28withidentifier,proposinginitialtimingbasedon%29.md)
   Tells the coordinator to transition to a new item.
-- [func reapplyCurrentItemStateToPlaybackControlDelegate()](avdelegatingplaybackcoordinator/reapplycurrentitemstatetoplaybackcontroldelegate.md)
+- [func reapplyCurrentItemStateToPlaybackControlDelegate()](./reapplycurrentitemstatetoplaybackcontroldelegate%28%29.md)
   Tells the coordinator to reissue current play state commands to synchronize the current item to the state of other participants.
-- [struct AVDelegatingPlaybackCoordinatorSeekOptions](avdelegatingplaybackcoordinatorseekoptions.md)
+- [struct AVDelegatingPlaybackCoordinatorSeekOptions](../avdelegatingplaybackcoordinatorseekoptions.md)
   Constants that define seek options.
-- [struct AVDelegatingPlaybackCoordinatorRateChangeOptions](avdelegatingplaybackcoordinatorratechangeoptions.md)
+- [struct AVDelegatingPlaybackCoordinatorRateChangeOptions](../avdelegatingplaybackcoordinatorratechangeoptions.md)
   Constants that define rate change options.
 
 

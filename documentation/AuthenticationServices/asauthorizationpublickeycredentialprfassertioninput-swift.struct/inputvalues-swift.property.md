@@ -1,7 +1,8 @@
 # inputValues
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input values to use when generating the PRF extension output, if specified.
 
@@ -20,11 +21,12 @@ let inputValues: ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues
 
 #### Discussion
 
-When also using [`perCredentialInputValues`](asauthorizationpublickeycredentialprfassertioninput-swift.struct/percredentialinputvalues.md), you may use the corresponding value from that dictionary instead.
+When also using [`perCredentialInputValues`](./percredentialinputvalues.md), you may use the corresponding value from that dictionary instead.
 
 ## See Also
 
-- [static func inputValues(ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues, perCredentialInputValues: [Data : ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues]?) -> ASAuthorizationPublicKeyCredentialPRFAssertionInput](asauthorizationpublickeycredentialprfassertioninput-swift.struct/inputvalues(_:percredentialinputvalues:).md)
+### Accessing input values
+- [static func inputValues(ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues, perCredentialInputValues: [Data : ASAuthorizationPublicKeyCredentialPRFAssertionInput.InputValues]?) -> ASAuthorizationPublicKeyCredentialPRFAssertionInput](./inputvalues%28_,percredentialinputvalues%29.md)
   The inputs for the PRF extension.
 
 

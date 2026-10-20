@@ -1,7 +1,8 @@
 # protectionClasses
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The protection types of the indexes you want to search.
 
@@ -18,13 +19,17 @@ The protection types of the indexes you want to search.
 var protectionClasses: [FileProtectionType] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSString *> * protectionClasses;
+```
+
 #### Discussion
 
 When creating an index to store your app’s data, you can associate a file protection type with that index to encrypt the data it contains. File protections prevent access to the data unless specific conditions occur. For example, you can make the data available only when the device is unlocked, or make it available after the first successful unlocking of the device. This property indicates which of your app’s protected indexes you want to search.
 
-Possible values for this property are [`complete`](https://developer.apple.com/documentation/foundation/fileprotectiontype/complete), [`completeUnlessOpen`](https://developer.apple.com/documentation/foundation/fileprotectiontype/completeunlessopen), and [`completeUntilFirstUserAuthentication`](https://developer.apple.com/documentation/foundation/fileprotectiontype/completeuntilfirstuserauthentication). By default, the system retrives the data protection class from the [`Data Protection Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.default-data-protection) entitlement, if it exists; otherwise, the default value is [`completeUntilFirstUserAuthentication`](https://developer.apple.com/documentation/foundation/fileprotectiontype/completeuntilfirstuserauthentication).
+Possible values for this property are [`complete`](../../Foundation/fileprotectiontype/complete.md), [`completeUnlessOpen`](../../Foundation/fileprotectiontype/completeunlessopen.md), and [`completeUntilFirstUserAuthentication`](../../Foundation/fileprotectiontype/completeuntilfirstuserauthentication.md). By default, the system retrives the data protection class from the [`Data Protection Entitlement`](../../BundleResources/entitlements/com.apple.developer.default-data-protection.md) entitlement, if it exists; otherwise, the default value is [`completeUntilFirstUserAuthentication`](../../Foundation/fileprotectiontype/completeuntilfirstuserauthentication.md).
 
-For more information on how to configure file protection types with an index, see [`Adding your app’s content to Spotlight indexes`](adding-your-app-s-content-to-spotlight-indexes.md).
+For more information on how to configure file protection types with an index, see [Adding your app’s content to Spotlight indexes](../adding-your-app-s-content-to-spotlight-indexes.md).
 
 
 ---

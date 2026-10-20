@@ -1,7 +1,8 @@
 # init(cellSize:cellHeight:walkableSlopeAngle:characterHeight:walkableClimb:characterRadius:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

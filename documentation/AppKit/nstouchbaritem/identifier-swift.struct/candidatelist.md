@@ -1,7 +1,8 @@
 # candidateList
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard identifier for a candidate list bar item.
 
@@ -14,13 +15,18 @@ The standard identifier for a candidate list bar item.
 static let candidateList: NSTouchBarItem.Identifier
 ```
 
+```c
+extern NSTouchBarItemIdentifier const NSTouchBarItemIdentifierCandidateList;
+```
+
 #### Discussion
 
-This value is the identifier for [`NSCandidateListTouchBarItem`](nscandidatelisttouchbaritem.md). Use a candidate list bar item to show word completion candidates to assist users typing text.
+This value is the identifier for [`NSCandidateListTouchBarItem`](../../nscandidatelisttouchbaritem.md). Use a candidate list bar item to show word completion candidates to assist users typing text.
 
 ## See Also
 
-- [static let characterPicker: NSTouchBarItem.Identifier](nstouchbaritem/identifier-swift.struct/characterpicker.md)
+### Creating identifiers for multiple choice items
+- [static let characterPicker: NSTouchBarItem.Identifier](./characterpicker.md)
   The standard identifier for selecting special characters such as Emoji.
 
 

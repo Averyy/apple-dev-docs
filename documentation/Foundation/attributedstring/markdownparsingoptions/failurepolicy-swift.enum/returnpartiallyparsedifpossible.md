@@ -1,7 +1,8 @@
 # AttributedString.MarkdownParsingOptions.FailurePolicy.returnPartiallyParsedIfPossible
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A policy to return a partially-parsed string, if possible.
 
@@ -26,7 +27,8 @@ With this policy, the returned string may include unparsed markup. If returning 
 
 ## See Also
 
-- [AttributedString.MarkdownParsingOptions.FailurePolicy.throwError](attributedstring/markdownparsingoptions/failurepolicy-swift.enum/throwerror.md)
+### Declaring Failure Policies
+- [AttributedString.MarkdownParsingOptions.FailurePolicy.throwError](./throwerror.md)
   A policy to throw an error from the initializer if parsing fails.
 
 

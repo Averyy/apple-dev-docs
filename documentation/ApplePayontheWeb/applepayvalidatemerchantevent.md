@@ -1,7 +1,8 @@
 # ApplePayValidateMerchantEvent
 
 **Framework**: Apple Pay on the Web  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event object that contains the validation URL.
 
@@ -11,31 +12,32 @@ An event object that contains the validation URL.
 
 ## Declaration
 
-```swift
+```
 interface ApplePayValidateMerchantEvent
 ```
 
 ## Mentions
 
-- [Providing Merchant Validation](providing-merchant-validation.md)
+- [Providing Merchant Validation](./providing-merchant-validation.md)
 
 #### Overview
 
-The event handler [`onvalidatemerchant`](applepaysession/onvalidatemerchant.md) receives this event object when the payment sheet is displayed.
+The event handler [`onvalidatemerchant`](./applepaysession/onvalidatemerchant.md) receives this event object when the payment sheet is displayed.
 
 ## Topics
 
 ### Accessing the Merchant Validation Event Attributes
-- [validationURL](applepayvalidatemerchantevent/validationurl.md)
+- [validationURL](./applepayvalidatemerchantevent/validationurl.md)
   The URL your server must use to validate itself and obtain a merchant session object.
 
 ## See Also
 
-- [begin](applepaysession/begin.md)
+### Getting merchant validation
+- [begin](./applepaysession/begin.md)
   Begins the merchant validation process.
-- [onvalidatemerchant](applepaysession/onvalidatemerchant.md)
+- [onvalidatemerchant](./applepaysession/onvalidatemerchant.md)
   An event handler the system calls when it displays the payment sheet.
-- [completeMerchantValidation](applepaysession/completemerchantvalidation.md)
+- [completeMerchantValidation](./applepaysession/completemerchantvalidation.md)
   Completes the validation for a merchant session.
 
 

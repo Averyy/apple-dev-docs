@@ -1,16 +1,19 @@
 # MXGPUMetric
 
 **Framework**: MetricKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing metrics about the use of the GPU.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`MetricResult`](./metricresult.md), and read the [`GPUTimeMetric`](./gputimemetric.md) case instead.
 
 ## Declaration
 
@@ -18,37 +21,42 @@ An object representing metrics about the use of the GPU.
 class MXGPUMetric
 ```
 
+```objc
+@interface MXGPUMetric : MXMetric
+```
+
 ## Topics
 
 ### Reading GPU use
-- [var cumulativeGPUTime: Measurement<UnitDuration>](mxgpumetric/cumulativegputime.md)
+- [var cumulativeGPUTime: Measurement<UnitDuration>](./mxgpumetric/cumulativegputime.md)
   The total amount of GPU time used by the app.
 
 ## Relationships
 
 ### Inherits From
-- [MXMetric](mxmetric.md)
+- [MXMetric](./mxmetric.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MXCellularConditionMetric](mxcellularconditionmetric.md)
+### Battery and resource metrics
+- [class MXCellularConditionMetric](./mxcellularconditionmetric.md)
   An object representing metrics about the condition of the cellular network.
-- [class MXCPUMetric](mxcpumetric.md)
+- [class MXCPUMetric](./mxcpumetric.md)
   An object representing metrics about the use of the CPU.
-- [class MXDisplayMetric](mxdisplaymetric.md)
+- [class MXDisplayMetric](./mxdisplaymetric.md)
   An object representing metrics about the power used to display the app on the screen.
-- [class MXLocationActivityMetric](mxlocationactivitymetric.md)
+- [class MXLocationActivityMetric](./mxlocationactivitymetric.md)
   An object representing metrics about the use of location-tracking features of a device.
-- [class MXNetworkTransferMetric](mxnetworktransfermetric.md)
+- [class MXNetworkTransferMetric](./mxnetworktransfermetric.md)
   An object representing metrics about network transfers.
 
 

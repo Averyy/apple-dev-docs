@@ -1,18 +1,19 @@
 # XCUIDevice.Appearance
 
 **Framework**: XCUIAutomation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate an interface style.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,33 +22,38 @@ Constants that indicate an interface style.
 enum Appearance
 ```
 
+```c
+enum XCUIDeviceAppearance : NSInteger;
+```
+
 ## Topics
 
 ### Appearances
-- [XCUIDevice.Appearance.unspecified](xcuidevice/appearance-swift.enum/unspecified.md)
+- [XCUIDevice.Appearance.unspecified](./appearance-swift.enum/unspecified.md)
   An unspecified interface style.
-- [XCUIDevice.Appearance.light](xcuidevice/appearance-swift.enum/light.md)
+- [XCUIDevice.Appearance.light](./appearance-swift.enum/light.md)
   The light interface style.
-- [XCUIDevice.Appearance.dark](xcuidevice/appearance-swift.enum/dark.md)
+- [XCUIDevice.Appearance.dark](./appearance-swift.enum/dark.md)
   The dark interface style.
 ### Initializers
-- [init?(rawValue: Int)](xcuidevice/appearance-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./appearance-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var system: XCUISystem](xcuidevice/system.md)
+### Interacting with the OS
+- [var system: XCUISystem](./system.md)
   An object that provides an interface to OS-specific properties and actions.
-- [var appearance: XCUIDevice.Appearance](xcuidevice/appearance-swift.property.md)
+- [var appearance: XCUIDevice.Appearance](./appearance-swift.property.md)
   The interface style of the device.
 
 

@@ -1,7 +1,8 @@
 # disablesAnimations
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether views should disable animations.
 
@@ -22,13 +23,14 @@ var disablesAnimations: Bool { get set }
 
 #### Discussion
 
-This value is `true` during the initial phase of a two-part transition update, to prevent [`animation(_:)`](view/animation(_:).md) from inserting new animations into the transaction.
+This value is `true` during the initial phase of a two-part transition update, to prevent [`animation(_:)`](../view/animation%28_%29.md) from inserting new animations into the transaction.
 
 ## See Also
 
-- [var animation: Animation?](transaction/animation.md)
+### Managing animations
+- [var animation: Animation?](./animation.md)
   The animation, if any, associated with the current state change.
-- [func addAnimationCompletion(criteria: AnimationCompletionCriteria, () -> Void)](transaction/addanimationcompletion(criteria:_:).md)
+- [func addAnimationCompletion(criteria: AnimationCompletionCriteria, () -> Void)](./addanimationcompletion%28criteria,_%29.md)
   Adds a completion to run when the animations created with this transaction are all complete.
 
 

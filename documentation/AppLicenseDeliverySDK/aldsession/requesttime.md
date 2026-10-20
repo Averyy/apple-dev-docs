@@ -1,7 +1,8 @@
 # requestTime
 
 **Framework**: App License Delivery SDK  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 the client time when the request was made
 

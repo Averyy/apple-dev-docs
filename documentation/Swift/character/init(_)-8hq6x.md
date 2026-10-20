@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a character containing the given Unicode scalar value.
 
@@ -26,11 +27,12 @@ init(_ content: Unicode.Scalar)
 
 ## See Also
 
-- [var unicodeScalars: Character.UnicodeScalarView](character/unicodescalars.md)
-- [Character.UnicodeScalarView](character/unicodescalarview.md)
-- [var isASCII: Bool](character/isascii.md)
+### Working with a Character’s Unicode Values
+- [var unicodeScalars: Character.UnicodeScalarView](./unicodescalars.md)
+- [Character.UnicodeScalarView](./unicodescalarview.md)
+- [var isASCII: Bool](./isascii.md)
   A Boolean value indicating whether this is an ASCII character.
-- [var asciiValue: UInt8?](character/asciivalue.md)
+- [var asciiValue: UInt8?](./asciivalue.md)
   The ASCII encoding value of this character, if it is an ASCII character.
 
 

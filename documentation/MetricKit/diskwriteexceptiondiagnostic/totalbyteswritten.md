@@ -1,7 +1,8 @@
 # totalBytesWritten
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Total bytes written during the exception period.
 

@@ -1,7 +1,8 @@
 # init(rootView:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hosting controller object that wraps the specified SwiftUI view.
 
@@ -29,9 +30,10 @@ A `UIHostingController` object initialized with the specified SwiftUI view.
 
 ## See Also
 
-- [init?(coder: NSCoder, rootView: Content)](uihostingcontroller/init(coder:rootview:).md)
+### Creating a hosting controller object
+- [init?(coder: NSCoder, rootView: Content)](./init%28coder,rootview%29.md)
   Creates a hosting controller object from an archive and the specified SwiftUI view.
-- [init?(coder: NSCoder)](uihostingcontroller/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a hosting controller object from the contents of the specified archive.
 
 

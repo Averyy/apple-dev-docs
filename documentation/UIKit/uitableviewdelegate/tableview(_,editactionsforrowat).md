@@ -1,14 +1,15 @@
 # tableView(_:editActionsForRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the actions to display in response to a swipe in the specified row.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 13.0
+- iPadOS 8.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 
@@ -16,9 +17,13 @@ Asks the delegate for the actions to display in response to a swipe in the speci
 optional func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]?
 ```
 
+```objc
+- (NSArray<UITableViewRowAction *> *) tableView:(UITableView *) tableView editActionsForRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-An array of [`UITableViewRowAction`](uitableviewrowaction.md) objects representing the actions for the row. Each action you provide is used to create a button that the user can tap.
+An array of [`UITableViewRowAction`](../uitableviewrowaction.md) objects representing the actions for the row. Each action you provide is used to create a button that the user can tap.
 
 #### Discussion
 
@@ -33,11 +38,12 @@ If you do not implement this method, the table view displays the standard access
 
 ## See Also
 
-- [func tableView(UITableView, shouldShowMenuForRowAt: IndexPath) -> Bool](uitableviewdelegate/tableview(_:shouldshowmenuforrowat:).md)
+### Deprecated
+- [func tableView(UITableView, shouldShowMenuForRowAt: IndexPath) -> Bool](./tableview%28_,shouldshowmenuforrowat%29.md)
   Asks the delegate if the editing menu should be shown for a certain row.
-- [func tableView(UITableView, canPerformAction: Selector, forRowAt: IndexPath, withSender: Any?) -> Bool](uitableviewdelegate/tableview(_:canperformaction:forrowat:withsender:).md)
+- [func tableView(UITableView, canPerformAction: Selector, forRowAt: IndexPath, withSender: Any?) -> Bool](./tableview%28_,canperformaction,forrowat,withsender%29.md)
   Asks the delegate if the editing menu should omit the Copy or Paste command for a given row.
-- [func tableView(UITableView, performAction: Selector, forRowAt: IndexPath, withSender: Any?)](uitableviewdelegate/tableview(_:performaction:forrowat:withsender:).md)
+- [func tableView(UITableView, performAction: Selector, forRowAt: IndexPath, withSender: Any?)](./tableview%28_,performaction,forrowat,withsender%29.md)
   Tells the delegate to perform a copy or paste operation on the content of a given row.
 
 

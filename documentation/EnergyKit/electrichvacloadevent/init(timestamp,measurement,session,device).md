@@ -1,14 +1,15 @@
 # init(timestamp:measurement:session:device:)
 
 **Framework**: EnergyKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an electric HVAC load event.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,14 +19,14 @@ init(timestamp: Date, measurement: ElectricHVACLoadEvent.ElectricalMeasurement, 
 
 #### Discussion
 
-> **Note**:  [`EnergyKitError.invalidLoadEvent`](energykiterror/invalidloadevent.md)
+> **Throws**:  [`EnergyKitError.invalidLoadEvent`](../energykiterror/invalidloadevent.md)
 
 ## Parameters
 
 - `timestamp`: The time when the event occurs.
 - `measurement`: The electricity consumption of the device.
 - `session`: The session information.
-- `device`: The device identifier created with [`ElectricalLoadDevice`](electricalloaddevice.md).
+- `device`: The device identifier created with [`ElectricalLoadDevice`](../electricalloaddevice.md).
 
 
 ---

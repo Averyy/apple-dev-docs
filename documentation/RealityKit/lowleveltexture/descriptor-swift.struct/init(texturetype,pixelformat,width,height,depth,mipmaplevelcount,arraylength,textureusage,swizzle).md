@@ -1,7 +1,8 @@
 # init(textureType:pixelFormat:width:height:depth:mipmapLevelCount:arrayLength:textureUsage:swizzle:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor for a low-level texture.
 
@@ -21,7 +22,7 @@ init(textureType: MTLTextureType = .type2D, pixelFormat: MTLPixelFormat = .inval
 
 #### Discussion
 
-To create a new [`LowLevelTexture`](lowleveltexture.md), first create a `LowLevelTexture.Descriptor` object and set its property values.  Then, call [`init(descriptor:)`](lowleveltexture/init(descriptor:).md).
+To create a new [`LowLevelTexture`](../../lowleveltexture.md), first create a `LowLevelTexture.Descriptor` object and set its property values.  Then, call [`init(descriptor:)`](../init%28descriptor%29.md).
 
 
 ---

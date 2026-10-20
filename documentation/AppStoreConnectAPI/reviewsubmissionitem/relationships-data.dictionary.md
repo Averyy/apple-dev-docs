@@ -1,7 +1,8 @@
 # ReviewSubmissionItem.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those you can operate on.
 
@@ -10,35 +11,35 @@ The relationships you include in the request and those you can operate on.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionItem.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object ReviewSubmissionItem.Relationships.AppCustomProductPageVersion](reviewsubmissionitem/relationships-data.dictionary/appcustomproductpageversion-data.dictionary.md)
-- [object ReviewSubmissionItem.Relationships.AppEvent](reviewsubmissionitem/relationships-data.dictionary/appevent-data.dictionary.md)
-- [object ReviewSubmissionItem.Relationships.AppStoreVersion](reviewsubmissionitem/relationships-data.dictionary/appstoreversion-data.dictionary.md)
-- [object ReviewSubmissionItem.Relationships.AppStoreVersionExperiment](reviewsubmissionitem/relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
-- [object ReviewSubmissionItem.Relationships.AppStoreVersionExperimentV2](reviewsubmissionitem/relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.AppCustomProductPageVersion](./relationships-data.dictionary/appcustomproductpageversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.AppEvent](./relationships-data.dictionary/appevent-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.AppStoreVersion](./relationships-data.dictionary/appstoreversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.AppStoreVersionExperiment](./relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.AppStoreVersionExperimentV2](./relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
 ### Dictionaries
-- [object ReviewSubmissionItem.Relationships.BackgroundAssetVersion](reviewsubmissionitem/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
-- [object ReviewSubmissionItem.Relationships.GameCenterAchievementVersion](reviewsubmissionitem/relationships-data.dictionary/gamecenterachievementversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.BackgroundAssetVersion](./relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.GameCenterAchievementVersion](./relationships-data.dictionary/gamecenterachievementversion-data.dictionary.md)
   The data that describes the Game Center achievement version of the review submission item.
-- [object ReviewSubmissionItem.Relationships.GameCenterActivityVersion](reviewsubmissionitem/relationships-data.dictionary/gamecenteractivityversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.GameCenterActivityVersion](./relationships-data.dictionary/gamecenteractivityversion-data.dictionary.md)
   The data that describes the Game Center activity version of the review submission item.
-- [object ReviewSubmissionItem.Relationships.GameCenterChallengeVersion](reviewsubmissionitem/relationships-data.dictionary/gamecenterchallengeversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.GameCenterChallengeVersion](./relationships-data.dictionary/gamecenterchallengeversion-data.dictionary.md)
   The data that describes the Game Center challenge version of the review submission item.
-- [object ReviewSubmissionItem.Relationships.GameCenterLeaderboardSetVersion](reviewsubmissionitem/relationships-data.dictionary/gamecenterleaderboardsetversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.GameCenterLeaderboardSetVersion](./relationships-data.dictionary/gamecenterleaderboardsetversion-data.dictionary.md)
   The data that describes the Game Center leaderboard set version of the review submission item.
-- [object ReviewSubmissionItem.Relationships.GameCenterLeaderboardVersion](reviewsubmissionitem/relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.GameCenterLeaderboardVersion](./relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary.md)
   The data that describes the Game Center leaderboard version of the review submission item.
-- [object ReviewSubmissionItem.Relationships.AppAssetLibraryImage](reviewsubmissionitem/relationships-data.dictionary/appassetlibraryimage-data.dictionary.md)
-- [object ReviewSubmissionItem.Relationships.AppAssetLibraryVideo](reviewsubmissionitem/relationships-data.dictionary/appassetlibraryvideo-data.dictionary.md)
-- [object ReviewSubmissionItem.Relationships.InAppPurchaseVersion](reviewsubmissionitem/relationships-data.dictionary/inapppurchaseversion-data.dictionary.md)
-- [object ReviewSubmissionItem.Relationships.SubscriptionGroupVersion](reviewsubmissionitem/relationships-data.dictionary/subscriptiongroupversion-data.dictionary.md)
-- [object ReviewSubmissionItem.Relationships.SubscriptionVersion](reviewsubmissionitem/relationships-data.dictionary/subscriptionversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.AppAssetLibraryImage](./relationships-data.dictionary/appassetlibraryimage-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.AppAssetLibraryVideo](./relationships-data.dictionary/appassetlibraryvideo-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.InAppPurchaseVersion](./relationships-data.dictionary/inapppurchaseversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.SubscriptionGroupVersion](./relationships-data.dictionary/subscriptiongroupversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.SubscriptionVersion](./relationships-data.dictionary/subscriptionversion-data.dictionary.md)
 
 ## Properties
 
@@ -61,9 +62,11 @@ object ReviewSubmissionItem.Relationships
 
 ## See Also
 
-- [object ReviewSubmissionItem.Attributes](reviewsubmissionitem/attributes-data.dictionary.md)
+### Related Documentation
+- [object ReviewSubmissionItem.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a review submission item resource.
-- [object ReviewSubmissionItem.Attributes](reviewsubmissionitem/attributes-data.dictionary.md)
+### Objects
+- [object ReviewSubmissionItem.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a review submission item resource.
 
 

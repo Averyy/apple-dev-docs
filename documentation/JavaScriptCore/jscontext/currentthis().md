@@ -1,7 +1,8 @@
 # currentThis()
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the value of the `this` keyword in currently executing JavaScript code.
 
@@ -19,23 +20,28 @@ Returns the value of the `this` keyword in currently executing JavaScript code.
 class func currentThis() -> JSValue!
 ```
 
+```objc
++ (JSValue *) currentThis;
+```
+
 #### Return Value
 
 The current value of the JavaScript `this` keyword, or `nil` if not within native code called from JavaScript.
 
 #### Discussion
 
-Call this method within an Objective-C or Swift block or method invoked from within JavaScript to obtain a [`JSValue`](jsvalue.md) object representing the current value of the `this` keyword in that JavaScript code.
+Call this method within an Objective-C or Swift block or method invoked from within JavaScript to obtain a [`JSValue`](../jsvalue.md) object representing the current value of the `this` keyword in that JavaScript code.
 
 If not currently in code invoked as a callback from JavaScript, this method returns `nil`.
 
 ## See Also
 
-- [class func current() -> JSContext!](jscontext/current.md)
+### Inspecting callback state in a running context
+- [class func current() -> JSContext!](./current%28%29.md)
   Returns the context currently executing JavaScript code.
-- [class func currentCallee() -> JSValue!](jscontext/currentcallee.md)
+- [class func currentCallee() -> JSValue!](./currentcallee%28%29.md)
   Returns the currently executing JavaScript function.
-- [class func currentArguments() -> [Any]!](jscontext/currentarguments.md)
+- [class func currentArguments() -> [Any]!](./currentarguments%28%29.md)
   Returns the arguments to the current native callback from JavaScript code.
 
 

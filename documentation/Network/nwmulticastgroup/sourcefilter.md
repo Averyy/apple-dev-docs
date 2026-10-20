@@ -1,7 +1,8 @@
 # sourceFilter
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional address endpoint you provide to filter received multicast packets.
 
@@ -22,9 +23,10 @@ final let sourceFilter: NWEndpoint?
 
 ## See Also
 
-- [var members: [NWEndpoint]](nwmulticastgroup/members.md)
+### Inspecting Multicast Groups
+- [var members: [NWEndpoint]](./members.md)
   The set of IP multicast group addresses that the connection group joins.
-- [let isUnicastDisabled: Bool](nwmulticastgroup/isunicastdisabled.md)
+- [let isUnicastDisabled: Bool](./isunicastdisabled.md)
   A Boolean that specifies whether the connection group rejects unicast traffic.
 
 

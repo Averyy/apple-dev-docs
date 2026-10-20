@@ -1,7 +1,8 @@
 # HMAccessory.ManufacturerFeature
 
 **Framework**: HomeKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A manufacturer-declared extension feature available for an accessory.
 
@@ -22,22 +23,22 @@ struct ManufacturerFeature
 ## Topics
 
 ### Initializers
-- [init(name: String, id: String?, kind: HMAccessory.ManufacturerFeature.Kind)](hmaccessory/manufacturerfeature/init(name:id:kind:).md)
+- [init(name: String, id: String?, kind: HMAccessory.ManufacturerFeature.Kind)](./manufacturerfeature/init%28name,id,kind%29.md)
 ### Instance Properties
-- [let id: String?](hmaccessory/manufacturerfeature/id.md)
-- [let kind: HMAccessory.ManufacturerFeature.Kind](hmaccessory/manufacturerfeature/kind-swift.property.md)
-- [let name: String](hmaccessory/manufacturerfeature/name.md)
+- [let id: String?](./manufacturerfeature/id.md)
+- [let kind: HMAccessory.ManufacturerFeature.Kind](./manufacturerfeature/kind-swift.property.md)
+- [let name: String](./manufacturerfeature/name.md)
 ### Enumerations
-- [HMAccessory.ManufacturerFeature.Kind](hmaccessory/manufacturerfeature/kind-swift.enum.md)
+- [HMAccessory.ManufacturerFeature.Kind](./manufacturerfeature/kind-swift.enum.md)
   The category of a manufacturer-declared extension feature.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

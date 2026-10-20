@@ -1,7 +1,8 @@
 # NWInterface.InterfaceType.loopback
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The network interface type used for communication over local loopback networks.
 
@@ -22,13 +23,14 @@ case loopback
 
 ## See Also
 
-- [NWInterface.InterfaceType.wifi](nwinterface/interfacetype/wifi.md)
+### Interface Types
+- [NWInterface.InterfaceType.wifi](./wifi.md)
   The network interface type used for communication over Wi-Fi networks.
-- [NWInterface.InterfaceType.cellular](nwinterface/interfacetype/cellular.md)
+- [NWInterface.InterfaceType.cellular](./cellular.md)
   The network interface type used for communication over cellular networks.
-- [NWInterface.InterfaceType.wiredEthernet](nwinterface/interfacetype/wiredethernet.md)
+- [NWInterface.InterfaceType.wiredEthernet](./wiredethernet.md)
   The network interface type used for communication over wired Ethernet networks.
-- [NWInterface.InterfaceType.other](nwinterface/interfacetype/other.md)
+- [NWInterface.InterfaceType.other](./other.md)
   The network interface type used for communication over virtual networks or networks of unknown types.
 
 

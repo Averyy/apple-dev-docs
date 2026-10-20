@@ -1,7 +1,8 @@
 # AnchorStateEvents.DidFailToAnchor.Reason.addAnchorFailed
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 anchor fails to be added, due to anchor tracking provider error
 
@@ -21,7 +22,7 @@ case addAnchorFailed
 
 #### Discussion
 
-See [`WorldTrackingProvider.Error`](https://developer.apple.com/documentation/arkit/worldtrackingprovider/error)
+See [`WorldTrackingProvider.Error`](../../../../ARKit/worldtrackingprovider/error.md)
 
 
 ---

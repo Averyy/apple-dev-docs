@@ -1,7 +1,8 @@
 # BuildUploadFile.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a build upload file resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a build upload file resource.
 
 ## Declaration
 
-```swift
+```
 object BuildUploadFile.Attributes
 ```
 
@@ -18,12 +19,12 @@ object BuildUploadFile.Attributes
 
 - `assetDeliveryState` (AppMediaAssetState)
 - `assetToken` (string)
-- `assetType` (string)
+- `assetType` (string): **Allowed Values**: `ASSET`, `ASSET_DESCRIPTION`, `ASSET_SPI`
 - `fileName` (string)
-- `fileSize` (int64)
+- `fileSize` (int64): **Minimum**: `1`; **Maximum**: `9007199254740991`
 - `sourceFileChecksums` (Checksums)
 - `uploadOperations` ([DeliveryFileUploadOperation])
-- `uti` (string)
+- `uti` (string): **Allowed Values**: `com.apple.binary-property-list`, `com.apple.ipa`, `com.apple.pkg`, `com.apple.xml-property-list`, `com.pkware.zip-archive`
 
 
 ---

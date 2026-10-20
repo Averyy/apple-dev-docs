@@ -1,7 +1,8 @@
 # donate()
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Donates the app intent to the system asynchronously.
 
@@ -11,7 +12,7 @@ Donates the app intent to the system asynchronously.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,11 +24,11 @@ func donate() async throws -> IntentDonationIdentifier
 
 ## Mentions
 
-- [Donating your app’s data and actions to the system](donating-your-apps-data-and-actions-to-the-system.md)
+- [Donating your app’s data and actions to the system](../donating-your-apps-data-and-actions-to-the-system.md)
 
 #### Return Value
 
-An opaque identifier you can use to manage the donation later using an [`IntentDonationManager`](intentdonationmanager.md) type.
+An opaque identifier you can use to manage the donation later using an [`IntentDonationManager`](../intentdonationmanager.md) type.
 
 #### Discussion
 
@@ -35,15 +36,16 @@ When someone interacts with your app’s interface, create an app intent for the
 
 ## See Also
 
-- [func donate() -> IntentDonationIdentifier](appintent/donate-jp6k.md)
+### Donating the intent to the system
+- [func donate() -> IntentDonationIdentifier](./donate%28%29-jp6k.md)
   Donates the app intent to the system.
-- [func donate(result: some IntentResult) async throws -> IntentDonationIdentifier](appintent/donate(result:)-36cia.md)
+- [func donate(result: some IntentResult) async throws -> IntentDonationIdentifier](./donate%28result%29-36cia.md)
   Donates the app intent and a result to the system asynchronously.
-- [func donate(result: some IntentResult) -> IntentDonationIdentifier](appintent/donate(result:)-9b25i.md)
+- [func donate(result: some IntentResult) -> IntentDonationIdentifier](./donate%28result%29-9b25i.md)
   Donates the app intent and a result to the system asynchronously.
-- [func callAsFunction(donate: Bool) async throws -> Self.PerformResult.Value](appintent/callasfunction(donate:)-3qvbt.md)
+- [func callAsFunction(donate: Bool) async throws -> Self.PerformResult.Value](./callasfunction%28donate%29-3qvbt.md)
   Runs the intent’s action after resolving any parameters, returns the resulting value, and optionally donates the intent to the system.
-- [func callAsFunction(donate: Bool) async throws](appintent/callasfunction(donate:)-7v1om.md)
+- [func callAsFunction(donate: Bool) async throws](./callasfunction%28donate%29-7v1om.md)
   Runs the intent’s action after resolving any parameters, and optionally donates the intent to the system.
 
 

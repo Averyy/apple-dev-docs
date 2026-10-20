@@ -1,18 +1,19 @@
 # CGTextDrawingMode.clip
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies to intersect the text with the current clipping path. This mode does not paint the text.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ Specifies to intersect the text with the current clipping path. This mode does n
 case clip
 ```
 
+```c
+kCGTextClip
+```
+
 ## See Also
 
-- [CGTextDrawingMode.fill](cgtextdrawingmode/fill.md)
+### Constants
+- [CGTextDrawingMode.fill](./fill.md)
   Perform a fill operation on the text.
-- [CGTextDrawingMode.stroke](cgtextdrawingmode/stroke.md)
+- [CGTextDrawingMode.stroke](./stroke.md)
   Perform a stroke operation on the text.
-- [CGTextDrawingMode.fillStroke](cgtextdrawingmode/fillstroke.md)
+- [CGTextDrawingMode.fillStroke](./fillstroke.md)
   Perform fill, then stroke operations on the text.
-- [CGTextDrawingMode.invisible](cgtextdrawingmode/invisible.md)
+- [CGTextDrawingMode.invisible](./invisible.md)
   Do not draw the text, but do update the text position.
-- [CGTextDrawingMode.fillClip](cgtextdrawingmode/fillclip.md)
+- [CGTextDrawingMode.fillClip](./fillclip.md)
   Perform a fill operation, then intersect the text with the current clipping path.
-- [CGTextDrawingMode.strokeClip](cgtextdrawingmode/strokeclip.md)
+- [CGTextDrawingMode.strokeClip](./strokeclip.md)
   Perform a stroke operation, then intersect the text with the current clipping path.
-- [CGTextDrawingMode.fillStrokeClip](cgtextdrawingmode/fillstrokeclip.md)
+- [CGTextDrawingMode.fillStrokeClip](./fillstrokeclip.md)
   Perform fill then stroke operations, then intersect the text with the current clipping path.
 
 

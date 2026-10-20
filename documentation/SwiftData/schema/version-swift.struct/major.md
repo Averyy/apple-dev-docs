@@ -1,7 +1,8 @@
 # major
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The major version according to the semantic versioning standard.
 

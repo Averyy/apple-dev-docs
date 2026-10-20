@@ -1,7 +1,8 @@
 # id
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the score counter.
 
@@ -16,7 +17,8 @@ var id: ScoreCounter.ID
 
 ## See Also
 
-- [ScoreCounter.Identifier](scorecounter/identifier.md)
+### Getting score counter identifiers
+- [ScoreCounter.Identifier](./identifier.md)
   A unique identifier for score counters.
 
 

@@ -1,7 +1,8 @@
 # PKPaymentError.Code.couponCodeInvalidError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The error code that indicates an invalid coupon.
 
@@ -18,21 +19,26 @@ The error code that indicates an invalid coupon.
 case couponCodeInvalidError
 ```
 
+```c
+PKPaymentCouponCodeInvalidError
+```
+
 #### Discussion
 
-Use this error code if the coupon code entered in the payment sheet is invalid. You can use [`paymentCouponCodeInvalidError(localizedDescription:)`](pkpaymentrequest/paymentcouponcodeinvaliderror(localizeddescription:).md) to create an expired coupon error object.
+Use this error code if the coupon code entered in the payment sheet is invalid. You can use [`paymentCouponCodeInvalidError(localizedDescription:)`](../../pkpaymentrequest/paymentcouponcodeinvaliderror%28localizeddescription%29.md) to create an expired coupon error object.
 
 ## See Also
 
-- [PKPaymentError.Code.couponCodeExpiredError](pkpaymenterror/code/couponcodeexpirederror.md)
+### Error codes
+- [PKPaymentError.Code.couponCodeExpiredError](./couponcodeexpirederror.md)
   The error code that indicates an expired coupon.
-- [PKPaymentError.Code.billingContactInvalidError](pkpaymenterror/code/billingcontactinvaliderror.md)
+- [PKPaymentError.Code.billingContactInvalidError](./billingcontactinvaliderror.md)
   The error code that indicates an invalid billing address or billing name.
-- [PKPaymentError.Code.shippingContactInvalidError](pkpaymenterror/code/shippingcontactinvaliderror.md)
+- [PKPaymentError.Code.shippingContactInvalidError](./shippingcontactinvaliderror.md)
   The error code that indicates an invalid shipping address, email, phone, or name.
-- [PKPaymentError.Code.shippingAddressUnserviceableError](pkpaymenterror/code/shippingaddressunserviceableerror.md)
+- [PKPaymentError.Code.shippingAddressUnserviceableError](./shippingaddressunserviceableerror.md)
   The error code that indicates an unserviceable shipping address.
-- [PKPaymentError.Code.unknownError](pkpaymenterror/code/unknownerror.md)
+- [PKPaymentError.Code.unknownError](./unknownerror.md)
   The error code that indicates an unknown error.
 
 

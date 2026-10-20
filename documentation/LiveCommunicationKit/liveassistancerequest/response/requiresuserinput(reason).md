@@ -1,7 +1,8 @@
 # LiveAssistanceRequest.Response.requiresUserInput(reason:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A response that indicates the extension needs to complete a task in the container app before the request can proceed.
 
@@ -20,14 +21,14 @@ case requiresUserInput(reason: LiveAssistanceLaunchReason)
 
 #### Discussion
 
-Return this value from your implementations of [`prepareAssistanceRequest(_:)`](liveassistanceextension/prepareassistancerequest(_:).md) and [`resumeRequest(_:)`](liveassistanceextension/resumerequest(_:).md) when you need the person using the app to provide additional information. You use this case when you require actions like signing in, or setting a desired language for the interpreter service. The associated value `reason` supplies a [`LiveAssistanceLaunchReason`](liveassistancelaunchreason.md) to tell the container app what information it needs to collect.
+Return this value from your implementations of [`prepareAssistanceRequest(_:)`](../../liveassistanceextension/prepareassistancerequest%28_%29.md) and [`resumeRequest(_:)`](../../liveassistanceextension/resumerequest%28_%29.md) when you need the person using the app to provide additional information. You use this case when you require actions like signing in, or setting a desired language for the interpreter service. The associated value `reason` supplies a [`LiveAssistanceLaunchReason`](../../liveassistancelaunchreason.md) to tell the container app what information it needs to collect.
 
 When you return this value, FaceTime shows a popup for the person to continue in your container app.
 
-- If the person continues, FaceTime launches your container app with an [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity). After your app collects the required information, it calls [`returnToCall(requestID:)`](liveassistance/returntocall(requestid:).md) to re-invoke the extension with a call to [`resumeRequest(_:)`](liveassistanceextension/resumerequest(_:).md).
+- If the person continues, FaceTime launches your container app with an [`NSUserActivity`](../../../Foundation/nsuseractivity.md). After your app collects the required information, it calls [`returnToCall(requestID:)`](../../liveassistance/returntocall%28requestid%29.md) to re-invoke the extension with a call to [`resumeRequest(_:)`](../../liveassistanceextension/resumerequest%28_%29.md).
 - If the person chooses not to launch your container app, the popup dismisses and the request ends.
 
-This response is deferral, not a failure. The request stays alive while the person interacts with the FaceTime popup. For genuine failures, your implementation of the [`LiveAssistanceExtension`](liveassistanceextension.md) throws an error instead of returning a value.
+This response is deferral, not a failure. The request stays alive while the person interacts with the FaceTime popup. For genuine failures, your implementation of the [`LiveAssistanceExtension`](../../liveassistanceextension.md) throws an error instead of returning a value.
 
 ## Parameters
 
@@ -35,9 +36,10 @@ This response is deferral, not a failure. The request stays alive while the pers
 
 ## See Also
 
-- [LiveAssistanceRequest.Response.proceed](liveassistancerequest/response/proceed.md)
+### Working with responses
+- [LiveAssistanceRequest.Response.proceed](./proceed.md)
   A response that indicates the extension successfully handled the request and setting up live assistance can proceed.
-- [enum LiveAssistanceLaunchReason](liveassistancelaunchreason.md)
+- [enum LiveAssistanceLaunchReason](../../liveassistancelaunchreason.md)
   A type that indicates why the live assistance extension needs to launch its container app.
 
 

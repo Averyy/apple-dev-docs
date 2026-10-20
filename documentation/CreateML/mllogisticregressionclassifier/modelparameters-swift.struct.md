@@ -1,7 +1,8 @@
 # MLLogisticRegressionClassifier.ModelParameters
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters that affect the process of training a model.
 
@@ -22,48 +23,49 @@ struct ModelParameters
 ## Topics
 
 ### Creating parameters
-- [init(validation: MLLogisticRegressionClassifier.ModelParameters.ValidationData, maxIterations: Int, l1Penalty: Double, l2Penalty: Double, stepSize: Double, convergenceThreshold: Double, featureRescaling: Bool)](mllogisticregressionclassifier/modelparameters-swift.struct/init(validation:maxiterations:l1penalty:l2penalty:stepsize:convergencethreshold:featurerescaling:).md)
-- [init(validationData: MLDataTable?, maxIterations: Int, l1Penalty: Double, l2Penalty: Double, stepSize: Double, convergenceThreshold: Double, featureRescaling: Bool)](mllogisticregressionclassifier/modelparameters-swift.struct/init(validationdata:maxiterations:l1penalty:l2penalty:stepsize:convergencethreshold:featurerescaling:).md)
+- [init(validation: MLLogisticRegressionClassifier.ModelParameters.ValidationData, maxIterations: Int, l1Penalty: Double, l2Penalty: Double, stepSize: Double, convergenceThreshold: Double, featureRescaling: Bool)](./modelparameters-swift.struct/init%28validation,maxiterations,l1penalty,l2penalty,stepsize,convergencethreshold,featurerescaling%29.md)
+- [init(validationData: MLDataTable?, maxIterations: Int, l1Penalty: Double, l2Penalty: Double, stepSize: Double, convergenceThreshold: Double, featureRescaling: Bool)](./modelparameters-swift.struct/init%28validationdata,maxiterations,l1penalty,l2penalty,stepsize,convergencethreshold,featurerescaling%29.md)
   Creates a new set of parameters.
-- [MLLogisticRegressionClassifier.ModelParameters.ValidationData](mllogisticregressionclassifier/modelparameters-swift.struct/validationdata-swift.enum.md)
+- [MLLogisticRegressionClassifier.ModelParameters.ValidationData](./modelparameters-swift.struct/validationdata-swift.enum.md)
   Values for specifying validation data.
 ### Accessing parameters
-- [var convergenceThreshold: Double](mllogisticregressionclassifier/modelparameters-swift.struct/convergencethreshold.md)
-- [var featureRescaling: Bool](mllogisticregressionclassifier/modelparameters-swift.struct/featurerescaling.md)
-- [var l1Penalty: Double](mllogisticregressionclassifier/modelparameters-swift.struct/l1penalty.md)
-- [var l2Penalty: Double](mllogisticregressionclassifier/modelparameters-swift.struct/l2penalty.md)
-- [var maxIterations: Int](mllogisticregressionclassifier/modelparameters-swift.struct/maxiterations.md)
-- [var stepSize: Double](mllogisticregressionclassifier/modelparameters-swift.struct/stepsize.md)
-- [var validationData: MLDataTable?](mllogisticregressionclassifier/modelparameters-swift.struct/validationdata-swift.property.md)
+- [var convergenceThreshold: Double](./modelparameters-swift.struct/convergencethreshold.md)
+- [var featureRescaling: Bool](./modelparameters-swift.struct/featurerescaling.md)
+- [var l1Penalty: Double](./modelparameters-swift.struct/l1penalty.md)
+- [var l2Penalty: Double](./modelparameters-swift.struct/l2penalty.md)
+- [var maxIterations: Int](./modelparameters-swift.struct/maxiterations.md)
+- [var stepSize: Double](./modelparameters-swift.struct/stepsize.md)
+- [var validationData: MLDataTable?](./modelparameters-swift.struct/validationdata-swift.property.md)
   Validation data represented as a `MLDataTable`.
-- [var validation: MLLogisticRegressionClassifier.ModelParameters.ValidationData](mllogisticregressionclassifier/modelparameters-swift.struct/validation.md)
+- [var validation: MLLogisticRegressionClassifier.ModelParameters.ValidationData](./modelparameters-swift.struct/validation.md)
   Validation data.
 ### Describing parameters
-- [var description: String](mllogisticregressionclassifier/modelparameters-swift.struct/description.md)
+- [var description: String](./modelparameters-swift.struct/description.md)
   A text representation of the model parameters for a logistic regression classifier.
-- [var debugDescription: String](mllogisticregressionclassifier/modelparameters-swift.struct/debugdescription.md)
+- [var debugDescription: String](./modelparameters-swift.struct/debugdescription.md)
   A text representation of the model parameters for a logistic regression classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mllogisticregressionclassifier/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelparameters-swift.struct/playgrounddescription.md)
   A description of the model parameters for a logistic regression classifier shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mllogisticregressionclassifier/modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mllogisticregressionclassifier/modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mllogisticregressionclassifier/modelparameters-swift.struct/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelparameters-swift.struct/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
 
 ## See Also
 
-- [var model: MLModel](mllogisticregressionclassifier/model.md)
+### Inspecting a boosted tree classifier
+- [var model: MLModel](./model.md)
   The Core ML model.
-- [let modelParameters: MLLogisticRegressionClassifier.ModelParameters](mllogisticregressionclassifier/modelparameters-swift.property.md)
+- [let modelParameters: MLLogisticRegressionClassifier.ModelParameters](./modelparameters-swift.property.md)
   The underlying parameters used when training the model.
 
 

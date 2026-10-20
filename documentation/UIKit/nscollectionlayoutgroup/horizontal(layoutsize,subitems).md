@@ -1,7 +1,8 @@
 # horizontal(layoutSize:subitems:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a group of the specified size, containing an array of items arranged in a horizontal line.
 
@@ -18,6 +19,10 @@ Creates a group of the specified size, containing an array of items arranged in 
 class func horizontal(layoutSize: NSCollectionLayoutSize, subitems: [NSCollectionLayoutItem]) -> Self
 ```
 
+```objc
++ (instancetype) horizontalGroupWithLayoutSize:(NSCollectionLayoutSize *) layoutSize subitems:(NSArray<NSCollectionLayoutItem *> *) subitems;
+```
+
 ## Parameters
 
 - `layoutSize`: The group’s size.
@@ -25,7 +30,8 @@ class func horizontal(layoutSize: NSCollectionLayoutSize, subitems: [NSCollectio
 
 ## See Also
 
-- [class func horizontal(layoutSize: NSCollectionLayoutSize, repeatingSubitem: NSCollectionLayoutItem, count: Int) -> Self](nscollectionlayoutgroup/horizontal(layoutsize:repeatingsubitem:count:).md)
+### Creating a horizontal group
+- [class func horizontal(layoutSize: NSCollectionLayoutSize, repeatingSubitem: NSCollectionLayoutItem, count: Int) -> Self](./horizontal%28layoutsize,repeatingsubitem,count%29.md)
   Creates a group that repeats the specified subitem a certain number of times along the horizontal axis.
 
 

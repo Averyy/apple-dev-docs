@@ -1,7 +1,8 @@
 # UITableViewCell.SelectionStyle.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The cell selection style to use for tables.
 
@@ -9,7 +10,7 @@ The cell selection style to use for tables.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ The cell selection style to use for tables.
 case `default`
 ```
 
+```c
+UITableViewCellSelectionStyleDefault
+```
+
 #### Discussion
 
 This style is the default.
 
 ## See Also
 
-- [UITableViewCell.SelectionStyle.none](uitableviewcell/selectionstyle-swift.enum/none.md)
+### Constants
+- [UITableViewCell.SelectionStyle.none](./none.md)
   The cell has no distinct style for when it’s selected.
-- [UITableViewCell.SelectionStyle.blue](uitableviewcell/selectionstyle-swift.enum/blue.md)
+- [UITableViewCell.SelectionStyle.blue](./blue.md)
   The cell has a default background color when it’s selected.
-- [UITableViewCell.SelectionStyle.gray](uitableviewcell/selectionstyle-swift.enum/gray.md)
+- [UITableViewCell.SelectionStyle.gray](./gray.md)
   The cell has a gray background when it’s selected.
 
 

@@ -1,7 +1,8 @@
 # IOUSBFindInterfaceRequest
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 The structure for finding an interface request.
 
@@ -10,27 +11,28 @@ The structure for finding an interface request.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBFindInterfaceRequest IOUSBFindInterfaceRequest;
 ```
 
 ## Topics
 
 ### Getting the Properties
-- [bAlternateSetting](iousbfindinterfacerequest/1546002-balternatesetting.md)
+- [bAlternateSetting](./iousbfindinterfacerequest/api-1546002-balternatesetting.md)
   The alternative setting to find.
-- [bInterfaceClass](iousbfindinterfacerequest/1546291-binterfaceclass.md)
+- [bInterfaceClass](./iousbfindinterfacerequest/api-1546291-binterfaceclass.md)
   The interface class to find.
-- [bInterfaceProtocol](iousbfindinterfacerequest/1546022-binterfaceprotocol.md)
+- [bInterfaceProtocol](./iousbfindinterfacerequest/api-1546022-binterfaceprotocol.md)
   The interface protocol to find.
-- [bInterfaceSubClass](iousbfindinterfacerequest/1546058-binterfacesubclass.md)
+- [bInterfaceSubClass](./iousbfindinterfacerequest/api-1546058-binterfacesubclass.md)
   The interface subclass to find.
 
 ## See Also
 
-- [IOUSBBulkPipeReq](iousbbulkpipereq.md)
+### Communication Requests
+- [IOUSBBulkPipeReq](./iousbbulkpipereq.md)
   The structure that represents a bulk pipe request.
-- [IOUSBFindEndpointRequest](iousbfindendpointrequest.md)
+- [IOUSBFindEndpointRequest](./iousbfindendpointrequest.md)
   The structure that represents an endoint request to locate.
 
 

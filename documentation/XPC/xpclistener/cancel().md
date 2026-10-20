@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a listener.
 
@@ -21,7 +22,8 @@ Typically you don’t need to explicitly cancel a listener. When the server proc
 
 ## See Also
 
-- [func activate() throws](xpclistener/activate.md)
+### Managing the life cycle
+- [func activate() throws](./activate%28%29.md)
   Activates an inactive listener.
 
 

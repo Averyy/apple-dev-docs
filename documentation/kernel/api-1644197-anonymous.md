@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPMSupportedOnAC](1644197-anonymous/kiopmsupportedonac.md)
-- [kIOPMSupportedOnBatt](1644197-anonymous/kiopmsupportedonbatt.md)
-- [kIOPMSupportedOnUPS](1644197-anonymous/kiopmsupportedonups.md)
+- [kIOPMSupportedOnAC](./api-1644197-anonymous/kiopmsupportedonac.md)
+- [kIOPMSupportedOnBatt](./api-1644197-anonymous/kiopmsupportedonbatt.md)
+- [kIOPMSupportedOnUPS](./api-1644197-anonymous/kiopmsupportedonups.md)
 
 
 ---

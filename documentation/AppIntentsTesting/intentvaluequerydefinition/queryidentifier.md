@@ -1,7 +1,8 @@
 # queryIdentifier
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The query’s unique identifier.
 
@@ -22,7 +23,8 @@ let queryIdentifier: String
 
 ## See Also
 
-- [let bundleIdentifier: String](intentvaluequerydefinition/bundleidentifier.md)
+### Identifying the query
+- [let bundleIdentifier: String](./bundleidentifier.md)
   The bundle identifier of the app that includes the query.
 
 

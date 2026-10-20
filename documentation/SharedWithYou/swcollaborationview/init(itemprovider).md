@@ -1,7 +1,8 @@
 # init(itemProvider:)
 
 **Framework**: Shared with You  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes a collaboration view.
 
@@ -16,6 +17,10 @@ Creates and initializes a collaboration view.
 
 ```swift
 init(itemProvider: NSItemProvider)
+```
+
+```objc
+- (instancetype) initWithItemProvider:(NSItemProvider *) itemProvider;
 ```
 
 ## Parameters

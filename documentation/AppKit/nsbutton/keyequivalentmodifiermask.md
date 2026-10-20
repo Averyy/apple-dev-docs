@@ -1,17 +1,22 @@
 # keyEquivalentModifierMask
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mask specifying the modifier keys for the button’s key equivalent.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var keyEquivalentModifierMask: NSEvent.ModifierFlags { get set }
+```
+
+```objc
+@property NSEventModifierFlags keyEquivalentModifierMask;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ This property contains the mask specifying the modifier keys that are applied to
 
 ## See Also
 
-- [var keyEquivalent: String](nsbutton/keyequivalent.md)
+### Accessing key equivalents
+- [var keyEquivalent: String](./keyequivalent.md)
   The key-equivalent character of the button.
 
 

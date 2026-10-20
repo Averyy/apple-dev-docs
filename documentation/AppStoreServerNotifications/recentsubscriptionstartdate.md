@@ -1,7 +1,8 @@
 # recentSubscriptionStartDate
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The earliest start date of a subscription in a series of auto-renewable subscription purchases that ignores all lapses of paid service shorter than 60 days.
 
@@ -10,21 +11,22 @@ The earliest start date of a subscription in a series of auto-renewable subscrip
 
 ## Declaration
 
-```swift
+```
 timestamp recentSubscriptionStartDate
 ```
 
 #### Discussion
 
-For more information about the recent subscription start date, see [`recentSubscriptionStartDate`](https://developer.apple.com/documentation/appstoreserverapi/recentsubscriptionstartdate).
+For more information about the recent subscription start date, see [`recentSubscriptionStartDate`](../AppStoreServerAPI/recentsubscriptionstartdate.md).
 
-> ❗ **Important**:  Don’t use the [`recentSubscriptionStartDate`](recentsubscriptionstartdate.md) date to calculate days of paid service. For more information about paid days of service, see [`Net revenue after a year`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#revenue-after-one-year).
+> ❗ **Important**:  Don’t use the [`recentSubscriptionStartDate`](./recentsubscriptionstartdate.md) date to calculate days of paid service. For more information about paid days of service, see [Net revenue after a year](https://developer.apple.com/app-store/subscriptions/#revenue-after-one-year).
 
 ## See Also
 
-- [type originalPurchaseDate](originalpurchasedate.md)
+### Purchase dates
+- [type originalPurchaseDate](./originalpurchasedate.md)
   The purchase date of the transaction associated with the original transaction identifier.
-- [type purchaseDate](purchasedate.md)
+- [type purchaseDate](./purchasedate.md)
   The time that the App Store charged the customer’s account for a purchase, a restored product, a subscription, or a subscription renewal after a lapse.
 
 

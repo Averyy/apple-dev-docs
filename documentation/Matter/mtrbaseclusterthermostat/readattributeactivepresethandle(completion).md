@@ -1,7 +1,8 @@
 # readAttributeActivePresetHandle(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActivePresetHandle(completion: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActivePresetHandle() async throws -> Data
+```
+
+```objc
+- (void) readAttributeActivePresetHandleWithCompletion:(void (^)(NSData *value, NSError *error)) completion;
 ```
 
 

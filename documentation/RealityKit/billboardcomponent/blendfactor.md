@@ -1,7 +1,8 @@
 # blendFactor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The degree at which the entity rotates toward the camera.
 
@@ -39,9 +40,9 @@ For example, here’s how a few different `blendFactor` values affect the orient
 
 | 0 | 0.25 | 0.5 | 1 |
 | --- | --- | --- | --- |
-| ![An image of a vintage-style toy robot in a living room scene. The robot is facing about 45 degrees to the left and down from the viewer’s perspective.](/images/com.apple.RealityKit/billboardcomponent-robot-side-above-without.jpg) | ![An image of a vintage-style toy robot in a living room scene. The robot is facing about 35 degrees to the left and down from the viewer’s perspective.](/images/com.apple.RealityKit/billboardcomponent-robot-side-above-blend-25.jpg) | ![An image of a vintage-style toy robot in a living room scene. The robot is facing about 22 degrees to the left and down from the viewer’s perspective.](/images/com.apple.RealityKit/billboardcomponent-robot-side-above-blend-50.jpg) | ![An image of a vintage-style toy robot in a living room scene. The robot is facing directly towards the viewer.](/images/com.apple.RealityKit/billboardcomponent-robot-side-above-with.jpg) |
+| ![An image of a vintage-style toy robot in a living room scene. The robot is facing about 45 degrees to the left and down from the viewer’s perspective.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/billboardcomponent-robot-side-above-without.jpg) | ![An image of a vintage-style toy robot in a living room scene. The robot is facing about 35 degrees to the left and down from the viewer’s perspective.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/billboardcomponent-robot-side-above-blend-25.jpg) | ![An image of a vintage-style toy robot in a living room scene. The robot is facing about 22 degrees to the left and down from the viewer’s perspective.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/billboardcomponent-robot-side-above-blend-50.jpg) | ![An image of a vintage-style toy robot in a living room scene. The robot is facing directly towards the viewer.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/billboardcomponent-robot-side-above-with.jpg) |
 
-For an example of how to animate `blendFactor`, see [`BillboardAction`](billboardaction.md).
+For an example of how to animate `blendFactor`, see [`BillboardAction`](../billboardaction.md).
 
 
 ---

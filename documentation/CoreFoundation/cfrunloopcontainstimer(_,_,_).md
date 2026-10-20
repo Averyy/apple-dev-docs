@@ -1,23 +1,28 @@
 # CFRunLoopContainsTimer(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether a run loop mode contains a particular CFRunLoopTimer object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFRunLoopContainsTimer(_ rl: CFRunLoop!, _ timer: CFRunLoopTimer!, _ mode: CFRunLoopMode!) -> Bool
+```
+
+```c
+extern Boolean CFRunLoopContainsTimer(CFRunLoopRef rl, CFRunLoopTimerRef timer, CFRunLoopMode mode);
 ```
 
 #### Return Value
@@ -26,21 +31,22 @@ func CFRunLoopContainsTimer(_ rl: CFRunLoop!, _ timer: CFRunLoopTimer!, _ mode: 
 
 #### Discussion
 
-If `timer` was added to [`commonModes`](cfrunloopmode/commonmodes.md), this function returns `true` if `mode` is either [`commonModes`](cfrunloopmode/commonmodes.md) or any of the modes that has been added to the set of common modes.
+If `timer` was added to [`commonModes`](./cfrunloopmode/commonmodes.md), this function returns `true` if `mode` is either [`commonModes`](./cfrunloopmode/commonmodes.md) or any of the modes that has been added to the set of common modes.
 
 ## Parameters
 
 - `rl`: The run loop to examine.
 - `timer`: The run loop timer for which to search.
-- `mode`: The run loop mode of `rl` in which to search for `timer`. Use the constant [`commonModes`](cfrunloopmode/commonmodes.md) to search for `timer` in the set of objects monitored by all the common modes.
+- `mode`: The run loop mode of `rl` in which to search for `timer`. Use the constant [`commonModes`](./cfrunloopmode/commonmodes.md) to search for `timer` in the set of objects monitored by all the common modes.
 
 ## See Also
 
-- [func CFRunLoopAddTimer(CFRunLoop!, CFRunLoopTimer!, CFRunLoopMode!)](cfrunloopaddtimer(_:_:_:).md)
+### Managing Timers
+- [func CFRunLoopAddTimer(CFRunLoop!, CFRunLoopTimer!, CFRunLoopMode!)](./cfrunloopaddtimer%28_,_,_%29.md)
   Adds a CFRunLoopTimer object to a run loop mode.
-- [func CFRunLoopGetNextTimerFireDate(CFRunLoop!, CFRunLoopMode!) -> CFAbsoluteTime](cfrunloopgetnexttimerfiredate(_:_:).md)
+- [func CFRunLoopGetNextTimerFireDate(CFRunLoop!, CFRunLoopMode!) -> CFAbsoluteTime](./cfrunloopgetnexttimerfiredate%28_,_%29.md)
   Returns the time at which the next timer will fire.
-- [func CFRunLoopRemoveTimer(CFRunLoop!, CFRunLoopTimer!, CFRunLoopMode!)](cfrunloopremovetimer(_:_:_:).md)
+- [func CFRunLoopRemoveTimer(CFRunLoop!, CFRunLoopTimer!, CFRunLoopMode!)](./cfrunloopremovetimer%28_,_,_%29.md)
   Removes a CFRunLoopTimer object from a run loop mode.
 
 

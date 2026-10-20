@@ -1,7 +1,8 @@
 # defaultThresholdForBlackAndWhiteScanning
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var defaultThresholdForBlackAndWhiteScanning: UInt8 { get }
+```
+
+```objc
+@property (readonly) unsigned char defaultThresholdForBlackAndWhiteScanning;
 ```
 
 

@@ -1,7 +1,8 @@
 # descriptors
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that retrieves the current endpoint descriptors controlling the endpoint.
 
@@ -15,17 +16,22 @@ A property that retrieves the current endpoint descriptors controlling the endpo
 var descriptors: UnsafePointer<IOUSBHostIOSourceDescriptors> { get }
 ```
 
+```objc
+@property (readonly) const IOUSBHostIOSourceDescriptors * descriptors;
+```
+
 #### Return Value
 
-The current [`IOUSBHostIOSourceDescriptors`](iousbhostiosourcedescriptors.md).
+The current [`IOUSBHostIOSourceDescriptors`](../iousbhostiosourcedescriptors.md).
 
 ## See Also
 
-- [struct IOUSBHostIOSourceDescriptors](iousbhostiosourcedescriptors.md)
+### Managing Periodic Bandwidth
+- [struct IOUSBHostIOSourceDescriptors](../iousbhostiosourcedescriptors.md)
   The descriptors for a single endpoint.
-- [func adjust(with: UnsafePointer<IOUSBHostIOSourceDescriptors>) throws](iousbhostpipe/adjust(with:).md)
+- [func adjust(with: UnsafePointer<IOUSBHostIOSourceDescriptors>) throws](./adjust%28with%29.md)
   Adjusts the behavior of periodic endpoints to consume a different amount of bus bandwidth.
-- [var originalDescriptors: UnsafePointer<IOUSBHostIOSourceDescriptors>](iousbhostpipe/originaldescriptors.md)
+- [var originalDescriptors: UnsafePointer<IOUSBHostIOSourceDescriptors>](./originaldescriptors.md)
   A property that retrieves the original endpoint descriptors from the pipe at the point of creation.
 
 

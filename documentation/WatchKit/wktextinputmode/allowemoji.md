@@ -1,12 +1,13 @@
 # WKTextInputMode.allowEmoji
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text from dictation and suggestions plus non animated emoji.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Text from dictation and suggestions plus non animated emoji.
 case allowEmoji
 ```
 
+```c
+WKTextInputModeAllowEmoji
+```
+
 ## See Also
 
-- [WKTextInputMode.plain](wktextinputmode/plain.md)
+### Constants
+- [WKTextInputMode.plain](./plain.md)
   Text from dictation and suggestions only. Do not allow emoji of any kind.
-- [WKTextInputMode.allowAnimatedEmoji](wktextinputmode/allowanimatedemoji.md)
+- [WKTextInputMode.allowAnimatedEmoji](./allowanimatedemoji.md)
   Text from dictation and suggestions plus both animated and non animated emoji.
 
 

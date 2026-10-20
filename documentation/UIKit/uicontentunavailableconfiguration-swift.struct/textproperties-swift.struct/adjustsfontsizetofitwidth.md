@@ -1,7 +1,8 @@
 # adjustsFontSizeToFitWidth
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the view modifies the font size of the text to fit the available width.
 
@@ -10,7 +11,7 @@ A Boolean value indicating whether the view modifies the font size of the text t
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,7 @@ var adjustsFontSizeToFitWidth: Bool { get set }
 
 #### Discussion
 
-You can define the smallest font size used by setting the [`minimumScaleFactor`](uicontentunavailableconfiguration-swift.struct/textproperties-swift.struct/minimumscalefactor.md) property.
+You can define the smallest font size used by setting the [`minimumScaleFactor`](./minimumscalefactor.md) property.
 
 
 ---

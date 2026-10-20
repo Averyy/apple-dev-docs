@@ -1,7 +1,8 @@
 # File
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 An object that contains information about files.
 
@@ -12,7 +13,7 @@ An object that contains information about files.
 
 ## Declaration
 
-```swift
+```
 interface File
 ```
 
@@ -23,16 +24,16 @@ This class is provided for the Node.js platform in order to support file upload.
 ## Topics
 
 ### Initializers
-- [File](../cktooljs/file/file.md)
+- [File](../CKToolJS/file/file.md)
   Creates a `File` object.
 ### Instance Properties
-- [lastModified](file/1777749-lastmodified.md)
-- [name](file/1632019-name.md)
+- [lastModified](./file/api-1777749-lastmodified.md)
+- [name](./file/api-1632019-name.md)
 
 ## Relationships
 
 ### Inherits From
-- [Blob](blob.md)
+- [Blob](./blob.md)
 
 
 ---

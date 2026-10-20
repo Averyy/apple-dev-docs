@@ -1,7 +1,8 @@
 # VZCustomVirtioDeviceConfigurationDelegate
 
 **Framework**: Virtualization  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A class that conforms to the custom Virtio device configuration delegate protocol that can provide methods for tracking the state of a custom Virtio device configuration object.
 
@@ -14,20 +15,25 @@ A class that conforms to the custom Virtio device configuration delegate protoco
 protocol VZCustomVirtioDeviceConfigurationDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol VZCustomVirtioDeviceConfigurationDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func customVirtioConfiguration(VZCustomVirtioDeviceConfiguration, didCreateDevice: VZCustomVirtioDevice)](vzcustomvirtiodeviceconfigurationdelegate/customvirtioconfiguration(_:didcreatedevice:).md)
+- [func customVirtioConfiguration(VZCustomVirtioDeviceConfiguration, didCreateDevice: VZCustomVirtioDevice)](./vzcustomvirtiodeviceconfigurationdelegate/customvirtioconfiguration%28_,didcreatedevice%29.md)
   A method the framework calls when it creates a custom Virtio device from a custom Virtio device configuration.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol VZCustomVirtioDeviceDelegate](vzcustomvirtiodevicedelegate.md)
+### Responding to Virtio events
+- [protocol VZCustomVirtioDeviceDelegate](./vzcustomvirtiodevicedelegate.md)
   A delegate protocol that defines the methods you implement to respond to the life cycle events of a custom Virtio device.
 
 

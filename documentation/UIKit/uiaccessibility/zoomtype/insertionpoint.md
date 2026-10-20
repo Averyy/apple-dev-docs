@@ -1,7 +1,8 @@
 # UIAccessibility.ZoomType.insertionPoint
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system zoom type is the text insertion point.
 
@@ -9,13 +10,17 @@ The system zoom type is the text insertion point.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 case insertionPoint
+```
+
+```c
+UIAccessibilityZoomTypeInsertionPoint
 ```
 
 

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the test.
 
@@ -11,17 +12,22 @@ The name of the test.
 var name: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * name;
+```
+
 #### Discussion
 
 Must be overridden by subclasses.
 
 ## See Also
 
-- [var testCaseCount: Int](xctest/testcasecount.md)
+### Examining Test Properties
+- [var testCaseCount: Int](./testcasecount.md)
   The number of test cases in the test.
-- [var testRun: XCTestRun?](xctest/testrun.md)
+- [var testRun: XCTestRun?](./testrun.md)
   The test run object that executes the test.
-- [var testRunClass: AnyClass?](xctest/testrunclass.md)
+- [var testRunClass: AnyClass?](./testrunclass.md)
   The test run subclass to instantiate when the test runs, which records the test’s results.
 
 

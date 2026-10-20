@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean set to true when a request can’t determine its progress in fractions completed.
@@ -20,13 +21,18 @@ A Boolean set to true when a request can’t determine its progress in fractions
 var indeterminate: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL indeterminate;
+```
+
 #### Discussion
 
-A value of [`true`](https://developer.apple.com/documentation/swift/true) doesn’t mean that the request will run forever. Rather, it means that the nature of the request can’t be broken down into identifiable fractions to report. The [`progressHandler`](vnrequestprogressproviding/progresshandler.md) will still be called at suitable intervals.
+A value of [`true`](../../Swift/true.md) doesn’t mean that the request will run forever. Rather, it means that the nature of the request can’t be broken down into identifiable fractions to report. The [`progressHandler`](./progresshandler.md) will still be called at suitable intervals.
 
 ## See Also
 
-- [var progressHandler: VNRequestProgressHandler](vnrequestprogressproviding/progresshandler.md)
+### Tracking Progress
+- [var progressHandler: VNRequestProgressHandler](./progresshandler.md)
   A block of code executed periodically during a Vision request to report progress on long-running tasks.
 
 

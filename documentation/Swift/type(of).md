@@ -1,7 +1,8 @@
 # type(of:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the dynamic type of a value.
 
@@ -108,9 +109,10 @@ betterPrintGenericInfo(stringAsP)
 
 ## See Also
 
-- [struct Mirror](mirror.md)
+### Querying Runtime Values
+- [struct Mirror](./mirror.md)
   A representation of the substructure and display style of an instance of any type.
-- [struct ObjectIdentifier](objectidentifier.md)
+- [struct ObjectIdentifier](./objectidentifier.md)
   A unique identifier for a class instance, actor instance, or metatype.
 
 

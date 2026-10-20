@@ -1,7 +1,8 @@
 # cellularServices
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A read-only list of cellular service accounts that you can use to initiate a cellular conversation.
 
@@ -18,7 +19,7 @@ final var cellularServices: [CellularService] { get }
 
 #### Discussion
 
-To have access to cellular services, your app needs to be the default calling app. If your app doesn’t have permission to access to accounts, it can still initiate conversations using [`TelephonyConversationManager`](telephonyconversationmanager.md).
+To have access to cellular services, your app needs to be the default calling app. If your app doesn’t have permission to access to accounts, it can still initiate conversations using [`TelephonyConversationManager`](../telephonyconversationmanager.md).
 
 
 ---

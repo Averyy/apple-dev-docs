@@ -1,17 +1,22 @@
 # standardFontFamily
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The standard font family of the web view.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var standardFontFamily: String! { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * standardFontFamily;
 ```
 
 #### Discussion
@@ -20,15 +25,16 @@ This preference affects text whose properties do not indicate that they should b
 
 ## See Also
 
-- [var cursiveFontFamily: String!](webpreferences/cursivefontfamily.md)
+### Getting and Setting Fonts
+- [var cursiveFontFamily: String!](./cursivefontfamily.md)
   The cursive font family of the web view.
-- [var fantasyFontFamily: String!](webpreferences/fantasyfontfamily.md)
+- [var fantasyFontFamily: String!](./fantasyfontfamily.md)
   The fantasy font family of the web view.
-- [var fixedFontFamily: String!](webpreferences/fixedfontfamily.md)
+- [var fixedFontFamily: String!](./fixedfontfamily.md)
   The fixed font family of the web view.
-- [var sansSerifFontFamily: String!](webpreferences/sansseriffontfamily.md)
+- [var sansSerifFontFamily: String!](./sansseriffontfamily.md)
   The sans serif font family of the web view.
-- [var serifFontFamily: String!](webpreferences/seriffontfamily.md)
+- [var serifFontFamily: String!](./seriffontfamily.md)
   The serif font family of the web view.
 
 

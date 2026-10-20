@@ -1,7 +1,8 @@
 # validPartyCodeAlphabet
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allowed characters for the party code to be used to share this activity.
 
@@ -19,13 +20,18 @@ Allowed characters for the party code to be used to share this activity.
 class var validPartyCodeAlphabet: [String] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<NSString *> * validPartyCodeAlphabet;
+```
+
 ## See Also
 
-- [var partyCode: String?](gkgameactivity/partycode.md)
+### Getting and verifying the party code
+- [var partyCode: String?](./partycode.md)
   If the game supports party code, this is the party code that can be shared among players to join the party.
-- [var partyURL: URL?](gkgameactivity/partyurl.md)
+- [var partyURL: URL?](./partyurl.md)
   If the game supports party code, this is the URL that can be shared among players to join the party.
-- [class func isValidPartyCode(String) -> Bool](gkgameactivity/isvalidpartycode(_:).md)
+- [class func isValidPartyCode(String) -> Bool](./isvalidpartycode%28_%29.md)
   Checks whether a party code is in valid format.
 
 

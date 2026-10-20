@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var isEnabled: Bool { get set }
+```
+
+```objc
+@property (getter=isEnabled) BOOL enabled;
 ```
 
 

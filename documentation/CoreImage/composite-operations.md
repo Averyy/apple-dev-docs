@@ -1,105 +1,107 @@
 # Composite Operations
 
-**Framework**: Core Image
+**Framework**: Core Image  
+**Role**: API Collection
 
 Composite images by using a range of blend modes and compositing operators.
 
 ## Topics
 
 ### Filters
-- [class func additionCompositing() -> any CIFilter & CICompositeOperation](cifilter-swift.class/additioncompositing.md)
+- [class func additionCompositing() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/additioncompositing%28%29.md)
   Blends colors from two images by addition.
-- [class func colorBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/colorblendmode.md)
+- [class func colorBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/colorblendmode%28%29.md)
   Blends color from two images using the luminance values from the background image and the hue and saturation values from the input image.
-- [class func colorBurnBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/colorburnblendmode.md)
+- [class func colorBurnBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/colorburnblendmode%28%29.md)
   Blends color from two images while darkening the image.
-- [class func colorDodgeBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/colordodgeblendmode.md)
+- [class func colorDodgeBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/colordodgeblendmode%28%29.md)
   Blends color from two images using dodging.
-- [class func darkenBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/darkenblendmode.md)
+- [class func darkenBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/darkenblendmode%28%29.md)
   Blends colors from two images while darkening lighter pixels.
-- [class func differenceBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/differenceblendmode.md)
+- [class func differenceBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/differenceblendmode%28%29.md)
   Subtracts color values to blend colors.
-- [class func divideBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/divideblendmode.md)
+- [class func divideBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/divideblendmode%28%29.md)
   Divides color values to blend colors.
-- [class func exclusionBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/exclusionblendmode.md)
+- [class func exclusionBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/exclusionblendmode%28%29.md)
   Subtracts color values to blend colors with less contrast.
-- [class func hardLightBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/hardlightblendmode.md)
+- [class func hardLightBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/hardlightblendmode%28%29.md)
   Blends colors of two images by screening and multiplying.
-- [class func hueBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/hueblendmode.md)
+- [class func hueBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/hueblendmode%28%29.md)
   Blends colors of two images by computing the sum of image color values.
-- [class func lightenBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/lightenblendmode.md)
+- [class func lightenBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/lightenblendmode%28%29.md)
   Blends colors from two images by brightening colors.
-- [class func linearBurnBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/linearburnblendmode.md)
+- [class func linearBurnBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/linearburnblendmode%28%29.md)
   Blends color from two images while increasing contrast.
-- [class func linearDodgeBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/lineardodgeblendmode.md)
+- [class func linearDodgeBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/lineardodgeblendmode%28%29.md)
   Blends colors of two images with dodging.
-- [class func linearLightBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/linearlightblendmode.md)
+- [class func linearLightBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/linearlightblendmode%28%29.md)
   A combination of linear burn and linear dodge blend modes.
-- [class func luminosityBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/luminosityblendmode.md)
+- [class func luminosityBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/luminosityblendmode%28%29.md)
   Blends color from two images by calculating the color, hue, and saturation.
-- [class func minimumCompositing() -> any CIFilter & CICompositeOperation](cifilter-swift.class/minimumcompositing.md)
+- [class func minimumCompositing() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/minimumcompositing%28%29.md)
   Blends colors from two images by computing minimum values.
-- [class func maximumCompositing() -> any CIFilter & CICompositeOperation](cifilter-swift.class/maximumcompositing.md)
+- [class func maximumCompositing() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/maximumcompositing%28%29.md)
   Applies a maximum compositing filter to an image.
-- [class func multiplyBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/multiplyblendmode.md)
+- [class func multiplyBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/multiplyblendmode%28%29.md)
   Blends colors from two images by multiplying color components.
-- [class func multiplyCompositing() -> any CIFilter & CICompositeOperation](cifilter-swift.class/multiplycompositing.md)
+- [class func multiplyCompositing() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/multiplycompositing%28%29.md)
   Blurs the colors of two images by multiplying color components.
-- [class func overlayBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/overlayblendmode.md)
+- [class func overlayBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/overlayblendmode%28%29.md)
   Blends colors by overlaying images.
-- [class func pinLightBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/pinlightblendmode.md)
+- [class func pinLightBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/pinlightblendmode%28%29.md)
   Blends colors of two images by replacing brighter colors.
-- [class func saturationBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/saturationblendmode.md)
+- [class func saturationBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/saturationblendmode%28%29.md)
   Blends the colors and saturation values of two images.
-- [class func screenBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/screenblendmode.md)
+- [class func screenBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/screenblendmode%28%29.md)
   Blends colors of two images by multiplying colors.
-- [class func softLightBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/softlightblendmode.md)
+- [class func softLightBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/softlightblendmode%28%29.md)
   Blurs the colors of two images by calculating luminance.
-- [class func sourceAtopCompositing() -> any CIFilter & CICompositeOperation](cifilter-swift.class/sourceatopcompositing.md)
+- [class func sourceAtopCompositing() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/sourceatopcompositing%28%29.md)
   Overlaps two images to create one cropped image.
-- [class func sourceInCompositing() -> any CIFilter & CICompositeOperation](cifilter-swift.class/sourceincompositing.md)
+- [class func sourceInCompositing() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/sourceincompositing%28%29.md)
   Subtracts non-overlapping areas of two images, resulting in one image.
-- [class func sourceOutCompositing() -> any CIFilter & CICompositeOperation](cifilter-swift.class/sourceoutcompositing.md)
+- [class func sourceOutCompositing() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/sourceoutcompositing%28%29.md)
   Subtracts overlapping area of two images to create the output image.
-- [class func sourceOverCompositing() -> any CIFilter & CICompositeOperation](cifilter-swift.class/sourceovercompositing.md)
+- [class func sourceOverCompositing() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/sourceovercompositing%28%29.md)
   Places one image over a second image.
-- [class func subtractBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/subtractblendmode.md)
+- [class func subtractBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/subtractblendmode%28%29.md)
   Blends colors by subtracting color values from two images.
-- [class func vividLightBlendMode() -> any CIFilter & CICompositeOperation](cifilter-swift.class/vividlightblendmode.md)
+- [class func vividLightBlendMode() -> any CIFilter & CICompositeOperation](./cifilter-swift.class/vividlightblendmode%28%29.md)
   A combination of color-burn and color-dodge blend modes.
 ### Protocols
-- [protocol CICompositeOperation](cicompositeoperation.md)
+- [protocol CICompositeOperation](./cicompositeoperation.md)
   The properties you use to configure a composite operation filter.
 
 ## See Also
 
-- [Blur Filters](blur-filters.md)
+### Filter Catalog
+- [Blur Filters](./blur-filters.md)
   Apply blurs, simulate motion and zoom effects, reduce noise, and erode and dilate image regions.
-- [Color Adjustment Filters](color-adjustment-filters.md)
+- [Color Adjustment Filters](./color-adjustment-filters.md)
   Apply color transformations, including exposure, hue, and tint adjustments.
-- [Color Effect Filters](color-effect-filters.md)
+- [Color Effect Filters](./color-effect-filters.md)
   Apply color effects, including photo effects, dithering, and color maps.
-- [Convolution Filters](convolution-filters.md)
+- [Convolution Filters](./convolution-filters.md)
   Produce effects such as blurring, sharpening, edge detection, translation, and embossing.
-- [Distortion Filters](distortion-filters.md)
+- [Distortion Filters](./distortion-filters.md)
   Apply distortion to images.
-- [Generator Filters](generator-filters.md)
+- [Generator Filters](./generator-filters.md)
   Generate barcode, geometric, and special-effect images.
-- [Geometry Adjustment Filters](geometry-adjustment-filters.md)
+- [Geometry Adjustment Filters](./geometry-adjustment-filters.md)
   Translate, scale, and rotate images in 2D and 3D.
-- [Gradient Filters](gradient-filters.md)
+- [Gradient Filters](./gradient-filters.md)
   Generate linear and radial gradients.
-- [Halftone Effect Filters](halftone-effect-filters.md)
+- [Halftone Effect Filters](./halftone-effect-filters.md)
   Simulate monochrome and CMYK halftone screens.
-- [Reduction Filters](reduction-filters.md)
+- [Reduction Filters](./reduction-filters.md)
   Create statistical information about an image.
-- [Sharpening Filters](sharpening-filters.md)
+- [Sharpening Filters](./sharpening-filters.md)
   Apply sharpening to images.
-- [Stylizing Filters](stylizing-filters.md)
+- [Stylizing Filters](./stylizing-filters.md)
   Create stylized versions of images by applying effects including pixelation and line overlays.
-- [Tile Effect Filters](tile-effect-filters.md)
+- [Tile Effect Filters](./tile-effect-filters.md)
   Produce tiled images from source images.
-- [Transition Filters](transition-filters.md)
+- [Transition Filters](./transition-filters.md)
   Transition between two images by using effects including page curl and swipe.
 
 

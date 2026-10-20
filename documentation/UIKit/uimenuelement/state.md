@@ -1,7 +1,8 @@
 # UIMenuElement.State
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the state of an action- or command-based menu element.
 
@@ -18,48 +19,53 @@ Constants that indicate the state of an action- or command-based menu element.
 enum State
 ```
 
+```c
+enum UIMenuElementState : NSInteger;
+```
+
 ## Topics
 
 ### States
-- [UIMenuElement.State.off](uimenuelement/state/off.md)
+- [UIMenuElement.State.off](./state/off.md)
   A constant indicating the menu element is in the “off” state.
-- [UIMenuElement.State.on](uimenuelement/state/on.md)
+- [UIMenuElement.State.on](./state/on.md)
   A constant indicating the menu element is in the “on” state.
-- [UIMenuElement.State.mixed](uimenuelement/state/mixed.md)
+- [UIMenuElement.State.mixed](./state/mixed.md)
   A constant indicating the menu element is in the “mixed” state.
 ### Initializers
-- [init?(rawValue: Int)](uimenuelement/state/init(rawvalue:).md)
+- [init?(rawValue: Int)](./state/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+### Menu elements and keyboard shortcuts
+- [Adding menus and shortcuts to the menu bar and user interface](../adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
-- [Adopting menus and UIActions in your user interface](adopting-menus-and-uiactions-in-your-user-interface.md)
+- [Adopting menus and UIActions in your user interface](../adopting-menus-and-uiactions-in-your-user-interface.md)
   Add menus to your user interface, with built-in button support and bar-button items, and create custom menu experiences.
-- [class UIMenuElement](uimenuelement.md)
+- [class UIMenuElement](../uimenuelement.md)
   An object representing a menu, action, or command.
-- [class UIAction](uiaction.md)
+- [class UIAction](../uiaction.md)
   A menu element that performs its action in a closure.
-- [class UICommand](uicommand.md)
+- [class UICommand](../uicommand.md)
   A menu element that performs its action in a selector.
-- [class UIKeyCommand](uikeycommand.md)
+- [class UIKeyCommand](../uikeycommand.md)
   An object that specifies a key press perform on a hardware keyboard and the resulting action.
-- [class UIDeferredMenuElement](uideferredmenuelement.md)
+- [class UIDeferredMenuElement](../uideferredmenuelement.md)
   A placeholder menu element that the system replaces with the result of the block’s completion handler.
-- [UIDeferredMenuElement.Provider](uideferredmenuelement/provider.md)
-- [UIMenuElement.Attributes](uimenuelement/attributes.md)
+- [UIDeferredMenuElement.Provider](../uideferredmenuelement/provider.md)
+- [UIMenuElement.Attributes](./attributes.md)
   Attributes that determine the style of the menu element.
-- [protocol UIMenuLeaf](uimenuleaf.md)
+- [protocol UIMenuLeaf](../uimenuleaf.md)
   An interface for an object that represents a menu element without child elements.
 
 

@@ -1,7 +1,8 @@
 # constantValues
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures optional function constant values to associate with the function.
 
@@ -18,6 +19,10 @@ Configures optional function constant values to associate with the function.
 ```swift
 @NSCopying
 var constantValues: MTLFunctionConstantValues? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) MTLFunctionConstantValues * constantValues;
 ```
 
 

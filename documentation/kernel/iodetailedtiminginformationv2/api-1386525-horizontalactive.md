@@ -1,7 +1,8 @@
 # horizontalActive
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Pixel clocks per line.
 
@@ -10,7 +11,7 @@ Pixel clocks per line.
 
 ## Declaration
 
-```swift
+```c
 UInt32 horizontalActive;
 ```
 

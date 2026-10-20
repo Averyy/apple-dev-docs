@@ -1,13 +1,14 @@
 # random::half2_01
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Generates a pseudo-random 2D vector with half-precision components between 0 and 1.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ A pseudo-random 2D half-precision vector with components in the range [0.0, 1.0]
 
 This function generates a random 2D vector where each component is independently generated in the range [0.0, 1.0] using half-precision floating-point format. The internal random seed is incremented for subsequent calls.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/random__half2_01.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/random__half2_01.svg)
 
 
 ---

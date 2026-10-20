@@ -1,7 +1,8 @@
 # LanguageModelExecutorGenerationChannel.Reasoning
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A reasoning event.
 
@@ -21,39 +22,40 @@ struct Reasoning
 
 #### Overview
 
-A per-entry reasoning text, segment replacements, signature updates, metadata, or usage. Reasoning events are peers of [`LanguageModelExecutorGenerationChannel.Response`](languagemodelexecutorgenerationchannel/response.md) and [`LanguageModelExecutorGenerationChannel.ToolCalls`](languagemodelexecutorgenerationchannel/toolcalls.md).
+A per-entry reasoning text, segment replacements, signature updates, metadata, or usage. Reasoning events are peers of [`LanguageModelExecutorGenerationChannel.Response`](./response.md) and [`LanguageModelExecutorGenerationChannel.ToolCalls`](./toolcalls.md).
 
 ## Topics
 
 ### Handling reasoning
-- [var action: LanguageModelExecutorGenerationChannel.Reasoning.Action](languagemodelexecutorgenerationchannel/reasoning/action-swift.property.md)
+- [var action: LanguageModelExecutorGenerationChannel.Reasoning.Action](./reasoning/action-swift.property.md)
   The action to perform.
-- [LanguageModelExecutorGenerationChannel.Reasoning.Action](languagemodelexecutorgenerationchannel/reasoning/action-swift.struct.md)
+- [LanguageModelExecutorGenerationChannel.Reasoning.Action](./reasoning/action-swift.struct.md)
   An operation that can be performed on a reasoning entry.
-- [var entryID: String?](languagemodelexecutorgenerationchannel/reasoning/entryid.md)
+- [var entryID: String?](./reasoning/entryid.md)
   The identifier for the entry.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LanguageModelExecutorGenerationChannel.Metadata](languagemodelexecutorgenerationchannel/metadata.md)
+### Accessing the event types
+- [LanguageModelExecutorGenerationChannel.Metadata](./metadata.md)
   Snapshot of an entry’s metadata dictionary.
-- [LanguageModelExecutorGenerationChannel.ReasoningSignature](languagemodelexecutorgenerationchannel/reasoningsignature.md)
+- [LanguageModelExecutorGenerationChannel.ReasoningSignature](./reasoningsignature.md)
   Payload for a reasoning entry’s signature update.
-- [LanguageModelExecutorGenerationChannel.TextFragment](languagemodelexecutorgenerationchannel/textfragment.md)
+- [LanguageModelExecutorGenerationChannel.TextFragment](./textfragment.md)
   Text appended to a streaming entry’s current text segment.
-- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
+- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](./textsegmentreplacement.md)
   A replacement for a streaming entry’s current text segment.
-- [LanguageModelExecutorGenerationChannel.Response](languagemodelexecutorgenerationchannel/response.md)
+- [LanguageModelExecutorGenerationChannel.Response](./response.md)
   A model-generated response event: text, segment replacements, citations, advisories, custom segments, metadata, or usage.
-- [LanguageModelExecutorGenerationChannel.ToolCalls](languagemodelexecutorgenerationchannel/toolcalls.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls](./toolcalls.md)
   A tool-call lifecycle event, including per-call argument streaming, reasoning, metadata, usage, or retraction.
-- [LanguageModelExecutorGenerationChannel.Usage](languagemodelexecutorgenerationchannel/usage.md)
+- [LanguageModelExecutorGenerationChannel.Usage](./usage.md)
   Snapshot of an entry’s token totals.
 
 

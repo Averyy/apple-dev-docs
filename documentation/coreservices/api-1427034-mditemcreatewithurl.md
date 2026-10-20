@@ -1,7 +1,8 @@
 # MDItemCreateWithURL(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an MDItem object for a file at the specified file URL.
 
@@ -14,7 +15,11 @@ Creates an MDItem object for a file at the specified file URL.
 func MDItemCreateWithURL(_ allocator: CFAllocator!, _ url: CFURL!) -> MDItem!
 ```
 
-#### Return_value
+```c
+MDItemRef MDItemCreateWithURL(CFAllocatorRef allocator, CFURLRef url);
+```
+
+#### Return Value
 
 An `MDItem` object or `NULL` if there was a problem creating the object. 
 
@@ -22,7 +27,7 @@ An `MDItem` object or `NULL` if there was a problem creating the object.
 
 Returns a metadata item for the given URL.
 
-##### 1675371
+##### Special Considerations
 
 In macOS 10.5 and later MDItemRefs may or may not be uniqued. You should always use `CFEqual` for comparison. 
 
@@ -35,7 +40,8 @@ Prior to OS X v 10.5 items were guaranteed to be unique and == could or `CFEqual
 
 ## See Also
 
-- [func MDItemCreate(CFAllocator!, CFString!) -> MDItem!](1426917-mditemcreate.md)
+### Creating an MDItem
+- [func MDItemCreate(CFAllocator!, CFString!) -> MDItem!](./api-1426917-mditemcreate.md)
   Creates an MDItem object for a file at the specified path.
 
 

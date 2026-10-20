@@ -1,7 +1,8 @@
 # outputFormat
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Override this class property if you want your processor’s output to be in a specific pixel format.
 
@@ -19,6 +20,10 @@ Override this class property if you want your processor’s output to be in a sp
 class var outputFormat: CIFormat { get }
 ```
 
+```objc
+@property (class, readonly) CIFormat outputFormat;
+```
+
 #### Discussion
 
 The format must be one of `kCIFormatBGRA8`, `kCIFormatRGBAh`, `kCIFormatRGBAf` or `kCIFormatR8`. On iOS 12 and macOS 10.14, the formats `kCIFormatRh` and `kCIFormatRf` are also supported.
@@ -29,9 +34,10 @@ If a processor returns data in a color space other than the context working colo
 
 ## See Also
 
-- [class var outputIsOpaque: Bool](ciimageprocessorkernel/outputisopaque.md)
+### Type Properties
+- [class var outputIsOpaque: Bool](./outputisopaque.md)
   Override this class property if your processor’s output stores 1.0 into the alpha channel of all pixels within the output extent.
-- [class var synchronizeInputs: Bool](ciimageprocessorkernel/synchronizeinputs.md)
+- [class var synchronizeInputs: Bool](./synchronizeinputs.md)
   Override this class property to return false if you want your processor to be given input objects that have not been synchronized for CPU access.
 
 

@@ -1,7 +1,8 @@
 # clear()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the accumulator, discarding any pending updates and the current content.
 
@@ -17,6 +18,10 @@ Resets the accumulator, discarding any pending updates and the current content.
 
 ```swift
 func clear()
+```
+
+```objc
+- (void) clear;
 ```
 
 

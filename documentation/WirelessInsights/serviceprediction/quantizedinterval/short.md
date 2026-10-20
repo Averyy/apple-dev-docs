@@ -1,7 +1,8 @@
 # short
 
 **Framework**: WirelessInsights  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An interval for an issue expected to last approximately one minute or fewer.
 
@@ -17,11 +18,12 @@ static let short: Double
 
 ## See Also
 
-- [static let long: Double](serviceprediction/quantizedinterval/long.md)
+### Working with interval values
+- [static let long: Double](./long.md)
   An interval for an issue expected to last more than five minutes.
-- [static let medium: Double](serviceprediction/quantizedinterval/medium.md)
+- [static let medium: Double](./medium.md)
   An interval for an issue expected to last approximately five minutes.
-- [static let minimal: Double](serviceprediction/quantizedinterval/minimal.md)
+- [static let minimal: Double](./minimal.md)
   An interval for an issue expected to last approximately 10 seconds or fewer.
 
 

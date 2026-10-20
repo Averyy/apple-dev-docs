@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a TXT record with a dictionary of strings.
 
@@ -22,11 +23,12 @@ init(_ dictionary: [String : String] = [:])
 
 ## See Also
 
-- [func removeEntry(key: String) -> Bool](nwtxtrecord/removeentry(key:).md)
+### Creating TXT Records
+- [func removeEntry(key: String) -> Bool](./removeentry%28key%29.md)
   Removes an entry from a TXT record dictionary.
-- [func setEntry(NWTXTRecord.Entry, for: String) -> Bool](nwtxtrecord/setentry(_:for:).md)
+- [func setEntry(NWTXTRecord.Entry, for: String) -> Bool](./setentry%28_,for%29.md)
   Sets an entry in a TXT record dictionary.
-- [NWTXTRecord.Entry](nwtxtrecord/entry.md)
+- [NWTXTRecord.Entry](./entry.md)
   A type of entry in a TXT record dictionary.
 
 

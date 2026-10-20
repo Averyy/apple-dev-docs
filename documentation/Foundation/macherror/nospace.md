@@ -1,7 +1,8 @@
 # noSpace
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The address range specified is already in use, or no address range of the size specified could be found.
 

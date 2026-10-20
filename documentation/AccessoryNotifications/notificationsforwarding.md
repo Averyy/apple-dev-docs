@@ -1,7 +1,8 @@
 # NotificationsForwarding
 
 **Framework**: Accessory Notifications  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class for handling notification forwarding in your accessory’s data provider extension.
 
@@ -16,38 +17,39 @@ final class NotificationsForwarding
 
 #### Overview
 
-Implement the [`NotificationsForwarding.AccessoryNotificationsHandler`](notificationsforwarding/accessorynotificationshandler.md) protocol in your [`AccessoryDataProvider`](https://developer.apple.com/documentation/accessorytransportextension/accessorydataprovider) extension to receive and manage system notifications that iOS forwards to your accessory.
+Implement the [`NotificationsForwarding.AccessoryNotificationsHandler`](./notificationsforwarding/accessorynotificationshandler.md) protocol in your [`AccessoryDataProvider`](../AccessoryTransportExtension/accessorydataprovider.md) extension to receive and manage system notifications that iOS forwards to your accessory.
 
 ## Topics
 
 ### Creating a notifications forwarding object
-- [init(() -> any NotificationsForwarding.AccessoryNotificationsHandler)](notificationsforwarding/init(_:).md)
+- [init(() -> any NotificationsForwarding.AccessoryNotificationsHandler)](./notificationsforwarding/init%28_%29.md)
   Initializes a notifications-forwarding capability with a handler factory.
 ### Managing notification sessions
-- [NotificationsForwarding.Session](notificationsforwarding/session.md)
+- [NotificationsForwarding.Session](./notificationsforwarding/session.md)
   A session object that facilitates bidirectional communication between the system and your extension.
-- [NotificationsForwarding.AccessoryNotificationsSession](notificationsforwarding/accessorynotificationssession.md)
+- [NotificationsForwarding.AccessoryNotificationsSession](./notificationsforwarding/accessorynotificationssession.md)
   A protocol that enables bidirectional communication between your extension and the system.
 ### Handling notification events
-- [NotificationsForwarding.AccessoryNotificationsHandler](notificationsforwarding/accessorynotificationshandler.md)
+- [NotificationsForwarding.AccessoryNotificationsHandler](./notificationsforwarding/accessorynotificationshandler.md)
   A protocol that defines methods for handling notification life cycle events in your extension.
 
 ## Relationships
 
 ### Conforms To
-- [AccessoryFeature](../accessorytransportextension/accessoryfeature.md)
-- [AppExtensionPoint.Capability](../extensionfoundation/appextensionpoint/capability.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AccessoryFeature](../AccessoryTransportExtension/accessoryfeature.md)
+- [AppExtensionPoint.Capability](../ExtensionFoundation/appextensionpoint/capability.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Receiving iOS notifications on an accessory](../accessorytransportextension/receiving-ios-notifications-on-an-accessory.md)
+### Notification receipt
+- [Receiving iOS notifications on an accessory](../AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory.md)
   Create custom app extensions that manage iOS system notifications for your accessory.
-- [NotificationsForwarding.AccessoryNotificationsHandler](notificationsforwarding/accessorynotificationshandler.md)
+- [NotificationsForwarding.AccessoryNotificationsHandler](./notificationsforwarding/accessorynotificationshandler.md)
   A protocol that defines methods for handling notification life cycle events in your extension.
-- [NotificationsForwarding.Session](notificationsforwarding/session.md)
+- [NotificationsForwarding.Session](./notificationsforwarding/session.md)
   A session object that facilitates bidirectional communication between the system and your extension.
 
 

@@ -1,7 +1,8 @@
 # twoDigitStartDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The earliest date that can be denoted by a two-digit year specifier.
 

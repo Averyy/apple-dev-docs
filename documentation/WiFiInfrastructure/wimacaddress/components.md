@@ -1,7 +1,8 @@
 # components
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MAC Address as a list of octets.
 
@@ -18,7 +19,8 @@ var components: [UInt8] { get }
 
 ## See Also
 
-- [init?([UInt8])](wimacaddress/init(_:)-9xhxx.md)
+### Working with MAC Addresses as octet components
+- [init?([UInt8])](./init%28_%29-9xhxx.md)
   Create a MAC Address from the provided octet components.
 
 

@@ -1,7 +1,8 @@
 # glyphText
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The text to display in the marker balloon.
 
@@ -10,7 +11,7 @@ The text to display in the marker balloon.
 
 ## Declaration
 
-```swift
+```
 glyphText?: string;
 ```
 
@@ -18,21 +19,22 @@ glyphText?: string;
 
 The text to display in the balloon instead of a glyph image. The default value is `null`. There’s a limited amount of space available for displaying glyph text. Specify no more than two or three characters.
 
-If you specify both a [`glyphImage`](markerannotationconstructoroptions/glyphimage.md) and [`glyphText`](markerannotationconstructoroptions/glyphtext.md), MapKit JS ignores the glyph image and displays the glyph text.
+If you specify both a [`glyphImage`](./glyphimage.md) and [`glyphText`](./glyphtext.md), MapKit JS ignores the glyph image and displays the glyph text.
 
 ## See Also
 
-- [color](markerannotationconstructoroptions/color.md)
+### Setting marker annotation properties
+- [color](./color.md)
   The background color of the balloon.
-- [glyphColor](markerannotationconstructoroptions/glyphcolor.md)
+- [glyphColor](./glyphcolor.md)
   The fill color of the glyph.
-- [glyphImage](markerannotationconstructoroptions/glyphimage.md)
+- [glyphImage](./glyphimage.md)
   The image to display in the marker balloon.
-- [selectedGlyphImage](markerannotationconstructoroptions/selectedglyphimage.md)
+- [selectedGlyphImage](./selectedglyphimage.md)
   The image to display in the balloon when the user selects the marker.
-- [subtitleVisibility](markerannotationconstructoroptions/subtitlevisibility.md)
+- [subtitleVisibility](./subtitlevisibility.md)
   A value that determines the behavior of the subtitle’s visibility.
-- [titleVisibility](markerannotationconstructoroptions/titlevisibility.md)
+- [titleVisibility](./titlevisibility.md)
   A value that determines the behavior of the title’s visibility.
 
 

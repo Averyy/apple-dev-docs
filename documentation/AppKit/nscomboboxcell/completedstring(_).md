@@ -1,17 +1,22 @@
 # completedString(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string from the combo box’s pop-up list that starts with the given substring.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func completedString(_ string: String) -> String?
+```
+
+```objc
+- (NSString *) completedString:(NSString *) string;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ Override this method only if your subclass completes strings differently. The ov
 
 ## See Also
 
-- [var completes: Bool](nscomboboxcell/completes.md)
+### Completing the Text Field
+- [var completes: Bool](./completes.md)
   A Boolean value that indicates if the combo box tries to complete text entered by the user.
 
 

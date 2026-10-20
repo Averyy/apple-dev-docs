@@ -1,7 +1,8 @@
 # MEComposeSession
 
 **Framework**: MailKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a single mail compose window.
 
@@ -14,42 +15,47 @@ An object that represents a single mail compose window.
 class MEComposeSession
 ```
 
+```objc
+@interface MEComposeSession : NSObject
+```
+
 ## Topics
 
 ### Managing Compose Sessions
-- [var sessionID: UUID](mecomposesession/sessionid.md)
+- [var sessionID: UUID](./mecomposesession/sessionid.md)
   A unique identifier for the session.
-- [func reload()](mecomposesession/reload.md)
+- [func reload()](./mecomposesession/reload%28%29.md)
   Refreshes the compose session with the extension’s new information.
 ### Accessing Message Properties
-- [var mailMessage: MEMessage](mecomposesession/mailmessage.md)
+- [var mailMessage: MEMessage](./mecomposesession/mailmessage.md)
   The properties of the mail message, such as the subject and recipients.
 ### Instance Properties
-- [var composeContext: MEComposeContext](mecomposesession/composecontext.md)
+- [var composeContext: MEComposeContext](./mecomposesession/composecontext.md)
 ### Initializers
-- [init?(coder: NSCoder)](mecomposesession/init(coder:).md)
+- [init?(coder: NSCoder)](./mecomposesession/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [func mailComposeSessionDidBegin(MEComposeSession)](mecomposesessionhandler/mailcomposesessiondidbegin(_:).md)
+### Handling Compose Sessions
+- [func mailComposeSessionDidBegin(MEComposeSession)](./mecomposesessionhandler/mailcomposesessiondidbegin%28_%29.md)
   Informs the handler when the user opens a compose window.
-- [func mailComposeSessionDidEnd(MEComposeSession)](mecomposesessionhandler/mailcomposesessiondidend(_:).md)
+- [func mailComposeSessionDidEnd(MEComposeSession)](./mecomposesessionhandler/mailcomposesessiondidend%28_%29.md)
   Informs the handler when the user closes a compose window.
-- [struct MEComposeSessionError](mecomposesessionerror.md)
+- [struct MEComposeSessionError](./mecomposesessionerror.md)
   An error that indicates the compose session is in an erroneous state.
 
 

@@ -1,7 +1,8 @@
 # String.UnicodeScalarIndex
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The index type for a string’s `unicodeScalars` view.
 

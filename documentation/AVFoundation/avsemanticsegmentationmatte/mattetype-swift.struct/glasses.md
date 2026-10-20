@@ -1,7 +1,8 @@
 # glasses
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A matting image that segments eyeglasses and sunglasses from all people in the visible field of view of an image.
 
@@ -20,13 +21,18 @@ A matting image that segments eyeglasses and sunglasses from all people in the v
 static let glasses: AVSemanticSegmentationMatte.MatteType
 ```
 
+```c
+extern AVSemanticSegmentationMatteType const AVSemanticSegmentationMatteTypeGlasses;
+```
+
 ## See Also
 
-- [static let hair: AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.struct/hair.md)
+### Matte types
+- [static let hair: AVSemanticSegmentationMatte.MatteType](./hair.md)
   A matting image that segments the hair from all people in the visible field of view of an image.
-- [static let skin: AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.struct/skin.md)
+- [static let skin: AVSemanticSegmentationMatte.MatteType](./skin.md)
   A matting image that segments the skin from all people in the visible field of view of an image.
-- [static let teeth: AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.struct/teeth.md)
+- [static let teeth: AVSemanticSegmentationMatte.MatteType](./teeth.md)
   A matting image that segments the teeth from all people in the visible field of view of an image.
 
 

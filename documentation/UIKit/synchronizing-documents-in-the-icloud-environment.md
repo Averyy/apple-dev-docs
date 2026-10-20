@@ -1,6 +1,8 @@
 # Synchronizing documents in the iCloud environment
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [SynchronizingDocumentsInTheICloudEnvironment.zip](https://docs-assets.developer.apple.com/published/74e04f5e0a75/SynchronizingDocumentsInTheICloudEnvironment.zip)
 
 Manage documents across multiple devices to create a seamless editing and collaboration experience.
 
@@ -18,12 +20,12 @@ This sample demonstrates how to discover and synchronize documents in the iCloud
 
 The sample also demonstrates how to publish an iCloud container to iCloud Drive so that the user can access the container’s `Documents` folder from other apps. Additionally, it shows how to support the Open-in-Place feature, which allows the user to launch an app by tapping a document in Files, and then edit it directly.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before building the sample, perform the following steps in Xcode:
 
 1. In the General pane of the `SimpleiCloudDocument` target, update the Bundle Identifier field with a new identifier.
-2. In the Signing & Capabilities pane, select the applicable team from the Team drop-down menu to let Xcode automatically manage the provisioning profile. See [`Assign a project to a team`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev23aab79b4) for details.
+2. In the Signing & Capabilities pane, select the applicable team from the Team drop-down menu to let Xcode automatically manage the provisioning profile. See [Assign a project to a team](https://help.apple.com/xcode/mac/current/#/dev23aab79b4) for details.
 3. Make sure the iCloud capability is present and the iCloud Documents box is in a selected state, then select the iCloud container with your bundle identifier from step 1 from the Containers list. If the container doesn’t exist, click the Add button (+), enter the container name (iCloud.<bundle identifier>), and click OK to let Xcode create the container and associate it with the app.
 4. If you prefer to use a different container, select it from the Containers list, specify the container identifier when creating the `MetadataProvider` instance in the `viewDidLoad` method of the `MainViewController` class. An iCloud container identifier is case-sensitive and must begin with “`iCloud.`”.
 5. Find the `NSUbiquitousContainers` entry in the `Info.plist` file, and change the iCloud container identifier there as well.
@@ -34,12 +36,12 @@ Before running the sample on a device, configure the device as follows:
 2. Choose Settings > Apple ID > iCloud, and turn on iCloud Drive, if it is off.
 3. Prepare some pictures in the Photo Library to use in the sample.
 
-##### Publish an Icloud Container to Icloud Drive
+##### Publish an iCloud container to iCloud Drive
 
 Publishing an iCloud container to iCloud Drive makes the container’s `Documents` folder appear in iCloud Drive so the user can access the folder from other apps. Follow these steps to publish a container:
 
 1. Provide the container’s metadata by adding an `NSUbiquitousContainers` entry to the `Info.plist` file like the example code below demonstrates.
-2. Increase the bundle version by changing the Build field in the General pane of the Xcode target, or the  [`CFBundleVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundleversion) entry in the `Info.plist` file. The new value must be larger than the previous value when using the [`compare(_:options:range:)`](https://developer.apple.com/documentation/foundation/nsstring/compare(_:options:range:)) method with the [`numeric`](https://developer.apple.com/documentation/foundation/nsstring/compareoptions/numeric) option to compare, and must only contain numeric (0 – 9) and period (.) characters. The system only updates an app’s iCloud container metadata when detecting a new version, so perform this step every time the metadata changes.
+2. Increase the bundle version by changing the Build field in the General pane of the Xcode target, or the  [`CFBundleVersion`](../BundleResources/information-property-list/cfbundleversion.md) entry in the `Info.plist` file. The new value must be larger than the previous value when using the [`compare(_:options:range:)`](../Foundation/nsstring/compare%28_,options,range%29.md) method with the [`numeric`](../Foundation/nsstring/compareoptions/numeric.md) option to compare, and must only contain numeric (0 – 9) and period (.) characters. The system only updates an app’s iCloud container metadata when detecting a new version, so perform this step every time the metadata changes.
 3. Make sure the `Documents` folder exists in the iCloud container and has at least one document.
 
 The `NSUbiquitousContainers` entry of the sample is as follows:
@@ -59,19 +61,19 @@ The `NSUbiquitousContainers` entry of the sample is as follows:
     </dict>
 ```
 
-##### Support Open in Place
+##### Support Open-in-Place
 
 The Open-in-Place feature allows the user to launch an app by tapping a document of the type the app owns. After opening it, the app can change the document directly without copying it to the app’s sandbox container. Follow these steps to implement the feature:
 
-1. Declare and export a document type for the app by adding the [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes) and [`UTExportedTypeDeclarations`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations) `Info.plist` entries. Make sure the type conforms to at least `public.content` and `public.data` in the [`UTTypeConformsTo`](https://developer.apple.com/documentation/bundleresources/information-property-list/utexportedtypedeclarations/uttypeconformsto) entry so that the other system components, like `UIActivityViewController`, recognize it.
+1. Declare and export a document type for the app by adding the [`CFBundleDocumentTypes`](../BundleResources/information-property-list/cfbundledocumenttypes.md) and [`UTExportedTypeDeclarations`](../BundleResources/information-property-list/utexportedtypedeclarations.md) `Info.plist` entries. Make sure the type conforms to at least `public.content` and `public.data` in the [`UTTypeConformsTo`](../BundleResources/information-property-list/utexportedtypedeclarations/uttypeconformsto.md) entry so that the other system components, like `UIActivityViewController`, recognize it.
 2. Add the `LSSupportsOpeningDocumentsInPlace` key to the `Info.plist` file, and set the value to `YES`.
-3. Implement the [`scene(_:openURLContexts:)`](uiscenedelegate/scene(_:openurlcontexts:).md) method of the  `UISceneDelegate` protocol to accept the document.
+3. Implement the [`scene(_:openURLContexts:)`](./uiscenedelegate/scene%28_,openurlcontexts%29.md) method of the  `UISceneDelegate` protocol to accept the document.
 
-Apps need to wrap the code that accesses the passed-in URL with the [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource()) and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/stopaccessingsecurityscopedresource()) methods if the URL is outside of their sandbox. This sample doesn’t explicitly do that because it accesses the URL via [`UIDocument`](uidocument.md), which handles [`security-scoped bookmarks`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AppSandboxInDepth/AppSandboxInDepth.html#//apple_ref/doc/uid/TP40011183-CH3-SW16) automatically.
+Apps need to wrap the code that accesses the passed-in URL with the [`startAccessingSecurityScopedResource`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md) and [`stopAccessingSecurityScopedResource`](../Foundation/nsurl/stopaccessingsecurityscopedresource%28%29.md) methods if the URL is outside of their sandbox. This sample doesn’t explicitly do that because it accesses the URL via [`UIDocument`](./uidocument.md), which handles [security-scoped bookmarks](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AppSandboxInDepth/AppSandboxInDepth.html#//apple_ref/doc/uid/TP40011183-CH3-SW16) automatically.
 
-##### Discover Documents in an Icloud Container
+##### Discover documents in an iCloud container
 
-iOS apps use [`NSMetadataQuery`](https://developer.apple.com/documentation/foundation/nsmetadataquery) rather than file system APIs to discover documents in an iCloud container. When an app creates an iCloud document on one device, iCloud first synchronizes the document metadata to the other devices to tell them about the existence of the document. Then, depending on the device types, iCloud may or may not continue to synchronize the document data. For iOS devices, iCloud doesn’t synchronize the document data until an app asks (either explicitly or implicitly). When an iOS app receives a notification that a new document exists, the document data may not physically exist on the local file system, so it isn’t discoverable with file system APIs.
+iOS apps use [`NSMetadataQuery`](../Foundation/nsmetadataquery.md) rather than file system APIs to discover documents in an iCloud container. When an app creates an iCloud document on one device, iCloud first synchronizes the document metadata to the other devices to tell them about the existence of the document. Then, depending on the device types, iCloud may or may not continue to synchronize the document data. For iOS devices, iCloud doesn’t synchronize the document data until an app asks (either explicitly or implicitly). When an iOS app receives a notification that a new document exists, the document data may not physically exist on the local file system, so it isn’t discoverable with file system APIs.
 
 To watch the metadata changes in the iCloud container, the sample creates an `NSMetadataQuery` object. It uses the following code to configure and start the query to gather the changes of documents that are in the iCloud container and have an `.sicd` extension name.
 
@@ -83,7 +85,7 @@ metadataQuery.sortDescriptors = [NSSortDescriptor(key: NSMetadataItemFSNameKey, 
 metadataQuery.start()
 ```
 
-A query has two phases when gathering the metadata: the initial phase that collects all currently matching results, and a second phase that gathers live updates. It posts an [`NSMetadataQueryDidFinishGathering`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmetadataquerydidfinishgathering) notification when it finishes the first phase, and an [`NSMetadataQueryDidUpdate`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmetadataquerydidupdate) notification each time an update occurs. To avoid potential conflicts with the system, disable the query update when accessing the results, and enable it after finishing the access, as the following example shows:
+A query has two phases when gathering the metadata: the initial phase that collects all currently matching results, and a second phase that gathers live updates. It posts an [`NSMetadataQueryDidFinishGathering`](../Foundation/nsnotification/name-swift.struct/nsmetadataquerydidfinishgathering.md) notification when it finishes the first phase, and an [`NSMetadataQueryDidUpdate`](../Foundation/nsnotification/name-swift.struct/nsmetadataquerydidupdate.md) notification each time an update occurs. To avoid potential conflicts with the system, disable the query update when accessing the results, and enable it after finishing the access, as the following example shows:
 
 ```swift
 func metadataItemList() -> [MetadataItem] {
@@ -97,7 +99,7 @@ func metadataItemList() -> [MetadataItem] {
 }
 ```
 
-##### Manage a Large Data Set
+##### Manage a large data set
 
 Documents in this sample could potentially contain many images, and the images might be large. To load image data only when necessary, and release the data immediately after using it, the `Document` class provides public methods for directly accessing the images in the document package. As an example, the following method retrieves a full image asynchronously:
 
@@ -117,9 +119,9 @@ func retrieveImageAsynchronously(with imageName: String, completionHandler: @esc
 }
 ```
 
-When directly manipulating the files in the document package, the sample calls the [`performAsynchronousFileAccess(_:)`](uidocument/performasynchronousfileaccess(_:).md) method to serialize the file access in the background queue, and uses [`NSFileCoordinator`](https://developer.apple.com/documentation/foundation/nsfilecoordinator) to coordinate the reading or writing.
+When directly manipulating the files in the document package, the sample calls the [`performAsynchronousFileAccess(_:)`](./uidocument/performasynchronousfileaccess%28_%29.md) method to serialize the file access in the background queue, and uses [`NSFileCoordinator`](../Foundation/nsfilecoordinator.md) to coordinate the reading or writing.
 
-Likewise, to avoid the default implementation that loads image data to [`FileWrapper`](https://developer.apple.com/documentation/foundation/filewrapper) objects and keeps it in memory, the sample overrides the [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) method to directly remove or add image files when updating a document.
+Likewise, to avoid the default implementation that loads image data to [`FileWrapper`](../Foundation/filewrapper.md) objects and keeps it in memory, the sample overrides the [`save(to:for:completionHandler:)`](./uidocument/save%28to,for,completionhandler%29.md) method to directly remove or add image files when updating a document.
 
 ```swift
 override func save(to url: URL, for saveOperation: UIDocument.SaveOperation, completionHandler: ((Bool) -> Void)? = nil) {
@@ -142,7 +144,7 @@ override func save(to url: URL, for saveOperation: UIDocument.SaveOperation, com
 }
 ```
 
-##### Resolve Version Conflicts
+##### Resolve version conflicts
 
 In the iCloud environment, the user can edit a document from different devices. Depending on networking conditions and the timing of synchronization, that may trigger version conflicts. Apps that provide support for iCloud documents need to resolve these conflicts, and remove the obsolete versions so they don’t consume the user’s iCloud storage.
 
@@ -155,9 +157,9 @@ To create a document conflict with the sample:
 5. Turn off Airplane mode on both devices at the same time to connect them back to the Internet.
 6. If no conflict occurs, repeat steps 3–5. After detecting a conflict, the sample enables the `Conflicts` item on the toolbar, and changes its color to red, so users can resolve the conflict.
 
-Handling version conflicts in document-based apps is straightforward because `UIDocument` does most of the heavy lifting. When a conflict occurs, `UIDocument` detects it and posts a [`stateChangedNotification`](uidocument/statechangednotification.md) notification, which apps can observe and then implement their conflict resolution strategy.
+Handling version conflicts in document-based apps is straightforward because `UIDocument` does most of the heavy lifting. When a conflict occurs, `UIDocument` detects it and posts a [`stateChangedNotification`](./uidocument/statechangednotification.md) notification, which apps can observe and then implement their conflict resolution strategy.
 
-The sample resolves a conflict by selecting the version that has the most recent [`modificationDate`](https://developer.apple.com/documentation/foundation/nsfileversion/modificationdate) and removing all others. It uses file coordination to assess the version information of an iCloud document to avoid potential conflicts with the system.
+The sample resolves a conflict by selecting the version that has the most recent [`modificationDate`](../Foundation/nsfileversion/modificationdate.md) and removing all others. It uses file coordination to assess the version information of an iCloud document to avoid potential conflicts with the system.
 
 ```swift
 private func resolveConflictsAsynchronously(document: Document, completionHandler: ((Bool) -> Void)?) {
@@ -173,9 +175,10 @@ private func resolveConflictsAsynchronously(document: Document, completionHandle
 
 ## See Also
 
-- [class UIDocument](uidocument.md)
+### Documents
+- [class UIDocument](./uidocument.md)
   An abstract base class for managing discrete portions of your app’s data.
-- [class UIManagedDocument](uimanageddocument.md)
+- [class UIManagedDocument](./uimanageddocument.md)
   A managed document object that integrates with Core Data.
 
 

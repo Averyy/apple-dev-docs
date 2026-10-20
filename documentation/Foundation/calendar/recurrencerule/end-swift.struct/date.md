@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latest date when the event may occur This value is set when the struct was initialized with `.afterDate()`
 
@@ -22,7 +23,8 @@ var date: Date? { get }
 
 ## See Also
 
-- [var occurrences: Int?](calendar/recurrencerule/end-swift.struct/occurrences.md)
+### Instance Properties
+- [var occurrences: Int?](./occurrences.md)
   At most many times the event may occur This value is set when the struct was initialized with `.afterOccurrences()`
 
 

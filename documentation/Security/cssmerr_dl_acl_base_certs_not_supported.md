@@ -1,7 +1,8 @@
 # CSSMERR_DL_ACL_BASE_CERTS_NOT_SUPPORTED
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSMERR_DL_ACL_BASE_CERTS_NOT_SUPPORTED: Int { get }
+```
+
+```c
+CSSMERR_DL_ACL_BASE_CERTS_NOT_SUPPORTED
 ```
 
 

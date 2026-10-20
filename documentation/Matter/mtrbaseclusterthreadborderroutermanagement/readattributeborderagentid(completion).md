@@ -1,7 +1,8 @@
 # readAttributeBorderAgentID(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBorderAgentID(completion: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBorderAgentID() async throws -> Data
+```
+
+```objc
+- (void) readAttributeBorderAgentIDWithCompletion:(void (^)(NSData *value, NSError *error)) completion;
 ```
 
 

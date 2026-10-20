@@ -1,7 +1,8 @@
 # manipulationGesture(updating:coordinateSpace:operations:inertia:isEnabled:onChanged:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a manipulation gesture to this view without allowing this view to be manipulable itself.
 
@@ -21,7 +22,7 @@ A view with a manipulation gesture attached but that isn’t manipulable itself.
 
 #### Discussion
 
-Use this view modifier alongside [`manipulable(using:)`](view/manipulable(using:).md) when you want to allow a person to manipulate a view by interacting with a different view.
+Use this view modifier alongside [`manipulable(using:)`](./manipulable%28using%29.md) when you want to allow a person to manipulate a view by interacting with a different view.
 
 In the following example, a person can begin a manipulation gesture attached to a deck of cards which, in turn, manipulates a single card instead of the entire deck:
 
@@ -41,7 +42,7 @@ struct CardDeck: View {
 }
 ```
 
-> **Note**: [`manipulable(using:)`](view/manipulable(using:).md)
+> **See Also**: [`manipulable(using:)`](./manipulable%28using%29.md)
 
 ## Parameters
 
@@ -54,15 +55,16 @@ struct CardDeck: View {
 
 ## See Also
 
-- [func handGestureShortcut(HandGestureShortcut, isEnabled: Bool) -> some View](view/handgestureshortcut(_:isenabled:).md)
+### Hand interactions
+- [func handGestureShortcut(HandGestureShortcut, isEnabled: Bool) -> some View](./handgestureshortcut%28_,isenabled%29.md)
   Assigns a hand gesture shortcut to the modified control.
-- [func handPointerBehavior(HandPointerBehavior?) -> some View](view/handpointerbehavior(_:).md)
+- [func handPointerBehavior(HandPointerBehavior?) -> some View](./handpointerbehavior%28_%29.md)
   Sets the behavior of the hand pointer while the user is interacting with the view.
-- [func manipulable(coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](view/manipulable(coordinatespace:operations:inertia:isenabled:onchanged:).md)
+- [func manipulable(coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](./manipulable%28coordinatespace,operations,inertia,isenabled,onchanged%29.md)
   Allows this view to be manipulated using common hand gestures.
-- [func manipulable(transform: Binding<AffineTransform3D>, coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](view/manipulable(transform:coordinatespace:operations:inertia:isenabled:onchanged:).md)
+- [func manipulable(transform: Binding<AffineTransform3D>, coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](./manipulable%28transform,coordinatespace,operations,inertia,isenabled,onchanged%29.md)
   Applies the given 3D affine transform to the view and allows it to be manipulated using common hand gestures.
-- [func manipulable(using: Manipulable.GestureState) -> some View](view/manipulable(using:).md)
+- [func manipulable(using: Manipulable.GestureState) -> some View](./manipulable%28using%29.md)
   Allows the view to be manipulated using a manipulation gesture attached to a different view.
 
 

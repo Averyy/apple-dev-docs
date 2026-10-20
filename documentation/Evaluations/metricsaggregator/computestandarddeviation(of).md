@@ -1,7 +1,8 @@
 # computeStandardDeviation(of:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the standard deviation of a metric and adds it to the aggregated results.
 
@@ -22,7 +23,7 @@ mutating func computeStandardDeviation(of metric: Metric)
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Evaluating language model responses](../evaluating-language-model-responses.md)
 
 ## Parameters
 
@@ -30,7 +31,8 @@ mutating func computeStandardDeviation(of metric: Metric)
 
 ## See Also
 
-- [func computeVariance(of: Metric)](metricsaggregator/computevariance(of:).md)
+### Computing variability
+- [func computeVariance(of: Metric)](./computevariance%28of%29.md)
   Computes the variance of a metric and adds it to the aggregated results.
 
 

@@ -1,7 +1,8 @@
 # updateCacheNode(_:from:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the given cache node using the values in a given managed object.
 
@@ -10,7 +11,7 @@ Updates the given cache node using the values in a given managed object.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Updates the given cache node using the values in a given managed object.
 
 ```swift
 func updateCacheNode(_ node: NSAtomicStoreCacheNode, from managedObject: NSManagedObject)
+```
+
+```objc
+- (void) updateCacheNode:(NSAtomicStoreCacheNode *) node fromManagedObject:(NSManagedObject *) managedObject;
 ```
 
 #### Discussion
@@ -37,11 +42,12 @@ You must override this method.
 
 ## See Also
 
-- [func newCacheNode(for: NSManagedObject) -> NSAtomicStoreCacheNode](nsatomicstore/newcachenode(for:).md)
+### Updating Cache Nodes
+- [func newCacheNode(for: NSManagedObject) -> NSAtomicStoreCacheNode](./newcachenode%28for%29.md)
   Returns a new cache node for a given managed object.
-- [func newReferenceObject(for: NSManagedObject) -> Any](nsatomicstore/newreferenceobject(for:).md)
+- [func newReferenceObject(for: NSManagedObject) -> Any](./newreferenceobject%28for%29.md)
   Returns a new reference object for a given managed object.
-- [func willRemoveCacheNodes(Set<NSAtomicStoreCacheNode>)](nsatomicstore/willremovecachenodes(_:).md)
+- [func willRemoveCacheNodes(Set<NSAtomicStoreCacheNode>)](./willremovecachenodes%28_%29.md)
   Method invoked before the store removes the given collection of cache nodes.
 
 

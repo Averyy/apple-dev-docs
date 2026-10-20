@@ -1,24 +1,29 @@
 # debugDescription
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides debugging information about the element.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 var debugDescription: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * debugDescription;
 ```
 
 #### Discussion
@@ -33,15 +38,16 @@ Use this data for debugging only. Depending on any of the data as part of a test
 
 ## See Also
 
-- [func waitForExistence(timeout: TimeInterval) -> Bool](xcuielement/waitforexistence(timeout:).md)
+### Querying element state
+- [func waitForExistence(timeout: TimeInterval) -> Bool](./waitforexistence%28timeout%29.md)
   Waits the specified amount of time for an element to exist.
-- [func waitForNonExistence(timeout: TimeInterval) -> Bool](xcuielement/waitfornonexistence(timeout:).md)
+- [func waitForNonExistence(timeout: TimeInterval) -> Bool](./waitfornonexistence%28timeout%29.md)
   Waits the specified amount of time for an element to no longer exist.
-- [func wait<V>(for: KeyPath<XCUIElement, V>, toEqual: V, timeout: TimeInterval) -> Bool](xcuielement/wait(for:toequal:timeout:).md)
+- [func wait<V>(for: KeyPath<XCUIElement, V>, toEqual: V, timeout: TimeInterval) -> Bool](./wait%28for,toequal,timeout%29.md)
   Waits a specified amount of time for a property value to equal a specified value.
-- [var exists: Bool](xcuielement/exists.md)
+- [var exists: Bool](./exists.md)
   Determines if the element exists.
-- [var isHittable: Bool](xcuielement/ishittable.md)
+- [var isHittable: Bool](./ishittable.md)
   Determines if the system can compute a hit point for the element.
 
 

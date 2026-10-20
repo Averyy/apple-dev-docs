@@ -1,7 +1,8 @@
 # nonReversed
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a copy of the effect requesting an animation that draws off following the draw metadata forwards.
 

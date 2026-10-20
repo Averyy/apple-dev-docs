@@ -1,6 +1,7 @@
 # Searching the Node Tree
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Access nodes by name to avoid needing an instance variable.
 
@@ -15,7 +16,7 @@ The node name usually serves two purposes in your app:
 
 ##### Name Your Node
 
-A node’s [`name`](sknode/name.md) property should be an alphanumeric string without any punctuation. The following code shows how you might name three different nodes to distinguish them from each other.
+A node’s [`name`](./sknode/name.md) property should be an alphanumeric string without any punctuation. The following code shows how you might name three different nodes to distinguish them from each other.
 
 **Swift**:
 
@@ -37,11 +38,11 @@ When you name nodes in the tree, decide whether those names will be unique. If a
 
 ##### Use a Simple Search
 
-The [`SKNode`](sknode.md) class implements the following methods for searching the node tree:
+The [`SKNode`](./sknode.md) class implements the following methods for searching the node tree:
 
-- The [`childNode(withName:)`](sknode/childnode(withname:).md) method searches a node’s children until it finds a matching node, then it stops and returns this node. This method is usually used to search for nodes with unique names.
-- The [`enumerateChildNodes(withName:using:)`](sknode/enumeratechildnodes(withname:using:).md) method searches a node’s children and calls your block once for each matching node it finds. You use this method when you want to find all nodes that share the same name.
-- The [`subscript(_:)`](sknode/subscript(_:).md) method returns an array of nodes that match a particular name.
+- The [`childNode(withName:)`](./sknode/childnode%28withname%29.md) method searches a node’s children until it finds a matching node, then it stops and returns this node. This method is usually used to search for nodes with unique names.
+- The [`enumerateChildNodes(withName:using:)`](./sknode/enumeratechildnodes%28withname,using%29.md) method searches a node’s children and calls your block once for each matching node it finds. You use this method when you want to find all nodes that share the same name.
+- The [`subscript(_:)`](./sknode/subscript%28_%29.md) method returns an array of nodes that match a particular name.
 
 The following code shows how you might create a method on your scene class to find the player node. You might use a method like this inside your code to load and prepare a scene.
 
@@ -96,13 +97,14 @@ The following table shows some useful search strings to help get you started.
 
 ## See Also
 
-- [var name: String?](sknode/name.md)
+### Accessing Nodes by Name
+- [var name: String?](./sknode/name.md)
   The node’s assignable name.
-- [func childNode(withName: String) -> SKNode?](sknode/childnode(withname:).md)
+- [func childNode(withName: String) -> SKNode?](./sknode/childnode%28withname%29.md)
   Searches the children of the receiving node for a node with a specific name.
-- [func enumerateChildNodes(withName: String, using: (SKNode, UnsafeMutablePointer<ObjCBool>) -> Void)](sknode/enumeratechildnodes(withname:using:).md)
+- [func enumerateChildNodes(withName: String, using: (SKNode, UnsafeMutablePointer<ObjCBool>) -> Void)](./sknode/enumeratechildnodes%28withname,using%29.md)
   Searches the children of the receiving node to perform processing for nodes that share a name.
-- [subscript(String) -> [SKNode]](sknode/subscript(_:).md)
+- [subscript(String) -> [SKNode]](./sknode/subscript%28_%29.md)
   Returns an array of nodes that match the name parameter.
 
 

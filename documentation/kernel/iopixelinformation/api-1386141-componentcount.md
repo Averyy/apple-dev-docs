@@ -1,7 +1,8 @@
 # componentCount
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 One for indexed pixels, three for direct pixel formats.
 
@@ -10,7 +11,7 @@ One for indexed pixels, three for direct pixel formats.
 
 ## Declaration
 
-```swift
+```c
 UInt32 componentCount;
 ```
 

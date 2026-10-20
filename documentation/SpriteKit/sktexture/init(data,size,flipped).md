@@ -1,23 +1,28 @@
 # init(data:size:flipped:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new texture from raw pixel data.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 convenience init(data pixelData: Data, size: CGSize, flipped: Bool)
+```
+
+```objc
++ (instancetype) textureWithData:(NSData *) pixelData size:(CGSize) size flipped:(BOOL) flipped;
 ```
 
 #### Return Value
@@ -36,9 +41,10 @@ The image data is copied before control is returned to your game.
 
 ## See Also
 
-- [convenience init(data: Data, size: CGSize)](sktexture/init(data:size:).md)
+### Texture from Data
+- [convenience init(data: Data, size: CGSize)](./init%28data,size%29.md)
   Creates a new texture from raw pixel data.
-- [convenience init(data: Data, size: CGSize, rowLength: UInt32, alignment: UInt32)](sktexture/init(data:size:rowlength:alignment:).md)
+- [convenience init(data: Data, size: CGSize, rowLength: UInt32, alignment: UInt32)](./init%28data,size,rowlength,alignment%29.md)
   Creates a new texture from custom formatted raw pixel data.
 
 

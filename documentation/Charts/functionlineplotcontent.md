@@ -1,7 +1,8 @@
 # FunctionLinePlotContent
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -22,17 +23,18 @@
 ## Relationships
 
 ### Conforms To
-- [ChartContent](chartcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ChartContent](./chartcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var body: Self.Body](chartcontent/body-swift.property.md)
+### Supporting types
+- [var body: Self.Body](./chartcontent/body-swift.property.md)
   The content and behavior of the chart content.
-- [struct VectorizedLinePlotContent](vectorizedlineplotcontent.md)
+- [struct VectorizedLinePlotContent](./vectorizedlineplotcontent.md)
   An opaque vectorized chart content type.
 
 

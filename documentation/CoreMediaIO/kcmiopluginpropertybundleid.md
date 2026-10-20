@@ -1,7 +1,8 @@
 # kCMIOPlugInPropertyBundleID
 
 **Framework**: Core Media I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,9 +14,14 @@
 var kCMIOPlugInPropertyBundleID: Int { get }
 ```
 
+```c
+kCMIOPlugInPropertyBundleID
+```
+
 ## See Also
 
-- [var kCMIOPlugInPropertyIsExtension: Int](kcmiopluginpropertyisextension.md)
+### Constants
+- [var kCMIOPlugInPropertyIsExtension: Int](./kcmiopluginpropertyisextension.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CMDeviceMotion.SensorLocation
 
 **Framework**: Core Motion  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the device’s sensor locations.
 
@@ -19,31 +20,36 @@ Defines the device’s sensor locations.
 enum SensorLocation
 ```
 
+```c
+enum CMDeviceMotionSensorLocation : NSInteger;
+```
+
 ## Topics
 
 ### Sensor Locations
-- [CMDeviceMotion.SensorLocation.default](cmdevicemotion/sensorlocation-swift.enum/default.md)
+- [CMDeviceMotion.SensorLocation.default](./sensorlocation-swift.enum/default.md)
   The default sensor location.
-- [CMDeviceMotion.SensorLocation.headphoneLeft](cmdevicemotion/sensorlocation-swift.enum/headphoneleft.md)
+- [CMDeviceMotion.SensorLocation.headphoneLeft](./sensorlocation-swift.enum/headphoneleft.md)
   The sensor is in the left headphone.
-- [CMDeviceMotion.SensorLocation.headphoneRight](cmdevicemotion/sensorlocation-swift.enum/headphoneright.md)
+- [CMDeviceMotion.SensorLocation.headphoneRight](./sensorlocation-swift.enum/headphoneright.md)
   The sensor is in the right headphone.
 ### Initializers
-- [init?(rawValue: Int)](cmdevicemotion/sensorlocation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./sensorlocation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var sensorLocation: CMDeviceMotion.SensorLocation](cmdevicemotion/sensorlocation-swift.property.md)
+### Getting the Sensor Location
+- [var sensorLocation: CMDeviceMotion.SensorLocation](./sensorlocation-swift.property.md)
   The location of the sensors that compute the device-motion data.
 
 

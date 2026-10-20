@@ -1,14 +1,15 @@
 # waitForState
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 IOReturn waitForState(UInt32 mask, UInt32 value, uint64_t timeout);
 ```
 

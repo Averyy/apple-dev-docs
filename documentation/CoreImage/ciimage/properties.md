@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the metadata properties dictionary of the image.
 
@@ -10,7 +11,7 @@ Returns the metadata properties dictionary of the image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.8+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,25 +20,30 @@ Returns the metadata properties dictionary of the image.
 var properties: [String : Any] { get }
 ```
 
+```objc
+@property (atomic, readonly) NSDictionary<NSString *,id> * properties;
+```
+
 #### Discussion
 
-If the [`CIImage`](ciimage.md) was created from `NSURL` or `NSData` then this dictionary is determined by calling `CGImageSourceCopyPropertiesAtIndex()`.
+If the [`CIImage`](../ciimage.md) was created from `NSURL` or `NSData` then this dictionary is determined by calling `CGImageSourceCopyPropertiesAtIndex()`.
 
-If the [`CIImage`](ciimage.md) was created with the [`properties`](ciimageoption/properties.md) option, then that dictionary is returned.
+If the [`CIImage`](../ciimage.md) was created with the [`properties`](../ciimageoption/properties.md) option, then that dictionary is returned.
 
-If the [`CIImage`](ciimage.md) was created by applying [`CIFilter`](cifilter-swift.class.md) or [`CIKernel`](cikernel.md) then the properties of the root inputImage will be returned.
+If the [`CIImage`](../ciimage.md) was created by applying [`CIFilter`](../cifilter-swift.class.md) or [`CIKernel`](../cikernel.md) then the properties of the root inputImage will be returned.
 
 ## See Also
 
-- [var definition: CIFilterShape](ciimage/definition.md)
+### Getting Image Information
+- [var definition: CIFilterShape](./definition.md)
   Returns a filter shape object that represents the domain of definition of the image.
-- [var extent: CGRect](ciimage/extent.md)
+- [var extent: CGRect](./extent.md)
   A rectangle that specifies the extent of the image.
-- [var url: URL?](ciimage/url.md)
+- [var url: URL?](./url.md)
   The URL from which the image was loaded.
-- [var colorSpace: CGColorSpace?](ciimage/colorspace.md)
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   The color space of the image.
-- [func orientationTransform(forExifOrientation: Int32) -> CGAffineTransform](ciimage/orientationtransform(forexiforientation:).md)
+- [func orientationTransform(forExifOrientation: Int32) -> CGAffineTransform](./orientationtransform%28forexiforientation%29.md)
   Returns the transformation needed to reorient the image to the specified orientation.
 
 

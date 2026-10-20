@@ -1,7 +1,8 @@
 # AppSchema.FilesEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the files domain.
 
@@ -21,19 +22,20 @@ protocol FilesEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var file: some AppSchemaEntity](appschema/filesentity/file.md)
+- [var file: some AppSchemaEntity](./filesentity/file.md)
   An entity schema for a file.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var file: some AppSchemaEntity](appschema/filesentity/file.md)
+### Content and parameter types
+- [var file: some AppSchemaEntity](./filesentity/file.md)
   An entity schema for a file.
 
 

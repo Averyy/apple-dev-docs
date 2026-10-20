@@ -1,7 +1,8 @@
 # eligibleForHDRPlaybackDidChangeNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that’s posted whenever HDR playback eligibility changes.
 
@@ -19,17 +20,22 @@ A notification that’s posted whenever HDR playback eligibility changes.
 class let eligibleForHDRPlaybackDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVPlayerEligibleForHDRPlaybackDidChangeNotification;
+```
+
 #### Discussion
 
 The system may post this notification if a user connects or disconnects a display, or makes other system resource changes.
 
 ## See Also
 
-- [class var eligibleForHDRPlayback: Bool](avplayer/eligibleforhdrplayback.md)
+### Determining HDR playback eligibility
+- [class var eligibleForHDRPlayback: Bool](./eligibleforhdrplayback.md)
   A Boolean value that indicates whether the current device can present content to an HDR display.
-- [class var availableHDRModes: AVPlayer.HDRMode](avplayer/availablehdrmodes.md)
+- [class var availableHDRModes: AVPlayer.HDRMode](./availablehdrmodes.md)
   The HDR modes that are available for playback.
-- [AVPlayer.HDRMode](avplayer/hdrmode.md)
+- [AVPlayer.HDRMode](./hdrmode.md)
   A bitfield type that specifies an HDR mode.
 
 

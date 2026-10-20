@@ -1,7 +1,8 @@
 # pooling(_:kernelSize:strides:padding:ceilingMode:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a pooling operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a pooling operation to the current graph.
 ```swift
 func pooling(_ function: BNNSGraph.Builder.PoolingFunction, kernelSize: [Int], strides: [Int], padding: BNNSGraph.Builder.PoolingPadding, ceilingMode: BNNSGraph.Builder.CeilingMode) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

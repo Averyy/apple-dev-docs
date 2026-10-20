@@ -1,7 +1,8 @@
 # bypass
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bypass state of the audio unit.
 
@@ -19,9 +20,13 @@ The bypass state of the audio unit.
 var bypass: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL bypass;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the audio unit bypasses audio processing.
+If [`true`](../../Swift/true.md), the audio unit bypasses audio processing.
 
 
 ---

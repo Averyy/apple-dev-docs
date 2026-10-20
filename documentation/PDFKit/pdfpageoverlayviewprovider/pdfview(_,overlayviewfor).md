@@ -2,6 +2,7 @@
 
 **Framework**: PDFKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -14,14 +15,35 @@
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func pdfView(_ view: PDFView, overlayViewFor page: PDFPage) -> UIView?
+```
+
+*macOS*
+
 ```swift
 func pdfView(_ view: PDFView, overlayViewFor page: PDFPage) -> NSView?
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+- (UIView *) pdfView:(PDFView *) view overlayViewForPage:(PDFPage *) page;
+```
+
+*macOS*
+
+```objc
+- (NSView *) pdfView:(PDFView *) view overlayViewForPage:(PDFPage *) page;
+```
+
 ## See Also
 
-- [func pdfView(PDFView, willDisplayOverlayView: UIView, for: PDFPage)](pdfpageoverlayviewprovider/pdfview(_:willdisplayoverlayview:for:).md)
-- [func pdfView(PDFView, willEndDisplayingOverlayView: UIView, for: PDFPage)](pdfpageoverlayviewprovider/pdfview(_:willenddisplayingoverlayview:for:).md)
+### Instance Methods
+- [func pdfView(PDFView, willDisplayOverlayView: UIView, for: PDFPage)](./pdfview%28_,willdisplayoverlayview,for%29.md)
+- [func pdfView(PDFView, willEndDisplayingOverlayView: UIView, for: PDFPage)](./pdfview%28_,willenddisplayingoverlayview,for%29.md)
 
 
 ---

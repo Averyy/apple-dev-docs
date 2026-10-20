@@ -1,7 +1,8 @@
 # LayoutDirection.rightToLeft
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A right-to-left layout direction.
 
@@ -22,7 +23,8 @@ case rightToLeft
 
 ## See Also
 
-- [LayoutDirection.leftToRight](layoutdirection/lefttoright.md)
+### Getting layout directions
+- [LayoutDirection.leftToRight](./lefttoright.md)
   A left-to-right layout direction.
 
 

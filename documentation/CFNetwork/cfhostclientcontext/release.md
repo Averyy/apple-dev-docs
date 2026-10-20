@@ -1,7 +1,8 @@
 # release
 
 **Framework**: CFNetwork  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The callback used to remove a retain previously added for the host on the info pointer.
 
@@ -19,15 +20,20 @@ The callback used to remove a retain previously added for the host on the info p
 var release: CFAllocatorReleaseCallBack?
 ```
 
+```c
+CFAllocatorReleaseCallBack release;
+```
+
 ## See Also
 
-- [var copyDescription: CFAllocatorCopyDescriptionCallBack?](cfhostclientcontext/copydescription.md)
-  The callback used to create a descriptive string representation of the info pointer (or the data pointed to by the info pointer) for debugging purposes. This callback is called by the [`CFCopyDescription(_:)`](https://developer.apple.com/documentation/corefoundation/cfcopydescription(_:)) function.
-- [var info: UnsafeMutableRawPointer?](cfhostclientcontext/info.md)
+### Instance Properties
+- [var copyDescription: CFAllocatorCopyDescriptionCallBack?](./copydescription.md)
+  The callback used to create a descriptive string representation of the info pointer (or the data pointed to by the info pointer) for debugging purposes. This callback is called by the [`CFCopyDescription(_:)`](../../CoreFoundation/cfcopydescription%28_%29.md) function.
+- [var info: UnsafeMutableRawPointer?](./info.md)
   An arbitrary pointer to allocated memory containing user-defined data that can be associated with the host and that is passed to the callbacks.
-- [var retain: CFAllocatorRetainCallBack?](cfhostclientcontext/retain.md)
+- [var retain: CFAllocatorRetainCallBack?](./retain.md)
   The callback used to add a retain for the host on the info pointer for the life of the host, and may be used for temporary references the host needs to take. This callback returns the actual info pointer to store in the host, almost always just the pointer passed as the parameter.
-- [var version: CFIndex](cfhostclientcontext/version.md)
+- [var version: CFIndex](./version.md)
   The version number of the structure type passed as a parameter to the host client function. The only valid version number is `0`.
 
 

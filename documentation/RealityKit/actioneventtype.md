@@ -1,7 +1,8 @@
 # ActionEventType
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of events that an action responds to.
 
@@ -23,52 +24,53 @@ struct ActionEventType
 
 Actions can respond to specific events with one or more custom event handlers that you associate with each event type.
 
-RealityKit calls the event handlers when the animation time enters, exits, or continues within a time interval for an [`ActionEventDefinition`](actioneventdefinition.md).
+RealityKit calls the event handlers when the animation time enters, exits, or continues within a time interval for an [`ActionEventDefinition`](./actioneventdefinition.md).
 
 A time interval for an event begins at its starting time and spans up to, but doesn’t include, the event’s starting time plus its duration.
 
 ## Topics
 
 ### Event types
-- [static var started: ActionEventType](actioneventtype/started.md)
+- [static var started: ActionEventType](./actioneventtype/started.md)
   An event that takes place when a new action event begins.
-- [static var ended: ActionEventType](actioneventtype/ended.md)
+- [static var ended: ActionEventType](./actioneventtype/ended.md)
   An event that takes place when the action event exits its time interval.
-- [static var paused: ActionEventType](actioneventtype/paused.md)
+- [static var paused: ActionEventType](./actioneventtype/paused.md)
   An event that takes place when the animation pauses.
-- [static var resumed: ActionEventType](actioneventtype/resumed.md)
+- [static var resumed: ActionEventType](./actioneventtype/resumed.md)
   An event that takes place when the animation resumes after a pause.
-- [static var updated: ActionEventType](actioneventtype/updated.md)
+- [static var updated: ActionEventType](./actioneventtype/updated.md)
   An event that takes place after an action event starts and is within its time interval.
-- [static var skipped: ActionEventType](actioneventtype/skipped.md)
+- [static var skipped: ActionEventType](./actioneventtype/skipped.md)
   An event that takes place when the system misses an action event’s time interval.
-- [static var terminated: ActionEventType](actioneventtype/terminated.md)
+- [static var terminated: ActionEventType](./actioneventtype/terminated.md)
   An event that takes place when the animation ends.
 ### Protocol support
-- [init(rawValue: UInt)](actioneventtype/init(rawvalue:).md)
+- [init(rawValue: UInt)](./actioneventtype/init%28rawvalue%29.md)
   Creates an action event type from a raw value.
-- [let rawValue: UInt](actioneventtype/rawvalue.md)
+- [let rawValue: UInt](./actioneventtype/rawvalue.md)
   The backing storage for action event types.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct ActionEvent](actionevent.md)
+### Action events
+- [struct ActionEvent](./actionevent.md)
   The structure returned to all action event handlers.
-- [struct AnimationState](animationstate.md)
+- [struct AnimationState](./animationstate.md)
   The concretely typed animation state structure.
-- [struct ActionEventDefinition](actioneventdefinition.md)
+- [struct ActionEventDefinition](./actioneventdefinition.md)
   Defines an action event interval, and any associated parameters.
-- [protocol AnimationStateProtocol](animationstateprotocol.md)
+- [protocol AnimationStateProtocol](./animationstateprotocol.md)
   The protocol representing the current animation state of an action animation.
 
 

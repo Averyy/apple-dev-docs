@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fetched results of the fetch request.
 
@@ -23,7 +24,7 @@ The fetched results of the fetch request.
 
 #### Discussion
 
-This property behaves like the [`wrappedValue`](fetchrequest/wrappedvalue.md) of a [`FetchRequest`](fetchrequest.md). In particular, SwiftUI returns the value associated with this property when you use [`SectionedFetchRequest`](sectionedfetchrequest.md) as a property wrapper and then access the wrapped property by name. For example, consider the following `quakes` property declaration that fetches a `Quake` type that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines:
+This property behaves like the [`wrappedValue`](../fetchrequest/wrappedvalue.md) of a [`FetchRequest`](../fetchrequest.md). In particular, SwiftUI returns the value associated with this property when you use [`SectionedFetchRequest`](../sectionedfetchrequest.md) as a property wrapper and then access the wrapped property by name. For example, consider the following `quakes` property declaration that fetches a `Quake` type that the [Loading and displaying a large data feed](../loading-and-displaying-a-large-data-feed.md) sample code project defines:
 
 ```swift
 @SectionedFetchRequest<String, Quake>(
@@ -33,7 +34,7 @@ This property behaves like the [`wrappedValue`](fetchrequest/wrappedvalue.md) of
 private var quakes: SectionedFetchResults<String, Quake>
 ```
 
-You access the request’s `wrappedValue`, which contains a [`SectionedFetchResults`](sectionedfetchresults.md) instance, by referring to the `quakes` property by name. That value is a collection of sections, each of which contains a group of managed objects:
+You access the request’s `wrappedValue`, which contains a [`SectionedFetchResults`](../sectionedfetchresults.md) instance, by referring to the `quakes` property by name. That value is a collection of sections, each of which contains a group of managed objects:
 
 ```swift
 Text("Found \(quakes.count) days of earthquakes")
@@ -52,7 +53,8 @@ The `wrappedValue` property returns an empty array when there are no fetched res
 
 ## See Also
 
-- [func update()](sectionedfetchrequest/update.md)
+### Getting the fetched results
+- [func update()](./update%28%29.md)
   Updates the fetched results.
 
 

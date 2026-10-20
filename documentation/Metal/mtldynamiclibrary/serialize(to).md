@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Writes the contents of the dynamic library to a file.
@@ -20,9 +21,13 @@ Writes the contents of the dynamic library to a file.
 func serialize(to url: URL) throws
 ```
 
+```objc
+- (BOOL) serializeToURL:(NSURL *) url error:(NSError **) error;
+```
+
 #### Discussion
 
-When the methods succeeds, the file contains a representation of the [`MTLLibrary`](mtllibrary.md) from the [`MTLDynamicLibrary`](mtldynamiclibrary.md) that creates it, as well as the binaries it has for the device your app is running on.
+When the methods succeeds, the file contains a representation of the [`MTLLibrary`](../mtllibrary.md) from the [`MTLDynamicLibrary`](../mtldynamiclibrary.md) that creates it, as well as the binaries it has for the device your app is running on.
 
 Such files may be combined with offline tools to contain the compiled code for multiple devices.
 

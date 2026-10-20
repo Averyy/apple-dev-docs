@@ -1,7 +1,8 @@
 # gainMetaParameterDefinition
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A template for a parameter that changes the mixer’s volume gradually over a period of time.
 
@@ -19,13 +20,18 @@ A template for a parameter that changes the mixer’s volume gradually over a pe
 var gainMetaParameterDefinition: PHASENumberMetaParameterDefinition? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PHASENumberMetaParameterDefinition * gainMetaParameterDefinition;
+```
+
 #### Discussion
 
-When the framework creates a mixer from a mixer definition, PHASE initializes the mixer’s [`gainMetaParameter`](phasepushstreamnode/gainmetaparameter.md) to this property’s values.
+When the framework creates a mixer from a mixer definition, PHASE initializes the mixer’s [`gainMetaParameter`](../phasepushstreamnode/gainmetaparameter.md) to this property’s values.
 
 ## See Also
 
-- [var gain: Double](phasemixerdefinition/gain.md)
+### Controlling Volume
+- [var gain: Double](./gain.md)
   The mixer’s volume.
 
 

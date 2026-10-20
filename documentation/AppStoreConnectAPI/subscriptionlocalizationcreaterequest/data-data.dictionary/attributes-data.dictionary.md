@@ -1,7 +1,8 @@
 # SubscriptionLocalizationCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a subscription localization create request resource.
 
@@ -10,19 +11,20 @@ Attributes that describe a subscription localization create request resource.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionLocalizationCreateRequest.Data.Attributes
 ```
 
 ## Properties
 
 - `description` (string): Include this field before submitting, even though it’s optional when creating the resource.
-- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `locale` (string) *(required)*: The specified locale. To learn more, see [Managing metadata in your app by using locale shortcodes](../../managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 - `name` (string) *(required)*
 
 ## See Also
 
-- [object SubscriptionLocalizationCreateRequest.Data.Relationships](subscriptionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object SubscriptionLocalizationCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

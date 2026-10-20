@@ -1,12 +1,15 @@
 # CLKComplicationTemplateGraphicCornerCircularImage
 
 **Framework**: ClockKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A template for displaying an image in the clock face’s corner.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../WidgetKit/WidgetKit.md) to create complications for watchOS 10 or later. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -14,11 +17,15 @@ A template for displaying an image in the clock face’s corner.
 class CLKComplicationTemplateGraphicCornerCircularImage
 ```
 
+```objc
+@interface CLKComplicationTemplateGraphicCornerCircularImage : CLKComplicationTemplate
+```
+
 #### Overview
 
-This template belongs to the [`CLKComplicationFamily.graphicCorner`](clkcomplicationfamily/graphiccorner.md) family. [`Figure 1`](clkcomplicationtemplategraphiccornercircularimage#3030689.md) shows the layout of the image and where the template might appear on the clock face.
+This template belongs to the [`CLKComplicationFamily.graphicCorner`](./clkcomplicationfamily/graphiccorner.md) family. [Figure 1](./clkcomplicationtemplategraphiccornercircularimage.md#3030689) shows the layout of the image and where the template might appear on the clock face.
 
-![Diagram showing the layout of an image.](/images/com.apple.clockkit/media-3030689@2x.png)
+![Diagram showing the layout of an image.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3030689@2x.png)
 
 The following table lists the dimensions of the image you use in this template. All dimensions are in pixels. All images must be specified as @2x images for display on Apple Watch, so the point-based dimensions are half the listed size.
 
@@ -36,34 +43,35 @@ Instead of providing multiple images with different resolutions, you can provide
 ## Topics
 
 ### Creating the Template
-- [init(imageProvider: CLKFullColorImageProvider)](clkcomplicationtemplategraphiccornercircularimage/init(imageprovider:).md)
+- [init(imageProvider: CLKFullColorImageProvider)](./clkcomplicationtemplategraphiccornercircularimage/init%28imageprovider%29.md)
   Creates a new template from the provided image.
 ### Setting the Complication Data
-- [var imageProvider: CLKFullColorImageProvider](clkcomplicationtemplategraphiccornercircularimage/imageprovider.md)
+- [var imageProvider: CLKFullColorImageProvider](./clkcomplicationtemplategraphiccornercircularimage/imageprovider.md)
   The image to display.
 
 ## Relationships
 
 ### Inherits From
-- [CLKComplicationTemplate](clkcomplicationtemplate.md)
+- [CLKComplicationTemplate](./clkcomplicationtemplate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CLKComplicationTemplateGraphicCornerCircularView](clkcomplicationtemplategraphiccornercircularview.md)
+### Text and image
+- [class CLKComplicationTemplateGraphicCornerCircularView](./clkcomplicationtemplategraphiccornercircularview.md)
   A template for displaying a SwiftUI view in the clock face’s corner.
-- [class CLKComplicationTemplateGraphicCornerStackText](clkcomplicationtemplategraphiccornerstacktext.md)
+- [class CLKComplicationTemplateGraphicCornerStackText](./clkcomplicationtemplategraphiccornerstacktext.md)
   A template for displaying stacked text in the clock face’s corner.
-- [class CLKComplicationTemplateGraphicCornerTextImage](clkcomplicationtemplategraphiccornertextimage.md)
+- [class CLKComplicationTemplateGraphicCornerTextImage](./clkcomplicationtemplategraphiccornertextimage.md)
   A template for displaying an image and text in the clock face’s corner.
-- [class CLKComplicationTemplateGraphicCornerTextView](clkcomplicationtemplategraphiccornertextview.md)
+- [class CLKComplicationTemplateGraphicCornerTextView](./clkcomplicationtemplategraphiccornertextview.md)
   A template for displaying a SwiftUI view and text in the clock face’s corner.
 
 

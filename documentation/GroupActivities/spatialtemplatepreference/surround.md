@@ -1,7 +1,8 @@
 # surround
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An arrangement where the participants sit around the content.
 
@@ -28,7 +29,9 @@ For example:
          C
 ```
 
-> ❗ **Important**: This preference will only apply if your app is using a shared volume or an immersive space with no shared window. If this preference is applied in an unsupported scenario, like when an app is sharing a window, the system will behave as if the [`none`](spatialtemplatepreference/none.md) preference was selected.
+> ❗ **Important**: This preference will only apply if your app is using a shared volume or an immersive space with no shared window.
+>
+> If this preference is applied in an unsupported scenario, like when an app is sharing a window, the system will behave as if the [`none`](./none.md) preference was selected.
 
 
 ---

@@ -1,7 +1,8 @@
 # miniTip
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default style for a tip view.
 
@@ -20,6 +21,8 @@ The default style for a tip view.
 nonisolated
 static var miniTip: MiniTipViewStyle { get }
 ```
+
+Available when `Self` is `MiniTipViewStyle`.
 
 
 ---

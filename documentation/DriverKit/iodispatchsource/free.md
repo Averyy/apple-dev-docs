@@ -1,27 +1,29 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the dispatch source.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [init](iodispatchsource/init.md)
+### Configuring the Dispatch Source
+- [init](./init.md)
   Handles the basic initialization of the dispatch source.
-- [Cancel](iodispatchsource/cancel.md)
+- [Cancel](./cancel.md)
   Cancel all callbacks from the dispatch source.
 
 

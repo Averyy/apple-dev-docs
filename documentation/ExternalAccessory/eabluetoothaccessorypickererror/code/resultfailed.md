@@ -1,7 +1,8 @@
 # EABluetoothAccessoryPickerError.Code.resultFailed
 
 **Framework**: External Accessory  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Selecting an accessory failed for an unknown reason.
 
@@ -19,13 +20,18 @@ Selecting an accessory failed for an unknown reason.
 case resultFailed
 ```
 
+```c
+EABluetoothAccessoryPickerResultFailed
+```
+
 ## See Also
 
-- [EABluetoothAccessoryPickerError.Code.alreadyConnected](eabluetoothaccessorypickererror/code/alreadyconnected.md)
+### Error Codes
+- [EABluetoothAccessoryPickerError.Code.alreadyConnected](./alreadyconnected.md)
   The specified accessory was already connected.
-- [EABluetoothAccessoryPickerError.Code.resultNotFound](eabluetoothaccessorypickererror/code/resultnotfound.md)
+- [EABluetoothAccessoryPickerError.Code.resultNotFound](./resultnotfound.md)
   The specified accessory could not be found, perhaps because it was turned off prior to connection.
-- [EABluetoothAccessoryPickerError.Code.resultCancelled](eabluetoothaccessorypickererror/code/resultcancelled.md)
+- [EABluetoothAccessoryPickerError.Code.resultCancelled](./resultcancelled.md)
   The user canceled the picker alert.
 
 

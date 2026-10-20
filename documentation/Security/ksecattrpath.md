@@ -1,7 +1,8 @@
 # kSecAttrPath
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string indicating the item’s path attribute.
 
@@ -20,9 +21,13 @@ A key whose value is a string indicating the item’s path attribute.
 let kSecAttrPath: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrPath;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) and represents a path, typically the path component of the URL. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
+The corresponding value is of type [`CFString`](../CoreFoundation/cfstring.md) and represents a path, typically the path component of the URL. Items of class [`kSecClassInternetPassword`](./ksecclassinternetpassword.md) have this attribute.
 
 
 ---

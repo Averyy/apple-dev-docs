@@ -1,7 +1,8 @@
 # destroy()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the map’s element from the DOM and releases internal references to the map to free up memory.
 
@@ -10,7 +11,7 @@ Removes the map’s element from the DOM and releases internal references to the
 
 ## Declaration
 
-```swift
+```
 destroy(): void;
 ```
 

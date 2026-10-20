@@ -1,7 +1,8 @@
 # replaceSubrange(_:with:count:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces a region of bytes in the data with bytes from memory.
 
@@ -22,9 +23,10 @@ mutating func replaceSubrange(_ subrange: Range<Data.Index>, with bytes: UnsafeR
 
 ## See Also
 
-- [func replaceSubrange(Range<Data.Index>, with: some Collection<UInt8>)](data/replacesubrange(_:with:)-9u7ry.md)
+### Replacing a Range of Bytes
+- [func replaceSubrange(Range<Data.Index>, with: some Collection<UInt8>)](./replacesubrange%28_,with%29-9u7ry.md)
   Replaces a region of bytes in the data with new bytes from a collection.
-- [func replaceSubrange<SourceType>(Range<Data.Index>, with: UnsafeBufferPointer<SourceType>)](data/replacesubrange(_:with:)-9nzh.md)
+- [func replaceSubrange<SourceType>(Range<Data.Index>, with: UnsafeBufferPointer<SourceType>)](./replacesubrange%28_,with%29-9nzh.md)
   Replaces a region of bytes in the data with new bytes from a buffer.
 
 

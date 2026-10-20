@@ -1,7 +1,8 @@
 # frame
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle that describes the region within your view.
 
@@ -22,11 +23,12 @@ var frame: CGRect { get }
 
 #### Discussion
 
-The frame uses your view’s own coordinates. It already includes the region’s [`margins`](reservedregion/margins.md), so you don’t need to add the margins yourself.
+The frame uses your view’s own coordinates. It already includes the region’s [`margins`](./margins.md), so you don’t need to add the margins yourself.
 
 ## See Also
 
-- [var margins: EdgeInsets](reservedregion/margins.md)
+### Getting the region’s geometry
+- [var margins: EdgeInsets](./margins.md)
   The extra space around the reserved area that keeps interactive content clear of it.
 
 

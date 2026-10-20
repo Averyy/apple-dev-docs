@@ -1,7 +1,8 @@
 # vflush
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Reclaim the vnodes for a mount.
 
@@ -10,11 +11,11 @@ Reclaim the vnodes for a mount.
 
 ## Declaration
 
-```swift
+```c
 int vflush(struct mount *mp, struct vnode *skipvp, int flags);
 ```
 
-#### Return_value
+#### Return Value
 
 0 for success, EBUSY if vnodes were busy and FORCECLOSE was not set.
 

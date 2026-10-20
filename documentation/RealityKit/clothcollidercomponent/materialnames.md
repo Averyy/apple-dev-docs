@@ -1,7 +1,8 @@
 # materialNames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the collider materials used by this collider.
 
@@ -18,7 +19,7 @@ var materialNames: [String]
 
 #### Discussion
 
-The default material is used if no matching material name is present in [`ClothSimulationComponent`](clothsimulationcomponent.md).
+The default material is used if no matching material name is present in [`ClothSimulationComponent`](../clothsimulationcomponent.md).
 
 The material of the collider determines various physical properties of the collider, such as friction.
 
@@ -26,7 +27,8 @@ Note, only the first material name is used.
 
 ## See Also
 
-- [var shape: ClothColliderShape](clothcollidercomponent/shape.md)
+### Configuring the collider shape
+- [var shape: ClothColliderShape](./shape.md)
   The (simulation) shape of the collider.
 
 

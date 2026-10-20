@@ -1,7 +1,8 @@
 # MTLVisibilityResultType.accumulate
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Accumulate visibility results data across multiple render passes.
 
@@ -17,6 +18,10 @@ Accumulate visibility results data across multiple render passes.
 
 ```swift
 case accumulate
+```
+
+```c
+MTLVisibilityResultTypeAccumulate
 ```
 
 

@@ -1,6 +1,7 @@
 # USD concepts
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 Learn the core terms and ideas behind Universal Scene Description (USD).
 
@@ -10,7 +11,7 @@ Universal Scene Description (USD) is an open standard for describing, composing,
 
 This article introduces the key concepts behind USD. Understanding these ideas helps you author USD files that render as expected, build efficient 3D assets, and diagnose problems when a scene doesn’t look right.
 
-#### Scene Structure
+#### Scene structure
 
 ##### Stage
 
@@ -60,7 +61,7 @@ Metadata is key-value data attached to a prim, property, or layer that describes
 
 Composition is the process by which USD combines data from multiple layers into a single, unified stage. USD’s composition system lets you reference external assets, layer overrides, bundle variations, and share defaults — all without modifying the original files.
 
-##### Composition Arcs
+##### Composition arcs
 
 Composition arcs are the building blocks of USD’s composition system. Each arc creates a specific kind of relationship between layers or prims:
 
@@ -73,7 +74,7 @@ Composition arcs are the building blocks of USD’s composition system. Each arc
 
 When arcs contribute conflicting opinions for the same property, USD resolves the conflict using a strict precedence order: **Local → Inherits → VariantSets → References → Payloads → SubLayers**. Arcs earlier in the list take precedence over arcs later in the list.
 
-##### Layer Offset
+##### Layer offset
 
 A layer offset shifts or scales the timing of time samples in a referenced layer. You can use it to offset an animation by a number of frames, or play it at a different speed, without touching the source file.
 
@@ -81,11 +82,11 @@ A layer offset shifts or scales the timing of time samples in a referenced layer
 
 Flattening a stage collapses all layers and composition arcs into a single, self-contained file with no external dependencies. The result is a snapshot of the scene as it currently appears. Flattening is useful for packaging a finished asset for delivery, but the output no longer carries the original composition structure.
 
-##### Session Layer
+##### Session layer
 
 The session layer is an in-memory layer at the top of the layer stack, giving it the highest opinion strength. It is ideal for temporary overrides — viewport selections, interactive adjustments, or per-session display settings — without writing them to disk.
 
-#### Data Representation
+#### Data representation
 
 ##### Schema
 
@@ -94,7 +95,7 @@ A schema is a named template that defines the attributes, relationships, and met
 - **Typed schemas** define a prim’s type — `Mesh`, `Sphere`, `Camera`, and so on. Applying a typed schema changes what the prim fundamentally is.
 - **API schemas** add a bundle of attributes or behaviors to an existing prim without changing its type. `PhysicsRigidBodyAPI`, for example, adds physics simulation attributes to any prim.
 
-##### Def Class and Over
+##### Def, Class, and Over
 
 These three *specifiers* control how a prim is interpreted:
 
@@ -104,11 +105,11 @@ These three *specifiers* control how a prim is interpreted:
 
 Because each layer stores its contribution to a prim independently — called a *prim spec* (short for *prim specifier*) — a prim’s specifier can differ from layer to layer. The stage composes these per-layer prim specs together, so a `def` in one layer and an `over` in a stronger layer combine into a single resolved prim.
 
-##### Opinions and Default Values
+##### Opinions and default values
 
 An *opinion* is any value authored in a layer for a prim or property. When multiple layers contribute opinions for the same property, USD’s composition rules determine the winning value. A property with no time samples has a single authored value called its *default value*.
 
-##### Time Samples and Animation
+##### Time samples and animation
 
 A time sample is a value for an attribute at a specific point in time. When an attribute has multiple time samples, it is animated — its value changes as time advances. You can use *splines* (mathematical curves) to interpolate smoothly between samples without storing a value at every frame.
 
@@ -122,13 +123,13 @@ A primvar (short for *primitive variable*) is an attribute designed to carry dat
 
 Purpose is an attribute on imageable prims that lets renderers selectively show or hide groups of geometry without changing the scene structure. The built-in values are `default`, `render`, `proxy`, and `guide`. Use purpose to include high-resolution geometry for offline rendering, lighter proxies for interactive preview, and guide shapes visible only during authoring.
 
-##### Active and Inactive Prims
+##### Active and inactive prims
 
 Marking a prim *inactive* is USD’s way of non-destructively removing it. USD excludes an inactive prim and all its descendants from the stage, but the data stays in the layer and can be restored at any time. This is preferable to deleting prims when you want to preserve data or allow a downstream layer to override the state.
 
-#### Assets and Organization
+#### Assets and organization
 
-##### Asset and Asset Resolution
+##### Asset and asset resolution
 
 In USD, an *asset* is a reference to an external file, identified by a path string like `./textures/color.png`. *Asset resolution* turns that string into an actual file location.
 
@@ -136,7 +137,7 @@ In USD, an *asset* is a reference to an external file, identified by a path stri
 
 Instancing lets you place the same prim or asset multiple times in a scene while storing the data only once. All instances share a single copy of the geometry and materials, reducing file size and memory usage. Mark a prim as *instanceable* to enable this behavior. Instancing is well-suited to repeated objects like trees, crowd characters, or modular building pieces.
 
-##### Kind and Model Hierarchy
+##### Kind and model hierarchy
 
 Kind is metadata that classifies a prim’s role in the scene hierarchy. The built-in kinds are:
 
@@ -155,9 +156,9 @@ Hydra is USD’s rendering architecture. It separates *scene delegates* (which r
 ## Topics
 
 ### Related articles
-- [Creating USD files for Apple devices](creating-usd-files-for-apple-devices.md)
+- [Creating USD files for Apple devices](./creating-usd-files-for-apple-devices.md)
   Generate 3D assets that render as expected.
-- [Validating feature support for USD files](validating-usd-files.md)
+- [Validating feature support for USD files](./validating-usd-files.md)
   Ensure that the renderer that displays your USD assets supports its features.
 
 

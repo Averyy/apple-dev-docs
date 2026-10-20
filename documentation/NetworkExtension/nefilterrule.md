@@ -1,7 +1,8 @@
 # NEFilterRule
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A rule for filters that combines a rule to match network traffic and an action to take when the rule matches.
 
@@ -14,35 +15,40 @@ A rule for filters that combines a rule to match network traffic and an action t
 class NEFilterRule
 ```
 
+```objc
+@interface NEFilterRule : NSObject
+```
+
 ## Topics
 
 ### Creating a Filter Rule
-- [init(networkRule: NENetworkRule, action: NEFilterAction)](nefilterrule/init(networkrule:action:).md)
+- [init(networkRule: NENetworkRule, action: NEFilterAction)](./nefilterrule/init%28networkrule,action%29.md)
   Creates a new filter rule from a network rule and an action to take when network traffic matches.
 ### Inspecting Filter Rule Properties
-- [var networkRule: NENetworkRule](nefilterrule/networkrule.md)
+- [var networkRule: NENetworkRule](./nefilterrule/networkrule.md)
   The network rule that defines the network traffic characteristics that this filter rule matches.
-- [var action: NEFilterAction](nefilterrule/action.md)
+- [var action: NEFilterAction](./nefilterrule/action.md)
   The action to take when this rule matches network traffic.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [init(rules: [NEFilterRule], defaultAction: NEFilterAction)](nefiltersettings/init(rules:defaultaction:).md)
+### Creating Filter Settings
+- [init(rules: [NEFilterRule], defaultAction: NEFilterAction)](./nefiltersettings/init%28rules,defaultaction%29.md)
   Creates a new settings instance from an array of rules and a default action.
 
 

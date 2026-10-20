@@ -1,7 +1,8 @@
 # init(name:parentIndex:inverseBindPoseMatrix:restPoseTransform:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a single joint in a skeleton.
 

@@ -1,7 +1,8 @@
 # highTemperatureTime
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which the high temperature occurs on this day.
 

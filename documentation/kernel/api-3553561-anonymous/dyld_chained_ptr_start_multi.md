@@ -1,14 +1,15 @@
 # DYLD_CHAINED_PTR_START_MULTI
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 DYLD_CHAINED_PTR_START_MULTI = 0x8000
 ```
 

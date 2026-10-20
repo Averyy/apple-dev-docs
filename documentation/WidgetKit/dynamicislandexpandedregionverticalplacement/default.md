@@ -1,7 +1,8 @@
 # default
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system’s default vertical placement.
 
@@ -17,7 +18,8 @@ static let `default`: DynamicIslandExpandedRegionVerticalPlacement
 
 ## See Also
 
-- [static let belowIfTooWide: DynamicIslandExpandedRegionVerticalPlacement](dynamicislandexpandedregionverticalplacement/belowiftoowide.md)
+### Configuring vertical content placement
+- [static let belowIfTooWide: DynamicIslandExpandedRegionVerticalPlacement](./belowiftoowide.md)
   Vertical placement below the default vertical position for content that’s too wide to fit next to the TrueDepth camera.
 
 

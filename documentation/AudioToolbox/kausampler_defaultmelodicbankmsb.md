@@ -1,15 +1,16 @@
 # kAUSampler_DefaultMelodicBankMSB
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAUSampler_DefaultMelodicBankMSB: Int { get }
 ```
 
+```c
+kAUSampler_DefaultMelodicBankMSB
+```
+
 ## See Also
 
-- [var kAUSampler_DefaultBankLSB: Int](kausampler_defaultbanklsb.md)
-- [var kAUSampler_DefaultPercussionBankMSB: Int](kausampler_defaultpercussionbankmsb.md)
+### Constants
+- [var kAUSampler_DefaultBankLSB: Int](./kausampler_defaultbanklsb.md)
+- [var kAUSampler_DefaultPercussionBankMSB: Int](./kausampler_defaultpercussionbankmsb.md)
 
 
 ---

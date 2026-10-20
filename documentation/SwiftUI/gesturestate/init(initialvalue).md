@@ -1,7 +1,8 @@
 # init(initialValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view state that’s derived from a gesture with an initial value.
 
@@ -27,19 +28,20 @@ init(initialValue: Value)
 
 ## See Also
 
-- [init(initialValue: Value, reset: (Value, inout Transaction) -> Void)](gesturestate/init(initialvalue:reset:).md)
+### Creating a gesture state
+- [init(initialValue: Value, reset: (Value, inout Transaction) -> Void)](./init%28initialvalue,reset%29.md)
   Creates a view state that’s derived from a gesture with an initial state value and a closure that provides a transaction to reset it.
-- [init(initialValue: Value, resetTransaction: Transaction)](gesturestate/init(initialvalue:resettransaction:).md)
+- [init(initialValue: Value, resetTransaction: Transaction)](./init%28initialvalue,resettransaction%29.md)
   Creates a view state that’s derived from a gesture with an initial state value and a transaction to reset it.
-- [init(reset: (Value, inout Transaction) -> Void)](gesturestate/init(reset:).md)
+- [init(reset: (Value, inout Transaction) -> Void)](./init%28reset%29.md)
   Creates a view state that’s derived from a gesture with a closure that provides a transaction to reset it.
-- [init(resetTransaction: Transaction)](gesturestate/init(resettransaction:).md)
+- [init(resetTransaction: Transaction)](./init%28resettransaction%29.md)
   Creates a view state that’s derived from a gesture with a transaction to reset it.
-- [init(wrappedValue: Value)](gesturestate/init(wrappedvalue:).md)
+- [init(wrappedValue: Value)](./init%28wrappedvalue%29.md)
   Creates a view state that’s derived from a gesture.
-- [init(wrappedValue: Value, reset: (Value, inout Transaction) -> Void)](gesturestate/init(wrappedvalue:reset:).md)
+- [init(wrappedValue: Value, reset: (Value, inout Transaction) -> Void)](./init%28wrappedvalue,reset%29.md)
   Creates a view state that’s derived from a gesture with a wrapped state value and a closure that provides a transaction to reset it.
-- [init(wrappedValue: Value, resetTransaction: Transaction)](gesturestate/init(wrappedvalue:resettransaction:).md)
+- [init(wrappedValue: Value, resetTransaction: Transaction)](./init%28wrappedvalue,resettransaction%29.md)
   Creates a view state that’s derived from a gesture with a wrapped state value and a transaction to reset it.
 
 

@@ -1,7 +1,8 @@
 # windowLayer
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer of the window relative to other windows.
 
@@ -15,13 +16,18 @@ The layer of the window relative to other windows.
 var windowLayer: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger windowLayer;
+```
+
 ## See Also
 
-- [var windowID: CGWindowID](scwindow/windowid.md)
+### Identifying windows
+- [var windowID: CGWindowID](./windowid.md)
   The Core Graphics window identifier.
-- [var title: String?](scwindow/title.md)
+- [var title: String?](./title.md)
   The string that displays in a window’s title bar.
-- [var owningApplication: SCRunningApplication?](scwindow/owningapplication.md)
+- [var owningApplication: SCRunningApplication?](./owningapplication.md)
   The app that owns the window.
 
 

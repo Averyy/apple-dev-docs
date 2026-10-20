@@ -1,23 +1,28 @@
 # version()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the version number assigned to the class.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 class func version() -> Int
+```
+
+```objc
++ (NSInteger) version;
 ```
 
 #### Return Value
@@ -44,27 +49,29 @@ The version number applies to `NSArchiver`/`NSUnarchiver`, but not to `NSKeyedAr
 
 ## See Also
 
-- [func version(forClassName: String) -> Int](../foundation/nscoder/version(forclassname:).md)
+### Related Documentation
+- [func version(forClassName: String) -> Int](../../Foundation/nscoder/version%28forclassname%29.md)
   This method is present for historical reasons and is not used with keyed archivers.
-- [func awakeAfter(using: NSCoder) -> Any?](nsobject-swift.class/awakeafter(using:).md)
+### Archiving
+- [func awakeAfter(using: NSCoder) -> Any?](./awakeafter%28using%29.md)
   Overridden by subclasses to substitute another object in place of the object that was decoded and subsequently received this message.
-- [var classForArchiver: AnyClass?](nsobject-swift.class/classforarchiver.md)
+- [var classForArchiver: AnyClass?](./classforarchiver.md)
   The class to substitute for the receiver’s own class during archiving.
-- [var classForCoder: AnyClass](nsobject-swift.class/classforcoder.md)
+- [var classForCoder: AnyClass](./classforcoder.md)
   Overridden by subclasses to substitute a class other than its own during coding.
-- [var classForKeyedArchiver: AnyClass?](nsobject-swift.class/classforkeyedarchiver.md)
+- [var classForKeyedArchiver: AnyClass?](./classforkeyedarchiver.md)
   Subclasses to substitute a new class for instances during keyed archiving.
-- [class func classFallbacksForKeyedArchiver() -> [String]](nsobject-swift.class/classfallbacksforkeyedarchiver.md)
+- [class func classFallbacksForKeyedArchiver() -> [String]](./classfallbacksforkeyedarchiver%28%29.md)
   Overridden to return the names of classes that can be used to decode objects if their class is unavailable.
-- [class func classForKeyedUnarchiver() -> AnyClass](nsobject-swift.class/classforkeyedunarchiver.md)
+- [class func classForKeyedUnarchiver() -> AnyClass](./classforkeyedunarchiver%28%29.md)
   Overridden by subclasses to substitute a new class during keyed unarchiving.
-- [func replacementObject(for: NSArchiver) -> Any?](nsobject-swift.class/replacementobject(for:)-8ih2x.md)
+- [func replacementObject(for: NSArchiver) -> Any?](./replacementobject%28for%29-8ih2x.md)
   Overridden by subclasses to substitute another object for itself during archiving.
-- [func replacementObject(for: NSCoder) -> Any?](nsobject-swift.class/replacementobject(for:)-2l8ox.md)
+- [func replacementObject(for: NSCoder) -> Any?](./replacementobject%28for%29-2l8ox.md)
   Overridden by subclasses to substitute another object for itself during encoding.
-- [func replacementObject(for: NSKeyedArchiver) -> Any?](nsobject-swift.class/replacementobject(for:)-60vwc.md)
+- [func replacementObject(for: NSKeyedArchiver) -> Any?](./replacementobject%28for%29-60vwc.md)
   Overridden by subclasses to substitute another object for itself during keyed archiving.
-- [class func setVersion(Int)](nsobject-swift.class/setversion(_:).md)
+- [class func setVersion(Int)](./setversion%28_%29.md)
   Sets the receiver’s version number.
 
 

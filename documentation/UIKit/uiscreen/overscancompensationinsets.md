@@ -1,7 +1,8 @@
 # overscanCompensationInsets
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The edge inset values needed to avoid clipping the rectangle.
 
@@ -17,11 +18,16 @@ The edge inset values needed to avoid clipping the rectangle.
 var overscanCompensationInsets: UIEdgeInsets { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIEdgeInsets overscanCompensationInsets;
+```
+
 ## See Also
 
-- [var overscanCompensation: UIScreen.OverscanCompensation](uiscreen/overscancompensation-swift.property.md)
+### Managing overscan compensation
+- [var overscanCompensation: UIScreen.OverscanCompensation](./overscancompensation-swift.property.md)
   For an external screen, this property sets the desired technique to compensate for overscan.
-- [UIScreen.OverscanCompensation](uiscreen/overscancompensation-swift.enum.md)
+- [UIScreen.OverscanCompensation](./overscancompensation-swift.enum.md)
   Describes different techniques for compensating for pixel loss at the edge of the screen.
 
 

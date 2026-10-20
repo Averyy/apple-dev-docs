@@ -1,7 +1,8 @@
 # DropSession.Phase.exiting
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The drop session has exited the drop destination.
 

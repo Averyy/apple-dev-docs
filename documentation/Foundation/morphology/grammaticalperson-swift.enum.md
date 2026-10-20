@@ -1,7 +1,8 @@
 # Morphology.GrammaticalPerson
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -21,22 +22,22 @@ enum GrammaticalPerson
 ## Topics
 
 ### Enumeration Cases
-- [Morphology.GrammaticalPerson.first](morphology/grammaticalperson-swift.enum/first.md)
-- [Morphology.GrammaticalPerson.second](morphology/grammaticalperson-swift.enum/second.md)
-- [Morphology.GrammaticalPerson.third](morphology/grammaticalperson-swift.enum/third.md)
+- [Morphology.GrammaticalPerson.first](./grammaticalperson-swift.enum/first.md)
+- [Morphology.GrammaticalPerson.second](./grammaticalperson-swift.enum/second.md)
+- [Morphology.GrammaticalPerson.third](./grammaticalperson-swift.enum/third.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

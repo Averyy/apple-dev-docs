@@ -1,7 +1,8 @@
 # rectForRow(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the drawing area for a row that an index path identifies.
 
@@ -9,7 +10,7 @@ Returns the drawing area for a row that an index path identifies.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Returns the drawing area for a row that an index path identifies.
 func rectForRow(at indexPath: IndexPath) -> CGRect
 ```
 
+```objc
+- (CGRect) rectForRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-A rectangle defining the area in which the table view draws the row or [`CGRectZero`](https://developer.apple.com/documentation/coregraphics/cgrectzero) if `indexPath` is invalid.
+A rectangle defining the area in which the table view draws the row or [`CGRectZero`](../../CoreGraphics/cgrectzero.md) if `indexPath` is invalid.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ A rectangle defining the area in which the table view draws the row or [`CGRectZ
 
 ## See Also
 
-- [func rect(forSection: Int) -> CGRect](uitableview/rect(forsection:).md)
+### Getting the drawing areas for the table
+- [func rect(forSection: Int) -> CGRect](./rect%28forsection%29.md)
   Returns the drawing area for a specified section of the table view.
-- [func rectForFooter(inSection: Int) -> CGRect](uitableview/rectforfooter(insection:).md)
+- [func rectForFooter(inSection: Int) -> CGRect](./rectforfooter%28insection%29.md)
   Returns the drawing area for the footer of the specified section.
-- [func rectForHeader(inSection: Int) -> CGRect](uitableview/rectforheader(insection:).md)
+- [func rectForHeader(inSection: Int) -> CGRect](./rectforheader%28insection%29.md)
   Returns the drawing area for the header of the specified section.
 
 

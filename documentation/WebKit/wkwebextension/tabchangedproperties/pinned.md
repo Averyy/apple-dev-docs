@@ -1,7 +1,8 @@
 # pinned
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the pinned state changed.
 
@@ -16,6 +17,10 @@ Indicates the pinned state changed.
 
 ```swift
 static var pinned: WKWebExtension.TabChangedProperties { get }
+```
+
+```c
+WKWebExtensionTabChangedPropertiesPinned
 ```
 
 

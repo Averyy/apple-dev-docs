@@ -1,6 +1,7 @@
 # Creating a Newsletter Sign-Up Element
 
-**Framework**: Apple News
+**Framework**: Apple News  
+**Role**: Article
 
 Add a newsletter sign-up element in your article.
 
@@ -13,18 +14,18 @@ You can provide your readers the option to sign up for your publication’s news
 - Add the newsletter sign-up element to your article.
 - Use components, component styles, component text styles, and layout objects to customize the display of the newsletter sign-up element.
 
-![A screenshot of an Apple News article with a newsletter sign-up element.](/images/com.apple.applenews/media-4285520@2x.png)
+![A screenshot of an Apple News article with a newsletter sign-up element.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-4285520@2x.png)
 
-##### Create Component Layout Objects for Newsletter Sign Up
+##### Create Component Layout Objects for Newsletter Sign-Up
 
 To make adjustments to the positioning of the newsletter sign-up element, you must first create new `ComponentLayout` objects:
 
-1. Copy the example code [`Layout: Copy This Code`](creating-a-newsletter-sign-up-element#Layout-Copy-This-Code.md).
+1. Copy the example code [Layout: Copy This Code](./creating-a-newsletter-sign-up-element.md#Layout-Copy-This-Code).
 2. Paste the code between the closing brace (`}`) of the last `componentLayout` object and the closing brace for the whole `ComponentLayouts` property.
 
-Your code should look like the example code [`Layout: Result`](creating-a-newsletter-sign-up-element#Layout-Result.md).
+Your code should look like the example code [Layout: Result](./creating-a-newsletter-sign-up-element.md#Layout-Result).
 
-###### Layout Copy This Code
+###### Layout: Copy This Code
 
 ```json
 ,
@@ -51,7 +52,7 @@ Your code should look like the example code [`Layout: Result`](creating-a-newsle
      }
 ```
 
-###### Layout Result
+###### Layout: Result
 
 Ellipses (…) indicate lines of code are omitted from this example.
 
@@ -86,16 +87,16 @@ Ellipses (…) indicate lines of code are omitted from this example.
 }
 ```
 
-##### Define Component Styles for the Newsletter Sign Up Element
+##### Define Component Styles for the Newsletter Sign-Up Element
 
 Create a new `ComponentStyles` object so that you can apply styles to the newsletter sign-up element.
 
-1. Copy the example code [`Component Styles: Copy This Code`](creating-a-newsletter-sign-up-element#Component-Styles-Copy-This-Code.md).
+1. Copy the example code [Component Styles: Copy This Code](./creating-a-newsletter-sign-up-element.md#Component-Styles-Copy-This-Code).
 2. Paste the code between after the `backgroundColor` property of the `sidebarBackgroundStyle` object and the closing brace (`}`) for the whole `componentStyles` property.
 
-Your code should look like the example code [`Component Styles: Result`](creating-a-newsletter-sign-up-element#Component-Styles-Result.md).
+Your code should look like the example code [Component Styles: Result](./creating-a-newsletter-sign-up-element.md#Component-Styles-Result).
 
-###### Component Styles Copy This Code
+###### Component Styles: Copy This Code
 
 ```json
 ,
@@ -130,7 +131,7 @@ Your code should look like the example code [`Component Styles: Result`](creatin
     }
 ```
 
-###### Component Styles Result
+###### Component Styles: Result
 
 Ellipses (…) indicate lines of code that are omitted from this example.
 
@@ -173,16 +174,16 @@ Ellipses (…) indicate lines of code that are omitted from this example.
 },
 ```
 
-##### Define Component Text Styles for the Newsletter Sign Up Element
+##### Define Component Text Styles for the Newsletter Sign-Up Element
 
 Create new `ComponentTextStyle` objects so that you can apply text styles to the heading, body, and button for the newsletter sign-up element.
 
-1. Copy the example code [`Component Text Styles: Copy This Code`](creating-a-newsletter-sign-up-element#Component-Text-Styles-Copy-This-Code.md).
+1. Copy the example code [Component Text Styles: Copy This Code](./creating-a-newsletter-sign-up-element.md#Component-Text-Styles-Copy-This-Code).
 2. Paste the code after the last `componentTextStyle` object and the closing brace (}) for the whole `componentTextStyles` object.
 
-Your code should look like the example code [`Component Text Styles: Result`](creating-a-newsletter-sign-up-element#Component-Text-Styles-Result.md).
+Your code should look like the example code [Component Text Styles: Result](./creating-a-newsletter-sign-up-element.md#Component-Text-Styles-Result).
 
-###### Component Text Styles Copy This Code
+###### Component Text Styles: Copy This Code
 
 ```json
 ,
@@ -207,7 +208,7 @@ Your code should look like the example code [`Component Text Styles: Result`](cr
    }
 ```
 
-###### Component Text Styles Result
+###### Component Text Styles: Result
 
 Ellipses (…) indicate lines of code that are omitted from this example.
 
@@ -239,16 +240,16 @@ Ellipses (…) indicate lines of code that are omitted from this example.
 }
 ```
 
-##### Add a Newsletter Sign Up Element in Your Article
+##### Add a Newsletter Sign-Up Element in your Article
 
 Finally, add the newsletter sign-up element to your article.
 
-1. Copy the example code [`Newsletter: Copy This Code`](creating-a-newsletter-sign-up-element#Newsletter-Copy-This-Code.md).
+1. Copy the example code [Newsletter: Copy This Code](./creating-a-newsletter-sign-up-element.md#Newsletter-Copy-This-Code).
 2. Paste the code after the Twitter URL and before the closing square bracket (]) at the end of the `components` array.
 
-Your code should look like the example code in [`Newsletter: Result`](creating-a-newsletter-sign-up-element#Newsletter-Result.md).
+Your code should look like the example code in [Newsletter: Result](./creating-a-newsletter-sign-up-element.md#Newsletter-Result).
 
-###### Newsletter Copy This Code
+###### Newsletter: Copy This Code
 
 ```json
  ,
@@ -293,7 +294,7 @@ Your code should look like the example code in [`Newsletter: Result`](creating-a
         }
 ```
 
-###### Newsletter Result
+###### Newsletter: Result
 
 Ellipses (…) indicate lines of code that are omitted from this example.
 
@@ -350,23 +351,24 @@ Ellipses (…) indicate lines of code that are omitted from this example.
 
 ##### Previous
 
-[`Adding a Fixed Image Fill`](adding-a-fixed-image-fill.md)
+[Adding a Fixed Image Fill](./adding-a-fixed-image-fill.md)
 
 ##### Next
 
-[`Viewing the Finished Article for Advanced Design Tutorial 3`](viewing-the-finished-article-for-advanced-design-tutorial-3.md)
+[Viewing the Finished Article for Advanced Design Tutorial 3](./viewing-the-finished-article-for-advanced-design-tutorial-3.md)
 
 ## See Also
 
-- [Giving the Article a Dark Color Scheme](giving-the-article-a-dark-color-scheme.md)
+### Advanced Design Tutorial 3: More Ideas
+- [Giving the Article a Dark Color Scheme](./giving-the-article-a-dark-color-scheme.md)
   Apply a new color scheme to your article.
-- [Adding a Video](adding-a-video.md)
+- [Adding a Video](./adding-a-video.md)
   Add a video component inside the header component.
-- [Creating a Sidebar](creating-a-sidebar.md)
+- [Creating a Sidebar](./creating-a-sidebar.md)
   Create a box with an HTML bulleted list in the margin.
-- [Adding a Fixed Image Fill](adding-a-fixed-image-fill.md)
+- [Adding a Fixed Image Fill](./adding-a-fixed-image-fill.md)
   Add an image that remains stationary when the user scrolls.
-- [Viewing the Finished Article for Advanced Design Tutorial 3](viewing-the-finished-article-for-advanced-design-tutorial-3.md)
+- [Viewing the Finished Article for Advanced Design Tutorial 3](./viewing-the-finished-article-for-advanced-design-tutorial-3.md)
   See the full JSON code from this tutorial.
 
 

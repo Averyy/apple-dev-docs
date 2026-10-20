@@ -1,7 +1,8 @@
 # pointCount
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of points associated with the shape.
 
@@ -20,13 +21,18 @@ The number of points associated with the shape.
 var pointCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger pointCount;
+```
+
 ## See Also
 
-- [func points() -> UnsafeMutablePointer<MKMapPoint>](mkmultipoint/points.md)
+### Accessing the points in the shape
+- [func points() -> UnsafeMutablePointer<MKMapPoint>](./points%28%29.md)
   Returns an array of map points associated with the shape.
-- [func location(atPointIndex: Int) -> CGFloat](mkmultipoint/location(atpointindex:).md)
+- [func location(atPointIndex: Int) -> CGFloat](./location%28atpointindex%29.md)
   Translates a point index into a unit distance along the shape.
-- [func locations(at: IndexSet) -> [CGFloat]](mkmultipoint/locations(at:).md)
+- [func locations(at: IndexSet) -> [CGFloat]](./locations%28at%29.md)
   Translates a point index set into a unit distance along the shape.
 
 

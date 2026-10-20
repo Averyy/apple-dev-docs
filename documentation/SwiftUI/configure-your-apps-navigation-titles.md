@@ -1,6 +1,7 @@
 # Configure your apps navigation titles
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Article
 
 Use a navigation title to display the current navigation state of an interface.
 
@@ -15,7 +16,7 @@ ContentView()
     .navigationTitle("My Title")
 ```
 
-The title of your apps toolbar can be further customized using additional navigation related modifiers. For example, you can associate a [`URL`](https://developer.apple.com/documentation/foundation/url) or your own type conforming to [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) to your view using the navigation document modifier.
+The title of your apps toolbar can be further customized using additional navigation related modifiers. For example, you can associate a [`URL`](../Foundation/url.md) or your own type conforming to [`Transferable`](../CoreTransferable/transferable.md) to your view using the navigation document modifier.
 
 ```swift
 ContentView()
@@ -27,7 +28,7 @@ In iOS and iPadOS, this will construct a title that can present a menu by tappin
 
 In macOS, this item will construct a proxy icon for manipulating the file backing the document.
 
-When providing a transferable type, you should typically provide a [`SharePreview`](sharepreview.md) which provides the appropriate content for rendering the preview in the header of the menu.
+When providing a transferable type, you should typically provide a [`SharePreview`](./sharepreview.md) which provides the appropriate content for rendering the preview in the header of the menu.
 
 ```swift
 ContentView()
@@ -53,9 +54,10 @@ In iOS, when using a text field in a navigation title, SwiftUI creates a button 
 
 ## See Also
 
-- [func navigationTitle(_:)](view/navigationtitle(_:).md)
+### Navigation titles
+- [func navigationTitle(_:)](./view/navigationtitle%28_%29.md)
   Configures the view’s title for purposes of navigation, using a localized string resource.
-- [func navigationSubtitle(_:)](view/navigationsubtitle(_:).md)
+- [func navigationSubtitle(_:)](./view/navigationsubtitle%28_%29.md)
   Configures the view’s subtitle for purposes of navigation, using a localized string resource.
 
 

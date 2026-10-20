@@ -1,7 +1,8 @@
 # vDSP.RoundingMode.towardNearestInteger
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ case towardNearestInteger
 
 ## See Also
 
-- [vDSP.RoundingMode.towardZero](vdsp/roundingmode/towardzero.md)
+### Rounding modes
+- [vDSP.RoundingMode.towardZero](./towardzero.md)
 
 
 ---

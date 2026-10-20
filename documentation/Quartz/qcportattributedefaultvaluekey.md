@@ -1,12 +1,15 @@
 # QCPortAttributeDefaultValueKey
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key for the port default value. You can use this key only for value ports (Boolean, Index, Number, Color and String).
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,36 +17,41 @@ The key for the port default value. You can use this key only for value ports (B
 let QCPortAttributeDefaultValueKey: String
 ```
 
+```c
+extern NSString * const QCPortAttributeDefaultValueKey;
+```
+
 ## See Also
 
-- [let QCCompositionAttributeBuiltInKey: String](qccompositionattributebuiltinkey.md)
+### Constants
+- [let QCCompositionAttributeBuiltInKey: String](./qccompositionattributebuiltinkey.md)
   The key for the composition origin.
-- [let QCCompositionAttributeCategoryKey: String](qccompositionattributecategorykey.md)
+- [let QCCompositionAttributeCategoryKey: String](./qccompositionattributecategorykey.md)
   A key representing a composition category.
-- [let QCCompositionAttributeCopyrightKey: String](qccompositionattributecopyrightkey.md)
+- [let QCCompositionAttributeCopyrightKey: String](./qccompositionattributecopyrightkey.md)
   The key for composition copyright information. The associated value is an `NSString` object.
-- [let QCCompositionAttributeDescriptionKey: String](qccompositionattributedescriptionkey.md)
+- [let QCCompositionAttributeDescriptionKey: String](./qccompositionattributedescriptionkey.md)
   The key for the composition description. The associated value is an `NSString` object.
-- [let QCCompositionAttributeHasConsumersKey: String](qccompositionattributehasconsumerskey.md)
+- [let QCCompositionAttributeHasConsumersKey: String](./qccompositionattributehasconsumerskey.md)
   The key for a composition that has consumer patches.
-- [let QCCompositionAttributeIsTimeDependentKey: String](qccompositionattributeistimedependentkey.md)
-- [let QCCompositionAttributeNameKey: String](qccompositionattributenamekey.md)
+- [let QCCompositionAttributeIsTimeDependentKey: String](./qccompositionattributeistimedependentkey.md)
+- [let QCCompositionAttributeNameKey: String](./qccompositionattributenamekey.md)
   The key for the composition name. The associated value is an `NSString` object.
-- [let QCCompositionCategoryDistortion: String](qccompositioncategorydistortion.md)
+- [let QCCompositionCategoryDistortion: String](./qccompositioncategorydistortion.md)
   A composition that produces a distortion effect.
-- [let QCCompositionCategoryStylize: String](qccompositioncategorystylize.md)
+- [let QCCompositionCategoryStylize: String](./qccompositioncategorystylize.md)
   A composition that produces a stylize effect.
-- [let QCCompositionCategoryUtility: String](qccompositioncategoryutility.md)
+- [let QCCompositionCategoryUtility: String](./qccompositioncategoryutility.md)
   A utility composition.
-- [let QCCompositionInputAudioPeakKey: String](qccompositioninputaudiopeakkey.md)
+- [let QCCompositionInputAudioPeakKey: String](./qccompositioninputaudiopeakkey.md)
   A number input port whose key is `inputAudioPeak`. The value must be in the `[0,1]` range as a mono signal with no decay applied.
-- [let QCCompositionInputAudioSpectrumKey: String](qccompositioninputaudiospectrumkey.md)
+- [let QCCompositionInputAudioSpectrumKey: String](./qccompositioninputaudiospectrumkey.md)
   A structure input port whose key is `inputAudioSpectrum`. The structure must contain 16 values in the `[0,1]` range representing 16 spectrum bands of the mono signal from low to high frequencies with no decay applied.
-- [let QCCompositionInputDestinationImageKey: String](qccompositioninputdestinationimagekey.md)
+- [let QCCompositionInputDestinationImageKey: String](./qccompositioninputdestinationimagekey.md)
   An image input port whose key is `inputDestinationImage`.
-- [let QCCompositionInputImageKey: String](qccompositioninputimagekey.md)
+- [let QCCompositionInputImageKey: String](./qccompositioninputimagekey.md)
   An image input port whose key is  `inputImage`.
-- [let QCCompositionInputPaceKey: String](qccompositioninputpacekey.md)
+- [let QCCompositionInputPaceKey: String](./qccompositioninputpacekey.md)
   A number input port whose key is `inputPace`. The value must be in the `[0,1]` range.
 
 

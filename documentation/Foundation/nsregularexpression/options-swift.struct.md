@@ -1,9 +1,10 @@
 # NSRegularExpression.Options
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-These constants define the regular expression options. These constants are used by the property [`options`](nsregularexpression/options-swift.property.md), [`regularExpressionWithPattern:options:error:`](nsregularexpression/regularexpressionwithpattern:options:error:.md), and [`init(pattern:options:)`](nsregularexpression/init(pattern:options:).md).
+These constants define the regular expression options. These constants are used by the property [`options`](./options-swift.property.md), [`regularExpressionWithPattern:options:error:`](./regularexpressionwithpattern_options_error_.md), and [`init(pattern:options:)`](./init%28pattern,options%29.md).
 
 **Availability**:
 - iOS 2.0+
@@ -20,43 +21,48 @@ These constants define the regular expression options. These constants are used 
 struct Options
 ```
 
+```c
+enum NSRegularExpressionOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var caseInsensitive: NSRegularExpression.Options](nsregularexpression/options-swift.struct/caseinsensitive.md)
+- [static var caseInsensitive: NSRegularExpression.Options](./options-swift.struct/caseinsensitive.md)
   Match letters in the pattern independent of case.
-- [static var allowCommentsAndWhitespace: NSRegularExpression.Options](nsregularexpression/options-swift.struct/allowcommentsandwhitespace.md)
+- [static var allowCommentsAndWhitespace: NSRegularExpression.Options](./options-swift.struct/allowcommentsandwhitespace.md)
   Ignore whitespace and #-prefixed comments in the pattern.
-- [static var ignoreMetacharacters: NSRegularExpression.Options](nsregularexpression/options-swift.struct/ignoremetacharacters.md)
+- [static var ignoreMetacharacters: NSRegularExpression.Options](./options-swift.struct/ignoremetacharacters.md)
   Treat the entire pattern as a literal string.
-- [static var dotMatchesLineSeparators: NSRegularExpression.Options](nsregularexpression/options-swift.struct/dotmatcheslineseparators.md)
+- [static var dotMatchesLineSeparators: NSRegularExpression.Options](./options-swift.struct/dotmatcheslineseparators.md)
   Allow `.` to match any character, including line separators.
-- [static var anchorsMatchLines: NSRegularExpression.Options](nsregularexpression/options-swift.struct/anchorsmatchlines.md)
+- [static var anchorsMatchLines: NSRegularExpression.Options](./options-swift.struct/anchorsmatchlines.md)
   Allow `^` and `$` to match the start and end of lines.
-- [static var useUnixLineSeparators: NSRegularExpression.Options](nsregularexpression/options-swift.struct/useunixlineseparators.md)
+- [static var useUnixLineSeparators: NSRegularExpression.Options](./options-swift.struct/useunixlineseparators.md)
   Treat only `\n` as a line separator (otherwise, all standard line separators are used).
-- [static var useUnicodeWordBoundaries: NSRegularExpression.Options](nsregularexpression/options-swift.struct/useunicodewordboundaries.md)
+- [static var useUnicodeWordBoundaries: NSRegularExpression.Options](./options-swift.struct/useunicodewordboundaries.md)
   Use Unicode `TR#29` to specify word boundaries (otherwise, traditional regular expression word boundaries are used).
 ### Initializers
-- [init(rawValue: UInt)](nsregularexpression/options-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./options-swift.struct/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [NSRegularExpression.MatchingFlags](nsregularexpression/matchingflags.md)
-  Set by the Block as the matching progresses, completes, or fails. Used by the method [`enumerateMatches(in:options:range:using:)`](nsregularexpression/enumeratematches(in:options:range:using:).md).
-- [NSRegularExpression.MatchingOptions](nsregularexpression/matchingoptions.md)
+### Constants
+- [NSRegularExpression.MatchingFlags](./matchingflags.md)
+  Set by the Block as the matching progresses, completes, or fails. Used by the method [`enumerateMatches(in:options:range:using:)`](./enumeratematches%28in,options,range,using%29.md).
+- [NSRegularExpression.MatchingOptions](./matchingoptions.md)
   The matching options constants specify the reporting, completion and matching rules to the expression matching methods. These constants are used by all methods that search for, or replace values, using a regular expression.
 
 

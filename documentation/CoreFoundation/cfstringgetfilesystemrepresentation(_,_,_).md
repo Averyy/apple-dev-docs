@@ -1,23 +1,28 @@
 # CFStringGetFileSystemRepresentation(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Extracts the contents of a string as a `NULL`-terminated 8-bit string appropriate for passing to POSIX APIs.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFStringGetFileSystemRepresentation(_ string: CFString!, _ buffer: UnsafeMutablePointer<CChar>!, _ maxBufLen: CFIndex) -> Bool
+```
+
+```c
+extern Boolean CFStringGetFileSystemRepresentation(CFStringRef string, char *buffer, CFIndex maxBufLen);
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ func CFStringGetFileSystemRepresentation(_ string: CFString!, _ buffer: UnsafeMu
 
 #### Discussion
 
-You can use [`CFStringGetMaximumSizeOfFileSystemRepresentation(_:)`](cfstringgetmaximumsizeoffilesystemrepresentation(_:).md) if you want to make sure the buffer is of sufficient length.
+You can use [`CFStringGetMaximumSizeOfFileSystemRepresentation(_:)`](./cfstringgetmaximumsizeoffilesystemrepresentation%28_%29.md) if you want to make sure the buffer is of sufficient length.
 
 ## Parameters
 
@@ -36,9 +41,10 @@ You can use [`CFStringGetMaximumSizeOfFileSystemRepresentation(_:)`](cfstringget
 
 ## See Also
 
-- [func CFStringCreateWithFileSystemRepresentation(CFAllocator!, UnsafePointer<CChar>!) -> CFString!](cfstringcreatewithfilesystemrepresentation(_:_:).md)
+### String File System Representations
+- [func CFStringCreateWithFileSystemRepresentation(CFAllocator!, UnsafePointer<CChar>!) -> CFString!](./cfstringcreatewithfilesystemrepresentation%28_,_%29.md)
   Creates a CFString from a zero-terminated POSIX file system representation.
-- [func CFStringGetMaximumSizeOfFileSystemRepresentation(CFString!) -> CFIndex](cfstringgetmaximumsizeoffilesystemrepresentation(_:).md)
+- [func CFStringGetMaximumSizeOfFileSystemRepresentation(CFString!) -> CFIndex](./cfstringgetmaximumsizeoffilesystemrepresentation%28_%29.md)
   Determines the upper bound on the number of bytes required to hold the file system representation of the string.
 
 

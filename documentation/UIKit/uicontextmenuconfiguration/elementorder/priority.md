@@ -1,7 +1,8 @@
 # UIContextMenuConfiguration.ElementOrder.priority
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that displays menu elements according to their priority.
 
@@ -18,15 +19,20 @@ A constant that displays menu elements according to their priority.
 case priority
 ```
 
+```c
+UIContextMenuConfigurationElementOrderPriority
+```
+
 #### Discussion
 
-This ordering strategy displays the first menu element in the [`UIMenu`](uimenu.md) closest to the location of the user interaction.
+This ordering strategy displays the first menu element in the [`UIMenu`](../../uimenu.md) closest to the location of the user interaction.
 
 ## See Also
 
-- [UIContextMenuConfiguration.ElementOrder.automatic](uicontextmenuconfiguration/elementorder/automatic.md)
+### Constants
+- [UIContextMenuConfiguration.ElementOrder.automatic](./automatic.md)
   A constant that allows the system to choose an ordering strategy according to the current context.
-- [UIContextMenuConfiguration.ElementOrder.fixed](uicontextmenuconfiguration/elementorder/fixed.md)
+- [UIContextMenuConfiguration.ElementOrder.fixed](./fixed.md)
   A constant that displays menu elements in a fixed order.
 
 

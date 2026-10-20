@@ -1,7 +1,8 @@
 # resolveHDR(in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates this color to a resolved color with content headroom, given a set of environment values.
 
@@ -30,7 +31,8 @@ The color’s value in the sRGB color space.
 
 ## See Also
 
-- [struct ResolvedHDR](color/resolvedhdr.md)
+### Working with high dynamic range (HDR) colors
+- [struct ResolvedHDR](./resolvedhdr.md)
   A concrete color value, including HDR headroom information.
 
 

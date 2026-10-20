@@ -1,7 +1,8 @@
 # FinanceError
 
 **Framework**: FinanceKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe errors that may occur when accessing financial data.
 
@@ -19,33 +20,33 @@ enum FinanceError
 ## Topics
 
 ### Enumeration Cases
-- [case dataRestricted(FinanceStore.DataType)](financeerror/datarestricted(_:).md)
+- [case dataRestricted(FinanceStore.DataType)](./financeerror/datarestricted%28_%29.md)
   The data is in a restricted state.
-- [FinanceError.historyTokenInvalid](financeerror/historytokeninvalid.md)
-- [FinanceError.unknown](financeerror/unknown.md)
+- [FinanceError.historyTokenInvalid](./financeerror/historytokeninvalid.md)
+- [FinanceError.unknown](./financeerror/unknown.md)
   An unknown error occurred.
 ### Instance Properties
-- [var errorCode: Int](financeerror/errorcode.md)
+- [var errorCode: Int](./financeerror/errorcode.md)
   The error code within the given domain.
-- [var errorDescription: String?](financeerror/errordescription.md)
+- [var errorDescription: String?](./financeerror/errordescription.md)
   A localized message that describes what error occurred.
-- [var errorUserInfo: [String : Any]](financeerror/erroruserinfo.md)
+- [var errorUserInfo: [String : Any]](./financeerror/erroruserinfo.md)
   The user-info dictionary that contains additional information about the error.
-- [var failureReason: String?](financeerror/failurereason.md)
+- [var failureReason: String?](./financeerror/failurereason.md)
   A localized message that describes the reason for the failure.
 ### Type Properties
-- [static var errorDomain: String](financeerror/errordomain.md)
+- [static var errorDomain: String](./financeerror/errordomain.md)
   The domain of the error.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

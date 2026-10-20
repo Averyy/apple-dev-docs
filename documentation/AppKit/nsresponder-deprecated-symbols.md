@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,9 +12,9 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated methods
-- [func beginGesture(with: NSEvent)](nsresponder/begingesture(with:).md)
+- [func beginGesture(with: NSEvent)](./nsresponder/begingesture%28with%29.md)
   Informs the receiver that the user has begun a touch gesture.
-- [func endGesture(with: NSEvent)](nsresponder/endgesture(with:).md)
+- [func endGesture(with: NSEvent)](./nsresponder/endgesture%28with%29.md)
   Informs the receiver that the user has ended a touch gesture.
 
 

@@ -1,7 +1,8 @@
 # MPMusicPlayerPlayParameters
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The MusicKit parameters that describe items to play.
 
@@ -18,34 +19,39 @@ The MusicKit parameters that describe items to play.
 class MPMusicPlayerPlayParameters
 ```
 
+```objc
+@interface MPMusicPlayerPlayParameters : NSObject
+```
+
 ## Topics
 
 ### Creating the play parameters
-- [init?(dictionary: [String : Any])](mpmusicplayerplayparameters/init(dictionary:).md)
+- [init?(dictionary: [String : Any])](./mpmusicplayerplayparameters/init%28dictionary%29.md)
   Returns a new play parameters object using information from MusicKit.
 ### Accessing the play parameters
-- [var dictionary: [String : Any]](mpmusicplayerplayparameters/dictionary.md)
+- [var dictionary: [String : Any]](./mpmusicplayerplayparameters/dictionary.md)
   The information returned from a MusicKit query and stored in a play parameters object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init(playParametersQueue: [MPMusicPlayerPlayParameters])](mpmusicplayerplayparametersqueuedescriptor/init(playparametersqueue:).md)
+### Creating a new play parameters queue descriptor
+- [init(playParametersQueue: [MPMusicPlayerPlayParameters])](./mpmusicplayerplayparametersqueuedescriptor/init%28playparametersqueue%29.md)
   Creates a new queue descriptor using the designated queue of play parameters.
 
 

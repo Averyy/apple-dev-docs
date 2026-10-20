@@ -1,7 +1,8 @@
 # withUnsafeBytes(_:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invokes the provided closure with the backing data and memory layout of this view.
 
@@ -26,7 +27,7 @@ The value returned by the closure.
 
 - body: The closure to be invoked with a raw pointer to the first element, as well as shape and strides of the view.
 
-You are responsible for reading the `strides` passed in when indexing the backing data. If the view has an [`interleaveLayout`](ndarray/rawview/interleavelayout.md), the strides for that dimension are block strides and must be interpreted accordingly — see [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md).
+You are responsible for reading the `strides` passed in when indexing the backing data. If the view has an [`interleaveLayout`](./interleavelayout.md), the strides for that dimension are block strides and must be interpreted accordingly — see [`NDArray.InterleaveLayout`](../interleavelayout-swift.struct.md).
 
 
 ---

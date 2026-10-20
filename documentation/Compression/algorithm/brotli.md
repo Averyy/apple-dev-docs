@@ -1,7 +1,8 @@
 # Algorithm.brotli
 
 **Framework**: Compression  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Brotli compression algorithm, which is recommended for text compression.
 
@@ -11,7 +12,7 @@ The Brotli compression algorithm, which is recommended for text compression.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

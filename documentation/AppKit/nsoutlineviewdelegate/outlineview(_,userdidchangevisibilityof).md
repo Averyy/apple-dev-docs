@@ -1,7 +1,8 @@
 # outlineView(_:userDidChangeVisibilityOf:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 14.0+
@@ -13,9 +14,14 @@
 optional func outlineView(_ outlineView: NSOutlineView, userDidChangeVisibilityOf columns: [NSTableColumn])
 ```
 
+```objc
+- (void) outlineView:(NSOutlineView *) outlineView userDidChangeVisibilityOfTableColumns:(NSArray<NSTableColumn *> *) columns;
+```
+
 ## See Also
 
-- [func outlineView(NSOutlineView, userCanChangeVisibilityOf: NSTableColumn) -> Bool](nsoutlineviewdelegate/outlineview(_:usercanchangevisibilityof:).md)
+### Changing Visibility
+- [func outlineView(NSOutlineView, userCanChangeVisibilityOf: NSTableColumn) -> Bool](./outlineview%28_,usercanchangevisibilityof%29.md)
 
 
 ---

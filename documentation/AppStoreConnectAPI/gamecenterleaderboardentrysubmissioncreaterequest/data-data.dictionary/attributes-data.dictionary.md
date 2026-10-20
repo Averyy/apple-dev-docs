@@ -1,7 +1,8 @@
 # GameCenterLeaderboardEntrySubmissionCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that you set that describe the new leaderboard entry.
 
@@ -10,13 +11,13 @@ Attributes that you set that describe the new leaderboard entry.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardEntrySubmissionCreateRequest.Data.Attributes
 ```
 
 ## Mentions
 
-- [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
+- [App Store Connect API 3.2 release notes](../../app-store-connect-api-3-2-release-notes.md)
 
 ## Properties
 

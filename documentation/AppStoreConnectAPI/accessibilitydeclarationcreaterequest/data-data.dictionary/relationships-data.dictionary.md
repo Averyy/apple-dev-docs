@@ -1,7 +1,8 @@
 # AccessibilityDeclarationCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AccessibilityDeclarationCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AccessibilityDeclarationCreateRequest.Data.Relationships.App](accessibilitydeclarationcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+- [object AccessibilityDeclarationCreateRequest.Data.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
   The resource linkage identifying the app associated with an accessibility declaration create request.
 
 ## Properties

@@ -1,7 +1,8 @@
 # hourly(startDate:endDate:)
 
 **Framework**: WeatherKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The hourly forecast query that takes a start date and end date for the request, with the following caveats:
 
@@ -19,6 +20,8 @@ The hourly forecast query that takes a start date and end date for the request, 
 ```swift
 static func hourly(startDate: Date, endDate: Date) -> WeatherQuery<T>
 ```
+
+Available when `T` is `Forecast<HourWeather>`.
 
 #### Return Value
 
@@ -38,19 +41,20 @@ An hourly forecast query for the specified time range
 
 ## See Also
 
-- [static var alerts: WeatherQuery<[WeatherAlert]?>](weatherquery/alerts.md)
+### Creating queries
+- [static var alerts: WeatherQuery<[WeatherAlert]?>](./alerts.md)
   The weather alerts query.
-- [static var availability: WeatherQuery<WeatherAvailability>](weatherquery/availability.md)
+- [static var availability: WeatherQuery<WeatherAvailability>](./availability.md)
   The availability query.
-- [static var current: WeatherQuery<CurrentWeather>](weatherquery/current.md)
+- [static var current: WeatherQuery<CurrentWeather>](./current.md)
   The current weather query.
-- [static var daily: WeatherQuery<Forecast<DayWeather>>](weatherquery/daily.md)
+- [static var daily: WeatherQuery<Forecast<DayWeather>>](./daily.md)
   The daily forecast query. This returns 10 contiguous days, beginning with the current day.
-- [static var hourly: WeatherQuery<Forecast<HourWeather>>](weatherquery/hourly.md)
+- [static var hourly: WeatherQuery<Forecast<HourWeather>>](./hourly.md)
   The hourly forecast query. This returns 25 contiguous hours, beginning with the current hour.
-- [static var minute: WeatherQuery<Forecast<MinuteWeather>?>](weatherquery/minute.md)
+- [static var minute: WeatherQuery<Forecast<MinuteWeather>?>](./minute.md)
   The minute forecast query.
-- [static func daily(startDate: Date, endDate: Date) -> WeatherQuery<T>](weatherquery/daily(startdate:enddate:).md)
+- [static func daily(startDate: Date, endDate: Date) -> WeatherQuery<T>](./daily%28startdate,enddate%29.md)
   Returns weather for an arbitrary range of days, with the following caveats:
 
 

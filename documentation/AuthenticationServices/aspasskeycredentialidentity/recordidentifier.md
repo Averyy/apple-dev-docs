@@ -1,7 +1,8 @@
 # recordIdentifier
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string used to correlate this identity to a record in your app’s own database.
 
@@ -18,9 +19,14 @@ A string used to correlate this identity to a record in your app’s own databas
 var recordIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * recordIdentifier;
+```
+
 ## See Also
 
-- [var credentialID: Data](aspasskeycredentialidentity/credentialid.md)
+### Distinguishing identities
+- [var credentialID: Data](./credentialid.md)
   The credential identifier for this passkey credential identity.
 
 

@@ -1,7 +1,8 @@
 # categoryName
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The category in which this intent will be grouped into in the Shortcuts editor.
 
@@ -11,7 +12,7 @@ The category in which this intent will be grouped into in the Shortcuts editor.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

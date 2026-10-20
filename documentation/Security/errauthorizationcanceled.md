@@ -1,7 +1,8 @@
 # errAuthorizationCanceled
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The user canceled the operation.
 
@@ -13,6 +14,10 @@ The user canceled the operation.
 
 ```swift
 var errAuthorizationCanceled: OSStatus { get }
+```
+
+```c
+errAuthorizationCanceled
 ```
 
 

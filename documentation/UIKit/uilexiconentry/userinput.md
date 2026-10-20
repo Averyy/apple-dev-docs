@@ -1,7 +1,8 @@
 # userInput
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Text to match, during user input, to provide appropriate output to a text document from the document text value in the same lexicon entry.
 
@@ -17,9 +18,14 @@ Text to match, during user input, to provide appropriate output to a text docume
 var userInput: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * userInput;
+```
+
 ## See Also
 
-- [var documentText: String](uilexiconentry/documenttext.md)
+### Accessing a lexicon entry
+- [var documentText: String](./documenttext.md)
   Text to be inserted into a text input object by a custom keyboard, corresponding to the user input value in the same lexicon entry.
 
 

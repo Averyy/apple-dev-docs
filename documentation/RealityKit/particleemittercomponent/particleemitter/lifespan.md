@@ -1,7 +1,8 @@
 # lifeSpan
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration, in seconds, for which each particle is rendered before being removed from the scene. Defaults to 1.
 

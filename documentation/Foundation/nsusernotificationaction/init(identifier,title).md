@@ -1,17 +1,24 @@
 # init(identifier:title:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a user notification action with a specified identifier and title.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: All NSUserNotifications API should be replaced with UserNotifications.frameworks API
 
 ## Declaration
 
 ```swift
 convenience init(identifier: String?, title: String?)
+```
+
+```objc
++ (instancetype) actionWithIdentifier:(NSString *) identifier title:(NSString *) title;
 ```
 
 ## Parameters

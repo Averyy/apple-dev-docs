@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that indicates whether you can query the texture level of detail from within a shader.
@@ -20,15 +21,20 @@ A Boolean value that indicates whether you can query the texture level of detail
 var supportsQueryTextureLOD: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL supportsQueryTextureLOD;
+```
+
 ## See Also
 
-- [var supports32BitFloatFiltering: Bool](mtldevice/supports32bitfloatfiltering.md)
+### Checking texture and sampler support
+- [var supports32BitFloatFiltering: Bool](./supports32bitfloatfiltering.md)
   A Boolean value that indicates whether the GPU can filter a texture with a 32-bit floating-point format.
-- [var supportsBCTextureCompression: Bool](mtldevice/supportsbctexturecompression.md)
+- [var supportsBCTextureCompression: Bool](./supportsbctexturecompression.md)
   A Boolean value that indicates whether you can use textures that use BC compression.
-- [var isDepth24Stencil8PixelFormatSupported: Bool](mtldevice/isdepth24stencil8pixelformatsupported.md)
+- [var isDepth24Stencil8PixelFormatSupported: Bool](./isdepth24stencil8pixelformatsupported.md)
   A Boolean value that indicates whether a device supports a packed depth-and-stencil pixel format.
-- [var readWriteTextureSupport: MTLReadWriteTextureTier](mtldevice/readwritetexturesupport.md)
+- [var readWriteTextureSupport: MTLReadWriteTextureTier](./readwritetexturesupport.md)
   The GPU device’s texture support tier.
 
 

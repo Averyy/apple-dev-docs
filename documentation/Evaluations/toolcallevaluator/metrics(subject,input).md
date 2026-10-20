@@ -1,7 +1,8 @@
 # metrics(subject:input:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates tool-call expectations against the actual transcript and returns scored metrics.
 

@@ -1,7 +1,8 @@
 # flatMap(maxPublishers:_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
 
@@ -22,7 +23,7 @@ func flatMap<T, P>(maxPublishers: Subscribers.Demand = .unlimited, _ transform: 
 
 ## Mentions
 
-- [Receiving and Handling Events with Combine](receiving-and-handling-events-with-combine.md)
+- [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 
 #### Return Value
 
@@ -30,9 +31,9 @@ A publisher that transforms elements from an upstream  publisher into a publishe
 
 #### Discussion
 
-Combine‘s `flatMap(maxPublishers:_:)` operator performs a similar function to the [`flatMap(_:)`](https://developer.apple.com/documentation/swift/sequence/flatmap(_:)-jo2y) operator in the Swift standard library, but turns the elements from one kind of publisher into a new publisher that is sent to subscribers. Use `flatMap(maxPublishers:_:)` when you want to create a new series of events for downstream subscribers based on the received value. The closure creates the new [`Publisher`](publisher.md) based on the received value. The new [`Publisher`](publisher.md) can emit more than one event, and successful completion of the new [`Publisher`](publisher.md) does not complete the overall stream. Failure of the new [`Publisher`](publisher.md) causes the overall stream to fail.
+Combine‘s `flatMap(maxPublishers:_:)` operator performs a similar function to the [`flatMap(_:)`](../../Swift/sequence/flatmap%28_%29-jo2y.md) operator in the Swift standard library, but turns the elements from one kind of publisher into a new publisher that is sent to subscribers. Use `flatMap(maxPublishers:_:)` when you want to create a new series of events for downstream subscribers based on the received value. The closure creates the new [`Publisher`](../publisher.md) based on the received value. The new [`Publisher`](../publisher.md) can emit more than one event, and successful completion of the new [`Publisher`](../publisher.md) does not complete the overall stream. Failure of the new [`Publisher`](../publisher.md) causes the overall stream to fail.
 
-In the example below, a [`PassthroughSubject`](passthroughsubject.md) publishes `WeatherStation` elements. The `flatMap(maxPublishers:_:)` receives each element, creates a [`URL`](https://developer.apple.com/documentation/foundation/url) from it, and produces a new [`URLSession.DataTaskPublisher`](https://developer.apple.com/documentation/foundation/urlsession/datataskpublisher), which will publish the data loaded from that [`URL`](https://developer.apple.com/documentation/foundation/url).
+In the example below, a [`PassthroughSubject`](../passthroughsubject.md) publishes `WeatherStation` elements. The `flatMap(maxPublishers:_:)` receives each element, creates a [`URL`](../../Foundation/url.md) from it, and produces a new [`URLSession.DataTaskPublisher`](../../Foundation/urlsession/datataskpublisher.md), which will publish the data loaded from that [`URL`](../../Foundation/url.md).
 
 ```swift
 public struct WeatherStation {
@@ -61,24 +62,25 @@ weatherPublisher.send(WeatherStation(stationID: "ZBBB")) // Beijing, CN
 
 ## Parameters
 
-- `maxPublishers`: Specifies the maximum number of concurrent publisher subscriptions, or [`unlimited`](subscribers/demand/unlimited.md) if unspecified.
+- `maxPublishers`: Specifies the maximum number of concurrent publisher subscriptions, or [`unlimited`](../subscribers/demand/unlimited.md) if unspecified.
 - `transform`: A closure that takes an element as a parameter and returns a publisher that produces elements of that type.
 
 ## See Also
 
-- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Publishers.SetFailureType<Self, P.Failure>>](publisher/flatmap(maxpublishers:_:)-qxf.md)
+### Republishing elements by subscribing to new publishers
+- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Publishers.SetFailureType<Self, P.Failure>>](./flatmap%28maxpublishers,_%29-qxf.md)
   Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
-- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Self>](publisher/flatmap(maxpublishers:_:)-hyb0.md)
+- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<P, Self>](./flatmap%28maxpublishers,_%29-hyb0.md)
   Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
-- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<Publishers.SetFailureType<P, Self.Failure>, Self>](publisher/flatmap(maxpublishers:_:)-4of8w.md)
+- [func flatMap<P>(maxPublishers: Subscribers.Demand, (Self.Output) -> P) -> Publishers.FlatMap<Publishers.SetFailureType<P, Self.Failure>, Self>](./flatmap%28maxpublishers,_%29-4of8w.md)
   Transforms all elements from an upstream publisher into a new publisher up to a maximum number of publishers you specify.
-- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>](publisher/switchtolatest-453ht.md)
+- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>](./switchtolatest%28%29-453ht.md)
   Republishes elements sent by the most recently received publisher.
-- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Publishers.SetFailureType<Self, Self.Output.Failure>>](publisher/switchtolatest-1c51y.md)
+- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Publishers.SetFailureType<Self, Self.Output.Failure>>](./switchtolatest%28%29-1c51y.md)
   Republishes elements sent by the most recently received publisher.
-- [func switchToLatest() -> Publishers.SwitchToLatest<Publishers.SetFailureType<Self.Output, Self.Failure>, Publishers.Map<Self, Publishers.SetFailureType<Self.Output, Self.Failure>>>](publisher/switchtolatest-20v3t.md)
+- [func switchToLatest() -> Publishers.SwitchToLatest<Publishers.SetFailureType<Self.Output, Self.Failure>, Publishers.Map<Self, Publishers.SetFailureType<Self.Output, Self.Failure>>>](./switchtolatest%28%29-20v3t.md)
   Republishes elements sent by the most recently received publisher.
-- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>](publisher/switchtolatest-9eb3r.md)
+- [func switchToLatest() -> Publishers.SwitchToLatest<Self.Output, Self>](./switchtolatest%28%29-9eb3r.md)
   Republishes elements sent by the most recently received publisher.
 
 

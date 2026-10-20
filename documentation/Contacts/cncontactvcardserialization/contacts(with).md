@@ -1,7 +1,8 @@
 # contacts(with:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the contacts from the vCard data.
 
@@ -19,13 +20,17 @@ Returns the contacts from the vCard data.
 class func contacts(with data: Data) throws -> [CNContact]
 ```
 
+```objc
++ (NSArray<CNContact *> *) contactsWithData:(NSData *) data error:(NSError **) error;
+```
+
 #### Return Value
 
 An array of contacts.
 
 #### Discussion
 
-> **Note**: In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/swift/about-imported-cocoa-error-parameters).
+> **Handling Errors in Swift**: In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and [About Imported Cocoa Error Parameters](../../Swift/about-imported-cocoa-error-parameters.md).
 
 ## Parameters
 

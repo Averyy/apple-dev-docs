@@ -1,7 +1,8 @@
 # MusicCatalogSearchSuggestionsResponse
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that contains results for a catalog search suggestions request.
 
@@ -23,30 +24,30 @@ struct MusicCatalogSearchSuggestionsResponse
 ## Topics
 
 ### Structures
-- [MusicCatalogSearchSuggestionsResponse.Suggestion](musiccatalogsearchsuggestionsresponse/suggestion.md)
+- [MusicCatalogSearchSuggestionsResponse.Suggestion](./musiccatalogsearchsuggestionsresponse/suggestion.md)
   An item that represents a suggestion in the search suggestions response.
 ### Instance Properties
-- [let suggestions: [MusicCatalogSearchSuggestionsResponse.Suggestion]](musiccatalogsearchsuggestionsresponse/suggestions.md)
+- [let suggestions: [MusicCatalogSearchSuggestionsResponse.Suggestion]](./musiccatalogsearchsuggestionsresponse/suggestions.md)
   A collection of suggested terms.
-- [let topResults: MusicItemCollection<MusicCatalogSearchSuggestionsResponse.TopResult>](musiccatalogsearchsuggestionsresponse/topresults.md)
+- [let topResults: MusicItemCollection<MusicCatalogSearchSuggestionsResponse.TopResult>](./musiccatalogsearchsuggestionsresponse/topresults.md)
   A collection of top results.
 ### Type Aliases
-- [MusicCatalogSearchSuggestionsResponse.TopResult](musiccatalogsearchsuggestionsresponse/topresult.md)
+- [MusicCatalogSearchSuggestionsResponse.TopResult](./musiccatalogsearchsuggestionsresponse/topresult.md)
   A type alias for an item that represents one of the top results in a catalog search suggestions response.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

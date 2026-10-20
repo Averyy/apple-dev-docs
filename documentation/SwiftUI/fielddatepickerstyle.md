@@ -1,7 +1,8 @@
 # FieldDatePickerStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A date picker style that displays the components in an editable field.
 
@@ -17,30 +18,31 @@ struct FieldDatePickerStyle
 
 #### Overview
 
-You can also use [`field`](datepickerstyle/field.md) to construct this style.
+You can also use [`field`](./datepickerstyle/field.md) to construct this style.
 
 ## Topics
 
 ### Creating the date picker style
-- [init()](fielddatepickerstyle/init.md)
+- [init()](./fielddatepickerstyle/init%28%29.md)
   Creates an instance of the field date picker style.
 
 ## Relationships
 
 ### Conforms To
-- [DatePickerStyle](datepickerstyle.md)
+- [DatePickerStyle](./datepickerstyle.md)
 
 ## See Also
 
-- [struct DefaultDatePickerStyle](defaultdatepickerstyle.md)
+### Supporting types
+- [struct DefaultDatePickerStyle](./defaultdatepickerstyle.md)
   The default style for date pickers.
-- [struct CompactDatePickerStyle](compactdatepickerstyle.md)
+- [struct CompactDatePickerStyle](./compactdatepickerstyle.md)
   A date picker style that displays the components in a compact, textual format.
-- [struct GraphicalDatePickerStyle](graphicaldatepickerstyle.md)
+- [struct GraphicalDatePickerStyle](./graphicaldatepickerstyle.md)
   A date picker style that displays an interactive calendar or clock.
-- [struct StepperFieldDatePickerStyle](stepperfielddatepickerstyle.md)
+- [struct StepperFieldDatePickerStyle](./stepperfielddatepickerstyle.md)
   A system style that displays the components in an editable field, with adjoining stepper that can increment/decrement the selected component.
-- [struct WheelDatePickerStyle](wheeldatepickerstyle.md)
+- [struct WheelDatePickerStyle](./wheeldatepickerstyle.md)
   A date picker style that displays each component as columns in a scrollable wheel.
 
 

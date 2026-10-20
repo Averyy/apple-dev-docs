@@ -1,7 +1,8 @@
 # refresh()
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the event’s data with the current information in the Calendar database.
 
@@ -19,13 +20,17 @@ Updates the event’s data with the current information in the Calendar database
 func refresh() -> Bool
 ```
 
+```objc
+- (BOOL) refresh;
+```
+
 #### Return Value
 
-If the event was successfully refreshed, [`true`](https://developer.apple.com/documentation/swift/true); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+If the event was successfully refreshed, [`true`](../../Swift/true.md); otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-You should call this method only on events that your application is editing, and only when your application receives the [`EKEventStoreChangedNotification`](ekeventstorechangednotification.md) notification. If this method returns [`false`](https://developer.apple.com/documentation/swift/false), the event has been deleted or otherwise invalidated, and you should not continue to use it.
+You should call this method only on events that your application is editing, and only when your application receives the [`EKEventStoreChangedNotification`](../ekeventstorechangednotification.md) notification. If this method returns [`false`](../../Swift/false.md), the event has been deleted or otherwise invalidated, and you should not continue to use it.
 
 This method does not replace the values of any properties that you have modified.
 

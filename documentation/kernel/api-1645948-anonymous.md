@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kVCAcquireImmediate](1645948-anonymous/kvcacquireimmediate.md)
-- [kVCDarkBackground](1645948-anonymous/kvcdarkbackground.md)
-- [kVCDarkReboot](1645948-anonymous/kvcdarkreboot.md)
-- [kVCLightBackground](1645948-anonymous/kvclightbackground.md)
-- [kVCUsePosition](1645948-anonymous/kvcuseposition.md)
+- [kVCAcquireImmediate](./api-1645948-anonymous/kvcacquireimmediate.md)
+- [kVCDarkBackground](./api-1645948-anonymous/kvcdarkbackground.md)
+- [kVCDarkReboot](./api-1645948-anonymous/kvcdarkreboot.md)
+- [kVCLightBackground](./api-1645948-anonymous/kvclightbackground.md)
+- [kVCUsePosition](./api-1645948-anonymous/kvcuseposition.md)
 
 
 ---

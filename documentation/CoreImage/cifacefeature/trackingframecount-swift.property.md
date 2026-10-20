@@ -1,7 +1,8 @@
 # trackingFrameCount
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tracking frame count of the face.
 
@@ -10,7 +11,7 @@ The tracking frame count of the face.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ The tracking frame count of the face.
 var trackingFrameCount: Int32 { get }
 ```
 
+```objc
+@property (assign, readonly) int trackingFrameCount;
+```
+
 ## See Also
 
-- [var hasTrackingID: Bool](cifacefeature/hastrackingid-swift.property.md)
+### Tracking Distinct Faces in Video
+- [var hasTrackingID: Bool](./hastrackingid-swift.property.md)
   A Boolean value that indicates whether the face object has a tracking ID.
-- [var trackingID: Int32](cifacefeature/trackingid-swift.property.md)
+- [var trackingID: Int32](./trackingid-swift.property.md)
   The tracking identifier of the face object.
-- [var hasTrackingFrameCount: Bool](cifacefeature/hastrackingframecount-swift.property.md)
+- [var hasTrackingFrameCount: Bool](./hastrackingframecount-swift.property.md)
   A Boolean value that indicates the face object has a tracking frame count.
 
 

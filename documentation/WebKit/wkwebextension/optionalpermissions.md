@@ -1,7 +1,8 @@
 # optionalPermissions
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of permissions that the extension may need for optional functionality.
 
@@ -16,6 +17,10 @@ The set of permissions that the extension may need for optional functionality.
 
 ```swift
 var optionalPermissions: Set<WKWebExtension.Permission> { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSSet<NSString *> * optionalPermissions;
 ```
 
 #### Discussion

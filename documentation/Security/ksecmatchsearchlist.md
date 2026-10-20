@@ -1,7 +1,8 @@
 # kSecMatchSearchList
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates a list of items to search.
 
@@ -20,9 +21,13 @@ A key whose value indicates a list of items to search.
 let kSecMatchSearchList: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchSearchList;
+```
+
 #### Discussion
 
-The value is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray) of [`SecKeychain`](seckeychain.md) items. If provided, the search will be limited to the keychain items contained in this list.
+The value is a [`CFArray`](../CoreFoundation/cfarray.md) of [`SecKeychain`](./seckeychain.md) items. If provided, the search will be limited to the keychain items contained in this list.
 
 
 ---

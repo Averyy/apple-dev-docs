@@ -1,14 +1,15 @@
 # TELEMETRY_PMI_INSTRS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 TELEMETRY_PMI_INSTRS
 ```
 

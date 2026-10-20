@@ -1,7 +1,8 @@
 # description
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the version object.
 

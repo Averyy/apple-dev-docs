@@ -1,7 +1,8 @@
 # vDSP_zvdiv
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Complex vector_vector divide; single precision.
 
@@ -10,7 +11,7 @@ Complex vector_vector divide; single precision.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_zvdiv(const DSPSplitComplex *__B, vDSP_Stride __IB, const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 

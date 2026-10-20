@@ -1,7 +1,8 @@
 # desiredKeys
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fields to fetch for the requested records.
 
@@ -11,7 +12,7 @@ The fields to fetch for the requested records.
 - Mac Catalyst 13.1+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
 - Swift 4.2+
 
@@ -31,9 +32,10 @@ If you intend to specify the desired set of keys, set the value of this property
 
 ## See Also
 
-- [var previousServerChangeToken: CKServerChangeToken?](ckfetchrecordzonechangesoperation/zoneconfiguration/previousserverchangetoken.md)
+### Accessing a Zone Change Configuration
+- [var previousServerChangeToken: CKServerChangeToken?](./previousserverchangetoken.md)
   The token that identifies the starting point for retrieving changes.
-- [var resultsLimit: Int](ckfetchrecordzonechangesoperation/zoneconfiguration/resultslimit.md)
+- [var resultsLimit: Int](./resultslimit.md)
   The maximum number of records to fetch from the record zone.
 
 

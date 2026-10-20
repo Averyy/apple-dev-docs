@@ -1,7 +1,8 @@
 # iconImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image for display on the suggestion.
 
@@ -18,15 +19,20 @@ An image for display on the suggestion.
 optional var iconImage: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIImage * iconImage;
+```
+
 ## See Also
 
-- [var localizedSuggestion: String?](uisearchsuggestion/localizedsuggestion.md)
+### Describing a search suggestion
+- [var localizedSuggestion: String?](./localizedsuggestion.md)
   A label for the suggestion, usually the search term the suggestion represents.
-- [var localizedDescription: String?](uisearchsuggestion/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A description of the suggestion.
-- [var localizedAttributedSuggestion: NSAttributedString?](uisearchsuggestion/localizedattributedsuggestion.md)
+- [var localizedAttributedSuggestion: NSAttributedString?](./localizedattributedsuggestion.md)
   An attributed label for the suggestion, usually the search term the suggestion represents.
-- [var representedObject: Any?](uisearchsuggestion/representedobject.md)
+- [var representedObject: Any?](./representedobject.md)
   An object for tracking supplementary information about the search suggestion.
 
 

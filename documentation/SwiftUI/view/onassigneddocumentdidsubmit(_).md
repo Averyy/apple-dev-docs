@@ -1,7 +1,8 @@
 # onAssignedDocumentDidSubmit(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform after submitting an assigned document.
 
@@ -24,7 +25,7 @@ A view that executes the specified action after assigned document submission.
 
 #### Discussion
 
-This action runs only after successful submission, regardless of whether you provided an [`onAssignedDocumentWillSubmit(_:)`](view/onassigneddocumentwillsubmit(_:).md) action.
+This action runs only after successful submission, regardless of whether you provided an [`onAssignedDocumentWillSubmit(_:)`](./onassigneddocumentwillsubmit%28_%29.md) action.
 
 ```swift
 AssignedDocumentSubmissionButton(documentURL: documentURL)
@@ -40,17 +41,18 @@ AssignedDocumentSubmissionButton(documentURL: documentURL)
 
 ## See Also
 
-- [func onAssignedDocumentDidWithdraw((URL) -> Void) -> some View](view/onassigneddocumentdidwithdraw(_:).md)
+### Submission
+- [func onAssignedDocumentDidWithdraw((URL) -> Void) -> some View](./onassigneddocumentdidwithdraw%28_%29.md)
   Adds an action to perform after an assigned document submission has been withdrawn.
-- [func onAssignedDocumentWillSubmit((URL) async -> Bool) -> some View](view/onassigneddocumentwillsubmit(_:).md)
+- [func onAssignedDocumentWillSubmit((URL) async -> Bool) -> some View](./onassigneddocumentwillsubmit%28_%29.md)
   Adds an action to perform before submitting an assigned document.
-- [func onAssignedDocumentWillWithdraw((URL) async -> Bool) -> some View](view/onassigneddocumentwillwithdraw(_:).md)
+- [func onAssignedDocumentWillWithdraw((URL) async -> Bool) -> some View](./onassigneddocumentwillwithdraw%28_%29.md)
   Adds an action to perform before withdrawing an assigned document submission.
-- [func onSubmit(of: SubmitTriggers, () -> Void) -> some View](view/onsubmit(of:_:).md)
+- [func onSubmit(of: SubmitTriggers, () -> Void) -> some View](./onsubmit%28of,_%29.md)
   Adds an action to perform when the user submits a value to this view.
-- [func submitScope(Bool) -> some View](view/submitscope(_:).md)
+- [func submitScope(Bool) -> some View](./submitscope%28_%29.md)
   Prevents submission triggers originating from this view to invoke a submission action configured by a submission modifier higher up in the view hierarchy.
-- [func submitLabel(SubmitLabel) -> some View](view/submitlabel(_:).md)
+- [func submitLabel(SubmitLabel) -> some View](./submitlabel%28_%29.md)
   Sets the submit label for this view.
 
 

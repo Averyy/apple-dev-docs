@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Observation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+

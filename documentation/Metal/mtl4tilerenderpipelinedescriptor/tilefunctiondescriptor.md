@@ -1,7 +1,8 @@
 # tileFunctionDescriptor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the tile function that the render pipeline executes for each tile in the tile shader stage.
 
@@ -18,6 +19,10 @@ Configures the tile function that the render pipeline executes for each tile in 
 ```swift
 @NSCopying
 var tileFunctionDescriptor: MTL4FunctionDescriptor? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) MTL4FunctionDescriptor * tileFunctionDescriptor;
 ```
 
 

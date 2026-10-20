@@ -1,7 +1,8 @@
 # MTLMutability.default
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default behavior, based on the buffer’s type.
 
@@ -19,11 +20,16 @@ The default behavior, based on the buffer’s type.
 case `default`
 ```
 
+```c
+MTLMutabilityDefault
+```
+
 ## See Also
 
-- [MTLMutability.mutable](mtlmutability/mutable.md)
+### Enumeration cases
+- [MTLMutability.mutable](./mutable.md)
   An option that states that you can modify the buffer’s contents.
-- [MTLMutability.immutable](mtlmutability/immutable.md)
+- [MTLMutability.immutable](./immutable.md)
   An option that states that you can’t modify the buffer’s contents.
 
 

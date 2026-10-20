@@ -1,7 +1,8 @@
 # hv_vcpu_set_trap_debug_reg_accesses(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets whether debug-register accesses exit the guest.
 
@@ -14,9 +15,13 @@ Sets whether debug-register accesses exit the guest.
 func hv_vcpu_set_trap_debug_reg_accesses(_ vcpu: hv_vcpu_t, _ value: Bool) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_vcpu_set_trap_debug_reg_accesses(hv_vcpu_t vcpu, bool value);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](hv_return_t.md).
+[`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
 #### Discussion
 
@@ -33,11 +38,12 @@ The equivalent system register is `MDCR_EL2.TDA`.
 
 ## See Also
 
-- [func hv_vcpu_get_trap_debug_exceptions(hv_vcpu_t, UnsafeMutablePointer<Bool>) -> hv_return_t](hv_vcpu_get_trap_debug_exceptions(_:_:).md)
+### Trap configuration
+- [func hv_vcpu_get_trap_debug_exceptions(hv_vcpu_t, UnsafeMutablePointer<Bool>) -> hv_return_t](./hv_vcpu_get_trap_debug_exceptions%28_,_%29.md)
   Gets whether debug exceptions exit the guest.
-- [func hv_vcpu_set_trap_debug_exceptions(hv_vcpu_t, Bool) -> hv_return_t](hv_vcpu_set_trap_debug_exceptions(_:_:).md)
+- [func hv_vcpu_set_trap_debug_exceptions(hv_vcpu_t, Bool) -> hv_return_t](./hv_vcpu_set_trap_debug_exceptions%28_,_%29.md)
   Sets whether debug exceptions exit the guest.
-- [func hv_vcpu_get_trap_debug_reg_accesses(hv_vcpu_t, UnsafeMutablePointer<Bool>) -> hv_return_t](hv_vcpu_get_trap_debug_reg_accesses(_:_:).md)
+- [func hv_vcpu_get_trap_debug_reg_accesses(hv_vcpu_t, UnsafeMutablePointer<Bool>) -> hv_return_t](./hv_vcpu_get_trap_debug_reg_accesses%28_,_%29.md)
   Gets whether debug-register accesses exit the guest.
 
 

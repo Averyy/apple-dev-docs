@@ -1,7 +1,8 @@
 # didTransition(to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the cell that it transitioned to a new cell state.
 
@@ -9,7 +10,7 @@ Notifies the cell that it transitioned to a new cell state.
 - iOS 3.0+
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,15 @@ Notifies the cell that it transitioned to a new cell state.
 func didTransition(to state: UITableViewCell.StateMask)
 ```
 
+```objc
+- (void) didTransitionToState:(UITableViewCellStateMask) state;
+```
+
 #### Discussion
 
 Subclasses of `UITableViewCell` can implement this method to animate additional changes to a cell when it is changing state. `UITableViewCell` calls this method whenever a cell transitions between states, such as from a normal state (the default) to editing mode. This method is called at the end of the animation block, which gives the custom cell a chance to clean up after the state change—for example, removing the edit and reorder controls after transitioning out of editing.  Subclasses must always call `super` when overriding this method.
 
-Note that when the user swipes a cell to delete it, the cell transitions to the state identified by the [`showingDeleteConfirmation`](uitableviewcell/statemask/showingdeleteconfirmation.md) constant but the [`showingEditControl`](uitableviewcell/statemask/showingeditcontrol.md) is not set.
+Note that when the user swipes a cell to delete it, the cell transitions to the state identified by the [`showingDeleteConfirmation`](./statemask/showingdeleteconfirmation.md) constant but the [`showingEditControl`](./statemask/showingeditcontrol.md) is not set.
 
 ## Parameters
 
@@ -30,17 +35,19 @@ Note that when the user swipes a cell to delete it, the cell transitions to the 
 
 ## See Also
 
-- [var editingAccessoryType: UITableViewCell.AccessoryType](uitableviewcell/editingaccessorytype.md)
+### Related Documentation
+- [var editingAccessoryType: UITableViewCell.AccessoryType](./editingaccessorytype.md)
   The type of standard accessory view for the cell to use in the table view’s editing state.
-- [var editingAccessoryView: UIView?](uitableviewcell/editingaccessoryview.md)
+- [var editingAccessoryView: UIView?](./editingaccessoryview.md)
   The view to use on the right side of the cell, typically as a control, in the table view’s editing state.
-- [var accessoryView: UIView?](uitableviewcell/accessoryview.md)
+- [var accessoryView: UIView?](./accessoryview.md)
   The view to use on the right side of the cell, typically as a control, in the table view’s normal state.
-- [var accessoryType: UITableViewCell.AccessoryType](uitableviewcell/accessorytype-swift.property.md)
+- [var accessoryType: UITableViewCell.AccessoryType](./accessorytype-swift.property.md)
   The type of standard accessory view for the cell to use in the table view’s normal state.
-- [func willTransition(to: UITableViewCell.StateMask)](uitableviewcell/willtransition(to:).md)
+### Adjusting to state transitions
+- [func willTransition(to: UITableViewCell.StateMask)](./willtransition%28to%29.md)
   Notifies the cell that it’s about to transition to a new cell state.
-- [UITableViewCell.StateMask](uitableviewcell/statemask.md)
+- [UITableViewCell.StateMask](./statemask.md)
   Constants used to determine the new state of a cell as it transitions between states.
 
 

@@ -1,7 +1,8 @@
 # kSecIssuerItemAttr
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 DER-encoded issuer distinguished name.
 
@@ -12,6 +13,10 @@ DER-encoded issuer distinguished name.
 
 ```swift
 var kSecIssuerItemAttr: Int { get }
+```
+
+```c
+kSecIssuerItemAttr
 ```
 
 

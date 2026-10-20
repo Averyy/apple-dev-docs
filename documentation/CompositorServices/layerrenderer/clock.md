@@ -1,7 +1,8 @@
 # LayerRenderer.Clock
 
 **Framework**: Compositor Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that supports operations that require a precise time measurement.
 
@@ -17,33 +18,34 @@ struct Clock
 
 #### Overview
 
-Use this type to perform time-related operations during the rendering of a frame. For example, call [`wait(until:tolerance:)`](layerrenderer/clock/wait(until:tolerance:).md) to pause your render loop until the optimal rendering time arrives.
+Use this type to perform time-related operations during the rendering of a frame. For example, call [`wait(until:tolerance:)`](./clock/wait%28until,tolerance%29.md) to pause your render loop until the optimal rendering time arrives.
 
 ## Topics
 
 ### Putting the current thread to sleep
-- [func wait(until: LayerRenderer.Clock.Instant, tolerance: Duration?)](layerrenderer/clock/wait(until:tolerance:).md)
+- [func wait(until: LayerRenderer.Clock.Instant, tolerance: Duration?)](./clock/wait%28until,tolerance%29.md)
   Blocks the current thread until the specified time.
 ### Creating a clock
-- [init()](layerrenderer/clock/init.md)
+- [init()](./clock/init%28%29.md)
   Creates a new clock type.
 
 ## Relationships
 
 ### Conforms To
-- [Clock](../swift/clock.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Clock](../../Swift/clock.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var state: LayerRenderer.State](layerrenderer/state-swift.property.md)
+### Managing the rendering loop
+- [var state: LayerRenderer.State](./state-swift.property.md)
   A value that indicates whether the layer renderer is currently visible and ready for you to draw content.
-- [func waitUntilRunning()](layerrenderer/waituntilrunning.md)
+- [func waitUntilRunning()](./waituntilrunning%28%29.md)
   Stops further execution of your code until the layer renderer leaves the paused state.
-- [LayerRenderer.State](layerrenderer/state-swift.enum.md)
+- [LayerRenderer.State](./state-swift.enum.md)
   The states of the layer renderer, which tell you how to proceed with drawing operations.
 
 

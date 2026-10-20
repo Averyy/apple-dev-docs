@@ -1,7 +1,8 @@
 # allowsDragging
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value indicating whether users can drag thumbnails (that is, re-order pages in the document) within the thumbnail view.
 
@@ -14,15 +15,20 @@ Returns a Boolean value indicating whether users can drag thumbnails (that is, r
 var allowsDragging: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsDragging;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if users can re-order pages by dragging thumbnails, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if users can re-order pages by dragging thumbnails, [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [var allowsMultipleSelection: Bool](pdfthumbnailview/allowsmultipleselection.md)
+### Managing the Behavior of a Thumbnail View
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   Returns a Boolean value indicating whether users can select multiple thumbnails in the thumbnail view at one time.
-- [var selectedPages: [PDFPage]?](pdfthumbnailview/selectedpages.md)
+- [var selectedPages: [PDFPage]?](./selectedpages.md)
   Returns an array of PDF pages that correspond to the selected thumbnails in the thumbnail view.
 
 

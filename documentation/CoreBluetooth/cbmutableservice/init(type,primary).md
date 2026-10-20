@@ -1,7 +1,8 @@
 # init(type:primary:)
 
 **Framework**: Core Bluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a newly initialized mutable service specified by UUID and service type.
 
@@ -17,18 +18,22 @@ Creates a newly initialized mutable service specified by UUID and service type.
 init(type UUID: CBUUID, primary isPrimary: Bool)
 ```
 
+```objc
+- (instancetype) initWithType:(CBUUID *) UUID primary:(BOOL) isPrimary;
+```
+
 #### Return Value
 
 A newly initialized mutable service.
 
 #### Discussion
 
-For more information, see [`Core Bluetooth Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
+For more information, see [Core Bluetooth Programming Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/CoreBluetooth_concepts/AboutCoreBluetooth/Introduction.html#//apple_ref/doc/uid/TP40013257).
 
 ## Parameters
 
 - `UUID`: A 128-bit UUID that identifies the service.
-- `isPrimary`: A Boolean value that indicates whether the type of service is primary or secondary. If the value is [`true`](https://developer.apple.com/documentation/swift/true), the type of service is primary. If the value is [`false`](https://developer.apple.com/documentation/swift/false), the type of service is secondary.
+- `isPrimary`: A Boolean value that indicates whether the type of service is primary or secondary. If the value is [`true`](../../Swift/true.md), the type of service is primary. If the value is [`false`](../../Swift/false.md), the type of service is secondary.
 
 
 ---

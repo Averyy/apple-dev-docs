@@ -1,7 +1,8 @@
 # HKHeartbeatSeriesQueryDescriptor.Results
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that emits data about individual heartbeats from a heartbeat series sample.
 
@@ -10,7 +11,7 @@ An asynchronous sequence that emits data about individual heartbeats from a hear
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -22,19 +23,20 @@ struct Results
 ## Topics
 
 ### Creating an Iterator
-- [HKHeartbeatSeriesQueryDescriptor.Results.Iterator](hkheartbeatseriesquerydescriptor/results/iterator.md)
+- [HKHeartbeatSeriesQueryDescriptor.Results.Iterator](./results/iterator.md)
   An iterator for accessing individual data entries from the series.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [func results(for: HKHealthStore) -> HKHeartbeatSeriesQueryDescriptor.Results](hkheartbeatseriesquerydescriptor/results(for:).md)
+### Running Queries
+- [func results(for: HKHealthStore) -> HKHeartbeatSeriesQueryDescriptor.Results](./results%28for%29.md)
   Runs a one-shot query that returns an asynchronous sequence of data representing individual heartbeats.
-- [HKHeartbeatSeriesQueryDescriptor.Heartbeat](hkheartbeatseriesquerydescriptor/heartbeat.md)
+- [HKHeartbeatSeriesQueryDescriptor.Heartbeat](./heartbeat.md)
   Data about an individual heartbeat.
 
 

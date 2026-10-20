@@ -1,7 +1,8 @@
 # export(partIDs:)
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Given a set of part identifiers, return a dictionary of part ID to data objects for the requested layers.
 
@@ -9,7 +10,9 @@ Given a set of part identifiers, return a dictionary of part ID to data objects 
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
+
+> **Deprecated**: Use exportParts(identifiedBy:)
 
 ## Declaration
 
@@ -27,9 +30,10 @@ A dictionary of part ID to URLs of the data stored on disk for the requested par
 
 ## See Also
 
-- [func exportBaseAsPDF() async -> PDFDocument](assignabledocument/exportbaseaspdf.md)
+### Exporting the parts
+- [func exportBaseAsPDF() async -> PDFDocument](./exportbaseaspdf%28%29.md)
   Exports the base part of this document to a `PDFDocument`.
-- [func exportParts(identifiedBy: [AssignableDocument.PartID]) async throws -> [AssignableDocument.PartID : MergeablePartData]](assignabledocument/exportparts(identifiedby:).md)
+- [func exportParts(identifiedBy: [AssignableDocument.PartID]) async throws -> [AssignableDocument.PartID : MergeablePartData]](./exportparts%28identifiedby%29.md)
   Given a set of part identifiers, return a dictionary of part ID to part data.
 
 

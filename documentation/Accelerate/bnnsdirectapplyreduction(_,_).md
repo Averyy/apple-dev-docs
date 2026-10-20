@@ -1,7 +1,8 @@
 # BNNSDirectApplyReduction(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a reduction operation directly to an input tensor.
 
@@ -20,6 +21,10 @@ Applies a reduction operation directly to an input tensor.
 func BNNSDirectApplyReduction(_ layer_params: UnsafePointer<BNNSLayerParametersReduction>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> Int32
 ```
 
+```c
+int BNNSDirectApplyReduction(const BNNSLayerParametersReduction *layer_params, const BNNSFilterParameters *filter_params);
+```
+
 ## Parameters
 
 - `layer_params`: Layer parameters.
@@ -27,15 +32,16 @@ func BNNSDirectApplyReduction(_ layer_params: UnsafePointer<BNNSLayerParametersR
 
 ## See Also
 
-- [class ReductionLayer](bnns/reductionlayer.md)
+### Reduction layers
+- [class ReductionLayer](./bnns/reductionlayer.md)
   A layer object that wraps a reduction filter and manages its deinitialization.
-- [static func applyReduction(BNNS.ReductionFunction, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, weights: BNNSNDArrayDescriptor?, filterParameters: BNNSFilterParameters?) throws](bnns/applyreduction(_:input:output:weights:filterparameters:).md)
+- [static func applyReduction(BNNS.ReductionFunction, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, weights: BNNSNDArrayDescriptor?, filterParameters: BNNSFilterParameters?) throws](./bnns/applyreduction%28_,input,output,weights,filterparameters%29.md)
   Applies the specified reduction function.
-- [struct BNNSReduceFunction](bnnsreducefunction.md)
+- [struct BNNSReduceFunction](./bnnsreducefunction.md)
   Constants that describe reduction functions.
-- [struct BNNSLayerParametersReduction](bnnslayerparametersreduction.md)
+- [struct BNNSLayerParametersReduction](./bnnslayerparametersreduction.md)
   A set of parameters that define a reduction layer.
-- [func BNNSFilterCreateLayerReduction(UnsafePointer<BNNSLayerParametersReduction>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerreduction(_:_:).md)
+- [func BNNSFilterCreateLayerReduction(UnsafePointer<BNNSLayerParametersReduction>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](./bnnsfiltercreatelayerreduction%28_,_%29.md)
   Returns a new reduction layer.
 
 

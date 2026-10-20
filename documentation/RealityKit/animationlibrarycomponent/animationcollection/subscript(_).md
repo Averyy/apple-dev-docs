@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses animations in the collection within an index range.
 
@@ -17,6 +18,16 @@ Accesses animations in the collection within an index range.
 
 ```swift
 subscript(bounds: Range<AnimationLibraryComponent.AnimationCollection.Index>) -> AnimationLibraryComponent.AnimationCollection.SubSequence { get }
+```
+
+**Other overloads**:
+
+```swift
+subscript(key: String) -> AnimationResource? { get set }
+```
+
+```swift
+subscript(position: AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Element { get }
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # init(_:_:_:_:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a matrix from individual element values in row-major order.
 

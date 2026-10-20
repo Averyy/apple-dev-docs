@@ -1,12 +1,13 @@
 # pageUpAndModifySelection(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the visible content region up by a page, and extends the current selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,27 +15,32 @@ Moves the visible content region up by a page, and extends the current selection
 optional func pageUpAndModifySelection(_ sender: Any?)
 ```
 
+```objc
+- (void) pageUpAndModifySelection:(id) sender;
+```
+
 ## See Also
 
-- [func scrollPageDown(Any?)](nsstandardkeybindingresponding/scrollpagedown(_:).md)
+### Scrolling Content
+- [func scrollPageDown(Any?)](./scrollpagedown%28_%29.md)
   Scrolls the content down by a page.
-- [func scrollPageUp(Any?)](nsstandardkeybindingresponding/scrollpageup(_:).md)
+- [func scrollPageUp(Any?)](./scrollpageup%28_%29.md)
   Scrolls the content up by a page.
-- [func scrollLineDown(Any?)](nsstandardkeybindingresponding/scrolllinedown(_:).md)
+- [func scrollLineDown(Any?)](./scrolllinedown%28_%29.md)
   Scrolls the content down by a line.
-- [func scrollLineUp(Any?)](nsstandardkeybindingresponding/scrolllineup(_:).md)
+- [func scrollLineUp(Any?)](./scrolllineup%28_%29.md)
   Scrolls the content up by a line.
-- [func scrollToBeginningOfDocument(Any?)](nsstandardkeybindingresponding/scrolltobeginningofdocument(_:).md)
+- [func scrollToBeginningOfDocument(Any?)](./scrolltobeginningofdocument%28_%29.md)
   Scrolls the content to the beginning of the document.
-- [func scrollToEndOfDocument(Any?)](nsstandardkeybindingresponding/scrolltoendofdocument(_:).md)
+- [func scrollToEndOfDocument(Any?)](./scrolltoendofdocument%28_%29.md)
   Scrolls the content to the end of the document.
-- [func pageDown(Any?)](nsstandardkeybindingresponding/pagedown(_:).md)
+- [func pageDown(Any?)](./pagedown%28_%29.md)
   Moves the visible content region down by a page.
-- [func pageUp(Any?)](nsstandardkeybindingresponding/pageup(_:).md)
+- [func pageUp(Any?)](./pageup%28_%29.md)
   Moves the visible content region up by a page.
-- [func pageDownAndModifySelection(Any?)](nsstandardkeybindingresponding/pagedownandmodifyselection(_:).md)
+- [func pageDownAndModifySelection(Any?)](./pagedownandmodifyselection%28_%29.md)
   Moves the visible content region down by a page, and extends the current selection.
-- [func centerSelectionInVisibleArea(Any?)](nsstandardkeybindingresponding/centerselectioninvisiblearea(_:).md)
+- [func centerSelectionInVisibleArea(Any?)](./centerselectioninvisiblearea%28_%29.md)
   Moves the visible content region so the current selection is visually centered.
 
 

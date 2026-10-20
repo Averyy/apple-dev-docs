@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_EncoderID
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies a particular video encoder by its ID string.
 
@@ -19,17 +20,22 @@ Specifies a particular video encoder by its ID string.
 let kVTCompressionPropertyKey_EncoderID: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_EncoderID;
+```
+
 ## See Also
 
-- [let kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder: CFString](kvtvideoencoderspecification_enablehardwareacceleratedvideoencoder.md)
+### Encoder Selection
+- [let kVTVideoEncoderSpecification_EnableHardwareAcceleratedVideoEncoder: CFString](./kvtvideoencoderspecification_enablehardwareacceleratedvideoencoder.md)
   A Boolean value indicating whether hardware-accelerated video encoding is allowed, if available.
-- [let kVTVideoEncoderSpecification_EnableLowLatencyRateControl: CFString](kvtvideoencoderspecification_enablelowlatencyratecontrol.md)
+- [let kVTVideoEncoderSpecification_EnableLowLatencyRateControl: CFString](./kvtvideoencoderspecification_enablelowlatencyratecontrol.md)
   Specifies to select an encoder that supports low-latency operation and enables low-latency mode.
-- [let kVTVideoEncoderSpecification_EncoderID: CFString](kvtvideoencoderspecification_encoderid.md)
+- [let kVTVideoEncoderSpecification_EncoderID: CFString](./kvtvideoencoderspecification_encoderid.md)
   A key that indicates a particular video encoder to use.
-- [let kVTVideoEncoderSpecification_PreferredEncoderGPURegistryID: CFString](kvtvideoencoderspecification_preferredencodergpuregistryid.md)
-- [let kVTVideoEncoderSpecification_RequiredEncoderGPURegistryID: CFString](kvtvideoencoderspecification_requiredencodergpuregistryid.md)
-- [let kVTVideoEncoderSpecification_RequireHardwareAcceleratedVideoEncoder: CFString](kvtvideoencoderspecification_requirehardwareacceleratedvideoencoder.md)
+- [let kVTVideoEncoderSpecification_PreferredEncoderGPURegistryID: CFString](./kvtvideoencoderspecification_preferredencodergpuregistryid.md)
+- [let kVTVideoEncoderSpecification_RequiredEncoderGPURegistryID: CFString](./kvtvideoencoderspecification_requiredencodergpuregistryid.md)
+- [let kVTVideoEncoderSpecification_RequireHardwareAcceleratedVideoEncoder: CFString](./kvtvideoencoderspecification_requirehardwareacceleratedvideoencoder.md)
   A Boolean value indicating whether hardware-accelerated encoding is required.
 
 

@@ -1,12 +1,15 @@
 # Manage Licenses
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Associate and disassociate licenses with users and devices.
 
 **Availability**:
 - VPP License Management 1.0+
+
+> **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
 
 #### Discussion
 
@@ -22,7 +25,7 @@ At most, one `associate*` and one `disassociate*` array is allowed per request. 
 
 **Request**:
 
-```None
+```
 {
   "disassociateClientUserIdStrs": null,
   "disassociateSerialNumbers": null,
@@ -69,11 +72,11 @@ At most, one `associate*` and one `disassociate*` array is allowed per request. 
 }
 ```
 
-##### Example Request and Response with a Client User Id String
+##### Example Request and Response with a Client User ID String
 
 **Request**:
 
-```None
+```
 {
   "disassociateClientUserIdStrs": null,
   "disassociateSerialNumbers": null,
@@ -118,9 +121,9 @@ At most, one `associate*` and one `disassociate*` array is allowed per request. 
 ## Topics
 
 ### Request and Response
-- [object ManageVppLicensesByAdamIdRequest](managevpplicensesbyadamidrequest.md)
+- [object ManageVppLicensesByAdamIdRequest](./managevpplicensesbyadamidrequest.md)
   The request to manage licenses.
-- [object ManageVppLicensesByAdamIdResponse](managevpplicensesbyadamidresponse.md)
+- [object ManageVppLicensesByAdamIdResponse](./managevpplicensesbyadamidresponse.md)
   The response from managing licenses.
 
 ## Endpoint
@@ -129,15 +132,23 @@ At most, one `associate*` and one `disassociate*` array is allowed per request. 
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `ManageVppLicensesByAdamIdRequest`
+
 missing
+
+## Responses
+
+- `200` OK (`ManageVppLicensesByAdamIdResponse`, `application/json`)
 
 ## See Also
 
-- [Get Assets](get-assets-44p83.md)
+### Asset and license management
+- [Get Assets](./get-assets-44p83.md)
   Get the set of assets managed by your organization.
-- [Get Assignments](get-assignments-158kc.md)
+- [Get Assignments](./get-assignments-158kc.md)
   Get a list of assignments currently assigned to a user or device.
-- [Get Licenses](get-licenses.md)
+- [Get Licenses](./get-licenses.md)
   Get the set of licenses managed by your organization.
 
 

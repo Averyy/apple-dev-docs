@@ -1,7 +1,8 @@
 # LayerRenderer.State.running
 
 **Framework**: Compositor Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the layer is visible and ready for you to draw your content.
 
@@ -15,9 +16,13 @@ A state that indicates the layer is visible and ready for you to draw your conte
 case running
 ```
 
+```c
+cp_layer_renderer_state_running
+```
+
 ## Mentions
 
-- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+- [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
 #### Discussion
 
@@ -25,9 +30,10 @@ When the layer enters this state, start your rendering loop and begin drawing fr
 
 ## See Also
 
-- [LayerRenderer.State.paused](layerrenderer/state-swift.enum/paused.md)
+### Getting the states
+- [LayerRenderer.State.paused](./paused.md)
   A state that indicates the layer is paused and not currently drawing.
-- [LayerRenderer.State.invalidated](layerrenderer/state-swift.enum/invalidated.md)
+- [LayerRenderer.State.invalidated](./invalidated.md)
   A state that indicates the layer no longer supports drawing operations.
 
 

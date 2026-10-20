@@ -1,32 +1,34 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [withArray](osarray/witharray.md)
+### Creating an Array
+- [withArray](./witharray.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [withCapacity](osarray/withcapacity.md)
+- [withCapacity](./withcapacity.md)
   Allocates an OSArray object with preallocated capacity.
-- [withObjects](osarray/withobjects.md)
+- [withObjects](./withobjects.md)
   Allocates an OSArray object with given members and preallocated capacity.
-- [OSArrayCreate](osarraycreate.md)
-- [merge](osarray/merge.md)
+- [OSArrayCreate](../osarraycreate.md)
+- [merge](./merge.md)
   Appends all members of an array to this array.
-- [flushCollection](osarray/flushcollection.md)
+- [flushCollection](./flushcollection.md)
   Removes and drops references to all members of array.
 
 

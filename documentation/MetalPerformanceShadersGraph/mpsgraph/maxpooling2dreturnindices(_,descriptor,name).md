@@ -1,7 +1,8 @@
 # maxPooling2DReturnIndices(_:descriptor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a 2D max-pooling operation and returns the result tensor and the corresponding indices tensor.
 
@@ -17,6 +18,10 @@ Creates a 2D max-pooling operation and returns the result tensor and the corresp
 
 ```swift
 func maxPooling2DReturnIndices(_ source: MPSGraphTensor, descriptor: MPSGraphPooling2DOpDescriptor, name: String?) -> [MPSGraphTensor]
+```
+
+```objc
+- (NSArray<MPSGraphTensor *> *) maxPooling2DReturnIndicesWithSourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphPooling2DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
 #### Return Value

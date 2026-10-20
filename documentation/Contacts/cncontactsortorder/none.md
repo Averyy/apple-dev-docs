@@ -1,7 +1,8 @@
 # CNContactSortOrder.none
 
 **Framework**: Contacts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No sorting order.
 
@@ -19,13 +20,18 @@ No sorting order.
 case none
 ```
 
+```c
+CNContactSortOrderNone
+```
+
 ## See Also
 
-- [CNContactSortOrder.userDefault](cncontactsortorder/userdefault.md)
+### Sort Orders
+- [CNContactSortOrder.userDefault](./userdefault.md)
   The user’s default sorting order.
-- [CNContactSortOrder.givenName](cncontactsortorder/givenname.md)
+- [CNContactSortOrder.givenName](./givenname.md)
   Sorting contacts by given name.
-- [CNContactSortOrder.familyName](cncontactsortorder/familyname.md)
+- [CNContactSortOrder.familyName](./familyname.md)
   Sorting contacts by family name.
 
 

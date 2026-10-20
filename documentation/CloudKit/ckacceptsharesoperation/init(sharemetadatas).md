@@ -1,7 +1,8 @@
 # init(shareMetadatas:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation for accepting the specified shares.
 
@@ -20,17 +21,22 @@ Creates an operation for accepting the specified shares.
 convenience init(shareMetadatas: [CKShare.Metadata])
 ```
 
+```objc
+- (instancetype) initWithShareMetadatas:(NSArray<CKShareMetadata *> *) shareMetadatas;
+```
+
 #### Discussion
 
-After initializing the operation, assign a handler to the [`acceptSharesCompletionBlock`](ckacceptsharesoperation/acceptsharescompletionblock.md) property to process the results.
+After initializing the operation, assign a handler to the [`acceptSharesCompletionBlock`](./acceptsharescompletionblock.md) property to process the results.
 
 ## Parameters
 
-- `shareMetadatas`: The share metadatas to accept. If you specify `nil`, you must assign a value to the [`shareMetadatas`](ckacceptsharesoperation/sharemetadatas.md) property before you execute the operation.
+- `shareMetadatas`: The share metadatas to accept. If you specify `nil`, you must assign a value to the [`shareMetadatas`](./sharemetadatas.md) property before you execute the operation.
 
 ## See Also
 
-- [init()](ckacceptsharesoperation/init.md)
+### Creating a Share Accept Operation
+- [init()](./init%28%29.md)
   Creates an operation for accepting shares.
 
 

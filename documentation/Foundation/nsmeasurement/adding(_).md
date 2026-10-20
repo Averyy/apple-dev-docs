@@ -1,7 +1,8 @@
 # adding(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new measurement by adding the receiver to the specified measurement.
 
@@ -20,15 +21,19 @@ Returns a new measurement by adding the receiver to the specified measurement.
 func adding(_ measurement: Measurement<Unit>) -> Measurement<Unit>
 ```
 
+```objc
+- (NSMeasurement<NSUnit *> *) measurementByAddingMeasurement:(NSMeasurement<NSUnit *> *) measurement;
+```
+
 #### Return Value
 
 A new measurement with a value equal to the receiver’s value plus the value of the specified measurement converted into the unit of the receiver.
 
 #### Discussion
 
-This method raises an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) if the receiver cannot be converted to unit.
+This method raises an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md) if the receiver cannot be converted to unit.
 
-You can use the [`canBeConverted(to:)`](nsmeasurement/canbeconverted(to:).md) method, passing the unit of the specified measurement, to determine whether a measurement can be converted to a particular unit before calling this method.
+You can use the [`canBeConverted(to:)`](./canbeconverted%28to%29.md) method, passing the unit of the specified measurement, to determine whether a measurement can be converted to a particular unit before calling this method.
 
 ## Parameters
 
@@ -36,7 +41,8 @@ You can use the [`canBeConverted(to:)`](nsmeasurement/canbeconverted(to:).md) me
 
 ## See Also
 
-- [func subtracting(Measurement<Unit>) -> Measurement<Unit>](nsmeasurement/subtracting(_:).md)
+### Operating on Measurements
+- [func subtracting(Measurement<Unit>) -> Measurement<Unit>](./subtracting%28_%29.md)
   Returns a new measurement by subtracting the specified measurement from the receiver.
 
 

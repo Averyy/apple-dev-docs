@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic compression behavior.
 
@@ -26,9 +27,10 @@ On iOS, this behavior prefers the tab bar.
 
 ## See Also
 
-- [static let prefersTabBar: ToolbarVerticalCompressionBehavior](toolbarverticalcompressionbehavior/preferstabbar.md)
+### Getting compression behavior options
+- [static let prefersTabBar: ToolbarVerticalCompressionBehavior](./preferstabbar.md)
   A compression behavior that prefers keeping the tab bar visible.
-- [static let prefersToolbarItems: ToolbarVerticalCompressionBehavior](toolbarverticalcompressionbehavior/preferstoolbaritems.md)
+- [static let prefersToolbarItems: ToolbarVerticalCompressionBehavior](./preferstoolbaritems.md)
   A compression behavior that prefers keeping toolbar items visible.
 
 

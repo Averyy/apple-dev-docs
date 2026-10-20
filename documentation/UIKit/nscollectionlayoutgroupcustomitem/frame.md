@@ -1,7 +1,8 @@
 # frame
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame of the custom item.
 
@@ -16,6 +17,10 @@ The frame of the custom item.
 
 ```swift
 var frame: CGRect { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGRect frame;
 ```
 
 

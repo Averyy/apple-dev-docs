@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: TabularData  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses an element at an index.
 
@@ -26,11 +27,12 @@ subscript(position: Int) -> DiscontiguousColumnSlice<WrappedElement>.Element { g
 
 ## See Also
 
-- [subscript(Range<Int>) -> DiscontiguousColumnSlice<WrappedElement>](discontiguouscolumnslice/subscript(_:)-8rd2f.md)
+### Accessing Elements
+- [subscript(Range<Int>) -> DiscontiguousColumnSlice<WrappedElement>](./subscript%28_%29-8rd2f.md)
   Accesses a contiguous range of elements.
-- [subscript<R>(R) -> DiscontiguousColumnSlice<WrappedElement>](discontiguouscolumnslice/subscript(_:)-4k2lh.md)
+- [subscript<R>(R) -> DiscontiguousColumnSlice<WrappedElement>](./subscript%28_%29-4k2lh.md)
   Accesses a contiguous range of elements with a range expression.
-- [subscript(UnboundedRange) -> DiscontiguousColumnSlice<WrappedElement>](discontiguouscolumnslice/subscript(_:)-5xvit.md)
+- [subscript(UnboundedRange) -> DiscontiguousColumnSlice<WrappedElement>](./subscript%28_%29-5xvit.md)
   Accesses a contiguous range of elements with an unbounded range.
 
 

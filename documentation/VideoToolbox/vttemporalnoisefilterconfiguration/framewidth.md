@@ -1,7 +1,8 @@
 # frameWidth
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Width of source frame in pixels.
 
@@ -17,16 +18,21 @@ Width of source frame in pixels.
 var frameWidth: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger frameWidth;
+```
+
 ## See Also
 
-- [var frameHeight: Int](vttemporalnoisefilterconfiguration/frameheight.md)
+### Inspecting the configuration
+- [var frameHeight: Int](./frameheight.md)
   Height of source frame in pixels.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vttemporalnoisefilterconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
-- [var destinationPixelBufferAttributes: [String : any Sendable]](vttemporalnoisefilterconfiguration/destinationpixelbufferattributes.md)
+- [var destinationPixelBufferAttributes: [String : any Sendable]](./destinationpixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
-- [var supportedPixelFormats: [OSType]](vttemporalnoisefilterconfiguration/supportedpixelformats.md)
-- [class var supportedSourcePixelFormats: [OSType]](vttemporalnoisefilterconfiguration/supportedsourcepixelformats-4ipcg.md)
+- [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
+- [class var supportedSourcePixelFormats: [OSType]](./supportedsourcepixelformats-4ipcg.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # webpageUrl
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fallback URL that you can redirect users to if the operation fails.
 
@@ -10,7 +11,7 @@ The fallback URL that you can redirect users to if the operation fails.
 
 ## Declaration
 
-```swift
+```
 attribute string? webpageUrl;
 ```
 

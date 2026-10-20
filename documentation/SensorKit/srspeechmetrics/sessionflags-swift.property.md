@@ -1,7 +1,8 @@
 # sessionFlags
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Details about the audio processing.
 
@@ -16,15 +17,20 @@ Details about the audio processing.
 var sessionFlags: SRSpeechMetrics.SessionFlags { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) SRSpeechMetricsSessionFlags sessionFlags;
+```
+
 ## See Also
 
-- [var sessionIdentifier: String](srspeechmetrics/sessionidentifier.md)
+### Getting session information
+- [var sessionIdentifier: String](./sessionidentifier.md)
   An identifier for the audio session.
-- [SRSpeechMetrics.SessionFlags](srspeechmetrics/sessionflags-swift.struct.md)
+- [SRSpeechMetrics.SessionFlags](./sessionflags-swift.struct.md)
   Possible details about processing an audio stream.
-- [var timeSinceAudioStart: TimeInterval](srspeechmetrics/timesinceaudiostart.md)
+- [var timeSinceAudioStart: TimeInterval](./timesinceaudiostart.md)
   The number of seconds since the start of the audio stream.
-- [var timestamp: Date](srspeechmetrics/timestamp.md)
+- [var timestamp: Date](./timestamp.md)
   The date and time when the speech occurs.
 
 

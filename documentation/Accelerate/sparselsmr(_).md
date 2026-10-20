@@ -1,7 +1,8 @@
 # SparseLSMR(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a least squares minimum residual method with specified options.
 
@@ -20,9 +21,13 @@ Returns a least squares minimum residual method with specified options.
 func SparseLSMR(_ options: SparseLSMROptions) -> SparseIterativeMethod
 ```
 
+```c
+static SparseIterativeMethod SparseLSMR(SparseLSMROptions options);
+```
+
 #### Return Value
 
-A [`SparseIterativeMethod`](sparseiterativemethod.md) structure that represents a default LSMR method.
+A [`SparseIterativeMethod`](./sparseiterativemethod.md) structure that represents a default LSMR method.
 
 #### Discussion
 
@@ -30,7 +35,7 @@ LSMR is a minimal residual (MINRES) method for solving least squares. Use LSMR t
 
 Although LSMR is equivalent to applying MINRES to the normal equations *AᵀAx = Aᵀb* in exact arithmetic, it has superior numerical behavior and is the preferred method. Due to the implicit squaring of the condition of *A* in the normal equations, LSMR may struggle to converge in single precision. Use double-precision arithmetic where possible.
 
-For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](sparseconjugategradient(_:).md). For square, full-rank unsymmetric or indefinite equations, use [`SparseGMRES(_:)`](sparsegmres(_:).md).
+For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](./sparseconjugategradient%28_%29.md). For square, full-rank unsymmetric or indefinite equations, use [`SparseGMRES(_:)`](./sparsegmres%28_%29.md).
 
 ## Parameters
 
@@ -38,9 +43,10 @@ For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](spa
 
 ## See Also
 
-- [func SparseLSMR() -> SparseIterativeMethod](sparselsmr().md)
+### Sparse Iterative Methods for Overdetermined and Underdetermined Systems
+- [func SparseLSMR() -> SparseIterativeMethod](./sparselsmr%28%29.md)
   Returns a default least squares minimum residual (LSMR) method.
-- [struct SparseLSMROptions](sparselsmroptions.md)
+- [struct SparseLSMROptions](./sparselsmroptions.md)
   Options for creating a least squares minimum residual method.
 
 

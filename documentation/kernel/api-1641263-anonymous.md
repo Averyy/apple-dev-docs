@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHIDUsage_Ord_Instance1](1641263-anonymous/khidusage_ord_instance1.md)
-- [kHIDUsage_Ord_Instance2](1641263-anonymous/khidusage_ord_instance2.md)
-- [kHIDUsage_Ord_Instance3](1641263-anonymous/khidusage_ord_instance3.md)
-- [kHIDUsage_Ord_Instance4](1641263-anonymous/khidusage_ord_instance4.md)
-- [kHIDUsage_Ord_Instance65535](1641263-anonymous/khidusage_ord_instance65535.md)
+- [kHIDUsage_Ord_Instance1](./api-1641263-anonymous/khidusage_ord_instance1.md)
+- [kHIDUsage_Ord_Instance2](./api-1641263-anonymous/khidusage_ord_instance2.md)
+- [kHIDUsage_Ord_Instance3](./api-1641263-anonymous/khidusage_ord_instance3.md)
+- [kHIDUsage_Ord_Instance4](./api-1641263-anonymous/khidusage_ord_instance4.md)
+- [kHIDUsage_Ord_Instance65535](./api-1641263-anonymous/khidusage_ord_instance65535.md)
 
 
 ---

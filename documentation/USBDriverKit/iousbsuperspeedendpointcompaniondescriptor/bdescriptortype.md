@@ -1,7 +1,8 @@
 # bDescriptorType
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the descriptor.
 
@@ -10,19 +11,20 @@ The type of the descriptor.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bDescriptorType;
 ```
 
 ## See Also
 
-- [bLength](iousbsuperspeedendpointcompaniondescriptor/blength.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
   The length of this descriptor in bytes.
-- [bMaxBurst](iousbsuperspeedendpointcompaniondescriptor/bmaxburst.md)
+- [bMaxBurst](./bmaxburst.md)
   The maximum number of packets the endpoint can send or receive in one burst.
-- [bmAttributes](iousbsuperspeedendpointcompaniondescriptor/bmattributes.md)
+- [bmAttributes](./bmattributes.md)
   The attributes associated with the endpoint.
-- [wBytesPerInterval](iousbsuperspeedendpointcompaniondescriptor/wbytesperinterval.md)
+- [wBytesPerInterval](./wbytesperinterval.md)
   The total number of bytes this endpoint transfers during each service interval.
 
 

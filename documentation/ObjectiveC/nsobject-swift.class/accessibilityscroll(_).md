@@ -1,7 +1,8 @@
 # accessibilityScroll(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scrolls screen content in an application-specific way and returns the success or failure of the action.
 
@@ -9,7 +10,7 @@ Scrolls screen content in an application-specific way and returns the success or
 - iOS 4.2+
 - iPadOS 4.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,32 +20,37 @@ Scrolls screen content in an application-specific way and returns the success or
 func accessibilityScroll(_ direction: UIAccessibilityScrollDirection) -> Bool
 ```
 
+```objc
+- (BOOL) accessibilityScroll:(UIAccessibilityScrollDirection) direction;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the scrolling action succeeds; otherwise, [`NO`](no.md). By default, this method returns [`NO`](no.md).
+[`YES`](../yes.md) if the scrolling action succeeds; otherwise, [`NO`](../no.md). By default, this method returns [`NO`](../no.md).
 
 #### Discussion
 
 Implement this method if a view in the view hierarchy supports a scroll by page action.
 
-- If the scrolling action succeeds for the specified direction, return [`YES`](yes.md) and post the [`pageScrolled`](https://developer.apple.com/documentation/uikit/uiaccessibility/notification/pagescrolled) notification.
+- If the scrolling action succeeds for the specified direction, return [`YES`](../yes.md) and post the [`pageScrolled`](../../UIKit/uiaccessibility/notification/pagescrolled.md) notification.
 - If the scrolling action fails, `accessibilityScroll:` is called on a parent view in the hierarchy.
 
 ## Parameters
 
-- `direction`: A constant that specifies the direction of the scrolling action. See [`UIAccessibilityScrollDirection`](https://developer.apple.com/documentation/uikit/uiaccessibilityscrolldirection) for descriptions of valid constants.
+- `direction`: A constant that specifies the direction of the scrolling action. See [`UIAccessibilityScrollDirection`](../../UIKit/uiaccessibilityscrolldirection.md) for descriptions of valid constants.
 
 ## See Also
 
-- [func accessibilityActivate() -> Bool](nsobject-swift.class/accessibilityactivate.md)
+### Performing an action
+- [func accessibilityActivate() -> Bool](./accessibilityactivate%28%29.md)
   Tells the element to activate itself and report the success or failure of the operation.
-- [func accessibilityIncrement()](nsobject-swift.class/accessibilityincrement.md)
+- [func accessibilityIncrement()](./accessibilityincrement%28%29.md)
   Tells the accessibility element to increment the value of its content.
-- [func accessibilityDecrement()](nsobject-swift.class/accessibilitydecrement.md)
+- [func accessibilityDecrement()](./accessibilitydecrement%28%29.md)
   Tells the accessibility element to decrement the value of its content.
-- [func accessibilityPerformEscape() -> Bool](nsobject-swift.class/accessibilityperformescape.md)
+- [func accessibilityPerformEscape() -> Bool](./accessibilityperformescape%28%29.md)
   Dismisses a modal view and returns the success or failure of the action.
-- [func accessibilityPerformMagicTap() -> Bool](nsobject-swift.class/accessibilityperformmagictap.md)
+- [func accessibilityPerformMagicTap() -> Bool](./accessibilityperformmagictap%28%29.md)
   Performs a salient action.
 
 

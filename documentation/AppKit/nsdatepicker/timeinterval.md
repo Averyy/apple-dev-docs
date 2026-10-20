@@ -1,12 +1,13 @@
 # timeInterval
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval selected by the date picker.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The time interval selected by the date picker.
 var timeInterval: TimeInterval { get set }
 ```
 
+```objc
+@property NSTimeInterval timeInterval;
+```
+
 #### Discussion
 
-The time interval that represents the receiver’s date range. The date range begins at the date returned by [`dateValue`](nsdatepicker/datevalue.md). This method returns 0 when the receiver is not in the NSRangeDateMode mode.
+The time interval that represents the receiver’s date range. The date range begins at the date returned by [`dateValue`](./datevalue.md). This method returns 0 when the receiver is not in the NSRangeDateMode mode.
 
 ## See Also
 
-- [var dateValue: Date](nsdatepicker/datevalue.md)
+### Accessing Object Values
+- [var dateValue: Date](./datevalue.md)
   The date selected by the date picker.
 
 

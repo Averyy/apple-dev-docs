@@ -1,7 +1,8 @@
 # kSecIdentityDomainDefault
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The system-wide default identity.
 
@@ -12,6 +13,10 @@ The system-wide default identity.
 
 ```swift
 let kSecIdentityDomainDefault: CFString
+```
+
+```c
+extern CFStringRef const kSecIdentityDomainDefault;
 ```
 
 

@@ -1,18 +1,19 @@
 # CFSocketError
 
 **Framework**: Core Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes for many CFSocket functions.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,33 +21,38 @@ Error codes for many CFSocket functions.
 enum CFSocketError
 ```
 
+```c
+enum CFSocketError : CFIndex;
+```
+
 ## Topics
 
 ### Constants
-- [CFSocketError.success](cfsocketerror/success.md)
+- [CFSocketError.success](./cfsocketerror/success.md)
   The socket operation succeeded.
-- [CFSocketError.error](cfsocketerror/error.md)
+- [CFSocketError.error](./cfsocketerror/error.md)
   The socket operation failed.
-- [CFSocketError.timeout](cfsocketerror/timeout.md)
+- [CFSocketError.timeout](./cfsocketerror/timeout.md)
   The socket operation timed out.
 ### Initializers
-- [init?(rawValue: CFIndex)](cfsocketerror/init(rawvalue:).md)
+- [init?(rawValue: CFIndex)](./cfsocketerror/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CFSocketCallBackType](cfsocketcallbacktype.md)
+### Constants
+- [struct CFSocketCallBackType](./cfsocketcallbacktype.md)
   Types of socket activity that can cause the callback function of a CFSocket object to be called.
-- [CFSocket Flags](1560944-cfsocket-flags.md)
+- [CFSocket Flags](./api-1560944-cfsocket-flags.md)
   Flags that can be set on a CFSocket object to control its behavior.
 
 

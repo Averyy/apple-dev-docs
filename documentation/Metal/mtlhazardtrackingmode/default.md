@@ -1,7 +1,8 @@
 # MTLHazardTrackingMode.default
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that applies the default tracking behavior in Metal based on the resource or heap type you’re creating.
 
@@ -19,22 +20,27 @@ An option that applies the default tracking behavior in Metal based on the resou
 case `default`
 ```
 
+```c
+MTLHazardTrackingModeDefault
+```
+
 #### Discussion
 
-When you choose the [`MTLHazardTrackingMode.default`](mtlhazardtrackingmode/default.md) option, Metal assigns a tracking mode based on the type you’re creating:
+When you choose the [`MTLHazardTrackingMode.default`](./default.md) option, Metal assigns a tracking mode based on the type you’re creating:
 
-- The default tracking mode for an [`MTLHeap`](mtlheap.md) is [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md) because heaps typically contain many resources that you manage manually.
-- The default tracking mode for a type that inherits [`MTLResource`](mtlresource.md) is [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md) because individual resources benefit from automatic hazard tracking.
+- The default tracking mode for an [`MTLHeap`](../mtlheap.md) is [`MTLHazardTrackingMode.untracked`](./untracked.md) because heaps typically contain many resources that you manage manually.
+- The default tracking mode for a type that inherits [`MTLResource`](../mtlresource.md) is [`MTLHazardTrackingMode.tracked`](./tracked.md) because individual resources benefit from automatic hazard tracking.
 
-For example, Metal tracks hazards for [`MTLBuffer`](mtlbuffer.md) and [`MTLTexture`](mtltexture.md) instances when you create them with [`MTLHazardTrackingMode.default`](mtlhazardtrackingmode/default.md).
+For example, Metal tracks hazards for [`MTLBuffer`](../mtlbuffer.md) and [`MTLTexture`](../mtltexture.md) instances when you create them with [`MTLHazardTrackingMode.default`](./default.md).
 
-For more information, see [`MTLHazardTrackingMode`](mtlhazardtrackingmode.md).
+For more information, see [`MTLHazardTrackingMode`](../mtlhazardtrackingmode.md).
 
 ## See Also
 
-- [MTLHazardTrackingMode.untracked](mtlhazardtrackingmode/untracked.md)
+### Selecting the tracking mode
+- [MTLHazardTrackingMode.untracked](./untracked.md)
   An option that disables automatic memory hazard tracking in Metal for a resource at runtime.
-- [MTLHazardTrackingMode.tracked](mtlhazardtrackingmode/tracked.md)
+- [MTLHazardTrackingMode.tracked](./tracked.md)
   An option that directs Metal to apply runtime safeguards that prevent memory hazards when commands access a resource.
 
 

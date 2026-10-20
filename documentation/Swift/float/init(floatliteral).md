@@ -1,7 +1,8 @@
 # init(floatLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance initialized to the specified floating-point value.
 
@@ -36,15 +37,16 @@ In this example, the assignment to the `x` constant calls this floating-point li
 
 ## See Also
 
-- [init()](float/init.md)
-- [init(integerLiteral: Int64)](float/init(integerliteral:).md)
+### Infrequently Used Functionality
+- [init()](./init%28%29.md)
+- [init(integerLiteral: Int64)](./init%28integerliteral%29.md)
   Creates an instance initialized to the specified integer value.
-- [init(integerLiteral: Self)](float/init(integerliteral:)-6hc7h.md)
-- [func advanced(by: Float) -> Float](float/advanced(by:).md)
+- [init(integerLiteral: Self)](./init%28integerliteral%29-6hc7h.md)
+- [func advanced(by: Float) -> Float](./advanced%28by%29.md)
   Returns a value that is offset the specified distance from this value.
-- [func distance(to: Float) -> Float](float/distance(to:).md)
+- [func distance(to: Float) -> Float](./distance%28to%29.md)
   Returns the distance from this value to the given value, expressed as a stride.
-- [func write<Target>(to: inout Target)](float/write(to:).md)
+- [func write<Target>(to: inout Target)](./write%28to%29.md)
   Writes a textual representation of this instance into the given output stream.
 
 

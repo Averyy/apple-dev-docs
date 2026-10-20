@@ -1,7 +1,8 @@
 # VolumeControl
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The identifier for the audio volume control class.
 
@@ -10,15 +11,16 @@ The identifier for the audio volume control class.
 
 ## Declaration
 
-```swift
+```c
 VolumeControl
 ```
 
 ## See Also
 
-- [LevelControl](audiodriverkit/iouseraudioclassid/levelcontrol.md)
+### Level and Volume Control Objects
+- [LevelControl](./levelcontrol.md)
   The identifier for the audio level control class.
-- [LFEVolumeControl](audiodriverkit/iouseraudioclassid/lfevolumecontrol.md)
+- [LFEVolumeControl](./lfevolumecontrol.md)
   The identifier for the low-frequency effect volume control class.
 
 

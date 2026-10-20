@@ -1,7 +1,8 @@
 # videoProperties
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties describing the video content. `nil` if the content contains no video.
 

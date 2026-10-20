@@ -1,7 +1,8 @@
 # id
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique product identifier.
 
@@ -22,17 +23,18 @@ let id: String
 
 ## Mentions
 
-- [Generating JWS to sign App Store requests](generating-jws-to-sign-app-store-requests.md)
+- [Generating JWS to sign App Store requests](../generating-jws-to-sign-app-store-requests.md)
 
 #### Discussion
 
-You configure Apple In-App Purchases, including the product ID, in App Store Connect. For information, see [`Overview for configuring Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
+You configure Apple In-App Purchases, including the product ID, in App Store Connect. For information, see [Overview for configuring Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases).
 
 ## See Also
 
-- [let type: Product.ProductType](product/type.md)
+### Getting product identifiers and type
+- [let type: Product.ProductType](./type.md)
   The Apple In-App Purchase product type.
-- [Product.ProductType](product/producttype.md)
+- [Product.ProductType](./producttype.md)
   The types of Apple In-App Purchases.
 
 

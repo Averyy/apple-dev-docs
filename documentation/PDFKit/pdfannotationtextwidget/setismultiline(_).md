@@ -1,10 +1,11 @@
 # setIsMultiline(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 func setIsMultiline(_ multiline: Bool)
 ```
 
+```objc
+- (void) setIsMultiline:(BOOL) multiline;
+```
+
 ## See Also
 
-- [func attributedStringValue() -> NSAttributedString!](pdfannotationtextwidget/attributedstringvalue.md)
-- [func isMultiline() -> Bool](pdfannotationtextwidget/ismultiline.md)
-- [func setAttributedStringValue(NSAttributedString!)](pdfannotationtextwidget/setattributedstringvalue(_:).md)
+### Instance Methods
+- [func attributedStringValue() -> NSAttributedString!](./attributedstringvalue%28%29.md)
+- [func isMultiline() -> Bool](./ismultiline%28%29.md)
+- [func setAttributedStringValue(NSAttributedString!)](./setattributedstringvalue%28_%29.md)
 
 
 ---

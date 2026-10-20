@@ -1,7 +1,8 @@
 # tokenSession(_:beginAuthFor:constraint:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that authentication has begun for the specified operation and constraint.
 
@@ -20,13 +21,17 @@ Tells the delegate that authentication has begun for the specified operation and
 optional func tokenSession(_ session: TKTokenSession, beginAuthFor operation: TKTokenOperation, constraint: Any) throws -> TKTokenAuthOperation
 ```
 
+```objc
+- (TKTokenAuthOperation *) tokenSession:(TKTokenSession *) session beginAuthForOperation:(TKTokenOperation) operation constraint:(TKTokenOperationConstraint) constraint error:(NSError **) error;
+```
+
 #### Return Value
 
 The resulting context of the operation, or `nil` if an error occurred.
 
 #### Discussion
 
-If you return an instance of a subclass of [`TKTokenAuthOperation`](tktokenauthoperation.md) that is provided by the CryptoTokenKit framework, the system will first fill in the context-specific properties, such as the password, before calling the `finishWithError:` method on the context.
+If you return an instance of a subclass of [`TKTokenAuthOperation`](../tktokenauthoperation.md) that is provided by the CryptoTokenKit framework, the system will first fill in the context-specific properties, such as the password, before calling the `finishWithError:` method on the context.
 
 ## Parameters
 
@@ -36,13 +41,14 @@ If you return an instance of a subclass of [`TKTokenAuthOperation`](tktokenautho
 
 ## See Also
 
-- [typealias TKTokenOperationConstraint](tktokenoperationconstraint.md)
+### Authenticating
+- [typealias TKTokenOperationConstraint](../tktokenoperationconstraint.md)
   A token’s authentication constraint for a specific operation.
-- [class TKTokenAuthOperation](tktokenauthoperation.md)
+- [class TKTokenAuthOperation](../tktokenauthoperation.md)
   An authentication operation for a cryptographic token.
-- [class TKTokenPasswordAuthOperation](tktokenpasswordauthoperation.md)
+- [class TKTokenPasswordAuthOperation](../tktokenpasswordauthoperation.md)
   A password-based authentication operation.
-- [class TKTokenSmartCardPINAuthOperation](tktokensmartcardpinauthoperation.md)
+- [class TKTokenSmartCardPINAuthOperation](../tktokensmartcardpinauthoperation.md)
   A Smart Card PIN authentication operation.
 
 

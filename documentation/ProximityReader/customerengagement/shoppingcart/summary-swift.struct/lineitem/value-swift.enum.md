@@ -1,9 +1,10 @@
 # CustomerEngagement.ShoppingCart.Summary.LineItem.Value
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-A value that holds either a [`String`](https://developer.apple.com/documentation/swift/string) or `[`Decimal`](https://developer.apple.com/documentation/foundation/decimal) amount for a summary line item.
+A value that holds either a [`String`](../../../../../Swift/string.md) or `[`Decimal`](../../../../../Foundation/decimal.md) amount for a summary line item.
 
 **Availability**:
 - iOS 27.0+
@@ -19,16 +20,16 @@ enum Value
 ## Topics
 
 ### Enumeration Cases
-- [CustomerEngagement.ShoppingCart.Summary.LineItem.Value.decimal(_:)](customerengagement/shoppingcart/summary-swift.struct/lineitem/value-swift.enum/decimal(_:).md)
-- [CustomerEngagement.ShoppingCart.Summary.LineItem.Value.string(_:)](customerengagement/shoppingcart/summary-swift.struct/lineitem/value-swift.enum/string(_:).md)
+- [CustomerEngagement.ShoppingCart.Summary.LineItem.Value.decimal(_:)](./value-swift.enum/decimal%28_%29.md)
+- [CustomerEngagement.ShoppingCart.Summary.LineItem.Value.string(_:)](./value-swift.enum/string%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

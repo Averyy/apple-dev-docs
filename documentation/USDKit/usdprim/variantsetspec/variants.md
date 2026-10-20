@@ -1,7 +1,8 @@
 # variants
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All variant specs in this set.
 

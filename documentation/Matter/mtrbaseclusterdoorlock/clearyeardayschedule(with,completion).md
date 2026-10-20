@@ -1,7 +1,8 @@
 # clearYearDaySchedule(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func clearYearDaySchedule(with params: MTRDoorLockClusterClearYearDayScheduleParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func clearYearDaySchedule(with params: MTRDoorLockClusterClearYearDayScheduleParams) async throws
+```
+
+```objc
+- (void) clearYearDayScheduleWithParams:(MTRDoorLockClusterClearYearDayScheduleParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,6 +1,7 @@
 # Blending a Sprite with Different Interpretations of Alpha
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Reinterpret a sprite’s alpha property to react differently to the objects below it.
 
@@ -8,7 +9,7 @@ Reinterpret a sprite’s alpha property to react differently to the objects belo
 
 The final stage of rendering is to blend the sprite’s texture into its destination frame buffer. The default behavior uses the alpha values of the texture to blend the texture with the destination pixels. However, you can use other blend modes when you want to add other special effects to a scene.
 
-You control the sprite’s blending behavior using the [`blendMode`](skspritenode/blendmode.md) property. For example, an additive blend mode is useful to combine multiple sprites together, for effects such as for fire or lighting. The following code shows how to position three overlapping sprite nodes in a circle to demonstrate the effect of different blend modes:
+You control the sprite’s blending behavior using the [`blendMode`](./skspritenode/blendmode.md) property. For example, an additive blend mode is useful to combine multiple sprites together, for effects such as for fire or lighting. The following code shows how to position three overlapping sprite nodes in a circle to demonstrate the effect of different blend modes:
 
 ```swift
 let blendMode = SKBlendMode.alpha
@@ -31,19 +32,20 @@ for (index, imageName) in imageNames.enumerated() {
 }
 ```
 
-With the default blend mode of [`SKBlendMode.alpha`](skblendmode/alpha.md), the thee circles look like:
+With the default blend mode of [`SKBlendMode.alpha`](./skblendmode/alpha.md), the thee circles look like:
 
-![Overlapping sprite nodes using alpha blending](/images/com.apple.spritekit/media-2983070@2x.png)
+![Overlapping sprite nodes using alpha blending](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2983070@2x.png)
 
-However, with a blend mode of [`SKBlendMode.add`](skblendmode/add.md), the color values are added together, creating a scene that looks like:
+However, with a blend mode of [`SKBlendMode.add`](./skblendmode/add.md), the color values are added together, creating a scene that looks like:
 
-![Overlapping sprite nodes using additive blending](/images/com.apple.spritekit/media-2983071@2x.png)
+![Overlapping sprite nodes using additive blending](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2983071@2x.png)
 
 ## See Also
 
-- [var blendMode: SKBlendMode](skspritenode/blendmode.md)
+### Configuring Alpha Blendling
+- [var blendMode: SKBlendMode](./skspritenode/blendmode.md)
   The blend mode used to draw the sprite into the parent’s framebuffer.
-- [enum SKBlendMode](skblendmode.md)
+- [enum SKBlendMode](./skblendmode.md)
   The modes that describe how the source and destination pixel colors are used to calculate the new destination color.
 
 

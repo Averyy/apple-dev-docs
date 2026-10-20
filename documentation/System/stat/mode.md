@@ -1,7 +1,8 @@
 # mode
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 File mode
 

@@ -1,7 +1,8 @@
 # shouldGrantPermissionsOnUserGesture(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to determine if permissions should be granted for the tab on user gesture.
 
@@ -16,6 +17,10 @@ Called to determine if permissions should be granted for the tab on user gesture
 
 ```swift
 optional func shouldGrantPermissionsOnUserGesture(for context: WKWebExtensionContext) -> Bool
+```
+
+```objc
+- (BOOL) shouldGrantPermissionsOnUserGestureForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
 #### Discussion

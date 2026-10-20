@@ -1,7 +1,8 @@
 # scrollClipDisabled(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether a scroll view clips its content to its bounds.
 
@@ -54,13 +55,13 @@ The scroll view in the above example clips when the content view’s `disabled` 
 
 **True**:
 
-![A horizontal row of uniformly sized, evenly spaced, vertically aligned squares inside a bounding box that’s about twice the height of the squares, and almost four times the width. From left to right, three squares appear in full, while only the first quarter of a fourth square appears at the far right. All the squares have shadows that fade away before reaching the top or the bottom of the bounding box.](/images/com.apple.SwiftUI/View-scrollClipDisabled-1-iOS@2x.png)
+![A horizontal row of uniformly sized, evenly spaced, vertically aligned squares inside a bounding box that’s about twice the height of the squares, and almost four times the width. From left to right, three squares appear in full, while only the first quarter of a fourth square appears at the far right. All the squares have shadows that fade away before reaching the top or the bottom of the bounding box.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-scrollClipDisabled-1-iOS@2x.png)
 
 **False**:
 
-![A horizontal row of uniformly sized, evenly spaced, vertically aligned squares inside a bounding box that’s about twice the height of the squares, and almost four times the width. From left to right, three squares appear in full, while only the first quarter of a fourth square appears at the far right. All the squares have shadows that are visible in between squares, but clipped at the top and bottom of the squares.](/images/com.apple.SwiftUI/View-scrollClipDisabled-2-iOS@2x.png)
+![A horizontal row of uniformly sized, evenly spaced, vertically aligned squares inside a bounding box that’s about twice the height of the squares, and almost four times the width. From left to right, three squares appear in full, while only the first quarter of a fourth square appears at the far right. All the squares have shadows that are visible in between squares, but clipped at the top and bottom of the squares.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-scrollClipDisabled-2-iOS@2x.png)
 
-While you might want to avoid clipping parts of views that exceed the bounds of the scroll view, like the shadows in the above example, you typically still want the scroll view to clip at some point. Create custom clipping by using the [`clipShape(_:style:)`](view/clipshape(_:style:).md) modifier to add a different clip shape. The following code disables the default clipping and then adds rectangular clipping that exceeds the bounds of the scroll view by the default padding amount:
+While you might want to avoid clipping parts of views that exceed the bounds of the scroll view, like the shadows in the above example, you typically still want the scroll view to clip at some point. Create custom clipping by using the [`clipShape(_:style:)`](./clipshape%28_,style%29.md) modifier to add a different clip shape. The following code disables the default clipping and then adds rectangular clipping that exceeds the bounds of the scroll view by the default padding amount:
 
 ```swift
 ScrollView(.horizontal) {
@@ -77,9 +78,10 @@ ScrollView(.horizontal) {
 
 ## See Also
 
-- [func scrollContentBackground(Visibility) -> some View](view/scrollcontentbackground(_:).md)
+### Managing content visibility
+- [func scrollContentBackground(Visibility) -> some View](./scrollcontentbackground%28_%29.md)
   Specifies the visibility of the background for scrollable views within this view.
-- [struct ScrollContentOffsetAdjustmentBehavior](scrollcontentoffsetadjustmentbehavior.md)
+- [struct ScrollContentOffsetAdjustmentBehavior](../scrollcontentoffsetadjustmentbehavior.md)
   A type that defines the different kinds of content offset adjusting behaviors a scroll view can have.
 
 

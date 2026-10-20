@@ -1,9 +1,10 @@
 # init(cgImage:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates an [`ArtworkRepresentation`](artworkrepresentation.md) from a `CGImage` instance.
+Creates an [`ArtworkRepresentation`](../artworkrepresentation.md) from a `CGImage` instance.
 
 **Availability**:
 - iOS 27.0+

@@ -1,7 +1,8 @@
 # Insecure
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A container for older, cryptographically insecure algorithms.
 
@@ -27,21 +28,21 @@ enum Insecure
 ## Topics
 
 ### Hashes
-- [Insecure.MD5](insecure/md5.md)
+- [Insecure.MD5](./insecure/md5.md)
   An implementation of MD5 hashing.
-- [Insecure.SHA1](insecure/sha1.md)
+- [Insecure.SHA1](./insecure/sha1.md)
   An implementation of SHA1 hashing.
 ### Structures
-- [Insecure.MD5Digest](insecure/md5digest.md)
+- [Insecure.MD5Digest](./insecure/md5digest.md)
   The output of a MD5 hash.
-- [Insecure.SHA1Digest](insecure/sha1digest.md)
+- [Insecure.SHA1Digest](./insecure/sha1digest.md)
   The output of a SHA1 hash.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

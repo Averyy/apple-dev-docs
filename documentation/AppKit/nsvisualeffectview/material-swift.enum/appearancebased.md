@@ -1,12 +1,15 @@
 # NSVisualEffectView.Material.appearanceBased
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A default material for the view’s effective appearance.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 10.14
+
+> **Deprecated**: Use a specific semantic material instead.
 
 ## Declaration
 
@@ -14,15 +17,20 @@ A default material for the view’s effective appearance.
 case appearanceBased
 ```
 
+```c
+NSVisualEffectMaterialAppearanceBased
+```
+
 ## See Also
 
-- [NSVisualEffectView.Material.light](nsvisualeffectview/material-swift.enum/light.md)
+### Deprecated
+- [NSVisualEffectView.Material.light](./light.md)
   A material with a light effect.
-- [NSVisualEffectView.Material.dark](nsvisualeffectview/material-swift.enum/dark.md)
+- [NSVisualEffectView.Material.dark](./dark.md)
   A material with a dark effect.
-- [NSVisualEffectView.Material.mediumLight](nsvisualeffectview/material-swift.enum/mediumlight.md)
+- [NSVisualEffectView.Material.mediumLight](./mediumlight.md)
   A material with a medium-light effect.
-- [NSVisualEffectView.Material.ultraDark](nsvisualeffectview/material-swift.enum/ultradark.md)
+- [NSVisualEffectView.Material.ultraDark](./ultradark.md)
   A material with an ultra-dark effect.
 
 

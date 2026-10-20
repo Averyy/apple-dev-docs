@@ -1,7 +1,8 @@
 # minimumContentSizeCategory
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum content size category for the view and its subviews.
 
@@ -18,6 +19,10 @@ The minimum content size category for the view and its subviews.
 var minimumContentSizeCategory: UIContentSizeCategory? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIContentSizeCategory minimumContentSizeCategory;
+```
+
 #### Discussion
 
 Use this property to limit which content size categories your view hierarchy supports. The limit applies immediately after you set this value and when future content size category updates occur.
@@ -26,9 +31,10 @@ Set this property to `nil` to remove the minimum limit for the content size cate
 
 ## See Also
 
-- [var maximumContentSizeCategory: UIContentSizeCategory?](uiview/maximumcontentsizecategory.md)
+### Managing font-sizing preferences
+- [var maximumContentSizeCategory: UIContentSizeCategory?](./maximumcontentsizecategory.md)
   The maximum content size category for the view and its subviews.
-- [var appliedContentSizeCategoryLimitsDescription: String](uiview/appliedcontentsizecategorylimitsdescription.md)
+- [var appliedContentSizeCategoryLimitsDescription: String](./appliedcontentsizecategorylimitsdescription.md)
   A string that lists each of the view’s superviews, its content size category, and whether that view has content size category limits.
 
 

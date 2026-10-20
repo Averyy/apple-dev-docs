@@ -1,7 +1,8 @@
 # sendReminder(to:localizableMessageKey:arguments:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a reminder from one participant to a specific set of other participants.
 
@@ -17,33 +18,46 @@ Sends a reminder from one participant to a specific set of other participants.
 ## Declaration
 
 ```swift
+func sendReminder(to participants: [GKTurnBasedParticipant], localizableMessageKey key: String, arguments: [String], completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func sendReminder(to participants: [GKTurnBasedParticipant], localizableMessageKey key: String, arguments: [String]) async throws
+```
+
+```objc
+- (void) sendReminderToParticipants:(NSArray<GKTurnBasedParticipant *> *) participants localizableMessageKey:(NSString *) key arguments:(NSArray<NSString *> *) arguments completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Sending messages to players in turn-based games](sending-messages-to-players-in-turn-based-games.md)
+- [Sending messages to players in turn-based games](../sending-messages-to-players-in-turn-based-games.md)
 
 #### Discussion
 
 Use this method to send a localized message to participants of a turn-based event or exchange request that needs their attention.
 
-If your game isn’t running on recipient devices, the notification containing the localized message appears immediately at the top of the screen. When the participant taps or clicks the notification, GameKit launches your game and invokes the `GKTurnBasedEventListener` [`player(_:receivedTurnEventFor:didBecomeActive:)`](gkturnbasedeventlistener/player(_:receivedturneventfor:didbecomeactive:).md) protocol method.
+If your game isn’t running on recipient devices, the notification containing the localized message appears immediately at the top of the screen. When the participant taps or clicks the notification, GameKit launches your game and invokes the `GKTurnBasedEventListener` [`player(_:receivedTurnEventFor:didBecomeActive:)`](../gkturnbasedeventlistener/player%28_,receivedturneventfor,didbecomeactive%29.md) protocol method.
 
-GameKit uses the recipient’s language and region to localize the message. If the recipient doesn’t have the game installed on their device, GameKit uses the sender’s localization settings instead. See [`Sending messages to players in turn-based games`](sending-messages-to-players-in-turn-based-games.md).
+GameKit uses the recipient’s language and region to localize the message. If the recipient doesn’t have the game installed on their device, GameKit uses the sender’s localization settings instead. See [Sending messages to players in turn-based games](../sending-messages-to-players-in-turn-based-games.md).
 
 ## Parameters
 
 - `participants`: The participants who Game Center sends the reminder to.
 - `key`: The identifier for looking up the translated string in the default `Localized.strings` file. If you use a formatted string with specifiers, provide the arguments.
 - `arguments`: A list of arguments to substitute into the localized string if it’s formatted and contains specifiers.
-- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameter: - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
+- `completionHandler`: The block that GameKit calls when it completes the request.
+
+  The block receives the following parameter:
+
+  - ***error***: Describes an error if it occurs, or `nil` if the operation completes.
 
 ## See Also
 
-- [var message: String?](gkturnbasedmatch/message.md)
+### Sending Messages Between Participants
+- [var message: String?](./message.md)
   A message from the current participant to all other participants when you end a turn, forfeit a match, or end a match.
-- [func setLocalizableMessageWithKey(String, arguments: [String]?)](gkturnbasedmatch/setlocalizablemessagewithkey(_:arguments:).md)
+- [func setLocalizableMessageWithKey(String, arguments: [String]?)](./setlocalizablemessagewithkey%28_,arguments%29.md)
   Sends a localized message from the current participant to all other participants when you end a turn, forfeit a match, or end a match.
 
 

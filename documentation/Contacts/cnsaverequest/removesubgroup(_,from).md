@@ -1,7 +1,8 @@
 # removeSubgroup(_:from:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove a subgroup from the specified parent group.
 
@@ -12,6 +13,10 @@ Remove a subgroup from the specified parent group.
 
 ```swift
 func removeSubgroup(_ subgroup: CNGroup, from group: CNGroup)
+```
+
+```objc
+- (void) removeSubgroup:(CNGroup *) subgroup fromGroup:(CNGroup *) group;
 ```
 
 #### Discussion
@@ -25,7 +30,8 @@ If you previously tried to add `subgroup` to `group` in the same save request, c
 
 ## See Also
 
-- [func addSubgroup(CNGroup, to: CNGroup)](cnsaverequest/addsubgroup(_:to:).md)
+### Adding and removing subgroups
+- [func addSubgroup(CNGroup, to: CNGroup)](./addsubgroup%28_,to%29.md)
   Add the specified group to a parent group.
 
 

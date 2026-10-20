@@ -1,7 +1,8 @@
 # role
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the particular use of the lens in the camera system (e.g., left or right for a stereo system).
 

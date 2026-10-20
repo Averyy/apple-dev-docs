@@ -1,7 +1,8 @@
 # AVAssetCache
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that you use to inspect locally cached media data.
 
@@ -20,35 +21,39 @@ An object that you use to inspect locally cached media data.
 class AVAssetCache
 ```
 
+```objc
+@interface AVAssetCache : NSObject
+```
+
 #### Overview
 
-You can download HTTP Live Streaming assets to an iOS device using the [`AVAssetDownloadURLSession`](avassetdownloadurlsession.md) and [`AVAssetDownloadTask`](avassetdownloadtask.md) classes.
+You can download HTTP Live Streaming assets to an iOS device using the [`AVAssetDownloadURLSession`](./avassetdownloadurlsession.md) and [`AVAssetDownloadTask`](./avassetdownloadtask.md) classes.
 
 ## Topics
 
 ### Inspecting the cached media
-- [var isPlayableOffline: Bool](avassetcache/isplayableoffline.md)
+- [var isPlayableOffline: Bool](./avassetcache/isplayableoffline.md)
   A Boolean value that indicates whether the asset is playable without an internet connection.
-- [func mediaSelectionOptions(in: AVMediaSelectionGroup) -> [AVMediaSelectionOption]](avassetcache/mediaselectionoptions(in:).md)
+- [func mediaSelectionOptions(in: AVMediaSelectionGroup) -> [AVMediaSelectionOption]](./avassetcache/mediaselectionoptions%28in%29.md)
   Returns an array of locally cached media selection options that are available for offline use.
-- [func mediaPresentationLanguages(for: AVMediaSelectionGroup) -> [String]](avassetcache/mediapresentationlanguages(for:).md)
+- [func mediaPresentationLanguages(for: AVMediaSelectionGroup) -> [String]](./avassetcache/mediapresentationlanguages%28for%29.md)
   Returns an array of extended language tags for languages that can be selected for offline operations via use of the AVMediaSelectionGroup’s AVCustomMediaSelectionScheme.
-- [func mediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : [AVMediaPresentationSetting]]](avassetcache/mediapresentationsettings(for:).md)
+- [func mediaPresentationSettings(for: AVMediaSelectionGroup) -> [AVMediaPresentationSelector : [AVMediaPresentationSetting]]](./avassetcache/mediapresentationsettings%28for%29.md)
   For each AVMediaPresentationSelector defined by the AVCustomMediaSelectionScheme of an AVMediaSelectionGroup, returns the AVMediaPresentationSettings that can be satisfied for offline operations, e.g. playback.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

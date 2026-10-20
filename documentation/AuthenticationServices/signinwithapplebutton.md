@@ -1,7 +1,8 @@
 # SignInWithAppleButton
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A SwiftUI view that creates the Sign in with Apple button for display.
 
@@ -23,36 +24,37 @@ A SwiftUI view that creates the Sign in with Apple button for display.
 
 #### Discussion
 
-For more information about which Sign in with Apple buttons are available on different Apple platforms, see [`Displaying Sign in with Apple buttons in your app`](https://developer.apple.com/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-in-your-app).
+For more information about which Sign in with Apple buttons are available on different Apple platforms, see [Displaying Sign in with Apple buttons in your app](../SigninwithApple/displaying-sign-in-with-apple-buttons-in-your-app.md).
 
 ## Topics
 
 ### Creating a button
-- [init(SignInWithAppleButton.Label, onRequest: (ASAuthorizationAppleIDRequest) -> Void, onCompletion: (Result<ASAuthorization, any Error>) -> Void)](signinwithapplebutton/init(_:onrequest:oncompletion:).md)
+- [init(SignInWithAppleButton.Label, onRequest: (ASAuthorizationAppleIDRequest) -> Void, onCompletion: (Result<ASAuthorization, any Error>) -> Void)](./signinwithapplebutton/init%28_,onrequest,oncompletion%29.md)
   Creates a Sign in with Apple button.
-- [SignInWithAppleButton.Label](signinwithapplebutton/label.md)
+- [SignInWithAppleButton.Label](./signinwithapplebutton/label.md)
   The label that appears on the button.
-- [SignInWithAppleButton.Style](signinwithapplebutton/style.md)
+- [SignInWithAppleButton.Style](./signinwithapplebutton/style.md)
   The structure that defines styles that you use to control the button’s appearance.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [Implementing User Authentication with Sign in with Apple](implementing-user-authentication-with-sign-in-with-apple.md)
+### Sign In with Apple
+- [Implementing User Authentication with Sign in with Apple](./implementing-user-authentication-with-sign-in-with-apple.md)
   Provide a way for users of your app to set up an account and start using your services.
-- [Simplifying User Authentication in a tvOS App](simplifying-user-authentication-in-a-tvos-app.md)
+- [Simplifying User Authentication in a tvOS App](./simplifying-user-authentication-in-a-tvos-app.md)
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
-- [Sign in with Apple Entitlement](../bundleresources/entitlements/com.apple.developer.applesignin.md)
+- [Sign in with Apple Entitlement](../BundleResources/entitlements/com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
-- [class ASAuthorizationAppleIDProvider](asauthorizationappleidprovider.md)
+- [class ASAuthorizationAppleIDProvider](./asauthorizationappleidprovider.md)
   A mechanism for generating requests to authenticate users based on their Apple ID.
-- [class ASAuthorizationAppleIDCredential](asauthorizationappleidcredential.md)
+- [class ASAuthorizationAppleIDCredential](./asauthorizationappleidcredential.md)
   A credential that results from a successful Apple ID authentication.
 
 

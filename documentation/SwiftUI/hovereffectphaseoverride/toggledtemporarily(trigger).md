@@ -1,7 +1,8 @@
 # toggledTemporarily(trigger:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Temporaily transitions to the opposite of the effect’s current phase at the moment the override is applied.
 

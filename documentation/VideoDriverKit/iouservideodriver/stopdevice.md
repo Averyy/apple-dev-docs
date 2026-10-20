@@ -1,7 +1,8 @@
 # StopDevice
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the driver to stop IO on an video device.
 
@@ -10,7 +11,7 @@ Tells the driver to stop IO on an video device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t StopDevice(IOUserVideoObjectID in_object_id, IOUserVideoStartStopFlags in_flags);
 ```
 
@@ -25,11 +26,12 @@ The default implementation always returns `kIOReturnSuccess`. Subclass and overr
 
 ## See Also
 
-- [StartDevice](iouservideodriver/startdevice.md)
+### Starting and stopping the driver
+- [StartDevice](./startdevice.md)
   Tells the driver to start IO on an video device.
-- [IOUserVideoObjectID](videodriverkit/iouservideoobjectid.md)
+- [IOUserVideoObjectID](../videodriverkit-page/iouservideoobjectid.md)
   A handle for a a specific video object.
-- [IOUserVideoStartStopFlags](videodriverkit/iouservideostartstopflags.md)
+- [IOUserVideoStartStopFlags](../videodriverkit-page/iouservideostartstopflags.md)
   Flags used to indicate how I/O is starting or stopping.
 
 

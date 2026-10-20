@@ -1,7 +1,8 @@
 # model
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying Core ML model of the text classifier.
 
@@ -20,11 +21,12 @@ var model: MLModel { get set }
 
 ## See Also
 
-- [var description: String](mltextclassifier/description.md)
+### Describing a text classifier
+- [var description: String](./description.md)
   A text representation of the text classifier.
-- [var debugDescription: String](mltextclassifier/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the text classifier that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mltextclassifier/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the text classifier in a playground.
 
 

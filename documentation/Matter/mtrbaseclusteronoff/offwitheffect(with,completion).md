@@ -1,7 +1,8 @@
 # offWithEffect(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func offWithEffect(with params: MTROnOffClusterOffWithEffectParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func offWithEffect(with params: MTROnOffClusterOffWithEffectParams) async throws
+```
+
+```objc
+- (void) offWithEffectWithParams:(MTROnOffClusterOffWithEffectParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

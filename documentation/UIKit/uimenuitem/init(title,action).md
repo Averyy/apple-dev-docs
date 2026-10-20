@@ -1,20 +1,27 @@
 # init(title:action:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a menu-item object initialized with the given title and action.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 3.2+ - Deprecated in 16.0
+- iPadOS 3.2+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: For more information, see [`UIMenuItem`](../uimenuitem.md).
 
 ## Declaration
 
 ```swift
 init(title: String, action: Selector)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title action:(SEL) action;
 ```
 
 #### Return Value

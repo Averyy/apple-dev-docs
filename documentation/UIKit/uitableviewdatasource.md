@@ -1,16 +1,17 @@
 # UITableViewDataSource
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The methods that an object adopts to manage data and provide cells for a table view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,17 @@ The methods that an object adopts to manage data and provide cells for a table v
 protocol UITableViewDataSource : NSObjectProtocol
 ```
 
+```objc
+@protocol UITableViewDataSource <NSObject>
+```
+
 ## Mentions
 
-- [Filling a table with data](filling-a-table-with-data.md)
+- [Filling a table with data](./filling-a-table-with-data.md)
 
 #### Overview
 
-Table views manage only the presentation of their data; they don’t manage the data itself. To manage the data, you provide the table with a data source object — an object that implements the [`UITableViewDataSource`](uitableviewdatasource.md) protocol. A data source object responds to data-related requests from the table. It also manages the table’s data directly, or coordinates with other parts of your app to manage that data. Other responsibilities of the data source object include:
+Table views manage only the presentation of their data; they don’t manage the data itself. To manage the data, you provide the table with a data source object — an object that implements the [`UITableViewDataSource`](./uitableviewdatasource.md) protocol. A data source object responds to data-related requests from the table. It also manages the table’s data directly, or coordinates with other parts of your app to manage that data. Other responsibilities of the data source object include:
 
 - Reporting the number of sections and rows in the table.
 - Providing cells for each row of the table.
@@ -53,72 +58,73 @@ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexP
 }
 ```
 
-Use other methods of this protocol to enable specific features for your table. For example, you must implement the [`tableView(_:commit:forRowAt:)`](uitableviewdatasource/tableview(_:commit:forrowat:).md) method to enable the swipe-to-delete feature for rows.
+Use other methods of this protocol to enable specific features for your table. For example, you must implement the [`tableView(_:commit:forRowAt:)`](./uitableviewdatasource/tableview%28_,commit,forrowat%29.md) method to enable the swipe-to-delete feature for rows.
 
-For information about how to create and configure your table’s cells using your data source object, see [`Filling a table with data`](filling-a-table-with-data.md).
+For information about how to create and configure your table’s cells using your data source object, see [Filling a table with data](./filling-a-table-with-data.md).
 
-##### Specify the Location of Rows and Sections
+##### Specify the location of rows and sections
 
-Table views communicate the location of cells to you using the [`row`](https://developer.apple.com/documentation/foundation/nsindexpath/row) and [`section`](https://developer.apple.com/documentation/foundation/nsindexpath/section) properties of [`NSIndexPath`](https://developer.apple.com/documentation/foundation/nsindexpath) objects. Row and section indexes are zero based, so the first section is at index `0`, the second at index `1`, and so on. Similarly, the first row of each section is at index `0`, which means you need both the [`section`](https://developer.apple.com/documentation/foundation/nsindexpath/section) and [`row`](https://developer.apple.com/documentation/foundation/nsindexpath/row) values to identify a row uniquely. If your table has no sections, you need only the [`row`](https://developer.apple.com/documentation/foundation/nsindexpath/row) value.
+Table views communicate the location of cells to you using the [`row`](../Foundation/nsindexpath/row.md) and [`section`](../Foundation/nsindexpath/section.md) properties of [`NSIndexPath`](../Foundation/nsindexpath.md) objects. Row and section indexes are zero based, so the first section is at index `0`, the second at index `1`, and so on. Similarly, the first row of each section is at index `0`, which means you need both the [`section`](../Foundation/nsindexpath/section.md) and [`row`](../Foundation/nsindexpath/row.md) values to identify a row uniquely. If your table has no sections, you need only the [`row`](../Foundation/nsindexpath/row.md) value.
 
-![Illustration that shows a table with multiple sections. The first section has an index of 0 and no row value. The nine rows in the first section have indexes between 0 and 8. The second section has an index of 1 and no row value. Its first row starts at index 0 again.](/images/com.apple.uikit/media-3148902@2x.png)
+![Illustration that shows a table with multiple sections. The first section has an index of 0 and no row value. The nine rows in the first section have indexes between 0 and 8. The second section has an index of 1 and no row value. Its first row starts at index 0 again.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3148902@2x.png)
 
 ## Topics
 
 ### Providing the number of rows and sections
-- [func tableView(UITableView, numberOfRowsInSection: Int) -> Int](uitableviewdatasource/tableview(_:numberofrowsinsection:).md)
+- [func tableView(UITableView, numberOfRowsInSection: Int) -> Int](./uitableviewdatasource/tableview%28_,numberofrowsinsection%29.md)
   Tells the data source to return the number of rows in a given section of a table view.
-- [func numberOfSections(in: UITableView) -> Int](uitableviewdatasource/numberofsections(in:).md)
+- [func numberOfSections(in: UITableView) -> Int](./uitableviewdatasource/numberofsections%28in%29.md)
   Asks the data source to return the number of sections in the table view.
 ### Providing cells, headers, and footers
-- [func tableView(UITableView, cellForRowAt: IndexPath) -> UITableViewCell](uitableviewdatasource/tableview(_:cellforrowat:).md)
+- [func tableView(UITableView, cellForRowAt: IndexPath) -> UITableViewCell](./uitableviewdatasource/tableview%28_,cellforrowat%29.md)
   Asks the data source for a cell to insert in a particular location of the table view.
-- [func tableView(UITableView, titleForHeaderInSection: Int) -> String?](uitableviewdatasource/tableview(_:titleforheaderinsection:).md)
+- [func tableView(UITableView, titleForHeaderInSection: Int) -> String?](./uitableviewdatasource/tableview%28_,titleforheaderinsection%29.md)
   Asks the data source for the title of the header of the specified section of the table view.
-- [func tableView(UITableView, titleForFooterInSection: Int) -> String?](uitableviewdatasource/tableview(_:titleforfooterinsection:).md)
+- [func tableView(UITableView, titleForFooterInSection: Int) -> String?](./uitableviewdatasource/tableview%28_,titleforfooterinsection%29.md)
   Asks the data source for the title of the footer of the specified section of the table view.
 ### Inserting or deleting table rows
-- [func tableView(UITableView, commit: UITableViewCell.EditingStyle, forRowAt: IndexPath)](uitableviewdatasource/tableview(_:commit:forrowat:).md)
+- [func tableView(UITableView, commit: UITableViewCell.EditingStyle, forRowAt: IndexPath)](./uitableviewdatasource/tableview%28_,commit,forrowat%29.md)
   Asks the data source to commit the insertion or deletion of a specified row.
-- [func tableView(UITableView, canEditRowAt: IndexPath) -> Bool](uitableviewdatasource/tableview(_:caneditrowat:).md)
+- [func tableView(UITableView, canEditRowAt: IndexPath) -> Bool](./uitableviewdatasource/tableview%28_,caneditrowat%29.md)
   Asks the data source to verify that the given row is editable.
 ### Reordering table rows
-- [func tableView(UITableView, canMoveRowAt: IndexPath) -> Bool](uitableviewdatasource/tableview(_:canmoverowat:).md)
+- [func tableView(UITableView, canMoveRowAt: IndexPath) -> Bool](./uitableviewdatasource/tableview%28_,canmoverowat%29.md)
   Asks the data source whether a given row can move to another location in the table view.
-- [func tableView(UITableView, moveRowAt: IndexPath, to: IndexPath)](uitableviewdatasource/tableview(_:moverowat:to:).md)
+- [func tableView(UITableView, moveRowAt: IndexPath, to: IndexPath)](./uitableviewdatasource/tableview%28_,moverowat,to%29.md)
   Tells the data source to move a row at a specific location in the table view to another location.
 ### Configuring an index
-- [func sectionIndexTitles(for: UITableView) -> [String]?](uitableviewdatasource/sectionindextitles(for:).md)
+- [func sectionIndexTitles(for: UITableView) -> [String]?](./uitableviewdatasource/sectionindextitles%28for%29.md)
   Asks the data source to return the titles for the sections of a table view.
-- [func tableView(UITableView, sectionForSectionIndexTitle: String, at: Int) -> Int](uitableviewdatasource/tableview(_:sectionforsectionindextitle:at:).md)
+- [func tableView(UITableView, sectionForSectionIndexTitle: String, at: Int) -> Int](./uitableviewdatasource/tableview%28_,sectionforsectionindextitle,at%29.md)
   Asks the data source to return the index of the section having the given title and section title index.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [UITableViewController](uitableviewcontroller.md)
-- [UITableViewDiffableDataSource](uitableviewdiffabledatasource-2euir.md)
-- [UITableViewDiffableDataSourceReference](uitableviewdiffabledatasourcereference.md)
+- [UITableViewController](./uitableviewcontroller.md)
+- [UITableViewDiffableDataSource](./uitableviewdiffabledatasource-2euir.md)
+- [UITableViewDiffableDataSourceReference](./uitableviewdiffabledatasourcereference.md)
 
 ## See Also
 
-- [Filling a table with data](filling-a-table-with-data.md)
+### Data
+- [Filling a table with data](./filling-a-table-with-data.md)
   Create and configure cells for your table dynamically using a data source object, or provide them statically from your storyboard.
-- [Asynchronously loading images into table and collection views](asynchronously-loading-images-into-table-and-collection-views.md)
+- [Asynchronously loading images into table and collection views](./asynchronously-loading-images-into-table-and-collection-views.md)
   Store and fetch images asynchronously to make your app more responsive.
-- [protocol UITableViewDataSourcePrefetching](uitableviewdatasourceprefetching.md)
+- [protocol UITableViewDataSourcePrefetching](./uitableviewdatasourceprefetching.md)
   A protocol that provides advance warning of the data requirements for a table view, allowing you to start potentially long-running data operations early.
-- [class UITableViewDiffableDataSource](uitableviewdiffabledatasource-2euir.md)
+- [class UITableViewDiffableDataSource](./uitableviewdiffabledatasource-2euir.md)
   The object you use to manage data and provide cells for a table view.
-- [struct NSDiffableDataSourceSnapshot](nsdiffabledatasourcesnapshot-swift.struct.md)
+- [struct NSDiffableDataSourceSnapshot](./nsdiffabledatasourcesnapshot-swift.struct.md)
   A representation of the state of the data in a view at a specific point in time.
-- [class UILocalizedIndexedCollation](uilocalizedindexedcollation.md)
+- [class UILocalizedIndexedCollation](./uilocalizedindexedcollation.md)
   An object that organizes, sorts, and localizes the data for a table view that has a section index.
-- [protocol UIDataSourceTranslating](uidatasourcetranslating.md)
+- [protocol UIDataSourceTranslating](./uidatasourcetranslating.md)
   An advanced interface for managing a data source object.
-- [class UIRefreshControl](uirefreshcontrol.md)
+- [class UIRefreshControl](./uirefreshcontrol.md)
   A standard control that can initiate the refreshing of a scroll view’s contents.
 
 

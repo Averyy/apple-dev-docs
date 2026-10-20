@@ -1,7 +1,8 @@
 # minExposureTargetBias
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum supported exposure bias, in exposure value (EV) units.
 
@@ -17,17 +18,22 @@ The minimum supported exposure bias, in exposure value (EV) units.
 var minExposureTargetBias: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float minExposureTargetBias;
+```
+
 ## See Also
 
-- [var exposureTargetOffset: Float](avcapturedevice/exposuretargetoffset.md)
+### Adjusting exposure compensation
+- [var exposureTargetOffset: Float](./exposuretargetoffset.md)
   The metered exposure level’s offset from the target exposure value, in exposure value (EV) units.
-- [var exposureTargetBias: Float](avcapturedevice/exposuretargetbias.md)
+- [var exposureTargetBias: Float](./exposuretargetbias.md)
   The bias to apply to the target exposure value, in exposure value (EV) units.
-- [var maxExposureTargetBias: Float](avcapturedevice/maxexposuretargetbias.md)
+- [var maxExposureTargetBias: Float](./maxexposuretargetbias.md)
   The maximum supported exposure bias, in exposure value (EV) units.
-- [class let currentExposureTargetBias: Float](avcapturedevice/currentexposuretargetbias.md)
+- [class let currentExposureTargetBias: Float](./currentexposuretargetbias.md)
   A special constant that represents the current exposure bias value.
-- [func setExposureTargetBias(Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setexposuretargetbias(_:completionhandler:).md)
+- [func setExposureTargetBias(Float, completionHandler: ((CMTime) -> Void)?)](./setexposuretargetbias%28_,completionhandler%29.md)
   Sets the bias to apply to the target exposure value.
 
 

@@ -1,7 +1,8 @@
 # HIDDeviceError.unknown(_:)
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A catch-all for uncommon errors.
 

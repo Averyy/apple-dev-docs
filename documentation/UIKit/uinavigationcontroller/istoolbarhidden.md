@@ -1,7 +1,8 @@
 # isToolbarHidden
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the navigation controller’s built-in toolbar is visible.
 
@@ -17,17 +18,22 @@ A Boolean indicating whether the navigation controller’s built-in toolbar is v
 var isToolbarHidden: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isToolbarHidden) BOOL toolbarHidden;
+```
+
 #### Discussion
 
-If this property is set to [`true`](https://developer.apple.com/documentation/swift/true), the toolbar is not visible. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+If this property is set to [`true`](../../Swift/true.md), the toolbar is not visible. The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var toolbar: UIToolbar!](uinavigationcontroller/toolbar.md)
+### Configuring custom toolbars
+- [var toolbar: UIToolbar!](./toolbar.md)
   The custom toolbar associated with the navigation controller.
-- [func setToolbarHidden(Bool, animated: Bool)](uinavigationcontroller/settoolbarhidden(_:animated:).md)
+- [func setToolbarHidden(Bool, animated: Bool)](./settoolbarhidden%28_,animated%29.md)
   Changes the visibility of the navigation controller’s built-in toolbar.
-- [class let hideShowBarDuration: CGFloat](uinavigationcontroller/hideshowbarduration.md)
+- [class let hideShowBarDuration: CGFloat](./hideshowbarduration.md)
   A variable that specifies the duration when animating the navigation bar.
 
 

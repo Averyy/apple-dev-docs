@@ -1,7 +1,8 @@
 # init(tint:texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sheen color in macOS.
 
@@ -12,6 +13,12 @@ Creates a sheen color in macOS.
 
 ```swift
 init(tint: NSColor = .white, texture: MaterialParameters.Texture? = nil)
+```
+
+**Other overloads**:
+
+```swift
+init(tint: UIColor = .white, texture: MaterialParameters.Texture? = nil)
 ```
 
 #### Discussion

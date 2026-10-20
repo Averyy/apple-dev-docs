@@ -1,7 +1,8 @@
 # responseSecondaryRecipientIdentifiers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of strings that identifies the secondary recipients of the message, such as those in CC or BCC messages.
 
@@ -14,6 +15,10 @@ A set of strings that identifies the secondary recipients of the message, such a
 
 ```swift
 var responseSecondaryRecipientIdentifiers: Set<String> { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) NSSet<NSString *> * responseSecondaryRecipientIdentifiers;
 ```
 
 

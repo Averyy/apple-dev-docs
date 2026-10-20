@@ -1,7 +1,8 @@
 # NSHostingSizingOptions
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for how hosting views and controllers reflect their content’s size into Auto Layout constraints.
 
@@ -17,46 +18,47 @@ struct NSHostingSizingOptions
 ## Topics
 
 ### Geting sizing options
-- [static let intrinsicContentSize: NSHostingSizingOptions](nshostingsizingoptions/intrinsiccontentsize.md)
+- [static let intrinsicContentSize: NSHostingSizingOptions](./nshostingsizingoptions/intrinsiccontentsize.md)
   The hosting view creates and updates constraints that represent its content’s ideal size. These constraints in turn influence the hosting view’s `intrinsicContentSize`.
-- [static let maxSize: NSHostingSizingOptions](nshostingsizingoptions/maxsize.md)
+- [static let maxSize: NSHostingSizingOptions](./nshostingsizingoptions/maxsize.md)
   The hosting view creates and updates constraints that represent its content’s maximum size.
-- [static let minSize: NSHostingSizingOptions](nshostingsizingoptions/minsize.md)
+- [static let minSize: NSHostingSizingOptions](./nshostingsizingoptions/minsize.md)
   The hosting view creates and updates constraints that represent its content’s minimum size.
-- [static let preferredContentSize: NSHostingSizingOptions](nshostingsizingoptions/preferredcontentsize.md)
+- [static let preferredContentSize: NSHostingSizingOptions](./nshostingsizingoptions/preferredcontentsize.md)
   The hosting controller creates and updates constraints that represent its content’s ideal size. These constraints in turn influence the hosting controller’s `preferredContentSize`.
-- [static let standardBounds: NSHostingSizingOptions](nshostingsizingoptions/standardbounds.md)
+- [static let standardBounds: NSHostingSizingOptions](./nshostingsizingoptions/standardbounds.md)
   The hosting view creates constraints for its minimum, ideal, and maximum sizes.
 ### Creating a sizing option
-- [init(rawValue: Int)](nshostingsizingoptions/init(rawvalue:).md)
+- [init(rawValue: Int)](./nshostingsizingoptions/init%28rawvalue%29.md)
   Creates a new options from a raw value.
-- [let rawValue: Int](nshostingsizingoptions/rawvalue.md)
+- [let rawValue: Int](./nshostingsizingoptions/rawvalue.md)
   The raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Unifying your app’s animations](unifying-your-app-s-animations.md)
+### Displaying SwiftUI views in AppKit
+- [Unifying your app’s animations](./unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.
-- [class NSHostingController](nshostingcontroller.md)
+- [class NSHostingController](./nshostingcontroller.md)
   An AppKit view controller that hosts SwiftUI view hierarchy.
-- [class NSHostingView](nshostingview.md)
+- [class NSHostingView](./nshostingview.md)
   An AppKit view that hosts a SwiftUI view hierarchy.
-- [class NSHostingMenu](nshostingmenu.md)
+- [class NSHostingMenu](./nshostingmenu.md)
   An AppKit menu with menu items that are defined by a SwiftUI View.
-- [class NSHostingSceneRepresentation](nshostingscenerepresentation.md)
+- [class NSHostingSceneRepresentation](./nshostingscenerepresentation.md)
   An AppKit type that hosts and can present SwiftUI scenes
-- [struct NSHostingSceneBridgingOptions](nshostingscenebridgingoptions.md)
+- [struct NSHostingSceneBridgingOptions](./nshostingscenebridgingoptions.md)
   Options for how hosting views and controllers manage aspects of the associated window.
 
 

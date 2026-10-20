@@ -1,7 +1,8 @@
 # endProgress
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the end point of the receiver as a fraction of the entire transition.
 
@@ -19,13 +20,18 @@ Indicates the end point of the receiver as a fraction of the entire transition.
 var endProgress: Float { get set }
 ```
 
+```objc
+@property float endProgress;
+```
+
 #### Discussion
 
-The value must be greater than or equal to [`startProgress`](catransition/startprogress.md), and not greater than 1.0.  If `endProgress` is less than [`startProgress`](catransition/startprogress.md) the behavior is undefined. The default value is 1.0.
+The value must be greater than or equal to [`startProgress`](./startprogress.md), and not greater than 1.0.  If `endProgress` is less than [`startProgress`](./startprogress.md) the behavior is undefined. The default value is 1.0.
 
 ## See Also
 
-- [var startProgress: Float](catransition/startprogress.md)
+### Transition start and end point
+- [var startProgress: Float](./startprogress.md)
   Indicates the start point of the receiver as a fraction of the entire transition.
 
 

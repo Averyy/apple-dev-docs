@@ -1,7 +1,8 @@
 # SVGFEComponentTransferElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGFEComponentTransferElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [in1](svgfecomponenttransferelement/1634303-in1.md)
+- [in1](./svgfecomponenttransferelement/api-1634303-in1.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # inputPowerRequirement
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Describes the input power required in this state.
 
@@ -10,7 +11,7 @@ Describes the input power required in this state.
 
 ## Declaration
 
-```swift
+```c
 IOPMPowerFlags inputPowerRequirement;
 ```
 

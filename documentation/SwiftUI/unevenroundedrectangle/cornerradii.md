@@ -1,7 +1,8 @@
 # cornerRadii
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radii of each corner of the rounded rectangle.
 
@@ -22,7 +23,8 @@ var cornerRadii: RectangleCornerRadii
 
 ## See Also
 
-- [var style: RoundedCornerStyle](unevenroundedrectangle/style.md)
+### Getting the shape’s characteristics
+- [var style: RoundedCornerStyle](./style.md)
   The style of corners drawn by the rounded rectangle.
 
 

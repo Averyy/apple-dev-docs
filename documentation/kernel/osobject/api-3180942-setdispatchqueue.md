@@ -1,7 +1,8 @@
 # SetDispatchQueue
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
@@ -9,13 +10,22 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+virtual kern_return_t SetDispatchQueue(const IODispatchQueueName name, IODispatchQueue *queue);
+```
+
+*macOS*
+
+```cpp
 kern_return_t SetDispatchQueue(const char *name, IODispatchQueue *queue, OSDispatchMethod supermethod);
 ```
 
 ## See Also
 
-- [- CopyDispatchQueue](osobject/3180939-copydispatchqueue.md)
+### Managing an Object's Dispatch Queue
+- [- CopyDispatchQueue](./api-3180939-copydispatchqueue.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(color:texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color of emitted light in macOS.
 
@@ -14,6 +15,12 @@ Creates a color of emitted light in macOS.
 init(color: NSColor = .black, texture: CustomMaterial.Texture? = nil)
 ```
 
+**Other overloads**:
+
+```swift
+init(color: UIColor = .black, texture: CustomMaterial.Texture? = nil)
+```
+
 ## Parameters
 
 - `color`: The color of the emitted light. Defaults to black.
@@ -21,9 +28,10 @@ init(color: NSColor = .black, texture: CustomMaterial.Texture? = nil)
 
 ## See Also
 
-- [init(PhysicallyBasedMaterial.EmissiveColor)](custommaterial/emissivecolor-swift.struct/init(_:).md)
+### Creating an emissive color object
+- [init(PhysicallyBasedMaterial.EmissiveColor)](./init%28_%29.md)
   Creates a color of emitted light based on the emissive color property from a physically based material.
-- [init(color: UIColor, texture: CustomMaterial.Texture?)](custommaterial/emissivecolor-swift.struct/init(color:texture:)-81kgh.md)
+- [init(color: UIColor, texture: CustomMaterial.Texture?)](./init%28color,texture%29-81kgh.md)
   Creates a color of emitted light in macOS.
 
 

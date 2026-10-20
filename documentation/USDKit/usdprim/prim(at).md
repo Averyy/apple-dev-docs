@@ -1,7 +1,8 @@
 # prim(at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the prim at a given path, relative to this prim.
 
@@ -25,23 +26,24 @@ If `path` is relative, it is anchored to this prim’s path. If no prim exists a
 
 ## See Also
 
-- [var children: [USDPrim]](usdprim/children.md)
+### Traversing the hierarchy
+- [var children: [USDPrim]](./children.md)
   The active, loaded, defined, non-abstract child prims of this prim.
-- [var allChildren: [USDPrim]](usdprim/allchildren.md)
+- [var allChildren: [USDPrim]](./allchildren.md)
   The child prims of this prim.
-- [var descendants: [USDPrim]](usdprim/descendants.md)
+- [var descendants: [USDPrim]](./descendants.md)
   The active, loaded, defined, non-abstract descendant prims of this prim, in depth-first order.
-- [var allDescendants: [USDPrim]](usdprim/alldescendants.md)
+- [var allDescendants: [USDPrim]](./alldescendants.md)
   The descendant prims of this prim.
-- [var nextSibling: USDPrim?](usdprim/nextsibling.md)
+- [var nextSibling: USDPrim?](./nextsibling.md)
   The active, loaded, defined, non-abstract successor of this prim in its parent’s list of children.
-- [func children(where: USDPrim.Predicate) -> [USDPrim]](usdprim/children(where:).md)
+- [func children(where: USDPrim.Predicate) -> [USDPrim]](./children%28where%29.md)
   Returns the child prims of this prim that satisfy the given predicate.
-- [func descendants(where: USDPrim.Predicate) -> [USDPrim]](usdprim/descendants(where:).md)
+- [func descendants(where: USDPrim.Predicate) -> [USDPrim]](./descendants%28where%29.md)
   Returns the descendant prims of this prim that satisfy the given predicate.
-- [func nextSibling(where: USDPrim.Predicate) -> USDPrim](usdprim/nextsibling(where:).md)
+- [func nextSibling(where: USDPrim.Predicate) -> USDPrim](./nextsibling%28where%29.md)
   The successor of this prim in its parent’s list of children that satisfies the given predicate.
-- [USDPrim.Predicate](usdprim/predicate.md)
+- [USDPrim.Predicate](./predicate.md)
   A filter which returns true or false for prims based on their flags.
 
 

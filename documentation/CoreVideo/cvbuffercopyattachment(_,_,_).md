@@ -1,7 +1,8 @@
 # CVBufferCopyAttachment(_:_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a copy of an attachment from a Core Video buffer.
 
@@ -20,6 +21,10 @@ Returns a copy of an attachment from a Core Video buffer.
 func CVBufferCopyAttachment(_ buffer: CVBuffer, _ key: CFString, _ attachmentMode: UnsafeMutablePointer<CVAttachmentMode>?) -> CFTypeRef?
 ```
 
+```c
+extern CFTypeRefCVBufferCopyAttachment(CVBufferRef buffer, CFStringRef key, CVAttachmentMode *attachmentMode);
+```
+
 #### Return Value
 
 The requested attachment, or `nil` if no attachment for the specified key exists.
@@ -31,28 +36,29 @@ This function returns a retained attachment value, which you need to release whe
 ## Parameters
 
 - `buffer`: A buffer with an attachment to copy.
-- `key`: A string that identifies the attachment, which can be of any [`CFTypeRef`](https://developer.apple.com/documentation/corefoundation/cftyperef). See [`CVBuffer Attachment Keys`](cvbuffer-attachment-keys.md) and [`Image Buffer Attachment Keys`](image-buffer-attachment-keys.md) for predefined values.
-- `attachmentMode`: On output, this value points to the mode of the attachment. See [`CVAttachmentMode`](cvattachmentmode.md) for possible values. This value is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the buffer doesn’t define an attachment mode.
+- `key`: A string that identifies the attachment, which can be of any [`CFTypeRef`](../CoreFoundation/cftyperef.md). See [CVBuffer Attachment Keys](./cvbuffer-attachment-keys.md) and [Image Buffer Attachment Keys](./image-buffer-attachment-keys.md) for predefined values.
+- `attachmentMode`: On output, this value points to the mode of the attachment. See [`CVAttachmentMode`](./cvattachmentmode.md) for possible values. This value is [`nil`](../ObjectiveC/nil-227m0.md) if the buffer doesn’t define an attachment mode.
 
 ## See Also
 
-- [func CVBufferHasAttachment(CVBuffer, CFString) -> Bool](cvbufferhasattachment(_:_:).md)
+### Working with attachments
+- [func CVBufferHasAttachment(CVBuffer, CFString) -> Bool](./cvbufferhasattachment%28_,_%29.md)
   Returns a Boolean value that indicates whether a Core Video buffer contains a specified attachment.
-- [func CVBufferCopyAttachments(CVBuffer, CVAttachmentMode) -> CFDictionary?](cvbuffercopyattachments(_:_:).md)
+- [func CVBufferCopyAttachments(CVBuffer, CVAttachmentMode) -> CFDictionary?](./cvbuffercopyattachments%28_,_%29.md)
   Returns a copy of all attachments from a Core Video buffer.
-- [func CVBufferSetAttachment(CVBuffer, CFString, CFTypeRef, CVAttachmentMode)](cvbuffersetattachment(_:_:_:_:).md)
+- [func CVBufferSetAttachment(CVBuffer, CFString, CFTypeRef, CVAttachmentMode)](./cvbuffersetattachment%28_,_,_,_%29.md)
   Sets or adds an attachment to a Core Video buffer.
-- [func CVBufferSetAttachments(CVBuffer, CFDictionary, CVAttachmentMode)](cvbuffersetattachments(_:_:_:).md)
+- [func CVBufferSetAttachments(CVBuffer, CFDictionary, CVAttachmentMode)](./cvbuffersetattachments%28_,_,_%29.md)
   Sets a dictionary of attachments on a Core Video buffer.
-- [func CVBufferPropagateAttachments(CVBuffer, CVBuffer)](cvbufferpropagateattachments(_:_:).md)
+- [func CVBufferPropagateAttachments(CVBuffer, CVBuffer)](./cvbufferpropagateattachments%28_,_%29.md)
   Copies all attachments that Core Video can propagate from one buffer to another.
-- [func CVBufferRemoveAttachment(CVBuffer, CFString)](cvbufferremoveattachment(_:_:).md)
+- [func CVBufferRemoveAttachment(CVBuffer, CFString)](./cvbufferremoveattachment%28_,_%29.md)
   Removes the attachment you specify from a Core Video buffer.
-- [func CVBufferRemoveAllAttachments(CVBuffer)](cvbufferremoveallattachments(_:).md)
+- [func CVBufferRemoveAllAttachments(CVBuffer)](./cvbufferremoveallattachments%28_%29.md)
   Removes all attachments from a Core Video buffer.
-- [func CVBufferGetAttachment(CVBuffer, CFString, UnsafeMutablePointer<CVAttachmentMode>?) -> Unmanaged<CFTypeRef>?](cvbuffergetattachment(_:_:_:).md)
+- [func CVBufferGetAttachment(CVBuffer, CFString, UnsafeMutablePointer<CVAttachmentMode>?) -> Unmanaged<CFTypeRef>?](./cvbuffergetattachment%28_,_,_%29.md)
   Retrieves a specific attachment of a Core Video buffer.
-- [func CVBufferGetAttachments(CVBuffer, CVAttachmentMode) -> CFDictionary?](cvbuffergetattachments(_:_:).md)
+- [func CVBufferGetAttachments(CVBuffer, CVAttachmentMode) -> CFDictionary?](./cvbuffergetattachments%28_,_%29.md)
   Retrieves all attachments of a Core Video buffer.
 
 

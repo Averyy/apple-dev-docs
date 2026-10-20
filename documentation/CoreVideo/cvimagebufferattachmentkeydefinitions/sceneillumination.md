@@ -1,7 +1,8 @@
 # sceneIllumination
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Scene illumination measured in millilux.
 

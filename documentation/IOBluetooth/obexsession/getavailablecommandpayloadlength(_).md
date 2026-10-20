@@ -1,17 +1,22 @@
 # getAvailableCommandPayloadLength(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determine the maximum amount of data you can send in a particular command as an OBEX client session.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getAvailableCommandPayloadLength(_ inOpCode: OBEXOpCode) -> OBEXMaxPacketLength
+```
+
+```objc
+- (OBEXMaxPacketLength) getAvailableCommandPayloadLength:(OBEXOpCode) inOpCode;
 ```
 
 #### Return Value

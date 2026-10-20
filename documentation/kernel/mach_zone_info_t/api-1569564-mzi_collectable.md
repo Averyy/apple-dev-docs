@@ -1,14 +1,15 @@
 # mzi_collectable
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 uint64_t mzi_collectable;
 ```
 

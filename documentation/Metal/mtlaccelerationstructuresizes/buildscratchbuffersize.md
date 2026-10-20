@@ -1,17 +1,18 @@
 # buildScratchBufferSize
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of scratch memory, in bytes, the GPU devices needs to build the acceleration structure.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ The amount of scratch memory, in bytes, the GPU devices needs to build the accel
 var buildScratchBufferSize: Int
 ```
 
+```c
+NSUInteger buildScratchBufferSize;
+```
+
 ## See Also
 
-- [var accelerationStructureSize: Int](mtlaccelerationstructuresizes/accelerationstructuresize.md)
+### Retrieving the sizes
+- [var accelerationStructureSize: Int](./accelerationstructuresize.md)
   The size of the acceleration structure, in bytes.
-- [var refitScratchBufferSize: Int](mtlaccelerationstructuresizes/refitscratchbuffersize.md)
+- [var refitScratchBufferSize: Int](./refitscratchbuffersize.md)
   The amount of scratch memory, in bytes, the GPU device needs to refit the acceleration structure.
 
 

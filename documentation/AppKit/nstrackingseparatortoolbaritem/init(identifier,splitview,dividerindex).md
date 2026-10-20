@@ -1,7 +1,8 @@
 # init(identifier:splitView:dividerIndex:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tracking separator toolbar item and configures it to align with the divider of the split view.
 
@@ -12,6 +13,10 @@ Creates a new tracking separator toolbar item and configures it to align with th
 
 ```swift
 convenience init(identifier: NSToolbarItem.Identifier, splitView: NSSplitView, dividerIndex: Int)
+```
+
+```objc
++ (instancetype) trackingSeparatorToolbarItemWithIdentifier:(NSToolbarItemIdentifier) identifier splitView:(NSSplitView *) splitView dividerIndex:(NSInteger) dividerIndex;
 ```
 
 ## Parameters

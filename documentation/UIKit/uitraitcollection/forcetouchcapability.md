@@ -1,7 +1,8 @@
 # forceTouchCapability
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The force touch capability value of the trait collection.
 
@@ -18,19 +19,24 @@ The force touch capability value of the trait collection.
 var forceTouchCapability: UIForceTouchCapability { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIForceTouchCapability forceTouchCapability;
+```
+
 ## Mentions
 
-- [Checking the availability of 3D Touch](checking-the-availability-of-3d-touch.md)
+- [Checking the availability of 3D Touch](../checking-the-availability-of-3d-touch.md)
 
 #### Discussion
 
-3D Touch is available only on certain devices. On those devices, availability is determined by the user’s associated accessibility setting in the Settings app. Check this property’s value on app launch, and in your implementation of the [`traitCollectionDidChange(_:)`](uitraitenvironment/traitcollectiondidchange(_:).md) method.
+3D Touch is available only on certain devices. On those devices, availability is determined by the user’s associated accessibility setting in the Settings app. Check this property’s value on app launch, and in your implementation of the [`traitCollectionDidChange(_:)`](../uitraitenvironment/traitcollectiondidchange%28_%29.md) method.
 
-If this property does not contain a value, the meaning is equivalent to the value [`UIForceTouchCapability.unknown`](uiforcetouchcapability/unknown.md).
+If this property does not contain a value, the meaning is equivalent to the value [`UIForceTouchCapability.unknown`](../uiforcetouchcapability/unknown.md).
 
 ## See Also
 
-- [enum UIForceTouchCapability](uiforcetouchcapability.md)
+### Retrieving the force touch capability traits
+- [enum UIForceTouchCapability](../uiforcetouchcapability.md)
   Keys that indicate the availability of 3D Touch on a device.
 
 

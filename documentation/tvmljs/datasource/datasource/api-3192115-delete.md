@@ -1,7 +1,8 @@
 # delete
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Deletes an item from the data source array.
 
@@ -10,7 +11,7 @@ Deletes an item from the data source array.
 
 ## Declaration
 
-```swift
+```
 Array delete(
     in int index, 
     in int count
@@ -19,13 +20,14 @@ Array delete(
 
 ## See Also
 
-- [insert](datasource/datasource/3192116-insert.md)
+### Modifying the Data Source
+- [insert](./api-3192116-insert.md)
   Inserts a new item into the array.
-- [move](datasource/datasource/3192120-move.md)
+- [move](./api-3192120-move.md)
   Moves an item in the data source array.
-- [replace](datasource/datasource/3192121-replace.md)
+- [replace](./api-3192121-replace.md)
   Replaces an item in the data source array.
-- [update](datasource/datasource/3192123-update.md)
+- [update](./api-3192123-update.md)
   Updates an item in the data source array.
 
 

@@ -1,7 +1,8 @@
 # init(wrappedValue:from:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a codable configuration wrapper for the given value, using the given configuration provider type.
 
@@ -27,9 +28,10 @@ init(wrappedValue: T, from configurationProvider: ConfigurationProvider.Type)
 
 ## See Also
 
-- [init(wrappedValue: T)](codableconfiguration/init(wrappedvalue:).md)
+### Creating a Codable Configuration
+- [init(wrappedValue: T)](./init%28wrappedvalue%29.md)
   Creates a codable configuration wrapper for the given value.
-- [init(wrappedValue: T, from: KeyPath<AttributeScopes, ConfigurationProvider.Type>)](codableconfiguration/init(wrappedvalue:from:)-8mkxk.md)
+- [init(wrappedValue: T, from: KeyPath<AttributeScopes, ConfigurationProvider.Type>)](./init%28wrappedvalue,from%29-8mkxk.md)
   Creates a codable configuration wrapper for the given value, using given configuration provider type identified by key path.
 
 

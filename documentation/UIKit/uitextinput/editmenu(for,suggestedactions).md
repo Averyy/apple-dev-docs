@@ -1,7 +1,8 @@
 # editMenu(for:suggestedActions:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks for the menu to display for the given text range and actions the system provides.
 
@@ -16,6 +17,10 @@ Asks for the menu to display for the given text range and actions the system pro
 
 ```swift
 optional func editMenu(for textRange: UITextRange, suggestedActions: [UIMenuElement]) -> UIMenu?
+```
+
+```objc
+- (UIMenu *) editMenuForTextRange:(UITextRange *) textRange suggestedActions:(NSArray<UIMenuElement *> *) suggestedActions;
 ```
 
 #### Return Value
@@ -50,9 +55,10 @@ func editMenu(for textRange: UITextRange, suggestedActions: [UIMenuElement]) -> 
 
 ## See Also
 
-- [func willPresentEditMenu(animator: any UIEditMenuInteractionAnimating)](uitextinput/willpresenteditmenu(animator:).md)
+### Managing the edit menu
+- [func willPresentEditMenu(animator: any UIEditMenuInteractionAnimating)](./willpresenteditmenu%28animator%29.md)
   Tells the object when the system is about to present an edit menu with an animator.
-- [func willDismissEditMenu(animator: any UIEditMenuInteractionAnimating)](uitextinput/willdismisseditmenu(animator:).md)
+- [func willDismissEditMenu(animator: any UIEditMenuInteractionAnimating)](./willdismisseditmenu%28animator%29.md)
   Tells the object when the system is about to dismiss an edit menu with an animator.
 
 

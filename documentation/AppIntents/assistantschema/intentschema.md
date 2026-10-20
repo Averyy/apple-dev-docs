@@ -1,7 +1,8 @@
 # AssistantSchema.IntentSchema
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,25 +22,25 @@ struct IntentSchema
 ## Relationships
 
 ### Conforms To
-- [AssistantSchemas.AssistantIntent](assistantschemas/assistantintent.md)
-- [AssistantSchemas.BooksIntent](assistantschemas/booksintent.md)
-- [AssistantSchemas.BrowserIntent](assistantschemas/browserintent.md)
-- [AssistantSchemas.CameraIntent](assistantschemas/cameraintent.md)
-- [AssistantSchemas.FilesIntent](assistantschemas/filesintent.md)
-- [AssistantSchemas.Intent](assistantschemas/intent.md)
-- [AssistantSchemas.JournalIntent](assistantschemas/journalintent.md)
-- [AssistantSchemas.MailIntent](assistantschemas/mailintent.md)
-- [AssistantSchemas.Model](assistantschemas/model.md)
-- [AssistantSchemas.PhotosIntent](assistantschemas/photosintent.md)
-- [AssistantSchemas.PresentationIntent](assistantschemas/presentationintent.md)
-- [AssistantSchemas.ReaderIntent](assistantschemas/readerintent.md)
-- [AssistantSchemas.SpreadsheetIntent](assistantschemas/spreadsheetintent.md)
-- [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
-- [AssistantSchemas.VisualIntelligenceIntent](assistantschemas/visualintelligenceintent.md)
-- [AssistantSchemas.WhiteboardIntent](assistantschemas/whiteboardintent.md)
-- [AssistantSchemas.WordProcessorIntent](assistantschemas/wordprocessorintent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [AssistantSchemas.AssistantIntent](../assistantschemas/assistantintent.md)
+- [AssistantSchemas.BooksIntent](../assistantschemas/booksintent.md)
+- [AssistantSchemas.BrowserIntent](../assistantschemas/browserintent.md)
+- [AssistantSchemas.CameraIntent](../assistantschemas/cameraintent.md)
+- [AssistantSchemas.FilesIntent](../assistantschemas/filesintent.md)
+- [AssistantSchemas.Intent](../assistantschemas/intent.md)
+- [AssistantSchemas.JournalIntent](../assistantschemas/journalintent.md)
+- [AssistantSchemas.MailIntent](../assistantschemas/mailintent.md)
+- [AssistantSchemas.Model](../assistantschemas/model.md)
+- [AssistantSchemas.PhotosIntent](../assistantschemas/photosintent.md)
+- [AssistantSchemas.PresentationIntent](../assistantschemas/presentationintent.md)
+- [AssistantSchemas.ReaderIntent](../assistantschemas/readerintent.md)
+- [AssistantSchemas.SpreadsheetIntent](../assistantschemas/spreadsheetintent.md)
+- [AssistantSchemas.SystemIntent](../assistantschemas/systemintent.md)
+- [AssistantSchemas.VisualIntelligenceIntent](../assistantschemas/visualintelligenceintent.md)
+- [AssistantSchemas.WhiteboardIntent](../assistantschemas/whiteboardintent.md)
+- [AssistantSchemas.WordProcessorIntent](../assistantschemas/wordprocessorintent.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
 
 
 ---

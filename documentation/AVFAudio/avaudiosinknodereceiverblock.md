@@ -1,7 +1,8 @@
 # AVAudioSinkNodeReceiverBlock
 
 **Framework**: AVFAudio  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block that receives audio data from an audio sink node.
 
@@ -20,6 +21,10 @@ A block that receives audio data from an audio sink node.
 typealias AVAudioSinkNodeReceiverBlock = (UnsafePointer<AudioTimeStamp>, AVAudioFrameCount, UnsafePointer<AudioBufferList>) -> OSStatus
 ```
 
+```c
+typedef int (^)(const struct AudioTimeStamp *, unsigned int, const struct AudioBufferList *) AVAudioSinkNodeReceiverBlock;
+```
+
 #### Return Value
 
 An `OSStatus` result code. When an error occurs, consider the audio data invalid.
@@ -32,7 +37,8 @@ An `OSStatus` result code. When an error occurs, consider the audio data invalid
 
 ## See Also
 
-- [init(receiverBlock: AVAudioSinkNodeReceiverBlock)](avaudiosinknode/init(receiverblock:).md)
+### Creating an audio sink node
+- [init(receiverBlock: AVAudioSinkNodeReceiverBlock)](./avaudiosinknode/init%28receiverblock%29.md)
   Creates an audio sink node with a block that receives audio data.
 
 

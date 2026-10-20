@@ -1,13 +1,16 @@
 # contains(_:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the region contains the specified coordinate.
 
 **Availability**:
-- macOS 10.7+
-- watchOS 2.0+
+- macOS 10.7+ - Deprecated in 10.10
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use [`contains(_:)`](../clcircularregion/contains%28_%29.md) in [`CLCircularRegion`](../clcircularregion.md) instead.
 
 ## Declaration
 
@@ -15,13 +18,17 @@ Returns a Boolean value indicating whether the region contains the specified coo
 func contains(_ coordinate: CLLocationCoordinate2D) -> Bool
 ```
 
+```objc
+- (BOOL) containsCoordinate:(CLLocationCoordinate2D) coordinate;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the coordinate lies within the region’s boundaries or [`false`](https://developer.apple.com/documentation/swift/false) if it does not.
+[`true`](../../Swift/true.md) if the coordinate lies within the region’s boundaries or [`false`](../../Swift/false.md) if it does not.
 
 #### Discussion
 
-In iOS, use a [`CLCircularRegion`](clcircularregion.md) object to manage geographic regions.
+In iOS, use a [`CLCircularRegion`](../clcircularregion.md) object to manage geographic regions.
 
 ## Parameters
 
@@ -29,11 +36,12 @@ In iOS, use a [`CLCircularRegion`](clcircularregion.md) object to manage geograp
 
 ## See Also
 
-- [init(circularRegionWithCenter: CLLocationCoordinate2D, radius: CLLocationDistance, identifier: String)](clregion/init(circularregionwithcenter:radius:identifier:).md)
+### Deprecated
+- [init(circularRegionWithCenter: CLLocationCoordinate2D, radius: CLLocationDistance, identifier: String)](./init%28circularregionwithcenter,radius,identifier%29.md)
   Initializes and returns a region object defining a circular area.
-- [var center: CLLocationCoordinate2D](clregion/center.md)
+- [var center: CLLocationCoordinate2D](./center.md)
   The center point of the region.
-- [var radius: CLLocationDistance](clregion/radius.md)
+- [var radius: CLLocationDistance](./radius.md)
   The radius (measured in meters) that defines the region’s outer boundary.
 
 

@@ -1,7 +1,8 @@
 # currentValue
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current recorded value for the condition in which the trend is compared against.
 

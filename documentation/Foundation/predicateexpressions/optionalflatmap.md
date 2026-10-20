@@ -1,7 +1,8 @@
 # PredicateExpressions.OptionalFlatMap
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.0+
@@ -21,25 +22,25 @@ struct OptionalFlatMap<LHS, Wrapped, RHS, Result> where LHS : PredicateExpressio
 ## Topics
 
 ### Initializers
-- [init(LHS, (PredicateExpressions.Variable<Wrapped>) -> RHS)](predicateexpressions/optionalflatmap/init(_:_:)-3sqz7.md)
-- [init(LHS, (PredicateExpressions.Variable<Wrapped>) -> RHS)](predicateexpressions/optionalflatmap/init(_:_:)-fnq2.md)
+- [init(LHS, (PredicateExpressions.Variable<Wrapped>) -> RHS)](./optionalflatmap/init%28_,_%29-3sqz7.md)
+- [init(LHS, (PredicateExpressions.Variable<Wrapped>) -> RHS)](./optionalflatmap/init%28_,_%29-fnq2.md)
 ### Instance Properties
-- [let transform: RHS](predicateexpressions/optionalflatmap/transform.md)
-- [let variable: PredicateExpressions.Variable<Wrapped>](predicateexpressions/optionalflatmap/variable.md)
-- [let wrapped: LHS](predicateexpressions/optionalflatmap/wrapped.md)
+- [let transform: RHS](./optionalflatmap/transform.md)
+- [let variable: PredicateExpressions.Variable<Wrapped>](./optionalflatmap/variable.md)
+- [let wrapped: LHS](./optionalflatmap/wrapped.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Escapable](../swift/escapable.md)
-- [PredicateExpression](predicateexpression.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StandardPredicateExpression](standardpredicateexpression.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Escapable](../../Swift/escapable.md)
+- [PredicateExpression](../predicateexpression.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [StandardPredicateExpression](../standardpredicateexpression.md)
 
 
 ---

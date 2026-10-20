@@ -1,14 +1,17 @@
 # ENDiagnosisReportType.confirmedClinicalDiagnosis
 
 **Framework**: Exposure Notification  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The report comes from a confirmed clinical diagnosis.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,17 +19,22 @@ The report comes from a confirmed clinical diagnosis.
 case confirmedClinicalDiagnosis
 ```
 
+```c
+ENDiagnosisReportTypeConfirmedClinicalDiagnosis
+```
+
 ## See Also
 
-- [ENDiagnosisReportType.confirmedTest](endiagnosisreporttype/confirmedtest.md)
+### Enumeration Cases
+- [ENDiagnosisReportType.confirmedTest](./confirmedtest.md)
   The report comes from a confirmed test.
-- [ENDiagnosisReportType.recursive](endiagnosisreporttype/recursive.md)
+- [ENDiagnosisReportType.recursive](./recursive.md)
   The report comes from a person determined positive based on exposure to another person confirmed positive.
-- [ENDiagnosisReportType.revoked](endiagnosisreporttype/revoked.md)
+- [ENDiagnosisReportType.revoked](./revoked.md)
   The report is a negative test.
-- [ENDiagnosisReportType.selfReported](endiagnosisreporttype/selfreported.md)
+- [ENDiagnosisReportType.selfReported](./selfreported.md)
   The report comes from the user, without health authority involvement.
-- [ENDiagnosisReportType.unknown](endiagnosisreporttype/unknown.md)
+- [ENDiagnosisReportType.unknown](./unknown.md)
   The report is an unknown type or is not available.
 
 

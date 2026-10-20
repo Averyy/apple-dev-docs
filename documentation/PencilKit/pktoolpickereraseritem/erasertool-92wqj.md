@@ -1,7 +1,8 @@
 # eraserTool
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An eraser tool for erasing parts of a drawing.
 

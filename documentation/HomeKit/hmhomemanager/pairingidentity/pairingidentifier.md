@@ -1,7 +1,8 @@
 # pairingIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The HomeKit Accessory Protocol identifier you use to configure a temporary, provisional home.
 
@@ -17,9 +18,10 @@ let pairingIdentifier: String
 
 ## See Also
 
-- [init(pairingIdentifier: String, publicKey: Data)](hmhomemanager/pairingidentity/init(pairingidentifier:publickey:).md)
+### Creating a pairing identity
+- [init(pairingIdentifier: String, publicKey: Data)](./init%28pairingidentifier,publickey%29.md)
   Creates identity information that an installation service uses to set up a provisional home.
-- [let publicKey: Data](hmhomemanager/pairingidentity/publickey.md)
+- [let publicKey: Data](./publickey.md)
   The Ed25519 HAP public key for pairing a HomeKit accessory.
 
 

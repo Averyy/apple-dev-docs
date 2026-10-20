@@ -1,7 +1,8 @@
 # RCSService.Business.Feature.businessStandalone
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Business Standalone feature.
 

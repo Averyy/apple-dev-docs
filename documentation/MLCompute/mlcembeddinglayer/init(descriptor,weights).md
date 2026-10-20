@@ -1,21 +1,26 @@
 # init(descriptor:weights:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an embedding layer with the descriptor and word embedding weights tensor you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 convenience init(descriptor: MLCEmbeddingDescriptor, weights: MLCTensor)
+```
+
+```objc
++ (instancetype) layerWithDescriptor:(MLCEmbeddingDescriptor *) descriptor weights:(MLCTensor *) weights;
 ```
 
 ## Parameters
@@ -25,7 +30,8 @@ convenience init(descriptor: MLCEmbeddingDescriptor, weights: MLCTensor)
 
 ## See Also
 
-- [class MLCEmbeddingDescriptor](mlcembeddingdescriptor.md)
+### Creating Embedding Layers
+- [class MLCEmbeddingDescriptor](../mlcembeddingdescriptor.md)
   A configuration object you use to create an embedding layer.
 
 

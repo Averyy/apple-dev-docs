@@ -1,7 +1,8 @@
 # sortedArray(using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array that lists the receiving array’s elements in ascending order, as determined by the comparison method specified by a given selector.
 
@@ -20,6 +21,10 @@ Returns an array that lists the receiving array’s elements in ascending order,
 func sortedArray(using comparator: Selector) -> [Any]
 ```
 
+```objc
+- (NSArray<id> *) sortedArrayUsingSelector:(SEL) comparator;
+```
+
 #### Return Value
 
 An array that lists the receiving array’s elements in ascending order, as determined by the comparison method specified by the selector `comparator`.
@@ -30,7 +35,7 @@ The new array contains references to the receiving array’s elements, not copie
 
 The `comparator` message is sent to each object in the array and has as its single argument another object in the array.
 
-For example, an array of `NSString` objects can be sorted by using the [`caseInsensitiveCompare(_:)`](nsstring/caseinsensitivecompare(_:).md) method declared in the `NSString` class. Assuming `anArray` exists, a sorted version of the array can be created in this way:
+For example, an array of `NSString` objects can be sorted by using the [`caseInsensitiveCompare(_:)`](../nsstring/caseinsensitivecompare%28_%29.md) method declared in the `NSString` class. Assuming `anArray` exists, a sorted version of the array can be created in this way:
 
 ```objc
      NSArray *sortedArray =
@@ -43,19 +48,20 @@ For example, an array of `NSString` objects can be sorted by using the [`caseIns
 
 ## See Also
 
-- [var sortedArrayHint: Data](nsarray/sortedarrayhint.md)
-  Analyzes the array and returns a “hint” that speeds the sorting of the array when the hint is supplied to [`sortedArray(_:context:hint:)`](nsarray/sortedarray(_:context:hint:).md).
-- [func sortedArray((Any, Any, UnsafeMutableRawPointer?) -> Int, context: UnsafeMutableRawPointer?) -> [Any]](nsarray/sortedarray(_:context:).md)
+### Sorting
+- [var sortedArrayHint: Data](./sortedarrayhint.md)
+  Analyzes the array and returns a “hint” that speeds the sorting of the array when the hint is supplied to [`sortedArray(_:context:hint:)`](./sortedarray%28_,context,hint%29.md).
+- [func sortedArray((Any, Any, UnsafeMutableRawPointer?) -> Int, context: UnsafeMutableRawPointer?) -> [Any]](./sortedarray%28_,context%29.md)
   Returns a new array that lists the receiving array’s elements in ascending order as defined by the comparison function `comparator`.
-- [func sortedArray((Any, Any, UnsafeMutableRawPointer?) -> Int, context: UnsafeMutableRawPointer?, hint: Data?) -> [Any]](nsarray/sortedarray(_:context:hint:).md)
+- [func sortedArray((Any, Any, UnsafeMutableRawPointer?) -> Int, context: UnsafeMutableRawPointer?, hint: Data?) -> [Any]](./sortedarray%28_,context,hint%29.md)
   Returns a new array that lists the receiving array’s elements in ascending order as defined by the comparison function `comparator`.
-- [func sortedArray(using: [NSSortDescriptor]) -> [Any]](nsarray/sortedarray(using:)-82wi1.md)
+- [func sortedArray(using: [NSSortDescriptor]) -> [Any]](./sortedarray%28using%29-82wi1.md)
   Returns a copy of the receiving array sorted as specified by a given array of sort descriptors.
-- [func sortedArray(comparator: (Any, Any) -> ComparisonResult) -> [Any]](nsarray/sortedarray(comparator:).md)
+- [func sortedArray(comparator: (Any, Any) -> ComparisonResult) -> [Any]](./sortedarray%28comparator%29.md)
   Returns an array that lists the receiving array’s elements in ascending order, as determined by the comparison method specified by a given `NSComparator` block.
-- [func sortedArray(options: NSSortOptions, usingComparator: (Any, Any) -> ComparisonResult) -> [Any]](nsarray/sortedarray(options:usingcomparator:).md)
+- [func sortedArray(options: NSSortOptions, usingComparator: (Any, Any) -> ComparisonResult) -> [Any]](./sortedarray%28options,usingcomparator%29.md)
   Returns an array that lists the receiving array’s elements in ascending order, as determined by the comparison method specified by a given `NSComparator` block.
-- [typealias Comparator](comparator.md)
+- [typealias Comparator](../comparator.md)
   Defines the signature for a block object used for comparison operations.
 
 

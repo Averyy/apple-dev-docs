@@ -1,7 +1,8 @@
 # DatastoreLocation
 
 **Framework**: TipKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type for specifying a custom location for your tips datastore.
 
@@ -22,25 +23,25 @@ struct DatastoreLocation
 
 #### Overview
 
-For more information on datastore location, see [`datastoreLocation(_:)`](tips/configurationoption/datastorelocation(_:).md).
+For more information on datastore location, see [`datastoreLocation(_:)`](./datastorelocation%28_%29.md).
 
 ## Topics
 
 ### Type Properties
-- [static var applicationDefault: Tips.ConfigurationOption.DatastoreLocation](tips/configurationoption/datastorelocation/applicationdefault.md)
+- [static var applicationDefault: Tips.ConfigurationOption.DatastoreLocation](./datastorelocation/applicationdefault.md)
   The default location for persisting tips, which is generally your application’s support directory.
 ### Type Methods
-- [static func groupContainer(identifier: String) throws -> Tips.ConfigurationOption.DatastoreLocation](tips/configurationoption/datastorelocation/groupcontainer(identifier:).md)
+- [static func groupContainer(identifier: String) throws -> Tips.ConfigurationOption.DatastoreLocation](./datastorelocation/groupcontainer%28identifier%29.md)
   DatastoreLocation for persisting tips in a group container.
-- [static func url(URL) -> Tips.ConfigurationOption.DatastoreLocation](tips/configurationoption/datastorelocation/url(_:).md)
+- [static func url(URL) -> Tips.ConfigurationOption.DatastoreLocation](./datastorelocation/url%28_%29.md)
   Configuration option for persisting tips at a custom on-disk location.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

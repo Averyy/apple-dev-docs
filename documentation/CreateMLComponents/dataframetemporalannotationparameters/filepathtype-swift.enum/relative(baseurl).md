@@ -1,7 +1,8 @@
 # DataFrameTemporalAnnotationParameters.FilePathType.relative(baseURL:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The file path is relative to the `baseURL`.
 
@@ -22,7 +23,8 @@ case relative(baseURL: URL)
 
 ## See Also
 
-- [DataFrameTemporalAnnotationParameters.FilePathType.absolute](dataframetemporalannotationparameters/filepathtype-swift.enum/absolute.md)
+### File path types
+- [DataFrameTemporalAnnotationParameters.FilePathType.absolute](./absolute.md)
   The file path is absolute.
 
 

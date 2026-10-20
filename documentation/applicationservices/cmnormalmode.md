@@ -1,7 +1,8 @@
 # cmNormalMode
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 This is the default setting. Normal mode indicates that the CMM should use its default method to compromise between performance and resource requirements.
 

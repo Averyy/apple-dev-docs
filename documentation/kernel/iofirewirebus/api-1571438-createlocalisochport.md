@@ -1,14 +1,15 @@
 # createLocalIsochPort
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOFWLocalIsochPort * createLocalIsochPort(bool talking, DCLCommand *opcodes, DCLTaskInfo *info, UInt32 startEvent, UInt32 startState, UInt32 startMask);
 ```
 

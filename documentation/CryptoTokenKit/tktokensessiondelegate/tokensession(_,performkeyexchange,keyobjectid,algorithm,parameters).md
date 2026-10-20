@@ -1,7 +1,8 @@
 # tokenSession(_:performKeyExchange:keyObjectID:algorithm:parameters:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to perform a key exchange using the specified key and algorithm.
 
@@ -20,6 +21,10 @@ Tells the delegate to perform a key exchange using the specified key and algorit
 optional func tokenSession(_ session: TKTokenSession, performKeyExchange otherPartyPublicKeyData: Data, keyObjectID objectID: TKToken.ObjectID, algorithm: TKTokenKeyAlgorithm, parameters: TKTokenKeyExchangeParameters) throws -> Data
 ```
 
+```objc
+- (NSData *) tokenSession:(TKTokenSession *) session performKeyExchangeWithPublicKey:(NSData *) otherPartyPublicKeyData usingKey:(TKTokenObjectID) objectID algorithm:(TKTokenKeyAlgorithm *) algorithm parameters:(TKTokenKeyExchangeParameters *) parameters error:(NSError **) error;
+```
+
 #### Return Value
 
 The result of the key exchange, or `nil` if an error occurred.
@@ -34,11 +39,12 @@ The result of the key exchange, or `nil` if an error occurred.
 
 ## See Also
 
-- [func tokenSession(TKTokenSession, sign: Data, keyObjectID: TKToken.ObjectID, algorithm: TKTokenKeyAlgorithm) throws -> Data](tktokensessiondelegate/tokensession(_:sign:keyobjectid:algorithm:).md)
+### Performing Cryptographic Operations
+- [func tokenSession(TKTokenSession, sign: Data, keyObjectID: TKToken.ObjectID, algorithm: TKTokenKeyAlgorithm) throws -> Data](./tokensession%28_,sign,keyobjectid,algorithm%29.md)
   Tells the delegate to sign a data object using the specified key and algorithm.
-- [func tokenSession(TKTokenSession, decrypt: Data, keyObjectID: TKToken.ObjectID, algorithm: TKTokenKeyAlgorithm) throws -> Data](tktokensessiondelegate/tokensession(_:decrypt:keyobjectid:algorithm:).md)
+- [func tokenSession(TKTokenSession, decrypt: Data, keyObjectID: TKToken.ObjectID, algorithm: TKTokenKeyAlgorithm) throws -> Data](./tokensession%28_,decrypt,keyobjectid,algorithm%29.md)
   Tells the delegate to decrypt a data object using the specified key and algorithm.
-- [class TKTokenKeyExchangeParameters](tktokenkeyexchangeparameters.md)
+- [class TKTokenKeyExchangeParameters](../tktokenkeyexchangeparameters.md)
   Parameters used to perform specific key exchange operations.
 
 

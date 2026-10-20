@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A projection of the binding value that returns a binding.
 
@@ -26,7 +27,8 @@ Use the projected value to pass a binding value down a view hierarchy.
 
 ## See Also
 
-- [var wrappedValue: Value](focusstate/binding/wrappedvalue.md)
+### Inspecting the binding
+- [var wrappedValue: Value](./wrappedvalue.md)
   The underlying value referenced by the bound property.
 
 

@@ -1,7 +1,8 @@
 # UIPasteboard.ChangedMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -18,16 +19,16 @@ struct ChangedMessage
 ## Topics
 
 ### Initializers
-- [init(typesAdded: [String], typesRemoved: [String])](uipasteboard/changedmessage/init(typesadded:typesremoved:).md)
+- [init(typesAdded: [String], typesRemoved: [String])](./changedmessage/init%28typesadded,typesremoved%29.md)
 ### Instance Properties
-- [var typesAdded: [String]](uipasteboard/changedmessage/typesadded.md)
-- [var typesRemoved: [String]](uipasteboard/changedmessage/typesremoved.md)
+- [var typesAdded: [String]](./changedmessage/typesadded.md)
+- [var typesRemoved: [String]](./changedmessage/typesremoved.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

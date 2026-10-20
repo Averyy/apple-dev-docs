@@ -1,7 +1,8 @@
 # MTLBindingType.tensor
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case tensor
+```
+
+```c
+MTLBindingTypeTensor
 ```
 
 

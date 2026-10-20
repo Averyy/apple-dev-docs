@@ -1,7 +1,8 @@
 # InAppPurchasePrice.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an In-App Purchase price resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an In-App Purchase price resource.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchasePrice.Attributes
 ```
 
@@ -22,7 +23,8 @@ object InAppPurchasePrice.Attributes
 
 ## See Also
 
-- [object InAppPurchasePrice.Relationships](inapppurchaseprice/relationships-data.dictionary.md)
+### Objects
+- [object InAppPurchasePrice.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

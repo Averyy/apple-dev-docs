@@ -1,7 +1,8 @@
 # materialActiveAppearance(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an explicit active appearance for this material.
 

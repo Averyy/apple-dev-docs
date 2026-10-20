@@ -1,7 +1,8 @@
 # hasActiveDrag
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the table view is currently tracking a drag session.
 
@@ -17,13 +18,18 @@ A Boolean value that indicates whether the table view is currently tracking a dr
 var hasActiveDrag: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasActiveDrag;
+```
+
 ## See Also
 
-- [var dragDelegate: (any UITableViewDragDelegate)?](uitableview/dragdelegate.md)
+### Managing drag interactions
+- [var dragDelegate: (any UITableViewDragDelegate)?](./dragdelegate.md)
   The delegate object that manages the dragging of items from the table view.
-- [protocol UITableViewDragDelegate](uitableviewdragdelegate.md)
+- [protocol UITableViewDragDelegate](../uitableviewdragdelegate.md)
   The interface for initiating drags from a table view.
-- [var dragInteractionEnabled: Bool](uitableview/draginteractionenabled.md)
+- [var dragInteractionEnabled: Bool](./draginteractionenabled.md)
   A Boolean value that indicates whether the table view supports dragging content.
 
 

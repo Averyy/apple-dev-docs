@@ -1,17 +1,24 @@
 # kSecTransformActionCanExecute
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An action that triggers to verify that all required attributes are either set or connected to another transform.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 let kSecTransformActionCanExecute: CFString
+```
+
+```c
+extern CFStringRef const kSecTransformActionCanExecute;
 ```
 
 #### Discussion

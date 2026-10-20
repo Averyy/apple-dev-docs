@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a new location using the location and offset you specify.
@@ -13,6 +14,10 @@ Returns a new location using the location and offset you specify.
 
 ```swift
 func location(_ location: any NSTextLocation, offsetBy offset: Int) -> (any NSTextLocation)?
+```
+
+```objc
+- (id<NSTextLocation>) locationFromLocation:(id<NSTextLocation>) location withOffset:(NSInteger) offset;
 ```
 
 #### Return Value
@@ -30,11 +35,12 @@ The offset value can be positive or negative indicating the logical direction.
 
 ## See Also
 
-- [func lineFragmentRange(for: CGPoint, inContainerAt: any NSTextLocation) -> NSTextRange?](nstextselectiondatasource/linefragmentrange(for:incontainerat:).md)
+### Finding specific content in the selection
+- [func lineFragmentRange(for: CGPoint, inContainerAt: any NSTextLocation) -> NSTextRange?](./linefragmentrange%28for,incontainerat%29.md)
   Returns the range of the line fragment that contains the point you specify.
-- [func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int](nstextselectiondatasource/offset(from:to:).md)
+- [func offset(from: any NSTextLocation, to: any NSTextLocation) -> Int](./offset%28from,to%29.md)
   Returns the offset between the two locations you specify.
-- [func textRange(for: NSTextSelection.Granularity, enclosing: any NSTextLocation) -> NSTextRange?](nstextselectiondatasource/textrange(for:enclosing:).md)
+- [func textRange(for: NSTextSelection.Granularity, enclosing: any NSTextLocation) -> NSTextRange?](./textrange%28for,enclosing%29.md)
   Returns a text range that corresponds to selection granularity of the enclosing location.
 
 

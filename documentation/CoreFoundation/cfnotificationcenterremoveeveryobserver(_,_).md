@@ -1,23 +1,28 @@
 # CFNotificationCenterRemoveEveryObserver(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Stops an observer from receiving any notifications from any object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFNotificationCenterRemoveEveryObserver(_ center: CFNotificationCenter!, _ observer: UnsafeRawPointer!)
+```
+
+```c
+extern void CFNotificationCenterRemoveEveryObserver(CFNotificationCenterRef center, const void *observer);
 ```
 
 #### Discussion
@@ -31,9 +36,10 @@ If you no longer want an observer to receive any notifications, perhaps because 
 
 ## See Also
 
-- [func CFNotificationCenterAddObserver(CFNotificationCenter!, UnsafeRawPointer!, CFNotificationCallback!, CFString!, UnsafeRawPointer!, CFNotificationSuspensionBehavior)](cfnotificationcenteraddobserver(_:_:_:_:_:_:).md)
+### Adding and Removing Observers
+- [func CFNotificationCenterAddObserver(CFNotificationCenter!, UnsafeRawPointer!, CFNotificationCallback!, CFString!, UnsafeRawPointer!, CFNotificationSuspensionBehavior)](./cfnotificationcenteraddobserver%28_,_,_,_,_,_%29.md)
   Registers an observer to receive notifications.
-- [func CFNotificationCenterRemoveObserver(CFNotificationCenter!, UnsafeRawPointer!, CFNotificationName!, UnsafeRawPointer!)](cfnotificationcenterremoveobserver(_:_:_:_:).md)
+- [func CFNotificationCenterRemoveObserver(CFNotificationCenter!, UnsafeRawPointer!, CFNotificationName!, UnsafeRawPointer!)](./cfnotificationcenterremoveobserver%28_,_,_,_%29.md)
   Stops an observer from receiving certain notifications.
 
 

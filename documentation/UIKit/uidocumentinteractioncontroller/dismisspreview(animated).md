@@ -1,7 +1,8 @@
 # dismissPreview(animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the currently active document preview.
 
@@ -17,17 +18,22 @@ Dismisses the currently active document preview.
 func dismissPreview(animated: Bool)
 ```
 
+```objc
+- (void) dismissPreviewAnimated:(BOOL) animated;
+```
+
 #### Discussion
 
 Use this method to dismiss the document preview programmatically. The document interaction controller may also dismiss the document preview automatically in response to user actions.
 
 ## Parameters
 
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) to animate the dismissal of the document preview or [`false`](https://developer.apple.com/documentation/swift/false) to dismiss it immediately.
+- `animated`: Specify [`true`](../../Swift/true.md) to animate the dismissal of the document preview or [`false`](../../Swift/false.md) to dismiss it immediately.
 
 ## See Also
 
-- [func presentPreview(animated: Bool) -> Bool](uidocumentinteractioncontroller/presentpreview(animated:).md)
+### Presenting and dismissing a document preview
+- [func presentPreview(animated: Bool) -> Bool](./presentpreview%28animated%29.md)
   Displays a full-screen preview of the target document.
 
 

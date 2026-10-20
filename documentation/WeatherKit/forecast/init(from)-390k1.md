@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: WeatherKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -18,9 +19,12 @@
 init(from decoder: any Decoder) throws
 ```
 
+Available when `Element` is `HourWeather`.
+
 ## See Also
 
-- [init(from: any Decoder) throws](forecast/init(from:)-4wobg.md)
+### Creating the forecast
+- [init(from: any Decoder) throws](./init%28from%29-4wobg.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # horizontalPagination
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal pagination mode.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The horizontal pagination mode.
 var horizontalPagination: NSPrintInfo.PaginationMode { get set }
 ```
 
+```objc
+@property NSPrintingPaginationMode horizontalPagination;
+```
+
 #### Discussion
 
-Pagination modes described in [`NSPrintInfo.PaginationMode`](nsprintinfo/paginationmode.md).
+Pagination modes described in [`NSPrintInfo.PaginationMode`](./paginationmode.md).
 
 ## See Also
 
-- [var verticalPagination: NSPrintInfo.PaginationMode](nsprintinfo/verticalpagination.md)
+### Pagination
+- [var verticalPagination: NSPrintInfo.PaginationMode](./verticalpagination.md)
   The vertical pagination to the specified mode.
-- [NSPrintInfo.PaginationMode](nsprintinfo/paginationmode.md)
+- [NSPrintInfo.PaginationMode](./paginationmode.md)
   Constants that specify the different ways in which an image is divided into pages.
 
 

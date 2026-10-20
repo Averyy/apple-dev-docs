@@ -1,7 +1,8 @@
 # StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A set of declaration and status items that the client supports.
 
@@ -16,14 +17,14 @@ A set of declaration and status items that the client supports.
 
 ## Declaration
 
-```swift
+```
 object StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject
 ```
 
 ## Topics
 
 ### Objects
-- [object StatusManagementClientCapabilitiesCapabilities_SupportedPayloads_DeclarationsObject](statusmanagementclientcapabilitiescapabilities_supportedpayloads_declarationsobject.md)
+- [object StatusManagementClientCapabilitiesCapabilities_SupportedPayloads_DeclarationsObject](./statusmanagementclientcapabilitiescapabilities_supportedpayloads_declarationsobject.md)
   A set of declarations that the client supports.
 
 ## Properties
@@ -33,7 +34,8 @@ object StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject
 
 ## See Also
 
-- [object StatusManagementClientCapabilitiesCapabilities_SupportedFeaturesObject](statusmanagementclientcapabilitiescapabilities_supportedfeaturesobject.md)
+### Objects
+- [object StatusManagementClientCapabilitiesCapabilities_SupportedFeaturesObject](./statusmanagementclientcapabilitiescapabilities_supportedfeaturesobject.md)
   A set of optional protocol features that the client supports. Each object’s key represents a feature, and the property value represents the feature’s associated parameters.
 
 

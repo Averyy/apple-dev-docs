@@ -1,7 +1,8 @@
 # constantValues
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The constant values to use when creating the function. These correspond to constants defined in your Metal code.
 
@@ -19,7 +20,8 @@ var constantValues: MTLFunctionConstantValues { get set }
 
 ## See Also
 
-- [var library: any MTLLibrary](lowlevelmaterialresource/geometrymodifier/descriptor/library.md)
+### Inspecting the configuration
+- [var library: any MTLLibrary](./library.md)
   The Metal library that contains the function.
 
 

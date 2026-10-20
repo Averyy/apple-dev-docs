@@ -1,7 +1,8 @@
 # init(sortDescriptors:predicate:limit:offset:)
 
 **Framework**: FinanceKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new transaction query with the provided sort descriptors, predicate, and limit on the number of records the query should return.
 
@@ -17,8 +18,8 @@ init(sortDescriptors: [SortDescriptor<Transaction>] = [], predicate: Predicate<T
 
 ## Parameters
 
-- `sortDescriptors`: An array of [`Transaction`](transaction.md) sort descriptors.
-- `predicate`: A [`Predicate`](https://developer.apple.com/documentation/foundation/predicate) to filter the `Transaction` records with.
+- `sortDescriptors`: An array of [`Transaction`](../transaction.md) sort descriptors.
+- `predicate`: A [`Predicate`](../../Foundation/predicate.md) to filter the `Transaction` records with.
 - `limit`: An integer that indicates the maximum number of `Transaction` records to return.
 - `offset`: An integer that indicates the number of records to offset the result by.
 

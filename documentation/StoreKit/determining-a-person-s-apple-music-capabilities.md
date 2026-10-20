@@ -1,16 +1,17 @@
 # Determining a person’s Apple Music capabilities
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Determine which Apple Music capabilities are available on a customer’s device.
 
 #### Overview
 
-After you request the user’s permission to access their Apple Music library (see [`Requesting Access to Apple Music Library`](requesting-access-to-apple-music-library.md)), you confirm that authorization and then identify Apple Music capabilities on the user’s device.
+After you request the user’s permission to access their Apple Music library (see [Requesting Access to Apple Music Library](./requesting-access-to-apple-music-library.md)), you confirm that authorization and then identify Apple Music capabilities on the user’s device.
 
 ##### Confirm Whether the User Authorized Access to Apple Music Library
 
-Use [`SKCloudServiceController`](skcloudservicecontroller.md)’s [`authorizationStatus()`](skcloudservicecontroller/authorizationstatus().md) to check whether the user has authorized access to Apple Music Library. If the authorization status is [`SKCloudServiceAuthorizationStatus.notDetermined`](skcloudserviceauthorizationstatus/notdetermined.md), call [`SKCloudServiceController`](skcloudservicecontroller.md)’s [`requestAuthorization(_:)`](skcloudservicecontroller/requestauthorization(_:).md) to prompt the user for access.
+Use [`SKCloudServiceController`](./skcloudservicecontroller.md)’s [`authorizationStatus()`](./skcloudservicecontroller/authorizationstatus%28%29.md) to check whether the user has authorized access to Apple Music Library. If the authorization status is [`SKCloudServiceAuthorizationStatus.notDetermined`](./skcloudserviceauthorizationstatus/notdetermined.md), call [`SKCloudServiceController`](./skcloudservicecontroller.md)’s [`requestAuthorization(_:)`](./skcloudservicecontroller/requestauthorization%28_%29.md) to prompt the user for access.
 
 **Swift**:
 
@@ -24,7 +25,7 @@ guard SKCloudServiceController.authorizationStatus() == .notDetermined else { re
  SKCloudServiceAuthorizationStatus status = ([SKCloudServiceController authorizationStatus] == SKCloudServiceAuthorizationStatusNotDetermined);
 ```
 
-If the authorization status is [`SKCloudServiceAuthorizationStatus.authorized`](skcloudserviceauthorizationstatus/authorized.md), your app can proceed to determine which Apple Music capabilities ([`musicCatalogPlayback`](skcloudservicecapability/musiccatalogplayback.md), [`musicCatalogSubscriptionEligible`](skcloudservicecapability/musiccatalogsubscriptioneligible.md), or [`addToCloudMusicLibrary`](skcloudservicecapability/addtocloudmusiclibrary.md)) are available on the user’s device.
+If the authorization status is [`SKCloudServiceAuthorizationStatus.authorized`](./skcloudserviceauthorizationstatus/authorized.md), your app can proceed to determine which Apple Music capabilities ([`musicCatalogPlayback`](./skcloudservicecapability/musiccatalogplayback.md), [`musicCatalogSubscriptionEligible`](./skcloudservicecapability/musiccatalogsubscriptioneligible.md), or [`addToCloudMusicLibrary`](./skcloudservicecapability/addtocloudmusiclibrary.md)) are available on the user’s device.
 
 **Swift**:
 
@@ -43,7 +44,7 @@ if ([SKCloudServiceController authorizationStatus] == SKCloudServiceAuthorizatio
 
 ##### Create a Cloud Service Controller and Its Handler to Fetch Capabilities
 
-First, create an [`SKCloudServiceController`](skcloudservicecontroller.md) object:
+First, create an [`SKCloudServiceController`](./skcloudservicecontroller.md) object:
 
 **Swift**:
 
@@ -57,11 +58,11 @@ let controller = SKCloudServiceController()
 SKCloudServiceController *controller = [[SKCloudServiceController alloc] init];
 ```
 
-Then call its [`requestCapabilities(completionHandler:)`](skcloudservicecontroller/requestcapabilities(completionhandler:).md) method to fetch the current Apple Music capabilities, as described in the sections that follow.
+Then call its [`requestCapabilities(completionHandler:)`](./skcloudservicecontroller/requestcapabilities%28completionhandler%29.md) method to fetch the current Apple Music capabilities, as described in the sections that follow.
 
 ##### Check for the Capability to Play Apple Music Content
 
-If you want your app to play Apple Music content, check whether `capabilities` includes [`musicCatalogPlayback`](skcloudservicecapability/musiccatalogplayback.md):
+If you want your app to play Apple Music content, check whether `capabilities` includes [`musicCatalogPlayback`](./skcloudservicecapability/musiccatalogplayback.md):
 
 **Swift**:
 
@@ -87,9 +88,9 @@ controller.requestCapabilities {(capabilities: SKCloudServiceCapability, error: 
 
 ```
 
-##### Check for the Subscription Eligible Capability
+##### Check for the Subscription-Eligible Capability
 
-A user is eligible for an Apple Music subscription offer when `capabilities` doesn’t include [`musicCatalogPlayback`](skcloudservicecapability/musiccatalogplayback.md) but contains [`musicCatalogSubscriptionEligible`](skcloudservicecapability/musiccatalogsubscriptioneligible.md). If you want your app to present the user with an offer to subscribe to Apple Music, check `capabilities` for these features:
+A user is eligible for an Apple Music subscription offer when `capabilities` doesn’t include [`musicCatalogPlayback`](./skcloudservicecapability/musiccatalogplayback.md) but contains [`musicCatalogSubscriptionEligible`](./skcloudservicecapability/musiccatalogsubscriptioneligible.md). If you want your app to present the user with an offer to subscribe to Apple Music, check `capabilities` for these features:
 
 **Swift**:
 
@@ -114,11 +115,11 @@ controller.requestCapabilities {(capabilities: SKCloudServiceCapability, error: 
 }];
 ```
 
-You can present the offer using [`SKCloudServiceSetupViewController`](skcloudservicesetupviewcontroller.md).
+You can present the offer using [`SKCloudServiceSetupViewController`](./skcloudservicesetupviewcontroller.md).
 
-##### Check for the Capability to Add Songs to the Users Icloud Music Library
+##### Check for the Capability to Add Songs to the User’s iCloud Music Library
 
-If you want your app to add tracks to the user’s iCloud music library, check whether `capabilities` includes [`addToCloudMusicLibrary`](skcloudservicecapability/addtocloudmusiclibrary.md):
+If you want your app to add tracks to the user’s iCloud music library, check whether `capabilities` includes [`addToCloudMusicLibrary`](./skcloudservicecapability/addtocloudmusiclibrary.md):
 
 **Swift**:
 
@@ -145,17 +146,18 @@ controller.requestCapabilities {(capabilities: SKCloudServiceCapability, error: 
 
 ## See Also
 
-- [func requestUserToken(forDeveloperToken: String, completionHandler: (String?, (any Error)?) -> Void)](skcloudservicecontroller/requestusertoken(fordevelopertoken:completionhandler:).md)
+### Determining capabilities
+- [func requestUserToken(forDeveloperToken: String, completionHandler: (String?, (any Error)?) -> Void)](./skcloudservicecontroller/requestusertoken%28fordevelopertoken,completionhandler%29.md)
   Returns a user token that you use to access personalized Apple Music content.
-- [func requestStorefrontCountryCode(completionHandler: (String?, (any Error)?) -> Void)](skcloudservicecontroller/requeststorefrontcountrycode(completionhandler:).md)
+- [func requestStorefrontCountryCode(completionHandler: (String?, (any Error)?) -> Void)](./skcloudservicecontroller/requeststorefrontcountrycode%28completionhandler%29.md)
   Gets the country code for the storefront associated with a customer’s iTunes account.
-- [func requestCapabilities(completionHandler: (SKCloudServiceCapability, (any Error)?) -> Void)](skcloudservicecontroller/requestcapabilities(completionhandler:).md)
+- [func requestCapabilities(completionHandler: (SKCloudServiceCapability, (any Error)?) -> Void)](./skcloudservicecontroller/requestcapabilities%28completionhandler%29.md)
   Gets the current capabilities associated with the Music library on the device.
-- [struct SKCloudServiceCapability](skcloudservicecapability.md)
+- [struct SKCloudServiceCapability](./skcloudservicecapability.md)
   Constants that specify the current capabilities of the customer’s Music library on the device.
-- [func requestStorefrontIdentifier(completionHandler: (String?, (any Error)?) -> Void)](skcloudservicecontroller/requeststorefrontidentifier(completionhandler:).md)
+- [func requestStorefrontIdentifier(completionHandler: (String?, (any Error)?) -> Void)](./skcloudservicecontroller/requeststorefrontidentifier%28completionhandler%29.md)
   Gets the device’s storefront identifier.
-- [func requestPersonalizationToken(forClientToken: String, withCompletionHandler: (String?, (any Error)?) -> Void)](skcloudservicecontroller/requestpersonalizationtoken(forclienttoken:withcompletionhandler:).md)
+- [func requestPersonalizationToken(forClientToken: String, withCompletionHandler: (String?, (any Error)?) -> Void)](./skcloudservicecontroller/requestpersonalizationtoken%28forclienttoken,withcompletionhandler%29.md)
 
 
 ---

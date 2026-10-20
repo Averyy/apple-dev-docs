@@ -1,7 +1,8 @@
 # URLSchemeTaskResult.response(_:)
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The response to return to WebKit. The response value must include the MIME type of the request resource.
 

@@ -1,7 +1,8 @@
 # version
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The version of the speech synthesizer.
 
@@ -14,9 +15,14 @@ The version of the speech synthesizer.
 static let version: NSSpeechSynthesizer.SpeechPropertyKey.SynthesizerInfoKey
 ```
 
+```c
+extern NSSpeechSynthesizerInfoKey const NSSpeechSynthesizerInfoVersion;
+```
+
 ## See Also
 
-- [static let identifier: NSSpeechSynthesizer.SpeechPropertyKey.SynthesizerInfoKey](nsspeechsynthesizer/speechpropertykey/synthesizerinfokey/identifier.md)
+### Synthesizer Info Keys
+- [static let identifier: NSSpeechSynthesizer.SpeechPropertyKey.SynthesizerInfoKey](./identifier.md)
   The identifier of the speech synthesizer.
 
 

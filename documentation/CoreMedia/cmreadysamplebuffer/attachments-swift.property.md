@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,8 @@
 ```swift
 var attachments: CMReadySampleBuffer<Content>.Attachments { get set }
 ```
+
+Available when `Content` conforms to `CMSampleBuffer.Content`.
 
 
 ---

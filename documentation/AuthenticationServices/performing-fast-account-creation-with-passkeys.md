@@ -1,6 +1,8 @@
 # Performing fast account creation with passkeys
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: Sample Code  
+**Download**: [PerformingFastAccountCreationWithPasskeys.zip](https://docs-assets.developer.apple.com/published/2a5d74be7e4e/PerformingFastAccountCreationWithPasskeys.zip)
 
 Allow people to quickly create an account with passkeys and associated domains.
 
@@ -12,9 +14,9 @@ Allow people to quickly create an account with passkeys and associated domains.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC25 session 279: [`What’s new in passkeys`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/279).
+> **Note**: This sample code project is associated with WWDC25 session 279: [What’s new in passkeys](https://developer.apple.com/videos/play/wwdc2025/279).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To configure the sample code project, do the following:
 
@@ -25,11 +27,12 @@ To configure the sample code project, do the following:
 
 ## See Also
 
-- [Public-Private Key Authentication](public-private-key-authentication.md)
+### Passkeys
+- [Public-Private Key Authentication](./public-private-key-authentication.md)
   Register and authenticate users with passkeys and security keys, without using passwords.
-- [Passkey use in web browsers](passkey-use-in-web-browsers.md)
+- [Passkey use in web browsers](./passkey-use-in-web-browsers.md)
   Register and authenticate website users by using passkeys.
-- [Connecting to a service with passkeys](connecting-to-a-service-with-passkeys.md)
+- [Connecting to a service with passkeys](./connecting-to-a-service-with-passkeys.md)
   Allow users to sign in to a service without typing a password.
 
 

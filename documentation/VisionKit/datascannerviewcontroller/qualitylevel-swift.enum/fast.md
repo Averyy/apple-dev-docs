@@ -1,7 +1,8 @@
 # DataScannerViewController.QualityLevel.fast
 
 **Framework**: VisionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A quality level that prioritizes recognition speed over accuracy.
 
@@ -18,7 +19,7 @@ case fast
 
 ## Mentions
 
-- [Scanning data with the camera](scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../../scanning-data-with-the-camera.md)
 
 #### Discussion
 
@@ -26,9 +27,10 @@ This quality level may fail to recognize smaller text and barcodes.
 
 ## See Also
 
-- [DataScannerViewController.QualityLevel.balanced](datascannerviewcontroller/qualitylevel-swift.enum/balanced.md)
+### Identifying quality levels
+- [DataScannerViewController.QualityLevel.balanced](./balanced.md)
   A quality level that’s between fast and accurate.
-- [DataScannerViewController.QualityLevel.accurate](datascannerviewcontroller/qualitylevel-swift.enum/accurate.md)
+- [DataScannerViewController.QualityLevel.accurate](./accurate.md)
   A quality level that prioritizes recognition accuracy over speed.
 
 

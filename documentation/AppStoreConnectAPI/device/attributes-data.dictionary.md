@@ -1,7 +1,8 @@
 # Device.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Devices resource.
 
@@ -10,22 +11,22 @@ Attributes that describe a Devices resource.
 
 ## Declaration
 
-```swift
+```
 object Device.Attributes
 ```
 
 ## Mentions
 
-- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
-- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+- [App Store Connect API 4.0 release notes](../app-store-connect-api-4-0-release-notes.md)
+- [App Store Connect API 4.1 release notes](../app-store-connect-api-4-1-release-notes.md)
 
 ## Properties
 
-- `deviceClass` (string)
+- `deviceClass` (string): **Allowed Values**: `APPLE_VISION_PRO`, `APPLE_WATCH`, `IPAD`, `IPHONE`, `IPOD`, `APPLE_TV`, `MAC`
 - `model` (string)
 - `name` (string)
 - `platform` (BundleIdPlatform)
-- `status` (string)
+- `status` (string): **Allowed Values**: `ENABLED`, `DISABLED`
 - `udid` (string)
 - `addedDate` (date-time)
 

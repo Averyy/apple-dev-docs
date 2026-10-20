@@ -1,9 +1,10 @@
 # kSpeechSynthesizerInfoManufacturer
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-The identification of a synthesizer engine (see the `synthManufacturer` field in [`SpeechVersionInfo`](speechversioninfo.md)).
+The identification of a synthesizer engine (see the `synthManufacturer` field in [`SpeechVersionInfo`](./speechversioninfo.md)).
 
 **Availability**:
 - macOS 10.5+
@@ -12,6 +13,10 @@ The identification of a synthesizer engine (see the `synthManufacturer` field in
 
 ```swift
 let kSpeechSynthesizerInfoManufacturer: CFString
+```
+
+```c
+const CFStringRef kSpeechSynthesizerInfoManufacturer;
 ```
 
 

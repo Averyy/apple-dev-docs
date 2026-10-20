@@ -1,7 +1,8 @@
 # calendarIdentifier
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the calendar.
 
@@ -19,43 +20,49 @@ A unique identifier for the calendar.
 var calendarIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * calendarIdentifier;
+```
+
 #### Discussion
 
-This property is set when the calendar is created and can be used as a local identifier. Use [`calendar(withIdentifier:)`](ekeventstore/calendar(withidentifier:).md) to get a calendar with the specified identifier.
+This property is set when the calendar is created and can be used as a local identifier. Use [`calendar(withIdentifier:)`](../ekeventstore/calendar%28withidentifier%29.md) to get a calendar with the specified identifier.
 
 A full sync with the calendar will lose this identifier. You should have a plan for dealing with a calendar whose identifier is no longer fetch-able by caching its other properties.
 
 ## See Also
 
-- [var calendarItemIdentifier: String](ekcalendaritem/calendaritemidentifier.md)
+### Related Documentation
+- [var calendarItemIdentifier: String](../ekcalendaritem/calendaritemidentifier.md)
   The calendar item’s unique identifier.
-- [enum EKCalendarType](ekcalendartype.md)
+### Accessing Calendar Properties
+- [enum EKCalendarType](../ekcalendartype.md)
   Possible calendar types.
-- [struct EKCalendarEventAvailabilityMask](ekcalendareventavailabilitymask.md)
+- [struct EKCalendarEventAvailabilityMask](../ekcalendareventavailabilitymask.md)
   A bitmask indicating the event availability settings that the calendar can support.
-- [var allowsContentModifications: Bool](ekcalendar/allowscontentmodifications.md)
+- [var allowsContentModifications: Bool](./allowscontentmodifications.md)
   A Boolean value that indicates whether you can add, edit, and delete items in the calendar.
-- [var cgColor: CGColor!](ekcalendar/cgcolor.md)
+- [var cgColor: CGColor!](./cgcolor.md)
   The calendar’s color.
-- [var color: NSColor!](ekcalendar/color.md)
+- [var color: NSColor!](./color.md)
   The calendar’s color.
-- [var isImmutable: Bool](ekcalendar/isimmutable.md)
+- [var isImmutable: Bool](./isimmutable.md)
   A Boolean value indicating whether the calendar’s properties can be edited or deleted.
-- [var title: String](ekcalendar/title.md)
+- [var title: String](./title.md)
   The calendar’s title.
-- [var type: EKCalendarType](ekcalendar/type.md)
+- [var type: EKCalendarType](./type.md)
   The calendar’s type.
-- [var allowedEntityTypes: EKEntityMask](ekcalendar/allowedentitytypes.md)
+- [var allowedEntityTypes: EKEntityMask](./allowedentitytypes.md)
   The entity types this calendar can contain.
-- [var source: EKSource!](ekcalendar/source.md)
+- [var source: EKSource!](./source.md)
   The source object representing the account to which this calendar belongs.
-- [var isSubscribed: Bool](ekcalendar/issubscribed.md)
+- [var isSubscribed: Bool](./issubscribed.md)
   A Boolean value indicating whether the calendar is a subscribed calendar.
-- [var supportedEventAvailabilities: EKCalendarEventAvailabilityMask](ekcalendar/supportedeventavailabilities.md)
+- [var supportedEventAvailabilities: EKCalendarEventAvailabilityMask](./supportedeventavailabilities.md)
   The event availability settings supported by this calendar, as indicated by a bitmask.
-- [func DATETIME_COMPONENTS_DO_NOT_USE()](datetime_components_do_not_use().md)
+- [func DATETIME_COMPONENTS_DO_NOT_USE()](../datetime_components_do_not_use%28%29.md)
   A deprecated function.
-- [func DATE_COMPONENTS_DO_NOT_USE()](date_components_do_not_use().md)
+- [func DATE_COMPONENTS_DO_NOT_USE()](../date_components_do_not_use%28%29.md)
   A deprecated function.
 
 

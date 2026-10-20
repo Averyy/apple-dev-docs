@@ -1,7 +1,8 @@
 # displayedProperty
 
 **Framework**: Address Book  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property currently displayed in the record list.
 
@@ -14,17 +15,22 @@ The property currently displayed in the record list.
 var displayedProperty: String! { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSString * displayedProperty;
+```
+
 ## See Also
 
-- [func addProperty(String!)](abpeoplepickerview/addproperty(_:).md)
+### Working with Properties in the Record List
+- [func addProperty(String!)](./addproperty%28_%29.md)
   Adds a property to the group of properties whose values are shown in the record list.
-- [func columnTitle(forProperty: String!) -> String!](abpeoplepickerview/columntitle(forproperty:).md)
+- [func columnTitle(forProperty: String!) -> String!](./columntitle%28forproperty%29.md)
   Returns the title of a custom property.
-- [func properties() -> [Any]!](abpeoplepickerview/properties.md)
+- [func properties() -> [Any]!](./properties%28%29.md)
   Returns an array of the properties whose values are shown in the record list.
-- [func removeProperty(String!)](abpeoplepickerview/removeproperty(_:).md)
+- [func removeProperty(String!)](./removeproperty%28_%29.md)
   Removes a property from the group of properties whose values are shown in the record list.
-- [func setColumnTitle(String!, forProperty: String!)](abpeoplepickerview/setcolumntitle(_:forproperty:).md)
+- [func setColumnTitle(String!, forProperty: String!)](./setcolumntitle%28_,forproperty%29.md)
   Sets the title displayed in the people picker for a property.
 
 

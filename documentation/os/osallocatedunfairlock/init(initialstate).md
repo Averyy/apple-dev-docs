@@ -1,7 +1,8 @@
 # init(initialState:)
 
 **Framework**: os  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a lock object that maintains and protects state data.
 
@@ -11,7 +12,7 @@ Creates a lock object that maintains and protects state data.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,13 +21,16 @@ Creates a lock object that maintains and protects state data.
 init(initialState: State)
 ```
 
+Available when `State` conforms to `Sendable`.
+
 ## Parameters
 
 - `initialState`: The starting state of the operation.
 
 ## See Also
 
-- [init()](osallocatedunfairlock/init.md)
+### Creating a lock object
+- [init()](./init%28%29.md)
   Creates a lock object that doesn’t protect state data.
 
 

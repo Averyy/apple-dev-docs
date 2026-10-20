@@ -1,7 +1,8 @@
 # MTLIntersectionFunctionSignature
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants for specifying different types of custom intersection functions.
 
@@ -19,52 +20,57 @@ Constants for specifying different types of custom intersection functions.
 struct MTLIntersectionFunctionSignature
 ```
 
+```c
+enum MTLIntersectionFunctionSignature : NSUInteger;
+```
+
 #### Overview
 
-For more information on declaring intersection functions in MSL, see [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+For more information on declaring intersection functions in MSL, see [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## Topics
 
 ### Initializing the intersection function signature
-- [init(rawValue: UInt)](mtlintersectionfunctionsignature/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mtlintersectionfunctionsignature/init%28rawvalue%29.md)
   Returns a new signature description from a specified raw value.
 ### Specifying the intersection function signature
-- [static var instancing: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/instancing.md)
+- [static var instancing: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/instancing.md)
   A flag indicating that function signature uses instancing.
-- [static var triangleData: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/triangledata.md)
+- [static var triangleData: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/triangledata.md)
   A flag indicating that function signature uses triangle data.
-- [static var worldSpaceData: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/worldspacedata.md)
+- [static var worldSpaceData: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/worldspacedata.md)
   A flag indicating that function signature uses world space data.
 ### Type Properties
-- [static var curveData: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/curvedata.md)
-- [static var extendedLimits: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/extendedlimits.md)
-- [static var instanceMotion: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/instancemotion.md)
-- [static var intersectionFunctionBuffer: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/intersectionfunctionbuffer.md)
-- [static var maxLevels: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/maxlevels.md)
-- [static var primitiveMotion: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/primitivemotion.md)
-- [static var userData: MTLIntersectionFunctionSignature](mtlintersectionfunctionsignature/userdata.md)
+- [static var curveData: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/curvedata.md)
+- [static var extendedLimits: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/extendedlimits.md)
+- [static var instanceMotion: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/instancemotion.md)
+- [static var intersectionFunctionBuffer: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/intersectionfunctionbuffer.md)
+- [static var maxLevels: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/maxlevels.md)
+- [static var primitiveMotion: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/primitivemotion.md)
+- [static var userData: MTLIntersectionFunctionSignature](./mtlintersectionfunctionsignature/userdata.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [protocol MTLIntersectionFunctionTable](mtlintersectionfunctiontable.md)
+### Intersection function tables
+- [protocol MTLIntersectionFunctionTable](./mtlintersectionfunctiontable.md)
   A table of intersection functions that Metal calls to perform ray-tracing intersection tests.
-- [class MTLIntersectionFunctionTableDescriptor](mtlintersectionfunctiontabledescriptor.md)
+- [class MTLIntersectionFunctionTableDescriptor](./mtlintersectionfunctiontabledescriptor.md)
   A specification of how to create an intersection function table.
-- [class MTLIntersectionFunctionDescriptor](mtlintersectionfunctiondescriptor.md)
+- [class MTLIntersectionFunctionDescriptor](./mtlintersectionfunctiondescriptor.md)
   A description of an intersection function that performs an intersection test.
-- [struct MTLIntersectionFunctionBufferArguments](mtlintersectionfunctionbufferarguments.md)
+- [struct MTLIntersectionFunctionBufferArguments](./mtlintersectionfunctionbufferarguments.md)
 
 
 ---

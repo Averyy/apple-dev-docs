@@ -1,7 +1,8 @@
 # removeTabStop(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the first text tab with a location and type equal to the specified tab stop.
 
@@ -19,15 +20,21 @@ Removes the first text tab with a location and type equal to the specified tab s
 func removeTabStop(_ anObject: NSTextTab)
 ```
 
+```objc
+- (void) removeTabStop:(NSTextTab *) anObject;
+```
+
 ## See Also
 
-- [var tabStops: [NSTextTab]!](nsmutableparagraphstyle/tabstops.md)
+### Related Documentation
+- [var tabStops: [NSTextTab]!](./tabstops.md)
   The text tab objects that represent the paragraph’s tab stops.
-- [func addTabStop(NSTextTab)](nsmutableparagraphstyle/addtabstop(_:).md)
+### Specifying tab information
+- [func addTabStop(NSTextTab)](./addtabstop%28_%29.md)
   Adds the specified tab stop to the paragraph.
-- [var tabStops: [NSTextTab]!](nsmutableparagraphstyle/tabstops.md)
+- [var tabStops: [NSTextTab]!](./tabstops.md)
   The text tab objects that represent the paragraph’s tab stops.
-- [var defaultTabInterval: CGFloat](nsmutableparagraphstyle/defaulttabinterval.md)
+- [var defaultTabInterval: CGFloat](./defaulttabinterval.md)
   A number used as the document’s default tab spacing.
 
 

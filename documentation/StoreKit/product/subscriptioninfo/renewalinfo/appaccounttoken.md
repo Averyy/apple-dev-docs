@@ -1,7 +1,8 @@
 # appAccountToken
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app account token you provided during the subscription purchase, if one exists.
 
@@ -27,7 +28,8 @@ If you include an app account token in the purchase options when the customer pu
 
 ## See Also
 
-- [var appTransactionID: String](product/subscriptioninfo/renewalinfo/apptransactionid.md)
+### Identifying the account
+- [var appTransactionID: String](./apptransactionid.md)
   The unique identifier of the app download transaction.
 
 

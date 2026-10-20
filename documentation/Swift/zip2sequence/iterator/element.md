@@ -1,7 +1,8 @@
 # Zip2Sequence.Iterator.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element returned by `next()`.
 
@@ -19,6 +20,8 @@ The type of element returned by `next()`.
 ```swift
 typealias Element = (Sequence1.Element, Sequence2.Element)
 ```
+
+Available when `Sequence1` conforms to `Sequence` and `Sequence2` conforms to `Sequence`.
 
 
 ---

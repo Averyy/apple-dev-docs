@@ -1,15 +1,16 @@
 # getReportID
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t getReportID();
 ```
 
@@ -19,9 +20,10 @@ Returns the element’s report ID.
 
 ## See Also
 
-- [getReportCount](iohidelement/getreportcount.md)
-- [getReportSize](iohidelement/getreportsize.md)
-- [IOHIDReportType](iohidreporttype.md)
+### Getting Report Information
+- [getReportCount](./getreportcount.md)
+- [getReportSize](./getreportsize.md)
+- [IOHIDReportType](../iohidreporttype.md)
   Describes the different types of HID reports.
 
 

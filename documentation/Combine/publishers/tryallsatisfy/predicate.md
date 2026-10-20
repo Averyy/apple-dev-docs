@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that evaluates each received element.
 
@@ -26,7 +27,8 @@ Return `true` to continue, or `false` to cancel the upstream and complete. The c
 
 ## See Also
 
-- [let upstream: Upstream](publishers/tryallsatisfy/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

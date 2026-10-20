@@ -1,7 +1,8 @@
 # PKAddPassButtonStyle.blackOutline
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A black button with a light outline.
 
@@ -17,13 +18,18 @@ A black button with a light outline.
 case blackOutline
 ```
 
+```c
+PKAddPassButtonStyleBlackOutline
+```
+
 #### Discussion
 
-Use this button when displaying this button against a dark background (shown here against a black background). ![None](/images/com.apple.passkit/media-2557100@2x.png)
+Use this button when displaying this button against a dark background (shown here against a black background). ![](https://developer.apple.com/tutorials/images/com.apple.passkit/media-2557100@2x.png)
 
 ## See Also
 
-- [PKAddPassButtonStyle.black](pkaddpassbuttonstyle/black.md)
+### Constants
+- [PKAddPassButtonStyle.black](./black.md)
   A black button with white lettering.
 
 

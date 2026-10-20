@@ -1,7 +1,8 @@
 # kMDItemPageHeight
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Height of the document page, in points (72 points per inch). For PDF files this indicates the height of the first page only. A CFNumber.
 
@@ -12,6 +13,10 @@ Height of the document page, in points (72 points per inch). For PDF files this 
 
 ```swift
 let kMDItemPageHeight: CFString!
+```
+
+```c
+const CFStringRef kMDItemPageHeight;
 ```
 
 

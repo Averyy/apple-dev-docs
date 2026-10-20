@@ -1,7 +1,8 @@
 # toolbar(_:itemIdentifier:canBeInsertedAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for a Boolean value that indicates whether the toolbar can place the item at the specified position.
 
@@ -18,9 +19,13 @@ Asks the delegate for a Boolean value that indicates whether the toolbar can pla
 optional func toolbar(_ toolbar: NSToolbar, itemIdentifier: NSToolbarItem.Identifier, canBeInsertedAt index: Int) -> Bool
 ```
 
+```objc
+- (BOOL) toolbar:(NSToolbar *) toolbar itemIdentifier:(NSToolbarItemIdentifier) itemIdentifier canBeInsertedAtIndex:(NSInteger) index;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the toolbar to place the item at the specified location, or [`false`](https://developer.apple.com/documentation/swift/false) to prevent the toolbar from placing the item in that location.
+[`true`](../../Swift/true.md) to allow the toolbar to place the item at the specified location, or [`false`](../../Swift/false.md) to prevent the toolbar from placing the item in that location.
 
 #### Discussion
 
@@ -32,17 +37,18 @@ Don’t use the `index` parameter to determine the final location of the toolbar
 
 - `toolbar`: The toolbar that contains the items.
 - `itemIdentifier`: The identifier of the toolbar item to insert at the specified index.
-- `index`: The proposed index at which to place the item. If the toolbar is removing the item, this value is [`NSNotFound`](https://developer.apple.com/documentation/foundation/nsnotfound-4qp9h).
+- `index`: The proposed index at which to place the item. If the toolbar is removing the item, this value is [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md).
 
 ## See Also
 
-- [func toolbarAllowedItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](nstoolbardelegate/toolbaralloweditemidentifiers(_:).md)
+### Configuring the behavior of items
+- [func toolbarAllowedItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](./toolbaralloweditemidentifiers%28_%29.md)
   Asks the delegate to provide the items allowed on the toolbar.
-- [func toolbarDefaultItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](nstoolbardelegate/toolbardefaultitemidentifiers(_:).md)
+- [func toolbarDefaultItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](./toolbardefaultitemidentifiers%28_%29.md)
   Asks the delegate to provide the default items to display on the toolbar.
-- [func toolbarImmovableItemIdentifiers(NSToolbar) -> Set<NSToolbarItem.Identifier>](nstoolbardelegate/toolbarimmovableitemidentifiers(_:).md)
+- [func toolbarImmovableItemIdentifiers(NSToolbar) -> Set<NSToolbarItem.Identifier>](./toolbarimmovableitemidentifiers%28_%29.md)
   Asks the delegate to provide the items that people can’t remove from the toolbar or rearrange during the customization process.
-- [func toolbarSelectableItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](nstoolbardelegate/toolbarselectableitemidentifiers(_:).md)
+- [func toolbarSelectableItemIdentifiers(NSToolbar) -> [NSToolbarItem.Identifier]](./toolbarselectableitemidentifiers%28_%29.md)
   Asks the delegate to provide the set of selectable items in the toolbar.
 
 

@@ -1,7 +1,8 @@
 # generate()
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Generates a new random private key.
 
@@ -30,8 +31,9 @@ This method implements the required interface for the KEMPrivateKey extension, i
 
 ## See Also
 
-- [init(accessControl: SecAccessControl, authenticationContext: LAContext?) throws](secureenclave/mlkem1024/privatekey/init(accesscontrol:authenticationcontext:).md)
-- [init<D>(dataRepresentation: D, authenticationContext: LAContext?) throws](secureenclave/mlkem1024/privatekey/init(datarepresentation:authenticationcontext:).md)
+### Creating a private key
+- [init(accessControl: SecAccessControl, authenticationContext: LAContext?) throws](./init%28accesscontrol,authenticationcontext%29.md)
+- [init<D>(dataRepresentation: D, authenticationContext: LAContext?) throws](./init%28datarepresentation,authenticationcontext%29.md)
 
 
 ---

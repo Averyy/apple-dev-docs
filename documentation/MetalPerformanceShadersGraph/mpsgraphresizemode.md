@@ -1,7 +1,8 @@
 # MPSGraphResizeMode
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The resize mode to use for resizing.
 
@@ -19,25 +20,29 @@ The resize mode to use for resizing.
 enum MPSGraphResizeMode
 ```
 
+```c
+enum MPSGraphResizeMode : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphResizeMode.bilinear](mpsgraphresizemode/bilinear.md)
+- [MPSGraphResizeMode.bilinear](./mpsgraphresizemode/bilinear.md)
   Samples the 4 neighbors to the pixel coordinate and uses bilinear interpolation.
-- [MPSGraphResizeMode.nearest](mpsgraphresizemode/nearest.md)
+- [MPSGraphResizeMode.nearest](./mpsgraphresizemode/nearest.md)
   Samples the nearest neighbor to the pixel coordinate.
 ### Initializers
-- [init?(rawValue: UInt)](mpsgraphresizemode/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mpsgraphresizemode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

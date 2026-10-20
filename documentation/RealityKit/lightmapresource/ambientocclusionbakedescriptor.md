@@ -1,7 +1,8 @@
 # LightmapResource.AmbientOcclusionBakeDescriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters for the ambient occlusion bake type.
 
@@ -22,13 +23,13 @@ struct AmbientOcclusionBakeDescriptor
 ## Topics
 
 ### Creating a descriptor
-- [init(sourceAtlasReference: LightmapResource.AtlasReference)](lightmapresource/ambientocclusionbakedescriptor/init(sourceatlasreference:).md)
+- [init(sourceAtlasReference: LightmapResource.AtlasReference)](./ambientocclusionbakedescriptor/init%28sourceatlasreference%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

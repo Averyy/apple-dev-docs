@@ -1,7 +1,8 @@
 # canReorderItem
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler that determines whether you can reorder a particular item.
 
@@ -10,7 +11,7 @@ The handler that determines whether you can reorder a particular item.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ var canReorderItem: ((ItemIdentifierType) -> Bool)? { get set }
 
 ## See Also
 
-- [var willReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType>) -> Void)?](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct/willreorder.md)
+### Reordering items
+- [var willReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType>) -> Void)?](./willreorder.md)
   The handler that prepares the diffable data source for reordering its items.
-- [var didReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType>) -> Void)?](uicollectionviewdiffabledatasource-9tqpa/reorderinghandlers-swift.struct/didreorder.md)
+- [var didReorder: ((NSDiffableDataSourceTransaction<SectionIdentifierType, ItemIdentifierType>) -> Void)?](./didreorder.md)
   The handler that processes a reordering transaction.
 
 

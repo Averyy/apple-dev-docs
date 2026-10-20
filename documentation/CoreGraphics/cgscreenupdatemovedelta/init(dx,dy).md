@@ -1,11 +1,12 @@
 # init(dX:dY:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,7 +16,8 @@ init(dX: Int32, dY: Int32)
 
 ## See Also
 
-- [init()](cgscreenupdatemovedelta/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

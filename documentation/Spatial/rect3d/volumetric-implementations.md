@@ -1,11 +1,12 @@
 # Volumetric Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func containsAny(of: [Point3D]) -> Bool](rect3d/containsany(of:).md)
+- [func containsAny(of: [Point3D]) -> Bool](./containsany%28of%29.md)
   Returns a Boolean value that indicates whether the rectangle contains any of the specified points.
 
 

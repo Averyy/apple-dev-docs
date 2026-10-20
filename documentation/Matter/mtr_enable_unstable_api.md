@@ -1,7 +1,8 @@
 # MTR_ENABLE_UNSTABLE_API
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var MTR_ENABLE_UNSTABLE_API: Int32 { get }
+```
+
+```c
+#define MTR_ENABLE_UNSTABLE_API
 ```
 
 

@@ -1,7 +1,8 @@
 # Array.PartiallyGenerated
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A representation of partially generated content, as an array of partially generated elements.
 
@@ -18,6 +19,8 @@ A representation of partially generated content, as an array of partially genera
 ```swift
 typealias PartiallyGenerated = [Element.PartiallyGenerated]
 ```
+
+Available when `Element` conforms to `Generable`.
 
 
 ---

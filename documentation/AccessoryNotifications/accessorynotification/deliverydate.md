@@ -1,7 +1,8 @@
 # deliveryDate
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A timestamp that indicates when the system received the notification.
 
@@ -16,9 +17,10 @@ let deliveryDate: Date
 
 ## See Also
 
-- [let displayDate: AccessoryNotification.DisplayDate](accessorynotification/displaydate-swift.property.md)
+### Working with notification dates
+- [let displayDate: AccessoryNotification.DisplayDate](./displaydate-swift.property.md)
   A preferred date and format to display with the notification.
-- [AccessoryNotification.DisplayDate](accessorynotification/displaydate-swift.enum.md)
+- [AccessoryNotification.DisplayDate](./displaydate-swift.enum.md)
   Options for displaying a date in a notification.
 
 

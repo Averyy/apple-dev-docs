@@ -1,7 +1,8 @@
 # collapsedRepresentationImage
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image displayed by the button for the default collapsed representation.
 
@@ -13,19 +14,40 @@ The image displayed by the button for the default collapsed representation.
 
 ## Declaration
 
+*Mac Catalyst*
+
+```swift
+var collapsedRepresentationImage: UIImage? { get set }
+```
+
+*macOS*
+
 ```swift
 var collapsedRepresentationImage: NSImage? { get set }
 ```
 
+*Mac Catalyst*
+
+```objc
+@property (strong, nullable) UIImage * collapsedRepresentationImage;
+```
+
+*macOS*
+
+```objc
+@property (strong, nullable) NSImage * collapsedRepresentationImage;
+```
+
 #### Discussion
 
-If the [`collapsedRepresentation`](nspopovertouchbaritem/collapsedrepresentation.md) button has been replaced by a different view, this property may not have any effect.
+If the [`collapsedRepresentation`](./collapsedrepresentation.md) button has been replaced by a different view, this property may not have any effect.
 
 ## See Also
 
-- [var collapsedRepresentation: NSView](nspopovertouchbaritem/collapsedrepresentation.md)
+### Configuring the collapsed popover
+- [var collapsedRepresentation: NSView](./collapsedrepresentation.md)
   The view displayed when this item is displayed in its parent bar.
-- [var collapsedRepresentationLabel: String](nspopovertouchbaritem/collapsedrepresentationlabel.md)
+- [var collapsedRepresentationLabel: String](./collapsedrepresentationlabel.md)
   The localized string displayed by the button for the default collapsed representation.
 
 

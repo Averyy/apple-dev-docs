@@ -1,7 +1,8 @@
 # PMRect
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,19 +13,25 @@
 struct PMRect
 ```
 
+```c
+typedef struct PMRect {
+    ...
+} PMRect;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](pmrect/1460457-init.md)
-- [init(top: Double, left: Double, bottom: Double, right: Double)](pmrect/1464415-init.md)
+- [init()](./pmrect/api-1460457-init.md)
+- [init(top: Double, left: Double, bottom: Double, right: Double)](./pmrect/api-1464415-init.md)
 ### Instance Properties
-- [var bottom: Double](pmrect/1458973-bottom.md)
+- [var bottom: Double](./pmrect/api-1458973-bottom.md)
   The vertical coordinate for the lower-right point of the rectangle.
-- [var left: Double](pmrect/1459041-left.md)
+- [var left: Double](./pmrect/api-1459041-left.md)
   The horizontal coordinate for the upper-left point of the rectangle.
-- [var right: Double](pmrect/1459337-right.md)
+- [var right: Double](./pmrect/api-1459337-right.md)
   The horizontal coordinate for the lower-right point of the rectangle.
-- [var top: Double](pmrect/1461523-top.md)
+- [var top: Double](./pmrect/api-1461523-top.md)
   The vertical coordinate for the upper-left point of the rectangle.
 
 

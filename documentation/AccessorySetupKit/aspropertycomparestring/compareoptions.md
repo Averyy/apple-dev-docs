@@ -1,7 +1,8 @@
 # compareOptions
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Comparison options to apply when comparing strings.
 
@@ -15,9 +16,14 @@ Comparison options to apply when comparing strings.
 var compareOptions: NSString.CompareOptions { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSStringCompareOptions compareOptions;
+```
+
 ## See Also
 
-- [var string: String](aspropertycomparestring/string.md)
+### Accessing compare string properties
+- [var string: String](./string.md)
   The string to compare against.
 
 

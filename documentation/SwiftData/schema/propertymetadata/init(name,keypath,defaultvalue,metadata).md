@@ -1,7 +1,8 @@
 # init(name:keypath:defaultValue:metadata:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

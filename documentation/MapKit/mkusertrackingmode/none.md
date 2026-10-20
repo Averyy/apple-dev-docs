@@ -1,7 +1,8 @@
 # MKUserTrackingMode.none
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The map doesn’t follow the user’s location.
 
@@ -19,11 +20,16 @@ The map doesn’t follow the user’s location.
 case none
 ```
 
+```c
+MKUserTrackingModeNone
+```
+
 ## See Also
 
-- [MKUserTrackingMode.follow](mkusertrackingmode/follow.md)
+### Constants
+- [MKUserTrackingMode.follow](./follow.md)
   The map follows the user location.
-- [MKUserTrackingMode.followWithHeading](mkusertrackingmode/followwithheading.md)
+- [MKUserTrackingMode.followWithHeading](./followwithheading.md)
   The map follows the user’s location and rotates when the heading changes.
 
 

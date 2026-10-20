@@ -1,7 +1,8 @@
 # withAAEncodedData(_:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes a closure with encoded data.
 
@@ -11,7 +12,7 @@ Executes a closure with encoded data.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

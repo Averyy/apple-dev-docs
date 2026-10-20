@@ -1,7 +1,8 @@
 # manufacturerFeatures
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of manufacturer-declared extension features available for this accessory.
 

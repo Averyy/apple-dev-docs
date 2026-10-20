@@ -1,7 +1,8 @@
 # MTLDataType.half2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A two-component vector with 16-bit floating-point values.
 
@@ -10,7 +11,7 @@ A two-component vector with 16-bit floating-point values.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ A two-component vector with 16-bit floating-point values.
 case half2
 ```
 
+```c
+MTLDataTypeHalf2
+```
+
 ## See Also
 
-- [MTLDataType.half](mtldatatype/half.md)
+### 16-bit floating-point types
+- [MTLDataType.half](./half.md)
   A 16-bit floating-point value.
-- [MTLDataType.half3](mtldatatype/half3.md)
+- [MTLDataType.half3](./half3.md)
   A three-component vector with 16-bit floating-point values.
-- [MTLDataType.half4](mtldatatype/half4.md)
+- [MTLDataType.half4](./half4.md)
   A four-component vector with 16-bit floating-point values.
 
 

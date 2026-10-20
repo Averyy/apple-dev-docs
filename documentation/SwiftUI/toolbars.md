@@ -1,6 +1,7 @@
 # Toolbars
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Provide immediate access to frequently used commands and controls.
 
@@ -8,148 +9,149 @@ Provide immediate access to frequently used commands and controls.
 
 The system might present toolbars above or below your app’s content, depending on the platform and the context.
 
-![None](/images/com.apple.SwiftUI/toolbars-hero@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/toolbars-hero@2x.png)
 
-Add items to a toolbar by applying the [`toolbar(content:)`](view/toolbar(content:).md) view modifier to a view in your app. You can also configure the toolbar using view modifiers. For example, you can set the visibility of a toolbar with the [`toolbar(_:for:)`](view/toolbar(_:for:).md) modifier.
+Add items to a toolbar by applying the [`toolbar(content:)`](./view/toolbar%28content%29.md) view modifier to a view in your app. You can also configure the toolbar using view modifiers. For example, you can set the visibility of a toolbar with the [`toolbar(_:for:)`](./view/toolbar%28_,for%29.md) modifier.
 
-For design guidance, see [`Toolbars`](https://developer.apple.com/design/human-interface-guidelines/toolbars) in the Human Interface Guidelines.
+For design guidance, see [Toolbars](https://developer.apple.com/design/human-interface-guidelines/toolbars) in the Human Interface Guidelines.
 
 ## Topics
 
 ### Populating a toolbar
-- [func toolbar(content:)](view/toolbar(content:).md)
+- [func toolbar(content:)](./view/toolbar%28content%29.md)
   Populates the toolbar or navigation bar with the specified items.
-- [struct ToolbarItem](toolbaritem.md)
+- [struct ToolbarItem](./toolbaritem.md)
   A model that represents an item which can be placed in the toolbar or navigation bar.
-- [struct ToolbarItemGroup](toolbaritemgroup.md)
+- [struct ToolbarItemGroup](./toolbaritemgroup.md)
   A model that represents a group of `ToolbarItem`s which can be placed in the toolbar or navigation bar.
-- [struct ToolbarItemPlacement](toolbaritemplacement.md)
+- [struct ToolbarItemPlacement](./toolbaritemplacement.md)
   A structure that defines the placement of a toolbar item.
-- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](view/toolbaroverflowmenu(content:).md)
+- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](./view/toolbaroverflowmenu%28content%29.md)
   Configures the overflow menu of a toolbar.
-- [struct ToolbarOverflowMenu](toolbaroverflowmenu.md)
+- [struct ToolbarOverflowMenu](./toolbaroverflowmenu.md)
   The overflow menu of a toolbar.
-- [protocol ToolbarContent](toolbarcontent.md)
+- [protocol ToolbarContent](./toolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a toolbar.
-- [struct ToolbarContentBuilder](toolbarcontentbuilder.md)
+- [struct ToolbarContentBuilder](./toolbarcontentbuilder.md)
   Constructs a toolbar item set from multi-expression closures.
-- [struct ToolbarSpacer](toolbarspacer.md)
+- [struct ToolbarSpacer](./toolbarspacer.md)
   A standard space item in toolbars.
-- [struct DefaultToolbarItem](defaulttoolbaritem.md)
+- [struct DefaultToolbarItem](./defaulttoolbaritem.md)
   A toolbar item that represents a system component.
 ### Populating a customizable toolbar
-- [func toolbar<Content>(id: String, content: () -> Content) -> some View](view/toolbar(id:content:).md)
+- [func toolbar<Content>(id: String, content: () -> Content) -> some View](./view/toolbar%28id,content%29.md)
   Populates the toolbar or navigation bar with the specified items, allowing for user customization.
-- [func toolbarItemHidden(Bool) -> some View](view/toolbaritemhidden(_:).md)
+- [func toolbarItemHidden(Bool) -> some View](./view/toolbaritemhidden%28_%29.md)
   Hides an individual view within a control group toolbar item.
-- [protocol CustomizableToolbarContent](customizabletoolbarcontent.md)
+- [protocol CustomizableToolbarContent](./customizabletoolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a customizable toolbar.
-- [struct ToolbarCustomizationBehavior](toolbarcustomizationbehavior.md)
+- [struct ToolbarCustomizationBehavior](./toolbarcustomizationbehavior.md)
   The customization behavior of customizable toolbar content.
-- [struct ToolbarCustomizationOptions](toolbarcustomizationoptions.md)
+- [struct ToolbarCustomizationOptions](./toolbarcustomizationoptions.md)
   Options that influence the default customization behavior of customizable toolbar content.
-- [struct SearchToolbarBehavior](searchtoolbarbehavior.md)
+- [struct SearchToolbarBehavior](./searchtoolbarbehavior.md)
   The behavior of a search field in a toolbar.
 ### Removing default items
-- [func toolbar(removing: ToolbarDefaultItemKind?) -> some View](view/toolbar(removing:).md)
+- [func toolbar(removing: ToolbarDefaultItemKind?) -> some View](./view/toolbar%28removing%29.md)
   Remove a toolbar item present by default
-- [struct ToolbarDefaultItemKind](toolbardefaultitemkind.md)
+- [struct ToolbarDefaultItemKind](./toolbardefaultitemkind.md)
   A kind of toolbar item a `View` adds by default.
 ### Setting toolbar visibility
-- [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarvisibility(_:for:).md)
+- [func toolbarVisibility(Visibility, for: ToolbarPlacement...) -> some View](./view/toolbarvisibility%28_,for%29.md)
   Specifies the visibility of a bar managed by SwiftUI.
-- [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](view/toolbarbackgroundvisibility(_:for:).md)
+- [func toolbarBackgroundVisibility(Visibility, for: ToolbarPlacement...) -> some View](./view/toolbarbackgroundvisibility%28_,for%29.md)
   Specifies the preferred visibility of backgrounds on a bar managed by SwiftUI.
-- [struct ToolbarPlacement](toolbarplacement.md)
+- [struct ToolbarPlacement](./toolbarplacement.md)
   The placement of a toolbar.
-- [struct ContentToolbarPlacement](contenttoolbarplacement.md)
+- [struct ContentToolbarPlacement](./contenttoolbarplacement.md)
   A region of the interface that hosts its own toolbar content.
-- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](view/toolbar(_:for:).md)
+- [func toolbar(Visibility, for: ToolbarPlacement...) -> some View](./view/toolbar%28_,for%29.md)
   Specifies the visibility of a bar managed by SwiftUI.
 ### Specifying the role of toolbar content
-- [func toolbarRole(ToolbarRole) -> some View](view/toolbarrole(_:).md)
+- [func toolbarRole(ToolbarRole) -> some View](./view/toolbarrole%28_%29.md)
   Configures the semantic role for the content populating the toolbar.
-- [struct ToolbarRole](toolbarrole.md)
+- [struct ToolbarRole](./toolbarrole.md)
   The purpose of content that populates the toolbar.
 ### Styling a toolbar
-- [func toolbarColorScheme(ColorScheme?, for: ToolbarPlacement...) -> some View](view/toolbarcolorscheme(_:for:).md)
+- [func toolbarColorScheme(ColorScheme?, for: ToolbarPlacement...) -> some View](./view/toolbarcolorscheme%28_,for%29.md)
   Specifies the preferred color scheme of a bar managed by SwiftUI.
-- [func toolbarForegroundStyle<S>(S, for: ToolbarPlacement...) -> some View](view/toolbarforegroundstyle(_:for:).md)
+- [func toolbarForegroundStyle<S>(S, for: ToolbarPlacement...) -> some View](./view/toolbarforegroundstyle%28_,for%29.md)
   Specifies the preferred foreground style of bars managed by SwiftUI.
-- [func windowToolbarStyle<S>(S) -> some Scene](scene/windowtoolbarstyle(_:).md)
+- [func windowToolbarStyle<S>(S) -> some Scene](./scene/windowtoolbarstyle%28_%29.md)
   Sets the style for the toolbar defined within this scene.
-- [protocol WindowToolbarStyle](windowtoolbarstyle.md)
+- [protocol WindowToolbarStyle](./windowtoolbarstyle.md)
   A specification for the appearance and behavior of a window’s toolbar.
-- [var toolbarLabelStyle: ToolbarLabelStyle?](environmentvalues/toolbarlabelstyle.md)
+- [var toolbarLabelStyle: ToolbarLabelStyle?](./environmentvalues/toolbarlabelstyle.md)
   The label style to apply to controls within a toolbar.
-- [struct ToolbarLabelStyle](toolbarlabelstyle.md)
+- [struct ToolbarLabelStyle](./toolbarlabelstyle.md)
   The label style of a toolbar.
-- [struct SpacerSizing](spacersizing.md)
+- [struct SpacerSizing](./spacersizing.md)
   A type which defines how spacers should size themselves.
-- [func toolbarBackground(_:for:)](view/toolbarbackground(_:for:).md)
+- [func toolbarBackground(_:for:)](./view/toolbarbackground%28_,for%29.md)
   Specifies the preferred shape style of the background of a bar managed by SwiftUI.
 ### Configuring the toolbar title display mode
-- [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](view/toolbartitledisplaymode(_:).md)
+- [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](./view/toolbartitledisplaymode%28_%29.md)
   Configures the toolbar title display mode for this view.
-- [struct ToolbarTitleDisplayMode](toolbartitledisplaymode.md)
+- [struct ToolbarTitleDisplayMode](./toolbartitledisplaymode.md)
   A type that defines the behavior of title of a toolbar.
 ### Setting the toolbar title menu
-- [func toolbarTitleMenu<C>(content: () -> C) -> some View](view/toolbartitlemenu(content:).md)
+- [func toolbarTitleMenu<C>(content: () -> C) -> some View](./view/toolbartitlemenu%28content%29.md)
   Configure the title menu of a toolbar.
-- [struct ToolbarTitleMenu](toolbartitlemenu.md)
+- [struct ToolbarTitleMenu](./toolbartitlemenu.md)
   The title menu of a toolbar.
 ### Creating an ornament
-- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D, ornament: () -> Content) -> some View](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
+- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D, ornament: () -> Content) -> some View](./view/ornament%28visibility,attachmentanchor,contentalignment,ornament%29.md)
   Presents an ornament.
-- [struct OrnamentAttachmentAnchor](ornamentattachmentanchor.md)
+- [struct OrnamentAttachmentAnchor](./ornamentattachmentanchor.md)
   An attachment anchor for an ornament.
 ### Controlling item visibility
-- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some ToolbarContent](toolbarcontent/visibilitypriority(_:).md)
+- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some ToolbarContent](./toolbarcontent/visibilitypriority%28_%29.md)
   Defines the visibility priority for a toolbar item.
-- [struct ToolbarItemVisibilityPriority](toolbaritemvisibilitypriority.md)
+- [struct ToolbarItemVisibilityPriority](./toolbaritemvisibilitypriority.md)
   A value that defines the visibility priority of a toolbar item.
 ### Minimizing a toolbar
-- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizationbehavior(_:for:).md)
+- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationbehavior%28_,for%29.md)
   Sets the minimize behavior for the specified bars.
-- [struct ToolbarMinimizationBehavior](toolbarminimizationbehavior.md)
+- [struct ToolbarMinimizationBehavior](./toolbarminimizationbehavior.md)
   The minimization behavior of a toolbar.
-- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](view/toolbarminimizationrestoration(_:for:).md)
+- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationrestoration%28_,for%29.md)
   Sets the restoration behavior for the specified bars during minimization.
-- [struct ToolbarMinimizationRestoration](toolbarminimizationrestoration.md)
+- [struct ToolbarMinimizationRestoration](./toolbarminimizationrestoration.md)
   The restoration behavior during toolbar minimization.
-- [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
+- [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](./view/toolbarminimizationsafeareaadjustment%28_,for%29.md)
   Sets the safe area adjustment for the specified bars during minimization.
-- [struct ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment.md)
+- [struct ToolbarMinimizationSafeAreaAdjustment](./toolbarminimizationsafeareaadjustment.md)
   The safe area adjustment during toolbar minimization.
 ### Configuring vertical toolbar behavior
-- [func toolbarVerticalBehavior(ToolbarVerticalBehavior) -> some View](view/toolbarverticalbehavior(_:).md)
+- [func toolbarVerticalBehavior(ToolbarVerticalBehavior) -> some View](./view/toolbarverticalbehavior%28_%29.md)
   Sets the behavior for the vertical bar.
-- [struct ToolbarVerticalBehavior](toolbarverticalbehavior.md)
+- [struct ToolbarVerticalBehavior](./toolbarverticalbehavior.md)
   A behavior that determines whether the vertical bar is used.
-- [func toolbarVerticalCompressionBehavior(ToolbarVerticalCompressionBehavior) -> some View](view/toolbarverticalcompressionbehavior(_:).md)
+- [func toolbarVerticalCompressionBehavior(ToolbarVerticalCompressionBehavior) -> some View](./view/toolbarverticalcompressionbehavior%28_%29.md)
   Sets how bars should compress when different types of toolbars are hosted together and space is constrained.
-- [struct ToolbarVerticalCompressionBehavior](toolbarverticalcompressionbehavior.md)
+- [struct ToolbarVerticalCompressionBehavior](./toolbarverticalcompressionbehavior.md)
   A behavior that determines how bars compress when the system places different types of bars together and space is constrained.
 
 ## See Also
 
-- [App organization](app-organization.md)
+### App structure
+- [App organization](./app-organization.md)
   Define the entry point and top-level structure of your app.
-- [Scenes](scenes.md)
+- [Scenes](./scenes.md)
   Declare the user interface groupings that make up the parts of your app.
-- [Windows](windows.md)
+- [Windows](./windows.md)
   Display user interface content in a window or a collection of windows.
-- [Immersive spaces](immersive-spaces.md)
+- [Immersive spaces](./immersive-spaces.md)
   Display unbounded content in a person’s surroundings.
-- [Documents](documents.md)
+- [Documents](./documents.md)
   Enable people to open and manage documents.
-- [Navigation](navigation.md)
+- [Navigation](./navigation.md)
   Enable people to move between different parts of your app’s view hierarchy within a scene.
-- [Modal presentations](modal-presentations.md)
+- [Modal presentations](./modal-presentations.md)
   Present content in a separate view that offers focused interaction.
-- [Search](search.md)
+- [Search](./search.md)
   Enable people to search for text or other content within your app.
-- [App extensions](app-extensions.md)
+- [App extensions](./app-extensions.md)
   Extend your app’s basic functionality to other parts of the system, like by adding a Widget.
 
 

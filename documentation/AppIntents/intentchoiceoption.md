@@ -1,7 +1,8 @@
 # IntentChoiceOption
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure representing an entry in a list of options for a person to choose from before an app intent resumes its action.
 
@@ -27,28 +28,29 @@ Each option includes display text and an optional style that influences its visu
 ## Topics
 
 ### Structures
-- [IntentChoiceOption.Style](intentchoiceoption/style-swift.struct.md)
-  Defines the visual style and semantic meaning of an [`IntentChoiceOption`](intentchoiceoption.md).
+- [IntentChoiceOption.Style](./intentchoiceoption/style-swift.struct.md)
+  Defines the visual style and semantic meaning of an [`IntentChoiceOption`](./intentchoiceoption.md).
 ### Initializers
-- [init(title: LocalizedStringResource, style: IntentChoiceOption.Style)](intentchoiceoption/init(title:style:).md)
+- [init(title: LocalizedStringResource, style: IntentChoiceOption.Style)](./intentchoiceoption/init%28title,style%29.md)
   Creates a new option for a person to choose to continue an app intent.
 ### Instance Properties
-- [let style: IntentChoiceOption.Style](intentchoiceoption/style-swift.property.md)
+- [let style: IntentChoiceOption.Style](./intentchoiceoption/style-swift.property.md)
   The style applied to the option, affecting its visual appearance in the system UI.
-- [let title: LocalizedStringResource](intentchoiceoption/title.md)
+- [let title: LocalizedStringResource](./intentchoiceoption/title.md)
   The localized text displayed for this option.
 ### Type Properties
-- [static var cancel: IntentChoiceOption](intentchoiceoption/cancel.md)
+- [static var cancel: IntentChoiceOption](./intentchoiceoption/cancel.md)
   A system-provided option that cancel the app intent.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct ConfirmationConditions](confirmationconditions.md)
+### Disambiguation
+- [struct ConfirmationConditions](./confirmationconditions.md)
   Conditions for a confirmation request.
 
 

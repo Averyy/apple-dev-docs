@@ -1,7 +1,8 @@
 # GameCenterDetailGameCenterAchievementsV2LinkagesRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents a Game Center detail Game Center achievement linkage request resource.
 
@@ -10,7 +11,7 @@ The data structure that represents a Game Center detail Game Center achievement 
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetailGameCenterAchievementsV2LinkagesRequest
 ```
 
@@ -21,7 +22,7 @@ object GameCenterDetailGameCenterAchievementsV2LinkagesRequest
 ## Topics
 
 ### Dictionaries
-- [object GameCenterDetailGameCenterAchievementsV2LinkagesRequest.Data](gamecenterdetailgamecenterachievementsv2linkagesrequest/data-data.dictionary.md)
+- [object GameCenterDetailGameCenterAchievementsV2LinkagesRequest.Data](./gamecenterdetailgamecenterachievementsv2linkagesrequest/data-data.dictionary.md)
 
 ## Properties
 
@@ -29,35 +30,36 @@ object GameCenterDetailGameCenterAchievementsV2LinkagesRequest
 
 ## See Also
 
-- [object GameCenterDetail](gamecenterdetail.md)
+### Objects
+- [object GameCenterDetail](./gamecenterdetail.md)
   The Game Center configuration for an app, linking it to leaderboards, achievement sets, and groups.
-- [object GameCenterDetailCreateRequest](gamecenterdetailcreaterequest.md)
+- [object GameCenterDetailCreateRequest](./gamecenterdetailcreaterequest.md)
   The request body you use to create a Game Center detail.
-- [object GameCenterDetailGameCenterAchievementsV2LinkagesResponse](gamecenterdetailgamecenterachievementsv2linkagesresponse.md)
+- [object GameCenterDetailGameCenterAchievementsV2LinkagesResponse](./gamecenterdetailgamecenterachievementsv2linkagesresponse.md)
   A response that contains a list of Game Center detail Game Center achievement linkage resources.
-- [object GameCenterDetailGameCenterLeaderboardSetsV2LinkagesRequest](gamecenterdetailgamecenterleaderboardsetsv2linkagesrequest.md)
+- [object GameCenterDetailGameCenterLeaderboardSetsV2LinkagesRequest](./gamecenterdetailgamecenterleaderboardsetsv2linkagesrequest.md)
   The data structure that represents a Game Center detail Game Center leaderboard set linkage request resource.
-- [object GameCenterDetailGameCenterLeaderboardSetsV2LinkagesResponse](gamecenterdetailgamecenterleaderboardsetsv2linkagesresponse.md)
+- [object GameCenterDetailGameCenterLeaderboardSetsV2LinkagesResponse](./gamecenterdetailgamecenterleaderboardsetsv2linkagesresponse.md)
   A response that contains a list of Game Center detail Game Center leaderboard set linkage resources.
-- [object GameCenterDetailGameCenterLeaderboardsV2LinkagesRequest](gamecenterdetailgamecenterleaderboardsv2linkagesrequest.md)
+- [object GameCenterDetailGameCenterLeaderboardsV2LinkagesRequest](./gamecenterdetailgamecenterleaderboardsv2linkagesrequest.md)
   The data structure that represents a Game Center detail Game Center leaderboard linkage request resource.
-- [object GameCenterDetailGameCenterLeaderboardsV2LinkagesResponse](gamecenterdetailgamecenterleaderboardsv2linkagesresponse.md)
+- [object GameCenterDetailGameCenterLeaderboardsV2LinkagesResponse](./gamecenterdetailgamecenterleaderboardsv2linkagesresponse.md)
   A response that contains a list of Game Center detail Game Center leaderboard linkage resources.
-- [object GameCenterDetailGameCenterAchievementsLinkagesRequest](gamecenterdetailgamecenterachievementslinkagesrequest.md)
+- [object GameCenterDetailGameCenterAchievementsLinkagesRequest](./gamecenterdetailgamecenterachievementslinkagesrequest.md)
   The request body you use to create a relationship between a Game Center detail and an achievement.
-- [object GameCenterDetailGameCenterAchievementsLinkagesResponse](gamecenterdetailgamecenterachievementslinkagesresponse.md)
+- [object GameCenterDetailGameCenterAchievementsLinkagesResponse](./gamecenterdetailgamecenterachievementslinkagesresponse.md)
   A response that confirms a relationship between a Game Center detail and an achievement.
-- [object GameCenterDetailGameCenterLeaderboardSetsLinkagesRequest](gamecenterdetailgamecenterleaderboardsetslinkagesrequest.md)
+- [object GameCenterDetailGameCenterLeaderboardSetsLinkagesRequest](./gamecenterdetailgamecenterleaderboardsetslinkagesrequest.md)
   The request body you use to create a relationship between a Game Center detail and a leaderboard set.
-- [object GameCenterDetailGameCenterLeaderboardSetsLinkagesResponse](gamecenterdetailgamecenterleaderboardsetslinkagesresponse.md)
+- [object GameCenterDetailGameCenterLeaderboardSetsLinkagesResponse](./gamecenterdetailgamecenterleaderboardsetslinkagesresponse.md)
   A response that confirms a relationship between a Game Center detail and leaderboard set.
-- [object GameCenterDetailGameCenterLeaderboardsLinkagesRequest](gamecenterdetailgamecenterleaderboardslinkagesrequest.md)
+- [object GameCenterDetailGameCenterLeaderboardsLinkagesRequest](./gamecenterdetailgamecenterleaderboardslinkagesrequest.md)
   The request body you use to create a relationship between a Game Center detail and a leaderboard.
-- [object GameCenterDetailGameCenterLeaderboardsLinkagesResponse](gamecenterdetailgamecenterleaderboardslinkagesresponse.md)
+- [object GameCenterDetailGameCenterLeaderboardsLinkagesResponse](./gamecenterdetailgamecenterleaderboardslinkagesresponse.md)
   A response that confirms a relationship between a Game Center detail and a leaderboard.
-- [object GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest](gamecenterdetailchallengesminimumplatformversionslinkagesrequest.md)
+- [object GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest](./gamecenterdetailchallengesminimumplatformversionslinkagesrequest.md)
   The request body for updating the minimum platform versions required for challenges in a Game Center detail.
-- [object GameCenterDetailResponse](gamecenterdetailresponse.md)
+- [object GameCenterDetailResponse](./gamecenterdetailresponse.md)
   The response body for endpoints that read or modify the Game Center details for an app.
 
 

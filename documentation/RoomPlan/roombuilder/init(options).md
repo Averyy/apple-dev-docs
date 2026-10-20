@@ -1,7 +1,8 @@
 # init(options:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a room builder using the specified options.
 
@@ -18,7 +19,7 @@ init(options: RoomBuilder.ConfigurationOptions)
 
 #### Discussion
 
-Pass the [`beautifyObjects`](roombuilder/configurationoptions/beautifyobjects.md) option to enhance the look of the output for the captured room, or  (`[]`) to omit capture post-processing.
+Pass the [`beautifyObjects`](./configurationoptions/beautifyobjects.md) option to enhance the look of the output for the captured room, or  (`[]`) to omit capture post-processing.
 
 ## Parameters
 
@@ -26,7 +27,8 @@ Pass the [`beautifyObjects`](roombuilder/configurationoptions/beautifyobjects.md
 
 ## See Also
 
-- [RoomBuilder.ConfigurationOptions](roombuilder/configurationoptions.md)
+### Creating a room builder
+- [RoomBuilder.ConfigurationOptions](./configurationoptions.md)
   Options that configure a room builder.
 
 

@@ -1,12 +1,13 @@
 # hasHorizontalScroller
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the browser has a horizontal scroller.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ A Boolean that indicates whether the browser has a horizontal scroller.
 var hasHorizontalScroller: Bool { get set }
 ```
 
+```objc
+@property BOOL hasHorizontalScroller;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the browser uses an `NSScroller` object to scroll horizontally.
+When the value of this property is [`true`](../../Swift/true.md), the browser uses an `NSScroller` object to scroll horizontally.
 
 ## See Also
 
-- [func scrollColumnToVisible(Int)](nsbrowser/scrollcolumntovisible(_:).md)
+### Scrolling
+- [func scrollColumnToVisible(Int)](./scrollcolumntovisible%28_%29.md)
   Scrolls to make the specified column visible.
-- [func scrollColumnsLeft(by: Int)](nsbrowser/scrollcolumnsleft(by:).md)
+- [func scrollColumnsLeft(by: Int)](./scrollcolumnsleft%28by%29.md)
   Scrolls columns left by the specified number of columns.
-- [func scrollColumnsRight(by: Int)](nsbrowser/scrollcolumnsright(by:).md)
+- [func scrollColumnsRight(by: Int)](./scrollcolumnsright%28by%29.md)
   Scrolls columns right by the specified number of columns.
-- [func scrollRowToVisible(Int, inColumn: Int)](nsbrowser/scrollrowtovisible(_:incolumn:).md)
+- [func scrollRowToVisible(Int, inColumn: Int)](./scrollrowtovisible%28_,incolumn%29.md)
   Scrolls the specified row to be visible within the specified column.
 
 

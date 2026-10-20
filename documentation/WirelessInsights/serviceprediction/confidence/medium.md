@@ -1,7 +1,8 @@
 # ServicePrediction.Confidence.medium
 
 **Framework**: WirelessInsights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A medium confidence level in the prediction.
 
@@ -17,9 +18,10 @@ case medium
 
 ## See Also
 
-- [ServicePrediction.Confidence.high](serviceprediction/confidence/high.md)
+### Working with confidence values
+- [ServicePrediction.Confidence.high](./high.md)
   A high confidence level in the prediction.
-- [ServicePrediction.Confidence.low](serviceprediction/confidence/low.md)
+- [ServicePrediction.Confidence.low](./low.md)
   A low confidence level in the prediction.
 
 

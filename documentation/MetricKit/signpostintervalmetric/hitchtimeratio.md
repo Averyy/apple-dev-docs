@@ -1,7 +1,8 @@
 # hitchTimeRatio
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ratio of the total time spent hitching to the total time spent animating during the logged intervals.
 
@@ -19,20 +20,21 @@ let hitchTimeRatio: Measurement<HitchTimeRatio>?
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [let averageMemory: AverageStatistics<UnitInformationStorage>?](signpostintervalmetric/averagememory.md)
+### Additional measurements
+- [let averageMemory: AverageStatistics<UnitInformationStorage>?](./averagememory.md)
   The average memory used during the logged intervals.
-- [let cpuTime: Measurement<UnitDuration>?](signpostintervalmetric/cputime.md)
+- [let cpuTime: Measurement<UnitDuration>?](./cputime.md)
   The total amount of CPU time used during the logged intervals.
-- [let logicalWrites: Measurement<UnitInformationStorage>?](signpostintervalmetric/logicalwrites.md)
+- [let logicalWrites: Measurement<UnitInformationStorage>?](./logicalwrites.md)
   The total amount of data written to disk or other long term storage during the logged intervals.
-- [let totalHitchTime: Measurement<UnitDuration>?](signpostintervalmetric/totalhitchtime.md)
+- [let totalHitchTime: Measurement<UnitDuration>?](./totalhitchtime.md)
   The total time spent hitching during the logged intervals.
-- [let totalAnimationTime: Measurement<UnitDuration>?](signpostintervalmetric/totalanimationtime.md)
+- [let totalAnimationTime: Measurement<UnitDuration>?](./totalanimationtime.md)
   The total time spent animating during the logged intervals.
 
 

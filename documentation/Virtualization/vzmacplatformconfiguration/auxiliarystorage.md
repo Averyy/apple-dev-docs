@@ -1,7 +1,8 @@
 # auxiliaryStorage
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Mac auxiliary storage.
 
@@ -14,9 +15,13 @@ The Mac auxiliary storage.
 var auxiliaryStorage: VZMacAuxiliaryStorage? { get set }
 ```
 
+```objc
+@property (strong, nullable) VZMacAuxiliaryStorage * auxiliaryStorage;
+```
+
 ## Mentions
 
-- [Installing macOS on a Virtual Machine](installing-macos-on-a-virtual-machine.md)
+- [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
 #### Discussion
 
@@ -24,9 +29,10 @@ When creating a VM, the hardware model of the `auxiliaryStorage` must match the 
 
 ## See Also
 
-- [var hardwareModel: VZMacHardwareModel](vzmacplatformconfiguration/hardwaremodel.md)
+### Getting platform properties
+- [var hardwareModel: VZMacHardwareModel](./hardwaremodel.md)
   The Mac hardware model.
-- [var machineIdentifier: VZMacMachineIdentifier](vzmacplatformconfiguration/machineidentifier.md)
+- [var machineIdentifier: VZMacMachineIdentifier](./machineidentifier.md)
   The Mac machine identifier.
 
 

@@ -1,21 +1,22 @@
 # SubscriptionAvailabilityCreateRequest.Data.Relationships.AvailableTerritories
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 2.3+
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAvailabilityCreateRequest.Data.Relationships.AvailableTerritories
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionAvailabilityCreateRequest.Data.Relationships.AvailableTerritories.Data](subscriptionavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/availableterritories-data.dictionary/data-data.dictionary.md)
+- [object SubscriptionAvailabilityCreateRequest.Data.Relationships.AvailableTerritories.Data](./availableterritories-data.dictionary/data-data.dictionary.md)
   The request body you use to create a subscription availability.
 
 ## Properties
@@ -24,7 +25,8 @@ object SubscriptionAvailabilityCreateRequest.Data.Relationships.AvailableTerrito
 
 ## See Also
 
-- [object SubscriptionAvailabilityCreateRequest.Data.Relationships.Subscription](subscriptionavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary.md)
+### Objects
+- [object SubscriptionAvailabilityCreateRequest.Data.Relationships.Subscription](./subscription-data.dictionary.md)
 
 
 ---

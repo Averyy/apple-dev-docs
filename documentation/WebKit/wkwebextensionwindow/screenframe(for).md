@@ -1,7 +1,8 @@
 # screenFrame(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the screen frame containing the window is needed.
 
@@ -14,9 +15,13 @@ Called when the screen frame containing the window is needed.
 optional func screenFrame(for context: WKWebExtensionContext) -> CGRect
 ```
 
+```objc
+- (CGRect) screenFrameForWebExtensionContext:(WKWebExtensionContext *) context;
+```
+
 #### Discussion
 
-Defaults to [`CGRectNull`](https://developer.apple.com/documentation/coregraphics/cgrectnull) if not implemented.
+Defaults to [`CGRectNull`](../../CoreGraphics/cgrectnull.md) if not implemented.
 
 ## Parameters
 

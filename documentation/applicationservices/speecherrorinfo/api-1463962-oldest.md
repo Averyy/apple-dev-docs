@@ -1,7 +1,8 @@
 # oldest
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The error code of the first error that occurred after the previous call to the `GetSpeechInfo` function with the `soErrors` selector.
 
@@ -12,6 +13,10 @@ The error code of the first error that occurred after the previous call to the `
 
 ```swift
 var oldest: OSErr
+```
+
+```c
+OSErr oldest;
 ```
 
 

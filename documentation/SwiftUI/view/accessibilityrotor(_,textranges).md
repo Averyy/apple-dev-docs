@@ -1,7 +1,8 @@
 # accessibilityRotor(_:textRanges:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create an Accessibility Rotor with the specified user-visible label and entries for each of the specified ranges. The Rotor will be attached to the current Accessibility element, and each entry will go the specified range of that element.
 
@@ -19,6 +20,28 @@ Create an Accessibility Rotor with the specified user-visible label and entries 
 ```swift
 @export(implementation)
 nonisolated func accessibilityRotor(_ label: LocalizedStringResource, textRanges: [Range<String.Index>]) -> some View
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityRotor(_ label: Text, textRanges: [Range<String.Index>]) -> some View
+```
+
+```swift
+nonisolated
+func accessibilityRotor(_ labelKey: LocalizedStringKey, textRanges: [Range<String.Index>]) -> some View
+```
+
+```swift
+nonisolated
+func accessibilityRotor(_ systemRotor: AccessibilitySystemRotor, textRanges: [Range<String.Index>]) -> some View
+```
+
+```swift
+nonisolated
+func accessibilityRotor<L>(_ label: L, textRanges: [Range<String.Index>]) -> some View where L : StringProtocol
 ```
 
 #### Discussion
@@ -49,11 +72,12 @@ struct MessageContentView: View {
 
 ## See Also
 
-- [func accessibilityRotor(_:entries:)](view/accessibilityrotor(_:entries:).md)
+### Working with rotors
+- [func accessibilityRotor(_:entries:)](./accessibilityrotor%28_,entries%29.md)
   Create an Accessibility Rotor with the specified user-visible label, and entries generated from the content closure.
-- [func accessibilityRotor(_:entries:entryID:entryLabel:)](view/accessibilityrotor(_:entries:entryid:entrylabel:).md)
+- [func accessibilityRotor(_:entries:entryID:entryLabel:)](./accessibilityrotor%28_,entries,entryid,entrylabel%29.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
-- [func accessibilityRotor(_:entries:entryLabel:)](view/accessibilityrotor(_:entries:entrylabel:).md)
+- [func accessibilityRotor(_:entries:entryLabel:)](./accessibilityrotor%28_,entries,entrylabel%29.md)
   Create an Accessibility Rotor with the specified user-visible label and entries.
 
 

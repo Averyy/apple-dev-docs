@@ -1,7 +1,8 @@
 # SSL_FORTEZZA_DMS_WITH_NULL_SHA
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var SSL_FORTEZZA_DMS_WITH_NULL_SHA: SSLCipherSuite { get }
+```
+
+```c
+SSL_FORTEZZA_DMS_WITH_NULL_SHA
 ```
 
 

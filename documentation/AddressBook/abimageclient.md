@@ -1,12 +1,13 @@
 # ABImageClient
 
 **Framework**: Address Book  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods for responding to a request to load images associated with a contact.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,28 +15,33 @@ Methods for responding to a request to load images associated with a contact.
 protocol ABImageClient : NSObjectProtocol
 ```
 
+```objc
+@protocol ABImageClient <NSObject>
+```
+
 ## Topics
 
 ### Loading an image
-- [func consumeImageData(Data!, forTag: Int)](abimageclient/consumeimagedata(_:fortag:).md)
+- [func consumeImageData(Data!, forTag: Int)](./abimageclient/consumeimagedata%28_,fortag%29.md)
   Gets the image data for the given tag that was initiated by an asynchronous fetch.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ABPerson](abperson.md)
+### Data Types
+- [class ABPerson](./abperson.md)
   An object that encapsulates all information about a person in the Address Book database.
-- [class ABGroup](abgroup.md)
+- [class ABGroup](./abgroup.md)
   An object that represents a group of records in the Address Book database.
-- [class ABMultiValue](abmultivalue-swift.class.md)
+- [class ABMultiValue](./abmultivalue-swift.class.md)
   An immutable representation of a property that might have multiple values.
-- [class ABMutableMultiValue](abmutablemultivalue-swift.class.md)
+- [class ABMutableMultiValue](./abmutablemultivalue-swift.class.md)
   A mutable representation of a property that might have multiple values.
-- [class ABRecord](abrecord-swift.class.md)
+- [class ABRecord](./abrecord-swift.class.md)
   An abstract class that defines the common properties for all Address Book records.
 
 

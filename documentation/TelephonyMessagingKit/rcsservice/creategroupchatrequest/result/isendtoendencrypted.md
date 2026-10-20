@@ -1,7 +1,8 @@
 # isEndToEndEncrypted
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the associated group is end-to-end encrypted.
 

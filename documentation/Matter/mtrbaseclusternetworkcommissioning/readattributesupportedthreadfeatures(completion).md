@@ -1,7 +1,8 @@
 # readAttributeSupportedThreadFeatures(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSupportedThreadFeatures(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSupportedThreadFeatures() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeSupportedThreadFeaturesWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

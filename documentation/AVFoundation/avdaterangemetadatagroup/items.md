@@ -1,7 +1,8 @@
 # items
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of associated metadata items.
 
@@ -18,6 +19,10 @@ An array of associated metadata items.
 
 ```swift
 var items: [AVMetadataItem] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<AVMetadataItem *> * items;
 ```
 
 

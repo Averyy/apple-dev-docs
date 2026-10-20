@@ -1,7 +1,8 @@
 # isReadyForDisplay
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the first video frame is ready for display.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether the first video frame is ready for displa
 var isReadyForDisplay: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isReadyForDisplay) BOOL readyForDisplay;
+```
+
 ## See Also
 
-- [var controlTimebase: CMTimebase?](avsamplebufferdisplaylayer/controltimebase.md)
+### Configuring the layer
+- [var controlTimebase: CMTimebase?](./controltimebase.md)
   A timebase that determines how the layer interprets timestamps.
-- [var videoGravity: AVLayerVideoGravity](avsamplebufferdisplaylayer/videogravity.md)
+- [var videoGravity: AVLayerVideoGravity](./videogravity.md)
   A value that indicates how the layer displays video within its bounds.
-- [struct AVLayerVideoGravity](avlayervideogravity.md)
+- [struct AVLayerVideoGravity](../avlayervideogravity.md)
   A structure that defines how a layer displays a player’s visual content within the layer’s bounds.
 
 

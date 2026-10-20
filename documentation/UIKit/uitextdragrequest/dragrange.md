@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A range of text associated with a drag item in an active drag session that originated in a text view.
@@ -18,9 +19,14 @@ A range of text associated with a drag item in an active drag session that origi
 var dragRange: UITextRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITextRange * dragRange;
+```
+
 ## See Also
 
-- [var isSelected: Bool](uitextdragrequest/isselected.md)
+### Getting information about the text
+- [var isSelected: Bool](./isselected.md)
   A Boolean value indicating whether text is selected for dragging.
 
 

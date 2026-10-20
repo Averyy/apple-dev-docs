@@ -1,7 +1,8 @@
 # oneBased
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A hour cycle that indicates a clock that starts at one.
 
@@ -22,7 +23,8 @@ static let oneBased: Date.FormatStyle.Symbol.VerbatimHour.HourCycle
 
 ## See Also
 
-- [static let zeroBased: Date.FormatStyle.Symbol.VerbatimHour.HourCycle](date/formatstyle/symbol/verbatimhour/hourcycle/zerobased.md)
+### Modifying a Verbatim Hour HourCycle
+- [static let zeroBased: Date.FormatStyle.Symbol.VerbatimHour.HourCycle](./zerobased.md)
   A hour cycle that indicates a clock that starts at zero.
 
 

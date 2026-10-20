@@ -1,7 +1,8 @@
 # multiply(by:divisor:preBias:postBias:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Multiplies each pixel in an 8-bit planar pixel buffer by the specified factor.
 
@@ -11,7 +12,7 @@ Multiplies each pixel in an 8-bit planar pixel buffer by the specified factor.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Multiplies each pixel in an 8-bit planar pixel buffer by the specified factor.
 ```swift
 func multiply(by factor: Int, divisor: Int, preBias: Int, postBias: Int, destination: vImage.PixelBuffer<vImage.Planar8>)
 ```
+
+Available when `Format` is `vImage.Planar8`.
 
 #### Discussion
 
@@ -58,7 +61,8 @@ For example, the following code multiplies each pixel value in an 8-bit planar b
 
 ## See Also
 
-- [func multiply(by: Float, preBias: Float, postBias: Float, destination: vImage.PixelBuffer<vImage.PlanarF>)](vimage/pixelbuffer/multiply(by:prebias:postbias:destination:)-3bh2a.md)
+### Scalar Multiplication
+- [func multiply(by: Float, preBias: Float, postBias: Float, destination: vImage.PixelBuffer<vImage.PlanarF>)](./multiply%28by,prebias,postbias,destination%29-3bh2a.md)
   Multiplies each pixel in a 32-bit planar pixel buffer by the specified factor.
 
 

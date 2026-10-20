@@ -1,7 +1,8 @@
 # SendBufferQueueChange
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a notification to the host that the buffer queue has changed.
 
@@ -10,7 +11,7 @@ Sends a notification to the host that the buffer queue has changed.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SendBufferQueueChange();
 ```
 
@@ -24,17 +25,18 @@ This will result in the user’s buffer queue changed handler being called, if t
 
 ## See Also
 
-- [GetInputQueue](iouservideostream/getinputqueue.md)
+### Working with queues
+- [GetInputQueue](./getinputqueue.md)
   Gets the buffer queue for the stream.
-- [GetOutputQueue](iouservideostream/getoutputqueue.md)
+- [GetOutputQueue](./getoutputqueue.md)
   Gets the memory descriptor used for video IO that was initialized with or set on the video stream.
-- [createQueues](iouservideostream/createqueues.md)
+- [createQueues](./createqueues.md)
   Creates the shared input and output queues, without regard to whether the stream is open or not.
-- [destroyQueues](iouservideostream/destroyqueues.md)
+- [destroyQueues](./destroyqueues.md)
   Releases the shared input and output queues.
-- [dequeueInputEntry](iouservideostream/dequeueinputentry.md)
-- [enqueueOutputEntry](iouservideostream/enqueueoutputentry.md)
-- [IOStreamBufferQueue](iostreambufferqueue.md)
+- [dequeueInputEntry](./dequeueinputentry.md)
+- [enqueueOutputEntry](./enqueueoutputentry.md)
+- [IOStreamBufferQueue](../iostreambufferqueue.md)
 
 
 ---

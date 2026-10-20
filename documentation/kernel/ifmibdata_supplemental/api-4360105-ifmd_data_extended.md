@@ -1,14 +1,15 @@
 # ifmd_data_extended
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 struct if_data_extended ifmd_data_extended;
 ```
 

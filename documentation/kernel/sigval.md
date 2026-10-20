@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 union sigval {
     ...
 };
@@ -17,8 +17,8 @@ union sigval {
 ## Topics
 
 ### Miscellaneous
-- [sival_int](sigval/1591434-sival_int.md)
-- [sival_ptr](sigval/1591559-sival_ptr.md)
+- [sival_int](./sigval/api-1591434-sival_int.md)
+- [sival_ptr](./sigval/api-1591559-sival_ptr.md)
 
 
 ---

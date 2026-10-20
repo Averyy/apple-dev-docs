@@ -1,14 +1,15 @@
 # MobileDocumentRegistration
 
 **Framework**: IdentityDocumentServices  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type you use to register mobile documents.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -23,32 +24,33 @@ Mobile documents, or “mdocs”, are a document format defined in ISO 18013-5.
 ## Topics
 
 ### Initializers
-- [init(mobileDocumentType: String, supportedAuthorityKeyIdentifiers: [Data], documentIdentifier: String, invalidationDate: Date?)](mobiledocumentregistration/init(mobiledocumenttype:supportedauthoritykeyidentifiers:documentidentifier:invalidationdate:).md)
+- [init(mobileDocumentType: String, supportedAuthorityKeyIdentifiers: [Data], documentIdentifier: String, invalidationDate: Date?)](./mobiledocumentregistration/init%28mobiledocumenttype,supportedauthoritykeyidentifiers,documentidentifier,invalidationdate%29.md)
   Initializes a mobile document registration.
-- [init(mobileDocumentType: String, supportedIssuerKeyIdentifiers: [Data], supportedAuthorityKeyIdentifiers: [Data], documentIdentifier: String, invalidationDate: Date?)](mobiledocumentregistration/init(mobiledocumenttype:supportedissuerkeyidentifiers:supportedauthoritykeyidentifiers:documentidentifier:invalidationdate:).md)
+- [init(mobileDocumentType: String, supportedIssuerKeyIdentifiers: [Data], supportedAuthorityKeyIdentifiers: [Data], documentIdentifier: String, invalidationDate: Date?)](./mobiledocumentregistration/init%28mobiledocumenttype,supportedissuerkeyidentifiers,supportedauthoritykeyidentifiers,documentidentifier,invalidationdate%29.md)
   Initialize a mobile document registration with issuer key identifiers.
 ### Instance Properties
-- [var invalidationDate: Date?](mobiledocumentregistration/invalidationdate.md)
+- [var invalidationDate: Date?](./mobiledocumentregistration/invalidationdate.md)
   A date that indicates when the system needs to invalidate this registration.
-- [var mobileDocumentType: String](mobiledocumentregistration/mobiledocumenttype.md)
+- [var mobileDocumentType: String](./mobiledocumentregistration/mobiledocumenttype.md)
   The type of the mobile document.
-- [var supportedAuthorityKeyIdentifiers: [Data]](mobiledocumentregistration/supportedauthoritykeyidentifiers.md)
+- [var supportedAuthorityKeyIdentifiers: [Data]](./mobiledocumentregistration/supportedauthoritykeyidentifiers.md)
   A list of authority key identifiers that correspond to relying party authorizers that are trusted by the document provider app.
-- [var supportedIssuerKeyIdentifiers: [Data]](mobiledocumentregistration/supportedissuerkeyidentifiers.md)
+- [var supportedIssuerKeyIdentifiers: [Data]](./mobiledocumentregistration/supportedissuerkeyidentifiers.md)
   A list of X.509 authority key identifiers that correspond to the document signer certificate chain for the mobile document.
 
 ## Relationships
 
 ### Conforms To
-- [IdentityDocumentRegistration](identitydocumentregistration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [IdentityDocumentRegistration](./identitydocumentregistration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [actor IdentityDocumentProviderRegistrationStore](identitydocumentproviderregistrationstore.md)
+### Registering as an identity document provider
+- [actor IdentityDocumentProviderRegistrationStore](./identitydocumentproviderregistrationstore.md)
   A store that notifies the system which documents an app has available for presentment.
-- [protocol IdentityDocumentRegistration](identitydocumentregistration.md)
+- [protocol IdentityDocumentRegistration](./identitydocumentregistration.md)
   A protocol that defines an identity document registration.
 
 

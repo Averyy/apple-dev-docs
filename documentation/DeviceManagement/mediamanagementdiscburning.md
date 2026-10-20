@@ -1,7 +1,8 @@
 # MediaManagementDiscBurning
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures disc-burning settings.
 
@@ -10,7 +11,7 @@ The payload that configures disc-burning settings.
 
 ## Declaration
 
-```swift
+```
 object MediaManagementDiscBurning
 ```
 
@@ -18,7 +19,7 @@ object MediaManagementDiscBurning
 
 Specify `com.apple.DiscRecording` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.DiscRecording` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -68,9 +69,13 @@ Specify `com.apple.DiscRecording` as the payload type.
 
 ## Properties
 
-- `BurnSupport` (string) *(required)*: Configure disc-burn. Allowed values: - `off`: The system disables disc burning.
-- `on`: The system allows normal default operation. Setting this key to `on` doesn’t enable disc burn support if other mechanisms or preferences disabled it. Needs to be enabled with the [`Finder`](finder.md) profile.
-- `authenticate`: The system requires authentication.
+- `BurnSupport` (string) *(required)*: Configure disc-burn. Allowed values:
+
+  - `off`: The system disables disc burning.
+  - `on`: The system allows normal default operation. Setting this key to `on` doesn’t enable disc burn support if other mechanisms or preferences disabled it. Needs to be enabled with the [`Finder`](./finder.md) profile.
+  - `authenticate`: The system requires authentication.
+
+  **Allowed Values**: `off`, `authenticate`, `on`
 
 
 ---

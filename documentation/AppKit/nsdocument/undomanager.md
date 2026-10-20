@@ -1,12 +1,13 @@
 # undoManager
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object that the document uses to support undo/redo operations.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The object that the document uses to support undo/redo operations.
 var undoManager: UndoManager? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSUndoManager * undoManager;
+```
+
 #### Discussion
 
-When the [`hasUndoManager`](nsdocument/hasundomanager.md) property is [`true`](https://developer.apple.com/documentation/swift/true), accessing this property creates an [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) before returning it. If the [`hasUndoManager`](nsdocument/hasundomanager.md) property is [`false`](https://developer.apple.com/documentation/swift/false), the value of this property is `nil` by default. Assigning an undo manager to this property stores a reference to the object and automatically changes the [`hasUndoManager`](nsdocument/hasundomanager.md) property to [`true`](https://developer.apple.com/documentation/swift/true).
+When the [`hasUndoManager`](./hasundomanager.md) property is [`true`](../../Swift/true.md), accessing this property creates an [`UndoManager`](../../Foundation/undomanager.md) before returning it. If the [`hasUndoManager`](./hasundomanager.md) property is [`false`](../../Swift/false.md), the value of this property is `nil` by default. Assigning an undo manager to this property stores a reference to the object and automatically changes the [`hasUndoManager`](./hasundomanager.md) property to [`true`](../../Swift/true.md).
 
-Whether you assign an undo manager or let the document create one, the document registers itself as an observer of various  [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) notifications so that appropriate document actions are stored on the undo stack.
+Whether you assign an undo manager or let the document create one, the document registers itself as an observer of various  [`UndoManager`](../../Foundation/undomanager.md) notifications so that appropriate document actions are stored on the undo stack.
 
 ## See Also
 
-- [var hasUndoManager: Bool](nsdocument/hasundomanager.md)
+### Managing Undo and Redo Actions
+- [var hasUndoManager: Bool](./hasundomanager.md)
   A Boolean value that indicates whether the document owns an undo manager object.
 
 

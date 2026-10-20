@@ -1,7 +1,8 @@
 # navigationBar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The navigation bar content scene padding.
 
@@ -20,7 +21,8 @@ In watchOS, this represents the horizontal spacing that you use to align a view 
 
 ## See Also
 
-- [static let minimum: ScenePadding](scenepadding/minimum.md)
+### Getting padding values
+- [static let minimum: ScenePadding](./minimum.md)
   The minimum scene padding value.
 
 

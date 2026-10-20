@@ -1,7 +1,8 @@
 # BE_KEVENT_RETURN_IMMEDIATELY
 
 **Framework**: BrowserEngineCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that a request to receive kernel events needs to return without waiting for events.
 
@@ -15,17 +16,22 @@ Indicates that a request to receive kernel events needs to return without waitin
 var BE_KEVENT_RETURN_IMMEDIATELY: Int32 { get }
 ```
 
+```c
+#define BE_KEVENT_RETURN_IMMEDIATELY
+```
+
 #### Overview
 
-Use this constant in the `be_flags` parameter of [`be_kevent(_:_:_:_:_:_:)`](be_kevent(_:_:_:_:_:_:).md), or the `flags` parameter of [`be_kevent64(_:_:_:_:_:_:)`](be_kevent64(_:_:_:_:_:_:).md), to poll for kernel events.
+Use this constant in the `be_flags` parameter of [`be_kevent(_:_:_:_:_:_:)`](./be_kevent%28_,_,_,_,_,_%29.md), or the `flags` parameter of [`be_kevent64(_:_:_:_:_:_:)`](./be_kevent64%28_,_,_,_,_,_%29.md), to poll for kernel events.
 
 ## See Also
 
-- [func be_kevent(Int32, UnsafePointer<kevent>!, Int32, UnsafeMutablePointer<kevent>!, Int32, UInt32) -> Int32](be_kevent(_:_:_:_:_:_:).md)
+### Kernel events
+- [func be_kevent(Int32, UnsafePointer<kevent>!, Int32, UnsafeMutablePointer<kevent>!, Int32, UInt32) -> Int32](./be_kevent%28_,_,_,_,_,_%29.md)
   Registers for kernel events on the specified queue, and returns events that are pending on the queue, using 32-bit data types.
-- [func be_kevent64(Int32, UnsafePointer<kevent64_s>!, Int32, UnsafeMutablePointer<kevent64_s>!, Int32, UInt32) -> Int32](be_kevent64(_:_:_:_:_:_:).md)
+- [func be_kevent64(Int32, UnsafePointer<kevent64_s>!, Int32, UnsafeMutablePointer<kevent64_s>!, Int32, UInt32) -> Int32](./be_kevent64%28_,_,_,_,_,_%29.md)
   Registers for kernel events on the specified queue, and returns events that are pending on the queue, using 64-bit data types.
-- [var BE_KEVENT_NO_FLAGS: Int32](be_kevent_no_flags.md)
+- [var BE_KEVENT_NO_FLAGS: Int32](./be_kevent_no_flags.md)
   Indicates that no flags are set in a request to receive kernel events.
 
 

@@ -1,28 +1,30 @@
 # fminl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double fminl(long double, long double);
 ```
 
 ## See Also
 
-- [lmax](1441059-lmax.md)
-- [lmin](1441038-lmin.md)
-- [imax](1441067-imax.md)
-- [imin](1441063-imin.md)
-- [fmax](1557201-fmax.md)
-- [fmaxf](1557268-fmaxf.md)
-- [fmaxl](1557200-fmaxl.md)
-- [fmin](1557189-fmin.md)
-- [fminf](1557340-fminf.md)
+### Minimum and Maximum
+- [lmax](./api-1441059-lmax.md)
+- [lmin](./api-1441038-lmin.md)
+- [imax](./api-1441067-imax.md)
+- [imin](./api-1441063-imin.md)
+- [fmax](./api-1557201-fmax.md)
+- [fmaxf](./api-1557268-fmaxf.md)
+- [fmaxl](./api-1557200-fmaxl.md)
+- [fmin](./api-1557189-fmin.md)
+- [fminf](./api-1557340-fminf.md)
 
 
 ---

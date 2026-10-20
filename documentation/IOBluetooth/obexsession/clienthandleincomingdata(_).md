@@ -1,17 +1,22 @@
 # clientHandleIncomingData(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tranport subclasses need to invoke this from their own data-receive handlers. For example, when data is received over a Bluetooth RFCOMM channel in the IOBluetoothOBEXSession, it in turn calls this to dispatch the data. If you do not handle this case, your server session will not work, guaranteed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func clientHandleIncomingData(_ event: UnsafeMutablePointer<OBEXTransportEvent>!)
+```
+
+```objc
+- (void) clientHandleIncomingData:(OBEXTransportEvent *) event;
 ```
 
 #### Discussion

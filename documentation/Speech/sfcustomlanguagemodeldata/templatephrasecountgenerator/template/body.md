@@ -1,7 +1,8 @@
 # body
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -19,7 +20,8 @@ let body: String
 
 ## See Also
 
-- [let count: Int](sfcustomlanguagemodeldata/templatephrasecountgenerator/template/count.md)
+### Inspecting the template
+- [let count: Int](./count.md)
 
 
 ---

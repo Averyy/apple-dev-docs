@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
@@ -25,6 +26,17 @@ static func <= (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 
 - `lhs`: A value to compare.
 - `rhs`: Another value to compare.
+
+## Default Implementations
+
+### Comparable Implementations
+- [static func <= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-2sx31.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
+- [static func <= (Self, Self) -> Bool](./opeq%28_,_%29-4c5w5.md)
+- [static func <= <Other>(Self, Other) -> Bool](./opeq%28_,_%29-7a44t.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
+- [static func <= (Self, Self) -> Bool](./opeq%28_,_%29-7vu9w.md)
+- [static func <= <RHS>(Self, RHS) -> Bool](./opeq%28_,_%29-7yw8z.md)
 
 
 ---

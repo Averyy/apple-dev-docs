@@ -1,7 +1,8 @@
 # init(appGroup:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a cache that shares specialized assets across an app group.
 
@@ -20,7 +21,7 @@ init?(appGroup groupIdentifier: String)
 
 ## Mentions
 
-- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+- [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
 #### Return Value
 

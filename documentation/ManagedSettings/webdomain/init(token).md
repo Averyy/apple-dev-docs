@@ -1,7 +1,8 @@
 # init(token:)
 
 **Framework**: Managed Settings  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that represents the provided domain.
 
@@ -22,7 +23,8 @@ init(token: WebDomainToken)
 
 ## See Also
 
-- [init(domain: String)](webdomain/init(domain:).md)
+### Creating a web domain
+- [init(domain: String)](./init%28domain%29.md)
   Creates an object that represents the specified web domain.
 
 

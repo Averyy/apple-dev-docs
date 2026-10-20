@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var flags: UInt64
+```
+
+```c
+uint64_t flags;
 ```
 
 

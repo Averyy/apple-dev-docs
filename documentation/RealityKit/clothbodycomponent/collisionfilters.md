@@ -1,7 +1,8 @@
 # collisionFilters
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the collision groups that each particle belongs to, and the mask used to determine which collision groups each particle is affected by.
 
@@ -22,13 +23,14 @@ By default, the collision groups are set to `.defaultBodies`, and the mask is se
 
 ## See Also
 
-- [var colliderBinding: ClothBodyComponent.ColliderBinding](clothbodycomponent/colliderbinding-swift.property.md)
-  Configuration for binding the body to a mesh collider specified by [`sourceCollider`](clothbodycomponent/colliderbinding-swift.struct/sourcecollider.md).
-- [ClothBodyComponent.ColliderBinding](clothbodycomponent/colliderbinding-swift.struct.md)
+### Managing collisions
+- [var colliderBinding: ClothBodyComponent.ColliderBinding](./colliderbinding-swift.property.md)
+  Configuration for binding the body to a mesh collider specified by [`sourceCollider`](./colliderbinding-swift.struct/sourcecollider.md).
+- [ClothBodyComponent.ColliderBinding](./colliderbinding-swift.struct.md)
   Binds the cloth body to an entity’s mesh collider.
-- [func enableCollisions(towards: ClothCollisionGroupSet)](clothbodycomponent/enablecollisions(towards:).md)
+- [func enableCollisions(towards: ClothCollisionGroupSet)](./enablecollisions%28towards%29.md)
   Enables one-way collisions towards the selected groups for all particles in the body.
-- [func disableCollisions(towards: ClothCollisionGroupSet)](clothbodycomponent/disablecollisions(towards:).md)
+- [func disableCollisions(towards: ClothCollisionGroupSet)](./disablecollisions%28towards%29.md)
   Disables one-way collisions towards the selected groups for all particles in the body.
 
 

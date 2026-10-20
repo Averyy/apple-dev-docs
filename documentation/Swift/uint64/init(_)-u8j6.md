@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance from the given integer.
 
@@ -19,6 +20,8 @@ Creates a new instance from the given integer.
 ```swift
 init<T>(_ source: T) where T : BinaryInteger
 ```
+
+Available when `Self` conforms to `FixedWidthInteger`.
 
 #### Discussion
 

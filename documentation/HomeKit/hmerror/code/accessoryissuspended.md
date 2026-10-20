@@ -1,7 +1,8 @@
 # HMError.Code.accessoryIsSuspended
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory is suspended.
 
@@ -19,25 +20,30 @@ The accessory is suspended.
 case accessoryIsSuspended
 ```
 
+```c
+HMErrorCodeAccessoryIsSuspended
+```
+
 ## See Also
 
-- [HMError.Code.accessoryIsBlocked](hmerror/code/accessoryisblocked.md)
+### Accessory errors
+- [HMError.Code.accessoryIsBlocked](./accessoryisblocked.md)
   An error indicating a blocked accessory.
-- [HMError.Code.accessoryIsBusy](hmerror/code/accessoryisbusy.md)
+- [HMError.Code.accessoryIsBusy](./accessoryisbusy.md)
   An error indicating the accessory is busy.
-- [HMError.Code.accessoryNotReachable](hmerror/code/accessorynotreachable.md)
+- [HMError.Code.accessoryNotReachable](./accessorynotreachable.md)
   An error indicating the accessory is not reachable over the network.
-- [HMError.Code.accessoryOutOfCompliance](hmerror/code/accessoryoutofcompliance.md)
+- [HMError.Code.accessoryOutOfCompliance](./accessoryoutofcompliance.md)
   An error indicating the accessory is out of compliance.
-- [HMError.Code.accessoryOutOfResources](hmerror/code/accessoryoutofresources.md)
+- [HMError.Code.accessoryOutOfResources](./accessoryoutofresources.md)
   An error indicating the accessory is out of resources.
-- [HMError.Code.accessoryPoweredOff](hmerror/code/accessorypoweredoff.md)
+- [HMError.Code.accessoryPoweredOff](./accessorypoweredoff.md)
   An error indicating the accessory is off.
-- [HMError.Code.accessoryResponseError](hmerror/code/accessoryresponseerror.md)
+- [HMError.Code.accessoryResponseError](./accessoryresponseerror.md)
   An error with the accessory’s response.
-- [HMError.Code.addAccessoryFailed](hmerror/code/addaccessoryfailed.md)
+- [HMError.Code.addAccessoryFailed](./addaccessoryfailed.md)
   A failed attempt to add an accessory.
-- [HMError.Code.incompatibleAccessory](hmerror/code/incompatibleaccessory.md)
+- [HMError.Code.incompatibleAccessory](./incompatibleaccessory.md)
   The accessory is incompatible.
 
 

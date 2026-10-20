@@ -2,6 +2,7 @@
 
 **Framework**: Core Animation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Determines if the receiver plays in the reverse upon completion.
@@ -20,13 +21,18 @@ Determines if the receiver plays in the reverse upon completion.
 var autoreverses: Bool { get set }
 ```
 
+```objc
+@property BOOL autoreverses;
+```
+
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), the receiver plays backwards after playing forwards. Defaults to [`false`](https://developer.apple.com/documentation/swift/false).
+When [`true`](../../Swift/true.md), the receiver plays backwards after playing forwards. Defaults to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var fillMode: CAMediaTimingFillMode](camediatiming/fillmode.md)
+### Playback Modes
+- [var fillMode: CAMediaTimingFillMode](./fillmode.md)
   Determines if the receiver’s presentation is frozen or removed once its active duration has completed.
 
 

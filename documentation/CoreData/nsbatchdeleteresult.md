@@ -1,7 +1,8 @@
 # NSBatchDeleteResult
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the result of a batch delete request.
 
@@ -20,31 +21,36 @@ An object that describes the result of a batch delete request.
 class NSBatchDeleteResult
 ```
 
+```objc
+@interface NSBatchDeleteResult : NSPersistentStoreResult
+```
+
 ## Topics
 
 ### Accessing the Result
-- [var result: Any?](nsbatchdeleteresult/result.md)
+- [var result: Any?](./nsbatchdeleteresult/result.md)
   The value the request returns after it executes.
-- [var resultType: NSBatchDeleteRequestResultType](nsbatchdeleteresult/resulttype.md)
+- [var resultType: NSBatchDeleteRequestResultType](./nsbatchdeleteresult/resulttype.md)
   The data type of the request’s result value.
-- [enum NSBatchDeleteRequestResultType](nsbatchdeleterequestresulttype.md)
+- [enum NSBatchDeleteRequestResultType](./nsbatchdeleterequestresulttype.md)
   The types of result a batch delete request can provide when it executes.
 
 ## Relationships
 
 ### Inherits From
-- [NSPersistentStoreResult](nspersistentstoreresult.md)
+- [NSPersistentStoreResult](./nspersistentstoreresult.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSBatchDeleteRequest](nsbatchdeleterequest.md)
+### Data Deletion
+- [class NSBatchDeleteRequest](./nsbatchdeleterequest.md)
   A request that deletes objects in the SQLite persistent store without loading them into memory.
 
 

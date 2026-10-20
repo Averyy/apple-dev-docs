@@ -1,7 +1,8 @@
 # FSContainerState.notReady
 
 **Framework**: FSKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The container isn’t ready.
 
@@ -14,13 +15,18 @@ The container isn’t ready.
 case notReady
 ```
 
+```c
+FSContainerStateNotReady
+```
+
 ## See Also
 
-- [FSContainerState.blocked](fscontainerstate/blocked.md)
+### Container states
+- [FSContainerState.blocked](./blocked.md)
   The container is blocked from transitioning from the not-ready state to the ready state by a potentially-recoverable error.
-- [FSContainerState.ready](fscontainerstate/ready.md)
+- [FSContainerState.ready](./ready.md)
   The container is ready, but inactive.
-- [FSContainerState.active](fscontainerstate/active.md)
+- [FSContainerState.active](./active.md)
   The container is active, and one or more volumes are active.
 
 

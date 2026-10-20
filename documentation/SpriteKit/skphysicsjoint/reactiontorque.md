@@ -1,18 +1,19 @@
 # reactionTorque
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Instantaneous reaction torque, in newton-meters,  currently being directed at the anchor point.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ Instantaneous reaction torque, in newton-meters,  currently being directed at th
 var reactionTorque: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat reactionTorque;
+```
+
 ## See Also
 
-- [var reactionForce: CGVector](skphysicsjoint/reactionforce.md)
+### Reading the Stress and Speed that Are Currently Applied to a Joint
+- [var reactionForce: CGVector](./reactionforce.md)
   The instantaneous reaction force, in newtons, currently being directed at the anchor point.
 
 

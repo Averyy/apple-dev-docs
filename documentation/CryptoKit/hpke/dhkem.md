@@ -1,7 +1,8 @@
 # HPKE.DHKEM
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A container for Diffie-Hellman key encapsulation mechanisms (KEMs).
 
@@ -23,18 +24,19 @@ enum DHKEM
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Ciphersuite](hpke/ciphersuite.md)
+### Choosing cryptographic algorithms
+- [struct Ciphersuite](./ciphersuite.md)
   Cipher suites to use in hybrid public key encryption (HPKE).
-- [HPKE.AEAD](hpke/aead.md)
+- [HPKE.AEAD](./aead.md)
   The authenticated encryption with associated data (AEAD) algorithms to use in HPKE.
-- [HPKE.KDF](hpke/kdf.md)
+- [HPKE.KDF](./kdf.md)
   The key derivation functions to use in HPKE.
-- [HPKE.KEM](hpke/kem.md)
+- [HPKE.KEM](./kem.md)
   The key encapsulation mechanisms to use in HPKE.
 
 

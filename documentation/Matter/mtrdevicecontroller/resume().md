@@ -1,7 +1,8 @@
 # resume()
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resume the controller.  This has no effect if the controller is not suspended.
 
@@ -18,6 +19,10 @@ Resume the controller.  This has no effect if the controller is not suspended.
 
 ```swift
 func resume()
+```
+
+```objc
+- (void) resume;
 ```
 
 #### Discussion

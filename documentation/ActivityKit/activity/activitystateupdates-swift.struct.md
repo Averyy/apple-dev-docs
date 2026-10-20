@@ -1,7 +1,8 @@
 # Activity.ActivityStateUpdates
 
 **Framework**: ActivityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that offers functionality to observe state changes of a Live Activity.
 
@@ -15,28 +16,31 @@ A structure that offers functionality to observe state changes of a Live Activit
 struct ActivityStateUpdates
 ```
 
+Available when `Attributes` conforms to `ActivityAttributes`.
+
 ## Topics
 
 ### Creating an iterator
-- [func makeAsyncIterator() -> Activity<Attributes>.ActivityStateUpdates.Iterator](activity/activitystateupdates-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> Activity<Attributes>.ActivityStateUpdates.Iterator](./activitystateupdates-swift.struct/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
-- [Activity.ActivityStateUpdates.Iterator](activity/activitystateupdates-swift.struct/iterator.md)
+- [Activity.ActivityStateUpdates.Iterator](./activitystateupdates-swift.struct/iterator.md)
   An iterator for accessing individual data entries from the series.
-- [Activity.ActivityStateUpdates.Element](activity/activitystateupdates-swift.struct/element.md)
+- [Activity.ActivityStateUpdates.Element](./activitystateupdates-swift.struct/element.md)
   The type of element this asynchronous sequence produces.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [var activityState: ActivityState](activity/activitystate.md)
+### Observing the Live Activity life cycle
+- [var activityState: ActivityState](./activitystate.md)
   The current state of a Live Activity in its life cycle.
-- [enum ActivityState](activitystate.md)
+- [enum ActivityState](../activitystate.md)
   The enum that describes the state of a Live Activity in its life cycle.
-- [var activityStateUpdates: Activity<Attributes>.ActivityStateUpdates](activity/activitystateupdates-swift.property.md)
+- [var activityStateUpdates: Activity<Attributes>.ActivityStateUpdates](./activitystateupdates-swift.property.md)
   An asynchronous sequence you use to observe activity state changes.
 
 

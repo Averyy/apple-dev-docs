@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure that determines whether to publish an element.
 
@@ -22,7 +23,8 @@ let predicate: (Publishers.LastWhere<Upstream>.Output) -> Bool
 
 ## See Also
 
-- [let upstream: Upstream](publishers/lastwhere/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

@@ -1,17 +1,20 @@
 # sourceImage
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current video frame image.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 27.0
+- iPadOS 9.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.11+ - Deprecated in 27.0
+- tvOS 9.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use AVCIImageFilteringParameters instead
 
 ## Declaration
 
@@ -19,11 +22,15 @@ The current video frame image.
 var sourceImage: CIImage { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CIImage * sourceImage;
+```
+
 #### Discussion
 
-To apply a Core Image filter to this image, assign it to the `inputImage` parameter of a [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class) object, or use a [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) convenience method such as the [`applyingFilter(_:parameters:)`](https://developer.apple.com/documentation/coreimage/ciimage/applyingfilter(_:parameters:)) method.
+To apply a Core Image filter to this image, assign it to the `inputImage` parameter of a [`CIFilter`](../../CoreImage/cifilter-swift.class.md) object, or use a [`CIImage`](../../CoreImage/ciimage.md) convenience method such as the [`applyingFilter(_:parameters:)`](../../CoreImage/ciimage/applyingfilter%28_,parameters%29.md) method.
 
-The pixel format for this image is the [`BGRA8`](https://developer.apple.com/documentation/coreimage/ciformat/bgra8) format (of the [`kCVPixelFormatType_32BGRA`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_32bgra) type). Unlike when processing video with the [`AVAsynchronousVideoCompositionRequest`](avasynchronousvideocompositionrequest.md) class, the [`renderContext`](avasynchronousvideocompositionrequest/rendercontext.md) object’s [`renderTransform`](avvideocompositionrendercontext/rendertransform.md) property is already applied to this image.
+The pixel format for this image is the [`BGRA8`](../../CoreImage/ciformat/bgra8.md) format (of the [`kCVPixelFormatType_32BGRA`](../../CoreVideo/kcvpixelformattype_32bgra.md) type). Unlike when processing video with the [`AVAsynchronousVideoCompositionRequest`](../avasynchronousvideocompositionrequest.md) class, the [`renderContext`](../avasynchronousvideocompositionrequest/rendercontext.md) object’s [`renderTransform`](../avvideocompositionrendercontext/rendertransform.md) property is already applied to this image.
 
 
 ---

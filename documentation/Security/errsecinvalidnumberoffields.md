@@ -1,7 +1,8 @@
 # errSecInvalidNumberOfFields
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid number of fields were detected.
 
@@ -18,6 +19,10 @@ An invalid number of fields were detected.
 
 ```swift
 var errSecInvalidNumberOfFields: OSStatus { get }
+```
+
+```c
+errSecInvalidNumberOfFields
 ```
 
 

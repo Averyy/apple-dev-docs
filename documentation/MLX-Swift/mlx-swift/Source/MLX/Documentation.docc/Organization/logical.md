@@ -15,7 +15,7 @@ multiple arrayscan be combined using these operators:
 let r = a > b || !(b < c)
 ```
 
-These can be used for control flow, though consider <doc:lazy-evaluation> when doing this:
+These can be used for control flow, though consider [Lazy Evaluation](../Articles/lazy-evaluation.md) when doing this:
 
 ```swift
 if (a < b).all().item() {

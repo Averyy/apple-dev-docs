@@ -1,7 +1,8 @@
 # fixed(_:bias:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specify a fixed number of shadow cascades to use.
 

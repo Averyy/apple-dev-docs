@@ -1,7 +1,8 @@
 # appendInterpolation(_:privacy:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends an interpolated object description.
 
@@ -11,7 +12,7 @@ Appends an interpolated object description.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,12 +27,13 @@ Don’t call this function directly. The system calls it automatically when inte
 
 ## Parameters
 
-- `argumentObject`: The object with the description you want to add to the message. This function calls the [`description`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/description) method of the object and incorporates that value into the message string.
+- `argumentObject`: The object with the description you want to add to the message. This function calls the [`description`](../../ObjectiveC/nsobjectprotocol/description.md) method of the object and incorporates that value into the message string.
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the default rules redact the object description.
 
 ## See Also
 
-- [func appendInterpolation(@autoclosure () -> NSObject, privacy: OSLogPrivacy, attributes: String)](osloginterpolation/appendinterpolation(_:privacy:attributes:)-3czd2.md)
+### Appending Objects
+- [func appendInterpolation(@autoclosure () -> NSObject, privacy: OSLogPrivacy, attributes: String)](./appendinterpolation%28_,privacy,attributes%29-3czd2.md)
   Appends an interpolated object description with the specified attributes.
 
 

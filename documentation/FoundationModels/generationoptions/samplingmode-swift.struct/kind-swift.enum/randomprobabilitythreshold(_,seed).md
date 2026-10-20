@@ -1,7 +1,8 @@
 # GenerationOptions.SamplingMode.Kind.randomProbabilityThreshold(_:seed:)
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A strategy that samples from the highest-probability tokens whose cumulative probability reaches a threshold.
 
@@ -21,9 +22,10 @@ case randomProbabilityThreshold(Double, seed: UInt64?)
 
 ## See Also
 
-- [GenerationOptions.SamplingMode.Kind.greedy](generationoptions/samplingmode-swift.struct/kind-swift.enum/greedy.md)
+### Sampling cases
+- [GenerationOptions.SamplingMode.Kind.greedy](./greedy.md)
   A strategy that always chooses the most likely token.
-- [GenerationOptions.SamplingMode.Kind.randomTopK(_:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/randomtopk(_:seed:).md)
+- [GenerationOptions.SamplingMode.Kind.randomTopK(_:seed:)](./randomtopk%28_,seed%29.md)
   A strategy that samples from a fixed number of the highest-probability tokens.
 
 

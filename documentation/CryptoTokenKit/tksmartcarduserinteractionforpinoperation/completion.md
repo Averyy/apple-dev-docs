@@ -1,7 +1,8 @@
 # TKSmartCardUserInteractionForPINOperation.Completion
 
 **Framework**: CryptoTokenKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 9.0+
@@ -18,30 +19,35 @@
 struct Completion
 ```
 
+```c
+enum TKSmartCardPINCompletion : NSUInteger;
+```
+
 ## Topics
 
 ### Type Properties
-- [static var key: TKSmartCardUserInteractionForPINOperation.Completion](tksmartcarduserinteractionforpinoperation/completion/key.md)
-- [static var maxLength: TKSmartCardUserInteractionForPINOperation.Completion](tksmartcarduserinteractionforpinoperation/completion/maxlength.md)
-- [static var timeout: TKSmartCardUserInteractionForPINOperation.Completion](tksmartcarduserinteractionforpinoperation/completion/timeout.md)
+- [static var key: TKSmartCardUserInteractionForPINOperation.Completion](./completion/key.md)
+- [static var maxLength: TKSmartCardUserInteractionForPINOperation.Completion](./completion/maxlength.md)
+- [static var timeout: TKSmartCardUserInteractionForPINOperation.Completion](./completion/timeout.md)
 ### Initializers
-- [init(rawValue: UInt)](tksmartcarduserinteractionforpinoperation/completion/init(rawvalue:).md)
+- [init(rawValue: UInt)](./completion/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var pinCompletion: TKSmartCardUserInteractionForPINOperation.Completion](tksmartcarduserinteractionforpinoperation/pincompletion.md)
+### Managing Pin Completion
+- [var pinCompletion: TKSmartCardUserInteractionForPINOperation.Completion](./pincompletion.md)
   The conditions under which PIN entry should be considered complete.
 
 

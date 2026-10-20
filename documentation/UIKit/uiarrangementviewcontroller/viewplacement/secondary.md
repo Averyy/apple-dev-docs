@@ -1,7 +1,8 @@
 # secondary
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The secondary placement in the arrangement.
 
@@ -20,7 +21,8 @@ static var secondary: UIArrangementViewController.ViewPlacement { get }
 
 ## See Also
 
-- [static var primary: UIArrangementViewController.ViewPlacement](uiarrangementviewcontroller/viewplacement/primary.md)
+### Getting a placement
+- [static var primary: UIArrangementViewController.ViewPlacement](./primary.md)
   The primary placement in the arrangement.
 
 

@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Game Controller  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses a contiguous subrange of the collection’s elements.
 
@@ -11,7 +12,7 @@ Accesses a contiguous subrange of the collection’s elements.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

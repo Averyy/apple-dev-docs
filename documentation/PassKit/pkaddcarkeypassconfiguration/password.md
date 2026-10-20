@@ -1,7 +1,8 @@
 # password
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A one-time password that the vehicle manufacturer provides.
 
@@ -9,7 +10,7 @@ A one-time password that the vehicle manufacturer provides.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ A one-time password that the vehicle manufacturer provides.
 var password: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * password;
+```
+
 #### Discussion
 
-When creating a digital car key, the vehicle manufacturer emails the user a one-time password to verify their identity. Set this property’s value to that password before you use the configuration to initialize [`PKAddSecureElementPassViewController`](pkaddsecureelementpassviewcontroller.md), and PassKit verifies that the passwords match as it creates the pass.
+When creating a digital car key, the vehicle manufacturer emails the user a one-time password to verify their identity. Set this property’s value to that password before you use the configuration to initialize [`PKAddSecureElementPassViewController`](../pkaddsecureelementpassviewcontroller.md), and PassKit verifies that the passwords match as it creates the pass.
 
 
 ---

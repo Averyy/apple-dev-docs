@@ -1,7 +1,8 @@
 # PresentationPlacement
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The placement of a presentation within the presenting view.
 
@@ -24,45 +25,46 @@ struct PresentationPlacement
 
 Only sheet presentations respect this placement.
 
-Use values of this type with the [`presentationPlacement(_:)`](view/presentationplacement(_:).md) modifier.
+Use values of this type with the [`presentationPlacement(_:)`](./view/presentationplacement%28_%29.md) modifier.
 
 ## Topics
 
 ### Specifying sheet placement
-- [static let automatic: PresentationPlacement](presentationplacement/automatic.md)
+- [static let automatic: PresentationPlacement](./presentationplacement/automatic.md)
   The system determines the placement of the presentation.
-- [static let center: PresentationPlacement](presentationplacement/center.md)
+- [static let center: PresentationPlacement](./presentationplacement/center.md)
   Centers the presentation within the presenting view.
-- [static let leading: PresentationPlacement](presentationplacement/leading.md)
+- [static let leading: PresentationPlacement](./presentationplacement/leading.md)
   Places the presentation on the leading edge of the presenting view.
-- [static let trailing: PresentationPlacement](presentationplacement/trailing.md)
+- [static let trailing: PresentationPlacement](./presentationplacement/trailing.md)
   Places the presentation on the trailing edge of the presenting view.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func presentationDetents(Set<PresentationDetent>) -> some View](view/presentationdetents(_:).md)
+### Configuring a sheet’s height and placement
+- [func presentationDetents(Set<PresentationDetent>) -> some View](./view/presentationdetents%28_%29.md)
   Sets the available detents for the enclosing sheet.
-- [func presentationDetents(Set<PresentationDetent>, selection: Binding<PresentationDetent>) -> some View](view/presentationdetents(_:selection:).md)
+- [func presentationDetents(Set<PresentationDetent>, selection: Binding<PresentationDetent>) -> some View](./view/presentationdetents%28_,selection%29.md)
   Sets the available detents for the enclosing sheet, giving you programmatic control of the currently selected detent.
-- [func presentationContentInteraction(PresentationContentInteraction) -> some View](view/presentationcontentinteraction(_:).md)
+- [func presentationContentInteraction(PresentationContentInteraction) -> some View](./view/presentationcontentinteraction%28_%29.md)
   Configures the behavior of swipe gestures on a presentation.
-- [func presentationDragIndicator(Visibility) -> some View](view/presentationdragindicator(_:).md)
+- [func presentationDragIndicator(Visibility) -> some View](./view/presentationdragindicator%28_%29.md)
   Sets the visibility of the drag indicator on top of a sheet.
-- [struct PresentationDetent](presentationdetent.md)
+- [struct PresentationDetent](./presentationdetent.md)
   A type that represents a height where a sheet naturally rests.
-- [protocol CustomPresentationDetent](custompresentationdetent.md)
+- [protocol CustomPresentationDetent](./custompresentationdetent.md)
   The definition of a custom detent with a calculated height.
-- [struct PresentationContentInteraction](presentationcontentinteraction.md)
+- [struct PresentationContentInteraction](./presentationcontentinteraction.md)
   A behavior that you can use to influence how a presentation responds to swipe gestures.
-- [func presentationPlacement(PresentationPlacement) -> some View](view/presentationplacement(_:).md)
+- [func presentationPlacement(PresentationPlacement) -> some View](./view/presentationplacement%28_%29.md)
   Sets the placement of a presentation within the presenting view.
 
 

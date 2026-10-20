@@ -1,7 +1,8 @@
 # FileFlags
 
 **Framework**: System  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 File-specific flags found in the `st_flags` property of a `stat` struct or used as input to `chflags()`.
 
@@ -28,58 +29,58 @@ struct FileFlags
 ## Topics
 
 ### Initializers
-- [init(rawValue: CInterop.FileFlags)](fileflags/init(rawvalue:).md)
+- [init(rawValue: CInterop.FileFlags)](./fileflags/init%28rawvalue%29.md)
   Creates a strongly-typed `FileFlags` from the raw C value.
 ### Instance Properties
-- [let rawValue: CInterop.FileFlags](fileflags/rawvalue.md)
+- [let rawValue: CInterop.FileFlags](./fileflags/rawvalue.md)
   The raw C flags.
 ### Type Properties
-- [static var archived: FileFlags](fileflags/archived.md)
+- [static var archived: FileFlags](./fileflags/archived.md)
   File has been archived.
-- [static var compressed: FileFlags](fileflags/compressed.md)
+- [static var compressed: FileFlags](./fileflags/compressed.md)
   File is compressed at the file system level.
-- [static var dataVault: FileFlags](fileflags/datavault.md)
+- [static var dataVault: FileFlags](./fileflags/datavault.md)
   File requires an entitlement for reading and writing.
-- [static var dataless: FileFlags](fileflags/dataless.md)
+- [static var dataless: FileFlags](./fileflags/dataless.md)
   File is a dataless placeholder (content is stored remotely).
-- [static var firmlink: FileFlags](fileflags/firmlink.md)
+- [static var firmlink: FileFlags](./fileflags/firmlink.md)
   File is a firmlink.
-- [static var hidden: FileFlags](fileflags/hidden.md)
+- [static var hidden: FileFlags](./fileflags/hidden.md)
   File should not be displayed in a GUI.
-- [static var noDump: FileFlags](fileflags/nodump.md)
+- [static var noDump: FileFlags](./fileflags/nodump.md)
   Do not dump the file during backups.
-- [static var opaque: FileFlags](fileflags/opaque.md)
+- [static var opaque: FileFlags](./fileflags/opaque.md)
   Directory is opaque when viewed through a union mount.
-- [static var restricted: FileFlags](fileflags/restricted.md)
+- [static var restricted: FileFlags](./fileflags/restricted.md)
   File requires an entitlement for writing.
-- [static var systemAppend: FileFlags](fileflags/systemappend.md)
+- [static var systemAppend: FileFlags](./fileflags/systemappend.md)
   Writes to the file may only append.
-- [static var systemImmutable: FileFlags](fileflags/systemimmutable.md)
+- [static var systemImmutable: FileFlags](./fileflags/systemimmutable.md)
   File may not be changed.
-- [static var systemNoUnlink: FileFlags](fileflags/systemnounlink.md)
+- [static var systemNoUnlink: FileFlags](./fileflags/systemnounlink.md)
   File may not be removed or renamed.
-- [static var tracked: FileFlags](fileflags/tracked.md)
+- [static var tracked: FileFlags](./fileflags/tracked.md)
   File is tracked for the purpose of document IDs.
-- [static var userAppend: FileFlags](fileflags/userappend.md)
+- [static var userAppend: FileFlags](./fileflags/userappend.md)
   Writes to the file may only append.
-- [static var userImmutable: FileFlags](fileflags/userimmutable.md)
+- [static var userImmutable: FileFlags](./fileflags/userimmutable.md)
   File may not be changed.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

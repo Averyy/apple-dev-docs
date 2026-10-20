@@ -1,7 +1,8 @@
 # exceptionList
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of domain name patterns. If the destination host name of an HTTP connection matches one of these patterns then the proxy settings will not be used for the connection.
 
@@ -19,15 +20,20 @@ An array of domain name patterns. If the destination host name of an HTTP connec
 var exceptionList: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * exceptionList;
+```
+
 #### Discussion
 
 The pattern strings may contain ‘*’ characters as wildcards.
 
 ## See Also
 
-- [var excludeSimpleHostnames: Bool](neproxysettings/excludesimplehostnames.md)
+### Accessing General Proxy Properties
+- [var excludeSimpleHostnames: Bool](./excludesimplehostnames.md)
   A Boolean indicating if HTTP requests using single-label host names should be excluded from using the proxy settings.
-- [var matchDomains: [String]?](neproxysettings/matchdomains.md)
+- [var matchDomains: [String]?](./matchdomains.md)
   An array of domain strings.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the filename for the file that the accessibility element represents.
@@ -17,15 +18,16 @@ func accessibilityFilename() -> String?
 
 ## See Also
 
-- [func accessibilityDocument() -> String?](nsaccessibilityprotocol/accessibilitydocument.md)
+### Managing documents and editing
+- [func accessibilityDocument() -> String?](./accessibilitydocument%28%29.md)
   Returns the URL for the file that the accessibility element represents.
-- [func setAccessibilityDocument(String?)](nsaccessibilityprotocol/setaccessibilitydocument(_:).md)
+- [func setAccessibilityDocument(String?)](./setaccessibilitydocument%28_%29.md)
   Sets the URL for the file that the accessibility element represents.
-- [func isAccessibilityEdited() -> Bool](nsaccessibilityprotocol/isaccessibilityedited.md)
+- [func isAccessibilityEdited() -> Bool](./isaccessibilityedited%28%29.md)
   Returns a Boolean value that indicates whether the accessibility element is in an edited state.
-- [func setAccessibilityEdited(Bool)](nsaccessibilityprotocol/setaccessibilityedited(_:).md)
+- [func setAccessibilityEdited(Bool)](./setaccessibilityedited%28_%29.md)
   Sets a Boolean value that indicates whether the accessibility element is in an edited state.
-- [func setAccessibilityFilename(String?)](nsaccessibilityprotocol/setaccessibilityfilename(_:).md)
+- [func setAccessibilityFilename(String?)](./setaccessibilityfilename%28_%29.md)
   Sets the filename for the file that the accessibility element represents.
 
 

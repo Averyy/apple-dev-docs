@@ -1,7 +1,8 @@
 # init(_:radix:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new integer value from the given string and radix.
 
@@ -53,7 +54,8 @@ Int("zzzzzzzzzzzzz", radix: 36)   // Out of range
 
 ## See Also
 
-- [init?(String)](int/init(_:)-2hmii.md)
+### Converting Strings
+- [init?(String)](./init%28_%29-2hmii.md)
   Creates a new integer value from the given string.
 
 

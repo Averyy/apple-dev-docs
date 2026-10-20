@@ -1,7 +1,8 @@
 # GameCenterMatchmakingQueueUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure of the request body you use to modify a queue.
 
@@ -10,16 +11,16 @@ The data structure of the request body you use to modify a queue.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingQueueUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingQueueUpdateRequest.Data.Attributes](gamecentermatchmakingqueueupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterMatchmakingQueueUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes for a queue that you modify.
-- [object GameCenterMatchmakingQueueUpdateRequest.Data.Relationships](gamecentermatchmakingqueueupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterMatchmakingQueueUpdateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The rule sets related to the queue.
 
 ## Properties
@@ -28,6 +29,8 @@ object GameCenterMatchmakingQueueUpdateRequest.Data
 - `id` (string) *(required)*: The unique identifier for the queue.
 - `relationships` (GameCenterMatchmakingQueueUpdateRequest.Data.Relationships)
 - `type` (string) *(required)*: The type of resource.
+
+  **Allowed Values**: `gameCenterMatchmakingQueues`
 
 
 ---

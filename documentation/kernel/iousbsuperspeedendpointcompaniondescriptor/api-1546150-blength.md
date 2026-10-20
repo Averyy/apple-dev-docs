@@ -1,7 +1,8 @@
 # bLength
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The size of the descriptor.
 
@@ -10,19 +11,20 @@ The size of the descriptor.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousbsuperspeedendpointcompaniondescriptor/1546448-bdescriptortype.md)
+### Getting the Properties
+- [bDescriptorType](./api-1546448-bdescriptortype.md)
   The type of the descriptor.
-- [bMaxBurst](iousbsuperspeedendpointcompaniondescriptor/1545987-bmaxburst.md)
+- [bMaxBurst](./api-1545987-bmaxburst.md)
   The maximum number of packets the endpoint can send or receive as part of a burst.
-- [bmAttributes](iousbsuperspeedendpointcompaniondescriptor/1545944-bmattributes.md)
+- [bmAttributes](./api-1545944-bmattributes.md)
   A bitmap encoding of supported device-level features.
-- [wBytesPerInterval](iousbsuperspeedendpointcompaniondescriptor/1546415-wbytesperinterval.md)
+- [wBytesPerInterval](./api-1546415-wbytesperinterval.md)
   The total number of bytes this endpoint transfers every service interval.
 
 

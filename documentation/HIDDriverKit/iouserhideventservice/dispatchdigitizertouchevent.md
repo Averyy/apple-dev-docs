@@ -1,23 +1,24 @@
 # dispatchDigitizerTouchEvent
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dispatches a digitizer touch event to the system.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t dispatchDigitizerTouchEvent(uint64_t timeStamp, IOHIDDigitizerTouchData *touchData, uint32_t touchDataCount);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -26,12 +27,13 @@ Call this method from your event service to dispatch a touch event to the system
 ## Parameters
 
 - `timeStamp`: The timestamp of the event. Use the timestamp of the report element that is the source of the event.
-- `touchData`: An array of structures containing the data for the individual touches. For more information, see [`IOHIDDigitizerTouchData`](iohiddigitizertouchdata.md).
+- `touchData`: An array of structures containing the data for the individual touches. For more information, see [`IOHIDDigitizerTouchData`](../iohiddigitizertouchdata.md).
 - `touchDataCount`: The number of structures in the `touchData` parameter.
 
 ## See Also
 
-- [dispatchDigitizerStylusEvent](iouserhideventservice/dispatchdigitizerstylusevent.md)
+### Dispatching Events to the System
+- [dispatchDigitizerStylusEvent](./dispatchdigitizerstylusevent.md)
   Dispatches a digitizer stylus event to the system.
 
 

@@ -1,7 +1,8 @@
 # children
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Objects that position and orient in the scene relative to the given object.
 
@@ -19,19 +20,24 @@ Objects that position and orient in the scene relative to the given object.
 var children: [PHASEObject] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<PHASEObject *> * children;
+```
+
 #### Discussion
 
-To manage members of this array, use [`addChild(_:)`](phaseobject/addchild(_:).md),  [`removeChild(_:)`](phaseobject/removechild(_:).md), and [`removeChildren()`](phaseobject/removechildren().md).
+To manage members of this array, use [`addChild(_:)`](./addchild%28_%29.md),  [`removeChild(_:)`](./removechild%28_%29.md), and [`removeChildren()`](./removechildren%28%29.md).
 
 ## See Also
 
-- [var parent: PHASEObject?](phaseobject/parent.md)
+### Managing the Hierarchy
+- [var parent: PHASEObject?](./parent.md)
   The object that this instance positions and orients relative to in the scene.
-- [func addChild(PHASEObject) throws](phaseobject/addchild(_:).md)
+- [func addChild(PHASEObject) throws](./addchild%28_%29.md)
   Adds the given object as a child.
-- [func removeChild(PHASEObject)](phaseobject/removechild(_:).md)
+- [func removeChild(PHASEObject)](./removechild%28_%29.md)
   Removes the given object as a child.
-- [func removeChildren()](phaseobject/removechildren.md)
+- [func removeChildren()](./removechildren%28%29.md)
   Removes all child objects from the given object.
 
 

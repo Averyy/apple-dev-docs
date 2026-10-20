@@ -1,7 +1,8 @@
 # createTogether
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A shared creation activity, such as drawing on an art canvas together.
 

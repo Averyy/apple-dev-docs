@@ -1,7 +1,8 @@
 # kPDFDestinationUnspecifiedValue
 
 **Framework**: PDFKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 11.0+
@@ -17,15 +18,20 @@
 let kPDFDestinationUnspecifiedValue: CGFloat
 ```
 
+```c
+extern const CGFloat kPDFDestinationUnspecifiedValue;
+```
+
 #### Discussion
 
 Unspecified value used when a destination’s actual x or y value is unimportant.
 
 ## See Also
 
-- [var page: PDFPage?](pdfdestination/page.md)
+### Getting Pages and Points
+- [var page: PDFPage?](./pdfdestination/page.md)
   Returns the page that the destination refers to.
-- [var point: CGPoint](pdfdestination/point.md)
+- [var point: CGPoint](./pdfdestination/point.md)
   Returns the point, in page space, that the destination refers to.
 
 

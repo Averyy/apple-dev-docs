@@ -1,7 +1,8 @@
 # height
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capsule height.
 
@@ -11,7 +12,7 @@ The capsule height.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,15 +26,16 @@ The capsule height includes radii and should be specified the entity’s coordin
 
 ## See Also
 
-- [var radius: Float](charactercontrollercomponent/radius.md)
+### Configuring a character
+- [var radius: Float](./radius.md)
   The capsule radius.
-- [var skinWidth: Float](charactercontrollercomponent/skinwidth.md)
+- [var skinWidth: Float](./skinwidth.md)
   An added tolerance around the character capsule.
-- [var slopeLimit: Float](charactercontrollercomponent/slopelimit.md)
+- [var slopeLimit: Float](./slopelimit.md)
   The slope limit expressed as a limit angle in radians.
-- [var stepLimit: Float](charactercontrollercomponent/steplimit.md)
+- [var stepLimit: Float](./steplimit.md)
   The maximum obstacle height that the controller can move over.
-- [var upVector: SIMD3<Float>](charactercontrollercomponent/upvector.md)
+- [var upVector: SIMD3<Float>](./upvector.md)
   The y-axis direction relative to the physics origin.
 
 

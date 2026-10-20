@@ -1,7 +1,8 @@
 # isHandsFreeDevice
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 var isHandsFreeDevice: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isHandsFreeDevice) BOOL handsFreeDevice;
 ```
 
 

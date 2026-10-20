@@ -1,7 +1,8 @@
 # latestViewpointProperties
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The latest viewpoint properties, if available.
 

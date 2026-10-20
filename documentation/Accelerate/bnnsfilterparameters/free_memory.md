@@ -1,18 +1,19 @@
 # free_memory
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The function called to deallocate memory.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,22 +21,27 @@ The function called to deallocate memory.
 var free_memory: BNNSFree?
 ```
 
+```c
+BNNSFree free_memory;
+```
+
 #### Discussion
 
-Must be compatible with the [`alloc_memory`](bnnsfilterparameters/alloc_memory.md) function. If `nil`, `free()` will be called.
+Must be compatible with the [`alloc_memory`](./alloc_memory.md) function. If `nil`, `free()` will be called.
 
 ## See Also
 
-- [var flags: UInt32](bnnsfilterparameters/flags.md)
+### Instance Properties
+- [var flags: UInt32](./flags.md)
   A logical OR of zero or more values from BNNS flags.
-- [var n_threads: Int](bnnsfilterparameters/n_threads.md)
+- [var n_threads: Int](./n_threads.md)
   The number of worker threads to execute.
-- [var alloc_memory: BNNSAlloc?](bnnsfilterparameters/alloc_memory.md)
+- [var alloc_memory: BNNSAlloc?](./alloc_memory.md)
   The function called to allocate memory.
-- [var allocator: BNNSAlloc?](bnnsfilterparameters/allocator.md)
-- [var deallocator: BNNSFree?](bnnsfilterparameters/deallocator.md)
-- [var options: BNNSFlags](bnnsfilterparameters/options.md)
-- [var threadCount: Int](bnnsfilterparameters/threadcount.md)
+- [var allocator: BNNSAlloc?](./allocator.md)
+- [var deallocator: BNNSFree?](./deallocator.md)
+- [var options: BNNSFlags](./options.md)
+- [var threadCount: Int](./threadcount.md)
 
 
 ---

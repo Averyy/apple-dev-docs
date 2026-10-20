@@ -1,7 +1,8 @@
 # historyToken
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The persistent history token representing the state after the remote change.
 

@@ -1,17 +1,22 @@
 # controlType()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the type of the control.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func controlType() -> PDFWidgetControlType
+```
+
+```objc
+- (PDFWidgetControlType) controlType;
 ```
 
 #### Return Value
@@ -20,11 +25,13 @@ The type of control the button represents.
 
 ## See Also
 
-- [class PDFAnnotationButtonWidget](pdfannotationbuttonwidget.md)
+### Related Documentation
+- [class PDFAnnotationButtonWidget](../pdfannotationbuttonwidget.md)
   A `PDFAnnotationButtonWidget` object provides user interactivity on a page of a PDF document. There are three types of buttons available: push button, radio button, and checkbox.
-- [enum PDFWidgetControlType](pdfwidgetcontroltype.md)
+- [enum PDFWidgetControlType](../pdfwidgetcontroltype.md)
   The types of annotation buttons.
-- [func setControlType(PDFWidgetControlType)](pdfannotationbuttonwidget/setcontroltype(_:).md)
+### Getting and Setting the Control Type
+- [func setControlType(PDFWidgetControlType)](./setcontroltype%28_%29.md)
   Sets the type of the control.
 
 

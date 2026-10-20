@@ -1,7 +1,8 @@
 # CFStringTokenizerGetCurrentSubTokens(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the subtokens or derived subtokens contained in the compound token.
 
@@ -18,6 +19,10 @@ Retrieves the subtokens or derived subtokens contained in the compound token.
 
 ```swift
 func CFStringTokenizerGetCurrentSubTokens(_ tokenizer: CFStringTokenizer!, _ ranges: UnsafeMutablePointer<CFRange>!, _ maxRangeLength: CFIndex, _ derivedSubTokens: CFMutableArray!) -> CFIndex
+```
+
+```c
+extern CFIndex CFStringTokenizerGetCurrentSubTokens(CFStringTokenizerRef tokenizer, CFRange *ranges, CFIndex maxRangeLength, CFMutableArrayRef derivedSubTokens);
 ```
 
 #### Return Value
@@ -43,9 +48,10 @@ The `derivedSubTokens` array will have sub tokens added even when the sub token 
 
 ## See Also
 
-- [func CFStringTokenizerCopyCurrentTokenAttribute(CFStringTokenizer!, CFOptionFlags) -> CFTypeRef!](cfstringtokenizercopycurrenttokenattribute(_:_:).md)
+### Getting Information About the Current Token
+- [func CFStringTokenizerCopyCurrentTokenAttribute(CFStringTokenizer!, CFOptionFlags) -> CFTypeRef!](./cfstringtokenizercopycurrenttokenattribute%28_,_%29.md)
   Returns a given attribute of the current token.
-- [func CFStringTokenizerGetCurrentTokenRange(CFStringTokenizer!) -> CFRange](cfstringtokenizergetcurrenttokenrange(_:).md)
+- [func CFStringTokenizerGetCurrentTokenRange(CFStringTokenizer!) -> CFRange](./cfstringtokenizergetcurrenttokenrange%28_%29.md)
   Returns the range of the current token.
 
 

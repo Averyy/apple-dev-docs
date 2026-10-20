@@ -2,6 +2,7 @@
 
 **Framework**: Apple CryptoKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The public key share type to perform the DH Key Agreement

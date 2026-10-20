@@ -1,7 +1,8 @@
 # FFEffectSetParameters(_:_:_:)
 
 **Framework**: Force Feedback  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the characteristics of an effect.
 
@@ -13,6 +14,10 @@ Sets the characteristics of an effect.
 
 ```swift
 func FFEffectSetParameters(_ effectReference: FFEffectObjectReference!, _ pFFEffect: UnsafeMutablePointer<FFEFFECT>!, _ flags: FFEffectParameterFlag) -> HRESULT
+```
+
+```c
+extern HRESULT FFEffectSetParameters(FFEffectObjectReference effectReference, FFEFFECT *pFFEffect, FFEffectParameterFlag flags);
 ```
 
 #### Return Value
@@ -65,39 +70,90 @@ If neither FFEP_NODOWNLOAD nor FFEP_START is set and the effect is playing, the 
 
 - `effectReference`: An opaque reference handle to an effect object. This is obtained from a previous call to FFDeviceCreateEffect.
 - `pFFEffect`: Address of a FFEFFECT structure that contains effect information. The dwSize member must be filled in by the application before calling this method, as well as any members specified by corresponding bits in the flags parameter.
-- `flags`: Flags that specify which portions of the effect information are to be set and how the downloading of the parameters should be handled. The value can be 0 or one or more of the following constants: FFEP_AXES The cAxes and rgdwAxes members contain data. FFEP_DIRECTION The cAxes and rglDirection members contain data. The dwFlags member specifies (with FFEFF_CARTESIAN or FFEFF_POLAR) the coordinate system in which the values should be interpreted. FFEP_DURATION The dwDuration member contains data. FFEP_ENVELOPE The lpEnvelope member points to a FFENVELOPE structure that contains data. To detach any existing envelope from the effect, pass this flag and set the lpEnvelope member to NULL. FFEP_GAIN The dwGain member contains data. FFEP_NODOWNLOAD Suppress the automatic FFEffect_Download that is normally performed after the parameters are updated. FFEP_NORESTART Suppress the stopping and restarting of the effect to change parameters. See Remarks. FFEP_SAMPLEPERIOD The dwSamplePeriod member contains data. FFEP_START The effect is to be started (or restarted if it is currently playing) after the parameters are updated. By default, the play state of the effect is not altered. FFEP_STARTDELAY The dwStartDelay member contains data. FFEP_TRIGGERBUTTON The dwTriggerButton member contains data. The dwTriggerRepeatInterval member contains data. FFEP_TYPESPECIFICPARAMS The lpvTypeSpecificParams and cbTypeSpecificParams members of the FFEFFECT structure contain the address and size of type-specific data for the effect.
+- `flags`: Flags that specify which portions of the effect information are to be set and how the downloading of the parameters should be handled. The value can be 0 or one or more of the following constants:
+
+  FFEP_AXES
+
+  The cAxes and rgdwAxes members contain data.
+
+  FFEP_DIRECTION
+
+  The cAxes and rglDirection members contain data. The dwFlags member specifies (with FFEFF_CARTESIAN or FFEFF_POLAR) the coordinate system in which the values should be interpreted.
+
+  FFEP_DURATION
+
+  The dwDuration member contains data.
+
+  FFEP_ENVELOPE
+
+  The lpEnvelope member points to a FFENVELOPE structure that contains data. To detach any existing envelope from the effect, pass this flag and set the lpEnvelope member to NULL.
+
+  FFEP_GAIN
+
+  The dwGain member contains data.
+
+  FFEP_NODOWNLOAD
+
+  Suppress the automatic FFEffect_Download that is normally performed after the parameters are updated.
+
+  FFEP_NORESTART
+
+  Suppress the stopping and restarting of the effect to change parameters. See Remarks.
+
+  FFEP_SAMPLEPERIOD
+
+  The dwSamplePeriod member contains data.
+
+  FFEP_START
+
+  The effect is to be started (or restarted if it is currently playing) after the parameters are updated. By default, the play state of the effect is not altered.
+
+  FFEP_STARTDELAY
+
+  The dwStartDelay member contains data.
+
+  FFEP_TRIGGERBUTTON
+
+  The dwTriggerButton member contains data.
+
+  The dwTriggerRepeatInterval member contains data.
+
+  FFEP_TYPESPECIFICPARAMS
+
+  The lpvTypeSpecificParams and cbTypeSpecificParams members of the FFEFFECT structure contain the address and size of type-specific data for the effect.
 
 ## See Also
 
-- [func FFCreateDevice(io_service_t, UnsafeMutablePointer<FFDeviceObjectReference?>!) -> HRESULT](ffcreatedevice(_:_:).md)
+### Miscellaneous
+- [func FFCreateDevice(io_service_t, UnsafeMutablePointer<FFDeviceObjectReference?>!) -> HRESULT](./ffcreatedevice%28_,_%29.md)
   Creates a new API device object from an OS object in preparation to use the device for force feedback.
-- [func FFDeviceCreateEffect(FFDeviceObjectReference!, CFUUID!, UnsafeMutablePointer<FFEFFECT>!, UnsafeMutablePointer<FFEffectObjectReference?>!) -> HRESULT](ffdevicecreateeffect(_:_:_:_:).md)
+- [func FFDeviceCreateEffect(FFDeviceObjectReference!, CFUUID!, UnsafeMutablePointer<FFEFFECT>!, UnsafeMutablePointer<FFEffectObjectReference?>!) -> HRESULT](./ffdevicecreateeffect%28_,_,_,_%29.md)
   Creates and initializes an instance of an effect identified by the effect UUID on the device.
-- [func FFDeviceEscape(FFDeviceObjectReference!, UnsafeMutablePointer<FFEFFESCAPE>!) -> HRESULT](ffdeviceescape(_:_:).md)
+- [func FFDeviceEscape(FFDeviceObjectReference!, UnsafeMutablePointer<FFEFFESCAPE>!) -> HRESULT](./ffdeviceescape%28_,_%29.md)
   Sends a hardware-specific command to the device.
-- [func FFDeviceGetForceFeedbackCapabilities(FFDeviceObjectReference!, UnsafeMutablePointer<FFCAPABILITIES>!) -> HRESULT](ffdevicegetforcefeedbackcapabilities(_:_:).md)
+- [func FFDeviceGetForceFeedbackCapabilities(FFDeviceObjectReference!, UnsafeMutablePointer<FFCAPABILITIES>!) -> HRESULT](./ffdevicegetforcefeedbackcapabilities%28_,_%29.md)
   Retrieves the device’s force feedback capabilities.
-- [func FFDeviceGetForceFeedbackProperty(FFDeviceObjectReference!, FFProperty, UnsafeMutableRawPointer!, IOByteCount) -> HRESULT](ffdevicegetforcefeedbackproperty(_:_:_:_:).md)
+- [func FFDeviceGetForceFeedbackProperty(FFDeviceObjectReference!, FFProperty, UnsafeMutableRawPointer!, IOByteCount) -> HRESULT](./ffdevicegetforcefeedbackproperty%28_,_,_,_%29.md)
   Gets properties that define the device behavior.
-- [func FFDeviceGetForceFeedbackState(FFDeviceObjectReference!, UnsafeMutablePointer<FFState>!) -> HRESULT](ffdevicegetforcefeedbackstate(_:_:).md)
+- [func FFDeviceGetForceFeedbackState(FFDeviceObjectReference!, UnsafeMutablePointer<FFState>!) -> HRESULT](./ffdevicegetforcefeedbackstate%28_,_%29.md)
   Retrieves the state of the device’s force feedback system.
-- [func FFDeviceReleaseEffect(FFDeviceObjectReference!, FFEffectObjectReference!) -> HRESULT](ffdevicereleaseeffect(_:_:).md)
+- [func FFDeviceReleaseEffect(FFDeviceObjectReference!, FFEffectObjectReference!) -> HRESULT](./ffdevicereleaseeffect%28_,_%29.md)
   Disposes of an API effect object created with FFDeviceCreateEffect.
-- [func FFDeviceSendForceFeedbackCommand(FFDeviceObjectReference!, FFCommandFlag) -> HRESULT](ffdevicesendforcefeedbackcommand(_:_:).md)
+- [func FFDeviceSendForceFeedbackCommand(FFDeviceObjectReference!, FFCommandFlag) -> HRESULT](./ffdevicesendforcefeedbackcommand%28_,_%29.md)
   Sends a command to the device’s force feedback system.
-- [func FFDeviceSetCooperativeLevel(FFDeviceObjectReference!, UnsafeMutableRawPointer!, FFCooperativeLevelFlag) -> HRESULT](ffdevicesetcooperativelevel(_:_:_:).md)
+- [func FFDeviceSetCooperativeLevel(FFDeviceObjectReference!, UnsafeMutableRawPointer!, FFCooperativeLevelFlag) -> HRESULT](./ffdevicesetcooperativelevel%28_,_,_%29.md)
   Function is unimplemented in version 1.0 of this API
-- [func FFDeviceSetForceFeedbackProperty(FFDeviceObjectReference!, FFProperty, UnsafeMutableRawPointer!) -> HRESULT](ffdevicesetforcefeedbackproperty(_:_:_:).md)
+- [func FFDeviceSetForceFeedbackProperty(FFDeviceObjectReference!, FFProperty, UnsafeMutableRawPointer!) -> HRESULT](./ffdevicesetforcefeedbackproperty%28_,_,_%29.md)
   Retrieves the device’s force feedback capabilities.
-- [func FFEffectDownload(FFEffectObjectReference!) -> HRESULT](ffeffectdownload(_:).md)
+- [func FFEffectDownload(FFEffectObjectReference!) -> HRESULT](./ffeffectdownload%28_%29.md)
   Places the effect on the device. If the effect is already on the device, the existing effect is updated to match the values set by the FFEffectSetParameters method.
-- [func FFEffectEscape(FFEffectObjectReference!, UnsafeMutablePointer<FFEFFESCAPE>!) -> HRESULT](ffeffectescape(_:_:).md)
+- [func FFEffectEscape(FFEffectObjectReference!, UnsafeMutablePointer<FFEFFESCAPE>!) -> HRESULT](./ffeffectescape%28_,_%29.md)
   Sends a hardware-specific command to the driver.
-- [func FFEffectGetEffectStatus(FFEffectObjectReference!, UnsafeMutablePointer<FFEffectStatusFlag>!) -> HRESULT](ffeffectgeteffectstatus(_:_:).md)
+- [func FFEffectGetEffectStatus(FFEffectObjectReference!, UnsafeMutablePointer<FFEffectStatusFlag>!) -> HRESULT](./ffeffectgeteffectstatus%28_,_%29.md)
   Sends a hardware-specific command to the driver.
-- [func FFEffectGetParameters(FFEffectObjectReference!, UnsafeMutablePointer<FFEFFECT>!, FFEffectParameterFlag) -> HRESULT](ffeffectgetparameters(_:_:_:).md)
+- [func FFEffectGetParameters(FFEffectObjectReference!, UnsafeMutablePointer<FFEFFECT>!, FFEffectParameterFlag) -> HRESULT](./ffeffectgetparameters%28_,_,_%29.md)
   Retrieves information about an effect.
-- [func FFEffectStart(FFEffectObjectReference!, UInt32, FFEffectStartFlag) -> HRESULT](ffeffectstart(_:_:_:).md)
+- [func FFEffectStart(FFEffectObjectReference!, UInt32, FFEffectStartFlag) -> HRESULT](./ffeffectstart%28_,_,_%29.md)
   Begins playing an effect. If the effect is already playing, it is restarted from the beginning. If the effect has not been downloaded or has been modified since its last download, it is downloaded before being started. This default behavior can be suppressed by passing the FFES_NODOWNLOAD flag.
 
 

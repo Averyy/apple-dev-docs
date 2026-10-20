@@ -1,7 +1,8 @@
 # transformer
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pre-defined transformer.
 

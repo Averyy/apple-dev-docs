@@ -1,7 +1,8 @@
 # multiTokenContexts
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional array of payment token contexts to request multiple payment tokens with one payment token per context.
 
@@ -16,6 +17,10 @@ An optional array of payment token contexts to request multiple payment tokens w
 
 ```swift
 var multiTokenContexts: [PKPaymentTokenContext]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<PKPaymentTokenContext *> * multiTokenContexts;
 ```
 
 

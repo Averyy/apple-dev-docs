@@ -1,7 +1,8 @@
 # elementAtIndex(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Match against the specified index (0 based) in an array. Chain additional qualifiers to constrain the value of element.
 

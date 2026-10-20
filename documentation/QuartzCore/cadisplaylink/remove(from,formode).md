@@ -1,7 +1,8 @@
 # remove(from:forMode:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the display link from the run loop for the given mode.
 
@@ -19,6 +20,10 @@ Removes the display link from the run loop for the given mode.
 func remove(from runloop: RunLoop, forMode mode: RunLoop.Mode)
 ```
 
+```objc
+- (void) removeFromRunLoop:(NSRunLoop *) runloop forMode:(NSRunLoopMode) mode;
+```
+
 #### Discussion
 
 The run loop releases the display link if it’s no longer associated with any run modes.
@@ -30,9 +35,10 @@ The run loop releases the display link if it’s no longer associated with any r
 
 ## See Also
 
-- [func add(to: RunLoop, forMode: RunLoop.Mode)](cadisplaylink/add(to:formode:).md)
+### Scheduling a Display Link to Send Notifications
+- [func add(to: RunLoop, forMode: RunLoop.Mode)](./add%28to,formode%29.md)
   Registers the display link with a run loop.
-- [func invalidate()](cadisplaylink/invalidate.md)
+- [func invalidate()](./invalidate%28%29.md)
   Removes the display link from all run loop modes.
 
 

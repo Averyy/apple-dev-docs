@@ -1,7 +1,8 @@
 # qualityLevel
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the resolution of the produced mask.
 
@@ -21,7 +22,7 @@ final var qualityLevel: GenerateIterativeSegmentationRequest.QualityLevel { get 
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
 #### Discussion
 
@@ -29,7 +30,8 @@ Higher resolutions will produce a smoother mask. Lower resolutions will be faste
 
 ## See Also
 
-- [GenerateIterativeSegmentationRequest.QualityLevel](generateiterativesegmentationrequest/qualitylevel-swift.enum.md)
+### Accessing the quality level
+- [GenerateIterativeSegmentationRequest.QualityLevel](./qualitylevel-swift.enum.md)
   The resolution and quality of the segmentation mask the request produces.
 
 

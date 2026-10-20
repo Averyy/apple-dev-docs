@@ -1,7 +1,8 @@
 # revokeAppleItemID(_:)
 
 **Framework**: App License Delivery SDK  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An appleItemID to be revoked by the license
 

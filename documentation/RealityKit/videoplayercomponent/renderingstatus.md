@@ -1,7 +1,8 @@
 # VideoPlayerComponent.RenderingStatus
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -20,18 +21,18 @@ enum RenderingStatus
 ## Topics
 
 ### Enumeration Cases
-- [VideoPlayerComponent.RenderingStatus.loading](videoplayercomponent/renderingstatus/loading.md)
+- [VideoPlayerComponent.RenderingStatus.loading](./renderingstatus/loading.md)
   Content is Loading
-- [VideoPlayerComponent.RenderingStatus.ready](videoplayercomponent/renderingstatus/ready.md)
+- [VideoPlayerComponent.RenderingStatus.ready](./renderingstatus/ready.md)
   Content is ready to be presented
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

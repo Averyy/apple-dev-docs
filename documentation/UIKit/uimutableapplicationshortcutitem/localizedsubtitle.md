@@ -1,7 +1,8 @@
 # localizedSubtitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional, user-visible subtitle for the Home Screen dynamic mutable quick action.
 
@@ -17,21 +18,26 @@ The optional, user-visible subtitle for the Home Screen dynamic mutable quick ac
 var localizedSubtitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * localizedSubtitle;
+```
+
 #### Discussion
 
 If you specify a subtitle for a mutable quick action, the system then displays the title on a single line (potentially with an ellipsis character), no matter how long the title is.
 
-To internationalize the subtitle for a Home Screen mutable, dynamic quick action, employ the [`NSLocalizedString`](https://developer.apple.com/documentation/foundation/nslocalizedstring) Foundation function, described in [`Foundation Functions`](https://developer.apple.com/documentation/foundation/foundation-functions), along with a `Localized.strings` file in your Xcode project.
+To internationalize the subtitle for a Home Screen mutable, dynamic quick action, employ the [`NSLocalizedString`](../../Foundation/nslocalizedstring.md) Foundation function, described in [Foundation Functions](../../Foundation/foundation-functions.md), along with a `Localized.strings` file in your Xcode project.
 
 ## See Also
 
-- [var localizedTitle: String](uimutableapplicationshortcutitem/localizedtitle.md)
+### Inspecting a Home Screen dynamic mutable quick action
+- [var localizedTitle: String](./localizedtitle.md)
   The required, user-visible title for the Home Screen dynamic mutable quick action.
-- [var type: String](uimutableapplicationshortcutitem/type.md)
+- [var type: String](./type.md)
   A required, app-specific string that you can employ to identify the type of quick action to perform.
-- [var icon: UIApplicationShortcutIcon?](uimutableapplicationshortcutitem/icon.md)
+- [var icon: UIApplicationShortcutIcon?](./icon.md)
   The optional icon for the Home Screen dynamic mutable quick action.
-- [var userInfo: [String : any NSSecureCoding]?](uimutableapplicationshortcutitem/userinfo.md)
+- [var userInfo: [String : any NSSecureCoding]?](./userinfo.md)
   Optional, app-specific information that you can provide for use when your app performs the Home Screen dynamic mutable quick action.
 
 

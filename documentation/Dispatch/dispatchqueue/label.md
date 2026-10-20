@@ -1,18 +1,19 @@
 # label
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label you assigned to the dispatch queue at creation time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ var label: String { get }
 
 ## See Also
 
-- [var qos: DispatchQoS](dispatchqueue/qos.md)
+### Managing Queue Attributes
+- [var qos: DispatchQoS](./qos.md)
   The quality-of-service level assgined to the queue.
-- [func setTarget(queue: dispatch_queue_t?)](dispatchobject/settarget(queue:).md)
+- [func setTarget(queue: dispatch_queue_t?)](../dispatchobject/settarget%28queue%29.md)
   Specifies the dispatch queue on which to perform work associated with the current object.
 
 

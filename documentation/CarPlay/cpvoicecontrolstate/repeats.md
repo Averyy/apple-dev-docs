@@ -1,7 +1,8 @@
 # repeats
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the display of an animated image repeats the animation sequence indefinitely.
 
@@ -16,17 +17,22 @@ A Boolean value that indicates whether the display of an animated image repeats 
 var repeats: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL repeats;
+```
+
 #### Discussion
 
-The animation repeats when this property is [`true`](https://developer.apple.com/documentation/swift/true); otherwise, animation occurs only once.
+The animation repeats when this property is [`true`](../../Swift/true.md); otherwise, animation occurs only once.
 
 ## See Also
 
-- [var identifier: String](cpvoicecontrolstate/identifier.md)
+### Getting State Information
+- [var identifier: String](./identifier.md)
   The string that your app uses to identify the voice control state.
-- [var titleVariants: [String]?](cpvoicecontrolstate/titlevariants.md)
+- [var titleVariants: [String]?](./titlevariants.md)
   The array of title variants for the voice control state.
-- [var image: UIImage?](cpvoicecontrolstate/image.md)
+- [var image: UIImage?](./image.md)
   The image displayed while the voice control template is in this state.
 
 

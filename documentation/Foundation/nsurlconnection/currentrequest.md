@@ -1,7 +1,8 @@
 # currentRequest
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current connection request.
 
@@ -20,13 +21,18 @@ The current connection request.
 var currentRequest: URLRequest { get }
 ```
 
+```objc
+@property (copy, readonly) NSURLRequest * currentRequest;
+```
+
 #### Discussion
 
 As the connection performs the load, the request may change as a result of protocol canonicalization or due to following redirects. This property provides the current value of the request.
 
 ## See Also
 
-- [var originalRequest: URLRequest](nsurlconnection/originalrequest.md)
+### Connection URL Information
+- [var originalRequest: URLRequest](./originalrequest.md)
   A deep copy of the original connection request.
 
 

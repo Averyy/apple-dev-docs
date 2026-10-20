@@ -1,7 +1,8 @@
 # maximumVisibility
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum distance, in meters, at which terrain is visible for the day.
 

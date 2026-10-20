@@ -1,7 +1,8 @@
 # errSecAppleInvalidKeyStartDate
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified key has an invalid start date.
 
@@ -18,6 +19,10 @@ The specified key has an invalid start date.
 
 ```swift
 var errSecAppleInvalidKeyStartDate: OSStatus { get }
+```
+
+```c
+errSecAppleInvalidKeyStartDate
 ```
 
 

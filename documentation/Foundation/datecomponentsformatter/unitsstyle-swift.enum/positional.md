@@ -1,7 +1,8 @@
 # DateComponentsFormatter.UnitsStyle.positional
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that uses the position of a unit of time to identify its value.
 
@@ -20,25 +21,30 @@ A style that uses the position of a unit of time to identify its value.
 case positional
 ```
 
+```c
+NSDateComponentsFormatterUnitsStylePositional
+```
+
 #### Discussion
 
-This style is most commonly used for time values where the hour, minute, and second values are separated by colons. You can use the zero formatting behaviors ([`DateComponentsFormatter.ZeroFormattingBehavior`](datecomponentsformatter/zeroformattingbehavior-swift.struct.md)) to further modify the formatting of this value.
+This style is most commonly used for time values where the hour, minute, and second values are separated by colons. You can use the zero formatting behaviors ([`DateComponentsFormatter.ZeroFormattingBehavior`](../zeroformattingbehavior-swift.struct.md)) to further modify the formatting of this value.
 
 For example, one hour and ten minutes is displayed in the U.S. English locale as “1:10:00”.
 
-> **Note**:  This style may fall back to the behavior of [`DateComponentsFormatter.UnitsStyle.abbreviated`](datecomponentsformatter/unitsstyle-swift.enum/abbreviated.md) when attempting to display large time quantities.
+> **Note**:  This style may fall back to the behavior of [`DateComponentsFormatter.UnitsStyle.abbreviated`](./abbreviated.md) when attempting to display large time quantities.
 
 ## See Also
 
-- [DateComponentsFormatter.UnitsStyle.spellOut](datecomponentsformatter/unitsstyle-swift.enum/spellout.md)
+### Styles
+- [DateComponentsFormatter.UnitsStyle.spellOut](./spellout.md)
   A style that spells out the units and quantities of time.
-- [DateComponentsFormatter.UnitsStyle.full](datecomponentsformatter/unitsstyle-swift.enum/full.md)
+- [DateComponentsFormatter.UnitsStyle.full](./full.md)
   A style that spells out the units of time, but not the quantities.
-- [DateComponentsFormatter.UnitsStyle.short](datecomponentsformatter/unitsstyle-swift.enum/short.md)
+- [DateComponentsFormatter.UnitsStyle.short](./short.md)
   A style that uses a shortened spelling for units.
-- [DateComponentsFormatter.UnitsStyle.brief](datecomponentsformatter/unitsstyle-swift.enum/brief.md)
-  A style that uses a shortened spelling for units of time that is shorter than [`DateComponentsFormatter.UnitsStyle.short`](datecomponentsformatter/unitsstyle-swift.enum/short.md).
-- [DateComponentsFormatter.UnitsStyle.abbreviated](datecomponentsformatter/unitsstyle-swift.enum/abbreviated.md)
+- [DateComponentsFormatter.UnitsStyle.brief](./brief.md)
+  A style that uses a shortened spelling for units of time that is shorter than [`DateComponentsFormatter.UnitsStyle.short`](./short.md).
+- [DateComponentsFormatter.UnitsStyle.abbreviated](./abbreviated.md)
   A style that uses the most abbreviated spelling for units of time.
 
 

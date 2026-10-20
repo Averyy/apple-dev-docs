@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Registers a block of code to be called immediately after the drawable is presented.
@@ -20,11 +21,15 @@ Registers a block of code to be called immediately after the drawable is present
 func addPresentedHandler(_ block: @escaping MTLDrawablePresentedHandler)
 ```
 
+```objc
+- (void) addPresentedHandler:(MTLDrawablePresentedHandler) block;
+```
+
 #### Discussion
 
 You can register multiple handlers for a single drawable object.
 
-The following example code schedules a presentation handler that reads the [`presentedTime`](mtldrawable/presentedtime.md) property and uses it to derive the interval between the last and current presentation times. From that information, it determines the app’s frame rate.
+The following example code schedules a presentation handler that reads the [`presentedTime`](./presentedtime.md) property and uses it to derive the interval between the last and current presentation times. From that information, it determines the app’s frame rate.
 
 **Swift**:
 
@@ -66,7 +71,8 @@ __block Renderer *strongSelf = self;
 
 ## See Also
 
-- [var presentedTime: CFTimeInterval](mtldrawable/presentedtime.md)
+### Getting presentation information
+- [var presentedTime: CFTimeInterval](./presentedtime.md)
   The host time, in seconds, when the drawable was displayed onscreen.
 
 

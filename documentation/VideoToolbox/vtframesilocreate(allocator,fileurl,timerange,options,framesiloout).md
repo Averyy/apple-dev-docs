@@ -1,7 +1,8 @@
 # VTFrameSiloCreate(allocator:fileURL:timeRange:options:frameSiloOut:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a frame silo object using a temporary file.
 
@@ -19,11 +20,15 @@ Creates a frame silo object using a temporary file.
 func VTFrameSiloCreate(allocator: CFAllocator?, fileURL: CFURL?, timeRange: CMTimeRange, options: CFDictionary?, frameSiloOut: UnsafeMutablePointer<VTFrameSilo?>) -> OSStatus
 ```
 
+```c
+extern OSStatus VTFrameSiloCreate(CFAllocatorRef allocator, CFURLRef fileURL, CMTimeRange timeRange, CFDictionaryRef options, VTFrameSiloRef*frameSiloOut);
+```
+
 #### Discussion
 
 You can use the returned frame silo object to gather frames produced by multipass encoding.
 
-Call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) to release the frame silo object when you are done with it.
+Call [`CFRelease`](../CoreFoundation/cfrelease.md) to release the frame silo object when you are done with it.
 
 ## Parameters
 
@@ -31,7 +36,7 @@ Call [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfre
 - `fileURL`: The URL of the backing file for the `VTFrameSilo` object. If you pass `NULL` for `fileURL`, VideoToolbox will pick a unique temporary file name.
 - `timeRange`: The valid time range for the frame silo. Must be valid for progress reporting.
 - `options`: Reserved, pass `NULL`.
-- `frameSiloOut`: Points to a [`VTFrameSilo`](vtframesilo.md) to receive the newly created object. Call `CFRelease` to release your retain on the created VTFrameSilo object when you are done with it.
+- `frameSiloOut`: Points to a [`VTFrameSilo`](./vtframesilo.md) to receive the newly created object. Call `CFRelease` to release your retain on the created VTFrameSilo object when you are done with it.
 
 
 ---

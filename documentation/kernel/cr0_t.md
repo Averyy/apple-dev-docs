@@ -1,14 +1,15 @@
 # cr0_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct _cr0 {
     ...
 } cr0_t;
@@ -17,16 +18,16 @@ typedef struct _cr0 {
 ## Topics
 
 ### Instance Properties
-- [am](cr0_t/1541747-am.md)
-- [cd](cr0_t/1541756-cd.md)
-- [em](cr0_t/1541745-em.md)
-- [mp](cr0_t/1541749-mp.md)
-- [ne](cr0_t/1541752-ne.md)
-- [nw](cr0_t/1541759-nw.md)
-- [pe](cr0_t/1541751-pe.md)
-- [pg](cr0_t/1541754-pg.md)
-- [ts](cr0_t/1541743-ts.md)
-- [wp](cr0_t/1541758-wp.md)
+- [am](./cr0_t/api-1541747-am.md)
+- [cd](./cr0_t/api-1541756-cd.md)
+- [em](./cr0_t/api-1541745-em.md)
+- [mp](./cr0_t/api-1541749-mp.md)
+- [ne](./cr0_t/api-1541752-ne.md)
+- [nw](./cr0_t/api-1541759-nw.md)
+- [pe](./cr0_t/api-1541751-pe.md)
+- [pg](./cr0_t/api-1541754-pg.md)
+- [ts](./cr0_t/api-1541743-ts.md)
+- [wp](./cr0_t/api-1541758-wp.md)
 
 
 ---

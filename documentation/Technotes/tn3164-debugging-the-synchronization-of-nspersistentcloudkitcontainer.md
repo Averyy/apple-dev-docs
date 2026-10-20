@@ -1,47 +1,48 @@
 # TN3164: Debugging the synchronization of NSPersistentCloudKitContainer
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Identify and resolve synchronization issues when working with `NSPersistentCloudKitContainer`.
 
 #### Overview
 
-When you use `NSPersistentCloudKitContainer` to manage a CloudKit-backed Core Data store, the store lives on the device to provide data to your app, the CloudKit database lives on the remote CloudKit server to hold the server truth, and `NSPersistentCloudKitContainer` synchronizes them by *exporting* the local changes from the store to the database, and *importing* the remote changes from the database to the store. For more information about `NSPersistentCloudKitContainer`, see [`TN3163: Understanding the synchronization of NSPersistentCloudKitContainer`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md).
+When you use `NSPersistentCloudKitContainer` to manage a CloudKit-backed Core Data store, the store lives on the device to provide data to your app, the CloudKit database lives on the remote CloudKit server to hold the server truth, and `NSPersistentCloudKitContainer` synchronizes them by *exporting* the local changes from the store to the database, and *importing* the remote changes from the database to the store. For more information about `NSPersistentCloudKitContainer`, see [TN3163: Understanding the synchronization of NSPersistentCloudKitContainer](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md).
 
 A synchronization failure can happen because of a code-level issue in your data presentation layer, a configuration issue related to CloudKit, or a limit on the system side. To debug a synchronization issue, look into the system logs in Xcode console or a sysdiagnose, then identify the relevant errors. This technote describes how to identify and resolve common errors seen in the logs when working with `NSPersistentCloudKitContainer`.
 
-#### Understand When the Synchronization Happens
+#### Understand when the synchronization happens
 
 The system determines when to synchronize data. When you save data to your Core Data store, `NSPersistentCloudKitContainer` asks the system if it can export the changes; the export only proceeds after the system allows. Similarly, when getting notified of a change on a CloudKit private or shared database, it needs the system’s approval to execute an import.
 
-A CloudKit public database doesn’t support database change notifications. When working with a CloudKit public database, `NSPersistentCloudKitContainer` needs to poll periodically for the database changes. To avoid draining the system resources, `NSPersistentCloudKitContainer` typically polls once every 30 minutes when working in the CloudKit development environment (to facilitate debugging), and up to once every 24 hours in the production environment. For more information, see WWDC20 session 10650: [`Sync a Core Data store with the CloudKit public database`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10650).
+A CloudKit public database doesn’t support database change notifications. When working with a CloudKit public database, `NSPersistentCloudKitContainer` needs to poll periodically for the database changes. To avoid draining the system resources, `NSPersistentCloudKitContainer` typically polls once every 30 minutes when working in the CloudKit development environment (to facilitate debugging), and up to once every 24 hours in the production environment. For more information, see WWDC20 session 10650: [Sync a Core Data store with the CloudKit public database](https://developer.apple.com/videos/play/wwdc2020/10650).
 
 The goal of implementing such a mechanism is to balance the use of system resources and achieve the best overall user experience on the devices. There is no API for apps to configure the timing for the synchronization.
 
-> **Note**: When your data synchronizes but not immediately, it is most likely that the system intentionally defers the synchronization. To discover what really happens inside an export or import, see [`Understand the export`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-the-export.md) and  [`Understand the import`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-the-import.md).
+> **Note**: When your data synchronizes but not immediately, it is most likely that the system intentionally defers the synchronization. To discover what really happens inside an export or import, see [Understand the export](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-the-export) and  [Understand the import](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-the-import).
 
-#### Present the Latest Data
+#### Present the latest data
 
 When your app doesn’t show the changes the other peer exported to the CloudKit database, it can be that the data is synchronized but your app’s UI is not refreshed. To verify if that is your case, quit your app, relaunch it, and confirm that the data is now up-to-date.
 
-> **Note**: `NSPersistentCloudKitContainer` may import data while an app is launching. If relaunching your app causes synchronization, it may be that the system intentionally deferred the imports in the previous launch session. See [`Understand the import`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-the-import.md) for more information.
+> **Note**: `NSPersistentCloudKitContainer` may import data while an app is launching. If relaunching your app causes synchronization, it may be that the system intentionally deferred the imports in the previous launch session. See [Understand the import](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-the-import) for more information.
 
-`NSPersistentCloudKitContainer` synchronizes data when appropriate. To know the state of the synchronization, observe [`eventChangedNotification`](https://developer.apple.com/documentation/coredata/nspersistentcloudkitcontainer/eventchangednotification). To get notified that `NSPersistentCloudKitContainer` imported data to the store, observe [`NSPersistentStoreRemoteChange`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nspersistentstoreremotechange).
+`NSPersistentCloudKitContainer` synchronizes data when appropriate. To know the state of the synchronization, observe [`eventChangedNotification`](../CoreData/nspersistentcloudkitcontainer/eventchangednotification.md). To get notified that `NSPersistentCloudKitContainer` imported data to the store, observe [`NSPersistentStoreRemoteChange`](../Foundation/nsnotification/name-swift.struct/nspersistentstoreremotechange.md).
 
-To keep your app’s UI up to date, consume the store’s persistent history when you get an `NSPersistentStoreRemoteChange` notification, merge the relevant changes to your [`viewContext`](https://developer.apple.com/documentation/coredata/nspersistentcontainer/viewcontext), and then refresh your app’s UI. Alternatively, [`reset()`](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/reset()) your `viewContext` to clear the context cache, fetch the data, and then refresh your app’s UI.
+To keep your app’s UI up to date, consume the store’s persistent history when you get an `NSPersistentStoreRemoteChange` notification, merge the relevant changes to your [`viewContext`](../CoreData/nspersistentcontainer/viewcontext.md), and then refresh your app’s UI. Alternatively, [`reset()`](../CoreData/nsmanagedobjectcontext/reset%28%29.md) your `viewContext` to clear the context cache, fetch the data, and then refresh your app’s UI.
 
-For a sample that demonstrates how to observe the notifications and process the persistent history, see [`Sharing Core Data objects between iCloud users`](https://developer.apple.com/documentation/coredata/sharing-core-data-objects-between-icloud-users).
+For a sample that demonstrates how to observe the notifications and process the persistent history, see [Sharing Core Data objects between iCloud users](../CoreData/sharing-core-data-objects-between-icloud-users.md).
 
 When working with a CloudKit public database, `NSPersistentCloudKitContainer` doesn’t automatically synchronize object deletions because the database doesn’t support deletion tracking. To avoid presenting objects deleted by the other peer, consider the following strategy:
 
 1. Add a new attribute to your Core Data entities to store the date when an object is removed.
-2. When deleting an object, set its removal date to [`now`](https://developer.apple.com/documentation/foundation/date/now), rather than really removing the object from the store. This converts the `delete` to an `update`, which can be synchronized across devices.
+2. When deleting an object, set its removal date to [`.now`](../Foundation/date/now.md), rather than really removing the object from the store. This converts the `delete` to an `update`, which can be synchronized across devices.
 3. In your app’s UI, only present the objects whose removal date is `nil`.
 4. If necessary, remove the objects whose removal date is sometime after the last successful export. The **sometime** needs to be long enough for the objects to be synchronized, which can be several months for apps that users use on a regular basis.
 
-For more information, see WWDC20 session 10650: [`Sync a Core Data store with the CloudKit public database`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10650).
+For more information, see WWDC20 session 10650: [Sync a Core Data store with the CloudKit public database](https://developer.apple.com/videos/play/wwdc2020/10650).
 
-#### Configure Icloud on Your Devices
+#### Configure iCloud on your devices
 
 To synchronize data across devices via `NSPersistentCloudKitContainer`, all the devices must have iCloud turn on for your app, and be logged in with an Apple ID. Perform the following steps to configure your devices:
 
@@ -54,13 +55,13 @@ When developing your app, if you see the synchronization works on some devices, 
 2. Remove the Core Data store, if it still exists after step 1. On iOS and its variants, if the store is in an App Group container shared with other apps that need to stay, consider removing the store programmatically. On macOS, find the location of the store and remove it manually.
 3. Log out iCloud on the device, log back in with the same Apple ID, and then reboot the device. This clears the cached state related to the Apple ID.
 
-#### Configure Cloudkit in Your Project
+#### Configure CloudKit in your project
 
-To use CloudKit in your app, follow the process described in [`Setting Up Core Data with CloudKit`](https://developer.apple.com/documentation/coredata/setting-up-core-data-with-cloudkit) to configure a CloudKit container. The process has Xcode automatically generate the appropriate entitlements for your app, and associate the container with your app ID, which allows your app to access the container.
+To use CloudKit in your app, follow the process described in [Setting Up Core Data with CloudKit](../CoreData/setting-up-core-data-with-cloudkit.md) to configure a CloudKit container. The process has Xcode automatically generate the appropriate entitlements for your app, and associate the container with your app ID, which allows your app to access the container.
 
 When the association doesn’t exist, `NSPersistentCloudKitContainer` hits a permission failure at run time, and generates logs with an error like the following example:
 
-```None
+```
 CoreData: error: CoreData+CloudKit: 
 -[NSCloudKitMirroringDelegate recoverFromPartialError:forStore:inMonitor:]block_invoke(1943): 
 <NSCloudKitMirroringDelegate: …>: Found unknown error as part of a partial failure: 
@@ -72,25 +73,25 @@ server message = "Invalid bundle ID for container"; … container ID = …>
 
 To confirm that your CloudKit container and app ID are correctly associated:
 
-1. Log in Apple’s [`Developer Portal`](https://developer.apple.comhttp://developer.apple.com/account) with your developer account, select the Certificates, Identifiers & Profiles page, and find the app ID of your app.
+1. Log in Apple’s [Developer Portal](http://developer.apple.com/account) with your developer account, select the Certificates, Identifiers & Profiles page, and find the app ID of your app.
 2. Click the app ID to navigate to the Capabilities page, confirm that iCloud is checked, then click Edit to navigate to the iCloud Container Assignment page.
 3. Find your CloudKit container, and confirm that it is selected.
-4. Refresh your provisioning profile. In Xcode, go to the Signing & Capabilities tab of your app target, un-select the `Automatically manage signing` checkbox, select it again, and then [`Preparing your app for distribution`](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution) to have Xcode refresh the provisioning profile. If you use manual code signing, create the provisioning profile manually, and then download and install it to your Xcode.
+4. Refresh your provisioning profile. In Xcode, go to the Signing & Capabilities tab of your app target, un-select the `Automatically manage signing` checkbox, select it again, and then [choose the team](../Xcode/preparing-your-app-for-distribution.md) to have Xcode refresh the provisioning profile. If you use manual code signing, create the provisioning profile manually, and then download and install it to your Xcode.
 
 If the portal shows that the association between your CloudKit container and app ID is correct, but the error still exists, it is most likely because the association isn’t synchronized to the CloudKit server. In that case, consider using a new CloudKit container to continue your development.
 
-> **Note**: You can hide a CloudKit container using CloudKit Console, as shown in WWDC22 session 10115: [`What’s new in CloudKit Console`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10115) (the content starting at 1 minute), but can’t delete an existing container.
+> **Note**: You can hide a CloudKit container using CloudKit Console, as shown in WWDC22 session 10115: [What’s new in CloudKit Console](https://developer.apple.com/videos/play/wwdc2022/10115) (the content starting at 1 minute), but can’t delete an existing container.
 
-If your CloudKit container is already used in the production environment and switching to a new container leads to data loss, consider [`filing a feedback report`](https://developer.apple.comhttps://developer.apple.com/bug-reporting/) with the following information to request manually associating your CloudKit container with your app ID:
+If your CloudKit container is already used in the production environment and switching to a new container leads to data loss, consider [filing a feedback report](https://developer.apple.com/bug-reporting/) with the following information to request manually associating your CloudKit container with your app ID:
 
 - The app ID and the CloudKit container that trigger the permission failure.
 - Screenshots that show the association between your CloudKit container and app ID in the developer portal.
 
-#### Mirror Your Core Data Model to Cloudkit
+#### Mirror your Core Data model to CloudKit
 
 `NSPersistentCloudKitContainer` requires that an app’s Core Data model is completely mirrored to CloudKit. When detecting a Core Data attribute or relationship not existing in the CloudKit schema, `NSPersistentCloudKitContainer` stops synchronization and generates logs like the following example:
 
-```None
+```
 CoreData: CloudKit: CoreData+CloudKit: 
 -[NSCloudKitMirroringDelegate _scheduleAutomatedExportWithLabel:activity:completionHandler:]_block_invoke(3364): 
 <NSCloudKitMirroringDelegate: …> - Finished automatic export - AppDeactivationExport - 
@@ -113,13 +114,13 @@ server message = "Cannot create or modify field '<A record field>' in record '<A
 44 "Batch Request Failed" CKError's omited …}>}
 ```
 
-To completely mirror your Core Data model to CloudKit, see [`Sharing Core Data objects between iCloud users`](https://developer.apple.com/documentation/coredata/sharing-core-data-objects-between-icloud-users).
+To completely mirror your Core Data model to CloudKit, see [Create the CloudKit schema](../CoreData/sharing-core-data-objects-between-icloud-users.md).
 
-CloudKit doesn’t support all the features of a Core Data model. When designing your model, avoid using the unsupported features, such as unique constraints and ordered relationships. For more information, see [`Creating a Core Data Model for CloudKit`](https://developer.apple.com/documentation/coredata/creating-a-core-data-model-for-cloudkit). For an example on how to avoid duplicates, see [`Sharing Core Data objects between iCloud users`](https://developer.apple.com/documentation/coredata/sharing-core-data-objects-between-icloud-users).
+CloudKit doesn’t support all the features of a Core Data model. When designing your model, avoid using the unsupported features, such as unique constraints and ordered relationships. For more information, see [Creating a Core Data Model for CloudKit](../CoreData/creating-a-core-data-model-for-cloudkit.md). For an example on how to avoid duplicates, see [Remove duplicate data](../CoreData/sharing-core-data-objects-between-icloud-users.md).
 
-> **Note**: If the debug build of your app synchronizes correctly but the App Store or TestFlight build doesn’t, it is most likely because you haven’t deployed your CloudKit schema to the production environment. For more information, see [`Deploying an iCloud Container’s Schema`](https://developer.apple.com/documentation/cloudkit/deploying-an-icloud-container-s-schema).
+> **Notes**: If the debug build of your app synchronizes correctly but the App Store or TestFlight build doesn’t, it is most likely because you haven’t deployed your CloudKit schema to the production environment. For more information, see [Deploying an iCloud Container’s Schema](../CloudKit/deploying-an-icloud-container-s-schema.md).
 
-#### Avoid Hitting a Cloudkit Limit
+#### Avoid hitting a CloudKit limit
 
 CloudKit has some limits. For example:
 
@@ -130,7 +131,7 @@ CloudKit has some limits. For example:
 
 When your app hits a limit, `NSPersistentCloudKitContainer` generates logs with a `Limit Exceeded` error. Here is an example that happened because the record size was too large:
 
-```None
+```
 CoreData+CloudKit: -[NSCloudKitMirroringDelegate _performSetupRequest:]_block_invoke_2(1123): 
 Called about a failure to save a share: <CKRecordID: …; recordName=cloudkit.zoneshare, 
 zoneID=com.apple.coredata.cloudkit.share.850B362A-983C-4C84-91C0-185ADA7811DB:__defaultOwner__> - 
@@ -139,15 +140,15 @@ server message = "record too large";
 op = 22900FB3D1959E5C; uuid = AEDE918E-F343-4245-A41B-7D7D3A41FD20; container ID = …>
 ```
 
-To avoid the 256 fields per record type limit, review your CloudKit schema. If you find a record type that is close to or exceeds the limit, trace back to the associated Core Data entity, and split it into multiple entities. See [`Reading CloudKit Records for Core Data`](https://developer.apple.com/documentation/coredata/reading-cloudkit-records-for-core-data) for how a Core Data model is mirrored to CloudKit.
+To avoid the 256 fields per record type limit, review your CloudKit schema. If you find a record type that is close to or exceeds the limit, trace back to the associated Core Data entity, and split it into multiple entities. See [Reading CloudKit Records for Core Data](../CoreData/reading-cloudkit-records-for-core-data.md) for how a Core Data model is mirrored to CloudKit.
 
-For other limits, avoid them when designing your app’s architecture and workflow. If hitting a limit is inevitable, handle it appropriately. For example, whenever you create a new CloudKit share ([`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare)) using [`shareManagedObjects:toShare:completion:`](https://developer.apple.com/documentation/coredata/nspersistentcloudkitcontainer/sharemanagedobjects:toshare:completion:), the API creates a new shared record zone. Over time, your app may hit the 1000 record zone per container limit. To avoid that, consider reusing an existing share when appropriate, and removing empty shares using [`purgeObjectsAndRecordsInZoneWithID:inPersistentStore:completion:`](https://developer.apple.com/documentation/coredata/nspersistentcloudkitcontainer/purgeobjectsandrecordsinzonewithid:inpersistentstore:completion:). In the case where your app inevitably hits the limit, provide an option the user to keep their data before removing a record zone.
+For other limits, avoid them when designing your app’s architecture and workflow. If hitting a limit is inevitable, handle it appropriately. For example, whenever you create a new CloudKit share ([`CKShare`](../CloudKit/ckshare.md)) using [`shareManagedObjects:toShare:completion:`](../CoreData/nspersistentcloudkitcontainer/sharemanagedobjects_toshare_completion_.md), the API creates a new shared record zone. Over time, your app may hit the 1000 record zone per container limit. To avoid that, consider reusing an existing share when appropriate, and removing empty shares using [`purgeObjectsAndRecordsInZoneWithID:inPersistentStore:completion:`](../CoreData/nspersistentcloudkitcontainer/purgeobjectsandrecordsinzonewithid_inpersistentstore_completion_.md). In the case where your app inevitably hits the limit, provide an option the user to keep their data before removing a record zone.
 
-#### Avoid Synchronizing a Store with Multiple Persistent Containers
+#### Avoid synchronizing a store with multiple persistent containers
 
 When using `NSPersistentCloudKitContainer` to load a Core Data store that is already loaded by another `NSPersistentCloudKitContainer` instance, you might see an error like the following example:
 
-```None
+```
 CoreData+CloudKit: -[NSCloudKitMirroringDelegate resetAfterError:andKeepContainer:](585): 
 <NSCloudKitMirroringDelegate: …> - resetting internal state after error: 
 Error Domain=NSCocoaErrorDomain Code=134410 
@@ -163,21 +164,21 @@ This can happen when your app and extension both use `NSPersistentCloudKitContai
 
 To avoid the conflict, consider having the app in charge of the synchronization. An extension that has the capability to present UI can remind users to launch the app to synchronize with CloudKit, if that is an appropriate user experience.
 
-The app and extension can avoid presenting stale data by observing `.NSPersistentStoreRemoteChange` and consuming the persistent history, as discussed in [`Present the latest data`](tn3164-debugging-the-synchronization-of-nspersistentcloudkitcontainer#Present-the-latest-data.md).
+The app and extension can avoid presenting stale data by observing `.NSPersistentStoreRemoteChange` and consuming the persistent history, as discussed in [Present the latest data](./tn3164-debugging-the-synchronization-of-nspersistentcloudkitcontainer.md#Present-the-latest-data).
 
 The error can also happen when your app unintentionally has multiple `NSPersistentCloudKitContainer` instances that manage the same store. For example, when you set a variable that holds an `NSPersistentCloudKitContainer` instance to a new value, the instance won’t be released if a Core Data object tied to the container still exists. To avoid the situation, release all the objects before releasing the `NSPersistentCloudKitContainer` instance.
 
-#### Avoid Rate Limit Throttles
+#### Avoid rate limit throttles
 
-`NSPersistentCloudKitContainer` exports every change on the Core Data store to CloudKit. A lot of changes in a short time frame are converted to a high export rate. If the rate hits a limit, the system on the device or the CloudKit server may decide to defer the synchronization to avoid draining the resources. To determine if your app hits rate limit throttles, see [`Understand system throttles`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer#Understand-system-throttles.md) and [`TN3162: Understanding CloudKit throttles`](tn3162-understanding-cloudkit-throttles.md).
+`NSPersistentCloudKitContainer` exports every change on the Core Data store to CloudKit. A lot of changes in a short time frame are converted to a high export rate. If the rate hits a limit, the system on the device or the CloudKit server may decide to defer the synchronization to avoid draining the resources. To determine if your app hits rate limit throttles, see [Understand system throttles](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md#Understand-system-throttles) and [Understanding CloudKit throttles](./tn3162-understanding-cloudkit-throttles.md).
 
 `NSPersistentCloudKitContainer` stops synchronization when hitting rate limit throttles, and automatically recovers when the throttles expire. The expiration time can be hours, and there is no API for your app to configure it. The strategy to handle rate limit throttles is to avoid them in the first place.
 
-If your app hits the throttles, consider redesigning its architecture and workflow so it makes less changes in a longer time frame. For example, populating a large dataset in a short time frame to your Core Data store may trigger rate limit throttles, and you might be able to avoid that by separating the dataset in batches and populating them lazily, or by shipping the dataset as a local store, and then gradually moving the data to the CloudKit-back store if necessary. To manage multiple Core Data stores with a persistent container, see [`Linking Data Between Two Core Data Stores`](https://developer.apple.com/documentation/coredata/linking-data-between-two-core-data-stores).
+If your app hits the throttles, consider redesigning its architecture and workflow so it makes less changes in a longer time frame. For example, populating a large dataset in a short time frame to your Core Data store may trigger rate limit throttles, and you might be able to avoid that by separating the dataset in batches and populating them lazily, or by shipping the dataset as a local store, and then gradually moving the data to the CloudKit-back store if necessary. To manage multiple Core Data stores with a persistent container, see [Linking Data Between Two Core Data Stores](../CoreData/linking-data-between-two-core-data-stores.md).
 
-#### Diagnose with a Sysdiagnose
+#### Diagnose with a sysdiagnose
 
-If your issue isn’t covered in the technote, consider figuring out what happens inside the synchronization process by tracing the exports and imports. For more information, see [`TN3163: Understanding the synchronization of NSPersistentCloudKitContainer`](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md).
+If your issue isn’t covered in the technote, consider figuring out what happens inside the synchronization process by tracing the exports and imports. For more information, see [Understanding the synchronization of NSPersistentCloudKitContainer](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md).
 
 #### Revision History
 
@@ -185,9 +186,10 @@ If your issue isn’t covered in the technote, consider figuring out what happen
 
 ## See Also
 
-- [TN3162: Understanding CloudKit throttles](tn3162-understanding-cloudkit-throttles.md)
+### Related Documentation
+- [TN3162: Understanding CloudKit throttles](./tn3162-understanding-cloudkit-throttles.md)
   Learn how to identify and handle CloudKit throttles.
-- [TN3163: Understanding the synchronization of NSPersistentCloudKitContainer](tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md)
+- [TN3163: Understanding the synchronization of NSPersistentCloudKitContainer](./tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md)
   Explore the details inside the synchronization of `NSPersistentCloudKitContainer` by capturing and analyzing a sysdiagnose.
 
 

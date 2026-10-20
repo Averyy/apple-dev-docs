@@ -1,7 +1,8 @@
 # credentials
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The credentials the accessory needs to connect to this network.
 
@@ -18,15 +19,16 @@ let credentials: WINetworkSharingProvider.Network.Credentials
 
 ## See Also
 
-- [let securityPolicy: Set<WINetworkSharingProvider.Network.SecurityPolicy>](winetworksharingprovider/network/securitypolicy-swift.property.md)
+### Getting the network credentials
+- [let securityPolicy: Set<WINetworkSharingProvider.Network.SecurityPolicy>](./securitypolicy-swift.property.md)
   The set of security types allowed for connecting to this network.
-- [WINetworkSharingProvider.Network.SecurityPolicy](winetworksharingprovider/network/securitypolicy-swift.enum.md)
+- [WINetworkSharingProvider.Network.SecurityPolicy](./securitypolicy-swift.enum.md)
   The security policies allowed for connecting to a Wi-Fi network.
-- [WINetworkSharingProvider.Network.Credentials](winetworksharingprovider/network/credentials-swift.enum.md)
+- [WINetworkSharingProvider.Network.Credentials](./credentials-swift.enum.md)
   Credentials for authenticating to a Wi-Fi network.
-- [let captivePortalLogin: WINetworkSharingProvider.Network.CaptivePortalLogin?](winetworksharingprovider/network/captiveportallogin-swift.property.md)
+- [let captivePortalLogin: WINetworkSharingProvider.Network.CaptivePortalLogin?](./captiveportallogin-swift.property.md)
   The captive portal login information for the network.
-- [WINetworkSharingProvider.Network.CaptivePortalLogin](winetworksharingprovider/network/captiveportallogin-swift.struct.md)
+- [WINetworkSharingProvider.Network.CaptivePortalLogin](./captiveportallogin-swift.struct.md)
   Captive portal login information for a Wi-Fi network.
 
 

@@ -1,7 +1,8 @@
 # init(sourceMatrices:destinationMatrices:offsetVector:offset:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(sourceMatrices: [MPSMatrix], destinationMatrices: [MPSMatrix], offsetVector offsets: MPSVector?, offset byteOffset: Int)
+```
+
+```objc
+- (instancetype) initWithSourceMatrices:(NSArray<MPSMatrix *> *) sourceMatrices destinationMatrices:(NSArray<MPSMatrix *> *) destinationMatrices offsetVector:(MPSVector *) offsets offset:(NSUInteger) byteOffset;
 ```
 
 

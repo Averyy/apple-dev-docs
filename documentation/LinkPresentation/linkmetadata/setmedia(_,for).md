@@ -1,7 +1,8 @@
 # setMedia(_:for:)
 
 **Framework**: Link Presentation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the media data in the metadata for an attachment.
 

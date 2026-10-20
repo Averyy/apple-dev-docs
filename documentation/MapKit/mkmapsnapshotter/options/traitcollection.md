@@ -1,7 +1,8 @@
 # traitCollection
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Traits that determine the appearance of the map snapshot.
 
@@ -19,13 +20,18 @@ Traits that determine the appearance of the map snapshot.
 var traitCollection: UITraitCollection { get set }
 ```
 
+```objc
+@property (nonatomic, copy) UITraitCollection * traitCollection;
+```
+
 ## See Also
 
-- [var size: CGSize](mkmapsnapshotter/options/size.md)
+### Configuring the image output
+- [var size: CGSize](./size.md)
   The size of the image that you want to create.
-- [var appearance: NSAppearance?](mkmapsnapshotter/options/appearance.md)
+- [var appearance: NSAppearance?](./appearance.md)
   The visual style (light or dark) to apply to the map when rendering the snapshot image.
-- [var scale: CGFloat](mkmapsnapshotter/options/scale.md)
+- [var scale: CGFloat](./scale.md)
   The scale factor to use when creating the image.
 
 

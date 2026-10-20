@@ -1,7 +1,8 @@
 # pointsClassification
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An enumeration that describes how to interpret the points the region provides.
 
@@ -19,9 +20,14 @@ An enumeration that describes how to interpret the points the region provides.
 var pointsClassification: VNPointsClassification { get }
 ```
 
+```objc
+@property (nonatomic, readonly) VNPointsClassification pointsClassification;
+```
+
 ## See Also
 
-- [enum VNPointsClassification](vnpointsclassification.md)
+### Describing Region Points
+- [enum VNPointsClassification](../vnpointsclassification.md)
   The set of classifications that describe how to interpret the points the region provides.
 
 

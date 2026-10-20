@@ -1,18 +1,21 @@
 # currentEntitlement
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transaction that entitles the user to the product.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 15.0+ - Deprecated in 18.4
+- iPadOS 15.0+ - Deprecated in 18.4
+- Mac Catalyst 15.0+ - Deprecated in 18.4
+- macOS 12.0+ - Deprecated in 15.4
+- tvOS 15.0+ - Deprecated in 18.4
+- visionOS 1.0+ - Deprecated in 2.4
+- watchOS 8.0+ - Deprecated in 11.4
+
+> **Deprecated**: Use [`currentEntitlements`](./currententitlements.md) property instead.
 
 ## Declaration
 

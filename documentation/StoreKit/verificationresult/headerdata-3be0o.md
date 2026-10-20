@@ -1,7 +1,8 @@
 # headerData
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The header component of the JWS subscription renewal information.
 
@@ -20,23 +21,26 @@ The header component of the JWS subscription renewal information.
 var headerData: Data { get }
 ```
 
+Available when `SignedType` is `Product.SubscriptionInfo.RenewalInfo`.
+
 ## See Also
 
-- [var jwsRepresentation: String](verificationresult/jwsrepresentation-178oj.md)
+### Getting properties for subscription renewal information
+- [var jwsRepresentation: String](./jwsrepresentation-178oj.md)
   The subscription renewal information signed by the App Store, in JWS Compact Serialization format.
-- [var deviceVerification: Data](verificationresult/deviceverification-5hvi9.md)
+- [var deviceVerification: Data](./deviceverification-5hvi9.md)
   The device verification value to use to verify whether the subscription renewal information belongs to the device.
-- [var deviceVerificationNonce: UUID](verificationresult/deviceverificationnonce-6mzfc.md)
+- [var deviceVerificationNonce: UUID](./deviceverificationnonce-6mzfc.md)
   The UUID for computing the device verification value.
-- [var signedDate: Date](verificationresult/signeddate-3tvo5.md)
+- [var signedDate: Date](./signeddate-3tvo5.md)
   The date that the App Store signed the JWS subscription renewal information.
-- [var payloadData: Data](verificationresult/payloaddata-abfv.md)
+- [var payloadData: Data](./payloaddata-abfv.md)
   The payload component of the JWS subscription renewal information.
-- [var signedData: Data](verificationresult/signeddata-1t80n.md)
+- [var signedData: Data](./signeddata-1t80n.md)
   The subscription renewal information data that the signature applies to.
-- [var signatureData: Data](verificationresult/signaturedata-9uw8c.md)
+- [var signatureData: Data](./signaturedata-9uw8c.md)
   The signature component of the JWS subscription renewal information.
-- [var signature: P256.Signing.ECDSASignature](verificationresult/signature-95r7x.md)
+- [var signature: P256.Signing.ECDSASignature](./signature-95r7x.md)
   The signature component of the JSON web signature.
 
 

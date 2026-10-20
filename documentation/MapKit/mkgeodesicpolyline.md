@@ -1,7 +1,8 @@
 # MKGeodesicPolyline
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An open polygon overlay consisting of line segments that follow the contours of the Earth to create the shortest path between the specified points.
 
@@ -20,6 +21,10 @@ An open polygon overlay consisting of line segments that follow the contours of 
 class MKGeodesicPolyline
 ```
 
+```objc
+@interface MKGeodesicPolyline : MKPolyline
+```
+
 #### Overview
 
 A geodesic polyline contains a set of points that connect end-to-end in the order that you provide them. The first and last points don’t automatically connect to each other. When displaying on a two-dimensional map view, the line segment between any two points may appear curved.
@@ -27,37 +32,38 @@ A geodesic polyline contains a set of points that connect end-to-end in the orde
 ## Topics
 
 ### Creating a geodesic polyline overlay
-- [convenience init(points: UnsafePointer<MKMapPoint>, count: Int)](mkgeodesicpolyline/init(points:count:).md)
+- [convenience init(points: UnsafePointer<MKMapPoint>, count: Int)](./mkgeodesicpolyline/init%28points,count%29.md)
   Creates and returns a geodesic polyline using the specified map points.
-- [convenience init(coordinates: UnsafePointer<CLLocationCoordinate2D>, count: Int)](mkgeodesicpolyline/init(coordinates:count:).md)
+- [convenience init(coordinates: UnsafePointer<CLLocationCoordinate2D>, count: Int)](./mkgeodesicpolyline/init%28coordinates,count%29.md)
   Creates and returns a geodesic polyline using the specified coordinates.
 
 ## Relationships
 
 ### Inherits From
-- [MKPolyline](mkpolyline.md)
+- [MKPolyline](./mkpolyline.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MKAnnotation](mkannotation.md)
-- [MKGeoJSONObject](mkgeojsonobject.md)
-- [MKOverlay](mkoverlay.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MKAnnotation](./mkannotation.md)
+- [MKGeoJSONObject](./mkgeojsonobject.md)
+- [MKOverlay](./mkoverlay.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MKPolyline](mkpolyline.md)
+### Multiple segment lines
+- [class MKPolyline](./mkpolyline.md)
   An open polygon overlay consisting of one or more connected line segments.
-- [class MKMultiPolyline](mkmultipolyline.md)
+- [class MKMultiPolyline](./mkmultipolyline.md)
   A collection of multipolyline shapes, each consisting of one or more connected line segments.
-- [class MKPolylineRenderer](mkpolylinerenderer.md)
+- [class MKPolylineRenderer](./mkpolylinerenderer.md)
   A visual representation of any polyline overlay object.
-- [class MKMultiPolylineRenderer](mkmultipolylinerenderer.md)
+- [class MKMultiPolylineRenderer](./mkmultipolylinerenderer.md)
   A visual representation of multiple polyline overlay objects.
-- [class MKGradientPolylineRenderer](mkgradientpolylinerenderer.md)
+- [class MKGradientPolylineRenderer](./mkgradientpolylinerenderer.md)
   A visual representation of any polyline overlay object with a gradient.
 
 

@@ -1,7 +1,8 @@
 # init(_:traits:body:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+

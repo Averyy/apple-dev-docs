@@ -1,7 +1,8 @@
 # NSWindow.DidExposeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,16 +16,16 @@ struct DidExposeMessage
 ## Topics
 
 ### Initializers
-- [init(window: NSWindow, exposedRect: NSRect)](nswindow/didexposemessage/init(window:exposedrect:).md)
+- [init(window: NSWindow, exposedRect: NSRect)](./didexposemessage/init%28window,exposedrect%29.md)
 ### Instance Properties
-- [var exposedRect: NSRect](nswindow/didexposemessage/exposedrect.md)
-- [var window: NSWindow](nswindow/didexposemessage/window.md)
+- [var exposedRect: NSRect](./didexposemessage/exposedrect.md)
+- [var window: NSWindow](./didexposemessage/window.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

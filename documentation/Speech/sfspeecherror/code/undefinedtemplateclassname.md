@@ -1,7 +1,8 @@
 # SFSpeechError.Code.undefinedTemplateClassName
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The custom language model templates were malformed.
 
@@ -19,11 +20,16 @@ The custom language model templates were malformed.
 case undefinedTemplateClassName
 ```
 
+```c
+SFSpeechErrorCodeUndefinedTemplateClassName
+```
+
 ## See Also
 
-- [SFSpeechError.Code.malformedSupplementalModel](sfspeecherror/code/malformedsupplementalmodel.md)
+### Custom language model errors
+- [SFSpeechError.Code.malformedSupplementalModel](./malformedsupplementalmodel.md)
   The custom language model file was malformed.
-- [SFSpeechError.Code.missingParameter](sfspeecherror/code/missingparameter.md)
+- [SFSpeechError.Code.missingParameter](./missingparameter.md)
   A required parameter is missing/nil.
 
 

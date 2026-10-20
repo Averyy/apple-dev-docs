@@ -1,7 +1,8 @@
 # MTRAttributeNameForID(_:_:)
 
 **Framework**: Matter  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func MTRAttributeNameForID(_ clusterID: MTRClusterIDType, _ attributeID: MTRAttributeIDType) -> String!
+```
+
+```c
+extern NSString *MTRAttributeNameForID(MTRClusterIDType clusterID, MTRAttributeIDType attributeID);
 ```
 
 

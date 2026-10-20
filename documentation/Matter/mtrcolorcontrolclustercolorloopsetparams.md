@@ -1,7 +1,8 @@
 # MTRColorControlClusterColorLoopSetParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,31 +19,35 @@
 class MTRColorControlClusterColorLoopSetParams
 ```
 
+```objc
+@interface MTRColorControlClusterColorLoopSetParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var action: NSNumber](mtrcolorcontrolclustercolorloopsetparams/action.md)
-- [var direction: NSNumber](mtrcolorcontrolclustercolorloopsetparams/direction.md)
-- [var optionsMask: NSNumber](mtrcolorcontrolclustercolorloopsetparams/optionsmask.md)
-- [var optionsOverride: NSNumber](mtrcolorcontrolclustercolorloopsetparams/optionsoverride.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrcolorcontrolclustercolorloopsetparams/serversideprocessingtimeout.md)
-- [var startHue: NSNumber](mtrcolorcontrolclustercolorloopsetparams/starthue.md)
-- [var time: NSNumber](mtrcolorcontrolclustercolorloopsetparams/time.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrcolorcontrolclustercolorloopsetparams/timedinvoketimeoutms.md)
-- [var updateFlags: NSNumber](mtrcolorcontrolclustercolorloopsetparams/updateflags.md)
+- [var action: NSNumber](./mtrcolorcontrolclustercolorloopsetparams/action.md)
+- [var direction: NSNumber](./mtrcolorcontrolclustercolorloopsetparams/direction.md)
+- [var optionsMask: NSNumber](./mtrcolorcontrolclustercolorloopsetparams/optionsmask.md)
+- [var optionsOverride: NSNumber](./mtrcolorcontrolclustercolorloopsetparams/optionsoverride.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrcolorcontrolclustercolorloopsetparams/serversideprocessingtimeout.md)
+- [var startHue: NSNumber](./mtrcolorcontrolclustercolorloopsetparams/starthue.md)
+- [var time: NSNumber](./mtrcolorcontrolclustercolorloopsetparams/time.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrcolorcontrolclustercolorloopsetparams/timedinvoketimeoutms.md)
+- [var updateFlags: NSNumber](./mtrcolorcontrolclustercolorloopsetparams/updateflags.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

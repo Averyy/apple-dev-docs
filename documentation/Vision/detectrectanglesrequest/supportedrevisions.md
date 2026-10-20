@@ -1,7 +1,8 @@
 # supportedRevisions
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of revisions the request supports.
 
@@ -22,9 +23,10 @@ static let supportedRevisions: [DetectRectanglesRequest.Revision]
 
 ## See Also
 
-- [let revision: DetectRectanglesRequest.Revision](detectrectanglesrequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: DetectRectanglesRequest.Revision](./revision-swift.property.md)
   The request’s configured revision.
-- [DetectRectanglesRequest.Revision](detectrectanglesrequest/revision-swift.enum.md)
+- [DetectRectanglesRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

@@ -1,7 +1,8 @@
 # errSecInvalidKeyRef
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid key was encountered.
 
@@ -18,6 +19,10 @@ An invalid key was encountered.
 
 ```swift
 var errSecInvalidKeyRef: OSStatus { get }
+```
+
+```c
+errSecInvalidKeyRef
 ```
 
 

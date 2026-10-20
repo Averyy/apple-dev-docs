@@ -1,7 +1,8 @@
 # videoSettings
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video settings that the output uses.
 
@@ -19,9 +20,14 @@ The video settings that the output uses.
 var videoSettings: [String : Any]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * videoSettings;
+```
+
 ## See Also
 
-- [var videoTracks: [AVAssetTrack]](avassetreadervideocompositionoutput/videotracks.md)
+### Inspecting an output
+- [var videoTracks: [AVAssetTrack]](./videotracks.md)
   The tracks from which the output reads the composited video.
 
 

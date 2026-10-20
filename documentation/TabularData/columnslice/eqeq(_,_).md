@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean that indicates whether the column slices are equal.
 
@@ -19,6 +20,8 @@ Returns a Boolean that indicates whether the column slices are equal.
 ```swift
 static func == (lhs: ColumnSlice<WrappedElement>, rhs: ColumnSlice<WrappedElement>) -> Bool
 ```
+
+Available when `WrappedElement` conforms to `Equatable`.
 
 ## Parameters
 

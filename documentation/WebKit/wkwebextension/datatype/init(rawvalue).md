@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data type from a raw value you provide.
 

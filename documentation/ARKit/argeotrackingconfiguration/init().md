@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new geotracking configuration.
 
@@ -15,9 +16,13 @@ Initializes a new geotracking configuration.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
-To use the configuration in an AR experience, pass it as an argument to your app’s [`run(_:options:)`](arsession/run(_:options:).md) function.
+To use the configuration in an AR experience, pass it as an argument to your app’s [`run(_:options:)`](../arsession/run%28_,options%29.md) function.
 
 
 ---

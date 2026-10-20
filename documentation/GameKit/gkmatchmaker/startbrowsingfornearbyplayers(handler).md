@@ -1,7 +1,8 @@
 # startBrowsingForNearbyPlayers(handler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds nearby players through Bluetooth or WiFi on the same subnet.
 
@@ -19,20 +20,29 @@ Finds nearby players through Bluetooth or WiFi on the same subnet.
 func startBrowsingForNearbyPlayers(handler reachableHandler: ((GKPlayer, Bool) -> Void)? = nil)
 ```
 
+```objc
+- (void) startBrowsingForNearbyPlayersWithHandler:(void (^)(GKPlayer *player, BOOL reachable)) reachableHandler;
+```
+
 #### Discussion
 
-Use the `reachableHandler` implementation to update your interface with information about nearby players. If the local player wants to invite a nearby player, call the [`findMatch(for:withCompletionHandler:)`](gkmatchmaker/findmatch(for:withcompletionhandler:).md) method to create a match or the [`addPlayers(to:matchRequest:completionHandler:)`](gkmatchmaker/addplayers(to:matchrequest:completionhandler:).md) method to update an existing match. When you are done finding nearby players, call the [`stopBrowsingForNearbyPlayers()`](gkmatchmaker/stopbrowsingfornearbyplayers().md) method.
+Use the `reachableHandler` implementation to update your interface with information about nearby players. If the local player wants to invite a nearby player, call the [`findMatch(for:withCompletionHandler:)`](./findmatch%28for,withcompletionhandler%29.md) method to create a match or the [`addPlayers(to:matchRequest:completionHandler:)`](./addplayers%28to,matchrequest,completionhandler%29.md) method to update an existing match. When you are done finding nearby players, call the [`stopBrowsingForNearbyPlayers()`](./stopbrowsingfornearbyplayers%28%29.md) method.
 
 > **Note**:  Before your game is released and during development, GameKit invokes the handler for all nearby players of all Game Center games.
 
 ## Parameters
 
-- `reachableHandler`: The block that GameKit calls when it completes the request. This block receives the following parameters: - **`player`**: The player whose reachability status changes.
-- **`reachable`**: [`true`](https://developer.apple.com/documentation/swift/true) if a new nearby player appears. [`false`](https://developer.apple.com/documentation/swift/false) if a previously discovered player disappears.
+- `reachableHandler`: The block that GameKit calls when it completes the request.
+
+  This block receives the following parameters:
+
+  - **`player`**: The player whose reachability status changes.
+  - **`reachable`**: [`true`](../../Swift/true.md) if a new nearby player appears. [`false`](../../Swift/false.md) if a previously discovered player disappears.
 
 ## See Also
 
-- [func stopBrowsingForNearbyPlayers()](gkmatchmaker/stopbrowsingfornearbyplayers.md)
+### Looking for nearby players
+- [func stopBrowsingForNearbyPlayers()](./stopbrowsingfornearbyplayers%28%29.md)
   Stops finding nearby players.
 
 

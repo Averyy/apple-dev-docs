@@ -1,7 +1,8 @@
 # systemAppend
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Writes to the file may only append.
 

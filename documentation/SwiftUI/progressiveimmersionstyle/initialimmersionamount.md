@@ -1,7 +1,8 @@
 # initialImmersionAmount
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial amount of immersion used for this instance of the style.
 

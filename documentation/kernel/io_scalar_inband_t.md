@@ -1,14 +1,15 @@
 # io_scalar_inband_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 typedef int io_scalar_inband_t[16];
 ```
 

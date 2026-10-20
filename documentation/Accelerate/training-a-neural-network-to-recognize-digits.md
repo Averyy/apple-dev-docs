@@ -1,6 +1,8 @@
 # Training a neural network to recognize digits
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Sample Code  
+**Download**: [TrainingANeuralNetworkToRecognizeDigits.zip](https://docs-assets.developer.apple.com/published/f8ec1f355918/TrainingANeuralNetworkToRecognizeDigits.zip)
 
 Build a simple neural network and train it to recognize randomly generated numbers.
 
@@ -43,11 +45,11 @@ The optimizer’s gradual changes to the weights, bias, beta, and gamma increase
 
 The image below shows the relationships between the layers:
 
-![A flow diagram that shows the flow of information during the training phase of the sample code project.](/images/com.apple.accelerate/flow_2x.png)
+![A flow diagram that shows the flow of information during the training phase of the sample code project.](https://developer.apple.com/tutorials/images/com.apple.accelerate/flow_2x.png)
 
-##### Define the Filter Parameters
+##### Define the filter parameters
 
-The sample creates a [`BNNSFilterParameters`](bnnsfilterparameters.md) structure with [`useClientPointer`](bnnsflags/useclientpointer.md). This flag instructs the layers to keep the provided pointers at creation time, and to work directly from that data rather than use internal copies of the data.
+The sample creates a [`BNNSFilterParameters`](./bnnsfilterparameters.md) structure with [`useClientPointer`](./bnnsflags/useclientpointer.md). This flag instructs the layers to keep the provided pointers at creation time, and to work directly from that data rather than use internal copies of the data.
 
 ```swift
 static var filterParameters = BNNSFilterParameters(
@@ -57,7 +59,7 @@ static var filterParameters = BNNSFilterParameters(
     free_memory: nil)
 ```
 
-##### Create the Fused Convolution Batch Normalization Layer
+##### Create the fused convolution-batch normalization layer
 
 The convolution-batch normalization layer consists of two sublayers.
 
@@ -142,7 +144,7 @@ static let fusedConvBatchNormLayer: BNNS.FusedParametersLayer = {
 }()
 ```
 
-##### Create the Pooling Layer
+##### Create the pooling layer
 
 Pooling layers downscale their input while preserving the most important information and produce an output that, in the case of this sample code project, consists of the maximum value in each input pixel’s local neighborhood.
 
@@ -167,7 +169,7 @@ static var poolingLayer: BNNS.PoolingLayer = {
 }()
 ```
 
-##### Create the Fully Connected Layer
+##### Create the fully connected layer
 
 Fully connected layers compute the matrix-vector product of a weights matrix and its input, and flatten the data to predict the correct label.
 
@@ -208,7 +210,7 @@ static var fullyConnectedLayer: BNNS.FullyConnectedLayer = {
 }()
 ```
 
-##### Create the Loss Layer
+##### Create the loss layer
 
 The loss layer is responsible for quantifying a score that indicates how the predicted values deviate from the labels.
 
@@ -229,11 +231,11 @@ static var lossLayer: BNNS.LossLayer = {
 }()
 ```
 
-##### Create the Candidate Input
+##### Create the candidate input
 
 For each iteration of the training phase, the sample creates a matrix that represents a random digit, and a *one-hot* encoded tensor of the same digit. The sample places digits randomly in a 20 x 20 matrix, so a `3` might appear in the matrix as the image below. This example renders `0` as `⚪️`, and `1` as `⚫️`.
 
-```None
+```
 ⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️
 ⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️
 ⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️⚪️
@@ -258,13 +260,13 @@ For each iteration of the training phase, the sample creates a matrix that repre
 
 The one-hot encoded tensor contains a `1` at the zero-based index of `3`.
 
-```None
+```
 [0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
 ```
 
 The sample code project uses a batch size of 32, so each iteration generates 32 random digits in random positions in the 20 x 20 grid.
 
-##### Perform the Forward Pass
+##### Perform the forward pass
 
 To perform the forward pass, the sample code calls `apply` on the fused, pooling, and fully connected layers.
 
@@ -283,7 +285,7 @@ try fullyConnectedLayer.apply(batchSize: batchSize,
                               output: fullyConnectedOutput)
 ```
 
-##### Calculate the Loss and Loss Gradient
+##### Calculate the loss and loss gradient
 
 Calculating the loss evaluates the efficacy of the neural network. The loss layer generates its output, `lossOutput`, which contains a score that indicates how the predicted values deviate from the labels, and `lossInputGradient`, which is the output gradient parameter to the backward application of the fully connected layer.
 
@@ -295,7 +297,7 @@ try lossLayer.apply(batchSize: batchSize,
                     generatingInputGradient: lossInputGradient)
 ```
 
-##### Create the Optimizer
+##### Create the optimizer
 
 The optimizer is responsible for updating the weights, biases, beta, and gamma. In the code below, the sample code project creates an optimizer using the Adam algorithm:
 
@@ -308,7 +310,7 @@ static var adam = BNNS.AdamOptimizer(learningRate: 0.01,
                                      regularizationFunction: BNNSOptimizerRegularizationL2)
 ```
 
-##### Perform a Backward Pass and Optimization Step on the Fully Connected Layer
+##### Perform a backward pass and optimization step on the fully connected layer
 
 The sample code project performs the backward pass in reverse order to the forward pass. Therefore, the sample’s first step is to call `applyBackward` on the fully connected layer, and perform an optimization step on its weights.
 
@@ -324,7 +326,7 @@ try fullyConnectedLayer.applyBackward(
     generatingWeightsGradient: fullyConnectedWeightGradient)
 ```
 
-##### Perform a Backward Pass on the Pooling Layer
+##### Perform a backward pass on the pooling layer
 
 The backward pass on the pooling layer generates an input gradient that’s the output gradient to the backward apply of the fused layer.
 
@@ -337,7 +339,7 @@ try poolingLayer.applyBackward(
     generatingInputGradient: poolingInputGradientArray)
 ```
 
-##### Perform a Backward Pass and Optimization Step on the Fused Layer
+##### Perform a backward pass and optimization step on the fused layer
 
 The sample calls `applyBackward` on the fused layer. This performs an optimization step on the convolution layer’s weights and bias, and the normalization layer’s beta and gamma.
 
@@ -381,11 +383,11 @@ After the app completes all the optimization steps for this iteration, it increm
 adam.timeStep += 1
 ```
 
-##### Evaluate the Neural Network
+##### Evaluate the neural network
 
 The sample iterates over the forward, loss, backward, and optimization steps, and with each iteration, the trend of the loss is to reduce. The following graph shows the loss, as a solid stroke, decreasing during training:
 
-![A graph with loss as the y-axis and training epochs as the x-axis that shows loss decreasing during training.](/images/com.apple.accelerate/loss_2x.png)
+![A graph with loss as the y-axis and training epochs as the x-axis that shows loss decreasing during training.](https://developer.apple.com/tutorials/images/com.apple.accelerate/loss_2x.png)
 
 The code in the sample defines a maximum number of iterations. Additionally, it calculates a moving average of recent loss values, which appear as a dashed stroke in the graph above. At each iteration, the sample checks whether the recent average loss is below that threshold, and, if it is, it breaks from the training phase early.
 
@@ -455,7 +457,7 @@ try fullyConnectedLayer.apply(batchSize: batchSize,
 
 Finally, the app evaluates the accuracy of the network by comparing the values in the fully connected layer’s output to the one-hot labels. For example, when the recognized digit is `3`, one-hot labels contain the values `[0, 0, 0, 1, 0, 0, 0, 0, 0, 0]`, and values in the fully connected layer’s output might be as follows:
 
-```None
+```
 [-2.51, -3.62, -0.10, 8.52, -0.42, 5.11, -1.65, 1.34,  0.82, -2.77]
 [-3.94, -2.74, -0.30, 8.39, -1.45, 6.02, -0.66, 3.25,  0.49, -3.19]
 [-2.51, -2.77, -0.77, 8.41, -0.82, 4.87, -0.37, 2.32, -0.49, -3.05]
@@ -499,7 +501,7 @@ for sample in 0 ..< batchSize {
 
 The evaluation function prints out something like the following:
 
-```None
+```
 Sample 0 — digit: 7 | prediction: 7
 Sample 1 — digit: 5 | prediction: 5
 Sample 2 — digit: 7 | prediction: 7
@@ -517,7 +519,8 @@ In this case, the neural network accurately predicts each ground truth digit.
 
 ## See Also
 
-- [BNNS](bnns-library.md)
+### Neural Networks
+- [BNNS](./bnns-library.md)
   Implement and run neural networks for training and inference.
 
 

@@ -1,7 +1,8 @@
 # windowDidFailToExitFullScreen(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called if the window failed to exit full-screen mode.
 
@@ -15,11 +16,15 @@ Called if the window failed to exit full-screen mode.
 optional func windowDidFailToExitFullScreen(_ window: NSWindow)
 ```
 
+```objc
+- (void) windowDidFailToExitFullScreen:(NSWindow *) window;
+```
+
 #### Discussion
 
 In some cases, the transition to exit full-screen mode can fail, due to being in the midst of handling some other animation or user gesture. This method indicates that there was an error, and you should clean up any work you may have done to prepare to exit full-screen mode.
 
-This message is sent whether or not the delegate indicated a custom animation by returning non-`nil` from  [`customWindowsToExitFullScreen(for:)`](nswindowdelegate/customwindowstoexitfullscreen(for:).md).
+This message is sent whether or not the delegate indicated a custom animation by returning non-`nil` from  [`customWindowsToExitFullScreen(for:)`](./customwindowstoexitfullscreen%28for%29.md).
 
 ## Parameters
 
@@ -27,19 +32,20 @@ This message is sent whether or not the delegate indicated a custom animation by
 
 ## See Also
 
-- [func customWindowsToEnterFullScreen(for: NSWindow) -> [NSWindow]?](nswindowdelegate/customwindowstoenterfullscreen(for:).md)
+### Custom Full-Screen Presentation Animations
+- [func customWindowsToEnterFullScreen(for: NSWindow) -> [NSWindow]?](./customwindowstoenterfullscreen%28for%29.md)
   Called when the window is about to enter full-screen mode.
-- [func customWindowsToEnterFullScreen(for: NSWindow, on: NSScreen) -> [NSWindow]?](nswindowdelegate/customwindowstoenterfullscreen(for:on:).md)
+- [func customWindowsToEnterFullScreen(for: NSWindow, on: NSScreen) -> [NSWindow]?](./customwindowstoenterfullscreen%28for,on%29.md)
   Called when the window is about to enter full-screen mode.
-- [func window(NSWindow, startCustomAnimationToEnterFullScreenWithDuration: TimeInterval)](nswindowdelegate/window(_:startcustomanimationtoenterfullscreenwithduration:).md)
+- [func window(NSWindow, startCustomAnimationToEnterFullScreenWithDuration: TimeInterval)](./window%28_,startcustomanimationtoenterfullscreenwithduration%29.md)
   This method is called to start the window animation into full-screen mode, including transitioning to a new space.
-- [func window(NSWindow, startCustomAnimationToEnterFullScreenOn: NSScreen, withDuration: TimeInterval)](nswindowdelegate/window(_:startcustomanimationtoenterfullscreenon:withduration:).md)
+- [func window(NSWindow, startCustomAnimationToEnterFullScreenOn: NSScreen, withDuration: TimeInterval)](./window%28_,startcustomanimationtoenterfullscreenon,withduration%29.md)
   This method is called to start the window animation into full-screen mode, including transitioning to a new space.
-- [func windowDidFailToEnterFullScreen(NSWindow)](nswindowdelegate/windowdidfailtoenterfullscreen(_:).md)
+- [func windowDidFailToEnterFullScreen(NSWindow)](./windowdidfailtoenterfullscreen%28_%29.md)
   Called if the window failed to enter full-screen mode.
-- [func customWindowsToExitFullScreen(for: NSWindow) -> [NSWindow]?](nswindowdelegate/customwindowstoexitfullscreen(for:).md)
+- [func customWindowsToExitFullScreen(for: NSWindow) -> [NSWindow]?](./customwindowstoexitfullscreen%28for%29.md)
   Called when the window is about to exit full-screen mode.
-- [func window(NSWindow, startCustomAnimationToExitFullScreenWithDuration: TimeInterval)](nswindowdelegate/window(_:startcustomanimationtoexitfullscreenwithduration:).md)
+- [func window(NSWindow, startCustomAnimationToExitFullScreenWithDuration: TimeInterval)](./window%28_,startcustomanimationtoexitfullscreenwithduration%29.md)
   This method is called to start the window animation out of full-screen mode, including transitioning back to the desktop space.
 
 

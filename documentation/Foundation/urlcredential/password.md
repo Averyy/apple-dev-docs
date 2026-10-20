@@ -1,7 +1,8 @@
 # password
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The credential’s password.
 
@@ -20,23 +21,28 @@ The credential’s password.
 var password: String? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSString * password;
+```
+
 #### Discussion
 
-You should only access this property if you need the actual password value. If you only need to know if there is a password, use [`hasPassword`](urlcredential/haspassword.md). Accessing this property may result in prompting the user for access—for example, if the password is stored in the user’s keychain.
+You should only access this property if you need the actual password value. If you only need to know if there is a password, use [`hasPassword`](./haspassword.md). Accessing this property may result in prompting the user for access—for example, if the password is stored in the user’s keychain.
 
 ## See Also
 
-- [var user: String?](urlcredential/user.md)
+### Getting credential properties
+- [var user: String?](./user.md)
   The credential’s user name.
-- [var certificates: [Any]](urlcredential/certificates.md)
+- [var certificates: [Any]](./certificates.md)
   The intermediate certificates of the credential, if it is a client certificate credential.
-- [var hasPassword: Bool](urlcredential/haspassword.md)
+- [var hasPassword: Bool](./haspassword.md)
   A Boolean value that indicates whether the credential has a password.
-- [var identity: SecIdentity?](urlcredential/identity.md)
+- [var identity: SecIdentity?](./identity.md)
   The identity of this credential if it is a client certificate credential.
-- [var persistence: URLCredential.Persistence](urlcredential/persistence-swift.property.md)
+- [var persistence: URLCredential.Persistence](./persistence-swift.property.md)
   The credential’s persistence setting.
-- [URLCredential.Persistence](urlcredential/persistence-swift.enum.md)
+- [URLCredential.Persistence](./persistence-swift.enum.md)
   Constants that specify how long the credential will be kept.
 
 

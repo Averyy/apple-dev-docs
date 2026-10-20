@@ -1,7 +1,8 @@
 # objects(forXQuery:constants:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the objects resulting from executing an XQuery query upon the receiver.
 
@@ -15,11 +16,17 @@ Returns the objects resulting from executing an XQuery query upon the receiver.
 func objects(forXQuery xquery: String, constants: [String : Any]?) throws -> [Any]
 ```
 
+```objc
+- (NSArray *) objectsForXQuery:(NSString *) xquery constants:(NSDictionary<NSString *,id> *) constants error:(NSError **) error;
+```
+
 #### Discussion
 
-The receiver acts as the context item for the query (”.”). If the receiver has been changed after parsing to have multiple adjacent text nodes, you should invoke the `NSXMLElement` method [`normalizeAdjacentTextNodesPreservingCDATA(_:)`](xmlelement/normalizeadjacenttextnodespreservingcdata(_:).md) (with an argument of [`false`](https://developer.apple.com/documentation/swift/false)) to coalesce the text nodes before querying.
+The receiver acts as the context item for the query (”.”). If the receiver has been changed after parsing to have multiple adjacent text nodes, you should invoke the `NSXMLElement` method [`normalizeAdjacentTextNodesPreservingCDATA(_:)`](../xmlelement/normalizeadjacenttextnodespreservingcdata%28_%29.md) (with an argument of [`false`](../../Swift/false.md)) to coalesce the text nodes before querying.
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -28,11 +35,12 @@ The receiver acts as the context item for the query (”.”). If the receiver h
 
 ## See Also
 
-- [func nodes(forXPath: String) throws -> [XMLNode]](xmlnode/nodes(forxpath:).md)
+### Executing Queries
+- [func nodes(forXPath: String) throws -> [XMLNode]](./nodes%28forxpath%29.md)
   Returns the nodes resulting from executing an XPath query upon the receiver.
-- [func objects(forXQuery: String) throws -> [Any]](xmlnode/objects(forxquery:).md)
+- [func objects(forXQuery: String) throws -> [Any]](./objects%28forxquery%29.md)
   Returns the objects resulting from executing an XQuery query upon the receiver.
-- [var xPath: String?](xmlnode/xpath.md)
+- [var xPath: String?](./xpath.md)
   Returns the XPath expression identifying the receiver’s location in the document tree.
 
 

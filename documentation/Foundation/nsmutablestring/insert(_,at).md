@@ -1,7 +1,8 @@
 # insert(_:at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts into the receiver the characters of a given string at a given location.
 
@@ -20,6 +21,10 @@ Inserts into the receiver the characters of a given string at a given location.
 func insert(_ aString: String, at loc: Int)
 ```
 
+```objc
+- (void) insertString:(NSString *) aString atIndex:(NSUInteger) loc;
+```
+
 #### Discussion
 
 The new characters begin at `loc` and the existing characters from `loc` to the end are shifted by the length of `aString`.
@@ -29,21 +34,24 @@ This method treats the length of the string as a valid index value that returns 
 ## Parameters
 
 - `aString`: The string to insert into the receiver. `aString` must not be `nil`.
-- `loc`: The location at which `aString` is inserted. The location must not exceed the bounds of the receiver. > ❗ **Important**:  Raises an `NSRangeException` if `loc` lies beyond the end of the string.
+- `loc`: The location at which `aString` is inserted. The location must not exceed the bounds of the receiver.
+
+  > ❗ **Important**:  Raises an `NSRangeException` if `loc` lies beyond the end of the string.
 
 ## See Also
 
-- [func append(String)](nsmutablestring/append(_:).md)
+### Modifying a String
+- [func append(String)](./append%28_%29.md)
   Adds to the end of the receiver the characters of a given string.
-- [func applyTransform(StringTransform, reverse: Bool, range: NSRange, updatedRange: NSRangePointer?) -> Bool](nsmutablestring/applytransform(_:reverse:range:updatedrange:).md)
+- [func applyTransform(StringTransform, reverse: Bool, range: NSRange, updatedRange: NSRangePointer?) -> Bool](./applytransform%28_,reverse,range,updatedrange%29.md)
   Transliterates the receiver by applying a specified ICU string transform.
-- [func deleteCharacters(in: NSRange)](nsmutablestring/deletecharacters(in:).md)
+- [func deleteCharacters(in: NSRange)](./deletecharacters%28in%29.md)
   Removes from the receiver the characters in a given range.
-- [func replaceCharacters(in: NSRange, with: String)](nsmutablestring/replacecharacters(in:with:).md)
+- [func replaceCharacters(in: NSRange, with: String)](./replacecharacters%28in,with%29.md)
   Replaces the characters from `range` with those in `aString`.
-- [func replaceOccurrences(of: String, with: String, options: NSString.CompareOptions, range: NSRange) -> Int](nsmutablestring/replaceoccurrences(of:with:options:range:).md)
+- [func replaceOccurrences(of: String, with: String, options: NSString.CompareOptions, range: NSRange) -> Int](./replaceoccurrences%28of,with,options,range%29.md)
   Replaces all occurrences of a given string in a given range with another given string, returning the number of replacements.
-- [func setString(String)](nsmutablestring/setstring(_:).md)
+- [func setString(String)](./setstring%28_%29.md)
   Replaces the characters of the receiver with those in a given string.
 
 

@@ -1,7 +1,8 @@
 # transportType
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transport type of the step.
 
@@ -20,17 +21,22 @@ The transport type of the step.
 var transportType: MKDirectionsTransportType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKDirectionsTransportType transportType;
+```
+
 #### Discussion
 
 This property reflects the transport type employed by the step and may differ from the transport type of the overall route.
 
 ## See Also
 
-- [var instructions: String](mkroute/step/instructions.md)
+### Getting additional step details
+- [var instructions: String](./instructions.md)
   The written instructions for following the path that the step represents.
-- [var notice: String?](mkroute/step/notice.md)
+- [var notice: String?](./notice.md)
   Additional notices that apply to the step.
-- [var distance: CLLocationDistance](mkroute/step/distance.md)
+- [var distance: CLLocationDistance](./distance.md)
   The step distance, in meters.
 
 

@@ -1,7 +1,8 @@
 # SearchableItem
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A Swift value type representing a Spotlight search result.
 
@@ -21,13 +22,13 @@ struct SearchableItem
 ## Topics
 
 ### Instance Properties
-- [let item: CSSearchableItem](searchableitem/item.md)
+- [let item: CSSearchableItem](./searchableitem/item.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

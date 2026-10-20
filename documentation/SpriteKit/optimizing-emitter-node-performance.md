@@ -1,6 +1,7 @@
 # Optimizing Emitter Node Performance
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Use proven methods to rapidly create and play back performant particle effects.
 

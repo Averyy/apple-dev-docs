@@ -1,7 +1,8 @@
 # VariableColorSymbolEffect
 
 **Framework**: Symbols  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
 
@@ -62,58 +63,59 @@ imageView2.addSymbolEffect(.variableColor.hideInactiveLayers.cumulative, options
 ## Topics
 
 ### Controlling fill style
-- [var cumulative: VariableColorSymbolEffect](variablecolorsymboleffect/cumulative.md)
+- [var cumulative: VariableColorSymbolEffect](./variablecolorsymboleffect/cumulative.md)
   An effect that enables each layer of a symbol-based image in sequence.
-- [var iterative: VariableColorSymbolEffect](variablecolorsymboleffect/iterative.md)
+- [var iterative: VariableColorSymbolEffect](./variablecolorsymboleffect/iterative.md)
   An effect that momentarily enables each layer of a symbol-based image in sequence.
 ### Changing playback style
-- [var nonReversing: VariableColorSymbolEffect](variablecolorsymboleffect/nonreversing.md)
+- [var nonReversing: VariableColorSymbolEffect](./variablecolorsymboleffect/nonreversing.md)
   An effect that doesn’t reverse each time it repeats.
-- [var reversing: VariableColorSymbolEffect](variablecolorsymboleffect/reversing.md)
+- [var reversing: VariableColorSymbolEffect](./variablecolorsymboleffect/reversing.md)
   An effect that reverses each time it repeats.
 ### Affecting inactive layers
-- [var dimInactiveLayers: VariableColorSymbolEffect](variablecolorsymboleffect/diminactivelayers.md)
+- [var dimInactiveLayers: VariableColorSymbolEffect](./variablecolorsymboleffect/diminactivelayers.md)
   An effect that dims inactive layers in a symbol-based image.
-- [var hideInactiveLayers: VariableColorSymbolEffect](variablecolorsymboleffect/hideinactivelayers.md)
+- [var hideInactiveLayers: VariableColorSymbolEffect](./variablecolorsymboleffect/hideinactivelayers.md)
   An effect that hides inactive layers in a symbol-based image.
 ### Accessing the configuration
-- [var configuration: SymbolEffectConfiguration](variablecolorsymboleffect/configuration.md)
+- [var configuration: SymbolEffectConfiguration](./variablecolorsymboleffect/configuration.md)
   The configuration for the effect.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [DiscreteSymbolEffect](discretesymboleffect.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [IndefiniteSymbolEffect](indefinitesymboleffect.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SymbolEffect](symboleffect.md)
+- [Copyable](../Swift/copyable.md)
+- [DiscreteSymbolEffect](./discretesymboleffect.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [IndefiniteSymbolEffect](./indefinitesymboleffect.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SymbolEffect](./symboleffect.md)
 
 ## See Also
 
-- [struct AppearSymbolEffect](appearsymboleffect.md)
+### Symbol effect types
+- [struct AppearSymbolEffect](./appearsymboleffect.md)
   A type that makes the layers of a symbol-based image appear separately or as a whole.
-- [struct AutomaticSymbolEffect](automaticsymboleffect.md)
+- [struct AutomaticSymbolEffect](./automaticsymboleffect.md)
   A type that applies the default animation to a symbol-based image in a context-sensitive manner.
-- [struct BounceSymbolEffect](bouncesymboleffect.md)
+- [struct BounceSymbolEffect](./bouncesymboleffect.md)
   A type that applies a transitory scaling effect, or bounce, to the layers in a symbol-based image separately or as a whole.
-- [struct DisappearSymbolEffect](disappearsymboleffect.md)
+- [struct DisappearSymbolEffect](./disappearsymboleffect.md)
   A type that makes the layers of a symbol-based image disappear separately or as a whole.
-- [struct PulseSymbolEffect](pulsesymboleffect.md)
+- [struct PulseSymbolEffect](./pulsesymboleffect.md)
   A type that fades the opacity of some or all layers in a symbol-based image.
-- [struct ReplaceSymbolEffect](replacesymboleffect.md)
+- [struct ReplaceSymbolEffect](./replacesymboleffect.md)
   A type that replaces the layers of one symbol-based image with those of another.
-- [struct ScaleSymbolEffect](scalesymboleffect.md)
+- [struct ScaleSymbolEffect](./scalesymboleffect.md)
   A type that scales the layers in a symbol-based image separately or as a whole.
-- [struct BreatheSymbolEffect](breathesymboleffect.md)
+- [struct BreatheSymbolEffect](./breathesymboleffect.md)
   A symbol effect that applies the Breathe animation to symbol images.
-- [struct RotateSymbolEffect](rotatesymboleffect.md)
+- [struct RotateSymbolEffect](./rotatesymboleffect.md)
   A symbol effect that applies the Rotate animation to symbol images.
-- [struct WiggleSymbolEffect](wigglesymboleffect.md)
+- [struct WiggleSymbolEffect](./wigglesymboleffect.md)
   A symbol effect that applies the Wiggle animation to symbol images.
 
 

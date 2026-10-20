@@ -1,7 +1,8 @@
 # init(for:migrationPlan:configurations:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model container using the specified model types, migration plan, and zero or more configurations.
 
@@ -23,27 +24,28 @@ convenience init(for forTypes: any PersistentModel.Type..., migrationPlan: (any 
 
 #### Discussion
 
-> ❗ **Important**: A container must have at least one configuration. If you don’t specify any, the framework creates an instance of [`ModelConfiguration`](modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
+> ❗ **Important**: A container must have at least one configuration. If you don’t specify any, the framework creates an instance of [`ModelConfiguration`](../modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
 
 ## Parameters
 
 - `forTypes`: A list of the persistent model types that comprise your app’s schema.
-- `migrationPlan`: A plan that describes the evolution of your app’s schema and how the container migrates between specific versions. For more information, see [`SchemaMigrationPlan`](schemamigrationplan.md).
-- `configurations`: A list configurations that describe how the container manages the persisted data for specific groups of models. For more information, see [`ModelConfiguration`](modelconfiguration.md).
+- `migrationPlan`: A plan that describes the evolution of your app’s schema and how the container migrates between specific versions. For more information, see [`SchemaMigrationPlan`](../schemamigrationplan.md).
+- `configurations`: A list configurations that describe how the container manages the persisted data for specific groups of models. For more information, see [`ModelConfiguration`](../modelconfiguration.md).
 
 ## See Also
 
-- [init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: [ModelConfiguration]) throws](modelcontainer/init(for:migrationplan:configurations:)-1czix.md)
+### Creating a model container
+- [init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: [ModelConfiguration]) throws](./init%28for,migrationplan,configurations%29-1czix.md)
   Creates a model container using the specified schema, migration plan, and configurations.
-- [convenience init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: ModelConfiguration...) throws](modelcontainer/init(for:migrationplan:configurations:)-qof9.md)
+- [convenience init(for: Schema, migrationPlan: (any SchemaMigrationPlan.Type)?, configurations: ModelConfiguration...) throws](./init%28for,migrationplan,configurations%29-qof9.md)
   Creates a model container using the specified schema, migration plan, and zero or more configurations.
-- [protocol PersistentModel](persistentmodel.md)
+- [protocol PersistentModel](../persistentmodel.md)
   An interface that enables SwiftData to manage a Swift class as a stored model.
-- [struct ModelConfiguration](modelconfiguration.md)
+- [struct ModelConfiguration](../modelconfiguration.md)
   A type that describes the configuration of an app’s schema or specific group of models.
-- [class Schema](schema.md)
+- [class Schema](../schema.md)
   An object that maps model classes to data in the model store, and helps with the migration of that data between releases.
-- [protocol SchemaMigrationPlan](schemamigrationplan.md)
+- [protocol SchemaMigrationPlan](../schemamigrationplan.md)
   An interface for describing the evolution of a schema and how to migrate between specific versions.
 
 

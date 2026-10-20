@@ -1,7 +1,8 @@
 # pressure
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sea level air pressure in millibars.
 
@@ -26,9 +27,10 @@ This is a reduced pressure calculated by using observed conditions to remove the
 
 ## See Also
 
-- [var pressureTrend: PressureTrend](currentweather/pressuretrend.md)
+### Getting wind and pressure
+- [var pressureTrend: PressureTrend](./pressuretrend.md)
   The direction of change of the sea level air pressure.
-- [var wind: Wind](currentweather/wind.md)
+- [var wind: Wind](./wind.md)
   The wind speed, direction, and gust.
 
 

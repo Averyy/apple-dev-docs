@@ -1,7 +1,8 @@
 # runAnimationGroup(_:completionHandler:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Allows you to specify a completion block body after the set of animation actions whose completion will trigger the completion block.
 
@@ -11,7 +12,15 @@ Allows you to specify a completion block body after the set of animation actions
 ## Declaration
 
 ```swift
+class func runAnimationGroup(_ changes: (NSAnimationContext) -> Void, completionHandler: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 class func runAnimationGroup(_ changes: (NSAnimationContext) -> Void) async
+```
+
+```objc
++ (void) runAnimationGroup:(void (^)(NSAnimationContext *context)) changes completionHandler:(void (^)()) completionHandler;
 ```
 
 #### Discussion
@@ -49,12 +58,19 @@ The above code is semantically equivalent to the following:
 
 ## Parameters
 
-- `changes`: A block object containing animations for this transaction group. The `context` parameter passes the thread’s current `NSAnimationContext` to the Block as a convenience, so code within the Block that wants to change or query properties of the current `context` does not have to call [`current`](nsanimationcontext/current.md). The block object returns no value.
-- `completionHandler`: A Block object called when animations for this transaction group are completed. The Block object takes no parameters and returns no value.
+- `changes`: A block object containing animations for this transaction group.
+
+  The `context` parameter passes the thread’s current `NSAnimationContext` to the Block as a convenience, so code within the Block that wants to change or query properties of the current `context` does not have to call [`current`](./current.md).
+
+  The block object returns no value.
+- `completionHandler`: A Block object called when animations for this transaction group are completed.
+
+  The Block object takes no parameters and returns no value.
 
 ## See Also
 
-- [var completionHandler: (() -> Void)?](nsanimationcontext/completionhandler.md)
+### Animation Completion Handlers
+- [var completionHandler: (() -> Void)?](./completionhandler.md)
   A completion Block that is called when the animations in the grouping are completed.
 
 

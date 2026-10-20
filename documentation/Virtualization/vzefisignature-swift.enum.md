@@ -1,7 +1,8 @@
 # VZEFISignature
 
 **Framework**: Virtualization  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 27.0+
@@ -15,14 +16,14 @@ enum VZEFISignature
 ## Topics
 
 ### Enumeration Cases
-- [VZEFISignature.sha256(_:)](vzefisignature-swift.enum/sha256(_:).md)
-- [case x509Certificate(SecCertificate)](vzefisignature-swift.enum/x509certificate(_:).md)
+- [VZEFISignature.sha256(_:)](./vzefisignature-swift.enum/sha256%28_%29.md)
+- [case x509Certificate(SecCertificate)](./vzefisignature-swift.enum/x509certificate%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ImmersivePreviewRenderer.Eye
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents the eye of the user.
 
@@ -18,14 +19,14 @@ enum Eye
 ## Topics
 
 ### Enumeration Cases
-- [ImmersivePreviewRenderer.Eye.left](immersivepreviewrenderer/eye/left.md)
-- [ImmersivePreviewRenderer.Eye.right](immersivepreviewrenderer/eye/right.md)
+- [ImmersivePreviewRenderer.Eye.left](./eye/left.md)
+- [ImmersivePreviewRenderer.Eye.right](./eye/right.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

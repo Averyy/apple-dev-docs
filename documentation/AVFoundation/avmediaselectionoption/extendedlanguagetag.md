@@ -1,7 +1,8 @@
 # extendedLanguageTag
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The IETF BCP 47 language tag associated with the option
 
@@ -20,6 +21,10 @@ The IETF BCP 47 language tag associated with the option
 var extendedLanguageTag: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * extendedLanguageTag;
+```
+
 #### Discussion
 
 This property may be `nil` indicating that the underlying media presented when the option is selected carries no language information. This can occur with media formats for which language information is optional, such as HTTP Live Streaming playlists, or that do not accommodate language information in machine-readable form.
@@ -28,11 +33,12 @@ Clients that are filtering media selection options by language should be prepare
 
 ## See Also
 
-- [var displayName: String](avmediaselectionoption/displayname.md)
+### Getting the language and locale settings
+- [var displayName: String](./displayname.md)
   A string suitable for display using the current system locale.
-- [func displayName(with: Locale) -> String](avmediaselectionoption/displayname(with:).md)
+- [func displayName(with: Locale) -> String](./displayname%28with%29.md)
   Returns a string suitable for display using the specified locale.
-- [var locale: Locale?](avmediaselectionoption/locale.md)
+- [var locale: Locale?](./locale.md)
   The locale for which the media option was authored.
 
 

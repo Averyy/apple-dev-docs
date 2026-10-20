@@ -1,7 +1,8 @@
 # currentTime
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current time on the integrated timeline.
 
@@ -20,13 +21,18 @@ The current time on the integrated timeline.
 var currentTime: CMTime { get }
 ```
 
+```objc
+@property (readonly) CMTime currentTime;
+```
+
 #### Discussion
 
 During playback of interstitial events that occupy a single point, this value doesn’t change.
 
 ## See Also
 
-- [var currentDate: Date?](avplayeritemintegratedtimeline/currentdate.md)
+### Inspecting the time and date
+- [var currentDate: Date?](./currentdate.md)
   The current date of playback.
 
 

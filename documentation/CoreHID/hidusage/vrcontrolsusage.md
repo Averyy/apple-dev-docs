@@ -1,7 +1,8 @@
 # HIDUsage.VRControlsUsage
 
 **Framework**: Core HID  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
@@ -15,31 +16,31 @@ enum VRControlsUsage
 ## Topics
 
 ### Enumeration Cases
-- [HIDUsage.VRControlsUsage.animatronicDevice](hidusage/vrcontrolsusage/animatronicdevice.md)
-- [HIDUsage.VRControlsUsage.belt](hidusage/vrcontrolsusage/belt.md)
-- [HIDUsage.VRControlsUsage.bodySuit](hidusage/vrcontrolsusage/bodysuit.md)
-- [HIDUsage.VRControlsUsage.displayEnable](hidusage/vrcontrolsusage/displayenable.md)
-- [HIDUsage.VRControlsUsage.flexor](hidusage/vrcontrolsusage/flexor.md)
-- [HIDUsage.VRControlsUsage.glove](hidusage/vrcontrolsusage/glove.md)
-- [HIDUsage.VRControlsUsage.handTracker](hidusage/vrcontrolsusage/handtracker.md)
-- [HIDUsage.VRControlsUsage.headMountedDisplay](hidusage/vrcontrolsusage/headmounteddisplay.md)
-- [HIDUsage.VRControlsUsage.headTracker](hidusage/vrcontrolsusage/headtracker.md)
-- [HIDUsage.VRControlsUsage.oculometer](hidusage/vrcontrolsusage/oculometer.md)
-- [HIDUsage.VRControlsUsage.stereoEnable](hidusage/vrcontrolsusage/stereoenable.md)
-- [HIDUsage.VRControlsUsage.vest](hidusage/vrcontrolsusage/vest.md)
+- [HIDUsage.VRControlsUsage.animatronicDevice](./vrcontrolsusage/animatronicdevice.md)
+- [HIDUsage.VRControlsUsage.belt](./vrcontrolsusage/belt.md)
+- [HIDUsage.VRControlsUsage.bodySuit](./vrcontrolsusage/bodysuit.md)
+- [HIDUsage.VRControlsUsage.displayEnable](./vrcontrolsusage/displayenable.md)
+- [HIDUsage.VRControlsUsage.flexor](./vrcontrolsusage/flexor.md)
+- [HIDUsage.VRControlsUsage.glove](./vrcontrolsusage/glove.md)
+- [HIDUsage.VRControlsUsage.handTracker](./vrcontrolsusage/handtracker.md)
+- [HIDUsage.VRControlsUsage.headMountedDisplay](./vrcontrolsusage/headmounteddisplay.md)
+- [HIDUsage.VRControlsUsage.headTracker](./vrcontrolsusage/headtracker.md)
+- [HIDUsage.VRControlsUsage.oculometer](./vrcontrolsusage/oculometer.md)
+- [HIDUsage.VRControlsUsage.stereoEnable](./vrcontrolsusage/stereoenable.md)
+- [HIDUsage.VRControlsUsage.vest](./vrcontrolsusage/vest.md)
 ### Type Properties
-- [static let page: UInt16](hidusage/vrcontrolsusage/page.md)
+- [static let page: UInt16](./vrcontrolsusage/page.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

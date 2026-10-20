@@ -1,7 +1,8 @@
 # handsFree(_:redial:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the connected Bluetooth hands-free phone or headset is redialing the last phone number.
 
@@ -14,6 +15,10 @@ Tells the delegate the connected Bluetooth hands-free phone or headset is redial
 optional func handsFree(_ device: IOBluetoothHandsFreeAudioGateway!, redial: NSNumber!)
 ```
 
+```objc
+- (void) handsFree:(IOBluetoothHandsFreeAudioGateway *) device redial:(NSNumber *) redial;
+```
+
 ## Parameters
 
 - `device`: The audio gateway for the remote hands-free Bluetooth device.
@@ -21,7 +26,8 @@ optional func handsFree(_ device: IOBluetoothHandsFreeAudioGateway!, redial: NSN
 
 ## See Also
 
-- [func handsFree(IOBluetoothHandsFreeAudioGateway!, hangup: NSNumber!)](iobluetoothhandsfreeaudiogatewaydelegate/handsfree(_:hangup:).md)
+### Receiving Status Change Information
+- [func handsFree(IOBluetoothHandsFreeAudioGateway!, hangup: NSNumber!)](./handsfree%28_,hangup%29.md)
   Tells the delegate the connected Bluetooth hands-free phone or headset is sending a hang-up signal.
 
 

@@ -1,7 +1,8 @@
 # advanced(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value that is offset the specified distance from this value.
 
@@ -37,7 +38,7 @@ let y = addOne(to: 3.5)
 
 If this type’s `Stride` type conforms to `BinaryInteger`, then for a value `x`, a distance `n`, and a value `y = x.advanced(by: n)`, `x.distance(to: y) == n`. Using this method with types that have a noninteger `Stride` may result in an approximation. If the result of advancing by `n` is not representable as a value of this type, then a runtime error may occur.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

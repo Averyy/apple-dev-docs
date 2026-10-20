@@ -1,7 +1,8 @@
 # LARight.State
 
 **Framework**: Local Authentication  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible states for a right during authorization.
 
@@ -18,9 +19,13 @@ The possible states for a right during authorization.
 enum State
 ```
 
+```c
+enum LARightState : NSInteger;
+```
+
 #### Overview
 
-You can use key-value observation and the [`Combine`](https://developer.apple.com/documentation/combine) framework to observe the authorization state of an [`LARight`](laright.md) instance:
+You can use key-value observation and the [Combine](../../Combine/Combine.md) framework to observe the authorization state of an [`LARight`](../laright.md) instance:
 
 ```swift
 let right = LARight()
@@ -36,32 +41,33 @@ try await right.authorize(localizedReason: "Access sandcastle competition design
 ## Topics
 
 ### Authorization states
-- [LARight.State.authorizing](laright/state-swift.enum/authorizing.md)
+- [LARight.State.authorizing](./state-swift.enum/authorizing.md)
   The authorization is in progress but not completed.
-- [LARight.State.authorized](laright/state-swift.enum/authorized.md)
+- [LARight.State.authorized](./state-swift.enum/authorized.md)
   The authorization completed successfully.
-- [LARight.State.notAuthorized](laright/state-swift.enum/notauthorized.md)
+- [LARight.State.notAuthorized](./state-swift.enum/notauthorized.md)
   The authorization failed.
-- [LARight.State.unknown](laright/state-swift.enum/unknown.md)
+- [LARight.State.unknown](./state-swift.enum/unknown.md)
   The authorization is in an unknown state.
 ### Initializers
-- [init?(rawValue: Int)](laright/state-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./state-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class LARight](laright.md)
+### Authentication and access
+- [class LARight](../laright.md)
   A grouped set of requirements that gate access to a resource or operation.
-- [class LAContext](lacontext.md)
+- [class LAContext](../lacontext.md)
   A mechanism for evaluating authentication policies and access controls.
 
 

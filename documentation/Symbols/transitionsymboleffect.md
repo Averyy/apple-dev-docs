@@ -1,7 +1,8 @@
 # TransitionSymbolEffect
 
 **Framework**: Symbols  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An effect that animates a symbol in or out.
 
@@ -23,21 +24,22 @@ protocol TransitionSymbolEffect
 ## Relationships
 
 ### Conforming Types
-- [AppearSymbolEffect](appearsymboleffect.md)
-- [AutomaticSymbolEffect](automaticsymboleffect.md)
-- [DisappearSymbolEffect](disappearsymboleffect.md)
-- [DrawOffSymbolEffect](drawoffsymboleffect.md)
-- [DrawOnSymbolEffect](drawonsymboleffect.md)
+- [AppearSymbolEffect](./appearsymboleffect.md)
+- [AutomaticSymbolEffect](./automaticsymboleffect.md)
+- [DisappearSymbolEffect](./disappearsymboleffect.md)
+- [DrawOffSymbolEffect](./drawoffsymboleffect.md)
+- [DrawOnSymbolEffect](./drawonsymboleffect.md)
 
 ## See Also
 
-- [protocol SymbolEffect](symboleffect.md)
+### Symbol effect protocols
+- [protocol SymbolEffect](./symboleffect.md)
   A presentation effect that you apply to a symbol-based image.
-- [protocol DiscreteSymbolEffect](discretesymboleffect.md)
+- [protocol DiscreteSymbolEffect](./discretesymboleffect.md)
   An effect that performs a transient animation.
-- [protocol IndefiniteSymbolEffect](indefinitesymboleffect.md)
+- [protocol IndefiniteSymbolEffect](./indefinitesymboleffect.md)
   An animation that continually affects a symbol until it’s disabled or removed.
-- [protocol ContentTransitionSymbolEffect](contenttransitionsymboleffect.md)
+- [protocol ContentTransitionSymbolEffect](./contenttransitionsymboleffect.md)
   An effect that animates between symbols or different configurations of the same symbol.
 
 

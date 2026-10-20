@@ -1,7 +1,8 @@
 # MTRRVCCleanModeModeTag
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.4+
@@ -18,34 +19,38 @@
 enum MTRRVCCleanModeModeTag
 ```
 
+```c
+enum MTRRVCCleanModeModeTag : uint16_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRRVCCleanModeModeTag.deepClean](mtrrvccleanmodemodetag/deepclean.md)
-- [MTRRVCCleanModeModeTag.mop](mtrrvccleanmodemodetag/mop.md)
-- [MTRRVCCleanModeModeTag.vacuum](mtrrvccleanmodemodetag/vacuum.md)
-- [MTRRVCCleanModeModeTag.auto](mtrrvccleanmodemodetag/auto.md)
-- [MTRRVCCleanModeModeTag.day](mtrrvccleanmodemodetag/day.md)
-- [MTRRVCCleanModeModeTag.lowEnergy](mtrrvccleanmodemodetag/lowenergy.md)
-- [MTRRVCCleanModeModeTag.lowNoise](mtrrvccleanmodemodetag/lownoise.md)
-- [MTRRVCCleanModeModeTag.max](mtrrvccleanmodemodetag/max.md)
-- [MTRRVCCleanModeModeTag.min](mtrrvccleanmodemodetag/min.md)
-- [MTRRVCCleanModeModeTag.night](mtrrvccleanmodemodetag/night.md)
-- [MTRRVCCleanModeModeTag.quick](mtrrvccleanmodemodetag/quick.md)
-- [MTRRVCCleanModeModeTag.quiet](mtrrvccleanmodemodetag/quiet.md)
-- [MTRRVCCleanModeModeTag.vacation](mtrrvccleanmodemodetag/vacation.md)
+- [MTRRVCCleanModeModeTag.deepClean](./mtrrvccleanmodemodetag/deepclean.md)
+- [MTRRVCCleanModeModeTag.mop](./mtrrvccleanmodemodetag/mop.md)
+- [MTRRVCCleanModeModeTag.vacuum](./mtrrvccleanmodemodetag/vacuum.md)
+- [MTRRVCCleanModeModeTag.auto](./mtrrvccleanmodemodetag/auto.md)
+- [MTRRVCCleanModeModeTag.day](./mtrrvccleanmodemodetag/day.md)
+- [MTRRVCCleanModeModeTag.lowEnergy](./mtrrvccleanmodemodetag/lowenergy.md)
+- [MTRRVCCleanModeModeTag.lowNoise](./mtrrvccleanmodemodetag/lownoise.md)
+- [MTRRVCCleanModeModeTag.max](./mtrrvccleanmodemodetag/max.md)
+- [MTRRVCCleanModeModeTag.min](./mtrrvccleanmodemodetag/min.md)
+- [MTRRVCCleanModeModeTag.night](./mtrrvccleanmodemodetag/night.md)
+- [MTRRVCCleanModeModeTag.quick](./mtrrvccleanmodemodetag/quick.md)
+- [MTRRVCCleanModeModeTag.quiet](./mtrrvccleanmodemodetag/quiet.md)
+- [MTRRVCCleanModeModeTag.vacation](./mtrrvccleanmodemodetag/vacation.md)
 ### Initializers
-- [init?(rawValue: UInt16)](mtrrvccleanmodemodetag/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./mtrrvccleanmodemodetag/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # encodeVarianceEstimation(to:sourceTexture:luminanceMomentsTexture:destinationTexture:sourceTexture2:luminanceMomentsTexture2:destinationTexture2:frameCount:depthNormalTexture:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func encodeVarianceEstimation(to commandBuffer: any MTLCommandBuffer, sourceTexture: any MTLTexture, luminanceMomentsTexture: any MTLTexture, destinationTexture: any MTLTexture, sourceTexture2: (any MTLTexture)?, luminanceMomentsTexture2: (any MTLTexture)?, destinationTexture2: (any MTLTexture)?, frameCount frameCountTexture: any MTLTexture, depthNormalTexture: (any MTLTexture)?)
+```
+
+```objc
+- (void) encodeVarianceEstimationToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer sourceTexture:(id<MTLTexture>) sourceTexture luminanceMomentsTexture:(id<MTLTexture>) luminanceMomentsTexture destinationTexture:(id<MTLTexture>) destinationTexture sourceTexture2:(id<MTLTexture>) sourceTexture2 luminanceMomentsTexture2:(id<MTLTexture>) luminanceMomentsTexture2 destinationTexture2:(id<MTLTexture>) destinationTexture2 frameCountTexture:(id<MTLTexture>) frameCountTexture depthNormalTexture:(id<MTLTexture>) depthNormalTexture;
 ```
 
 

@@ -1,7 +1,8 @@
 # clusterThreadNetworkDiagnosticsAttributeTxAckRequestedCountID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterThreadNetworkDiagnosticsAttributeTxAckRequestedCountID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterThreadNetworkDiagnosticsAttributeTxAckRequestedCountID
 ```
 
 

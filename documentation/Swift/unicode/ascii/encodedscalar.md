@@ -1,7 +1,8 @@
 # Unicode.ASCII.EncodedScalar
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A valid scalar value as represented in this encoding
 

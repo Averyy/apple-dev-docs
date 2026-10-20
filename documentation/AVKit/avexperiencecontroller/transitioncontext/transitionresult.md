@@ -1,7 +1,8 @@
 # AVExperienceController.TransitionContext.TransitionResult
 
 **Framework**: AVKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Describes the result of a transition.
 
@@ -22,21 +23,22 @@ A transition can successfully complete to the `toExperience` or reverse back to 
 ## Topics
 
 ### Results
-- [AVExperienceController.TransitionContext.TransitionResult.completed](avexperiencecontroller/transitioncontext/transitionresult/completed.md)
-- [case reversed(reason: AVExperienceController.TransitionContext.ReversedReason)](avexperiencecontroller/transitioncontext/transitionresult/reversed(reason:).md)
+- [AVExperienceController.TransitionContext.TransitionResult.completed](./transitionresult/completed.md)
+- [case reversed(reason: AVExperienceController.TransitionContext.ReversedReason)](./transitionresult/reversed%28reason%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AVExperienceController.TransitionContext.Status](avexperiencecontroller/transitioncontext/status-swift.enum.md)
+### Understanding transition results
+- [AVExperienceController.TransitionContext.Status](./status-swift.enum.md)
   Describes the status of a transition.
-- [AVExperienceController.TransitionContext.ReversedReason](avexperiencecontroller/transitioncontext/reversedreason.md)
+- [AVExperienceController.TransitionContext.ReversedReason](./reversedreason.md)
 
 
 ---

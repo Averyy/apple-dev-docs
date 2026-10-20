@@ -1,7 +1,8 @@
 # documents(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Documents, notes, and text-heavy content with custom attribute mapping.
 
@@ -20,9 +21,10 @@ static func documents(_ config: SpotlightSearchTool.ContentDomain.Documents) -> 
 
 ## See Also
 
-- [static var documents: SpotlightSearchTool.ContentDomain](spotlightsearchtool/contentdomain/documents-swift.type.property.md)
+### Getting the documents domain
+- [static var documents: SpotlightSearchTool.ContentDomain](./documents-swift.type.property.md)
   Documents, notes, and text-heavy content.
-- [SpotlightSearchTool.ContentDomain.Documents](spotlightsearchtool/contentdomain/documents-swift.struct.md)
+- [SpotlightSearchTool.ContentDomain.Documents](./documents-swift.struct.md)
   Attribute mapping for the documents domain.
 
 

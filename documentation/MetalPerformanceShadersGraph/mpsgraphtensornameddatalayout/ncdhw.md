@@ -1,7 +1,8 @@
 # MPSGraphTensorNamedDataLayout.NCDHW
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 LayoutNCDHW
 
@@ -17,6 +18,10 @@ LayoutNCDHW
 
 ```swift
 case NCDHW
+```
+
+```c
+MPSGraphTensorNamedDataLayoutNCDHW
 ```
 
 

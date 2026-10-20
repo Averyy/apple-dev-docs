@@ -1,16 +1,17 @@
 # MIDICVStatus.programChange
 
 **Framework**: Core MIDI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,14 +19,19 @@
 case programChange
 ```
 
+```c
+kMIDICVStatusProgramChange
+```
+
 ## See Also
 
-- [MIDICVStatus.noteOff](midicvstatus/noteoff.md)
-- [MIDICVStatus.noteOn](midicvstatus/noteon.md)
-- [MIDICVStatus.polyPressure](midicvstatus/polypressure.md)
-- [MIDICVStatus.controlChange](midicvstatus/controlchange.md)
-- [MIDICVStatus.channelPressure](midicvstatus/channelpressure.md)
-- [MIDICVStatus.pitchBend](midicvstatus/pitchbend.md)
+### MIDI 1.0
+- [MIDICVStatus.noteOff](./noteoff.md)
+- [MIDICVStatus.noteOn](./noteon.md)
+- [MIDICVStatus.polyPressure](./polypressure.md)
+- [MIDICVStatus.controlChange](./controlchange.md)
+- [MIDICVStatus.channelPressure](./channelpressure.md)
+- [MIDICVStatus.pitchBend](./pitchbend.md)
 
 
 ---

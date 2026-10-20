@@ -1,7 +1,8 @@
 # portraitEffectsMatte
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The portrait effects matte captured with the photo.
 
@@ -17,19 +18,24 @@ The portrait effects matte captured with the photo.
 var portraitEffectsMatte: AVPortraitEffectsMatte? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVPortraitEffectsMatte * portraitEffectsMatte;
+```
+
 ## Mentions
 
-- [Configuring camera capture to collect a Portrait Effects matte](configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
+- [Configuring camera capture to collect a Portrait Effects matte](../configuring-camera-capture-to-collect-a-portrait-effects-matte.md)
 
 ## See Also
 
-- [var depthData: AVDepthData?](avcapturephoto/depthdata.md)
+### Accessing photo metadata
+- [var depthData: AVDepthData?](./depthdata.md)
   Depth or disparity map data captured with the photo.
-- [var cameraCalibrationData: AVCameraCalibrationData?](avcapturephoto/cameracalibrationdata.md)
+- [var cameraCalibrationData: AVCameraCalibrationData?](./cameracalibrationdata.md)
   Calibration information for the camera device that captured the photo.
-- [var sourceDeviceType: AVCaptureDevice.DeviceType?](avcapturephoto/sourcedevicetype.md)
+- [var sourceDeviceType: AVCaptureDevice.DeviceType?](./sourcedevicetype.md)
   The type of device that captured the photo.
-- [var metadata: [String : Any]](avcapturephoto/metadata.md)
+- [var metadata: [String : Any]](./metadata.md)
   A dictionary of metadata describing the captured image.
 
 

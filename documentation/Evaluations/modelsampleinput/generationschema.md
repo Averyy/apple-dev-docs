@@ -1,7 +1,8 @@
 # generationSchema
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output schema for the assistant’s response.
 

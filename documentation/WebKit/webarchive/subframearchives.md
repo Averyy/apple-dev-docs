@@ -1,12 +1,13 @@
 # subframeArchives
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Archives representing the receiver’s subresources or `nil` if there are none.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Archives representing the receiver’s subresources or `nil` if there are none.
 var subframeArchives: [Any]! { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray * subframeArchives;
+```
+
 ## See Also
 
-- [var mainResource: WebResource!](webarchive/mainresource.md)
+### Getting attributes
+- [var mainResource: WebResource!](./mainresource.md)
   The receiver’s main resource.
-- [var subresources: [Any]!](webarchive/subresources.md)
+- [var subresources: [Any]!](./subresources.md)
   The receiver’s subresources, or `nil` if there are none.
-- [var data: Data!](webarchive/data.md)
+- [var data: Data!](./data.md)
   The data representation of the receiver.
 
 

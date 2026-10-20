@@ -1,7 +1,8 @@
 # localThroughputCapacity
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimated average throughput capacity of the local device for a connection setup to the remote device.
 

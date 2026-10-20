@@ -1,17 +1,22 @@
 # CIPlugInRegistration
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for loading Core Image image units.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 protocol CIPlugInRegistration
+```
+
+```objc
+@protocol CIPlugInRegistration
 ```
 
 #### Overview
@@ -21,16 +26,17 @@ The principal class of an image unit—a loadable bundle containing custom Core 
 ## Topics
 
 ### Initializing Plug-ins
-- [func load(UnsafeMutableRawPointer!) -> Bool](cipluginregistration/load(_:).md)
+- [func load(UnsafeMutableRawPointer!) -> Bool](./cipluginregistration/load%28_%29.md)
   Loads and initializes an image unit, performing custom tasks as needed.
 
 ## See Also
 
-- [class CIPlugIn](ciplugin.md)
+### Image Units
+- [class CIPlugIn](./ciplugin.md)
   The mechanism for loading image units in macOS.
-- [class CIFilterGenerator](cifiltergenerator.md)
+- [class CIFilterGenerator](./cifiltergenerator.md)
   An object that creates and configures chains of individual image filters.
-- [protocol CIFilterConstructor](cifilterconstructor.md)
+- [protocol CIFilterConstructor](./cifilterconstructor.md)
   A general interface for objects that produce filters.
 
 

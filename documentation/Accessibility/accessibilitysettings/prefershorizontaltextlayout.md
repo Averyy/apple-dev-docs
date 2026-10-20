@@ -1,7 +1,8 @@
 # prefersHorizontalTextLayout
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the system setting to prefer horizontal text for languages that support both vertical and horizontal text layout is on.
 
@@ -22,13 +23,14 @@ static var prefersHorizontalTextLayout: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the system setting for Prefer Horizontal Text is on; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if the system setting for Prefer Horizontal Text is on; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [Horizontal text](horizontal-text.md)
+### Customizing vertical text layout
+- [Horizontal text](../horizontal-text.md)
   Lay out vertical text horizontally in your app when people turn on the Prefer Horizontal Text setting.
-- [static var prefersHorizontalTextLayoutDidChangeNotification: Notification.Name](accessibilitysettings/prefershorizontaltextlayoutdidchangenotification.md)
+- [static var prefersHorizontalTextLayoutDidChangeNotification: Notification.Name](./prefershorizontaltextlayoutdidchangenotification.md)
   A notification that posts when the system setting to prefer horizontal text for languages that support both vertical and horizontal text layout changes.
 
 

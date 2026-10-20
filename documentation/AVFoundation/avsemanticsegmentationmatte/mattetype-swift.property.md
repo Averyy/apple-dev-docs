@@ -1,7 +1,8 @@
 # matteType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The semantic segmentation matte image type.
 
@@ -20,17 +21,22 @@ The semantic segmentation matte image type.
 var matteType: AVSemanticSegmentationMatte.MatteType { get }
 ```
 
+```objc
+@property (readonly) AVSemanticSegmentationMatteType matteType;
+```
+
 #### Discussion
 
-A semantic segmentation matte’s [`matteType`](avsemanticsegmentationmatte/mattetype-swift.property.md) is immutable for the life of the object.
+A semantic segmentation matte’s [`matteType`](./mattetype-swift.property.md) is immutable for the life of the object.
 
 ## See Also
 
-- [AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.struct.md)
+### Inspecting a segmentation matte
+- [AVSemanticSegmentationMatte.MatteType](./mattetype-swift.struct.md)
   A structure that defines the types of segmentation matte images that you can capture along with the primary image.
-- [var mattingImage: CVPixelBuffer](avsemanticsegmentationmatte/mattingimage.md)
+- [var mattingImage: CVPixelBuffer](./mattingimage.md)
   The semantic segmentation matte’s internal image.
-- [var pixelFormatType: OSType](avsemanticsegmentationmatte/pixelformattype.md)
+- [var pixelFormatType: OSType](./pixelformattype.md)
   The pixel format type for this object’s internal matting image.
 
 

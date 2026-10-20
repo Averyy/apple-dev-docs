@@ -1,7 +1,8 @@
 # rootInterfaceController
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s root interface controller.
 
@@ -14,13 +15,18 @@ The app’s root interface controller.
 var rootInterfaceController: WKInterfaceController? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) WKInterfaceController * rootInterfaceController;
+```
+
 #### Discussion
 
 The root interface controller is located in the app’s main storyboard and has the Main Entry Point object associated with it. WatchKit displays the root interface controller at launch time, although the app can present a different interface controller before the launch sequence finishes.
 
 ## See Also
 
-- [var visibleInterfaceController: WKInterfaceController?](wkapplication/visibleinterfacecontroller.md)
+### Getting the interface controller
+- [var visibleInterfaceController: WKInterfaceController?](./visibleinterfacecontroller.md)
   Returns the last visible interface controller.
 
 

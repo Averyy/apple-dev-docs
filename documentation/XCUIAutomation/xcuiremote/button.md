@@ -1,75 +1,89 @@
 # XCUIRemoteButton
 
 **Framework**: XCUIAutomation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A button on a physical remote control.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, macOS, visionOS, watchOS*
+
+```swift
+enum XCUIRemoteButton
+```
+
+*tvOS*
 
 ```swift
 enum Button
 ```
 
+```c
+enum XCUIRemoteButton : NSUInteger;
+```
+
 ## Topics
 
 ### Remote buttons
-- [XCUIRemoteButton.up](xcuiremotebutton/up.md)
+- [XCUIRemoteButton.up](../xcuiremotebutton/up.md)
   A constant that represents the up button on a remote.
-- [XCUIRemoteButton.down](xcuiremotebutton/down.md)
+- [XCUIRemoteButton.down](../xcuiremotebutton/down.md)
   A constant that represents the down button on a remote.
-- [XCUIRemoteButton.left](xcuiremotebutton/left.md)
+- [XCUIRemoteButton.left](../xcuiremotebutton/left.md)
   A constant that represents the left button on a remote.
-- [XCUIRemoteButton.right](xcuiremotebutton/right.md)
+- [XCUIRemoteButton.right](../xcuiremotebutton/right.md)
   A constant that represents the right button on a remote.
-- [XCUIRemoteButton.select](xcuiremotebutton/select.md)
+- [XCUIRemoteButton.select](../xcuiremotebutton/select.md)
   A constant that represents the select button on a remote.
-- [XCUIRemoteButton.menu](xcuiremotebutton/menu.md)
+- [XCUIRemoteButton.menu](../xcuiremotebutton/menu.md)
   A constant that represents the menu button on a remote.
-- [XCUIRemoteButton.playPause](xcuiremotebutton/playpause.md)
+- [XCUIRemoteButton.playPause](../xcuiremotebutton/playpause.md)
   A constant that represents the play-and-pause button on a remote.
-- [XCUIRemoteButton.home](xcuiremotebutton/home.md)
+- [XCUIRemoteButton.home](../xcuiremotebutton/home.md)
   A constant that represents the home button on a remote.
-- [XCUIRemoteButton.pageUp](xcuiremotebutton/pageup.md)
+- [XCUIRemoteButton.pageUp](../xcuiremotebutton/pageup.md)
   A constant that represents the page up button on a remote.
-- [XCUIRemoteButton.pageDown](xcuiremotebutton/pagedown.md)
+- [XCUIRemoteButton.pageDown](../xcuiremotebutton/pagedown.md)
   A constant that represents the page down button on a remote.
-- [XCUIRemoteButton.guide](xcuiremotebutton/guide.md)
+- [XCUIRemoteButton.guide](../xcuiremotebutton/guide.md)
   A constant that represents the guide button on a remote.
-- [XCUIRemoteButton.fourColors](xcuiremotebutton/fourcolors.md)
+- [XCUIRemoteButton.fourColors](../xcuiremotebutton/fourcolors.md)
   A constant that represents the color functions button on a remote.
-- [XCUIRemoteButton.oneTwoThree](xcuiremotebutton/onetwothree.md)
+- [XCUIRemoteButton.oneTwoThree](../xcuiremotebutton/onetwothree.md)
   A constant that represents the channel-tuning button on a remote.
-- [XCUIRemoteButton.tvProvider](xcuiremotebutton/tvprovider.md)
+- [XCUIRemoteButton.tvProvider](../xcuiremotebutton/tvprovider.md)
   A constant that represents the TV provider button on a remote.
 ### Initializers
-- [init?(rawValue: UInt)](xcuiremotebutton/init(rawvalue:).md)
+- [init?(rawValue: UInt)](../xcuiremotebutton/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func press(XCUIRemote.Button)](xcuiremote/press(_:).md)
+### Pressing remote buttons
+- [func press(XCUIRemote.Button)](./press%28_%29.md)
   Sends a momentary press of a button on a physical remote control.
-- [func press(XCUIRemote.Button, forDuration: TimeInterval)](xcuiremote/press(_:forduration:).md)
+- [func press(XCUIRemote.Button, forDuration: TimeInterval)](./press%28_,forduration%29.md)
   Sends a press and hold of a button on a physical remote control, holding for the specified duration.
 
 

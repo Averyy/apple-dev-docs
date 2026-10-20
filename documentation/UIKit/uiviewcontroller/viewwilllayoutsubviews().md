@@ -1,7 +1,8 @@
 # viewWillLayoutSubviews()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the view controller that its view is about to lay out its subviews.
 
@@ -9,7 +10,7 @@ Notifies the view controller that its view is about to lay out its subviews.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,28 +19,33 @@ Notifies the view controller that its view is about to lay out its subviews.
 func viewWillLayoutSubviews()
 ```
 
+```objc
+- (void) viewWillLayoutSubviews;
+```
+
 ## Mentions
 
-- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
-- [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
+- [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
+- [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md)
 
 #### Discussion
 
 When a view’s bounds change, the view adjusts the position of its subviews. Your view controller can override this method to make changes before the view lays out its subviews. The default implementation of this method does nothing.
 
-In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this view controller’s `traitCollection` and the `traitCollection` of its [`view`](uiviewcontroller/view.md). For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
+In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this view controller’s `traitCollection` and the `traitCollection` of its [`view`](./view.md). For more information, see [Automatic trait tracking](../automatic-trait-tracking.md).
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
+This method supports automatic observation tracking. For more information, see [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## See Also
 
-- [func updateProperties()](uiviewcontroller/updateproperties.md)
+### Observing data in view controllers
+- [func updateProperties()](./updateproperties%28%29.md)
   Configures the view controller’s content and styling properties.
-- [func viewDidLayoutSubviews()](uiviewcontroller/viewdidlayoutsubviews.md)
+- [func viewDidLayoutSubviews()](./viewdidlayoutsubviews%28%29.md)
   Notifies the view controller when its view finishes laying out its subviews.
-- [func updateViewConstraints()](uiviewcontroller/updateviewconstraints.md)
+- [func updateViewConstraints()](./updateviewconstraints%28%29.md)
   Notifies the view controller when its view needs to update its constraints.
-- [func updateContentUnavailableConfiguration(using: UIContentUnavailableConfigurationState)](uiviewcontroller/updatecontentunavailableconfiguration(using:).md)
+- [func updateContentUnavailableConfiguration(using: UIContentUnavailableConfigurationState)](./updatecontentunavailableconfiguration%28using%29.md)
   Updates the content-unavailable configuration for the provided state.
 
 

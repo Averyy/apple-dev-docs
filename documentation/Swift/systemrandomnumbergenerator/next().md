@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value from a uniform, independent distribution of binary data.
 
@@ -26,9 +27,10 @@ An unsigned 64-bit random value.
 
 ## See Also
 
-- [func next<T>() -> T](systemrandomnumbergenerator/next-2x0ly.md)
+### Generating Random Binary Data
+- [func next<T>() -> T](./next%28%29-2x0ly.md)
   Returns a value from a uniform, independent distribution of binary data.
-- [func next<T>(upperBound: T) -> T](systemrandomnumbergenerator/next(upperbound:).md)
+- [func next<T>(upperBound: T) -> T](./next%28upperbound%29.md)
   Returns a random value that is less than the given upper bound.
 
 

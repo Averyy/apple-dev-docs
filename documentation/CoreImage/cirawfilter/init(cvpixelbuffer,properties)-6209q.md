@@ -1,7 +1,8 @@
 # init(cvPixelBuffer:properties:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a RAW filter from the pixel buffer and its properties that you specify.
 
@@ -19,6 +20,10 @@ Creates a RAW filter from the pixel buffer and its properties that you specify.
 convenience init?(cvPixelBuffer buffer: CVPixelBuffer, properties: [AnyHashable : Any])
 ```
 
+```objc
++ (instancetype) filterWithCVPixelBuffer:(CVPixelBufferRef) buffer properties:(NSDictionary *) properties;
+```
+
 ## Parameters
 
 - `buffer`: A Core Video pixel buffer.
@@ -26,9 +31,10 @@ convenience init?(cvPixelBuffer buffer: CVPixelBuffer, properties: [AnyHashable 
 
 ## See Also
 
-- [convenience init?(imageData: Data, identifierHint: String?)](cirawfilter/init(imagedata:identifierhint:).md)
+### Creating a filter
+- [convenience init?(imageData: Data, identifierHint: String?)](./init%28imagedata,identifierhint%29.md)
   Creates a RAW filter from the image data and type hint that you specify.
-- [convenience init?(imageURL: URL)](cirawfilter/init(imageurl:).md)
+- [convenience init?(imageURL: URL)](./init%28imageurl%29.md)
   Creates a RAW filter from the image at the URL location that you specify.
 
 

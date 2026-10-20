@@ -1,7 +1,8 @@
 # build
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The build string.
 
@@ -10,7 +11,7 @@ The build string.
 
 ## Declaration
 
-```swift
+```
 get build(): string;
 ```
 
@@ -20,9 +21,10 @@ A build string that describes the MapKit JS version. It’s helpful to include t
 
 ## See Also
 
-- [language](mapkit/language.md)
+### Version and language
+- [language](./language.md)
   A language ID indicating the selected language.
-- [version](mapkit/version.md)
+- [version](./version.md)
   The version of MapKit JS.
 
 

@@ -1,7 +1,8 @@
 # init(deformers:targets:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializer deformers, and target configurations.
 

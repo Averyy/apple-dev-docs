@@ -1,7 +1,8 @@
 # formatterBehavior
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The formatter behavior for the receiver.
 
@@ -20,9 +21,14 @@ The formatter behavior for the receiver.
 var formatterBehavior: DateFormatter.Behavior { get set }
 ```
 
+```objc
+@property NSDateFormatterBehavior formatterBehavior;
+```
+
 ## See Also
 
-- [class var defaultFormatterBehavior: DateFormatter.Behavior](dateformatter/defaultformatterbehavior.md)
+### Managing Behavior Version
+- [class var defaultFormatterBehavior: DateFormatter.Behavior](./defaultformatterbehavior.md)
   Returns the default formatting behavior for instances of the class.
 
 

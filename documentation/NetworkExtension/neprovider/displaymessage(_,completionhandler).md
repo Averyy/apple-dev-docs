@@ -1,28 +1,43 @@
 # displayMessage(_:completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Call this method from your [`NEProvider`](neprovider.md) subclass if you want to display a message to the person using the app.
+Call this method from your [`NEProvider`](../neprovider.md) subclass if you want to display a message to the person using the app.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.12+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 12.0
+- iPadOS 10.0+ - Deprecated in 12.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.12+ - Deprecated in 10.14
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, macOS, visionOS*
+
+```swift
+func displayMessage(_ message: String, completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+*Mac Catalyst, visionOS*
 
 ```swift
 func displayMessage(_ message: String) async -> Bool
 ```
 
+```objc
+- (void) displayMessage:(NSString *) message completionHandler:(void (^)(BOOL success)) completionHandler;
+```
+
 ## Parameters
 
 - `message`: The message you want to display to the person using the app.
-- `completionHandler`: A block that the system calls after you call this method. The details of the call can vary, as follows: - If the system can’t display the message, or if you call the `displayMessage:completionHandler:` method in an [`NEFilterDataProvider`](nefilterdataprovider.md) instance, then the system calls the `completionHandler` block immediately after you call the method, and sets the block’s `success` parameter value to [`false`](https://developer.apple.com/documentation/swift/false).
-- If the system successfully displays the message to the user, then the system calls the `completionHandler` block when the user dismisses the message, and sets the `success` parameter value to [`true`](https://developer.apple.com/documentation/swift/true).
+- `completionHandler`: A block that the system calls after you call this method. The details of the call can vary, as follows:
+
+  - If the system can’t display the message, or if you call the `displayMessage:completionHandler:` method in an [`NEFilterDataProvider`](../nefilterdataprovider.md) instance, then the system calls the `completionHandler` block immediately after you call the method, and sets the block’s `success` parameter value to [`false`](../../Swift/false.md).
+  - If the system successfully displays the message to the user, then the system calls the `completionHandler` block when the user dismisses the message, and sets the `success` parameter value to [`true`](../../Swift/true.md).
 
 
 ---

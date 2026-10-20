@@ -1,29 +1,31 @@
 # kIOUserNetworkPacketServiceClassAV
 
 **Framework**: NetworkingDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kIOUserNetworkPacketServiceClassAV
 ```
 
 ## See Also
 
-- [kIOUserNetworkPacketServiceClassBE](kiousernetworkpacketserviceclassbe.md)
-- [kIOUserNetworkPacketServiceClassBK](kiousernetworkpacketserviceclassbk.md)
-- [kIOUserNetworkPacketServiceClassBKSYS](kiousernetworkpacketserviceclassbksys.md)
-- [kIOUserNetworkPacketServiceClassCTL](kiousernetworkpacketserviceclassctl.md)
-- [kIOUserNetworkPacketServiceClassNone](kiousernetworkpacketserviceclassnone.md)
-- [kIOUserNetworkPacketServiceClassOAM](kiousernetworkpacketserviceclassoam.md)
-- [kIOUserNetworkPacketServiceClassRD](kiousernetworkpacketserviceclassrd.md)
-- [kIOUserNetworkPacketServiceClassRV](kiousernetworkpacketserviceclassrv.md)
-- [kIOUserNetworkPacketServiceClassVI](kiousernetworkpacketserviceclassvi.md)
-- [kIOUserNetworkPacketServiceClassVO](kiousernetworkpacketserviceclassvo.md)
+### Network packet service classes
+- [kIOUserNetworkPacketServiceClassBE](./kiousernetworkpacketserviceclassbe.md)
+- [kIOUserNetworkPacketServiceClassBK](./kiousernetworkpacketserviceclassbk.md)
+- [kIOUserNetworkPacketServiceClassBKSYS](./kiousernetworkpacketserviceclassbksys.md)
+- [kIOUserNetworkPacketServiceClassCTL](./kiousernetworkpacketserviceclassctl.md)
+- [kIOUserNetworkPacketServiceClassNone](./kiousernetworkpacketserviceclassnone.md)
+- [kIOUserNetworkPacketServiceClassOAM](./kiousernetworkpacketserviceclassoam.md)
+- [kIOUserNetworkPacketServiceClassRD](./kiousernetworkpacketserviceclassrd.md)
+- [kIOUserNetworkPacketServiceClassRV](./kiousernetworkpacketserviceclassrv.md)
+- [kIOUserNetworkPacketServiceClassVI](./kiousernetworkpacketserviceclassvi.md)
+- [kIOUserNetworkPacketServiceClassVO](./kiousernetworkpacketserviceclassvo.md)
 
 
 ---

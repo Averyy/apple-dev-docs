@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of groups in the row grouping.

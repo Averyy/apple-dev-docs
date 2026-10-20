@@ -1,7 +1,8 @@
 # layout(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specifies the direction of text layout.
 
@@ -9,8 +10,8 @@ Specifies the direction of text layout.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 7.0+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ static func layout(_ direction: UITextLayoutDirection) -> UITextDirection
 
 ## See Also
 
-- [static func storage(UITextStorageDirection) -> UITextDirection](uitextdirection/storage(_:).md)
+### Text direction types
+- [static func storage(UITextStorageDirection) -> UITextDirection](./storage%28_%29.md)
   Specifies the direction of text storage.
 
 

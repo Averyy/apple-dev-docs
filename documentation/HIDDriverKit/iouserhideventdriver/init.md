@@ -1,17 +1,18 @@
 # init
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the basic initialization of the event service.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -21,9 +22,10 @@ virtual bool init();
 
 ## See Also
 
-- [Start](iouserhideventdriver/start.md)
+### Running the Driver
+- [Start](./start.md)
   Starts the current event driver and associates it with the specified provider object.
-- [free](iouserhideventdriver/free.md)
+- [free](./free.md)
   Performs any final cleanup for the service.
 
 

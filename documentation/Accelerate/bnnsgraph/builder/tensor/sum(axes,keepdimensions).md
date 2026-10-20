@@ -1,7 +1,8 @@
 # sum(axes:keepDimensions:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a sum reduction operation along the given axis operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a sum reduction operation along the given axis operation to the current gra
 ```swift
 func sum(axes: [Int], keepDimensions: Bool) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

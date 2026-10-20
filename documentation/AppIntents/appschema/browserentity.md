@@ -1,7 +1,8 @@
 # AppSchema.BrowserEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies entity schemas in the browser domain.
 
@@ -21,35 +22,36 @@ protocol BrowserEntity : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var bookmark: some AppSchemaEntity](appschema/browserentity/bookmark.md)
+- [var bookmark: some AppSchemaEntity](./browserentity/bookmark.md)
   An entity schema for a bookmark.
-- [var readingListItem: some AppSchemaEntity](appschema/browserentity/readinglistitem.md)
+- [var readingListItem: some AppSchemaEntity](./browserentity/readinglistitem.md)
   An entity schema for a reading list item.
-- [var tab: some AppSchemaEntity](appschema/browserentity/tab.md)
+- [var tab: some AppSchemaEntity](./browserentity/tab.md)
   An entity schema for a tab.
-- [var tabGroup: some AppSchemaEntity](appschema/browserentity/tabgroup.md)
+- [var tabGroup: some AppSchemaEntity](./browserentity/tabgroup.md)
   An entity schema for a tab group.
-- [var window: some AppSchemaEntity](appschema/browserentity/window.md)
+- [var window: some AppSchemaEntity](./browserentity/window.md)
   An entity schema for a window.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Entity](appschema/entity.md)
+- [AppSchema.Entity](./entity.md)
 
 ## See Also
 
-- [var bookmark: some AppSchemaEntity](appschema/browserentity/bookmark.md)
+### Content and parameter types
+- [var bookmark: some AppSchemaEntity](./browserentity/bookmark.md)
   An entity schema for a bookmark.
-- [var readingListItem: some AppSchemaEntity](appschema/browserentity/readinglistitem.md)
+- [var readingListItem: some AppSchemaEntity](./browserentity/readinglistitem.md)
   An entity schema for a reading list item.
-- [var tab: some AppSchemaEntity](appschema/browserentity/tab.md)
+- [var tab: some AppSchemaEntity](./browserentity/tab.md)
   An entity schema for a tab.
-- [var tabGroup: some AppSchemaEntity](appschema/browserentity/tabgroup.md)
+- [var tabGroup: some AppSchemaEntity](./browserentity/tabgroup.md)
   An entity schema for a tab group.
-- [var window: some AppSchemaEntity](appschema/browserentity/window.md)
+- [var window: some AppSchemaEntity](./browserentity/window.md)
   An entity schema for a window.
 
 

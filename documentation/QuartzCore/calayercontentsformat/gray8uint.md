@@ -1,7 +1,8 @@
 # gray8Uint
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -17,10 +18,15 @@
 static let gray8Uint: CALayerContentsFormat
 ```
 
+```c
+extern CALayerContentsFormat const kCAContentsFormatGray8Uint;
+```
+
 ## See Also
 
-- [static let RGBA16Float: CALayerContentsFormat](calayercontentsformat/rgba16float.md)
-- [static let RGBA8Uint: CALayerContentsFormat](calayercontentsformat/rgba8uint.md)
+### Type Properties
+- [static let RGBA16Float: CALayerContentsFormat](./rgba16float.md)
+- [static let RGBA8Uint: CALayerContentsFormat](./rgba8uint.md)
 
 
 ---

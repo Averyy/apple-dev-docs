@@ -1,7 +1,8 @@
 # alert
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The app should display an alert.
 
@@ -14,11 +15,16 @@ The app should display an alert.
 static var alert: NSApplication.RemoteNotificationType { get }
 ```
 
+```c
+NSRemoteNotificationTypeAlert
+```
+
 ## See Also
 
-- [static var badge: NSApplication.RemoteNotificationType](nsapplication/remotenotificationtype/badge.md)
+### Interaction Types
+- [static var badge: NSApplication.RemoteNotificationType](./badge.md)
   The app should display a badge.
-- [static var sound: NSApplication.RemoteNotificationType](nsapplication/remotenotificationtype/sound.md)
+- [static var sound: NSApplication.RemoteNotificationType](./sound.md)
   The app should play a sound.
 
 

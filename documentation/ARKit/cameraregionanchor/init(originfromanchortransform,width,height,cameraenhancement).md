@@ -1,7 +1,8 @@
 # init(originFromAnchorTransform:width:height:cameraEnhancement:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a camera region anchor.
 

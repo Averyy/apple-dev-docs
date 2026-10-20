@@ -1,17 +1,22 @@
 # column(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the index of the column whose header lies under `aPoint` in the receiver, or –1 if no such column is found.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func column(at point: NSPoint) -> Int
+```
+
+```objc
+- (NSInteger) columnAtPoint:(NSPoint) point;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ func column(at point: NSPoint) -> Int
 
 ## See Also
 
-- [func headerRect(ofColumn: Int) -> NSRect](nstableheaderview/headerrect(ofcolumn:).md)
+### Utility methods
+- [func headerRect(ofColumn: Int) -> NSRect](./headerrect%28ofcolumn%29.md)
   Returns the rectangle containing the header tile for the column at `columnIndex`.
 
 

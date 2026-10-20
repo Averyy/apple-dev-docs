@@ -1,7 +1,8 @@
 # authorization()
 
 **Framework**: Security Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an authorization object initialized with a default environment, flags, and rights.
 
@@ -14,17 +15,22 @@ Returns an authorization object initialized with a default environment, flags, a
 class func authorization() -> Any!
 ```
 
-#### Return Value
+```objc
++ (id) authorization;
+```
+
+#### Return value
 
 The authorization object.
 
 ## See Also
 
-- [class func authorization(with: AuthorizationFlags, rights: UnsafePointer<AuthorizationRights>!, environment: UnsafePointer<AuthorizationEnvironment>!) -> Any!](sfauthorization/authorization(with:rights:environment:).md)
+### Allocating and initializing an authorization object
+- [class func authorization(with: AuthorizationFlags, rights: UnsafePointer<AuthorizationRights>!, environment: UnsafePointer<AuthorizationEnvironment>!) -> Any!](./authorization%28with,rights,environment%29.md)
   Returns an authorization object initialized with the specified flags, rights and environment.
-- [init!()](sfauthorization/init.md)
+- [init!()](./init%28%29.md)
   Initializes an authorization object with default environment, flags, and rights.
-- [init!(flags: AuthorizationFlags, rights: UnsafePointer<AuthorizationRights>!, environment: UnsafePointer<AuthorizationEnvironment>!)](sfauthorization/init(flags:rights:environment:).md)
+- [init!(flags: AuthorizationFlags, rights: UnsafePointer<AuthorizationRights>!, environment: UnsafePointer<AuthorizationEnvironment>!)](./init%28flags,rights,environment%29.md)
   Initializes an authorization object with the specified flags, rights, and environment.
 
 

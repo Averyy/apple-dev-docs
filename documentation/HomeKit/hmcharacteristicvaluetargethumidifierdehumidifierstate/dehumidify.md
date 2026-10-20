@@ -1,7 +1,8 @@
 # HMCharacteristicValueTargetHumidifierDehumidifierState.dehumidify
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory should remove water from the air.
 
@@ -19,11 +20,16 @@ The accessory should remove water from the air.
 case dehumidify
 ```
 
+```c
+HMCharacteristicValueTargetHumidifierDehumidifierStateDehumidify
+```
+
 ## See Also
 
-- [HMCharacteristicValueTargetHumidifierDehumidifierState.automatic](hmcharacteristicvaluetargethumidifierdehumidifierstate/automatic.md)
+### Target States
+- [HMCharacteristicValueTargetHumidifierDehumidifierState.automatic](./automatic.md)
   The accessory should decide whether to add or remove water to or from the air.
-- [HMCharacteristicValueTargetHumidifierDehumidifierState.humidify](hmcharacteristicvaluetargethumidifierdehumidifierstate/humidify.md)
+- [HMCharacteristicValueTargetHumidifierDehumidifierState.humidify](./humidify.md)
   The accessory should add water to the air.
 
 

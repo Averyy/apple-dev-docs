@@ -1,7 +1,8 @@
 # hashValue
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hash value.
 
@@ -20,6 +21,8 @@ The hash value.
 var hashValue: Int { get }
 ```
 
+Available when `Key` conforms to `Hashable` and `Value` conforms to `Hashable`.
+
 #### Discussion
 
 Hash values are not guaranteed to be equal across different executions of your program. Do not save hash values to use during a future execution.
@@ -28,7 +31,8 @@ Hash values are not guaranteed to be equal across different executions of your p
 
 ## See Also
 
-- [init(dictionaryLiteral: (Key, Value)...)](dictionary/init(dictionaryliteral:).md)
+### Infrequently Used Functionality
+- [init(dictionaryLiteral: (Key, Value)...)](./init%28dictionaryliteral%29.md)
   Creates a dictionary initialized with a dictionary literal.
 
 

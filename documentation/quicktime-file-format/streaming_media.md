@@ -1,6 +1,7 @@
 # Streaming media
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Store streaming data in a streaming media track for QuickTime movies.
 
@@ -10,7 +11,7 @@ QuickTime movies store streaming data in a streaming media track. This media has
 
 #### Streaming Media Sample Description
 
-The streaming media sample description contains information that defines how to interpret streaming media data. This sample description is based on the standard sample description header, as described in [`Sample table atom`](sample_table_atom.md).
+The streaming media sample description contains information that defines how to interpret streaming media data. This sample description is based on the standard sample description header, as described in [`Sample table atom`](./sample_table_atom.md).
 
 The streaming media sample description is documented in the QuickTime header file `QTSMovie.h`, as follows:
 
@@ -35,19 +36,20 @@ The sample format depends on the `dataFormat` field of the `QTSSampleDescription
 
 If `'rtsp'`, the sample can be just an rtsp URL. It can also be any value that you can put in a `.rtsp` file, as defined at
 
-[`http://streaming.apple.com/qtstreaming/documentation/userdocs/rtsptags.htm`](https://developer.apple.comhttp://streaming.apple.com/qtstreaming/documentation/userdocs/rtsptags.htm)
+[http://streaming.apple.com/qtstreaming/documentation/userdocs/rtsptags.htm](http://streaming.apple.com/qtstreaming/documentation/userdocs/rtsptags.htm)
 
 If `'sdp '`, then the sample is an SDP file. This would be used to receive a multicast broadcast.
 
 ## See Also
 
-- [Modifier tracks](modifier_tracks.md)
+### Track features
+- [Modifier tracks](./modifier_tracks.md)
   Create dynamic movies with modifier tracks that send data to another track.
-- [Creating movies with modifier tracks](creating_movies_with_modifier_tracks.md)
+- [Creating movies with modifier tracks](./creating_movies_with_modifier_tracks.md)
   Send data to another media handler instead of presenting media directly.
-- [Track references](track_references.md)
+- [Track references](./track_references.md)
   Relate a movie’s tracks to one another with track references.
-- [Chapter lists](chapter_lists.md)
+- [Chapter lists](./chapter_lists.md)
   A chapter list provides a set of named entry points into a movie.
 
 

@@ -1,17 +1,22 @@
 # identifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the receiver’s optional identifier object to `identifier`.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var identifier: Any? { get set }
+```
+
+```objc
+@property (strong, nullable) id identifier;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ To customize how your application works with tabs, you can specify an identifier
 
 ## See Also
 
-- [init(identifier: Any?)](nstabviewitem/init(identifier:).md)
+### Related Documentation
+- [init(identifier: Any?)](./init%28identifier%29.md)
   Performs default initialization for the receiver.
 
 

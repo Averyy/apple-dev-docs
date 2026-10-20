@@ -1,7 +1,8 @@
 # insert(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the given element in the set if it is not already present.
 
@@ -20,6 +21,8 @@ Inserts the given element in the set if it is not already present.
 @discardableResult
 mutating func insert(_ newMember: Element) -> (inserted: Bool, memberAfterInsert: Element)
 ```
+
+Available when `Element` conforms to `Hashable`.
 
 #### Return Value
 
@@ -53,11 +56,12 @@ print(classDays)
 
 ## See Also
 
-- [func insert<ConcreteElement>(ConcreteElement) -> (inserted: Bool, memberAfterInsert: ConcreteElement)](set/insert(_:)-yar4.md)
-- [func update(with: Element) -> Element?](set/update(with:)-2n6tk.md)
+### Adding Elements
+- [func insert<ConcreteElement>(ConcreteElement) -> (inserted: Bool, memberAfterInsert: ConcreteElement)](./insert%28_%29-yar4.md)
+- [func update(with: Element) -> Element?](./update%28with%29-2n6tk.md)
   Inserts the given element into the set unconditionally.
-- [func update<ConcreteElement>(with: ConcreteElement) -> ConcreteElement?](set/update(with:)-7r2g.md)
-- [func reserveCapacity(Int)](set/reservecapacity(_:).md)
+- [func update<ConcreteElement>(with: ConcreteElement) -> ConcreteElement?](./update%28with%29-7r2g.md)
+- [func reserveCapacity(Int)](./reservecapacity%28_%29.md)
   Reserves enough space to store the specified number of elements.
 
 

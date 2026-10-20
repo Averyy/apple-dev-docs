@@ -1,7 +1,8 @@
 # kSecAttrAuthenticationTypeDefault
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The default authentication type.
 
@@ -18,6 +19,10 @@ The default authentication type.
 
 ```swift
 let kSecAttrAuthenticationTypeDefault: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrAuthenticationTypeDefault;
 ```
 
 

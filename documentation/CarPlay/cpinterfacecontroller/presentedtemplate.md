@@ -1,7 +1,8 @@
 # presentedTemplate
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The interface controller’s current modal template.
 
@@ -16,11 +17,16 @@ The interface controller’s current modal template.
 var presentedTemplate: CPTemplate? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CPTemplate * presentedTemplate;
+```
+
 ## See Also
 
-- [func presentTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/presenttemplate(_:animated:completion:).md)
+### Displaying Templates Modally
+- [func presentTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./presenttemplate%28_,animated,completion%29.md)
   Presents a template modally.
-- [func dismissTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/dismisstemplate(animated:completion:).md)
+- [func dismissTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](./dismisstemplate%28animated,completion%29.md)
   Dismisses a modal template.
 
 

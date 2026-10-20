@@ -1,7 +1,8 @@
 # AudioValueRange
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a continuous range of values.
 
@@ -20,26 +21,31 @@ A structure that represents a continuous range of values.
 struct AudioValueRange
 ```
 
+```c
+struct AudioValueRange;
+```
+
 ## Topics
 
 ### Inspecting a range
-- [var mMaximum: Float64](audiovaluerange/mmaximum.md)
+- [var mMaximum: Float64](./audiovaluerange/mmaximum.md)
   The maximum value.
-- [var mMinimum: Float64](audiovaluerange/mminimum.md)
+- [var mMinimum: Float64](./audiovaluerange/mminimum.md)
   The minimum value.
 ### Initializers
-- [init()](audiovaluerange/init.md)
-- [init(mMinimum: Float64, mMaximum: Float64)](audiovaluerange/init(mminimum:mmaximum:).md)
+- [init()](./audiovaluerange/init%28%29.md)
+- [init(mMinimum: Float64, mMaximum: Float64)](./audiovaluerange/init%28mminimum,mmaximum%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AudioValueTranslation](audiovaluetranslation.md)
+### Values
+- [struct AudioValueTranslation](./audiovaluetranslation.md)
   A structure that stores buffers to use in translation operations.
 
 

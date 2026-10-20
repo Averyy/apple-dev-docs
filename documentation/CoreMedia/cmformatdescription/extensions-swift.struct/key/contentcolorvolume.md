@@ -1,9 +1,10 @@
 # contentColorVolume
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Matches payload of ITU-T-H.265:11/2019, D.2.40 Content Colour Volume SEI message. The value of this key is of [`CMFormatDescription.Extensions.Value.ContentColorVolume`](cmformatdescription/extensions-swift.struct/value/contentcolorvolume.md) type.
+Matches payload of ITU-T-H.265:11/2019, D.2.40 Content Colour Volume SEI message. The value of this key is of [`CMFormatDescription.Extensions.Value.ContentColorVolume`](../value/contentcolorvolume.md) type.
 
 **Availability**:
 - iOS 17.0+

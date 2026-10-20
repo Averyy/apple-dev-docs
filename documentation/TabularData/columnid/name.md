@@ -1,7 +1,8 @@
 # name
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the column the identifier represents.
 

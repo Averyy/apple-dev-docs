@@ -1,7 +1,8 @@
 # documentRegion
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A locale region that’s relevant to the scanned string.
 
@@ -28,11 +29,12 @@ Set `documentRegion` to the region relevant to the scanned string, if any.
 
 ## See Also
 
-- [var documentDate: Date?](datadetector/options/documentdate.md)
+### Hints you can provide to add more context for the matching process
+- [var documentDate: Date?](./documentdate.md)
   The creation date of the scanned string.
-- [var documentLanguageCode: Locale.LanguageCode?](datadetector/options/documentlanguagecode.md)
+- [var documentLanguageCode: Locale.LanguageCode?](./documentlanguagecode.md)
   An optional value that represents the language code of a specific locale.
-- [var documentTimeZone: TimeZone?](datadetector/options/documenttimezone.md)
+- [var documentTimeZone: TimeZone?](./documenttimezone.md)
   A date that represents the date of the scanned string.
 
 

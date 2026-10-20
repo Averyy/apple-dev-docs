@@ -1,7 +1,8 @@
 # init(album:startingAt:)
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a playback queue with an album and a specific track for the player to start playback.
 

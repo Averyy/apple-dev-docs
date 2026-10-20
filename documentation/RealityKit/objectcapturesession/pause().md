@@ -1,7 +1,8 @@
 # pause()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses the automatic capture and other resource-intense algorithms.
 
@@ -22,15 +23,16 @@ Call this when object capture view is not visible, such as when a help screen is
 
 ## See Also
 
-- [func cancel()](objectcapturesession/cancel.md)
+### Controlling the session
+- [func cancel()](./cancel%28%29.md)
   Requests that the capture session be canceled.
-- [func finish()](objectcapturesession/finish.md)
+- [func finish()](./finish%28%29.md)
   Requests that the capture session be stopped and all data saved.
-- [func requestImageCapture()](objectcapturesession/requestimagecapture.md)
+- [func requestImageCapture()](./requestimagecapture%28%29.md)
   Requests a manual image capture.
-- [func resume()](objectcapturesession/resume.md)
-  Resumes object tracking algorithms after [`pause()`](objectcapturesession/pause().md) is called.
-- [func startCapturing()](objectcapturesession/startcapturing.md)
+- [func resume()](./resume%28%29.md)
+  Resumes object tracking algorithms after [`pause()`](./pause%28%29.md) is called.
+- [func startCapturing()](./startcapturing%28%29.md)
   Begins taking images for object capture.
 
 

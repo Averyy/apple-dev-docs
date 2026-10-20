@@ -1,18 +1,19 @@
 # SCNParticleBirthDirection
 
 **Framework**: SceneKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Options for the initial direction of each emitted particle, used by the [`birthDirection`](scnparticlesystem/birthdirection.md) property.
+Options for the initial direction of each emitted particle, used by the [`birthDirection`](./scnparticlesystem/birthdirection.md) property.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,41 +21,46 @@ Options for the initial direction of each emitted particle, used by the [`birthD
 enum SCNParticleBirthDirection
 ```
 
+```c
+enum SCNParticleBirthDirection : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [SCNParticleBirthDirection.constant](scnparticlebirthdirection/constant.md)
+- [SCNParticleBirthDirection.constant](./scnparticlebirthdirection/constant.md)
   The emitting direction is the same for all particles.
-- [SCNParticleBirthDirection.surfaceNormal](scnparticlebirthdirection/surfacenormal.md)
+- [SCNParticleBirthDirection.surfaceNormal](./scnparticlebirthdirection/surfacenormal.md)
   The emitting direction for each particle is along the surface normal vector at the point where the particle is emitted.
-- [SCNParticleBirthDirection.random](scnparticlebirthdirection/random.md)
+- [SCNParticleBirthDirection.random](./scnparticlebirthdirection/random.md)
   SceneKit randomizes the emitting direction for each particle.
 ### Initializers
-- [init?(rawValue: Int)](scnparticlebirthdirection/init(rawvalue:).md)
+- [init?(rawValue: Int)](./scnparticlebirthdirection/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var emitterShape: SCNGeometry?](scnparticlesystem/emittershape.md)
+### Managing Particle Emission Locations
+- [var emitterShape: SCNGeometry?](./scnparticlesystem/emittershape.md)
   The shape of the region of space where the system spawns new particles.
-- [var birthLocation: SCNParticleBirthLocation](scnparticlesystem/birthlocation.md)
+- [var birthLocation: SCNParticleBirthLocation](./scnparticlesystem/birthlocation.md)
   The possible locations for newly spawned particles, relative to the emitter shape.
-- [enum SCNParticleBirthLocation](scnparticlebirthlocation.md)
-  Options for the initial location of each emitted particle, used by the [`birthLocation`](scnparticlesystem/birthlocation.md) property.
-- [var birthDirection: SCNParticleBirthDirection](scnparticlesystem/birthdirection.md)
+- [enum SCNParticleBirthLocation](./scnparticlebirthlocation.md)
+  Options for the initial location of each emitted particle, used by the [`birthLocation`](./scnparticlesystem/birthlocation.md) property.
+- [var birthDirection: SCNParticleBirthDirection](./scnparticlesystem/birthdirection.md)
   The possible initial directions for newly spawned particles, relative to the emitter shape.
-- [var emittingDirection: SCNVector3](scnparticlesystem/emittingdirection.md)
+- [var emittingDirection: SCNVector3](./scnparticlesystem/emittingdirection.md)
   The initial direction for newly spawned particles. Animatable.
-- [var spreadingAngle: CGFloat](scnparticlesystem/spreadingangle.md)
+- [var spreadingAngle: CGFloat](./scnparticlesystem/spreadingangle.md)
   The range, in degrees, of randomized initial particle directions. Animatable.
 
 

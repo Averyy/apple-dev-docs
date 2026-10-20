@@ -1,7 +1,8 @@
 # GameCenterAppVersion.Relationships.AppStoreVersion.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related App Store version resource.
 
@@ -10,14 +11,14 @@ The type and ID of a related App Store version resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAppVersion.Relationships.AppStoreVersion.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersions`
 
 
 ---

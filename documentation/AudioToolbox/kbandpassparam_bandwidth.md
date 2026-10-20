@@ -1,15 +1,16 @@
 # kBandpassParam_Bandwidth
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kBandpassParam_Bandwidth: AudioUnitParameterID { get }
 ```
 
+```c
+kBandpassParam_Bandwidth
+```
+
 ## See Also
 
-- [var kBandpassParam_CenterFrequency: AudioUnitParameterID](kbandpassparam_centerfrequency.md)
+### Constants
+- [var kBandpassParam_CenterFrequency: AudioUnitParameterID](./kbandpassparam_centerfrequency.md)
 
 
 ---

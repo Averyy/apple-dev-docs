@@ -1,7 +1,8 @@
 # MLHandActionClassifier.ModelParameters.ModelAlgorithmType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The hand action classifier training algorithm options.
 
@@ -21,22 +22,23 @@ enum ModelAlgorithmType
 ## Topics
 
 ### Choosing an algorithm type
-- [MLHandActionClassifier.ModelParameters.ModelAlgorithmType.gcn](mlhandactionclassifier/modelparameters-swift.struct/modelalgorithmtype/gcn.md)
+- [MLHandActionClassifier.ModelParameters.ModelAlgorithmType.gcn](./modelalgorithmtype/gcn.md)
   Selects the graph convolutional neural-network algorithm for a hand action classifier.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLHandActionClassifier.VideoAugmentationOptions](mlhandactionclassifier/videoaugmentationoptions.md)
+### Parameter supporting types
+- [MLHandActionClassifier.VideoAugmentationOptions](../videoaugmentationoptions.md)
   Options a hand action classification training session can use to generate additional training data from the videos you provide.
-- [MLHandActionClassifier.ModelParameters.ValidationData](mlhandactionclassifier/modelparameters-swift.struct/validationdata.md)
+- [MLHandActionClassifier.ModelParameters.ValidationData](./validationdata.md)
   A dataset a hand action classifier task uses to validate the model during a training session.
 
 

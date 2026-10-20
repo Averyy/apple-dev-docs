@@ -1,7 +1,8 @@
 # vertexBufferCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of buffers this descriptor uses.
 

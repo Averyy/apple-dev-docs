@@ -1,7 +1,8 @@
 # updatePropertiesIfNeeded()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forces an immediate properties update for this view controller and its view, including any view controllers and views in this subtree.
 
@@ -18,13 +19,18 @@ Forces an immediate properties update for this view controller and its view, inc
 func updatePropertiesIfNeeded()
 ```
 
+```objc
+- (void) updatePropertiesIfNeeded;
+```
+
 ## See Also
 
-- [UIViewController.ViewLoading](uiviewcontroller/viewloading.md)
+### Managing the view’s properties
+- [UIViewController.ViewLoading](./viewloading.md)
   A property wrapper that loads the view controller’s view before accessing the property.
-- [func updateProperties()](uiviewcontroller/updateproperties.md)
+- [func updateProperties()](./updateproperties%28%29.md)
   Configures the view controller’s content and styling properties.
-- [func setNeedsUpdateProperties()](uiviewcontroller/setneedsupdateproperties.md)
+- [func setNeedsUpdateProperties()](./setneedsupdateproperties%28%29.md)
   Call to manually request a properties update for the view controller. Multiple requests may be coalesced into a single update alongside the next layout pass.
 
 

@@ -1,7 +1,8 @@
 # kLSNotInitializedErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Not currently used.
 
@@ -17,19 +18,20 @@ var kLSNotInitializedErr: OSStatus { get }
 
 ## See Also
 
-- [var kLSUnknownTypeErr: OSStatus](klsunknowntypeerr.md)
+### Deprecated Result Codes
+- [var kLSUnknownTypeErr: OSStatus](./klsunknowntypeerr.md)
   Not currently used.
-- [var kLSDataTooOldErr: OSStatus](klsdatatooolderr.md)
+- [var kLSDataTooOldErr: OSStatus](./klsdatatooolderr.md)
   Not currently used.
-- [var kLSNotRegisteredErr: OSStatus](klsnotregisterederr.md)
+- [var kLSNotRegisteredErr: OSStatus](./klsnotregisterederr.md)
   Not currently used.
-- [var kLSAppDoesNotClaimTypeErr: OSStatus](klsappdoesnotclaimtypeerr.md)
+- [var kLSAppDoesNotClaimTypeErr: OSStatus](./klsappdoesnotclaimtypeerr.md)
   Not currently used.
-- [var kLSAppDoesNotSupportSchemeWarning: OSStatus](klsappdoesnotsupportschemewarning.md)
+- [var kLSAppDoesNotSupportSchemeWarning: OSStatus](./klsappdoesnotsupportschemewarning.md)
   Not currently used.
-- [var kLSNoRegistrationInfoErr: OSStatus](klsnoregistrationinfoerr.md)
+- [var kLSNoRegistrationInfoErr: OSStatus](./klsnoregistrationinfoerr.md)
   Not currently used.
-- [var kLSNoClassicEnvironmentErr: OSStatus](klsnoclassicenvironmenterr.md)
+- [var kLSNoClassicEnvironmentErr: OSStatus](./klsnoclassicenvironmenterr.md)
   Not currently used.
 
 

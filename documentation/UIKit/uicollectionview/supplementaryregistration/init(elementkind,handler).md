@@ -1,7 +1,8 @@
 # init(elementKind:handler:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a supplementary registration for the specified element kind with a registration handler.
 
@@ -10,7 +11,7 @@ Creates a supplementary registration for the specified element kind with a regis
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,10 @@ init(elementKind: String, handler: @escaping UICollectionView.SupplementaryRegis
 
 ## See Also
 
-- [init(supplementaryNib: UINib, elementKind: String, handler: UICollectionView.SupplementaryRegistration<Supplementary>.Handler)](uicollectionview/supplementaryregistration/init(supplementarynib:elementkind:handler:).md)
+### Creating a supplementary registration
+- [init(supplementaryNib: UINib, elementKind: String, handler: UICollectionView.SupplementaryRegistration<Supplementary>.Handler)](./init%28supplementarynib,elementkind,handler%29.md)
   Creates a supplementary registration for the specified element kind with a registration handler and nib file.
-- [UICollectionView.SupplementaryRegistration.Handler](uicollectionview/supplementaryregistration/handler.md)
+- [UICollectionView.SupplementaryRegistration.Handler](./handler.md)
   A closure that handles the supplementary view registration and configuration.
 
 

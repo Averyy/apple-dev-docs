@@ -1,7 +1,8 @@
 # insert(_:for:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Insert the mutable view for the value named `name`.
 
@@ -25,9 +26,10 @@ mutating func insert(_ mutableRawView: consuming NDArray.MutableRawView, for nam
 
 ## See Also
 
-- [func insert(inout some InferenceValue.MutableViewRepresentable & ~Copyable, for: String)](inferencefunction/mutableviews/insert(_:for:)-1b2yx.md)
+### Adding views
+- [func insert(inout some InferenceValue.MutableViewRepresentable & ~Copyable, for: String)](./insert%28_,for%29-1b2yx.md)
   Insert a new value to the output views.
-- [func insert<Element>(consuming NDArray.MutableView<Element>, for: String)](inferencefunction/mutableviews/insert(_:for:)-8ossp.md)
+- [func insert<Element>(consuming NDArray.MutableView<Element>, for: String)](./insert%28_,for%29-8ossp.md)
   Insert the mutable view to be used as the ndArray value named `name`.
 
 

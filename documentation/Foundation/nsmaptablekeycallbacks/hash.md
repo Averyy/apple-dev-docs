@@ -1,7 +1,8 @@
 # hash
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Points to the function which must produce hash code for key elements of the map table. If `NULL`, the pointer value is used as the hash code. Second parameter is the element for which hash code should be produced.
 
@@ -18,6 +19,10 @@ Points to the function which must produce hash code for key elements of the map 
 
 ```swift
 var hash: ((NSMapTable<AnyObject, AnyObject>, UnsafeRawPointer) -> Int)?
+```
+
+```c
+unsigned long (*)(NSMapTable *, const void *) hash;
 ```
 
 

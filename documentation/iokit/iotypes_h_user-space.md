@@ -1,10 +1,11 @@
 # IOTypes.h User-Space
 
-**Framework**: IOKit
+**Framework**: IOKit  
+**Role**: API Collection
 
 #### Overview
 
-##### 1674673
+##### Included Headers
 
 - <mach/message.h>
 - <mach/vm_types.h>
@@ -16,7 +17,7 @@
 ## Topics
 
 ### Constants
-- [Scale Factors](iotypes_h_user-space/1553154-scale_factors.md)
+- [Scale Factors](./iotypes_h_user-space/api-1553154-scale_factors.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # CMFallDetectionEvent.UserResolution
 
 **Framework**: Core Motion  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 User resolutions for fall detection events.
 
@@ -14,6 +15,10 @@ User resolutions for fall detection events.
 enum UserResolution
 ```
 
+```c
+enum CMFallDetectionEventUserResolution : NSInteger;
+```
+
 #### Overview
 
 The resolution of an event reflects the user’s action in response to the fall detection notification. For example, the user might tap a button to respond inside the notification, or press the digital crown to dismiss the notification.
@@ -21,30 +26,31 @@ The resolution of an event reflects the user’s action in response to the fall 
 ## Topics
 
 ### Resolutions
-- [CMFallDetectionEvent.UserResolution.confirmed](cmfalldetectionevent/userresolution/confirmed.md)
+- [CMFallDetectionEvent.UserResolution.confirmed](./userresolution/confirmed.md)
   The user confirmed the event.
-- [CMFallDetectionEvent.UserResolution.dismissed](cmfalldetectionevent/userresolution/dismissed.md)
+- [CMFallDetectionEvent.UserResolution.dismissed](./userresolution/dismissed.md)
   The user dismissed the fall event alert, but didn’t explicitly confirm or reject the event.
-- [CMFallDetectionEvent.UserResolution.rejected](cmfalldetectionevent/userresolution/rejected.md)
+- [CMFallDetectionEvent.UserResolution.rejected](./userresolution/rejected.md)
   The user rejected the fall event.
-- [CMFallDetectionEvent.UserResolution.unresponsive](cmfalldetectionevent/userresolution/unresponsive.md)
+- [CMFallDetectionEvent.UserResolution.unresponsive](./userresolution/unresponsive.md)
   The user didn’t respond to the fall event and the system hasn’t detected recovery motions.
 ### Initializers
-- [init?(rawValue: Int)](cmfalldetectionevent/userresolution/init(rawvalue:).md)
+- [init?(rawValue: Int)](./userresolution/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var resolution: CMFallDetectionEvent.UserResolution](cmfalldetectionevent/resolution.md)
+### Accessing Fall Data
+- [var resolution: CMFallDetectionEvent.UserResolution](./resolution.md)
   The event’s resolution.
 
 

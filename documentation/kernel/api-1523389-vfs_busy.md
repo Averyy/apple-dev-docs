@@ -1,7 +1,8 @@
 # vfs_busy
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 "Busy" a mountpoint.
 
@@ -10,11 +11,11 @@
 
 ## Declaration
 
-```swift
+```c
 int vfs_busy(mount_t mp, int flags);
 ```
 
-#### Return_value
+#### Return Value
 
 0 for success, with a lock held; an error code otherwise, with no lock held.
 

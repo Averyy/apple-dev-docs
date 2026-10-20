@@ -1,7 +1,8 @@
 # init(median:interQuartileRange:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a robust scaling transformer.
 

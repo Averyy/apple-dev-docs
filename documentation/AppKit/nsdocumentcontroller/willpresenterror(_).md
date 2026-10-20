@@ -1,17 +1,22 @@
 # willPresentError(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates an error condition and provides the opportunity to return the same or a different error.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func willPresentError(_ error: any Error) -> any Error
+```
+
+```objc
+- (NSError *) willPresentError:(NSError *) error;
 ```
 
 #### Discussion
@@ -26,9 +31,10 @@ You can override this method to customize the presentation of errors by examinin
 
 ## See Also
 
-- [func presentError(any Error) -> Bool](nsdocumentcontroller/presenterror(_:).md)
+### Handling Errors
+- [func presentError(any Error) -> Bool](./presenterror%28_%29.md)
   Presents an error alert to the user as a modal panel.
-- [func presentError(any Error, modalFor: NSWindow, delegate: Any?, didPresent: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsdocumentcontroller/presenterror(_:modalfor:delegate:didpresent:contextinfo:).md)
+- [func presentError(any Error, modalFor: NSWindow, delegate: Any?, didPresent: Selector?, contextInfo: UnsafeMutableRawPointer?)](./presenterror%28_,modalfor,delegate,didpresent,contextinfo%29.md)
   Presents an error alert to the user as a modal panel.
 
 

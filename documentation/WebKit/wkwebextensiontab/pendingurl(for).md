@@ -1,7 +1,8 @@
 # pendingURL(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the pending URL of the tab is needed.
 
@@ -16,6 +17,10 @@ Called when the pending URL of the tab is needed.
 
 ```swift
 optional func pendingURL(for context: WKWebExtensionContext) -> URL?
+```
+
+```objc
+- (NSURL *) pendingURLForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
 #### Discussion

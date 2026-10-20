@@ -1,9 +1,10 @@
 # kSecImportExportAccess
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-An initial access control list represented by a [`SecAccess`](secaccess.md) object.
+An initial access control list represented by a [`SecAccess`](./secaccess.md) object.
 
 **Availability**:
 - macOS 10.7+
@@ -12,6 +13,10 @@ An initial access control list represented by a [`SecAccess`](secaccess.md) obje
 
 ```swift
 let kSecImportExportAccess: CFString
+```
+
+```c
+extern CFStringRef const kSecImportExportAccess;
 ```
 
 

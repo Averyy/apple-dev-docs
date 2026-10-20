@@ -1,7 +1,8 @@
 # minimumDeploymentTarget
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum deployment target to serialize the executable.
 
@@ -17,6 +18,10 @@ The minimum deployment target to serialize the executable.
 
 ```swift
 var minimumDeploymentTarget: String { get set }
+```
+
+```objc
+@property (atomic, copy, readwrite) NSString * minimumDeploymentTarget;
 ```
 
 #### Discussion

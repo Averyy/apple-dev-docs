@@ -1,12 +1,15 @@
 # TVMediaItem.HighlightGroup
 
 **Framework**: TVMLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for groups of highlights for a media item.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,37 +17,42 @@ A container for groups of highlights for a media item.
 class HighlightGroup
 ```
 
+```objc
+@interface TVHighlightGroup : NSObject
+```
+
 ## Topics
 
 ### Accessing the Highlights
-- [var localizedName: String?](tvmediaitem/highlightgroup/localizedname.md)
+- [var localizedName: String?](./highlightgroup/localizedname.md)
   The name of a highlight group.
-- [var highlights: [TVMediaItem.Highlight]](tvmediaitem/highlightgroup/highlights.md)
+- [var highlights: [TVMediaItem.Highlight]](./highlightgroup/highlights.md)
   An array of the individual highlights that make up a group.
-- [TVMediaItem.Highlight](tvmediaitem/highlight.md)
+- [TVMediaItem.Highlight](./highlight.md)
   An object that describes a media item highlight.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var highlightGroups: [TVMediaItem.HighlightGroup]](tvmediaitem/highlightgroups.md)
+### Setting Timing Options
+- [var highlightGroups: [TVMediaItem.HighlightGroup]](./highlightgroups.md)
   An array containing groups of individual highlights in a media item.
-- [var interstitials: [TVMediaItem.TimeRange]](tvmediaitem/interstitials.md)
+- [var interstitials: [TVMediaItem.TimeRange]](./interstitials.md)
   An array of time intervals that indicate where to insert media items into another, single media item.
-- [TVMediaItem.TimeRange](tvmediaitem/timerange.md)
+- [TVMediaItem.TimeRange](./timerange.md)
   An object that defines a time range in a media item.
-- [var resumeTime: TimeInterval](tvmediaitem/resumetime.md)
+- [var resumeTime: TimeInterval](./resumetime.md)
   The number of seconds from the beginning of a media item to the point where that media item begins playing.
 
 

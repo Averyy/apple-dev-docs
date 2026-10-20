@@ -1,7 +1,8 @@
 # animations
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of `CAAnimation` objects to be evaluated in the time space of the receiver.
 
@@ -19,13 +20,18 @@ An array of `CAAnimation` objects to be evaluated in the time space of the recei
 var animations: [CAAnimation]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<CAAnimation *> * animations;
+```
+
 #### Discussion
 
 The animations run concurrently in the receiver’s time space.
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
 
 
 ---

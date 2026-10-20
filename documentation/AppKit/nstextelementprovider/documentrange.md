@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Describes the starting and ending locations for the document.
@@ -15,9 +16,13 @@ Describes the starting and ending locations for the document.
 var documentRange: NSTextRange { get }
 ```
 
+```objc
+@property (strong, readonly) NSTextRange * documentRange;
+```
+
 #### Discussion
 
-The subclass could use its own implementation of a location object conforming to [`NSTextRange`](nstextrange.md).
+The subclass could use its own implementation of a location object conforming to [`NSTextRange`](../nstextrange.md).
 
 
 ---

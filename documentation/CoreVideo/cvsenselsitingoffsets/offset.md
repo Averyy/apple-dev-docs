@@ -1,7 +1,8 @@
 # CVSenselSitingOffsets.Offset
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Siting offset of a component, relative to pixel center.
 
@@ -27,20 +28,20 @@ A positive offset value indicates that the sensel/component lies to the right of
 ## Topics
 
 ### Initializers
-- [init(horizontal: Float32, vertical: Float32)](cvsenselsitingoffsets/offset/init(horizontal:vertical:).md)
+- [init(horizontal: Float32, vertical: Float32)](./offset/init%28horizontal,vertical%29.md)
 ### Instance Properties
-- [var horizontal: Float32](cvsenselsitingoffsets/offset/horizontal.md)
-- [var vertical: Float32](cvsenselsitingoffsets/offset/vertical.md)
+- [var horizontal: Float32](./offset/horizontal.md)
+- [var vertical: Float32](./offset/vertical.md)
 ### Type Properties
-- [static let zero: CVSenselSitingOffsets.Offset](cvsenselsitingoffsets/offset/zero.md)
+- [static let zero: CVSenselSitingOffsets.Offset](./offset/zero.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

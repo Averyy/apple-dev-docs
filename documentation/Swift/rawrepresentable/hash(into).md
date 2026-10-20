@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 func hash(into hasher: inout Hasher)
 ```
+
+Available when `Self` conforms to `Hashable` and `RawValue` conforms to `Hashable`.
 
 
 ---

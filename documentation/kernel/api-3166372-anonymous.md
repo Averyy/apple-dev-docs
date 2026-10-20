@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOUSBConfigurationDescriptorAttributeRemoteWakeCapable](3166372-anonymous/kiousbconfigurationdescriptorattributeremotewakecapable.md)
-- [kIOUSBConfigurationDescriptorAttributeSelfPowered](3166372-anonymous/kiousbconfigurationdescriptorattributeselfpowered.md)
+- [kIOUSBConfigurationDescriptorAttributeRemoteWakeCapable](./api-3166372-anonymous/kiousbconfigurationdescriptorattributeremotewakecapable.md)
+- [kIOUSBConfigurationDescriptorAttributeSelfPowered](./api-3166372-anonymous/kiousbconfigurationdescriptorattributeselfpowered.md)
 
 
 ---

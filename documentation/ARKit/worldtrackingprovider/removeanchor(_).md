@@ -1,7 +1,8 @@
 # removeAnchor(_:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a world anchor from a world-tracking provider.
 
@@ -20,7 +21,8 @@ final func removeAnchor(_ worldAnchor: WorldAnchor) async throws
 
 ## See Also
 
-- [func removeAnchor(forID: UUID) async throws](worldtrackingprovider/removeanchor(forid:).md)
+### Stopping object tracking
+- [func removeAnchor(forID: UUID) async throws](./removeanchor%28forid%29.md)
   Removes a world anchor from a world-tracking provider based on its ID.
 
 

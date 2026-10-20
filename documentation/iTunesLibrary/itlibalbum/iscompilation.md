@@ -1,7 +1,8 @@
 # isCompilation
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the album is a compilation.
 
@@ -15,33 +16,38 @@ A Boolean value that indicates whether the album is a compilation.
 var isCompilation: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, getter=isCompilation) BOOL compilation;
+```
+
 #### Discussion
 
 A *compilation* is an album with tracks from multiple sources.
 
 ## See Also
 
-- [var trackCount: Int](itlibalbum/trackcount.md)
+### Getting Album Info
+- [var trackCount: Int](./trackcount.md)
   The number of tracks in the album.
-- [var title: String?](itlibalbum/title.md)
+- [var title: String?](./title.md)
   The title of the album.
-- [var sortTitle: String?](itlibalbum/sorttitle.md)
+- [var sortTitle: String?](./sorttitle.md)
   The title to use when sorting by album title.
-- [var rating: Int](itlibalbum/rating.md)
+- [var rating: Int](./rating.md)
   The rating of the album.
-- [var isRatingComputed: Bool](itlibalbum/isratingcomputed.md)
+- [var isRatingComputed: Bool](./isratingcomputed.md)
   A Boolean value that indicates whether the system computes the rating of the album using the ratings of individual tracks in the album.
-- [var isGapless: Bool](itlibalbum/isgapless.md)
+- [var isGapless: Bool](./isgapless.md)
   A Boolean value that indicates whether the album is gapless.
-- [var discNumber: Int](itlibalbum/discnumber.md)
+- [var discNumber: Int](./discnumber.md)
   The index (1, 2, 3, and so on) of the disc within an album that’s a multiple-disc set.
-- [var discCount: Int](itlibalbum/disccount.md)
+- [var discCount: Int](./disccount.md)
   The number of discs in a multiple-disc set.
-- [var albumArtist: String?](itlibalbum/albumartist.md)
+- [var albumArtist: String?](./albumartist.md)
   The name of the artist iTunes associates with the album.
-- [var sortAlbumArtist: String?](itlibalbum/sortalbumartist.md)
+- [var sortAlbumArtist: String?](./sortalbumartist.md)
   The name to use when sorting by album artist.
-- [var persistentID: NSNumber](itlibalbum/persistentid.md)
+- [var persistentID: NSNumber](./persistentid.md)
   The unique identifier of the album.
 
 

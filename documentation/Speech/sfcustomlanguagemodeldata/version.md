@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -19,8 +20,9 @@ final let version: String
 
 ## See Also
 
-- [let identifier: String](sfcustomlanguagemodeldata/identifier.md)
-- [let locale: Locale](sfcustomlanguagemodeldata/locale.md)
+### Inspecting model data
+- [let identifier: String](./identifier.md)
+- [let locale: Locale](./locale.md)
 
 
 ---

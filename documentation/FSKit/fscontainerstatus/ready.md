@@ -1,7 +1,8 @@
 # ready
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A status that represents a ready container with no error.
 
@@ -14,13 +15,18 @@ A status that represents a ready container with no error.
 class var ready: FSContainerStatus { get }
 ```
 
+```objc
+@property (class, readonly) FSContainerStatus * ready;
+```
+
 #### Discussion
 
-This value is a [`FSContainerStatus`](fscontainerstatus.md) with a [`state`](fscontainerstatus/state.md) that is [`ready`](fscontainerstatus/ready.md), and a [`status`](fscontainerstatus/status.md) that is `nil`.
+This value is a [`FSContainerStatus`](../fscontainerstatus.md) with a [`state`](./state.md) that is [`ready`](./ready.md), and a [`status`](./status.md) that is `nil`.
 
 ## See Also
 
-- [class var active: FSContainerStatus](fscontainerstatus/active.md)
+### Using common status values
+- [class var active: FSContainerStatus](./active.md)
   A status that represents an active container with no error.
 
 

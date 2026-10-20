@@ -1,7 +1,8 @@
 # assetInstallationRequest(supporting:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an installation request object, which is used to initiate the asset download and monitor its progress.
 
@@ -23,9 +24,9 @@ static func assetInstallationRequest(supporting modules: [any SpeechModule]) asy
 
 If the current status is `.installed`, returns nil, indicating that nothing further needs to be done.
 
-If some of the assets require locales that aren’t reserved, it automatically reserves those locales. If that would exceed [`maximumReservedLocales`](assetinventory/maximumreservedlocales.md), then it throws an error.
+If some of the assets require locales that aren’t reserved, it automatically reserves those locales. If that would exceed [`maximumReservedLocales`](./maximumreservedlocales.md), then it throws an error.
 
-> **Note**: An error if the assets are not supported or no reservations are available.
+> **Throws**: An error if the assets are not supported or no reservations are available.
 
 
 ---

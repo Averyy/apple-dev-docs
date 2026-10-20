@@ -1,7 +1,8 @@
 # JSValueIsBigInt(_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func JSValueIsBigInt(_ ctx: JSContextRef, _ value: JSValueRef) -> Bool
+```
+
+```c
+bool JSValueIsBigInt(JSContextRef ctx, JSValueRef value);
 ```
 
 #### Return Value

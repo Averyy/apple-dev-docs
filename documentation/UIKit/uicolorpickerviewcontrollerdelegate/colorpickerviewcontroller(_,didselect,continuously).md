@@ -1,7 +1,8 @@
 # colorPickerViewController(_:didSelect:continuously:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when a user selects a color, indicating whether the update is part of a continuous user interaction.
 
@@ -17,6 +18,10 @@ Informs the delegate when a user selects a color, indicating whether the update 
 optional func colorPickerViewController(_ viewController: UIColorPickerViewController, didSelect color: UIColor, continuously: Bool)
 ```
 
+```objc
+- (void) colorPickerViewController:(UIColorPickerViewController *) viewController didSelectColor:(UIColor *) color continuously:(BOOL) continuously;
+```
+
 #### Discussion
 
 A continuous selection is always followed by a noncontinuous one when the user finishes the gesture. Apps that support undoing should update their UI for all color changes but only undo to noncontinuous color changes.
@@ -29,9 +34,10 @@ A continuous selection is always followed by a noncontinuous one when the user f
 
 ## See Also
 
-- [func colorPickerViewControllerDidFinish(UIColorPickerViewController)](uicolorpickerviewcontrollerdelegate/colorpickerviewcontrollerdidfinish(_:).md)
+### Handling color picker activity
+- [func colorPickerViewControllerDidFinish(UIColorPickerViewController)](./colorpickerviewcontrollerdidfinish%28_%29.md)
   Informs the delegate that the user dismissed the color picker.
-- [func colorPickerViewControllerDidSelectColor(UIColorPickerViewController)](uicolorpickerviewcontrollerdelegate/colorpickerviewcontrollerdidselectcolor(_:).md)
+- [func colorPickerViewControllerDidSelectColor(UIColorPickerViewController)](./colorpickerviewcontrollerdidselectcolor%28_%29.md)
   Informs the delegate when the user selects a color.
 
 

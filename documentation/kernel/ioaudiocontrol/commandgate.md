@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 IOCommandGate *commandGate;
 ```
 
@@ -15,11 +15,12 @@ The IOCommandGate for this control - attached to the driver's IOWorkLoop.
 
 ## See Also
 
-- [workLoop](ioaudiocontrol/workloop.md)
-- [userClients](ioaudiocontrol/userclients.md)
-- [isStarted](ioaudiocontrol/isstarted.md)
-- [controlID](ioaudiocontrol/controlid.md)
-- [channelID](ioaudiocontrol/channelid.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [userClients](./userclients.md)
+- [isStarted](./isstarted.md)
+- [controlID](./controlid.md)
+- [channelID](./channelid.md)
 
 
 ---

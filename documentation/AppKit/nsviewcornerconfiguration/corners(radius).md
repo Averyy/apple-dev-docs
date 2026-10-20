@@ -1,7 +1,8 @@
 # corners(radius:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A configuration that applies the given radius independently to all corners.
 
@@ -12,6 +13,10 @@ A configuration that applies the given radius independently to all corners.
 
 ```swift
 class func corners(radius: NSViewCornerRadius) -> NSViewCornerConfiguration
+```
+
+```objc
++ (NSViewCornerConfiguration *) configurationWithRadius:(NSViewCornerRadius *) radius;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # drawOff
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A symbol effect that applies the DrawOff animation to symbol images.
 
@@ -19,6 +20,8 @@ A symbol effect that applies the DrawOff animation to symbol images.
 ```swift
 static var drawOff: DrawOffSymbolEffect { get }
 ```
+
+Available when `Self` is `DrawOffSymbolEffect`.
 
 #### Discussion
 

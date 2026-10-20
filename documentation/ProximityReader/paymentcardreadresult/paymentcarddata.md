@@ -1,7 +1,8 @@
 # paymentCardData
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Base64-encoded string that contains the encrypted payment information to send to your payment provider.
 
@@ -18,7 +19,7 @@ let paymentCardData: String?
 
 ## Mentions
 
-- [Adding support for Tap to Pay on iPhone to your app](adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
+- [Adding support for Tap to Pay on iPhone to your app](../adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 
 #### Discussion
 
@@ -26,7 +27,8 @@ This information is present any time the system reads a card, including for purc
 
 ## See Also
 
-- [let generalCardData: String?](paymentcardreadresult/generalcarddata.md)
+### Getting the result data
+- [let generalCardData: String?](./generalcarddata.md)
   A Base64-encoded string that contains general cardholder and terminal data in tag-length-value (TLV) format.
 
 

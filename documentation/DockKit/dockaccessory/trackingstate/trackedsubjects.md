@@ -1,7 +1,8 @@
 # trackedSubjects
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of actively tracked subjects.
 

@@ -1,7 +1,8 @@
 # vImageCVImageFormat.Format.formatOneComponent32Float
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A little-endian 32-bit, single-component pixel format.
 
@@ -11,7 +12,7 @@ A little-endian 32-bit, single-component pixel format.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ case formatOneComponent32Float
 
 ## See Also
 
-- [vImageCVImageFormat.Format.formatOneComponent8](vimagecvimageformat/format/formatonecomponent8.md)
+### Single-component format constants
+- [vImageCVImageFormat.Format.formatOneComponent8](./formatonecomponent8.md)
   An 8-bit, single-component pixel format with black equal to zero.
-- [vImageCVImageFormat.Format.formatOneComponent16Half](vimagecvimageformat/format/formatonecomponent16half.md)
+- [vImageCVImageFormat.Format.formatOneComponent16Half](./formatonecomponent16half.md)
   A little-endian 16-bit, single-componennt pixel format.
 
 

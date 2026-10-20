@@ -1,7 +1,8 @@
 # init(title:detail:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an information item with a title and detail text.
 
@@ -16,10 +17,14 @@ Creates an information item with a title and detail text.
 init(title: String?, detail: String?)
 ```
 
+```objc
+- (instancetype) initWithTitle:(NSString *) title detail:(NSString *) detail;
+```
+
 ## Parameters
 
 - `title`: The text that the template displays as the item’s title.
-- `detail`: The text that the template displays below or beside the title, depending on the template’s layout. See [`CPInformationTemplateLayout`](cpinformationtemplatelayout.md) for more information.
+- `detail`: The text that the template displays below or beside the title, depending on the template’s layout. See [`CPInformationTemplateLayout`](../cpinformationtemplatelayout.md) for more information.
 
 
 ---

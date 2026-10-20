@@ -1,7 +1,8 @@
 # init(id:time:duration:direction:color:offset:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a color fade command.
 

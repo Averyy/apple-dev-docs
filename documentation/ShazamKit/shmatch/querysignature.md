@@ -1,7 +1,8 @@
 # querySignature
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The query signature for the match.
 
@@ -20,9 +21,22 @@ The query signature for the match.
 var querySignature: SHSignature { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, strong, readonly) SHSignature * querySignature;
+```
+
+*macOS*
+
+```objc
+@property (atomic, strong, readonly) SHSignature * querySignature;
+```
+
 ## See Also
 
-- [var mediaItems: [SHMatchedMediaItem]](shmatch/mediaitems.md)
+### Reading match information
+- [var mediaItems: [SHMatchedMediaItem]](./mediaitems.md)
   An array of the media items in the catalog that match the query signature, in order of the quality of the match.
 
 

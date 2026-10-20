@@ -1,7 +1,8 @@
 # paddingLeft
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of zeros added on the left side of the source tensor.
 
@@ -17,6 +18,10 @@ The number of zeros added on the left side of the source tensor.
 
 ```swift
 var paddingLeft: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger paddingLeft;
 ```
 
 

@@ -1,7 +1,8 @@
 # indicatesHorizontalFieldOfView
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A media characteristic that indicates the video track carries information related to the horizontal field of view.
 
@@ -19,9 +20,13 @@ A media characteristic that indicates the video track carries information relate
 static let indicatesHorizontalFieldOfView: AVMediaCharacteristic
 ```
 
+```c
+extern AVMediaCharacteristic const AVMediaCharacteristicIndicatesHorizontalFieldOfView;
+```
+
 #### Discussion
 
-This media characteristic is present when the [`CMVideoFormatDescription`](https://developer.apple.com/documentation/coremedia/cmvideoformatdescription) includes a [`kCMFormatDescriptionExtension_HorizontalFieldOfView`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_horizontalfieldofview) extension. This is not an indication that the field of view is expanded beyond or more narrow than typical horizontal fields of view.
+This media characteristic is present when the [`CMVideoFormatDescription`](../../CoreMedia/cmvideoformatdescription.md) includes a [`kCMFormatDescriptionExtension_HorizontalFieldOfView`](../../CoreMedia/kcmformatdescriptionextension_horizontalfieldofview.md) extension. This is not an indication that the field of view is expanded beyond or more narrow than typical horizontal fields of view.
 
 The value of this characteristic is `public.indicates-horizontal-field-of-view`.
 
@@ -29,21 +34,22 @@ The value of this characteristic is `public.indicates-horizontal-field-of-view`.
 
 ## See Also
 
-- [static let visual: AVMediaCharacteristic](avmediacharacteristic/visual.md)
+### Visual
+- [static let visual: AVMediaCharacteristic](./visual.md)
   A media characteristic that indicates that a track or media selection option includes visual content.
-- [static let containsAlphaChannel: AVMediaCharacteristic](avmediacharacteristic/containsalphachannel.md)
+- [static let containsAlphaChannel: AVMediaCharacteristic](./containsalphachannel.md)
   A media characteristic that indicates that a track contains an alpha channel.
-- [static let containsHDRVideo: AVMediaCharacteristic](avmediacharacteristic/containshdrvideo.md)
+- [static let containsHDRVideo: AVMediaCharacteristic](./containshdrvideo.md)
   A media characteristic that indicates that a track contains HDR video.
-- [static let frameBased: AVMediaCharacteristic](avmediacharacteristic/framebased.md)
+- [static let frameBased: AVMediaCharacteristic](./framebased.md)
   A media characteristic that indicates that a track or media selection option includes frame-based content.
-- [static let usesWideGamutColorSpace: AVMediaCharacteristic](avmediacharacteristic/useswidegamutcolorspace.md)
+- [static let usesWideGamutColorSpace: AVMediaCharacteristic](./useswidegamutcolorspace.md)
   A media characteristic that indicates that a track uses a wide-gamut color space.
-- [static let containsStereoMultiviewVideo: AVMediaCharacteristic](avmediacharacteristic/containsstereomultiviewvideo.md)
+- [static let containsStereoMultiviewVideo: AVMediaCharacteristic](./containsstereomultiviewvideo.md)
   A media characteristic that indicates that a track contains stereoscopic video captured in a multiview compression format.
-- [static let carriesVideoStereoMetadata: AVMediaCharacteristic](avmediacharacteristic/carriesvideostereometadata.md)
+- [static let carriesVideoStereoMetadata: AVMediaCharacteristic](./carriesvideostereometadata.md)
   A media characteristic that indicates that the stereoscopic video track carries additional information related to the stereoscopic video.
-- [static let indicatesNonRectilinearProjection: AVMediaCharacteristic](avmediacharacteristic/indicatesnonrectilinearprojection.md)
+- [static let indicatesNonRectilinearProjection: AVMediaCharacteristic](./indicatesnonrectilinearprojection.md)
   A media characteristic that indicates the video track carries information related to how it should be projected for display.
 
 

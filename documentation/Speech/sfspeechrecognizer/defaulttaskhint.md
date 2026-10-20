@@ -1,7 +1,8 @@
 # defaultTaskHint
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A hint that indicates the type of speech recognition being requested.
 
@@ -18,13 +19,18 @@ A hint that indicates the type of speech recognition being requested.
 var defaultTaskHint: SFSpeechRecognitionTaskHint { get set }
 ```
 
+```objc
+@property (nonatomic) SFSpeechRecognitionTaskHint defaultTaskHint;
+```
+
 #### Discussion
 
-By default, the value of this property overrides the [`SFSpeechRecognitionTaskHint.unspecified`](sfspeechrecognitiontaskhint/unspecified.md) value for requests. For possible values, see [`SFSpeechRecognitionTaskHint`](sfspeechrecognitiontaskhint.md).
+By default, the value of this property overrides the [`SFSpeechRecognitionTaskHint.unspecified`](../sfspeechrecognitiontaskhint/unspecified.md) value for requests. For possible values, see [`SFSpeechRecognitionTaskHint`](../sfspeechrecognitiontaskhint.md).
 
 ## See Also
 
-- [var queue: OperationQueue](sfspeechrecognizer/queue.md)
+### Configuring the speech recognizer
+- [var queue: OperationQueue](./queue.md)
   The queue on which to execute recognition task handlers and delegate methods.
 
 

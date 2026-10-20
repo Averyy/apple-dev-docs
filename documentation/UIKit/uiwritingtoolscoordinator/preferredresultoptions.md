@@ -1,7 +1,8 @@
 # preferredResultOptions
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of content you allow Writing Tools to generate for your custom text view.
 
@@ -17,9 +18,13 @@ The type of content you allow Writing Tools to generate for your custom text vie
 var preferredResultOptions: UIWritingToolsResultOptions { get set }
 ```
 
+```objc
+@property (nonatomic) UIWritingToolsResultOptions preferredResultOptions;
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](../adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Discussion
 
@@ -27,11 +32,12 @@ Writing Tools can create plain text or rich text, and it can format text using l
 
 ## See Also
 
-- [var preferredBehavior: UIWritingToolsBehavior](uiwritingtoolscoordinator/preferredbehavior.md)
+### Configuring the experience
+- [var preferredBehavior: UIWritingToolsBehavior](./preferredbehavior.md)
   The level of Writing Tools support you want the system to provide for your view.
-- [var behavior: UIWritingToolsBehavior](uiwritingtoolscoordinator/behavior.md)
+- [var behavior: UIWritingToolsBehavior](./behavior.md)
   The actual level of Writing Tools support the system provides for your view.
-- [var resultOptions: UIWritingToolsResultOptions](uiwritingtoolscoordinator/resultoptions.md)
+- [var resultOptions: UIWritingToolsResultOptions](./resultoptions.md)
   The type of content the system generates for your custom text view.
 
 

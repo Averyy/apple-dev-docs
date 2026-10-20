@@ -1,7 +1,8 @@
 # changeCountToken(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a change token for a specific save operation.
 
@@ -17,31 +18,36 @@ Returns a change token for a specific save operation.
 func changeCountToken(for saveOperation: UIDocument.SaveOperation) -> Any
 ```
 
+```objc
+- (id) changeCountTokenForSaveOperation:(UIDocumentSaveOperation) saveOperation;
+```
+
 #### Return Value
 
 An object to use as a change-count token.
 
 #### Discussion
 
-To get autosaving capabilities for your documents, you must implement change tracking. Typically you do this by using an [`UndoManager`](https://developer.apple.com/documentation/foundation/undomanager) object (assigned to [`undoManager`](uidocument/undomanager.md) property) to register changes or by calling the [`updateChangeCount(_:)`](uidocument/updatechangecount(_:).md) method every time the user makes a change; UIKit then automatically determines whether there are unsaved changes and returns the proper value from [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md). If you take neither of these approaches (and you want the autosaving feature), you must implement this method as well as [`updateChangeCount(withToken:for:)`](uidocument/updatechangecount(withtoken:for:).md) and [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md).
+To get autosaving capabilities for your documents, you must implement change tracking. Typically you do this by using an [`UndoManager`](../../Foundation/undomanager.md) object (assigned to [`undoManager`](./undomanager.md) property) to register changes or by calling the [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) method every time the user makes a change; UIKit then automatically determines whether there are unsaved changes and returns the proper value from [`hasUnsavedChanges`](./hasunsavedchanges.md). If you take neither of these approaches (and you want the autosaving feature), you must implement this method as well as [`updateChangeCount(withToken:for:)`](./updatechangecount%28withtoken,for%29.md) and [`hasUnsavedChanges`](./hasunsavedchanges.md).
 
-You implement this particular method to return a change-count token that UIKit uses to encapsulate the history of document changes for a particular save operation. The token can be any object that represents the current change state of the document. This method is called at the start of the default implementation of the [`save(to:for:completionHandler:)`](uidocument/save(to:for:completionhandler:).md) method. At the end of this default implementation, it calls the [`updateChangeCount(withToken:for:)`](uidocument/updatechangecount(withtoken:for:).md) method, passing in the change-count token. You implement the latter method to compare the token with the one returned earlier; by doing so, you can determine if the document has acquired new unsaved changes between the start and end of an asynchronous write operation. You can then return the proper value from your override of [`hasUnsavedChanges`](uidocument/hasunsavedchanges.md).
+You implement this particular method to return a change-count token that UIKit uses to encapsulate the history of document changes for a particular save operation. The token can be any object that represents the current change state of the document. This method is called at the start of the default implementation of the [`save(to:for:completionHandler:)`](./save%28to,for,completionhandler%29.md) method. At the end of this default implementation, it calls the [`updateChangeCount(withToken:for:)`](./updatechangecount%28withtoken,for%29.md) method, passing in the change-count token. You implement the latter method to compare the token with the one returned earlier; by doing so, you can determine if the document has acquired new unsaved changes between the start and end of an asynchronous write operation. You can then return the proper value from your override of [`hasUnsavedChanges`](./hasunsavedchanges.md).
 
 ## Parameters
 
-- `saveOperation`: A constant that indicates whether the save operation is writing a new file or overwriting an existing one. See [`UIDocument.SaveOperation`](uidocument/saveoperation.md) for descriptions of these constants.
+- `saveOperation`: A constant that indicates whether the save operation is writing a new file or overwriting an existing one. See [`UIDocument.SaveOperation`](./saveoperation.md) for descriptions of these constants.
 
 ## See Also
 
-- [var hasUnsavedChanges: Bool](uidocument/hasunsavedchanges.md)
+### Tracking changes and autosaving
+- [var hasUnsavedChanges: Bool](./hasunsavedchanges.md)
   A Boolean value that indicates whether the document has any unsaved changes.
-- [func updateChangeCount(UIDocument.ChangeKind)](uidocument/updatechangecount(_:).md)
+- [func updateChangeCount(UIDocument.ChangeKind)](./updatechangecount%28_%29.md)
   Updates the change counter by indicating the kind of change.
-- [var undoManager: UndoManager!](uidocument/undomanager.md)
+- [var undoManager: UndoManager!](./undomanager.md)
   The undo manager for the document.
-- [func updateChangeCount(withToken: Any, for: UIDocument.SaveOperation)](uidocument/updatechangecount(withtoken:for:).md)
+- [func updateChangeCount(withToken: Any, for: UIDocument.SaveOperation)](./updatechangecount%28withtoken,for%29.md)
   Updates the change count with reference to a change-count token passed in by UIKit.
-- [func autosave(completionHandler: ((Bool) -> Void)?)](uidocument/autosave(completionhandler:).md)
+- [func autosave(completionHandler: ((Bool) -> Void)?)](./autosave%28completionhandler%29.md)
   Initiates automatic saving of documents with unsaved changes.
 
 

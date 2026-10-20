@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOStreamBufferIDMask](1646477-anonymous/kiostreambufferidmask.md)
-- [kIOStreamMemoryTypeBufferControl](1646477-anonymous/kiostreammemorytypebuffercontrol.md)
-- [kIOStreamMemoryTypeBufferData](1646477-anonymous/kiostreammemorytypebufferdata.md)
-- [kIOStreamMemoryTypeInputQueue](1646477-anonymous/kiostreammemorytypeinputqueue.md)
-- [kIOStreamMemoryTypeMask](1646477-anonymous/kiostreammemorytypemask.md)
-- [kIOStreamMemoryTypeOutputQueue](1646477-anonymous/kiostreammemorytypeoutputqueue.md)
+- [kIOStreamBufferIDMask](./api-1646477-anonymous/kiostreambufferidmask.md)
+- [kIOStreamMemoryTypeBufferControl](./api-1646477-anonymous/kiostreammemorytypebuffercontrol.md)
+- [kIOStreamMemoryTypeBufferData](./api-1646477-anonymous/kiostreammemorytypebufferdata.md)
+- [kIOStreamMemoryTypeInputQueue](./api-1646477-anonymous/kiostreammemorytypeinputqueue.md)
+- [kIOStreamMemoryTypeMask](./api-1646477-anonymous/kiostreammemorytypemask.md)
+- [kIOStreamMemoryTypeOutputQueue](./api-1646477-anonymous/kiostreammemorytypeoutputqueue.md)
 
 
 ---

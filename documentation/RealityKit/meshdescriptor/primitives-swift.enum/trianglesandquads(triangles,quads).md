@@ -1,7 +1,8 @@
 # MeshDescriptor.Primitives.trianglesAndQuads(triangles:quads:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defines separate arrays for triangle and quad indices.
 
@@ -11,7 +12,7 @@ Defines separate arrays for triangle and quad indices.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

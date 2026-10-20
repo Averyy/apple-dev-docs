@@ -9,14 +9,15 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL;
 ```
 
 ## See Also
 
-- [COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL](webglcompressedtextureatc/1632672-compressed_rgba_atc_interpolated.md)
-- [COMPRESSED_RGB_ATC_WEBGL](webglcompressedtextureatc/1631977-compressed_rgb_atc_webgl.md)
+### Miscellaneous
+- [COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL](./api-1632672-compressed_rgba_atc_interpolated.md)
+- [COMPRESSED_RGB_ATC_WEBGL](./api-1631977-compressed_rgb_atc_webgl.md)
 
 
 ---

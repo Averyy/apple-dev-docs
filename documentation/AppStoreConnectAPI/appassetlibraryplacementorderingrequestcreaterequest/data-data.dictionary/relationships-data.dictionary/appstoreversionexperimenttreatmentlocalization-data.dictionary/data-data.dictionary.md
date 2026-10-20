@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an app asset library placement ordering request.
 
@@ -10,13 +11,13 @@ The request body you use to create an app asset library placement ordering reque
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data
 ```
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionExperimentTreatmentLocalizations`
 - `id` (string) *(required)*
 
 

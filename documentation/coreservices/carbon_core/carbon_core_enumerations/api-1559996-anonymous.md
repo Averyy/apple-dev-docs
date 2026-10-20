@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var eLenErr: Int](elenerr.md)
-- [var eMultiErr: Int](emultierr.md)
+- [var eLenErr: Int](../../elenerr.md)
+- [var eMultiErr: Int](../../emultierr.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # TrackOpticalFlowRequest.ComputationAccuracy
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that describes the computational accuracy.
 
@@ -22,29 +23,30 @@ enum ComputationAccuracy
 ## Topics
 
 ### Getting the accuracies
-- [TrackOpticalFlowRequest.ComputationAccuracy.high](trackopticalflowrequest/computationaccuracy-swift.enum/high.md)
-- [TrackOpticalFlowRequest.ComputationAccuracy.low](trackopticalflowrequest/computationaccuracy-swift.enum/low.md)
-- [TrackOpticalFlowRequest.ComputationAccuracy.medium](trackopticalflowrequest/computationaccuracy-swift.enum/medium.md)
-- [TrackOpticalFlowRequest.ComputationAccuracy.veryHigh](trackopticalflowrequest/computationaccuracy-swift.enum/veryhigh.md)
+- [TrackOpticalFlowRequest.ComputationAccuracy.high](./computationaccuracy-swift.enum/high.md)
+- [TrackOpticalFlowRequest.ComputationAccuracy.low](./computationaccuracy-swift.enum/low.md)
+- [TrackOpticalFlowRequest.ComputationAccuracy.medium](./computationaccuracy-swift.enum/medium.md)
+- [TrackOpticalFlowRequest.ComputationAccuracy.veryHigh](./computationaccuracy-swift.enum/veryhigh.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var computationAccuracy: TrackOpticalFlowRequest.ComputationAccuracy](trackopticalflowrequest/computationaccuracy-swift.property.md)
+### Configuring a request
+- [var computationAccuracy: TrackOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.property.md)
   The level of accuracy to compute the optical flow.
-- [var outputPixelFormatType: OSType](trackopticalflowrequest/outputpixelformattype.md)
+- [var outputPixelFormatType: OSType](./outputpixelformattype.md)
   The desired pixel format type of the observation.
-- [var supportedOutputPixelFormatTypes: [OSType]](trackopticalflowrequest/supportedoutputpixelformattypes.md)
+- [var supportedOutputPixelFormatTypes: [OSType]](./supportedoutputpixelformattypes.md)
   The collection of supported pixel format types.
 
 

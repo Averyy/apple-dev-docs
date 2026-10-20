@@ -1,19 +1,20 @@
 # Remote Process Dictionary Keys
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 Used to extract information from dictionaries with entries that describe remote processes.
 
 ## Topics
 
 ### Constants
-- [let kAERemoteProcessURLKey: CFString!](../coreservices/kaeremoteprocessurlkey.md)
+- [let kAERemoteProcessURLKey: CFString!](../../coreservices/kaeremoteprocessurlkey.md)
   Use this key to obtain the full URL to the remote process, as a `CFURLRef`.
-- [let kAERemoteProcessNameKey: CFString!](../coreservices/kaeremoteprocessnamekey.md)
+- [let kAERemoteProcessNameKey: CFString!](../../coreservices/kaeremoteprocessnamekey.md)
   Use this key to obtain the visible name of the remote process, in the localization supplied by the server, as a `CFStringRef`.
-- [let kAERemoteProcessUserIDKey: CFString!](../coreservices/kaeremoteprocessuseridkey.md)
+- [let kAERemoteProcessUserIDKey: CFString!](../../coreservices/kaeremoteprocessuseridkey.md)
   Use this key to obtain the user ID of the remote process, if available; if so, returned as a `CFNumberRef`.
-- [let kAERemoteProcessProcessIDKey: CFString!](../coreservices/kaeremoteprocessprocessidkey.md)
+- [let kAERemoteProcessProcessIDKey: CFString!](../../coreservices/kaeremoteprocessprocessidkey.md)
   Use this key to obtain the process ID of the remote process, if available; if so, returned as a `CFNumberRef`.
 
 

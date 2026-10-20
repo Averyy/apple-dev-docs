@@ -1,7 +1,8 @@
 # AudioConverterFillComplexBufferWithPacketDependencies(_:_:_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func AudioConverterFillComplexBufferWithPacketDependencies(_ inAudioConverter: AudioConverterRef, _ inInputDataProc: AudioConverterComplexInputDataProc, _ inInputDataProcUserData: UnsafeMutableRawPointer?, _ ioOutputDataPacketSize: UnsafeMutablePointer<UInt32>, _ outOutputData: UnsafeMutablePointer<AudioBufferList>, _ outPacketDescriptions: UnsafeMutablePointer<AudioStreamPacketDescription>?, _ outPacketDependencies: UnsafeMutablePointer<AudioStreamPacketDependencyDescription>) -> OSStatus
+```
+
+```c
+OSStatus AudioConverterFillComplexBufferWithPacketDependencies(AudioConverterRef inAudioConverter, AudioConverterComplexInputDataProc inInputDataProc, void *inInputDataProcUserData, UInt32 *ioOutputDataPacketSize, AudioBufferList *outOutputData, AudioStreamPacketDescription *outPacketDescriptions, AudioStreamPacketDependencyDescription *outPacketDependencies);
 ```
 
 #### Return Value

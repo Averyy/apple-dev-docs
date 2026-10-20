@@ -1,7 +1,8 @@
 # ATSFontGetContainer(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+ - Deprecated in 13.1
@@ -10,6 +11,10 @@
 
 ```swift
 func ATSFontGetContainer(_ iFont: ATSFontRef, _ iOptions: ATSOptionFlags, _ oContainer: UnsafeMutablePointer<ATSFontContainerRef>!) -> OSStatus
+```
+
+```c
+OSStatus ATSFontGetContainer(ATSFontRef iFont, ATSOptionFlags iOptions, ATSFontContainerRef *oContainer);
 ```
 
 

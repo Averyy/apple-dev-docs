@@ -1,7 +1,8 @@
 # layout
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category for items that manage layout, like stack views and frame modifiers.
 
@@ -22,11 +23,12 @@ static let layout: LibraryItem.Category
 
 ## See Also
 
-- [static let control: LibraryItem.Category](libraryitem/category/control.md)
+### Specifying a Category
+- [static let control: LibraryItem.Category](./control.md)
   A category for controls, like buttons and context menus.
-- [static let effect: LibraryItem.Category](libraryitem/category/effect.md)
+- [static let effect: LibraryItem.Category](./effect.md)
   A category for effects, like opacity and saturation modifiers.
-- [static let other: LibraryItem.Category](libraryitem/category/other.md)
+- [static let other: LibraryItem.Category](./other.md)
   A general category.
 
 

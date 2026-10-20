@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously waits for the next element and returns it.
 

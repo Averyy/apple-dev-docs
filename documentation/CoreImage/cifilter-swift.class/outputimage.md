@@ -1,16 +1,17 @@
 # outputImage
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Returns a [`CIImage`](ciimage.md) object that encapsulates the operations configured in the filter.
+Returns a [`CIImage`](../ciimage.md) object that encapsulates the operations configured in the filter.
 
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ Returns a [`CIImage`](ciimage.md) object that encapsulates the operations config
 var outputImage: CIImage? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CIImage * outputImage;
+```
+
 ## See Also
 
-- [var name: String](cifilter-swift.class/name.md)
+### Getting filter parameters and attributes
+- [var name: String](./name.md)
   A name associated with a filter.
-- [var isEnabled: Bool](cifilter-swift.class/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that determines whether the filter is enabled. Animatable.
-- [var attributes: [String : Any]](cifilter-swift.class/attributes.md)
+- [var attributes: [String : Any]](./attributes.md)
   A dictionary of key-value pairs that describe the filter.
-- [var inputKeys: [String]](cifilter-swift.class/inputkeys.md)
+- [var inputKeys: [String]](./inputkeys.md)
   The names of all input parameters to the filter.
-- [var outputKeys: [String]](cifilter-swift.class/outputkeys.md)
+- [var outputKeys: [String]](./outputkeys.md)
   The names of all output parameters from the filter.
 
 

@@ -1,6 +1,7 @@
 # Applying flood fills to an image
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Article
 
 Fill consistently colored connected parts of an image with a new color.
 
@@ -8,11 +9,11 @@ Fill consistently colored connected parts of an image with a new color.
 
 The vImage library provides a set of functions that allow you to flood fill areas of an image with a new color. The following image demonstrates how the flood-fill operation can colorize a hand-drawn line illustration:
 
-![A flow diagram that depicts colorization of a hand-drawn illustration. On the left is a grayscale line drawing of a mountainous landscape, and on the right is the same drawing with each segment filled in with a solid color.](/images/com.apple.accelerate/media-4098131@2x.png)
+![A flow diagram that depicts colorization of a hand-drawn illustration. On the left is a grayscale line drawing of a mountainous landscape, and on the right is the same drawing with each segment filled in with a solid color.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4098131@2x.png)
 
 The flood-fill functions fill areas with identical pixel values. The process of applying lossy compression, such as when generating JPG images, may subtly change pixel values. Use losslessly compressed or uncompressed images, such as PNGs, to achieve the best flood-fill results.
 
-##### Create the Planar Vimage Buffer That Represents the Source Image
+##### Create the planar vImage buffer that represents the source image
 
 Create a 32-bit-per-pixel, planar image to store the image of the line drawing.
 
@@ -35,7 +36,7 @@ let bufferPlanarF = try! vImage.PixelBuffer<vImage.PlanarF>(
 
 ```
 
-Call the [`colorThreshold(_:destination:)`](vimage/pixelbuffer/colorthreshold(_:destination:).md) function to binarize the image, that is, reduce it to only black and white colors with no midtones. Pass a threshold value of `0.5` to convert all pixel values below `0.5` to `0.0`, and other pixel values to `1.0`.
+Call the [`colorThreshold(_:destination:)`](./vimage/pixelbuffer/colorthreshold%28_,destination%29.md) function to binarize the image, that is, reduce it to only black and white colors with no midtones. Pass a threshold value of `0.5` to convert all pixel values below `0.5` to `0.0`, and other pixel values to `1.0`.
 
 ```swift
 bufferPlanarF.colorThreshold(
@@ -43,7 +44,7 @@ bufferPlanarF.colorThreshold(
     destination: bufferPlanarF)
 ```
 
-##### Create the Interleaved Vimage Buffer That Represents the Destination Image
+##### Create the interleaved vImage buffer that represents the destination image
 
 Use the 32-bit planar buffer to create a four-channel, 8-bit-per-pixel buffer.
 
@@ -52,13 +53,13 @@ let bufferRGB8 = vImage.PixelBuffer<vImage.Interleaved8x4>(
     planarBuffers: [bufferPlanarF, bufferPlanarF, bufferPlanarF, bufferPlanarF])
 ```
 
-##### Apply the Flood Fill Operation
+##### Apply the flood-fill operation
 
 The source image is 1024 pixels wide and 1585 pixels high. The following image shows the coordinates of the six seed pixels:
 
-![A diagram of a grayscale line drawing of a mountainous landscape. An indicator at the top shows the width as 1024, and an indicator on the left shows the height as 1585. On the right are six callouts that are stacked vertically. Each callout specifies the x and y positions of the seed pixel and the corresponding red, green, and blue values for the color fill.](/images/com.apple.accelerate/media-4110108@2x.png)
+![A diagram of a grayscale line drawing of a mountainous landscape. An indicator at the top shows the width as 1024, and an indicator on the left shows the height as 1585. On the right are six callouts that are stacked vertically. Each callout specifies the x and y positions of the seed pixel and the corresponding red, green, and blue values for the color fill.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4110108@2x.png)
 
-Call [`vImageFloodFill_ARGB8888(_:_:_:_:_:_:_:)`](vimagefloodfill_argb8888(_:_:_:_:_:_:_:).md) to apply different colors to different parts of the line drawing. Note that the vImage flood-fill functions only work in place. That is, a single vImage buffer is the source and the destination for the flood-fill operation.
+Call [`vImageFloodFill_ARGB8888(_:_:_:_:_:_:_:)`](./vimagefloodfill_argb8888%28_,_,_,_,_,_,_%29.md) to apply different colors to different parts of the line drawing. Note that the vImage flood-fill functions only work in place. That is, a single vImage buffer is the source and the destination for the flood-fill operation.
 
 ```swift
 bufferRGB8.withUnsafePointerToVImageBuffer { src in
@@ -104,9 +105,9 @@ bufferRGB8.withUnsafePointerToVImageBuffer { src in
 
 ```
 
-##### Create a Core Graphics Image of the Result
+##### Create a Core Graphics image of the result
 
-Create a [`vImage_CGImageFormat`](vimage_cgimageformat.md) structure that describes the four-channel, 8-bit-per-channel output image.
+Create a [`vImage_CGImageFormat`](./vimage_cgimageformat.md) structure that describes the four-channel, 8-bit-per-channel output image.
 
 ```swift
 let cgImageFormatRGB8 = vImage_CGImageFormat(
@@ -119,7 +120,7 @@ let cgImageFormatRGB8 = vImage_CGImageFormat(
 
 ```
 
-Finally, call [`makeCGImage(cgImageFormat:)`](vimage/pixelbuffer/makecgimage(cgimageformat:).md) to generate the image.
+Finally, call [`makeCGImage(cgImageFormat:)`](./vimage/pixelbuffer/makecgimage%28cgimageformat%29.md) to generate the image.
 
 ```swift
 let result = bufferRGB8.makeCGImage(cgImageFormat: cgImageFormatRGB8)
@@ -127,13 +128,14 @@ let result = bufferRGB8.makeCGImage(cgImageFormat: cgImageFormatRGB8)
 
 ## See Also
 
-- [func vImageFloodFill_Planar8(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, Pixel_8, Int32, vImage_Flags) -> vImage_Error](vimagefloodfill_planar8(_:_:_:_:_:_:_:).md)
+### Flood-filling buffers
+- [func vImageFloodFill_Planar8(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, Pixel_8, Int32, vImage_Flags) -> vImage_Error](./vimagefloodfill_planar8%28_,_,_,_,_,_,_%29.md)
   Applies a flood-fill operation to an 8-bit planar image.
-- [func vImageFloodFill_Planar16U(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, Pixel_16U, Int32, vImage_Flags) -> vImage_Error](vimagefloodfill_planar16u(_:_:_:_:_:_:_:).md)
+- [func vImageFloodFill_Planar16U(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, Pixel_16U, Int32, vImage_Flags) -> vImage_Error](./vimagefloodfill_planar16u%28_,_,_,_,_,_,_%29.md)
   Applies a flood fill-operation to an unsigned 16-bit planar image.
-- [func vImageFloodFill_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafeMutablePointer<UInt8>!, Int32, vImage_Flags) -> vImage_Error](vimagefloodfill_argb8888(_:_:_:_:_:_:_:).md)
+- [func vImageFloodFill_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafeMutablePointer<UInt8>!, Int32, vImage_Flags) -> vImage_Error](./vimagefloodfill_argb8888%28_,_,_,_,_,_,_%29.md)
   Applies a flood-fill operation to an 8-bit-per-channel, four-channel interleaved image.
-- [func vImageFloodFill_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafeMutablePointer<UInt16>!, Int32, vImage_Flags) -> vImage_Error](vimagefloodfill_argb16u(_:_:_:_:_:_:_:).md)
+- [func vImageFloodFill_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafeMutablePointer<UInt16>!, Int32, vImage_Flags) -> vImage_Error](./vimagefloodfill_argb16u%28_,_,_,_,_,_,_%29.md)
   Applies a flood-fill operation to an unsigned 16-bit-per-channel, four-channel interleaved image.
 
 

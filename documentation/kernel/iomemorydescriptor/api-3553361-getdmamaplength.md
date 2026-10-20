@@ -1,32 +1,34 @@
 # getDMAMapLength
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t getDMAMapLength(uint64_t *offset);
 ```
 
 ## See Also
 
-- [getDirection](iomemorydescriptor/1812765-getdirection.md)
+### Getting the Descriptor Information
+- [getDirection](./api-1812765-getdirection.md)
   Gets the direction of memory transfers associated with the descriptor. 
-- [- getDirection](iomemorydescriptor/1441925-getdirection.md)
+- [- getDirection](./api-1441925-getdirection.md)
   Gets the direction of memory transfers associated with the descriptor. 
-- [getLength](iomemorydescriptor/1812776-getlength.md)
+- [getLength](./api-1812776-getlength.md)
   Accessor to get the length of the memory descriptor (over all its ranges).
-- [- getLength](iomemorydescriptor/1442036-getlength.md)
+- [- getLength](./api-1442036-getlength.md)
   Accessor to get the length of the memory descriptor (over all its ranges).
-- [- GetLength](iomemorydescriptor/3180642-getlength.md)
+- [- GetLength](./api-3180642-getlength.md)
   Returns the length of the memory block represented by this object.
-- [- getFlags](iomemorydescriptor/2870265-getflags.md)
+- [- getFlags](./api-2870265-getflags.md)
   Returns the options used to create the memory descriptor.
-- [- getMetaClass](iomemorydescriptor/1442096-getmetaclass.md)
+- [- getMetaClass](./api-1442096-getmetaclass.md)
 
 
 ---

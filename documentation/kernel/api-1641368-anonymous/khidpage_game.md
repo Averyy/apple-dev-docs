@@ -1,14 +1,15 @@
 # kHIDPage_Game
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDPage_Game = 0x05
 ```
 

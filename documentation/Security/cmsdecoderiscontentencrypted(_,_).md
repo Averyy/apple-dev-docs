@@ -1,7 +1,8 @@
 # CMSDecoderIsContentEncrypted(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determines whether a CMS message was encrypted.
 
@@ -14,13 +15,17 @@ Determines whether a CMS message was encrypted.
 func CMSDecoderIsContentEncrypted(_ cmsDecoder: CMSDecoder, _ isEncryptedOut: UnsafeMutablePointer<DarwinBoolean>) -> OSStatus
 ```
 
+```c
+OSStatus CMSDecoderIsContentEncrypted(CMSDecoderRef cmsDecoder, Boolean *isEncryptedOut);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-Note that if the message was encrypted and the decoding succeeded (`CMSDecoderFinalizeMessage` returned `noErr`), then the message was successfully decrypted. Call [`CMSDecoderCopyContent(_:_:)`](cmsdecodercopycontent(_:_:).md) to retrieve the decrypted content.
+Note that if the message was encrypted and the decoding succeeded (`CMSDecoderFinalizeMessage` returned `noErr`), then the message was successfully decrypted. Call [`CMSDecoderCopyContent(_:_:)`](./cmsdecodercopycontent%28_,_%29.md) to retrieve the decrypted content.
 
 You cannot call this function until after you have called the `CMSDecoderFinalizeMessage` function.
 
@@ -31,11 +36,12 @@ You cannot call this function until after you have called the `CMSDecoderFinaliz
 
 ## See Also
 
-- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](cmsdecodercreate(_:).md)
+### Related Documentation
+- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](./cmsdecodercreate%28_%29.md)
   Creates a CMSDecoder reference.
-- [func CMSEncoderAddRecipients(CMSEncoder, CFTypeRef) -> OSStatus](cmsencoderaddrecipients(_:_:).md)
+- [func CMSEncoderAddRecipients(CMSEncoder, CFTypeRef) -> OSStatus](./cmsencoderaddrecipients%28_,_%29.md)
   Specifies a message is to be encrypted and specifies the recipients of the message.
-- [func CMSDecoderFinalizeMessage(CMSDecoder) -> OSStatus](cmsdecoderfinalizemessage(_:).md)
+- [func CMSDecoderFinalizeMessage(CMSDecoder) -> OSStatus](./cmsdecoderfinalizemessage%28_%29.md)
   Indicates that there is no more data to decode.
 
 

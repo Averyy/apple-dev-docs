@@ -1,13 +1,16 @@
 # ARHitTestResult.ResultType
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Possible types for specifying a hit-test search, or for the result of a hit-test search.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
+- iOS 11.0+ - Deprecated in 14.0
+- iPadOS 11.0+ - Deprecated in 14.0
+
+> **Deprecated**: Use raycasting
 
 ## Declaration
 
@@ -15,42 +18,47 @@ Possible types for specifying a hit-test search, or for the result of a hit-test
 struct ResultType
 ```
 
+```c
+enum ARHitTestResultType : NSUInteger;
+```
+
 ## Topics
 
 ### Creating a Result Type
-- [init(rawValue: UInt)](arhittestresult/resulttype/init(rawvalue:).md)
+- [init(rawValue: UInt)](./resulttype/init%28rawvalue%29.md)
   Creates a result type.
 ### Result Types
-- [static var featurePoint: ARHitTestResult.ResultType](arhittestresult/resulttype/featurepoint.md)
+- [static var featurePoint: ARHitTestResult.ResultType](./resulttype/featurepoint.md)
   A point on a surface detected by ARKit, but not part of any detected planes.
-- [static var estimatedHorizontalPlane: ARHitTestResult.ResultType](arhittestresult/resulttype/estimatedhorizontalplane.md)
+- [static var estimatedHorizontalPlane: ARHitTestResult.ResultType](./resulttype/estimatedhorizontalplane.md)
   A point on a real-world planar surface detected during the search, whose orientation is perpendicular to gravity.
-- [static var estimatedVerticalPlane: ARHitTestResult.ResultType](arhittestresult/resulttype/estimatedverticalplane.md)
+- [static var estimatedVerticalPlane: ARHitTestResult.ResultType](./resulttype/estimatedverticalplane.md)
   A point on a real-world planar surface detected during the search, whose orientation is parallel to gravity.
-- [static var existingPlane: ARHitTestResult.ResultType](arhittestresult/resulttype/existingplane.md)
-  A point on a real-world plane (already detected with the [`planeDetection`](arworldtrackingconfiguration/planedetection-swift.property.md) option), without considering the plane’s size.
-- [static var existingPlaneUsingExtent: ARHitTestResult.ResultType](arhittestresult/resulttype/existingplaneusingextent.md)
-  A point on a real-world plane (already detected with the [`planeDetection`](arworldtrackingconfiguration/planedetection-swift.property.md) option), respecting the plane’s estimated size.
-- [static var existingPlaneUsingGeometry: ARHitTestResult.ResultType](arhittestresult/resulttype/existingplaneusinggeometry.md)
-  A point on a real-world plane (already detected with the [`planeDetection`](arworldtrackingconfiguration/planedetection-swift.property.md) option), respecting the plane’s estimated size and shape.
+- [static var existingPlane: ARHitTestResult.ResultType](./resulttype/existingplane.md)
+  A point on a real-world plane (already detected with the [`planeDetection`](../arworldtrackingconfiguration/planedetection-swift.property.md) option), without considering the plane’s size.
+- [static var existingPlaneUsingExtent: ARHitTestResult.ResultType](./resulttype/existingplaneusingextent.md)
+  A point on a real-world plane (already detected with the [`planeDetection`](../arworldtrackingconfiguration/planedetection-swift.property.md) option), respecting the plane’s estimated size.
+- [static var existingPlaneUsingGeometry: ARHitTestResult.ResultType](./resulttype/existingplaneusinggeometry.md)
+  A point on a real-world plane (already detected with the [`planeDetection`](../arworldtrackingconfiguration/planedetection-swift.property.md) option), respecting the plane’s estimated size and shape.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var type: ARHitTestResult.ResultType](arhittestresult/type.md)
+### Identifying Results
+- [var type: ARHitTestResult.ResultType](./type.md)
   The kind of detected feature the search result represents.
-- [var anchor: ARAnchor?](arhittestresult/anchor.md)
+- [var anchor: ARAnchor?](./anchor.md)
   The anchor representing the detected surface, if any.
 
 

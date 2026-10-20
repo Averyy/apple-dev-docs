@@ -1,12 +1,13 @@
 # setSelectionIndexes(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the receiver’s selection indexes and returns a Boolean value that indicates whether the selection changed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Sets the receiver’s selection indexes and returns a Boolean value that indicat
 func setSelectionIndexes(_ indexes: IndexSet) -> Bool
 ```
 
+```objc
+- (BOOL) setSelectionIndexes:(NSIndexSet *) indexes;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the selection was changed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the selection was changed, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Attempting to change the selection may cause a [`commitEditing()`](nscontroller/commitediting().md) message which fails, thus denying the selection change.
+Attempting to change the selection may cause a [`commitEditing()`](../nscontroller/commitediting%28%29.md) message which fails, thus denying the selection change.
 
 To select all the receiver’s objects, indexes should be an index set with indexes `[0...count -1]`. To deselect all indexes, pass an empty index set.
 
@@ -30,33 +35,34 @@ To select all the receiver’s objects, indexes should be an index set with inde
 
 ## See Also
 
-- [var selectionIndex: Int](nsarraycontroller/selectionindex.md)
+### Managing selections
+- [var selectionIndex: Int](./selectionindex.md)
   The index of the first object in the receiver’s selection
-- [func setSelectionIndex(Int) -> Bool](nsarraycontroller/setselectionindex(_:).md)
+- [func setSelectionIndex(Int) -> Bool](./setselectionindex%28_%29.md)
   Sets the receiver’s selection to the given index, and returns a Boolean value that indicates whether the selection was changed.
-- [var selectsInsertedObjects: Bool](nsarraycontroller/selectsinsertedobjects.md)
+- [var selectsInsertedObjects: Bool](./selectsinsertedobjects.md)
   A Boolean value that indicates whether the receiver automatically selects inserted objects
-- [var selectionIndexes: IndexSet](nsarraycontroller/selectionindexes.md)
+- [var selectionIndexes: IndexSet](./selectionindexes.md)
   An index set containing the indexes of the receiver’s currently selected objects in the content array
-- [func addSelectionIndexes(IndexSet) -> Bool](nsarraycontroller/addselectionindexes(_:).md)
+- [func addSelectionIndexes(IndexSet) -> Bool](./addselectionindexes%28_%29.md)
   Adds the objects at the specified indexes in the receiver’s content array to the current selection.
-- [func removeSelectionIndexes(IndexSet) -> Bool](nsarraycontroller/removeselectionindexes(_:).md)
+- [func removeSelectionIndexes(IndexSet) -> Bool](./removeselectionindexes%28_%29.md)
   Removes the object as the specified indexes from the receiver’s current selection.
-- [func setSelectedObjects([Any]) -> Bool](nsarraycontroller/setselectedobjects(_:).md)
+- [func setSelectedObjects([Any]) -> Bool](./setselectedobjects%28_%29.md)
   Sets the specified objects as the receiver’s current selection.
-- [var selectedObjects: [Any]!](nsarraycontroller/selectedobjects.md)
+- [var selectedObjects: [Any]!](./selectedobjects.md)
   An array containing the receiver’s selected objects
-- [func addSelectedObjects([Any]) -> Bool](nsarraycontroller/addselectedobjects(_:).md)
+- [func addSelectedObjects([Any]) -> Bool](./addselectedobjects%28_%29.md)
   Adds the specified objects from the receiver’s content array to the current selection.
-- [func removeSelectedObjects([Any]) -> Bool](nsarraycontroller/removeselectedobjects(_:).md)
+- [func removeSelectedObjects([Any]) -> Bool](./removeselectedobjects%28_%29.md)
   Removes the specified objects from the receiver’s current selection.
-- [func selectNext(Any?)](nsarraycontroller/selectnext(_:).md)
+- [func selectNext(Any?)](./selectnext%28_%29.md)
   Selects the next object, relative to the current selection, in the receiver’s arranged content.
-- [var canSelectNext: Bool](nsarraycontroller/canselectnext.md)
+- [var canSelectNext: Bool](./canselectnext.md)
   A Boolean value indicating whether the next object, relative to the current selection, in the receiver’s content array can be selected
-- [func selectPrevious(Any?)](nsarraycontroller/selectprevious(_:).md)
+- [func selectPrevious(Any?)](./selectprevious%28_%29.md)
   Selects the previous object, relative to the current selection, in the receiver’s arranged content.
-- [var canSelectPrevious: Bool](nsarraycontroller/canselectprevious.md)
+- [var canSelectPrevious: Bool](./canselectprevious.md)
   A Boolean value indicating whether the previous object, relative to the current selection, in the receiver’s content array can be selected
 
 

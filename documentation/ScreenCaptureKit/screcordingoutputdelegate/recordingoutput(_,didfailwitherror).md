@@ -1,7 +1,8 @@
 # recordingOutput(_:didFailWithError:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 optional func recordingOutput(_ recordingOutput: SCRecordingOutput, didFailWithError error: any Error)
+```
+
+```objc
+- (void) recordingOutput:(SCRecordingOutput *) recordingOutput didFailWithError:(NSError *) error;
 ```
 
 

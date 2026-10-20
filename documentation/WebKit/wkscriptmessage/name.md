@@ -1,7 +1,8 @@
 # name
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the message handler to which the message is sent.
 
@@ -16,6 +17,10 @@ The name of the message handler to which the message is sent.
 
 ```swift
 var name: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
 ```
 
 

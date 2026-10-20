@@ -1,18 +1,19 @@
 # OSLogType
 
 **Framework**: os  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The various log levels that the unified logging system provides.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,46 +21,51 @@ The various log levels that the unified logging system provides.
 struct OSLogType
 ```
 
+```c
+typedef enum { ... } os_log_type_t;
+```
+
 #### Overview
 
-A log level controls how and when the system writes a message to the unified logging system. To write a message with a specific log level, create a [`Logger`](logger.md) and call its [`log(level:_:)`](logger/log(level:_:).md) method. Alternatively, call the method that corresponds to the desired log level, such as [`debug(_:)`](logger/debug(_:).md) or [`fault(_:)`](logger/fault(_:).md).
+A log level controls how and when the system writes a message to the unified logging system. To write a message with a specific log level, create a [`Logger`](./logger.md) and call its [`log(level:_:)`](./logger/log%28level,_%29.md) method. Alternatively, call the method that corresponds to the desired log level, such as [`debug(_:)`](./logger/debug%28_%29.md) or [`fault(_:)`](./logger/fault%28_%29.md).
 
 ## Topics
 
 ### Getting Log Types
-- [static let debug: OSLogType](oslogtype/debug.md)
+- [static let debug: OSLogType](./oslogtype/debug.md)
   The debug log level.
-- [static let info: OSLogType](oslogtype/info.md)
+- [static let info: OSLogType](./oslogtype/info.md)
   The informative log level.
-- [static let `default`: OSLogType](oslogtype/default.md)
+- [static let `default`: OSLogType](./oslogtype/default.md)
   The default log level.
-- [static let error: OSLogType](oslogtype/error.md)
+- [static let error: OSLogType](./oslogtype/error.md)
   The error log level.
-- [static let fault: OSLogType](oslogtype/fault.md)
+- [static let fault: OSLogType](./oslogtype/fault.md)
   The fault log level.
 ### Creating a Log Type
-- [init(UInt8)](oslogtype/init(_:).md)
+- [init(UInt8)](./oslogtype/init%28_%29.md)
   Creates a log type from the specified value.
-- [init(rawValue: UInt8)](oslogtype/init(rawvalue:).md)
+- [init(rawValue: UInt8)](./oslogtype/init%28rawvalue%29.md)
   Creates a log type from the specified raw value.
 ### Getting the Raw Value
-- [var rawValue: UInt8](oslogtype/rawvalue.md)
+- [var rawValue: UInt8](./oslogtype/rawvalue.md)
   The log type’s raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct Logger](logger.md)
+### Log Messages
+- [struct Logger](./logger.md)
   An object for writing interpolated string messages to the unified logging system.
-- [Message Argument Formatters](message-argument-formatters.md)
+- [Message Argument Formatters](./message-argument-formatters.md)
   Manage the privacy and presentation of the message’s interpolated values using type-aware formatters.
 
 

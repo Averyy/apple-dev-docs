@@ -1,7 +1,8 @@
 # documentPickerWasCancelled(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user canceled the document picker.
 
@@ -17,9 +18,13 @@ Tells the delegate that the user canceled the document picker.
 optional func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController)
 ```
 
+```objc
+- (void) documentPickerWasCancelled:(UIDocumentPickerViewController *) controller;
+```
+
 ## Mentions
 
-- [Providing access to directories](providing-access-to-directories.md)
+- [Providing access to directories](../providing-access-to-directories.md)
 
 ## Parameters
 
@@ -27,9 +32,10 @@ optional func documentPickerWasCancelled(_ controller: UIDocumentPickerViewContr
 
 ## See Also
 
-- [func documentPicker(UIDocumentPickerViewController, didPickDocumentsAt: [URL])](uidocumentpickerdelegate/documentpicker(_:didpickdocumentsat:).md)
+### Responding to user actions
+- [func documentPicker(UIDocumentPickerViewController, didPickDocumentsAt: [URL])](./documentpicker%28_,didpickdocumentsat%29.md)
   Tells the delegate that the user has selected one or more documents.
-- [func documentPicker(UIDocumentPickerViewController, didPickDocumentAt: URL)](uidocumentpickerdelegate/documentpicker(_:didpickdocumentat:).md)
+- [func documentPicker(UIDocumentPickerViewController, didPickDocumentAt: URL)](./documentpicker%28_,didpickdocumentat%29.md)
   Tells the delegate that the user has selected a document or a destination.
 
 

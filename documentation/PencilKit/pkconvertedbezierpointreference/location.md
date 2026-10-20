@@ -1,7 +1,8 @@
 # location
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the cubic uniform B-Spline control point.
 
@@ -18,13 +19,18 @@ The location of the cubic uniform B-Spline control point.
 var location: CGPoint { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CGPoint location;
+```
+
 ## See Also
 
-- [var index: Int](pkconvertedbezierpointreference/index.md)
+### Getting the point data
+- [var index: Int](./index.md)
   The index of the point along the path.
-- [var pointCount: Int](pkconvertedbezierpointreference/pointcount.md)
+- [var pointCount: Int](./pointcount.md)
   The total number of B-Spline control points in the path.
-- [var bezierSegmentIndex: Int](pkconvertedbezierpointreference/beziersegmentindex.md)
+- [var bezierSegmentIndex: Int](./beziersegmentindex.md)
   The index of the Bézier segment the point originates from, not including `move to` elements.
 
 

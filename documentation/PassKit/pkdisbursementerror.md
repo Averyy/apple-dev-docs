@@ -1,7 +1,8 @@
 # PKDisbursementError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes errors that can occur while processing the disbursement.
 
@@ -21,46 +22,47 @@ struct PKDisbursementError
 ## Topics
 
 ### Error details
-- [PKDisbursementError.Code](pkdisbursementerror/code.md)
+- [PKDisbursementError.Code](./pkdisbursementerror/code.md)
   Values that describe errors that can occur while processing the disbursement.
-- [var errorCode: Int](../foundation/customnserror/errorcode-2opgi.md)
+- [var errorCode: Int](../Foundation/customnserror/errorcode-2opgi.md)
   The error code within the given domain.
-- [var errorUserInfo: [String : Any]](../foundation/customnserror/erroruserinfo-1aas5.md)
+- [var errorUserInfo: [String : Any]](../Foundation/customnserror/erroruserinfo-1aas5.md)
   The default user-info dictionary.
 ### Type properties
-- [static var errorDomain: String](pkdisbursementerror/errordomain.md)
-- [static var recipientContactInvalidError: PKDisbursementError.Code](pkdisbursementerror/recipientcontactinvaliderror.md)
+- [static var errorDomain: String](./pkdisbursementerror/errordomain.md)
+- [static var recipientContactInvalidError: PKDisbursementError.Code](./pkdisbursementerror/recipientcontactinvaliderror.md)
   A value that indicates the recipient’s contact information is invalid.
-- [static var unknownError: PKDisbursementError.Code](pkdisbursementerror/unknownerror.md)
+- [static var unknownError: PKDisbursementError.Code](./pkdisbursementerror/unknownerror.md)
   A value that indicates an unknown error occurred.
-- [static var unsupportedCardError: PKDisbursementError.Code](pkdisbursementerror/unsupportedcarderror.md)
+- [static var unsupportedCardError: PKDisbursementError.Code](./pkdisbursementerror/unsupportedcarderror.md)
   A value that indicates that the framework doesn’t support the card the individual presented for this disbursement.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PKDisbursementErrorKey](pkdisbursementerrorkey.md)
+### Errors
+- [struct PKDisbursementErrorKey](./pkdisbursementerrorkey.md)
   Values that describe errors that can occur when processing disbursements.
-- [struct PKPaymentError](pkpaymenterror.md)
+- [struct PKPaymentError](./pkpaymenterror.md)
   An error type that you create to indicate problems with address or contact information on an Apple Pay sheet.
-- [PKPaymentError.Code](pkpaymenterror/code.md)
+- [PKPaymentError.Code](./pkpaymenterror/code.md)
   An error code that you provide to indicate problems with address or contact information on an Apple Pay sheet.
-- [struct PKPaymentErrorKey](pkpaymenterrorkey.md)
+- [struct PKPaymentErrorKey](./pkpaymenterrorkey.md)
   Additional details about an error on the Apple Pay sheet.
-- [PKDisbursementError.Code](pkdisbursementerror/code.md)
+- [PKDisbursementError.Code](./pkdisbursementerror/code.md)
   Values that describe errors that can occur while processing the disbursement.
-- [let PKPaymentErrorDomain: String](pkpaymenterrordomain.md)
+- [let PKPaymentErrorDomain: String](./pkpaymenterrordomain.md)
   The error domain for specific errors associated with Apple Pay in-app or web payments.
-- [let PKDisbursementErrorDomain: String](pkdisbursementerrordomain.md)
+- [let PKDisbursementErrorDomain: String](./pkdisbursementerrordomain.md)
   The error domain to use for errors with in-app disbursements.
 
 

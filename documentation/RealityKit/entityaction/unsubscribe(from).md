@@ -1,7 +1,8 @@
 # unsubscribe(from:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Unsubscribes from an action event.
 

@@ -1,7 +1,8 @@
 # suffix(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence, up to the given maximum length, containing the final elements of the sequence.
 
@@ -32,7 +33,7 @@ print(numbers.suffix(10))
 // Prints "[1, 2, 3, 4, 5]"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 

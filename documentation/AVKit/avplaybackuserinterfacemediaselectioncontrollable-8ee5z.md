@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceMediaSelectionControllable
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Provides audio and subtitle selection capabilities for media content.
 
@@ -20,29 +21,30 @@ protocol AVPlaybackUserInterfaceMediaSelectionControllable : AnyObject, Observab
 ## Topics
 
 ### Instance Properties
-- [var audioDescriptionOptions: [AVPlaybackUserInterfaceMediaSelectionOption]](avplaybackuserinterfacemediaselectioncontrollable-8ee5z/audiodescriptionoptions.md)
+- [var audioDescriptionOptions: [AVPlaybackUserInterfaceMediaSelectionOption]](./avplaybackuserinterfacemediaselectioncontrollable-8ee5z/audiodescriptionoptions.md)
   Array of available audio description track options.
-- [var audioOptions: [AVPlaybackUserInterfaceMediaSelectionOption]](avplaybackuserinterfacemediaselectioncontrollable-8ee5z/audiooptions.md)
+- [var audioOptions: [AVPlaybackUserInterfaceMediaSelectionOption]](./avplaybackuserinterfacemediaselectioncontrollable-8ee5z/audiooptions.md)
   Array of available audio track options.
-- [var currentAudioDescriptionOption: AVPlaybackUserInterfaceMediaSelectionOption?](avplaybackuserinterfacemediaselectioncontrollable-8ee5z/currentaudiodescriptionoption.md)
+- [var currentAudioDescriptionOption: AVPlaybackUserInterfaceMediaSelectionOption?](./avplaybackuserinterfacemediaselectioncontrollable-8ee5z/currentaudiodescriptionoption.md)
   The currently selected audio description track.
-- [var currentAudioOption: AVPlaybackUserInterfaceMediaSelectionOption?](avplaybackuserinterfacemediaselectioncontrollable-8ee5z/currentaudiooption.md)
+- [var currentAudioOption: AVPlaybackUserInterfaceMediaSelectionOption?](./avplaybackuserinterfacemediaselectioncontrollable-8ee5z/currentaudiooption.md)
   The currently selected audio track.
-- [var currentLegibleOption: AVPlaybackUserInterfaceMediaSelectionOption?](avplaybackuserinterfacemediaselectioncontrollable-8ee5z/currentlegibleoption.md)
+- [var currentLegibleOption: AVPlaybackUserInterfaceMediaSelectionOption?](./avplaybackuserinterfacemediaselectioncontrollable-8ee5z/currentlegibleoption.md)
   The currently selected subtitle or caption track.
-- [var legibleOptions: [AVPlaybackUserInterfaceMediaSelectionOption]](avplaybackuserinterfacemediaselectioncontrollable-8ee5z/legibleoptions.md)
+- [var legibleOptions: [AVPlaybackUserInterfaceMediaSelectionOption]](./avplaybackuserinterfacemediaselectioncontrollable-8ee5z/legibleoptions.md)
   Array of available subtitle and caption track options.
 
 ## Relationships
 
 ### Inherits From
-- [Observable](../observation/observable.md)
+- [Observable](../Observation/observable.md)
 ### Inherited By
-- [AVPlaybackUserInterfaceControllable](avplaybackuserinterfacecontrollable-92fri.md)
+- [AVPlaybackUserInterfaceControllable](./avplaybackuserinterfacecontrollable-92fri.md)
 
 ## See Also
 
-- [class AVPlaybackUserInterfaceMediaSelectionOption](avplaybackuserinterfacemediaselectionoption.md)
+### Media selection
+- [class AVPlaybackUserInterfaceMediaSelectionOption](./avplaybackuserinterfacemediaselectionoption.md)
   Represents a media selection option for audio tracks or subtitle tracks.
 
 

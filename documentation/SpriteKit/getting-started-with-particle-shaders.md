@@ -1,12 +1,13 @@
 # Getting Started with Particle Shaders
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Provide custom shader code to alter a particle’s look.
 
 #### Overview
 
-Use the shader property of an emitter node to change the appearance of a texture with a custom OpenGL ES fragment shader embedded within an [`SKShader`](skshader.md). Custom shaders offer almost limitless possibilities, from adding blurs and color treatments to textures, to generating imagery such as random noise.
+Use the shader property of an emitter node to change the appearance of a texture with a custom OpenGL ES fragment shader embedded within an [`SKShader`](./skshader.md). Custom shaders offer almost limitless possibilities, from adding blurs and color treatments to textures, to generating imagery such as random noise.
 
 The following code shows a custom shader that renders particles with a radial gradient. The center of each particle is opaque white and the edges are transparent black.
 
@@ -23,13 +24,14 @@ emitter.shader = radialGradientShader
 
 ## See Also
 
-- [var shader: SKShader?](skemitternode/shader.md)
+### Taking Full Control of Particle Drawing with a Shader
+- [var shader: SKShader?](./skemitternode/shader.md)
   A custom shader used to determine how particles are rendered.
-- [var attributeValues: [String : SKAttributeValue]](skemitternode/attributevalues.md)
+- [var attributeValues: [String : SKAttributeValue]](./skemitternode/attributevalues.md)
   The values of each attribute associated with the node’s attached shader.
-- [func setValue(SKAttributeValue, forAttribute: String)](skemitternode/setvalue(_:forattribute:).md)
+- [func setValue(SKAttributeValue, forAttribute: String)](./skemitternode/setvalue%28_,forattribute%29.md)
   Sets an attribute value for an attached shader.
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](skemitternode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./skemitternode/value%28forattributenamed%29.md)
   Gets the value of a shader attribute.
 
 

@@ -1,7 +1,8 @@
 # MTRNetworkCommissioningWiFiBand.band2G4
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 case band2G4
+```
+
+```c
+MTRNetworkCommissioningWiFiBand2G4
 ```
 
 

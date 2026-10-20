@@ -1,7 +1,8 @@
 # UIGraphicsSetPDFContextURLForRect(_:_:)
 
 **Framework**: UIKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Links a rectangular area on the current page to the specified URL.
 
@@ -9,7 +10,7 @@ Links a rectangular area on the current page to the specified URL.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Links a rectangular area on the current page to the specified URL.
 
 ```swift
 func UIGraphicsSetPDFContextURLForRect(_ url: URL, _ rect: CGRect)
+```
+
+```c
+extern void UIGraphicsSetPDFContextURLForRect(NSURL *url, CGRect rect);
 ```
 
 #### Discussion
@@ -32,21 +37,22 @@ If the current graphics context is not a PDF context, this function does nothing
 
 ## See Also
 
-- [func UIGraphicsBeginPDFContextToData(NSMutableData, CGRect, [AnyHashable : Any]?)](uigraphicsbeginpdfcontexttodata(_:_:_:).md)
+### PDF creation
+- [func UIGraphicsBeginPDFContextToData(NSMutableData, CGRect, [AnyHashable : Any]?)](./uigraphicsbeginpdfcontexttodata%28_,_,_%29.md)
   Creates a PDF graphics context that targets the specified mutable data object.
-- [func UIGraphicsBeginPDFContextToFile(String, CGRect, [AnyHashable : Any]?) -> Bool](uigraphicsbeginpdfcontexttofile(_:_:_:).md)
+- [func UIGraphicsBeginPDFContextToFile(String, CGRect, [AnyHashable : Any]?) -> Bool](./uigraphicsbeginpdfcontexttofile%28_,_,_%29.md)
   Creates a PDF graphics context that targets a file at the specified path.
-- [func UIGraphicsEndPDFContext()](uigraphicsendpdfcontext().md)
+- [func UIGraphicsEndPDFContext()](./uigraphicsendpdfcontext%28%29.md)
   Closes a PDF graphics context and pops it from the current context stack.
-- [func UIGraphicsBeginPDFPage()](uigraphicsbeginpdfpage().md)
+- [func UIGraphicsBeginPDFPage()](./uigraphicsbeginpdfpage%28%29.md)
   Marks the beginning of a new page in a PDF context and configures it using default values.
-- [func UIGraphicsBeginPDFPageWithInfo(CGRect, [AnyHashable : Any]?)](uigraphicsbeginpdfpagewithinfo(_:_:).md)
+- [func UIGraphicsBeginPDFPageWithInfo(CGRect, [AnyHashable : Any]?)](./uigraphicsbeginpdfpagewithinfo%28_,_%29.md)
   Marks the beginning of a new page in a PDF context and configures it using the specified custom values.
-- [func UIGraphicsGetPDFContextBounds() -> CGRect](uigraphicsgetpdfcontextbounds().md)
+- [func UIGraphicsGetPDFContextBounds() -> CGRect](./uigraphicsgetpdfcontextbounds%28%29.md)
   Returns the current page bounds.
-- [func UIGraphicsAddPDFContextDestinationAtPoint(String, CGPoint)](uigraphicsaddpdfcontextdestinationatpoint(_:_:).md)
+- [func UIGraphicsAddPDFContextDestinationAtPoint(String, CGPoint)](./uigraphicsaddpdfcontextdestinationatpoint%28_,_%29.md)
   Creates a jump destination in the current page.
-- [func UIGraphicsSetPDFContextDestinationForRect(String, CGRect)](uigraphicssetpdfcontextdestinationforrect(_:_:).md)
+- [func UIGraphicsSetPDFContextDestinationForRect(String, CGRect)](./uigraphicssetpdfcontextdestinationforrect%28_,_%29.md)
   Links a rectangular area on the current page to the specified jump destination.
 
 

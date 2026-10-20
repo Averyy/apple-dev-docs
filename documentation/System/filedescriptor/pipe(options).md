@@ -1,7 +1,8 @@
 # pipe(options:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a unidirectional data channel, which can be used for interprocess communication.
 

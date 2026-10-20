@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/usage/kv_cache.html
 
 # Writing a Fast KV Cache
 
-**
-
-- [.rst](../_sources/usage/kv_cache.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Writing a Fast KV Cache
-
- Table of contents 
-
-## Contents
-
-# Writing a Fast KV Cache
-
 Autoregressive generation appends one position to the key and value arrays for
 each generated token. The append strategy can dominate KV-cache performance.
 
@@ -106,5 +79,3 @@ This both amortizes growth and enables the fused cuDNN attention kernel on
 CUDA. For single-token attention, the key and value arrays must be slices of a
 contiguous cache with a capacity that is a multiple of 256, and at least 256
 positions must be in use. Other chunk sizes silently use a slower path.
-
-** Contents

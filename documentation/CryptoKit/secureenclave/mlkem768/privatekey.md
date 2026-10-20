@@ -1,7 +1,8 @@
 # SecureEnclave.MLKEM768.PrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -21,28 +22,28 @@ struct PrivateKey
 ## Topics
 
 ### Creating a private key
-- [static func generate() throws -> SecureEnclave.MLKEM768.PrivateKey](secureenclave/mlkem768/privatekey/generate.md)
+- [static func generate() throws -> SecureEnclave.MLKEM768.PrivateKey](./privatekey/generate%28%29.md)
   Generates a new random private key.
-- [init(accessControl: SecAccessControl, authenticationContext: LAContext?) throws](secureenclave/mlkem768/privatekey/init(accesscontrol:authenticationcontext:).md)
-- [init<D>(dataRepresentation: D, authenticationContext: LAContext?) throws](secureenclave/mlkem768/privatekey/init(datarepresentation:authenticationcontext:).md)
+- [init(accessControl: SecAccessControl, authenticationContext: LAContext?) throws](./privatekey/init%28accesscontrol,authenticationcontext%29.md)
+- [init<D>(dataRepresentation: D, authenticationContext: LAContext?) throws](./privatekey/init%28datarepresentation,authenticationcontext%29.md)
 ### Accessing the key’s properties
-- [let dataRepresentation: Data](secureenclave/mlkem768/privatekey/datarepresentation.md)
+- [let dataRepresentation: Data](./privatekey/datarepresentation.md)
   A data representation of the private key.
-- [let publicKey: MLKEM768.PublicKey](secureenclave/mlkem768/privatekey/publickey.md)
+- [let publicKey: MLKEM768.PublicKey](./privatekey/publickey.md)
   The corresponding public key.
 ### Decapsulating shared secrets
-- [func decapsulate<D>(D) throws -> SymmetricKey](secureenclave/mlkem768/privatekey/decapsulate(_:).md)
+- [func decapsulate<D>(D) throws -> SymmetricKey](./privatekey/decapsulate%28_%29.md)
   Decapsulates the encapsulated shared secret
 ### Initializers
-- [init(accessControl: SecAccessControl) throws](secureenclave/mlkem768/privatekey/init(accesscontrol:).md)
-- [init<D>(dataRepresentation: D) throws](secureenclave/mlkem768/privatekey/init(datarepresentation:).md)
+- [init(accessControl: SecAccessControl) throws](./privatekey/init%28accesscontrol%29.md)
+- [init<D>(dataRepresentation: D) throws](./privatekey/init%28datarepresentation%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [KEMPrivateKey](kemprivatekey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [KEMPrivateKey](../../kemprivatekey.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # preferringMonochrome()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a color configuration that specifies that the symbol image uses its monochrome variant.
 
@@ -19,9 +20,13 @@ Creates a color configuration that specifies that the symbol image uses its mono
 class func preferringMonochrome() -> Self
 ```
 
+```objc
++ (instancetype) configurationPreferringMonochrome;
+```
+
 ## Mentions
 
-- [Configuring and displaying symbol images in your UI](configuring-and-displaying-symbol-images-in-your-ui.md)
+- [Configuring and displaying symbol images in your UI](../../configuring-and-displaying-symbol-images-in-your-ui.md)
 
 #### Return Value
 
@@ -29,11 +34,12 @@ A symbol configuration that acquires the monochrome variant of a symbol.
 
 ## See Also
 
-- [convenience init(hierarchicalColor: UIColor)](uiimage/symbolconfiguration-swift.class/init(hierarchicalcolor:).md)
+### Creating a color configuration
+- [convenience init(hierarchicalColor: UIColor)](./init%28hierarchicalcolor%29.md)
   Creates a color configuration with a color scheme that originates from one color.
-- [convenience init(paletteColors: [UIColor])](uiimage/symbolconfiguration-swift.class/init(palettecolors:).md)
+- [convenience init(paletteColors: [UIColor])](./init%28palettecolors%29.md)
   Creates a color configuration with a color scheme from a palette of multiple colors.
-- [class func preferringMulticolor() -> Self](uiimage/symbolconfiguration-swift.class/preferringmulticolor.md)
+- [class func preferringMulticolor() -> Self](./preferringmulticolor%28%29.md)
   Creates a color configuration that specifies that the symbol image uses its multicolor variant, if one exists.
 
 

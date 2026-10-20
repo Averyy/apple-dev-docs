@@ -1,10 +1,11 @@
 # kBluetoothServiceClassMajorAny
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,21 +13,26 @@
 var kBluetoothServiceClassMajorAny: Int { get }
 ```
 
+```c
+kBluetoothServiceClassMajorAny
+```
+
 ## See Also
 
-- [var kBluetoothServiceClassMajorAudio: Int](kbluetoothserviceclassmajoraudio.md)
-- [var kBluetoothServiceClassMajorCapturing: Int](kbluetoothserviceclassmajorcapturing.md)
-- [var kBluetoothServiceClassMajorEnd: Int](kbluetoothserviceclassmajorend.md)
-- [var kBluetoothServiceClassMajorInformation: Int](kbluetoothserviceclassmajorinformation.md)
-- [var kBluetoothServiceClassMajorLimitedDiscoverableMode: Int](kbluetoothserviceclassmajorlimiteddiscoverablemode.md)
-- [var kBluetoothServiceClassMajorNetworking: Int](kbluetoothserviceclassmajornetworking.md)
-- [var kBluetoothServiceClassMajorNone: Int](kbluetoothserviceclassmajornone.md)
-- [var kBluetoothServiceClassMajorObjectTransfer: Int](kbluetoothserviceclassmajorobjecttransfer.md)
-- [var kBluetoothServiceClassMajorPositioning: Int](kbluetoothserviceclassmajorpositioning.md)
-- [var kBluetoothServiceClassMajorRendering: Int](kbluetoothserviceclassmajorrendering.md)
-- [var kBluetoothServiceClassMajorReserved1: Int](kbluetoothserviceclassmajorreserved1.md)
-- [var kBluetoothServiceClassMajorReserved2: Int](kbluetoothserviceclassmajorreserved2.md)
-- [var kBluetoothServiceClassMajorTelephony: Int](kbluetoothserviceclassmajortelephony.md)
+### Constants
+- [var kBluetoothServiceClassMajorAudio: Int](./kbluetoothserviceclassmajoraudio.md)
+- [var kBluetoothServiceClassMajorCapturing: Int](./kbluetoothserviceclassmajorcapturing.md)
+- [var kBluetoothServiceClassMajorEnd: Int](./kbluetoothserviceclassmajorend.md)
+- [var kBluetoothServiceClassMajorInformation: Int](./kbluetoothserviceclassmajorinformation.md)
+- [var kBluetoothServiceClassMajorLimitedDiscoverableMode: Int](./kbluetoothserviceclassmajorlimiteddiscoverablemode.md)
+- [var kBluetoothServiceClassMajorNetworking: Int](./kbluetoothserviceclassmajornetworking.md)
+- [var kBluetoothServiceClassMajorNone: Int](./kbluetoothserviceclassmajornone.md)
+- [var kBluetoothServiceClassMajorObjectTransfer: Int](./kbluetoothserviceclassmajorobjecttransfer.md)
+- [var kBluetoothServiceClassMajorPositioning: Int](./kbluetoothserviceclassmajorpositioning.md)
+- [var kBluetoothServiceClassMajorRendering: Int](./kbluetoothserviceclassmajorrendering.md)
+- [var kBluetoothServiceClassMajorReserved1: Int](./kbluetoothserviceclassmajorreserved1.md)
+- [var kBluetoothServiceClassMajorReserved2: Int](./kbluetoothserviceclassmajorreserved2.md)
+- [var kBluetoothServiceClassMajorTelephony: Int](./kbluetoothserviceclassmajortelephony.md)
 
 
 ---

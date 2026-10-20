@@ -1,14 +1,15 @@
 # pages_shared_now_private
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 unsigned int pages_shared_now_private;
 ```
 

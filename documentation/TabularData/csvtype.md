@@ -1,7 +1,8 @@
 # CSVType
 
 **Framework**: TabularData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Represents the value types in a CSV file.
 
@@ -23,36 +24,37 @@ enum CSVType
 ## Topics
 
 ### Enumeration Cases
-- [CSVType.boolean](csvtype/boolean.md)
+- [CSVType.boolean](./csvtype/boolean.md)
   A Boolean type.
-- [CSVType.data](csvtype/data.md)
+- [CSVType.data](./csvtype/data.md)
   A binary data type.
-- [CSVType.date](csvtype/date.md)
+- [CSVType.date](./csvtype/date.md)
   A date type.
-- [CSVType.double](csvtype/double.md)
+- [CSVType.double](./csvtype/double.md)
   A double-precision floating-point type.
-- [CSVType.float](csvtype/float.md)
+- [CSVType.float](./csvtype/float.md)
   A single-precision floating-point type.
-- [CSVType.integer](csvtype/integer.md)
+- [CSVType.integer](./csvtype/integer.md)
   An integer type.
-- [CSVType.string](csvtype/string.md)
+- [CSVType.string](./csvtype/string.md)
   A string type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(contentsOfCSVFile: URL, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](dataframe/init(contentsofcsvfile:columns:rows:types:options:).md)
+### Creating a Data Frame from a CSV
+- [init(contentsOfCSVFile: URL, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./dataframe/init%28contentsofcsvfile,columns,rows,types,options%29.md)
   Creates a data frame from a CSV file.
-- [init(csvData: Data, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](dataframe/init(csvdata:columns:rows:types:options:).md)
+- [init(csvData: Data, columns: [String]?, rows: Range<Int>?, types: [String : CSVType], options: CSVReadingOptions) throws](./dataframe/init%28csvdata,columns,rows,types,options%29.md)
   Creates a data frame from CSV data.
-- [struct CSVReadingOptions](csvreadingoptions.md)
+- [struct CSVReadingOptions](./csvreadingoptions.md)
   A set of CSV file-reading options.
 
 

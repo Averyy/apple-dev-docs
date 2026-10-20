@@ -1,7 +1,8 @@
 # init(resource:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL from a resource.
 
@@ -22,11 +23,11 @@ init?(resource: URLResource)
 
 #### Discussion
 
-Use this initializer to resolve [`URLResource`](urlresource.md) instances, possibly received from other processes, into [`URL`](url.md) instances.
+Use this initializer to resolve [`URLResource`](../urlresource.md) instances, possibly received from other processes, into [`URL`](../url.md) instances.
 
 ## Parameters
 
-- `resource`: A [`URLResource`](urlresource.md) that provides a reference to a resource in a given bundle.
+- `resource`: A [`URLResource`](../urlresource.md) that provides a reference to a resource in a given bundle.
 
 
 ---

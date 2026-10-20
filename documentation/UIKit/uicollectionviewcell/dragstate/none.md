@@ -1,7 +1,8 @@
 # UICollectionViewCell.DragState.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The cell isn’t involved in a drag.
 
@@ -17,11 +18,16 @@ The cell isn’t involved in a drag.
 case none
 ```
 
+```c
+UICollectionViewCellDragStateNone
+```
+
 ## See Also
 
-- [UICollectionViewCell.DragState.lifting](uicollectionviewcell/dragstate/lifting.md)
+### Constants
+- [UICollectionViewCell.DragState.lifting](./lifting.md)
   The cell is being animated off of the surface of the collection view.
-- [UICollectionViewCell.DragState.dragging](uicollectionviewcell/dragstate/dragging.md)
+- [UICollectionViewCell.DragState.dragging](./dragging.md)
   The cell is being dragged.
 
 

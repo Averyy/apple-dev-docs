@@ -1,11 +1,12 @@
 # DataProtocol Implementations
 
-**Framework**: Core Media
+**Framework**: Core Media  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var regions: [CMReadOnlyDataBlockBuffer.BlockRegion]](cmreadonlydatablockbuffer/regions.md)
+- [var regions: [CMReadOnlyDataBlockBuffer.BlockRegion]](./regions.md)
   The regions that make up the storage of the block buffer.
 
 

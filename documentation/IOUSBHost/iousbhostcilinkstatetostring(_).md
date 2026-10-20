@@ -1,7 +1,8 @@
 # IOUSBHostCILinkStateToString(_:)
 
 **Framework**: IOUSBHost  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,23 +14,28 @@
 func IOUSBHostCILinkStateToString(_ linkState: IOUSBHostCILinkState) -> UnsafePointer<CChar>!
 ```
 
+```c
+const char *IOUSBHostCILinkStateToString(IOUSBHostCILinkState linkState);
+```
+
 ## See Also
 
-- [func IOUSBGetEndpointBurstSize(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!, UnsafePointer<IOUSBSuperSpeedEndpointCompanionDescriptor>!, UnsafePointer<IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor>!) -> UInt32](iousbgetendpointburstsize(_:_:_:_:).md)
-- [func IOUSBGetEndpointMult(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!, UnsafePointer<IOUSBSuperSpeedEndpointCompanionDescriptor>!, UnsafePointer<IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor>!) -> UInt8](iousbgetendpointmult(_:_:_:_:).md)
-- [func IOUSBGetEndpointSynchronizationType(UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt8](iousbgetendpointsynchronizationtype(_:).md)
-- [func IOUSBGetEndpointUsageType(UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt8](iousbgetendpointusagetype(_:).md)
-- [func IOUSBGetPlatformCapabilityDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBPlatformCapabilityDescriptor>!](iousbgetplatformcapabilitydescriptor(_:).md)
-- [func IOUSBGetPlatformCapabilityDescriptorWithUUID(UnsafePointer<IOUSBBOSDescriptor>!, UnsafeMutablePointer<UInt8>!) -> UnsafePointer<IOUSBPlatformCapabilityDescriptor>!](iousbgetplatformcapabilitydescriptorwithuuid(_:_:).md)
-- [func IOUSBGetSuperSpeedPlusDeviceCapabilityDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBDeviceCapabilitySuperSpeedPlusUSB>!](iousbgetsuperspeedplusdevicecapabilitydescriptor(_:).md)
-- [func IOUSBHostCIControllerStateToString(IOUSBHostCIControllerState) -> UnsafePointer<CChar>!](iousbhostcicontrollerstatetostring(_:).md)
-- [func IOUSBHostCIDeviceSpeedToString(IOUSBHostCIDeviceSpeed) -> UnsafePointer<CChar>!](iousbhostcidevicespeedtostring(_:).md)
-- [func IOUSBHostCIDeviceStateToString(IOUSBHostCIDeviceState) -> UnsafePointer<CChar>!](iousbhostcidevicestatetostring(_:).md)
-- [func IOUSBHostCIEndpointStateToString(IOUSBHostCIEndpointState) -> UnsafePointer<CChar>!](iousbhostciendpointstatetostring(_:).md)
-- [func IOUSBHostCIExceptionTypeToString(IOUSBHostCIExceptionType) -> UnsafePointer<CChar>!](iousbhostciexceptiontypetostring(_:).md)
-- [func IOUSBHostCILinkStateEnabled(IOUSBHostCILinkState) -> Bool](iousbhostcilinkstateenabled(_:).md)
-- [func IOUSBHostCIMessageStatusFromIOReturn(IOReturn) -> IOUSBHostCIMessageStatus](iousbhostcimessagestatusfromioreturn(_:).md)
-- [func IOUSBHostCIMessageStatusToIOReturn(IOUSBHostCIMessageStatus) -> IOReturn](iousbhostcimessagestatustoioreturn(_:).md)
+### Functions
+- [func IOUSBGetEndpointBurstSize(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!, UnsafePointer<IOUSBSuperSpeedEndpointCompanionDescriptor>!, UnsafePointer<IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor>!) -> UInt32](./iousbgetendpointburstsize%28_,_,_,_%29.md)
+- [func IOUSBGetEndpointMult(UInt32, UnsafePointer<IOUSBEndpointDescriptor>!, UnsafePointer<IOUSBSuperSpeedEndpointCompanionDescriptor>!, UnsafePointer<IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor>!) -> UInt8](./iousbgetendpointmult%28_,_,_,_%29.md)
+- [func IOUSBGetEndpointSynchronizationType(UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt8](./iousbgetendpointsynchronizationtype%28_%29.md)
+- [func IOUSBGetEndpointUsageType(UnsafePointer<IOUSBEndpointDescriptor>!) -> UInt8](./iousbgetendpointusagetype%28_%29.md)
+- [func IOUSBGetPlatformCapabilityDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBPlatformCapabilityDescriptor>!](./iousbgetplatformcapabilitydescriptor%28_%29.md)
+- [func IOUSBGetPlatformCapabilityDescriptorWithUUID(UnsafePointer<IOUSBBOSDescriptor>!, UnsafeMutablePointer<UInt8>!) -> UnsafePointer<IOUSBPlatformCapabilityDescriptor>!](./iousbgetplatformcapabilitydescriptorwithuuid%28_,_%29.md)
+- [func IOUSBGetSuperSpeedPlusDeviceCapabilityDescriptor(UnsafePointer<IOUSBBOSDescriptor>!) -> UnsafePointer<IOUSBDeviceCapabilitySuperSpeedPlusUSB>!](./iousbgetsuperspeedplusdevicecapabilitydescriptor%28_%29.md)
+- [func IOUSBHostCIControllerStateToString(IOUSBHostCIControllerState) -> UnsafePointer<CChar>!](./iousbhostcicontrollerstatetostring%28_%29.md)
+- [func IOUSBHostCIDeviceSpeedToString(IOUSBHostCIDeviceSpeed) -> UnsafePointer<CChar>!](./iousbhostcidevicespeedtostring%28_%29.md)
+- [func IOUSBHostCIDeviceStateToString(IOUSBHostCIDeviceState) -> UnsafePointer<CChar>!](./iousbhostcidevicestatetostring%28_%29.md)
+- [func IOUSBHostCIEndpointStateToString(IOUSBHostCIEndpointState) -> UnsafePointer<CChar>!](./iousbhostciendpointstatetostring%28_%29.md)
+- [func IOUSBHostCIExceptionTypeToString(IOUSBHostCIExceptionType) -> UnsafePointer<CChar>!](./iousbhostciexceptiontypetostring%28_%29.md)
+- [func IOUSBHostCILinkStateEnabled(IOUSBHostCILinkState) -> Bool](./iousbhostcilinkstateenabled%28_%29.md)
+- [func IOUSBHostCIMessageStatusFromIOReturn(IOReturn) -> IOUSBHostCIMessageStatus](./iousbhostcimessagestatusfromioreturn%28_%29.md)
+- [func IOUSBHostCIMessageStatusToIOReturn(IOUSBHostCIMessageStatus) -> IOReturn](./iousbhostcimessagestatustoioreturn%28_%29.md)
 
 
 ---

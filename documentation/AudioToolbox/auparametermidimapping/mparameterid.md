@@ -1,15 +1,20 @@
 # mParameterID
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var mParameterID: AudioUnitParameterID
+```
+
+```c
+AudioUnitParameterID mParameterID;
 ```
 
 

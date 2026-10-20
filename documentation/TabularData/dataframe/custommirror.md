@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror that reflects the data frame.
 
@@ -22,9 +23,10 @@ var customMirror: Mirror { get }
 
 ## See Also
 
-- [var description: String](dataframe/description.md)
+### Describing a Data Frame
+- [var description: String](./description.md)
   A text representation of the data frame.
-- [var debugDescription: String](dataframe/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the data frame suitable for debugging.
 
 

@@ -1,7 +1,8 @@
 # RemoveObject
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a video object from the driver.
 
@@ -10,7 +11,7 @@ Removes a video object from the driver.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RemoveObject(IOUserVideoObject *in_object);
 ```
 
@@ -28,11 +29,12 @@ The objects’s reference count will be decremented if it was successfully remov
 
 ## See Also
 
-- [AddObject](iouservideodriver/addobject.md)
+### Working with video objects
+- [AddObject](./addobject.md)
   Adds a video object to the driver.
-- [IOUserVideoObject](iouservideoobject.md)
+- [IOUserVideoObject](../iouservideoobject.md)
   The base class for all video objects.
-- [GetVideoObjectForObjectID](iouservideodriver/getvideoobjectforobjectid.md)
+- [GetVideoObjectForObjectID](./getvideoobjectforobjectid.md)
   Gets the video object that corresponds to a video object identifier.
 
 

@@ -1,17 +1,19 @@
 # Size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An unsigned 32-bit integer holding the size of the subtitle style atom.
 
 ## See Also
 
-- [Type](subtitle_style_atom/type.md)
+### Data fields
+- [Type](./type.md)
   An unsigned 32-bit field.
-- [Entry count](subtitle_style_atom/entry_count.md)
+- [Entry count](./entry_count.md)
   An unsigned 16-bit integer specifying how many subtitle text style records follow this entry count.
-- [Subtitle text style record](subtitle_style_atom/subtitle_text_style_record.md)
+- [Subtitle text style record](./subtitle_text_style_record.md)
   One or more records that provide details about the subtitle’s style.
 
 

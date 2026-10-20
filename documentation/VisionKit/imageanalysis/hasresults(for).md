@@ -1,7 +1,8 @@
 # hasResults(for:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the analysis finds the specified types in the image.
 

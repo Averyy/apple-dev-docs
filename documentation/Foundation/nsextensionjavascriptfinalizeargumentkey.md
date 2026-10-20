@@ -1,7 +1,8 @@
 # NSExtensionJavaScriptFinalizeArgumentKey
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is an item of type `kUTTypePropertyList`. The item contains an `NSDictionary` that contains the arguments to be passed to a JavaScript finalize method.
 
@@ -19,9 +20,14 @@ A key whose value is an item of type `kUTTypePropertyList`. The item contains an
 let NSExtensionJavaScriptFinalizeArgumentKey: String
 ```
 
+```c
+extern NSString * const NSExtensionJavaScriptFinalizeArgumentKey;
+```
+
 ## See Also
 
-- [let NSExtensionJavaScriptPreprocessingResultsKey: String](nsextensionjavascriptpreprocessingresultskey.md)
+### Constants
+- [let NSExtensionJavaScriptPreprocessingResultsKey: String](./nsextensionjavascriptpreprocessingresultskey.md)
   A key whose value is an item of type `kUTTypePropertyList`. The item contains an `NSDictionary` that contains the object returned by the JavaScript code to its completion function.
 
 

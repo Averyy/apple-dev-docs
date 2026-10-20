@@ -1,7 +1,8 @@
 # size
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum size, in bytes, that a buffer slice must have to be bound to this slot.
 
@@ -19,7 +20,8 @@ var size: Int { get set }
 
 ## See Also
 
-- [init(size: Int)](lowlevelargumenttable/descriptor-swift.struct/buffer/init(size:).md)
+### Creating a buffer descriptor
+- [init(size: Int)](./init%28size%29.md)
   Creates a buffer slot descriptor with the given size.
 
 

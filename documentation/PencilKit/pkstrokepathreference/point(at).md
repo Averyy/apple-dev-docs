@@ -1,7 +1,8 @@
 # point(at:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the B-spline control point at an index point that you provide.
 
@@ -18,9 +19,13 @@ Returns the B-spline control point at an index point that you provide.
 func point(at i: Int) -> PKStrokePoint
 ```
 
+```objc
+- (PKStrokePoint *) pointAtIndex:(NSUInteger) i;
+```
+
 #### Return Value
 
-The [`PKStrokePointReference`](pkstrokepointreference.md) at control point index i.
+The [`PKStrokePointReference`](../pkstrokepointreference.md) at control point index i.
 
 ## Parameters
 
@@ -28,21 +33,22 @@ The [`PKStrokePointReference`](pkstrokepointreference.md) at control point index
 
 ## See Also
 
-- [func enumerateInterpolatedPoints(in: __PKFloatRange, strideByDistance: CGFloat, using: (PKStrokePoint, UnsafeMutablePointer<ObjCBool>) -> Void)](pkstrokepathreference/enumerateinterpolatedpoints(in:stridebydistance:using:).md)
+### Accessing and interpolating points
+- [func enumerateInterpolatedPoints(in: __PKFloatRange, strideByDistance: CGFloat, using: (PKStrokePoint, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateinterpolatedpoints%28in,stridebydistance,using%29.md)
   Executes a given block using each point in a range with a distance step.
-- [func enumerateInterpolatedPoints(in: __PKFloatRange, strideByParametricStep: CGFloat, using: (PKStrokePoint, UnsafeMutablePointer<ObjCBool>) -> Void)](pkstrokepathreference/enumerateinterpolatedpoints(in:stridebyparametricstep:using:).md)
+- [func enumerateInterpolatedPoints(in: __PKFloatRange, strideByParametricStep: CGFloat, using: (PKStrokePoint, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateinterpolatedpoints%28in,stridebyparametricstep,using%29.md)
   Executes a given block using each point in a range with a parametric step.
-- [func enumerateInterpolatedPoints(in: __PKFloatRange, strideByTime: TimeInterval, using: (PKStrokePoint, UnsafeMutablePointer<ObjCBool>) -> Void)](pkstrokepathreference/enumerateinterpolatedpoints(in:stridebytime:using:).md)
+- [func enumerateInterpolatedPoints(in: __PKFloatRange, strideByTime: TimeInterval, using: (PKStrokePoint, UnsafeMutablePointer<ObjCBool>) -> Void)](./enumerateinterpolatedpoints%28in,stridebytime,using%29.md)
   Executes a given block using each point in a range with a time step.
-- [func interpolatedLocation(at: CGFloat) -> CGPoint](pkstrokepathreference/interpolatedlocation(at:).md)
+- [func interpolatedLocation(at: CGFloat) -> CGPoint](./interpolatedlocation%28at%29.md)
   Returns the on-curve point for the floating point parametric value.
-- [func interpolatedPoint(at: CGFloat) -> PKStrokePoint](pkstrokepathreference/interpolatedpoint(at:).md)
+- [func interpolatedPoint(at: CGFloat) -> PKStrokePoint](./interpolatedpoint%28at%29.md)
   Returns the on-curve point for the provided floating point parameter.
-- [func parametricValue(CGFloat, offsetByDistance: CGFloat) -> CGFloat](pkstrokepathreference/parametricvalue(_:offsetbydistance:).md)
+- [func parametricValue(CGFloat, offsetByDistance: CGFloat) -> CGFloat](./parametricvalue%28_,offsetbydistance%29.md)
   Returns a parametric value on the B-spline that’s a specified distance from the given parametric value.
-- [func parametricValue(CGFloat, offsetByTime: TimeInterval) -> CGFloat](pkstrokepathreference/parametricvalue(_:offsetbytime:).md)
+- [func parametricValue(CGFloat, offsetByTime: TimeInterval) -> CGFloat](./parametricvalue%28_,offsetbytime%29.md)
   Returns a parametric value on the B-spline that’s a specified time from the given parametric value.
-- [subscript(Int) -> PKStrokePoint](pkstrokepathreference/subscript(_:).md)
+- [subscript(Int) -> PKStrokePoint](./subscript%28_%29.md)
   Returns the B-spline control point the location index that you provide.
 
 

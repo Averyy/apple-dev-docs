@@ -1,7 +1,8 @@
 # init(transitionIn:transitionOut:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new billboard action.
 

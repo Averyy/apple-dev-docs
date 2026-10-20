@@ -1,23 +1,28 @@
 # CFSocketSendData(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sends data over a CFSocket object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFSocketSendData(_ s: CFSocket!, _ address: CFData!, _ data: CFData!, _ timeout: CFTimeInterval) -> CFSocketError
+```
+
+```c
+extern CFSocketError CFSocketSendData(CFSocketRef s, CFDataRef address, CFDataRef data, CFTimeInterval timeout);
 ```
 
 #### Return Value
@@ -30,7 +35,7 @@ This function sets the send timeout of the underlying socket (the `SO_SNDTIMEO` 
 
 This function makes no attempt to queue data for delivery beyond the queueing provided by the socket buffer itself. This means:
 
-- If this function returns [`CFSocketError.success`](cfsocketerror/success.md), then by the time it returns, the data has been queued in the socket buffer for delivery.
+- If this function returns [`CFSocketError.success`](./cfsocketerror/success.md), then by the time it returns, the data has been queued in the socket buffer for delivery.
 - If the socket buffer is full and the timeout is nonzero, the function may return an error. If this happens, the app should wait for the socket buffer to have enough space available for writing before calling this function again.
 
 ## Parameters
@@ -42,15 +47,16 @@ This function makes no attempt to queue data for delivery beyond the queueing pr
 
 ## See Also
 
-- [func CFSocketConnectToAddress(CFSocket!, CFData!, CFTimeInterval) -> CFSocketError](cfsocketconnecttoaddress(_:_:_:).md)
+### Using Sockets
+- [func CFSocketConnectToAddress(CFSocket!, CFData!, CFTimeInterval) -> CFSocketError](./cfsocketconnecttoaddress%28_,_,_%29.md)
   Opens a connection to a remote socket.
-- [func CFSocketCreateRunLoopSource(CFAllocator!, CFSocket!, CFIndex) -> CFRunLoopSource!](cfsocketcreaterunloopsource(_:_:_:).md)
+- [func CFSocketCreateRunLoopSource(CFAllocator!, CFSocket!, CFIndex) -> CFRunLoopSource!](./cfsocketcreaterunloopsource%28_,_,_%29.md)
   Creates a CFRunLoopSource object for a CFSocket object.
-- [func CFSocketGetTypeID() -> CFTypeID](cfsocketgettypeid().md)
+- [func CFSocketGetTypeID() -> CFTypeID](./cfsocketgettypeid%28%29.md)
   Returns the type identifier for the CFSocket opaque type.
-- [func CFSocketInvalidate(CFSocket!)](cfsocketinvalidate(_:).md)
+- [func CFSocketInvalidate(CFSocket!)](./cfsocketinvalidate%28_%29.md)
   Invalidates a CFSocket object, stopping it from sending or receiving any more messages.
-- [func CFSocketIsValid(CFSocket!) -> Bool](cfsocketisvalid(_:).md)
+- [func CFSocketIsValid(CFSocket!) -> Bool](./cfsocketisvalid%28_%29.md)
   Returns a Boolean value that indicates whether a CFSocket object is valid and able to send or receive messages.
 
 

@@ -1,7 +1,8 @@
 # init(SVGF:textureAllocator:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(SVGF svgf: MPSSVGF, textureAllocator: any MPSSVGFTextureAllocator)
+```
+
+```objc
+- (instancetype) initWithSVGF:(MPSSVGF *) svgf textureAllocator:(id<MPSSVGFTextureAllocator>) textureAllocator;
 ```
 
 

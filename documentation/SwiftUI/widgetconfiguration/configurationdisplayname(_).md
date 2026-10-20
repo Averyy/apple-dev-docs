@@ -1,7 +1,8 @@
 # configurationDisplayName(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the localized name shown for a widget when a user adds or edits the widget.
 
@@ -18,6 +19,23 @@ Sets the localized name shown for a widget when a user adds or edits the widget.
 ```swift
 @MainActor
 @preconcurrency func configurationDisplayName(_ displayName: LocalizedStringResource) -> some WidgetConfiguration
+```
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency func configurationDisplayName(_ displayName: Text) -> some WidgetConfiguration
+```
+
+```swift
+@MainActor
+@preconcurrency func configurationDisplayName(_ displayNameKey: LocalizedStringKey) -> some WidgetConfiguration
+```
+
+```swift
+@MainActor
+@preconcurrency func configurationDisplayName<S>(_ displayName: S) -> some WidgetConfiguration where S : StringProtocol
 ```
 
 #### Return Value

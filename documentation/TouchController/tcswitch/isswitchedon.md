@@ -1,7 +1,8 @@
 # isSwitchedOn
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the switch is currently switched on.
 
@@ -16,13 +17,18 @@ A Boolean value that indicates whether the switch is currently switched on.
 var isSwitchedOn: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, getter=isSwitchedOn) BOOL switchedOn;
+```
+
 ## See Also
 
-- [var contents: TCControlContents?](tcswitch/contents.md)
+### Inspecting the switch
+- [var contents: TCControlContents?](./contents.md)
   The contents for the switch in its normal state.
-- [var highlightDuration: TimeInterval](tcswitch/highlightduration.md)
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var switchedOnContents: TCControlContents?](tcswitch/switchedoncontents.md)
+- [var switchedOnContents: TCControlContents?](./switchedoncontents.md)
   The contents for the switch when it is switched on.
 
 

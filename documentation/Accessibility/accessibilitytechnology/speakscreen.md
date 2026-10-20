@@ -1,7 +1,8 @@
 # speakScreen
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -18,17 +19,22 @@
 static let speakScreen: AccessibilityTechnology
 ```
 
+```c
+extern AXTechnology AXTechnologySpeakScreen;
+```
+
 ## See Also
 
-- [struct AccessibilityTechnology](accessibilitytechnology.md)
-- [static let automation: AccessibilityTechnology](accessibilitytechnology/automation.md)
-- [static let fullKeyboardAccess: AccessibilityTechnology](accessibilitytechnology/fullkeyboardaccess.md)
-- [static let hoverText: AccessibilityTechnology](accessibilitytechnology/hovertext.md)
-- [static let switchControl: AccessibilityTechnology](accessibilitytechnology/switchcontrol.md)
-- [static let voiceControl: AccessibilityTechnology](accessibilitytechnology/voicecontrol.md)
-- [static let voiceOver: AccessibilityTechnology](accessibilitytechnology/voiceover.md)
-- [static let zoom: AccessibilityTechnology](accessibilitytechnology/zoom.md)
-- [class AccessibilityRequest](accessibilityrequest.md)
+### Assistive technologies
+- [struct AccessibilityTechnology](../accessibilitytechnology.md)
+- [static let automation: AccessibilityTechnology](./automation.md)
+- [static let fullKeyboardAccess: AccessibilityTechnology](./fullkeyboardaccess.md)
+- [static let hoverText: AccessibilityTechnology](./hovertext.md)
+- [static let switchControl: AccessibilityTechnology](./switchcontrol.md)
+- [static let voiceControl: AccessibilityTechnology](./voicecontrol.md)
+- [static let voiceOver: AccessibilityTechnology](./voiceover.md)
+- [static let zoom: AccessibilityTechnology](./zoom.md)
+- [class AccessibilityRequest](../accessibilityrequest.md)
 
 
 ---

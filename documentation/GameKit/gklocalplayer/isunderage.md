@@ -1,7 +1,8 @@
 # isUnderage
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the local player is underage.
 
@@ -20,19 +21,32 @@ A Boolean value that indicates whether the local player is underage.
 var isUnderage: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, getter=isUnderage) BOOL underage;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, getter=isUnderage) BOOL underage;
+```
+
 ## Mentions
 
-- [Authenticating a player](authenticating-a-player.md)
+- [Authenticating a player](../authenticating-a-player.md)
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), Game Center disables some features for the local player. On all platforms, Game Center provides the value for the underage property for the Game Center account that the player signs into on the device. Note that the Game Center account defaults to the iCloud account that the player signs into on the device, but the player can sign into a different Game Center account.
+If this property is [`true`](../../Swift/true.md), Game Center disables some features for the local player. On all platforms, Game Center provides the value for the underage property for the Game Center account that the player signs into on the device. Note that the Game Center account defaults to the iCloud account that the player signs into on the device, but the player can sign into a different Game Center account.
 
 ## See Also
 
-- [var isMultiplayerGamingRestricted: Bool](gklocalplayer/ismultiplayergamingrestricted.md)
+### Determining Whether the Player Is Underage or Restricted
+- [var isMultiplayerGamingRestricted: Bool](./ismultiplayergamingrestricted.md)
   A Boolean value that indicates whether the player can join multiplayer games.
-- [var isPersonalizedCommunicationRestricted: Bool](gklocalplayer/ispersonalizedcommunicationrestricted.md)
+- [var isPersonalizedCommunicationRestricted: Bool](./ispersonalizedcommunicationrestricted.md)
   A Boolean value that indicates whether the player can use personalized communication on the device.
 
 

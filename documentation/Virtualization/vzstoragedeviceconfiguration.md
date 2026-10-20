@@ -1,7 +1,8 @@
 # VZStorageDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The common configuration traits for storage device requests.
 
@@ -14,44 +15,49 @@ The common configuration traits for storage device requests.
 class VZStorageDeviceConfiguration
 ```
 
+```objc
+@interface VZStorageDeviceConfiguration : NSObject
+```
+
 #### Overview
 
-Don’t create a [`VZStorageDeviceConfiguration`](vzstoragedeviceconfiguration.md) object directly. Instead, instantiate one of its subclasses, such as [`VZVirtioBlockDeviceConfiguration`](vzvirtioblockdeviceconfiguration.md). Use the [`attachment`](vzstoragedeviceconfiguration/attachment.md) property of this class to access the device’s underlying storage.
+Don’t create a [`VZStorageDeviceConfiguration`](./vzstoragedeviceconfiguration.md) object directly. Instead, instantiate one of its subclasses, such as [`VZVirtioBlockDeviceConfiguration`](./vzvirtioblockdeviceconfiguration.md). Use the [`attachment`](./vzstoragedeviceconfiguration/attachment.md) property of this class to access the device’s underlying storage.
 
 ## Topics
 
 ### Getting the attachment point
-- [var attachment: VZStorageDeviceAttachment](vzstoragedeviceconfiguration/attachment.md)
+- [var attachment: VZStorageDeviceAttachment](./vzstoragedeviceconfiguration/attachment.md)
   The attachment object that provides the underlying storage for the device.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZNVMExpressControllerDeviceConfiguration](vznvmexpresscontrollerdeviceconfiguration.md)
-- [VZUSBMassStorageDeviceConfiguration](vzusbmassstoragedeviceconfiguration.md)
-- [VZVirtioBlockDeviceConfiguration](vzvirtioblockdeviceconfiguration.md)
+- [VZNVMExpressControllerDeviceConfiguration](./vznvmexpresscontrollerdeviceconfiguration.md)
+- [VZUSBMassStorageDeviceConfiguration](./vzusbmassstoragedeviceconfiguration.md)
+- [VZVirtioBlockDeviceConfiguration](./vzvirtioblockdeviceconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioBlockDeviceConfiguration](vzvirtioblockdeviceconfiguration.md)
+### Configurations
+- [class VZVirtioBlockDeviceConfiguration](./vzvirtioblockdeviceconfiguration.md)
   The configuration object that requests the creation of a virtual storage device in the guest system.
-- [class VZUSBMassStorageDeviceConfiguration](vzusbmassstoragedeviceconfiguration.md)
+- [class VZUSBMassStorageDeviceConfiguration](./vzusbmassstoragedeviceconfiguration.md)
   The configuration object that represents a USB Mass storage device.
-- [enum VZDiskImageCachingMode](vzdiskimagecachingmode.md)
+- [enum VZDiskImageCachingMode](./vzdiskimagecachingmode.md)
   An integer that describes the disk image caching mode.
-- [enum VZDiskImageSynchronizationMode](vzdiskimagesynchronizationmode.md)
+- [enum VZDiskImageSynchronizationMode](./vzdiskimagesynchronizationmode.md)
   An integer that describes the disk image synchronization mode.
-- [class VZNVMExpressControllerDeviceConfiguration](vznvmexpresscontrollerdeviceconfiguration.md)
+- [class VZNVMExpressControllerDeviceConfiguration](./vznvmexpresscontrollerdeviceconfiguration.md)
   The configuration object that represents an NVM Express Controller storage device.
 
 

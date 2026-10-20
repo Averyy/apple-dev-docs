@@ -1,7 +1,8 @@
 # CMSampleBuffer.ContentType.taggedBuffers
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sample buffer is carrying a group of tagged buffers.
 

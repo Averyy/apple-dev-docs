@@ -1,7 +1,8 @@
 # CMSimpleQueueReset(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Resets the queue.
 
@@ -20,6 +21,10 @@ Resets the queue.
 func CMSimpleQueueReset(_ queue: CMSimpleQueue) -> OSStatus
 ```
 
+```c
+extern OSStatus CMSimpleQueueReset(CMSimpleQueueRef queue);
+```
+
 #### Return Value
 
 Returns `noErr` if the call succeeds.
@@ -34,9 +39,10 @@ This function resets the queue to an empty state. `CMSimpleQueueReset` isn’t s
 
 ## See Also
 
-- [func CMSimpleQueueEnqueue(CMSimpleQueue, element: UnsafeRawPointer) -> OSStatus](cmsimplequeueenqueue(_:element:).md)
+### Managing Queues
+- [func CMSimpleQueueEnqueue(CMSimpleQueue, element: UnsafeRawPointer) -> OSStatus](./cmsimplequeueenqueue%28_,element%29.md)
   Enqueues an element in the queue.
-- [func CMSimpleQueueDequeue(CMSimpleQueue) -> UnsafeRawPointer?](cmsimplequeuedequeue(_:).md)
+- [func CMSimpleQueueDequeue(CMSimpleQueue) -> UnsafeRawPointer?](./cmsimplequeuedequeue%28_%29.md)
   Dequeues an element from the queue.
 
 

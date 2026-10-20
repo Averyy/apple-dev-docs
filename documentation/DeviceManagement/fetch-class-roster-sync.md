@@ -1,7 +1,8 @@
 # Sync the List of Classes
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get updates about the list of classes the server manages.
 
@@ -20,13 +21,22 @@ This service may return the same class more than once. You can identify duplicat
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `RosterRequest`
+
 The object containing the request information.
+
+## Responses
+
+- `200` OK (`RosterClassResponse`, `application/json`): The request was successful. The server returns a list of classes.
+- `400` Bad Request: The server was unable to process the request.
 
 ## See Also
 
-- [object RosterClass](rosterclass.md)
+### Class management
+- [object RosterClass](./rosterclass.md)
   A class’s properties and their values.
-- [Get the List of Classes](fetch-class-roster.md)
+- [Get the List of Classes](./fetch-class-roster.md)
   Obtain a list of classes the server manages.
 
 

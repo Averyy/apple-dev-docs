@@ -1,7 +1,8 @@
 # providerConfiguration
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that contains current vendor-specific configuration parameters.
 
@@ -17,13 +18,17 @@ A dictionary that contains current vendor-specific configuration parameters.
 var providerConfiguration: [String : Any]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSDictionary<NSString *,id> * providerConfiguration;
+```
+
 ## Mentions
 
-- [Maintaining a Reliable Network Connection](maintaining-a-reliable-network-connection.md)
+- [Maintaining a Reliable Network Connection](../maintaining-a-reliable-network-connection.md)
 
 #### Discussion
 
-The [`NEAppPushManager`](neapppushmanager.md) provides this dictionary. Use key-value observing to watch for changes in the dictionary.
+The [`NEAppPushManager`](../neapppushmanager.md) provides this dictionary. Use key-value observing to watch for changes in the dictionary.
 
 
 ---

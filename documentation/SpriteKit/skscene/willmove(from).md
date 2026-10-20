@@ -1,22 +1,27 @@
 # willMove(from:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells you when the scene is about to be removed from a view.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 func willMove(from view: SKView)
+```
+
+```objc
+- (void) willMoveFromView:(SKView *) view;
 ```
 
 #### Discussion
@@ -29,11 +34,12 @@ This method is intended to be overridden in a subclass. You can use this method 
 
 ## See Also
 
-- [func sceneDidLoad()](skscene/scenedidload.md)
+### Responding to Loading and Resizing Events
+- [func sceneDidLoad()](./scenedidload%28%29.md)
   Tells you when the scene is presented.
-- [func didChangeSize(CGSize)](skscene/didchangesize(_:).md)
+- [func didChangeSize(CGSize)](./didchangesize%28_%29.md)
   Tells you when the scene’s size has changed.
-- [func didMove(to: SKView)](skscene/didmove(to:).md)
+- [func didMove(to: SKView)](./didmove%28to%29.md)
   Tells you when the scene is presented by a view.
 
 

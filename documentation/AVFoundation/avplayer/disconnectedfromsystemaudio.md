@@ -1,7 +1,8 @@
 # disconnectedFromSystemAudio
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the player is disconnected from system audio.
 
@@ -18,6 +19,10 @@ Indicates whether the player is disconnected from system audio.
 ```swift
 nonisolated
 var disconnectedFromSystemAudio: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL disconnectedFromSystemAudio;
 ```
 
 #### Discussion

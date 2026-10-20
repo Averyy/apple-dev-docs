@@ -1,7 +1,8 @@
 # SSL_DH_anon_WITH_RC4_128_MD5
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var SSL_DH_anon_WITH_RC4_128_MD5: SSLCipherSuite { get }
+```
+
+```c
+SSL_DH_anon_WITH_RC4_128_MD5
 ```
 
 

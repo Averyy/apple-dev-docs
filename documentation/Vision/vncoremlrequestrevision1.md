@@ -1,7 +1,8 @@
 # VNCoreMLRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of a Core ML request.
 
@@ -17,6 +18,10 @@ A constant for specifying revision 1 of a Core ML request.
 
 ```swift
 var VNCoreMLRequestRevision1: Int { get }
+```
+
+```c
+static const NSUInteger VNCoreMLRequestRevision1;
 ```
 
 #### Discussion

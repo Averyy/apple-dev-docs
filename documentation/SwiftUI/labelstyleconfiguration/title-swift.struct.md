@@ -1,7 +1,8 @@
 # LabelStyleConfiguration.Title
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased title view of a label.
 
@@ -23,13 +24,14 @@ struct Title
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [View](view.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [View](../view.md)
 
 ## See Also
 
-- [var title: LabelStyleConfiguration.Title](labelstyleconfiguration/title-swift.property.md)
+### Setting the title
+- [var title: LabelStyleConfiguration.Title](./title-swift.property.md)
   A description of the labeled item.
 
 

@@ -1,7 +1,8 @@
 # init(_:selection:supportsOpacity:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color picker with a text label generated from a title string resource.
 
@@ -19,15 +20,45 @@ Creates a color picker with a text label generated from a title string resource.
 nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<CGColor>, supportsOpacity: Bool = true)
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<Color>, supportsOpacity: Bool = true)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, selection: Binding<CGColor>, supportsOpacity: Bool = true)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, selection: Binding<Color>, supportsOpacity: Bool = true)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, selection: Binding<CGColor>, supportsOpacity: Bool = true) where S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, selection: Binding<Color>, supportsOpacity: Bool = true) where S : StringProtocol
+```
+
 ## Parameters
 
 - `titleResource`: The localized title of the picker.
-- `selection`: A [`Binding`](binding.md) to the variable that displays the selected `CGColor`.
+- `selection`: A [`Binding`](../binding.md) to the variable that displays the selected `CGColor`.
 - `supportsOpacity`: A Boolean value that indicates whether the color picker allows adjustments to the selected color’s opacity; the default is `true`.
 
 ## See Also
 
-- [init(selection:supportsOpacity:label:)](colorpicker/init(selection:supportsopacity:label:).md)
+### Creating a color picker
+- [init(selection:supportsOpacity:label:)](./init%28selection,supportsopacity,label%29.md)
   Creates an instance that selects a color.
 
 

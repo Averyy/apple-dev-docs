@@ -1,7 +1,8 @@
 # kAXVerticalOrientationValue
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 This object is oriented vertically.
 
@@ -12,6 +13,10 @@ This object is oriented vertically.
 
 ```swift
 var kAXVerticalOrientationValue: String { get }
+```
+
+```c
+#define kAXVerticalOrientationValue
 ```
 
 

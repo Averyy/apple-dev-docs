@@ -1,7 +1,8 @@
 # installedLocales
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The locales that the transcriber can transcribe into, considering only locales that are installed on the device.
 
@@ -21,9 +22,10 @@ static var installedLocales: [Locale] { get async }
 
 ## See Also
 
-- [static var supportedLocales: [Locale]](speechtranscriber/supportedlocales.md)
+### Checking locale support
+- [static var supportedLocales: [Locale]](./supportedlocales.md)
   The locales that the transcriber can transcribe into, including locales that may not be installed but are downloadable.
-- [static func supportedLocale(equivalentTo: Locale) async -> Locale?](speechtranscriber/supportedlocale(equivalentto:).md)
+- [static func supportedLocale(equivalentTo: Locale) async -> Locale?](./supportedlocale%28equivalentto%29.md)
   A locale from the module’s supported locales equivalent to the given locale.
 
 

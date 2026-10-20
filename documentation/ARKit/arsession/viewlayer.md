@@ -1,7 +1,8 @@
 # viewLayer
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer that displays the `ARFrame`, required before `viewRotationAngle` becomes available.
 
@@ -13,6 +14,10 @@ The layer that displays the `ARFrame`, required before `viewRotationAngle` becom
 
 ```swift
 weak var viewLayer: CALayer? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) CALayer * viewLayer;
 ```
 
 #### Discussion

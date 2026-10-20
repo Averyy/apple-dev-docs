@@ -1,14 +1,15 @@
 # batteryTemperature
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A battery pack temperature.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,7 +23,8 @@ The system sets this property to `nil` when temperature data is unavailable.
 
 ## See Also
 
-- [let estimatedRange: Measurement<UnitLength>?](electricvehicleloadevent/electricalmeasurement/performancemetrics-swift.struct/estimatedrange.md)
+### Getting performance data
+- [let estimatedRange: Measurement<UnitLength>?](./estimatedrange.md)
   An estimate of how far the vehicle can travel based on the current state of charge.
 
 

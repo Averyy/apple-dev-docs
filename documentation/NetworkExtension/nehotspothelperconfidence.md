@@ -1,7 +1,8 @@
 # NEHotspotHelperConfidence
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that indicates the hotspot helper’s confidence in its ability to handle the network.
 
@@ -17,33 +18,38 @@ A type that indicates the hotspot helper’s confidence in its ability to handle
 enum NEHotspotHelperConfidence
 ```
 
+```c
+enum NEHotspotHelperConfidence : NSInteger;
+```
+
 ## Topics
 
 ### Confidence Levels
-- [NEHotspotHelperConfidence.high](nehotspothelperconfidence/high.md)
+- [NEHotspotHelperConfidence.high](./nehotspothelperconfidence/high.md)
   The helper has high confidence in being able to handle the network.
-- [NEHotspotHelperConfidence.low](nehotspothelperconfidence/low.md)
+- [NEHotspotHelperConfidence.low](./nehotspothelperconfidence/low.md)
   The helper has some confidence in being able to handle the network.
-- [NEHotspotHelperConfidence.none](nehotspothelperconfidence/none.md)
+- [NEHotspotHelperConfidence.none](./nehotspothelperconfidence/none.md)
   The helper is unable to handle the network.
 ### Initializers
-- [init?(rawValue: Int)](nehotspothelperconfidence/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nehotspothelperconfidence/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setConfidence(NEHotspotHelperConfidence)](nehotspotnetwork/setconfidence(_:).md)
+### Network annotation
+- [func setConfidence(NEHotspotHelperConfidence)](./nehotspotnetwork/setconfidence%28_%29.md)
   Indicate the level of confidence in being able to handle the network.
-- [func setPassword(String)](nehotspotnetwork/setpassword(_:).md)
+- [func setPassword(String)](./nehotspotnetwork/setpassword%28_%29.md)
   Provide the password for a protected network.
 
 

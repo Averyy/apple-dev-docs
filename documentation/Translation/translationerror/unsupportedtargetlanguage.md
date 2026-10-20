@@ -1,7 +1,8 @@
 # unsupportedTargetLanguage
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The framework doesn’t support the specified or chosen target language.
 
@@ -19,9 +20,10 @@ static let unsupportedTargetLanguage: TranslationError
 
 ## See Also
 
-- [static let unsupportedSourceLanguage: TranslationError](translationerror/unsupportedsourcelanguage.md)
+### Handling unsupported errors
+- [static let unsupportedSourceLanguage: TranslationError](./unsupportedsourcelanguage.md)
   The framework doesn’t support the specified or detected source language.
-- [static let unsupportedLanguagePairing: TranslationError](translationerror/unsupportedlanguagepairing.md)
+- [static let unsupportedLanguagePairing: TranslationError](./unsupportedlanguagepairing.md)
   The framework doesn’t support the specified source and target language pairing.
 
 

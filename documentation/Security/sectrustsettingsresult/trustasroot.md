@@ -1,7 +1,8 @@
 # SecTrustSettingsResult.trustAsRoot
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This non-root certificate is explicitly trusted as if it were a trusted root.
 
@@ -13,6 +14,10 @@ This non-root certificate is explicitly trusted as if it were a trusted root.
 
 ```swift
 case trustAsRoot
+```
+
+```c
+kSecTrustSettingsResultTrustAsRoot
 ```
 
 

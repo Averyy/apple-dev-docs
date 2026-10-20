@@ -1,14 +1,15 @@
 # kIOFBNotifyEvent_HDACodecPowerOnOff
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 kIOFBNotifyEvent_HDACodecPowerOnOff = (1ULL << 13)
 ```
 

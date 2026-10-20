@@ -1,7 +1,8 @@
 # navigationDelegate
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object you use to manage navigation behavior for the web view.
 
@@ -18,13 +19,18 @@ The object you use to manage navigation behavior for the web view.
 weak var navigationDelegate: (any WKNavigationDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<WKNavigationDelegate> navigationDelegate;
+```
+
 #### Discussion
 
-Provide a delegate object when you want to manage or restrict navigation in your web content, track the progress of navigation requests, and handle authentication challenges for any new content. The object you specify must conform to the [`WKNavigationDelegate`](wknavigationdelegate.md) protocol.
+Provide a delegate object when you want to manage or restrict navigation in your web content, track the progress of navigation requests, and handle authentication challenges for any new content. The object you specify must conform to the [`WKNavigationDelegate`](../wknavigationdelegate.md) protocol.
 
 ## See Also
 
-- [protocol WKNavigationDelegate](wknavigationdelegate.md)
+### Managing navigation between webpages
+- [protocol WKNavigationDelegate](../wknavigationdelegate.md)
   Methods for accepting or rejecting navigation changes, and for tracking the progress of navigation requests.
 
 

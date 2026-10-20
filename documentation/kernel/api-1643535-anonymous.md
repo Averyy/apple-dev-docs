@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHIDBootProtocolValue](1643535-anonymous/khidbootprotocolvalue.md)
-- [kHIDReportProtocolValue](1643535-anonymous/khidreportprotocolvalue.md)
+- [kHIDBootProtocolValue](./api-1643535-anonymous/khidbootprotocolvalue.md)
+- [kHIDReportProtocolValue](./api-1643535-anonymous/khidreportprotocolvalue.md)
 
 
 ---

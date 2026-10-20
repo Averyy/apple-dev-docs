@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the human-readable name of the current task, if it was set during the tasks’ creation.
 
@@ -20,6 +21,8 @@ Returns the human-readable name of the current task, if it was set during the ta
 static var name: String? { get }
 ```
 
+Available when `Success` is `Never` and `Failure` is `Never`.
+
 #### Discussion
 
 Tasks can be named during their creation, which can be helpful to identify unique tasks which may be created at same source locations, for example:
@@ -36,11 +39,11 @@ func process(items: [Int]) async {
 }
 ```
 
-##### Task Name Availability
+##### Task name availability
 
 The task name is only available when running with a recent runtime (Swift 6.2+).
 
-[`Task`](task.md) initializers which may accept a task name are more available than this property, for convenience purposes, in order to not have to set task names conditionally however their effect is runtime dependent, and is reflected in the availability of this property.
+[`Task`](../task.md) initializers which may accept a task name are more available than this property, for convenience purposes, in order to not have to set task names conditionally however their effect is runtime dependent, and is reflected in the availability of this property.
 
 
 ---

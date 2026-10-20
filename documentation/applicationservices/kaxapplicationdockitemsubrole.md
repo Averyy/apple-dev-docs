@@ -1,7 +1,8 @@
 # kAXApplicationDockItemSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An icon in the Dock that represents an application.
 
@@ -12,6 +13,10 @@ An icon in the Dock that represents an application.
 
 ```swift
 var kAXApplicationDockItemSubrole: String { get }
+```
+
+```c
+#define kAXApplicationDockItemSubrole
 ```
 
 

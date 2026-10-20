@@ -6,7 +6,7 @@ Use CSS templates to display Apple Pay buttons in Safari.
 
 #### Overview
 
-Apple Pay provides a variety of Apple Pay buttons that you can use on your website to initiate a transaction. You can specify which button type to display and edit its appearance and size to fit your webpage. Before using a button, check if it’s available in the version of Safari the device is running. To draw Apple Pay buttons on devices with earlier iOS or macOS versions where Safari doesn’t support all button types, see [`Draw Apple Pay Buttons`](displaying-apple-pay-buttons-using-css#Draw-Apple-Pay-Buttons.md).
+Apple Pay provides a variety of Apple Pay buttons that you can use on your website to initiate a transaction. You can specify which button type to display and edit its appearance and size to fit your webpage. Before using a button, check if it’s available in the version of Safari the device is running. To draw Apple Pay buttons on devices with earlier iOS or macOS versions where Safari doesn’t support all button types, see [Draw Apple Pay Buttons](./displaying-apple-pay-buttons-using-css.md#Draw-Apple-Pay-Buttons).
 
 ##### Choose a Button Type
 
@@ -17,7 +17,7 @@ The following Apple Pay button values are available starting with Apple Pay on t
 - **`buy`**: A button with the text “Buy with” and the Apple Pay logo.
 - **`donate`**: A button with the text “Donate with” and the Apple Pay logo. Available in iOS 10.2 and later.
 - **`plain`**: A button with the Apple Pay logo only.
-- **`set-up`**: A button prompting the user to set up a card.  See [`openPaymentSetup`](applepaysession/openpaymentsetup.md) for an example of code to display the Set up Apple Pay button.
+- **`set-up`**: A button prompting the user to set up a card.  See [`openPaymentSetup`](./applepaysession/openpaymentsetup.md) for an example of code to display the Set up Apple Pay button.
 
 The following Apple Pay button values are available starting with Apple Pay on the Web version 4:
 
@@ -40,11 +40,11 @@ The following Apple Pay button values are available starting with Apple Pay on t
 
 - **`continue`**: A button with the text “Continue with Apple Pay” and the Apple Pay logo.
 
-For more version information, see [`Apple Pay on the Web version history`](apple-pay-on-the-web-version-history.md).   For more information about button types and their usage, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
+For more version information, see [Apple Pay on the Web version history](./apple-pay-on-the-web-version-history.md).   For more information about button types and their usage, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/).
 
-##### Display an Apple Pay Button Using Css
+##### Display an Apple Pay Button Using CSS
 
-The code example below uses CSS properties to display Apple Pay buttons. The code supports devices running macOS 10.12 and later, and iOS 10 and later, by using the CSS `@supports` feature to determine if the `-webkit-appearance: -apple-pay-button` property is available. For devices with earlier iOS or macOS versions where Safari doesn’t support these button types, use the plain Apple Pay button instead (see [`Draw Apple Pay Buttons`](displaying-apple-pay-buttons-using-css#Draw-Apple-Pay-Buttons.md)).
+The code example below uses CSS properties to display Apple Pay buttons. The code supports devices running macOS 10.12 and later, and iOS 10 and later, by using the CSS `@supports` feature to determine if the `-webkit-appearance: -apple-pay-button` property is available. For devices with earlier iOS or macOS versions where Safari doesn’t support these button types, use the plain Apple Pay button instead (see [Draw Apple Pay Buttons](./displaying-apple-pay-buttons-using-css.md#Draw-Apple-Pay-Buttons)).
 
 ```other
 /* HTML */
@@ -217,16 +217,17 @@ The following code example displays a Buy with Apple Pay button.
 ## Topics
 
 ### Styling the Apple Pay Button
-- [Styling the Apple Pay Button Using CSS](styling-the-apple-pay-button-using-css.md)
+- [Styling the Apple Pay Button Using CSS](./styling-the-apple-pay-button-using-css.md)
   Choose a button color and size to suit your webpage.
-- [Localizing Apple Pay Buttons Using CSS](localizing-apple-pay-buttons-using-css.md)
+- [Localizing Apple Pay Buttons Using CSS](./localizing-apple-pay-buttons-using-css.md)
   Set the language of an Apple Pay button.
 
 ## See Also
 
-- [Displaying Apple Pay Buttons Using JavaScript](displaying-apple-pay-buttons-using-javascript.md)
+### Apple Pay buttons
+- [Displaying Apple Pay Buttons Using JavaScript](./displaying-apple-pay-buttons-using-javascript.md)
   Load and configure the JavaScript Apple Pay button.
-- [ApplePayButton](applepaybutton.md)
+- [ApplePayButton](./applepaybutton.md)
   An object that displays a button either to trigger payments through Apple Pay or to prompt the user to set up a card.
 
 

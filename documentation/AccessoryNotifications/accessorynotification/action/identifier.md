@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the action.
 
@@ -16,7 +17,8 @@ let identifier: String
 
 ## See Also
 
-- [let title: String?](accessorynotification/action/title.md)
+### Identifying an action
+- [let title: String?](./title.md)
   A title for the action.
 
 

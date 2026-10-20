@@ -1,7 +1,8 @@
 # addSwitch(descriptor:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new switch control with the provided descriptor, and adds it to the touch controller.
 
@@ -16,6 +17,10 @@ Creates a new switch control with the provided descriptor, and adds it to the to
 func addSwitch(descriptor: TCSwitchDescriptor) -> TCSwitch
 ```
 
+```objc
+- (TCSwitch *) addSwitchWithDescriptor:(TCSwitchDescriptor *) descriptor;
+```
+
 #### Return Value
 
 A new `TCSwitch` instance.
@@ -26,7 +31,8 @@ A new `TCSwitch` instance.
 
 ## See Also
 
-- [class TCSwitchDescriptor](tcswitchdescriptor.md)
+### Adding a switch control
+- [class TCSwitchDescriptor](../tcswitchdescriptor.md)
   A descriptor for configuring a switch.
 
 

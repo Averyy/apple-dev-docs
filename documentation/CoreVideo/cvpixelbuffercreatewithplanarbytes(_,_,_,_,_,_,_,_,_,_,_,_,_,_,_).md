@@ -1,7 +1,8 @@
 # CVPixelBufferCreateWithPlanarBytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a single pixel buffer in planar format for a given size and pixel format containing data specified by a memory location.
 
@@ -20,9 +21,13 @@ Creates a single pixel buffer in planar format for a given size and pixel format
 func CVPixelBufferCreateWithPlanarBytes(_ allocator: CFAllocator?, _ width: Int, _ height: Int, _ pixelFormatType: OSType, _ dataPtr: UnsafeMutableRawPointer?, _ dataSize: Int, _ numberOfPlanes: Int, _ planeBaseAddress: UnsafeMutablePointer<UnsafeMutableRawPointer?>, _ planeWidth: UnsafeMutablePointer<Int>, _ planeHeight: UnsafeMutablePointer<Int>, _ planeBytesPerRow: UnsafeMutablePointer<Int>, _ releaseCallback: CVPixelBufferReleasePlanarBytesCallback?, _ releaseRefCon: UnsafeMutableRawPointer?, _ pixelBufferAttributes: CFDictionary?, _ pixelBufferOut: UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn
 ```
 
+```c
+extern CVReturn CVPixelBufferCreateWithPlanarBytes(CFAllocatorRef allocator, size_t width, size_t height, OSType pixelFormatType, void *dataPtr, size_t dataSize, size_t numberOfPlanes, void * planeBaseAddress[], size_t planeWidth[], size_t planeHeight[], size_t planeBytesPerRow[], CVPixelBufferReleasePlanarBytesCallback releaseCallback, void *releaseRefCon, CFDictionaryRef pixelBufferAttributes, CVPixelBufferRef*pixelBufferOut);
+```
+
 #### Return Value
 
-A Core Video result code. See [`Result Codes`](result-codes.md) for possible values.
+A Core Video result code. See [Result Codes](./result-codes.md) for possible values.
 
 #### Discussion
 
@@ -30,7 +35,7 @@ Some of the parameters specified in this call override equivalent pixel buffer a
 
 ## Parameters
 
-- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) for the `allocator` parameter to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/corefoundation/predefined-allocators) for additional values you can use.
+- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](../CoreFoundation/kcfallocatordefault.md) for the `allocator` parameter to use the default allocator. See [Predefined Allocators](../CoreFoundation/predefined-allocators.md) for additional values you can use.
 - `width`: The width of the pixel buffer, in pixels.
 - `height`: The height of the pixel buffer, in pixels.
 - `pixelFormatType`: The pixel format identified by its respective four-character code (type `OSType`).
@@ -41,18 +46,19 @@ Some of the parameters specified in this call override equivalent pixel buffer a
 - `planeWidth`: The array of plane widths.
 - `planeHeight`: The array of plane heights.
 - `planeBytesPerRow`: The array of plane bytes-per-row values.
-- `releaseCallback`: The callback function that gets called when the pixel buffer is destroyed. This callback allows the owner of the pixels to free the memory. See [`CVPixelBufferReleaseBytesCallback`](cvpixelbufferreleasebytescallback.md) for more information.
+- `releaseCallback`: The callback function that gets called when the pixel buffer is destroyed. This callback allows the owner of the pixels to free the memory. See [`CVPixelBufferReleaseBytesCallback`](./cvpixelbufferreleasebytescallback.md) for more information.
 - `releaseRefCon`: A pointer to user data identifying the pixel buffer. This value is passed to your pixel buffer release callback.
-- `pixelBufferAttributes`: A dictionary with additional attributes for a a pixel buffer. This parameter is optional. See [`Pixel Buffer Attribute Keys`](pixel-buffer-attribute-keys.md) for more details.
-- `pixelBufferOut`: On output, the newly created pixel buffer. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `pixelBufferAttributes`: A dictionary with additional attributes for a a pixel buffer. This parameter is optional. See [Pixel Buffer Attribute Keys](./pixel-buffer-attribute-keys.md) for more details.
+- `pixelBufferOut`: On output, the newly created pixel buffer. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 
-- [func CVPixelBufferCreate(CFAllocator?, Int, Int, OSType, CFDictionary?, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](cvpixelbuffercreate(_:_:_:_:_:_:).md)
+### Creating pixel buffers
+- [func CVPixelBufferCreate(CFAllocator?, Int, Int, OSType, CFDictionary?, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](./cvpixelbuffercreate%28_,_,_,_,_,_%29.md)
   Creates a single pixel buffer for a given size and pixel format.
-- [func CVPixelBufferCreateWithBytes(CFAllocator?, Int, Int, OSType, UnsafeMutableRawPointer, Int, CVPixelBufferReleaseBytesCallback?, UnsafeMutableRawPointer?, CFDictionary?, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](cvpixelbuffercreatewithbytes(_:_:_:_:_:_:_:_:_:_:).md)
+- [func CVPixelBufferCreateWithBytes(CFAllocator?, Int, Int, OSType, UnsafeMutableRawPointer, Int, CVPixelBufferReleaseBytesCallback?, UnsafeMutableRawPointer?, CFDictionary?, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](./cvpixelbuffercreatewithbytes%28_,_,_,_,_,_,_,_,_,_%29.md)
   Creates a pixel buffer for a given size and pixel format containing data specified by a memory location.
-- [func CVPixelBufferCreateWithIOSurface(CFAllocator?, IOSurfaceRef, CFDictionary?, UnsafeMutablePointer<Unmanaged<CVPixelBuffer>?>) -> CVReturn](cvpixelbuffercreatewithiosurface(_:_:_:_:).md)
+- [func CVPixelBufferCreateWithIOSurface(CFAllocator?, IOSurfaceRef, CFDictionary?, UnsafeMutablePointer<Unmanaged<CVPixelBuffer>?>) -> CVReturn](./cvpixelbuffercreatewithiosurface%28_,_,_,_%29.md)
   Creates a single pixel buffer for the IO surface that you specify.
 
 

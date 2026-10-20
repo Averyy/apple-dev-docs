@@ -1,7 +1,8 @@
 # setPreviewState(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preview state.
 
@@ -14,13 +15,17 @@ Sets the preview state.
 func setPreviewState(_ inState: Bool)
 ```
 
+```objc
+- (void) setPreviewState:(BOOL) inState;
+```
+
 #### Discussion
 
 Use this method to show and hide the preview programmatically.
 
 ## Parameters
 
-- `inState`: A state ([`true`](https://developer.apple.com/documentation/swift/true) or [`false`](https://developer.apple.com/documentation/swift/false)) that represents whether a preview is visible.
+- `inState`: A state ([`true`](../../Swift/true.md) or [`false`](../../Swift/false.md)) that represents whether a preview is visible.
 
 
 ---

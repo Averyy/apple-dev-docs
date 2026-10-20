@@ -1,6 +1,8 @@
 # Incorporating MIDI 2 into your apps
 
-**Framework**: Core MIDI
+**Framework**: Core MIDI  
+**Role**: Sample Code  
+**Download**: [IncorporatingMIDI2IntoYourApps.zip](https://docs-assets.developer.apple.com/published/cc0dcf5f1743/IncorporatingMIDI2IntoYourApps.zip)
 
 Add precision and improve musical control for your MIDI apps.
 
@@ -16,9 +18,9 @@ The MIDI 2 standard defines the Universal MIDI Packet (UMP) structure for the MI
 
 The MIDI 1 specification includes only the MIDI 1 protocol. The MIDI 2 specification includes the protocols MIDI 1, MIDI-1UP, MIDI 2, and the MIDI Capability Inquiry (MIDI-CI). The only requirement for you to provide a MIDI 2 device is bidirectional communication, which is necessary for MIDI-CI.
 
-This sample code project shows how to use Core MIDI in [`MIDI Services`](midi-services.md). The sample consists of two targets built in Mac Catalyst that you use to send or receive MIDI events. Use the targets on the same device to show the transmission of UMP MIDI data.
+This sample code project shows how to use Core MIDI in [MIDI Services](./midi-services.md). The sample consists of two targets built in Mac Catalyst that you use to send or receive MIDI events. Use the targets on the same device to show the transmission of UMP MIDI data.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run this sample app in macOS or iPadOS:
 
@@ -28,17 +30,17 @@ To run this sample app in macOS or iPadOS:
 4. Build and launch the UMP Send target in Xcode.
 5. In the UMP Send app, select a MIDI message type to send, select a destination, and click or tap the Send button.
 
-##### Understand Midi 1up and Midi 2
+##### Understand MIDI-1UP and MIDI 2
 
-By default, Core MIDI adopts the MIDI 2 specification and transparently converts sent MIDI data into the packet format and protocol a MIDI destination specifies. Regardless of the source packet format and protocol, legacy MIDI destinations receive [`MIDIPacketList`](midipacketlist.md). MIDI 2 destinations receive [`MIDIEventList`](midieventlist.md).
+By default, Core MIDI adopts the MIDI 2 specification and transparently converts sent MIDI data into the packet format and protocol a MIDI destination specifies. Regardless of the source packet format and protocol, legacy MIDI destinations receive [`MIDIPacketList`](./midipacketlist.md). MIDI 2 destinations receive [`MIDIEventList`](./midieventlist.md).
 
-##### Build a Universal Midi Packet
+##### Build a Universal MIDI Packet
 
 The UMP send target shows how to build and send UMP events to a MIDI destination a person selects. The user interface allows for selecting the type of MIDI message to send before customizing the different elements of the packet. The visualizer provides a tabular view of the contents of the packet in decimal, binary, and hexadecimal form.
 
 The app stores the packet state in `PacketModel`, and it contains an array of `PacketChunk` objects describing the individual elements of the UMP message.
 
-After the app launches, it creates a `PacketSender` object that the app uses to construct and send MIDI packets. The first step of initialization is creating the Core MIDI client the app maintains as a strong reference throughout its lifetime. Next, the app creates an output port by calling  [`MIDIOutputPortCreate(_:_:_:)`](midioutputportcreate(_:_:_:).md).
+After the app launches, it creates a `PacketSender` object that the app uses to construct and send MIDI packets. The first step of initialization is creating the Core MIDI client the app maintains as a strong reference throughout its lifetime. Next, the app creates an output port by calling  [`MIDIOutputPortCreate(_:_:_:)`](./midioutputportcreate%28_,_,_%29.md).
 
 ```swift
 private func setupMIDI() -> Bool {
@@ -58,9 +60,9 @@ private func setupMIDI() -> Bool {
 }
 ```
 
-After the user presses the Send button, the sample gets the current values for each `PacketModel` and — depending on the MIDI protocol — creates a `MIDIMessage_32` or `MIDIMessage_64` by using one of the [`MIDI Messages`](midi-messages.md).
+After the user presses the Send button, the sample gets the current values for each `PacketModel` and — depending on the MIDI protocol — creates a `MIDIMessage_32` or `MIDIMessage_64` by using one of the [MIDI Messages](./midi-messages.md).
 
-The code below shows how the app sends a note on an event for the MIDI-1UP and MIDI 2 protocols. In the `noteOn(._1_0)` case, the app calls [`MIDI1UPNoteOn(_:_:_:_:)`](midi1upnoteon(_:_:_:_:).md) to create a 32-bit message, and passes in a MIDI group, channel, note number, and velocity. In the `noteOn(._2_0)` case, the app calls [`MIDI2NoteOn(_:_:_:_:_:_:)`](midi2noteon(_:_:_:_:_:_:).md) to create a 64-bit message, and passes in a MIDI group, channel, note number, attribute type, attribute data, and velocity.
+The code below shows how the app sends a note on an event for the MIDI-1UP and MIDI 2 protocols. In the `noteOn(._1_0)` case, the app calls [`MIDI1UPNoteOn(_:_:_:_:)`](./midi1upnoteon%28_,_,_,_%29.md) to create a 32-bit message, and passes in a MIDI group, channel, note number, and velocity. In the `noteOn(._2_0)` case, the app calls [`MIDI2NoteOn(_:_:_:_:_:_:)`](./midi2noteon%28_,_,_,_,_,_%29.md) to create a 64-bit message, and passes in a MIDI group, channel, note number, attribute type, attribute data, and velocity.
 
 ```swift
 case .noteOn(._1_0):
@@ -94,9 +96,9 @@ case .noteOn(._2_0):
                                           destination: destination)
 ```
 
-##### Send a Midi Event to a Destination
+##### Send a MIDI event to a destination
 
-The sample sends data by initializing a [`MIDIEventList`](midieventlist.md) and passing the event by reference, supplying the MIDI protocol as the second argument. Finally, the sample calls [`MIDIEventListAdd(_:_:_:_:_:_:)`](midieventlistadd(_:_:_:_:_:_:).md) to add the event to the list, and calls [`MIDISendEventList(_:_:_:)`](midisendeventlist(_:_:_:).md) with a port, destination, and the event list.
+The sample sends data by initializing a [`MIDIEventList`](./midieventlist.md) and passing the event by reference, supplying the MIDI protocol as the second argument. Finally, the sample calls [`MIDIEventListAdd(_:_:_:_:_:_:)`](./midieventlistadd%28_,_,_,_,_,_%29.md) to add the event to the list, and calls [`MIDISendEventList(_:_:_:)`](./midisendeventlist%28_,_,_%29.md) with a port, destination, and the event list.
 
 ```objective-c
 -(OSStatus)sendMIDI1UPMessage:(MIDIMessage_32)message port:(MIDIPortRef)port destination:(MIDIEndpointRef)destination {
@@ -107,13 +109,13 @@ The sample sends data by initializing a [`MIDIEventList`](midieventlist.md) and 
 }
 ```
 
-##### Receive a Midi Event From a Destination
+##### Receive a MIDI event from a destination
 
 The receiver target demonstrates how to create a Core MIDI destination with a protocol, and consumes incoming MIDI events, displaying them in a MIDI log.
 
 The sample provides a text box to enter a custom destination name, a picker for protocol selection, and a log to view the incoming MIDI events.
 
-The receiver target creates a Core MIDI client, and when the user presses the Create Destination button, the sample uses [`MIDIDestinationCreateWithProtocol(_:_:_:_:_:)`](mididestinationcreatewithprotocol(_:_:_:_:_:).md) to create a destination with a name, a MIDI protocol, and a callback block. When the system receives events, the sample iterates the [`MIDIEventList`](midieventlist.md) and pushes them onto a queue to consume on the main thread.
+The receiver target creates a Core MIDI client, and when the user presses the Create Destination button, the sample uses [`MIDIDestinationCreateWithProtocol(_:_:_:_:_:)`](./mididestinationcreatewithprotocol%28_,_,_,_,_%29.md) to create a destination with a name, a MIDI protocol, and a callback block. When the system receives events, the sample iterates the [`MIDIEventList`](./midieventlist.md) and pushes them onto a queue to consume on the main thread.
 
 ```objective-c
 -(OSStatus)createMIDIDestination:(MIDIClientRef)client named:(CFStringRef)name protocol:(MIDIProtocolID)protocol dest:(MIDIEndpointRef *)outDest {
@@ -135,17 +137,18 @@ The receiver target creates a Core MIDI client, and when the user presses the Cr
 }
 ```
 
-> **Note**: The system calls [`MIDIReceiveBlock`](midireceiveblock.md) on a high-priority thread, so perform real-time safe and nonblocking operations within the block.
+> **Note**: The system calls [`MIDIReceiveBlock`](./midireceiveblock.md) on a high-priority thread, so perform real-time safe and nonblocking operations within the block.
 
 ## See Also
 
-- [func MIDIClientCreate(CFString, MIDINotifyProc?, UnsafeMutableRawPointer?, UnsafeMutablePointer<MIDIClientRef>) -> OSStatus](midiclientcreate(_:_:_:_:).md)
+### Client management
+- [func MIDIClientCreate(CFString, MIDINotifyProc?, UnsafeMutableRawPointer?, UnsafeMutablePointer<MIDIClientRef>) -> OSStatus](./midiclientcreate%28_,_,_,_%29.md)
   Creates a MIDI client.
-- [func MIDIClientCreateWithBlock(CFString, UnsafeMutablePointer<MIDIClientRef>, MIDINotifyBlock?) -> OSStatus](midiclientcreatewithblock(_:_:_:).md)
+- [func MIDIClientCreateWithBlock(CFString, UnsafeMutablePointer<MIDIClientRef>, MIDINotifyBlock?) -> OSStatus](./midiclientcreatewithblock%28_,_,_%29.md)
   Creates a MIDI client with a callback block.
-- [func MIDIClientDispose(MIDIClientRef) -> OSStatus](midiclientdispose(_:).md)
+- [func MIDIClientDispose(MIDIClientRef) -> OSStatus](./midiclientdispose%28_%29.md)
   Disposes of a MIDI client.
-- [typealias MIDIClientRef](midiclientref.md)
+- [typealias MIDIClientRef](./midiclientref.md)
   An object that maintains per-client state.
 
 

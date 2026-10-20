@@ -1,7 +1,8 @@
 # text
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The attributed string this component renders.
 

@@ -1,14 +1,15 @@
 # memcpy
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void * memcpy(void *dst, const void *src, size_t n);
 ```
 

@@ -1,7 +1,8 @@
 # WKWebExtension.DataRecord.Error.Code.sessionStorageFailed
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a failure occurred when either deleting or calculating session storage.
 
@@ -16,6 +17,10 @@ Indicates a failure occurred when either deleting or calculating session storage
 
 ```swift
 case sessionStorageFailed
+```
+
+```c
+WKWebExtensionDataRecordErrorSessionStorageFailed
 ```
 
 

@@ -1,7 +1,8 @@
 # MapCamera
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines a virtual viewpoint above the map surface.
 
@@ -11,7 +12,7 @@ Defines a virtual viewpoint above the map surface.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ struct MapCamera
 
 #### Overview
 
-`MapCamera` allows you to specify the viewpoint of a [`Map`](map.md), as well as affect how MapKit presents the map to the user.
+`MapCamera` allows you to specify the viewpoint of a [`Map`](./map.md), as well as affect how MapKit presents the map to the user.
 
 To create a map view with a 3D perspective, `MapCamera` takes input from the camera and device:
 
@@ -34,34 +35,35 @@ To create a map view with a 3D perspective, `MapCamera` takes input from the cam
 ## Topics
 
 ### Creating a map camera
-- [init(MKMapCamera)](mapcamera/init(_:).md)
+- [init(MKMapCamera)](./mapcamera/init%28_%29.md)
   Creates a map camera from the given MapKit camera object.
-- [init(centerCoordinate: CLLocationCoordinate2D, distance: Double, heading: Double, pitch: Double)](mapcamera/init(centercoordinate:distance:heading:pitch:).md)
+- [init(centerCoordinate: CLLocationCoordinate2D, distance: Double, heading: Double, pitch: Double)](./mapcamera/init%28centercoordinate,distance,heading,pitch%29.md)
   Creates a camera using the specified distance, pitch, and heading information.
 ### Accessing the camera properties
-- [var centerCoordinate: CLLocationCoordinate2D](mapcamera/centercoordinate.md)
+- [var centerCoordinate: CLLocationCoordinate2D](./mapcamera/centercoordinate.md)
   The map coordinate at the center of the map view.
-- [var distance: Double](mapcamera/distance.md)
+- [var distance: Double](./mapcamera/distance.md)
   The distance from the center point of the map to the camera, in meters.
-- [var heading: Double](mapcamera/heading.md)
+- [var heading: Double](./mapcamera/heading.md)
   The heading of the camera, in degrees, relative to true North.
-- [var pitch: Double](mapcamera/pitch.md)
+- [var pitch: Double](./mapcamera/pitch.md)
   The viewing angle of the camera, in degrees.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct MapCameraBounds](mapcamerabounds.md)
+### Map customization
+- [struct MapCameraBounds](./mapcamerabounds.md)
   Defines an optional boundary of an area within which the map’s center needs to remain.
-- [struct MapCameraPosition](mapcameraposition.md)
+- [struct MapCameraPosition](./mapcameraposition.md)
   A structure that describes how to position the map’s camera within the map.
-- [struct MapCameraUpdateContext](mapcameraupdatecontext.md)
+- [struct MapCameraUpdateContext](./mapcameraupdatecontext.md)
   A structure that defines additional information about the map camera.
-- [struct MapCameraUpdateFrequency](mapcameraupdatefrequency.md)
+- [struct MapCameraUpdateFrequency](./mapcameraupdatefrequency.md)
   A structure that describes when the map camera updates.
 
 

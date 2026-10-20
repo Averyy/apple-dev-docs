@@ -1,7 +1,8 @@
 # currentPermissionMatchPatterns
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently granted permission match patterns that have not expired.
 
@@ -18,9 +19,14 @@ The currently granted permission match patterns that have not expired.
 var currentPermissionMatchPatterns: Set<WKWebExtension.MatchPattern> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSSet<WKWebExtensionMatchPattern *> * currentPermissionMatchPatterns;
+```
+
 ## See Also
 
-- [var grantedPermissionMatchPatterns: [WKWebExtension.MatchPattern : Date]](wkwebextensioncontext/grantedpermissionmatchpatterns.md)
+### Related Documentation
+- [var grantedPermissionMatchPatterns: [WKWebExtension.MatchPattern : Date]](./grantedpermissionmatchpatterns.md)
   The currently granted permission match patterns and their expiration dates.
 
 

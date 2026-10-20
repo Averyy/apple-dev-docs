@@ -1,7 +1,8 @@
 # SystemFormatStyle.Stopwatch
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A format style that displays elapsed time as a precision stopwatch counting up from zero.
 
@@ -30,7 +31,7 @@ Text(.currentDate, format: .stopwatch(startingAt: startDate))
 // Output: "00:05.23" (after 5.23 seconds)
 ```
 
-##### Output Format Progression
+##### Output format progression
 
 The stopwatch automatically adds an hours field when the elapsed time reaches one hour:
 
@@ -41,7 +42,7 @@ The stopwatch automatically adds an hours field when the elapsed time reaches on
 | 1 hour or more | `01:00:00.00` |
 | Over 25 hours | `25:01:01.00` |
 
-##### Adjusting Precision
+##### Adjusting precision
 
 Control the displayed precision with the `maxPrecision` parameter:
 
@@ -59,7 +60,7 @@ Control the displayed precision with the `maxPrecision` parameter:
 // Output: "1 hour" or "23 minutes"
 ```
 
-##### Controlling Field Count
+##### Controlling field count
 
 The `maxFieldCount` parameter limits how many fields appear:
 
@@ -73,22 +74,22 @@ The `maxFieldCount` parameter limits how many fields appear:
 ## Topics
 
 ### Initializers
-- [init(startingAt: Date, showsHours: Bool, maxFieldCount: Int, maxPrecision: Duration)](systemformatstyle/stopwatch/init(startingat:showshours:maxfieldcount:maxprecision:).md)
+- [init(startingAt: Date, showsHours: Bool, maxFieldCount: Int, maxPrecision: Duration)](./stopwatch/init%28startingat,showshours,maxfieldcount,maxprecision%29.md)
   Creates a stopwatch format style that starts counting up from zero from the date you provide.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [DiscreteFormatStyle](../foundation/discreteformatstyle.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](../foundation/formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [DiscreteFormatStyle](../../Foundation/discreteformatstyle.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [FormatStyle](../../Foundation/formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

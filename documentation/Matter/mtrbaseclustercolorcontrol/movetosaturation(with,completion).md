@@ -1,7 +1,8 @@
 # moveToSaturation(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func moveToSaturation(with params: MTRColorControlClusterMoveToSaturationParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func moveToSaturation(with params: MTRColorControlClusterMoveToSaturationParams) async throws
+```
+
+```objc
+- (void) moveToSaturationWithParams:(MTRColorControlClusterMoveToSaturationParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

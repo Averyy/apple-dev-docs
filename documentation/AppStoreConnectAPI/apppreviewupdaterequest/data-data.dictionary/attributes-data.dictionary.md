@@ -1,16 +1,19 @@
 # AppPreviewUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes whose values you’re changing as part of the update request.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryVideoUpdateRequest`](../../appassetlibraryvideoupdaterequest.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppPreviewUpdateRequest.Data.Attributes
 ```
 

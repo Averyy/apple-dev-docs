@@ -1,7 +1,8 @@
 # isUIToggleEnabled
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var isUIToggleEnabled: Bool { get set }
+```
+
+```objc
+@property (getter=isUIToggleEnabled) BOOL UIToggleEnabled;
 ```
 
 #### Discussion

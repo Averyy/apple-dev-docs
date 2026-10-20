@@ -1,7 +1,8 @@
 # init(tollAmount:locale:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for a toll amount.
 
@@ -14,6 +15,10 @@ Creates additional route information for a toll amount.
 
 ```swift
 convenience init(tollAmount value: Double, locale: Locale)
+```
+
+```objc
++ (instancetype) routeDetailWithTollAmount:(double) value locale:(NSLocale *) locale;
 ```
 
 #### Return Value

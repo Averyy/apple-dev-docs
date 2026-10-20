@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_throttlereq {
     ...
 };
@@ -17,8 +17,8 @@ struct if_throttlereq {
 ## Topics
 
 ### Instance Properties
-- [ifthr_level](if_throttlereq/3943801-ifthr_level.md)
-- [ifthr_name](if_throttlereq/3943802-ifthr_name.md)
+- [ifthr_level](./if_throttlereq/api-3943801-ifthr_level.md)
+- [ifthr_name](./if_throttlereq/api-3943802-ifthr_name.md)
 
 
 ---

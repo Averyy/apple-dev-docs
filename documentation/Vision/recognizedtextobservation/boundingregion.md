@@ -1,7 +1,8 @@
 # boundingRegion
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bounding region of the text.
 
@@ -21,16 +22,17 @@ var boundingRegion: NormalizedRegion { get }
 
 ## See Also
 
-- [let isTitle: Bool](recognizedtextobservation/istitle.md)
+### Inspecting an observation
+- [let isTitle: Bool](./istitle.md)
   Whether this text is the title of the document.
-- [let recognitionLanguages: [Locale.Language]](recognizedtextobservation/recognitionlanguages.md)
+- [let recognitionLanguages: [Locale.Language]](./recognitionlanguages.md)
   The languages in which the recognized text was written.
-- [let shouldWrapToNextLine: Bool?](recognizedtextobservation/shouldwraptonextline.md)
+- [let shouldWrapToNextLine: Bool?](./shouldwraptonextline.md)
   Whether the text continues on the next line.
-- [let textDirection: RecognizedTextObservation.Direction?](recognizedtextobservation/textdirection.md)
-- [RecognizedTextObservation.Direction](recognizedtextobservation/direction.md)
+- [let textDirection: RecognizedTextObservation.Direction?](./textdirection.md)
+- [RecognizedTextObservation.Direction](./direction.md)
   An enum representing which direction the text is read.
-- [var transcript: String](recognizedtextobservation/transcript.md)
+- [var transcript: String](./transcript.md)
   The top text candidate as a string.
 
 

@@ -1,7 +1,8 @@
 # IOServiceMatchingCallback
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Callback function to be notified of IOService publication.
 
@@ -18,6 +19,10 @@ Callback function to be notified of IOService publication.
 typealias IOServiceMatchingCallback = (UnsafeMutableRawPointer?, io_iterator_t) -> Void
 ```
 
+```c
+typedef void (*IOServiceMatchingCallback)(void *refcon, io_iterator_t iterator);
+```
+
 ## Parameters
 
 - `refcon`: The refcon passed when the notification was installed.
@@ -25,15 +30,16 @@ typealias IOServiceMatchingCallback = (UnsafeMutableRawPointer?, io_iterator_t) 
 
 ## See Also
 
-- [typealias IOAsyncCallback](ioasynccallback.md)
+### Callbacks
+- [typealias IOAsyncCallback](./ioasynccallback.md)
   standard callback function for asynchronous I/O requests with lots of extra arguments beyond a refcon and result code.
-- [typealias IOAsyncCallback0](ioasynccallback0.md)
+- [typealias IOAsyncCallback0](./ioasynccallback0.md)
   standard callback function for asynchronous I/O requests with no extra arguments beyond a refcon and result code.
-- [typealias IOAsyncCallback1](ioasynccallback1.md)
+- [typealias IOAsyncCallback1](./ioasynccallback1.md)
   standard callback function for asynchronous I/O requests with one extra argument beyond a refcon and result code. This is often a count of the number of bytes transferred
-- [typealias IOAsyncCallback2](ioasynccallback2.md)
+- [typealias IOAsyncCallback2](./ioasynccallback2.md)
   standard callback function for asynchronous I/O requests with two extra arguments beyond a refcon and result code.
-- [typealias IOServiceInterestCallback](ioserviceinterestcallback.md)
+- [typealias IOServiceInterestCallback](./ioserviceinterestcallback.md)
   Callback function to be notified of changes in state of an IOService.
 
 

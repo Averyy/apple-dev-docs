@@ -1,7 +1,8 @@
 # registerCloudKitShare(preparationHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a handler that prepares a new CloudKit share.
 
@@ -14,13 +15,17 @@ Registers a handler that prepares a new CloudKit share.
 func registerCloudKitShare(preparationHandler: @escaping (@escaping (CKShare?, CKContainer?, (any Error)?) -> Void) -> Void)
 ```
 
+```objc
+- (void) registerCloudKitShareWithPreparationHandler:(void (^)(void (^preparationCompletionHandler)(CKShare *, CKContainer *, NSError *))) preparationHandler;
+```
+
 #### Discussion
 
-Use this method to share a hierarchy of CloudKit records with other iCloud users. When the service invokes the handler, create an instance of [`CKShare`](https://developer.apple.com/documentation/cloudkit/ckshare) with a root record. Save the share to the server using [`CKModifyRecordsOperation`](https://developer.apple.com/documentation/cloudkit/ckmodifyrecordsoperation). The root record (and its hierarchy) must already exist on the server or be part of the same save operation. After the share saves, call `preparationCompletionHandler` with the saved share and its container. If the save fails, pass the error to the completion handler instead. Invoking the sharing service with a share you register using this method prompts the user to begin sharing.
+Use this method to share a hierarchy of CloudKit records with other iCloud users. When the service invokes the handler, create an instance of [`CKShare`](../../CloudKit/ckshare.md) with a root record. Save the share to the server using [`CKModifyRecordsOperation`](../../CloudKit/ckmodifyrecordsoperation.md). The root record (and its hierarchy) must already exist on the server or be part of the same save operation. After the share saves, call `preparationCompletionHandler` with the saved share and its container. If the save fails, pass the error to the completion handler instead. Invoking the sharing service with a share you register using this method prompts the user to begin sharing.
 
-Use the [`NSCloudSharingServiceDelegate`](https://developer.apple.com/documentation/appkit/nscloudsharingservicedelegate) protocol to respond to any changes the sharing service makes.
+Use the [`NSCloudSharingServiceDelegate`](../../AppKit/nscloudsharingservicedelegate.md) protocol to respond to any changes the sharing service makes.
 
-> **Note**:  To modify an existing share, use the [`registerCloudKitShare(_:container:)`](nsitemprovider/registercloudkitshare(_:container:).md) method instead.
+> **Note**:  To modify an existing share, use the [`registerCloudKitShare(_:container:)`](./registercloudkitshare%28_,container%29.md) method instead.
 
 The following example shows how to create an item provider with a handler that saves a share. It then invokes the cloud-sharing service with that provider.
 
@@ -76,11 +81,12 @@ func beginSharing(_ record: CKRecord) {
 
 ## See Also
 
-- [func registerCloudKitShare(CKShare, container: CKContainer)](nsitemprovider/registercloudkitshare(_:container:).md)
+### Registering CloudKit shares
+- [func registerCloudKitShare(CKShare, container: CKContainer)](./registercloudkitshare%28_,container%29.md)
   Registers a CloudKit share for the user to modify.
-- [func registerCKShare(CKShare, container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions)](nsitemprovider/registerckshare(_:container:allowedsharingoptions:).md)
+- [func registerCKShare(CKShare, container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions)](./registerckshare%28_,container,allowedsharingoptions%29.md)
   Registers an existing collaboration object on a server.
-- [func registerCKShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions, preparationHandler: () async throws -> CKShare)](nsitemprovider/registerckshare(container:allowedsharingoptions:preparationhandler:).md)
+- [func registerCKShare(container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions, preparationHandler: () async throws -> CKShare)](./registerckshare%28container,allowedsharingoptions,preparationhandler%29.md)
   Creates and registers a new collaboration object using a collection of records to share.
 
 

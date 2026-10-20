@@ -1,7 +1,8 @@
 # documentSize
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document’s size, in bytes.
 
@@ -19,12 +20,17 @@ The document’s size, in bytes.
 optional var documentSize: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSNumber * documentSize;
+```
+
 ## See Also
 
-- [var childItemCount: NSNumber?](nsfileprovideritemprotocol/childitemcount.md)
+### Managing Content
+- [var childItemCount: NSNumber?](./childitemcount.md)
   The number of items contained by this item.
-- [var contentPolicy: NSFileProviderContentPolicy](nsfileprovideritemprotocol/contentpolicy.md)
-- [enum NSFileProviderContentPolicy](nsfileprovidercontentpolicy.md)
+- [var contentPolicy: NSFileProviderContentPolicy](./contentpolicy.md)
+- [enum NSFileProviderContentPolicy](../nsfileprovidercontentpolicy.md)
 
 
 ---

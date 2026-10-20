@@ -1,7 +1,8 @@
 # ToolbarRole
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The purpose of content that populates the toolbar.
 
@@ -22,9 +23,9 @@ struct ToolbarRole
 
 #### Overview
 
-A toolbar role provides a description of the purpose of content that populates the toolbar. The purpose of the content influences how a toolbar renders its content. For example, a [`browser`](toolbarrole/browser.md) will automatically leading align the title of a toolbar in iPadOS.
+A toolbar role provides a description of the purpose of content that populates the toolbar. The purpose of the content influences how a toolbar renders its content. For example, a [`browser`](./toolbarrole/browser.md) will automatically leading align the title of a toolbar in iPadOS.
 
-Provide this type to the [`toolbarRole(_:)`](view/toolbarrole(_:).md) modifier:
+Provide this type to the [`toolbarRole(_:)`](./view/toolbarrole%28_%29.md) modifier:
 
 ```swift
 ContentView()
@@ -40,25 +41,26 @@ ContentView()
 ## Topics
 
 ### Behavior-specific roles
-- [static var browser: ToolbarRole](toolbarrole/browser.md)
+- [static var browser: ToolbarRole](./toolbarrole/browser.md)
   The browser role.
-- [static var editor: ToolbarRole](toolbarrole/editor.md)
+- [static var editor: ToolbarRole](./toolbarrole/editor.md)
   The editor role.
-- [static var navigationStack: ToolbarRole](toolbarrole/navigationstack.md)
+- [static var navigationStack: ToolbarRole](./toolbarrole/navigationstack.md)
   The navigationStack role.
 ### Automatic roles
-- [static var automatic: ToolbarRole](toolbarrole/automatic.md)
+- [static var automatic: ToolbarRole](./toolbarrole/automatic.md)
   The automatic role.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func toolbarRole(ToolbarRole) -> some View](view/toolbarrole(_:).md)
+### Specifying the role of toolbar content
+- [func toolbarRole(ToolbarRole) -> some View](./view/toolbarrole%28_%29.md)
   Configures the semantic role for the content populating the toolbar.
 
 

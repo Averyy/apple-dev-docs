@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror that reflects the `Double` instance.
 
@@ -22,11 +23,12 @@ var customMirror: Mirror { get }
 
 ## See Also
 
-- [var description: String](double/description.md)
+### Describing a Double
+- [var description: String](./description.md)
   A textual representation of the value.
-- [var debugDescription: String](double/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the value, suitable for debugging.
-- [func hash(into: inout Hasher)](double/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

@@ -1,7 +1,8 @@
 # attributeNamed(_:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the vertex attribute with the specified name in the vertex descriptor.
 
@@ -19,9 +20,13 @@ Returns the vertex attribute with the specified name in the vertex descriptor.
 func attributeNamed(_ name: String) -> MDLVertexAttribute?
 ```
 
+```objc
+- (MDLVertexAttribute *) attributeNamed:(NSString *) name;
+```
+
 #### Return Value
 
-The descriptor’s vertex attribute with the specified name, or `nil` if the [`attributes`](mdlvertexdescriptor/attributes.md) array does not contain a vertex attribute with that name.
+The descriptor’s vertex attribute with the specified name, or `nil` if the [`attributes`](./attributes.md) array does not contain a vertex attribute with that name.
 
 ## Parameters
 
@@ -29,11 +34,12 @@ The descriptor’s vertex attribute with the specified name, or `nil` if the [`a
 
 ## See Also
 
-- [var attributes: NSMutableArray](mdlvertexdescriptor/attributes.md)
+### Working with Vertex Attributes
+- [var attributes: NSMutableArray](./attributes.md)
   The list of vertex attributes described by the vertex descriptor.
-- [func addOrReplaceAttribute(MDLVertexAttribute)](mdlvertexdescriptor/addorreplaceattribute(_:).md)
+- [func addOrReplaceAttribute(MDLVertexAttribute)](./addorreplaceattribute%28_%29.md)
   Adds the specified vertex attribute to the vertex descriptor, replacing any existing attribute with the same name.
-- [func setPackedOffsets()](mdlvertexdescriptor/setpackedoffsets.md)
+- [func setPackedOffsets()](./setpackedoffsets%28%29.md)
   Sets the offset for each vertex attribute to the minimum value to pack vertex data together in a single buffer.
 
 

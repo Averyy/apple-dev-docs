@@ -1,7 +1,8 @@
 # setActiveDatasetRequestWith(_:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command SetActiveDatasetRequest
 
@@ -17,7 +18,15 @@ Command SetActiveDatasetRequest
 ## Declaration
 
 ```swift
+func setActiveDatasetRequestWith(_ params: MTRThreadBorderRouterManagementClusterSetActiveDatasetRequestParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func setActiveDatasetRequestWith(_ params: MTRThreadBorderRouterManagementClusterSetActiveDatasetRequestParams) async throws
+```
+
+```objc
+- (void) setActiveDatasetRequestWithParams:(MTRThreadBorderRouterManagementClusterSetActiveDatasetRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # GroupActivityAssociationInteraction
 
 **Framework**: Group Activities  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interaction configures a view’s association with the current SharePlay group activity.
 
@@ -17,17 +18,17 @@ An interaction configures a view’s association with the current SharePlay grou
 
 ## Mentions
 
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md)
 
 #### Overview
 
-When a group of people join a SharePlay activity with their spatial Personas, the system selects a common, primary scene to arrange their spatial Personas around. This association between the group activity and a scene in your app creates a shared space for the spatial Personas to interact in; enabling participants to gesture at the associated scene and understand each other. For more information about spatial Personas and SharePlay on visionOS, see [`Adding spatial Persona support to an activity`](adding-spatial-persona-support-to-an-activity.md).
+When a group of people join a SharePlay activity with their spatial Personas, the system selects a common, primary scene to arrange their spatial Personas around. This association between the group activity and a scene in your app creates a shared space for the spatial Personas to interact in; enabling participants to gesture at the associated scene and understand each other. For more information about spatial Personas and SharePlay on visionOS, see [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md).
 
-By default, the system uses your scene’s activation conditions in concert with your activity’s [`SceneAssociationBehavior`](sceneassociationbehavior.md) to select a primary scene to associate with the activity. You can specify a different scene or dynamically change the primary associated scene by adding this interaction to a view and specifying that view as the `GroupActivityAssociationKind/primary` group activity association.
+By default, the system uses your scene’s activation conditions in concert with your activity’s [`SceneAssociationBehavior`](./sceneassociationbehavior.md) to select a primary scene to associate with the activity. You can specify a different scene or dynamically change the primary associated scene by adding this interaction to a view and specifying that view as the `GroupActivityAssociationKind/primary` group activity association.
 
-> 💡 **Tip**:  When building a custom [`SpatialTemplate`](spatialtemplate.md), the primary associated scene is the [`app`](spatialtemplateelementposition/app.md) that each seat’s position is relative to.
+> 💡 **Tip**:  When building a custom [`SpatialTemplate`](./spatialtemplate.md), the primary associated scene is the [`app`](./spatialtemplateelementposition/app.md) that each seat’s position is relative to.
 
-To add the interaction to a view, use [`addInteraction(_:)`](https://developer.apple.com/documentation/uikit/uiview/addinteraction(_:)).
+To add the interaction to a view, use [`addInteraction(_:)`](../UIKit/uiview/addinteraction%28_%29.md).
 
 ```swift
 // Create and store the scene association interaction
@@ -56,43 +57,44 @@ func removeGroupActivityAssociation() {
 ## Topics
 
 ### Initializers
-- [init(associationKind: GroupActivityAssociationKind?)](groupactivityassociationinteraction/init(associationkind:).md)
+- [init(associationKind: GroupActivityAssociationKind?)](./groupactivityassociationinteraction/init%28associationkind%29.md)
   Creates a group activity association interaction.
 ### Instance Properties
-- [var associationKind: GroupActivityAssociationKind?](groupactivityassociationinteraction/associationkind.md)
+- [var associationKind: GroupActivityAssociationKind?](./groupactivityassociationinteraction/associationkind.md)
   An optional value that indicates the kind of group activity association, if any.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIInteraction](../uikit/uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIInteraction](../UIKit/uiinteraction.md)
 
 ## See Also
 
-- [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
+### Spatial activities
+- [Configure your visionOS app for sharing with people nearby](./configure-your-app-for-sharing-with-people-nearby.md)
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
-- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+- [Adding spatial Persona support to an activity](./adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
-- [Implementing SharePlay for immersive spaces in visionOS](../visionos/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
   Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
-- [class SystemCoordinator](systemcoordinator.md)
+- [class SystemCoordinator](./systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
-- [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)
+- [SystemCoordinator.ParticipantState](./systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
 - [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View
-](../swiftui/view/groupactivityassociation(_:).md)
+](../SwiftUI/view/groupactivityassociation%28_%29.md)
   Specifies how a view should be associated with the current SharePlay group activity.
-- [struct GroupActivityAssociationKind](groupactivityassociationkind.md)
+- [struct GroupActivityAssociationKind](./groupactivityassociationkind.md)
   An association a user-interface element can have with a SharePlay group activity.
 
 

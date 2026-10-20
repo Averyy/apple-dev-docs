@@ -1,7 +1,8 @@
 # initialize(fromContentsOf:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes the buffer slice’s memory with with every element of the source.
 
@@ -20,6 +21,8 @@ Initializes the buffer slice’s memory with with every element of the source.
 func initialize<Element>(fromContentsOf source: some Collection) -> Slice<Base>.Index where Base == UnsafeMutableBufferPointer<Element>
 ```
 
+Available when `Base` conforms to `Collection`.
+
 #### Return Value
 
 The index one past the last element of the buffer slice initialized by this function.
@@ -30,7 +33,7 @@ Prior to calling the `initialize(fromContentsOf:)` method on a buffer slice, the
 
 The returned index is the index of the next uninitialized element in the buffer slice, one past the index of the last element written. If `source` contains no elements, the returned index is equal to the buffer slice’s `startIndex`. If `source` contains as many elements as the buffer slice can hold, the returned index is equal to to the slice’s `endIndex`.
 
-> **Note**: `self.count` >= `source.count`
+> **Precondition**: `self.count` >= `source.count`
 
 > **Note**: The memory regions referenced by `source` and this buffer slice must not overlap.
 

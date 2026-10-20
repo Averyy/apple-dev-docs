@@ -1,7 +1,8 @@
 # CNContactDisplayNameOrder.userDefault
 
 **Framework**: Contacts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Display name order by user default.
 
@@ -19,11 +20,16 @@ Display name order by user default.
 case userDefault
 ```
 
+```c
+CNContactDisplayNameOrderUserDefault
+```
+
 ## See Also
 
-- [CNContactDisplayNameOrder.givenNameFirst](cncontactdisplaynameorder/givennamefirst.md)
+### Constants
+- [CNContactDisplayNameOrder.givenNameFirst](./givennamefirst.md)
   Display name order by given name first.
-- [CNContactDisplayNameOrder.familyNameFirst](cncontactdisplaynameorder/familynamefirst.md)
+- [CNContactDisplayNameOrder.familyNameFirst](./familynamefirst.md)
   Display name order by family name first.
 
 

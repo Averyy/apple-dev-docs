@@ -1,7 +1,8 @@
 # alignedWith(appAxis:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a direction that orients the participant to look along the specified axis in the direction of the app’s content.
 
@@ -41,7 +42,8 @@ struct Line: SpatialTemplate {
 
 ## See Also
 
-- [struct SpatialTemplateElementAxis](spatialtemplateelementaxis.md)
+### Looking along an axis
+- [struct SpatialTemplateElementAxis](../spatialtemplateelementaxis.md)
   An axis to use when aligning elements in a spatial template.
 
 

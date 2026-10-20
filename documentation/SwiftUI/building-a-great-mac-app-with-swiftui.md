@@ -1,6 +1,8 @@
 # Building a great Mac app with SwiftUI
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [BuildingAGreatMacAppWithSwiftUI.zip](https://docs-assets.developer.apple.com/published/bd66c5c88159/BuildingAGreatMacAppWithSwiftUI.zip)
 
 Create engaging SwiftUI Mac apps by incorporating side bars, tables, toolbars, and several other popular user interface elements.
 
@@ -10,13 +12,14 @@ Create engaging SwiftUI Mac apps by incorporating side bars, tables, toolbars, a
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC21 sessions: [`10062: SwiftUI on the Mac: Build the Fundamentals`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10062/) and [`10289: SwiftUI on the Mac: The Finishing Touches`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10289/).
+> **Note**: This sample code project is associated with WWDC21 sessions: [10062: SwiftUI on the Mac: Build the Fundamentals](https://developer.apple.com/wwdc21/10062/) and [10289: SwiftUI on the Mac: The Finishing Touches](https://developer.apple.com/wwdc21/10289/).
 
 ## See Also
 
-- [struct Table](table.md)
+### Creating a table
+- [struct Table](./table.md)
   A container that presents rows of data arranged in one or more columns, optionally providing the ability to select one or more members.
-- [func tableStyle<S>(S) -> some View](view/tablestyle(_:).md)
+- [func tableStyle<S>(S) -> some View](./view/tablestyle%28_%29.md)
   Sets the style for tables within this view.
 
 

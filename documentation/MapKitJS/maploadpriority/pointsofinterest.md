@@ -1,7 +1,8 @@
 # PointsOfInterest
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Prioritizes loading of the full standard map, with rendered POIs.
 
@@ -10,15 +11,16 @@ Prioritizes loading of the full standard map, with rendered POIs.
 
 ## Declaration
 
-```swift
+```
 readonly PointsOfInterest: "PointsOfInterest";
 ```
 
 ## See Also
 
-- [LandCover](maploadpriority/landcover.md)
+### Prioritizations
+- [LandCover](./landcover.md)
   Prioritizes loading of the map land cover and borders, without POIs or labels.
-- [None](maploadpriority/none.md)
+- [None](./none.md)
   Signifies no preference for what to prioritize when loading the map.
 
 

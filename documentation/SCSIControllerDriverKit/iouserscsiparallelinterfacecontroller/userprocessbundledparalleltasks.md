@@ -1,40 +1,42 @@
 # UserProcessBundledParallelTasks
 
 **Framework**: SCSIControllerDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes one or more parallel tasks in response to a call from the framework.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual void UserProcessBundledParallelTasks(const uint16_t parallelRequestSlotIndices[32], uint16_t parallelRequestSlotIndicesCount, OSAction *completion);
 ```
 
 #### Discussion
 
-The system calls this method to put one or more commands on the bus. The framework populates a [`SCSIUserParallelTask`](scsiuserparalleltask.md) for each task and makes it available in the command buffers. Access these command buffers with the indices passed in the `parallelRequestSlotIndices` parameter.
+The system calls this method to put one or more commands on the bus. The framework populates a [`SCSIUserParallelTask`](../scsiuserparalleltask.md) for each task and makes it available in the command buffers. Access these command buffers with the indices passed in the `parallelRequestSlotIndices` parameter.
 
-If the dext can’t process any commands, invoke [`BundledParallelTaskCompletion`](iouserscsiparallelinterfacecontroller/bundledparalleltaskcompletion.md) for those commands. The framework completes those commands with the response provided by the dext.
+If the dext can’t process any commands, invoke [`BundledParallelTaskCompletion`](./bundledparalleltaskcompletion.md) for those commands. The framework completes those commands with the response provided by the dext.
 
-The framework only calls this method when the dext has successfully mapped command and response buffers in the dext address space in [`UserMapBundledParallelTaskCommandAndResponseBuffers`](iouserscsiparallelinterfacecontroller/usermapbundledparalleltaskcommandandresponsebuffers.md).
+The framework only calls this method when the dext has successfully mapped command and response buffers in the dext address space in [`UserMapBundledParallelTaskCommandAndResponseBuffers`](./usermapbundledparalleltaskcommandandresponsebuffers.md).
 
 ## Parameters
 
 - `parallelRequestSlotIndices`: Indices of shared command buffer slots for the tasks to process. Entries from zero to `(parallelRequestSlotIndicesCount - 1)` have valid indices.
 - `parallelRequestSlotIndicesCount`: The number of tasks to process.
-- `completion`: An [`OSAction`](https://developer.apple.com/documentation/driverkit/osaction) object that the dext class uses to complete the request. The dext class needs to retain the `OSAction` object until all parallel tasks indicated by the callback complete and acknowledge completion to the framework by calling [`BundledParallelTaskCompletion`](iouserscsiparallelinterfacecontroller/bundledparalleltaskcompletion.md).
+- `completion`: An [`OSAction`](../../DriverKit/osaction.md) object that the dext class uses to complete the request. The dext class needs to retain the `OSAction` object until all parallel tasks indicated by the callback complete and acknowledge completion to the framework by calling [`BundledParallelTaskCompletion`](./bundledparalleltaskcompletion.md).
 
 ## See Also
 
-- [UserMapBundledParallelTaskCommandAndResponseBuffers](iouserscsiparallelinterfacecontroller/usermapbundledparalleltaskcommandandresponsebuffers.md)
+### Managing bundled parallel tasks
+- [UserMapBundledParallelTaskCommandAndResponseBuffers](./usermapbundledparalleltaskcommandandresponsebuffers.md)
   Maps the shared command and response buffers in the dext address space in response to a call from the framework.
-- [BundledParallelTaskCompletion](iouserscsiparallelinterfacecontroller/bundledparalleltaskcompletion.md)
+- [BundledParallelTaskCompletion](./bundledparalleltaskcompletion.md)
   Indicates to the system that the extension completed a bundled asynchronous request.
-- [kMaxBundledParallelTasks](kmaxbundledparalleltasks.md)
+- [kMaxBundledParallelTasks](../kmaxbundledparalleltasks.md)
 
 
 ---

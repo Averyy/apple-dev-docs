@@ -1,7 +1,8 @@
 # CreatePropertyMatchingDictionary
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - DriverKit 19.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 static OSDictionary * CreatePropertyMatchingDictionary(const char *key, OSObjectPtr value, OSDictionary *matching);
 ```
 

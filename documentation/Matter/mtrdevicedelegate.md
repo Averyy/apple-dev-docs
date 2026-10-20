@@ -1,7 +1,8 @@
 # MTRDeviceDelegate
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -18,20 +19,24 @@
 protocol MTRDeviceDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MTRDeviceDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func device(MTRDevice, receivedAttributeReport: [[String : Any]])](mtrdevicedelegate/device(_:receivedattributereport:).md)
-- [func device(MTRDevice, receivedEventReport: [[String : Any]])](mtrdevicedelegate/device(_:receivedeventreport:).md)
-- [func device(MTRDevice, stateChanged: MTRDeviceState)](mtrdevicedelegate/device(_:statechanged:).md)
-- [func deviceBecameActive(MTRDevice)](mtrdevicedelegate/devicebecameactive(_:).md)
-- [func deviceCachePrimed(MTRDevice)](mtrdevicedelegate/devicecacheprimed(_:).md)
-- [func deviceConfigurationChanged(MTRDevice)](mtrdevicedelegate/deviceconfigurationchanged(_:).md)
+- [func device(MTRDevice, receivedAttributeReport: [[String : Any]])](./mtrdevicedelegate/device%28_,receivedattributereport%29.md)
+- [func device(MTRDevice, receivedEventReport: [[String : Any]])](./mtrdevicedelegate/device%28_,receivedeventreport%29.md)
+- [func device(MTRDevice, stateChanged: MTRDeviceState)](./mtrdevicedelegate/device%28_,statechanged%29.md)
+- [func deviceBecameActive(MTRDevice)](./mtrdevicedelegate/devicebecameactive%28_%29.md)
+- [func deviceCachePrimed(MTRDevice)](./mtrdevicedelegate/devicecacheprimed%28_%29.md)
+- [func deviceConfigurationChanged(MTRDevice)](./mtrdevicedelegate/deviceconfigurationchanged%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

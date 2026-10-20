@@ -1,7 +1,8 @@
 # PaymentCredentialStatusResponse
 
 **Framework**: Apple Pay on the Web  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The response for information about the device’s support for Apple Pay and the payment credential status.
 
@@ -11,7 +12,7 @@ The response for information about the device’s support for Apple Pay and the 
 
 ## Declaration
 
-```swift
+```
 dictionary PaymentCredentialStatusResponse {
 	PaymentCredentialStatus paymentCredentialStatus;
 };
@@ -19,25 +20,26 @@ dictionary PaymentCredentialStatusResponse {
 
 #### Overview
 
-The response contains the [`paymentCredentialStatus`](paymentcredentialstatusresponse/paymentcredentialstatus.md) of the device.
+The response contains the [`paymentCredentialStatus`](./paymentcredentialstatusresponse/paymentcredentialstatus.md) of the device.
 
 ## Topics
 
 ### Payment credential status
-- [paymentCredentialStatus](paymentcredentialstatusresponse/paymentcredentialstatus.md)
+- [paymentCredentialStatus](./paymentcredentialstatusresponse/paymentcredentialstatus.md)
   The status of the possible payment credentials that a person has provisioned in Wallet.
 
 ## See Also
 
-- [Checking for Apple Pay availability](checking-for-apple-pay-availability.md)
+### Apple Pay availability
+- [Checking for Apple Pay availability](./checking-for-apple-pay-availability.md)
   Use the Apple Pay JS API to check whether Apple Pay is available, to check whether a device has a payment credential provisioned in Wallet, and to determine when to display an Apple Pay button.
-- [canMakePayments](applepaysession/canmakepayments.md)
+- [canMakePayments](./applepaysession/canmakepayments.md)
   Indicates whether the device supports Apple Pay.
-- [applePayCapabilities](applepaysession/applepaycapabilities.md)
+- [applePayCapabilities](./applepaysession/applepaycapabilities.md)
   Indicates whether the device supports Apple Pay and whether the person has an active card in Wallet that qualifies for web payments.
-- [canMakePaymentsWithActiveCard](applepaysession/canmakepaymentswithactivecard.md)
+- [canMakePaymentsWithActiveCard](./applepaysession/canmakepaymentswithactivecard.md)
   Indicates whether the device supports Apple Pay and whether the user has an active card in Wallet.
-- [PaymentCredentialStatus](paymentcredentialstatus.md)
+- [PaymentCredentialStatus](./paymentcredentialstatus.md)
   Information about whether the device supports Apple Pay and the possible payment credentials the person has provisioned in Wallet.
 
 

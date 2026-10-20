@@ -1,7 +1,8 @@
 # rowCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Number of rows in the sprite sheet.
 

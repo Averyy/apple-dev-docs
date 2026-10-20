@@ -1,7 +1,8 @@
 # soundClassification
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The highest-ranking classifications in the time range.
 
@@ -16,15 +17,20 @@ The highest-ranking classifications in the time range.
 var soundClassification: SNClassificationResult? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) SNClassificationResult * soundClassification;
+```
+
 ## See Also
 
-- [var audioLevel: SRAudioLevel?](srspeechmetrics/audiolevel.md)
+### Getting speech metrics and analytics
+- [var audioLevel: SRAudioLevel?](./audiolevel.md)
   The audio level of the speech.
-- [class SRAudioLevel](sraudiolevel.md)
+- [class SRAudioLevel](../sraudiolevel.md)
   An object that represents the audio level for a range of speech.
-- [var speechRecognition: SFSpeechRecognitionResult?](srspeechmetrics/speechrecognition.md)
+- [var speechRecognition: SFSpeechRecognitionResult?](./speechrecognition.md)
   The partial or final results of the speech recognition request.
-- [var speechExpression: SRSpeechExpression?](srspeechmetrics/speechexpression.md)
+- [var speechExpression: SRSpeechExpression?](./speechexpression.md)
   The metrics and voice analytics for the range of speech.
 
 

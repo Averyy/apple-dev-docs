@@ -1,7 +1,8 @@
 # supportsManifestVersion(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks if a manifest version is supported by the extension.
 
@@ -16,6 +17,10 @@ Checks if a manifest version is supported by the extension.
 
 ```swift
 func supportsManifestVersion(_ manifestVersion: Double) -> Bool
+```
+
+```objc
+- (BOOL) supportsManifestVersion:(double) manifestVersion;
 ```
 
 #### Return Value

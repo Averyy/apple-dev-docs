@@ -1,7 +1,8 @@
 # MTRClusterRVCOperationalState
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.4+
@@ -18,40 +19,44 @@
 class MTRClusterRVCOperationalState
 ```
 
+```objc
+@interface MTRClusterRVCOperationalState : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterrvcoperationalstate/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterrvcoperationalstate/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func pause(with: MTRRVCOperationalStateClusterPauseParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrclusterrvcoperationalstate/pause(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func pause(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrclusterrvcoperationalstate/pause(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvcoperationalstate/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvcoperationalstate/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvcoperationalstate/readattributeclusterrevision(with:).md)
-- [func readAttributeCountdownTime(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvcoperationalstate/readattributecountdowntime(with:).md)
-- [func readAttributeCurrentPhase(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvcoperationalstate/readattributecurrentphase(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvcoperationalstate/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvcoperationalstate/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeOperationalError(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvcoperationalstate/readattributeoperationalerror(with:).md)
-- [func readAttributeOperationalState(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvcoperationalstate/readattributeoperationalstate(with:).md)
-- [func readAttributeOperationalStateList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvcoperationalstate/readattributeoperationalstatelist(with:).md)
-- [func readAttributePhaseList(with: MTRReadParams?) -> [String : Any]?](mtrclusterrvcoperationalstate/readattributephaselist(with:).md)
-- [func resume(with: MTRRVCOperationalStateClusterResumeParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrclusterrvcoperationalstate/resume(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func resume(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrclusterrvcoperationalstate/resume(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func goHome(with: MTRRVCOperationalStateClusterGoHomeParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrclusterrvcoperationalstate/gohome(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func goHome(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](mtrclusterrvcoperationalstate/gohome(withexpectedvalues:expectedvalueinterval:completion:).md)
+- [func pause(with: MTRRVCOperationalStateClusterPauseParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrclusterrvcoperationalstate/pause%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func pause(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrclusterrvcoperationalstate/pause%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvcoperationalstate/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvcoperationalstate/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvcoperationalstate/readattributeclusterrevision%28with%29.md)
+- [func readAttributeCountdownTime(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvcoperationalstate/readattributecountdowntime%28with%29.md)
+- [func readAttributeCurrentPhase(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvcoperationalstate/readattributecurrentphase%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvcoperationalstate/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvcoperationalstate/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeOperationalError(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvcoperationalstate/readattributeoperationalerror%28with%29.md)
+- [func readAttributeOperationalState(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvcoperationalstate/readattributeoperationalstate%28with%29.md)
+- [func readAttributeOperationalStateList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvcoperationalstate/readattributeoperationalstatelist%28with%29.md)
+- [func readAttributePhaseList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterrvcoperationalstate/readattributephaselist%28with%29.md)
+- [func resume(with: MTRRVCOperationalStateClusterResumeParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrclusterrvcoperationalstate/resume%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func resume(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrclusterrvcoperationalstate/resume%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func goHome(with: MTRRVCOperationalStateClusterGoHomeParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrclusterrvcoperationalstate/gohome%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func goHome(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRRVCOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)](./mtrclusterrvcoperationalstate/gohome%28withexpectedvalues,expectedvalueinterval,completion%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

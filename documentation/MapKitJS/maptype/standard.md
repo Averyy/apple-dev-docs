@@ -1,7 +1,8 @@
 # Standard
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A street map that shows the position of all roads and some road names.
 
@@ -10,17 +11,18 @@ A street map that shows the position of all roads and some road names.
 
 ## Declaration
 
-```swift
+```
 readonly Standard: "standard";
 ```
 
 ## See Also
 
-- [Hybrid](maptype/hybrid.md)
+### Map type values
+- [Hybrid](./hybrid.md)
   A satellite image of the area with road and road name layers on top.
-- [MutedStandard](maptype/mutedstandard.md)
+- [MutedStandard](./mutedstandard.md)
   A street map that emphasizes your data over the underlying map details.
-- [Satellite](maptype/satellite.md)
+- [Satellite](./satellite.md)
   A satellite image of the area.
 
 

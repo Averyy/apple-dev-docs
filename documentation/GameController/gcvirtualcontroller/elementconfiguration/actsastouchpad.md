@@ -1,7 +1,8 @@
 # actsAsTouchpad
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the thumbstick element behaves as a touchpad.
 
@@ -16,11 +17,16 @@ A Boolean value that determines whether the thumbstick element behaves as a touc
 var actsAsTouchpad: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL actsAsTouchpad;
+```
+
 ## See Also
 
-- [var path: UIBezierPath?](gcvirtualcontroller/elementconfiguration/path.md)
+### Configuring elements
+- [var path: UIBezierPath?](./path.md)
   The Bezier path for the shape of an element.
-- [var isHidden: Bool](gcvirtualcontroller/elementconfiguration/ishidden.md)
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that determines whether the virtual controller hides the element.
 
 

@@ -1,7 +1,8 @@
 # StateError.workoutApplicationNotInstalled
 
 **Framework**: WorkoutKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Workout app isn’t installed on this Apple Watch.
 
@@ -20,7 +21,8 @@ case workoutApplicationNotInstalled
 
 ## See Also
 
-- [StateError.watchNotPaired](stateerror/watchnotpaired.md)
+### Getting the error type
+- [StateError.watchNotPaired](./watchnotpaired.md)
   The current device doesn’t have a paired Apple Watch.
 
 

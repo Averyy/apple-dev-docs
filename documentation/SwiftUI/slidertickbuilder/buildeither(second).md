@@ -1,7 +1,8 @@
 # buildEither(second:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Produces content for a conditional statement in a multi-statement closure when the condition is false.
 

@@ -1,7 +1,8 @@
 # ignoreGrammarRange(_:inSentence:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func ignoreGrammarRange(_ grammarRange: NSRange, inSentence sentence: String)
+```
+
+```objc
+- (void) ignoreGrammarRange:(NSRange) grammarRange inSentence:(NSString *) sentence;
 ```
 
 

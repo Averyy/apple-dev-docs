@@ -1,7 +1,8 @@
 # DiskWriteExceptionDiagnostic
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A diagnostic for a disk write exception.
 
@@ -20,36 +21,37 @@ struct DiskWriteExceptionDiagnostic
 
 #### Discussion
 
-Disk write exceptions occur when your app writes data to disk at an excessive rate. The diagnostic includes a [`CallStackTree`](callstacktree.md) to identify the responsible code path, and `totalBytesWritten` to quantify the I/O.
+Disk write exceptions occur when your app writes data to disk at an excessive rate. The diagnostic includes a [`CallStackTree`](./callstacktree.md) to identify the responsible code path, and `totalBytesWritten` to quantify the I/O.
 
 ## Topics
 
 ### Call stack
-- [let callStackTree: CallStackTree](diskwriteexceptiondiagnostic/callstacktree.md)
+- [let callStackTree: CallStackTree](./diskwriteexceptiondiagnostic/callstacktree.md)
   The application call stack tree associated with the excessive disk writes.
 ### Disk write details
-- [let totalBytesWritten: Measurement<UnitInformationStorage>](diskwriteexceptiondiagnostic/totalbyteswritten.md)
+- [let totalBytesWritten: Measurement<UnitInformationStorage>](./diskwriteexceptiondiagnostic/totalbyteswritten.md)
   Total bytes written during the exception period.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct LogicalDiskWritesMetric](logicaldiskwritesmetric.md)
+### Disk metrics
+- [struct LogicalDiskWritesMetric](./logicaldiskwritesmetric.md)
   A metric that measures the total data written to disk.
-- [struct TotalDiskSpaceCapacityMetric](totaldiskspacecapacitymetric.md)
+- [struct TotalDiskSpaceCapacityMetric](./totaldiskspacecapacitymetric.md)
   A metric that measures disk capacity and usage on the device.
-- [struct TotalFileCountMetric](totalfilecountmetric.md)
+- [struct TotalFileCountMetric](./totalfilecountmetric.md)
   A metric that measures the number of files attributed to the app.
-- [struct TotalFileSizeMetric](totalfilesizemetric.md)
+- [struct TotalFileSizeMetric](./totalfilesizemetric.md)
   A metric that measures the sizes of files attributed to the app.
 
 

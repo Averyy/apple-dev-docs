@@ -1,7 +1,8 @@
 # temperature
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current temperature.
 
@@ -22,11 +23,12 @@ var temperature: Measurement<UnitTemperature>
 
 ## See Also
 
-- [var apparentTemperature: Measurement<UnitTemperature>](currentweather/apparenttemperature.md)
+### Getting temperature and humidity
+- [var apparentTemperature: Measurement<UnitTemperature>](./apparenttemperature.md)
   The feels-like temperature when factoring wind and humidity.
-- [var dewPoint: Measurement<UnitTemperature>](currentweather/dewpoint.md)
+- [var dewPoint: Measurement<UnitTemperature>](./dewpoint.md)
   The temperature at which relative humidity is 100%.
-- [var humidity: Double](currentweather/humidity.md)
+- [var humidity: Double](./humidity.md)
   The amount of water vapor in the air.
 
 

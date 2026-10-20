@@ -1,6 +1,7 @@
 # Copying existing atoms
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Copy existing atoms within an atom container.
 
@@ -8,7 +9,7 @@ Copy existing atoms within an atom container.
 
 QuickTime provides several functions for copying existing atoms within an atom container. The `QTInsertChildren` function inserts a container of atoms as children of a parent atom in another atom container. The following figure shows two example QT atom containers, A and B.
 
-![A diagram that shows two vertical arrangements of boxes connected by arrows. The first arrangement, on the left, shows a box with the caption “QT atom container A”, with an arrow pointing down to a box below it. The box below contains two sections stacked vertically. The first section contains the caption “‘abcd’”, and the second section contains the caption “1000”. Below the bottom box are the captions “Index = 1” and “Offset = 10”. The second arrangement, on the right, shows a box with the caption “QT atom container B”, with an arrow that splits in the middle pointing down to two horizontally-aligned boxes below it. The box below and on the left contains two sections stacked vertically. The first section contains the caption “‘defg’”, and the second section contains the caption “900”. Below the bottom box are the captions “Index = 1” and “Offset = 10”. The box below and on the right contains three sections stacked vertically. The first section contains the caption “‘hijk’”, the second section contains the caption “2000”, and the third section contains the caption “Data”. Below the bottom box are the captions “Index = 2” and “Offset = 20”.](/images/com.apple.qtff/qt-two-containers@2x.png)
+![A diagram that shows two vertical arrangements of boxes connected by arrows. The first arrangement, on the left, shows a box with the caption “QT atom container A”, with an arrow pointing down to a box below it. The box below contains two sections stacked vertically. The first section contains the caption “‘abcd’”, and the second section contains the caption “1000”. Below the bottom box are the captions “Index = 1” and “Offset = 10”. The second arrangement, on the right, shows a box with the caption “QT atom container B”, with an arrow that splits in the middle pointing down to two horizontally-aligned boxes below it. The box below and on the left contains two sections stacked vertically. The first section contains the caption “‘defg’”, and the second section contains the caption “900”. Below the bottom box are the captions “Index = 1” and “Offset = 10”. The box below and on the right contains three sections stacked vertically. The first section contains the caption “‘hijk’”, the second section contains the caption “2000”, and the third section contains the caption “Data”. Below the bottom box are the captions “Index = 2” and “Offset = 20”.](https://developer.apple.com/tutorials/images/com.apple.qtff/qt-two-containers@2x.png)
 
 The following code sample calls `QTFindChildByID` to retrieve the offset of the atom in container A. Then, the code sample calls the `QTInsertChildren` function to insert the atoms in container B as children of the atom in container A. The following figure shows what container A looks like after the atoms from container B have been inserted.
 
@@ -23,7 +24,7 @@ FailOSErr (QTInsertChildren (containerA, targetAtom, containerB));
 
 The following figure shows a QT atom container after insert child atoms.
 
-![A diagram that shows a box with the caption “QT atom container A”, with an arrow pointing down to a box below it. The box below contains two sections stacked vertically. The first section contains the caption “‘abcd’”, and the second section contains the caption “1000”. Beside that box are the captions “Index = 1” and “Offset = 10”. Below that box is an arrow that splits in the middle pointing down to two horizontally-aligned boxes below it. The box below and on the left contains two sections stacked vertically. The first section contains the caption “‘defg’”, and the second section contains the caption “900”. Below the bottom box are the captions “Index = 1” and “Offset = 20”. The box below and on the right contains three sections stacked vertically. The first section contains the caption “‘hijk’”, the second section contains the caption “2000”, and the third section contains the caption “Data”. Below the bottom box are the captions “Index = 2” and “Offset = 30”. ](/images/com.apple.qtff/qt-after-child-atoms@2x.png)
+![A diagram that shows a box with the caption “QT atom container A”, with an arrow pointing down to a box below it. The box below contains two sections stacked vertically. The first section contains the caption “‘abcd’”, and the second section contains the caption “1000”. Beside that box are the captions “Index = 1” and “Offset = 10”. Below that box is an arrow that splits in the middle pointing down to two horizontally-aligned boxes below it. The box below and on the left contains two sections stacked vertically. The first section contains the caption “‘defg’”, and the second section contains the caption “900”. Below the bottom box are the captions “Index = 1” and “Offset = 20”. The box below and on the right contains three sections stacked vertically. The first section contains the caption “‘hijk’”, the second section contains the caption “2000”, and the third section contains the caption “Data”. Below the bottom box are the captions “Index = 2” and “Offset = 30”. ](https://developer.apple.com/tutorials/images/com.apple.qtff/qt-after-child-atoms@2x.png)
 
 In the following listing, the `QTInsertChild` function inserts a parent atom into the atom container `theSample`. Then, the code calls `QTInsertChildren` to insert the container `theSprite` into the container `theSample`. The parent atom is `newSpriteAtom`.
 
@@ -38,13 +39,14 @@ QuickTime provides three other functions you can use to manipulate atoms in an a
 
 ## See Also
 
-- [Creating new atoms](creating_new_atoms.md)
+### Managing atoms
+- [Creating new atoms](./creating_new_atoms.md)
   Create new atoms and insert them in a QT atom container.
-- [Retrieving atoms from an atom container](retrieving_atoms_from_an_atom_container.md)
+- [Retrieving atoms from an atom container](./retrieving_atoms_from_an_atom_container.md)
   Retrieve information about the types of a parent atom’s children, search for a specific atom, and retrieve a leaf atom’s data.
-- [Modifying atoms](modifying_atoms.md)
+- [Modifying atoms](./modifying_atoms.md)
   Modify attributes or data associated with an atom in an atom container.
-- [Removing atoms from an atom container](removing_atoms_from_an_atom_container.md)
+- [Removing atoms from an atom container](./removing_atoms_from_an_atom_container.md)
   Remove atoms from an atom container.
 
 

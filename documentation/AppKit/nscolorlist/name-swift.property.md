@@ -1,12 +1,13 @@
 # name
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the color list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The name of the color list.
 var name: NSColorList.Name? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSColorListName name;
+```
+
 ## See Also
 
-- [NSColorList.Name](nscolorlist/name-swift.typealias.md)
+### Getting Information About Lists of Colors
+- [NSColorList.Name](./name-swift.typealias.md)
   The name assigned to a color list.
-- [var isEditable: Bool](nscolorlist/iseditable.md)
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value that indicates whether the color list can be modified.
 
 

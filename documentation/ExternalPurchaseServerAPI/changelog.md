@@ -1,6 +1,7 @@
 # External Purchase Server API changelog
 
-**Framework**: External Purchase Server API
+**Framework**: External Purchase Server API  
+**Role**: Article
 
 Learn about new features and updates in the External Purchase Server API.
 
@@ -8,37 +9,38 @@ Learn about new features and updates in the External Purchase Server API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the External Purchase Server API.
 
-#### 120 20250626
+#### 1.2.0 — 2025/06/26
 
 **New features**
 
 - Added support for new custom link token types, `ACQUISITION` and `SERVICES`.
-- Added DUPLICATE_TOKEN possible value in [`status`](status.md) and [`ExternalPurchaseReport`](externalpurchasereport.md) objects.
-- Added errors [`LineItemCreationDateOutOfRangeError`](lineitemcreationdateoutofrangeerror.md) and [`DuplicateTokenStatusNotAllowedError`](duplicatetokenstatusnotallowederror.md).
+- Added DUPLICATE_TOKEN possible value in [`status`](./status.md) and [`ExternalPurchaseReport`](./externalpurchasereport.md) objects.
+- Added errors [`LineItemCreationDateOutOfRangeError`](./lineitemcreationdateoutofrangeerror.md) and [`DuplicateTokenStatusNotAllowedError`](./duplicatetokenstatusnotallowederror.md).
 
-#### 110 20250414
+#### 1.1.0 — 2025/04/14
 
 **New features**
 
-- Added errors [`RestatementCreationDateMismatchError`](restatementcreationdatemismatcherror.md), [`RestatementNotAllowedCreationDateError`](restatementnotallowedcreationdateerror.md), and [`RefundNotAllowedCreationDateError`](refundnotallowedcreationdateerror.md).
+- Added errors [`RestatementCreationDateMismatchError`](./restatementcreationdatemismatcherror.md), [`RestatementNotAllowedCreationDateError`](./restatementnotallowedcreationdateerror.md), and [`RefundNotAllowedCreationDateError`](./refundnotallowedcreationdateerror.md).
 
-#### Server Update 20240305
+#### Server update — 2024/03/05
 
 Initial release.
 
-#### 100 20240229
+#### 1.0.0 — 2024/02/29
 
 Initial beta release with functionality enabled for sandbox testing.
 
-#### 010 20240125
+#### 0.1.0 — 2024/01/25
 
 Initial beta release for preview.
 
 ## See Also
 
-- [Creating API keys to authorize API requests](../appstoreserverapi/creating-api-keys-to-authorize-api-requests.md)
+### Essentials
+- [Creating API keys to authorize API requests](../AppStoreServerAPI/creating-api-keys-to-authorize-api-requests.md)
   Create API keys you use to sign JSON Web Tokens and authorize API requests.
-- [Generating JSON Web Tokens for API requests](../appstoreserverapi/generating-json-web-tokens-for-api-requests.md)
+- [Generating JSON Web Tokens for API requests](../AppStoreServerAPI/generating-json-web-tokens-for-api-requests.md)
   Create JSON Web Tokens signed with your private key to authorize requests for App Store Server API and External Purchase Server API.
 
 

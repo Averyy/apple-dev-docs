@@ -1,7 +1,8 @@
 # histogramInfo
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A structure describing the histogram content.
 
@@ -17,6 +18,10 @@ A structure describing the histogram content.
 
 ```swift
 var histogramInfo: MPSImageHistogramInfo { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPSImageHistogramInfo histogramInfo;
 ```
 
 #### Discussion

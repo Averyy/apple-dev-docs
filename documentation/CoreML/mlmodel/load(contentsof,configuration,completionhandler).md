@@ -1,7 +1,8 @@
 # load(contentsOf:configuration:completionHandler:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a Core ML model instance asynchronously from a compiled model file, a custom configuration, and a completion handler.
 
@@ -60,26 +61,27 @@ MLModel.load(contentsOf: modelURL) { result in
 }];
 ```
 
-In Swift, if the model loaded successfully, you can use the instance from the [`Result.success(_:)`](https://developer.apple.com/documentation/swift/result/success(_:)) associated value; otherwise, use the [`Result.failure(_:)`](https://developer.apple.com/documentation/swift/result/failure(_:)) associated value to address the error. In Objective-C, you can use the [`MLModel`](mlmodel.md) instance in your completion hander; otherwise, use the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) instance to address the error.  See [`MLModelError.Code`](mlmodelerror-swift.struct/code.md) for the list of error codes.
+In Swift, if the model loaded successfully, you can use the instance from the [`Result.success(_:)`](../../Swift/result/success%28_%29.md) associated value; otherwise, use the [`Result.failure(_:)`](../../Swift/result/failure%28_%29.md) associated value to address the error. In Objective-C, you can use the [`MLModel`](../mlmodel.md) instance in your completion hander; otherwise, use the [`NSError`](../../Foundation/nserror.md) instance to address the error.  See [`MLModelError.Code`](../mlmodelerror-swift.struct/code.md) for the list of error codes.
 
 ## Parameters
 
-- `url`: The path to a compiled model file (*ModelName*`.mlmodelc`), typically with the `URL` that [`compileModel(at:)`](mlmodel/compilemodel(at:)-6442s.md) returns.
+- `url`: The path to a compiled model file (*ModelName*`.mlmodelc`), typically with the `URL` that [`compileModel(at:)`](./compilemodel%28at%29-6442s.md) returns.
 - `configuration`: The runtime settings for the new model instance.
 - `handler`: A closure the method calls when it finishes loading the model.
 
 ## See Also
 
-- [class func load(contentsOf: URL, configuration: MLModelConfiguration) async throws -> MLModel](mlmodel/load(contentsof:configuration:).md)
+### Loading a model
+- [class func load(contentsOf: URL, configuration: MLModelConfiguration) async throws -> MLModel](./load%28contentsof,configuration%29.md)
   Construct a model asynchronously from a compiled model asset.
-- [class func load(MLModelAsset, configuration: MLModelConfiguration, completionHandler: (MLModel?, (any Error)?) -> Void)](mlmodel/load(_:configuration:completionhandler:).md)
+- [class func load(MLModelAsset, configuration: MLModelConfiguration, completionHandler: (MLModel?, (any Error)?) -> Void)](./load%28_,configuration,completionhandler%29.md)
   Construct a model asynchronously from a compiled model asset.
-- [convenience init(contentsOf: URL) throws](mlmodel/init(contentsof:).md)
+- [convenience init(contentsOf: URL) throws](./init%28contentsof%29.md)
   Creates a Core ML model instance from a compiled model file.
-- [convenience init(contentsOf: URL, configuration: MLModelConfiguration) throws](mlmodel/init(contentsof:configuration:).md)
+- [convenience init(contentsOf: URL, configuration: MLModelConfiguration) throws](./init%28contentsof,configuration%29.md)
   Creates a Core ML model instance from a compiled model file and a custom configuration.
-- [convenience init(contentsOfURL: URL) throws](mlmodel/init(contentsofurl:).md)
-- [convenience init(contentsOfURL: URL, configuration: MLModelConfiguration) throws](mlmodel/init(contentsofurl:configuration:).md)
+- [convenience init(contentsOfURL: URL) throws](./init%28contentsofurl%29.md)
+- [convenience init(contentsOfURL: URL, configuration: MLModelConfiguration) throws](./init%28contentsofurl,configuration%29.md)
 
 
 ---

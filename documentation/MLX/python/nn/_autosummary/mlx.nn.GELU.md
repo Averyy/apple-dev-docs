@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.G
 
 # mlx.nn.GELU
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.GELU.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.GELU
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.GELU
-
 **class GELU(*approx='none'*)**
 : Applies the Gaussian Error Linear Units.
 
@@ -49,12 +22,10 @@ Note
 For compatibility with the PyTorch API, ‘tanh’ can be used as an alias
 for ‘precise’.
 
-See [gelu()](../_autosummary_functions/mlx.nn.gelu.html#mlx.nn.gelu), [gelu_approx()](../_autosummary_functions/mlx.nn.gelu_approx.html#mlx.nn.gelu_approx) and [gelu_fast_approx()](../_autosummary_functions/mlx.nn.gelu_fast_approx.html#mlx.nn.gelu_fast_approx) for the
+See [gelu()](../_autosummary_functions/mlx.nn.gelu.md#mlx.nn.gelu), [gelu_approx()](../_autosummary_functions/mlx.nn.gelu_approx.md#mlx.nn.gelu_approx) and [gelu_fast_approx()](../_autosummary_functions/mlx.nn.gelu_fast_approx.md#mlx.nn.gelu_fast_approx) for the
 functional equivalents and information regarding error bounds.
 
 Parameters:
 **approx** (*'none'** | **'precise'** | **'fast'*) – Which approximation to gelu to use if any.
 
 Methods
-
-** Contents

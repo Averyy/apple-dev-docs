@@ -1,7 +1,8 @@
 # App.Relationships.PromotedPurchases.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related promoted purchase resource.
 
@@ -10,14 +11,14 @@ The type and ID of a related promoted purchase resource.
 
 ## Declaration
 
-```swift
+```
 object App.Relationships.PromotedPurchases.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `promotedPurchases`
 
 
 ---

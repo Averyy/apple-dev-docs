@@ -1,7 +1,8 @@
 # leading(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Window position relative to the leading edge of another window.
 

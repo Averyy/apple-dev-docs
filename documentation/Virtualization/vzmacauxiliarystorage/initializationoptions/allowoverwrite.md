@@ -1,7 +1,8 @@
 # allowOverwrite
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the VM can overwrite an existing auxiliary storage file.
 
@@ -12,6 +13,10 @@ A Boolean value that indicates whether the VM can overwrite an existing auxiliar
 
 ```swift
 static var allowOverwrite: VZMacAuxiliaryStorage.InitializationOptions { get }
+```
+
+```c
+VZMacAuxiliaryStorageInitializationOptionAllowOverwrite
 ```
 
 

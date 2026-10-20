@@ -1,7 +1,8 @@
 # motionTransformType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var motionTransformType: MTLTransformType { get set }
+```
+
+```objc
+@property (nonatomic) MTLTransformType motionTransformType;
 ```
 
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValueHeatingCooling
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the heating or cooling characteristic of a thermostat.
 
@@ -19,33 +20,38 @@ Possible values for the heating or cooling characteristic of a thermostat.
 enum HMCharacteristicValueHeatingCooling
 ```
 
+```c
+enum HMCharacteristicValueHeatingCooling : NSInteger;
+```
+
 ## Topics
 
 ### Accesory State
-- [HMCharacteristicValueHeatingCooling.off](hmcharacteristicvalueheatingcooling/off.md)
+- [HMCharacteristicValueHeatingCooling.off](./hmcharacteristicvalueheatingcooling/off.md)
   Unit is set to off, neither heating nor cooling.
-- [HMCharacteristicValueHeatingCooling.heat](hmcharacteristicvalueheatingcooling/heat.md)
+- [HMCharacteristicValueHeatingCooling.heat](./hmcharacteristicvalueheatingcooling/heat.md)
   Unit is set to heating.
-- [HMCharacteristicValueHeatingCooling.cool](hmcharacteristicvalueheatingcooling/cool.md)
+- [HMCharacteristicValueHeatingCooling.cool](./hmcharacteristicvalueheatingcooling/cool.md)
   Unit is set to cooling.
-- [HMCharacteristicValueHeatingCooling.auto](hmcharacteristicvalueheatingcooling/auto.md)
+- [HMCharacteristicValueHeatingCooling.auto](./hmcharacteristicvalueheatingcooling/auto.md)
   Unit is set to automatic.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvalueheatingcooling/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvalueheatingcooling/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HMCharacteristicValueCurrentHeatingCooling](hmcharacteristicvaluecurrentheatingcooling.md)
+### Values
+- [enum HMCharacteristicValueCurrentHeatingCooling](./hmcharacteristicvaluecurrentheatingcooling.md)
   States that indicate an accessory’s process of increasing or decreasing temperature.
 
 

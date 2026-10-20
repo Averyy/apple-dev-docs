@@ -1,7 +1,8 @@
 # setBorderLeft(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setBorderLeft(_ borderLeft: String!)
+```
+
+```objc
+- (void) setBorderLeft:(NSString *) borderLeft;
 ```
 
 

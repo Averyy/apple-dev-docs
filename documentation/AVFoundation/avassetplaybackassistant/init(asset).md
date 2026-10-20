@@ -1,7 +1,8 @@
 # init(asset:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a playback assistant to inspect the specified asset.
 
@@ -18,6 +19,10 @@ Creates a playback assistant to inspect the specified asset.
 
 ```swift
 convenience init(asset: AVAsset)
+```
+
+```objc
++ (instancetype) assetPlaybackAssistantWithAsset:(AVAsset *) asset;
 ```
 
 ## Parameters

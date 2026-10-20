@@ -1,7 +1,8 @@
 # aid
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ISO 7816-4 application identifiers of the Smart Card.
 
@@ -20,11 +21,15 @@ The ISO 7816-4 application identifiers of the Smart Card.
 var aid: Data? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSData * AID;
+```
+
 #### Discussion
 
 This value is specified in the Smart Card token extension’s `NSExtensionAttributes` property list by the `com.apple.ctk.aid` attribute. If this attribute specifies multiple AIDs, this parameter represents the application identifier found on the card that is already preselected.  If the `com.apple.ctk.aid` attribute is not present, no application is automatically preselected and the value of this property is `nil`.
 
-For more information, see [`App Extension Keys`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212) in [`Information Property List Key Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009247).
+For more information, see [App Extension Keys](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AppExtensionKeys.html#//apple_ref/doc/uid/TP40014212) in [Information Property List Key Reference](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009247).
 
 
 ---

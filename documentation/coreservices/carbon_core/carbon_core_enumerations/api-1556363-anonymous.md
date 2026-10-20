@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kAEQuitPreserveState: OSType](kaequitpreservestate.md)
-- [var kAEQuitReason: OSType](kaequitreason.md)
+- [var kAEQuitPreserveState: OSType](../../kaequitpreservestate.md)
+- [var kAEQuitReason: OSType](../../kaequitreason.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # largeBlob
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s binary large object value.
 
@@ -20,7 +21,8 @@ var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput? { 
 
 ## See Also
 
-- [var attachment: ASAuthorizationPublicKeyCredentialAttachment](asauthorizationplatformpublickeycredentialregistration/attachment.md)
+### Accessing registration properties
+- [var attachment: ASAuthorizationPublicKeyCredentialAttachment](./attachment.md)
 
 
 ---

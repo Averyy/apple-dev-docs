@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: ExtensionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom delegate object you use to receive notifications about the activation and deactivation of the app extension.
 
@@ -19,7 +20,8 @@ weak var delegate: (any EXHostViewControllerDelegate)? { get set }
 
 ## See Also
 
-- [protocol EXHostViewControllerDelegate](exhostviewcontrollerdelegate.md)
+### Responding to activation and deactivation events
+- [protocol EXHostViewControllerDelegate](../exhostviewcontrollerdelegate.md)
   An interface you use to track the activation and deactivation of an app extension.
 
 

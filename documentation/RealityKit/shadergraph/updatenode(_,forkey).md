@@ -1,7 +1,8 @@
 # updateNode(_:forKey:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the node stored under the given name.
 

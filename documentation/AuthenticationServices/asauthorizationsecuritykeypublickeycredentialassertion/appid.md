@@ -1,7 +1,8 @@
 # appID
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.5+
@@ -13,6 +14,10 @@
 
 ```swift
 var appID: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL appID;
 ```
 
 

@@ -1,7 +1,8 @@
 # itemCollection
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Contains the media item collection used to create the queue descriptor.
 
@@ -17,11 +18,16 @@ Contains the media item collection used to create the queue descriptor.
 var itemCollection: MPMediaItemCollection { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) MPMediaItemCollection * itemCollection;
+```
+
 ## See Also
 
-- [var query: MPMediaQuery](mpmusicplayermediaitemqueuedescriptor/query.md)
+### Media item queue descriptor properties
+- [var query: MPMediaQuery](./query.md)
   Contains the media items found by the query used to create the queue descriptor.
-- [var startItem: MPMediaItem?](mpmusicplayermediaitemqueuedescriptor/startitem.md)
+- [var startItem: MPMediaItem?](./startitem.md)
   Designates the media item to play first.
 
 

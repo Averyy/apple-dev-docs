@@ -1,7 +1,8 @@
 # select(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a tensor-scalar select operation to the current graph.
 
@@ -20,11 +21,13 @@ Adds a tensor-scalar select operation to the current graph.
 func select<U>(_ valueIfTrue: BNNSGraph.Builder.Tensor<U>, _ valueIfFalse: any BNNSGraph.Builder.OperationParameter<U>) -> BNNSGraph.Builder.Tensor<U> where U : BNNSScalar
 ```
 
+Available when `T` is `Bool`.
+
 #### Discussion
 
 For example, the following code returns the `valueIfTrue` elements when the corresponding elements in `z` are `true` and `Float.infinity` when the corresponding elements in `z` are `false`:
 
-```None
+```
 let ctx = try BNNSGraph.makeContext {
 
     builder in

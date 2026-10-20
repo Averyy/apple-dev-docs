@@ -1,7 +1,8 @@
 # kSecMatchCaseInsensitive
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a Boolean indicating whether case-insensitive matching is performed.
 
@@ -20,9 +21,13 @@ A key whose value is a Boolean indicating whether case-insensitive matching is p
 let kSecMatchCaseInsensitive: CFString
 ```
 
+```c
+extern CFStringRef const kSecMatchCaseInsensitive;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean). If this value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse), or if this attribute is not provided, then case-sensitive string matching is performed.
+The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). If this value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), or if this attribute is not provided, then case-sensitive string matching is performed.
 
 
 ---

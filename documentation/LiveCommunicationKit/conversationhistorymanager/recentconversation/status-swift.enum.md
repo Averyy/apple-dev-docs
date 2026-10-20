@@ -1,7 +1,8 @@
 # ConversationHistoryManager.RecentConversation.Status
 
 **Framework**: LiveCommunicationKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate the connection status of a recent conversation.
 
@@ -19,42 +20,43 @@ enum Status
 ## Topics
 
 ### Connection status
-- [ConversationHistoryManager.RecentConversation.Status.answeredElsewhere](conversationhistorymanager/recentconversation/status-swift.enum/answeredelsewhere.md)
+- [ConversationHistoryManager.RecentConversation.Status.answeredElsewhere](./status-swift.enum/answeredelsewhere.md)
   The conversation was answered on another device.
-- [ConversationHistoryManager.RecentConversation.Status.cancelled](conversationhistorymanager/recentconversation/status-swift.enum/cancelled.md)
+- [ConversationHistoryManager.RecentConversation.Status.cancelled](./status-swift.enum/cancelled.md)
   The outgoing conversation was cancelled by the initiating participant before it was connected.
-- [ConversationHistoryManager.RecentConversation.Status.connected](conversationhistorymanager/recentconversation/status-swift.enum/connected.md)
+- [ConversationHistoryManager.RecentConversation.Status.connected](./status-swift.enum/connected.md)
   The conversation was connected on this device.
-- [ConversationHistoryManager.RecentConversation.Status.missed](conversationhistorymanager/recentconversation/status-swift.enum/missed.md)
+- [ConversationHistoryManager.RecentConversation.Status.missed](./status-swift.enum/missed.md)
   The receving participant didn’t answer the incoming conversation.
-- [ConversationHistoryManager.RecentConversation.Status.unknown](conversationhistorymanager/recentconversation/status-swift.enum/unknown.md)
+- [ConversationHistoryManager.RecentConversation.Status.unknown](./status-swift.enum/unknown.md)
   The conversation’s status is unknown.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let date: Date](conversationhistorymanager/recentconversation/date.md)
+### Accessing conversation attributes
+- [let date: Date](./date.md)
   The point in time when the conversation started.
-- [let direction: ConversationHistoryManager.RecentConversation.Direction](conversationhistorymanager/recentconversation/direction-swift.property.md)
+- [let direction: ConversationHistoryManager.RecentConversation.Direction](./direction-swift.property.md)
   The direction of this conversation.
-- [ConversationHistoryManager.RecentConversation.Direction](conversationhistorymanager/recentconversation/direction-swift.enum.md)
+- [ConversationHistoryManager.RecentConversation.Direction](./direction-swift.enum.md)
   Values that indicate whether a conversation was initiated or received.
-- [let duration: TimeInterval](conversationhistorymanager/recentconversation/duration.md)
+- [let duration: TimeInterval](./duration.md)
   The duration of the conversation from the time the system connected the participants.
-- [let handles: [Handle]](conversationhistorymanager/recentconversation/handles.md)
+- [let handles: [Handle]](./handles.md)
   The handles of the conversation’s participants.
-- [let isRead: Bool](conversationhistorymanager/recentconversation/isread.md)
+- [let isRead: Bool](./isread.md)
   A value that indicates whether a person marked the recent conversation as read.
-- [let status: ConversationHistoryManager.RecentConversation.Status](conversationhistorymanager/recentconversation/status-swift.property.md)
+- [let status: ConversationHistoryManager.RecentConversation.Status](./status-swift.property.md)
   The status of the conversation.
 
 

@@ -1,7 +1,8 @@
 # notExactMatrixErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Warning of a bad matrix; the digitizer did its best. 
 

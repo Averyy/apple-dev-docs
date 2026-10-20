@@ -1,13 +1,14 @@
 # addTypeIdentifiers(forAccepting:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,10 @@
 
 ## See Also
 
-- [func addAcceptableTypeIdentifiers([String])](uipasteconfiguration/addacceptabletypeidentifiers(_:).md)
+### Adding acceptable type identifiers
+- [func addAcceptableTypeIdentifiers([String])](./addacceptabletypeidentifiers%28_%29.md)
   Adds an array of UTI strings to a paste configuration, increasing the variety of types the paste configuration accepts.
-- [func addTypeIdentifiers(forAccepting: any NSItemProviderReading.Type)](uipasteconfiguration/addtypeidentifiers(foraccepting:)-4fvd6.md)
+- [func addTypeIdentifiers(forAccepting: any NSItemProviderReading.Type)](./addtypeidentifiers%28foraccepting%29-4fvd6.md)
   Expands the array of accepted UTIs for a paste configuration, based on those declared as supported by a specified class.
 
 

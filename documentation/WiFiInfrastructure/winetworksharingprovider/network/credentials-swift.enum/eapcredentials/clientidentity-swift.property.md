@@ -1,7 +1,8 @@
 # clientIdentity
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The information used to authenticate the client’s identity.
 

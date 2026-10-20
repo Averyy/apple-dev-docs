@@ -1,12 +1,13 @@
 # iOS & iPadOS 14.6 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-To develop apps for iOS & iPadOS 14.6, build your apps against the iOS 14.5 SDK or later. The SDK comes bundled with Xcode 12.5. For information on the compatibility requirements for Xcode 12.5, see [`Xcode 12.5 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-release-notes).
+To develop apps for iOS & iPadOS 14.6, build your apps against the iOS 14.5 SDK or later. The SDK comes bundled with Xcode 12.5. For information on the compatibility requirements for Xcode 12.5, see [Xcode 12.5 Release Notes](../Xcode-Release-Notes/xcode-12_5-release-notes.md).
 
 ##### General
 
@@ -14,7 +15,7 @@ To develop apps for iOS & iPadOS 14.6, build your apps against the iOS 14.5 SDK 
 
 - Fixed an issue during startup where iPhone may experience reduced performance. (77540788)
 
-##### Skadnetwork
+##### SKAdNetwork
 
 ###### New Features
 
@@ -30,24 +31,27 @@ To develop apps for iOS & iPadOS 14.6, build your apps against the iOS 14.5 SDK 
 
 ###### Deprecations
 
-- Don’t use the iOS [`MinimumOSVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/minimumosversion) information property list key to declare the minimum release of macOS in which your app runs. Use [`LSMinimumSystemVersion`](https://developer.apple.com/documentation/bundleresources/information-property-list/lsminimumsystemversion) instead. (73890473) - Future releases of macOS ignore the `MinimumOSVersion` key in Mac apps, including apps built with Mac Catalyst.
-- Future releases of macOS use the `LSMinimumSystemVersion` key in iOS apps built with Xcode 12.5 or later. If an iOS app doesn’t include an `LSMinimumSystemVersion` key, future releases of macOS compare the app’s `MinimumOSVersion` with the version of its Mac Catalyst runtime to determine compatibility.
+- Don’t use the iOS [`MinimumOSVersion`](../BundleResources/information-property-list/minimumosversion.md) information property list key to declare the minimum release of macOS in which your app runs. Use [`LSMinimumSystemVersion`](../BundleResources/information-property-list/lsminimumsystemversion.md) instead. (73890473)
+
+  - Future releases of macOS ignore the `MinimumOSVersion` key in Mac apps, including apps built with Mac Catalyst.
+  - Future releases of macOS use the `LSMinimumSystemVersion` key in iOS apps built with Xcode 12.5 or later. If an iOS app doesn’t include an `LSMinimumSystemVersion` key, future releases of macOS compare the app’s `MinimumOSVersion` with the version of its Mac Catalyst runtime to determine compatibility.
 
 ## See Also
 
-- [iOS & iPadOS 14.7 Release Notes](ios-ipados-14_7-release-notes.md)
+### iOS & iPadOS 14
+- [iOS & iPadOS 14.7 Release Notes](./ios-ipados-14_7-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14.5.1 Release Notes](ios-ipados-14_5_1-release-notes.md)
+- [iOS & iPadOS 14.5.1 Release Notes](./ios-ipados-14_5_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14.5 Release Notes](ios-ipados-14_5-release-notes.md)
+- [iOS & iPadOS 14.5 Release Notes](./ios-ipados-14_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14.4 Release Notes](ios-ipados-14_4-release-notes.md)
+- [iOS & iPadOS 14.4 Release Notes](./ios-ipados-14_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14.3 Release Notes](ios-ipados-14_3-release-notes.md)
+- [iOS & iPadOS 14.3 Release Notes](./ios-ipados-14_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14.2 Release Notes](ios-ipados-14_2-release-notes.md)
+- [iOS & iPadOS 14.2 Release Notes](./ios-ipados-14_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 14 Release Notes](ios-ipados-14-release-notes.md)
+- [iOS & iPadOS 14 Release Notes](./ios-ipados-14-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

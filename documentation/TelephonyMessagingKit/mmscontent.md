@@ -1,7 +1,8 @@
 # MMSContent
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that holds the content of an MMS message.
 
@@ -16,7 +17,7 @@ struct MMSContent
 
 ## Mentions
 
-- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](./creating-a-carrier-messaging-app.md)
 
 #### Overview
 
@@ -25,38 +26,39 @@ You can use this structure when sending and receiving MMS messages.
 ## Topics
 
 ### Creating an MMS content instance
-- [init()](mmscontent/init.md)
+- [init()](./mmscontent/init%28%29.md)
   Creates an empty MMS content instance.
-- [init(parts: [MMSPartContent], recipients: [MMSHandle], subject: String?)](mmscontent/init(parts:recipients:subject:).md)
+- [init(parts: [MMSPartContent], recipients: [MMSHandle], subject: String?)](./mmscontent/init%28parts,recipients,subject%29.md)
   Creates an MMS content instance with the provided values.
 ### Accessing content properties
-- [var parts: [MMSPartContent]](mmscontent/parts.md)
+- [var parts: [MMSPartContent]](./mmscontent/parts.md)
   The individual parts of the MMS message.
-- [struct MMSPartContent](mmspartcontent.md)
+- [struct MMSPartContent](./mmspartcontent.md)
   A structure that defines custom headers within MMS content.
-- [var subject: String?](mmscontent/subject.md)
+- [var subject: String?](./mmscontent/subject.md)
   The subject of the MMS message.
-- [var headers: [String : String]](mmscontent/headers.md)
+- [var headers: [String : String]](./mmscontent/headers.md)
   Additional headers in a received MMS message, as a key-value dictionary of strings.
 ### Accessing message participants
-- [var from: MMSHandle?](mmscontent/from.md)
+- [var from: MMSHandle?](./mmscontent/from.md)
   The sender of the MMS message.
-- [var recipients: [MMSHandle]](mmscontent/recipients.md)
+- [var recipients: [MMSHandle]](./mmscontent/recipients.md)
   The recipients of the MMS message, as an array of MMS handles.
-- [struct MMSHandle](mmshandle.md)
+- [struct MMSHandle](./mmshandle.md)
   A structure that represents an MMS address.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var content: MMSContent](mmsmessage/content.md)
+### Accessing message content
+- [var content: MMSContent](./mmsmessage/content.md)
   The body content of the message.
 
 

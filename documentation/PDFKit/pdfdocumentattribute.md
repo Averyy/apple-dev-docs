@@ -1,7 +1,8 @@
 # PDFDocumentAttribute
 
 **Framework**: PDFKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that specifies document attributes.
 
@@ -10,7 +11,7 @@ A structure that specifies document attributes.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,43 +20,48 @@ A structure that specifies document attributes.
 struct PDFDocumentAttribute
 ```
 
+```c
+typedef NSString * PDFDocumentAttribute;
+```
+
 ## Topics
 
 ### Creating Document Attributes
-- [init(rawValue: String)](pdfdocumentattribute/init(rawvalue:).md)
+- [init(rawValue: String)](./pdfdocumentattribute/init%28rawvalue%29.md)
   Initialize a `PDFDocumentAttribute` structure.
 ### Getting Document Attributes
-- [static let authorAttribute: PDFDocumentAttribute](pdfdocumentattribute/authorattribute.md)
+- [static let authorAttribute: PDFDocumentAttribute](./pdfdocumentattribute/authorattribute.md)
   An optional text string containing the name of the author of the document.
-- [static let creationDateAttribute: PDFDocumentAttribute](pdfdocumentattribute/creationdateattribute.md)
+- [static let creationDateAttribute: PDFDocumentAttribute](./pdfdocumentattribute/creationdateattribute.md)
   An optional text string containing the document’s creation date.
-- [static let creatorAttribute: PDFDocumentAttribute](pdfdocumentattribute/creatorattribute.md)
+- [static let creatorAttribute: PDFDocumentAttribute](./pdfdocumentattribute/creatorattribute.md)
   An optional text string containing the name of the application that created the document content.
-- [static let keywordsAttribute: PDFDocumentAttribute](pdfdocumentattribute/keywordsattribute.md)
+- [static let keywordsAttribute: PDFDocumentAttribute](./pdfdocumentattribute/keywordsattribute.md)
   An optional array of text strings containing keywords for the document.
-- [static let modificationDateAttribute: PDFDocumentAttribute](pdfdocumentattribute/modificationdateattribute.md)
+- [static let modificationDateAttribute: PDFDocumentAttribute](./pdfdocumentattribute/modificationdateattribute.md)
   An optional text string containing the document’s last-modified date.
-- [static let producerAttribute: PDFDocumentAttribute](pdfdocumentattribute/producerattribute.md)
+- [static let producerAttribute: PDFDocumentAttribute](./pdfdocumentattribute/producerattribute.md)
   An optional text string containing the name of the application that produced the PDF data for the document.
-- [static let subjectAttribute: PDFDocumentAttribute](pdfdocumentattribute/subjectattribute.md)
+- [static let subjectAttribute: PDFDocumentAttribute](./pdfdocumentattribute/subjectattribute.md)
   An optional text string containing a description of the subject of the document.
-- [static let titleAttribute: PDFDocumentAttribute](pdfdocumentattribute/titleattribute.md)
+- [static let titleAttribute: PDFDocumentAttribute](./pdfdocumentattribute/titleattribute.md)
   An optional text string containing the title of the document.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum PDFDocumentPermissions](pdfdocumentpermissions.md)
+### Constants
+- [enum PDFDocumentPermissions](./pdfdocumentpermissions.md)
   An enumeration that specifies document permissions status.
-- [struct PDFDocumentWriteOption](pdfdocumentwriteoption.md)
+- [struct PDFDocumentWriteOption](./pdfdocumentwriteoption.md)
   A structure that specifies file writing options for a document.
 
 

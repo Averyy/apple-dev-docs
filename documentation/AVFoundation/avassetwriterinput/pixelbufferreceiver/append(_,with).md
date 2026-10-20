@@ -1,7 +1,8 @@
 # append(_:with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Suspends until the input is ready for more media data, then appends the pixel buffer.
 
@@ -22,7 +23,7 @@ nonisolated
 
 #### Discussion
 
-> **Note**: An error if the underlying writer failed.
+> **Throws**: An error if the underlying writer failed.
 
 ## Parameters
 
@@ -31,9 +32,10 @@ nonisolated
 
 ## See Also
 
-- [func appendImmediately(CVReadOnlyPixelBuffer, with: CMTime) throws -> Bool](avassetwriterinput/pixelbufferreceiver/appendimmediately(_:with:).md)
+### Appending pixel buffers
+- [func appendImmediately(CVReadOnlyPixelBuffer, with: CMTime) throws -> Bool](./appendimmediately%28_,with%29.md)
   Appends the pixel buffer synchronously if the input is ready for more media data.
-- [func finish()](avassetwriterinput/pixelbufferreceiver/finish.md)
+- [func finish()](./finish%28%29.md)
   Indicates to the AVAssetWriter that no more buffers will be appended to this receiver.
 
 

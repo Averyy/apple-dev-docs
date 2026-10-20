@@ -1,7 +1,8 @@
 # value
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UV Index value.
 
@@ -22,9 +23,10 @@ var value: Int
 
 ## See Also
 
-- [var category: UVIndex.ExposureCategory](uvindex/category.md)
+### Getting the UV index
+- [var category: UVIndex.ExposureCategory](./category.md)
   The UV Index exposure category.
-- [UVIndex.ExposureCategory](uvindex/exposurecategory.md)
+- [UVIndex.ExposureCategory](./exposurecategory.md)
   An enumeration that indicates risk of harm from unprotected sun exposure.
 
 

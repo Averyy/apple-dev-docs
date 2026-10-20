@@ -1,7 +1,8 @@
 # init(payload:rowCount:columnCount:eccVersion:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a Data Matrix code descriptor for the given payload and parameters.
 
@@ -19,16 +20,20 @@ Initializes a Data Matrix code descriptor for the given payload and parameters.
 init?(payload errorCorrectedPayload: Data, rowCount: Int, columnCount: Int, eccVersion: CIDataMatrixCodeDescriptor.ECCVersion)
 ```
 
+```objc
+- (instancetype) initWithPayload:(NSData *) errorCorrectedPayload rowCount:(NSInteger) rowCount columnCount:(NSInteger) columnCount eccVersion:(CIDataMatrixCodeECCVersion) eccVersion;
+```
+
 #### Return Value
 
- An initialized [`CIAztecCodeDescriptor`](ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
+ An initialized [`CIAztecCodeDescriptor`](../ciazteccodedescriptor.md) instance or `nil` if the parameters are invalid
 
 ## Parameters
 
 - `errorCorrectedPayload`: The data to encode in the Data Matrix code symbol.
 - `rowCount`: The number of rows in the Data Matrix code symbol.
 - `columnCount`: The number of columns in the Data Matrix code symbol.
-- `eccVersion`: The [`CIDataMatrixCodeDescriptor.ECCVersion`](cidatamatrixcodedescriptor/eccversion-swift.enum.md) for the Data Matrix code symbol.
+- `eccVersion`: The [`CIDataMatrixCodeDescriptor.ECCVersion`](./eccversion-swift.enum.md) for the Data Matrix code symbol.
 
 
 ---

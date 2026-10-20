@@ -1,7 +1,8 @@
 # replace(with:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces a texture resource with a low-level texture.
 
@@ -22,7 +23,7 @@ Replaces a texture resource with a low-level texture.
 
 #### Discussion
 
-> ⚠️ **Warning**: It’s more efficient to use [`replace(using:)`](lowleveltexture/replace(using:).md) to update a [`LowLevelTexture`](lowleveltexture.md) on the GPU than it is to update the `TextureResource`. Prefer to update the `LowLevelTexture` directly instead.
+> ⚠️ **Warning**: It’s more efficient to use [`replace(using:)`](../lowleveltexture/replace%28using%29.md) to update a [`LowLevelTexture`](../lowleveltexture.md) on the GPU than it is to update the `TextureResource`. Prefer to update the `LowLevelTexture` directly instead.
 
 > **Note**: This method marks the asset as mutated, preventing newly loaded entities from sharing the texture.
 
@@ -32,11 +33,12 @@ Replaces a texture resource with a low-level texture.
 
 ## See Also
 
-- [func replace(withDrawables: TextureResource.DrawableQueue)](textureresource/replace(withdrawables:).md)
+### Modifying the texture
+- [func replace(withDrawables: TextureResource.DrawableQueue)](./replace%28withdrawables%29.md)
   Dynamically replaces the texture with a drawable queue.
-- [func replace(withImage: CGImage, options: TextureResource.CreateOptions) throws](textureresource/replace(withimage:options:).md)
+- [func replace(withImage: CGImage, options: TextureResource.CreateOptions) throws](./replace%28withimage,options%29.md)
   Dynamically replaces the texture with a Core Graphics image.
-- [func replace(using: CGImage, options: TextureResource.CreateOptions) async throws](textureresource/replace(using:options:).md)
+- [func replace(using: CGImage, options: TextureResource.CreateOptions) async throws](./replace%28using,options%29.md)
   Asynchronously replaces the texture with a Core Graphics image.
 
 

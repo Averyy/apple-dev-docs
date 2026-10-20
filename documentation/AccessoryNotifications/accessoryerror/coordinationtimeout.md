@@ -1,7 +1,8 @@
 # AccessoryError.coordinationTimeout
 
 **Framework**: Accessory Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates alert coordination timed out.
 
@@ -16,11 +17,12 @@ case coordinationTimeout
 
 #### Discussion
 
-The system sets a timeout to determine whether an accessory successfully alerts for a notification. The system generates this error if your accessory doesn’t return from [`addNotification(_:alertingContext:)`](notificationsforwarding/accessorynotificationshandler/addnotification(_:alertingcontext:).md) within the timeout.
+The system sets a timeout to determine whether an accessory successfully alerts for a notification. The system generates this error if your accessory doesn’t return from [`addNotification(_:alertingContext:)`](../notificationsforwarding/accessorynotificationshandler/addnotification%28_,alertingcontext%29.md) within the timeout.
 
 ## See Also
 
-- [AccessoryError.invalidNotificationResponse](accessoryerror/invalidnotificationresponse.md)
+### Response errors
+- [AccessoryError.invalidNotificationResponse](./invalidnotificationresponse.md)
   An error that indicates the system failed to handle a notification response.
 
 

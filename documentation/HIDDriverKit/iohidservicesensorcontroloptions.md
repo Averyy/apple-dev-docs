@@ -1,15 +1,16 @@
 # IOHIDServiceSensorControlOptions
 
 **Framework**: HIDDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef enum { ... } IOHIDServiceSensorControlOptions;
 ```
 
@@ -22,9 +23,9 @@ Options define behavior of HID event system for handling kIOHIDServiceReportInte
 ## Topics
 
 ### Enumeration Cases
-- [kIOHIDServiceSensorControlAggregation](iohidservicesensorcontroloptions/kiohidservicesensorcontrolaggregation.md)
-- [kIOHIDServiceSensorControlDecimation](iohidservicesensorcontroloptions/kiohidservicesensorcontroldecimation.md)
-- [kIOHIDServiceSensorControlDispatchControl](iohidservicesensorcontroloptions/kiohidservicesensorcontroldispatchcontrol.md)
+- [kIOHIDServiceSensorControlAggregation](./iohidservicesensorcontroloptions/kiohidservicesensorcontrolaggregation.md)
+- [kIOHIDServiceSensorControlDecimation](./iohidservicesensorcontroloptions/kiohidservicesensorcontroldecimation.md)
+- [kIOHIDServiceSensorControlDispatchControl](./iohidservicesensorcontroloptions/kiohidservicesensorcontroldispatchcontrol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ControlWidget
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The configuration and content of a control widget to display in system spaces such as Control Center, the Lock Screen, and the Action Button.
 
@@ -29,7 +30,7 @@ There are three key components to a control:
 - A value provider that defines the value of the control when being previewed and when being actually rendered
 - The template used by WidgetKit to display the control.
 
-Controls are defined using templates in order to ensure that they control will work at all sizes and in all system spaces in which they might be displayed. These templates define images (specifically, symbol images) and text using simple SwiftUI views like [`Label`](label.md), [`Text`](text.md), and [`Image`](image.md); and tint colors using the [`tint(_:)`](controlwidgettemplate/tint(_:).md) modifier.
+Controls are defined using templates in order to ensure that they control will work at all sizes and in all system spaces in which they might be displayed. These templates define images (specifically, symbol images) and text using simple SwiftUI views like [`Label`](./label.md), [`Text`](./text.md), and [`Image`](./image.md); and tint colors using the [`tint(_:)`](./controlwidgettemplate/tint%28_%29.md) modifier.
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 
@@ -50,34 +51,35 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Associated Types
-- [associatedtype Body : ControlWidgetConfiguration](controlwidget/body-swift.associatedtype.md)
+- [associatedtype Body : ControlWidgetConfiguration](./controlwidget/body-swift.associatedtype.md)
   The type of configuration representing the content of this control.
 ### Initializers
-- [init()](controlwidget/init.md)
+- [init()](./controlwidget/init%28%29.md)
   Creates a control using `body` as its content.
 ### Instance Properties
-- [var body: Self.Body](controlwidget/body-swift.property.md)
+- [var body: Self.Body](./controlwidget/body-swift.property.md)
   The content and behavior of the control.
 ### Type Methods
-- [static func main()](controlwidget/main.md)
+- [static func main()](./controlwidget/main%28%29.md)
 
 ## See Also
 
-- [protocol ControlWidgetConfiguration](controlwidgetconfiguration.md)
+### Composing control widgets
+- [protocol ControlWidgetConfiguration](./controlwidgetconfiguration.md)
   A type that describes a control widget’s content.
-- [struct EmptyControlWidgetConfiguration](emptycontrolwidgetconfiguration.md)
+- [struct EmptyControlWidgetConfiguration](./emptycontrolwidgetconfiguration.md)
   An empty control widget configuration.
-- [struct ControlWidgetConfigurationBuilder](controlwidgetconfigurationbuilder.md)
+- [struct ControlWidgetConfigurationBuilder](./controlwidgetconfigurationbuilder.md)
   A custom attribute that constructs a control widget’s body.
-- [protocol ControlWidgetTemplate](controlwidgettemplate.md)
+- [protocol ControlWidgetTemplate](./controlwidgettemplate.md)
   A type that describes a control widget’s content.
-- [struct EmptyControlWidgetTemplate](emptycontrolwidgettemplate.md)
+- [struct EmptyControlWidgetTemplate](./emptycontrolwidgettemplate.md)
   An empty control widget template.
-- [struct ControlWidgetTemplateBuilder](controlwidgettemplatebuilder.md)
+- [struct ControlWidgetTemplateBuilder](./controlwidgettemplatebuilder.md)
   A custom attribute that constructs a control widget template’s body.
-- [func controlWidgetActionHint(_:)](view/controlwidgetactionhint(_:).md)
+- [func controlWidgetActionHint(_:)](./view/controlwidgetactionhint%28_%29.md)
   The action hint of the control described by the modified label.
-- [func controlWidgetStatus(_:)](view/controlwidgetstatus(_:).md)
+- [func controlWidgetStatus(_:)](./view/controlwidgetstatus%28_%29.md)
   The status of the control described by the modified label.
 
 

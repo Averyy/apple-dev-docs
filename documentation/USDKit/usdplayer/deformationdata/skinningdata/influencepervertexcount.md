@@ -1,7 +1,8 @@
 # influencePerVertexCount
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Number of joint influences per vertex.
 

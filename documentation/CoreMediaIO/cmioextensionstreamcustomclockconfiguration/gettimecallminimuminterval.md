@@ -1,7 +1,8 @@
 # getTimeCallMinimumInterval
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A minimum call time interval for the clock.
 
@@ -15,19 +16,24 @@ A minimum call time interval for the clock.
 var getTimeCallMinimumInterval: CMTime { get }
 ```
 
+```objc
+@property (atomic, readonly) CMTime getTimeCallMinimumInterval;
+```
+
 #### Discussion
 
 If you query the clock for its current time more often than this interval, the system returns an interpolated value.
 
 ## See Also
 
-- [var clockName: String](cmioextensionstreamcustomclockconfiguration/clockname.md)
+### Inspecting the Configuration
+- [var clockName: String](./clockname.md)
   The name of the clock.
-- [var sourceIdentifier: UUID](cmioextensionstreamcustomclockconfiguration/sourceidentifier.md)
+- [var sourceIdentifier: UUID](./sourceidentifier.md)
   A universally unique identifier for the clock.
-- [var numberOfEventsForRateSmoothing: UInt32](cmioextensionstreamcustomclockconfiguration/numberofeventsforratesmoothing.md)
+- [var numberOfEventsForRateSmoothing: UInt32](./numberofeventsforratesmoothing.md)
   The number of events to use for rate smoothing.
-- [var numberOfAveragesForRateSmoothing: UInt32](cmioextensionstreamcustomclockconfiguration/numberofaveragesforratesmoothing.md)
+- [var numberOfAveragesForRateSmoothing: UInt32](./numberofaveragesforratesmoothing.md)
   The number of averages to use for rate smoothing.
 
 

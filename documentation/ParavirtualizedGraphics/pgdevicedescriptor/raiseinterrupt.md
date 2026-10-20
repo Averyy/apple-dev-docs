@@ -1,7 +1,8 @@
 # raiseInterrupt
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that the system calls to raise an interrupt in the guest environment.
 
@@ -15,9 +16,14 @@ A handler that the system calls to raise an interrupt in the guest environment.
 var raiseInterrupt: PGRaiseInterrupt? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) PGRaiseInterrupt raiseInterrupt;
+```
+
 ## See Also
 
-- [typealias PGRaiseInterrupt](pgraiseinterrupt.md)
+### Handling Interrupts
+- [typealias PGRaiseInterrupt](../pgraiseinterrupt.md)
   The block signature for a routine that raises interrupts in the guest environment.
 
 

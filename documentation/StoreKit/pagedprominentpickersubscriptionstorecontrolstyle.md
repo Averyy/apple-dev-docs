@@ -1,7 +1,8 @@
 # PagedProminentPickerSubscriptionStoreControlStyle
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A subscription store control style that displays subscription plans as a paged prominent picker control, with a single button to subscribe.
 
@@ -22,36 +23,37 @@ A subscription store control style that displays subscription plans as a paged p
 ## Topics
 
 ### Getting the paged prominent picker control style
-- [static var pagedProminentPicker: PagedProminentPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/pagedprominentpicker.md)
+- [static var pagedProminentPicker: PagedProminentPickerSubscriptionStoreControlStyle](./subscriptionstorecontrolstyle/pagedprominentpicker.md)
   A subscription store control style that displays subscription plans as a prominent paged picker control, with a single button to subscribe.
 ### Creating the style
-- [init()](pagedprominentpickersubscriptionstorecontrolstyle/init.md)
+- [init()](./pagedprominentpickersubscriptionstorecontrolstyle/init%28%29.md)
   Creates the paged prominent picker control style.
 ### Placing the controls
-- [PagedProminentPickerSubscriptionStoreControlStyle.Placement](pagedprominentpickersubscriptionstorecontrolstyle/placement.md)
+- [PagedProminentPickerSubscriptionStoreControlStyle.Placement](./pagedprominentpickersubscriptionstorecontrolstyle/placement.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SubscriptionStoreControlStyle](subscriptionstorecontrolstyle.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SubscriptionStoreControlStyle](./subscriptionstorecontrolstyle.md)
 
 ## See Also
 
-- [struct AutomaticSubscriptionStoreControlStyle](automaticsubscriptionstorecontrolstyle.md)
+### Supporting types
+- [struct AutomaticSubscriptionStoreControlStyle](./automaticsubscriptionstorecontrolstyle.md)
   The default in-app subscription store control style that resolves its appearance based on the view’s context.
-- [struct ButtonsSubscriptionStoreControlStyle](buttonssubscriptionstorecontrolstyle.md)
+- [struct ButtonsSubscriptionStoreControlStyle](./buttonssubscriptionstorecontrolstyle.md)
   A subscription store control style that displays a subscribe button for each subscription plan.
-- [struct PickerSubscriptionStoreControlStyle](pickersubscriptionstorecontrolstyle.md)
+- [struct PickerSubscriptionStoreControlStyle](./pickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a picker control, with a single button to subscribe.
-- [struct ProminentPickerSubscriptionStoreControlStyle](prominentpickersubscriptionstorecontrolstyle.md)
+- [struct ProminentPickerSubscriptionStoreControlStyle](./prominentpickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a prominent picker control, with a single button to subscribe.
-- [struct CompactPickerSubscriptionStoreControlStyle](compactpickersubscriptionstorecontrolstyle.md)
+- [struct CompactPickerSubscriptionStoreControlStyle](./compactpickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a compact picker control, with a single button to subscribe.
-- [struct PagedPickerSubscriptionStoreControlStyle](pagedpickersubscriptionstorecontrolstyle.md)
+- [struct PagedPickerSubscriptionStoreControlStyle](./pagedpickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a paged picker control, with a single button to subscribe.
-- [struct AutomaticSubscriptionStoreControlPlacement](automaticsubscriptionstorecontrolplacement.md)
+- [struct AutomaticSubscriptionStoreControlPlacement](./automaticsubscriptionstorecontrolplacement.md)
   A system-defined placement for a subscription store view.
 
 

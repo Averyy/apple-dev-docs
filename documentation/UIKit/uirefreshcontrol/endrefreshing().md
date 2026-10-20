@@ -1,7 +1,8 @@
 # endRefreshing()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the control that a refresh operation has ended.
 
@@ -17,15 +18,20 @@ Tells the control that a refresh operation has ended.
 func endRefreshing()
 ```
 
+```objc
+- (void) endRefreshing;
+```
+
 #### Discussion
 
 Call this method at the end of any refresh operation (whether it was initiated programmatically or by the user) to return the refresh control to its default state. If the refresh control is at least partially visible, calling this method also hides it. If animations are also enabled, the control is hidden using an animation.
 
 ## See Also
 
-- [func beginRefreshing()](uirefreshcontrol/beginrefreshing.md)
+### Managing the refresh status
+- [func beginRefreshing()](./beginrefreshing%28%29.md)
   Tells the control that a refresh operation was started programmatically.
-- [var isRefreshing: Bool](uirefreshcontrol/isrefreshing.md)
+- [var isRefreshing: Bool](./isrefreshing.md)
   A Boolean value indicating whether a refresh operation has been triggered and is in progress.
 
 

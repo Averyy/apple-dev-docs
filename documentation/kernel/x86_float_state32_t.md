@@ -1,14 +1,15 @@
 # x86_float_state32_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct i386_float_state x86_float_state32_t;
 ```
 

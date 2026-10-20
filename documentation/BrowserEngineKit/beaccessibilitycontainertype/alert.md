@@ -1,14 +1,15 @@
 # alert
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An alert that contains the element.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- macOS ?+
+- macOS
 - tvOS 18.0+
 - visionOS 2.0+
 
@@ -18,9 +19,14 @@ An alert that contains the element.
 static var alert: BEAccessibilityContainerType { get }
 ```
 
+```c
+BEAccessibilityContainerTypeAlert
+```
+
 ## See Also
 
-- [static var dialog: BEAccessibilityContainerType](beaccessibilitycontainertype/dialog.md)
+### Interactive and dynamic
+- [static var dialog: BEAccessibilityContainerType](./dialog.md)
   A dialog that contains the element.
 
 

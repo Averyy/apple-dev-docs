@@ -1,7 +1,8 @@
 # consoleDevices
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of console devices that you expose to the guest operating system.
 
@@ -14,39 +15,44 @@ The array of console devices that you expose to the guest operating system.
 var consoleDevices: [VZConsoleDeviceConfiguration] { get set }
 ```
 
+```objc
+@property (copy, readwrite) NSArray<VZConsoleDeviceConfiguration *> * consoleDevices;
+```
+
 #### Discussion
 
 The default value of this property is an empty array.
 
 ## See Also
 
-- [var audioDevices: [VZAudioDeviceConfiguration]](vzvirtualmachineconfiguration/audiodevices.md)
+### Adding devices to the VM
+- [var audioDevices: [VZAudioDeviceConfiguration]](./audiodevices.md)
   The list of audio devices.
-- [var customVirtioDevices: [VZCustomVirtioDeviceConfiguration]](vzvirtualmachineconfiguration/customvirtiodevices.md)
+- [var customVirtioDevices: [VZCustomVirtioDeviceConfiguration]](./customvirtiodevices.md)
   The array of custom virtio devices that you expose to the guest operating system.
-- [var directorySharingDevices: [VZDirectorySharingDeviceConfiguration]](vzvirtualmachineconfiguration/directorysharingdevices.md)
+- [var directorySharingDevices: [VZDirectorySharingDeviceConfiguration]](./directorysharingdevices.md)
   The list of directory sharing devices.
-- [var entropyDevices: [VZEntropyDeviceConfiguration]](vzvirtualmachineconfiguration/entropydevices.md)
+- [var entropyDevices: [VZEntropyDeviceConfiguration]](./entropydevices.md)
   The array of randomization devices that you expose to the guest operating system.
-- [var graphicsDevices: [VZGraphicsDeviceConfiguration]](vzvirtualmachineconfiguration/graphicsdevices.md)
+- [var graphicsDevices: [VZGraphicsDeviceConfiguration]](./graphicsdevices.md)
   The list of graphics devices.
-- [var keyboards: [VZKeyboardConfiguration]](vzvirtualmachineconfiguration/keyboards.md)
+- [var keyboards: [VZKeyboardConfiguration]](./keyboards.md)
   The list of keyboards.
-- [var networkDevices: [VZNetworkDeviceConfiguration]](vzvirtualmachineconfiguration/networkdevices.md)
+- [var networkDevices: [VZNetworkDeviceConfiguration]](./networkdevices.md)
   The array of network devices that you expose to the guest operating system.
-- [var platform: VZPlatformConfiguration](vzvirtualmachineconfiguration/platform.md)
+- [var platform: VZPlatformConfiguration](./platform.md)
   The hardware platform to use.
-- [var pointingDevices: [VZPointingDeviceConfiguration]](vzvirtualmachineconfiguration/pointingdevices.md)
+- [var pointingDevices: [VZPointingDeviceConfiguration]](./pointingdevices.md)
   The list of pointing devices.
-- [var serialPorts: [VZSerialPortConfiguration]](vzvirtualmachineconfiguration/serialports.md)
+- [var serialPorts: [VZSerialPortConfiguration]](./serialports.md)
   The array of serial ports that you expose to the guest operating system.
-- [var socketDevices: [VZSocketDeviceConfiguration]](vzvirtualmachineconfiguration/socketdevices.md)
+- [var socketDevices: [VZSocketDeviceConfiguration]](./socketdevices.md)
   The socket device that you use to implement port-based communication with the guest operating system.
-- [var storageDevices: [VZStorageDeviceConfiguration]](vzvirtualmachineconfiguration/storagedevices.md)
+- [var storageDevices: [VZStorageDeviceConfiguration]](./storagedevices.md)
   The array of storage devices that you expose to the guest operating system.
-- [var usbControllers: [VZUSBControllerConfiguration]](vzvirtualmachineconfiguration/usbcontrollers.md)
+- [var usbControllers: [VZUSBControllerConfiguration]](./usbcontrollers.md)
   The list of configured USB controllers for the VM.
-- [var customVirtioDevices: [VZCustomVirtioDeviceConfiguration]](vzvirtualmachineconfiguration/customvirtiodevices.md)
+- [var customVirtioDevices: [VZCustomVirtioDeviceConfiguration]](./customvirtiodevices.md)
   The array of custom virtio devices that you expose to the guest operating system.
 
 

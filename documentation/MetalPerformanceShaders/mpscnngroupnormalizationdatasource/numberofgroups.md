@@ -2,6 +2,7 @@
 
 **Framework**: Metal Performance Shaders  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 var numberOfGroups: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger numberOfGroups;
 ```
 
 

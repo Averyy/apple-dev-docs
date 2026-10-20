@@ -1,7 +1,8 @@
 # kSSCPrinterCmd_RECOVER_BUFFERED_DATA
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSSCPrinterCmd_RECOVER_BUFFERED_DATA = 0x14
 ```
 

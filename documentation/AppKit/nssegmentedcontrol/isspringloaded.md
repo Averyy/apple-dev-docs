@@ -1,7 +1,8 @@
 # isSpringLoaded
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether spring loading is enabled for the control.
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether spring loading is enabled for the control
 var isSpringLoaded: Bool { get set }
 ```
 
+```objc
+@property (getter=isSpringLoaded) BOOL springLoaded;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if spring loading is enabled for the control, and [`false`](https://developer.apple.com/documentation/swift/false) if it is not. The default is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) if spring loading is enabled for the control, and [`false`](../../Swift/false.md) if it is not. The default is [`false`](../../Swift/false.md).
 
 On pressure-sensitive systems, such as systems with the Force Touch trackpad, spring loading is a feature that allows a user to activate a segment in a segmented control by dragging selected items over it and force clicking—pressing harder—without dropping the selected items. The user can then continue dragging the items, possibly to perform additional actions.
 
@@ -28,12 +33,13 @@ On systems that don’t support pressure sensitivity, simply hovering over the s
 
 ## See Also
 
-- [func setMenu(NSMenu?, forSegment: Int)](nssegmentedcontrol/setmenu(_:forsegment:).md)
+### Configuring a segment menu
+- [func setMenu(NSMenu?, forSegment: Int)](./setmenu%28_,forsegment%29.md)
   Sets the menu for the specified segment.
-- [func menu(forSegment: Int) -> NSMenu?](nssegmentedcontrol/menu(forsegment:).md)
+- [func menu(forSegment: Int) -> NSMenu?](./menu%28forsegment%29.md)
   Returns the menu for the specified segment.
-- [func setShowsMenuIndicator(Bool, forSegment: Int)](nssegmentedcontrol/setshowsmenuindicator(_:forsegment:).md)
-- [func showsMenuIndicator(forSegment: Int) -> Bool](nssegmentedcontrol/showsmenuindicator(forsegment:).md)
+- [func setShowsMenuIndicator(Bool, forSegment: Int)](./setshowsmenuindicator%28_,forsegment%29.md)
+- [func showsMenuIndicator(forSegment: Int) -> Bool](./showsmenuindicator%28forsegment%29.md)
 
 
 ---

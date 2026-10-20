@@ -1,14 +1,15 @@
 # sin6_node_address
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 struct sockaddr_in6 sin6_node_address;
 ```
 

@@ -1,7 +1,8 @@
 # removeChild(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes `child` from the children list. No-op if `child` is not a child of this spec.
 

@@ -1,12 +1,13 @@
 # NSPopover.CloseReason
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Values that specify the reason for the [`willCloseNotification`](nspopover/willclosenotification.md) notification.
+Values that specify the reason for the [`willCloseNotification`](./willclosenotification.md) notification.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,32 +15,37 @@ Values that specify the reason for the [`willCloseNotification`](nspopover/willc
 struct CloseReason
 ```
 
+```c
+typedef NSString * NSPopoverCloseReasonValue;
+```
+
 ## Topics
 
 ### Constants
-- [static let detachToWindow: NSPopover.CloseReason](nspopover/closereason/detachtowindow.md)
+- [static let detachToWindow: NSPopover.CloseReason](./closereason/detachtowindow.md)
   Specifies that the popover has been closed because it is being detached to a window.
-- [static let standard: NSPopover.CloseReason](nspopover/closereason/standard.md)
+- [static let standard: NSPopover.CloseReason](./closereason/standard.md)
   Specifies that the popover has been closed in a standard way.
 ### Initializers
-- [init(rawValue: String)](nspopover/closereason/init(rawvalue:).md)
+- [init(rawValue: String)](./closereason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSPopover.Behavior](nspopover/behavior-swift.enum.md)
+### Constants
+- [NSPopover.Behavior](./behavior-swift.enum.md)
   The appearance and disappearance behavior of a popover.
-- [class let closeReasonUserInfoKey: String](nspopover/closereasonuserinfokey.md)
-  The `userInfo` key containing the reason for the [`willCloseNotification`](nspopover/willclosenotification.md).
-- [NSPopover.Appearance](nspopover/appearance-swift.enum.md)
+- [class let closeReasonUserInfoKey: String](./closereasonuserinfokey.md)
+  The `userInfo` key containing the reason for the [`willCloseNotification`](./willclosenotification.md).
+- [NSPopover.Appearance](./appearance-swift.enum.md)
   The set of predefined appearances for a popover.
 
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -19,9 +20,10 @@ init(_ contents: [MLDataValue : MLDataValue])
 
 ## See Also
 
-- [init<S>(uniqueKeysWithValues: S)](mldatavalue/dictionarytype/init(uniquekeyswithvalues:).md)
-- [MLDataValue.DictionaryType.Key](mldatavalue/dictionarytype/key.md)
-- [MLDataValue.DictionaryType.Value](mldatavalue/dictionarytype/value.md)
+### Creating a dictionary type
+- [init<S>(uniqueKeysWithValues: S)](./init%28uniquekeyswithvalues%29.md)
+- [MLDataValue.DictionaryType.Key](./key.md)
+- [MLDataValue.DictionaryType.Value](./value.md)
 
 
 ---

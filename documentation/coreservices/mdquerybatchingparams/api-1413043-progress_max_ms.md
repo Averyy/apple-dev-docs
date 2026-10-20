@@ -1,7 +1,8 @@
 # progress_max_ms
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The maximum number of milliseconds that can passbefore additional progress notifications are sent. This value isadvisory, in that the notification will be triggered at some pointafter `progress_max_ms` millisecondshave passed since the query began accumulating results. This valueis used only during the initial result-gathering phase of a query.
 
@@ -13,6 +14,10 @@ The maximum number of milliseconds that can passbefore additional progress notif
 
 ```swift
 var progress_max_ms: Int
+```
+
+```c
+size_t progress_max_ms;
 ```
 
 

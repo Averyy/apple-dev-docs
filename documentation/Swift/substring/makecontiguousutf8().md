@@ -1,7 +1,8 @@
 # makeContiguousUTF8()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 If this string is not contiguous, make it so. If this mutates the substring, it will invalidate any pre-existing indices.
 

@@ -1,7 +1,8 @@
 # MeshResource.Instance
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that transforms a model to a location.
 
@@ -11,7 +12,7 @@ An object that transforms a model to a location.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,25 +23,26 @@ struct Instance
 ## Topics
 
 ### Initializers
-- [init(id: String, model: String, at: simd_float4x4?)](meshresource/instance/init(id:model:at:).md)
+- [init(id: String, model: String, at: simd_float4x4?)](./instance/init%28id,model,at%29.md)
 ### Instance Properties
-- [var model: String](meshresource/instance/model.md)
+- [var model: String](./instance/model.md)
   Name of the model to instance.
-- [var transform: simd_float4x4](meshresource/instance/transform.md)
+- [var transform: simd_float4x4](./instance/transform.md)
   Transform for the instance.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../../Swift/identifiable.md)
 
 ## See Also
 
-- [MeshResource.Contents](meshresource/contents-swift.struct.md)
+### Mesh resource data
+- [MeshResource.Contents](./contents-swift.struct.md)
   Value of the contents of the resource.
-- [MeshResource.Model](meshresource/model.md)
+- [MeshResource.Model](./model.md)
   A model consists of a list of parts.
-- [MeshResource.Part](meshresource/part.md)
+- [MeshResource.Part](./part.md)
   A part of a model consisting of a single material.
 
 

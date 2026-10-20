@@ -1,7 +1,8 @@
 # humidity
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The humidity for the hour.
 
@@ -26,11 +27,12 @@ Relative humidity measures the amount of water vapor in the air compared to the 
 
 ## See Also
 
-- [var apparentTemperature: Measurement<UnitTemperature>](hourweather/apparenttemperature.md)
+### Getting temperature and humidity
+- [var apparentTemperature: Measurement<UnitTemperature>](./apparenttemperature.md)
   The apparent, or “feels like” temperature during the hour.
-- [var temperature: Measurement<UnitTemperature>](hourweather/temperature.md)
+- [var temperature: Measurement<UnitTemperature>](./temperature.md)
   The temperature during the hour.
-- [var dewPoint: Measurement<UnitTemperature>](hourweather/dewpoint.md)
+- [var dewPoint: Measurement<UnitTemperature>](./dewpoint.md)
   The amount of moisture in the air.
 
 

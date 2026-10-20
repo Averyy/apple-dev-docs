@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stable identity of the entity associated with this instance.
 

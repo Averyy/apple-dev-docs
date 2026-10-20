@@ -2,18 +2,19 @@
 
 **Framework**: SceneKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The Metal pixel format for the renderer’s stencil buffer.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -21,23 +22,28 @@ The Metal pixel format for the renderer’s stencil buffer.
 var stencilPixelFormat: MTLPixelFormat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MTLPixelFormat stencilPixelFormat;
+```
+
 #### Discussion
 
-Use this property, along with the [`depthPixelFormat`](scnscenerenderer/depthpixelformat.md) and [`colorPixelFormat`](scnscenerenderer/colorpixelformat.md) properties, if you perform custom drawing with Metal (see the [`SCNSceneRendererDelegate`](scnscenerendererdelegate.md) and [`SCNNodeRendererDelegate`](scnnoderendererdelegate.md) classes) and need to create a new [`MTLRenderPipelineState`](https://developer.apple.com/documentation/metal/mtlrenderpipelinestate) object to change the GPU state as part of your rendering.
+Use this property, along with the [`depthPixelFormat`](./depthpixelformat.md) and [`colorPixelFormat`](./colorpixelformat.md) properties, if you perform custom drawing with Metal (see the [`SCNSceneRendererDelegate`](../scnscenerendererdelegate.md) and [`SCNNodeRendererDelegate`](../scnnoderendererdelegate.md) classes) and need to create a new [`MTLRenderPipelineState`](../../Metal/mtlrenderpipelinestate.md) object to change the GPU state as part of your rendering.
 
-> **Note**:  This property is valid only for scene renderers whose [`renderingAPI`](scnscenerenderer/renderingapi.md) value is [`SCNRenderingAPI.metal`](scnrenderingapi/metal.md). You create a SceneKit view that renders using Metal with the [`preferredRenderingAPI`](scnview/option/preferredrenderingapi.md) initialization option or in Interface Builder, or an [`SCNRenderer`](scnrenderer.md) that uses Metal with the [`init(device:options:)`](scnrenderer/init(device:options:).md) method. For OpenGL-based scene renderers, this property’s value is always `nil`.
+> **Note**:  This property is valid only for scene renderers whose [`renderingAPI`](./renderingapi.md) value is [`SCNRenderingAPI.metal`](../scnrenderingapi/metal.md). You create a SceneKit view that renders using Metal with the [`preferredRenderingAPI`](../scnview/option/preferredrenderingapi.md) initialization option or in Interface Builder, or an [`SCNRenderer`](../scnrenderer.md) that uses Metal with the [`init(device:options:)`](../scnrenderer/init%28device,options%29.md) method. For OpenGL-based scene renderers, this property’s value is always `nil`.
 
 ## See Also
 
-- [var currentRenderCommandEncoder: (any MTLRenderCommandEncoder)?](scnscenerenderer/currentrendercommandencoder.md)
+### Customizing Scene Rendering with Metal
+- [var currentRenderCommandEncoder: (any MTLRenderCommandEncoder)?](./currentrendercommandencoder.md)
   The Metal render command encoder in use for the current SceneKit rendering pass.
-- [var device: (any MTLDevice)?](scnscenerenderer/device.md)
+- [var device: (any MTLDevice)?](./device.md)
   The Metal device this renderer uses for rendering.
-- [var commandQueue: (any MTLCommandQueue)?](scnscenerenderer/commandqueue.md)
+- [var commandQueue: (any MTLCommandQueue)?](./commandqueue.md)
   The Metal command queue this renderer uses for rendering.
-- [var colorPixelFormat: MTLPixelFormat](scnscenerenderer/colorpixelformat.md)
+- [var colorPixelFormat: MTLPixelFormat](./colorpixelformat.md)
   The Metal pixel format for the renderer’s color output.
-- [var depthPixelFormat: MTLPixelFormat](scnscenerenderer/depthpixelformat.md)
+- [var depthPixelFormat: MTLPixelFormat](./depthpixelformat.md)
   The Metal pixel format for the renderer’s depth buffer.
 
 

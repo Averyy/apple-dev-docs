@@ -1,14 +1,15 @@
 # interruptEventSource
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 static OSPtr<IOInterruptEventSource> interruptEventSource(OSObject *owner, IOService *provider, int intIndex, ActionBlock action);
 ```
 

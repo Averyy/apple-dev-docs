@@ -1,32 +1,34 @@
 # IORTCController
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```cpp
 class IORTCController : IOService
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- getMetaClass](iortccontroller/1430424-getmetaclass.md)
-- [- getRealTimeClock](iortccontroller/1430428-getrealtimeclock.md)
-- [- setRealTimeClock](iortccontroller/1430426-setrealtimeclock.md)
+- [- getMetaClass](./iortccontroller/api-1430424-getmetaclass.md)
+- [- getRealTimeClock](./iortccontroller/api-1430428-getrealtimeclock.md)
+- [- setRealTimeClock](./iortccontroller/api-1430426-setrealtimeclock.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOService](ioservice.md)
+- [IOService](./ioservice.md)
 
 ## See Also
 
-- [IORTC](iortc.md)
+### Real Time Support
+- [IORTC](./iortc.md)
 
 
 ---

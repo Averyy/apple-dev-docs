@@ -1,47 +1,48 @@
 # Building spatial experiences for business apps with enterprise APIs for visionOS
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Article
 
 Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
 
 #### Overview
 
-> **Note**: This article is associated with WWDC25 session 223: [`Explore enhancements to your spatial business app`](https://developer.apple.comhttps://developer.apple.com/wwdc25/223/) and WWDC24 session 10139: [`Introducing enterprise APIs for visionOS`](https://developer.apple.comhttps://developer.apple.com/wwdc24/10139/).
+> **Note**: This article is associated with WWDC25 session 223: [Explore enhancements to your spatial business app](https://developer.apple.com/wwdc25/223/) and WWDC24 session 10139: [Introducing enterprise APIs for visionOS](https://developer.apple.com/wwdc24/10139/).
 
 You can use the entitlements that enterprise APIs for visionOS offer to create even more powerful enterprise solutions and spatial experiences for your visionOS app. The enterprise APIs for visionOS consist of two distinct categories.
 
 The first category of APIs provides enhanced sensor access and improves the visual capabilities of Apple Vision Pro, including:
 
-- **[`Main camera access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.main-camera-access.allow)**: Capture input data from the forward-facing main camera.
-- **[`Camera Region access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.camera-region.allow)**: Capture input data from a specific spatial region in the person’s view for the app to process or display.
-- **[`Shared Coordinate Space access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.shared-coordinate-space.allow)**: Share a coordinate space with other devices in the same physical space as each other to create shared spaces and objects between the devices.
-- **[`Passthrough in screen capture`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.screen-capture.include-passthrough)**: Access a composite feed of what an Apple Vision Pro wearer is seeing (physical world and digital content).
-- **[`Spatial barcode and QR code scanning`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.barcode-detection.allow)**: Scan barcodes and QR codes with the ability to decode contents and locate spatial positions.
+- **[`Main camera access`](../BundleResources/entitlements/com.apple.developer.arkit.main-camera-access.allow.md)**: Capture input data from the forward-facing main camera.
+- **[`Camera Region access`](../BundleResources/entitlements/com.apple.developer.arkit.camera-region.allow.md)**: Capture input data from a specific spatial region in the person’s view for the app to process or display.
+- **[`Shared Coordinate Space access`](../BundleResources/entitlements/com.apple.developer.arkit.shared-coordinate-space.allow.md)**: Share a coordinate space with other devices in the same physical space as each other to create shared spaces and objects between the devices.
+- **[`Passthrough in screen capture`](../BundleResources/entitlements/com.apple.developer.screen-capture.include-passthrough.md)**: Access a composite feed of what an Apple Vision Pro wearer is seeing (physical world and digital content).
+- **[`Spatial barcode and QR code scanning`](../BundleResources/entitlements/com.apple.developer.arkit.barcode-detection.allow.md)**: Scan barcodes and QR codes with the ability to decode contents and locate spatial positions.
 
 The second category focuses on platform control to help you get the most out of visionOS, including:
 
-- **[`App-Protected Content`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.protected-content)**: Prohibit content captures (screenshots, screen recordings, AirPlay, and SharePlay) of a view.
-- **[`Object-tracking parameter adjustment`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow)**: Optimize known object detection and tracking using configurable parameters.
-- **[`Increased performance headroom`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.app-compute-category)**: Use increased power of the CPU and GPU for high-compute needs, with a tradeoff of increased thermal usage and reduced battery life.
-- **[`Window Follow Mode`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.window-body-follow)**: Allow windows to follow the user to their next destination.
-- **[`Visual Fidelity monitoring`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.arkit.visual-fidelity.allow)**: Monitor fit and field of view coverage on Apple Vision Pro.
+- **[`App-Protected Content`](../BundleResources/entitlements/com.apple.developer.protected-content.md)**: Prohibit content captures (screenshots, screen recordings, AirPlay, and SharePlay) of a view.
+- **[`Object-tracking parameter adjustment`](../BundleResources/entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow.md)**: Optimize known object detection and tracking using configurable parameters.
+- **[`Increased performance headroom`](../BundleResources/entitlements/com.apple.developer.app-compute-category.md)**: Use increased power of the CPU and GPU for high-compute needs, with a tradeoff of increased thermal usage and reduced battery life.
+- **[`Window Follow Mode`](../BundleResources/entitlements/com.apple.developer.window-body-follow.md)**: Allow windows to follow the user to their next destination.
+- **[`Visual Fidelity monitoring`](../BundleResources/entitlements/com.apple.developer.arkit.visual-fidelity.allow.md)**: Monitor fit and field of view coverage on Apple Vision Pro.
 
 > **Note**: Each of these entitlements allows a device to operate outside the default configuration. When using these features, be aware that they may impact the performance of other apps.
 
-##### Request the Entitlements
+##### Request the entitlements
 
-If you’re interested in using the enterprise APIs for visionOS in your app, the Account Holder of your organization’s Apple Developer Program or Apple Developer Enterprise Program membership can submit a [`request for an enterprise API license and entitlements`](https://developer.apple.comhttps://developer.apple.com/go/?id=69613ca716fe11ef8ec848df370857f4). If you enrolled as an individual, you can’t request an enterprise API license.
+If you’re interested in using the enterprise APIs for visionOS in your app, the Account Holder of your organization’s Apple Developer Program or Apple Developer Enterprise Program membership can submit a [request for an enterprise API license and entitlements](https://developer.apple.com/go/?id=69613ca716fe11ef8ec848df370857f4). If you enrolled as an individual, you can’t request an enterprise API license.
 
 To be eligible, your app needs to:
 
 - Be for use in a business setting only
 - Meet specific criteria associated with usage for each API
 
-Enterprise APIs for visionOS are eligible for business use only. You can distribute apps that you develop with the enterprise APIs for visionOS privately as proprietary in-house apps or custom apps using Apple Business Manager. For more information on distributing custom apps, see [`Set distribution methods`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-your-apps-availability/set-distribution-methods).
+Enterprise APIs for visionOS are eligible for business use only. You can distribute apps that you develop with the enterprise APIs for visionOS privately as proprietary in-house apps or custom apps using Apple Business Manager. For more information on distributing custom apps, see [Set distribution methods](https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/set-distribution-methods).
 
 The Account Holder can also request access to the entitlements for *Development Only* purposes. With this access, you can build and run apps on your registered test devices with development provisioning profiles. A Development Only license applies at the team level and works across your team’s apps, whereas a distribution license applies to a single App ID.
 
-##### Configure Your Apps Xcode Project
+##### Configure your app’s Xcode project
 
 To use entitlements, you need to include both the entitlement file and a corresponding license file in your app.
 
@@ -56,9 +57,9 @@ To add an entitlement in Xcode:
 3. Click the Add Capability button (+) and type the name of the entitlement you want to add, such as *main camera access*.
 4. Double-click the entitlement to add it to the Signing section. This creates a `.entitlements` file with the relevant capability, such as `com.apple.developer.arkit.main-camera-access.allow` for “Main camera access”.
 
-After you add the `.license` and `.entitlements` files, you can implement and test the APIs you have approval to use. For more information, see [`Adding capabilities to your app`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+After you add the `.license` and `.entitlements` files, you can implement and test the APIs you have approval to use. For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-##### Verify Your Apps License and Entitlements
+##### Verify your app’s license and entitlements
 
 Your app can use the VisionEntitlementServices framework to confirm that your enterprise API license is valid and that your app is approved for a specific enterprise entitlement.
 
@@ -74,11 +75,12 @@ if EnterpriseLicenseDetails.shared.licenseStatus != .valid {
 
 ## See Also
 
-- [Accessing the main camera](accessing-the-main-camera.md)
+### Enterprise APIs for visionOS
+- [Accessing the main camera](./accessing-the-main-camera.md)
   Add camera-based features to enterprise apps.
-- [Locating and decoding barcodes in 3D space](locating-and-decoding-barcodes-in-3d-space.md)
+- [Locating and decoding barcodes in 3D space](./locating-and-decoding-barcodes-in-3d-space.md)
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
-- [Monitoring fit and field of view fidelity](monitoring-fit-and-field-of-view-fidelity.md)
+- [Monitoring fit and field of view fidelity](./monitoring-fit-and-field-of-view-fidelity.md)
   Respond to changes in fit and field of view fidelity on Apple Vision Pro by using the Visual Fidelity API.
 
 

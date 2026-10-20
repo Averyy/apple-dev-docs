@@ -1,7 +1,8 @@
 # tokenInfo(forTokenID:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func tokenInfo(forTokenID tokenID: String) -> TKTokenWatcher.TokenInfo?
+```
+
+```objc
+- (TKTokenWatcherTokenInfo *) tokenInfoForTokenID:(NSString *) tokenID;
 ```
 
 

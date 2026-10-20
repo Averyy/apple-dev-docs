@@ -1,7 +1,8 @@
 # VNSequenceRequestHandler
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that processes image-analysis requests for each frame in a sequence.
 
@@ -19,68 +20,73 @@ An object that processes image-analysis requests for each frame in a sequence.
 class VNSequenceRequestHandler
 ```
 
+```objc
+@interface VNSequenceRequestHandler : NSObject
+```
+
 #### Overview
 
-Instantiate this handler to perform Vision requests on a series of images. Unlike the [`VNImageRequestHandler`](vnimagerequesthandler.md), you don’t specify the image on creation. Instead, you supply each image frame one by one as you continue to call one of the `perform` methods.
+Instantiate this handler to perform Vision requests on a series of images. Unlike the [`VNImageRequestHandler`](./vnimagerequesthandler.md), you don’t specify the image on creation. Instead, you supply each image frame one by one as you continue to call one of the `perform` methods.
 
 ## Topics
 
 ### Initializing a Sequence Request
-- [init()](vnsequencerequesthandler/init.md)
+- [init()](./vnsequencerequesthandler/init%28%29.md)
   Initializes a sequence request handler.
 ### Performing a Sequence Request
-- [func perform([VNRequest], on: CGImage) throws](vnsequencerequesthandler/perform(_:on:)-3zt7l.md)
+- [func perform([VNRequest], on: CGImage) throws](./vnsequencerequesthandler/perform%28_,on%29-3zt7l.md)
   Schedules Vision requests to be performed on a Core Graphics image.
-- [func perform([VNRequest], on: CGImage, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:on:orientation:)-3gcmv.md)
+- [func perform([VNRequest], on: CGImage, orientation: CGImagePropertyOrientation) throws](./vnsequencerequesthandler/perform%28_,on,orientation%29-3gcmv.md)
   Schedules one or more Vision requests to be performed on a Core Graphics image with known orientation.
-- [func perform([VNRequest], on: CIImage) throws](vnsequencerequesthandler/perform(_:on:)-9jtgj.md)
+- [func perform([VNRequest], on: CIImage) throws](./vnsequencerequesthandler/perform%28_,on%29-9jtgj.md)
   Schedules one or more Vision requests to be performed on Core Image image data.
-- [func perform([VNRequest], on: CIImage, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:on:orientation:)-1bkm1.md)
+- [func perform([VNRequest], on: CIImage, orientation: CGImagePropertyOrientation) throws](./vnsequencerequesthandler/perform%28_,on,orientation%29-1bkm1.md)
   Schedules one or more Vision requests to be performed on Core Image image data with known orientation.
-- [func perform([VNRequest], on: CVPixelBuffer) throws](vnsequencerequesthandler/perform(_:on:)-3d7nt.md)
+- [func perform([VNRequest], on: CVPixelBuffer) throws](./vnsequencerequesthandler/perform%28_,on%29-3d7nt.md)
   Schedules one or more Vision requests to be performed on a Core Video pixel buffer.
-- [func perform([VNRequest], on: CVPixelBuffer, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:on:orientation:)-2wvt8.md)
+- [func perform([VNRequest], on: CVPixelBuffer, orientation: CGImagePropertyOrientation) throws](./vnsequencerequesthandler/perform%28_,on,orientation%29-2wvt8.md)
   Schedules one or more Vision requests to be performed on a Core Video pixel buffer with known orientation.
-- [func perform([VNRequest], on: CMSampleBuffer) throws](vnsequencerequesthandler/perform(_:on:)-45e73.md)
+- [func perform([VNRequest], on: CMSampleBuffer) throws](./vnsequencerequesthandler/perform%28_,on%29-45e73.md)
   Performs one or more requests on an image contained within a sample buffer.
-- [func perform([VNRequest], on: CMSampleBuffer, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:on:orientation:)-6b7rk.md)
+- [func perform([VNRequest], on: CMSampleBuffer, orientation: CGImagePropertyOrientation) throws](./vnsequencerequesthandler/perform%28_,on,orientation%29-6b7rk.md)
   Performs one or more requests on an image of a specified orientation contained within a sample buffer.
-- [func perform([VNRequest], onImageData: Data) throws](vnsequencerequesthandler/perform(_:onimagedata:).md)
+- [func perform([VNRequest], onImageData: Data) throws](./vnsequencerequesthandler/perform%28_,onimagedata%29.md)
   Schedules one or more Vision requests to be performed on raw image data.
-- [func perform([VNRequest], onImageData: Data, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:onimagedata:orientation:).md)
+- [func perform([VNRequest], onImageData: Data, orientation: CGImagePropertyOrientation) throws](./vnsequencerequesthandler/perform%28_,onimagedata,orientation%29.md)
   Schedules one or more Vision requests to be performed on raw data containing an image with known orientation.
-- [func perform([VNRequest], onImageURL: URL) throws](vnsequencerequesthandler/perform(_:onimageurl:).md)
+- [func perform([VNRequest], onImageURL: URL) throws](./vnsequencerequesthandler/perform%28_,onimageurl%29.md)
   Schedules one or more Vision requests to be performed on an image.
-- [func perform([VNRequest], onImageURL: URL, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:onimageurl:orientation:).md)
+- [func perform([VNRequest], onImageURL: URL, orientation: CGImagePropertyOrientation) throws](./vnsequencerequesthandler/perform%28_,onimageurl,orientation%29.md)
   Schedules one or more Vision requests to be performed on an image with known orientation, at a specific URL.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Applying Matte Effects to People in Images and Video](applying-matte-effects-to-people-in-images-and-video.md)
+### Image sequence analysis
+- [Applying Matte Effects to People in Images and Video](./applying-matte-effects-to-people-in-images-and-video.md)
   Generate image masks for people automatically by using semantic person-segmentation.
-- [Detecting human actions in a live video feed](../createml/detecting-human-actions-in-a-live-video-feed.md)
+- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
   Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
-- [Segmenting and colorizing individuals from a surrounding scene](segmenting-and-colorizing-individuals-from-a-surrounding-scene.md)
+- [Segmenting and colorizing individuals from a surrounding scene](./segmenting-and-colorizing-individuals-from-a-surrounding-scene.md)
   Use the Vision framework to isolate and apply colors to people in an image.
-- [class VNStatefulRequest](vnstatefulrequest.md)
+- [class VNStatefulRequest](./vnstatefulrequest.md)
   An abstract request type that builds evidence of a condition over time.
-- [class VNGeneratePersonSegmentationRequest](vngeneratepersonsegmentationrequest.md)
+- [class VNGeneratePersonSegmentationRequest](./vngeneratepersonsegmentationrequest.md)
   An object that produces a matte image for a person it finds in the input image.
-- [class VNGeneratePersonInstanceMaskRequest](vngeneratepersoninstancemaskrequest.md)
+- [class VNGeneratePersonInstanceMaskRequest](./vngeneratepersoninstancemaskrequest.md)
   An object that produces a mask of individual people it finds in the input image.
-- [class VNDetectDocumentSegmentationRequest](vndetectdocumentsegmentationrequest.md)
+- [class VNDetectDocumentSegmentationRequest](./vndetectdocumentsegmentationrequest.md)
   An object that detects rectangular regions that contain text in the input image.
 
 

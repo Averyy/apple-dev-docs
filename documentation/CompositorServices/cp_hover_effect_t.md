@@ -1,7 +1,8 @@
 # cp_hover_effect_t
 
 **Framework**: Compositor Services  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An opaque type that describes a hover effect of the tracking area.
 
@@ -13,6 +14,10 @@ An opaque type that describes a hover effect of the tracking area.
 
 ```swift
 typealias cp_hover_effect_t = OpaquePointer
+```
+
+```c
+typedef struct cp_hover_effect * cp_hover_effect_t;
 ```
 
 

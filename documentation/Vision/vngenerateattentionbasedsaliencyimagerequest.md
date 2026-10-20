@@ -1,7 +1,8 @@
 # VNGenerateAttentionBasedSaliencyImageRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that produces a heat map that identifies the parts of an image most likely to draw attention.
 
@@ -19,37 +20,42 @@ An object that produces a heat map that identifies the parts of an image most li
 class VNGenerateAttentionBasedSaliencyImageRequest
 ```
 
+```objc
+@interface VNGenerateAttentionBasedSaliencyImageRequest : VNImageBasedRequest
+```
+
 ## Topics
 
 ### Accessing the Results
-- [var results: [VNSaliencyImageObservation]?](vngenerateattentionbasedsaliencyimagerequest/results.md)
+- [var results: [VNSaliencyImageObservation]?](./vngenerateattentionbasedsaliencyimagerequest/results.md)
   The results of the image saliency request.
 ### Identifying Request Revisions
-- [var VNGenerateAttentionBasedSaliencyImageRequestRevision1: Int](vngenerateattentionbasedsaliencyimagerequestrevision1.md)
+- [var VNGenerateAttentionBasedSaliencyImageRequestRevision1: Int](./vngenerateattentionbasedsaliencyimagerequestrevision1.md)
   A constant for specifying revision 1 of the image saliency request.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Cropping Images Using Saliency](cropping-images-using-saliency.md)
+### Saliency analysis
+- [Cropping Images Using Saliency](./cropping-images-using-saliency.md)
   Isolate regions in an image that are most likely to draw people’s attention.
-- [Highlighting Areas of Interest in an Image Using Saliency](highlighting-areas-of-interest-in-an-image-using-saliency.md)
+- [Highlighting Areas of Interest in an Image Using Saliency](./highlighting-areas-of-interest-in-an-image-using-saliency.md)
   Quantify and visualize where people are likely to look in an image.
-- [class VNGenerateObjectnessBasedSaliencyImageRequest](vngenerateobjectnessbasedsaliencyimagerequest.md)
+- [class VNGenerateObjectnessBasedSaliencyImageRequest](./vngenerateobjectnessbasedsaliencyimagerequest.md)
   A request that generates a heat map that identifies the parts of an image most likely to represent objects.
-- [class VNSaliencyImageObservation](vnsaliencyimageobservation.md)
+- [class VNSaliencyImageObservation](./vnsaliencyimageobservation.md)
   An observation that contains a grayscale heat map of important areas across an image.
 
 

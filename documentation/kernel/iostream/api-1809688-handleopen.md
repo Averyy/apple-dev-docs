@@ -7,7 +7,7 @@ The handleOpen() method relies on the default IOService behavior to ensure that 
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool handleOpen(
  IOService *forClient, 
  IOOptionBits options, 
@@ -21,7 +21,8 @@ virtual bool handleOpen(
 
 ## See Also
 
-- [handleClose](iostream/1809680-handleclose.md)
+### Opening and closing streams
+- [handleClose](./api-1809680-handleclose.md)
   The handleClose method destroys the shared input and output queues.
 
 

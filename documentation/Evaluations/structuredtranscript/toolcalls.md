@@ -1,7 +1,8 @@
 # toolCalls
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tool calls extracted from the transcript.
 
@@ -22,9 +23,10 @@ var toolCalls: [Transcript.ToolCall]
 
 ## See Also
 
-- [var toolOutputs: [Transcript.ToolOutput]](structuredtranscript/tooloutputs.md)
+### Inspecting tool interactions
+- [var toolOutputs: [Transcript.ToolOutput]](./tooloutputs.md)
   The tool outputs extracted from the transcript.
-- [enum StructuredValue](structuredvalue.md)
+- [enum StructuredValue](../structuredvalue.md)
   A type-safe representation of JSON values.
 
 

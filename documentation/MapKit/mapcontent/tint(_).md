@@ -1,7 +1,8 @@
 # tint(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The tint shape style to apply to map content.
 
@@ -11,7 +12,7 @@ The tint shape style to apply to map content.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,7 +24,7 @@ The tint shape style to apply to map content.
 
 #### Return Value
 
-Returns [`MapContent`](mapcontent.md) with overlays drawn with the [`ShapeStyle`](https://developer.apple.com/documentation/swiftui/shapestyle) you specified.
+Returns [`MapContent`](../mapcontent.md) with overlays drawn with the [`ShapeStyle`](../../SwiftUI/shapestyle.md) you specified.
 
 ## Parameters
 
@@ -31,7 +32,8 @@ Returns [`MapContent`](mapcontent.md) with overlays drawn with the [`ShapeStyle`
 
 ## See Also
 
-- [func foregroundStyle(some ShapeStyle) -> some MapContent](mapcontent/foregroundstyle(_:).md)
+### Setting the content style
+- [func foregroundStyle(some ShapeStyle) -> some MapContent](./foregroundstyle%28_%29.md)
   Specifies the shape style used to fill content in drawing map overlays.
 
 

@@ -1,7 +1,8 @@
 # MPSFColorConversion
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 27.0+
@@ -17,39 +18,43 @@
 class MPSFColorConversion
 ```
 
+```objc
+@interface MPSFColorConversion : MPSFunction
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, conversion: CGColorConversionInfo?, functionName: String, sourceRange: UnsafePointer<MPSFunctions_AABB>?, options: MPSFColorConversionOptions) throws](mpsfcolorconversion/init(device:conversion:functionname:sourcerange:options:).md)
-- [convenience init(device: any MTLDevice, start: CGColorSpace, end: CGColorSpace, functionName: String, sourceRange: UnsafePointer<MPSFunctions_AABB>?, options: MPSFColorConversionOptions) throws](mpsfcolorconversion/init(device:start:end:functionname:sourcerange:options:).md)
-- [convenience init(device: any MTLDevice, startColorSpace: CGColorSpace, endColorSpace: CGColorSpace, functionName: String, sourceRange: UnsafePointer<MPSFunctions_AABB>?, options: MPSFColorConversionOptions) throws](mpsfcolorconversion/init(device:startcolorspace:endcolorspace:functionname:sourcerange:options:).md)
+- [init(device: any MTLDevice, conversion: CGColorConversionInfo?, functionName: String, sourceRange: UnsafePointer<MPSFunctions_AABB>?, options: MPSFColorConversionOptions) throws](./mpsfcolorconversion/init%28device,conversion,functionname,sourcerange,options%29.md)
+- [convenience init(device: any MTLDevice, start: CGColorSpace, end: CGColorSpace, functionName: String, sourceRange: UnsafePointer<MPSFunctions_AABB>?, options: MPSFColorConversionOptions) throws](./mpsfcolorconversion/init%28device,start,end,functionname,sourcerange,options%29.md)
+- [convenience init(device: any MTLDevice, startColorSpace: CGColorSpace, endColorSpace: CGColorSpace, functionName: String, sourceRange: UnsafePointer<MPSFunctions_AABB>?, options: MPSFColorConversionOptions) throws](./mpsfcolorconversion/init%28device,startcolorspace,endcolorspace,functionname,sourcerange,options%29.md)
 ### Instance Properties
-- [var inputColorChannels: Int](mpsfcolorconversion/inputcolorchannels.md)
-- [var options: MPSFColorConversionOptions](mpsfcolorconversion/options.md)
-- [var outputColorChannels: Int](mpsfcolorconversion/outputcolorchannels.md)
+- [var inputColorChannels: Int](./mpsfcolorconversion/inputcolorchannels.md)
+- [var options: MPSFColorConversionOptions](./mpsfcolorconversion/options.md)
+- [var outputColorChannels: Int](./mpsfcolorconversion/outputcolorchannels.md)
 ### Instance Methods
-- [func descriptorFor1DTexture1() -> MTLTextureDescriptor?](mpsfcolorconversion/descriptorfor1dtexture1.md)
-- [func descriptorFor3DTexture1() -> MTLTextureDescriptor?](mpsfcolorconversion/descriptorfor3dtexture1.md)
-- [func descriptorFor3DTexture2() -> MTLTextureDescriptor?](mpsfcolorconversion/descriptorfor3dtexture2.md)
-- [func effectiveRange(MPSFunctions_AABB) -> MPSFunctions_AABB](mpsfcolorconversion/effectiverange(_:).md)
-- [func initialize1DTexture1((any MTLTexture)?)](mpsfcolorconversion/initialize1dtexture1(_:).md)
-- [func initialize3DTexture1((any MTLTexture)?)](mpsfcolorconversion/initialize3dtexture1(_:).md)
-- [func initialize3DTexture2((any MTLTexture)?)](mpsfcolorconversion/initialize3dtexture2(_:).md)
+- [func descriptorFor1DTexture1() -> MTLTextureDescriptor?](./mpsfcolorconversion/descriptorfor1dtexture1%28%29.md)
+- [func descriptorFor3DTexture1() -> MTLTextureDescriptor?](./mpsfcolorconversion/descriptorfor3dtexture1%28%29.md)
+- [func descriptorFor3DTexture2() -> MTLTextureDescriptor?](./mpsfcolorconversion/descriptorfor3dtexture2%28%29.md)
+- [func effectiveRange(MPSFunctions_AABB) -> MPSFunctions_AABB](./mpsfcolorconversion/effectiverange%28_%29.md)
+- [func initialize1DTexture1((any MTLTexture)?)](./mpsfcolorconversion/initialize1dtexture1%28_%29.md)
+- [func initialize3DTexture1((any MTLTexture)?)](./mpsfcolorconversion/initialize3dtexture1%28_%29.md)
+- [func initialize3DTexture2((any MTLTexture)?)](./mpsfcolorconversion/initialize3dtexture2%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSFunction](mpsfunction.md)
+- [MPSFunction](./mpsfunction.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

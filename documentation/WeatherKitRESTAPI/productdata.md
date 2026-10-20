@@ -1,7 +1,8 @@
 # ProductData
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A base type for all weather data.
 
@@ -10,7 +11,7 @@ A base type for all weather data.
 
 ## Declaration
 
-```swift
+```
 object ProductData
 ```
 
@@ -21,17 +22,18 @@ object ProductData
 ## Relationships
 
 ### Inherited By
-- [CurrentWeather](currentweather.md)
-- [DailyForecast](dailyforecast.md)
-- [HourlyForecast](hourlyforecast.md)
-- [NextHourForecast](nexthourforecast.md)
-- [WeatherAlertCollection](weatheralertcollection.md)
+- [CurrentWeather](./currentweather.md)
+- [DailyForecast](./dailyforecast.md)
+- [HourlyForecast](./hourlyforecast.md)
+- [NextHourForecast](./nexthourforecast.md)
+- [WeatherAlertCollection](./weatheralertcollection.md)
 
 ## See Also
 
-- [object CurrentWeather](currentweather.md)
+### Obtaining current weather information
+- [object CurrentWeather](./currentweather.md)
   The current weather conditions for the specified location.
-- [object Metadata](metadata.md)
+- [object Metadata](./metadata.md)
   Descriptive information about the weather data.
 
 

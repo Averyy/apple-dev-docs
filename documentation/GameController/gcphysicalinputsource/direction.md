@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The directional input, if any, that a physical input source involves.
@@ -20,13 +21,18 @@ The directional input, if any, that a physical input source involves.
 var direction: GCPhysicalInputSourceDirection { get }
 ```
 
+```objc
+@property (readonly) GCPhysicalInputSourceDirection direction;
+```
+
 #### Discussion
 
 If this property is `nil`, the physical input source doesn’t involve directional input.
 
 ## See Also
 
-- [struct GCPhysicalInputSourceDirection](gcphysicalinputsourcedirection.md)
+### Getting directions
+- [struct GCPhysicalInputSourceDirection](../gcphysicalinputsourcedirection.md)
   The directions that a physical input source involves.
 
 

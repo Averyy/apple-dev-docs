@@ -1,7 +1,8 @@
 # MSCriticalMessagingAuthorizationStatus
 
 **Framework**: Messages  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the authorization status for the Critical Messaging API.
 
@@ -18,33 +19,34 @@ enum MSCriticalMessagingAuthorizationStatus
 ## Topics
 
 ### Authorization statuses
-- [MSCriticalMessagingAuthorizationStatus.unknown](mscriticalmessagingauthorizationstatus/unknown.md)
+- [MSCriticalMessagingAuthorizationStatus.unknown](./mscriticalmessagingauthorizationstatus/unknown.md)
   The authorization status is unknown.
-- [MSCriticalMessagingAuthorizationStatus.denied](mscriticalmessagingauthorizationstatus/denied.md)
+- [MSCriticalMessagingAuthorizationStatus.denied](./mscriticalmessagingauthorizationstatus/denied.md)
   A person has denied permission to use the Critical Messaging API.
-- [MSCriticalMessagingAuthorizationStatus.approved](mscriticalmessagingauthorizationstatus/approved.md)
+- [MSCriticalMessagingAuthorizationStatus.approved](./mscriticalmessagingauthorizationstatus/approved.md)
   A person has approved a request to use the Critical Messaging API.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Sending SMS messages from an app](critical-messaging-api.md)
+### Critical messages
+- [Sending SMS messages from an app](./critical-messaging-api.md)
   Send critical messages from inside your app using the Critical Messaging API.
-- [class MSCriticalSMSMessenger](mscriticalsmsmessenger.md)
+- [class MSCriticalSMSMessenger](./mscriticalsmsmessenger.md)
   The user interface for the Critical Messaging API.
-- [struct MSRecipient](msrecipient.md)
+- [struct MSRecipient](./msrecipient.md)
   A structure that describes the recipient of a critical message.
-- [struct MSCriticalMessage](mscriticalmessage.md)
+- [struct MSCriticalMessage](./mscriticalmessage.md)
   A message for critical communications.
 
 

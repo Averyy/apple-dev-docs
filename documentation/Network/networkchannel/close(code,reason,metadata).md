@@ -1,7 +1,8 @@
 # close(code:reason:metadata:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send a WebSocket close frame on a connection.
 
@@ -19,6 +20,8 @@ Send a WebSocket close frame on a connection.
 ```swift
 func close(code: NWProtocolWebSocket.CloseCode = .protocolCode(.normalClosure), reason: String? = nil, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]}) async throws
 ```
+
+Available when `ApplicationProtocol` is `WebSocket`.
 
 #### Discussion
 

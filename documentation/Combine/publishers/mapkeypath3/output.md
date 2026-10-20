@@ -1,7 +1,8 @@
 # Publishers.MapKeyPath3.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher produces three-element tuples, where each menber’s type matches
 
 ## See Also
 
-- [Publishers.MapKeyPath3.Failure](publishers/mapkeypath3/failure.md)
+### Declaring supporting types
+- [Publishers.MapKeyPath3.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

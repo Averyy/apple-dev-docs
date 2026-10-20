@@ -1,7 +1,8 @@
 # CE_ExtendedKeyUsage
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -15,13 +16,13 @@ typealias CE_ExtendedKeyUsage = __CE_ExtendedKeyUsage
 ## Topics
 
 ### Instance Properties
-- [var numPurposes: uint32](ce_extendedkeyusage-swift.typealias/numpurposes.md)
-- [var purposes: UnsafeMutablePointer<SecAsn1Oid>!](ce_extendedkeyusage-swift.typealias/purposes.md)
+- [var numPurposes: uint32](./ce_extendedkeyusage-swift.typealias/numpurposes.md)
+- [var purposes: UnsafeMutablePointer<SecAsn1Oid>!](./ce_extendedkeyusage-swift.typealias/purposes.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

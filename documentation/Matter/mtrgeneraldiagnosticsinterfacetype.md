@@ -1,7 +1,8 @@
 # MTRGeneralDiagnosticsInterfaceType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,26 +19,30 @@
 enum MTRGeneralDiagnosticsInterfaceType
 ```
 
+```c
+enum MTRGeneralDiagnosticsInterfaceType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRGeneralDiagnosticsInterfaceType.cellular](mtrgeneraldiagnosticsinterfacetype/cellular.md)
-- [MTRGeneralDiagnosticsInterfaceType.ethernet](mtrgeneraldiagnosticsinterfacetype/ethernet.md)
-- [MTRGeneralDiagnosticsInterfaceType.thread](mtrgeneraldiagnosticsinterfacetype/thread.md)
-- [MTRGeneralDiagnosticsInterfaceType.unspecified](mtrgeneraldiagnosticsinterfacetype/unspecified.md)
-- [MTRGeneralDiagnosticsInterfaceType.wiFi](mtrgeneraldiagnosticsinterfacetype/wifi.md)
+- [MTRGeneralDiagnosticsInterfaceType.cellular](./mtrgeneraldiagnosticsinterfacetype/cellular.md)
+- [MTRGeneralDiagnosticsInterfaceType.ethernet](./mtrgeneraldiagnosticsinterfacetype/ethernet.md)
+- [MTRGeneralDiagnosticsInterfaceType.thread](./mtrgeneraldiagnosticsinterfacetype/thread.md)
+- [MTRGeneralDiagnosticsInterfaceType.unspecified](./mtrgeneraldiagnosticsinterfacetype/unspecified.md)
+- [MTRGeneralDiagnosticsInterfaceType.wiFi](./mtrgeneraldiagnosticsinterfacetype/wifi.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrgeneraldiagnosticsinterfacetype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrgeneraldiagnosticsinterfacetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

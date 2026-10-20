@@ -1,7 +1,8 @@
 # drawableRenderContextSupportedStencilFormats
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of metal pixel formats the layer renderer drawable supports with its render context.
 
@@ -17,9 +18,9 @@ var drawableRenderContextSupportedStencilFormats: [MTLPixelFormat] { get }
 
 #### Discussion
 
-The pixel formats in this property tell you which [`MTLPixelFormat`](https://developer.apple.com/documentation/metal/mtlpixelformat) pixel arrangements and characteristics the layer supports for its stencil textures with the `RenderContext`.
+The pixel formats in this property tell you which [`MTLPixelFormat`](../../../Metal/mtlpixelformat.md) pixel arrangements and characteristics the layer supports for its stencil textures with the `RenderContext`.
 
-> **Note**: Pixel formats are further detailed in [`Metal Feature Set Tables`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
+> **Note**: Pixel formats are further detailed in [Metal Feature Set Tables](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf).
 
 
 ---

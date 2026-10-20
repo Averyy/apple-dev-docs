@@ -1,7 +1,8 @@
 # region
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -20,11 +21,12 @@ var region: Locale.Region? { get }
 
 ## See Also
 
-- [var cityName: String?](mkaddressrepresentations/cityname.md)
+### Getting parts of an address
+- [var cityName: String?](./cityname.md)
   The name of the city.
-- [var cityWithContext: String?](mkaddressrepresentations/citywithcontext.md)
+- [var cityWithContext: String?](./citywithcontext.md)
   The city name along with the country name, to provide additional disambiguating context.
-- [var regionName: String?](mkaddressrepresentations/regionname.md)
+- [var regionName: String?](./regionname.md)
   The region name, such as “United States”.
 
 

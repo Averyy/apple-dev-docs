@@ -1,9 +1,10 @@
 # init(configuration:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Initializes an instance of [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md).
+Initializes an instance of [`AVPlayerItemSampleBufferOutput`](../avplayeritemsamplebufferoutput.md).
 
 **Availability**:
 - iOS 27.0+
@@ -18,6 +19,10 @@ Initializes an instance of [`AVPlayerItemSampleBufferOutput`](avplayeritemsample
 
 ```swift
 init(configuration: AVPlayerItemSampleBufferOutputConfiguration?)
+```
+
+```objc
+- (instancetype) initWithConfiguration:(AVPlayerItemSampleBufferOutputConfiguration *) configuration;
 ```
 
 ## Parameters

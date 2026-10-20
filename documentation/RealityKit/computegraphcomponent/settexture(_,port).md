@@ -1,7 +1,8 @@
 # setTexture(_:port:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds a Metal texture to a parameter identified by its port address.
 

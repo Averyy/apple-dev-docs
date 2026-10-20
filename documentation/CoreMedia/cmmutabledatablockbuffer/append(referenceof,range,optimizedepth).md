@@ -1,7 +1,8 @@
 # append(referenceOf:range:optimizeDepth:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Append a reference to a range of another block buffer.
 

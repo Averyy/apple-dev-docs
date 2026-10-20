@@ -1,7 +1,8 @@
 # init(sourceURL:destinationURL:observedProgress:liveActivityAccessToken:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a download monitor to report progress for the specified download.
 
@@ -18,7 +19,7 @@ Initializes a download monitor to report progress for the specified download.
 
 #### Discussion
 
-Generate an access token for the download by calling [`createAccessToken()`](bedownloadmonitor-9bwls/createaccesstoken().md).
+Generate an access token for the download by calling [`createAccessToken()`](./createaccesstoken%28%29.md).
 
 ## Parameters
 
@@ -29,7 +30,8 @@ Generate an access token for the download by calling [`createAccessToken()`](bed
 
 ## See Also
 
-- [static func createAccessToken() -> Data?](bedownloadmonitor-9bwls/createaccesstoken.md)
+### Creating a download monitor
+- [static func createAccessToken() -> Data?](./createaccesstoken%28%29.md)
   Generates an opaque token that the system uses to keep your networking extension active in the background.
 
 

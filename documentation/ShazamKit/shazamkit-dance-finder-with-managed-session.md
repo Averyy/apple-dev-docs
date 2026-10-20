@@ -1,6 +1,8 @@
 # ShazamKit Dance Finder with Managed Session
 
-**Framework**: ShazamKit
+**Framework**: ShazamKit  
+**Role**: Sample Code  
+**Download**: [ShazamKitDanceFinderWithManagedSession.zip](https://docs-assets.developer.apple.com/published/916473d94bbc/ShazamKitDanceFinderWithManagedSession.zip)
 
 Find a video of dance moves for a specific song by matching the audio to a custom catalog, and show a history of recognized songs.
 
@@ -12,15 +14,16 @@ Find a video of dance moves for a specific song by matching the audio to a custo
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC23 session 10051: [`Create a great ShazamKit experience`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10051/)
+> **Note**: This sample code project is associated with WWDC23 session 10051: [Create a great ShazamKit experience](https://developer.apple.com/wwdc23/10051/)
 
 ## See Also
 
-- [Building a Custom Catalog and Matching Audio](building-a-custom-catalog-and-matching-audio.md)
+### Create a custom audio catalog
+- [Building a Custom Catalog and Matching Audio](./building-a-custom-catalog-and-matching-audio.md)
   Display lesson content that’s synchronized to a learning video by matching the audio to a custom reference signature and associated metadata.
-- [class SHCustomCatalog](shcustomcatalog.md)
+- [class SHCustomCatalog](./shcustomcatalog.md)
   An object for storing the reference signatures for custom audio recordings and their associated metadata.
-- [class SHCatalog](shcatalog.md)
+- [class SHCatalog](./shcatalog.md)
   An abstract base class for storing reference signatures and their associated metadata.
 
 

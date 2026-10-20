@@ -1,7 +1,8 @@
 # fastForward(stepCount:stepDeltaTime:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances the particle simulation by multiple steps in a single operation.
 
@@ -12,7 +13,7 @@ Advances the particle simulation by multiple steps in a single operation.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

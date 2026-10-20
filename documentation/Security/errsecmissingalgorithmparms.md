@@ -1,7 +1,8 @@
 # errSecMissingAlgorithmParms
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An algorithm parameters attribute is missing.
 
@@ -18,6 +19,10 @@ An algorithm parameters attribute is missing.
 
 ```swift
 var errSecMissingAlgorithmParms: OSStatus { get }
+```
+
+```c
+errSecMissingAlgorithmParms
 ```
 
 

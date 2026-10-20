@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var kATSOptionFlagsActivateDisabled: Int](katsoptionflagsactivatedisabled.md)
-- [var kATSOptionFlagsDoNotNotify: Int](katsoptionflagsdonotnotify.md)
-- [var kATSOptionFlagsProcessSubdirectories: Int](katsoptionflagsprocesssubdirectories.md)
-- [var kATSOptionFlagsRecordPersistently: Int](katsoptionflagsrecordpersistently.md)
+- [var kATSOptionFlagsActivateDisabled: Int](../katsoptionflagsactivatedisabled.md)
+- [var kATSOptionFlagsDoNotNotify: Int](../katsoptionflagsdonotnotify.md)
+- [var kATSOptionFlagsProcessSubdirectories: Int](../katsoptionflagsprocesssubdirectories.md)
+- [var kATSOptionFlagsRecordPersistently: Int](../katsoptionflagsrecordpersistently.md)
 
 
 ---

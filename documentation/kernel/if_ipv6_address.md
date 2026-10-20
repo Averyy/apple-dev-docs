@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_ipv6_address {
     ...
 };
@@ -17,8 +17,8 @@ struct if_ipv6_address {
 ## Topics
 
 ### Instance Properties
-- [v6_address](if_ipv6_address/3943747-v6_address.md)
-- [v6_prefixlen](if_ipv6_address/3943748-v6_prefixlen.md)
+- [v6_address](./if_ipv6_address/api-3943747-v6_address.md)
+- [v6_prefixlen](./if_ipv6_address/api-3943748-v6_prefixlen.md)
 
 
 ---

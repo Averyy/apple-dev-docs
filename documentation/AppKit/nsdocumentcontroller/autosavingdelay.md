@@ -1,12 +1,13 @@
 # autosavingDelay
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval (in seconds) for periodic autosaving.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ The time interval (in seconds) for periodic autosaving.
 var autosavingDelay: TimeInterval { get set }
 ```
 
+```objc
+@property NSTimeInterval autosavingDelay;
+```
+
 #### Discussion
 
-A value of 0 indicates that periodic autosaving should not be done at all. The `NSDocumentController` object uses this number as the amount of time to wait between detecting that a document has unautosaved changes and sending the document an [`autosave(withDelegate:didAutosave:contextInfo:)`](nsdocument/autosave(withdelegate:didautosave:contextinfo:).md) message. The default value is `0`.
+A value of 0 indicates that periodic autosaving should not be done at all. The `NSDocumentController` object uses this number as the amount of time to wait between detecting that a document has unautosaved changes and sending the document an [`autosave(withDelegate:didAutosave:contextInfo:)`](../nsdocument/autosave%28withdelegate,didautosave,contextinfo%29.md) message. The default value is `0`.
 
 
 ---

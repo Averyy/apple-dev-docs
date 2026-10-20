@@ -1,7 +1,8 @@
 # UIAccessibility.ReduceMotionStatusDidChangeMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,13 +20,13 @@ struct ReduceMotionStatusDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init()](uiaccessibility/reducemotionstatusdidchangemessage/init.md)
+- [init()](./reducemotionstatusdidchangemessage/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

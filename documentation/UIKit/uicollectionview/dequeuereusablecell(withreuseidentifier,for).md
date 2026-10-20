@@ -1,7 +1,8 @@
 # dequeueReusableCell(withReuseIdentifier:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dequeues a reusable cell object located by its identifier.
 
@@ -9,7 +10,7 @@ Dequeues a reusable cell object located by its identifier.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,21 @@ Dequeues a reusable cell object located by its identifier.
 func dequeueReusableCell(withReuseIdentifier identifier: String, for indexPath: IndexPath) -> UICollectionViewCell
 ```
 
+```objc
+- (UICollectionViewCell *) dequeueReusableCellWithReuseIdentifier:(NSString *) identifier forIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-A valid [`UICollectionReusableView`](uicollectionreusableview.md) object.
+A valid [`UICollectionReusableView`](../uicollectionreusableview.md) object.
 
 #### Discussion
 
 Call this method from your data source object when asked to provide a new cell for the collection view. This method dequeues an existing cell if one is available or creates a new one based on the class or nib file you previously registered.
 
-> ❗ **Important**:  You must register a class or nib file using the [`register(_:forCellWithReuseIdentifier:)`](uicollectionview/register(_:forcellwithreuseidentifier:)-3vaho.md) or [`register(_:forCellWithReuseIdentifier:)`](uicollectionview/register(_:forcellwithreuseidentifier:)-6z6t4.md) method before calling this method.
+> ❗ **Important**:  You must register a class or nib file using the [`register(_:forCellWithReuseIdentifier:)`](./register%28_,forcellwithreuseidentifier%29-3vaho.md) or [`register(_:forCellWithReuseIdentifier:)`](./register%28_,forcellwithreuseidentifier%29-6z6t4.md) method before calling this method.
 
-If you registered a class for the specified `identifier` and a new cell must be created, this method initializes the cell by calling its [`init(frame:)`](uiview/init(frame:).md) method. For nib-based cells, this method loads the cell object from the provided nib file. If an existing cell was available for reuse, this method calls the cell’s [`prepareForReuse()`](uicollectionreusableview/prepareforreuse().md) method instead.
+If you registered a class for the specified `identifier` and a new cell must be created, this method initializes the cell by calling its [`init(frame:)`](../uiview/init%28frame%29.md) method. For nib-based cells, this method loads the cell object from the provided nib file. If an existing cell was available for reuse, this method calls the cell’s [`prepareForReuse()`](../uicollectionreusableview/prepareforreuse%28%29.md) method instead.
 
 ## Parameters
 
@@ -37,13 +42,14 @@ If you registered a class for the specified `identifier` and a new cell must be 
 
 ## See Also
 
-- [UICollectionView.CellRegistration](uicollectionview/cellregistration.md)
+### Creating cells
+- [UICollectionView.CellRegistration](./cellregistration.md)
   A registration for the collection view’s cells.
-- [func dequeueConfiguredReusableCell<Cell, Item>(using: UICollectionView.CellRegistration<Cell, Item>, for: IndexPath, item: Item?) -> Cell](uicollectionview/dequeueconfiguredreusablecell(using:for:item:).md)
+- [func dequeueConfiguredReusableCell<Cell, Item>(using: UICollectionView.CellRegistration<Cell, Item>, for: IndexPath, item: Item?) -> Cell](./dequeueconfiguredreusablecell%28using,for,item%29.md)
   Dequeues a configured reusable cell object.
-- [func register(AnyClass?, forCellWithReuseIdentifier: String)](uicollectionview/register(_:forcellwithreuseidentifier:)-3vaho.md)
+- [func register(AnyClass?, forCellWithReuseIdentifier: String)](./register%28_,forcellwithreuseidentifier%29-3vaho.md)
   Registers a class for use in creating new collection view cells.
-- [func register(UINib?, forCellWithReuseIdentifier: String)](uicollectionview/register(_:forcellwithreuseidentifier:)-6z6t4.md)
+- [func register(UINib?, forCellWithReuseIdentifier: String)](./register%28_,forcellwithreuseidentifier%29-6z6t4.md)
   Registers a nib file for use in creating new collection view cells.
 
 

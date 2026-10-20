@@ -1,7 +1,8 @@
 # errSecInvalidEncoding
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The encoding is not valid.
 
@@ -18,6 +19,10 @@ The encoding is not valid.
 
 ```swift
 var errSecInvalidEncoding: OSStatus { get }
+```
+
+```c
+errSecInvalidEncoding
 ```
 
 

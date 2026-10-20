@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: System
+**Framework**: System  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (Stat, Stat) -> Bool](stat/==(_:_:).md)
+- [static func == (Stat, Stat) -> Bool](./eqeq%28_,_%29.md)
   Compares the meaningful file-metadata fields of two `Stat` values.
 
 

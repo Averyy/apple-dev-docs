@@ -1,7 +1,8 @@
 # CMSCertificateChainMode.signerOnly
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Only include signer certificates.
 
@@ -13,6 +14,10 @@ Only include signer certificates.
 
 ```swift
 case signerOnly
+```
+
+```c
+kCMSCertificateSignerOnly
 ```
 
 

@@ -1,7 +1,8 @@
 # primaryBackgroundStyle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background style of the primary view controller.
 
@@ -17,19 +18,24 @@ The background style of the primary view controller.
 var primaryBackgroundStyle: UISplitViewController.BackgroundStyle { get set }
 ```
 
+```objc
+@property (nonatomic) UISplitViewControllerBackgroundStyle primaryBackgroundStyle;
+```
+
 ## Mentions
 
-- [Optimizing your iPad app for Mac](optimizing-your-ipad-app-for-mac.md)
+- [Optimizing your iPad app for Mac](../optimizing-your-ipad-app-for-mac.md)
 
 #### Discussion
 
-In macOS, the sidebar of a split view has Liquid Glass behind its view. To achieve this effect in your iPad app when it runs in macOS, set [`primaryBackgroundStyle`](uisplitviewcontroller/primarybackgroundstyle.md) to [`UISplitViewController.BackgroundStyle.sidebar`](uisplitviewcontroller/backgroundstyle/sidebar.md). Set the style to [`UISplitViewController.BackgroundStyle.none`](uisplitviewcontroller/backgroundstyle/none.md) when you want to control the background appearance of the primary view controller.
+In macOS, the sidebar of a split view has Liquid Glass behind its view. To achieve this effect in your iPad app when it runs in macOS, set [`primaryBackgroundStyle`](./primarybackgroundstyle.md) to [`UISplitViewController.BackgroundStyle.sidebar`](./backgroundstyle/sidebar.md). Set the style to [`UISplitViewController.BackgroundStyle.none`](./backgroundstyle/none.md) when you want to control the background appearance of the primary view controller.
 
-> **Note**:  Setting the background style to [`UISplitViewController.BackgroundStyle.sidebar`](uisplitviewcontroller/backgroundstyle/sidebar.md) has no effect when your app is running in iOS or tvOS.
+> **Note**:  Setting the background style to [`UISplitViewController.BackgroundStyle.sidebar`](./backgroundstyle/sidebar.md) has no effect when your app is running in iOS or tvOS.
 
 ## See Also
 
-- [UISplitViewController.BackgroundStyle](uisplitviewcontroller/backgroundstyle.md)
+### Managing the background style
+- [UISplitViewController.BackgroundStyle](./backgroundstyle.md)
   Styles that apply a visual effect to the background of a primary view controller.
 
 

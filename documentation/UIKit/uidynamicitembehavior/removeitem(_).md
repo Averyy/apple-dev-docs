@@ -1,7 +1,8 @@
 # removeItem(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a specific dynamic item from the dynamic item behavior.
 
@@ -9,13 +10,17 @@ Removes a specific dynamic item from the dynamic item behavior.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func removeItem(_ item: any UIDynamicItem)
+```
+
+```objc
+- (void) removeItem:(id<UIDynamicItem>) item;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ func removeItem(_ item: any UIDynamicItem)
 
 ## See Also
 
-- [func addItem(any UIDynamicItem)](uidynamicitembehavior/additem(_:).md)
+### Initializing and managing a dynamic item behavior
+- [func addItem(any UIDynamicItem)](./additem%28_%29.md)
   Adds a dynamic item to the dynamic item behavior’s item array.
-- [init(items: [any UIDynamicItem])](uidynamicitembehavior/init(items:).md)
+- [init(items: [any UIDynamicItem])](./init%28items%29.md)
   Initializes a dynamic item behavior with an array of dynamic items.
-- [var items: [any UIDynamicItem]](uidynamicitembehavior/items.md)
+- [var items: [any UIDynamicItem]](./items.md)
   Returns the set of dynamic items you’ve added to the dynamic item behavior.
 
 

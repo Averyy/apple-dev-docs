@@ -1,7 +1,8 @@
 # UIImage.DynamicRange.constrainedHigh
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allow image content to use some extended range. This is appropriate for mixing content with standard and high dynamic ranges.
 
@@ -16,6 +17,10 @@ Allow image content to use some extended range. This is appropriate for mixing c
 
 ```swift
 case constrainedHigh
+```
+
+```c
+UIImageDynamicRangeConstrainedHigh
 ```
 
 

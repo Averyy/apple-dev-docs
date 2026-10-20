@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: ContactProvider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an identifier with the given value.
 

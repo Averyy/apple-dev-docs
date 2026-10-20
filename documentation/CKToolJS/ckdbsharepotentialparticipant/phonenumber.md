@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant’s phone number.
 
@@ -10,7 +11,7 @@ The participant’s phone number.
 
 ## Declaration
 
-```swift
+```
 attribute string? phoneNumber;
 ```
 

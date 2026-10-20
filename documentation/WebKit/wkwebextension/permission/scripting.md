@@ -1,7 +1,8 @@
 # scripting
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A request for access to the `browser.scripting` APIs.
 
@@ -19,37 +20,42 @@ nonisolated
 static let scripting: WKWebExtension.Permission
 ```
 
+```c
+extern WKWebExtensionPermission const WKWebExtensionPermissionScripting;
+```
+
 ## See Also
 
-- [static let activeTab: WKWebExtension.Permission](wkwebextension/permission/activetab.md)
+### Constants
+- [static let activeTab: WKWebExtension.Permission](./activetab.md)
   A request indicating that when a person interacts with the extension, the system grants extra permissions for the active tab only.
-- [static let alarms: WKWebExtension.Permission](wkwebextension/permission/alarms.md)
+- [static let alarms: WKWebExtension.Permission](./alarms.md)
   A request for access to the `browser.alarms` APIs.
-- [static let clipboardWrite: WKWebExtension.Permission](wkwebextension/permission/clipboardwrite.md)
+- [static let clipboardWrite: WKWebExtension.Permission](./clipboardwrite.md)
   A request for access to write to the clipboard.
-- [static let contextMenus: WKWebExtension.Permission](wkwebextension/permission/contextmenus.md)
+- [static let contextMenus: WKWebExtension.Permission](./contextmenus.md)
   A request for access to the `browser.contextMenus` APIs.
-- [static let cookies: WKWebExtension.Permission](wkwebextension/permission/cookies.md)
+- [static let cookies: WKWebExtension.Permission](./cookies.md)
   A request for access to the `browser.cookies` APIs.
-- [static let declarativeNetRequest: WKWebExtension.Permission](wkwebextension/permission/declarativenetrequest.md)
+- [static let declarativeNetRequest: WKWebExtension.Permission](./declarativenetrequest.md)
   A request for access to the `browser.declarativeNetRequest` APIs.
-- [static let declarativeNetRequestFeedback: WKWebExtension.Permission](wkwebextension/permission/declarativenetrequestfeedback.md)
+- [static let declarativeNetRequestFeedback: WKWebExtension.Permission](./declarativenetrequestfeedback.md)
   A request for access to the `browser.declarativeNetRequest` APIs with extra information on matched rules.
-- [static let declarativeNetRequestWithHostAccess: WKWebExtension.Permission](wkwebextension/permission/declarativenetrequestwithhostaccess.md)
+- [static let declarativeNetRequestWithHostAccess: WKWebExtension.Permission](./declarativenetrequestwithhostaccess.md)
   A request for access to the `browser.declarativeNetRequest` APIs with the ability to modify or redirect requests.
-- [static let menus: WKWebExtension.Permission](wkwebextension/permission/menus.md)
+- [static let menus: WKWebExtension.Permission](./menus.md)
   A request for access to the `browser.menus` APIs.
-- [static let nativeMessaging: WKWebExtension.Permission](wkwebextension/permission/nativemessaging.md)
+- [static let nativeMessaging: WKWebExtension.Permission](./nativemessaging.md)
   A request for access to send messages to the app extension bundle.
-- [static let storage: WKWebExtension.Permission](wkwebextension/permission/storage.md)
+- [static let storage: WKWebExtension.Permission](./storage.md)
   A request for access to the `browser.storage` APIs.
-- [static let tabs: WKWebExtension.Permission](wkwebextension/permission/tabs.md)
+- [static let tabs: WKWebExtension.Permission](./tabs.md)
   A request for access to extra information on the `browser.tabs` APIs.
-- [static let unlimitedStorage: WKWebExtension.Permission](wkwebextension/permission/unlimitedstorage.md)
+- [static let unlimitedStorage: WKWebExtension.Permission](./unlimitedstorage.md)
   A request for access to an unlimited quota on the `browser.storage.local` APIs.
-- [static let webNavigation: WKWebExtension.Permission](wkwebextension/permission/webnavigation.md)
+- [static let webNavigation: WKWebExtension.Permission](./webnavigation.md)
   A request for access to the `browser.webNavigation` APIs.
-- [static let webRequest: WKWebExtension.Permission](wkwebextension/permission/webrequest.md)
+- [static let webRequest: WKWebExtension.Permission](./webrequest.md)
   A request for access to the `browser.webRequest` APIs.
 
 

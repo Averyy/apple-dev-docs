@@ -1,7 +1,8 @@
 # init(parameterDictionary:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.2+

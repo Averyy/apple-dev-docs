@@ -1,7 +1,8 @@
 # notificationInfo
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary containing information about how the system should alert the user.
 
@@ -10,13 +11,13 @@ A dictionary containing information about how the system should alert the user.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.NotificationInfo notificationInfo;
 ```
 
 #### Discussion
 
-See [`CloudKit JS Data Types`](cloudkit-js-data-types.md).
+See [CloudKit JS Data Types](../cloudkit-js-data-types.md).
 
 
 ---

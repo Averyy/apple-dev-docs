@@ -1,7 +1,8 @@
 # setButton(_:enabled:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables a button in the authorization plug-in’s user interface.
 
@@ -14,16 +15,21 @@ Enables or disables a button in the authorization plug-in’s user interface.
 func setButton(_ inButtonType: SFButtonType, enabled inEnabled: Bool)
 ```
 
+```objc
+- (void) setButton:(SFButtonType) inButtonType enabled:(BOOL) inEnabled;
+```
+
 ## Parameters
 
 - `inButtonType`: The type of the button.
-- `inEnabled`: [`true`](https://developer.apple.com/documentation/swift/true) to enable the button, [`false`](https://developer.apple.com/documentation/swift/false) to disable the button.
+- `inEnabled`: [`true`](../../Swift/true.md) to enable the button, [`false`](../../Swift/false.md) to disable the button.
 
 ## See Also
 
-- [func display()](sfauthorizationpluginview/display.md)
+### Communicating with the Authorization Plug-in
+- [func display()](./display%28%29.md)
   Displays the user interface provided by the authorization plug-in view subclass.
-- [func update()](sfauthorizationpluginview/update.md)
+- [func update()](./update%28%29.md)
   Tells the authorization plug-in to get and display the appropriate view in the authorization plug-in’s user interface.
 
 

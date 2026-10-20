@@ -1,7 +1,8 @@
 # tag(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the unique tag value of this piece of map content.
 
@@ -11,7 +12,7 @@ Sets the unique tag value of this piece of map content.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -33,7 +34,7 @@ A `ForEach` automatically applies a default tag to each enumerated view using th
 
 ## Parameters
 
-- `tag`: A [`Hashable`](https://developer.apple.com/documentation/swift/hashable) value to use as the map content’s tag.
+- `tag`: A [`Hashable`](../../Swift/hashable.md) value to use as the map content’s tag.
 
 
 ---

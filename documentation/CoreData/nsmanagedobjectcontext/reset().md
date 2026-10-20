@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the context to its base state.
 
@@ -10,7 +11,7 @@ Returns the context to its base state.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Returns the context to its base state.
 func reset()
 ```
 
+```objc
+- (void) reset;
+```
+
 ## Mentions
 
-- [Accessing data when the store changes](accessing-data-when-the-store-changes.md)
+- [Accessing data when the store changes](../accessing-data-when-the-store-changes.md)
 
 #### Discussion
 
@@ -30,15 +35,17 @@ All the receiver’s managed objects are “forgotten.” If you use this method
 
 ## See Also
 
-- [var stalenessInterval: TimeInterval](nsmanagedobjectcontext/stalenessinterval.md)
+### Related Documentation
+- [var stalenessInterval: TimeInterval](./stalenessinterval.md)
   The maximum length of time that may have elapsed since the store previously fetched data before fulfilling a fault issues a new fetch.
-- [var undoManager: UndoManager?](nsmanagedobjectcontext/undomanager.md)
+### Undoing changes
+- [var undoManager: UndoManager?](./undomanager.md)
   The object that provides undo support for the context.
-- [func undo()](nsmanagedobjectcontext/undo.md)
+- [func undo()](./undo%28%29.md)
   Sends an undo message to the context’s undo manager, asking it to reverse the latest uncommitted changes applied to objects in the object graph.
-- [func redo()](nsmanagedobjectcontext/redo.md)
+- [func redo()](./redo%28%29.md)
   Sends a redo message to the context’s undo manager, asking it to reverse the latest undo operation applied to objects in the object graph.
-- [func rollback()](nsmanagedobjectcontext/rollback.md)
+- [func rollback()](./rollback%28%29.md)
   Removes everything from the undo stack, discards all insertions and deletions, and restores updated objects to their last committed values.
 
 

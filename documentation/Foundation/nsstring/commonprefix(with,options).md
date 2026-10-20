@@ -1,7 +1,8 @@
 # commonPrefix(with:options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string containing characters the receiver and a given string have in common, starting from the beginning of each up to the first characters that aren’t equivalent.
 
@@ -20,6 +21,10 @@ Returns a string containing characters the receiver and a given string have in c
 func commonPrefix(with str: String, options mask: NSString.CompareOptions = []) -> String
 ```
 
+```objc
+- (NSString *) commonPrefixWithString:(NSString *) str options:(NSStringCompareOptions) mask;
+```
+
 #### Return Value
 
 A string containing characters the receiver and `aString` have in common, starting from the beginning of each up to the first characters that aren’t equivalent.
@@ -31,11 +36,12 @@ The returned string is based on the characters of the receiver. For example, if 
 ## Parameters
 
 - `str`: The string with which to compare the receiver.
-- `mask`: Options for the comparison. The following search options may be specified by combining them with the C bitwise `OR` operator: `NSCaseInsensitiveSearch`, `NSLiteralSearch`. See [`String Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i) for details on these options.
+- `mask`: Options for the comparison. The following search options may be specified by combining them with the C bitwise `OR` operator: `NSCaseInsensitiveSearch`, `NSLiteralSearch`. See [String Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Strings/introStrings.html#//apple_ref/doc/uid/10000035i) for details on these options.
 
 ## See Also
 
-- [func hasPrefix(String) -> Bool](nsstring/hasprefix(_:).md)
+### Related Documentation
+- [func hasPrefix(String) -> Bool](./hasprefix%28_%29.md)
   Returns a Boolean value that indicates whether a given string matches the beginning characters of the receiver.
 
 

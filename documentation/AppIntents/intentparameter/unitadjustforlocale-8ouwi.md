@@ -1,7 +1,8 @@
 # unitAdjustForLocale
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var unitAdjustForLocale: Bool? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitLength>`.
+
 ## See Also
 
-- [var unit: IntentParameter<Value>.Length?](intentparameter/unit-9xzg4.md)
-- [IntentParameter.Length](intentparameter/length.md)
-- [var defaultUnit: IntentParameter<Value>.Length?](intentparameter/defaultunit-2blhs.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-1r83r.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Length?](./unit-9xzg4.md)
+- [IntentParameter.Length](./length.md)
+- [var defaultUnit: IntentParameter<Value>.Length?](./defaultunit-2blhs.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-1r83r.md)
 
 
 ---

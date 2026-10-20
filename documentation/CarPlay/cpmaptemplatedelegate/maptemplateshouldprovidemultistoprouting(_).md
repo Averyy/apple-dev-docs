@@ -1,7 +1,8 @@
 # mapTemplateShouldProvideMultiStopRouting(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines if the template should provide UI for multi-stop routing while actively navigating, including the ability to add and remove stops.
 
@@ -14,6 +15,10 @@ Determines if the template should provide UI for multi-stop routing while active
 
 ```swift
 optional func mapTemplateShouldProvideMultiStopRouting(_ mapTemplate: CPMapTemplate) -> Bool
+```
+
+```objc
+- (BOOL) mapTemplateShouldProvideMultiStopRouting:(CPMapTemplate *) mapTemplate;
 ```
 
 #### Return Value

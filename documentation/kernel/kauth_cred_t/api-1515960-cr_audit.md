@@ -1,14 +1,15 @@
 # cr_audit
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 struct au_session cr_audit;
 ```
 

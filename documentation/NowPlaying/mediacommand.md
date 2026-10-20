@@ -1,7 +1,8 @@
 # MediaCommand
 
 **Framework**: Now Playing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A command that describes a media control action for a Now Playing session.
 
@@ -22,7 +23,7 @@ struct MediaCommand
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](./publishing-media-sessions.md)
 
 #### Overview
 
@@ -39,50 +40,51 @@ var commands: [MediaCommand] {[
 ## Topics
 
 ### Instance Methods
-- [func enabled(Bool) -> MediaCommand](mediacommand/enabled(_:).md)
+- [func enabled(Bool) -> MediaCommand](./mediacommand/enabled%28_%29.md)
   Sets the enabled state for this command.
 ### Type Methods
-- [static func changePlaybackRate(supported: [Float], (Float) async throws -> Void) -> MediaCommand](mediacommand/changeplaybackrate(supported:_:).md)
+- [static func changePlaybackRate(supported: [Float], (Float) async throws -> Void) -> MediaCommand](./mediacommand/changeplaybackrate%28supported,_%29.md)
   Creates a command that changes the playback rate of the media.
-- [static func changeRepeatMode(current: MediaCommand.RepeatMode, supported: [MediaCommand.RepeatMode]?, (MediaCommand.RepeatMode) async throws -> Void) -> MediaCommand](mediacommand/changerepeatmode(current:supported:_:).md)
+- [static func changeRepeatMode(current: MediaCommand.RepeatMode, supported: [MediaCommand.RepeatMode]?, (MediaCommand.RepeatMode) async throws -> Void) -> MediaCommand](./mediacommand/changerepeatmode%28current,supported,_%29.md)
   Creates a command that changes the repeat mode for media playback.
-- [static func changeShuffleMode(current: MediaCommand.ShuffleMode, supported: [MediaCommand.ShuffleMode]?, (MediaCommand.ShuffleMode) async throws -> Void) -> MediaCommand](mediacommand/changeshufflemode(current:supported:_:).md)
+- [static func changeShuffleMode(current: MediaCommand.ShuffleMode, supported: [MediaCommand.ShuffleMode]?, (MediaCommand.ShuffleMode) async throws -> Void) -> MediaCommand](./mediacommand/changeshufflemode%28current,supported,_%29.md)
   Creates a command that changes the shuffle mode for media playback.
-- [static func feedback(title: String?, shortTitle: String?, status: MediaCommand.FeedbackStatus, (MediaCommand.FeedbackStatus) async throws -> Void) -> MediaCommand](mediacommand/feedback(title:shorttitle:status:_:).md)
+- [static func feedback(title: String?, shortTitle: String?, status: MediaCommand.FeedbackStatus, (MediaCommand.FeedbackStatus) async throws -> Void) -> MediaCommand](./mediacommand/feedback%28title,shorttitle,status,_%29.md)
   Creates a command that handles user feedback (positive, neutral, or negative) for the current content.
-- [static func next(() async throws -> Void) -> MediaCommand](mediacommand/next(_:).md)
+- [static func next(() async throws -> Void) -> MediaCommand](./mediacommand/next%28_%29.md)
   Creates a command that advances to the next track in the playback queue.
-- [static func pause(() async throws -> Void) -> MediaCommand](mediacommand/pause(_:).md)
+- [static func pause(() async throws -> Void) -> MediaCommand](./mediacommand/pause%28_%29.md)
   Creates a command that pauses media playback.
-- [static func play(() async throws -> Void) -> MediaCommand](mediacommand/play(_:).md)
+- [static func play(() async throws -> Void) -> MediaCommand](./mediacommand/play%28_%29.md)
   Creates a command that starts media playback.
-- [static func previous(() async throws -> Void) -> MediaCommand](mediacommand/previous(_:).md)
+- [static func previous(() async throws -> Void) -> MediaCommand](./mediacommand/previous%28_%29.md)
   Creates a command that returns to the previous track in the playback queue.
-- [static func seekBackward(beginAction: () async throws -> Void, endAction: () async throws -> Void) -> MediaCommand](mediacommand/seekbackward(beginaction:endaction:).md)
+- [static func seekBackward(beginAction: () async throws -> Void, endAction: () async throws -> Void) -> MediaCommand](./mediacommand/seekbackward%28beginaction,endaction%29.md)
   Creates a command that rewinds through the media.
-- [static func seekForward(beginAction: () async throws -> Void, endAction: () async throws -> Void) -> MediaCommand](mediacommand/seekforward(beginaction:endaction:).md)
+- [static func seekForward(beginAction: () async throws -> Void, endAction: () async throws -> Void) -> MediaCommand](./mediacommand/seekforward%28beginaction,endaction%29.md)
   Creates a command that fast-forwards through the media.
-- [static func seekToPosition((TimeInterval) async throws -> Void) -> MediaCommand](mediacommand/seektoposition(_:).md)
+- [static func seekToPosition((TimeInterval) async throws -> Void) -> MediaCommand](./mediacommand/seektoposition%28_%29.md)
   Creates a command that seeks to a specific position in the media.
-- [static func skipBackward(preferredIntervals: [TimeInterval], (TimeInterval) async throws -> Void) -> MediaCommand](mediacommand/skipbackward(preferredintervals:_:).md)
+- [static func skipBackward(preferredIntervals: [TimeInterval], (TimeInterval) async throws -> Void) -> MediaCommand](./mediacommand/skipbackward%28preferredintervals,_%29.md)
   Creates a command that skips backward in the media by a specified time interval.
-- [static func skipForward(preferredIntervals: [TimeInterval], (TimeInterval) async throws -> Void) -> MediaCommand](mediacommand/skipforward(preferredintervals:_:).md)
+- [static func skipForward(preferredIntervals: [TimeInterval], (TimeInterval) async throws -> Void) -> MediaCommand](./mediacommand/skipforward%28preferredintervals,_%29.md)
   Creates a command that skips forward in the media by a specified time interval.
-- [static func stop(() async throws -> Void) -> MediaCommand](mediacommand/stop(_:).md)
+- [static func stop(() async throws -> Void) -> MediaCommand](./mediacommand/stop%28_%29.md)
   Creates a command that stops media playback.
-- [static func togglePlayPause(() async throws -> Void) -> MediaCommand](mediacommand/toggleplaypause(_:).md)
+- [static func togglePlayPause(() async throws -> Void) -> MediaCommand](./mediacommand/toggleplaypause%28_%29.md)
   Creates a command that toggles between play and pause states.
 ### Enumerations
-- [MediaCommand.FeedbackStatus](mediacommand/feedbackstatus.md)
+- [MediaCommand.FeedbackStatus](./mediacommand/feedbackstatus.md)
   The feedback status for a media item.
-- [MediaCommand.RepeatMode](mediacommand/repeatmode.md)
+- [MediaCommand.RepeatMode](./mediacommand/repeatmode.md)
   The repeat mode for media playback.
-- [MediaCommand.ShuffleMode](mediacommand/shufflemode.md)
+- [MediaCommand.ShuffleMode](./mediacommand/shufflemode.md)
   The shuffle mode for media playback.
 
 ## See Also
 
-- [func enabled(Bool) -> MediaCommand](mediacommand/enabled(_:).md)
+### Creating commands
+- [func enabled(Bool) -> MediaCommand](./mediacommand/enabled%28_%29.md)
   Sets the enabled state for this command.
 
 

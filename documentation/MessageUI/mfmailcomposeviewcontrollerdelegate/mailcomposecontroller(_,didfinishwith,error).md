@@ -1,7 +1,8 @@
 # mailComposeController(_:didFinishWith:error:)
 
 **Framework**: Message UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user wants to dismiss the mail composition view.
 
@@ -15,6 +16,10 @@ Tells the delegate that the user wants to dismiss the mail composition view.
 
 ```swift
 optional func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: (any Error)?)
+```
+
+```objc
+- (void) mailComposeController:(MFMailComposeViewController *) controller didFinishWithResult:(MFMailComposeResult) result error:(NSError *) error;
 ```
 
 #### Discussion
@@ -31,7 +36,8 @@ If the user has opted to send the email created by this interface, that email sh
 
 ## See Also
 
-- [enum MFMailComposeResult](mfmailcomposeresult.md)
+### Responding to Email Completion
+- [enum MFMailComposeResult](../mfmailcomposeresult.md)
   Result codes returned when the mail composition interface is dismissed.
 
 

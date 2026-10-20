@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,12 @@
 
 ```swift
 subscript<T>(componentType: T.Type) -> T? where T : _ImplicitlyAnimatableBuiltinComponent { get set }
+```
+
+**Other overloads**:
+
+```swift
+subscript<T>(type: T.Type) -> T? where T : Component { get set }
 ```
 
 

@@ -1,12 +1,13 @@
 # getRow(_:column:of:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches the receiver for the specified cell and returns the row and column of the cell
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Searches the receiver for the specified cell and returns the row and column of t
 func getRow(_ row: UnsafeMutablePointer<Int>, column col: UnsafeMutablePointer<Int>, of cell: NSCell) -> Bool
 ```
 
+```objc
+- (BOOL) getRow:(NSInteger *) row column:(NSInteger *) col ofCell:(NSCell *) cell;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the cell is one of the cells in the receiver, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the cell is one of the cells in the receiver, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -30,7 +35,8 @@ func getRow(_ row: UnsafeMutablePointer<Int>, column col: UnsafeMutablePointer<I
 
 ## See Also
 
-- [func getRow(UnsafeMutablePointer<Int>, column: UnsafeMutablePointer<Int>, for: NSPoint) -> Bool](nsmatrix/getrow(_:column:for:).md)
+### Finding Matrix Coordinates
+- [func getRow(UnsafeMutablePointer<Int>, column: UnsafeMutablePointer<Int>, for: NSPoint) -> Bool](./getrow%28_,column,for%29.md)
   Indicates whether the specified point lies within one of the cells of the matrix and returns the location of the cell within which the point lies.
 
 

@@ -1,18 +1,25 @@
 # mediaObjects(forIdentifiers:)
 
 **Framework**: Media Library  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the media objects with the specified identifiers.
 
 **Availability**:
 - Mac Catalyst 13.0+
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.15
+
+> **Deprecated**: MediaLibrary.framework will be removed in a future OS version. Use Photos.framework or iTunesLibrary.framework instead.
 
 ## Declaration
 
 ```swift
 func mediaObjects(forIdentifiers mediaObjectIdentifiers: [String]) -> [String : MLMediaObject]
+```
+
+```objc
+- (NSDictionary<NSString *,MLMediaObject *> *) mediaObjectsForIdentifiers:(NSArray<NSString *> *) mediaObjectIdentifiers;
 ```
 
 #### Return Value
@@ -29,11 +36,12 @@ The media source must have finished loading before this method returns valid dat
 
 ## See Also
 
-- [func mediaGroup(forIdentifier: String) -> MLMediaGroup?](mlmediasource/mediagroup(foridentifier:).md)
+### Accessing Media
+- [func mediaGroup(forIdentifier: String) -> MLMediaGroup?](./mediagroup%28foridentifier%29.md)
   Returns the media group with the specified identifier.
-- [func mediaGroups(forIdentifiers: [String]) -> [String : MLMediaGroup]](mlmediasource/mediagroups(foridentifiers:).md)
+- [func mediaGroups(forIdentifiers: [String]) -> [String : MLMediaGroup]](./mediagroups%28foridentifiers%29.md)
   Returns the media groups with the specified identifiers.
-- [func mediaObject(forIdentifier: String) -> MLMediaObject?](mlmediasource/mediaobject(foridentifier:).md)
+- [func mediaObject(forIdentifier: String) -> MLMediaObject?](./mediaobject%28foridentifier%29.md)
   Returns the media object with the specified identifier.
 
 

@@ -1,17 +1,20 @@
 # kCFURLUbiquitousItemIsDownloadedKey
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A `CFBoolean` value that tells whether there is local data present for the item. (read-only)
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 5.0+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 5.0+ - Deprecated in 7.0
+- iPadOS 5.0+ - Deprecated in 7.0
+- Mac Catalyst 5.0+ - Deprecated in 7.0
+- tvOS 9.0+ - Deprecated in 9.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use kCFURLUbiquitousItemDownloadingStatusKey instead
 
 ## Declaration
 
@@ -19,20 +22,25 @@ A `CFBoolean` value that tells whether there is local data present for the item.
 let kCFURLUbiquitousItemIsDownloadedKey: CFString!
 ```
 
+```c
+extern CFStringRef const kCFURLUbiquitousItemIsDownloadedKey;
+```
+
 ## See Also
 
-- [let kCFURLIsUbiquitousItemKey: CFString!](kcfurlisubiquitousitemkey.md)
+### Constants
+- [let kCFURLIsUbiquitousItemKey: CFString!](./kcfurlisubiquitousitemkey.md)
   A `CFBoolean` value that tells whether the item is synced to the cloud. (read-only)
-- [let kCFURLUbiquitousItemHasUnresolvedConflictsKey: CFString!](kcfurlubiquitousitemhasunresolvedconflictskey.md)
+- [let kCFURLUbiquitousItemHasUnresolvedConflictsKey: CFString!](./kcfurlubiquitousitemhasunresolvedconflictskey.md)
   A `CFBoolean` value that tells whether the item has conflicts outstanding. (read-only)
-- [let kCFURLUbiquitousItemIsDownloadingKey: CFString!](kcfurlubiquitousitemisdownloadingkey.md)
+- [let kCFURLUbiquitousItemIsDownloadingKey: CFString!](./kcfurlubiquitousitemisdownloadingkey.md)
   A `CFBoolean` value that tells whether data for the item is being downloaded. (read-only)
-- [let kCFURLUbiquitousItemIsUploadedKey: CFString!](kcfurlubiquitousitemisuploadedkey.md)
+- [let kCFURLUbiquitousItemIsUploadedKey: CFString!](./kcfurlubiquitousitemisuploadedkey.md)
   A `CFBoolean` value that tells whether there is data present in the cloud for this item. (read-only)
-- [let kCFURLUbiquitousItemIsUploadingKey: CFString!](kcfurlubiquitousitemisuploadingkey.md)
+- [let kCFURLUbiquitousItemIsUploadingKey: CFString!](./kcfurlubiquitousitemisuploadingkey.md)
   A `CFBoolean` value that tells whether data for the item is being uploaded. (read-only)
-- [let kCFURLUbiquitousItemPercentDownloadedKey: CFString!](kcfurlubiquitousitempercentdownloadedkey.md)
-- [let kCFURLUbiquitousItemPercentUploadedKey: CFString!](kcfurlubiquitousitempercentuploadedkey.md)
+- [let kCFURLUbiquitousItemPercentDownloadedKey: CFString!](./kcfurlubiquitousitempercentdownloadedkey.md)
+- [let kCFURLUbiquitousItemPercentUploadedKey: CFString!](./kcfurlubiquitousitempercentuploadedkey.md)
 
 
 ---

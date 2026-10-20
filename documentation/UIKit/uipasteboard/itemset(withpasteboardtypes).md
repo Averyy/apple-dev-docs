@@ -1,7 +1,8 @@
 # itemSet(withPasteboardTypes:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index set identifying pasteboard items having the specified representation types.
 
@@ -17,13 +18,17 @@ Returns an index set identifying pasteboard items having the specified represent
 func itemSet(withPasteboardTypes pasteboardTypes: [String]) -> IndexSet?
 ```
 
+```objc
+- (NSIndexSet *) itemSetWithPasteboardTypes:(NSArray<NSString *> *) pasteboardTypes;
+```
+
 #### Return Value
 
 An index set with each integer positionally identifying a pasteboard item that has one of the representation types specified in `pasteboardTypes`.
 
 #### Discussion
 
-You can pass the index set returned in this method in a call to [`data(forPasteboardType:inItemSet:)`](uipasteboard/data(forpasteboardtype:initemset:).md) or [`values(forPasteboardType:inItemSet:)`](uipasteboard/values(forpasteboardtype:initemset:).md) to get the data in the indicated pasteboard items.
+You can pass the index set returned in this method in a call to [`data(forPasteboardType:inItemSet:)`](./data%28forpasteboardtype,initemset%29.md) or [`values(forPasteboardType:inItemSet:)`](./values%28forpasteboardtype,initemset%29.md) to get the data in the indicated pasteboard items.
 
 ## Parameters
 
@@ -31,15 +36,17 @@ You can pass the index set returned in this method in a call to [`data(forPasteb
 
 ## See Also
 
-- [var numberOfItems: Int](uipasteboard/numberofitems.md)
+### Related Documentation
+- [var numberOfItems: Int](./numberofitems.md)
   The number of items for the pasteboard.
-- [var types: [String]](uipasteboard/types.md)
+### Determining types of pasteboard items
+- [var types: [String]](./types.md)
   The types of the first item on the pasteboard.
-- [func types(forItemSet: IndexSet?) -> [[String]]?](uipasteboard/types(foritemset:).md)
+- [func types(forItemSet: IndexSet?) -> [[String]]?](./types%28foritemset%29.md)
   Returns an array of representation types for each specified pasteboard item.
-- [func contains(pasteboardTypes: [String]) -> Bool](uipasteboard/contains(pasteboardtypes:).md)
+- [func contains(pasteboardTypes: [String]) -> Bool](./contains%28pasteboardtypes%29.md)
   Returns whether the pasteboard holds data of the specified representation type.
-- [func contains(pasteboardTypes: [String], inItemSet: IndexSet?) -> Bool](uipasteboard/contains(pasteboardtypes:initemset:).md)
+- [func contains(pasteboardTypes: [String], inItemSet: IndexSet?) -> Bool](./contains%28pasteboardtypes,initemset%29.md)
   Returns whether the specified pasteboard items contain data of the given representation types.
 
 

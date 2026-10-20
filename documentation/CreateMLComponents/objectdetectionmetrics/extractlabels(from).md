@@ -1,7 +1,8 @@
 # extractLabels(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Extracts all the labels from a list of annotations.
 

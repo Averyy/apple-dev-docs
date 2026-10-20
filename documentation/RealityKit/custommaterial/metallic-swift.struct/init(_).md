@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a metallic object from a physically based material’s metallic property.
 
@@ -20,11 +21,11 @@ init(_ value: PhysicallyBasedMaterial.Metallic)
 
 #### Discussion
 
-This initializer creates a new object by copying the values from an existing [`PhysicallyBasedMaterial.Metallic`](physicallybasedmaterial/metallic-swift.struct.md) object.
+This initializer creates a new object by copying the values from an existing [`PhysicallyBasedMaterial.Metallic`](../../physicallybasedmaterial/metallic-swift.struct.md) object.
 
-To render an entity with reflectiveness, set [`lightingModel`](custommaterial/lightingmodel-swift.property.md) to [`CustomMaterial.LightingModel.lit`](custommaterial/lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md), and call `params.surface().set_metallic()` from its surface shader function.
+To render an entity with reflectiveness, set [`lightingModel`](../lightingmodel-swift.property.md) to [`CustomMaterial.LightingModel.lit`](../lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](../lightingmodel-swift.enum/clearcoat.md), and call `params.surface().set_metallic()` from its surface shader function.
 
-To achieve the same metallic behavior as [`PhysicallyBasedMaterial`](physicallybasedmaterial.md), the surface shader function multiplies metallic scale by the sampled value from the texture, as the following Metal code demonstrates:
+To achieve the same metallic behavior as [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md), the surface shader function multiplies metallic scale by the sampled value from the texture, as the following Metal code demonstrates:
 
 ```other
     // Retrieve the metallic scale from the CustomMaterial.
@@ -47,7 +48,7 @@ To achieve the same metallic behavior as [`PhysicallyBasedMaterial`](physicallyb
     params.surface().set_metallic(metallic);
 ```
 
-For more information on creating custom materials and writing shader functions, see [`Modifying RealityKit rendering using custom materials`](modifying-realitykit-rendering-using-custom-materials.md).
+For more information on creating custom materials and writing shader functions, see [Modifying RealityKit rendering using custom materials](../../modifying-realitykit-rendering-using-custom-materials.md).
 
 ## Parameters
 
@@ -55,9 +56,10 @@ For more information on creating custom materials and writing shader functions, 
 
 ## See Also
 
-- [init(floatLiteral: Float)](custommaterial/metallic-swift.struct/init(floatliteral:).md)
+### Creating a metallic object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an object from a single value.
-- [init(scale: Float, texture: CustomMaterial.Texture?)](custommaterial/metallic-swift.struct/init(scale:texture:).md)
+- [init(scale: Float, texture: CustomMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates an object from a color or texture.
 
 

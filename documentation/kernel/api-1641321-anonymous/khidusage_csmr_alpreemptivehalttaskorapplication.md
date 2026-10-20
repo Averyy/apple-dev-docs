@@ -1,14 +1,15 @@
 # kHIDUsage_Csmr_ALPreemptiveHaltTaskOrApplication
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Csmr_ALPreemptiveHaltTaskOrApplication = 0x1A5
 ```
 

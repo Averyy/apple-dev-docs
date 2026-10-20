@@ -1,7 +1,8 @@
 # ComputeGraphComponent.SimulationState.playing
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The simulation advances each frame at its configured rate.
 

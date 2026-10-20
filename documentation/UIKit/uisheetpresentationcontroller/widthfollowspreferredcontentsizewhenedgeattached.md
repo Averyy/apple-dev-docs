@@ -1,7 +1,8 @@
 # widthFollowsPreferredContentSizeWhenEdgeAttached
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the sheet’s width matches its view controller’s preferred content size.
 
@@ -17,21 +18,26 @@ A Boolean value that determines whether the sheet’s width matches its view con
 var widthFollowsPreferredContentSizeWhenEdgeAttached: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL widthFollowsPreferredContentSizeWhenEdgeAttached;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false), which means the sheet’s width equals the width of its container’s safe area. Set this value to [`true`](https://developer.apple.com/documentation/swift/true) to use your view controller’s [`preferredContentSize`](uiviewcontroller/preferredcontentsize.md) to determine the width of the sheet instead.
+The default value is [`false`](../../Swift/false.md), which means the sheet’s width equals the width of its container’s safe area. Set this value to [`true`](../../Swift/true.md) to use your view controller’s [`preferredContentSize`](../uiviewcontroller/preferredcontentsize.md) to determine the width of the sheet instead.
 
-This property doesn’t have an effect when the sheet is in a compact-width and regular-height size class, or when [`prefersEdgeAttachedInCompactHeight`](uisheetpresentationcontroller/prefersedgeattachedincompactheight.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+This property doesn’t have an effect when the sheet is in a compact-width and regular-height size class, or when [`prefersEdgeAttachedInCompactHeight`](./prefersedgeattachedincompactheight.md) is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var prefersGrabberVisible: Bool](uisheetpresentationcontroller/prefersgrabbervisible.md)
+### Managing the appearance
+- [var prefersGrabberVisible: Bool](./prefersgrabbervisible.md)
   A Boolean value that determines whether the sheet shows a grabber at the top.
-- [var prefersPageSizing: Bool](uisheetpresentationcontroller/preferspagesizing.md)
+- [var prefersPageSizing: Bool](./preferspagesizing.md)
   A Boolean value that indicates whether the sheet sizes itself for readable content.
-- [var prefersEdgeAttachedInCompactHeight: Bool](uisheetpresentationcontroller/prefersedgeattachedincompactheight.md)
+- [var prefersEdgeAttachedInCompactHeight: Bool](./prefersedgeattachedincompactheight.md)
   A Boolean value that determines whether the sheet attaches to the bottom edge of the screen in a compact-height size class.
-- [var preferredCornerRadius: CGFloat?](uisheetpresentationcontroller/preferredcornerradius-3mb5.md)
+- [var preferredCornerRadius: CGFloat?](./preferredcornerradius-3mb5.md)
   The corner radius that the sheet attempts to present with.
 
 

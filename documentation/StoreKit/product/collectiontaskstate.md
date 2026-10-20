@@ -1,7 +1,8 @@
 # Product.CollectionTaskState
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The state of a task that loads a collection of products in the background.
 
@@ -23,25 +24,26 @@ enum CollectionTaskState
 ## Topics
 
 ### Collection task states
-- [Product.CollectionTaskState.loading](product/collectiontaskstate/loading.md)
+- [Product.CollectionTaskState.loading](./collectiontaskstate/loading.md)
   The task is loading the collection in the background.
-- [Product.CollectionTaskState.success(_:unavailable:)](product/collectiontaskstate/success(_:unavailable:).md)
+- [Product.CollectionTaskState.success(_:unavailable:)](./collectiontaskstate/success%28_,unavailable%29.md)
   The task completed loading the collection.
-- [Product.CollectionTaskState.failure(_:)](product/collectiontaskstate/failure(_:).md)
+- [Product.CollectionTaskState.failure(_:)](./collectiontaskstate/failure%28_%29.md)
   The task failed with an error.
 ### Instance Properties
-- [var products: [Product]?](product/collectiontaskstate/products.md)
+- [var products: [Product]?](./collectiontaskstate/products.md)
   An array of available products if the task was successful.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Product.TaskState](product/taskstate.md)
+### Loading products
+- [Product.TaskState](./taskstate.md)
   The state of a task that loads a product in the background.
 
 

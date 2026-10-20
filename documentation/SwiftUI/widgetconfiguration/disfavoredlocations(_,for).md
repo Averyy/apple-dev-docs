@@ -1,7 +1,8 @@
 # disfavoredLocations(_:for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the disfavored locations for a widget.
 
@@ -44,11 +45,12 @@ widgetConfig
 
 ## See Also
 
-- [func supportedFamilies([WidgetFamily]) -> some WidgetConfiguration](widgetconfiguration/supportedfamilies(_:).md)
+### Setting the appearance
+- [func supportedFamilies([WidgetFamily]) -> some WidgetConfiguration](./supportedfamilies%28_%29.md)
   Sets the sizes that a widget supports.
-- [func contentMarginsDisabled() -> some WidgetConfiguration](widgetconfiguration/contentmarginsdisabled.md)
+- [func contentMarginsDisabled() -> some WidgetConfiguration](./contentmarginsdisabled%28%29.md)
   Disable default content margins.
-- [func containerBackgroundRemovable(Bool) -> some WidgetConfiguration](widgetconfiguration/containerbackgroundremovable(_:).md)
+- [func containerBackgroundRemovable(Bool) -> some WidgetConfiguration](./containerbackgroundremovable%28_%29.md)
   A modifier that marks the background of a widget as removable.
 
 

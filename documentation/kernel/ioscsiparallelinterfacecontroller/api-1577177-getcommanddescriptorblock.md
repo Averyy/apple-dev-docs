@@ -1,14 +1,15 @@
 # GetCommandDescriptorBlock
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 bool GetCommandDescriptorBlock(SCSIParallelTaskIdentifier parallelTask, SCSICommandDescriptorBlock *cdbData);
 ```
 

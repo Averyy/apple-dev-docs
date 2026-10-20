@@ -1,7 +1,8 @@
 # setRelativeHeight(_:withAdjustment:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the height of the object relative to its container.
 
@@ -12,6 +13,10 @@ Sets the height of the object relative to its container.
 
 ```swift
 func setRelativeHeight(_ height: CGFloat, withAdjustment adjustment: CGFloat)
+```
+
+```objc
+- (void) setRelativeHeight:(CGFloat) height withAdjustment:(CGFloat) adjustment;
 ```
 
 #### Discussion
@@ -25,15 +30,16 @@ You can’t use this method to alter the height of tables or separator items. Ch
 
 ## See Also
 
-- [func setWidth(CGFloat)](wkinterfaceobject/setwidth(_:).md)
+### Changing an Object’s Size
+- [func setWidth(CGFloat)](./setwidth%28_%29.md)
   Sets the absolute width (in points) of the object.
-- [func setHeight(CGFloat)](wkinterfaceobject/setheight(_:).md)
+- [func setHeight(CGFloat)](./setheight%28_%29.md)
   Sets the absolute height (in points) of the object.
-- [func setRelativeWidth(CGFloat, withAdjustment: CGFloat)](wkinterfaceobject/setrelativewidth(_:withadjustment:).md)
+- [func setRelativeWidth(CGFloat, withAdjustment: CGFloat)](./setrelativewidth%28_,withadjustment%29.md)
   Sets the width of the object relative to its container.
-- [func sizeToFitWidth()](wkinterfaceobject/sizetofitwidth.md)
+- [func sizeToFitWidth()](./sizetofitwidth%28%29.md)
   Sets the width of the object to fit its current content.
-- [func sizeToFitHeight()](wkinterfaceobject/sizetofitheight.md)
+- [func sizeToFitHeight()](./sizetofitheight%28%29.md)
   Sets the height of the object so that it fills the available vertical space.
 
 

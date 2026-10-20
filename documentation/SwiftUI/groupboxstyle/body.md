@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 A view that represents the body of a group box.
@@ -21,9 +22,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](groupboxstyle/makebody(configuration:).md)
+### Creating custom group box styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view representing the body of a group box.
-- [GroupBoxStyle.Configuration](groupboxstyle/configuration.md)
+- [GroupBoxStyle.Configuration](./configuration.md)
   The properties of a group box instance.
 
 

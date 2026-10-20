@@ -1,7 +1,8 @@
 # securityDomainAID
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the security domain you use to install the instance.
 
@@ -21,7 +22,8 @@ Use this identifier when selecting the security domain to perform data transceiv
 
 ## See Also
 
-- [let securityDomainKeyInfo: Data](credentialsession/credential/instanceinfo/securitydomainkeyinfo.md)
+### Creating a secure channel
+- [let securityDomainKeyInfo: Data](./securitydomainkeyinfo.md)
   A data blob which contains the security domain On-Board Generated Key (OBGK).
 
 

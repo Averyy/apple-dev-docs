@@ -1,7 +1,8 @@
 # metadataModificationDate
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,21 +19,22 @@ static let metadataModificationDate: SearchableItemAttribute
 
 ## See Also
 
-- [static let alternateNames: SearchableItemAttribute](searchableitemattribute/alternatenames.md)
-- [static let contentType: SearchableItemAttribute](searchableitemattribute/contenttype.md)
-- [static let contentTypeTree: SearchableItemAttribute](searchableitemattribute/contenttypetree.md)
-- [static let contentURL: SearchableItemAttribute](searchableitemattribute/contenturl.md)
-- [static let darkThumbnailURL: SearchableItemAttribute](searchableitemattribute/darkthumbnailurl.md)
-- [static let displayName: SearchableItemAttribute](searchableitemattribute/displayname.md)
-- [static let keywords: SearchableItemAttribute](searchableitemattribute/keywords.md)
-- [static let path: SearchableItemAttribute](searchableitemattribute/path.md)
-- [static let rankingHint: SearchableItemAttribute](searchableitemattribute/rankinghint.md)
-- [static let relatedUniqueIdentifier: SearchableItemAttribute](searchableitemattribute/relateduniqueidentifier.md)
-- [static let thumbnailData: SearchableItemAttribute](searchableitemattribute/thumbnaildata.md)
-- [static let thumbnailURL: SearchableItemAttribute](searchableitemattribute/thumbnailurl.md)
-- [static let title: SearchableItemAttribute](searchableitemattribute/title.md)
-- [static let domainIdentifier: SearchableItemAttribute](searchableitemattribute/domainidentifier.md)
-- [static let weakRelatedUniqueIdentifier: SearchableItemAttribute](searchableitemattribute/weakrelateduniqueidentifier.md)
+### Describing general attributes
+- [static let alternateNames: SearchableItemAttribute](./alternatenames.md)
+- [static let contentType: SearchableItemAttribute](./contenttype.md)
+- [static let contentTypeTree: SearchableItemAttribute](./contenttypetree.md)
+- [static let contentURL: SearchableItemAttribute](./contenturl.md)
+- [static let darkThumbnailURL: SearchableItemAttribute](./darkthumbnailurl.md)
+- [static let displayName: SearchableItemAttribute](./displayname.md)
+- [static let keywords: SearchableItemAttribute](./keywords.md)
+- [static let path: SearchableItemAttribute](./path.md)
+- [static let rankingHint: SearchableItemAttribute](./rankinghint.md)
+- [static let relatedUniqueIdentifier: SearchableItemAttribute](./relateduniqueidentifier.md)
+- [static let thumbnailData: SearchableItemAttribute](./thumbnaildata.md)
+- [static let thumbnailURL: SearchableItemAttribute](./thumbnailurl.md)
+- [static let title: SearchableItemAttribute](./title.md)
+- [static let domainIdentifier: SearchableItemAttribute](./domainidentifier.md)
+- [static let weakRelatedUniqueIdentifier: SearchableItemAttribute](./weakrelateduniqueidentifier.md)
 
 
 ---

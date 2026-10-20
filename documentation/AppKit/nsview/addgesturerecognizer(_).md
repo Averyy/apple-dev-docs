@@ -1,7 +1,8 @@
 # addGestureRecognizer(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches a gesture recognizer to the view.
 
@@ -14,6 +15,10 @@ Attaches a gesture recognizer to the view.
 func addGestureRecognizer(_ gestureRecognizer: NSGestureRecognizer)
 ```
 
+```objc
+- (void) addGestureRecognizer:(NSGestureRecognizer *) gestureRecognizer;
+```
+
 #### Discussion
 
 Attaching a gesture recognizer to a view defines the scope of the represented gesture, causing it to receive touches occurring only in the view or one of its subviews. The view establishes a strong reference to the specified gesture recognizer.
@@ -24,13 +29,14 @@ Attaching a gesture recognizer to a view defines the scope of the represented ge
 
 ## See Also
 
-- [var gestureRecognizers: [NSGestureRecognizer]](nsview/gesturerecognizers.md)
+### Managing gesture recognizers
+- [var gestureRecognizers: [NSGestureRecognizer]](./gesturerecognizers.md)
   The gesture recognize objects currently attached to the view.
-- [func removeGestureRecognizer(NSGestureRecognizer)](nsview/removegesturerecognizer(_:).md)
+- [func removeGestureRecognizer(NSGestureRecognizer)](./removegesturerecognizer%28_%29.md)
   Detaches a gesture recognizer from the view.
-- [var exclusiveGestureBehavior: NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.property.md)
+- [var exclusiveGestureBehavior: NSView.ExclusiveGestureBehavior](./exclusivegesturebehavior-swift.property.md)
   Declares whether gesture recognizers should be exclusive in this view and its subviews.
-- [NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.enum.md)
+- [NSView.ExclusiveGestureBehavior](./exclusivegesturebehavior-swift.enum.md)
   Exclusive gesture behavior
 
 

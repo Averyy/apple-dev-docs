@@ -1,7 +1,8 @@
 # showsImageFullHeight
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the element should be fill with the image.
 
@@ -14,6 +15,10 @@ A Boolean value indicating whether the element should be fill with the image.
 
 ```swift
 var showsImageFullHeight: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) BOOL showsImageFullHeight;
 ```
 
 #### Discussion

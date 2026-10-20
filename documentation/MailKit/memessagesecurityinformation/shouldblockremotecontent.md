@@ -1,7 +1,8 @@
 # shouldBlockRemoteContent
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -12,9 +13,14 @@
 var shouldBlockRemoteContent: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL shouldBlockRemoteContent;
+```
+
 ## See Also
 
-- [var localizedRemoteContentBlockingReason: String?](memessagesecurityinformation/localizedremotecontentblockingreason.md)
+### Instance Properties
+- [var localizedRemoteContentBlockingReason: String?](./localizedremotecontentblockingreason.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # TranslationPerformForURL(_:_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func TranslationPerformForURL(_ inTranslation: Translation!, _ inSourceURL: CFURL!, _ inDestinationURL: CFURL!, _ outTranslatedURL: UnsafeMutablePointer<Unmanaged<CFURL>?>!) -> OSStatus
+```
+
+```c
+OSStatus TranslationPerformForURL(TranslationRef inTranslation, CFURLRef inSourceURL, CFURLRef inDestinationURL, CFURLRef *outTranslatedURL);
 ```
 
 

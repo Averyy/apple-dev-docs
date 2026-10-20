@@ -1,16 +1,17 @@
 # UIFontDescriptor.AttributeName
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe font attributes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 4.0+
 
 ## Declaration
@@ -19,63 +20,68 @@ Constants that describe font attributes.
 struct AttributeName
 ```
 
+```c
+typedef NSString * UIFontDescriptorAttributeName;
+```
+
 ## Topics
 
 ### Constants
-- [static let cascadeList: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/cascadelist.md)
+- [static let cascadeList: UIFontDescriptor.AttributeName](./attributename/cascadelist.md)
   The cascading list attribute.
-- [static let characterSet: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/characterset.md)
+- [static let characterSet: UIFontDescriptor.AttributeName](./attributename/characterset.md)
   The character set attribute.
-- [static let face: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/face.md)
+- [static let face: UIFontDescriptor.AttributeName](./attributename/face.md)
   The font face attribute.
-- [static let family: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/family.md)
+- [static let family: UIFontDescriptor.AttributeName](./attributename/family.md)
   The font family attribute.
-- [static let featureSettings: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/featuresettings.md)
+- [static let featureSettings: UIFontDescriptor.AttributeName](./attributename/featuresettings.md)
   The font feature settings attribute.
-- [static let fixedAdvance: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/fixedadvance.md)
+- [static let fixedAdvance: UIFontDescriptor.AttributeName](./attributename/fixedadvance.md)
   The glyph advancement attribute.
-- [static let matrix: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/matrix.md)
+- [static let matrix: UIFontDescriptor.AttributeName](./attributename/matrix.md)
   The font’s transformation matrix attribute.
-- [static let name: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/name.md)
+- [static let name: UIFontDescriptor.AttributeName](./attributename/name.md)
   The font name attribute.
-- [static let size: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/size.md)
+- [static let size: UIFontDescriptor.AttributeName](./attributename/size.md)
   The font size attribute.
-- [static let textStyle: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/textstyle.md)
+- [static let textStyle: UIFontDescriptor.AttributeName](./attributename/textstyle.md)
   The text style attribute.
-- [static let traits: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/traits.md)
+- [static let traits: UIFontDescriptor.AttributeName](./attributename/traits.md)
   The font traits dictionary attribute.
-- [static let visibleName: UIFontDescriptor.AttributeName](uifontdescriptor/attributename/visiblename.md)
+- [static let visibleName: UIFontDescriptor.AttributeName](./attributename/visiblename.md)
   The font’s visible name attribute.
 ### Initializers
-- [init(rawValue: String)](uifontdescriptor/attributename/init(rawvalue:).md)
+- [init(rawValue: String)](./attributename/init%28rawvalue%29.md)
   Creates an attribute name with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIFont.TextStyle](uifont/textstyle.md)
+### Constants
+- [UIFont.TextStyle](../uifont/textstyle.md)
   Constants that describe the preferred styles for fonts.
-- [UIFontDescriptor.SystemDesign](uifontdescriptor/systemdesign.md)
+- [UIFontDescriptor.SystemDesign](./systemdesign.md)
   Constants that describe the system-defined typeface designs.
-- [UIFontDescriptor.SymbolicTraits](uifontdescriptor/symbolictraits-swift.struct.md)
+- [UIFontDescriptor.SymbolicTraits](./symbolictraits-swift.struct.md)
   Constants that describe the stylistic aspects of a font.
-- [UIFontDescriptor.Class](uifontdescriptor/class.md)
+- [UIFontDescriptor.Class](./class.md)
   Constants that classify certain stylistic qualities of the font.
-- [UIFontDescriptor.FeatureKey](uifontdescriptor/featurekey.md)
+- [UIFontDescriptor.FeatureKey](./featurekey.md)
   Keys for retrieving feature settings.
-- [UIFontDescriptor.TraitKey](uifontdescriptor/traitkey.md)
+- [UIFontDescriptor.TraitKey](./traitkey.md)
   Keys for retrieving the font descriptor’s trait information.
-- [UIFont.Weight](uifont/weight.md)
+- [UIFont.Weight](../uifont/weight.md)
   Constants that represent standard typeface styles.
-- [UIFont.Width](uifont/width.md)
+- [UIFont.Width](../uifont/width.md)
 
 
 ---

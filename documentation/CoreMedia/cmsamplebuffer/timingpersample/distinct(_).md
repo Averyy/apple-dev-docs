@@ -1,7 +1,8 @@
 # CMSampleBuffer.TimingPerSample.distinct(_:)
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Each sample has distinct timing.
 

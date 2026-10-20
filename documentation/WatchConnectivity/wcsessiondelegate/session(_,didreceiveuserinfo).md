@@ -1,7 +1,8 @@
 # session(_:didReceiveUserInfo:)
 
 **Framework**: Watch Connectivity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the session successfully received a data directory from its counterpart.
 
@@ -18,13 +19,17 @@ Tells the delegate that the session successfully received a data directory from 
 optional func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:])
 ```
 
+```objc
+- (void) session:(WCSession *) session didReceiveUserInfo:(NSDictionary<NSString *,id> *) userInfo;
+```
+
 #### Discussion
 
 The session object calls this method when it successfully receives a data dictionary from its counterpart. Implement this method to incorporate the data into the app’s content.
 
 The system calls this method on a background thread.
 
-> ⚠️ **Warning**:  Always test Watch Connectivity data transfers on paired devices. The system doesn’t call the [`session(_:didReceiveUserInfo:)`](wcsessiondelegate/session(_:didreceiveuserinfo:).md) method in Simulator.
+> ⚠️ **Warning**:  Always test Watch Connectivity data transfers on paired devices. The system doesn’t call the [`session(_:didReceiveUserInfo:)`](./session%28_,didreceiveuserinfo%29.md) method in Simulator.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ The system calls this method on a background thread.
 
 ## See Also
 
-- [func session(WCSession, didFinish: WCSessionUserInfoTransfer, error: (any Error)?)](wcsessiondelegate/session(_:didfinish:error:)-8627b.md)
+### Managing Data Dictionary Transfers
+- [func session(WCSession, didFinish: WCSessionUserInfoTransfer, error: (any Error)?)](./session%28_,didfinish,error%29-8627b.md)
   Tells the delegate that a data transfer operation has finished successfully or ended because of an error.
 
 

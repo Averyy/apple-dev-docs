@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 UInt64 _maxReadByteTransfer;
 ```
 
@@ -15,14 +15,15 @@ The maximum byte transfer allowed for read operations.
 
 ## See Also
 
-- [_writeProtected](ioblockstoragedriver/writeprotected.md)
-- [_removable](ioblockstoragedriver/removable.md)
-- [_mediaType](ioblockstoragedriver/mediatype.md)
-- [_mediaObject](ioblockstoragedriver/mediaobject.md)
-- [_mediaBlockSize](ioblockstoragedriver/mediablocksize.md)
-- [_maxWriteByteTransfer](ioblockstoragedriver/maxwritebytetransfer.md)
-- [_maxBlockNumber](ioblockstoragedriver/maxblocknumber.md)
-- [_ejectable](ioblockstoragedriver/ejectable.md)
+### Instance Variables
+- [_writeProtected](./writeprotected.md)
+- [_removable](./removable.md)
+- [_mediaType](./mediatype.md)
+- [_mediaObject](./mediaobject.md)
+- [_mediaBlockSize](./mediablocksize.md)
+- [_maxWriteByteTransfer](./maxwritebytetransfer.md)
+- [_maxBlockNumber](./maxblocknumber.md)
+- [_ejectable](./ejectable.md)
 
 
 ---

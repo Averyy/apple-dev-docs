@@ -1,7 +1,8 @@
 # NSFileProviderNamespacePolicy
 
 **Framework**: File Provider  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -16,27 +17,31 @@
 enum NSFileProviderNamespacePolicy
 ```
 
+```c
+enum NSFileProviderNamespacePolicy : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NSFileProviderNamespacePolicy.inherited](nsfileprovidernamespacepolicy/inherited.md)
+- [NSFileProviderNamespacePolicy.inherited](./nsfileprovidernamespacepolicy/inherited.md)
   Inherit the namespace policy of the parent folder.
-- [NSFileProviderNamespacePolicy.materializeEagerly](nsfileprovidernamespacepolicy/materializeeagerly.md)
+- [NSFileProviderNamespacePolicy.materializeEagerly](./nsfileprovidernamespacepolicy/materializeeagerly.md)
   Download this folder eagerly, make sure it’s always fully enumerated Keep downloading remote updates eagerly. Prevent eviction on low disk pressure and other triggers.
-- [NSFileProviderNamespacePolicy.materializeLazily](nsfileprovidernamespacepolicy/materializelazily.md)
+- [NSFileProviderNamespacePolicy.materializeLazily](./nsfileprovidernamespacepolicy/materializelazily.md)
   Enumerate this folder lazily (i.e upon access) if it is dataless. Keep populate new items below this folder eagerly if it’s already on disk.
 ### Initializers
-- [init?(rawValue: Int)](nsfileprovidernamespacepolicy/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nsfileprovidernamespacepolicy/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

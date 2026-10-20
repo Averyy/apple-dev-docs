@@ -1,11 +1,12 @@
 # filteredLinesFromNeighbors
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -15,7 +16,7 @@ void filteredLinesFromNeighbors(pointer<uniform_grid_t> grid, strided_buffer<flo
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/filteredLinesFromNeighbors.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/filteredLinesFromNeighbors.svg)
 
 
 ---

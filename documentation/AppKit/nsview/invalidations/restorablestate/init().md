@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the invalidation type.
 
@@ -17,7 +18,8 @@ init()
 
 ## See Also
 
-- [static var restorableState: NSView.Invalidations.RestorableState](nsviewinvalidating/restorablestate.md)
+### Creating the invalidation type
+- [static var restorableState: NSView.Invalidations.RestorableState](../../../nsviewinvalidating/restorablestate.md)
   A change that invalidates the restorable state of the view.
 
 

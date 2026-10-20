@@ -1,7 +1,8 @@
 # availableTrackAssociationTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of association types that the track uses to associate with other tracks.
 
@@ -20,13 +21,16 @@ An array of association types that the track uses to associate with other tracks
 static var availableTrackAssociationTypes: AVAsyncProperty<Root, [AVAssetTrack.AssociationType]> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 ## See Also
 
-- [func loadAssociatedTracks(ofType: AVAssetTrack.AssociationType, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](avassettrack/loadassociatedtracks(oftype:completionhandler:).md)
+### Loading track associations
+- [func loadAssociatedTracks(ofType: AVAssetTrack.AssociationType, completionHandler: ([AVAssetTrack]?, (any Error)?) -> Void)](../avassettrack/loadassociatedtracks%28oftype,completionhandler%29.md)
   Loads associated tracks that have the specified association type.
 
 

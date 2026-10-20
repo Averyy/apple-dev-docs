@@ -1,12 +1,13 @@
 # NSApplication.ActivationPolicy
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Activation policies (used by [`activationPolicy`](nsrunningapplication/activationpolicy.md)) that control whether and how an app may be activated.
+Activation policies (used by [`activationPolicy`](../nsrunningapplication/activationpolicy.md)) that control whether and how an app may be activated.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,33 +15,38 @@ Activation policies (used by [`activationPolicy`](nsrunningapplication/activatio
 enum ActivationPolicy
 ```
 
+```c
+enum NSApplicationActivationPolicy : NSInteger;
+```
+
 ## Topics
 
 ### Activation Policies
-- [NSApplication.ActivationPolicy.regular](nsapplication/activationpolicy-swift.enum/regular.md)
+- [NSApplication.ActivationPolicy.regular](./activationpolicy-swift.enum/regular.md)
   The application is an ordinary app that appears in the Dock and may have a user interface.
-- [NSApplication.ActivationPolicy.accessory](nsapplication/activationpolicy-swift.enum/accessory.md)
+- [NSApplication.ActivationPolicy.accessory](./activationpolicy-swift.enum/accessory.md)
   The application doesn’t appear in the Dock and doesn’t have a menu bar, but it may be activated programmatically or by clicking on one of its windows.
-- [NSApplication.ActivationPolicy.prohibited](nsapplication/activationpolicy-swift.enum/prohibited.md)
+- [NSApplication.ActivationPolicy.prohibited](./activationpolicy-swift.enum/prohibited.md)
   The application doesn’t appear in the Dock and may not create windows or be activated.
 ### Initializers
-- [init?(rawValue: Int)](nsapplication/activationpolicy-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./activationpolicy-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func activationPolicy() -> NSApplication.ActivationPolicy](nsapplication/activationpolicy.md)
+### Configuring the activation policy
+- [func activationPolicy() -> NSApplication.ActivationPolicy](./activationpolicy%28%29.md)
   Returns the app’s activation policy.
-- [func setActivationPolicy(NSApplication.ActivationPolicy) -> Bool](nsapplication/setactivationpolicy(_:).md)
+- [func setActivationPolicy(NSApplication.ActivationPolicy) -> Bool](./setactivationpolicy%28_%29.md)
   Attempts to modify the app’s activation policy.
 
 

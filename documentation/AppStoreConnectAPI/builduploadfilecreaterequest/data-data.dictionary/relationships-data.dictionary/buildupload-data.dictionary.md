@@ -1,7 +1,8 @@
 # BuildUploadFileCreateRequest.Data.Relationships.BuildUpload
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related resource.
 
@@ -10,14 +11,14 @@ The type and ID of a related resource.
 
 ## Declaration
 
-```swift
+```
 object BuildUploadFileCreateRequest.Data.Relationships.BuildUpload
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BuildUploadFileCreateRequest.Data.Relationships.BuildUpload.Data](builduploadfilecreaterequest/data-data.dictionary/relationships-data.dictionary/buildupload-data.dictionary/data-data.dictionary.md)
+- [object BuildUploadFileCreateRequest.Data.Relationships.BuildUpload.Data](./buildupload-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

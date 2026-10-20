@@ -1,12 +1,15 @@
 # makeView(element:existingView:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a view for a view element.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Returns a view for a view element.
 optional func makeView(element: TVViewElement, existingView: UIView?) -> UIView?
 ```
 
+```objc
+- (UIView *) viewForElement:(TVViewElement *) element existingView:(UIView *) existingView;
+```
+
 ## Mentions
 
-- [Creating TVML Elements](creating-tvml-elements.md)
+- [Creating TVML Elements](../creating-tvml-elements.md)
 
 #### Return Value
 
@@ -24,7 +31,7 @@ The new view associated with the view element. If the app doesn’t handle the e
 
 #### Discussion
 
-When possible, update the view contained in the `existingView` parameter instead of creating a new view. However, if the existing view is an instance of [`UICollectionViewCell`](https://developer.apple.com/documentation/uikit/uicollectionviewcell), you must configure the cell instead of creating a new instance.
+When possible, update the view contained in the `existingView` parameter instead of creating a new view. However, if the existing view is an instance of [`UICollectionViewCell`](../../UIKit/uicollectionviewcell.md), you must configure the cell instead of creating a new instance.
 
 ## Parameters
 
@@ -33,11 +40,12 @@ When possible, update the view contained in the `existingView` parameter instead
 
 ## See Also
 
-- [func makeViewController(element: TVViewElement, existingViewController: UIViewController?) -> UIViewController?](tvinterfacecreating/makeviewcontroller(element:existingviewcontroller:).md)
+### Updating View Information
+- [func makeViewController(element: TVViewElement, existingViewController: UIViewController?) -> UIViewController?](./makeviewcontroller%28element,existingviewcontroller%29.md)
   Returns a view controller for a view element.
-- [func collectionViewCellClass(for: TVViewElement) -> AnyClass?](tvinterfacecreating/collectionviewcellclass(for:).md)
+- [func collectionViewCellClass(for: TVViewElement) -> AnyClass?](./collectionviewcellclass%28for%29.md)
   Returns a collection view cell for the specified element.
-- [func playerViewController(for: TVPlayer) -> UIViewController?](tvinterfacecreating/playerviewcontroller(for:).md)
+- [func playerViewController(for: TVPlayer) -> UIViewController?](./playerviewcontroller%28for%29.md)
   Returns the custom player user interface for a custom player.
 
 

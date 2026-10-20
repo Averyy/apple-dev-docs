@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the intent to store for an identity element you specify.
@@ -18,9 +19,13 @@ Gets the intent to store for an identity element you specify.
 func intentToStore(element: PKIdentityElement) -> PKIdentityIntentToStore?
 ```
 
+```objc
+- (PKIdentityIntentToStore *) intentToStoreForElement:(PKIdentityElement *) element;
+```
+
 #### Return Value
 
-A [`PKIdentityIntentToStore`](pkidentityintenttostore.md) for the element, if available.
+A [`PKIdentityIntentToStore`](../pkidentityintenttostore.md) for the element, if available.
 
 ## Parameters
 

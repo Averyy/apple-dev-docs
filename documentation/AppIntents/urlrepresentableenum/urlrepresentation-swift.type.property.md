@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The URL representation of the app enum.
@@ -47,6 +48,11 @@ enum Destination: String, AppEnum, URLRepresentableEnum {
    ])
 }
 ```
+
+## Default Implementations
+
+### URLRepresentableEnum Implementations
+- [var urlRepresentation: URL?](./urlrepresentation-swift.property.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # dataType
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data format of all elements in the data plane.
 
@@ -19,11 +20,15 @@ The data format of all elements in the data plane.
 var dataType: MTLTensorDataType { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLTensorDataType dataType;
+```
+
 #### Discussion
 
-The default value of this property is [`MTLTensorDataType.float32`](mtltensordatatype/float32.md).
+The default value of this property is [`MTLTensorDataType.float32`](../mtltensordatatype/float32.md).
 
-[`MTLTensorDataType.metalFloat8ue8m0`](mtltensordatatype/metalfloat8ue8m0.md) is not a valid data type for this property.
+[`MTLTensorDataType.metalFloat8ue8m0`](../mtltensordatatype/metalfloat8ue8m0.md) is not a valid data type for this property.
 
 
 ---

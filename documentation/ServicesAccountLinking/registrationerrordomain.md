@@ -1,7 +1,8 @@
 # RegistrationErrorDomain
 
 **Framework**: ServicesAccountLinking  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Error domain for account registration failures.
 
@@ -16,9 +17,14 @@ Error domain for account registration failures.
 let RegistrationErrorDomain: String
 ```
 
+```c
+static NSErrorDomain const SALRegistrationErrorDomain;
+```
+
 ## See Also
 
-- [struct RegistrationError](registrationerror.md)
+### Error handling
+- [struct RegistrationError](./registrationerror.md)
   Registration error codes.
 
 

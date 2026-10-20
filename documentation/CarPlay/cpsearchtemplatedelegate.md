@@ -1,7 +1,8 @@
 # CPSearchTemplateDelegate
 
 **Framework**: CarPlay  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for an object that serves as the search template’s delegate.
 
@@ -17,26 +18,31 @@ The interface for an object that serves as the search template’s delegate.
 protocol CPSearchTemplateDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol CPSearchTemplateDelegate <NSObject>
+```
+
 ## Topics
 
 ### Updating Search Text
-- [func searchTemplate(CPSearchTemplate, updatedSearchText: String, completionHandler: ([CPListItem]) -> Void)](cpsearchtemplatedelegate/searchtemplate(_:updatedsearchtext:completionhandler:).md)
+- [func searchTemplate(CPSearchTemplate, updatedSearchText: String, completionHandler: ([CPListItem]) -> Void)](./cpsearchtemplatedelegate/searchtemplate%28_,updatedsearchtext,completionhandler%29.md)
   Tells the delegate that the user updated the search criteria text.
 ### Selecting a Search Result Item
-- [func searchTemplate(CPSearchTemplate, selectedResult: CPListItem, completionHandler: () -> Void)](cpsearchtemplatedelegate/searchtemplate(_:selectedresult:completionhandler:).md)
+- [func searchTemplate(CPSearchTemplate, selectedResult: CPListItem, completionHandler: () -> Void)](./cpsearchtemplatedelegate/searchtemplate%28_,selectedresult,completionhandler%29.md)
   Tells the delegate that the user selected an item from the search result.
 ### Pressing the Search Button
-- [func searchTemplateSearchButtonPressed(CPSearchTemplate)](cpsearchtemplatedelegate/searchtemplatesearchbuttonpressed(_:).md)
+- [func searchTemplateSearchButtonPressed(CPSearchTemplate)](./cpsearchtemplatedelegate/searchtemplatesearchbuttonpressed%28_%29.md)
   Tells the delegate that the user tapped the keyboard’s search button.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any CPSearchTemplateDelegate)?](cpsearchtemplate/delegate.md)
+### Providing a Search Template Delegate
+- [var delegate: (any CPSearchTemplateDelegate)?](./cpsearchtemplate/delegate.md)
   The object that serves as the search template’s delegate.
 
 

@@ -1,7 +1,8 @@
 # dither
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether dither is on.
 
@@ -20,23 +21,28 @@ A Boolean value that indicates whether dither is on.
 var dither: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL dither;
+```
+
 #### Discussion
 
 This property defaults to `false`. When `true`, the framework determines whether dithering makes sense for the formats and settings.
 
 ## See Also
 
-- [var channelMap: [NSNumber]](avaudioconverter/channelmap.md)
+### Getting audio converter properties
+- [var channelMap: [NSNumber]](./channelmap.md)
   An array of integers that indicates which input to derive each output from.
-- [var downmix: Bool](avaudioconverter/downmix.md)
+- [var downmix: Bool](./downmix.md)
   A Boolean value that indicates whether the framework mixes the channels instead of remapping.
-- [var inputFormat: AVAudioFormat](avaudioconverter/inputformat.md)
+- [var inputFormat: AVAudioFormat](./inputformat.md)
   The format of the input audio stream.
-- [var outputFormat: AVAudioFormat](avaudioconverter/outputformat.md)
+- [var outputFormat: AVAudioFormat](./outputformat.md)
   The format of the output audio stream.
-- [var magicCookie: Data?](avaudioconverter/magiccookie.md)
+- [var magicCookie: Data?](./magiccookie.md)
   An object that contains metadata for encoders and decoders.
-- [var maximumOutputPacketSize: Int](avaudioconverter/maximumoutputpacketsize.md)
+- [var maximumOutputPacketSize: Int](./maximumoutputpacketsize.md)
   The maximum size of an output packet, in bytes.
 
 

@@ -1,7 +1,8 @@
 # token
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant you use to configure a Live Activity that updates its dynamic content by receiving ActivityKit push notifications.
 
@@ -17,11 +18,12 @@ static var token: PushType { get }
 
 ## Mentions
 
-- [Starting and updating Live Activities with ActivityKit push notifications](starting-and-updating-live-activities-with-activitykit-push-notifications.md)
+- [Starting and updating Live Activities with ActivityKit push notifications](../starting-and-updating-live-activities-with-activitykit-push-notifications.md)
 
 ## See Also
 
-- [static func channel(String) -> PushType](pushtype/channel(_:).md)
+### Supporting ActivityKit push notifications
+- [static func channel(String) -> PushType](./channel%28_%29.md)
   A constant to configure a Live Activity that updates its dynamic content for broadcast channels.
 
 

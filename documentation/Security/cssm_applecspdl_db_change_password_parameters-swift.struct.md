@@ -1,7 +1,8 @@
 # cssm_applecspdl_db_change_password_parameters
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
@@ -12,18 +13,22 @@
 struct cssm_applecspdl_db_change_password_parameters
 ```
 
+```c
+struct cssm_applecspdl_db_change_password_parameters;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_applecspdl_db_change_password_parameters-swift.struct/init.md)
-- [init(accessCredentials: UnsafeMutablePointer<cssm_access_credentials>!)](cssm_applecspdl_db_change_password_parameters-swift.struct/init(accesscredentials:).md)
+- [init()](./cssm_applecspdl_db_change_password_parameters-swift.struct/init%28%29.md)
+- [init(accessCredentials: UnsafeMutablePointer<cssm_access_credentials>!)](./cssm_applecspdl_db_change_password_parameters-swift.struct/init%28accesscredentials%29.md)
 ### Instance Properties
-- [var accessCredentials: UnsafeMutablePointer<cssm_access_credentials>!](cssm_applecspdl_db_change_password_parameters-swift.struct/accesscredentials.md)
+- [var accessCredentials: UnsafeMutablePointer<cssm_access_credentials>!](./cssm_applecspdl_db_change_password_parameters-swift.struct/accesscredentials.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

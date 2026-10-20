@@ -1,14 +1,15 @@
 # flush_dcache64
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 void flush_dcache64(addr64_t, unsigned int, int);
 ```
 

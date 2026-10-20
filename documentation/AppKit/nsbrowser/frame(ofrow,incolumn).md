@@ -1,7 +1,8 @@
 # frame(ofRow:inColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the frame of the cell at the specified location, including the expandable arrow.
 
@@ -14,9 +15,13 @@ Returns the frame of the cell at the specified location, including the expandabl
 func frame(ofRow row: Int, inColumn column: Int) -> NSRect
 ```
 
+```objc
+- (NSRect) frameOfRow:(NSInteger) row inColumn:(NSInteger) column;
+```
+
 #### Return Value
 
-The frame of the cell, in the [`NSBrowser`](nsbrowser.md) coordinate space.
+The frame of the cell, in the [`NSBrowser`](../nsbrowser.md) coordinate space.
 
 ## Parameters
 
@@ -25,7 +30,8 @@ The frame of the cell, in the [`NSBrowser`](nsbrowser.md) coordinate space.
 
 ## See Also
 
-- [func getRow(UnsafeMutablePointer<Int>?, column: UnsafeMutablePointer<Int>?, for: NSPoint) -> Bool](nsbrowser/getrow(_:column:for:).md)
+### Getting Row Frames
+- [func getRow(UnsafeMutablePointer<Int>?, column: UnsafeMutablePointer<Int>?, for: NSPoint) -> Bool](./getrow%28_,column,for%29.md)
   Gets the row and column coordinates for the specified point, if a cell exists at that point.
 
 

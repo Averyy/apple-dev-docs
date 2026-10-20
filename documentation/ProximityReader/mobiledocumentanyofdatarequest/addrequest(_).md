@@ -1,7 +1,8 @@
 # addRequest(_:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the request as a candidate of this composite request.
 

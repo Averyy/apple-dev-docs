@@ -1,12 +1,13 @@
 # stopSpeaking(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops synthesis in progress at a given boundary.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -14,32 +15,37 @@ Stops synthesis in progress at a given boundary.
 func stopSpeaking(at boundary: NSSpeechSynthesizer.Boundary)
 ```
 
+```objc
+- (void) stopSpeakingAtBoundary:(NSSpeechBoundary) boundary;
+```
+
 #### Discussion
 
-Pass the constant [`NSSpeechSynthesizer.Boundary.immediateBoundary`](nsspeechsynthesizer/boundary/immediateboundary.md) to stop immediately, even in the middle of a word. Pass [`NSSpeechSynthesizer.Boundary.wordBoundary`](nsspeechsynthesizer/boundary/wordboundary.md) or [`NSSpeechSynthesizer.Boundary.sentenceBoundary`](nsspeechsynthesizer/boundary/sentenceboundary.md) to stop speech at the end of the current word or sentence, respectively.
+Pass the constant [`NSSpeechSynthesizer.Boundary.immediateBoundary`](./boundary/immediateboundary.md) to stop immediately, even in the middle of a word. Pass [`NSSpeechSynthesizer.Boundary.wordBoundary`](./boundary/wordboundary.md) or [`NSSpeechSynthesizer.Boundary.sentenceBoundary`](./boundary/sentenceboundary.md) to stop speech at the end of the current word or sentence, respectively.
 
 If the end of the string being spoken is reached before the specified stopping point, the synthesizer stops at the end of the string without generating an error.
 
 ## Parameters
 
-- `boundary`: Boundary at which to stop speech. The supported bound types are listed in [`NSSpeechSynthesizer.Boundary`](nsspeechsynthesizer/boundary.md).
+- `boundary`: Boundary at which to stop speech. The supported bound types are listed in [`NSSpeechSynthesizer.Boundary`](./boundary.md).
 
 ## See Also
 
-- [var isSpeaking: Bool](nsspeechsynthesizer/isspeaking.md)
+### Synthesizing Speech
+- [var isSpeaking: Bool](./isspeaking.md)
   Indicates whether the receiver is currently generating synthesized speech.
-- [func startSpeaking(String) -> Bool](nsspeechsynthesizer/startspeaking(_:).md)
+- [func startSpeaking(String) -> Bool](./startspeaking%28_%29.md)
   Begins speaking synthesized text through the system’s default sound output device.
-- [func startSpeaking(String, to: URL) -> Bool](nsspeechsynthesizer/startspeaking(_:to:).md)
+- [func startSpeaking(String, to: URL) -> Bool](./startspeaking%28_,to%29.md)
   Begins synthesizing text into a sound (AIFF) file.
-- [func pauseSpeaking(at: NSSpeechSynthesizer.Boundary)](nsspeechsynthesizer/pausespeaking(at:).md)
+- [func pauseSpeaking(at: NSSpeechSynthesizer.Boundary)](./pausespeaking%28at%29.md)
   Pauses synthesis in progress at a given boundary.
-- [func continueSpeaking()](nsspeechsynthesizer/continuespeaking.md)
+- [func continueSpeaking()](./continuespeaking%28%29.md)
   Resumes synthesis.
-- [func stopSpeaking()](nsspeechsynthesizer/stopspeaking.md)
+- [func stopSpeaking()](./stopspeaking%28%29.md)
   Stops synthesis in progress.
-- [NSSpeechSynthesizer.Boundary](nsspeechsynthesizer/boundary.md)
-  These constants are used to indicate where speech should be stopped and paused. See [`pauseSpeaking(at:)`](nsspeechsynthesizer/pausespeaking(at:).md) and [`stopSpeaking(at:)`](nsspeechsynthesizer/stopspeaking(at:).md).
+- [NSSpeechSynthesizer.Boundary](./boundary.md)
+  These constants are used to indicate where speech should be stopped and paused. See [`pauseSpeaking(at:)`](./pausespeaking%28at%29.md) and [`stopSpeaking(at:)`](./stopspeaking%28at%29.md).
 
 
 ---

@@ -1,14 +1,15 @@
 # MTF_FREE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 MTF_FREE = (1 << MT_FREE)
 ```
 

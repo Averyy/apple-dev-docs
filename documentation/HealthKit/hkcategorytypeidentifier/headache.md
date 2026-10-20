@@ -1,7 +1,8 @@
 # headache
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A category type that records headache as a symptom.
 
@@ -19,15 +20,20 @@ A category type that records headache as a symptom.
 static let headache: HKCategoryTypeIdentifier
 ```
 
+```c
+extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierHeadache;
+```
+
 #### Discussion
 
-These samples use values from the  [`HKCategoryValueSeverity`](hkcategoryvalueseverity.md) enumeration.
+These samples use values from the  [`HKCategoryValueSeverity`](../hkcategoryvalueseverity.md) enumeration.
 
 ## See Also
 
-- [static let memoryLapse: HKCategoryTypeIdentifier](hkcategorytypeidentifier/memorylapse.md)
+### Neurological
+- [static let memoryLapse: HKCategoryTypeIdentifier](./memorylapse.md)
   A category type that records memory lapse as a symptom.
-- [static let moodChanges: HKCategoryTypeIdentifier](hkcategorytypeidentifier/moodchanges.md)
+- [static let moodChanges: HKCategoryTypeIdentifier](./moodchanges.md)
   A category type that records mood changes as a symptom.
 
 

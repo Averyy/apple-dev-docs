@@ -1,7 +1,8 @@
 # note
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string containing notes for the contact.
 
@@ -17,6 +18,18 @@ A string containing notes for the contact.
 
 ```swift
 var note: String { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy) NSString * note;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) NSString * note;
 ```
 
 

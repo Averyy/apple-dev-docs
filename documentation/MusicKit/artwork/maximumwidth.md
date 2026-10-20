@@ -1,7 +1,8 @@
 # maximumWidth
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum width available for the image.
 

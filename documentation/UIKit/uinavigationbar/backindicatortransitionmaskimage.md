@@ -1,7 +1,8 @@
 # backIndicatorTransitionMaskImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image used as a mask for content during push and pop transitions.
 
@@ -17,13 +18,18 @@ The image used as a mask for content during push and pop transitions.
 var backIndicatorTransitionMaskImage: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * backIndicatorTransitionMaskImage;
+```
+
 #### Discussion
 
-If you want to customize the back indicator image, you must also set [`backIndicatorImage`](uinavigationbar/backindicatorimage.md).
+If you want to customize the back indicator image, you must also set [`backIndicatorImage`](./backindicatorimage.md).
 
 ## See Also
 
-- [var backIndicatorImage: UIImage?](uinavigationbar/backindicatorimage.md)
+### Configuring the Back button
+- [var backIndicatorImage: UIImage?](./backindicatorimage.md)
   The image shown beside the Back button.
 
 

@@ -1,7 +1,8 @@
 # kCVImageBufferPixelAspectRatioHorizontalSpacingKey
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to the horizontal component of the image buffer aspect ratio.
 
@@ -20,13 +21,18 @@ A key to the horizontal component of the image buffer aspect ratio.
 let kCVImageBufferPixelAspectRatioHorizontalSpacingKey: CFString
 ```
 
+```c
+extern CFStringRef const kCVImageBufferPixelAspectRatioHorizontalSpacingKey;
+```
+
 #### Discussion
 
-The horizontal spacing value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber).
+The horizontal spacing value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 
 ## See Also
 
-- [let kCVImageBufferPixelAspectRatioVerticalSpacingKey: CFString](kcvimagebufferpixelaspectratioverticalspacingkey.md)
+### Constants
+- [let kCVImageBufferPixelAspectRatioVerticalSpacingKey: CFString](./kcvimagebufferpixelaspectratioverticalspacingkey.md)
   A key to the vertical component of the image buffer aspect ratio.
 
 

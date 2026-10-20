@@ -1,7 +1,8 @@
 # secureElementInfo
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that provides information about the Secure Element hardware.
 
@@ -17,14 +18,17 @@ var secureElementInfo: CredentialSession.SecureElementInfo { get async throws }
 
 #### Discussion
 
-You can use the certificate in the [`CredentialSession.SecureElementInfo`](credentialsession/secureelementinfo-swift.struct.md) to authenticate against the Certification Authority of the Secure Element hardware.
+You can use the certificate in the [`CredentialSession.SecureElementInfo`](./secureelementinfo-swift.struct.md) to authenticate against the Certification Authority of the Secure Element hardware.
 
-- The most common errors are: - [`CredentialSession.ErrorCode.featureUnavailable`](credentialsession/errorcode/featureunavailable.md): The Secure Element credential feature isn’t available on this platform.
-- [`CredentialSession.ErrorCode.sessionInvalidated`](credentialsession/errorcode/sessioninvalidated.md): The credential session has been invalidated.
+- The most common errors are:
+
+  - [`CredentialSession.ErrorCode.featureUnavailable`](./errorcode/featureunavailable.md): The Secure Element credential feature isn’t available on this platform.
+  - [`CredentialSession.ErrorCode.sessionInvalidated`](./errorcode/sessioninvalidated.md): The credential session has been invalidated.
 
 ## See Also
 
-- [CredentialSession.SecureElementInfo](credentialsession/secureelementinfo-swift.struct.md)
+### Accessing hardware information
+- [CredentialSession.SecureElementInfo](./secureelementinfo-swift.struct.md)
   A type that provides information about the Secure Element hardware.
 
 

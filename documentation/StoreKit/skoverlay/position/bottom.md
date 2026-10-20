@@ -1,7 +1,8 @@
 # SKOverlay.Position.bottom
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the overlay is at the bottom of the screen.
 
@@ -17,9 +18,14 @@ Specifies that the overlay is at the bottom of the screen.
 case bottom
 ```
 
+```c
+SKOverlayPositionBottom
+```
+
 ## See Also
 
-- [SKOverlay.Position.bottomRaised](skoverlay/position/bottomraised.md)
+### Describing the Overlay’s Position
+- [SKOverlay.Position.bottomRaised](./bottomraised.md)
   Specifies that the overlay is at a raised position at the bottom of the screen.
 
 

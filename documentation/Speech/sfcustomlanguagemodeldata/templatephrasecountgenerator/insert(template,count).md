@@ -1,7 +1,8 @@
 # insert(template:count:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add a template to be used to generate data samples.
 
@@ -26,7 +27,8 @@ func insert(template: String, count: Int)
 
 ## See Also
 
-- [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Template](sfcustomlanguagemodeldata/templatephrasecountgenerator/template.md)
+### Adding a template
+- [SFCustomLanguageModelData.TemplatePhraseCountGenerator.Template](./template.md)
 
 
 ---

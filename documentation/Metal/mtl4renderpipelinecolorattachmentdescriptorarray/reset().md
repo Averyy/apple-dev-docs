@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the elements of the descriptor array
 
@@ -17,6 +18,10 @@ Resets the elements of the descriptor array
 
 ```swift
 func reset()
+```
+
+```objc
+- (void) reset;
 ```
 
 

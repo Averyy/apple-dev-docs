@@ -1,7 +1,8 @@
 # UICellAccessory.DeleteOptions
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration options for a delete accessory.
 
@@ -10,7 +11,7 @@ Configuration options for a delete accessory.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,21 +22,22 @@ struct DeleteOptions
 ## Topics
 
 ### Creating configuration options
-- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?, backgroundColor: UIColor?)](uicellaccessory-swift.struct/deleteoptions/init(ishidden:reservedlayoutwidth:tintcolor:backgroundcolor:).md)
+- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?, backgroundColor: UIColor?)](./deleteoptions/init%28ishidden,reservedlayoutwidth,tintcolor,backgroundcolor%29.md)
   Creates a delete accessory options structure.
 ### Accessing configuration options
-- [var isHidden: Bool](uicellaccessory-swift.struct/deleteoptions/ishidden.md)
+- [var isHidden: Bool](./deleteoptions/ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/deleteoptions/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./deleteoptions/reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/deleteoptions/tintcolor.md)
+- [var tintColor: UIColor?](./deleteoptions/tintcolor.md)
   The tint color to apply to the accessory.
-- [var backgroundColor: UIColor?](uicellaccessory-swift.struct/deleteoptions/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./deleteoptions/backgroundcolor.md)
   The background color to apply to the accessory.
 
 ## See Also
 
-- [static func delete(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.DeleteOptions, actionHandler: UICellAccessory.ActionHandler?) -> UICellAccessory](uicellaccessory-swift.struct/delete(displayed:options:actionhandler:).md)
+### Creating a delete accessory
+- [static func delete(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.DeleteOptions, actionHandler: UICellAccessory.ActionHandler?) -> UICellAccessory](./delete%28displayed,options,actionhandler%29.md)
   Creates a delete system accessory with the specified display state, configuration options, and optional action handler.
 
 

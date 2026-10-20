@@ -1,7 +1,8 @@
 # cycling
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Directions suitable for use while cycling.
 
@@ -18,6 +19,10 @@ Directions suitable for use while cycling.
 
 ```swift
 static var cycling: MKDirectionsTransportType { get }
+```
+
+```c
+MKDirectionsTransportTypeCycling
 ```
 
 #### Discussion
@@ -44,13 +49,14 @@ The following example shows a task that requests directions between two location
 
 ## See Also
 
-- [static var any: MKDirectionsTransportType](mkdirectionstransporttype/any.md)
+### Transport types
+- [static var any: MKDirectionsTransportType](./any.md)
   Directions suitable for any transportation option.
-- [static var automobile: MKDirectionsTransportType](mkdirectionstransporttype/automobile.md)
+- [static var automobile: MKDirectionsTransportType](./automobile.md)
   Directions suitable for use while driving.
-- [static var transit: MKDirectionsTransportType](mkdirectionstransporttype/transit.md)
+- [static var transit: MKDirectionsTransportType](./transit.md)
   Directions suitable for public transportation.
-- [static var walking: MKDirectionsTransportType](mkdirectionstransporttype/walking.md)
+- [static var walking: MKDirectionsTransportType](./walking.md)
   Directions suitable for a pedestrian.
 
 

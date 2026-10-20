@@ -1,7 +1,8 @@
 # FinanceStore.UpdateFrequency.daily
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Get notified within a day of data updating.
 
@@ -18,9 +19,10 @@ case daily
 
 ## See Also
 
-- [FinanceStore.UpdateFrequency.hourly](financestore/updatefrequency/hourly.md)
+### Enumeration Cases
+- [FinanceStore.UpdateFrequency.hourly](./hourly.md)
   Get notified within an hour of data updating.
-- [FinanceStore.UpdateFrequency.weekly](financestore/updatefrequency/weekly.md)
+- [FinanceStore.UpdateFrequency.weekly](./weekly.md)
   Get notified within a week of data updating.
 
 

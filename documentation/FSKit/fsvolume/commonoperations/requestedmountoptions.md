@@ -1,7 +1,8 @@
 # requestedMountOptions
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that allows the file system to request for specific mount options from FSKit.
 
@@ -12,6 +13,10 @@ A property that allows the file system to request for specific mount options fro
 
 ```swift
 optional var requestedMountOptions: FSVolume.MountOptions { get }
+```
+
+```objc
+@property (readonly) FSMountOptions requestedMountOptions;
 ```
 
 #### Discussion

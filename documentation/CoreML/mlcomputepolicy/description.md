@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the compute policy.
 

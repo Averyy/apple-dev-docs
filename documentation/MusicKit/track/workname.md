@@ -1,7 +1,8 @@
 # workName
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For classical music only, the name of the associated work.
 

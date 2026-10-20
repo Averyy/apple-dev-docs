@@ -1,7 +1,8 @@
 # compositingLayer()
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a compositing layer for the axis content.
 

@@ -1,7 +1,8 @@
 # surfaceSnappingInfo
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provides information about the current snap state of the scene.
 
@@ -16,7 +17,7 @@ var surfaceSnappingInfo: SurfaceSnappingInfo { get }
 
 #### Discussion
 
-Use the provided [`SurfaceSnappingInfo`](surfacesnappinginfo.md) from the environment to modify the content of your view
+Use the provided [`SurfaceSnappingInfo`](../surfacesnappinginfo.md) from the environment to modify the content of your view
 
 ```swift
 struct LightFixtureView: View {

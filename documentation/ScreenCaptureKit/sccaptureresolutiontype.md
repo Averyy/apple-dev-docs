@@ -1,7 +1,8 @@
 # SCCaptureResolutionType
 
 **Framework**: ScreenCaptureKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Available resolutions for content capture.
 
@@ -15,6 +16,10 @@ Available resolutions for content capture.
 enum SCCaptureResolutionType
 ```
 
+```c
+enum SCCaptureResolutionType : NSInteger;
+```
+
 #### Overview
 
 Higher-resolution values produce better and more accurate-looking content to the source, at the expense of bandwidth.
@@ -22,32 +27,33 @@ Higher-resolution values produce better and more accurate-looking content to the
 ## Topics
 
 ### Resolutions
-- [SCCaptureResolutionType.automatic](sccaptureresolutiontype/automatic.md)
+- [SCCaptureResolutionType.automatic](./sccaptureresolutiontype/automatic.md)
   Allow ScreenCaptureKit to automatically select the quality of content depending on factors such as network connection.
-- [SCCaptureResolutionType.best](sccaptureresolutiontype/best.md)
+- [SCCaptureResolutionType.best](./sccaptureresolutiontype/best.md)
   Capture streaming content at the best available resolution.
-- [SCCaptureResolutionType.nominal](sccaptureresolutiontype/nominal.md)
+- [SCCaptureResolutionType.nominal](./sccaptureresolutiontype/nominal.md)
   Capture streaming content with a one point to one pixel conversion factor.
 ### Initializers
-- [init?(rawValue: Int)](sccaptureresolutiontype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./sccaptureresolutiontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var queueDepth: Int](scstreamconfiguration/queuedepth.md)
+### Configuring captured frames
+- [var queueDepth: Int](./scstreamconfiguration/queuedepth.md)
   The maximum number of frames for the queue to store.
-- [var minimumFrameInterval: CMTime](scstreamconfiguration/minimumframeinterval.md)
+- [var minimumFrameInterval: CMTime](./scstreamconfiguration/minimumframeinterval.md)
   The desired minimum time between frame updates, in seconds.
-- [var captureResolution: SCCaptureResolutionType](scstreamconfiguration/captureresolution.md)
+- [var captureResolution: SCCaptureResolutionType](./scstreamconfiguration/captureresolution.md)
   The resolution at which to capture source content.
 
 

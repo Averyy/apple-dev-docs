@@ -6,43 +6,14 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ra
 
 # mlx.core.radians
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.radians.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.radians
-
- Table of contents 
-
-## Contents
-
-# mlx.core.radians
-
-**radians(*a: scalar | array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**radians(*a: scalar | array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Convert angles from degrees to radians.
 
 Parameters:
-**a** ([array](mlx.core.array.html#mlx.core.array)* or **scalar*) – Input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)* or **scalar*) – Input array.
 
 Returns:
 The angles in radians.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

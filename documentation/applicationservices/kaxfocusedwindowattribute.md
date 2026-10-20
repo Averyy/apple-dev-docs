@@ -1,7 +1,8 @@
 # kAXFocusedWindowAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The accessibility object that represents the currently focused window of this application. This attribute is recommended for all application-level accessibility objects.
 
@@ -12,6 +13,10 @@ The accessibility object that represents the currently focused window of this ap
 
 ```swift
 var kAXFocusedWindowAttribute: String { get }
+```
+
+```c
+#define kAXFocusedWindowAttribute
 ```
 
 

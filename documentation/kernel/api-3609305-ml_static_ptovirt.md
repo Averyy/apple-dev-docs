@@ -1,14 +1,15 @@
 # ml_static_ptovirt
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 vm_offset_t ml_static_ptovirt(vm_offset_t);
 ```
 

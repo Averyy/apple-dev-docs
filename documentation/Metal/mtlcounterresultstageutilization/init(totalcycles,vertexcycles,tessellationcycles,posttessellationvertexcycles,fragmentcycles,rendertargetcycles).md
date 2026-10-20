@@ -1,7 +1,8 @@
 # init(totalCycles:vertexCycles:tessellationCycles:postTessellationVertexCycles:fragmentCycles:renderTargetCycles:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stage-utilization result from utilization values.
 
@@ -21,7 +22,7 @@ init(totalCycles: UInt64, vertexCycles: UInt64, tessellationCycles: UInt64, post
 
 #### Discussion
 
-Metal creates [`MTLCounterResultStageUtilization`](mtlcounterresultstageutilization.md) instances for you when you resolve the counter set’s data (see [`Converting a GPU’s counter data into a readable format`](converting-a-gpus-counter-data-into-a-readable-format.md)). There’s no reason for you to manually create one in your app.
+Metal creates [`MTLCounterResultStageUtilization`](../mtlcounterresultstageutilization.md) instances for you when you resolve the counter set’s data (see [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)). There’s no reason for you to manually create one in your app.
 
 ## Parameters
 
@@ -34,7 +35,8 @@ Metal creates [`MTLCounterResultStageUtilization`](mtlcounterresultstageutilizat
 
 ## See Also
 
-- [init()](mtlcounterresultstageutilization/init.md)
+### Swift support
+- [init()](./init%28%29.md)
   Creates a default stage-utilization result.
 
 

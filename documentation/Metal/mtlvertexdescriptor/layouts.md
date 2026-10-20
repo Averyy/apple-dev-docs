@@ -1,7 +1,8 @@
 # layouts
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of state data that describes how data are fetched by a vertex shader function when rendering primitives.
 
@@ -10,7 +11,7 @@ An array of state data that describes how data are fetched by a vertex shader fu
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,14 @@ An array of state data that describes how data are fetched by a vertex shader fu
 var layouts: MTLVertexBufferLayoutDescriptorArray { get }
 ```
 
+```objc
+@property (readonly) MTLVertexBufferLayoutDescriptorArray * layouts;
+```
+
 ## See Also
 
-- [var attributes: MTLVertexAttributeDescriptorArray](mtlvertexdescriptor/attributes.md)
+### Accessing the vertex buffer layouts and vertex attributes
+- [var attributes: MTLVertexAttributeDescriptorArray](./attributes.md)
   An array of state data that describes how vertex attribute data is stored in memory and is mapped to arguments for a vertex shader function.
 
 

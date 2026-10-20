@@ -1,7 +1,8 @@
 # Worker
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface Worker
 ```
 
 ## Topics
 
 ### Instance Properties
-- [onmessage](worker/1630905-onmessage.md)
+- [onmessage](./worker/api-1630905-onmessage.md)
 ### Instance Methods
-- [postMessage](worker/1630390-postmessage.md)
-- [terminate](worker/1633552-terminate.md)
+- [postMessage](./worker/api-1630390-postmessage.md)
+- [terminate](./worker/api-1633552-terminate.md)
 
 ## Relationships
 

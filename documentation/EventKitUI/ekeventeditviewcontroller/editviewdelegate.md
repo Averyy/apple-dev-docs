@@ -1,7 +1,8 @@
 # editViewDelegate
 
 **Framework**: EventKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate to notify when editing an event.
 
@@ -17,9 +18,14 @@ The delegate to notify when editing an event.
 weak var editViewDelegate: (any EKEventEditViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<EKEventEditViewDelegate> editViewDelegate;
+```
+
 ## See Also
 
-- [protocol EKEventEditViewDelegate](ekeventeditviewdelegate.md)
+### Managing the Event Editing Interface
+- [protocol EKEventEditViewDelegate](../ekeventeditviewdelegate.md)
   A notification sent to the delegate when the user finishes editing an event.
 
 

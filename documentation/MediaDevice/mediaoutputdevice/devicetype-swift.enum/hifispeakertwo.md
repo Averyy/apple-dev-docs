@@ -1,7 +1,8 @@
 # MediaOutputDevice.DeviceType.hifiSpeakerTwo
 
 **Framework**: Media Device  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A pair of hi-fi speakers.
 

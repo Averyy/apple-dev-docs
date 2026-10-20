@@ -1,7 +1,8 @@
 # init(mlModel:)
 
 **Framework**: Sound Analysis  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request that uses a custom sound classification model.
 
@@ -20,13 +21,17 @@ Creates a request that uses a custom sound classification model.
 init(mlModel: MLModel) throws
 ```
 
+```objc
+- (instancetype) initWithMLModel:(MLModel *) mlModel error:(NSError **) error;
+```
+
 ## Mentions
 
-- [Classifying Sounds in an Audio File](classifying-sounds-in-an-audio-file.md)
+- [Classifying Sounds in an Audio File](../classifying-sounds-in-an-audio-file.md)
 
 #### Discussion
 
-The model you provide must accept audio data as input and produce a classification dictionary output that contains the probability of each category. For example, you can generate a sound classifier model by creating an [`MLSoundClassifier`](https://developer.apple.com/documentation/createml/mlsoundclassifier) and training it with your own audio files.
+The model you provide must accept audio data as input and produce a classification dictionary output that contains the probability of each category. For example, you can generate a sound classifier model by creating an [`MLSoundClassifier`](../../CreateML/mlsoundclassifier.md) and training it with your own audio files.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ The model you provide must accept audio data as input and produce a classificati
 
 ## See Also
 
-- [init(classifierIdentifier: SNClassifierIdentifier) throws](snclassifysoundrequest/init(classifieridentifier:).md)
+### Creating a Request
+- [init(classifierIdentifier: SNClassifierIdentifier) throws](./init%28classifieridentifier%29.md)
   Creates a request that uses the framework’s built-in sound classification model.
-- [struct SNClassifierIdentifier](snclassifieridentifier.md)
+- [struct SNClassifierIdentifier](../snclassifieridentifier.md)
   An identifier that represents the versions of the framework’s sound classifier.
 
 

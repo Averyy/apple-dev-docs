@@ -1,7 +1,8 @@
 # init(document:)
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an empty `PDFSelection` object.
 
@@ -19,9 +20,13 @@ Returns an empty `PDFSelection` object.
 init(document: PDFDocument)
 ```
 
+```objc
+- (instancetype) initWithDocument:(PDFDocument *) document;
+```
+
 #### Discussion
 
-Typically, you don’t need to create a `PDFSelection` object, but you can use an empty `PDFSelection` object as a container into which you can place selections, using [`PDFSelection`](pdfselection.md) and addSelections.
+Typically, you don’t need to create a `PDFSelection` object, but you can use an empty `PDFSelection` object as a container into which you can place selections, using [`PDFSelection`](../pdfselection.md) and addSelections.
 
 
 ---

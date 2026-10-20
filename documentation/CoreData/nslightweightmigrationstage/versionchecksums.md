@@ -1,7 +1,8 @@
 # versionChecksums
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of version checksums.
 
@@ -18,6 +19,10 @@ The array of version checksums.
 
 ```swift
 var versionChecksums: [String] { get }
+```
+
+```objc
+@property (strong, readonly) NSArray<NSString *> * versionChecksums;
 ```
 
 #### Discussion

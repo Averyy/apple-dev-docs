@@ -1,7 +1,8 @@
 # setPassword(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provide the password for a protected network.
 
@@ -17,11 +18,15 @@ Provide the password for a protected network.
 func setPassword(_ password: String)
 ```
 
+```objc
+- (void) setPassword:(NSString *) password;
+```
+
 #### Discussion
 
 The Hotspot Helper may set a password for a protected network. The password string must adhere to IEEE 802.11 guidelines appropriate for the particular security scheme.
 
-Hotspot Helper apps use this method only in the response to the [`NEHotspotHelperCommandType.filterScanList`](nehotspothelpercommandtype/filterscanlist.md) command.
+Hotspot Helper apps use this method only in the response to the [`NEHotspotHelperCommandType.filterScanList`](../nehotspothelpercommandtype/filterscanlist.md) command.
 
 ## Parameters
 
@@ -29,9 +34,10 @@ Hotspot Helper apps use this method only in the response to the [`NEHotspotHelpe
 
 ## See Also
 
-- [func setConfidence(NEHotspotHelperConfidence)](nehotspotnetwork/setconfidence(_:).md)
+### Network annotation
+- [func setConfidence(NEHotspotHelperConfidence)](./setconfidence%28_%29.md)
   Indicate the level of confidence in being able to handle the network.
-- [enum NEHotspotHelperConfidence](nehotspothelperconfidence.md)
+- [enum NEHotspotHelperConfidence](../nehotspothelperconfidence.md)
   A type that indicates the hotspot helper’s confidence in its ability to handle the network.
 
 

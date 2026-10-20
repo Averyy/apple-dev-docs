@@ -1,7 +1,8 @@
 # uint64
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias uint64 = UInt64
+```
+
+```c
+typedef uint64_t uint64;
 ```
 
 

@@ -1,7 +1,8 @@
 # ASError.Code.activationFailed
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Session activation failed.
 
@@ -13,6 +14,10 @@ Session activation failed.
 
 ```swift
 case activationFailed
+```
+
+```c
+ASErrorCodeActivationFailed
 ```
 
 

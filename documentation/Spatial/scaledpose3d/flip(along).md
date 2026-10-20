@@ -1,7 +1,8 @@
 # flip(along:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Flips a scaled pose along the specified axis.
 
@@ -11,7 +12,7 @@ Flips a scaled pose along the specified axis.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ mutating func flip(along axis: Axis3D)
 
 ## See Also
 
-- [func flipped(along: Axis3D) -> ScaledPose3D](scaledpose3d/flipped(along:).md)
+### Transforming a 3D scaled-pose structure
+- [func flipped(along: Axis3D) -> ScaledPose3D](./flipped%28along%29.md)
   Returns a scaled pose that results from flipping it along the specified axis.
-- [func rotated(by: simd_quatd) -> ScaledPose3D](scaledpose3d/rotated(by:)-5mxbl.md)
+- [func rotated(by: simd_quatd) -> ScaledPose3D](./rotated%28by%29-5mxbl.md)
   Returns a scaled pose that results from rotating with the specified quaternion.
-- [func rotated(by: Rotation3D) -> ScaledPose3D](scaledpose3d/rotated(by:)-x75b.md)
+- [func rotated(by: Rotation3D) -> ScaledPose3D](./rotated%28by%29-x75b.md)
   Returns a scaled pose that results from applying the specified rotation.
-- [func concatenating(ScaledPose3D) -> ScaledPose3D](scaledpose3d/concatenating(_:)-c38k.md)
+- [func concatenating(ScaledPose3D) -> ScaledPose3D](./concatenating%28_%29-c38k.md)
   Returns a scaled pose that represents the concatenation of two scaled poses.
-- [func concatenating(Pose3D) -> ScaledPose3D](scaledpose3d/concatenating(_:)-2xzgs.md)
+- [func concatenating(Pose3D) -> ScaledPose3D](./concatenating%28_%29-2xzgs.md)
   Returns a scaled pose that represents the concatenation of two poses.
 
 

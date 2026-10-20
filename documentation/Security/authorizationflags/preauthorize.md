@@ -1,7 +1,8 @@
 # preAuthorize
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that instructs the Security Server to preauthorize the rights requested.
 
@@ -13,6 +14,10 @@ A flag that instructs the Security Server to preauthorize the rights requested.
 
 ```swift
 static var preAuthorize: AuthorizationFlags { get }
+```
+
+```c
+kAuthorizationFlagPreAuthorize
 ```
 
 

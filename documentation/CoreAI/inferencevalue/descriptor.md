@@ -1,7 +1,8 @@
 # InferenceValue.Descriptor
 
 **Framework**: Core AI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A description of the type and shape of an inference value.
 
@@ -20,27 +21,28 @@ enum Descriptor
 
 ## Mentions
 
-- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+- [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
 #### Overview
 
-You obtain descriptors from [`InferenceFunctionDescriptor`](inferencefunctiondescriptor.md) to inspect what kind of value a function expects for each input or output.
+You obtain descriptors from [`InferenceFunctionDescriptor`](../inferencefunctiondescriptor.md) to inspect what kind of value a function expects for each input or output.
 
 ## Topics
 
 ### Defining value descriptors
-- [InferenceValue.Descriptor.image(_:)](inferencevalue/descriptor/image(_:).md)
-- [InferenceValue.Descriptor.ndArray(_:)](inferencevalue/descriptor/ndarray(_:).md)
+- [InferenceValue.Descriptor.image(_:)](./descriptor/image%28_%29.md)
+- [InferenceValue.Descriptor.ndArray(_:)](./descriptor/ndarray%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [InferenceValue.Kind](inferencevalue/kind-swift.enum.md)
+### Describing values
+- [InferenceValue.Kind](./kind-swift.enum.md)
   The type of data an inference value contains.
 
 

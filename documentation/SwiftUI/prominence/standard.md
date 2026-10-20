@@ -1,7 +1,8 @@
 # Prominence.standard
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The standard prominence.
 
@@ -22,7 +23,8 @@ case standard
 
 ## See Also
 
-- [Prominence.increased](prominence/increased.md)
+### Getting prominence options
+- [Prominence.increased](./increased.md)
   An increased prominence.
 
 

@@ -1,7 +1,8 @@
 # currentNSToolbarSection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The toolbar section that the navigation bar is currently using.
 
@@ -17,17 +18,22 @@ The toolbar section that the navigation bar is currently using.
 var currentNSToolbarSection: UINavigationBar.NSToolbarSection { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) UINavigationBarNSToolbarSection currentNSToolbarSection;
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
 ## See Also
 
-- [var behavioralStyle: UIBehavioralStyle](uinavigationbar/behavioralstyle.md)
+### Building with Mac Catalyst
+- [var behavioralStyle: UIBehavioralStyle](./behavioralstyle.md)
   The behavioral style of the navigation bar.
-- [var preferredBehavioralStyle: UIBehavioralStyle](uinavigationbar/preferredbehavioralstyle.md)
+- [var preferredBehavioralStyle: UIBehavioralStyle](./preferredbehavioralstyle.md)
   The preferred behavioral style of the navigation bar.
-- [UINavigationBar.NSToolbarSection](uinavigationbar/nstoolbarsection.md)
+- [UINavigationBar.NSToolbarSection](./nstoolbarsection.md)
   Constants that determine how the system hosts the navigation bar in an AppKit toolbar.
 
 

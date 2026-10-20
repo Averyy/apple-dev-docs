@@ -1,18 +1,21 @@
 # AVQueuedSampleBufferRenderingStatus.rendering
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The object is rendering the sample buffer.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 10.2+
-- visionOS 1.0+
-- watchOS 1.0+
+- iOS 8.0+ - Deprecated in 27.0
+- iPadOS 8.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 10.2+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+- watchOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use EnqueueResult from enqueue(_:) and enqueueImmediately(_:), and RenderingEvent from renderingEventsAfterFinishedEnqueuing instead
 
 ## Declaration
 
@@ -20,11 +23,16 @@ The object is rendering the sample buffer.
 case rendering
 ```
 
+```c
+AVQueuedSampleBufferRenderingStatusRendering
+```
+
 ## See Also
 
-- [AVQueuedSampleBufferRenderingStatus.unknown](avqueuedsamplebufferrenderingstatus/unknown.md)
+### Status values
+- [AVQueuedSampleBufferRenderingStatus.unknown](./unknown.md)
   The object doesn’t have any sample buffers enqueued.
-- [AVQueuedSampleBufferRenderingStatus.failed](avqueuedsamplebufferrenderingstatus/failed.md)
+- [AVQueuedSampleBufferRenderingStatus.failed](./failed.md)
   The object can no longer render sample buffers because of an error.
 
 

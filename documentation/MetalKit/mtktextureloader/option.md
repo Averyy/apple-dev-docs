@@ -1,7 +1,8 @@
 # MTKTextureLoader.Option
 
 **Framework**: MetalKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Keys and values used to specify loading options.
 
@@ -19,47 +20,51 @@ Keys and values used to specify loading options.
 struct Option
 ```
 
+```c
+typedef NSString * MTKTextureLoaderOption;
+```
+
 ## Topics
 
 ### Creating Texture Loading Options
-- [init(rawValue: String)](mtktextureloader/option/init(rawvalue:).md)
+- [init(rawValue: String)](./option/init%28rawvalue%29.md)
   Creates a texture loader option from a raw string value.
 ### Specifying Mipmap Options
-- [static let allocateMipmaps: MTKTextureLoader.Option](mtktextureloader/option/allocatemipmaps.md)
+- [static let allocateMipmaps: MTKTextureLoader.Option](./option/allocatemipmaps.md)
   A key used to specify whether the texture loader should allocate memory for mipmaps in the texture.
-- [static let generateMipmaps: MTKTextureLoader.Option](mtktextureloader/option/generatemipmaps.md)
+- [static let generateMipmaps: MTKTextureLoader.Option](./option/generatemipmaps.md)
   A key used to specify whether the texture loader should generate mipmaps for the texture.
 ### Specifying Resource Options
-- [static let textureCPUCacheMode: MTKTextureLoader.Option](mtktextureloader/option/texturecpucachemode.md)
+- [static let textureCPUCacheMode: MTKTextureLoader.Option](./option/texturecpucachemode.md)
   A key used to specify the CPU cache mode for the texture.
-- [static let textureStorageMode: MTKTextureLoader.Option](mtktextureloader/option/texturestoragemode.md)
+- [static let textureStorageMode: MTKTextureLoader.Option](./option/texturestoragemode.md)
   A key used to specify the storage mode for the texture.
-- [static let textureUsage: MTKTextureLoader.Option](mtktextureloader/option/textureusage.md)
+- [static let textureUsage: MTKTextureLoader.Option](./option/textureusage.md)
   A key used to specify the intended usage of the texture.
 ### Specifying Origin Information
-- [static let origin: MTKTextureLoader.Option](mtktextureloader/option/origin.md)
+- [static let origin: MTKTextureLoader.Option](./option/origin.md)
   A key used to specify when to flip the pixel coordinates of the texture.
-- [MTKTextureLoader.Origin](mtktextureloader/origin.md)
+- [MTKTextureLoader.Origin](./origin.md)
   Options for specifying when to flip the pixel coordinates of the texture.
 ### Specifying Cube Layout
-- [static let cubeLayout: MTKTextureLoader.Option](mtktextureloader/option/cubelayout.md)
+- [static let cubeLayout: MTKTextureLoader.Option](./option/cubelayout.md)
   A key used to specify how cube texture data is arranged in the source image.
-- [MTKTextureLoader.CubeLayout](mtktextureloader/cubelayout.md)
+- [MTKTextureLoader.CubeLayout](./cubelayout.md)
   Options for specifying how cube texture data is arranged in the source image.
 ### Specifying sRGB Options
-- [static let SRGB: MTKTextureLoader.Option](mtktextureloader/option/srgb.md)
+- [static let SRGB: MTKTextureLoader.Option](./option/srgb.md)
   A key used to specify whether the texture data is stored as sRGB image data.
 ### Type Properties
-- [static let loadAsArray: MTKTextureLoader.Option](mtktextureloader/option/loadasarray.md)
+- [static let loadAsArray: MTKTextureLoader.Option](./option/loadasarray.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

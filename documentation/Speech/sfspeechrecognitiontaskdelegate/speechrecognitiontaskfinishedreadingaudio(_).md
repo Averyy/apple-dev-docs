@@ -1,7 +1,8 @@
 # speechRecognitionTaskFinishedReadingAudio(_:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the task is no longer accepting new audio input, even if final processing is in progress.
 
@@ -18,13 +19,18 @@ Tells the delegate when the task is no longer accepting new audio input, even if
 optional func speechRecognitionTaskFinishedReadingAudio(_ task: SFSpeechRecognitionTask)
 ```
 
+```objc
+- (void) speechRecognitionTaskFinishedReadingAudio:(SFSpeechRecognitionTask *) task;
+```
+
 ## Parameters
 
-- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object) that represents the request.
+- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](../sfspeechrecognitiontask.md) object) that represents the request.
 
 ## See Also
 
-- [func speechRecognitionDidDetectSpeech(SFSpeechRecognitionTask)](sfspeechrecognitiontaskdelegate/speechrecognitiondiddetectspeech(_:).md)
+### Tracking task progress
+- [func speechRecognitionDidDetectSpeech(SFSpeechRecognitionTask)](./speechrecognitiondiddetectspeech%28_%29.md)
   Tells the delegate when the task first detects speech in the source audio.
 
 

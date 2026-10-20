@@ -1,7 +1,8 @@
 # currentContentType
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 `NSSavePanel`:The current type. If set to `nil`, resets to the first allowed content type. Returns `nil` if `allowedContentTypes` is empty. `NSOpenPanel`: Not used.
 
@@ -12,6 +13,10 @@
 
 ```swift
 var currentContentType: UTType? { get set }
+```
+
+```objc
+@property (copy, nullable) UTType * currentContentType;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # applyLookup(_:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a lookup table to transform an 8-bit planar image.
 
@@ -11,7 +12,7 @@ Applies a lookup table to transform an 8-bit planar image.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -20,11 +21,13 @@ Applies a lookup table to transform an 8-bit planar image.
 func applyLookup(_ lookupTable: [Pixel_8], destination: vImage.PixelBuffer<vImage.Planar8>)
 ```
 
+Available when `Format` is `vImage.Planar8`.
+
 #### Discussion
 
 You can use this function to create custom response curves (that is, the value of an output pixel based on the value of the corresponding input pixel). Changing the shape of the response curve changes the brightness and contrast of an image.
 
-The following code creates a simple lookup table that’s based on a sigmoid function. This example uses [`BNNS`](bnns.md) to create 256 `Float` values in the range `0...1` that describe a sigmoid curve. The code scales the sigmoid curve values to `0...255` and returns [`Pixel_8`](pixel_8.md) values that are suitable for use as a lookup table:
+The following code creates a simple lookup table that’s based on a sigmoid function. This example uses [`BNNS`](../../bnns.md) to create 256 `Float` values in the range `0...1` that describe a sigmoid curve. The code scales the sigmoid curve values to `0...255` and returns [`Pixel_8`](../../pixel_8.md) values that are suitable for use as a lookup table:
 
 ```swift
 let count = 256
@@ -66,9 +69,9 @@ let lookup = descriptor.data!.withMemoryRebound(to: Float.self,
 
 The graph below visualizes the values in the lookup table:
 
-![A line chart showing an s-shaped sigmoid curve.](/images/com.apple.accelerate/media-4164717@2x.png)
+![A line chart showing an s-shaped sigmoid curve.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4164717@2x.png)
 
-Use the following code to apply the lookup table to a [`vImage.Planar8`](vimage/planar8.md) source buffer and write the result to a [`vImage.Planar8`](vimage/planar8.md) destination buffer:
+Use the following code to apply the lookup table to a [`vImage.Planar8`](../planar8.md) source buffer and write the result to a [`vImage.Planar8`](../planar8.md) destination buffer:
 
 ```swift
 let destinationBuffer = vImage.PixelBuffer(
@@ -80,24 +83,25 @@ sourceBuffer.applyLookup(lookup, destination: destinationBuffer)
 
 The images below show an example grayscale source image on the left and the transformed result on the right. The operation flattens the response for very dark and very bright areas and increases the contrast in the destination image.
 
-![Two versions of a close-up image of a fruit tree. On the left is the original grayscale image, and on the right is the transformed high-contrast image.](/images/com.apple.accelerate/media-4164714@2x.png)
+![Two versions of a close-up image of a fruit tree. On the left is the original grayscale image, and on the right is the transformed high-contrast image.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4164714@2x.png)
 
 ## Parameters
 
-- `lookupTable`: A lookup table that contains 256 [`Pixel_8888`](pixel_8888.md) ARGB values. The function discards the alpha component.
+- `lookupTable`: A lookup table that contains 256 [`Pixel_8888`](../../pixel_8888.md) ARGB values. The function discards the alpha component.
 - `destination`: The destination pixel buffer.
 
 ## See Also
 
-- [func applyLookup([Pixel_F], destination: vImage.PixelBuffer<vImage.PlanarF>)](vimage/pixelbuffer/applylookup(_:destination:)-14pjo.md)
+### Transforming with a lookup table
+- [func applyLookup([Pixel_F], destination: vImage.PixelBuffer<vImage.PlanarF>)](./applylookup%28_,destination%29-14pjo.md)
   Applies a lookup table to transform an 8-bit planar image to a 32-bit planar image.
-- [func applyLookup([Pixel_16U], destination: vImage.PixelBuffer<vImage.Planar16U>)](vimage/pixelbuffer/applylookup(_:destination:)-5oi4o.md)
+- [func applyLookup([Pixel_16U], destination: vImage.PixelBuffer<vImage.Planar16U>)](./applylookup%28_,destination%29-5oi4o.md)
   Applies a lookup table to transform an 8-bit planar image to a 16-bit planar image.
-- [func applyLookup([Pixel_8888], destination: vImage.PixelBuffer<vImage.Interleaved8x3>)](vimage/pixelbuffer/applylookup(_:destination:)-3ruls.md)
+- [func applyLookup([Pixel_8888], destination: vImage.PixelBuffer<vImage.Interleaved8x3>)](./applylookup%28_,destination%29-3ruls.md)
   Applies a lookup table to transform an 8-bit planar image to an 8-bit-per-channel, three-channel interleaved image.
-- [func applyLookup([Pixel_FFFF], destination: vImage.PixelBuffer<vImage.InterleavedFx3>)](vimage/pixelbuffer/applylookup(_:destination:)-1tsb5.md)
+- [func applyLookup([Pixel_FFFF], destination: vImage.PixelBuffer<vImage.InterleavedFx3>)](./applylookup%28_,destination%29-1tsb5.md)
   Applies a lookup table to transform an 8-bit planar image to a 32-bit-per-channel, three-channel interleaved image.
-- [func applyLookup(alphaTable: [Pixel_8]?, redTable: [Pixel_8]?, greenTable: [Pixel_8]?, blueTable: [Pixel_8]?, destination: vImage.PixelBuffer<vImage.Interleaved8x4>)](vimage/pixelbuffer/applylookup(alphatable:redtable:greentable:bluetable:destination:).md)
+- [func applyLookup(alphaTable: [Pixel_8]?, redTable: [Pixel_8]?, greenTable: [Pixel_8]?, blueTable: [Pixel_8]?, destination: vImage.PixelBuffer<vImage.Interleaved8x4>)](./applylookup%28alphatable,redtable,greentable,bluetable,destination%29.md)
   Applies a set of four lookup tables to transform an interleaved, four-channel 8-bit image.
 
 

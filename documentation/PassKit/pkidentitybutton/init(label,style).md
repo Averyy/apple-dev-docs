@@ -1,7 +1,8 @@
 # init(label:style:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new identity button with the label and style.
 
@@ -15,6 +16,10 @@ Creates a new identity button with the label and style.
 
 ```swift
 init(label: PKIdentityButton.Label, style: PKIdentityButton.Style)
+```
+
+```objc
+- (instancetype) initWithLabel:(PKIdentityButtonLabel) label style:(PKIdentityButtonStyle) style;
 ```
 
 

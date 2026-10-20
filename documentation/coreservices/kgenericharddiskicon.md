@@ -1,7 +1,8 @@
 # kGenericHardDiskIcon
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 16.0+

@@ -1,7 +1,8 @@
 # invalidRecipients
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates one or more of the message’s recipients are invalid.
 
@@ -16,11 +17,12 @@ static var invalidRecipients: MEComposeSessionError.Code { get }
 
 ## See Also
 
-- [static var invalidBody: MEComposeSessionError.Code](mecomposesessionerror/invalidbody.md)
+### Indicating Erroneous States
+- [static var invalidBody: MEComposeSessionError.Code](./invalidbody.md)
   An error that indicates the message’s body is invalid.
-- [static var invalidHeaders: MEComposeSessionError.Code](mecomposesessionerror/invalidheaders.md)
+- [static var invalidHeaders: MEComposeSessionError.Code](./invalidheaders.md)
   An error that indicates one or more of the message’s headers are invalid.
-- [let MEComposeSessionErrorDomain: String](mecomposesessionerrordomain.md)
+- [let MEComposeSessionErrorDomain: String](../mecomposesessionerrordomain.md)
   A constant for the compose session error domain.
 
 

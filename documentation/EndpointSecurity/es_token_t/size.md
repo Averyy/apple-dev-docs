@@ -1,13 +1,14 @@
 # size
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the data buffer, in bytes.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ The size of the data buffer, in bytes.
 var size: Int
 ```
 
+```c
+size_t size;
+```
+
 ## See Also
 
-- [var data: UnsafePointer<UInt8>!](es_token_t/data.md)
+### Inspecting the Token
+- [var data: UnsafePointer<UInt8>!](./data.md)
   A data buffer.
 
 

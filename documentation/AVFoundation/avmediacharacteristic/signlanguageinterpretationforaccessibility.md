@@ -1,7 +1,8 @@
 # signLanguageInterpretationForAccessibility
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A media characteristic that indicates that a track or media selection option provides a sign language interpretation of the spoken dialog and other significant aspects of the presentation.
 
@@ -18,6 +19,10 @@ A media characteristic that indicates that a track or media selection option pro
 
 ```swift
 static let signLanguageInterpretationForAccessibility: AVMediaCharacteristic
+```
+
+```c
+extern AVMediaCharacteristic const AVMediaCharacteristicSignLanguageInterpretationForAccessibility;
 ```
 
 #### Discussion

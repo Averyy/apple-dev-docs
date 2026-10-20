@@ -1,7 +1,8 @@
 # components(separatedBy:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing substrings from the receiver that have been divided by characters in a given set.
 
@@ -20,6 +21,10 @@ Returns an array containing substrings from the receiver that have been divided 
 func components(separatedBy separator: CharacterSet) -> [String]
 ```
 
+```objc
+- (NSArray<NSString *> *) componentsSeparatedByCharactersInSet:(NSCharacterSet *) separator;
+```
+
 #### Return Value
 
 An `NSArray` object containing substrings from the receiver that have been divided by characters in `separator`.
@@ -34,15 +39,16 @@ The substrings in the array appear in the order they did in the receiver. Adjace
 
 ## See Also
 
-- [func components(separatedBy: String) -> [String]](nsstring/components(separatedby:)-238fy.md)
+### Dividing Strings
+- [func components(separatedBy: String) -> [String]](./components%28separatedby%29-238fy.md)
   Returns an array containing substrings from the receiver that have been divided by a given separator.
-- [func trimmingCharacters(in: CharacterSet) -> String](nsstring/trimmingcharacters(in:).md)
+- [func trimmingCharacters(in: CharacterSet) -> String](./trimmingcharacters%28in%29.md)
   Returns a new string made by removing from both ends of the receiver characters contained in a given character set.
-- [func substring(from: Int) -> String](nsstring/substring(from:).md)
+- [func substring(from: Int) -> String](./substring%28from%29.md)
   Returns a new string containing the characters of the receiver from the one at a given index to the end.
-- [func substring(with: NSRange) -> String](nsstring/substring(with:).md)
+- [func substring(with: NSRange) -> String](./substring%28with%29.md)
   Returns a string object containing the characters of the receiver that lie within a given range.
-- [func substring(to: Int) -> String](nsstring/substring(to:).md)
+- [func substring(to: Int) -> String](./substring%28to%29.md)
   Returns a new string containing the characters of the receiver up to, but not including, the one at a given index.
 
 

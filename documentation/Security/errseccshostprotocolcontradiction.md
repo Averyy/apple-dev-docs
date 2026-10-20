@@ -1,7 +1,8 @@
 # errSecCSHostProtocolContradiction
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Host protocol violation: contradictory hosting modes.
 
@@ -13,6 +14,10 @@ Host protocol violation: contradictory hosting modes.
 
 ```swift
 var errSecCSHostProtocolContradiction: OSStatus { get }
+```
+
+```c
+errSecCSHostProtocolContradiction
 ```
 
 

@@ -1,7 +1,8 @@
 # type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The sample description type.
 
@@ -11,15 +12,16 @@ For QuickTime VR movies, this type should be `'qtvr'`.
 
 ## See Also
 
-- [size](quicktime_vr_sample_description/size.md)
+### Data fields
+- [size](./size.md)
   The size, in bytes, of the sample description header structure.
-- [reserved1](quicktime_vr_sample_description/reserved1.md)
+- [reserved1](./reserved1.md)
   Reserved.
-- [reserved2](quicktime_vr_sample_description/reserved2.md)
+- [reserved2](./reserved2.md)
   Reserved.
-- [dataRefIndex](quicktime_vr_sample_description/datarefindex.md)
+- [dataRefIndex](./datarefindex.md)
   Reserved.
-- [data](quicktime_vr_sample_description/data.md)
+- [data](./data.md)
   The VR world atom container.
 
 

@@ -1,7 +1,8 @@
 # titleLabel
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title for a header or footer.
 
@@ -14,9 +15,14 @@ The title for a header or footer.
 var titleLabel: UILabel? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UILabel * titleLabel;
+```
+
 ## See Also
 
-- [var subtitleLabel: UILabel?](tvlockupheaderfooterview/subtitlelabel.md)
+### Adding Titles
+- [var subtitleLabel: UILabel?](./subtitlelabel.md)
   The subtitle for a header or footer.
 
 

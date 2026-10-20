@@ -1,7 +1,8 @@
 # setHostedPlayer(_:didConnect:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the connection status of a player in a hosted game.
 
@@ -19,13 +20,17 @@ Updates the connection status of a player in a hosted game.
 func setHostedPlayer(_ player: GKPlayer, didConnect connected: Bool)
 ```
 
+```objc
+- (void) setHostedPlayer:(GKPlayer *) player didConnect:(BOOL) connected;
+```
+
 ## Mentions
 
-- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+- [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
 
 #### Discussion
 
-When you connect or disconnect a player from your server in a hosted game, use this method to update the player’s status that appears in the matchmaker view controllers on other player’s devices. For example, invoke this method after you connect a player from the [`matchmakerViewController(_:hostedPlayerDidAccept:)`](gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller(_:hostedplayerdidaccept:).md) delegate method.
+When you connect or disconnect a player from your server in a hosted game, use this method to update the player’s status that appears in the matchmaker view controllers on other player’s devices. For example, invoke this method after you connect a player from the [`matchmakerViewController(_:hostedPlayerDidAccept:)`](../gkmatchmakerviewcontrollerdelegate/matchmakerviewcontroller%28_,hostedplayerdidaccept%29.md) delegate method.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ When you connect or disconnect a player from your server in a hosted game, use t
 
 ## See Also
 
-- [var isHosted: Bool](gkmatchmakerviewcontroller/ishosted.md)
+### Hosting matches
+- [var isHosted: Bool](./ishosted.md)
   A Boolean value that indicates whether the match is hosted or peer-to-peer.
 
 

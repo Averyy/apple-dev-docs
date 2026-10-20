@@ -1,7 +1,8 @@
 # init(asFolder:title:identifier:url:parentIdentifier:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.4+

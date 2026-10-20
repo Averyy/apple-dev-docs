@@ -1,7 +1,8 @@
 # tabBarController(_:sidebar:update:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called whenever the sidebar item’s `configurationState` changes or the item is reconfigured. The passed in item will accrue all modifications until the delegate requests for a new sidebar item from the delegate method `tabBarController:sidebar:itemForRequest:`
 
@@ -15,6 +16,10 @@ Called whenever the sidebar item’s `configurationState` changes or the item is
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, sidebar: UITabBarController.Sidebar, update item: UITabSidebarItem)
+```
+
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController sidebar:(UITabBarControllerSidebar *) sidebar updateItem:(UITabSidebarItem *) item;
 ```
 
 

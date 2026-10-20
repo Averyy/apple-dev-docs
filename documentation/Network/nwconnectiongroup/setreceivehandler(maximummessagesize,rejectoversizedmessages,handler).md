@@ -1,7 +1,8 @@
 # setReceiveHandler(maximumMessageSize:rejectOversizedMessages:handler:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a handler that receives inbound messages from members of the group.
 
@@ -23,9 +24,10 @@ final func setReceiveHandler(maximumMessageSize: Int = Int.max, rejectOversizedM
 
 ## See Also
 
-- [func send(content: Data?, to: NWEndpoint?, message: NWConnectionGroup.Message, completion: (NWError?) -> Void)](nwconnectiongroup/send(content:to:message:completion:).md)
+### Sending and Receiving Group Messages
+- [func send(content: Data?, to: NWEndpoint?, message: NWConnectionGroup.Message, completion: (NWError?) -> Void)](./send%28content,to,message,completion%29.md)
   Sends data to the entire group, or to a specific member of the group.
-- [NWConnectionGroup.Message](nwconnectiongroup/message.md)
+- [NWConnectionGroup.Message](./message.md)
   An object that represents a message that you send or receive within a group, and that contains protocol metadata and send properties.
 
 

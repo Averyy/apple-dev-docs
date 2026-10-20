@@ -1,7 +1,8 @@
 # subviews
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the view’s subviews.
 
@@ -18,15 +19,16 @@ An array that contains the view’s subviews.
 
 #### Overview
 
-This property inherits from [`UIView`](https://developer.apple.com/documentation/uikit/uiview).
+This property inherits from [`UIView`](../../UIKit/uiview.md).
 
 ## See Also
 
-- [func layoutSubviews()](roomcaptureview/layoutsubviews.md)
+### Accessing view features
+- [func layoutSubviews()](./layoutsubviews%28%29.md)
   Instructs the view’s subviews to position within the view.
-- [func encode(with: NSCoder)](roomcaptureview/encode(with:).md)
+- [func encode(with: NSCoder)](./encode%28with%29.md)
   Serializes the view to the specified coder.
-- [func traitCollectionDidChange(UITraitCollection?)](roomcaptureview/traitcollectiondidchange(_:).md)
+- [func traitCollectionDidChange(UITraitCollection?)](./traitcollectiondidchange%28_%29.md)
   Notifies the view when the device orientation changes.
 
 

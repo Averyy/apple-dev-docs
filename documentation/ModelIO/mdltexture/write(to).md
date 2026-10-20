@@ -1,7 +1,8 @@
 # write(to:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the texture data to an image file at the specified URL.
 
@@ -19,9 +20,13 @@ Exports the texture data to an image file at the specified URL.
 func write(to URL: URL) -> Bool
 ```
 
+```objc
+- (BOOL) writeToURL:(NSURL *) URL;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if export succeeded; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if export succeeded; [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -33,9 +38,10 @@ Model I/O automatically infers the file format in which to export the image from
 
 ## See Also
 
-- [func write(to: URL, type: CFString) -> Bool](mdltexture/write(to:type:).md)
+### Exporting Textures
+- [func write(to: URL, type: CFString) -> Bool](./write%28to,type%29.md)
   Exports the texture data to an image file at the specified URL, of the specified type.
-- [func imageFromTexture() -> Unmanaged<CGImage>?](mdltexture/imagefromtexture.md)
+- [func imageFromTexture() -> Unmanaged<CGImage>?](./imagefromtexture%28%29.md)
   Exports the texture data as a CoreGraphics image.
 
 

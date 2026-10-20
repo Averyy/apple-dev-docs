@@ -1,7 +1,8 @@
 # init(devicePlacement:deviceCapabilities:primaryAudioSourceDeviceIdentifier:secondaryAudioSourceDeviceIdentifier:spatialExtensionDescription:)
 
 **Framework**: AudioAccessoryKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new device configuration with spatial audio support.
 

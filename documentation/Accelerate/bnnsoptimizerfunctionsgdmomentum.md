@@ -1,7 +1,8 @@
 # BNNSOptimizerFunctionSGDMomentum
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An optimizer function that updates parameters according to the stochastic gradient descent (SGD) with momentum algorithm.
 
@@ -20,9 +21,14 @@ An optimizer function that updates parameters according to the stochastic gradie
 var BNNSOptimizerFunctionSGDMomentum: BNNSOptimizerFunction { get }
 ```
 
+```c
+BNNSOptimizerFunctionSGDMomentum
+```
+
 ## See Also
 
-- [var BNNSOptimizerFunctionSGDMomentumWithClipping: BNNSOptimizerFunction](bnnsoptimizerfunctionsgdmomentumwithclipping.md)
+### SGD  Optimizer Functions
+- [var BNNSOptimizerFunctionSGDMomentumWithClipping: BNNSOptimizerFunction](./bnnsoptimizerfunctionsgdmomentumwithclipping.md)
   An optimizer function that updates parameters according to the stochastic gradient descent (SGD) with momentum algorithm and optionally clips the gradient by value or by norm.
 
 

@@ -1,7 +1,8 @@
 # errSecInvalidCertificateGroup
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid certificate group was detected.
 
@@ -18,6 +19,10 @@ An invalid certificate group was detected.
 
 ```swift
 var errSecInvalidCertificateGroup: OSStatus { get }
+```
+
+```c
+errSecInvalidCertificateGroup
 ```
 
 

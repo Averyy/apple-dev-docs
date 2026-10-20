@@ -1,7 +1,8 @@
 # setUserResources(_:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets additional resources for residency on all command buffers used by this simulation, replacing any previously added resources.
 
@@ -12,7 +13,7 @@ Sets additional resources for residency on all command buffers used by this simu
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

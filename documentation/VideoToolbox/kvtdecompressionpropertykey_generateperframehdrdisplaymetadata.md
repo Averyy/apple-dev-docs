@@ -1,7 +1,8 @@
 # kVTDecompressionPropertyKey_GeneratePerFrameHDRDisplayMetadata
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates to generate per frame HDR Metadata and attach it to the resulting decoded pixel buffers.
 
@@ -19,22 +20,27 @@ A key that indicates to generate per frame HDR Metadata and attach it to the res
 let kVTDecompressionPropertyKey_GeneratePerFrameHDRDisplayMetadata: CFString
 ```
 
+```c
+extern CFStringRef const kVTDecompressionPropertyKey_GeneratePerFrameHDRDisplayMetadata;
+```
+
 #### Discussion
 
-If the color space and YCbCr matrix match a supported HDR format such as HLG ([`kCMFormatDescriptionTransferFunction_ITU_R_2100_HLG`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptiontransferfunction_itu_r_2100_hlg)) the system analyzes the decoded frame and adds the metadata as an attachment to the pixel buffers.
+If the color space and YCbCr matrix match a supported HDR format such as HLG ([`kCMFormatDescriptionTransferFunction_ITU_R_2100_HLG`](../CoreMedia/kcmformatdescriptiontransferfunction_itu_r_2100_hlg.md)) the system analyzes the decoded frame and adds the metadata as an attachment to the pixel buffers.
 
 ## See Also
 
-- [let kVTDecompressionPropertyKey_DecoderProducesRAWOutput: CFString](kvtdecompressionpropertykey_decoderproducesrawoutput.md)
+### Post-Decompression Processing
+- [let kVTDecompressionPropertyKey_DecoderProducesRAWOutput: CFString](./kvtdecompressionpropertykey_decoderproducesrawoutput.md)
   A value that indicates whether the decoder can produce RAW output requiring a RAW processing session for post-decode processing.
-- [let kVTDecompressionPropertyKey_PixelTransferProperties: CFString](kvtdecompressionpropertykey_pixeltransferproperties.md)
+- [let kVTDecompressionPropertyKey_PixelTransferProperties: CFString](./kvtdecompressionpropertykey_pixeltransferproperties.md)
   Specific pixel transfer features to be used during decompression.
-- [let kVTDecompressionPropertyKey_PropagatePerFrameHDRDisplayMetadata: CFString](kvtdecompressionpropertykey_propagateperframehdrdisplaymetadata.md)
-- [let kVTDecompressionPropertyKey_RequestRAWOutput: CFString](kvtdecompressionpropertykey_requestrawoutput.md)
+- [let kVTDecompressionPropertyKey_PropagatePerFrameHDRDisplayMetadata: CFString](./kvtdecompressionpropertykey_propagateperframehdrdisplaymetadata.md)
+- [let kVTDecompressionPropertyKey_RequestRAWOutput: CFString](./kvtdecompressionpropertykey_requestrawoutput.md)
   For decoders that produce RAW output, this property requests that the decompression session provides unprocessed output.
-- [let kVTDecompressionPropertyKey_UsingGPURegistryID: CFString](kvtdecompressionpropertykey_usinggpuregistryid.md)
-- [let kVTVideoDecoderSpecification_PreferredDecoderGPURegistryID: CFString](kvtvideodecoderspecification_preferreddecodergpuregistryid.md)
-- [let kVTVideoDecoderSpecification_RequiredDecoderGPURegistryID: CFString](kvtvideodecoderspecification_requireddecodergpuregistryid.md)
+- [let kVTDecompressionPropertyKey_UsingGPURegistryID: CFString](./kvtdecompressionpropertykey_usinggpuregistryid.md)
+- [let kVTVideoDecoderSpecification_PreferredDecoderGPURegistryID: CFString](./kvtvideodecoderspecification_preferreddecodergpuregistryid.md)
+- [let kVTVideoDecoderSpecification_RequiredDecoderGPURegistryID: CFString](./kvtvideodecoderspecification_requireddecodergpuregistryid.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # onTapGesture(count:perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when this view recognizes a tap gesture.
 
@@ -25,7 +26,7 @@ func onTapGesture(count: Int = 1, perform action: @escaping () -> Void) -> some 
 
 Use this method to perform the specified `action` when the user clicks or taps on the view or container `count` times.
 
-> **Note**: If you create a control that’s functionally equivalent to a [`Button`](button.md), use [`ButtonStyle`](buttonstyle.md) to create a customized button instead.
+> **Note**: If you create a control that’s functionally equivalent to a [`Button`](../button.md), use [`ButtonStyle`](../buttonstyle.md) to create a customized button instead.
 
 In the example below, the color of the heart images changes to a random color from the `colors` array whenever the user clicks or taps on the view twice:
 
@@ -47,7 +48,7 @@ struct TapGestureExample: View {
 }
 ```
 
-![A screenshot of a view of a heart.](/images/com.apple.SwiftUI/SwiftUI-View-TapGesture@2x.png)
+![A screenshot of a view of a heart.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-TapGesture@2x.png)
 
 ## Parameters
 
@@ -56,11 +57,12 @@ struct TapGestureExample: View {
 
 ## See Also
 
-- [func onTapGesture(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds, perform: (CGPoint) -> Void) -> some View](view/ontapgesture(count:coordinatespace:inputkinds:perform:).md)
+### Recognizing tap gestures
+- [func onTapGesture(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds, perform: (CGPoint) -> Void) -> some View](./ontapgesture%28count,coordinatespace,inputkinds,perform%29.md)
   Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
-- [struct TapGesture](tapgesture.md)
+- [struct TapGesture](../tapgesture.md)
   A gesture that recognizes one or more taps.
-- [struct SpatialTapGesture](spatialtapgesture.md)
+- [struct SpatialTapGesture](../spatialtapgesture.md)
   A gesture that recognizes one or more taps and reports their location.
 
 

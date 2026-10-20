@@ -1,7 +1,8 @@
 # initialCapacity
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of allocations a new residency set can store without reallocating memory.
 
@@ -19,6 +20,10 @@ The number of allocations a new residency set can store without reallocating mem
 var initialCapacity: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger initialCapacity;
+```
+
 #### Discussion
 
 Reduce the memory reallocations the set needs to make by setting the property to a value large enough to hold the allocations you expect. You can leave the property at its default value of `0`, which tells Metal to give the residency set the standard starting capacity.
@@ -27,7 +32,8 @@ Reduce the memory reallocations the set needs to make by setting the property to
 
 ## See Also
 
-- [var label: String?](mtlresidencysetdescriptor/label.md)
+### Configuring the residency set
+- [var label: String?](./label.md)
   An optional name that can help you identify a residency set you create with the descriptor.
 
 

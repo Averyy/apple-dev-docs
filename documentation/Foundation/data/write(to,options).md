@@ -1,7 +1,8 @@
 # write(to:options:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the contents of the data buffer to a location.
 
@@ -27,9 +28,10 @@ func write(to url: URL, options: Data.WritingOptions = []) throws
 
 ## See Also
 
-- [typealias ReadingOptions](data/readingoptions.md)
+### Reading and Writing Data
+- [typealias ReadingOptions](./readingoptions.md)
   Options to control the reading of data from a URL.
-- [typealias WritingOptions](data/writingoptions.md)
+- [typealias WritingOptions](./writingoptions.md)
   Options to control the writing of data to a URL.
 
 

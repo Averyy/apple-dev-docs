@@ -1,7 +1,8 @@
 # cleanAperture
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,21 +21,22 @@ static let cleanAperture: CMFormatDescription.Extensions.Key
 
 ## See Also
 
-- [static let alphaChannelMode: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/alphachannelmode.md)
-- [static let alternativeTransferCharacteristics: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/alternativetransfercharacteristics.md)
-- [static let ambientViewingEnvironment: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/ambientviewingenvironment.md)
-- [static let auxiliaryTypeInfo: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/auxiliarytypeinfo.md)
-- [static let backgroundColor: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/backgroundcolor.md)
-- [static let bitsPerComponent: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/bitspercomponent.md)
-- [static let bytesPerRow: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/bytesperrow.md)
-- [static let chromaLocationBottomField: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/chromalocationbottomfield.md)
-- [static let chromaLocationTopField: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/chromalocationtopfield.md)
-- [static let colorPrimaries: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/colorprimaries.md)
-- [static let conformsToMPEG2VideoProfile: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/conformstompeg2videoprofile.md)
-- [static let containsAlphaChannel: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/containsalphachannel.md)
-- [static let contentLightLevelInfo: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/contentlightlevelinfo.md)
-- [static let defaultFontName: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/defaultfontname.md)
-- [static let defaultStyle: CMFormatDescription.Extensions.Key](cmformatdescription/extensions-swift.struct/key/defaultstyle.md)
+### Extension Keys
+- [static let alphaChannelMode: CMFormatDescription.Extensions.Key](./alphachannelmode.md)
+- [static let alternativeTransferCharacteristics: CMFormatDescription.Extensions.Key](./alternativetransfercharacteristics.md)
+- [static let ambientViewingEnvironment: CMFormatDescription.Extensions.Key](./ambientviewingenvironment.md)
+- [static let auxiliaryTypeInfo: CMFormatDescription.Extensions.Key](./auxiliarytypeinfo.md)
+- [static let backgroundColor: CMFormatDescription.Extensions.Key](./backgroundcolor.md)
+- [static let bitsPerComponent: CMFormatDescription.Extensions.Key](./bitspercomponent.md)
+- [static let bytesPerRow: CMFormatDescription.Extensions.Key](./bytesperrow.md)
+- [static let chromaLocationBottomField: CMFormatDescription.Extensions.Key](./chromalocationbottomfield.md)
+- [static let chromaLocationTopField: CMFormatDescription.Extensions.Key](./chromalocationtopfield.md)
+- [static let colorPrimaries: CMFormatDescription.Extensions.Key](./colorprimaries.md)
+- [static let conformsToMPEG2VideoProfile: CMFormatDescription.Extensions.Key](./conformstompeg2videoprofile.md)
+- [static let containsAlphaChannel: CMFormatDescription.Extensions.Key](./containsalphachannel.md)
+- [static let contentLightLevelInfo: CMFormatDescription.Extensions.Key](./contentlightlevelinfo.md)
+- [static let defaultFontName: CMFormatDescription.Extensions.Key](./defaultfontname.md)
+- [static let defaultStyle: CMFormatDescription.Extensions.Key](./defaultstyle.md)
 
 
 ---

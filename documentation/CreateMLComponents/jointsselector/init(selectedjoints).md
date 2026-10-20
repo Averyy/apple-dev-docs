@@ -1,7 +1,8 @@
 # init(selectedJoints:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a joint selector transformer using a list of joint keys to be selected.
 
@@ -25,7 +26,8 @@ init(selectedJoints: [JointKey])
 
 ## See Also
 
-- [init(ignoredJoints: [JointKey])](jointsselector/init(ignoredjoints:).md)
+### Creating a selector
+- [init(ignoredJoints: [JointKey])](./init%28ignoredjoints%29.md)
   Creates a joint selector transformer using a list of joint keys to be ignored.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func downloadLog(of type: MTRDiagnosticLogType, nodeID: NSNumber, timeout: TimeInterval, completion: @escaping @Sendable (URL?, (any Error)?) -> Void)
+```
+
+```swift
 func downloadLog(of type: MTRDiagnosticLogType, nodeID: NSNumber, timeout: TimeInterval) async throws -> URL
+```
+
+```objc
+- (void) downloadLogOfType:(MTRDiagnosticLogType) type nodeID:(NSNumber *) nodeID timeout:(NSTimeInterval) timeout completion:(void (^)(NSURL *url, NSError *error)) completion;
 ```
 
 

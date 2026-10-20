@@ -1,7 +1,8 @@
 # taskDescription
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An app-provided string value for the current task.
 
@@ -20,21 +21,26 @@ An app-provided string value for the current task.
 var taskDescription: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * taskDescription;
+```
+
 #### Discussion
 
 The system doesn’t interpret this value; use it for whatever purpose you see fit. For example, you could store a description of the task for debugging purposes, or a key to track the task in your own data structures.
 
 ## See Also
 
-- [var currentRequest: URLRequest?](urlsessiontask/currentrequest.md)
+### Obtaining general task information
+- [var currentRequest: URLRequest?](./currentrequest.md)
   The URL request object currently being handled by the task.
-- [var originalRequest: URLRequest?](urlsessiontask/originalrequest.md)
+- [var originalRequest: URLRequest?](./originalrequest.md)
   The original request object passed when the task was created.
-- [var response: URLResponse?](urlsessiontask/response.md)
+- [var response: URLResponse?](./response.md)
   The server’s response to the currently active request.
-- [var taskIdentifier: Int](urlsessiontask/taskidentifier.md)
+- [var taskIdentifier: Int](./taskidentifier.md)
   An identifier uniquely identifying the task within a given session.
-- [var error: (any Error)?](urlsessiontask/error.md)
+- [var error: (any Error)?](./error.md)
   An error object that indicates why the task failed.
 
 

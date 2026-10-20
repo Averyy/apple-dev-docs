@@ -1,7 +1,8 @@
 # call(withArguments:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invokes the value as a JavaScript function.
 
@@ -19,23 +20,28 @@ Invokes the value as a JavaScript function.
 func call(withArguments arguments: [Any]!) -> JSValue!
 ```
 
+```objc
+- (JSValue *) callWithArguments:(NSArray *) arguments;
+```
+
 #### Return Value
 
 The result of calling the value as a function, or `nil` if the value cannot be treated as a JavaScript function.
 
 #### Discussion
 
-In JavaScript, if a function does not explicitly return a value, it implicitly returns the value `undefined`—use the [`isUndefined`](jsvalue/isundefined.md) property to test for this result.
+In JavaScript, if a function does not explicitly return a value, it implicitly returns the value `undefined`—use the [`isUndefined`](./isundefined.md) property to test for this result.
 
 ## Parameters
 
-- `arguments`: The parameters to pass to the function. The objects in this array must be other [`JSValue`](jsvalue.md) objects or objects that can be converted to JavaScript values using the methods listed in the Creating JavaScript Values section in [`JSValue`](jsvalue.md).
+- `arguments`: The parameters to pass to the function. The objects in this array must be other [`JSValue`](../jsvalue.md) objects or objects that can be converted to JavaScript values using the methods listed in the Creating JavaScript Values section in [`JSValue`](../jsvalue.md).
 
 ## See Also
 
-- [func construct(withArguments: [Any]!) -> JSValue!](jsvalue/construct(witharguments:).md)
+### Working with Function and Constructor Values
+- [func construct(withArguments: [Any]!) -> JSValue!](./construct%28witharguments%29.md)
   Invokes the value as a JavaScript constructor.
-- [func invokeMethod(String!, withArguments: [Any]!) -> JSValue!](jsvalue/invokemethod(_:witharguments:).md)
+- [func invokeMethod(String!, withArguments: [Any]!) -> JSValue!](./invokemethod%28_,witharguments%29.md)
   Calls the named JavaScript method on the value.
 
 

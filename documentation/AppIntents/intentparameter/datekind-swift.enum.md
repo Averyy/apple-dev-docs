@@ -1,7 +1,8 @@
 # IntentParameter.DateKind
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -18,22 +19,25 @@
 enum DateKind
 ```
 
+Available when `Value` conforms to `_IntentValue` and `Sendable`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.DateKind.date](intentparameter/datekind-swift.enum/date.md)
-- [IntentParameter.DateKind.dateTime](intentparameter/datekind-swift.enum/datetime.md)
-- [IntentParameter.DateKind.time](intentparameter/datekind-swift.enum/time.md)
+- [IntentParameter.DateKind.date](./datekind-swift.enum/date.md)
+- [IntentParameter.DateKind.dateTime](./datekind-swift.enum/datetime.md)
+- [IntentParameter.DateKind.time](./datekind-swift.enum/time.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var dateKind: IntentParameter<Value>.DateKind?](intentparameter/datekind-15hd7.md)
+### Accessing the date kind
+- [var dateKind: IntentParameter<Value>.DateKind?](./datekind-15hd7.md)
 
 
 ---

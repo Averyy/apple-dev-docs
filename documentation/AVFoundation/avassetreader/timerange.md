@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range within the asset to read.
 
@@ -19,19 +20,24 @@ The time range within the asset to read.
 var timeRange: CMTimeRange { get set }
 ```
 
+```objc
+@property (nonatomic) CMTimeRange timeRange;
+```
+
 #### Discussion
 
-The default value is a time range with a start time of [`zero`](https://developer.apple.com/documentation/coremedia/cmtime/zero) and a duration of [`positiveInfinity`](https://developer.apple.com/documentation/coremedia/cmtime/positiveinfinity).
+The default value is a time range with a start time of [`zero`](../../CoreMedia/cmtime/zero.md) and a duration of [`positiveInfinity`](../../CoreMedia/cmtime/positiveinfinity.md).
 
 You can’t modify this value after reading starts.
 
 ## See Also
 
-- [var status: AVAssetReader.Status](avassetreader/status-swift.property.md)
+### Configuring reading
+- [var status: AVAssetReader.Status](./status-swift.property.md)
   The status of reading sample buffers from the asset.
-- [AVAssetReader.Status](avassetreader/status-swift.enum.md)
+- [AVAssetReader.Status](./status-swift.enum.md)
   Values that represent the possible states of an asset reader.
-- [var error: (any Error)?](avassetreader/error.md)
+- [var error: (any Error)?](./error.md)
   An error that describes the reason for a failure.
 
 

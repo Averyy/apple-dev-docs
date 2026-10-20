@@ -1,7 +1,8 @@
 # playImmediately
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the coordinator should begin playback as soon as possible, regardless of other participant’s readiness or suspensions.
 
@@ -17,6 +18,10 @@ Indicates that the coordinator should begin playback as soon as possible, regard
 
 ```swift
 static var playImmediately: AVDelegatingPlaybackCoordinatorRateChangeOptions { get }
+```
+
+```c
+AVDelegatingPlaybackCoordinatorRateChangeOptionPlayImmediately
 ```
 
 

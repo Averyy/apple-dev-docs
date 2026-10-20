@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Registers a block to be executed when a transition changes from interactive to non-interactive.
@@ -19,11 +20,15 @@ Registers a block to be executed when a transition changes from interactive to n
 func notifyWhenInteractionChanges(_ handler: @escaping (any UIViewControllerTransitionCoordinatorContext) -> Void)
 ```
 
+```objc
+- (void) notifyWhenInteractionChangesUsingBlock:(void (^)(id<UIViewControllerTransitionCoordinatorContext>context)) handler;
+```
+
 #### Discussion
 
-Your handler block is executed any time the transition changes from interactive to noninteractive, including when the transition ends or is canceled. When the user cancels a transition, UIKit executes your context block, calls the [`viewWillDisappear(_:)`](uiviewcontroller/viewwilldisappear(_:).md) method on the presented view controller, and finally calls the [`viewWillAppear(_:)`](uiviewcontroller/viewwillappear(_:).md) method on the original view controller to signal that it’s once again visible.
+Your handler block is executed any time the transition changes from interactive to noninteractive, including when the transition ends or is canceled. When the user cancels a transition, UIKit executes your context block, calls the [`viewWillDisappear(_:)`](../uiviewcontroller/viewwilldisappear%28_%29.md) method on the presented view controller, and finally calls the [`viewWillAppear(_:)`](../uiviewcontroller/viewwillappear%28_%29.md) method on the original view controller to signal that it’s once again visible.
 
-Use the [`isInteractive`](uiviewcontrollertransitioncoordinatorcontext/isinteractive.md) property of the context object to determine the current interactivity of the transition. You can also use the value of the [`isCancelled`](uiviewcontrollertransitioncoordinatorcontext/iscancelled.md) property to determine an appropriate course of action. For example, if the transition was canceled, you might remove any extra views that were added to the view hierarchy by a previous call to [`animate(alongsideTransition:completion:)`](uiviewcontrollertransitioncoordinator/animate(alongsidetransition:completion:).md) or [`animateAlongsideTransition(in:animation:completion:)`](uiviewcontrollertransitioncoordinator/animatealongsidetransition(in:animation:completion:).md).
+Use the [`isInteractive`](../uiviewcontrollertransitioncoordinatorcontext/isinteractive.md) property of the context object to determine the current interactivity of the transition. You can also use the value of the [`isCancelled`](../uiviewcontrollertransitioncoordinatorcontext/iscancelled.md) property to determine an appropriate course of action. For example, if the transition was canceled, you might remove any extra views that were added to the view hierarchy by a previous call to [`animate(alongsideTransition:completion:)`](./animate%28alongsidetransition,completion%29.md) or [`animateAlongsideTransition(in:animation:completion:)`](./animatealongsidetransition%28in,animation,completion%29.md).
 
 You can call this method multiple times to register multiple blocks. All of the registered blocks are executed when the transition state changes.
 
@@ -33,11 +38,12 @@ You can call this method multiple times to register multiple blocks. All of the 
 
 ## See Also
 
-- [func animate(alongsideTransition: ((any UIViewControllerTransitionCoordinatorContext) -> Void)?, completion: ((any UIViewControllerTransitionCoordinatorContext) -> Void)?) -> Bool](uiviewcontrollertransitioncoordinator/animate(alongsidetransition:completion:).md)
+### Responding to view controller transition progress
+- [func animate(alongsideTransition: ((any UIViewControllerTransitionCoordinatorContext) -> Void)?, completion: ((any UIViewControllerTransitionCoordinatorContext) -> Void)?) -> Bool](./animate%28alongsidetransition,completion%29.md)
   Runs the specified animations at the same time as the view controller transition animations.
-- [func animateAlongsideTransition(in: UIView?, animation: ((any UIViewControllerTransitionCoordinatorContext) -> Void)?, completion: ((any UIViewControllerTransitionCoordinatorContext) -> Void)?) -> Bool](uiviewcontrollertransitioncoordinator/animatealongsidetransition(in:animation:completion:).md)
+- [func animateAlongsideTransition(in: UIView?, animation: ((any UIViewControllerTransitionCoordinatorContext) -> Void)?, completion: ((any UIViewControllerTransitionCoordinatorContext) -> Void)?) -> Bool](./animatealongsidetransition%28in,animation,completion%29.md)
   Runs the specified animations in a view that’s outside of the designated container view.
-- [func notifyWhenInteractionEnds((any UIViewControllerTransitionCoordinatorContext) -> Void)](uiviewcontrollertransitioncoordinator/notifywheninteractionends(_:).md)
+- [func notifyWhenInteractionEnds((any UIViewControllerTransitionCoordinatorContext) -> Void)](./notifywheninteractionends%28_%29.md)
   Registers a block to be executed when a transition changes from interactive to non-interactive.
 
 

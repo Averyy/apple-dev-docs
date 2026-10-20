@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of progress reporting capability.
 
@@ -18,11 +19,16 @@ The kind of progress reporting capability.
 var kind: CLSProgressReportingCapability.Kind { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CLSProgressReportingCapabilityKind kind;
+```
+
 ## See Also
 
-- [var details: String?](clsprogressreportingcapability/details.md)
+### Characterizing the Capability
+- [var details: String?](./details.md)
   A description of the capability presented to teachers.
-- [CLSProgressReportingCapability.Kind](clsprogressreportingcapability/kind-swift.enum.md)
+- [CLSProgressReportingCapability.Kind](./kind-swift.enum.md)
   The available kinds of progress reporting that a context can perform.
 
 

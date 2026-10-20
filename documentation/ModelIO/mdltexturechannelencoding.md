@@ -1,9 +1,10 @@
 # MDLTextureChannelEncoding
 
 **Framework**: Model I/O  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-Options for the data size and type of texel channel values, used by the [`channelEncoding`](mdltexture/channelencoding.md) property.
+Options for the data size and type of texel channel values, used by the [`channelEncoding`](./mdltexture/channelencoding.md) property.
 
 **Availability**:
 - iOS 9.0+
@@ -19,44 +20,48 @@ Options for the data size and type of texel channel values, used by the [`channe
 enum MDLTextureChannelEncoding
 ```
 
+```c
+enum MDLTextureChannelEncoding : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MDLTextureChannelEncoding.uInt8](mdltexturechannelencoding/uint8-swift.enum.case.md)
+- [MDLTextureChannelEncoding.uInt8](./mdltexturechannelencoding/uint8-swift.enum.case.md)
   Each channel value per texel is an 8-bit unsigned integer.
-- [MDLTextureChannelEncoding.uInt16](mdltexturechannelencoding/uint16-swift.enum.case.md)
+- [MDLTextureChannelEncoding.uInt16](./mdltexturechannelencoding/uint16-swift.enum.case.md)
   Each channel value per texel is a 16-bit unsigned integer.
-- [MDLTextureChannelEncoding.uInt24](mdltexturechannelencoding/uint24-swift.enum.case.md)
+- [MDLTextureChannelEncoding.uInt24](./mdltexturechannelencoding/uint24-swift.enum.case.md)
   Each channel value per texel is a 24-bit unsigned integer.
-- [MDLTextureChannelEncoding.uInt32](mdltexturechannelencoding/uint32-swift.enum.case.md)
+- [MDLTextureChannelEncoding.uInt32](./mdltexturechannelencoding/uint32-swift.enum.case.md)
   Each channel value per texel is a 32-bit unsigned integer.
-- [MDLTextureChannelEncoding.float16](mdltexturechannelencoding/float16.md)
+- [MDLTextureChannelEncoding.float16](./mdltexturechannelencoding/float16.md)
   Each channel value per texel is a 16-bit floating-point value.
-- [MDLTextureChannelEncoding.float32](mdltexturechannelencoding/float32.md)
+- [MDLTextureChannelEncoding.float32](./mdltexturechannelencoding/float32.md)
   Each channel value per texel is a 32-bit floating-point value.
 ### Enumeration Cases
-- [MDLTextureChannelEncoding.float16SR](mdltexturechannelencoding/float16sr.md)
+- [MDLTextureChannelEncoding.float16SR](./mdltexturechannelencoding/float16sr.md)
 ### Initializers
-- [init?(rawValue: Int)](mdltexturechannelencoding/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mdltexturechannelencoding/init%28rawvalue%29.md)
 ### Type Properties
-- [static var uint16: MDLTextureChannelEncoding](mdltexturechannelencoding/uint16-swift.type.property.md)
+- [static var uint16: MDLTextureChannelEncoding](./mdltexturechannelencoding/uint16-swift.type.property.md)
   Each channel value per texel is a 16-bit unsigned integer.
-- [static var uint24: MDLTextureChannelEncoding](mdltexturechannelencoding/uint24-swift.type.property.md)
+- [static var uint24: MDLTextureChannelEncoding](./mdltexturechannelencoding/uint24-swift.type.property.md)
   Each channel value per texel is a 24-bit unsigned integer.
-- [static var uint32: MDLTextureChannelEncoding](mdltexturechannelencoding/uint32-swift.type.property.md)
+- [static var uint32: MDLTextureChannelEncoding](./mdltexturechannelencoding/uint32-swift.type.property.md)
   Each channel value per texel is a 32-bit unsigned integer.
-- [static var uint8: MDLTextureChannelEncoding](mdltexturechannelencoding/uint8-swift.type.property.md)
+- [static var uint8: MDLTextureChannelEncoding](./mdltexturechannelencoding/uint8-swift.type.property.md)
   Each channel value per texel is an 8-bit unsigned integer.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

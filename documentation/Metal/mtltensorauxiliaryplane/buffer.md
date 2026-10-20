@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The buffer that provides the underlying storage for this plane, or `nil` if no buffer was provided at initialization.
@@ -18,6 +19,10 @@ The buffer that provides the underlying storage for this plane, or `nil` if no b
 
 ```swift
 var buffer: (any MTLBuffer)? { get }
+```
+
+```objc
+@property (readonly, nullable) id<MTLBuffer> buffer;
 ```
 
 

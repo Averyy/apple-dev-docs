@@ -1,7 +1,8 @@
 # HIShapeOffset(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeOffset(_ inShape: HIMutableShape!, _ inDX: CGFloat, _ inDY: CGFloat) -> OSStatus
+```
+
+```c
+OSStatus HIShapeOffset(HIMutableShapeRef inShape, CGFloat inDX, CGFloat inDY);
 ```
 
 

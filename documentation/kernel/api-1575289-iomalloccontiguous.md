@@ -1,7 +1,8 @@
 # IOMallocContiguous
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Deprecated - use IOBufferMemoryDescriptor. Allocates wired memory in the kernel map, with an alignment restriction and physically contiguous.
 
@@ -10,11 +11,11 @@ Deprecated - use IOBufferMemoryDescriptor. Allocates wired memory in the kernel 
 
 ## Declaration
 
-```swift
+```c
 void * IOMallocContiguous(vm_size_t size, vm_size_t alignment, IOPhysicalAddress *physicalAddress);
 ```
 
-#### Return_value
+#### Return Value
 
 Virtual address of the allocated memory, or zero on failure.
 

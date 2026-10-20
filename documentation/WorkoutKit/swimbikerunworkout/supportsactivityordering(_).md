@@ -1,7 +1,8 @@
 # supportsActivityOrdering(_:)
 
 **Framework**: WorkoutKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the system supports a multisport workout with the specified list of activities.
 
@@ -24,9 +25,10 @@ static func supportsActivityOrdering(_ activities: [SwimBikeRunWorkout.Activity]
 
 ## See Also
 
-- [init(activities: [SwimBikeRunWorkout.Activity], displayName: String?)](swimbikerunworkout/init(activities:displayname:).md)
+### Creating new multisport workouts.
+- [init(activities: [SwimBikeRunWorkout.Activity], displayName: String?)](./init%28activities,displayname%29.md)
   Creates a new multisport workout for the specified activities.
-- [SwimBikeRunWorkout.Activity](swimbikerunworkout/activity.md)
+- [SwimBikeRunWorkout.Activity](./activity.md)
   An activity in a multisport workout.
 
 

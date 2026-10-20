@@ -1,7 +1,8 @@
 # customCommand(requestFlags:customCommandCode:customRequestParameters:resultHandler:)
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+

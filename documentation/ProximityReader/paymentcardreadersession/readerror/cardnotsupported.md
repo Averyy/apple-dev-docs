@@ -1,7 +1,8 @@
 # PaymentCardReaderSession.ReadError.cardNotSupported
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The card is not supported by the current reader’s configuration.
 

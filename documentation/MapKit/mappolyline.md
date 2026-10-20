@@ -1,7 +1,8 @@
 # MapPolyline
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An open polygon overlay consisting of one or more connected line segments.
 
@@ -11,7 +12,7 @@ An open polygon overlay consisting of one or more connected line segments.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,55 +23,56 @@ struct MapPolyline
 
 #### Overview
 
-Use this view to create map polylines instances in the closure you provide to the `content` parameter in the [`Map`](map.md) initializers.
+Use this view to create map polylines instances in the closure you provide to the `content` parameter in the [`Map`](./map.md) initializers.
 
 ## Topics
 
 ### Creating a polyline
-- [init(MKPolyline)](mappolyline/init(_:)-93u7w.md)
+- [init(MKPolyline)](./mappolyline/init%28_%29-93u7w.md)
   Creates a polyline from polyline you provide.
-- [init(MKRoute)](mappolyline/init(_:)-5p2kx.md)
+- [init(MKRoute)](./mappolyline/init%28_%29-5p2kx.md)
   Creates a polyline that traces the route you provide.
-- [init(coordinates: [CLLocationCoordinate2D], contourStyle: MapPolyline.ContourStyle)](mappolyline/init(coordinates:contourstyle:).md)
+- [init(coordinates: [CLLocationCoordinate2D], contourStyle: MapPolyline.ContourStyle)](./mappolyline/init%28coordinates,contourstyle%29.md)
   Creates a polyline that traces a path between the given coordinates using the specifed contour style.
-- [init(points: [MKMapPoint], contourStyle: MapPolyline.ContourStyle)](mappolyline/init(points:contourstyle:).md)
+- [init(points: [MKMapPoint], contourStyle: MapPolyline.ContourStyle)](./mappolyline/init%28points,contourstyle%29.md)
   Creates a new polyline that traces a path between the provided points using the specifed contour style.
 ### Styling the polyline
-- [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(_:linewidth:).md)
+- [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](./mapcontent/stroke%28_,linewidth%29.md)
   Applies the given shape style to drawn map overlays using the line width you specify.
-- [func stroke(some ShapeStyle, style: StrokeStyle) -> some MapContent](mapcontent/stroke(_:style:).md)
+- [func stroke(some ShapeStyle, style: StrokeStyle) -> some MapContent](./mapcontent/stroke%28_,style%29.md)
   Applies the given shape style to drawn map overlays using the stroke style you specify.
-- [func stroke(lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(linewidth:).md)
+- [func stroke(lineWidth: CGFloat) -> some MapContent](./mapcontent/stroke%28linewidth%29.md)
   Applies the given stoke drawn map overlays using the line width you specify.
-- [func strokeStyle(style: StrokeStyle) -> some MapContent](mapcontent/strokestyle(style:).md)
+- [func strokeStyle(style: StrokeStyle) -> some MapContent](./mapcontent/strokestyle%28style%29.md)
   Applies the given stroke style to drawn map overlays.
-- [MapPolyline.ContourStyle](mappolyline/contourstyle.md)
+- [MapPolyline.ContourStyle](./mappolyline/contourstyle.md)
   Values that define how MapKit styles lines to represent the contour of the Earth.
 ### Setting the overlay level
-- [func mapOverlayLevel(level: MKOverlayLevel) -> some MapContent](mapcontent/mapoverlaylevel(level:).md)
+- [func mapOverlayLevel(level: MKOverlayLevel) -> some MapContent](./mapcontent/mapoverlaylevel%28level%29.md)
   Specifies the position of overlays relative to other map content.
 ### Type aliases
-- [associatedtype Body : MapContent](mapcontent/body-swift.associatedtype.md)
+- [associatedtype Body : MapContent](./mapcontent/body-swift.associatedtype.md)
   The content and behavior of the view.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [MapContent](mapcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [MapContent](./mapcontent.md)
 
 ## See Also
 
-- [struct Annotation](annotation.md)
+### Annotations and overlays
+- [struct Annotation](./annotation.md)
   A customizable annotation used to indicate a location on a map.
-- [struct MapCircle](mapcircle.md)
+- [struct MapCircle](./mapcircle.md)
   A circular overlay with a configurable radius that you center on a geographic coordinate.
-- [struct MapPolygon](mappolygon.md)
+- [struct MapPolygon](./mappolygon.md)
   A closed polygon overlay.
-- [struct Marker](marker.md)
+- [struct Marker](./marker.md)
   A balloon-shaped annotation that marks a map location.
-- [struct UserAnnotation](userannotation.md)
+- [struct UserAnnotation](./userannotation.md)
   Displays the person’s current location on the map.
 
 

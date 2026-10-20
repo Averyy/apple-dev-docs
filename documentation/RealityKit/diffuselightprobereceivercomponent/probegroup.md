@@ -1,7 +1,8 @@
 # probeGroup
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity providing diffuse probe lighting to this receiver.
 
@@ -21,7 +22,7 @@ var probeGroup: Entity
 
 #### Discussion
 
-The referenced entity must have a [`DiffuseLightProbeGroupComponent`](diffuselightprobegroupcomponent.md) attached and must exist within the scene hierarchy. The receiver’s diffuse lighting is interpolated from probes in this group based on the receiver entity’s position.
+The referenced entity must have a [`DiffuseLightProbeGroupComponent`](../diffuselightprobegroupcomponent.md) attached and must exist within the scene hierarchy. The receiver’s diffuse lighting is interpolated from probes in this group based on the receiver entity’s position.
 
 
 ---

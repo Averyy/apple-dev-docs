@@ -1,7 +1,8 @@
 # resetDate
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date after which retrying is likely to succeed, if known.
 
@@ -21,9 +22,10 @@ var resetDate: Date?
 
 ## See Also
 
-- [var metadata: [String : any Sendable]](languagemodelerror/ratelimited/metadata.md)
+### Inspecting rate-limit errors
+- [var metadata: [String : any Sendable]](./metadata.md)
   Additional information about the failure, keyed by name.
-- [var debugDescription: String](languagemodelerror/ratelimited/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 

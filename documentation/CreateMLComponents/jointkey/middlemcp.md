@@ -1,7 +1,8 @@
 # middleMCP
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with middle finger’s metacarpophalangeal (MCP) joint in a hand pose.
 
@@ -21,11 +22,12 @@ static let middleMCP: JointKey
 
 ## See Also
 
-- [static let middleDIP: JointKey](jointkey/middledip.md)
+### Getting middle finger properties
+- [static let middleDIP: JointKey](./middledip.md)
   A key associated with middle finger’s distal interphalangeal (DIP) joint in a hand pose.
-- [static let middlePIP: JointKey](jointkey/middlepip.md)
+- [static let middlePIP: JointKey](./middlepip.md)
   A key associated with middle finger’s proximal interphalangeal (PIP) joint in a hand pose.
-- [static let middleTip: JointKey](jointkey/middletip.md)
+- [static let middleTip: JointKey](./middletip.md)
   A key associated with middle finger tip joint in a hand pose.
 
 

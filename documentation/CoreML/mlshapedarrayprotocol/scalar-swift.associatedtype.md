@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 Represents the underlying scalar type of the shaped array type.
@@ -23,11 +24,12 @@ associatedtype Scalar : MLShapedArrayScalar
 
 ## See Also
 
-- [struct MLShapedArraySlice](mlshapedarrayslice.md)
+### Supporting types
+- [struct MLShapedArraySlice](../mlshapedarrayslice.md)
   A multidimensional subset of elements from a shaped array type.
-- [protocol MLShapedArrayScalar](mlshapedarrayscalar.md)
+- [protocol MLShapedArrayScalar](../mlshapedarrayscalar.md)
   A type that associates a scalar with a shaped array.
-- [protocol MLShapedArrayRangeExpression](mlshapedarrayrangeexpression.md)
+- [protocol MLShapedArrayRangeExpression](../mlshapedarrayrangeexpression.md)
   An interface for a range expression, which you typically use with subscripts of shaped array types.
 
 

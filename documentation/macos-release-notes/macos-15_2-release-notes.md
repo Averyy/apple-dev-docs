@@ -1,12 +1,13 @@
 # macOS Sequoia 15.2 Release Notes
 
-**Framework**: macOS Release Notes
+**Framework**: macOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 15.2 SDK provides support to develop apps for Mac computers running Sequoia 15.2. The SDK comes bundled with Xcode 16.2. For information on the compatibility requirements for Xcode 16.2, see [`Xcode 16.2 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_2-release-notes).
+The macOS 15.2 SDK provides support to develop apps for Mac computers running Sequoia 15.2. The SDK comes bundled with Xcode 16.2. For information on the compatibility requirements for Xcode 16.2, see [Xcode 16.2 Release Notes](../Xcode-Release-Notes/xcode-16_2-release-notes.md).
 
 ##### Accelerate
 
@@ -14,7 +15,7 @@ The macOS 15.2 SDK provides support to develop apps for Mac computers running Se
 
 - Resolved an issue impacting the accuracy of some linear algebra operations (*lartg). These functions have been restored to their 3.9.1 implementation.  (139760965) (FB15782411)
 
-##### Activitykit
+##### ActivityKit
 
 ###### Resolved Issues
 
@@ -26,7 +27,7 @@ The macOS 15.2 SDK provides support to develop apps for Mac computers running Se
 
 - Fixed: iPhone and iPad apps on Apple Silicon Macs might quit unexpectedly if `-[ASAuthorizationController performAutoFillAssistedRequests]` is invoked.  (128153762)
 
-##### Chatgpt Integration
+##### ChatGPT Integration
 
 ###### Resolved Issues
 
@@ -39,7 +40,7 @@ The macOS 15.2 SDK provides support to develop apps for Mac computers running Se
 
 - Fixed: Resolved an issue where running Ruby with YJIT enabled causes Mac with M4 chip to kernel panic.  (139714575) (FB15774033)
 
-##### Nswritingtoolscoordinator
+##### NSWritingToolsCoordinator
 
 ###### Resolved Issues
 
@@ -51,14 +52,14 @@ The macOS 15.2 SDK provides support to develop apps for Mac computers running Se
 - `NSWritingToolsCoordinator` only supports synchronous `NSWritingToolsCoordinator.Delegate` interfaces, expecting the completion handler to be invoked without escaping the delegate methods.  (136769777)
 - The object does not support multiple `NSWritingToolsCoordinatorContext` elements, and supports only the first element used. Also, it does not support dynamic `decorationContainerView`. The two optional `NSWritingToolsCoordinator.Delegate` methods for multiple container support are never called.  (137983691)
 
-##### Screencapturekit
+##### ScreenCaptureKit
 
 ###### New Features
 
 - ScreenCaptureKit is available for Catalyst applications. Developers must use the macOS 15.2 SDK or later.  (104444076) (FB11957714)
 - The system picking experience now surfaces additional metadata for user selected content, including details on the display, application, and window.  (133085308) (FB14629093)
 
-##### Swiftui
+##### SwiftUI
 
 ###### New Features
 
@@ -68,7 +69,7 @@ The macOS 15.2 SDK provides support to develop apps for Mac computers running Se
 
 - Fixed: Compiling in the Swift 6 language mode might cause an `@Entry` error due to “static property `defaultValue` is not concurrency-safe because non-‘Sendable’ type”.  (133885814)
 - Resolved an issue to improve performance and CPU usage when scrolling `ScrollView`s and `List`s.  (137546908)
-- Fixed: Views won’t accept dropped directories if [`UTType.directory`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/directory) or [`UTType.fileURL`](https://developer.apple.comhttps://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/fileurl) are not in the list of accepted content types for drop.  (138158126)
+- Fixed: Views won’t accept dropped directories if [UTType.directory](../UniformTypeIdentifiers/uttype-swift.struct/directory.md) or [UTType.fileURL](../UniformTypeIdentifiers/uttype-swift.struct/fileurl.md) are not in the list of accepted content types for drop.  (138158126)
 
 ##### Virtualization
 
@@ -77,7 +78,7 @@ The macOS 15.2 SDK provides support to develop apps for Mac computers running Se
 - Fixed: Installation of macOS Sequoia 15.2 Beta in VMs is not available.  (137528160)
 - Fixed: Resolved an issue where macOS VM guest running macOS 13.3.1 or earlier fails to boot on a host Mac with M4 chip.  (139615567)
 
-##### Widgetkit
+##### WidgetKit
 
 ###### Resolved Issues
 
@@ -85,17 +86,18 @@ The macOS 15.2 SDK provides support to develop apps for Mac computers running Se
 
 ## See Also
 
-- [macOS Sequoia 15.6 Release Notes](macos-15_6-release-notes.md)
+### macOS 15
+- [macOS Sequoia 15.6 Release Notes](./macos-15_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.5 Release Notes](macos-15_5-release-notes.md)
+- [macOS Sequoia 15.5 Release Notes](./macos-15_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.4 Release Notes](macos-15_4-release-notes.md)
+- [macOS Sequoia 15.4 Release Notes](./macos-15_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.3 Release Notes](macos-15_3-release-notes.md)
+- [macOS Sequoia 15.3 Release Notes](./macos-15_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15.1 Release Notes](macos-15_1-release-notes.md)
+- [macOS Sequoia 15.1 Release Notes](./macos-15_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [macOS Sequoia 15 Release Notes](macos-15-release-notes.md)
+- [macOS Sequoia 15 Release Notes](./macos-15-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

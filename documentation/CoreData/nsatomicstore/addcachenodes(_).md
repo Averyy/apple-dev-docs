@@ -1,7 +1,8 @@
 # addCacheNodes(_:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a set of cache nodes with the receiver.
 
@@ -10,7 +11,7 @@ Registers a set of cache nodes with the receiver.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Registers a set of cache nodes with the receiver.
 func addCacheNodes(_ cacheNodes: Set<NSAtomicStoreCacheNode>)
 ```
 
+```objc
+- (void) addCacheNodes:(NSSet<__kindof NSAtomicStoreCacheNode *> *) cacheNodes;
+```
+
 #### Discussion
 
-You should invoke this method in a subclass during the call to [`load()`](nsatomicstore/load().md) to register the loaded information with the store.
+You should invoke this method in a subclass during the call to [`load()`](./load%28%29.md) to register the loaded information with the store.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ You should invoke this method in a subclass during the call to [`load()`](nsatom
 
 ## See Also
 
-- [func load() throws](nsatomicstore/load.md)
+### Loading a Store
+- [func load() throws](./load%28%29.md)
   Loads the cache nodes for the receiver.
-- [func objectID(for: NSEntityDescription, withReferenceObject: Any) -> NSManagedObjectID](nsatomicstore/objectid(for:withreferenceobject:).md)
+- [func objectID(for: NSEntityDescription, withReferenceObject: Any) -> NSManagedObjectID](./objectid%28for,withreferenceobject%29.md)
   Returns a managed object ID from the reference data for a specified entity.
 
 

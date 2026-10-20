@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator.ContextScope.fullDocument
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to provide all of your view’s text.
 
@@ -17,15 +18,20 @@ An option to provide all of your view’s text.
 case fullDocument
 ```
 
+```c
+UIWritingToolsCoordinatorContextScopeFullDocument
+```
+
 #### Discussion
 
 With this option, include all of the text your view manages. If your view has multiple text storage objects, create a separate context object for each one.
 
 ## See Also
 
-- [UIWritingToolsCoordinator.ContextScope.userSelection](uiwritingtoolscoordinator/contextscope/userselection.md)
+### Getting the scope
+- [UIWritingToolsCoordinator.ContextScope.userSelection](./userselection.md)
   An option to provide only the view’s currently selected text.
-- [UIWritingToolsCoordinator.ContextScope.visibleArea](uiwritingtoolscoordinator/contextscope/visiblearea.md)
+- [UIWritingToolsCoordinator.ContextScope.visibleArea](./visiblearea.md)
   An option to provide only the text in the currently visible portion of your view.
 
 

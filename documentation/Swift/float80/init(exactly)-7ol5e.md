@@ -1,7 +1,8 @@
 # init(exactly:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance initialized to the given value, if it can be represented without rounding.
 

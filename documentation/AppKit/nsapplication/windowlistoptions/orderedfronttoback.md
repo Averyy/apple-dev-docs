@@ -1,9 +1,10 @@
 # orderedFrontToBack
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The app’s onscreen windows in front-to-back order. By default, [`windows`](nsapplication/windows.md) is used.
+The app’s onscreen windows in front-to-back order. By default, [`windows`](../windows.md) is used.
 
 **Availability**:
 - macOS 10.12+
@@ -12,6 +13,10 @@ The app’s onscreen windows in front-to-back order. By default, [`windows`](nsa
 
 ```swift
 static var orderedFrontToBack: NSApplication.WindowListOptions { get }
+```
+
+```c
+NSWindowListOrderedFrontToBack
 ```
 
 

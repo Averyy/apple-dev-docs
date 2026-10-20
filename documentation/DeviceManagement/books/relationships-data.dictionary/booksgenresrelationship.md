@@ -1,14 +1,15 @@
 # Books.Relationships.BooksGenresRelationship
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - VPP License Management 2.1+
 
 ## Declaration
 
-```swift
+```
 object Books.Relationships.BooksGenresRelationship
 ```
 

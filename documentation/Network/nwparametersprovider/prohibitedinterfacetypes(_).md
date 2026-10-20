@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Prohibit certain interface types from being used to connect, listen, and browse.
@@ -24,6 +25,12 @@ func prohibitedInterfaceTypes(_ types: [NWInterface.InterfaceType]) -> Self
 ## Parameters
 
 - `types`: An array of interface types to prohibit.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func prohibitedInterfaceTypes([NWInterface.InterfaceType]) -> Self](./prohibitedinterfacetypes%28_%29-1xf6y.md)
+  Prohibit certain interface types from being used to connect, listen, and browse.
 
 
 ---

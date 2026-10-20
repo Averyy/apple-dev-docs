@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL to a QuickTime or ISO base media file.
 
@@ -19,13 +20,18 @@ A URL to a QuickTime or ISO base media file.
 var url: URL? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSURL * URL;
+```
+
 #### Discussion
 
 The value is `nil` if you didn’t initialize the movie with a URL.
 
 ## See Also
 
-- [var data: Data?](avmovie/data.md)
+### Accessing movie information
+- [var data: Data?](./data.md)
   A data object that contains the movie file’s data.
 
 

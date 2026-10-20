@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures the encoder with different stencil test reference values for front-facing and back-facing primitives.
@@ -20,6 +21,10 @@ Configures the encoder with different stencil test reference values for front-fa
 func setStencilReferenceValue(front frontReferenceValue: UInt32, back backReferenceValue: UInt32)
 ```
 
+```objc
+- (void) setStencilFrontReferenceValue:(uint32_t) frontReferenceValue backReferenceValue:(uint32_t) backReferenceValue;
+```
+
 #### Discussion
 
 The render pipeline applies `frontReferenceValue` to front-facing primitives and `backReferenceValue` to back-facing primitives.
@@ -31,15 +36,16 @@ The render pipeline applies `frontReferenceValue` to front-facing primitives and
 
 ## See Also
 
-- [func setDepthStencilState((any MTLDepthStencilState)?)](mtl4rendercommandencoder/setdepthstencilstate(_:).md)
+### Configuring depth and stencil behavior
+- [func setDepthStencilState((any MTLDepthStencilState)?)](./setdepthstencilstate%28_%29.md)
   Configures this encoder with a depth stencil state that applies to your subsequent draw commands.
-- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](mtl4rendercommandencoder/setdepthbias(_:slopescale:clamp:).md)
+- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](./setdepthbias%28_,slopescale,clamp%29.md)
   Configures the adjustments a render pass applies to depth values from fragment shader functions by a scaling factor and bias.
-- [func setDepthClipMode(MTLDepthClipMode)](mtl4rendercommandencoder/setdepthclipmode(_:).md)
+- [func setDepthClipMode(MTLDepthClipMode)](./setdepthclipmode%28_%29.md)
   Controls the behavior for fragments outside of the near or far planes.
-- [func setDepthTestBounds(ClosedRange<Float>)](mtl4rendercommandencoder/setdepthtestbounds(_:).md)
+- [func setDepthTestBounds(ClosedRange<Float>)](./setdepthtestbounds%28_%29.md)
   Configures the range for depth bounds testing.
-- [func setStencilReferenceValue(UInt32)](mtl4rendercommandencoder/setstencilreferencevalue(_:).md)
+- [func setStencilReferenceValue(UInt32)](./setstencilreferencevalue%28_%29.md)
   Configures this encoder with a reference value for stencil testing.
 
 

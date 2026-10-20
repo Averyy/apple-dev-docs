@@ -1,7 +1,8 @@
 # maximumTextMessageSize
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum size of a text chat message that a person can enter in a 1-to-1 chat or group chat session.
 
@@ -16,7 +17,7 @@ var maximumTextMessageSize: Measurement<UnitInformationStorage>? { get }
 
 #### Discussion
 
-This value is represented as a Foundation [`Measurement`](https://developer.apple.com/documentation/foundation/measurement) that uses the [`UnitInformationStorage`](https://developer.apple.com/documentation/foundation/unitinformationstorage) unit type. If the messaging service is disabled, the value is `nil`.
+This value is represented as a Foundation [`Measurement`](../../../Foundation/measurement.md) that uses the [`UnitInformationStorage`](../../../Foundation/unitinformationstorage.md) unit type. If the messaging service is disabled, the value is `nil`.
 
 
 ---

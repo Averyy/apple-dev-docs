@@ -1,14 +1,15 @@
 # lockgroup_info_array_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef lockgroup_info_t *lockgroup_info_array_t;
 ```
 

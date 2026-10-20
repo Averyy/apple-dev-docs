@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously retrieve the next anchor update.
 

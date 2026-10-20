@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.Status.connecting
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session is connecting to a streaming endpoint.
 
@@ -16,7 +17,7 @@ case connecting
 
 #### Discussion
 
-The [`FoveatedStreamingSession`](foveatedstreamingsession.md) enters this state after you call [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md). When in this state, the person may still be navigating system UI to select an endpoint or scanning a QR code to authenticate the connection.
+The [`FoveatedStreamingSession`](../../foveatedstreamingsession.md) enters this state after you call [`connect(endpoint:)`](../connect%28endpoint%29.md). When in this state, the person may still be navigating system UI to select an endpoint or scanning a QR code to authenticate the connection.
 
 
 ---

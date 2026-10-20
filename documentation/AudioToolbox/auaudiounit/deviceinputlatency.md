@@ -1,7 +1,8 @@
 # deviceInputLatency
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio device’s input latency, in seconds.
 
@@ -14,31 +15,36 @@ The audio device’s input latency, in seconds.
 var deviceInputLatency: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval deviceInputLatency;
+```
+
 ## See Also
 
-- [var deviceID: AUAudioObjectID](auaudiounit/deviceid.md)
+### Configuring the Device
+- [var deviceID: AUAudioObjectID](./deviceid.md)
   Gets the I/O hardware device.
-- [func setDeviceID(AUAudioObjectID) throws](auaudiounit/setdeviceid(_:).md)
+- [func setDeviceID(AUAudioObjectID) throws](./setdeviceid%28_%29.md)
   Sets the I/O hardware device.
-- [var canPerformInput: Bool](auaudiounit/canperforminput.md)
+- [var canPerformInput: Bool](./canperforminput.md)
   Determines whether the I/O device can perform input.
-- [var canPerformOutput: Bool](auaudiounit/canperformoutput.md)
+- [var canPerformOutput: Bool](./canperformoutput.md)
   Determines whether the I/O device can perform output.
-- [var isInputEnabled: Bool](auaudiounit/isinputenabled.md)
+- [var isInputEnabled: Bool](./isinputenabled.md)
   A flag enabling audio input from the unit.
-- [var isOutputEnabled: Bool](auaudiounit/isoutputenabled.md)
+- [var isOutputEnabled: Bool](./isoutputenabled.md)
   A flag enabling audio output from the unit.
-- [var inputHandler: AUInputHandler?](auaudiounit/inputhandler.md)
+- [var inputHandler: AUInputHandler?](./inputhandler.md)
   The block that the output unit will call to notify when input is available.
-- [var outputProvider: AURenderPullInputBlock?](auaudiounit/outputprovider.md)
+- [var outputProvider: AURenderPullInputBlock?](./outputprovider.md)
   The block that the output unit will call to get audio to send to the output.
-- [var deviceOutputLatency: TimeInterval](auaudiounit/deviceoutputlatency.md)
+- [var deviceOutputLatency: TimeInterval](./deviceoutputlatency.md)
   The audio devic’s output latency, in seconds.
-- [func startHardware() throws](auaudiounit/starthardware.md)
+- [func startHardware() throws](./starthardware%28%29.md)
   Starts the audio hardware.
-- [func stopHardware()](auaudiounit/stophardware.md)
+- [func stopHardware()](./stophardware%28%29.md)
   Stops the audio hardware.
-- [typealias AURenderPullInputBlock](aurenderpullinputblock.md)
+- [typealias AURenderPullInputBlock](../aurenderpullinputblock.md)
   A block to supply audio input to a render block.
 
 

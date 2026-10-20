@@ -1,7 +1,8 @@
 # availableMediaTypes(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Retrieves the available media types for the specified source type.
 
@@ -17,13 +18,17 @@ Retrieves the available media types for the specified source type.
 class func availableMediaTypes(for sourceType: UIImagePickerController.SourceType) -> [String]?
 ```
 
+```objc
++ (NSArray<NSString *> *) availableMediaTypesForSourceType:(UIImagePickerControllerSourceType) sourceType;
+```
+
 #### Return Value
 
 An array whose elements identify the available media types for the specified source type.
 
 #### Discussion
 
-Some iOS devices support video recording. Use this method, along with the [`isSourceTypeAvailable(_:)`](uiimagepickercontroller/issourcetypeavailable(_:).md) method, to determine if video recording is available on a device. The availability of video recording is indicated by the presence of the `kUTTypeMovie` media type for the [`UIImagePickerController.SourceType.camera`](uiimagepickercontroller/sourcetype-swift.enum/camera.md) source type.
+Some iOS devices support video recording. Use this method, along with the [`isSourceTypeAvailable(_:)`](./issourcetypeavailable%28_%29.md) method, to determine if video recording is available on a device. The availability of video recording is indicated by the presence of the `kUTTypeMovie` media type for the [`UIImagePickerController.SourceType.camera`](./sourcetype-swift.enum/camera.md) source type.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ Some iOS devices support video recording. Use this method, along with the [`isSo
 
 ## See Also
 
-- [class func isSourceTypeAvailable(UIImagePickerController.SourceType) -> Bool](uiimagepickercontroller/issourcetypeavailable(_:).md)
+### Setting the picker source
+- [class func isSourceTypeAvailable(UIImagePickerController.SourceType) -> Bool](./issourcetypeavailable%28_%29.md)
   Queries whether the device supports picking media using the specified source type.
-- [var sourceType: UIImagePickerController.SourceType](uiimagepickercontroller/sourcetype-swift.property.md)
+- [var sourceType: UIImagePickerController.SourceType](./sourcetype-swift.property.md)
   The type of picker interface to be displayed by the controller.
-- [UIImagePickerController.SourceType](uiimagepickercontroller/sourcetype-swift.enum.md)
+- [UIImagePickerController.SourceType](./sourcetype-swift.enum.md)
   Constants that describe the source to use when picking an image or when determining available media types.
 
 

@@ -1,7 +1,8 @@
 # lineWidth
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The line width of the shape.
 
@@ -24,9 +25,10 @@ Defaults to `0`.
 
 ## See Also
 
-- [var fillColor: CGColor?](shapeconfiguration/fillcolor.md)
+### Configuring fill and stroke
+- [var fillColor: CGColor?](./fillcolor.md)
   The fill color of the shape.
-- [var strokeColor: CGColor?](shapeconfiguration/strokecolor.md)
+- [var strokeColor: CGColor?](./strokecolor.md)
   The stroke color of the shape.
 
 

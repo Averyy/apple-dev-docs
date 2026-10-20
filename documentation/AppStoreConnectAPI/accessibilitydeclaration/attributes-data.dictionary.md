@@ -1,7 +1,8 @@
 # AccessibilityDeclaration.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the accessibility declaration resource.
 
@@ -10,14 +11,14 @@ The attributes you set that describe the accessibility declaration resource.
 
 ## Declaration
 
-```swift
+```
 object AccessibilityDeclaration.Attributes
 ```
 
 ## Properties
 
 - `deviceFamily` (DeviceFamily)
-- `state` (string)
+- `state` (string): **Allowed Values**: `DRAFT`, `PUBLISHED`, `REPLACED`
 - `supportsAudioDescriptions` (boolean)
 - `supportsCaptions` (boolean)
 - `supportsDarkInterface` (boolean)

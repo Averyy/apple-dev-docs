@@ -1,12 +1,13 @@
 # userResizingMask
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allows the table column to be resized by the user.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,10 +15,15 @@ Allows the table column to be resized by the user.
 static var userResizingMask: NSTableColumn.ResizingOptions { get }
 ```
 
+```c
+NSTableColumnUserResizingMask
+```
+
 ## See Also
 
-- [static var autoresizingMask: NSTableColumn.ResizingOptions](nstablecolumn/resizingoptions/autoresizingmask.md)
-  Allows the table column to resize automatically in response to resizing the table view. The resizing behavior for the table view is set using the `NSTableView` method [`columnAutoresizingStyle`](nstableview/columnautoresizingstyle-swift.property.md).
+### Constants
+- [static var autoresizingMask: NSTableColumn.ResizingOptions](./autoresizingmask.md)
+  Allows the table column to resize automatically in response to resizing the table view. The resizing behavior for the table view is set using the `NSTableView` method [`columnAutoresizingStyle`](../../nstableview/columnautoresizingstyle-swift.property.md).
 
 
 ---

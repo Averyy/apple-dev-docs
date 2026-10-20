@@ -1,7 +1,8 @@
 # name
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app-specific name assigned to the scene configuration.
 
@@ -18,15 +19,20 @@ The app-specific name assigned to the scene configuration.
 var name: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * name;
+```
+
 #### Discussion
 
-UIKit sets this property’s initial value using the [`UISceneConfigurationName`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneconfigurationname) key from the appropriate scene in your app’s `Info.plist` file. You also specify this value when you create a new scene-configuration object.
+UIKit sets this property’s initial value using the [`UISceneConfigurationName`](../../BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiwindowscenesessionroleapplication/uisceneconfigurationname.md) key from the appropriate scene in your app’s `Info.plist` file. You also specify this value when you create a new scene-configuration object.
 
 ## See Also
 
-- [var role: UISceneSession.Role](uisceneconfiguration/role.md)
+### Getting the configuration attributes
+- [var role: UISceneSession.Role](./role.md)
   The role assigned to the scene configuration.
-- [UISceneSession.Role](uiscenesession/role-swift.struct.md)
+- [UISceneSession.Role](../uiscenesession/role-swift.struct.md)
   Constants that indicate the possible roles for a scene.
 
 

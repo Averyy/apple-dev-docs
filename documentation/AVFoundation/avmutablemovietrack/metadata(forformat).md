@@ -1,7 +1,8 @@
 # metadata(forFormat:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns metadata items that a track contains for the specified format.
 
@@ -19,6 +20,10 @@ Returns metadata items that a track contains for the specified format.
 func metadata(forFormat format: AVMetadataFormat) -> [AVMetadataItem]
 ```
 
+```objc
+- (NSArray<AVMetadataItem *> *) metadataForFormat:(AVMetadataFormat) format;
+```
+
 #### Return Value
 
 An array of metadata items matching the specified format, or an empty array if none are found.
@@ -29,11 +34,12 @@ An array of metadata items matching the specified format, or an empty array if n
 
 ## See Also
 
-- [var metadata: [AVMetadataItem]](avmutablemovietrack/metadata.md)
+### Accessing metadata
+- [var metadata: [AVMetadataItem]](./metadata.md)
   An array of metadata stored by the track.
-- [var commonMetadata: [AVMetadataItem]](avmutablemovietrack/commonmetadata.md)
+- [var commonMetadata: [AVMetadataItem]](./commonmetadata.md)
   An array of metadata items for all common metadata keys that have a value.
-- [var availableMetadataFormats: [AVMetadataFormat]](avmutablemovietrack/availablemetadataformats.md)
+- [var availableMetadataFormats: [AVMetadataFormat]](./availablemetadataformats.md)
   An array of metadata formats available for the track.
 
 

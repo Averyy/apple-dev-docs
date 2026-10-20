@@ -1,7 +1,8 @@
 # exposureTargetBias
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The exposure bias for the auto exposure bracketed settings
 
@@ -15,6 +16,10 @@ The exposure bias for the auto exposure bracketed settings
 
 ```swift
 var exposureTargetBias: Float { get }
+```
+
+```objc
+@property (readonly) float exposureTargetBias;
 ```
 
 

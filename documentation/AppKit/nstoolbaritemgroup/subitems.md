@@ -1,7 +1,8 @@
 # subitems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subitems of the grouped toolbar item.
 
@@ -17,19 +18,25 @@ The subitems of the grouped toolbar item.
 var subitems: [NSToolbarItem] { get set }
 ```
 
+```objc
+@property (copy) NSArray<__kindof NSToolbarItem *> * subitems;
+```
+
 #### Discussion
 
-By default, an [`NSToolbarItemGroup`](nstoolbaritemgroup.md) instance has an empty array of subitems.
+By default, an [`NSToolbarItemGroup`](../nstoolbaritemgroup.md) instance has an empty array of subitems.
 
 ## See Also
 
-- [class NSToolbarItemGroup](nstoolbaritemgroup.md)
+### Related Documentation
+- [class NSToolbarItemGroup](../nstoolbaritemgroup.md)
   A group of subitems in a toolbar item.
-- [var selectedIndex: Int](nstoolbaritemgroup/selectedindex.md)
+### Working with subitems
+- [var selectedIndex: Int](./selectedindex.md)
   The index value for the most recently selected subitem of a grouped toolbar item.
-- [func isSelected(at: Int) -> Bool](nstoolbaritemgroup/isselected(at:).md)
+- [func isSelected(at: Int) -> Bool](./isselected%28at%29.md)
   Indicates whether a specified index is currently selected.
-- [func setSelected(Bool, at: Int)](nstoolbaritemgroup/setselected(_:at:).md)
+- [func setSelected(Bool, at: Int)](./setselected%28_,at%29.md)
   Sets the selected state of a subitem in a grouped toolbar item.
 
 

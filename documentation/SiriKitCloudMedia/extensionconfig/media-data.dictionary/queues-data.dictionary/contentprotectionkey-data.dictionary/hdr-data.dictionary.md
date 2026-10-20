@@ -1,7 +1,8 @@
 # ExtensionConfig.Media.Queues.ContentProtectionKey.Hdr
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Headers to include with requests to the content protection key endpoint.
 
@@ -10,7 +11,7 @@ Headers to include with requests to the content protection key endpoint.
 
 ## Declaration
 
-```swift
+```
 object ExtensionConfig.Media.Queues.ContentProtectionKey.Hdr
 ```
 
@@ -20,7 +21,8 @@ A dictionary that contains the header names and their values.
 
 ## See Also
 
-- [object ExtensionConfig.Media.Queues.ContentProtectionKey.Cks](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/cks-data.dictionary.md)
+### Requiring Headers
+- [object ExtensionConfig.Media.Queues.ContentProtectionKey.Cks](./cks-data.dictionary.md)
   Configuration details for your service’s content protection system.
 
 

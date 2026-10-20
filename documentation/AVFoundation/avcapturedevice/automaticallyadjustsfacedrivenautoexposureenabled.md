@@ -1,7 +1,8 @@
 # automaticallyAdjustsFaceDrivenAutoExposureEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device automatically adjusts face-driven autoexposure.
 
@@ -17,15 +18,20 @@ A Boolean value that indicates whether the device automatically adjusts face-dri
 var automaticallyAdjustsFaceDrivenAutoExposureEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL automaticallyAdjustsFaceDrivenAutoExposureEnabled;
+```
+
 #### Discussion
 
-The value of this property defaults to [`true`](https://developer.apple.com/documentation/swift/true) for devices that support autoexposure. If your app requires explicitly setting the state of [`isFaceDrivenAutoExposureEnabled`](avcapturedevice/isfacedrivenautoexposureenabled.md), set this value to [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property defaults to [`true`](../../Swift/true.md) for devices that support autoexposure. If your app requires explicitly setting the state of [`isFaceDrivenAutoExposureEnabled`](./isfacedrivenautoexposureenabled.md), set this value to [`false`](../../Swift/false.md).
 
-To set this property value, you must call the device’s [`lockForConfiguration()`](avcapturedevice/lockforconfiguration().md) method to obtain exclusive access to configure it. Otherwise, attempting to set a value raises an exception. When you finish configuring the device, call [`unlockForConfiguration()`](avcapturedevice/unlockforconfiguration().md) to release the lock.
+To set this property value, you must call the device’s [`lockForConfiguration()`](./lockforconfiguration%28%29.md) method to obtain exclusive access to configure it. Otherwise, attempting to set a value raises an exception. When you finish configuring the device, call [`unlockForConfiguration()`](./unlockforconfiguration%28%29.md) to release the lock.
 
 ## See Also
 
-- [var isFaceDrivenAutoExposureEnabled: Bool](avcapturedevice/isfacedrivenautoexposureenabled.md)
+### Configuring face-driven automatic exposure
+- [var isFaceDrivenAutoExposureEnabled: Bool](./isfacedrivenautoexposureenabled.md)
   A Boolean value that indicates whether the device has face-driven autoexposure enabled.
 
 

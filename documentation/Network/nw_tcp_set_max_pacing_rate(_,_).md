@@ -1,7 +1,8 @@
 # nw_tcp_set_max_pacing_rate(_:_:)
 
 **Framework**: Network  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 27.0+
@@ -18,6 +19,10 @@
 func nw_tcp_set_max_pacing_rate(_ metadata: nw_protocol_metadata_t, _ max_pacing_rate: UInt64) -> Int32
 ```
 
+```c
+int nw_tcp_set_max_pacing_rate(nw_protocol_metadata_t metadata, uint64_t max_pacing_rate);
+```
+
 #### Return Value
 
 Returns 0 on success, or a POSIX errno value on failure (e.g. EINVAL if metadata is not a TCP metadata object, or the underlying socket error).
@@ -28,7 +33,7 @@ Set a maximum pacing rate for a TCP connection, in bytes per second.
 
 TCP pacing spreads outgoing packet transmission across time to avoid bursts and reduce queueing in the network. With a cap in place, the on-wire rate is the minimum of (a) this cap, and (b) the rate computed from the congestion window divided by smoothed RTT. The cap therefore never raises throughput above what congestion control would otherwise allow.
 
-```None
+```
 A value of 0 or UINT64_MAX disables pacing on this connection — the
 connection sends without pacing (subject only to congestion control).
 

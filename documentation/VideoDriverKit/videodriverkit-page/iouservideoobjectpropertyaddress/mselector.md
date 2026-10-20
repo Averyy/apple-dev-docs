@@ -1,7 +1,8 @@
 # mSelector
 
 **Framework**: VideoDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selector for the property.
 
@@ -10,15 +11,16 @@ The selector for the property.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoObjectPropertySelector mSelector;
 ```
 
 ## See Also
 
-- [mScope](videodriverkit/iouservideoobjectpropertyaddress/mscope.md)
+### Address members
+- [mScope](./mscope.md)
   The scope for the property.
-- [mElement](videodriverkit/iouservideoobjectpropertyaddress/melement.md)
+- [mElement](./melement.md)
   The element for the property.
 
 

@@ -1,7 +1,8 @@
 # invalidate()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the timer from ever firing again and requests its removal from its run loop.
 
@@ -20,9 +21,13 @@ Stops the timer from ever firing again and requests its removal from its run loo
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 #### Discussion
 
-This method is the only way to remove a timer from an [`RunLoop`](runloop.md) object. The [`RunLoop`](runloop.md) object removes its strong reference to the timer, either just before the [`invalidate()`](timer/invalidate().md) method returns or at some later point.
+This method is the only way to remove a timer from an [`RunLoop`](../runloop.md) object. The [`RunLoop`](../runloop.md) object removes its strong reference to the timer, either just before the [`invalidate()`](./invalidate%28%29.md) method returns or at some later point.
 
 If it was configured with target and user info objects, the receiver removes its strong references to those objects as well.
 
@@ -32,7 +37,8 @@ You must send this message from the thread on which the timer was installed. If 
 
 ## See Also
 
-- [func fire()](timer/fire.md)
+### Related Documentation
+- [func fire()](./fire%28%29.md)
   Causes the timer’s message to be sent to its target.
 
 

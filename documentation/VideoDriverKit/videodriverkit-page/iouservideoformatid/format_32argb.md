@@ -1,20 +1,22 @@
 # Format_32ARGB
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 Format_32ARGB
 ```
 
 ## See Also
 
-- [Format_32BGRA](videodriverkit/iouservideoformatid/format_32bgra.md)
+### RGB formats
+- [Format_32BGRA](./format_32bgra.md)
 
 
 ---

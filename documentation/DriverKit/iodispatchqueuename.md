@@ -1,27 +1,29 @@
 # IODispatchQueueName
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A buffer for specifying the name of a dispatch queue.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef char[256] IODispatchQueueName;
 ```
 
 ## See Also
 
-- [GetName](iodispatchqueue/getname.md)
+### Getting Queue Information
+- [GetName](./iodispatchqueue/getname.md)
   Returns the name of the queue as a C string.
-- [OnQueue](iodispatchqueue/onqueue.md)
+- [OnQueue](./iodispatchqueue/onqueue.md)
   Returns a Boolean value that indicates whether the current thread matches the dispatch queue’s thread.
 
 

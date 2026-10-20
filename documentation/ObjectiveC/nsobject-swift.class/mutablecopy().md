@@ -1,7 +1,8 @@
 # mutableCopy()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the object returned by `mutableCopy(with:)` where the zone is `nil`.
 
@@ -20,19 +21,24 @@ Returns the object returned by `mutableCopy(with:)` where the zone is `nil`.
 func mutableCopy() -> Any
 ```
 
+```objc
+- (id) mutableCopy;
+```
+
 #### Return Value
 
-The object returned by the [`NSMutableCopying`](https://developer.apple.com/documentation/foundation/nsmutablecopying) protocol method [`mutableCopy(with:)`](https://developer.apple.com/documentation/foundation/nsmutablecopying/mutablecopy(with:)), where the zone is `nil`.
+The object returned by the [`NSMutableCopying`](../../Foundation/nsmutablecopying.md) protocol method [`mutableCopy(with:)`](../../Foundation/nsmutablecopying/mutablecopy%28with%29.md), where the zone is `nil`.
 
 #### Discussion
 
-This is a convenience method for classes that adopt the [`NSMutableCopying`](https://developer.apple.com/documentation/foundation/nsmutablecopying) protocol. An exception is raised if there is no implementation for [`mutableCopy(with:)`](https://developer.apple.com/documentation/foundation/nsmutablecopying/mutablecopy(with:)).
+This is a convenience method for classes that adopt the [`NSMutableCopying`](../../Foundation/nsmutablecopying.md) protocol. An exception is raised if there is no implementation for [`mutableCopy(with:)`](../../Foundation/nsmutablecopying/mutablecopy%28with%29.md).
 
 ## See Also
 
-- [init()](nsobject-swift.class/init.md)
+### Creating, Copying, and Deallocating Objects
+- [init()](./init%28%29.md)
   Implemented by subclasses to initialize a new object (the receiver) immediately after memory for it has been allocated.
-- [func copy() -> Any](nsobject-swift.class/copy.md)
+- [func copy() -> Any](./copy%28%29.md)
   Returns the object returned by `copy(with:)`.
 
 

@@ -1,7 +1,8 @@
 # GameCenterChallengeVersionCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a Game Center challenge version.
 
@@ -10,20 +11,20 @@ The request body you use to create a Game Center challenge version.
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallengeVersionCreateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallengeVersionCreateRequest.Data.Relationships](gamecenterchallengeversioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterChallengeVersionCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
 - `relationships` (GameCenterChallengeVersionCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterChallengeVersions`
 
 
 ---

@@ -1,7 +1,8 @@
 # init(unfolding:onCancel:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Constructs an asynchronous stream from a given element-producing closure, with an optional closure to handle cancellation.
 
@@ -39,7 +40,7 @@ for await random in stream {
 }
 ```
 
-> **Note**: Because the system might call the `onCancel` callback as part of task cancellation, it’s subject to the same considerations for avoiding deadlock as outlined in the documentation for [`withTaskCancellationHandler(operation:onCancel:)`](withtaskcancellationhandler(operation:oncancel:).md).
+> **Note**: Because the system might call the `onCancel` callback as part of task cancellation, it’s subject to the same considerations for avoiding deadlock as outlined in the documentation for [`withTaskCancellationHandler(operation:onCancel:)`](../withtaskcancellationhandler%28operation,oncancel%29.md).
 
 ## Parameters
 

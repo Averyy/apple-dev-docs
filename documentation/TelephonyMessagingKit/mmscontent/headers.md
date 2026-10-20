@@ -1,7 +1,8 @@
 # headers
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional headers in a received MMS message, as a key-value dictionary of strings.
 
@@ -20,11 +21,12 @@ Don’t populate this dictionary when sending a message.
 
 ## See Also
 
-- [var parts: [MMSPartContent]](mmscontent/parts.md)
+### Accessing content properties
+- [var parts: [MMSPartContent]](./parts.md)
   The individual parts of the MMS message.
-- [struct MMSPartContent](mmspartcontent.md)
+- [struct MMSPartContent](../mmspartcontent.md)
   A structure that defines custom headers within MMS content.
-- [var subject: String?](mmscontent/subject.md)
+- [var subject: String?](./subject.md)
   The subject of the MMS message.
 
 

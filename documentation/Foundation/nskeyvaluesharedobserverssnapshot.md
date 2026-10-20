@@ -1,7 +1,8 @@
 # NSKeyValueSharedObserversSnapshot
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of key-value observations which may be registered with multiple observable objects. Create using `-[NSKeyValueSharedObservers snapshot]`
 
@@ -20,22 +21,27 @@ A collection of key-value observations which may be registered with multiple obs
 class NSKeyValueSharedObserversSnapshot
 ```
 
+```objc
+@interface NSKeyValueSharedObserversSnapshot : NSObject
+```
+
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSKeyValueObservation](nskeyvalueobservation.md)
-- [class NSKeyValueSharedObservers](nskeyvaluesharedobservers.md)
+### Classes
+- [class NSKeyValueObservation](./nskeyvalueobservation.md)
+- [class NSKeyValueSharedObservers](./nskeyvaluesharedobservers.md)
   A collection of key-value observations which may be registered with multiple observable objects
 
 

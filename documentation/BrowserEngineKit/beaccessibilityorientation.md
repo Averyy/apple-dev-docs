@@ -1,12 +1,13 @@
 # BEAccessibilityOrientation
 
 **Framework**: BrowserEngineKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- macOS ?+
+- macOS
 - tvOS 27.0+
 - visionOS 27.0+
 - watchOS 27.0+
@@ -17,24 +18,28 @@
 enum BEAccessibilityOrientation
 ```
 
+```c
+enum BEAccessibilityOrientation : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [BEAccessibilityOrientation.horizontal](beaccessibilityorientation/horizontal.md)
-- [BEAccessibilityOrientation.unknown](beaccessibilityorientation/unknown.md)
-- [BEAccessibilityOrientation.vertical](beaccessibilityorientation/vertical.md)
+- [BEAccessibilityOrientation.horizontal](./beaccessibilityorientation/horizontal.md)
+- [BEAccessibilityOrientation.unknown](./beaccessibilityorientation/unknown.md)
+- [BEAccessibilityOrientation.vertical](./beaccessibilityorientation/vertical.md)
 ### Initializers
-- [init?(rawValue: Int)](beaccessibilityorientation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./beaccessibilityorientation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

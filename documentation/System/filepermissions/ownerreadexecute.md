@@ -1,7 +1,8 @@
 # ownerReadExecute
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the owner has read-execute permission.
 
@@ -22,17 +23,18 @@ static var ownerReadExecute: FilePermissions { get }
 
 ## See Also
 
-- [static var ownerRead: FilePermissions](filepermissions/ownerread.md)
+### Owner Permissions
+- [static var ownerRead: FilePermissions](./ownerread.md)
   Indicates that the owner has read-only permission.
-- [static var ownerWrite: FilePermissions](filepermissions/ownerwrite.md)
+- [static var ownerWrite: FilePermissions](./ownerwrite.md)
   Indicates that the owner has write-only permission.
-- [static var ownerExecute: FilePermissions](filepermissions/ownerexecute.md)
+- [static var ownerExecute: FilePermissions](./ownerexecute.md)
   Indicates that the owner has execute-only permission.
-- [static var ownerReadWrite: FilePermissions](filepermissions/ownerreadwrite.md)
+- [static var ownerReadWrite: FilePermissions](./ownerreadwrite.md)
   Indicates that the owner has read-write permission.
-- [static var ownerWriteExecute: FilePermissions](filepermissions/ownerwriteexecute.md)
+- [static var ownerWriteExecute: FilePermissions](./ownerwriteexecute.md)
   Indicates that the owner has write-execute permission.
-- [static var ownerReadWriteExecute: FilePermissions](filepermissions/ownerreadwriteexecute.md)
+- [static var ownerReadWriteExecute: FilePermissions](./ownerreadwriteexecute.md)
   Indicates that the owner has read, write, and execute permission.
 
 

@@ -1,7 +1,8 @@
 # peakHoldLevel
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The peak hold power level in decibels.
 
@@ -18,13 +19,18 @@ The peak hold power level in decibels.
 var peakHoldLevel: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float peakHoldLevel;
+```
+
 #### Discussion
 
 This property isn’t key-value observable.
 
 ## See Also
 
-- [var averagePowerLevel: Float](avcaptureaudiochannel/averagepowerlevel.md)
+### Accessing power levels
+- [var averagePowerLevel: Float](./averagepowerlevel.md)
   The instantaneous average power level in decibels.
 
 

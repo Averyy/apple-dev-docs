@@ -1,7 +1,8 @@
 # standardOutput
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard output file descriptor, with a numeric value of 1.
 

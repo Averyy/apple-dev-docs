@@ -1,7 +1,8 @@
 # canvas
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A drag region that allows people to move the adornment within the canvas.
 
@@ -13,7 +14,8 @@ static let canvas: MarkupAdornment.DragRegion
 
 ## See Also
 
-- [static let fixed: MarkupAdornment.DragRegion](markupadornment/dragregion-swift.struct/fixed.md)
+### Choosing a drag region
+- [static let fixed: MarkupAdornment.DragRegion](./fixed.md)
   A drag region that prevents people from moving the adornment.
 
 

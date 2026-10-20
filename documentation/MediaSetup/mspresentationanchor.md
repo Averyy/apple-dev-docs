@@ -1,7 +1,8 @@
 # MSPresentationAnchor
 
 **Framework**: Media Setup  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A window that presents a Media Setup configuration view.
 
@@ -17,9 +18,14 @@ A window that presents a Media Setup configuration view.
 typealias MSPresentationAnchor = UIWindow
 ```
 
+```c
+typedef UIWindow * MSPresentationAnchor;
+```
+
 ## See Also
 
-- [func presentationAnchor() -> MSPresentationAnchor?](msauthenticationpresentationcontext/presentationanchor.md)
+### Displaying the Media Setup View
+- [func presentationAnchor() -> MSPresentationAnchor?](./msauthenticationpresentationcontext/presentationanchor%28%29.md)
   A window that presents the system’s HomePod configuration view to the user.
 
 

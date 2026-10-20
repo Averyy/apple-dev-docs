@@ -1,18 +1,19 @@
 # nodeA
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The node containing the first body in the contact.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,21 +21,26 @@ The node containing the first body in the contact.
 var nodeA: SCNNode { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SCNNode * nodeA;
+```
+
 #### Discussion
 
-Use the node’s [`physicsBody`](scnnode/physicsbody.md) property to examine physics characteristics of the node.
+Use the node’s [`physicsBody`](../scnnode/physicsbody.md) property to examine physics characteristics of the node.
 
 ## See Also
 
-- [var nodeB: SCNNode](scnphysicscontact/nodeb.md)
+### Inspecting the Contact Properties
+- [var nodeB: SCNNode](./nodeb.md)
   The node containing the second body in the contact.
-- [var contactPoint: SCNVector3](scnphysicscontact/contactpoint.md)
+- [var contactPoint: SCNVector3](./contactpoint.md)
   The contact point between the two physics bodies, in scene coordinates.
-- [var contactNormal: SCNVector3](scnphysicscontact/contactnormal.md)
+- [var contactNormal: SCNVector3](./contactnormal.md)
   The normal vector at the contact point between the two physics bodies, in scene coordinates.
-- [var collisionImpulse: CGFloat](scnphysicscontact/collisionimpulse.md)
+- [var collisionImpulse: CGFloat](./collisionimpulse.md)
   The force over time of the collision, in newton-seconds.
-- [var penetrationDistance: CGFloat](scnphysicscontact/penetrationdistance.md)
+- [var penetrationDistance: CGFloat](./penetrationdistance.md)
   The distance of overlap, in units of scene coordinate space, between the two physics bodies.
 
 

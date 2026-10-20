@@ -1,7 +1,8 @@
 # TemporalTransformer
 
 **Framework**: Create ML Components  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A transformer that takes an asynchronous input sequence of temporal features and produces an asynchronous output  sequence.
 
@@ -27,72 +28,73 @@ A temporal transformer, unlike a regular transformer, can accumulate multiple in
 ## Topics
 
 ### Applying and adapting
-- [func applied<S>(to: S, eventHandler: EventHandler?) async throws -> Self.OutputSequence](temporaltransformer/applied(to:eventhandler:).md)
+- [func applied<S>(to: S, eventHandler: EventHandler?) async throws -> Self.OutputSequence](./temporaltransformer/applied%28to,eventhandler%29.md)
   Performs the transformation on an input sequence.
-- [func adaptedAsEstimator() -> TemporalTransformerToEstimatorAdaptor<Self>](temporaltransformer/adaptedasestimator.md)
+- [func adaptedAsEstimator() -> TemporalTransformerToEstimatorAdaptor<Self>](./temporaltransformer/adaptedasestimator%28%29.md)
   Exposes this temporal transformer as a trivial temporal estimator.
-- [func adaptedAsUpdatableEstimator() -> TemporalTransformerToUpdatableEstimatorAdaptor<Self>](temporaltransformer/adaptedasupdatableestimator.md)
+- [func adaptedAsUpdatableEstimator() -> TemporalTransformerToUpdatableEstimatorAdaptor<Self>](./temporaltransformer/adaptedasupdatableestimator%28%29.md)
   Exposes this temporal transformer as a trivial temporal estimator.
-- [associatedtype Input](temporaltransformer/input.md)
+- [associatedtype Input](./temporaltransformer/input.md)
   The input type.
-- [associatedtype Output](temporaltransformer/output.md)
+- [associatedtype Output](./temporaltransformer/output.md)
   The output type.
-- [associatedtype OutputSequence : TemporalSequence](temporaltransformer/outputsequence.md)
+- [associatedtype OutputSequence : TemporalSequence](./temporaltransformer/outputsequence.md)
   The output async sequence type.
 ### Appending
-- [func appending(_:)](temporaltransformer/appending(_:).md)
+- [func appending(_:)](./temporaltransformer/appending%28_%29.md)
   Composes this temporal transformer with another temporal transformer.
 ### Transforming and predicting
-- [func callAsFunction<S>(S, eventHandler: EventHandler?) async throws -> Self.OutputSequence](temporaltransformer/callasfunction(_:eventhandler:).md)
+- [func callAsFunction<S>(S, eventHandler: EventHandler?) async throws -> Self.OutputSequence](./temporaltransformer/callasfunction%28_,eventhandler%29.md)
   Performs the transformation on an input sequence.
-- [func callAsFunction<S>(to: S, eventHandler: EventHandler?) async throws -> [Self.OutputSequence]](temporaltransformer/callasfunction(to:eventhandler:).md)
+- [func callAsFunction<S>(to: S, eventHandler: EventHandler?) async throws -> [Self.OutputSequence]](./temporaltransformer/callasfunction%28to,eventhandler%29.md)
   Performs the transformation on a sequence of inputs.
-- [func prediction<S, Label>(from: S) async throws -> Self.OutputSequence](temporaltransformer/prediction(from:).md)
+- [func prediction<S, Label>(from: S) async throws -> Self.OutputSequence](./temporaltransformer/prediction%28from%29.md)
   Performs a prediction on a single input.
 ### Exporting
-- [func export(to: URL) throws](temporaltransformer/export(to:).md)
+- [func export(to: URL) throws](./temporaltransformer/export%28to%29.md)
   Exports this temporal transformer as a CoreML model.
-- [func export(to: URL, metadata: ModelMetadata) throws](temporaltransformer/export(to:metadata:).md)
+- [func export(to: URL, metadata: ModelMetadata) throws](./temporaltransformer/export%28to,metadata%29.md)
   Exports this temporal transformer as a CoreML model with user-supplied metadata.
 
 ## Relationships
 
 ### Conforming Types
-- [AudioFeaturePrint](audiofeatureprint.md)
-- [ComposedTemporalTransformer](composedtemporaltransformer.md)
-- [Downsampler](downsampler.md)
-- [HumanBodyActionCounter](humanbodyactioncounter.md)
-- [LinearTimeSeriesForecaster.Model](lineartimeseriesforecaster/model.md)
-- [SlidingWindowTransformer](slidingwindowtransformer.md)
-- [TemporalAdaptor](temporaladaptor.md)
-- [TimeSeriesClassifier.Model](timeseriesclassifier/model.md)
-- [TransformerToTemporalAdaptor](transformertotemporaladaptor.md)
+- [AudioFeaturePrint](./audiofeatureprint.md)
+- [ComposedTemporalTransformer](./composedtemporaltransformer.md)
+- [Downsampler](./downsampler.md)
+- [HumanBodyActionCounter](./humanbodyactioncounter.md)
+- [LinearTimeSeriesForecaster.Model](./lineartimeseriesforecaster/model.md)
+- [SlidingWindowTransformer](./slidingwindowtransformer.md)
+- [TemporalAdaptor](./temporaladaptor.md)
+- [TimeSeriesClassifier.Model](./timeseriesclassifier/model.md)
+- [TransformerToTemporalAdaptor](./transformertotemporaladaptor.md)
 
 ## See Also
 
-- [protocol Transformer](transformer.md)
+### Protocols
+- [protocol Transformer](./transformer.md)
   A transformer that takes an input and produces an output.
-- [protocol RandomTransformer](randomtransformer.md)
+- [protocol RandomTransformer](./randomtransformer.md)
   A transformer that takes an input and a random number generator and produces a randomized output.
-- [protocol Estimator](estimator.md)
+- [protocol Estimator](./estimator.md)
   An estimator that creates a transformer by fitting to a data set.
-- [protocol TemporalEstimator](temporalestimator.md)
+- [protocol TemporalEstimator](./temporalestimator.md)
   An estimator that creates a transformer by fitting to a sequence of temporal features.
-- [protocol SupervisedEstimator](supervisedestimator.md)
+- [protocol SupervisedEstimator](./supervisedestimator.md)
   An estimator that creates a transformer by fitting to a data set.
-- [protocol SupervisedTemporalEstimator](supervisedtemporalestimator.md)
+- [protocol SupervisedTemporalEstimator](./supervisedtemporalestimator.md)
   An estimator that creates a transformer by fitting to a sequence of annotated temporal features.
-- [protocol UpdatableEstimator](updatableestimator.md)
+- [protocol UpdatableEstimator](./updatableestimator.md)
   An estimator that can be incrementally updated.
-- [protocol UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
+- [protocol UpdatableSupervisedEstimator](./updatablesupervisedestimator.md)
   A supervised estimator that can be incrementally updated.
-- [protocol UpdatableSupervisedTemporalEstimator](updatablesupervisedtemporalestimator.md)
+- [protocol UpdatableSupervisedTemporalEstimator](./updatablesupervisedtemporalestimator.md)
   A supervised temporal estimator that can be incrementally updated.
-- [protocol UpdatableSupervisedTabularEstimator](updatablesupervisedtabularestimator.md)
+- [protocol UpdatableSupervisedTabularEstimator](./updatablesupervisedtabularestimator.md)
   A supervised tabular estimator that can be incrementally updated.
-- [protocol UpdatableTemporalEstimator](updatabletemporalestimator.md)
+- [protocol UpdatableTemporalEstimator](./updatabletemporalestimator.md)
   A temporal estimator that can be incrementally updated.
-- [protocol UpdatableTabularEstimator](updatabletabularestimator.md)
+- [protocol UpdatableTabularEstimator](./updatabletabularestimator.md)
   A tabular estimator that can be incrementally updated.
 
 

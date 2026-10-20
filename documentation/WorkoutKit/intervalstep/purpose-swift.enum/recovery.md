@@ -1,7 +1,8 @@
 # IntervalStep.Purpose.recovery
 
 **Framework**: WorkoutKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A recovery step.
 
@@ -20,7 +21,8 @@ case recovery
 
 ## See Also
 
-- [IntervalStep.Purpose.work](intervalstep/purpose-swift.enum/work.md)
+### Determining the purpose
+- [IntervalStep.Purpose.work](./work.md)
   A work step.
 
 

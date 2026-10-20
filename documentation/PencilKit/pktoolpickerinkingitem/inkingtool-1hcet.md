@@ -1,7 +1,8 @@
 # inkingTool
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A tool for drawing on a canvas view.
 

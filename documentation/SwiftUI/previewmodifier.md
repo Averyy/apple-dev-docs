@@ -1,7 +1,8 @@
 # PreviewModifier
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that defines an environment in which previews can appear.
 
@@ -51,23 +52,24 @@ Use the `.modifier` preview trait to attach modifiers to a preview.
 ## Topics
 
 ### Associated Types
-- [associatedtype Body : View](previewmodifier/body.md)
-- [associatedtype Context = Void](previewmodifier/context.md)
+- [associatedtype Body : View](./previewmodifier/body.md)
+- [associatedtype Context = Void](./previewmodifier/context.md)
 ### Instance Methods
-- [func body(content: Self.Content, context: Self.Context) -> Self.Body](previewmodifier/body(content:context:).md)
+- [func body(content: Self.Content, context: Self.Context) -> Self.Body](./previewmodifier/body%28content,context%29.md)
   Modify a preview by applying the shared context.
 ### Type Aliases
-- [PreviewModifier.Content](previewmodifier/content.md)
+- [PreviewModifier.Content](./previewmodifier/content.md)
   The type-erased content of a preview.
 ### Type Methods
-- [static func makeSharedContext() async throws -> Self.Context](previewmodifier/makesharedcontext.md)
+- [static func makeSharedContext() async throws -> Self.Context](./previewmodifier/makesharedcontext%28%29.md)
   Create shared context to apply to previews. The context returned here will be cached and passed into the `body` method for every preview that applies a modifier of this type.
 
 ## See Also
 
-- [macro Previewable()](previewable().md)
+### Customizing a preview
+- [macro Previewable()](./previewable%28%29.md)
   Tag allowing a dynamic property to appear inline in a preview.
-- [struct PreviewModifierContent](previewmodifiercontent.md)
+- [struct PreviewModifierContent](./previewmodifiercontent.md)
   The type-erased content of a preview.
 
 

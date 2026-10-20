@@ -1,7 +1,8 @@
 # vfs_setauthcache_ttl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Enable credential caching and set time-to-live of cached authorized credentials for files in this filesystem.
 
@@ -10,11 +11,11 @@ Enable credential caching and set time-to-live of cached authorized credentials 
 
 ## Declaration
 
-```swift
+```c
 void vfs_setauthcache_ttl(mount_t mp, int ttl);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

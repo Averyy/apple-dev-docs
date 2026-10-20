@@ -1,7 +1,8 @@
 # receivePort
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 For an outgoing message, returns the port on which replies to the receiver will arrive. For an incoming message, returns the port the receiver did arrive on.
 
@@ -15,13 +16,18 @@ For an outgoing message, returns the port on which replies to the receiver will 
 var receivePort: Port? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSPort * receivePort;
+```
+
 #### Return Value
 
 For an outgoing message, the port on which replies to the receiver will arrive. For an incoming message, the port the receiver did arrive on.
 
 ## See Also
 
-- [var sendPort: Port?](portmessage/sendport.md)
+### Getting the Ports
+- [var sendPort: Port?](./sendport.md)
   For an outgoing message, returns the port the receiver will send itself through. For an incoming message, returns the port replies to the receiver should be sent through.
 
 

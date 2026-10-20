@@ -1,7 +1,8 @@
 # isISOScript
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns if the script is an ISO 15924 script
 

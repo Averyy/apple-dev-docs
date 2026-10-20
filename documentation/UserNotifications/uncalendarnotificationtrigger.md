@@ -1,7 +1,8 @@
 # UNCalendarNotificationTrigger
 
 **Framework**: User Notifications  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A trigger condition that causes a notification the system delivers at a specific date and time.
 
@@ -20,9 +21,13 @@ A trigger condition that causes a notification the system delivers at a specific
 class UNCalendarNotificationTrigger
 ```
 
+```objc
+@interface UNCalendarNotificationTrigger : UNNotificationTrigger
+```
+
 #### Overview
 
-Create a [`UNCalendarNotificationTrigger`](uncalendarnotificationtrigger.md) object when you want to schedule the delivery of a local notification at the date and time you specify. You use an [`NSDateComponents`](https://developer.apple.com/documentation/foundation/nsdatecomponents) object to specify only the time values that you want the system to use to determine the matching date and time.
+Create a [`UNCalendarNotificationTrigger`](./uncalendarnotificationtrigger.md) object when you want to schedule the delivery of a local notification at the date and time you specify. You use an [`NSDateComponents`](../Foundation/nsdatecomponents.md) object to specify only the time values that you want the system to use to determine the matching date and time.
 
 Listing 1 creates a trigger that delivers its notification every morning at 8:30. The repeating behavior is achieved by specifying `true` for the `repeats` parameter when creating the trigger.
 
@@ -50,40 +55,41 @@ UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger
 ## Topics
 
 ### Creating a Calendar Trigger
-- [convenience init(dateMatching: DateComponents, repeats: Bool)](uncalendarnotificationtrigger/init(datematching:repeats:).md)
+- [convenience init(dateMatching: DateComponents, repeats: Bool)](./uncalendarnotificationtrigger/init%28datematching,repeats%29.md)
   Creates a calendar trigger using the date components parameter.
 ### Getting the Trigger Information
-- [func nextTriggerDate() -> Date?](uncalendarnotificationtrigger/nexttriggerdate.md)
+- [func nextTriggerDate() -> Date?](./uncalendarnotificationtrigger/nexttriggerdate%28%29.md)
   The next date at which the trigger conditions are met.
-- [var dateComponents: DateComponents](uncalendarnotificationtrigger/datecomponents.md)
+- [var dateComponents: DateComponents](./uncalendarnotificationtrigger/datecomponents.md)
   The date components to construct this object.
 ### Initializers
-- [convenience init(dateMatchingComponents: DateComponents, repeats: Bool)](uncalendarnotificationtrigger/init(datematchingcomponents:repeats:).md)
+- [convenience init(dateMatchingComponents: DateComponents, repeats: Bool)](./uncalendarnotificationtrigger/init%28datematchingcomponents,repeats%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [UNNotificationTrigger](unnotificationtrigger.md)
+- [UNNotificationTrigger](./unnotificationtrigger.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class UNTimeIntervalNotificationTrigger](untimeintervalnotificationtrigger.md)
+### Triggers
+- [class UNTimeIntervalNotificationTrigger](./untimeintervalnotificationtrigger.md)
   A trigger condition that causes the system to deliver a notification after the amount of time you specify elapses.
-- [class UNLocationNotificationTrigger](unlocationnotificationtrigger.md)
+- [class UNLocationNotificationTrigger](./unlocationnotificationtrigger.md)
   A trigger condition that causes the system to deliver a notification when the user’s device enters or exits a geographic region you specify.
-- [class UNPushNotificationTrigger](unpushnotificationtrigger.md)
+- [class UNPushNotificationTrigger](./unpushnotificationtrigger.md)
   A trigger condition that indicates Apple Push Notification Service (APNs) has sent the notification.
-- [class UNNotificationTrigger](unnotificationtrigger.md)
+- [class UNNotificationTrigger](./unnotificationtrigger.md)
   The common behavior for subclasses that trigger the delivery of a local or remote notification.
 
 

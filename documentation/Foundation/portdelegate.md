@@ -1,7 +1,8 @@
 # PortDelegate
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for handling incoming messages.
 
@@ -20,34 +21,39 @@ An interface for handling incoming messages.
 protocol PortDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSPortDelegate <NSObject>
+```
+
 #### Overview
 
-The [`PortDelegate`](portdelegate.md) protocol defines the optional methods implemented by delegates of [`Port`](port.md) objects.
+The [`PortDelegate`](./portdelegate.md) protocol defines the optional methods implemented by delegates of [`Port`](./port.md) objects.
 
 ## Topics
 
 ### Handling Port Messages
-- [func handle(NSPortMessage)](portdelegate/handle(_:).md)
+- [func handle(NSPortMessage)](./portdelegate/handle%28_%29.md)
   Processes a given incoming message on the port.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [NSMachPortDelegate](nsmachportdelegate.md)
+- [NSMachPortDelegate](./nsmachportdelegate.md)
 
 ## See Also
 
-- [protocol NSMachPortDelegate](nsmachportdelegate.md)
+### Legacy
+- [protocol NSMachPortDelegate](./nsmachportdelegate.md)
   An interface for handling incoming Mach messages.
-- [class NSMachPort](nsmachport.md)
+- [class NSMachPort](./nsmachport.md)
   A port that can be used as an endpoint for distributed object connections (or raw messaging).
-- [class MessagePort](messageport.md)
+- [class MessagePort](./messageport.md)
   A port that can be used as an endpoint for distributed object connections (or raw messaging).
-- [class PortMessage](portmessage.md)
+- [class PortMessage](./portmessage.md)
   A low-level, operating system-independent type for inter-application (and inter-thread) messages.
-- [class NSProtocolChecker](nsprotocolchecker.md)
+- [class NSProtocolChecker](./nsprotocolchecker.md)
   An object that restricts the messages that can be sent to another object (referred to as the checker’s delegate).
 
 

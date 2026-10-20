@@ -1,7 +1,8 @@
 # AudioFileGetProperty(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the value of an audio file property.
 
@@ -19,6 +20,10 @@ Gets the value of an audio file property.
 func AudioFileGetProperty(_ inAudioFile: AudioFileID, _ inPropertyID: AudioFilePropertyID, _ ioDataSize: UnsafeMutablePointer<UInt32>, _ outPropertyData: UnsafeMutableRawPointer) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioFileGetProperty(AudioFileID inAudioFile, AudioFilePropertyID inPropertyID, UInt32 *ioDataSize, void *outPropertyData);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -27,20 +32,21 @@ A result code. See Result Codes.
 
 Some Core Audio property values are C types and others are Core Foundation objects.
 
-If you call this function to retrieve a value that is a Core Foundation object, then this function—despite the use of “Get” in its name—duplicates the object. You are responsible for releasing the object, as described in [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) in [`Memory Management Programming Guide for Core Foundation`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i).
+If you call this function to retrieve a value that is a Core Foundation object, then this function—despite the use of “Get” in its name—duplicates the object. You are responsible for releasing the object, as described in [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029) in [Memory Management Programming Guide for Core Foundation](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/CFMemoryMgmt.html#//apple_ref/doc/uid/10000127i).
 
 ## Parameters
 
 - `inAudioFile`: The audio file you want to obtain a property value from.
-- `inPropertyID`: The property whose value you want. See [`Audio File Properties`](1576499-audio-file-properties.md) for possible values.
-- `ioDataSize`: On input, the size of the buffer passed in the `outPropertyData` parameter. On output, the number of bytes written to the buffer. Use the [`AudioFileGetPropertyInfo(_:_:_:_:)`](audiofilegetpropertyinfo(_:_:_:_:).md) function to obtain the size of the property value.
+- `inPropertyID`: The property whose value you want. See [Audio File Properties](./api-1576499-audio-file-properties.md) for possible values.
+- `ioDataSize`: On input, the size of the buffer passed in the `outPropertyData` parameter. On output, the number of bytes written to the buffer. Use the [`AudioFileGetPropertyInfo(_:_:_:_:)`](./audiofilegetpropertyinfo%28_,_,_,_%29.md) function to obtain the size of the property value.
 - `outPropertyData`: On output, the value of the property specified in the `inPropertyID` parameter.
 
 ## See Also
 
-- [func AudioFileGetPropertyInfo(AudioFileID, AudioFilePropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<UInt32>?) -> OSStatus](audiofilegetpropertyinfo(_:_:_:_:).md)
+### Getting and Setting Audio File Properties
+- [func AudioFileGetPropertyInfo(AudioFileID, AudioFilePropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<UInt32>?) -> OSStatus](./audiofilegetpropertyinfo%28_,_,_,_%29.md)
   Gets information about an audio file property, including the size of the property value and whether the value is writable.
-- [func AudioFileSetProperty(AudioFileID, AudioFilePropertyID, UInt32, UnsafeRawPointer) -> OSStatus](audiofilesetproperty(_:_:_:_:).md)
+- [func AudioFileSetProperty(AudioFileID, AudioFilePropertyID, UInt32, UnsafeRawPointer) -> OSStatus](./audiofilesetproperty%28_,_,_,_%29.md)
   Sets the value of an audio file property
 
 

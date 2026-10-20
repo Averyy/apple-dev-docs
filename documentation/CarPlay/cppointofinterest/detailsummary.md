@@ -1,7 +1,8 @@
 # detailSummary
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The detail card’s summary.
 
@@ -16,15 +17,20 @@ The detail card’s summary.
 var detailSummary: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * detailSummary;
+```
+
 #### Discussion
 
-The template only displays a detail card when the user selects a point of interest. If this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0), the card displays the point of interest’s [`summary`](cppointofinterest/summary.md) instead.
+The template only displays a detail card when the user selects a point of interest. If this property is [`nil`](../../ObjectiveC/nil-227m0.md), the card displays the point of interest’s [`summary`](./summary.md) instead.
 
 ## See Also
 
-- [var detailTitle: String?](cppointofinterest/detailtitle.md)
+### Managing the Detail Card’s Data
+- [var detailTitle: String?](./detailtitle.md)
   The detail card’s title.
-- [var detailSubtitle: String?](cppointofinterest/detailsubtitle.md)
+- [var detailSubtitle: String?](./detailsubtitle.md)
   The detail card’s subtitle.
 
 

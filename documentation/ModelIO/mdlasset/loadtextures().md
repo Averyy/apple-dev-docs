@@ -1,7 +1,8 @@
 # loadTextures()
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func loadTextures()
+```
+
+```objc
+- (void) loadTextures;
 ```
 
 

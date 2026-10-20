@@ -1,7 +1,8 @@
 # vocabularySize
 
 **Framework**: Natural Language  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of words in the vocabulary.
 
@@ -20,17 +21,22 @@ The number of words in the vocabulary.
 var vocabularySize: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger vocabularySize;
+```
+
 ## See Also
 
-- [var dimension: Int](nlembedding/dimension.md)
+### Inspecting the vocabulary of an embedding
+- [var dimension: Int](./dimension.md)
   The number of dimensions in the vocabulary’s vector space.
-- [var language: NLLanguage?](nlembedding/language.md)
+- [var language: NLLanguage?](./language.md)
   The language of the text in the word embedding.
-- [func contains(String) -> Bool](nlembedding/contains(_:).md)
+- [func contains(String) -> Bool](./contains%28_%29.md)
   Requests a Boolean value that indicates whether the term is in the vocabulary.
-- [func vector(for: String) -> [Double]?](nlembedding/vector(for:).md)
+- [func vector(for: String) -> [Double]?](./vector%28for%29.md)
   Requests the vector for the given term.
-- [var revision: Int](nlembedding/revision.md)
+- [var revision: Int](./revision.md)
   The revision of the word embedding.
 
 

@@ -1,7 +1,8 @@
 # writingToolsBehavior
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -12,9 +13,13 @@
 optional var writingToolsBehavior: NSWritingToolsBehavior { get set }
 ```
 
+```objc
+@property NSWritingToolsBehavior writingToolsBehavior;
+```
+
 ## Mentions
 
-- [Customizing Writing Tools behavior for AppKit views](customizing-writing-tools-behavior-for-system-views.md)
+- [Customizing Writing Tools behavior for AppKit views](../customizing-writing-tools-behavior-for-system-views.md)
 
 
 ---

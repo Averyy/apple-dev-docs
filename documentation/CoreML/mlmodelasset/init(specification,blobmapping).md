@@ -1,7 +1,8 @@
 # init(specification:blobMapping:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct a model asset from an ML Program specification by replacing blob file references with corresponding in-memory blobs.
 
@@ -19,6 +20,10 @@ Construct a model asset from an ML Program specification by replacing blob file 
 convenience init(specification specificationData: Data, blobMapping: [URL : Data]) throws
 ```
 
+```objc
++ (instancetype) modelAssetWithSpecificationData:(NSData *) specificationData blobMapping:(NSDictionary<NSURL *,NSData *> *) blobMapping error:(NSError **) error;
+```
+
 #### Discussion
 
 An ML Program may use `BlobFileValue` syntax, which stores the blob data in external files and refers them by URL. This factory method enables in-memory workflow for such models by using the specified in-memory blob data in place of the external files.
@@ -31,9 +36,10 @@ The format of in-memory blobs must be the same as the external files. The dictio
 
 ## See Also
 
-- [convenience init(specification: Data) throws](mlmodelasset/init(specification:).md)
+### Creating a model asset
+- [convenience init(specification: Data) throws](./init%28specification%29.md)
   Creates a model asset from an in-memory model specification.
-- [convenience init(url: URL) throws](mlmodelasset/init(url:)-43988.md)
+- [convenience init(url: URL) throws](./init%28url%29-43988.md)
   Constructs a ModelAsset from a compiled model URL.
 
 

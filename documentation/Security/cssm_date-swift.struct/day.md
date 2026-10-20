@@ -1,7 +1,8 @@
 # Day
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var Day: (uint8, uint8)
+```
+
+```c
+uint8 Day[2];
 ```
 
 

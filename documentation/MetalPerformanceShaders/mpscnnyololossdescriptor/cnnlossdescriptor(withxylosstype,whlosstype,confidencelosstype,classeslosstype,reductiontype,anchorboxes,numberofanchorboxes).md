@@ -1,7 +1,8 @@
 # cnnLossDescriptor(withXYLossType:whLossType:confidenceLossType:classesLossType:reductionType:anchorBoxes:numberOfAnchorBoxes:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func cnnLossDescriptor(withXYLossType XYLossType: MPSCNNLossType, whLossType WHLossType: MPSCNNLossType, confidenceLossType: MPSCNNLossType, classesLossType: MPSCNNLossType, reductionType: MPSCNNReductionType, anchorBoxes: Data, numberOfAnchorBoxes: Int) -> MPSCNNYOLOLossDescriptor
+```
+
+```objc
++ (MPSCNNYOLOLossDescriptor *) cnnLossDescriptorWithXYLossType:(MPSCNNLossType) XYLossType WHLossType:(MPSCNNLossType) WHLossType confidenceLossType:(MPSCNNLossType) confidenceLossType classesLossType:(MPSCNNLossType) classesLossType reductionType:(MPSCNNReductionType) reductionType anchorBoxes:(NSData *) anchorBoxes numberOfAnchorBoxes:(NSUInteger) numberOfAnchorBoxes;
 ```
 
 

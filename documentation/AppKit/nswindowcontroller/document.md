@@ -1,17 +1,22 @@
 # document
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document associated with the window controller.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 unowned(unsafe) var document: AnyObject? { get set }
+```
+
+```objc
+@property (assign, nullable) id document;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ The value of this property is `nil` if no document is associated with the window
 
 ## See Also
 
-- [func setDocumentEdited(Bool)](nswindowcontroller/setdocumentedited(_:).md)
+### Accessing the Document
+- [func setDocumentEdited(Bool)](./setdocumentedited%28_%29.md)
   Sets the document edited flag for the window controller.
 
 

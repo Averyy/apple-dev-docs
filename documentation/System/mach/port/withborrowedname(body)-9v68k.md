@@ -1,7 +1,8 @@
 # withBorrowedName(body:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Borrow access to the port name in a block that can perform non-consuming operations.
 

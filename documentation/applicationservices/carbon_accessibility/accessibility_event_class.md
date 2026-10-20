@@ -5,6 +5,15 @@
 
 Defines the event class for accessibility events.
 
+## Declaration
+
+```c
+enum
+{
+   kEventClassAccessibility = 'acce',
+};
+```
+
 
 ---
 

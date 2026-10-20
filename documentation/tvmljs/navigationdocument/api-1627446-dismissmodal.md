@@ -1,7 +1,8 @@
 # dismissModal
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Dismisses the document displayed in modal view.
 
@@ -10,7 +11,7 @@ Dismisses the document displayed in modal view.
 
 ## Declaration
 
-```swift
+```
 void dismissModal();
 ```
 
@@ -20,7 +21,8 @@ When the document is dismissed, the previous document is brought into focus.
 
 ## See Also
 
-- [presentModal](navigationdocument/1627311-presentmodal.md)
+### Overlaying Document
+- [presentModal](./api-1627311-presentmodal.md)
   Displays the passed document on top of the current document.
 
 

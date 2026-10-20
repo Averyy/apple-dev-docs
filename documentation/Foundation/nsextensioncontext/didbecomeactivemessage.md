@@ -1,7 +1,8 @@
 # NSExtensionContext.DidBecomeActiveMessage
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A message the system sends when the extension’s host app moves from the inactive to the active state.
 
@@ -24,30 +25,31 @@ struct DidBecomeActiveMessage
 
 You can use this message to adjust your extension’s activity when the host app becomes active.
 
-Observe this message with the identifier [`didBecomeActive`](notificationcenter/messageidentifier/didbecomeactive-79dvm.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](notificationcenter/mainactormessage/subject.md) of this message type is [`NSExtensionContext`](nsextensioncontext.md).
+Observe this message with the identifier [`didBecomeActive`](../notificationcenter/messageidentifier/didbecomeactive-79dvm.md), or specify its type directly to the `addObserver(of:for:using:)` method. The [`Subject`](../notificationcenter/mainactormessage/subject.md) of this message type is [`NSExtensionContext`](../nsextensioncontext.md).
 
-This message interoperates with the notification [`NSExtensionHostDidBecomeActive`](nsnotification/name-swift.struct/nsextensionhostdidbecomeactive.md). The system notifies observers of the message when the [`NotificationCenter`](notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
+This message interoperates with the notification [`NSExtensionHostDidBecomeActive`](../nsnotification/name-swift.struct/nsextensionhostdidbecomeactive.md). The system notifies observers of the message when the [`NotificationCenter`](../notificationcenter.md) posts the notification. Similarly, the system notifies observers of the notification when it posts the message.
 
 ## Topics
 
 ### Creating a message for a host app becoming active
-- [init()](nsextensioncontext/didbecomeactivemessage/init.md)
+- [init()](./didbecomeactivemessage/init%28%29.md)
   Creates a message for a host app becoming active.
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](notificationcenter/mainactormessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../notificationcenter/mainactormessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSExtensionContext.WillResignActiveMessage](nsextensioncontext/willresignactivemessage.md)
+### Working with notification messages
+- [NSExtensionContext.WillResignActiveMessage](./willresignactivemessage.md)
   A message the system sends when the extension’s host app moves from the active to the inactive state.
-- [NSExtensionContext.DidEnterBackgroundMessage](nsextensioncontext/didenterbackgroundmessage.md)
+- [NSExtensionContext.DidEnterBackgroundMessage](./didenterbackgroundmessage.md)
   A message the system sends when the extension’s host app begins running in the background.
-- [NSExtensionContext.WillEnterForegroundMessage](nsextensioncontext/willenterforegroundmessage.md)
+- [NSExtensionContext.WillEnterForegroundMessage](./willenterforegroundmessage.md)
   A message the system sends when the extension’s host app begins running in the foreground.
 
 

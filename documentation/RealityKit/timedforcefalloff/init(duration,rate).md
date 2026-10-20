@@ -1,7 +1,8 @@
 # init(duration:rate:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a timed force falloff.
 

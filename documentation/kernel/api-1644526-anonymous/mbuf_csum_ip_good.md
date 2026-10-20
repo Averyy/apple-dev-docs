@@ -1,14 +1,15 @@
 # MBUF_CSUM_IP_GOOD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 MBUF_CSUM_IP_GOOD = 0x0200
 ```
 

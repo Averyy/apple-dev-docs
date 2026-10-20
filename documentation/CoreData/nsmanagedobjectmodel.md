@@ -1,7 +1,8 @@
 # NSManagedObjectModel
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A programmatic representation of the `.xcdatamodeld` file describing your objects.
 
@@ -10,7 +11,7 @@ A programmatic representation of the `.xcdatamodeld` file describing your object
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,14 +21,18 @@ A programmatic representation of the `.xcdatamodeld` file describing your object
 class NSManagedObjectModel
 ```
 
+```objc
+@interface NSManagedObjectModel : NSObject
+```
+
 ## Mentions
 
-- [Setting up a Core Data stack manually](setting-up-a-core-data-stack-manually.md)
-- [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
+- [Setting up a Core Data stack manually](./setting-up-a-core-data-stack-manually.md)
+- [Setting up a Core Data stack](./setting-up-a-core-data-stack.md)
 
 #### Overview
 
-The model contains one or more `NSEntityDescription` objects representing the entities in the schema. Each `NSEntityDescription` object has property description objects (instances of subclasses of [`NSPropertyDescription`](nspropertydescription.md)) that represent the properties (or fields) of the entity in the schema. The Core Data framework uses this description in several ways:
+The model contains one or more `NSEntityDescription` objects representing the entities in the schema. Each `NSEntityDescription` object has property description objects (instances of subclasses of [`NSPropertyDescription`](./nspropertydescription.md)) that represent the properties (or fields) of the entity in the schema. The Core Data framework uses this description in several ways:
 
 - Constraining UI creation in Interface Builder
 - Validating attribute and relationship values at runtime
@@ -37,33 +42,33 @@ A managed object model maintains a mapping between each of its entity objects an
 
 You typically create managed object models using the data modeling tool in Xcode, but it’s possible to build a model programmatically if needed.
 
-##### Loading a Model File
+##### Loading a model file
 
 Managed object model files are typically stored in a project or a framework. To load a model, you provide an URL to the constructor. Note that loading a model doesn’t have the effect of loading all of its entities.
 
-##### Storing Fetch Requests
+##### Storing fetch requests
 
 Frequently, you need a collection of objects that share features in common. Sometimes you can define those features (property values) in advance; sometimes you need to be able to supply values at runtime. For example, suppose you want to retrieve all movies owned by Pixar, or retrieve all movies that earned more than an amount specified by the user at runtime.
 
-Fetch requests are often predefined in a managed object model as templates. They allow you to predefine named queries and their parameters in the model. Typically they contain variables that need to be substituted at runtime. `NSManagedObjectModel` provides an API to retrieve a stored fetch request by name, and to perform variable substitution—see [`fetchRequestTemplate(forName:)`](nsmanagedobjectmodel/fetchrequesttemplate(forname:).md) and [`fetchRequestFromTemplate(withName:substitutionVariables:)`](nsmanagedobjectmodel/fetchrequestfromtemplate(withname:substitutionvariables:).md).
+Fetch requests are often predefined in a managed object model as templates. They allow you to predefine named queries and their parameters in the model. Typically they contain variables that need to be substituted at runtime. `NSManagedObjectModel` provides an API to retrieve a stored fetch request by name, and to perform variable substitution—see [`fetchRequestTemplate(forName:)`](./nsmanagedobjectmodel/fetchrequesttemplate%28forname%29.md) and [`fetchRequestFromTemplate(withName:substitutionVariables:)`](./nsmanagedobjectmodel/fetchrequestfromtemplate%28withname,substitutionvariables%29.md).
 
-You typically define fetch request templates using the Data Model editor in Xcode. You can also create fetch request templates programmatically, and associate them with a model using [`setFetchRequestTemplate(_:forName:)`](nsmanagedobjectmodel/setfetchrequesttemplate(_:forname:).md).
+You typically define fetch request templates using the Data Model editor in Xcode. You can also create fetch request templates programmatically, and associate them with a model using [`setFetchRequestTemplate(_:forName:)`](./nsmanagedobjectmodel/setfetchrequesttemplate%28_,forname%29.md).
 
-##### Supporting Multiple Configurations for the Same Model
+##### Supporting multiple configurations for the same model
 
-You may want to specify different sets of entities for the same model to be used in different situations. For example, suppose certain entities should only be available if a user has administrative privileges. To support this requirement, a model may have more than one configuration. Each configuration is named, and has an associated set of entities. The sets may overlap. You establish configurations programmatically using [`setEntities(_:forConfigurationName:)`](nsmanagedobjectmodel/setentities(_:forconfigurationname:).md) or using the Xcode design tool, and retrieve the entities for a given configuration name using [`entities(forConfigurationName:)`](nsmanagedobjectmodel/entities(forconfigurationname:).md).
+You may want to specify different sets of entities for the same model to be used in different situations. For example, suppose certain entities should only be available if a user has administrative privileges. To support this requirement, a model may have more than one configuration. Each configuration is named, and has an associated set of entities. The sets may overlap. You establish configurations programmatically using [`setEntities(_:forConfigurationName:)`](./nsmanagedobjectmodel/setentities%28_,forconfigurationname%29.md) or using the Xcode design tool, and retrieve the entities for a given configuration name using [`entities(forConfigurationName:)`](./nsmanagedobjectmodel/entities%28forconfigurationname%29.md).
 
-##### Changing Models
+##### Changing models
 
-Because a model describes the structure of the data in a persistent store, changing any parts of a model that alters the schema renders it incompatible with (and so unable to open) the stores it previously created. If you change your schema, you therefore need to migrate the data in existing stores to new version (see [`Core Data Model Versioning and Data Migration Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html#//apple_ref/doc/uid/TP40004399)). For example, if you add a new entity or a new attribute to an existing entity, you *can’t* open old stores; if you add a validation constraint or set a new default value for an attribute, you *can* open old stores.
+Because a model describes the structure of the data in a persistent store, changing any parts of a model that alters the schema renders it incompatible with (and so unable to open) the stores it previously created. If you change your schema, you therefore need to migrate the data in existing stores to new version (see [Core Data Model Versioning and Data Migration Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html#//apple_ref/doc/uid/TP40004399)). For example, if you add a new entity or a new attribute to an existing entity, you *can’t* open old stores; if you add a validation constraint or set a new default value for an attribute, you *can* open old stores.
 
-##### Editing Models at Runtime
+##### Editing models at runtime
 
 Managed object models are editable until they are used by an object graph manager (a managed object context or a persistent store coordinator). This allows you to create or modify them dynamically until their first use. However, once a model is being used, it *must not* be changed. This is enforced at runtime—when the object manager first fetches data using a model, the whole of that model becomes uneditable. Any attempt to mutate a model or any of its sub-objects after that point throws an exception. If you need to modify a model that’s in use, create a copy, modify the copy, and then discard the objects with the old model.
 
-##### Enumerating Entities with Fast Enumeration
+##### Enumerating entities with fast enumeration
 
-In macOS 10.5 and later and on iOS, `NSManagedObjectModel` supports the [`NSFastEnumeration`](https://developer.apple.com/documentation/foundation/nsfastenumeration) protocol. You can use this to enumerate over a model’s entities, as illustrated in the following example:
+In macOS 10.5 and later and on iOS, `NSManagedObjectModel` supports the [`NSFastEnumeration`](../Foundation/nsfastenumeration.md) protocol. You can use this to enumerate over a model’s entities, as illustrated in the following example:
 
 ```objc
 NSManagedObjectModel *aModel = ...;
@@ -75,93 +80,94 @@ for (NSEntityDescription *entity in aModel) {
 ## Topics
 
 ### Creating a managed object model
-- [convenience init?(contentsOf: URL)](nsmanagedobjectmodel/init(contentsof:).md)
+- [convenience init?(contentsOf: URL)](./nsmanagedobjectmodel/init%28contentsof%29.md)
   Initializes the managed object model using the model file at the specified URL.
-- [init()](nsmanagedobjectmodel/init.md)
+- [init()](./nsmanagedobjectmodel/init%28%29.md)
   Initializes an empty managed object model.
-- [class func mergedModel(from: [Bundle]?) -> NSManagedObjectModel?](nsmanagedobjectmodel/mergedmodel(from:).md)
+- [class func mergedModel(from: [Bundle]?) -> NSManagedObjectModel?](./nsmanagedobjectmodel/mergedmodel%28from%29.md)
   Returns a model created by merging all the models found in given bundles.
-- [class func mergedModel(from: [Bundle]?, forStoreMetadata: [String : Any]) -> NSManagedObjectModel?](nsmanagedobjectmodel/mergedmodel(from:forstoremetadata:).md)
+- [class func mergedModel(from: [Bundle]?, forStoreMetadata: [String : Any]) -> NSManagedObjectModel?](./nsmanagedobjectmodel/mergedmodel%28from,forstoremetadata%29.md)
   Returns a merged model from a specified array for the version information in provided metadata.
-- [init?(byMerging: [NSManagedObjectModel]?)](nsmanagedobjectmodel/init(bymerging:).md)
+- [init?(byMerging: [NSManagedObjectModel]?)](./nsmanagedobjectmodel/init%28bymerging%29.md)
   Creates a single model from an array of existing models.
-- [init?(byMerging: [NSManagedObjectModel], forStoreMetadata: [String : Any])](nsmanagedobjectmodel/init(bymerging:forstoremetadata:).md)
+- [init?(byMerging: [NSManagedObjectModel], forStoreMetadata: [String : Any])](./nsmanagedobjectmodel/init%28bymerging,forstoremetadata%29.md)
   Returns, for the version information in given metadata, a model merged from a given array of models.
 ### Managing entities and configurations
-- [var entities: [NSEntityDescription]](nsmanagedobjectmodel/entities.md)
+- [var entities: [NSEntityDescription]](./nsmanagedobjectmodel/entities.md)
   The entities in the model.
-- [var entitiesByName: [String : NSEntityDescription]](nsmanagedobjectmodel/entitiesbyname.md)
+- [var entitiesByName: [String : NSEntityDescription]](./nsmanagedobjectmodel/entitiesbyname.md)
   The entities of the model, keyed by name.
-- [var configurations: [String]](nsmanagedobjectmodel/configurations.md)
+- [var configurations: [String]](./nsmanagedobjectmodel/configurations.md)
   All the available configuration names of the model.
-- [func entities(forConfigurationName: String?) -> [NSEntityDescription]?](nsmanagedobjectmodel/entities(forconfigurationname:).md)
+- [func entities(forConfigurationName: String?) -> [NSEntityDescription]?](./nsmanagedobjectmodel/entities%28forconfigurationname%29.md)
   Returns the entities of the model for a specified configuration.
-- [func setEntities([NSEntityDescription], forConfigurationName: String)](nsmanagedobjectmodel/setentities(_:forconfigurationname:).md)
+- [func setEntities([NSEntityDescription], forConfigurationName: String)](./nsmanagedobjectmodel/setentities%28_,forconfigurationname%29.md)
   Associates the specified entities with the model using the given configuration name.
 ### Manipulating fetch request templates
-- [var fetchRequestTemplatesByName: [String : NSFetchRequest<any NSFetchRequestResult>]](nsmanagedobjectmodel/fetchrequesttemplatesbyname.md)
+- [var fetchRequestTemplatesByName: [String : NSFetchRequest<any NSFetchRequestResult>]](./nsmanagedobjectmodel/fetchrequesttemplatesbyname.md)
   A dictionary of the receiver’s fetch request templates, keyed by name.
-- [func fetchRequestTemplate(forName: String) -> NSFetchRequest<any NSFetchRequestResult>?](nsmanagedobjectmodel/fetchrequesttemplate(forname:).md)
+- [func fetchRequestTemplate(forName: String) -> NSFetchRequest<any NSFetchRequestResult>?](./nsmanagedobjectmodel/fetchrequesttemplate%28forname%29.md)
   Returns the fetch request with a specified name.
-- [func fetchRequestFromTemplate(withName: String, substitutionVariables: [String : Any]) -> NSFetchRequest<any NSFetchRequestResult>?](nsmanagedobjectmodel/fetchrequestfromtemplate(withname:substitutionvariables:).md)
+- [func fetchRequestFromTemplate(withName: String, substitutionVariables: [String : Any]) -> NSFetchRequest<any NSFetchRequestResult>?](./nsmanagedobjectmodel/fetchrequestfromtemplate%28withname,substitutionvariables%29.md)
   Returns a copy of the fetch request template with the variables substituted by values from the substitutions dictionary.
-- [func setFetchRequestTemplate(NSFetchRequest<any NSFetchRequestResult>?, forName: String)](nsmanagedobjectmodel/setfetchrequesttemplate(_:forname:).md)
+- [func setFetchRequestTemplate(NSFetchRequest<any NSFetchRequestResult>?, forName: String)](./nsmanagedobjectmodel/setfetchrequesttemplate%28_,forname%29.md)
   Associates the specified fetch request with the receiver using the given name.
 ### Handling localization
-- [var localizationDictionary: [String : String]?](nsmanagedobjectmodel/localizationdictionary.md)
+- [var localizationDictionary: [String : String]?](./nsmanagedobjectmodel/localizationdictionary.md)
   The localization dictionary of the model.
 ### Versioning and migrating entities
-- [var versionChecksum: String](nsmanagedobjectmodel/versionchecksum.md)
+- [var versionChecksum: String](./nsmanagedobjectmodel/versionchecksum.md)
   The Base64-encoded 128-bit model version hash.
-- [var versionIdentifiers: Set<AnyHashable>](nsmanagedobjectmodel/versionidentifiers.md)
+- [var versionIdentifiers: Set<AnyHashable>](./nsmanagedobjectmodel/versionidentifiers.md)
   The set of developer-defined version identifiers for the object model.
-- [var entityVersionHashesByName: [String : Data]](nsmanagedobjectmodel/entityversionhashesbyname.md)
+- [var entityVersionHashesByName: [String : Data]](./nsmanagedobjectmodel/entityversionhashesbyname.md)
   The dictionary of the model’s entity names and their corresponding version hashes.
-- [func isConfiguration(withName: String?, compatibleWithStoreMetadata: [String : Any]) -> Bool](nsmanagedobjectmodel/isconfiguration(withname:compatiblewithstoremetadata:).md)
+- [func isConfiguration(withName: String?, compatibleWithStoreMetadata: [String : Any]) -> Bool](./nsmanagedobjectmodel/isconfiguration%28withname,compatiblewithstoremetadata%29.md)
   Returns a Boolean value that indicates whether a given configuration in the model is compatible with given metadata from a persistent store.
 ### Working with indexes
-- [enum NSFetchIndexElementType](nsfetchindexelementtype.md)
+- [enum NSFetchIndexElementType](./nsfetchindexelementtype.md)
   Defines the possible types of index elements.
-- [class NSFetchIndexDescription](nsfetchindexdescription.md)
+- [class NSFetchIndexDescription](./nsfetchindexdescription.md)
   The description of the index.
-- [class NSFetchIndexElementDescription](nsfetchindexelementdescription.md)
+- [class NSFetchIndexElementDescription](./nsfetchindexelementdescription.md)
   Description of an Index Element
 ### Initializers
-- [init?(byMergingModels: [NSManagedObjectModel]?)](nsmanagedobjectmodel/init(bymergingmodels:).md)
-- [init?(byMergingModels: [NSManagedObjectModel], forStoreMetadata: [String : Any])](nsmanagedobjectmodel/init(bymergingmodels:forstoremetadata:).md)
-- [init?(coder: NSCoder)](nsmanagedobjectmodel/init(coder:).md)
-- [convenience init?(contentsOfURL: URL)](nsmanagedobjectmodel/init(contentsofurl:).md)
+- [init?(byMergingModels: [NSManagedObjectModel]?)](./nsmanagedobjectmodel/init%28bymergingmodels%29.md)
+- [init?(byMergingModels: [NSManagedObjectModel], forStoreMetadata: [String : Any])](./nsmanagedobjectmodel/init%28bymergingmodels,forstoremetadata%29.md)
+- [init?(coder: NSCoder)](./nsmanagedobjectmodel/init%28coder%29.md)
+- [convenience init?(contentsOfURL: URL)](./nsmanagedobjectmodel/init%28contentsofurl%29.md)
 ### Type Methods
-- [static func makeManagedObjectModel(for: any PersistentModel.Type..., mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-2tc31.md)
-- [static func makeManagedObjectModel(for: [any PersistentModel.Type], mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-37opo.md)
-- [static func makeManagedObjectModel(for: Schema, mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-7lqq9.md)
+- [static func makeManagedObjectModel(for: any PersistentModel.Type..., mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](./nsmanagedobjectmodel/makemanagedobjectmodel%28for,mergedwith%29-2tc31.md)
+- [static func makeManagedObjectModel(for: [any PersistentModel.Type], mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](./nsmanagedobjectmodel/makemanagedobjectmodel%28for,mergedwith%29-37opo.md)
+- [static func makeManagedObjectModel(for: Schema, mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](./nsmanagedobjectmodel/makemanagedobjectmodel%28for,mergedwith%29-7lqq9.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSFastEnumeration](../foundation/nsfastenumeration.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSFastEnumeration](../Foundation/nsfastenumeration.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSEntityDescription](nsentitydescription.md)
+### Object Modeling
+- [class NSEntityDescription](./nsentitydescription.md)
   A description of a Core Data entity.
-- [class NSPropertyDescription](nspropertydescription.md)
+- [class NSPropertyDescription](./nspropertydescription.md)
   A description of a single property belonging to an entity.
-- [class NSAttributeDescription](nsattributedescription.md)
+- [class NSAttributeDescription](./nsattributedescription.md)
   A description of a single attribute belonging to an entity.
-- [class NSDerivedAttributeDescription](nsderivedattributedescription.md)
+- [class NSDerivedAttributeDescription](./nsderivedattributedescription.md)
   A description of an attribute that derives its value by performing a calculation on a related attribute.
-- [class NSRelationshipDescription](nsrelationshipdescription.md)
+- [class NSRelationshipDescription](./nsrelationshipdescription.md)
   A description of a relationship between two entities.
 
 

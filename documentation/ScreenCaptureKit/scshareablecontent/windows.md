@@ -1,7 +1,8 @@
 # windows
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The windows available for capture.
 
@@ -15,11 +16,16 @@ The windows available for capture.
 var windows: [SCWindow] { get }
 ```
 
+```objc
+@property (readonly) NSArray<SCWindow *> * windows;
+```
+
 ## See Also
 
-- [var displays: [SCDisplay]](scshareablecontent/displays.md)
+### Inspecting shareable content
+- [var displays: [SCDisplay]](./displays.md)
   The displays available for capture.
-- [var applications: [SCRunningApplication]](scshareablecontent/applications.md)
+- [var applications: [SCRunningApplication]](./applications.md)
   The apps available for capture.
 
 

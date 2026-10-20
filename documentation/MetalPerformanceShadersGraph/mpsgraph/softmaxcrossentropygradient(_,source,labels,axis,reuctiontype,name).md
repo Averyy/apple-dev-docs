@@ -1,7 +1,8 @@
 # softMaxCrossEntropyGradient(_:source:labels:axis:reuctionType:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the gradient of a softmax cross-entropy loss operation and returns the result tensor.
 
@@ -19,6 +20,10 @@ Creates the gradient of a softmax cross-entropy loss operation and returns the r
 func softMaxCrossEntropyGradient(_ gradientTensor: MPSGraphTensor, source sourceTensor: MPSGraphTensor, labels labelsTensor: MPSGraphTensor, axis: Int, reuctionType reductionType: MPSGraphLossReductionType, name: String?) -> MPSGraphTensor
 ```
 
+```objc
+- (MPSGraphTensor *) softMaxCrossEntropyGradientWithIncomingGradientTensor:(MPSGraphTensor *) gradientTensor sourceTensor:(MPSGraphTensor *) sourceTensor labelsTensor:(MPSGraphTensor *) labelsTensor axis:(NSInteger) axis reductionType:(MPSGraphLossReductionType) reductionType name:(NSString *) name;
+```
+
 #### Return Value
 
 A valid MPSGraphTensor object.
@@ -29,7 +34,7 @@ A valid MPSGraphTensor object.
 - `sourceTensor`: The source tensor.
 - `labelsTensor`: The labels tensor.
 - `axis`: The axis over which the operation computes the softmax reduction.
-- `reductionType`: The type of reduction MPSGraph uses to reduce across all other axes than `axis`. See: [`MPSGraphLossReductionType`](mpsgraphlossreductiontype.md).
+- `reductionType`: The type of reduction MPSGraph uses to reduce across all other axes than `axis`. See: [`MPSGraphLossReductionType`](../mpsgraphlossreductiontype.md).
 - `name`: The name for the operation.
 
 

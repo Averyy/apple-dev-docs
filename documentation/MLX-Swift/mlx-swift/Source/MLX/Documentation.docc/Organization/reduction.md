@@ -24,7 +24,7 @@ let totalSum = array.sum()
 let columnSum = array.sum(axis: 0)
 ```
 
-See also <doc:logical> and <doc:cumulative>
+See also [Logical Operators](logical.md) and [Cumulative Operations](cumulative.md)
 
 ## Topics
 

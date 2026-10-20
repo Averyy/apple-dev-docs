@@ -1,7 +1,8 @@
 # isRunning
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 var isRunning: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isRunning) BOOL running;
+```
+
 ## See Also
 
-- [var isLoadedInProcess: Bool](auaudiounit/isloadedinprocess.md)
+### Getting the Runtime Behavior
+- [var isLoadedInProcess: Bool](./isloadedinprocess.md)
 
 
 ---

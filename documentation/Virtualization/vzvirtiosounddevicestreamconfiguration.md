@@ -1,7 +1,8 @@
 # VZVirtioSoundDeviceStreamConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines a Virtio sound device stream configuration.
 
@@ -14,35 +15,40 @@ An object that defines a Virtio sound device stream configuration.
 class VZVirtioSoundDeviceStreamConfiguration
 ```
 
+```objc
+@interface VZVirtioSoundDeviceStreamConfiguration : NSObject
+```
+
 #### Overview
 
-A `VZVirtioSoundDeviceStreamConfiguration` object represents a PCM stream of audio data. Don’t instantiate this class directly. Instead, instantiate one of its subclasses such as [`VZVirtioSoundDeviceInputStreamConfiguration`](vzvirtiosounddeviceinputstreamconfiguration.md) or [`VZVirtioSoundDeviceOutputStreamConfiguration`](vzvirtiosounddeviceoutputstreamconfiguration.md).
+A `VZVirtioSoundDeviceStreamConfiguration` object represents a PCM stream of audio data. Don’t instantiate this class directly. Instead, instantiate one of its subclasses such as [`VZVirtioSoundDeviceInputStreamConfiguration`](./vzvirtiosounddeviceinputstreamconfiguration.md) or [`VZVirtioSoundDeviceOutputStreamConfiguration`](./vzvirtiosounddeviceoutputstreamconfiguration.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZVirtioSoundDeviceInputStreamConfiguration](vzvirtiosounddeviceinputstreamconfiguration.md)
-- [VZVirtioSoundDeviceOutputStreamConfiguration](vzvirtiosounddeviceoutputstreamconfiguration.md)
+- [VZVirtioSoundDeviceInputStreamConfiguration](./vzvirtiosounddeviceinputstreamconfiguration.md)
+- [VZVirtioSoundDeviceOutputStreamConfiguration](./vzvirtiosounddeviceoutputstreamconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioSoundDeviceConfiguration](vzvirtiosounddeviceconfiguration.md)
+### Configurations
+- [class VZVirtioSoundDeviceConfiguration](./vzvirtiosounddeviceconfiguration.md)
   An object that defines a Virtio sound device configuration.
-- [class VZVirtioSoundDeviceOutputStreamConfiguration](vzvirtiosounddeviceoutputstreamconfiguration.md)
+- [class VZVirtioSoundDeviceOutputStreamConfiguration](./vzvirtiosounddeviceoutputstreamconfiguration.md)
   An object that defines a Virtio sound device output stream configuration.
-- [class VZVirtioSoundDeviceInputStreamConfiguration](vzvirtiosounddeviceinputstreamconfiguration.md)
+- [class VZVirtioSoundDeviceInputStreamConfiguration](./vzvirtiosounddeviceinputstreamconfiguration.md)
   A PCM stream of input audio data, such as from a microphone.
-- [class VZAudioDeviceConfiguration](vzaudiodeviceconfiguration.md)
+- [class VZAudioDeviceConfiguration](./vzaudiodeviceconfiguration.md)
   The base class for an audio device configuration.
 
 

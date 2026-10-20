@@ -1,7 +1,8 @@
 # getTeams
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches a list of teams the current user is in.
 
@@ -10,7 +11,7 @@ Fetches a list of teams the current user is in.
 
 ## Declaration
 
-```swift
+```
 CancellablePromise getTeams();
 ```
 
@@ -37,11 +38,12 @@ If successful, the result contains a `TeamsResponse` object. For more informatio
 
 ## See Also
 
-- [getSessionUser](promisesapi/getsessionuser.md)
+### User and Team
+- [getSessionUser](./getsessionuser.md)
   Returns details for the user in current session.
-- [Team](team.md)
+- [Team](../team.md)
   Details of a developer team.
-- [TeamsResponse](teamsresponse.md)
+- [TeamsResponse](../teamsresponse.md)
   Response object for a list of teams.
 
 

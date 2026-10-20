@@ -1,7 +1,8 @@
 # GCRotationRate
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents rotation rates around the x, y, and z axes.
 
@@ -19,36 +20,41 @@ A structure that represents rotation rates around the x, y, and z axes.
 struct GCRotationRate
 ```
 
+```c
+typedef struct { ... } GCRotationRate;
+```
+
 ## Topics
 
 ### Getting Rotation Rate Values
-- [var x: Double](gcrotationrate/x.md)
+- [var x: Double](./gcrotationrate/x.md)
   The rotation rate around the x-axis in radians per second.
-- [var y: Double](gcrotationrate/y.md)
+- [var y: Double](./gcrotationrate/y.md)
   The rotation rate around the y-axis in radians per second.
-- [var z: Double](gcrotationrate/z.md)
+- [var z: Double](./gcrotationrate/z.md)
   The rotation rate around the z-axis in radians per second.
 ### Initializers
-- [init()](gcrotationrate/init.md)
+- [init()](./gcrotationrate/init%28%29.md)
   Creates a rotation rate structure.
-- [init(x: Double, y: Double, z: Double)](gcrotationrate/init(x:y:z:).md)
+- [init(x: Double, y: Double, z: Double)](./gcrotationrate/init%28x,y,z%29.md)
   Creates a rotation rate structure with the specified values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var attitude: GCQuaternion](gcmotion/attitude.md)
+### Accessing Attitude and Rotation Data
+- [var attitude: GCQuaternion](./gcmotion/attitude.md)
   The attitude of the controller.
-- [struct GCQuaternion](gcquaternion.md)
+- [struct GCQuaternion](./gcquaternion.md)
   A quaternion that represents a controller’s measurement of attitude.
-- [var rotationRate: GCRotationRate](gcmotion/rotationrate.md)
+- [var rotationRate: GCRotationRate](./gcmotion/rotationrate.md)
   The rotation rate of the controller.
-- [struct GCEulerAngles](gceulerangles.md)
+- [struct GCEulerAngles](./gceulerangles.md)
   A structure that specifies the controller’s attitude as a series of rotations around the x, y, and z axes.
 
 

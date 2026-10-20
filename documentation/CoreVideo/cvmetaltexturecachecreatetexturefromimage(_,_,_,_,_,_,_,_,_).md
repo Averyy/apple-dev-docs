@@ -1,7 +1,8 @@
 # CVMetalTextureCacheCreateTextureFromImage(_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a Core Video Metal texture buffer from an existing image buffer.
 
@@ -19,17 +20,21 @@ Creates a Core Video Metal texture buffer from an existing image buffer.
 func CVMetalTextureCacheCreateTextureFromImage(_ allocator: CFAllocator?, _ textureCache: CVMetalTextureCache, _ sourceImage: CVImageBuffer, _ textureAttributes: CFDictionary?, _ pixelFormat: MTLPixelFormat, _ width: Int, _ height: Int, _ planeIndex: Int, _ textureOut: UnsafeMutablePointer<CVMetalTexture?>) -> CVReturn
 ```
 
+```c
+extern CVReturn CVMetalTextureCacheCreateTextureFromImage(CFAllocatorRef allocator, CVMetalTextureCacheRef textureCache, CVImageBufferRef sourceImage, CFDictionaryRef textureAttributes, MTLPixelFormat pixelFormat, size_t width, size_t height, size_t planeIndex, CVMetalTextureRef*textureOut);
+```
+
 #### Return Value
 
-Upon successful creation of the texture, this function returns [`kCVReturnSuccess`](kcvreturnsuccess.md).
+Upon successful creation of the texture, this function returns [`kCVReturnSuccess`](./kcvreturnsuccess.md).
 
 #### Discussion
 
-This function creates a cached Core Video Metal texture object mapped to an image buffer, and a live binding to the underlying [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) object.
+This function creates a cached Core Video Metal texture object mapped to an image buffer, and a live binding to the underlying [`MTLTexture`](../Metal/mtltexture.md) object.
 
-> ❗ **Important**:  You need to maintain a strong reference to `textureOut` until the GPU finishes execution of commands accessing the texture, because the system doesn’t automatically retain it. Developers typically release these references in a block passed to [`addCompletedHandler(_:)`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/addcompletedhandler(_:)).
+> ❗ **Important**:  You need to maintain a strong reference to `textureOut` until the GPU finishes execution of commands accessing the texture, because the system doesn’t automatically retain it. Developers typically release these references in a block passed to [`addCompletedHandler(_:)`](../Metal/mtlcommandbuffer/addcompletedhandler%28_%29.md).
 
-Note that Core Video doesn’t explicitly declare any pixel format types as Metal compatible. Specify [`true`](https://developer.apple.com/documentation/swift/true) for the [`kCVPixelBufferMetalCompatibilityKey`](kcvpixelbuffermetalcompatibilitykey.md) option to create Metal-compatible buffers when creating or requesting Core Video pixel buffers. You’re responsible for ensuring the pixel format is appropriate to the buffer.
+Note that Core Video doesn’t explicitly declare any pixel format types as Metal compatible. Specify [`true`](../Swift/true.md) for the [`kCVPixelBufferMetalCompatibilityKey`](./kcvpixelbuffermetalcompatibilitykey.md) option to create Metal-compatible buffers when creating or requesting Core Video pixel buffers. You’re responsible for ensuring the pixel format is appropriate to the buffer.
 
 The following code snippet demonstrates some example mappings:
 
@@ -61,11 +66,12 @@ CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault, textureCache, pix
 
 ## See Also
 
-- [func CVMetalTextureCacheCreate(CFAllocator?, CFDictionary?, any MTLDevice, CFDictionary?, UnsafeMutablePointer<CVMetalTextureCache?>) -> CVReturn](cvmetaltexturecachecreate(_:_:_:_:_:).md)
+### Functions
+- [func CVMetalTextureCacheCreate(CFAllocator?, CFDictionary?, any MTLDevice, CFDictionary?, UnsafeMutablePointer<CVMetalTextureCache?>) -> CVReturn](./cvmetaltexturecachecreate%28_,_,_,_,_%29.md)
   Creates a new texture cache.
-- [func CVMetalTextureCacheFlush(CVMetalTextureCache, CVOptionFlags)](cvmetaltexturecacheflush(_:_:).md)
+- [func CVMetalTextureCacheFlush(CVMetalTextureCache, CVOptionFlags)](./cvmetaltexturecacheflush%28_,_%29.md)
   Manually flushes the contents of the provided texture cache.
-- [func CVMetalTextureCacheGetTypeID() -> CFTypeID](cvmetaltexturecachegettypeid().md)
+- [func CVMetalTextureCacheGetTypeID() -> CFTypeID](./cvmetaltexturecachegettypeid%28%29.md)
   Returns the Core Foundation type identifier for a Core Video Metal texture cache.
 
 

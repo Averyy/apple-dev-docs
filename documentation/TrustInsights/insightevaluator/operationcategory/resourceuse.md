@@ -1,7 +1,8 @@
 # InsightEvaluator.OperationCategory.resourceUse
 
 **Framework**: Trust Insights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates the use of some resource.
 
@@ -21,13 +22,14 @@ For example, an expensive computation capability or online service.
 
 ## See Also
 
-- [InsightEvaluator.OperationCategory.account](insightevaluator/operationcategory/account.md)
+### Enumeration Cases - generated
+- [InsightEvaluator.OperationCategory.account](./account.md)
   A value that indicates an account operation including registration, login, or the modification of account details.
-- [InsightEvaluator.OperationCategory.communication](insightevaluator/operationcategory/communication.md)
+- [InsightEvaluator.OperationCategory.communication](./communication.md)
   A value that indicates a communication operation.
-- [InsightEvaluator.OperationCategory.other](insightevaluator/operationcategory/other.md)
+- [InsightEvaluator.OperationCategory.other](./other.md)
   A value that represents action types that don’t fall into other available categories.
-- [InsightEvaluator.OperationCategory.payment](insightevaluator/operationcategory/payment.md)
+- [InsightEvaluator.OperationCategory.payment](./payment.md)
   A value that indicates some form of payment or purchase.
 
 

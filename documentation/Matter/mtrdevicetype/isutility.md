@@ -1,7 +1,8 @@
 # isUtility
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether this is a utility device type.
 
@@ -18,6 +19,10 @@ Returns whether this is a utility device type.
 
 ```swift
 var isUtility: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) BOOL isUtility;
 ```
 
 

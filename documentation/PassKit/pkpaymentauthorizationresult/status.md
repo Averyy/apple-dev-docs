@@ -1,7 +1,8 @@
 # status
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Payment authorization general status.
 
@@ -19,15 +20,20 @@ Payment authorization general status.
 var status: PKPaymentAuthorizationStatus { get set }
 ```
 
+```objc
+@property (nonatomic, assign) PKPaymentAuthorizationStatus status;
+```
+
 #### Discussion
 
-See [`PKPaymentAuthorizationStatus`](pkpaymentauthorizationstatus.md) for the list of status values.
+See [`PKPaymentAuthorizationStatus`](../pkpaymentauthorizationstatus.md) for the list of status values.
 
 ## See Also
 
-- [var errors: [any Error]!](pkpaymentauthorizationresult/errors.md)
+### Setting payment authorization status and errors
+- [var errors: [any Error]!](./errors.md)
   List of errors in the Apple Pay sheet.
-- [enum PKPaymentAuthorizationStatus](pkpaymentauthorizationstatus.md)
+- [enum PKPaymentAuthorizationStatus](../pkpaymentauthorizationstatus.md)
   General success and failure status for payment authorization.
 
 

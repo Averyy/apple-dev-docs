@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The amount of space added around the content of the container to adjust its final size after item content insets are applied.
@@ -19,9 +20,14 @@ The amount of space added around the content of the container to adjust its fina
 var effectiveContentInsets: NSDirectionalEdgeInsets { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDirectionalEdgeInsets effectiveContentInsets;
+```
+
 ## See Also
 
-- [var contentInsets: NSDirectionalEdgeInsets](nscollectionlayoutcontainer/contentinsets.md)
+### Getting content insets
+- [var contentInsets: NSDirectionalEdgeInsets](./contentinsets.md)
   The amount of space added around the content of the container to adjust its final size.
 
 

@@ -1,7 +1,8 @@
 # authenticationSessionRequest(_:didCancelWithError:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate, typically a browser, that the authentication was canceled.
 
@@ -14,6 +15,10 @@ Tells the delegate, typically a browser, that the authentication was canceled.
 optional func authenticationSessionRequest(_ authenticationSessionRequest: ASWebAuthenticationSessionRequest, didCancelWithError error: any Error)
 ```
 
+```objc
+- (void) authenticationSessionRequest:(ASWebAuthenticationSessionRequest *) authenticationSessionRequest didCancelWithError:(NSError *) error;
+```
+
 ## Parameters
 
 - `authenticationSessionRequest`: The request sending the message.
@@ -21,7 +26,8 @@ optional func authenticationSessionRequest(_ authenticationSessionRequest: ASWeb
 
 ## See Also
 
-- [func authenticationSessionRequest(ASWebAuthenticationSessionRequest, didCompleteWithCallbackURL: URL)](aswebauthenticationsessionrequestdelegate/authenticationsessionrequest(_:didcompletewithcallbackurl:).md)
+### Responding to Completion Events
+- [func authenticationSessionRequest(ASWebAuthenticationSessionRequest, didCompleteWithCallbackURL: URL)](./authenticationsessionrequest%28_,didcompletewithcallbackurl%29.md)
   Tells the delegate, typically a browser, that the authentication completed successfully.
 
 

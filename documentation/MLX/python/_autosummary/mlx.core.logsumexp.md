@@ -6,41 +6,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.lo
 
 # mlx.core.logsumexp
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.logsumexp.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.logsumexp
-
- Table of contents 
-
-## Contents
-
-# mlx.core.logsumexp
-
-**logsumexp(*a: array*, */*, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**logsumexp(*a: array*, */*, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : A log-sum-exp reduction over the given axes.
 The log-sum-exp reduction is a numerically stable version of:
-log(sum(exp(a), axis))
+
+  ```
+  log(sum(exp(a), axis))
+  ```
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 **axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Optional axis or
 axes to reduce over. If unspecified this defaults
 to reducing over the entire array.
@@ -51,6 +27,4 @@ Returns:
 The output array with the corresponding axes reduced.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

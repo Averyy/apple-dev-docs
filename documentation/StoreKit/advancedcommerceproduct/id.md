@@ -1,7 +1,8 @@
 # id
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The generic product ID.
 
@@ -22,12 +23,13 @@ let id: AdvancedCommerceProduct.ID
 
 #### Discussion
 
-You create the generic product ID in App Store Connect when you set up your project to use the Advanced Commerce API. For more information, see [`Setting up your project for Advanced Commerce API`](https://developer.apple.com/documentation/advancedcommerceapi/setting-up-your-project-for-advanced-commerce).
+You create the generic product ID in App Store Connect when you set up your project to use the Advanced Commerce API. For more information, see [Setting up your project for Advanced Commerce API](../../AdvancedCommerceAPI/setting-up-your-project-for-advanced-commerce.md).
 
 ## See Also
 
-- [AdvancedCommerceProduct.ProductType](advancedcommerceproduct/producttype.md)
-- [let type: AdvancedCommerceProduct.ProductType](advancedcommerceproduct/type.md)
+### Getting the product ID and type
+- [AdvancedCommerceProduct.ProductType](./producttype.md)
+- [let type: AdvancedCommerceProduct.ProductType](./type.md)
   The type of the product.
 
 

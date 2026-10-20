@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a paste button that conforms to the specified configuration.
 
@@ -17,15 +18,20 @@ Creates a paste button that conforms to the specified configuration.
 init(configuration: UIPasteControl.Configuration)
 ```
 
+```objc
+- (instancetype) initWithConfiguration:(UIPasteControlConfiguration *) configuration;
+```
+
 ## Parameters
 
 - `configuration`: An object that determines a paste button’s color, corner style, icon, and text.
 
 ## See Also
 
-- [init?(coder: NSCoder)](uipastecontrol/init(coder:).md)
+### Creating a paste button
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a paste button by deserializing the specified coder.
-- [init(frame: CGRect)](uipastecontrol/init(frame:).md)
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a paste button with the specified size and position.
 
 

@@ -1,7 +1,8 @@
 # FaceObservation.Landmarks2D.Region.PointsClassification.disconnected
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -20,8 +21,9 @@ case disconnected
 
 ## See Also
 
-- [FaceObservation.Landmarks2D.Region.PointsClassification.closedPath](faceobservation/landmarks2d/region/pointsclassification-swift.enum/closedpath.md)
-- [FaceObservation.Landmarks2D.Region.PointsClassification.openPath](faceobservation/landmarks2d/region/pointsclassification-swift.enum/openpath.md)
+### Getting the point classifications
+- [FaceObservation.Landmarks2D.Region.PointsClassification.closedPath](./closedpath.md)
+- [FaceObservation.Landmarks2D.Region.PointsClassification.openPath](./openpath.md)
 
 
 ---

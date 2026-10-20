@@ -1,7 +1,8 @@
 # blending
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transparency options for the material.
 
@@ -11,7 +12,7 @@ The transparency options for the material.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var blending: UnlitMaterial.Blending { get set }
 
 ## See Also
 
-- [var opacityThreshold: Float?](unlitmaterial/opacitythreshold.md)
+### Controlling opacity
+- [var opacityThreshold: Float?](./opacitythreshold.md)
   A threshold below which RealityKit ignores opacity.
 
 

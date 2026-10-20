@@ -1,7 +1,8 @@
 # path(forSoundResource:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the location of the specified sound resource file.
 
@@ -12,6 +13,10 @@ Returns the location of the specified sound resource file.
 
 ```swift
 func path(forSoundResource name: NSSound.Name) -> String?
+```
+
+```objc
+- (NSString *) pathForSoundResource:(NSSoundName) name;
 ```
 
 #### Return Value
@@ -28,7 +33,8 @@ Sound resources are those files in the bundle that are recognized by the `NSSoun
 
 ## See Also
 
-- [func path(forResource: String?, ofType: String?) -> String?](bundle/path(forresource:oftype:).md)
+### Related Documentation
+- [func path(forResource: String?, ofType: String?) -> String?](./path%28forresource,oftype%29.md)
   Returns the full pathname for the resource identified by the specified name and file extension.
 
 

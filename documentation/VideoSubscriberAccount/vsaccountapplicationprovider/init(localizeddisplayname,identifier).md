@@ -1,7 +1,8 @@
 # init(localizedDisplayName:identifier:)
 
 **Framework**: Video Subscriber Account  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an application provider using a given display name and identifier.
 
@@ -9,7 +10,7 @@ Returns an application provider using a given display name and identifier.
 - iOS 14.2+
 - iPadOS 14.2+
 - Mac Catalyst 14.2+
-- macOS ?+
+- macOS
 - tvOS 14.2+
 - visionOS 1.0+
 
@@ -17,6 +18,10 @@ Returns an application provider using a given display name and identifier.
 
 ```swift
 init(localizedDisplayName: String, identifier: String)
+```
+
+```objc
+- (instancetype) initWithLocalizedDisplayName:(NSString *) localizedDisplayName identifier:(NSString *) identifier;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # interface_event_t
 
 **Framework**: vmnet  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Interface event types.
 
@@ -15,37 +16,42 @@ Interface event types.
 struct interface_event_t
 ```
 
+```c
+enum interface_event_t : uint32_t;
+```
+
 ## Topics
 
 ### Constants
-- [static var VMNET_INTERFACE_PACKETS_AVAILABLE: interface_event_t](interface_event_t/vmnet_interface_packets_available.md)
+- [static var VMNET_INTERFACE_PACKETS_AVAILABLE: interface_event_t](./interface_event_t/vmnet_interface_packets_available.md)
 ### Initializers
-- [init(rawValue: UInt32)](interface_event_t/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./interface_event_t/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [enum vmnet_return_t](vmnet_return_t.md)
+### Data types
+- [enum vmnet_return_t](./vmnet_return_t.md)
   Values returned by functions in the vmnet Framework.
-- [struct vmpktdesc](vmpktdesc.md)
+- [struct vmpktdesc](./vmpktdesc.md)
   Describes a packet.
-- [typealias interface_ref](interface_ref.md)
+- [typealias interface_ref](./interface_ref.md)
   A virtual network interface.
-- [enum operating_modes_t](operating_modes_t.md)
+- [enum operating_modes_t](./operating_modes_t.md)
   The operating modes for an interface.
-- [typealias vmnet_mode_t](vmnet_mode_t.md)
+- [typealias vmnet_mode_t](./vmnet_mode_t.md)
   A type that defines the operating modes of the vmnet interface.
-- [typealias vmnet_network_ref](vmnet_network_ref.md)
+- [typealias vmnet_network_ref](./vmnet_network_ref.md)
   A pointer to a network structure.
 
 

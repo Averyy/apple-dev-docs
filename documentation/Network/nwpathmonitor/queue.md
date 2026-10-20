@@ -1,7 +1,8 @@
 # queue
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The queue on which path events are delivered.
 
@@ -22,13 +23,14 @@ final var queue: DispatchQueue? { get }
 
 ## See Also
 
-- [init()](nwpathmonitor/init.md)
+### Creating Path Monitors
+- [init()](./init%28%29.md)
   Initializes a path monitor to observe all available interface types.
-- [init(requiredInterfaceType: NWInterface.InterfaceType)](nwpathmonitor/init(requiredinterfacetype:).md)
+- [init(requiredInterfaceType: NWInterface.InterfaceType)](./init%28requiredinterfacetype%29.md)
   Initializes a path monitor to observe a specific interface type.
-- [init(prohibitedInterfaceTypes: [NWInterface.InterfaceType])](nwpathmonitor/init(prohibitedinterfacetypes:).md)
+- [init(prohibitedInterfaceTypes: [NWInterface.InterfaceType])](./init%28prohibitedinterfacetypes%29.md)
   Initializes a path monitor to observe interface types that are not explicitly prohibited.
-- [func start(queue: DispatchQueue)](nwpathmonitor/start(queue:).md)
+- [func start(queue: DispatchQueue)](./start%28queue%29.md)
   Starts monitoring path changes, and sets a queue on which to deliver path events.
 
 

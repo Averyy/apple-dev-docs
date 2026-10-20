@@ -1,12 +1,13 @@
 # show(_:)
 
 **Framework**: Create ML  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Generates a streaming visualization of the data column.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 14.0
 
 ## Declaration
 
@@ -14,9 +15,20 @@ Generates a streaming visualization of the data column.
 func show<Element>(_ column: MLDataColumn<Element>) -> any MLStreamingVisualizable where Element : MLDataValueConvertible
 ```
 
+**Other overloads**:
+
+```swift
+func show(_ column: MLUntypedColumn) -> any MLStreamingVisualizable
+```
+
+```swift
+func show(_ table: MLDataTable) -> any MLStreamingVisualizable
+```
+
 ## See Also
 
-- [func show(MLUntypedColumn) -> any MLStreamingVisualizable](show(_:)-9645r.md)
+### Column visualizations
+- [func show(MLUntypedColumn) -> any MLStreamingVisualizable](./show%28_%29-9645r.md)
   Generates a streaming visualization of the untyped column.
 
 

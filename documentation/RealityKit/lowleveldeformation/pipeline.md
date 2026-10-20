@@ -1,7 +1,8 @@
 # LowLevelDeformation.Pipeline
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A compiled compute pipeline for a specific combination of mesh layouts and deformer stages.
 
@@ -24,14 +25,15 @@ Create a pipeline once and reuse it across frames.
 ## Topics
 
 ### Creating a pipeline
-- [LowLevelDeformation.Pipeline.Descriptor](lowleveldeformation/pipeline/descriptor.md)
+- [LowLevelDeformation.Pipeline.Descriptor](./pipeline/descriptor.md)
   An object that describes the vertex layouts and deformer stages for a pipeline.
 
 ## See Also
 
-- [func encode(into: any MTLComputeCommandEncoder) throws](lowleveldeformation/encode(into:).md)
+### Encoding deformation work
+- [func encode(into: any MTLComputeCommandEncoder) throws](./encode%28into%29.md)
   Encodes the configured deformation passes into the given command encoder.
-- [LowLevelDeformation.Error](lowleveldeformation/error.md)
+- [LowLevelDeformation.Error](./error.md)
   The error type thrown by every throwing method and initializer.
 
 

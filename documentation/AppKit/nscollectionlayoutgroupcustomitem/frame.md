@@ -1,7 +1,8 @@
 # frame
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame of the custom item.
 
@@ -12,6 +13,10 @@ The frame of the custom item.
 
 ```swift
 var frame: NSRect { get }
+```
+
+```objc
+@property (readonly) NSRect frame;
 ```
 
 

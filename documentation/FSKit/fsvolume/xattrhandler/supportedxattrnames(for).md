@@ -1,7 +1,8 @@
 # supportedXattrNames(for:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array that specifies the extended attribute names the given item supports.
 
@@ -12,6 +13,10 @@ Returns an array that specifies the extended attribute names the given item supp
 
 ```swift
 optional func supportedXattrNames(for item: FSItem) -> [FSFileName]
+```
+
+```objc
+- (NSArray<FSFileName *> *) supportedXattrNamesForItem:(FSItem *) item;
 ```
 
 #### Discussion
@@ -28,19 +33,20 @@ Only implement this method if your volume works with “limited” extended attr
 
 ## See Also
 
-- [func getXattr(named: FSFileName, of: FSItem, context: FSContext, replyHandler: (FSGetXattrResult?, (any Error)?) -> Void)](fsvolume/xattrhandler/getxattr(named:of:context:replyhandler:).md)
+### Reading and writing
+- [func getXattr(named: FSFileName, of: FSItem, context: FSContext, replyHandler: (FSGetXattrResult?, (any Error)?) -> Void)](./getxattr%28named,of,context,replyhandler%29.md)
   Gets the specified extended attribute of the given item.
-- [class FSGetXattrResult](fsgetxattrresult.md)
+- [class FSGetXattrResult](../../fsgetxattrresult.md)
   The result of a get-extended-attributes call.
-- [func listXattrs(of: FSItem, context: FSContext, replyHandler: (FSListXattrsResult?, (any Error)?) -> Void)](fsvolume/xattrhandler/listxattrs(of:context:replyhandler:).md)
+- [func listXattrs(of: FSItem, context: FSContext, replyHandler: (FSListXattrsResult?, (any Error)?) -> Void)](./listxattrs%28of,context,replyhandler%29.md)
   Gets the list of extended attributes currently set on the given item.
-- [class FSListXattrsResult](fslistxattrsresult.md)
+- [class FSListXattrsResult](../../fslistxattrsresult.md)
   The result of a list-extended-attributes call.
-- [func setXattr(named: FSFileName, to: Data?, on: FSItem, policy: FSVolume.SetXattrPolicy, context: FSContext, replyHandler: (FSSetXattrResult?, (any Error)?) -> Void)](fsvolume/xattrhandler/setxattr(named:to:on:policy:context:replyhandler:).md)
+- [func setXattr(named: FSFileName, to: Data?, on: FSItem, policy: FSVolume.SetXattrPolicy, context: FSContext, replyHandler: (FSSetXattrResult?, (any Error)?) -> Void)](./setxattr%28named,to,on,policy,context,replyhandler%29.md)
   Sets the specified extended attribute data on the given item.
-- [FSVolume.SetXattrPolicy](fsvolume/setxattrpolicy.md)
+- [FSVolume.SetXattrPolicy](../setxattrpolicy.md)
   Flags to specify the policy when setting extended file attributes.
-- [class FSSetXattrResult](fssetxattrresult.md)
+- [class FSSetXattrResult](../../fssetxattrresult.md)
   The result of a set-extended-attributes call.
 
 

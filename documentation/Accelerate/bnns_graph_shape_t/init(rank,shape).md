@@ -1,7 +1,8 @@
 # init(rank:shape:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shape structure with the specified rank and dimensions.
 
@@ -23,11 +24,12 @@ init(rank: Int, shape: UnsafeMutablePointer<UInt64>?)
 ## Parameters
 
 - `rank`: The rank of the tensor and number of elements in array shape.
-- `shape`: Array with a count of [`rank`](bnns_graph_shape_t/rank.md) that contains the sizes of each dimension.
+- `shape`: Array with a count of [`rank`](./rank.md) that contains the sizes of each dimension.
 
 ## See Also
 
-- [init()](bnns_graph_shape_t/init.md)
+### Initializing a graph shape
+- [init()](./init%28%29.md)
   Creates an empty shape structure.
 
 

@@ -1,7 +1,8 @@
 # isPlaying
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the list item displays its Now Playing indicator.
 
@@ -16,19 +17,24 @@ A Boolean value that determines whether the list item displays its Now Playing i
 var isPlaying: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, getter=isPlaying) BOOL playing;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the list item displays its Now Playing indicator and positions it using the location that the [`playingIndicatorLocation`](cplistitem/playingindicatorlocation.md) property specifies. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`true`](../../Swift/true.md), the list item displays its Now Playing indicator and positions it using the location that the [`playingIndicatorLocation`](./playingindicatorlocation.md) property specifies. The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isExplicitContent: Bool](cplistitem/isexplicitcontent.md)
+### Managing Playback Information
+- [var isExplicitContent: Bool](./isexplicitcontent.md)
   A Boolean value that determines whether the list item displays its explicit content indicator.
-- [var playingIndicatorLocation: CPListItemPlayingIndicatorLocation](cplistitem/playingindicatorlocation.md)
+- [var playingIndicatorLocation: CPListItemPlayingIndicatorLocation](./playingindicatorlocation.md)
   The location where the list item displays its Now Playing indicator.
-- [enum CPListItemPlayingIndicatorLocation](cplistitemplayingindicatorlocation.md)
+- [enum CPListItemPlayingIndicatorLocation](../cplistitemplayingindicatorlocation.md)
   The locations where a list item can display the Now Playing indicator.
-- [var playbackProgress: CGFloat](cplistitem/playbackprogress.md)
+- [var playbackProgress: CGFloat](./playbackprogress.md)
   The playback progress status for the content that the list item represents.
 
 

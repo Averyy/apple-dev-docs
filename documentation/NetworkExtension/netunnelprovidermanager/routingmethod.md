@@ -1,7 +1,8 @@
 # routingMethod
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The method that the system uses to route network traffic to the tunnel.
 
@@ -18,13 +19,18 @@ The method that the system uses to route network traffic to the tunnel.
 var routingMethod: NETunnelProviderRoutingMethod { get }
 ```
 
+```objc
+@property (readonly) NETunnelProviderRoutingMethod routingMethod;
+```
+
 #### Discussion
 
-The default is [`NETunnelProviderRoutingMethod.destinationIP`](netunnelproviderroutingmethod/destinationip.md).
+The default is [`NETunnelProviderRoutingMethod.destinationIP`](../netunnelproviderroutingmethod/destinationip.md).
 
 ## See Also
 
-- [enum NETunnelProviderRoutingMethod](netunnelproviderroutingmethod.md)
+### Getting tunnel configuration properties
+- [enum NETunnelProviderRoutingMethod](../netunnelproviderroutingmethod.md)
 
 
 ---

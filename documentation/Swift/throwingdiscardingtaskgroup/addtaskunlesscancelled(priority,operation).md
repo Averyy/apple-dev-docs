@@ -1,7 +1,8 @@
 # addTaskUnlessCancelled(priority:operation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a child task to the group, unless the group has been canceled. Returns a boolean value indicating if the task was successfully added to the group or not.
 
@@ -19,6 +20,8 @@ Adds a child task to the group, unless the group has been canceled. Returns a bo
 ```swift
 mutating func addTaskUnlessCancelled(priority: TaskPriority? = nil, operation: sending @escaping @isolated(any) () async throws -> Void) -> Bool
 ```
+
+Available when `Failure` conforms to `Error`.
 
 #### Return Value
 

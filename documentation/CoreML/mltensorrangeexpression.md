@@ -1,7 +1,8 @@
 # MLTensorRangeExpression
 
 **Framework**: Core ML  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be used to slice a dimension of a tensor. Don’t use this type directly.
 
@@ -23,41 +24,42 @@ protocol MLTensorRangeExpression : Sendable
 ## Topics
 
 ### Expanding and squeezing the tensor
-- [static var newAxis: any MLTensorRangeExpression](mltensorrangeexpression/newaxis.md)
+- [static var newAxis: any MLTensorRangeExpression](./mltensorrangeexpression/newaxis.md)
   Expand the tensor at the specified dimension.
-- [static var squeezeAxis: any MLTensorRangeExpression](mltensorrangeexpression/squeezeaxis.md)
+- [static var squeezeAxis: any MLTensorRangeExpression](./mltensorrangeexpression/squeezeaxis.md)
   Squeeze the tensor at the specified dimension.
-- [static var fillAll: any MLTensorRangeExpression](mltensorrangeexpression/fillall.md)
+- [static var fillAll: any MLTensorRangeExpression](./mltensorrangeexpression/fillall.md)
   The same as the ellipsis literal `...` used to indicate unspecified dimensions of the tensor.
 ### Slicing the tensor
-- [static func closedRange(ClosedRange<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/closedrange(_:stride:).md)
+- [static func closedRange(ClosedRange<Int>, stride: Int) -> any MLTensorRangeExpression](./mltensorrangeexpression/closedrange%28_,stride%29.md)
   Slice the tensor at the specified dimension.
-- [static func index(Int) -> any MLTensorRangeExpression](mltensorrangeexpression/index(_:).md)
+- [static func index(Int) -> any MLTensorRangeExpression](./mltensorrangeexpression/index%28_%29.md)
   Slice the tensor at the specified dimension.
-- [static func partialRangeFrom(PartialRangeFrom<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/partialrangefrom(_:stride:).md)
+- [static func partialRangeFrom(PartialRangeFrom<Int>, stride: Int) -> any MLTensorRangeExpression](./mltensorrangeexpression/partialrangefrom%28_,stride%29.md)
   Slice the tensor at the specified dimension.
-- [static partialRangeUpTo(_:stride:)](mltensorrangeexpression/partialrangeupto(_:stride:).md)
+- [static partialRangeUpTo(_:stride:)](./mltensorrangeexpression/partialrangeupto%28_,stride%29.md)
   Slice the tensor at the specified dimension.
-- [static func range(Range<Int>, stride: Int) -> any MLTensorRangeExpression](mltensorrangeexpression/range(_:stride:).md)
+- [static func range(Range<Int>, stride: Int) -> any MLTensorRangeExpression](./mltensorrangeexpression/range%28_,stride%29.md)
   Slice the tensor at the specified dimension.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MLTensor](mltensor.md)
+### Model tensor
+- [struct MLTensor](./mltensor.md)
   A multi-dimensional array of numerical or Boolean scalars tailored to ML use cases, containing methods to perform transformations and mathematical operations efficiently using a ML compute device.
-- [protocol MLTensorScalar](mltensorscalar.md)
+- [protocol MLTensorScalar](./mltensorscalar.md)
   A type that represents the tensor scalar types supported by the framework. Don’t use this type directly.
-- [func pointwiseMin(_:_:)](pointwisemin(_:_:).md)
+- [func pointwiseMin(_:_:)](./pointwisemin%28_,_%29.md)
   Computes the element-wise minimum of two tensors.
-- [func pointwiseMax(_:_:)](pointwisemax(_:_:).md)
+- [func pointwiseMax(_:_:)](./pointwisemax%28_,_%29.md)
   Computes the element-wise minimum between two tensors.
-- [func withMLTensorComputePolicy(_:_:)](withmltensorcomputepolicy(_:_:).md)
+- [func withMLTensorComputePolicy(_:_:)](./withmltensorcomputepolicy%28_,_%29.md)
   Calls the given closure within a task-local context using the specified compute policy to influence what compute device tensor operations are executed on.
 
 

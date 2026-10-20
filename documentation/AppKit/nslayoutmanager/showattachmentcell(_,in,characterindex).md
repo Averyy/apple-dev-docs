@@ -1,7 +1,8 @@
 # showAttachmentCell(_:in:characterIndex:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws an attachment cell.
 
@@ -12,6 +13,10 @@ Draws an attachment cell.
 
 ```swift
 func showAttachmentCell(_ cell: NSCell, in rect: NSRect, characterIndex attachmentIndex: Int)
+```
+
+```objc
+- (void) showAttachmentCell:(NSCell *) cell inRect:(NSRect) rect characterIndex:(NSUInteger) attachmentIndex;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The `attachmentIndex` parameter is provided for cells that alter their appearanc
 
 ## See Also
 
-- [var defaultAttachmentScaling: NSImageScaling](nslayoutmanager/defaultattachmentscaling.md)
+### Managing attachments
+- [var defaultAttachmentScaling: NSImageScaling](./defaultattachmentscaling.md)
   The default amount of scaling to apply when an attachment image is too large to fit in a text container.
 
 

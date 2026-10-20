@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the checkpoint into the encoder.
 
@@ -25,7 +26,8 @@ func encode(to encoder: any Encoder) throws
 
 ## See Also
 
-- [init(from: any Decoder) throws](mlcheckpoint/init(from:).md)
+### Encoding and decoding a checkpoint
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new checkpoint by decoding from the decoder.
 
 

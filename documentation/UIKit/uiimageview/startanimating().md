@@ -1,7 +1,8 @@
 # startAnimating()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts animating the images in the receiver.
 
@@ -9,7 +10,7 @@ Starts animating the images in the receiver.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ Starts animating the images in the receiver.
 func startAnimating()
 ```
 
+```objc
+- (void) startAnimating;
+```
+
 #### Discussion
 
 This method always starts the animation from the first image in the list.
 
 ## See Also
 
-- [var animationImages: [UIImage]?](uiimageview/animationimages.md)
-  An array of [`UIImage`](uiimage.md) objects to use for an animation.
-- [var highlightedAnimationImages: [UIImage]?](uiimageview/highlightedanimationimages.md)
-  An array of [`UIImage`](uiimage.md) objects to use for an animation when the view is highlighted.
-- [var animationDuration: TimeInterval](uiimageview/animationduration.md)
+### Animating a sequence of images
+- [var animationImages: [UIImage]?](./animationimages.md)
+  An array of [`UIImage`](../uiimage.md) objects to use for an animation.
+- [var highlightedAnimationImages: [UIImage]?](./highlightedanimationimages.md)
+  An array of [`UIImage`](../uiimage.md) objects to use for an animation when the view is highlighted.
+- [var animationDuration: TimeInterval](./animationduration.md)
   The amount of time it takes to go through one cycle of the images.
-- [var animationRepeatCount: Int](uiimageview/animationrepeatcount.md)
+- [var animationRepeatCount: Int](./animationrepeatcount.md)
   Specifies the number of times to repeat the animation.
-- [func stopAnimating()](uiimageview/stopanimating.md)
+- [func stopAnimating()](./stopanimating%28%29.md)
   Stops animating the images in the receiver.
-- [var isAnimating: Bool](uiimageview/isanimating.md)
+- [var isAnimating: Bool](./isanimating.md)
   Returns a Boolean value indicating whether the animation is running.
 
 

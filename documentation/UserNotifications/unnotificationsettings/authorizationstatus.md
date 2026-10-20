@@ -1,7 +1,8 @@
 # authorizationStatus
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s ability to schedule and receive local and remote notifications.
 
@@ -20,15 +21,28 @@ The app’s ability to schedule and receive local and remote notifications.
 var authorizationStatus: UNAuthorizationStatus { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) UNAuthorizationStatus authorizationStatus;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) UNAuthorizationStatus authorizationStatus;
+```
+
 #### Discussion
 
-When the value of this property is [`UNAuthorizationStatus.authorized`](unauthorizationstatus/authorized.md), your app is allowed to schedule and receive local and remote notifications. When authorized, use the [`alertSetting`](unnotificationsettings/alertsetting.md), [`badgeSetting`](unnotificationsettings/badgesetting.md), and [`soundSetting`](unnotificationsettings/soundsetting.md) properties to specify which types of interactions are allowed. When the value of the property is [`UNAuthorizationStatus.denied`](unauthorizationstatus/denied.md), the system doesn’t deliver notifications to your app, and the system ignores any attempts to schedule local notifications.
+When the value of this property is [`UNAuthorizationStatus.authorized`](../unauthorizationstatus/authorized.md), your app is allowed to schedule and receive local and remote notifications. When authorized, use the [`alertSetting`](./alertsetting.md), [`badgeSetting`](./badgesetting.md), and [`soundSetting`](./soundsetting.md) properties to specify which types of interactions are allowed. When the value of the property is [`UNAuthorizationStatus.denied`](../unauthorizationstatus/denied.md), the system doesn’t deliver notifications to your app, and the system ignores any attempts to schedule local notifications.
 
-The value of this property is [`UNAuthorizationStatus.notDetermined`](unauthorizationstatus/notdetermined.md) if your app has never requested authorization using the [`requestAuthorization(options:completionHandler:)`](unusernotificationcenter/requestauthorization(options:completionhandler:).md) method.
+The value of this property is [`UNAuthorizationStatus.notDetermined`](../unauthorizationstatus/notdetermined.md) if your app has never requested authorization using the [`requestAuthorization(options:completionHandler:)`](../unusernotificationcenter/requestauthorization%28options,completionhandler%29.md) method.
 
 ## See Also
 
-- [enum UNAuthorizationStatus](unauthorizationstatus.md)
+### Getting the Authorization Status
+- [enum UNAuthorizationStatus](../unauthorizationstatus.md)
   Constants indicating whether the app is allowed to schedule notifications.
 
 

@@ -1,14 +1,15 @@
 # IOUSBHostCIPortStatusSpeed
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIPortStatusSpeed = IOUSBBitRange64(8, 10)
 ```
 

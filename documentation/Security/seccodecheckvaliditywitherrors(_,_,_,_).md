@@ -1,7 +1,8 @@
 # SecCodeCheckValidityWithErrors(_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs dynamic validation of signed code and returns detailed error information in the case of failure.
 
@@ -15,9 +16,13 @@ Performs dynamic validation of signed code and returns detailed error informatio
 func SecCodeCheckValidityWithErrors(_ code: SecCode, _ flags: SecCSFlags, _ requirement: SecRequirement?, _ errors: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> OSStatus
 ```
 
+```c
+OSStatus SecCodeCheckValidityWithErrors(SecCodeRef code, SecCSFlags flags, SecRequirementRef requirement, CFErrorRef*errors);
+```
+
 #### Return Value
 
-A result code. See [`Code Signing Services Result Codes`](code-signing-services-result-codes.md).
+A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
 #### Discussion
 
@@ -28,9 +33,9 @@ This function is secure against attempts to modify the file system source of the
 ## Parameters
 
 - `code`: The code object to be validated.
-- `flags`: Optional flags; see [`SecCSFlags`](seccsflags.md) for possible values. Pass `kSecCSDefaultFlags` for standard behavior.
-- `requirement`: A code requirement specifying additional conditions the code must satisfy to be considered valid. Specify `NULL` if you don’t want to impose any additional requirements. Use the [`SecRequirementCreateWithString(_:_:_:)`](secrequirementcreatewithstring(_:_:_:).md) or [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](secrequirementcreatewithstringanderrors(_:_:_:_:).md) function to create a code requirement object. See [`Code Signing Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005929) for a discussion of code requirements.
-- `errors`: On return, if the function call fails and returns a result code other than [`errSecSuccess`](errsecsuccess.md), points to an error object further describing the nature and circumstances of the failure. Use the [`CFErrorCopyUserInfo(_:)`](https://developer.apple.com/documentation/corefoundation/cferrorcopyuserinfo(_:)) function to retrieve the user info dictionary from the error object. See [`User Info Dictionary Error Keys`](user-info-dictionary-error-keys.md) for possible values. Pass `NULL` if you do not want this information. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it.
+- `flags`: Optional flags; see [`SecCSFlags`](./seccsflags.md) for possible values. Pass `kSecCSDefaultFlags` for standard behavior.
+- `requirement`: A code requirement specifying additional conditions the code must satisfy to be considered valid. Specify `NULL` if you don’t want to impose any additional requirements. Use the [`SecRequirementCreateWithString(_:_:_:)`](./secrequirementcreatewithstring%28_,_,_%29.md) or [`SecRequirementCreateWithStringAndErrors(_:_:_:_:)`](./secrequirementcreatewithstringanderrors%28_,_,_,_%29.md) function to create a code requirement object. See [Code Signing Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005929) for a discussion of code requirements.
+- `errors`: On return, if the function call fails and returns a result code other than [`errSecSuccess`](./errsecsuccess.md), points to an error object further describing the nature and circumstances of the failure. Use the [`CFErrorCopyUserInfo(_:)`](../CoreFoundation/cferrorcopyuserinfo%28_%29.md) function to retrieve the user info dictionary from the error object. See [User Info Dictionary Error Keys](./user-info-dictionary-error-keys.md) for possible values. Pass `NULL` if you do not want this information. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it.
 
 
 ---

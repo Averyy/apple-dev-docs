@@ -1,7 +1,8 @@
 # MerchantTokenMetadata
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The card information related to a merchant token, including its card art and metadata.
 
@@ -11,7 +12,7 @@ The card information related to a merchant token, including its card art and met
 
 ## Declaration
 
-```swift
+```
 object MerchantTokenMetadata
 ```
 
@@ -23,17 +24,18 @@ object MerchantTokenMetadata
 
 ## See Also
 
-- [Get Details of a Merchant Token Event](merchant-token-event-retrieval.md)
+### Merchant token event retrieval
+- [Get Details of a Merchant Token Event](./merchant-token-event-retrieval.md)
   Get the details of a merchant token event after receiving a notification.
-- [object MerchantTokenEventResponse](merchanttokeneventresponse.md)
+- [object MerchantTokenEventResponse](./merchanttokeneventresponse.md)
   A response body that contains information about a life-cycle event for a merchant token.
-- [object CardArt](cardart.md)
+- [object CardArt](./cardart.md)
   Data for displaying art to represent a card.
-- [object CardMetadata](cardmetadata.md)
+- [object CardMetadata](./cardmetadata.md)
   Data about the card, including its expiration date and suffix.
-- [object EncryptedTokenMetadata](encryptedtokenmetadata.md)
+- [object EncryptedTokenMetadata](./encryptedtokenmetadata.md)
   Encrypted data about the merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
-- [object TokenMetadata](tokenmetadata.md)
+- [object TokenMetadata](./tokenmetadata.md)
   Unencrypted metadata about a merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
 
 

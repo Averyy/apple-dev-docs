@@ -1,7 +1,8 @@
 # touches(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the touch objects from the event that belong to the specified window.
 
@@ -9,7 +10,7 @@ Returns the touch objects from the event that belong to the specified window.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ Returns the touch objects from the event that belong to the specified window.
 func touches(for window: UIWindow) -> Set<UITouch>?
 ```
 
+```objc
+- (NSSet<UITouch *> *) touchesForWindow:(UIWindow *) window;
+```
+
 #### Return Value
 
-A set of [`UITouch`](uitouch.md) objects representing the touches that belong to the specified window.
+A set of [`UITouch`](../uitouch.md) objects representing the touches that belong to the specified window.
 
 ## Parameters
 
-- `window`: The [`UIWindow`](uiwindow.md) object in which the touches originally occurred.
+- `window`: The [`UIWindow`](../uiwindow.md) object in which the touches originally occurred.
 
 ## See Also
 
-- [var allTouches: Set<UITouch>?](uievent/alltouches.md)
+### Getting the touches for an event
+- [var allTouches: Set<UITouch>?](./alltouches.md)
   All touches associated with the event.
-- [func touches(for: UIView) -> Set<UITouch>?](uievent/touches(for:)-9neb4.md)
+- [func touches(for: UIView) -> Set<UITouch>?](./touches%28for%29-9neb4.md)
   Returns the touch objects from the event that belong to the specified given view.
-- [func coalescedTouches(for: UITouch) -> [UITouch]?](uievent/coalescedtouches(for:).md)
+- [func coalescedTouches(for: UITouch) -> [UITouch]?](./coalescedtouches%28for%29.md)
   Returns all of the touches associated with the specified main touch.
-- [func predictedTouches(for: UITouch) -> [UITouch]?](uievent/predictedtouches(for:).md)
+- [func predictedTouches(for: UITouch) -> [UITouch]?](./predictedtouches%28for%29.md)
   Returns an array of touches that are predicted to occur for the specified touch.
 
 

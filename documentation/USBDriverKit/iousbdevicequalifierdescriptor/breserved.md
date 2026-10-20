@@ -1,27 +1,29 @@
 # bReserved
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bReserved;
 ```
 
 ## See Also
 
-- [bLength](iousbdevicequalifierdescriptor/blength.md)
-- [bDescriptorType](iousbdevicequalifierdescriptor/bdescriptortype.md)
-- [bcdUSB](iousbdevicequalifierdescriptor/bcdusb.md)
-- [bDeviceClass](iousbdevicequalifierdescriptor/bdeviceclass.md)
-- [bDeviceSubClass](iousbdevicequalifierdescriptor/bdevicesubclass.md)
-- [bDeviceProtocol](iousbdevicequalifierdescriptor/bdeviceprotocol.md)
-- [bMaxPacketSize0](iousbdevicequalifierdescriptor/bmaxpacketsize0.md)
-- [bNumConfigurations](iousbdevicequalifierdescriptor/bnumconfigurations.md)
+### Getting the Descriptor Properties
+- [bLength](./blength.md)
+- [bDescriptorType](./bdescriptortype.md)
+- [bcdUSB](./bcdusb.md)
+- [bDeviceClass](./bdeviceclass.md)
+- [bDeviceSubClass](./bdevicesubclass.md)
+- [bDeviceProtocol](./bdeviceprotocol.md)
+- [bMaxPacketSize0](./bmaxpacketsize0.md)
+- [bNumConfigurations](./bnumconfigurations.md)
 
 
 ---

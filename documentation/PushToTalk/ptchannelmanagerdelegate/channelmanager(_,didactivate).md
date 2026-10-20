@@ -2,6 +2,7 @@
 
 **Framework**: Push to Talk  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the observer the audio session activated.
@@ -17,13 +18,17 @@ Tells the observer the audio session activated.
 func channelManager(_ channelManager: PTChannelManager, didActivate audioSession: AVAudioSession)
 ```
 
+```objc
+- (void) channelManager:(PTChannelManager *) channelManager didActivateAudioSession:(AVAudioSession *) audioSession;
+```
+
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
 #### Discussion
 
-Before recording and transmitting audio, wait for the framework to call this method. The framework calls the method when the audio session is active and set to the correct priority, and allows for recording audio even if the app is in the background. The framework doesn’t call the method if the channel transmission mode is [`PTTransmissionMode.fullDuplex`](pttransmissionmode/fullduplex.md), and already has an active audio session because it’s receiving audio from a remote participant when a transmission begins.
+Before recording and transmitting audio, wait for the framework to call this method. The framework calls the method when the audio session is active and set to the correct priority, and allows for recording audio even if the app is in the background. The framework doesn’t call the method if the channel transmission mode is [`PTTransmissionMode.fullDuplex`](../pttransmissionmode/fullduplex.md), and already has an active audio session because it’s receiving audio from a remote participant when a transmission begins.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Before recording and transmitting audio, wait for the framework to call this met
 
 ## See Also
 
-- [func channelManager(PTChannelManager, didDeactivate: AVAudioSession)](ptchannelmanagerdelegate/channelmanager(_:diddeactivate:).md)
+### Activating and deactivating the audio session
+- [func channelManager(PTChannelManager, didDeactivate: AVAudioSession)](./channelmanager%28_,diddeactivate%29.md)
   Tells the observer the audio session deactivated.
 
 

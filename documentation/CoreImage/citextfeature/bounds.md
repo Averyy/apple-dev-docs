@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle that indicates the position and extent of the text feature in image coordinates.
 
@@ -17,6 +18,10 @@ A rectangle that indicates the position and extent of the text feature in image 
 
 ```swift
 var bounds: CGRect { get }
+```
+
+```objc
+@property (readonly) CGRect bounds;
 ```
 
 #### Discussion

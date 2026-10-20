@@ -1,7 +1,8 @@
 # photoID
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A document of type photo ID.
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object for a Picture in Picture controller.
 
@@ -19,9 +20,14 @@ A delegate object for a Picture in Picture controller.
 weak var delegate: (any AVPictureInPictureControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<AVPictureInPictureControllerDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol AVPictureInPictureControllerDelegate](avpictureinpicturecontrollerdelegate.md)
+### Accessing the delegate object
+- [protocol AVPictureInPictureControllerDelegate](../avpictureinpicturecontrollerdelegate.md)
   A protocol to adopt to respond to Picture in Picture events.
 
 

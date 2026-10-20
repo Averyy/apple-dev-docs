@@ -1,7 +1,8 @@
 # DragConfiguration.OperationsOutsideApp
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes the suggested drag operations to other applications.
 
@@ -50,19 +51,19 @@ In the example above, an application provides operations that will be suggested 
 ## Topics
 
 ### Initializers
-- [init(allowCopy: Bool)](dragconfiguration/operationsoutsideapp-swift.struct/init(allowcopy:).md)
+- [init(allowCopy: Bool)](./operationsoutsideapp-swift.struct/init%28allowcopy%29.md)
   Creates a value that describes the operations allowed for drags to other applications.
-- [init(allowCopy: Bool, allowMove: Bool, allowDelete: Bool)](dragconfiguration/operationsoutsideapp-swift.struct/init(allowcopy:allowmove:allowdelete:).md)
+- [init(allowCopy: Bool, allowMove: Bool, allowDelete: Bool)](./operationsoutsideapp-swift.struct/init%28allowcopy,allowmove,allowdelete%29.md)
   Creates a value that describes the operations allowed for drags to other applications.
 ### Instance Properties
-- [var allowAlias: Bool](dragconfiguration/operationsoutsideapp-swift.struct/allowalias.md)
+- [var allowAlias: Bool](./operationsoutsideapp-swift.struct/allowalias.md)
   A Boolean value indicating if the drag operation supports creating aliases to the dropped items.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

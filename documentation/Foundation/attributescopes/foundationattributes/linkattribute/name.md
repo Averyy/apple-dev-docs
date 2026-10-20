@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the link attribute.
 
@@ -22,13 +23,14 @@ static var name: String { get set }
 
 ## See Also
 
-- [static func value(for: NSObject) throws -> URL](attributescopes/foundationattributes/linkattribute/value(for:).md)
+### Accessing the Attribute Name and Value
+- [static func value(for: NSObject) throws -> URL](./value%28for%29.md)
   Returns the URL value of the specified object.
-- [AttributeScopes.FoundationAttributes.LinkAttribute.Value](attributescopes/foundationattributes/linkattribute/value.md)
+- [AttributeScopes.FoundationAttributes.LinkAttribute.Value](./value.md)
   The type of the link attribute’s value.
-- [static func objectiveCValue(for: URL) throws -> NSObject](attributescopes/foundationattributes/linkattribute/objectivecvalue(for:).md)
+- [static func objectiveCValue(for: URL) throws -> NSObject](./objectivecvalue%28for%29.md)
   Returns an object for a specified URL value.
-- [AttributeScopes.FoundationAttributes.LinkAttribute.ObjectiveCValue](attributescopes/foundationattributes/linkattribute/objectivecvalue.md)
+- [AttributeScopes.FoundationAttributes.LinkAttribute.ObjectiveCValue](./objectivecvalue.md)
   The type of the link attribute’s value when calling it from Objective-C.
 
 

@@ -1,7 +1,8 @@
 # setVideoGravity(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the resizing behavior for the movie content.
 
@@ -14,19 +15,24 @@ Sets the resizing behavior for the movie content.
 func setVideoGravity(_ videoGravity: WKVideoGravity)
 ```
 
+```objc
+- (void) setVideoGravity:(WKVideoGravity) videoGravity;
+```
+
 ## Parameters
 
-- `videoGravity`: The resizing option for the movie. For a list of possible values, see the [`WKVideoGravity`](wkvideogravity.md) type. Defaults to [`WKVideoGravity.resizeAspect`](wkvideogravity/resizeaspect.md).
+- `videoGravity`: The resizing option for the movie. For a list of possible values, see the [`WKVideoGravity`](../wkvideogravity.md) type. Defaults to [`WKVideoGravity.resizeAspect`](../wkvideogravity/resizeaspect.md).
 
 ## See Also
 
-- [func setAutoplays(Bool)](wkinterfaceinlinemovie/setautoplays(_:).md)
+### Setting Movie Properties
+- [func setAutoplays(Bool)](./setautoplays%28_%29.md)
   Sets a Boolean value indicating whether the movie automatically begins playing as soon as the scene is presented.
-- [func setLoops(Bool)](wkinterfaceinlinemovie/setloops(_:).md)
+- [func setLoops(Bool)](./setloops%28_%29.md)
   Sets a Boolean value indicating whether the movie plays in a continuous loop.
-- [func setMovieURL(URL)](wkinterfaceinlinemovie/setmovieurl(_:).md)
+- [func setMovieURL(URL)](./setmovieurl%28_%29.md)
   Sets the URL of the movie to play.
-- [func setPosterImage(WKImage?)](wkinterfaceinlinemovie/setposterimage(_:).md)
+- [func setPosterImage(WKImage?)](./setposterimage%28_%29.md)
   Sets the poster image to display for the movie.
 
 

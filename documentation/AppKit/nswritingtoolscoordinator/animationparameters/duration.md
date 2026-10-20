@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds it takes the system animations to run.
 
@@ -14,9 +15,14 @@ The number of seconds it takes the system animations to run.
 var duration: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat duration;
+```
+
 ## See Also
 
-- [var delay: CGFloat](nswritingtoolscoordinator/animationparameters/delay.md)
+### Getting the animation values
+- [var delay: CGFloat](./delay.md)
   The number of seconds the system waits before starting its animations.
 
 

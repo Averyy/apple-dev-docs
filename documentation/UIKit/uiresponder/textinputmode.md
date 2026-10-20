@@ -1,7 +1,8 @@
 # textInputMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text input mode for this responder object.
 
@@ -9,13 +10,17 @@ The text input mode for this responder object.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var textInputMode: UITextInputMode? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) UITextInputMode * textInputMode;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ For responders, the system normally displays a keyboard that’s based on the us
 
 ## See Also
 
-- [var textInputContextIdentifier: String?](uiresponder/textinputcontextidentifier.md)
+### Managing the text input mode
+- [var textInputContextIdentifier: String?](./textinputcontextidentifier.md)
   An identifier signifying that the responder should preserve its text input mode information.
-- [class func clearTextInputContextIdentifier(String)](uiresponder/cleartextinputcontextidentifier(_:).md)
+- [class func clearTextInputContextIdentifier(String)](./cleartextinputcontextidentifier%28_%29.md)
   Clears text input mode information from the app’s user defaults.
-- [var inputAssistantItem: UITextInputAssistantItem](uiresponder/inputassistantitem.md)
+- [var inputAssistantItem: UITextInputAssistantItem](./inputassistantitem.md)
   The input assistant to use when configuring the keyboard’s shortcuts bar.
 
 

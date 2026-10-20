@@ -1,23 +1,30 @@
 # BNNSCropResizeBackward(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a crop-resize filter backward to generate gradients.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
-- watchOS 9.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 9.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
 ```swift
 func BNNSCropResizeBackward(_ layer_params: UnsafePointer<BNNSLayerParametersCropResize>, _ in_delta: UnsafeMutablePointer<BNNSNDArrayDescriptor>, _ roi: UnsafePointer<BNNSNDArrayDescriptor>, _ out_delta: UnsafePointer<BNNSNDArrayDescriptor>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> Int32
+```
+
+```c
+int BNNSCropResizeBackward(const BNNSLayerParametersCropResize *layer_params, BNNSNDArrayDescriptor *in_delta, const BNNSNDArrayDescriptor *roi, const BNNSNDArrayDescriptor *out_delta, const BNNSFilterParameters *filter_params);
 ```
 
 ## Parameters
@@ -30,15 +37,16 @@ func BNNSCropResizeBackward(_ layer_params: UnsafePointer<BNNSLayerParametersCro
 
 ## See Also
 
-- [class CropResizeLayer](bnns/cropresizelayer.md)
+### Crop-resize layers
+- [class CropResizeLayer](./bnns/cropresizelayer.md)
   A layer object that wraps a crop-resize filter and manages its deinitialization.
-- [func BNNSCropResize(UnsafePointer<BNNSLayerParametersCropResize>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnscropresize(_:_:_:_:_:).md)
+- [func BNNSCropResize(UnsafePointer<BNNSLayerParametersCropResize>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnscropresize%28_,_,_,_,_%29.md)
   Extracts and resizes regions of interest of an input tensor.
-- [struct BNNSLayerParametersCropResize](bnnslayerparameterscropresize.md)
+- [struct BNNSLayerParametersCropResize](./bnnslayerparameterscropresize.md)
   A set of parameters that describe a crop-resize operation.
-- [struct BNNSBoxCoordinateMode](bnnsboxcoordinatemode.md)
+- [struct BNNSBoxCoordinateMode](./bnnsboxcoordinatemode.md)
   Constants that define the convention to specify the four bounding box coordinates for crop-resize operations.
-- [struct BNNSLinearSamplingMode](bnnslinearsamplingmode.md)
+- [struct BNNSLinearSamplingMode](./bnnslinearsamplingmode.md)
   Constants that specify how a crop-resize layer samples a grid.
 
 

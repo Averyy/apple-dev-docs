@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the buffer as an array. This may create a copy if the data are not already an array.
 
@@ -11,7 +12,7 @@ Access the buffer as an array. This may create a copy if the data are not alread
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var elements: [Element] { get }
 
 ## See Also
 
-- [var rate: MeshBuffers.Rate](meshbuffer/rate.md)
+### Inspecting a mesh
+- [var rate: MeshBuffers.Rate](./rate.md)
   Rate of the buffer.
 
 

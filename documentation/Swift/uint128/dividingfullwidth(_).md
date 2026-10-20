@@ -1,7 +1,8 @@
 # dividingFullWidth(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 func dividingFullWidth(_ dividend: (high: Self, low: Self.Magnitude)) -> (quotient: Self, remainder: Self)
 ```
+
+Available when `Self` conforms to `FixedWidthInteger`.
 
 
 ---

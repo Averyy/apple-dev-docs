@@ -1,7 +1,8 @@
 # FFTDirection
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Specifies whether to perform a forward or inverse FFT.
 
@@ -10,14 +11,14 @@ Specifies whether to perform a forward or inverse FFT.
 
 ## Declaration
 
-```swift
+```c
 typedef int FFTDirection;
 ```
 
 ## Topics
 
 ### Constants
-- [kFFTDirection_Inverse](1645049-anonymous/kfftdirection_inverse.md)
+- [kFFTDirection_Inverse](./api-1645049-anonymous/kfftdirection_inverse.md)
   Specifies an inverse transform.
 
 

@@ -1,13 +1,14 @@
 # kLSMMapLoadMutable
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An option that specifies to load the map as mutable in training state.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ An option that specifies to load the map as mutable in training state.
 var kLSMMapLoadMutable: Int { get }
 ```
 
+```c
+kLSMMapLoadMutable
+```
+
 ## See Also
 
-- [var kLSMMapDiscardCounts: Int](klsmmapdiscardcounts.md)
+### Constants
+- [var kLSMMapDiscardCounts: Int](./klsmmapdiscardcounts.md)
   An option that specifies not to keep counts.
-- [var kLSMMapHashText: Int](klsmmaphashtext.md)
+- [var kLSMMapHashText: Int](./klsmmaphashtext.md)
   An option that specifies to transform the text so it’s not human-readable.
 
 

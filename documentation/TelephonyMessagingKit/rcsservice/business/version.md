@@ -1,7 +1,8 @@
 # version
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Version of contents.
 

@@ -1,18 +1,19 @@
 # releaseInfo
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-If non-`NULL`,the callback used to release the `info` parameterpassed to [`init(info:domainDimension:domain:rangeDimension:range:callbacks:)`](cgfunction/init(info:domaindimension:domain:rangedimension:range:callbacks:).md).
+If non-`NULL`,the callback used to release the `info` parameterpassed to [`init(info:domainDimension:domain:rangeDimension:range:callbacks:)`](../cgfunction/init%28info,domaindimension,domain,rangedimension,range,callbacks%29.md).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ If non-`NULL`,the callback used to release the `info` parameterpassed to [`init(
 var releaseInfo: CGFunctionReleaseInfoCallback?
 ```
 
+```c
+CGFunctionReleaseInfoCallback releaseInfo;
+```
+
 ## See Also
 
-- [var evaluate: CGFunctionEvaluateCallback?](cgfunctioncallbacks/evaluate.md)
+### Instance Properties
+- [var evaluate: CGFunctionEvaluateCallback?](./evaluate.md)
   The callback that evaluates the function.
-- [var version: UInt32](cgfunctioncallbacks/version.md)
+- [var version: UInt32](./version.md)
   The structure version number. For this structure,the version should be `0`.
 
 

@@ -1,7 +1,8 @@
 # notify(queue:execute:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules the execution of the specified work item after the completion of the current work item.
 
@@ -10,9 +11,9 @@ Schedules the execution of the specified work item after the completion of the c
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -27,7 +28,8 @@ func notify(queue: DispatchQueue, execute: DispatchWorkItem)
 
 ## See Also
 
-- [func notify(qos: DispatchQoS, flags: DispatchWorkItemFlags, queue: DispatchQueue, execute: () -> Void)](dispatchworkitem/notify(qos:flags:queue:execute:).md)
+### Adding a Completion Handler
+- [func notify(qos: DispatchQoS, flags: DispatchWorkItemFlags, queue: DispatchQueue, execute: () -> Void)](./notify%28qos,flags,queue,execute%29.md)
   Schedules the execution of the specified work item, with the specified quality-of-service, after the completion of the current work item.
 
 

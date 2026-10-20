@@ -1,7 +1,8 @@
 # lightyears
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The light years unit of length.
 
@@ -21,37 +22,42 @@ The light years unit of length.
 class var lightyears: UnitLength { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitLength * lightyears;
+```
+
 ## See Also
 
-- [class var megameters: UnitLength](unitlength/megameters.md)
+### Accessing Predefined Units
+- [class var megameters: UnitLength](./megameters.md)
   The megameters unit of length.
-- [class var kilometers: UnitLength](unitlength/kilometers.md)
+- [class var kilometers: UnitLength](./kilometers.md)
   The kilometers unit of length.
-- [class var hectometers: UnitLength](unitlength/hectometers.md)
+- [class var hectometers: UnitLength](./hectometers.md)
   The hectometers unit of length.
-- [class var decameters: UnitLength](unitlength/decameters.md)
+- [class var decameters: UnitLength](./decameters.md)
   The decameters unit of length.
-- [class var meters: UnitLength](unitlength/meters.md)
+- [class var meters: UnitLength](./meters.md)
   The meters unit of length.
-- [class var decimeters: UnitLength](unitlength/decimeters.md)
+- [class var decimeters: UnitLength](./decimeters.md)
   The decimeters unit of length.
-- [class var centimeters: UnitLength](unitlength/centimeters.md)
+- [class var centimeters: UnitLength](./centimeters.md)
   The centimeters unit of length.
-- [class var millimeters: UnitLength](unitlength/millimeters.md)
+- [class var millimeters: UnitLength](./millimeters.md)
   The millimeters unit of length.
-- [class var micrometers: UnitLength](unitlength/micrometers.md)
+- [class var micrometers: UnitLength](./micrometers.md)
   The micrometers unit of length.
-- [class var nanometers: UnitLength](unitlength/nanometers.md)
+- [class var nanometers: UnitLength](./nanometers.md)
   The nanometers unit of length.
-- [class var picometers: UnitLength](unitlength/picometers.md)
+- [class var picometers: UnitLength](./picometers.md)
   The picometers unit of length.
-- [class var inches: UnitLength](unitlength/inches.md)
+- [class var inches: UnitLength](./inches.md)
   The inches unit of length.
-- [class var feet: UnitLength](unitlength/feet.md)
+- [class var feet: UnitLength](./feet.md)
   The feet unit of length.
-- [class var yards: UnitLength](unitlength/yards.md)
+- [class var yards: UnitLength](./yards.md)
   The yards unit of length.
-- [class var miles: UnitLength](unitlength/miles.md)
+- [class var miles: UnitLength](./miles.md)
   The miles unit of length.
 
 

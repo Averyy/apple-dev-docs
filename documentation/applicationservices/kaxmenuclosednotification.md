@@ -1,7 +1,8 @@
 # kAXMenuClosedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A menu was closed.
 
@@ -12,6 +13,10 @@ A menu was closed.
 
 ```swift
 var kAXMenuClosedNotification: String { get }
+```
+
+```c
+#define kAXMenuClosedNotification
 ```
 
 

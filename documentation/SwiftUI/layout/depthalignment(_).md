@@ -1,7 +1,8 @@
 # depthAlignment(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the depth alignment for this layout.
 
@@ -33,7 +34,7 @@ In the example below, the button to play the robot animation is aligned to the `
 
 ## Parameters
 
-- `alignment`: A [`DepthAlignment`](depthalignment.md) value to use for aligning layout’s subviews
+- `alignment`: A [`DepthAlignment`](../depthalignment.md) value to use for aligning layout’s subviews
 
 
 ---

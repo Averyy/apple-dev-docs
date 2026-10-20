@@ -1,7 +1,8 @@
 # alternativeSubstrings
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of alternate interpretations of the utterance in the transcription segment.
 
@@ -18,11 +19,16 @@ An array of alternate interpretations of the utterance in the transcription segm
 var alternativeSubstrings: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * alternativeSubstrings;
+```
+
 ## See Also
 
-- [var substring: String](sftranscriptionsegment/substring.md)
+### Transcribing the segment
+- [var substring: String](./substring.md)
   The string representation of the utterance in the transcription segment.
-- [var substringRange: NSRange](sftranscriptionsegment/substringrange.md)
+- [var substringRange: NSRange](./substringrange.md)
   The range information for the transcription segment’s substring, relative to the overall transcription.
 
 

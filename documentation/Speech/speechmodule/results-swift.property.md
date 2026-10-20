@@ -2,6 +2,7 @@
 
 **Framework**: Speech  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An asynchronous sequence containing this module’s analysis results. Results are added to the sequence as they are created.
@@ -28,8 +29,9 @@ If there is an error in the overall analysis, all modules will throw the error f
 
 ## See Also
 
-- [associatedtype Result : SpeechModuleResult, Sendable](speechmodule/result.md)
-- [associatedtype Results : Sendable, AsyncSequence](speechmodule/results-swift.associatedtype.md)
+### Getting results
+- [associatedtype Result : SpeechModuleResult, Sendable](./result.md)
+- [associatedtype Results : Sendable, AsyncSequence](./results-swift.associatedtype.md)
 
 
 ---

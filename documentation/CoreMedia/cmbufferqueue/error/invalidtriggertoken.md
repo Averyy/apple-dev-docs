@@ -1,7 +1,8 @@
 # invalidTriggerToken
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,15 +21,16 @@ static let invalidTriggerToken: NSError
 
 ## See Also
 
-- [static let allocationFailed: NSError](cmbufferqueue/error/allocationfailed.md)
-- [static let badTriggerDuration: NSError](cmbufferqueue/error/badtriggerduration.md)
-- [static let cannotModifyQueueFromTriggerCallback: NSError](cmbufferqueue/error/cannotmodifyqueuefromtriggercallback.md)
-- [static let enqueueAfterEndOfData: NSError](cmbufferqueue/error/enqueueafterendofdata.md)
-- [static let invalidBuffer: NSError](cmbufferqueue/error/invalidbuffer.md)
-- [static let invalidCMBufferCallbacksStruct: NSError](cmbufferqueue/error/invalidcmbuffercallbacksstruct.md)
-- [static let invalidTriggerCondition: NSError](cmbufferqueue/error/invalidtriggercondition.md)
-- [static let queueIsFull: NSError](cmbufferqueue/error/queueisfull.md)
-- [static let requiredParameterMissing: NSError](cmbufferqueue/error/requiredparametermissing.md)
+### Type Properties
+- [static let allocationFailed: NSError](./allocationfailed.md)
+- [static let badTriggerDuration: NSError](./badtriggerduration.md)
+- [static let cannotModifyQueueFromTriggerCallback: NSError](./cannotmodifyqueuefromtriggercallback.md)
+- [static let enqueueAfterEndOfData: NSError](./enqueueafterendofdata.md)
+- [static let invalidBuffer: NSError](./invalidbuffer.md)
+- [static let invalidCMBufferCallbacksStruct: NSError](./invalidcmbuffercallbacksstruct.md)
+- [static let invalidTriggerCondition: NSError](./invalidtriggercondition.md)
+- [static let queueIsFull: NSError](./queueisfull.md)
+- [static let requiredParameterMissing: NSError](./requiredparametermissing.md)
 
 
 ---

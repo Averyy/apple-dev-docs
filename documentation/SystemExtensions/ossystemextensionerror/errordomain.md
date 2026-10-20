@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The domain of SystemExtension errors.
 

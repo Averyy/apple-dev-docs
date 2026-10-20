@@ -1,7 +1,8 @@
 # vvexpf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 For each single-precision array element, sets `y` to the exponential of `x`.
 
@@ -10,7 +11,7 @@ For each single-precision array element, sets `y` to the exponential of `x`.
 
 ## Declaration
 
-```swift
+```c
 void vvexpf(float *, const float *, const int *);
 ```
 

@@ -1,7 +1,8 @@
 # PDFOutline
 
 **Framework**: PDFKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A `PDFOutline` object is an element in a tree-structured hierarchy that can represent the structure of a PDF document.
 
@@ -19,6 +20,10 @@ A `PDFOutline` object is an element in a tree-structured hierarchy that can repr
 class PDFOutline
 ```
 
+```objc
+@interface PDFOutline : NSObject
+```
+
 #### Overview
 
 An outline is an optional component of a PDF document, useful for viewing the structure of the document and for navigating within it.
@@ -28,55 +33,56 @@ Outlines are created by the document’s author. If you represent a PDF document
 ## Topics
 
 ### Initializing an Outline
-- [init()](pdfoutline/init.md)
+- [init()](./pdfoutline/init%28%29.md)
   Initializes a `PDFOutline` object.
 ### Getting Information About an Outline
-- [var document: PDFDocument?](pdfoutline/document.md)
+- [var document: PDFDocument?](./pdfoutline/document.md)
   Returns the document with which the outline is associated.
-- [var numberOfChildren: Int](pdfoutline/numberofchildren.md)
+- [var numberOfChildren: Int](./pdfoutline/numberofchildren.md)
   Returns the number of child outline objects in the outline.
-- [var parent: PDFOutline?](pdfoutline/parent.md)
+- [var parent: PDFOutline?](./pdfoutline/parent.md)
   Returns the parent outline object of the outline (returns `NULL` if called on the root outline object).
-- [func child(at: Int) -> PDFOutline?](pdfoutline/child(at:).md)
+- [func child(at: Int) -> PDFOutline?](./pdfoutline/child%28at%29.md)
   Returns the child outline object at the specified index.
-- [var index: Int](pdfoutline/index.md)
+- [var index: Int](./pdfoutline/index.md)
   Returns the index of the outline.
 ### Managing Outline Labels
-- [var label: String?](pdfoutline/label.md)
+- [var label: String?](./pdfoutline/label.md)
   Returns the label for the outline.
 ### Managing Actions and Destinations
-- [var destination: PDFDestination?](pdfoutline/destination.md)
+- [var destination: PDFDestination?](./pdfoutline/destination.md)
   Returns the destination associated with the outline.
-- [var action: PDFAction?](pdfoutline/action.md)
+- [var action: PDFAction?](./pdfoutline/action.md)
   Returns the action performed when users click the outline.
 ### Changing an Outline Hierarchy
-- [func insertChild(PDFOutline, at: Int)](pdfoutline/insertchild(_:at:).md)
+- [func insertChild(PDFOutline, at: Int)](./pdfoutline/insertchild%28_,at%29.md)
   Inserts the specified outline object at the specified index.
-- [func removeFromParent()](pdfoutline/removefromparent.md)
+- [func removeFromParent()](./pdfoutline/removefromparent%28%29.md)
   Removes the outline object from its parent (does nothing if outline object is the root outline object).
 ### Managing the Disclosure of an Outline Object
-- [var isOpen: Bool](pdfoutline/isopen.md)
+- [var isOpen: Bool](./pdfoutline/isopen.md)
   Returns a Boolean value that indicates whether the outline object is initially disclosed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PDFDocument](pdfdocument.md)
+### Content Model
+- [class PDFDocument](./pdfdocument.md)
   An object that represents PDF data or a PDF file and defines methods for writing, searching, and selecting PDF data.
-- [class PDFPage](pdfpage.md)
+- [class PDFPage](./pdfpage.md)
   `PDFPage`, a subclass of `NSObject`, defines methods used to render PDF pages and work with annotations, text, and selections.
-- [class PDFSelection](pdfselection.md)
+- [class PDFSelection](./pdfselection.md)
   A `PDFSelection` object identifies a contiguous or noncontiguous selection of text in a PDF document.
 
 

@@ -1,7 +1,8 @@
 # convert(_:toRectTo:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a map region to a rectangle in the specified view.
 
@@ -15,8 +16,28 @@ Converts a map region to a rectangle in the specified view.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+func convert(_ region: MKCoordinateRegion, toRectTo view: UIView?) -> CGRect
+```
+
+*macOS*
+
 ```swift
 func convert(_ region: MKCoordinateRegion, toRectTo view: NSView?) -> CGRect
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+- (CGRect) convertRegion:(MKCoordinateRegion) region toRectToView:(UIView *) view;
+```
+
+*macOS*
+
+```objc
+- (CGRect) convertRegion:(MKCoordinateRegion) region toRectToView:(NSView *) view;
 ```
 
 #### Return Value
@@ -30,11 +51,12 @@ The rectangle corresponding to the specified map region.
 
 ## See Also
 
-- [func convert(CLLocationCoordinate2D, toPointTo: UIView?) -> CGPoint](mkmapview/convert(_:topointto:).md)
+### Converting map coordinates
+- [func convert(CLLocationCoordinate2D, toPointTo: UIView?) -> CGPoint](./convert%28_,topointto%29.md)
   Converts a map coordinate to a point in the specified view.
-- [func convert(CGPoint, toCoordinateFrom: UIView?) -> CLLocationCoordinate2D](mkmapview/convert(_:tocoordinatefrom:).md)
+- [func convert(CGPoint, toCoordinateFrom: UIView?) -> CLLocationCoordinate2D](./convert%28_,tocoordinatefrom%29.md)
   Converts a point in the specified view’s coordinate system to a map coordinate.
-- [func convert(CGRect, toRegionFrom: UIView?) -> MKCoordinateRegion](mkmapview/convert(_:toregionfrom:).md)
+- [func convert(CGRect, toRegionFrom: UIView?) -> MKCoordinateRegion](./convert%28_,toregionfrom%29.md)
   Converts a rectangle in the specified view’s coordinate system to a map region.
 
 

@@ -1,12 +1,13 @@
 # resignFirstResponder()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the receiver that it’s been asked to relinquish its status as first responder in its window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ Notifies the receiver that it’s been asked to relinquish its status as first r
 func resignFirstResponder() -> Bool
 ```
 
+```objc
+- (BOOL) resignFirstResponder;
+```
+
 #### Discussion
 
-The default implementation returns [`true`](https://developer.apple.com/documentation/swift/true), resigning first responder status. Subclasses can override this method to update state or perform some action such as unhighlighting the selection, or to return [`false`](https://developer.apple.com/documentation/swift/false), refusing to relinquish first responder status.
+The default implementation returns [`true`](../../Swift/true.md), resigning first responder status. Subclasses can override this method to update state or perform some action such as unhighlighting the selection, or to return [`false`](../../Swift/false.md), refusing to relinquish first responder status.
 
-Use  the `NSWindow` [`makeFirstResponder(_:)`](nswindow/makefirstresponder(_:).md) method, not this method, to make an object the first responder. Never invoke this method directly.
+Use  the `NSWindow` [`makeFirstResponder(_:)`](../nswindow/makefirstresponder%28_%29.md) method, not this method, to make an object the first responder. Never invoke this method directly.
 
 ## See Also
 
-- [var acceptsFirstResponder: Bool](nsresponder/acceptsfirstresponder.md)
+### Changing the First Responder
+- [var acceptsFirstResponder: Bool](./acceptsfirstresponder.md)
   A Boolean value that indicates whether the responder accepts first responder status.
-- [func becomeFirstResponder() -> Bool](nsresponder/becomefirstresponder.md)
-  Notifies the receiver that it’s about to become first responder in its [`NSWindow`](nswindow.md).
-- [func validateProposedFirstResponder(NSResponder, for: NSEvent?) -> Bool](nsresponder/validateproposedfirstresponder(_:for:).md)
+- [func becomeFirstResponder() -> Bool](./becomefirstresponder%28%29.md)
+  Notifies the receiver that it’s about to become first responder in its [`NSWindow`](../nswindow.md).
+- [func validateProposedFirstResponder(NSResponder, for: NSEvent?) -> Bool](./validateproposedfirstresponder%28_,for%29.md)
   Allows controls to determine when they should become first responder.
 
 

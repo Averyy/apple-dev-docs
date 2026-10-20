@@ -1,7 +1,8 @@
 # didRemoveTarget
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether a target was removed from a relationship.
 

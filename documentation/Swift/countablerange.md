@@ -1,7 +1,8 @@
 # CountableRange
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -20,10 +21,11 @@ typealias CountableRange<Bound> = Range<Bound> where Bound : Strideable, Bound.S
 
 ## See Also
 
-- [typealias DictionaryIndex](dictionaryindex.md)
-- [typealias SetIndex](setindex.md)
-- [typealias CountableClosedRange](countableclosedrange.md)
-- [typealias CountablePartialRangeFrom](countablepartialrangefrom.md)
+### Deprecated
+- [typealias DictionaryIndex](./dictionaryindex.md)
+- [typealias SetIndex](./setindex.md)
+- [typealias CountableClosedRange](./countableclosedrange.md)
+- [typealias CountablePartialRangeFrom](./countablepartialrangefrom.md)
 
 
 ---

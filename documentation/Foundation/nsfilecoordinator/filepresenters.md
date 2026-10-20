@@ -1,7 +1,8 @@
 # filePresenters
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns an array containing the currently registered file presenter objects.
 
@@ -20,17 +21,22 @@ Returns an array containing the currently registered file presenter objects.
 class var filePresenters: [any NSFilePresenter] { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSArray<id<NSFilePresenter>> * filePresenters;
+```
+
 #### Return Value
 
-An array of objects that conform to the [`NSFilePresenter`](nsfilepresenter.md) protocol.
+An array of objects that conform to the [`NSFilePresenter`](../nsfilepresenter.md) protocol.
 
 ## See Also
 
-- [class func addFilePresenter(any NSFilePresenter)](nsfilecoordinator/addfilepresenter(_:).md)
+### Managing File Presenters
+- [class func addFilePresenter(any NSFilePresenter)](./addfilepresenter%28_%29.md)
   Registers the specified file presenter object so that it can receive notifications.
-- [class func removeFilePresenter(any NSFilePresenter)](nsfilecoordinator/removefilepresenter(_:).md)
+- [class func removeFilePresenter(any NSFilePresenter)](./removefilepresenter%28_%29.md)
   Unregisters the specified file presenter object.
-- [var purposeIdentifier: String](nsfilecoordinator/purposeidentifier.md)
+- [var purposeIdentifier: String](./purposeidentifier.md)
   A string that uniquely identifies the file access that was performed by this file coordinator.
 
 

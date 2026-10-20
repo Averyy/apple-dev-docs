@@ -1,7 +1,8 @@
 # eventStatusText
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Up to three separate strings for event status may be displayed.
 
@@ -14,6 +15,10 @@ Up to three separate strings for event status may be displayed.
 
 ```swift
 var eventStatusText: [String]? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSArray<NSString *> * eventStatusText;
 ```
 
 #### Discussion

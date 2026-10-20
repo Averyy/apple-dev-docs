@@ -1,7 +1,8 @@
 # url
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of a directory where you read and write game-save data.
 
@@ -16,6 +17,10 @@ The URL of a directory where you read and write game-save data.
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (readonly, nonnull) NSURL * url;
 ```
 
 #### Discussion

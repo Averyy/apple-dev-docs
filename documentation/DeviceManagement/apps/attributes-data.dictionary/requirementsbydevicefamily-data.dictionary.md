@@ -1,27 +1,29 @@
 # Apps.Attributes.RequirementsByDeviceFamily
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - VPP License Management 2.1+
 
 ## Declaration
 
-```swift
+```
 object Apps.Attributes.RequirementsByDeviceFamily
 ```
 
 ## See Also
 
-- [object Apps.Attributes.ContentRatingsBySystem](apps/attributes-data.dictionary/contentratingsbysystem-data.dictionary.md)
-- [object Apps.Attributes.FileSizeByDevice](apps/attributes-data.dictionary/filesizebydevice-data.dictionary.md)
-- [object Apps.Attributes.LatestVersionInfo](apps/attributes-data.dictionary/latestversioninfo-data.dictionary.md)
-- [object Apps.Attributes.Offers](apps/attributes-data.dictionary/offers-data.dictionary.md)
-- [object Apps.Attributes.ScreenshotsByType](apps/attributes-data.dictionary/screenshotsbytype-data.dictionary.md)
-- [object Apps.Attributes.TaxExclusivePrices](apps/attributes-data.dictionary/taxexclusiveprices-data.dictionary.md)
-- [object Apps.Attributes.UserRating](apps/attributes-data.dictionary/userrating-data.dictionary.md)
-- [object Apps.Attributes.VersionHistory](apps/attributes-data.dictionary/versionhistory-data.dictionary.md)
+### Related Objects
+- [object Apps.Attributes.ContentRatingsBySystem](./contentratingsbysystem-data.dictionary.md)
+- [object Apps.Attributes.FileSizeByDevice](./filesizebydevice-data.dictionary.md)
+- [object Apps.Attributes.LatestVersionInfo](./latestversioninfo-data.dictionary.md)
+- [object Apps.Attributes.Offers](./offers-data.dictionary.md)
+- [object Apps.Attributes.ScreenshotsByType](./screenshotsbytype-data.dictionary.md)
+- [object Apps.Attributes.TaxExclusivePrices](./taxexclusiveprices-data.dictionary.md)
+- [object Apps.Attributes.UserRating](./userrating-data.dictionary.md)
+- [object Apps.Attributes.VersionHistory](./versionhistory-data.dictionary.md)
 
 
 ---

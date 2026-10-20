@@ -1,7 +1,8 @@
 # Link Presentation
 
 **Framework**: Link Presentation  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Fetch, provide, and present rich links in your app.
 
@@ -17,25 +18,25 @@ Fetch, provide, and present rich links in your app.
 
 The Link Presentation framework enables you to present content-rich URLs in a consistent way. Retrieve metadata from a URL, present the rich link content inside your app, and provide link metadata to the share sheet experience in iOS.
 
-![Diagram showing how an LPLinkView presents a map URL with an image of the map on top, and the name and address of the location underneath.](/images/com.apple.Link-Presentation/linkpresentation-1@2x.png)
+![Diagram showing how an LPLinkView presents a map URL with an image of the map on top, and the name and address of the location underneath.](https://developer.apple.com/tutorials/images/com.apple.Link-Presentation/linkpresentation-1@2x.png)
 
-For more information about presenting links, see WWDC 2019 session [`262: Embedding and Sharing Visually Rich Links`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2019/262/).
+For more information about presenting links, see WWDC 2019 session [262: Embedding and Sharing Visually Rich Links](https://developer.apple.com/videos/play/wwdc2019/262/).
 
 ## Topics
 
 ### Link metadata
-- [class LPMetadataProvider](lpmetadataprovider.md)
+- [class LPMetadataProvider](./lpmetadataprovider.md)
   An object that retrieves metadata for a URL.
-- [class LPLinkMetadata](lplinkmetadata.md)
+- [class LPLinkMetadata](./lplinkmetadata.md)
   An object that contains metadata about a URL.
 ### Rich links
-- [class LPLinkView](lplinkview.md)
+- [class LPLinkView](./lplinkview.md)
   A rich visual representation of a link.
 ### Reference
-- [LinkPresentation Errors](errors.md)
-- [LinkPresentation Macros](macros.md)
+- [LinkPresentation Errors](./errors.md)
+- [LinkPresentation Macros](./macros.md)
 ### Structures
-- [struct LinkMetadata](linkmetadata.md)
+- [struct LinkMetadata](./linkmetadata.md)
   A structure containing metadata about a URL.
 
 

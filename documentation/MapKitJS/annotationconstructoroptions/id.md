@@ -1,7 +1,8 @@
 # id
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A Place ID that uniquely identifies a feature.
 
@@ -10,19 +11,20 @@ A Place ID that uniquely identifies a feature.
 
 ## Declaration
 
-```swift
+```
 id?: string;
 ```
 
 #### Discussion
 
-For information about identifiers, see [`Identifying unique locations with Place IDs`](https://developer.apple.com/documentation/mapkit/identifying-unique-locations-with-place-ids).
+For information about identifiers, see [Identifying unique locations with Place IDs](../../MapKit/identifying-unique-locations-with-place-ids.md).
 
 ## See Also
 
-- [clusteringIdentifier](annotationconstructoroptions/clusteringidentifier.md)
+### Grouping annotations
+- [clusteringIdentifier](./clusteringidentifier.md)
   An identifier for grouping annotations into the same cluster.
-- [collisionMode](annotationconstructoroptions/collisionmode.md)
+- [collisionMode](./collisionmode.md)
   A mode that determines the shape of the collision frame.
 
 

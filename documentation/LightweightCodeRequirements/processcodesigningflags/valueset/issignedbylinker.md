@@ -1,7 +1,8 @@
 # isSignedByLinker
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Flag indicating that the code was signed by the linker and not an invocation of codesign.
 

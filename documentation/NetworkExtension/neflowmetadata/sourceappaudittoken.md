@@ -1,7 +1,8 @@
 # sourceAppAuditToken
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audit token of the source application of the flow.
 
@@ -14,11 +15,16 @@ The audit token of the source application of the flow.
 var sourceAppAuditToken: Data? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSData * sourceAppAuditToken;
+```
+
 ## See Also
 
-- [var sourceAppUniqueIdentifier: Data](neflowmetadata/sourceappuniqueidentifier.md)
+### Getting source app information
+- [var sourceAppUniqueIdentifier: Data](./sourceappuniqueidentifier.md)
   A data instance that contains a unique hash value for the source application.
-- [var sourceAppSigningIdentifier: String](neflowmetadata/sourceappsigningidentifier.md)
+- [var sourceAppSigningIdentifier: String](./sourceappsigningidentifier.md)
   A string that contains the signing identifier of the source application.
 
 

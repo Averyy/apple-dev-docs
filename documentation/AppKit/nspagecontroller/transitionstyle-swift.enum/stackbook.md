@@ -1,7 +1,8 @@
 # NSPageController.TransitionStyle.stackBook
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Pages are stacked on top of each other. Pages animate out to the left to reveal the next page. Previous pages animate in from the left.
 
@@ -14,11 +15,16 @@ Pages are stacked on top of each other. Pages animate out to the left to reveal 
 case stackBook
 ```
 
+```c
+NSPageControllerTransitionStyleStackBook
+```
+
 ## See Also
 
-- [NSPageController.TransitionStyle.stackHistory](nspagecontroller/transitionstyle-swift.enum/stackhistory.md)
+### Constants
+- [NSPageController.TransitionStyle.stackHistory](./stackhistory.md)
   Pages are stacked on top of each other. Pages animate out to the right to reveal the previous page. Next pages animate in from the right.
-- [NSPageController.TransitionStyle.horizontalStrip](nspagecontroller/transitionstyle-swift.enum/horizontalstrip.md)
+- [NSPageController.TransitionStyle.horizontalStrip](./horizontalstrip.md)
   Each page is laid out next to each other in one long horizontal strip
 
 

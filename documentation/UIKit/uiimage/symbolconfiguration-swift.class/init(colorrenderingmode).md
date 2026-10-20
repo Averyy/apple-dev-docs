@@ -1,7 +1,8 @@
 # init(colorRenderingMode:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a symbol configuration with a preferred color rendering mode.
 
@@ -17,6 +18,10 @@ Initializes a symbol configuration with a preferred color rendering mode.
 
 ```swift
 convenience init(colorRenderingMode mode: UIImage.SymbolColorRenderingMode)
+```
+
+```objc
++ (instancetype) configurationWithColorRenderingMode:(UIImageSymbolColorRenderingMode) mode;
 ```
 
 

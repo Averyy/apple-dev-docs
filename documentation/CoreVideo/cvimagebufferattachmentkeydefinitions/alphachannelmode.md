@@ -1,7 +1,8 @@
 # alphaChannelMode
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Determines how the alpha channel should be rendered.
 

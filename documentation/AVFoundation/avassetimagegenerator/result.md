@@ -1,17 +1,18 @@
 # AVAssetImageGenerator.Result
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the result of an image generation request.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,35 +20,40 @@ Constants that indicate the result of an image generation request.
 enum Result
 ```
 
+```c
+enum AVAssetImageGeneratorResult : NSInteger;
+```
+
 #### Overview
 
-The constants used in the block completion handler for [`generateCGImagesAsynchronously(forTimes:completionHandler:)`](avassetimagegenerator/generatecgimagesasynchronously(fortimes:completionhandler:).md).
+The constants used in the block completion handler for [`generateCGImagesAsynchronously(forTimes:completionHandler:)`](./generatecgimagesasynchronously%28fortimes,completionhandler%29.md).
 
 ## Topics
 
 ### Results
-- [AVAssetImageGenerator.Result.succeeded](avassetimagegenerator/result/succeeded.md)
+- [AVAssetImageGenerator.Result.succeeded](./result/succeeded.md)
   A result that indicates that image generation succeeded.
-- [AVAssetImageGenerator.Result.failed](avassetimagegenerator/result/failed.md)
+- [AVAssetImageGenerator.Result.failed](./result/failed.md)
   A result that indicates that image generation failed.
-- [AVAssetImageGenerator.Result.cancelled](avassetimagegenerator/result/cancelled.md)
+- [AVAssetImageGenerator.Result.cancelled](./result/cancelled.md)
   A result that indicates you canceled image generation.
 ### Initializers
-- [init?(rawValue: Int)](avassetimagegenerator/result/init(rawvalue:).md)
+- [init?(rawValue: Int)](./result/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [typealias AVAssetImageGeneratorCompletionHandler](avassetimagegeneratorcompletionhandler.md)
+### Data types
+- [typealias AVAssetImageGeneratorCompletionHandler](../avassetimagegeneratorcompletionhandler.md)
   A type alias for a closure that provides the result of an image generation request.
 
 

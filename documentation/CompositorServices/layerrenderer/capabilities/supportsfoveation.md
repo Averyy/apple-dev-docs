@@ -1,7 +1,8 @@
 # supportsFoveation
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the layer supports variable rasterization rates.
 

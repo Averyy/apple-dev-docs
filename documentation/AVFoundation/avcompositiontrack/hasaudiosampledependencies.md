@@ -1,7 +1,8 @@
 # hasAudioSampleDependencies
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the track has sample dependencies.
 
@@ -22,11 +23,12 @@ var hasAudioSampleDependencies: Bool { get }
 
 #### Discussion
 
-The value is always [`false`](https://developer.apple.com/documentation/swift/false) for nonaudible media.
+The value is always [`false`](../../Swift/false.md) for nonaudible media.
 
 ## See Also
 
-- [var preferredVolume: Float](avcompositiontrack/preferredvolume.md)
+### Accessing audible characteristics
+- [var preferredVolume: Float](./preferredvolume.md)
   The track’s volume preference for playing its audible media.
 
 

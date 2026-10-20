@@ -1,7 +1,8 @@
 # CMTremorResult
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A result object that contains data about the presence and strength of tremors during a one-minute interval.
 
@@ -18,63 +19,68 @@ A result object that contains data about the presence and strength of tremors du
 class CMTremorResult
 ```
 
+```objc
+@interface CMTremorResult : NSObject
+```
+
 ## Mentions
 
-- [Getting movement disorder symptom data](getting-movement-disorder-symptom-data.md)
+- [Getting movement disorder symptom data](./getting-movement-disorder-symptom-data.md)
 
 #### Overview
 
-The following equation is always true: [`percentUnknown`](cmtremorresult/percentunknown.md) `+` [`percentNone`](cmtremorresult/percentnone.md) `+` [`percentSlight`](cmtremorresult/percentslight.md) `+` [`percentMild`](cmtremorresult/percentmild.md) `+` [`percentModerate`](cmtremorresult/percentmoderate.md) `+` [`percentStrong`](cmtremorresult/percentstrong.md) `= 1.0`.
+The following equation is always true: [`percentUnknown`](./cmtremorresult/percentunknown.md) `+` [`percentNone`](./cmtremorresult/percentnone.md) `+` [`percentSlight`](./cmtremorresult/percentslight.md) `+` [`percentMild`](./cmtremorresult/percentmild.md) `+` [`percentModerate`](./cmtremorresult/percentmoderate.md) `+` [`percentStrong`](./cmtremorresult/percentstrong.md) `= 1.0`.
 
 ## Topics
 
 ### Reading the Time Interval
-- [var startDate: Date](cmtremorresult/startdate.md)
+- [var startDate: Date](./cmtremorresult/startdate.md)
   The result’s start time and date.
-- [var endDate: Date](cmtremorresult/enddate.md)
+- [var endDate: Date](./cmtremorresult/enddate.md)
   The result’s end time and date.
 ### Accessing Tremor Data
-- [var percentUnknown: Float](cmtremorresult/percentunknown.md)
+- [var percentUnknown: Float](./cmtremorresult/percentunknown.md)
   The percentage of time when the algorithm couldn’t make a determination.
-- [var percentNone: Float](cmtremorresult/percentnone.md)
+- [var percentNone: Float](./cmtremorresult/percentnone.md)
   The percentage of time when no tremor was detected.
-- [var percentSlight: Float](cmtremorresult/percentslight.md)
+- [var percentSlight: Float](./cmtremorresult/percentslight.md)
   The percentage of time when a tremor was likely, and the displacement amplitude was slight.
-- [var percentMild: Float](cmtremorresult/percentmild.md)
+- [var percentMild: Float](./cmtremorresult/percentmild.md)
   The percentage of time when a tremor was likely, and the displacement amplitude was mild.
-- [var percentModerate: Float](cmtremorresult/percentmoderate.md)
+- [var percentModerate: Float](./cmtremorresult/percentmoderate.md)
   The percentage of time when a tremor was likely, and the displacement amplitude was moderate.
-- [var percentStrong: Float](cmtremorresult/percentstrong.md)
+- [var percentStrong: Float](./cmtremorresult/percentstrong.md)
   The percentage of time when a tremor was likely, and the displacement amplitude was strong.
 ### Initializers
-- [init?(coder: NSCoder)](cmtremorresult/init(coder:).md)
+- [init?(coder: NSCoder)](./cmtremorresult/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Getting movement disorder symptom data](getting-movement-disorder-symptom-data.md)
+### Movement disorder
+- [Getting movement disorder symptom data](./getting-movement-disorder-symptom-data.md)
   Retrieve data from the Apple Watch’s movement disorder manager.
-- [Adhering to the movement disorder data collection requirements](adhering-to-the-movement-disorder-data-collection-requirements.md)
+- [Adhering to the movement disorder data collection requirements](./adhering-to-the-movement-disorder-data-collection-requirements.md)
   Ensure that your users understand and have control over the data your app collects.
-- [Movement disorder algorithm changelog](movement-disorder-algorithm-changelog.md)
+- [Movement disorder algorithm changelog](./movement-disorder-algorithm-changelog.md)
   A chronological log of notable changes to the movement disorder algorithm.
-- [class CMMovementDisorderManager](cmmovementdisordermanager.md)
+- [class CMMovementDisorderManager](./cmmovementdisordermanager.md)
   A manager for recording and querying movement disorder data.
-- [class CMDyskineticSymptomResult](cmdyskineticsymptomresult.md)
+- [class CMDyskineticSymptomResult](./cmdyskineticsymptomresult.md)
   A result object that contains data about the likely presence of dyskinetic symptoms during a one-minute interval.
 
 

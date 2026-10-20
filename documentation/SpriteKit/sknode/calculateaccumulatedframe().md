@@ -1,18 +1,19 @@
 # calculateAccumulatedFrame()
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a rectangle in the parent’s coordinate system that contains the position and size of itself and all child nodes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,16 +21,20 @@ Returns a rectangle in the parent’s coordinate system that contains the positi
 func calculateAccumulatedFrame() -> CGRect
 ```
 
+```objc
+- (CGRect) calculateAccumulatedFrame;
+```
+
 ## Mentions
 
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
-- [Getting Started with Nodes](getting-started-with-nodes.md)
+- [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
+- [Getting Started with Nodes](../getting-started-with-nodes.md)
 
 #### Discussion
 
-The frame takes into the account the cumulative effect of the [`xScale`](sknode/xscale.md), [`yScale`](sknode/yscale.md), and [`zRotation`](sknode/zrotation.md) properties of each node in the subtree.
+The frame takes into the account the cumulative effect of the [`xScale`](./xscale.md), [`yScale`](./yscale.md), and [`zRotation`](./zrotation.md) properties of each node in the subtree.
 
-Listing 1 shows, in Swift, how [`calculateAccumulatedFrame()`](sknode/calculateaccumulatedframe().md) can be used display the bounding box of a shape node. The child node, although smaller than its parent, is rotated by 30° so that its bounds extend beyond its parent’s bounds. After `childNode` has been added to `parentNode`, a further shape node, `boundingBoxNode`, is created with its size based on the accumulated frame of parentNode.
+Listing 1 shows, in Swift, how [`calculateAccumulatedFrame()`](./calculateaccumulatedframe%28%29.md) can be used display the bounding box of a shape node. The child node, although smaller than its parent, is rotated by 30° so that its bounds extend beyond its parent’s bounds. After `childNode` has been added to `parentNode`, a further shape node, `boundingBoxNode`, is created with its size based on the accumulated frame of parentNode.
 
 Listing 1. Displaying the accumulated frame of a shape node
 
@@ -58,11 +63,12 @@ parentNode.addChild(boundingBoxNode)
 
 The figure below shows the result of Listing 1 with `parentNode` rendered in blue, `childNode` rendered in red and the `boundingBoxNode` rendered with a dashed line.
 
-![Displaying the accumulated frame of a shape node](/images/com.apple.spritekit/media-2793217@2x.png)
+![Displaying the accumulated frame of a shape node](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2793217@2x.png)
 
 ## See Also
 
-- [var frame: CGRect](sknode/frame.md)
+### Querying the Content Size
+- [var frame: CGRect](./frame.md)
   A rectangle in the parent’s coordinate system that contains the node’s content, ignoring the node’s children.
 
 

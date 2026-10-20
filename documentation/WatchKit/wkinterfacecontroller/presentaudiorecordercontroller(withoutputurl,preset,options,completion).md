@@ -1,7 +1,8 @@
 # presentAudioRecorderController(withOutputURL:preset:options:completion:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Display a standard interface for recording audio from the user’s Apple Watch.
 
@@ -11,46 +12,57 @@ Display a standard interface for recording audio from the user’s Apple Watch.
 ## Declaration
 
 ```swift
+func presentAudioRecorderController(withOutputURL URL: URL, preset: WKAudioRecorderPreset, options: [AnyHashable : Any]? = nil, completion: @escaping (Bool, (any Error)?) -> Void)
+```
+
+```swift
 func presentAudioRecorderController(withOutputURL URL: URL, preset: WKAudioRecorderPreset, options: [AnyHashable : Any]? = nil) async throws -> Bool
+```
+
+```objc
+- (void) presentAudioRecorderControllerWithOutputURL:(NSURL *) URL preset:(WKAudioRecorderPreset) preset options:(NSDictionary *) options completion:(void (^)(BOOL didSave, NSError *error)) completion;
 ```
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md)
+- [Navigating Between Scenes](../navigating-between-scenes.md)
 
 #### Discussion
 
-Use this method to obtain recorded audio from the user. This method executes asynchronously, returning shortly after you call it. During a subsequent run loop cycle, the system displays the audio recording controller to the user. The interface includes a Cancel button to dismiss the interface, and controls to manage recording. After some audio has been recorded, the interface displays the title string specified in the [`WKAudioRecorderControllerOptionsActionTitleKey`](wkaudiorecordercontrolleroptionsactiontitlekey.md) option so that the user can accept the content and save it to the specified URL. When the user taps the Cancel button or your title string, WatchKit automatically dismisses the audio recording interface controller.
+Use this method to obtain recorded audio from the user. This method executes asynchronously, returning shortly after you call it. During a subsequent run loop cycle, the system displays the audio recording controller to the user. The interface includes a Cancel button to dismiss the interface, and controls to manage recording. After some audio has been recorded, the interface displays the title string specified in the [`WKAudioRecorderControllerOptionsActionTitleKey`](../wkaudiorecordercontrolleroptionsactiontitlekey.md) option so that the user can accept the content and save it to the specified URL. When the user taps the Cancel button or your title string, WatchKit automatically dismisses the audio recording interface controller.
 
 When the user dismisses the interface, or when you dismiss it programmatically, the system calls your completion block. Use that block to process the results.
 
 Always call this method from your WatchKit extension’s main thread.
 
-When specifying a filename with the `.wav` extension, the resulting audio format is LPCM. For all other file types, the audio format is AAC. For information about the audio recording options, see the values for [`WKAudioRecorderPreset`](wkaudiorecorderpreset.md).
+When specifying a filename with the `.wav` extension, the resulting audio format is LPCM. For all other file types, the audio format is AAC. For information about the audio recording options, see the values for [`WKAudioRecorderPreset`](../wkaudiorecorderpreset.md).
 
 > **Note**:  Do not attempt to record audio while gathering heart rate data using Health Kit. If you present a media interface, WatchKit automatically disables the gathering of heart rate data.
 
 ## Parameters
 
 - `URL`: The URL at which to store the recorded output. The filename extension determines the type of audio to record. You may specify the extensions `.wav`, `.mp4`, and `.m4a`.
-- `preset`: The recording quality. Specify the constant that best represents the type of audio you want to record. For a list of possible values, see [`WKAudioRecorderPreset`](wkaudiorecorderpreset.md).
-- `options`: A dictionary of options to use during recording. If you specify `nil` for this parameter, the audio recording interface uses the default options. For a list of keys and values you can include in the dictionary, see [`Audio Recording Options`](audio-recording-options.md).
-- `completion`: The block to execute when recording ends. Use this block to determine the status of the recording and to perform any cleanup. This block has no return value and takes the following parameters: - **didSave**: A Boolean value indicating whether the audio was saved successfully to the specified URL. The value is [`true`](https://developer.apple.com/documentation/swift/true) if the audio was saved or [`false`](https://developer.apple.com/documentation/swift/false) if the user canceled the recording.
-- **error**: An error object if a problem occurred. Use the error object to determine the cause of the problem and take any appropriate actions, such as notifying the user.
+- `preset`: The recording quality. Specify the constant that best represents the type of audio you want to record. For a list of possible values, see [`WKAudioRecorderPreset`](../wkaudiorecorderpreset.md).
+- `options`: A dictionary of options to use during recording. If you specify `nil` for this parameter, the audio recording interface uses the default options. For a list of keys and values you can include in the dictionary, see [Audio Recording Options](../audio-recording-options.md).
+- `completion`: The block to execute when recording ends. Use this block to determine the status of the recording and to perform any cleanup. This block has no return value and takes the following parameters:
+
+  - **didSave**: A Boolean value indicating whether the audio was saved successfully to the specified URL. The value is [`true`](../../Swift/true.md) if the audio was saved or [`false`](../../Swift/false.md) if the user canceled the recording.
+  - **error**: An error object if a problem occurred. Use the error object to determine the cause of the problem and take any appropriate actions, such as notifying the user.
 
 ## See Also
 
-- [func presentMediaPlayerController(with: URL, options: [AnyHashable : Any]?, completion: (Bool, TimeInterval, (any Error)?) -> Void)](wkinterfacecontroller/presentmediaplayercontroller(with:options:completion:).md)
+### Presenting video and audio interfaces
+- [func presentMediaPlayerController(with: URL, options: [AnyHashable : Any]?, completion: (Bool, TimeInterval, (any Error)?) -> Void)](./presentmediaplayercontroller%28with,options,completion%29.md)
   Displays a modal interface for playing the specified media file.
-- [Media Player Options](media-player-options.md)
+- [Media Player Options](../media-player-options.md)
   Keys indicating media playback options.
-- [func dismissMediaPlayerController()](wkinterfacecontroller/dismissmediaplayercontroller.md)
+- [func dismissMediaPlayerController()](./dismissmediaplayercontroller%28%29.md)
   Dismisses the media interface controller.
-- [enum WKAudioRecorderPreset](wkaudiorecorderpreset.md)
+- [enum WKAudioRecorderPreset](../wkaudiorecorderpreset.md)
   Constants indicating the quality of audio recordings.
-- [Audio Recording Options](audio-recording-options.md)
+- [Audio Recording Options](../audio-recording-options.md)
   Options to specify when recording audio.
-- [func dismissAudioRecorderController()](wkinterfacecontroller/dismissaudiorecordercontroller.md)
+- [func dismissAudioRecorderController()](./dismissaudiorecordercontroller%28%29.md)
   Dismisses the audio recording interface controller.
 
 

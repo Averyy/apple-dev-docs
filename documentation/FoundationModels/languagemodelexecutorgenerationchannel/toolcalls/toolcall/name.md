@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the tool call.
 
@@ -21,13 +22,14 @@ var name: String
 
 ## See Also
 
-- [var action: LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.property.md)
+### Handling a tool call
+- [var action: LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](./action-swift.property.md)
   The action to perform.
-- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.struct.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](./action-swift.struct.md)
   An operation that can be performed on a tool call.
-- [var id: String](languagemodelexecutorgenerationchannel/toolcalls/toolcall/id.md)
+- [var id: String](./id.md)
   The identifier for the tool call.
-- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.ArgumentsFragment](languagemodelexecutorgenerationchannel/toolcalls/toolcall/argumentsfragment.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.ArgumentsFragment](./argumentsfragment.md)
   Argument text appended to this tool call.
 
 

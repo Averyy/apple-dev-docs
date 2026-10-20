@@ -1,9 +1,10 @@
 # keyAEAdjustMarksProc
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Mark-adjusting function. See [`OSLAdjustMarksProcPtr`](osladjustmarksprocptr.md).
+Mark-adjusting function. See [`OSLAdjustMarksProcPtr`](./osladjustmarksprocptr.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

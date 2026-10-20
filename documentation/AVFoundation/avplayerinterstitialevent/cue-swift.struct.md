@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEvent.Cue
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines standard cues to play interstitial content.
 
@@ -20,31 +21,36 @@ A structure that defines standard cues to play interstitial content.
 struct Cue
 ```
 
+```c
+typedef NSString * AVPlayerInterstitialEventCue;
+```
+
 ## Topics
 
 ### Cues
-- [static let noCue: AVPlayerInterstitialEvent.Cue](avplayerinterstitialevent/cue-swift.struct/nocue.md)
+- [static let noCue: AVPlayerInterstitialEvent.Cue](./cue-swift.struct/nocue.md)
   A cue that indicates that playback starts at the interstitial event time or date.
-- [static let joinCue: AVPlayerInterstitialEvent.Cue](avplayerinterstitialevent/cue-swift.struct/joincue.md)
+- [static let joinCue: AVPlayerInterstitialEvent.Cue](./cue-swift.struct/joincue.md)
   A cue that indicates that playback occurs before starting primary playback, regardless of initial primary playback position.
-- [static let leaveCue: AVPlayerInterstitialEvent.Cue](avplayerinterstitialevent/cue-swift.struct/leavecue.md)
+- [static let leaveCue: AVPlayerInterstitialEvent.Cue](./cue-swift.struct/leavecue.md)
   A cue that indicates event playback occurs after primary playback ends without error, either at the end of the primary asset or at the client-specified forward playback end time.
 ### Initializers
-- [init(rawValue: String)](avplayerinterstitialevent/cue-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./cue-swift.struct/init%28rawvalue%29.md)
   Creates an interstitial event cue from its raw string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cue: AVPlayerInterstitialEvent.Cue](avplayerinterstitialevent/cue-swift.property.md)
+### Configuring cues
+- [var cue: AVPlayerInterstitialEvent.Cue](./cue-swift.property.md)
   A cue to schedule interstitial event playback at a predefined position during primary playback.
 
 

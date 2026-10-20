@@ -1,7 +1,8 @@
 # appleID
 
 **Framework**: Device Activity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access the Apple ID of the person.
 
@@ -18,7 +19,8 @@ var appleID: String?
 
 ## See Also
 
-- [var nameComponents: PersonNameComponents?](deviceactivitydata/user-swift.struct/namecomponents.md)
+### Identifying the person
+- [var nameComponents: PersonNameComponents?](./namecomponents.md)
   Access the name of the person.
 
 

@@ -1,7 +1,8 @@
 # abbreviated
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An abbreviated unit name.
 
@@ -26,11 +27,12 @@ For example, `abbreviated` produces the unit label “3 hr” for a 3-hour durat
 
 ## See Also
 
-- [static var condensedAbbreviated: Duration.UnitsFormatStyle.UnitWidth](duration/unitsformatstyle/unitwidth-swift.struct/condensedabbreviated.md)
+### Duration unit widths
+- [static var condensedAbbreviated: Duration.UnitsFormatStyle.UnitWidth](./condensedabbreviated.md)
   An abbreviated unit name, with condensed space between the value and name.
-- [static var narrow: Duration.UnitsFormatStyle.UnitWidth](duration/unitsformatstyle/unitwidth-swift.struct/narrow.md)
+- [static var narrow: Duration.UnitsFormatStyle.UnitWidth](./narrow.md)
   The shortest possible unit name.
-- [static var wide: Duration.UnitsFormatStyle.UnitWidth](duration/unitsformatstyle/unitwidth-swift.struct/wide.md)
+- [static var wide: Duration.UnitsFormatStyle.UnitWidth](./wide.md)
   The full unit name.
 
 

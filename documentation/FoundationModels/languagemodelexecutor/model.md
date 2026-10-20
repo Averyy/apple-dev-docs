@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The model type this executor processes requests for.
@@ -22,7 +23,8 @@ associatedtype Model : LanguageModel
 
 ## See Also
 
-- [func prewarm(model: Self.Model, transcript: Transcript)](languagemodelexecutor/prewarm(model:transcript:).md)
+### Prewarming the model
+- [func prewarm(model: Self.Model, transcript: Transcript)](./prewarm%28model,transcript%29.md)
   Loads assets into memory or pre-fills caches ahead of a request.
 
 

@@ -1,7 +1,8 @@
 # ReviewSubmissionUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a review submission update request resource.
 
@@ -10,13 +11,13 @@ Attributes that describe a review submission update request resource.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionUpdateRequest.Data.Attributes
 ```
 
 #### Overview
 
-> **Note**: You can optionally add the attribute platform when using [`Modify a Review Submission`](patch-v1-reviewsubmissions-_id_.md).
+> **Note**: You can optionally add the attribute platform when using [`Modify a Review Submission`](../../patch-v1-reviewsubmissions-_id_.md).
 
 ## Properties
 

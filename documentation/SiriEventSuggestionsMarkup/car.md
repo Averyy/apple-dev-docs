@@ -1,7 +1,8 @@
 # Car
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A description of a rental vehicle.
 
@@ -10,20 +11,21 @@ A description of a rental vehicle.
 
 ## Declaration
 
-```swift
+```
 object Car
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `Car`
 - `brand` (Brand): The brand of the car.
 - `model` (string): The model of the car.
 - `name` (string) *(required)*: The rental tier or other information about the car.
 
 ## See Also
 
-- [object Brand](brand.md)
+### Defining a Rental Car Reservation
+- [object Brand](./brand.md)
   A car brand.
 
 

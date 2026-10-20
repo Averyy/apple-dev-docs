@@ -1,26 +1,28 @@
 # hidCountryCode
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t hidCountryCode;
 ```
 
 ## See Also
 
-- [descLen](iousbhiddescriptor/desclen.md)
-- [descType](iousbhiddescriptor/desctype.md)
-- [descVersNum](iousbhiddescriptor/descversnum.md)
-- [hidNumDescriptors](iousbhiddescriptor/hidnumdescriptors.md)
-- [hidDescriptorType](iousbhiddescriptor/hiddescriptortype.md)
-- [hidDescriptorLengthLo](iousbhiddescriptor/hiddescriptorlengthlo.md)
-- [hidDescriptorLengthHi](iousbhiddescriptor/hiddescriptorlengthhi.md)
+### Accessing the Descriptor Properties
+- [descLen](./desclen.md)
+- [descType](./desctype.md)
+- [descVersNum](./descversnum.md)
+- [hidNumDescriptors](./hidnumdescriptors.md)
+- [hidDescriptorType](./hiddescriptortype.md)
+- [hidDescriptorLengthLo](./hiddescriptorlengthlo.md)
+- [hidDescriptorLengthHi](./hiddescriptorlengthhi.md)
 
 
 ---

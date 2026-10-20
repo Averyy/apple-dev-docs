@@ -1,7 +1,8 @@
 # MLGazetteer.ModelParameters
 
 **Framework**: Create ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The model configuration parameters.
 
@@ -17,41 +18,42 @@ struct ModelParameters
 ## Topics
 
 ### Creating parameters
-- [init(language: NLLanguage?)](mlgazetteer/modelparameters-swift.struct/init(language:).md)
+- [init(language: NLLanguage?)](./modelparameters-swift.struct/init%28language%29.md)
   Creates model parameters.
 ### Accessing parameters
-- [var language: NLLanguage?](mlgazetteer/modelparameters-swift.struct/language.md)
+- [var language: NLLanguage?](./modelparameters-swift.struct/language.md)
   The language setting.
 ### Describing parameters
-- [var description: String](mlgazetteer/modelparameters-swift.struct/description.md)
+- [var description: String](./modelparameters-swift.struct/description.md)
   A text representation of the gazetteer settings.
-- [var debugDescription: String](mlgazetteer/modelparameters-swift.struct/debugdescription.md)
+- [var debugDescription: String](./modelparameters-swift.struct/debugdescription.md)
   A text representation of the gazetteer settings that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mlgazetteer/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./modelparameters-swift.struct/playgrounddescription.md)
   A description of the gazetteer settings shown in a playground.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](mlgazetteer/modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
-- [CustomPlaygroundDisplayConvertible Implementations](mlgazetteer/modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
-- [CustomStringConvertible Implementations](mlgazetteer/modelparameters-swift.struct/customstringconvertible-implementations.md)
+- [CustomDebugStringConvertible Implementations](./modelparameters-swift.struct/customdebugstringconvertible-implementations.md)
+- [CustomPlaygroundDisplayConvertible Implementations](./modelparameters-swift.struct/customplaygrounddisplayconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./modelparameters-swift.struct/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomPlaygroundDisplayConvertible](../swift/customplaygrounddisplayconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomPlaygroundDisplayConvertible](../../Swift/customplaygrounddisplayconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(dictionary: [String : [String]], parameters: MLGazetteer.ModelParameters) throws](mlgazetteer/init(dictionary:parameters:).md)
+### Creating a gazetteer
+- [init(dictionary: [String : [String]], parameters: MLGazetteer.ModelParameters) throws](./init%28dictionary,parameters%29.md)
   Creates a gazetteer from a dictionary of labels and terms.
-- [init(labeledData: MLDataTable, textColumn: String, labelColumn: String, parameters: MLGazetteer.ModelParameters) throws](mlgazetteer/init(labeleddata:textcolumn:labelcolumn:parameters:).md)
+- [init(labeledData: MLDataTable, textColumn: String, labelColumn: String, parameters: MLGazetteer.ModelParameters) throws](./init%28labeleddata,textcolumn,labelcolumn,parameters%29.md)
   Creates a gazetteer from a table of labels and terms.
-- [let modelParameters: MLGazetteer.ModelParameters](mlgazetteer/modelparameters-swift.property.md)
+- [let modelParameters: MLGazetteer.ModelParameters](./modelparameters-swift.property.md)
   The model configuration parameters.
 
 

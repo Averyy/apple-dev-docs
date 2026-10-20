@@ -1,14 +1,15 @@
 # current_thread_cred_label_get
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.4+
 
 ## Declaration
 
-```swift
+```c
 intptr_t current_thread_cred_label_get(int slot);
 ```
 

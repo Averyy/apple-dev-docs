@@ -1,14 +1,15 @@
 # kFWPhyPacketPhyIDPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kFWPhyPacketPhyIDPhase = FWBitRangePhase (2, 7)
 ```
 

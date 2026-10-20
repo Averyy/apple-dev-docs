@@ -1,7 +1,8 @@
 # sendDonation(_:_:)
 
 **Framework**: TipKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously donates an event along with its associated `Donation` value.
 
@@ -20,6 +21,8 @@ Asynchronously donates an event along with its associated `Donation` value.
 func sendDonation(_ donation: DonationInfo, _ completion: (@Sendable () -> Void)? = nil)
 ```
 
+Available when `DonationInfo` conforms to `Decodable`, `Encodable`, and `Sendable`.
+
 ## Parameters
 
 - `donation`: Associated donation value.
@@ -27,11 +30,12 @@ func sendDonation(_ donation: DonationInfo, _ completion: (@Sendable () -> Void)
 
 ## See Also
 
-- [func donate() async](tips/event/donate.md)
+### Add Donations
+- [func donate() async](./donate%28%29.md)
   Donates an event with no associated `Donation` value.
-- [func donate(DonationInfo) async](tips/event/donate(_:).md)
+- [func donate(DonationInfo) async](./donate%28_%29.md)
   Donates an event along with its associated `Donation` value.
-- [func sendDonation((() -> Void)?)](tips/event/senddonation(_:).md)
+- [func sendDonation((() -> Void)?)](./senddonation%28_%29.md)
   Asynchronously donates an event with no associated `Donation` value.
 
 

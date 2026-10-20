@@ -1,7 +1,8 @@
 # ProcessConstraint
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol to which a lightweight code requirement constraint conforms if you can use it in process code requirements.
 
@@ -23,38 +24,39 @@ protocol ProcessConstraint : Decodable, Encodable, Sendable
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [CodeDirectoryHash](codedirectoryhash.md)
-- [EntitlementsQuery](entitlementsquery.md)
-- [InfoPlistHash](infoplisthash.md)
-- [IsInitProcess](isinitprocess.md)
-- [IsSIPProtected](issipprotected.md)
-- [PlatformType](platformtype.md)
-- [ProcessCodeSigningFlags](processcodesigningflags.md)
-- [SigningIdentifier](signingidentifier.md)
-- [TeamIdentifier](teamidentifier.md)
-- [TeamIdentifierMatchesCurrentProcess](teamidentifiermatchescurrentprocess.md)
-- [ValidationCategory](validationcategory.md)
+- [CodeDirectoryHash](./codedirectoryhash.md)
+- [EntitlementsQuery](./entitlementsquery.md)
+- [InfoPlistHash](./infoplisthash.md)
+- [IsInitProcess](./isinitprocess.md)
+- [IsSIPProtected](./issipprotected.md)
+- [PlatformType](./platformtype.md)
+- [ProcessCodeSigningFlags](./processcodesigningflags.md)
+- [SigningIdentifier](./signingidentifier.md)
+- [TeamIdentifier](./teamidentifier.md)
+- [TeamIdentifierMatchesCurrentProcess](./teamidentifiermatchescurrentprocess.md)
+- [ValidationCategory](./validationcategory.md)
 
 ## See Also
 
-- [func SecTaskValidateForRequirement(task: SecTask, requirement: ProcessCodeRequirement) throws -> Bool](sectaskvalidateforrequirement(task:requirement:).md)
+### Checking code requirements for running processes
+- [func SecTaskValidateForRequirement(task: SecTask, requirement: ProcessCodeRequirement) throws -> Bool](./sectaskvalidateforrequirement%28task,requirement%29.md)
   Tests whether a task’s executable satisfies a lightweight code requirement.
-- [struct ProcessCodeRequirement](processcoderequirement.md)
+- [struct ProcessCodeRequirement](./processcoderequirement.md)
   A lightweight code requirement that you use to evaluate a running process.
-- [func allOf(requirement: () -> [any ProcessConstraint]) -> any ProcessConstraint](allof(requirement:)-4k3ay.md)
+- [func allOf(requirement: () -> [any ProcessConstraint]) -> any ProcessConstraint](./allof%28requirement%29-4k3ay.md)
   Creates a constraint that requires a running process’s executable to satisfy all of the provided constraints.
-- [func anyOf(requirement: () -> [any ProcessConstraint]) -> any ProcessConstraint](anyof(requirement:)-vwhn.md)
+- [func anyOf(requirement: () -> [any ProcessConstraint]) -> any ProcessConstraint](./anyof%28requirement%29-vwhn.md)
   Creates a constraint that requires a running process’s executable to satisfy any of the provided constraints.
-- [struct ProcessCodeSigningFlags](processcodesigningflags.md)
+- [struct ProcessCodeSigningFlags](./processcodesigningflags.md)
   A constraint that matches the current code-signing flags of a process.
-- [struct ProcessConstraintBuilder](processconstraintbuilder.md)
+- [struct ProcessConstraintBuilder](./processconstraintbuilder.md)
   A custom parameter attribute that constructs process constraints from closures.
-- [struct TeamIdentifierMatchesCurrentProcess](teamidentifiermatchescurrentprocess.md)
+- [struct TeamIdentifierMatchesCurrentProcess](./teamidentifiermatchescurrentprocess.md)
   A constraint that matches if a process has the same team identifier as the calling process.
 
 

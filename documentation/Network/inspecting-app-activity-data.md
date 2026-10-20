@@ -1,6 +1,7 @@
 # Inspecting app activity data
 
-**Framework**: Network
+**Framework**: Network  
+**Role**: Article
 
 Verify that your app accesses only the user data and network resources that you expect it to access.
 
@@ -14,17 +15,17 @@ In iOS 15.2, iPadOS 15.2, and watchOS 8.3 or later, users can view a privacy rep
 
 Examine the data that your app contributes to this summary to find out what the report shows users, and to make sure that your app behaves as you expect.
 
-##### Start Recording App Activity
+##### Start recording app activity
 
 Users can enable app activity recording on their device from the Settings app by choosing Privacy > App Privacy Report, and then tapping Turn On App Privacy Report.
 
 The system keeps a record — stored only on the user’s device — of the last seven days of app activity. After turning on this feature on your own device, use your app to fully test its data, resource, and network accesses. Be sure to use the app for long enough to allow for any delayed accesses. How long depends on the behavior of your app. For example, if an analytics framework in your app caches data to avoid frequent server accesses, be sure to run your app until it experiences an analytics server access.
 
-##### Get the App Activity Data
+##### Get the app activity data
 
 After running your app for a while, you can get a report on your app’s activity by tapping the Share button on the App Privacy Report screen:
 
-![A screenshot of the Settings app showing the App Privacy Report view inside the Privacy section. A Share button in the upper right corner of the screen is highlighted.](/images/com.apple.network/media-3899243@2x.png)
+![A screenshot of the Settings app showing the App Privacy Report view inside the Privacy section. A Share button in the upper right corner of the screen is highlighted.](https://developer.apple.com/tutorials/images/com.apple.network/media-3899243@2x.png)
 
 Save the report to a location where you can examine it. For example, you can use AirDrop to send it to a nearby Mac.
 
@@ -39,7 +40,7 @@ The report uses a newline-delimited JSON format (NDJSON), which you can open wit
 ...
 ```
 
-##### Examine Resource Access Data
+##### Examine resource access data
 
 Each access dictionary in the file represents the start or end of an access made by a particular app. The following shows an example of this dictionary with whitespace, newlines, and comments added for readability:
 
@@ -82,7 +83,7 @@ The two dictionaries that bound an access interval have the same value for the `
 
 For the `screenRecording` category, the dictionary also includes a `broadcaster` key with a value that indicates the app broadcasting the screen to the accessor, which is typically Springboard.
 
-##### Examine Network Activity
+##### Examine network activity
 
 A file exported from iOS or iPadOS contains another set of dictionaries that have the `type` key with a value set to `networkActivity` to report network accesses. Each dictionary describes a connection made by a specified app to a particular domain. The following shows an example of this dictionary, again with whitespace and newlines added for clarity:
 
@@ -114,23 +115,24 @@ The dictionary includes the following keys to describe the network activity:
 - **`domainOwner`**: The owner of the domain, if applicable.
 - **`bundleID`**: The bundle identifier of the initiating app.
 
-When deciding how to set the value for the `initiatedType` key, the system attributes connections made from a web browser in your app, like when you instantiate an [`SFSafariViewController`](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller), to the user. Otherwise, the system considers any connection that your app makes with the [`URL Loading System`](https://developer.apple.com/documentation/foundation/url-loading-system), or lower-level interfaces like the [`Network`](Network.md) framework, as app-initiated. This includes user data that you load from a server in direct response to a user action.
+When deciding how to set the value for the `initiatedType` key, the system attributes connections made from a web browser in your app, like when you instantiate an [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md), to the user. Otherwise, the system considers any connection that your app makes with the [URL Loading System](../Foundation/url-loading-system.md), or lower-level interfaces like the [Network](./Network.md) framework, as app-initiated. This includes user data that you load from a server in direct response to a user action.
 
-You can change the associated value of this key when you make a general network request by setting a property. For example, when creating a [`URLRequest`](https://developer.apple.com/documentation/foundation/urlrequest), set the [`attribution`](https://developer.apple.com/documentation/foundation/urlrequest/attribution-swift.property) property; when using an [`NWConnection`](nwconnection.md) instance, call the [`nw_parameters_set_attribution(_:_:)`](nw_parameters_set_attribution(_:_:).md) function. However, only change the attribution for connections that the user directly and completely controls, such as when the user enters a URL or taps or clicks a URL that they can read. For more information about network attribution, see [`Indicating the source of network activity`](indicating-the-source-of-network-activity.md).
+You can change the associated value of this key when you make a general network request by setting a property. For example, when creating a [`URLRequest`](../Foundation/urlrequest.md), set the [`attribution`](../Foundation/urlrequest/attribution-swift.property.md) property; when using an [`NWConnection`](./nwconnection.md) instance, call the [`nw_parameters_set_attribution(_:_:)`](./nw_parameters_set_attribution%28_,_%29.md) function. However, only change the attribution for connections that the user directly and completely controls, such as when the user enters a URL or taps or clicks a URL that they can read. For more information about network attribution, see [Indicating the source of network activity](./indicating-the-source-of-network-activity.md).
 
-##### Consider Whether Your App Needs Changes
+##### Consider whether your app needs changes
 
 If you see that your app makes network connections that you don’t recognize, or accesses resources that it shouldn’t, review your app. Closely examine any third-party frameworks or modules that you’ve integrated because they might make unexpected connections.
 
 ## See Also
 
-- [Indicating the source of network activity](indicating-the-source-of-network-activity.md)
+### Traffic Attribution
+- [Indicating the source of network activity](./indicating-the-source-of-network-activity.md)
   Control whether the App Privacy Report attributes network traffic to the app or to the user.
-- [func nw_parameters_set_attribution(nw_parameters_t, nw_parameters_attribution_t)](nw_parameters_set_attribution(_:_:).md)
+- [func nw_parameters_set_attribution(nw_parameters_t, nw_parameters_attribution_t)](./nw_parameters_set_attribution%28_,_%29.md)
   Sets a flag that indicates whether the network request originates from the developer or the user.
-- [func nw_parameters_get_attribution(nw_parameters_t) -> nw_parameters_attribution_t](nw_parameters_get_attribution(_:).md)
+- [func nw_parameters_get_attribution(nw_parameters_t) -> nw_parameters_attribution_t](./nw_parameters_get_attribution%28_%29.md)
   Gets a flag that indicates whether the network request originates from the developer or the user.
-- [enum nw_parameters_attribution_t](nw_parameters_attribution_t.md)
+- [enum nw_parameters_attribution_t](./nw_parameters_attribution_t.md)
   The entities that can make a network request.
 
 

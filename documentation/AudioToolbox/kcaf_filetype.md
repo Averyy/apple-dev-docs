@@ -1,15 +1,16 @@
 # kCAF_FileType
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kCAF_FileType: UInt32 { get }
 ```
 
+```c
+kCAF_FileType
+```
+
 ## See Also
 
-- [var kCAF_FileVersion_Initial: UInt32](kcaf_fileversion_initial.md)
+### Constants
+- [var kCAF_FileVersion_Initial: UInt32](./kcaf_fileversion_initial.md)
 
 
 ---

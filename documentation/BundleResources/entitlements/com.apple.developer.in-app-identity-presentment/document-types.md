@@ -1,19 +1,28 @@
 # document-types
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 
+## Details
 
+- **Name**: `document-types`
+- **Type**: array of string 
 
-**Type**: string 
+## Possible Values
+
+- `us-drivers-license`
+- `jp-national-id-card`
+- `photo-id`
 
 ## See Also
 
-- [elements](entitlements/com.apple.developer.in-app-identity-presentment/elements.md)
+### Property List Keys
+- [elements](./elements.md)
 
 
 ---

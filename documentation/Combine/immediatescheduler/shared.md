@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared instance of the immediate scheduler.
 

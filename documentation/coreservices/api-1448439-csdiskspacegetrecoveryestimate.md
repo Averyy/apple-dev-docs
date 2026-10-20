@@ -1,7 +1,8 @@
 # CSDiskSpaceGetRecoveryEstimate(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSDiskSpaceGetRecoveryEstimate(_ volumeURL: CFURL!) -> UInt64
+```
+
+```c
+UInt64 CSDiskSpaceGetRecoveryEstimate(CFURLRef volumeURL);
 ```
 
 

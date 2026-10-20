@@ -1,7 +1,8 @@
 # finish()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates to the AVAssetWriter that no more buffers will be appended to this receiver.
 
@@ -21,9 +22,10 @@ func finish()
 
 ## See Also
 
-- [func append(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws](avassetwriterinput/samplebufferreceiver/append(_:).md)
+### Appending samples
+- [func append(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) async throws](./append%28_%29.md)
   Suspends until the input is ready for more media data, then appends the sample buffer.
-- [func appendImmediately(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) throws -> Bool](avassetwriterinput/samplebufferreceiver/appendimmediately(_:).md)
+- [func appendImmediately(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) throws -> Bool](./appendimmediately%28_%29.md)
   Appends the sample buffer synchronously if the input is ready for more media data.
 
 

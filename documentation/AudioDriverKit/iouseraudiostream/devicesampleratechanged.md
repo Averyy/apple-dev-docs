@@ -1,7 +1,8 @@
 # DeviceSampleRateChanged
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates stream formats, in response to the owning audio device changing its sample rate.
 
@@ -10,19 +11,19 @@ Updates stream formats, in response to the owning audio device changing its samp
 
 ## Declaration
 
-```swift
+```c
 kern_return_t DeviceSampleRateChanged(double in_sample_rate);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
 This method goes through all the available stream formats and selects the closet format with the matching sample rate.
 
-Calling this method results in a call to the stream’s [`HandleChangeCurrentStreamFormat`](iouseraudiostream/handlechangecurrentstreamformat.md) to update its format.
+Calling this method results in a call to the stream’s [`HandleChangeCurrentStreamFormat`](./handlechangecurrentstreamformat.md) to update its format.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ Calling this method results in a call to the stream’s [`HandleChangeCurrentStr
 
 ## See Also
 
-- [HandleChangeSampleRate](iouseraudiodevice/handlechangesamplerate.md)
+### Supporting Sample Rate Changes
+- [HandleChangeSampleRate](../iouseraudiodevice/handlechangesamplerate.md)
   Tells the device the sample rate is changing.
 
 

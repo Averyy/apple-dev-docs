@@ -1,7 +1,8 @@
 # handleAppMessage(_:completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handle messages sent by the tunnel provider extension’s containing app.
 
@@ -16,7 +17,15 @@ Handle messages sent by the tunnel provider extension’s containing app.
 ## Declaration
 
 ```swift
+func handleAppMessage(_ messageData: Data, completionHandler: (@Sendable (Data?) -> Void)? = nil)
+```
+
+```swift
 func handleAppMessage(_ messageData: Data) async -> Data?
+```
+
+```objc
+- (void) handleAppMessage:(NSData *) messageData completionHandler:(void (^)(NSData *responseData)) completionHandler;
 ```
 
 #### Discussion

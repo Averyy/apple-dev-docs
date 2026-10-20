@@ -1,9 +1,10 @@
 # keyLayoutFeatureInfoOffset
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-An unsigned 32-bit integer providing an offset to a structure of type [`UCKeyLayoutFeatureInfo`](uckeylayoutfeatureinfo.md), if such is used in the resource. May be 0 if no `UCKeyLayoutFeatureInfo` table is included in the resource.
+An unsigned 32-bit integer providing an offset to a structure of type [`UCKeyLayoutFeatureInfo`](../uckeylayoutfeatureinfo.md), if such is used in the resource. May be 0 if no `UCKeyLayoutFeatureInfo` table is included in the resource.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ An unsigned 32-bit integer providing an offset to a structure of type [`UCKeyLay
 
 ```swift
 var keyLayoutFeatureInfoOffset: UInt32
+```
+
+```c
+UInt32 keyLayoutFeatureInfoOffset;
 ```
 
 

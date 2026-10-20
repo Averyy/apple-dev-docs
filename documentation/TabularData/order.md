@@ -1,7 +1,8 @@
 # Order
 
 **Framework**: TabularData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents a sort ordering.
 
@@ -23,26 +24,27 @@ enum Order
 ## Topics
 
 ### Getting the Properties
-- [Order.ascending](order/ascending.md)
+- [Order.ascending](./order/ascending.md)
   A sort ordering that starts with the lowest value and monotonically proceeds to higher values.
-- [Order.descending](order/descending.md)
+- [Order.descending](./order/descending.md)
   A sort ordering that starts with the highest value and monotonically proceeds to lower values.
-- [func areOrdered<T>(T, T) -> Bool](order/areordered(_:_:).md)
+- [func areOrdered<T>(T, T) -> Bool](./order/areordered%28_,_%29.md)
   Returns a Boolean that indicates whether the comparable types match the order’s state.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ColumnID](columnid.md)
+### Supporting Types
+- [struct ColumnID](./columnid.md)
   A column identifier that stores a column’s name and the type of its elements.
-- [struct FormattingOptions](formattingoptions.md)
+- [struct FormattingOptions](./formattingoptions.md)
   A set of parameters that indicate how to present the contents of data frame or column types to a printable string.
 
 

@@ -1,7 +1,8 @@
 # init(rootItem:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an activate result instance.
 
@@ -14,17 +15,22 @@ Creates an activate result instance.
 init?(rootItem: FSItem)
 ```
 
+```objc
+- (instancetype) initWithRootItem:(FSItem *) rootItem;
+```
+
 #### Return Value
 
 A populated result instance, or `nil` if validation fails.
 
 ## Parameters
 
-- `rootItem`: The root [`FSItem`](fsitem.md) of the volume.
+- `rootItem`: The root [`FSItem`](../fsitem.md) of the volume.
 
 ## See Also
 
-- [class FSItem](fsitem.md)
+### Creating an activate result
+- [class FSItem](../fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
 
 

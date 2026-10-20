@@ -1,7 +1,8 @@
 # init(presenceEventType:presenceUserType:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new presence event with the specified event and user presence types.
 
@@ -17,6 +18,10 @@ Creates a new presence event with the specified event and user presence types.
 
 ```swift
 init(presenceEventType: HMPresenceEventType, presenceUserType: HMPresenceEventUserType)
+```
+
+```objc
+- (instancetype) initWithPresenceEventType:(HMPresenceEventType) presenceEventType presenceUserType:(HMPresenceEventUserType) presenceUserType;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # current
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An object that represents the current device.
 
@@ -9,7 +10,7 @@ An object that represents the current device.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,17 @@ An object that represents the current device.
 class var current: UIDevice { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) UIDevice * currentDevice;
+```
+
 #### Return Value
 
 A singleton object that represents the current device.
 
 #### Discussion
 
-You access the properties of the returned [`UIDevice`](uidevice.md) instance to obtain information about the device. You must instantiate the [`UIDevice`](uidevice.md) instance before registering to receive device notifications.
+You access the properties of the returned [`UIDevice`](../uidevice.md) instance to obtain information about the device. You must instantiate the [`UIDevice`](../uidevice.md) instance before registering to receive device notifications.
 
 
 ---

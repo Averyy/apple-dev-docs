@@ -1,7 +1,8 @@
 # isUnifiedWithContact(withIdentifier:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean indicating whether the current contact is a unified contact and includes a contact with the specified identifier.
 
@@ -19,21 +20,26 @@ Returns a Boolean indicating whether the current contact is a unified contact an
 func isUnifiedWithContact(withIdentifier contactIdentifier: String) -> Bool
 ```
 
+```objc
+- (BOOL) isUnifiedWithContactWithIdentifier:(NSString *) contactIdentifier;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the current contact is a unified contact and if `contactIdentifier` represents one of the contacts that contributes to the unified information; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the current contact is a unified contact and if `contactIdentifier` represents one of the contacts that contributes to the unified information; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
-- `contactIdentifier`: An identifier for an existing contact. If this string is empty, the method returns [`false`](https://developer.apple.com/documentation/swift/false).
+- `contactIdentifier`: An identifier for an existing contact. If this string is empty, the method returns [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [class func descriptorForAllComparatorKeys() -> any CNKeyDescriptor](cncontact/descriptorforallcomparatorkeys.md)
+### Comparing Contacts
+- [class func descriptorForAllComparatorKeys() -> any CNKeyDescriptor](./descriptorforallcomparatorkeys%28%29.md)
   Fetches all the keys required for the contact sort comparator.
-- [class func comparator(forNameSortOrder: CNContactSortOrder) -> Comparator](cncontact/comparator(fornamesortorder:).md)
+- [class func comparator(forNameSortOrder: CNContactSortOrder) -> Comparator](./comparator%28fornamesortorder%29.md)
   Returns a comparator to sort contacts with the specified order.
-- [enum CNContactSortOrder](cncontactsortorder.md)
+- [enum CNContactSortOrder](../cncontactsortorder.md)
   Indicates the sorting order for contacts.
 
 

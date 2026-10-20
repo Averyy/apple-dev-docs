@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a menu identifier with the specified raw value.
 
@@ -20,7 +21,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](uimenu/identifier-swift.struct/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Creates a menu identifier.
 
 

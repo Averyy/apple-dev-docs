@@ -2,17 +2,20 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates an argument encoder and returns reflection information for an argument buffer that’s one of this function’s arguments
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 16.0
+- iPadOS 11.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- macOS 10.13+ - Deprecated in 13.0
+- tvOS 11.0+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use the [`makeArgumentEncoder(bufferBinding:)`](../mtldevice/makeargumentencoder%28bufferbinding%29.md) method of an [`MTLDevice`](../mtldevice.md) instance.
 
 ## Declaration
 
@@ -20,9 +23,13 @@ Creates an argument encoder and returns reflection information for an argument b
 func makeArgumentEncoder(bufferIndex: Int, reflection: AutoreleasingUnsafeMutablePointer<MTLAutoreleasedArgument?>?) -> any MTLArgumentEncoder
 ```
 
+```objc
+- (id<MTLArgumentEncoder>) newArgumentEncoderWithBufferIndex:(NSUInteger) bufferIndex reflection:(MTLAutoreleasedArgument*) reflection;
+```
+
 #### Discussion
 
-Resources encoded into an argument buffer by the [`MTLArgumentEncoder`](mtlargumentencoder.md) object need to match the structure of the argument buffer located at the function’s specified buffer index.
+Resources encoded into an argument buffer by the [`MTLArgumentEncoder`](../mtlargumentencoder.md) object need to match the structure of the argument buffer located at the function’s specified buffer index.
 
 ## Parameters
 
@@ -31,7 +38,8 @@ Resources encoded into an argument buffer by the [`MTLArgumentEncoder`](mtlargum
 
 ## See Also
 
-- [func makeArgumentEncoder(bufferIndex: Int) -> any MTLArgumentEncoder](mtlfunction/makeargumentencoder(bufferindex:).md)
+### Creating argument encoders
+- [func makeArgumentEncoder(bufferIndex: Int) -> any MTLArgumentEncoder](./makeargumentencoder%28bufferindex%29.md)
   Creates an argument encoder for an argument buffer that’s one of this function’s arguments.
 
 

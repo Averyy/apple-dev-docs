@@ -1,7 +1,8 @@
 # restoreUserActivityState(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Restores the state needed to continue the given user activity.
 
@@ -9,7 +10,7 @@ Restores the state needed to continue the given user activity.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Restores the state needed to continue the given user activity.
 func restoreUserActivityState(_ activity: NSUserActivity)
 ```
 
+```objc
+- (void) restoreUserActivityState:(NSUserActivity *) activity;
+```
+
 #### Discussion
 
-Subclasses override this method to restore the responder’s state with the given user activity. The system calls it on any objects passed to the restoration handler given to [`application(_:continue:restorationHandler:)`](uiapplicationdelegate/application(_:continue:restorationhandler:).md). The override should use the state data contained in the given user activity’s `userInfo` dictionary to restore the object.
+Subclasses override this method to restore the responder’s state with the given user activity. The system calls it on any objects passed to the restoration handler given to [`application(_:continue:restorationHandler:)`](../uiapplicationdelegate/application%28_,continue,restorationhandler%29.md). The override should use the state data contained in the given user activity’s `userInfo` dictionary to restore the object.
 
 You may also call this method directly if the app delegate chooses not to use the restoration handler.
 
@@ -30,9 +35,10 @@ You may also call this method directly if the app delegate chooses not to use th
 
 ## See Also
 
-- [var userActivity: NSUserActivity?](uiresponder/useractivity.md)
+### Supporting user activities
+- [var userActivity: NSUserActivity?](./useractivity.md)
   An object encapsulating a user activity supported by this responder.
-- [func updateUserActivityState(NSUserActivity)](uiresponder/updateuseractivitystate(_:).md)
+- [func updateUserActivityState(NSUserActivity)](./updateuseractivitystate%28_%29.md)
   Updates the state of the given user activity.
 
 

@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentHeaterCoolerState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the current state of a device that heats or cools.
 
@@ -19,29 +20,33 @@ Possible values for the current state of a device that heats or cools.
 enum HMCharacteristicValueCurrentHeaterCoolerState
 ```
 
+```c
+enum HMCharacteristicValueCurrentHeaterCoolerState : NSInteger;
+```
+
 ## Topics
 
 ### Current State
-- [HMCharacteristicValueCurrentHeaterCoolerState.inactive](hmcharacteristicvaluecurrentheatercoolerstate/inactive.md)
+- [HMCharacteristicValueCurrentHeaterCoolerState.inactive](./hmcharacteristicvaluecurrentheatercoolerstate/inactive.md)
   The accessory is inactive.
-- [HMCharacteristicValueCurrentHeaterCoolerState.idle](hmcharacteristicvaluecurrentheatercoolerstate/idle.md)
+- [HMCharacteristicValueCurrentHeaterCoolerState.idle](./hmcharacteristicvaluecurrentheatercoolerstate/idle.md)
   The accessory is idle.
-- [HMCharacteristicValueCurrentHeaterCoolerState.heating](hmcharacteristicvaluecurrentheatercoolerstate/heating.md)
+- [HMCharacteristicValueCurrentHeaterCoolerState.heating](./hmcharacteristicvaluecurrentheatercoolerstate/heating.md)
   The accessory is actively heating.
-- [HMCharacteristicValueCurrentHeaterCoolerState.cooling](hmcharacteristicvaluecurrentheatercoolerstate/cooling.md)
+- [HMCharacteristicValueCurrentHeaterCoolerState.cooling](./hmcharacteristicvaluecurrentheatercoolerstate/cooling.md)
   The accessory is actively cooling.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluecurrentheatercoolerstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluecurrentheatercoolerstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

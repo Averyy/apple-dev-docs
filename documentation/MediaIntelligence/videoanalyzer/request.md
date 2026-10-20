@@ -1,7 +1,8 @@
 # VideoAnalyzer.Request
 
 **Framework**: Media Intelligence  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that describes a video analysis operation.
 
@@ -21,29 +22,30 @@ protocol Request : Sendable
 
 #### Overview
 
-The framework provides two built-in request types: [`HighlightAnalysisRequest`](highlightanalysisrequest.md) and [`KeyFrameAnalysisRequest`](keyframeanalysisrequest.md).
+The framework provides two built-in request types: [`HighlightAnalysisRequest`](../highlightanalysisrequest.md) and [`KeyFrameAnalysisRequest`](../keyframeanalysisrequest.md).
 
 ## Topics
 
 ### Associated Types
-- [associatedtype Result : VideoAnalyzer.Result](videoanalyzer/request/result.md)
+- [associatedtype Result : VideoAnalyzer.Result](./request/result.md)
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 ### Conforming Types
-- [HighlightAnalysisRequest](highlightanalysisrequest.md)
-- [KeyFrameAnalysisRequest](keyframeanalysisrequest.md)
+- [HighlightAnalysisRequest](../highlightanalysisrequest.md)
+- [KeyFrameAnalysisRequest](../keyframeanalysisrequest.md)
 
 ## See Also
 
-- [static let shared: VideoAnalyzer](videoanalyzer/shared.md)
+### Analyzing a video asset
+- [static let shared: VideoAnalyzer](./shared.md)
   The shared video analyzer.
-- [VideoAnalyzer.Result](videoanalyzer/result.md)
+- [VideoAnalyzer.Result](./result.md)
   A type that represents the output of a video analysis operation.
-- [func analyze<each T>(MediaIntelligenceVideoAsset, for: repeat each T) async throws -> (repeat Result<(each T).Result, any Error>)](videoanalyzer/analyze(_:for:).md)
+- [func analyze<each T>(MediaIntelligenceVideoAsset, for: repeat each T) async throws -> (repeat Result<(each T).Result, any Error>)](./analyze%28_,for%29.md)
   Analyzes a video asset using the specified requests.
 
 

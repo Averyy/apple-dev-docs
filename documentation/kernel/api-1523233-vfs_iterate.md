@@ -1,7 +1,8 @@
 # vfs_iterate
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Iterate over all mountpoints with a callback. Used, for example, by sync().
 
@@ -10,11 +11,11 @@ Iterate over all mountpoints with a callback. Used, for example, by sync().
 
 ## Declaration
 
-```swift
+```c
 int vfs_iterate(int flags, int (*callout)(struct mount *, void *), void *arg);
 ```
 
-#### Return_value
+#### Return Value
 
 0 for success, else an error code.
 

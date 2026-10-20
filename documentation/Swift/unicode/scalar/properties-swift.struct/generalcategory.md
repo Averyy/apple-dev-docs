@@ -1,7 +1,8 @@
 # generalCategory
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The general category (most usual classification) of the scalar.
 
@@ -22,7 +23,7 @@ var generalCategory: Unicode.GeneralCategory { get }
 
 #### Discussion
 
-This property corresponds to the “General_Category” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “General_Category” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

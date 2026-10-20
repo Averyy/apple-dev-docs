@@ -1,7 +1,8 @@
 # depth
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The depth output texture. Corresponds to `MTLRenderPassDepthAttachmentDescriptor.texture`.
 

@@ -1,17 +1,24 @@
 # purpose
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An app-provided string that describes the reason for using location services.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 11.0
+
+> **Deprecated**: Set the purpose string using the [`NSLocationWhenInUseUsageDescription`](../../BundleResources/information-property-list/nslocationwheninuseusagedescription.md) key in the app’s `Info.plist` instead.
 
 ## Declaration
 
 ```swift
 var purpose: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * purpose;
 ```
 
 #### Discussion
@@ -22,11 +29,12 @@ You must set the value of this property prior to starting any location services.
 
 ## See Also
 
-- [var headingAvailable: Bool](cllocationmanager/headingavailable-swift.property.md)
+### Properties
+- [var headingAvailable: Bool](./headingavailable-swift.property.md)
   A Boolean value indicating whether the location manager is able to generate heading-related events.
-- [var locationServicesEnabled: Bool](cllocationmanager/locationservicesenabled-swift.property.md)
+- [var locationServicesEnabled: Bool](./locationservicesenabled-swift.property.md)
   A Boolean value indicating whether location services are enabled on the device.
-- [var rangedRegions: Set<CLRegion>](cllocationmanager/rangedregions.md)
+- [var rangedRegions: Set<CLRegion>](./rangedregions.md)
   The set of regions currently being tracked using ranging.
 
 

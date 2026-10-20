@@ -1,7 +1,8 @@
 # fixedLayout(width:height:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Center the preview in a fixed size container with the given dimensions.
 
@@ -21,17 +22,20 @@ Center the preview in a fixed size container with the given dimensions.
 static func fixedLayout(width: CGFloat, height: CGFloat) -> PreviewTrait<T>
 ```
 
+Available when `T` is `Preview.ViewTraits`.
+
 #### Discussion
 
-This is the same as [`PreviewLayout.fixed(width:height:)`](previewlayout/fixed(width:height:).md).
+This is the same as [`PreviewLayout.fixed(width:height:)`](../previewlayout/fixed%28width,height%29.md).
 
 ## See Also
 
-- [static var defaultLayout: PreviewTrait<Preview.ViewTraits>](previewtrait/defaultlayout.md)
+### Getting a layout
+- [static var defaultLayout: PreviewTrait<Preview.ViewTraits>](./defaultlayout.md)
   Center the preview in a container the size of the device on which the preview is running.
-- [static func fixedLayout(width: CGFloat, height: CGFloat, depth: CGFloat) -> PreviewTrait<T>](previewtrait/fixedlayout(width:height:depth:).md)
+- [static func fixedLayout(width: CGFloat, height: CGFloat, depth: CGFloat) -> PreviewTrait<T>](./fixedlayout%28width,height,depth%29.md)
   Centers the preview in a fixed-size, 3D container.
-- [static var sizeThatFitsLayout: PreviewTrait<Preview.ViewTraits>](previewtrait/sizethatfitslayout.md)
+- [static var sizeThatFitsLayout: PreviewTrait<Preview.ViewTraits>](./sizethatfitslayout.md)
   Fit the container to the size of the preview when offered the size of the device that the preview is running on.
 
 

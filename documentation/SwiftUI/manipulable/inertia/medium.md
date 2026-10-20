@@ -1,7 +1,8 @@
 # medium
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A view has medium inertia and medium resistance to being manipulated.
 

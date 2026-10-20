@@ -1,7 +1,8 @@
 # MTROccupancySensingFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -18,31 +19,35 @@
 struct MTROccupancySensingFeature
 ```
 
+```c
+enum MTROccupancySensingFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtroccupancysensingfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtroccupancysensingfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var activeInfrared: MTROccupancySensingFeature](mtroccupancysensingfeature/activeinfrared.md)
-- [static var other: MTROccupancySensingFeature](mtroccupancysensingfeature/other.md)
-- [static var passiveInfrared: MTROccupancySensingFeature](mtroccupancysensingfeature/passiveinfrared.md)
-- [static var physicalContact: MTROccupancySensingFeature](mtroccupancysensingfeature/physicalcontact.md)
-- [static var radar: MTROccupancySensingFeature](mtroccupancysensingfeature/radar.md)
-- [static var rfSensing: MTROccupancySensingFeature](mtroccupancysensingfeature/rfsensing.md)
-- [static var ultrasonic: MTROccupancySensingFeature](mtroccupancysensingfeature/ultrasonic.md)
-- [static var vision: MTROccupancySensingFeature](mtroccupancysensingfeature/vision.md)
+- [static var activeInfrared: MTROccupancySensingFeature](./mtroccupancysensingfeature/activeinfrared.md)
+- [static var other: MTROccupancySensingFeature](./mtroccupancysensingfeature/other.md)
+- [static var passiveInfrared: MTROccupancySensingFeature](./mtroccupancysensingfeature/passiveinfrared.md)
+- [static var physicalContact: MTROccupancySensingFeature](./mtroccupancysensingfeature/physicalcontact.md)
+- [static var radar: MTROccupancySensingFeature](./mtroccupancysensingfeature/radar.md)
+- [static var rfSensing: MTROccupancySensingFeature](./mtroccupancysensingfeature/rfsensing.md)
+- [static var ultrasonic: MTROccupancySensingFeature](./mtroccupancysensingfeature/ultrasonic.md)
+- [static var vision: MTROccupancySensingFeature](./mtroccupancysensingfeature/vision.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

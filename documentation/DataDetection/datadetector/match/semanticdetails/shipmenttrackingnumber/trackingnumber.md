@@ -1,7 +1,8 @@
 # trackingNumber
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number the carrier uses to track the package.
 
@@ -22,9 +23,10 @@ let trackingNumber: String
 
 ## See Also
 
-- [let carrier: String](datadetector/match/semanticdetails/shipmenttrackingnumber/carrier.md)
+### Properties that describe a shipment
+- [let carrier: String](./carrier.md)
   A string that represents the carrier or service name.
-- [let trackingURL: URL?](datadetector/match/semanticdetails/shipmenttrackingnumber/trackingurl.md)
+- [let trackingURL: URL?](./trackingurl.md)
   A property that may contain a URL that someone can use to track the progress of the delivery.
 
 

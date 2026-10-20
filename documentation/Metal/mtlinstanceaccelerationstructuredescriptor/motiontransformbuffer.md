@@ -1,7 +1,8 @@
 # motionTransformBuffer
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A buffer that contains descriptions of each motion transform in the acceleration structure.
 
@@ -19,11 +20,16 @@ A buffer that contains descriptions of each motion transform in the acceleration
 var motionTransformBuffer: (any MTLBuffer)? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) id<MTLBuffer> motionTransformBuffer;
+```
+
 ## See Also
 
-- [var motionTransformCount: Int](mtlinstanceaccelerationstructuredescriptor/motiontransformcount.md)
+### Specifying motion data
+- [var motionTransformCount: Int](./motiontransformcount.md)
   The number of motion transforms in the motion transform buffer.
-- [var motionTransformBufferOffset: Int](mtlinstanceaccelerationstructuredescriptor/motiontransformbufferoffset.md)
+- [var motionTransformBufferOffset: Int](./motiontransformbufferoffset.md)
   The offset, in bytes, to the descripton of the first motion transform.
 
 

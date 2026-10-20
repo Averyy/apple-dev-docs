@@ -1,7 +1,8 @@
 # image
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image for the poster view.
 
@@ -14,17 +15,22 @@ The image for the poster view.
 var image: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * image;
+```
+
 #### Discussion
 
 The size of the poster view is determined by the natural size of the supplied image when no frame or content size is explicitly set.
 
 ## See Also
 
-- [var imageView: UIImageView](tvposterview/imageview.md)
+### Configuring a Poster View
+- [var imageView: UIImageView](./imageview.md)
   The image view associated with the poster view.
-- [var title: String?](tvposterview/title.md)
+- [var title: String?](./title.md)
   The title for the poster view.
-- [var subtitle: String?](tvposterview/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The subtitle for the poster view.
 
 

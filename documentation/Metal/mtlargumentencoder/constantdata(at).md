@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a pointer to an inline, constant-data argument within the argument buffer.
@@ -18,6 +19,10 @@ Returns a pointer to an inline, constant-data argument within the argument buffe
 
 ```swift
 func constantData(at index: Int) -> UnsafeMutableRawPointer
+```
+
+```objc
+- (void *) constantDataAtIndex:(NSUInteger) index;
 ```
 
 #### Return Value
@@ -55,7 +60,7 @@ memcpy(destinationPointer, sourceConstants, sizeof(SourceConstants));
 
 ## Parameters
 
-- `index`: The index of an inline, constant-data argument within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
+- `index`: The index of an inline, constant-data argument within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instance.
 
 
 ---

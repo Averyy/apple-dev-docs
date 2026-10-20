@@ -1,7 +1,8 @@
 # DDDevice
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a discovered device of interest.
 
@@ -9,7 +10,7 @@ An object that describes a discovered device of interest.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,103 +19,108 @@ An object that describes a discovered device of interest.
 class DDDevice
 ```
 
+```objc
+@interface DDDevice : NSObject
+```
+
 #### Overview
 
-The extension creates an instance of this class for a discovered device of interest and passes it to the system for display in the device picker UI ([`AVRoutePickerView`](https://developer.apple.com/documentation/avkit/avroutepickerview)).
+The extension creates an instance of this class for a discovered device of interest and passes it to the system for display in the device picker UI ([`AVRoutePickerView`](../AVKit/avroutepickerview.md)).
 
-The extension discovers devices through either Core Bluetooth or the local network (that is, using [`Bonjour`](https://developer.apple.com/documentation/foundation/bonjour)).
+The extension discovers devices through either Core Bluetooth or the local network (that is, using [Bonjour](../Foundation/bonjour.md)).
 
 For device discovery extensions of third-party media receivers, an instance of this class corresponds to the media receiver of interest.
 
-The extension reports the status of discovered devices to the system using the [`report(_:)`](dddiscoverysession/report(_:).md) function, and it receives status updates about the device from the system by implementing [`didReceiveEvent(_:)`](dddiscoveryextension/didreceiveevent(_:).md).
+The extension reports the status of discovered devices to the system using the [`report(_:)`](./dddiscoverysession/report%28_%29.md) function, and it receives status updates about the device from the system by implementing [`didReceiveEvent(_:)`](./dddiscoveryextension/didreceiveevent%28_%29.md).
 
 ## Topics
 
 ### Initializing a device
-- [init(displayName: String, category: DDDevice.Category, protocolType: UTType, identifier: String)](dddevice/init(displayname:category:protocoltype:identifier:).md)
+- [init(displayName: String, category: DDDevice.Category, protocolType: UTType, identifier: String)](./dddevice/init%28displayname,category,protocoltype,identifier%29.md)
   Creates an object that describes a discovered device.
 ### Identifying the device
-- [var displayName: String](dddevice/displayname.md)
+- [var displayName: String](./dddevice/displayname.md)
   A name for the device to display to the user.
-- [var identifier: String](dddevice/identifier.md)
+- [var identifier: String](./dddevice/identifier.md)
   A unique identifier for the device.
-- [var category: DDDevice.Category](dddevice/category-swift.property.md)
+- [var category: DDDevice.Category](./dddevice/category-swift.property.md)
   An option that determies the icon that the picker UI displays for the device.
-- [DDDevice.Category](dddevice/category-swift.enum.md)
+- [DDDevice.Category](./dddevice/category-swift.enum.md)
   An option that determines the icon for the device in the picker UI.
 ### Indicating the protocol
-- [var `protocol`: DDDevice.Protocol](dddevice/protocol-swift.property.md)
+- [var `protocol`: DDDevice.Protocol](./dddevice/protocol-swift.property.md)
   The manner in which the system applies your app’s device discovery extension.
-- [DDDevice.Protocol](dddevice/protocol-swift.enum.md)
+- [DDDevice.Protocol](./dddevice/protocol-swift.enum.md)
   An identifier for the manner in which an app interacts with a device.
-- [var protocolType: UTType](dddevice/protocoltype.md)
+- [var protocolType: UTType](./dddevice/protocoltype.md)
   A custom universal type that describes the device’s manner of communication with the extension.
-- [var bluetoothIdentifier: UUID?](dddevice/bluetoothidentifier.md)
+- [var bluetoothIdentifier: UUID?](./dddevice/bluetoothidentifier.md)
   An identifier to communicate with the device through Bluetooth wireless technology.
-- [var networkEndpoint: NWEndpoint?](dddevice/networkendpoint-3lah1.md)
+- [var networkEndpoint: NWEndpoint?](./dddevice/networkendpoint-3lah1.md)
   An object that describes a local-network device.
 ### Setting the device state
-- [var state: DDDeviceState](dddevice/state.md)
+- [var state: DDDeviceState](./dddevice/state.md)
   A state that represents the level of user interaction with the device.
-- [var txtRecord: NWTXTRecord?](dddevice/txtrecord.md)
+- [var txtRecord: NWTXTRecord?](./dddevice/txtrecord.md)
   A dictionary of metadata for the device that the extension communicates with over the local network.
-- [var url: URL](dddevice/url.md)
+- [var url: URL](./dddevice/url.md)
   A resource locator for the simple service discovery protocol.
-- [var supportsGrouping: Bool](dddevice/supportsgrouping.md)
+- [var supportsGrouping: Bool](./dddevice/supportsgrouping.md)
   A Boolean value that indicates whether to group the device with others in the AirPlay UI.
 ### Communicating device content and playback status
-- [var mediaContentTitle: String?](dddevice/mediacontenttitle.md)
+- [var mediaContentTitle: String?](./dddevice/mediacontenttitle.md)
   A title for the current media that the device plays.
-- [var mediaContentSubtitle: String?](dddevice/mediacontentsubtitle.md)
+- [var mediaContentSubtitle: String?](./dddevice/mediacontentsubtitle.md)
   A subtitle for the current media that the device plays.
-- [var mediaPlaybackState: DDDevice.MediaPlaybackState](dddevice/mediaplaybackstate-swift.property.md)
+- [var mediaPlaybackState: DDDevice.MediaPlaybackState](./dddevice/mediaplaybackstate-swift.property.md)
   A playback status for the device’s current media.
-- [DDDevice.MediaPlaybackState](dddevice/mediaplaybackstate-swift.enum.md)
+- [DDDevice.MediaPlaybackState](./dddevice/mediaplaybackstate-swift.enum.md)
   States that indicate the status of a device’s media playback.
 ### Instance Properties
-- [var deviceSupports: DDDeviceSupports](dddevice/devicesupports.md)
-- [var displayImageName: String?](dddevice/displayimagename.md)
-- [var ssid: String?](dddevice/ssid.md)
-- [var wifiAwareModelName: String?](dddevice/wifiawaremodelname.md)
+- [var deviceSupports: DDDeviceSupports](./dddevice/devicesupports.md)
+- [var displayImageName: String?](./dddevice/displayimagename.md)
+- [var ssid: String?](./dddevice/ssid.md)
+- [var wifiAwareModelName: String?](./dddevice/wifiawaremodelname.md)
   Device’s Wi-Fi Aware model name.
-- [var wifiAwareServiceName: String?](dddevice/wifiawareservicename.md)
+- [var wifiAwareServiceName: String?](./dddevice/wifiawareservicename.md)
   Device’s Wi-Fi Aware’s service name.
-- [var wifiAwareServiceRole: DDDevice.WiFiAwareServiceRole](dddevice/wifiawareservicerole-swift.property.md)
+- [var wifiAwareServiceRole: DDDevice.WiFiAwareServiceRole](./dddevice/wifiawareservicerole-swift.property.md)
   Device’s Wi-Fi Aware’s service. Default is `DDDeviceWiFiAwareServiceRoleSubscriber`
-- [var wifiAwareVendorName: String?](dddevice/wifiawarevendorname.md)
+- [var wifiAwareVendorName: String?](./dddevice/wifiawarevendorname.md)
   Device’s Wi-Fi Aware vendor name.
 ### Enumerations
-- [DDDevice.WiFiAwareServiceRole](dddevice/wifiawareservicerole-swift.enum.md)
+- [DDDevice.WiFiAwareServiceRole](./dddevice/wifiawareservicerole-swift.enum.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [DDDevice.Category](dddevice/category-swift.enum.md)
+### Device information
+- [DDDevice.Category](./dddevice/category-swift.enum.md)
   An option that determines the icon for the device in the picker UI.
-- [enum DDDeviceState](dddevicestate.md)
+- [enum DDDeviceState](./dddevicestate.md)
   A state that represents the level of user interaction with the device.
-- [func DDDeviceCategoryToString(DDDevice.Category) -> String](dddevicecategorytostring(_:).md)
+- [func DDDeviceCategoryToString(DDDevice.Category) -> String](./dddevicecategorytostring%28_%29.md)
   Returns human-readable text for the specified identifier that describes a device’s category.
-- [func DDDeviceStateToString(DDDeviceState) -> String](dddevicestatetostring(_:).md)
+- [func DDDeviceStateToString(DDDeviceState) -> String](./dddevicestatetostring%28_%29.md)
   Returns human-readable text for the specified identifier that describes a device’s status.
-- [DDDevice.Protocol](dddevice/protocol-swift.enum.md)
+- [DDDevice.Protocol](./dddevice/protocol-swift.enum.md)
   An identifier for the manner in which an app interacts with a device.
-- [func DDDeviceProtocolToString(DDDevice.Protocol) -> String](dddeviceprotocoltostring(_:).md)
+- [func DDDeviceProtocolToString(DDDevice.Protocol) -> String](./dddeviceprotocoltostring%28_%29.md)
   Returns human-readable text for the specified protocol identifier.
-- [struct DDDeviceProtocolString](dddeviceprotocolstring.md)
+- [struct DDDeviceProtocolString](./dddeviceprotocolstring.md)
   String values for the manner in which an app interacts with a device.
-- [func DDDeviceMediaPlaybackStateToString(DDDevice.MediaPlaybackState) -> String](dddevicemediaplaybackstatetostring(_:).md)
+- [func DDDeviceMediaPlaybackStateToString(DDDevice.MediaPlaybackState) -> String](./dddevicemediaplaybackstatetostring%28_%29.md)
   Returns human-readable text for the specified media playback state.
 
 

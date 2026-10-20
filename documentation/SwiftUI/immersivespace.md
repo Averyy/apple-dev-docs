@@ -1,7 +1,8 @@
 # ImmersiveSpace
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scene that presents its content in an unbounded space.
 
@@ -30,11 +31,11 @@ struct SolarSystemApp: App {
 }
 ```
 
-If you want to create a bounded scene instead, use one of the types that creates a window or a volume, like [`WindowGroup`](windowgroup.md) or [`DocumentGroup`](documentgroup.md).
+If you want to create a bounded scene instead, use one of the types that creates a window or a volume, like [`WindowGroup`](./windowgroup.md) or [`DocumentGroup`](./documentgroup.md).
 
-##### Style the Immersive Space
+##### Style the immersive space
 
-By default, immersive spaces use the [`mixed`](immersionstyle/mixed.md) style which places virtual content in a person’s surroundings. You can select a different style for the immersive space by adding the [`immersionStyle(selection:in:)`](scene/immersionstyle(selection:in:).md) scene modifier to the scene. For example, you can completely control the visual experience using the [`full`](immersionstyle/full.md) immersion style:
+By default, immersive spaces use the [`mixed`](./immersionstyle/mixed.md) style which places virtual content in a person’s surroundings. You can select a different style for the immersive space by adding the [`immersionStyle(selection:in:)`](./scene/immersionstyle%28selection,in%29.md) scene modifier to the scene. For example, you can completely control the visual experience using the [`full`](./immersionstyle/full.md) immersion style:
 
 ```swift
 @main
@@ -52,10 +53,10 @@ struct SolarSystemApp: App {
 
 You can change the immersion style after presenting the immersive space by changing the modifier’s `selection` input, although you can only use one of the values that you specify in the modifier’s second parameter. For any style of immersion, the other parts of your app’s interface — namely its windows — remain visible. However, the immersion style affects how windows interact with virtual objects in the environment:
 
-- For the [`mixed`](immersionstyle/mixed.md) style, a virtual object obscures part or all of a window that’s behind the object. Similarly, a window obscures a virtual object that’s behind the window.
+- For the [`mixed`](./immersionstyle/mixed.md) style, a virtual object obscures part or all of a window that’s behind the object. Similarly, a window obscures a virtual object that’s behind the window.
 - For other styles, windows always render in front of virtual content, no matter how someone positions the window or the content. This helps people to avoid losing track of windows behind virtual content when passthrough is partially or completely off.
 
-##### Open an Immersive Space
+##### Open an immersive space
 
 You can programmatically open an immersive space by giving it an identifier. For example, you can label the solar system view from the previous example:
 
@@ -65,7 +66,7 @@ ImmersiveSpace(id: "solarSystem") {
 }
 ```
 
-Elsewhere in your code, you use the [`openImmersiveSpace`](environmentvalues/openimmersivespace.md) environment value to get the instance of the [`OpenImmersiveSpaceAction`](openimmersivespaceaction.md) structure for a given [`Environment`](environment.md). You call the instance directly — for example, from a button’s closure, like in the following code — using the identifier:
+Elsewhere in your code, you use the [`openImmersiveSpace`](./environmentvalues/openimmersivespace.md) environment value to get the instance of the [`OpenImmersiveSpaceAction`](./openimmersivespaceaction.md) structure for a given [`Environment`](./environment.md). You call the instance directly — for example, from a button’s closure, like in the following code — using the identifier:
 
 ```swift
 struct NewSolarSystemImmersiveSpace: View {
@@ -84,9 +85,9 @@ struct NewSolarSystemImmersiveSpace: View {
 
 Mark the call to the action with `await` because it executes asynchronously. When your app opens an immersive space, the system hides all other visible apps. The system allows only one immersive space to be open at a time. Be sure to close the open immersive space before opening another one.
 
-##### Dismiss an Immersive Space
+##### Dismiss an immersive space
 
-You can dismiss an immersive space by calling the [`dismissImmersiveSpace`](environmentvalues/dismissimmersivespace.md) action from the environment. For example, you can define a button that dismisses an immersive space:
+You can dismiss an immersive space by calling the [`dismissImmersiveSpace`](./environmentvalues/dismissimmersivespace.md) action from the environment. For example, you can define a button that dismisses an immersive space:
 
 ```swift
 struct DismissImmersiveSpaceButton: View {
@@ -105,66 +106,67 @@ struct DismissImmersiveSpaceButton: View {
 
 The dismiss action runs asynchronously, like the open action. You don’t need to specify an identifier when dismissing an immersive space because there can only be one immersive space open at a time.
 
-##### Present an Immersive Space at Launch
+##### Present an immersive space at launch
 
-When an app launches, it opens an instance of the first scene that’s listed in the app’s body. However, to open an immersive space at launch, you need to provide additional configuration information in your app’s `Info.plist` file. In particular, set the [`UIApplicationPreferredDefaultSceneSessionRole`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationpreferreddefaultscenesessionrole) key in the scene manifest to the value [`UISceneSessionRoleImmersiveSpaceApplication`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication).
+When an app launches, it opens an instance of the first scene that’s listed in the app’s body. However, to open an immersive space at launch, you need to provide additional configuration information in your app’s `Info.plist` file. In particular, set the [`UIApplicationPreferredDefaultSceneSessionRole`](../BundleResources/information-property-list/uiapplicationpreferreddefaultscenesessionrole.md) key in the scene manifest to the value [`UISceneSessionRoleImmersiveSpaceApplication`](../BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication.md).
 
-To configure the style of the immersive space that opens at launch, add a scene configuration to the scene session role. Use the [`UISceneInitialImmersionStyle`](https://developer.apple.com/documentation/bundleresources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication/uisceneinitialimmersionstyle) key together with a value that indicates one of the mixed, full, or progressive styles. See the initial immersion style key for more information.
+To configure the style of the immersive space that opens at launch, add a scene configuration to the scene session role. Use the [`UISceneInitialImmersionStyle`](../BundleResources/information-property-list/uiapplicationscenemanifest/uisceneconfigurations/uiscenesessionroleimmersivespaceapplication/uisceneinitialimmersionstyle.md) key together with a value that indicates one of the mixed, full, or progressive styles. See the initial immersion style key for more information.
 
 ## Topics
 
 ### Creating an immersive space
-- [init(content:)](immersivespace/init(content:).md)
+- [init(content:)](./immersivespace/init%28content%29.md)
   Creates an immersive space.
 ### Identifying an immersive space
-- [init(id:content:)](immersivespace/init(id:content:).md)
+- [init(id:content:)](./immersivespace/init%28id,content%29.md)
   Creates the immersive space associated with the specified identifier.
 ### Creating a data-driven immersive space
-- [init(for:content:)](immersivespace/init(for:content:).md)
+- [init(for:content:)](./immersivespace/init%28for,content%29.md)
   Creates the immersive space for a specified type of presented data.
-- [init(id:for:content:)](immersivespace/init(id:for:content:).md)
+- [init(id:for:content:)](./immersivespace/init%28id,for,content%29.md)
   Creates the immersive space associated with an identifier for a specified type of presented data.
 ### Providing default data to an immersive space
-- [init(for:content:defaultValue:)](immersivespace/init(for:content:defaultvalue:).md)
+- [init(for:content:defaultValue:)](./immersivespace/init%28for,content,defaultvalue%29.md)
   Creates an immersive space.
-- [init(id:for:content:defaultValue:)](immersivespace/init(id:for:content:defaultvalue:).md)
+- [init(id:for:content:defaultValue:)](./immersivespace/init%28id,for,content,defaultvalue%29.md)
   Creates the immersive space associated with an identifier for a specified type of presented data, and a default value, if the data is not set.
 ### Supporting types
-- [struct ImmersiveSpaceViewContent](immersivespaceviewcontent.md)
+- [struct ImmersiveSpaceViewContent](./immersivespaceviewcontent.md)
   Immersive space content that uses a SwiftUI view hierarchy as the content.
-- [protocol ImmersiveSpaceContent](immersivespacecontent.md)
+- [protocol ImmersiveSpaceContent](./immersivespacecontent.md)
   A type that you can use as the content of an immersive space.
 ### Initializers
-- [init<C>(for: Data.Type, makeContent: (Binding<Data?>) -> C)](immersivespace/init(for:makecontent:).md)
-- [init<C>(for: Data.Type, makeContent: (Binding<Data>) -> C, defaultValue: () -> Data)](immersivespace/init(for:makecontent:defaultvalue:).md)
-- [init(foveatedStreaming: FoveatedStreamingSession)](immersivespace/init(foveatedstreaming:).md)
+- [init<C>(for: Data.Type, makeContent: (Binding<Data?>) -> C)](./immersivespace/init%28for,makecontent%29.md)
+- [init<C>(for: Data.Type, makeContent: (Binding<Data>) -> C, defaultValue: () -> Data)](./immersivespace/init%28for,makecontent,defaultvalue%29.md)
+- [init(foveatedStreaming: FoveatedStreamingSession)](./immersivespace/init%28foveatedstreaming%29.md)
   Creates an immersive space to display foveated streaming content.
-- [init<V>(foveatedStreaming: FoveatedStreamingSession, content: () -> V)](immersivespace/init(foveatedstreaming:content:).md)
+- [init<V>(foveatedStreaming: FoveatedStreamingSession, content: () -> V)](./immersivespace/init%28foveatedstreaming,content%29.md)
   Creates an immersive space to display foveated streaming content alongside `RealityKit` content.
-- [init<C>(id: String, for: Data.Type, makeContent: (Binding<Data?>) -> C)](immersivespace/init(id:for:makecontent:).md)
-- [init<C>(id: String, for: Data.Type, makeContent: (Binding<Data>) -> C, defaultValue: () -> Data)](immersivespace/init(id:for:makecontent:defaultvalue:).md)
-- [init(id:makeContent:)](immersivespace/init(id:makecontent:).md)
+- [init<C>(id: String, for: Data.Type, makeContent: (Binding<Data?>) -> C)](./immersivespace/init%28id,for,makecontent%29.md)
+- [init<C>(id: String, for: Data.Type, makeContent: (Binding<Data>) -> C, defaultValue: () -> Data)](./immersivespace/init%28id,for,makecontent,defaultvalue%29.md)
+- [init(id:makeContent:)](./immersivespace/init%28id,makecontent%29.md)
   Creates the immersive space associated with the specified identifier.
-- [init<C>(makeContent: () -> C)](immersivespace/init(makecontent:).md)
+- [init<C>(makeContent: () -> C)](./immersivespace/init%28makecontent%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Scene](scene.md)
+- [Scene](./scene.md)
 
 ## See Also
 
-- [struct ImmersiveSpaceContentBuilder](immersivespacecontentbuilder.md)
+### Creating an immersive space
+- [struct ImmersiveSpaceContentBuilder](./immersivespacecontentbuilder.md)
   A result builder for composing a collection of immersive space elements.
-- [func immersionStyle(selection: Binding<any ImmersionStyle>, in: any ImmersionStyle...) -> some Scene](scene/immersionstyle(selection:in:).md)
+- [func immersionStyle(selection: Binding<any ImmersionStyle>, in: any ImmersionStyle...) -> some Scene](./scene/immersionstyle%28selection,in%29.md)
   Sets the style for an immersive space.
-- [protocol ImmersionStyle](immersionstyle.md)
+- [protocol ImmersionStyle](./immersionstyle.md)
   The styles that an immersive space can have.
-- [var immersiveSpaceDisplacement: Pose3D](environmentvalues/immersivespacedisplacement.md)
+- [var immersiveSpaceDisplacement: Pose3D](./environmentvalues/immersivespacedisplacement.md)
   The displacement that the system applies to the immersive space when moving the space away from its default position, in meters.
-- [struct ImmersiveEnvironmentBehavior](immersiveenvironmentbehavior.md)
+- [struct ImmersiveEnvironmentBehavior](./immersiveenvironmentbehavior.md)
   The behavior of the system-provided immersive environments when a scene is opened by your app.
-- [struct ProgressiveImmersionAspectRatio](progressiveimmersionaspectratio.md)
+- [struct ProgressiveImmersionAspectRatio](./progressiveimmersionaspectratio.md)
   The shape of the portal that a progressive immersion style opens.
 
 

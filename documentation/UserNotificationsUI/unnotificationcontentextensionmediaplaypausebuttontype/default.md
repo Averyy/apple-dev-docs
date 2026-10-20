@@ -1,7 +1,8 @@
 # UNNotificationContentExtensionMediaPlayPauseButtonType.default
 
 **Framework**: User Notifications UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A standard play/pause button.
 
@@ -18,15 +19,20 @@ A standard play/pause button.
 case `default`
 ```
 
+```c
+UNNotificationContentExtensionMediaPlayPauseButtonTypeDefault
+```
+
 #### Discussion
 
 This button is always visible. When tapped, its appearance changes between the play and pause icons and triggers the appropriate play and pause actions.
 
 ## See Also
 
-- [UNNotificationContentExtensionMediaPlayPauseButtonType.none](unnotificationcontentextensionmediaplaypausebuttontype/none.md)
+### Button Types
+- [UNNotificationContentExtensionMediaPlayPauseButtonType.none](./none.md)
   No media button.
-- [UNNotificationContentExtensionMediaPlayPauseButtonType.overlay](unnotificationcontentextensionmediaplaypausebuttontype/overlay.md)
+- [UNNotificationContentExtensionMediaPlayPauseButtonType.overlay](./overlay.md)
   A partially transparent play/pause button that is layered on top of your media content.
 
 

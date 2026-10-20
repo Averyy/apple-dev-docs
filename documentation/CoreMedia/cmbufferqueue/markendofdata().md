@@ -1,7 +1,8 @@
 # markEndOfData()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks a buffer as being at the end of its data.
 
@@ -22,15 +23,16 @@ func markEndOfData() throws
 
 ## See Also
 
-- [func enqueue(CMBuffer) throws](cmbufferqueue/enqueue(_:).md)
+### Managing a Queue
+- [func enqueue(CMBuffer) throws](./enqueue%28_%29.md)
   Enqueues a buffer to the queue.
-- [func dequeue() -> CMBuffer?](cmbufferqueue/dequeue.md)
+- [func dequeue() -> CMBuffer?](./dequeue%28%29.md)
   Dequeues a buffer from the queue.
-- [func dequeueIfDataReady() -> CMBuffer?](cmbufferqueue/dequeueifdataready.md)
+- [func dequeueIfDataReady() -> CMBuffer?](./dequeueifdataready%28%29.md)
   Dequeues a buffer from the queue, if it’s ready.
-- [func reset() throws](cmbufferqueue/reset.md)
+- [func reset() throws](./reset%28%29.md)
   Empties the queue and resets its end-of-data state.
-- [func reset((CMBuffer) throws -> ()) throws](cmbufferqueue/reset(_:).md)
+- [func reset((CMBuffer) throws -> ()) throws](./reset%28_%29.md)
   Resets a buffer with a callback block.
 
 

@@ -1,7 +1,8 @@
 # defaultToolItems
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default tool items for new tool pickers.
 
@@ -15,6 +16,10 @@ The default tool items for new tool pickers.
 
 ```swift
 class var defaultToolItems: [PKToolPickerItem] { get }
+```
+
+```objc
+@property (class, nonatomic, readonly, nonnull) NSArray<PKToolPickerItem *> * defaultToolItems;
 ```
 
 #### Discussion

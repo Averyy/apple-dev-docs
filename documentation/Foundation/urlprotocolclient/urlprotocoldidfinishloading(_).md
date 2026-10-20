@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the client that the protocol implementation has finished loading.
@@ -21,15 +22,20 @@ Tells the client that the protocol implementation has finished loading.
 func urlProtocolDidFinishLoading(_ protocol: URLProtocol)
 ```
 
+```objc
+- (void) URLProtocolDidFinishLoading:(NSURLProtocol *) protocol;
+```
+
 ## Parameters
 
 - `protocol`: The URL protocol object sending the message.
 
 ## See Also
 
-- [func urlProtocol(URLProtocol, didFailWithError: any Error)](urlprotocolclient/urlprotocol(_:didfailwitherror:).md)
+### Indicating loading progress or failure
+- [func urlProtocol(URLProtocol, didFailWithError: any Error)](./urlprotocol%28_,didfailwitherror%29.md)
   Tells the client that the load request failed due to an error.
-- [func urlProtocol(URLProtocol, didLoad: Data)](urlprotocolclient/urlprotocol(_:didload:).md)
+- [func urlProtocol(URLProtocol, didLoad: Data)](./urlprotocol%28_,didload%29.md)
   Tells the client that the protocol implementation has loaded some data.
 
 

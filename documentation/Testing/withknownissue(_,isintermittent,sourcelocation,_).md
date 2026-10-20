@@ -1,18 +1,19 @@
 # withKnownIssue(_:isIntermittent:sourceLocation:_:)
 
 **Framework**: Swift Testing  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Invoke a function that has a known issue that is expected to occur during its execution.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -24,7 +25,7 @@ func withKnownIssue(_ comment: Comment? = nil, isIntermittent: Bool = false, sou
 
 ## Mentions
 
-- [Migrating a test from XCTest](migratingfromxctest.md)
+- [Migrating a test from XCTest](./migratingfromxctest.md)
 
 #### Discussion
 
@@ -38,7 +39,7 @@ Use this function when a test is known to record one or more issues that should 
 }
 ```
 
-Because all errors thrown by `body` are caught as known issues, this function is not throwing. If only some errors or issues are known to occur while others should continue to cause test failures, use [`withKnownIssue(_:isIntermittent:sourceLocation:_:when:matching:)`](withknownissue(_:isintermittent:sourcelocation:_:when:matching:).md) instead.
+Because all errors thrown by `body` are caught as known issues, this function is not throwing. If only some errors or issues are known to occur while others should continue to cause test failures, use [`withKnownIssue(_:isIntermittent:sourceLocation:_:when:matching:)`](./withknownissue%28_,isintermittent,sourcelocation,_,when,matching%29.md) instead.
 
 ## Parameters
 
@@ -49,15 +50,17 @@ Because all errors thrown by `body` are caught as known issues, this function is
 
 ## See Also
 
-- [Known issues](known-issues.md)
+### Related Documentation
+- [Known issues](./known-issues.md)
   Mark issues as known when running tests.
-- [func withKnownIssue(Comment?, isIntermittent: Bool, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, () async throws -> Void) async](withknownissue(_:isintermittent:isolation:sourcelocation:_:).md)
+### Recording known issues in tests
+- [func withKnownIssue(Comment?, isIntermittent: Bool, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, () async throws -> Void) async](./withknownissue%28_,isintermittent,isolation,sourcelocation,_%29.md)
   Invoke a function that has a known issue that is expected to occur during its execution.
-- [func withKnownIssue(Comment?, isIntermittent: Bool, sourceLocation: SourceLocation, () throws -> Void, when: () -> Bool, matching: KnownIssueMatcher) rethrows](withknownissue(_:isintermittent:sourcelocation:_:when:matching:).md)
+- [func withKnownIssue(Comment?, isIntermittent: Bool, sourceLocation: SourceLocation, () throws -> Void, when: () -> Bool, matching: KnownIssueMatcher) rethrows](./withknownissue%28_,isintermittent,sourcelocation,_,when,matching%29.md)
   Invoke a function that has a known issue that is expected to occur during its execution.
-- [func withKnownIssue(Comment?, isIntermittent: Bool, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, () async throws -> Void, when: () async -> Bool, matching: KnownIssueMatcher) async rethrows](withknownissue(_:isintermittent:isolation:sourcelocation:_:when:matching:).md)
+- [func withKnownIssue(Comment?, isIntermittent: Bool, isolation: isolated (any Actor)?, sourceLocation: SourceLocation, () async throws -> Void, when: () async -> Bool, matching: KnownIssueMatcher) async rethrows](./withknownissue%28_,isintermittent,isolation,sourcelocation,_,when,matching%29.md)
   Invoke a function that has a known issue that is expected to occur during its execution.
-- [typealias KnownIssueMatcher](knownissuematcher.md)
+- [typealias KnownIssueMatcher](./knownissuematcher.md)
   A function that is used to match known issues.
 
 

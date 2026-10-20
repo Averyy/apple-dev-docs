@@ -1,7 +1,8 @@
 # withUnsafeMutableBufferPointer(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with a pointer to the array’s mutable contiguous storage.
 

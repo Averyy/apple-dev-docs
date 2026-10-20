@@ -1,7 +1,8 @@
 # registerFunctionBlocks(_:markAsStatic:)
 
 **Framework**: Core MIDI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func registerFunctionBlocks(_ functionBlocks: [MIDIUMPMutableFunctionBlock], markAsStatic: Bool) throws
+```
+
+```objc
+- (BOOL) registerFunctionBlocks:(NSArray<MIDIUMPMutableFunctionBlock *> *) functionBlocks markAsStatic:(BOOL) markAsStatic error:(NSError **) error;
 ```
 
 

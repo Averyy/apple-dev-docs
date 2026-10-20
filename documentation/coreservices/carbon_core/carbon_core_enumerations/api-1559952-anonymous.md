@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var vmBadDriver: Int](vmbaddriver.md)
-- [var vmKernelMMUInitErr: Int](vmkernelmmuiniterr.md)
-- [var vmMemLckdErr: Int](vmmemlckderr.md)
-- [var vmMorePhysicalThanVirtualErr: Int](vmmorephysicalthanvirtualerr.md)
-- [var vmNoVectorErr: Int](vmnovectorerr.md)
-- [var vmOffErr: Int](vmofferr.md)
+- [var vmBadDriver: Int](../../vmbaddriver.md)
+- [var vmKernelMMUInitErr: Int](../../vmkernelmmuiniterr.md)
+- [var vmMemLckdErr: Int](../../vmmemlckderr.md)
+- [var vmMorePhysicalThanVirtualErr: Int](../../vmmorephysicalthanvirtualerr.md)
+- [var vmNoVectorErr: Int](../../vmnovectorerr.md)
+- [var vmOffErr: Int](../../vmofferr.md)
 
 
 ---

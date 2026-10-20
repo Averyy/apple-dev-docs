@@ -7,7 +7,7 @@ Standard factory method for IORangeAllocator.
 
 ## Declaration
 
-```swift
+```c
 static IORangeAllocator * withRange(
  IORangeScalar endOfRange, 
  IORangeScalar defaultAlignment = 0, 
@@ -15,7 +15,7 @@ static IORangeAllocator * withRange(
  IOOptionBits options = 0 );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the new IORangeAllocator instance, to be released by the caller, or zero on failure.
 
@@ -32,21 +32,22 @@ This method allocates and initializes an IORangeAllocator and optionally sets th
 
 ## See Also
 
-- [allocate](iorangeallocator/1810255-allocate.md)
+### Miscellaneous
+- [allocate](./api-1810255-allocate.md)
   Allocates from the free list, at any offset.
-- [allocateRange](iorangeallocator/1810314-allocaterange.md)
+- [allocateRange](./api-1810314-allocaterange.md)
   Allocates from the free list, at a set offset.
-- [deallocate](iorangeallocator/1810361-deallocate.md)
+- [deallocate](./api-1810361-deallocate.md)
   Deallocates a range to the free list.
-- [getFragmentCapacity](iorangeallocator/1810407-getfragmentcapacity.md)
+- [getFragmentCapacity](./api-1810407-getfragmentcapacity.md)
   Accessor to return the number of free fragments in the range.
-- [getFragmentCount](iorangeallocator/1810456-getfragmentcount.md)
+- [getFragmentCount](./api-1810456-getfragmentcount.md)
   Accessor to return the number of free fragments in the range.
-- [getFreeCount](iorangeallocator/1810490-getfreecount.md)
+- [getFreeCount](./api-1810490-getfreecount.md)
   Totals the sizes of the free fragments.
-- [init](iorangeallocator/1810534-init.md)
+- [init](./api-1810534-init.md)
   Standard initializer for IORangeAllocator.
-- [setFragmentCapacityIncrement](iorangeallocator/1810575-setfragmentcapacityincrement.md)
+- [setFragmentCapacityIncrement](./api-1810575-setfragmentcapacityincrement.md)
   Sets the count of fragments the free list will increase by when full.
 
 

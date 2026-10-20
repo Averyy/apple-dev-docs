@@ -1,7 +1,8 @@
 # SKExternalPurchaseCustomLinkRegions
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An array of country code strings that indicate the regions where your app supports custom links for the communication and promotion of offers.
 
@@ -14,13 +15,14 @@ An array of country code strings that indicate the regions where your app suppor
 - visionOS 2.1+
 - watchOS 11.1+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `SKExternalPurchaseCustomLinkRegions`
+- **Type**: array of string 
 
 #### Discussion
 
-Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link`](entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement and uses the [`ExternalPurchaseCustomLink`](https://developer.apple.com/documentation/storekit/externalpurchasecustomlink) API.
+Use this information property list key if your app has the [`com.apple.developer.storekit.external-purchase-link`](../entitlements/com.apple.developer.storekit.external-purchase-link.md) entitlement and uses the [`ExternalPurchaseCustomLink`](../../StoreKit/externalpurchasecustomlink.md) API.
 
 Include an entry for each country code where your app supports custom links for the communication and promotion of offers.
 
@@ -28,19 +30,20 @@ Valid country codes include the European Union: Austria (`at`), Belgium (`be`), 
 
 ## See Also
 
-- [SKAdNetworkItems](information-property-list/skadnetworkitems.md)
+### StoreKit
+- [SKAdNetworkItems](./skadnetworkitems.md)
   An array of dictionaries containing a list of ad network IDs.
-- [SKExternalLinkAccount](information-property-list/skexternallinkaccount.md)
+- [SKExternalLinkAccount](./skexternallinkaccount.md)
   A dictionary that contains localized URLs to an external website for account creation or management.
-- [SKExternalPurchase](information-property-list/skexternalpurchase.md)
+- [SKExternalPurchase](./skexternalpurchase.md)
   A string array of country codes that indicates your app supports external purchases.
-- [SKExternalPurchaseLink](information-property-list/skexternalpurchaselink.md)
+- [SKExternalPurchaseLink](./skexternalpurchaselink.md)
   A dictionary that contains URLs to websites where people using your app can make external purchases for supported regions.
-- [SKExternalPurchaseMultiLink](information-property-list/skexternalpurchasemultilink.md)
+- [SKExternalPurchaseMultiLink](./skexternalpurchasemultilink.md)
   A dictionary that contains an array of URLs to websites where people using your app can make external purchases.
-- [SKIncludeConsumableInAppPurchaseHistory](information-property-list/skincludeconsumableinapppurchasehistory.md)
+- [SKIncludeConsumableInAppPurchaseHistory](./skincludeconsumableinapppurchasehistory.md)
   A Boolean value that determines whether StoreKit includes finished consumable In-App Purchases in transaction information.
-- [SKExternalPurchaseLinkStreamingRegions](information-property-list/skexternalpurchaselinkstreamingregions.md)
+- [SKExternalPurchaseLinkStreamingRegions](./skexternalpurchaselinkstreamingregions.md)
   A list of country codes that indicate the regions where your music-streaming app communicates and promotes offers.
 
 

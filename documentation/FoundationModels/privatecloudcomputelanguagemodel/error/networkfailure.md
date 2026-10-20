@@ -1,7 +1,8 @@
 # PrivateCloudComputeLanguageModel.Error.NetworkFailure
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a network problem that prevented a request from completing.
 
@@ -22,21 +23,22 @@ struct NetworkFailure
 ## Topics
 
 ### Creating a network failure error
-- [init(debugDescription: String)](privatecloudcomputelanguagemodel/error/networkfailure/init(debugdescription:).md)
+- [init(debugDescription: String)](./networkfailure/init%28debugdescription%29.md)
   Creates a network failure with the debug description you specify.
 ### Getting the error description
-- [var debugDescription: String](privatecloudcomputelanguagemodel/error/networkfailure/debugdescription.md)
+- [var debugDescription: String](./networkfailure/debugdescription.md)
   A debug description of the network failure.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case networkFailure(PrivateCloudComputeLanguageModel.Error.NetworkFailure)](privatecloudcomputelanguagemodel/error/networkfailure(_:).md)
+### Network failure error
+- [case networkFailure(PrivateCloudComputeLanguageModel.Error.NetworkFailure)](./networkfailure%28_%29.md)
   An error that occurs when a network is available, but PCC is inaccessible.
 
 

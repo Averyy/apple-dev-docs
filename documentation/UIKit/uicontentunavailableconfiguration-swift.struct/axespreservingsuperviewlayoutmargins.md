@@ -1,7 +1,8 @@
 # axesPreservingSuperviewLayoutMargins
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures which margins use the layout margins inherited from the superview.
 
@@ -10,7 +11,7 @@ Configures which margins use the layout margins inherited from the superview.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

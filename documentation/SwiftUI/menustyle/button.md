@@ -1,7 +1,8 @@
 # button
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A menu style that displays a button that toggles the display of the menu’s contents when pressed.
 
@@ -20,6 +21,8 @@ A menu style that displays a button that toggles the display of the menu’s con
 nonisolated static var button: ButtonMenuStyle { get }
 ```
 
+Available when `Self` is `ButtonMenuStyle`.
+
 #### Discussion
 
 On macOS, the button displays an arrow to indicate that it presents a menu.
@@ -28,7 +31,8 @@ Pressing and then dragging into the contents activates the selected action on re
 
 ## See Also
 
-- [static var automatic: DefaultMenuStyle](menustyle/automatic.md)
+### Getting built-in menu styles
+- [static var automatic: DefaultMenuStyle](./automatic.md)
   The default menu style, based on the menu’s context.
 
 

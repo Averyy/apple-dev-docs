@@ -1,7 +1,8 @@
 # errSecCRLPolicyFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate revocation list policy failed.
 
@@ -18,6 +19,10 @@ The certificate revocation list policy failed.
 
 ```swift
 var errSecCRLPolicyFailed: OSStatus { get }
+```
+
+```c
+errSecCRLPolicyFailed
 ```
 
 

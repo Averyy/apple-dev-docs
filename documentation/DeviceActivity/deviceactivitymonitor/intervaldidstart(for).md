@@ -1,7 +1,8 @@
 # intervalDidStart(for:)
 
 **Framework**: Device Activity  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that the device activity interval started.
 
@@ -26,11 +27,12 @@ An activity starts when someone first uses the device within the activity’s sc
 
 ## See Also
 
-- [func intervalDidEnd(for: DeviceActivityName)](deviceactivitymonitor/intervaldidend(for:).md)
+### Monitoring Scheduled Intervals
+- [func intervalDidEnd(for: DeviceActivityName)](./intervaldidend%28for%29.md)
   Indicates that the device activity interval ended.
-- [func intervalWillEndWarning(for: DeviceActivityName)](deviceactivitymonitor/intervalwillendwarning(for:).md)
+- [func intervalWillEndWarning(for: DeviceActivityName)](./intervalwillendwarning%28for%29.md)
   Warns your app of an ongoing activity’s conclusion a specified time before the activity ends.
-- [func intervalWillStartWarning(for: DeviceActivityName)](deviceactivitymonitor/intervalwillstartwarning(for:).md)
+- [func intervalWillStartWarning(for: DeviceActivityName)](./intervalwillstartwarning%28for%29.md)
   Warns your app of an upcoming activity a specified time before the activity starts.
 
 

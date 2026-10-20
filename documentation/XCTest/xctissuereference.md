@@ -1,7 +1,8 @@
 # XCTIssueReference
 
 **Framework**: XCTest  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a test failure, and includes source code call stacks for test reporting and investigation.
 
@@ -11,75 +12,80 @@ An object that represents a test failure, and includes source code call stacks f
 class XCTIssueReference
 ```
 
+```objc
+@interface XCTIssue : NSObject
+```
+
 #### Overview
 
-In Swift, `XCTIssueReference` bridges to the Objective-C class `XCTIssue`. When you need reference semantics in your Swift test handling, use `XCTIssueReference`; otherwise, use the Swift value semantic [`XCTIssue`](xctissue-swift.struct.md). In Objective-C, `XCTIssue` supports bridging to Swift with `XCTIssueReference`.
+In Swift, `XCTIssueReference` bridges to the Objective-C class `XCTIssue`. When you need reference semantics in your Swift test handling, use `XCTIssueReference`; otherwise, use the Swift value semantic [`XCTIssue`](./xctissue-swift.struct.md). In Objective-C, `XCTIssue` supports bridging to Swift with `XCTIssueReference`.
 
 ## Topics
 
 ### Initializers
-- [convenience init(type: XCTIssueReference.IssueType, compactDescription: String)](xctissuereference/init(type:compactdescription:).md)
+- [convenience init(type: XCTIssueReference.IssueType, compactDescription: String)](./xctissuereference/init%28type,compactdescription%29.md)
   Creates an issue with a compact description for a test failure.
-- [init(type: XCTIssueReference.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment])](xctissuereference/init(type:compactdescription:detaileddescription:sourcecodecontext:associatederror:attachments:).md)
+- [init(type: XCTIssueReference.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment])](./xctissuereference/init%28type,compactdescription,detaileddescription,sourcecodecontext,associatederror,attachments%29.md)
   Creates an issue for a test failure, with descriptions, source code location, error, and attachments.
-- [init(type: XCTIssueReference.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment], severity: XCTIssueReference.Severity)](xctissuereference/init(type:compactdescription:detaileddescription:sourcecodecontext:associatederror:attachments:severity:).md)
-- [convenience init(type: XCTIssueReference.IssueType, compactDescription: String, severity: XCTIssueReference.Severity)](xctissuereference/init(type:compactdescription:severity:).md)
+- [init(type: XCTIssueReference.IssueType, compactDescription: String, detailedDescription: String?, sourceCodeContext: XCTSourceCodeContext, associatedError: (any Error)?, attachments: [XCTAttachment], severity: XCTIssueReference.Severity)](./xctissuereference/init%28type,compactdescription,detaileddescription,sourcecodecontext,associatederror,attachments,severity%29.md)
+- [convenience init(type: XCTIssueReference.IssueType, compactDescription: String, severity: XCTIssueReference.Severity)](./xctissuereference/init%28type,compactdescription,severity%29.md)
 ### Issue Types
-- [XCTIssueReference.IssueType](xctissuereference/issuetype.md)
+- [XCTIssueReference.IssueType](./xctissuereference/issuetype.md)
   Constants that indicate types of test failures, such as assertion failures, performance regressions, or thrown errors.
 ### Issue Details
-- [var type: XCTIssueReference.IssueType](xctissuereference/type.md)
+- [var type: XCTIssueReference.IssueType](./xctissuereference/type.md)
   A value for classifying an issue that occurs during testing.
-- [var compactDescription: String](xctissuereference/compactdescription.md)
+- [var compactDescription: String](./xctissuereference/compactdescription.md)
   A concise description of the issue with no transient data, suitable for use in test run summaries and results aggregation across multiple test runs.
-- [var detailedDescription: String?](xctissuereference/detaileddescription.md)
+- [var detailedDescription: String?](./xctissuereference/detaileddescription.md)
   A detailed description of the issue that may include transient data, such as numbers, object identifiers, and timestamps, to help diagnose the issue.
-- [var sourceCodeContext: XCTSourceCodeContext](xctissuereference/sourcecodecontext.md)
+- [var sourceCodeContext: XCTSourceCodeContext](./xctissuereference/sourcecodecontext.md)
   The source code location for the issue, including the filename, line number, and call stack.
-- [var associatedError: (any Error)?](xctissuereference/associatederror.md)
+- [var associatedError: (any Error)?](./xctissuereference/associatederror.md)
   An optional error to associate with a test issue.
-- [var attachments: [XCTAttachment]](xctissuereference/attachments.md)
+- [var attachments: [XCTAttachment]](./xctissuereference/attachments.md)
   An array of data that augments a test issue, such as files, images, screenshots, data blobs, or ZIP files.
 ### Instance Properties
-- [var isFailure: Bool](xctissuereference/isfailure.md)
+- [var isFailure: Bool](./xctissuereference/isfailure.md)
   Whether or not this issue should cause the test it’s associated with to be considered a failure.
-- [var severity: XCTIssueReference.Severity](xctissuereference/severity-swift.property.md)
+- [var severity: XCTIssueReference.Severity](./xctissuereference/severity-swift.property.md)
   The severity of the issue.
 ### Enumerations
-- [XCTIssueReference.Severity](xctissuereference/severity-swift.enum.md)
+- [XCTIssueReference.Severity](./xctissuereference/severity-swift.enum.md)
   An enum representing the severity of a test issue.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [XCTMutableIssue](xctmutableissue.md)
+- [XCTMutableIssue](./xctmutableissue.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [struct XCTIssue](xctissue-swift.struct.md)
+### Test Failures
+- [struct XCTIssue](./xctissue-swift.struct.md)
   An object that represents a test failure, and includes source code call stacks for test reporting and investigation.
-- [class XCTMutableIssue](xctmutableissue.md)
+- [class XCTMutableIssue](./xctmutableissue.md)
   A mutable object that represents a test failure, and includes source code call stacks for test reporting and investigation.
-- [class XCTSourceCodeContext](xctsourcecodecontext.md)
+- [class XCTSourceCodeContext](./xctsourcecodecontext.md)
   An object that contains call stack and source code location details to provide context for a point of execution in a test.
-- [class XCTSourceCodeFrame](xctsourcecodeframe.md)
+- [class XCTSourceCodeFrame](./xctsourcecodeframe.md)
   An object that represents a single frame in a call stack that supports retrieval of symbol information for the address.
-- [class XCTSourceCodeLocation](xctsourcecodelocation.md)
+- [class XCTSourceCodeLocation](./xctsourcecodelocation.md)
   An object that contains a file URL and line number that represents a distinct location in source code.
-- [class XCTSourceCodeSymbolInfo](xctsourcecodesymbolinfo.md)
+- [class XCTSourceCodeSymbolInfo](./xctsourcecodesymbolinfo.md)
   An object that contains symbolication information for a specified frame in a call stack.
 
 

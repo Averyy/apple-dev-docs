@@ -1,7 +1,8 @@
 # prepareShare(container:allowedSharingOptions:preparationHandler:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a share when the system calls the specified handler.
 
@@ -10,7 +11,7 @@ Creates a share when the system calls the specified handler.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,25 +21,26 @@ static func prepareShare(container: CKContainer, allowedSharingOptions: CKAllowe
 
 #### Return Value
 
-The [`CKShareTransferRepresentation.ExportedShare`](cksharetransferrepresentation/exportedshare.md) with the new [`CKShare`](ckshare.md).
+The [`CKShareTransferRepresentation.ExportedShare`](../exportedshare.md) with the new [`CKShare`](../../ckshare.md).
 
 #### Discussion
 
-Use this method when you want to share a collection of [`CKRecord`](ckrecord.md) objects, but don’t currently have a [`CKShare`](ckshare.md).
+Use this method when you want to share a collection of [`CKRecord`](../../ckrecord.md) objects, but don’t currently have a [`CKShare`](../../ckshare.md).
 
-When the system calls the `preparationHandler`, create a new [`CKShare`](ckshare.md) with the appropriate root [`CKRecord`](ckrecord.md) or [`CKRecordZone.ID`](ckrecordzone/id.md).
+When the system calls the `preparationHandler`, create a new [`CKShare`](../../ckshare.md) with the appropriate root [`CKRecord`](../../ckrecord.md) or [`CKRecordZone.ID`](../../ckrecordzone/id.md).
 
-After saving the share and all records to the server, return the resulting [`CKShare`](ckshare.md) or throw an error if saving fails. When your app invokes the share sheet with a [`CKShare`](ckshare.md) registered with this method, the system prompts the user to start sharing.
+After saving the share and all records to the server, return the resulting [`CKShare`](../../ckshare.md) or throw an error if saving fails. When your app invokes the share sheet with a [`CKShare`](../../ckshare.md) registered with this method, the system prompts the user to start sharing.
 
 ## Parameters
 
-- `container`: The [`CKContainer`](ckcontainer.md) for the share.
-- `allowedSharingOptions`: The [`CKAllowedSharingOptions`](ckallowedsharingoptions.md). The [`standard`](ckallowedsharingoptions/standard.md) option is the default.
-- `preparationHandler`: The handler the system calls in your app to create a new [`CKShare`](ckshare.md).
+- `container`: The [`CKContainer`](../../ckcontainer.md) for the share.
+- `allowedSharingOptions`: The [`CKAllowedSharingOptions`](../../ckallowedsharingoptions.md). The [`standard`](../../ckallowedsharingoptions/standard.md) option is the default.
+- `preparationHandler`: The handler the system calls in your app to create a new [`CKShare`](../../ckshare.md).
 
 ## See Also
 
-- [static func existing(CKShare, container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions) -> CKShareTransferRepresentation<Item>.ExportedShare](cksharetransferrepresentation/exportedshare/existing(_:container:allowedsharingoptions:).md)
+### Preparing an exported share
+- [static func existing(CKShare, container: CKContainer, allowedSharingOptions: CKAllowedSharingOptions) -> CKShareTransferRepresentation<Item>.ExportedShare](./existing%28_,container,allowedsharingoptions%29.md)
   Allows the user to view or make modifications to the share settings.
 
 

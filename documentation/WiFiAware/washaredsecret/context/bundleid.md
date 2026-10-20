@@ -1,7 +1,8 @@
 # bundleID
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A string that provides a unique value specific to your app.
 

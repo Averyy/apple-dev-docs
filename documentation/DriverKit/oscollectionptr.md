@@ -1,23 +1,25 @@
 # OSCollectionPtr
 
 **Framework**: DriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef OSCollection * OSCollectionPtr;
 ```
 
 ## See Also
 
-- [copyCollection](oscollection/copycollection.md)
+### Copying the Collection
+- [copyCollection](./oscollection/copycollection.md)
 
 
 ---

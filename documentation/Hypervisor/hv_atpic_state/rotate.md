@@ -1,15 +1,20 @@
 # rotate
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var rotate: Bool
+```
+
+```c
+bool rotate;
 ```
 
 

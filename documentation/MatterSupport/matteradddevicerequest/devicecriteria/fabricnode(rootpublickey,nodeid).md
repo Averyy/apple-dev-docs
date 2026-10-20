@@ -1,7 +1,8 @@
 # MatterAddDeviceRequest.DeviceCriteria.fabricNode(rootPublicKey:nodeID:)
 
 **Framework**: MatterSupport  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A device matches if it’s paired to a fabric using the provided fabric and node identifiers.
 
@@ -10,7 +11,7 @@ A device matches if it’s paired to a fabric using the provided fabric and node
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,21 +25,22 @@ This will only match for devices already known to the system during the commissi
 
 ## See Also
 
-- [MatterAddDeviceRequest.DeviceCriteria.allDevices](matteradddevicerequest/devicecriteria/alldevices.md)
+### Defining the criteria
+- [MatterAddDeviceRequest.DeviceCriteria.allDevices](./alldevices.md)
   All device match without any filtering.
-- [case all([MatterAddDeviceRequest.DeviceCriteria])](matteradddevicerequest/devicecriteria/all(_:).md)
+- [case all([MatterAddDeviceRequest.DeviceCriteria])](./all%28_%29.md)
   A device matches the given criteria if it matches all of the individual ones
-- [case any([MatterAddDeviceRequest.DeviceCriteria])](matteradddevicerequest/devicecriteria/any(_:).md)
+- [case any([MatterAddDeviceRequest.DeviceCriteria])](./any%28_%29.md)
   A device matches the given criteria if it matches any one of the individual ones .
-- [MatterAddDeviceRequest.DeviceCriteria.commissioningID(_:)](matteradddevicerequest/devicecriteria/commissioningid(_:).md)
+- [MatterAddDeviceRequest.DeviceCriteria.commissioningID(_:)](./commissioningid%28_%29.md)
   A device matches if it has the given commissioning identifier.
-- [case not(MatterAddDeviceRequest.DeviceCriteria)](matteradddevicerequest/devicecriteria/not(_:).md)
+- [case not(MatterAddDeviceRequest.DeviceCriteria)](./not%28_%29.md)
   A device matches the given criteria if it does not match the provided criteria.
-- [MatterAddDeviceRequest.DeviceCriteria.productID(_:)](matteradddevicerequest/devicecriteria/productid(_:).md)
+- [MatterAddDeviceRequest.DeviceCriteria.productID(_:)](./productid%28_%29.md)
   A device matches if it has the given product identifier.
-- [MatterAddDeviceRequest.DeviceCriteria.serialNumber(_:)](matteradddevicerequest/devicecriteria/serialnumber(_:).md)
+- [MatterAddDeviceRequest.DeviceCriteria.serialNumber(_:)](./serialnumber%28_%29.md)
   A device matches if it has the given product identifier.
-- [MatterAddDeviceRequest.DeviceCriteria.vendorID(_:)](matteradddevicerequest/devicecriteria/vendorid(_:).md)
+- [MatterAddDeviceRequest.DeviceCriteria.vendorID(_:)](./vendorid%28_%29.md)
   A device matches if it has the given vendor.
 
 

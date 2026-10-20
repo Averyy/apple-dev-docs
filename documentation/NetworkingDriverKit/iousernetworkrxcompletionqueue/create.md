@@ -1,16 +1,17 @@
 # Create
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Creates a queue that you use to deliver packets received from your hardware device.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t Create(IOUserNetworkPacketBufferPool *pool, OSObject *owner, uint32_t capacity, uint32_t queueId, IODispatchQueue *dispatchQueue, IOUserNetworkRxCompletionQueue **queue);
 ```
 
@@ -29,9 +30,10 @@ static kern_return_t Create(IOUserNetworkPacketBufferPool *pool, OSObject *owner
 
 ## See Also
 
-- [init](iousernetworkrxcompletionqueue/init.md)
+### Creating the Completion Queue
+- [init](./init.md)
   Initializes the packet submission queue.
-- [free](iousernetworkrxcompletionqueue/free.md)
+- [free](./free.md)
   Performs any final cleanup for the queue.
 
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var identifier: UInt64 { get }
+```
+
+```objc
+@property (readonly) uint64_t identifier;
 ```
 
 

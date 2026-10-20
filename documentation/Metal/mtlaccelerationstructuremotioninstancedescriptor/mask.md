@@ -1,7 +1,8 @@
 # mask
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mask for testing ray-tracing rays with a scene’s geometry, which applies to the next acceleration-structure motion instance you create with the descriptor.
 
@@ -19,11 +20,16 @@ A mask for testing ray-tracing rays with a scene’s geometry, which applies to 
 var mask: UInt32
 ```
 
+```c
+uint32_t mask;
+```
+
 ## See Also
 
-- [var intersectionFunctionTableOffset: UInt32](mtlaccelerationstructuremotioninstancedescriptor/intersectionfunctiontableoffset.md)
+### Customizing intersection and hit tests for the instance
+- [var intersectionFunctionTableOffset: UInt32](./intersectionfunctiontableoffset.md)
   An offset into the intersection-function table for ray tracing, which applies to the next acceleration-structure motion instance you create with the descriptor.
-- [var options: MTLAccelerationStructureInstanceOptions](mtlaccelerationstructuremotioninstancedescriptor/options.md)
+- [var options: MTLAccelerationStructureInstanceOptions](./options.md)
   An option set which applies to the next acceleration structure motion-instance you create with the descriptor.
 
 

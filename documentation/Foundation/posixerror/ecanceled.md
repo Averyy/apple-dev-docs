@@ -1,7 +1,8 @@
 # ECANCELED
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Operation canceled.
 

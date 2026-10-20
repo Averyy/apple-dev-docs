@@ -1,7 +1,8 @@
 # pdfViewPerformGo(toPage:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a go-to operation.
 
@@ -19,13 +20,18 @@ Performs a go-to operation.
 optional func pdfViewPerformGo(toPage sender: PDFView)
 ```
 
+```objc
+- (void) PDFViewPerformGoToPage:(PDFView *) sender;
+```
+
 ## See Also
 
-- [func pdfViewPerformFind(PDFView)](pdfviewdelegate/pdfviewperformfind(_:).md)
+### Working with Annotation Actions
+- [func pdfViewPerformFind(PDFView)](./pdfviewperformfind%28_%29.md)
   Performs a find operation.
-- [func pdfViewPerformPrint(PDFView)](pdfviewdelegate/pdfviewperformprint(_:).md)
+- [func pdfViewPerformPrint(PDFView)](./pdfviewperformprint%28_%29.md)
   Prints the current document.
-- [func pdfViewOpenPDF(PDFView, forRemoteGoToAction: PDFActionRemoteGoTo)](pdfviewdelegate/pdfviewopenpdf(_:forremotegotoaction:).md)
+- [func pdfViewOpenPDF(PDFView, forRemoteGoToAction: PDFActionRemoteGoTo)](./pdfviewopenpdf%28_,forremotegotoaction%29.md)
   Opens a specified page.
 
 

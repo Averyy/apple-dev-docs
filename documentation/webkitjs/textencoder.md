@@ -1,7 +1,8 @@
 # TextEncoder
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface TextEncoder
 ```
 
 ## Topics
 
 ### Instance Properties
-- [encoding](textencoder/2871198-encoding.md)
+- [encoding](./textencoder/api-2871198-encoding.md)
 ### Instance Methods
-- [encode](textencoder/2871155-encode.md)
+- [encode](./textencoder/api-2871155-encode.md)
 
 
 ---

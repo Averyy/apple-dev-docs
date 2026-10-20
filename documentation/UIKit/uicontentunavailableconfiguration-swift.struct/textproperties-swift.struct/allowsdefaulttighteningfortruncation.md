@@ -1,7 +1,8 @@
 # allowsDefaultTighteningForTruncation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the view tightens text before truncating.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether the view tightens text before truncating
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

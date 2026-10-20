@@ -1,7 +1,8 @@
 # evaluatePredicate(in:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the rule’s predicate has been satisfied in the context of the specified rule system.
 
@@ -19,17 +20,22 @@ Returns a Boolean value indicating whether the rule’s predicate has been satis
 func evaluatePredicate(in system: GKRuleSystem) -> Bool
 ```
 
+```objc
+- (BOOL) evaluatePredicateWithSystem:(GKRuleSystem *) system;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the rule is satisfied (and its action should be executed); otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the rule is satisfied (and its action should be executed); otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The [`GKNSPredicateRule`](gknspredicaterule.md) class overrides this method to use its [`predicate`](gknspredicaterule/predicate.md) property for testing the rule. Subclasses of [`GKNSPredicateRule`](gknspredicaterule.md) do not need to override this method.
+The [`GKNSPredicateRule`](../gknspredicaterule.md) class overrides this method to use its [`predicate`](./predicate.md) property for testing the rule. Subclasses of [`GKNSPredicateRule`](../gknspredicaterule.md) do not need to override this method.
 
 ## See Also
 
-- [var predicate: NSPredicate](gknspredicaterule/predicate.md)
+### Evaluating a Rule
+- [var predicate: NSPredicate](./predicate.md)
   A predicate to be tested when evaluating the rule.
 
 

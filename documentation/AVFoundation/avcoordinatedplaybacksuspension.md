@@ -1,7 +1,8 @@
 # AVCoordinatedPlaybackSuspension
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a temporary suspension of coordinated playback.
 
@@ -19,49 +20,54 @@ An object that represents a temporary suspension of coordinated playback.
 class AVCoordinatedPlaybackSuspension
 ```
 
+```objc
+@interface AVCoordinatedPlaybackSuspension : NSObject
+```
+
 #### Overview
 
-See the playback coordinator’s [`beginSuspension(for:)`](avplaybackcoordinator/beginsuspension(for:).md) method for details about suspending playback.
+See the playback coordinator’s [`beginSuspension(for:)`](./avplaybackcoordinator/beginsuspension%28for%29.md) method for details about suspending playback.
 
 ## Topics
 
 ### Inspecting a suspension
-- [var beginDate: Date](avcoordinatedplaybacksuspension/begindate.md)
+- [var beginDate: Date](./avcoordinatedplaybacksuspension/begindate.md)
   The time the suspension begins.
-- [var reason: AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.property.md)
+- [var reason: AVCoordinatedPlaybackSuspension.Reason](./avcoordinatedplaybacksuspension/reason-swift.property.md)
   The reason for the suspension.
-- [AVCoordinatedPlaybackSuspension.Reason](avcoordinatedplaybacksuspension/reason-swift.struct.md)
+- [AVCoordinatedPlaybackSuspension.Reason](./avcoordinatedplaybacksuspension/reason-swift.struct.md)
   Constants that identify playback suspension reasons.
 ### Ending a suspension
-- [func end()](avcoordinatedplaybacksuspension/end.md)
+- [func end()](./avcoordinatedplaybacksuspension/end%28%29.md)
   Ends a suspension.
-- [func end(proposingNewTime: CMTime)](avcoordinatedplaybacksuspension/end(proposingnewtime:).md)
+- [func end(proposingNewTime: CMTime)](./avcoordinatedplaybacksuspension/end%28proposingnewtime%29.md)
   Ends a suspension and proposes a new playback time to the group.
 ### Initializers
-- [init(String)](avcoordinatedplaybacksuspension/reason-swift.struct/init(_:).md)
+- [init(String)](./avcoordinatedplaybacksuspension/reason-swift.struct/init%28_%29.md)
   Creates a suspension with a string.
-- [init(rawValue: String)](avcoordinatedplaybacksuspension/reason-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./avcoordinatedplaybacksuspension/reason-swift.struct/init%28rawvalue%29.md)
   Creates a suspension with a raw string value.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func beginSuspension(for: AVCoordinatedPlaybackSuspension.Reason) -> AVCoordinatedPlaybackSuspension](avplaybackcoordinator/beginsuspension(for:).md)
+### Suspending state coordination
+- [func beginSuspension(for: AVCoordinatedPlaybackSuspension.Reason) -> AVCoordinatedPlaybackSuspension](./avplaybackcoordinator/beginsuspension%28for%29.md)
   Tells the coordinator to stop sending playback commands temporarily when the playback object disconnects from the group activity.
-- [func expectedItemTime(atHostTime: CMTime) -> CMTime](avplaybackcoordinator/expecteditemtime(athosttime:).md)
+- [func expectedItemTime(atHostTime: CMTime) -> CMTime](./avplaybackcoordinator/expecteditemtime%28athosttime%29.md)
   Returns a time in the current item’s timeline that the coordinator expects to play at the specified host time.
 
 

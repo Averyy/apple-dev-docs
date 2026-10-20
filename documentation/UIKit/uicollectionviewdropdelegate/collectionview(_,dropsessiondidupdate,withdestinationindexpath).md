@@ -1,7 +1,8 @@
 # collectionView(_:dropSessionDidUpdate:withDestinationIndexPath:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells your delegate that the position of the dragged data over the collection view changed.
 
@@ -17,9 +18,13 @@ Tells your delegate that the position of the dragged data over the collection vi
 optional func collectionView(_ collectionView: UICollectionView, dropSessionDidUpdate session: any UIDropSession, withDestinationIndexPath destinationIndexPath: IndexPath?) -> UICollectionViewDropProposal
 ```
 
+```objc
+- (UICollectionViewDropProposal *) collectionView:(UICollectionView *) collectionView dropSessionDidUpdate:(id<UIDropSession>) session withDestinationIndexPath:(NSIndexPath *) destinationIndexPath;
+```
+
 ## Mentions
 
-- [Supporting Drag and Drop in Collection Views](supporting-drag-and-drop-in-collection-views.md)
+- [Supporting Drag and Drop in Collection Views](../supporting-drag-and-drop-in-collection-views.md)
 
 #### Return Value
 
@@ -29,7 +34,7 @@ Your proposal for how to handle the content if it is dropped at the specified lo
 
 While the user is dragging content, the collection view calls this method repeatedly to determine how you would handle the drop if it occurred at the specified location. The collection view provides visual feedback to the user based on your proposal.
 
-In your implementation of this method, create a [`UICollectionViewDropProposal`](uicollectionviewdropproposal.md) object and use it to convey your intentions. Because this method is called repeatedly while the user drags over the table view, your implementation should return as quickly as possible.
+In your implementation of this method, create a [`UICollectionViewDropProposal`](../uicollectionviewdropproposal.md) object and use it to convey your intentions. Because this method is called repeatedly while the user drags over the table view, your implementation should return as quickly as possible.
 
 ## Parameters
 
@@ -39,11 +44,12 @@ In your implementation of this method, create a [`UICollectionViewDropProposal`]
 
 ## See Also
 
-- [func collectionView(UICollectionView, dropSessionDidEnter: any UIDropSession)](uicollectionviewdropdelegate/collectionview(_:dropsessiondidenter:).md)
+### Tracking the drag movements
+- [func collectionView(UICollectionView, dropSessionDidEnter: any UIDropSession)](./collectionview%28_,dropsessiondidenter%29.md)
   Notifies you when dragged content enters the collection view’s bounds rectangle.
-- [func collectionView(UICollectionView, dropSessionDidExit: any UIDropSession)](uicollectionviewdropdelegate/collectionview(_:dropsessiondidexit:).md)
+- [func collectionView(UICollectionView, dropSessionDidExit: any UIDropSession)](./collectionview%28_,dropsessiondidexit%29.md)
   Notifies you when dragged content exits the collection view’s bounds rectangle.
-- [func collectionView(UICollectionView, dropSessionDidEnd: any UIDropSession)](uicollectionviewdropdelegate/collectionview(_:dropsessiondidend:).md)
+- [func collectionView(UICollectionView, dropSessionDidEnd: any UIDropSession)](./collectionview%28_,dropsessiondidend%29.md)
   Notifies you when the drag operation ends.
 
 

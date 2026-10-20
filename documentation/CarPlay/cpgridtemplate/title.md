@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title shown in the grid template’s navigation bar.
 
@@ -14,6 +15,10 @@ The title shown in the grid template’s navigation bar.
 
 ```swift
 var title: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * title;
 ```
 
 

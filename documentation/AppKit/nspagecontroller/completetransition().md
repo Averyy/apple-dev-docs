@@ -1,7 +1,8 @@
 # completeTransition()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the page transition is completed.
 
@@ -14,9 +15,13 @@ Invoked when the page transition is completed.
 func completeTransition()
 ```
 
+```objc
+- (void) completeTransition;
+```
+
 #### Discussion
 
-See [`Completing the Page Controller Transition`](nspagecontroller#Completing-the-Page-Controller-Transition.md) for a complete description.
+See [Completing the Page Controller Transition](../nspagecontroller.md#Completing-the-Page-Controller-Transition) for a complete description.
 
 
 ---

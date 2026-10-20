@@ -1,7 +1,8 @@
 # RequestDeviceConfigurationChange
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Instructs the host to initiate a configuration change operation.
 
@@ -10,13 +11,13 @@ Instructs the host to initiate a configuration change operation.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t RequestDeviceConfigurationChange(uint64_t in_change_action, OSObject *in_change_info);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -40,8 +41,8 @@ Changing the safety offset.
 
 ## Parameters
 
-- `in_change_action`: A [`uint64_t`](https://developer.apple.com/documentation/kernel/uint64_t) that indicates the action the device object takes. The invocation of [`PerformDeviceConfigurationChange`](iouseraudioclockdevice/performdeviceconfigurationchange.md) passes this same action back to your driver. This value is purely for the driver’s use; the host doesn’t look at this value.
-- `in_change_info`: A pointer to an [`OSObject`](https://developer.apple.com/documentation/driverkit/osobject) containing information about the configuration change. The invocation of [`PerformDeviceConfigurationChange`](iouseraudioclockdevice/performdeviceconfigurationchange.md) passes this same info back to your driver. This value is purely for the driver’s use; the host doesn’t look at this value.
+- `in_change_action`: A [`uint64_t`](../../kernel/uint64_t.md) that indicates the action the device object takes. The invocation of [`PerformDeviceConfigurationChange`](./performdeviceconfigurationchange.md) passes this same action back to your driver. This value is purely for the driver’s use; the host doesn’t look at this value.
+- `in_change_info`: A pointer to an [`OSObject`](../../DriverKit/osobject.md) containing information about the configuration change. The invocation of [`PerformDeviceConfigurationChange`](./performdeviceconfigurationchange.md) passes this same info back to your driver. This value is purely for the driver’s use; the host doesn’t look at this value.
 
 
 ---

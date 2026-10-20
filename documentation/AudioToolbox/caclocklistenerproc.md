@@ -1,10 +1,11 @@
 # CAClockListenerProc
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 typealias CAClockListenerProc = (UnsafeMutableRawPointer, CAClockMessage, UnsafeRawPointer) -> Void
 ```
 
+```c
+typedef void (*)(void *, enum CAClockMessage, const void *) CAClockListenerProc;
+```
+
 ## See Also
 
-- [func CAClockAddListener(CAClockRef, CAClockListenerProc, UnsafeMutableRawPointer) -> OSStatus](caclockaddlistener(_:_:_:).md)
-- [func CAClockRemoveListener(CAClockRef, CAClockListenerProc, UnsafeMutableRawPointer) -> OSStatus](caclockremovelistener(_:_:_:).md)
-- [enum CAClockMessage](caclockmessage.md)
+### Adding and Removing Listeners
+- [func CAClockAddListener(CAClockRef, CAClockListenerProc, UnsafeMutableRawPointer) -> OSStatus](./caclockaddlistener%28_,_,_%29.md)
+- [func CAClockRemoveListener(CAClockRef, CAClockListenerProc, UnsafeMutableRawPointer) -> OSStatus](./caclockremovelistener%28_,_,_%29.md)
+- [enum CAClockMessage](./caclockmessage.md)
 
 
 ---

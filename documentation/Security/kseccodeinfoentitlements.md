@@ -1,7 +1,8 @@
 # kSecCodeInfoEntitlements
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value represents the embedded entitlement blob of the code, if any.
 
@@ -15,11 +16,15 @@ A key whose value represents the embedded entitlement blob of the code, if any.
 let kSecCodeInfoEntitlements: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoEntitlements;
+```
+
 #### Discussion
 
-The value is a [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) object.
+The value is a [`CFData`](../CoreFoundation/cfdata.md) object.
 
-Specify the [`kSecCSRequirementInformation`](kseccsrequirementinformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](seccodecopysigninginformation(_:_:_:).md) to get this information.
+Specify the [`kSecCSRequirementInformation`](./kseccsrequirementinformation.md) flag when calling the [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md) to get this information.
 
 
 ---

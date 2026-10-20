@@ -1,7 +1,8 @@
 # playCommand
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command object for starting playback of the current item.
 
@@ -20,17 +21,22 @@ The command object for starting playback of the current item.
 var playCommand: MPRemoteCommand { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MPRemoteCommand * playCommand;
+```
+
 #### Discussion
 
 Use the object in this property to register your app’s handler for pausing the currently playing track. In your handler, play the current item from the point at which the track was paused, or from the beginning if the item was not paused. You can disable the command if your app does not support it.
 
 ## See Also
 
-- [var pauseCommand: MPRemoteCommand](mpremotecommandcenter/pausecommand.md)
+### Playback commands
+- [var pauseCommand: MPRemoteCommand](./pausecommand.md)
   The command object for pausing playback of the current item.
-- [var stopCommand: MPRemoteCommand](mpremotecommandcenter/stopcommand.md)
+- [var stopCommand: MPRemoteCommand](./stopcommand.md)
   The command object for stopping playback of the current item.
-- [var togglePlayPauseCommand: MPRemoteCommand](mpremotecommandcenter/toggleplaypausecommand.md)
+- [var togglePlayPauseCommand: MPRemoteCommand](./toggleplaypausecommand.md)
   The command object for toggling between playing and pausing the current item.
 
 

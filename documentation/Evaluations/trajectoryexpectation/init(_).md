@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a trajectory expectation from generated content.
 
@@ -23,7 +24,7 @@ init(_ content: GeneratedContent) throws
 
 #### Discussion
 
-> **Note**: An error if the content is malformed or missing required properties.
+> **Throws**: An error if the content is malformed or missing required properties.
 
 ## Parameters
 

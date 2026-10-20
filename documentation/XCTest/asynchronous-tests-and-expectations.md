@@ -1,6 +1,7 @@
 # Asynchronous Tests and Expectations
 
-**Framework**: XCTest
+**Framework**: XCTest  
+**Role**: API Collection
 
 Verify that asynchronous code behaves as expected.
 
@@ -45,7 +46,7 @@ When you can’t use Swift `async`, use expectations to test asynchronous code. 
 - A `Future` or `Promise` in Swift Combine
 - A situation where it needs to complete within a specific amount of time
 
-Before you perform an asynchronous task in your test method, create an instance of [`XCTestExpectation`](xctestexpectation.md) with a description of the task.
+Before you perform an asynchronous task in your test method, create an instance of [`XCTestExpectation`](./xctestexpectation.md) with a description of the task.
 
 ```swift
 // Create an expectation for an asynchronous task.
@@ -66,7 +67,7 @@ fileManager.openFileAsync(with: "exampleFilename") { file, error in
 wait(for: [expectation], timeout: 10.0)
 ```
 
-When the asynchronous task returns (for example, in a callback), perform assertions to confirm that the task’s actual results meet your expected results. When the task completes, call the [`fulfill()`](xctestexpectation/fulfill().md) method on the expectation to indicate to the test that it can stop waiting and proceed with the next test.
+When the asynchronous task returns (for example, in a callback), perform assertions to confirm that the task’s actual results meet your expected results. When the task completes, call the [`fulfill()`](./xctestexpectation/fulfill%28%29.md) method on the expectation to indicate to the test that it can stop waiting and proceed with the next test.
 
 ```swift
 fileManager.openFileAsync(with: "exampleFilename") { file, error in
@@ -88,23 +89,23 @@ If the test doesn’t execute the `fulfill()` method before the wait statement�
 ## Topics
 
 ### Expectations
-- [class XCTestExpectation](xctestexpectation.md)
+- [class XCTestExpectation](./xctestexpectation.md)
   An expected outcome in an asynchronous test.
 ### Key Value Observing Expectations
-- [class XCTKVOExpectation](xctkvoexpectation.md)
+- [class XCTKVOExpectation](./xctkvoexpectation.md)
   An expectation that a specific key-value observing (KVO) condition fulfills.
-- [class XCTKeyPathExpectation](xctkeypathexpectation.md)
+- [class XCTKeyPathExpectation](./xctkeypathexpectation.md)
   An expectation that a specific key-value observing (KVO) condition fulfills.
 ### Notification-Based Expectations
-- [class XCTNSNotificationExpectation](xctnsnotificationexpectation.md)
+- [class XCTNSNotificationExpectation](./xctnsnotificationexpectation.md)
   An expectation that is fulfilled when an expected `NSNotification` is received.
-- [class XCTDarwinNotificationExpectation](xctdarwinnotificationexpectation.md)
+- [class XCTDarwinNotificationExpectation](./xctdarwinnotificationexpectation.md)
   An expectation that is fulfilled when an expected Darwin notification is received.
 ### Predicate-Based Expectations
-- [class XCTNSPredicateExpectation](xctnspredicateexpectation.md)
+- [class XCTNSPredicateExpectation](./xctnspredicateexpectation.md)
   An expectation that’s fulfilled when an `NSPredicate` is satisfied.
 ### Expectation Waiters
-- [class XCTWaiter](xctwaiter.md)
+- [class XCTWaiter](./xctwaiter.md)
   Waits for the fulfillment of a group of expectations.
 
 

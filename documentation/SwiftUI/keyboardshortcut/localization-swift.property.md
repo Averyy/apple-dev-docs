@@ -1,7 +1,8 @@
 # localization
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localization strategy to apply to this shortcut.
 
@@ -20,9 +21,10 @@ var localization: KeyboardShortcut.Localization
 
 ## See Also
 
-- [init(KeyEquivalent, modifiers: EventModifiers, localization: KeyboardShortcut.Localization)](keyboardshortcut/init(_:modifiers:localization:).md)
+### Creating a localized shortcut
+- [init(KeyEquivalent, modifiers: EventModifiers, localization: KeyboardShortcut.Localization)](./init%28_,modifiers,localization%29.md)
   Creates a new keyboard shortcut with the given key equivalent and set of modifier keys.
-- [KeyboardShortcut.Localization](keyboardshortcut/localization-swift.struct.md)
+- [KeyboardShortcut.Localization](./localization-swift.struct.md)
   Options for how a keyboard shortcut participates in automatic localization.
 
 

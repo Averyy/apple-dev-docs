@@ -1,7 +1,8 @@
 # measure(isolation:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -11,6 +12,8 @@
 - tvOS 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
+
+> **Deprecated**: Replaced by nonisolated(nonsending) overload
 
 ## Declaration
 

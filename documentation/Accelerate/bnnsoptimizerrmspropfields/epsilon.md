@@ -1,18 +1,21 @@
 # epsilon
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A term that the optimizer adds to the denominator.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,27 +23,32 @@ A term that the optimizer adds to the denominator.
 var epsilon: Float
 ```
 
+```c
+float epsilon;
+```
+
 ## See Also
 
-- [var learning_rate: Float](bnnsoptimizerrmspropfields/learning_rate.md)
+### Instance Properties
+- [var learning_rate: Float](./learning_rate.md)
   A value that specifies the learning rate.
-- [var alpha: Float](bnnsoptimizerrmspropfields/alpha.md)
+- [var alpha: Float](./alpha.md)
   A constant that specifies smoothing.
-- [var centered: Bool](bnnsoptimizerrmspropfields/centered.md)
+- [var centered: Bool](./centered.md)
   A Boolean value that specifies whether to use the centered variant.
-- [var momentum: Float](bnnsoptimizerrmspropfields/momentum.md)
+- [var momentum: Float](./momentum.md)
   The rate of momentum decay.
-- [var gradient_scale: Float](bnnsoptimizerrmspropfields/gradient_scale.md)
+- [var gradient_scale: Float](./gradient_scale.md)
   A value that specifies the gradient scaling factor.
-- [var regularization_scale: Float](bnnsoptimizerrmspropfields/regularization_scale.md)
+- [var regularization_scale: Float](./regularization_scale.md)
   A value that specifies the regularization scaling factor.
-- [var clip_gradients: Bool](bnnsoptimizerrmspropfields/clip_gradients.md)
+- [var clip_gradients: Bool](./clip_gradients.md)
   A Boolean value that specifies whether to clip the gradient between minimum and maximum values.
-- [var clip_gradients_min: Float](bnnsoptimizerrmspropfields/clip_gradients_min.md)
+- [var clip_gradients_min: Float](./clip_gradients_min.md)
   The values for the minimum gradient.
-- [var clip_gradients_max: Float](bnnsoptimizerrmspropfields/clip_gradients_max.md)
+- [var clip_gradients_max: Float](./clip_gradients_max.md)
   The values for the maximum gradient.
-- [var regularization_func: BNNSOptimizerRegularizationFunction](bnnsoptimizerrmspropfields/regularization_func.md)
+- [var regularization_func: BNNSOptimizerRegularizationFunction](./regularization_func.md)
   The variable that specifies the regularization function.
 
 

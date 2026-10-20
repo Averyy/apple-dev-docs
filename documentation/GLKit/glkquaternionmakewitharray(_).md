@@ -1,7 +1,8 @@
 # GLKQuaternionMakeWithArray(_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a quaternion created from an array of components.
 
@@ -17,6 +18,10 @@ Returns a quaternion created from an array of components.
 func GLKQuaternionMakeWithArray(_ values: UnsafeMutablePointer<Float>!) -> GLKQuaternion
 ```
 
+```c
+static GLKQuaternion GLKQuaternionMakeWithArray(float values[4]);
+```
+
 #### Return Value
 
 A new quaternion.
@@ -27,17 +32,18 @@ A new quaternion.
 
 ## See Also
 
-- [func GLKQuaternionMake(Float, Float, Float, Float) -> GLKQuaternion](glkquaternionmake(_:_:_:_:).md)
+### Creating Quaternions
+- [func GLKQuaternionMake(Float, Float, Float, Float) -> GLKQuaternion](./glkquaternionmake%28_,_,_,_%29.md)
   Returns a quaternion created from its separate components.
-- [func GLKQuaternionMakeWithVector3(GLKVector3, Float) -> GLKQuaternion](glkquaternionmakewithvector3(_:_:).md)
+- [func GLKQuaternionMakeWithVector3(GLKVector3, Float) -> GLKQuaternion](./glkquaternionmakewithvector3%28_,_%29.md)
   Returns a quaternion created from a vector and a scalar.
-- [func GLKQuaternionMakeWithAngleAndAxis(Float, Float, Float, Float) -> GLKQuaternion](glkquaternionmakewithangleandaxis(_:_:_:_:).md)
+- [func GLKQuaternionMakeWithAngleAndAxis(Float, Float, Float, Float) -> GLKQuaternion](./glkquaternionmakewithangleandaxis%28_,_,_,_%29.md)
   Creates a quaternion that represents a rotation around an axis.
-- [func GLKQuaternionMakeWithAngleAndVector3Axis(Float, GLKVector3) -> GLKQuaternion](glkquaternionmakewithangleandvector3axis(_:_:).md)
+- [func GLKQuaternionMakeWithAngleAndVector3Axis(Float, GLKVector3) -> GLKQuaternion](./glkquaternionmakewithangleandvector3axis%28_,_%29.md)
   Creates a quaternion that represents a rotation around an axis.
-- [func GLKQuaternionMakeWithMatrix3(GLKMatrix3) -> GLKQuaternion](glkquaternionmakewithmatrix3(_:).md)
+- [func GLKQuaternionMakeWithMatrix3(GLKMatrix3) -> GLKQuaternion](./glkquaternionmakewithmatrix3%28_%29.md)
   Creates a quaternion from a rotation matrix.
-- [func GLKQuaternionMakeWithMatrix4(GLKMatrix4) -> GLKQuaternion](glkquaternionmakewithmatrix4(_:).md)
+- [func GLKQuaternionMakeWithMatrix4(GLKMatrix4) -> GLKQuaternion](./glkquaternionmakewithmatrix4%28_%29.md)
   Creates a quaternion from a rotation matrix.
 
 

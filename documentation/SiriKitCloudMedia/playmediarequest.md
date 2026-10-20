@@ -1,7 +1,8 @@
 # PlayMediaRequest
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A request for a media playback queue.
 
@@ -10,15 +11,17 @@ A request for a media playback queue.
 
 ## Declaration
 
-```swift
+```
 object PlayMediaRequest
 ```
 
 ## Properties
 
 - `constraints` (Constraints) *(required)*: Limitations on the type and quantity of content the client can receive.
-- `userActivity` (UserActivity) *(required)*: A description of the playback queue. Your service provides the [`UserActivity`](useractivity.md) after it successfully handles a play media intent.
+- `userActivity` (UserActivity) *(required)*: A description of the playback queue. Your service provides the [`UserActivity`](./useractivity.md) after it successfully handles a play media intent.
 - `version` (string) *(required)*: The version of the `SiriKitMediaAPI` library the client uses.
+
+  **Allowed Values**: `/[0-9]+\.[0-9]+\.[0-9]+/`
 
 
 ---

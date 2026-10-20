@@ -1,7 +1,8 @@
 # CMMemoryPool
 
 **Framework**: Core Media  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An instance that optimizes memory allocation when working with large blocks of memory.
 
@@ -20,13 +21,17 @@ An instance that optimizes memory allocation when working with large blocks of m
 class CMMemoryPool
 ```
 
+```c
+typedef struct OpaqueCMMemoryPool * CMMemoryPoolRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

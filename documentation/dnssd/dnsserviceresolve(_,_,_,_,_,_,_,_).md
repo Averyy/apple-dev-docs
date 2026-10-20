@@ -1,7 +1,8 @@
 # DNSServiceResolve(_:_:_:_:_:_:_:_:)
 
 **Framework**: dnssd  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 10.0+
@@ -18,24 +19,29 @@
 func DNSServiceResolve(_ sdRef: UnsafeMutablePointer<DNSServiceRef?>!, _ flags: DNSServiceFlags, _ interfaceIndex: UInt32, _ name: UnsafePointer<CChar>!, _ regtype: UnsafePointer<CChar>!, _ domain: UnsafePointer<CChar>!, _ callBack: DNSServiceResolveReply!, _ context: UnsafeMutableRawPointer!) -> DNSServiceErrorType
 ```
 
+```c
+DNSServiceErrorType DNSServiceResolve(DNSServiceRef*sdRef, DNSServiceFlags flags, uint32_t interfaceIndex, const char *name, const char *regtype, const char *domain, DNSServiceResolveReply callBack, void *context);
+```
+
 #### Return Value
 
-Returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred (the callback is never invoked and the DNSServiceRef is not initialized).
+Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred (the callback is never invoked and the DNSServiceRef is not initialized).
 
 ## Parameters
 
-- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](kdnsserviceerr_noerror.md), and the resolve operation will run indefinitely until the client terminates it by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](dnsservicerefdeallocate(_:).md).
+- `sdRef`: A pointer to an uninitialized DNSServiceRef. If the call succeeds then it initializes the DNSServiceRef, returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md), and the resolve operation will run indefinitely until the client terminates it by passing this DNSServiceRef to [`DNSServiceRefDeallocate(_:)`](./dnsservicerefdeallocate%28_%29.md).
 - `flags`: Specifying kDNSServiceFlagsForceMulticast will cause query to be performed with a link-local mDNS query, even if the name is an apparently non-local name (i.e. a name not ending in “.local.”)
-- `interfaceIndex`: The interface on which to resolve the service. If this resolve call is as a result of a currently active [`DNSServiceBrowse(_:_:_:_:_:_:_:)`](dnsservicebrowse(_:_:_:_:_:_:_:).md) operation, then the interfaceIndex should be the index reported in the DNSServiceBrowseReply callback. If this resolve call is using information previously saved (e.g. in a preference file) for later use, then use interfaceIndex 0, because the desired service may now be reachable via a different physical interface. See “Constants for specifying an interface index” for more details.
-- `name`: The name of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](dnsservicebrowsereply.md) callback.
-- `regtype`: The type of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](dnsservicebrowsereply.md) callback.
-- `domain`: The domain of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](dnsservicebrowsereply.md) callback.
+- `interfaceIndex`: The interface on which to resolve the service. If this resolve call is as a result of a currently active [`DNSServiceBrowse(_:_:_:_:_:_:_:)`](./dnsservicebrowse%28_,_,_,_,_,_,_%29.md) operation, then the interfaceIndex should be the index reported in the DNSServiceBrowseReply callback. If this resolve call is using information previously saved (e.g. in a preference file) for later use, then use interfaceIndex 0, because the desired service may now be reachable via a different physical interface. See “Constants for specifying an interface index” for more details.
+- `name`: The name of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](./dnsservicebrowsereply.md) callback.
+- `regtype`: The type of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](./dnsservicebrowsereply.md) callback.
+- `domain`: The domain of the service instance to be resolved, as reported to the [`DNSServiceBrowseReply`](./dnsservicebrowsereply.md) callback.
 - `callBack`: The function to be called when a result is found, or if the call asynchronously fails.
 - `context`: An application context pointer which is passed to the callback function (may be NULL).
 
 ## See Also
 
-- [func DNSServiceBrowse(UnsafeMutablePointer<DNSServiceRef?>!, DNSServiceFlags, UInt32, UnsafePointer<CChar>!, UnsafePointer<CChar>!, DNSServiceBrowseReply!, UnsafeMutableRawPointer!) -> DNSServiceErrorType](dnsservicebrowse(_:_:_:_:_:_:_:).md)
+### Service Discovery
+- [func DNSServiceBrowse(UnsafeMutablePointer<DNSServiceRef?>!, DNSServiceFlags, UInt32, UnsafePointer<CChar>!, UnsafePointer<CChar>!, DNSServiceBrowseReply!, UnsafeMutableRawPointer!) -> DNSServiceErrorType](./dnsservicebrowse%28_,_,_,_,_,_,_%29.md)
   Browses for available services.
 
 

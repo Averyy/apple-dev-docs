@@ -1,19 +1,40 @@
 # init(image:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attachment containing a PNG representation of the provided image.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+convenience init(image: UIImage)
+```
+
+*macOS*
+
 ```swift
 convenience init(image: NSImage)
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
++ (instancetype) attachmentWithImage:(UIImage *) image;
+```
+
+*macOS*
+
+```objc
++ (instancetype) attachmentWithImage:(NSImage *) image;
+```
+
 #### Discussion
 
-Creates an attachment with a [`uniformTypeIdentifier`](xctattachment/uniformtypeidentifier.md) of `"public.png"`. Equivalent to calling [`init(image:quality:)`](xctattachment/init(image:quality:).md) with a `quality` value of [`XCTAttachment.ImageQuality.original`](xctattachment/imagequality/original.md).
+Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"public.png"`. Equivalent to calling [`init(image:quality:)`](./init%28image,quality%29.md) with a `quality` value of [`XCTAttachment.ImageQuality.original`](./imagequality/original.md).
 
 ## Parameters
 
@@ -21,15 +42,16 @@ Creates an attachment with a [`uniformTypeIdentifier`](xctattachment/uniformtype
 
 ## See Also
 
-- [convenience init(image: UIImage, quality: XCTAttachment.ImageQuality)](xctattachment/init(image:quality:).md)
+### Creating Attachments from Images and Screenshots
+- [convenience init(image: UIImage, quality: XCTAttachment.ImageQuality)](./init%28image,quality%29.md)
   Creates an attachment containing a representation of the provided image at the requested image quality.
-- [convenience init(screenshot: XCUIScreenshot)](xctattachment/init(screenshot:).md)
+- [convenience init(screenshot: XCUIScreenshot)](./init%28screenshot%29.md)
   Creates an attachment containing a PNG representation of the provided screenshot.
-- [convenience init(screenshot: XCUIScreenshot, quality: XCTAttachment.ImageQuality)](xctattachment/init(screenshot:quality:).md)
+- [convenience init(screenshot: XCUIScreenshot, quality: XCTAttachment.ImageQuality)](./init%28screenshot,quality%29.md)
   Creates an attachment containing a representation of the provided screenshot at the requested image quality.
-- [class XCUIScreenshot](../xcuiautomation/xcuiscreenshot.md)
+- [class XCUIScreenshot](../../XCUIAutomation/xcuiscreenshot.md)
   A captured image of a screen, app, or UI element state.
-- [XCTAttachment.ImageQuality](xctattachment/imagequality.md)
+- [XCTAttachment.ImageQuality](./imagequality.md)
   Compression quality options for image-based attachments.
 
 

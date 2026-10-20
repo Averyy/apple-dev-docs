@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A player that tried to join was rejected or a player that previously joined our game was ejected.
@@ -17,7 +18,8 @@ func didRejectPlayer(_ playerID: PlayerIdentifier, reason: any Error)
 
 ## See Also
 
-- [func multiplayerSessionFailed(reason: any Error)](tabletopgame/multiplayerdelegate-swift.protocol/multiplayersessionfailed(reason:).md)
+### Handling errors
+- [func multiplayerSessionFailed(reason: any Error)](./multiplayersessionfailed%28reason%29.md)
   We failed to start or join a new multiplayer session or had to terminate a previously started multiplayer session.
 
 

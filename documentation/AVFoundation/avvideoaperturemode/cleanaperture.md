@@ -1,7 +1,8 @@
 # cleanAperture
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The pixel aspect ratio and clean aperture will be applied.
 
@@ -19,15 +20,20 @@ The pixel aspect ratio and clean aperture will be applied.
 static let cleanAperture: AVVideoApertureMode
 ```
 
+```c
+extern AVVideoApertureMode const AVVideoApertureModeCleanAperture;
+```
+
 #### Discussion
 
 An image’s clean aperture is a region of video free from transition artifacts caused by the encoding of the signal.
 
 ## See Also
 
-- [static let encodedPixels: AVVideoApertureMode](avvideoaperturemode/encodedpixels.md)
+### Aperture modes
+- [static let encodedPixels: AVVideoApertureMode](./encodedpixels.md)
   The encoded dimensions of the image description are displayed.
-- [static let productionAperture: AVVideoApertureMode](avvideoaperturemode/productionaperture.md)
+- [static let productionAperture: AVVideoApertureMode](./productionaperture.md)
   The pixel aspect ratio will be applied.
 
 

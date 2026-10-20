@@ -1,7 +1,8 @@
 # LogisticRegressionClassifier.Configuration
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A logistic regression classifier configuration.
 
@@ -20,42 +21,45 @@ A logistic regression classifier configuration.
 struct Configuration
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar`, `Scalar` conforms to `BinaryFloatingPoint`, `Label` conforms to `Comparable`, `Label` conforms to `Decodable`, `Label` conforms to `Encodable`, and `Label` conforms to `Hashable`.
+
 ## Topics
 
 ### Creating a configuration
-- [init()](logisticregressionclassifier/configuration-swift.struct/init.md)
+- [init()](./configuration-swift.struct/init%28%29.md)
   Creates a default logistic regression classifier configuration.
 ### Getting the properties
-- [var convergenceThreshold: Double](logisticregressionclassifier/configuration-swift.struct/convergencethreshold.md)
+- [var convergenceThreshold: Double](./configuration-swift.struct/convergencethreshold.md)
   The convergence threshold.
-- [var earlyStopIterationCount: Int](logisticregressionclassifier/configuration-swift.struct/earlystopiterationcount.md)
+- [var earlyStopIterationCount: Int](./configuration-swift.struct/earlystopiterationcount.md)
   The number of iterations to use when evaluating whether to stop early.
-- [var l1Penalty: Double](logisticregressionclassifier/configuration-swift.struct/l1penalty.md)
+- [var l1Penalty: Double](./configuration-swift.struct/l1penalty.md)
   Weight of the L1 regularization term.
-- [var l2Penalty: Double](logisticregressionclassifier/configuration-swift.struct/l2penalty.md)
+- [var l2Penalty: Double](./configuration-swift.struct/l2penalty.md)
   Weight of the L2 regularization term.
-- [var maximumIterations: Int](logisticregressionclassifier/configuration-swift.struct/maximumiterations.md)
+- [var maximumIterations: Int](./configuration-swift.struct/maximumiterations.md)
   The maximum number of allowed passes through the data.
-- [var optimizationStrategy: OptimizationStrategy](logisticregressionclassifier/configuration-swift.struct/optimizationstrategy.md)
+- [var optimizationStrategy: OptimizationStrategy](./configuration-swift.struct/optimizationstrategy.md)
   The optimization strategy.
-- [var scaleFeatures: Bool](logisticregressionclassifier/configuration-swift.struct/scalefeatures.md)
+- [var scaleFeatures: Bool](./configuration-swift.struct/scalefeatures.md)
   A Boolean value indicating whether to scale the input features.
-- [var stepSize: Double](logisticregressionclassifier/configuration-swift.struct/stepsize.md)
+- [var stepSize: Double](./configuration-swift.struct/stepsize.md)
   The starting step size to use for the solver.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(labels: Set<Label>, configuration: LogisticRegressionClassifier<Scalar, Label>.Configuration)](logisticregressionclassifier/init(labels:configuration:).md)
+### Creating a classifier
+- [init(labels: Set<Label>, configuration: LogisticRegressionClassifier<Scalar, Label>.Configuration)](./init%28labels,configuration%29.md)
   Creates a logistic regression classifier.
 
 

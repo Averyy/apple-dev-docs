@@ -1,6 +1,7 @@
 # Providing 3D Virtual Content with SceneKit
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: Article
 
 Use SceneKit to add realistic three-dimensional objects to your AR experience.
 
@@ -16,7 +17,7 @@ sceneView.scene.rootNode.addChildNode(cubeNode)
 
 The code above places an object directly in the view’s SceneKit scene. The object automatically appears to track a real-world position because ARKit matches SceneKit space to real-world space.
 
-Alternatively, you can use the [`ARAnchor`](aranchor.md) class to track real-world positions, either by creating anchors yourself and adding them to the session or by observing anchors that ARKit automatically creates. For example, when plane detection is enabled, ARKit adds and updates anchors for each detected plane. To add visual content for these anchors, implement [`ARSCNViewDelegate`](arscnviewdelegate.md) methods such as the following:
+Alternatively, you can use the [`ARAnchor`](./aranchor.md) class to track real-world positions, either by creating anchors yourself and adding them to the session or by observing anchors that ARKit automatically creates. For example, when plane detection is enabled, ARKit adds and updates anchors for each detected plane. To add visual content for these anchors, implement [`ARSCNViewDelegate`](./arscnviewdelegate.md) methods such as the following:
 
 ```swift
 func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
@@ -37,17 +38,18 @@ func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: AR
 }
 ```
 
-##### Follow Best Practices for Designing 3d Assets
+##### Follow Best Practices for Designing 3D Assets
 
-- Use the SceneKit physically based lighting model for materials for a more realistic appearance. (See the [`SCNMaterial`](https://developer.apple.com/documentation/scenekit/scnmaterial) class and the [`Badger: Advanced Rendering in SceneKit`](https://developer.apple.comhttps://developer.apple.com/library/archive/samplecode/Badger/Introduction/Intro.html#//apple_ref/doc/uid/TP40017309) sample code project.)
+- Use the SceneKit physically based lighting model for materials for a more realistic appearance. (See the [`SCNMaterial`](../SceneKit/scnmaterial.md) class and the [Badger: Advanced Rendering in SceneKit](https://developer.apple.com/library/archive/samplecode/Badger/Introduction/Intro.html#//apple_ref/doc/uid/TP40017309) sample code project.)
 - Bake ambient occlusion shading so that objects appear properly lit in a wide variety of scene lighting conditions.
 - If you create a virtual object that you intend to place on a real-world flat surface in AR, include a transparent plane with a soft shadow texture below the object in your 3D asset.
 
 ## See Also
 
-- [var session: ARSession](arscnview/session.md)
+### Essentials
+- [var session: ARSession](./arscnview/session.md)
   The AR session that manages motion tracking and camera image processing for the view’s contents.
-- [var scene: SCNScene](arscnview/scene.md)
+- [var scene: SCNScene](./arscnview/scene.md)
   The SceneKit scene to be displayed in the view.
 
 

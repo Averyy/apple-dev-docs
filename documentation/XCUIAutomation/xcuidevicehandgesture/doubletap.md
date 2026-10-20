@@ -1,18 +1,23 @@
 # XCUIDeviceHandGesture.doubleTap
 
 **Framework**: XCUIAutomation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A double-tap hand gesture.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 case doubleTap
+```
+
+```c
+XCUIDeviceHandGestureDoubleTap
 ```
 
 

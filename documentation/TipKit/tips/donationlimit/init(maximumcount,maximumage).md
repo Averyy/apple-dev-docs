@@ -1,7 +1,8 @@
 # init(maximumCount:maximumAge:)
 
 **Framework**: TipKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Passed to an `Event` to specify the maximum number and maximum age of donations the event will persist and query.
 

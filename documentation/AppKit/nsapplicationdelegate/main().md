@@ -1,12 +1,13 @@
 # main()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Provides the top-level entry point for the app.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

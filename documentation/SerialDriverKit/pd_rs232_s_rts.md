@@ -1,7 +1,8 @@
 # PD_RS232_S_RTS
 
 **Framework**: SerialDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 The request-to-send signal.
 
@@ -10,23 +11,24 @@ The request-to-send signal.
 
 ## Declaration
 
-```swift
+```c
 #define PD_RS232_S_RTS
 ```
 
 ## See Also
 
-- [PD_RS232_S_DTR](pd_rs232_s_dtr.md)
+### Control Bits
+- [PD_RS232_S_DTR](./pd_rs232_s_dtr.md)
   The data-terminal-ready signal.
-- [PD_RS232_S_DSR](pd_rs232_s_dsr.md)
+- [PD_RS232_S_DSR](./pd_rs232_s_dsr.md)
   The data-set-ready signal.
-- [PD_RS232_S_CTS](pd_rs232_s_cts.md)
+- [PD_RS232_S_CTS](./pd_rs232_s_cts.md)
   The clear-to-send signal.
-- [PD_RS232_S_RXO](pd_rs232_s_rxo.md)
+- [PD_RS232_S_RXO](./pd_rs232_s_rxo.md)
   The receive-data signal.
-- [PD_RS232_S_TXO](pd_rs232_s_txo.md)
+- [PD_RS232_S_TXO](./pd_rs232_s_txo.md)
   The transmit-data signal.
-- [PD_RS232_S_DCD](pd_rs232_s_dcd.md)
+- [PD_RS232_S_DCD](./pd_rs232_s_dcd.md)
   The data-carrier-detect signal.
 
 

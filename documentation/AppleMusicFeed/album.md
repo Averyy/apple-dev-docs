@@ -1,7 +1,8 @@
 # Album
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents an Album resource.
 
@@ -10,39 +11,39 @@ The data structure that represents an Album resource.
 
 ## Declaration
 
-```swift
+```
 object Album
 ```
 
 ## Topics
 
 ### Related objects
-- [object Album.ArtistRole](album/artistrole.md)
+- [object Album.ArtistRole](./album/artistrole.md)
   Information about an artist’s role.
-- [object Album.Artworks](album/artworks-data.dictionary.md)
+- [object Album.Artworks](./album/artworks-data.dictionary.md)
   A mapping of locale to localized album cover art.
-- [object Album.Genre](album/genre.md)
+- [object Album.Genre](./album/genre.md)
   A genre name and its structure.
-- [object Album.Name](album/name-data.dictionary.md)
+- [object Album.Name](./album/name-data.dictionary.md)
   A mapping of locale to localized names for the album.
-- [object Album.NamePronunciation](album/namepronunciation-data.dictionary.md)
+- [object Album.NamePronunciation](./album/namepronunciation-data.dictionary.md)
   A mapping of locale to translations for the specific pronunciation-name translation type.
-- [object Album.Prices](album/prices-data.dictionary.md)
+- [object Album.Prices](./album/prices-data.dictionary.md)
   A mapping of locale to pricing information.
-- [object Album.RecordLabel](album/recordlabel.md)
+- [object Album.RecordLabel](./album/recordlabel.md)
   Information about a record label.
-- [object Album.RelatedArtist](album/relatedartist.md)
+- [object Album.RelatedArtist](./album/relatedartist.md)
   Information about a related artist.
-- [object Album.RelatedSong](album/relatedsong.md)
+- [object Album.RelatedSong](./album/relatedsong.md)
   Information about a related song.
-- [object Album.ReleaseDate](album/releasedate-data.dictionary.md)
+- [object Album.ReleaseDate](./album/releasedate-data.dictionary.md)
   A mapping of locale to release date for the album.
-- [object Album.TitleVersion](album/titleversion-data.dictionary.md)
+- [object Album.TitleVersion](./album/titleversion-data.dictionary.md)
   A mapping of locale to translations for the specific title-version translation type.
-- [object Album.TitleVersionPronunciation](album/titleversionpronunciation-data.dictionary.md)
+- [object Album.TitleVersionPronunciation](./album/titleversionpronunciation-data.dictionary.md)
   A mapping of locale to translations for the specific title-version-pronunciation-name translation type.
 ### Dictionaries
-- [object Album.RelevanceScore](album/relevancescore-data.dictionary.md)
+- [object Album.RelevanceScore](./album/relevancescore-data.dictionary.md)
   A score representing album relevance, used to rank albums when surfacing content.
 
 ## Properties
@@ -75,13 +76,14 @@ object Album
 
 ## See Also
 
-- [object Song](song.md)
+### Objects
+- [object Song](./song.md)
   The data structure that represents a Song resource.
-- [object Artist](artist.md)
+- [object Artist](./artist.md)
   The data structure that represents an Artist resource.
-- [object PopularityTopChartAlbums](popularitytopchartalbums.md)
+- [object PopularityTopChartAlbums](./popularitytopchartalbums.md)
   The data structure that represents an album popularity chart resource.
-- [object PopularityTopChartSongs](popularitytopchartsongs.md)
+- [object PopularityTopChartSongs](./popularitytopchartsongs.md)
   The data structure that represents a song popularity chart resource.
 
 

@@ -1,7 +1,8 @@
 # typeUnicodeText
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Unicode text. Native byte ordering, optional BOM.
 

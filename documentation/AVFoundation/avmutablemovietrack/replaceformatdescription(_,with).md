@@ -1,7 +1,8 @@
 # replaceFormatDescription(_:with:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the track’s format description with a new format description.
 
@@ -19,18 +20,23 @@ Replaces the track’s format description with a new format description.
 func replaceFormatDescription(_ formatDescription: CMFormatDescription, with newFormatDescription: CMFormatDescription)
 ```
 
+```objc
+- (void) replaceFormatDescription:(CMFormatDescriptionRef) formatDescription withFormatDescription:(CMFormatDescriptionRef) newFormatDescription;
+```
+
 #### Discussion
 
-Use this method to change a track’s format descriptions, such as adding format description extensions to a format description or changing the audio channel layout of an audio track. Format description can have extensions of type [`kCMFormatDescriptionExtension_VerbatimSampleDescription`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_verbatimsampledescription) and [`kCMFormatDescriptionExtension_VerbatimISOSampleEntry`](https://developer.apple.com/documentation/coremedia/kcmformatdescriptionextension_verbatimisosampleentry). If you modify a copy of a format description, delete those extensions from the copy or your changes might be ignored.
+Use this method to change a track’s format descriptions, such as adding format description extensions to a format description or changing the audio channel layout of an audio track. Format description can have extensions of type [`kCMFormatDescriptionExtension_VerbatimSampleDescription`](../../CoreMedia/kcmformatdescriptionextension_verbatimsampledescription.md) and [`kCMFormatDescriptionExtension_VerbatimISOSampleEntry`](../../CoreMedia/kcmformatdescriptionextension_verbatimisosampleentry.md). If you modify a copy of a format description, delete those extensions from the copy or your changes might be ignored.
 
 ## Parameters
 
-- `formatDescription`: The [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) object to be replaced.
-- `newFormatDescription`: The [`CMFormatDescription`](https://developer.apple.com/documentation/coremedia/cmformatdescription) object to replacing the specified format description.
+- `formatDescription`: The [`CMFormatDescription`](../../CoreMedia/cmformatdescription.md) object to be replaced.
+- `newFormatDescription`: The [`CMFormatDescription`](../../CoreMedia/cmformatdescription.md) object to replacing the specified format description.
 
 ## See Also
 
-- [var formatDescriptions: [Any]](avmutablemovietrack/formatdescriptions.md)
+### Changing format descriptions
+- [var formatDescriptions: [Any]](./formatdescriptions.md)
   The format descriptions of the media samples that a track references.
 
 

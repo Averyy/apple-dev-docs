@@ -1,7 +1,8 @@
 # browser(_:heightOfRow:inColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the height of the specified row in the specified column.
 
@@ -15,13 +16,17 @@ Specifies the height of the specified row in the specified column.
 optional func browser(_ browser: NSBrowser, heightOfRow row: Int, inColumn columnIndex: Int) -> CGFloat
 ```
 
+```objc
+- (CGFloat) browser:(NSBrowser *) browser heightOfRow:(NSInteger) row inColumn:(NSInteger) columnIndex;
+```
+
 #### Return Value
 
 The height to set for the specified row, which must be greater than 0.
 
 #### Discussion
 
-The values returned for this method may be cached. Therefore, you should call [`noteHeightOfRowsWithIndexesChanged(_:inColumn:)`](nsbrowser/noteheightofrowswithindexeschanged(_:incolumn:).md) to invalidate a row’s height before changing it.
+The values returned for this method may be cached. Therefore, you should call [`noteHeightOfRowsWithIndexesChanged(_:inColumn:)`](../nsbrowser/noteheightofrowswithindexeschanged%28_,incolumn%29.md) to invalidate a row’s height before changing it.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ The values returned for this method may be cached. Therefore, you should call [`
 
 ## See Also
 
-- [func browser(NSBrowser, shouldSizeColumn: Int, forUserResize: Bool, toWidth: CGFloat) -> CGFloat](nsbrowserdelegate/browser(_:shouldsizecolumn:foruserresize:towidth:).md)
+### Sizing
+- [func browser(NSBrowser, shouldSizeColumn: Int, forUserResize: Bool, toWidth: CGFloat) -> CGFloat](./browser%28_,shouldsizecolumn,foruserresize,towidth%29.md)
   Used to determine a column’s initial size.
-- [func browser(NSBrowser, sizeToFitWidthOfColumn: Int) -> CGFloat](nsbrowserdelegate/browser(_:sizetofitwidthofcolumn:).md)
+- [func browser(NSBrowser, sizeToFitWidthOfColumn: Int) -> CGFloat](./browser%28_,sizetofitwidthofcolumn%29.md)
   Returns the ideal width for a column.
-- [func browserColumnConfigurationDidChange(Notification)](nsbrowserdelegate/browsercolumnconfigurationdidchange(_:).md)
+- [func browserColumnConfigurationDidChange(Notification)](./browsercolumnconfigurationdidchange%28_%29.md)
   Used by clients to implement their own column width persistence.
 
 

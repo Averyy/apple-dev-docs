@@ -1,7 +1,8 @@
 # applicationDidHide(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the app is now hidden.
 
@@ -15,19 +16,25 @@ Tells the delegate that the app is now hidden.
 optional func applicationDidHide(_ notification: Notification)
 ```
 
+```objc
+- (void) applicationDidHide:(NSNotification *) notification;
+```
+
 ## Parameters
 
-- `notification`: A notification named [`didHideNotification`](nsapplication/didhidenotification.md). Calling the [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) method of this notification returns the `NSApplication` object itself.
+- `notification`: A notification named [`didHideNotification`](../nsapplication/didhidenotification.md). Calling the [`object`](../../Foundation/nsnotification/object.md) method of this notification returns the `NSApplication` object itself.
 
 ## See Also
 
-- [func unhide(Any?)](nsapplication/unhide(_:).md)
+### Related Documentation
+- [func unhide(Any?)](../nsapplication/unhide%28_%29.md)
   Restores hidden windows to the screen and makes the receiver active.
-- [func applicationWillHide(Notification)](nsapplicationdelegate/applicationwillhide(_:).md)
+### Hiding Applications
+- [func applicationWillHide(Notification)](./applicationwillhide%28_%29.md)
   Tells the delegate that the app is about to be hidden.
-- [func applicationWillUnhide(Notification)](nsapplicationdelegate/applicationwillunhide(_:).md)
+- [func applicationWillUnhide(Notification)](./applicationwillunhide%28_%29.md)
   Tells the delegate that the app is about to become visible.
-- [func applicationDidUnhide(Notification)](nsapplicationdelegate/applicationdidunhide(_:).md)
+- [func applicationDidUnhide(Notification)](./applicationdidunhide%28_%29.md)
   Tells the delegate that the app is now visible.
 
 

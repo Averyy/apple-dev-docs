@@ -1,7 +1,8 @@
 # didCancelInteracting(with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a user interaction with the scrubber has been canceled.
 
@@ -15,15 +16,20 @@ Tells the delegate that a user interaction with the scrubber has been canceled.
 optional func didCancelInteracting(with scrubber: NSScrubber)
 ```
 
+```objc
+- (void) didCancelInteractingWithScrubber:(NSScrubber *) scrubber;
+```
+
 ## Parameters
 
 - `scrubber`: The scrubber the user is interacting with.
 
 ## See Also
 
-- [func didBeginInteracting(with: NSScrubber)](nsscrubberdelegate/didbegininteracting(with:).md)
+### Tracking user interaction
+- [func didBeginInteracting(with: NSScrubber)](./didbegininteracting%28with%29.md)
   Tells the delegate that the user is panning or scrolling the scrubber.
-- [func didFinishInteracting(with: NSScrubber)](nsscrubberdelegate/didfinishinteracting(with:).md)
+- [func didFinishInteracting(with: NSScrubber)](./didfinishinteracting%28with%29.md)
   Tells the delegate that a pan or scroll interaction with the scrubber has ended.
 
 

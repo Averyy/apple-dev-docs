@@ -1,7 +1,8 @@
 # range(of:options:locale:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range of a substring in the attributed string, if it exists.
 

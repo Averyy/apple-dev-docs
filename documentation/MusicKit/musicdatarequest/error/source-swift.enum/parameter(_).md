@@ -1,7 +1,8 @@
 # MusicDataRequest.Error.Source.parameter(_:)
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The URI query parameter that causes the error.
 

@@ -2,6 +2,7 @@
 
 **Framework**: DeveloperToolsSupport  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -21,10 +22,11 @@ static var column: Int { get }
 
 ## See Also
 
-- [static func makePreview() throws -> Preview](previewregistry/makepreview.md)
-- [static var preview: Preview](previewregistry/preview.md)
-- [static var fileID: String](previewregistry/fileid.md)
-- [static var line: Int](previewregistry/line.md)
+### Making a preview
+- [static func makePreview() throws -> Preview](./makepreview%28%29.md)
+- [static var preview: Preview](./preview.md)
+- [static var fileID: String](./fileid.md)
+- [static var line: Int](./line.md)
 
 
 ---

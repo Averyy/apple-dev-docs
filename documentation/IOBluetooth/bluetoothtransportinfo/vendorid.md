@@ -1,15 +1,20 @@
 # vendorID
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var vendorID: UInt32
+```
+
+```c
+uint32_t vendorID;
 ```
 
 

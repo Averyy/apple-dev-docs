@@ -1,7 +1,8 @@
 # kVTRotation_180
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that indicates a rotation of 180 degrees.
 
@@ -19,13 +20,18 @@ A constant that indicates a rotation of 180 degrees.
 let kVTRotation_180: CFString
 ```
 
+```c
+extern CFStringRef const kVTRotation_180;
+```
+
 ## See Also
 
-- [let kVTRotation_0: CFString](kvtrotation_0.md)
+### Rotations
+- [let kVTRotation_0: CFString](./kvtrotation_0.md)
   A constant that indicates a rotation of 0 degrees.
-- [let kVTRotation_CW90: CFString](kvtrotation_cw90.md)
+- [let kVTRotation_CW90: CFString](./kvtrotation_cw90.md)
   A constant that indicates a clockwise rotation of 90 degrees.
-- [let kVTRotation_CCW90: CFString](kvtrotation_ccw90.md)
+- [let kVTRotation_CCW90: CFString](./kvtrotation_ccw90.md)
   A constant that indicates a counterclockwise rotation of 90 degrees.
 
 

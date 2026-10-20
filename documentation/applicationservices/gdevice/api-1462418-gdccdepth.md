@@ -1,7 +1,8 @@
 # gdCCDepth
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var gdCCDepth: Int16
+```
+
+```c
+short gdCCDepth;
 ```
 
 

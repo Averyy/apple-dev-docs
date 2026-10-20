@@ -3,7 +3,7 @@
 **Framework**: TVMLKit JS  
 **Kind**: clconst
 
-The corresponding value is an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object for the URL which caused a load to fail. This key is only present in the [`NSURLErrorDomain`](https://developer.apple.com/documentation/foundation/nsurlerrordomain).
+The corresponding value is an [`NSString`](../../../Foundation/nsstring.md) object for the URL which caused a load to fail. This key is only present in the [`NSURLErrorDomain`](../../../Foundation/nsurlerrordomain.md).
 
 
 ---

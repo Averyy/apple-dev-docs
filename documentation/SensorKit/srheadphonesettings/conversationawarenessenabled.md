@@ -1,7 +1,8 @@
 # conversationAwarenessEnabled
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var conversationAwarenessEnabled: SRHeadphoneSettings.SettingEnablement { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement conversationAwarenessEnabled;
 ```
 
 #### Discussion

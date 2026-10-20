@@ -1,7 +1,8 @@
 # NEFilterDataAttribute
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Attribute flags that describe the data handled by a filter.
 
@@ -14,35 +15,40 @@ Attribute flags that describe the data handled by a filter.
 enum NEFilterDataAttribute
 ```
 
+```c
+enum NEFilterDataAttribute : NSInteger;
+```
+
 ## Topics
 
 ### Attributes
-- [NEFilterDataAttribute.hasIPHeader](nefilterdataattribute/hasipheader.md)
+- [NEFilterDataAttribute.hasIPHeader](./nefilterdataattribute/hasipheader.md)
   An attribute that indicates the data includes an IP header.
 ### Initializers
-- [init?(rawValue: Int)](nefilterdataattribute/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nefilterdataattribute/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func handleNewFlow(NEFilterFlow) -> NEFilterNewFlowVerdict](nefilterdataprovider/handlenewflow(_:).md)
+### Filtering network content
+- [func handleNewFlow(NEFilterFlow) -> NEFilterNewFlowVerdict](./nefilterdataprovider/handlenewflow%28_%29.md)
   Make a filtering decision for a newly-created flow of network content.
-- [func handleInboundData(from: NEFilterFlow, readBytesStartOffset: Int, readBytes: Data) -> NEFilterDataVerdict](nefilterdataprovider/handleinbounddata(from:readbytesstartoffset:readbytes:).md)
+- [func handleInboundData(from: NEFilterFlow, readBytesStartOffset: Int, readBytes: Data) -> NEFilterDataVerdict](./nefilterdataprovider/handleinbounddata%28from,readbytesstartoffset,readbytes%29.md)
   Make a filtering decision about a chunk of inbound data.
-- [func handleOutboundData(from: NEFilterFlow, readBytesStartOffset: Int, readBytes: Data) -> NEFilterDataVerdict](nefilterdataprovider/handleoutbounddata(from:readbytesstartoffset:readbytes:).md)
+- [func handleOutboundData(from: NEFilterFlow, readBytesStartOffset: Int, readBytes: Data) -> NEFilterDataVerdict](./nefilterdataprovider/handleoutbounddata%28from,readbytesstartoffset,readbytes%29.md)
   Make a filtering decision about a chunk of outbound data.
-- [func handleInboundDataComplete(for: NEFilterFlow) -> NEFilterDataVerdict](nefilterdataprovider/handleinbounddatacomplete(for:).md)
+- [func handleInboundDataComplete(for: NEFilterFlow) -> NEFilterDataVerdict](./nefilterdataprovider/handleinbounddatacomplete%28for%29.md)
   Make a filtering decision after seeing all of the inbound data for a flow.
-- [func handleOutboundDataComplete(for: NEFilterFlow) -> NEFilterDataVerdict](nefilterdataprovider/handleoutbounddatacomplete(for:).md)
+- [func handleOutboundDataComplete(for: NEFilterFlow) -> NEFilterDataVerdict](./nefilterdataprovider/handleoutbounddatacomplete%28for%29.md)
   Make a filtering decision after seeing all of the outbound data for a flow.
 
 

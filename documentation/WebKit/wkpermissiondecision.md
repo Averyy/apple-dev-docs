@@ -1,7 +1,8 @@
 # WKPermissionDecision
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of possible permission decisions for device resource access.
 
@@ -18,35 +19,40 @@ An enumeration of possible permission decisions for device resource access.
 enum WKPermissionDecision
 ```
 
+```c
+enum WKPermissionDecision : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [WKPermissionDecision.deny](wkpermissiondecision/deny.md)
+- [WKPermissionDecision.deny](./wkpermissiondecision/deny.md)
   Deny permission for the requested resource.
-- [WKPermissionDecision.grant](wkpermissiondecision/grant.md)
+- [WKPermissionDecision.grant](./wkpermissiondecision/grant.md)
   Grant permission for the requested resource.
-- [WKPermissionDecision.prompt](wkpermissiondecision/prompt.md)
+- [WKPermissionDecision.prompt](./wkpermissiondecision/prompt.md)
   Prompt the user for permission for the requested resource.
 ### Initializers
-- [init?(rawValue: Int)](wkpermissiondecision/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkpermissiondecision/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func webView(WKWebView, requestDeviceOrientationAndMotionPermissionFor: WKSecurityOrigin, initiatedByFrame: WKFrameInfo, decisionHandler: (WKPermissionDecision) -> Void)](wkuidelegate/webview(_:requestdeviceorientationandmotionpermissionfor:initiatedbyframe:decisionhandler:).md)
+### Requesting permissions
+- [func webView(WKWebView, requestDeviceOrientationAndMotionPermissionFor: WKSecurityOrigin, initiatedByFrame: WKFrameInfo, decisionHandler: (WKPermissionDecision) -> Void)](./wkuidelegate/webview%28_,requestdeviceorientationandmotionpermissionfor,initiatedbyframe,decisionhandler%29.md)
   Determines whether a web resource, which the security origin object describes, can access the device’s orientation and motion.
-- [func webView(WKWebView, requestMediaCapturePermissionFor: WKSecurityOrigin, initiatedByFrame: WKFrameInfo, type: WKMediaCaptureType, decisionHandler: (WKPermissionDecision) -> Void)](wkuidelegate/webview(_:requestmediacapturepermissionfor:initiatedbyframe:type:decisionhandler:).md)
+- [func webView(WKWebView, requestMediaCapturePermissionFor: WKSecurityOrigin, initiatedByFrame: WKFrameInfo, type: WKMediaCaptureType, decisionHandler: (WKPermissionDecision) -> Void)](./wkuidelegate/webview%28_,requestmediacapturepermissionfor,initiatedbyframe,type,decisionhandler%29.md)
   Determines whether a web resource, which the security origin object describes, can access to the device’s microphone audio and camera video.
-- [enum WKMediaCaptureType](wkmediacapturetype.md)
+- [enum WKMediaCaptureType](./wkmediacapturetype.md)
   An enumeration listing the types of media devices that can capture audio, video, or both.
 
 

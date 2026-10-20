@@ -1,7 +1,8 @@
 # init(filter:configuration:delegate:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stream with a content filter and configuration.
 
@@ -17,6 +18,10 @@ Creates a stream with a content filter and configuration.
 
 ```swift
 init(filter contentFilter: SCContentFilter, configuration streamConfig: SCStreamConfiguration, delegate: (any SCStreamDelegate)?)
+```
+
+```objc
+- (instancetype) initWithFilter:(SCContentFilter *) contentFilter configuration:(SCStreamConfiguration *) streamConfig delegate:(id<SCStreamDelegate>) delegate;
 ```
 
 ## Parameters

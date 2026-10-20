@@ -1,7 +1,8 @@
 # latchingAxes
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Axes along which the region latches after a primary click.
 
@@ -17,15 +18,20 @@ Axes along which the region latches after a primary click.
 var latchingAxes: UIAxis { get set }
 ```
 
+```objc
+@property (nonatomic) UIAxis latchingAxes;
+```
+
 #### Discussion
 
-If you set this property, the [`UIPointerStyle`](uipointerstyle.md) associated with this region locks in and only allows freeform movement along the axes you specify.
+If you set this property, the [`UIPointerStyle`](../uipointerstyle.md) associated with this region locks in and only allows freeform movement along the axes you specify.
 
 ## See Also
 
-- [var rect: CGRect](uipointerregion/rect.md)
+### Configuring a region
+- [var rect: CGRect](./rect.md)
   The rectangle bounds of the region.
-- [var identifier: AnyHashable?](uipointerregion/identifier-1tw1m.md)
+- [var identifier: AnyHashable?](./identifier-1tw1m.md)
   An optional identifier for the region.
 
 

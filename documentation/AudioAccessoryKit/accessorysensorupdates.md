@@ -1,7 +1,8 @@
 # AccessorySensorUpdates
 
 **Framework**: AudioAccessoryKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Subscribes to a stream of raw sensor data packets from a connected accessory.
 
@@ -39,20 +40,20 @@ sensorTask = Task { [weak self] in
 ## Topics
 
 ### Initializers
-- [init(for: String)](accessorysensorupdates/init(for:).md)
+- [init(for: String)](./accessorysensorupdates/init%28for%29.md)
   Creates a sensor update sequence for the specified accessory.
 ### Type Properties
-- [static var isSupported: Bool](accessorysensorupdates/issupported.md)
+- [static var isSupported: Bool](./accessorysensorupdates/issupported.md)
   Returns `true` when the running OS version supports `AccessorySensorUpdates`.
 ### Enumerations
-- [AccessorySensorUpdates.StreamError](accessorysensorupdates/streamerror.md)
+- [AccessorySensorUpdates.StreamError](./accessorysensorupdates/streamerror.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

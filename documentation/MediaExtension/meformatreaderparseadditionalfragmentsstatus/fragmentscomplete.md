@@ -1,7 +1,8 @@
 # fragmentsComplete
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the format reader can’t receive any more fragments.
 
@@ -14,15 +15,20 @@ Indicates that the format reader can’t receive any more fragments.
 static var fragmentsComplete: MEFormatReaderParseAdditionalFragmentsStatus { get }
 ```
 
+```c
+MEFormatReaderParseAdditionalFragmentsStatusFragmentsComplete
+```
+
 #### Discussion
 
-Additional calls of [`parseAdditionalFragments(completionHandler:)`](meformatreader/parseadditionalfragments(completionhandler:).md) return an error.
+Additional calls of [`parseAdditionalFragments(completionHandler:)`](../meformatreader/parseadditionalfragments%28completionhandler%29.md) return an error.
 
 ## See Also
 
-- [static var sizeIncreased: MEFormatReaderParseAdditionalFragmentsStatus](meformatreaderparseadditionalfragmentsstatus/sizeincreased.md)
+### Evaluating a fragment parsing operation
+- [static var sizeIncreased: MEFormatReaderParseAdditionalFragmentsStatus](./sizeincreased.md)
   Indicates that the format reader file size increased.
-- [static var fragmentAdded: MEFormatReaderParseAdditionalFragmentsStatus](meformatreaderparseadditionalfragmentsstatus/fragmentadded.md)
+- [static var fragmentAdded: MEFormatReaderParseAdditionalFragmentsStatus](./fragmentadded.md)
   Indicates that the format reader received one or more fragments.
 
 

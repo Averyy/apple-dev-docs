@@ -1,7 +1,8 @@
 # HKCDADocumentSample
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A Clinical Document Architecture (CDA) sample that stores a single document.
 
@@ -18,78 +19,83 @@ A Clinical Document Architecture (CDA) sample that stores a single document.
 class HKCDADocumentSample
 ```
 
+```objc
+@interface HKCDADocumentSample : HKDocumentSample
+```
+
 #### Overview
 
-The sample’s `document` property contains an [`HKCDADocument`](hkcdadocument.md) object, representing the underlying XML document.
+The sample’s `document` property contains an [`HKCDADocument`](./hkcdadocument.md) object, representing the underlying XML document.
 
-The [`HKCDADocumentSample`](hkcdadocumentsample.md) class is a concrete subclass of the [`HKDocumentSample`](hkdocumentsample.md) class. Document samples are immutable. HealthKit assigns the document’s properties when the sample is created. They cannot change. If you need to update a document in HealthKit, create a new document sample with the updated CDA document.
+The [`HKCDADocumentSample`](./hkcdadocumentsample.md) class is a concrete subclass of the [`HKDocumentSample`](./hkdocumentsample.md) class. Document samples are immutable. HealthKit assigns the document’s properties when the sample is created. They cannot change. If you need to update a document in HealthKit, create a new document sample with the updated CDA document.
 
 ## Topics
 
 ### Creating CDA Samples
-- [convenience init(data: Data, start: Date, end: Date, metadata: [String : Any]?) throws](hkcdadocumentsample/init(data:start:end:metadata:).md)
+- [convenience init(data: Data, start: Date, end: Date, metadata: [String : Any]?) throws](./hkcdadocumentsample/init%28data,start,end,metadata%29.md)
   Returns a CDA document sample containing the provided XML document and metadata.
-- [let HKDetailedCDAValidationErrorKey: String](hkdetailedcdavalidationerrorkey.md)
+- [let HKDetailedCDAValidationErrorKey: String](./hkdetailedcdavalidationerrorkey.md)
   A key for accessing validation error information from an error object’s user information dictionary.
 ### Accessing the Document
-- [var document: HKCDADocument?](hkcdadocumentsample/document.md)
+- [var document: HKCDADocument?](./hkcdadocumentsample/document.md)
   The CDA document.
-- [class HKCDADocument](hkcdadocument.md)
+- [class HKCDADocument](./hkcdadocument.md)
   An object representing a Clinical Document Architecture (CDA) document in HealthKit.
 ### Accessing Validation Errors
-- [let HKDetailedCDAValidationErrorKey: String](hkdetailedcdavalidationerrorkey.md)
+- [let HKDetailedCDAValidationErrorKey: String](./hkdetailedcdavalidationerrorkey.md)
   A key for accessing validation error information from an error object’s user information dictionary.
 ### Specifying Predicate Key Paths
-- [let HKPredicateKeyPathCDAAuthorName: String](hkpredicatekeypathcdaauthorname.md)
+- [let HKPredicateKeyPathCDAAuthorName: String](./hkpredicatekeypathcdaauthorname.md)
   The key path for accessing the author’s name inside a predicate format string.
-- [let HKPredicateKeyPathCDACustodianName: String](hkpredicatekeypathcdacustodianname.md)
+- [let HKPredicateKeyPathCDACustodianName: String](./hkpredicatekeypathcdacustodianname.md)
   The key path for accessing the custodian’s name inside a predicate format string.
-- [let HKPredicateKeyPathCDAPatientName: String](hkpredicatekeypathcdapatientname.md)
+- [let HKPredicateKeyPathCDAPatientName: String](./hkpredicatekeypathcdapatientname.md)
   The key path for accessing the patient’s name inside a predicate format string.
-- [let HKPredicateKeyPathCDATitle: String](hkpredicatekeypathcdatitle.md)
+- [let HKPredicateKeyPathCDATitle: String](./hkpredicatekeypathcdatitle.md)
   The key path for accessing the document’s title inside a predicate format string.
 ### Initializers
-- [convenience init(data: Data, startDate: Date, endDate: Date, metadata: [String : Any]?) throws](hkcdadocumentsample/init(data:startdate:enddate:metadata:).md)
+- [convenience init(data: Data, startDate: Date, endDate: Date, metadata: [String : Any]?) throws](./hkcdadocumentsample/init%28data,startdate,enddate,metadata%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [HKDocumentSample](hkdocumentsample.md)
+- [HKDocumentSample](./hkdocumentsample.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Accessing Health Records](accessing-health-records.md)
+### Medical records
+- [Accessing Health Records](./accessing-health-records.md)
   Read clinical record data from the HealthKit store.
-- [Accessing Sample Data in the Simulator](accessing-sample-data-in-the-simulator.md)
+- [Accessing Sample Data in the Simulator](./accessing-sample-data-in-the-simulator.md)
   Set up sample accounts to build and test your app.
-- [Accessing a User’s Clinical Records](accessing-a-user-s-clinical-records.md)
+- [Accessing a User’s Clinical Records](./accessing-a-user-s-clinical-records.md)
   Request authorization to query HealthKit for a user’s clinical records and display them in your app.
-- [Accessing Data from a SMART Health Card](accessing-data-from-a-smart-health-card.md)
+- [Accessing Data from a SMART Health Card](./accessing-data-from-a-smart-health-card.md)
   Query for and validate a verifiable clinical record.
-- [class HKClinicalRecord](hkclinicalrecord.md)
+- [class HKClinicalRecord](./hkclinicalrecord.md)
   A sample that stores a clinical record.
-- [class HKFHIRResource](hkfhirresource.md)
+- [class HKFHIRResource](./hkfhirresource.md)
   An object containing Fast Healthcare Interoperability Resources (FHIR) data.
-- [class HKVerifiableClinicalRecord](hkverifiableclinicalrecord.md)
+- [class HKVerifiableClinicalRecord](./hkverifiableclinicalrecord.md)
   A sample that represents the contents of a SMART Health Card or EU Digital COVID Certificate.
-- [class HKVerifiableClinicalRecordSubject](hkverifiableclinicalrecordsubject.md)
+- [class HKVerifiableClinicalRecordSubject](./hkverifiableclinicalrecordsubject.md)
   The subject associated with a signed clinical record.
-- [class HKDocumentSample](hkdocumentsample.md)
+- [class HKDocumentSample](./hkdocumentsample.md)
   An abstract class that represents a health document in the HealthKit store.
-- [static let CDA: HKDocumentTypeIdentifier](hkdocumenttypeidentifier/cda.md)
+- [static let CDA: HKDocumentTypeIdentifier](./hkdocumenttypeidentifier/cda.md)
   The CDA Document type identifier, used when requesting permission to read or share CDA documents.
-- [class HKDocumentType](hkdocumenttype.md)
+- [class HKDocumentType](./hkdocumenttype.md)
   A sample type used to create queries for documents.
 
 

@@ -1,7 +1,8 @@
 # GetUID
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the unique identifier of the clock device.
 
@@ -10,13 +11,13 @@ Gets the unique identifier of the clock device.
 
 ## Declaration
 
-```swift
+```c
 OSSharedPtr<OSString> GetUID();
 ```
 
 #### Return Value
 
-A pointer to an [`OSString`](https://developer.apple.com/documentation/driverkit/osstring) containing the UID.
+A pointer to an [`OSString`](../../DriverKit/osstring.md) containing the UID.
 
 #### Discussion
 

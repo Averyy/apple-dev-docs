@@ -1,12 +1,13 @@
 # detachDrawingThread(_:toTarget:with:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and executes a new thread based on the specified target and selector.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Creates and executes a new thread based on the specified target and selector.
 class func detachDrawingThread(_ selector: Selector, toTarget target: Any, with argument: Any?)
 ```
 
+```objc
++ (void) detachDrawingThread:(SEL) selector toTarget:(id) target withObject:(id) argument;
+```
+
 #### Discussion
 
-This method is a convenience wrapper for the [`detachNewThreadSelector(_:toTarget:with:)`](https://developer.apple.com/documentation/foundation/thread/detachnewthreadselector(_:totarget:with:)) method of [`Thread`](https://developer.apple.com/documentation/foundation/thread). This method automatically creates an `@autoreleasepool` block for the new thread before invoking `selector`.
+This method is a convenience wrapper for the [`detachNewThreadSelector(_:toTarget:with:)`](../../Foundation/thread/detachnewthreadselector%28_,totarget,with%29.md) method of [`Thread`](../../Foundation/thread.md). This method automatically creates an `@autoreleasepool` block for the new thread before invoking `selector`.
 
 ## Parameters
 

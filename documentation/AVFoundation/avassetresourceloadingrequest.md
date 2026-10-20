@@ -1,7 +1,8 @@
 # AVAssetResourceLoadingRequest
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that encapsulates information about a resource request from a resource loader object.
 
@@ -19,72 +20,77 @@ An object that encapsulates information about a resource request from a resource
 class AVAssetResourceLoadingRequest
 ```
 
+```objc
+@interface AVAssetResourceLoadingRequest : NSObject
+```
+
 #### Overview
 
-When an [`AVURLAsset`](avurlasset.md) object needs help loading a resource, it asks its [`AVAssetResourceLoader`](avassetresourceloader.md) object to assist. The resource loader encapsulates the request information by creating an instance of this object, which it then hands to its delegate object for processing. The delegate uses the information in this object to perform the request and report on the success or failure of the operation.
+When an [`AVURLAsset`](./avurlasset.md) object needs help loading a resource, it asks its [`AVAssetResourceLoader`](./avassetresourceloader.md) object to assist. The resource loader encapsulates the request information by creating an instance of this object, which it then hands to its delegate object for processing. The delegate uses the information in this object to perform the request and report on the success or failure of the operation.
 
 ## Topics
 
 ### Accessing the request data
-- [var request: URLRequest](avassetresourceloadingrequest/request.md)
+- [var request: URLRequest](./avassetresourceloadingrequest/request.md)
   The URL request object for the resource.
-- [var requestor: AVAssetResourceLoadingRequestor](avassetresourceloadingrequest/requestor.md)
+- [var requestor: AVAssetResourceLoadingRequestor](./avassetresourceloadingrequest/requestor.md)
   The asset resource requestor that made the request.
-- [var contentInformationRequest: AVAssetResourceLoadingContentInformationRequest?](avassetresourceloadingrequest/contentinformationrequest.md)
+- [var contentInformationRequest: AVAssetResourceLoadingContentInformationRequest?](./avassetresourceloadingrequest/contentinformationrequest.md)
   The information for a requested resource.
-- [var dataRequest: AVAssetResourceLoadingDataRequest?](avassetresourceloadingrequest/datarequest.md)
+- [var dataRequest: AVAssetResourceLoadingDataRequest?](./avassetresourceloadingrequest/datarequest.md)
   The range of requested resource data.
-- [var redirect: URLRequest?](avassetresourceloadingrequest/redirect.md)
+- [var redirect: URLRequest?](./avassetresourceloadingrequest/redirect.md)
   An URL request instance if the loading request was redirected.
-- [func streamingContentKeyRequestData(forApp: Data, contentIdentifier: Data, options: [String : Any]?) throws -> Data](avassetresourceloadingrequest/streamingcontentkeyrequestdata(forapp:contentidentifier:options:).md)
+- [func streamingContentKeyRequestData(forApp: Data, contentIdentifier: Data, options: [String : Any]?) throws -> Data](./avassetresourceloadingrequest/streamingcontentkeyrequestdata%28forapp,contentidentifier,options%29.md)
   Obtains key request data for a specific combination of application and content.
-- [func persistentContentKey(fromKeyVendorResponse: Data, options: [String : Any]?) throws -> Data](avassetresourceloadingrequest/persistentcontentkey(fromkeyvendorresponse:options:).md)
+- [func persistentContentKey(fromKeyVendorResponse: Data, options: [String : Any]?) throws -> Data](./avassetresourceloadingrequest/persistentcontentkey%28fromkeyvendorresponse,options%29.md)
   Obtains a persistable content key from a context.
-- [let AVAssetResourceLoadingRequestStreamingContentKeyRequestRequiresPersistentKey: String](avassetresourceloadingrequeststreamingcontentkeyrequestrequirespersistentkey.md)
+- [let AVAssetResourceLoadingRequestStreamingContentKeyRequestRequiresPersistentKey: String](./avassetresourceloadingrequeststreamingcontentkeyrequestrequirespersistentkey.md)
   Specifies whether the content key request requires a persistable key to be returned from the key vendor.
 ### Reporting the result of the request
-- [var response: URLResponse?](avassetresourceloadingrequest/response.md)
+- [var response: URLResponse?](./avassetresourceloadingrequest/response.md)
   The URL response for the loading request.
-- [func finishLoading()](avassetresourceloadingrequest/finishloading.md)
+- [func finishLoading()](./avassetresourceloadingrequest/finishloading%28%29.md)
   Causes the receiver to treat the processing of the request as complete.
-- [var isCancelled: Bool](avassetresourceloadingrequest/iscancelled.md)
+- [var isCancelled: Bool](./avassetresourceloadingrequest/iscancelled.md)
   A Boolean value that indicates whether the request has been cancelled.
-- [func finishLoading(with: (any Error)?)](avassetresourceloadingrequest/finishloading(with:).md)
+- [func finishLoading(with: (any Error)?)](./avassetresourceloadingrequest/finishloading%28with%29.md)
   Causes the receiver to handle the failure to load a resource for which a resource loader’s delegate took responsibility.
-- [var isFinished: Bool](avassetresourceloadingrequest/isfinished.md)
+- [var isFinished: Bool](./avassetresourceloadingrequest/isfinished.md)
   A Boolean value that indicates whether loading of the resource has finished.
-- [func finishLoading(with: URLResponse?, data: Data?, redirect: URLRequest?)](avassetresourceloadingrequest/finishloading(with:data:redirect:).md)
+- [func finishLoading(with: URLResponse?, data: Data?, redirect: URLRequest?)](./avassetresourceloadingrequest/finishloading%28with,data,redirect%29.md)
   Causes the receiver to finish loading a resource for which a resource loader’s delegate took responsibility .
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVAssetResourceRenewalRequest](avassetresourcerenewalrequest.md)
+- [AVAssetResourceRenewalRequest](./avassetresourcerenewalrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAssetResourceLoader](avassetresourceloader.md)
+### Resource loading
+- [class AVAssetResourceLoader](./avassetresourceloader.md)
   An object that mediates resource requests from a URL asset.
-- [protocol AVAssetResourceLoaderDelegate](avassetresourceloaderdelegate.md)
+- [protocol AVAssetResourceLoaderDelegate](./avassetresourceloaderdelegate.md)
   Methods you can implement to handle resource-loading requests coming from a URL asset.
-- [class AVAssetResourceRenewalRequest](avassetresourcerenewalrequest.md)
+- [class AVAssetResourceRenewalRequest](./avassetresourcerenewalrequest.md)
   An object that encapsulates information about a resource request from a resource loader to renew a previously issued request.
-- [class AVAssetResourceLoadingRequestor](avassetresourceloadingrequestor.md)
+- [class AVAssetResourceLoadingRequestor](./avassetresourceloadingrequestor.md)
   An object that contains information about the originator of a resource-loading request.
-- [class AVAssetResourceLoadingDataRequest](avassetresourceloadingdatarequest.md)
+- [class AVAssetResourceLoadingDataRequest](./avassetresourceloadingdatarequest.md)
   An object for requesting data from a resource that an asset resource-loading request references.
-- [class AVAssetResourceLoadingContentInformationRequest](avassetresourceloadingcontentinformationrequest.md)
+- [class AVAssetResourceLoadingContentInformationRequest](./avassetresourceloadingcontentinformationrequest.md)
   A query for retrieving essential information about a resource that an asset resource-loading request references.
 
 

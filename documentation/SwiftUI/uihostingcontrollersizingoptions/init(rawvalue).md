@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new option set from a raw value.
 
@@ -20,7 +21,8 @@ init(rawValue: Int)
 
 ## See Also
 
-- [let rawValue: Int](uihostingcontrollersizingoptions/rawvalue.md)
+### Creating a sizing option
+- [let rawValue: Int](./rawvalue.md)
   The raw value.
 
 

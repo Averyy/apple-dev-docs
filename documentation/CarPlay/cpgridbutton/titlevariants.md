@@ -1,7 +1,8 @@
 # titleVariants
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of title variants for the button.
 
@@ -16,13 +17,18 @@ An array of title variants for the button.
 var titleVariants: [String] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * titleVariants;
+```
+
 #### Discussion
 
 When the system displays the button, it selects the title that best fits the available screen space, so arrange the titles from most to least preferred when creating a grid button. Also, localize each title for display to the user, and be sure to include at least one title in the array.
 
 ## See Also
 
-- [var image: UIImage](cpgridbutton/image.md)
+### Obtaining Grid Button Information
+- [var image: UIImage](./image.md)
   The image displayed on the button.
 
 

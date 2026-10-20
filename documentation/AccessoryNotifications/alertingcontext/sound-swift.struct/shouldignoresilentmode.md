@@ -1,7 +1,8 @@
 # shouldIgnoreSilentMode
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the sound ignores local silent mode.
 

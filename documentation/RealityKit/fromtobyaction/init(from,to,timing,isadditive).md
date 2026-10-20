@@ -1,7 +1,8 @@
 # init(from:to:timing:isAdditive:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new action that interpolates towards a specified final value.
 

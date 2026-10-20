@@ -1,7 +1,8 @@
 # availableApps
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current managed apps available to this device.
 
@@ -26,9 +27,10 @@ The current managed apps are of type `Result<[ManagedApp], ManagedAppDistributio
 
 ## See Also
 
-- [ManagedAppLibrary.ManagedApps](managedapplibrary/managedapps.md)
+### Obtaining library information
+- [ManagedAppLibrary.ManagedApps](./managedapps.md)
   An array of managed apps that updates as apps become available or unavailable.
-- [static let currentDistributor: ManagedAppLibrary](managedapplibrary/currentdistributor.md)
+- [static let currentDistributor: ManagedAppLibrary](./currentdistributor.md)
   The library provider for managed apps on this device.
 
 

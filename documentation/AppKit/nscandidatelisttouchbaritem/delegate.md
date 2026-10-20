@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate of the candidate list item.
 
@@ -14,11 +15,16 @@ The delegate of the candidate list item.
 weak var delegate: (any NSCandidateListTouchBarItemDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSCandidateListTouchBarItemDelegate> delegate;
+```
+
 ## See Also
 
-- [var client: (any NSView & NSTextInputClient)?](nscandidatelisttouchbaritem/client.md)
+### Providing a client and a delegate
+- [var client: (any NSView & NSTextInputClient)?](./client.md)
   The client object for the candidate list item.
-- [protocol NSCandidateListTouchBarItemDelegate](nscandidatelisttouchbaritemdelegate.md)
+- [protocol NSCandidateListTouchBarItemDelegate](../nscandidatelisttouchbaritemdelegate.md)
   A set of methods that a candidate list item delegate uses to enable selection state and list visibility.
 
 

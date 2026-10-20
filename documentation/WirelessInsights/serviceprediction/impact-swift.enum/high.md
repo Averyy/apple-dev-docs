@@ -1,7 +1,8 @@
 # ServicePrediction.Impact.high
 
 **Framework**: WirelessInsights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An impact level for severe interruption, including substantially lowered throughput and the potential to lose data capability.
 
@@ -17,9 +18,10 @@ case high
 
 ## See Also
 
-- [ServicePrediction.Impact.medium](serviceprediction/impact-swift.enum/medium.md)
+### Working with impact values
+- [ServicePrediction.Impact.medium](./medium.md)
   An impact level for moderately lower throughput and service interruption.
-- [ServicePrediction.Impact.low](serviceprediction/impact-swift.enum/low.md)
+- [ServicePrediction.Impact.low](./low.md)
   An impact level for slightly lower throughput and possibly some service interruption.
 
 

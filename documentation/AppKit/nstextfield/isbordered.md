@@ -1,12 +1,13 @@
 # isBordered
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether the text field draws a solid black border around its contents.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A Boolean value that controls whether the text field draws a solid black border 
 var isBordered: Bool { get set }
 ```
 
+```objc
+@property (getter=isBordered) BOOL bordered;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the text field draws a border; if [`false`](https://developer.apple.com/documentation/swift/false), it doesn’t draw a border.
+If [`true`](../../Swift/true.md), the text field draws a border; if [`false`](../../Swift/false.md), it doesn’t draw a border.
 
 ## See Also
 
-- [var borderShape: NSControl.BorderShape](nstextfield/bordershape.md)
+### Setting a border
+- [var borderShape: NSControl.BorderShape](./bordershape.md)
   Set border shape `NSControlBorderShapeAutomatic` sets text field or subclass to default system shape. `NSControlBorderShapeCircle` sets text field or subclass to `NSControlBorderShapeAutomatic`.
 
 

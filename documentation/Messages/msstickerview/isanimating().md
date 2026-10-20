@@ -1,7 +1,8 @@
 # isAnimating()
 
 **Framework**: Messages  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the sticker is animating.
 
@@ -16,17 +17,22 @@ Returns a Boolean value that indicates whether the sticker is animating.
 func isAnimating() -> Bool
 ```
 
+```objc
+- (BOOL) isAnimating;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the sticker is animating; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](../../Swift/true.md) if the sticker is animating; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var animationDuration: TimeInterval](msstickerview/animationduration.md)
+### Controlling Sticker Animation
+- [var animationDuration: TimeInterval](./animationduration.md)
   The amount of time it takes to complete the sticker’s animation.
-- [func startAnimating()](msstickerview/startanimating.md)
+- [func startAnimating()](./startanimating%28%29.md)
   Starts the sticker’s animation, beginning with the first frame.
-- [func stopAnimating()](msstickerview/stopanimating.md)
+- [func stopAnimating()](./stopanimating%28%29.md)
   Stops the sticker’s animation.
 
 

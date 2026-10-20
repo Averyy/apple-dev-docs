@@ -1,7 +1,8 @@
 # EligibilityQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The paginated response object for an app eligibility query.
 
@@ -10,7 +11,7 @@ The paginated response object for an app eligibility query.
 
 ## Declaration
 
-```swift
+```
 object EligibilityQueryResponse
 ```
 
@@ -58,21 +59,21 @@ To iterate through large result sets, use the `totalCount` and `offset` fields o
 
 ## Properties
 
-- `result` ([EligibilityResponse]): Array of [`EligibilityResponse`](eligibilityresponse.md) records matching the supplied filter criteria. Read-only.
-- `pagination` (QueryPaginationResult): Pagination metadata for the response, including `offset`, `pageSize`, and `totalCount`. See [`QueryPaginationResult`](querypaginationresult.md). Read-only.
-- `error` (Error): Error information if the request encountered an error. See [`Error`](error.md). Read-only.
+- `result` ([EligibilityResponse]): Array of [`EligibilityResponse`](./eligibilityresponse.md) records matching the supplied filter criteria. Read-only.
+- `pagination` (QueryPaginationResult): Pagination metadata for the response, including `offset`, `pageSize`, and `totalCount`. See [`QueryPaginationResult`](./querypaginationresult.md). Read-only.
+- `error` (Error): Error information if the request encountered an error. See [`Error`](./error.md). Read-only.
 
 ## See Also
 
-- [object EligibilityQueryRequest](eligibilityqueryrequest.md)
+- [object EligibilityQueryRequest](./eligibilityqueryrequest.md)
   The request body for querying app eligibility.
-- [object RejectionReasonResponse](rejectionreasonresponse.md)
+- [object RejectionReasonResponse](./rejectionreasonresponse.md)
   The response object for a rejection reason operation.
-- [object AppDetailsResponse](appdetailsresponse.md)
+- [object AppDetailsResponse](./appdetailsresponse.md)
   The response object for a get app details operation.
-- [object AppDetails](appdetails.md)
+- [object AppDetails](./appdetails.md)
   Application details and metadata.
-- [object EligibilityResponse](eligibilityresponse.md)
+- [object EligibilityResponse](./eligibilityresponse.md)
   The response object describing an app’s eligibility for a specific supply placement, supply source, country or region, and device class.
 
 

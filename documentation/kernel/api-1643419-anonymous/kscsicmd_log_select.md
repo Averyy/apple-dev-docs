@@ -1,14 +1,15 @@
 # kSCSICmd_LOG_SELECT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_LOG_SELECT = 0x4C
 ```
 

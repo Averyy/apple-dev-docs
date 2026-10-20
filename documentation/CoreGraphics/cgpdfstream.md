@@ -1,6 +1,7 @@
 # CGPDFStream
 
-**Framework**: Core Graphics
+**Framework**: Core Graphics  
+**Role**: API Collection
 
 A stream or sequence of data bytes in a PDF document.
 
@@ -13,20 +14,21 @@ This object is not derived from CFType and therefore there are no functions for 
 ## Topics
 
 ### Getting Data from a PDF Stream
-- [func CGPDFStreamCopyData(CGPDFStreamRef, UnsafeMutablePointer<CGPDFDataFormat>) -> CFData?](cgpdfstreamcopydata(_:_:).md)
+- [func CGPDFStreamCopyData(CGPDFStreamRef, UnsafeMutablePointer<CGPDFDataFormat>) -> CFData?](./cgpdfstreamcopydata%28_,_%29.md)
   Returns the data associated with a PDF stream.
-- [func CGPDFStreamGetDictionary(CGPDFStreamRef) -> CGPDFDictionaryRef?](cgpdfstreamgetdictionary(_:).md)
+- [func CGPDFStreamGetDictionary(CGPDFStreamRef) -> CGPDFDictionaryRef?](./cgpdfstreamgetdictionary%28_%29.md)
   Returns the dictionary associated with a PDF stream.
 ### Data Types
-- [struct CGPDFStreamRef](cgpdfstreamref.md)
+- [struct CGPDFStreamRef](./cgpdfstreamref.md)
   A type that represents a PDF stream.
 ### Constants
-- [enum CGPDFDataFormat](cgpdfdataformat.md)
+- [enum CGPDFDataFormat](./cgpdfdataformat.md)
   The encoding format of PDF data.
 
 ## See Also
 
-- [Quartz 2D Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066)
+### Related Documentation
+- [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a binding by projecting the base value to a hashable value.
 
@@ -20,17 +21,28 @@ Creates a binding by projecting the base value to a hashable value.
 init<V>(_ base: Binding<V>) where Value == AnyHashable, V : Hashable
 ```
 
+**Other overloads**:
+
+```swift
+init<V>(_ base: Binding<V>) where Value == V?
+```
+
+```swift
+init?(_ base: Binding<Value?>)
+```
+
 ## Parameters
 
 - `base`: A `Hashable` value to project to an `AnyHashable` value.
 
 ## See Also
 
-- [init(projectedValue: Binding<Value>)](binding/init(projectedvalue:).md)
+### Creating a binding
+- [init(projectedValue: Binding<Value>)](./init%28projectedvalue%29.md)
   Creates a binding from the value of another binding.
-- [init(get:set:)](binding/init(get:set:).md)
+- [init(get:set:)](./init%28get,set%29.md)
   Creates a binding with closures that read and write the binding value.
-- [static func constant(Value) -> Binding<Value>](binding/constant(_:).md)
+- [static func constant(Value) -> Binding<Value>](./constant%28_%29.md)
   Creates a binding with an immutable value.
 
 

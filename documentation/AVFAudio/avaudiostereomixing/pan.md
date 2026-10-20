@@ -2,6 +2,7 @@
 
 **Framework**: AVFAudio  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The bus’s stereo pan.
@@ -21,9 +22,13 @@ The bus’s stereo pan.
 var pan: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float pan;
+```
+
 #### Discussion
 
-The default value is `0.0`, and the range of valid values is `-1.0` to `1.0`. Only the [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md) class implements this property.
+The default value is `0.0`, and the range of valid values is `-1.0` to `1.0`. Only the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) class implements this property.
 
 
 ---

@@ -1,18 +1,19 @@
 # pausesIncomingScene
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the incoming scene is paused during the transition.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ A Boolean value that determines whether the incoming scene is paused during the 
 var pausesIncomingScene: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL pausesIncomingScene;
+```
+
 ## Mentions
 
-- [Configuring Whether Animations Play During the Transition](configuring-whether-animations-play-during-the-transition.md)
+- [Configuring Whether Animations Play During the Transition](../configuring-whether-animations-play-during-the-transition.md)
 
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var pausesOutgoingScene: Bool](sktransition/pausesoutgoingscene.md)
+### Pausing
+- [var pausesOutgoingScene: Bool](./pausesoutgoingscene.md)
   A Boolean value that determines whether the outgoing scene is paused during the transition.
 
 

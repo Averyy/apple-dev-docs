@@ -1,7 +1,8 @@
 # elapsedTime
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elapsed playback time as a CMTime value.
 
@@ -14,6 +15,10 @@ The elapsed playback time as a CMTime value.
 
 ```swift
 var elapsedTime: CMTime { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) CMTime elapsedTime;
 ```
 
 

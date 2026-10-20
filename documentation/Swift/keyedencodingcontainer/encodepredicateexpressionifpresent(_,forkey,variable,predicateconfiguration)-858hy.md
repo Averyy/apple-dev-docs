@@ -1,7 +1,8 @@
 # encodePredicateExpressionIfPresent(_:forKey:variable:predicateConfiguration:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -17,6 +18,8 @@
 ```swift
 mutating func encodePredicateExpressionIfPresent<T, each Input>(_ expression: T?, forKey key: KeyedEncodingContainer<K>.Key, variable: repeat PredicateExpressions.Variable<each Input>, predicateConfiguration: PredicateCodableConfiguration) throws where T : PredicateExpression, T : Encodable
 ```
+
+Available when `K` conforms to `CodingKey`.
 
 
 ---

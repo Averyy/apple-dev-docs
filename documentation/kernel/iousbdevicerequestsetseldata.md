@@ -1,7 +1,8 @@
 # IOUSBDeviceRequestSetSELData
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 The structure for receiving system exit latency values.
 
@@ -10,7 +11,7 @@ The structure for receiving system exit latency values.
 
 ## Declaration
 
-```swift
+```c
 typedef struct IOUSBDeviceRequestSetSELData IOUSBDeviceRequestSetSELData;
 ```
 
@@ -21,24 +22,25 @@ For information about the `Set SEL` request type, see USB 3.2, 9.4.12.
 ## Topics
 
 ### Instance Properties
-- [u1Pel](iousbdevicerequestsetseldata/3166578-u1pel.md)
-- [u1Sel](iousbdevicerequestsetseldata/3166579-u1sel.md)
-- [u2Pel](iousbdevicerequestsetseldata/3166580-u2pel.md)
-- [u2Sel](iousbdevicerequestsetseldata/3166581-u2sel.md)
+- [u1Pel](./iousbdevicerequestsetseldata/api-3166578-u1pel.md)
+- [u1Sel](./iousbdevicerequestsetseldata/api-3166579-u1sel.md)
+- [u2Pel](./iousbdevicerequestsetseldata/api-3166580-u2pel.md)
+- [u2Sel](./iousbdevicerequestsetseldata/api-3166581-u2sel.md)
 
 ## See Also
 
-- [IOUSBDevReqOOL](iousbdevreqool.md)
+### Device Requests
+- [IOUSBDevReqOOL](./iousbdevreqool.md)
   An internal structure to pass parameters between IOUSBLib and UserClient.
-- [IOUSBDevReqOOLTO](iousbdevreqoolto.md)
+- [IOUSBDevReqOOLTO](./iousbdevreqoolto.md)
   An internal structure to pass parameters between IOUSBLib and UserClient.
-- [IOUSBDevRequest](iousbdevrequest.md)
+- [IOUSBDevRequest](./iousbdevrequest.md)
   A structure that defines a standard device request.
-- [IOUSBDevRequestTO](iousbdevrequestto.md)
+- [IOUSBDevRequestTO](./iousbdevrequestto.md)
   A structure that defines a standard device request with timeout.
-- [IOUSBDeviceRequest](iousbdevicerequest.md)
+- [IOUSBDeviceRequest](./iousbdevicerequest.md)
   A structure that defines a standard device request.
-- [IOUSBDeviceRequestPtr](iousbdevicerequestptr.md)
+- [IOUSBDeviceRequestPtr](./iousbdevicerequestptr.md)
   A pointer to a structure that defines a standard device request.
 
 

@@ -1,11 +1,12 @@
 # Hashable Implementations
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func hash(into: inout Hasher)](visionobservation/hash(into:)-8aqw6.md)
+- [func hash(into: inout Hasher)](./hash%28into%29-8aqw6.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

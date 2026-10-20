@@ -1,7 +1,8 @@
 # CiBuildRunCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the new Build Runs resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the new Build Runs resource.
 
 ## Declaration
 
-```swift
+```
 object CiBuildRunCreateRequest.Data.Attributes
 ```
 
@@ -20,7 +21,8 @@ object CiBuildRunCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object CiBuildRunCreateRequest.Data.Relationships](cibuildruncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object CiBuildRunCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

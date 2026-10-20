@@ -1,7 +1,8 @@
 # isEqual(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the audio format instance and a specified object are functionally equivalent.
 
@@ -20,17 +21,21 @@ Indicates whether the audio format instance and a specified object are functiona
 func isEqual(_ object: Any) -> Bool
 ```
 
+```objc
+- (BOOL) isEqual:(id) object;
+```
+
 #### Return Value
 
-A Boolean value of [`true`](https://developer.apple.com/documentation/swift/true) if the receiver and `object` are equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+A Boolean value of [`true`](../../Swift/true.md) if the receiver and `object` are equal; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
 The PCM format ignores interleaveness for mono.
 
-The method ignores the differences in the [`AudioStreamBasicDescription`](https://developer.apple.com/documentation/coreaudiotypes/audiostreambasicdescription) alignment and packedness when they’re not significant. For example, with one channel, 2 bytes per frame, 16 bits per channel, and neither alignment, the format is implicit packedness and the method can interpret it as either high- or low-aligned.
+The method ignores the differences in the [`AudioStreamBasicDescription`](../../CoreAudioTypes/audiostreambasicdescription.md) alignment and packedness when they’re not significant. For example, with one channel, 2 bytes per frame, 16 bits per channel, and neither alignment, the format is implicit packedness and the method can interpret it as either high- or low-aligned.
 
-For [`AVAudioChannelLayout`](avaudiochannellayout.md), the method considers a layout with the standard mono or stereo tag to be equivalent to a `nil` layout.
+For [`AVAudioChannelLayout`](../avaudiochannellayout.md), the method considers a layout with the standard mono or stereo tag to be equivalent to a `nil` layout.
 
 Otherwise, the method compares the layouts for equality.
 

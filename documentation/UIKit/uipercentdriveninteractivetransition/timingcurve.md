@@ -1,7 +1,8 @@
 # timingCurve
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timing curve to use when driving the animations.
 
@@ -18,17 +19,22 @@ The timing curve to use when driving the animations.
 var timingCurve: (any UITimingCurveProvider)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id<UITimingCurveProvider> timingCurve;
+```
+
 ## See Also
 
-- [var completionCurve: UIView.AnimationCurve](uipercentdriveninteractivetransition/completioncurve.md)
+### Accessing transition attributes
+- [var completionCurve: UIView.AnimationCurve](./completioncurve.md)
   Indicates the animation completion curve for an interactive transition.
-- [var duration: CGFloat](uipercentdriveninteractivetransition/duration.md)
+- [var duration: CGFloat](./duration.md)
   The overall duration (in seconds) of the transition animation.
-- [var percentComplete: CGFloat](uipercentdriveninteractivetransition/percentcomplete.md)
+- [var percentComplete: CGFloat](./percentcomplete.md)
   The amount of the transition (specified as a percentage of the overall duration) that’s complete.
-- [var completionSpeed: CGFloat](uipercentdriveninteractivetransition/completionspeed.md)
+- [var completionSpeed: CGFloat](./completionspeed.md)
   The speed of the transition animation.
-- [var wantsInteractiveStart: Bool](uipercentdriveninteractivetransition/wantsinteractivestart.md)
+- [var wantsInteractiveStart: Bool](./wantsinteractivestart.md)
   A Boolean value indicating whether the animations are interactive initially.
 
 

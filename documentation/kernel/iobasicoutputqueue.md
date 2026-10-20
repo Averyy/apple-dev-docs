@@ -1,7 +1,8 @@
 # IOBasicOutputQueue
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 A concrete implementation of an IOOutputQueue.
 
@@ -10,7 +11,7 @@ A concrete implementation of an IOOutputQueue.
 
 ## Declaration
 
-```swift
+```cpp
 class IOBasicOutputQueue : IOOutputQueue
 ```
 
@@ -23,93 +24,94 @@ The flow of packets from the queue to its target can be controlled by calling me
 ## Topics
 
 ### Miscellaneous
-- [enqueue](iobasicoutputqueue/1811623-enqueue.md)
+- [enqueue](./iobasicoutputqueue/api-1811623-enqueue.md)
   Adds a packet, or a chain of packets, to the queue.
-- [flush](iobasicoutputqueue/1811630-flush.md)
+- [flush](./iobasicoutputqueue/api-1811630-flush.md)
   Drops and frees all packets currently held by the queue.
-- [free](iobasicoutputqueue/1811636-free.md)
+- [free](./iobasicoutputqueue/api-1811636-free.md)
   Frees the IOBasicOutputQueue object.
-- [getCapacity](iobasicoutputqueue/1811642-getcapacity.md)
+- [getCapacity](./iobasicoutputqueue/api-1811642-getcapacity.md)
   Gets the number of packets that the queue can hold.
-- [getDropCount](iobasicoutputqueue/1811646-getdropcount.md)
+- [getDropCount](./iobasicoutputqueue/api-1811646-getdropcount.md)
   Gets the number of packets dropped by the queue.
-- [getOutputCount](iobasicoutputqueue/1811651-getoutputcount.md)
+- [getOutputCount](./iobasicoutputqueue/api-1811651-getoutputcount.md)
   Gets the number of packets accepted by the target.
-- [getRetryCount](iobasicoutputqueue/1811660-getretrycount.md)
+- [getRetryCount](./iobasicoutputqueue/api-1811660-getretrycount.md)
   Gets the number of instances when the target has refused to accept the packet provided.
-- [getSize](iobasicoutputqueue/1811664-getsize.md)
+- [getSize](./iobasicoutputqueue/api-1811664-getsize.md)
   Gets the number of packets currently held in the queue.
-- [getStallCount](iobasicoutputqueue/1811671-getstallcount.md)
+- [getStallCount](./iobasicoutputqueue/api-1811671-getstallcount.md)
   Gets the number of instances when the target has stalled the queue.
-- [getState](iobasicoutputqueue/1811677-getstate.md)
+- [getState](./iobasicoutputqueue/api-1811677-getstate.md)
   Gets the state of the queue object.
-- [getStatisticsData](iobasicoutputqueue/1811683-getstatisticsdata.md)
+- [getStatisticsData](./iobasicoutputqueue/api-1811683-getstatisticsdata.md)
   Returns an IONetworkData object containing statistics counters updated by the queue.
-- [handleNetworkDataAccess](iobasicoutputqueue/1811690-handlenetworkdataaccess.md)
+- [handleNetworkDataAccess](./iobasicoutputqueue/api-1811690-handlenetworkdataaccess.md)
   Handles an external access to the IONetworkData object returned by getStatisticsData().
-- [init](iobasicoutputqueue/1811696-init.md)
+- [init](./iobasicoutputqueue/api-1811696-init.md)
   Initializes an IOBasicOutputQueue object.
-- [output](iobasicoutputqueue/1811702-output.md)
+- [output](./iobasicoutputqueue/api-1811702-output.md)
   Transfers all packets in the mbuf queue to the target.
-- [service](iobasicoutputqueue/1811708-service.md)
+- [service](./iobasicoutputqueue/api-1811708-service.md)
   Services a queue that was stalled by the target.
-- [serviceThread](iobasicoutputqueue/1811713-servicethread.md)
+- [serviceThread](./iobasicoutputqueue/api-1811713-servicethread.md)
   Provides an implementation for the serviceThread() method defined in IOOutputQueue.
-- [setCapacity](iobasicoutputqueue/1811721-setcapacity.md)
+- [setCapacity](./iobasicoutputqueue/api-1811721-setcapacity.md)
   Changes the number of packets that the queue can hold before it begins to drop excess packets.
-- [start](iobasicoutputqueue/1811726-start.md)
+- [start](./iobasicoutputqueue/api-1811726-start.md)
   Starts up the packet flow between the queue and its target.
-- [stop](iobasicoutputqueue/1811734-stop.md)
+- [stop](./iobasicoutputqueue/api-1811734-stop.md)
   Stops the packet flow between the queue and its target.
-- [withTarget(IONetworkController *, UInt32)](iobasicoutputqueue/1811748-withtarget.md)
+- [withTarget(IONetworkController *, UInt32)](./iobasicoutputqueue/api-1811748-withtarget.md)
   Factory method that constructs and initializes an IOBasicOutputQueue object.
-- [withTarget(IONetworkController *, UInt32, UInt32)](iobasicoutputqueue/1811755-withtarget.md)
+- [withTarget(IONetworkController *, UInt32, UInt32)](./iobasicoutputqueue/api-1811755-withtarget.md)
   Factory method that constructs and initializes an IOBasicOutputQueue object.
-- [withTarget(OSObject *, IOOutputAction, UInt32)](iobasicoutputqueue/1811763-withtarget.md)
+- [withTarget(OSObject *, IOOutputAction, UInt32)](./iobasicoutputqueue/api-1811763-withtarget.md)
   Factory method that constructs and initializes an IOBasicOutputQueue object.
-- [withTarget(OSObject *, IOOutputAction, UInt32, UInt32)](iobasicoutputqueue/1811770-withtarget.md)
+- [withTarget(OSObject *, IOOutputAction, UInt32, UInt32)](./iobasicoutputqueue/api-1811770-withtarget.md)
   Factory method that constructs and initializes an IOBasicOutputQueue object.
 ### Constants
-- [GetStateBits](iobasicoutputqueue/getstatebits.md)
+- [GetStateBits](./iobasicoutputqueue/getstatebits.md)
   The bits in the value returned by getState().
-- [ServiceAsync](iobasicoutputqueue/serviceasync.md)
+- [ServiceAsync](./iobasicoutputqueue/serviceasync.md)
   The option bits recognized by service().
 ### Instance Methods
-- [- dequeue](iobasicoutputqueue/1567089-dequeue.md)
-- [- enqueue](iobasicoutputqueue/1567090-enqueue.md)
-- [- flush](iobasicoutputqueue/1567093-flush.md)
-- [- free](iobasicoutputqueue/1567099-free.md)
-- [- getCapacity](iobasicoutputqueue/1567102-getcapacity.md)
-- [- getDropCount](iobasicoutputqueue/1567083-getdropcount.md)
-- [- getMetaClass](iobasicoutputqueue/1567085-getmetaclass.md)
-- [- getOutputCount](iobasicoutputqueue/1567084-getoutputcount.md)
-- [- getRetryCount](iobasicoutputqueue/1567098-getretrycount.md)
-- [- getSize](iobasicoutputqueue/1567096-getsize.md)
-- [- getStallCount](iobasicoutputqueue/1567081-getstallcount.md)
-- [- getState](iobasicoutputqueue/1567095-getstate.md)
-- [- getStatisticsData](iobasicoutputqueue/1567086-getstatisticsdata.md)
-- [- handleNetworkDataAccess](iobasicoutputqueue/1567097-handlenetworkdataaccess.md)
-- [- output](iobasicoutputqueue/1567088-output.md)
-- [- service](iobasicoutputqueue/1567082-service.md)
-- [- serviceThread](iobasicoutputqueue/1567087-servicethread.md)
-- [- setCapacity](iobasicoutputqueue/1567103-setcapacity.md)
-- [- start](iobasicoutputqueue/1567094-start.md)
-- [- stop](iobasicoutputqueue/1567100-stop.md)
+- [- dequeue](./iobasicoutputqueue/api-1567089-dequeue.md)
+- [- enqueue](./iobasicoutputqueue/api-1567090-enqueue.md)
+- [- flush](./iobasicoutputqueue/api-1567093-flush.md)
+- [- free](./iobasicoutputqueue/api-1567099-free.md)
+- [- getCapacity](./iobasicoutputqueue/api-1567102-getcapacity.md)
+- [- getDropCount](./iobasicoutputqueue/api-1567083-getdropcount.md)
+- [- getMetaClass](./iobasicoutputqueue/api-1567085-getmetaclass.md)
+- [- getOutputCount](./iobasicoutputqueue/api-1567084-getoutputcount.md)
+- [- getRetryCount](./iobasicoutputqueue/api-1567098-getretrycount.md)
+- [- getSize](./iobasicoutputqueue/api-1567096-getsize.md)
+- [- getStallCount](./iobasicoutputqueue/api-1567081-getstallcount.md)
+- [- getState](./iobasicoutputqueue/api-1567095-getstate.md)
+- [- getStatisticsData](./iobasicoutputqueue/api-1567086-getstatisticsdata.md)
+- [- handleNetworkDataAccess](./iobasicoutputqueue/api-1567097-handlenetworkdataaccess.md)
+- [- output](./iobasicoutputqueue/api-1567088-output.md)
+- [- service](./iobasicoutputqueue/api-1567082-service.md)
+- [- serviceThread](./iobasicoutputqueue/api-1567087-servicethread.md)
+- [- setCapacity](./iobasicoutputqueue/api-1567103-setcapacity.md)
+- [- start](./iobasicoutputqueue/api-1567094-start.md)
+- [- stop](./iobasicoutputqueue/api-1567100-stop.md)
 ### Type Methods
-- [+ dispatchNetworkDataNotification](iobasicoutputqueue/1567091-dispatchnetworkdatanotification.md)
-- [+ withTarget](iobasicoutputqueue/1567101-withtarget.md)
-- [+ withTarget](iobasicoutputqueue/3516604-withtarget.md)
+- [+ dispatchNetworkDataNotification](./iobasicoutputqueue/api-1567091-dispatchnetworkdatanotification.md)
+- [+ withTarget](./iobasicoutputqueue/api-1567101-withtarget.md)
+- [+ withTarget](./iobasicoutputqueue/api-3516604-withtarget.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOOutputQueue](iooutputqueue.md)
+- [IOOutputQueue](./iooutputqueue.md)
 
 ## See Also
 
-- [IOGatedOutputQueue](iogatedoutputqueue.md)
+### Output Queues
+- [IOGatedOutputQueue](./iogatedoutputqueue.md)
   An extension of an IOBasicOutputQueue.
-- [IOOutputQueue](iooutputqueue.md)
+- [IOOutputQueue](./iooutputqueue.md)
   A packet queue that supports multiple producers and a single consumer.
 
 

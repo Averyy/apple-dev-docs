@@ -1,7 +1,8 @@
 # layoutManager
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout manager that renders the text drag preview.
 
@@ -15,6 +16,10 @@ The layout manager that renders the text drag preview.
 
 ```swift
 var layoutManager: NSLayoutManager { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSLayoutManager * layoutManager;
 ```
 
 

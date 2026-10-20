@@ -1,7 +1,8 @@
 # SVGAnimatedLengthList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGAnimatedLengthList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [animVal](svganimatedlengthlist/1629326-animval.md)
-- [baseVal](svganimatedlengthlist/1630463-baseval.md)
+- [animVal](./svganimatedlengthlist/api-1629326-animval.md)
+- [baseVal](./svganimatedlengthlist/api-1630463-baseval.md)
 
 
 ---

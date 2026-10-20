@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the receiver contains a specified point.
 
@@ -19,9 +20,13 @@ Returns whether the receiver contains a specified point.
 func contains(_ p: CGPoint) -> Bool
 ```
 
+```objc
+- (BOOL) containsPoint:(CGPoint) p;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the bounds of the layer contains the point.
+[`true`](../../Swift/true.md) if the bounds of the layer contains the point.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ func contains(_ p: CGPoint) -> Bool
 
 ## See Also
 
-- [func hitTest(CGPoint) -> CALayer?](calayer/hittest(_:).md)
+### Hit testing
+- [func hitTest(CGPoint) -> CALayer?](./hittest%28_%29.md)
   Returns the farthest descendant of the receiver in the layer hierarchy (including itself) that contains the specified point.
 
 

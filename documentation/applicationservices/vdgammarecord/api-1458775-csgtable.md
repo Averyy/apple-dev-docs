@@ -1,7 +1,8 @@
 # csGTable
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A pointer to a gamma table.
 
@@ -12,6 +13,10 @@ A pointer to a gamma table.
 
 ```swift
 var csGTable: Ptr!
+```
+
+```c
+Ptr csGTable;
 ```
 
 

@@ -5,19 +5,20 @@
 ## Topics
 
 ### Enumerations
-- [Node Types](1497602-node-types.md)
+- [Node Types](./api-1497602-node-types.md)
   Open Directory node types.
-- [Anonymous](1579651-anonymous.md)
-- [Anonymous](1579652-anonymous.md)
-- [Anonymous](1497623-anonymous.md)
-- [Anonymous](1497721-anonymous.md)
+- [Anonymous](./api-1579651-anonymous.md)
+- [Anonymous](./api-1579652-anonymous.md)
+- [Anonymous](./api-1497623-anonymous.md)
+- [Anonymous](./api-1497721-anonymous.md)
 
 ## See Also
 
-- [OpenDirectory Functions](opendirectory-functions.md)
+### Reference
+- [OpenDirectory Functions](./opendirectory-functions.md)
   This document describes the functions, constants, and data types used to interact with Open Directory.
-- [OpenDirectory Constants](opendirectory-constants.md)
-- [OpenDirectory Data Types](opendirectory-data-types.md)
+- [OpenDirectory Constants](./opendirectory-constants.md)
+- [OpenDirectory Data Types](./opendirectory-data-types.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # credentialRegistration
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The registration response for the newly created passkey.
 

@@ -1,14 +1,15 @@
 # CopyNextNotification
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.4+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t CopyNextNotification(uint64_t *type, IOService **service, uint64_t *options, OSDispatchMethod supermethod);
 ```
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned long {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned long {
 ## Topics
 
 ### Constants
-- [kIORPCMessageIDKernel](3074979-anonymous/kiorpcmessageidkernel.md)
+- [kIORPCMessageIDKernel](./api-3074979-anonymous/kiorpcmessageidkernel.md)
 
 
 ---

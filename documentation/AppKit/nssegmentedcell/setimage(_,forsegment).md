@@ -1,12 +1,13 @@
 # setImage(_:forSegment:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the image for the specified segment.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,42 +15,47 @@ Sets the image for the specified segment.
 func setImage(_ image: NSImage?, forSegment segment: Int)
 ```
 
+```objc
+- (void) setImage:(NSImage *) image forSegment:(NSInteger) segment;
+```
+
 ## Parameters
 
 - `image`: The image to apply to the segment or `nil` if you want to clear the existing image. Images are not scaled to fit inside a segment. If the image is larger than the available space, it is clipped.
-- `segment`: The index of the segment whose image you want to set. This method raises an exception ([`rangeException`](https://developer.apple.com/documentation/foundation/nsexceptionname/rangeexception)) if the index is out of bounds.
+- `segment`: The index of the segment whose image you want to set. This method raises an exception ([`rangeException`](../../Foundation/nsexceptionname/rangeexception.md)) if the index is out of bounds.
 
 ## See Also
 
-- [func setLabel(String, forSegment: Int)](nssegmentedcell/setlabel(_:forsegment:).md)
+### Configuring Individual Segments
+- [func setLabel(String, forSegment: Int)](./setlabel%28_,forsegment%29.md)
   Sets the label for the specified segment.
-- [func label(forSegment: Int) -> String?](nssegmentedcell/label(forsegment:).md)
+- [func label(forSegment: Int) -> String?](./label%28forsegment%29.md)
   Returns the label of the specified segment.
-- [func image(forSegment: Int) -> NSImage?](nssegmentedcell/image(forsegment:).md)
+- [func image(forSegment: Int) -> NSImage?](./image%28forsegment%29.md)
   Returns the image associated with the specified segment.
-- [func setImageScaling(NSImageScaling, forSegment: Int)](nssegmentedcell/setimagescaling(_:forsegment:).md)
+- [func setImageScaling(NSImageScaling, forSegment: Int)](./setimagescaling%28_,forsegment%29.md)
   Sets the image scaling mode for the specified segment.
-- [func imageScaling(forSegment: Int) -> NSImageScaling](nssegmentedcell/imagescaling(forsegment:).md)
+- [func imageScaling(forSegment: Int) -> NSImageScaling](./imagescaling%28forsegment%29.md)
   Returns the image scaling mode associated with the specified segment.
-- [func setWidth(CGFloat, forSegment: Int)](nssegmentedcell/setwidth(_:forsegment:).md)
+- [func setWidth(CGFloat, forSegment: Int)](./setwidth%28_,forsegment%29.md)
   Sets the width of the specified segment.
-- [func width(forSegment: Int) -> CGFloat](nssegmentedcell/width(forsegment:).md)
+- [func width(forSegment: Int) -> CGFloat](./width%28forsegment%29.md)
   Returns the width of the specified segment.
-- [func setEnabled(Bool, forSegment: Int)](nssegmentedcell/setenabled(_:forsegment:).md)
+- [func setEnabled(Bool, forSegment: Int)](./setenabled%28_,forsegment%29.md)
   Sets the enabled state of the specified segment
-- [func isEnabled(forSegment: Int) -> Bool](nssegmentedcell/isenabled(forsegment:).md)
+- [func isEnabled(forSegment: Int) -> Bool](./isenabled%28forsegment%29.md)
   Returns a Boolean value indicating whether the specified segment is enabled.
-- [func setMenu(NSMenu?, forSegment: Int)](nssegmentedcell/setmenu(_:forsegment:).md)
+- [func setMenu(NSMenu?, forSegment: Int)](./setmenu%28_,forsegment%29.md)
   Sets the menu for the specified segment.
-- [func menu(forSegment: Int) -> NSMenu?](nssegmentedcell/menu(forsegment:).md)
+- [func menu(forSegment: Int) -> NSMenu?](./menu%28forsegment%29.md)
   Returns the menu for the specified segment.
-- [func setToolTip(String?, forSegment: Int)](nssegmentedcell/settooltip(_:forsegment:).md)
+- [func setToolTip(String?, forSegment: Int)](./settooltip%28_,forsegment%29.md)
   Sets the tooltip for the specified segment.
-- [func toolTip(forSegment: Int) -> String?](nssegmentedcell/tooltip(forsegment:).md)
+- [func toolTip(forSegment: Int) -> String?](./tooltip%28forsegment%29.md)
   Returns the tooltip of the specified segment.
-- [func setTag(Int, forSegment: Int)](nssegmentedcell/settag(_:forsegment:).md)
+- [func setTag(Int, forSegment: Int)](./settag%28_,forsegment%29.md)
   Sets the tag for the specified segment.
-- [func tag(forSegment: Int) -> Int](nssegmentedcell/tag(forsegment:).md)
+- [func tag(forSegment: Int) -> Int](./tag%28forsegment%29.md)
   Returns the tag of the specified segment.
 
 

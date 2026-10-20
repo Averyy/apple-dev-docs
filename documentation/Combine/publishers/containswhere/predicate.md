@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure that determines whether the publisher should consider an element as a match.
 
@@ -22,7 +23,8 @@ let predicate: (Upstream.Output) -> Bool
 
 ## See Also
 
-- [let upstream: Upstream](publishers/containswhere/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

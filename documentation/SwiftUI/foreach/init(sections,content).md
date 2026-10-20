@@ -1,7 +1,8 @@
 # init(sections:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that uniquely identifies and creates views across updates based on the sections of a given view.
 
@@ -20,6 +21,8 @@ Creates an instance that uniquely identifies and creates views across updates ba
 init<V>(sections view: V, @ContentBuilder content: @escaping (SectionConfiguration) -> Content) where Data == ForEachSectionCollection<Content>, ID == SectionConfiguration.ID, Content : View, V : View
 ```
 
+Available when `Data` conforms to `RandomAccessCollection` and `ID` conforms to `Hashable`.
+
 ## Parameters
 
 - `view`: The view to extract the sections of.
@@ -27,13 +30,14 @@ init<V>(sections view: V, @ContentBuilder content: @escaping (SectionConfigurati
 
 ## See Also
 
-- [init(Data)](foreach/init(_:).md)
+### Creating a collection
+- [init(Data)](./init%28_%29.md)
   Creates an instance that uniquely identifies and creates table rows across updates based on the identity of the underlying data.
-- [init(_:content:)](foreach/init(_:content:).md)
+- [init(_:content:)](./init%28_,content%29.md)
   Creates an instance that uniquely identifies and creates map content across updates based on the identity of the underlying data.
-- [init(_:id:content:)](foreach/init(_:id:content:).md)
+- [init(_:id:content:)](./init%28_,id,content%29.md)
   Creates an instance that uniquely identifies and creates map content across updates based on the provided key path to the underlying data’s identifier.
-- [init<V>(subviews: V, content: (Subview) -> Content)](foreach/init(subviews:content:).md)
+- [init<V>(subviews: V, content: (Subview) -> Content)](./init%28subviews,content%29.md)
   Creates an instance that uniquely identifies and creates views across updates based on the subviews of a given view.
 
 

@@ -1,7 +1,8 @@
 # viewContext
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The main queue’s managed object context.
 
@@ -20,21 +21,26 @@ The main queue’s managed object context.
 var viewContext: NSManagedObjectContext { get }
 ```
 
+```objc
+@property (strong, readonly) NSManagedObjectContext * viewContext;
+```
+
 ## Mentions
 
-- [Setting up a Core Data stack](setting-up-a-core-data-stack.md)
-- [Syncing a Core Data Store with CloudKit](syncing-a-core-data-store-with-cloudkit.md)
-- [Using Core Data in the background](using-core-data-in-the-background.md)
+- [Setting up a Core Data stack](../setting-up-a-core-data-stack.md)
+- [Syncing a Core Data Store with CloudKit](../syncing-a-core-data-store-with-cloudkit.md)
+- [Using Core Data in the background](../using-core-data-in-the-background.md)
 
 #### Discussion
 
-This property contains a reference to the [`NSManagedObjectContext`](nsmanagedobjectcontext.md) that is created and owned by the persistent container which is associated with the main queue of the application. This context is created automatically as part of the initialization of the persistent container.
+This property contains a reference to the [`NSManagedObjectContext`](../nsmanagedobjectcontext.md) that is created and owned by the persistent container which is associated with the main queue of the application. This context is created automatically as part of the initialization of the persistent container.
 
-This context is associated directly with the [`NSPersistentStoreCoordinator`](nspersistentstorecoordinator.md) and is non-generational by default.
+This context is associated directly with the [`NSPersistentStoreCoordinator`](../nspersistentstorecoordinator.md) and is non-generational by default.
 
 ## See Also
 
-- [func newBackgroundContext() -> NSManagedObjectContext](nspersistentcontainer/newbackgroundcontext.md)
+### Acquiring Contexts
+- [func newBackgroundContext() -> NSManagedObjectContext](./newbackgroundcontext%28%29.md)
   Returns a new managed object context that executes on a private queue.
 
 

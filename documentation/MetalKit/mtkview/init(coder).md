@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: MetalKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a view from data in a given unarchiver.
 
@@ -19,6 +20,10 @@ Initializes a view from data in a given unarchiver.
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 #### Return Value
 
 An initialized view object.
@@ -29,7 +34,8 @@ An initialized view object.
 
 ## See Also
 
-- [init(frame: CGRect, device: (any MTLDevice)?)](mtkview/init(frame:device:).md)
+### Creating a View
+- [init(frame: CGRect, device: (any MTLDevice)?)](./init%28frame,device%29.md)
   Initializes a view with the specified frame rectangle and Metal device.
 
 

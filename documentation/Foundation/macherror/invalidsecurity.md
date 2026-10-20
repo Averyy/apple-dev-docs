@@ -1,7 +1,8 @@
 # invalidSecurity
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An argument supplied to assert security privilege was not a host security port.
 

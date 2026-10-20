@@ -1,7 +1,8 @@
 # kSGCCmd_GET_DATA_BUFFER_STATUS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSGCCmd_GET_DATA_BUFFER_STATUS = 0x34
 ```
 

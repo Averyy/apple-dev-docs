@@ -1,7 +1,8 @@
 # didRecover
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the error was recoverable.
 
@@ -20,9 +21,14 @@ A Boolean value that indicates whether the error was recoverable.
 var didRecover: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL didRecover;
+```
+
 ## See Also
 
-- [var error: any Error](avmetricerrorevent/error.md)
+### Getting the error
+- [var error: any Error](./error.md)
   Returns the error event.
 
 

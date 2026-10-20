@@ -1,7 +1,8 @@
 # layoutTag
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The audio channel’s underlying layout tag.
 
@@ -20,17 +21,23 @@ The audio channel’s underlying layout tag.
 var layoutTag: AudioChannelLayoutTag { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AudioChannelLayoutTag layoutTag;
+```
+
 ## See Also
 
-- [convenience init?(layoutTag: AudioChannelLayoutTag)](avaudiochannellayout/init(layouttag:).md)
+### Related Documentation
+- [convenience init?(layoutTag: AudioChannelLayoutTag)](./init%28layouttag%29.md)
   Creates an audio channel layout object from a layout tag.
-- [typealias AVAudioChannelCount](avaudiochannelcount.md)
+### Getting audio channel layout properties
+- [typealias AVAudioChannelCount](../avaudiochannelcount.md)
   The number of audio channels.
-- [var channelCount: AVAudioChannelCount](avaudiochannellayout/channelcount.md)
+- [var channelCount: AVAudioChannelCount](./channelcount.md)
   The number of channels of audio data.
-- [var layout: UnsafePointer<AudioChannelLayout>](avaudiochannellayout/layout.md)
+- [var layout: UnsafePointer<AudioChannelLayout>](./layout.md)
   The underlying audio channel layout.
-- [func isEqual(Any) -> Bool](avaudiochannellayout/isequal(_:).md)
+- [func isEqual(Any) -> Bool](./isequal%28_%29.md)
   Indicates whether another audio channel layout is exactly equal to the current layout.
 
 

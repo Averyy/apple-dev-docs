@@ -1,7 +1,8 @@
 # OSAsyncReference
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias OSAsyncReference = (natural_t, natural_t, natural_t, natural_t, natural_t, natural_t, natural_t, natural_t)
+```
+
+```c
+typedef natural_t OSAsyncReference[8];
 ```
 
 

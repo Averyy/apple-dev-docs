@@ -1,16 +1,19 @@
 # navigationBarLeading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Places the item in the leading edge of the navigation bar.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- tvOS 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.2
+- tvOS 14.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`topBarLeading`](./topbarleading.md) instead.
 
 ## Declaration
 
@@ -20,9 +23,10 @@ static let navigationBarLeading: ToolbarItemPlacement
 
 ## See Also
 
-- [init<ID>(id: ID)](toolbaritemplacement/init(id:).md)
+### Deprecated
+- [init<ID>(id: ID)](./init%28id%29.md)
   Creates a custom accessory bar item placement.
-- [static let navigationBarTrailing: ToolbarItemPlacement](toolbaritemplacement/navigationbartrailing.md)
+- [static let navigationBarTrailing: ToolbarItemPlacement](./navigationbartrailing.md)
   Places the item in the trailing edge of the navigation bar.
 
 

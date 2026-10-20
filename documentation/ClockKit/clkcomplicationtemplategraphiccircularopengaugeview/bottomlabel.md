@@ -1,12 +1,15 @@
 # bottomLabel
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SwiftUI view displayed by the template.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -17,9 +20,10 @@ The SwiftUI view displayed by the template.
 
 ## See Also
 
-- [var gaugeProvider: CLKGaugeProvider](clkcomplicationtemplategraphiccircularopengaugeview/gaugeprovider.md)
+### Accesing the Content
+- [var gaugeProvider: CLKGaugeProvider](./gaugeprovider.md)
   The gauge provider for the template.
-- [var centerTextProvider: CLKTextProvider](clkcomplicationtemplategraphiccircularopengaugeview/centertextprovider.md)
+- [var centerTextProvider: CLKTextProvider](./centertextprovider.md)
   The text provider for the center text.
 
 

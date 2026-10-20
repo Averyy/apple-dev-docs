@@ -1,7 +1,8 @@
 # MKClusterAnnotation
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An annotation that groups two or more distinct annotations into a single entity.
 
@@ -19,42 +20,47 @@ An annotation that groups two or more distinct annotations into a single entity.
 class MKClusterAnnotation
 ```
 
+```objc
+@interface MKClusterAnnotation : NSObject
+```
+
 #### Overview
 
 A cluster annotation object stands in for the group of annotations. Cluster views promote legibility of the underlying annotations by displaying a single annotation that takes it’s title from one annotation and includes a subtitle that indicates how many additional annotations belong to the group.
 
-MapKit automatically creates cluster annotations when two or more annotation views group too closely together on the map surface. To customize the cluster annotations that display on your map, implement the [`mapView(_:clusterAnnotationForMemberAnnotations:)`](mkmapviewdelegate/mapview(_:clusterannotationformemberannotations:).md) method in your map’s delegate.
+MapKit automatically creates cluster annotations when two or more annotation views group too closely together on the map surface. To customize the cluster annotations that display on your map, implement the [`mapView(_:clusterAnnotationForMemberAnnotations:)`](./mkmapviewdelegate/mapview%28_,clusterannotationformemberannotations%29.md) method in your map’s delegate.
 
 ## Topics
 
 ### Creating a cluster annotation
-- [init(memberAnnotations: [any MKAnnotation])](mkclusterannotation/init(memberannotations:).md)
+- [init(memberAnnotations: [any MKAnnotation])](./mkclusterannotation/init%28memberannotations%29.md)
   Creates a cluster annotation with the specified individual annotations.
 ### Getting the cluster attributes
-- [var title: String?](mkclusterannotation/title.md)
+- [var title: String?](./mkclusterannotation/title.md)
   The title string to display for the group of annotations.
-- [var subtitle: String?](mkclusterannotation/subtitle.md)
+- [var subtitle: String?](./mkclusterannotation/subtitle.md)
   The subtitle string to display for the group of annotations.
 ### Getting the annotations
-- [var memberAnnotations: [any MKAnnotation]](mkclusterannotation/memberannotations.md)
+- [var memberAnnotations: [any MKAnnotation]](./mkclusterannotation/memberannotations.md)
   The annotations that the cluster contains.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MKAnnotation](mkannotation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MKAnnotation](./mkannotation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Decluttering a Map with MapKit Annotation Clustering](decluttering-a-map-with-mapkit-annotation-clustering.md)
+### Grouped annotations
+- [Decluttering a Map with MapKit Annotation Clustering](./decluttering-a-map-with-mapkit-annotation-clustering.md)
   Enhance the readability of a map by replacing overlapping annotations with a clustering annotation view.
 
 

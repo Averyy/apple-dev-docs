@@ -1,7 +1,8 @@
 # maximumSpeed
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum speed that the dock accessory moves.
 
@@ -19,7 +20,8 @@ let maximumSpeed: Double
 
 ## See Also
 
-- [let positionRange: Range<Double>](dockaccessory/limits-swift.struct/limit/positionrange.md)
+### Limiting speed and position
+- [let positionRange: Range<Double>](./positionrange.md)
   The valid range that the dock accessory moves.
 
 

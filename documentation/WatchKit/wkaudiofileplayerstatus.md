@@ -1,12 +1,15 @@
 # WKAudioFilePlayerStatus
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent the status of the player.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
+
+> **Deprecated**: Use the [AVFoundation](../AVFoundation/AVFoundation.md) framework’s [`AVPlayer`](../AVFoundation/avplayer.md) and [`AVQueuePlayer`](../AVFoundation/avqueueplayer.md) classes instead.
 
 ## Declaration
 
@@ -14,27 +17,31 @@ Constants that represent the status of the player.
 enum WKAudioFilePlayerStatus
 ```
 
+```c
+enum WKAudioFilePlayerStatus : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [WKAudioFilePlayerStatus.unknown](wkaudiofileplayerstatus/unknown.md)
+- [WKAudioFilePlayerStatus.unknown](./wkaudiofileplayerstatus/unknown.md)
   The status of the item is unknown because the player has not yet loaded the audio file for playback.
-- [WKAudioFilePlayerStatus.readyToPlay](wkaudiofileplayerstatus/readytoplay.md)
+- [WKAudioFilePlayerStatus.readyToPlay](./wkaudiofileplayerstatus/readytoplay.md)
   The player is ready to play its item.
-- [WKAudioFilePlayerStatus.failed](wkaudiofileplayerstatus/failed.md)
-  The player can no longer play the audio because of an error. Use the [`error`](wkaudiofileplayer/error.md) property to get information about the error that occurred.
+- [WKAudioFilePlayerStatus.failed](./wkaudiofileplayerstatus/failed.md)
+  The player can no longer play the audio because of an error. Use the [`error`](./wkaudiofileplayer/error.md) property to get information about the error that occurred.
 ### Initializers
-- [init?(rawValue: Int)](wkaudiofileplayerstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkaudiofileplayerstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

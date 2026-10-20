@@ -1,7 +1,8 @@
 # CSSM_FEE_PRIME_TYPE_DEFAULT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSM_FEE_PRIME_TYPE_DEFAULT: Int { get }
+```
+
+```c
+CSSM_FEE_PRIME_TYPE_DEFAULT
 ```
 
 

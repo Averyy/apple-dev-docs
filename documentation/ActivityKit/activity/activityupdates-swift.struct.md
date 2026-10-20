@@ -1,7 +1,8 @@
 # Activity.ActivityUpdates
 
 **Framework**: ActivityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that offers functionality to observe changes to a Live Activity.
 
@@ -15,26 +16,29 @@ A structure that offers functionality to observe changes to a Live Activity.
 struct ActivityUpdates
 ```
 
+Available when `Attributes` conforms to `ActivityAttributes`.
+
 ## Topics
 
 ### Creating an iterator
-- [func makeAsyncIterator() -> Activity<Attributes>.ActivityUpdates.Iterator](activity/activityupdates-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> Activity<Attributes>.ActivityUpdates.Iterator](./activityupdates-swift.struct/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces results from this asynchronous sequence.
-- [Activity.ActivityUpdates.Iterator](activity/activityupdates-swift.struct/iterator.md)
+- [Activity.ActivityUpdates.Iterator](./activityupdates-swift.struct/iterator.md)
   An iterator for accessing individual data entries from the series.
-- [Activity.ActivityUpdates.Element](activity/activityupdates-swift.struct/element.md)
+- [Activity.ActivityUpdates.Element](./activityupdates-swift.struct/element.md)
   The type of element this asynchronous sequence produces.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [static var activities: [Activity<Attributes>]](activity/activities.md)
+### Accessing Live Activities
+- [static var activities: [Activity<Attributes>]](./activities.md)
   An array of your app’s current Live Activities.
-- [static var activityUpdates: Activity<Attributes>.ActivityUpdates](activity/activityupdates-swift.type.property.md)
+- [static var activityUpdates: Activity<Attributes>.ActivityUpdates](./activityupdates-swift.type.property.md)
   An asynchronous sequence you use to observe changes to ongoing Live Activities and to asynchronously access a Live Activity when you start it.
 
 

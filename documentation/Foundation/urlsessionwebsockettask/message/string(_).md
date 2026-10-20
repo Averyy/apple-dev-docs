@@ -1,7 +1,8 @@
 # URLSessionWebSocketTask.Message.string(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A WebSocket message that contains a string.
 
@@ -22,11 +23,12 @@ case string(String)
 
 #### Discussion
 
-The [`URLSessionWebSocketTask`](urlsessionwebsockettask.md) uses UTF-8 encoding to send the message’s string.
+The [`URLSessionWebSocketTask`](../../urlsessionwebsockettask.md) uses UTF-8 encoding to send the message’s string.
 
 ## See Also
 
-- [URLSessionWebSocketTask.Message.data(_:)](urlsessionwebsockettask/message/data(_:).md)
+### Message types
+- [URLSessionWebSocketTask.Message.data(_:)](./data%28_%29.md)
   A WebSocket message that contains a block of data.
 
 

@@ -1,9 +1,10 @@
 # NSMapTableWeakMemory
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Equivalent to [`weakMemory`](nspointerfunctions/options/weakmemory.md).
+Equivalent to [`weakMemory`](./nspointerfunctions/options/weakmemory.md).
 
 **Availability**:
 - iOS 6.0+
@@ -20,20 +21,25 @@ Equivalent to [`weakMemory`](nspointerfunctions/options/weakmemory.md).
 var NSMapTableWeakMemory: NSPointerFunctions.Options { get }
 ```
 
+```c
+static const NSPointerFunctionsOptions NSMapTableWeakMemory;
+```
+
 ## See Also
 
-- [static var machVirtualMemory: NSPointerFunctions.Options](nspointerfunctions/options/machvirtualmemory.md)
+### Memory Options
+- [static var machVirtualMemory: NSPointerFunctions.Options](./nspointerfunctions/options/machvirtualmemory.md)
   Use Mach memory.
-- [static var mallocMemory: NSPointerFunctions.Options](nspointerfunctions/options/mallocmemory.md)
+- [static var mallocMemory: NSPointerFunctions.Options](./nspointerfunctions/options/mallocmemory.md)
   Use `free()` on removal, `calloc()` on copy in.
-- [static var opaqueMemory: NSPointerFunctions.Options](nspointerfunctions/options/opaquememory.md)
+- [static var opaqueMemory: NSPointerFunctions.Options](./nspointerfunctions/options/opaquememory.md)
   Take no action when pointers are deleted.
-- [static var strongMemory: NSPointerFunctions.Options](nspointerfunctions/options/strongmemory.md)
+- [static var strongMemory: NSPointerFunctions.Options](./nspointerfunctions/options/strongmemory.md)
   Use strong write-barriers to backing store; use garbage-collected memory on copy-in.
-- [static var weakMemory: NSPointerFunctions.Options](nspointerfunctions/options/weakmemory.md)
+- [static var weakMemory: NSPointerFunctions.Options](./nspointerfunctions/options/weakmemory.md)
   Uses weak read and write barriers appropriate for ARC or GC. Using NSPointerFunctionsWeakMemory object references will turn to `NULL` on last release.
-- [var NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
-  Equivalent to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
+- [var NSMapTableStrongMemory: NSPointerFunctions.Options](./nsmaptablestrongmemory.md)
+  Equivalent to [`strongMemory`](./nspointerfunctions/options/strongmemory.md).
 
 
 ---

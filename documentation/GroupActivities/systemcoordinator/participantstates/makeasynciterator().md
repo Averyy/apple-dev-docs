@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -20,8 +21,9 @@ An instance of the `AsyncIterator` type used to produce elements of the asynchro
 
 ## See Also
 
-- [SystemCoordinator.ParticipantStates.Iterator](systemcoordinator/participantstates/iterator.md)
-- [SystemCoordinator.ParticipantStates.Element](systemcoordinator/participantstates/element.md)
+### Creating an iterator
+- [SystemCoordinator.ParticipantStates.Iterator](./iterator.md)
+- [SystemCoordinator.ParticipantStates.Element](./element.md)
   The type of element produced by this asynchronous sequence.
 
 

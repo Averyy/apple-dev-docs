@@ -1,25 +1,26 @@
 # AppEncryptionDeclarationCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppEncryptionDeclarationCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppEncryptionDeclarationCreateRequest.Data.Relationships.App](appencryptiondeclarationcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+- [object AppEncryptionDeclarationCreateRequest.Data.Relationships.App](./relationships-data.dictionary/app-data.dictionary.md)
 
 ## Properties
 
-- `app` (AppEncryptionDeclarationCreateRequest.Data.Relationships.App) *(required)*
+- `app` (AppEncryptionDeclarationCreateRequest.Data.Relationships.App) *(required)* *(deprecated)*
 
 
 ---

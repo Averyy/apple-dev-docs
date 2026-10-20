@@ -1,7 +1,8 @@
 # init(recurrenceWith:interval:daysOfTheWeek:daysOfTheMonth:monthsOfTheYear:weeksOfTheYear:daysOfTheYear:setPositions:end:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a recurrence rule with a given frequency and additional scheduling information.
 
@@ -19,9 +20,13 @@ Initializes and returns a recurrence rule with a given frequency and additional 
 init(recurrenceWith type: EKRecurrenceFrequency, interval: Int, daysOfTheWeek days: [EKRecurrenceDayOfWeek]?, daysOfTheMonth monthDays: [NSNumber]?, monthsOfTheYear months: [NSNumber]?, weeksOfTheYear: [NSNumber]?, daysOfTheYear: [NSNumber]?, setPositions: [NSNumber]?, end: EKRecurrenceEnd?)
 ```
 
+```objc
+- (instancetype) initRecurrenceWithFrequency:(EKRecurrenceFrequency) type interval:(NSInteger) interval daysOfTheWeek:(NSArray<EKRecurrenceDayOfWeek *> *) days daysOfTheMonth:(NSArray<NSNumber *> *) monthDays monthsOfTheYear:(NSArray<NSNumber *> *) months weeksOfTheYear:(NSArray<NSNumber *> *) weeksOfTheYear daysOfTheYear:(NSArray<NSNumber *> *) daysOfTheYear setPositions:(NSArray<NSNumber *> *) setPositions end:(EKRecurrenceEnd *) end;
+```
+
 ## Mentions
 
-- [Creating a recurring event](creating-a-recurring-event.md)
+- [Creating a recurring event](../creating-a-recurring-event.md)
 
 #### Return Value
 
@@ -35,12 +40,12 @@ Negative values indicate counting backwards from the end of the recurrence rule�
 
 - `type`: The frequency of the recurrence rule. Can be daily, weekly, monthly, or yearly.
 - `interval`: The interval between instances of this recurrence. For example, a weekly recurrence rule with an interval of `2` occurs every other week. Must be greater than `0`.
-- `days`: The days of the week that the event occurs, as an array of [`EKRecurrenceDayOfWeek`](ekrecurrencedayofweek.md) objects.
-- `monthDays`: The days of the month that the event occurs, as an array of [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects. Values can be from `1` to `31` and from `-1` to `-31`. This parameter is only valid for recurrence rules of type [`EKRecurrenceFrequency.monthly`](ekrecurrencefrequency/monthly.md).
-- `months`: The months of the year that the event occurs, as an array of `NSNumber` objects. Values can be from `1` to `12`. This parameter is only valid for recurrence rules of type [`EKRecurrenceFrequency.yearly`](ekrecurrencefrequency/yearly.md).
-- `weeksOfTheYear`: The weeks of the year that the event occurs, as an array of `NSNumber` objects. Values can be from `1` to `53` and from `-1` to `-53`. This parameter is only valid for recurrence rules of type [`EKRecurrenceFrequency.yearly`](ekrecurrencefrequency/yearly.md).
-- `daysOfTheYear`: The days of the year that the event occurs, as an array of `NSNumber` objects. Values can be from `1` to `366` and from `-1` to `-366`. This parameter is only valid for recurrence rules of type [`EKRecurrenceFrequency.yearly`](ekrecurrencefrequency/yearly.md).
-- `setPositions`: An array of ordinal numbers that filters which recurrences to include in the recurrence rule’s frequency. See [`setPositions`](ekrecurrencerule/setpositions.md) for more information.
+- `days`: The days of the week that the event occurs, as an array of [`EKRecurrenceDayOfWeek`](../ekrecurrencedayofweek.md) objects.
+- `monthDays`: The days of the month that the event occurs, as an array of [`NSNumber`](../../Foundation/nsnumber.md) objects. Values can be from `1` to `31` and from `-1` to `-31`. This parameter is only valid for recurrence rules of type [`EKRecurrenceFrequency.monthly`](../ekrecurrencefrequency/monthly.md).
+- `months`: The months of the year that the event occurs, as an array of `NSNumber` objects. Values can be from `1` to `12`. This parameter is only valid for recurrence rules of type [`EKRecurrenceFrequency.yearly`](../ekrecurrencefrequency/yearly.md).
+- `weeksOfTheYear`: The weeks of the year that the event occurs, as an array of `NSNumber` objects. Values can be from `1` to `53` and from `-1` to `-53`. This parameter is only valid for recurrence rules of type [`EKRecurrenceFrequency.yearly`](../ekrecurrencefrequency/yearly.md).
+- `daysOfTheYear`: The days of the year that the event occurs, as an array of `NSNumber` objects. Values can be from `1` to `366` and from `-1` to `-366`. This parameter is only valid for recurrence rules of type [`EKRecurrenceFrequency.yearly`](../ekrecurrencefrequency/yearly.md).
+- `setPositions`: An array of ordinal numbers that filters which recurrences to include in the recurrence rule’s frequency. See [`setPositions`](./setpositions.md) for more information.
 - `end`: The end of the recurrence rule.
 
 

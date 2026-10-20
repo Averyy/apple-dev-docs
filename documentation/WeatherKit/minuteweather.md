@@ -1,7 +1,8 @@
 # MinuteWeather
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents the next hour minute forecasts.
 
@@ -23,38 +24,39 @@ struct MinuteWeather
 ## Topics
 
 ### Getting the precipitation
-- [var precipitation: Precipitation](minuteweather/precipitation.md)
+- [var precipitation: Precipitation](./minuteweather/precipitation.md)
   A description of the precipitation for this minute.
-- [var precipitationChance: Double](minuteweather/precipitationchance.md)
+- [var precipitationChance: Double](./minuteweather/precipitationchance.md)
   The probability of precipitation in this minute.
-- [var precipitationIntensity: Measurement<UnitSpeed>](minuteweather/precipitationintensity.md)
+- [var precipitationIntensity: Measurement<UnitSpeed>](./minuteweather/precipitationintensity.md)
   The forecasted precipitation intensity.
 ### Getting the date
-- [var date: Date](minuteweather/date.md)
+- [var date: Date](./minuteweather/date.md)
   The start time of the minute weather.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WeatherAlert](weatheralert.md)
+### Alerts and forecasts
+- [struct WeatherAlert](./weatheralert.md)
   A weather alert issued for the requested  location by a governmental authority.
-- [struct WeatherAvailability](weatheravailability.md)
+- [struct WeatherAvailability](./weatheravailability.md)
   A structure that indicates the availability of data at the requested location.
-- [struct Forecast](forecast.md)
+- [struct Forecast](./forecast.md)
   A forecast collection for minute, hourly, and daily forecasts.
-- [struct HourWeather](hourweather.md)
+- [struct HourWeather](./hourweather.md)
   A structure that represents the weather conditions for the hour.
-- [struct DayWeather](dayweather.md)
+- [struct DayWeather](./dayweather.md)
   A structure that represents the weather conditions for the day.
 
 

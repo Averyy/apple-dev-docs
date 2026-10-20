@@ -1,7 +1,8 @@
 # trimEnd
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time, in seconds, at which the animations stop.
 
@@ -11,7 +12,7 @@ The time, in seconds, at which the animations stop.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,21 +22,22 @@ var trimEnd: TimeInterval? { get set }
 
 #### Discussion
 
-This property is `nil` by default, which plays the animation until `time` = [`duration`](animationgroup/duration.md). If you set a value, the animation edits the duration according to the specified ending time.
+This property is `nil` by default, which plays the animation until `time` = [`duration`](./duration.md). If you set a value, the animation edits the duration according to the specified ending time.
 
 ## See Also
 
-- [var speed: Float](animationgroup/speed.md)
+### Timing the group
+- [var speed: Float](./speed.md)
   A factor that increases or decreases the animation’s rate of playback.
-- [var delay: TimeInterval](animationgroup/delay.md)
+- [var delay: TimeInterval](./delay.md)
   An amount of time that lapses before the animation plays.
-- [var duration: TimeInterval](animationgroup/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The total playback time of the animation.
-- [var offset: TimeInterval](animationgroup/offset.md)
+- [var offset: TimeInterval](./offset.md)
   The time, in seconds, at which the animations begin within the duration.
-- [var trimDuration: TimeInterval?](animationgroup/trimduration.md)
+- [var trimDuration: TimeInterval?](./trimduration.md)
   An optional duration that overrides the calculated duration.
-- [var trimStart: TimeInterval?](animationgroup/trimstart.md)
+- [var trimStart: TimeInterval?](./trimstart.md)
   The time, in seconds, at which the animations play.
 
 

@@ -1,7 +1,8 @@
 # verticalScaled
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 If the mode is scaled, sets the size of the image before scaling or rotation.
 
@@ -10,7 +11,7 @@ If the mode is scaled, sets the size of the image before scaling or rotation.
 
 ## Declaration
 
-```swift
+```c
 UInt32 verticalScaled;
 ```
 

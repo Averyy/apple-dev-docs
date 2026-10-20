@@ -1,7 +1,8 @@
 # setSubprotocols(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds to the list of supported application protocols that will be presented to a WebSocket server during connection establishment.
 
@@ -22,9 +23,10 @@ func setSubprotocols(_ subprotocols: [String])
 
 ## See Also
 
-- [func setAdditionalHeaders([(name: String, value: String)])](nwprotocolwebsocket/options/setadditionalheaders(_:).md)
+### Configuring Client Handshakes
+- [func setAdditionalHeaders([(name: String, value: String)])](./setadditionalheaders%28_%29.md)
   Sets additional HTTP header fields to be sent by the client during the WebSocket handshake.
-- [var skipHandshake: Bool](nwprotocolwebsocket/options/skiphandshake.md)
+- [var skipHandshake: Bool](./skiphandshake.md)
   A Boolean indicating whether the WebSocket protocol skips its handshake and begins framing data once the underlying connection is established.
 
 

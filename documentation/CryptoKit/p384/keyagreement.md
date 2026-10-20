@@ -1,7 +1,8 @@
 # P384.KeyAgreement
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A mechanism used to create a shared secret between two users by performing NIST P-384 elliptic curve Diffie Hellman (ECDH) key exchange.
 
@@ -23,20 +24,21 @@ enum KeyAgreement
 ## Topics
 
 ### Using keys
-- [P384.KeyAgreement.PrivateKey](p384/keyagreement/privatekey.md)
+- [P384.KeyAgreement.PrivateKey](./keyagreement/privatekey.md)
   A P-384 private key used for key agreement.
-- [P384.KeyAgreement.PublicKey](p384/keyagreement/publickey.md)
+- [P384.KeyAgreement.PublicKey](./keyagreement/publickey.md)
   A P-384 public key used for key agreement.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [P384.Signing](p384/signing.md)
+### Performing operations
+- [P384.Signing](./signing.md)
   A mechanism used to create or verify a cryptographic signature using the NIST P-384 elliptic curve digital signature algorithm (ECDSA).
 
 

@@ -1,12 +1,15 @@
 # SecKeychainCreate(_:_:_:_:_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an empty keychain.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,15 +17,19 @@ Creates an empty keychain.
 func SecKeychainCreate(_ pathName: UnsafePointer<CChar>, _ passwordLength: UInt32, _ password: UnsafeRawPointer?, _ promptUser: Bool, _ initialAccess: SecAccess?, _ keychain: UnsafeMutablePointer<SecKeychain?>) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainCreate(const char *pathName, UInt32 passwordLength, const void *password, Boolean promptUser, SecAccessRef initialAccess, SecKeychainRef*keychain);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
 This function creates an empty keychain. The `keychain`, `password`, and `initialAccess` parameters are optional. If user interaction to create a keychain is posted, the newly-created keychain is automatically unlocked after creation.
 
-The system ensures that a default keychain is created for the user at login, thus, in most cases, you do not need to call this function yourself. Users can create additional keychains, or change the default, by using the Keychain Access application. However, a missing default keychain is not recreated automatically, and you may receive an `errSecNoDefaultKeychain` error from other functions if a default keychain does not exist. In that case, you can use this function followed by [`SecKeychainSetDefault(_:)`](seckeychainsetdefault(_:).md), to create a new default keychain. You can also call this function to create a private temporary keychain for your application’s use, in cases where no user interaction can occur.
+The system ensures that a default keychain is created for the user at login, thus, in most cases, you do not need to call this function yourself. Users can create additional keychains, or change the default, by using the Keychain Access application. However, a missing default keychain is not recreated automatically, and you may receive an `errSecNoDefaultKeychain` error from other functions if a default keychain does not exist. In that case, you can use this function followed by [`SecKeychainSetDefault(_:)`](./seckeychainsetdefault%28_%29.md), to create a new default keychain. You can also call this function to create a private temporary keychain for your application’s use, in cases where no user interaction can occur.
 
 ## Parameters
 

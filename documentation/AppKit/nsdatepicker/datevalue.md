@@ -1,17 +1,22 @@
 # dateValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date selected by the date picker.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var dateValue: Date { get set }
+```
+
+```objc
+@property (copy) NSDate * dateValue;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ When selecting a date range, this property represents the time interval’s star
 
 ## See Also
 
-- [var timeInterval: TimeInterval](nsdatepicker/timeinterval.md)
+### Accessing Object Values
+- [var timeInterval: TimeInterval](./timeinterval.md)
   The time interval selected by the date picker.
 
 

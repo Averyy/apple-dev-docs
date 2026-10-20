@@ -1,7 +1,8 @@
 # init(device:resizeWidth:resizeHeight:alignCorners:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, resizeWidth: Int, resizeHeight: Int, alignCorners: Bool)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device resizeWidth:(NSUInteger) resizeWidth resizeHeight:(NSUInteger) resizeHeight alignCorners:(BOOL) alignCorners;
 ```
 
 

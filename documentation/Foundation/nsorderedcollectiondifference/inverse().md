@@ -1,7 +1,8 @@
 # inverse()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculate the difference between two objects in the reverse direction of comparison.
 
@@ -18,6 +19,10 @@ Calculate the difference between two objects in the reverse direction of compari
 
 ```swift
 func inverse() -> Self
+```
+
+```objc
+- (instancetype) inverseDifference;
 ```
 
 #### Return Value

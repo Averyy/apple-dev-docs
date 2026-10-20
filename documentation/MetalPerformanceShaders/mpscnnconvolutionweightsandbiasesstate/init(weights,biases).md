@@ -1,7 +1,8 @@
 # init(weights:biases:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -15,6 +16,10 @@
 
 ```swift
 init(weights: any MTLBuffer, biases: (any MTLBuffer)?)
+```
+
+```objc
+- (instancetype) initWithWeights:(id<MTLBuffer>) weights biases:(id<MTLBuffer>) biases;
 ```
 
 

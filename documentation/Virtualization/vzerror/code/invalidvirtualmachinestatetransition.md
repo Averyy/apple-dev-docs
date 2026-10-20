@@ -1,7 +1,8 @@
 # VZError.Code.invalidVirtualMachineStateTransition
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An invalid state transition error.
 
@@ -14,41 +15,46 @@ An invalid state transition error.
 case invalidVirtualMachineStateTransition
 ```
 
+```c
+VZErrorInvalidVirtualMachineStateTransition
+```
+
 #### Discussion
 
-This error occurs when you attempt to change the state of the virtual machine in an invalid way. For example, it occurs when you attempt to start a virtual machine when its [`canStart`](vzvirtualmachine/canstart.md) property is [`false`](https://developer.apple.com/documentation/swift/false).
+This error occurs when you attempt to change the state of the virtual machine in an invalid way. For example, it occurs when you attempt to start a virtual machine when its [`canStart`](../../vzvirtualmachine/canstart.md) property is [`false`](../../../Swift/false.md).
 
 ## See Also
 
-- [VZError.Code.internalError](vzerror/code/internalerror.md)
+### Error codes
+- [VZError.Code.internalError](./internalerror.md)
   An internal error, such as the VM unexpectedly stopping.
-- [VZError.Code.invalidVirtualMachineConfiguration](vzerror/code/invalidvirtualmachineconfiguration.md)
+- [VZError.Code.invalidVirtualMachineConfiguration](./invalidvirtualmachineconfiguration.md)
   An invalid configuration error.
-- [VZError.Code.invalidVirtualMachineState](vzerror/code/invalidvirtualmachinestate.md)
+- [VZError.Code.invalidVirtualMachineState](./invalidvirtualmachinestate.md)
   An invalid state error.
-- [VZError.Code.invalidDiskImage](vzerror/code/invaliddiskimage.md)
+- [VZError.Code.invalidDiskImage](./invaliddiskimage.md)
   An invalid disk-image error.
-- [VZError.Code.virtualMachineLimitExceeded](vzerror/code/virtualmachinelimitexceeded.md)
+- [VZError.Code.virtualMachineLimitExceeded](./virtualmachinelimitexceeded.md)
   Unable to create an additional VM.
-- [VZError.Code.networkError](vzerror/code/networkerror.md)
+- [VZError.Code.networkError](./networkerror.md)
   A network error, such as a failed connection error, occurred.
-- [VZError.Code.notSupported](vzerror/code/notsupported.md)
+- [VZError.Code.notSupported](./notsupported.md)
   The host computer or operating system isn’t supported.
-- [VZError.Code.outOfDiskSpace](vzerror/code/outofdiskspace.md)
+- [VZError.Code.outOfDiskSpace](./outofdiskspace.md)
   The host is out of disk space.
-- [VZError.Code.operationCancelled](vzerror/code/operationcancelled.md)
+- [VZError.Code.operationCancelled](./operationcancelled.md)
   The code that indicates user canceled the installation of Rosetta or the app canceled the installation of a guest OS.
-- [VZError.Code.installationFailed](vzerror/code/installationfailed.md)
+- [VZError.Code.installationFailed](./installationfailed.md)
   An error occurred during installation.
-- [VZError.Code.installationRequiresUpdate](vzerror/code/installationrequiresupdate.md)
+- [VZError.Code.installationRequiresUpdate](./installationrequiresupdate.md)
   The VM requires a software update in order to complete the installation.
-- [VZError.Code.invalidRestoreImage](vzerror/code/invalidrestoreimage.md)
+- [VZError.Code.invalidRestoreImage](./invalidrestoreimage.md)
   The restore image is invalid.
-- [VZError.Code.invalidRestoreImageCatalog](vzerror/code/invalidrestoreimagecatalog.md)
+- [VZError.Code.invalidRestoreImageCatalog](./invalidrestoreimagecatalog.md)
   The restore image catalog is invalid.
-- [VZError.Code.noSupportedRestoreImagesInCatalog](vzerror/code/nosupportedrestoreimagesincatalog.md)
+- [VZError.Code.noSupportedRestoreImagesInCatalog](./nosupportedrestoreimagesincatalog.md)
   The restore image catalog has no supported restore images.
-- [VZError.Code.restoreImageCatalogLoadFailed](vzerror/code/restoreimagecatalogloadfailed.md)
+- [VZError.Code.restoreImageCatalogLoadFailed](./restoreimagecatalogloadfailed.md)
   The restore image catalog failed to load.
 
 

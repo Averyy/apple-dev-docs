@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_protolistreq {
     ...
 };
@@ -17,10 +17,10 @@ struct if_protolistreq {
 ## Topics
 
 ### Instance Properties
-- [ifpl_count](if_protolistreq/3943786-ifpl_count.md)
-- [ifpl_list](if_protolistreq/3943787-ifpl_list.md)
-- [ifpl_name](if_protolistreq/3943788-ifpl_name.md)
-- [ifpl_reserved](if_protolistreq/3943789-ifpl_reserved.md)
+- [ifpl_count](./if_protolistreq/api-3943786-ifpl_count.md)
+- [ifpl_list](./if_protolistreq/api-3943787-ifpl_list.md)
+- [ifpl_name](./if_protolistreq/api-3943788-ifpl_name.md)
+- [ifpl_reserved](./if_protolistreq/api-3943789-ifpl_reserved.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # UIWritingToolsBehavior.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to prevent the writing tools from modifying the text in the view.
 
@@ -17,17 +18,22 @@ An option to prevent the writing tools from modifying the text in the view.
 case none
 ```
 
+```c
+UIWritingToolsBehaviorNone
+```
+
 ## Mentions
 
-- [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
+- [Customizing Writing Tools behavior for UIKit views](../customizing-writing-tools-behavior-for-system-views.md)
 
 ## See Also
 
-- [UIWritingToolsBehavior.default](uiwritingtoolsbehavior/default.md)
+### Getting the writing tools behaviors
+- [UIWritingToolsBehavior.default](./default.md)
   An option to let the system determine the best way to enable writing tools for the view.
-- [UIWritingToolsBehavior.complete](uiwritingtoolsbehavior/complete.md)
+- [UIWritingToolsBehavior.complete](./complete.md)
   An option to provide the complete writing tools experience for the text view.
-- [UIWritingToolsBehavior.limited](uiwritingtoolsbehavior/limited.md)
+- [UIWritingToolsBehavior.limited](./limited.md)
   An option to provide a limited, overlay-panel experience for the text view.
 
 

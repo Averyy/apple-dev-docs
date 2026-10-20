@@ -1,7 +1,8 @@
 # init(owner:name:typeName:variability:isCustom:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new attribute spec under the given prim spec.
 

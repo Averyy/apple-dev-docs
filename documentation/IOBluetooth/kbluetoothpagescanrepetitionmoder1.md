@@ -1,10 +1,11 @@
 # kBluetoothPageScanRepetitionModeR1
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothPageScanRepetitionModeR1: Int { get }
 ```
 
+```c
+kBluetoothPageScanRepetitionModeR1
+```
+
 ## See Also
 
-- [var kBluetoothPageScanRepetitionModeR0: Int](kbluetoothpagescanrepetitionmoder0.md)
-- [var kBluetoothPageScanRepetitionModeR2: Int](kbluetoothpagescanrepetitionmoder2.md)
+### Constants
+- [var kBluetoothPageScanRepetitionModeR0: Int](./kbluetoothpagescanrepetitionmoder0.md)
+- [var kBluetoothPageScanRepetitionModeR2: Int](./kbluetoothpagescanrepetitionmoder2.md)
 
 
 ---

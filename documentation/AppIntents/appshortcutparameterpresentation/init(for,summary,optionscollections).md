@@ -1,7 +1,8 @@
 # init(for:summary:optionsCollections:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that represents the App Shortcut with the specified parameters.
 
@@ -11,7 +12,7 @@ Creates an object that represents the App Shortcut with the specified parameters
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # toValue
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -17,15 +18,18 @@
 var toValue: SIMD3<Float>? { get set }
 ```
 
+Available when `Value` is `SIMD3<Float>`.
+
 ## See Also
 
-- [var toValue: JointTransforms?](fromtobyanimation/tovalue-50qb4.md)
-- [var toValue: Transform?](fromtobyanimation/tovalue-8jzdy.md)
-- [var toValue: Double?](fromtobyanimation/tovalue-4nrhr.md)
-- [var toValue: Float?](fromtobyanimation/tovalue-4m4pm.md)
-- [var toValue: simd_quatf?](fromtobyanimation/tovalue-4wi6r.md)
-- [var toValue: SIMD2<Float>?](fromtobyanimation/tovalue-6a1uy.md)
-- [var toValue: SIMD4<Float>?](fromtobyanimation/tovalue-5ki8u.md)
+### Defining an end value
+- [var toValue: JointTransforms?](./tovalue-50qb4.md)
+- [var toValue: Transform?](./tovalue-8jzdy.md)
+- [var toValue: Double?](./tovalue-4nrhr.md)
+- [var toValue: Float?](./tovalue-4m4pm.md)
+- [var toValue: simd_quatf?](./tovalue-4wi6r.md)
+- [var toValue: SIMD2<Float>?](./tovalue-6a1uy.md)
+- [var toValue: SIMD4<Float>?](./tovalue-5ki8u.md)
 
 
 ---

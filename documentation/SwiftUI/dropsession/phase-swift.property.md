@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The phase of the current drop session.
 
@@ -20,17 +21,18 @@ var phase: DropSession.Phase { get }
 
 ## See Also
 
-- [var id: DropSession.ID](dropsession/id-swift.property.md)
+### Getting drop session details
+- [var id: DropSession.ID](./id-swift.property.md)
   The unique identifier of the drop session.
-- [DropSession.ID](dropsession/id-swift.struct.md)
+- [DropSession.ID](./id-swift.struct.md)
   The identifier of a drag session.
-- [var localSession: DropSession.LocalSession?](dropsession/localsession-swift.property.md)
+- [var localSession: DropSession.LocalSession?](./localsession-swift.property.md)
   Provides additional information about a session if it originated within the app.
-- [DropSession.LocalSession](dropsession/localsession-swift.struct.md)
+- [DropSession.LocalSession](./localsession-swift.struct.md)
   Describes the session originated within the app.
-- [DropSession.Phase](dropsession/phase-swift.enum.md)
+- [DropSession.Phase](./phase-swift.enum.md)
   The phase of the current drop session.
-- [var suggestedOperations: DropOperation.Set](dropsession/suggestedoperations.md)
+- [var suggestedOperations: DropOperation.Set](./suggestedoperations.md)
   Operations suggested by the drag source.
 
 

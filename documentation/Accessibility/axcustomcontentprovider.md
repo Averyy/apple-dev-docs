@@ -1,7 +1,8 @@
 # AXCustomContentProvider
 
 **Framework**: Accessibility  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for customizing the accessibility content.
 
@@ -20,24 +21,29 @@ The interface for customizing the accessibility content.
 protocol AXCustomContentProvider : NSObjectProtocol
 ```
 
+```objc
+@protocol AXCustomContentProvider <NSObject>
+```
+
 ## Topics
 
 ### Providing custom content
-- [var accessibilityCustomContent: [AXCustomContent]!](axcustomcontentprovider/accessibilitycustomcontent.md)
+- [var accessibilityCustomContent: [AXCustomContent]!](./axcustomcontentprovider/accessibilitycustomcontent.md)
   An array of custom objects for creating accessible content.
 ### Instance Properties
-- [var accessibilityCustomContentBlock: AXCustomContentReturnBlock?](axcustomcontentprovider/accessibilitycustomcontentblock.md)
+- [var accessibilityCustomContentBlock: AXCustomContentReturnBlock?](./axcustomcontentprovider/accessibilitycustomcontentblock.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AXCustomContent](axcustomcontent.md)
+### Custom accessibility content
+- [class AXCustomContent](./axcustomcontent.md)
   Objects that define custom content and the timing of its output.
-- [typealias AXCustomContentReturnBlock](axcustomcontentreturnblock.md)
+- [typealias AXCustomContentReturnBlock](./axcustomcontentreturnblock.md)
 
 
 ---

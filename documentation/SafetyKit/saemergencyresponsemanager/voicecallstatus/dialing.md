@@ -1,7 +1,8 @@
 # SAEmergencyResponseManager.VoiceCallStatus.dialing
 
 **Framework**: SafetyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system is dialing the desired contact.
 
@@ -18,13 +19,18 @@ The system is dialing the desired contact.
 case dialing
 ```
 
+```c
+SAEmergencyResponseManagerVoiceCallStatusDialing
+```
+
 ## See Also
 
-- [SAEmergencyResponseManager.VoiceCallStatus.active](saemergencyresponsemanager/voicecallstatus/active.md)
+### Determining call status
+- [SAEmergencyResponseManager.VoiceCallStatus.active](./active.md)
   The system successfully placed a call to the desired contact and that call is currently active.
-- [SAEmergencyResponseManager.VoiceCallStatus.disconnected](saemergencyresponsemanager/voicecallstatus/disconnected.md)
+- [SAEmergencyResponseManager.VoiceCallStatus.disconnected](./disconnected.md)
   The voice call to the desired contact disconnected.
-- [SAEmergencyResponseManager.VoiceCallStatus.failed](saemergencyresponsemanager/voicecallstatus/failed.md)
+- [SAEmergencyResponseManager.VoiceCallStatus.failed](./failed.md)
   The voice call failed to connect to the desired contact.
 
 

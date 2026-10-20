@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,11 +21,16 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var noiseLevel: Float](cinoisereduction/noiselevel.md)
+### Instance Properties
+- [var noiseLevel: Float](./noiselevel.md)
   The amount of noise reduction.
-- [var sharpness: Float](cinoisereduction/sharpness.md)
+- [var sharpness: Float](./sharpness.md)
   The sharpness of the final image.
 
 

@@ -1,7 +1,8 @@
 # arrayCount
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements if this value holds an array. Returns `nil` otherwise.
 

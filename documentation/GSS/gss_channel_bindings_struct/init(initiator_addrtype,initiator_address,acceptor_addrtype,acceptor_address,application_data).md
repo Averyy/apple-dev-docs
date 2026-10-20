@@ -1,7 +1,8 @@
 # init(initiator_addrtype:initiator_address:acceptor_addrtype:acceptor_address:application_data:)
 
 **Framework**: GSS  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a new channel bindings structure with the given configuration.
 
@@ -28,7 +29,8 @@ init(initiator_addrtype: OM_uint32, initiator_address: gss_buffer_desc, acceptor
 
 ## See Also
 
-- [init()](gss_channel_bindings_struct/init.md)
+### Initialization
+- [init()](./init%28%29.md)
   Initialize a new, empty channel bindings structure.
 
 

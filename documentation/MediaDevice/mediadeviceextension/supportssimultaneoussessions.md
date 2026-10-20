@@ -2,6 +2,7 @@
 
 **Framework**: Media Device  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Indicates whether the extension supports handling simultaneous media sessions via `MediaOutputSession`.
@@ -20,7 +21,7 @@ var supportsSimultaneousSessions: Bool { get }
 
 #### Discussion
 
-When `true`, the extension can receive multiple active [`MediaOutputSession`](mediaoutputsession.md) instances at once. When `false`, only one session is active at a time.
+When `true`, the extension can receive multiple active [`MediaOutputSession`](../mediaoutputsession.md) instances at once. When `false`, only one session is active at a time.
 
 
 ---

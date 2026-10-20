@@ -1,7 +1,8 @@
 # kCMMetadataKeySpace_QuickTimeMetadata
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Metadata keyspace for QuickTime Metadata keys.
 
@@ -20,23 +21,28 @@ Metadata keyspace for QuickTime Metadata keys.
 let kCMMetadataKeySpace_QuickTimeMetadata: CFString
 ```
 
+```c
+extern CFStringRef const kCMMetadataKeySpace_QuickTimeMetadata;
+```
+
 #### Discussion
 
 This keyspace defines its key values to be expressed as reverse-DNS strings, which allows third parties to define their own keys in a well established way that avoids collisions.
 
 ## See Also
 
-- [let kCMMetadataKeySpace_QuickTimeUserData: CFString](kcmmetadatakeyspace_quicktimeuserdata.md)
+### Constants
+- [let kCMMetadataKeySpace_QuickTimeUserData: CFString](./kcmmetadatakeyspace_quicktimeuserdata.md)
   Metadata keyspace for QuickTime User Data keys.
-- [let kCMMetadataKeySpace_ISOUserData: CFString](kcmmetadatakeyspace_isouserdata.md)
+- [let kCMMetadataKeySpace_ISOUserData: CFString](./kcmmetadatakeyspace_isouserdata.md)
   Metadata keyspace for MPEG-4 User Data keys.
-- [let kCMMetadataKeySpace_iTunes: CFString](kcmmetadatakeyspace_itunes.md)
+- [let kCMMetadataKeySpace_iTunes: CFString](./kcmmetadatakeyspace_itunes.md)
   Metadata keyspace for iTunes keys.
-- [let kCMMetadataKeySpace_ID3: CFString](kcmmetadatakeyspace_id3.md)
+- [let kCMMetadataKeySpace_ID3: CFString](./kcmmetadatakeyspace_id3.md)
   Metadata keyspace for ID3 keys.
-- [let kCMMetadataKeySpace_Icy: CFString](kcmmetadatakeyspace_icy.md)
+- [let kCMMetadataKeySpace_Icy: CFString](./kcmmetadatakeyspace_icy.md)
   Metadata keyspace for ShoutCast keys.
-- [let kCMMetadataKeySpace_HLSDateRange: CFString](kcmmetadatakeyspace_hlsdaterange.md)
+- [let kCMMetadataKeySpace_HLSDateRange: CFString](./kcmmetadatakeyspace_hlsdaterange.md)
   Metadata keyspace for HLS DateRange tags.
 
 

@@ -1,7 +1,8 @@
 # bytes
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the mutable memory managed by the buffer map.
 
@@ -17,6 +18,10 @@ A pointer to the mutable memory managed by the buffer map.
 
 ```swift
 var bytes: UnsafeMutableRawPointer { get }
+```
+
+```objc
+@property (nonatomic, readonly) void * bytes;
 ```
 
 

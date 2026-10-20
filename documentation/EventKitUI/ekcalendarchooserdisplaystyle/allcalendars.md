@@ -1,7 +1,8 @@
 # EKCalendarChooserDisplayStyle.allCalendars
 
 **Framework**: EventKit UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Displays writable and read-only calendars.
 
@@ -17,9 +18,14 @@ Displays writable and read-only calendars.
 case allCalendars
 ```
 
+```c
+EKCalendarChooserDisplayAllCalendars
+```
+
 ## See Also
 
-- [EKCalendarChooserDisplayStyle.writableCalendarsOnly](ekcalendarchooserdisplaystyle/writablecalendarsonly.md)
+### Constants
+- [EKCalendarChooserDisplayStyle.writableCalendarsOnly](./writablecalendarsonly.md)
   Displays writable calendars only.
 
 

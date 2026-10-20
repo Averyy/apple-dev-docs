@@ -1,7 +1,8 @@
 # inverseRelationship
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The relationship that represents the inverse of the current relationship.
 
@@ -10,7 +11,7 @@ The relationship that represents the inverse of the current relationship.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,20 @@ The relationship that represents the inverse of the current relationship.
 unowned(unsafe) var inverseRelationship: NSRelationshipDescription? { get set }
 ```
 
+```objc
+@property (nonatomic, assign, nullable) NSRelationshipDescription * inverseRelationship;
+```
+
 #### Discussion
 
 The inverse relationship is the description of the current relationship from the destination entity’s perspective. For example, the inverse of a department’s relationship to an employee (a to-many relationship) is the employees’ relationship to the department (a to-one relationship).
 
 ## See Also
 
-- [var destinationEntity: NSEntityDescription?](nsrelationshipdescription/destinationentity.md)
+### Configuring the Destination
+- [var destinationEntity: NSEntityDescription?](./destinationentity.md)
   The type of object the relationship contains.
-- [var isOrdered: Bool](nsrelationshipdescription/isordered.md)
+- [var isOrdered: Bool](./isordered.md)
   A Boolean value that determines whether the relationship preserves the order of the referenced managed objects.
 
 

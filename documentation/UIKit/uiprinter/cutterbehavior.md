@@ -1,7 +1,8 @@
 # UIPrinter.CutterBehavior
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the cutter behavior of a roll-fed printer.
 
@@ -17,31 +18,35 @@ Constants that specify the cutter behavior of a roll-fed printer.
 enum CutterBehavior
 ```
 
+```c
+enum UIPrinterCutterBehavior : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIPrinter.CutterBehavior.noCut](uiprinter/cutterbehavior/nocut.md)
+- [UIPrinter.CutterBehavior.noCut](./cutterbehavior/nocut.md)
   Don’t cut the paper.
-- [UIPrinter.CutterBehavior.printerDefault](uiprinter/cutterbehavior/printerdefault.md)
+- [UIPrinter.CutterBehavior.printerDefault](./cutterbehavior/printerdefault.md)
   Use the printer’s default behavior.
-- [UIPrinter.CutterBehavior.cutAfterEachPage](uiprinter/cutterbehavior/cutaftereachpage.md)
+- [UIPrinter.CutterBehavior.cutAfterEachPage](./cutterbehavior/cutaftereachpage.md)
   Cut the paper after each page.
-- [UIPrinter.CutterBehavior.cutAfterEachCopy](uiprinter/cutterbehavior/cutaftereachcopy.md)
+- [UIPrinter.CutterBehavior.cutAfterEachCopy](./cutterbehavior/cutaftereachcopy.md)
   Cut the paper after each copy of the document.
-- [UIPrinter.CutterBehavior.cutAfterEachJob](uiprinter/cutterbehavior/cutaftereachjob.md)
+- [UIPrinter.CutterBehavior.cutAfterEachJob](./cutterbehavior/cutaftereachjob.md)
   Cut the paper after each print job finishes.
 ### Initializers
-- [init?(rawValue: Int)](uiprinter/cutterbehavior/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cutterbehavior/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

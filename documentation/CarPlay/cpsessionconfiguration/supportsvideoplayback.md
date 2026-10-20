@@ -1,7 +1,8 @@
 # supportsVideoPlayback
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The connected CarPlay system supports video playback.
 
@@ -14,6 +15,10 @@ The connected CarPlay system supports video playback.
 
 ```swift
 var supportsVideoPlayback: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL supportsVideoPlayback;
 ```
 
 #### Discussion

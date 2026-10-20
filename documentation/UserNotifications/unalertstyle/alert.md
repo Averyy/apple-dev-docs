@@ -1,7 +1,8 @@
 # UNAlertStyle.alert
 
 **Framework**: User Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Modal alerts.
 
@@ -18,15 +19,20 @@ Modal alerts.
 case alert
 ```
 
+```c
+UNAlertStyleAlert
+```
+
 #### Discussion
 
 Alerts are displayed in a modal window that must be dismissed explicitly by the user.
 
 ## See Also
 
-- [UNAlertStyle.none](unalertstyle/none.md)
+### Presentation Styles
+- [UNAlertStyle.none](./none.md)
   No alert.
-- [UNAlertStyle.banner](unalertstyle/banner.md)
+- [UNAlertStyle.banner](./banner.md)
   Banner alerts.
 
 

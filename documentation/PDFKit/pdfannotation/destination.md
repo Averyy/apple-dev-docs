@@ -1,7 +1,8 @@
 # destination
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The destination for a link annotation.
 
@@ -10,7 +11,7 @@ The destination for a link annotation.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,14 @@ The destination for a link annotation.
 var destination: PDFDestination? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PDFDestination * destination;
+```
+
 ## See Also
 
-- [var url: URL?](pdfannotation/url.md)
+### Configuring Link Annotations
+- [var url: URL?](./url.md)
   A URL for a link annotation.
 
 

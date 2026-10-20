@@ -1,7 +1,8 @@
 # MediaAffinityTypeResolutionResult
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A media affinity that matches an update media affinity intent, or information about why your service can’t determine the media affinity.
 
@@ -10,7 +11,7 @@ A media affinity that matches an update media affinity intent, or information ab
 
 ## Declaration
 
-```swift
+```
 object MediaAffinityTypeResolutionResult
 ```
 
@@ -21,27 +22,30 @@ Only provide one of the optional properties. If a client receives a result with 
 ## Topics
 
 ### Specifying the Result
-- [object MediaAffinityTypeResolutionResult.ConfirmationRequired](mediaaffinitytyperesolutionresult/confirmationrequired-data.dictionary.md)
+- [object MediaAffinityTypeResolutionResult.ConfirmationRequired](./mediaaffinitytyperesolutionresult/confirmationrequired-data.dictionary.md)
   A result that requires the user to confirm the media affinity before proceeding.
-- [object MediaAffinityTypeResolutionResult.Success](mediaaffinitytyperesolutionresult/success-data.dictionary.md)
+- [object MediaAffinityTypeResolutionResult.Success](./mediaaffinitytyperesolutionresult/success-data.dictionary.md)
   A media affinity that successfully matches the intent.
 
 ## Properties
 
 - `class` (string): The specific type of result.
+
+  **Allowed Values**: `MediaAffinityTypeResolutionResult`
 - `success` (MediaAffinityTypeResolutionResult.Success): A media affinity that matches the intent.
 - `confirmationRequired` (MediaAffinityTypeResolutionResult.ConfirmationRequired): A media affinity for the user to confirm or reject before proceeding.
 
 ## Relationships
 
 ### Inherits From
-- [IntentResolutionResult](intentresolutionresult.md)
+- [IntentResolutionResult](./intentresolutionresult.md)
 
 ## See Also
 
-- [type MediaAffinityType](mediaaffinitytype.md)
+### Discerning Like or Dislike
+- [type MediaAffinityType](./mediaaffinitytype.md)
   A preference or dislike for a media item.
-- [object UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse](updatemediaaffinityintenthandlingresolveaffinitytypeinvocationresponse.md)
+- [object UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse](./updatemediaaffinityintenthandlingresolveaffinitytypeinvocationresponse.md)
   Your service’s response to a request that expresses a preference or dislike for a media item.
 
 

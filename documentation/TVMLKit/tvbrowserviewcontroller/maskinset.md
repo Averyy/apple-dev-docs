@@ -1,7 +1,8 @@
 # maskInset
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount by which the content of the cell is inset.
 
@@ -14,15 +15,20 @@ The amount by which the content of the cell is inset.
 var maskInset: UIEdgeInsets { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UIEdgeInsets maskInset;
+```
+
 #### Discussion
 
 The default is `UIEdgeInsetsMake(32.0, 120.0, 0.0, 120.0)`.
 
 ## See Also
 
-- [var cornerRadius: CGFloat](tvbrowserviewcontroller/cornerradius.md)
+### Modifying the Browser Appearance
+- [var cornerRadius: CGFloat](./cornerradius.md)
   The corner radius, in points, of each full-screen browser item.
-- [var interitemSpacing: CGFloat](tvbrowserviewcontroller/interitemspacing.md)
+- [var interitemSpacing: CGFloat](./interitemspacing.md)
   The spacing between full-screen browser items.
 
 

@@ -1,7 +1,8 @@
 # init(presentationSize:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new video properties instance.
 

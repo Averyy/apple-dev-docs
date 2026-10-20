@@ -1,14 +1,15 @@
 # dot3VendorWesternDigital
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 dot3VendorWesternDigital = 7
 ```
 

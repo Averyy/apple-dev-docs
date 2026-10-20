@@ -1,14 +1,15 @@
 # user_ulong_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef u_int64_t user_ulong_t;
 ```
 

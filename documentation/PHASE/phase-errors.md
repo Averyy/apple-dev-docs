@@ -1,31 +1,32 @@
 # PHASE Errors
 
-**Framework**: PHASE
+**Framework**: PHASE  
+**Role**: API Collection
 
 Errors that the PHASE framework reports.
 
 ## Topics
 
 ### Framework Errors
-- [struct PHASEError](phaseerror-swift.struct.md)
+- [struct PHASEError](./phaseerror-swift.struct.md)
   An error that PHASE reports.
-- [PHASEError.Code](phaseerror-swift.struct/code.md)
+- [PHASEError.Code](./phaseerror-swift.struct/code.md)
   Codes that identify errors in PHASE.
-- [let PHASEErrorDomain: String](phaseerrordomain.md)
+- [let PHASEErrorDomain: String](./phaseerrordomain.md)
   A unique error domain for the framework.
 ### Asset Errors
-- [struct PHASEAssetError](phaseasseterror-swift.struct.md)
+- [struct PHASEAssetError](./phaseasseterror-swift.struct.md)
   An asset error that PHASE reports.
-- [PHASEAssetError.Code](phaseasseterror-swift.struct/code.md)
+- [PHASEAssetError.Code](./phaseasseterror-swift.struct/code.md)
   Codes that identify framework asset errors.
-- [let PHASEAssetErrorDomain: String](phaseasseterrordomain.md)
+- [let PHASEAssetErrorDomain: String](./phaseasseterrordomain.md)
   A unique error domain for PHASE assets.
 ### Sound Event Errors
-- [struct PHASESoundEventError](phasesoundeventerror-swift.struct.md)
+- [struct PHASESoundEventError](./phasesoundeventerror-swift.struct.md)
   A sound event error that PHASE reports.
-- [PHASESoundEventError.Code](phasesoundeventerror-swift.struct/code.md)
+- [PHASESoundEventError.Code](./phasesoundeventerror-swift.struct/code.md)
   Codes that identify sound event errors.
-- [let PHASESoundEventErrorDomain: String](phasesoundeventerrordomain.md)
+- [let PHASESoundEventErrorDomain: String](./phasesoundeventerrordomain.md)
   A unique error domain for sound events.
 
 

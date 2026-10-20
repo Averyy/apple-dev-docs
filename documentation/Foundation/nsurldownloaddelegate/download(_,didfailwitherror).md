@@ -1,7 +1,8 @@
 # download(_:didFailWithError:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent if the download fails or if an I/O error occurs when the file is written to disk.
 
@@ -12,6 +13,10 @@ Sent if the download fails or if an I/O error occurs when the file is written to
 
 ```swift
 optional func download(_ download: NSURLDownload, didFailWithError error: any Error)
+```
+
+```objc
+- (void) download:(NSURLDownload *) download didFailWithError:(NSError *) error;
 ```
 
 #### Discussion
@@ -29,7 +34,8 @@ Once the delegate receives this message, it will receive no further messages for
 
 ## See Also
 
-- [func downloadDidFinish(NSURLDownload)](nsurldownloaddelegate/downloaddidfinish(_:).md)
+### Download Completion
+- [func downloadDidFinish(NSURLDownload)](./downloaddidfinish%28_%29.md)
   Sent when a download object has completed downloading successfully and has written its results to disk.
 
 

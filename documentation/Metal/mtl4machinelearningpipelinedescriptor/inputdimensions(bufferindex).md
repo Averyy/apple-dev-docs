@@ -1,7 +1,8 @@
 # inputDimensions(bufferIndex:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Obtains the dimensions of the input tensor at `bufferIndex` if set, `nil` otherwise.
 
@@ -17,6 +18,10 @@ Obtains the dimensions of the input tensor at `bufferIndex` if set, `nil` otherw
 
 ```swift
 func inputDimensions(bufferIndex: Int) -> MTLTensorExtents?
+```
+
+```objc
+- (MTLTensorExtents *) inputDimensionsAtBufferIndex:(NSInteger) bufferIndex;
 ```
 
 

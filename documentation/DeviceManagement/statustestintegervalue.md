@@ -1,7 +1,8 @@
 # StatusTestIntegerValue
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A test status item for an integer.
 
@@ -16,13 +17,13 @@ A test status item for an integer.
 
 ## Declaration
 
-```swift
+```
 object StatusTestIntegerValue
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +34,7 @@ object StatusTestIntegerValue
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -49,17 +50,18 @@ object StatusTestIntegerValue
 
 ## See Also
 
-- [object StatusTestArrayValue](statustestarrayvalue.md)
+### Test items
+- [object StatusTestArrayValue](./statustestarrayvalue.md)
   A test status item for an array.
-- [object StatusTestBooleanValue](statustestbooleanvalue.md)
+- [object StatusTestBooleanValue](./statustestbooleanvalue.md)
   A test status item for a Boolean value.
-- [object StatusTestDictionaryValue](statustestdictionaryvalue.md)
+- [object StatusTestDictionaryValue](./statustestdictionaryvalue.md)
   A test status item for a dictionary.
-- [object StatusTestErrorValue](statustesterrorvalue.md)
+- [object StatusTestErrorValue](./statustesterrorvalue.md)
   A test status item for an error.
-- [object StatusTestRealValue](statustestrealvalue.md)
+- [object StatusTestRealValue](./statustestrealvalue.md)
   A test status item for a real value.
-- [object StatusTestStringValue](statusteststringvalue.md)
+- [object StatusTestStringValue](./statusteststringvalue.md)
   A test status item for a string.
 
 

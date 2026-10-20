@@ -1,7 +1,8 @@
 # TKSmartCardPINFormat.Charset.upperAlphanumeric
 
 **Framework**: CryptoTokenKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,14 +19,19 @@
 case upperAlphanumeric
 ```
 
+```c
+TKSmartCardPINCharsetUpperAlphanumeric
+```
+
 #### Discussion
 
 PIN can be composed of digits and uppercase letters.
 
 ## See Also
 
-- [TKSmartCardPINFormat.Charset.numeric](tksmartcardpinformat/charset-swift.enum/numeric.md)
-- [TKSmartCardPINFormat.Charset.alphanumeric](tksmartcardpinformat/charset-swift.enum/alphanumeric.md)
+### Constants
+- [TKSmartCardPINFormat.Charset.numeric](./numeric.md)
+- [TKSmartCardPINFormat.Charset.alphanumeric](./alphanumeric.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PTTransmissionMode.listenOnly
 
 **Framework**: Push to Talk  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type that indicates a participant can only receive audio.
 
@@ -16,15 +17,20 @@ A type that indicates a participant can only receive audio.
 case listenOnly
 ```
 
+```c
+PTTransmissionModeListenOnly
+```
+
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
 ## See Also
 
-- [PTTransmissionMode.fullDuplex](pttransmissionmode/fullduplex.md)
+### Modes
+- [PTTransmissionMode.fullDuplex](./fullduplex.md)
   A type that indicates a participant can simultaneously receive and transmit audio.
-- [PTTransmissionMode.halfDuplex](pttransmissionmode/halfduplex.md)
+- [PTTransmissionMode.halfDuplex](./halfduplex.md)
   A type that indicates a participant can’t simultaneously receive and transmit audio.
 
 

@@ -1,7 +1,8 @@
 # externalContentProtectionStatus
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The external protection status for the content key based on all attached displays.
 
@@ -19,13 +20,18 @@ The external protection status for the content key based on all attached display
 var externalContentProtectionStatus: AVExternalContentProtectionStatus { get }
 ```
 
+```objc
+@property (readonly) AVExternalContentProtectionStatus externalContentProtectionStatus;
+```
+
 #### Discussion
 
-This property isn’t key-value observable. Instead, use the [`contentKeySession(_:externalProtectionStatusDidChangeFor:)`](avcontentkeysessiondelegate/contentkeysession(_:externalprotectionstatusdidchangefor:).md) delegate method to monitor changes to this value.
+This property isn’t key-value observable. Instead, use the [`contentKeySession(_:externalProtectionStatusDidChangeFor:)`](../avcontentkeysessiondelegate/contentkeysession%28_,externalprotectionstatusdidchangefor%29.md) delegate method to monitor changes to this value.
 
 ## See Also
 
-- [func revoke()](avcontentkey/revoke.md)
+### Inspecting protection status
+- [func revoke()](./revoke%28%29.md)
 
 
 ---

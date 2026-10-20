@@ -1,7 +1,8 @@
 # inputChannels
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 var inputChannels: UInt8
+```
+
+```c
+UInt8 inputChannels;
 ```
 
 

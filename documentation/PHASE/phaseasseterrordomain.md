@@ -1,17 +1,18 @@
 # PHASEAssetErrorDomain
 
 **Framework**: PHASE  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A unique error domain for PHASE assets.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ A unique error domain for PHASE assets.
 let PHASEAssetErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const PHASEAssetErrorDomain;
+```
+
 #### Discussion
 
-For more information on Core Foundation error domains, see [`Error domains`](https://developer.apple.com/documentation/corefoundation/error-domains).
+For more information on Core Foundation error domains, see [Error domains](../CoreFoundation/error-domains.md).
 
 ## See Also
 
-- [struct PHASEAssetError](phaseasseterror-swift.struct.md)
+### Asset Errors
+- [struct PHASEAssetError](./phaseasseterror-swift.struct.md)
   An asset error that PHASE reports.
-- [PHASEAssetError.Code](phaseasseterror-swift.struct/code.md)
+- [PHASEAssetError.Code](./phaseasseterror-swift.struct/code.md)
   Codes that identify framework asset errors.
 
 

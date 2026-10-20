@@ -1,7 +1,8 @@
 # indices(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the indices of all the elements that match the given predicate.
 
@@ -35,7 +36,7 @@ let allTheVowels = str.indices(where: { vowels.contains($0) })
 // str[allTheVowels].count == 9
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

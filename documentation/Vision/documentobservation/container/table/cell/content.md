@@ -1,7 +1,8 @@
 # content
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents of a cell.
 
@@ -21,9 +22,10 @@ var content: DocumentObservation.Container { get }
 
 ## See Also
 
-- [var columnRange: ClosedRange<Int>](documentobservation/container/table/cell/columnrange.md)
+### Inspecting a cell
+- [var columnRange: ClosedRange<Int>](./columnrange.md)
   The range of column indices that the cell spans.
-- [var rowRange: ClosedRange<Int>](documentobservation/container/table/cell/rowrange.md)
+- [var rowRange: ClosedRange<Int>](./rowrange.md)
   The range of row indices that the cell spans.
 
 

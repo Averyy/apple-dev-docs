@@ -1,12 +1,13 @@
 # AudioHardwareStream
 
 **Framework**: Core Audio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Instances of the AudioHardwareStream class encapsulate a single audio stream, which represents a single buffer of data for transferring across the user/kernel boundary. As such, AudioStreams are the gatekeepers of format information. Each has its own format and list of available formats.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration
@@ -18,41 +19,41 @@ class AudioHardwareStream
 ## Topics
 
 ### Initializers
-- [init(id: AudioObjectID)](audiohardwarestream/init(id:).md)
+- [init(id: AudioObjectID)](./audiohardwarestream/init%28id%29.md)
 ### Instance Properties
-- [var availablePhysicalFormats: [AudioStreamRangedDescription]](audiohardwarestream/availablephysicalformats.md)
+- [var availablePhysicalFormats: [AudioStreamRangedDescription]](./audiohardwarestream/availablephysicalformats.md)
   An array of AudioStreamRangedDescriptions that describe the available data formats for the stream. The physical format refers to the data format in which the hardware for the owning device performs its IO transactions.
-- [var availableVirtualFormats: [AudioStreamRangedDescription]](audiohardwarestream/availablevirtualformats.md)
+- [var availableVirtualFormats: [AudioStreamRangedDescription]](./audiohardwarestream/availablevirtualformats.md)
   An array of AudioStreamRangedDescriptions that describe the available data formats for the stream. The virtual format refers to the data format in which all IOProcs for the owning device will perform IO transactions.
-- [var direction: AudioHardwareDirection](audiohardwarestream/direction.md)
+- [var direction: AudioHardwareDirection](./audiohardwarestream/direction.md)
   An AudioHardwareDirection indicating whether this is an input or output stream.
-- [var isActive: Bool](audiohardwarestream/isactive.md)
+- [var isActive: Bool](./audiohardwarestream/isactive.md)
   A Bool where a value of true indicates that the stream is enabled for IO.
-- [var latency: Int](audiohardwarestream/latency.md)
+- [var latency: Int](./audiohardwarestream/latency.md)
   An Int containing the number of frames of latency in the stream.
-- [var physicalFormat: AudioStreamBasicDescription](audiohardwarestream/physicalformat.md)
+- [var physicalFormat: AudioStreamBasicDescription](./audiohardwarestream/physicalformat.md)
   An AudioStreamBasicDescription that describes the current data format for the stream. The physical format refers to the data format in which the hardware for the owning device performs its IO transactions.
-- [var startingChannel: Int](audiohardwarestream/startingchannel.md)
+- [var startingChannel: Int](./audiohardwarestream/startingchannel.md)
   An Int that specifies the first element in the owning device that corresponds to element one of this stream.
-- [var terminalType: UInt32](audiohardwarestream/terminaltype.md)
+- [var terminalType: UInt32](./audiohardwarestream/terminaltype.md)
   A UInt32 whose value describes the general kind of functionality attached to the stream. Constants for some of the values for this property can be found in the enum in the AudioStream Constants section of AudioHardwareBase.h.
-- [var virtualFormat: AudioStreamBasicDescription](audiohardwarestream/virtualformat.md)
+- [var virtualFormat: AudioStreamBasicDescription](./audiohardwarestream/virtualformat.md)
   An AudioStreamBasicDescription that describes the current data format for the stream. The virtual format refers to the data format in which all IOProcs for the owning device will perform IO transactions.
 ### Instance Methods
-- [func setIsActive(Bool) throws](audiohardwarestream/setisactive(_:).md)
+- [func setIsActive(Bool) throws](./audiohardwarestream/setisactive%28_%29.md)
   Set the isActive property.
-- [func setPhysicalFormat(AudioStreamBasicDescription) throws](audiohardwarestream/setphysicalformat(_:).md)
+- [func setPhysicalFormat(AudioStreamBasicDescription) throws](./audiohardwarestream/setphysicalformat%28_%29.md)
   Set the physicalFormat property.
-- [func setVirtualFormat(AudioStreamBasicDescription) throws](audiohardwarestream/setvirtualformat(_:).md)
+- [func setVirtualFormat(AudioStreamBasicDescription) throws](./audiohardwarestream/setvirtualformat%28_%29.md)
   Set the virtualFormat property.
 
 ## Relationships
 
 ### Inherits From
-- [AudioHardwareObject](audiohardwareobject.md)
+- [AudioHardwareObject](./audiohardwareobject.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

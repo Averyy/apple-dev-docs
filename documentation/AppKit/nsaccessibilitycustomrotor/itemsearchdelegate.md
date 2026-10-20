@@ -1,7 +1,8 @@
 # itemSearchDelegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for finding the next item result.
 
@@ -14,9 +15,14 @@ The delegate for finding the next item result.
 weak var itemSearchDelegate: (any NSAccessibilityCustomRotorItemSearchDelegate)? { get set }
 ```
 
+```objc
+@property (weak) id<NSAccessibilityCustomRotorItemSearchDelegate> itemSearchDelegate;
+```
+
 ## See Also
 
-- [protocol NSAccessibilityCustomRotorItemSearchDelegate](nsaccessibilitycustomrotoritemsearchdelegate.md)
+### Navigating to the Next Item
+- [protocol NSAccessibilityCustomRotorItemSearchDelegate](../nsaccessibilitycustomrotoritemsearchdelegate.md)
   A delegate for a custom rotor that finds the next item result after performing a search with the specified search parameters.
 
 

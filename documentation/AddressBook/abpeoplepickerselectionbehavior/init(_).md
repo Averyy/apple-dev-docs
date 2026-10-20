@@ -1,12 +1,13 @@
 # init(_:)
 
 **Framework**: Address Book  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a constant from an integer value that represents a picker selection behavior.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init(_ rawValue: UInt32)
 
 ## See Also
 
-- [init(rawValue: UInt32)](abpeoplepickerselectionbehavior/init(rawvalue:).md)
+### Initializers
+- [init(rawValue: UInt32)](./init%28rawvalue%29.md)
   Initializes a constant from a raw value that represents a picker selection behavior.
 
 

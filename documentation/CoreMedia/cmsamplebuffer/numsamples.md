@@ -1,7 +1,8 @@
 # numSamples
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of media samples the buffer contains.
 
@@ -26,11 +27,12 @@ The value is `0` if an error occurs.
 
 ## See Also
 
-- [func sampleSizes() throws -> [Int]](cmsamplebuffer/samplesizes.md)
+### Inspecting Size Information
+- [func sampleSizes() throws -> [Int]](./samplesizes%28%29.md)
   Retrieves an array of sample sizes that represents each sample in a sample buffer.
-- [func sampleSize(at: Int) -> Int](cmsamplebuffer/samplesize(at:).md)
+- [func sampleSize(at: Int) -> Int](./samplesize%28at%29.md)
   Returns the size of a sample in bytes.
-- [var totalSampleSize: Int](cmsamplebuffer/totalsamplesize.md)
+- [var totalSampleSize: Int](./totalsamplesize.md)
   The total size in bytes of sample data in the buffer.
 
 

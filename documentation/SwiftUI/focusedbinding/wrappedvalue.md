@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unwrapped value for the focus key given the current scope and state of the focused view hierarchy.
 
@@ -22,7 +23,8 @@ var wrappedValue: Value? { get nonmutating set }
 
 ## See Also
 
-- [var projectedValue: Binding<Value?>](focusedbinding/projectedvalue.md)
+### Getting the value
+- [var projectedValue: Binding<Value?>](./projectedvalue.md)
   A binding to the optional value.
 
 

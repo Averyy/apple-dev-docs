@@ -1,7 +1,8 @@
 # allDownloads(for:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates download objects for every applicable asset pack in this manifest, which can be scheduled with the download manager.
 

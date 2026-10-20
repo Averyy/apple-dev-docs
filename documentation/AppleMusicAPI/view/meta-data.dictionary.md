@@ -1,7 +1,8 @@
 # View.Meta
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about the request or response.
 
@@ -10,13 +11,14 @@ Information about the request or response.
 
 ## Declaration
 
-```swift
+```
 object View.Meta
 ```
 
 ## See Also
 
-- [object View.Attributes](view/attributes-data.dictionary.md)
+### Related Objects
+- [object View.Attributes](./attributes-data.dictionary.md)
   Attributes representing the metadata of the view.
 
 

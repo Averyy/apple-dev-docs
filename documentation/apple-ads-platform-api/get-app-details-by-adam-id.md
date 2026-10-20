@@ -1,7 +1,8 @@
 # Get App Details by Adam ID
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve application details for a specific Adam ID.
 
@@ -22,7 +23,7 @@ Use the returned `deviceClasses` and `availableStorefronts` values to confirm th
 
 Retrieves the full details of a specific app by its Adam identifier, including its name, genre, and supported device classes.
 
-```None
+```
 GET https://api.ads.apple.com/v1/apps/324684580
 ```
 
@@ -58,13 +59,29 @@ GET https://api.ads.apple.com/v1/apps/324684580
 
 ## Parameters
 
+### Path Parameters
+
+- `adamId` (int64) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`AppDetailsResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`AppDetailsResponse`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Search for Apps](searches-for-a-list-of-apps.md)
+- [Search for Apps](./searches-for-a-list-of-apps.md)
   Search the App Store for apps matching the supplied criteria and return app details.
-- [Query Supported App Languages](query-supported-app-languages.md)
+- [Query Supported App Languages](./query-supported-app-languages.md)
   Query countries and regions to discover the ad-supported languages available in each market.
 
 

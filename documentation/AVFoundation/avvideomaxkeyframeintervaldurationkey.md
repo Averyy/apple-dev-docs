@@ -1,7 +1,8 @@
 # AVVideoMaxKeyFrameIntervalDurationKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key to access the maximum interval duration between keyframes.
 
@@ -19,21 +20,26 @@ A key to access the maximum interval duration between keyframes.
 let AVVideoMaxKeyFrameIntervalDurationKey: String
 ```
 
+```c
+extern NSString * const AVVideoMaxKeyFrameIntervalDurationKey;
+```
+
 ## See Also
 
-- [let AVVideoCompressionPropertiesKey: String](avvideocompressionpropertieskey.md)
+### Compression
+- [let AVVideoCompressionPropertiesKey: String](./avvideocompressionpropertieskey.md)
   A key to access the dictionary of compression properties for a video asset.
-- [let AVVideoDecompressionPropertiesKey: String](avvideodecompressionpropertieskey.md)
+- [let AVVideoDecompressionPropertiesKey: String](./avvideodecompressionpropertieskey.md)
   The key that indicates the video decompression properties to pass to the video decoder.
-- [let AVVideoAverageBitRateKey: String](avvideoaveragebitratekey.md)
+- [let AVVideoAverageBitRateKey: String](./avvideoaveragebitratekey.md)
   A key to access the average bit rate—as bits per second—used in compressing video.
-- [let AVVideoQualityKey: String](avvideoqualitykey.md)
+- [let AVVideoQualityKey: String](./avvideoqualitykey.md)
   A key to set the JPEG compression quality of the video.
-- [let AVVideoMaxKeyFrameIntervalKey: String](avvideomaxkeyframeintervalkey.md)
+- [let AVVideoMaxKeyFrameIntervalKey: String](./avvideomaxkeyframeintervalkey.md)
   A key to access the maximum interval between keyframes.
-- [let AVVideoAllowFrameReorderingKey: String](avvideoallowframereorderingkey.md)
+- [let AVVideoAllowFrameReorderingKey: String](./avvideoallowframereorderingkey.md)
   A key to access permission to reorder frames.
-- [let AVVideoAppleProRAWBitDepthKey: String](avvideoappleprorawbitdepthkey.md)
+- [let AVVideoAppleProRAWBitDepthKey: String](./avvideoappleprorawbitdepthkey.md)
   A key to access the Apple ProRAW bit depth.
 
 

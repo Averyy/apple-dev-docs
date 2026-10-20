@@ -1,18 +1,19 @@
 # atPoint(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the deepest visible descendant that intersects a point.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,18 +21,22 @@ Returns the deepest visible descendant that intersects a point.
 func atPoint(_ p: CGPoint) -> SKNode
 ```
 
+```objc
+- (SKNode *) nodeAtPoint:(CGPoint) p;
+```
+
 ## Mentions
 
-- [Controlling User Interaction on Nodes](controlling-user-interaction-on-nodes.md)
-- [Understanding Hit-Testing](understanding-hit-testing.md)
+- [Controlling User Interaction on Nodes](../controlling-user-interaction-on-nodes.md)
+- [Understanding Hit-Testing](../understanding-hit-testing.md)
 
 #### Return Value
 
-A descendant in the subtree that intersects the point, or the receiver if no nodes intersect the point. Only nodes that have an [`isHidden`](sknode/ishidden.md) of `false` and an [`alpha`](sknode/alpha.md) greater that zero are returned. If multiple descendants intersect the point, the deepest node in the tree is returned. If multiple nodes are at the same level, the intersecting node with the largest z position is returned.
+A descendant in the subtree that intersects the point, or the receiver if no nodes intersect the point. Only nodes that have an [`isHidden`](./ishidden.md) of `false` and an [`alpha`](./alpha.md) greater that zero are returned. If multiple descendants intersect the point, the deepest node in the tree is returned. If multiple nodes are at the same level, the intersecting node with the largest z position is returned.
 
 #### Discussion
 
-A point is considered to be in a node if it lies inside the rectangle returned by the [`calculateAccumulatedFrame()`](sknode/calculateaccumulatedframe().md) method.
+A point is considered to be in a node if it lies inside the rectangle returned by the [`calculateAccumulatedFrame()`](./calculateaccumulatedframe%28%29.md) method.
 
 ## Parameters
 
@@ -39,11 +44,12 @@ A point is considered to be in a node if it lies inside the rectangle returned b
 
 ## See Also
 
-- [Understanding Hit-Testing](understanding-hit-testing.md)
+### Hit Testing
+- [Understanding Hit-Testing](../understanding-hit-testing.md)
   Learn how find child nodes at a given point by using hit-testing.
-- [func contains(CGPoint) -> Bool](sknode/contains(_:).md)
+- [func contains(CGPoint) -> Bool](./contains%28_%29.md)
   Returns a Boolean value that indicates whether a point lies inside the parent’s coordinate system.
-- [func nodes(at: CGPoint) -> [SKNode]](sknode/nodes(at:).md)
+- [func nodes(at: CGPoint) -> [SKNode]](./nodes%28at%29.md)
   Returns an array of all visible descendants that intersect a point.
 
 

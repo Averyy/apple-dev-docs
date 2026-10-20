@@ -1,7 +1,8 @@
 # URLSessionTask.State.running
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The task is currently being serviced by the session.
 
@@ -20,17 +21,22 @@ The task is currently being serviced by the session.
 case running
 ```
 
+```c
+NSURLSessionTaskStateRunning
+```
+
 #### Discussion
 
 A task in this state is subject to the request and resource timeouts specified in the session configuration object.
 
 ## See Also
 
-- [URLSessionTask.State.suspended](urlsessiontask/state-swift.enum/suspended.md)
+### Task states
+- [URLSessionTask.State.suspended](./suspended.md)
   The task was suspended by the app.
-- [URLSessionTask.State.canceling](urlsessiontask/state-swift.enum/canceling.md)
+- [URLSessionTask.State.canceling](./canceling.md)
   The task has received a `cancel` message.
-- [URLSessionTask.State.completed](urlsessiontask/state-swift.enum/completed.md)
+- [URLSessionTask.State.completed](./completed.md)
   The task has completed (without being canceled), and the task’s delegate receives no further callbacks.
 
 

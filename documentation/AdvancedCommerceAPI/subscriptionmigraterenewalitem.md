@@ -1,7 +1,8 @@
 # SubscriptionMigrateRenewalItem
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The item information that replaces a migrated subscription item when the subscription renews.
 
@@ -10,7 +11,7 @@ The item information that replaces a migrated subscription item when the subscri
 
 ## Declaration
 
-```swift
+```
 object SubscriptionMigrateRenewalItem
 ```
 
@@ -22,20 +23,27 @@ For example, if a customer downgrades a subscription, the subscription continues
 ## Properties
 
 - `SKU` (SKU) *(required)*: The SKU that the subscription item renews to at the next renewal period.
+
+  **Maximum Length**: `128`
 - `description` (description) *(required)*: The description of the renewing SKU.
+
+  **Maximum Length**: `45`
 - `displayName` (displayName) *(required)*: The display name of the renewing SKU.
+
+  **Maximum Length**: `30`
 
 ## See Also
 
-- [Migrate a Subscription to Advanced Commerce API](migrate-subscription-to-advanced-commerce-api.md)
+### Migration from the server
+- [Migrate a Subscription to Advanced Commerce API](./migrate-subscription-to-advanced-commerce-api.md)
   Migrate a subscription that a customer purchased through Apple In-App Purchase to a subscription you manage using the Advanced Commerce API.
-- [object SubscriptionMigrateRequest](subscriptionmigraterequest.md)
+- [object SubscriptionMigrateRequest](./subscriptionmigraterequest.md)
   The subscription details you provide to migrate a subscription from Apple In-App Purchase to the Advanced Commerce API, such as descriptors, items, storefront, and more.
-- [object SubscriptionMigrateResponse](subscriptionmigrateresponse.md)
+- [object SubscriptionMigrateResponse](./subscriptionmigrateresponse.md)
   A response that contains signed renewal and transaction information after a subscription successfully migrates to the Advanced Commerce API.
-- [object SubscriptionMigrateItem](subscriptionmigrateitem.md)
+- [object SubscriptionMigrateItem](./subscriptionmigrateitem.md)
   The SKU, description, and display name to use for a migrated subscription item.
-- [object SubscriptionMigrateDescriptors](subscriptionmigratedescriptors.md)
+- [object SubscriptionMigrateDescriptors](./subscriptionmigratedescriptors.md)
   The description and display name of the subscription to migrate to that you manage.
 
 

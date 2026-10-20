@@ -1,7 +1,8 @@
 # environment(_:stateDidChangeFromOldState:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when there has been a change in the environment.
 
@@ -17,6 +18,10 @@ Called when there has been a change in the environment.
 
 ```swift
 optional func environment(_ environment: LAEnvironment, stateDidChangeFromOldState oldState: LAEnvironment.State)
+```
+
+```objc
+- (void) environment:(LAEnvironment *) environment stateDidChangeFromOldState:(LAEnvironmentState *) oldState;
 ```
 
 #### Discussion

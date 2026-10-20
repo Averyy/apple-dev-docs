@@ -1,7 +1,8 @@
 # category
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the action group corresponding to this notification.
 
@@ -10,7 +11,7 @@ The name of the action group corresponding to this notification.
 
 ## Declaration
 
-```swift
+```
 attribute String category;
 ```
 

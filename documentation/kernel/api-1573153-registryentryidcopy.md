@@ -1,22 +1,24 @@
 # RegistryEntryIDCopy
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 OSStatus RegistryEntryIDCopy(const RegEntryID *entryID, RegEntryID *to);
 ```
 
 ## See Also
 
-- [RegistryEntryIDInit](1573061-registryentryidinit.md)
-- [RegistryEntryIDCompare](1573064-registryentryidcompare.md)
-- [RegistryEntryIDDispose](1573067-registryentryiddispose.md)
+### Entry IDs
+- [RegistryEntryIDInit](./api-1573061-registryentryidinit.md)
+- [RegistryEntryIDCompare](./api-1573064-registryentryidcompare.md)
+- [RegistryEntryIDDispose](./api-1573067-registryentryiddispose.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures how the render pipeline handles fragments outside the near and far planes of the view frustum.
@@ -20,11 +21,15 @@ Configures how the render pipeline handles fragments outside the near and far pl
 func setDepthClipMode(_ depthClipMode: MTLDepthClipMode)
 ```
 
+```objc
+- (void) setDepthClipMode:(MTLDepthClipMode) depthClipMode;
+```
+
 #### Discussion
 
 You can use depth clipping to ignore fragments outside the z-axis boundaries of a viewing volume.
 
-The render pass’s default clip mode is [`MTLDepthClipMode.clip`](mtldepthclipmode/clip.md).
+The render pass’s default clip mode is [`MTLDepthClipMode.clip`](../mtldepthclipmode/clip.md).
 
 ## Parameters
 
@@ -32,15 +37,16 @@ The render pass’s default clip mode is [`MTLDepthClipMode.clip`](mtldepthclipm
 
 ## See Also
 
-- [func setDepthStencilState((any MTLDepthStencilState)?)](mtlrendercommandencoder/setdepthstencilstate(_:).md)
+### Configuring depth and stencil behavior
+- [func setDepthStencilState((any MTLDepthStencilState)?)](./setdepthstencilstate%28_%29.md)
   Configures the combined depth and stencil state.
-- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](mtlrendercommandencoder/setdepthbias(_:slopescale:clamp:).md)
+- [func setDepthBias(Float, slopeScale: Float, clamp: Float)](./setdepthbias%28_,slopescale,clamp%29.md)
   Configures the adjustments a render pass applies to depth values from fragment functions by a scaling factor and bias.
-- [func setDepthTestBounds(ClosedRange<Float>)](mtlrendercommandencoder/setdepthtestbounds(_:).md)
+- [func setDepthTestBounds(ClosedRange<Float>)](./setdepthtestbounds%28_%29.md)
   Configures the range for depth bounds testing.
-- [func setStencilReferenceValue(UInt32)](mtlrendercommandencoder/setstencilreferencevalue(_:).md)
+- [func setStencilReferenceValue(UInt32)](./setstencilreferencevalue%28_%29.md)
   Configures the same comparison value for front- and back-facing primitives.
-- [func setStencilReferenceValues(front: UInt32, back: UInt32)](mtlrendercommandencoder/setstencilreferencevalues(front:back:).md)
+- [func setStencilReferenceValues(front: UInt32, back: UInt32)](./setstencilreferencevalues%28front,back%29.md)
   Configures different comparison values for front- and back-facing primitives.
 
 

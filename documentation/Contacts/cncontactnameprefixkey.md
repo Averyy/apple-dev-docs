@@ -1,7 +1,8 @@
 # CNContactNamePrefixKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The prefix for the contact’s name.
 
@@ -19,29 +20,34 @@ The prefix for the contact’s name.
 let CNContactNamePrefixKey: String
 ```
 
+```c
+extern NSString * const CNContactNamePrefixKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNContactGivenNameKey: String](cncontactgivennamekey.md)
+### Name
+- [let CNContactGivenNameKey: String](./cncontactgivennamekey.md)
   The contact’s given name.
-- [let CNContactMiddleNameKey: String](cncontactmiddlenamekey.md)
+- [let CNContactMiddleNameKey: String](./cncontactmiddlenamekey.md)
   The contact’s middle name.
-- [let CNContactFamilyNameKey: String](cncontactfamilynamekey.md)
+- [let CNContactFamilyNameKey: String](./cncontactfamilynamekey.md)
   The contact’s family name.
-- [let CNContactPreviousFamilyNameKey: String](cncontactpreviousfamilynamekey.md)
+- [let CNContactPreviousFamilyNameKey: String](./cncontactpreviousfamilynamekey.md)
   The contact’s previous family name.
-- [let CNContactNameSuffixKey: String](cncontactnamesuffixkey.md)
+- [let CNContactNameSuffixKey: String](./cncontactnamesuffixkey.md)
   The contact’s name suffix.
-- [let CNContactNicknameKey: String](cncontactnicknamekey.md)
+- [let CNContactNicknameKey: String](./cncontactnicknamekey.md)
   The contact’s nickname.
-- [let CNContactPhoneticGivenNameKey: String](cncontactphoneticgivennamekey.md)
+- [let CNContactPhoneticGivenNameKey: String](./cncontactphoneticgivennamekey.md)
   The phonetic spelling of the contact’s  given name.
-- [let CNContactPhoneticMiddleNameKey: String](cncontactphoneticmiddlenamekey.md)
+- [let CNContactPhoneticMiddleNameKey: String](./cncontactphoneticmiddlenamekey.md)
   The phonetic spelling of the contact’s middle name.
-- [let CNContactPhoneticFamilyNameKey: String](cncontactphoneticfamilynamekey.md)
+- [let CNContactPhoneticFamilyNameKey: String](./cncontactphoneticfamilynamekey.md)
   The phonetic spelling of the contact’s family name.
 
 

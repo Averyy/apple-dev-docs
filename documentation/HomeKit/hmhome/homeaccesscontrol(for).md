@@ -1,7 +1,8 @@
 # homeAccessControl(for:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the access level of a user associated with the home.
 
@@ -19,6 +20,10 @@ Retrieves the access level of a user associated with the home.
 func homeAccessControl(for user: HMUser) -> HMHomeAccessControl
 ```
 
+```objc
+- (HMHomeAccessControl *) homeAccessControlForUser:(HMUser *) user;
+```
+
 #### Return Value
 
 The access level associated with the user.
@@ -29,11 +34,12 @@ The access level associated with the user.
 
 ## See Also
 
-- [class HMHomeAccessControl](hmhomeaccesscontrol.md)
+### Controlling user access
+- [class HMHomeAccessControl](../hmhomeaccesscontrol.md)
   The access privileges of a user associated with a home.
-- [class HMAccessControl](hmaccesscontrol.md)
+- [class HMAccessControl](../hmaccesscontrol.md)
   An abstract superclass for accessing user privileges.
-- [let HMUserFailedAccessoriesKey: String](hmuserfailedaccessorieskey.md)
+- [let HMUserFailedAccessoriesKey: String](../hmuserfailedaccessorieskey.md)
   The key for retrieving details of what accessories failed to add or remove a user.
 
 

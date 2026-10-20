@@ -1,7 +1,8 @@
 # joint(_:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a hand joint based on the joint name you specify.
 
@@ -24,9 +25,10 @@ A hand joint referred to by the `named` parameter.
 
 ## See Also
 
-- [HandSkeleton.Joint](handskeleton/joint.md)
+### Retrieving specific hand joints
+- [HandSkeleton.Joint](./joint.md)
   The name and position of an individual hand joint.
-- [HandSkeleton.JointName](handskeleton/jointname.md)
+- [HandSkeleton.JointName](./jointname.md)
   The names of different hand joints.
 
 

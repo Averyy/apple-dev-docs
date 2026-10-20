@@ -1,7 +1,8 @@
 # Declarative Management
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
@@ -18,7 +19,7 @@ Enable your server to support declarative management or trigger a declarative ma
 
 The server uses this command to turn on the declarative management engine on the device the first time the server sends it. Subsequent commands trigger a declarative management synchronization operation.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -28,7 +29,7 @@ The server uses this command to turn on the declarative management engine on the
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -78,9 +79,9 @@ The server uses this command to turn on the declarative management engine on the
 ## Topics
 
 ### Commands and responses
-- [object DeclarativeManagementCommand](declarativemanagementcommand.md)
+- [object DeclarativeManagementCommand](./declarativemanagementcommand.md)
   The command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
-- [object DeclarativeManagementResponse](declarativemanagementresponse.md)
+- [object DeclarativeManagementResponse](./declarativemanagementresponse.md)
   A response from the device after it processes the command to enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
 ## Endpoint
@@ -89,7 +90,14 @@ The server uses this command to turn on the declarative management engine on the
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `DeclarativeManagementCommand`
+
 The request object the server returns for the Declarative Management Command.
+
+## Responses
+
+- `200` OK (`DeclarativeManagementResponse`, `application/xml`): The response object the system returns for the Declarative Management Command.
 
 
 ---

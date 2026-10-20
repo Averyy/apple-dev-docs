@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,13 @@
 ```swift
 @export(implementation)
 init(_ content: (repeat each Content))
+```
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+init(_ content: repeat each Content)
 ```
 
 

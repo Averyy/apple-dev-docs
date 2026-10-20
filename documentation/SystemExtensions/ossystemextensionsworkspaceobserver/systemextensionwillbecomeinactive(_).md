@@ -1,7 +1,8 @@
 # systemExtensionWillBecomeInactive(_:)
 
 **Framework**: System Extensions  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.1+
@@ -10,6 +11,10 @@
 
 ```swift
 optional func systemExtensionWillBecomeInactive(_ systemExtensionInfo: OSSystemExtensionInfo)
+```
+
+```objc
+- (void) systemExtensionWillBecomeInactive:(OSSystemExtensionInfo *) systemExtensionInfo;
 ```
 
 #### Discussion

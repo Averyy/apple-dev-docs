@@ -1,7 +1,8 @@
 # NSAccessibilitySearchCurrentRangeKey
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.12+
@@ -12,13 +13,18 @@
 let NSAccessibilitySearchCurrentRangeKey: String
 ```
 
+```c
+extern NSString * const NSAccessibilitySearchCurrentRangeKey;
+```
+
 ## See Also
 
-- [let NSAccessibilitySearchCurrentElementKey: String](nsaccessibilitysearchcurrentelementkey.md)
-- [let NSAccessibilitySearchDirectionKey: String](nsaccessibilitysearchdirectionkey.md)
-- [let NSAccessibilitySearchDirectionNext: String](nsaccessibilitysearchdirectionnext.md)
-- [let NSAccessibilitySearchDirectionPrevious: String](nsaccessibilitysearchdirectionprevious.md)
-- [struct NSAccessibilitySearchKey](nsaccessibilitysearchkey.md)
+### Searching elements
+- [let NSAccessibilitySearchCurrentElementKey: String](./nsaccessibilitysearchcurrentelementkey.md)
+- [let NSAccessibilitySearchDirectionKey: String](./nsaccessibilitysearchdirectionkey.md)
+- [let NSAccessibilitySearchDirectionNext: String](./nsaccessibilitysearchdirectionnext.md)
+- [let NSAccessibilitySearchDirectionPrevious: String](./nsaccessibilitysearchdirectionprevious.md)
+- [struct NSAccessibilitySearchKey](./nsaccessibilitysearchkey.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # anchorFromJointTransform
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position and orientation of this joint relative to the base joint of the skeleton.
 
@@ -16,9 +17,10 @@ var anchorFromJointTransform: simd_float4x4 { get }
 
 ## See Also
 
-- [var parentFromJointTransform: simd_float4x4](handskeleton/joint/parentfromjointtransform.md)
+### Tracking the position of hand joints
+- [var parentFromJointTransform: simd_float4x4](./parentfromjointtransform.md)
   The transform from the joint to its parent joint’s coordinate system.
-- [var isTracked: Bool](handskeleton/joint/istracked.md)
+- [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit tracks a hand joint.
 
 

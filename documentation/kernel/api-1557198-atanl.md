@@ -1,27 +1,29 @@
 # atanl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double atanl(long double);
 ```
 
 ## See Also
 
-- [atanh](1557372-atanh.md)
-- [atan](1557165-atan.md)
-- [atan2](1557368-atan2.md)
-- [atan2f](1557144-atan2f.md)
-- [atan2l](1557326-atan2l.md)
-- [atanf](1557247-atanf.md)
-- [atanhf](1557262-atanhf.md)
-- [atanhl](1557230-atanhl.md)
+### Arctangent
+- [atanh](./api-1557372-atanh.md)
+- [atan](./api-1557165-atan.md)
+- [atan2](./api-1557368-atan2.md)
+- [atan2f](./api-1557144-atan2f.md)
+- [atan2l](./api-1557326-atan2l.md)
+- [atanf](./api-1557247-atanf.md)
+- [atanhf](./api-1557262-atanhf.md)
+- [atanhl](./api-1557230-atanhl.md)
 
 
 ---

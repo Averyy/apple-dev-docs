@@ -1,14 +1,15 @@
 # whole
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 UInt32 whole;
 ```
 

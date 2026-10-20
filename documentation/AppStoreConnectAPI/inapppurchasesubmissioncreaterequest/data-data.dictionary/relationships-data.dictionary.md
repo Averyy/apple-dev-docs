@@ -1,7 +1,8 @@
 # InAppPurchaseSubmissionCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseSubmissionCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseSubmissionCreateRequest.Data.Relationships.InAppPurchaseV2](inapppurchasesubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchasev2-data.dictionary.md)
+- [object InAppPurchaseSubmissionCreateRequest.Data.Relationships.InAppPurchaseV2](./relationships-data.dictionary/inapppurchasev2-data.dictionary.md)
 
 ## Properties
 

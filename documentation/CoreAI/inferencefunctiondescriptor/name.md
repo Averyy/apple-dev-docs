@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The function’s name.
 

@@ -1,16 +1,17 @@
 # CGImagePixelFormatInfo.mask
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.1+
-- macOS 10.14+
-- tvOS 12.0+
-- visionOS 1.0+
-- watchOS 5.0+
+- iOS 12.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- iPadOS 12.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- Mac Catalyst 13.1+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- macOS 10.14+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- tvOS 12.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
+- watchOS 5.0+ - Deprecated in 27.2 (renamed: CGBitmapInfo.__pixelFormatInfoMask)
 
 ## Declaration
 
@@ -18,13 +19,18 @@
 case mask
 ```
 
+```c
+kCGImagePixelFormatMask
+```
+
 ## See Also
 
-- [CGImagePixelFormatInfo.RGB101010](cgimagepixelformatinfo/rgb101010.md)
-- [CGImagePixelFormatInfo.RGB555](cgimagepixelformatinfo/rgb555.md)
-- [CGImagePixelFormatInfo.RGB565](cgimagepixelformatinfo/rgb565.md)
-- [CGImagePixelFormatInfo.RGBCIF10](cgimagepixelformatinfo/rgbcif10.md)
-- [CGImagePixelFormatInfo.packed](cgimagepixelformatinfo/packed.md)
+### Enumeration Cases
+- [CGImagePixelFormatInfo.RGB101010](./rgb101010.md)
+- [CGImagePixelFormatInfo.RGB555](./rgb555.md)
+- [CGImagePixelFormatInfo.RGB565](./rgb565.md)
+- [CGImagePixelFormatInfo.RGBCIF10](./rgbcif10.md)
+- [CGImagePixelFormatInfo.packed](./packed.md)
 
 
 ---

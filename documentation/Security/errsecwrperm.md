@@ -1,7 +1,8 @@
 # errSecWrPerm
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Write permissions error.
 
@@ -18,6 +19,10 @@ Write permissions error.
 
 ```swift
 var errSecWrPerm: OSStatus { get }
+```
+
+```c
+errSecWrPerm
 ```
 
 

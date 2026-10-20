@@ -1,7 +1,8 @@
 # group
 
 **Framework**: Dispatch  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dispatch group, if any, to use when performing actions.
 
@@ -11,7 +12,7 @@ The dispatch group, if any, to use when performing actions.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ var group: DispatchGroup?
 
 ## See Also
 
-- [var qos: DispatchQoS](dispatchqueue/scheduleroptions/qos.md)
+### Inspecting Scheduler Options
+- [var qos: DispatchQoS](./qos.md)
   The dispatch queue quality of service.
-- [var flags: DispatchWorkItemFlags](dispatchqueue/scheduleroptions/flags.md)
+- [var flags: DispatchWorkItemFlags](./flags.md)
   The dispatch queue work item flags.
 
 

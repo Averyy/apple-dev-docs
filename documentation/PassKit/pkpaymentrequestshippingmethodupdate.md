@@ -1,7 +1,8 @@
 # PKPaymentRequestShippingMethodUpdate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that updates the payment request after the shipping method changed.
 
@@ -19,33 +20,38 @@ An object that updates the payment request after the shipping method changed.
 class PKPaymentRequestShippingMethodUpdate
 ```
 
+```objc
+@interface PKPaymentRequestShippingMethodUpdate : PKPaymentRequestUpdate
+```
+
 #### Overview
 
-This is the handler for [`paymentAuthorizationController(_:didSelectShippingMethod:handler:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller(_:didselectshippingmethod:handler:).md) and [`paymentAuthorizationViewController(_:didSelect:handler:)`](pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller(_:didselect:handler:)-5r0i7.md).
+This is the handler for [`paymentAuthorizationController(_:didSelectShippingMethod:handler:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didselectshippingmethod,handler%29.md) and [`paymentAuthorizationViewController(_:didSelect:handler:)`](./pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller%28_,didselect,handler%29-5r0i7.md).
 
 ## Relationships
 
 ### Inherits From
-- [PKPaymentRequestUpdate](pkpaymentrequestupdate.md)
+- [PKPaymentRequestUpdate](./pkpaymentrequestupdate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKPaymentRequestMerchantSessionUpdate](pkpaymentrequestmerchantsessionupdate.md)
+### Payment sheet updates
+- [class PKPaymentRequestMerchantSessionUpdate](./pkpaymentrequestmerchantsessionupdate.md)
   An object that updates a payment request with a merchant validation.
-- [class PKPaymentRequestPaymentMethodUpdate](pkpaymentrequestpaymentmethodupdate.md)
+- [class PKPaymentRequestPaymentMethodUpdate](./pkpaymentrequestpaymentmethodupdate.md)
   An object that updates the payment request after the payment method changes.
-- [class PKPaymentRequestShippingContactUpdate](pkpaymentrequestshippingcontactupdate.md)
+- [class PKPaymentRequestShippingContactUpdate](./pkpaymentrequestshippingcontactupdate.md)
   An object that updates the payment request after the shipping contact information changes.
-- [class PKPaymentRequestCouponCodeUpdate](pkpaymentrequestcouponcodeupdate.md)
+- [class PKPaymentRequestCouponCodeUpdate](./pkpaymentrequestcouponcodeupdate.md)
   An object that updates the payment request after the coupon code changes.
-- [class PKPaymentRequestUpdate](pkpaymentrequestupdate.md)
+- [class PKPaymentRequestUpdate](./pkpaymentrequestupdate.md)
   The base class for updating the payment request after the user makes changes on the payment sheet.
 
 

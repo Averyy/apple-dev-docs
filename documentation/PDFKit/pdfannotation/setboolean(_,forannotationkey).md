@@ -1,7 +1,8 @@
 # setBoolean(_:forAnnotationKey:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a Boolean value in the annotation’s dictionary.
 
@@ -19,28 +20,33 @@ Sets a Boolean value in the annotation’s dictionary.
 func setBoolean(_ value: Bool, forAnnotationKey key: PDFAnnotationKey) -> Bool
 ```
 
+```objc
+- (BOOL) setBoolean:(BOOL) value forAnnotationKey:(PDFAnnotationKey) key;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the value sets successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the value sets successfully; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
 - `value`: The Boolean value to set in the annotation’s dictionary.
-- `key`: A [`PDFAnnotationKey`](pdfannotationkey.md) or appropriate string from the Adobe PDF Specification.
+- `key`: A [`PDFAnnotationKey`](../pdfannotationkey.md) or appropriate string from the Adobe PDF Specification.
 
 ## See Also
 
-- [var annotationKeyValues: [AnyHashable : Any]](pdfannotation/annotationkeyvalues.md)
+### Modifying Annotation Attributes
+- [var annotationKeyValues: [AnyHashable : Any]](./annotationkeyvalues.md)
   A dictionary that contains a deep copy of the widget’s properties.
-- [func value(forAnnotationKey: PDFAnnotationKey) -> Any?](pdfannotation/value(forannotationkey:).md)
+- [func value(forAnnotationKey: PDFAnnotationKey) -> Any?](./value%28forannotationkey%29.md)
   Returns a deep copy of the key-value pairs of properties for the specified key.
-- [func setValue(Any, forAnnotationKey: PDFAnnotationKey) -> Bool](pdfannotation/setvalue(_:forannotationkey:).md)
+- [func setValue(Any, forAnnotationKey: PDFAnnotationKey) -> Bool](./setvalue%28_,forannotationkey%29.md)
   Sets a value in the annotation’s dictionary.
-- [func setRect(CGRect, forAnnotationKey: PDFAnnotationKey) -> Bool](pdfannotation/setrect(_:forannotationkey:).md)
+- [func setRect(CGRect, forAnnotationKey: PDFAnnotationKey) -> Bool](./setrect%28_,forannotationkey%29.md)
   Sets a rectangle value in the annotation’s dictionary.
-- [func removeValue(forAnnotationKey: PDFAnnotationKey)](pdfannotation/removevalue(forannotationkey:).md)
+- [func removeValue(forAnnotationKey: PDFAnnotationKey)](./removevalue%28forannotationkey%29.md)
   Removes a value from the annotation’s dictionary.
-- [struct PDFAnnotationKey](pdfannotationkey.md)
+- [struct PDFAnnotationKey](../pdfannotationkey.md)
   Keys for setting properties of annotations.
 
 

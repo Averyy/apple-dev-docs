@@ -1,7 +1,8 @@
 # errSecCSStaticCodeChanged
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The code on disk has been modified after the code started running.
 
@@ -13,6 +14,10 @@ The code on disk has been modified after the code started running.
 
 ```swift
 var errSecCSStaticCodeChanged: OSStatus { get }
+```
+
+```c
+errSecCSStaticCodeChanged
 ```
 
 

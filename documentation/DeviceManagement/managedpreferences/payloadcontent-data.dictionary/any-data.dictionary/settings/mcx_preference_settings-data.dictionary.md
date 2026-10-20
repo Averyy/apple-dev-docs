@@ -1,7 +1,8 @@
 # ManagedPreferences.PayloadContent.ANY.Settings.Mcx_preference_settings
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The dictionary of settings.
 
@@ -10,7 +11,7 @@ The dictionary of settings.
 
 ## Declaration
 
-```swift
+```
 object ManagedPreferences.PayloadContent.ANY.Settings.Mcx_preference_settings
 ```
 

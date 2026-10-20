@@ -1,7 +1,8 @@
 # vDSP_deq22
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs two-pole, two-zero recursive filtering on a single-precision vector.
 
@@ -10,7 +11,7 @@ Performs two-pole, two-zero recursive filtering on a single-precision vector.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_deq22(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 

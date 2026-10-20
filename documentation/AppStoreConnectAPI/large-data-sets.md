@@ -1,21 +1,22 @@
 # Large Data Sets
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Retrieve large data sets with paging information.
 
 ## Topics
 
 ### Objects
-- [object PagedDocumentLinks](pageddocumentlinks.md)
+- [object PagedDocumentLinks](./pageddocumentlinks.md)
   Links related to the response document, including paging links.
-- [object PagingInformation](paginginformation.md)
+- [object PagingInformation](./paginginformation.md)
   Paging information for data responses.
-- [object ResourceLinks](resourcelinks.md)
+- [object ResourceLinks](./resourcelinks.md)
   Self-links to requested resources.
-- [object DocumentLinks](documentlinks.md)
+- [object DocumentLinks](./documentlinks.md)
   Self-links to documents that can contain information for one or more resources.
-- [object RelationshipLinks](relationshiplinks.md)
+- [object RelationshipLinks](./relationshiplinks.md)
   Links related to the response document, including self links.
 
 

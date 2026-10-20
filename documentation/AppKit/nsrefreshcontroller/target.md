@@ -1,7 +1,8 @@
 # target
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target object that receives action messages.
 
@@ -12,6 +13,10 @@ The target object that receives action messages.
 
 ```swift
 weak var target: AnyObject? { get set }
+```
+
+```objc
+@property (weak, nullable) id target;
 ```
 
 

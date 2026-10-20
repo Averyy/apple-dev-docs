@@ -1,7 +1,8 @@
 # msgid
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the identifier for the receiver.
 
@@ -13,6 +14,10 @@ Returns the identifier for the receiver.
 
 ```swift
 var msgid: UInt32 { get set }
+```
+
+```objc
+@property uint32_t msgid;
 ```
 
 #### Return Value

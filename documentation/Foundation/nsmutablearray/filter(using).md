@@ -1,7 +1,8 @@
 # filter(using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Evaluates a given predicate against the array’s content and leaves only objects that match.
 
@@ -20,13 +21,18 @@ Evaluates a given predicate against the array’s content and leaves only object
 func filter(using predicate: NSPredicate)
 ```
 
+```objc
+- (void) filterUsingPredicate:(NSPredicate *) predicate;
+```
+
 ## Parameters
 
 - `predicate`: The predicate to evaluate against the array’s elements.
 
 ## See Also
 
-- [func filtered(using: NSPredicate) -> [Any]](nsarray/filtered(using:).md)
+### Related Documentation
+- [func filtered(using: NSPredicate) -> [Any]](../nsarray/filtered%28using%29.md)
   Evaluates a given predicate against each object in the receiving array and returns a new array containing the objects for which the predicate returns true.
 
 

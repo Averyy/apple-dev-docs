@@ -1,7 +1,8 @@
 # AddMediaMediaDestinationResolutionResult.Success
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A media destination that successfully matches an intent.
 
@@ -10,7 +11,7 @@ A media destination that successfully matches an intent.
 
 ## Declaration
 
-```swift
+```
 object AddMediaMediaDestinationResolutionResult.Success
 ```
 
@@ -20,11 +21,12 @@ object AddMediaMediaDestinationResolutionResult.Success
 
 ## See Also
 
-- [object MediaDestination](mediadestination.md)
+### Providing a Destination
+- [object MediaDestination](../mediadestination.md)
   The user’s library or a playlist.
-- [object MediaDestinationLibrary](mediadestinationlibrary.md)
+- [object MediaDestinationLibrary](../mediadestinationlibrary.md)
   The user’s library as a destination for an add media intent.
-- [object MediaDestinationPlaylist](mediadestinationplaylist.md)
+- [object MediaDestinationPlaylist](../mediadestinationplaylist.md)
   A playlist as a destination for an add media intent.
 
 

@@ -1,7 +1,8 @@
 # menuActionTriggered
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A menu action has triggered prior to the menu being presented.
 
@@ -14,11 +15,16 @@ A menu action has triggered prior to the menu being presented.
 static var menuActionTriggered: NSControl.Events { get }
 ```
 
+```c
+NSControlEventMenuActionTriggered
+```
+
 ## See Also
 
-- [static var valueChanged: NSControl.Events](nscontrol/events/valuechanged.md)
+### Semantic events
+- [static var valueChanged: NSControl.Events](./valuechanged.md)
   An event where dragging or otherwise manipulating a control causes it to emit a series of different values.
-- [static var primaryActionTriggered: NSControl.Events](nscontrol/events/primaryactiontriggered.md)
+- [static var primaryActionTriggered: NSControl.Events](./primaryactiontriggered.md)
   A semantic action triggered by buttons.
 
 

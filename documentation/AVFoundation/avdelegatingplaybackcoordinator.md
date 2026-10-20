@@ -1,7 +1,8 @@
 # AVDelegatingPlaybackCoordinator
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A playback coordinator subclass that coordinates the playback of custom player objects in a connected group.
 
@@ -19,77 +20,82 @@ A playback coordinator subclass that coordinates the playback of custom player o
 class AVDelegatingPlaybackCoordinator
 ```
 
+```objc
+@interface AVDelegatingPlaybackCoordinator : AVPlaybackCoordinator
+```
+
 #### Overview
 
-This object coordinates the state of custom player objects, such as those that render media using [`AVSampleBufferDisplayLayer`](avsamplebufferdisplaylayer.md) and [`AVSampleBufferAudioRenderer`](avsamplebufferaudiorenderer.md), or that play audio using [`AVAudioEngine`](https://developer.apple.com/documentation/avfaudio/avaudioengine).
+This object coordinates the state of custom player objects, such as those that render media using [`AVSampleBufferDisplayLayer`](./avsamplebufferdisplaylayer.md) and [`AVSampleBufferAudioRenderer`](./avsamplebufferaudiorenderer.md), or that play audio using [`AVAudioEngine`](../AVFAudio/avaudioengine.md).
 
-Adopt the [`AVPlaybackCoordinatorPlaybackControlDelegate`](avplaybackcoordinatorplaybackcontroldelegate.md) protocol so that your app responds to playback commands from the coordinator. The commands provide the details of a requested state change so you can control your player object accordingly.
+Adopt the [`AVPlaybackCoordinatorPlaybackControlDelegate`](./avplaybackcoordinatorplaybackcontroldelegate.md) protocol so that your app responds to playback commands from the coordinator. The commands provide the details of a requested state change so you can control your player object accordingly.
 
-![A diagram representing two devices that each contain representations of the app, AVDelegatingPlaybackCoordinator, playback control delegate, and custom playback object relationships. The two AVDelegatingPlaybackCoordinator items have a two-way dotted-line connection between the two devices.](/images/com.apple.avfoundation/media-3783472@2x.png)
+![A diagram representing two devices that each contain representations of the app, AVDelegatingPlaybackCoordinator, playback control delegate, and custom playback object relationships. The two AVDelegatingPlaybackCoordinator items have a two-way dotted-line connection between the two devices.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/media-3783472@2x.png)
 
 ## Topics
 
 ### Creating a coordinator
-- [init(playbackControlDelegate: any AVPlaybackCoordinatorPlaybackControlDelegate)](avdelegatingplaybackcoordinator/init(playbackcontroldelegate:).md)
+- [init(playbackControlDelegate: any AVPlaybackCoordinatorPlaybackControlDelegate)](./avdelegatingplaybackcoordinator/init%28playbackcontroldelegate%29.md)
   Creates a playback coordinator for a custom playback object.
-- [protocol AVPlaybackCoordinatorPlaybackControlDelegate](avplaybackcoordinatorplaybackcontroldelegate.md)
+- [protocol AVPlaybackCoordinatorPlaybackControlDelegate](./avplaybackcoordinatorplaybackcontroldelegate.md)
   A protocol that defines the method to implement to respond to playback commands from the playback coordinator.
 ### Identifying items
-- [var currentItemIdentifier: String?](avdelegatingplaybackcoordinator/currentitemidentifier.md)
+- [var currentItemIdentifier: String?](./avdelegatingplaybackcoordinator/currentitemidentifier.md)
   An identifier of the current item.
 ### Accessing the delegate
-- [var playbackControlDelegate: (any AVPlaybackCoordinatorPlaybackControlDelegate)?](avdelegatingplaybackcoordinator/playbackcontroldelegate.md)
+- [var playbackControlDelegate: (any AVPlaybackCoordinatorPlaybackControlDelegate)?](./avdelegatingplaybackcoordinator/playbackcontroldelegate.md)
   The delegate object for the playback coordinator.
 ### Coordinating state changes
-- [func coordinateRateChange(to: Float, options: AVDelegatingPlaybackCoordinatorRateChangeOptions)](avdelegatingplaybackcoordinator/coordinateratechange(to:options:).md)
+- [func coordinateRateChange(to: Float, options: AVDelegatingPlaybackCoordinatorRateChangeOptions)](./avdelegatingplaybackcoordinator/coordinateratechange%28to,options%29.md)
   Coordinates a rate change across all participants, waiting for others to become ready, if necessary.
-- [func coordinateSeek(to: CMTime, options: AVDelegatingPlaybackCoordinatorSeekOptions)](avdelegatingplaybackcoordinator/coordinateseek(to:options:).md)
+- [func coordinateSeek(to: CMTime, options: AVDelegatingPlaybackCoordinatorSeekOptions)](./avdelegatingplaybackcoordinator/coordinateseek%28to,options%29.md)
   Coordinates a seek to the specified time for all connected participants.
-- [func transitionToItem(withIdentifier: String?, proposingInitialTimingBasedOn: CMTimebase?)](avdelegatingplaybackcoordinator/transitiontoitem(withidentifier:proposinginitialtimingbasedon:).md)
+- [func transitionToItem(withIdentifier: String?, proposingInitialTimingBasedOn: CMTimebase?)](./avdelegatingplaybackcoordinator/transitiontoitem%28withidentifier,proposinginitialtimingbasedon%29.md)
   Tells the coordinator to transition to a new item.
-- [func reapplyCurrentItemStateToPlaybackControlDelegate()](avdelegatingplaybackcoordinator/reapplycurrentitemstatetoplaybackcontroldelegate.md)
+- [func reapplyCurrentItemStateToPlaybackControlDelegate()](./avdelegatingplaybackcoordinator/reapplycurrentitemstatetoplaybackcontroldelegate%28%29.md)
   Tells the coordinator to reissue current play state commands to synchronize the current item to the state of other participants.
-- [struct AVDelegatingPlaybackCoordinatorSeekOptions](avdelegatingplaybackcoordinatorseekoptions.md)
+- [struct AVDelegatingPlaybackCoordinatorSeekOptions](./avdelegatingplaybackcoordinatorseekoptions.md)
   Constants that define seek options.
-- [struct AVDelegatingPlaybackCoordinatorRateChangeOptions](avdelegatingplaybackcoordinatorratechangeoptions.md)
+- [struct AVDelegatingPlaybackCoordinatorRateChangeOptions](./avdelegatingplaybackcoordinatorratechangeoptions.md)
   Constants that define rate change options.
 ### Playback commands
-- [class AVDelegatingPlaybackCoordinatorPlaybackControlCommand](avdelegatingplaybackcoordinatorplaybackcontrolcommand.md)
+- [class AVDelegatingPlaybackCoordinatorPlaybackControlCommand](./avdelegatingplaybackcoordinatorplaybackcontrolcommand.md)
   An abstract superclass for playback commands.
-- [class AVDelegatingPlaybackCoordinatorPlayCommand](avdelegatingplaybackcoordinatorplaycommand.md)
+- [class AVDelegatingPlaybackCoordinatorPlayCommand](./avdelegatingplaybackcoordinatorplaycommand.md)
   A command that indicates to play at a specific rate and time.
-- [class AVDelegatingPlaybackCoordinatorPauseCommand](avdelegatingplaybackcoordinatorpausecommand.md)
+- [class AVDelegatingPlaybackCoordinatorPauseCommand](./avdelegatingplaybackcoordinatorpausecommand.md)
   A command that indicates to pause playback.
-- [class AVDelegatingPlaybackCoordinatorSeekCommand](avdelegatingplaybackcoordinatorseekcommand.md)
+- [class AVDelegatingPlaybackCoordinatorSeekCommand](./avdelegatingplaybackcoordinatorseekcommand.md)
   A command that indicates to seek to a new time in the item timeline.
-- [class AVDelegatingPlaybackCoordinatorBufferingCommand](avdelegatingplaybackcoordinatorbufferingcommand.md)
+- [class AVDelegatingPlaybackCoordinatorBufferingCommand](./avdelegatingplaybackcoordinatorbufferingcommand.md)
   A command that indicates to start buffering data in preparation for playback.
 
 ## Relationships
 
 ### Inherits From
-- [AVPlaybackCoordinator](avplaybackcoordinator.md)
+- [AVPlaybackCoordinator](./avplaybackcoordinator.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Destination Video](../visionos/destination-video.md)
+### SharePlay
+- [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
-- [Supporting coordinated media playback](supporting-coordinated-media-playback.md)
+- [Supporting coordinated media playback](./supporting-coordinated-media-playback.md)
   Create synchronized media experiences that enable users to watch and listen across devices.
-- [class AVPlaybackCoordinator](avplaybackcoordinator.md)
+- [class AVPlaybackCoordinator](./avplaybackcoordinator.md)
   An object that coordinates the playback of players in a connected group.
-- [class AVPlayerPlaybackCoordinator](avplayerplaybackcoordinator.md)
+- [class AVPlayerPlaybackCoordinator](./avplayerplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of player objects in a connected group.
-- [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
+- [class AVPlaybackCoordinationMedium](./avplaybackcoordinationmedium.md)
   The AVPlaybackCoordinationMedium passes states and messages between its connected playback coordinators.
 
 

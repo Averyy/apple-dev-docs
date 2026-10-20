@@ -1,16 +1,19 @@
 # MXCrashDiagnostic
 
 **Framework**: MetricKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object representing a diagnostic report for an app crash.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 12.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.0
+- macOS 12.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`CrashDiagnostic`](./crashdiagnostic.md) instead.
 
 ## Declaration
 
@@ -18,47 +21,52 @@ An object representing a diagnostic report for an app crash.
 class MXCrashDiagnostic
 ```
 
+```objc
+@interface MXCrashDiagnostic : MXDiagnostic
+```
+
 ## Topics
 
 ### Viewing exception details
-- [var exceptionType: NSNumber?](mxcrashdiagnostic/exceptiontype.md)
+- [var exceptionType: NSNumber?](./mxcrashdiagnostic/exceptiontype.md)
   The Mach exception type of the crash.
-- [var exceptionCode: NSNumber?](mxcrashdiagnostic/exceptioncode.md)
+- [var exceptionCode: NSNumber?](./mxcrashdiagnostic/exceptioncode.md)
   The encoded processor-specific information for the crash.
-- [var signal: NSNumber?](mxcrashdiagnostic/signal.md)
+- [var signal: NSNumber?](./mxcrashdiagnostic/signal.md)
   The signal associated with the crash.
-- [var exceptionReason: MXCrashDiagnosticObjectiveCExceptionReason?](mxcrashdiagnostic/exceptionreason.md)
-- [var terminationReason: String?](mxcrashdiagnostic/terminationreason.md)
+- [var exceptionReason: MXCrashDiagnosticObjectiveCExceptionReason?](./mxcrashdiagnostic/exceptionreason.md)
+- [var terminationReason: String?](./mxcrashdiagnostic/terminationreason.md)
   The reason the app was terminated as a human-readable string.
-- [var virtualMemoryRegionInfo: String?](mxcrashdiagnostic/virtualmemoryregioninfo.md)
+- [var virtualMemoryRegionInfo: String?](./mxcrashdiagnostic/virtualmemoryregioninfo.md)
   Information about the region of memory an app accessed incorrectly, resulting in a bad-access crash.
 ### Viewing the call stack
-- [var callStackTree: MXCallStackTree](mxcrashdiagnostic/callstacktree.md)
+- [var callStackTree: MXCallStackTree](./mxcrashdiagnostic/callstacktree.md)
   The call stack for the crash.
 
 ## Relationships
 
 ### Inherits From
-- [MXDiagnostic](mxdiagnostic.md)
+- [MXDiagnostic](./mxdiagnostic.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MXAppLaunchDiagnostic](mxapplaunchdiagnostic.md)
+### Performance diagnostics
+- [class MXAppLaunchDiagnostic](./mxapplaunchdiagnostic.md)
   A diagnostic subclass that encapsulates app launch diagnostic reports.
-- [class MXCPUExceptionDiagnostic](mxcpuexceptiondiagnostic.md)
+- [class MXCPUExceptionDiagnostic](./mxcpuexceptiondiagnostic.md)
   An object representing a diagnostic report for a fatal or nonfatal CPU exception.
-- [class MXHangDiagnostic](mxhangdiagnostic.md)
+- [class MXHangDiagnostic](./mxhangdiagnostic.md)
   An object representing a diagnostic report for an app that is too busy to handle user input responsively.
-- [class MXDiskWriteExceptionDiagnostic](mxdiskwriteexceptiondiagnostic.md)
+- [class MXDiskWriteExceptionDiagnostic](./mxdiskwriteexceptiondiagnostic.md)
   An object representing a diagnostic report for a disk write exception.
 
 

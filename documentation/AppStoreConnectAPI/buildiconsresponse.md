@@ -1,7 +1,8 @@
 # BuildIconsResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of icon images for a build.
 
@@ -10,7 +11,7 @@ A response containing a list of icon images for a build.
 
 ## Declaration
 
-```swift
+```
 object BuildIconsResponse
 ```
 
@@ -22,13 +23,14 @@ object BuildIconsResponse
 
 ## See Also
 
-- [object BuildIcon](buildicon.md)
+### Objects and types
+- [object BuildIcon](./buildicon.md)
   A PNG icon image extracted from a build, used for display in App Store Connect and TestFlight.
-- [object BuildIconsWithoutIncludesResponse](buildiconswithoutincludesresponse.md)
+- [object BuildIconsWithoutIncludesResponse](./buildiconswithoutincludesresponse.md)
   A response containing a list of build icons, without related resources.
-- [object ImageAsset](imageasset.md)
+- [object ImageAsset](./imageasset.md)
   An image asset, including its height, width, and template URL.
-- [type IconAssetType](iconassettype.md)
+- [type IconAssetType](./iconassettype.md)
   String that represents the type of icon contained in the build.
 
 

@@ -1,7 +1,8 @@
 # RCSService.FileDownloadRequest.Metadata
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains download metadata from the content server.
 
@@ -16,33 +17,34 @@ struct Metadata
 
 #### Overview
 
-You receive this type as the return value from the [`download(_:)`](rcsservice/download(_:).md) method of [`RCSService`](rcsservice.md).
+You receive this type as the return value from the [`download(_:)`](../download%28_%29.md) method of [`RCSService`](../../rcsservice.md).
 
 ## Topics
 
 ### Accessing download request properties
-- [let contentType: UTType?](rcsservice/filedownloadrequest/metadata/contenttype.md)
+- [let contentType: UTType?](./metadata/contenttype.md)
   The content type provided by the content server.
-- [let suggestedFileName: String?](rcsservice/filedownloadrequest/metadata/suggestedfilename.md)
+- [let suggestedFileName: String?](./metadata/suggestedfilename.md)
   The file name provided by the content server.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func upload(RCSService.FileUploadRequest) async throws -> RCSService.FileUploadRequest.Metadata](rcsservice/upload(_:).md)
+### Transferring files
+- [func upload(RCSService.FileUploadRequest) async throws -> RCSService.FileUploadRequest.Metadata](../upload%28_%29.md)
   Uploads a file to the RCS content server.
-- [RCSService.FileUploadRequest](rcsservice/fileuploadrequest.md)
+- [RCSService.FileUploadRequest](../fileuploadrequest.md)
   A structure that represents an RCS file upload request.
-- [RCSService.FileUploadRequest.Metadata](rcsservice/fileuploadrequest/metadata.md)
+- [RCSService.FileUploadRequest.Metadata](../fileuploadrequest/metadata.md)
   A structure that contains upload metadata from the content server.
-- [func download(RCSService.FileDownloadRequest) async throws -> RCSService.FileDownloadRequest.Metadata](rcsservice/download(_:).md)
+- [func download(RCSService.FileDownloadRequest) async throws -> RCSService.FileDownloadRequest.Metadata](../download%28_%29.md)
   Downloads a file from the RCS content server.
-- [RCSService.FileDownloadRequest](rcsservice/filedownloadrequest.md)
+- [RCSService.FileDownloadRequest](../filedownloadrequest.md)
   A structure that represents an RCS file download request.
 
 

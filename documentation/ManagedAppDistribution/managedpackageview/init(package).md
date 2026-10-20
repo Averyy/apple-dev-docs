@@ -1,7 +1,8 @@
 # init(package:)
 
 **Framework**: ManagedAppDistribution  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a managed packaged view from a managed package.
 

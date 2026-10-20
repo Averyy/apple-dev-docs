@@ -1,7 +1,8 @@
 # Check Out
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Responds to the removal of the MDM enrollment profile from a device.
 
@@ -16,7 +17,7 @@ Responds to the removal of the MDM enrollment profile from a device.
 
 ## Mentions
 
-- [Migrating managed devices](migrating-managed-devices.md)
+- [Migrating managed devices](./migrating-managed-devices.md)
 
 #### Discussion
 
@@ -24,7 +25,7 @@ The system sends this message on a best-effort basis. If the system can’t send
 
 On success, the server needs to respond with a `200 OK` status.
 
-##### Check in Availability
+##### Check-in availability
 
 |  |  |
 | --- | --- |
@@ -36,7 +37,7 @@ On success, the server needs to respond with a `200 OK` status.
 ## Topics
 
 ### Requests
-- [object CheckOutRequest](checkoutrequest.md)
+- [object CheckOutRequest](./checkoutrequest.md)
   The check out request details.
 
 ## Endpoint
@@ -45,23 +46,31 @@ On success, the server needs to respond with a `200 OK` status.
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm-checkin`  
+**Type**: `CheckOutRequest`
+
 The request object the system sends for the `CheckOut` request.
+
+## Responses
+
+- `200` OK
 
 ## See Also
 
-- [Authenticate](authenticate.md)
+### Commands
+- [Authenticate](./authenticate.md)
   Authenticates a user during MDM payload installation.
-- [User Authenticate](user-authenticate.md)
+- [User Authenticate](./user-authenticate.md)
   Authenticates a user with a two-step authentication protocol.
-- [Get Token](get-token.md)
+- [Get Token](./get-token.md)
   Gets a token from the server.
-- [Token Update](token-update.md)
+- [Token Update](./token-update.md)
   Updates the token for a device on the server.
-- [Get Bootstrap Token](get-bootstrap-token.md)
+- [Get Bootstrap Token](./get-bootstrap-token.md)
   Gets the bootstrap token from the server.
-- [Set Bootstrap Token](set-bootstrap-token.md)
+- [Set Bootstrap Token](./set-bootstrap-token.md)
   Sends the bootstrap token to the server.
-- [Return To Service](return-to-service.md)
+- [Return To Service](./return-to-service.md)
   Gets the return-to-service configuration from the server.
 
 

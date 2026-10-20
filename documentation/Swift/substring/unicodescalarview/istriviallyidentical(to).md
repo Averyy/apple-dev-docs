@@ -1,7 +1,8 @@
 # isTriviallyIdentical(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a boolean value indicating whether this unicode scalar view is trivially identical to `other`.
 
@@ -22,7 +23,7 @@ func isTriviallyIdentical(to other: Substring.UnicodeScalarView) -> Bool
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

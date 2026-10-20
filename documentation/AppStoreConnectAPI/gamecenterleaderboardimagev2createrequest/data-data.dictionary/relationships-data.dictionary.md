@@ -1,7 +1,8 @@
 # GameCenterLeaderboardImageV2CreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those you can operate on.
 
@@ -10,7 +11,7 @@ The relationships you include in the request and those you can operate on.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardImageV2CreateRequest.Data.Relationships
 ```
 
@@ -21,7 +22,7 @@ object GameCenterLeaderboardImageV2CreateRequest.Data.Relationships
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardImageV2CreateRequest.Data.Relationships.Localization](gamecenterleaderboardimagev2createrequest/data-data.dictionary/relationships-data.dictionary/localization-data.dictionary.md)
+- [object GameCenterLeaderboardImageV2CreateRequest.Data.Relationships.Localization](./relationships-data.dictionary/localization-data.dictionary.md)
   The data that describes the localization of the Game Center leaderboard image.
 
 ## Properties
@@ -30,7 +31,8 @@ object GameCenterLeaderboardImageV2CreateRequest.Data.Relationships
 
 ## See Also
 
-- [object GameCenterLeaderboardImageV2CreateRequest.Data.Attributes](gamecenterleaderboardimagev2createrequest/data-data.dictionary/attributes-data.dictionary.md)
+### Dictionaries
+- [object GameCenterLeaderboardImageV2CreateRequest.Data.Attributes](./attributes-data.dictionary.md)
 
 
 ---

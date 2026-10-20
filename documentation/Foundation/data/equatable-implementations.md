@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (Data, Data) -> Bool](data/==(_:_:).md)
+- [static func == (Data, Data) -> Bool](./eqeq%28_,_%29.md)
   Returns `true` if the two `Data` arguments are equal.
 
 

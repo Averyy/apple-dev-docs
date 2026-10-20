@@ -1,7 +1,8 @@
 # equals(anotherRegion)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether two regions are equal.
 
@@ -10,13 +11,13 @@ Returns a Boolean value indicating whether two regions are equal.
 
 ## Declaration
 
-```swift
+```
 equals(anotherRegion: CoordinateRegion): boolean;
 ```
 
 #### Return Value
 
-`true` if the region that `anotherRegion` specifies is equal to the calling [`CoordinateRegion`](coordinateregion.md); otherwise, `false`.
+`true` if the region that `anotherRegion` specifies is equal to the calling [`CoordinateRegion`](../coordinateregion.md); otherwise, `false`.
 
 #### Discussion
 
@@ -43,11 +44,12 @@ if (myRegion.equals(map.region))
 
 ## See Also
 
-- [copy()](coordinateregion/copy.md)
+### Comparing, copying, and converting regions
+- [copy()](./copy.md)
   Returns a copy of the calling coordinate region.
-- [toBoundingRegion()](coordinateregion/toboundingregion.md)
+- [toBoundingRegion()](./toboundingregion.md)
   Returns the bounding region that corresponds to the specified coordinate region.
-- [toMapRect()](coordinateregion/tomaprect.md)
+- [toMapRect()](./tomaprect.md)
   Returns the map rectangle that corresponds to the calling coordinate region.
 
 

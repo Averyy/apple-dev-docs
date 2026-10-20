@@ -1,14 +1,15 @@
 # kauth_scope_callback_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef int (*kauth_scope_callback_t)(kauth_cred_t _credential, void *_idata, kauth_action_t _action, uintptr_t _arg0, uintptr_t _arg1, uintptr_t _arg2, uintptr_t _arg3);
 ```
 

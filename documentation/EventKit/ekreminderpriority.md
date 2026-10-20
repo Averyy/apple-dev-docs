@@ -1,17 +1,18 @@
 # EKReminderPriority
 
 **Framework**: EventKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The priority of the reminder.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,41 +20,46 @@ The priority of the reminder.
 enum EKReminderPriority
 ```
 
+```c
+enum EKReminderPriority : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EKReminderPriority.none](ekreminderpriority/none.md)
+- [EKReminderPriority.none](./ekreminderpriority/none.md)
   The reminder has no priority set.
-- [EKReminderPriority.high](ekreminderpriority/high.md)
+- [EKReminderPriority.high](./ekreminderpriority/high.md)
   The reminder is high priority.
-- [EKReminderPriority.medium](ekreminderpriority/medium.md)
+- [EKReminderPriority.medium](./ekreminderpriority/medium.md)
   The reminder is medium priority.
-- [EKReminderPriority.low](ekreminderpriority/low.md)
+- [EKReminderPriority.low](./ekreminderpriority/low.md)
   The reminder is low priority.
 ### Initializers
-- [init?(rawValue: UInt)](ekreminderpriority/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./ekreminderpriority/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var priority: Int](ekreminder/priority.md)
+### Accessing Reminder Properties
+- [var priority: Int](./ekreminder/priority.md)
   The reminder’s priority.
-- [var startDateComponents: DateComponents?](ekreminder/startdatecomponents.md)
+- [var startDateComponents: DateComponents?](./ekreminder/startdatecomponents.md)
   The start date of the task.
-- [var dueDateComponents: DateComponents?](ekreminder/duedatecomponents.md)
+- [var dueDateComponents: DateComponents?](./ekreminder/duedatecomponents.md)
   The date by which the reminder should be completed.
-- [var isCompleted: Bool](ekreminder/iscompleted.md)
+- [var isCompleted: Bool](./ekreminder/iscompleted.md)
   A Boolean value determining whether or not the reminder is marked completed.
-- [var completionDate: Date?](ekreminder/completiondate.md)
+- [var completionDate: Date?](./ekreminder/completiondate.md)
   The date on which the reminder was completed.
 
 

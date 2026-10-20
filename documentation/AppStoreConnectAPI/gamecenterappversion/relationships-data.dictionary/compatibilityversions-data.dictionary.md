@@ -1,21 +1,22 @@
 # GameCenterAppVersion.Relationships.CompatibilityVersions
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterAppVersion.Relationships.CompatibilityVersions
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAppVersion.Relationships.CompatibilityVersions.Data](gamecenterappversion/relationships-data.dictionary/compatibilityversions-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAppVersion.Relationships.CompatibilityVersions.Data](./compatibilityversions-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Game Center app version resource.
 
 ## Properties
@@ -26,7 +27,8 @@ object GameCenterAppVersion.Relationships.CompatibilityVersions
 
 ## See Also
 
-- [object GameCenterAppVersion.Relationships.AppStoreVersion](gamecenterappversion/relationships-data.dictionary/appstoreversion-data.dictionary.md)
+### Objects
+- [object GameCenterAppVersion.Relationships.AppStoreVersion](./appstoreversion-data.dictionary.md)
 
 
 ---

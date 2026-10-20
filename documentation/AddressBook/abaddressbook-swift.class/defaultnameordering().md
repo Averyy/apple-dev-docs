@@ -1,7 +1,8 @@
 # defaultNameOrdering()
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the default name ordering defined by the user in the Address Book application’s preferences.
 
@@ -14,6 +15,10 @@ Returns the default name ordering defined by the user in the Address Book applic
 func defaultNameOrdering() -> Int
 ```
 
+```objc
+- (NSInteger) defaultNameOrdering;
+```
+
 #### Return Value
 
 The default name ordering defined by the user in the Address Book application’s preferences.
@@ -24,7 +29,8 @@ The possible values are kABFirstNameFirst and kABLastNameFirst.
 
 ## See Also
 
-- [func defaultCountryCode() -> String!](abaddressbook-swift.class/defaultcountrycode.md)
+### Retrieving Default Values
+- [func defaultCountryCode() -> String!](./defaultcountrycode%28%29.md)
   Returns the default country code for records with unspecified country codes.
 
 

@@ -1,7 +1,8 @@
 # UIArrangementViewController.Arrangement
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that describes how an arrangement view controller lays out its view controllers.
 
@@ -21,32 +22,33 @@ protocol Arrangement
 ## Topics
 
 ### Getting arrangements
-- [static var overlay: UIOverlayArrangement](uiarrangementviewcontroller/arrangement/overlay.md)
+- [static var overlay: UIOverlayArrangement](./arrangement/overlay.md)
   An arrangement that layers the primary view over the secondary view, or places the views side by side on a folded display.
-- [static var split: UISplitArrangement](uiarrangementviewcontroller/arrangement/split.md)
+- [static var split: UISplitArrangement](./arrangement/split.md)
   An arrangement that places the primary and secondary views side by side along one or more axes.
 ### Getting the default view properties
-- [var defaultViewProperties: Self.ViewProperties](uiarrangementviewcontroller/arrangement/defaultviewproperties.md)
+- [var defaultViewProperties: Self.ViewProperties](./arrangement/defaultviewproperties.md)
   The default view properties for a view controller placed in the arrangement.
-- [associatedtype ViewProperties](uiarrangementviewcontroller/arrangement/viewproperties.md)
+- [associatedtype ViewProperties](./arrangement/viewproperties.md)
   Properties you use to customize how an arrangement presents views.
 ### Setting view properties
-- [func setViewProperties(Self.ViewProperties, for: UIArrangementViewController.ViewPlacement)](uiarrangementviewcontroller/arrangement/setviewproperties(_:for:).md)
+- [func setViewProperties(Self.ViewProperties, for: UIArrangementViewController.ViewPlacement)](./arrangement/setviewproperties%28_,for%29.md)
   Sets the view properties for a placement in the arrangement.
 
 ## Relationships
 
 ### Conforming Types
-- [UIOverlayArrangement](uioverlayarrangement-swift.struct.md)
-- [UISplitArrangement](uisplitarrangement-swift.struct.md)
+- [UIOverlayArrangement](../uioverlayarrangement-swift.struct.md)
+- [UISplitArrangement](../uisplitarrangement-swift.struct.md)
 
 ## See Also
 
-- [struct UIOverlayArrangement](uioverlayarrangement-swift.struct.md)
+### Configuring the arrangement
+- [struct UIOverlayArrangement](../uioverlayarrangement-swift.struct.md)
   An arrangement that layers the primary view over the secondary view, or places the views side by side on a folded display.
-- [struct UISplitArrangement](uisplitarrangement-swift.struct.md)
+- [struct UISplitArrangement](../uisplitarrangement-swift.struct.md)
   An arrangement that places the primary and secondary views side by side along one or more axes.
-- [func updateArrangement<A>(A, animated: Bool)](uiarrangementviewcontroller/updatearrangement(_:animated:).md)
+- [func updateArrangement<A>(A, animated: Bool)](./updatearrangement%28_,animated%29.md)
   Updates the arrangement of the view controller.
 
 

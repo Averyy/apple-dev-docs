@@ -1,7 +1,8 @@
 # selectionChanged(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Triggers selection feedback at the specified location.
 
@@ -16,9 +17,14 @@ Triggers selection feedback at the specified location.
 func selectionChanged(at location: CGPoint)
 ```
 
+```objc
+- (void) selectionChangedAtLocation:(CGPoint) location;
+```
+
 ## See Also
 
-- [func selectionChanged()](uiselectionfeedbackgenerator/selectionchanged.md)
+### Reporting selection changes
+- [func selectionChanged()](./selectionchanged%28%29.md)
   Triggers selection feedback.
 
 

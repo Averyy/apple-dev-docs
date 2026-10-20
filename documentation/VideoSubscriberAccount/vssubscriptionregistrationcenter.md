@@ -1,22 +1,27 @@
 # VSSubscriptionRegistrationCenter
 
 **Framework**: Video Subscriber Account  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that stores subscription information that the system provides to the Apple TV app.
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
-- Mac Catalyst 11.0+
-- macOS ?+
-- tvOS 11.0+
-- visionOS 1.0+
+- iOS 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- iPadOS 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- Mac Catalyst 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- macOS
+- tvOS 11.0+ - Deprecated in 18.0 (renamed: VSUserAccountManager)
+- visionOS 1.0+ - Deprecated in 2.0 (renamed: VSUserAccountManager)
 
 ## Declaration
 
 ```swift
 class VSSubscriptionRegistrationCenter
+```
+
+```objc
+@interface VSSubscriptionRegistrationCenter : NSObject
 ```
 
 #### Overview
@@ -26,29 +31,30 @@ Use the methods in this class to retrieve the default registration center object
 ## Topics
 
 ### Setting the Current Subscription
-- [func setCurrentSubscription(VSSubscription?)](vssubscriptionregistrationcenter/setcurrentsubscription(_:).md)
+- [func setCurrentSubscription(VSSubscription?)](./vssubscriptionregistrationcenter/setcurrentsubscription%28_%29.md)
   Sets the subscription information for the current user.
 ### Getting the Default Registration Center
-- [class func `default`() -> VSSubscriptionRegistrationCenter](vssubscriptionregistrationcenter/default.md)
+- [class func `default`() -> VSSubscriptionRegistrationCenter](./vssubscriptionregistrationcenter/default%28%29.md)
   Returns the default subscription registration center object.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct VSAppleSubscription](vsapplesubscription-swift.struct.md)
+### TV app integration
+- [struct VSAppleSubscription](./vsapplesubscription-swift.struct.md)
   An Apple streaming service customer and their subscriptions.
-- [class VSAccountApplicationProvider](vsaccountapplicationprovider.md)
+- [class VSAccountApplicationProvider](./vsaccountapplicationprovider.md)
   An object to display app-specific providers in your app.
 
 

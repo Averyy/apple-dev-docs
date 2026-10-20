@@ -1,7 +1,8 @@
 # ARAppClipCodeAnchor.URLDecodingState.decoding
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the continuing process of decoding an App Clip Code’s URL.
 
@@ -15,15 +16,20 @@ A state that indicates the continuing process of decoding an App Clip Code’s U
 case decoding
 ```
 
+```c
+ARAppClipCodeURLDecodingStateDecoding
+```
+
 #### Discussion
 
-The App Clip Code anchor’s [`url`](arappclipcodeanchor/url.md) is `nil` in this state.
+The App Clip Code anchor’s [`url`](../url.md) is `nil` in this state.
 
 ## See Also
 
-- [ARAppClipCodeAnchor.URLDecodingState.decoded](arappclipcodeanchor/urldecodingstate-swift.enum/decoded.md)
+### States
+- [ARAppClipCodeAnchor.URLDecodingState.decoded](./decoded.md)
   A state that indicates the completed decoding of an App Clip Code URL.
-- [ARAppClipCodeAnchor.URLDecodingState.failed](arappclipcodeanchor/urldecodingstate-swift.enum/failed.md)
+- [ARAppClipCodeAnchor.URLDecodingState.failed](./failed.md)
   A state that indicates the failure to decode an App Clip Code’s URL.
 
 

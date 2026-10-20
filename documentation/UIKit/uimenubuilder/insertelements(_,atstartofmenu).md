@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Insert elements at the start of an identified parent menu.
@@ -17,6 +18,10 @@ Insert elements at the start of an identified parent menu.
 
 ```swift
 func insertElements(_ childElements: [UIMenuElement], atStartOfMenu parentIdentifier: UIMenu.Identifier)
+```
+
+```objc
+- (void) insertElements:(NSArray<UIMenuElement *> *) childElements atStartOfMenuForIdentifier:(UIMenuIdentifier) parentIdentifier;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # UITextItem.Content
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe and capture the type of content a text item represents along with a specific related value.
 
@@ -9,7 +10,7 @@ Constants that describe and capture the type of content a text item represents a
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,16 +21,17 @@ enum Content
 ## Topics
 
 ### Getting the content type
-- [UITextItem.Content.link(_:)](uitextitem/content-swift.enum/link(_:).md)
+- [UITextItem.Content.link(_:)](./content-swift.enum/link%28_%29.md)
   A link to a resource, such as an item on a remote server or the path to a local file.
-- [UITextItem.Content.tag(_:)](uitextitem/content-swift.enum/tag(_:).md)
+- [UITextItem.Content.tag(_:)](./content-swift.enum/tag%28_%29.md)
   A string that represents a custom tag for a topic.
-- [UITextItem.Content.textAttachment(_:)](uitextitem/content-swift.enum/textattachment(_:).md)
+- [UITextItem.Content.textAttachment(_:)](./content-swift.enum/textattachment%28_%29.md)
   A text attachment, such as an image or view.
 
 ## See Also
 
-- [var content: UITextItem.Content](uitextitem/content-swift.property.md)
+### Specifying the content type
+- [var content: UITextItem.Content](./content-swift.property.md)
   The content type and related value of the text item.
 
 

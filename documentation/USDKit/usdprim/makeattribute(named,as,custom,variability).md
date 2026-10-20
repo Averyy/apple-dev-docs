@@ -1,7 +1,8 @@
 # makeAttribute(named:as:custom:variability:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an attribute with the given name on this prim, or returns the existing attribute if one already exists.
 
@@ -33,17 +34,18 @@ The attribute with the given name.
 
 ## See Also
 
-- [var attributes: [USDPrim.Attribute]](usdprim/attributes.md)
+### Accessing attributes
+- [var attributes: [USDPrim.Attribute]](./attributes.md)
   The attributes of this prim, including those provided by its schemas.
-- [var authoredAttributes: [USDPrim.Attribute]](usdprim/authoredattributes.md)
+- [var authoredAttributes: [USDPrim.Attribute]](./authoredattributes.md)
   The attributes of this prim that have an authored opinion.
-- [func attribute(named: USDToken) -> USDPrim.Attribute](usdprim/attribute(named:).md)
+- [func attribute(named: USDToken) -> USDPrim.Attribute](./attribute%28named%29.md)
   Returns the attribute with a given name on this prim.
-- [func attribute(at: USDLayer.Path) -> USDPrim.Attribute](usdprim/attribute(at:).md)
+- [func attribute(at: USDLayer.Path) -> USDPrim.Attribute](./attribute%28at%29.md)
   Returns the attribute at a given path, relative to this prim.
-- [func hasAttribute(named: USDToken) -> Bool](usdprim/hasattribute(named:).md)
+- [func hasAttribute(named: USDToken) -> Bool](./hasattribute%28named%29.md)
   Returns true if an attribute with a given name exists on this prim.
-- [USDPrim.Attribute](usdprim/attribute.md)
+- [USDPrim.Attribute](./attribute.md)
 
 
 ---

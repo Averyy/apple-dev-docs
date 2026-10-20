@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional, unique identifier for the storyboard segue that you can specify using the Identity inspector in Interface Builder.
 
@@ -14,17 +15,22 @@ An optional, unique identifier for the storyboard segue that you can specify usi
 var identifier: NSStoryboardSegue.Identifier? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSStoryboardSegueIdentifier identifier;
+```
+
 #### Discussion
 
-You use this property if you override the [`prepare(for:sender:)`](nssegueperforming/prepare(for:sender:).md) method of the [`NSSeguePerforming`](nssegueperforming.md) protocol.
+You use this property if you override the [`prepare(for:sender:)`](../nssegueperforming/prepare%28for,sender%29.md) method of the [`NSSeguePerforming`](../nssegueperforming.md) protocol.
 
 ## See Also
 
-- [var sourceController: Any](nsstoryboardsegue/sourcecontroller.md)
+### Inspecting a Storyboard Segue
+- [var sourceController: Any](./sourcecontroller.md)
   The starting/containing view controller or window controller for the storyboard segue.
-- [var destinationController: Any](nsstoryboardsegue/destinationcontroller.md)
+- [var destinationController: Any](./destinationcontroller.md)
   The ending/contained view controller or window controller for the storyboard segue.
-- [NSStoryboardSegue.Identifier](nsstoryboardsegue/identifier-swift.typealias.md)
+- [NSStoryboardSegue.Identifier](./identifier-swift.typealias.md)
 
 
 ---

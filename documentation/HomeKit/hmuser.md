@@ -1,7 +1,8 @@
 # HMUser
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A person in the home who may have access to control accessories and services in the home.
 
@@ -19,33 +20,38 @@ A person in the home who may have access to control accessories and services in 
 class HMUser
 ```
 
+```objc
+@interface HMUser : NSObject
+```
+
 ## Topics
 
 ### Getting Information About the User
-- [var name: String](hmuser/name.md)
+- [var name: String](./hmuser/name.md)
   The name of the user.
-- [var uniqueIdentifier: UUID](hmuser/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./hmuser/uniqueidentifier.md)
   A unique identifier for the user.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func manageUsers(completionHandler: ((any Error)?) -> Void)](hmhome/manageusers(completionhandler:).md)
+### Managing users
+- [func manageUsers(completionHandler: ((any Error)?) -> Void)](./hmhome/manageusers%28completionhandler%29.md)
   Presents a view controller to manage users of the home.
-- [var currentUser: HMUser](hmhome/currentuser.md)
+- [var currentUser: HMUser](./hmhome/currentuser.md)
   The current HomeKit user.
 
 

@@ -1,7 +1,8 @@
 # ActionHandlerProtocol
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The base protocol for action handlers.
 
@@ -65,42 +66,43 @@ MyActionHandler.register { event in
 ## Topics
 
 ### Associated Types
-- [associatedtype ActionType : EntityAction](actionhandlerprotocol/actiontype.md)
+- [associatedtype ActionType : EntityAction](./actionhandlerprotocol/actiontype.md)
   The action type associated that is associated with the handler.
 ### Instance Methods
-- [func actionEnded(event: Self.EventType)](actionhandlerprotocol/actionended(event:).md)
+- [func actionEnded(event: Self.EventType)](./actionhandlerprotocol/actionended%28event%29.md)
   The function used to respond to action ended events.
-- [func actionPaused(event: Self.EventType)](actionhandlerprotocol/actionpaused(event:).md)
+- [func actionPaused(event: Self.EventType)](./actionhandlerprotocol/actionpaused%28event%29.md)
   The function used to respond to action paused events.
-- [func actionResumed(event: Self.EventType)](actionhandlerprotocol/actionresumed(event:).md)
+- [func actionResumed(event: Self.EventType)](./actionhandlerprotocol/actionresumed%28event%29.md)
   The function used to respond to action resumed events.
-- [func actionSkipped(event: Self.EventType)](actionhandlerprotocol/actionskipped(event:).md)
+- [func actionSkipped(event: Self.EventType)](./actionhandlerprotocol/actionskipped%28event%29.md)
   The function used to respond to action skipped events.
-- [func actionStarted(event: Self.EventType)](actionhandlerprotocol/actionstarted(event:).md)
+- [func actionStarted(event: Self.EventType)](./actionhandlerprotocol/actionstarted%28event%29.md)
   The function used to respond to action started events.
-- [func actionTerminated(event: Self.EventType)](actionhandlerprotocol/actionterminated(event:).md)
+- [func actionTerminated(event: Self.EventType)](./actionhandlerprotocol/actionterminated%28event%29.md)
   The function used to respond to action terminated events.
-- [func actionUpdated(event: Self.EventType)](actionhandlerprotocol/actionupdated(event:).md)
+- [func actionUpdated(event: Self.EventType)](./actionhandlerprotocol/actionupdated%28event%29.md)
   The function used to respond to action updated events.
 ### Type Aliases
-- [ActionHandlerProtocol.EventType](actionhandlerprotocol/eventtype.md)
+- [ActionHandlerProtocol.EventType](./actionhandlerprotocol/eventtype.md)
   The event type returned to each event function in the handler.
 ### Type Methods
-- [static func register((Self.EventType) -> (any ActionHandlerProtocol)?)](actionhandlerprotocol/register(_:).md)
+- [static func register((Self.EventType) -> (any ActionHandlerProtocol)?)](./actionhandlerprotocol/register%28_%29.md)
   Registers a handler that responds to raised action events for a particular action type.
 
 ## Relationships
 
 ### Inherited By
-- [BehaviorTreeActionHandler](behaviortreeactionhandler.md)
+- [BehaviorTreeActionHandler](./behaviortreeactionhandler.md)
 
 ## See Also
 
-- [protocol EntityAction](entityaction.md)
+### Action management
+- [protocol EntityAction](./entityaction.md)
   A protocol that defines an action for an entity.
-- [struct ActionAnimation](actionanimation.md)
+- [struct ActionAnimation](./actionanimation.md)
   Defines an an action animation.
-- [enum ActionEntityResolution](actionentityresolution.md)
+- [enum ActionEntityResolution](./actionentityresolution.md)
   Options available to determine the resolution method for a target entity in an action.
 
 

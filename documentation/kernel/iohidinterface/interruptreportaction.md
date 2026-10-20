@@ -7,7 +7,7 @@ Callback to handle an asynchronous report received from the HID device.
 
 ## Declaration
 
-```swift
+```c
 typedef void ( *InterruptReportAction)(
    OSObject *target,
    AbsoluteTime timestamp,
@@ -32,9 +32,10 @@ This callback is set when calling IOHIDInterface::open.
 
 ## See Also
 
-- [CompletionAction](iohidinterface/completionaction.md)
-- [IOHIDInterface::CompletionAction](iohidinterface/iohidinterface_completionaction.md)
-- [IOHIDInterface::InterruptReportAction](iohidinterface/iohidinterface_interruptreportaction.md)
+### Callbacks
+- [CompletionAction](./completionaction.md)
+- [IOHIDInterface::CompletionAction](./iohidinterface_completionaction.md)
+- [IOHIDInterface::InterruptReportAction](./iohidinterface_interruptreportaction.md)
   Callback to handle an asynchronous report received from the HID device.
 
 

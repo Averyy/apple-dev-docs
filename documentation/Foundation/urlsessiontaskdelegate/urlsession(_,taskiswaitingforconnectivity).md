@@ -1,7 +1,8 @@
 # urlSession(_:taskIsWaitingForConnectivity:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the task is waiting until suitable connectivity is available before beginning the network load.
 
@@ -20,9 +21,13 @@ Tells the delegate that the task is waiting until suitable connectivity is avail
 optional func urlSession(_ session: URLSession, taskIsWaitingForConnectivity task: URLSessionTask)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session taskIsWaitingForConnectivity:(NSURLSessionTask *) task;
+```
+
 #### Discussion
 
-This method is called if the  [`waitsForConnectivity`](urlsessionconfiguration/waitsforconnectivity.md) property of [`URLSessionConfiguration`](urlsessionconfiguration.md) is `true`, and sufficient connectivity is unavailable. The delegate can use this opportunity to update the user interface; for example, by presenting an offline mode or a cellular-only mode.
+This method is called if the  [`waitsForConnectivity`](../urlsessionconfiguration/waitsforconnectivity.md) property of [`URLSessionConfiguration`](../urlsessionconfiguration.md) is `true`, and sufficient connectivity is unavailable. The delegate can use this opportunity to update the user interface; for example, by presenting an offline mode or a cellular-only mode.
 
 This method is called, at most, once per task, and only if connectivity is initially unavailable. It is never called for background sessions because `waitsForConnectivity` is ignored for those sessions.
 
@@ -33,9 +38,10 @@ This method is called, at most, once per task, and only if connectivity is initi
 
 ## See Also
 
-- [func urlSession(URLSession, task: URLSessionTask, willBeginDelayedRequest: URLRequest, completionHandler: (URLSession.DelayedRequestDisposition, URLRequest?) -> Void)](urlsessiontaskdelegate/urlsession(_:task:willbegindelayedrequest:completionhandler:).md)
+### Handling delayed and waiting tasks
+- [func urlSession(URLSession, task: URLSessionTask, willBeginDelayedRequest: URLRequest, completionHandler: (URLSession.DelayedRequestDisposition, URLRequest?) -> Void)](./urlsession%28_,task,willbegindelayedrequest,completionhandler%29.md)
   Tells the delegate that a delayed URL session task will now begin loading.
-- [URLSession.DelayedRequestDisposition](urlsession/delayedrequestdisposition.md)
+- [URLSession.DelayedRequestDisposition](../urlsession/delayedrequestdisposition.md)
   The action to take on a delayed URL session task.
 
 

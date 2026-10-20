@@ -1,7 +1,8 @@
 # Add a Score to a Leaderbaord
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add a new score for a player to a leaderboard.
 
@@ -10,8 +11,8 @@ Add a new score for a player to a leaderboard.
 
 ## Mentions
 
-- [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
-- [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
+- [App Store Connect API 3.2 release notes](./app-store-connect-api-3-2-release-notes.md)
+- [App Store Connect API 4.3 release notes](./app-store-connect-api-4-3-release-notes.md)
 
 #### Discussion
 
@@ -21,7 +22,7 @@ Use the `preReleased` attribute to indicate whether the requested change applies
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardEntrySubmissions
 
 {
@@ -68,6 +69,21 @@ POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardEntrySubmissi
 ## Endpoint
 
 `POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboardEntrySubmissions`
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `GameCenterLeaderboardEntrySubmissionCreateRequest`
+
+## Responses
+
+- `201` Created (`GameCenterLeaderboardEntrySubmissionResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 
 ---

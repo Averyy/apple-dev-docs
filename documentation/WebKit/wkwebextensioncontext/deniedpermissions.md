@@ -1,7 +1,8 @@
 # deniedPermissions
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently denied permissions and their expiration dates.
 
@@ -18,6 +19,10 @@ The currently denied permissions and their expiration dates.
 var deniedPermissions: [WKWebExtension.Permission : Date] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSDictionary<NSString *,NSDate *> * deniedPermissions;
+```
+
 #### Discussion
 
 Permissions that don’t expire will have a distant future date. This will never include expired entries at time of access.
@@ -28,9 +33,10 @@ Permissions in this dictionary should be explicitly denied by the user before be
 
 ## See Also
 
-- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.Permission)](wkwebextensioncontext/setpermissionstatus(_:for:)-4u95f.md)
+### Related Documentation
+- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.Permission)](./setpermissionstatus%28_,for%29-4u95f.md)
   Sets the status of a permission with a distant future expiration date.
-- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.Permission, expirationDate: Date?)](wkwebextensioncontext/setpermissionstatus(_:for:expirationdate:)-692ui.md)
+- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.Permission, expirationDate: Date?)](./setpermissionstatus%28_,for,expirationdate%29-692ui.md)
   Sets the status of a permission with a specific expiration date.
 
 

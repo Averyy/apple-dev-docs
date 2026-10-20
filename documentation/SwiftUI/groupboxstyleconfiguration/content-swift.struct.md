@@ -1,7 +1,8 @@
 # GroupBoxStyleConfiguration.Content
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased content of a group box.
 
@@ -22,11 +23,12 @@ A type-erased content of a group box.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [let content: GroupBoxStyleConfiguration.Content](groupboxstyleconfiguration/content-swift.property.md)
+### Configuring the content
+- [let content: GroupBoxStyleConfiguration.Content](./content-swift.property.md)
   A view that represents the content of the group box.
 
 

@@ -1,7 +1,8 @@
 # minimumLatencyFrameCount
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum number of frames a request processes before reporting an observation.
 
@@ -19,13 +20,18 @@ The minimum number of frames a request processes before reporting an observation
 var minimumLatencyFrameCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger minimumLatencyFrameCount;
+```
+
 #### Discussion
 
 Video-based requests often need a minimum number of frames before they can report an observation. For example, a movement detection request requires a minimum of five frames before it can generate an observation. This value indicates how responsive a request is at processing incoming data.
 
 ## See Also
 
-- [var frameAnalysisSpacing: CMTime](vnstatefulrequest/frameanalysisspacing.md)
+### Configuring the Request
+- [var frameAnalysisSpacing: CMTime](./frameanalysisspacing.md)
   A time value that indicates the interval between analysis operations.
 
 

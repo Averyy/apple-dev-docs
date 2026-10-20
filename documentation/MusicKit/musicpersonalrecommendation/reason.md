@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason for the personal recommendation.
 

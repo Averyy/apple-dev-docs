@@ -1,7 +1,8 @@
 # validValues
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of discrete values that this property supports.
 
@@ -15,13 +16,18 @@ An array of discrete values that this property supports.
 var validValues: [ObjectType]? { get }
 ```
 
+```objc
+@property (atomic, copy, readonly, nullable) NSArray<id> * validValues;
+```
+
 ## See Also
 
-- [var isReadOnly: Bool](cmioextensionpropertyattributes/isreadonly.md)
+### Inspecting Attributes
+- [var isReadOnly: Bool](./isreadonly.md)
   A Boolean value that indicates whether a property is read-only.
-- [var minValue: ObjectType?](cmioextensionpropertyattributes/minvalue.md)
+- [var minValue: ObjectType?](./minvalue.md)
   The minimum value a property supports.
-- [var maxValue: ObjectType?](cmioextensionpropertyattributes/maxvalue.md)
+- [var maxValue: ObjectType?](./maxvalue.md)
   The maximum value a property supports.
 
 

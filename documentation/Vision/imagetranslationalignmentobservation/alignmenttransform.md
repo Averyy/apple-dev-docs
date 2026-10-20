@@ -1,7 +1,8 @@
 # alignmentTransform
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment transform to align the floating image with the reference image.
 

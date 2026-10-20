@@ -1,7 +1,8 @@
 # MPSGraphFFTScalingMode.size
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Scales the FFT result with reciprocal of the total FFT size over all transformed dimensions.
 
@@ -17,6 +18,10 @@ Scales the FFT result with reciprocal of the total FFT size over all transformed
 
 ```swift
 case size
+```
+
+```c
+MPSGraphFFTScalingModeSize
 ```
 
 

@@ -1,7 +1,8 @@
 # PhaseAnimator
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container that animates its content by automatically cycling through a collection of phases that you provide, each defining a discrete step within an animation.
 
@@ -23,28 +24,29 @@ struct PhaseAnimator<Phase, Content> where Phase : Equatable, Content : View
 
 #### Overview
 
-Use one of the phase animator view modifiers like [`phaseAnimator(_:content:animation:)`](view/phaseanimator(_:content:animation:).md) to create a phased animation in your app.
+Use one of the phase animator view modifiers like [`phaseAnimator(_:content:animation:)`](./view/phaseanimator%28_,content,animation%29.md) to create a phased animation in your app.
 
 ## Topics
 
 ### Creating a phase animator
-- [init(some Sequence<Phase>, content: (Phase) -> Content, animation: (Phase) -> Animation?)](phaseanimator/init(_:content:animation:).md)
+- [init(some Sequence<Phase>, content: (Phase) -> Content, animation: (Phase) -> Animation?)](./phaseanimator/init%28_,content,animation%29.md)
   Cycles through a sequence of phases continuously, animating updates to a view on each phase change.
-- [init(some Sequence<Phase>, trigger: some Equatable, content: (Phase) -> Content, animation: (Phase) -> Animation?)](phaseanimator/init(_:trigger:content:animation:).md)
+- [init(some Sequence<Phase>, trigger: some Equatable, content: (Phase) -> Content, animation: (Phase) -> Animation?)](./phaseanimator/init%28_,trigger,content,animation%29.md)
   Cycles through a sequence of phases in response to changes in a specified value, animating updates to a view on each phase change.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [Controlling the timing and movements of your animations](controlling-the-timing-and-movements-of-your-animations.md)
+### Creating phase-based animation
+- [Controlling the timing and movements of your animations](./controlling-the-timing-and-movements-of-your-animations.md)
   Build sophisticated animations that you control using phase and keyframe animators.
-- [func phaseAnimator<Phase>(some Sequence, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](view/phaseanimator(_:content:animation:).md)
+- [func phaseAnimator<Phase>(some Sequence, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](./view/phaseanimator%28_,content,animation%29.md)
   Animates effects that you apply to a view over a sequence of phases that change continuously.
-- [func phaseAnimator<Phase>(some Sequence, trigger: some Equatable, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](view/phaseanimator(_:trigger:content:animation:).md)
+- [func phaseAnimator<Phase>(some Sequence, trigger: some Equatable, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](./view/phaseanimator%28_,trigger,content,animation%29.md)
   Animates effects that you apply to a view over a sequence of phases that change based on a trigger.
 
 

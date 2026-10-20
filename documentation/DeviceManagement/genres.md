@@ -1,7 +1,8 @@
 # Genres
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object that represents a music genre.
 
@@ -10,14 +11,14 @@ A resource object that represents a music genre.
 
 ## Declaration
 
-```swift
+```
 object Genres
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Genres.Attributes](genres/attributes-data.dictionary.md)
+- [object Genres.Attributes](./genres/attributes-data.dictionary.md)
   The attributes for a genre resource.
 
 ## Properties
@@ -27,15 +28,18 @@ object Genres
 - `id` (string) *(required)*: The identifier for the genres resource.
 - `type` (string) *(required)*: The type of the resource. The only allowed value is `genres`.
 
+  **Allowed Values**: `genres`
+
 ## See Also
 
-- [object Artwork](artwork.md)
+### Getting common type information
+- [object Artwork](./artwork.md)
   An object that represents artwork.
-- [object DescriptionAttribute](descriptionattribute.md)
+- [object DescriptionAttribute](./descriptionattribute.md)
   An object that represents a description attribute.
-- [object Apps](apps.md)
+- [object Apps](./apps.md)
   A resource object that represents an app.
-- [object Books](books.md)
+- [object Books](./books.md)
   A resource object that represents a book.
 
 

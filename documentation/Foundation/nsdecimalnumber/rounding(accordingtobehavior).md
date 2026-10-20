@@ -1,7 +1,8 @@
 # rounding(accordingToBehavior:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a rounded version of the decimal number using the specified rounding behavior.
 
@@ -20,9 +21,13 @@ Returns a rounded version of the decimal number using the specified rounding beh
 func rounding(accordingToBehavior behavior: (any NSDecimalNumberBehaviors)?) -> NSDecimalNumber
 ```
 
+```objc
+- (NSDecimalNumber *) decimalNumberByRoundingAccordingToBehavior:(id<NSDecimalNumberBehaviors>) behavior;
+```
+
 #### Discussion
 
-For a description of the different ways of rounding, see the [`roundingMode`](numberformatter/roundingmode-swift.property.md) method in the [`NSDecimalNumberBehaviors`](nsdecimalnumberbehaviors.md) protocol specification.
+For a description of the different ways of rounding, see the [`roundingMode`](../numberformatter/roundingmode-swift.property.md) method in the [`NSDecimalNumberBehaviors`](../nsdecimalnumberbehaviors.md) protocol specification.
 
 
 ---

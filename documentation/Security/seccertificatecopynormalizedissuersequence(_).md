@@ -1,7 +1,8 @@
 # SecCertificateCopyNormalizedIssuerSequence(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the normalized issuer sequence from a certificate.
 
@@ -20,9 +21,13 @@ Retrieves the normalized issuer sequence from a certificate.
 func SecCertificateCopyNormalizedIssuerSequence(_ certificate: SecCertificate) -> CFData?
 ```
 
+```c
+CFDataRefSecCertificateCopyNormalizedIssuerSequence(SecCertificateRef certificate);
+```
+
 #### Return Value
 
-A data object containing the sequence or `NULL` on error. In Objective-C, free this object with a call to the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function when you are done with it.
+A data object containing the sequence or `NULL` on error. In Objective-C, free this object with a call to the [`CFRelease`](../CoreFoundation/cfrelease.md) function when you are done with it.
 
 ## Parameters
 

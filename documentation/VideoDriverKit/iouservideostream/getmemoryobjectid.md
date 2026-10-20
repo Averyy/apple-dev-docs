@@ -1,7 +1,8 @@
 # GetMemoryObjectID
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the video object identifier for a memory object.
 
@@ -10,7 +11,7 @@ Gets the video object identifier for a memory object.
 
 ## Declaration
 
-```swift
+```c
 IOUserVideoObjectID GetMemoryObjectID(uint32_t memtype);
 ```
 
@@ -24,13 +25,14 @@ The object identifier of the data portion of the buffer.
 
 ## See Also
 
-- [GetOutputControlMemoryDescriptor](iouservideostream/getoutputcontrolmemorydescriptor.md)
+### Working with memory descriptors
+- [GetOutputControlMemoryDescriptor](./getoutputcontrolmemorydescriptor.md)
   Gets the memory descriptor used for the control data part of a buffer.
-- [GetOutputDataMemoryDescriptor](iouservideostream/getoutputdatamemorydescriptor.md)
+- [GetOutputDataMemoryDescriptor](./getoutputdatamemorydescriptor.md)
   Gets the memory descriptor used for the video data part of a buffer.
-- [GetOutputQueueMemoryDescriptor](iouservideostream/getoutputqueuememorydescriptor.md)
+- [GetOutputQueueMemoryDescriptor](./getoutputqueuememorydescriptor.md)
   Returns an memory descriptorrepesenting the shared memory output queue buffer.
-- [GetInputQueueMemoryDescriptor](iouservideostream/getinputqueuememorydescriptor.md)
+- [GetInputQueueMemoryDescriptor](./getinputqueuememorydescriptor.md)
   Returns an memory descriptor for the shared memory input queue buffer.
 
 

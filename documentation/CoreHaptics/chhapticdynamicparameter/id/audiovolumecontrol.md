@@ -1,7 +1,8 @@
 # audioVolumeControl
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A dynamic parameter to change the volume or loudness of an audio signal.
 
@@ -19,19 +20,24 @@ A dynamic parameter to change the volume or loudness of an audio signal.
 static let audioVolumeControl: CHHapticDynamicParameter.ID
 ```
 
+```c
+extern CHHapticDynamicParameterID CHHapticDynamicParameterIDAudioVolumeControl;
+```
+
 ## See Also
 
-- [static let audioBrightnessControl: CHHapticDynamicParameter.ID](chhapticdynamicparameter/id/audiobrightnesscontrol.md)
+### Audio Dynamic Parameter IDs
+- [static let audioBrightnessControl: CHHapticDynamicParameter.ID](./audiobrightnesscontrol.md)
   A dynamic parameter to change the high-frequency content of an audio signal.
-- [static let audioPanControl: CHHapticDynamicParameter.ID](chhapticdynamicparameter/id/audiopancontrol.md)
+- [static let audioPanControl: CHHapticDynamicParameter.ID](./audiopancontrol.md)
   A dynamic parameter to change the pan of an audio signal.
-- [static let audioPitchControl: CHHapticDynamicParameter.ID](chhapticdynamicparameter/id/audiopitchcontrol.md)
+- [static let audioPitchControl: CHHapticDynamicParameter.ID](./audiopitchcontrol.md)
   A dynamic parameter to change the pitch of an audio signal.
-- [static let audioAttackTimeControl: CHHapticDynamicParameter.ID](chhapticdynamicparameter/id/audioattacktimecontrol.md)
+- [static let audioAttackTimeControl: CHHapticDynamicParameter.ID](./audioattacktimecontrol.md)
   A dynamic parameter to change the time when an audio signal’s amplitude begins increasing.
-- [static let audioDecayTimeControl: CHHapticDynamicParameter.ID](chhapticdynamicparameter/id/audiodecaytimecontrol.md)
+- [static let audioDecayTimeControl: CHHapticDynamicParameter.ID](./audiodecaytimecontrol.md)
   A dynamic parameter to change the time when an audio signal’s amplitude begins decreasing.
-- [static let audioReleaseTimeControl: CHHapticDynamicParameter.ID](chhapticdynamicparameter/id/audioreleasetimecontrol.md)
+- [static let audioReleaseTimeControl: CHHapticDynamicParameter.ID](./audioreleasetimecontrol.md)
   A dynamic parameter to change the time when an audio signal begins fading.
 
 

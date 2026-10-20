@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replaces all entities in this collection with those from the given sequence.
@@ -27,6 +28,12 @@ mutating func replaceAll<S>(_ entities: S) where S : Sequence, S.Element : Entit
 ## Parameters
 
 - `entities`: The sequence of entities that will replace the collection’s current contents.
+
+## Default Implementations
+
+### EntityCollection Implementations
+- [func replaceAll<S>(S)](./replaceall%28_%29-91uho.md)
+  Replaces all entities in this collection with those from the given sequence.
 
 
 ---

@@ -1,7 +1,8 @@
 # urlSession(_:task:didFinishCollecting:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the session finished collecting metrics for the task.
 
@@ -20,6 +21,10 @@ Tells the delegate that the session finished collecting metrics for the task.
 optional func urlSession(_ session: URLSession, task: URLSessionTask, didFinishCollecting metrics: URLSessionTaskMetrics)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session task:(NSURLSessionTask *) task didFinishCollectingMetrics:(NSURLSessionTaskMetrics *) metrics;
+```
+
 ## Parameters
 
 - `session`: The session collecting the metrics.
@@ -28,7 +33,8 @@ optional func urlSession(_ session: URLSession, task: URLSessionTask, didFinishC
 
 ## See Also
 
-- [class URLSessionTaskMetrics](urlsessiontaskmetrics.md)
+### Collecting task metrics
+- [class URLSessionTaskMetrics](../urlsessiontaskmetrics.md)
   An object encapsulating the metrics for a session task.
 
 

@@ -1,7 +1,8 @@
 # NSMediaLibraryBrowserController
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that configures and displays a Media Library Browser panel.
 
@@ -14,13 +15,17 @@ An object that configures and displays a Media Library Browser panel.
 class NSMediaLibraryBrowserController
 ```
 
+```objc
+@interface NSMediaLibraryBrowserController : NSObject
+```
+
 #### Overview
 
 From this panel a user can drag media  into views in their app. The class provides a standard interface to the MediaLibrary framework content.
 
 > **Note**:  The Media Library Browser panel is not an `NSPanel` instance.  It has panel like methods to remotely control the Media Library Browser.  Clients have no direct programmatic access to the panel displaying the Media Library Browser.
 
-For more information see [`MLMediaLibrary`](https://developer.apple.com/documentation/medialibrary/mlmedialibrary), [`MLMediaSource`](https://developer.apple.com/documentation/medialibrary/mlmediasource), [`MLMediaGroup`](https://developer.apple.com/documentation/medialibrary/mlmediagroup), and [`MLMediaObject`](https://developer.apple.com/documentation/medialibrary/mlmediaobject) in [`Media Library`](https://developer.apple.com/documentation/medialibrary).
+For more information see [`MLMediaLibrary`](../MediaLibrary/mlmedialibrary.md), [`MLMediaSource`](../MediaLibrary/mlmediasource.md), [`MLMediaGroup`](../MediaLibrary/mlmediagroup.md), and [`MLMediaObject`](../MediaLibrary/mlmediaobject.md) in [Media Library](../MediaLibrary/MediaLibrary.md).
 
 ##### Pasteboard Types
 
@@ -29,9 +34,9 @@ The Media Library Browser defines two pasteboard types for decoding the dragged 
 - The `com.apple.MediaLibrary.PboardType.MediaGroupIdentifiersPlist` pasteboard type describes media group content and is published when the user drags items from the upper media-group-organized pane of the Media Library Browser.
 - The `com.apple.MediaLibrary.PboardType.MediaObjectIdentifiersPlist` pasteboard type describes individual media items and is published when the user drags media items such as images, movies, or sounds from the media item pane of the Media Library Browser.
 
-There is a third, less specialized, type of media library pasteboard. When the user initiates a drag the pasteboard will contain an array with one more more  [`NSFilenamesPboardType`](nsfilenamespboardtype.md) pasteboard items, one for each of the files within the group dragged from the media-group-organized pane, and one or more items when a media item or items are dragged from the media item pane.
+There is a third, less specialized, type of media library pasteboard. When the user initiates a drag the pasteboard will contain an array with one more more  [`NSFilenamesPboardType`](./nsfilenamespboardtype.md) pasteboard items, one for each of the files within the group dragged from the media-group-organized pane, and one or more items when a media item or items are dragged from the media item pane.
 
-If you do not need access to the associated Media Library metadata, using the `NSFilenamesPboardType` pasteboard data is the simplest means of retrieving the dragged content, although accessing the media in this manner when your app is sandboxed requires that you use the `NSURL` [`startAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/startaccessingsecurityscopedresource()) and [`stopAccessingSecurityScopedResource()`](https://developer.apple.com/documentation/foundation/nsurl/stopaccessingsecurityscopedresource()) methods.
+If you do not need access to the associated Media Library metadata, using the `NSFilenamesPboardType` pasteboard data is the simplest means of retrieving the dragged content, although accessing the media in this manner when your app is sandboxed requires that you use the `NSURL` [`startAccessingSecurityScopedResource()`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md) and [`stopAccessingSecurityScopedResource()`](../Foundation/nsurl/stopaccessingsecurityscopedresource%28%29.md) methods.
 
 ###### The Media Group Pasteboard Type
 
@@ -104,33 +109,33 @@ Listing 2. Retrieving MLMediaObject instances from the pasteboard
 ## Topics
 
 ### Creating a Media Library Browser Panel
-- [class var shared: NSMediaLibraryBrowserController](nsmedialibrarybrowsercontroller/shared.md)
+- [class var shared: NSMediaLibraryBrowserController](./nsmedialibrarybrowsercontroller/shared.md)
   Returns the shared Media Library Browser instance.
 ### Displaying the Media Library Browser Panel
-- [var frame: NSRect](nsmedialibrarybrowsercontroller/frame.md)
+- [var frame: NSRect](./nsmedialibrarybrowsercontroller/frame.md)
   The frame, in global coordinates, used to display the Media Library Browser panel.
-- [func togglePanel(Any?)](nsmedialibrarybrowsercontroller/togglepanel(_:).md)
+- [func togglePanel(Any?)](./nsmedialibrarybrowsercontroller/togglepanel%28_%29.md)
   Toggles the visibility of the Media Library Browser.
-- [var isVisible: Bool](nsmedialibrarybrowsercontroller/isvisible.md)
+- [var isVisible: Bool](./nsmedialibrarybrowsercontroller/isvisible.md)
   A Boolean value that determines whether the Media Library Browser panel is visible.
 ### Displayed Media Library Types
-- [var mediaLibraries: NSMediaLibraryBrowserController.Library](nsmedialibrarybrowsercontroller/medialibraries.md)
+- [var mediaLibraries: NSMediaLibraryBrowserController.Library](./nsmedialibrarybrowsercontroller/medialibraries.md)
   The media library that is in use.
 ### Constants
-- [NSMediaLibraryBrowserController.Library](nsmedialibrarybrowsercontroller/library.md)
+- [NSMediaLibraryBrowserController.Library](./nsmedialibrarybrowsercontroller/library.md)
   These constants are masks used to configure a Media Library Browser to display specific types of media. Combined masks are not yet supported.  In other words, only one nonzero mask value is supported at a time.  If masks are combined, the lowest mask value is used.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

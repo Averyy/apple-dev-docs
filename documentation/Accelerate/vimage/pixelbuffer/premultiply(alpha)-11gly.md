@@ -1,7 +1,8 @@
 # premultiply(alpha:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms an 8-bit planar pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
 
@@ -11,7 +12,7 @@ Transforms an 8-bit planar pixel buffer in-place from nonpremultiplied alpha for
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Transforms an 8-bit planar pixel buffer in-place from nonpremultiplied alpha for
 ```swift
 func premultiply(alpha: vImage.PixelBuffer<Format>)
 ```
+
+Available when `Format` is `vImage.Planar8`.
 
 #### Discussion
 
@@ -45,15 +48,16 @@ print(src.array)
 
 ## See Also
 
-- [func premultiply(alpha: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/premultiply(alpha:)-76rr.md)
+### Premultiply
+- [func premultiply(alpha: vImage.PixelBuffer<Format>)](./premultiply%28alpha%29-76rr.md)
   Transforms a 32-bit planar pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
-- [func premultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/premultiply(channelordering:)-4xpq9.md)
+- [func premultiply(channelOrdering: vImage.ChannelOrdering)](./premultiply%28channelordering%29-4xpq9.md)
   Transforms an 8-bit ARGB or RGBA pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
-- [func premultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/premultiply(channelordering:)-302ci.md)
+- [func premultiply(channelOrdering: vImage.ChannelOrdering)](./premultiply%28channelordering%29-302ci.md)
   Transforms an unsigned 16-bit ARGB or RGBA pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
-- [func premultiply()](vimage/pixelbuffer/premultiply.md)
+- [func premultiply()](./premultiply%28%29.md)
   Transforms a floating-point 16-bit RGBA pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
-- [func premultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/premultiply(channelordering:)-fzwd.md)
+- [func premultiply(channelOrdering: vImage.ChannelOrdering)](./premultiply%28channelordering%29-fzwd.md)
   Transforms a floating-point 32-bit ARGB or RGBA pixel buffer in-place from nonpremultiplied alpha format to premultiplied alpha format.
 
 

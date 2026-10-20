@@ -1,14 +1,15 @@
 # setForKey
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool setForKey(OSDictionary *params, const OSSymbol *key, SInt32 value, SInt32 min, SInt32 max);
 ```
 

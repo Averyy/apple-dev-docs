@@ -1,7 +1,8 @@
 # dateCreated
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The date on which the context was created.
 
@@ -18,17 +19,22 @@ The date on which the context was created.
 static let dateCreated: CLSPredicateKeyPath
 ```
 
+```c
+extern CLSPredicateKeyPath const CLSPredicateKeyPathDateCreated;
+```
+
 ## See Also
 
-- [static let identifier: CLSPredicateKeyPath](clspredicatekeypath/identifier.md)
+### Predicate key paths
+- [static let identifier: CLSPredicateKeyPath](./identifier.md)
   The context’s identifier.
-- [static let parent: CLSPredicateKeyPath](clspredicatekeypath/parent.md)
+- [static let parent: CLSPredicateKeyPath](./parent.md)
   The context’s direct ancestor in the context hierarchy.
-- [static let title: CLSPredicateKeyPath](clspredicatekeypath/title.md)
+- [static let title: CLSPredicateKeyPath](./title.md)
   The human readable name of the context.
-- [static let topic: CLSPredicateKeyPath](clspredicatekeypath/topic.md)
+- [static let topic: CLSPredicateKeyPath](./topic.md)
   The context’s topic.
-- [static let universalLinkURL: CLSPredicateKeyPath](clspredicatekeypath/universallinkurl.md)
+- [static let universalLinkURL: CLSPredicateKeyPath](./universallinkurl.md)
   The context’s universal URL link.
 
 

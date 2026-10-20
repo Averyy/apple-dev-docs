@@ -1,7 +1,8 @@
 # MDItemSetLabel(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDItemSetLabel(_ item: MDItem!, _ label: MDLabel!) -> Bool
+```
+
+```c
+Boolean MDItemSetLabel(MDItemRef item, MDLabelRef label);
 ```
 
 

@@ -1,7 +1,8 @@
 # medianLine
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region containing points that trace a vertical line down the center of the face.
 
@@ -19,31 +20,36 @@ The region containing points that trace a vertical line down the center of the f
 var medianLine: VNFaceLandmarkRegion2D? { get }
 ```
 
+```objc
+@property (readonly, nullable) VNFaceLandmarkRegion2D * medianLine;
+```
+
 ## See Also
 
-- [var allPoints: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/allpoints.md)
+### Face Landmark Points
+- [var allPoints: VNFaceLandmarkRegion2D?](./allpoints.md)
   The region containing all face landmark points.
-- [var faceContour: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/facecontour.md)
+- [var faceContour: VNFaceLandmarkRegion2D?](./facecontour.md)
   The region containing points that trace the face contour from the left cheek, over the chin, to the right cheek.
-- [var leftEye: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/lefteye.md)
+- [var leftEye: VNFaceLandmarkRegion2D?](./lefteye.md)
   The region containing points that outline the left eye.
-- [var rightEye: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/righteye.md)
+- [var rightEye: VNFaceLandmarkRegion2D?](./righteye.md)
   The region containing points that outline the right eye.
-- [var leftEyebrow: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/lefteyebrow.md)
+- [var leftEyebrow: VNFaceLandmarkRegion2D?](./lefteyebrow.md)
   The region containing points that trace the left eyebrow.
-- [var rightEyebrow: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/righteyebrow.md)
+- [var rightEyebrow: VNFaceLandmarkRegion2D?](./righteyebrow.md)
   The region containing points that trace the right eyebrow.
-- [var nose: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/nose.md)
+- [var nose: VNFaceLandmarkRegion2D?](./nose.md)
   The region containing points that outline the nose.
-- [var noseCrest: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/nosecrest.md)
+- [var noseCrest: VNFaceLandmarkRegion2D?](./nosecrest.md)
   The region containing points that trace the center crest of the nose.
-- [var outerLips: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/outerlips.md)
+- [var outerLips: VNFaceLandmarkRegion2D?](./outerlips.md)
   The region containing points that outline the outside of the lips.
-- [var innerLips: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/innerlips.md)
+- [var innerLips: VNFaceLandmarkRegion2D?](./innerlips.md)
   The region containing points that outline the space between the lips.
-- [var leftPupil: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/leftpupil.md)
+- [var leftPupil: VNFaceLandmarkRegion2D?](./leftpupil.md)
   The region containing the point where the left pupil is located.
-- [var rightPupil: VNFaceLandmarkRegion2D?](vnfacelandmarks2d/rightpupil.md)
+- [var rightPupil: VNFaceLandmarkRegion2D?](./rightpupil.md)
   The region containing the point where the right pupil is located.
 
 

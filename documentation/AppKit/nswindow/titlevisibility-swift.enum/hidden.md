@@ -1,7 +1,8 @@
 # NSWindow.TitleVisibility.hidden
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.10+
@@ -12,13 +13,18 @@
 case hidden
 ```
 
+```c
+NSWindowTitleHidden
+```
+
 #### Discussion
 
 The window hides the title and moves the toolbar up into the area previously occupied by the title.
 
 ## See Also
 
-- [NSWindow.TitleVisibility.visible](nswindow/titlevisibility-swift.enum/visible.md)
+### Constants
+- [NSWindow.TitleVisibility.visible](./visible.md)
   The window has the regular window title and title bar buttons.
 
 

@@ -1,7 +1,8 @@
 # SecTaskCreateFromSelf(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a task object for the current task.
 
@@ -15,9 +16,13 @@ Creates a task object for the current task.
 func SecTaskCreateFromSelf(_ allocator: CFAllocator?) -> SecTask?
 ```
 
+```c
+SecTaskRefSecTaskCreateFromSelf(CFAllocatorRef allocator);
+```
+
 #### Return Value
 
-A new task, or `NULL` on error. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to free this task’s memory when you are done with it.
+A new task, or `NULL` on error. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this task’s memory when you are done with it.
 
 ## Parameters
 

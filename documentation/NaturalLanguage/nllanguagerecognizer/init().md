@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a recognizer that you can customize.
 
@@ -18,6 +19,10 @@ Creates a recognizer that you can customize.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

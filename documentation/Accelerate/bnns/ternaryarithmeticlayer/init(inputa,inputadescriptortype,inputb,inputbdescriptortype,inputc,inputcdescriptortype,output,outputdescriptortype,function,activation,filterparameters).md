@@ -1,7 +1,8 @@
 # init(inputA:inputADescriptorType:inputB:inputBDescriptorType:inputC:inputCDescriptorType:output:outputDescriptorType:function:activation:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new ternary arithmetic layer.
 
@@ -11,8 +12,10 @@ Returns a new ternary arithmetic layer.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 

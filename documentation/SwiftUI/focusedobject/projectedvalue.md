@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A projection of the focused object that creates bindings to its properties using dynamic member lookup.
 
@@ -27,9 +28,10 @@ Use the projected value to pass a focused object down a view hierarchy.
 
 ## See Also
 
-- [var wrappedValue: ObjectType?](focusedobject/wrappedvalue.md)
+### Getting the value
+- [var wrappedValue: ObjectType?](./wrappedvalue.md)
   The underlying value referenced by the focused object.
-- [FocusedObject.Wrapper](focusedobject/wrapper.md)
+- [FocusedObject.Wrapper](./wrapper.md)
   A wrapper around the underlying focused object that can create bindings to its properties using dynamic member lookup.
 
 

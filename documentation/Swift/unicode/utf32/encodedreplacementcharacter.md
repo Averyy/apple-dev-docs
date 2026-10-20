@@ -1,7 +1,8 @@
 # encodedReplacementCharacter
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A unicode scalar value to be used when repairing encoding/decoding errors, as represented in this encoding.
 

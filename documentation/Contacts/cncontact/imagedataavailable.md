@@ -1,7 +1,8 @@
 # imageDataAvailable
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether a contact has a profile picture.
 
@@ -19,11 +20,24 @@ A Boolean indicating whether a contact has a profile picture.
 var imageDataAvailable: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) BOOL imageDataAvailable;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) BOOL imageDataAvailable;
+```
+
 ## See Also
 
-- [var imageData: Data?](cncontact/imagedata.md)
+### Getting Contact Images
+- [var imageData: Data?](./imagedata.md)
   The profile picture of a contact.
-- [var thumbnailImageData: Data?](cncontact/thumbnailimagedata.md)
+- [var thumbnailImageData: Data?](./thumbnailimagedata.md)
   The thumbnail version of the contact’s profile picture.
 
 

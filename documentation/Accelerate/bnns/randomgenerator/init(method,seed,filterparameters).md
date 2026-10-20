@@ -1,7 +1,8 @@
 # init(method:seed:filterParameters:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new random number generator.
 
@@ -11,7 +12,7 @@ Returns a new random number generator.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -28,7 +29,8 @@ init?(method: BNNS.RandomGeneratorMethod, seed: UInt64? = nil, filterParameters:
 
 ## See Also
 
-- [BNNS.RandomGeneratorMethod](bnns/randomgeneratormethod.md)
+### Creating a Random Number Generator
+- [BNNS.RandomGeneratorMethod](../randomgeneratormethod.md)
   Constants that describe random number generation methods.
 
 

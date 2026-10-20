@@ -1,6 +1,8 @@
 # Playing custom audio with your own player
 
-**Framework**: AVFAudio
+**Framework**: AVFAudio  
+**Role**: Sample Code  
+**Download**: [PlayingCustomAudioWithYourOwnPlayer.zip](https://docs-assets.developer.apple.com/published/dc166550ca25/PlayingCustomAudioWithYourOwnPlayer.zip)
 
 Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
 
@@ -12,13 +14,13 @@ Construct an audio player to play your custom audio data, and optionally take ad
 
 #### Overview
 
-This sample code project builds a robust audio player from the ground up, using the [`AVSampleBufferAudioRenderer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferaudiorenderer) and [`AVSampleBufferRenderSynchronizer`](https://developer.apple.com/documentation/avfoundation/avsamplebufferrendersynchronizer) classes to manage enqueuing and playback of audio that you provide. The player uses a playlist of playable items, and allows the user to edit the contents of the playlist while playback is in progress.
+This sample code project builds a robust audio player from the ground up, using the [`AVSampleBufferAudioRenderer`](../AVFoundation/avsamplebufferaudiorenderer.md) and [`AVSampleBufferRenderSynchronizer`](../AVFoundation/avsamplebufferrendersynchronizer.md) classes to manage enqueuing and playback of audio that you provide. The player uses a playlist of playable items, and allows the user to edit the contents of the playlist while playback is in progress.
 
-The example app also uses [`AVAudioSession`](avaudiosession.md) to indicate that it plays long-form audio content — music, audiobooks, podcasts, or other content that a person listens to over a substantial period of time. This allows the player to benefit from AirPlay 2. When the app plays to a compatible device such as HomePod, AirPlay 2 dramatically improves playback reliability and performance, and enables advanced features such as multiroom playback.
+The example app also uses [`AVAudioSession`](./avaudiosession.md) to indicate that it plays long-form audio content — music, audiobooks, podcasts, or other content that a person listens to over a substantial period of time. This allows the player to benefit from AirPlay 2. When the app plays to a compatible device such as HomePod, AirPlay 2 dramatically improves playback reliability and performance, and enables advanced features such as multiroom playback.
 
-#### Specify Long Form Audio
+#### Specify long-form audio
 
-To use AirPlay 2 for playback to compatible output devices, configure your audio session with the [`AVAudioSession.RouteSharingPolicy.longFormAudio`](avaudiosession/routesharingpolicy-swift.enum/longformaudio.md) route-sharing policy. Typically, you do this once when your app starts up:
+To use AirPlay 2 for playback to compatible output devices, configure your audio session with the [`AVAudioSession.RouteSharingPolicy.longFormAudio`](./avaudiosession/routesharingpolicy-swift.enum/longformaudio.md) route-sharing policy. Typically, you do this once when your app starts up:
 
 ```swift
 do {
@@ -32,7 +34,7 @@ The `.longFormAudio` route-sharing policy is a hint to the system that your audi
 
 You can choose not to configure your audio as long form if your content isn’t intended to displace playback of long-form content from apps such as Apple Music, iTunes, or Podcasts.
 
-#### Provide Audio Content
+#### Provide audio content
 
 For your custom audio player, start by deciding how you want to identify content to the player. One way is to manage a playlist, a persistent list of playable items. Alternatively, use a temporary queue of items, a single item, or a continuous stream of audio that has no distinct identity as a separate item.
 
@@ -44,7 +46,7 @@ In this example project, a `SampleBufferSerializer` object provides the enqueuin
 
 The following sections offer a more detailed discussion of the classes.
 
-#### Manage Your Playlist
+#### Manage your playlist
 
 Use a `SampleBufferPlayer` to manage a playlist through a private `Playlist` structure:
 
@@ -121,7 +123,7 @@ private func continueWithCurrentItems() {
 
 Both methods begin by checking that the player state isn’t “stopped.” They then construct a queue of items to play — which may consist of fewer items than the entire playlist — and pass the queue to a corresponding method in the `SampleBufferSerializer` class. This transfer of control takes place on a serial `DispatchQueue`, so that the `SampleBufferSerializer` object handles one action at a time.
 
-#### Schedule Playback
+#### Schedule playback
 
 After the `SampleBufferSerializer` object receives a queue of items to play, it proceeds with the dual tasks of translating the items into a sequence of sample buffers containing audio data and enqueuing the buffers for rendering. The `SampleBufferSerializer` causes an `AVSampleBufferRenderSynchronizer` object to play audio at the correct time, and an `AVSampleBufferAudioRenderer` object to render enqueued audio sample buffers in time for playback.
 
@@ -135,7 +137,7 @@ By contrast, `continuePlayback(with:)` attempts to let the current playback cont
 
 The time-based partial flush uses asynchronous API with a completion handler. Upon completion, enqueuing actually restarts in an additional method, `finishContinuePlayback(with:didFlush:)`. This division into a pair of methods is an implementation detail.
 
-#### Enqueue Buffers
+#### Enqueue buffers
 
 As it converts its list of items into a sequence of sample buffers, the `SampleBufferSerializer` needs to enqueue the buffers to an `AVSampleBufferAudioRenderer` object. Control of enqueuing relies on the `requestMediaDataWhenReady(on:using:)` method of `AVSampleBufferAudioRenderer`, which takes a closure parameter that the renderer invokes whenever it’s ready for more sample buffers.
 
@@ -148,7 +150,7 @@ For a single playlist item, the sequence of events is straightforward, but when 
 
 In the implementation, the important methods are `provideMediaData()`, which enqueues sample buffers and places boundary observers, and `updateCurrentPlayerItem(at:)`, which the boundary observer invokes to handle the transition between items.
 
-#### Retrieve Sample Buffers
+#### Retrieve sample buffers
 
 A `SampleBufferItem` object provides the `SampleBufferSerializer` with a sequence of audio sample buffers for a playback item:
 
@@ -171,7 +173,7 @@ A `SampleBufferItem` object keeps a reference to the source of its audio data wh
 
 As soon as `SampleBufferItem` enqueues all data for the item, the item can discard its data source object, allowing the system to reclaim its resources (files and memory, for example).
 
-#### Provide Your Data Source
+#### Provide your data source
 
 Ultimately, you need to provide custom data source code to fetch your custom audio data and package it into `CMSampleBuffer` objects that you can pass to the audio renderer.
 
@@ -179,7 +181,7 @@ In this example project, a `SampleBufferSource` object serves as the data source
 
 The class also contains helper methods that convert an `AVAudioBuffer` to a `CMSampleBuffer`, which is the required type for data passed to the audio renderer.
 
-#### Configure Logging
+#### Configure logging
 
 The player and serializer implementations contain detailed, formatted logging of their actions. The logging output can be crucial to understanding the behavior of the code during development and testing.
 
@@ -187,9 +189,10 @@ By default, logging suppresses messages about the enqueuing of specific sample b
 
 ## See Also
 
-- [Building an audio sequencer to arrange and play clips](building-an-audio-sequencer-to-arrange-and-play-clips.md)
+### Scheduled playback
+- [Building an audio sequencer to arrange and play clips](./building-an-audio-sequencer-to-arrange-and-play-clips.md)
   Synchronize audio loops with a main tempo by creating a real-time clip launcher.
-- [class AVAudioPlayerNode](avaudioplayernode.md)
+- [class AVAudioPlayerNode](./avaudioplayernode.md)
   An object for scheduling the playback of buffers or segments of audio files.
 
 

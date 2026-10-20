@@ -1,17 +1,20 @@
 # Create a Leaderboard
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add a new leaderboard to your app.
 
 **Availability**:
-- App Store Connect API 3.0+
+- App Store Connect API 3.0+ - Deprecated in 4.3
+
+> **Deprecated**: This endpoint is deprecated. Use [`Create a Game Center Leaderboard`](./post-v2-gamecenterleaderboards.md) instead.
 
 ## Mentions
 
-- [App Store Connect API 3.7 release notes](app-store-connect-api-3-7-release-notes.md)
-- [Configuring Game center activities](configuring-game-center-activities.md)
+- [App Store Connect API 3.7 release notes](./app-store-connect-api-3-7-release-notes.md)
+- [Configuring Game center activities](./configuring-game-center-activities.md)
 
 #### Discussion
 
@@ -19,7 +22,7 @@ Add a new leaderboard to your app.
 
 **Request**:
 
-```None
+```
 POST  https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboards-d 
 {
     “data”: {
@@ -106,25 +109,41 @@ POST  https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboards-d
 
 `POST https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboards`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `GameCenterLeaderboardCreateRequest`
+
+## Responses
+
+- `201` Created (`GameCenterLeaderboardResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Create a Game Center Leaderboard](post-v2-gamecenterleaderboards.md)
+### Creating, modifying, and deleting leaderboards
+- [Create a Game Center Leaderboard](./post-v2-gamecenterleaderboards.md)
   Create a Game Center leaderboard.
-- [Modify a Game Center Leaderboard](patch-v2-gamecenterleaderboards-_id_.md)
+- [Modify a Game Center Leaderboard](./patch-v2-gamecenterleaderboards-_id_.md)
   Update a specific Game Center leaderboard.
-- [Modify the Activity for a Game Center Leaderboard](patch-v2-gamecenterleaderboards-_id_-relationships-activity.md)
+- [Modify the Activity for a Game Center Leaderboard](./patch-v2-gamecenterleaderboards-_id_-relationships-activity.md)
   Update the activity relationship for a specific Game Center leaderboard.
-- [Modify the Challenge for a Game Center Leaderboard](patch-v2-gamecenterleaderboards-_id_-relationships-challenge.md)
+- [Modify the Challenge for a Game Center Leaderboard](./patch-v2-gamecenterleaderboards-_id_-relationships-challenge.md)
   Update the challenge relationship for a specific Game Center leaderboard.
-- [Delete a Game Center Leaderboard](delete-v2-gamecenterleaderboards-_id_.md)
+- [Delete a Game Center Leaderboard](./delete-v2-gamecenterleaderboards-_id_.md)
   Delete a specific Game Center leaderboard.
-- [Edit a Leaderboard](patch-v1-gamecenterleaderboards-_id_.md)
+- [Edit a Leaderboard](./patch-v1-gamecenterleaderboards-_id_.md)
   Modify the details of a leaderboard.
-- [Edit the Relationship Between a Leaderboard and a Group Leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
+- [Edit the Relationship Between a Leaderboard and a Group Leaderboard](./patch-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   Modify the group leadboard to which a leaderboard belongs.
-- [Modify the activity for a Game Center leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
-- [Modify the challenge for a Game Center leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-challenge.md)
-- [Delete a Leaderboard](delete-v1-gamecenterleaderboards-_id_.md)
+- [Modify the activity for a Game Center leaderboard](./patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
+- [Modify the challenge for a Game Center leaderboard](./patch-v1-gamecenterleaderboards-_id_-relationships-challenge.md)
+- [Delete a Leaderboard](./delete-v1-gamecenterleaderboards-_id_.md)
   Delete a leaderboard from your app.
 
 

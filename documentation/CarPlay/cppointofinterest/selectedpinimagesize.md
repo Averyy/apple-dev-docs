@@ -1,7 +1,8 @@
 # selectedPinImageSize
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 16.0+
@@ -14,9 +15,14 @@
 class var selectedPinImageSize: CGSize { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) CGSize selectedPinImageSize;
+```
+
 ## See Also
 
-- [class var pinImageSize: CGSize](cppointofinterest/pinimagesize.md)
+### Type Properties
+- [class var pinImageSize: CGSize](./pinimagesize.md)
 
 
 ---

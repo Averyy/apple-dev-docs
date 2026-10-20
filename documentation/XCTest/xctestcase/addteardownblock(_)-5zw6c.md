@@ -1,7 +1,8 @@
 # addTeardownBlock(_:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a block of teardown code to run after the current test method ends.
 
@@ -25,13 +26,14 @@ func addTeardownBlock(_ block: @escaping @MainActor @Sendable () throws -> Void)
 
 ## See Also
 
-- [Set Up and Tear Down State in Your Tests](set-up-and-tear-down-state-in-your-tests.md)
+### Customizing Test Setup and Teardown
+- [Set Up and Tear Down State in Your Tests](../set-up-and-tear-down-state-in-your-tests.md)
   Prepare initial state before tests run, and clean up resources after tests complete.
-- [class func setUp()](xctestcase/setup.md)
+- [class func setUp()](./setup%28%29.md)
   Provides an opportunity to customize initial state before a test case begins.
-- [func addTeardownBlock(() async throws -> Void)](xctestcase/addteardownblock(_:)-2guon.md)
+- [func addTeardownBlock(() async throws -> Void)](./addteardownblock%28_%29-2guon.md)
   Registers a block of teardown code to run after the current test method ends.
-- [class func tearDown()](xctestcase/teardown.md)
+- [class func tearDown()](./teardown%28%29.md)
   Provides an opportunity to perform cleanup after a test case ends.
 
 

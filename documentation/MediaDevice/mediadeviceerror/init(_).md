@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Media Device  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an error with the specified error code.
 

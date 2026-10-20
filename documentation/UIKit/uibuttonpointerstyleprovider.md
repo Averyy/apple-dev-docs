@@ -1,7 +1,8 @@
 # UIButtonPointerStyleProvider
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias defining a block that returns a pointer style to apply to a button.
 
@@ -17,13 +18,17 @@ A type alias defining a block that returns a pointer style to apply to a button.
 typealias UIButtonPointerStyleProvider = (UIButton, __UIPointerEffect, __UIPointerShape) -> UIPointerStyle?
 ```
 
+```c
+typedef UIPointerStyle *(^)(UIButton *, UIPointerEffect *, UIPointerShape *) UIButtonPointerStyleProvider;
+```
+
 #### Return Value
 
 The pointer style to apply to the button when the pointer hovers over it. Return `nil` when you don’t want to apply a pointer style to the button.
 
 #### Discussion
 
-To change the appearance of the pointer when it hovers over the button, create a pointer style provider block and assign it to the button’s [`pointerStyleProvider`](uibutton/pointerstyleprovider-1d4d2.md) property.
+To change the appearance of the pointer when it hovers over the button, create a pointer style provider block and assign it to the button’s [`pointerStyleProvider`](./uibutton/pointerstyleprovider-1d4d2.md) property.
 
 ## Parameters
 
@@ -33,13 +38,14 @@ To change the appearance of the pointer when it hovers over the button, create a
 
 ## See Also
 
-- [var isPointerInteractionEnabled: Bool](uibutton/ispointerinteractionenabled.md)
+### Supporting pointer interactions
+- [var isPointerInteractionEnabled: Bool](./uibutton/ispointerinteractionenabled.md)
   A Boolean that enables pointer interaction.
-- [var isHovered: Bool](uibutton/ishovered.md)
+- [var isHovered: Bool](./uibutton/ishovered.md)
   A Boolean value that indicates whether a pointer effect is active.
-- [var pointerStyleProvider: UIButton.PointerStyleProvider?](uibutton/pointerstyleprovider-y4eb.md)
+- [var pointerStyleProvider: UIButton.PointerStyleProvider?](./uibutton/pointerstyleprovider-y4eb.md)
   A closure that returns the pointer style to use when the pointer hovers over the button.
-- [typealias PointerStyleProvider](uibutton/pointerstyleprovider-swift.typealias.md)
+- [typealias PointerStyleProvider](./uibutton/pointerstyleprovider-swift.typealias.md)
   A type alias defining a closure that returns a pointer style to apply to a button.
 
 

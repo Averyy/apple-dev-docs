@@ -1,7 +1,8 @@
 # openExportBrowsingDataSettings(completionHandler:)
 
 **Framework**: Safari Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Presents the Export Browsing Data sheet from Safari Settings.
 
@@ -14,12 +15,20 @@ Presents the Export Browsing Data sheet from Safari Settings.
 ## Declaration
 
 ```swift
+class func openExportBrowsingDataSettings(completionHandler: (@MainActor @Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 class func openExportBrowsingDataSettings() async throws
+```
+
+```objc
++ (void) openExportBrowsingDataSettingsWithCompletionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 ## Mentions
 
-- [Importing data exported from Safari](importing-data-exported-from-safari.md)
+- [Importing data exported from Safari](../importing-data-exported-from-safari.md)
 
 #### Discussion
 
@@ -27,11 +36,13 @@ This method presents the same data export sheet accessible in Safari’s setting
 
 The method returns an error unless you call it while your app is in the foreground.
 
-For information on the file format and steps to import the data, see [`Importing data exported from Safari`](importing-data-exported-from-safari.md).
+For information on the file format and steps to import the data, see [Importing data exported from Safari](../importing-data-exported-from-safari.md).
 
 ## Parameters
 
-- `completionHandler`: A block the system calls after the operation completes, with an optional error parameter. - **error**: `nil` if the export sheet opens successfully; otherwise, an error that indicates the reason for the failure.
+- `completionHandler`: A block the system calls after the operation completes, with an optional error parameter.
+
+  - **error**: `nil` if the export sheet opens successfully; otherwise, an error that indicates the reason for the failure.
 
 
 ---

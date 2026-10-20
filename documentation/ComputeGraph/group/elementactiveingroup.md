@@ -1,13 +1,14 @@
 # group::elementActiveInGroup
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of currently active elements in the group.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The count of active elements currently in the group
 
 Use this function to determine how many particles are currently alive in the group, which may be less than the maximum if some particles have expired or not yet spawned.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/group__elementActiveInGroup.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/group__elementActiveInGroup.svg)
 
 
 ---

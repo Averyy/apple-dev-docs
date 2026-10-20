@@ -1,7 +1,8 @@
 # customVirtioDeviceWillPause(_:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method the framework calls when a device pauses.
 
@@ -14,9 +15,13 @@ The method the framework calls when a device pauses.
 optional func customVirtioDeviceWillPause(_ device: VZCustomVirtioDevice)
 ```
 
+```objc
+- (void) customVirtioDeviceWillPause:(VZCustomVirtioDevice *) device;
+```
+
 #### Discussion
 
-A device is in a paused state when its corresponding [`VZVirtualMachine`](vzvirtualmachine.md) is in a paused state. This happens when you call [`pause()`](vzvirtualmachine/pause().md).
+A device is in a paused state when its corresponding [`VZVirtualMachine`](../vzvirtualmachine.md) is in a paused state. This happens when you call [`pause()`](../vzvirtualmachine/pause%28%29.md).
 
 ## Parameters
 

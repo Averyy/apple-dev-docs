@@ -1,7 +1,8 @@
 # Image.Interpolation
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The level of quality for rendering an image that requires interpolation, such as a scaled image.
 
@@ -22,39 +23,40 @@ enum Interpolation
 
 #### Overview
 
-The [`interpolation(_:)`](image/interpolation(_:).md) modifier specifies the interpolation behavior when using the [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md) modifier on an [`Image`](image.md). Use this behavior to prioritize rendering performance or image quality.
+The [`interpolation(_:)`](./interpolation%28_%29.md) modifier specifies the interpolation behavior when using the [`resizable(capInsets:resizingMode:)`](./resizable%28capinsets,resizingmode%29.md) modifier on an [`Image`](../image.md). Use this behavior to prioritize rendering performance or image quality.
 
 ## Topics
 
 ### Getting interpolation options
-- [Image.Interpolation.high](image/interpolation/high.md)
+- [Image.Interpolation.high](./interpolation/high.md)
   A value that indicates a high level of interpolation quality, which may slow down image rendering.
-- [Image.Interpolation.low](image/interpolation/low.md)
+- [Image.Interpolation.low](./interpolation/low.md)
   A value that indicates a low level of interpolation quality, which may speed up image rendering.
-- [Image.Interpolation.medium](image/interpolation/medium.md)
+- [Image.Interpolation.medium](./interpolation/medium.md)
   A value that indicates a medium level of interpolation quality, between the low- and high-quality values.
-- [Image.Interpolation.none](image/interpolation/none.md)
+- [Image.Interpolation.none](./interpolation/none.md)
   A value that indicates SwiftUI doesn’t interpolate image data.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func antialiased(Bool) -> Image](image/antialiased(_:).md)
+### Specifying rendering behavior
+- [func antialiased(Bool) -> Image](./antialiased%28_%29.md)
   Specifies whether SwiftUI applies antialiasing when rendering the image.
-- [func symbolRenderingMode(SymbolRenderingMode?) -> Image](image/symbolrenderingmode(_:).md)
+- [func symbolRenderingMode(SymbolRenderingMode?) -> Image](./symbolrenderingmode%28_%29.md)
   Sets the rendering mode for symbol images within this view.
-- [func renderingMode(Image.TemplateRenderingMode?) -> Image](image/renderingmode(_:).md)
+- [func renderingMode(Image.TemplateRenderingMode?) -> Image](./renderingmode%28_%29.md)
   Indicates whether SwiftUI renders an image as-is, or by using a different mode.
-- [func interpolation(Image.Interpolation) -> Image](image/interpolation(_:).md)
+- [func interpolation(Image.Interpolation) -> Image](./interpolation%28_%29.md)
   Specifies the current level of quality for rendering an image that requires interpolation.
-- [Image.TemplateRenderingMode](image/templaterenderingmode.md)
+- [Image.TemplateRenderingMode](./templaterenderingmode.md)
   A type that indicates how SwiftUI renders images.
 
 

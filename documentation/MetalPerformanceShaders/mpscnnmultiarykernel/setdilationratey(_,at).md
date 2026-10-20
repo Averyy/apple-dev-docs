@@ -1,7 +1,8 @@
 # setDilationRateY(_:at:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setDilationRateY(_ dilationRate: Int, at index: Int)
+```
+
+```objc
+- (void) setDilationRateY:(NSUInteger) dilationRate atIndex:(NSUInteger) index;
 ```
 
 

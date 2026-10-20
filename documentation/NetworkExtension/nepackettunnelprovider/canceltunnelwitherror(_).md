@@ -1,7 +1,8 @@
 # cancelTunnelWithError(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stop the network tunnel from the Packet Tunnel Provider.
 
@@ -19,19 +20,24 @@ Stop the network tunnel from the Packet Tunnel Provider.
 func cancelTunnelWithError(_ error: (any Error)?)
 ```
 
+```objc
+- (void) cancelTunnelWithError:(NSError *) error;
+```
+
 #### Discussion
 
 The Packet Tunnel Provider should call this method when an unrecoverable error occurs, such as the tunnel server going down or the VPN authentication session expiring.
 
 ## Parameters
 
-- `error`: An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object containing the error that caused the tunnel to be stopped. The domain and code of this NSError object is defined by the caller.
+- `error`: An [`NSError`](../../Foundation/nserror.md) object containing the error that caused the tunnel to be stopped. The domain and code of this NSError object is defined by the caller.
 
 ## See Also
 
-- [func startTunnel(options: [String : NSObject]?, completionHandler: ((any Error)?) -> Void)](nepackettunnelprovider/starttunnel(options:completionhandler:).md)
+### Managing the tunnel life cycle
+- [func startTunnel(options: [String : NSObject]?, completionHandler: ((any Error)?) -> Void)](./starttunnel%28options,completionhandler%29.md)
   Start the network tunnel.
-- [func stopTunnel(with: NEProviderStopReason, completionHandler: () -> Void)](nepackettunnelprovider/stoptunnel(with:completionhandler:).md)
+- [func stopTunnel(with: NEProviderStopReason, completionHandler: () -> Void)](./stoptunnel%28with,completionhandler%29.md)
   Stop the network tunnel.
 
 

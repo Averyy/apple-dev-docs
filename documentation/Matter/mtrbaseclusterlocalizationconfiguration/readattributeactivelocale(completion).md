@@ -1,7 +1,8 @@
 # readAttributeActiveLocale(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActiveLocale(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActiveLocale() async throws -> String
+```
+
+```objc
+- (void) readAttributeActiveLocaleWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

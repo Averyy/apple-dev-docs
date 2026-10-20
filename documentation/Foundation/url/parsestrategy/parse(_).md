@@ -1,7 +1,8 @@
 # parse(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Parses a URL string in accordance with this strategy and returns the parsed value.
 
@@ -26,7 +27,7 @@ The parsed integer value.
 
 #### Discussion
 
-Use this method to repeatedly parse integer strings with the same [`URL.ParseStrategy`](url/parsestrategy.md). To parse a single integer string, use the URL initializer [`init(_:strategy:)`](url/init(_:strategy:).md).
+Use this method to repeatedly parse integer strings with the same [`URL.ParseStrategy`](../parsestrategy.md). To parse a single integer string, use the URL initializer [`init(_:strategy:)`](../init%28_,strategy%29.md).
 
 This method throws an error if the parse strategy can’t parse the provided string.
 

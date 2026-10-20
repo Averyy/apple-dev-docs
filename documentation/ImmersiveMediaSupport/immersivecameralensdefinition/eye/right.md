@@ -1,7 +1,8 @@
 # ImmersiveCameraLensDefinition.Eye.right
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that represents the right eye.
 

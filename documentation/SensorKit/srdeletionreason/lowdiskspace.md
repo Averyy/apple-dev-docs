@@ -1,7 +1,8 @@
 # SRDeletionReason.lowDiskSpace
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the system’s disk space is low.
 
@@ -16,15 +17,20 @@ Indicates that the system’s disk space is low.
 case lowDiskSpace
 ```
 
+```c
+SRDeletionReasonLowDiskSpace
+```
+
 ## See Also
 
-- [SRDeletionReason.ageLimit](srdeletionreason/agelimit.md)
+### Reasons
+- [SRDeletionReason.ageLimit](./agelimit.md)
   Indicates that the sample outlived the framework’s retention limit.
-- [SRDeletionReason.noInterestedClients](srdeletionreason/nointerestedclients.md)
+- [SRDeletionReason.noInterestedClients](./nointerestedclients.md)
   Indicates that the sensor has no active stakeholders.
-- [SRDeletionReason.systemInitiated](srdeletionreason/systeminitiated.md)
+- [SRDeletionReason.systemInitiated](./systeminitiated.md)
   Indicates that the system requests deletion.
-- [SRDeletionReason.userInitiated](srdeletionreason/userinitiated.md)
+- [SRDeletionReason.userInitiated](./userinitiated.md)
   Indicates that the user requests deletion.
 
 

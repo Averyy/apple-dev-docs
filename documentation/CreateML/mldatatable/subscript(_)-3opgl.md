@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Create ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Creates a subset of the table by masking the rows with the given column of Booleans.
 
@@ -19,6 +20,32 @@ Creates a subset of the table by masking the rows with the given column of Boole
 subscript(mask: MLDataColumn<Bool>) -> MLDataTable { get }
 ```
 
+**Other overloads**:
+
+```swift
+subscript(columnName: String) -> MLUntypedColumn { get set }
+```
+
+```swift
+subscript(mask: MLUntypedColumn) -> MLDataTable { get }
+```
+
+```swift
+subscript(slice: Range<Int>) -> MLDataTable { get }
+```
+
+```swift
+subscript<Element>(columnName: String) -> MLDataColumn<Element> where Element : MLDataValueConvertible { get set }
+```
+
+```swift
+subscript<R>(slice: R) -> MLDataTable where R : RangeExpression, R.Bound == Int { get }
+```
+
+```swift
+subscript<S>(columnNames: S) -> MLDataTable where S : Sequence, S.Element == String { get }
+```
+
 #### Return Value
 
 A new data table.
@@ -27,7 +54,7 @@ A new data table.
 
 Use this Boolean column–based subscript to create a new table by masking a subset of the table rows.
 
-![A table of book titles and genres such as “Hamlet” and “Drama” on the](/images/com.apple.createml/MLDataTable-subscript(_:)-3opgl-1@2x.png)
+![A table of book titles and genres such as “Hamlet” and “Drama” on the](https://developer.apple.com/tutorials/images/com.apple.createml/MLDataTable-subscript(_:)-3opgl-1@2x.png)
 
 For example, to filter the values in a data table as shown above, begin by creating a table with the original data.
 
@@ -42,7 +69,7 @@ let table = try? MLDataTable(dictionary: data) else {
 }
 ```
 
-After you create the table, use column arithmetic operators or the [`map(_:)`](mldatatable/map(_:)-92wrj.md) method to build a row mask. The subscript uses the Boolean values in the row mask to determine whether to keep a row.
+After you create the table, use column arithmetic operators or the [`map(_:)`](./map%28_%29-92wrj.md) method to build a row mask. The subscript uses the Boolean values in the row mask to determine whether to keep a row.
 
 ```swift
 // Retrieve the "Genre" column from the table.

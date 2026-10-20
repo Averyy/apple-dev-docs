@@ -1,7 +1,8 @@
 # VideoPlayerComponent.ImmersiveViewingMode.portal
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A viewing mode that renders immersive video as a portal window matching the containing entity’s transform.
 

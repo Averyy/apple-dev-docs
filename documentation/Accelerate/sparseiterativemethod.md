@@ -1,18 +1,19 @@
 # SparseIterativeMethod
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The base type for all iterative methods.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,27 @@ The base type for all iterative methods.
 struct SparseIterativeMethod
 ```
 
+```c
+typedef struct { ... } SparseIterativeMethod;
+```
+
 ## Topics
 
 ### Initializers
-- [init(method: Int32, options: SparseIterativeMethod.__Unnamed_union_options)](sparseiterativemethod/init(method:options:).md)
+- [init(method: Int32, options: SparseIterativeMethod.__Unnamed_union_options)](./sparseiterativemethod/init%28method,options%29.md)
   Returns a new iterative method structure with the specified method and options.
-- [init()](sparseiterativemethod/init.md)
+- [init()](./sparseiterativemethod/init%28%29.md)
   Returns a new iterative method structure.
 ### Instance Properties
-- [var method: Int32](sparseiterativemethod/method.md)
+- [var method: Int32](./sparseiterativemethod/method.md)
   The iterative method this structure represents.
-- [var options: SparseIterativeMethod.__Unnamed_union_options](sparseiterativemethod/options.md)
+- [var options: SparseIterativeMethod.__Unnamed_union_options](./sparseiterativemethod/options.md)
   The options for the method.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

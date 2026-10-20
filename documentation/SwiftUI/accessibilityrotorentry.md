@@ -1,7 +1,8 @@
 # AccessibilityRotorEntry
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A struct representing an entry in an Accessibility Rotor.
 
@@ -102,28 +103,29 @@ struct MessageListView: View {
 ## Topics
 
 ### Creating a rotor entry
-- [init(_:textRange:prepare:)](accessibilityrotorentry/init(_:textrange:prepare:).md)
+- [init(_:textRange:prepare:)](./accessibilityrotorentry/init%28_,textrange,prepare%29.md)
   Create a Rotor entry with a specific label and range. This Rotor entry will be associated with the Accessibility element that owns the Rotor.
-- [init(_:id:textRange:prepare:)](accessibilityrotorentry/init(_:id:textrange:prepare:).md)
+- [init(_:id:textRange:prepare:)](./accessibilityrotorentry/init%28_,id,textrange,prepare%29.md)
   Create a Rotor entry with a specific label and identifier, with an optional range.
 ### Creating an identified rotor entry in a namespace
-- [init(_:id:in:textRange:prepare:)](accessibilityrotorentry/init(_:id:in:textrange:prepare:).md)
+- [init(_:id:in:textRange:prepare:)](./accessibilityrotorentry/init%28_,id,in,textrange,prepare%29.md)
   Create a Rotor entry with a specific label, identifier and namespace, and with an optional range.
-- [init<L>(L, ID, in: Namespace.ID, textRange: Range<String.Index>?, prepare: () -> Void)](accessibilityrotorentry/init(_:_:in:textrange:prepare:).md)
+- [init<L>(L, ID, in: Namespace.ID, textRange: Range<String.Index>?, prepare: () -> Void)](./accessibilityrotorentry/init%28_,_,in,textrange,prepare%29.md)
   Create a Rotor entry with a specific label, identifier and namespace, and with an optional range.
 
 ## Relationships
 
 ### Conforms To
-- [AccessibilityRotorContent](accessibilityrotorcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [AccessibilityRotorContent](./accessibilityrotorcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
 
 ## See Also
 
-- [protocol AccessibilityRotorContent](accessibilityrotorcontent.md)
+### Creating rotors
+- [protocol AccessibilityRotorContent](./accessibilityrotorcontent.md)
   Content within an accessibility rotor.
-- [struct AccessibilityRotorContentBuilder](accessibilityrotorcontentbuilder.md)
+- [struct AccessibilityRotorContentBuilder](./accessibilityrotorcontentbuilder.md)
   Result builder you use to generate rotor entry content.
 
 

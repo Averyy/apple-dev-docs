@@ -1,7 +1,8 @@
 # AssistantSchemas.EnumSchema
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -21,16 +22,16 @@ struct EnumSchema
 ## Relationships
 
 ### Conforms To
-- [AssistantSchemas.BooksEnum](assistantschemas/booksenum.md)
-- [AssistantSchemas.BrowserEnum](assistantschemas/browserenum.md)
-- [AssistantSchemas.CameraEnum](assistantschemas/cameraenum.md)
-- [AssistantSchemas.Enum](assistantschemas/enum.md)
-- [AssistantSchemas.Model](assistantschemas/model.md)
-- [AssistantSchemas.PhotosEnum](assistantschemas/photosenum.md)
-- [AssistantSchemas.ReaderEnum](assistantschemas/readerenum.md)
-- [AssistantSchemas.WhiteboardEnum](assistantschemas/whiteboardenum.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [AssistantSchemas.BooksEnum](./booksenum.md)
+- [AssistantSchemas.BrowserEnum](./browserenum.md)
+- [AssistantSchemas.CameraEnum](./cameraenum.md)
+- [AssistantSchemas.Enum](./enum.md)
+- [AssistantSchemas.Model](./model.md)
+- [AssistantSchemas.PhotosEnum](./photosenum.md)
+- [AssistantSchemas.ReaderEnum](./readerenum.md)
+- [AssistantSchemas.WhiteboardEnum](./whiteboardenum.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
 
 
 ---

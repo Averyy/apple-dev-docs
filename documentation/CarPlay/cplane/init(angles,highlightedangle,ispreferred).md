@@ -1,7 +1,8 @@
 # init(angles:highlightedAngle:isPreferred:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -12,6 +13,10 @@
 
 ```swift
 init(angles: [Measurement<UnitAngle>], highlightedAngle: Measurement<UnitAngle>, isPreferred preferred: Bool)
+```
+
+```objc
+- (instancetype) initWithAngles:(NSArray<NSMeasurement<NSUnitAngle *> *> *) angles highlightedAngle:(NSMeasurement<NSUnitAngle *> *) highlightedAngle isPreferred:(BOOL) preferred;
 ```
 
 

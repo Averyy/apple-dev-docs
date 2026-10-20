@@ -1,7 +1,8 @@
 # supplementaryView(forElementKind:at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the supplementary view at the specified index path.
 
@@ -18,6 +19,10 @@ Gets the supplementary view at the specified index path.
 func supplementaryView(forElementKind elementKind: String, at indexPath: IndexPath) -> UICollectionReusableView?
 ```
 
+```objc
+- (UICollectionReusableView *) supplementaryViewForElementKind:(NSString *) elementKind atIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
 The specified supplementary view, or `nil` if the view could not be found.
@@ -29,17 +34,18 @@ The specified supplementary view, or `nil` if the view could not be found.
 
 ## See Also
 
-- [func indexPathForItem(at: CGPoint) -> IndexPath?](uicollectionview/indexpathforitem(at:).md)
+### Locating items and views in the collection view
+- [func indexPathForItem(at: CGPoint) -> IndexPath?](./indexpathforitem%28at%29.md)
   Gets the index path of the item at the specified point in the collection view.
-- [var indexPathsForVisibleItems: [IndexPath]](uicollectionview/indexpathsforvisibleitems.md)
+- [var indexPathsForVisibleItems: [IndexPath]](./indexpathsforvisibleitems.md)
   An array of the visible items in the collection view.
-- [func indexPath(for: UICollectionViewCell) -> IndexPath?](uicollectionview/indexpath(for:).md)
+- [func indexPath(for: UICollectionViewCell) -> IndexPath?](./indexpath%28for%29.md)
   Gets the index path of the specified cell.
-- [func cellForItem(at: IndexPath) -> UICollectionViewCell?](uicollectionview/cellforitem(at:).md)
+- [func cellForItem(at: IndexPath) -> UICollectionViewCell?](./cellforitem%28at%29.md)
   Gets the cell object at the index path you specify.
-- [func indexPathsForVisibleSupplementaryElements(ofKind: String) -> [IndexPath]](uicollectionview/indexpathsforvisiblesupplementaryelements(ofkind:).md)
+- [func indexPathsForVisibleSupplementaryElements(ofKind: String) -> [IndexPath]](./indexpathsforvisiblesupplementaryelements%28ofkind%29.md)
   Gets the index paths of all visible supplementary views of the specified type.
-- [func visibleSupplementaryViews(ofKind: String) -> [UICollectionReusableView]](uicollectionview/visiblesupplementaryviews(ofkind:).md)
+- [func visibleSupplementaryViews(ofKind: String) -> [UICollectionReusableView]](./visiblesupplementaryviews%28ofkind%29.md)
   Gets an array of the visible supplementary views of the specified kind.
 
 

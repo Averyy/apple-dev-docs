@@ -1,7 +1,8 @@
 # PhysicallyBasedMaterial.TriangleFillMode
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the triangle fill mode object that’s appropriate for this material class.
 

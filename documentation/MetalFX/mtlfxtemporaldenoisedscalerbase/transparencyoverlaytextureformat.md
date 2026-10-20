@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The pixel format of the input transparency overlay texture for this denoiser scaler.
@@ -17,6 +18,10 @@ The pixel format of the input transparency overlay texture for this denoiser sca
 
 ```swift
 var transparencyOverlayTextureFormat: MTLPixelFormat { get }
+```
+
+```objc
+@property (nonatomic, readonly) MTLPixelFormat transparencyOverlayTextureFormat;
 ```
 
 

@@ -1,15 +1,16 @@
 # getReportSize
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t getReportSize();
 ```
 
@@ -19,9 +20,10 @@ Returns the element’s report size, in bits.
 
 ## See Also
 
-- [getReportID](iohidelement/getreportid.md)
-- [getReportCount](iohidelement/getreportcount.md)
-- [IOHIDReportType](iohidreporttype.md)
+### Getting Report Information
+- [getReportID](./getreportid.md)
+- [getReportCount](./getreportcount.md)
+- [IOHIDReportType](../iohidreporttype.md)
   Describes the different types of HID reports.
 
 

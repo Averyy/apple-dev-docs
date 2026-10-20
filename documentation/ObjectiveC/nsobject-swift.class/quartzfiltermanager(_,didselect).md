@@ -1,15 +1,20 @@
 # quartzFilterManager(_:didSelect:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func quartzFilterManager(_ sender: QuartzFilterManager!, didSelect filter: QuartzFilter!)
+```
+
+```objc
+- (void) quartzFilterManager:(QuartzFilterManager *) sender didSelectFilter:(QuartzFilter *) filter;
 ```
 
 

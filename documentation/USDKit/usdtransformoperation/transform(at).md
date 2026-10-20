@@ -1,7 +1,8 @@
 # transform(at:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the transformation matrix at the specified time.
 

@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the cell hides the accessory.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether the cell hides the accessory.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,15 +27,16 @@ Use this property to achieve a consistent layout across cells when some cells sh
 
 ## See Also
 
-- [let customView: UIView](uicellaccessory-swift.struct/customviewconfiguration/customview.md)
+### Accessing configuration options
+- [let customView: UIView](./customview.md)
   The custom view to display for the accessory.
-- [let placement: UICellAccessory.Placement](uicellaccessory-swift.struct/customviewconfiguration/placement.md)
+- [let placement: UICellAccessory.Placement](./placement.md)
   The placement for the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/customviewconfiguration/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/customviewconfiguration/tintcolor.md)
+- [var tintColor: UIColor?](./tintcolor.md)
   The tint color to apply to the accessory.
-- [var maintainsFixedSize: Bool](uicellaccessory-swift.struct/customviewconfiguration/maintainsfixedsize.md)
+- [var maintainsFixedSize: Bool](./maintainsfixedsize.md)
   A Boolean value that determines whether to preserve the frame size of the custom view.
 
 

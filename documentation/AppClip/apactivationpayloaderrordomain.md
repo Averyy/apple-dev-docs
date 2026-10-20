@@ -1,7 +1,8 @@
 # APActivationPayloadErrorDomain
 
 **Framework**: App Clips  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string that identifies the activation payload’s error domain.
 
@@ -16,11 +17,16 @@ A string that identifies the activation payload’s error domain.
 let APActivationPayloadErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const APActivationPayloadErrorDomain;
+```
+
 ## See Also
 
-- [struct APActivationPayloadError](apactivationpayloaderror.md)
+### Understanding errors
+- [struct APActivationPayloadError](./apactivationpayloaderror.md)
   An error that an App Clip activation payload returns.
-- [APActivationPayloadError.Code](apactivationpayloaderror/code.md)
+- [APActivationPayloadError.Code](./apactivationpayloaderror/code.md)
   Error codes that an App Clip activation payload returns.
 
 

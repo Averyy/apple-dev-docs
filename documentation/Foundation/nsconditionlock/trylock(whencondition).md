@@ -1,7 +1,8 @@
 # tryLock(whenCondition:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to acquire a lock if the receiver’s condition is equal to the specified condition.
 
@@ -20,25 +21,30 @@ Attempts to acquire a lock if the receiver’s condition is equal to the specifi
 func tryLock(whenCondition condition: Int) -> Bool
 ```
 
+```objc
+- (BOOL) tryLockWhenCondition:(NSInteger) condition;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the lock could be acquired, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the lock could be acquired, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
-As part of its implementation, this method invokes [`lock(whenCondition:before:)`](nsconditionlock/lock(whencondition:before:).md). This method returns immediately.
+As part of its implementation, this method invokes [`lock(whenCondition:before:)`](./lock%28whencondition,before%29.md). This method returns immediately.
 
 ## See Also
 
-- [func lock(before: Date) -> Bool](nsconditionlock/lock(before:).md)
+### Acquiring and Releasing a Lock
+- [func lock(before: Date) -> Bool](./lock%28before%29.md)
   Attempts to acquire a lock before a specified moment in time.
-- [func lock(whenCondition: Int)](nsconditionlock/lock(whencondition:).md)
+- [func lock(whenCondition: Int)](./lock%28whencondition%29.md)
   Attempts to acquire a lock.
-- [func lock(whenCondition: Int, before: Date) -> Bool](nsconditionlock/lock(whencondition:before:).md)
+- [func lock(whenCondition: Int, before: Date) -> Bool](./lock%28whencondition,before%29.md)
   Attempts to acquire a lock before a specified moment in time.
-- [func `try`() -> Bool](nsconditionlock/try.md)
+- [func `try`() -> Bool](./try%28%29.md)
   Attempts to acquire a lock without regard to the receiver’s condition.
-- [func unlock(withCondition: Int)](nsconditionlock/unlock(withcondition:).md)
+- [func unlock(withCondition: Int)](./unlock%28withcondition%29.md)
   Relinquishes the lock and sets the receiver’s condition.
 
 

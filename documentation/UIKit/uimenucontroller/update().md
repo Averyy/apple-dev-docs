@@ -1,20 +1,27 @@
 # update()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the appearance and enabled state of menu commands.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 3.0+ - Deprecated in 16.0
+- iPadOS 3.0+ - Deprecated in 16.0
+- Mac Catalyst 13.1+ - Deprecated in 16.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: For more information, see [`UIMenuController`](../uimenucontroller.md).
 
 ## Declaration
 
 ```swift
 func update()
+```
+
+```objc
+- (void) update;
 ```
 
 #### Discussion

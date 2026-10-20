@@ -1,16 +1,19 @@
 # deviceInfo
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Information about a MIDI-CI device.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.1+
-- macOS 10.14+
-- visionOS 1.0+
+- iOS 12.0+ - Deprecated in 18.0
+- iPadOS 12.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.14+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: No longer supported for CoreMIDI
 
 ## Declaration
 
@@ -18,17 +21,22 @@ Information about a MIDI-CI device.
 var deviceInfo: MIDICIDeviceInfo { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MIDICIDeviceInfo * deviceInfo;
+```
+
 ## See Also
 
-- [var maxSysExSize: NSNumber](midicisession/maxsysexsize.md)
+### Inspecting a Session
+- [var maxSysExSize: NSNumber](./maxsysexsize.md)
   The maximum size of System Exclusive (SysEx) messages.
-- [var midiDestination: MIDIEntityRef](midicisession/mididestination.md)
+- [var midiDestination: MIDIEntityRef](./mididestination.md)
   The MIDI destination with which the session is communicating.
-- [var maxPropertyRequests: NSNumber](midicisession/maxpropertyrequests.md)
+- [var maxPropertyRequests: NSNumber](./maxpropertyrequests.md)
   The maximum number of simultaneous property exchange requests, if supported.
-- [var supportsProfileCapability: Bool](midicisession/supportsprofilecapability.md)
+- [var supportsProfileCapability: Bool](./supportsprofilecapability.md)
   A Boolean value that indicates whether the entity supports the MIDI-CI profile’s capability.
-- [var supportsPropertyCapability: Bool](midicisession/supportspropertycapability.md)
+- [var supportsPropertyCapability: Bool](./supportspropertycapability.md)
   A Boolean value that indicates whether the entity supports the MIDI-CI property exchange capability.
 
 

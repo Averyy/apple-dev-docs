@@ -1,7 +1,8 @@
 # originFromAnchorTransform
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform from the anchor to the origin coordinate system.
 

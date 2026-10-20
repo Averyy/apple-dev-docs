@@ -1,15 +1,16 @@
 # keypointColorValue
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var keypointColorValue: Float
 ```
 
+```c
+float keypointColorValue;
+```
+
 ## See Also
 
-- [var keypointCoordinate: vector_ushort2](mpsimagekeypointdata/keypointcoordinate.md)
+### Instance Properties
+- [var keypointCoordinate: vector_ushort2](./keypointcoordinate.md)
 
 
 ---

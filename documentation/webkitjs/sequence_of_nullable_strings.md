@@ -1,14 +1,15 @@
 # SEQUENCE_OF_NULLABLE_STRINGS
 
 **Framework**: WebKit JS  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Safari Mobile 10.1+
 
 ## Declaration
 
-```swift
+```
 typedef  SEQUENCE_OF_NULLABLE_STRINGS;
 ```
 

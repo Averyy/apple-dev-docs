@@ -1,14 +1,15 @@
 # kIOEventLinkClockMachAbsoluteTime
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.1+
 
 ## Declaration
 
-```swift
+```c
 kIOEventLinkClockMachAbsoluteTime = 0x0
 ```
 

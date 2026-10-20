@@ -1,7 +1,8 @@
 # propertyListFromStringsFileFormat()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary object initialized with the keys and values found in the `String`.
 

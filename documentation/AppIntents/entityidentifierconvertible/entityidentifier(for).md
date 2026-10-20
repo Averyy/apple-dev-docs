@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Identifiers should be able to initialize via a `String` format.
@@ -12,7 +13,7 @@ Identifiers should be able to initialize via a `String` format.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

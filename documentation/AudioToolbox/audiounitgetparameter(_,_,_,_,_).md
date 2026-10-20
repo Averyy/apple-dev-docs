@@ -1,7 +1,8 @@
 # AudioUnitGetParameter(_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the value of an audio unit parameter.
 
@@ -19,9 +20,13 @@ Gets the value of an audio unit parameter.
 func AudioUnitGetParameter(_ inUnit: AudioUnit, _ inID: AudioUnitParameterID, _ inScope: AudioUnitScope, _ inElement: AudioUnitElement, _ outValue: UnsafeMutablePointer<AudioUnitParameterValue>) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioUnitGetParameter(AudioUnit inUnit, AudioUnitParameterID inID, AudioUnitScope inScope, AudioUnitElement inElement, AudioUnitParameterValue *outValue);
+```
+
 ## Mentions
 
-- [Migrating Your Audio Unit Host to the AUv3 API](migrating-your-audio-unit-host-to-the-auv3-api.md)
+- [Migrating Your Audio Unit Host to the AUv3 API](./migrating-your-audio-unit-host-to-the-auv3-api.md)
 
 #### Return Value
 
@@ -37,9 +42,10 @@ A result code.
 
 ## See Also
 
-- [func AudioUnitScheduleParameters(AudioUnit, UnsafePointer<AudioUnitParameterEvent>, UInt32) -> OSStatus](audiounitscheduleparameters(_:_:_:).md)
+### Getting and Setting Parameters
+- [func AudioUnitScheduleParameters(AudioUnit, UnsafePointer<AudioUnitParameterEvent>, UInt32) -> OSStatus](./audiounitscheduleparameters%28_,_,_%29.md)
   Schedules changes to the value of an audio unit parameter.
-- [func AudioUnitSetParameter(AudioUnit, AudioUnitParameterID, AudioUnitScope, AudioUnitElement, AudioUnitParameterValue, UInt32) -> OSStatus](audiounitsetparameter(_:_:_:_:_:_:).md)
+- [func AudioUnitSetParameter(AudioUnit, AudioUnitParameterID, AudioUnitScope, AudioUnitElement, AudioUnitParameterValue, UInt32) -> OSStatus](./audiounitsetparameter%28_,_,_,_,_,_%29.md)
   Sets the value of an audio unit parameter.
 
 

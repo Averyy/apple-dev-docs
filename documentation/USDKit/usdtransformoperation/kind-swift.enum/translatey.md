@@ -1,7 +1,8 @@
 # USDTransformOperation.Kind.translateY
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A translation operation along the Y axis.
 

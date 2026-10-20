@@ -1,7 +1,8 @@
 # CMTimebaseCopySource(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the immediate source — either a clock or timebase — of a timebase.
 
@@ -20,13 +21,18 @@ Returns the immediate source — either a clock or timebase — of a timebase.
 func CMTimebaseCopySource(_ timebase: CMTimebase) -> CMClockOrTimebase
 ```
 
+```c
+extern CMClockOrTimebaseRefCMTimebaseCopySource(CMTimebaseRef timebase);
+```
+
 ## See Also
 
-- [func CMTimebaseCopySourceClock(CMTimebase) -> CMClock?](cmtimebasecopysourceclock(_:).md)
+### Copying Timebases
+- [func CMTimebaseCopySourceClock(CMTimebase) -> CMClock?](./cmtimebasecopysourceclock%28_%29.md)
   Returns the immediate source clock of a timebase.
-- [func CMTimebaseCopySourceTimebase(CMTimebase) -> CMTimebase?](cmtimebasecopysourcetimebase(_:).md)
+- [func CMTimebaseCopySourceTimebase(CMTimebase) -> CMTimebase?](./cmtimebasecopysourcetimebase%28_%29.md)
   Returns the immediate source timebase of a timebase.
-- [func CMTimebaseCopyUltimateSourceClock(CMTimebase) -> CMClock](cmtimebasecopyultimatesourceclock(_:).md)
+- [func CMTimebaseCopyUltimateSourceClock(CMTimebase) -> CMClock](./cmtimebasecopyultimatesourceclock%28_%29.md)
   Returns the source clock that’s the source of all of a timebase’s source timebases.
 
 

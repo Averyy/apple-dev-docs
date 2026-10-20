@@ -1,7 +1,8 @@
 # receivedTransportByteCount
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes the transport protocol delivered.
 
@@ -22,19 +23,20 @@ let receivedTransportByteCount: UInt64
 
 ## See Also
 
-- [let receivedTransportDuplicateByteCount: UInt64](nwconnection/datatransferreport/pathreport/receivedtransportduplicatebytecount.md)
+### Inspecting Transport Metrics
+- [let receivedTransportDuplicateByteCount: UInt64](./receivedtransportduplicatebytecount.md)
   The number of duplicated bytes the transport protocol detected.
-- [let receivedTransportOutOfOrderByteCount: UInt64](nwconnection/datatransferreport/pathreport/receivedtransportoutoforderbytecount.md)
+- [let receivedTransportOutOfOrderByteCount: UInt64](./receivedtransportoutoforderbytecount.md)
   The number of bytes the transport protocol received out of order.
-- [let sentTransportByteCount: UInt64](nwconnection/datatransferreport/pathreport/senttransportbytecount.md)
+- [let sentTransportByteCount: UInt64](./senttransportbytecount.md)
   The number of bytes sent into the transport protocol.
-- [let retransmittedTransportByteCount: UInt64](nwconnection/datatransferreport/pathreport/retransmittedtransportbytecount.md)
+- [let retransmittedTransportByteCount: UInt64](./retransmittedtransportbytecount.md)
   The number of bytes the transport protocol retransmitted.
-- [let transportSmoothedRTT: TimeInterval](nwconnection/datatransferreport/pathreport/transportsmoothedrtt.md)
+- [let transportSmoothedRTT: TimeInterval](./transportsmoothedrtt.md)
   The smoothed round-trip time the transport protocol measured.
-- [let transportMinimumRTT: TimeInterval](nwconnection/datatransferreport/pathreport/transportminimumrtt.md)
+- [let transportMinimumRTT: TimeInterval](./transportminimumrtt.md)
   The minimum round-trip time the transport protocol measured.
-- [let transportRTTVariance: TimeInterval](nwconnection/datatransferreport/pathreport/transportrttvariance.md)
+- [let transportRTTVariance: TimeInterval](./transportrttvariance.md)
   The variance of the round-trip time the transport protocol measured.
 
 

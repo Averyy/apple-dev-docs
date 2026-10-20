@@ -1,7 +1,8 @@
 # id
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identity of the stroke.
 

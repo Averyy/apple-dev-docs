@@ -1,7 +1,8 @@
 # grayscale(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a filter that applies a grayscale adjustment.
 
@@ -34,15 +35,16 @@ This filter is equivalent to the `grayscale` filter primitive defined by the Sca
 
 ## See Also
 
-- [static func saturation(Double) -> GraphicsContext.Filter](graphicscontext/filter/saturation(_:).md)
+### Manipulating color
+- [static func saturation(Double) -> GraphicsContext.Filter](./saturation%28_%29.md)
   Returns a filter that applies a saturation adjustment.
-- [static func colorInvert(Double) -> GraphicsContext.Filter](graphicscontext/filter/colorinvert(_:).md)
+- [static func colorInvert(Double) -> GraphicsContext.Filter](./colorinvert%28_%29.md)
   Returns a filter that inverts the color of their results.
-- [static func colorMultiply(Color) -> GraphicsContext.Filter](graphicscontext/filter/colormultiply(_:).md)
+- [static func colorMultiply(Color) -> GraphicsContext.Filter](./colormultiply%28_%29.md)
   Returns a filter that multiplies each color component by the matching component of a given color.
-- [static func hueRotation(Angle) -> GraphicsContext.Filter](graphicscontext/filter/huerotation(_:).md)
+- [static func hueRotation(Angle) -> GraphicsContext.Filter](./huerotation%28_%29.md)
   Returns a filter that applies a hue rotation adjustment.
-- [static func colorMatrix(ColorMatrix) -> GraphicsContext.Filter](graphicscontext/filter/colormatrix(_:).md)
+- [static func colorMatrix(ColorMatrix) -> GraphicsContext.Filter](./colormatrix%28_%29.md)
   Returns a filter that multiplies by a given color matrix.
 
 

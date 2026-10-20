@@ -1,20 +1,22 @@
 # strncat
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```c
 char * strncat(char *dst, const char *src, size_t n);
 ```
 
 ## See Also
 
-- [strlcat](1579344-strlcat.md)
+### Concatenation
+- [strlcat](./api-1579344-strlcat.md)
 
 
 ---

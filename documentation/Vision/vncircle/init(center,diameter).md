@@ -1,7 +1,8 @@
 # init(center:diameter:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a circle with the specified center and diameter.
 
@@ -19,6 +20,10 @@ Creates a circle with the specified center and diameter.
 convenience init(center: VNPoint, diameter: Double)
 ```
 
+```objc
+- (instancetype) initWithCenter:(VNPoint *) center diameter:(double) diameter;
+```
+
 ## Parameters
 
 - `center`: The circle center.
@@ -26,10 +31,11 @@ convenience init(center: VNPoint, diameter: Double)
 
 ## See Also
 
-- [init(center: VNPoint, radius: Double)](vncircle/init(center:radius:).md)
+### Creating a Circle
+- [init(center: VNPoint, radius: Double)](./init%28center,radius%29.md)
   Creates a circle with the specified center and radius.
-- [init?(coder: NSCoder)](vncircle/init(coder:).md)
-- [class var zero: VNCircle](vncircle/zero.md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+- [class var zero: VNCircle](./zero.md)
   A circle object centered at the origin, with a radius of zero.
 
 

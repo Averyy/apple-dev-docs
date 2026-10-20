@@ -1,7 +1,8 @@
 # init(integersIn:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an `IndexSet` with a range of integers.
 

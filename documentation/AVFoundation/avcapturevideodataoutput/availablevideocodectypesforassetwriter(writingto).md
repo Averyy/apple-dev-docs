@@ -1,7 +1,8 @@
 # availableVideoCodecTypesForAssetWriter(writingTo:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The video codecs that the output supports for writing video to the output file.
 
@@ -18,6 +19,10 @@ The video codecs that the output supports for writing video to the output file.
 func availableVideoCodecTypesForAssetWriter(writingTo outputFileType: AVFileType) -> [AVVideoCodecType]
 ```
 
+```objc
+- (NSArray<NSString *> *) availableVideoCodecTypesForAssetWriterWithOutputFileType:(AVFileType) outputFileType;
+```
+
 #### Return Value
 
 An array of video codecs.
@@ -28,11 +33,12 @@ An array of video codecs.
 
 ## See Also
 
-- [var availableVideoPixelFormatTypes: [OSType]](avcapturevideodataoutput/availablevideopixelformattypes.md)
+### Retrieving supported video types
+- [var availableVideoPixelFormatTypes: [OSType]](./availablevideopixelformattypes.md)
   The video pixel formats the output supports.
-- [var availableVideoCodecTypes: [AVVideoCodecType]](avcapturevideodataoutput/availablevideocodectypes.md)
+- [var availableVideoCodecTypes: [AVVideoCodecType]](./availablevideocodectypes.md)
   The video codecs that the output supports.
-- [struct AVVideoCodecType](avvideocodectype.md)
+- [struct AVVideoCodecType](../avvideocodectype.md)
   A set of constants that describe the codecs the system supports for video capture.
 
 

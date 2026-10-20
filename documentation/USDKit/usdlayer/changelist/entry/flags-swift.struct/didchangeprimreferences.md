@@ -1,7 +1,8 @@
 # didChangePrimReferences
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether a prim’s references list changed.
 

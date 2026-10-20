@@ -1,7 +1,8 @@
 # init(cgImage:constraint:options:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct image feature value from CGImage, using the size and type information required by feature description (orientation is assumed to be kCGImagePropertyOrientationUp)
 
@@ -18,6 +19,10 @@ Construct image feature value from CGImage, using the size and type information 
 
 ```swift
 convenience init(cgImage: CGImage, constraint: MLImageConstraint, options: [MLFeatureValue.ImageOption : Any]? = nil) throws
+```
+
+```objc
++ (instancetype) featureValueWithCGImage:(CGImageRef) cgImage constraint:(MLImageConstraint *) constraint options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
 

@@ -1,7 +1,8 @@
 # byStateReportingDomain
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 State entries grouped by their StateReporting domain.
 
@@ -16,6 +17,8 @@ State entries grouped by their StateReporting domain.
 ```swift
 var byStateReportingDomain: [StateReportingDomain : [MetricReport.StateEntry]] { get }
 ```
+
+Available when `Element` is `MetricReport.StateEntry`.
 
 #### Discussion
 

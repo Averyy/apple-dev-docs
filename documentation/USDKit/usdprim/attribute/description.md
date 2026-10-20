@@ -1,7 +1,8 @@
 # description
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A summary description of this attribute.
 

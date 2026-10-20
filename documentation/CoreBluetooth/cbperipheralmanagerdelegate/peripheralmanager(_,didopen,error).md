@@ -1,7 +1,8 @@
 # peripheralManager(_:didOpen:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the peripheral manager opened an L2CAP channel.
 
@@ -20,9 +21,13 @@ Tells the delegate that the peripheral manager opened an L2CAP channel.
 optional func peripheralManager(_ peripheral: CBPeripheralManager, didOpen channel: CBL2CAPChannel?, error: (any Error)?)
 ```
 
+```objc
+- (void) peripheralManager:(CBPeripheralManager *) peripheral didOpenL2CAPChannel:(CBL2CAPChannel *) channel error:(NSError *) error;
+```
+
 #### Discussion
 
-The peripheral manager calls this method after you call [`publishL2CAPChannel(withEncryption:)`](cbperipheralmanager/publishl2capchannel(withencryption:).md).
+The peripheral manager calls this method after you call [`publishL2CAPChannel(withEncryption:)`](../cbperipheralmanager/publishl2capchannel%28withencryption%29.md).
 
 ## Parameters
 
@@ -32,9 +37,10 @@ The peripheral manager calls this method after you call [`publishL2CAPChannel(wi
 
 ## See Also
 
-- [func peripheralManager(CBPeripheralManager, didPublishL2CAPChannel: CBL2CAPPSM, error: (any Error)?)](cbperipheralmanagerdelegate/peripheralmanager(_:didpublishl2capchannel:error:).md)
+### Using L2CAP Channels
+- [func peripheralManager(CBPeripheralManager, didPublishL2CAPChannel: CBL2CAPPSM, error: (any Error)?)](./peripheralmanager%28_,didpublishl2capchannel,error%29.md)
   Tells the delegate that the peripheral manager created a listener for incoming L2CAP channel connections.
-- [func peripheralManager(CBPeripheralManager, didUnpublishL2CAPChannel: CBL2CAPPSM, error: (any Error)?)](cbperipheralmanagerdelegate/peripheralmanager(_:didunpublishl2capchannel:error:).md)
+- [func peripheralManager(CBPeripheralManager, didUnpublishL2CAPChannel: CBL2CAPPSM, error: (any Error)?)](./peripheralmanager%28_,didunpublishl2capchannel,error%29.md)
   Tells the delegate that the peripheral manager removed a published service from the local system.
 
 

@@ -1,7 +1,8 @@
 # LightmapResource.FinalShadedColorBakeDescriptor
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Parameters for the final shaded color bake type.
 
@@ -22,13 +23,13 @@ struct FinalShadedColorBakeDescriptor
 ## Topics
 
 ### Creating a bake descriptor
-- [init(sourceAtlasReference: LightmapResource.AtlasReference)](lightmapresource/finalshadedcolorbakedescriptor/init(sourceatlasreference:).md)
+- [init(sourceAtlasReference: LightmapResource.AtlasReference)](./finalshadedcolorbakedescriptor/init%28sourceatlasreference%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

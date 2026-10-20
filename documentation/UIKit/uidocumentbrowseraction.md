@@ -1,7 +1,8 @@
 # UIDocumentBrowserAction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A custom action that you can create and add to a document browser’s Edit menu or navigation bar.
 
@@ -17,13 +18,17 @@ A custom action that you can create and add to a document browser’s Edit menu 
 class UIDocumentBrowserAction
 ```
 
+```objc
+@interface UIDocumentBrowserAction : NSObject
+```
+
 ## Mentions
 
-- [Adding custom actions and activities](adding-custom-actions-and-activities.md)
+- [Adding custom actions and activities](./adding-custom-actions-and-activities.md)
 
 #### Overview
 
-By default, the system provides a number of standard actions (copy, move, rename, delete, and share). To add custom actions, assign an array of [`UIDocumentBrowserAction`](uidocumentbrowseraction.md) objects to the browser’s [`customActions`](uidocumentbrowserviewcontroller/customactions.md) property.
+By default, the system provides a number of standard actions (copy, move, rename, delete, and share). To add custom actions, assign an array of [`UIDocumentBrowserAction`](./uidocumentbrowseraction.md) objects to the browser’s [`customActions`](./uidocumentbrowserviewcontroller/customactions.md) property.
 
 Document browser actions can appear in either the navigation bar or the Edit menu.
 
@@ -35,41 +40,43 @@ When triggered, these actions are passed the URLs of the currently selected item
 ## Topics
 
 ### Creating and configuring actions
-- [init(identifier: String, localizedTitle: String, availability: UIDocumentBrowserAction.Availability, handler: ([URL]) -> Void)](uidocumentbrowseraction/init(identifier:localizedtitle:availability:handler:).md)
+- [init(identifier: String, localizedTitle: String, availability: UIDocumentBrowserAction.Availability, handler: ([URL]) -> Void)](./uidocumentbrowseraction/init%28identifier,localizedtitle,availability,handler%29.md)
   Instantiates and returns a new browser action item.
-- [var image: UIImage?](uidocumentbrowseraction/image.md)
+- [var image: UIImage?](./uidocumentbrowseraction/image.md)
   The action’s image displayed in the navigation bar.
-- [var supportedContentTypes: [String]](uidocumentbrowseraction/supportedcontenttypes.md)
+- [var supportedContentTypes: [String]](./uidocumentbrowseraction/supportedcontenttypes.md)
   An array of uniform type identifiers that define the types of documents that the action supports.
-- [var supportsMultipleItems: Bool](uidocumentbrowseraction/supportsmultipleitems.md)
+- [var supportsMultipleItems: Bool](./uidocumentbrowseraction/supportsmultipleitems.md)
   A Boolean value that determines whether the action can be triggered on more than one document at a time.
 ### Accessing activity data
-- [var identifier: String](uidocumentbrowseraction/identifier.md)
+- [var identifier: String](./uidocumentbrowseraction/identifier.md)
   The action’s unique identifier.
-- [var localizedTitle: String](uidocumentbrowseraction/localizedtitle.md)
+- [var localizedTitle: String](./uidocumentbrowseraction/localizedtitle.md)
   The title that appears in the menu or navigation bar.
-- [var availability: UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.property.md)
+- [var availability: UIDocumentBrowserAction.Availability](./uidocumentbrowseraction/availability-swift.property.md)
   A value that defines where the action can appear (in the Edit Menu, the navigation bar, or both).
-- [UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.struct.md)
+- [UIDocumentBrowserAction.Availability](./uidocumentbrowseraction/availability-swift.struct.md)
   Values that determine where the action can appear in the document browser.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class UIDocumentBrowserViewController](uidocumentbrowserviewcontroller.md)
+### Related Documentation
+- [class UIDocumentBrowserViewController](./uidocumentbrowserviewcontroller.md)
   A view controller for browsing and performing actions on documents that you store locally and in the cloud.
-- [var customActions: [UIDocumentBrowserAction]](uidocumentbrowserviewcontroller/customactions.md)
+### Adding custom actions
+- [var customActions: [UIDocumentBrowserAction]](./uidocumentbrowserviewcontroller/customactions.md)
   Custom document browser actions.
 
 

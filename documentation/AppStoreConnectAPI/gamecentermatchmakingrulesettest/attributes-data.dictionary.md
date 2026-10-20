@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleSetTest.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The results of testing a rule set.
 
@@ -10,14 +11,14 @@ The results of testing a rule set.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleSetTest.Attributes
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingRuleSetTest.Attributes.MatchmakingResults](gamecentermatchmakingrulesettest/attributes-data.dictionary/matchmakingresults-data.dictionary.md)
+- [object GameCenterMatchmakingRuleSetTest.Attributes.MatchmakingResults](./attributes-data.dictionary/matchmakingresults-data.dictionary.md)
   The data structure representing the results of a match request.
 
 ## Properties

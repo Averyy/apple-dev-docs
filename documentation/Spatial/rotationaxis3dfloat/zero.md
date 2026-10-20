@@ -1,23 +1,28 @@
 # zero
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A 3D axis.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 static let zero: RotationAxis3DFloat
+```
+
+```c
+static const SPRotationAxis3DFloat SPRotationAxis3DFloatZero;
 ```
 
 

@@ -1,7 +1,8 @@
 # vImageCVImageFormat_SetChromaSiting(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the chrominance siting of a Core Video image format.
 
@@ -20,9 +21,13 @@ Sets the chrominance siting of a Core Video image format.
 func vImageCVImageFormat_SetChromaSiting(_ format: vImageCVImageFormat, _ siting: CFString!) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageCVImageFormat_SetChromaSiting(vImageCVImageFormatRef format, CFStringRef siting);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -35,9 +40,11 @@ func vImageCVImageFormat_SetChromaSiting(_ format: vImageCVImageFormat, _ siting
 
 ## See Also
 
-- [var chromaSiting: vImageCVImageFormat.ChromaSiting?](vimagecvimageformat/chromasiting-swift.property.md)
+### Related Documentation
+- [var chromaSiting: vImageCVImageFormat.ChromaSiting?](./vimagecvimageformat/chromasiting-swift.property.md)
   The chrominance siting of the Core Video image format.
-- [func vImageCVImageFormat_GetChromaSiting(vImageConstCVImageFormat) -> Unmanaged<CFString>!](vimagecvimageformat_getchromasiting(_:).md)
+### Querying and setting the chrominance siting
+- [func vImageCVImageFormat_GetChromaSiting(vImageConstCVImageFormat) -> Unmanaged<CFString>!](./vimagecvimageformat_getchromasiting%28_%29.md)
   Returns the chrominance siting of a Core Video image format.
 
 

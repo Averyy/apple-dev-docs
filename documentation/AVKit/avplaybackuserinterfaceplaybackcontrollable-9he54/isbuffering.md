@@ -2,6 +2,7 @@
 
 **Framework**: AVKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Indicates whether the media source is currently stalled waiting for data.
@@ -20,7 +21,7 @@ var isBuffering: Bool { get }
 
 #### Discussion
 
-Returns `true` when the source cannot immediately sustain continuous playback. This may occur both before [`isReady`](avplaybackuserinterfaceplaybackcontrollable-9he54/isready.md) becomes `true` during initial loading, and after [`isReady`](avplaybackuserinterfaceplaybackcontrollable-9he54/isready.md) is `true` during mid-playback stalls. When `true`, [`isPlaying`](avplaybackuserinterfaceplaybackcontrollable-9he54/isplaying.md) may still be `true`, indicating that playback should resume automatically once sufficient data is available.
+Returns `true` when the source cannot immediately sustain continuous playback. This may occur both before [`isReady`](./isready.md) becomes `true` during initial loading, and after [`isReady`](./isready.md) is `true` during mid-playback stalls. When `true`, [`isPlaying`](./isplaying.md) may still be `true`, indicating that playback should resume automatically once sufficient data is available.
 
 
 ---

@@ -1,7 +1,8 @@
 # VideoPlayerEvents
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Events associated with video playback for VideoPlayerComponent.
 
@@ -26,23 +27,24 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
 ## Topics
 
 ### Structures
-- [VideoPlayerEvents.ContentTypeDidChange](videoplayerevents/contenttypedidchange.md)
+- [VideoPlayerEvents.ContentTypeDidChange](./videoplayerevents/contenttypedidchange.md)
   Content type changed event
-- [VideoPlayerEvents.ImmersiveViewingModeDidChange](videoplayerevents/immersiveviewingmodedidchange.md)
-- [VideoPlayerEvents.ImmersiveViewingModeDidTransition](videoplayerevents/immersiveviewingmodedidtransition.md)
-- [VideoPlayerEvents.ImmersiveViewingModeWillTransition](videoplayerevents/immersiveviewingmodewilltransition.md)
-- [VideoPlayerEvents.RenderingStatusDidChange](videoplayerevents/renderingstatusdidchange.md)
-- [VideoPlayerEvents.SpatialVideoModeDidChange](videoplayerevents/spatialvideomodedidchange.md)
-- [VideoPlayerEvents.VideoComfortMitigationDidOccur](videoplayerevents/videocomfortmitigationdidoccur.md)
+- [VideoPlayerEvents.ImmersiveViewingModeDidChange](./videoplayerevents/immersiveviewingmodedidchange.md)
+- [VideoPlayerEvents.ImmersiveViewingModeDidTransition](./videoplayerevents/immersiveviewingmodedidtransition.md)
+- [VideoPlayerEvents.ImmersiveViewingModeWillTransition](./videoplayerevents/immersiveviewingmodewilltransition.md)
+- [VideoPlayerEvents.RenderingStatusDidChange](./videoplayerevents/renderingstatusdidchange.md)
+- [VideoPlayerEvents.SpatialVideoModeDidChange](./videoplayerevents/spatialvideomodedidchange.md)
+- [VideoPlayerEvents.VideoComfortMitigationDidOccur](./videoplayerevents/videocomfortmitigationdidoccur.md)
   The system detects a video comfort violation and triggers the event along with the comfort mitigation action
-- [VideoPlayerEvents.VideoSizeDidChange](videoplayerevents/videosizedidchange.md)
-- [VideoPlayerEvents.ViewingModeDidChange](videoplayerevents/viewingmodedidchange.md)
+- [VideoPlayerEvents.VideoSizeDidChange](./videoplayerevents/videosizedidchange.md)
+- [VideoPlayerEvents.ViewingModeDidChange](./videoplayerevents/viewingmodedidchange.md)
 
 ## See Also
 
-- [enum AudioEvents](audioevents.md)
+### Media events
+- [enum AudioEvents](./audioevents.md)
   Events associated with audio playback.
-- [enum ImagePresentationEvents](imagepresentationevents.md)
+- [enum ImagePresentationEvents](./imagepresentationevents.md)
   Events associated with viewing mode transitions for image presentation components.
 
 

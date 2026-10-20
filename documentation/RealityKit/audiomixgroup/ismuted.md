@@ -1,7 +1,8 @@
 # isMuted
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether an audio mix group emits any sound.
 

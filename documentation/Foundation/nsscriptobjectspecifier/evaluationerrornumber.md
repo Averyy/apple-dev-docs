@@ -1,7 +1,8 @@
 # evaluationErrorNumber
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the value of the evaluation error.
 
@@ -15,13 +16,18 @@ Sets the value of the evaluation error.
 var evaluationErrorNumber: Int { get set }
 ```
 
+```objc
+@property NSInteger evaluationErrorNumber;
+```
+
 ## Parameters
 
 - `error`: The value for the evaluation error.
 
 ## See Also
 
-- [var evaluationError: NSScriptObjectSpecifier?](nsscriptobjectspecifier/evaluationerror.md)
+### Getting evaluation errors
+- [var evaluationError: NSScriptObjectSpecifier?](./evaluationerror.md)
   Returns the object specifier in which an evaluation error occurred.
 
 

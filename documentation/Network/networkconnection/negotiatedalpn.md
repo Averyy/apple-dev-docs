@@ -1,7 +1,8 @@
 # negotiatedALPN
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the negotiated application protocol used when establishing the connection
 
@@ -19,6 +20,8 @@ Return the negotiated application protocol used when establishing the connection
 ```swift
 final var negotiatedALPN: String? { get }
 ```
+
+Available when `ApplicationProtocol` is `QUIC`.
 
 
 ---

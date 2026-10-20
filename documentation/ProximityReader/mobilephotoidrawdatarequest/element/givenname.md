@@ -1,7 +1,8 @@
 # givenName
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The photo ID holder’s given name or first name.
 

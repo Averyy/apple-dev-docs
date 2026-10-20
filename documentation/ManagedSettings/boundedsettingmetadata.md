@@ -1,7 +1,8 @@
 # BoundedSettingMetadata
 
 **Framework**: Managed Settings  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Additional information about a bounded setting.
 
@@ -19,14 +20,15 @@ struct BoundedSettingMetadata<Value> where Value : Comparable
 ## Topics
 
 ### Getting metadata
-- [let bounds: ClosedRange<Value>](boundedsettingmetadata/bounds.md)
+- [let bounds: ClosedRange<Value>](./boundedsettingmetadata/bounds.md)
   The range of values that a setting can accomodate.
-- [let defaultValue: Value](boundedsettingmetadata/defaultvalue.md)
+- [let defaultValue: Value](./boundedsettingmetadata/defaultvalue.md)
   The implicit value for a setting if your app doesn’t set a value.
 
 ## See Also
 
-- [struct SettingMetadata](settingmetadata.md)
+### Accessing metadata
+- [struct SettingMetadata](./settingmetadata.md)
   Additional information about a configurable setting.
 
 

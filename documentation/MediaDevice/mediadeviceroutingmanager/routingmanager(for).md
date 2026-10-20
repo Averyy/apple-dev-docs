@@ -1,7 +1,8 @@
 # routingManager(for:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared routing manager instance for a media device extension.
 
@@ -19,17 +20,17 @@ static func routingManager(for extension: any MediaDeviceExtension) -> MediaDevi
 
 ## Mentions
 
-- [Creating a media device extension](creating-a-media-device-extension.md)
+- [Creating a media device extension](../creating-a-media-device-extension.md)
 
 #### Return Value
 
-The shared [`MediaDeviceRoutingManager`](mediadeviceroutingmanager.md) instance.
+The shared [`MediaDeviceRoutingManager`](../mediadeviceroutingmanager.md) instance.
 
 #### Discussion
 
-Use this method to obtain the shared [`MediaDeviceRoutingManager`](mediadeviceroutingmanager.md) instance for your extension. The routing manager is how your extension reports device discovery, state changes, and playback events to the system.
+Use this method to obtain the shared [`MediaDeviceRoutingManager`](../mediadeviceroutingmanager.md) instance for your extension. The routing manager is how your extension reports device discovery, state changes, and playback events to the system.
 
-> **Note**: The routing manager is a shared instance. Calling this method multiple times for a given extension returns the same [`MediaDeviceRoutingManager`](mediadeviceroutingmanager.md) instance.
+> **Note**: The routing manager is a shared instance. Calling this method multiple times for a given extension returns the same [`MediaDeviceRoutingManager`](../mediadeviceroutingmanager.md) instance.
 
 ## Parameters
 

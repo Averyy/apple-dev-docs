@@ -1,7 +1,8 @@
 # NSManagedObjectContextConcurrencyType
 
 **Framework**: Core Data  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The concurrency types you can use with a managed object context.
 
@@ -10,7 +11,7 @@ The concurrency types you can use with a managed object context.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,35 +21,40 @@ The concurrency types you can use with a managed object context.
 enum NSManagedObjectContextConcurrencyType
 ```
 
+```c
+enum NSManagedObjectContextConcurrencyType : NSUInteger;
+```
+
 ## Topics
 
 ### Concurrency Types
-- [NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType](nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md)
+- [NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType](./nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md)
   Specifies that the context will be associated with a private dispatch queue.
-- [NSManagedObjectContextConcurrencyType.mainQueueConcurrencyType](nsmanagedobjectcontextconcurrencytype/mainqueueconcurrencytype.md)
+- [NSManagedObjectContextConcurrencyType.mainQueueConcurrencyType](./nsmanagedobjectcontextconcurrencytype/mainqueueconcurrencytype.md)
   Specifies that the context will be associated with the main queue.
-- [NSManagedObjectContextConcurrencyType.confinementConcurrencyType](nsmanagedobjectcontextconcurrencytype/confinementconcurrencytype.md)
+- [NSManagedObjectContextConcurrencyType.confinementConcurrencyType](./nsmanagedobjectcontextconcurrencytype/confinementconcurrencytype.md)
   Specifies that the context will use the thread confinement pattern.
 ### Initializers
-- [init?(rawValue: UInt)](nsmanagedobjectcontextconcurrencytype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nsmanagedobjectcontextconcurrencytype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(NSManagedObjectContext.ConcurrencyType)](nsmanagedobjectcontext/init(_:).md)
+### Creating a context
+- [convenience init(NSManagedObjectContext.ConcurrencyType)](./nsmanagedobjectcontext/init%28_%29.md)
   Creates a context that uses the specified concurrency type.
-- [NSManagedObjectContext.ConcurrencyType](nsmanagedobjectcontext/concurrencytype-swift.struct.md)
+- [NSManagedObjectContext.ConcurrencyType](./nsmanagedobjectcontext/concurrencytype-swift.struct.md)
   The concurrency types to use with a managed object context.
-- [init(concurrencyType: NSManagedObjectContextConcurrencyType)](nsmanagedobjectcontext/init(concurrencytype:).md)
+- [init(concurrencyType: NSManagedObjectContextConcurrencyType)](./nsmanagedobjectcontext/init%28concurrencytype%29.md)
   Creates a context that uses the specified concurrency type.
 
 

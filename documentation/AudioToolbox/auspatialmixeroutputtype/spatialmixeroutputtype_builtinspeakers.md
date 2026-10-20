@@ -1,15 +1,16 @@
 # AUSpatialMixerOutputType.spatialMixerOutputType_BuiltInSpeakers
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 case spatialMixerOutputType_BuiltInSpeakers
 ```
 
+```c
+kSpatialMixerOutputType_BuiltInSpeakers
+```
+
 ## See Also
 
-- [AUSpatialMixerOutputType.spatialMixerOutputType_ExternalSpeakers](auspatialmixeroutputtype/spatialmixeroutputtype_externalspeakers.md)
-- [AUSpatialMixerOutputType.spatialMixerOutputType_Headphones](auspatialmixeroutputtype/spatialmixeroutputtype_headphones.md)
+### Output Types
+- [AUSpatialMixerOutputType.spatialMixerOutputType_ExternalSpeakers](./spatialmixeroutputtype_externalspeakers.md)
+- [AUSpatialMixerOutputType.spatialMixerOutputType_Headphones](./spatialmixeroutputtype_headphones.md)
 
 
 ---

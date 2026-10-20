@@ -1,7 +1,8 @@
 # badgeColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color of the item’s badge.
 
@@ -19,17 +20,22 @@ The background color of the item’s badge.
 var badgeColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIColor * badgeColor;
+```
+
 #### Discussion
 
-The default value is `nil`. If you don’t specify a value, the item uses [`systemRed`](uicolor/systemred.md).
+The default value is `nil`. If you don’t specify a value, the item uses [`systemRed`](../uicolor/systemred.md).
 
 ## See Also
 
-- [var badgeValue: String?](uitabbaritem/badgevalue.md)
+### Configuring the item’s badge
+- [var badgeValue: String?](./badgevalue.md)
   The text that the item’s badge displays.
-- [func setBadgeTextAttributes([NSAttributedString.Key : Any]?, for: UIControl.State)](uitabbaritem/setbadgetextattributes(_:for:).md)
+- [func setBadgeTextAttributes([NSAttributedString.Key : Any]?, for: UIControl.State)](./setbadgetextattributes%28_,for%29.md)
   Registers text attributes that the badge uses for the specified state.
-- [func badgeTextAttributes(for: UIControl.State) -> [NSAttributedString.Key : Any]?](uitabbaritem/badgetextattributes(for:).md)
+- [func badgeTextAttributes(for: UIControl.State) -> [NSAttributedString.Key : Any]?](./badgetextattributes%28for%29.md)
   Returns the badge’s text attributes for the specified state.
 
 

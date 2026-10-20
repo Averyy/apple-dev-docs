@@ -1,7 +1,8 @@
 # isRenderingVersionSupported(_:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Checks if a given rendering version is supported on the current build
 
@@ -16,6 +17,10 @@ Checks if a given rendering version is supported on the current build
 
 ```swift
 class func isRenderingVersionSupported(_ renderingVersion: Int) -> Bool
+```
+
+```objc
++ (BOOL) isRenderingVersionSupported:(NSInteger) renderingVersion;
 ```
 
 

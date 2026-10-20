@@ -1,12 +1,13 @@
 # webView(_:shouldChangeTypingStyle:toStyle:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the user should be allowed to change the typing style in a web view.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Returns whether the user should be allowed to change the typing style in a web v
 optional func webView(_ webView: WebView!, shouldChangeTypingStyle currentStyle: DOMCSSStyleDeclaration!, toStyle proposedStyle: DOMCSSStyleDeclaration!) -> Bool
 ```
 
+```objc
+- (BOOL) webView:(WebView *) webView shouldChangeTypingStyle:(DOMCSSStyleDeclaration *) currentStyle toStyle:(DOMCSSStyleDeclaration *) proposedStyle;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user should be allowed to change the typing style in `webView` to `proposedStyle`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the user should be allowed to change the typing style in `webView` to `proposedStyle`; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-You can implement this method to take some other action—for example, set the typing style to a different style—and return [`false`](https://developer.apple.com/documentation/swift/false) .
+You can implement this method to take some other action—for example, set the typing style to a different style—and return [`false`](../../Swift/false.md) .
 
 ## Parameters
 
@@ -30,7 +35,8 @@ You can implement this method to take some other action—for example, set the t
 
 ## See Also
 
-- [func webViewDidChangeTypingStyle(Notification!)](webeditingdelegate/webviewdidchangetypingstyle(_:).md)
+### Related Documentation
+- [func webViewDidChangeTypingStyle(Notification!)](./webviewdidchangetypingstyle%28_%29.md)
   Sent by the default notification center when the user changes the typing style in the web view.
 
 

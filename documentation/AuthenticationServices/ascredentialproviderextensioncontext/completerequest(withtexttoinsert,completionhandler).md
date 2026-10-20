@@ -1,7 +1,8 @@
 # completeRequest(withTextToInsert:completionHandler:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the user-selected text.
 
@@ -12,7 +13,15 @@ Provides the user-selected text.
 ## Declaration
 
 ```swift
+func completeRequest(withTextToInsert text: String, completionHandler: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func completeRequest(withTextToInsert text: String) async -> Bool
+```
+
+```objc
+- (void) completeRequestWithTextToInsert:(NSString *) text completionHandler:(void (^)(BOOL expired)) completionHandler;
 ```
 
 #### Overview

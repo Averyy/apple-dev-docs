@@ -1,7 +1,8 @@
 # allowsSave
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the associated persistent storage is writable.
 
@@ -23,9 +24,10 @@ let allowsSave: Bool
 
 ## See Also
 
-- [let url: URL](modelconfiguration/url.md)
+### Accessing configuration details
+- [let url: URL](./url.md)
   The on-disk location of the schema’s persistent storage.
-- [let isStoredInMemoryOnly: Bool](modelconfiguration/isstoredinmemoryonly.md)
+- [let isStoredInMemoryOnly: Bool](./isstoredinmemoryonly.md)
   A Boolean value that determines whether the associated persistent storage is ephemeral and exists only in memory.
 
 

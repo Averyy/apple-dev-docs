@@ -1,13 +1,14 @@
 # manufacturerIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -16,9 +17,14 @@
 var manufacturerIdentifier: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * manufacturerIdentifier;
+```
+
 ## See Also
 
-- [var productPlanIdentifier: String?](pkaddcarkeypassconfiguration/productplanidentifier.md)
+### Adding identifiers
+- [var productPlanIdentifier: String?](./productplanidentifier.md)
   The product plan identifier (PPID) supplied by the vehicle’s original equipment manufacturer (OEM).
 
 

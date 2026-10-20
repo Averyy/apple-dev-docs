@@ -1,7 +1,8 @@
 # CustomHoverEffect.Content
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The content effect type passed to `body(content:)`.
 

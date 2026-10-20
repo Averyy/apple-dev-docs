@@ -1,7 +1,8 @@
 # filterItems(matching:memberOf:)
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Filters items by a property for an array of possible values.
 

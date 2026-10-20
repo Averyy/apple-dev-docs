@@ -1,7 +1,8 @@
 # readAttributeOptOutState(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeOptOutState(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeOptOutState() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeOptOutStateWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

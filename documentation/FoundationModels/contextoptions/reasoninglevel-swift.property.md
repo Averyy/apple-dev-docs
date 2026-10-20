@@ -1,7 +1,8 @@
 # reasoningLevel
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that controls the amount of reasoning the model is allowed to output before producing a response.
 
@@ -21,7 +22,8 @@ var reasoningLevel: ContextOptions.ReasoningLevel?
 
 ## See Also
 
-- [ContextOptions.ReasoningLevel](contextoptions/reasoninglevel-swift.enum.md)
+### Configuring the reasoning level
+- [ContextOptions.ReasoningLevel](./reasoninglevel-swift.enum.md)
   A level of reasoning the model is allowed to output before producing a response.
 
 

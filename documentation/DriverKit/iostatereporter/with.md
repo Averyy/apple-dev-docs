@@ -1,17 +1,18 @@
 # with
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static IOStateReporter * with(IOService *reportingService, IOReportCategories categories, int nstates, IOReportUnit unit);
 ```
 

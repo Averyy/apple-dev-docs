@@ -2,6 +2,7 @@
 
 **Framework**: Core Spotlight  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generates output data from the specified statistical value.
@@ -22,7 +23,7 @@ nonisolated
 
 #### Return Value
 
-A pipeline data structure with data your stage produced. Make sure the output you return matches the output you specified in the [`outputType`](customstage/outputtype.md) property.
+A pipeline data structure with data your stage produced. Make sure the output you return matches the output you specified in the [`outputType`](./outputtype.md) property.
 
 #### Discussion
 
@@ -32,6 +33,12 @@ If your stage supports a statistical value as input, implement this method and u
 
 - `statisticName`: The name of the statistic. This parameter contains strings like “average”, “max”, “min”, “sum”, “median”, or “stddev”.
 - `value`: The value for the statistic.
+
+## Default Implementations
+
+### CustomStage Implementations
+- [func execute(statistic: String, value: Double) async throws -> SearchPipelineData](./execute%28statistic,value%29-9tt52.md)
+  Generates output data from the specified statistical value.
 
 
 ---

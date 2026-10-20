@@ -1,17 +1,22 @@
 # dataSource
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The committed data source.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var dataSource: WebDataSource? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) WebDataSource * dataSource;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ var dataSource: WebDataSource? { get }
 
 ## See Also
 
-- [var provisionalDataSource: WebDataSource!](webframe/provisionaldatasource.md)
+### Getting the Data Source
+- [var provisionalDataSource: WebDataSource!](./provisionaldatasource.md)
   The provisional data source, or `nil` if either a load request is not in progress or a load request has completed.
 
 

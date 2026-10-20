@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The dispatch queue that the system uses for callbacks.
@@ -20,13 +21,17 @@ The dispatch queue that the system uses for callbacks.
 var queue: dispatch_queue_t? { get set }
 ```
 
+```objc
+@property (atomic, strong, nullable) dispatch_queue_t queue;
+```
+
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
+- [Handling input events](../handling-input-events.md)
 
 #### Discussion
 
-Objects that conform to the [`GCDevicePhysicalInput`](gcdevicephysicalinput.md) protocol dispatch callbacks on the device’s [`handlerQueue`](gcdevice/handlerqueue.md) property by default. If you want to use a different dispatch queue, set this property to the preferred queue before you set callbacks.
+Objects that conform to the [`GCDevicePhysicalInput`](../gcdevicephysicalinput.md) protocol dispatch callbacks on the device’s [`handlerQueue`](../gcdevice/handlerqueue.md) property by default. If you want to use a different dispatch queue, set this property to the preferred queue before you set callbacks.
 
 
 ---

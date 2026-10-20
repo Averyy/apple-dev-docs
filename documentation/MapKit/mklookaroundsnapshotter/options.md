@@ -1,7 +1,8 @@
 # MKLookAroundSnapshotter.Options
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Values you use to customize LookAround snapshots.
 
@@ -18,27 +19,31 @@ Values you use to customize LookAround snapshots.
 class Options
 ```
 
+```objc
+@interface MKLookAroundSnapshotOptions : NSObject
+```
+
 ## Topics
 
 ### Customizing Snaphot Appearance
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mklookaroundsnapshotter/options/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./options/pointofinterestfilter.md)
   A filter to use to customize what map features are visible in the snapshot.
-- [var size: CGSize](mklookaroundsnapshotter/options/size.md)
+- [var size: CGSize](./options/size.md)
   The requested size of the snapshot image.
-- [var traitCollection: UITraitCollection](mklookaroundsnapshotter/options/traitcollection.md)
+- [var traitCollection: UITraitCollection](./options/traitcollection.md)
   A collection of traits that describes orientation and other characteristics of the snapshot.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

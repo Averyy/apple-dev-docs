@@ -1,7 +1,8 @@
 # resolutionMetric(switchingResolutions:boundingBox:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a resolution metric for a level of detail component to switch with.
 
@@ -30,7 +31,8 @@ A configured resolution metric selection strategy.
 
 ## See Also
 
-- [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric](levelofdetailcomponent/selectionstrategy/resolutionmetric.md)
+### Selecting by resolution metric
+- [LevelOfDetailComponent.SelectionStrategy.ResolutionMetric](./resolutionmetric.md)
 
 
 ---

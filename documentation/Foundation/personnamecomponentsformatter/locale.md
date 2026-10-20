@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the locale to format names.
 
@@ -18,6 +19,10 @@ Specifies the locale to format names.
 
 ```swift
 var locale: Locale! { get set }
+```
+
+```objc
+@property (copy, null_resettable) NSLocale * locale;
 ```
 
 #### Discussion

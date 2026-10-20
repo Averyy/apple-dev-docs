@@ -1,7 +1,8 @@
 # BNNSArithmeticAdd
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An operation that calculates the element-wise sum of its two inputs.
 
@@ -20,29 +21,34 @@ An operation that calculates the element-wise sum of its two inputs.
 var BNNSArithmeticAdd: BNNSArithmeticFunction { get }
 ```
 
+```c
+BNNSArithmeticAdd
+```
+
 ## See Also
 
-- [var BNNSArithmeticSubtract: BNNSArithmeticFunction](bnnsarithmeticsubtract.md)
+### Binary Arithmetic Functions
+- [var BNNSArithmeticSubtract: BNNSArithmeticFunction](./bnnsarithmeticsubtract.md)
   An operation that calculates the element-wise difference of its two inputs.
-- [var BNNSArithmeticDivide: BNNSArithmeticFunction](bnnsarithmeticdivide.md)
+- [var BNNSArithmeticDivide: BNNSArithmeticFunction](./bnnsarithmeticdivide.md)
   An operation that calculates the element-wise division of its two inputs.
-- [var BNNSArithmeticDivideNoNaN: BNNSArithmeticFunction](bnnsarithmeticdividenonan.md)
+- [var BNNSArithmeticDivideNoNaN: BNNSArithmeticFunction](./bnnsarithmeticdividenonan.md)
   An operation that calculates the element-wise division of its two inputs and returns zero if the divisor is zero, even if the first input is NaN or infinity.
-- [var BNNSArithmeticMultiply: BNNSArithmeticFunction](bnnsarithmeticmultiply.md)
+- [var BNNSArithmeticMultiply: BNNSArithmeticFunction](./bnnsarithmeticmultiply.md)
   An operation that calculates the element-wise product of its two inputs.
-- [var BNNSArithmeticMultiplyNoNaN: BNNSArithmeticFunction](bnnsarithmeticmultiplynonan.md)
+- [var BNNSArithmeticMultiplyNoNaN: BNNSArithmeticFunction](./bnnsarithmeticmultiplynonan.md)
   An operation that calculates the element-wise product of its two inputs and returns zero, even if the first input is NaN or infinity.
-- [var BNNSArithmeticPow: BNNSArithmeticFunction](bnnsarithmeticpow.md)
+- [var BNNSArithmeticPow: BNNSArithmeticFunction](./bnnsarithmeticpow.md)
   An operation that calculates the element-wise first input raised to the power of its second input.
-- [var BNNSArithmeticMaximum: BNNSArithmeticFunction](bnnsarithmeticmaximum.md)
+- [var BNNSArithmeticMaximum: BNNSArithmeticFunction](./bnnsarithmeticmaximum.md)
   An operation that calculates the element-wise maximum of its two inputs.
-- [var BNNSArithmeticMinimum: BNNSArithmeticFunction](bnnsarithmeticminimum.md)
+- [var BNNSArithmeticMinimum: BNNSArithmeticFunction](./bnnsarithmeticminimum.md)
   An operation that calculates the element-wise minimum of its two inputs.
-- [var BNNSArithmeticFloorDivide: BNNSArithmeticFunction](bnnsarithmeticfloordivide.md)
+- [var BNNSArithmeticFloorDivide: BNNSArithmeticFunction](./bnnsarithmeticfloordivide.md)
   An operation that calculates the element-wise floor division of its inputs.
-- [var BNNSArithmeticTruncDivide: BNNSArithmeticFunction](bnnsarithmetictruncdivide.md)
+- [var BNNSArithmeticTruncDivide: BNNSArithmeticFunction](./bnnsarithmetictruncdivide.md)
   An operation that calculates the element-wise truncated division of its inputs.
-- [var BNNSArithmeticTruncRemainder: BNNSArithmeticFunction](bnnsarithmetictruncremainder.md)
+- [var BNNSArithmeticTruncRemainder: BNNSArithmeticFunction](./bnnsarithmetictruncremainder.md)
   An operation that calculates the element-wise remainder of truncated division of its inputs.
 
 

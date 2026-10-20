@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the elements of the collection.
 
@@ -11,7 +12,7 @@ Returns an iterator over the elements of the collection.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ Returns an iterator over the elements of the collection.
 
 ## See Also
 
-- [Scene.AnchorCollection.Iterator](scene/anchorcollection/iterator.md)
+### Iterating over the collection
+- [Scene.AnchorCollection.Iterator](./iterator.md)
   An iterator that presents the elements of the collection.
-- [Scene.AnchorCollection.Element](scene/anchorcollection/element.md)
+- [Scene.AnchorCollection.Element](./element.md)
   The type of element traversed by the iterator.
 
 

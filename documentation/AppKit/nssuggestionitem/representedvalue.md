@@ -1,7 +1,8 @@
 # representedValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value represented by the receiver.
 

@@ -1,7 +1,8 @@
 # accessibilityBrailleMapRenderRegion
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A region of the UI that the system converts into a braille map and displays on the braille display.
 
@@ -18,6 +19,10 @@ A region of the UI that the system converts into a braille map and displays on t
 
 ```swift
 optional var accessibilityBrailleMapRenderRegion: CGRect { get set }
+```
+
+```objc
+@property (nonatomic, assign) CGRect accessibilityBrailleMapRenderRegion;
 ```
 
 #### Discussion

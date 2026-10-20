@@ -1,7 +1,8 @@
 # LazySequenceProtocol
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A sequence on which normally-eager sequence operations are implemented lazily.
 
@@ -130,49 +131,50 @@ Don’t actually use `map` for this purpose, however, because it creates and dis
 ## Topics
 
 ### Associated Types
-- [associatedtype Elements : Sequence = Self](lazysequenceprotocol/elements-swift.associatedtype.md)
+- [associatedtype Elements : Sequence = Self](./lazysequenceprotocol/elements-swift.associatedtype.md)
   A `Sequence` that can contain the same elements as this one, possibly with a simpler type.
 ### Instance Properties
-- [var elements: Self.Elements](lazysequenceprotocol/elements-6570c.md)
+- [var elements: Self.Elements](./lazysequenceprotocol/elements-6570c.md)
   A sequence containing the same elements as this one, possibly with a simpler type.
-- [var lazy: Self.Elements](lazysequenceprotocol/lazy-2u2ey.md)
-- [var lazy: LazySequence<Self.Elements>](lazysequenceprotocol/lazy-4q4ln.md)
+- [var lazy: Self.Elements](./lazysequenceprotocol/lazy-2u2ey.md)
+- [var lazy: LazySequence<Self.Elements>](./lazysequenceprotocol/lazy-4q4ln.md)
 ### Instance Methods
-- [func compactMap<ElementOfResult>((Self.Elements.Element) -> ElementOfResult?) -> LazyMapSequence<LazyFilterSequence<LazyMapSequence<Self.Elements, ElementOfResult?>>, ElementOfResult>](lazysequenceprotocol/compactmap(_:).md)
+- [func compactMap<ElementOfResult>((Self.Elements.Element) -> ElementOfResult?) -> LazyMapSequence<LazyFilterSequence<LazyMapSequence<Self.Elements, ElementOfResult?>>, ElementOfResult>](./lazysequenceprotocol/compactmap%28_%29.md)
   Returns the non-`nil` results of mapping the given transformation over this sequence.
-- [func drop(while: (Self.Elements.Element) -> Bool) -> LazyDropWhileSequence<Self.Elements>](lazysequenceprotocol/drop(while:).md)
+- [func drop(while: (Self.Elements.Element) -> Bool) -> LazyDropWhileSequence<Self.Elements>](./lazysequenceprotocol/drop%28while%29.md)
   Returns a lazy sequence that skips any initial elements that satisfy `predicate`.
-- [func filter((Self.Elements.Element) -> Bool) -> LazyFilterSequence<Self.Elements>](lazysequenceprotocol/filter(_:).md)
+- [func filter((Self.Elements.Element) -> Bool) -> LazyFilterSequence<Self.Elements>](./lazysequenceprotocol/filter%28_%29.md)
   Returns the elements of `self` that satisfy `isIncluded`.
-- [func flatMap<ElementOfResult>((Self.Elements.Element) -> ElementOfResult?) -> LazyMapSequence<LazyFilterSequence<LazyMapSequence<Self.Elements, ElementOfResult?>>, ElementOfResult>](lazysequenceprotocol/flatmap(_:)-11y2e.md)
+- [func flatMap<ElementOfResult>((Self.Elements.Element) -> ElementOfResult?) -> LazyMapSequence<LazyFilterSequence<LazyMapSequence<Self.Elements, ElementOfResult?>>, ElementOfResult>](./lazysequenceprotocol/flatmap%28_%29-11y2e.md)
   Returns the non-`nil` results of mapping the given transformation over this sequence.
-- [func flatMap<SegmentOfResult>((Self.Elements.Element) -> SegmentOfResult) -> LazySequence<FlattenSequence<LazyMapSequence<Self.Elements, SegmentOfResult>>>](lazysequenceprotocol/flatmap(_:)-9blrr.md)
+- [func flatMap<SegmentOfResult>((Self.Elements.Element) -> SegmentOfResult) -> LazySequence<FlattenSequence<LazyMapSequence<Self.Elements, SegmentOfResult>>>](./lazysequenceprotocol/flatmap%28_%29-9blrr.md)
   Returns the concatenated results of mapping the given transformation over this sequence.
-- [func joined() -> LazySequence<FlattenSequence<Self.Elements>>](lazysequenceprotocol/joined.md)
+- [func joined() -> LazySequence<FlattenSequence<Self.Elements>>](./lazysequenceprotocol/joined%28%29.md)
   Returns a lazy sequence that concatenates the elements of this sequence of sequences.
-- [func map<U>((Self.Element) -> U) -> LazyMapSequence<Self.Elements, U>](lazysequenceprotocol/map(_:).md)
+- [func map<U>((Self.Element) -> U) -> LazyMapSequence<Self.Elements, U>](./lazysequenceprotocol/map%28_%29.md)
   Returns a `LazyMapSequence` over this `Sequence`.  The elements of the result are computed lazily, each time they are read, by calling `transform` function on a base element.
-- [func prefix(while: (Self.Elements.Element) -> Bool) -> LazyPrefixWhileSequence<Self.Elements>](lazysequenceprotocol/prefix(while:).md)
+- [func prefix(while: (Self.Elements.Element) -> Bool) -> LazyPrefixWhileSequence<Self.Elements>](./lazysequenceprotocol/prefix%28while%29.md)
   Returns a lazy sequence of the initial consecutive elements that satisfy `predicate`.
 
 ## Relationships
 
 ### Inherits From
-- [Sequence](sequence.md)
+- [Sequence](./sequence.md)
 ### Inherited By
-- [LazyCollectionProtocol](lazycollectionprotocol.md)
+- [LazyCollectionProtocol](./lazycollectionprotocol.md)
 ### Conforming Types
-- [LazyDropWhileSequence](lazydropwhilesequence.md)
-- [LazyFilterSequence](lazyfiltersequence.md)
-- [LazyMapSequence](lazymapsequence.md)
-- [LazyPrefixWhileSequence](lazyprefixwhilesequence.md)
-- [LazySequence](lazysequence.md)
-- [ReversedCollection](reversedcollection.md)
-- [Slice](slice.md)
+- [LazyDropWhileSequence](./lazydropwhilesequence.md)
+- [LazyFilterSequence](./lazyfiltersequence.md)
+- [LazyMapSequence](./lazymapsequence.md)
+- [LazyPrefixWhileSequence](./lazyprefixwhilesequence.md)
+- [LazySequence](./lazysequence.md)
+- [ReversedCollection](./reversedcollection.md)
+- [Slice](./slice.md)
 
 ## See Also
 
-- [protocol LazyCollectionProtocol](lazycollectionprotocol.md)
+### Lazy Collections
+- [protocol LazyCollectionProtocol](./lazycollectionprotocol.md)
 
 
 ---

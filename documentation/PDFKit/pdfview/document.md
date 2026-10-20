@@ -1,7 +1,8 @@
 # document
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the document associated with a `PDFView` object.
 
@@ -19,9 +20,14 @@ Returns the document associated with a `PDFView` object.
 var document: PDFDocument? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) PDFDocument * document;
+```
+
 ## See Also
 
-- [func takePasswordFrom(Any)](pdfview/takepasswordfrom(_:).md)
+### Associating a Document with a View
+- [func takePasswordFrom(Any)](./takepasswordfrom%28_%29.md)
   Unlocks with the password from the specified sender.
 
 

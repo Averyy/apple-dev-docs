@@ -1,46 +1,48 @@
 # Memory heaps
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: API Collection
 
 Take control of your app’s GPU memory management by creating a large memory allocation for various buffers, textures, and other resources.
 
 #### Overview
 
-Use an [`MTLHeap`](mtlheap.md) to quickly create and destroy GPU resources. Heaps can also help your apps save memory by aliasing portions of it in multiple places.
+Use an [`MTLHeap`](./mtlheap.md) to quickly create and destroy GPU resources. Heaps can also help your apps save memory by aliasing portions of it in multiple places.
 
-Create a heap by calling an [`MTLDevice`](mtldevice.md) instance’s [`makeHeap(descriptor:)`](mtldevice/makeheap(descriptor:).md) method.
+Create a heap by calling an [`MTLDevice`](./mtldevice.md) instance’s [`makeHeap(descriptor:)`](./mtldevice/makeheap%28descriptor%29.md) method.
 
-> **Note**:  Metal only synchronizes resources that you create from a Metal heap and that have the [`hazardTrackingMode`](mtlheap/hazardtrackingmode.md) property set to [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md).
+> **Note**:  Metal only synchronizes resources that you create from a Metal heap and that have the [`hazardTrackingMode`](./mtlheap/hazardtrackingmode.md) property set to [`MTLHazardTrackingMode.tracked`](./mtlhazardtrackingmode/tracked.md).
 
 ## Topics
 
 ### Resource memory allocation and management
-- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
+- [Using argument buffers with resource heaps](./using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [Implementing a multistage image filter using heaps and events](implementing-a-multistage-image-filter-using-heaps-and-events.md)
+- [Implementing a multistage image filter using heaps and events](./implementing-a-multistage-image-filter-using-heaps-and-events.md)
   Use events to synchronize access to resources allocated on a heap.
-- [Implementing a multistage image filter using heaps and fences](implementing-a-multistage-image-filter-using-heaps-and-fences.md)
+- [Implementing a multistage image filter using heaps and fences](./implementing-a-multistage-image-filter-using-heaps-and-fences.md)
   Use fences to synchronize access to resources allocated on a heap.
-- [protocol MTLHeap](mtlheap.md)
+- [protocol MTLHeap](./mtlheap.md)
   A memory pool from which you can suballocate resources.
-- [class MTLHeapDescriptor](mtlheapdescriptor.md)
+- [class MTLHeapDescriptor](./mtlheapdescriptor.md)
   A configuration that customizes the behavior for a Metal memory heap.
-- [enum MTLHeapType](mtlheaptype.md)
+- [enum MTLHeapType](./mtlheaptype.md)
   The options you use to choose the heap type.
-- [struct MTLSizeAndAlign](mtlsizeandalign.md)
+- [struct MTLSizeAndAlign](./mtlsizeandalign.md)
   The size and alignment of a resource, in bytes.
 
 ## See Also
 
-- [Resource fundamentals](resource-fundamentals.md)
+### Resources
+- [Resource fundamentals](./resource-fundamentals.md)
   Control the common attributes of all Metal memory resources, including buffers and textures, and how to configure their underlying memory.
-- [Buffers](buffers.md)
+- [Buffers](./buffers.md)
   Create and manage untyped data your app uses to exchange information with its shader functions.
-- [Textures](textures.md)
+- [Textures](./textures.md)
   Create and manage typed data your app uses to exchange information with its shader functions.
-- [Resource loading](resource-loading.md)
+- [Resource loading](./resource-loading.md)
   Load assets in your games and apps quickly by running a dedicated input/output queue alongside your GPU tasks.
-- [Resource synchronization](resource-synchronization.md)
+- [Resource synchronization](./resource-synchronization.md)
   Prevent multiple commands that can access the same resources simultaneously by coordinating those reads and writes with barriers, fences, or events.
 
 

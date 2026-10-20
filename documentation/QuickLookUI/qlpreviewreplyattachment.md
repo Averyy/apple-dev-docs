@@ -1,7 +1,8 @@
 # QLPreviewReplyAttachment
 
 **Framework**: Quick Look UI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An attachment for a Quick Look preview reply that provides additional content for the system to display a preview.
 
@@ -14,11 +15,15 @@ An attachment for a Quick Look preview reply that provides additional content fo
 class QLPreviewReplyAttachment
 ```
 
+```objc
+@interface QLPreviewReplyAttachment : NSObject
+```
+
 #### Overview
 
-When providing a data-based Quick Look preview with HTML, use [`QLPreviewReplyAttachment`](qlpreviewreplyattachment.md) to include images, CSS, and other linked content in the HTML of the preview.
+When providing a data-based Quick Look preview with HTML, use [`QLPreviewReplyAttachment`](./qlpreviewreplyattachment.md) to include images, CSS, and other linked content in the HTML of the preview.
 
-Reference content in your HTML using the `CID` notation for the reference. For example, if your HTML preview response includes an image, create a [`QLPreviewReplyAttachment`](qlpreviewreplyattachment.md) with the image, add it to the reply’s [`attachments`](qlpreviewreply/attachments.md) with an associated string, and reference the image with the associated string, prefixed by `cid:`. The following example illustrates returning HTML as a preview reply with an image as an attachment:
+Reference content in your HTML using the `CID` notation for the reference. For example, if your HTML preview response includes an image, create a [`QLPreviewReplyAttachment`](./qlpreviewreplyattachment.md) with the image, add it to the reply’s [`attachments`](./qlpreviewreply/attachments.md) with an associated string, and reference the image with the associated string, prefixed by `cid:`. The following example illustrates returning HTML as a preview reply with an image as an attachment:
 
 ```swift
 let reply = QLPreviewReply(dataOfContentType: .html,
@@ -52,33 +57,34 @@ reply.title = "HTML Preview Example"
 ## Topics
 
 ### Creating a preview reply attachment
-- [init(data: Data, contentType: UTType)](qlpreviewreplyattachment/init(data:contenttype:).md)
+- [init(data: Data, contentType: UTType)](./qlpreviewreplyattachment/init%28data,contenttype%29.md)
   Creates a preview reply attachment with the specified type.
 ### Inspecting a preview reply attachment
-- [var contentType: UTType](qlpreviewreplyattachment/contenttype.md)
+- [var contentType: UTType](./qlpreviewreplyattachment/contenttype.md)
   The content type of the preview attachment.
-- [var data: Data](qlpreviewreplyattachment/data.md)
+- [var data: Data](./qlpreviewreplyattachment/data.md)
   The data of the preview attachment.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class QLPreviewProvider](qlpreviewprovider.md)
+### Data-based Preview Extensions
+- [class QLPreviewProvider](./qlpreviewprovider.md)
   A class that you subclass to provide a data-based Quick Look preview extension.
-- [class QLFilePreviewRequest](qlfilepreviewrequest.md)
+- [class QLFilePreviewRequest](./qlfilepreviewrequest.md)
   A Quick Look preview request that indicates the content to preview.
-- [class QLPreviewReply](qlpreviewreply.md)
+- [class QLPreviewReply](./qlpreviewreply.md)
   The class you create when providing a data-based Quick Look preview extension.
 
 

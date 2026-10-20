@@ -1,7 +1,8 @@
 # CVMutablePixelBuffer.Pool.Configuration
 
 **Framework**: Core Video  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration passed to pixel buffer pool on creation.
 
@@ -23,20 +24,20 @@ struct Configuration
 ## Topics
 
 ### Initializers
-- [init(ageOutDuration: TimeInterval, minimumBufferCount: Int)](cvmutablepixelbuffer/pool/configuration/init(ageoutduration:minimumbuffercount:).md)
+- [init(ageOutDuration: TimeInterval, minimumBufferCount: Int)](./configuration/init%28ageoutduration,minimumbuffercount%29.md)
   Create new configuration instance
 ### Instance Properties
-- [var ageOutDuration: TimeInterval](cvmutablepixelbuffer/pool/configuration/ageoutduration.md)
+- [var ageOutDuration: TimeInterval](./configuration/ageoutduration.md)
   Backing memory of released buffers is kept around for this duration before being freed (default is 1 second). If set to 0, the backing memory of released buffers is freed immediately.
-- [var minimumBufferCount: Int](cvmutablepixelbuffer/pool/configuration/minimumbuffercount.md)
+- [var minimumBufferCount: Int](./configuration/minimumbuffercount.md)
   The pool keeps at least this many buffers alive. These buffers do not participate in the age-out mechanism.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

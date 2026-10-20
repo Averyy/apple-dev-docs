@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,12 +19,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kINQUIRY_PERIPHERAL_RMB_BitMask](1643304-anonymous/kinquiry_peripheral_rmb_bitmask.md)
-- [kINQUIRY_PERIPHERAL_RMB_MediumFixed](1643304-anonymous/kinquiry_peripheral_rmb_mediumfixed.md)
-- [kINQUIRY_PERIPHERAL_RMB_MediumRemovable](1643304-anonymous/kinquiry_peripheral_rmb_mediumremovable.md)
-- [kINQUIRY_PERIPHERAL_RMB_BitMask](../driverkit/kinquiry_peripheral_rmb_bitmask.md)
-- [kINQUIRY_PERIPHERAL_RMB_MediumFixed](../driverkit/kinquiry_peripheral_rmb_mediumfixed.md)
-- [kINQUIRY_PERIPHERAL_RMB_MediumRemovable](../driverkit/kinquiry_peripheral_rmb_mediumremovable.md)
+- [kINQUIRY_PERIPHERAL_RMB_BitMask](./api-1643304-anonymous/kinquiry_peripheral_rmb_bitmask.md)
+- [kINQUIRY_PERIPHERAL_RMB_MediumFixed](./api-1643304-anonymous/kinquiry_peripheral_rmb_mediumfixed.md)
+- [kINQUIRY_PERIPHERAL_RMB_MediumRemovable](./api-1643304-anonymous/kinquiry_peripheral_rmb_mediumremovable.md)
+- [kINQUIRY_PERIPHERAL_RMB_BitMask](../DriverKit/kinquiry_peripheral_rmb_bitmask.md)
+- [kINQUIRY_PERIPHERAL_RMB_MediumFixed](../DriverKit/kinquiry_peripheral_rmb_mediumfixed.md)
+- [kINQUIRY_PERIPHERAL_RMB_MediumRemovable](../DriverKit/kinquiry_peripheral_rmb_mediumremovable.md)
 
 
 ---

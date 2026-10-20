@@ -1,7 +1,8 @@
 # init(source:uniforms:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new shader object using the specified source and uniform data.
 
@@ -10,7 +11,7 @@ Initializes a new shader object using the specified source and uniform data.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Initializes a new shader object using the specified source and uniform data.
 
 ```swift
 init(source: String, uniforms: [SKUniform])
+```
+
+```objc
+- (instancetype) initWithSource:(NSString *) source uniforms:(NSArray<SKUniform *> *) uniforms;
 ```
 
 #### Return Value
@@ -31,11 +36,12 @@ An initialized shader object.
 
 ## See Also
 
-- [Creating a Custom Fragment Shader](creating-a-custom-fragment-shader.md)
+### Creating a Shader
+- [Creating a Custom Fragment Shader](../creating-a-custom-fragment-shader.md)
   Write a fragment shader using the set of SpriteKit-exposed symbols, and supply it with custom data.
-- [convenience init(fileNamed: String)](skshader/init(filenamed:).md)
+- [convenience init(fileNamed: String)](./init%28filenamed%29.md)
   Creates a new shader object by loading the source for a fragment shader from a file stored in the app’s bundle.
-- [init(source: String)](skshader/init(source:).md)
+- [init(source: String)](./init%28source%29.md)
   Initializes a new shader object using the specified source code.
 
 

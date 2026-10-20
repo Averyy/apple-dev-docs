@@ -1,7 +1,8 @@
 # init(contentsOf:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a signature list from a file.
 
@@ -12,6 +13,10 @@ Creates a signature list from a file.
 
 ```swift
 init(contentsOf url: URL) throws
+```
+
+```objc
+- (instancetype) initWithContentsOfURL:(NSURL *) url error:(NSError **) error;
 ```
 
 ## Parameters

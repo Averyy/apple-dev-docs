@@ -1,7 +1,8 @@
 # maximumDegreesOfRotation
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of degrees that the user can rotate the wheel.
 
@@ -13,6 +14,10 @@ The maximum number of degrees that the user can rotate the wheel.
 
 ```swift
 var maximumDegreesOfRotation: Float { get }
+```
+
+```objc
+@property (readonly) float maximumDegreesOfRotation;
 ```
 
 

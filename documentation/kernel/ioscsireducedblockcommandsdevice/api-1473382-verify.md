@@ -1,14 +1,15 @@
 # VERIFY
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool VERIFY(SCSITaskIdentifier request, SCSICmdField4Byte LOGICAL_BLOCK_ADDRESS, SCSICmdField2Byte VERIFICATION_LENGTH);
 ```
 

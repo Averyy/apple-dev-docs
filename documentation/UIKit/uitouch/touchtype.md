@@ -1,7 +1,8 @@
 # UITouch.TouchType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of touch received.
 
@@ -18,56 +19,61 @@ The type of touch received.
 enum TouchType
 ```
 
+```c
+enum UITouchType : NSInteger;
+```
+
 ## Topics
 
 ### Touch types
-- [UITouch.TouchType.direct](uitouch/touchtype/direct.md)
+- [UITouch.TouchType.direct](./touchtype/direct.md)
   A touch resulting from direct contact with the screen.
-- [UITouch.TouchType.indirect](uitouch/touchtype/indirect.md)
+- [UITouch.TouchType.indirect](./touchtype/indirect.md)
   A touch that doesn’t result from contact with the screen.
-- [UITouch.TouchType.pencil](uitouch/touchtype/pencil.md)
+- [UITouch.TouchType.pencil](./touchtype/pencil.md)
   A touch from Apple Pencil.
-- [UITouch.TouchType.indirectPointer](uitouch/touchtype/indirectpointer.md)
+- [UITouch.TouchType.indirectPointer](./touchtype/indirectpointer.md)
   A touch resulting from a button-based, indirect input device that describes the input sequence from button press to button release.
 ### Deprecated
-- [static var stylus: UITouch.TouchType](uitouch/touchtype/stylus.md)
+- [static var stylus: UITouch.TouchType](./touchtype/stylus.md)
   A touch from a stylus.
 ### Initializers
-- [init?(rawValue: Int)](uitouch/touchtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./touchtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var tapCount: Int](uitouch/tapcount.md)
+### Getting touch attributes
+- [var tapCount: Int](./tapcount.md)
   The number of times the finger was tapped for this given touch.
-- [var timestamp: TimeInterval](uitouch/timestamp.md)
+- [var timestamp: TimeInterval](./timestamp.md)
   The time when the touch occurred or when it was last mutated.
-- [var type: UITouch.TouchType](uitouch/type.md)
+- [var type: UITouch.TouchType](./type.md)
   The type of the touch.
-- [var phase: UITouch.Phase](uitouch/phase-swift.property.md)
+- [var phase: UITouch.Phase](./phase-swift.property.md)
   The phase of the touch.
-- [UITouch.Phase](uitouch/phase-swift.enum.md)
+- [UITouch.Phase](./phase-swift.enum.md)
   The phase of a touch event.
-- [var force: CGFloat](uitouch/force.md)
+- [var force: CGFloat](./force.md)
   The force of the touch, where a value of `1.0` represents the force of an average touch (predetermined by the system, not user-specific).
-- [var maximumPossibleForce: CGFloat](uitouch/maximumpossibleforce.md)
+- [var maximumPossibleForce: CGFloat](./maximumpossibleforce.md)
   The maximum possible force for a touch.
-- [var altitudeAngle: CGFloat](uitouch/altitudeangle.md)
+- [var altitudeAngle: CGFloat](./altitudeangle.md)
   The altitude (in radians) of the stylus.
-- [func azimuthAngle(in: UIView?) -> CGFloat](uitouch/azimuthangle(in:).md)
+- [func azimuthAngle(in: UIView?) -> CGFloat](./azimuthangle%28in%29.md)
   Returns the azimuth angle (in radians) of the stylus.
-- [func azimuthUnitVector(in: UIView?) -> CGVector](uitouch/azimuthunitvector(in:).md)
+- [func azimuthUnitVector(in: UIView?) -> CGVector](./azimuthunitvector%28in%29.md)
   Returns a unit vector that points in the direction of the azimuth of the stylus.
-- [var rollAngle: CGFloat](uitouch/rollangle.md)
+- [var rollAngle: CGFloat](./rollangle.md)
   A value that represents the current barrel-roll angle of Apple Pencil.
 
 

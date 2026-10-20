@@ -1,7 +1,8 @@
 # init(frameRate:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 14.0+
@@ -19,7 +20,8 @@ init(frameRate: Int)
 
 ## See Also
 
-- [init(Int)](vnvideoprocessor/frameratecadence/init(_:).md)
+### Creating a Cadence
+- [init(Int)](./init%28_%29.md)
   Creates a new frame-based cadence with a frame rate.
 
 

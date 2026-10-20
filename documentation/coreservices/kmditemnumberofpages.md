@@ -1,7 +1,8 @@
 # kMDItemNumberOfPages
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Number of pages in the document. A CFNumber.
 
@@ -12,6 +13,10 @@ Number of pages in the document. A CFNumber.
 
 ```swift
 let kMDItemNumberOfPages: CFString!
+```
+
+```c
+const CFStringRef kMDItemNumberOfPages;
 ```
 
 

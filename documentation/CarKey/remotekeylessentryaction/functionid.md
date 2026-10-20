@@ -1,7 +1,8 @@
 # functionID
 
 **Framework**: CarKey  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vehicle-specific code that identifies which feature you want to control.
 
@@ -24,9 +25,10 @@ You define the function identifiers for your vehicles and what features they rep
 
 ## See Also
 
-- [let actionID: ActionIdentifier](remotekeylessentryaction/actionid.md)
+### Getting the Action Details
+- [let actionID: ActionIdentifier](./actionid.md)
   The vehicle-specific code that identifies what action to take on the targeted feature.
-- [let recipientVehicleID: String](remotekeylessentryaction/recipientvehicleid.md)
+- [let recipientVehicleID: String](./recipientvehicleid.md)
   The vehicle to receive the action request.
 
 

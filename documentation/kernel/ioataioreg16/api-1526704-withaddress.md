@@ -1,14 +1,15 @@
 # withAddress
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 static IOATAIOReg16 * withAddress(UInt16 address);
 ```
 

@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the next element in the sequence.
 
@@ -25,7 +26,8 @@ The next element, or `nil` if no more exist.
 
 ## See Also
 
-- [AVAssetImageGenerator.Images.Element](avassetimagegenerator/images/element.md)
+### Iterating elements
+- [AVAssetImageGenerator.Images.Element](./element.md)
   An element that provides the result of an image generation request.
 
 

@@ -1,12 +1,15 @@
 # SecTransformMetaAttributeType.deferred
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The attribute defers notifications.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
@@ -14,9 +17,13 @@ The attribute defers notifications.
 case deferred
 ```
 
+```c
+kSecTransformMetaAttributeDeferred
+```
+
 #### Discussion
 
-Determines if the AttributeSetNotification notification or the ProcessData blocks are deferred until [`SecTransformExecute(_:_:)`](sectransformexecute(_:_:).md) is called. This metadata value has a default value of [`true`](https://developer.apple.com/documentation/swift/true) for the input attribute but is [`false`](https://developer.apple.com/documentation/swift/false) for all other attributes.
+Determines if the AttributeSetNotification notification or the ProcessData blocks are deferred until [`SecTransformExecute(_:_:)`](../sectransformexecute%28_,_%29.md) is called. This metadata value has a default value of [`true`](../../Swift/true.md) for the input attribute but is [`false`](../../Swift/false.md) for all other attributes.
 
 
 ---

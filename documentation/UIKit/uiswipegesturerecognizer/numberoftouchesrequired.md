@@ -1,7 +1,8 @@
 # numberOfTouchesRequired
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of touches necessary for swipe recognition.
 
@@ -17,9 +18,13 @@ The number of touches necessary for swipe recognition.
 var numberOfTouchesRequired: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger numberOfTouchesRequired;
+```
+
 ## Mentions
 
-- [Handling swipe gestures](handling-swipe-gestures.md)
+- [Handling swipe gestures](../handling-swipe-gestures.md)
 
 #### Discussion
 
@@ -27,9 +32,10 @@ The default value is `1`.
 
 ## See Also
 
-- [var direction: UISwipeGestureRecognizer.Direction](uiswipegesturerecognizer/direction-swift.property.md)
+### Configuring the gesture
+- [var direction: UISwipeGestureRecognizer.Direction](./direction-swift.property.md)
   The permitted direction of the swipe for this gesture recognizer.
-- [UISwipeGestureRecognizer.Direction](uiswipegesturerecognizer/direction-swift.struct.md)
+- [UISwipeGestureRecognizer.Direction](./direction-swift.struct.md)
   The direction of the swipe.
 
 

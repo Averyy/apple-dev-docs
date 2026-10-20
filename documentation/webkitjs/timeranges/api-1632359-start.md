@@ -1,7 +1,8 @@
 # start
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 3.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 unrestricted double start(
     unsigned long index
 );

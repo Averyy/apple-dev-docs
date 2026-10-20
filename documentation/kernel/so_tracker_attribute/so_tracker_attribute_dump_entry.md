@@ -1,14 +1,15 @@
 # SO_TRACKER_ATTRIBUTE_DUMP_ENTRY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 SO_TRACKER_ATTRIBUTE_DUMP_ENTRY = 7
 ```
 

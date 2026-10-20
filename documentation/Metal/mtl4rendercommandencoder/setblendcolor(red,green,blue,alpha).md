@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures each pixel component value, including alpha, for the render pipelineâ€™s constant blend color.
@@ -20,6 +21,10 @@ Configures each pixel component value, including alpha, for the render pipelineâ
 func setBlendColor(red: Float, green: Float, blue: Float, alpha: Float)
 ```
 
+```objc
+- (void) setBlendColorRed:(float) red green:(float) green blue:(float) blue alpha:(float) alpha;
+```
+
 ## Parameters
 
 - `red`: A value for the red component for the blend color constant.
@@ -29,7 +34,8 @@ func setBlendColor(red: Float, green: Float, blue: Float, alpha: Float)
 
 ## See Also
 
-- [func setColorAttachmentMap(MTLLogicalToPhysicalColorAttachmentMap?)](mtl4rendercommandencoder/setcolorattachmentmap(_:).md)
+### Configuring blend behavior
+- [func setColorAttachmentMap(MTLLogicalToPhysicalColorAttachmentMap?)](./setcolorattachmentmap%28_%29.md)
   Sets the mapping from logical shader color output to physical render pass color attachments.
 
 

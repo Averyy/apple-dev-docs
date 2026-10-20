@@ -1,17 +1,22 @@
 # textViewForBeginningOfSelection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text view that contains the first glyph in the selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 unowned(unsafe) var textViewForBeginningOfSelection: NSTextView? { get }
+```
+
+```objc
+@property (assign, readonly, nullable) NSTextView * textViewForBeginningOfSelection;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ This property does not cause layout if the beginning of the selected range is no
 
 ## See Also
 
-- [func layoutManagerOwnsFirstResponder(in: NSWindow) -> Bool](nslayoutmanager/layoutmanagerownsfirstresponder(in:).md)
+### Managing the responder chain
+- [func layoutManagerOwnsFirstResponder(in: NSWindow) -> Bool](./layoutmanagerownsfirstresponder%28in%29.md)
   Indicates whether the first responder in the specified window is a text view for the layout manager.
-- [var firstTextView: NSTextView?](nslayoutmanager/firsttextview.md)
+- [var firstTextView: NSTextView?](./firsttextview.md)
   The first text view in the layout manager’s series of text views.
 
 

@@ -1,7 +1,8 @@
 # isSelected
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the annotation view is in a selected state.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether the annotation view is in a selected stat
 var isSelected: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isSelected) BOOL selected;
+```
+
 #### Discussion
 
-Don’t set the value of this property directly. If the property contains [`true`](https://developer.apple.com/documentation/swift/true), the annotation view is displaying a callout.
+Don’t set the value of this property directly. If the property contains [`true`](../../Swift/true.md), the annotation view is displaying a callout.
 
 ## See Also
 
-- [func setSelected(Bool, animated: Bool)](mkannotationview/setselected(_:animated:).md)
+### Managing the selection state
+- [func setSelected(Bool, animated: Bool)](./setselected%28_,animated%29.md)
   Sets the selection state of the annotation view.
 
 

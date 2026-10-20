@@ -1,14 +1,15 @@
 # initMgmtORBWithLUN
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initMgmtORBWithLUN(IOFireWireSBP2ManagementORB *orb, IOFireWireSBP2LUN *lun, void *refCon, FWSBP2ManagementCallback completion);
 ```
 

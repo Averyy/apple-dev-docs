@@ -1,14 +1,15 @@
 # StandardUSB::SuperSpeedEndpointCompanionDescriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 typedef struct StandardUSB::SuperSpeedEndpointCompanionDescriptor {
     ...
 } StandardUSB::SuperSpeedEndpointCompanionDescriptor;
@@ -17,9 +18,9 @@ typedef struct StandardUSB::SuperSpeedEndpointCompanionDescriptor {
 ## Topics
 
 ### Instance Properties
-- [bMaxBurst](standardusb_superspeedendpointcompaniondescriptor/3794125-bmaxburst.md)
-- [bmAttributes](standardusb_superspeedendpointcompaniondescriptor/3794126-bmattributes.md)
-- [wBytesPerInterval](standardusb_superspeedendpointcompaniondescriptor/3794127-wbytesperinterval.md)
+- [bMaxBurst](./standardusb_superspeedendpointcompaniondescriptor/api-3794125-bmaxburst.md)
+- [bmAttributes](./standardusb_superspeedendpointcompaniondescriptor/api-3794126-bmattributes.md)
+- [wBytesPerInterval](./standardusb_superspeedendpointcompaniondescriptor/api-3794127-wbytesperinterval.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PKAddPaymentPassStyle.payment
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A pass used by a customer for purchasing.
 
@@ -9,7 +10,7 @@ A pass used by a customer for purchasing.
 - iOS 12.0+
 - iPadOS 12.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ A pass used by a customer for purchasing.
 case payment
 ```
 
+```c
+PKAddPaymentPassStylePayment
+```
+
 ## See Also
 
-- [PKAddPaymentPassStyle.access](pkaddpaymentpassstyle/access.md)
+### Payment pass styles
+- [PKAddPaymentPassStyle.access](./access.md)
   A pass that authorizes the user to access a location or resource.
 
 

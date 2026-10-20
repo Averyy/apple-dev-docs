@@ -1,18 +1,19 @@
 # Issue.Kind.unconditional
 
 **Framework**: Swift Testing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-An issue which occurred unconditionally, for example by using [`record(_:severity:sourceLocation:)`](issue/record(_:severity:sourcelocation:).md).
+An issue which occurred unconditionally, for example by using [`record(_:severity:sourceLocation:)`](../record%28_,severity,sourcelocation%29.md).
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 

@@ -1,7 +1,8 @@
 # layoutGuide(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 26.0+
@@ -15,9 +16,10 @@
 
 ## See Also
 
-- [NSView.LayoutRegion](nsview/layoutregion.md)
-- [func edgeInsets(for: NSView.LayoutRegion) -> NSEdgeInsets](nsview/edgeinsets(for:).md)
-- [func rect(for: NSView.LayoutRegion) -> NSRect](nsview/rect(for:).md)
+### Getting layout regions
+- [NSView.LayoutRegion](./layoutregion.md)
+- [func edgeInsets(for: NSView.LayoutRegion) -> NSEdgeInsets](./edgeinsets%28for%29.md)
+- [func rect(for: NSView.LayoutRegion) -> NSRect](./rect%28for%29.md)
 
 
 ---

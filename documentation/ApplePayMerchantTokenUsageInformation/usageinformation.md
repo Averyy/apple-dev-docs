@@ -1,13 +1,14 @@
 # UsageInformation
 
 **Framework**: Apple Pay Merchant Token Usage Information API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about the usage of a merchant token, such as past and upcoming payments.
 
 ## Declaration
 
-```swift
+```
 object UsageInformation
 ```
 
@@ -22,6 +23,8 @@ object UsageInformation
 - `pastPayments` ([PastPayment]): A list of past payments.
 - `paymentIssueRecoveryURL` (string): A URL the merchant provides that lets the person fix a payment problem, such as updating their card or resolving a declined payment.
 - `schemaVersion` (number) *(required)*: A name representing the bank and the card used for the transaction.
+
+  **Allowed Values**: `1`
 - `upcomingPayments` ([UpcomingPayment]): A list of upcoming payments to display in the order provided.
 
 

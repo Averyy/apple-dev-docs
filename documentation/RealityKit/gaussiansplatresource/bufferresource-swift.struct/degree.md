@@ -1,7 +1,8 @@
 # degree
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of view-dependent color detail stored per splat.
 

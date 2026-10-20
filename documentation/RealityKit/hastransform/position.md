@@ -1,7 +1,8 @@
 # position
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the entity relative to its parent.
 
@@ -11,7 +12,7 @@ The position of the entity relative to its parent.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,19 +23,20 @@ The position of the entity relative to its parent.
 
 ## Mentions
 
-- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+- [Automatically animating RealityKit entities](../automatically-animating-realitykit-entities.md)
 
 #### Discussion
 
-This value is the entity’s position relative to its parent. To get the world-space position of the entity in the scene, use [`position(relativeTo:)`](hastransform/position(relativeto:).md), passing `nil` as the reference entity.
+This value is the entity’s position relative to its parent. To get the world-space position of the entity in the scene, use [`position(relativeTo:)`](./position%28relativeto%29.md), passing `nil` as the reference entity.
 
-This is the same as the [`translation`](transform/translation.md) value on the [`transform`](hastransform/transform.md).
+This is the same as the [`translation`](../transform/translation.md) value on the [`transform`](./transform.md).
 
 ## See Also
 
-- [func position(relativeTo: Entity?) -> SIMD3<Float>](hastransform/position(relativeto:).md)
+### Positioning an entity
+- [func position(relativeTo: Entity?) -> SIMD3<Float>](./position%28relativeto%29.md)
   Gets the position of an entity relative to the given entity.
-- [func setPosition(SIMD3<Float>, relativeTo: Entity?)](hastransform/setposition(_:relativeto:).md)
+- [func setPosition(SIMD3<Float>, relativeTo: Entity?)](./setposition%28_,relativeto%29.md)
   Sets the position of the entity relative to the given reference entity.
 
 

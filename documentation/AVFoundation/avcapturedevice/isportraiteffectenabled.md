@@ -1,7 +1,8 @@
 # isPortraitEffectEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the user enabled the Portrait video effect in Control Center.
 
@@ -18,9 +19,14 @@ A Boolean value that indicates whether the user enabled the Portrait video effec
 class var isPortraitEffectEnabled: Bool { get }
 ```
 
+```objc
+@property (class, readonly, getter=isPortraitEffectEnabled) BOOL portraitEffectEnabled;
+```
+
 ## See Also
 
-- [var isPortraitEffectActive: Bool](avcapturedevice/isportraiteffectactive.md)
+### Inspecting the Portrait Effect settings
+- [var isPortraitEffectActive: Bool](./isportraiteffectactive.md)
   A Boolean value that indicates whether the Portrait video effect is active on a device.
 
 

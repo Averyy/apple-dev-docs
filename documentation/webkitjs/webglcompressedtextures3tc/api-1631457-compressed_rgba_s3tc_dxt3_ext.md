@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long COMPRESSED_RGBA_S3TC_DXT3_EXT;
 ```
 
 ## See Also
 
-- [COMPRESSED_RGBA_S3TC_DXT1_EXT](webglcompressedtextures3tc/1630637-compressed_rgba_s3tc_dxt1_ext.md)
-- [COMPRESSED_RGBA_S3TC_DXT5_EXT](webglcompressedtextures3tc/1629661-compressed_rgba_s3tc_dxt5_ext.md)
-- [COMPRESSED_RGB_S3TC_DXT1_EXT](webglcompressedtextures3tc/1631368-compressed_rgb_s3tc_dxt1_ext.md)
+### Miscellaneous
+- [COMPRESSED_RGBA_S3TC_DXT1_EXT](./api-1630637-compressed_rgba_s3tc_dxt1_ext.md)
+- [COMPRESSED_RGBA_S3TC_DXT5_EXT](./api-1629661-compressed_rgba_s3tc_dxt5_ext.md)
+- [COMPRESSED_RGB_S3TC_DXT1_EXT](./api-1631368-compressed_rgb_s3tc_dxt1_ext.md)
 
 
 ---

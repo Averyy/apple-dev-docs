@@ -1,7 +1,8 @@
 # P256.KeyAgreement.PrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A P-256 private key used for key agreement.
 
@@ -23,51 +24,52 @@ struct PrivateKey
 ## Topics
 
 ### Creating a private key
-- [init<Bytes>(rawRepresentation: Bytes) throws](p256/keyagreement/privatekey/init(rawrepresentation:).md)
+- [init<Bytes>(rawRepresentation: Bytes) throws](./privatekey/init%28rawrepresentation%29.md)
   Creates a P-256 private key for key agreement from a collection of bytes.
-- [init(compactRepresentable: Bool)](p256/keyagreement/privatekey/init(compactrepresentable:).md)
+- [init(compactRepresentable: Bool)](./privatekey/init%28compactrepresentable%29.md)
   Creates a random P-256 private key for key agreement.
-- [init<Bytes>(derRepresentation: Bytes) throws](p256/keyagreement/privatekey/init(derrepresentation:).md)
+- [init<Bytes>(derRepresentation: Bytes) throws](./privatekey/init%28derrepresentation%29.md)
   Creates a P-256 private key for key agreement from a Distinguished Encoding Rules (DER) encoded representation.
-- [init(pemRepresentation: String) throws](p256/keyagreement/privatekey/init(pemrepresentation:).md)
+- [init(pemRepresentation: String) throws](./privatekey/init%28pemrepresentation%29.md)
   Creates a P-256 private key for key agreement from a Privacy-Enhanced Mail PEM) representation.
-- [init<Bytes>(x963Representation: Bytes) throws](p256/keyagreement/privatekey/init(x963representation:).md)
+- [init<Bytes>(x963Representation: Bytes) throws](./privatekey/init%28x963representation%29.md)
   Creates a P-256 private key for key agreement from an ANSI x9.63 representation.
 ### Representing the key
-- [var rawRepresentation: Data](p256/keyagreement/privatekey/rawrepresentation.md)
+- [var rawRepresentation: Data](./privatekey/rawrepresentation.md)
   A data representation of the private key.
-- [var derRepresentation: Data](p256/keyagreement/privatekey/derrepresentation.md)
+- [var derRepresentation: Data](./privatekey/derrepresentation.md)
   A Distinguished Encoding Rules (DER) encoded representation of the private key.
-- [var pemRepresentation: String](p256/keyagreement/privatekey/pemrepresentation.md)
+- [var pemRepresentation: String](./privatekey/pemrepresentation.md)
   A Privacy-Enhanced Mail (PEM) representation of the private key.
-- [var x963Representation: Data](p256/keyagreement/privatekey/x963representation.md)
+- [var x963Representation: Data](./privatekey/x963representation.md)
   An ANSI x9.63 representation of the private key.
 ### Finding the public key
-- [var publicKey: P256.KeyAgreement.PublicKey](p256/keyagreement/privatekey/publickey.md)
+- [var publicKey: P256.KeyAgreement.PublicKey](./privatekey/publickey.md)
   The corresponding public key.
 ### Creating a shared secret
-- [func sharedSecretFromKeyAgreement(with: P256.KeyAgreement.PublicKey) throws -> SharedSecret](p256/keyagreement/privatekey/sharedsecretfromkeyagreement(with:).md)
+- [func sharedSecretFromKeyAgreement(with: P256.KeyAgreement.PublicKey) throws -> SharedSecret](./privatekey/sharedsecretfromkeyagreement%28with%29.md)
   Computes a shared secret with the provided public key from another party.
-- [struct SharedSecret](sharedsecret.md)
+- [struct SharedSecret](../../sharedsecret.md)
   A key agreement result from which you can derive a symmetric cryptographic key.
 ### Default Implementations
-- [DiffieHellmanKeyAgreement Implementations](p256/keyagreement/privatekey/diffiehellmankeyagreement-implementations.md)
-- [HPKEDiffieHellmanPrivateKeyGeneration Implementations](p256/keyagreement/privatekey/hpkediffiehellmanprivatekeygeneration-implementations.md)
+- [DiffieHellmanKeyAgreement Implementations](./privatekey/diffiehellmankeyagreement-implementations.md)
+- [HPKEDiffieHellmanPrivateKeyGeneration Implementations](./privatekey/hpkediffiehellmanprivatekeygeneration-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [DiffieHellmanKeyAgreement](diffiehellmankeyagreement.md)
-- [Escapable](../swift/escapable.md)
-- [HPKEDiffieHellmanPrivateKey](hpkediffiehellmanprivatekey.md)
-- [HPKEDiffieHellmanPrivateKeyGeneration](hpkediffiehellmanprivatekeygeneration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DiffieHellmanKeyAgreement](../../diffiehellmankeyagreement.md)
+- [Escapable](../../../Swift/escapable.md)
+- [HPKEDiffieHellmanPrivateKey](../../hpkediffiehellmanprivatekey.md)
+- [HPKEDiffieHellmanPrivateKeyGeneration](../../hpkediffiehellmanprivatekeygeneration.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [P256.KeyAgreement.PublicKey](p256/keyagreement/publickey.md)
+### Using keys
+- [P256.KeyAgreement.PublicKey](./publickey.md)
   A P-256 public key used for key agreement.
 
 

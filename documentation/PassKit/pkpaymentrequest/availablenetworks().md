@@ -1,7 +1,8 @@
 # availableNetworks()
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the list of available payment methods that Apple Pay supports.
 
@@ -19,20 +20,26 @@ Returns the list of available payment methods that Apple Pay supports.
 class func availableNetworks() -> [PKPaymentNetwork]
 ```
 
+```objc
++ (NSArray<NSString *> *) availableNetworks;
+```
+
 #### Return Value
 
-An array of strings representing the available payment networks. For a list of possible networks, see [`PKPaymentNetwork`](pkpaymentnetwork.md).
+An array of strings representing the available payment networks. For a list of possible networks, see [`PKPaymentNetwork`](../pkpaymentnetwork.md).
 
 #### Discussion
 
-To dynamically select the payment networks at runtime, use this method to get the complete list of currently supported networks. You can then filter this list, as needed, and assign the results to the payment request’s [`supportedNetworks`](pkpaymentrequest/supportednetworks.md) property.
+To dynamically select the payment networks at runtime, use this method to get the complete list of currently supported networks. You can then filter this list, as needed, and assign the results to the payment request’s [`supportedNetworks`](./supportednetworks.md) property.
 
 ## See Also
 
-- [Wallet Developer Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195)
-- [var supportedNetworks: [PKPaymentNetwork]](pkpaymentrequest/supportednetworks.md)
+### Related Documentation
+- [Wallet Developer Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195)
+### Selecting the payment networks
+- [var supportedNetworks: [PKPaymentNetwork]](./supportednetworks.md)
   The payment methods that you support.
-- [struct PKPaymentNetwork](pkpaymentnetwork.md)
+- [struct PKPaymentNetwork](../pkpaymentnetwork.md)
   A type that represents a payment method.
 
 

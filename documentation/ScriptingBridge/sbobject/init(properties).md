@@ -1,7 +1,8 @@
 # init(properties:)
 
 **Framework**: Scripting Bridge  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an instance of an `SBObject` subclass initialized with the specified properties.
 
@@ -15,13 +16,17 @@ Returns an instance of an `SBObject` subclass initialized with the specified pro
 init(properties: [AnyHashable : Any])
 ```
 
+```objc
+- (instancetype) initWithProperties:(NSDictionary *) properties;
+```
+
 #### Return Value
 
 An `SBObject` object or `nil` if the object could not be initialized.
 
 #### Discussion
 
-Scripting Bridge does not actually create an object in the target application until you add the object returned from this method to an element array ([`SBElementArray`](sbelementarray.md)).
+Scripting Bridge does not actually create an object in the target application until you add the object returned from this method to an element array ([`SBElementArray`](../sbelementarray.md)).
 
 ## Parameters
 
@@ -29,11 +34,12 @@ Scripting Bridge does not actually create an object in the target application un
 
 ## See Also
 
-- [init()](sbobject/init.md)
+### Initializing a Scripting Bridge Object
+- [init()](./init%28%29.md)
   Initializes and returns an instance of an `SBObject` subclass.
-- [init(data: Any)](sbobject/init(data:).md)
+- [init(data: Any)](./init%28data%29.md)
   Returns an instance of an `SBObject` subclass initialized with the given data.
-- [init(elementCode: DescType, properties: [String : Any]?, data: Any?)](sbobject/init(elementcode:properties:data:).md)
+- [init(elementCode: DescType, properties: [String : Any]?, data: Any?)](./init%28elementcode,properties,data%29.md)
   Returns an instance of an `SBObject` subclass initialized with the specified properties and data and added to the designated element array.
 
 

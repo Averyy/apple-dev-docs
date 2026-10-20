@@ -1,7 +1,8 @@
 # AVMIDIControlChangeEvent.MessageType.vibratoDelay
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event type for controlling the vibrato delay.
 
@@ -19,37 +20,42 @@ An event type for controlling the vibrato delay.
 case vibratoDelay
 ```
 
+```c
+AVMIDIControlChangeMessageTypeVibratoDelay
+```
+
 ## See Also
 
-- [AVMIDIControlChangeEvent.MessageType.bankSelect](avmidicontrolchangeevent/messagetype-swift.enum/bankselect.md)
+### Identifying control change types
+- [AVMIDIControlChangeEvent.MessageType.bankSelect](./bankselect.md)
   An event type for switching bank selection.
-- [AVMIDIControlChangeEvent.MessageType.modWheel](avmidicontrolchangeevent/messagetype-swift.enum/modwheel.md)
+- [AVMIDIControlChangeEvent.MessageType.modWheel](./modwheel.md)
   An event type for modulating a vibrato effect.
-- [AVMIDIControlChangeEvent.MessageType.breath](avmidicontrolchangeevent/messagetype-swift.enum/breath.md)
+- [AVMIDIControlChangeEvent.MessageType.breath](./breath.md)
   An event type for a breath controller.
-- [AVMIDIControlChangeEvent.MessageType.foot](avmidicontrolchangeevent/messagetype-swift.enum/foot.md)
+- [AVMIDIControlChangeEvent.MessageType.foot](./foot.md)
   An event type for sending continuous stream of values when using a foot controller.
-- [AVMIDIControlChangeEvent.MessageType.portamentoTime](avmidicontrolchangeevent/messagetype-swift.enum/portamentotime.md)
+- [AVMIDIControlChangeEvent.MessageType.portamentoTime](./portamentotime.md)
   An event type for controlling the portamento rate.
-- [AVMIDIControlChangeEvent.MessageType.dataEntry](avmidicontrolchangeevent/messagetype-swift.enum/dataentry.md)
+- [AVMIDIControlChangeEvent.MessageType.dataEntry](./dataentry.md)
   An event type for controlling the data entry parameters.
-- [AVMIDIControlChangeEvent.MessageType.volume](avmidicontrolchangeevent/messagetype-swift.enum/volume.md)
+- [AVMIDIControlChangeEvent.MessageType.volume](./volume.md)
   An event type for controlling the channel volume.
-- [AVMIDIControlChangeEvent.MessageType.balance](avmidicontrolchangeevent/messagetype-swift.enum/balance.md)
+- [AVMIDIControlChangeEvent.MessageType.balance](./balance.md)
   An event type for controlling the left and right channel balance.
-- [AVMIDIControlChangeEvent.MessageType.pan](avmidicontrolchangeevent/messagetype-swift.enum/pan.md)
+- [AVMIDIControlChangeEvent.MessageType.pan](./pan.md)
   An event type for controlling the left and right channel pan.
-- [AVMIDIControlChangeEvent.MessageType.expression](avmidicontrolchangeevent/messagetype-swift.enum/expression.md)
+- [AVMIDIControlChangeEvent.MessageType.expression](./expression.md)
   An event type that represents an expression controller.
-- [AVMIDIControlChangeEvent.MessageType.sustain](avmidicontrolchangeevent/messagetype-swift.enum/sustain.md)
+- [AVMIDIControlChangeEvent.MessageType.sustain](./sustain.md)
   An event type for switching a damper pedal on or off.
-- [AVMIDIControlChangeEvent.MessageType.portamento](avmidicontrolchangeevent/messagetype-swift.enum/portamento.md)
+- [AVMIDIControlChangeEvent.MessageType.portamento](./portamento.md)
   An event type for switching portamento on or off.
-- [AVMIDIControlChangeEvent.MessageType.sostenuto](avmidicontrolchangeevent/messagetype-swift.enum/sostenuto.md)
+- [AVMIDIControlChangeEvent.MessageType.sostenuto](./sostenuto.md)
   An event type for switching sostenuto on or off.
-- [AVMIDIControlChangeEvent.MessageType.soft](avmidicontrolchangeevent/messagetype-swift.enum/soft.md)
+- [AVMIDIControlChangeEvent.MessageType.soft](./soft.md)
   An event type for lowering the volume of the notes.
-- [AVMIDIControlChangeEvent.MessageType.legatoPedal](avmidicontrolchangeevent/messagetype-swift.enum/legatopedal.md)
+- [AVMIDIControlChangeEvent.MessageType.legatoPedal](./legatopedal.md)
   An event type for switching the legato pedal on or off.
 
 

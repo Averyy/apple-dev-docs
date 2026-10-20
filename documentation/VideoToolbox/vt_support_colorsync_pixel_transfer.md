@@ -1,7 +1,8 @@
 # VT_SUPPORT_COLORSYNC_PIXEL_TRANSFER
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 6.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var VT_SUPPORT_COLORSYNC_PIXEL_TRANSFER: Bool { get }
+```
+
+```c
+#define VT_SUPPORT_COLORSYNC_PIXEL_TRANSFER
 ```
 
 

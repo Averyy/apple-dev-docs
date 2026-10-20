@@ -1,7 +1,8 @@
 # interfaceClass
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The matching property for the interface’s class ID.
 
@@ -15,13 +16,18 @@ The matching property for the interface’s class ID.
 static let interfaceClass: IOUSBHostMatchingPropertyKey
 ```
 
+```c
+extern IOUSBHostMatchingPropertyKey IOUSBHostMatchingPropertyKeyInterfaceClass;
+```
+
 ## See Also
 
-- [static let interfaceNumber: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/interfacenumber.md)
+### Interface Properties
+- [static let interfaceNumber: IOUSBHostMatchingPropertyKey](./interfacenumber.md)
   The matching property for the device’s interface number.
-- [static let interfaceSubClass: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/interfacesubclass.md)
+- [static let interfaceSubClass: IOUSBHostMatchingPropertyKey](./interfacesubclass.md)
   The matching property for the interface’s subclass ID.
-- [static let interfaceProtocol: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/interfaceprotocol.md)
+- [static let interfaceProtocol: IOUSBHostMatchingPropertyKey](./interfaceprotocol.md)
   The matching property for the interface’s protocol.
 
 

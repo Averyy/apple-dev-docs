@@ -2,6 +2,7 @@
 
 **Framework**: Accessibility  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -17,6 +18,10 @@
 
 ```swift
 func accessibilityMathExpression() -> AXMathExpression?
+```
+
+```objc
+- (AXMathExpression *) accessibilityMathExpression;
 ```
 
 

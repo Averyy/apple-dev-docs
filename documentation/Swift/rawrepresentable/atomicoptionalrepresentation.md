@@ -1,7 +1,8 @@
 # RawRepresentable.AtomicOptionalRepresentation
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The storage representation type that encodes to and decodes from `Optional<Self>` which is a suitable type when used in atomic operations on `Optional`.
 
@@ -19,6 +20,8 @@ The storage representation type that encodes to and decodes from `Optional<Self>
 ```swift
 typealias AtomicOptionalRepresentation = Self.RawValue.AtomicOptionalRepresentation
 ```
+
+Available when `Self` conforms to `AtomicOptionalRepresentable` and `RawValue` conforms to `AtomicOptionalRepresentable`.
 
 
 ---

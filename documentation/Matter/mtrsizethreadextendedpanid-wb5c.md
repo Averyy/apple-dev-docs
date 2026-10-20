@@ -1,7 +1,8 @@
 # MTRSizeThreadExtendedPANID
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRSizeThreadExtendedPANID: Int
+```
+
+```c
+extern const size_t MTRSizeThreadExtendedPANID;
 ```
 
 

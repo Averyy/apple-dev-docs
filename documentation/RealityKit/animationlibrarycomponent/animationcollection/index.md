@@ -1,7 +1,8 @@
 # AnimationLibraryComponent.AnimationCollection.Index
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents a position in the collection.
 
@@ -22,27 +23,28 @@ struct Index
 ## Topics
 
 ### Operators
-- [static func < (AnimationLibraryComponent.AnimationCollection.Index, AnimationLibraryComponent.AnimationCollection.Index) -> Bool](animationlibrarycomponent/animationcollection/index/_(_:_:).md)
+- [static func < (AnimationLibraryComponent.AnimationCollection.Index, AnimationLibraryComponent.AnimationCollection.Index) -> Bool](./index/op%28_,_%29.md)
   Returns a Boolean value that indicates whether the first argument represents a position before the second argument.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../../../Swift/comparable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var startIndex: AnimationLibraryComponent.AnimationCollection.Index](animationlibrarycomponent/animationcollection/startindex.md)
+### Manipulating indices
+- [var startIndex: AnimationLibraryComponent.AnimationCollection.Index](./startindex.md)
   An index to the first animation in the collection.
-- [var endIndex: AnimationLibraryComponent.AnimationCollection.Index](animationlibrarycomponent/animationcollection/endindex.md)
+- [var endIndex: AnimationLibraryComponent.AnimationCollection.Index](./endindex.md)
   An index to the last animation in the collection.
-- [func index(after: AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Index](animationlibrarycomponent/animationcollection/index(after:).md)
+- [func index(after: AnimationLibraryComponent.AnimationCollection.Index) -> AnimationLibraryComponent.AnimationCollection.Index](./index%28after%29.md)
   Returns the position in the collection that follows an index.
-- [func formIndex(after: inout AnimationLibraryComponent.AnimationCollection.Index)](animationlibrarycomponent/animationcollection/formindex(after:).md)
+- [func formIndex(after: inout AnimationLibraryComponent.AnimationCollection.Index)](./formindex%28after%29.md)
   Replaces the index with its successor.
 
 

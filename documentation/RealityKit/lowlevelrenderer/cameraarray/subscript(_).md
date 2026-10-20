@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns or sets the camera at the given index.
 
@@ -19,7 +20,7 @@ subscript(index: Int) -> LowLevelRenderer.Camera { get set }
 
 #### Return Value
 
-The [`LowLevelRenderer.Camera`](lowlevelrenderer/camera.md) at `index`.
+The [`LowLevelRenderer.Camera`](../camera.md) at `index`.
 
 ## Parameters
 

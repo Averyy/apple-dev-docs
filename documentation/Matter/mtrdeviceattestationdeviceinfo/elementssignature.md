@@ -1,7 +1,8 @@
 # elementsSignature
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A signature, using the device attestation private key of the device that sent the attestation information, over the concatenation of elementsTLV and attestationChallenge.
 
@@ -18,6 +19,10 @@ A signature, using the device attestation private key of the device that sent th
 
 ```swift
 var elementsSignature: Data { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSData * elementsSignature;
 ```
 
 

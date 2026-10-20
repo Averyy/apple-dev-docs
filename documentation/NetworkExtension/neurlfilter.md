@@ -1,7 +1,8 @@
 # NEURLFilter
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class used to voluntarily validate URLs for apps that don’t use WebKit or the URL session API.
 
@@ -10,9 +11,9 @@ A class used to voluntarily validate URLs for apps that don’t use WebKit or th
 - iPadOS 19.0+
 - Mac Catalyst 19.0+
 - macOS 16.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,37 +21,42 @@ A class used to voluntarily validate URLs for apps that don’t use WebKit or th
 class NEURLFilter
 ```
 
+```objc
+@interface NEURLFilter : NSObject
+```
+
 #### Overview
 
-When using networking frameworks other than WebKit or Foundation’s [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession), use the `NEURLFilter` API to evaluate URLs before potentially connecting to a restricted or malicious site. Call the class method [`verdict(for:)`](neurlfilter/verdict(for:).md) to check a URL and honor the “allow” or “deny” verdict. Don’t connect to any URL that receives a “deny” verdict.
+When using networking frameworks other than WebKit or Foundation’s [`URLSession`](../Foundation/urlsession.md), use the `NEURLFilter` API to evaluate URLs before potentially connecting to a restricted or malicious site. Call the class method [`verdict(for:)`](./neurlfilter/verdict%28for%29.md) to check a URL and honor the “allow” or “deny” verdict. Don’t connect to any URL that receives a “deny” verdict.
 
 ## Topics
 
 ### Evaluating a URL
-- [class func verdict(for: URL) async -> NEURLFilter.Verdict](neurlfilter/verdict(for:).md)
+- [class func verdict(for: URL) async -> NEURLFilter.Verdict](./neurlfilter/verdict%28for%29.md)
   Determines if accessing the specified URL is allowed or denied.
-- [NEURLFilter.Verdict](neurlfilter/verdict.md)
+- [NEURLFilter.Verdict](./neurlfilter/verdict.md)
   A verdict returned by a URL filter.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NEURLFilterManager](neurlfiltermanager.md)
+### URL filters
+- [class NEURLFilterManager](./neurlfiltermanager.md)
   A class you use to configure and control a URL filter.
-- [protocol NEURLFilterControlProvider](neurlfiltercontrolprovider.md)
+- [protocol NEURLFilterControlProvider](./neurlfiltercontrolprovider.md)
   A protocol that defines an object that’s responsible for fetching pre-filter data.
-- [class NEURLFilterControlProviderConfiguration](neurlfiltercontrolproviderconfiguration.md)
+- [class NEURLFilterControlProviderConfiguration](./neurlfiltercontrolproviderconfiguration.md)
   A class that defines app extension configurations for the URL Filter control provider app extension.
 
 

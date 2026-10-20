@@ -1,7 +1,8 @@
 # init(elevationStyle:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new standard map configuration with the specified elevation style.
 
@@ -20,21 +21,26 @@ Creates a new standard map configuration with the specified elevation style.
 convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)
 ```
 
+```objc
+- (instancetype) initWithElevationStyle:(MKMapElevationStyle) elevationStyle;
+```
+
 ## Parameters
 
-- `elevationStyle`: One of the [`MKMapConfiguration.ElevationStyle`](mkmapconfiguration/elevationstyle-swift.enum.md) modes.
+- `elevationStyle`: One of the [`MKMapConfiguration.ElevationStyle`](../mkmapconfiguration/elevationstyle-swift.enum.md) modes.
 
 ## See Also
 
-- [init()](mkstandardmapconfiguration/init.md)
+### Creating a standard map configuration
+- [init()](./init%28%29.md)
   Creates a new standard map configuration.
-- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle, emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](mkstandardmapconfiguration/init(elevationstyle:emphasisstyle:).md)
+- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle, emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](./init%28elevationstyle,emphasisstyle%29.md)
   Creates a standard map configuration with the specified elevation and emphasis styles.
-- [convenience init(emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](mkstandardmapconfiguration/init(emphasisstyle:).md)
+- [convenience init(emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](./init%28emphasisstyle%29.md)
   Creates a standard map configuration with the specified emphasis style.
-- [MKMapConfiguration.ElevationStyle](mkmapconfiguration/elevationstyle-swift.enum.md)
+- [MKMapConfiguration.ElevationStyle](../mkmapconfiguration/elevationstyle-swift.enum.md)
   Values that control the map’s elevation style.
-- [MKStandardMapConfiguration.EmphasisStyle](mkstandardmapconfiguration/emphasisstyle-swift.enum.md)
+- [MKStandardMapConfiguration.EmphasisStyle](./emphasisstyle-swift.enum.md)
   Values that control how the framework emphasizes map features.
 
 

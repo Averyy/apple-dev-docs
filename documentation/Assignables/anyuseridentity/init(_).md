@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Assignables  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes this type eraser with a user identity to wrap.
 
@@ -9,7 +10,7 @@ Initializes this type eraser with a user identity to wrap.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ init<T>(_ userIdentity: T) where T : UserIdentity
 
 ## See Also
 
-- [init(from: any Decoder) throws](anyuseridentity/init(from:).md)
+### Creating a user identity
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new instance by decoding from the given decoder.
 
 

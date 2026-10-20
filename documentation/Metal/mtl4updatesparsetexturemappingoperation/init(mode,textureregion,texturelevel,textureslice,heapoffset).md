@@ -1,7 +1,8 @@
 # init(mode:textureRegion:textureLevel:textureSlice:heapOffset:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

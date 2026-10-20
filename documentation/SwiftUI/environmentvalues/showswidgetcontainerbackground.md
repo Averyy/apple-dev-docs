@@ -1,7 +1,8 @@
 # showsWidgetContainerBackground
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An environment variable that indicates whether the background of a widget appears.
 
@@ -27,17 +28,18 @@ var showsWidgetContainerBackground: Bool { get }
 
 In iOS 16 and earlier, this environment variable is always `true` for system widgets and `false` for accessory widgets. In macOS 13 and earlier, and in watchOS 9 and earlier, it always evaluates to `true`.
 
-If you pass `false` to [`containerBackgroundRemovable(_:)`](widgetconfiguration/containerbackgroundremovable(_:).md) to always show the widget background, the system shows the widget background even if `showsWidgetContainerBackground` evaluates to `true`.
+If you pass `false` to [`containerBackgroundRemovable(_:)`](../widgetconfiguration/containerbackgroundremovable%28_%29.md) to always show the widget background, the system shows the widget background even if `showsWidgetContainerBackground` evaluates to `true`.
 
 ## See Also
 
-- [var showsWidgetLabel: Bool](environmentvalues/showswidgetlabel.md)
+### Widgets
+- [var showsWidgetLabel: Bool](./showswidgetlabel.md)
   A Boolean value that indicates whether an accessory family widget can display an accessory label.
-- [var widgetFamily: WidgetFamily](environmentvalues/widgetfamily.md)
+- [var widgetFamily: WidgetFamily](./widgetfamily.md)
   The template of the widget — small, medium, or large.
-- [var widgetRenderingMode: WidgetRenderingMode](environmentvalues/widgetrenderingmode.md)
+- [var widgetRenderingMode: WidgetRenderingMode](./widgetrenderingmode.md)
   The widget’s rendering mode, based on where the system is displaying it.
-- [var widgetContentMargins: EdgeInsets](environmentvalues/widgetcontentmargins.md)
+- [var widgetContentMargins: EdgeInsets](./widgetcontentmargins.md)
   A property that identifies the content margins of a widget.
 
 

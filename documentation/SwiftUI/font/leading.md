@@ -1,7 +1,8 @@
 # Font.Leading
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A line spacing adjustment that you can apply to a font.
 
@@ -22,49 +23,50 @@ enum Leading
 
 #### Overview
 
-Apply one of the `Leading` values to a font using the [`leading(_:)`](font/leading(_:).md) method to increase or decrease the line spacing.
+Apply one of the `Leading` values to a font using the [`leading(_:)`](./leading%28_%29.md) method to increase or decrease the line spacing.
 
 ## Topics
 
 ### Getting leading line spacing options
-- [Font.Leading.standard](font/leading/standard.md)
+- [Font.Leading.standard](./leading/standard.md)
   The font’s default line spacing.
-- [Font.Leading.loose](font/leading/loose.md)
+- [Font.Leading.loose](./leading/loose.md)
   Increased line spacing.
-- [Font.Leading.tight](font/leading/tight.md)
+- [Font.Leading.tight](./leading/tight.md)
   Reduced line spacing.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func bold() -> Font](font/bold.md)
+### Styling a font
+- [func bold() -> Font](./bold%28%29.md)
   Adds bold or emphasized styling to the font.
-- [func italic() -> Font](font/italic.md)
+- [func italic() -> Font](./italic%28%29.md)
   Adds italics to the font.
-- [func monospaced() -> Font](font/monospaced.md)
+- [func monospaced() -> Font](./monospaced%28%29.md)
   Returns a fixed-width font from the same family as the base font.
-- [func monospacedDigit() -> Font](font/monospaceddigit.md)
+- [func monospacedDigit() -> Font](./monospaceddigit%28%29.md)
   Returns a modified font that uses fixed-width digits, while leaving other characters proportionally spaced.
-- [func smallCaps() -> Font](font/smallcaps.md)
+- [func smallCaps() -> Font](./smallcaps%28%29.md)
   Adjusts the font to enable all small capitals.
-- [func lowercaseSmallCaps() -> Font](font/lowercasesmallcaps.md)
+- [func lowercaseSmallCaps() -> Font](./lowercasesmallcaps%28%29.md)
   Adjusts the font to enable lowercase small capitals.
-- [func uppercaseSmallCaps() -> Font](font/uppercasesmallcaps.md)
+- [func uppercaseSmallCaps() -> Font](./uppercasesmallcaps%28%29.md)
   Adjusts the font to enable uppercase small capitals.
-- [func weight(Font.Weight) -> Font](font/weight(_:).md)
+- [func weight(Font.Weight) -> Font](./weight%28_%29.md)
   Sets the weight of the font.
-- [func width(Font.Width) -> Font](font/width(_:).md)
+- [func width(Font.Width) -> Font](./width%28_%29.md)
   Sets the width of the font.
-- [struct Width](font/width.md)
+- [struct Width](./width.md)
   A width to use for fonts that have multiple widths.
-- [func leading(Font.Leading) -> Font](font/leading(_:).md)
+- [func leading(Font.Leading) -> Font](./leading%28_%29.md)
   Adjusts the line spacing of a font.
 
 

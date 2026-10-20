@@ -1,7 +1,8 @@
 # row
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the row that contains the error.
 
@@ -22,9 +23,10 @@ var row: Int { get }
 
 ## See Also
 
-- [var column: String?](csvwritingerror/column.md)
+### Getting Error Information
+- [var column: String?](./column.md)
   The index of the column that contains the error.
-- [case badEncoding(row: Int, column: String, Data)](csvwritingerror/badencoding(row:column:_:).md)
+- [case badEncoding(row: Int, column: String, Data)](./badencoding%28row,column,_%29.md)
   An error that indicates CSV data contains an invalid UTF-8 byte sequence.
 
 

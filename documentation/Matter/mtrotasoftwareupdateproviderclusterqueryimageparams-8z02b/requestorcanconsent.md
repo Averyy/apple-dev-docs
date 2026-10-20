@@ -1,7 +1,8 @@
 # requestorCanConsent
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var requestorCanConsent: NSNumber? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSNumber * requestorCanConsent;
 ```
 
 

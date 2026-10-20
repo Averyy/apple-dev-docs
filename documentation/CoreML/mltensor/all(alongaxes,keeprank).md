@@ -1,7 +1,8 @@
 # all(alongAxes:keepRank:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes logical AND on elements across the specified axes of a tensor where the scalar type of the tensor is expected to be Boolean.
 
@@ -20,6 +21,12 @@ Computes logical AND on elements across the specified axes of a tensor where the
 func all(alongAxes axes: Int..., keepRank: Bool = false) -> MLTensor
 ```
 
+**Other overloads**:
+
+```swift
+func all(alongAxes axes: [Int], keepRank: Bool = false) -> MLTensor
+```
+
 #### Return Value
 
 The reduced Boolean tensor.
@@ -31,7 +38,8 @@ The reduced Boolean tensor.
 
 ## See Also
 
-- [func all(keepRank: Bool) -> MLTensor](mltensor/all(keeprank:).md)
+### Performing a logical AND operation
+- [func all(keepRank: Bool) -> MLTensor](./all%28keeprank%29.md)
   Computes logical AND on elements across all axes of a tensor where the scalar type of the tensor is expected to be Boolean.
 
 

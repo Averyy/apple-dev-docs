@@ -1,7 +1,8 @@
 # setPauseAfter(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setPauseAfter(_ pauseAfter: String!)
+```
+
+```objc
+- (void) setPauseAfter:(NSString *) pauseAfter;
 ```
 
 

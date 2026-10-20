@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The object on behalf of which to perform the menu element’s primary action.
@@ -19,13 +20,18 @@ The object on behalf of which to perform the menu element’s primary action.
 var sender: Any? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id sender;
+```
+
 #### Discussion
 
 The system populates this property during the execution of the menu element’s action (its handler or selector).
 
 ## See Also
 
-- [func performWithSender(Any?, target: Any?)](uimenuleaf/performwithsender(_:target:).md)
+### Performing actions
+- [func performWithSender(Any?, target: Any?)](./performwithsender%28_,target%29.md)
   Performs the element’s primary action.
 
 

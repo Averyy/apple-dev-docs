@@ -1,7 +1,8 @@
 # title
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Title of panel presented to configure waypoints along a route. If no panel is provided, the panel title will default to “Add Stop”.
 
@@ -14,6 +15,10 @@ Title of panel presented to configure waypoints along a route. If no panel is pr
 
 ```swift
 var title: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * title;
 ```
 
 

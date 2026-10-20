@@ -1,18 +1,19 @@
 # NSDeleteRule.nullifyDeleteRule
 
 **Framework**: Core Data  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rule that nullifies the inverse relationship of the referenced managed objects.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ A rule that nullifies the inverse relationship of the referenced managed objects
 case nullifyDeleteRule
 ```
 
+```c
+NSNullifyDeleteRule
+```
+
 ## See Also
 
-- [NSDeleteRule.noActionDeleteRule](nsdeleterule/noactiondeleterule.md)
+### Delete Rules
+- [NSDeleteRule.noActionDeleteRule](./noactiondeleterule.md)
   A rule that prevents modification of the referenced managed objects.
-- [NSDeleteRule.cascadeDeleteRule](nsdeleterule/cascadedeleterule.md)
+- [NSDeleteRule.cascadeDeleteRule](./cascadedeleterule.md)
   A rule that deletes the referenced managed objects.
-- [NSDeleteRule.denyDeleteRule](nsdeleterule/denydeleterule.md)
+- [NSDeleteRule.denyDeleteRule](./denydeleterule.md)
   A rule that prevents the deletion of the owning managed object if the relationship has references to other objects.
 
 

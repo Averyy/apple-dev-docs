@@ -1,7 +1,8 @@
 # -(_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns the additive inverse of the specified value.
 

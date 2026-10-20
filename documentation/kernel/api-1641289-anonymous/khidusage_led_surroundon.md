@@ -1,14 +1,15 @@
 # kHIDUsage_LED_SurroundOn
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_LED_SurroundOn = 0x0F
 ```
 

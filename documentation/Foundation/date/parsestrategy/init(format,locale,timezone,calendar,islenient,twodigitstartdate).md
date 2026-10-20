@@ -1,7 +1,8 @@
 # init(format:locale:timeZone:calendar:isLenient:twoDigitStartDate:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `ParseStrategy` with the given configurations.
 

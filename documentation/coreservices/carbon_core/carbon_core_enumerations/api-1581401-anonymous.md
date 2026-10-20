@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kLSSharedFileListDoNotMountVolumes: Int](klssharedfilelistdonotmountvolumes.md)
-- [var kLSSharedFileListNoUserInteraction: Int](klssharedfilelistnouserinteraction.md)
+- [var kLSSharedFileListDoNotMountVolumes: Int](../../klssharedfilelistdonotmountvolumes.md)
+- [var kLSSharedFileListNoUserInteraction: Int](../../klssharedfilelistnouserinteraction.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Investigating GPU issues with AI agents
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Find the root cause of an issue in a large GPU trace by handing the trace to an AI agent for autonomous investigation.
 
@@ -12,7 +13,7 @@ Each row in the `list` command’s output shows node names and available actions
 
 > 💡 **Tip**: For AI agents, point them at `man gpudebug` and a `.gputrace` file. That’s all they need to start investigating autonomously.
 
-#### Reuse a Session for Multiple Commands
+#### Reuse a session for multiple commands
 
 For any investigation involving more than one command, create a session once and reuse it. Trace loading and replayer startup can take seconds to minutes depending on the size of the trace; reusing a session avoids paying that cost on every invocation:
 
@@ -28,7 +29,7 @@ Session 412 created.
 
 Each `-s` invocation reuses the already-loaded trace and replayer instantly.
 
-#### Run One Off Queries with Oneshot
+#### Run one-off queries with `--oneshot`
 
 For an isolated single-command query where session management is a burden, use `--oneshot`. The option creates a session, runs the commands, and terminates, but it pays the full trace load cost on every invocation:
 
@@ -40,17 +41,18 @@ For the full command reference, see the `gpudebug(1)` man (manual) page (`man gp
 
 ## See Also
 
-- [Capturing a Metal workload in Xcode](capturing-a-metal-workload-in-xcode.md)
+### Essentials
+- [Capturing a Metal workload in Xcode](./capturing-a-metal-workload-in-xcode.md)
   Analyze your app’s performance by configuring your project to use the Metal debugger.
-- [Capturing a Metal workload programmatically](capturing-a-metal-workload-programmatically.md)
+- [Capturing a Metal workload programmatically](./capturing-a-metal-workload-programmatically.md)
   Analyze your app’s performance by invoking Metal’s frame capture.
-- [Replaying a GPU trace file](replaying-a-gpu-trace-file.md)
+- [Replaying a GPU trace file](./replaying-a-gpu-trace-file.md)
   Debug and profile your app’s performance using a GPU trace file in the Metal debugger.
-- [Investigating visual artifacts](investigating-visual-artifacts.md)
+- [Investigating visual artifacts](./investigating-visual-artifacts.md)
   Discover, diagnose, and fix visual artifacts in your app with the Metal debugger.
-- [Optimizing GPU performance](optimizing-gpu-performance.md)
+- [Optimizing GPU performance](./optimizing-gpu-performance.md)
   Find and address performance bottlenecks using the Metal debugger.
-- [Debugging with interactive command-line tools](debugging-with-interactive-command-line-tools.md)
+- [Debugging with interactive command-line tools](./debugging-with-interactive-command-line-tools.md)
   Investigate rendering issues in GPU traces without leaving the Terminal.
 
 

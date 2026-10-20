@@ -1,7 +1,8 @@
 # LanguageModelExecutorGenerationChannel.Usage.Input
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Token counts for the transcript submitted to the model.
 
@@ -22,27 +23,28 @@ struct Input
 ## Topics
 
 ### Creating an input instance
-- [init(totalTokenCount: Int, cachedTokenCount: Int)](languagemodelexecutorgenerationchannel/usage/input-swift.struct/init(totaltokencount:cachedtokencount:).md)
+- [init(totalTokenCount: Int, cachedTokenCount: Int)](./input-swift.struct/init%28totaltokencount,cachedtokencount%29.md)
   Creates input token counts for the transcript submitted to the model.
 ### Handling the input tokens
-- [var totalTokenCount: Int](languagemodelexecutorgenerationchannel/usage/input-swift.struct/totaltokencount.md)
+- [var totalTokenCount: Int](./input-swift.struct/totaltokencount.md)
   The total number of input tokens from the transcript.
-- [var cachedTokenCount: Int](languagemodelexecutorgenerationchannel/usage/input-swift.struct/cachedtokencount.md)
+- [var cachedTokenCount: Int](./input-swift.struct/cachedtokencount.md)
   The number of input tokens that were served from a cache.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var input: LanguageModelExecutorGenerationChannel.Usage.Input](languagemodelexecutorgenerationchannel/usage/input-swift.property.md)
+### Updating the token counts
+- [var input: LanguageModelExecutorGenerationChannel.Usage.Input](./input-swift.property.md)
   The input token counts from the transcript.
-- [var output: LanguageModelExecutorGenerationChannel.Usage.Output](languagemodelexecutorgenerationchannel/usage/output-swift.property.md)
+- [var output: LanguageModelExecutorGenerationChannel.Usage.Output](./output-swift.property.md)
   The output token counts from the response.
-- [LanguageModelExecutorGenerationChannel.Usage.Output](languagemodelexecutorgenerationchannel/usage/output-swift.struct.md)
+- [LanguageModelExecutorGenerationChannel.Usage.Output](./output-swift.struct.md)
   Token counts for the output produced by the model.
 
 

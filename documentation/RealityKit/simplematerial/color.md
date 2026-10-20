@@ -1,7 +1,8 @@
 # color
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The material’s color.
 
@@ -11,7 +12,7 @@ The material’s color.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,17 +22,18 @@ var color: SimpleMaterial.BaseColor { get set }
 
 ## See Also
 
-- [var baseColor: MaterialColorParameter](simplematerial/basecolor-swift.property.md)
+### Characterizing a material
+- [var baseColor: MaterialColorParameter](./basecolor-swift.property.md)
   The base color of the material.
-- [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
+- [SimpleMaterial.BaseColor](./basecolor-swift.typealias.md)
   The type used to represent base color.
-- [var tintColor: NSColor](simplematerial/tintcolor-6v03h.md)
+- [var tintColor: NSColor](./tintcolor-6v03h.md)
   A tint color applied to the base color in macOS.
-- [SimpleMaterial.Texture](simplematerial/texture.md)
+- [SimpleMaterial.Texture](./texture.md)
   The type used to represent textures.
-- [var metallic: MaterialScalarParameter](simplematerial/metallic.md)
+- [var metallic: MaterialScalarParameter](./metallic.md)
   A value that you set to control whether the material has a metallic look.
-- [var roughness: MaterialScalarParameter](simplematerial/roughness.md)
+- [var roughness: MaterialScalarParameter](./roughness.md)
   The roughness of the material.
 
 

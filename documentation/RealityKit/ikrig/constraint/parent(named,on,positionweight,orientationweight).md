@@ -1,7 +1,8 @@
 # parent(named:on:positionWeight:orientationWeight:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a constraint with both a positional and an orientational demands.
 

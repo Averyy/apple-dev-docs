@@ -1,7 +1,8 @@
 # lapLength
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of the lap for a workout session.
 
@@ -20,17 +21,22 @@ The length of the lap for a workout session.
 var lapLength: HKQuantity? { get set }
 ```
 
+```objc
+@property (copy, nullable) HKQuantity * lapLength;
+```
+
 ## See Also
 
-- [var activityType: HKWorkoutActivityType](hkworkoutconfiguration/activitytype.md)
+### Session settings
+- [var activityType: HKWorkoutActivityType](./activitytype.md)
   The workout session’s activity type.
-- [var locationType: HKWorkoutSessionLocationType](hkworkoutconfiguration/locationtype.md)
+- [var locationType: HKWorkoutSessionLocationType](./locationtype.md)
   The workout session’s location.
-- [enum HKWorkoutSessionLocationType](hkworkoutsessionlocationtype.md)
+- [enum HKWorkoutSessionLocationType](../hkworkoutsessionlocationtype.md)
   A constant indicating whether the workout session takes place indoors or outdoors.
-- [var swimmingLocationType: HKWorkoutSwimmingLocationType](hkworkoutconfiguration/swimminglocationtype.md)
+- [var swimmingLocationType: HKWorkoutSwimmingLocationType](./swimminglocationtype.md)
   The workout session’s swimming location.
-- [enum HKWorkoutSwimmingLocationType](hkworkoutswimminglocationtype.md)
+- [enum HKWorkoutSwimmingLocationType](../hkworkoutswimminglocationtype.md)
   The possible locations for swimming.
 
 

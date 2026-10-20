@@ -1,7 +1,8 @@
 # status
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of the configuration change.
 
@@ -10,13 +11,13 @@ The status of the configuration change.
 
 ## Declaration
 
-```swift
+```
 readonly status: ConfigurationChangeStatus;
 ```
 
 #### Discussion
 
-For details on configuration change events, see [`Handling initialization events`](handling-initialization-events.md).
+For details on configuration change events, see [Handling initialization events](../handling-initialization-events.md).
 
 
 ---

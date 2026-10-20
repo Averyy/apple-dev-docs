@@ -1,7 +1,8 @@
 # TLS_EMPTY_RENEGOTIATION_INFO_SCSV
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var TLS_EMPTY_RENEGOTIATION_INFO_SCSV: SSLCipherSuite { get }
+```
+
+```c
+TLS_EMPTY_RENEGOTIATION_INFO_SCSV
 ```
 
 

@@ -1,7 +1,8 @@
 # URLRequest.Attribution
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that indicates the entities that can make a network request.
 
@@ -22,11 +23,12 @@ typealias Attribution = NSURLRequest.Attribution
 
 #### Discussion
 
-Use one of the values in [`NSURLRequest.Attribution`](nsurlrequest/attribution-swift.enum.md).
+Use one of the values in [`NSURLRequest.Attribution`](../nsurlrequest/attribution-swift.enum.md).
 
 ## See Also
 
-- [var attribution: URLRequest.Attribution](urlrequest/attribution-swift.property.md)
+### Indicating the source of the request
+- [var attribution: URLRequest.Attribution](./attribution-swift.property.md)
   The entity that initiates the network request.
 
 

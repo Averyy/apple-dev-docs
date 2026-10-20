@@ -1,14 +1,15 @@
 # kIOLogProbe
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOLogProbe = 0x00000002ULL
 ```
 

@@ -1,7 +1,8 @@
 # refreshable(action:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an asynchronous handler that can update the data the view displays when a person initiates a request, such as by pulling to refresh.
 
@@ -27,9 +28,9 @@ A view with a new refresh action in its environment.
 
 #### Discussion
 
-Apply this modifier to a view to set the [`refresh`](environmentvalues/refresh.md) value in the view’s environment to a [`RefreshAction`](refreshaction.md) instance that uses the specified `action` as its handler. Views that detect the presence of the instance can change their appearance to provide a way for a person to execute the handler.
+Apply this modifier to a view to set the [`refresh`](../environmentvalues/refresh.md) value in the view’s environment to a [`RefreshAction`](../refreshaction.md) instance that uses the specified `action` as its handler. Views that detect the presence of the instance can change their appearance to provide a way for a person to execute the handler.
 
-For example, when you apply this modifier on iOS and iPadOS to a [`List`](list.md), the list enables a standard pull-to-refresh gesture that refreshes the list contents. When a person drags the top of the scrollable area downward, the view reveals a progress indicator and executes the specified handler. The indicator remains visible for the duration of the refresh, which runs asynchronously:
+For example, when you apply this modifier on iOS and iPadOS to a [`List`](../list.md), the list enables a standard pull-to-refresh gesture that refreshes the list contents. When a person drags the top of the scrollable area downward, the view reveals a progress indicator and executes the specified handler. The indicator remains visible for the duration of the refresh, which runs asynchronously:
 
 ```swift
 List(mailbox.conversations) { conversation in
@@ -40,7 +41,7 @@ List(mailbox.conversations) { conversation in
 }
 ```
 
-You can add refresh capability to your own views as well. For information on how to do that, see [`RefreshAction`](refreshaction.md).
+You can add refresh capability to your own views as well. For information on how to do that, see [`RefreshAction`](../refreshaction.md).
 
 ## Parameters
 
@@ -48,9 +49,10 @@ You can add refresh capability to your own views as well. For information on how
 
 ## See Also
 
-- [var refresh: RefreshAction?](environmentvalues/refresh.md)
+### Refreshing a list’s content
+- [var refresh: RefreshAction?](../environmentvalues/refresh.md)
   A refresh action stored in a view’s environment.
-- [struct RefreshAction](refreshaction.md)
+- [struct RefreshAction](../refreshaction.md)
   An action that initiates a refresh operation.
 
 

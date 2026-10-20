@@ -1,7 +1,8 @@
 # editingInteractionConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -16,9 +17,14 @@
 var editingInteractionConfiguration: UIEditingInteractionConfiguration { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIEditingInteractionConfiguration editingInteractionConfiguration;
+```
+
 ## See Also
 
-- [enum UIEditingInteractionConfiguration](uieditinginteractionconfiguration.md)
+### Accessing the editing interaction
+- [enum UIEditingInteractionConfiguration](../uieditinginteractionconfiguration.md)
 
 
 ---

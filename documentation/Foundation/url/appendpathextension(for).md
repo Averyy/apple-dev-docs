@@ -1,7 +1,8 @@
 # appendPathExtension(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the preferred path extension for the type you specify.
 
@@ -24,11 +25,11 @@ mutating func appendPathExtension(for contentType: UTType)
 
 Use this method when you want to mix partial input from a user or other source, and need to produce a complete filename suitable for that input. For example, if you download a file from the internet and know its MIME type, you can use this method to ensure the URL has the correct filename extension where you save the file.
 
-If `partialName` already has a path extension, and that path extension is valid for file system objects of type `contentType`, the function doesn’t add an extension before appending it to the URL. For example, if the inputs are `puppy.jpg` and [`jpeg`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/jpeg), respectively, the function returns a URL with an appended path component of `puppy.jpg`. However, if the inputs are `puppy.jpg` and [`plainText`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/plaintext), respectively, the function returns a URL with an appended path component of `puppy.jpg.txt`. If you want to replace any existing path extension, use the [`deletePathExtension()`](url/deletepathextension().md) method first.
+If `partialName` already has a path extension, and that path extension is valid for file system objects of type `contentType`, the function doesn’t add an extension before appending it to the URL. For example, if the inputs are `puppy.jpg` and [`jpeg`](../../UniformTypeIdentifiers/uttype-swift.struct/jpeg.md), respectively, the function returns a URL with an appended path component of `puppy.jpg`. However, if the inputs are `puppy.jpg` and [`plainText`](../../UniformTypeIdentifiers/uttype-swift.struct/plaintext.md), respectively, the function returns a URL with an appended path component of `puppy.jpg.txt`. If you want to replace any existing path extension, use the [`deletePathExtension()`](./deletepathextension%28%29.md) method first.
 
 If the function can’t append the path component, it returns an unchanged URL.
 
-For more information about types, see [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers).
+For more information about types, see [Uniform Type Identifiers](../../UniformTypeIdentifiers/UniformTypeIdentifiers.md).
 
 ## Parameters
 
@@ -36,11 +37,12 @@ For more information about types, see [`Uniform Type Identifiers`](https://devel
 
 ## See Also
 
-- [func appendPathExtension(String)](url/appendpathextension(_:).md)
+### Adding a path extension
+- [func appendPathExtension(String)](./appendpathextension%28_%29.md)
   Appends the specified path extension to self.
-- [func appendingPathExtension(String) -> URL](url/appendingpathextension(_:).md)
+- [func appendingPathExtension(String) -> URL](./appendingpathextension%28_%29.md)
   Returns a URL by appending the specified path extension to self.
-- [func appendingPathExtension(for: UTType) -> URL](url/appendingpathextension(for:).md)
+- [func appendingPathExtension(for: UTType) -> URL](./appendingpathextension%28for%29.md)
   Returns a URL by appending the preferred path extension for the type you specify to the URL’s last path component.
 
 

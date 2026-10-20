@@ -1,7 +1,8 @@
 # CiBranchPatterns
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Case-sensitive patterns Xcode Cloud uses to determine if a change meets branch names you configure for a workflow’s start condition.
 
@@ -10,14 +11,14 @@ Case-sensitive patterns Xcode Cloud uses to determine if a change meets branch n
 
 ## Declaration
 
-```swift
+```
 object CiBranchPatterns
 ```
 
 ## Topics
 
 ### Objects
-- [object CiBranchPatterns.Patterns](cibranchpatterns/patterns-data.dictionary.md)
+- [object CiBranchPatterns.Patterns](./cibranchpatterns/patterns-data.dictionary.md)
   A case-sensitive pattern Xcode Cloud uses to determine if a change meets branch names you configure for a workflow’s start condition.
 
 ## Properties

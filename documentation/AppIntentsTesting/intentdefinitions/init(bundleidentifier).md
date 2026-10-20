@@ -1,7 +1,8 @@
 # init(bundleIdentifier:)
 
 **Framework**: App Intents Testing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new collection of definitions for intents that the specified app bundle contains.
 
@@ -26,7 +27,8 @@ init(bundleIdentifier: String)
 
 ## See Also
 
-- [let bundleIdentifier: String](intentdefinitions/bundleidentifier.md)
+### Creating an intent definition
+- [let bundleIdentifier: String](./bundleidentifier.md)
   The bundle identifier of the app target under test.
 
 

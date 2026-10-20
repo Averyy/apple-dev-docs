@@ -1,7 +1,8 @@
 # smallestEncoding
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The smallest encoding to which the receiver can be converted without loss of information.
 
@@ -20,33 +21,39 @@ The smallest encoding to which the receiver can be converted without loss of inf
 var smallestEncoding: UInt { get }
 ```
 
+```objc
+@property (readonly) NSStringEncoding smallestEncoding;
+```
+
 #### Discussion
 
 This encoding may not be the fastest for accessing characters, but is space-efficient. This property may take some time to access.
 
 ## See Also
 
-- [func getCharacters(UnsafeMutablePointer<unichar>, range: NSRange)](nsstring/getcharacters(_:range:).md)
+### Related Documentation
+- [func getCharacters(UnsafeMutablePointer<unichar>, range: NSRange)](./getcharacters%28_,range%29.md)
   Copies characters from a given range in the receiver into a given buffer.
-- [class var availableStringEncodings: UnsafePointer<UInt>](nsstring/availablestringencodings.md)
+### Working with Encodings
+- [class var availableStringEncodings: UnsafePointer<UInt>](./availablestringencodings.md)
   Returns a zero-terminated list of the encodings string objects support in the application’s environment.
-- [class var defaultCStringEncoding: UInt](nsstring/defaultcstringencoding.md)
+- [class var defaultCStringEncoding: UInt](./defaultcstringencoding.md)
   Returns the C-string encoding assumed for any method accepting a C string as an argument.
-- [class func stringEncoding(for: Data, encodingOptions: [StringEncodingDetectionOptionsKey : Any]?, convertedString: AutoreleasingUnsafeMutablePointer<NSString?>?, usedLossyConversion: UnsafeMutablePointer<ObjCBool>?) -> UInt](nsstring/stringencoding(for:encodingoptions:convertedstring:usedlossyconversion:).md)
+- [class func stringEncoding(for: Data, encodingOptions: [StringEncodingDetectionOptionsKey : Any]?, convertedString: AutoreleasingUnsafeMutablePointer<NSString?>?, usedLossyConversion: UnsafeMutablePointer<ObjCBool>?) -> UInt](./stringencoding%28for,encodingoptions,convertedstring,usedlossyconversion%29.md)
   Returns the string encoding for the given data as detected by attempting to create a string according to the specified encoding options.
-- [class func localizedName(of: UInt) -> String](nsstring/localizedname(of:).md)
+- [class func localizedName(of: UInt) -> String](./localizedname%28of%29.md)
   Returns a human-readable string giving the name of a given encoding.
-- [func canBeConverted(to: UInt) -> Bool](nsstring/canbeconverted(to:).md)
+- [func canBeConverted(to: UInt) -> Bool](./canbeconverted%28to%29.md)
   Returns a Boolean value that indicates whether the receiver can be converted to a given encoding without loss of information.
-- [func data(using: UInt) -> Data?](nsstring/data(using:).md)
+- [func data(using: UInt) -> Data?](./data%28using%29.md)
   Returns an `NSData` object containing a representation of the receiver encoded using a given encoding.
-- [func data(using: UInt, allowLossyConversion: Bool) -> Data?](nsstring/data(using:allowlossyconversion:).md)
+- [func data(using: UInt, allowLossyConversion: Bool) -> Data?](./data%28using,allowlossyconversion%29.md)
   Returns an `NSData` object containing a representation of the receiver encoded using a given encoding.
-- [var description: String](nsstring/description.md)
-- [var fastestEncoding: UInt](nsstring/fastestencoding.md)
+- [var description: String](./description.md)
+- [var fastestEncoding: UInt](./fastestencoding.md)
   The fastest encoding to which the receiver may be converted without loss of information.
-- [struct StringEncodingDetectionOptionsKey](stringencodingdetectionoptionskey.md)
-- [NSString Handling Exception Names](nsstring-handling-exception-names.md)
+- [struct StringEncodingDetectionOptionsKey](../stringencodingdetectionoptionskey.md)
+- [NSString Handling Exception Names](../nsstring-handling-exception-names.md)
   These constants define the names of exceptions raised if `NSString` cannot represent a string in a given encoding, or parse a string as a property list.
 
 

@@ -1,7 +1,8 @@
 # previewImageHandler
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom preview image handler block for the item provider.
 
@@ -20,13 +21,18 @@ The custom preview image handler block for the item provider.
 var previewImageHandler: NSItemProvider.LoadHandler? { get set }
 ```
 
+```objc
+@property (atomic, copy, nullable) NSItemProviderLoadHandler previewImageHandler;
+```
+
 #### Discussion
 
-In your image handler block, return an [`NSURL`](nsurl.md) object that specifies a file, or return an [`NSData`](nsdata.md) object.
+In your image handler block, return an [`NSURL`](../nsurl.md) object that specifies a file, or return an [`NSData`](../nsdata.md) object.
 
 ## See Also
 
-- [func loadPreviewImage(options: [AnyHashable : Any]!, completionHandler: NSItemProvider.CompletionHandler!)](nsitemprovider/loadpreviewimage(options:completionhandler:).md)
+### Loading a preview image
+- [func loadPreviewImage(options: [AnyHashable : Any]!, completionHandler: NSItemProvider.CompletionHandler!)](./loadpreviewimage%28options,completionhandler%29.md)
   Loads the preview image for the item that the item provider represents.
 
 

@@ -1,6 +1,7 @@
 # Analyzing model runtime performance with Instruments
 
-**Framework**: Core AI
+**Framework**: Core AI  
+**Role**: Article
 
 Diagnose model performance by capturing a trace in Instruments.
 
@@ -13,11 +14,11 @@ When a Core AI model runs on your device, many events happen internally that can
 - Compare model performance across CPU, GPU, and Neural Engine.
 - Find unnecessary delays from repeatedly loading uncached models.
 
-#### Record a New Trace
+#### Record a new trace
 
 Start with your Xcode project open and your device connected to your Mac. Next, select your app’s scheme and a run destination, then choose Product > Profile. In the Instruments template picker, select the Core AI template and click the Choose button.
 
-![The Instruments template picker dialog with the Standard tab selected and the Core AI template highlighted in the grid. A description below the grid reads, “Core AI: Monitors an application’s machine learning activity executed through Core AI.” The Choose button in the bottom-right is highlighted.](/images/com.apple.coreai/instrument-template-picker@2x.png)
+![The Instruments template picker dialog with the Standard tab selected and the Core AI template highlighted in the grid. A description below the grid reads, “Core AI: Monitors an application’s machine learning activity executed through Core AI.” The Choose button in the bottom-right is highlighted.](https://developer.apple.com/tutorials/images/com.apple.coreai/instrument-template-picker@2x.png)
 
 Alternatively, open Instruments and choose the Core AI template.
 
@@ -34,11 +35,11 @@ To begin recording the trace, click the Record button at the top left of the win
 
 > **Note**: For the most actionable results, run your app on its own. Other apps competing for CPU, GPU, or Neural Engine resources can distort the trace.
 
-#### Review the Trace Recording
+#### Review the trace recording
 
 Now that you’ve recorded a trace, the Instruments timeline shows recorded data from each of the instruments in the Core AI template.
 
-![An Instruments timeline view with time markers from 00:00 to 00:45 showing five stacked tracks. The top track is the Core AI instrument, expanded to reveal nested child rows for a model and its main function; its Activity track shows a thin green band of activity near the start of the recording and a large blue block of activity from roughly 35 to 50 seconds. Beneath it, the Neural Engine track shows a magenta band with sparse activity at the start and clustered marks during the later blue block. The GPU track, labeled M3 Max, displays a continuous magenta band across the entire timeline. The Time Profiler track, labeled CPU Usage, shows a CPU activity graph with peaks at the start and during the later block. The bottom track, an M3 Max Metal Device State track, shows a magenta band with a dark segment near the end of the timeline.](/images/com.apple.coreai/instrument-activity-overview@2x.png)
+![An Instruments timeline view with time markers from 00:00 to 00:45 showing five stacked tracks. The top track is the Core AI instrument, expanded to reveal nested child rows for a model and its main function; its Activity track shows a thin green band of activity near the start of the recording and a large blue block of activity from roughly 35 to 50 seconds. Beneath it, the Neural Engine track shows a magenta band with sparse activity at the start and clustered marks during the later blue block. The GPU track, labeled M3 Max, displays a continuous magenta band across the entire timeline. The Time Profiler track, labeled CPU Usage, shows a CPU activity graph with peaks at the start and during the later block. The bottom track, an M3 Max Metal Device State track, shows a magenta band with a dark segment near the end of the timeline.](https://developer.apple.com/tutorials/images/com.apple.coreai/instrument-activity-overview@2x.png)
 
 The Core AI instrument divides model activity into multiple tracks. The top track shows all activity. Expand it to reveal a child track for each active model, and expand a model’s track to reveal a child track for each of its active functions.
 
@@ -51,21 +52,22 @@ Each colored band represents an event in one of the four event categories. Each 
 - **Setup**: Preparation of the model before each inference. Appears in magenta in the timeline.
 - **Inference**: A single, complete inference from the model. Appears in blue in the timeline.
 
-Specialization events are often the most time-intensive operations during model runtime. Each model produces at most one Specialization event — none if the model is fully specialized for the device or already cached. You can learn more about specialization and how to optimize model performance in your app in [`Compiling Core AI models ahead of time`](compiling-core-ai-models-ahead-of-time.md) and [`Managing model specialization and caching`](managing-model-specialization-and-caching.md).
+Specialization events are often the most time-intensive operations during model runtime. Each model produces at most one Specialization event — none if the model is fully specialized for the device or already cached. You can learn more about specialization and how to optimize model performance in your app in [Compiling Core AI models ahead of time](./compiling-core-ai-models-ahead-of-time.md) and [Managing model specialization and caching](./managing-model-specialization-and-caching.md).
 
-![A zoomed-in Instruments timeline view spanning about one second around 00:13. The Core AI instrument appears in the left sidebar, expanded to show a model and its main function. In the Activity track, a green Specialize event labeled Compile Asset, Specialize starts just after 00:13.000 and extends to roughly 00:13.800, with a nested Compile segment sub-event inside it.](/images/com.apple.coreai/instrument-activity-specialize@2x.png)
+![A zoomed-in Instruments timeline view spanning about one second around 00:13. The Core AI instrument appears in the left sidebar, expanded to show a model and its main function. In the Activity track, a green Specialize event labeled Compile Asset, Specialize starts just after 00:13.000 and extends to roughly 00:13.800, with a nested Compile segment sub-event inside it.](https://developer.apple.com/tutorials/images/com.apple.coreai/instrument-activity-specialize@2x.png)
 
 Next, brief Load events appear in the timeline. They occur only at the start of runtime, when your app first loads the model into memory. If you see frequent Load events during runtime, check that your app doesn’t reload models repeatedly.
 
-![A zoomed-in Instruments timeline view spanning roughly 200 milliseconds around 00:13.700. The Core AI instrument appears in the left sidebar, expanded to show a model and its main function. In the Activity track, the tail end of the green Specialize event labeled Compile Asset, Specialize, with a nested Compile segment sub-event, ends at 00:13.830.681, immediately followed by a small cyan Load event labeled Load model::main (10.54 μs).](/images/com.apple.coreai/instrument-activity-load@2x.png)
+![A zoomed-in Instruments timeline view spanning roughly 200 milliseconds around 00:13.700. The Core AI instrument appears in the left sidebar, expanded to show a model and its main function. In the Activity track, the tail end of the green Specialize event labeled Compile Asset, Specialize, with a nested Compile segment sub-event, ends at 00:13.830.681, immediately followed by a small cyan Load event labeled Load model::main (10.54 μs).](https://developer.apple.com/tutorials/images/com.apple.coreai/instrument-activity-load@2x.png)
 
 Finally, brief Setup events appear in the timeline, and Inference events follow. A Setup event precedes each inference.
 
-![A zoomed-in Instruments timeline view spanning about 10 milliseconds around 00:38.558. The Core AI instrument appears in the left sidebar, expanded to show a model and its main function. In the Activity track, a thin magenta Setup event labeled Setup for model::main (66.96 μs) with a nested Context.alloc (22.83 μs) sub-event is immediately followed by a large blue Inference event labeled Run main and Run streaming function func_19. Nested rows beneath show corresponding blue Inference events for the model and its main function.](/images/com.apple.coreai/instrument-activity-setup@2x.png)
+![A zoomed-in Instruments timeline view spanning about 10 milliseconds around 00:38.558. The Core AI instrument appears in the left sidebar, expanded to show a model and its main function. In the Activity track, a thin magenta Setup event labeled Setup for model::main (66.96 μs) with a nested Context.alloc (22.83 μs) sub-event is immediately followed by a large blue Inference event labeled Run main and Run streaming function func_19. Nested rows beneath show corresponding blue Inference events for the model and its main function.](https://developer.apple.com/tutorials/images/com.apple.coreai/instrument-activity-setup@2x.png)
 
 ## See Also
 
-- [Monitoring model performance with the debug gauge](monitoring-model-performance-with-the-debug-gauge.md)
+### Runtime monitoring and analysis
+- [Monitoring model performance with the debug gauge](./monitoring-model-performance-with-the-debug-gauge.md)
   Track live inference activity and timing during a debug session.
 
 

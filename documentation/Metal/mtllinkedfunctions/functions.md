@@ -1,7 +1,8 @@
 # functions
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of function objects to link to the new function.
 
@@ -19,13 +20,18 @@ An array of function objects to link to the new function.
 var functions: [any MTLFunction]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSArray<id<MTLFunction>> * functions;
+```
+
 ## See Also
 
-- [var binaryFunctions: [any MTLFunction]?](mtllinkedfunctions/binaryfunctions.md)
+### Specifying related functions
+- [var binaryFunctions: [any MTLFunction]?](./binaryfunctions.md)
   An array of function objects already compiled to a binary representation to link.
-- [var groups: [String : [any MTLFunction]]?](mtllinkedfunctions/groups.md)
+- [var groups: [String : [any MTLFunction]]?](./groups.md)
   An optional list of groups specifying which functions your shader can call at each call site.
-- [var privateFunctions: [any MTLFunction]?](mtllinkedfunctions/privatefunctions.md)
+- [var privateFunctions: [any MTLFunction]?](./privatefunctions.md)
   An array of function objects to link to the new function, without exporting the functions publicly.
 
 

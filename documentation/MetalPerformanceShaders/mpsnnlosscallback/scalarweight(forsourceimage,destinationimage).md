@@ -2,6 +2,7 @@
 
 **Framework**: Metal Performance Shaders  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func scalarWeight(forSourceImage sourceImage: MPSImage, destinationImage: MPSImage) -> Float
+```
+
+```objc
+- (float) scalarWeightForSourceImage:(MPSImage *) sourceImage destinationImage:(MPSImage *) destinationImage;
 ```
 
 

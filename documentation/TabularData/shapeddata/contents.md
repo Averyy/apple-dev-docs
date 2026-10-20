@@ -1,7 +1,8 @@
 # contents
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A linear array that stores the elements of the multidimensional array.
 

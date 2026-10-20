@@ -1,15 +1,20 @@
 # kAudioUnitProperty_DistanceAttenuationData
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var kAudioUnitProperty_DistanceAttenuationData: AudioUnitPropertyID { get }
+```
+
+```c
+kAudioUnitProperty_DistanceAttenuationData
 ```
 
 

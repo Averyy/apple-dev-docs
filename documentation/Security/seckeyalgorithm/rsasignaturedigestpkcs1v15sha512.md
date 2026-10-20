@@ -1,7 +1,8 @@
 # rsaSignatureDigestPKCS1v15SHA512
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 10.0+
@@ -18,9 +19,13 @@
 static let rsaSignatureDigestPKCS1v15SHA512: SecKeyAlgorithm
 ```
 
+```c
+extern SecKeyAlgorithm const kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA512;
+```
+
 ## Mentions
 
-- [Signing and Verifying](signing-and-verifying.md)
+- [Signing and Verifying](../signing-and-verifying.md)
 
 
 ---

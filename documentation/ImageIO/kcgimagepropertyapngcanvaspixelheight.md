@@ -1,7 +1,8 @@
 # kCGImagePropertyAPNGCanvasPixelHeight
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The height of the main image, in pixels.
 
@@ -20,21 +21,26 @@ The height of the main image, in pixels.
 let kCGImagePropertyAPNGCanvasPixelHeight: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyAPNGCanvasPixelHeight;
+```
+
 ## See Also
 
-- [let kCGImagePropertyAPNGCanvasPixelWidth: CFString](kcgimagepropertyapngcanvaspixelwidth.md)
+### Image Properties
+- [let kCGImagePropertyAPNGCanvasPixelWidth: CFString](./kcgimagepropertyapngcanvaspixelwidth.md)
   The width of the main image, in pixels.
-- [let kCGImagePropertyPNGXPixelsPerMeter: CFString](kcgimagepropertypngxpixelspermeter.md)
+- [let kCGImagePropertyPNGXPixelsPerMeter: CFString](./kcgimagepropertypngxpixelspermeter.md)
   The number of x pixels per meter.
-- [let kCGImagePropertyPNGYPixelsPerMeter: CFString](kcgimagepropertypngypixelspermeter.md)
+- [let kCGImagePropertyPNGYPixelsPerMeter: CFString](./kcgimagepropertypngypixelspermeter.md)
   The number of y pixels per meter.
-- [let kCGImagePropertyPNGGamma: CFString](kcgimagepropertypnggamma.md)
+- [let kCGImagePropertyPNGGamma: CFString](./kcgimagepropertypnggamma.md)
   The gamma value.
-- [let kCGImagePropertyPNGInterlaceType: CFString](kcgimagepropertypnginterlacetype.md)
+- [let kCGImagePropertyPNGInterlaceType: CFString](./kcgimagepropertypnginterlacetype.md)
   The interlace type.
-- [let kCGImagePropertyPNGsRGBIntent: CFString](kcgimagepropertypngsrgbintent.md)
+- [let kCGImagePropertyPNGsRGBIntent: CFString](./kcgimagepropertypngsrgbintent.md)
   The sRGB intent.
-- [let kCGImagePropertyPNGChromaticities: CFString](kcgimagepropertypngchromaticities.md)
+- [let kCGImagePropertyPNGChromaticities: CFString](./kcgimagepropertypngchromaticities.md)
   The chromaticities.
 
 

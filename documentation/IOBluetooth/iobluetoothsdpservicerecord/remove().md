@@ -1,17 +1,22 @@
 # remove()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the service from the local SDP server.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func remove() -> IOReturn
+```
+
+```objc
+- (IOReturn) removeServiceRecord;
 ```
 
 #### Return Value

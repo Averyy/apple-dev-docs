@@ -1,7 +1,8 @@
 # AmbientAudioComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that configures the ambient rendering of sounds from an entity.
 
@@ -43,32 +44,33 @@ Ambient audio sources are well suited to play back multichannel content which ca
 ## Topics
 
 ### Initializers
-- [init(gain: Audio.Decibel)](ambientaudiocomponent/init(gain:).md)
+- [init(gain: Audio.Decibel)](./ambientaudiocomponent/init%28gain%29.md)
   Configure the behavior of an ambient audio source.
 ### Instance Properties
-- [var gain: Audio.Decibel](ambientaudiocomponent/gain.md)
+- [var gain: Audio.Decibel](./ambientaudiocomponent/gain.md)
   The overall level for all sounds emitted from an entity.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Component](./component.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [Creating a Spaceship game](creating-a-spaceship-game.md)
+### Audio source components
+- [Creating a Spaceship game](./creating-a-spaceship-game.md)
   Build an immersive game using RealityKit audio, simulation, and rendering features.
-- [Playing spatial audio](../visionos/playing-spatial-audio-in-visionos.md)
+- [Playing spatial audio](../visionOS/playing-spatial-audio-in-visionos.md)
   Create and adjust spatial audio in visionOS with RealityKit.
-- [struct SpatialAudioComponent](spatialaudiocomponent.md)
+- [struct SpatialAudioComponent](./spatialaudiocomponent.md)
   A component that configures how sounds emit from an entity into a person’s environment.
-- [struct ChannelAudioComponent](channelaudiocomponent.md)
+- [struct ChannelAudioComponent](./channelaudiocomponent.md)
   A component that configures channel-based rendering of sounds from an entity.
 
 

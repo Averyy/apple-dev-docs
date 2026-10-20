@@ -1,7 +1,8 @@
 # GL_ATTACHED_SHADERS
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_ATTACHED_SHADERS: Int32 { get }
+```
+
+```c
+#define GL_ATTACHED_SHADERS
 ```
 
 

@@ -1,7 +1,8 @@
 # mutableCopy(using:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a mutable copy of a graphics path transformed by a transformation matrix.
 
@@ -10,7 +11,7 @@ Creates a mutable copy of a graphics path transformed by a transformation matrix
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Creates a mutable copy of a graphics path transformed by a transformation matrix
 
 ```swift
 func mutableCopy(using transform: UnsafePointer<CGAffineTransform>?) -> CGMutablePath?
+```
+
+```c
+extern CGMutablePathRefCGPathCreateMutableCopyByTransformingPath(CGPathRef path, const CGAffineTransform *transform);
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ A new, mutable copy of the specified path transformed by the transform parameter
 
 ## See Also
 
-- [func mutableCopy() -> CGMutablePath?](cgpath/mutablecopy.md)
+### Copying a Graphics Path
+- [func mutableCopy() -> CGMutablePath?](./mutablecopy%28%29.md)
   Creates a mutable copy of an existing graphics path.
 
 

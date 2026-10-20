@@ -1,7 +1,8 @@
 # colorTransferFunction
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transfer function used for video composition.
 
@@ -19,19 +20,24 @@ The transfer function used for video composition.
 var colorTransferFunction: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * colorTransferFunction;
+```
+
 ## Mentions
 
-- [Tagging media with video color information](tagging-media-with-video-color-information.md)
+- [Tagging media with video color information](../tagging-media-with-video-color-information.md)
 
 #### Discussion
 
-The default value is `nil`. When the value of this property is `nil`, the source’s transfer function is propagated and used. Valid values are those suitable for [`AVVideoTransferFunctionKey`](avvideotransferfunctionkey.md).
+The default value is `nil`. When the value of this property is `nil`, the source’s transfer function is propagated and used. Valid values are those suitable for [`AVVideoTransferFunctionKey`](../avvideotransferfunctionkey.md).
 
 ## See Also
 
-- [var colorPrimaries: String?](avmutablevideocomposition/colorprimaries.md)
+### Configuring color
+- [var colorPrimaries: String?](./colorprimaries.md)
   The color primaries used for video composition.
-- [var colorYCbCrMatrix: String?](avmutablevideocomposition/colorycbcrmatrix.md)
+- [var colorYCbCrMatrix: String?](./colorycbcrmatrix.md)
   The YCbCr matrix used for video composition.
 
 

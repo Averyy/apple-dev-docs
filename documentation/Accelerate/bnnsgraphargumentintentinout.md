@@ -1,7 +1,8 @@
 # BNNSGraphArgumentIntentInOut
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specifies the argument is an in-place input and output tensor.
 
@@ -20,17 +21,22 @@ A constant that specifies the argument is an in-place input and output tensor.
 var BNNSGraphArgumentIntentInOut: BNNSGraphArgumentIntent { get }
 ```
 
+```c
+BNNSGraphArgumentIntentInOut
+```
+
 ## See Also
 
-- [init(UInt32)](bnnsgraphargumentintent/init(_:).md)
+### Argument intents
+- [init(UInt32)](./bnnsgraphargumentintent/init%28_%29.md)
   Creates a new instance.
-- [init(rawValue: UInt32)](bnnsgraphargumentintent/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./bnnsgraphargumentintent/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [var rawValue: UInt32](bnnsgraphargumentintent/rawvalue.md)
+- [var rawValue: UInt32](./bnnsgraphargumentintent/rawvalue.md)
   The corresponding value of the raw type.
-- [var BNNSGraphArgumentIntentIn: BNNSGraphArgumentIntent](bnnsgraphargumentintentin.md)
+- [var BNNSGraphArgumentIntentIn: BNNSGraphArgumentIntent](./bnnsgraphargumentintentin.md)
   A constant that specifies the argument provides an input tensor.
-- [var BNNSGraphArgumentIntentOut: BNNSGraphArgumentIntent](bnnsgraphargumentintentout.md)
+- [var BNNSGraphArgumentIntentOut: BNNSGraphArgumentIntent](./bnnsgraphargumentintentout.md)
   A constant that specifies the argument provides an output tensor.
 
 

@@ -1,7 +1,8 @@
 # UICellConfigurationState
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that encapsulates a cell’s state.
 
@@ -10,7 +11,7 @@ A structure that encapsulates a cell’s state.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,60 +23,61 @@ struct UICellConfigurationState
 
 A cell configuration state encompasses a trait collection along with all of the common states that affect a cell’s appearance — view states like selected, focused, or disabled, and cell states like editing or swiped. A cell configuration state encapsulates the inputs that configure a cell for any possible state or combination of states. You use a cell configuration state with background and content configurations to obtain the default appearance for a specific state.
 
-Typically, you don’t create a configuration state yourself. To obtain a configuration state, override the [`updateConfiguration(using:)`](uicollectionviewcell/updateconfiguration(using:).md) method in your cell subclass and use the state parameter. Outside of this method, you can get a cell’s configuration state by using its [`configurationState`](uicollectionviewcell/configurationstate-4u37h.md) property.
+Typically, you don’t create a configuration state yourself. To obtain a configuration state, override the [`updateConfiguration(using:)`](./uicollectionviewcell/updateconfiguration%28using%29.md) method in your cell subclass and use the state parameter. Outside of this method, you can get a cell’s configuration state by using its [`configurationState`](./uicollectionviewcell/configurationstate-4u37h.md) property.
 
-You can create your own custom states to add to a cell configuration state by defining a custom state key using [`UIConfigurationStateCustomKey`](uiconfigurationstatecustomkey.md).
+You can create your own custom states to add to a cell configuration state by defining a custom state key using [`UIConfigurationStateCustomKey`](./uiconfigurationstatecustomkey.md).
 
 ## Topics
 
 ### Managing view configuration states
-- [var isSelected: Bool](uicellconfigurationstate-swift.struct/isselected.md)
+- [var isSelected: Bool](./uicellconfigurationstate-swift.struct/isselected.md)
   A Boolean value that indicates whether the cell is in a selected state.
-- [var isHighlighted: Bool](uicellconfigurationstate-swift.struct/ishighlighted.md)
+- [var isHighlighted: Bool](./uicellconfigurationstate-swift.struct/ishighlighted.md)
   A Boolean value that indicates whether the cell is in a highlighted state.
-- [var isFocused: Bool](uicellconfigurationstate-swift.struct/isfocused.md)
+- [var isFocused: Bool](./uicellconfigurationstate-swift.struct/isfocused.md)
   A Boolean value that indicates whether the cell is in a focused state.
-- [var isDisabled: Bool](uicellconfigurationstate-swift.struct/isdisabled.md)
+- [var isDisabled: Bool](./uicellconfigurationstate-swift.struct/isdisabled.md)
   A Boolean value that indicates whether the cell is in a disabled state.
-- [var isPinned: Bool](uicellconfigurationstate-swift.struct/ispinned.md)
+- [var isPinned: Bool](./uicellconfigurationstate-swift.struct/ispinned.md)
   A Boolean value that indicates whether the view is in a pinned state.
 ### Managing cell configuration states
-- [var isEditing: Bool](uicellconfigurationstate-swift.struct/isediting.md)
+- [var isEditing: Bool](./uicellconfigurationstate-swift.struct/isediting.md)
   A Boolean value that indicates whether the cell is in editing mode.
-- [var isSwiped: Bool](uicellconfigurationstate-swift.struct/isswiped.md)
+- [var isSwiped: Bool](./uicellconfigurationstate-swift.struct/isswiped.md)
   A Boolean value that indicates whether the cell is in a swiped state.
-- [var isExpanded: Bool](uicellconfigurationstate-swift.struct/isexpanded.md)
+- [var isExpanded: Bool](./uicellconfigurationstate-swift.struct/isexpanded.md)
   A Boolean value that indicates whether the cell is in an expanded state, such as in an outline.
-- [var isReordering: Bool](uicellconfigurationstate-swift.struct/isreordering.md)
+- [var isReordering: Bool](./uicellconfigurationstate-swift.struct/isreordering.md)
   A Boolean value that indicates whether the cell is reordering.
-- [var cellDragState: UICellConfigurationState.DragState](uicellconfigurationstate-swift.struct/celldragstate.md)
+- [var cellDragState: UICellConfigurationState.DragState](./uicellconfigurationstate-swift.struct/celldragstate.md)
   The cell’s drag state.
-- [var cellDropState: UICellConfigurationState.DropState](uicellconfigurationstate-swift.struct/celldropstate.md)
+- [var cellDropState: UICellConfigurationState.DropState](./uicellconfigurationstate-swift.struct/celldropstate.md)
   The cell’s drop state.
-- [UICellConfigurationState.DragState](uicellconfigurationstate-swift.struct/dragstate.md)
+- [UICellConfigurationState.DragState](./uicellconfigurationstate-swift.struct/dragstate.md)
   Constants that describe the cell’s drag state.
-- [UICellConfigurationState.DropState](uicellconfigurationstate-swift.struct/dropstate.md)
+- [UICellConfigurationState.DropState](./uicellconfigurationstate-swift.struct/dropstate.md)
   Constants that describe the cell’s drop state.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [UIConfigurationState](uiconfigurationstate-8d7pd.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [UIConfigurationState](./uiconfigurationstate-8d7pd.md)
 
 ## See Also
 
-- [struct UIViewConfigurationState](uiviewconfigurationstate-swift.struct.md)
+### Configuration states
+- [struct UIViewConfigurationState](./uiviewconfigurationstate-swift.struct.md)
   A structure that encapsulates a view’s state.
-- [protocol UIConfigurationState](uiconfigurationstate-8d7pd.md)
+- [protocol UIConfigurationState](./uiconfigurationstate-8d7pd.md)
   The requirements for an object that encapsulates a view’s state.
-- [struct UIConfigurationStateCustomKey](uiconfigurationstatecustomkey.md)
+- [struct UIConfigurationStateCustomKey](./uiconfigurationstatecustomkey.md)
   A key that defines a custom state for a view.
 
 

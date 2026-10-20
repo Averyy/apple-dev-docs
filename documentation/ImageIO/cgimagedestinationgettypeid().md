@@ -1,7 +1,8 @@
 # CGImageDestinationGetTypeID()
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the unique type identifier of an image destination opaque type.
 
@@ -20,6 +21,10 @@ Returns the unique type identifier of an image destination opaque type.
 func CGImageDestinationGetTypeID() -> CFTypeID
 ```
 
+```c
+extern CFTypeID CGImageDestinationGetTypeID();
+```
+
 #### Return Value
 
 Returns the Core Foundation type ID for an image destination.
@@ -30,7 +35,8 @@ A type identifier is an integer that identifies the opaque type to which a Core 
 
 ## See Also
 
-- [func CGImageDestinationCopyTypeIdentifiers() -> CFArray](cgimagedestinationcopytypeidentifiers().md)
+### Getting the Image Types
+- [func CGImageDestinationCopyTypeIdentifiers() -> CFArray](./cgimagedestinationcopytypeidentifiers%28%29.md)
   Returns an array of the uniform type identifiers that are supported for image destinations.
 
 

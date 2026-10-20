@@ -1,12 +1,15 @@
 # thumbnailDictionary
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of AppKit image objects keyed by size.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 12.0
+
+> **Deprecated**: Use the QuickLookThumbnailing framework and extension point instead
 
 ## Declaration
 
@@ -16,9 +19,10 @@ var thumbnailDictionary: [URLThumbnailDictionaryItem : NSImage]? { get }
 
 ## See Also
 
-- [var thumbnail: NSImage?](urlresourcevalues/thumbnail.md)
+### Thumbnail values
+- [var thumbnail: NSImage?](./thumbnail.md)
   A thumbnail image of the URL.
-- [var thumbnailDictionary: [URLThumbnailDictionaryItem : UIImage]?](urlresourcevalues/thumbnaildictionary-7jyzz.md)
+- [var thumbnailDictionary: [URLThumbnailDictionaryItem : UIImage]?](./thumbnaildictionary-7jyzz.md)
   A dictionary of UIKit image objects keyed by size.
 
 

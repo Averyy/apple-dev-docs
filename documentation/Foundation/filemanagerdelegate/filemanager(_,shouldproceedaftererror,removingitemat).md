@@ -1,7 +1,8 @@
 # fileManager(_:shouldProceedAfterError:removingItemAt:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the operation should continue after an error occurs while removing the item at the specified URL.
 
@@ -20,15 +21,19 @@ Asks the delegate if the operation should continue after an error occurs while r
 optional func fileManager(_ fileManager: FileManager, shouldProceedAfterError error: any Error, removingItemAt URL: URL) -> Bool
 ```
 
+```objc
+- (BOOL) fileManager:(NSFileManager *) fileManager shouldProceedAfterError:(NSError *) error removingItemAtURL:(NSURL *) URL;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the operation should proceed or [`false`](https://developer.apple.com/documentation/swift/false) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the operation should proceed or [`false`](../../Swift/false.md) if it should be aborted. If you do not implement this method, the file manager assumes a response of [`false`](../../Swift/false.md).
 
 #### Discussion
 
-The file manager calls this method when there is a problem deleting the item to the specified location. If you return [`true`](https://developer.apple.com/documentation/swift/true), the file manager continues deleting any remaining items and ignores the error.
+The file manager calls this method when there is a problem deleting the item to the specified location. If you return [`true`](../../Swift/true.md), the file manager continues deleting any remaining items and ignores the error.
 
-This method performs the same task as the [`fileManager(_:shouldProceedAfterError:removingItemAtPath:)`](filemanagerdelegate/filemanager(_:shouldproceedaftererror:removingitematpath:).md) method and is preferred over that method in macOS 10.6 and later.
+This method performs the same task as the [`fileManager(_:shouldProceedAfterError:removingItemAtPath:)`](./filemanager%28_,shouldproceedaftererror,removingitematpath%29.md) method and is preferred over that method in macOS 10.6 and later.
 
 ## Parameters
 
@@ -38,15 +43,17 @@ This method performs the same task as the [`fileManager(_:shouldProceedAfterErro
 
 ## See Also
 
-- [func removeItem(atPath: String) throws](filemanager/removeitem(atpath:).md)
+### Related Documentation
+- [func removeItem(atPath: String) throws](../filemanager/removeitem%28atpath%29.md)
   Removes the file or directory at the specified path.
-- [func removeItem(at: URL) throws](filemanager/removeitem(at:).md)
+- [func removeItem(at: URL) throws](../filemanager/removeitem%28at%29.md)
   Removes the file or directory at the specified URL.
-- [func fileManager(FileManager, shouldRemoveItemAt: URL) -> Bool](filemanagerdelegate/filemanager(_:shouldremoveitemat:).md)
+### Removing an Item
+- [func fileManager(FileManager, shouldRemoveItemAt: URL) -> Bool](./filemanager%28_,shouldremoveitemat%29.md)
   Asks the delegate whether the item at the specified URL should be deleted.
-- [func fileManager(FileManager, shouldRemoveItemAtPath: String) -> Bool](filemanagerdelegate/filemanager(_:shouldremoveitematpath:).md)
+- [func fileManager(FileManager, shouldRemoveItemAtPath: String) -> Bool](./filemanager%28_,shouldremoveitematpath%29.md)
   Asks the delegate whether the item at the specified path should be deleted.
-- [func fileManager(FileManager, shouldProceedAfterError: any Error, removingItemAtPath: String) -> Bool](filemanagerdelegate/filemanager(_:shouldproceedaftererror:removingitematpath:).md)
+- [func fileManager(FileManager, shouldProceedAfterError: any Error, removingItemAtPath: String) -> Bool](./filemanager%28_,shouldproceedaftererror,removingitematpath%29.md)
   Asks the delegate if the operation should continue after an error occurs while removing the item at the specified path.
 
 

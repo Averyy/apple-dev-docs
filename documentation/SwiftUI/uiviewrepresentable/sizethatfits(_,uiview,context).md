@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Given a proposed size, returns the preferred size of the composite view.
@@ -33,6 +34,12 @@ This method may be called more than once with different proposed sizes during th
 - `proposal`: The proposed size for the view.
 - `uiView`: Your custom view object.
 - `context`: A context structure containing information about the current state of the system.
+
+## Default Implementations
+
+### UIViewRepresentable Implementations
+- [func sizeThatFits(ProposedViewSize, uiView: Self.UIViewType, context: Self.Context) -> CGSize?](./sizethatfits%28_,uiview,context%29-5tdxh.md)
+  Given a proposed size, returns the preferred size of the composite view.
 
 
 ---

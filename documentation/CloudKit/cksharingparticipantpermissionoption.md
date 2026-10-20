@@ -1,7 +1,8 @@
 # CKSharingParticipantPermissionOption
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that controls participant permission options.
 
@@ -18,38 +19,43 @@ An object that controls participant permission options.
 struct CKSharingParticipantPermissionOption
 ```
 
+```c
+enum CKSharingParticipantPermissionOption : NSUInteger;
+```
+
 ## Topics
 
 ### Creating an access option
-- [init(rawValue: UInt)](cksharingparticipantpermissionoption/init(rawvalue:).md)
+- [init(rawValue: UInt)](./cksharingparticipantpermissionoption/init%28rawvalue%29.md)
   Creates and initializes a participant permission option object.
 ### Configuring the options
-- [static var any: CKSharingParticipantPermissionOption](cksharingparticipantpermissionoption/any.md)
+- [static var any: CKSharingParticipantPermissionOption](./cksharingparticipantpermissionoption/any.md)
   The permission option the system uses to control whether a user can grant read-only or write access.
-- [static var readOnly: CKSharingParticipantPermissionOption](cksharingparticipantpermissionoption/readonly.md)
+- [static var readOnly: CKSharingParticipantPermissionOption](./cksharingparticipantpermissionoption/readonly.md)
   The permission option the system uses to control whether a user can grant read-only access.
-- [static var readWrite: CKSharingParticipantPermissionOption](cksharingparticipantpermissionoption/readwrite.md)
+- [static var readWrite: CKSharingParticipantPermissionOption](./cksharingparticipantpermissionoption/readwrite.md)
   The permission option the system uses to control whether a user can grant write access.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var allowedParticipantAccessOptions: CKSharingParticipantAccessOption](ckallowedsharingoptions/allowedparticipantaccessoptions.md)
+### Configuring the options
+- [var allowedParticipantAccessOptions: CKSharingParticipantAccessOption](./ckallowedsharingoptions/allowedparticipantaccessoptions.md)
   The permission option the system uses to control whether a user can share publicly or privately.
-- [var allowedParticipantPermissionOptions: CKSharingParticipantPermissionOption](ckallowedsharingoptions/allowedparticipantpermissionoptions.md)
+- [var allowedParticipantPermissionOptions: CKSharingParticipantPermissionOption](./ckallowedsharingoptions/allowedparticipantpermissionoptions.md)
   The permission option the system uses to control whether a user can grant read-only or write access.
-- [struct CKSharingParticipantAccessOption](cksharingparticipantaccessoption.md)
+- [struct CKSharingParticipantAccessOption](./cksharingparticipantaccessoption.md)
   An object that controls participant access options.
 
 

@@ -1,7 +1,8 @@
 # ProfilesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that list provisioning profiles.
 
@@ -10,7 +11,7 @@ The response body for endpoints that list provisioning profiles.
 
 ## Declaration
 
-```swift
+```
 object ProfilesResponse
 ```
 
@@ -19,23 +20,25 @@ object ProfilesResponse
 - `data` ([Profile]) *(required)*: The resource data.
 - `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
 - `meta` (PagingInformation): Paging information.
-- `included` ([*])
+- `included` ([*]): **Allowed Types**: `BundleId`, `Certificate`, `Device`
 
 ## See Also
 
-- [List and download profiles](get-v1-profiles.md)
+### Related Documentation
+- [List and download profiles](./get-v1-profiles.md)
   Find and list provisioning profiles and download their data.
-- [object Profile](profile.md)
+### Objects
+- [object Profile](./profile.md)
   A provisioning profile that authorizes specific devices to run an app during development or distribution.
-- [object ProfileCreateRequest](profilecreaterequest.md)
+- [object ProfileCreateRequest](./profilecreaterequest.md)
   The request body you use to create a Profile.
-- [object ProfileResponse](profileresponse.md)
+- [object ProfileResponse](./profileresponse.md)
   The response body for endpoints that create or read a single provisioning profile.
-- [object ProfilesWithoutIncludesResponse](profileswithoutincludesresponse.md)
+- [object ProfilesWithoutIncludesResponse](./profileswithoutincludesresponse.md)
   A response containing a list of provisioning profiles, without related resources.
-- [object ProfileBundleIdLinkageResponse](profilebundleidlinkageresponse.md)
-- [object ProfileCertificatesLinkagesResponse](profilecertificateslinkagesresponse.md)
-- [object ProfileDevicesLinkagesResponse](profiledeviceslinkagesresponse.md)
+- [object ProfileBundleIdLinkageResponse](./profilebundleidlinkageresponse.md)
+- [object ProfileCertificatesLinkagesResponse](./profilecertificateslinkagesresponse.md)
+- [object ProfileDevicesLinkagesResponse](./profiledeviceslinkagesresponse.md)
 
 
 ---

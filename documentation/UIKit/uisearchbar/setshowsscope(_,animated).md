@@ -1,7 +1,8 @@
 # setShowsScope(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies whether the scope bar is displayed, optionally using an animation.
 
@@ -18,9 +19,13 @@ Specifies whether the scope bar is displayed, optionally using an animation.
 func setShowsScope(_ show: Bool, animated animate: Bool)
 ```
 
+```objc
+- (void) setShowsScopeBar:(BOOL) show animated:(BOOL) animate;
+```
+
 #### Discussion
 
-If the search bar is owned by a [`UISearchController`](uisearchcontroller.md), then calling this method implicitly sets the search controller’s [`automaticallyShowsScopeBar`](uisearchcontroller/automaticallyshowsscopebar.md) property to [`false`](https://developer.apple.com/documentation/swift/false).
+If the search bar is owned by a [`UISearchController`](../uisearchcontroller.md), then calling this method implicitly sets the search controller’s [`automaticallyShowsScopeBar`](../uisearchcontroller/automaticallyshowsscopebar.md) property to [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -29,11 +34,12 @@ If the search bar is owned by a [`UISearchController`](uisearchcontroller.md), t
 
 ## See Also
 
-- [var scopeButtonTitles: [String]?](uisearchbar/scopebuttontitles.md)
+### Configuring scope bar buttons
+- [var scopeButtonTitles: [String]?](./scopebuttontitles.md)
   An array of strings indicating the titles of the scope buttons.
-- [var selectedScopeButtonIndex: Int](uisearchbar/selectedscopebuttonindex.md)
+- [var selectedScopeButtonIndex: Int](./selectedscopebuttonindex.md)
   The index of the selected scope button.
-- [var showsScopeBar: Bool](uisearchbar/showsscopebar.md)
+- [var showsScopeBar: Bool](./showsscopebar.md)
   Specifies whether the scope bar is displayed.
 
 

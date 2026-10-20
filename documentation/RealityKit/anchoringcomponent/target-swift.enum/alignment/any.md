@@ -1,7 +1,8 @@
 # any
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Surfaces of any alignment.
 
@@ -11,7 +12,7 @@ Surfaces of any alignment.
 - Mac Catalyst 14.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ static let any: AnchoringComponent.Target.Alignment
 
 ## See Also
 
-- [static let horizontal: AnchoringComponent.Target.Alignment](anchoringcomponent/target-swift.enum/alignment/horizontal.md)
+### Choosing an alignment
+- [static let horizontal: AnchoringComponent.Target.Alignment](./horizontal.md)
   Horizontal surfaces.
-- [static let vertical: AnchoringComponent.Target.Alignment](anchoringcomponent/target-swift.enum/alignment/vertical.md)
+- [static let vertical: AnchoringComponent.Target.Alignment](./vertical.md)
   Vertical surfaces.
 
 

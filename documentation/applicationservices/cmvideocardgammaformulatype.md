@@ -1,9 +1,10 @@
 # cmVideoCardGammaFormulaType
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-The video card gamma tag data is stored as a formula. See [`CMVideoCardGammaFormula`](cmvideocardgammaformula.md) for a description of the formula format.
+The video card gamma tag data is stored as a formula. See [`CMVideoCardGammaFormula`](./cmvideocardgammaformula.md) for a description of the formula format.
 
 **Availability**:
 - macOS 10.0+

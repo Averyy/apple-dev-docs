@@ -1,7 +1,8 @@
 # HIShapeReplacePathInCGContext(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeReplacePathInCGContext(_ inShape: HIShape!, _ inContext: CGContext!) -> OSStatus
+```
+
+```c
+OSStatus HIShapeReplacePathInCGContext(HIShapeRef inShape, CGContextRef inContext);
 ```
 
 

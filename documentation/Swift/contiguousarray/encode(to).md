@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes the elements of this contiguous array into the given encoder in an unkeyed container.
 
@@ -19,6 +20,8 @@ Encodes the elements of this contiguous array into the given encoder in an unkey
 ```swift
 func encode(to encoder: any Encoder) throws
 ```
+
+Available when `Element` conforms to `Encodable`.
 
 #### Discussion
 

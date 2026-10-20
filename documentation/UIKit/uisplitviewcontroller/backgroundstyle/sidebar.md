@@ -1,7 +1,8 @@
 # UISplitViewController.BackgroundStyle.sidebar
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that applies a blurred effect to the background of the primary view controller.
 
@@ -17,13 +18,18 @@ A style that applies a blurred effect to the background of the primary view cont
 case sidebar
 ```
 
+```c
+UISplitViewControllerBackgroundStyleSidebar
+```
+
 ## Mentions
 
-- [Optimizing your iPad app for Mac](optimizing-your-ipad-app-for-mac.md)
+- [Optimizing your iPad app for Mac](../../optimizing-your-ipad-app-for-mac.md)
 
 ## See Also
 
-- [UISplitViewController.BackgroundStyle.none](uisplitviewcontroller/backgroundstyle/none.md)
+### Background styles
+- [UISplitViewController.BackgroundStyle.none](./none.md)
   A style that has no visual effect on the background appearance of the primary view controller.
 
 

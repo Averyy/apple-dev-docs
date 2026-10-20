@@ -1,7 +1,8 @@
 # GKCompositeBehavior
 
 **Framework**: GameplayKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of behaviors, each of which is a set of goals, that together influence the movement of an agent.
 
@@ -19,11 +20,15 @@ A set of behaviors, each of which is a set of goals, that together influence the
 class GKCompositeBehavior
 ```
 
+```objc
+@interface GKCompositeBehavior : GKBehavior
+```
+
 #### Overview
 
-By composing [`GKGoal`](gkgoal.md) objects into subgroups ([`GKBehavior`](gkbehavior.md) objects) and composing those behaviors into composite behaviors, you can control certain aspects of a [`GKAgent`](gkagent.md) object’s movement in concert. To assign a behavior to an agent, use its [`behavior`](gkagent/behavior.md) property.
+By composing [`GKGoal`](./gkgoal.md) objects into subgroups ([`GKBehavior`](./gkbehavior.md) objects) and composing those behaviors into composite behaviors, you can control certain aspects of a [`GKAgent`](./gkagent.md) object’s movement in concert. To assign a behavior to an agent, use its [`behavior`](./gkagent/behavior.md) property.
 
-For example, you might create a behavior for a set of agents to stay together as a flock (with cohesion, alignment, and separation goals) while loosely following a path. With a single [`GKBehavior`](gkbehavior.md) object, whenever you want to change the importance of the flocking goals relative to the path-following goals, you’d need to individually change the weight of each goal. With a composite behavior, you can adjust the relative influence of a group of goals together, as in the following code.
+For example, you might create a behavior for a set of agents to stay together as a flock (with cohesion, alignment, and separation goals) while loosely following a path. With a single [`GKBehavior`](./gkbehavior.md) object, whenever you want to change the importance of the flocking goals relative to the path-following goals, you’d need to individually change the weight of each goal. With a composite behavior, you can adjust the relative influence of a group of goals together, as in the following code.
 
 **Swift**:
 
@@ -59,63 +64,64 @@ GKCompositeBehavior *composite = [GKCompositeBehavior behaviorWithBehaviors:@[
 ]];
 ```
 
-After constructing this behavior, you can use the [`setWeight(_:for:)`](gkcompositebehavior/setweight(_:for:).md) method to increase or decrease the influence of the `flock` and `meanderOnPath` behaviors relative to one another.
+After constructing this behavior, you can use the [`setWeight(_:for:)`](./gkcompositebehavior/setweight%28_,for%29.md) method to increase or decrease the influence of the `flock` and `meanderOnPath` behaviors relative to one another.
 
-To learn more about using goals and agents, see [`Agents, Goals, and Behaviors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Agent.html#//apple_ref/doc/uid/TP40015172-CH8) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+To learn more about using goals and agents, see [Agents, Goals, and Behaviors](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Agent.html#//apple_ref/doc/uid/TP40015172-CH8) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Topics
 
 ### Creating a Composite Behavior
-- [convenience init(behaviors: [GKBehavior])](gkcompositebehavior/init(behaviors:).md)
+- [convenience init(behaviors: [GKBehavior])](./gkcompositebehavior/init%28behaviors%29.md)
   Creates a composite behavior from the specified individual behaviors.
-- [convenience init(behaviors: [GKBehavior], andWeights: [NSNumber])](gkcompositebehavior/init(behaviors:andweights:).md)
+- [convenience init(behaviors: [GKBehavior], andWeights: [NSNumber])](./gkcompositebehavior/init%28behaviors,andweights%29.md)
   Creates a behavior with the specified behaviors and weights.
 ### Managing the Individual Behaviors in a Composite Behavior
-- [func setWeight(Float, for: GKBehavior)](gkcompositebehavior/setweight(_:for:).md)
+- [func setWeight(Float, for: GKBehavior)](./gkcompositebehavior/setweight%28_,for%29.md)
   Sets the weight for the specified individual behavior’s influence on agents, adding that behavior to the composite behavior if it is not already present.
-- [func weight(for: GKBehavior) -> Float](gkcompositebehavior/weight(for:).md)
+- [func weight(for: GKBehavior) -> Float](./gkcompositebehavior/weight%28for%29.md)
   Returns the weight for the specified individual behavior’s influence on agents.
-- [func remove(GKBehavior)](gkcompositebehavior/remove(_:).md)
+- [func remove(GKBehavior)](./gkcompositebehavior/remove%28_%29.md)
   Removes the specified individual behavior from the composite behavior.
-- [func removeAllBehaviors()](gkcompositebehavior/removeallbehaviors.md)
+- [func removeAllBehaviors()](./gkcompositebehavior/removeallbehaviors%28%29.md)
   Removes all individual behaviors from the composite behavior.
-- [var behaviorCount: Int](gkcompositebehavior/behaviorcount.md)
+- [var behaviorCount: Int](./gkcompositebehavior/behaviorcount.md)
   The number of individual behaviors in the composite behavior.
 ### Working with Behaviors Using Subscript Syntax
-- [subscript(GKBehavior) -> NSNumber](gkcompositebehavior/subscript(_:)-6jng9.md)
+- [subscript(GKBehavior) -> NSNumber](./gkcompositebehavior/subscript%28_%29-6jng9.md)
   Returns the weight associated with the behavior specified by subscript syntax.
-- [subscript(Int) -> GKBehavior](gkcompositebehavior/subscript(_:)-6krdg.md)
+- [subscript(Int) -> GKBehavior](./gkcompositebehavior/subscript%28_%29-6krdg.md)
   Returns the individual behavior at the specified index in the composite behavior’s list of behaviors.
 
 ## Relationships
 
 ### Inherits From
-- [GKBehavior](gkbehavior.md)
+- [GKBehavior](./gkbehavior.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSFastEnumeration](../foundation/nsfastenumeration.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSFastEnumeration](../Foundation/nsfastenumeration.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GKAgent](gkagent.md)
+### Agents, Goals, and Behaviors
+- [class GKAgent](./gkagent.md)
   A component that moves a game entity according to a set of goals and realistic constraints.
-- [class GKAgent2D](gkagent2d.md)
+- [class GKAgent2D](./gkagent2d.md)
   An agent that operates in a two-dimensional space.
-- [class GKAgent3D](gkagent3d.md)
+- [class GKAgent3D](./gkagent3d.md)
   An agent that operates in a three-dimensional space.
-- [class GKGoal](gkgoal.md)
+- [class GKGoal](./gkgoal.md)
   An influence that motivates the movement of one or more agents.
-- [class GKBehavior](gkbehavior.md)
+- [class GKBehavior](./gkbehavior.md)
   A set of goals that together influence the movement of an agent.
-- [class GKPath](gkpath.md)
+- [class GKPath](./gkpath.md)
   A polygonal path that can be followed by an agent.
-- [protocol GKAgentDelegate](gkagentdelegate.md)
+- [protocol GKAgentDelegate](./gkagentdelegate.md)
   Implement this protocol to synchronize the state of an agent with its visual representation in your game.
 
 

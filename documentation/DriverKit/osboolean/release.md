@@ -1,19 +1,20 @@
 # release
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Releases the OSObject instance
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void release() const;
 ```
 
@@ -23,10 +24,11 @@ Decreases the retain count of the instance by one. If the count is then zero, fr
 
 ## See Also
 
-- [free](osboolean/free.md)
-- [retain](osboolean/retain.md)
+### Configuring a Boolean Type
+- [free](./free.md)
+- [retain](./retain.md)
   Retains the OSObject instance
-- [OSBooleanPtr](osbooleanptr.md)
+- [OSBooleanPtr](../osbooleanptr.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # veryShortStandaloneWeekdaySymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of very short standalone weekday symbols for the receiver.
 
@@ -20,17 +21,22 @@ The array of very short standalone weekday symbols for the receiver.
 var veryShortStandaloneWeekdaySymbols: [String]! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSArray<NSString *> * veryShortStandaloneWeekdaySymbols;
+```
+
 ## See Also
 
-- [var weekdaySymbols: [String]!](dateformatter/weekdaysymbols.md)
+### Managing Weekday Symbols
+- [var weekdaySymbols: [String]!](./weekdaysymbols.md)
   The array of weekday symbols for the receiver.
-- [var shortWeekdaySymbols: [String]!](dateformatter/shortweekdaysymbols.md)
+- [var shortWeekdaySymbols: [String]!](./shortweekdaysymbols.md)
   The array of short weekday symbols for the receiver.
-- [var veryShortWeekdaySymbols: [String]!](dateformatter/veryshortweekdaysymbols.md)
+- [var veryShortWeekdaySymbols: [String]!](./veryshortweekdaysymbols.md)
   The array of very short weekday symbols for the receiver.
-- [var standaloneWeekdaySymbols: [String]!](dateformatter/standaloneweekdaysymbols.md)
+- [var standaloneWeekdaySymbols: [String]!](./standaloneweekdaysymbols.md)
   The array of standalone weekday symbols for the receiver.
-- [var shortStandaloneWeekdaySymbols: [String]!](dateformatter/shortstandaloneweekdaysymbols.md)
+- [var shortStandaloneWeekdaySymbols: [String]!](./shortstandaloneweekdaysymbols.md)
   The array of short standalone weekday symbols for the receiver.
 
 

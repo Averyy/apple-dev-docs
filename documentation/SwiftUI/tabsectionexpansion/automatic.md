@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system determines the default expansion state.
 
@@ -22,9 +23,10 @@ static let automatic: TabSectionExpansion
 
 ## See Also
 
-- [static let collapsed: TabSectionExpansion](tabsectionexpansion/collapsed.md)
+### Tab section expansion options
+- [static let collapsed: TabSectionExpansion](./collapsed.md)
   The section is initially collapsed in the sidebar.
-- [static let expanded: TabSectionExpansion](tabsectionexpansion/expanded.md)
+- [static let expanded: TabSectionExpansion](./expanded.md)
   The section is initially expanded in the sidebar.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 A value to be shown while previewing the control in the add sheet.
@@ -21,7 +22,7 @@ func previewValue(configuration: Self.Configuration) -> Self.Value
 
 #### Discussion
 
-This value should be generated quickly and cheaply. Calculate more expensive and accurate values in [`currentValue(configuration:)`](appintentcontrolvalueprovider/currentvalue(configuration:).md).
+This value should be generated quickly and cheaply. Calculate more expensive and accurate values in [`currentValue(configuration:)`](./currentvalue%28configuration%29.md).
 
 ## Parameters
 

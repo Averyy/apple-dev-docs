@@ -1,30 +1,32 @@
 # IOUserNetworkPacketDirection
 
 **Framework**: NetworkingDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The direction in which the packet moves, relative to the device.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUserNetworkPacketDirection;
 ```
 
 ## Topics
 
 ### Getting the Direction Constants
-- [Direction Constants](direction-constants.md)
+- [Direction Constants](./direction-constants.md)
   Constants indicating package transmission direction.
 
 ## See Also
 
-- [IOUserNetworkPacketBufferPool](iousernetworkpacketbufferpool.md)
+### Packet Management
+- [IOUserNetworkPacketBufferPool](./iousernetworkpacketbufferpool.md)
   An object that manages the storage space for packets coming into and out of your driver.
-- [IOUserNetworkPacket](iousernetworkpacket.md)
+- [IOUserNetworkPacket](./iousernetworkpacket.md)
   A network packet containing the data for your driver to process.
 
 

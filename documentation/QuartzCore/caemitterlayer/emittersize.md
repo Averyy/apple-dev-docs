@@ -1,7 +1,8 @@
 # emitterSize
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines the size of the particle emitter shape. Animatable.
 
@@ -19,23 +20,28 @@ Determines the size of the particle emitter shape. Animatable.
 var emitterSize: CGSize { get set }
 ```
 
+```objc
+@property CGSize emitterSize;
+```
+
 #### Discussion
 
-How the emitter size is applied depends on the emitter shape. See [`Emitter Shape`](emitter-shape.md) for details. Depending on the value of [`emitterShape`](caemitterlayer/emittershape.md), this value may be ignored.
+How the emitter size is applied depends on the emitter shape. See [Emitter Shape](../emitter-shape.md) for details. Depending on the value of [`emitterShape`](./emittershape.md), this value may be ignored.
 
 Default is `0.0`.
 
 ## See Also
 
-- [var renderMode: CAEmitterLayerRenderMode](caemitterlayer/rendermode.md)
+### Emitter Geometry
+- [var renderMode: CAEmitterLayerRenderMode](./rendermode.md)
   Defines how particle cells are rendered into the layer.
-- [var emitterPosition: CGPoint](caemitterlayer/emitterposition.md)
+- [var emitterPosition: CGPoint](./emitterposition.md)
   The position of the center of the particle emitter. Animatable.
-- [var emitterShape: CAEmitterLayerEmitterShape](caemitterlayer/emittershape.md)
+- [var emitterShape: CAEmitterLayerEmitterShape](./emittershape.md)
   Specifies the emitter shape.
-- [var emitterZPosition: CGFloat](caemitterlayer/emitterzposition.md)
+- [var emitterZPosition: CGFloat](./emitterzposition.md)
   Specifies the center of the particle emitter shape along the z-axis. Animatable.
-- [var emitterDepth: CGFloat](caemitterlayer/emitterdepth.md)
+- [var emitterDepth: CGFloat](./emitterdepth.md)
   Determines the depth of the emitter shape.
 
 

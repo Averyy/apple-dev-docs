@@ -1,7 +1,8 @@
 # recordName
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the referenced record.
 
@@ -10,7 +11,7 @@ The name of the referenced record.
 
 ## Declaration
 
-```swift
+```
 attribute string recordName;
 ```
 

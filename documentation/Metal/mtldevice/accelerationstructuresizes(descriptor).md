@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the buffer sizes the GPU device needs to build, refit, and store an acceleration structure.
@@ -20,21 +21,26 @@ Returns the buffer sizes the GPU device needs to build, refit, and store an acce
 func accelerationStructureSizes(descriptor: MTLAccelerationStructureDescriptor) -> MTLAccelerationStructureSizes
 ```
 
+```objc
+- (MTLAccelerationStructureSizes) accelerationStructureSizesWithDescriptor:(MTLAccelerationStructureDescriptor *) descriptor;
+```
+
 #### Return Value
 
-A new [`MTLAccelerationStructureSizes`](mtlaccelerationstructuresizes.md) instance.
+A new [`MTLAccelerationStructureSizes`](../mtlaccelerationstructuresizes.md) instance.
 
 ## Parameters
 
-- `descriptor`: An [`MTLAccelerationStructureDescriptor`](mtlaccelerationstructuredescriptor.md) instance.
+- `descriptor`: An [`MTLAccelerationStructureDescriptor`](../mtlaccelerationstructuredescriptor.md) instance.
 
 ## See Also
 
-- [func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor) -> (any MTLAccelerationStructure)?](mtldevice/makeaccelerationstructure(descriptor:).md)
+### Creating acceleration structures for ray tracing
+- [func makeAccelerationStructure(descriptor: MTLAccelerationStructureDescriptor) -> (any MTLAccelerationStructure)?](./makeaccelerationstructure%28descriptor%29.md)
   Creates a new ray-tracing acceleration structure from a descriptor.
-- [func makeAccelerationStructure(size: Int) -> (any MTLAccelerationStructure)?](mtldevice/makeaccelerationstructure(size:).md)
+- [func makeAccelerationStructure(size: Int) -> (any MTLAccelerationStructure)?](./makeaccelerationstructure%28size%29.md)
   Creates a new acceleration structure with a specific size.
-- [struct MTLAccelerationStructureSizes](mtlaccelerationstructuresizes.md)
+- [struct MTLAccelerationStructureSizes](../mtlaccelerationstructuresizes.md)
   The expected sizes for a ray-tracing acceleration structure.
 
 

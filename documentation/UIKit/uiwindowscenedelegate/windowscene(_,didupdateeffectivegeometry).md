@@ -1,7 +1,8 @@
 # windowScene(_:didUpdateEffectiveGeometry:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the window scene’s effective geometry has changed.
 
@@ -18,13 +19,18 @@ Called when the window scene’s effective geometry has changed.
 optional func windowScene(_ windowScene: UIWindowScene, didUpdateEffectiveGeometry previousEffectiveGeometry: UIWindowScene.Geometry)
 ```
 
+```objc
+- (void) windowScene:(UIWindowScene *) windowScene didUpdateEffectiveGeometry:(UIWindowSceneGeometry *) previousEffectiveGeometry;
+```
+
 #### Discussion
 
 Always called when a `UIWindowScene` moves between screens.
 
 ## See Also
 
-- [func windowScene(UIWindowScene, didUpdate: any UICoordinateSpace, interfaceOrientation: UIInterfaceOrientation, traitCollection: UITraitCollection)](uiwindowscenedelegate/windowscene(_:didupdate:interfaceorientation:traitcollection:).md)
+### Responding to scene changes
+- [func windowScene(UIWindowScene, didUpdate: any UICoordinateSpace, interfaceOrientation: UIInterfaceOrientation, traitCollection: UITraitCollection)](./windowscene%28_,didupdate,interfaceorientation,traitcollection%29.md)
   Notifies you when the size, orientation, or traits of a scene change.
 
 

@@ -1,14 +1,15 @@
 # srv_errs
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 uint64_t srv_errs;
 ```
 

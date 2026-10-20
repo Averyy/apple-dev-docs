@@ -1,7 +1,8 @@
 # NSFileProviderNamespacePolicy.materializeEagerly
 
 **Framework**: File Provider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Download this folder eagerly, make sure it’s always fully enumerated Keep downloading remote updates eagerly. Prevent eviction on low disk pressure and other triggers.
 
@@ -16,6 +17,10 @@ Download this folder eagerly, make sure it’s always fully enumerated Keep down
 
 ```swift
 case materializeEagerly
+```
+
+```c
+NSFileProviderNamespacePolicyMaterializeEagerly
 ```
 
 #### Discussion

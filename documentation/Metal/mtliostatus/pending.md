@@ -1,7 +1,8 @@
 # MTLIOStatus.pending
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the GPU hasn’t finished executing the input/output command buffer.
 
@@ -19,13 +20,18 @@ Indicates the GPU hasn’t finished executing the input/output command buffer.
 case pending
 ```
 
+```c
+MTLIOStatusPending
+```
+
 ## See Also
 
-- [MTLIOStatus.complete](mtliostatus/complete.md)
+### I/O command queue states
+- [MTLIOStatus.complete](./complete.md)
   Indicates the GPU has successfully finished executing the input/output command buffer.
-- [MTLIOStatus.cancelled](mtliostatus/cancelled.md)
+- [MTLIOStatus.cancelled](./cancelled.md)
   Indicates the GPU has successfully abandoned the input/output command buffer.
-- [MTLIOStatus.error](mtliostatus/error.md)
+- [MTLIOStatus.error](./error.md)
   Indicates the GPU experienced a problem with the input/output command buffer.
 
 

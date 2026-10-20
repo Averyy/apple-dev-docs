@@ -1,7 +1,8 @@
 # LANG5
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The keyboard code for the fifth language key.
 
@@ -19,27 +20,32 @@ The keyboard code for the fifth language key.
 static let LANG5: GCKeyCode
 ```
 
+```c
+extern const GCKeyCode GCKeyCodeLANG5;
+```
+
 #### Discussion
 
 For Japanese USB word-processing keyboards, this is the code for the Zenkaku/Hankaku key.
 
 ## See Also
 
-- [static let LANG1: GCKeyCode](gckeycode/lang1.md)
+### Language Keys
+- [static let LANG1: GCKeyCode](./lang1.md)
   The keyboard code for the first language key.
-- [static let LANG2: GCKeyCode](gckeycode/lang2.md)
+- [static let LANG2: GCKeyCode](./lang2.md)
   The keyboard code for the second language key.
-- [static let LANG3: GCKeyCode](gckeycode/lang3.md)
+- [static let LANG3: GCKeyCode](./lang3.md)
   The keyboard code for the third language key.
-- [static let LANG4: GCKeyCode](gckeycode/lang4.md)
+- [static let LANG4: GCKeyCode](./lang4.md)
   The keyboard code for the fourth language key.
-- [static let LANG6: GCKeyCode](gckeycode/lang6.md)
+- [static let LANG6: GCKeyCode](./lang6.md)
   The keyboard code for the sixth language key.
-- [static let LANG7: GCKeyCode](gckeycode/lang7.md)
+- [static let LANG7: GCKeyCode](./lang7.md)
   The keyboard code for the seventh language key.
-- [static let LANG8: GCKeyCode](gckeycode/lang8.md)
+- [static let LANG8: GCKeyCode](./lang8.md)
   The keyboard code for the eighth language key.
-- [static let LANG9: GCKeyCode](gckeycode/lang9.md)
+- [static let LANG9: GCKeyCode](./lang9.md)
   The keyboard code for the ninth language key.
 
 

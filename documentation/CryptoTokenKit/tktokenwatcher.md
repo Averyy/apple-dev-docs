@@ -1,7 +1,8 @@
 # TKTokenWatcher
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that tracks the tokens available in the system.
 
@@ -20,9 +21,13 @@ An object that tracks the tokens available in the system.
 class TKTokenWatcher
 ```
 
+```objc
+@interface TKTokenWatcher : NSObject
+```
+
 ## Mentions
 
-- [Using Cryptographic Assets Stored on a Smart Card](using-cryptographic-assets-stored-on-a-smart-card.md)
+- [Using Cryptographic Assets Stored on a Smart Card](./using-cryptographic-assets-stored-on-a-smart-card.md)
 
 #### Overview
 
@@ -31,42 +36,43 @@ Create a token watcher and register an insertion handler to be notified when tok
 ## Topics
 
 ### Creating Token Watchers
-- [init()](tktokenwatcher/init.md)
+- [init()](./tktokenwatcher/init%28%29.md)
   Initializes a token watcher.
-- [init(insertionHandler: (String) -> Void)](tktokenwatcher/init(insertionhandler:).md)
+- [init(insertionHandler: (String) -> Void)](./tktokenwatcher/init%28insertionhandler%29.md)
   Initializes a token watcher with the specified insertion handler.
 ### Accessing Token Identifiers
-- [var tokenIDs: [String]](tktokenwatcher/tokenids.md)
+- [var tokenIDs: [String]](./tktokenwatcher/tokenids.md)
   The token IDs currently available in the system.
 ### Configuring Handlers
-- [func addRemovalHandler((String) -> Void, forTokenID: String)](tktokenwatcher/addremovalhandler(_:fortokenid:).md)
+- [func addRemovalHandler((String) -> Void, forTokenID: String)](./tktokenwatcher/addremovalhandler%28_,fortokenid%29.md)
   Adds a removal handler for the specified token ID.
-- [func setInsertionHandler((String) -> Void)](tktokenwatcher/setinsertionhandler(_:).md)
+- [func setInsertionHandler((String) -> Void)](./tktokenwatcher/setinsertionhandler%28_%29.md)
   Sets an insertion handler closure to be called when a new token is inserted into the system.
 ### Classes
-- [TKTokenWatcher.TokenInfo](tktokenwatcher/tokeninfo.md)
+- [TKTokenWatcher.TokenInfo](./tktokenwatcher/tokeninfo.md)
 ### Instance Methods
-- [func tokenInfo(forTokenID: String) -> TKTokenWatcher.TokenInfo?](tktokenwatcher/tokeninfo(fortokenid:).md)
+- [func tokenInfo(forTokenID: String) -> TKTokenWatcher.TokenInfo?](./tktokenwatcher/tokeninfo%28fortokenid%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class TKTokenDriver](tktokendriver.md)
+### Tokens
+- [class TKTokenDriver](./tktokendriver.md)
   A base class for building token drivers.
-- [class TKToken](tktoken.md)
+- [class TKToken](./tktoken.md)
   A representation of a hardware-based cryptographic token.
-- [class TKTokenSession](tktokensession.md)
+- [class TKTokenSession](./tktokensession.md)
   A token session that manages the authentication state of a token.
 
 

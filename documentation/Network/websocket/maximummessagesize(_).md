@@ -1,7 +1,8 @@
 # maximumMessageSize(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the maximum allowed message size to be received by the WebSocket connection.
 

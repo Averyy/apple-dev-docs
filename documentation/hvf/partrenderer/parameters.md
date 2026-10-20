@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Parameters that control how the part is rendered. The default is to set all axes, rotations, translations, etc. to zero
 

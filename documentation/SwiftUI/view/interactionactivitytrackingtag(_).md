@@ -1,7 +1,8 @@
 # interactionActivityTrackingTag(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a tag that you use for tracking interactivity.
 
@@ -27,7 +28,7 @@ A view that uses a tracking tag.
 
 #### Discussion
 
-The following example tracks the scrolling activity of a [`List`](list.md):
+The following example tracks the scrolling activity of a [`List`](../list.md):
 
 ```swift
 List {
@@ -66,11 +67,12 @@ struct Home: View {
 
 ## See Also
 
-- [func disabled(Bool) -> some View](view/disabled(_:).md)
+### Managing view interaction
+- [func disabled(Bool) -> some View](./disabled%28_%29.md)
   Adds a condition that controls whether someone can interact with this view.
-- [var isEnabled: Bool](environmentvalues/isenabled.md)
+- [var isEnabled: Bool](../environmentvalues/isenabled.md)
   A Boolean value that indicates whether the view associated with this environment allows user interaction.
-- [func invalidatableContent(Bool) -> some View](view/invalidatablecontent(_:).md)
+- [func invalidatableContent(Bool) -> some View](./invalidatablecontent%28_%29.md)
   Mark the receiver as their content might be invalidated.
 
 

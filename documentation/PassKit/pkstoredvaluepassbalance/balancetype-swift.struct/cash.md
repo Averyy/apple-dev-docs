@@ -1,7 +1,8 @@
 # cash
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier indicating a balance that represents money.
 
@@ -9,7 +10,7 @@ An identifier indicating a balance that represents money.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 8.0+
 
@@ -19,9 +20,14 @@ An identifier indicating a balance that represents money.
 static let cash: PKStoredValuePassBalance.BalanceType
 ```
 
+```c
+extern PKStoredValuePassBalanceType const PKStoredValuePassBalanceTypeCash;
+```
+
 ## See Also
 
-- [static let loyaltyPoints: PKStoredValuePassBalance.BalanceType](pkstoredvaluepassbalance/balancetype-swift.struct/loyaltypoints.md)
+### Reading the balance type
+- [static let loyaltyPoints: PKStoredValuePassBalance.BalanceType](./loyaltypoints.md)
   An identifier indicating a balance that represents points.
 
 

@@ -1,7 +1,8 @@
 # HandleChangeSelectedValues
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The system calls this virtual method when the control’s selected values change.
 
@@ -10,7 +11,7 @@ The system calls this virtual method when the control’s selected values change
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HandleChangeSelectedValues(const IOUserVideoSelectorValue *in_control_values, size_t in_num_values);
 ```
 

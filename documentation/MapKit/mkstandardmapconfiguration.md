@@ -1,7 +1,8 @@
 # MKStandardMapConfiguration
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The class that represents the default map presentation, which is a street map that shows the position of all roads and some road names.
 
@@ -20,59 +21,64 @@ The class that represents the default map presentation, which is a street map th
 class MKStandardMapConfiguration
 ```
 
+```objc
+@interface MKStandardMapConfiguration : MKMapConfiguration
+```
+
 ## Topics
 
 ### Creating a standard map configuration
-- [init()](mkstandardmapconfiguration/init.md)
+- [init()](./mkstandardmapconfiguration/init%28%29.md)
   Creates a new standard map configuration.
-- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)](mkstandardmapconfiguration/init(elevationstyle:).md)
+- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle)](./mkstandardmapconfiguration/init%28elevationstyle%29.md)
   Creates a new standard map configuration with the specified elevation style.
-- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle, emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](mkstandardmapconfiguration/init(elevationstyle:emphasisstyle:).md)
+- [convenience init(elevationStyle: MKMapConfiguration.ElevationStyle, emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](./mkstandardmapconfiguration/init%28elevationstyle,emphasisstyle%29.md)
   Creates a standard map configuration with the specified elevation and emphasis styles.
-- [convenience init(emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](mkstandardmapconfiguration/init(emphasisstyle:).md)
+- [convenience init(emphasisStyle: MKStandardMapConfiguration.EmphasisStyle)](./mkstandardmapconfiguration/init%28emphasisstyle%29.md)
   Creates a standard map configuration with the specified emphasis style.
-- [MKMapConfiguration.ElevationStyle](mkmapconfiguration/elevationstyle-swift.enum.md)
+- [MKMapConfiguration.ElevationStyle](./mkmapconfiguration/elevationstyle-swift.enum.md)
   Values that control the map’s elevation style.
-- [MKStandardMapConfiguration.EmphasisStyle](mkstandardmapconfiguration/emphasisstyle-swift.enum.md)
+- [MKStandardMapConfiguration.EmphasisStyle](./mkstandardmapconfiguration/emphasisstyle-swift.enum.md)
   Values that control how the framework emphasizes map features.
 ### Customizing the map display
-- [var emphasisStyle: MKStandardMapConfiguration.EmphasisStyle](mkstandardmapconfiguration/emphasisstyle-swift.property.md)
+- [var emphasisStyle: MKStandardMapConfiguration.EmphasisStyle](./mkstandardmapconfiguration/emphasisstyle-swift.property.md)
   The value that indicates how the framework emphasizes map features.
-- [MKStandardMapConfiguration.EmphasisStyle](mkstandardmapconfiguration/emphasisstyle-swift.enum.md)
+- [MKStandardMapConfiguration.EmphasisStyle](./mkstandardmapconfiguration/emphasisstyle-swift.enum.md)
   Values that control how the framework emphasizes map features.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mkstandardmapconfiguration/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./mkstandardmapconfiguration/pointofinterestfilter.md)
   The filter used to determine the points of interest shown on the map.
-- [var showsTraffic: Bool](mkstandardmapconfiguration/showstraffic.md)
+- [var showsTraffic: Bool](./mkstandardmapconfiguration/showstraffic.md)
   A Boolean value that controls whether the map displays traffic conditions.
 
 ## Relationships
 
 ### Inherits From
-- [MKMapConfiguration](mkmapconfiguration.md)
+- [MKMapConfiguration](./mkmapconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var preferredConfiguration: MKMapConfiguration](mkmapview/preferredconfiguration.md)
+### Configuring the map appearance
+- [var preferredConfiguration: MKMapConfiguration](./mkmapview/preferredconfiguration.md)
   The characteristics of the map view, including the map type and features the map displays.
-- [var pitchButtonVisibility: MKFeatureVisibility](mkmapview/pitchbuttonvisibility.md)
+- [var pitchButtonVisibility: MKFeatureVisibility](./mkmapview/pitchbuttonvisibility.md)
   A value that indicates whether the map’s pitch button is visible.
-- [var showsUserTrackingButton: Bool](mkmapview/showsusertrackingbutton.md)
+- [var showsUserTrackingButton: Bool](./mkmapview/showsusertrackingbutton.md)
   A Boolean value that indicates whether the map displays the user tracking button.
-- [class MKMapConfiguration](mkmapconfiguration.md)
+- [class MKMapConfiguration](./mkmapconfiguration.md)
   An abstract class that represents the shared elements of map configurations.
-- [class MKHybridMapConfiguration](mkhybridmapconfiguration.md)
+- [class MKHybridMapConfiguration](./mkhybridmapconfiguration.md)
   The class that represents a satellite image of the area with road and road name information layers on top.
-- [class MKImageryMapConfiguration](mkimagerymapconfiguration.md)
+- [class MKImageryMapConfiguration](./mkimagerymapconfiguration.md)
   The class that represents an imagery-based map presentation, such as one using satellite imagery.
 
 

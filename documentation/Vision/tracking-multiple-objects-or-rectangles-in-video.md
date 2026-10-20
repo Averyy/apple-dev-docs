@@ -1,6 +1,8 @@
 # Tracking Multiple Objects or Rectangles in Video
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [TrackingMultipleObjectsOrRectanglesInVideo.zip](https://docs-assets.developer.apple.com/published/913130aaf0ea/TrackingMultipleObjectsOrRectanglesInVideo.zip)
 
 Apply Vision algorithms to track objects or rectangles throughout a video.
 
@@ -12,7 +14,7 @@ Apply Vision algorithms to track objects or rectangles throughout a video.
 
 #### Overview
 
-With the [`Vision`](https://developer.apple.comhttps://developer.apple.com/documentation/vision) framework, you can detect and track objects or rectangles through a sequence of frames coming from video, live capture, or other sources.
+With the [Vision](./Vision.md) framework, you can detect and track objects or rectangles through a sequence of frames coming from video, live capture, or other sources.
 
 This sample app shows you how to pick an initial object to track, how to create Vision tracking requests to follow that object, and how to parse results from the object or rectangle tracker.
 
@@ -24,9 +26,9 @@ To see this sample app in action, build and run the project in Xcode, then choos
 
 To track rectangles, select Rectangles.  The app runs the rectangle detector and shows rectangles it finds in a preview of the scene.
 
-Otherwise, to track objects, select Objects.  Then nominate objects to track by touching them in the preview and dragging boxes around them.  You can select multiple objects; the app identifies them by their [`UUID`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/uuid), using differently colored rectangles.
+Otherwise, to track objects, select Objects.  Then nominate objects to track by touching them in the preview and dragging boxes around them.  You can select multiple objects; the app identifies them by their [UUID](../Foundation/uuid.md), using differently colored rectangles.
 
-The [`VNTrackObjectRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vntrackobjectrequest) class requires a detected object observation to initialize.  The sample provides this observation by running [`VNDetectRectanglesRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vndetectrectanglesrequest), or by creating one from the bounding box you drew in the preview.  It tracks multiple objects by iterating through each observation and creating a [`VNDetectedObjectObservation`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vndetectedobjectobservation) from its bounding box.
+The [VNTrackObjectRequest](./vntrackobjectrequest.md) class requires a detected object observation to initialize.  The sample provides this observation by running [VNDetectRectanglesRequest](./vndetectrectanglesrequest.md), or by creating one from the bounding box you drew in the preview.  It tracks multiple objects by iterating through each observation and creating a [VNDetectedObjectObservation](./vndetectedobjectobservation.md) from its bounding box.
 
 ```swift
 var inputObservations = [UUID: VNDetectedObjectObservation]()
@@ -47,13 +49,13 @@ case .rectangle:
 }
 ```
 
-In your own app, if you prefer to nominate objects programmatically, you can use observations returned from Vision’s own object detection algorithms.  For example, the Vision framework’s [`VNImageRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler) accepts face detection, text detection, and barcode detection requests, and those requests return their results in subclasses of [`VNObservation`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnobservation).  You can pass these observations directly into [`VNTrackObjectRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vntrackobjectrequest).
+In your own app, if you prefer to nominate objects programmatically, you can use observations returned from Vision’s own object detection algorithms.  For example, the Vision framework’s [VNImageRequestHandler](./vnimagerequesthandler.md) accepts face detection, text detection, and barcode detection requests, and those requests return their results in subclasses of [VNObservation](./vnobservation.md).  You can pass these observations directly into [`VNTrackObjectRequest`](./vntrackobjectrequest.md).
 
 Selecting a salient object heavily influences the performance of the tracking algorithm; provide the best initial bounding box segmentation of your object that you can.
 
 ##### Track Objects or Rectangles with a Request Handler
 
-The Vision framework handles tracking requests through a [`VNSequenceRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnsequencerequesthandler).  Whereas the [`VNImageRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnimagerequesthandler) handles object detection requests on a still image, the [`VNSequenceRequestHandler`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnsequencerequesthandler) handles tracking requests.
+The Vision framework handles tracking requests through a [VNSequenceRequestHandler](./vnsequencerequesthandler.md).  Whereas the [`VNImageRequestHandler`](./vnimagerequesthandler.md) handles object detection requests on a still image, the [`VNSequenceRequestHandler`](./vnsequencerequesthandler.md) handles tracking requests.
 
 Create a tracking request for each rectangle or object you’d like to track.  Seed each tracking request with the observation created during nomination.
 
@@ -73,7 +75,7 @@ request.trackingLevel = trackingLevel
 trackingRequests.append(request)
 ```
 
-For each such request, call the sequence request handler’s [`perform(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnsequencerequesthandler/2880308-perform) method, making sure to pass in the video reader’s orientation to ensure upright tracking. This method runs synchronously; use a background queue, such as `workQueue` in the sample code, so that the main queue isn’t blocked while your requests execute.
+For each such request, call the sequence request handler’s [perform(_:)](./vnsequencerequesthandler/api-2880308-perform.md) method, making sure to pass in the video reader’s orientation to ensure upright tracking. This method runs synchronously; use a background queue, such as `workQueue` in the sample code, so that the main queue isn’t blocked while your requests execute.
 
 ```swift
 try requestHandler.perform(trackingRequests, on: frame, orientation: videoReader.orientation)
@@ -83,7 +85,7 @@ By iterating through each selected object or rectangle, creating a tracking requ
 
 ##### Interpret Tracking Results
 
-Access tracking results through the request’s `results` property or its completion handler.  A single tracking request represents a single tracked object in a one-to-one relationship.  If a tracking request succeeds, its [`results`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vnrequest/2867238-results) property contains [`VNDetectedObjectObservation`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vndetectedobjectobservation) objects describing the tracked object’s new location in the frame.
+Access tracking results through the request’s `results` property or its completion handler.  A single tracking request represents a single tracked object in a one-to-one relationship.  If a tracking request succeeds, its [results](./vnrequest/api-2867238-results.md) property contains [`VNDetectedObjectObservation`](./vndetectedobjectobservation.md) objects describing the tracked object’s new location in the frame.
 
 ```swift
 guard let results = processedRequest.results else {
@@ -106,25 +108,26 @@ case .rectangle:
 }
 ```
 
-Use the observation’s [`boundingBox`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vndetectedobjectobservation/2867227-boundingbox) to determine its location, so you can update your app or UI with the tracked object’s new location.  Also use it to seed the next round of tracking.
+Use the observation’s [boundingBox](./vndetectedobjectobservation/api-2867227-boundingbox.md) to determine its location, so you can update your app or UI with the tracked object’s new location.  Also use it to seed the next round of tracking.
 
 ```swift
 inputObservations[observation.uuid] = observation
 ```
 
-In practice, you should periodically run a new tracking request with an updated set of input observations  to capture objects that weren’t present in your initial nomination frame. For instance, you could create a new [`VNTrackObjectRequest`](https://developer.apple.comhttps://developer.apple.com/documentation/vision/vntrackobjectrequest) every ten frames.
+In practice, you should periodically run a new tracking request with an updated set of input observations  to capture objects that weren’t present in your initial nomination frame. For instance, you could create a new [`VNTrackObjectRequest`](./vntrackobjectrequest.md) every ten frames.
 
 ## See Also
 
-- [Tracking the User’s Face in Real Time](tracking-the-user-s-face-in-real-time.md)
+### Object tracking
+- [Tracking the User’s Face in Real Time](./tracking-the-user-s-face-in-real-time.md)
   Detect and track faces from the selfie cam feed in real time.
-- [class VNTrackingRequest](vntrackingrequest.md)
+- [class VNTrackingRequest](./vntrackingrequest.md)
   The abstract superclass for image-analysis requests that track unique features across multiple images or video frames.
-- [class VNTrackRectangleRequest](vntrackrectanglerequest.md)
+- [class VNTrackRectangleRequest](./vntrackrectanglerequest.md)
   An image-analysis request that tracks movement of a previously identified rectangular object across multiple images or video frames.
-- [class VNTrackObjectRequest](vntrackobjectrequest.md)
+- [class VNTrackObjectRequest](./vntrackobjectrequest.md)
   An image-analysis request that tracks the movement of a previously identified object across multiple images or video frames.
-- [class VNDetectedObjectObservation](vndetectedobjectobservation.md)
+- [class VNDetectedObjectObservation](./vndetectedobjectobservation.md)
   An observation that provides the position and extent of an image feature that an image- analysis request detects.
 
 

@@ -1,7 +1,8 @@
 # artwork
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to an image on disk for the song artwork.
 
@@ -16,11 +17,12 @@ var artwork: URL?
 
 ## See Also
 
-- [var song: String?](journalingsuggestion/song/song.md)
+### Identifying the song
+- [var song: String?](./song.md)
   The name of the song.
-- [var artist: String?](journalingsuggestion/song/artist.md)
+- [var artist: String?](./artist.md)
   The song’s musician.
-- [var album: String?](journalingsuggestion/song/album.md)
+- [var album: String?](./album.md)
   The album that contains the song.
 
 

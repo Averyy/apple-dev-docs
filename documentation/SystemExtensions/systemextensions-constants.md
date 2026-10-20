@@ -1,11 +1,12 @@
 # SystemExtensions Constants
 
-**Framework**: System Extensions
+**Framework**: System Extensions  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [let OSRelatedKernelExtensionKey: String](osrelatedkernelextensionkey.md)
+- [let OSRelatedKernelExtensionKey: String](./osrelatedkernelextensionkey.md)
 
 
 ---

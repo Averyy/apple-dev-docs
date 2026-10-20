@@ -1,7 +1,8 @@
 # sinksTensor
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional attention-sinks tensor of shape `[nHeads]`. Each element seeds the online-softmax accumulator for the corresponding query head with a virtual token logit, causing real-token attention weights to sum to less than one.
 
@@ -17,6 +18,10 @@ An optional attention-sinks tensor of shape `[nHeads]`. Each element seeds the o
 
 ```swift
 var sinksTensor: MPSGraphTensor? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) MPSGraphTensor * sinksTensor;
 ```
 
 

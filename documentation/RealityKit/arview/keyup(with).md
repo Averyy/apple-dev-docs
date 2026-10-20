@@ -1,12 +1,13 @@
 # keyUp(with:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the view that the user has released a key.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -17,7 +18,7 @@ Informs the view that the user has released a key.
 
 #### Discussion
 
-The view handles the event instead of passing it to the next responder. See [`NSResponder`](https://developer.apple.com/documentation/appkit/nsresponder) for more information about the responder chain.
+The view handles the event instead of passing it to the next responder. See [`NSResponder`](../../AppKit/nsresponder.md) for more information about the responder chain.
 
 ## Parameters
 
@@ -25,9 +26,10 @@ The view handles the event instead of passing it to the next responder. See [`NS
 
 ## See Also
 
-- [var acceptsFirstResponder: Bool](arview/acceptsfirstresponder.md)
+### Handling keyboard input
+- [var acceptsFirstResponder: Bool](./acceptsfirstresponder.md)
   A Boolean value that indicates whether the view accepts first responder status.
-- [func keyDown(with: NSEvent)](arview/keydown(with:).md)
+- [func keyDown(with: NSEvent)](./keydown%28with%29.md)
   Informs the view that the user has pressed a key.
 
 

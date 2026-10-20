@@ -1,7 +1,8 @@
 # deformationRemovals
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 IDs of deformation resources removed this frame.
 

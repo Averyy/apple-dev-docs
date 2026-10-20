@@ -1,7 +1,8 @@
 # route
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A route for the event.
 
@@ -17,13 +18,18 @@ A route for the event.
 var route: AVCustomDeviceRoute { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCustomDeviceRoute * route;
+```
+
 ## See Also
 
-- [class AVCustomDeviceRoute](avcustomdeviceroute.md)
+### Inspecting an event
+- [class AVCustomDeviceRoute](../avcustomdeviceroute.md)
   An object that represents a custom device route.
-- [var reason: AVCustomRoutingEventReason](avcustomroutingevent/reason.md)
+- [var reason: AVCustomRoutingEventReason](./reason.md)
   A reason for an event, such as a user request to activate or deactivate a route.
-- [enum AVCustomRoutingEventReason](avcustomroutingeventreason.md)
+- [enum AVCustomRoutingEventReason](../avcustomroutingeventreason.md)
   Values that indicate the reason for a routing event.
 
 

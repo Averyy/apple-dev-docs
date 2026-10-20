@@ -1,7 +1,8 @@
 # init(contentsOf:options:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a data table from an imported JSON or CSV file.
 
@@ -21,17 +22,17 @@ init(contentsOf url: URL, options: MLDataTable.ParsingOptions = ParsingOptions()
 
 ## Mentions
 
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Creating a word tagger model](../creating-a-word-tagger-model.md)
 
 #### Discussion
 
 Use this initializer to create a data table from either a JavaScript Object Notation (JSON) file or a comma-separated values (CSV) file. Use `options` to customize how the data table imports information from your CSV file. The data table ignores the `options` parameter when importing JSON files.
 
-#### Create a Table From a Json File
+#### Create a Table from a JSON File
 
 This initializer imports data from a JSON file and creates a row from each dictionary in the root JSON array. The data table names its columns with the dictionary’s keys.
 
-![A table of information about a book. Columns named “Title”, “Author”,](/images/com.apple.createml/MLDataTable-init(contentsOf:options:)-1@2x.png)
+![A table of information about a book. Columns named “Title”, “Author”,](https://developer.apple.com/tutorials/images/com.apple.createml/MLDataTable-init(contentsOf:options:)-1@2x.png)
 
 For example, to create a data table as shown above, build a JSON file with a root array of dictionaries that all use the same set of keys.
 
@@ -69,7 +70,7 @@ For example, to create a data table as shown above, build a JSON file with a roo
 let jsonUrl = URL(fileURLWithPath: "books.json")
 ```
 
-Then, use [`init(contentsOf:options:)`](mldatatable/init(contentsof:options:).md) to create the data table.
+Then, use [`init(contentsOf:options:)`](./init%28contentsof,options%29.md) to create the data table.
 
 ```swift
 let bookTable = try MLDataTable(contentsOf: jsonUrl)
@@ -77,17 +78,17 @@ let bookTable = try MLDataTable(contentsOf: jsonUrl)
 
 Each entry in JSON array becomes a row in the data table. The set of keys in the JSON dictionaries become the column names in the data table.
 
-#### Create a Table From a Csv File
+#### Create a Table from a CSV File
 
 This initializer imports data from a CSV file and creates a row from each line in the CSV file. You can create a CSV file programmatically or use an app like Numbers to export a spreadsheet.
 
-For best results, provide your own parsing options configured to match your CSV file, especially if it has a custom format. See [`MLDataTable.ParsingOptions`](mldatatable/parsingoptions.md) for the full list of CSV import customization options.
+For best results, provide your own parsing options configured to match your CSV file, especially if it has a custom format. See [`MLDataTable.ParsingOptions`](./parsingoptions.md) for the full list of CSV import customization options.
 
 If you don’t provide parsing options, it is assumed that your CSV file has the following formatting attributes:
 
 - The first entry is a header row with the names of the columns. - Data fields are separated by a comma (`,`). - Each row ends with a newline character (`\n`). - Special characters are escaped with a leading backslash (`\`). - Every quote literal (`"`) is represented by two consecutive quotes (`""`).
 
-![A table of information about a book. Columns named “Title”, “Author”,](/images/com.apple.createml/MLDataTable-init(contentsOf:options:)-2@2x.png)
+![A table of information about a book. Columns named “Title”, “Author”,](https://developer.apple.com/tutorials/images/com.apple.createml/MLDataTable-init(contentsOf:options:)-2@2x.png)
 
 For example, to create a data table as shown above, first create a CSV file programmatically or use a spreadsheet app like Numbers to export one, and add it to your project.
 
@@ -118,7 +119,7 @@ parsingOptions.delimiter = ","
 parsingOptions.lineTerminator = "\n"
 ```
 
-Lastly, use [`init(contentsOf:options:)`](mldatatable/init(contentsof:options:).md) to create the data table.
+Lastly, use [`init(contentsOf:options:)`](./init%28contentsof,options%29.md) to create the data table.
 
 ```swift
 let bookTable = try MLDataTable(contentsOf: csvURL, options: parsingOptions)
@@ -134,22 +135,23 @@ The header row becomes the column names in the data table. If the CSV file doesn
 ## Topics
 
 ### Parsing options
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
+- [Creating a text classifier model](../creating-a-text-classifier-model.md)
   Train a machine learning model to classify natural language text.
-- [MLDataTable.ParsingOptions](mldatatable/parsingoptions.md)
+- [MLDataTable.ParsingOptions](./parsingoptions.md)
   The options for parsing a comma-separated values (CSV) file into a data table for a machine learning model.
 
 ## See Also
 
-- [Creating a model from tabular data](creating-a-model-from-tabular-data.md)
+### Creating a data table
+- [Creating a model from tabular data](../creating-a-model-from-tabular-data.md)
   Train a machine learning model by using Core ML to import and manage tabular data.
-- [init(dictionary: [String : any MLDataValueConvertible]) throws](mldatatable/init(dictionary:).md)
+- [init(dictionary: [String : any MLDataValueConvertible]) throws](./init%28dictionary%29.md)
   Creates a data table from a dictionary of column names and data values.
-- [init(namedColumns: [String : MLUntypedColumn]) throws](mldatatable/init(namedcolumns:).md)
+- [init(namedColumns: [String : MLUntypedColumn]) throws](./init%28namedcolumns%29.md)
   Creates a data table from a dictionary of column names and untyped columns.
-- [init()](mldatatable/init.md)
+- [init()](./init%28%29.md)
   Creates an empty table containing no rows or columns.
-- [MLDataTable.ParsingOptions](mldatatable/parsingoptions.md)
+- [MLDataTable.ParsingOptions](./parsingoptions.md)
   The options for parsing a comma-separated values (CSV) file into a data table for a machine learning model.
 
 

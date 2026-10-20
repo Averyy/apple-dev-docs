@@ -1,7 +1,8 @@
 # requestToBecomeApplicationPrimary()
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to make this session your app’s primary media session.
 
@@ -23,13 +24,13 @@ func requestToBecomeApplicationPrimary() async throws
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](../publishing-media-sessions.md)
 
 #### Discussion
 
 Use this method to signal to the system that this session supplies data and handles commands.
 
-> **Note**: [`MediaSessionError.invalidState`](mediasessionerror/invalidstate.md) if the session can’t become active. [`MediaSessionError.internalFailure`](mediasessionerror/internalfailure.md) if the system couldn’t set the active player.
+> **Throws**: [`MediaSessionError.invalidState`](../mediasessionerror/invalidstate.md) if the session can’t become active. [`MediaSessionError.internalFailure`](../mediasessionerror/internalfailure.md) if the system couldn’t set the active player.
 
 
 ---

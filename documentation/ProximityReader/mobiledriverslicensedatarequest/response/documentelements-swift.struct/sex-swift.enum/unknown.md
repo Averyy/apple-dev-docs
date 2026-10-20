@@ -1,7 +1,8 @@
 # MobileDriversLicenseDataRequest.Response.DocumentElements.Sex.unknown
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates the mobile driver’s license holder’s sex is not known as defined in ISO/IEC 5218.
 

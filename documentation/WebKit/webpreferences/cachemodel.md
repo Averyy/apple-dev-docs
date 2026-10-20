@@ -1,12 +1,13 @@
 # cacheModel
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cache model for the web views associated with the receiver.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The cache model for the web views associated with the receiver.
 var cacheModel: WebCacheModel { get set }
 ```
 
+```objc
+@property (nonatomic) WebCacheModel cacheModel;
+```
+
 #### Discussion
 
-Possible values are described in [`WebCacheModel`](webcachemodel.md).
+Possible values are described in [`WebCacheModel`](../webcachemodel.md).
 
-Set this property to optimize WebKit’s cache footprint (on disk and in memory) to best fit the use of the web view. If a web view is used only for a single webpage, use the [`WebCacheModel.documentViewer`](webcachemodel/documentviewer.md) constant instead.
+Set this property to optimize WebKit’s cache footprint (on disk and in memory) to best fit the use of the web view. If a web view is used only for a single webpage, use the [`WebCacheModel.documentViewer`](../webcachemodel/documentviewer.md) constant instead.
 
 ## See Also
 
-- [var usesPageCache: Bool](webpreferences/usespagecache.md)
+### Caching
+- [var usesPageCache: Bool](./usespagecache.md)
   A Boolean that indicates whether the web views associated with the receiver should use the shared page cache.
 
 

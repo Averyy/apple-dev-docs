@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the accessory.
 
@@ -19,13 +20,18 @@ A unique identifier for the accessory.
 var uniqueIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uniqueIdentifier;
+```
+
 ## See Also
 
-- [var name: String](hmaccessory/name.md)
+### Identifying an Accessory
+- [var name: String](./name.md)
   The name of the accessory.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmaccessory/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Changes the name of the accessory.
-- [var identifier: UUID](hmaccessory/identifier.md)
+- [var identifier: UUID](./identifier.md)
   A unique identifier for the accessory.
 
 

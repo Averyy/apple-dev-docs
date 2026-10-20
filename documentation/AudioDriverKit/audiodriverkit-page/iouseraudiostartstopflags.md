@@ -1,7 +1,8 @@
 # IOUserAudioStartStopFlags
 
 **Framework**: AudioDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate I/O starts or stops.
 
@@ -10,23 +11,24 @@ Values that indicate I/O starts or stops.
 
 ## Declaration
 
-```swift
+```c
 enum IOUserAudioStartStopFlags : uint64_t;
 ```
 
 ## Topics
 
 ### Start/Stop Behaviors
-- [None](audiodriverkit/iouseraudiostartstopflags/none.md)
+- [None](./iouseraudiostartstopflags/none.md)
   A flag that indicates starting or stopping for normal I/O operation.
-- [Prewarm](audiodriverkit/iouseraudiostartstopflags/prewarm.md)
+- [Prewarm](./iouseraudiostartstopflags/prewarm.md)
   A flag that indicates starting or stopping for prewarming.
 
 ## See Also
 
-- [StartIO](iouseraudioclockdevice/startio.md)
+### Performing I/O
+- [StartIO](../iouseraudioclockdevice/startio.md)
   Tells the clock device to start I/O.
-- [StopIO](iouseraudioclockdevice/stopio.md)
+- [StopIO](../iouseraudioclockdevice/stopio.md)
   Tells the clock device to stop I/O.
 
 

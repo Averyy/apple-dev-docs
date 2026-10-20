@@ -1,7 +1,8 @@
 # virtualMachine
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The VM to display in the view.
 
@@ -14,11 +15,16 @@ The VM to display in the view.
 var virtualMachine: VZVirtualMachine? { get set }
 ```
 
+```objc
+@property (strong, nullable) VZVirtualMachine * virtualMachine;
+```
+
 ## See Also
 
-- [var automaticallyReconfiguresDisplay: Bool](vzvirtualmachineview/automaticallyreconfiguresdisplay.md)
+### Configuring the VM
+- [var automaticallyReconfiguresDisplay: Bool](./automaticallyreconfiguresdisplay.md)
   A Boolean value that indicates whether the graphics display associated with this view automatically reconfigures with respect to view changes.
-- [var capturesSystemKeys: Bool](vzvirtualmachineview/capturessystemkeys.md)
+- [var capturesSystemKeys: Bool](./capturessystemkeys.md)
   A Boolean value that determines whether the system should send certain system keyboard shortcuts to the guest instead of the host.
 
 

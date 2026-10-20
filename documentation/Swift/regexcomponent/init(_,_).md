@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a character class that combines the given classes in a union.
 
@@ -19,6 +20,8 @@ Creates a character class that combines the given classes in a union.
 ```swift
 init(_ first: CharacterClass, _ rest: CharacterClass...)
 ```
+
+Available when `Self` is `CharacterClass`.
 
 
 ---

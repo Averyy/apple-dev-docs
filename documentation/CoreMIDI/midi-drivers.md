@@ -1,58 +1,60 @@
 # MIDI Drivers
 
-**Framework**: Core MIDI
+**Framework**: Core MIDI  
+**Role**: API Collection
 
 Create driver plug-ins.
 
 ## Topics
 
 ### Managing Device Lifecyle
-- [func MIDIDeviceCreate(MIDIDriverRef?, CFString, CFString, CFString, UnsafeMutablePointer<MIDIDeviceRef>) -> OSStatus](mididevicecreate(_:_:_:_:_:).md)
+- [func MIDIDeviceCreate(MIDIDriverRef?, CFString, CFString, CFString, UnsafeMutablePointer<MIDIDeviceRef>) -> OSStatus](./mididevicecreate%28_,_,_,_,_%29.md)
   Creates a new device object that corresponds to the available hardware.
-- [func MIDIDeviceDispose(MIDIDeviceRef) -> OSStatus](mididevicedispose(_:).md)
+- [func MIDIDeviceDispose(MIDIDeviceRef) -> OSStatus](./mididevicedispose%28_%29.md)
   Disposes of a MIDI device.
-- [typealias MIDIDeviceRef](midideviceref.md)
+- [typealias MIDIDeviceRef](./midideviceref.md)
   A MIDI device that contains entities.
 ### Managing Device Lists
-- [func MIDIDeviceListGetNumberOfDevices(MIDIDeviceListRef) -> Int](mididevicelistgetnumberofdevices(_:).md)
+- [func MIDIDeviceListGetNumberOfDevices(MIDIDeviceListRef) -> Int](./mididevicelistgetnumberofdevices%28_%29.md)
   Retrieves the number of devices in a device list.
-- [func MIDIDeviceListGetDevice(MIDIDeviceListRef, Int) -> MIDIDeviceRef](mididevicelistgetdevice(_:_:).md)
+- [func MIDIDeviceListGetDevice(MIDIDeviceListRef, Int) -> MIDIDeviceRef](./mididevicelistgetdevice%28_,_%29.md)
   Retrieves a MIDI device from a device list.
-- [func MIDIDeviceListAddDevice(MIDIDeviceListRef, MIDIDeviceRef) -> OSStatus](mididevicelistadddevice(_:_:).md)
+- [func MIDIDeviceListAddDevice(MIDIDeviceListRef, MIDIDeviceRef) -> OSStatus](./mididevicelistadddevice%28_,_%29.md)
   Adds the specified device to the device list.
-- [func MIDIDeviceListDispose(MIDIDeviceListRef) -> OSStatus](mididevicelistdispose(_:).md)
+- [func MIDIDeviceListDispose(MIDIDeviceListRef) -> OSStatus](./mididevicelistdispose%28_%29.md)
   Disposes of a device list, but not its devices.
-- [typealias MIDIDeviceListRef](mididevicelistref.md)
+- [typealias MIDIDeviceListRef](./mididevicelistref.md)
   A list of MIDI devices.
 ### Inspecting a Driver
-- [func MIDIGetDriverDeviceList(MIDIDriverRef) -> MIDIDeviceListRef](midigetdriverdevicelist(_:).md)
+- [func MIDIGetDriverDeviceList(MIDIDriverRef) -> MIDIDeviceListRef](./midigetdriverdevicelist%28_%29.md)
   Returns the list of driver-created devices in the current MIDI setup.
-- [func MIDIDriverEnableMonitoring(MIDIDriverRef, Bool) -> OSStatus](mididriverenablemonitoring(_:_:).md)
+- [func MIDIDriverEnableMonitoring(MIDIDriverRef, Bool) -> OSStatus](./mididriverenablemonitoring%28_,_%29.md)
   Enables monitoring of all outgoing MIDI packets.
-- [func MIDIGetDriverIORunLoop() -> Unmanaged<CFRunLoop>](midigetdriveriorunloop().md)
+- [func MIDIGetDriverIORunLoop() -> Unmanaged<CFRunLoop>](./midigetdriveriorunloop%28%29.md)
   Returns the server’s driver I/O thread.
-- [let kMIDIDriverPropertyUsesSerial: CFString](kmididriverpropertyusesserial.md)
+- [let kMIDIDriverPropertyUsesSerial: CFString](./kmididriverpropertyusesserial.md)
   A value that indicates whether the driver uses serial ports and is eligible to have serial ports assigned to it.
-- [struct MIDIDriverInterface](mididriverinterface.md)
+- [struct MIDIDriverInterface](./mididriverinterface.md)
   The interface to a MIDI driver.
-- [typealias MIDIDriverRef](mididriverref.md)
+- [typealias MIDIDriverRef](./mididriverref.md)
   A MIDI driver object.
 
 ## See Also
 
-- [MIDI Services](midi-services.md)
+### Services
+- [MIDI Services](./midi-services.md)
   Communicate with hardware using Universal MIDI Packets.
-- [MIDI System Setup](midi-system-setup.md)
+- [MIDI System Setup](./midi-system-setup.md)
   Configure the global MIDI system.
-- [MIDI Bluetooth](midi-bluetooth.md)
+- [MIDI Bluetooth](./midi-bluetooth.md)
   Connect to Bluetooth Low Energy MIDI peripherals.
-- [MIDI Messages](midi-messages.md)
+- [MIDI Messages](./midi-messages.md)
   Create and configure messages.
-- [MIDI Thru Connection](midi-thru-connection.md)
+- [MIDI Thru Connection](./midi-thru-connection.md)
   Create play-through connections between sources and destinations.
-- [MIDI Networking](midi-networking.md)
+- [MIDI Networking](./midi-networking.md)
   Create and manage devices connected over a local network.
-- [MIDI Capability Inquiry](midi-capability-inquiry.md)
+- [MIDI Capability Inquiry](./midi-capability-inquiry.md)
   Provide support for bidirectional discovery and configuration of devices.
 
 

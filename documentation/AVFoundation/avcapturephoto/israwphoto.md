@@ -1,7 +1,8 @@
 # isRawPhoto
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this photo object contains RAW format data.
 
@@ -17,13 +18,18 @@ A Boolean value indicating whether this photo object contains RAW format data.
 var isRawPhoto: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isRawPhoto) BOOL rawPhoto;
+```
+
 #### Discussion
 
-When you request capture in RAW format, the capture output calls your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](avcapturephotocapturedelegate/photooutput(_:didfinishprocessingphoto:error:).md) method one or more times, delivering both the RAW photo data and (if requested) equivalent processed photos. Use this property to distinguish between the RAW and processed results from the same capture.
+When you request capture in RAW format, the capture output calls your delegate’s [`photoOutput(_:didFinishProcessingPhoto:error:)`](../avcapturephotocapturedelegate/photooutput%28_,didfinishprocessingphoto,error%29.md) method one or more times, delivering both the RAW photo data and (if requested) equivalent processed photos. Use this property to distinguish between the RAW and processed results from the same capture.
 
 ## See Also
 
-- [var pixelBuffer: CVPixelBuffer?](avcapturephoto/pixelbuffer.md)
+### Accessing photo pixel data
+- [var pixelBuffer: CVPixelBuffer?](./pixelbuffer.md)
   The uncompressed or RAW image sample buffer for the photo, if requested.
 
 

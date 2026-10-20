@@ -1,7 +1,8 @@
 # init(checkpoint:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sound classifier from a training session checkpoint.
 

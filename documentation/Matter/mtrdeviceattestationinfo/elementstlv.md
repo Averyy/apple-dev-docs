@@ -1,7 +1,8 @@
 # elementsTLV
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var elementsTLV: Data { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) MTRTLVBytes elementsTLV;
 ```
 
 

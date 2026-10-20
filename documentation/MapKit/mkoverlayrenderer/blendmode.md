@@ -1,7 +1,8 @@
 # blendMode
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blend mode to apply to the overlay.
 
@@ -18,17 +19,22 @@ The blend mode to apply to the overlay.
 var blendMode: CGBlendMode { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGBlendMode blendMode;
+```
+
 #### Discussion
 
-Choose the blend mode from one of the possible [`CGBlendMode`](https://developer.apple.com/documentation/coregraphics/cgblendmode) enumerations.
+Choose the blend mode from one of the possible [`CGBlendMode`](../../CoreGraphics/cgblendmode.md) enumerations.
 
 ## See Also
 
-- [var overlay: any MKOverlay](mkoverlayrenderer/overlay.md)
+### Attributes of the overlay
+- [var overlay: any MKOverlay](./overlay.md)
   The overlay object containing the data for drawing.
-- [var alpha: CGFloat](mkoverlayrenderer/alpha.md)
+- [var alpha: CGFloat](./alpha.md)
   The amount of transparency to apply to the overlay.
-- [var contentScaleFactor: CGFloat](mkoverlayrenderer/contentscalefactor.md)
+- [var contentScaleFactor: CGFloat](./contentscalefactor.md)
   The scale factor for drawing the overlay’s content.
 
 

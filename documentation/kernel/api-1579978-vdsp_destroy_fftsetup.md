@@ -1,7 +1,8 @@
 # vDSP_destroy_fftsetup
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Deallocates an existing single-precision FFT setup structure.
 
@@ -10,7 +11,7 @@ Deallocates an existing single-precision FFT setup structure.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_destroy_fftsetup(FFTSetup __setup);
 ```
 
@@ -20,7 +21,7 @@ void vDSP_destroy_fftsetup(FFTSetup __setup);
 
 ## Parameters
 
-- `__setup`: The setup structure to deallocate, previously created by [`vDSP_create_fftsetup`](1580009-vdsp_create_fftsetup.md).
+- `__setup`: The setup structure to deallocate, previously created by [`vDSP_create_fftsetup`](./api-1580009-vdsp_create_fftsetup.md).
 
 
 ---

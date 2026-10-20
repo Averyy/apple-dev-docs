@@ -1,7 +1,8 @@
 # polygons
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the polygons that make up the multipolygon object.
 
@@ -18,6 +19,10 @@ An array containing the polygons that make up the multipolygon object.
 
 ```swift
 var polygons: [MKPolygon] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<MKPolygon *> * polygons;
 ```
 
 

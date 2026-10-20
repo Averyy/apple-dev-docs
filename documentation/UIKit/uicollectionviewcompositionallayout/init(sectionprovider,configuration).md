@@ -1,7 +1,8 @@
 # init(sectionProvider:configuration:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a compositional layout object with a section provider and an additional configuration.
 
@@ -18,11 +19,16 @@ Creates a compositional layout object with a section provider and an additional 
 init(sectionProvider: @escaping UICollectionViewCompositionalLayoutSectionProvider, configuration: UICollectionViewCompositionalLayoutConfiguration)
 ```
 
+```objc
+- (instancetype) initWithSectionProvider:(UICollectionViewCompositionalLayoutSectionProvider) sectionProvider configuration:(UICollectionViewCompositionalLayoutConfiguration *) configuration;
+```
+
 ## See Also
 
-- [typealias UICollectionViewCompositionalLayoutSectionProvider](uicollectionviewcompositionallayoutsectionprovider.md)
+### Observing data in collection view layouts
+- [typealias UICollectionViewCompositionalLayoutSectionProvider](../uicollectionviewcompositionallayoutsectionprovider.md)
   A closure that creates and returns each of the layout’s sections.
-- [init(sectionProvider: UICollectionViewCompositionalLayoutSectionProvider)](uicollectionviewcompositionallayout/init(sectionprovider:).md)
+- [init(sectionProvider: UICollectionViewCompositionalLayoutSectionProvider)](./init%28sectionprovider%29.md)
   Creates a compositional layout object with a section provider to supply the layout’s sections.
 
 

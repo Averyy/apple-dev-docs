@@ -1,7 +1,8 @@
 # startDeviceMotionUpdates(handler:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 4.0+
@@ -16,14 +17,19 @@
 func startDeviceMotionUpdates(handler: @escaping ([CMDeviceMotion]?, (any Error)?) -> Void)
 ```
 
+```objc
+- (void) startDeviceMotionUpdatesWithHandler:(void (^)(NSArray<CMDeviceMotion *> *data, NSError *error)) handler;
+```
+
 ## See Also
 
-- [func startDeviceMotionUpdates()](cmbatchedsensormanager/startdevicemotionupdates.md)
-- [func stopDeviceMotionUpdates()](cmbatchedsensormanager/stopdevicemotionupdates.md)
-- [var deviceMotionBatch: [CMDeviceMotion]?](cmbatchedsensormanager/devicemotionbatch.md)
-- [func deviceMotionUpdates() -> CMBatchedSensorManager.DeviceMotionUpdates](cmbatchedsensormanager/devicemotionupdates.md)
-- [CMBatchedSensorManager.DeviceMotionUpdates](cmbatchedsensormanager/devicemotionupdates.md)
-- [var isDeviceMotionActive: Bool](cmbatchedsensormanager/isdevicemotionactive.md)
+### Collecting device-motion data
+- [func startDeviceMotionUpdates()](./startdevicemotionupdates%28%29.md)
+- [func stopDeviceMotionUpdates()](./stopdevicemotionupdates%28%29.md)
+- [var deviceMotionBatch: [CMDeviceMotion]?](./devicemotionbatch.md)
+- [func deviceMotionUpdates() -> CMBatchedSensorManager.DeviceMotionUpdates](./devicemotionupdates%28%29.md)
+- [CMBatchedSensorManager.DeviceMotionUpdates](./devicemotionupdates.md)
+- [var isDeviceMotionActive: Bool](./isdevicemotionactive.md)
 
 
 ---

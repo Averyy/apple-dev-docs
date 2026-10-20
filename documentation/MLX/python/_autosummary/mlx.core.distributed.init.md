@@ -6,39 +6,15 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 
 # mlx.core.distributed.init
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.distributed.init.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.distributed.init
-
- Table of contents 
-
-## Contents
-
-# mlx.core.distributed.init
-
-**init(*strict: bool = False*, *backend: str = 'any'*, ***, *all_gather_factory: Callable[[int, int], Callable[[bytes, int], bytes]] | None = None*) → [Group](mlx.core.distributed.Group.html#mlx.core.distributed.Group)**
+**init(*strict: bool = False*, *backend: str = 'any'*, ***, *all_gather_factory: Callable[[int, int], Callable[[bytes, int], bytes]] | None = None*) → [Group](mlx.core.distributed.Group.md#mlx.core.distributed.Group)**
 : Initialize the communication backend and create the global communication group.
 Example
-import mlx.core as mx
 
-group = mx.distributed.init(backend="ring")
+  ```
+  import mlx.core as mx
+
+  group = mx.distributed.init(backend="ring")
+  ```
 
 Parameters:
 
@@ -62,6 +38,4 @@ Returns:
 The group representing all the launched processes.
 
 Return type:
-[Group](mlx.core.distributed.Group.html#mlx.core.distributed.Group)
-
-** Contents
+[Group](mlx.core.distributed.Group.md#mlx.core.distributed.Group)

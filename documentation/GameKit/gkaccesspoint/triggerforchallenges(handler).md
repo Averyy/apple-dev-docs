@@ -1,7 +1,8 @@
 # triggerForChallenges(handler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the view that allows players to engage each other with challenges.
 
@@ -14,7 +15,15 @@ Displays the view that allows players to engage each other with challenges.
 ## Declaration
 
 ```swift
+func triggerForChallenges(handler: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 func triggerForChallenges() async
+```
+
+```objc
+- (void) triggerAccessPointForChallengesWithHandler:(void (^)()) handler;
 ```
 
 

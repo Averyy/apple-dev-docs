@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_SupportedPresetDictionaries
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -17,22 +18,27 @@
 let kVTCompressionPropertyKey_SupportedPresetDictionaries: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_SupportedPresetDictionaries;
+```
+
 #### Discussion
 
 Where supported by video encoders, returns a dictionary whose keys are the available compression presets (prefixed by `kVTCompressionPreset_`) and the values are dictionaries containing the corresponding settings property key/value pairs.
 
 Clients can select a compression preset for their encoding needs and use its encoder settings to configure the encoder. Clients may also use the encoder settings as a base configuration that they can customize as they require.
 
-```None
+```
 See also kVTCompressionPreset_HighQuality, kVTCompressionPreset_Balanced, kVTCompressionPreset_HighSpeed, kVTCompressionPreset_VideoConferencing, kVTCompressionPreset_ConsistentQuality.
 ```
 
 ## See Also
 
-- [let kVTCompressionPreset_Balanced: CFString](kvtcompressionpreset_balanced.md)
-- [let kVTCompressionPreset_HighQuality: CFString](kvtcompressionpreset_highquality.md)
-- [let kVTCompressionPreset_HighSpeed: CFString](kvtcompressionpreset_highspeed.md)
-- [let kVTCompressionPreset_VideoConferencing: CFString](kvtcompressionpreset_videoconferencing.md)
+### Compression Presets
+- [let kVTCompressionPreset_Balanced: CFString](./kvtcompressionpreset_balanced.md)
+- [let kVTCompressionPreset_HighQuality: CFString](./kvtcompressionpreset_highquality.md)
+- [let kVTCompressionPreset_HighSpeed: CFString](./kvtcompressionpreset_highspeed.md)
+- [let kVTCompressionPreset_VideoConferencing: CFString](./kvtcompressionpreset_videoconferencing.md)
 
 
 ---

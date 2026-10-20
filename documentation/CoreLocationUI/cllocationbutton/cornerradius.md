@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: CoreLocationUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corner radius of the button.
 
@@ -16,9 +17,14 @@ The corner radius of the button.
 var cornerRadius: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) CGFloat cornerRadius;
+```
+
 ## See Also
 
-- [var fontSize: CGFloat](cllocationbutton/fontsize.md)
+### Customizing the button appearance
+- [var fontSize: CGFloat](./fontsize.md)
   The font size of the text on the button.
 
 

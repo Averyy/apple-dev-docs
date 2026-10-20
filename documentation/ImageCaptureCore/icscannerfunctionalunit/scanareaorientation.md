@@ -1,7 +1,8 @@
 # scanAreaOrientation
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var scanAreaOrientation: ICEXIFOrientationType { get set }
+```
+
+```objc
+@property (readwrite) ICEXIFOrientationType scanAreaOrientation;
 ```
 
 

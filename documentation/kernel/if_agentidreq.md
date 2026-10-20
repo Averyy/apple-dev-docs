@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_agentidreq {
     ...
 };
@@ -17,8 +17,8 @@ struct if_agentidreq {
 ## Topics
 
 ### Instance Properties
-- [ifar_name](if_agentidreq/3943733-ifar_name.md)
-- [ifar_uuid](if_agentidreq/3943734-ifar_uuid.md)
+- [ifar_name](./if_agentidreq/api-3943733-ifar_name.md)
+- [ifar_uuid](./if_agentidreq/api-3943734-ifar_uuid.md)
 
 
 ---

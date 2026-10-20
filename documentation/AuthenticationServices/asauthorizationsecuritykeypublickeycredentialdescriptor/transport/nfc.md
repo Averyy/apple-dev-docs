@@ -1,7 +1,8 @@
 # nfc
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Near Field Communication transport type.
 
@@ -17,13 +18,18 @@ The Near Field Communication transport type.
 static let nfc: ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport
 ```
 
+```c
+extern ASAuthorizationSecurityKeyPublicKeyCredentialDescriptorTransport const ASAuthorizationSecurityKeyPublicKeyCredentialDescriptorTransportNFC;
+```
+
 ## See Also
 
-- [static var allSupported: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport]](asauthorizationsecuritykeypublickeycredentialdescriptor/transport/allsupported.md)
+### Getting the properties
+- [static var allSupported: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport]](./allsupported.md)
   An array of currently supported transport types.
-- [static let bluetooth: ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](asauthorizationsecuritykeypublickeycredentialdescriptor/transport/bluetooth.md)
+- [static let bluetooth: ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](./bluetooth.md)
   The Bluetooth transport type.
-- [static let usb: ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](asauthorizationsecuritykeypublickeycredentialdescriptor/transport/usb.md)
+- [static let usb: ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](./usb.md)
   The USB transport type.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value indicating whether this instance is less than or equal to the given value.
@@ -45,7 +46,7 @@ Double.nan.isLessThanOrEqualTo(x)
 // false
 ```
 
-The `isLessThanOrEqualTo(_:)` method implements the less-than-or-equal predicate defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `isLessThanOrEqualTo(_:)` method implements the less-than-or-equal predicate defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 

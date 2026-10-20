@@ -1,14 +1,15 @@
 # CheckForSufficientTimeForPMCommand
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 bool CheckForSufficientTimeForPMCommand(UInt32 timeoutDuration);
 ```
 

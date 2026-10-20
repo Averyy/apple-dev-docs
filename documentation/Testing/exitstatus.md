@@ -1,7 +1,8 @@
 # ExitStatus
 
 **Framework**: Swift Testing  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration describing possible status a process will report on exit.
 
@@ -17,35 +18,36 @@ enum ExitStatus
 
 #### Overview
 
-You can convert an instance of this type to an instance of [`ExitTest.Condition`](exittest/condition.md) using [`init(_:)`](exittest/condition/init(_:).md). That value can then be used to describe the condition under which an exit test is expected to pass or fail by passing it to [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](expect(processexitswith:observing:_:sourcelocation:performing:).md) or [`require(processExitsWith:observing:_:sourceLocation:performing:)`](require(processexitswith:observing:_:sourcelocation:performing:).md).
+You can convert an instance of this type to an instance of [`ExitTest.Condition`](./exittest/condition.md) using [`init(_:)`](./exittest/condition/init%28_%29.md). That value can then be used to describe the condition under which an exit test is expected to pass or fail by passing it to [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](./expect%28processexitswith,observing,_,sourcelocation,performing%29.md) or [`require(processExitsWith:observing:_:sourceLocation:performing:)`](./require%28processexitswith,observing,_,sourcelocation,performing%29.md).
 
 ## Topics
 
 ### Enumeration Cases
-- [ExitStatus.exitCode(_:)](exitstatus/exitcode(_:).md)
+- [ExitStatus.exitCode(_:)](./exitstatus/exitcode%28_%29.md)
   The process exited with the given exit code.
-- [ExitStatus.signal(_:)](exitstatus/signal(_:).md)
+- [ExitStatus.signal(_:)](./exitstatus/signal%28_%29.md)
   The process exited with the given signal.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Exit testing](exit-testing.md)
+### Checking how processes exit
+- [Exit testing](./exit-testing.md)
   Use exit tests to test functionality that might cause a test process to exit.
-- [macro expect(processExitsWith: ExitTest.Condition, observing: [any PartialKeyPath<ExitTest.Result> & Sendable], @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> Void) -> ExitTest.Result?](expect(processexitswith:observing:_:sourcelocation:performing:).md)
+- [macro expect(processExitsWith: ExitTest.Condition, observing: [any PartialKeyPath<ExitTest.Result> & Sendable], @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> Void) -> ExitTest.Result?](./expect%28processexitswith,observing,_,sourcelocation,performing%29.md)
   Check that an expression causes the process to terminate in a given fashion.
-- [macro require(processExitsWith: ExitTest.Condition, observing: [any PartialKeyPath<ExitTest.Result> & Sendable], @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> Void) -> ExitTest.Result](require(processexitswith:observing:_:sourcelocation:performing:).md)
+- [macro require(processExitsWith: ExitTest.Condition, observing: [any PartialKeyPath<ExitTest.Result> & Sendable], @autoclosure () -> Comment?, sourceLocation: SourceLocation, performing: () async throws -> Void) -> ExitTest.Result](./require%28processexitswith,observing,_,sourcelocation,performing%29.md)
   Check that an expression causes the process to terminate in a given fashion and throw an error if it did not.
-- [struct ExitTest](exittest.md)
+- [struct ExitTest](./exittest.md)
   A type describing an exit test.
 
 

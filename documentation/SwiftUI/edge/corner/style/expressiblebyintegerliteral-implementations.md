@@ -1,11 +1,12 @@
 # ExpressibleByIntegerLiteral Implementations
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(integerLiteral: Edge.Corner.Style.IntegerLiteralType)](edge/corner/style/init(integerliteral:).md)
+- [init(integerLiteral: Edge.Corner.Style.IntegerLiteralType)](./init%28integerliteral%29.md)
   Create a fixed corner style with an int value as its corner radius. This is a shorthand of writing `.fixed(value)`.
 
 

@@ -1,7 +1,8 @@
 # stopTunnel()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Start the process of disconnecting the tunnel.
 
@@ -19,13 +20,18 @@ Start the process of disconnecting the tunnel.
 func stopTunnel()
 ```
 
+```objc
+- (void) stopTunnel;
+```
+
 #### Discussion
 
-This method returns immediately after starting the process of disconnecting the tunnel. In order to be notified when the tunnel is fully disconnected, register to observe the [`NEVPNStatusDidChangeNotification`](nevpnstatusdidchangenotification.md) notification on the [`NETunnelProviderSession`](netunnelprovidersession.md) object and examine its status property when the notification is received.
+This method returns immediately after starting the process of disconnecting the tunnel. In order to be notified when the tunnel is fully disconnected, register to observe the [`NEVPNStatusDidChangeNotification`](../nevpnstatusdidchangenotification.md) notification on the [`NETunnelProviderSession`](../netunnelprovidersession.md) object and examine its status property when the notification is received.
 
 ## See Also
 
-- [func startTunnel(options: [String : Any]?) throws](netunnelprovidersession/starttunnel(options:).md)
+### Controlling the tunnel connection
+- [func startTunnel(options: [String : Any]?) throws](./starttunnel%28options%29.md)
   Start the process of connecting the tunnel.
 
 

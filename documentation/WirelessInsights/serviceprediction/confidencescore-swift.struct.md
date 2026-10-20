@@ -1,7 +1,8 @@
 # ServicePrediction.ConfidenceScore
 
 **Framework**: WirelessInsights  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the confidence in various aspects of the prediction.
 
@@ -18,30 +19,31 @@ struct ConfidenceScore
 ## Topics
 
 ### Accessing prediction confidence scores
-- [let prediction: ServicePrediction.Confidence](serviceprediction/confidencescore-swift.struct/prediction.md)
+- [let prediction: ServicePrediction.Confidence](./confidencescore-swift.struct/prediction.md)
   Confidence that the predicted event will occur.
-- [let startTime: ServicePrediction.Confidence](serviceprediction/confidencescore-swift.struct/starttime.md)
+- [let startTime: ServicePrediction.Confidence](./confidencescore-swift.struct/starttime.md)
   Confidence of the start time if the predicted event occurs.
-- [let duration: ServicePrediction.Confidence](serviceprediction/confidencescore-swift.struct/duration.md)
+- [let duration: ServicePrediction.Confidence](./confidencescore-swift.struct/duration.md)
   Confidence of the duration if the predicted event occurs.
-- [ServicePrediction.Confidence](serviceprediction/confidence.md)
+- [ServicePrediction.Confidence](./confidence.md)
   An enumeration of levels of confidence for a prediction or one of its properties.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let confidenceScore: ServicePrediction.ConfidenceScore](serviceprediction/confidencescore-swift.property.md)
+### Accessing prediction confidence
+- [let confidenceScore: ServicePrediction.ConfidenceScore](./confidencescore-swift.property.md)
   A score that represents the level of confidence in various aspects of the prediction.
-- [ServicePrediction.Confidence](serviceprediction/confidence.md)
+- [ServicePrediction.Confidence](./confidence.md)
   An enumeration of levels of confidence for a prediction or one of its properties.
 
 

@@ -1,7 +1,8 @@
 # AVContentKeyRequestRequiresValidationDataInSecureTokenKey
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that requires the secure token to have extended validation data.
 
@@ -20,19 +21,24 @@ A key that requires the secure token to have extended validation data.
 let AVContentKeyRequestRequiresValidationDataInSecureTokenKey: String
 ```
 
+```c
+extern NSString * const AVContentKeyRequestRequiresValidationDataInSecureTokenKey;
+```
+
 #### Discussion
 
-You create the value for this key by using [`persistableContentKey(fromKeyVendorResponse:options:)`](avpersistablecontentkeyrequest/persistablecontentkey(fromkeyvendorresponse:options:).md).
+You create the value for this key by using [`persistableContentKey(fromKeyVendorResponse:options:)`](./avpersistablecontentkeyrequest/persistablecontentkey%28fromkeyvendorresponse,options%29.md).
 
 ## See Also
 
-- [func makeStreamingContentKeyRequestData(forApp: Data, contentIdentifier: Data?, options: [String : Any]?, completionHandler: (Data?, (any Error)?) -> Void)](avcontentkeyrequest/makestreamingcontentkeyrequestdata(forapp:contentidentifier:options:completionhandler:).md)
+### Getting content key request data
+- [func makeStreamingContentKeyRequestData(forApp: Data, contentIdentifier: Data?, options: [String : Any]?, completionHandler: (Data?, (any Error)?) -> Void)](./avcontentkeyrequest/makestreamingcontentkeyrequestdata%28forapp,contentidentifier,options,completionhandler%29.md)
   Obtains encrypted key request data for a specific combination of app and content.
-- [let AVContentKeyRequestProtocolVersionsKey: String](avcontentkeyrequestprotocolversionskey.md)
+- [let AVContentKeyRequestProtocolVersionsKey: String](./avcontentkeyrequestprotocolversionskey.md)
   A key that specifies the versions of the content protection protocol supported by the application.
-- [let AVContentKeyRequestRandomDeviceIdentifierSeedKey: String](avcontentkeyrequestrandomdeviceidentifierseedkey.md)
+- [let AVContentKeyRequestRandomDeviceIdentifierSeedKey: String](./avcontentkeyrequestrandomdeviceidentifierseedkey.md)
   Value is an NSData containing a 16-byte seed to randomize the user’s deviceID contained in the SPC blob during FairPlay key exchange
-- [let AVContentKeyRequestShouldRandomizeDeviceIdentifierKey: String](avcontentkeyrequestshouldrandomizedeviceidentifierkey.md)
+- [let AVContentKeyRequestShouldRandomizeDeviceIdentifierKey: String](./avcontentkeyrequestshouldrandomizedeviceidentifierkey.md)
   Value is an Boolean indicating whether the user’s deviceID contained in the SPC blob during FairPlay key exchange should be randomized using a system generated seed
 
 

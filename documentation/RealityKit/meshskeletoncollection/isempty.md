@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 True if there are no skeletons.
 

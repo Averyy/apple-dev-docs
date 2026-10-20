@@ -1,16 +1,17 @@
 # ownerDisplayName
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the person that receives a shared pass.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS ?+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 16.0
+- iPadOS 14.0+ - Deprecated in 16.0
+- Mac Catalyst 14.0+ - Deprecated in 16.0
+- macOS
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -18,11 +19,16 @@ The name of the person that receives a shared pass.
 var ownerDisplayName: String { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSString * ownerDisplayName;
+```
+
 ## See Also
 
-- [var passThumbnailImage: CGImage](pkshareablepassmetadata/passthumbnailimage.md)
+### Displaying information on the share sheet
+- [var passThumbnailImage: CGImage](./passthumbnailimage.md)
   A thumbnail image of a pass that the system displays on the sharing sheet.
-- [var localizedDescription: String](pkshareablepassmetadata/localizeddescription.md)
+- [var localizedDescription: String](./localizeddescription.md)
   A longer form of the pass description that the system displays on the sharing sheet.
 
 

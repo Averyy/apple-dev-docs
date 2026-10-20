@@ -1,7 +1,8 @@
 # EKUI_IS_SIMULATOR
 
 **Framework**: EventKit UI  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 4.0+
@@ -15,9 +16,14 @@
 var EKUI_IS_SIMULATOR: Int32 { get }
 ```
 
+```c
+#define EKUI_IS_SIMULATOR
+```
+
 ## See Also
 
-- [var EKUI_IS_IOS: Int32](ekui_is_ios.md)
+### Constants
+- [var EKUI_IS_IOS: Int32](./ekui_is_ios.md)
 
 
 ---

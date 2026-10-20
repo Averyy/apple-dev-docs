@@ -1,7 +1,8 @@
 # SecStaticCodeGetTypeID()
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the unique identifier of the opaque type to which a static code object belongs.
 
@@ -15,13 +16,17 @@ Returns the unique identifier of the opaque type to which a static code object b
 func SecStaticCodeGetTypeID() -> CFTypeID
 ```
 
+```c
+CFTypeID SecStaticCodeGetTypeID();
+```
+
 #### Return Value
 
-A value that identifies the opaque type of a [`SecStaticCode`](secstaticcode.md) object.
+A value that identifies the opaque type of a [`SecStaticCode`](./secstaticcode.md) object.
 
 #### Discussion
 
-You can compare the value returned by this function to the [`CFTypeID`](https://developer.apple.com/documentation/corefoundation/cftypeid) identifier obtained by calling the [`CFGetTypeID(_:)`](https://developer.apple.com/documentation/corefoundation/cfgettypeid(_:)) function on a specific object. These values might change from release to release or platform to platform.
+You can compare the value returned by this function to the [`CFTypeID`](../CoreFoundation/cftypeid.md) identifier obtained by calling the [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) function on a specific object. These values might change from release to release or platform to platform.
 
 
 ---

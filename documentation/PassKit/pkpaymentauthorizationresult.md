@@ -1,7 +1,8 @@
 # PKPaymentAuthorizationResult
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that reports the status code and errors for a payment authorization request.
 
@@ -19,9 +20,13 @@ An object that reports the status code and errors for a payment authorization re
 class PKPaymentAuthorizationResult
 ```
 
+```objc
+@interface PKPaymentAuthorizationResult : NSObject
+```
+
 #### Overview
 
-If the Apple Pay sheet contains errors, you provide a [`PKPaymentAuthorizationStatus.failure`](pkpaymentauthorizationstatus/failure.md) status to [`PKPaymentAuthorizationResult`](pkpaymentauthorizationresult.md), and include the errors in the errors array. If there are no errors, you provide a [`PKPaymentAuthorizationStatus.success`](pkpaymentauthorizationstatus/success.md) status and leave the error array empty.
+If the Apple Pay sheet contains errors, you provide a [`PKPaymentAuthorizationStatus.failure`](./pkpaymentauthorizationstatus/failure.md) status to [`PKPaymentAuthorizationResult`](./pkpaymentauthorizationresult.md), and include the errors in the errors array. If there are no errors, you provide a [`PKPaymentAuthorizationStatus.success`](./pkpaymentauthorizationstatus/success.md) status and leave the error array empty.
 
 The following code example shows a failure result with two errors in the postal code and street fields.
 
@@ -43,42 +48,43 @@ let result = PKPaymentAuthorizationResult(status: .failure,
 ## Topics
 
 ### Initializing a payment authorization result
-- [init(status: PKPaymentAuthorizationStatus, errors: [any Error]?)](pkpaymentauthorizationresult/init(status:errors:).md)
+- [init(status: PKPaymentAuthorizationStatus, errors: [any Error]?)](./pkpaymentauthorizationresult/init%28status,errors%29.md)
   Initializes the result with the status code and list of errors.
 ### Setting order details
-- [var orderDetails: PKPaymentOrderDetails?](pkpaymentauthorizationresult/orderdetails.md)
+- [var orderDetails: PKPaymentOrderDetails?](./pkpaymentauthorizationresult/orderdetails.md)
   Optional metadata with order details for the placed order.
-- [class PKPaymentOrderDetails](pkpaymentorderdetails.md)
+- [class PKPaymentOrderDetails](./pkpaymentorderdetails.md)
   Optional metadata with payment order details for the placed order.
 ### Setting payment authorization status and errors
-- [var errors: [any Error]!](pkpaymentauthorizationresult/errors.md)
+- [var errors: [any Error]!](./pkpaymentauthorizationresult/errors.md)
   List of errors in the Apple Pay sheet.
-- [var status: PKPaymentAuthorizationStatus](pkpaymentauthorizationresult/status.md)
+- [var status: PKPaymentAuthorizationStatus](./pkpaymentauthorizationresult/status.md)
   Payment authorization general status.
-- [enum PKPaymentAuthorizationStatus](pkpaymentauthorizationstatus.md)
+- [enum PKPaymentAuthorizationStatus](./pkpaymentauthorizationstatus.md)
   General success and failure status for payment authorization.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PKPaymentOrderDetails](pkpaymentorderdetails.md)
+### Payment sheet interactions and authorization
+- [class PKPaymentOrderDetails](./pkpaymentorderdetails.md)
   Optional metadata with payment order details for the placed order.
-- [class PKPaymentAuthorizationController](pkpaymentauthorizationcontroller.md)
+- [class PKPaymentAuthorizationController](./pkpaymentauthorizationcontroller.md)
   An object that presents a sheet that prompts the user to authorize a payment request.
-- [class PKPaymentAuthorizationViewController](pkpaymentauthorizationviewcontroller.md)
+- [class PKPaymentAuthorizationViewController](./pkpaymentauthorizationviewcontroller.md)
   An object that presents a sheet that prompts the user to authorize a payment request.
-- [class PKPayment](pkpayment.md)
+- [class PKPayment](./pkpayment.md)
   Represents the result of authorizing a payment request and contains payment information, encrypted in the payment token.
 
 

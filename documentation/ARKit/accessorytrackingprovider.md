@@ -1,7 +1,8 @@
 # AccessoryTrackingProvider
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Provides the real time position of accessories in the user’s environment.
 
@@ -17,52 +18,53 @@ final class AccessoryTrackingProvider
 ## Topics
 
 ### Structures
-- [AccessoryTrackingProvider.Error](accessorytrackingprovider/error.md)
+- [AccessoryTrackingProvider.Error](./accessorytrackingprovider/error.md)
   An accessory tracking error.
 ### Initializers
-- [convenience init(accessories: [Accessory])](accessorytrackingprovider/init(accessories:).md)
+- [convenience init(accessories: [Accessory])](./accessorytrackingprovider/init%28accessories%29.md)
   Create an accessory tracking provider.
 ### Instance Properties
-- [var anchorUpdates: AnchorUpdateSequence<AccessoryAnchor>](accessorytrackingprovider/anchorupdates.md)
+- [var anchorUpdates: AnchorUpdateSequence<AccessoryAnchor>](./accessorytrackingprovider/anchorupdates.md)
   An async sequence of all anchor updates.
-- [var description: String](accessorytrackingprovider/description.md)
+- [var description: String](./accessorytrackingprovider/description.md)
   A textual representation of this accessory tracking provider.
-- [var latestAnchors: [AccessoryAnchor]](accessorytrackingprovider/latestanchors.md)
+- [var latestAnchors: [AccessoryAnchor]](./accessorytrackingprovider/latestanchors.md)
   The latest accessory anchors updated with the most recent inertial data.
-- [var state: DataProviderState](accessorytrackingprovider/state.md)
+- [var state: DataProviderState](./accessorytrackingprovider/state.md)
   The state of this accessory tracking provider.
 ### Instance Methods
-- [func predictAnchor(for: AccessoryAnchor, at: TimeInterval) -> AccessoryAnchor?](accessorytrackingprovider/predictanchor(for:at:).md)
+- [func predictAnchor(for: AccessoryAnchor, at: TimeInterval) -> AccessoryAnchor?](./accessorytrackingprovider/predictanchor%28for,at%29.md)
   Predict an accessory anchor to a target timestamp.
-- [func updateAccessories([Accessory]) async throws](accessorytrackingprovider/updateaccessories(_:).md)
+- [func updateAccessories([Accessory]) async throws](./accessorytrackingprovider/updateaccessories%28_%29.md)
   Updates the accessories being tracked by a provider.
 ### Type Properties
-- [static var isSupported: Bool](accessorytrackingprovider/issupported.md)
+- [static var isSupported: Bool](./accessorytrackingprovider/issupported.md)
   Determines whether this device supports the accessory tracking provider.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](accessorytrackingprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./accessorytrackingprovider/requiredauthorizations.md)
   The authorization type(s) required by the accessory tracking provider.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataProvider](dataprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DataProvider](./dataprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Preparing spatial accessories for tracking in your visionOS app](preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+### Accessory tracking
+- [Preparing spatial accessories for tracking in your visionOS app](./preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
-- [Working with generic spatial accessories](../visionos/working-with-generic-spatial-accessories.md)
+- [Working with generic spatial accessories](../visionOS/working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
-- [struct Accessory](accessory.md)
+- [struct Accessory](./accessory.md)
   Represents an accessory to be tracked.
-- [struct AccessoryAnchor](accessoryanchor.md)
+- [struct AccessoryAnchor](./accessoryanchor.md)
   Represents a tracked accessory.
-- [Tracking accessories in volumetric windows](tracking-accessories-in-volumetric-windows.md)
+- [Tracking accessories in volumetric windows](./tracking-accessories-in-volumetric-windows.md)
   Translate the position and velocity of tracked handheld accessories to throw virtual balls at a stack of cans.
-- [Tracking a handheld accessory as a virtual sculpting tool](tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
+- [Tracking a handheld accessory as a virtual sculpting tool](./tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
   Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 
 

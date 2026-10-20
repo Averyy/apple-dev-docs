@@ -1,7 +1,8 @@
 # isAbsoluteOffset
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the anchor’s offset is expressed as an absolute value.
 
@@ -18,11 +19,16 @@ A Boolean value that indicates whether the anchor’s offset is expressed as an 
 var isAbsoluteOffset: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isAbsoluteOffset;
+```
+
 ## See Also
 
-- [var offset: CGPoint](nscollectionlayoutanchor/offset.md)
+### Getting the offset
+- [var offset: CGPoint](./offset.md)
   The floating-point value of the anchor’s offset from the item it’s attached to.
-- [var isFractionalOffset: Bool](nscollectionlayoutanchor/isfractionaloffset.md)
+- [var isFractionalOffset: Bool](./isfractionaloffset.md)
   A Boolean value that indicates whether the anchor’s offset is expressed as a fraction of its supplementary item’s dimension.
 
 

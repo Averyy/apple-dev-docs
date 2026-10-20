@@ -1,7 +1,8 @@
 # nationality
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The mobile driver’s license holder’s nationality on record with the issuer.
 

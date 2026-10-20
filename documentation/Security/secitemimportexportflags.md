@@ -1,7 +1,8 @@
 # SecItemImportExportFlags
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The import and export function flags.
 
@@ -14,30 +15,34 @@ The import and export function flags.
 struct SecItemImportExportFlags
 ```
 
+```c
+enum SecItemImportExportFlags : uint32_t;
+```
+
 #### Overview
 
-Use an instance of this structure a the flags input to the [`SecItemImport(_:_:_:_:_:_:_:_:)`](secitemimport(_:_:_:_:_:_:_:_:).md) and [`SecItemExport(_:_:_:_:_:)`](secitemexport(_:_:_:_:_:).md) functions.
+Use an instance of this structure a the flags input to the [`SecItemImport(_:_:_:_:_:_:_:_:)`](./secitemimport%28_,_,_,_,_,_,_,_%29.md) and [`SecItemExport(_:_:_:_:_:)`](./secitemexport%28_,_,_,_,_%29.md) functions.
 
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](secitemimportexportflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./secitemimportexportflags/init%28rawvalue%29.md)
   Initialize an item import/export flag structure.
 ### Constants
-- [static var pemArmour: SecItemImportExportFlags](secitemimportexportflags/pemarmour.md)
+- [static var pemArmour: SecItemImportExportFlags](./secitemimportexportflags/pemarmour.md)
   A flag that indicates the exported data should have PEM armor.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

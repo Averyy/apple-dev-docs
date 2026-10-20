@@ -1,7 +1,8 @@
 # kSecAttrKeyTypeEC
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Elliptic curve algorithm.
 
@@ -14,10 +15,16 @@ Elliptic curve algorithm.
 - visionOS 1.0+
 - watchOS 2.0+
 
+> **Deprecated**: Use [`kSecAttrKeyTypeECSECPrimeRandom`](./ksecattrkeytypeecsecprimerandom.md) instead.
+
 ## Declaration
 
 ```swift
 let kSecAttrKeyTypeEC: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrKeyTypeEC;
 ```
 
 

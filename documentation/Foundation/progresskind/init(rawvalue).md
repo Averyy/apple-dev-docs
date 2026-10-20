@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new kind of progress using the raw value of a string you specify.
 
@@ -26,7 +27,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](progresskind/init(_:).md)
+### Creating Kinds of Progress
+- [init(String)](./init%28_%29.md)
   Creates a new kind of progress using the specified string.
 
 

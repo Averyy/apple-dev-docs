@@ -1,7 +1,8 @@
 # supportsMTL4
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether the layer supports drawing using Metal4, if false assumed to be using Metal3.
 

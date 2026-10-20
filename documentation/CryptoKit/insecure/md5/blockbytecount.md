@@ -1,7 +1,8 @@
 # blockByteCount
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The number of bytes that represents the hash function’s internal state.
 

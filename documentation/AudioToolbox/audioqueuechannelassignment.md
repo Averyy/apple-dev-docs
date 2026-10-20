@@ -1,15 +1,16 @@
 # AudioQueueChannelAssignment
 
 **Framework**: Audio Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,36 +18,41 @@
 struct AudioQueueChannelAssignment
 ```
 
+```c
+typedef struct AudioQueueChannelAssignment { ... } AudioQueueChannelAssignment;
+```
+
 ## Topics
 
 ### Initializers
-- [init(mDeviceUID: Unmanaged<CFString>, mChannelNumber: UInt32)](audioqueuechannelassignment/init(mdeviceuid:mchannelnumber:).md)
+- [init(mDeviceUID: Unmanaged<CFString>, mChannelNumber: UInt32)](./audioqueuechannelassignment/init%28mdeviceuid,mchannelnumber%29.md)
 ### Instance Properties
-- [var mChannelNumber: UInt32](audioqueuechannelassignment/mchannelnumber.md)
-- [var mDeviceUID: Unmanaged<CFString>](audioqueuechannelassignment/mdeviceuid.md)
+- [var mChannelNumber: UInt32](./audioqueuechannelassignment/mchannelnumber.md)
+- [var mDeviceUID: Unmanaged<CFString>](./audioqueuechannelassignment/mdeviceuid.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct AudioQueueProcessingTapFlags](audioqueueprocessingtapflags.md)
-- [struct AudioQueueBuffer](audioqueuebuffer.md)
+### Data Types
+- [struct AudioQueueProcessingTapFlags](./audioqueueprocessingtapflags.md)
+- [struct AudioQueueBuffer](./audioqueuebuffer.md)
   Defines an audio queue buffer.
-- [typealias AudioQueueBufferRef](audioqueuebufferref.md)
+- [typealias AudioQueueBufferRef](./audioqueuebufferref.md)
   A pointer to an audio queue buffer.
-- [struct AudioQueueLevelMeterState](audioqueuelevelmeterstate.md)
+- [struct AudioQueueLevelMeterState](./audioqueuelevelmeterstate.md)
   Specifies the current level metering information for one channel of an audio queue.
-- [struct AudioQueueParameterEvent](audioqueueparameterevent.md)
+- [struct AudioQueueParameterEvent](./audioqueueparameterevent.md)
   Specifies an audio queue parameter and associated value.
-- [typealias AudioQueueParameterID](audioqueueparameterid.md)
+- [typealias AudioQueueParameterID](./audioqueueparameterid.md)
   A `UInt32` value that uniquely identifies an audio queue parameter.
-- [typealias AudioQueueParameterValue](audioqueueparametervalue.md)
+- [typealias AudioQueueParameterValue](./audioqueueparametervalue.md)
   A `Float32` value for an audio queue parameter.
-- [typealias AudioQueueProcessingTapCallback](audioqueueprocessingtapcallback.md)
-- [typealias AudioQueueProcessingTapRef](audioqueueprocessingtapref.md)
+- [typealias AudioQueueProcessingTapCallback](./audioqueueprocessingtapcallback.md)
+- [typealias AudioQueueProcessingTapRef](./audioqueueprocessingtapref.md)
 
 
 ---

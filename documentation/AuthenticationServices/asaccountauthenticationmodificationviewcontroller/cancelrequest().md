@@ -1,7 +1,8 @@
 # cancelRequest()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a request that the user initiated.
 
@@ -17,15 +18,20 @@ Cancels a request that the user initiated.
 func cancelRequest()
 ```
 
+```objc
+- (void) cancelRequest;
+```
+
 ## Mentions
 
-- [Upgrading Account Security With an Account Authentication Modification Extension](upgrading-account-security-with-an-account-authentication-modification-extension.md)
+- [Upgrading Account Security With an Account Authentication Modification Extension](../upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
 ## See Also
 
-- [protocol ASAccountAuthenticationModificationControllerDelegate](asaccountauthenticationmodificationcontrollerdelegate.md)
+### Handling Modification Requests
+- [protocol ASAccountAuthenticationModificationControllerDelegate](../asaccountauthenticationmodificationcontrollerdelegate.md)
   An interface you implement for receiving success and failure statuses about modification of an account’s authentication properties.
-- [protocol ASAccountAuthenticationModificationControllerPresentationContextProviding](asaccountauthenticationmodificationcontrollerpresentationcontextproviding.md)
+- [protocol ASAccountAuthenticationModificationControllerPresentationContextProviding](../asaccountauthenticationmodificationcontrollerpresentationcontextproviding.md)
   An interface you implement to coordinate presentation of the user interface when modifying an account’s authentication properties.
 
 

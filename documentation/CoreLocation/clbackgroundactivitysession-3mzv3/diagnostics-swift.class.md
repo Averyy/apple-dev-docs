@@ -1,7 +1,8 @@
 # CLBackgroundActivitySession.Diagnostics
 
 **Framework**: Core Location  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -19,12 +20,12 @@ final class Diagnostics
 ## Topics
 
 ### Structures
-- [CLBackgroundActivitySession.Diagnostics.Iterator](clbackgroundactivitysession-3mzv3/diagnostics-swift.class/iterator.md)
+- [CLBackgroundActivitySession.Diagnostics.Iterator](./diagnostics-swift.class/iterator.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # AU_SESSION_FLAG_IS_REMOTE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 AU_SESSION_FLAG_IS_REMOTE = 0x1000
 ```
 

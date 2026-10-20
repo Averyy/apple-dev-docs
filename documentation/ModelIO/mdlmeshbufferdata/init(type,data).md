@@ -1,7 +1,8 @@
 # init(type:data:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a buffer containing the specified data.
 
@@ -19,18 +20,23 @@ Initializes a buffer containing the specified data.
 init(type: MDLMeshBufferType, data: Data?)
 ```
 
+```objc
+- (instancetype) initWithType:(MDLMeshBufferType) type data:(NSData *) data;
+```
+
 #### Return Value
 
 A new memory buffer for mesh data.
 
 ## Parameters
 
-- `type`: [`MDLMeshBufferType.vertex`](mdlmeshbuffertype/vertex.md) to create a buffer for a mesh’s vertex attribute data, or [`MDLMeshBufferType.index`](mdlmeshbuffertype/index.md) to create a buffer for a submesh’s index data.
+- `type`: [`MDLMeshBufferType.vertex`](../mdlmeshbuffertype/vertex.md) to create a buffer for a mesh’s vertex attribute data, or [`MDLMeshBufferType.index`](../mdlmeshbuffertype/index.md) to create a buffer for a submesh’s index data.
 - `data`: The initial data to copy into the buffer.
 
 ## See Also
 
-- [init(type: MDLMeshBufferType, length: Int)](mdlmeshbufferdata/init(type:length:).md)
+### Creating a Buffer
+- [init(type: MDLMeshBufferType, length: Int)](./init%28type,length%29.md)
   Initializes a buffer of the specified length.
 
 

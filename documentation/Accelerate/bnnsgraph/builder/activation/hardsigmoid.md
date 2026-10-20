@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Activation.hardSigmoid
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Hard sigmoid activation
 

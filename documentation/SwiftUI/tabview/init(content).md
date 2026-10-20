@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -19,9 +20,19 @@ nonisolated
 init(@ContentBuilder content: () -> Content)
 ```
 
+Available when `SelectionValue` is `Int` and `Content` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<C>(@TabContentBuilder<Never> content: () -> C) where SelectionValue == Never, Content == TabContentBuilder<Never>.Content<C>, C : TabContent
+```
+
 ## See Also
 
-- [init(selection:content:)](tabview/init(selection:content:).md)
+### Creating a tab view
+- [init(selection:content:)](./init%28selection,content%29.md)
   Creates a tab view that uses a builder to create and specify selection values for its tabs.
 
 

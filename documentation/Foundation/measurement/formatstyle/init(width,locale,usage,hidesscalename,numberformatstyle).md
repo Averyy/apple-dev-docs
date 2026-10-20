@@ -1,7 +1,8 @@
 # init(width:locale:usage:hidesScaleName:numberFormatStyle:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance using the provided width, locale, usage type, number format, and the option to hide the unit name.
 
@@ -20,6 +21,8 @@ Creates an instance using the provided width, locale, usage type, number format,
 init(width: Measurement<UnitType>.FormatStyle.UnitWidth = .abbreviated, locale: Locale = .autoupdatingCurrent, usage: MeasurementFormatUnitUsage<UnitType> = .general, hidesScaleName: Bool = false, numberFormatStyle: FloatingPointFormatStyle<Double>? = nil)
 ```
 
+Available when `UnitType` is `UnitTemperature`.
+
 ## Parameters
 
 - `width`: The width of the measurement unit.
@@ -30,7 +33,8 @@ init(width: Measurement<UnitType>.FormatStyle.UnitWidth = .abbreviated, locale: 
 
 ## See Also
 
-- [init(width: Measurement<UnitType>.FormatStyle.UnitWidth, locale: Locale, usage: MeasurementFormatUnitUsage<UnitType>, numberFormatStyle: FloatingPointFormatStyle<Double>?)](measurement/formatstyle/init(width:locale:usage:numberformatstyle:).md)
+### Creating a measurement format style
+- [init(width: Measurement<UnitType>.FormatStyle.UnitWidth, locale: Locale, usage: MeasurementFormatUnitUsage<UnitType>, numberFormatStyle: FloatingPointFormatStyle<Double>?)](./init%28width,locale,usage,numberformatstyle%29.md)
   Creates an instance using the provided width, locale, usage type, and number format.
 
 

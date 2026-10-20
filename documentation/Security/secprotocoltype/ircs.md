@@ -1,7 +1,8 @@
 # SecProtocolType.IRCS
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates IRC over TLS/SSL.
 
@@ -13,6 +14,10 @@ Indicates IRC over TLS/SSL.
 
 ```swift
 case IRCS
+```
+
+```c
+kSecProtocolTypeIRCS
 ```
 
 

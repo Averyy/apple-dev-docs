@@ -1,15 +1,16 @@
 # kCAF_InstrumentChunkID
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,23 +18,28 @@
 var kCAF_InstrumentChunkID: UInt32 { get }
 ```
 
+```c
+kCAF_InstrumentChunkID
+```
+
 ## See Also
 
-- [var kCAF_AudioDataChunkID: UInt32](kcaf_audiodatachunkid.md)
-- [var kCAF_ChannelLayoutChunkID: UInt32](kcaf_channellayoutchunkid.md)
-- [var kCAF_EditCommentsChunkID: UInt32](kcaf_editcommentschunkid.md)
-- [var kCAF_FillerChunkID: UInt32](kcaf_fillerchunkid.md)
-- [var kCAF_FormatListID: UInt32](kcaf_formatlistid.md)
-- [var kCAF_InfoStringsChunkID: UInt32](kcaf_infostringschunkid.md)
-- [var kCAF_MIDIChunkID: UInt32](kcaf_midichunkid.md)
-- [var kCAF_MagicCookieID: UInt32](kcaf_magiccookieid.md)
-- [var kCAF_MarkerChunkID: UInt32](kcaf_markerchunkid.md)
-- [var kCAF_OverviewChunkID: UInt32](kcaf_overviewchunkid.md)
-- [var kCAF_PacketTableChunkID: UInt32](kcaf_packettablechunkid.md)
-- [var kCAF_PeakChunkID: UInt32](kcaf_peakchunkid.md)
-- [var kCAF_RegionChunkID: UInt32](kcaf_regionchunkid.md)
-- [var kCAF_StreamDescriptionChunkID: UInt32](kcaf_streamdescriptionchunkid.md)
-- [var kCAF_StringsChunkID: UInt32](kcaf_stringschunkid.md)
+### Constants
+- [var kCAF_AudioDataChunkID: UInt32](./kcaf_audiodatachunkid.md)
+- [var kCAF_ChannelLayoutChunkID: UInt32](./kcaf_channellayoutchunkid.md)
+- [var kCAF_EditCommentsChunkID: UInt32](./kcaf_editcommentschunkid.md)
+- [var kCAF_FillerChunkID: UInt32](./kcaf_fillerchunkid.md)
+- [var kCAF_FormatListID: UInt32](./kcaf_formatlistid.md)
+- [var kCAF_InfoStringsChunkID: UInt32](./kcaf_infostringschunkid.md)
+- [var kCAF_MIDIChunkID: UInt32](./kcaf_midichunkid.md)
+- [var kCAF_MagicCookieID: UInt32](./kcaf_magiccookieid.md)
+- [var kCAF_MarkerChunkID: UInt32](./kcaf_markerchunkid.md)
+- [var kCAF_OverviewChunkID: UInt32](./kcaf_overviewchunkid.md)
+- [var kCAF_PacketTableChunkID: UInt32](./kcaf_packettablechunkid.md)
+- [var kCAF_PeakChunkID: UInt32](./kcaf_peakchunkid.md)
+- [var kCAF_RegionChunkID: UInt32](./kcaf_regionchunkid.md)
+- [var kCAF_StreamDescriptionChunkID: UInt32](./kcaf_streamdescriptionchunkid.md)
+- [var kCAF_StringsChunkID: UInt32](./kcaf_stringschunkid.md)
 
 
 ---

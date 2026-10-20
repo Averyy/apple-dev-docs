@@ -1,7 +1,8 @@
 # VZLinuxRosettaAvailability.notInstalled
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Rosetta isn’t installed.
 
@@ -14,11 +15,16 @@ Rosetta isn’t installed.
 case notInstalled
 ```
 
+```c
+VZLinuxRosettaAvailabilityNotInstalled
+```
+
 ## See Also
 
-- [VZLinuxRosettaAvailability.notSupported](vzlinuxrosettaavailability/notsupported.md)
+### Rosetta availability states
+- [VZLinuxRosettaAvailability.notSupported](./notsupported.md)
   The current hardware or software configuration doesn’t support Rosetta.
-- [VZLinuxRosettaAvailability.installed](vzlinuxrosettaavailability/installed.md)
+- [VZLinuxRosettaAvailability.installed](./installed.md)
   Rosetta is available on the host system.
 
 

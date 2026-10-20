@@ -1,7 +1,8 @@
 # CTCellularPlanCapability
 
 **Framework**: Core Telephony  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of cellular plan available for an eSIM.
 
@@ -17,33 +18,38 @@ The type of cellular plan available for an eSIM.
 enum CTCellularPlanCapability
 ```
 
+```c
+enum CTCellularPlanCapability : NSInteger;
+```
+
 ## Topics
 
 ### Defining cellular data plans
-- [init?(rawValue: Int)](ctcellularplancapability/init(rawvalue:).md)
+- [init?(rawValue: Int)](./ctcellularplancapability/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [CTCellularPlanCapability.dataAndVoice](ctcellularplancapability/dataandvoice.md)
+- [CTCellularPlanCapability.dataAndVoice](./ctcellularplancapability/dataandvoice.md)
   The cellular plan is available for data and voice.
-- [CTCellularPlanCapability.dataOnly](ctcellularplancapability/dataonly.md)
+- [CTCellularPlanCapability.dataOnly](./ctcellularplancapability/dataonly.md)
   The cellular plan is available for data only.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CTCellularPlanProvisioning](ctcellularplanprovisioning.md)
+### eSIM
+- [class CTCellularPlanProvisioning](./ctcellularplanprovisioning.md)
   An object you use to download and install a carrier eSIM.
-- [class CTCellularPlanProvisioningRequest](ctcellularplanprovisioningrequest.md)
+- [class CTCellularPlanProvisioningRequest](./ctcellularplanprovisioningrequest.md)
   A request specifying an eSIM to download and install.
-- [class CTCellularPlanProperties](ctcellularplanproperties.md)
+- [class CTCellularPlanProperties](./ctcellularplanproperties.md)
   An object you use for an eSIM.
 
 

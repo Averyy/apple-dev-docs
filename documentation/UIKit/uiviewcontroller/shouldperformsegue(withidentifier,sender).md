@@ -1,7 +1,8 @@
 # shouldPerformSegue(withIdentifier:sender:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the segue with the specified identifier should be performed.
 
@@ -9,8 +10,10 @@ Determines whether the segue with the specified identifier should be performed.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- tvOS
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Loading Interface Builder products will not be supported in a future version of visionOS.
 
 ## Declaration
 
@@ -18,13 +21,17 @@ Determines whether the segue with the specified identifier should be performed.
 func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool
 ```
 
+```objc
+- (BOOL) shouldPerformSegueWithIdentifier:(NSString *) identifier sender:(id) sender;
+```
+
 ## Mentions
 
-- [Customizing the behavior of segue-based presentations](customizing-the-behavior-of-segue-based-presentations.md)
+- [Customizing the behavior of segue-based presentations](../customizing-the-behavior-of-segue-based-presentations.md)
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the segue should be performed or [`false`](https://developer.apple.com/documentation/swift/false) if it should be ignored.
+[`true`](../../Swift/true.md) if the segue should be performed or [`false`](../../Swift/false.md) if it should be ignored.
 
 #### Discussion
 
@@ -37,17 +44,18 @@ Subclasses can override this method and use it to perform segues conditionally b
 
 ## See Also
 
-- [func prepare(for: UIStoryboardSegue, sender: Any?)](uiviewcontroller/prepare(for:sender:).md)
+### Performing segues
+- [func prepare(for: UIStoryboardSegue, sender: Any?)](./prepare%28for,sender%29.md)
   Notifies the view controller that a segue is about to be performed.
-- [func performSegue(withIdentifier: String, sender: Any?)](uiviewcontroller/performsegue(withidentifier:sender:).md)
+- [func performSegue(withIdentifier: String, sender: Any?)](./performsegue%28withidentifier,sender%29.md)
   Initiates the segue with the specified identifier from the current view controller’s storyboard file.
-- [func allowedChildrenForUnwinding(from: UIStoryboardUnwindSegueSource) -> [UIViewController]](uiviewcontroller/allowedchildrenforunwinding(from:).md)
+- [func allowedChildrenForUnwinding(from: UIStoryboardUnwindSegueSource) -> [UIViewController]](./allowedchildrenforunwinding%28from%29.md)
   Returns an array of child view controllers to search for an unwind segue destination.
-- [func childContaining(UIStoryboardUnwindSegueSource) -> UIViewController?](uiviewcontroller/childcontaining(_:).md)
+- [func childContaining(UIStoryboardUnwindSegueSource) -> UIViewController?](./childcontaining%28_%29.md)
   Returns the child view controller that contains the source of the unwind segue.
-- [func canPerformUnwindSegueAction(Selector, from: UIViewController, sender: Any?) -> Bool](uiviewcontroller/canperformunwindsegueaction(_:from:sender:).md)
+- [func canPerformUnwindSegueAction(Selector, from: UIViewController, sender: Any?) -> Bool](./canperformunwindsegueaction%28_,from,sender%29.md)
   Called on a view controller to determine whether it responds to an unwind action.
-- [func unwind(for: UIStoryboardSegue, towards: UIViewController)](uiviewcontroller/unwind(for:towards:).md)
+- [func unwind(for: UIStoryboardSegue, towards: UIViewController)](./unwind%28for,towards%29.md)
   Called when an unwind segue transitions to a new view controller.
 
 

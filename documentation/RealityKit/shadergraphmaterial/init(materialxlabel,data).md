@@ -1,7 +1,8 @@
 # init(materialXLabel:data:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads a ShaderGraphMaterial from MaterialX data.
 

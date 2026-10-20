@@ -1,7 +1,8 @@
 # hideText
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option specifying that views should hide their text.
 
@@ -15,15 +16,20 @@ An option specifying that views should hide their text.
 class var hideText: NSUserInterfaceCompressionOptions { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUserInterfaceCompressionOptions * hideTextOption;
+```
+
 ## See Also
 
-- [class var hideImages: NSUserInterfaceCompressionOptions](nsuserinterfacecompressionoptions/hideimages.md)
+### Creating standard options
+- [class var hideImages: NSUserInterfaceCompressionOptions](./hideimages.md)
   An option specifying that views should hide their images.
-- [class var reduceMetrics: NSUserInterfaceCompressionOptions](nsuserinterfacecompressionoptions/reducemetrics.md)
+- [class var reduceMetrics: NSUserInterfaceCompressionOptions](./reducemetrics.md)
   An option specifying that views should reduce their internal metrics.
-- [class var breakEqualWidths: NSUserInterfaceCompressionOptions](nsuserinterfacecompressionoptions/breakequalwidths.md)
+- [class var breakEqualWidths: NSUserInterfaceCompressionOptions](./breakequalwidths.md)
   An option specifying that views should no longer maintain equal width constraints.
-- [class var standardOptions: NSUserInterfaceCompressionOptions](nsuserinterfacecompressionoptions/standardoptions.md)
+- [class var standardOptions: NSUserInterfaceCompressionOptions](./standardoptions.md)
   An option that represents the union of all standard compression options.
 
 

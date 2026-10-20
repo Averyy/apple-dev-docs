@@ -1,12 +1,13 @@
 # colorDidChangeNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Posted when the color of the `NSColorPanel` is set, as when [`NSColorPanel`](nscolorpanel.md) is invoked.
+Posted when the color of the `NSColorPanel` is set, as when [`NSColorPanel`](../nscolorpanel.md) is invoked.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ Posted when the color of the `NSColorPanel` is set, as when [`NSColorPanel`](nsc
 class let colorDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName NSColorPanelColorDidChangeNotification;
+```
+
 #### Discussion
 
 The notification object is the notifying `NSColorPanel`. This notification does not contain a `userInfo` dictionary.
 
-To observe this notification using Swift concurrency, use [`NSColorPanel.ColorDidChangeMessage`](nscolorpanel/colordidchangemessage.md).
+To observe this notification using Swift concurrency, use [`NSColorPanel.ColorDidChangeMessage`](./colordidchangemessage.md).
 
 ## See Also
 
-- [protocol NSColorChanging](nscolorchanging.md)
+### Responding to a color change
+- [protocol NSColorChanging](../nscolorchanging.md)
 
 
 ---

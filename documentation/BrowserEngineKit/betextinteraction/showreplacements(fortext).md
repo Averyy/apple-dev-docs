@@ -1,7 +1,8 @@
 # showReplacements(forText:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays inline text replacements for the current selection.
 
@@ -17,13 +18,18 @@ Displays inline text replacements for the current selection.
 func showReplacements(forText text: String)
 ```
 
+```objc
+- (void) showReplacementsForText:(NSString *) text;
+```
+
 #### Discussion
 
-Call this method to present system UI for suggesting text replacements, for example, when your browser text view receives [`promptForReplace(_:)`](berespondereditactions/promptforreplace(_:).md).
+Call this method to present system UI for suggesting text replacements, for example, when your browser text view receives [`promptForReplace(_:)`](../berespondereditactions/promptforreplace%28_%29.md).
 
 ## See Also
 
-- [func addShortcut(forText: String, from: CGRect)](betextinteraction/addshortcut(fortext:from:).md)
+### Text replacements
+- [func addShortcut(forText: String, from: CGRect)](./addshortcut%28fortext,from%29.md)
   Presents UI for a person to add a text-replacement shortcut to the keyboard dictionary.
 
 

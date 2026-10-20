@@ -1,18 +1,19 @@
 # MIDITransform
 
 **Framework**: Core MIDI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The transformation of a single type of MIDI event.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,32 +21,37 @@ The transformation of a single type of MIDI event.
 struct MIDITransform
 ```
 
+```c
+struct MIDITransform;
+```
+
 ## Topics
 
 ### Configuring a Transform
-- [var param: Int16](miditransform/param.md)
+- [var param: Int16](./miditransform/param.md)
   An argument to the transformation method (see description of MIDITransformType).
-- [var transform: MIDITransformType](miditransform/transform.md)
+- [var transform: MIDITransformType](./miditransform/transform.md)
   The type of transformation to apply to the event values.
 ### Initializers
-- [init()](miditransform/init.md)
-- [init(transform: MIDITransformType, param: Int16)](miditransform/init(transform:param:).md)
+- [init()](./miditransform/init%28%29.md)
+- [init(transform: MIDITransformType, param: Int16)](./miditransform/init%28transform,param%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct MIDIValueMap](midivaluemap.md)
+### Transforming Values
+- [struct MIDIValueMap](./midivaluemap.md)
   A custom lookup table to transform MIDI 7-bit values, as contained in note numbers, velocities, control values, and so on.
-- [struct MIDIControlTransform](midicontroltransform.md)
+- [struct MIDIControlTransform](./midicontroltransform.md)
   A structure that describes the transformation of MIDI control change events.
-- [enum MIDITransformType](miditransformtype.md)
+- [enum MIDITransformType](./miditransformtype.md)
   Values that specify the type of MIDI transformation.
-- [enum MIDITransformControlType](miditransformcontroltype.md)
+- [enum MIDITransformControlType](./miditransformcontroltype.md)
   A set of values that indicate how to interpret control numbers.
 
 

@@ -1,7 +1,8 @@
 # calculate(completionHandler:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Begins calculating the requested route information asynchronously.
 
@@ -17,14 +18,22 @@ Begins calculating the requested route information asynchronously.
 ## Declaration
 
 ```swift
+func calculate(completionHandler: @escaping @Sendable (MKDirections.Response?, (any Error)?) -> Void)
+```
+
+```swift
 func calculate() async throws -> MKDirections.Response
+```
+
+```objc
+- (void) calculateDirectionsWithCompletionHandler:(MKDirectionsHandler) completionHandler;
 ```
 
 #### Discussion
 
 This method initiates the request for directions and calls your completion handler block with the results. The method executes your completion handler on your app’s main thread. The implementation of your handler needs to check for errors and then incorporate the response data as appropriate.
 
-If you call this method while a previous request is in process, this method calls your completion handler with an error. You can determine whether a request is in process by checking the value of the [`isCalculating`](mkdirections/iscalculating.md) property. You can also cancel a request as necessary.
+If you call this method while a previous request is in process, this method calls your completion handler with an error. You can determine whether a request is in process by checking the value of the [`isCalculating`](./iscalculating.md) property. You can also cancel a request as necessary.
 
 ## Parameters
 
@@ -32,13 +41,15 @@ If you call this method while a previous request is in process, this method call
 
 ## See Also
 
-- [var isCalculating: Bool](mkdirections/iscalculating.md)
+### Related Documentation
+- [var isCalculating: Bool](./iscalculating.md)
   A Boolean value that indicates whether a request is in process.
-- [func cancel()](mkdirections/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels a pending request.
-- [MKDirections.DirectionsHandler](mkdirections/directionshandler.md)
+### Getting the directions
+- [MKDirections.DirectionsHandler](./directionshandler.md)
   The block to use for processing the requested route information.
-- [MKDirections.Response](mkdirections/response.md)
+- [MKDirections.Response](./response.md)
   The route information that Apple servers return in response to your request for directions.
 
 

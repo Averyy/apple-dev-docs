@@ -1,7 +1,8 @@
 # resultHandler
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler for the result of the current search. When observing RotorNavigation events
 
@@ -10,7 +11,7 @@ The handler for the result of the current search. When observing RotorNavigation
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

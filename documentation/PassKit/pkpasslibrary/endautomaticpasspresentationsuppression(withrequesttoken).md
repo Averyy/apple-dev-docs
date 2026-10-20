@@ -1,7 +1,8 @@
 # endAutomaticPassPresentationSuppression(withRequestToken:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Reenables the automatic display of the Apple Pay interface.
 
@@ -19,25 +20,30 @@ Reenables the automatic display of the Apple Pay interface.
 class func endAutomaticPassPresentationSuppression(withRequestToken requestToken: PKSuppressionRequestToken)
 ```
 
+```objc
++ (void) endAutomaticPassPresentationSuppressionWithRequestToken:(PKSuppressionRequestToken) requestToken;
+```
+
 #### Discussion
 
 This method reenables the automatic presentation of Apple Pay passes when the device detects a compatible reader.
 
 ## Parameters
 
-- `requestToken`: The token you receive when you call the [`PKPassLibrary`](pkpasslibrary.md) method. If you pass in an invalid request token, the system ignores the end request.
+- `requestToken`: The token you receive when you call the [`PKPassLibrary`](../pkpasslibrary.md) method. If you pass in an invalid request token, the system ignores the end request.
 
 ## See Also
 
-- [func present(PKSecureElementPass)](pkpasslibrary/present(_:)-9467u.md)
+### Presenting and suppressing passes
+- [func present(PKSecureElementPass)](./present%28_%29-9467u.md)
   Presents a Secure Element pass.
-- [class func isSuppressingAutomaticPassPresentation() -> Bool](pkpasslibrary/issuppressingautomaticpasspresentation.md)
+- [class func isSuppressingAutomaticPassPresentation() -> Bool](./issuppressingautomaticpasspresentation%28%29.md)
   Returns a Boolean value that indicates whether the system suppresses the automatic presentation of Apple Pay passes.
-- [class func requestAutomaticPassPresentationSuppression(responseHandler: (PKAutomaticPassPresentationSuppressionResult) -> Void) -> PKSuppressionRequestToken](pkpasslibrary/requestautomaticpasspresentationsuppression(responsehandler:).md)
+- [class func requestAutomaticPassPresentationSuppression(responseHandler: (PKAutomaticPassPresentationSuppressionResult) -> Void) -> PKSuppressionRequestToken](./requestautomaticpasspresentationsuppression%28responsehandler%29.md)
   Prevents the device from automatically displaying the Apple Pay interface.
-- [enum PKAutomaticPassPresentationSuppressionResult](pkautomaticpasspresentationsuppressionresult.md)
+- [enum PKAutomaticPassPresentationSuppressionResult](../pkautomaticpasspresentationsuppressionresult.md)
   The result of an attempt to suppress automatic pass presentation.
-- [typealias PKSuppressionRequestToken](pksuppressionrequesttoken.md)
+- [typealias PKSuppressionRequestToken](../pksuppressionrequesttoken.md)
   A token that represents a request to suppress the automatic presentation of payment passes.
 
 

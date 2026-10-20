@@ -1,7 +1,8 @@
 # currentDate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current date of playback.
 
@@ -20,13 +21,18 @@ The current date of playback.
 var currentDate: Date? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSDate * currentDate;
+```
+
 #### Discussion
 
 This value is `nil` if playback doesn’t map to a date.
 
 ## See Also
 
-- [var currentTime: CMTime](avplayeritemintegratedtimeline/currenttime.md)
+### Inspecting the time and date
+- [var currentTime: CMTime](./currenttime.md)
   The current time on the integrated timeline.
 
 

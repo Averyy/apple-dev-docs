@@ -1,7 +1,8 @@
 # ImageCaptureCore
 
 **Framework**: ImageCaptureCore  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Browse for media devices and control them programmatically from your app.
 
@@ -21,65 +22,65 @@ Using ImageCaptureCore, your app can:
 - Take photos directly on a connected camera using tethered capture
 - Perform overview scans and scans on a connected scanner
 
-![Diagram showing a macOS device connected by cables to a camera and a scanner, and an iPadOS device connected by cable to a camera.](/images/com.apple.imagecapturecore/media-3501083@2x.png)
+![Diagram showing a macOS device connected by cables to a camera and a scanner, and an iPadOS device connected by cable to a camera.](https://developer.apple.com/tutorials/images/com.apple.imagecapturecore/media-3501083@2x.png)
 
-##### Configuring Tethered Capture and Photo Import
+##### Configuring tethered capture and photo import
 
-To import pictures and tether from a macOS app, you first need to enable the Hardened Runtime capability in Xcode, and then add the [`Photos Library Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.personal-information.photos-library).
+To import pictures and tether from a macOS app, you first need to enable the Hardened Runtime capability in Xcode, and then add the [`Photos Library Entitlement`](../BundleResources/entitlements/com.apple.security.personal-information.photos-library.md).
 
-Before you can tether from an iOS app, you need to tell the user why the app is requesting access to an external camera. Add the [`NSCameraUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscamerausagedescription) key to your `Info.plist` file with a description of your intended use.
+Before you can tether from an iOS app, you need to tell the user why the app is requesting access to an external camera. Add the [`NSCameraUsageDescription`](../BundleResources/information-property-list/nscamerausagedescription.md) key to your `Info.plist` file with a description of your intended use.
 
-> ❗ **Important**:  In macOS 14 and later, use the [`com.apple.security.device.usb`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.device.usb) entitlement key to allow your sandboxed app to interact with USB devices.
+> ❗ **Important**:  In macOS 14 and later, use the [`com.apple.security.device.usb`](../BundleResources/entitlements/com.apple.security.device.usb.md) entitlement key to allow your sandboxed app to interact with USB devices.
 
 ## Topics
 
 ### Essentials
-- [class ICDeviceBrowser](icdevicebrowser.md)
+- [class ICDeviceBrowser](./icdevicebrowser.md)
   An object for finding digital cameras and scanners.
-- [Photos Library Entitlement](../bundleresources/entitlements/com.apple.security.personal-information.photos-library.md)
+- [Photos Library Entitlement](../BundleResources/entitlements/com.apple.security.personal-information.photos-library.md)
   A Boolean value that indicates whether the app has read-write access to the user’s Photos library.
-- [NSCameraUsageDescription](../bundleresources/information-property-list/nscamerausagedescription.md)
+- [NSCameraUsageDescription](../BundleResources/information-property-list/nscamerausagedescription.md)
   A message that tells people why the app is requesting access to the device’s camera.
 ### Cameras
-- [class ICCameraDevice](iccameradevice.md)
+- [class ICCameraDevice](./iccameradevice.md)
   An object that represents a camera.
-- [protocol ICCameraDeviceDelegate](iccameradevicedelegate.md)
+- [protocol ICCameraDeviceDelegate](./iccameradevicedelegate.md)
   Methods for detecting cameras, getting metadata and thumbnails, handling access and capability changes, and performing other actions on connected cameras.
-- [class ICCameraItem](iccameraitem.md)
+- [class ICCameraItem](./iccameraitem.md)
   An abstract class that represents a camera item.
-- [class ICCameraFile](iccamerafile.md)
+- [class ICCameraFile](./iccamerafile.md)
   An object that represents a file on a camera.
-- [class ICCameraFolder](iccamerafolder.md)
+- [class ICCameraFolder](./iccamerafolder.md)
   An object that represents a folder on a camera.
 ### Scanners
-- [class ICScannerDevice](icscannerdevice.md)
+- [class ICScannerDevice](./icscannerdevice.md)
   An object that represents a scanner.
-- [protocol ICScannerDeviceDelegate](icscannerdevicedelegate.md)
+- [protocol ICScannerDeviceDelegate](./icscannerdevicedelegate.md)
   Methods for determining availability, selecting a functional unit, and performing scans on connected scanners.
-- [Scanner Configuration](scanner-configuration.md)
+- [Scanner Configuration](./scanner-configuration.md)
   Examine a scanner’s functional units and features.
 ### Errors
-- [struct ICReturn](icreturn.md)
-- [struct ICLegacyReturn](iclegacyreturn.md)
-- [struct ICReturnConnectionError](icreturnconnectionerror.md)
+- [struct ICReturn](./icreturn.md)
+- [struct ICLegacyReturn](./iclegacyreturn.md)
+- [struct ICReturnConnectionError](./icreturnconnectionerror.md)
   A connection error returned from ImageCaptureCore.
-- [struct ICReturnDownloadError](icreturndownloaderror.md)
+- [struct ICReturnDownloadError](./icreturndownloaderror.md)
   A download error returned from ImageCaptureCore.
-- [struct ICReturnMetadataError](icreturnmetadataerror.md)
+- [struct ICReturnMetadataError](./icreturnmetadataerror.md)
   A metadata error returned from ImageCaptureCore.
-- [struct ICReturnObjectError](icreturnobjecterror.md)
+- [struct ICReturnObjectError](./icreturnobjecterror.md)
   An object error returned from ImageCaptureCore.
-- [struct ICReturnPTPDeviceError](icreturnptpdeviceerror.md)
+- [struct ICReturnPTPDeviceError](./icreturnptpdeviceerror.md)
   A PTP device error returned from ImageCaptureCore.
-- [struct ICReturnThumbnailError](icreturnthumbnailerror.md)
+- [struct ICReturnThumbnailError](./icreturnthumbnailerror.md)
   A thumbnail error returned from ImageCaptureCore.
 ### Legacy Symbols
-- [let ICRunLoopMode: String](icrunloopmode.md)
+- [let ICRunLoopMode: String](./icrunloopmode.md)
 ### Articles
-- [ImageCaptureCore Constants](imagecapturecore-constants.md)
-- [ImageCaptureCore Data Types](imagecapturecore-data-types.md)
-- [ImageCaptureCore Enumerations](imagecapturecore-enumerations.md)
-- [ImageCaptureCore Macros](imagecapturecore-macros.md)
+- [ImageCaptureCore Constants](./imagecapturecore-constants.md)
+- [ImageCaptureCore Data Types](./imagecapturecore-data-types.md)
+- [ImageCaptureCore Enumerations](./imagecapturecore-enumerations.md)
+- [ImageCaptureCore Macros](./imagecapturecore-macros.md)
 
 
 ---

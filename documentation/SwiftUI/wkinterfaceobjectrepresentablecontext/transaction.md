@@ -1,7 +1,8 @@
 # transaction
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current transaction.
 
@@ -17,7 +18,8 @@ The current transaction.
 
 ## See Also
 
-- [let coordinator: Representable.Coordinator](wkinterfaceobjectrepresentablecontext/coordinator.md)
+### Coordinating interactions
+- [let coordinator: Representable.Coordinator](./coordinator.md)
   The view’s associated coordinator.
 
 

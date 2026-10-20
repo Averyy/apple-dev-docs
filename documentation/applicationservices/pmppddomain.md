@@ -1,7 +1,8 @@
 # PMPPDDomain
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Constants that specify the domains for PostScript printer description (PPD) files.
 
@@ -14,15 +15,19 @@ Constants that specify the domains for PostScript printer description (PPD) file
 typealias PMPPDDomain = UInt16
 ```
 
+```c
+typedef UInt16 PMPPDDomain;
+```
+
 ## Topics
 
 ### Constants
-- [var kAllPPDDomains: Int](kallppddomains.md)
-- [var kSystemPPDDomain: Int](ksystemppddomain.md)
-- [var kLocalPPDDomain: Int](klocalppddomain.md)
-- [var kNetworkPPDDomain: Int](knetworkppddomain.md)
-- [var kUserPPDDomain: Int](kuserppddomain.md)
-- [var kCUPSPPDDomain: Int](kcupsppddomain.md)
+- [var kAllPPDDomains: Int](./kallppddomains.md)
+- [var kSystemPPDDomain: Int](./ksystemppddomain.md)
+- [var kLocalPPDDomain: Int](./klocalppddomain.md)
+- [var kNetworkPPDDomain: Int](./knetworkppddomain.md)
+- [var kUserPPDDomain: Int](./kuserppddomain.md)
+- [var kCUPSPPDDomain: Int](./kcupsppddomain.md)
 
 
 ---

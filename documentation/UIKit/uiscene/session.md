@@ -1,7 +1,8 @@
 # session
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session associated with the scene.
 
@@ -18,13 +19,18 @@ The session associated with the scene.
 var session: UISceneSession { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UISceneSession * session;
+```
+
 #### Discussion
 
 UIKit maintains a session object for each scene. The session object contains a unique identifier for the scene and other information about its configuration.
 
 ## See Also
 
-- [class UISceneSession](uiscenesession.md)
+### Getting the scene’s session
+- [class UISceneSession](../uiscenesession.md)
   An object that contains information about one of your app’s scenes.
 
 

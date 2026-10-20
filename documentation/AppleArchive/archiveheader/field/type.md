@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The field type of this field.
 
@@ -11,7 +12,7 @@ The field type of this field.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var type: ArchiveHeader.FieldType { get }
 
 ## See Also
 
-- [var key: ArchiveHeader.FieldKey](archiveheader/field/key.md)
+### Instance Properties
+- [var key: ArchiveHeader.FieldKey](./key.md)
   The field key of this field.
 
 

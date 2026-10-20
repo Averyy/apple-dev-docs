@@ -1,17 +1,24 @@
 # launchPath
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the receiver’s executable.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`executableURL`](./executableurl.md) instead.
 
 ## Declaration
 
 ```swift
 var launchPath: String? { get set }
+```
+
+```objc
+@property (copy, nullable) NSString * launchPath;
 ```
 
 ## Parameters
@@ -20,11 +27,12 @@ var launchPath: String? { get set }
 
 ## See Also
 
-- [class func launchedProcess(launchPath: String, arguments: [String]) -> Process](process/launchedprocess(launchpath:arguments:).md)
+### Deprecated
+- [class func launchedProcess(launchPath: String, arguments: [String]) -> Process](./launchedprocess%28launchpath,arguments%29.md)
   Creates and launches a task with a specified executable and arguments.
-- [var currentDirectoryPath: String](process/currentdirectorypath.md)
+- [var currentDirectoryPath: String](./currentdirectorypath.md)
   Sets the current directory for the receiver.
-- [func launch()](process/launch.md)
+- [func launch()](./launch%28%29.md)
   Launches the task represented by the receiver.
 
 

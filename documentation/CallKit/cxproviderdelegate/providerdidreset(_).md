@@ -2,6 +2,7 @@
 
 **Framework**: CallKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called when the provider is reset.
@@ -19,13 +20,18 @@ Called when the provider is reset.
 func providerDidReset(_ provider: CXProvider)
 ```
 
+```objc
+- (void) providerDidReset:(CXProvider *) provider;
+```
+
 ## Parameters
 
 - `provider`: The telephony provider.
 
 ## See Also
 
-- [func providerDidBegin(CXProvider)](cxproviderdelegate/providerdidbegin(_:).md)
+### Handling Provider Events
+- [func providerDidBegin(CXProvider)](./providerdidbegin%28_%29.md)
   Called when the provider begins.
 
 

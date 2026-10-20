@@ -1,7 +1,8 @@
 # NEOnDemandRuleAction.ignore
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Do not start the VPN connection, but do not disconnect it if it is currently connected.
 
@@ -19,13 +20,18 @@ Do not start the VPN connection, but do not disconnect it if it is currently con
 case ignore
 ```
 
+```c
+NEOnDemandRuleActionIgnore
+```
+
 ## See Also
 
-- [NEOnDemandRuleAction.connect](neondemandruleaction/connect.md)
+### Rule Actions
+- [NEOnDemandRuleAction.connect](./connect.md)
   Start the VPN connection for every connection attempt.
-- [NEOnDemandRuleAction.disconnect](neondemandruleaction/disconnect.md)
+- [NEOnDemandRuleAction.disconnect](./disconnect.md)
   Do not start the VPN connection, and disconnect the VPN connection if it is not currently disconnected.
-- [NEOnDemandRuleAction.evaluateConnection](neondemandruleaction/evaluateconnection.md)
+- [NEOnDemandRuleAction.evaluateConnection](./evaluateconnection.md)
   Start the VPN after evaluating the destination host being accessed against the rule’s parameters.
 
 

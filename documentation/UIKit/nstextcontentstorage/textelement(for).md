@@ -1,7 +1,8 @@
 # textElement(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the text element corresponding to object’s attributed string.
 
@@ -18,21 +19,26 @@ Returns the text element corresponding to object’s attributed string.
 func textElement(for attributedString: NSAttributedString) -> NSTextElement?
 ```
 
+```objc
+- (NSTextElement *) textElementForAttributedString:(NSAttributedString *) attributedString;
+```
+
 #### Return Value
 
-An [`NSTextElement`](nstextelement.md), or `nil`.
+An [`NSTextElement`](../nstextelement.md), or `nil`.
 
 #### Discussion
 
-Returns `nil` when `attributedString` contains attributes not mappable to [`NSTextElement`](nstextelement.md).
+Returns `nil` when `attributedString` contains attributes not mappable to [`NSTextElement`](../nstextelement.md).
 
 ## Parameters
 
-- `attributedString`: The attributed string to map into an [`NSTextElement`](nstextelement.md).
+- `attributedString`: The attributed string to map into an [`NSTextElement`](../nstextelement.md).
 
 ## See Also
 
-- [func attributedString(for: NSTextElement) -> NSAttributedString?](nstextcontentstorage/attributedstring(for:).md)
+### Managing text elements
+- [func attributedString(for: NSTextElement) -> NSAttributedString?](./attributedstring%28for%29.md)
   Returns a new attributed string for the text element.
 
 

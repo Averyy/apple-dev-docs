@@ -1,14 +1,15 @@
 # GSSD_IAKERB_MECH
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 GSSD_IAKERB_MECH
 ```
 

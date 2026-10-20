@@ -1,7 +1,8 @@
 # rateMetaParameterDefinition
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A meta parameter that dynamically changes the audio’s rate.
 
@@ -19,11 +20,16 @@ A meta parameter that dynamically changes the audio’s rate.
 var rateMetaParameterDefinition: PHASENumberMetaParameterDefinition? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite, nullable) PHASENumberMetaParameterDefinition * rateMetaParameterDefinition;
+```
+
 ## See Also
 
-- [var rate: Double](phasegeneratornodedefinition/rate.md)
+### Controlling Audio Playback
+- [var rate: Double](./rate.md)
   A playback speed for the node’s audio.
-- [var gainMetaParameterDefinition: PHASENumberMetaParameterDefinition?](phasegeneratornodedefinition/gainmetaparameterdefinition.md)
+- [var gainMetaParameterDefinition: PHASENumberMetaParameterDefinition?](./gainmetaparameterdefinition.md)
   A meta parameter that dynamically changes the audio’s loudness.
 
 

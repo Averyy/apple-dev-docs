@@ -1,16 +1,17 @@
 # word0
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@
 var word0: UInt32
 ```
 
+```c
+UInt32 word0;
+```
+
 ## See Also
 
-- [var word1: UInt32](midimessage_128/word1.md)
-- [var word2: UInt32](midimessage_128/word2.md)
-- [var word3: UInt32](midimessage_128/word3.md)
+### Words
+- [var word1: UInt32](./word1.md)
+- [var word2: UInt32](./word2.md)
+- [var word3: UInt32](./word3.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # LATENCY_QOS_TIER_1
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 LATENCY_QOS_TIER_1 = ((0xFF << 16) | 2)
 ```
 

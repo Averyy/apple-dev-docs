@@ -1,7 +1,8 @@
 # errSessionValueNotSet
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The requested session attribute has not been set.
 
@@ -18,6 +19,10 @@ The requested session attribute has not been set.
 
 ```swift
 var errSessionValueNotSet: OSStatus { get }
+```
+
+```c
+errSessionValueNotSet
 ```
 
 

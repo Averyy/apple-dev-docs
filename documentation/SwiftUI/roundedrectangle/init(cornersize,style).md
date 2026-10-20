@@ -1,7 +1,8 @@
 # init(cornerSize:style:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new rounded rectangle shape.
 
@@ -27,7 +28,8 @@ init(cornerSize: CGSize, style: RoundedCornerStyle = .continuous)
 
 ## See Also
 
-- [init(cornerRadius: CGFloat, style: RoundedCornerStyle)](roundedrectangle/init(cornerradius:style:).md)
+### Creating a rounded rectangle
+- [init(cornerRadius: CGFloat, style: RoundedCornerStyle)](./init%28cornerradius,style%29.md)
   Creates a new rounded rectangle shape.
 
 

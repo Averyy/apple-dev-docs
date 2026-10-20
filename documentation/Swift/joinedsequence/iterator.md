@@ -1,7 +1,8 @@
 # JoinedSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator that presents the elements of the sequences traversed by a base iterator, concatenated using a given separator.
 
@@ -21,22 +22,24 @@ An iterator that presents the elements of the sequences traversed by a base iter
 struct Iterator
 ```
 
+Available when `Base` conforms to `Sequence` and `Base.Element` conforms to `Sequence`.
+
 ## Topics
 
 ### Initializers
-- [init<Separator>(base: Base.Iterator, separator: Separator)](joinedsequence/iterator/init(base:separator:).md)
+- [init<Separator>(base: Base.Iterator, separator: Separator)](./iterator/init%28base,separator%29.md)
   Creates an iterator that presents the elements of `base` sequences concatenated using `separator`.
 ### Default Implementations
-- [IteratorProtocol Implementations](joinedsequence/iterator/iteratorprotocol-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Copyable](../copyable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

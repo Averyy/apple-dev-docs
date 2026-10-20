@@ -1,7 +1,8 @@
 # HKUserAnnotatedMedicationQuery
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -17,43 +18,48 @@
 class HKUserAnnotatedMedicationQuery
 ```
 
+```objc
+@interface HKUserAnnotatedMedicationQuery : HKQuery
+```
+
 ## Topics
 
 ### Initializers
-- [init(predicate: NSPredicate?, limit: Int, resultsHandler: (HKUserAnnotatedMedicationQuery, HKUserAnnotatedMedication?, Bool, (any Error)?) -> Void)](hkuserannotatedmedicationquery/init(predicate:limit:resultshandler:).md)
+- [init(predicate: NSPredicate?, limit: Int, resultsHandler: (HKUserAnnotatedMedicationQuery, HKUserAnnotatedMedication?, Bool, (any Error)?) -> Void)](./hkuserannotatedmedicationquery/init%28predicate,limit,resultshandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [HKQuery](hkquery.md)
+- [HKQuery](./hkquery.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKClinicalCoding](hkclinicalcoding.md)
+### Medication queries
+- [class HKClinicalCoding](./hkclinicalcoding.md)
   A clinical coding that represents a medical concept using a standardized coding system.
-- [class HKHealthConceptIdentifier](hkhealthconceptidentifier.md)
+- [class HKHealthConceptIdentifier](./hkhealthconceptidentifier.md)
   A unique identifier for a specific health concept within a domain.
-- [class HKMedicationConcept](hkmedicationconcept.md)
+- [class HKMedicationConcept](./hkmedicationconcept.md)
   An object that describes a specific medication concept.
-- [class HKMedicationDoseEvent](hkmedicationdoseevent.md)
-- [class HKMedicationDoseEventType](hkmedicationdoseeventtype.md)
-- [class HKUserAnnotatedMedication](hkuserannotatedmedication.md)
+- [class HKMedicationDoseEvent](./hkmedicationdoseevent.md)
+- [class HKMedicationDoseEventType](./hkmedicationdoseeventtype.md)
+- [class HKUserAnnotatedMedication](./hkuserannotatedmedication.md)
   A reference to the tracked medication and the details a person can customize.
-- [class HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
-- [struct HKHealthConceptDomain](hkhealthconceptdomain.md)
+- [class HKUserAnnotatedMedicationType](./hkuserannotatedmedicationtype.md)
+- [struct HKHealthConceptDomain](./hkhealthconceptdomain.md)
   A domain that represents a health concept.
-- [struct HKMedicationGeneralForm](hkmedicationgeneralform.md)
+- [struct HKMedicationGeneralForm](./hkmedicationgeneralform.md)
   The manufactured form of a medication.
-- [struct HKUserAnnotatedMedicationQueryDescriptor](hkuserannotatedmedicationquerydescriptor.md)
+- [struct HKUserAnnotatedMedicationQueryDescriptor](./hkuserannotatedmedicationquerydescriptor.md)
 
 
 ---

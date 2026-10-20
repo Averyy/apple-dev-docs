@@ -1,7 +1,8 @@
 # thumbnailMetadata
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Metadata for the uploaded thumbnail.
 
@@ -16,11 +17,12 @@ let thumbnailMetadata: RCSFileTransferMetadata?
 
 ## See Also
 
-- [let transactionID: UUID](rcsservice/fileuploadrequest/metadata/transactionid.md)
+### Accessing upload metadata
+- [let transactionID: UUID](./transactionid.md)
   A transaction identifier for the upload.
-- [let fileMetadata: RCSFileTransferMetadata](rcsservice/fileuploadrequest/metadata/filemetadata.md)
+- [let fileMetadata: RCSFileTransferMetadata](./filemetadata.md)
   Metadata for the uploaded file.
-- [struct RCSFileTransferMetadata](rcsfiletransfermetadata.md)
+- [struct RCSFileTransferMetadata](../../../rcsfiletransfermetadata.md)
   A structure that contains metadata about an RCS file transfer.
 
 

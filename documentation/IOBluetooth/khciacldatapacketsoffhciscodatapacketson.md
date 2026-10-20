@@ -1,10 +1,11 @@
 # kHCIACLDataPacketsOffHCISCODataPacketsOn
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kHCIACLDataPacketsOffHCISCODataPacketsOn: BluetoothHCIGeneralFlowControlStates { get }
 ```
 
+```c
+kHCIACLDataPacketsOffHCISCODataPacketsOn
+```
+
 ## See Also
 
-- [var kHCIACLDataPacketsOnHCISCODataPacketsOff: BluetoothHCIGeneralFlowControlStates](khciacldatapacketsonhciscodatapacketsoff.md)
-- [var kHCIACLDataPacketsOnHCISCODataPacketsOn: BluetoothHCIGeneralFlowControlStates](khciacldatapacketsonhciscodatapacketson.md)
-- [var kHostControllerToHostFlowControlOff: BluetoothHCIGeneralFlowControlStates](khostcontrollertohostflowcontroloff.md)
+### Constants
+- [var kHCIACLDataPacketsOnHCISCODataPacketsOff: BluetoothHCIGeneralFlowControlStates](./khciacldatapacketsonhciscodatapacketsoff.md)
+- [var kHCIACLDataPacketsOnHCISCODataPacketsOn: BluetoothHCIGeneralFlowControlStates](./khciacldatapacketsonhciscodatapacketson.md)
+- [var kHostControllerToHostFlowControlOff: BluetoothHCIGeneralFlowControlStates](./khostcontrollertohostflowcontroloff.md)
 
 
 ---

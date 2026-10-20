@@ -1,21 +1,26 @@
 # OS_LOG_STRING_SECTION
 
 **Framework**: os  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var OS_LOG_STRING_SECTION: String { get }
+```
+
+```c
+#define OS_LOG_STRING_SECTION
 ```
 
 

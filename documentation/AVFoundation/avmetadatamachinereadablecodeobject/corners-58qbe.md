@@ -1,7 +1,8 @@
 # corners
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Swift array of corner points.
 
@@ -21,9 +22,10 @@ var corners: [CGPoint] { get }
 
 ## See Also
 
-- [var descriptor: CIBarcodeDescriptor?](avmetadatamachinereadablecodeobject/descriptor.md)
+### Getting machine-readable code values
+- [var descriptor: CIBarcodeDescriptor?](./descriptor.md)
   A barcode description for use in Core Image.
-- [var stringValue: String?](avmetadatamachinereadablecodeobject/stringvalue.md)
+- [var stringValue: String?](./stringvalue.md)
   Returns the error-corrected data decoded into a human-readable string.
 
 

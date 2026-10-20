@@ -1,19 +1,24 @@
 # UITextGranularity.line
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case line
+```
+
+```c
+UITextGranularityLine
 ```
 
 #### Discussion
@@ -22,11 +27,12 @@ The unit of text is a line.
 
 ## See Also
 
-- [UITextGranularity.character](uitextgranularity/character.md)
-- [UITextGranularity.word](uitextgranularity/word.md)
-- [UITextGranularity.sentence](uitextgranularity/sentence.md)
-- [UITextGranularity.paragraph](uitextgranularity/paragraph.md)
-- [UITextGranularity.document](uitextgranularity/document.md)
+### Constants
+- [UITextGranularity.character](./character.md)
+- [UITextGranularity.word](./word.md)
+- [UITextGranularity.sentence](./sentence.md)
+- [UITextGranularity.paragraph](./paragraph.md)
+- [UITextGranularity.document](./document.md)
 
 
 ---

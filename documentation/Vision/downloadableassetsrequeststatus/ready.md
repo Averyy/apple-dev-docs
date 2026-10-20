@@ -1,7 +1,8 @@
 # DownloadableAssetsRequestStatus.ready
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The assets are ready.
 
@@ -21,12 +22,13 @@ case ready
 
 ## See Also
 
-- [DownloadableAssetsRequestStatus.error(_:)](downloadableassetsrequeststatus/error(_:).md)
+### Download status cases
+- [DownloadableAssetsRequestStatus.error(_:)](./error%28_%29.md)
   The asset download failed with an error.
-- [DownloadableAssetsRequestStatus.notReady](downloadableassetsrequeststatus/notready.md)
-  The assets are not ready or the status is unknown. Call [`downloadAssets()`](downloadableassetsrequest/downloadassets().md) or [`downloadAssets(progress:)`](downloadableassetsrequest/downloadassets(progress:).md) to initiate the download.
-- [DownloadableAssetsRequestStatus.downloading](downloadableassetsrequeststatus/downloading.md)
-  The assets are being downloaded. Check progress through the subprogress that was passed to [`downloadAssets(progress:)`](downloadableassetsrequest/downloadassets(progress:).md).
+- [DownloadableAssetsRequestStatus.notReady](./notready.md)
+  The assets are not ready or the status is unknown. Call [`downloadAssets()`](../downloadableassetsrequest/downloadassets%28%29.md) or [`downloadAssets(progress:)`](../downloadableassetsrequest/downloadassets%28progress%29.md) to initiate the download.
+- [DownloadableAssetsRequestStatus.downloading](./downloading.md)
+  The assets are being downloaded. Check progress through the subprogress that was passed to [`downloadAssets(progress:)`](../downloadableassetsrequest/downloadassets%28progress%29.md).
 
 
 ---

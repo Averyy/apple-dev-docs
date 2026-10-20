@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: System Extensions  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared instance of the extension manager.
 
@@ -12,6 +13,10 @@ The shared instance of the extension manager.
 
 ```swift
 class var shared: OSSystemExtensionManager { get }
+```
+
+```objc
+@property (class, readonly) OSSystemExtensionManager * sharedManager;
 ```
 
 

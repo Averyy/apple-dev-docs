@@ -1,7 +1,8 @@
 # CameraRegionView.PixelBufferProcessingContext
 
 **Framework**: VisionKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A context which provides the pixel buffer for a passthrough frame.
 
@@ -17,9 +18,9 @@ struct PixelBufferProcessingContext
 ## Topics
 
 ### Specifying the context properties
-- [let pixelBuffer: CVReadOnlyPixelBuffer](cameraregionview/pixelbufferprocessingcontext/pixelbuffer.md)
+- [let pixelBuffer: CVReadOnlyPixelBuffer](./pixelbufferprocessingcontext/pixelbuffer.md)
   The pixel buffer of the passthrough frame.
-- [let timestamp: TimeInterval](cameraregionview/pixelbufferprocessingcontext/timestamp.md)
+- [let timestamp: TimeInterval](./pixelbufferprocessingcontext/timestamp.md)
   The timestamp of the update.
 
 

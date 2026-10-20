@@ -1,18 +1,19 @@
 # kCTFontTableSbit
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Font table tag for bitmap data.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ Font table tag for bitmap data.
 var kCTFontTableSbit: Int { get }
 ```
 
+```c
+kCTFontTableSbit
+```
+
 ## See Also
 
-- [var kCTFontTableBASE: Int](kctfonttablebase.md)
-- [var kCTFontTableCFF: Int](kctfonttablecff.md)
-- [var kCTFontTableDSIG: Int](kctfonttabledsig.md)
-- [var kCTFontTableEBDT: Int](kctfonttableebdt.md)
-- [var kCTFontTableEBLC: Int](kctfonttableeblc.md)
-- [var kCTFontTableEBSC: Int](kctfonttableebsc.md)
-- [var kCTFontTableGDEF: Int](kctfonttablegdef.md)
-- [var kCTFontTableGPOS: Int](kctfonttablegpos.md)
-- [var kCTFontTableGSUB: Int](kctfonttablegsub.md)
-- [var kCTFontTableJSTF: Int](kctfonttablejstf.md)
-- [var kCTFontTableLTSH: Int](kctfonttableltsh.md)
-- [var kCTFontTableOS2: Int](kctfonttableos2.md)
-- [var kCTFontTablePCLT: Int](kctfonttablepclt.md)
-- [var kCTFontTableVDMX: Int](kctfonttablevdmx.md)
-- [var kCTFontTableVORG: Int](kctfonttablevorg.md)
+### Constants
+- [var kCTFontTableBASE: Int](./kctfonttablebase.md)
+- [var kCTFontTableCFF: Int](./kctfonttablecff.md)
+- [var kCTFontTableDSIG: Int](./kctfonttabledsig.md)
+- [var kCTFontTableEBDT: Int](./kctfonttableebdt.md)
+- [var kCTFontTableEBLC: Int](./kctfonttableeblc.md)
+- [var kCTFontTableEBSC: Int](./kctfonttableebsc.md)
+- [var kCTFontTableGDEF: Int](./kctfonttablegdef.md)
+- [var kCTFontTableGPOS: Int](./kctfonttablegpos.md)
+- [var kCTFontTableGSUB: Int](./kctfonttablegsub.md)
+- [var kCTFontTableJSTF: Int](./kctfonttablejstf.md)
+- [var kCTFontTableLTSH: Int](./kctfonttableltsh.md)
+- [var kCTFontTableOS2: Int](./kctfonttableos2.md)
+- [var kCTFontTablePCLT: Int](./kctfonttablepclt.md)
+- [var kCTFontTableVDMX: Int](./kctfonttablevdmx.md)
+- [var kCTFontTableVORG: Int](./kctfonttablevorg.md)
 
 
 ---

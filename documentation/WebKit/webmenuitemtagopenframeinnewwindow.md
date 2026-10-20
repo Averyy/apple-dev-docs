@@ -1,12 +1,13 @@
 # WebMenuItemTagOpenFrameInNewWindow
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Open the frame in a new window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,37 +15,42 @@ Open the frame in a new window.
 var WebMenuItemTagOpenFrameInNewWindow: Int { get }
 ```
 
+```c
+WebMenuItemTagOpenFrameInNewWindow
+```
+
 ## See Also
 
-- [var WebMenuItemTagOpenLinkInNewWindow: Int](webmenuitemtagopenlinkinnewwindow.md)
+### Constants
+- [var WebMenuItemTagOpenLinkInNewWindow: Int](./webmenuitemtagopenlinkinnewwindow.md)
   Open the link in a new window.
-- [var WebMenuItemTagDownloadLinkToDisk: Int](webmenuitemtagdownloadlinktodisk.md)
+- [var WebMenuItemTagDownloadLinkToDisk: Int](./webmenuitemtagdownloadlinktodisk.md)
   Download the link to a disk.
-- [var WebMenuItemTagCopyLinkToClipboard: Int](webmenuitemtagcopylinktoclipboard.md)
+- [var WebMenuItemTagCopyLinkToClipboard: Int](./webmenuitemtagcopylinktoclipboard.md)
   Copy the link to the clipboard.
-- [var WebMenuItemTagOpenImageInNewWindow: Int](webmenuitemtagopenimageinnewwindow.md)
+- [var WebMenuItemTagOpenImageInNewWindow: Int](./webmenuitemtagopenimageinnewwindow.md)
   Open the image in a new window.
-- [var WebMenuItemTagDownloadImageToDisk: Int](webmenuitemtagdownloadimagetodisk.md)
+- [var WebMenuItemTagDownloadImageToDisk: Int](./webmenuitemtagdownloadimagetodisk.md)
   Download the image to disk.
-- [var WebMenuItemTagCopyImageToClipboard: Int](webmenuitemtagcopyimagetoclipboard.md)
+- [var WebMenuItemTagCopyImageToClipboard: Int](./webmenuitemtagcopyimagetoclipboard.md)
   Copy the image to the clipboard.
-- [var WebMenuItemTagCopy: Int](webmenuitemtagcopy.md)
+- [var WebMenuItemTagCopy: Int](./webmenuitemtagcopy.md)
   Copy the element to the clipboard.
-- [var WebMenuItemTagGoBack: Int](webmenuitemtaggoback.md)
+- [var WebMenuItemTagGoBack: Int](./webmenuitemtaggoback.md)
   Load the previous page.
-- [var WebMenuItemTagGoForward: Int](webmenuitemtaggoforward.md)
+- [var WebMenuItemTagGoForward: Int](./webmenuitemtaggoforward.md)
   Load the next page.
-- [var WebMenuItemTagStop: Int](webmenuitemtagstop.md)
+- [var WebMenuItemTagStop: Int](./webmenuitemtagstop.md)
   Stop loading the current page.
-- [var WebMenuItemTagReload: Int](webmenuitemtagreload.md)
+- [var WebMenuItemTagReload: Int](./webmenuitemtagreload.md)
   Reload the current page.
-- [var WebMenuItemTagCut: Int](webmenuitemtagcut.md)
+- [var WebMenuItemTagCut: Int](./webmenuitemtagcut.md)
   Cut the currently selected content.
-- [var WebMenuItemTagPaste: Int](webmenuitemtagpaste.md)
+- [var WebMenuItemTagPaste: Int](./webmenuitemtagpaste.md)
   Paste the content on the clipboard onto the current selection.
-- [var WebMenuItemTagSpellingGuess: Int](webmenuitemtagspellingguess.md)
+- [var WebMenuItemTagSpellingGuess: Int](./webmenuitemtagspellingguess.md)
   Suggest spellings for the misspelled word.
-- [var WebMenuItemTagNoGuessesFound: Int](webmenuitemtagnoguessesfound.md)
+- [var WebMenuItemTagNoGuessesFound: Int](./webmenuitemtagnoguessesfound.md)
   Indicate whether any suggested spellings for the misspelled word could be found.
 
 

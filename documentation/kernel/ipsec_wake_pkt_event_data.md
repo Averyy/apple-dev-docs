@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ipsec_wake_pkt_event_data {
     ...
 };
@@ -17,7 +17,7 @@ struct ipsec_wake_pkt_event_data {
 ## Topics
 
 ### Instance Properties
-- [wake_uuid](ipsec_wake_pkt_event_data/3580378-wake_uuid.md)
+- [wake_uuid](./ipsec_wake_pkt_event_data/api-3580378-wake_uuid.md)
 
 
 ---

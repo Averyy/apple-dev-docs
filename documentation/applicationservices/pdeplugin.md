@@ -1,7 +1,8 @@
 # PDEPlugIn
 
 **Framework**: Application Services  
-**Kind**: intf
+**Kind**: intf  
+**Role**: Protocol
 
 **Availability**:
 - macOS 13.0+
@@ -12,17 +13,21 @@
 protocol PDEPlugIn
 ```
 
+```objc
+@protocol PDEPlugIn
+```
+
 ## Topics
 
 ### Initializers
-- [init?(bundle: Bundle)](pdeplugin/3930834-init.md)
+- [init?(bundle: Bundle)](./pdeplugin/api-3930834-init.md)
 ### Instance Methods
-- [func pdePanels(forType: String, withHostInfo: any PDEPlugInCallbackProtocol) -> [any PDEPanel]?](pdeplugin/3930835-pdepanels.md)
+- [func pdePanels(forType: String, withHostInfo: any PDEPlugInCallbackProtocol) -> [any PDEPanel]?](./pdeplugin/api-3930835-pdepanels.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # naturalSize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encoded or authored size of the visual portion of the asset.
 
@@ -18,6 +19,10 @@ The encoded or authored size of the visual portion of the asset.
 
 ```swift
 var naturalSize: CGSize { get set }
+```
+
+```objc
+@property (nonatomic) CGSize naturalSize;
 ```
 
 

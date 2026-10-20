@@ -1,6 +1,7 @@
 # Accessing the contact store
 
-**Framework**: Contacts
+**Framework**: Contacts  
+**Role**: Article
 
 Request permission from the person to read and write their contact data.
 
@@ -10,23 +11,23 @@ Your app canʼt access a personʼs Contacts entries until that person grants per
 
 Granting limited access to your app allows them to select specific contacts to share during the request authorization flow. They can expand or restrict the list of contacts your app has access to later in the Settings app. Your app has automatic access to contacts it creates, but it can only fetch, edit, or delete contacts that the person grants you access to. If the person approves full access for the app, you can create, fetch, edit, and delete contact data, including contacts you didnʼt create. If the person denies the request, your app gets no access to the personʼs data.
 
-[`Contacts UI`](https://developer.apple.com/documentation/contactsui) includes new APIs you can adopt for an enhanced privacy experience when someone gives full, partial, or no access to your app. Use [`ContactAccessButton`](https://developer.apple.com/documentation/contactsui/contactaccessbutton) and [`contactAccessPicker(isPresented:completionHandler:)`](https://developer.apple.com/documentation/swiftui/view/contactaccesspicker(ispresented:completionhandler:)) to let the person control which contacts your app can access.
+[Contacts UI](../ContactsUI/ContactsUI.md) includes new APIs you can adopt for an enhanced privacy experience when someone gives full, partial, or no access to your app. Use [`ContactAccessButton`](../ContactsUI/contactaccessbutton.md) and [`contactAccessPicker(isPresented:completionHandler:)`](../SwiftUI/view/contactaccesspicker%28ispresented,completionhandler%29.md) to let the person control which contacts your app can access.
 
-##### Provide a Contacts Usage Description
+##### Provide a contacts usage description
 
-In Xcode, configure the required [`NSContactsUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscontactsusagedescription) setting in the Build Settings tab of your app target. The value for this setting is a string that explains why your app needs access to a person’s contacts. The system displays the string when prompting the person to authorize your app for access. The following image shows an example contacts usage description for an app that requires contacts access to edit your mailing address and profile image:
+In Xcode, configure the required [`NSContactsUsageDescription`](../BundleResources/information-property-list/nscontactsusagedescription.md) setting in the Build Settings tab of your app target. The value for this setting is a string that explains why your app needs access to a person’s contacts. The system displays the string when prompting the person to authorize your app for access. The following image shows an example contacts usage description for an app that requires contacts access to edit your mailing address and profile image:
 
-![A screenshot that shows a contacts usage description for an app that requires contacts access to edit your mailing address and profile image.](/images/com.apple.contacts/media-4422032@2x.png)
+![A screenshot that shows a contacts usage description for an app that requires contacts access to edit your mailing address and profile image.](https://developer.apple.com/tutorials/images/com.apple.contacts/media-4422032@2x.png)
 
 > ❗ **Important**:  Your app crashes if you attempt to access contact data without a contacts usage description.
 
-##### Check Your App Authorization Status
+##### Check your app authorization status
 
-Verify the authorization status of your app before presenting features that require Contacts access in your UI. If your app hasn’t requested access yet, any attempts to use these features automatically prompt the person for Contacts access. If the person previously denied access to your app, attempts to use these features fail with a [`CNError.Code.authorizationDenied`](cnerror/code/authorizationdenied.md) error.
+Verify the authorization status of your app before presenting features that require Contacts access in your UI. If your app hasn’t requested access yet, any attempts to use these features automatically prompt the person for Contacts access. If the person previously denied access to your app, attempts to use these features fail with a [`CNError.Code.authorizationDenied`](./cnerror/code/authorizationdenied.md) error.
 
-The authorization status of your app is [`CNAuthorizationStatus.notDetermined`](cnauthorizationstatus/notdetermined.md) until the person authorizes or denies access. The person can approve or deny your app’s request for authorization, then change the authorization status later in the Settings app.
+The authorization status of your app is [`CNAuthorizationStatus.notDetermined`](./cnauthorizationstatus/notdetermined.md) until the person authorizes or denies access. The person can approve or deny your app’s request for authorization, then change the authorization status later in the Settings app.
 
-To determine your authorization status, call the [`authorizationStatus(for:)`](cncontactstore/authorizationstatus(for:).md) class method of [`CNContactStore`](cncontactstore.md) with an entity type [`CNEntityType.contacts`](cnentitytype/contacts.md):
+To determine your authorization status, call the [`authorizationStatus(for:)`](./cncontactstore/authorizationstatus%28for%29.md) class method of [`CNContactStore`](./cncontactstore.md) with an entity type [`CNEntityType.contacts`](./cnentitytype/contacts.md):
 
 ```swift
 let status = CNContactStore.authorizationStatus(for: .contacts)
@@ -45,9 +46,9 @@ case .limited:
 }
 ```
 
-##### Request Access to Contact Data
+##### Request access to contact data
 
-If the authorization status of your app is [`CNAuthorizationStatus.notDetermined`](cnauthorizationstatus/notdetermined.md), prompt the person for access by initializing the contact store, then calling its [`requestAccess(for:completionHandler:)`](cncontactstore/requestaccess(for:completionhandler:).md) or `requestAccess(for:)` method with an entity type `contacts`:
+If the authorization status of your app is [`CNAuthorizationStatus.notDetermined`](./cnauthorizationstatus/notdetermined.md), prompt the person for access by initializing the contact store, then calling its [`requestAccess(for:completionHandler:)`](./cncontactstore/requestaccess%28for,completionhandler%29.md) or `requestAccess(for:)` method with an entity type `contacts`:
 
 ```swift
 // Initialize the contact store. 
@@ -61,13 +62,13 @@ do {
 }
 ```
 
-If the person grants limited access, your app receives a [`CNAuthorizationStatus.limited`](cnauthorizationstatus/limited.md) authorization status. If the person grants full access, your app receives a [`CNAuthorizationStatus.authorized`](cnauthorizationstatus/authorized.md) status. The system remembers your app’s authorization status so that subsequent calls to [`requestAccess(for:completionHandler:)`](cncontactstore/requestaccess(for:completionhandler:).md) or `requestAccess(for:)` don’t prompt the person again.
+If the person grants limited access, your app receives a [`CNAuthorizationStatus.limited`](./cnauthorizationstatus/limited.md) authorization status. If the person grants full access, your app receives a [`CNAuthorizationStatus.authorized`](./cnauthorizationstatus/authorized.md) status. The system remembers your app’s authorization status so that subsequent calls to [`requestAccess(for:completionHandler:)`](./cncontactstore/requestaccess%28for,completionhandler%29.md) or `requestAccess(for:)` don’t prompt the person again.
 
-> **Note**:  If the person previously granted your app contacts access ([`CNAuthorizationStatus.authorized`](cnauthorizationstatus/authorized.md)) in an earlier OS, your app still has full access in iOS 18 and later.
+> **Note**:  If the person previously granted your app contacts access ([`CNAuthorizationStatus.authorized`](./cnauthorizationstatus/authorized.md)) in an earlier OS, your app still has full access in iOS 18 and later.
 
-##### Use Contacts with Limited Access
+##### Use Contacts with limited access
 
-Your app can use the entire Contacts API when it has limited contact access. Use [`ContactAccessButton`](https://developer.apple.com/documentation/contactsui/contactaccessbutton) to let people choose contacts to share with your app. When someone searches for a contact, the search results present contacts that your app doesn’t have access to. If the person taps the button, the system immediately grants access to the contact without prompting them for authorization, and your app receives a callback that includes the identifier of the newly added contact. To fetch information about this contact, create a fetch request that uses [`predicateForContacts(withIdentifiers:)`](cncontact/predicateforcontacts(withidentifiers:).md), pass the identifier to the predicate, and execute the request:
+Your app can use the entire Contacts API when it has limited contact access. Use [`ContactAccessButton`](../ContactsUI/contactaccessbutton.md) to let people choose contacts to share with your app. When someone searches for a contact, the search results present contacts that your app doesn’t have access to. If the person taps the button, the system immediately grants access to the contact without prompting them for authorization, and your app receives a callback that includes the identifier of the newly added contact. To fetch information about this contact, create a fetch request that uses [`predicateForContacts(withIdentifiers:)`](./cncontact/predicateforcontacts%28withidentifiers%29.md), pass the identifier to the predicate, and execute the request:
 
 ```swift
 @State private var searchQuery = ""
@@ -80,7 +81,7 @@ var body: some View {
 }
 ```
 
-For more information, see [`CNContactStore`](cncontactstore.md).
+For more information, see [`CNContactStore`](./cncontactstore.md).
 
 If your app needs to read or modify contacts, consider presenting the contact access picker to let people update which contacts you can access. The picker has full access to all contacts on the device regardless of your app’s authorization status. When the person dismisses the picker, your app receives a callback that returns the identifiers of additional contacts the person chose. The callback doesn’t provide any information about contacts you can no longer access or those you can already access. The following example creates a fetch request that searches for all approved contacts, executes the request, and then uses the identifiers to highlight newly added contacts in the fetch result in your UI:
 
@@ -113,19 +114,20 @@ private var addButton: some View {
 
 If you don’t adopt the contact access button or contact access picker, the person needs to use the Settings app to control which contacts you can access.
 
-##### Add Entitlement to View or Update Notes
+##### Add entitlement to view or update notes
 
-To read or write the [`note`](cncontact/note.md) field from a contact in iOS 13, macOS 13, or later, add the [`com.apple.developer.contacts.notes`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.contacts.notes) entitlement to your app. The entitlement requires permission from Apple to use, and you can’t publicly distribute your app until you have permission to use it. For more information about adding the entitlement and requesting permission, see  [`com.apple.developer.contacts.notes`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.contacts.notes).
+To read or write the [`note`](./cncontact/note.md) field from a contact in iOS 13, macOS 13, or later, add the [`com.apple.developer.contacts.notes`](../BundleResources/entitlements/com.apple.developer.contacts.notes.md) entitlement to your app. The entitlement requires permission from Apple to use, and you can’t publicly distribute your app until you have permission to use it. For more information about adding the entitlement and requesting permission, see  [`com.apple.developer.contacts.notes`](../BundleResources/entitlements/com.apple.developer.contacts.notes.md).
 
 ## See Also
 
-- [Accessing a person’s contact data using Contacts and ContactsUI](accessing-a-person-s-contact-data-using-contacts-and-contactsui.md)
+### Essentials
+- [Accessing a person’s contact data using Contacts and ContactsUI](./accessing-a-person-s-contact-data-using-contacts-and-contactsui.md)
   Allow people to grant your app access to contact data by adding the Contact access button and Contact access picker to your app.
-- [class CNContactStore](cncontactstore.md)
+- [class CNContactStore](./cncontactstore.md)
   The object that fetches and saves contacts, groups, and containers from the user’s Contacts database.
-- [NSContactsUsageDescription](../bundleresources/information-property-list/nscontactsusagedescription.md)
+- [NSContactsUsageDescription](../BundleResources/information-property-list/nscontactsusagedescription.md)
   A message that tells people why the app is requesting access to their contacts.
-- [com.apple.developer.contacts.notes](../bundleresources/entitlements/com.apple.developer.contacts.notes.md)
+- [com.apple.developer.contacts.notes](../BundleResources/entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
 
 

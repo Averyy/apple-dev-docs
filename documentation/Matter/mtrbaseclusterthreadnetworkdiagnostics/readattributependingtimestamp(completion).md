@@ -1,7 +1,8 @@
 # readAttributePendingTimestamp(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePendingTimestamp(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePendingTimestamp() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePendingTimestampWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

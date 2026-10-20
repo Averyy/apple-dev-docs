@@ -1,12 +1,13 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object from data in an unarchiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Creates a color object from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init()](nscolor/init.md)
+### Creating color objects
+- [init()](./init%28%29.md)
   Initializes the color object.
-- [convenience init(resource: ColorResource)](nscolor/init(resource:).md)
+- [convenience init(resource: ColorResource)](./init%28resource%29.md)
   Initialize a `NSColor` with a color resource.
 
 

@@ -1,7 +1,8 @@
 # makeBorrowingIterator()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,8 @@
 ```swift
 func makeBorrowingIterator() -> BorrowingIteratorAdapter<Self.Iterator>
 ```
+
+Available when `Self` conforms to `Iterable`.
 
 
 ---

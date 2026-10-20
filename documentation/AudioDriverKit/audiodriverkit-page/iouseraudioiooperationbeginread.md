@@ -1,14 +1,15 @@
 # IOUserAudioIOOperationBeginRead
 
 **Framework**: AudioDriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - DriverKit 21.0+
 
 ## Declaration
 
-```swift
+```cpp
 constexpr const IOUserAudioIOOperation IOUserAudioIOOperationBeginRead;
 ```
 

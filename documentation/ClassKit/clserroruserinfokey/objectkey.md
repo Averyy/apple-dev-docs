@@ -1,7 +1,8 @@
 # objectKey
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key whose value is the object that caused the error.
 
@@ -18,10 +19,15 @@ A key whose value is the object that caused the error.
 static let objectKey: CLSErrorUserInfoKey
 ```
 
+```c
+extern CLSErrorUserInfoKey const CLSErrorObjectKey;
+```
+
 ## See Also
 
-- [static let successfulObjectsKey: CLSErrorUserInfoKey](clserroruserinfokey/successfulobjectskey.md)
-- [static let underlyingErrorsKey: CLSErrorUserInfoKey](clserroruserinfokey/underlyingerrorskey.md)
+### Keys
+- [static let successfulObjectsKey: CLSErrorUserInfoKey](./successfulobjectskey.md)
+- [static let underlyingErrorsKey: CLSErrorUserInfoKey](./underlyingerrorskey.md)
   A key whose value is the array of errors that contributed to this error.
 
 

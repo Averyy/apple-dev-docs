@@ -1,7 +1,8 @@
 # Default
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A value indicating that the results can originate from outside the specified region.
 
@@ -10,13 +11,14 @@ A value indicating that the results can originate from outside the specified reg
 
 ## Declaration
 
-```swift
+```
 readonly Default: "default";
 ```
 
 ## See Also
 
-- [Required](regionpriority/required.md)
+### Setting the region priority
+- [Required](./required.md)
   A value indicating that no results can originate from outside the specified region.
 
 

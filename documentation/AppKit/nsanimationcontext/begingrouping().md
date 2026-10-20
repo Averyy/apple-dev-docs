@@ -1,7 +1,8 @@
 # beginGrouping()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new animation grouping.
 
@@ -14,9 +15,14 @@ Creates a new animation grouping.
 class func beginGrouping()
 ```
 
+```objc
++ (void) beginGrouping;
+```
+
 ## See Also
 
-- [class func endGrouping()](nsanimationcontext/endgrouping.md)
+### Grouping Transactions
+- [class func endGrouping()](./endgrouping%28%29.md)
   Ends the current animation grouping.
 
 

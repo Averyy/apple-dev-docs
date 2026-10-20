@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized description of the category.
 
@@ -17,6 +18,10 @@ A localized description of the category.
 
 ```swift
 var localizedDescription: String { get }
+```
+
+```objc
+@property (copy, readonly) NSString * localizedDescription;
 ```
 
 

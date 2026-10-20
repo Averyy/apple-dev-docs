@@ -1,7 +1,8 @@
 # UIStatusBarAnimation.fade
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The status bar fades in and out as it is shown or hidden, respectively.
 
@@ -17,11 +18,16 @@ The status bar fades in and out as it is shown or hidden, respectively.
 case fade
 ```
 
+```c
+UIStatusBarAnimationFade
+```
+
 ## See Also
 
-- [UIStatusBarAnimation.none](uistatusbaranimation/none.md)
+### Constants
+- [UIStatusBarAnimation.none](./none.md)
   No animation is applied to the status bar as it is shown or hidden.
-- [UIStatusBarAnimation.slide](uistatusbaranimation/slide.md)
+- [UIStatusBarAnimation.slide](./slide.md)
   The status bar slides in or out as it is shown or hidden, respectively.
 
 

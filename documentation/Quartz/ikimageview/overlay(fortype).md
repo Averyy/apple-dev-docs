@@ -1,7 +1,8 @@
 # overlay(forType:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the Core Animation layer associated with a layer type.
 
@@ -14,17 +15,22 @@ Returns the Core Animation layer associated with a layer type.
 func overlay(forType layerType: String!) -> CALayer!
 ```
 
+```objc
+- (CALayer *) overlayForType:(NSString *) layerType;
+```
+
 #### Return Value
 
 The Core Animation layer.
 
 ## Parameters
 
-- `layerType`: A layer type. See [`Overlay Types`](overlay-types.md).
+- `layerType`: A layer type. See [Overlay Types](../overlay-types.md).
 
 ## See Also
 
-- [func setOverlay(CALayer!, forType: String!)](ikimageview/setoverlay(_:fortype:).md)
+### Working With Core Animation
+- [func setOverlay(CALayer!, forType: String!)](./setoverlay%28_,fortype%29.md)
   Sets an overlay type for a Core Animation layer.
 
 

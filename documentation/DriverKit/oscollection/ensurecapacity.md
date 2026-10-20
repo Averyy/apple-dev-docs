@@ -1,24 +1,26 @@
 # ensureCapacity
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual uint32_t ensureCapacity(uint32_t newCapacity);
 ```
 
 ## See Also
 
-- [getCount](oscollection/getcount.md)
-- [getCapacity](oscollection/getcapacity.md)
+### Inspecting a Collection
+- [getCount](./getcount.md)
+- [getCapacity](./getcapacity.md)
 
 
 ---

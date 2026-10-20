@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -20,7 +21,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](undomanager/userinfokey/init(_:).md)
+### Creating a user info key from a raw value
+- [init(String)](./init%28_%29.md)
   Creates a user info key from the given string.
 
 

@@ -1,7 +1,8 @@
 # export(to:exportOptions:)
 
 **Framework**: RoomPlan  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Produces a 3D asset from the captured room.
 
@@ -29,11 +30,12 @@ The file format of the output is Universal Scene Description (USD).
 
 ## See Also
 
-- [func export(to: URL, metadataURL: URL?, modelProvider: CapturedRoom.ModelProvider?, exportOptions: CapturedRoom.USDExportOptions) throws](capturedroom/export(to:metadataurl:modelprovider:exportoptions:).md)
+### Generating a USDZ file
+- [func export(to: URL, metadataURL: URL?, modelProvider: CapturedRoom.ModelProvider?, exportOptions: CapturedRoom.USDExportOptions) throws](./export%28to,metadataurl,modelprovider,exportoptions%29.md)
   Produces a 3D asset from the captured room with the given metadata output URL and model provider.
-- [CapturedRoom.USDExportOptions](capturedroom/usdexportoptions.md)
+- [CapturedRoom.USDExportOptions](./usdexportoptions.md)
   Options that determine the underlying data format of a scan export.
-- [CapturedRoom.ModelProvider](capturedroom/modelprovider.md)
+- [CapturedRoom.ModelProvider](./modelprovider.md)
   A structure that assigns detailed 3D models to captured objects for an export.
 
 

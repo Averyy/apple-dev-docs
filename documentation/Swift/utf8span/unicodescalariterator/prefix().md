@@ -1,7 +1,8 @@
 # prefix()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the UTF8Span containing all the content up to the iterator’s current position.
 
@@ -24,7 +25,7 @@ func prefix() -> UTF8Span
 
 The resultant `UTF8Span` has the same lifetime constraints as `self`.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

@@ -1,7 +1,8 @@
 # FaceGroupAnalyzer.State.ready
 
 **Framework**: Media Intelligence  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates all faces have up-to-date cluster assignments.
 
@@ -21,7 +22,7 @@ case ready
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](../../detecting-and-grouping-faces-in-images.md)
 
 #### Discussion
 
@@ -29,9 +30,10 @@ The analyzer’s data is up to date.
 
 ## See Also
 
-- [FaceGroupAnalyzer.State.stale](facegroupanalyzer/state-swift.enum/stale.md)
+### States
+- [FaceGroupAnalyzer.State.stale](./stale.md)
   A state that indicates new faces need cluster assignments.
-- [FaceGroupAnalyzer.State.updating](facegroupanalyzer/state-swift.enum/updating.md)
+- [FaceGroupAnalyzer.State.updating](./updating.md)
   A state that indicates the clustering algorithm is running.
 
 

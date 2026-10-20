@@ -1,7 +1,8 @@
 # muteStateKey
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A user information key to determine the app’s audio mute state.
 
@@ -20,9 +21,13 @@ A user information key to determine the app’s audio mute state.
 class let muteStateKey: String
 ```
 
+```c
+extern NSString * const AVAudioApplicationMuteStateKey;
+```
+
 #### Discussion
 
-Use this key to retrieve the app’s mute state from an [`inputMuteStateChangeNotification`](avaudioapplication/inputmutestatechangenotification.md).
+Use this key to retrieve the app’s mute state from an [`inputMuteStateChangeNotification`](./inputmutestatechangenotification.md).
 
 
 ---

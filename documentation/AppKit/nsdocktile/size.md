@@ -1,7 +1,8 @@
 # size
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the tile.
 
@@ -14,13 +15,18 @@ The size of the tile.
 var size: NSSize { get }
 ```
 
+```objc
+@property (readonly) NSSize size;
+```
+
 #### Discussion
 
 This corresponds to the size of the backing store in the dock, which may be bigger than the actual tile displayed on the screen.
 
 ## See Also
 
-- [var owner: AnyObject?](nsdocktile/owner.md)
+### Getting the Tile Information
+- [var owner: AnyObject?](./owner.md)
   The object represented by the dock tile.
 
 

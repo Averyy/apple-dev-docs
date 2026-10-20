@@ -1,7 +1,8 @@
 # NSMediaLibraryBrowserController.Library
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 These constants are masks used to configure a Media Library Browser to display specific types of media. Combined masks are not yet supported.  In other words, only one nonzero mask value is supported at a time.  If masks are combined, the lowest mask value is used.
 
@@ -14,29 +15,33 @@ These constants are masks used to configure a Media Library Browser to display s
 struct Library
 ```
 
+```c
+enum NSMediaLibrary : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var audio: NSMediaLibraryBrowserController.Library](nsmedialibrarybrowsercontroller/library/audio.md)
+- [static var audio: NSMediaLibraryBrowserController.Library](./library/audio.md)
   Display audio media.
-- [static var image: NSMediaLibraryBrowserController.Library](nsmedialibrarybrowsercontroller/library/image.md)
+- [static var image: NSMediaLibraryBrowserController.Library](./library/image.md)
   Display image media.
-- [static var movie: NSMediaLibraryBrowserController.Library](nsmedialibrarybrowsercontroller/library/movie.md)
+- [static var movie: NSMediaLibraryBrowserController.Library](./library/movie.md)
   Display movie media.
 ### Initializers
-- [init(rawValue: UInt)](nsmedialibrarybrowsercontroller/library/init(rawvalue:).md)
+- [init(rawValue: UInt)](./library/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

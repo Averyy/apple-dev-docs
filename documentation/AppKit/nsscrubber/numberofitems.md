@@ -1,7 +1,8 @@
 # numberOfItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of items represented by the scrubber.
 
@@ -14,11 +15,16 @@ The number of items represented by the scrubber.
 var numberOfItems: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger numberOfItems;
+```
+
 ## See Also
 
-- [var highlightedIndex: Int](nsscrubber/highlightedindex.md)
+### Getting the state of the scrubber
+- [var highlightedIndex: Int](./highlightedindex.md)
   The index of the highlighted item in the scrubber.
-- [var selectedIndex: Int](nsscrubber/selectedindex.md)
+- [var selectedIndex: Int](./selectedindex.md)
   The index of the selected item in the scrubber.
 
 

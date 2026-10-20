@@ -1,7 +1,8 @@
 # isPlaying
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether playback is currently active.
 
@@ -11,7 +12,7 @@ A Boolean value that indicates whether playback is currently active.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,15 +23,16 @@ A Boolean value that indicates whether playback is currently active.
 
 #### Discussion
 
-You may experience a small delay between when you call the [`play()`](audioplaybackcontroller/play().md) method and when the [`isPlaying`](audioplaybackcontroller/isplaying.md) property reports `true`.
+You may experience a small delay between when you call the [`play()`](./play%28%29.md) method and when the [`isPlaying`](./isplaying.md) property reports `true`.
 
 ## See Also
 
-- [func play()](audioplaybackcontroller/play.md)
+### Starting and stopping audio playback
+- [func play()](./play%28%29.md)
   Plays the audio resource.
-- [func pause()](audioplaybackcontroller/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses playback of the audio resource while maintaining the position in the audio stream.
-- [func stop()](audioplaybackcontroller/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops playback of the audio resource and discards the location in the audio stream.
 
 

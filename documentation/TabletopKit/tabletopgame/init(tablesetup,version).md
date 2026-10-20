@@ -1,7 +1,8 @@
 # init(tableSetup:version:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tabletop game with the specified table configuration and version of rules.
 
@@ -26,11 +27,12 @@ Players can only join multiplayer games when their rules version matches other p
 
 ## See Also
 
-- [var rootPose: Pose3D](tabletopgame/rootpose.md)
+### Creating a tabletop game
+- [var rootPose: Pose3D](./rootpose.md)
   Update the root pose for the current player
-- [func update(deltaTime: Double)](tabletopgame/update(deltatime:).md)
+- [func update(deltaTime: Double)](./update%28deltatime%29.md)
   Update the game manually. Call this function if `automaticUpdate` was not set when registering the Tabletop instance.
-- [func withCurrentSnapshot((TableSnapshot) -> Void)](tabletopgame/withcurrentsnapshot(_:).md)
+- [func withCurrentSnapshot((TableSnapshot) -> Void)](./withcurrentsnapshot%28_%29.md)
 
 
 ---

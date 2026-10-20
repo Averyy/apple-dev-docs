@@ -1,18 +1,19 @@
 # XCUIElement.ElementType
 
 **Framework**: XCUIAutomation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of UI elements that you find, inspect, and interact with in a UI test.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,193 +22,198 @@ The types of UI elements that you find, inspect, and interact with in a UI test.
 enum ElementType
 ```
 
+```c
+enum XCUIElementType : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration cases
-- [XCUIElement.ElementType.activityIndicator](xcuielement/elementtype/activityindicator.md)
+- [XCUIElement.ElementType.activityIndicator](./elementtype/activityindicator.md)
   A constant that represents an element type for activity indicator views.
-- [XCUIElement.ElementType.alert](xcuielement/elementtype/alert.md)
+- [XCUIElement.ElementType.alert](./elementtype/alert.md)
   A constant that represents an element type for alert views.
-- [XCUIElement.ElementType.any](xcuielement/elementtype/any.md)
+- [XCUIElement.ElementType.any](./elementtype/any.md)
   A constant that represents an element type for any view or control.
-- [XCUIElement.ElementType.application](xcuielement/elementtype/application.md)
+- [XCUIElement.ElementType.application](./elementtype/application.md)
   A constant that represents an element type for an application.
-- [XCUIElement.ElementType.browser](xcuielement/elementtype/browser.md)
+- [XCUIElement.ElementType.browser](./elementtype/browser.md)
   A constant that represents an element type for a browser.
-- [XCUIElement.ElementType.button](xcuielement/elementtype/button.md)
+- [XCUIElement.ElementType.button](./elementtype/button.md)
   A constant that represents an element type for button controls.
-- [XCUIElement.ElementType.cell](xcuielement/elementtype/cell.md)
+- [XCUIElement.ElementType.cell](./elementtype/cell.md)
   A constant that represents an element type for cells.
-- [XCUIElement.ElementType.checkBox](xcuielement/elementtype/checkbox.md)
+- [XCUIElement.ElementType.checkBox](./elementtype/checkbox.md)
   A constant that represents an element type for checkbox controls.
-- [XCUIElement.ElementType.collectionView](xcuielement/elementtype/collectionview.md)
+- [XCUIElement.ElementType.collectionView](./elementtype/collectionview.md)
   A constant that represents an element type for collection views.
-- [XCUIElement.ElementType.colorWell](xcuielement/elementtype/colorwell.md)
+- [XCUIElement.ElementType.colorWell](./elementtype/colorwell.md)
   A constant that represents an element type for color-well controls.
-- [XCUIElement.ElementType.comboBox](xcuielement/elementtype/combobox.md)
+- [XCUIElement.ElementType.comboBox](./elementtype/combobox.md)
   A constant that represents an element type for combo-box controls.
-- [XCUIElement.ElementType.datePicker](xcuielement/elementtype/datepicker.md)
+- [XCUIElement.ElementType.datePicker](./elementtype/datepicker.md)
   A constant that represents an element type for date-picker controls.
-- [XCUIElement.ElementType.decrementArrow](xcuielement/elementtype/decrementarrow.md)
+- [XCUIElement.ElementType.decrementArrow](./elementtype/decrementarrow.md)
   A constant that represents an element type for decrement arrow controls.
-- [XCUIElement.ElementType.dialog](xcuielement/elementtype/dialog.md)
+- [XCUIElement.ElementType.dialog](./elementtype/dialog.md)
   A constant that represents an element type for dialog views.
-- [XCUIElement.ElementType.disclosureTriangle](xcuielement/elementtype/disclosuretriangle.md)
+- [XCUIElement.ElementType.disclosureTriangle](./elementtype/disclosuretriangle.md)
   A constant that represents an element type for disclosure-triangle controls.
-- [XCUIElement.ElementType.dockItem](xcuielement/elementtype/dockitem.md)
+- [XCUIElement.ElementType.dockItem](./elementtype/dockitem.md)
   A constant that represents an element type for dock item controls.
-- [XCUIElement.ElementType.drawer](xcuielement/elementtype/drawer.md)
+- [XCUIElement.ElementType.drawer](./elementtype/drawer.md)
   A constant that represents an element type for drawers.
-- [XCUIElement.ElementType.grid](xcuielement/elementtype/grid.md)
+- [XCUIElement.ElementType.grid](./elementtype/grid.md)
   A constant that represents an element type for grid views.
-- [XCUIElement.ElementType.group](xcuielement/elementtype/group.md)
+- [XCUIElement.ElementType.group](./elementtype/group.md)
   A constant that represents an element type for groups.
-- [XCUIElement.ElementType.handle](xcuielement/elementtype/handle.md)
+- [XCUIElement.ElementType.handle](./elementtype/handle.md)
   A constant that represents an element type for handle controls.
-- [XCUIElement.ElementType.helpTag](xcuielement/elementtype/helptag.md)
+- [XCUIElement.ElementType.helpTag](./elementtype/helptag.md)
   A constant that represents an element type for help tags.
-- [XCUIElement.ElementType.icon](xcuielement/elementtype/icon.md)
+- [XCUIElement.ElementType.icon](./elementtype/icon.md)
   A constant that represents an element type for icons.
-- [XCUIElement.ElementType.image](xcuielement/elementtype/image.md)
+- [XCUIElement.ElementType.image](./elementtype/image.md)
   A constant that represents an element type for image views.
-- [XCUIElement.ElementType.incrementArrow](xcuielement/elementtype/incrementarrow.md)
+- [XCUIElement.ElementType.incrementArrow](./elementtype/incrementarrow.md)
   A constant that represents an element type for increment arrow controls.
-- [XCUIElement.ElementType.key](xcuielement/elementtype/key.md)
+- [XCUIElement.ElementType.key](./elementtype/key.md)
   A constant that represents an element type for keys.
-- [XCUIElement.ElementType.keyboard](xcuielement/elementtype/keyboard.md)
+- [XCUIElement.ElementType.keyboard](./elementtype/keyboard.md)
   A constant that represents an element type for keyboards.
-- [XCUIElement.ElementType.layoutArea](xcuielement/elementtype/layoutarea.md)
+- [XCUIElement.ElementType.layoutArea](./elementtype/layoutarea.md)
   A constant that represents an element type for layout areas.
-- [XCUIElement.ElementType.layoutItem](xcuielement/elementtype/layoutitem.md)
+- [XCUIElement.ElementType.layoutItem](./elementtype/layoutitem.md)
   A constant that represents an element type for layout items.
-- [XCUIElement.ElementType.levelIndicator](xcuielement/elementtype/levelindicator.md)
+- [XCUIElement.ElementType.levelIndicator](./elementtype/levelindicator.md)
   A constant that represents an element type for level indicators.
-- [XCUIElement.ElementType.link](xcuielement/elementtype/link.md)
+- [XCUIElement.ElementType.link](./elementtype/link.md)
   A constant that represents an element type for links.
-- [XCUIElement.ElementType.map](xcuielement/elementtype/map.md)
+- [XCUIElement.ElementType.map](./elementtype/map.md)
   A constant that represents an element type for map views.
-- [XCUIElement.ElementType.matte](xcuielement/elementtype/matte.md)
+- [XCUIElement.ElementType.matte](./elementtype/matte.md)
   A constant that represents an element type for mattes.
-- [XCUIElement.ElementType.menu](xcuielement/elementtype/menu.md)
+- [XCUIElement.ElementType.menu](./elementtype/menu.md)
   A constant that represents an element type for menus.
-- [XCUIElement.ElementType.menuBar](xcuielement/elementtype/menubar.md)
+- [XCUIElement.ElementType.menuBar](./elementtype/menubar.md)
   A constant that represents an element type for menu bars.
-- [XCUIElement.ElementType.menuBarItem](xcuielement/elementtype/menubaritem.md)
+- [XCUIElement.ElementType.menuBarItem](./elementtype/menubaritem.md)
   A constant that represents an element type for menu bar items.
-- [XCUIElement.ElementType.menuButton](xcuielement/elementtype/menubutton.md)
+- [XCUIElement.ElementType.menuButton](./elementtype/menubutton.md)
   A constant that represents an element type for menu buttons.
-- [XCUIElement.ElementType.menuItem](xcuielement/elementtype/menuitem.md)
+- [XCUIElement.ElementType.menuItem](./elementtype/menuitem.md)
   A constant that represents an element type for menu items.
-- [XCUIElement.ElementType.navigationBar](xcuielement/elementtype/navigationbar.md)
+- [XCUIElement.ElementType.navigationBar](./elementtype/navigationbar.md)
   A constant that represents an element type for navigation bars.
-- [XCUIElement.ElementType.other](xcuielement/elementtype/other.md)
+- [XCUIElement.ElementType.other](./elementtype/other.md)
   A constant that represents an element type for other views or controls.
-- [XCUIElement.ElementType.outline](xcuielement/elementtype/outline.md)
+- [XCUIElement.ElementType.outline](./elementtype/outline.md)
   A constant that represents an element type for outline views.
-- [XCUIElement.ElementType.outlineRow](xcuielement/elementtype/outlinerow.md)
+- [XCUIElement.ElementType.outlineRow](./elementtype/outlinerow.md)
   A constant that represents an element type for outline rows.
-- [XCUIElement.ElementType.pageIndicator](xcuielement/elementtype/pageindicator.md)
+- [XCUIElement.ElementType.pageIndicator](./elementtype/pageindicator.md)
   A constant that represents an element type for page-indicator controls.
-- [XCUIElement.ElementType.picker](xcuielement/elementtype/picker.md)
+- [XCUIElement.ElementType.picker](./elementtype/picker.md)
   A constant that represents an element type for picker controls.
-- [XCUIElement.ElementType.pickerWheel](xcuielement/elementtype/pickerwheel.md)
+- [XCUIElement.ElementType.pickerWheel](./elementtype/pickerwheel.md)
   A constant that represents an element type for picker-wheel controls.
-- [XCUIElement.ElementType.popUpButton](xcuielement/elementtype/popupbutton.md)
+- [XCUIElement.ElementType.popUpButton](./elementtype/popupbutton.md)
   A constant that represents an element type for popup button controls.
-- [XCUIElement.ElementType.popover](xcuielement/elementtype/popover.md)
+- [XCUIElement.ElementType.popover](./elementtype/popover.md)
   A constant that represents an element type for popover views.
-- [XCUIElement.ElementType.progressIndicator](xcuielement/elementtype/progressindicator.md)
+- [XCUIElement.ElementType.progressIndicator](./elementtype/progressindicator.md)
   A constant that represents an element type for progress-indicator controls.
-- [XCUIElement.ElementType.radioButton](xcuielement/elementtype/radiobutton.md)
+- [XCUIElement.ElementType.radioButton](./elementtype/radiobutton.md)
   A constant that represents radio-button controls.
-- [XCUIElement.ElementType.radioGroup](xcuielement/elementtype/radiogroup.md)
+- [XCUIElement.ElementType.radioGroup](./elementtype/radiogroup.md)
   A constant that represents an element type for radio groups.
-- [XCUIElement.ElementType.ratingIndicator](xcuielement/elementtype/ratingindicator.md)
+- [XCUIElement.ElementType.ratingIndicator](./elementtype/ratingindicator.md)
   A constant that represents an element type for rating-indicator views.
-- [XCUIElement.ElementType.relevanceIndicator](xcuielement/elementtype/relevanceindicator.md)
+- [XCUIElement.ElementType.relevanceIndicator](./elementtype/relevanceindicator.md)
   A constant that represents an element type for relevance-indicator views.
-- [XCUIElement.ElementType.ruler](xcuielement/elementtype/ruler.md)
+- [XCUIElement.ElementType.ruler](./elementtype/ruler.md)
   A constant that represents an element type for ruler views.
-- [XCUIElement.ElementType.rulerMarker](xcuielement/elementtype/rulermarker.md)
+- [XCUIElement.ElementType.rulerMarker](./elementtype/rulermarker.md)
   A constant that represents an element type for ruler markers.
-- [XCUIElement.ElementType.scrollBar](xcuielement/elementtype/scrollbar.md)
+- [XCUIElement.ElementType.scrollBar](./elementtype/scrollbar.md)
   A constant that represents an element type for scroll bars.
-- [XCUIElement.ElementType.scrollView](xcuielement/elementtype/scrollview.md)
+- [XCUIElement.ElementType.scrollView](./elementtype/scrollview.md)
   A constant that represents an element type for scroll views.
-- [XCUIElement.ElementType.searchField](xcuielement/elementtype/searchfield.md)
+- [XCUIElement.ElementType.searchField](./elementtype/searchfield.md)
   A constant that represents an element type for search fields.
-- [XCUIElement.ElementType.secureTextField](xcuielement/elementtype/securetextfield.md)
+- [XCUIElement.ElementType.secureTextField](./elementtype/securetextfield.md)
   A constant that represents an element type for secure text fields.
-- [XCUIElement.ElementType.segmentedControl](xcuielement/elementtype/segmentedcontrol.md)
+- [XCUIElement.ElementType.segmentedControl](./elementtype/segmentedcontrol.md)
   A constant that represents an element type for segmented controls.
-- [XCUIElement.ElementType.sheet](xcuielement/elementtype/sheet.md)
+- [XCUIElement.ElementType.sheet](./elementtype/sheet.md)
   A constant that represents an element type for sheets.
-- [XCUIElement.ElementType.slider](xcuielement/elementtype/slider.md)
+- [XCUIElement.ElementType.slider](./elementtype/slider.md)
   A constant that represents an element type for slider controls.
-- [XCUIElement.ElementType.splitGroup](xcuielement/elementtype/splitgroup.md)
+- [XCUIElement.ElementType.splitGroup](./elementtype/splitgroup.md)
   A constant that represents an element type for split groups.
-- [XCUIElement.ElementType.splitter](xcuielement/elementtype/splitter.md)
+- [XCUIElement.ElementType.splitter](./elementtype/splitter.md)
   A constant that represents an element type for splitters.
-- [XCUIElement.ElementType.staticText](xcuielement/elementtype/statictext.md)
+- [XCUIElement.ElementType.staticText](./elementtype/statictext.md)
   A constant that represents an element type for static text views.
-- [XCUIElement.ElementType.statusBar](xcuielement/elementtype/statusbar.md)
+- [XCUIElement.ElementType.statusBar](./elementtype/statusbar.md)
   A constant that represents an element type for status bars.
-- [XCUIElement.ElementType.statusItem](xcuielement/elementtype/statusitem.md)
+- [XCUIElement.ElementType.statusItem](./elementtype/statusitem.md)
   A constant that represents an element type for status items.
-- [XCUIElement.ElementType.stepper](xcuielement/elementtype/stepper.md)
+- [XCUIElement.ElementType.stepper](./elementtype/stepper.md)
   A constant that represents an element type for stepper controls.
-- [XCUIElement.ElementType.switch](xcuielement/elementtype/switch.md)
+- [XCUIElement.ElementType.switch](./elementtype/switch.md)
   A constant that represents an element type for switch controls.
-- [XCUIElement.ElementType.tab](xcuielement/elementtype/tab.md)
+- [XCUIElement.ElementType.tab](./elementtype/tab.md)
   A constant that represents an element type for tabs.
-- [XCUIElement.ElementType.tabBar](xcuielement/elementtype/tabbar.md)
+- [XCUIElement.ElementType.tabBar](./elementtype/tabbar.md)
   A constant that represents an element type for tab bars.
-- [XCUIElement.ElementType.tabGroup](xcuielement/elementtype/tabgroup.md)
+- [XCUIElement.ElementType.tabGroup](./elementtype/tabgroup.md)
   A constant that represents an element type for tab groups.
-- [XCUIElement.ElementType.table](xcuielement/elementtype/table.md)
+- [XCUIElement.ElementType.table](./elementtype/table.md)
   A constant that represents an element type for table views.
-- [XCUIElement.ElementType.tableColumn](xcuielement/elementtype/tablecolumn.md)
+- [XCUIElement.ElementType.tableColumn](./elementtype/tablecolumn.md)
   A constant that represents an element type for table columns.
-- [XCUIElement.ElementType.tableRow](xcuielement/elementtype/tablerow.md)
+- [XCUIElement.ElementType.tableRow](./elementtype/tablerow.md)
   A constant that represents an element type for table rows.
-- [XCUIElement.ElementType.textField](xcuielement/elementtype/textfield.md)
+- [XCUIElement.ElementType.textField](./elementtype/textfield.md)
   A constant that represents an element type for text fields.
-- [XCUIElement.ElementType.textView](xcuielement/elementtype/textview.md)
+- [XCUIElement.ElementType.textView](./elementtype/textview.md)
   A constant that represents an element type for text views.
-- [XCUIElement.ElementType.timeline](xcuielement/elementtype/timeline.md)
+- [XCUIElement.ElementType.timeline](./elementtype/timeline.md)
   A constant that represents an element type for timeline views.
-- [XCUIElement.ElementType.toggle](xcuielement/elementtype/toggle.md)
+- [XCUIElement.ElementType.toggle](./elementtype/toggle.md)
   A constant that represents an element type for toggle controls.
-- [XCUIElement.ElementType.toolbar](xcuielement/elementtype/toolbar.md)
+- [XCUIElement.ElementType.toolbar](./elementtype/toolbar.md)
   A constant that represents an element type for toolbars.
-- [XCUIElement.ElementType.toolbarButton](xcuielement/elementtype/toolbarbutton.md)
+- [XCUIElement.ElementType.toolbarButton](./elementtype/toolbarbutton.md)
   A constant that represents an element type for toolbar buttons.
-- [XCUIElement.ElementType.touchBar](xcuielement/elementtype/touchbar.md)
+- [XCUIElement.ElementType.touchBar](./elementtype/touchbar.md)
   A constant that represents an element type for touch bars.
-- [XCUIElement.ElementType.valueIndicator](xcuielement/elementtype/valueindicator.md)
+- [XCUIElement.ElementType.valueIndicator](./elementtype/valueindicator.md)
   A constant that represents an element type for value indicators.
-- [XCUIElement.ElementType.webView](xcuielement/elementtype/webview.md)
+- [XCUIElement.ElementType.webView](./elementtype/webview.md)
   A constant that represents an element type for web views.
-- [XCUIElement.ElementType.window](xcuielement/elementtype/window.md)
+- [XCUIElement.ElementType.window](./elementtype/window.md)
   A constant that represents an element type for windows.
 ### Initializers
-- [init?(rawValue: UInt)](xcuielement/elementtype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./elementtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [XCUIElement.SizeClass](xcuielement/sizeclass.md)
+### Supporting types
+- [XCUIElement.SizeClass](./sizeclass.md)
   The user interface size classes you can inspect in a UI test.
-- [XCUIElement.AttributeName](xcuielement/attributename.md)
+- [XCUIElement.AttributeName](./attributename.md)
   A set of string constants that serve as keys for storing element attributes in a dictionary.
 
 

@@ -1,7 +1,8 @@
 # SMSService.IncomingMessageNotification
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains information about an incoming SMS message.
 
@@ -17,18 +18,19 @@ struct IncomingMessageNotification
 ## Topics
 
 ### Inspecting notification properties
-- [let message: SMSMessage](smsservice/incomingmessagenotification/message.md)
+- [let message: SMSMessage](./incomingmessagenotification/message.md)
   The incoming message.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var incomingMessageNotifications: some AsyncSequence<SMSService.IncomingMessageNotification, Never>](smsservice/incomingmessagenotifications.md)
+### Receiving messages
+- [var incomingMessageNotifications: some AsyncSequence<SMSService.IncomingMessageNotification, Never>](./incomingmessagenotifications.md)
   An asynchronous sequence of incoming message notifications produced by this service.
 
 

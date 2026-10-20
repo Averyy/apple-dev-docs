@@ -1,7 +1,8 @@
 # wait(timeout:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the caller to wait synchronously until the dispatch work item finishes executing, or until the specified time elapses.
 
@@ -10,9 +11,9 @@ Causes the caller to wait synchronously until the dispatch work item finishes ex
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ func wait(timeout: DispatchTime) -> DispatchTimeoutResult
 
 #### Return Value
 
-[`DispatchTimeoutResult.success`](dispatchtimeoutresult/success.md) if the method returned because the work item finished executing, or [`DispatchTimeoutResult.timedOut`](dispatchtimeoutresult/timedout.md) if the timeout value was reached.
+[`DispatchTimeoutResult.success`](../dispatchtimeoutresult/success.md) if the method returned because the work item finished executing, or [`DispatchTimeoutResult.timedOut`](../dispatchtimeoutresult/timedout.md) if the timeout value was reached.
 
 #### Discussion
 
@@ -30,17 +31,18 @@ This method returns immediately if the current work item has already finished ex
 
 ## Parameters
 
-- `timeout`: The time at which to stop waiting for the dispatch item to finish. Specifying [`distantFuture`](dispatchtime/distantfuture.md) is equivalent to calling the [`wait()`](dispatchworkitem/wait().md) method.
+- `timeout`: The time at which to stop waiting for the dispatch item to finish. Specifying [`distantFuture`](../dispatchtime/distantfuture.md) is equivalent to calling the [`wait()`](./wait%28%29.md) method.
 
 ## See Also
 
-- [func wait()](dispatchworkitem/wait.md)
+### Waiting for the Completion of a Work Item
+- [func wait()](./wait%28%29.md)
   Causes the caller to wait synchronously until the dispatch work item finishes executing.
-- [func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult](dispatchworkitem/wait(walltimeout:).md)
+- [func wait(wallTimeout: DispatchWallTime) -> DispatchTimeoutResult](./wait%28walltimeout%29.md)
   Causes the caller to wait synchronously until the dispatch work item finishes executing, or until the specified time elapses.
-- [struct DispatchTime](dispatchtime.md)
+- [struct DispatchTime](../dispatchtime.md)
   A point in time relative to the default clock, with nanosecond precision.
-- [struct DispatchWallTime](dispatchwalltime.md)
+- [struct DispatchWallTime](../dispatchwalltime.md)
   An absolute point in time according to the wall clock, with microsecond precision.
 
 

@@ -1,7 +1,8 @@
 # register(_:forTextAttachmentViewProviderType:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Register the NSTextAttachmentViewProviderReusePolicy for all instances of a particular subclass of NSTextAttachmentViewProvider.
 
@@ -12,6 +13,10 @@ Register the NSTextAttachmentViewProviderReusePolicy for all instances of a part
 
 ```swift
 func register(_ policy: NSTextAttachmentViewProviderReusePolicy, forTextAttachmentViewProviderType viewProviderType: AnyClass)
+```
+
+```objc
+- (void) registerTextAttachmentViewProviderReusePolicy:(NSTextAttachmentViewProviderReusePolicy) policy forTextAttachmentViewProviderType:(Class) viewProviderType;
 ```
 
 

@@ -1,7 +1,8 @@
 # teamType
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Type of the developer team.
 
@@ -10,7 +11,7 @@ Type of the developer team.
 
 ## Declaration
 
-```swift
+```
 attribute string? teamType;
 ```
 

@@ -1,7 +1,8 @@
 # AppTransaction.StoreType
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -21,18 +22,18 @@ struct StoreType
 ## Topics
 
 ### Type Properties
-- [static let consumer: AppTransaction.StoreType](apptransaction/storetype-swift.struct/consumer.md)
-- [static let education: AppTransaction.StoreType](apptransaction/storetype-swift.struct/education.md)
-- [static let enterprise: AppTransaction.StoreType](apptransaction/storetype-swift.struct/enterprise.md)
+- [static let consumer: AppTransaction.StoreType](./storetype-swift.struct/consumer.md)
+- [static let education: AppTransaction.StoreType](./storetype-swift.struct/education.md)
+- [static let enterprise: AppTransaction.StoreType](./storetype-swift.struct/enterprise.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

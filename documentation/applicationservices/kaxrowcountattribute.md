@@ -1,7 +1,8 @@
 # kAXRowCountAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXRowCountAttribute: String { get }
+```
+
+```c
+#define kAXRowCountAttribute
 ```
 
 

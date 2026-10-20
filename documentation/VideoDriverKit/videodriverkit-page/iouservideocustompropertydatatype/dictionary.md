@@ -1,7 +1,8 @@
 # Dictionary
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The custom property data type is an `OSDictionary` value.
 
@@ -10,15 +11,16 @@ The custom property data type is an `OSDictionary` value.
 
 ## Declaration
 
-```swift
+```c
 Dictionary
 ```
 
 ## See Also
 
-- [String](videodriverkit/iouservideocustompropertydatatype/string.md)
+### Data types
+- [String](./string.md)
   The custom property data type is an `OSString` value.
-- [None](videodriverkit/iouservideocustompropertydatatype/none.md)
+- [None](./none.md)
   The custom property does not have any data.
 
 

@@ -1,14 +1,15 @@
 # kREAD_CAPACITY_PROT_Enabled
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kREAD_CAPACITY_PROT_Enabled = 0x01
 ```
 

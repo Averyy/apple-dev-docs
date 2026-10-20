@@ -1,7 +1,8 @@
 # RxError
 
 **Framework**: SerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports errors that occurred when receiving data from the device.
 
@@ -10,13 +11,13 @@ Reports errors that occurred when receiving data from the device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t RxError(bool overrun, bool gotBreak, bool framingError, bool parityError);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -31,13 +32,14 @@ Call this method when you encounter an error getting data from the device.
 
 ## See Also
 
-- [RxDataAvailable](iouserserial/rxdataavailable.md)
+### Transmitting and Receiving Data
+- [RxDataAvailable](./rxdataavailable.md)
   Notifies the system that data from the device is now available.
-- [RxFreeSpaceAvailable](iouserserial/rxfreespaceavailable.md)
+- [RxFreeSpaceAvailable](./rxfreespaceavailable.md)
   Notifies your driver that buffer space is available for your device’s data.
-- [TxDataAvailable](iouserserial/txdataavailable.md)
+- [TxDataAvailable](./txdataavailable.md)
   Notifies your driver that the system has data for you to transmit to the device.
-- [TxFreeSpaceAvailable](iouserserial/txfreespaceavailable.md)
+- [TxFreeSpaceAvailable](./txfreespaceavailable.md)
   Notifies the system that the device is ready to accept more data.
 
 

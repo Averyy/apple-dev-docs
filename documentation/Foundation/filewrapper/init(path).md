@@ -1,17 +1,24 @@
 # init(path:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a file wrapper instance whose kind is determined by the type of file-system node located by the path.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use [`init(url:options:)`](./init%28url,options%29-70161.md) instead.
 
 ## Declaration
 
 ```swift
 convenience init?(path: String)
+```
+
+```objc
+- (id) initWithPath:(NSString *) path;
 ```
 
 #### Return Value
@@ -24,7 +31,7 @@ If `node` is a directory, this method recursively creates file wrappers for each
 
 ##### Special Considerations
 
-Beginning with OS X v10.6, the preferred method of referring to files is with a `file://` URL. Therefore, this method has been deprecated in favor of [`init(url:options:)`](filewrapper/init(url:options:)-70161.md).
+Beginning with OS X v10.6, the preferred method of referring to files is with a `file://` URL. Therefore, this method has been deprecated in favor of [`init(url:options:)`](./init%28url,options%29-70161.md).
 
 ## Parameters
 
@@ -32,23 +39,25 @@ Beginning with OS X v10.6, the preferred method of referring to files is with a 
 
 ## See Also
 
-- [var preferredFilename: String?](filewrapper/preferredfilename.md)
+### Related Documentation
+- [var preferredFilename: String?](./preferredfilename.md)
   The preferred filename for the file wrapper object.
-- [var filename: String?](filewrapper/filename.md)
+- [var filename: String?](./filename.md)
   The filename of the file wrapper object
-- [var fileAttributes: [String : Any]](filewrapper/fileattributes.md)
+- [var fileAttributes: [String : Any]](./fileattributes.md)
   A dictionary of file attributes.
-- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:)-70161.md)
+### Creating File Wrappers
+- [init(url: URL, options: FileWrapper.ReadingOptions) throws](./init%28url,options%29-70161.md)
   Initializes a file wrapper instance whose kind is determined by the type of file-system node located by the URL.
-- [init(directoryWithFileWrappers: [String : FileWrapper])](filewrapper/init(directorywithfilewrappers:).md)
+- [init(directoryWithFileWrappers: [String : FileWrapper])](./init%28directorywithfilewrappers%29.md)
   Initializes the receiver as a directory file wrapper, with a given file-wrapper list.
-- [init(regularFileWithContents: Data)](filewrapper/init(regularfilewithcontents:).md)
+- [init(regularFileWithContents: Data)](./init%28regularfilewithcontents%29.md)
   Initializes the receiver as a regular-file file wrapper.
-- [convenience init(symbolicLinkWithDestination: String)](filewrapper/init(symboliclinkwithdestination:).md)
+- [convenience init(symbolicLinkWithDestination: String)](./init%28symboliclinkwithdestination%29.md)
   Initializes the receiver as a symbolic-link file wrapper.
-- [init(symbolicLinkWithDestinationURL: URL)](filewrapper/init(symboliclinkwithdestinationurl:).md)
+- [init(symbolicLinkWithDestinationURL: URL)](./init%28symboliclinkwithdestinationurl%29.md)
   Initializes the receiver as a symbolic-link file wrapper that links to a specified file.
-- [init?(serializedRepresentation: Data)](filewrapper/init(serializedrepresentation:).md)
+- [init?(serializedRepresentation: Data)](./init%28serializedrepresentation%29.md)
   Initializes the receiver as a regular-file file wrapper from given serialized data.
 
 

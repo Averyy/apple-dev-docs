@@ -1,12 +1,13 @@
 # setPreferredTextFieldWidth(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preferred text field width used by Auto Layout.
 
 **Availability**:
-- macOS 10.8+
+- macOS 10.8+ - Deprecated in 10.10
 
 ## Declaration
 
@@ -14,15 +15,19 @@ Sets the preferred text field width used by Auto Layout.
 func setPreferredTextFieldWidth(_ preferredWidth: CGFloat)
 ```
 
+```objc
+- (void) setPreferredTextFieldWidth:(CGFloat) preferredWidth;
+```
+
 #### Discussion
 
-The preferred width is reflected in the cell’s [`cellSize`](nscell/cellsize.md), which will be large enough to accommodate the title, bezel, and a text field of width preferredTextWidth. It is also reflected in the [`intrinsicContentSize`](nsview/intrinsiccontentsize.md) of the form. That is, under Auto Layout, the form will try to size itself so that the text field cell is the given width, according to the usual content size constraint priorities.
+The preferred width is reflected in the cell’s [`cellSize`](../nscell/cellsize.md), which will be large enough to accommodate the title, bezel, and a text field of width preferredTextWidth. It is also reflected in the [`intrinsicContentSize`](../nsview/intrinsiccontentsize.md) of the form. That is, under Auto Layout, the form will try to size itself so that the text field cell is the given width, according to the usual content size constraint priorities.
 
-If the width is negative, the [`cellSize`](nscell/cellsize.md) matches the historic behavior, which is that it is large enough to accommodate the title, bezel, and the current text.
+If the width is negative, the [`cellSize`](../nscell/cellsize.md) matches the historic behavior, which is that it is large enough to accommodate the title, bezel, and the current text.
 
-The preferred width is reflected in the cell’s cellSize, which will be large enough to accommodate the title, bezel, and a text field of width [`preferredTextFieldWidth()`](nsform/preferredtextfieldwidth().md).
+The preferred width is reflected in the cell’s cellSize, which will be large enough to accommodate the title, bezel, and a text field of width [`preferredTextFieldWidth()`](./preferredtextfieldwidth%28%29.md).
 
-This method can aid migration to Auto Layout, and is sufficient for simple cases. However, for new apps, use [`NSTextField`](nstextfield.md) objects directly instead of `NSForm`.
+This method can aid migration to Auto Layout, and is sufficient for simple cases. However, for new apps, use [`NSTextField`](../nstextfield.md) objects directly instead of `NSForm`.
 
 The default is -1.
 
@@ -32,7 +37,8 @@ The default is -1.
 
 ## See Also
 
-- [func preferredTextFieldWidth() -> CGFloat](nsform/preferredtextfieldwidth.md)
+### Auto Layout Sizing
+- [func preferredTextFieldWidth() -> CGFloat](./preferredtextfieldwidth%28%29.md)
   The preferred width of the form’s cells when using Auto Layout.
 
 

@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type for using an inline presentation intent as an attribute.
 
@@ -28,25 +29,26 @@ An inline presentation intent applies to a run of characters inside a larger blo
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [ObjectiveCConvertibleAttributedStringKey](objectivecconvertibleattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [ObjectiveCConvertibleAttributedStringKey](../../objectivecconvertibleattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let inlinePresentationIntent: AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](attributescopes/foundationattributes/inlinepresentationintent.md)
+### Using presentation intent attributes
+- [let inlinePresentationIntent: AttributeScopes.FoundationAttributes.InlinePresentationIntentAttribute](./inlinepresentationintent.md)
   A property for accessing an inline presentation intent attribute.
-- [struct InlinePresentationIntent](inlinepresentationintent.md)
+- [struct InlinePresentationIntent](../../inlinepresentationintent.md)
   A type that defines presentation intent for runs of characters for traits like emphasis, strikethrough, and code voice.
-- [let presentationIntent: AttributeScopes.FoundationAttributes.PresentationIntentAttribute](attributescopes/foundationattributes/presentationintent.md)
+- [let presentationIntent: AttributeScopes.FoundationAttributes.PresentationIntentAttribute](./presentationintent.md)
   A property for accessing a presentation intent attribute.
-- [AttributeScopes.FoundationAttributes.PresentationIntentAttribute](attributescopes/foundationattributes/presentationintentattribute.md)
+- [AttributeScopes.FoundationAttributes.PresentationIntentAttribute](./presentationintentattribute.md)
   A type for using a presentation intent as an attribute.
-- [struct PresentationIntent](presentationintent.md)
+- [struct PresentationIntent](../../presentationintent.md)
   A type that defines presentation intent for blocks of characters like paragraphs, lists, block quotes, and tables.
 
 

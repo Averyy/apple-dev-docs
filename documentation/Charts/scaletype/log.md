@@ -1,7 +1,8 @@
 # log
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A number scale where each range value y can be expressed as a logarithmic function of the domain value x, with `y = a * log(x) + b`.
 

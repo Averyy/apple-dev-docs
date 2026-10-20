@@ -1,7 +1,8 @@
 # NFCISO15693ReadMultipleBlocksConfiguration
 
 **Framework**: Core NFC  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -14,6 +15,10 @@
 class NFCISO15693ReadMultipleBlocksConfiguration
 ```
 
+```objc
+@interface NFCISO15693ReadMultipleBlocksConfiguration : NFCTagCommandConfiguration
+```
+
 #### Overview
 
 Configuration options for the Read Multiple Blocks command.
@@ -21,24 +26,24 @@ Configuration options for the Read Multiple Blocks command.
 ## Topics
 
 ### Initializers
-- [init(range: NSRange, chunkSize: Int)](nfciso15693readmultipleblocksconfiguration/init(range:chunksize:).md)
-- [init(range: NSRange, chunkSize: Int, maximumRetries: Int, retryInterval: TimeInterval)](nfciso15693readmultipleblocksconfiguration/init(range:chunksize:maximumretries:retryinterval:).md)
+- [init(range: NSRange, chunkSize: Int)](./nfciso15693readmultipleblocksconfiguration/init%28range,chunksize%29.md)
+- [init(range: NSRange, chunkSize: Int, maximumRetries: Int, retryInterval: TimeInterval)](./nfciso15693readmultipleblocksconfiguration/init%28range,chunksize,maximumretries,retryinterval%29.md)
 ### Instance Properties
-- [var chunkSize: Int](nfciso15693readmultipleblocksconfiguration/chunksize.md)
-- [var range: NSRange](nfciso15693readmultipleblocksconfiguration/range.md)
+- [var chunkSize: Int](./nfciso15693readmultipleblocksconfiguration/chunksize.md)
+- [var range: NSRange](./nfciso15693readmultipleblocksconfiguration/range.md)
 
 ## Relationships
 
 ### Inherits From
-- [NFCTagCommandConfiguration](nfctagcommandconfiguration.md)
+- [NFCTagCommandConfiguration](./nfctagcommandconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ImpressionShareQueryResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The impression share query endpoint returns this response wrapper.
 
@@ -10,21 +11,21 @@ The impression share query endpoint returns this response wrapper.
 
 ## Declaration
 
-```swift
+```
 object ImpressionShareQueryResponse
 ```
 
 #### Response Structure
 
-##### Top Level Fields
+##### Top-Level Fields
 
 The `ImpressionShareResultContainer` wrapping `result` exposes a single field.
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `rows` | array | Array of [`ImpressionShareRow`](impressionsharerow.md) objects, one per date + search term + country combination |
+| `rows` | array | Array of [`ImpressionShareRow`](./impressionsharerow.md) objects, one per date + search term + country combination |
 
-Each [`ImpressionShareRow`](impressionsharerow.md) in `rows` carries the following fields.
+Each [`ImpressionShareRow`](./impressionsharerow.md) in `rows` carries the following fields.
 
 | Field | Type | Description |
 | --- | --- | --- |
@@ -63,35 +64,35 @@ The `pagination` object included in the response reports the following.
 
 ## Properties
 
-- `result` (ImpressionShareResultContainer): See [`ImpressionShareResultContainer`](impressionshareresultcontainer.md). If no rows match the request, `result` is returned as `{ "rows": [] }`, not an empty object.
-- `pagination` (ResponsePagination): See [`ResponsePagination`](responsepagination.md).
-- `error` (Error): See [`Error`](error.md). Present only on failure.
+- `result` (ImpressionShareResultContainer): See [`ImpressionShareResultContainer`](./impressionshareresultcontainer.md). If no rows match the request, `result` is returned as `{ "rows": [] }`, not an empty object.
+- `pagination` (ResponsePagination): See [`ResponsePagination`](./responsepagination.md).
+- `error` (Error): See [`Error`](./error.md). Present only on failure.
 
 ## See Also
 
-- [object ImpressionShareQueryRequest](impressionsharequeryrequest.md)
+- [object ImpressionShareQueryRequest](./impressionsharequeryrequest.md)
   Request body for the impression share query endpoint.
-- [object ImpressionShareRow](impressionsharerow.md)
+- [object ImpressionShareRow](./impressionsharerow.md)
   A single impression share data row.
-- [object ImpressionShareTimeRange](impressionsharetimerange.md)
+- [object ImpressionShareTimeRange](./impressionsharetimerange.md)
   Time range for impression share queries.
-- [object ImpressionShareOptions](impressionshareoptions.md)
+- [object ImpressionShareOptions](./impressionshareoptions.md)
   Report options for impression share queries.
-- [object SearchTermPopularityQueryRequest](searchtermpopularityqueryrequest.md)
+- [object SearchTermPopularityQueryRequest](./searchtermpopularityqueryrequest.md)
   Request body for the search term popularity query endpoint.
-- [object SearchTermPopularityQueryResponse](searchtermpopularityqueryresponse.md)
+- [object SearchTermPopularityQueryResponse](./searchtermpopularityqueryresponse.md)
   A response wrapper for search term popularity query results.
-- [object SearchTermPopularityRow](searchtermpopularityrow.md)
+- [object SearchTermPopularityRow](./searchtermpopularityrow.md)
   A single search term popularity data row.
-- [object SearchTermPopularityTimeRange](searchtermpopularitytimerange.md)
+- [object SearchTermPopularityTimeRange](./searchtermpopularitytimerange.md)
   Time range for search term popularity queries.
-- [object ImpressionShareResultContainer](impressionshareresultcontainer.md)
+- [object ImpressionShareResultContainer](./impressionshareresultcontainer.md)
   Container holding the array of impression share rows a query returns.
-- [object SearchTermPopularityResultContainer](searchtermpopularityresultcontainer.md)
+- [object SearchTermPopularityResultContainer](./searchtermpopularityresultcontainer.md)
   Container holding the array of search term popularity rows a query returns.
-- [object KeywordInsights](keywordinsights.md)
+- [object KeywordInsights](./keywordinsights.md)
   Insights for keyword reporting rows.
-- [object ReportingKeywordBidRecommendation](reportingkeywordbidrecommendation.md)
+- [object ReportingKeywordBidRecommendation](./reportingkeywordbidrecommendation.md)
   Keyword bid recommendation details, including a suggested bid amount.
 
 

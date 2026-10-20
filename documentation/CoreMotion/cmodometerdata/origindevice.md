@@ -1,7 +1,8 @@
 # originDevice
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device that measures the data.
 
@@ -19,9 +20,14 @@ The device that measures the data.
 var originDevice: CMOdometerOriginDevice { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CMOdometerOriginDevice originDevice;
+```
+
 ## See Also
 
-- [enum CMOdometerOriginDevice](cmodometerorigindevice.md)
+### Getting the device
+- [enum CMOdometerOriginDevice](../cmodometerorigindevice.md)
   The device that the odometer sample originates from.
 
 

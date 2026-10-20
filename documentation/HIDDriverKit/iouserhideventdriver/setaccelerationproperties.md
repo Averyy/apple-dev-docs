@@ -1,22 +1,24 @@
 # setAccelerationProperties
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 void setAccelerationProperties(OSDictionary *properties);
 ```
 
 ## See Also
 
-- [setSurfaceDimensions](iouserhideventdriver/setsurfacedimensions.md)
-- [setTipThreshold](iouserhideventdriver/settipthreshold.md)
+### Configuring Private Properties
+- [setSurfaceDimensions](./setsurfacedimensions.md)
+- [setTipThreshold](./settipthreshold.md)
 
 
 ---

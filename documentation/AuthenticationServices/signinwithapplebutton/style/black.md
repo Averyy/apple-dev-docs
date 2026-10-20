@@ -1,7 +1,8 @@
 # black
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The constant that defines a black button.
 
@@ -22,9 +23,10 @@ static let black: SignInWithAppleButton.Style
 
 ## See Also
 
-- [static let white: SignInWithAppleButton.Style](signinwithapplebutton/style/white.md)
+### Styles
+- [static let white: SignInWithAppleButton.Style](./white.md)
   The constant that defines a white button.
-- [static let whiteOutline: SignInWithAppleButton.Style](signinwithapplebutton/style/whiteoutline.md)
+- [static let whiteOutline: SignInWithAppleButton.Style](./whiteoutline.md)
   The constant that defines a white-outlined button.
 
 

@@ -9,18 +9,19 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short SVG_TRANSFORM_ROTATE;
 ```
 
 ## See Also
 
-- [SVG_TRANSFORM_MATRIX](svgtransform/1632851-svg_transform_matrix.md)
-- [SVG_TRANSFORM_SCALE](svgtransform/1630969-svg_transform_scale.md)
-- [SVG_TRANSFORM_SKEWX](svgtransform/1633522-svg_transform_skewx.md)
-- [SVG_TRANSFORM_SKEWY](svgtransform/1631181-svg_transform_skewy.md)
-- [SVG_TRANSFORM_TRANSLATE](svgtransform/1633025-svg_transform_translate.md)
-- [SVG_TRANSFORM_UNKNOWN](svgtransform/1634049-svg_transform_unknown.md)
+### Miscellaneous
+- [SVG_TRANSFORM_MATRIX](./api-1632851-svg_transform_matrix.md)
+- [SVG_TRANSFORM_SCALE](./api-1630969-svg_transform_scale.md)
+- [SVG_TRANSFORM_SKEWX](./api-1633522-svg_transform_skewx.md)
+- [SVG_TRANSFORM_SKEWY](./api-1631181-svg_transform_skewy.md)
+- [SVG_TRANSFORM_TRANSLATE](./api-1633025-svg_transform_translate.md)
+- [SVG_TRANSFORM_UNKNOWN](./api-1634049-svg_transform_unknown.md)
 
 
 ---

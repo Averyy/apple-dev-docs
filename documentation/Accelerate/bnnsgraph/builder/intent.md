@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Intent
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe argument intents.
 
@@ -23,16 +24,16 @@ enum Intent
 ## Topics
 
 ### Enumeration Cases
-- [BNNSGraph.Builder.Intent.input](bnnsgraph/builder/intent/input.md)
+- [BNNSGraph.Builder.Intent.input](./intent/input.md)
   A constant that specifies the argument is an input tensor.
-- [BNNSGraph.Builder.Intent.inputOutput](bnnsgraph/builder/intent/inputoutput.md)
+- [BNNSGraph.Builder.Intent.inputOutput](./intent/inputoutput.md)
   A constant that specifies the argument is an in-place input and output tensor.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 
 ---

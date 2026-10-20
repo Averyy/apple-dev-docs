@@ -1,7 +1,8 @@
 # GKSCNNodeComponent
 
 **Framework**: GameplayKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -17,28 +18,32 @@
 class GKSCNNodeComponent
 ```
 
+```objc
+@interface GKSCNNodeComponent : GKComponent
+```
+
 ## Topics
 
 ### Initializers
-- [init(node: SCNNode)](gkscnnodecomponent/init(node:).md)
+- [init(node: SCNNode)](./gkscnnodecomponent/init%28node%29.md)
 ### Instance Properties
-- [var node: SCNNode](gkscnnodecomponent/node.md)
+- [var node: SCNNode](./gkscnnodecomponent/node.md)
 
 ## Relationships
 
 ### Inherits From
-- [GKComponent](gkcomponent.md)
+- [GKComponent](./gkcomponent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [GKAgentDelegate](gkagentdelegate.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [GKAgentDelegate](./gkagentdelegate.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

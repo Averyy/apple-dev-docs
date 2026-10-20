@@ -1,7 +1,8 @@
 # None
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A collision mode in which the annotation doesn’t collide with other annotations.
 
@@ -10,13 +11,13 @@ A collision mode in which the annotation doesn’t collide with other annotation
 
 ## Declaration
 
-```swift
+```
 readonly None: "none";
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 #### Discussion
 
@@ -24,9 +25,10 @@ The annotation does not collide with other annotations.
 
 ## See Also
 
-- [Rectangle](annotationcollisionmode/rectangle.md)
+### Collision modes
+- [Rectangle](./rectangle.md)
   Uses the full collision frame rectangle to detect collisions.
-- [Circle](annotationcollisionmode/circle.md)
+- [Circle](./circle.md)
   Uses a circle inscribed in the collision frame rectangle to detect collisions.
 
 

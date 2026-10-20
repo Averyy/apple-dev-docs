@@ -1,7 +1,8 @@
 # hasErrors
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether errors occurred in the request.
 
@@ -10,7 +11,7 @@ A Boolean value indicating whether errors occurred in the request.
 
 ## Declaration
 
-```swift
+```
 readonly attribute Boolean hasErrors;
 ```
 
@@ -20,7 +21,8 @@ readonly attribute Boolean hasErrors;
 
 ## See Also
 
-- [errors](cloudkit.response/errors.md)
+### Handling Errors
+- [errors](./errors.md)
   Errors that occurred in the request.
 
 

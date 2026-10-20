@@ -1,7 +1,8 @@
 # PTServiceStatus.ready
 
 **Framework**: Push to Talk  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type that indicates the service is available for use.
 
@@ -16,15 +17,20 @@ A type that indicates the service is available for use.
 case ready
 ```
 
+```c
+PTServiceStatusReady
+```
+
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
 ## See Also
 
-- [PTServiceStatus.connecting](ptservicestatus/connecting.md)
+### Statuses
+- [PTServiceStatus.connecting](./connecting.md)
   A type that indicates the service is attempting to establish a connection.
-- [PTServiceStatus.unavailable](ptservicestatus/unavailable.md)
+- [PTServiceStatus.unavailable](./unavailable.md)
   A type that indicates the service is unavailable and needs to be re-established.
 
 

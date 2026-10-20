@@ -1,6 +1,7 @@
 # App Asset Library placement ordering requests
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Set the display order of an app’s placements within a localization.
 
@@ -11,19 +12,20 @@ The `appAssetLibraryPlacementOrderingRequests` resource represents a request tha
 ## Topics
 
 ### Ordering placements
-- [Create an app asset library placement ordering request](post-v1-appassetlibraryplacementorderingrequests.md)
+- [Create an app asset library placement ordering request](./post-v1-appassetlibraryplacementorderingrequests.md)
   Create an app asset library placement ordering request.
 ### Objects and types
-- [object AppAssetLibraryPlacementOrderingRequest](appassetlibraryplacementorderingrequest.md)
+- [object AppAssetLibraryPlacementOrderingRequest](./appassetlibraryplacementorderingrequest.md)
   A request that sets the display order of an app’s asset library placements within a localization.
-- [object AppAssetLibraryPlacementOrderingRequestCreateRequest](appassetlibraryplacementorderingrequestcreaterequest.md)
+- [object AppAssetLibraryPlacementOrderingRequestCreateRequest](./appassetlibraryplacementorderingrequestcreaterequest.md)
   The request body you use to create an app asset library placement ordering request.
-- [object AppAssetLibraryPlacementOrderingRequestResponse](appassetlibraryplacementorderingrequestresponse.md)
+- [object AppAssetLibraryPlacementOrderingRequestResponse](./appassetlibraryplacementorderingrequestresponse.md)
   The response body for endpoints that create an app asset library placement ordering request.
 
 ## See Also
 
-- [App Asset Library placements](app-asset-library-placements.md)
+### Placing assets
+- [App Asset Library placements](./app-asset-library-placements.md)
   Place library assets on your App Store surfaces.
 
 

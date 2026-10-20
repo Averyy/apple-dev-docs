@@ -1,7 +1,8 @@
 # localizedDescription
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized text that describes the payment mode.
 

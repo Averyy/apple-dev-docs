@@ -1,7 +1,8 @@
 # TapGesture
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A gesture that recognizes one or more taps.
 
@@ -23,7 +24,7 @@ struct TapGesture
 
 #### Overview
 
-To recognize a tap gesture on a view, create and configure the gesture, and then add it to the view using the [`gesture(_:including:)`](view/gesture(_:including:).md) modifier. The following code adds a tap gesture to a [`Circle`](circle.md) that toggles the color of the circle:
+To recognize a tap gesture on a view, create and configure the gesture, and then add it to the view using the [`gesture(_:including:)`](./view/gesture%28_,including%29.md) modifier. The following code adds a tap gesture to a [`Circle`](./circle.md) that toggles the color of the circle:
 
 ```swift
 struct TapGestureView: View {
@@ -46,25 +47,26 @@ struct TapGestureView: View {
 ## Topics
 
 ### Creating a tap gesture
-- [init(count: Int)](tapgesture/init(count:).md)
+- [init(count: Int)](./tapgesture/init%28count%29.md)
   Creates a tap gesture with the number of required taps.
-- [init(count: Int, inputKinds: GestureInputKinds)](tapgesture/init(count:inputkinds:).md)
+- [init(count: Int, inputKinds: GestureInputKinds)](./tapgesture/init%28count,inputkinds%29.md)
   Creates a tap gesture with the number of required taps and the input kinds the gesture recognizes.
-- [var count: Int](tapgesture/count.md)
+- [var count: Int](./tapgesture/count.md)
   The required number of tap events.
 
 ## Relationships
 
 ### Conforms To
-- [Gesture](gesture.md)
+- [Gesture](./gesture.md)
 
 ## See Also
 
-- [func onTapGesture(count: Int, perform: () -> Void) -> some View](view/ontapgesture(count:perform:).md)
+### Recognizing tap gestures
+- [func onTapGesture(count: Int, perform: () -> Void) -> some View](./view/ontapgesture%28count,perform%29.md)
   Adds an action to perform when this view recognizes a tap gesture.
-- [func onTapGesture(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds, perform: (CGPoint) -> Void) -> some View](view/ontapgesture(count:coordinatespace:inputkinds:perform:).md)
+- [func onTapGesture(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds, perform: (CGPoint) -> Void) -> some View](./view/ontapgesture%28count,coordinatespace,inputkinds,perform%29.md)
   Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
-- [struct SpatialTapGesture](spatialtapgesture.md)
+- [struct SpatialTapGesture](./spatialtapgesture.md)
   A gesture that recognizes one or more taps and reports their location.
 
 

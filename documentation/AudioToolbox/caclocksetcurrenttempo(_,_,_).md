@@ -1,7 +1,8 @@
 # CAClockSetCurrentTempo(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
@@ -12,13 +13,18 @@
 func CAClockSetCurrentTempo(_ inCAClock: CAClockRef, _ inTempo: CAClockTempo, _ inTimestamp: UnsafePointer<CAClockTime>?) -> OSStatus
 ```
 
+```c
+extern OSStatus CAClockSetCurrentTempo(CAClockRef inCAClock, CAClockTempo inTempo, const CAClockTime *inTimestamp);
+```
+
 ## See Also
 
-- [func CAClockGetCurrentTempo(CAClockRef, UnsafeMutablePointer<CAClockTempo>, UnsafeMutablePointer<CAClockTime>?) -> OSStatus](caclockgetcurrenttempo(_:_:_:).md)
-- [func CAClockGetPlayRate(CAClockRef, UnsafeMutablePointer<Float64>) -> OSStatus](caclockgetplayrate(_:_:).md)
-- [func CAClockSetPlayRate(CAClockRef, Float64) -> OSStatus](caclocksetplayrate(_:_:).md)
-- [typealias CAClockTempo](caclocktempo.md)
-- [struct CATempoMapEntry](catempomapentry.md)
+### Accessing Tempo Information
+- [func CAClockGetCurrentTempo(CAClockRef, UnsafeMutablePointer<CAClockTempo>, UnsafeMutablePointer<CAClockTime>?) -> OSStatus](./caclockgetcurrenttempo%28_,_,_%29.md)
+- [func CAClockGetPlayRate(CAClockRef, UnsafeMutablePointer<Float64>) -> OSStatus](./caclockgetplayrate%28_,_%29.md)
+- [func CAClockSetPlayRate(CAClockRef, Float64) -> OSStatus](./caclocksetplayrate%28_,_%29.md)
+- [typealias CAClockTempo](./caclocktempo.md)
+- [struct CATempoMapEntry](./catempomapentry.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # readAttributeCumulativeEnergyImported(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCumulativeEnergyImported(completion: @escaping @Sendable (MTRElectricalEnergyMeasurementClusterEnergyMeasurementStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCumulativeEnergyImported() async throws -> MTRElectricalEnergyMeasurementClusterEnergyMeasurementStruct
+```
+
+```objc
+- (void) readAttributeCumulativeEnergyImportedWithCompletion:(void (^)(MTRElectricalEnergyMeasurementClusterEnergyMeasurementStruct *value, NSError *error)) completion;
 ```
 
 

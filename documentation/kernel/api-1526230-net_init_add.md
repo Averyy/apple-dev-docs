@@ -1,18 +1,19 @@
 # net_init_add
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 errno_t net_init_add(net_init_func_ptr init_func);
 ```
 
-#### Return_value
+#### Return Value
 
 EINVAL - the init_func value was NULL. EALREADY - the network has already been initialized ENOMEM - there was not enough memory to perform this operation 0 - success
 

@@ -1,18 +1,19 @@
 # objc_property_t
 
 **Framework**: Objective-C Runtime  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An opaque type that represents an Objective-C declared property.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ An opaque type that represents an Objective-C declared property.
 typealias objc_property_t = OpaquePointer
 ```
 
+```c
+typedef struct objc_property * objc_property_t;
+```
+
 ## See Also
 
-- [typealias Method](method.md)
+### Class-Definition Data Structures
+- [typealias Method](./method.md)
   An opaque type that represents a method in a class definition.
-- [typealias Ivar](ivar.md)
+- [typealias Ivar](./ivar.md)
   An opaque type that represents an instance variable.
-- [typealias Category](category.md)
+- [typealias Category](./category.md)
   An opaque type that represents a category.
-- [typealias IMP](imp.md)
+- [typealias IMP](./imp.md)
   A pointer to the start of a method implementation.
-- [struct objc_method_description](objc_method_description.md)
+- [struct objc_method_description](./objc_method_description.md)
   Defines an Objective-C method.
-- [objc_cache](objc_cache.md)
+- [objc_cache](./objc_cache.md)
   Performance optimization for method calls. Contains pointers to recently used methods.
-- [struct objc_property_attribute_t](objc_property_attribute_t.md)
+- [struct objc_property_attribute_t](./objc_property_attribute_t.md)
   Defines a property attribute.
 
 

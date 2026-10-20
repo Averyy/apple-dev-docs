@@ -1,7 +1,8 @@
 # PressureTrend.falling
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The pressure is falling.
 
@@ -22,9 +23,10 @@ case falling
 
 ## See Also
 
-- [PressureTrend.rising](pressuretrend/rising.md)
+### Getting the trend
+- [PressureTrend.rising](./rising.md)
   The pressure is rising.
-- [PressureTrend.steady](pressuretrend/steady.md)
+- [PressureTrend.steady](./steady.md)
   The pressure is not changing.
 
 

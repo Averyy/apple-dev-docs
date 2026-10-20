@@ -1,7 +1,8 @@
 # removeAllBlockingEntries()
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all stored blocking entries.
 
@@ -17,17 +18,22 @@ Removes all stored blocking entries.
 func removeAllBlockingEntries()
 ```
 
+```objc
+- (void) removeAllBlockingEntries;
+```
+
 #### Discussion
 
-If [`isIncremental`](cxcalldirectoryextensioncontext/isincremental.md) is [`true`](https://developer.apple.com/documentation/swift/true), the request provides incremental entries and may use this method to remove all previously added blocking entries. Don’t call this method if [`isIncremental`](cxcalldirectoryextensioncontext/isincremental.md) is [`false`](https://developer.apple.com/documentation/swift/false).
+If [`isIncremental`](./isincremental.md) is [`true`](../../Swift/true.md), the request provides incremental entries and may use this method to remove all previously added blocking entries. Don’t call this method if [`isIncremental`](./isincremental.md) is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func removeAllIdentificationEntries()](cxcalldirectoryextensioncontext/removeallidentificationentries.md)
+### Removing Entries
+- [func removeAllIdentificationEntries()](./removeallidentificationentries%28%29.md)
   Removes all stored identification entries.
-- [func removeBlockingEntry(withPhoneNumber: CXCallDirectoryPhoneNumber)](cxcalldirectoryextensioncontext/removeblockingentry(withphonenumber:).md)
+- [func removeBlockingEntry(withPhoneNumber: CXCallDirectoryPhoneNumber)](./removeblockingentry%28withphonenumber%29.md)
   Removes a blocking entry that contains the specified phone number.
-- [func removeIdentificationEntry(withPhoneNumber: CXCallDirectoryPhoneNumber)](cxcalldirectoryextensioncontext/removeidentificationentry(withphonenumber:).md)
+- [func removeIdentificationEntry(withPhoneNumber: CXCallDirectoryPhoneNumber)](./removeidentificationentry%28withphonenumber%29.md)
   Removes an identification entry that contains the specified phone number.
 
 

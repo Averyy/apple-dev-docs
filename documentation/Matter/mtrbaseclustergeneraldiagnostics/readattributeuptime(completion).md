@@ -1,7 +1,8 @@
 # readAttributeUpTime(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeUpTime(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeUpTime() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeUpTimeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

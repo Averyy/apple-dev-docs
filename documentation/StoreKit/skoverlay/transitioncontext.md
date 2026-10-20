@@ -1,7 +1,8 @@
 # SKOverlay.TransitionContext
 
 **Framework**: StoreKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A context object you can use to animate UI changes while the platform presents or dismisses an overlay.
 
@@ -17,41 +18,46 @@ A context object you can use to animate UI changes while the platform presents o
 class TransitionContext
 ```
 
+```objc
+@interface SKOverlayTransitionContext : NSObject
+```
+
 #### Overview
 
-For more information on animating UI changes while the system presents or dismisses an overlay, see [`storeOverlayWillStartPresentation(_:transitionContext:)`](skoverlaydelegate/storeoverlaywillstartpresentation(_:transitioncontext:).md) and [`storeOverlayWillStartDismissal(_:transitionContext:)`](skoverlaydelegate/storeoverlaywillstartdismissal(_:transitioncontext:).md).
+For more information on animating UI changes while the system presents or dismisses an overlay, see [`storeOverlayWillStartPresentation(_:transitionContext:)`](../skoverlaydelegate/storeoverlaywillstartpresentation%28_,transitioncontext%29.md) and [`storeOverlayWillStartDismissal(_:transitionContext:)`](../skoverlaydelegate/storeoverlaywillstartdismissal%28_,transitioncontext%29.md).
 
 ## Topics
 
 ### Adding an Animation
-- [func addAnimation(() -> Void)](skoverlay/transitioncontext/addanimation(_:).md)
+- [func addAnimation(() -> Void)](./transitioncontext/addanimation%28_%29.md)
   Adds a closure you can use to animate view properties.
-- [var startFrame: CGRect](skoverlay/transitioncontext/startframe.md)
+- [var startFrame: CGRect](./transitioncontext/startframe.md)
   The size and location of the overlay before the transition.
-- [var endFrame: CGRect](skoverlay/transitioncontext/endframe.md)
+- [var endFrame: CGRect](./transitioncontext/endframe.md)
   The size and location of the overlay at the end of the transition.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func storeOverlayWillStartPresentation(SKOverlay, transitionContext: SKOverlay.TransitionContext)](skoverlaydelegate/storeoverlaywillstartpresentation(_:transitioncontext:).md)
+### Responding to the Overlay’s Appearance and Disappearance
+- [func storeOverlayWillStartPresentation(SKOverlay, transitionContext: SKOverlay.TransitionContext)](../skoverlaydelegate/storeoverlaywillstartpresentation%28_,transitioncontext%29.md)
   Indicates that the platform presents an overlay.
-- [func storeOverlayDidFinishPresentation(SKOverlay, transitionContext: SKOverlay.TransitionContext)](skoverlaydelegate/storeoverlaydidfinishpresentation(_:transitioncontext:).md)
+- [func storeOverlayDidFinishPresentation(SKOverlay, transitionContext: SKOverlay.TransitionContext)](../skoverlaydelegate/storeoverlaydidfinishpresentation%28_,transitioncontext%29.md)
   Indicates that the platform finished presenting an overlay.
-- [func storeOverlayWillStartDismissal(SKOverlay, transitionContext: SKOverlay.TransitionContext)](skoverlaydelegate/storeoverlaywillstartdismissal(_:transitioncontext:).md)
+- [func storeOverlayWillStartDismissal(SKOverlay, transitionContext: SKOverlay.TransitionContext)](../skoverlaydelegate/storeoverlaywillstartdismissal%28_,transitioncontext%29.md)
   Indicates that the platform dismisses an overlay.
-- [func storeOverlayDidFinishDismissal(SKOverlay, transitionContext: SKOverlay.TransitionContext)](skoverlaydelegate/storeoverlaydidfinishdismissal(_:transitioncontext:).md)
+- [func storeOverlayDidFinishDismissal(SKOverlay, transitionContext: SKOverlay.TransitionContext)](../skoverlaydelegate/storeoverlaydidfinishdismissal%28_,transitioncontext%29.md)
   Indicates that platform finished dismissing an overlay.
 
 

@@ -1,14 +1,15 @@
 # sched_perfcontrol_ml_set_interrupts_without_measurement
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 boolean_t sched_perfcontrol_ml_set_interrupts_without_measurement(boolean_t enable);
 ```
 

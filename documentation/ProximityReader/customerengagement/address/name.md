@@ -1,7 +1,8 @@
 # name
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The customer’s full name.
 
@@ -18,11 +19,12 @@ let name: PersonNameComponents
 
 ## See Also
 
-- [let emailAddress: String?](customerengagement/address/emailaddress.md)
+### Getting customer details
+- [let emailAddress: String?](./emailaddress.md)
   The customer’s email address.
-- [let phoneNumber: CNPhoneNumber?](customerengagement/address/phonenumber.md)
+- [let phoneNumber: CNPhoneNumber?](./phonenumber.md)
   The customer’s phone number.
-- [let postalAddress: CNPostalAddress](customerengagement/address/postaladdress.md)
+- [let postalAddress: CNPostalAddress](./postaladdress.md)
   The customer’s postal address.
 
 

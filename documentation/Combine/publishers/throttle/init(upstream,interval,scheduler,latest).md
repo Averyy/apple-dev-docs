@@ -1,7 +1,8 @@
 # init(upstream:interval:scheduler:latest:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that publishes either the most-recent or first element published by the upstream publisher in a specified time interval.
 

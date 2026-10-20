@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Replaces the text in a document that is in the specified range.
@@ -10,13 +11,17 @@ Replaces the text in a document that is in the specified range.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func replace(_ range: UITextRange, withText text: String)
+```
+
+```objc
+- (void) replaceRange:(UITextRange *) range withText:(NSString *) text;
 ```
 
 ## Parameters
@@ -26,9 +31,10 @@ func replace(_ range: UITextRange, withText text: String)
 
 ## See Also
 
-- [func text(in: UITextRange) -> String?](uitextinput/text(in:).md)
+### Replacing and returning text
+- [func text(in: UITextRange) -> String?](./text%28in%29.md)
   Returns the text in the specified range.
-- [func shouldChangeText(in: UITextRange, replacementText: String) -> Bool](uitextinput/shouldchangetext(in:replacementtext:).md)
+- [func shouldChangeText(in: UITextRange, replacementText: String) -> Bool](./shouldchangetext%28in,replacementtext%29.md)
   Asks whether to replace the text in the specified range.
 
 

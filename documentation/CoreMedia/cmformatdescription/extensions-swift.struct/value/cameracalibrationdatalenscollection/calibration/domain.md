@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the kind of lens (e.g., color).
 

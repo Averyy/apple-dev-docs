@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an object initialized from data in the specified coder object.
 
@@ -18,15 +19,20 @@ Returns an object initialized from data in the specified coder object.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
 - `coder`: The coder object that contains the object’s data.
 
 ## See Also
 
-- [init(frame: CGRect, configuration: WKWebViewConfiguration)](wkwebview/init(frame:configuration:).md)
+### Creating a web view
+- [init(frame: CGRect, configuration: WKWebViewConfiguration)](./init%28frame,configuration%29.md)
   Creates a web view and initializes it with the specified frame and configuration data.
-- [var configuration: WKWebViewConfiguration](wkwebview/configuration.md)
+- [var configuration: WKWebViewConfiguration](./configuration.md)
   The object that contains the configuration details for the web view.
 
 

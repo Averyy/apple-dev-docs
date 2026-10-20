@@ -1,7 +1,8 @@
 # HKBloodType
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the user’s blood type.
 
@@ -19,60 +20,65 @@ Constants indicating the user’s blood type.
 enum HKBloodType
 ```
 
+```c
+enum HKBloodType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [HKBloodType.notSet](hkbloodtype/notset.md)
+- [HKBloodType.notSet](./hkbloodtype/notset.md)
   Either the user’s blood type is not set, or the user has not granted your app permission to read the blood type.
-- [HKBloodType.aPositive](hkbloodtype/apositive.md)
+- [HKBloodType.aPositive](./hkbloodtype/apositive.md)
   The user has an A+ blood type.
-- [HKBloodType.aNegative](hkbloodtype/anegative.md)
+- [HKBloodType.aNegative](./hkbloodtype/anegative.md)
   The user has an A– blood type.
-- [HKBloodType.bPositive](hkbloodtype/bpositive.md)
+- [HKBloodType.bPositive](./hkbloodtype/bpositive.md)
   The user has an B+ blood type.
-- [HKBloodType.bNegative](hkbloodtype/bnegative.md)
+- [HKBloodType.bNegative](./hkbloodtype/bnegative.md)
   The user has an B– blood type.
-- [HKBloodType.abPositive](hkbloodtype/abpositive.md)
+- [HKBloodType.abPositive](./hkbloodtype/abpositive.md)
   The user has an AB+ blood type.
-- [HKBloodType.abNegative](hkbloodtype/abnegative.md)
+- [HKBloodType.abNegative](./hkbloodtype/abnegative.md)
   The user has an AB– blood type.
-- [HKBloodType.oPositive](hkbloodtype/opositive.md)
+- [HKBloodType.oPositive](./hkbloodtype/opositive.md)
   The user has an O+ blood type.
-- [HKBloodType.oNegative](hkbloodtype/onegative.md)
+- [HKBloodType.oNegative](./hkbloodtype/onegative.md)
   The user has an O– blood type.
 ### Initializers
-- [init?(rawValue: Int)](hkbloodtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkbloodtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HKAudiogramConductionType](hkaudiogramconductiontype.md)
-- [enum HKAudiogramSensitivityTestSide](hkaudiogramsensitivitytestside.md)
-- [enum HKCategoryValueVaginalBleeding](hkcategoryvaluevaginalbleeding.md)
+### Enumerations
+- [enum HKAudiogramConductionType](./hkaudiogramconductiontype.md)
+- [enum HKAudiogramSensitivityTestSide](./hkaudiogramsensitivitytestside.md)
+- [enum HKCategoryValueVaginalBleeding](./hkcategoryvaluevaginalbleeding.md)
   A value that indicates the intensity of vaginal bleeding.
-- [HKGAD7Assessment.Answer](hkgad7assessment/answer.md)
-- [HKGAD7Assessment.Risk](hkgad7assessment/risk-swift.enum.md)
-- [HKPHQ9Assessment.Answer](hkphq9assessment/answer.md)
-- [HKPHQ9Assessment.Risk](hkphq9assessment/risk-swift.enum.md)
-- [HKStateOfMind.Association](hkstateofmind/association.md)
-- [HKStateOfMind.Kind](hkstateofmind/kind-swift.enum.md)
-- [HKStateOfMind.Label](hkstateofmind/label.md)
-- [HKStateOfMind.ValenceClassification](hkstateofmind/valenceclassification-swift.enum.md)
-- [enum HKWorkoutEffortRelationshipQueryOptions](hkworkouteffortrelationshipqueryoptions.md)
-- [enum HKBiologicalSex](hkbiologicalsex.md)
+- [HKGAD7Assessment.Answer](./hkgad7assessment/answer.md)
+- [HKGAD7Assessment.Risk](./hkgad7assessment/risk-swift.enum.md)
+- [HKPHQ9Assessment.Answer](./hkphq9assessment/answer.md)
+- [HKPHQ9Assessment.Risk](./hkphq9assessment/risk-swift.enum.md)
+- [HKStateOfMind.Association](./hkstateofmind/association.md)
+- [HKStateOfMind.Kind](./hkstateofmind/kind-swift.enum.md)
+- [HKStateOfMind.Label](./hkstateofmind/label.md)
+- [HKStateOfMind.ValenceClassification](./hkstateofmind/valenceclassification-swift.enum.md)
+- [enum HKWorkoutEffortRelationshipQueryOptions](./hkworkouteffortrelationshipqueryoptions.md)
+- [enum HKBiologicalSex](./hkbiologicalsex.md)
   Constants indicating the user’s sex.
-- [enum HKFitzpatrickSkinType](hkfitzpatrickskintype.md)
+- [enum HKFitzpatrickSkinType](./hkfitzpatrickskintype.md)
   Categories representing the user’s skin type based on the Fitzpatrick scale.
-- [enum HKWheelchairUse](hkwheelchairuse.md)
+- [enum HKWheelchairUse](./hkwheelchairuse.md)
   Constants indicating the user’s wheelchair use.
 
 

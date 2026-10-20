@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct rt_msghdr_prelude {
     ...
 };
@@ -17,7 +17,7 @@ struct rt_msghdr_prelude {
 ## Topics
 
 ### Instance Properties
-- [rtm_msglen](rt_msghdr_prelude/4460360-rtm_msglen.md)
+- [rtm_msglen](./rt_msghdr_prelude/api-4460360-rtm_msglen.md)
 
 
 ---

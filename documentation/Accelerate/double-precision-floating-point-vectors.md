@@ -1,6 +1,7 @@
 # Double-precision floating-point vectors
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: API Collection
 
 Perform operations on vectors that contain double-precision floating-point elements.
 
@@ -19,31 +20,32 @@ The compiler flag defines the behavior of the default variant. Ordinarily, the c
 ## Topics
 
 ### Vector data types
-- [typealias simd_double1](../simd/simd_double1.md)
+- [typealias simd_double1](https://developer.apple.com/documentation/simd/simd_double1)
   A vector of one 64-bit floating-point element.
-- [typealias simd_double2](../simd/simd_double2.md)
+- [typealias simd_double2](https://developer.apple.com/documentation/simd/simd_double2)
   A vector of two 64-bit floating-point elements.
-- [typealias simd_double3](../simd/simd_double3.md)
+- [typealias simd_double3](https://developer.apple.com/documentation/simd/simd_double3)
   A vector of three 64-bit floating-point elements.
-- [typealias simd_double4](../simd/simd_double4.md)
+- [typealias simd_double4](https://developer.apple.com/documentation/simd/simd_double4)
   A vector of four 64-bit floating-point elements.
-- [typealias simd_double8](../simd/simd_double8.md)
+- [typealias simd_double8](https://developer.apple.com/documentation/simd/simd_double8)
   A vector of eight 64-bit floating-point elements.
 ### Packed vector data types
-- [typealias simd_packed_double2](../simd/simd_packed_double2.md)
+- [typealias simd_packed_double2](https://developer.apple.com/documentation/simd/simd_packed_double2)
   A packed vector of two 64-bit floating-point elements.
-- [typealias simd_packed_double4](../simd/simd_packed_double4.md)
+- [typealias simd_packed_double4](https://developer.apple.com/documentation/simd/simd_packed_double4)
   A packed vector of four 64-bit floating-point elements.
-- [typealias simd_packed_double8](../simd/simd_packed_double8.md)
+- [typealias simd_packed_double8](https://developer.apple.com/documentation/simd/simd_packed_double8)
   A packed vector of eight 64-bit floating-point elements.
 
 ## See Also
 
-- [Working with Vectors](working-with-vectors.md)
+### Floating-Point Vectors
+- [Working with Vectors](./working-with-vectors.md)
   Use vectors to calculate geometric values, calculate dot products and cross products, and interpolate between values.
-- [Half-precision floating-point vectors](half-precision-floating-point-vectors.md)
+- [Half-precision floating-point vectors](./half-precision-floating-point-vectors.md)
   Perform operations on vectors that contain half-precision floating-point elements.
-- [Single-precision floating-point vectors](single-precision-floating-point-vectors.md)
+- [Single-precision floating-point vectors](./single-precision-floating-point-vectors.md)
   Perform operations on vectors that contain single-precision floating-point elements.
 
 

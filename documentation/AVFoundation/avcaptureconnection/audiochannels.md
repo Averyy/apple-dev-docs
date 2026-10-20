@@ -1,7 +1,8 @@
 # audioChannels
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of audio channels that the connection provides.
 
@@ -18,17 +19,22 @@ An array of audio channels that the connection provides.
 var audioChannels: [AVCaptureAudioChannel] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCaptureAudioChannel *> * audioChannels;
+```
+
 #### Discussion
 
 The property only applies to a video connection.
 
 ## See Also
 
-- [var inputPorts: [AVCaptureInput.Port]](avcaptureconnection/inputports.md)
+### Inspecting a connection
+- [var inputPorts: [AVCaptureInput.Port]](./inputports.md)
   An array of the connection’s input ports.
-- [var output: AVCaptureOutput?](avcaptureconnection/output.md)
+- [var output: AVCaptureOutput?](./output.md)
   The connection’s output port, if applicable.
-- [var videoPreviewLayer: AVCaptureVideoPreviewLayer?](avcaptureconnection/videopreviewlayer.md)
+- [var videoPreviewLayer: AVCaptureVideoPreviewLayer?](./videopreviewlayer.md)
   The video preview layer associated with the connection.
 
 

@@ -1,7 +1,8 @@
 # mass
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The resistance of the agent to changes in speed or direction.
 
@@ -19,19 +20,24 @@ The resistance of the agent to changes in speed or direction.
 var mass: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float mass;
+```
+
 #### Discussion
 
 The higher the value of this property, the slower the agent will be to respond to goals that change its speed or direction, and vice versa.
 
-> **Note**:  The simulation responsible for agent movement is based on realistic physical behaviors; however, this simulation is *not* connected to the physics subsystems in SpriteKit, SceneKit, or any other graphics engine. For example, setting the [`mass`](gkagent/mass.md) property of an agent does not affect the collision behavior of any SpriteKit physics bodies.
+> **Note**:  The simulation responsible for agent movement is based on realistic physical behaviors; however, this simulation is *not* connected to the physics subsystems in SpriteKit, SceneKit, or any other graphics engine. For example, setting the [`mass`](./mass.md) property of an agent does not affect the collision behavior of any SpriteKit physics bodies.
 
 ## See Also
 
-- [var maxAcceleration: Float](gkagent/maxacceleration.md)
+### Constraining an Agent’s Movement
+- [var maxAcceleration: Float](./maxacceleration.md)
   The upper limit to changes in the agent’s speed or direction.
-- [var maxSpeed: Float](gkagent/maxspeed.md)
+- [var maxSpeed: Float](./maxspeed.md)
   The agent’s maximum forward speed, in units per second.
-- [var radius: Float](gkagent/radius.md)
+- [var radius: Float](./radius.md)
   The agent’s radius.
 
 

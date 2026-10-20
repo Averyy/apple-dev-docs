@@ -1,17 +1,22 @@
 # stopAnimation(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the animation of an indeterminate progress indicator.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func stopAnimation(_ sender: Any?)
+```
+
+```objc
+- (void) stopAnimation:(id) sender;
 ```
 
 #### Discussion
@@ -24,9 +29,10 @@ Does nothing for a determinate progress indicator.
 
 ## See Also
 
-- [func startAnimation(Any?)](nsprogressindicator/startanimation(_:).md)
+### Animating the progress indicator
+- [func startAnimation(Any?)](./startanimation%28_%29.md)
   Starts the animation of an indeterminate progress indicator.
-- [var usesThreadedAnimation: Bool](nsprogressindicator/usesthreadedanimation.md)
+- [var usesThreadedAnimation: Bool](./usesthreadedanimation.md)
   A Boolean that indicates whether the progress indicator implements animation in a separate thread.
 
 

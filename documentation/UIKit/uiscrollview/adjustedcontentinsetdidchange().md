@@ -1,7 +1,8 @@
 # adjustedContentInsetDidChange()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the scroll view when the adjusted content insets of the scroll view change.
 
@@ -18,15 +19,20 @@ Notifies the scroll view when the adjusted content insets of the scroll view cha
 func adjustedContentInsetDidChange()
 ```
 
+```objc
+- (void) adjustedContentInsetDidChange;
+```
+
 ## See Also
 
-- [var adjustedContentInset: UIEdgeInsets](uiscrollview/adjustedcontentinset.md)
+### Managing the content inset behavior
+- [var adjustedContentInset: UIEdgeInsets](./adjustedcontentinset.md)
   The insets derived from the content insets and the safe area of the scroll view.
-- [var contentInset: UIEdgeInsets](uiscrollview/contentinset.md)
+- [var contentInset: UIEdgeInsets](./contentinset.md)
   The custom distance that the content view is inset from the safe area or scroll view edges.
-- [var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior](uiscrollview/contentinsetadjustmentbehavior-swift.property.md)
+- [var contentInsetAdjustmentBehavior: UIScrollView.ContentInsetAdjustmentBehavior](./contentinsetadjustmentbehavior-swift.property.md)
   The behavior for determining the adjusted content offsets.
-- [UIScrollView.ContentInsetAdjustmentBehavior](uiscrollview/contentinsetadjustmentbehavior-swift.enum.md)
+- [UIScrollView.ContentInsetAdjustmentBehavior](./contentinsetadjustmentbehavior-swift.enum.md)
   Constants indicating how safe area insets are added to the adjusted content inset.
 
 

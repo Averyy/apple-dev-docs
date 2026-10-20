@@ -1,14 +1,15 @@
 # IPSEC_DSCP_MAPPING_COPY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 IPSEC_DSCP_MAPPING_COPY = 0
 ```
 

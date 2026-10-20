@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The IC manufacturer code of the tag.
@@ -17,15 +18,20 @@ The IC manufacturer code of the tag.
 var icManufacturerCode: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger icManufacturerCode;
+```
+
 #### Discussion
 
-The IC manufacturer code comes from bits 49 through 56 of the [`identifier`](nfciso15693tag/identifier.md) data, in accordance with ISO/IEC 7816-6:2004.
+The IC manufacturer code comes from bits 49 through 56 of the [`identifier`](./identifier.md) data, in accordance with ISO/IEC 7816-6:2004.
 
 ## See Also
 
-- [var icSerialNumber: Data](nfciso15693tag/icserialnumber.md)
+### Getting Tag Information
+- [var icSerialNumber: Data](./icserialnumber.md)
   The IC serial number assigned to the tag by the manufacturer.
-- [var identifier: Data](nfciso15693tag/identifier.md)
+- [var identifier: Data](./identifier.md)
   The unique hardware identifier of the tag.
 
 

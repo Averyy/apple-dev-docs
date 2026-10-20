@@ -1,7 +1,8 @@
 # BNNS.AdamWOptimizer
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An optimizer that uses the AdamW optimization algorithm.
 
@@ -11,8 +12,10 @@ An optimizer that uses the AdamW optimization algorithm.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,63 +26,64 @@ struct AdamWOptimizer
 ## Topics
 
 ### Creating an AdamW Optimizer
-- [init(learningRate: Float, beta1: Float, beta2: Float, timeStep: Float, epsilon: Float, gradientScale: Float, weightDecay: Float, gradientClipping: BNNS.GradientClipping, usesAMSGrad: Bool)](bnns/adamwoptimizer/init(learningrate:beta1:beta2:timestep:epsilon:gradientscale:weightdecay:gradientclipping:usesamsgrad:).md)
+- [init(learningRate: Float, beta1: Float, beta2: Float, timeStep: Float, epsilon: Float, gradientScale: Float, weightDecay: Float, gradientClipping: BNNS.GradientClipping, usesAMSGrad: Bool)](./adamwoptimizer/init%28learningrate,beta1,beta2,timestep,epsilon,gradientscale,weightdecay,gradientclipping,usesamsgrad%29.md)
   Returns a new AdamW optimizer object with gradient clipped by value or clipped by norm.
 ### Inspecting the Properties of an AdamW Optimizer
-- [var learningRate: Float](bnns/adamwoptimizer/learningrate.md)
+- [var learningRate: Float](./adamwoptimizer/learningrate.md)
   A value that specifies the learning rate.
-- [var beta1: Float](bnns/adamwoptimizer/beta1.md)
+- [var beta1: Float](./adamwoptimizer/beta1.md)
   A value that specifies the first-moment constant, in the range `0` to `1`.
-- [var beta2: Float](bnns/adamwoptimizer/beta2.md)
+- [var beta2: Float](./adamwoptimizer/beta2.md)
   A value that specifies the second-moment constant, in the range `0` to `1`.
-- [var timeStep: Float](bnns/adamwoptimizer/timestep.md)
+- [var timeStep: Float](./adamwoptimizer/timestep.md)
   A value that’s at least `1` and represents the optimizer’s current time.
-- [var epsilon: Float](bnns/adamwoptimizer/epsilon.md)
+- [var epsilon: Float](./adamwoptimizer/epsilon.md)
   The epsilon value you use to improve numerical stability.
-- [var gradientScale: Float](bnns/adamwoptimizer/gradientscale.md)
+- [var gradientScale: Float](./adamwoptimizer/gradientscale.md)
   A value that specifies the gradient scaling factor.
-- [var weightDecay: Float](bnns/adamwoptimizer/weightdecay.md)
+- [var weightDecay: Float](./adamwoptimizer/weightdecay.md)
   The weight decay coefficient.
-- [var gradientClipping: BNNS.GradientClipping](bnns/adamwoptimizer/gradientclipping.md)
+- [var gradientClipping: BNNS.GradientClipping](./adamwoptimizer/gradientclipping.md)
   The gradient clipping function and bounds.
-- [BNNS.GradientClipping](bnns/gradientclipping.md)
+- [BNNS.GradientClipping](./gradientclipping.md)
   Constants that describe clipping functions.
-- [var accumulatorCountMultiplier: Int](bnns/adamwoptimizer/accumulatorcountmultiplier.md)
+- [var accumulatorCountMultiplier: Int](./adamwoptimizer/accumulatorcountmultiplier.md)
   The number of accumulators required for each parameter.
 
 ## Relationships
 
 ### Conforms To
-- [BNNSOptimizer](bnnsoptimizer.md)
+- [BNNSOptimizer](../bnnsoptimizer.md)
 
 ## See Also
 
-- [struct AdamOptimizer](bnns/adamoptimizer.md)
+### Optimizers
+- [struct AdamOptimizer](./adamoptimizer.md)
   An optimizer that uses the Adam optimization algorithm.
-- [struct RMSPropOptimizer](bnns/rmspropoptimizer.md)
+- [struct RMSPropOptimizer](./rmspropoptimizer.md)
   An optimizer that uses the root mean square propagation (RMSProp) optimization method.
-- [struct SGDMomentumOptimizer](bnns/sgdmomentumoptimizer.md)
+- [struct SGDMomentumOptimizer](./sgdmomentumoptimizer.md)
   An optimizer that uses the stochastic gradient descent (SGD) with the momentum optimization method.
-- [protocol BNNSOptimizer](bnnsoptimizer.md)
-- [struct BNNSOptimizerRegularizationFunction](bnnsoptimizerregularizationfunction.md)
+- [protocol BNNSOptimizer](../bnnsoptimizer.md)
+- [struct BNNSOptimizerRegularizationFunction](../bnnsoptimizerregularizationfunction.md)
   A structure that contains optimizer regularization functions.
-- [struct BNNSOptimizerAdamFields](bnnsoptimizeradamfields.md)
+- [struct BNNSOptimizerAdamFields](../bnnsoptimizeradamfields.md)
   A structure that contains the fields of an Adam optimizer.
-- [struct BNNSOptimizerAdamWithClippingFields](bnnsoptimizeradamwithclippingfields.md)
+- [struct BNNSOptimizerAdamWithClippingFields](../bnnsoptimizeradamwithclippingfields.md)
   A structure that contains the fields of an Adam or AdamW optimizer that optionally clips the gradient by value or by norm.
-- [struct BNNSOptimizerRMSPropFields](bnnsoptimizerrmspropfields.md)
+- [struct BNNSOptimizerRMSPropFields](../bnnsoptimizerrmspropfields.md)
   A structure that contains the fields of a root mean square propagation (RMSProp) optimizer.
-- [struct BNNSOptimizerRMSPropWithClippingFields](bnnsoptimizerrmspropwithclippingfields.md)
+- [struct BNNSOptimizerRMSPropWithClippingFields](../bnnsoptimizerrmspropwithclippingfields.md)
   A structure that contains the fields of a root mean square propagation (RMSProp) optimizer that optionally clips the gradient by value or by norm.
-- [struct BNNSOptimizerSGDMomentumFields](bnnsoptimizersgdmomentumfields.md)
+- [struct BNNSOptimizerSGDMomentumFields](../bnnsoptimizersgdmomentumfields.md)
   A structure that contains the fields of a stochastic gradient descent (SGD) with momentum optimizer.
-- [struct BNNSOptimizerSGDMomentumWithClippingFields](bnnsoptimizersgdmomentumwithclippingfields.md)
+- [struct BNNSOptimizerSGDMomentumWithClippingFields](../bnnsoptimizersgdmomentumwithclippingfields.md)
   A structure that contains the fields of a stochastic gradient descent (SGD) with momentum optimizer that optionally clips the gradient by value or by norm.
-- [struct BNNSOptimizerSGDMomentumVariant](bnnsoptimizersgdmomentumvariant.md)
+- [struct BNNSOptimizerSGDMomentumVariant](../bnnsoptimizersgdmomentumvariant.md)
   Constants that define SGD momentum variants.
-- [func BNNSOptimizerStep(BNNSOptimizerFunction, UnsafeRawPointer, Int, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>>, UnsafeMutablePointer<UnsafePointer<BNNSNDArrayDescriptor>>, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>?>?, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnsoptimizerstep(_:_:_:_:_:_:_:).md)
+- [func BNNSOptimizerStep(BNNSOptimizerFunction, UnsafeRawPointer, Int, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>>, UnsafeMutablePointer<UnsafePointer<BNNSNDArrayDescriptor>>, UnsafeMutablePointer<UnsafeMutablePointer<BNNSNDArrayDescriptor>?>?, UnsafePointer<BNNSFilterParameters>?) -> Int32](../bnnsoptimizerstep%28_,_,_,_,_,_,_%29.md)
   Applies a single optimization step to one or more parameters.
-- [struct BNNSOptimizerFunction](bnnsoptimizerfunction.md)
+- [struct BNNSOptimizerFunction](../bnnsoptimizerfunction.md)
   A structure that contains optimizer functions.
 
 

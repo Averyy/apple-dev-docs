@@ -1,13 +1,14 @@
 # file_provider_update
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties of an event that indicates an update to a file provider.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ Properties of an event that indicates an update to a file provider.
 var file_provider_update: es_event_file_provider_update_t { get set }
 ```
 
+```c
+es_event_file_provider_update_t file_provider_update;
+```
+
 ## See Also
 
-- [var file_provider_materialize: es_event_file_provider_materialize_t](es_events_t/file_provider_materialize.md)
+### File Provider Events
+- [var file_provider_materialize: es_event_file_provider_materialize_t](./file_provider_materialize.md)
   Properties of an event that indicates the materialization of a file provider.
 
 

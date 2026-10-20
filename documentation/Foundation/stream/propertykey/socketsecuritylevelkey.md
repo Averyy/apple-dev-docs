@@ -1,7 +1,8 @@
 # socketSecurityLevelKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 2.0+
@@ -18,19 +19,24 @@
 static let socketSecurityLevelKey: Stream.PropertyKey
 ```
 
+```c
+extern NSStreamPropertyKey const NSStreamSocketSecurityLevelKey;
+```
+
 #### Discussion
 
 The security level of the target stream. See `Secure-Socket Layer (SSL) Security Level` for a list of possible values.
 
 ## See Also
 
-- [static let dataWrittenToMemoryStreamKey: Stream.PropertyKey](stream/propertykey/datawrittentomemorystreamkey.md)
+### Type Properties
+- [static let dataWrittenToMemoryStreamKey: Stream.PropertyKey](./datawrittentomemorystreamkey.md)
   Value is an `NSData` instance containing the data written to a memory stream.
-- [static let fileCurrentOffsetKey: Stream.PropertyKey](stream/propertykey/filecurrentoffsetkey.md)
+- [static let fileCurrentOffsetKey: Stream.PropertyKey](./filecurrentoffsetkey.md)
   Value is an `NSNumber` object containing the current absolute offset of the stream.
-- [static let networkServiceType: Stream.PropertyKey](stream/propertykey/networkservicetype.md)
+- [static let networkServiceType: Stream.PropertyKey](./networkservicetype.md)
   The type of service for the stream. Providing the service type allows the system to properly handle certain attributes of the stream, including routing and suspension behavior. Most streams do not need to set this property. See `Stream Service Types` for a list of possible values.
-- [static let socksProxyConfigurationKey: Stream.PropertyKey](stream/propertykey/socksproxyconfigurationkey.md)
+- [static let socksProxyConfigurationKey: Stream.PropertyKey](./socksproxyconfigurationkey.md)
   Value is an `NSDictionary` object containing SOCKS proxy configuration information.
 
 

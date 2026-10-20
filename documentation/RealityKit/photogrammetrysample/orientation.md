@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientation at which the `image` pixel buffer is intended to be displayed in a 2D UI.
 

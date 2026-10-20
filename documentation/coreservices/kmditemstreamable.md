@@ -1,7 +1,8 @@
 # kMDItemStreamable
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Whether the content is prepared for streaming. A CFBoolean.
 
@@ -12,6 +13,10 @@ Whether the content is prepared for streaming. A CFBoolean.
 
 ```swift
 let kMDItemStreamable: CFString!
+```
+
+```c
+const CFStringRef kMDItemStreamable;
 ```
 
 

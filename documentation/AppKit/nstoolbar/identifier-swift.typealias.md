@@ -1,7 +1,8 @@
 # NSToolbar.Identifier
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A string value that you use to differentiate your app’s toolbars.
 
@@ -9,12 +10,16 @@ A string value that you use to differentiate your app’s toolbars.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 typealias Identifier = String
+```
+
+```c
+typedef NSString * NSToolbarIdentifier;
 ```
 
 #### Discussion
@@ -23,7 +28,8 @@ Multiple toolbar objects can have the same identifier. If two or more toolbars s
 
 ## See Also
 
-- [var identifier: NSToolbar.Identifier](nstoolbar/identifier-swift.property.md)
+### Getting the toolbar’s identity
+- [var identifier: NSToolbar.Identifier](./identifier-swift.property.md)
   The value you use to identify the toolbar in your app.
 
 

@@ -1,7 +1,8 @@
 # editorialNotes
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The editorial notes for the music video.
 

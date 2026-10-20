@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOACPIAddressSpaceIDEmbeddedController](1638138-anonymous/kioacpiaddressspaceidembeddedcontroller.md)
-- [kIOACPIAddressSpaceIDPCIConfiguration](1638138-anonymous/kioacpiaddressspaceidpciconfiguration.md)
-- [kIOACPIAddressSpaceIDSMBus](1638138-anonymous/kioacpiaddressspaceidsmbus.md)
-- [kIOACPIAddressSpaceIDSystemIO](1638138-anonymous/kioacpiaddressspaceidsystemio.md)
-- [kIOACPIAddressSpaceIDSystemMemory](1638138-anonymous/kioacpiaddressspaceidsystemmemory.md)
+- [kIOACPIAddressSpaceIDEmbeddedController](./api-1638138-anonymous/kioacpiaddressspaceidembeddedcontroller.md)
+- [kIOACPIAddressSpaceIDPCIConfiguration](./api-1638138-anonymous/kioacpiaddressspaceidpciconfiguration.md)
+- [kIOACPIAddressSpaceIDSMBus](./api-1638138-anonymous/kioacpiaddressspaceidsmbus.md)
+- [kIOACPIAddressSpaceIDSystemIO](./api-1638138-anonymous/kioacpiaddressspaceidsystemio.md)
+- [kIOACPIAddressSpaceIDSystemMemory](./api-1638138-anonymous/kioacpiaddressspaceidsystemmemory.md)
 
 
 ---

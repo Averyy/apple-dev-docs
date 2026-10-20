@@ -1,7 +1,8 @@
 # groupUserInterfaceLayoutDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user interface direction that controls the layout order of the items.
 
@@ -14,15 +15,20 @@ The user interface direction that controls the layout order of the items.
 var groupUserInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get set }
 ```
 
+```objc
+@property NSUserInterfaceLayoutDirection groupUserInterfaceLayoutDirection;
+```
+
 #### Discussion
 
-The default value is [`NSUserInterfaceLayoutDirection.leftToRight`](nsuserinterfacelayoutdirection/lefttoright.md).
+The default value is [`NSUserInterfaceLayoutDirection.leftToRight`](../nsuserinterfacelayoutdirection/lefttoright.md).
 
-If you want the order of the items in the group to respect the user’s preferred layout, set this property to the value of [`userInterfaceLayoutDirection`](nsapplication/userinterfacelayoutdirection.md) on the [`NSApplication`](nsapplication.md).
+If you want the order of the items in the group to respect the user’s preferred layout, set this property to the value of [`userInterfaceLayoutDirection`](../nsapplication/userinterfacelayoutdirection.md) on the [`NSApplication`](../nsapplication.md).
 
 ## See Also
 
-- [var groupTouchBar: NSTouchBar](nsgrouptouchbaritem/grouptouchbar.md)
+### Configuring groups
+- [var groupTouchBar: NSTouchBar](./grouptouchbar.md)
   A bar that holds this group’s items.
 
 

@@ -1,7 +1,8 @@
 # ASCredentialIdentityStoreError.Code.internalError
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation failed due to an internal error.
 
@@ -18,11 +19,16 @@ The operation failed due to an internal error.
 case internalError
 ```
 
+```c
+ASCredentialIdentityStoreErrorCodeInternalError
+```
+
 ## See Also
 
-- [ASCredentialIdentityStoreError.Code.storeBusy](ascredentialidentitystoreerror/code/storebusy.md)
+### Codes
+- [ASCredentialIdentityStoreError.Code.storeBusy](./storebusy.md)
   The operation failed because the credential identity store is busy.
-- [ASCredentialIdentityStoreError.Code.storeDisabled](ascredentialidentitystoreerror/code/storedisabled.md)
+- [ASCredentialIdentityStoreError.Code.storeDisabled](./storedisabled.md)
   The operation failed because the credential identity store is disabled.
 
 

@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the shareable event.
 
@@ -17,6 +18,10 @@ A string that identifies the shareable event.
 
 ```swift
 var label: String? { get }
+```
+
+```objc
+@property (readonly, nullable) NSString * label;
 ```
 
 

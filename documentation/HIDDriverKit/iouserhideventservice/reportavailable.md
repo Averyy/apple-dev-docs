@@ -1,23 +1,24 @@
 # ReportAvailable
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the event service that an updated report is available from the HID device.
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void ReportAvailable(uint64_t timestamp, uint32_t reportID, uint32_t reportLength, IOHIDReportType type, IOMemoryDescriptor *report, OSAction *action);
 ```
 
 #### Discussion
 
-Implement a custom version of this method in your event service. Use the [`TYPE`](https://developer.apple.com/documentation/driverkit/type) macro to let the system know that your method conforms to this prototype.
+Implement a custom version of this method in your event service. Use the [`TYPE`](../../DriverKit/type.md) macro to let the system know that your method conforms to this prototype.
 
 The system calls this method to notify your event service when a new report arrives.
 
@@ -32,9 +33,10 @@ The system calls this method to notify your event service when a new report arri
 
 ## See Also
 
-- [getElements](iouserhideventservice/getelements.md)
+### Responding to Input Reports
+- [getElements](./getelements.md)
   Returns an array of elements that contain the parsed data from the HID device’s report.
-- [handleReport](iouserhideventservice/handlereport.md)
+- [handleReport](./handlereport.md)
   Converts an incoming device report into dispatchable events.
 
 

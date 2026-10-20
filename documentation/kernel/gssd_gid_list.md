@@ -1,14 +1,15 @@
 # gssd_gid_list
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t *gssd_gid_list;
 ```
 

@@ -1,7 +1,8 @@
 # timeIntervalSince(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the interval between this date and another given date.
 
@@ -30,17 +31,18 @@ The interval between the receiver and the `another` parameter. If the receiver i
 
 ## See Also
 
-- [var timeIntervalSinceNow: TimeInterval](date/timeintervalsincenow.md)
+### Getting Time Intervals
+- [var timeIntervalSinceNow: TimeInterval](./timeintervalsincenow.md)
   The time interval between the date value and the current date and time.
-- [var timeIntervalSinceReferenceDate: TimeInterval](date/timeintervalsincereferencedate-swift.property.md)
+- [var timeIntervalSinceReferenceDate: TimeInterval](./timeintervalsincereferencedate-swift.property.md)
   The interval between the date value and 00:00:00 UTC on 1 January 2001.
-- [var timeIntervalSince1970: TimeInterval](date/timeintervalsince1970.md)
+- [var timeIntervalSince1970: TimeInterval](./timeintervalsince1970.md)
   The interval between the date value and 00:00:00 UTC on 1 January 1970.
-- [static var timeIntervalSinceReferenceDate: TimeInterval](date/timeintervalsincereferencedate-swift.type.property.md)
+- [static var timeIntervalSinceReferenceDate: TimeInterval](./timeintervalsincereferencedate-swift.type.property.md)
   The interval between 00:00:00 UTC on 1 January 2001 and the current date and time.
-- [static let timeIntervalBetween1970AndReferenceDate: Double](date/timeintervalbetween1970andreferencedate.md)
+- [static let timeIntervalBetween1970AndReferenceDate: Double](./timeintervalbetween1970andreferencedate.md)
   The number of seconds from 1 January 1970 to the reference date, 1 January 2001.
-- [typealias Stride](date/stride.md)
+- [typealias Stride](./stride.md)
   A type alias to define the stride of a date.
 
 

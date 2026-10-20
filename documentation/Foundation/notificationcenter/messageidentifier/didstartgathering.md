@@ -1,7 +1,8 @@
 # didStartGathering
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about a metadata query that is starting its initial result gathering.
 
@@ -20,13 +21,16 @@ An identifier for a message about a metadata query that is starting its initial 
 static var didStartGathering: NotificationCenter.BaseMessageIdentifier<NSMetadataQuery.DidStartGatheringMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSMetadataQuery.DidStartGatheringMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`NSMetadataQuery.DidStartGatheringMessage`](nsmetadataquery/didstartgatheringmessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`NSMetadataQuery.DidStartGatheringMessage`](../../nsmetadataquery/didstartgatheringmessage.md).
 
 ## See Also
 
-- [static var didFinishGathering: NotificationCenter.BaseMessageIdentifier<NSMetadataQuery.DidFinishGatheringMessage>](notificationcenter/messageidentifier/didfinishgathering.md)
+### Identifying metadata query messages
+- [static var didFinishGathering: NotificationCenter.BaseMessageIdentifier<NSMetadataQuery.DidFinishGatheringMessage>](./didfinishgathering.md)
   An identifier for a message about a metadata query that finished its initial result gathering.
 
 

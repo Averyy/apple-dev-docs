@@ -1,7 +1,8 @@
 # constantValues
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of constant values assigned to the function constants.
 
@@ -20,23 +21,28 @@ The set of constant values assigned to the function constants.
 var constantValues: MTLFunctionConstantValues? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) MTLFunctionConstantValues * constantValues;
+```
+
 #### Discussion
 
 The default value is `nil`. If you are creating a function object for a specialized function, you need to provide an array of valid constant values for all required function constants.
 
 ## See Also
 
-- [var name: String?](mtlfunctiondescriptor/name.md)
+### Specifying the function configuration
+- [var name: String?](./name.md)
   The name of the function to fetch from the library.
-- [var specializedName: String?](mtlfunctiondescriptor/specializedname.md)
+- [var specializedName: String?](./specializedname.md)
   A new name for the created function object.
-- [var options: MTLFunctionOptions](mtlfunctiondescriptor/options.md)
+- [var options: MTLFunctionOptions](./options.md)
   Flags specifying how Metal should create the new function object.
-- [var binaryArchives: [any MTLBinaryArchive]?](mtlfunctiondescriptor/binaryarchives.md)
+- [var binaryArchives: [any MTLBinaryArchive]?](./binaryarchives.md)
   The binary archives to search for a previously-compiled version of this function.
-- [struct MTLFunctionOptions](mtlfunctionoptions.md)
+- [struct MTLFunctionOptions](../mtlfunctionoptions.md)
   Options that define how Metal compiles a GPU function.
-- [class MTLLinkedFunctions](mtllinkedfunctions.md)
+- [class MTLLinkedFunctions](../mtllinkedfunctions.md)
   A set of related functions that Metal links to when necessary to create the function instance.
 
 

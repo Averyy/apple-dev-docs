@@ -1,7 +1,8 @@
 # init(points:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a polygon from a list of map points.
 
@@ -11,7 +12,7 @@ Creates a polygon from a list of map points.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ init(points: [MKMapPoint])
 
 ## Parameters
 
-- `points`: An array of [`MKMapPoint`](mkmappoint.md) points that make up the vertices of the polygon.
+- `points`: An array of [`MKMapPoint`](../mkmappoint.md) points that make up the vertices of the polygon.
 
 ## See Also
 
-- [init(coordinates: [CLLocationCoordinate2D])](mappolygon/init(coordinates:).md)
+### Creating a map polygon
+- [init(coordinates: [CLLocationCoordinate2D])](./init%28coordinates%29.md)
   Creates a polygon from a list of coordinates you provide.
-- [init(MKPolygon)](mappolygon/init(_:).md)
+- [init(MKPolygon)](./init%28_%29.md)
   Creates a polygon from the polygon you provide.
 
 

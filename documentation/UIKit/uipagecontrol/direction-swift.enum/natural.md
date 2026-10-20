@@ -1,7 +1,8 @@
 # UIPageControl.Direction.natural
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A direction that infers the lay out from the system’s locale.
 
@@ -18,19 +19,24 @@ A direction that infers the lay out from the system’s locale.
 case natural
 ```
 
+```c
+UIPageControlDirectionNatural
+```
+
 #### Discussion
 
-Use this case to lay out the page control’s indicators in the natural direction of the system’s locale. By default, this means [`UIPageControl.Direction.leftToRight`](uipagecontrol/direction-swift.enum/lefttoright.md) for left-to-right languages and [`UIPageControl.Direction.rightToLeft`](uipagecontrol/direction-swift.enum/righttoleft.md) for right-to-left languages.
+Use this case to lay out the page control’s indicators in the natural direction of the system’s locale. By default, this means [`UIPageControl.Direction.leftToRight`](./lefttoright.md) for left-to-right languages and [`UIPageControl.Direction.rightToLeft`](./righttoleft.md) for right-to-left languages.
 
 ## See Also
 
-- [UIPageControl.Direction.leftToRight](uipagecontrol/direction-swift.enum/lefttoright.md)
+### Directions
+- [UIPageControl.Direction.leftToRight](./lefttoright.md)
   A direction that lays out the page indicators from left to right.
-- [UIPageControl.Direction.rightToLeft](uipagecontrol/direction-swift.enum/righttoleft.md)
+- [UIPageControl.Direction.rightToLeft](./righttoleft.md)
   A direction that lays out the page indicators from right to left.
-- [UIPageControl.Direction.topToBottom](uipagecontrol/direction-swift.enum/toptobottom.md)
+- [UIPageControl.Direction.topToBottom](./toptobottom.md)
   A direction that lays out the page indicators from top to bottom.
-- [UIPageControl.Direction.bottomToTop](uipagecontrol/direction-swift.enum/bottomtotop.md)
+- [UIPageControl.Direction.bottomToTop](./bottomtotop.md)
   A direction that lays out the page indicators from bottom to top.
 
 

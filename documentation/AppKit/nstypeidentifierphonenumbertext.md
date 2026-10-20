@@ -1,7 +1,8 @@
 # NSTypeIdentifierPhoneNumberText
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -15,15 +16,20 @@
 let NSTypeIdentifierPhoneNumberText: String
 ```
 
+```c
+extern NSString * const NSTypeIdentifierPhoneNumberText;
+```
+
 #### Discussion
 
-UTI subtype for [`phoneNumber`](https://developer.apple.com/documentation/foundation/nstextcheckingresult/phonenumber), `com.apple.structured-text.telephone-number`.
+UTI subtype for [`phoneNumber`](../Foundation/nstextcheckingresult/phonenumber.md), `com.apple.structured-text.telephone-number`.
 
 ## See Also
 
-- [let NSTypeIdentifierAddressText: String](nstypeidentifieraddresstext.md)
-- [let NSTypeIdentifierDateText: String](nstypeidentifierdatetext.md)
-- [let NSTypeIdentifierTransitInformationText: String](nstypeidentifiertransitinformationtext.md)
+### UTI Subtypes for Data Detector Types
+- [let NSTypeIdentifierAddressText: String](./nstypeidentifieraddresstext.md)
+- [let NSTypeIdentifierDateText: String](./nstypeidentifierdatetext.md)
+- [let NSTypeIdentifierTransitInformationText: String](./nstypeidentifiertransitinformationtext.md)
 
 
 ---

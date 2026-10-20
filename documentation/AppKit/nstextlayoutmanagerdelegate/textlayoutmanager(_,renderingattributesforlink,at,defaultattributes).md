@@ -1,7 +1,8 @@
 # textLayoutManager(_:renderingAttributesForLink:at:defaultAttributes:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a dictionary of rendering attributes for rendering a link.
 
@@ -14,13 +15,17 @@ Returns a dictionary of rendering attributes for rendering a link.
 optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, renderingAttributesForLink link: Any, at location: any NSTextLocation, defaultAttributes renderingAttributes: [NSAttributedString.Key : Any] = [:]) -> [NSAttributedString.Key : Any]?
 ```
 
+```objc
+- (NSDictionary<NSString *,id> *) textLayoutManager:(NSTextLayoutManager *) textLayoutManager renderingAttributesForLink:(id) link atLocation:(id<NSTextLocation>) location defaultAttributes:(NSDictionary<NSString *,id> *) renderingAttributes;
+```
+
 #### Return Value
 
 A dictionary of rendering attributes for the link, or `nil` to use defaults.
 
 #### Discussion
 
-Just as other rendering attributes, specifying [`NSNull`](https://developer.apple.com/documentation/foundation/nsnull) removes the attribute from the final attributes used for rendering. It has priority over the general rendering attributes.
+Just as other rendering attributes, specifying [`NSNull`](../../Foundation/nsnull.md) removes the attribute from the final attributes used for rendering. It has priority over the general rendering attributes.
 
 The method the framework calls to return a dictionary of attributes for rendering a link attribute name.
 
@@ -33,9 +38,10 @@ The method the framework calls to return a dictionary of attributes for renderin
 
 ## See Also
 
-- [func textLayoutManager(NSTextLayoutManager, shouldBreakLineBefore: any NSTextLocation, hyphenating: Bool) -> Bool](nstextlayoutmanagerdelegate/textlayoutmanager(_:shouldbreaklinebefore:hyphenating:).md)
+### Responding to layout changes
+- [func textLayoutManager(NSTextLayoutManager, shouldBreakLineBefore: any NSTextLocation, hyphenating: Bool) -> Bool](./textlayoutmanager%28_,shouldbreaklinebefore,hyphenating%29.md)
   Invoked while determining the soft line break point.
-- [func textLayoutManager(NSTextLayoutManager, textLayoutFragmentFor: any NSTextLocation, in: NSTextElement) -> NSTextLayoutFragment](nstextlayoutmanagerdelegate/textlayoutmanager(_:textlayoutfragmentfor:in:).md)
+- [func textLayoutManager(NSTextLayoutManager, textLayoutFragmentFor: any NSTextLocation, in: NSTextElement) -> NSTextLayoutFragment](./textlayoutmanager%28_,textlayoutfragmentfor,in%29.md)
   Returns a text layout fragment for the specified location in the text element.
 
 

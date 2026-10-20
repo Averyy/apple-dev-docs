@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes exports from a decoder.
 
@@ -21,7 +22,8 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [init(exportToFiles: Bool, dataTypes: BEExportOptions.DataTypes)](beexportoptions/init(exporttofiles:datatypes:).md)
+### Creating export options
+- [init(exportToFiles: Bool, dataTypes: BEExportOptions.DataTypes)](./init%28exporttofiles,datatypes%29.md)
   Initializes exports with file information and data types.
 
 

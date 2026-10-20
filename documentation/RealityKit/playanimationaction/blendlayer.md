@@ -1,7 +1,8 @@
 # blendLayer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer that specifies the order in which to apply animations when more than one animation is playing.
 

@@ -1,18 +1,19 @@
 # right
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The right-edge width.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The right-edge width.
 var right: CGFloat
 ```
 
+```c
+CGFloat right;
+```
+
 ## See Also
 
-- [var left: CGFloat](avedgewidths/left.md)
+### Edge widths
+- [var left: CGFloat](./left.md)
   The left-edge width.
-- [var top: CGFloat](avedgewidths/top.md)
+- [var top: CGFloat](./top.md)
   The top-edge width.
-- [var bottom: CGFloat](avedgewidths/bottom.md)
+- [var bottom: CGFloat](./bottom.md)
   The bottom-edge width.
 
 

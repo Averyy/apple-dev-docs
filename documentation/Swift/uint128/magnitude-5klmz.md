@@ -1,7 +1,8 @@
 # magnitude
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The magnitude of this value.
 

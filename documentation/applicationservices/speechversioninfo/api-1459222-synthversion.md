@@ -1,7 +1,8 @@
 # synthVersion
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The version number of the synthesizer.
 
@@ -12,6 +13,10 @@ The version number of the synthesizer.
 
 ```swift
 var synthVersion: NumVersion
+```
+
+```c
+NumVersion synthVersion;
 ```
 
 

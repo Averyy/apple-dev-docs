@@ -1,7 +1,8 @@
 # bounds
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle that indicates the position and extent of the QR code feature in image coordinates.
 
@@ -10,13 +11,17 @@ A rectangle that indicates the position and extent of the QR code feature in ima
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var bounds: CGRect { get }
+```
+
+```objc
+@property (readonly) CGRect bounds;
 ```
 
 #### Discussion

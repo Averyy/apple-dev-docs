@@ -1,22 +1,27 @@
 # authenticationToken
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The token for authenticating update requests.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var authenticationToken: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * authenticationToken;
 ```
 
 #### Discussion
@@ -27,7 +32,8 @@ Don’t change the authentication token during an update.
 
 ## See Also
 
-- [var webServiceURL: URL?](pkpass/webserviceurl.md)
+### Getting the web service information
+- [var webServiceURL: URL?](./webserviceurl.md)
   The URL for the web service.
 
 

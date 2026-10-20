@@ -1,7 +1,8 @@
 # HMCharacteristicValueLockMechanismState.secured
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The lock mechanism is locked.
 
@@ -19,13 +20,18 @@ The lock mechanism is locked.
 case secured
 ```
 
+```c
+HMCharacteristicValueLockMechanismStateSecured
+```
+
 ## See Also
 
-- [HMCharacteristicValueLockMechanismState.unsecured](hmcharacteristicvaluelockmechanismstate/unsecured.md)
+### Lock Mechanism State
+- [HMCharacteristicValueLockMechanismState.unsecured](./unsecured.md)
   The lock mechanism is unlocked.
-- [HMCharacteristicValueLockMechanismState.jammed](hmcharacteristicvaluelockmechanismstate/jammed.md)
+- [HMCharacteristicValueLockMechanismState.jammed](./jammed.md)
   The lock mechanism is jammed.
-- [HMCharacteristicValueLockMechanismState.unknown](hmcharacteristicvaluelockmechanismstate/unknown.md)
+- [HMCharacteristicValueLockMechanismState.unknown](./unknown.md)
   The lock mechanism is in an unknown state.
 
 

@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/coremltools-examples
 
 # Examples
 
-**
-
-- [.md](../_sources/source/coremltools-examples.md)
-- **
-
-.pdf
-
-**
-
-# Examples
-
- Table of contents 
-
-## Contents
-
-# Examples
-
 The following are code example snippets and full examples of using Core ML Tools to convert models.
 
 ## For a Quick Start
@@ -41,8 +24,8 @@ Full example:
 
 - [Load and Convert Model Workflow](load-and-convert-model.md)
 - [TensorFlow 2 Workflow](tensorflow-2.md)
-- [Convert a Pre-trained Model](tensorflow-2.html#convert-a-pre-trained-model)
-- [Convert a User-defined Model](tensorflow-2.html#convert-a-user-defined-model)
+- [Convert a Pre-trained Model](tensorflow-2.md#convert-a-pre-trained-model)
+- [Convert a User-defined Model](tensorflow-2.md#convert-a-user-defined-model)
 
 Full examples:
 
@@ -51,9 +34,9 @@ Full examples:
 
 ## TensorFlow 1
 
-- [Convert From TensorFlow 1](load-and-convert-model.html#convert-from-tensorflow-1).
-- [Export as Frozen Graph and Convert](tensorflow-1-workflow.html#export-as-a-frozen-graph-and-convert).
-- [Convert a Pre-trained Model](tensorflow-1-workflow.html#convert-a-pre-trained-model).
+- [Convert From TensorFlow 1](load-and-convert-model.md#convert-from-tensorflow-1).
+- [Export as Frozen Graph and Convert](tensorflow-1-workflow.md#export-as-a-frozen-graph-and-convert).
+- [Convert a Pre-trained Model](tensorflow-1-workflow.md#convert-a-pre-trained-model).
 
 Full examples:
 
@@ -62,7 +45,7 @@ Full examples:
 
 ## PyTorch
 
-- [Convert from PyTorch](load-and-convert-model.html#convert-from-pytorch).
+- [Convert from PyTorch](load-and-convert-model.md#convert-from-pytorch).
 - [PyTorch Conversion Workflow](convert-pytorch-workflow.md).
 - [Model Tracing](model-tracing.md).
 - [Model Exporting](model-exporting.md).
@@ -83,19 +66,19 @@ Full example:
 
 ### Image Inputs
 
-- [Use an MLMultiArray](image-inputs.html#use-an-mlmultiarray).
-- [Use an ImageType](image-inputs.html#use-an-imagetype).
-- [Add Image Preprocessing Options](image-inputs.html#add-image-preprocessing-options).
+- [Use an MLMultiArray](image-inputs.md#use-an-mlmultiarray).
+- [Use an ImageType](image-inputs.md#use-an-imagetype).
+- [Add Image Preprocessing Options](image-inputs.md#add-image-preprocessing-options).
 
 ### Classifiers
 
-- [Produce a Classifier Model](classifiers.html#produce-a-classifier-model).
+- [Produce a Classifier Model](classifiers.md#produce-a-classifier-model).
 
 ### Flexible Input Shapes
 
-- [Select from Predetermined Shapes](flexible-inputs.html#select-from-predetermined-shapes).
-- [Set the Range for Each Dimension](flexible-inputs.html#set-the-range-for-each-dimension).
-- [Update a Core ML Model to Use Flexible Input shapes](flexible-inputs.html#update-a-core-ml-model-to-use-flexible-input-shapes)
+- [Select from Predetermined Shapes](flexible-inputs.md#select-from-predetermined-shapes).
+- [Set the Range for Each Dimension](flexible-inputs.md#set-the-range-for-each-dimension).
+- [Update a Core ML Model to Use Flexible Input shapes](flexible-inputs.md#update-a-core-ml-model-to-use-flexible-input-shapes)
 
 ### Composite and Custom Operators
 
@@ -109,7 +92,7 @@ Full example:
 
 Full examples:
 
-- [Training-Time Compression Examples](https://apple.github.io/coremltools/source/coremltools.optimize.torch.examples.md): Use magnitude pruning, linear quantization, or palettization while training your model, or start from a pre-trained model and fine-tune it with training data.
+- [Training-Time Compression Examples](https://apple.github.io/coremltools/source/coremltools.optimize.torch.examples.html): Use magnitude pruning, linear quantization, or palettization while training your model, or start from a pre-trained model and fine-tune it with training data.
 - [Compressing Neural Network Weights](quantization-neural-network.md): Reduce the size of a neural network by reducing the number of bits that represent a number.
 
 ## Trees and Linear Models
@@ -122,35 +105,35 @@ Full examples:
 
 ### MLModel Overview
 
-- [Load and save the MLModel](mlmodel.html#load-and-save-the-mlmodel).
-- [Use the MLModel for Prediction](mlmodel.html#use-the-mlmodel-for-prediction).
-- [Work with the Spec](mlmodel.html#work-with-the-spec).
-- [Update the Metadata and Input/output Descriptions](mlmodel.html#update-the-metadata-and-input-output-descriptions).
+- [Load and save the MLModel](mlmodel.md#load-and-save-the-mlmodel).
+- [Use the MLModel for Prediction](mlmodel.md#use-the-mlmodel-for-prediction).
+- [Work with the Spec](mlmodel.md#work-with-the-spec).
+- [Update the Metadata and Input/output Descriptions](mlmodel.md#update-the-metadata-and-input-output-descriptions).
 
 ### Model Prediction
 
 - [Make Predictions](model-prediction.md)
-- [Multi-array Prediction](model-prediction.html#multi-array-prediction)
-- [Image Prediction](model-prediction.html#image-prediction)
-- [Image Prediction for a Multi-array Model](model-prediction.html#image-prediction-for-a-multi-array-model)
-- [Predict From the Compiled Model](model-prediction.html#predict-from-the-compiled-model)
+- [Multi-array Prediction](model-prediction.md#multi-array-prediction)
+- [Image Prediction](model-prediction.md#image-prediction)
+- [Image Prediction for a Multi-array Model](model-prediction.md#image-prediction-for-a-multi-array-model)
+- [Predict From the Compiled Model](model-prediction.md#predict-from-the-compiled-model)
 
 Full example:
 
-- [Compiled Model Timing Example](model-prediction.html#timing-example): Demonstrates timing differences with calling a large model.
+- [Compiled Model Timing Example](model-prediction.md#timing-example): Demonstrates timing differences with calling a large model.
 
 ### Xcode Model Preview Types
 
 Full examples:
 
-- [Segmentation Example](xcode-model-preview-types.html#segmentation-example)
-- [Body Pose Example](xcode-model-preview-types.html#body-pose-example)
+- [Segmentation Example](xcode-model-preview-types.md#segmentation-example)
+- [Body Pose Example](xcode-model-preview-types.md#body-pose-example)
 
 ### MLModel Utilities
 
-- [Rename a Feature](mlmodel-utilities.html#rename-a-feature).
-- [Convert All Double Multi-array Feature Descriptions to Float](mlmodel-utilities.html#convert-all-double-multi-array-feature-descriptions-to-float).
-- [Evaluate Classifier, Regressor, and Transformer models](mlmodel-utilities.html#evaluate-classifier-regressor-and-transformer-models).
+- [Rename a Feature](mlmodel-utilities.md#rename-a-feature).
+- [Convert All Double Multi-array Feature Descriptions to Float](mlmodel-utilities.md#convert-all-double-multi-array-feature-descriptions-to-float).
+- [Evaluate Classifier, Regressor, and Transformer models](mlmodel-utilities.md#evaluate-classifier-regressor-and-transformer-models).
 
 ## Updatable Models
 
@@ -160,5 +143,3 @@ Full examples:
 - [Neural Network Classifier](updatable-neural-network-classifier-on-mnist-dataset.md): Create a simple convolutional model with Keras, convert the model to Core ML, and make the model updatable.
 - [Pipeline Classifier](updatable-tiny-drawing-classifier-pipeline-model.md): Use a pipeline composed of a drawing-embedding model and a nearest neighbor classifier to create a model for training a sketch classifier.
 If you have a code example you’d like to submit, see [Contributing](how-to-contribute.md).
-
-** Contents

@@ -1,7 +1,8 @@
 # orientation
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 Specifies the orientation of the device.
 
@@ -10,13 +11,13 @@ Specifies the orientation of the device.
 
 ## Declaration
 
-```swift
+```
 readonly attribute long orientation;
 ```
 
 #### Discussion
 
-This property is set to one of the values in [`Table 1`](domwindow/1632568-orientation#1965650.md). For example, if the user starts with the device in portrait orientation and then changes to landscape orientation by turning the device to the right, the window’s `orientation` property is set to `-90`. If the user instead changes to landscape by turning the device to the left, the window’s `orientation` property is set to `90`. The default value is `0`.
+This property is set to one of the values in [Table 1](./api-1632568-orientation.md#1965650). For example, if the user starts with the device in portrait orientation and then changes to landscape orientation by turning the device to the right, the window’s `orientation` property is set to `-90`. If the user instead changes to landscape by turning the device to the left, the window’s `orientation` property is set to `90`. The default value is `0`.
 
 | Value | Description |
 | --- | --- |
@@ -27,9 +28,10 @@ This property is set to one of the values in [`Table 1`](domwindow/1632568-orien
 
 ## See Also
 
-- [ondevicemotion](domwindow/1632048-ondevicemotion.md)
+### Getting Orientation and Motion Events
+- [ondevicemotion](./api-1632048-ondevicemotion.md)
   The event listener that is called when the device motion changes. 
-- [ondeviceorientation](domwindow/1628872-ondeviceorientation.md)
+- [ondeviceorientation](./api-1628872-ondeviceorientation.md)
   The event listener that is called while the device orientation changes around the x, y, and z axes. 
 
 

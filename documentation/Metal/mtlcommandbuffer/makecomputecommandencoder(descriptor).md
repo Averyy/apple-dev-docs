@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a compute command encoder from a descriptor.
@@ -20,21 +21,26 @@ Creates a compute command encoder from a descriptor.
 func makeComputeCommandEncoder(descriptor computePassDescriptor: MTLComputePassDescriptor) -> (any MTLComputeCommandEncoder)?
 ```
 
+```objc
+- (id<MTLComputeCommandEncoder>) computeCommandEncoderWithDescriptor:(MTLComputePassDescriptor *) computePassDescriptor;
+```
+
 #### Discussion
 
-Use an [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) instance’s methods to set up a single compute pass.
+Use an [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) instance’s methods to set up a single compute pass.
 
 ## Parameters
 
-- `computePassDescriptor`: An [`MTLComputePassDescriptor`](mtlcomputepassdescriptor.md) instance that configures the [`MTLComputeCommandEncoder`](mtlcomputecommandencoder.md) the method returns.
+- `computePassDescriptor`: An [`MTLComputePassDescriptor`](../mtlcomputepassdescriptor.md) instance that configures the [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) the method returns.
 
 ## See Also
 
-- [func makeComputeCommandEncoder() -> (any MTLComputeCommandEncoder)?](mtlcommandbuffer/makecomputecommandencoder.md)
+### Creating compute encoders
+- [func makeComputeCommandEncoder() -> (any MTLComputeCommandEncoder)?](./makecomputecommandencoder%28%29.md)
   Creates a compute command encoder that uses default settings.
-- [func makeComputeCommandEncoder(dispatchType: MTLDispatchType) -> (any MTLComputeCommandEncoder)?](mtlcommandbuffer/makecomputecommandencoder(dispatchtype:).md)
+- [func makeComputeCommandEncoder(dispatchType: MTLDispatchType) -> (any MTLComputeCommandEncoder)?](./makecomputecommandencoder%28dispatchtype%29.md)
   Creates a compute command encoder with a dispatch type.
-- [enum MTLDispatchType](mtldispatchtype.md)
+- [enum MTLDispatchType](../mtldispatchtype.md)
   The type of dispatch method to use when calling encoded functions.
 
 

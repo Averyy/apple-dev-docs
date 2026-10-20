@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of configuration settings your app can override when loading a model.
 
@@ -20,13 +21,18 @@ A dictionary of configuration settings your app can override when loading a mode
 var parameters: [MLParameterKey : Any]? { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, nullable) NSDictionary<MLParameterKey *,id> * parameters;
+```
+
 ## See Also
 
-- [var functionName: String?](mlmodelconfiguration/functionname.md)
+### Configuring model parameters
+- [var functionName: String?](./functionname.md)
   Function name that `MLModel` will use.
-- [var modelDisplayName: String?](mlmodelconfiguration/modeldisplayname.md)
+- [var modelDisplayName: String?](./modeldisplayname.md)
   A human readable name of a model for display purposes.
-- [class MLParameterKey](mlparameterkey.md)
+- [class MLParameterKey](../mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
 
 

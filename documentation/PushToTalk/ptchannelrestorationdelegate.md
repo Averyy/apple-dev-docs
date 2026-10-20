@@ -1,7 +1,8 @@
 # PTChannelRestorationDelegate
 
 **Framework**: Push to Talk  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the channel restoration behavior.
 
@@ -16,24 +17,29 @@ A type that represents the channel restoration behavior.
 protocol PTChannelRestorationDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol PTChannelRestorationDelegate <NSObject>
+```
+
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](./creating-a-push-to-talk-app.md)
 
 ## Topics
 
 ### Getting the channel descriptor
-- [func channelDescriptor(restoredChannelUUID: UUID) -> PTChannelDescriptor](ptchannelrestorationdelegate/channeldescriptor(restoredchanneluuid:).md)
+- [func channelDescriptor(restoredChannelUUID: UUID) -> PTChannelDescriptor](./ptchannelrestorationdelegate/channeldescriptor%28restoredchanneluuid%29.md)
   Tells your observer the system restored the channel.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PTChannelDescriptor](ptchanneldescriptor.md)
+### Channel restoration
+- [class PTChannelDescriptor](./ptchanneldescriptor.md)
   An object that describes a channel.
 
 

@@ -1,7 +1,8 @@
 # smsSizeToBeSentAsMMSInstead
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum size of an SMS message, beyond which the client needs to use MMS instead.
 

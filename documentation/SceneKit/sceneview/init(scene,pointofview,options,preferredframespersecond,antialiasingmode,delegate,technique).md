@@ -1,16 +1,17 @@
 # init(scene:pointOfView:options:preferredFramesPerSecond:antialiasingMode:delegate:technique:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 26.0
+- iPadOS 14.0+ - Deprecated in 26.0
+- Mac Catalyst 14.0+ - Deprecated in 26.0
+- macOS 11.0+ - Deprecated in 26.0
+- tvOS 14.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 7.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -21,7 +22,8 @@
 
 ## See Also
 
-- [SceneView.Options](sceneview/options.md)
+### Creating a Scene View
+- [SceneView.Options](./options.md)
 
 
 ---

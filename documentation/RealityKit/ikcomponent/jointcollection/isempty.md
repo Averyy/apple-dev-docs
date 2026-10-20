@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the collection is empty.
 

@@ -1,7 +1,8 @@
 # init(devicePlacement:deviceCapabilities:primaryAudioSourceDeviceIdentifier:secondaryAudioSourceDeviceIdentifier:)
 
 **Framework**: AudioAccessoryKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio accessory configuration.
 

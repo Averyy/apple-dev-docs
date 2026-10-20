@@ -1,7 +1,8 @@
 # ApplePayErrorContactField
 
 **Framework**: Apple Pay on the Web  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Names of the fields in the shipping or billing contact information, used to locate errors in the payment sheet.
 
@@ -11,60 +12,61 @@ Names of the fields in the shipping or billing contact information, used to loca
 
 ## Declaration
 
-```swift
+```
 enum ApplePayErrorContactField
 ```
 
 #### Overview
 
-When shipping or billing contact information has an error, you use the error [`code`](applepayerror/code.md) values of either `"shippingContactInvalid"` or `"billingContactInvalid"` to indicate which one has the error. You use the contact field to indicate the exact field with the error. The corresponding field in the shipping or billing section of the payment sheet is highlighted.
+When shipping or billing contact information has an error, you use the error [`code`](./applepayerror/code.md) values of either `"shippingContactInvalid"` or `"billingContactInvalid"` to indicate which one has the error. You use the contact field to indicate the exact field with the error. The corresponding field in the shipping or billing section of the payment sheet is highlighted.
 
 Note that the remaining error codes, `"addressUnserviceable"` and `"unknown"`, do not require contact fields.
 
-Use contact field values in the [`contactField`](applepayerror/contactfield.md) property of an [`ApplePayError`](applepayerror.md) when you return errors in the completion functions, as shown in the following table.
+Use contact field values in the [`contactField`](./applepayerror/contactfield.md) property of an [`ApplePayError`](./applepayerror.md) when you return errors in the completion functions, as shown in the following table.
 
 Contact field values are available in all versions of the API except as stated in the table.
 
 | Contact Field Value | Completion methods that support `"shippingContactInvalid"` error code | Completion methods that support `"billingContactInvalid"` error code |
 | --- | --- | --- |
-| `"phoneNumber"` | [`completePayment`](applepaysession/completepayment.md) |  |
-| `"emailAddress"` | [`completePayment`](applepaysession/completepayment.md) |  |
-| `"name"` | [`completePayment`](applepaysession/completepayment.md) | [`completePayment`](applepaysession/completepayment.md) |
-| `"phoneticName"` ![None](/images/com.apple.applepayontheweb/spacer.png) (available starting in API version 3) | [`completePayment`](applepaysession/completepayment.md) | [`completePayment`](applepaysession/completepayment.md) |
-| `"postalAddress"` | [`completeShippingContactSelection`](applepaysession/completeshippingcontactselection.md) ![None](/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](applepaysession/completepayment.md) | [`completePayment`](applepaysession/completepayment.md) |
-| `"addressLines"` | [`completePayment`](applepaysession/completepayment.md) | [`completePayment`](applepaysession/completepayment.md) |
-| `"locality"` | [`completeShippingContactSelection`](applepaysession/completeshippingcontactselection.md) ![None](/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](applepaysession/completepayment.md) | [`completePayment`](applepaysession/completepayment.md) |
-| `"subLocality"` | [`completeShippingContactSelection`](applepaysession/completeshippingcontactselection.md) ![None](/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](applepaysession/completepayment.md) | [`completePayment`](applepaysession/completepayment.md) |
-| `"postalCode"` | [`completeShippingContactSelection`](applepaysession/completeshippingcontactselection.md) ![None](/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](applepaysession/completepayment.md) | [`completePayment`](applepaysession/completepayment.md) |
-| `"administrativeArea"` | [`completeShippingContactSelection`](applepaysession/completeshippingcontactselection.md) ![None](/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](applepaysession/completepayment.md) | [`completePayment`](applepaysession/completepayment.md) |
-| `"subAdministrativeArea"` | [`completeShippingContactSelection`](applepaysession/completeshippingcontactselection.md) ![None](/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](applepaysession/completepayment.md) | [`completePayment`](applepaysession/completepayment.md) |
-| `"country"` | [`completeShippingContactSelection`](applepaysession/completeshippingcontactselection.md) ![None](/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](applepaysession/completepayment.md) | [`completePayment`](applepaysession/completepayment.md) |
-| `"countryCode"` | [`completeShippingContactSelection`](applepaysession/completeshippingcontactselection.md) ![None](/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](applepaysession/completepayment.md) | [`completePayment`](applepaysession/completepayment.md) |
+| `"phoneNumber"` | [`completePayment`](./applepaysession/completepayment.md) |  |
+| `"emailAddress"` | [`completePayment`](./applepaysession/completepayment.md) |  |
+| `"name"` | [`completePayment`](./applepaysession/completepayment.md) | [`completePayment`](./applepaysession/completepayment.md) |
+| `"phoneticName"` ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) (available starting in API version 3) | [`completePayment`](./applepaysession/completepayment.md) | [`completePayment`](./applepaysession/completepayment.md) |
+| `"postalAddress"` | [`completeShippingContactSelection`](./applepaysession/completeshippingcontactselection.md) ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](./applepaysession/completepayment.md) | [`completePayment`](./applepaysession/completepayment.md) |
+| `"addressLines"` | [`completePayment`](./applepaysession/completepayment.md) | [`completePayment`](./applepaysession/completepayment.md) |
+| `"locality"` | [`completeShippingContactSelection`](./applepaysession/completeshippingcontactselection.md) ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](./applepaysession/completepayment.md) | [`completePayment`](./applepaysession/completepayment.md) |
+| `"subLocality"` | [`completeShippingContactSelection`](./applepaysession/completeshippingcontactselection.md) ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](./applepaysession/completepayment.md) | [`completePayment`](./applepaysession/completepayment.md) |
+| `"postalCode"` | [`completeShippingContactSelection`](./applepaysession/completeshippingcontactselection.md) ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](./applepaysession/completepayment.md) | [`completePayment`](./applepaysession/completepayment.md) |
+| `"administrativeArea"` | [`completeShippingContactSelection`](./applepaysession/completeshippingcontactselection.md) ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](./applepaysession/completepayment.md) | [`completePayment`](./applepaysession/completepayment.md) |
+| `"subAdministrativeArea"` | [`completeShippingContactSelection`](./applepaysession/completeshippingcontactselection.md) ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](./applepaysession/completepayment.md) | [`completePayment`](./applepaysession/completepayment.md) |
+| `"country"` | [`completeShippingContactSelection`](./applepaysession/completeshippingcontactselection.md) ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](./applepaysession/completepayment.md) | [`completePayment`](./applepaysession/completepayment.md) |
+| `"countryCode"` | [`completeShippingContactSelection`](./applepaysession/completeshippingcontactselection.md) ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) [`completePayment`](./applepaysession/completepayment.md) | [`completePayment`](./applepaysession/completepayment.md) |
 
 ## Topics
 
 ### Enumeration Cases
-- [addressLines](applepayerrorcontactfield/addresslines.md)
-- [administrativeArea](applepayerrorcontactfield/administrativearea.md)
-- [country](applepayerrorcontactfield/country.md)
-- [countryCode](applepayerrorcontactfield/countrycode.md)
-- [emailAddress](applepayerrorcontactfield/emailaddress.md)
-- [locality](applepayerrorcontactfield/locality.md)
-- [name](applepayerrorcontactfield/name.md)
-- [phoneNumber](applepayerrorcontactfield/phonenumber.md)
-- [phoneticName](applepayerrorcontactfield/phoneticname.md)
-- [postalAddress](applepayerrorcontactfield/postaladdress.md)
-- [postalCode](applepayerrorcontactfield/postalcode.md)
-- [subAdministrativeArea](applepayerrorcontactfield/subadministrativearea.md)
-- [subLocality](applepayerrorcontactfield/sublocality.md)
+- [addressLines](./applepayerrorcontactfield/addresslines.md)
+- [administrativeArea](./applepayerrorcontactfield/administrativearea.md)
+- [country](./applepayerrorcontactfield/country.md)
+- [countryCode](./applepayerrorcontactfield/countrycode.md)
+- [emailAddress](./applepayerrorcontactfield/emailaddress.md)
+- [locality](./applepayerrorcontactfield/locality.md)
+- [name](./applepayerrorcontactfield/name.md)
+- [phoneNumber](./applepayerrorcontactfield/phonenumber.md)
+- [phoneticName](./applepayerrorcontactfield/phoneticname.md)
+- [postalAddress](./applepayerrorcontactfield/postaladdress.md)
+- [postalCode](./applepayerrorcontactfield/postalcode.md)
+- [subAdministrativeArea](./applepayerrorcontactfield/subadministrativearea.md)
+- [subLocality](./applepayerrorcontactfield/sublocality.md)
 
 ## See Also
 
-- [ApplePayError](applepayerror.md)
+### Status and errors
+- [ApplePayError](./applepayerror.md)
   A customizable error type that you create to indicate problems with the address or contact information on an Apple Pay sheet.
-- [ApplePayErrorCode](applepayerrorcode.md)
+- [ApplePayErrorCode](./applepayerrorcode.md)
   The error code that indicates whether an error on the payment sheet is for shipping or billing information, or for another kind of error.
-- [Apple Pay Status Codes](apple-pay-status-codes.md)
+- [Apple Pay Status Codes](./apple-pay-status-codes.md)
   Codes used to report the status of an Apple Pay session after a callback.
 
 

@@ -1,7 +1,8 @@
 # init(id:title:subtitle:type:duration:artwork:animatedArtwork:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates generic media content with static and animated artwork.
 

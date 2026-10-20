@@ -1,7 +1,8 @@
 # kAXAttachmentTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An `AXUIElementRef` value for the accessibility object representing the text attachment.
 
@@ -12,6 +13,10 @@ An `AXUIElementRef` value for the accessibility object representing the text att
 
 ```swift
 var kAXAttachmentTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXAttachmentTextAttribute;
 ```
 
 #### Discussion

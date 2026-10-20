@@ -1,7 +1,8 @@
 # MachPortRight
 
 **Framework**: System  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.4+
@@ -21,9 +22,9 @@ protocol MachPortRight
 ## Relationships
 
 ### Conforming Types
-- [Mach.ReceiveRight](mach/receiveright.md)
-- [Mach.SendOnceRight](mach/sendonceright.md)
-- [Mach.SendRight](mach/sendright.md)
+- [Mach.ReceiveRight](./mach/receiveright.md)
+- [Mach.SendOnceRight](./mach/sendonceright.md)
+- [Mach.SendRight](./mach/sendright.md)
 
 
 ---

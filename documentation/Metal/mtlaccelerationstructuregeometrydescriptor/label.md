@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A label for the geometry structure, suitable for debugging.
 
@@ -19,13 +20,18 @@ A label for the geometry structure, suitable for debugging.
 var label: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * label;
+```
+
 ## See Also
 
-- [var intersectionFunctionTableOffset: Int](mtlaccelerationstructuregeometrydescriptor/intersectionfunctiontableoffset.md)
+### Specifying base geometry properties
+- [var intersectionFunctionTableOffset: Int](./intersectionfunctiontableoffset.md)
   An index into the intersection table for determining which intersection function Metal calls when it intersects a ray with the acceleration structure.
-- [var opaque: Bool](mtlaccelerationstructuregeometrydescriptor/opaque.md)
+- [var opaque: Bool](./opaque.md)
   A Boolean value that determines whether the geometry data in the acceleration structure needs to skip triangle-intersection tests.
-- [var allowDuplicateIntersectionFunctionInvocation: Bool](mtlaccelerationstructuregeometrydescriptor/allowduplicateintersectionfunctioninvocation.md)
+- [var allowDuplicateIntersectionFunctionInvocation: Bool](./allowduplicateintersectionfunctioninvocation.md)
   A Boolean value that indicates whether Metal calls the ray-intersection test more than once per primitive on the structure.
 
 

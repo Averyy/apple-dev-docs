@@ -1,7 +1,8 @@
 # audioVariants
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The variants that indicate the quality of audio available for the song.
 

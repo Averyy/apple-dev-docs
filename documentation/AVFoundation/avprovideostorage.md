@@ -1,7 +1,8 @@
 # AVProVideoStorage
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class to track and manage pre-allocated storage for high data rate video capture.
 
@@ -18,6 +19,10 @@ A class to track and manage pre-allocated storage for high data rate video captu
 class AVProVideoStorage
 ```
 
+```objc
+@interface AVProVideoStorage : NSObject
+```
+
 #### Overview
 
 `AVProVideoStorage` is a singleton that manages system-wide pre-allocated storage used during high data rate video capture to ensure I/O determinism and sustain high bandwidth captures (e.g. ProRes).
@@ -25,37 +30,37 @@ class AVProVideoStorage
 ## Topics
 
 ### Getting the shared storage
-- [class var shared: AVProVideoStorage?](avprovideostorage/shared.md)
+- [class var shared: AVProVideoStorage?](./avprovideostorage/shared.md)
   Returns the singleton instance for Pro Video Storage.
-- [class var isSupported: Bool](avprovideostorage/issupported.md)
+- [class var isSupported: Bool](./avprovideostorage/issupported.md)
   Whether Pro Video Storage is supported in its current configuration.
 ### Inspecting capacity
-- [var initialCapacity: Int](avprovideostorage/initialcapacity.md)
+- [var initialCapacity: Int](./avprovideostorage/initialcapacity.md)
   Initial size of Pro Video Storage in bytes.
-- [var remainingCapacity: Int](avprovideostorage/remainingcapacity.md)
+- [var remainingCapacity: Int](./avprovideostorage/remainingcapacity.md)
   Current size of Pro Video Storage in bytes.
-- [func replenishCapacity(completionHandler: ((Int, (any Error)?) -> Void)?)](avprovideostorage/replenishcapacity(completionhandler:).md)
+- [func replenishCapacity(completionHandler: ((Int, (any Error)?) -> Void)?)](./avprovideostorage/replenishcapacity%28completionhandler%29.md)
   Performs a best-effort attempt to restore Pro Video Storage to the initial capacity specified by the user in Settings app.
 ### Determining whether storage is busy
-- [var busyReasons: Set<AVProVideoStorage.BusyReason>](avprovideostorage/busyreasons.md)
+- [var busyReasons: Set<AVProVideoStorage.BusyReason>](./avprovideostorage/busyreasons.md)
   Whether Pro Video Storage is busy and the associated reasons.
-- [AVProVideoStorage.BusyReason](avprovideostorage/busyreason.md)
+- [AVProVideoStorage.BusyReason](./avprovideostorage/busyreason.md)
   A reason that Pro Video Storage may be busy.
 ### Presenting the settings interface
-- [func openSettings()](avprovideostorage/opensettings.md)
+- [func openSettings()](./avprovideostorage/opensettings%28%29.md)
   Opens the Pro Video Storage UI in Settings app.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

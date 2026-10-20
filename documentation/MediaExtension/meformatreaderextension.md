@@ -1,7 +1,8 @@
 # MEFormatReaderExtension
 
 **Framework**: MediaExtension  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines a factory to create a new format reader with a byte source.
 
@@ -14,36 +15,41 @@ A protocol that defines a factory to create a new format reader with a byte sour
 protocol MEFormatReaderExtension : NSObjectProtocol
 ```
 
+```objc
+@protocol MEFormatReaderExtension <NSObject>
+```
+
 #### Overview
 
-Media Toolbox creates the `MEFormatReaderExtension` object and the [`MEByteSource`](mebytesource.md) object based on the media asset.
+Media Toolbox creates the `MEFormatReaderExtension` object and the [`MEByteSource`](./mebytesource.md) object based on the media asset.
 
 ## Topics
 
 ### Creating a format reader
-- [init()](meformatreaderextension/init.md)
+- [init()](./meformatreaderextension/init%28%29.md)
   Creates a new format reader factory.
-- [func formatReader(with: MEByteSource, options: MEFormatReaderInstantiationOptions?) throws -> any MEFormatReader](meformatreaderextension/formatreader(with:options:).md)
+- [func formatReader(with: MEByteSource, options: MEFormatReaderInstantiationOptions?) throws -> any MEFormatReader](./meformatreaderextension/formatreader%28with,options%29.md)
   Creates a new format reader with the byte source and options that you specify.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Supporting custom media formats and decoders](supporting-custom-media-formats-and-decoders.md)
+### Format readers
+- [Supporting custom media formats and decoders](./supporting-custom-media-formats-and-decoders.md)
   Extend the media formats the system can open by providing a format reader and a video decoder.
-- [protocol MEFormatReader](meformatreader.md)
+- [protocol MEFormatReader](./meformatreader.md)
   A protocol that defines the requirements for a format reader, which represents a single media asset.
-- [class MEFormatReaderInstantiationOptions](meformatreaderinstantiationoptions.md)
+- [class MEFormatReaderInstantiationOptions](./meformatreaderinstantiationoptions.md)
   An object that contains options to pass to a format reader extension.
-- [class MEFileInfo](mefileinfo.md)
+- [class MEFileInfo](./mefileinfo.md)
   An object that contains file properties from the media asset.
-- [Format reader property list dictionaries](format-reader-property-list-dictionaries.md)
+- [Format reader property list dictionaries](./format-reader-property-list-dictionaries.md)
   Include property list dictionaries to describe a format reader and register the formats it supports.
-- [Format reader entitlement](format-reader-entitlement.md)
+- [Format reader entitlement](./format-reader-entitlement.md)
   Include an entitlement to indicate your extension is a MediaExtension format reader.
 
 

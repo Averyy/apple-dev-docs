@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment for positioning the overlay.
 
@@ -14,6 +15,10 @@ The alignment for positioning the overlay.
 
 ```swift
 var alignment: CPImageOverlay.Alignment { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) CPImageOverlayAlignment alignment;
 ```
 
 

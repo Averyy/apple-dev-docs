@@ -1,7 +1,8 @@
 # maximumMessageSize
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum MMS size for a sent text message.
 

@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -16,10 +17,15 @@
 static var `default`: CSUserQuery.UserInteractionKind { get }
 ```
 
+```c
+CSUserInteractionDefault
+```
+
 ## See Also
 
-- [CSUserQuery.UserInteractionKind.select](csuserquery/userinteractionkind/select.md)
-- [CSUserQuery.UserInteractionKind.focus](csuserquery/userinteractionkind/focus.md)
+### Getting the interaction types
+- [CSUserQuery.UserInteractionKind.select](./select.md)
+- [CSUserQuery.UserInteractionKind.focus](./focus.md)
 
 
 ---

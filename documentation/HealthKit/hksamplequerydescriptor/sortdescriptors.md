@@ -1,7 +1,8 @@
 # sortDescriptors
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that specifies the order of the results that the query returns.
 
@@ -10,7 +11,7 @@ An array that specifies the order of the results that the query returns.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -25,9 +26,10 @@ The system applies the sort descriptors in order. The later descriptors sort any
 
 ## See Also
 
-- [var limit: Int?](hksamplequerydescriptor/limit.md)
+### Accessing Query Properties
+- [var limit: Int?](./limit.md)
   The maximum number of samples that the query returns.
-- [var predicates: [HKSamplePredicate<Sample>]](hksamplequerydescriptor/predicates.md)
+- [var predicates: [HKSamplePredicate<Sample>]](./predicates.md)
   An array of sample predicates that define the type of data that the query returns.
 
 

@@ -1,7 +1,8 @@
 # vImageCVImageFormat_GetFormatCode(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the four-character code that encodes the pixel format of a Core Video image format.
 
@@ -20,13 +21,17 @@ Returns the four-character code that encodes the pixel format of a Core Video im
 func vImageCVImageFormat_GetFormatCode(_ format: vImageConstCVImageFormat) -> UInt32
 ```
 
+```c
+uint32_t vImageCVImageFormat_GetFormatCode(vImageConstCVImageFormatRef format);
+```
+
 #### Return Value
 
-The four-character code of the image format, such as [`kCVPixelFormatType_420YpCbCr8Planar`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_420ypcbcr8planar).
+The four-character code of the image format, such as [`kCVPixelFormatType_420YpCbCr8Planar`](../CoreVideo/kcvpixelformattype_420ypcbcr8planar.md).
 
 #### Discussion
 
-The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetFormatCode(_:)`](vimagecvimageformat_getformatcode(_:).md):
+The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md), return a [`vImageCVImageFormat`](./vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetFormatCode(_:)`](./vimagecvimageformat_getformatcode%28_%29.md):
 
 **Swift**:
 
@@ -53,7 +58,8 @@ uint32_t formatCode = vImageCVImageFormat_GetFormatCode(constFormat);
 
 ## See Also
 
-- [var formatCode: UInt32](vimagecvimageformat/formatcode.md)
+### Related Documentation
+- [var formatCode: UInt32](./vimagecvimageformat/formatcode.md)
   The four-character code that encodes the pixel format of the Core Video image format.
 
 

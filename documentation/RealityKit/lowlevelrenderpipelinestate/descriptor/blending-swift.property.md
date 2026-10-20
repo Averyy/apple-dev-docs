@@ -1,7 +1,8 @@
 # blending
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The blending configuration, or `nil` for opaque draws.
 
@@ -19,13 +20,14 @@ var blending: LowLevelRenderPipelineState.Descriptor.Blending? { get set }
 
 ## See Also
 
-- [var mesh: LowLevelMeshResource.Descriptor?](lowlevelrenderpipelinestate/descriptor/mesh.md)
+### Configuring the pipeline
+- [var mesh: LowLevelMeshResource.Descriptor?](./mesh.md)
   The vertex format of the mesh this pipeline renders.
-- [var renderTargets: LowLevelRenderTarget.DescriptorSet](lowlevelrenderpipelinestate/descriptor/rendertargets.md)
+- [var renderTargets: LowLevelRenderTarget.DescriptorSet](./rendertargets.md)
   The set of render target descriptors this pipeline state is compatible with.
-- [LowLevelRenderPipelineState.Descriptor.Blending](lowlevelrenderpipelinestate/descriptor/blending-swift.struct.md)
+- [LowLevelRenderPipelineState.Descriptor.Blending](./blending-swift.struct.md)
   An alpha blending mode for transparent draw calls.
-- [var writeMask: MTLColorWriteMask](lowlevelrenderpipelinestate/descriptor/writemask.md)
+- [var writeMask: MTLColorWriteMask](./writemask.md)
   The color channels written to the output attachment.
 
 

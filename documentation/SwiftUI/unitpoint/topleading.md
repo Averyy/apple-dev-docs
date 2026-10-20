@@ -1,7 +1,8 @@
 # topLeading
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A point that’s in the top, leading corner of a view.
 
@@ -22,13 +23,14 @@ static let topLeading: UnitPoint
 
 #### Discussion
 
-This point occupies the position where the horizontal and vertical alignment guides intersect for [`topLeading`](alignment/topleading.md) alignment. The leading edge appears on the left in a left-to-right language environment and on the right in a right-to-left environment.
+This point occupies the position where the horizontal and vertical alignment guides intersect for [`topLeading`](../alignment/topleading.md) alignment. The leading edge appears on the left in a left-to-right language environment and on the right in a right-to-left environment.
 
 ## See Also
 
-- [static let top: UnitPoint](unitpoint/top.md)
+### Getting top points
+- [static let top: UnitPoint](./top.md)
   A point that’s centered horizontally on the top edge of a view.
-- [static let topTrailing: UnitPoint](unitpoint/toptrailing.md)
+- [static let topTrailing: UnitPoint](./toptrailing.md)
   A point that’s in the top, trailing corner of a view.
 
 

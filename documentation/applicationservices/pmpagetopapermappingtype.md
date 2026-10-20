@@ -1,7 +1,8 @@
 # PMPageToPaperMappingType
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.4+
@@ -12,19 +13,25 @@
 struct PMPageToPaperMappingType
 ```
 
+```c
+typedef enum PMPageToPaperMappingType : unsigned int {
+    ...
+} PMPageToPaperMappingType;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](pmpagetopapermappingtype/1463504-init.md)
-- [init(rawValue: UInt32)](pmpagetopapermappingtype/1461342-init.md)
+- [init(UInt32)](./pmpagetopapermappingtype/api-1463504-init.md)
+- [init(rawValue: UInt32)](./pmpagetopapermappingtype/api-1461342-init.md)
 ### Instance Properties
-- [var rawValue: UInt32](pmpagetopapermappingtype/1460449-rawvalue.md)
+- [var rawValue: UInt32](./pmpagetopapermappingtype/api-1460449-rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 
 ---

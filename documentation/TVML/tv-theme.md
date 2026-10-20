@@ -1,6 +1,7 @@
 # tv-theme
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Sets an element’s appearance according to the specified theme.
 
@@ -19,14 +20,15 @@ Use the tv-theme query to change the appearance of a template based on the theme
 </style>
 ```
 
-##### Values for Tv Theme
+##### Values for tv-theme
 
 - **`dark`**: The theme being tested for is dark.
 - **`light`**: The theme being tested for is light.
 
 ## See Also
 
-- [layout-direction](layout-direction.md)
+### Media Queries
+- [layout-direction](./layout-direction.md)
   Sets the text direction based on the user’s language preference.
 
 

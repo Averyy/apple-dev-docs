@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.EmitterShape.cone
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emit from a cone with its apex pointing up along the y-axis, centered on the origin.
 

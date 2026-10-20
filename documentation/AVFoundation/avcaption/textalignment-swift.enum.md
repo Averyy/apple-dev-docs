@@ -1,7 +1,8 @@
 # AVCaption.TextAlignment
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Text alignment options for a caption.
 
@@ -17,35 +18,40 @@ Text alignment options for a caption.
 enum TextAlignment
 ```
 
+```c
+enum AVCaptionTextAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Text alignments
-- [AVCaption.TextAlignment.start](avcaption/textalignment-swift.enum/start.md)
+- [AVCaption.TextAlignment.start](./textalignment-swift.enum/start.md)
   An alignment of the text to the start of the inline progression direction.
-- [AVCaption.TextAlignment.end](avcaption/textalignment-swift.enum/end.md)
+- [AVCaption.TextAlignment.end](./textalignment-swift.enum/end.md)
   An alignment of the text to the end of the inline progression direction.
-- [AVCaption.TextAlignment.center](avcaption/textalignment-swift.enum/center.md)
+- [AVCaption.TextAlignment.center](./textalignment-swift.enum/center.md)
   An alignment of the text to the center of the display.
-- [AVCaption.TextAlignment.left](avcaption/textalignment-swift.enum/left.md)
+- [AVCaption.TextAlignment.left](./textalignment-swift.enum/left.md)
   An alignment of the text to the left in horizontal writing mode, and top in vertical writing mode.
-- [AVCaption.TextAlignment.right](avcaption/textalignment-swift.enum/right.md)
+- [AVCaption.TextAlignment.right](./textalignment-swift.enum/right.md)
   An alignment of the text to the right in horizontal writing mode, and bottom in vertical writing mode.
 ### Initializers
-- [init?(rawValue: Int)](avcaption/textalignment-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./textalignment-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var textAlignment: AVCaption.TextAlignment](avcaption/textalignment-swift.property.md)
+### Accessing alignment
+- [var textAlignment: AVCaption.TextAlignment](./textalignment-swift.property.md)
   The alignment for the caption text.
 
 

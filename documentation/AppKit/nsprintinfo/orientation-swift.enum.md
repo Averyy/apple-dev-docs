@@ -1,12 +1,13 @@
 # NSPrintInfo.Orientation
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify page orientations.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14 (renamed: NSPaperOrientation)
 
 ## Declaration
 
@@ -14,31 +15,36 @@ Constants that specify page orientations.
 enum Orientation
 ```
 
+```c
+enum NSPrintingOrientation : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSPrintInfo.Orientation.portraitOrientation](nsprintinfo/orientation-swift.enum/portraitorientation.md)
+- [NSPrintInfo.Orientation.portraitOrientation](./orientation-swift.enum/portraitorientation.md)
   Orientation is portrait (page is taller than it is wide).
-- [NSPrintInfo.Orientation.landscapeOrientation](nsprintinfo/orientation-swift.enum/landscapeorientation.md)
+- [NSPrintInfo.Orientation.landscapeOrientation](./orientation-swift.enum/landscapeorientation.md)
   Orientation is landscape (page is wider than it is tall).
 ### Initializers
-- [init?(rawValue: UInt)](nsprintinfo/orientation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./orientation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class var defaultPrinter: NSPrinter?](nsprintinfo/defaultprinter.md)
+### Deprecated
+- [class var defaultPrinter: NSPrinter?](./defaultprinter.md)
   Deprecated.
-- [Deprecated Printing Keys](deprecated-printing-keys.md)
+- [Deprecated Printing Keys](../deprecated-printing-keys.md)
   These keys refer to older printing properties that are no longer used.
 
 

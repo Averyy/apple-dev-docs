@@ -1,19 +1,20 @@
 # withCapacity
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 Allocates an OSData object with preallocated capacity.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static OSDataPtr withCapacity(uint32_t capacity);
 ```
 
@@ -31,17 +32,18 @@ Allocates an OSData object with preallocated capacity. The OSData will have zero
 
 ## See Also
 
-- [withBytes](osdata/withbytes.md)
+### Creating a Data Object
+- [withBytes](./withbytes.md)
   Allocates an OSData object with a copy of bytes.
-- [withBytesNoCopy](osdata/withbytesnocopy.md)
+- [withBytesNoCopy](./withbytesnocopy.md)
   Allocates an OSData object with a copy of bytes.
-- [withData](osdata/withdata-9y3g.md)
+- [withData](./withdata-9y3g.md)
   Allocates an OSData object with a copy of bytes from another OSData.
-- [withData](osdata/withdata-4rd8n.md)
+- [withData](./withdata-4rd8n.md)
   Allocates an OSData object with a copy of bytes from a subset of another OSData.
-- [OSDataCreate](osdatacreate.md)
-- [OSDataPtr](osdataptr.md)
-- [free](osdata/free.md)
+- [OSDataCreate](../osdatacreate.md)
+- [OSDataPtr](../osdataptr.md)
+- [free](./free.md)
 
 
 ---

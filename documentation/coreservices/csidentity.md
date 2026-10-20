@@ -1,7 +1,8 @@
 # CSIdentity
 
 **Framework**: Core Services  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Mac Catalyst 13.0+

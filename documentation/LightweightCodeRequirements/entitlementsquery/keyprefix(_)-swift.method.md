@@ -1,7 +1,8 @@
 # keyPrefix(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Match the specified key prefix in a nested dictionary.
 

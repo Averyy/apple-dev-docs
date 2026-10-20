@@ -1,7 +1,8 @@
 # AVAudioSessionPortExtensionBluetoothMicrophone
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes capabilities of Bluetooth microphone ports.
 
@@ -19,33 +20,38 @@ An object that describes capabilities of Bluetooth microphone ports.
 class AVAudioSessionPortExtensionBluetoothMicrophone
 ```
 
+```objc
+@interface AVAudioSessionPortExtensionBluetoothMicrophone : NSObject
+```
+
 ## Topics
 
 ### Inspecting the port extension
-- [var farFieldCapture: AVAudioSessionCapability](avaudiosessionportextensionbluetoothmicrophone/farfieldcapture.md)
+- [var farFieldCapture: AVAudioSessionCapability](./avaudiosessionportextensionbluetoothmicrophone/farfieldcapture.md)
   Describes whether this port supports far-field input capture.
-- [var highQualityRecording: AVAudioSessionCapability](avaudiosessionportextensionbluetoothmicrophone/highqualityrecording.md)
+- [var highQualityRecording: AVAudioSessionCapability](./avaudiosessionportextensionbluetoothmicrophone/highqualityrecording.md)
   Describes whether this port supports Bluetooth high-quality recording.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var bluetoothMicrophoneExtension: AVAudioSessionPortExtensionBluetoothMicrophone?](avaudiosessionportdescription/bluetoothmicrophoneextension.md)
+### Accessing the port extension
+- [var bluetoothMicrophoneExtension: AVAudioSessionPortExtensionBluetoothMicrophone?](./avaudiosessionportdescription/bluetoothmicrophoneextension.md)
   An optional port extension that describes capabilities relevant to Bluetooth microphone ports.
-- [class AVAudioSessionCapability](avaudiosessioncapability.md)
+- [class AVAudioSessionCapability](./avaudiosessioncapability.md)
   Describes whether a specific capability is supported and if that capability is currently enabled
 
 

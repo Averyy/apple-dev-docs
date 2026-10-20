@@ -1,17 +1,22 @@
 # curveTo
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Creates a curved line segment from the current point to the specified endpoint using two control points to define the curve.
 
 **Availability**:
-- macOS 11.0+
+- macOS 11.0+ - Deprecated in 14.0 (renamed: NSBezierPath.ElementType.cubicCurveTo)
 
 ## Declaration
 
 ```swift
 static var curveTo: NSBezierPath.ElementType { get }
+```
+
+```c
+NSBezierPathElementCurveTo
 ```
 
 

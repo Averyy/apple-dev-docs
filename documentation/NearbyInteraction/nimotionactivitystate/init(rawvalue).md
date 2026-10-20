@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Nearby Interaction  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a motion state with the specified underlying value.
 

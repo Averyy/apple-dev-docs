@@ -1,7 +1,8 @@
 # offset(x:y:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Offset this view by the specified horizontal and vertical distances.
 
@@ -23,7 +24,7 @@ func offset(x: CGFloat = 0, y: CGFloat = 0) -> some View
 
 ## Mentions
 
-- [Making fine adjustments to a view’s position](making-fine-adjustments-to-a-view-s-position.md)
+- [Making fine adjustments to a view’s position](../making-fine-adjustments-to-a-view-s-position.md)
 
 #### Return Value
 
@@ -42,7 +43,7 @@ Text("Offset by passing horizontal & vertical distance")
     .border(Color.gray)
 ```
 
-![A screenshot showing a view that offset from its original position](/images/com.apple.SwiftUI/swiftui-offset-xy@2x.png)
+![A screenshot showing a view that offset from its original position](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/swiftui-offset-xy@2x.png)
 
 ## Parameters
 
@@ -51,15 +52,16 @@ Text("Offset by passing horizontal & vertical distance")
 
 ## See Also
 
-- [Making fine adjustments to a view’s position](making-fine-adjustments-to-a-view-s-position.md)
+### Adjusting a view’s position
+- [Making fine adjustments to a view’s position](../making-fine-adjustments-to-a-view-s-position.md)
   Shift the position of a view by applying the offset or position modifier.
-- [func position(CGPoint) -> some View](view/position(_:).md)
+- [func position(CGPoint) -> some View](./position%28_%29.md)
   Positions the center of this view at the specified point in its parent’s coordinate space.
-- [func position(x: CGFloat, y: CGFloat) -> some View](view/position(x:y:).md)
+- [func position(x: CGFloat, y: CGFloat) -> some View](./position%28x,y%29.md)
   Positions the center of this view at the specified coordinates in its parent’s coordinate space.
-- [func offset(CGSize) -> some View](view/offset(_:).md)
+- [func offset(CGSize) -> some View](./offset%28_%29.md)
   Offset this view by the horizontal and vertical amount specified in the offset parameter.
-- [func offset(z: CGFloat) -> some View](view/offset(z:).md)
+- [func offset(z: CGFloat) -> some View](./offset%28z%29.md)
   Brings a view forward in Z by the provided distance in points.
 
 

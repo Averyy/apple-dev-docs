@@ -1,7 +1,8 @@
 # doubleValue(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the quantity’s value in the provided unit.
 
@@ -19,6 +20,10 @@ Returns the quantity’s value in the provided unit.
 func doubleValue(for unit: HKUnit) -> Double
 ```
 
+```objc
+- (double) doubleValueForUnit:(HKUnit *) unit;
+```
+
 #### Return Value
 
 The quantity’s value in the provided units.
@@ -27,17 +32,18 @@ The quantity’s value in the provided units.
 
 This method converts the quantity’s value to the desired units. You do not need to know the quantity’s original units. You can request the value in whatever units you want, as long as they are compatible with the quantity. This lets each application (or each locale) work with its preferred units.
 
-In most cases, you know which units are compatible with a given quantity from context. To see the unit types associated with different quantity sample types, see the type identifiers in [`HKQuantityTypeIdentifier`](hkquantitytypeidentifier.md).
+In most cases, you know which units are compatible with a given quantity from context. To see the unit types associated with different quantity sample types, see the type identifiers in [`HKQuantityTypeIdentifier`](../hkquantitytypeidentifier.md).
 
-If you need to programmatically check whether a particular unit is compatible with a particular quantity, call the quantity’s [`is(compatibleWith:)`](hkquantity/is(compatiblewith:).md) method.
+If you need to programmatically check whether a particular unit is compatible with a particular quantity, call the quantity’s [`is(compatibleWith:)`](./is%28compatiblewith%29.md) method.
 
 ## Parameters
 
-- `unit`: The target unit. If the quantity is not compatible with this unit, it throws an exception ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
+- `unit`: The target unit. If the quantity is not compatible with this unit, it throws an exception ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)).
 
 ## See Also
 
-- [func `is`(compatibleWith: HKUnit) -> Bool](hkquantity/is(compatiblewith:).md)
+### Working With Units
+- [func `is`(compatibleWith: HKUnit) -> Bool](./is%28compatiblewith%29.md)
   Returns a boolean value indicating whether the quantity is compatible with the provided unit.
 
 

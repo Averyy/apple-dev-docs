@@ -1,7 +1,8 @@
 # representations
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of content types that a particular suggestion includes.
 

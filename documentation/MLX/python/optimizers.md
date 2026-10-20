@@ -6,37 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers.html
 
 # Optimizers
 
-**
-
-- [.rst](../_sources/python/optimizers.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Optimizers
-
- Table of contents 
-
-## Contents
-
-# Optimizers
-
 The optimizers in MLX can be used both with `mlx.nn` but also with pure
 `mlx.core` functions. A typical example involves calling
-[Optimizer.update()](optimizers/_autosummary/mlx.optimizers.Optimizer.update.html#mlx.optimizers.Optimizer.update) to update a model’s parameters based on the loss
-gradients and subsequently calling [mlx.core.eval()](_autosummary/mlx.core.eval.html#mlx.core.eval) to evaluate both the
+[Optimizer.update()](optimizers/_autosummary/mlx.optimizers.Optimizer.update.md#mlx.optimizers.Optimizer.update) to update a model’s parameters based on the loss
+gradients and subsequently calling [mlx.core.eval()](_autosummary/mlx.core.eval.md#mlx.core.eval) to evaluate both the
 model’s parameters and the **optimizer state**.
 
 ```
@@ -93,7 +66,5 @@ example, for Adam the learning rate is saved but the `betas` and `eps`
 parameters are not. A good rule of thumb is if the parameter can be scheduled
 then it will be included in the optimizer state.
 
-| clip_grad_norm(grads, max_norm) | Clips the global norm of the gradients. |
+| [clip_grad_norm](_autosummary/mlx.optimizers.clip_grad_norm.md#mlx.optimizers.clip_grad_norm)(grads, max_norm) | Clips the global norm of the gradients. |
 | --- | --- |
-
-** Contents

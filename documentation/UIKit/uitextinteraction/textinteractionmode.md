@@ -1,7 +1,8 @@
 # textInteractionMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode of the text interaction.
 
@@ -17,11 +18,16 @@ The mode of the text interaction.
 var textInteractionMode: UITextInteractionMode { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITextInteractionMode textInteractionMode;
+```
+
 ## See Also
 
-- [var gesturesForFailureRequirements: [UIGestureRecognizer]](uitextinteraction/gesturesforfailurerequirements.md)
+### Getting interaction information
+- [var gesturesForFailureRequirements: [UIGestureRecognizer]](./gesturesforfailurerequirements.md)
   The list of gestures that the text interaction adds to the view hierarchy.
-- [enum UITextInteractionMode](uitextinteractionmode.md)
+- [enum UITextInteractionMode](../uitextinteractionmode.md)
   Modes that determine the selection behaviors that a text interaction provides.
 
 

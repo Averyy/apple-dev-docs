@@ -1,7 +1,8 @@
 # Font.TextStyle.largeTitle
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The font style for large titles.
 
@@ -22,29 +23,30 @@ case largeTitle
 
 ## See Also
 
-- [Font.TextStyle.extraLargeTitle2](font/textstyle/extralargetitle2.md)
+### Getting font text styles
+- [Font.TextStyle.extraLargeTitle2](./extralargetitle2.md)
   The font used for second level extra large titles.
-- [Font.TextStyle.extraLargeTitle](font/textstyle/extralargetitle.md)
+- [Font.TextStyle.extraLargeTitle](./extralargetitle.md)
   The font used for extra large titles.
-- [Font.TextStyle.title](font/textstyle/title.md)
+- [Font.TextStyle.title](./title.md)
   The font used for first level hierarchical headings.
-- [Font.TextStyle.title2](font/textstyle/title2.md)
+- [Font.TextStyle.title2](./title2.md)
   The font used for second level hierarchical headings.
-- [Font.TextStyle.title3](font/textstyle/title3.md)
+- [Font.TextStyle.title3](./title3.md)
   The font used for third level hierarchical headings.
-- [Font.TextStyle.headline](font/textstyle/headline.md)
+- [Font.TextStyle.headline](./headline.md)
   The font used for headings.
-- [Font.TextStyle.subheadline](font/textstyle/subheadline.md)
+- [Font.TextStyle.subheadline](./subheadline.md)
   The font used for subheadings.
-- [Font.TextStyle.body](font/textstyle/body.md)
+- [Font.TextStyle.body](./body.md)
   The font used for body text.
-- [Font.TextStyle.callout](font/textstyle/callout.md)
+- [Font.TextStyle.callout](./callout.md)
   The font used for callouts.
-- [Font.TextStyle.caption](font/textstyle/caption.md)
+- [Font.TextStyle.caption](./caption.md)
   The font used for standard captions.
-- [Font.TextStyle.caption2](font/textstyle/caption2.md)
+- [Font.TextStyle.caption2](./caption2.md)
   The font used for alternate captions.
-- [Font.TextStyle.footnote](font/textstyle/footnote.md)
+- [Font.TextStyle.footnote](./footnote.md)
   The font used in footnotes.
 
 

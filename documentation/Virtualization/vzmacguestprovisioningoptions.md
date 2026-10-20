@@ -1,7 +1,8 @@
 # VZMacGuestProvisioningOptions
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The configuration for guest setup during macOS virtual machine startup.
 
@@ -12,6 +13,10 @@ The configuration for guest setup during macOS virtual machine startup.
 
 ```swift
 class VZMacGuestProvisioningOptions
+```
+
+```objc
+@interface VZMacGuestProvisioningOptions : VZGuestProvisioningOptions
 ```
 
 #### Overview
@@ -29,43 +34,45 @@ Changes to the properties after starting the virtual machine have no effect.
 ## Topics
 
 ### Initializers
-- [init()](vzmacguestprovisioningoptions/init.md)
+- [init()](./vzmacguestprovisioningoptions/init%28%29.md)
 ### Instance Properties
-- [var enablesRemoteLogin: Bool](vzmacguestprovisioningoptions/enablesremotelogin.md)
+- [var enablesRemoteLogin: Bool](./vzmacguestprovisioningoptions/enablesremotelogin.md)
   A Boolean value that indicates whether to enable Remote Login (using SSH) for the macOS virtual machine.
-- [var fullName: String](vzmacguestprovisioningoptions/fullname.md)
+- [var fullName: String](./vzmacguestprovisioningoptions/fullname.md)
   A person’s full name to configure for the macOS virtual machine.
-- [var logsInAutomatically: Bool](vzmacguestprovisioningoptions/logsinautomatically.md)
+- [var logsInAutomatically: Bool](./vzmacguestprovisioningoptions/logsinautomatically.md)
   A Boolean value that indicates whether to automatically log in the person at startup.
-- [var password: String](vzmacguestprovisioningoptions/password.md)
+- [var password: String](./vzmacguestprovisioningoptions/password.md)
   The password to configure for the macOS virtual machine.
-- [var username: String](vzmacguestprovisioningoptions/username.md)
+- [var username: String](./vzmacguestprovisioningoptions/username.md)
   The username for logging into the macOS virtual machine.
 
 ## Relationships
 
 ### Inherits From
-- [VZGuestProvisioningOptions](vzguestprovisioningoptions.md)
+- [VZGuestProvisioningOptions](./vzguestprovisioningoptions.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class VZGuestProvisioningOptions](vzguestprovisioningoptions.md)
+### Related Documentation
+- [class VZGuestProvisioningOptions](./vzguestprovisioningoptions.md)
   The base class for guest provisioning options.
-- [class VZMacOSVirtualMachineStartOptions](vzmacosvirtualmachinestartoptions.md)
+- [class VZMacOSVirtualMachineStartOptions](./vzmacosvirtualmachinestartoptions.md)
   A class that describes start options for macOS VMs.
-- [class VZGuestProvisioningOptions](vzguestprovisioningoptions.md)
+### Provisioning options
+- [class VZGuestProvisioningOptions](./vzguestprovisioningoptions.md)
   The base class for guest provisioning options.
-- [class VZGuestMemoryMapping](vzguestmemorymapping.md)
+- [class VZGuestMemoryMapping](./vzguestmemorymapping.md)
   An object that represents a chunk of the guest operating system’s dynamic random access memory (DRAM).
 
 

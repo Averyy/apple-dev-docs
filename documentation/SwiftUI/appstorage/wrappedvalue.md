@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
@@ -20,7 +21,8 @@ var wrappedValue: Value { get nonmutating set }
 
 ## See Also
 
-- [var projectedValue: Binding<Value>](appstorage/projectedvalue.md)
+### Getting the value
+- [var projectedValue: Binding<Value>](./projectedvalue.md)
 
 
 ---

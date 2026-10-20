@@ -1,7 +1,8 @@
 # usesApplicationAudioSession
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the capture session uses the app’s shared audio session.
 
@@ -17,17 +18,22 @@ A Boolean value that indicates whether the capture session uses the app’s shar
 var usesApplicationAudioSession: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL usesApplicationAudioSession;
+```
+
 #### Discussion
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true). If you set the value to [`false`](https://developer.apple.com/documentation/swift/false), the capture session uses a private [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) instance for audio recording, which may cause interruptions if your app uses its own audio session for playback.
+The default value is [`true`](../../Swift/true.md). If you set the value to [`false`](../../Swift/false.md), the capture session uses a private [`AVAudioSession`](../../AVFAudio/avaudiosession.md) instance for audio recording, which may cause interruptions if your app uses its own audio session for playback.
 
 ## See Also
 
-- [var automaticallyConfiguresApplicationAudioSession: Bool](avcapturesession/automaticallyconfiguresapplicationaudiosession.md)
+### Configuring the app’s audio session
+- [var automaticallyConfiguresApplicationAudioSession: Bool](./automaticallyconfiguresapplicationaudiosession.md)
   A Boolean value that indicates whether the capture session automatically changes settings in the app’s shared audio session.
-- [var configuresApplicationAudioSessionToMixWithOthers: Bool](avcapturesession/configuresapplicationaudiosessiontomixwithothers.md)
+- [var configuresApplicationAudioSessionToMixWithOthers: Bool](./configuresapplicationaudiosessiontomixwithothers.md)
   A Boolean value that Indicates whether the capture session configures the app’s audio session to mix with others.
-- [var configuresApplicationAudioSessionForBluetoothHighQualityRecording: Bool](avcapturesession/configuresapplicationaudiosessionforbluetoothhighqualityrecording.md)
+- [var configuresApplicationAudioSessionForBluetoothHighQualityRecording: Bool](./configuresapplicationaudiosessionforbluetoothhighqualityrecording.md)
   A Boolean value that indicates whether the capture session configures the app’s audio session for bluetooth high-quality recording.
 
 

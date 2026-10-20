@@ -1,7 +1,8 @@
 # init(dataItem:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a message that indicates a file handle reached the end of a file or the data.
 

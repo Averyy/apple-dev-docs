@@ -1,7 +1,8 @@
 # errSecInvalidSearchRef
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The search reference is invalid.
 
@@ -18,6 +19,10 @@ The search reference is invalid.
 
 ```swift
 var errSecInvalidSearchRef: OSStatus { get }
+```
+
+```c
+errSecInvalidSearchRef
 ```
 
 

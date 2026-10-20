@@ -1,7 +1,8 @@
 # UIHinge.Status
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The status of an individual hinge
 
@@ -18,35 +19,40 @@ The status of an individual hinge
 enum Status
 ```
 
+```c
+enum UIHingeStatus : NSInteger;
+```
+
 ## Topics
 
 ### Getting the hinge status
-- [UIHinge.Status.closed](uihinge/status-swift.enum/closed.md)
+- [UIHinge.Status.closed](./status-swift.enum/closed.md)
   The hinge is closed
-- [UIHinge.Status.fullyOpen](uihinge/status-swift.enum/fullyopen.md)
+- [UIHinge.Status.fullyOpen](./status-swift.enum/fullyopen.md)
   The hinge is open as far as the device allows
-- [UIHinge.Status.partiallyOpen](uihinge/status-swift.enum/partiallyopen.md)
+- [UIHinge.Status.partiallyOpen](./status-swift.enum/partiallyopen.md)
   The hinge is partially open
-- [UIHinge.Status.unknown](uihinge/status-swift.enum/unknown.md)
+- [UIHinge.Status.unknown](./status-swift.enum/unknown.md)
   The status of the hinge is unknown
 ### Initializers
-- [init?(rawValue: Int)](uihinge/status-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./status-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var angle: CGFloat](uihinge/angle.md)
+### Getting the hinge state
+- [var angle: CGFloat](./angle.md)
   The current angle of the hinge, in radians.
-- [var status: UIHinge.Status](uihinge/status-swift.property.md)
+- [var status: UIHinge.Status](./status-swift.property.md)
   The current status of the hinge
 
 

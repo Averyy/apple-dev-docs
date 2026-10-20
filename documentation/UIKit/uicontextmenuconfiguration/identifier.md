@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for this configuration object.
 
@@ -18,9 +19,13 @@ The unique identifier for this configuration object.
 var identifier: any NSCopying { get }
 ```
 
+```objc
+@property (nonatomic, readonly) id<NSCopying> identifier;
+```
+
 #### Discussion
 
-If you did not provide an identifier when creating this object, UIKit assigns a new [`UUID`](https://developer.apple.com/documentation/foundation/uuid) object to this property.
+If you did not provide an identifier when creating this object, UIKit assigns a new [`UUID`](../../Foundation/uuid.md) object to this property.
 
 
 ---

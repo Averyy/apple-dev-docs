@@ -1,16 +1,17 @@
 # UITableView.RowAnimation
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of animation to use when inserting or deleting rows.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,55 +19,60 @@ The type of animation to use when inserting or deleting rows.
 enum RowAnimation
 ```
 
+```c
+enum UITableViewRowAnimation : NSInteger;
+```
+
 #### Overview
 
-You specify one of these constants as a parameter of the [`insertRows(at:with:)`](uitableview/insertrows(at:with:).md), [`insertSections(_:with:)`](uitableview/insertsections(_:with:).md), [`deleteRows(at:with:)`](uitableview/deleterows(at:with:).md),[`deleteSections(_:with:)`](uitableview/deletesections(_:with:).md), [`reloadRows(at:with:)`](uitableview/reloadrows(at:with:).md), and [`reloadSections(_:with:)`](uitableview/reloadsections(_:with:).md) methods.
+You specify one of these constants as a parameter of the [`insertRows(at:with:)`](./insertrows%28at,with%29.md), [`insertSections(_:with:)`](./insertsections%28_,with%29.md), [`deleteRows(at:with:)`](./deleterows%28at,with%29.md),[`deleteSections(_:with:)`](./deletesections%28_,with%29.md), [`reloadRows(at:with:)`](./reloadrows%28at,with%29.md), and [`reloadSections(_:with:)`](./reloadsections%28_,with%29.md) methods.
 
 ## Topics
 
 ### Constants
-- [UITableView.RowAnimation.fade](uitableview/rowanimation/fade.md)
+- [UITableView.RowAnimation.fade](./rowanimation/fade.md)
   The inserted or deleted row or rows fade into or out of the table view.
-- [UITableView.RowAnimation.right](uitableview/rowanimation/right.md)
+- [UITableView.RowAnimation.right](./rowanimation/right.md)
   The inserted row or rows slide in from the right; the deleted row or rows slide out to the right.
-- [UITableView.RowAnimation.left](uitableview/rowanimation/left.md)
+- [UITableView.RowAnimation.left](./rowanimation/left.md)
   The inserted row or rows slide in from the left; the deleted row or rows slide out to the left.
-- [UITableView.RowAnimation.top](uitableview/rowanimation/top.md)
+- [UITableView.RowAnimation.top](./rowanimation/top.md)
   The inserted row or rows slide in from the top; the deleted row or rows slide out toward the top.
-- [UITableView.RowAnimation.bottom](uitableview/rowanimation/bottom.md)
+- [UITableView.RowAnimation.bottom](./rowanimation/bottom.md)
   The inserted row or rows slide in from the bottom; the deleted row or rows slide out toward the bottom.
-- [UITableView.RowAnimation.none](uitableview/rowanimation/none.md)
+- [UITableView.RowAnimation.none](./rowanimation/none.md)
   The inserted or deleted rows use the default animations.
-- [UITableView.RowAnimation.middle](uitableview/rowanimation/middle.md)
+- [UITableView.RowAnimation.middle](./rowanimation/middle.md)
   The table view attempts to keep the old and new cells centered in the space they did or will occupy.
-- [UITableView.RowAnimation.automatic](uitableview/rowanimation/automatic.md)
+- [UITableView.RowAnimation.automatic](./rowanimation/automatic.md)
   The table view chooses an appropriate animation style for you.
 ### Initializers
-- [init?(rawValue: Int)](uitableview/rowanimation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./rowanimation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func insertRows(at: [IndexPath], with: UITableView.RowAnimation)](uitableview/insertrows(at:with:).md)
+### Inserting, deleting, and moving rows and sections
+- [func insertRows(at: [IndexPath], with: UITableView.RowAnimation)](./insertrows%28at,with%29.md)
   Inserts rows in the table view at the locations that an array of index paths identifies, with an option to animate the insertion.
-- [func deleteRows(at: [IndexPath], with: UITableView.RowAnimation)](uitableview/deleterows(at:with:).md)
+- [func deleteRows(at: [IndexPath], with: UITableView.RowAnimation)](./deleterows%28at,with%29.md)
   Deletes the rows that an array of index paths identifies, with an option to animate the deletion.
-- [func insertSections(IndexSet, with: UITableView.RowAnimation)](uitableview/insertsections(_:with:).md)
+- [func insertSections(IndexSet, with: UITableView.RowAnimation)](./insertsections%28_,with%29.md)
   Inserts one or more sections in the table view, with an option to animate the insertion.
-- [func deleteSections(IndexSet, with: UITableView.RowAnimation)](uitableview/deletesections(_:with:).md)
+- [func deleteSections(IndexSet, with: UITableView.RowAnimation)](./deletesections%28_,with%29.md)
   Deletes one or more sections in the table view, with an option to animate the deletion.
-- [func moveRow(at: IndexPath, to: IndexPath)](uitableview/moverow(at:to:).md)
+- [func moveRow(at: IndexPath, to: IndexPath)](./moverow%28at,to%29.md)
   Moves the row at a specified location to a destination location.
-- [func moveSection(Int, toSection: Int)](uitableview/movesection(_:tosection:).md)
+- [func moveSection(Int, toSection: Int)](./movesection%28_,tosection%29.md)
   Moves a section to a new location in the table view.
 
 

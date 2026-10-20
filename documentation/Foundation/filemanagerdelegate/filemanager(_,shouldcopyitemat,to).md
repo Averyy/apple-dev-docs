@@ -1,7 +1,8 @@
 # fileManager(_:shouldCopyItemAt:to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the file manager should copy the specified item to the new URL.
 
@@ -20,15 +21,19 @@ Asks the delegate if the file manager should copy the specified item to the new 
 optional func fileManager(_ fileManager: FileManager, shouldCopyItemAt srcURL: URL, to dstURL: URL) -> Bool
 ```
 
+```objc
+- (BOOL) fileManager:(NSFileManager *) fileManager shouldCopyItemAtURL:(NSURL *) srcURL toURL:(NSURL *) dstURL;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the item should be copied or [`false`](https://developer.apple.com/documentation/swift/false) if the file manager should stop copying items associated with the current operation. If you do not implement this method, the file manager assumes a response of [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](../../Swift/true.md) if the item should be copied or [`false`](../../Swift/false.md) if the file manager should stop copying items associated with the current operation. If you do not implement this method, the file manager assumes a response of [`true`](../../Swift/true.md).
 
 #### Discussion
 
 This method is called once for each item that needs to be copied. Thus, for a directory, this method is called once for the directory and once for each item in the directory.
 
-This method performs the same task as the [`fileManager(_:shouldCopyItemAtPath:toPath:)`](filemanagerdelegate/filemanager(_:shouldcopyitematpath:topath:).md) method and is preferred over that method in macOS 10.6 and later.
+This method performs the same task as the [`fileManager(_:shouldCopyItemAtPath:toPath:)`](./filemanager%28_,shouldcopyitematpath,topath%29.md) method and is preferred over that method in macOS 10.6 and later.
 
 ## Parameters
 
@@ -38,15 +43,17 @@ This method performs the same task as the [`fileManager(_:shouldCopyItemAtPath:t
 
 ## See Also
 
-- [func copyItem(atPath: String, toPath: String) throws](filemanager/copyitem(atpath:topath:).md)
+### Related Documentation
+- [func copyItem(atPath: String, toPath: String) throws](../filemanager/copyitem%28atpath,topath%29.md)
   Copies the item at the specified path to a new location synchronously.
-- [func copyItem(at: URL, to: URL) throws](filemanager/copyitem(at:to:).md)
+- [func copyItem(at: URL, to: URL) throws](../filemanager/copyitem%28at,to%29.md)
   Copies the file at the specified URL to a new location synchronously.
-- [func fileManager(FileManager, shouldCopyItemAtPath: String, toPath: String) -> Bool](filemanagerdelegate/filemanager(_:shouldcopyitematpath:topath:).md)
+### Copying  an Item
+- [func fileManager(FileManager, shouldCopyItemAtPath: String, toPath: String) -> Bool](./filemanager%28_,shouldcopyitematpath,topath%29.md)
   Asks the delegate if the file manager should copy the specified item to the new path.
-- [func fileManager(FileManager, shouldProceedAfterError: any Error, copyingItemAt: URL, to: URL) -> Bool](filemanagerdelegate/filemanager(_:shouldproceedaftererror:copyingitemat:to:).md)
+- [func fileManager(FileManager, shouldProceedAfterError: any Error, copyingItemAt: URL, to: URL) -> Bool](./filemanager%28_,shouldproceedaftererror,copyingitemat,to%29.md)
   Asks the delegate if the move operation should continue after an error occurs while copying the item at the specified URL.
-- [func fileManager(FileManager, shouldProceedAfterError: any Error, copyingItemAtPath: String, toPath: String) -> Bool](filemanagerdelegate/filemanager(_:shouldproceedaftererror:copyingitematpath:topath:).md)
+- [func fileManager(FileManager, shouldProceedAfterError: any Error, copyingItemAtPath: String, toPath: String) -> Bool](./filemanager%28_,shouldproceedaftererror,copyingitematpath,topath%29.md)
   Asks the delegate if the move operation should continue after an error occurs while copying the item at the specified path.
 
 

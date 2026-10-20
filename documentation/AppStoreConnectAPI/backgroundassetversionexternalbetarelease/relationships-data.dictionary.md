@@ -1,7 +1,8 @@
 # BackgroundAssetVersionExternalBetaRelease.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BackgroundAssetVersionExternalBetaRelease.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BackgroundAssetVersionExternalBetaRelease.Relationships.BackgroundAssetVersion](backgroundassetversionexternalbetarelease/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
+- [object BackgroundAssetVersionExternalBetaRelease.Relationships.BackgroundAssetVersion](./relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object BackgroundAssetVersionExternalBetaRelease.Relationships
 
 ## See Also
 
-- [object BackgroundAssetVersionExternalBetaRelease.Attributes](backgroundassetversionexternalbetarelease/attributes-data.dictionary.md)
+### Dictionaries
+- [object BackgroundAssetVersionExternalBetaRelease.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a background asset version external beta release resource.
 
 

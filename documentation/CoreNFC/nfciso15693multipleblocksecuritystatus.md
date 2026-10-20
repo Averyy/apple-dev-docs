@@ -1,7 +1,8 @@
 # NFCISO15693MultipleBlockSecurityStatus
 
 **Framework**: Core NFC  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 14.0+
@@ -17,7 +18,7 @@ struct NFCISO15693MultipleBlockSecurityStatus
 ## Topics
 
 ### Instance Properties
-- [var blockSecurityStatus: [Int]](nfciso15693multipleblocksecuritystatus/blocksecuritystatus.md)
+- [var blockSecurityStatus: [Int]](./nfciso15693multipleblocksecuritystatus/blocksecuritystatus.md)
 
 
 ---

@@ -1,18 +1,19 @@
 # types
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of the method arguments.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The types of the method arguments.
 var types: UnsafeMutablePointer<CChar>?
 ```
 
+```c
+char * types;
+```
+
 ## See Also
 
-- [var name: Selector?](objc_method_description/name.md)
+### Fields
+- [var name: Selector?](./name.md)
   The name of the method at runtime.
 
 

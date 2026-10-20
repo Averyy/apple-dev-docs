@@ -1,7 +1,8 @@
 # position(relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates and returns the current position of the pin relative to a reference entity, adjusted by the optional offset position.
 

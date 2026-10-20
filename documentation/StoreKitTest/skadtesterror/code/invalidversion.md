@@ -1,7 +1,8 @@
 # SKAdTestError.Code.invalidVersion
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A postback contains an incorrect version number.
 
@@ -16,27 +17,32 @@ A postback contains an incorrect version number.
 case invalidVersion
 ```
 
+```c
+SKAdTestErrorCodeInvalidVersion
+```
+
 ## See Also
 
-- [SKAdTestError.Code.invalidImpressionId](skadtesterror/code/invalidimpressionid.md)
+### Other Errors
+- [SKAdTestError.Code.invalidImpressionId](./invalidimpressionid.md)
   The impression ID isn’t a valid UUID string.
-- [SKAdTestError.Code.invalidSourceAppAdamId](skadtesterror/code/invalidsourceappadamid.md)
+- [SKAdTestError.Code.invalidSourceAppAdamId](./invalidsourceappadamid.md)
   The app ID is less than zero.
-- [SKAdTestError.Code.invalidSourceDomain](skadtesterror/code/invalidsourcedomain.md)
+- [SKAdTestError.Code.invalidSourceDomain](./invalidsourcedomain.md)
   The source domain isn’t in the correct format.
-- [SKAdTestError.Code.invalidSourceIdentifier](skadtesterror/code/invalidsourceidentifier.md)
+- [SKAdTestError.Code.invalidSourceIdentifier](./invalidsourceidentifier.md)
   The postback’s identifier isn’t two, three, or four digits.
-- [SKAdTestError.Code.unknownError](skadtesterror/code/unknownerror.md)
+- [SKAdTestError.Code.unknownError](./unknownerror.md)
   An unknown error occurred in the testing environment.
-- [SKAdTestError.Code.invalidImpressionId](skadtesterror/code/invalidimpressionid.md)
+- [SKAdTestError.Code.invalidImpressionId](./invalidimpressionid.md)
   The impression ID isn’t a valid UUID string.
-- [SKAdTestError.Code.invalidSourceAppAdamId](skadtesterror/code/invalidsourceappadamid.md)
+- [SKAdTestError.Code.invalidSourceAppAdamId](./invalidsourceappadamid.md)
   The app ID is less than zero.
-- [SKAdTestError.Code.invalidSourceDomain](skadtesterror/code/invalidsourcedomain.md)
+- [SKAdTestError.Code.invalidSourceDomain](./invalidsourcedomain.md)
   The source domain isn’t in the correct format.
-- [SKAdTestError.Code.invalidSourceIdentifier](skadtesterror/code/invalidsourceidentifier.md)
+- [SKAdTestError.Code.invalidSourceIdentifier](./invalidsourceidentifier.md)
   The postback’s identifier isn’t two, three, or four digits.
-- [SKAdTestError.Code.unknownError](skadtesterror/code/unknownerror.md)
+- [SKAdTestError.Code.unknownError](./unknownerror.md)
   An unknown error occurred in the testing environment.
 
 

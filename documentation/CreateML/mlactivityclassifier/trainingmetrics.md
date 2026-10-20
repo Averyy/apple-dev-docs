@@ -1,7 +1,8 @@
 # trainingMetrics
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Measurements of the activity classifier’s performance on the training dataset.
 
@@ -16,11 +17,12 @@ var trainingMetrics: MLClassifierMetrics { get }
 
 ## See Also
 
-- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:).md)
+### Evaluating an activity classifier
+- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](./evaluation%28on,featurecolumns,labelcolumn,recordingfilecolumn%29.md)
   Generates metrics describing the activity classifier’s performance on labeled activities in a data source.
-- [var validationMetrics: MLClassifierMetrics](mlactivityclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the activity classifier’s performance on the validation dataset.
-- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](mlactivityclassifier/evaluation(on:featurecolumns:labelcolumn:recordingfilecolumn:).md)
+- [func evaluation(on:featureColumns:labelColumn:recordingFileColumn:)](./evaluation%28on,featurecolumns,labelcolumn,recordingfilecolumn%29.md)
   Generates metrics describing the activity classifier’s performance on labeled activities in a data source.
 
 

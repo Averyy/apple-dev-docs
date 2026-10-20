@@ -1,7 +1,8 @@
 # GL_COLOR_ARRAY_STRIDE
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_COLOR_ARRAY_STRIDE: Int32 { get }
+```
+
+```c
+#define GL_COLOR_ARRAY_STRIDE
 ```
 
 

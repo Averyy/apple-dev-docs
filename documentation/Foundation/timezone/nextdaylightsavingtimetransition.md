@@ -1,7 +1,8 @@
 # nextDaylightSavingTimeTransition
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date of the next (after the current instant) daylight saving time transition for the time zone.
 
@@ -26,11 +27,12 @@ Depending on the time zone, the value of this property may represent a change of
 
 ## See Also
 
-- [func isDaylightSavingTime(for: Date) -> Bool](timezone/isdaylightsavingtime(for:).md)
+### Working with Daylight Savings
+- [func isDaylightSavingTime(for: Date) -> Bool](./isdaylightsavingtime%28for%29.md)
   Returns a Boolean value that indicates whether the receiver uses daylight saving time at a given date.
-- [func daylightSavingTimeOffset(for: Date) -> TimeInterval](timezone/daylightsavingtimeoffset(for:).md)
+- [func daylightSavingTimeOffset(for: Date) -> TimeInterval](./daylightsavingtimeoffset%28for%29.md)
   Returns the daylight saving time offset for a given date.
-- [func nextDaylightSavingTimeTransition(after: Date) -> Date?](timezone/nextdaylightsavingtimetransition(after:).md)
+- [func nextDaylightSavingTimeTransition(after: Date) -> Date?](./nextdaylightsavingtimetransition%28after%29.md)
   Returns the next daylight saving time transition after a given date.
 
 

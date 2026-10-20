@@ -1,7 +1,8 @@
 # limits
 
 **Framework**: DockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Current limits for the axes of rotation and maximum angular velocity.
 
@@ -19,21 +20,22 @@ final var limits: DockAccessory.Limits { get throws }
 
 #### Return Value
 
-The pitch, yaw, and roll limit. Each value can be `nil` if it’s unsupported. See [`DockAccessory.Limits`](dockaccessory/limits-swift.struct.md) for more information.
+The pitch, yaw, and roll limit. Each value can be `nil` if it’s unsupported. See [`DockAccessory.Limits`](./limits-swift.struct.md) for more information.
 
 #### Discussion
 
-> **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if the device has disconnected.
+> **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if the device has disconnected.
 
 ## See Also
 
-- [var motionStates: DockAccessory.MotionStates](dockaccessory/motionstates-swift.property.md)
+### Getting position and limits
+- [var motionStates: DockAccessory.MotionStates](./motionstates-swift.property.md)
   Motion information from the dock accessory that includes current orientation and velocity of all axes.
-- [DockAccessory.MotionState](dockaccessory/motionstate.md)
+- [DockAccessory.MotionState](./motionstate.md)
   An event that indicates the state of a dock accessory’s current position and speed.
-- [DockAccessory.MotionStates](dockaccessory/motionstates-swift.struct.md)
+- [DockAccessory.MotionStates](./motionstates-swift.struct.md)
   An asynchronous sequence of orientation and velocity updates from the device.
-- [DockAccessory.Limits](dockaccessory/limits-swift.struct.md)
+- [DockAccessory.Limits](./limits-swift.struct.md)
   Soft limits on multiple axes of rotation.
 
 

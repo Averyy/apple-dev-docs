@@ -1,7 +1,8 @@
 # allowsDocumentCreation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the document browser can create new documents.
 
@@ -17,23 +18,28 @@ A Boolean value that determines whether the document browser can create new docu
 var allowsDocumentCreation: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsDocumentCreation;
+```
+
 ## Mentions
 
-- [Customizing the document browser](customizing-the-browser.md)
+- [Customizing the document browser](../customizing-the-browser.md)
 
 #### Discussion
 
-The browser creates new documents when the user taps the Add (+) button in the navigation bar. The Add button is enabled only if both the [`allowsDocumentCreation`](uidocumentbrowserviewcontroller/allowsdocumentcreation.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true), and the browser delegate implements the [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](uidocumentbrowserviewcontrollerdelegate/documentbrowser(_:didrequestdocumentcreationwithhandler:).md) method.
+The browser creates new documents when the user taps the Add (+) button in the navigation bar. The Add button is enabled only if both the [`allowsDocumentCreation`](./allowsdocumentcreation.md) property is set to [`true`](../../Swift/true.md), and the browser delegate implements the [`documentBrowser(_:didRequestDocumentCreationWithHandler:)`](../uidocumentbrowserviewcontrollerdelegate/documentbrowser%28_,didrequestdocumentcreationwithhandler%29.md) method.
 
-By default, this property is set to [`true`](https://developer.apple.com/documentation/swift/true).
+By default, this property is set to [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var allowsPickingMultipleItems: Bool](uidocumentbrowserviewcontroller/allowspickingmultipleitems.md)
+### Configuring a document browser
+- [var allowsPickingMultipleItems: Bool](./allowspickingmultipleitems.md)
   A Boolean value that determines whether the user can select and open more than one document at a time.
-- [func revealDocument(at: URL, importIfNeeded: Bool, completion: ((URL?, (any Error)?) -> Void)?)](uidocumentbrowserviewcontroller/revealdocument(at:importifneeded:completion:).md)
+- [func revealDocument(at: URL, importIfNeeded: Bool, completion: ((URL?, (any Error)?) -> Void)?)](./revealdocument%28at,importifneeded,completion%29.md)
   Reveals, and optionally imports, the document at the provided URL.
-- [var contentTypesForRecentDocuments: [UTType]](uidocumentbrowserviewcontroller/contenttypesforrecentdocuments.md)
+- [var contentTypesForRecentDocuments: [UTType]](./contenttypesforrecentdocuments.md)
   Content types for browsing recent documents.
 
 

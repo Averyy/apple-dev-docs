@@ -1,21 +1,26 @@
 # NSCollectionLayoutSectionVisibleItemsInvalidationHandler
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure called before each layout cycle to allow modification of items in a section immediately before they’re displayed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias NSCollectionLayoutSectionVisibleItemsInvalidationHandler = ([any NSCollectionLayoutVisibleItem], CGPoint, any NSCollectionLayoutEnvironment) -> Void
+```
+
+```c
+typedef void (^)(NSArray<id<NSCollectionLayoutVisibleItem>> *, struct CGPoint, id<NSCollectionLayoutEnvironment>) NSCollectionLayoutSectionVisibleItemsInvalidationHandler;
 ```
 
 #### Discussion
@@ -44,13 +49,14 @@ NSCollectionLayoutSection *section = [NSCollectionLayoutSection sectionWithGroup
 
 ## See Also
 
-- [protocol NSCollectionLayoutVisibleItem](nscollectionlayoutvisibleitem.md)
+### Layout updates
+- [protocol NSCollectionLayoutVisibleItem](./nscollectionlayoutvisibleitem.md)
   An item that’s currently visible within the bounds of a section.
-- [class UICollectionViewUpdateItem](uicollectionviewupdateitem.md)
+- [class UICollectionViewUpdateItem](./uicollectionviewupdateitem.md)
   An object that describes a single change to make to an item in a collection view.
-- [class UICollectionViewFocusUpdateContext](uicollectionviewfocusupdatecontext.md)
+- [class UICollectionViewFocusUpdateContext](./uicollectionviewfocusupdatecontext.md)
   A context object that stores information specific to a focus update in a collection view.
-- [class UICollectionViewLayoutInvalidationContext](uicollectionviewlayoutinvalidationcontext.md)
+- [class UICollectionViewLayoutInvalidationContext](./uicollectionviewlayoutinvalidationcontext.md)
   A context object that declares which parts of your layout need to be updated when the layout is invalidated.
 
 

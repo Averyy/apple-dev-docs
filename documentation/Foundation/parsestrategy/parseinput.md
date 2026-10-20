@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The input type parsed by this strategy.
@@ -27,7 +28,8 @@ Conforming types provide a value for this associated type to declare the type of
 
 ## See Also
 
-- [associatedtype ParseOutput](parsestrategy/parseoutput.md)
+### Supporting types
+- [associatedtype ParseOutput](./parseoutput.md)
   The output type returned by this strategy.
 
 

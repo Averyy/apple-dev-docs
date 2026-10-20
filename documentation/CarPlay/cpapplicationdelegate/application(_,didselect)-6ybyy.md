@@ -1,19 +1,24 @@
 # application(_:didSelect:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the app delegate that the user selected a maneuver.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.1+
+- iOS 12.0+ - Deprecated in 13.0
+- iPadOS 12.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 
 ```swift
 optional func application(_ application: UIApplication, didSelect maneuver: CPManeuver)
+```
+
+```objc
+- (void) application:(UIApplication *) application didSelectManeuver:(CPManeuver *) maneuver;
 ```
 
 #### Discussion

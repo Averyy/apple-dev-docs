@@ -1,7 +1,8 @@
 # MPMusicPlayerMediaItemQueueDescriptor
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of properties and methods for modifying audio media items in the player’s media queue.
 
@@ -17,6 +18,10 @@ A set of properties and methods for modifying audio media items in the player’
 class MPMusicPlayerMediaItemQueueDescriptor
 ```
 
+```objc
+@interface MPMusicPlayerMediaItemQueueDescriptor : MPMusicPlayerQueueDescriptor
+```
+
 #### Overview
 
 Use this class to modify the player queue created by a query before the queue begins to play. You can modify when individual items start and stop playing, along with setting the first item to play.
@@ -24,48 +29,49 @@ Use this class to modify the player queue created by a query before the queue be
 ## Topics
 
 ### Creating a new media item queue descriptor
-- [init(itemCollection: MPMediaItemCollection)](mpmusicplayermediaitemqueuedescriptor/init(itemcollection:).md)
+- [init(itemCollection: MPMediaItemCollection)](./mpmusicplayermediaitemqueuedescriptor/init%28itemcollection%29.md)
   Creates a new queue descriptor using the designated collection.
-- [init(query: MPMediaQuery)](mpmusicplayermediaitemqueuedescriptor/init(query:).md)
+- [init(query: MPMediaQuery)](./mpmusicplayermediaitemqueuedescriptor/init%28query%29.md)
   Creates a new queue descriptor using the designated query.
 ### Media item queue descriptor properties
-- [var itemCollection: MPMediaItemCollection](mpmusicplayermediaitemqueuedescriptor/itemcollection.md)
+- [var itemCollection: MPMediaItemCollection](./mpmusicplayermediaitemqueuedescriptor/itemcollection.md)
   Contains the media item collection used to create the queue descriptor.
-- [var query: MPMediaQuery](mpmusicplayermediaitemqueuedescriptor/query.md)
+- [var query: MPMediaQuery](./mpmusicplayermediaitemqueuedescriptor/query.md)
   Contains the media items found by the query used to create the queue descriptor.
-- [var startItem: MPMediaItem?](mpmusicplayermediaitemqueuedescriptor/startitem.md)
+- [var startItem: MPMediaItem?](./mpmusicplayermediaitemqueuedescriptor/startitem.md)
   Designates the media item to play first.
 ### Setting start and end times
-- [func setStartTime(TimeInterval, for: MPMediaItem)](mpmusicplayermediaitemqueuedescriptor/setstarttime(_:for:).md)
+- [func setStartTime(TimeInterval, for: MPMediaItem)](./mpmusicplayermediaitemqueuedescriptor/setstarttime%28_,for%29.md)
   The time the designated media item is to start playing.
-- [func setEndTime(TimeInterval, for: MPMediaItem)](mpmusicplayermediaitemqueuedescriptor/setendtime(_:for:).md)
+- [func setEndTime(TimeInterval, for: MPMediaItem)](./mpmusicplayermediaitemqueuedescriptor/setendtime%28_,for%29.md)
   The time the designated media item is to stop playing.
 
 ## Relationships
 
 ### Inherits From
-- [MPMusicPlayerQueueDescriptor](mpmusicplayerqueuedescriptor.md)
+- [MPMusicPlayerQueueDescriptor](./mpmusicplayerqueuedescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPMusicPlayerControllerQueue](mpmusicplayercontrollerqueue.md)
+### Media player queues
+- [class MPMusicPlayerControllerQueue](./mpmusicplayercontrollerqueue.md)
   An immutable queue containing the media items to play.
-- [class MPMusicPlayerControllerMutableQueue](mpmusicplayercontrollermutablequeue.md)
+- [class MPMusicPlayerControllerMutableQueue](./mpmusicplayercontrollermutablequeue.md)
   A mutable queue containing the media items to play.
-- [class MPMusicPlayerApplicationController](mpmusicplayerapplicationcontroller.md)
+- [class MPMusicPlayerApplicationController](./mpmusicplayerapplicationcontroller.md)
   A media player object that you use to revise the queue that’s currently playing.
-- [class MPMusicPlayerStoreQueueDescriptor](mpmusicplayerstorequeuedescriptor.md)
+- [class MPMusicPlayerStoreQueueDescriptor](./mpmusicplayerstorequeuedescriptor.md)
   A set of properties and methods for modifying items, based on their store identifier, in the player’s queue.
-- [class MPMusicPlayerPlayParametersQueueDescriptor](mpmusicplayerplayparametersqueuedescriptor.md)
+- [class MPMusicPlayerPlayParametersQueueDescriptor](./mpmusicplayerplayparametersqueuedescriptor.md)
   A set of properties and methods for modifying how to play items, based on play parameters the framework returns.
-- [class MPMusicPlayerQueueDescriptor](mpmusicplayerqueuedescriptor.md)
+- [class MPMusicPlayerQueueDescriptor](./mpmusicplayerqueuedescriptor.md)
   The abstract base class for audio media item and store queue descriptors.
 
 

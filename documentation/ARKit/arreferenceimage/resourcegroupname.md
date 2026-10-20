@@ -1,7 +1,8 @@
 # resourceGroupName
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The AR resource group name for this image.
 
@@ -15,15 +16,20 @@ The AR resource group name for this image.
 var resourceGroupName: String? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSString * resourceGroupName;
+```
+
 #### Discussion
 
 If ARKit loaded this image from an AR resource group in an asset catalog, ARKit sets the value of this property to the resource group’s name. Otherwise, the value of this property is `nil`>.
 
 ## See Also
 
-- [var name: String?](arreferenceimage/name.md)
+### Examining a Reference Image
+- [var name: String?](./name.md)
   A descriptive name for the image.
-- [var physicalSize: CGSize](arreferenceimage/physicalsize.md)
+- [var physicalSize: CGSize](./physicalsize.md)
   The real-world dimensions, in meters, of the image.
 
 

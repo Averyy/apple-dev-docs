@@ -1,7 +1,8 @@
 # LanguageModelExecutorGenerationRequest
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains the details for a generation request.
 
@@ -21,48 +22,49 @@ struct LanguageModelExecutorGenerationRequest
 
 #### Overview
 
-A generation request is the input payload that [`respond(to:model:streamingInto:)`](languagemodelexecutor/respond(to:model:streaminginto:).md) handles. It bundles everything the executor needs to translate a framework call into a backend request, like the conversation so far, what tools are available, and so on.
+A generation request is the input payload that [`respond(to:model:streamingInto:)`](./languagemodelexecutor/respond%28to,model,streaminginto%29.md) handles. It bundles everything the executor needs to translate a framework call into a backend request, like the conversation so far, what tools are available, and so on.
 
 ## Topics
 
 ### Creating a generation request
-- [init(id: UUID, transcript: Transcript, enabledTools: [Transcript.ToolDefinition], schema: GenerationSchema?, generationOptions: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent])](languagemodelexecutorgenerationrequest/init(id:transcript:enabledtools:schema:generationoptions:contextoptions:metadata:).md)
+- [init(id: UUID, transcript: Transcript, enabledTools: [Transcript.ToolDefinition], schema: GenerationSchema?, generationOptions: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent])](./languagemodelexecutorgenerationrequest/init%28id,transcript,enabledtools,schema,generationoptions,contextoptions,metadata%29.md)
   Creates a generation request.
 ### Configuring a generation request
-- [var id: UUID](languagemodelexecutorgenerationrequest/id.md)
+- [var id: UUID](./languagemodelexecutorgenerationrequest/id.md)
   A request id for logging and tracing purposes.
-- [var metadata: [String : GeneratedContent]](languagemodelexecutorgenerationrequest/metadata.md)
+- [var metadata: [String : GeneratedContent]](./languagemodelexecutorgenerationrequest/metadata.md)
   Metadata to attach to the request.
-- [var contextOptions: ContextOptions](languagemodelexecutorgenerationrequest/contextoptions.md)
+- [var contextOptions: ContextOptions](./languagemodelexecutorgenerationrequest/contextoptions.md)
   Settings that configure how the model is prompted.
-- [var enabledToolDefinitions: [Transcript.ToolDefinition]](languagemodelexecutorgenerationrequest/enabledtooldefinitions.md)
+- [var enabledToolDefinitions: [Transcript.ToolDefinition]](./languagemodelexecutorgenerationrequest/enabledtooldefinitions.md)
   The subset of tool definitions that the model is allowed to call.
-- [var generationOptions: GenerationOptions](languagemodelexecutorgenerationrequest/generationoptions.md)
+- [var generationOptions: GenerationOptions](./languagemodelexecutorgenerationrequest/generationoptions.md)
   Generation options that control sampling behavior.
-- [var schema: GenerationSchema?](languagemodelexecutorgenerationrequest/schema.md)
+- [var schema: GenerationSchema?](./languagemodelexecutorgenerationrequest/schema.md)
   An optional schema dictating the required output format.
-- [var transcript: Transcript](languagemodelexecutorgenerationrequest/transcript.md)
+- [var transcript: Transcript](./languagemodelexecutorgenerationrequest/transcript.md)
   A transcript to generate the next entry for.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+### Custom language model provider
+- [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
   Send requests on device to an open source model you export with Core AI to get a consistent API experience.
-- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
+- [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md)
   Prevent repeated token processing by preserving the cached state across turns.
-- [protocol LanguageModel](languagemodel.md)
+- [protocol LanguageModel](./languagemodel.md)
   A protocol that you use to interface with a model.
-- [struct LanguageModelCapabilities](languagemodelcapabilities.md)
+- [struct LanguageModelCapabilities](./languagemodelcapabilities.md)
   A set of capabilities that a language model provides.
-- [protocol LanguageModelExecutor](languagemodelexecutor.md)
+- [protocol LanguageModelExecutor](./languagemodelexecutor.md)
   A protocol that defines the interface for responding to session requests.
-- [struct LanguageModelExecutorGenerationChannel](languagemodelexecutorgenerationchannel.md)
+- [struct LanguageModelExecutorGenerationChannel](./languagemodelexecutorgenerationchannel.md)
   A type you use to send model output deltas and updates to the framework.
 
 

@@ -1,7 +1,8 @@
 # allowsParallelizedExport
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the session can parallelize its export operation.
 
@@ -14,25 +15,30 @@ A Boolean value that indicates whether the session can parallelize its export op
 var allowsParallelizedExport: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsParallelizedExport;
+```
+
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) by default, which indicates that the export session is allowed to expedite its processing by using additional resources in parallel on select Mac systems. If parallelization isn’t achievable, export proceeds as normal.
+This value is [`true`](../../Swift/true.md) by default, which indicates that the export session is allowed to expedite its processing by using additional resources in parallel on select Mac systems. If parallelization isn’t achievable, export proceeds as normal.
 
-> **Note**:  Parallelized exports reduce the amount of time it takes to export media, but require additional power consumption. If your app requires opting out of the default behavior, set this value to [`false`](https://developer.apple.com/documentation/swift/false).
+> **Note**:  Parallelized exports reduce the amount of time it takes to export media, but require additional power consumption. If your app requires opting out of the default behavior, set this value to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var supportedFileTypes: [AVFileType]](avassetexportsession/supportedfiletypes.md)
+### Configuring output
+- [var supportedFileTypes: [AVFileType]](./supportedfiletypes.md)
   An array containing the types of files the session can write.
-- [var shouldOptimizeForNetworkUse: Bool](avassetexportsession/shouldoptimizefornetworkuse.md)
+- [var shouldOptimizeForNetworkUse: Bool](./shouldoptimizefornetworkuse.md)
   A Boolean value that indicates whether to optimize the movie for network use.
-- [var canPerformMultiplePassesOverSourceMediaData: Bool](avassetexportsession/canperformmultiplepassesoversourcemediadata.md)
+- [var canPerformMultiplePassesOverSourceMediaData: Bool](./canperformmultiplepassesoversourcemediadata.md)
   A Boolean value that indicates whether the export session can perform multiple passes over the source media to achieve better results.
-- [var timeRange: CMTimeRange](avassetexportsession/timerange.md)
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range of the source asset to export.
-- [var fileLengthLimit: Int64](avassetexportsession/filelengthlimit.md)
+- [var fileLengthLimit: Int64](./filelengthlimit.md)
   The file length that the output of the session must not exceed.
-- [var directoryForTemporaryFiles: URL?](avassetexportsession/directoryfortemporaryfiles.md)
+- [var directoryForTemporaryFiles: URL?](./directoryfortemporaryfiles.md)
   A directory suitable to store temporary files that the export process generates.
 
 

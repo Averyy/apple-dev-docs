@@ -1,17 +1,18 @@
 # PHASESpatialPipeline.Flags
 
 **Framework**: PHASE  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Sound resonance options for a spatial pipeline.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,42 +20,47 @@ Sound resonance options for a spatial pipeline.
 struct Flags
 ```
 
+```c
+enum PHASESpatialPipelineFlags : NSUInteger;
+```
+
 #### Overview
 
-Each [`PHASESpatialPipeline`](phasespatialpipeline.md) specifies a flag in its [`init(flags:)`](phasespatialpipeline/init(flags:).md) initializer.
+Each [`PHASESpatialPipeline`](../phasespatialpipeline.md) specifies a flag in its [`init(flags:)`](./init%28flags%29.md) initializer.
 
 ## Topics
 
 ### Creating a Flag
-- [init(rawValue: UInt)](phasespatialpipeline/flags-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./flags-swift.struct/init%28rawvalue%29.md)
   Initializes a spatial flag with the given string.
 ### Choosing a Flag
-- [static var directPathTransmission: PHASESpatialPipeline.Flags](phasespatialpipeline/flags-swift.struct/directpathtransmission.md)
+- [static var directPathTransmission: PHASESpatialPipeline.Flags](./flags-swift.struct/directpathtransmission.md)
   A spatial property that refers to the original audio signal.
-- [static var earlyReflections: PHASESpatialPipeline.Flags](phasespatialpipeline/flags-swift.struct/earlyreflections.md)
+- [static var earlyReflections: PHASESpatialPipeline.Flags](./flags-swift.struct/earlyreflections.md)
   A spatial property that refers to the earlier echoes along the duration of sound resonance.
-- [static var lateReverb: PHASESpatialPipeline.Flags](phasespatialpipeline/flags-swift.struct/latereverb.md)
+- [static var lateReverb: PHASESpatialPipeline.Flags](./flags-swift.struct/latereverb.md)
   A spatial property that refers to the later echoes along the duration of sound resonance.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [class PHASESpatialPipeline](phasespatialpipeline.md)
+### Sound Reflections and Resonance
+- [class PHASESpatialPipeline](../phasespatialpipeline.md)
   An object that specifies the volume of optional environmental effects.
-- [class PHASESpatialPipelineEntry](phasespatialpipelineentry.md)
+- [class PHASESpatialPipelineEntry](../phasespatialpipelineentry.md)
   An audio layer with an adjustable volume for a spatial mixer’s output.
-- [struct PHASESpatialCategory](phasespatialcategory.md)
+- [struct PHASESpatialCategory](../phasespatialcategory.md)
   Sound resonance effects for spatial mixing.
 
 

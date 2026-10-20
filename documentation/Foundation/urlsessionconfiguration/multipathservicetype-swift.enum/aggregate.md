@@ -1,7 +1,8 @@
 # URLSessionConfiguration.MultipathServiceType.aggregate
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A service that aggregates the capacities of other Multipath options in an attempt to increase throughput and minimize latency.
 
@@ -17,9 +18,13 @@ A service that aggregates the capacities of other Multipath options in an attemp
 case aggregate
 ```
 
+```c
+NSURLSessionMultipathServiceTypeAggregate
+```
+
 #### Discussion
 
-This option is available only for experimentation. Specify it for connections that use cellular data. You must also set the [`Multipath Entitlement`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.networking.multipath) in the Xcode Capabilities pane for your app.
+This option is available only for experimentation. Specify it for connections that use cellular data. You must also set the [`Multipath Entitlement`](../../../BundleResources/entitlements/com.apple.developer.networking.multipath.md) in the Xcode Capabilities pane for your app.
 
 To enable the aggregation mode, open the Settings app on your development iPhone and navigate to Developer, and then turn on Multipath Networking.
 
@@ -29,11 +34,12 @@ Multipath Aggregation requires an iOS device in Developer mode with a cellular c
 
 ## See Also
 
-- [URLSessionConfiguration.MultipathServiceType.none](urlsessionconfiguration/multipathservicetype-swift.enum/none.md)
+### Service types
+- [URLSessionConfiguration.MultipathServiceType.none](./none.md)
   The default service type indicating that Multipath TCP should not be used.
-- [URLSessionConfiguration.MultipathServiceType.handover](urlsessionconfiguration/multipathservicetype-swift.enum/handover.md)
+- [URLSessionConfiguration.MultipathServiceType.handover](./handover.md)
   A Multipath TCP service that provides seamless handover between Wi-Fi and cellular in order to preserve the connection.
-- [URLSessionConfiguration.MultipathServiceType.interactive](urlsessionconfiguration/multipathservicetype-swift.enum/interactive.md)
+- [URLSessionConfiguration.MultipathServiceType.interactive](./interactive.md)
   A service whereby Multipath TCP attempts to use the lowest-latency interface.
 
 

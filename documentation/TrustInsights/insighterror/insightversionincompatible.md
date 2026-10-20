@@ -1,7 +1,8 @@
 # InsightError.insightVersionIncompatible
 
 **Framework**: Trust Insights  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the version you requested isn’t available on this device and OS combination.
 
@@ -17,13 +18,14 @@ case insightVersionIncompatible
 
 ## See Also
 
-- [InsightError.insightEvaluationFailed](insighterror/insightevaluationfailed.md)
+### Insight errors
+- [InsightError.insightEvaluationFailed](./insightevaluationfailed.md)
   An error that indicates that there was a failure in generating the insight.
-- [InsightError.insightUnavailable](insighterror/insightunavailable.md)
+- [InsightError.insightUnavailable](./insightunavailable.md)
   An error that indicate the requested insight isn’t available.
-- [InsightError.insightVersionUnavailable](insighterror/insightversionunavailable.md)
+- [InsightError.insightVersionUnavailable](./insightversionunavailable.md)
   An error that indicates that the insight version you requested isn’t available.
-- [InsightError.rateLimitError](insighterror/ratelimiterror.md)
+- [InsightError.rateLimitError](./ratelimiterror.md)
   An error that indicates that the app has reached the rate limit for the particular insight type.
 
 

@@ -1,7 +1,8 @@
 # audioTrackNumber
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,21 +19,22 @@ static let audioTrackNumber: SearchableItemAttribute
 
 ## See Also
 
-- [static let album: SearchableItemAttribute](searchableitemattribute/album.md)
-- [static let artist: SearchableItemAttribute](searchableitemattribute/artist.md)
-- [static let audioChannelCount: SearchableItemAttribute](searchableitemattribute/audiochannelcount.md)
-- [static let audioEncodingApplication: SearchableItemAttribute](searchableitemattribute/audioencodingapplication.md)
-- [static let audioSampleRate: SearchableItemAttribute](searchableitemattribute/audiosamplerate.md)
-- [static let composer: SearchableItemAttribute](searchableitemattribute/composer.md)
-- [static let keySignature: SearchableItemAttribute](searchableitemattribute/keysignature.md)
-- [static let lyricist: SearchableItemAttribute](searchableitemattribute/lyricist.md)
-- [static let musicalGenre: SearchableItemAttribute](searchableitemattribute/musicalgenre.md)
-- [static let recordingDate: SearchableItemAttribute](searchableitemattribute/recordingdate.md)
-- [static let tempo: SearchableItemAttribute](searchableitemattribute/tempo.md)
-- [static let timeSignature: SearchableItemAttribute](searchableitemattribute/timesignature.md)
-- [static let generalMIDISequence: SearchableItemAttribute](searchableitemattribute/generalmidisequence.md)
-- [static let musicalInstrumentCategory: SearchableItemAttribute](searchableitemattribute/musicalinstrumentcategory.md)
-- [static let musicalInstrumentName: SearchableItemAttribute](searchableitemattribute/musicalinstrumentname.md)
+### Describing music
+- [static let album: SearchableItemAttribute](./album.md)
+- [static let artist: SearchableItemAttribute](./artist.md)
+- [static let audioChannelCount: SearchableItemAttribute](./audiochannelcount.md)
+- [static let audioEncodingApplication: SearchableItemAttribute](./audioencodingapplication.md)
+- [static let audioSampleRate: SearchableItemAttribute](./audiosamplerate.md)
+- [static let composer: SearchableItemAttribute](./composer.md)
+- [static let keySignature: SearchableItemAttribute](./keysignature.md)
+- [static let lyricist: SearchableItemAttribute](./lyricist.md)
+- [static let musicalGenre: SearchableItemAttribute](./musicalgenre.md)
+- [static let recordingDate: SearchableItemAttribute](./recordingdate.md)
+- [static let tempo: SearchableItemAttribute](./tempo.md)
+- [static let timeSignature: SearchableItemAttribute](./timesignature.md)
+- [static let generalMIDISequence: SearchableItemAttribute](./generalmidisequence.md)
+- [static let musicalInstrumentCategory: SearchableItemAttribute](./musicalinstrumentcategory.md)
+- [static let musicalInstrumentName: SearchableItemAttribute](./musicalinstrumentname.md)
 
 
 ---

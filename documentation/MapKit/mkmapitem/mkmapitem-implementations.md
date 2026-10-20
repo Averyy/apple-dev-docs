@@ -1,11 +1,12 @@
 # MKMapItem Implementations
 
-**Framework**: MapKit
+**Framework**: MapKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](mkmapitem/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
 
 
 ---

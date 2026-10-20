@@ -1,7 +1,8 @@
 # automaticallyUpdatesLighting
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether ARKit creates and updates SceneKit lights in the view’s scene.
 
@@ -15,9 +16,13 @@ A Boolean value that specifies whether ARKit creates and updates SceneKit lights
 var automaticallyUpdatesLighting: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL automaticallyUpdatesLighting;
+```
+
 #### Discussion
 
-If this value is [`true`](https://developer.apple.com/documentation/swift/true) (the default), the view automatically creates one or more [`SCNLight`](https://developer.apple.com/documentation/scenekit/scnlight) objects, adds them to the scene, and updates their properties to reflect estimated lighting information from the camera scene. Set this value to [`false`](https://developer.apple.com/documentation/swift/false) if you want to directly control all lighting in the SceneKit scene.
+If this value is [`true`](../../Swift/true.md) (the default), the view automatically creates one or more [`SCNLight`](../../SceneKit/scnlight.md) objects, adds them to the scene, and updates their properties to reflect estimated lighting information from the camera scene. Set this value to [`false`](../../Swift/false.md) if you want to directly control all lighting in the SceneKit scene.
 
 
 ---

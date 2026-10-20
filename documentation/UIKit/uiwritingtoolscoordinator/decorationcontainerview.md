@@ -1,7 +1,8 @@
 # decorationContainerView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view that Writing Tools uses to display background decorations such as proofreading marks.
 
@@ -17,15 +18,20 @@ The view that Writing Tools uses to display background decorations such as proof
 weak var decorationContainerView: UIView? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) UIView * decorationContainerView;
+```
+
 #### Discussion
 
-Writing Tools uses the view in this property to host proofreading marks and other visual elements that show any suggested changes. Set this property to a subview situated visibly below the text in your custom text view. It’s also satisfactory to place this view visually in front of the text. Make sure the size of the view is big enough to cover all of the affected text. If you don’t assign a value to this property, the coordinator uses the object in its [`view`](uiinteraction/view.md) property to host any visual elements.
+Writing Tools uses the view in this property to host proofreading marks and other visual elements that show any suggested changes. Set this property to a subview situated visibly below the text in your custom text view. It’s also satisfactory to place this view visually in front of the text. Make sure the size of the view is big enough to cover all of the affected text. If you don’t assign a value to this property, the coordinator uses the object in its [`view`](../uiinteraction/view.md) property to host any visual elements.
 
-If you display your view’s text using multiple text containers, implement the [`writingToolsCoordinator(_:requestsSingleContainerSubrangesOf:in:completion:)`](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestssinglecontainersubrangesof:in:completion:).md) and [`writingToolsCoordinator(_:requestsDecorationContainerViewFor:in:completion:)`](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestsdecorationcontainerviewfor:in:completion:).md) methods to provide separate decoration views for each container.
+If you display your view’s text using multiple text containers, implement the [`writingToolsCoordinator(_:requestsSingleContainerSubrangesOf:in:completion:)`](./delegate-swift.protocol/writingtoolscoordinator%28_,requestssinglecontainersubrangesof,in,completion%29.md) and [`writingToolsCoordinator(_:requestsDecorationContainerViewFor:in:completion:)`](./delegate-swift.protocol/writingtoolscoordinator%28_,requestsdecorationcontainerviewfor,in,completion%29.md) methods to provide separate decoration views for each container.
 
 ## See Also
 
-- [var effectContainerView: UIView?](uiwritingtoolscoordinator/effectcontainerview.md)
+### Getting the host views for effects
+- [var effectContainerView: UIView?](./effectcontainerview.md)
   The view that Writing Tools uses to display visual effects during the text-rewriting process.
 
 

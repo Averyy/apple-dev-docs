@@ -1,9 +1,10 @@
 # soPhonemeOptions
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Get or set options for the generation of phonetic output. See [`Phoneme Generation Options`](speech_synthesis_manager/1552233-phoneme_generation_options.md) for a complete list of options.
+Get or set options for the generation of phonetic output. See [Phoneme Generation Options](./speech_synthesis_manager/api-1552233-phoneme_generation_options.md) for a complete list of options.
 
 **Availability**:
 - macOS 10.6+

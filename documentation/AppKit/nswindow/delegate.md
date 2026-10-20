@@ -1,17 +1,22 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The window’s delegate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 weak var delegate: (any NSWindowDelegate)? { get set }
+```
+
+```objc
+@property (weak, nullable) id<NSWindowDelegate> delegate;
 ```
 
 #### Discussion
@@ -22,11 +27,13 @@ A window object’s delegate is inserted in the responder chain after the window
 
 ## See Also
 
-- [func tryToPerform(Selector, with: Any?) -> Bool](nswindow/trytoperform(_:with:).md)
+### Related Documentation
+- [func tryToPerform(Selector, with: Any?) -> Bool](./trytoperform%28_,with%29.md)
   Dispatches action messages with a given argument.
-- [func sendAction(Selector, to: Any?, from: Any?) -> Bool](nsapplication/sendaction(_:to:from:).md)
+- [func sendAction(Selector, to: Any?, from: Any?) -> Bool](../nsapplication/sendaction%28_,to,from%29.md)
   Sends the given action message to the given target.
-- [protocol NSWindowDelegate](nswindowdelegate.md)
+### Managing the Window’s Behavior
+- [protocol NSWindowDelegate](../nswindowdelegate.md)
   A set of optional methods that a window’s delegate can implement to respond to events, such as window resizing, moving, exposing, and minimizing.
 
 

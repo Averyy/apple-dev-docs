@@ -1,7 +1,8 @@
 # readAttributeTxBeaconRequestCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeTxBeaconRequestCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeTxBeaconRequestCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeTxBeaconRequestCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

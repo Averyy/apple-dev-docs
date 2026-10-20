@@ -1,7 +1,8 @@
 # ICDeviceLocationType.bluetooth
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A paired Bluetooth device.
 
@@ -18,13 +19,18 @@ A paired Bluetooth device.
 case bluetooth
 ```
 
+```c
+ICDeviceLocationTypeBluetooth
+```
+
 ## See Also
 
-- [ICDeviceLocationType.bonjour](icdevicelocationtype/bonjour.md)
+### Constants
+- [ICDeviceLocationType.bonjour](./bonjour.md)
   A supported Bonjour services device.
-- [ICDeviceLocationType.local](icdevicelocationtype/local.md)
+- [ICDeviceLocationType.local](./local.md)
   A device that’s directly attached to the Mac through its USB or FireWire port.
-- [ICDeviceLocationType.shared](icdevicelocationtype/shared.md)
+- [ICDeviceLocationType.shared](./shared.md)
   A device that’s shared by other Mac hosts.
 
 

@@ -1,7 +1,8 @@
 # defaultMessage
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A static context representing a message with default properties.
 
@@ -26,9 +27,10 @@ You should use this context for sending content unless there is a reason to over
 
 ## See Also
 
-- [static let finalMessage: NWConnection.ContentContext](nwconnection/contentcontext/finalmessage.md)
+### Using Constant Send Contexts
+- [static let finalMessage: NWConnection.ContentContext](./finalmessage.md)
   A static context that’s marked as the final message in a connection.
-- [static let defaultStream: NWConnection.ContentContext](nwconnection/contentcontext/defaultstream.md)
+- [static let defaultStream: NWConnection.ContentContext](./defaultstream.md)
   A static context representing the total stream of bytes on a connection.
 
 

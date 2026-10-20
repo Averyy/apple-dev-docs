@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the convolution type, suitable for debugging.
 
@@ -18,11 +19,16 @@ A textual description of the convolution type, suitable for debugging.
 var debugDescription: String { get }
 ```
 
+```c
+NSString *MLCConvolutionTypeDebugDescription(MLCConvolutionType convolutionType);
+```
+
 ## See Also
 
-- [MLCConvolutionType.standard](mlcconvolutiontype/standard.md)
-- [MLCConvolutionType.depthwise](mlcconvolutiontype/depthwise.md)
-- [MLCConvolutionType.transposed](mlcconvolutiontype/transposed.md)
+### Enumeration Cases
+- [MLCConvolutionType.standard](./standard.md)
+- [MLCConvolutionType.depthwise](./depthwise.md)
+- [MLCConvolutionType.transposed](./transposed.md)
 
 
 ---

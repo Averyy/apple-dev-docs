@@ -1,7 +1,8 @@
 # AccessoryAuthorizationResult.deny
 
 **Framework**: Accessory Live Activities  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option that indicates the person doesn’t allow Live Activities.
 
@@ -17,11 +18,12 @@ case deny
 
 ## See Also
 
-- [AccessoryAuthorizationResult.undetermined](accessoryauthorizationresult/undetermined.md)
+### Identifying the decision
+- [AccessoryAuthorizationResult.undetermined](./undetermined.md)
   An option that indicates the system hasn’t shown the authorization prompt to the person.
-- [AccessoryAuthorizationResult.allow](accessoryauthorizationresult/allow.md)
+- [AccessoryAuthorizationResult.allow](./allow.md)
   An option that indicates the person allows Live Activity forwarding from all apps that support them.
-- [AccessoryAuthorizationResult.limited](accessoryauthorizationresult/limited.md)
+- [AccessoryAuthorizationResult.limited](./limited.md)
   An option that indicates the person allows Live Activities from a selected subset of apps.
 
 

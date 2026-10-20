@@ -1,7 +1,8 @@
 # UIUserInterfaceLevel.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unspecified interface level.
 
@@ -17,15 +18,20 @@ An unspecified interface level.
 case unspecified
 ```
 
+```c
+UIUserInterfaceLevelUnspecified
+```
+
 #### Discussion
 
 Choose this option when you want to follow the inherited level.
 
 ## See Also
 
-- [UIUserInterfaceLevel.base](uiuserinterfacelevel/base.md)
+### Interface levels
+- [UIUserInterfaceLevel.base](./base.md)
   The level for your window’s main content.
-- [UIUserInterfaceLevel.elevated](uiuserinterfacelevel/elevated.md)
+- [UIUserInterfaceLevel.elevated](./elevated.md)
   The level for content visually above your window’s main content.
 
 

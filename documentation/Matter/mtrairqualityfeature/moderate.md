@@ -1,7 +1,8 @@
 # moderate
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 static var moderate: MTRAirQualityFeature { get }
+```
+
+```c
+MTRAirQualityFeatureModerate
 ```
 
 

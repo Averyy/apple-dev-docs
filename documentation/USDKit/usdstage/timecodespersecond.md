@@ -1,7 +1,8 @@
 # timeCodesPerSecond
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of time codes per second of playback for this stage.
 
@@ -21,9 +22,10 @@ var timeCodesPerSecond: Double { get nonmutating set }
 
 ## See Also
 
-- [var timeCodeRange: ClosedRange<USDStage.TimeCode>](usdstage/timecoderange.md)
+### Working with time codes
+- [var timeCodeRange: ClosedRange<USDStage.TimeCode>](./timecoderange.md)
   The range of time codes over which this stage has authored animation.
-- [USDStage.TimeCode](usdstage/timecode.md)
+- [USDStage.TimeCode](./timecode.md)
   A unitless point in time, used with time-varying values authored in 3D scenes.
 
 

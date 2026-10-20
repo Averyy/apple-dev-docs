@@ -1,7 +1,8 @@
 # ReviewSubmissionItemCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,31 +11,31 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object ReviewSubmissionItemCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppCustomProductPageVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpageversion-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppEvent](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appevent-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersionExperiment](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.ReviewSubmission](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/reviewsubmission-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersionExperimentV2](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppCustomProductPageVersion](./relationships-data.dictionary/appcustomproductpageversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppEvent](./relationships-data.dictionary/appevent-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersion](./relationships-data.dictionary/appstoreversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersionExperiment](./relationships-data.dictionary/appstoreversionexperiment-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.ReviewSubmission](./relationships-data.dictionary/reviewsubmission-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersionExperimentV2](./relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary.md)
 ### Dictionaries
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppAssetLibraryImage](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appassetlibraryimage-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppAssetLibraryVideo](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appassetlibraryvideo-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.BackgroundAssetVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterAchievementVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterachievementversion-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterActivityVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenteractivityversion-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterChallengeVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterchallengeversion-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardSetVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardsetversion-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.InAppPurchaseVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchaseversion-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionGroupVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/subscriptiongroupversion-data.dictionary.md)
-- [object ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/subscriptionversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppAssetLibraryImage](./relationships-data.dictionary/appassetlibraryimage-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppAssetLibraryVideo](./relationships-data.dictionary/appassetlibraryvideo-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.BackgroundAssetVersion](./relationships-data.dictionary/backgroundassetversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterAchievementVersion](./relationships-data.dictionary/gamecenterachievementversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterActivityVersion](./relationships-data.dictionary/gamecenteractivityversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterChallengeVersion](./relationships-data.dictionary/gamecenterchallengeversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardSetVersion](./relationships-data.dictionary/gamecenterleaderboardsetversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardVersion](./relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.InAppPurchaseVersion](./relationships-data.dictionary/inapppurchaseversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionGroupVersion](./relationships-data.dictionary/subscriptiongroupversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionVersion](./relationships-data.dictionary/subscriptionversion-data.dictionary.md)
 
 ## Properties
 

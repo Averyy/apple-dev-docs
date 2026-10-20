@@ -1,7 +1,8 @@
 # outputBackings
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of feature names and client-allocated buffers.
 
@@ -18,6 +19,10 @@ A dictionary of feature names and client-allocated buffers.
 
 ```swift
 var outputBackings: [String : Any] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) NSDictionary<NSString *,id> * outputBackings;
 ```
 
 

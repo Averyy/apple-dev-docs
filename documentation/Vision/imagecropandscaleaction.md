@@ -1,7 +1,8 @@
 # ImageCropAndScaleAction
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A scale to apply to an input image before performing a request.
 
@@ -24,36 +25,37 @@ enum ImageCropAndScaleAction
 
 Scaling an image ensures that it fits within the algorithm’s input image dimensions, which may require a change in aspect ratio. The figure below shows how each crop-and-scale option transforms the input image:
 
-![A series of six photos that show the effects of applying a center crop, scale fit, scale fill, scale fit rotate 90 degrees counterclockwise, and scale fill rotate 90 degrees counterclockwise option to the original input image.](/images/Vision/scale-crop-options@2x.png)
+![A series of six photos that show the effects of applying a center crop, scale fit, scale fill, scale fit rotate 90 degrees counterclockwise, and scale fill rotate 90 degrees counterclockwise option to the original input image.](https://developer.apple.com/tutorials/images/Vision/scale-crop-options@2x.png)
 
 ## Topics
 
 ### Getting the actions
-- [ImageCropAndScaleAction.centerCrop](imagecropandscaleaction/centercrop.md)
+- [ImageCropAndScaleAction.centerCrop](./imagecropandscaleaction/centercrop.md)
   An action that scales the image and maintains the aspect ratio to fit on the short side and crop centered on the long side.
-- [ImageCropAndScaleAction.scaleToFit](imagecropandscaleaction/scaletofit.md)
+- [ImageCropAndScaleAction.scaleToFit](./imagecropandscaleaction/scaletofit.md)
   An action that scales to the size the algorithm requires while maintaining the original aspect ratio.
-- [ImageCropAndScaleAction.scaleToFill](imagecropandscaleaction/scaletofill.md)
+- [ImageCropAndScaleAction.scaleToFill](./imagecropandscaleaction/scaletofill.md)
   An action that scales the image to fill the input dimensions and resizing it, if necessary.
-- [ImageCropAndScaleAction.scaleToFitPlus90CCWRotation](imagecropandscaleaction/scaletofitplus90ccwrotation.md)
+- [ImageCropAndScaleAction.scaleToFitPlus90CCWRotation](./imagecropandscaleaction/scaletofitplus90ccwrotation.md)
   An action that scales the image and maintains the aspect ratio to fit on the long side, and rotates the image by 90 degrees counter clockwise.
-- [ImageCropAndScaleAction.scaleToFillPlus90CCWRotation](imagecropandscaleaction/scaletofillplus90ccwrotation.md)
+- [ImageCropAndScaleAction.scaleToFillPlus90CCWRotation](./imagecropandscaleaction/scaletofillplus90ccwrotation.md)
   An action that scales the image and rotates it by 90 degrees counter clockwise.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../Swift/caseiterable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cropAndScaleAction: ImageCropAndScaleAction](calculateimageaestheticsscoresrequest/cropandscaleaction.md)
+### Configuring a request
+- [var cropAndScaleAction: ImageCropAndScaleAction](./calculateimageaestheticsscoresrequest/cropandscaleaction.md)
   An optional setting that tells the algorithm how to scale an input image before generating the result.
 
 

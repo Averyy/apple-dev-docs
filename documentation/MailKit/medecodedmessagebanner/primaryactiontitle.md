@@ -1,7 +1,8 @@
 # primaryActionTitle
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -12,10 +13,15 @@
 var primaryActionTitle: String { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSString * primaryActionTitle;
+```
+
 ## See Also
 
-- [var isDismissable: Bool](medecodedmessagebanner/isdismissable.md)
-- [var title: String](medecodedmessagebanner/title.md)
+### Instance Properties
+- [var isDismissable: Bool](./isdismissable.md)
+- [var title: String](./title.md)
 
 
 ---

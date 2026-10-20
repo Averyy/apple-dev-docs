@@ -2,16 +2,19 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reports changes in the iOS interface environment.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 17.0
+- iPadOS 8.0+ - Deprecated in 17.0
+- Mac Catalyst 13.1+ - Deprecated in 17.0
+- tvOS - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: In Swift, use [`registerForTraitChanges(_:handler:)`](../uitraitchangeobservable-67e94/registerfortraitchanges%28_,handler%29.md) or [`registerForTraitChanges(_:target:action:)`](../uitraitchangeobservable-67e94/registerfortraitchanges%28_,target,action%29.md) instead. In Objective-C, use [`registerForTraitChanges:withHandler:`](../uitraitchangeobservable-7qoet/registerfortraitchanges_withhandler_.md) or [`registerForTraitChanges:withTarget:action:`](../uitraitchangeobservable-7qoet/registerfortraitchanges_withtarget_action_.md) instead.
 
 ## Declaration
 
@@ -19,12 +22,16 @@ Reports changes in the iOS interface environment.
 func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?)
 ```
 
+```objc
+- (void) traitCollectionDidChange:(UITraitCollection *) previousTraitCollection;
+```
+
 ## Mentions
 
-- [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
-- [Checking the availability of 3D Touch](checking-the-availability-of-3d-touch.md)
-- [Responding to changing display modes on Apple TV](responding-to-changing-display-modes-on-apple-tv.md)
-- [Scaling fonts automatically](scaling-fonts-automatically.md)
+- [Adapting your app when traits change](../adapting-your-app-when-traits-change.md)
+- [Checking the availability of 3D Touch](../checking-the-availability-of-3d-touch.md)
+- [Responding to changing display modes on Apple TV](../responding-to-changing-display-modes-on-apple-tv.md)
+- [Scaling fonts automatically](../scaling-fonts-automatically.md)
 
 #### Discussion
 
@@ -44,7 +51,7 @@ At the beginning of your implementation, call `super` to ensure that interface e
 
 ## Parameters
 
-- `previousTraitCollection`: The [`UITraitCollection`](uitraitcollection.md) object before the interface environment changed.
+- `previousTraitCollection`: The [`UITraitCollection`](../uitraitcollection.md) object before the interface environment changed.
 
 
 ---

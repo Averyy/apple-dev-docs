@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The function used to respond to action terminated events.
@@ -22,7 +23,14 @@ mutating func actionTerminated(event: Self.EventType)
 
 #### Discussion
 
-Action terminated is raised when playback is terminated and the animation is removed from the animation system. This can occur before the animation has a chance to complete if the user manually stops the animation by calling [`stop()`](animationplaybackcontroller/stop().md).
+Action terminated is raised when playback is terminated and the animation is removed from the animation system. This can occur before the animation has a chance to complete if the user manually stops the animation by calling [`stop()`](../animationplaybackcontroller/stop%28%29.md).
+
+## Default Implementations
+
+### ActionHandlerProtocol Implementations
+- [func actionTerminated(event: Self.EventType)](./actionterminated%28event%29-34zs0.md)
+  The function used to respond to action terminated events.
+- [func actionTerminated(event: Self.EventType)](./actionterminated%28event%29-5pd4o.md)
 
 
 ---

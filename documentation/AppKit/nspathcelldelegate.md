@@ -1,12 +1,13 @@
 # NSPathCellDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-A set of methods that enable the delegate of a path cell object to customize the Open panel or pop-up menu of a path whose style is set to [`NSPathControl.Style.popUp`](nspathcontrol/style/popup.md).
+A set of methods that enable the delegate of a path cell object to customize the Open panel or pop-up menu of a path whose style is set to [`NSPathControl.Style.popUp`](./nspathcontrol/style/popup.md).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,27 +15,32 @@ A set of methods that enable the delegate of a path cell object to customize the
 protocol NSPathCellDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSPathCellDelegate <NSObject>
+```
+
 ## Topics
 
 ### Customizing the Open Panel
-- [func pathCell(NSPathCell, willDisplay: NSOpenPanel)](nspathcelldelegate/pathcell(_:willdisplay:).md)
+- [func pathCell(NSPathCell, willDisplay: NSOpenPanel)](./nspathcelldelegate/pathcell%28_,willdisplay%29.md)
   Implement this method to customize the Open panel shown by a pop-up–style path.
 ### Customizing the Menu
-- [func pathCell(NSPathCell, willPopUp: NSMenu)](nspathcelldelegate/pathcell(_:willpopup:).md)
+- [func pathCell(NSPathCell, willPopUp: NSMenu)](./nspathcelldelegate/pathcell%28_,willpopup%29.md)
   Implement this method to customize the menu of a pop-up–style path.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSPathCell](nspathcell.md)
+### Cells
+- [class NSPathCell](./nspathcell.md)
   The user interface of a path control object.
-- [class NSPathComponentCell](nspathcomponentcell.md)
+- [class NSPathComponentCell](./nspathcomponentcell.md)
   A component of a path.
-- [class NSPathControlItem](nspathcontrolitem.md)
+- [class NSPathControlItem](./nspathcontrolitem.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NSSystemClockDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification posted whenever the system clock is changed.
 
@@ -18,6 +19,10 @@ A notification posted whenever the system clock is changed.
 
 ```swift
 static let NSSystemClockDidChange: NSNotification.Name
+```
+
+```c
+extern NSNotificationName const NSSystemClockDidChangeNotification;
 ```
 
 #### Discussion

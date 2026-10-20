@@ -1,7 +1,8 @@
 # target
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The real world anchor target to attach the entity to.
 
@@ -11,7 +12,7 @@ The real world anchor target to attach the entity to.
 - Mac Catalyst 14.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ let target: AnchoringComponent.Target
 
 ## See Also
 
-- [var trackingMode: AnchoringComponent.TrackingMode](anchoringcomponent/trackingmode-swift.property.md)
+### Configuring the anchor
+- [var trackingMode: AnchoringComponent.TrackingMode](./trackingmode-swift.property.md)
   Defines how the `Entity` tracks its target anchor.
-- [var physicsSimulation: AnchoringComponent.PhysicsSimulation](anchoringcomponent/physicssimulation-swift.property.md)
+- [var physicsSimulation: AnchoringComponent.PhysicsSimulation](./physicssimulation-swift.property.md)
   Specifies the physics simulation spece that the entity and its descendants are in.
 
 

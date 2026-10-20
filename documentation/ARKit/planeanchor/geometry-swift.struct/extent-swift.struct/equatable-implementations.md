@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: ARKit
+**Framework**: ARKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (PlaneAnchor.Geometry.Extent, PlaneAnchor.Geometry.Extent) -> Bool](planeanchor/geometry-swift.struct/extent-swift.struct/==(_:_:).md)
+- [static func == (PlaneAnchor.Geometry.Extent, PlaneAnchor.Geometry.Extent) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two plane extents are equal.
 
 

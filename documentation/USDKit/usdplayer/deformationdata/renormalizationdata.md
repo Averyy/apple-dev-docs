@@ -1,7 +1,8 @@
 # USDPlayer.DeformationData.RenormalizationData
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Triangle adjacency data for post-deformation normal renormalization.
 
@@ -22,21 +23,21 @@ struct RenormalizationData
 ## Topics
 
 ### Structures
-- [USDPlayer.DeformationData.RenormalizationData.Update](usdplayer/deformationdata/renormalizationdata/update.md)
+- [USDPlayer.DeformationData.RenormalizationData.Update](./renormalizationdata/update.md)
   Delta update carrying only the adjacency fields that changed since the last frame.
 ### Instance Properties
-- [let vertexAdjacencies: [UInt32]](usdplayer/deformationdata/renormalizationdata/vertexadjacencies.md)
+- [let vertexAdjacencies: [UInt32]](./renormalizationdata/vertexadjacencies.md)
   Flattened list of triangle face indices adjacent to each vertex.
-- [let vertexAdjacencyEndIndices: [UInt32]](usdplayer/deformationdata/renormalizationdata/vertexadjacencyendindices.md)
+- [let vertexAdjacencyEndIndices: [UInt32]](./renormalizationdata/vertexadjacencyendindices.md)
   Cumulative end indices into `vertexAdjacencies`, one per vertex.
-- [let vertexIndicesPerTriangle: [UInt32]](usdplayer/deformationdata/renormalizationdata/vertexindicespertriangle.md)
+- [let vertexIndicesPerTriangle: [UInt32]](./renormalizationdata/vertexindicespertriangle.md)
   Vertex indices for each triangle, stored as three consecutive indices per triangle.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

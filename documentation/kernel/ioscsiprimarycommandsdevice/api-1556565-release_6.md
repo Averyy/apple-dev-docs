@@ -1,14 +1,15 @@
 # RELEASE_6
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool RELEASE_6(SCSITaskIdentifier request, SCSICmdField1Byte CONTROL);
 ```
 

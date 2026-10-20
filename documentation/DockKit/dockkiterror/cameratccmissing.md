@@ -1,7 +1,8 @@
 # DockKitError.cameraTCCMissing
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The camera terms and conditions are missing.
 

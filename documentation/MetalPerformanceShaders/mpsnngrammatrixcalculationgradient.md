@@ -1,7 +1,8 @@
 # MPSNNGramMatrixCalculationGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,29 +18,33 @@
 class MPSNNGramMatrixCalculationGradient
 ```
 
+```objc
+@interface MPSNNGramMatrixCalculationGradient : MPSCNNGradientKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnngrammatrixcalculationgradient/init(coder:device:).md)
-- [convenience init(device: any MTLDevice)](mpsnngrammatrixcalculationgradient/init(device:).md)
-- [init(device: any MTLDevice, alpha: Float)](mpsnngrammatrixcalculationgradient/init(device:alpha:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsnngrammatrixcalculationgradient/init%28coder,device%29.md)
+- [convenience init(device: any MTLDevice)](./mpsnngrammatrixcalculationgradient/init%28device%29.md)
+- [init(device: any MTLDevice, alpha: Float)](./mpsnngrammatrixcalculationgradient/init%28device,alpha%29.md)
 ### Instance Properties
-- [var alpha: Float](mpsnngrammatrixcalculationgradient/alpha.md)
+- [var alpha: Float](./mpsnngrammatrixcalculationgradient/alpha.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNGradientKernel](mpscnngradientkernel.md)
+- [MPSCNNGradientKernel](./mpscnngradientkernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

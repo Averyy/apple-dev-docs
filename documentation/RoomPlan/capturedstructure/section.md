@@ -1,7 +1,8 @@
 # CapturedStructure.Section
 
 **Framework**: RoomPlan  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type a captured structure assigns to distinct room areas.
 
@@ -18,29 +19,30 @@ typealias Section = CapturedRoom.Section
 
 ## See Also
 
-- [var identifier: UUID](capturedstructure/identifier.md)
+### Inspecting structure details
+- [var identifier: UUID](./identifier.md)
   A unique alphanumeric value that the framework assigns the structure.
-- [var rooms: [CapturedRoom]](capturedstructure/rooms.md)
+- [var rooms: [CapturedRoom]](./rooms.md)
   An array of all the captured rooms in the structure.
-- [var floors: [CapturedStructure.Surface]](capturedstructure/floors.md)
+- [var floors: [CapturedStructure.Surface]](./floors.md)
   An array of all the floors in the structure.
-- [CapturedStructure.Surface](capturedstructure/surface.md)
+- [CapturedStructure.Surface](./surface.md)
   The type a captured structure assigns to surfaces.
-- [var doors: [CapturedStructure.Surface]](capturedstructure/doors.md)
+- [var doors: [CapturedStructure.Surface]](./doors.md)
   An array of all the doors in the structure.
-- [var objects: [CapturedStructure.Object]](capturedstructure/objects.md)
+- [var objects: [CapturedStructure.Object]](./objects.md)
   An array of all the objects in the structure.
-- [CapturedStructure.Object](capturedstructure/object.md)
+- [CapturedStructure.Object](./object.md)
   The type a captured structure assigns to objects.
-- [var openings: [CapturedStructure.Surface]](capturedstructure/openings.md)
+- [var openings: [CapturedStructure.Surface]](./openings.md)
   An array of all the openings in the structure.
-- [var walls: [CapturedStructure.Surface]](capturedstructure/walls.md)
+- [var walls: [CapturedStructure.Surface]](./walls.md)
   An array of all the walls in the structure.
-- [var windows: [CapturedStructure.Surface]](capturedstructure/windows.md)
+- [var windows: [CapturedStructure.Surface]](./windows.md)
   An array of all the windows in the structure.
-- [var sections: [CapturedStructure.Section]](capturedstructure/sections.md)
+- [var sections: [CapturedStructure.Section]](./sections.md)
   One or more room types that the framework identifies in the structure.
-- [var version: Int](capturedstructure/version.md)
+- [var version: Int](./version.md)
   A version number for the captured structure.
 
 

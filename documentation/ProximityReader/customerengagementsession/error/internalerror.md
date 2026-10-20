@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.internalError
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs internally within the session.
 

@@ -1,7 +1,8 @@
 # readAttributeInputList(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeInputList(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeInputList() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeInputListWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

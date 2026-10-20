@@ -1,7 +1,8 @@
 # init(index:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an index path with a single node.
 
@@ -20,9 +21,13 @@ Initializes an index path with a single node.
 convenience init(index: Int)
 ```
 
+```objc
+- (instancetype) initWithIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
-Initialized [`NSIndexPath`](nsindexpath.md) object representing a one-node index path with `index`.
+Initialized [`NSIndexPath`](../nsindexpath.md) object representing a one-node index path with `index`.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Initialized [`NSIndexPath`](nsindexpath.md) object representing a one-node index
 
 ## See Also
 
-- [init(indexes: UnsafePointer<Int>?, length: Int)](nsindexpath/init(indexes:length:).md)
+### Creating and Initializing Index Paths
+- [init(indexes: UnsafePointer<Int>?, length: Int)](./init%28indexes,length%29.md)
   Initializes an index path with the given nodes and length.
 
 

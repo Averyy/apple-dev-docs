@@ -1,7 +1,8 @@
 # startScanning()
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts scanning the camera’s live video for data.
 
@@ -19,15 +20,16 @@ func startScanning() throws
 
 ## Mentions
 
-- [Scanning data with the camera](scanning-data-with-the-camera.md)
+- [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
 ## See Also
 
-- [func stopScanning()](datascannerviewcontroller/stopscanning.md)
+### Scanning and recognizing items
+- [func stopScanning()](./stopscanning%28%29.md)
   Stops scanning the camera’s live video for data.
-- [var isScanning: Bool](datascannerviewcontroller/isscanning.md)
+- [var isScanning: Bool](./isscanning.md)
   A Boolean value that indicates whether the data scanner is actively looking for items.
-- [var recognizedItems: AsyncStream<[RecognizedItem]>](datascannerviewcontroller/recognizeditems.md)
+- [var recognizedItems: AsyncStream<[RecognizedItem]>](./recognizeditems.md)
   An asynchronous array of items that the data scanner currently recognizes in the camera’s live video.
 
 

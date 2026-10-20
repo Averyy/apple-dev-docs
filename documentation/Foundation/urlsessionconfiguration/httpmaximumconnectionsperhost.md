@@ -1,7 +1,8 @@
 # httpMaximumConnectionsPerHost
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of simultaneous HTTP/1.1 connections to make to a given host.
 
@@ -20,6 +21,10 @@ The maximum number of simultaneous HTTP/1.1 connections to make to a given host.
 var httpMaximumConnectionsPerHost: Int { get set }
 ```
 
+```objc
+@property NSInteger HTTPMaximumConnectionsPerHost;
+```
+
 #### Discussion
 
 This property determines the maximum number of simultaneous HTTP/1.1 connections made to each host by tasks within sessions based on this configuration.
@@ -32,11 +37,12 @@ HTTP/2 and later run multiple requests over a single connection and thus ignore 
 
 ## See Also
 
-- [var httpShouldUsePipelining: Bool](urlsessionconfiguration/httpshouldusepipelining.md)
+### Setting HTTP policy and proxy properties
+- [var httpShouldUsePipelining: Bool](./httpshouldusepipelining.md)
   A Boolean value that determines whether the session should use HTTP pipelining.
-- [var proxyConfigurations: [ProxyConfiguration]](urlsessionconfiguration/proxyconfigurations.md)
+- [var proxyConfigurations: [ProxyConfiguration]](./proxyconfigurations.md)
   An array of proxy configuration objects containing information about the proxies to use within this session.
-- [var connectionProxyDictionary: [AnyHashable : Any]?](urlsessionconfiguration/connectionproxydictionary.md)
+- [var connectionProxyDictionary: [AnyHashable : Any]?](./connectionproxydictionary.md)
   A dictionary containing information about the proxy to use within this session.
 
 

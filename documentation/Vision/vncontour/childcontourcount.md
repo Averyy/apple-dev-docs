@@ -1,7 +1,8 @@
 # childContourCount
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of detected child contours.
 
@@ -19,11 +20,16 @@ The total number of detected child contours.
 var childContourCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger childContourCount;
+```
+
 ## See Also
 
-- [var childContours: [VNContour]](vncontour/childcontours.md)
+### Accessing Child Contours
+- [var childContours: [VNContour]](./childcontours.md)
   An array of contours that this contour encloses.
-- [func childContour(at: Int) throws -> VNContour](vncontour/childcontour(at:).md)
+- [func childContour(at: Int) throws -> VNContour](./childcontour%28at%29.md)
   Retrieves the child contour object at the specified index.
 
 

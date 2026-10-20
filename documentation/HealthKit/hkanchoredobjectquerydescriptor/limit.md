@@ -1,7 +1,8 @@
 # limit
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of samples that the query returns.
 
@@ -10,7 +11,7 @@ The maximum number of samples that the query returns.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -25,9 +26,10 @@ If the limit is `nil`, the system returns all matching samples in the HealthKit 
 
 ## See Also
 
-- [var predicates: [HKSamplePredicate<Sample>]](hkanchoredobjectquerydescriptor/predicates.md)
+### Accessing Query Properties
+- [var predicates: [HKSamplePredicate<Sample>]](./predicates.md)
   A predicate that limits the results that the query returns.
-- [var anchor: HKQueryAnchor?](hkanchoredobjectquerydescriptor/anchor.md)
+- [var anchor: HKQueryAnchor?](./anchor.md)
   An anchor that a previous anchored object query returned.
 
 

@@ -1,7 +1,8 @@
 # any
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 9.0+
@@ -18,15 +19,20 @@
 static var any: TKSmartCardProtocol { get }
 ```
 
+```c
+TKSmartCardProtocolAny
+```
+
 #### Discussion
 
 Any available transmission protocols.
 
 ## See Also
 
-- [static var t0: TKSmartCardProtocol](tksmartcardprotocol/t0.md)
-- [static var t1: TKSmartCardProtocol](tksmartcardprotocol/t1.md)
-- [static var t15: TKSmartCardProtocol](tksmartcardprotocol/t15.md)
+### Constants
+- [static var t0: TKSmartCardProtocol](./t0.md)
+- [static var t1: TKSmartCardProtocol](./t1.md)
+- [static var t15: TKSmartCardProtocol](./t15.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # rectOfInterest
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangle of interest for limiting the search area for visual metadata.
 
@@ -18,9 +19,13 @@ A rectangle of interest for limiting the search area for visual metadata.
 var rectOfInterest: CGRect { get set }
 ```
 
+```objc
+@property (nonatomic) CGRect rectOfInterest;
+```
+
 #### Discussion
 
-The value of this property is a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) value that determines the object’s rectangle of interest for each frame of video.
+The value of this property is a [`CGRect`](../../CoreFoundation/cgrect.md) value that determines the object’s rectangle of interest for each frame of video.
 
 The rectangle’s origin is top left and is relative to the coordinate space of the device providing the metadata.
 
@@ -30,11 +35,12 @@ The default value of this property is a rectangle of `(0.0, 0.0, 1.0, 1.0)`.
 
 ## See Also
 
-- [var availableMetadataObjectTypes: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/availablemetadataobjecttypes.md)
+### Configuring metadata capture
+- [var availableMetadataObjectTypes: [AVMetadataObject.ObjectType]](./availablemetadataobjecttypes.md)
   An array of strings identifying the types of metadata objects that can be captured.
-- [var metadataObjectTypes: [AVMetadataObject.ObjectType]!](avcapturemetadataoutput/metadataobjecttypes.md)
+- [var metadataObjectTypes: [AVMetadataObject.ObjectType]!](./metadataobjecttypes.md)
   An array of strings identifying the types of metadata objects  to process.
-- [var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.ObjectType]](avcapturemetadataoutput/requiredmetadataobjecttypesforcinematicvideocapture.md)
+- [var requiredMetadataObjectTypesForCinematicVideoCapture: [AVMetadataObject.ObjectType]](./requiredmetadataobjecttypesforcinematicvideocapture.md)
   The required metadata object types when Cinematic Video capture is enabled.
 
 

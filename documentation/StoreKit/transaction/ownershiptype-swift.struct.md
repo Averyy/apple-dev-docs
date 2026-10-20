@@ -1,7 +1,8 @@
 # Transaction.OwnershipType
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The types the system uses to describe whether the user purchased the product or it’s available to them through Family Sharing.
 
@@ -23,33 +24,34 @@ struct OwnershipType
 ## Topics
 
 ### Getting ownership types
-- [static let familyShared: Transaction.OwnershipType](transaction/ownershiptype-swift.struct/familyshared.md)
+- [static let familyShared: Transaction.OwnershipType](./ownershiptype-swift.struct/familyshared.md)
   The transaction belongs to a family member who benefits from the service.
-- [static let purchased: Transaction.OwnershipType](transaction/ownershiptype-swift.struct/purchased.md)
+- [static let purchased: Transaction.OwnershipType](./ownershiptype-swift.struct/purchased.md)
   The transaction belongs to the purchaser.
 ### Getting a localized description
-- [var localizedDescription: String](transaction/ownershiptype-swift.struct/localizeddescription.md)
+- [var localizedDescription: String](./ownershiptype-swift.struct/localizeddescription.md)
   The localized text that describes the ownership type.
 ### Type Properties
-- [static var assigned: Transaction.OwnershipType](transaction/ownershiptype-swift.struct/assigned.md)
+- [static var assigned: Transaction.OwnershipType](./ownershiptype-swift.struct/assigned.md)
   The user has access to this transaction through an organization.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let isUpgraded: Bool](transaction/isupgraded.md)
+### Getting purchase details
+- [let isUpgraded: Bool](./isupgraded.md)
   A Boolean that indicates whether the user upgraded to another subscription.
-- [let ownershipType: Transaction.OwnershipType](transaction/ownershiptype-swift.property.md)
+- [let ownershipType: Transaction.OwnershipType](./ownershiptype-swift.property.md)
   A value that indicates whether the transaction was purchased by the user, or is made available to them through Family Sharing.
-- [let purchasedQuantity: Int](transaction/purchasedquantity.md)
+- [let purchasedQuantity: Int](./purchasedquantity.md)
   The number of consumable products purchased.
 
 

@@ -1,7 +1,8 @@
 # iPhonePerformanceGaming
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The performance gaming tier for iPhone.
 
@@ -19,17 +20,22 @@ The performance gaming tier for iPhone.
 static let iPhonePerformanceGaming: NSDeviceCertification
 ```
 
+```c
+extern const NSDeviceCertification NSDeviceCertificationiPhonePerformanceGaming;
+```
+
 ## See Also
 
-- [var MTLResourceCPUCacheModeMask: UInt](mtlresourcecpucachemodemask.md)
-- [var MTLResourceCPUCacheModeShift: Int32](mtlresourcecpucachemodeshift.md)
-- [var MTLResourceHazardTrackingModeMask: UInt](mtlresourcehazardtrackingmodemask.md)
-- [var MTLResourceHazardTrackingModeShift: Int32](mtlresourcehazardtrackingmodeshift.md)
-- [var MTLResourceStorageModeMask: UInt](mtlresourcestoragemodemask.md)
-- [var MTLResourceStorageModeShift: Int32](mtlresourcestoragemodeshift.md)
-- [static let `default`: NSProcessPerformanceProfile](nsprocessperformanceprofile/default.md)
+### Global variables
+- [var MTLResourceCPUCacheModeMask: UInt](../mtlresourcecpucachemodemask.md)
+- [var MTLResourceCPUCacheModeShift: Int32](../mtlresourcecpucachemodeshift.md)
+- [var MTLResourceHazardTrackingModeMask: UInt](../mtlresourcehazardtrackingmodemask.md)
+- [var MTLResourceHazardTrackingModeShift: Int32](../mtlresourcehazardtrackingmodeshift.md)
+- [var MTLResourceStorageModeMask: UInt](../mtlresourcestoragemodemask.md)
+- [var MTLResourceStorageModeShift: Int32](../mtlresourcestoragemodeshift.md)
+- [static let `default`: NSProcessPerformanceProfile](../nsprocessperformanceprofile/default.md)
   The default performance profile for a device.
-- [static let sustained: NSProcessPerformanceProfile](nsprocessperformanceprofile/sustained.md)
+- [static let sustained: NSProcessPerformanceProfile](../nsprocessperformanceprofile/sustained.md)
   The performance profile for a device representing sustained performance.
 
 

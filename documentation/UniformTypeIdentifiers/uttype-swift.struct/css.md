@@ -1,7 +1,8 @@
 # css
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Cascading Style Sheets (CSS)
 

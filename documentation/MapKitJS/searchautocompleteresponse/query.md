@@ -1,7 +1,8 @@
 # query
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The query string used to perform the autocomplete request.
 
@@ -10,17 +11,18 @@ The query string used to perform the autocomplete request.
 
 ## Declaration
 
-```swift
+```
 query: string;
 ```
 
 #### Discussion
 
-The search query that corresponds to the [`results`](searchautocompleteresponse/results.md).
+The search query that corresponds to the [`results`](./results.md).
 
 ## See Also
 
-- [results](searchautocompleteresponse/results.md)
+### Response
+- [results](./results.md)
   The results from an autocomplete request.
 
 

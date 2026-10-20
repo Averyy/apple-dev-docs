@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The general orientation of the detected plane with respect to gravity.
 
@@ -16,15 +17,16 @@ var alignment: PlaneAnchor.Alignment { get }
 
 ## See Also
 
-- [var originFromAnchorTransform: simd_float4x4](planeanchor/originfromanchortransform.md)
+### Inspecting a plane anchor
+- [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The location and orientation of a plane in world space.
-- [PlaneAnchor.Alignment](planeanchor/alignment-swift.enum.md)
+- [PlaneAnchor.Alignment](./alignment-swift.enum.md)
   Values describing possible general orientations of a detected plane with respect to gravity.
-- [var classification: PlaneAnchor.Classification](planeanchor/classification-swift.property.md)
+- [var classification: PlaneAnchor.Classification](./classification-swift.property.md)
   Get the classification of this plane.
-- [PlaneAnchor.Classification](planeanchor/classification-swift.enum.md)
+- [PlaneAnchor.Classification](./classification-swift.enum.md)
   The kinds of object classification a plane anchor can have.
-- [var description: String](planeanchor/description.md)
+- [var description: String](./description.md)
   A textual representation of this anchor.
 
 

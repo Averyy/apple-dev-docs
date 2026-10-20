@@ -1,7 +1,8 @@
 # ObjectCaptureSession.Error.trackingFailed
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 There was an unrecoverable error related to tracking the object or environment.
 

@@ -1,12 +1,13 @@
 # setPath(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the path to be displayed by the browser.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Sets the path to be displayed by the browser.
 func setPath(_ path: String) -> Bool
 ```
 
+```objc
+- (BOOL) setPath:(NSString *) path;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the given path is valid; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the given path is valid; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-While parsing `path`, the browser compares each component with the entries in the current column. If an exact match is found, the matching entry is selected, and the next component is compared to the next column’s entries. If no match is found for a component, the method exits and returns [`false`](https://developer.apple.com/documentation/swift/false); the final path is set to the valid portion of `path`. If each component of `path` specifies a valid branch or leaf in the browser’s hierarchy, the method returns [`true`](https://developer.apple.com/documentation/swift/true).
+While parsing `path`, the browser compares each component with the entries in the current column. If an exact match is found, the matching entry is selected, and the next component is compared to the next column’s entries. If no match is found for a component, the method exits and returns [`false`](../../Swift/false.md); the final path is set to the valid portion of `path`. If each component of `path` specifies a valid branch or leaf in the browser’s hierarchy, the method returns [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -28,11 +33,12 @@ While parsing `path`, the browser compares each component with the entries in th
 
 ## See Also
 
-- [func path() -> String](nsbrowser/path.md)
+### Managing the Path
+- [func path() -> String](./path%28%29.md)
   Returns a string representing the browser’s current path.
-- [func path(toColumn: Int) -> String](nsbrowser/path(tocolumn:).md)
+- [func path(toColumn: Int) -> String](./path%28tocolumn%29.md)
   Returns a string representing the path from the first column up to, but not including, the column at the given index.
-- [var pathSeparator: String](nsbrowser/pathseparator.md)
+- [var pathSeparator: String](./pathseparator.md)
   The path separator.
 
 

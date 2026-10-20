@@ -1,7 +1,8 @@
 # defaultPhotoSettings
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default AVCapturePhotoSettings object that ARKit uses when capturing a high resolution frame using this video format.
 
@@ -15,6 +16,10 @@ The default AVCapturePhotoSettings object that ARKit uses when capturing a high 
 var defaultPhotoSettings: AVCapturePhotoSettings { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCapturePhotoSettings * defaultPhotoSettings;
+```
+
 #### Return Value
 
 An `AVCapturePhotoSettings` object.
@@ -23,7 +28,7 @@ An `AVCapturePhotoSettings` object.
 
 Calling this getter will return a new instance that may be mutated to customize settings. Pass that instance to `captureHighResolutionFrameUsingPhotoSettings:completion:` to capture a high resolution frame with custom settings.
 
-> **Note**: [`captureHighResolutionFrame(using:completion:)`](arsession/capturehighresolutionframe(using:completion:).md)
+> **See Also**: [`captureHighResolutionFrame(using:completion:)`](../../arsession/capturehighresolutionframe%28using,completion%29.md)
 
 
 ---

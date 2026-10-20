@@ -1,7 +1,8 @@
 # clientIdentifier
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional unique identifier to associate a translation request with its response.
 
@@ -19,7 +20,7 @@ var clientIdentifier: String?
 
 #### Discussion
 
-When you set this identifier, it returns the same value in the corresponding [`TranslationSession.Response`](translationsession/response.md).
+When you set this identifier, it returns the same value in the corresponding [`TranslationSession.Response`](../response.md).
 
 
 ---

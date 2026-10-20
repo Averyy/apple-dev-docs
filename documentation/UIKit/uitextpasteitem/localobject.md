@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The custom local object that the copy or drag source optionally attached to the drag item.
@@ -18,13 +19,18 @@ The custom local object that the copy or drag source optionally attached to the 
 var localObject: Any? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id localObject;
+```
+
 #### Discussion
 
 The local object is available only to the app that initiates the copy or drag activity.
 
 ## See Also
 
-- [var itemProvider: NSItemProvider](uitextpasteitem/itemprovider.md)
+### Accessing the text paste item’s data
+- [var itemProvider: NSItemProvider](./itemprovider.md)
   The item provider for the item being pasted or dropped.
 
 

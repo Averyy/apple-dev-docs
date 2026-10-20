@@ -1,7 +1,8 @@
 # readAttributeCurrentState(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeCurrentState(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeCurrentState() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeCurrentStateWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

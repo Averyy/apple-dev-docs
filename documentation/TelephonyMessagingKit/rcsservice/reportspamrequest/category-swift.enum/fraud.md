@@ -1,7 +1,8 @@
 # RCSService.ReportSpamRequest.Category.fraud
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 RCS message considered as fraud.
 
@@ -16,13 +17,14 @@ case fraud
 
 ## See Also
 
-- [RCSService.ReportSpamRequest.Category.invalid](rcsservice/reportspamrequest/category-swift.enum/invalid.md)
+### Identifying spam categories
+- [RCSService.ReportSpamRequest.Category.invalid](./invalid.md)
   RCS message considered as invalid.
-- [RCSService.ReportSpamRequest.Category.spam](rcsservice/reportspamrequest/category-swift.enum/spam.md)
+- [RCSService.ReportSpamRequest.Category.spam](./spam.md)
   RCS message considered as spam.
-- [RCSService.ReportSpamRequest.Category.inappropriateContent](rcsservice/reportspamrequest/category-swift.enum/inappropriatecontent.md)
+- [RCSService.ReportSpamRequest.Category.inappropriateContent](./inappropriatecontent.md)
   RCS message considered as inappropriate content.
-- [RCSService.ReportSpamRequest.Category.other](rcsservice/reportspamrequest/category-swift.enum/other.md)
+- [RCSService.ReportSpamRequest.Category.other](./other.md)
   RCS message considered as other spam category.
 
 

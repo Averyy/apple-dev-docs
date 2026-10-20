@@ -1,7 +1,8 @@
 # DictationTranscriber.TranscriptionOption.emoji
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Transcribes named emoji as emoji.
 
@@ -24,9 +25,10 @@ If included, the spoken phrase “smiling emoji” would be transcribed as “�
 
 ## See Also
 
-- [DictationTranscriber.TranscriptionOption.etiquetteReplacements](dictationtranscriber/transcriptionoption/etiquettereplacements.md)
+### Transcription options
+- [DictationTranscriber.TranscriptionOption.etiquetteReplacements](./etiquettereplacements.md)
   Replaces certain words and phrases with a redacted form.
-- [DictationTranscriber.TranscriptionOption.punctuation](dictationtranscriber/transcriptionoption/punctuation.md)
+- [DictationTranscriber.TranscriptionOption.punctuation](./punctuation.md)
   Automatically punctuates the transcription.
 
 

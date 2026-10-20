@@ -1,7 +1,8 @@
 # embeddedDomains
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Embedded page or frame domains. For domain-bound codes, this array contains all the domains specified after the code field.
 
@@ -20,7 +21,7 @@ var embeddedDomains: [String]
 
 #### Discussion
 
-> **Note**: https://github.com/WICG/sms-one-time-codes
+> **See Also**: https://github.com/WICG/sms-one-time-codes
 
 
 ---

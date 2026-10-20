@@ -1,7 +1,8 @@
 # topLeft
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The upper-left corner of the recognized item in view coordinates.
 
@@ -18,11 +19,12 @@ var topLeft: CGPoint
 
 ## See Also
 
-- [var topRight: CGPoint](recognizeditem/bounds-swift.struct/topright.md)
+### Getting the corners of items
+- [var topRight: CGPoint](./topright.md)
   The upper-right corner of the recognized item in view coordinates.
-- [var bottomRight: CGPoint](recognizeditem/bounds-swift.struct/bottomright.md)
+- [var bottomRight: CGPoint](./bottomright.md)
   The lower-right corner of the recognized item in view coordinates.
-- [var bottomLeft: CGPoint](recognizeditem/bounds-swift.struct/bottomleft.md)
+- [var bottomLeft: CGPoint](./bottomleft.md)
   The lower-left corner of the recognized item in view coordinates.
 
 

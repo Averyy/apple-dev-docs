@@ -1,7 +1,8 @@
 # target
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that is notified when a user interacts with the color picker.
 
@@ -17,11 +18,16 @@ An object that is notified when a user interacts with the color picker.
 weak var target: AnyObject? { get set }
 ```
 
+```objc
+@property (weak, nullable) id target;
+```
+
 ## See Also
 
-- [var color: UIColor](nscolorpickertouchbaritem/color.md)
+### Obtaining the selected color
+- [var color: UIColor](./color.md)
   The picker’s currently selected color.
-- [var action: Selector?](nscolorpickertouchbaritem/action.md)
+- [var action: Selector?](./action.md)
   The selector on the target object that is invoked when a user interacts with the color picker.
 
 

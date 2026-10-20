@@ -2,6 +2,7 @@
 
 **Framework**: Application Services  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -11,6 +12,10 @@
 
 ```swift
 func ppdOptionKeyValueDidChange(_ option: String, ppdChoice choice: String)
+```
+
+```objc
+- (void)PPDOptionKeyValueDidChange:(NSString *)option ppdChoice:(NSString *)choice;
 ```
 
 

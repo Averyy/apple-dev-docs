@@ -1,7 +1,8 @@
 # region
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A map region that provides a hint as to where to search.
 
@@ -20,25 +21,30 @@ A map region that provides a hint as to where to search.
 var region: MKCoordinateRegion { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MKCoordinateRegion region;
+```
+
 #### Discussion
 
 You can use this parameter to narrow the list of search results to those inside or close to the specified region. Specifying a region doesn’t ensure that the results are all inside the region. It’s merely a hint to the search engine.
 
 ## See Also
 
-- [var addressFilter: MKAddressFilter?](mklocalsearch/request/addressfilter.md)
+### Configuring the search parameters
+- [var addressFilter: MKAddressFilter?](./addressfilter.md)
   A filter that lists which address options to include or exclude in search results.
-- [var naturalLanguageQuery: String?](mklocalsearch/request/naturallanguagequery.md)
+- [var naturalLanguageQuery: String?](./naturallanguagequery.md)
   A string containing the desired search item.
-- [static var physicalFeature: MKLocalSearch.ResultType](mklocalsearch/resulttype/physicalfeature.md)
+- [static var physicalFeature: MKLocalSearch.ResultType](../resulttype/physicalfeature.md)
   A value that indicates that search results include physical features.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mklocalsearch/request/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./pointofinterestfilter.md)
   A filter that lists point-of-interest categories to include or exclude in search results.
-- [var regionPriority: MKLocalSearchRegionPriority](mklocalsearch/request/regionpriority.md)
+- [var regionPriority: MKLocalSearchRegionPriority](./regionpriority.md)
   A value that indicates the importance of the configured region.
-- [var resultTypes: MKLocalSearch.ResultType](mklocalsearch/request/resulttypes.md)
+- [var resultTypes: MKLocalSearch.ResultType](./resulttypes.md)
   The types of items to include in the search results.
-- [MKLocalSearch.Request.ResultType](mklocalsearch/request/resulttype.md)
+- [MKLocalSearch.Request.ResultType](./resulttype.md)
   Options that indicate types of search results.
 
 

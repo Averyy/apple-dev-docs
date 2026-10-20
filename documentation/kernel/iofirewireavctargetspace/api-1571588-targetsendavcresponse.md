@@ -1,14 +1,15 @@
 # targetSendAVCResponse
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn targetSendAVCResponse(UInt32 generation, UInt16 nodeID, IOBufferMemoryDescriptor *pBufMemDesc, UInt32 size);
 ```
 

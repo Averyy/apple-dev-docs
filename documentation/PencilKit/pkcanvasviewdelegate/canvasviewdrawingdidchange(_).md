@@ -1,7 +1,8 @@
 # canvasViewDrawingDidChange(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the contents of the current drawing changed.
 
@@ -17,13 +18,18 @@ Tells the delegate that the contents of the current drawing changed.
 optional func canvasViewDrawingDidChange(_ canvasView: PKCanvasView)
 ```
 
+```objc
+- (void) canvasViewDrawingDidChange:(PKCanvasView *) canvasView;
+```
+
 ## Parameters
 
 - `canvasView`: The canvas view whose contents changed.
 
 ## See Also
 
-- [func canvasViewDidFinishRendering(PKCanvasView)](pkcanvasviewdelegate/canvasviewdidfinishrendering(_:).md)
+### Responding to drawing-related changes
+- [func canvasViewDidFinishRendering(PKCanvasView)](./canvasviewdidfinishrendering%28_%29.md)
   Tells the delegate that the previously drawn content is ready to display.
 
 

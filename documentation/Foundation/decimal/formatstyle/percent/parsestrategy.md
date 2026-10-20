@@ -1,7 +1,8 @@
 # parseStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parse strategy that this format style uses.
 

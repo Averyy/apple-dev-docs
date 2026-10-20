@@ -1,7 +1,8 @@
 # references
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reference composition arcs on this prim.
 
@@ -21,13 +22,14 @@ var references: USDPrim.ReferenceCollection { get }
 
 ## See Also
 
-- [USDPrim.Reference](usdprim/reference.md)
+### Composing references and payloads
+- [USDPrim.Reference](./reference.md)
   A reference to an external layer or asset.
-- [USDPrim.ReferenceCollection](usdprim/referencecollection.md)
+- [USDPrim.ReferenceCollection](./referencecollection.md)
   Manages reference composition arcs on a prim.
-- [USDPrim.Payload](usdprim/payload.md)
+- [USDPrim.Payload](./payload.md)
   A payload to an external asset.
-- [USDPrim.ListPosition](usdprim/listposition.md)
+- [USDPrim.ListPosition](./listposition.md)
   Where a new composition arc should be inserted relative to existing arcs.
 
 

@@ -1,7 +1,8 @@
 # touchpadPrimary
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the player’s primary finger on the touchpad.
 
@@ -19,9 +20,14 @@ The location of the player’s primary finger on the touchpad.
 var touchpadPrimary: GCControllerDirectionPad { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCControllerDirectionPad * touchpadPrimary;
+```
+
 ## See Also
 
-- [var touchpadSecondary: GCControllerDirectionPad](gcdualsensegamepad/touchpadsecondary.md)
+### Tracking finger locations
+- [var touchpadSecondary: GCControllerDirectionPad](./touchpadsecondary.md)
   The location of the player’s secondary finger on the touchpad.
 
 

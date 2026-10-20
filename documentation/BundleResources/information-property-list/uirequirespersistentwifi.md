@@ -1,7 +1,8 @@
 # UIRequiresPersistentWiFi
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app requires a Wi-Fi connection.
 
@@ -10,9 +11,10 @@ A Boolean value that indicates whether the app requires a Wi-Fi connection.
 - iPadOS 2.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `UIRequiresPersistentWiFi` (Application uses Wi-Fi)
+- **Type**: boolean
 
 #### Discussion
 

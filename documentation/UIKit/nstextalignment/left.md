@@ -1,7 +1,8 @@
 # NSTextAlignment.left
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text is left-aligned.
 
@@ -19,15 +20,20 @@ Text is left-aligned.
 case left
 ```
 
+```c
+NSTextAlignmentLeft
+```
+
 ## See Also
 
-- [NSTextAlignment.right](nstextalignment/right.md)
+### Constants
+- [NSTextAlignment.right](./right.md)
   Text is right-aligned.
-- [NSTextAlignment.center](nstextalignment/center.md)
+- [NSTextAlignment.center](./center.md)
   Text is center-aligned.
-- [NSTextAlignment.justified](nstextalignment/justified.md)
+- [NSTextAlignment.justified](./justified.md)
   Text is justified.
-- [NSTextAlignment.natural](nstextalignment/natural.md)
+- [NSTextAlignment.natural](./natural.md)
   Text uses the default alignment for the current localization of the app.
 
 

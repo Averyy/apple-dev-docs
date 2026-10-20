@@ -1,7 +1,8 @@
 # vImageCVImageFormat_GetChromaSiting(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the chrominance siting of a Core Video image format.
 
@@ -20,15 +21,19 @@ Returns the chrominance siting of a Core Video image format.
 func vImageCVImageFormat_GetChromaSiting(_ format: vImageConstCVImageFormat) -> Unmanaged<CFString>!
 ```
 
+```c
+CFStringRefvImageCVImageFormat_GetChromaSiting(vImageConstCVImageFormatRef format);
+```
+
 #### Return Value
 
-A [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) that describes the positioning of the chrominance samples.
+A [`CFString`](../CoreFoundation/cfstring.md) that describes the positioning of the chrominance samples.
 
 #### Discussion
 
 4:2:0 and 4:2:0 YpCbCr image formats that have subsampled chrominance require the position of the chrominance samples relative to the luminance samples.
 
-The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetChromaSiting(_:)`](vimagecvimageformat_getchromasiting(_:).md):
+The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md), return a [`vImageCVImageFormat`](./vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetChromaSiting(_:)`](./vimagecvimageformat_getchromasiting%28_%29.md):
 
 **Swift**:
 
@@ -55,9 +60,11 @@ CFStringRef chromaSiting = vImageCVImageFormat_GetChromaSiting(constFormat);
 
 ## See Also
 
-- [var chromaSiting: vImageCVImageFormat.ChromaSiting?](vimagecvimageformat/chromasiting-swift.property.md)
+### Related Documentation
+- [var chromaSiting: vImageCVImageFormat.ChromaSiting?](./vimagecvimageformat/chromasiting-swift.property.md)
   The chrominance siting of the Core Video image format.
-- [func vImageCVImageFormat_SetChromaSiting(vImageCVImageFormat, CFString!) -> vImage_Error](vimagecvimageformat_setchromasiting(_:_:).md)
+### Querying and setting the chrominance siting
+- [func vImageCVImageFormat_SetChromaSiting(vImageCVImageFormat, CFString!) -> vImage_Error](./vimagecvimageformat_setchromasiting%28_,_%29.md)
   Sets the chrominance siting of a Core Video image format.
 
 

@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The classification of the error.
 
@@ -20,9 +21,10 @@ var kind: AssetError.Kind
 
 ## See Also
 
-- [var debugMessage: String?](asseterror/debugmessage.md)
+### Inspecting error information
+- [var debugMessage: String?](./debugmessage.md)
   An optional message with additional debugging context.
-- [var errorDescription: String?](asseterror/errordescription.md)
+- [var errorDescription: String?](./errordescription.md)
   A localized description of the error.
 
 

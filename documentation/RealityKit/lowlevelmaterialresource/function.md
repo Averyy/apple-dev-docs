@@ -1,7 +1,8 @@
 # LowLevelMaterialResource.Function
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A compiled shader function that can receive per-draw parameters via an argument table.
 
@@ -20,32 +21,33 @@ protocol Function : Sendable
 ## Topics
 
 ### Configuring the function
-- [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/function/parametermapping.md)
+- [var parameterMapping: LowLevelMaterialParameterMapping?](./function/parametermapping.md)
   The parameter name-to-slot mapping for this function, used to look up binding indices by name at runtime, or `nil` if the function takes no custom parameters.
-- [var argumentTableDescriptor: LowLevelArgumentTable.Descriptor?](lowlevelmaterialresource/function/argumenttabledescriptor.md)
+- [var argumentTableDescriptor: LowLevelArgumentTable.Descriptor?](./function/argumenttabledescriptor.md)
   The argument table descriptor that describes the buffer and texture slots this function requires, or `nil` if the function takes no per-draw arguments.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 ### Conforming Types
-- [LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometrymodifier.md)
-- [LowLevelMaterialResource.LightingFunction](lowlevelmaterialresource/lightingfunction.md)
-- [LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surfaceshader.md)
+- [LowLevelMaterialResource.GeometryModifier](./geometrymodifier.md)
+- [LowLevelMaterialResource.LightingFunction](./lightingfunction.md)
+- [LowLevelMaterialResource.SurfaceShader](./surfaceshader.md)
 
 ## See Also
 
-- [var surface: LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surface.md)
+### Configuring the shaders
+- [var surface: LowLevelMaterialResource.SurfaceShader](./surface.md)
   The compiled fragment-stage surface shader.
-- [LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surfaceshader.md)
+- [LowLevelMaterialResource.SurfaceShader](./surfaceshader.md)
   A compiled Metal function that implements the surface shader function.
-- [var geometry: LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometry.md)
+- [var geometry: LowLevelMaterialResource.GeometryModifier](./geometry.md)
   The compiled vertex-stage geometry modifier.
-- [LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometrymodifier.md)
+- [LowLevelMaterialResource.GeometryModifier](./geometrymodifier.md)
   A compiled Metal function that implements the geometry modifier function.
-- [LowLevelMaterialResource.LightingFunction](lowlevelmaterialresource/lightingfunction.md)
+- [LowLevelMaterialResource.LightingFunction](./lightingfunction.md)
   A compiled Metal function that evaluates lighting.
 
 

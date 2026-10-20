@@ -1,7 +1,8 @@
 # kVTProfileLevel_H263_Profile0_Level10
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -17,10 +18,15 @@
 let kVTProfileLevel_H263_Profile0_Level10: CFString
 ```
 
+```c
+extern CFStringRef const kVTProfileLevel_H263_Profile0_Level10;
+```
+
 ## See Also
 
-- [let kVTProfileLevel_H263_Profile0_Level45: CFString](kvtprofilelevel_h263_profile0_level45.md)
-- [let kVTProfileLevel_H263_Profile3_Level45: CFString](kvtprofilelevel_h263_profile3_level45.md)
+### H.263
+- [let kVTProfileLevel_H263_Profile0_Level45: CFString](./kvtprofilelevel_h263_profile0_level45.md)
+- [let kVTProfileLevel_H263_Profile3_Level45: CFString](./kvtprofilelevel_h263_profile3_level45.md)
 
 
 ---

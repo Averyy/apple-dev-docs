@@ -1,7 +1,8 @@
 # init(predicate:sortBy:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new history descriptor with the provided predicate and sort descriptor.
 
@@ -23,7 +24,7 @@ init(predicate: Predicate<TransactionType>? = nil, sortBy: [SortDescriptor<Trans
 
 #### Discussion
 
-If you don’t specify a predicate, any fetch using this descriptor will return all models of the associated type. If you expect the number of fetched transactions to be high, use [`fetchLimit`](historydescriptor/fetchlimit.md) to limit the number of transactions returned.
+If you don’t specify a predicate, any fetch using this descriptor will return all models of the associated type. If you expect the number of fetched transactions to be high, use [`fetchLimit`](./fetchlimit.md) to limit the number of transactions returned.
 
 ## Parameters
 
@@ -32,7 +33,8 @@ If you don’t specify a predicate, any fetch using this descriptor will return 
 
 ## See Also
 
-- [init(predicate: Predicate<TransactionType>?)](historydescriptor/init(predicate:).md)
+### Creating a descriptor
+- [init(predicate: Predicate<TransactionType>?)](./init%28predicate%29.md)
   Initializes a new history descriptor with the provided predicate.
 
 

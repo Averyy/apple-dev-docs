@@ -1,12 +1,13 @@
 # tableView(_:shouldSelectRow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the table view should allow selection of the specified row.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,19 @@ Asks the delegate if the table view should allow selection of the specified row.
 optional func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool
 ```
 
+```objc
+- (BOOL) tableView:(NSTableView *) tableView shouldSelectRow:(NSInteger) row;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to permit selection of the row, [`false`](https://developer.apple.com/documentation/swift/false) to deny selection.
+[`true`](../../Swift/true.md) to permit selection of the row, [`false`](../../Swift/false.md) to deny selection.
 
 #### Discussion
 
 The delegate can implement this method to disallow selection of particular rows.
 
-For better performance and finer-grain control over the selection, use [`tableView(_:selectionIndexesForProposedSelection:)`](nstableviewdelegate/tableview(_:selectionindexesforproposedselection:).md).
+For better performance and finer-grain control over the selection, use [`tableView(_:selectionIndexesForProposedSelection:)`](./tableview%28_,selectionindexesforproposedselection%29.md).
 
 ## Parameters
 
@@ -32,21 +37,22 @@ For better performance and finer-grain control over the selection, use [`tableVi
 
 ## See Also
 
-- [func selectionShouldChange(in: NSTableView) -> Bool](nstableviewdelegate/selectionshouldchange(in:).md)
+### Selecting rows
+- [func selectionShouldChange(in: NSTableView) -> Bool](./selectionshouldchange%28in%29.md)
   Asks the delegate if the user is allowed to change the selection.
-- [func tableView(NSTableView, selectionIndexesForProposedSelection: IndexSet) -> IndexSet](nstableviewdelegate/tableview(_:selectionindexesforproposedselection:).md)
+- [func tableView(NSTableView, selectionIndexesForProposedSelection: IndexSet) -> IndexSet](./tableview%28_,selectionindexesforproposedselection%29.md)
   Asks the delegate to accept or reject the proposed selection.
-- [func tableView(NSTableView, shouldSelect: NSTableColumn?) -> Bool](nstableviewdelegate/tableview(_:shouldselect:).md)
+- [func tableView(NSTableView, shouldSelect: NSTableColumn?) -> Bool](./tableview%28_,shouldselect%29.md)
   Asks the delegate whether the specified table column can be selected.
-- [func tableViewSelectionIsChanging(Notification)](nstableviewdelegate/tableviewselectionischanging(_:).md)
+- [func tableViewSelectionIsChanging(Notification)](./tableviewselectionischanging%28_%29.md)
   Tells the delegate that the table view’s selection is in the process of changing.
-- [func tableViewSelectionDidChange(Notification)](nstableviewdelegate/tableviewselectiondidchange(_:).md)
+- [func tableViewSelectionDidChange(Notification)](./tableviewselectiondidchange%28_%29.md)
   Tells the delegate that the table view’s selection has changed.
-- [func tableView(NSTableView, shouldTypeSelectFor: NSEvent, withCurrentSearch: String?) -> Bool](nstableviewdelegate/tableview(_:shouldtypeselectfor:withcurrentsearch:).md)
+- [func tableView(NSTableView, shouldTypeSelectFor: NSEvent, withCurrentSearch: String?) -> Bool](./tableview%28_,shouldtypeselectfor,withcurrentsearch%29.md)
   Asks the delegate to allow or deny type select for the specified event and current search string.
-- [func tableView(NSTableView, typeSelectStringFor: NSTableColumn?, row: Int) -> String?](nstableviewdelegate/tableview(_:typeselectstringfor:row:).md)
+- [func tableView(NSTableView, typeSelectStringFor: NSTableColumn?, row: Int) -> String?](./tableview%28_,typeselectstringfor,row%29.md)
   Asks the delegate to provide an alternative text value used for type selection for the specified row and column.
-- [func tableView(NSTableView, nextTypeSelectMatchFromRow: Int, toRow: Int, for: String) -> Int](nstableviewdelegate/tableview(_:nexttypeselectmatchfromrow:torow:for:).md)
+- [func tableView(NSTableView, nextTypeSelectMatchFromRow: Int, toRow: Int, for: String) -> Int](./tableview%28_,nexttypeselectmatchfromrow,torow,for%29.md)
   Asks the delegate for the row within the specified search range that matches the specified string.
 
 

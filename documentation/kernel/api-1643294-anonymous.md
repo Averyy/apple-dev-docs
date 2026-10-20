@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,10 +19,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kINQUIRY_MaximumDataSize](1643294-anonymous/kinquiry_maximumdatasize.md)
-- [kINQUIRY_StandardDataHeaderSize](1643294-anonymous/kinquiry_standarddataheadersize.md)
-- [kINQUIRY_MaximumDataSize](../driverkit/kinquiry_maximumdatasize.md)
-- [kINQUIRY_StandardDataHeaderSize](../driverkit/kinquiry_standarddataheadersize.md)
+- [kINQUIRY_MaximumDataSize](./api-1643294-anonymous/kinquiry_maximumdatasize.md)
+- [kINQUIRY_StandardDataHeaderSize](./api-1643294-anonymous/kinquiry_standarddataheadersize.md)
+- [kINQUIRY_MaximumDataSize](../DriverKit/kinquiry_maximumdatasize.md)
+- [kINQUIRY_StandardDataHeaderSize](../DriverKit/kinquiry_standarddataheadersize.md)
 
 
 ---

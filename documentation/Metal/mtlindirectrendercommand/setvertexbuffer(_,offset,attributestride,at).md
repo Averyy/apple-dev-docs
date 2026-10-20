@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func setVertexBuffer(_ buffer: any MTLBuffer, offset: Int, attributeStride stride: Int, at index: Int)
+```
+
+```objc
+- (void) setVertexBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset attributeStride:(NSUInteger) stride atIndex:(NSUInteger) index;
 ```
 
 

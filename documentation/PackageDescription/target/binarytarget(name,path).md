@@ -1,7 +1,8 @@
 # binaryTarget(name:path:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a binary target that references an artifact on disk.
 
@@ -25,11 +26,12 @@ Binary targets are only available on Apple platforms.
 
 ## See Also
 
-- [static func binaryTarget(name: String, url: String, checksum: String) -> Target](target/binarytarget(name:url:checksum:).md)
+### Creating a Binary Target
+- [static func binaryTarget(name: String, url: String, checksum: String) -> Target](./binarytarget%28name,url,checksum%29.md)
   Creates a binary target that references a remote artifact.
-- [var url: String?](target/url.md)
+- [var url: String?](./url.md)
   The URL of a binary target.
-- [var checksum: String?](target/checksum.md)
+- [var checksum: String?](./checksum.md)
   The checksum for the archive file that contains the referenced binary artifact.
 
 

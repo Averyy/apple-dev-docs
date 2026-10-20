@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,9 +19,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOInterruptSourceAbsoluteTime](3753293-anonymous/kiointerruptsourceabsolutetime.md)
-- [kIOInterruptSourceContinuousTime](3753293-anonymous/kiointerruptsourcecontinuoustime.md)
-- [kIOInterruptSourceIndexMask](3753293-anonymous/kiointerruptsourceindexmask.md)
+- [kIOInterruptSourceAbsoluteTime](./api-3753293-anonymous/kiointerruptsourceabsolutetime.md)
+- [kIOInterruptSourceContinuousTime](./api-3753293-anonymous/kiointerruptsourcecontinuoustime.md)
+- [kIOInterruptSourceIndexMask](./api-3753293-anonymous/kiointerruptsourceindexmask.md)
 
 
 ---

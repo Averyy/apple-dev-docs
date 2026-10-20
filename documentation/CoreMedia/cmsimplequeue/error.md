@@ -1,7 +1,8 @@
 # CMSimpleQueue.Error
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines errors that queue operations can produce.
 
@@ -23,20 +24,20 @@ struct Error
 ## Topics
 
 ### Errors
-- [static let allocationFailed: NSError](cmsimplequeue/error/allocationfailed.md)
+- [static let allocationFailed: NSError](./error/allocationfailed.md)
   The system failed to allocate memory.
-- [static let queueIsFull: NSError](cmsimplequeue/error/queueisfull.md)
+- [static let queueIsFull: NSError](./error/queueisfull.md)
   An operation failed because the queue is full.
-- [static let parameterOutOfRange: NSError](cmsimplequeue/error/parameteroutofrange.md)
+- [static let parameterOutOfRange: NSError](./error/parameteroutofrange.md)
   You passed a parameter to a function that’s outside the range of allowed values.
-- [static let requiredParameterMissing: NSError](cmsimplequeue/error/requiredparametermissing.md)
+- [static let requiredParameterMissing: NSError](./error/requiredparametermissing.md)
   You failed to pass a required parameter to a function.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MusicPlayer.PlaybackStatus
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The music player playback status modes.
 
@@ -21,31 +22,31 @@ enum PlaybackStatus
 
 #### Overview
 
-You determine a music player’s state by checking the [`playbackStatus`](musicplayer/state-swift.class/playbackstatus.md) property. Depending on the property’s value, you can update your app’s user interface or take other appropriate action.
+You determine a music player’s state by checking the [`playbackStatus`](./state-swift.class/playbackstatus.md) property. Depending on the property’s value, you can update your app’s user interface or take other appropriate action.
 
 ## Topics
 
 ### Enumeration Cases
-- [MusicPlayer.PlaybackStatus.interrupted](musicplayer/playbackstatus/interrupted.md)
+- [MusicPlayer.PlaybackStatus.interrupted](./playbackstatus/interrupted.md)
   The music player is in an interrupted state, such as from an incoming phone call.
-- [MusicPlayer.PlaybackStatus.paused](musicplayer/playbackstatus/paused.md)
+- [MusicPlayer.PlaybackStatus.paused](./playbackstatus/paused.md)
   The music player is in a paused state.
-- [MusicPlayer.PlaybackStatus.playing](musicplayer/playbackstatus/playing.md)
+- [MusicPlayer.PlaybackStatus.playing](./playbackstatus/playing.md)
   The music player is playing.
-- [MusicPlayer.PlaybackStatus.seekingBackward](musicplayer/playbackstatus/seekingbackward.md)
+- [MusicPlayer.PlaybackStatus.seekingBackward](./playbackstatus/seekingbackward.md)
   The music player is seeking backward.
-- [MusicPlayer.PlaybackStatus.seekingForward](musicplayer/playbackstatus/seekingforward.md)
+- [MusicPlayer.PlaybackStatus.seekingForward](./playbackstatus/seekingforward.md)
   The music player is seeking forward.
-- [MusicPlayer.PlaybackStatus.stopped](musicplayer/playbackstatus/stopped.md)
+- [MusicPlayer.PlaybackStatus.stopped](./playbackstatus/stopped.md)
   The music player is in a stopped state.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

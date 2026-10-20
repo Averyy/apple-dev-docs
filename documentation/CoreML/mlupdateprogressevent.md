@@ -1,7 +1,8 @@
 # MLUpdateProgressEvent
 
 **Framework**: Core ML  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type of event during a model update task.
 
@@ -20,40 +21,45 @@ A type of event during a model update task.
 struct MLUpdateProgressEvent
 ```
 
+```c
+enum MLUpdateProgressEvent : NSInteger;
+```
+
 ## Topics
 
 ### Getting progress event types
-- [static var trainingBegin: MLUpdateProgressEvent](mlupdateprogressevent/trainingbegin.md)
+- [static var trainingBegin: MLUpdateProgressEvent](./mlupdateprogressevent/trainingbegin.md)
   An event that represents the start of training.
-- [static var miniBatchEnd: MLUpdateProgressEvent](mlupdateprogressevent/minibatchend.md)
+- [static var miniBatchEnd: MLUpdateProgressEvent](./mlupdateprogressevent/minibatchend.md)
   An event that represents the end of a mini-batch within a training epoch.
-- [static var epochEnd: MLUpdateProgressEvent](mlupdateprogressevent/epochend.md)
+- [static var epochEnd: MLUpdateProgressEvent](./mlupdateprogressevent/epochend.md)
   An event that represents the end of training epoch.
 ### Creating a progress event
-- [init(rawValue: Int)](mlupdateprogressevent/init(rawvalue:).md)
+- [init(rawValue: Int)](./mlupdateprogressevent/init%28rawvalue%29.md)
   Creates a progress event for the given integer.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [var event: MLUpdateProgressEvent](mlupdatecontext/event.md)
+### Getting the update context
+- [var event: MLUpdateProgressEvent](./mlupdatecontext/event.md)
   The event type that triggered an update task to notify your app’s completion and update progress handlers.
-- [var task: MLUpdateTask](mlupdatecontext/task.md)
+- [var task: MLUpdateTask](./mlupdatecontext/task.md)
   The update task that generated the update context.
-- [var parameters: [MLParameterKey : Any]](mlupdatecontext/parameters.md)
+- [var parameters: [MLParameterKey : Any]](./mlupdatecontext/parameters.md)
   The parameters for the update task.
-- [class MLParameterKey](mlparameterkey.md)
+- [class MLParameterKey](./mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
 
 

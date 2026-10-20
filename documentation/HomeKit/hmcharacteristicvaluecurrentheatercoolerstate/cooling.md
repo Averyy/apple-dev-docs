@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentHeaterCoolerState.cooling
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The accessory is actively cooling.
 
@@ -19,13 +20,18 @@ The accessory is actively cooling.
 case cooling
 ```
 
+```c
+HMCharacteristicValueCurrentHeaterCoolerStateCooling
+```
+
 ## See Also
 
-- [HMCharacteristicValueCurrentHeaterCoolerState.inactive](hmcharacteristicvaluecurrentheatercoolerstate/inactive.md)
+### Current State
+- [HMCharacteristicValueCurrentHeaterCoolerState.inactive](./inactive.md)
   The accessory is inactive.
-- [HMCharacteristicValueCurrentHeaterCoolerState.idle](hmcharacteristicvaluecurrentheatercoolerstate/idle.md)
+- [HMCharacteristicValueCurrentHeaterCoolerState.idle](./idle.md)
   The accessory is idle.
-- [HMCharacteristicValueCurrentHeaterCoolerState.heating](hmcharacteristicvaluecurrentheatercoolerstate/heating.md)
+- [HMCharacteristicValueCurrentHeaterCoolerState.heating](./heating.md)
   The accessory is actively heating.
 
 

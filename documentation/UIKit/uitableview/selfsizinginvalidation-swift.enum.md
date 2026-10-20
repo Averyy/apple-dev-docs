@@ -1,7 +1,8 @@
 # UITableView.SelfSizingInvalidation
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe modes for invalidating the size of self-sizing table view cells.
 
@@ -18,35 +19,40 @@ Constants that describe modes for invalidating the size of self-sizing table vie
 enum SelfSizingInvalidation
 ```
 
+```c
+enum UITableViewSelfSizingInvalidation : NSInteger;
+```
+
 #### Overview
 
-Use these constants with the [`selfSizingInvalidation`](uitableview/selfsizinginvalidation-swift.property.md) property.
+Use these constants with the [`selfSizingInvalidation`](./selfsizinginvalidation-swift.property.md) property.
 
 ## Topics
 
 ### Constants
-- [UITableView.SelfSizingInvalidation.disabled](uitableview/selfsizinginvalidation-swift.enum/disabled.md)
+- [UITableView.SelfSizingInvalidation.disabled](./selfsizinginvalidation-swift.enum/disabled.md)
   A mode that disables self-sizing invalidation.
-- [UITableView.SelfSizingInvalidation.enabled](uitableview/selfsizinginvalidation-swift.enum/enabled.md)
+- [UITableView.SelfSizingInvalidation.enabled](./selfsizinginvalidation-swift.enum/enabled.md)
   A mode that enables manual self-sizing invalidation.
-- [UITableView.SelfSizingInvalidation.enabledIncludingConstraints](uitableview/selfsizinginvalidation-swift.enum/enabledincludingconstraints.md)
+- [UITableView.SelfSizingInvalidation.enabledIncludingConstraints](./selfsizinginvalidation-swift.enum/enabledincludingconstraints.md)
   A mode that enables automatic self-sizing invalidation after Auto Layout changes.
 ### Initializers
-- [init?(rawValue: Int)](uitableview/selfsizinginvalidation-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./selfsizinginvalidation-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var selfSizingInvalidation: UITableView.SelfSizingInvalidation](uitableview/selfsizinginvalidation-swift.property.md)
+### Resizing self-sizing cells
+- [var selfSizingInvalidation: UITableView.SelfSizingInvalidation](./selfsizinginvalidation-swift.property.md)
   The mode that the table view uses for invalidating the size of self-sizing cells.
 
 

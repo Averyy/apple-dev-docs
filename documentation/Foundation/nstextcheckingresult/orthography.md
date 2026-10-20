@@ -1,7 +1,8 @@
 # orthography
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The detected orthography of a type checking result.
 
@@ -21,9 +22,14 @@ The detected orthography of a type checking result.
 var orthography: NSOrthography? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSOrthography * orthography;
+```
+
 ## See Also
 
-- [class func orthographyCheckingResult(range: NSRange, orthography: NSOrthography) -> NSTextCheckingResult](nstextcheckingresult/orthographycheckingresult(range:orthography:).md)
+### Text Checking Results for Orthography
+- [class func orthographyCheckingResult(range: NSRange, orthography: NSOrthography) -> NSTextCheckingResult](./orthographycheckingresult%28range,orthography%29.md)
   Creates and returns a text checking result with the specified orthography.
 
 

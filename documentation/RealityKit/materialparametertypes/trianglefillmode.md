@@ -1,7 +1,8 @@
 # MaterialParameterTypes.TriangleFillMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An object that defines how the system rasterizes triangles and triangle strips
 
@@ -22,16 +23,16 @@ enum TriangleFillMode
 ## Topics
 
 ### Enumeration Cases
-- [MaterialParameterTypes.TriangleFillMode.fill](materialparametertypes/trianglefillmode/fill.md)
+- [MaterialParameterTypes.TriangleFillMode.fill](./trianglefillmode/fill.md)
   Triangles and triangle strips are rasterized as filled triangles
-- [MaterialParameterTypes.TriangleFillMode.lines](materialparametertypes/trianglefillmode/lines.md)
+- [MaterialParameterTypes.TriangleFillMode.lines](./trianglefillmode/lines.md)
   Triangles and triangle strips are rasterized as lines
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

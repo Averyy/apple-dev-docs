@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the length of an imageblock’s memory for the specified imageblock dimensions.
@@ -20,6 +21,10 @@ Returns the length of an imageblock’s memory for the specified imageblock dime
 func imageblockMemoryLength(forDimensions imageblockDimensions: MTLSize) -> Int
 ```
 
+```objc
+- (NSUInteger) imageblockMemoryLengthForDimensions:(MTLSize) imageblockDimensions;
+```
+
 #### Discussion
 
 The imageblock dimensions need to match a valid tile size, such as one of the following:
@@ -34,20 +39,21 @@ The GPU partitions tile memory between imageblocks and threadgroup memory,
 
 For information about identifying tile memory limits for GPU devices, see either of the following:
 
-- [`Metal Feature Set Tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
-- [`Metal Feature Set Tables (Numbers)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.zip)
+- [Metal Feature Set Tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
+- [Metal Feature Set Tables (Numbers)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.zip)
 
 ## Parameters
 
-- `imageblockDimensions`: An [`MTLSize`](mtlsize.md) instance that represent the dimensions of an imageblock.
+- `imageblockDimensions`: An [`MTLSize`](../mtlsize.md) instance that represent the dimensions of an imageblock.
 
 ## See Also
 
-- [var maxTotalThreadsPerThreadgroup: Int](mtlrenderpipelinestate/maxtotalthreadsperthreadgroup.md)
+### Checking tile shader memory requirements
+- [var maxTotalThreadsPerThreadgroup: Int](./maxtotalthreadsperthreadgroup.md)
   The largest number of threads the pipeline state can have in a single tile shader threadgroup.
-- [var threadgroupSizeMatchesTileSize: Bool](mtlrenderpipelinestate/threadgroupsizematchestilesize.md)
+- [var threadgroupSizeMatchesTileSize: Bool](./threadgroupsizematchestilesize.md)
   A Boolean value that indicates whether the pipeline state needs a threadgroup’s size to equal a tile’s size.
-- [var imageblockSampleLength: Int](mtlrenderpipelinestate/imageblocksamplelength.md)
+- [var imageblockSampleLength: Int](./imageblocksamplelength.md)
   The memory size, in byes, of the render pipeline’s imageblock for a single sample.
 
 

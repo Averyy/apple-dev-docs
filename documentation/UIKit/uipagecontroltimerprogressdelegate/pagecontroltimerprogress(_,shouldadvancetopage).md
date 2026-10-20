@@ -1,7 +1,8 @@
 # pageControlTimerProgress(_:shouldAdvanceToPage:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines if the time interval progress should advance to the next page upon progress completion of the current page’s duration. Default is YES.
 
@@ -16,6 +17,10 @@ Determines if the time interval progress should advance to the next page upon pr
 
 ```swift
 optional func pageControlTimerProgress(_ progress: UIPageControlTimerProgress, shouldAdvanceToPage page: Int) -> Bool
+```
+
+```objc
+- (BOOL) pageControlTimerProgress:(UIPageControlTimerProgress *) progress shouldAdvanceToPage:(NSInteger) page;
 ```
 
 

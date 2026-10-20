@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 typedef enum {
    kImmutable = 0x00000001,
    kSort = 0x00000002,
@@ -23,7 +23,7 @@ An IORegistryEntry object marks collections immutable when set as properties of 
 ## Topics
 
 ### Constants
-- [kImmutable](oscollection/oscollectionflags/kimmutable.md)
+- [kImmutable](./oscollectionflags/kimmutable.md)
 
 
 ---

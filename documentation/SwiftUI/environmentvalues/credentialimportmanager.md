@@ -1,7 +1,8 @@
 # credentialImportManager
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 This environment variable is for SwiftUI clients of the credential exchange API. An example usage might look like:
 

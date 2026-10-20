@@ -1,7 +1,8 @@
 # createCredentialAssertionRequest(challenge:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an assertion request with a challenge.
 
@@ -17,6 +18,10 @@ Creates an assertion request with a challenge.
 func createCredentialAssertionRequest(challenge: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest
 ```
 
+```objc
+- (ASAuthorizationSecurityKeyPublicKeyCredentialAssertionRequest *) createCredentialAssertionRequestWithChallenge:(NSData *) challenge;
+```
+
 #### Return Value
 
 A security key credential registration request.
@@ -27,9 +32,10 @@ A security key credential registration request.
 
 ## See Also
 
-- [var relyingPartyIdentifier: String](asauthorizationsecuritykeypublickeycredentialprovider/relyingpartyidentifier.md)
+### Creating the request
+- [var relyingPartyIdentifier: String](./relyingpartyidentifier.md)
   The domain name of the service to authorize against.
-- [func createCredentialRegistrationRequest(challenge: Data, displayName: String, name: String, userID: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](asauthorizationsecuritykeypublickeycredentialprovider/createcredentialregistrationrequest(challenge:displayname:name:userid:).md)
+- [func createCredentialRegistrationRequest(challenge: Data, displayName: String, name: String, userID: Data) -> ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest](./createcredentialregistrationrequest%28challenge,displayname,name,userid%29.md)
   Creates a registration request with a challenge, display name, and user ID.
 
 

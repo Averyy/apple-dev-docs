@@ -1,15 +1,20 @@
 # classForCoder()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func classForCoder() -> AnyClass!
+```
+
+```objc
+- (Class) classForCoder;
 ```
 
 

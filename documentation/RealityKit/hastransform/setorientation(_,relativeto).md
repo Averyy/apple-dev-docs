@@ -1,7 +1,8 @@
 # setOrientation(_:relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the orientation of the entity relative to the given reference entity.
 
@@ -11,7 +12,7 @@ Sets the orientation of the entity relative to the given reference entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,10 @@ Sets the orientation of the entity relative to the given reference entity.
 
 ## See Also
 
-- [var orientation: simd_quatf](hastransform/orientation.md)
+### Rotating an entity
+- [var orientation: simd_quatf](./orientation.md)
   The rotation of the entity relative to its parent.
-- [func orientation(relativeTo: Entity?) -> simd_quatf](hastransform/orientation(relativeto:).md)
+- [func orientation(relativeTo: Entity?) -> simd_quatf](./orientation%28relativeto%29.md)
   Gets the orientation of an entity relative to the given entity.
 
 

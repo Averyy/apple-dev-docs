@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string that identifies the rate map.
@@ -20,13 +21,18 @@ A string that identifies the rate map.
 var label: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * label;
+```
+
 #### Discussion
 
-Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. For more information, see [`Naming resources and commands`](https://developer.apple.com/documentation/xcode/naming-resources-and-commands).
+Object and command labels are useful identifiers at runtime or when profiling and debugging your app using any Metal tool. For more information, see [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 
 ## See Also
 
-- [var device: any MTLDevice](mtlrasterizationratemap/device.md)
+### Identifying the rate map
+- [var device: any MTLDevice](./device.md)
   The device object that created the rate map.
 
 

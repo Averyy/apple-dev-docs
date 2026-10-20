@@ -1,11 +1,12 @@
 # Identifiable Implementations
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var id: Value.ID](binding/id.md)
+- [var id: Value.ID](./id.md)
   The stable identity of the entity associated with this instance, corresponding to the `id` of the binding’s wrapped value.
 
 

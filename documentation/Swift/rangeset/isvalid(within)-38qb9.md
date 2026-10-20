@@ -1,7 +1,8 @@
 # isValid(within:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the range set is valid for use with the provided discontiguous attributed string.
 
@@ -19,6 +20,8 @@ Indicates whether the range set is valid for use with the provided discontiguous
 ```swift
 func isValid(within text: DiscontiguousAttributedSubstring) -> Bool
 ```
+
+Available when `Bound` is `AttributedString.Index`.
 
 #### Return Value
 

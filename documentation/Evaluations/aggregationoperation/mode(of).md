@@ -1,7 +1,8 @@
 # AggregationOperation.mode(of:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The mode of the metric’s values.
 

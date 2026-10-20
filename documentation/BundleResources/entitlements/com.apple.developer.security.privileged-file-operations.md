@@ -1,50 +1,53 @@
 # Privileged File Operations
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An entitlement that permits apps to create symbolic links, replace files, and set file attributes.
 
 **Availability**:
 - macOS 10.15+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.security.privileged-file-operations`
+- **Type**: boolean
 
 #### Discussion
 
-Add this entitlement to your app before you call [`requestAuthorization(to:completionHandler:)`](https://developer.apple.com/documentation/appkit/nsworkspace/requestauthorization(to:completionhandler:)) to request permission to perform privileged file operations. If someone grants your app permission, pass the authorization you receive to [`init(authorization:)`](https://developer.apple.com/documentation/foundation/filemanager/init(authorization:)) and use the [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) you create to perform the operation.
+Add this entitlement to your app before you call [`requestAuthorization(to:completionHandler:)`](../../AppKit/nsworkspace/requestauthorization%28to,completionhandler%29.md) to request permission to perform privileged file operations. If someone grants your app permission, pass the authorization you receive to [`init(authorization:)`](../../Foundation/filemanager/init%28authorization%29.md) and use the [`FileManager`](../../Foundation/filemanager.md) you create to perform the operation.
 
-To request this entitlement for your app, [`fill out the request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/privileged-file-operations/).
+To request this entitlement for your app, [fill out the request form](https://developer.apple.com/contact/request/privileged-file-operations/).
 
 ## See Also
 
-- [App Sandbox Entitlement](entitlements/com.apple.security.app-sandbox.md)
+### Files and media
+- [App Sandbox Entitlement](./com.apple.security.app-sandbox.md)
   A Boolean value that indicates whether the app may use access control technology to contain damage to the system and user data if an app is compromised.
-- [com.apple.security.files.user-selected.read-only](entitlements/com.apple.security.files.user-selected.read-only.md)
+- [com.apple.security.files.user-selected.read-only](./com.apple.security.files.user-selected.read-only.md)
   A Boolean value that indicates whether the app may have read-only access to files the user has selected using an Open or Save dialog.
-- [com.apple.security.files.user-selected.read-write](entitlements/com.apple.security.files.user-selected.read-write.md)
+- [com.apple.security.files.user-selected.read-write](./com.apple.security.files.user-selected.read-write.md)
   A Boolean value that indicates whether the app may have read-write access to files the user has selected using an Open or Save dialog.
-- [com.apple.security.files.downloads.read-only](entitlements/com.apple.security.files.downloads.read-only.md)
+- [com.apple.security.files.downloads.read-only](./com.apple.security.files.downloads.read-only.md)
   A Boolean value that indicates whether the app may have read-only access to the Downloads folder.
-- [com.apple.security.files.downloads.read-write](entitlements/com.apple.security.files.downloads.read-write.md)
+- [com.apple.security.files.downloads.read-write](./com.apple.security.files.downloads.read-write.md)
   A Boolean value that indicates whether the app may have read-write access to the Downloads folder.
-- [com.apple.security.assets.pictures.read-only](entitlements/com.apple.security.assets.pictures.read-only.md)
+- [com.apple.security.assets.pictures.read-only](./com.apple.security.assets.pictures.read-only.md)
   A Boolean value that indicates whether the app may have read-only access to the Pictures folder.
-- [com.apple.security.assets.pictures.read-write](entitlements/com.apple.security.assets.pictures.read-write.md)
+- [com.apple.security.assets.pictures.read-write](./com.apple.security.assets.pictures.read-write.md)
   A Boolean value that indicates whether the app may have read-write access to the Pictures folder.
-- [com.apple.security.assets.music.read-only](entitlements/com.apple.security.assets.music.read-only.md)
+- [com.apple.security.assets.music.read-only](./com.apple.security.assets.music.read-only.md)
   A Boolean value that indicates whether the app may have read-only access to the Music folder.
-- [com.apple.security.assets.music.read-write](entitlements/com.apple.security.assets.music.read-write.md)
+- [com.apple.security.assets.music.read-write](./com.apple.security.assets.music.read-write.md)
   A Boolean value that indicates whether the app may have read-write access to the Music folder.
-- [com.apple.security.assets.movies.read-only](entitlements/com.apple.security.assets.movies.read-only.md)
+- [com.apple.security.assets.movies.read-only](./com.apple.security.assets.movies.read-only.md)
   A Boolean value that indicates whether the app may have read-only access to the Movies folder.
-- [com.apple.security.assets.movies.read-write](entitlements/com.apple.security.assets.movies.read-write.md)
+- [com.apple.security.assets.movies.read-write](./com.apple.security.assets.movies.read-write.md)
   A Boolean value that indicates whether the app may have read-write access to the Movies folder.
-- [All files entitlement](entitlements/com.apple.security.files.all.md)
+- [All files entitlement](./com.apple.security.files.all.md)
   A Boolean value that indicates whether the app may have access to all files.
-- [Data Protection Entitlement](entitlements/com.apple.developer.default-data-protection.md)
+- [Data Protection Entitlement](./com.apple.developer.default-data-protection.md)
   The level of data protection for sensitive user data when an app accesses it on a device.
 
 

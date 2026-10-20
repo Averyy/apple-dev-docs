@@ -1,7 +1,8 @@
 # deviceClass
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The matching property for the device’s class.
 
@@ -15,11 +16,16 @@ The matching property for the device’s class.
 static let deviceClass: IOUSBHostMatchingPropertyKey
 ```
 
+```c
+extern IOUSBHostMatchingPropertyKey IOUSBHostMatchingPropertyKeyDeviceClass;
+```
+
 ## See Also
 
-- [static let deviceProtocol: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/deviceprotocol.md)
+### Protocol and Class Properties
+- [static let deviceProtocol: IOUSBHostMatchingPropertyKey](./deviceprotocol.md)
   The matching property for the device’s protocol.
-- [static let deviceSubClass: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/devicesubclass.md)
+- [static let deviceSubClass: IOUSBHostMatchingPropertyKey](./devicesubclass.md)
   The matching property for the device’s subclass.
 
 

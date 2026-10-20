@@ -1,7 +1,8 @@
 # mapTemplateDidBeginPitchGesture(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the pitch gesture started.
 
@@ -16,9 +17,13 @@ Tells the delegate that the pitch gesture started.
 optional func mapTemplateDidBeginPitchGesture(_ mapTemplate: CPMapTemplate)
 ```
 
+```objc
+- (void) mapTemplateDidBeginPitchGesture:(CPMapTemplate *) mapTemplate;
+```
+
 ## Parameters
 
-- `mapTemplate`: The [`CPMapTemplate`](cpmaptemplate.md) the gesture applies to.
+- `mapTemplate`: The [`CPMapTemplate`](../cpmaptemplate.md) the gesture applies to.
 
 
 ---

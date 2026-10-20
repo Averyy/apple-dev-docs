@@ -1,7 +1,8 @@
 # ambientOcclusion
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ambient light exposure for a material.
 
@@ -31,7 +32,7 @@ if let aoResource = try? TextureResource.load(named:"entity_ao") {
 }
 ```
 
-In a custom material, RealityKit doesn’t automatically use the value you set on this property to render your entity. The ambient occlusion texture is available in the material’s shader functions, but RealityKit only renders ambient occlusion if the material’s [`lightingModel`](custommaterial/lightingmodel-swift.property.md) is [`CustomMaterial.LightingModel.lit`](custommaterial/lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md) and its surface shader calls `params.surface().set_ambient_occlusion()`.
+In a custom material, RealityKit doesn’t automatically use the value you set on this property to render your entity. The ambient occlusion texture is available in the material’s shader functions, but RealityKit only renders ambient occlusion if the material’s [`lightingModel`](./lightingmodel-swift.property.md) is [`CustomMaterial.LightingModel.lit`](./lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](./lightingmodel-swift.enum/clearcoat.md) and its surface shader calls `params.surface().set_ambient_occlusion()`.
 
 The following Metal code shows how to sample the ambient occlusion texture to set the AO value in a surface shader function:
 
@@ -52,23 +53,24 @@ params.surface().set_ambient_occlusion(metallic);
 
 ## See Also
 
-- [var baseColor: CustomMaterial.BaseColor](custommaterial/basecolor-swift.property.md)
+### Setting the core properties
+- [var baseColor: CustomMaterial.BaseColor](./basecolor-swift.property.md)
   The color of an entity unmodified by lighting.
-- [var roughness: CustomMaterial.Roughness](custommaterial/roughness-swift.property.md)
+- [var roughness: CustomMaterial.Roughness](./roughness-swift.property.md)
   The amount the surface of the 3D object scatters reflected light.
-- [var metallic: CustomMaterial.Metallic](custommaterial/metallic-swift.property.md)
+- [var metallic: CustomMaterial.Metallic](./metallic-swift.property.md)
   The reflectiveness of an entity.
-- [var normal: CustomMaterial.Normal](custommaterial/normal-swift.property.md)
+- [var normal: CustomMaterial.Normal](./normal-swift.property.md)
   A texture map that stores fine surface details for the entity.
-- [var emissiveColor: CustomMaterial.EmissiveColor](custommaterial/emissivecolor-swift.property.md)
+- [var emissiveColor: CustomMaterial.EmissiveColor](./emissivecolor-swift.property.md)
   The color of light this material emits.
-- [var specular: CustomMaterial.Specular](custommaterial/specular-swift.property.md)
+- [var specular: CustomMaterial.Specular](./specular-swift.property.md)
   The bright highlights to apply to the entity.
-- [var clearcoat: CustomMaterial.Clearcoat](custommaterial/clearcoat-swift.property.md)
+- [var clearcoat: CustomMaterial.Clearcoat](./clearcoat-swift.property.md)
   The transparent highlights that simulate a clear, shiny coating on an entity.
-- [var clearcoatRoughness: CustomMaterial.ClearcoatRoughness](custommaterial/clearcoatroughness-swift.property.md)
+- [var clearcoatRoughness: CustomMaterial.ClearcoatRoughness](./clearcoatroughness-swift.property.md)
   The degree to which an entity’s clear, shiny coating scatters light to create soft highlights.
-- [var clearcoatNormal: CustomMaterial.ClearcoatNormal](custommaterial/clearcoatnormal-swift.property.md)
+- [var clearcoatNormal: CustomMaterial.ClearcoatNormal](./clearcoatnormal-swift.property.md)
   Waviness and imperfections for the top clearcoat.
 
 

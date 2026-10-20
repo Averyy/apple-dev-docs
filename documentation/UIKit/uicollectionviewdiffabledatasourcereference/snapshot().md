@@ -1,7 +1,8 @@
 # snapshot()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a representation of the current state of the data in the collection view.
 
@@ -18,19 +19,24 @@ Returns a representation of the current state of the data in the collection view
 func snapshot() -> NSDiffableDataSourceSnapshotReference
 ```
 
+```objc
+- (NSDiffableDataSourceSnapshot<id,id> *) snapshot;
+```
+
 #### Return Value
 
 A snapshot containing section and item identifiers in the order that they appear in the UI.
 
 ## See Also
 
-- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](uicollectionviewdiffabledatasourcereference/applysnapshot(_:animatingdifferences:).md)
+### Updating data
+- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](./applysnapshot%28_,animatingdifferences%29.md)
   Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes.
-- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool, completion: (() -> Void)?)](uicollectionviewdiffabledatasourcereference/applysnapshot(_:animatingdifferences:completion:).md)
+- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool, completion: (() -> Void)?)](./applysnapshot%28_,animatingdifferences,completion%29.md)
   Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes and executing a completion handler.
-- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference)](uicollectionviewdiffabledatasourcereference/applysnapshot(usingreloaddata:).md)
+- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference)](./applysnapshot%28usingreloaddata%29.md)
   Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes.
-- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference, completion: (() -> Void)?)](uicollectionviewdiffabledatasourcereference/applysnapshot(usingreloaddata:completion:).md)
+- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference, completion: (() -> Void)?)](./applysnapshot%28usingreloaddata,completion%29.md)
   Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes, optionally executing a completion handler.
 
 

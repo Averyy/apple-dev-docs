@@ -1,7 +1,8 @@
 # MTRProductIdentity
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.0+
@@ -18,34 +19,38 @@
 class MTRProductIdentity
 ```
 
+```objc
+@interface MTRProductIdentity : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(vendorID: NSNumber, productID: NSNumber)](mtrproductidentity/init(vendorid:productid:).md)
+- [init(vendorID: NSNumber, productID: NSNumber)](./mtrproductidentity/init%28vendorid,productid%29.md)
 ### Instance Properties
-- [var productID: NSNumber](mtrproductidentity/productid.md)
-- [var vendorID: NSNumber](mtrproductidentity/vendorid.md)
+- [var productID: NSNumber](./mtrproductidentity/productid.md)
+- [var vendorID: NSNumber](./mtrproductidentity/vendorid.md)
 ### Default Implementations
-- [MTRProductIdentity Implementations](mtrproductidentity/mtrproductidentity-implementations.md)
+- [MTRProductIdentity Implementations](./mtrproductidentity/mtrproductidentity-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(castsShadow:receivesShadow:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a grounding shadow component by configuring whether its entity receives shadows from other model entities with the component.
 
@@ -21,7 +22,7 @@ init(castsShadow: Bool, receivesShadow: Bool)
 
 #### Discussion
 
-This initializer is an alternative to [`init(castsShadow:)`](groundingshadowcomponent/init(castsshadow:).md), which creates a component that, by default, configures an entity to receive grounding shadows from other model entities in the scene.
+This initializer is an alternative to [`init(castsShadow:)`](./init%28castsshadow%29.md), which creates a component that, by default, configures an entity to receive grounding shadows from other model entities in the scene.
 
 ## Parameters
 

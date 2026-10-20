@@ -1,7 +1,8 @@
 # register(engine:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the group to the engine’s dictionary.
 
@@ -19,9 +20,13 @@ Adds the group to the engine’s dictionary.
 func register(engine: PHASEEngine)
 ```
 
+```objc
+- (void) registerWithEngine:(PHASEEngine *) engine;
+```
+
 #### Discussion
 
-The function generates an exception if the argument is `nil` or if engine already contains the group. For more information, see [`groups`](phaseengine/groups.md).
+The function generates an exception if the argument is `nil` or if engine already contains the group. For more information, see [`groups`](../phaseengine/groups.md).
 
 ## Parameters
 
@@ -29,7 +34,8 @@ The function generates an exception if the argument is `nil` or if engine alread
 
 ## See Also
 
-- [func unregisterFromEngine()](phasegroup/unregisterfromengine.md)
+### Defining the Group
+- [func unregisterFromEngine()](./unregisterfromengine%28%29.md)
   Removes the group from the engine’s dictionary.
 
 

@@ -1,7 +1,8 @@
 # strokeEnd
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit distance along the line where a stroke ends.
 
@@ -10,28 +11,29 @@ The unit distance along the line where a stroke ends.
 
 ## Declaration
 
-```swift
+```
 get strokeEnd(): number;
 set strokeEnd(strokeEnd: number);
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 #### Discussion
 
 The value of this property must be a number between `0` and `1`. A value of `0` represents the beginning of the polyline, and a value of `1`, the default, represents the end. MapKit JS interprets values between `0` and `1` linearly along the length of the polyline.
 
-The stroke is only visible for the overlay when [`strokeStart`](styleconstructoroptions/strokestart.md) is less than [`strokeEnd`](styleconstructoroptions/strokeend.md).
+The stroke is only visible for the overlay when [`strokeStart`](../styleconstructoroptions/strokestart.md) is less than [`strokeEnd`](../styleconstructoroptions/strokeend.md).
 
 ## See Also
 
-- [strokeColor](style/strokecolor.md)
+### Styling strokes
+- [strokeColor](./strokecolor.md)
   The stroke color of a line.
-- [strokeOpacity](style/strokeopacity.md)
+- [strokeOpacity](./strokeopacity.md)
   The opacity of the stroke color.
-- [strokeStart](style/strokestart.md)
+- [strokeStart](./strokestart.md)
   The unit distance along the line where a stroke begins.
 
 

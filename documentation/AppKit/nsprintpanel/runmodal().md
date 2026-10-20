@@ -1,17 +1,22 @@
 # runModal()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the Print panel and begins the modal loop.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func runModal() -> Int
+```
+
+```objc
+- (NSInteger) runModal;
 ```
 
 #### Return Value
@@ -24,10 +29,12 @@ This method uses the printing information associated with the current printing o
 
 ## See Also
 
-- [var printInfo: NSPrintInfo](nsprintoperation/printinfo.md)
+### Related Documentation
+- [var printInfo: NSPrintInfo](../nsprintoperation/printinfo.md)
   The printing information associated with the print operation.
-- [func beginSheet(using: NSPrintInfo, on: NSWindow, completionHandler: ((NSPrintPanel.Result) -> Void)?)](nsprintpanel/beginsheet(using:on:completionhandler:).md)
-- [func runModal(with: NSPrintInfo) -> Int](nsprintpanel/runmodal(with:).md)
+### Running the Panel
+- [func beginSheet(using: NSPrintInfo, on: NSWindow, completionHandler: ((NSPrintPanel.Result) -> Void)?)](./beginsheet%28using,on,completionhandler%29.md)
+- [func runModal(with: NSPrintInfo) -> Int](./runmodal%28with%29.md)
   Displays the Print panel and runs the modal loop using the specified printing information.
 
 

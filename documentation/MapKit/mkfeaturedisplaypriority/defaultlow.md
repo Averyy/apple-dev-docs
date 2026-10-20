@@ -1,7 +1,8 @@
 # defaultLow
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant indicating that the item’s display priority is low.
 
@@ -19,15 +20,20 @@ A constant indicating that the item’s display priority is low.
 static var defaultLow: MKFeatureDisplayPriority { get }
 ```
 
+```c
+static const MKFeatureDisplayPriority MKFeatureDisplayPriorityDefaultLow;
+```
+
 #### Discussion
 
 An annotation view with this priority is removed from the map when its bounds collide with the bounds of another view with a higher priority. If the priorities of the two views are equal, the view furthest from the center of the map’s visible region is hidden first.
 
 ## See Also
 
-- [static var required: MKFeatureDisplayPriority](mkfeaturedisplaypriority/required.md)
+### Priorities
+- [static var required: MKFeatureDisplayPriority](./required.md)
   A constant indicating that the item is required.
-- [static var defaultHigh: MKFeatureDisplayPriority](mkfeaturedisplaypriority/defaulthigh.md)
+- [static var defaultHigh: MKFeatureDisplayPriority](./defaulthigh.md)
   A constant indicating that the item’s display priority is high.
 
 

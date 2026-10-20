@@ -1,7 +1,8 @@
 # condition
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The condition of the measurement that impacts its accuracy.
 
@@ -16,9 +17,14 @@ The condition of the measurement that impacts its accuracy.
 var condition: SRWristTemperature.Condition { get }
 ```
 
+```objc
+@property (nonatomic, readonly) SRWristTemperatureCondition condition;
+```
+
 ## See Also
 
-- [SRWristTemperature.Condition](srwristtemperature/condition-swift.struct.md)
+### Determining the accuracy
+- [SRWristTemperature.Condition](./condition-swift.struct.md)
   The user activities with the watch that can impact the temperature measurement.
 
 

@@ -1,7 +1,8 @@
 # NSWritingToolsCoordinator.TextDecoration.grammarUnderline
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Requests a preview of the text with the grammar indication underline.
 
@@ -12,6 +13,10 @@ Requests a preview of the text with the grammar indication underline.
 
 ```swift
 case grammarUnderline
+```
+
+```c
+NSWritingToolsCoordinatorTextDecorationGrammarUnderline
 ```
 
 

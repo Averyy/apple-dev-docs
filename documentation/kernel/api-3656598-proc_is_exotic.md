@@ -1,14 +1,15 @@
 # proc_is_exotic
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 bool proc_is_exotic(proc_t p);
 ```
 

@@ -1,7 +1,8 @@
 # startSend(_:metadata:handler:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send partial binary data on a connection.
 
@@ -19,6 +20,8 @@ Send partial binary data on a connection.
 ```swift
 func startSend<Content>(_ content: Content, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]}, handler: ((Content, Bool) async throws -> Void) async throws -> Void) async throws where Content : DataProtocol
 ```
+
+Available when `ApplicationProtocol` is `WebSocket`.
 
 #### Discussion
 

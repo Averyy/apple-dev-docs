@@ -1,7 +1,8 @@
 # cancel(error:)
 
 **Framework**: Accessory Transport Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels the session.
 

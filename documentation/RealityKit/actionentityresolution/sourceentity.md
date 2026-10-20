@@ -1,7 +1,8 @@
 # sourceEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Resolves to the source entity that is playing the action.
 

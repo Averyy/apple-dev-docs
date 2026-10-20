@@ -1,7 +1,8 @@
 # autoupdatingCurrent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A calendar that tracks changes to user’s preferred calendar.
 
@@ -28,7 +29,8 @@ If mutated, this calendar will no longer track the user’s preferred calendar.
 
 ## See Also
 
-- [static var current: Calendar](calendar/current.md)
+### Getting the User’s Calendar
+- [static var current: Calendar](./current.md)
   The user’s current calendar.
 
 

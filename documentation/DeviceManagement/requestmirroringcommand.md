@@ -1,7 +1,8 @@
 # RequestMirroringCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to prompt the user to share their screen using AirPlay Mirroring.
 
@@ -13,14 +14,14 @@ The command to prompt the user to share their screen using AirPlay Mirroring.
 
 ## Declaration
 
-```swift
+```
 object RequestMirroringCommand
 ```
 
 ## Topics
 
 ### Objects
-- [object RequestMirroringCommand.Command](requestmirroringcommand/command-data.dictionary.md)
+- [object RequestMirroringCommand.Command](./requestmirroringcommand/command-data.dictionary.md)
   The command to prompt the user to share their screen using AirPlay Mirroring.
 
 ## Properties
@@ -30,7 +31,8 @@ object RequestMirroringCommand
 
 ## See Also
 
-- [object RequestMirroringResponse](requestmirroringresponse.md)
+### Commands and responses
+- [object RequestMirroringResponse](./requestmirroringresponse.md)
   A response from the device after it processes the command to prompt the user to share their screen using AirPlay Mirroring.
 
 

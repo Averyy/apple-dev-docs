@@ -1,13 +1,14 @@
 # Sequence Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [ClosedRange.Element](closedrange/element.md)
+- [ClosedRange.Element](./element.md)
   A type representing the sequence’s elements.
-- [ClosedRange.Iterator](closedrange/iterator.md)
+- [ClosedRange.Iterator](./iterator.md)
   A type that provides the sequence’s iteration interface and encapsulates its iteration state.
 
 

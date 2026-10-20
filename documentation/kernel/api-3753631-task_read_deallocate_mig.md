@@ -1,14 +1,15 @@
 # task_read_deallocate_mig
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 void task_read_deallocate_mig(task_read_t task_read);
 ```
 

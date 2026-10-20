@@ -1,7 +1,8 @@
 # IOUSBDeviceDescriptorPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to a USB device descriptor.
 
@@ -10,17 +11,18 @@ A pointer to a USB device descriptor.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBDeviceDescriptor *IOUSBDeviceDescriptorPtr;
 ```
 
 ## See Also
 
-- [IOUSBDeviceDescriptor](iousbdevicedescriptor.md)
+### Device Descriptors
+- [IOUSBDeviceDescriptor](./iousbdevicedescriptor.md)
   The structure for storing a USB device descriptor.
-- [IOUSBDeviceQualifierDescriptor](iousbdevicequalifierdescriptor.md)
+- [IOUSBDeviceQualifierDescriptor](./iousbdevicequalifierdescriptor.md)
   The structure for describing a high-speed capable USB device.
-- [IOUSBDeviceQualifierDescriptorPtr](iousbdevicequalifierdescriptorptr.md)
+- [IOUSBDeviceQualifierDescriptorPtr](./iousbdevicequalifierdescriptorptr.md)
   A pointer to a qualifier descriptor.
 
 

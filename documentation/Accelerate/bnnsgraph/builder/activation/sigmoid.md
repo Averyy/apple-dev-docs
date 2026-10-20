@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.Activation.sigmoid
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sigmoid acvtivation.
 

@@ -1,14 +1,15 @@
 # vfs_nspace_server
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 boolean_t vfs_nspace_server(mach_msg_header_t *InHeadP, mach_msg_header_t *OutHeadP);
 ```
 

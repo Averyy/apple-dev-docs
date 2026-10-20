@@ -1,7 +1,8 @@
 # errSecMissingAttributePadding
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A padding attribute is missing.
 
@@ -18,6 +19,10 @@ A padding attribute is missing.
 
 ```swift
 var errSecMissingAttributePadding: OSStatus { get }
+```
+
+```c
+errSecMissingAttributePadding
 ```
 
 

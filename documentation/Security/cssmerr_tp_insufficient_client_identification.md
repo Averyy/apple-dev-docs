@@ -1,7 +1,8 @@
 # CSSMERR_TP_INSUFFICIENT_CLIENT_IDENTIFICATION
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_TP_INSUFFICIENT_CLIENT_IDENTIFICATION: Int { get }
+```
+
+```c
+CSSMERR_TP_INSUFFICIENT_CLIENT_IDENTIFICATION
 ```
 
 

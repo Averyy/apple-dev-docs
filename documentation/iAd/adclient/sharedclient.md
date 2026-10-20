@@ -1,11 +1,12 @@
 # sharedClient
 
 **Framework**: iAd  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 ## Declaration
 
-```swift
+```objc
 + (ADClient *) sharedClient;
 ```
 

@@ -1,7 +1,8 @@
 # collationType
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of collation that the index element uses, either binary or R-tree.
 
@@ -20,14 +21,19 @@ The type of collation that the index element uses, either binary or R-tree.
 var collationType: NSFetchIndexElementType { get set }
 ```
 
+```objc
+@property NSFetchIndexElementType collationType;
+```
+
 ## See Also
 
-- [var indexDescription: NSFetchIndexDescription?](nsfetchindexelementdescription/indexdescription.md)
-- [var isAscending: Bool](nsfetchindexelementdescription/isascending.md)
+### Inspecting an Index Element Description
+- [var indexDescription: NSFetchIndexDescription?](./indexdescription.md)
+- [var isAscending: Bool](./isascending.md)
   A Boolean value that controls whether an index that supports direction is an ascending or descending index.
-- [var property: NSPropertyDescription?](nsfetchindexelementdescription/property.md)
+- [var property: NSPropertyDescription?](./property.md)
   A property description.
-- [var propertyName: String?](nsfetchindexelementdescription/propertyname.md)
+- [var propertyName: String?](./propertyname.md)
   The specified name in the property description.
 
 

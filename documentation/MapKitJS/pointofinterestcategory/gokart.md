@@ -1,7 +1,8 @@
 # GoKart
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for go-kart services.
 
@@ -10,7 +11,7 @@ The point-of-interest category for go-kart services.
 
 ## Declaration
 
-```swift
+```
 readonly GoKart: "GoKart";
 ```
 

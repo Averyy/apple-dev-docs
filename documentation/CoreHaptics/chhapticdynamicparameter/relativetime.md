@@ -1,7 +1,8 @@
 # relativeTime
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which this dynamic parameter is applied, relative to the start time of the pattern.
 
@@ -19,11 +20,16 @@ The time at which this dynamic parameter is applied, relative to the start time 
 var relativeTime: TimeInterval { get set }
 ```
 
+```objc
+@property (readwrite) NSTimeInterval relativeTime;
+```
+
 ## See Also
 
-- [var parameterID: CHHapticDynamicParameter.ID](chhapticdynamicparameter/parameterid.md)
+### Specifying a Dynamic Parameter’s Value
+- [var parameterID: CHHapticDynamicParameter.ID](./parameterid.md)
   The dynamic parameter ID defining the type of parameter being modified.
-- [var value: Float](chhapticdynamicparameter/value.md)
+- [var value: Float](./value.md)
   The value of the dynamic parameter.
 
 

@@ -1,12 +1,15 @@
 # SecKeychainCopyAccess(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the application access of a keychain.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: This function is not implemented and returns an [`errSecUnimplemented`](./errsecunimplemented.md) error code if called.
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Retrieves the application access of a keychain.
 func SecKeychainCopyAccess(_ keychain: SecKeychain?, _ access: UnsafeMutablePointer<SecAccess?>) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainCopyAccess(SecKeychainRef keychain, SecAccessRef*access);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 ## Parameters
 

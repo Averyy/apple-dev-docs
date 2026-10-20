@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the content storage object.
 
@@ -14,9 +15,14 @@ The delegate for the content storage object.
 weak var delegate: (any NSTextContentStorageDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSTextContentStorageDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NSTextContentStorageDelegate](nstextcontentstoragedelegate.md)
+### Accessing paragraphs
+- [protocol NSTextContentStorageDelegate](../nstextcontentstoragedelegate.md)
   The optional methods that delegates of content storage objects implement to handle content processing.
 
 

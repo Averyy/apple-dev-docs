@@ -1,7 +1,8 @@
 # DirectionalLightComponent.Shadow.ShadowProjectionType
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -20,23 +21,24 @@ enum ShadowProjectionType
 ## Topics
 
 ### Shadow projection types
-- [DirectionalLightComponent.Shadow.ShadowProjectionType.automatic(maximumDistance:)](directionallightcomponent/shadow/shadowprojectiontype/automatic(maximumdistance:).md)
+- [DirectionalLightComponent.Shadow.ShadowProjectionType.automatic(maximumDistance:)](./shadowprojectiontype/automatic%28maximumdistance%29.md)
   Shadow projection is automatically fit with the camera frustum, range is within maximumDistance from camera
-- [DirectionalLightComponent.Shadow.ShadowProjectionType.fixed(zNear:zFar:orthographicScale:)](directionallightcomponent/shadow/shadowprojectiontype/fixed(znear:zfar:orthographicscale:).md)
+- [DirectionalLightComponent.Shadow.ShadowProjectionType.fixed(zNear:zFar:orthographicScale:)](./shadowprojectiontype/fixed%28znear,zfar,orthographicscale%29.md)
   Shadow projection is manually set up with near plane, far plane, and orthographicScale for width and height
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../../../Swift/equatable.md)
 
 ## See Also
 
-- [struct DirectionalLightComponent](directionallightcomponent.md)
+### Directional lights and their shadows
+- [struct DirectionalLightComponent](../../directionallightcomponent.md)
   A component that defines a directional light source.
-- [DirectionalLightComponent.Shadow](directionallightcomponent/shadow.md)
+- [DirectionalLightComponent.Shadow](../shadow.md)
   A directional light component that adds shadows to entities that it illuminates
-- [DirectionalLightComponent.Shadow.ShadowMapCullMode](directionallightcomponent/shadow/shadowmapcullmode.md)
+- [DirectionalLightComponent.Shadow.ShadowMapCullMode](./shadowmapcullmode.md)
 
 
 ---

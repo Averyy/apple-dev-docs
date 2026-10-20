@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the configuration data to use when previewing the content.
@@ -19,13 +20,17 @@ Returns the configuration data to use when previewing the content.
 func contextMenuInteraction(_ interaction: UIContextMenuInteraction, configurationForMenuAtLocation location: CGPoint) -> UIContextMenuConfiguration?
 ```
 
+```objc
+- (UIContextMenuConfiguration *) contextMenuInteraction:(UIContextMenuInteraction *) interaction configurationForMenuAtLocation:(CGPoint) location;
+```
+
 #### Return Value
 
 The configuration object containing the information to use for the preview. If you want to cancel the interaction, return `nil`.
 
 #### Discussion
 
-In your implementation of this method, create a [`UIContextMenuConfiguration`](uicontextmenuconfiguration.md) object with details for configuring the contextual menu. If you return a default configuration object, UIKit displays a default preview of your existing view without a contextual menu. However, if you return a configuration object with custom handler blocks, UIKit uses your blocks to create the contextual menu and optional custom preview interface. Use those blocks to configure your interface appropriately for the content at `location`.
+In your implementation of this method, create a [`UIContextMenuConfiguration`](../uicontextmenuconfiguration.md) object with details for configuring the contextual menu. If you return a default configuration object, UIKit displays a default preview of your existing view without a contextual menu. However, if you return a configuration object with custom handler blocks, UIKit uses your blocks to create the contextual menu and optional custom preview interface. Use those blocks to configure your interface appropriately for the content at `location`.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ In your implementation of this method, create a [`UIContextMenuConfiguration`](u
 
 ## See Also
 
-- [class UIContextMenuConfiguration](uicontextmenuconfiguration.md)
+### Providing the preview configuration data
+- [class UIContextMenuConfiguration](../uicontextmenuconfiguration.md)
   An object containing the configuration details for the contextual menu.
 
 

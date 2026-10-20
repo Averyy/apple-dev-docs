@@ -1,7 +1,8 @@
 # sectionFootersPinToVisibleBounds
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether footers pin to the bottom of the collection view bounds during scrolling.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether footers pin to the bottom of the collecti
 var sectionFootersPinToVisibleBounds: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL sectionFootersPinToVisibleBounds;
+```
+
 #### Discussion
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true), section footer views scroll with content until they reach the bottom of the screen, at which point they are pinned to the lower bounds of the collection view. Each new footer view that scrolls to the bottom of the screen pushes the previously pinned footer view offscreen.
+When this property is [`true`](../../Swift/true.md), section footer views scroll with content until they reach the bottom of the screen, at which point they are pinned to the lower bounds of the collection view. Each new footer view that scrolls to the bottom of the screen pushes the previously pinned footer view offscreen.
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var sectionHeadersPinToVisibleBounds: Bool](uicollectionviewflowlayout/sectionheaderspintovisiblebounds.md)
+### Pinning headers and footers
+- [var sectionHeadersPinToVisibleBounds: Bool](./sectionheaderspintovisiblebounds.md)
   A Boolean value that indicates whether headers pin to the top of the collection view bounds during scrolling.
 
 

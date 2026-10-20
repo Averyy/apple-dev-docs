@@ -1,7 +1,8 @@
 # submissionURL
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL that the frame is being navigated to.
 

@@ -1,17 +1,22 @@
 # setNextState()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes cell’s state to the next value in the sequence.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setNextState()
+```
+
+```objc
+- (void) setNextState;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ If a cell has three states, it cycles in this order: on, off, mixed, on, off, an
 
 ## See Also
 
-- [var allowsMixedState: Bool](nscell/allowsmixedstate.md)
+### Managing Cell State
+- [var allowsMixedState: Bool](./allowsmixedstate.md)
   A Boolean value indicating whether the cell supports three states instead of two.
-- [var nextState: Int](nscell/nextstate.md)
+- [var nextState: Int](./nextstate.md)
   The cell’s next state.
-- [var state: NSControl.StateValue](nscell/state.md)
+- [var state: NSControl.StateValue](./state.md)
   The cell’s current state.
-- [NSControl.StateValue](nscontrol/statevalue.md)
+- [NSControl.StateValue](../nscontrol/statevalue.md)
   A constant that indicates whether a control is on, off, or in a mixed state.
 
 

@@ -1,7 +1,8 @@
 # Actor.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an actor resource.
 
@@ -10,13 +11,13 @@ Attributes that describe an actor resource.
 
 ## Declaration
 
-```swift
+```
 object Actor.Attributes
 ```
 
 ## Properties
 
-- `actorType` (string)
+- `actorType` (string): **Allowed Values**: `USER`, `API_KEY`, `XCODE_CLOUD`, `APPLE`
 - `apiKeyId` (string)
 - `userEmail` (string)
 - `userFirstName` (string)

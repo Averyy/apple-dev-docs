@@ -1,7 +1,8 @@
 # strength
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The magnitude of the force.
 

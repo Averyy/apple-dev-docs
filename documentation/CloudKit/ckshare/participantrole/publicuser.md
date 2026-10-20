@@ -1,7 +1,8 @@
 # CKShare.ParticipantRole.publicUser
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The participant has the public role.
 
@@ -20,17 +21,22 @@ The participant has the public role.
 case publicUser
 ```
 
+```c
+CKShareParticipantRolePublicUser
+```
+
 #### Discussion
 
 A public user of a share is self-added when accessing the share URL.
 
 ## See Also
 
-- [CKShare.ParticipantRole.owner](ckshare/participantrole/owner.md)
+### Roles
+- [CKShare.ParticipantRole.owner](./owner.md)
   The participant is the share’s owner.
-- [CKShare.ParticipantRole.privateUser](ckshare/participantrole/privateuser.md)
+- [CKShare.ParticipantRole.privateUser](./privateuser.md)
   The participant has the private role.
-- [CKShare.ParticipantRole.unknown](ckshare/participantrole/unknown.md)
+- [CKShare.ParticipantRole.unknown](./unknown.md)
   The participant’s role is unknown.
 
 

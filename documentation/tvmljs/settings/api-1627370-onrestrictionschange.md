@@ -1,7 +1,8 @@
 # onRestrictionsChange
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A callback function that is called when changes to a device’s restriction information changes.
 
@@ -10,7 +11,7 @@ A callback function that is called when changes to a device’s restriction info
 
 ## Declaration
 
-```swift
+```
 attribute function onRestrictionsChange;
 ```
 
@@ -20,11 +21,12 @@ The `onRestrictionsChange` attribute is used to update any activities that use a
 
 ## See Also
 
-- [restrictions](settings/1627378-restrictions.md)
+### Retrieving Setting Information
+- [restrictions](./api-1627378-restrictions.md)
   Restriction information on the device.
-- [language](settings/1627439-language.md)
+- [language](./api-1627439-language.md)
   The language used to display information by the device.
-- [storefrontCountryCode](settings/1627376-storefrontcountrycode.md)
+- [storefrontCountryCode](./api-1627376-storefrontcountrycode.md)
   The country code used by the store on this device.
 
 

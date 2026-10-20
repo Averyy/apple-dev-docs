@@ -1,7 +1,8 @@
 # notificationCenter
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The notification center from which the notification must be posted.
 
@@ -11,11 +12,16 @@ The notification center from which the notification must be posted.
 var notificationCenter: NotificationCenter { get }
 ```
 
+```objc
+@property (strong, readonly) NSNotificationCenter * notificationCenter;
+```
+
 ## See Also
 
-- [var notificationName: NSNotification.Name](xctnsnotificationexpectation/notificationname.md)
+### Expectation Properties
+- [var notificationName: NSNotification.Name](./notificationname.md)
   The name of the notification that the expectation is waiting for.
-- [var observedObject: Any?](xctnsnotificationexpectation/observedobject.md)
+- [var observedObject: Any?](./observedobject.md)
   The object by which the notification must be posted, or nil if the notification can be posted by any object.
 
 

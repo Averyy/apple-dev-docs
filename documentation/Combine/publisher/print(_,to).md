@@ -1,7 +1,8 @@
 # print(_:to:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prints log messages for all publishing events.
 
@@ -26,7 +27,7 @@ A publisher that prints log messages for all publishing events.
 
 #### Discussion
 
-Use [`print(_:to:)`](publisher/print(_:to:).md) to log messages the console.
+Use [`print(_:to:)`](./print%28_,to%29.md) to log messages the console.
 
 In the example below, log messages are printed on the console:
 
@@ -50,11 +51,12 @@ cancellable = integers.publisher
 
 ## See Also
 
-- [func breakpoint(receiveSubscription: ((any Subscription) -> Bool)?, receiveOutput: ((Self.Output) -> Bool)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Bool)?) -> Publishers.Breakpoint<Self>](publisher/breakpoint(receivesubscription:receiveoutput:receivecompletion:).md)
+### Debugging
+- [func breakpoint(receiveSubscription: ((any Subscription) -> Bool)?, receiveOutput: ((Self.Output) -> Bool)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Bool)?) -> Publishers.Breakpoint<Self>](./breakpoint%28receivesubscription,receiveoutput,receivecompletion%29.md)
   Raises a debugger signal when a provided closure needs to stop the process in the debugger.
-- [func breakpointOnError() -> Publishers.Breakpoint<Self>](publisher/breakpointonerror.md)
+- [func breakpointOnError() -> Publishers.Breakpoint<Self>](./breakpointonerror%28%29.md)
   Raises a debugger signal upon receiving a failure.
-- [func handleEvents(receiveSubscription: ((any Subscription) -> Void)?, receiveOutput: ((Self.Output) -> Void)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Void)?, receiveCancel: (() -> Void)?, receiveRequest: ((Subscribers.Demand) -> Void)?) -> Publishers.HandleEvents<Self>](publisher/handleevents(receivesubscription:receiveoutput:receivecompletion:receivecancel:receiverequest:).md)
+- [func handleEvents(receiveSubscription: ((any Subscription) -> Void)?, receiveOutput: ((Self.Output) -> Void)?, receiveCompletion: ((Subscribers.Completion<Self.Failure>) -> Void)?, receiveCancel: (() -> Void)?, receiveRequest: ((Subscribers.Demand) -> Void)?) -> Publishers.HandleEvents<Self>](./handleevents%28receivesubscription,receiveoutput,receivecompletion,receivecancel,receiverequest%29.md)
   Performs the specified closures when publisher events occur.
 
 

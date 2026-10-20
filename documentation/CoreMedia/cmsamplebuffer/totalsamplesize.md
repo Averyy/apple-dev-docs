@@ -1,7 +1,8 @@
 # totalSampleSize
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total size in bytes of sample data in the buffer.
 
@@ -26,11 +27,12 @@ If a sample buffer doesn’t contain same sizes, the value of this property is `
 
 ## See Also
 
-- [var numSamples: Int](cmsamplebuffer/numsamples.md)
+### Inspecting Size Information
+- [var numSamples: Int](./numsamples.md)
   The number of media samples the buffer contains.
-- [func sampleSizes() throws -> [Int]](cmsamplebuffer/samplesizes.md)
+- [func sampleSizes() throws -> [Int]](./samplesizes%28%29.md)
   Retrieves an array of sample sizes that represents each sample in a sample buffer.
-- [func sampleSize(at: Int) -> Int](cmsamplebuffer/samplesize(at:).md)
+- [func sampleSize(at: Int) -> Int](./samplesize%28at%29.md)
   Returns the size of a sample in bytes.
 
 

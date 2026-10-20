@@ -1,7 +1,8 @@
 # OSLogMessageComponent.Argument.undefined
 
 **Framework**: OSLog  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A undefined object returned by the OSLog API that corresponds to the argument.
 
@@ -22,15 +23,16 @@ case undefined
 
 ## See Also
 
-- [OSLogMessageComponent.Argument.data(_:)](oslogmessagecomponent/argument-swift.enum/data(_:).md)
-  A data object returned by the [`OSLog`](OSLog.md) API that corresponds to the argument.
-- [OSLogMessageComponent.Argument.double(_:)](oslogmessagecomponent/argument-swift.enum/double(_:).md)
-  A double returned by the [`OSLog`](OSLog.md) API that corresponds to the argument.
-- [OSLogMessageComponent.Argument.signed(_:)](oslogmessagecomponent/argument-swift.enum/signed(_:).md)
-  A signed 64-bit integer returned by the [`OSLog`](OSLog.md) API that corresponds to the argument.
-- [OSLogMessageComponent.Argument.string(_:)](oslogmessagecomponent/argument-swift.enum/string(_:).md)
-  A string returned by the [`OSLog`](OSLog.md) API that corresponds to the argument.
-- [OSLogMessageComponent.Argument.unsigned(_:)](oslogmessagecomponent/argument-swift.enum/unsigned(_:).md)
+### Constants
+- [OSLogMessageComponent.Argument.data(_:)](./data%28_%29.md)
+  A data object returned by the [OSLog](../../OSLog.md) API that corresponds to the argument.
+- [OSLogMessageComponent.Argument.double(_:)](./double%28_%29.md)
+  A double returned by the [OSLog](../../OSLog.md) API that corresponds to the argument.
+- [OSLogMessageComponent.Argument.signed(_:)](./signed%28_%29.md)
+  A signed 64-bit integer returned by the [OSLog](../../OSLog.md) API that corresponds to the argument.
+- [OSLogMessageComponent.Argument.string(_:)](./string%28_%29.md)
+  A string returned by the [OSLog](../../OSLog.md) API that corresponds to the argument.
+- [OSLogMessageComponent.Argument.unsigned(_:)](./unsigned%28_%29.md)
   An unsigned 64-bit integer returned by the OSLog API that corresponds to the argument.
 
 

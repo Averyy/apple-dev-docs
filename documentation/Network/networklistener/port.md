@@ -1,7 +1,8 @@
 # port
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The port that the listener is listening on.
 

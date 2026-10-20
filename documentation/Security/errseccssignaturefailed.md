@@ -1,7 +1,8 @@
 # errSecCSSignatureFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code or signature modified.
 
@@ -13,6 +14,10 @@ Code or signature modified.
 
 ```swift
 var errSecCSSignatureFailed: OSStatus { get }
+```
+
+```c
+errSecCSSignatureFailed
 ```
 
 

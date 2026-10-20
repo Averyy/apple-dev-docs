@@ -1,7 +1,8 @@
 # CFTimeZoneNameStyle.shortGeneric
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies the short generic name style, which does not distinguish between daylight saving and standard time; for example, “CT” for the Central time zone.
 
@@ -20,17 +21,22 @@ Specifies the short generic name style, which does not distinguish between dayli
 case shortGeneric
 ```
 
+```c
+kCFTimeZoneNameStyleShortGeneric
+```
+
 ## See Also
 
-- [CFTimeZoneNameStyle.daylightSaving](cftimezonenamestyle/daylightsaving.md)
+### Enumeration Cases
+- [CFTimeZoneNameStyle.daylightSaving](./daylightsaving.md)
   Specifies the daylight saving name style; for example, “Central Daylight Time” for the Central time zone.
-- [CFTimeZoneNameStyle.generic](cftimezonenamestyle/generic.md)
+- [CFTimeZoneNameStyle.generic](./generic.md)
   Specifies the generic name style, which does not distinguish between daylight saving and standard time; for example, “Central Time” for the Central time zone.
-- [CFTimeZoneNameStyle.shortDaylightSaving](cftimezonenamestyle/shortdaylightsaving.md)
+- [CFTimeZoneNameStyle.shortDaylightSaving](./shortdaylightsaving.md)
   Specifies the short daylight saving name style; for example, “CDT” for the Central time zone.
-- [CFTimeZoneNameStyle.shortStandard](cftimezonenamestyle/shortstandard.md)
+- [CFTimeZoneNameStyle.shortStandard](./shortstandard.md)
   Specifies the short standard name style; for example, “CST” for the Central time zone.
-- [CFTimeZoneNameStyle.standard](cftimezonenamestyle/standard.md)
+- [CFTimeZoneNameStyle.standard](./standard.md)
   Specifies the standard name style; for example, “Central Standard Time” for the Central time zone.
 
 

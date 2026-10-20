@@ -1,7 +1,8 @@
 # HKCorrelationQuery
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A query that performs complex searches based on the correlation’s contents, and returns a snapshot of all matching samples.
 
@@ -19,13 +20,17 @@ A query that performs complex searches based on the correlation’s contents, an
 class HKCorrelationQuery
 ```
 
+```objc
+@interface HKCorrelationQuery : HKQuery
+```
+
 ## Mentions
 
-- [Reading data from HealthKit](reading-data-from-healthkit.md)
+- [Reading data from HealthKit](./reading-data-from-healthkit.md)
 
 #### Overview
 
-Correlation samples act as a container, grouping multiple quantity or category samples. While you can use [`HKSample`](hksample.md) objects to search for correlations, correlation queries allow more complex filtering based on the contained samples. Specifically, correlation queries let you provide a separate predicate for each of the sample types stored in the correlation. A correlation is  returned only if the correlation’s predicate and all of the sample predicates match.
+Correlation samples act as a container, grouping multiple quantity or category samples. While you can use [`HKSample`](./hksample.md) objects to search for correlations, correlation queries allow more complex filtering based on the contained samples. Specifically, correlation queries let you provide a separate predicate for each of the sample types stored in the correlation. A correlation is  returned only if the correlation’s predicate and all of the sample predicates match.
 
 ##### Requesting Permission to Share and Read
 
@@ -37,7 +42,7 @@ When your app queries for correlation data, HealthKit only returns samples that 
 
 ##### Executing Queries
 
-You create a correlation query by calling the [`init(type:predicate:samplePredicates:completion:)`](hkcorrelationquery/init(type:predicate:samplepredicates:completion:).md) initializer. After the query is instantiated, you run it by calling the HealthKit store’s [`execute(_:)`](hkhealthstore/execute(_:).md) method. This method runs the query on an anonymous background queue. When the query is complete, it executes the results handler on the same background queue (though not necessarily the same thread). Typically, you dispatch these results back to the main thread to update your user interface.
+You create a correlation query by calling the [`init(type:predicate:samplePredicates:completion:)`](./hkcorrelationquery/init%28type,predicate,samplepredicates,completion%29.md) initializer. After the query is instantiated, you run it by calling the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method. This method runs the query on an anonymous background queue. When the query is complete, it executes the results handler on the same background queue (though not necessarily the same thread). Typically, you dispatch these results back to the main thread to update your user interface.
 
 The following example builds a correlation query that searches for food samples with more than 800 calories.
 
@@ -130,42 +135,43 @@ Once the sample code finishes declaring the completion handler, the query is rea
 
 ##### Subclassing Correlation Queries
 
-As with many HealthKit classes, don’t subclass the [`HKCorrelationQuery`](hkcorrelationquery.md) class.
+As with many HealthKit classes, don’t subclass the [`HKCorrelationQuery`](./hkcorrelationquery.md) class.
 
 ## Topics
 
 ### Creating Correlation Queries
-- [init(type: HKCorrelationType, predicate: NSPredicate?, samplePredicates: [HKSampleType : NSPredicate]?, completion: (HKCorrelationQuery, [HKCorrelation]?, (any Error)?) -> Void)](hkcorrelationquery/init(type:predicate:samplepredicates:completion:).md)
+- [init(type: HKCorrelationType, predicate: NSPredicate?, samplePredicates: [HKSampleType : NSPredicate]?, completion: (HKCorrelationQuery, [HKCorrelation]?, (any Error)?) -> Void)](./hkcorrelationquery/init%28type,predicate,samplepredicates,completion%29.md)
   Instantiates and returns a correlation query.
 ### Getting Property Data
-- [var correlationType: HKCorrelationType](hkcorrelationquery/correlationtype.md)
+- [var correlationType: HKCorrelationType](./hkcorrelationquery/correlationtype.md)
   The type of correlation to search for.
-- [var samplePredicates: [HKSampleType : NSPredicate]?](hkcorrelationquery/samplepredicates.md)
-  A dictionary whose keys are [`HKSampleType`](hksampletype.md) instances and whose values are [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate) instances.
+- [var samplePredicates: [HKSampleType : NSPredicate]?](./hkcorrelationquery/samplepredicates.md)
+  A dictionary whose keys are [`HKSampleType`](./hksampletype.md) instances and whose values are [`NSPredicate`](../Foundation/nspredicate.md) instances.
 
 ## Relationships
 
 ### Inherits From
-- [HKQuery](hkquery.md)
+- [HKQuery](./hkquery.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKSampleQueryDescriptor](hksamplequerydescriptor.md)
+### Basic queries
+- [struct HKSampleQueryDescriptor](./hksamplequerydescriptor.md)
   A query interface that reads samples using Swift concurrency.
-- [class HKSampleQuery](hksamplequery.md)
+- [class HKSampleQuery](./hksamplequery.md)
   A general query that returns a snapshot of all the matching samples currently saved in the HealthKit store.
-- [class HKQueryDescriptor](hkquerydescriptor.md)
+- [class HKQueryDescriptor](./hkquerydescriptor.md)
   A descriptor that specifies a set of samples based on the data type and a predicate.
-- [class HKQuery](hkquery.md)
+- [class HKQuery](./hkquery.md)
   An abstract class for all the query classes in HealthKit.
 
 

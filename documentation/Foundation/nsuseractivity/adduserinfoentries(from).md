@@ -1,7 +1,8 @@
 # addUserInfoEntries(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the contents of the specified dictionary to the user info dictionary.
 
@@ -20,15 +21,19 @@ Adds the contents of the specified dictionary to the user info dictionary.
 func addUserInfoEntries(from otherDictionary: [AnyHashable : Any])
 ```
 
+```objc
+- (void) addUserInfoEntriesFromDictionary:(NSDictionary *) otherDictionary;
+```
+
 ## Mentions
 
-- [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
+- [Implementing Handoff in Your App](../implementing-handoff-in-your-app.md)
 
 #### Discussion
 
-Use this method to add the keys from `otherDictionary` into the dictionary in the [`userInfo`](nsuseractivity/userinfo.md) property. If the same key is in both dictionaries, the value of the key is set to the value in the `otherDictionary` parameter.
+Use this method to add the keys from `otherDictionary` into the dictionary in the [`userInfo`](./userinfo.md) property. If the same key is in both dictionaries, the value of the key is set to the value in the `otherDictionary` parameter.
 
-It’s recommended that you keep the [`userInfo`](nsuseractivity/userinfo.md) dictionary as small as possible. The larger the dictionary, the longer it takes to deliver that payload and resume the activity.
+It’s recommended that you keep the [`userInfo`](./userinfo.md) dictionary as small as possible. The larger the dictionary, the longer it takes to deliver that payload and resume the activity.
 
 ## Parameters
 
@@ -36,9 +41,10 @@ It’s recommended that you keep the [`userInfo`](nsuseractivity/userinfo.md) di
 
 ## See Also
 
-- [var userInfo: [AnyHashable : Any]?](nsuseractivity/userinfo.md)
+### Specifying activity-related data
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   A dictionary containing app-specific state information needed to continue an activity on another device.
-- [var requiredUserInfoKeys: Set<String>?](nsuseractivity/requireduserinfokeys.md)
+- [var requiredUserInfoKeys: Set<String>?](./requireduserinfokeys.md)
   A set of keys that represent the minimal information about the activity that should be stored for later restoration.
 
 

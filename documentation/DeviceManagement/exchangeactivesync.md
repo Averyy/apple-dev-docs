@@ -1,7 +1,8 @@
 # ExchangeActiveSync
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures Exchange ActiveSync accounts.
 
@@ -13,7 +14,7 @@ The payload that configures Exchange ActiveSync accounts.
 
 ## Declaration
 
-```swift
+```
 object ExchangeActiveSync
 ```
 
@@ -21,7 +22,7 @@ object ExchangeActiveSync
 
 Specify `com.apple.eas.account` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +34,7 @@ Specify `com.apple.eas.account` as the payload type.
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | iOS, Shared iPad, visionOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -112,64 +113,205 @@ Specify `com.apple.eas.account` as the payload type.
 ## Topics
 
 ### Objects
-- [object ExchangeActiveSync.CommunicationServiceRules](exchangeactivesync/communicationservicerules-data.dictionary.md)
+- [object ExchangeActiveSync.CommunicationServiceRules](./exchangeactivesync/communicationservicerules-data.dictionary.md)
   The communication service rules.
 
 ## Properties
 
-- `allowMailDrop` (boolean): If `true`, the system enables this account to use Mail Drop. Available: iOS 9.2+ | iPadOS 9.2+ | visionOS 1.1+
-- `Certificate` (data): The `.p12` identity certificate in NSData blob format, for accounts that allow authentication via certificate. Available: iOS 7+ | iPadOS 7+ | visionOS 1.1+
-- `CertificateName` (string): The name or description of the certificate. Available: iOS 7+ | iPadOS 7+ | visionOS 1.1+
+- `allowMailDrop` (boolean): If `true`, the system enables this account to use Mail Drop.
+
+  Available: iOS 9.2+ | iPadOS 9.2+ | visionOS 1.1+
+
+  **Default**: `false`
+- `Certificate` (data): The `.p12` identity certificate in NSData blob format, for accounts that allow authentication via certificate.
+
+  Available: iOS 7+ | iPadOS 7+ | visionOS 1.1+
+- `CertificateName` (string): The name or description of the certificate.
+
+  Available: iOS 7+ | iPadOS 7+ | visionOS 1.1+
 - `CertificatePassword` (string): The password necessary for the `.p12` identity certificate. Used with mandatory encryption of profiles.
-- `CommunicationServiceRules` (ExchangeActiveSync.CommunicationServiceRules): The communication service handler rules for this account. Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
+- `CommunicationServiceRules` (ExchangeActiveSync.CommunicationServiceRules): The communication service handler rules for this account.
+
+  Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
 - `disableMailRecentsSyncing` (boolean): If `true`, the system excludes this account from Recent Addresses syncing.
+
+  **Default**: `false`
 - `EmailAddress` (string): The full email address for the account. If not present in the payload, the device prompts for this string during profile installation.
-- `EnableCalendars` (boolean): If `false`, the system disables the Calendars service for this account. The user can reenable Calendars service in Settings unless `EnableCalendarsUserOverridable` is `false`. > **Note**:  At least of the following fields needs to be `true`: `EnableMail`, `EnableContacts`, `EnableCalendars`, `EnableReminders`, and `EnableNotes`. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `EnableCalendarsUserOverridable` (boolean): If `false`, the system prevents the user from changing the state of the Calendars service for this account in Settings. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `EnableContacts` (boolean): If `false`, the system disables the Contacts service for this account. The user can reenable Contacts service in Settings unless `EnableContactsUserOverridable` is `false`. > **Note**:  At least of the following fields needs to be `true`: `EnableMail`, `EnableContacts`, `EnableCalendars`, `EnableReminders`, and `EnableNotes`. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `EnableContactsUserOverridable` (boolean): If `false`, the system prevents the user from changing the state of the Contacts service for this account in Settings. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `EnableMail` (boolean): If `false`, the system disables the Mail service for this account. The user can reenable Mail service in Settings unless `EnableMailUserOverridable` is `false`. > **Note**:  At least of the following fields needs to be `true`: `EnableMail`, `EnableContacts`, `EnableCalendars`, `EnableReminders`, and `EnableNotes`. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `EnableMailUserOverridable` (boolean): If `false`, the system prevents the user from changing the state of the Mail service for this account in Settings. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `EnableNotes` (boolean): If `false`, the system disables the Notes service for this account. The user can reenable Notes service in Settings unless `EnableNotesUserOverridable` is `false`. > **Note**:  At least of the following fields needs to be `true`: `EnableMail`, `EnableContacts`, `EnableCalendars`, `EnableReminders`, and `EnableNotes`. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `EnableNotesUserOverridable` (boolean): If `false`, prevents the user from changing the state of the Notes service for this account in Settings. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `EnableReminders` (boolean): If `false`, the system disables the Reminders service for this account. The user can reenable Reminders service in Settings unless `EnableRemindersUserOverridable` is `false`. > **Note**:  At least of the following fields needs to be `true`: `EnableMail`, `EnableContacts`, `EnableCalendars`, `EnableReminders`, and `EnableNotes`. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `EnableRemindersUserOverridable` (boolean): If `false`, the system prevents the user from changing the state of the Reminders service for this account in Settings. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `HeaderMagic` (string): The value of the `X-Apple-Config-Magic` header in each EAS HTTP request. Available: iOS 4+ | iPadOS 4+
-Deprecated: iOS 7+ | iPadOS 7+
+- `EnableCalendars` (boolean): If `false`, the system disables the Calendars service for this account. The user can reenable Calendars service in Settings unless `EnableCalendarsUserOverridable` is `false`.
+
+  > **Note**:  At least of the following fields needs to be `true`: `EnableMail`, `EnableContacts`, `EnableCalendars`, `EnableReminders`, and `EnableNotes`.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+
+  **Default**: `true`
+- `EnableCalendarsUserOverridable` (boolean): If `false`, the system prevents the user from changing the state of the Calendars service for this account in Settings.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+
+  **Default**: `true`
+- `EnableContacts` (boolean): If `false`, the system disables the Contacts service for this account. The user can reenable Contacts service in Settings unless `EnableContactsUserOverridable` is `false`.
+
+  > **Note**:  At least of the following fields needs to be `true`: `EnableMail`, `EnableContacts`, `EnableCalendars`, `EnableReminders`, and `EnableNotes`.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+
+  **Default**: `true`
+- `EnableContactsUserOverridable` (boolean): If `false`, the system prevents the user from changing the state of the Contacts service for this account in Settings.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+
+  **Default**: `true`
+- `EnableMail` (boolean): If `false`, the system disables the Mail service for this account. The user can reenable Mail service in Settings unless `EnableMailUserOverridable` is `false`.
+
+  > **Note**:  At least of the following fields needs to be `true`: `EnableMail`, `EnableContacts`, `EnableCalendars`, `EnableReminders`, and `EnableNotes`.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+
+  **Default**: `true`
+- `EnableMailUserOverridable` (boolean): If `false`, the system prevents the user from changing the state of the Mail service for this account in Settings.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+
+  **Default**: `true`
+- `EnableNotes` (boolean): If `false`, the system disables the Notes service for this account. The user can reenable Notes service in Settings unless `EnableNotesUserOverridable` is `false`.
+
+  > **Note**:  At least of the following fields needs to be `true`: `EnableMail`, `EnableContacts`, `EnableCalendars`, `EnableReminders`, and `EnableNotes`.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+
+  **Default**: `true`
+- `EnableNotesUserOverridable` (boolean): If `false`, prevents the user from changing the state of the Notes service for this account in Settings.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+
+  **Default**: `true`
+- `EnableReminders` (boolean): If `false`, the system disables the Reminders service for this account. The user can reenable Reminders service in Settings unless `EnableRemindersUserOverridable` is `false`.
+
+  > **Note**:  At least of the following fields needs to be `true`: `EnableMail`, `EnableContacts`, `EnableCalendars`, `EnableReminders`, and `EnableNotes`.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+
+  **Default**: `true`
+- `EnableRemindersUserOverridable` (boolean): If `false`, the system prevents the user from changing the state of the Reminders service for this account in Settings.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+
+  **Default**: `true`
+- `HeaderMagic` (string) *(deprecated)*: The value of the `X-Apple-Config-Magic` header in each EAS HTTP request.
+
+  Available: iOS 4+ | iPadOS 4+
+  Deprecated: iOS 7+ | iPadOS 7+
 - `Host` (string): The Exchange server host name or IP address.
-- `MailNumberOfPastDaysToSync` (integer): The number of days in the past to sync mail on the device. For no limit, use the value `0`.
-- `OAuth` (boolean): If `true`, enables OAuth for authentication. If enabled, don’t specify a password. Available only in iOS 12.0 and above. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
-- `OAuthSignInURL` (string): The URL that this account should use for signing in through OAuth. Ignored unless `OAuth` is `true`. If you specify this URL, auto-discovery isn’t used for this account, so you need to also specify a host. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `OAuthTokenRequestURL` (string): The URL that this account should use for token requests through OAuth. Ignored unless `OAuth` is `true`. Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
-- `OverridePreviousPassword` (boolean): If `true`, the system overrides the previous user/EAS password with the new EAS password in the payload. Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
+- `MailNumberOfPastDaysToSync` (integer): The number of days in the past to sync mail on the device.
+
+  For no limit, use the value `0`.
+
+  **Default**: `7`; **Allowed Values**: `0`, `1`, `3`, `7`, `14`, `31`
+- `OAuth` (boolean): If `true`, enables OAuth for authentication. If enabled, don’t specify a password.
+
+  Available only in iOS 12.0 and above.
+
+  Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+
+  **Default**: `false`
+- `OAuthSignInURL` (string): The URL that this account should use for signing in through OAuth. Ignored unless `OAuth` is `true`. If you specify this URL, auto-discovery isn’t used for this account, so you need to also specify a host.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+- `OAuthTokenRequestURL` (string): The URL that this account should use for token requests through OAuth. Ignored unless `OAuth` is `true`.
+
+  Available: iOS 13+ | iPadOS 13+ | visionOS 1.1+
+- `OverridePreviousPassword` (boolean): If `true`, the system overrides the previous user/EAS password with the new EAS password in the payload.
+
+  Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
+
+  **Default**: `false`
 - `Password` (string): The password of the account. Use only with encrypted profiles.
 - `PayloadCertificateUUID` (string): The UUID of the certificate payload within the same profile to use for the identity credential. If this field is present, the Certificate field isn’t used.
-- `PreventAppSheet` (boolean): If `true`, prevents this account from sending mail in any app other than the Apple Mail app. Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
-- `PreventMove` (boolean): If `true`, the system prevents moving messages from out of this email account into another account. This setting also prevents forwarding or replying from an account other than the recipient of the message. Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
-- `SMIMEEnabled` (boolean): If `true`, the system enables S/MIME encryption. In iOS 10.0 and later, this key is ignored. Use `SMIMESigningEnabled` instead. Available: iOS 5+ | iPadOS 5+
-Deprecated: iOS 10+ | iPadOS 10+
-- `SMIMEEnableEncryptionPerMessageSwitch` (boolean): If `true`, the system displays the per-message encryption switch in the Mail Compose UI. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
-- `SMIMEEnablePerMessageSwitch` (boolean): If `true`, the system displays the per-message encryption switch in the Mail Compose UI. This key is deprecated. Use `SMIMEEnableEncryptionPerMessageSwitch` instead. Available: iOS 8+ | iPadOS 8+
-Deprecated: iOS 12+ | iPadOS 12+
-- `SMIMEEncryptByDefault` (boolean): If `true`, the system enables S/MIME encryption by default. If `SMIMEEnableEncryptionPerMessageSwitch` is `false`, the user can’t change this default. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
-- `SMIMEEncryptByDefaultUserOverrideable` (boolean): If `true`, the system enables encryption by default and the user can’t change it. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
-- `SMIMEEncryptionCertificateUUID` (string): The payload UUID of the identity certificate used to decrypt messages sent to this account. The system attaches the public certificate to outgoing mail to allow the user to receive encrypted mail. When the user sends encrypted mail, the system uses the public certificate to encrypt the copy of the mail in the user’s Sent mailbox. Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
-- `SMIMEEncryptionCertificateUUIDUserOverrideable` (boolean): If `true`, the user can select the S/MIME encryption identity, and encryption is on. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
-- `SMIMEEncryptionEnabled` (boolean): If `true`, the system enables S/MIME encryption for this account. This key is deprecated. Use `SMIMEEncryptByDefault` instead. Available: iOS 10.3+ | iPadOS 10.3+
-Deprecated: iOS 12+ | iPadOS 12+
-- `SMIMESigningCertificateUUID` (string): The UUID of the identity certificate used to sign messages sent from this account. Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
-- `SMIMESigningCertificateUUIDUserOverrideable` (boolean): If `true`, the user can select the signing identity. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
-- `SMIMESigningEnabled` (boolean): If `true`, the system enables S/MIME signing for this account. Available: iOS 10.3+ | iPadOS 10.3+ | visionOS 1.1+
-- `SMIMESigningUserOverrideable` (boolean): If `true`, the user can turn S/MIME signing on or off in Settings. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+- `PreventAppSheet` (boolean): If `true`, prevents this account from sending mail in any app other than the Apple Mail app.
+
+  Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
+
+  **Default**: `false`
+- `PreventMove` (boolean): If `true`, the system prevents moving messages from out of this email account into another account. This setting also prevents forwarding or replying from an account other than the recipient of the message.
+
+  Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
+
+  **Default**: `false`
+- `SMIMEEnabled` (boolean) *(deprecated)*: If `true`, the system enables S/MIME encryption. In iOS 10.0 and later, this key is ignored. Use `SMIMESigningEnabled` instead.
+
+  Available: iOS 5+ | iPadOS 5+
+  Deprecated: iOS 10+ | iPadOS 10+
+
+  **Default**: `false`
+- `SMIMEEnableEncryptionPerMessageSwitch` (boolean): If `true`, the system displays the per-message encryption switch in the Mail Compose UI.
+
+  Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+
+  **Default**: `false`
+- `SMIMEEnablePerMessageSwitch` (boolean) *(deprecated)*: If `true`, the system displays the per-message encryption switch in the Mail Compose UI.
+
+  This key is deprecated. Use `SMIMEEnableEncryptionPerMessageSwitch` instead.
+
+  Available: iOS 8+ | iPadOS 8+
+  Deprecated: iOS 12+ | iPadOS 12+
+
+  **Default**: `false`
+- `SMIMEEncryptByDefault` (boolean): If `true`, the system enables S/MIME encryption by default. If `SMIMEEnableEncryptionPerMessageSwitch` is `false`, the user can’t change this default.
+
+  Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+
+  **Default**: `false`
+- `SMIMEEncryptByDefaultUserOverrideable` (boolean): If `true`, the system enables encryption by default and the user can’t change it.
+
+  Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+
+  **Default**: `false`
+- `SMIMEEncryptionCertificateUUID` (string): The payload UUID of the identity certificate used to decrypt messages sent to this account. The system attaches the public certificate to outgoing mail to allow the user to receive encrypted mail. When the user sends encrypted mail, the system uses the public certificate to encrypt the copy of the mail in the user’s Sent mailbox.
+
+  Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
+- `SMIMEEncryptionCertificateUUIDUserOverrideable` (boolean): If `true`, the user can select the S/MIME encryption identity, and encryption is on.
+
+  Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+
+  **Default**: `false`
+- `SMIMEEncryptionEnabled` (boolean) *(deprecated)*: If `true`, the system enables S/MIME encryption for this account. This key is deprecated. Use `SMIMEEncryptByDefault` instead.
+
+  Available: iOS 10.3+ | iPadOS 10.3+
+  Deprecated: iOS 12+ | iPadOS 12+
+
+  **Default**: `false`
+- `SMIMESigningCertificateUUID` (string): The UUID of the identity certificate used to sign messages sent from this account.
+
+  Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
+- `SMIMESigningCertificateUUIDUserOverrideable` (boolean): If `true`, the user can select the signing identity.
+
+  Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+
+  **Default**: `false`
+- `SMIMESigningEnabled` (boolean): If `true`, the system enables S/MIME signing for this account.
+
+  Available: iOS 10.3+ | iPadOS 10.3+ | visionOS 1.1+
+
+  **Default**: `false`
+- `SMIMESigningUserOverrideable` (boolean): If `true`, the user can turn S/MIME signing on or off in Settings.
+
+  Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+
+  **Default**: `false`
 - `SSL` (boolean): If `true`, the system enables SSL for authentication.
+
+  **Default**: `false`
 - `UserName` (string): This user name for this Exchange account. Required for noninteractive installations like MDM in iOS.
-- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication.
+
+  Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## See Also
 
-- [object ExchangeWebServices](exchangewebservices.md)
+### Mail
+- [object ExchangeWebServices](./exchangewebservices.md)
   The payload that configures an Exchange Web Services accounts.
-- [object Mail](mail.md)
+- [object Mail](./mail.md)
   The payload that configures a Mail account.
 
 

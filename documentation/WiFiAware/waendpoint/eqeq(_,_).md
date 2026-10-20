@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Two endpoints are logically equivalent if they have the same service type (publish vs subscribe) with the same name, and refer to the same device.
 
@@ -27,7 +28,8 @@ static func == (lhs: WAEndpoint, rhs: WAEndpoint) -> Bool
 
 ## See Also
 
-- [func hash(into: inout Hasher)](waendpoint/hash(into:).md)
+### Hashing and comparing
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Compute unique hash of this object.
 
 

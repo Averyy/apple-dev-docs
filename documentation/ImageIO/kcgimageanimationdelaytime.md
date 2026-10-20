@@ -1,7 +1,8 @@
 # kCGImageAnimationDelayTime
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of seconds to wait before displaying the next image in an animated sequence.
 
@@ -20,23 +21,28 @@ The number of seconds to wait before displaying the next image in an animated se
 let kCGImageAnimationDelayTime: CFString
 ```
 
+```c
+extern CFStringRef const kCGImageAnimationDelayTime;
+```
+
 #### Discussion
 
-The value of this property is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) with a floating-point value. To override the delay time value in the image file, include this property in the options dictionary when animating an image.
+The value of this property is a [`CFNumber`](../CoreFoundation/cfnumber.md) with a floating-point value. To override the delay time value in the image file, include this property in the options dictionary when animating an image.
 
 ## See Also
 
-- [func CGAnimateImageAtURLWithBlock(CFURL, CFDictionary?, CGImageSourceAnimationBlock) -> OSStatus](cganimateimageaturlwithblock(_:_:_:).md)
+### Animations
+- [func CGAnimateImageAtURLWithBlock(CFURL, CFDictionary?, CGImageSourceAnimationBlock) -> OSStatus](./cganimateimageaturlwithblock%28_,_,_%29.md)
   Animate the sequence of images in the Graphics Interchange Format (GIF) or Animated Portable Network Graphics (APNG) file at the specified URL.
-- [func CGAnimateImageDataWithBlock(CFData, CFDictionary?, CGImageSourceAnimationBlock) -> OSStatus](cganimateimagedatawithblock(_:_:_:).md)
+- [func CGAnimateImageDataWithBlock(CFData, CFDictionary?, CGImageSourceAnimationBlock) -> OSStatus](./cganimateimagedatawithblock%28_,_,_%29.md)
   Animate the sequence of images using data from a Graphics Interchange Format (GIF) or Animated Portable Network Graphics (APNG) file file.
-- [typealias CGImageSourceAnimationBlock](cgimagesourceanimationblock.md)
+- [typealias CGImageSourceAnimationBlock](./cgimagesourceanimationblock.md)
   The block to execute for each frame of an image animation.
-- [let kCGImageAnimationStartIndex: CFString](kcgimageanimationstartindex.md)
+- [let kCGImageAnimationStartIndex: CFString](./kcgimageanimationstartindex.md)
   A property that specifies the index of the first frame of an animation.
-- [let kCGImageAnimationLoopCount: CFString](kcgimageanimationloopcount.md)
+- [let kCGImageAnimationLoopCount: CFString](./kcgimageanimationloopcount.md)
   The number of times to repeat the animated sequence.
-- [enum CGImageAnimationStatus](cgimageanimationstatus.md)
+- [enum CGImageAnimationStatus](./cgimageanimationstatus.md)
   Constants that indicate the result of animating an image sequence.
 
 

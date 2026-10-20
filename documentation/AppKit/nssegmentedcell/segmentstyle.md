@@ -1,7 +1,8 @@
 # segmentStyle
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visual style used to display the segmented control.
 
@@ -14,15 +15,21 @@ The visual style used to display the segmented control.
 var segmentStyle: NSSegmentedControl.Style { get set }
 ```
 
+```objc
+@property NSSegmentStyle segmentStyle;
+```
+
 #### Discussion
 
 This property contains an `NSSegmentStyle` value that specifies the visual display used by the control.
 
 ## See Also
 
-- [NSSegmentedControl.Style](nssegmentedcontrol/style.md)
-  The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](nssegmentedcontrol/segmentstyle.md).
-- [func interiorBackgroundStyle(forSegment: Int) -> NSView.BackgroundStyle](nssegmentedcell/interiorbackgroundstyle(forsegment:).md)
+### Related Documentation
+- [NSSegmentedControl.Style](../nssegmentedcontrol/style.md)
+  The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](../nssegmentedcontrol/segmentstyle.md).
+### Specifying Segment Visual Styles
+- [func interiorBackgroundStyle(forSegment: Int) -> NSView.BackgroundStyle](./interiorbackgroundstyle%28forsegment%29.md)
   Returns the interior background style for the specified segment.
 
 

@@ -1,14 +1,15 @@
 # msgh_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 mach_msg_size_t msgh_size;
 ```
 

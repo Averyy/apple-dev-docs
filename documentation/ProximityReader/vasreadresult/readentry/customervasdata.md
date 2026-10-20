@@ -1,7 +1,8 @@
 # customerVASData
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encrypted content of the pass stored in Wallet, which contains the loyalty or reward pass identifier.
 
@@ -18,7 +19,7 @@ let customerVASData: Data?
 
 ## Mentions
 
-- [Accepting loyalty passes from Wallet](accepting-loyalty-passes-from-wallet.md)
+- [Accepting loyalty passes from Wallet](../../accepting-loyalty-passes-from-wallet.md)
 
 
 ---

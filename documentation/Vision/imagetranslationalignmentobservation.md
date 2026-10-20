@@ -1,7 +1,8 @@
 # ImageTranslationAlignmentObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Affine transform information that an image-alignment request produces.
 
@@ -22,33 +23,33 @@ struct ImageTranslationAlignmentObservation
 
 #### Overview
 
-This type of observation results from a [`TrackTranslationalImageRegistrationRequest`](tracktranslationalimageregistrationrequest.md), informing the [`alignmentTransform`](imagetranslationalignmentobservation/alignmenttransform.md) performed to align the input images.
+This type of observation results from a [`TrackTranslationalImageRegistrationRequest`](./tracktranslationalimageregistrationrequest.md), informing the [`alignmentTransform`](./imagetranslationalignmentobservation/alignmenttransform.md) performed to align the input images.
 
 ## Topics
 
 ### Creating an observation
-- [init(VNImageTranslationAlignmentObservation)](imagetranslationalignmentobservation/init(_:).md)
+- [init(VNImageTranslationAlignmentObservation)](./imagetranslationalignmentobservation/init%28_%29.md)
   Creates a translation alignment observation.
 ### Inspecting an observation
-- [let alignmentTransform: CGAffineTransform](imagetranslationalignmentobservation/alignmenttransform.md)
+- [let alignmentTransform: CGAffineTransform](./imagetranslationalignmentobservation/alignmenttransform.md)
   The alignment transform to align the floating image with the reference image.
 ### Applying a transform
-- [func applyTransform(to: CIImage) -> CIImage](imagetranslationalignmentobservation/applytransform(to:).md)
+- [func applyTransform(to: CIImage) -> CIImage](./imagetranslationalignmentobservation/applytransform%28to%29.md)
   Applies the transform to an image.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

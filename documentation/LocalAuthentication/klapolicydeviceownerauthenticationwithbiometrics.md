@@ -1,7 +1,8 @@
 # kLAPolicyDeviceOwnerAuthenticationWithBiometrics
 
 **Framework**: Local Authentication  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 User authentication with biometry.
 
@@ -19,15 +20,20 @@ User authentication with biometry.
 var kLAPolicyDeviceOwnerAuthenticationWithBiometrics: Int32 { get }
 ```
 
+```c
+#define kLAPolicyDeviceOwnerAuthenticationWithBiometrics
+```
+
 ## See Also
 
-- [var kLAPolicyDeviceOwnerAuthenticationWithWatch: Int32](klapolicydeviceownerauthenticationwithwatch.md)
+### Policy Constants
+- [var kLAPolicyDeviceOwnerAuthenticationWithWatch: Int32](./klapolicydeviceownerauthenticationwithwatch.md)
   User authentication with Apple Watch.
-- [var kLAPolicyDeviceOwnerAuthenticationWithBiometricsOrWatch: Int32](klapolicydeviceownerauthenticationwithbiometricsorwatch.md)
+- [var kLAPolicyDeviceOwnerAuthenticationWithBiometricsOrWatch: Int32](./klapolicydeviceownerauthenticationwithbiometricsorwatch.md)
   User authentication with either biometry or Apple Watch.
-- [var kLAPolicyDeviceOwnerAuthentication: Int32](klapolicydeviceownerauthentication.md)
+- [var kLAPolicyDeviceOwnerAuthentication: Int32](./klapolicydeviceownerauthentication.md)
   User authentication with either biometry or the device passcode.
-- [var kLAPolicyDeviceOwnerAuthenticationWithWristDetection: Int32](klapolicydeviceownerauthenticationwithwristdetection.md)
+- [var kLAPolicyDeviceOwnerAuthenticationWithWristDetection: Int32](./klapolicydeviceownerauthenticationwithwristdetection.md)
   User authentication with wrist detection on watchOS.
 
 

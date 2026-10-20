@@ -1,6 +1,7 @@
 # Expected Failures
 
-**Framework**: XCTest
+**Framework**: XCTest  
+**Role**: API Collection
 
 Anticipate known test failures to prevent failing tests from affecting your workflows.
 
@@ -20,7 +21,7 @@ func testExpectedFailure() throws {
 
 If any assertions fail in a test after you call `XCTExpectFailure`, Xcode marks the test as an expected failure instead of a test failure.
 
-![An image showing two unit tests. The first test demonstrates how Xcode highlights an assertion that failed as an expected failure. The second test shows how Xcode highlights a test as failed when a failure was expected but did not occur.](/images/com.apple.xctest/media-3734335@2x.png)
+![An image showing two unit tests. The first test demonstrates how Xcode highlights an assertion that failed as an expected failure. The second test shows how Xcode highlights a test as failed when a failure was expected but did not occur.](https://developer.apple.com/tutorials/images/com.apple.xctest/media-3734335@2x.png)
 
 If no assertion failures occur, Xcode marks the test as failing because the expected failure doesn’t occur. Remove the expected failure to have Xcode mark the test as passing in future tests, or use the expected failure options below to refine your expected failure.
 
@@ -99,36 +100,37 @@ The test system records a test failure for each `XCTExpectFailure` call that did
 ## Topics
 
 ### Expected Failures
-- [class XCTExpectedFailure](xctexpectedfailure.md)
+- [class XCTExpectedFailure](./xctexpectedfailure.md)
   An object that represents an expected test failure.
-- [XCTExpectedFailure.Options](xctexpectedfailure/options.md)
+- [XCTExpectedFailure.Options](./xctexpectedfailure/options.md)
   Options that determine how the test matches the expected failure to an actual test failure, and whether an unfulfilled expected failure results in a test failure.
-- [func XCTExpectFailure(String?, options: XCTExpectedFailure.Options)](xctexpectfailure(_:options:).md)
+- [func XCTExpectFailure(String?, options: XCTExpectedFailure.Options)](./xctexpectfailure%28_,options%29.md)
   Instructs the test to expect a failure in an upcoming assertion, with options to customize expected failure checking and handling.
-- [func XCTExpectFailure(String?, enabled: Bool?, strict: Bool?, issueMatcher: ((XCTIssue) -> Bool)?)](xctexpectfailure(_:enabled:strict:issuematcher:).md)
+- [func XCTExpectFailure(String?, enabled: Bool?, strict: Bool?, issueMatcher: ((XCTIssue) -> Bool)?)](./xctexpectfailure%28_,enabled,strict,issuematcher%29.md)
   Instructs the test to expect a failure in an upcoming assertion, with parameters to customize expected failure checking and handling.
-- [func XCTExpectFailure<R>(String?, options: XCTExpectedFailure.Options, failingBlock: () throws -> R) rethrows -> R](xctexpectfailure(_:options:failingblock:).md)
+- [func XCTExpectFailure<R>(String?, options: XCTExpectedFailure.Options, failingBlock: () throws -> R) rethrows -> R](./xctexpectfailure%28_,options,failingblock%29.md)
   Instructs the test to expect a failure in an assertion in the provided block of code, with options to customize expected failure checking and handling.
-- [func XCTExpectFailure<R>(String?, enabled: Bool?, strict: Bool?, failingBlock: () throws -> R, issueMatcher: ((XCTIssue) -> Bool)?) rethrows -> R](xctexpectfailure(_:enabled:strict:failingblock:issuematcher:).md)
+- [func XCTExpectFailure<R>(String?, enabled: Bool?, strict: Bool?, failingBlock: () throws -> R, issueMatcher: ((XCTIssue) -> Bool)?) rethrows -> R](./xctexpectfailure%28_,enabled,strict,failingblock,issuematcher%29.md)
   Instructs the test to expect a failure in an assertion in the provided block of code, with parameters to customize expected failure checking and handling.
 
 ## See Also
 
-- [Boolean Assertions](boolean-assertions.md)
+### Test assertions
+- [Boolean Assertions](./boolean-assertions.md)
   Test a condition that generates a true or false result.
-- [Nil and Non-Nil Assertions](nil-and-non-nil-assertions.md)
+- [Nil and Non-Nil Assertions](./nil-and-non-nil-assertions.md)
   Check whether a test condition has, or doesn’t have, a value.
-- [Equality and Inequality Assertions](equality-and-inequality-assertions.md)
+- [Equality and Inequality Assertions](./equality-and-inequality-assertions.md)
   Check whether two values are equal or unequal.
-- [Comparable Value Assertions](comparable-value-assertions.md)
+- [Comparable Value Assertions](./comparable-value-assertions.md)
   Compare two values to determine whether one is larger or smaller than the other.
-- [Error Assertions](error-assertions.md)
+- [Error Assertions](./error-assertions.md)
   Check whether a function call throws, or doesn’t throw, an error.
-- [NSException Assertions](nsexception-assertions.md)
+- [NSException Assertions](./nsexception-assertions.md)
   Check whether a function call throws, or doesn’t throw, an exception.
-- [Unconditional Test Failures](unconditional-test-failures.md)
+- [Unconditional Test Failures](./unconditional-test-failures.md)
   Generate a failure immediately and unconditionally.
-- [Methods for Skipping Tests](methods-for-skipping-tests.md)
+- [Methods for Skipping Tests](./methods-for-skipping-tests.md)
   Skip tests when meeting specified conditions.
 
 

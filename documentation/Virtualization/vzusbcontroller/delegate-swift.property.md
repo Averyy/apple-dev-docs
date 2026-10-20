@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 weak var delegate: (any VZUSBController.Delegate)? { get set }
+```
+
+```objc
+@property (weak, nullable) id<VZUSBControllerDelegate> delegate;
 ```
 
 #### Discussion

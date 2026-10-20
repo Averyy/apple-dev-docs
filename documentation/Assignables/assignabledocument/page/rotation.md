@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation of the page in this document.
 
@@ -9,7 +10,7 @@ The rotation of the page in this document.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

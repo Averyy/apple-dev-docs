@@ -1,14 +1,15 @@
 # tEndpointSynchronizationType
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum tEndpointSynchronizationType : unsigned int {
     ...
 } tEndpointSynchronizationType;
@@ -17,10 +18,10 @@ typedef enum tEndpointSynchronizationType : unsigned int {
 ## Topics
 
 ### Constants
-- [kEndpointSynchronizationTypeAdaptive](tendpointsynchronizationtype/kendpointsynchronizationtypeadaptive.md)
-- [kEndpointSynchronizationTypeAsynchronous](tendpointsynchronizationtype/kendpointsynchronizationtypeasynchronous.md)
-- [kEndpointSynchronizationTypeNone](tendpointsynchronizationtype/kendpointsynchronizationtypenone.md)
-- [kEndpointSynchronizationTypeSynchronous](tendpointsynchronizationtype/kendpointsynchronizationtypesynchronous.md)
+- [kEndpointSynchronizationTypeAdaptive](./tendpointsynchronizationtype/kendpointsynchronizationtypeadaptive.md)
+- [kEndpointSynchronizationTypeAsynchronous](./tendpointsynchronizationtype/kendpointsynchronizationtypeasynchronous.md)
+- [kEndpointSynchronizationTypeNone](./tendpointsynchronizationtype/kendpointsynchronizationtypenone.md)
+- [kEndpointSynchronizationTypeSynchronous](./tendpointsynchronizationtype/kendpointsynchronizationtypesynchronous.md)
 
 
 ---

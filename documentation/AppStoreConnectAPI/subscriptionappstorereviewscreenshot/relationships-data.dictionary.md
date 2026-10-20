@@ -1,7 +1,8 @@
 # SubscriptionAppStoreReviewScreenshot.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionAppStoreReviewScreenshot.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionAppStoreReviewScreenshot.Relationships.Subscription](subscriptionappstorereviewscreenshot/relationships-data.dictionary/subscription-data.dictionary.md)
+- [object SubscriptionAppStoreReviewScreenshot.Relationships.Subscription](./relationships-data.dictionary/subscription-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object SubscriptionAppStoreReviewScreenshot.Relationships
 
 ## See Also
 
-- [object SubscriptionAppStoreReviewScreenshot.Attributes](subscriptionappstorereviewscreenshot/attributes-data.dictionary.md)
+### Objects
+- [object SubscriptionAppStoreReviewScreenshot.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription app store review screenshot resource.
 
 

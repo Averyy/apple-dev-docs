@@ -1,7 +1,8 @@
 # swingTwist(twistAxis:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rotation’s swing-twist decomposition for a given twist axis.
 

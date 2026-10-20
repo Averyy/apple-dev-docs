@@ -1,7 +1,8 @@
 # init(selection:content:label:currentValueLabel:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a picker that displays a custom label and a custom value label where applicable.
 
@@ -20,6 +21,8 @@ Creates a picker that displays a custom label and a custom value label where app
 nonisolated
 init(selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label, @ContentBuilder currentValueLabel: () -> some View)
 ```
+
+Available when `Label` conforms to `View`, `SelectionValue` conforms to `Hashable`, and `Content` conforms to `View`.
 
 #### Discussion
 

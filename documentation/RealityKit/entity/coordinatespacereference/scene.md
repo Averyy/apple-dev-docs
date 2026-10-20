@@ -1,7 +1,8 @@
 # Entity.CoordinateSpaceReference.scene
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A reference to an entity’s parent window scene.
 

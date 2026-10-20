@@ -1,7 +1,8 @@
 # systemLayoutSizeFitting(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the optimal size of the view based on its current constraints.
 
@@ -9,13 +10,17 @@ Returns the optimal size of the view based on its current constraints.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func systemLayoutSizeFitting(_ targetSize: CGSize) -> CGSize
+```
+
+```objc
+- (CGSize) systemLayoutSizeFittingSize:(CGSize) targetSize;
 ```
 
 #### Return Value
@@ -28,23 +33,24 @@ This method returns a size value for the view that optimally satisfies the viewâ
 
 ## Parameters
 
-- `targetSize`: The size that you prefer for the view. To obtain a view that is as small as possible, specify the constant [`layoutFittingCompressedSize`](uiview/layoutfittingcompressedsize.md). To obtain a view that is as large as possible, specify the constant [`layoutFittingExpandedSize`](uiview/layoutfittingexpandedsize.md).
+- `targetSize`: The size that you prefer for the view. To obtain a view that is as small as possible, specify the constant [`layoutFittingCompressedSize`](./layoutfittingcompressedsize.md). To obtain a view that is as large as possible, specify the constant [`layoutFittingExpandedSize`](./layoutfittingexpandedsize.md).
 
 ## See Also
 
-- [func systemLayoutSizeFitting(CGSize, withHorizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize](uiview/systemlayoutsizefitting(_:withhorizontalfittingpriority:verticalfittingpriority:).md)
+### Measuring in Auto Layout
+- [func systemLayoutSizeFitting(CGSize, withHorizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize](./systemlayoutsizefitting%28_,withhorizontalfittingpriority,verticalfittingpriority%29.md)
   Returns the optimal size of the view based on its constraints and the specified fitting priorities.
-- [var intrinsicContentSize: CGSize](uiview/intrinsiccontentsize.md)
+- [var intrinsicContentSize: CGSize](./intrinsiccontentsize.md)
   The natural size for the receiving view, considering only properties of the view itself.
-- [func invalidateIntrinsicContentSize()](uiview/invalidateintrinsiccontentsize.md)
+- [func invalidateIntrinsicContentSize()](./invalidateintrinsiccontentsize%28%29.md)
   Invalidates the viewâ€™s intrinsic content size.
-- [func contentCompressionResistancePriority(for: NSLayoutConstraint.Axis) -> UILayoutPriority](uiview/contentcompressionresistancepriority(for:).md)
+- [func contentCompressionResistancePriority(for: NSLayoutConstraint.Axis) -> UILayoutPriority](./contentcompressionresistancepriority%28for%29.md)
   Returns the priority with which a view resists being made smaller than its intrinsic size.
-- [func setContentCompressionResistancePriority(UILayoutPriority, for: NSLayoutConstraint.Axis)](uiview/setcontentcompressionresistancepriority(_:for:).md)
+- [func setContentCompressionResistancePriority(UILayoutPriority, for: NSLayoutConstraint.Axis)](./setcontentcompressionresistancepriority%28_,for%29.md)
   Sets the priority with which a view resists being made smaller than its intrinsic size.
-- [func contentHuggingPriority(for: NSLayoutConstraint.Axis) -> UILayoutPriority](uiview/contenthuggingpriority(for:).md)
+- [func contentHuggingPriority(for: NSLayoutConstraint.Axis) -> UILayoutPriority](./contenthuggingpriority%28for%29.md)
   Returns the priority with which a view resists being made larger than its intrinsic size.
-- [func setContentHuggingPriority(UILayoutPriority, for: NSLayoutConstraint.Axis)](uiview/setcontenthuggingpriority(_:for:).md)
+- [func setContentHuggingPriority(UILayoutPriority, for: NSLayoutConstraint.Axis)](./setcontenthuggingpriority%28_,for%29.md)
   Sets the priority with which a view resists being made larger than its intrinsic size.
 
 

@@ -1,7 +1,8 @@
 # requiredAuthorizations
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The types of authorizations necessary for running scene reconstruction.
 
@@ -16,9 +17,10 @@ static var requiredAuthorizations: [ARKitSession.AuthorizationType] { get }
 
 ## See Also
 
-- [var description: String](scenereconstructionprovider/description.md)
+### Inspecting a scene reconstruction provider
+- [var description: String](./description.md)
   A textual representation of this scene reconstruction provider.
-- [var allAnchors: [MeshAnchor]](scenereconstructionprovider/allanchors.md)
+- [var allAnchors: [MeshAnchor]](./allanchors.md)
   An array that contains the mesh anchors the scene reconstruction provider is tracking.
 
 

@@ -1,7 +1,8 @@
 # playbackCoordinator(_:interstitialTimeRangesFor:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for time ranges in a player item that don’t correspond to the primary content.
 
@@ -19,9 +20,13 @@ Asks the delegate for time ranges in a player item that don’t correspond to th
 optional func playbackCoordinator(_ coordinator: AVPlayerPlaybackCoordinator, interstitialTimeRangesFor playerItem: AVPlayerItem) -> [NSValue]
 ```
 
+```objc
+- (NSArray<NSValue *> *) playbackCoordinator:(AVPlayerPlaybackCoordinator *) coordinator interstitialTimeRangesForPlayerItem:(AVPlayerItem *) playerItem;
+```
+
 #### Return Value
 
-An array of [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects that contain the interstitial time ranges.
+An array of [`NSValue`](../../Foundation/nsvalue.md) objects that contain the interstitial time ranges.
 
 #### Discussion
 

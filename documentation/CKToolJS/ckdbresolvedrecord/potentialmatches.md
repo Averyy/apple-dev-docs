@@ -1,7 +1,8 @@
 # potentialMatches
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of potential participants that the user can choose from.
 
@@ -10,7 +11,7 @@ An array of potential participants that the user can choose from.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBSharePotentialParticipant[]? potentialMatches;
 ```
 

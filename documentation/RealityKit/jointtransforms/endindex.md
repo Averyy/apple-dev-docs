@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An index to the last joint transform in the collection.
 
@@ -11,7 +12,7 @@ An index to the last joint transform in the collection.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ var endIndex: JointTransforms.Index { get }
 
 #### Discussion
 
-For more more on the sequence’s final index, see [`endIndex`](https://developer.apple.com/documentation/swift/array/endindex).
+For more more on the sequence’s final index, see [`endIndex`](../../Swift/array/endindex.md).
 
 ## See Also
 
-- [var startIndex: JointTransforms.Index](jointtransforms/startindex.md)
+### Inspecting joint transform details
+- [var startIndex: JointTransforms.Index](./startindex.md)
   An index to the first joint transform in the collection.
 
 

@@ -1,7 +1,8 @@
 # withExclusiveControl(_:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to acquire immediate, exclusive control over the download manager.
 
@@ -26,9 +27,9 @@ final func withExclusiveControl<ReturnType>(_ body: @escaping () throws -> sendi
 
 #### Discussion
 
-To avoid races between your main app and your downloader extension, perform operations on the download manager—*e.g.*, fetching current downloads, scheduling new downloads, *etc.*—while maintaining exclusive control over it. Unlike [`withExclusiveControl(_:)`](badownloadmanager/withexclusivecontrol(_:)-2ang9.md), this method waits for exclusive control to be acquired and then relinquished before it returns.
+To avoid races between your main app and your downloader extension, perform operations on the download manager—*e.g.*, fetching current downloads, scheduling new downloads, *etc.*—while maintaining exclusive control over it. Unlike [`withExclusiveControl(_:)`](./withexclusivecontrol%28_%29-2ang9.md), this method waits for exclusive control to be acquired and then relinquished before it returns.
 
-> **Note**: When `body` throws or when exclusive control over the download manager can’t be acquired.
+> **Throws**: When `body` throws or when exclusive control over the download manager can’t be acquired.
 
 ## Parameters
 

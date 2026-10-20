@@ -1,12 +1,13 @@
 # datePickerCell(_:validateProposedDateValue:timeInterval:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The delegate receives this message each time the user attempts to change the receiver’s value, allowing the delegate the opportunity to override the change.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,15 @@ The delegate receives this message each time the user attempts to change the rec
 optional func datePickerCell(_ datePickerCell: NSDatePickerCell, validateProposedDateValue proposedDateValue: AutoreleasingUnsafeMutablePointer<NSDate>, timeInterval proposedTimeInterval: UnsafeMutablePointer<TimeInterval>?)
 ```
 
+```objc
+- (void) datePickerCell:(NSDatePickerCell *) datePickerCell validateProposedDateValue:(NSDate **) proposedDateValue timeInterval:(NSTimeInterval *) proposedTimeInterval;
+```
+
 #### Discussion
 
 When returning a new `proposedDateValue`, the `NSDate` instance should be autoreleased, and the `proposedDateValue` should not be released by the delegate.
 
-The `proposedDateValue` and `proposedTimeInterval` are guaranteed to lie between the dates returned by [`minDate`](nsdatepickercell/mindate.md) and [`maxDate`](nsdatepickercell/maxdate.md). If you modify these values, you should ensure that the new values are within the appropriate range.
+The `proposedDateValue` and `proposedTimeInterval` are guaranteed to lie between the dates returned by [`minDate`](../nsdatepickercell/mindate.md) and [`maxDate`](../nsdatepickercell/maxdate.md). If you modify these values, you should ensure that the new values are within the appropriate range.
 
 ## Parameters
 

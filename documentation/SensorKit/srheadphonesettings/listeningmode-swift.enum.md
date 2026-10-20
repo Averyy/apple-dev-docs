@@ -1,7 +1,8 @@
 # SRHeadphoneSettings.ListeningMode
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -14,25 +15,29 @@
 enum ListeningMode
 ```
 
+```c
+enum SRHeadphoneSettingsListeningMode : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [SRHeadphoneSettings.ListeningMode.activeNoiseCancelling](srheadphonesettings/listeningmode-swift.enum/activenoisecancelling.md)
-- [SRHeadphoneSettings.ListeningMode.autoActiveNoiseCancelling](srheadphonesettings/listeningmode-swift.enum/autoactivenoisecancelling.md)
-- [SRHeadphoneSettings.ListeningMode.normal](srheadphonesettings/listeningmode-swift.enum/normal.md)
-- [SRHeadphoneSettings.ListeningMode.transparency](srheadphonesettings/listeningmode-swift.enum/transparency.md)
+- [SRHeadphoneSettings.ListeningMode.activeNoiseCancelling](./listeningmode-swift.enum/activenoisecancelling.md)
+- [SRHeadphoneSettings.ListeningMode.autoActiveNoiseCancelling](./listeningmode-swift.enum/autoactivenoisecancelling.md)
+- [SRHeadphoneSettings.ListeningMode.normal](./listeningmode-swift.enum/normal.md)
+- [SRHeadphoneSettings.ListeningMode.transparency](./listeningmode-swift.enum/transparency.md)
 ### Initializers
-- [init?(rawValue: Int)](srheadphonesettings/listeningmode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./listeningmode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

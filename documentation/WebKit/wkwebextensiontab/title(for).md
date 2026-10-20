@@ -1,7 +1,8 @@
 # title(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the title of the tab is needed.
 
@@ -18,9 +19,13 @@ Called when the title of the tab is needed.
 optional func title(for context: WKWebExtensionContext) -> String?
 ```
 
+```objc
+- (NSString *) titleForWebExtensionContext:(WKWebExtensionContext *) context;
+```
+
 #### Discussion
 
-Defaults to [`title`](wkwebview/title.md) of the tab’s web view if not implemented.
+Defaults to [`title`](../wkwebview/title.md) of the tab’s web view if not implemented.
 
 ## Parameters
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOHIDEventSystemConnectType](1645888-anonymous/kiohideventsystemconnecttype.md)
-- [kIOHIDParamConnectType](1645888-anonymous/kiohidparamconnecttype.md)
-- [kIOHIDServerConnectType](1645888-anonymous/kiohidserverconnecttype.md)
+- [kIOHIDEventSystemConnectType](./api-1645888-anonymous/kiohideventsystemconnecttype.md)
+- [kIOHIDParamConnectType](./api-1645888-anonymous/kiohidparamconnecttype.md)
+- [kIOHIDServerConnectType](./api-1645888-anonymous/kiohidserverconnecttype.md)
 
 
 ---

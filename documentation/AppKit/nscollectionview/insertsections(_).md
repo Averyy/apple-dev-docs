@@ -1,7 +1,8 @@
 # insertSections(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts new sections at the specified indexes.
 
@@ -14,11 +15,15 @@ Inserts new sections at the specified indexes.
 func insertSections(_ sections: IndexSet)
 ```
 
+```objc
+- (void) insertSections:(NSIndexSet *) sections;
+```
+
 #### Discussion
 
 This method tells the collection view to insert the specified sections and update itself. Always update your data source object before calling this method. Calling this method kicks off an update (and possible animations) to add the new sections. Specifically, the collection view asks the layout object for any updated layout attributes related to the new sections or any existing sections. If the layout attributes of any visible items changed, those changes are animated into place.
 
-When inserting or deleting multiple sections and items, you can animate all of your changes at once using the [`performBatchUpdates(_:completionHandler:)`](nscollectionview/performbatchupdates(_:completionhandler:).md) method.
+When inserting or deleting multiple sections and items, you can animate all of your changes at once using the [`performBatchUpdates(_:completionHandler:)`](./performbatchupdates%28_,completionhandler%29.md) method.
 
 ## Parameters
 
@@ -26,11 +31,12 @@ When inserting or deleting multiple sections and items, you can animate all of y
 
 ## See Also
 
-- [func moveSection(Int, toSection: Int)](nscollectionview/movesection(_:tosection:).md)
+### Inserting, Moving, Deleting, and Collapsing Sections
+- [func moveSection(Int, toSection: Int)](./movesection%28_,tosection%29.md)
   Moves a section from its current location to a new location.
-- [func deleteSections(IndexSet)](nscollectionview/deletesections(_:).md)
+- [func deleteSections(IndexSet)](./deletesections%28_%29.md)
   Deletes the specified sections and their contained items.
-- [func toggleSectionCollapse(Any)](nscollectionview/togglesectioncollapse(_:).md)
+- [func toggleSectionCollapse(Any)](./togglesectioncollapse%28_%29.md)
   Collapses the section in which the sender resides into a single horizontally scrollable row.
 
 

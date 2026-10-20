@@ -1,7 +1,8 @@
 # materialRemovals
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 IDs of materials removed this frame.
 

@@ -1,7 +1,8 @@
 # MPSMatrixFullyConnectedGradient
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A kernel for applying a fully gradient connected neural network layer.
 
@@ -19,43 +20,48 @@ A kernel for applying a fully gradient connected neural network layer.
 class MPSMatrixFullyConnectedGradient
 ```
 
+```objc
+@interface MPSMatrixFullyConnectedGradient : MPSMatrixBinaryKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsmatrixfullyconnectedgradient/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpsmatrixfullyconnectedgradient/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsmatrixfullyconnectedgradient/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpsmatrixfullyconnectedgradient/init%28device%29.md)
 ### Instance Properties
-- [var alpha: Double](mpsmatrixfullyconnectedgradient/alpha.md)
-- [var sourceInputFeatureChannels: Int](mpsmatrixfullyconnectedgradient/sourceinputfeaturechannels.md)
-- [var sourceNumberOfFeatureVectors: Int](mpsmatrixfullyconnectedgradient/sourcenumberoffeaturevectors.md)
-- [var sourceOutputFeatureChannels: Int](mpsmatrixfullyconnectedgradient/sourceoutputfeaturechannels.md)
+- [var alpha: Double](./mpsmatrixfullyconnectedgradient/alpha.md)
+- [var sourceInputFeatureChannels: Int](./mpsmatrixfullyconnectedgradient/sourceinputfeaturechannels.md)
+- [var sourceNumberOfFeatureVectors: Int](./mpsmatrixfullyconnectedgradient/sourcenumberoffeaturevectors.md)
+- [var sourceOutputFeatureChannels: Int](./mpsmatrixfullyconnectedgradient/sourceoutputfeaturechannels.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsmatrixfullyconnectedgradient/copy(with:device:).md)
-- [func encodeForData(to: any MTLCommandBuffer, gradientMatrix: MPSMatrix, weightMatrix: MPSMatrix, resultGradientForDataMatrix: MPSMatrix)](mpsmatrixfullyconnectedgradient/encodefordata(to:gradientmatrix:weightmatrix:resultgradientfordatamatrix:).md)
-- [func encodeForWeightsAndBias(to: any MTLCommandBuffer, gradientMatrix: MPSMatrix, inputMatrix: MPSMatrix, resultGradientForWeightMatrix: MPSMatrix, resultGradientForBiasVector: MPSVector?)](mpsmatrixfullyconnectedgradient/encodeforweightsandbias(to:gradientmatrix:inputmatrix:resultgradientforweightmatrix:resultgradientforbiasvector:).md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](./mpsmatrixfullyconnectedgradient/copy%28with,device%29.md)
+- [func encodeForData(to: any MTLCommandBuffer, gradientMatrix: MPSMatrix, weightMatrix: MPSMatrix, resultGradientForDataMatrix: MPSMatrix)](./mpsmatrixfullyconnectedgradient/encodefordata%28to,gradientmatrix,weightmatrix,resultgradientfordatamatrix%29.md)
+- [func encodeForWeightsAndBias(to: any MTLCommandBuffer, gradientMatrix: MPSMatrix, inputMatrix: MPSMatrix, resultGradientForWeightMatrix: MPSMatrix, resultGradientForBiasVector: MPSVector?)](./mpsmatrixfullyconnectedgradient/encodeforweightsandbias%28to,gradientmatrix,inputmatrix,resultgradientforweightmatrix,resultgradientforbiasvector%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
+- [MPSMatrixBinaryKernel](./mpsmatrixbinarykernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSMatrixFullyConnected](mpsmatrixfullyconnected.md)
+### Matrix Neural Network Operations
+- [class MPSMatrixFullyConnected](./mpsmatrixfullyconnected.md)
   A kernel for applying a fully connected neural network layer.
-- [class MPSMatrixNeuron](mpsmatrixneuron.md)
+- [class MPSMatrixNeuron](./mpsmatrixneuron.md)
   A neuron activation kernel that operates on matrices.
-- [class MPSMatrixNeuronGradient](mpsmatrixneurongradient.md)
+- [class MPSMatrixNeuronGradient](./mpsmatrixneurongradient.md)
   A gradient neuron activation kernel that operates on matrices.
 
 

@@ -1,11 +1,12 @@
 # MobileDocumentRequest Implementations
 
-**Framework**: ProximityReader
+**Framework**: ProximityReader  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [MobileDocumentAnyOfRawDataRequest.Response](mobiledocumentanyofrawdatarequest/response.md)
+- [MobileDocumentAnyOfRawDataRequest.Response](./response.md)
   A type that contains the response information from a successful raw data request.
 
 

@@ -1,7 +1,8 @@
 # kIOUSB30HubPortStatusCodePD
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The port status code. 
 
@@ -10,7 +11,7 @@ The port status code.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30HubPortStatusCodePD = 1
 ```
 

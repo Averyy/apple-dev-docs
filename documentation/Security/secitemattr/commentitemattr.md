@@ -1,7 +1,8 @@
 # SecItemAttr.commentItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the comment attribute.
 
@@ -13,6 +14,10 @@ Identifies the comment attribute.
 
 ```swift
 case commentItemAttr
+```
+
+```c
+kSecCommentItemAttr
 ```
 
 #### Discussion

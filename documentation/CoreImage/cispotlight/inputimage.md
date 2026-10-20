@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to use as an input image.
@@ -11,7 +12,7 @@ The image to use as an input image.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,17 +21,22 @@ The image to use as an input image.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var brightness: Float](cispotlight/brightness.md)
+### Instance Properties
+- [var brightness: Float](./brightness.md)
   The brightness of the spotlight.
-- [var color: CIColor](cispotlight/color.md)
+- [var color: CIColor](./color.md)
   The color of the spotlight.
-- [var concentration: Float](cispotlight/concentration.md)
+- [var concentration: Float](./concentration.md)
   The size of the spotlight.
-- [var lightPointsAt: CIVector](cispotlight/lightpointsat.md)
+- [var lightPointsAt: CIVector](./lightpointsat.md)
   The x and y position that the spotlight points at.
-- [var lightPosition: CIVector](cispotlight/lightposition.md)
+- [var lightPosition: CIVector](./lightposition.md)
   The x and y position of the spotlight.
 
 

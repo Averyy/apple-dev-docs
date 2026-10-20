@@ -1,7 +1,8 @@
 # LitLightingModel.SpecularModel.anisotropicGGX
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Anisotropic GGX specular, for surfaces with directional highlight variation such as brushed metal.
 
@@ -21,11 +22,12 @@ case anisotropicGGX
 
 ## See Also
 
-- [LitLightingModel.SpecularModel.ggx](litlightingmodel/specularmodel-swift.enum/ggx.md)
+### Choosing a specular model
+- [LitLightingModel.SpecularModel.ggx](./ggx.md)
   GGX (Trowbridge-Reitz) specular, a physically based microfacet model.
-- [LitLightingModel.SpecularModel.blinnPhong](litlightingmodel/specularmodel-swift.enum/blinnphong.md)
+- [LitLightingModel.SpecularModel.blinnPhong](./blinnphong.md)
   Blinn-Phong specular, a simple and performant approximation.
-- [LitLightingModel.SpecularModel.sheen](litlightingmodel/specularmodel-swift.enum/sheen.md)
+- [LitLightingModel.SpecularModel.sheen](./sheen.md)
   Sheen specular, designed for cloth and fabric surfaces.
 
 

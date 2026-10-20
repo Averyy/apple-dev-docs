@@ -1,7 +1,8 @@
 # IndexPath
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A list of indexes that together represent the path to a specific location in a tree of nested arrays.
 
@@ -27,126 +28,127 @@ Each index in an index path represents the index into an array of children from 
 ## Topics
 
 ### Creating Index Paths
-- [init()](indexpath/init.md)
+- [init()](./indexpath/init%28%29.md)
   Creates an empty index path.
-- [init(index: IndexPath.Element)](indexpath/init(index:).md)
+- [init(index: IndexPath.Element)](./indexpath/init%28index%29.md)
   Creates an index path with a single element.
-- [init(arrayLiteral: IndexPath.Element...)](indexpath/init(arrayliteral:).md)
+- [init(arrayLiteral: IndexPath.Element...)](./indexpath/init%28arrayliteral%29.md)
   Creates an index path from an array literal.
-- [init(indexes: Array<IndexPath.Element>)](indexpath/init(indexes:)-7auqk.md)
+- [init(indexes: Array<IndexPath.Element>)](./indexpath/init%28indexes%29-7auqk.md)
   Creates an index path from an array of elements.
-- [init<ElementSequence>(indexes: ElementSequence)](indexpath/init(indexes:)-55we8.md)
+- [init<ElementSequence>(indexes: ElementSequence)](./indexpath/init%28indexes%29-55we8.md)
   Creates an index path from a sequence of integers.
-- [IndexPath.Element](indexpath/element.md)
+- [IndexPath.Element](./indexpath/element.md)
   A type that represents one node of an index path.
 ### Working with Special Node Names
-- [var endIndex: IndexPath.Index](indexpath/endindex.md)
+- [var endIndex: IndexPath.Index](./indexpath/endindex.md)
   One past the index of the last node in the index path.
-- [var item: Int](indexpath/item-8cp0y.md)
+- [var item: Int](./indexpath/item-8cp0y.md)
   The value of the item element of the index path.
-- [var row: Int](indexpath/row.md)
+- [var row: Int](./indexpath/row.md)
   The value of the row element of the index path.
-- [var section: Int](indexpath/section-8h7wo.md)
+- [var section: Int](./indexpath/section-8h7wo.md)
   The value of the section element of the index path.
-- [var startIndex: IndexPath.Index](indexpath/startindex.md)
+- [var startIndex: IndexPath.Index](./indexpath/startindex.md)
   The index of the first node in the index path.
 ### Accessing Nodes
-- [subscript(IndexPath.Index) -> IndexPath.Element](indexpath/subscript(_:)-6p6ul.md)
+- [subscript(IndexPath.Index) -> IndexPath.Element](./indexpath/subscript%28_%29-6p6ul.md)
   Accesses one of the index path’s nodes.
-- [subscript(Range<IndexPath.Index>) -> IndexPath](indexpath/subscript(_:)-4pgu1.md)
+- [subscript(Range<IndexPath.Index>) -> IndexPath](./indexpath/subscript%28_%29-4pgu1.md)
   Accesses a contiguous subrange of the index path’s nodes.
 ### Adding Nodes
-- [static func + (IndexPath, IndexPath) -> IndexPath](indexpath/+(_:_:).md)
+- [static func + (IndexPath, IndexPath) -> IndexPath](./indexpath/plus%28_,_%29.md)
   Combines the elements of two index paths into a single index path.
-- [static func += (inout IndexPath, IndexPath)](indexpath/+=(_:_:).md)
+- [static func += (inout IndexPath, IndexPath)](./indexpath/pluseq%28_,_%29.md)
   Appends the elements of another index path to this index path.
 ### Selecting Nodes
-- [func append(IndexPath)](indexpath/append(_:)-6dxrh.md)
+- [func append(IndexPath)](./indexpath/append%28_%29-6dxrh.md)
   Appends the nodes of another index path to this one.
-- [func append(Array<IndexPath.Element>)](indexpath/append(_:)-6vsd5.md)
+- [func append(Array<IndexPath.Element>)](./indexpath/append%28_%29-6vsd5.md)
   Appends an array of elements to this index path as additional nodes.
-- [func append(IndexPath.Element)](indexpath/append(_:)-7qv6f.md)
+- [func append(IndexPath.Element)](./indexpath/append%28_%29-7qv6f.md)
   Appends a single element to this index path as a new node.
-- [func appending(IndexPath.Element) -> IndexPath](indexpath/appending(_:)-93eco.md)
+- [func appending(IndexPath.Element) -> IndexPath](./indexpath/appending%28_%29-93eco.md)
   Returns a new index path containing the elements of this one plus the given element.
-- [func appending(IndexPath) -> IndexPath](indexpath/appending(_:)-53tcl.md)
+- [func appending(IndexPath) -> IndexPath](./indexpath/appending%28_%29-53tcl.md)
   Returns a new index path containing the elements of this one plus those of another index path.
-- [func appending(Array<IndexPath.Element>) -> IndexPath](indexpath/appending(_:)-174v0.md)
+- [func appending(Array<IndexPath.Element>) -> IndexPath](./indexpath/appending%28_%29-174v0.md)
   Returns a new index path containing the elements of this one plus an array of additional elements.
-- [func compare(IndexPath) -> ComparisonResult](indexpath/compare(_:).md)
+- [func compare(IndexPath) -> ComparisonResult](./indexpath/compare%28_%29.md)
   Compares this index path to another in depth-first traversal order.
-- [func dropLast() -> IndexPath](indexpath/droplast.md)
+- [func dropLast() -> IndexPath](./indexpath/droplast%28%29.md)
   Return a new index path containing all but the last element.
-- [func index(after: IndexPath.Index) -> IndexPath.Index](indexpath/index(after:).md)
+- [func index(after: IndexPath.Index) -> IndexPath.Index](./indexpath/index%28after%29.md)
   Returns the index that follows the given index.
-- [func index(before: IndexPath.Index) -> IndexPath.Index](indexpath/index(before:).md)
+- [func index(before: IndexPath.Index) -> IndexPath.Index](./indexpath/index%28before%29.md)
   Returns the index that precedes the given index.
-- [func makeIterator() -> IndexingIterator<IndexPath>](indexpath/makeiterator.md)
+- [func makeIterator() -> IndexingIterator<IndexPath>](./indexpath/makeiterator%28%29.md)
   Returns an iterator over the nodes of the index path.
 ### Excluding Nodes
-- [func dropLast() -> IndexPath](indexpath/droplast.md)
+- [func dropLast() -> IndexPath](./indexpath/droplast%28%29.md)
   Return a new index path containing all but the last element.
 ### Iterating over Nodes
-- [func makeIterator() -> IndexingIterator<IndexPath>](indexpath/makeiterator.md)
+- [func makeIterator() -> IndexingIterator<IndexPath>](./indexpath/makeiterator%28%29.md)
   Returns an iterator over the nodes of the index path.
 ### Comparing Index Paths
-- [func compare(IndexPath) -> ComparisonResult](indexpath/compare(_:).md)
+- [func compare(IndexPath) -> ComparisonResult](./indexpath/compare%28_%29.md)
   Compares this index path to another in depth-first traversal order.
 ### Manipulating Indexes
-- [IndexPath.Index](indexpath/index.md)
+- [IndexPath.Index](./indexpath/index.md)
   A type that points to a particular node in an index path, similar to an array index.
-- [var startIndex: IndexPath.Index](indexpath/startindex.md)
+- [var startIndex: IndexPath.Index](./indexpath/startindex.md)
   The index of the first node in the index path.
-- [var endIndex: IndexPath.Index](indexpath/endindex.md)
+- [var endIndex: IndexPath.Index](./indexpath/endindex.md)
   One past the index of the last node in the index path.
-- [func index(after: IndexPath.Index) -> IndexPath.Index](indexpath/index(after:).md)
+- [func index(after: IndexPath.Index) -> IndexPath.Index](./indexpath/index%28after%29.md)
   Returns the index that follows the given index.
-- [func index(before: IndexPath.Index) -> IndexPath.Index](indexpath/index(before:).md)
+- [func index(before: IndexPath.Index) -> IndexPath.Index](./indexpath/index%28before%29.md)
   Returns the index that precedes the given index.
-- [IndexPath.Indices](indexpath/indices.md)
+- [IndexPath.Indices](./indexpath/indices.md)
   A type that represents a group of nodes in an index path.
 ### Using Reference Types
-- [class NSIndexPath](nsindexpath.md)
+- [class NSIndexPath](./nsindexpath.md)
   A list of indexes that together represent the path to a specific location in a tree of nested arrays.
 ### Initializers
-- [init(item: Int, section: Int)](indexpath/init(item:section:)-359jo.md)
+- [init(item: Int, section: Int)](./indexpath/init%28item,section%29-359jo.md)
   Creates an index path that references an item in a particular section.
-- [init(item: Int, section: Int)](indexpath/init(item:section:)-rib.md)
+- [init(item: Int, section: Int)](./indexpath/init%28item,section%29-rib.md)
   Initialize for use with `NSCollectionView`.
-- [init(row: Int, section: Int)](indexpath/init(row:section:).md)
+- [init(row: Int, section: Int)](./indexpath/init%28row,section%29.md)
   Creates an index path that references a row in a particular section.
 ### Instance Properties
-- [var item: Int](indexpath/item-6rh8l.md)
+- [var item: Int](./indexpath/item-6rh8l.md)
   The item of this index path, when used with `NSCollectionView`.
-- [var section: Int](indexpath/section-2059m.md)
+- [var section: Int](./indexpath/section-2059m.md)
   The section of this index path, when used with `NSCollectionView`.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Comparable](../swift/comparable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [ReferenceConvertible](referenceconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Comparable](../Swift/comparable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../Swift/hashable.md)
+- [MutableCollection](../Swift/mutablecollection.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [ReferenceConvertible](./referenceconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct IndexSet](indexset.md)
+### Indexes
+- [struct IndexSet](./indexset.md)
   A collection of unique integer values that represent the indexes of elements in another collection.
 
 

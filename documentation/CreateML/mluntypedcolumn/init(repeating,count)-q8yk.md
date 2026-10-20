@@ -1,7 +1,8 @@
 # init(repeating:count:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new column with a repeating value.
 
@@ -17,6 +18,12 @@ Creates a new column with a repeating value.
 
 ```swift
 init(repeating repeatedValue: MLDataValue, count: Int)
+```
+
+**Other overloads**:
+
+```swift
+init<T>(repeating repeatedValue: T, count: Int) where T : MLDataValueConvertible
 ```
 
 #### Discussion
@@ -41,21 +48,22 @@ Prints...
 
 ## See Also
 
-- [init(repeating:count:)](mluntypedcolumn/init(repeating:count:).md)
+### Creating an untyped column
+- [init(repeating:count:)](./init%28repeating,count%29.md)
   Creates a new column with a repeating value.
-- [init<T>(repeating: T, count: Int)](mluntypedcolumn/init(repeating:count:)-7ttf1.md)
+- [init<T>(repeating: T, count: Int)](./init%28repeating,count%29-7ttf1.md)
   Creates a new column with a repeating value.
-- [init(_:)](mluntypedcolumn/init(_:).md)
+- [init(_:)](./init%28_%29.md)
   Creates a new column of integers from a given closed range.
-- [init(Range<Int>)](mluntypedcolumn/init(_:)-33tcv.md)
+- [init(Range<Int>)](./init%28_%29-33tcv.md)
   Creates a new column of integers from a given range.
-- [init(ClosedRange<Int>)](mluntypedcolumn/init(_:)-9no5.md)
+- [init(ClosedRange<Int>)](./init%28_%29-9no5.md)
   Creates a new column of integers from a given closed range.
-- [init<S>(S)](mluntypedcolumn/init(_:)-ag8f.md)
+- [init<S>(S)](./init%28_%29-ag8f.md)
   Creates a new column from a given sequence of elements that can be converted to machine learning data values.
-- [init<S>(S)](mluntypedcolumn/init(_:)-5by2g.md)
+- [init<S>(S)](./init%28_%29-5by2g.md)
   Creates a new column from a given sequence of machine learning data values.
-- [init()](mluntypedcolumn/init.md)
+- [init()](./init%28%29.md)
   Creates an empty, invalid column used to remove an existing column from a data table.
 
 

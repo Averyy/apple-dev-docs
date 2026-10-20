@@ -1,7 +1,8 @@
 # MTLGPUFamily.apple10
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case apple10
+```
+
+```c
+MTLGPUFamilyApple10
 ```
 
 

@@ -1,7 +1,8 @@
 # kMDItemLastUsedDate
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The date and time that the file was last used. This value is updated automatically by LaunchServices everytime a file is opened by double clicking, or by asking LaunchServices to open a file. A CFDate.
 
@@ -12,6 +13,10 @@ The date and time that the file was last used. This value is updated automatical
 
 ```swift
 let kMDItemLastUsedDate: CFString!
+```
+
+```c
+const CFStringRef kMDItemLastUsedDate;
 ```
 
 

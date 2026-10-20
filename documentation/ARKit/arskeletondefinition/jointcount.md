@@ -1,7 +1,8 @@
 # jointCount
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The skeleton’s total number of joints.
 
@@ -15,13 +16,18 @@ The skeleton’s total number of joints.
 var jointCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger jointCount;
+```
+
 ## See Also
 
-- [var jointNames: [String]](arskeletondefinition/jointnames.md)
+### Getting Joint Information
+- [var jointNames: [String]](./jointnames.md)
   A collection of unique joint names.
-- [func index(for: ARSkeleton.JointName) -> Int](arskeletondefinition/index(for:).md)
+- [func index(for: ARSkeleton.JointName) -> Int](./index%28for%29.md)
   Returns the index for a given joint identifier.
-- [var parentIndices: [Int]](arskeletondefinition/parentindices-u2u9.md)
+- [var parentIndices: [Int]](./parentindices-u2u9.md)
   The parent index for each joint.
 
 

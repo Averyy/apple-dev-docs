@@ -1,7 +1,8 @@
 # reduce(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the result of combining the elements of the sequence using the given closure.
 
@@ -46,7 +47,7 @@ When `numbers.reduce(_:_:)` is called, the following steps occur:
 
 If the sequence has no elements, `nextPartialResult` is never executed and `initialResult` is the result of the call to `reduce(_:_:)`.
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
@@ -55,22 +56,23 @@ If the sequence has no elements, `nextPartialResult` is never executed and `init
 
 ## See Also
 
-- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](set/compactmap(_:).md)
+### Transforming a Set
+- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./compactmap%28_%29.md)
   Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.
-- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](set/flatmap(_:)-i3my.md)
+- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](./flatmap%28_%29-i3my.md)
   Returns an array containing the concatenated results of calling the given transformation with each element of this sequence.
-- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](set/flatmap(_:)-6chuh.md)
-- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](set/reduce(into:_:).md)
+- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./flatmap%28_%29-6chuh.md)
+- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](./reduce%28into,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [func sorted() -> [Self.Element]](set/sorted.md)
+- [func sorted() -> [Self.Element]](./sorted%28%29.md)
   Returns the elements of the sequence, sorted.
-- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](set/sorted(by:).md)
+- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](./sorted%28by%29.md)
   Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
-- [func shuffled() -> [Self.Element]](set/shuffled.md)
+- [func shuffled() -> [Self.Element]](./shuffled%28%29.md)
   Returns the elements of the sequence, shuffled.
-- [func shuffled<T>(using: inout T) -> [Self.Element]](set/shuffled(using:).md)
+- [func shuffled<T>(using: inout T) -> [Self.Element]](./shuffled%28using%29.md)
   Returns the elements of the sequence, shuffled using the given generator as a source for randomness.
-- [var lazy: LazySequence<Self>](set/lazy.md)
+- [var lazy: LazySequence<Self>](./lazy.md)
   A sequence containing the same elements as this sequence, but on which some operations, such as `map` and `filter`, are implemented lazily.
 
 

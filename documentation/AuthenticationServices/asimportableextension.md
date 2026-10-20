@@ -1,7 +1,8 @@
 # ASImportableExtension
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A representation of CXF extensions.
 
@@ -21,21 +22,21 @@ enum ASImportableExtension
 ## Topics
 
 ### Structures
-- [ASImportableExtension.Shared](asimportableextension/shared.md)
+- [ASImportableExtension.Shared](./asimportableextension/shared.md)
   The “Shared” extension that indicates how an Item or Collection is shared.
 ### Enumeration Cases
-- [case shared(ASImportableExtension.Shared)](asimportableextension/shared(_:).md)
+- [case shared(ASImportableExtension.Shared)](./asimportableextension/shared%28_%29.md)
   Shared extension.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

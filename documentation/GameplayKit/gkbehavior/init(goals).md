@@ -1,7 +1,8 @@
 # init(goals:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a behavior with the specified goals.
 
@@ -19,13 +20,17 @@ Creates a behavior with the specified goals.
 convenience init(goals: [GKGoal])
 ```
 
+```objc
++ (instancetype) behaviorWithGoals:(NSArray<GKGoal *> *) goals;
+```
+
 #### Return Value
 
-A new behavior object. To assign a set of goals to an agent, use its [`behavior`](gkagent/behavior.md) property.
+A new behavior object. To assign a set of goals to an agent, use its [`behavior`](../gkagent/behavior.md) property.
 
 #### Discussion
 
-The new behavior contains the specified goals, each with a weight of `1.0`. To change a goal’s weight after creating the behavior, keep a reference to that goal and use the [`setWeight(_:for:)`](gkbehavior/setweight(_:for:).md) method.
+The new behavior contains the specified goals, each with a weight of `1.0`. To change a goal’s weight after creating the behavior, keep a reference to that goal and use the [`setWeight(_:for:)`](./setweight%28_,for%29.md) method.
 
 ## Parameters
 
@@ -33,11 +38,12 @@ The new behavior contains the specified goals, each with a weight of `1.0`. To c
 
 ## See Also
 
-- [convenience init(goal: GKGoal, weight: Float)](gkbehavior/init(goal:weight:).md)
+### Creating a Behavior
+- [convenience init(goal: GKGoal, weight: Float)](./init%28goal,weight%29.md)
   Creates a behavior with a single goal.
-- [convenience init(goals: [GKGoal], andWeights: [NSNumber])](gkbehavior/init(goals:andweights:).md)
+- [convenience init(goals: [GKGoal], andWeights: [NSNumber])](./init%28goals,andweights%29.md)
   Creates a behavior with the specified goals and weights.
-- [convenience init(weightedGoals: [GKGoal : NSNumber])](gkbehavior/init(weightedgoals:).md)
+- [convenience init(weightedGoals: [GKGoal : NSNumber])](./init%28weightedgoals%29.md)
   Creates a behavior with the specified mapping of goals to their weights.
 
 

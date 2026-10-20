@@ -1,7 +1,8 @@
 # kSecCertEncodingItemAttr
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Certificate encoding.
 
@@ -12,6 +13,10 @@ Certificate encoding.
 
 ```swift
 var kSecCertEncodingItemAttr: Int { get }
+```
+
+```c
+kSecCertEncodingItemAttr
 ```
 
 

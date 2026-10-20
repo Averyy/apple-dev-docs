@@ -1,15 +1,16 @@
 # init(sensitivityPoints:startDate:endDate:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 18.1
+- iPadOS 13.0+ - Deprecated in 18.1
+- Mac Catalyst 13.1+ - Deprecated in 18.1
 - macOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- visionOS 1.0+ - Deprecated in 2.1
+- watchOS 6.0+ - Deprecated in 11.1
 
 ## Declaration
 

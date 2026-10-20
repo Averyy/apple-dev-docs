@@ -1,7 +1,8 @@
 # Send Merchant Token Event
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Receive and handle merchant token life-cycle updates from Apple Pay.
 
@@ -11,7 +12,7 @@ Receive and handle merchant token life-cycle updates from Apple Pay.
 
 ## Mentions
 
-- [Receiving and handling merchant token notifications](../applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications.md)
+- [Receiving and handling merchant token notifications](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications)
 
 #### Discussion
 
@@ -21,7 +22,7 @@ To receive requests at this endpoint, your server needs to support the Transport
 
 Process the event in your system with the appropriate action. Respond with `200` `OK` if your endpoint successfully receives the notification, even if your endpoint can’t find the related merchant token or event identifier. Respond with `500` `Internal` `Server` `Error` if your endpoint isn’t able to process the notification request. Apple Pay immediately retries the notification up to three times if the response isn’t `200`.
 
-For more information about implementing this endpoint on your server, see [`Receiving and handling merchant token notifications`](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications).
+For more information about implementing this endpoint on your server, see [Receiving and handling merchant token notifications](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications).
 
 ## Endpoint
 
@@ -29,13 +30,20 @@ For more information about implementing this endpoint on your server, see [`Rece
 
 ## Parameters
 
+### Path Parameters
+
 - `eventId` (string) *(required)*: A string that uniquely identifies a life-cycle event for a merchant token.
+
+## Responses
+
+- `200` OK: Successful response.
 
 ## See Also
 
-- [Receiving and handling merchant token notifications](../applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications.md)
+### Merchant token notification handling
+- [Receiving and handling merchant token notifications](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/receiving-and-handling-merchant-token-notifications)
   Implement an endpoint to receive and handle merchant token life-cycle updates from Apple Pay.
-- [Update Merchant Metadata](update-merchant-metadata.md)
+- [Update Merchant Metadata](./update-merchant-metadata.md)
   Update the merchant token’s notification URL.
 
 

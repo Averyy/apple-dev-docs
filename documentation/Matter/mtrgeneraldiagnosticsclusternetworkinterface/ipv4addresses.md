@@ -1,7 +1,8 @@
 # iPv4Addresses
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var iPv4Addresses: [Any] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray * iPv4Addresses;
 ```
 
 

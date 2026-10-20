@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean you use to query the enabled state of the DNS settings configuration.
 
@@ -18,17 +19,22 @@ A Boolean you use to query the enabled state of the DNS settings configuration.
 var isEnabled: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
 A user must enable your DNS settings configuration in order to apply it to the system. By default, configurations are disabled until the user enables the configuration in the Settings app on iOS or in System Preferences on macOS.
 
 ## See Also
 
-- [var dnsSettings: NEDNSSettings?](nednssettingsmanager/dnssettings.md)
+### Accessing DNS configuration properties
+- [var dnsSettings: NEDNSSettings?](./dnssettings.md)
   An object that contains the configuration settings for a DNS server.
-- [var localizedDescription: String?](nednssettingsmanager/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A string that contains the display name of the DNS settings configuration.
-- [var onDemandRules: [NEOnDemandRule]?](nednssettingsmanager/ondemandrules.md)
+- [var onDemandRules: [NEOnDemandRule]?](./ondemandrules.md)
   A list of ordered rules that defines the networks on which the DNS settings will apply.
 
 

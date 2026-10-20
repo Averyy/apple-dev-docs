@@ -1,7 +1,8 @@
 # VZVirtioSoundDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines a Virtio sound device configuration.
 
@@ -14,43 +15,48 @@ An object that defines a Virtio sound device configuration.
 class VZVirtioSoundDeviceConfiguration
 ```
 
+```objc
+@interface VZVirtioSoundDeviceConfiguration : VZAudioDeviceConfiguration
+```
+
 #### Overview
 
-Use a `VZVirtioSoundDeviceConfiguration` object to configure an audio device for your VM. After creating this object, assign appropriate values to the [`streams`](vzvirtiosounddeviceconfiguration/streams.md) array property which defines the behaviors of the underlying audio streams for this audio device.
+Use a `VZVirtioSoundDeviceConfiguration` object to configure an audio device for your VM. After creating this object, assign appropriate values to the [`streams`](./vzvirtiosounddeviceconfiguration/streams.md) array property which defines the behaviors of the underlying audio streams for this audio device.
 
-After creating and configuring a `VZVirtioSoundDeviceConfiguration` object, assign it to the [`audioDevices`](vzvirtualmachineconfiguration/audiodevices.md) property of your VM’s configuration.
+After creating and configuring a `VZVirtioSoundDeviceConfiguration` object, assign it to the [`audioDevices`](./vzvirtualmachineconfiguration/audiodevices.md) property of your VM’s configuration.
 
 ## Topics
 
 ### Creating a sound device configuration
-- [init()](vzvirtiosounddeviceconfiguration/init.md)
+- [init()](./vzvirtiosounddeviceconfiguration/init%28%29.md)
   Creates a new sound device configuration.
 ### Accessing the sound streams
-- [var streams: [VZVirtioSoundDeviceStreamConfiguration]](vzvirtiosounddeviceconfiguration/streams.md)
+- [var streams: [VZVirtioSoundDeviceStreamConfiguration]](./vzvirtiosounddeviceconfiguration/streams.md)
   List of audio streams exposed by this device.
 
 ## Relationships
 
 ### Inherits From
-- [VZAudioDeviceConfiguration](vzaudiodeviceconfiguration.md)
+- [VZAudioDeviceConfiguration](./vzaudiodeviceconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtioSoundDeviceOutputStreamConfiguration](vzvirtiosounddeviceoutputstreamconfiguration.md)
+### Configurations
+- [class VZVirtioSoundDeviceOutputStreamConfiguration](./vzvirtiosounddeviceoutputstreamconfiguration.md)
   An object that defines a Virtio sound device output stream configuration.
-- [class VZVirtioSoundDeviceInputStreamConfiguration](vzvirtiosounddeviceinputstreamconfiguration.md)
+- [class VZVirtioSoundDeviceInputStreamConfiguration](./vzvirtiosounddeviceinputstreamconfiguration.md)
   A PCM stream of input audio data, such as from a microphone.
-- [class VZAudioDeviceConfiguration](vzaudiodeviceconfiguration.md)
+- [class VZAudioDeviceConfiguration](./vzaudiodeviceconfiguration.md)
   The base class for an audio device configuration.
-- [class VZVirtioSoundDeviceStreamConfiguration](vzvirtiosounddevicestreamconfiguration.md)
+- [class VZVirtioSoundDeviceStreamConfiguration](./vzvirtiosounddevicestreamconfiguration.md)
   An object that defines a Virtio sound device stream configuration.
 
 

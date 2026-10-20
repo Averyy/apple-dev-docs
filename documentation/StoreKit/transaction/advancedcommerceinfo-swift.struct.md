@@ -1,7 +1,8 @@
 # Transaction.AdvancedCommerceInfo
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Metadata for transactions that use the Advanced Commerce API.
 
@@ -23,36 +24,37 @@ struct AdvancedCommerceInfo
 ## Topics
 
 ### Structures
-- [Transaction.AdvancedCommerceInfo.Item](transaction/advancedcommerceinfo-swift.struct/item.md)
+- [Transaction.AdvancedCommerceInfo.Item](./advancedcommerceinfo-swift.struct/item.md)
   The developer-defined product that was purchased.
-- [Transaction.AdvancedCommerceInfo.Offer](transaction/advancedcommerceinfo-swift.struct/offer.md)
+- [Transaction.AdvancedCommerceInfo.Offer](./advancedcommerceinfo-swift.struct/offer.md)
   Information about the offer that was redeemed as part of the purchase.
-- [Transaction.AdvancedCommerceInfo.Refund](transaction/advancedcommerceinfo-swift.struct/refund.md)
+- [Transaction.AdvancedCommerceInfo.Refund](./advancedcommerceinfo-swift.struct/refund.md)
   Information about refunds that were issued as part of this transaction.
-- [Transaction.AdvancedCommerceInfo.Partner](transaction/advancedcommerceinfo-swift.struct/partner.md)
+- [Transaction.AdvancedCommerceInfo.Partner](./advancedcommerceinfo-swift.struct/partner.md)
 ### Instance Properties
-- [let description: String?](transaction/advancedcommerceinfo-swift.struct/description.md)
-- [let displayName: String?](transaction/advancedcommerceinfo-swift.struct/displayname.md)
-- [let estimatedTax: Decimal](transaction/advancedcommerceinfo-swift.struct/estimatedtax.md)
-- [let items: [Transaction.AdvancedCommerceInfo.Item]](transaction/advancedcommerceinfo-swift.struct/items.md)
+- [let description: String?](./advancedcommerceinfo-swift.struct/description.md)
+- [let displayName: String?](./advancedcommerceinfo-swift.struct/displayname.md)
+- [let estimatedTax: Decimal](./advancedcommerceinfo-swift.struct/estimatedtax.md)
+- [let items: [Transaction.AdvancedCommerceInfo.Item]](./advancedcommerceinfo-swift.struct/items.md)
   The items purchased as part of this transaction.
-- [let period: SubscriptionPeriod?](transaction/advancedcommerceinfo-swift.struct/period.md)
-- [let requestReferenceID: String](transaction/advancedcommerceinfo-swift.struct/requestreferenceid.md)
-- [let taxCode: String](transaction/advancedcommerceinfo-swift.struct/taxcode.md)
-- [let taxExclusivePrice: Decimal](transaction/advancedcommerceinfo-swift.struct/taxexclusiveprice.md)
-- [let taxRate: Decimal](transaction/advancedcommerceinfo-swift.struct/taxrate.md)
+- [let period: SubscriptionPeriod?](./advancedcommerceinfo-swift.struct/period.md)
+- [let requestReferenceID: String](./advancedcommerceinfo-swift.struct/requestreferenceid.md)
+- [let taxCode: String](./advancedcommerceinfo-swift.struct/taxcode.md)
+- [let taxExclusivePrice: Decimal](./advancedcommerceinfo-swift.struct/taxexclusiveprice.md)
+- [let taxRate: Decimal](./advancedcommerceinfo-swift.struct/taxrate.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let advancedCommerceInfo: Transaction.AdvancedCommerceInfo?](transaction/advancedcommerceinfo-swift.property.md)
+### Advanced Commerce transaction data
+- [let advancedCommerceInfo: Transaction.AdvancedCommerceInfo?](./advancedcommerceinfo-swift.property.md)
   Metadata for transactions that use the Advanced Commerce API.
 
 

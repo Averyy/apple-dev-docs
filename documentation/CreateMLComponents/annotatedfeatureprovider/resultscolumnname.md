@@ -1,7 +1,8 @@
 # resultsColumnName
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results column name.
 
@@ -22,13 +23,14 @@ var resultsColumnName: String
 
 ## See Also
 
-- [var annotationColumnID: ColumnID<AnnotatedFeatureProvider<Base, UnwrappedInput>.Annotation>](annotatedfeatureprovider/annotationcolumnid.md)
+### Getting the properties
+- [var annotationColumnID: ColumnID<AnnotatedFeatureProvider<Base, UnwrappedInput>.Annotation>](./annotationcolumnid.md)
   The annotation column identifier.
-- [AnnotatedFeatureProvider.Annotation](annotatedfeatureprovider/annotation.md)
+- [AnnotatedFeatureProvider.Annotation](./annotation.md)
   The annotation type.
-- [var base: Base](annotatedfeatureprovider/base.md)
+- [var base: Base](./base.md)
   The base estimator.
-- [var featuresColumnName: String](annotatedfeatureprovider/featurescolumnname.md)
+- [var featuresColumnName: String](./featurescolumnname.md)
   The features column name.
 
 

@@ -1,7 +1,8 @@
 # Playlist.Kind.userShared
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the playlist was created and shared by an Apple Music user.
 

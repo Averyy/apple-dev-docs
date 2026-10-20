@@ -1,7 +1,8 @@
 # UIUserInterfaceIdiom.pad
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interface designed for iPad.
 
@@ -9,7 +10,7 @@ An interface designed for iPad.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ An interface designed for iPad.
 case pad
 ```
 
+```c
+UIUserInterfaceIdiomPad
+```
+
 ## Mentions
 
-- [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
+- [Choosing a user interface idiom for your Mac app](../choosing-a-user-interface-idiom-for-your-mac-app.md)
 
 ## See Also
 
-- [UIUserInterfaceIdiom.unspecified](uiuserinterfaceidiom/unspecified.md)
+### Idioms
+- [UIUserInterfaceIdiom.unspecified](./unspecified.md)
   An unspecified idiom.
-- [UIUserInterfaceIdiom.phone](uiuserinterfaceidiom/phone.md)
+- [UIUserInterfaceIdiom.phone](./phone.md)
   An interface designed for iPhone and iPod touch.
-- [UIUserInterfaceIdiom.tv](uiuserinterfaceidiom/tv.md)
+- [UIUserInterfaceIdiom.tv](./tv.md)
   An interface designed for tvOS and Apple TV.
-- [UIUserInterfaceIdiom.carPlay](uiuserinterfaceidiom/carplay.md)
+- [UIUserInterfaceIdiom.carPlay](./carplay.md)
   An interface designed for an in-car experience.
-- [UIUserInterfaceIdiom.mac](uiuserinterfaceidiom/mac.md)
+- [UIUserInterfaceIdiom.mac](./mac.md)
   An interface designed for the Mac.
-- [UIUserInterfaceIdiom.vision](uiuserinterfaceidiom/vision.md)
+- [UIUserInterfaceIdiom.vision](./vision.md)
   An interface designed for visionOS and Apple Vision Pro.
 
 

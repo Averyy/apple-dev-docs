@@ -1,7 +1,8 @@
 # init(root:_:)
 
 **Framework**: System  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a file path from a root and a collection of components.
 

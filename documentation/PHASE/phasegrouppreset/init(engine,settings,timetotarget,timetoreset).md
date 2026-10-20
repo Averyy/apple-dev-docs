@@ -1,7 +1,8 @@
 # init(engine:settings:timeToTarget:timeToReset:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a group preset with the designated engine, settings, and fade parameters.
 
@@ -19,12 +20,16 @@ Creates a group preset with the designated engine, settings, and fade parameters
 init(engine: PHASEEngine, settings: [String : PHASEGroupPresetSetting], timeToTarget: Double, timeToReset: Double)
 ```
 
+```objc
+- (instancetype) initWithEngine:(PHASEEngine *) engine settings:(NSDictionary<NSString *,PHASEGroupPresetSetting *> *) settings timeToTarget:(double) timeToTarget timeToReset:(double) timeToReset;
+```
+
 ## Parameters
 
 - `engine`: An engine containing groups to configure with settings.
-- `settings`: A dictionary with preset setting values and group objects as keys. See [`settings`](phasegrouppreset/settings.md).
-- `timeToTarget`: A duration in which the engine fades the settings from their original value to their new value. See [`timeToTarget`](phasegrouppreset/timetotarget.md).
-- `timeToReset`: A duration in which the framework restores the group’s original state. See [`timeToReset`](phasegrouppreset/timetoreset.md).
+- `settings`: A dictionary with preset setting values and group objects as keys. See [`settings`](./settings.md).
+- `timeToTarget`: A duration in which the engine fades the settings from their original value to their new value. See [`timeToTarget`](./timetotarget.md).
+- `timeToReset`: A duration in which the framework restores the group’s original state. See [`timeToReset`](./timetoreset.md).
 
 
 ---

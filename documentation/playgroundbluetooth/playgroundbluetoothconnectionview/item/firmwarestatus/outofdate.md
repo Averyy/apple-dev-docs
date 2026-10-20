@@ -1,7 +1,8 @@
 # PlaygroundBluetoothConnectionView.Item.FirmwareStatus.outOfDate
 
 **Framework**: Playground Bluetooth  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 The state that indicates that a peripheral needs a firmware update before it can operate correctly.
 
@@ -17,10 +18,11 @@ case outOfDate
 
 ## See Also
 
-- [PlaygroundBluetoothConnectionView.Item.FirmwareStatus.upToDate](playgroundbluetoothconnectionview/item/firmwarestatus/uptodate.md)
+### Determining Firmware Status
+- [PlaygroundBluetoothConnectionView.Item.FirmwareStatus.upToDate](./uptodate.md)
   The state that indicates that a peripheral doesn’t need a firmware update.
-- [static func != (PlaygroundBluetoothConnectionView.Item.FirmwareStatus, PlaygroundBluetoothConnectionView.Item.FirmwareStatus) -> Bool](playgroundbluetoothconnectionview/item/firmwarestatus/3029491.md)
-  Compares two firmware statuses and returns [`true`](https://developer.apple.com/documentation/swift/true) when they're different.
+- [static func != (PlaygroundBluetoothConnectionView.Item.FirmwareStatus, PlaygroundBluetoothConnectionView.Item.FirmwareStatus) -> Bool](./api-3029491.md)
+  Compares two firmware statuses and returns [`true`](../../../../Swift/true.md) when they're different.
 
 
 ---

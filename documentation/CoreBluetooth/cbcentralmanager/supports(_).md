@@ -1,7 +1,8 @@
 # supports(_:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean that indicates whether the device supports a specific set of features.
 
@@ -19,13 +20,18 @@ Returns a Boolean that indicates whether the device supports a specific set of f
 class func supports(_ features: CBCentralManager.Feature) -> Bool
 ```
 
+```objc
++ (BOOL) supportsFeatures:(CBCentralManagerFeature) features;
+```
+
 ## Parameters
 
 - `features`: One or more features that you would like to check for support.
 
 ## See Also
 
-- [CBCentralManager.Feature](cbcentralmanager/feature.md)
+### Inspecting Feature Support
+- [CBCentralManager.Feature](./feature.md)
   An option set of device-specific features.
 
 

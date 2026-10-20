@@ -1,7 +1,8 @@
 # UnlitMaterial.TriangleFillMode
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+
@@ -19,17 +20,18 @@ typealias TriangleFillMode = MaterialParameterTypes.TriangleFillMode
 
 ## See Also
 
-- [struct UnlitMaterial](unlitmaterial.md)
+### Unlit materials
+- [struct UnlitMaterial](../unlitmaterial.md)
   A material that doesn’t respond to lights in the scene.
-- [UnlitMaterial.BaseColor](unlitmaterial/basecolor-swift.typealias.md)
+- [UnlitMaterial.BaseColor](./basecolor-swift.typealias.md)
   The type used to represent base color.
-- [UnlitMaterial.Blending](unlitmaterial/blending-swift.typealias.md)
+- [UnlitMaterial.Blending](./blending-swift.typealias.md)
   The type used to represent opacity information.
-- [UnlitMaterial.Texture](unlitmaterial/texture.md)
+- [UnlitMaterial.Texture](./texture.md)
   The type used to represent textures.
-- [UnlitMaterial.FaceCulling](unlitmaterial/faceculling-swift.typealias.md)
+- [UnlitMaterial.FaceCulling](./faceculling-swift.typealias.md)
   An alias for the cull mode object that’s appropriate for this material class.
-- [UnlitMaterial.TextureCoordinateTransform](unlitmaterial/texturecoordinatetransform-swift.typealias.md)
+- [UnlitMaterial.TextureCoordinateTransform](./texturecoordinatetransform-swift.typealias.md)
   An alias for the texture coordinate transform that’s appropriate for this material class.
 
 

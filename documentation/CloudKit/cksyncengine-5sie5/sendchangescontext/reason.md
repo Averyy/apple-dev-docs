@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason for the send operation.
 
@@ -11,7 +12,7 @@ The reason for the send operation.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ let reason: CKSyncEngine.SyncReason
 
 ## See Also
 
-- [CKSyncEngine.SyncReason](cksyncengine-5sie5/syncreason.md)
+### Accessing specific attributes
+- [CKSyncEngine.SyncReason](../syncreason.md)
   Describes the reason for a sync operation.
-- [enum CKSyncEngineSyncReason](cksyncenginesyncreason.md)
+- [enum CKSyncEngineSyncReason](../../cksyncenginesyncreason.md)
   Describes the reason for a sync operation.
-- [let options: CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangescontext/options.md)
+- [let options: CKSyncEngine.SendChangesOptions](./options.md)
   The options being used for this attempt to send changes.
-- [CKSyncEngine.SendChangesOptions](cksyncengine-5sie5/sendchangesoptions.md)
+- [CKSyncEngine.SendChangesOptions](../sendchangesoptions.md)
   A set of options to use when sending changes to the server.
 
 

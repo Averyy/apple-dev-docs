@@ -1,20 +1,22 @@
 # IONDRVLibrariesInitialize
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 IOReturn IONDRVLibrariesInitialize(IOService *provider);
 ```
 
 ## See Also
 
-- [IODeviceTreeAlloc](1442109-iodevicetreealloc.md)
+### Setup and Configuration
+- [IODeviceTreeAlloc](./api-1442109-iodevicetreealloc.md)
 
 
 ---

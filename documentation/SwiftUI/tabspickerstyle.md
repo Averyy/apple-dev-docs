@@ -1,7 +1,8 @@
 # TabsPickerStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A picker style that presents options as segmented tabs.
 
@@ -31,40 +32,41 @@ Picker("View", selection: $view) {
 .pickerStyle(.tabs)
 ```
 
-To apply this style to a picker, or to a view that contains pickers, use the [`pickerStyle(_:)`](view/pickerstyle(_:).md) modifier.
+To apply this style to a picker, or to a view that contains pickers, use the [`pickerStyle(_:)`](./view/pickerstyle%28_%29.md) modifier.
 
-You can also use [`tabs`](pickerstyle/tabs.md) to construct this style.
+You can also use [`tabs`](./pickerstyle/tabs.md) to construct this style.
 
 ## Topics
 
 ### Creating the picker style
-- [init()](tabspickerstyle/init.md)
+- [init()](./tabspickerstyle/init%28%29.md)
   Creates a tabs picker style.
 
 ## Relationships
 
 ### Conforms To
-- [PickerStyle](pickerstyle.md)
+- [PickerStyle](./pickerstyle.md)
 
 ## See Also
 
-- [struct DefaultPickerStyle](defaultpickerstyle.md)
+### Supporting types
+- [struct DefaultPickerStyle](./defaultpickerstyle.md)
   The default picker style, based on the picker’s context.
-- [struct InlinePickerStyle](inlinepickerstyle.md)
+- [struct InlinePickerStyle](./inlinepickerstyle.md)
   A `PickerStyle` where each option is displayed inline with other views in the current container.
-- [struct MenuPickerStyle](menupickerstyle.md)
+- [struct MenuPickerStyle](./menupickerstyle.md)
   A picker style that presents the options as a menu when the user presses a button, or as a submenu when nested within a larger menu.
-- [struct NavigationLinkPickerStyle](navigationlinkpickerstyle.md)
+- [struct NavigationLinkPickerStyle](./navigationlinkpickerstyle.md)
   A picker style represented by a navigation link that presents the options by pushing a List-style picker view.
-- [struct PalettePickerStyle](palettepickerstyle.md)
+- [struct PalettePickerStyle](./palettepickerstyle.md)
   A picker style that presents the options as a row of compact elements.
-- [struct RadioGroupPickerStyle](radiogrouppickerstyle.md)
+- [struct RadioGroupPickerStyle](./radiogrouppickerstyle.md)
   A picker style that presents the options as a group of radio buttons.
-- [struct SegmentedPickerStyle](segmentedpickerstyle.md)
+- [struct SegmentedPickerStyle](./segmentedpickerstyle.md)
   A picker style that presents the options in a segmented control.
-- [struct WheelPickerStyle](wheelpickerstyle.md)
+- [struct WheelPickerStyle](./wheelpickerstyle.md)
   A picker style that presents the options in a scrollable wheel that shows the selected option and a few neighboring options.
-- [struct PopUpButtonPickerStyle](popupbuttonpickerstyle.md)
+- [struct PopUpButtonPickerStyle](./popupbuttonpickerstyle.md)
   A picker style that presents the options as a menu when the user presses a button.
 
 

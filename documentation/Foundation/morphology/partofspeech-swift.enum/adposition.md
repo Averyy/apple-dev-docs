@@ -1,7 +1,8 @@
 # Morphology.PartOfSpeech.adposition
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An adposition, as used as a part of speech.
 
@@ -22,31 +23,32 @@ case adposition
 
 ## See Also
 
-- [Morphology.PartOfSpeech.determiner](morphology/partofspeech-swift.enum/determiner.md)
+### Determining Part of Speech
+- [Morphology.PartOfSpeech.determiner](./determiner.md)
   A determiner, as used as a part of speech.
-- [Morphology.PartOfSpeech.pronoun](morphology/partofspeech-swift.enum/pronoun.md)
+- [Morphology.PartOfSpeech.pronoun](./pronoun.md)
   A pronoun, as used as a part of speech.
-- [Morphology.PartOfSpeech.letter](morphology/partofspeech-swift.enum/letter.md)
+- [Morphology.PartOfSpeech.letter](./letter.md)
   A letter, as used as a part of speech.
-- [Morphology.PartOfSpeech.adverb](morphology/partofspeech-swift.enum/adverb.md)
+- [Morphology.PartOfSpeech.adverb](./adverb.md)
   An adverb, as used as a part of speech.
-- [Morphology.PartOfSpeech.particle](morphology/partofspeech-swift.enum/particle.md)
+- [Morphology.PartOfSpeech.particle](./particle.md)
   A particle, as used as a part of speech.
-- [Morphology.PartOfSpeech.adjective](morphology/partofspeech-swift.enum/adjective.md)
+- [Morphology.PartOfSpeech.adjective](./adjective.md)
   An adjective, as used as a part of speech.
-- [Morphology.PartOfSpeech.verb](morphology/partofspeech-swift.enum/verb.md)
+- [Morphology.PartOfSpeech.verb](./verb.md)
   A verb, as used as a part of speech.
-- [Morphology.PartOfSpeech.noun](morphology/partofspeech-swift.enum/noun.md)
+- [Morphology.PartOfSpeech.noun](./noun.md)
   A noun, as used as a part of speech.
-- [Morphology.PartOfSpeech.conjunction](morphology/partofspeech-swift.enum/conjunction.md)
+- [Morphology.PartOfSpeech.conjunction](./conjunction.md)
   A conjunction, as used as a part of speech.
-- [Morphology.PartOfSpeech.numeral](morphology/partofspeech-swift.enum/numeral.md)
+- [Morphology.PartOfSpeech.numeral](./numeral.md)
   A numeral, as used as a part of speech.
-- [Morphology.PartOfSpeech.interjection](morphology/partofspeech-swift.enum/interjection.md)
+- [Morphology.PartOfSpeech.interjection](./interjection.md)
   An interjection, as used as a part of speech.
-- [Morphology.PartOfSpeech.preposition](morphology/partofspeech-swift.enum/preposition.md)
+- [Morphology.PartOfSpeech.preposition](./preposition.md)
   A preposition, as used as a part of speech.
-- [Morphology.PartOfSpeech.abbreviation](morphology/partofspeech-swift.enum/abbreviation.md)
+- [Morphology.PartOfSpeech.abbreviation](./abbreviation.md)
   An abbreviation, as used as a part of speech.
 
 

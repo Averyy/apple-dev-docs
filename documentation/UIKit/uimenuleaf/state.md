@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The menu element’s selection state.
@@ -19,9 +20,14 @@ The menu element’s selection state.
 var state: UIMenuElement.State { get set }
 ```
 
+```objc
+@property (nonatomic) UIMenuElementState state;
+```
+
 ## See Also
 
-- [var selectedImage: UIImage?](uimenuleaf/selectedimage.md)
+### Managing the selection state
+- [var selectedImage: UIImage?](./selectedimage.md)
   An image that appears next to the menu element when the menu element is in the selected state.
 
 

@@ -1,7 +1,8 @@
 # customVideoCompositor
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom video compositor for the output.
 
@@ -19,13 +20,18 @@ A custom video compositor for the output.
 var customVideoCompositor: (any AVVideoCompositing)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<AVVideoCompositing> customVideoCompositor;
+```
+
 #### Discussion
 
 This property is `nil` if there isn’t a custom video compositor, or if the internal video compositor is in use.
 
 ## See Also
 
-- [var videoComposition: AVVideoComposition?](avassetreadervideocompositionoutput/videocomposition.md)
+### Configuring video settings
+- [var videoComposition: AVVideoComposition?](./videocomposition.md)
   The video composition to use for the output.
 
 

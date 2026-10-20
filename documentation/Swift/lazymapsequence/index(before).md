@@ -1,7 +1,8 @@
 # index(before:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A value less than or equal to the number of elements in the collection.
 
@@ -20,9 +21,11 @@ A value less than or equal to the number of elements in the collection.
 func index(before i: LazyMapSequence<Base, Element>.Index) -> LazyMapSequence<Base, Element>.Index
 ```
 
+Available when `Base` conforms to `BidirectionalCollection`.
+
 #### Discussion
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*n*), where *n* is the length of the collection.
 
 
 ---

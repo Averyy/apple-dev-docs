@@ -1,7 +1,8 @@
 # OSCompareAndSwapPtr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Compare and swap operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
 
@@ -10,11 +11,11 @@ Compare and swap operation, performed atomically with respect to all devices tha
 
 ## Declaration
 
-```swift
+```c
 Boolean OSCompareAndSwapPtr(void *oldValue, void *newValue, void *volatile *address);
 ```
 
-#### Return_value
+#### Return Value
 
 true if newValue was written to the address.
 
@@ -32,9 +33,10 @@ This function guarantees atomicity only with main system memory. It is specifica
 
 ## See Also
 
-- [OSCompareAndSwap](1576450-oscompareandswap.md)
+### Compare and Swap
+- [OSCompareAndSwap](./api-1576450-oscompareandswap.md)
   Compare and swap operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSCompareAndSwap64](1576485-oscompareandswap64.md)
+- [OSCompareAndSwap64](./api-1576485-oscompareandswap64.md)
   64-bit compare and swap operation.
 
 

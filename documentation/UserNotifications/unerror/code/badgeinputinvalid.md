@@ -1,7 +1,8 @@
 # UNError.Code.badgeInputInvalid
 
 **Framework**: User Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case badgeInputInvalid
+```
+
+```c
+UNErrorCodeBadgeInputInvalid
 ```
 
 

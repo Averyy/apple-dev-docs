@@ -1,7 +1,8 @@
 # plus
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Plus symbol.
 
@@ -19,6 +20,8 @@ Plus symbol.
 ```swift
 static var plus: BasicChartSymbolShape { get }
 ```
+
+Available when `Self` is `BasicChartSymbolShape`.
 
 
 ---

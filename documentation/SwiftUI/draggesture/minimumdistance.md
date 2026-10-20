@@ -1,7 +1,8 @@
 # minimumDistance
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum dragging distance before the gesture succeeds.
 
@@ -22,17 +23,18 @@ The minimum dragging distance before the gesture succeeds.
 
 ## See Also
 
-- [init(minimumDistance: CGFloat, coordinateSpace3D: some CoordinateSpace3D)](draggesture/init(minimumdistance:coordinatespace3d:).md)
+### Creating a drag gesture
+- [init(minimumDistance: CGFloat, coordinateSpace3D: some CoordinateSpace3D)](./init%28minimumdistance,coordinatespace3d%29.md)
   Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
-- [init(minimumDistance: CGFloat, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds)](draggesture/init(minimumdistance:coordinatespace:inputkinds:).md)
+- [init(minimumDistance: CGFloat, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds)](./init%28minimumdistance,coordinatespace,inputkinds%29.md)
   Creates a dragging gesture with the minimum dragging distance before the gesture succeeds, the coordinate space of the gesture’s location, and the input kinds the gesture recognizes.
-- [var coordinateSpace: CoordinateSpace](draggesture/coordinatespace.md)
+- [var coordinateSpace: CoordinateSpace](./coordinatespace.md)
   The coordinate space in which to receive location values.
-- [init(minimumDistance: CGFloat, coordinateSpace: some CoordinateSpaceProtocol)](draggesture/init(minimumdistance:coordinatespace:)-8ffe5.md)
+- [init(minimumDistance: CGFloat, coordinateSpace: some CoordinateSpaceProtocol)](./init%28minimumdistance,coordinatespace%29-8ffe5.md)
   Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
-- [init(minimumDistance:coordinateSpace:)](draggesture/init(minimumdistance:coordinatespace:).md)
+- [init(minimumDistance:coordinateSpace:)](./init%28minimumdistance,coordinatespace%29.md)
   Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
-- [init(minimumDistance: CGFloat, coordinateSpace: CoordinateSpace)](draggesture/init(minimumdistance:coordinatespace:)-3804h.md)
+- [init(minimumDistance: CGFloat, coordinateSpace: CoordinateSpace)](./init%28minimumdistance,coordinatespace%29-3804h.md)
   Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
 
 

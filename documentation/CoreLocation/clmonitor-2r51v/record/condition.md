@@ -1,7 +1,8 @@
 # condition
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The condition that the framework is monitoring for.
 
@@ -19,7 +20,8 @@ let condition: any CLCondition
 
 ## See Also
 
-- [let lastEvent: CLMonitor.Event](clmonitor-2r51v/record/lastevent.md)
+### Record characteristics
+- [let lastEvent: CLMonitor.Event](./lastevent.md)
   The most recent event the monitor records.
 
 

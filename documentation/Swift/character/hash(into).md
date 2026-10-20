@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of this value by feeding them into the given hasher.
 
@@ -26,13 +27,14 @@ func hash(into hasher: inout Hasher)
 
 ## See Also
 
-- [var description: String](character/description.md)
+### Describing a Character
+- [var description: String](./description.md)
   A textual representation of this instance.
-- [var debugDescription: String](character/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the character, suitable for debugging.
-- [var customMirror: Mirror](character/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the `Character` instance.
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](character/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./customplaygroundquicklook.md)
   A custom playground Quick Look for the `Character` instance.
 
 

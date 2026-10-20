@@ -1,7 +1,8 @@
 # publisher(for:on:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a publisher for events of the specified type.
 
@@ -11,7 +12,7 @@ Generates a publisher for events of the specified type.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,11 +32,12 @@ A publisher for events of the specified type.
 
 ## See Also
 
-- [func subscribe<E>(to: E.Type, on: (any EventSource)?, (E) -> Void) -> any Cancellable](scene/subscribe(to:on:_:).md)
+### Publishing and subscribing to events
+- [func subscribe<E>(to: E.Type, on: (any EventSource)?, (E) -> Void) -> any Cancellable](./subscribe%28to,on,_%29.md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene.
-- [func publisher<E>(for: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?) -> Scene.Publisher<E>](scene/publisher(for:on:componenttype:).md)
+- [func publisher<E>(for: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?) -> Scene.Publisher<E>](./publisher%28for,on,componenttype%29.md)
   Returns a `Publisher` for events of the specified type in a `Scene`.
-- [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> any Cancellable](scene/subscribe(to:on:componenttype:_:).md)
+- [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> any Cancellable](./subscribe%28to,on,componenttype,_%29.md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene, or limited to a specific component type for component events.
 
 

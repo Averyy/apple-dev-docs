@@ -1,7 +1,8 @@
 # NSWindow.Depth.onehundredtwentyeightBitRGB
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 One hundred and twenty eight bit RGB depth limit.
 
@@ -14,11 +15,16 @@ One hundred and twenty eight bit RGB depth limit.
 case onehundredtwentyeightBitRGB
 ```
 
+```c
+NSWindowDepthOnehundredtwentyeightBitRGB
+```
+
 ## See Also
 
-- [NSWindow.Depth.sixtyfourBitRGB](nswindow/depth/sixtyfourbitrgb.md)
+### Constants
+- [NSWindow.Depth.sixtyfourBitRGB](./sixtyfourbitrgb.md)
   Sixty four bit RGB depth limit.
-- [NSWindow.Depth.twentyfourBitRGB](nswindow/depth/twentyfourbitrgb.md)
+- [NSWindow.Depth.twentyfourBitRGB](./twentyfourbitrgb.md)
   Twenty four bit RGB depth limit.
 
 

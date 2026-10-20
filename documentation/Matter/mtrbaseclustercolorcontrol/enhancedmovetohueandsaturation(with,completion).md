@@ -1,7 +1,8 @@
 # enhancedMoveToHueAndSaturation(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func enhancedMoveToHueAndSaturation(with params: MTRColorControlClusterEnhancedMoveToHueAndSaturationParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func enhancedMoveToHueAndSaturation(with params: MTRColorControlClusterEnhancedMoveToHueAndSaturationParams) async throws
+```
+
+```objc
+- (void) enhancedMoveToHueAndSaturationWithParams:(MTRColorControlClusterEnhancedMoveToHueAndSaturationParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

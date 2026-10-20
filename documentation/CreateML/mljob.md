@@ -1,7 +1,8 @@
 # MLJob
 
 **Framework**: Create ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The representation of a model’s asynchronous training session you use to monitor the session’s progress or terminate its execution.
 
@@ -22,37 +23,38 @@ final class MLJob<Result>
 ## Topics
 
 ### Receiving progress updates
-- [var checkpoints: AnyPublisher<MLCheckpoint, Never>](mljob/checkpoints.md)
+- [var checkpoints: AnyPublisher<MLCheckpoint, Never>](./mljob/checkpoints.md)
   A publisher that sends a checkpoint for each of the session’s checkpoint intervals.
-- [var result: AnyPublisher<Result, any Error>](mljob/result.md)
+- [var result: AnyPublisher<Result, any Error>](./mljob/result.md)
   A publisher that provides a result when the training session has finished.
-- [var phase: AnyPublisher<MLPhase, Never>](mljob/phase.md)
+- [var phase: AnyPublisher<MLPhase, Never>](./mljob/phase.md)
   Phase publisher.
 ### Managing a job
-- [func cancel()](mljob/cancel.md)
+- [func cancel()](./mljob/cancel%28%29.md)
   Stops the training session’s execution.
-- [var isCanceled: Bool](mljob/iscanceled.md)
+- [var isCanceled: Bool](./mljob/iscanceled.md)
   A Boolean value that indicates whether you canceled the job.
 ### Inspecting a job
-- [let startDate: Date](mljob/startdate.md)
+- [let startDate: Date](./mljob/startdate.md)
   The date and time when the training session began.
-- [let progress: Progress](mljob/progress.md)
+- [let progress: Progress](./mljob/progress.md)
   The training session’s current progress.
-- [struct MLProgress](mlprogress.md)
+- [struct MLProgress](./mlprogress.md)
   A convenience type that exposes information about the progress of a training session.
 
 ## Relationships
 
 ### Conforms To
-- [Cancellable](../combine/cancellable.md)
+- [Cancellable](../Combine/cancellable.md)
 
 ## See Also
 
-- [class MLTrainingSession](mltrainingsession.md)
+### Model training Control
+- [class MLTrainingSession](./mltrainingsession.md)
   The current state of a model’s asynchronous training session.
-- [struct MLTrainingSessionParameters](mltrainingsessionparameters.md)
+- [struct MLTrainingSessionParameters](./mltrainingsessionparameters.md)
   The configuration settings for a training session.
-- [struct MLCheckpoint](mlcheckpoint.md)
+- [struct MLCheckpoint](./mlcheckpoint.md)
   The state of a model’s asynchronous training session at a specific point in time during the feature extraction or training phase.
 
 

@@ -1,7 +1,8 @@
 # noteSelectedAlternativeString(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the `NSTextAlternatives` object by the text view when the user chooses one of the alternative strings.
 
@@ -12,6 +13,10 @@ Sent to the `NSTextAlternatives` object by the text view when the user chooses o
 
 ```swift
 func noteSelectedAlternativeString(_ alternativeString: String)
+```
+
+```objc
+- (void) noteSelectedAlternativeString:(NSString *) alternativeString;
 ```
 
 #### Discussion

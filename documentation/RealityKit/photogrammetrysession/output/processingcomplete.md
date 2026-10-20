@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Output.processingComplete
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The session completed a request successfully.
 
@@ -24,9 +25,10 @@ case processingComplete
 
 ## See Also
 
-- [PhotogrammetrySession.Output.inputComplete](photogrammetrysession/output/inputcomplete.md)
+### Monitoring session status
+- [PhotogrammetrySession.Output.inputComplete](./inputcomplete.md)
   The data ingestion portion of the process is complete.
-- [PhotogrammetrySession.Output.processingCancelled](photogrammetrysession/output/processingcancelled.md)
+- [PhotogrammetrySession.Output.processingCancelled](./processingcancelled.md)
   All pending requests are canceled.
 
 

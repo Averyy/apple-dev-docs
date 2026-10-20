@@ -1,7 +1,8 @@
 # JSContextGroupCreate()
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a JavaScript context group.
 
@@ -19,19 +20,24 @@ Creates a JavaScript context group.
 func JSContextGroupCreate() -> JSContextGroupRef!
 ```
 
+```c
+JSContextGroupRefJSContextGroupCreate();
+```
+
 #### Return Value
 
-The created [`JSContextGroupRef`](jscontextgroupref.md).
+The created [`JSContextGroupRef`](./jscontextgroupref.md).
 
 #### Discussion
 
-A [`JSContextGroupRef`](jscontextgroupref.md) associates JavaScript contexts with one another. Contexts in the same group may share and exchange JavaScript objects. Sharing and exchanging JavaScript objects between contexts in different groups produces undefined behavior. When you use objects from the same context group in multiple threads, explicit synchronization is a requirement.
+A [`JSContextGroupRef`](./jscontextgroupref.md) associates JavaScript contexts with one another. Contexts in the same group may share and exchange JavaScript objects. Sharing and exchanging JavaScript objects between contexts in different groups produces undefined behavior. When you use objects from the same context group in multiple threads, explicit synchronization is a requirement.
 
 ## See Also
 
-- [func JSContextGroupRetain(JSContextGroupRef!) -> JSContextGroupRef!](jscontextgroupretain(_:).md)
+### Creating a Context Group
+- [func JSContextGroupRetain(JSContextGroupRef!) -> JSContextGroupRef!](./jscontextgroupretain%28_%29.md)
   Retains a JavaScript context group.
-- [func JSContextGroupRelease(JSContextGroupRef!)](jscontextgrouprelease(_:).md)
+- [func JSContextGroupRelease(JSContextGroupRef!)](./jscontextgrouprelease%28_%29.md)
   Releases a JavaScript context group.
 
 

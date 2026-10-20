@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 AbsoluteTime abstime;
 ```
 
@@ -15,8 +15,9 @@ time to wake up next, see enable.
 
 ## See Also
 
-- [reserved](iotimereventsource/reserved.md)
-- [calloutEntry](iotimereventsource/calloutentry.md)
+### Instance Variables
+- [reserved](./reserved.md)
+- [calloutEntry](./calloutentry.md)
 
 
 ---

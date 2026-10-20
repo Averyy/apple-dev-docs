@@ -1,41 +1,43 @@
 # IOUserMIDIDestination
 
 **Framework**: MIDIDriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```cpp
 class IOUserMIDIDestination;
 ```
 
 ## Topics
 
 ### Instance Methods
-- [GetBaseClassID](iousermididestination/getbaseclassid.md)
-- [GetClassID](iousermididestination/getclassid.md)
-- [SetIOBlock](iousermididestination/setioblock.md)
-- [free](iousermididestination/free.md)
-- [init](iousermididestination/init.md)
+- [GetBaseClassID](./iousermididestination/getbaseclassid.md)
+- [GetClassID](./iousermididestination/getclassid.md)
+- [SetIOBlock](./iousermididestination/setioblock.md)
+- [free](./iousermididestination/free.md)
+- [init](./iousermididestination/init.md)
 ### Type Methods
-- [Create](iousermididestination/create.md)
+- [Create](./iousermididestination/create.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOUserMIDIEndpoint](iousermidiendpoint.md)
+- [IOUserMIDIEndpoint](./iousermidiendpoint.md)
 
 ## See Also
 
-- [IOUserMIDIDevice](iousermididevice.md)
-- [IOUserMIDIDriver](iousermididriver.md)
-- [IOUserMIDIEndpoint](iousermidiendpoint.md)
-- [IOUserMIDIEntity](iousermidientity.md)
-- [IOUserMIDIObject](iousermidiobject.md)
-- [IOUserMIDISource](iousermidisource.md)
+### Classes
+- [IOUserMIDIDevice](./iousermididevice.md)
+- [IOUserMIDIDriver](./iousermididriver.md)
+- [IOUserMIDIEndpoint](./iousermidiendpoint.md)
+- [IOUserMIDIEntity](./iousermidientity.md)
+- [IOUserMIDIObject](./iousermidiobject.md)
+- [IOUserMIDISource](./iousermidisource.md)
 
 
 ---

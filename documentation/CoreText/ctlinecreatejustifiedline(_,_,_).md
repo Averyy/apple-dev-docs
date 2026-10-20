@@ -1,7 +1,8 @@
 # CTLineCreateJustifiedLine(_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a justified line from an existing line.
 
@@ -20,6 +21,10 @@ Creates a justified line from an existing line.
 func CTLineCreateJustifiedLine(_ line: CTLine, _ justificationFactor: CGFloat, _ justificationWidth: Double) -> CTLine?
 ```
 
+```c
+extern CTLineRefCTLineCreateJustifiedLine(CTLineRef line, CGFloat justificationFactor, double justificationWidth);
+```
+
 #### Return Value
 
 A reference to a justified CTLine object if the call was successful; otherwise, `NULL`.
@@ -32,9 +37,10 @@ A reference to a justified CTLine object if the call was successful; otherwise, 
 
 ## See Also
 
-- [func CTLineCreateWithAttributedString(CFAttributedString) -> CTLine](ctlinecreatewithattributedstring(_:).md)
+### Creating Lines
+- [func CTLineCreateWithAttributedString(CFAttributedString) -> CTLine](./ctlinecreatewithattributedstring%28_%29.md)
   Creates a single immutable line object from an attributed string.
-- [func CTLineCreateTruncatedLine(CTLine, Double, CTLineTruncationType, CTLine?) -> CTLine?](ctlinecreatetruncatedline(_:_:_:_:).md)
+- [func CTLineCreateTruncatedLine(CTLine, Double, CTLineTruncationType, CTLine?) -> CTLine?](./ctlinecreatetruncatedline%28_,_,_,_%29.md)
   Creates a truncated line from an existing line.
 
 

@@ -6,31 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/index.html
 
 # MLX
 
-**
-
-- [.rst](_sources/index.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# MLX
-
- Table of contents 
-
-# MLX
-
 MLX is a NumPy-like array framework designed for efficient and flexible machine
 learning on Apple silicon, brought to you by Apple machine learning research.
 

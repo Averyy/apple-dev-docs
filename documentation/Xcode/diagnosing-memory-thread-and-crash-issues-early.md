@@ -13,15 +13,15 @@ Identifying potential issues during development saves testing time later and imp
 - Main Thread Checker—This tool verifies that system APIs that must run on the main thread actually do run on that thread.
 - Undefined Behavior Sanitizer—The UBSan tool detects divide-by-zero errors, attempts to access memory using a misaligned pointer, and other undefined behaviors.
 
-These are LLVM-based tools that add specific checks to your code. To enable them for the Run action, select the appropriate scheme for your project and choose Product > Scheme > Edit Scheme to display the scheme editor. Select the Run action, navigate to the Diagnostics section, and select the sanitizers you want to run. To enable them for the Test action, set the `Address Sanitizer`, `Thread Sanitizer`, `Undefined Behavior Sanitizer`, and `Main Thread Checker` values in the active test plan’s configuration instead. Test your app with sanitizer tools enabled to catch otherwise difficult to catch bugs. Use a comprehensive set of unit tests, and use additional integration and UI tests to exercise additional code at runtime. For more information, see [`Improving code assessment by organizing tests into test plans`](organizing-tests-to-improve-feedback.md) and [`Testing`](testing.md).
+These are LLVM-based tools that add specific checks to your code. To enable them for the Run action, select the appropriate scheme for your project and choose Product > Scheme > Edit Scheme to display the scheme editor. Select the Run action, navigate to the Diagnostics section, and select the sanitizers you want to run. To enable them for the Test action, set the `Address Sanitizer`, `Thread Sanitizer`, `Undefined Behavior Sanitizer`, and `Main Thread Checker` values in the active test plan’s configuration instead. Test your app with sanitizer tools enabled to catch otherwise difficult to catch bugs. Use a comprehensive set of unit tests, and use additional integration and UI tests to exercise additional code at runtime. For more information, see [Improving code assessment by organizing tests into test plans](./organizing-tests-to-improve-feedback.md) and [Testing](./testing.md).
 
 > **Note**: The sanitizer tools support all C-based languages. The tools also support the Swift language, with the exception of the Undefined Behavior Sanitizer tool, which supports only C-based languages.
 
-##### Locate Memory Corruption Issues in Your Code
+##### Locate memory corruption issues in your code
 
 Accessing memory improperly can introduce unexpected issues into your code, and even pose a security threat. The Address Sanitizer tool detects memory-access attempts that don’t belong to an allocated block. To enable this tool, select Address Sanitizer from the Diagnostics section of the appropriate scheme.
 
-![A screenshot of the Scheme Editor with the Address Sanitizer checkbox selected.](/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-1@2x.png)
+![A screenshot of the Scheme Editor with the Address Sanitizer checkbox selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-1@2x.png)
 
 To enable ASan from the command line, use the following flags:
 
@@ -35,13 +35,13 @@ The Address Sanitizer tool replaces the `malloc(_:)` and `free(_:)` functions wi
 
 For most use cases, the overhead that Address Sanitizer adds to your code should be acceptable for daily development. Running your code with Address Sanitizer increases memory usage by two to three times, and also adds 2x to 5x slowdown of your code. To improve your code’s memory usage, compile your code with the `-O1` optimization.
 
-##### Detect Data Races Among Your Apps Threads
+##### Detect data races among your app’s threads
 
 Race conditions occur when multiple threads access the same memory without proper synchronization. Race conditions are difficult to detect during regular testing because they don’t occur consistently. However, fixing them is important because they cause your code to behave unpredictably, and may even lead to memory corruption.
 
 To detect race conditions and other thread-related issues, enable the Thread Sanitizer tool from the Diagnostics section of the appropriate build scheme.
 
-![A screenshot of the Scheme Editor with the Thread Sanitizer checkbox selected.](/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-2@2x.png)
+![A screenshot of the Scheme Editor with the Thread Sanitizer checkbox selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-2@2x.png)
 
 To enable TSan from the command line, use the following flags:
 
@@ -55,13 +55,13 @@ The Thread Sanitizer tool inserts diagnostics into your code to record each memo
 
 Because Thread Sanitizer inserts diagnostics into your code, it increases memory usage by five to ten times. Running your code with these diagnostics also introduces a 2x to 20x slowdown of your app. To improve your code’s memory usage, compile your code with the `-O1` optimization.
 
-##### Detect Improper Ui Updates on Background Threads
+##### Detect improper UI updates on background threads
 
 Some system frameworks contain APIs that you must only call from your app’s main thread. This requirement applies to most of the AppKit and UIKit user interface APIs, and also applies to some other system APIs. Calling these APIs from the main thread prevents race conditions by serializing the execution of the associated tasks. Failure to perform these operations on the main thread may result in visual defects, data corruption, or crashes.
 
 The Main Thread Checker tool ensures that all calls that must occur on the main thread do so. To enable this tool, select Main Thread Checker from the Diagnostics section of the appropriate scheme.
 
-![A screenshot of the Scheme Editor with the Main Thread Checker checkbox selected.](/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-3@2x.png)
+![A screenshot of the Scheme Editor with the Main Thread Checker checkbox selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-3@2x.png)
 
 The Main Thread Checker tool dynamically replaces system methods that must execute on the main thread with variants that check the current thread. The tool replaces only system APIs with well-known thread requirements, and doesn’t replace all system APIs. Because the replacements occur in system frameworks, Main Thread Checker doesn’t require you to recompile your app.
 
@@ -84,7 +84,7 @@ task.resume()
 
 The performance impact of Main Thread Checker is minimal. The tool adds 1–2% CPU overhead to your process, and increases process launch time by no more than 100 milliseconds. Because of this minimal impact, Xcode enables Main Thread Checker by default for your development-related schemes.
 
-##### Detect Operations with Undefined Semantics
+##### Detect operations with undefined semantics
 
 Code that results in undefined behavior can lead to crashes or incorrect output. In some cases, the code may not result in any problems at all initially, making it even harder to diagnose the problem later when conditions are different. The Undefined Behavior Sanitizer tool checks C-based code for a variety of common runtime errors, including:
 
@@ -95,31 +95,31 @@ Code that results in undefined behavior can lead to crashes or incorrect output.
 
 To enable this tool, select Undefined Behavior Sanitizer from the Diagnostics section of the appropriate scheme.
 
-![A screenshot of the Scheme Editor with the Undefined Behavior Sanitizer checkbox selected.](/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-4@2x.png)
+![A screenshot of the Scheme Editor with the Undefined Behavior Sanitizer checkbox selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/diagnosing-memory-thread-and-crash-issues-early-4@2x.png)
 
 To enable UBSan from the command line, add the `-fsanitize=undefined` option in clang or the `enableUndefinedBehaviorSanitizer YES` option in xcodebuild. To enable individual sanitizer checks, use the following options:
 
 | Compiler flag | UBSan check |
 | --- | --- |
-| `-fsanitize=alignment` | [`Misaligned pointer`](misaligned-pointer.md) |
-| `-fsanitize=bool` | [`Invalid Boolean value`](invalid-boolean.md) |
-| `-fsanitize=bounds` | [`Out-of-bounds array access`](out-of-bounds-array-access.md) |
-| `-fsanitize=enum` | [`Invalid enumeration value`](invalid-enumeration-value.md) |
-| `-fsanitize=vptr` | [`Dynamic type violation`](dynamic-type-violation.md) |
-| `-fsanitize=integer-divide-by-zero` | [`Division by zero`](division-by-zero.md) |
-| `-fsanitize=float-divide-by-zero` | [`Division by zero`](division-by-zero.md) |
-| `-fsanitize=float-cast-overflow` | [`Invalid float cast`](invalid-float-cast.md) |
-| `-fsanitize=nonnull-attribute` | [`Nonnull argument violation`](nonnull-argument-violation.md) |
-| `-fsanitize=nullability-arg` | [`Nonnull argument violation`](nonnull-argument-violation.md) |
-| `-fsanitize=nullability-assign` | [`Nonnull variable assignment violation`](nonnull-variable-assignment-violation.md) |
-| `-fsanitize=returns-nonnull-attribute` | [`Nonnull return value violation`](nonnull-return-value-violation.md) |
-| `-fsanitize-nullability-return` | [`Nonnull return value violation`](nonnull-return-value-violation.md) |
-| `-fsanitize=null` | [`Null reference creation and null pointer dereference`](null-reference-creation-and-null-pointer-dereference.md) |
-| `-fsanitize=object-size` | [`Invalid object size`](invalid-object-size.md) |
-| `-fsanitize=shift` | [`Invalid shift`](invalid-shift.md) |
-| `-fsanitize=signed-integer-overflow` | [`Integer overflow`](integer-overflow.md) |
-| `-fsanitize=unreachable` | [`Reaching of unreachable point`](reaching-of-unreachable-point.md) |
-| `-fsanitize=vla-bound` | [`Invalid variable-length array`](invalid-variable-length-array.md) |
+| `-fsanitize=alignment` | [Misaligned pointer](./misaligned-pointer.md) |
+| `-fsanitize=bool` | [Invalid Boolean value](./invalid-boolean.md) |
+| `-fsanitize=bounds` | [Out-of-bounds array access](./out-of-bounds-array-access.md) |
+| `-fsanitize=enum` | [Invalid enumeration value](./invalid-enumeration-value.md) |
+| `-fsanitize=vptr` | [Dynamic type violation](./dynamic-type-violation.md) |
+| `-fsanitize=integer-divide-by-zero` | [Division by zero](./division-by-zero.md) |
+| `-fsanitize=float-divide-by-zero` | [Division by zero](./division-by-zero.md) |
+| `-fsanitize=float-cast-overflow` | [Invalid float cast](./invalid-float-cast.md) |
+| `-fsanitize=nonnull-attribute` | [Nonnull argument violation](./nonnull-argument-violation.md) |
+| `-fsanitize=nullability-arg` | [Nonnull argument violation](./nonnull-argument-violation.md) |
+| `-fsanitize=nullability-assign` | [Nonnull variable assignment violation](./nonnull-variable-assignment-violation.md) |
+| `-fsanitize=returns-nonnull-attribute` | [Nonnull return value violation](./nonnull-return-value-violation.md) |
+| `-fsanitize-nullability-return` | [Nonnull return value violation](./nonnull-return-value-violation.md) |
+| `-fsanitize=null` | [Null reference creation and null pointer dereference](./null-reference-creation-and-null-pointer-dereference.md) |
+| `-fsanitize=object-size` | [Invalid object size](./invalid-object-size.md) |
+| `-fsanitize=shift` | [Invalid shift](./invalid-shift.md) |
+| `-fsanitize=signed-integer-overflow` | [Integer overflow](./integer-overflow.md) |
+| `-fsanitize=unreachable` | [Reaching of unreachable point](./reaching-of-unreachable-point.md) |
+| `-fsanitize=vla-bound` | [Invalid variable-length array](./invalid-variable-length-array.md) |
 
 The Undefined Behavior Sanitizer tool inserts diagnostics into your code at compile time. The nature of these checks differs according to the type of operation. For example, before performing a mathematical operation on an integer value, the tool adds a check to determine if the operation triggers an integer overflow.
 
@@ -128,72 +128,73 @@ The performance impact of Undefined Behavior Sanitizer is minimal. The tool adds
 ## Topics
 
 ### Address Sanitizer
-- [Use of deallocated memory](use-of-deallocated-memory.md)
+- [Use of deallocated memory](./use-of-deallocated-memory.md)
   Detects the use of deallocated memory.
-- [Deallocation of deallocated memory](deallocation-of-deallocated-memory.md)
+- [Deallocation of deallocated memory](./deallocation-of-deallocated-memory.md)
   Detects attempts to free deallocated memory.
-- [Deallocation of nonallocated memory](deallocation-of-nonallocated-memory.md)
+- [Deallocation of nonallocated memory](./deallocation-of-nonallocated-memory.md)
   Detects attempts to free nonallocated memory.
-- [Use of stack memory after function return](use-of-stack-memory-after-function-return.md)
+- [Use of stack memory after function return](./use-of-stack-memory-after-function-return.md)
   Detects when you access stack variable memory after its declaring function returns.
-- [Use of out-of-scope stack memory](use-of-out-of-scope-stack-memory.md)
+- [Use of out-of-scope stack memory](./use-of-out-of-scope-stack-memory.md)
   Detects access to variables outside of their declared scope.
-- [Overflow and underflow of buffers](overflow-and-underflow-of-buffers.md)
+- [Overflow and underflow of buffers](./overflow-and-underflow-of-buffers.md)
   Detects when you access memory outside of a buffer’s boundaries.
-- [Overflow of C++ containers](overflow-of-c-containers.md)
+- [Overflow of C++ containers](./overflow-of-c-containers.md)
   Detects when you access a C++ container outside its bounds.
 ### Thread Sanitizer
-- [Data races](data-races.md)
+- [Data races](./data-races.md)
   Detects unsynchronized access to mutable state across multiple threads.
-- [Swift access races](swift-access-races.md)
+- [Swift access races](./swift-access-races.md)
   Detects unsynchronized access to mutable state across multiple threads in Swift.
-- [Races on collections and other APIs](races-on-collections-and-other-apis.md)
+- [Races on collections and other APIs](./races-on-collections-and-other-apis.md)
   Detects when one thread accesses a mutable object while another thread is writing to it.
-- [Uninitialized mutexes](uninitialized-mutexes.md)
+- [Uninitialized mutexes](./uninitialized-mutexes.md)
   Detects when you use an uninitialized mutex.
-- [Thread leaks](thread-leaks.md)
+- [Thread leaks](./thread-leaks.md)
   Detects when you don’t close threads after use.
 ### Undefined Behavior Sanitizer
-- [Misaligned pointer](misaligned-pointer.md)
+- [Misaligned pointer](./misaligned-pointer.md)
   Detects when code accesses a misaligned pointer or creates a misaligned reference.
-- [Invalid Boolean value](invalid-boolean.md)
+- [Invalid Boolean value](./invalid-boolean.md)
   Detects when a program accesses a Boolean variable and its value isn’t true or false.
-- [Out-of-bounds array access](out-of-bounds-array-access.md)
+- [Out-of-bounds array access](./out-of-bounds-array-access.md)
   Detects out-of-bounds access of arrays.
-- [Invalid enumeration value](invalid-enumeration-value.md)
+- [Invalid enumeration value](./invalid-enumeration-value.md)
   Detects when an enumeration variable has an invalid value.
-- [Reaching of unreachable point](reaching-of-unreachable-point.md)
+- [Reaching of unreachable point](./reaching-of-unreachable-point.md)
   Detects when a program reaches an unreachable point.
-- [Dynamic type violation](dynamic-type-violation.md)
+- [Dynamic type violation](./dynamic-type-violation.md)
   Detects when an object has the wrong dynamic type.
-- [Invalid float cast](invalid-float-cast.md)
+- [Invalid float cast](./invalid-float-cast.md)
   Detects out-of-range casts to, from, or between floating-point types.
-- [Division by zero](division-by-zero.md)
+- [Division by zero](./division-by-zero.md)
   Detects division where the divisor is zero.
-- [Nonnull argument violation](nonnull-argument-violation.md)
+- [Nonnull argument violation](./nonnull-argument-violation.md)
   Detects when an argument incorrectly receives a null value.
-- [Nonnull return value violation](nonnull-return-value-violation.md)
+- [Nonnull return value violation](./nonnull-return-value-violation.md)
   Detects when a function incorrectly returns null.
-- [Nonnull variable assignment violation](nonnull-variable-assignment-violation.md)
+- [Nonnull variable assignment violation](./nonnull-variable-assignment-violation.md)
   Detects when you incorrectly assign null to a variable.
-- [Null reference creation and null pointer dereference](null-reference-creation-and-null-pointer-dereference.md)
+- [Null reference creation and null pointer dereference](./null-reference-creation-and-null-pointer-dereference.md)
   Detects the creation of null references and null pointer dereferences.
-- [Invalid object size](invalid-object-size.md)
+- [Invalid object size](./invalid-object-size.md)
   Detects invalid pointer casts due to differences in the sizes of types.
-- [Invalid shift](invalid-shift.md)
+- [Invalid shift](./invalid-shift.md)
   Detects invalid and overflowing shifts.
-- [Integer overflow](integer-overflow.md)
+- [Integer overflow](./integer-overflow.md)
   Detects overflow in arithmetic.
-- [Invalid variable-length array](invalid-variable-length-array.md)
+- [Invalid variable-length array](./invalid-variable-length-array.md)
   Detects negative array bounds.
 
 ## See Also
 
-- [Diagnosing issues in the appearance of a running app](diagnosing-issues-in-the-appearance-of-your-running-app.md)
+### Debugging strategies
+- [Diagnosing issues in the appearance of a running app](./diagnosing-issues-in-the-appearance-of-your-running-app.md)
   Inspect your running app to investigate issues in the appearance and placement of the content it displays.
-- [Analyzing HTTP traffic with Instruments](../foundation/analyzing-http-traffic-with-instruments.md)
+- [Analyzing HTTP traffic with Instruments](../Foundation/analyzing-http-traffic-with-instruments.md)
   Measure HTTP-based network performance and usage of your apps.
-- [Detecting when your app contacts domains that may be profiling users](detecting-when-your-app-contacts-domains-that-may-be-profiling-users.md)
+- [Detecting when your app contacts domains that may be profiling users](./detecting-when-your-app-contacts-domains-that-may-be-profiling-users.md)
   Use Instruments to assess whether your app or its third-party SDKs connect to domains that may profile users.
 
 

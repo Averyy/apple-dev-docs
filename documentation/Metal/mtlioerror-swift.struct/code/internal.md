@@ -1,7 +1,8 @@
 # MTLIOError.Code.internal
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that represents a problem internal to the Metal framework.
 
@@ -19,11 +20,16 @@ An error code that represents a problem internal to the Metal framework.
 case `internal`
 ```
 
+```c
+MTLIOErrorInternal
+```
+
 ## See Also
 
-- [MTLIOError.Code.urlInvalid](mtlioerror-swift.struct/code/urlinvalid.md)
+### Error codes
+- [MTLIOError.Code.urlInvalid](./urlinvalid.md)
   An error code that represents a problem with a file URL.
-- [MTLIOError.Code.urlInvalid](mtlioerror-swift.struct/code/urlinvalid.md)
+- [MTLIOError.Code.urlInvalid](./urlinvalid.md)
   An error code that represents a problem with a file URL.
 
 

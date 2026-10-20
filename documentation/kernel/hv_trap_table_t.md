@@ -1,14 +1,15 @@
 # hv_trap_table_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 typedef struct hv_trap_table_t {
     ...
 } hv_trap_table_t;
@@ -17,8 +18,8 @@ typedef struct hv_trap_table_t {
 ## Topics
 
 ### Instance Properties
-- [trap_count](hv_trap_table_t/1507109-trap_count.md)
-- [traps](hv_trap_table_t/1507091-traps.md)
+- [trap_count](./hv_trap_table_t/api-1507109-trap_count.md)
+- [traps](./hv_trap_table_t/api-1507091-traps.md)
 
 
 ---

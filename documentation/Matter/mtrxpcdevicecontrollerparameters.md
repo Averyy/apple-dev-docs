@@ -1,7 +1,8 @@
 # MTRXPCDeviceControllerParameters
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.2+
@@ -18,29 +19,33 @@
 class MTRXPCDeviceControllerParameters
 ```
 
+```objc
+@interface MTRXPCDeviceControllerParameters : MTRDeviceControllerAbstractParameters
+```
+
 ## Topics
 
 ### Initializers
-- [init(XPCConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](mtrxpcdevicecontrollerparameters/init(xpcconnectionblock:uniqueidentifier:)-3wkoh.md)
-- [init(XPConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](mtrxpcdevicecontrollerparameters/init(xpconnectionblock:uniqueidentifier:)-5vgjx.md)
-- [init(xpConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](mtrxpcdevicecontrollerparameters/init(xpconnectionblock:uniqueidentifier:)-44d5q.md)
-- [init(xpcConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](mtrxpcdevicecontrollerparameters/init(xpcconnectionblock:uniqueidentifier:)-9ep5u.md)
+- [init(XPCConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](./mtrxpcdevicecontrollerparameters/init%28xpcconnectionblock,uniqueidentifier%29-3wkoh.md)
+- [init(XPConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](./mtrxpcdevicecontrollerparameters/init%28xpconnectionblock,uniqueidentifier%29-5vgjx.md)
+- [init(xpConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](./mtrxpcdevicecontrollerparameters/init%28xpconnectionblock,uniqueidentifier%29-44d5q.md)
+- [init(xpcConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](./mtrxpcdevicecontrollerparameters/init%28xpcconnectionblock,uniqueidentifier%29-9ep5u.md)
   A controller created from this way will connect to a remote instance of an MTRDeviceController loaded in an XPC Service
 ### Instance Properties
-- [var uniqueIdentifier: UUID](mtrxpcdevicecontrollerparameters/uniqueidentifier.md)
-- [var xpcConnectionBlock: () -> NSXPCConnection](mtrxpcdevicecontrollerparameters/xpcconnectionblock.md)
+- [var uniqueIdentifier: UUID](./mtrxpcdevicecontrollerparameters/uniqueidentifier.md)
+- [var xpcConnectionBlock: () -> NSXPCConnection](./mtrxpcdevicecontrollerparameters/xpcconnectionblock.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRDeviceControllerAbstractParameters](mtrdevicecontrollerabstractparameters.md)
+- [MTRDeviceControllerAbstractParameters](./mtrdevicecontrollerabstractparameters.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

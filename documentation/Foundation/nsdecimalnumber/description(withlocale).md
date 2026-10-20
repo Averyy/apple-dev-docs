@@ -1,7 +1,8 @@
 # description(withLocale:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string representation of the decimal number appropriate for the specified locale.
 
@@ -20,21 +21,26 @@ Returns a string representation of the decimal number appropriate for the specif
 func description(withLocale locale: Any?) -> String
 ```
 
+```objc
+- (NSString *) descriptionWithLocale:(id) locale;
+```
+
 #### Discussion
 
-This is a convenience method for calling the [`NSDecimalString(_:_:)`](nsdecimalstring(_:_:).md) function.
+This is a convenience method for calling the [`NSDecimalString(_:_:)`](../nsdecimalstring%28_,_%29.md) function.
 
 ## Parameters
 
-- `locale`: Either an instance of [`NSLocale`](nslocale.md) or a dictionary with a string value corresponding to the [`decimalSeparator`](nslocale/key/decimalseparator.md) key.
+- `locale`: Either an instance of [`NSLocale`](../nslocale.md) or a dictionary with a string value corresponding to the [`decimalSeparator`](../nslocale/key/decimalseparator.md) key.
 
 ## See Also
 
-- [var decimalValue: Decimal](nsdecimalnumber/decimalvalue.md)
-  The decimal number’s value, expressed as an [`Decimal`](decimal.md) structure.
-- [var doubleValue: Double](nsdecimalnumber/doublevalue.md)
+### Accessing the Value
+- [var decimalValue: Decimal](./decimalvalue.md)
+  The decimal number’s value, expressed as an [`Decimal`](../decimal.md) structure.
+- [var doubleValue: Double](./doublevalue.md)
   The decimal number’s closest approximate `double` value.
-- [var objCType: UnsafePointer<CChar>](nsdecimalnumber/objctype.md)
+- [var objCType: UnsafePointer<CChar>](./objctype.md)
   A C string containing the Objective-C type for the data contained in the decimal number object.
 
 

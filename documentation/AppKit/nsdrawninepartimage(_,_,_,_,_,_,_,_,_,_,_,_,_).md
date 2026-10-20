@@ -1,7 +1,8 @@
 # NSDrawNinePartImage(_:_:_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: AppKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Draws a nine-part tiled image.
 
@@ -14,6 +15,10 @@ Draws a nine-part tiled image.
 func NSDrawNinePartImage(_ frame: NSRect, _ topLeftCorner: NSImage?, _ topEdgeFill: NSImage?, _ topRightCorner: NSImage?, _ leftEdgeFill: NSImage?, _ centerFill: NSImage?, _ rightEdgeFill: NSImage?, _ bottomLeftCorner: NSImage?, _ bottomEdgeFill: NSImage?, _ bottomRightCorner: NSImage?, _ op: NSCompositingOperation, _ alphaFraction: CGFloat, _ flipped: Bool)
 ```
 
+```c
+extern void NSDrawNinePartImage(NSRect frame, NSImage *topLeftCorner, NSImage *topEdgeFill, NSImage *topRightCorner, NSImage *leftEdgeFill, NSImage *centerFill, NSImage *rightEdgeFill, NSImage *bottomLeftCorner, NSImage *bottomEdgeFill, NSImage *bottomRightCorner, NSCompositingOperation op, CGFloat alphaFraction, BOOL flipped);
+```
+
 #### Discussion
 
 This function is typically used to draw custom cells that are capable of being resized both vertically and horizontally. Cells of this type are comprised of four fixed-size corner images along and a set of edge and center images that are used to fill the gaps between the corners. These cells allow you to create sophisticated looking controls that can grow and shrink in any direction without distorting the control’s overall appearance.
@@ -22,7 +27,7 @@ You should prefer the use of this function over your own custom code for handlin
 
 This function uses the top-left and bottom-right corner images to determine the widths and heights of the edge areas that need to be filled. If the width or height of the bottom-left and top-right images are not sized appropriately, they may be scaled to fill their corner area. Edge areas between the corners are tiled using the corresponding image. Similarly, the center area is tiled using the specified center image.
 
-The `flipped` parameter lets you reorient the contents of each image when drawing in a flipped coordinate system. By default, images use an internal coordinate system that is not flipped. Rendering such an image in a flipped coordinate system would therefore cause the image to appear upside down. Passing [`true`](https://developer.apple.com/documentation/swift/true) for the `flipped` parameter adjusts the image’s internal coordinate system to draw it correctly in a flipped environment.
+The `flipped` parameter lets you reorient the contents of each image when drawing in a flipped coordinate system. By default, images use an internal coordinate system that is not flipped. Rendering such an image in a flipped coordinate system would therefore cause the image to appear upside down. Passing [`true`](../Swift/true.md) for the `flipped` parameter adjusts the image’s internal coordinate system to draw it correctly in a flipped environment.
 
 ## Parameters
 
@@ -38,11 +43,12 @@ The `flipped` parameter lets you reorient the contents of each image when drawin
 - `bottomRightCorner`: The image to display in the bottom-right corner.
 - `op`: The compositing operation to use when rendering the images.
 - `alphaFraction`: The alpha value to apply to the rendered image. This value can range between 0.0 and 1.0, with 0.0 being fully transparent and 1.0 being fully opaque.
-- `flipped`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if you are drawing the images in a flipped coordinate system; otherwise, specify [`false`](https://developer.apple.com/documentation/swift/false).
+- `flipped`: Specify [`true`](../Swift/true.md) if you are drawing the images in a flipped coordinate system; otherwise, specify [`false`](../Swift/false.md).
 
 ## See Also
 
-- [func NSDrawThreePartImage(NSRect, NSImage?, NSImage?, NSImage?, Bool, NSCompositingOperation, CGFloat, Bool)](nsdrawthreepartimage(_:_:_:_:_:_:_:_:).md)
+### Drawing Multipart Images
+- [func NSDrawThreePartImage(NSRect, NSImage?, NSImage?, NSImage?, Bool, NSCompositingOperation, CGFloat, Bool)](./nsdrawthreepartimage%28_,_,_,_,_,_,_,_%29.md)
   Draws a three-part tiled image.
 
 

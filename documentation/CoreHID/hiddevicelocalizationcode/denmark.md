@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.denmark
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Danish in the HID specification.
 

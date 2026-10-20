@@ -1,7 +1,8 @@
 # hv_gic_send_msi(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sends a message signaled interrupt (MSI).
 
@@ -14,13 +15,17 @@ Sends a message signaled interrupt (MSI).
 func hv_gic_send_msi(_ address: hv_ipa_t, _ intid: UInt32) -> hv_return_t
 ```
 
+```c
+extern hv_return_t hv_gic_send_msi(hv_ipa_t address, uint32_t intid);
+```
+
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) on success; otherwise, an error code.
+[`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
 #### Discussion
 
-Use the address of the [`HV_GIC_REG_GICM_SET_SPI_NSR`](hv_gic_reg_gicm_set_spi_nsr.md) register in the MSI frame.
+Use the address of the [`HV_GIC_REG_GICM_SET_SPI_NSR`](./hv_gic_reg_gicm_set_spi_nsr.md) register in the MSI frame.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ Use the address of the [`HV_GIC_REG_GICM_SET_SPI_NSR`](hv_gic_reg_gicm_set_spi_n
 
 ## See Also
 
-- [func hv_gic_set_spi(UInt32, Bool) -> hv_return_t](hv_gic_set_spi(_:_:).md)
+### Sending interrupts
+- [func hv_gic_set_spi(UInt32, Bool) -> hv_return_t](./hv_gic_set_spi%28_,_%29.md)
   Triggers a shared peripheral interrupt (SPI).
 
 

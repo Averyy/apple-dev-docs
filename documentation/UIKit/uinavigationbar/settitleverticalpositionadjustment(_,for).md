@@ -1,7 +1,8 @@
 # setTitleVerticalPositionAdjustment(_:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the title’s vertical position adjustment for given bar metrics.
 
@@ -9,13 +10,17 @@ Sets the title’s vertical position adjustment for given bar metrics.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func setTitleVerticalPositionAdjustment(_ adjustment: CGFloat, for barMetrics: UIBarMetrics)
+```
+
+```objc
+- (void) setTitleVerticalPositionAdjustment:(CGFloat) adjustment forBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
 ## Parameters
@@ -25,11 +30,12 @@ func setTitleVerticalPositionAdjustment(_ adjustment: CGFloat, for barMetrics: U
 
 ## See Also
 
-- [var titleTextAttributes: [NSAttributedString.Key : Any]?](uinavigationbar/titletextattributes.md)
+### Configuring the title
+- [var titleTextAttributes: [NSAttributedString.Key : Any]?](./titletextattributes.md)
   Display attributes for the bar’s title text.
-- [var largeTitleTextAttributes: [NSAttributedString.Key : Any]?](uinavigationbar/largetitletextattributes.md)
+- [var largeTitleTextAttributes: [NSAttributedString.Key : Any]?](./largetitletextattributes.md)
   Display attributes for the bar’s large title text.
-- [func titleVerticalPositionAdjustment(for: UIBarMetrics) -> CGFloat](uinavigationbar/titleverticalpositionadjustment(for:).md)
+- [func titleVerticalPositionAdjustment(for: UIBarMetrics) -> CGFloat](./titleverticalpositionadjustment%28for%29.md)
   Returns the title’s vertical position adjustment for given bar metrics.
 
 

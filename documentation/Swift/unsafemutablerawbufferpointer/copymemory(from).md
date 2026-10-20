@@ -1,7 +1,8 @@
 # copyMemory(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the bytes from the given buffer to this buffer’s memory.
 

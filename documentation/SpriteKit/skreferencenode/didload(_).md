@@ -1,7 +1,8 @@
 # didLoad(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method called by SpriteKit after the reference node’s contents are loaded.
 
@@ -18,6 +19,10 @@ A method called by SpriteKit after the reference node’s contents are loaded.
 
 ```swift
 func didLoad(_ node: SKNode?)
+```
+
+```objc
+- (void) didLoadReferenceNode:(SKNode *) node;
 ```
 
 #### Discussion

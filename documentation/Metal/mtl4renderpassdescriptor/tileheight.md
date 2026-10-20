@@ -1,7 +1,8 @@
 # tileHeight
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the tiles, in pixels, a render pass you create with this descriptor applies to its attachments.
 
@@ -19,11 +20,15 @@ The height of the tiles, in pixels, a render pass you create with this descripto
 var tileHeight: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger tileHeight;
+```
+
 #### Discussion
 
 For tile-based rendering, Metal divides each render attachment into smaller regions, or *tiles*. The property’s default is `0`, which tells Metal to select a size that fits in tile memory.
 
-See [`Tailor your apps for Apple GPUs and tile-based deferred rendering`](tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering.md) for more information about tiles, tile memory, and deferred rendering.
+See [Tailor your apps for Apple GPUs and tile-based deferred rendering](../tailor-your-apps-for-apple-gpus-and-tile-based-deferred-rendering.md) for more information about tiles, tile memory, and deferred rendering.
 
 
 ---

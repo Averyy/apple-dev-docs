@@ -1,7 +1,8 @@
 # info
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that identifies more information about the item.
 
@@ -20,11 +21,16 @@ A key that identifies more information about the item.
 static let info: AVMetadataExtraAttributeKey
 ```
 
+```c
+extern AVMetadataExtraAttributeKey const AVMetadataExtraAttributeInfoKey;
+```
+
 ## See Also
 
-- [static let valueURI: AVMetadataExtraAttributeKey](avmetadataextraattributekey/valueuri.md)
+### Extra attribute keys
+- [static let valueURI: AVMetadataExtraAttributeKey](./valueuri.md)
   A key that identifies a resource to use as the item’s value.
-- [static let baseURI: AVMetadataExtraAttributeKey](avmetadataextraattributekey/baseuri.md)
+- [static let baseURI: AVMetadataExtraAttributeKey](./baseuri.md)
   A key that identifies the base URI the item uses to resolve its related URIs.
 
 

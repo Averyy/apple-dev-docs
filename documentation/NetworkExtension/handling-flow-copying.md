@@ -1,6 +1,7 @@
 # Handling Flow Copying
 
-**Framework**: Network Extension
+**Framework**: Network Extension  
+**Role**: Article
 
 Exchange data streams by using proxy-provider classes.
 
@@ -10,11 +11,11 @@ In the context of a Network Extension provider, a *flow* is a bidirectional stre
 
 *Flow copying* has two components: inbound and outbound data. Think of handling inbound data as reading from the remote side of the connection and writing to the local flow. Likewise, handling outbound data is comparable to reading from the local flow and writing to the remote side of the connection.
 
-Some proxy providers may only want to flow copy for a specific set of traffic, such as only Safari flows. Starting with macOS 11,  [`NETransparentProxyProvider`](netransparentproxyprovider.md) gives the provider the option to handle the flow or let the system do it. This is the only provider you can use to do this. The only other way to limit flows claimed by the provider is to alter the `NETunnelNetworkSettings`.
+Some proxy providers may only want to flow copy for a specific set of traffic, such as only Safari flows. Starting with macOS 11,  [`NETransparentProxyProvider`](./netransparentproxyprovider.md) gives the provider the option to handle the flow or let the system do it. This is the only provider you can use to do this. The only other way to limit flows claimed by the provider is to alter the `NETunnelNetworkSettings`.
 
-When implementing a [`NEAppProxyProvider`](neappproxyprovider.md) or [`NEDNSProxyProvider`](nednsproxyprovider.md), you must deal with flows. The system calls the [`handleNewFlow(_:)`](neappproxyprovider/handlenewflow(_:).md) method for a flow that the proxy provider claims, based on network settings configured in the provider. A flow enters this method in a closed state, so returning `false` in this method indicates the flow remains closed and the system discards it.
+When implementing a [`NEAppProxyProvider`](./neappproxyprovider.md) or [`NEDNSProxyProvider`](./nednsproxyprovider.md), you must deal with flows. The system calls the [`handleNewFlow(_:)`](./neappproxyprovider/handlenewflow%28_%29.md) method for a flow that the proxy provider claims, based on network settings configured in the provider. A flow enters this method in a closed state, so returning `false` in this method indicates the flow remains closed and the system discards it.
 
-> **Note**:  Starting with macOS 11, you can use [`NETransparentProxyProvider`](netransparentproxyprovider.md) to flow copy specific data streams.
+> **Note**:  Starting with macOS 11, you can use [`NETransparentProxyProvider`](./netransparentproxyprovider.md) to flow copy specific data streams.
 
 ##### Decide How to Handle a Flow
 
@@ -27,18 +28,18 @@ When implementing a [`NEAppProxyProvider`](neappproxyprovider.md) or [`NEDNSProx
 
 ##### Open the Connection
 
-Once you’ve decided how you want to handle the flow, the next step is to set up the remote side of the connection. You can decide how the provider handles the remote side of the connection, but this article assumes usage of an API such as [`NWConnection`](https://developer.apple.com/documentation/network/nwconnection) or [`nw_connection_t`](https://developer.apple.com/documentation/network/nw_connection_t). The steps to open the connection are:
+Once you’ve decided how you want to handle the flow, the next step is to set up the remote side of the connection. You can decide how the provider handles the remote side of the connection, but this article assumes usage of an API such as [`NWConnection`](../Network/nwconnection.md) or [`nw_connection_t`](../Network/nw_connection_t.md). The steps to open the connection are:
 
-1. Cast the original [`NEAppProxyFlow`](neappproxyflow.md) object provided from `handleNewFlow` into the transport protocol object that represents the flow the provider is going to copy. For example, if the provider flow copies TCP, use [`NEAppProxyTCPFlow`](neappproxytcpflow.md), and for UDP, use [`NEAppProxyUDPFlow`](neappproxyudpflow.md). The new `NEAppProxyTCPFlow` provides the `remoteEndpoint` object with which you set up the remote connection.
-2. Open the remote connection and wait until it transitions to the [`NWConnection.State.ready`](https://developer.apple.com/documentation/network/nwconnection/state-swift.enum/ready).
+1. Cast the original [`NEAppProxyFlow`](./neappproxyflow.md) object provided from `handleNewFlow` into the transport protocol object that represents the flow the provider is going to copy. For example, if the provider flow copies TCP, use [`NEAppProxyTCPFlow`](./neappproxytcpflow.md), and for UDP, use [`NEAppProxyUDPFlow`](./neappproxyudpflow.md). The new `NEAppProxyTCPFlow` provides the `remoteEndpoint` object with which you set up the remote connection.
+2. Open the remote connection and wait until it transitions to the [`NWConnection.State.ready`](../Network/nwconnection/state-swift.enum/ready.md).
 3. After the remote connection is ready, open the local flow using the `NWHostEndpoint` object to represent a local Endpoint.
 
 ##### Handle Inbound Data
 
-When both sides of the connection move into the [`NWConnection.State.ready`](https://developer.apple.com/documentation/network/nwconnection/state-swift.enum/ready), your next step is to define flow copying methods to read and write inbound data to both sides of the connection. Using `NWConnection` and `NEAppProxyTCPFlow` as an example, you use the following APIs, as shown in the code below:
+When both sides of the connection move into the [`NWConnection.State.ready`](../Network/nwconnection/state-swift.enum/ready.md), your next step is to define flow copying methods to read and write inbound data to both sides of the connection. Using `NWConnection` and `NEAppProxyTCPFlow` as an example, you use the following APIs, as shown in the code below:
 
-- (Remote side) [`receive(minimumIncompleteLength:maximumLength:completion:)`](https://developer.apple.com/documentation/network/nwconnection/receive(minimumincompletelength:maximumlength:completion:))
-- (Flow side) [`write(_:withCompletionHandler:)`](neappproxytcpflow/write(_:withcompletionhandler:).md)
+- (Remote side) [`receive(minimumIncompleteLength:maximumLength:completion:)`](../Network/nwconnection/receive%28minimumincompletelength,maximumlength,completion%29.md)
+- (Flow side) [`write(_:withCompletionHandler:)`](./neappproxytcpflow/write%28_,withcompletionhandler%29.md)
 
 ```swift
 let flow: NEAppProxyTCPFlow
@@ -77,7 +78,7 @@ func inboundCopier() {
 
 Handle outbound data as you do inbound data, by creating an outbound copier that reads from the local flow and writes to the remote connection. Using `NWConnection` and `NEAppProxyTCPFlow` once again as examples, the methods are listed here and the code is below:
 
-- (Flow side) [`readData(completionHandler:)`](neappproxytcpflow/readdata(completionhandler:).md)
+- (Flow side) [`readData(completionHandler:)`](./neappproxytcpflow/readdata%28completionhandler%29.md)
 - (Remote side) `send(content:contentContext:isComplete:completion:)`
 
 ```swift
@@ -106,25 +107,26 @@ func outboundCopier() {
 
 ##### Implement Flow Control
 
-Flow control is important because it keeps the Network Extension from allocating unbounded amounts of memory that can lead to slow performance or even a *jetsam event*, where the system frees memory by terminating applications. Such conditions can occur when a device experiences poor network conditions or large volumes of data pass through the provider. For more on a *jetsam event*, see [`Identifying high-memory use with jetsam event reports`](https://developer.apple.com/documentation/xcode/identifying-high-memory-use-with-jetsam-event-reports).
+Flow control is important because it keeps the Network Extension from allocating unbounded amounts of memory that can lead to slow performance or even a *jetsam event*, where the system frees memory by terminating applications. Such conditions can occur when a device experiences poor network conditions or large volumes of data pass through the provider. For more on a *jetsam event*, see [Identifying high-memory use with jetsam event reports](../Xcode/identifying-high-memory-use-with-jetsam-event-reports.md).
 
 You can implement flow control by using an implicit technique, where all data is written before any more is read.  This prevents buffering too much data at any one time.  Buffering larger amounts of data can lead to memory problems. If the provider must buffer data, set an upper bound on the buffer and don’t read until the buffer has space to hold more data.
 
 ##### Close the Connections
 
-When the system marks the connection as complete, the flow copying process is finished. Once finished, the flow copying process calls [`cancel()`](https://developer.apple.com/documentation/network/nwconnection/cancel()) on the remote side of the connection, and calls [`closeReadWithError(_:)`](neappproxyflow/closereadwitherror(_:).md) and [`closeWriteWithError(_:)`](neappproxyflow/closewritewitherror(_:).md)  on the flow. Note that you need to apply the same cancellation and close process when an error takes place on either side of the connection.
+When the system marks the connection as complete, the flow copying process is finished. Once finished, the flow copying process calls [`cancel()`](../Network/nwconnection/cancel%28%29.md) on the remote side of the connection, and calls [`closeReadWithError(_:)`](./neappproxyflow/closereadwitherror%28_%29.md) and [`closeWriteWithError(_:)`](./neappproxyflow/closewritewitherror%28_%29.md)  on the flow. Note that you need to apply the same cancellation and close process when an error takes place on either side of the connection.
 
 ## See Also
 
-- [class NEAppProxyTCPFlow](neappproxytcpflow.md)
+### Flow handling
+- [class NEAppProxyTCPFlow](./neappproxytcpflow.md)
   An object for reading and writing data to and from a TCP connection being proxied by the provider.
-- [class NEAppProxyUDPFlow](neappproxyudpflow.md)
+- [class NEAppProxyUDPFlow](./neappproxyudpflow.md)
   An object for reading and writing data to and from a UDP conversation being proxied by the provider.
-- [class NEAppProxyFlow](neappproxyflow.md)
+- [class NEAppProxyFlow](./neappproxyflow.md)
   An abstract base class shared by NEAppProxyTCPFlow and NEAppProxyUDPFlow.
-- [class NEFlowMetaData](neflowmetadata.md)
+- [class NEFlowMetaData](./neflowmetadata.md)
   Additional information about data flowing through a per-app VPN provider.
-- [In-Provider Networking](in-provider-networking.md)
+- [In-Provider Networking](./in-provider-networking.md)
   Network APIs for use by all types of NetworkExtension providers and by hotspot helpers.
 
 

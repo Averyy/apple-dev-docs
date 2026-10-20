@@ -1,7 +1,8 @@
 # init(kind:intent:provider:content:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration for a widget by using a custom intent definition to provide user-configurable options.
 
@@ -20,6 +21,8 @@ Creates a configuration for a widget by using a custom intent definition to prov
 @preconcurrency init<Provider>(kind: String, intent: Intent.Type, provider: Provider, @ViewBuilder content: @escaping (Provider.Entry) -> Content) where Intent == Provider.Intent, Provider : IntentTimelineProvider
 ```
 
+Available when `Intent` inherits `INIntent` and `Content` conforms to `View`.
+
 ## Parameters
 
 - `kind`: A unique string that you choose.
@@ -29,7 +32,8 @@ Creates a configuration for a widget by using a custom intent definition to prov
 
 ## See Also
 
-- [var body: Self.Body](../swiftui/widgetconfiguration/body-swift.property.md)
+### Creating a widget configuration
+- [var body: Self.Body](../../SwiftUI/widgetconfiguration/body-swift.property.md)
   The content and behavior of this widget.
 
 

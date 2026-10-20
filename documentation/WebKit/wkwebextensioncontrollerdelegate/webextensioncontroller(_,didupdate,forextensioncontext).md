@@ -1,7 +1,8 @@
 # webExtensionController(_:didUpdate:forExtensionContext:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an action’s properties are updated.
 
@@ -16,6 +17,10 @@ Called when an action’s properties are updated.
 
 ```swift
 optional func webExtensionController(_ controller: WKWebExtensionController, didUpdate action: WKWebExtension.Action, forExtensionContext context: WKWebExtensionContext)
+```
+
+```objc
+- (void) webExtensionController:(WKWebExtensionController *) controller didUpdateAction:(WKWebExtensionAction *) action forExtensionContext:(WKWebExtensionContext *) context;
 ```
 
 #### Discussion

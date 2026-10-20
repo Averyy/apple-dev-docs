@@ -1,7 +1,8 @@
 # SWHighlightPersistenceEventTrigger
 
 **Framework**: Shared with You  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Signifies the type of persistence event trigger.
 
@@ -18,33 +19,38 @@ Signifies the type of persistence event trigger.
 enum SWHighlightPersistenceEventTrigger
 ```
 
+```c
+enum SWHighlightPersistenceEventTrigger : NSInteger;
+```
+
 ## Topics
 
 ### Persistence actions
-- [SWHighlightPersistenceEventTrigger.created](swhighlightpersistenceeventtrigger/created.md)
+- [SWHighlightPersistenceEventTrigger.created](./swhighlightpersistenceeventtrigger/created.md)
   Signifies a creation event.
-- [SWHighlightPersistenceEventTrigger.deleted](swhighlightpersistenceeventtrigger/deleted.md)
+- [SWHighlightPersistenceEventTrigger.deleted](./swhighlightpersistenceeventtrigger/deleted.md)
   Signifies a deletion event.
-- [SWHighlightPersistenceEventTrigger.renamed](swhighlightpersistenceeventtrigger/renamed.md)
+- [SWHighlightPersistenceEventTrigger.renamed](./swhighlightpersistenceeventtrigger/renamed.md)
   Signifies a rename event.
-- [SWHighlightPersistenceEventTrigger.moved](swhighlightpersistenceeventtrigger/moved.md)
+- [SWHighlightPersistenceEventTrigger.moved](./swhighlightpersistenceeventtrigger/moved.md)
   Signifies a move event.
 ### Initializers
-- [init?(rawValue: Int)](swhighlightpersistenceeventtrigger/init(rawvalue:).md)
+- [init?(rawValue: Int)](./swhighlightpersistenceeventtrigger/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var persistenceEventTrigger: SWHighlightPersistenceEventTrigger](swhighlightpersistenceevent/persistenceeventtrigger.md)
+### Accessing an event trigger
+- [var persistenceEventTrigger: SWHighlightPersistenceEventTrigger](./swhighlightpersistenceevent/persistenceeventtrigger.md)
   The persistence event trigger for the highlight.
 
 

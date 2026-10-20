@@ -1,7 +1,8 @@
 # NSTextFinder.MatchingType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The following constants indicate the type of search anchor an action should perform.
 
@@ -14,36 +15,41 @@ The following constants indicate the type of search anchor an action should perf
 enum MatchingType
 ```
 
+```c
+enum NSTextFinderMatchingType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSTextFinder.MatchingType.contains](nstextfinder/matchingtype/contains.md)
+- [NSTextFinder.MatchingType.contains](./matchingtype/contains.md)
   The match contains the string.
-- [NSTextFinder.MatchingType.startsWith](nstextfinder/matchingtype/startswith.md)
+- [NSTextFinder.MatchingType.startsWith](./matchingtype/startswith.md)
   The match begins with the string.
-- [NSTextFinder.MatchingType.fullWord](nstextfinder/matchingtype/fullword.md)
+- [NSTextFinder.MatchingType.fullWord](./matchingtype/fullword.md)
   The match exactly matches the string.
-- [NSTextFinder.MatchingType.endsWith](nstextfinder/matchingtype/endswith.md)
+- [NSTextFinder.MatchingType.endsWith](./matchingtype/endswith.md)
   The match ends with the string.
 ### Initializers
-- [init?(rawValue: Int)](nstextfinder/matchingtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./matchingtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSTextFinder.Action](nstextfinder/action.md)
-  These constants specify the user interface item tags that correspond find action. These constants are passed to the [`performTextFinderAction(_:)`](nsresponder/performtextfinderaction(_:).md) method, the responder will call the appropriate method for the tag. That method will, in turn, determine the desired action and invoke the appropriate method in the `NSTextFinder` object’s `NSTextFinderClient` protocol.
-- [Text Finder Options For The Pasteboard](text-finder-options-for-the-pasteboard.md)
-  The following keys are used for communicating `NSTextFinder` search options via pasteboard. Use the [`textFinderOptions`](nspasteboard/pasteboardtype/textfinderoptions.md) type
+### Constants
+- [NSTextFinder.Action](./action.md)
+  These constants specify the user interface item tags that correspond find action. These constants are passed to the [`performTextFinderAction(_:)`](../nsresponder/performtextfinderaction%28_%29.md) method, the responder will call the appropriate method for the tag. That method will, in turn, determine the desired action and invoke the appropriate method in the `NSTextFinder` object’s `NSTextFinderClient` protocol.
+- [Text Finder Options For The Pasteboard](../text-finder-options-for-the-pasteboard.md)
+  The following keys are used for communicating `NSTextFinder` search options via pasteboard. Use the [`textFinderOptions`](../nspasteboard/pasteboardtype/textfinderoptions.md) type
 
 
 ---

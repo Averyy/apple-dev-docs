@@ -1,7 +1,8 @@
 # kSKDocumentStateAddPending
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies that the document is not in the index but will be added after the index is flushed or closed.
 

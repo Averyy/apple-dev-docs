@@ -1,7 +1,8 @@
 # displayShortName
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized extension short name.
 
@@ -16,6 +17,10 @@ The localized extension short name.
 
 ```swift
 var displayShortName: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * displayShortName;
 ```
 
 #### Discussion

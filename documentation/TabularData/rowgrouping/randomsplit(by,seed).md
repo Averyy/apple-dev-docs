@@ -1,7 +1,8 @@
 # randomSplit(by:seed:)
 
 **Framework**: TabularData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates two row groupings by randomly splitting the original with a proportion and a seed number.
 
@@ -19,6 +20,8 @@ Generates two row groupings by randomly splitting the original with a proportion
 ```swift
 func randomSplit(by proportion: Double, seed: Int? = nil) -> (RowGrouping<GroupingKey>, RowGrouping<GroupingKey>)
 ```
+
+Available when `GroupingKey` conforms to `Hashable`.
 
 #### Return Value
 

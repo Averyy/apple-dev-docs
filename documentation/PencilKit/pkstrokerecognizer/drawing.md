@@ -1,7 +1,8 @@
 # drawing
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The drawing the recognizer analyzes.
 
@@ -20,7 +21,8 @@ final var drawing: PKDrawing { get }
 
 ## See Also
 
-- [func updateDrawing(PKDrawing) async](pkstrokerecognizer/updatedrawing(_:).md)
+### Providing drawing content
+- [func updateDrawing(PKDrawing) async](./updatedrawing%28_%29.md)
   Updates the drawing the recognizer analyzes.
 
 

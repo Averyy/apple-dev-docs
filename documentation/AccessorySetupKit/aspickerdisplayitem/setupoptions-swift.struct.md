@@ -1,7 +1,8 @@
 # ASPickerDisplayItem.SetupOptions
 
 **Framework**: AccessorySetupKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Setup options offered by the accessory picker.
 
@@ -15,37 +16,42 @@ Setup options offered by the accessory picker.
 struct SetupOptions
 ```
 
+```c
+enum ASPickerDisplayItemSetupOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Creating an options instance
-- [init(rawValue: UInt)](aspickerdisplayitem/setupoptions-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./setupoptions-swift.struct/init%28rawvalue%29.md)
 ### Options
-- [static var rename: ASPickerDisplayItem.SetupOptions](aspickerdisplayitem/setupoptions-swift.struct/rename.md)
+- [static var rename: ASPickerDisplayItem.SetupOptions](./setupoptions-swift.struct/rename.md)
   An option to ask the person using the app to rename the accessory.
-- [static var confirmAuthorization: ASPickerDisplayItem.SetupOptions](aspickerdisplayitem/setupoptions-swift.struct/confirmauthorization.md)
+- [static var confirmAuthorization: ASPickerDisplayItem.SetupOptions](./setupoptions-swift.struct/confirmauthorization.md)
   An option to require the app to finish accessory authorization before showing the setup view.
-- [static var finishInApp: ASPickerDisplayItem.SetupOptions](aspickerdisplayitem/setupoptions-swift.struct/finishinapp.md)
+- [static var finishInApp: ASPickerDisplayItem.SetupOptions](./setupoptions-swift.struct/finishinapp.md)
   An option to ask the person setting up the accessory to finish additional setup in the app after the accessory is authorized.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var setupOptions: ASPickerDisplayItem.SetupOptions](aspickerdisplayitem/setupoptions-swift.property.md)
+### Customizing setup options
+- [var setupOptions: ASPickerDisplayItem.SetupOptions](./setupoptions-swift.property.md)
   Custom setup options for the accessory.
-- [var renameOptions: ASAccessory.RenameOptions](aspickerdisplayitem/renameoptions.md)
+- [var renameOptions: ASAccessory.RenameOptions](./renameoptions.md)
   Options to allow renaming a matched accessory.
-- [ASAccessory.RenameOptions](asaccessory/renameoptions.md)
+- [ASAccessory.RenameOptions](../asaccessory/renameoptions.md)
   Options that affect the behavior of an accessory renaming operation.
 
 

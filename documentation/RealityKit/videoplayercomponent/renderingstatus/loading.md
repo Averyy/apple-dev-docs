@@ -1,7 +1,8 @@
 # VideoPlayerComponent.RenderingStatus.loading
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Content is Loading
 

@@ -1,7 +1,8 @@
 # kMDItemPixelWidth
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The width, in pixels, of the contents. For example, the image width or the video frame width. A CFNumber.
 
@@ -12,6 +13,10 @@ The width, in pixels, of the contents. For example, the image width or the video
 
 ```swift
 let kMDItemPixelWidth: CFString!
+```
+
+```c
+const CFStringRef kMDItemPixelWidth;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Subtracts one value from another and produces their difference.
@@ -61,11 +62,12 @@ x &- 50                 // 227
 
 ## See Also
 
-- [static func + (Self, Self) -> Self](binaryinteger/+(_:_:).md)
+### Arithmetic
+- [static func + (Self, Self) -> Self](./plus%28_,_%29.md)
   Adds two values and produces their sum.
-- [static func * (Self, Self) -> Self](binaryinteger/*(_:_:).md)
+- [static func * (Self, Self) -> Self](./star%28_,_%29.md)
   Multiplies two values and produces their product.
-- [static func / (Self, Self) -> Self](binaryinteger/_(_:_:)-8zc6l.md)
+- [static func / (Self, Self) -> Self](./op%28_,_%29-8zc6l.md)
   Returns the quotient of dividing the first value by the second.
 
 

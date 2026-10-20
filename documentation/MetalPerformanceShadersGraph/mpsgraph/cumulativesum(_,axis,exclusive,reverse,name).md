@@ -1,7 +1,8 @@
 # cumulativeSum(_:axis:exclusive:reverse:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the cumulative sum of the input tensor along the specified axis.
 
@@ -17,6 +18,10 @@ Computes the cumulative sum of the input tensor along the specified axis.
 
 ```swift
 func cumulativeSum(_ tensor: MPSGraphTensor, axis: Int, exclusive: Bool, reverse: Bool, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) cumulativeSumWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis exclusive:(BOOL) exclusive reverse:(BOOL) reverse name:(NSString *) name;
 ```
 
 #### Return Value

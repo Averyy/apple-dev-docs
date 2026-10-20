@@ -1,7 +1,8 @@
 # currentVersionOfItem(at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the most recent version object for the file at the specified URL.
 
@@ -20,6 +21,10 @@ Returns the most recent version object for the file at the specified URL.
 class func currentVersionOfItem(at url: URL) -> NSFileVersion?
 ```
 
+```objc
++ (NSFileVersion *) currentVersionOfItemAtURL:(NSURL *) url;
+```
+
 #### Return Value
 
 The version object representing the current version of the file or `nil` if there is no such file.
@@ -30,11 +35,12 @@ The version object representing the current version of the file or `nil` if ther
 
 ## See Also
 
-- [class func otherVersionsOfItem(at: URL) -> [NSFileVersion]?](nsfileversion/otherversionsofitem(at:).md)
+### Getting the Version of a File
+- [class func otherVersionsOfItem(at: URL) -> [NSFileVersion]?](./otherversionsofitem%28at%29.md)
   Returns all versions of the specified file except the current version.
-- [class func version(itemAt: URL, forPersistentIdentifier: Any) -> NSFileVersion?](nsfileversion/version(itemat:forpersistentidentifier:).md)
+- [class func version(itemAt: URL, forPersistentIdentifier: Any) -> NSFileVersion?](./version%28itemat,forpersistentidentifier%29.md)
   Returns the version of the file that has the specified persistent ID.
-- [class func temporaryDirectoryURLForNewVersionOfItem(at: URL) -> URL](nsfileversion/temporarydirectoryurlfornewversionofitem(at:).md)
+- [class func temporaryDirectoryURLForNewVersionOfItem(at: URL) -> URL](./temporarydirectoryurlfornewversionofitem%28at%29.md)
   Creates and returns a temporary directory to use for saving the contents of the file.
 
 

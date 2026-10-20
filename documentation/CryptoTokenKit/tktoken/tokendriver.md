@@ -1,7 +1,8 @@
 # tokenDriver
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The token driver.
 
@@ -18,6 +19,10 @@ The token driver.
 
 ```swift
 var tokenDriver: TKTokenDriver { get }
+```
+
+```objc
+@property (readonly) TKTokenDriver * tokenDriver;
 ```
 
 

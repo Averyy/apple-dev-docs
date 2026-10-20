@@ -1,7 +1,8 @@
 # errSecInvalidRequestInputs
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The request inputs are not valid.
 
@@ -18,6 +19,10 @@ The request inputs are not valid.
 
 ```swift
 var errSecInvalidRequestInputs: OSStatus { get }
+```
+
+```c
+errSecInvalidRequestInputs
 ```
 
 

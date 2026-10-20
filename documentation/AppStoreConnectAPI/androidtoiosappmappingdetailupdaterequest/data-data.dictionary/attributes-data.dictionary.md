@@ -1,7 +1,8 @@
 # AndroidToIosAppMappingDetailUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an Android to iOS app mapping detail update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an Android to iOS app mapping detail update request res
 
 ## Declaration
 
-```swift
+```
 object AndroidToIosAppMappingDetailUpdateRequest.Data.Attributes
 ```
 

@@ -1,7 +1,8 @@
 # AVAudioSessionSpatialAudioEnabledKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A user info key that you use to retrieve the state of spatial playback.
 
@@ -17,6 +18,10 @@ A user info key that you use to retrieve the state of spatial playback.
 
 ```swift
 let AVAudioSessionSpatialAudioEnabledKey: String
+```
+
+```c
+extern NSString * const AVAudioSessionSpatialAudioEnabledKey;
 ```
 
 

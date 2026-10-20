@@ -1,14 +1,15 @@
 # suggestedAction
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that describes how the electrical load uses the guidance.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,9 +23,10 @@ An example of suggested actions for the load could be shift-able or reduce-able.
 
 ## See Also
 
-- [ElectricityGuidance.Query](electricityguidance/query.md)
+### Getting the guidance suggestion
+- [ElectricityGuidance.Query](./query.md)
   A structure that encapsulates a electricity guidance query request.
-- [ElectricityGuidance.SuggestedAction](electricityguidance/suggestedaction-swift.enum.md)
+- [ElectricityGuidance.SuggestedAction](./suggestedaction-swift.enum.md)
   A description of how the electrical load uses the guidance.
 
 

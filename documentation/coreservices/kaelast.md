@@ -1,7 +1,8 @@
 # kAELast
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies the last element in the container.
 

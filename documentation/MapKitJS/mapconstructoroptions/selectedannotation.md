@@ -1,7 +1,8 @@
 # selectedAnnotation
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The selected annotation on the map.
 
@@ -10,7 +11,7 @@ The selected annotation on the map.
 
 ## Declaration
 
-```swift
+```
 selectedAnnotation?: Annotation;
 ```
 
@@ -20,9 +21,10 @@ The default value is `null.`
 
 ## See Also
 
-- [annotationForCluster](mapconstructoroptions/annotationforcluster.md)
+### Configuring map annotations
+- [annotationForCluster](./annotationforcluster.md)
   Modifies cluster annotations.
-- [annotations](mapconstructoroptions/annotations.md)
+- [annotations](./annotations.md)
   An array holding all the annotations on the map.
 
 

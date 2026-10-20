@@ -1,7 +1,8 @@
 # init(url:scale:transaction:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Loads and displays a modifiable image from the specified URL in phases.
 
@@ -23,7 +24,7 @@ init(url: URL?, scale: CGFloat = 1, transaction: Transaction = Transaction(), @C
 
 #### Discussion
 
-If you set the asynchronous image’s URL to `nil`, or after you set the URL to a value but before the load operation completes, the phase is [`AsyncImagePhase.empty`](asyncimagephase/empty.md). After the operation completes, the phase becomes either [`AsyncImagePhase.failure(_:)`](asyncimagephase/failure(_:).md) or [`AsyncImagePhase.success(_:)`](asyncimagephase/success(_:).md). In the first case, the phase’s [`error`](asyncimagephase/error.md) value indicates the reason for failure. In the second case, the phase’s [`image`](asyncimagephase/image.md) property contains the loaded image. Use the phase to drive the output of the `content` closure, which defines the view’s appearance:
+If you set the asynchronous image’s URL to `nil`, or after you set the URL to a value but before the load operation completes, the phase is [`AsyncImagePhase.empty`](../asyncimagephase/empty.md). After the operation completes, the phase becomes either [`AsyncImagePhase.failure(_:)`](../asyncimagephase/failure%28_%29.md) or [`AsyncImagePhase.success(_:)`](../asyncimagephase/success%28_%29.md). In the first case, the phase’s [`error`](../asyncimagephase/error.md) value indicates the reason for failure. In the second case, the phase’s [`image`](../asyncimagephase/image.md) property contains the loaded image. Use the phase to drive the output of the `content` closure, which defines the view’s appearance:
 
 ```swift
 AsyncImage(url: URL(string: "https://example.com/icon.png")) { phase in
@@ -37,7 +38,7 @@ AsyncImage(url: URL(string: "https://example.com/icon.png")) { phase in
 }
 ```
 
-To add transitions when you change the URL, apply an identifier to the [`AsyncImage`](asyncimage.md).
+To add transitions when you change the URL, apply an identifier to the [`AsyncImage`](../asyncimage.md).
 
 ## Parameters
 

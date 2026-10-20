@@ -1,7 +1,8 @@
 # kAXMinimizedWindowDockItemSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An icon in the Dock that represents a minimized window.
 
@@ -12,6 +13,10 @@ An icon in the Dock that represents a minimized window.
 
 ```swift
 var kAXMinimizedWindowDockItemSubrole: String { get }
+```
+
+```c
+#define kAXMinimizedWindowDockItemSubrole
 ```
 
 

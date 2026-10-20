@@ -1,17 +1,24 @@
 # newItem(forRepresentedObject:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the collection view item that is used for the specified object.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.14
+
+> **Deprecated**: Use -[NSCollectionViewDataSource collectionView:itemForRepresentedObjectAtIndexPath:] instead
 
 ## Declaration
 
 ```swift
 func newItem(forRepresentedObject object: Any) -> NSCollectionViewItem
+```
+
+```objc
+- (NSCollectionViewItem *) newItemForRepresentedObject:(id) object;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # editor
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests the role `Editor` (theapplication can read, present, manipulate, and save the item).
 

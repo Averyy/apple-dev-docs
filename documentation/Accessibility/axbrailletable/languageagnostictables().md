@@ -1,7 +1,8 @@
 # languageAgnosticTables()
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 All tables that are not specific to any language.
 
@@ -18,6 +19,10 @@ All tables that are not specific to any language.
 
 ```swift
 class func languageAgnosticTables() -> Set<AXBrailleTable>
+```
+
+```objc
++ (NSSet<AXBrailleTable *> *) languageAgnosticTables;
 ```
 
 

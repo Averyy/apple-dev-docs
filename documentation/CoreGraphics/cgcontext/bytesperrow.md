@@ -1,7 +1,8 @@
 # bytesPerRow
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the bytes per row of a bitmap context.
 
@@ -10,7 +11,7 @@ Returns the bytes per row of a bitmap context.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,25 +21,30 @@ Returns the bytes per row of a bitmap context.
 var bytesPerRow: Int { get }
 ```
 
+```c
+extern size_t CGBitmapContextGetBytesPerRow(CGContextRef context);
+```
+
 ## See Also
 
-- [var bitmapInfo: CGBitmapInfo](cgcontext/bitmapinfo.md)
+### Managing a Bitmap Graphics Context
+- [var bitmapInfo: CGBitmapInfo](./bitmapinfo.md)
   Obtains the bitmap information associated with a bitmap graphics context.
-- [var alphaInfo: CGImageAlphaInfo](cgcontext/alphainfo.md)
+- [var alphaInfo: CGImageAlphaInfo](./alphainfo.md)
   Returns the alpha information associated with the context, which indicates how a bitmap context handles the alpha component.
-- [var bitsPerComponent: Int](cgcontext/bitspercomponent.md)
+- [var bitsPerComponent: Int](./bitspercomponent.md)
   Returns the bits per component of a bitmap context.
-- [var bitsPerPixel: Int](cgcontext/bitsperpixel.md)
+- [var bitsPerPixel: Int](./bitsperpixel.md)
   Returns the bits per pixel of a bitmap context.
-- [var colorSpace: CGColorSpace?](cgcontext/colorspace.md)
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   Returns the color space of a bitmap context.
-- [var data: UnsafeMutableRawPointer?](cgcontext/data.md)
+- [var data: UnsafeMutableRawPointer?](./data.md)
   Returns a pointer to the image data associated with a bitmap context.
-- [var height: Int](cgcontext/height.md)
+- [var height: Int](./height.md)
   Returns the height in pixels of a bitmap context.
-- [var width: Int](cgcontext/width.md)
+- [var width: Int](./width.md)
   Returns the width in pixels of a bitmap context.
-- [func makeImage() -> CGImage?](cgcontext/makeimage.md)
+- [func makeImage() -> CGImage?](./makeimage%28%29.md)
   Creates and returns a CGImage from the pixel data in a bitmap graphics context.
 
 

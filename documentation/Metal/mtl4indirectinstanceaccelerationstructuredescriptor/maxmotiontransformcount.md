@@ -1,7 +1,8 @@
 # maxMotionTransformCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls the maximum number of motion transforms in the motion transform buffer.
 
@@ -19,9 +20,13 @@ Controls the maximum number of motion transforms in the motion transform buffer.
 var maxMotionTransformCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger maxMotionTransformCount;
+```
+
 #### Discussion
 
-You are responsible for ensuring that final number of motion transforms at build time that the buffer [`motionTransformCountBuffer`](mtl4indirectinstanceaccelerationstructuredescriptor/motiontransformcountbuffer.md) references is less than or equal to this number.
+You are responsible for ensuring that final number of motion transforms at build time that the buffer [`motionTransformCountBuffer`](./motiontransformcountbuffer.md) references is less than or equal to this number.
 
 
 ---

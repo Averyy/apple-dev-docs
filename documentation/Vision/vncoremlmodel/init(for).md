@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a model container to use with a Core ML request.
 
@@ -19,9 +20,13 @@ Creates a model container to use with a Core ML request.
 convenience init(for model: MLModel) throws
 ```
 
+```objc
++ (instancetype) modelForMLModel:(MLModel *) model error:(NSError **) error;
+```
+
 #### Discussion
 
-This method may fail if the framework doesn’t support the Core ML model. For example, a model that doesn’t accept an image as any of its inputs will yield an [`VNErrorCode.invalidModel`](vnerrorcode/invalidmodel.md) error.
+This method may fail if the framework doesn’t support the Core ML model. For example, a model that doesn’t accept an image as any of its inputs will yield an [`VNErrorCode.invalidModel`](../vnerrorcode/invalidmodel.md) error.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ This method may fail if the framework doesn’t support the Core ML model. For e
 
 ## See Also
 
-- [convenience init(forMLModel: MLModel) throws](vncoremlmodel/init(formlmodel:).md)
+### Initializing a Model
+- [convenience init(forMLModel: MLModel) throws](./init%28formlmodel%29.md)
 
 
 ---

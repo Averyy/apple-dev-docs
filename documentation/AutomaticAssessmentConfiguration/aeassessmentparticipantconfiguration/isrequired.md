@@ -1,7 +1,8 @@
 # isRequired
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var isRequired: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isRequired) BOOL required;
 ```
 
 

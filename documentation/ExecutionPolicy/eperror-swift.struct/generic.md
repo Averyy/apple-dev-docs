@@ -1,7 +1,8 @@
 # generic
 
 **Framework**: Execution Policy  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -15,7 +16,8 @@ static var generic: EPError.Code { get }
 
 ## See Also
 
-- [static var notADeveloperTool: EPError.Code](eperror-swift.struct/notadevelopertool.md)
+### Type Properties
+- [static var notADeveloperTool: EPError.Code](./notadevelopertool.md)
 
 
 ---

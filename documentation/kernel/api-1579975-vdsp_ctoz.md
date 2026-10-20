@@ -1,7 +1,8 @@
 # vDSP_ctoz
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Copies the contents of an interleaved complex vector `C` to a split complex vector `Z`; single precision.
 
@@ -10,7 +11,7 @@ Copies the contents of an interleaved complex vector `C` to a split complex vect
 
 ## Declaration
 
-```swift
+```c
 void vDSP_ctoz(const DSPComplex *__C, vDSP_Stride __IC, const DSPSplitComplex *__Z, vDSP_Stride __IZ, vDSP_Length __N);
 ```
 
@@ -28,7 +29,7 @@ for (n = 0; n < N; ++n)
 }
 ```
 
- See also functions[`vDSP_ztoc`](1579934-vdsp_ztoc.md) and [`vDSP_ztocD`](https://developer.apple.com/documentation/accelerate/vdsp_ztocd).
+ See also functions[`vDSP_ztoc`](./api-1579934-vdsp_ztoc.md) and [`vDSP_ztocD`](../Accelerate/vdsp_ztocd.md).
 
 ## Parameters
 

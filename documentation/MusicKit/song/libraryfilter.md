@@ -1,7 +1,8 @@
 # Song.LibraryFilter
 
 **Framework**: MusicKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The associated type that contains the song properties your app uses for a library request.
 

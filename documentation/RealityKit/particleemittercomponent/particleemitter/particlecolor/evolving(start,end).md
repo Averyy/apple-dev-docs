@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.ParticleColor.evolving(start:end:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The particle’s color will start at the `start` color and transition over its lifetime to the `end` color.
 

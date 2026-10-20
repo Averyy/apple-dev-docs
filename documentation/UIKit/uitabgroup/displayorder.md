@@ -1,7 +1,8 @@
 # displayOrder
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains instances of subitems in their display order.
 
@@ -18,11 +19,16 @@ An array that contains instances of subitems in their display order.
 var displayOrder: [UITab] { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSArray<UITab *> * displayOrder;
+```
+
 ## See Also
 
-- [var allowsReordering: Bool](uitabgroup/allowsreordering.md)
+### Managing customization
+- [var allowsReordering: Bool](./allowsreordering.md)
   A Boolean value that indicates people can reorder subitems in the sidebar.
-- [var displayOrderIdentifiers: [String]](uitabgroup/displayorderidentifiers.md)
+- [var displayOrderIdentifiers: [String]](./displayorderidentifiers.md)
   An array that contains the identifiers of subitems in their display order.
 
 

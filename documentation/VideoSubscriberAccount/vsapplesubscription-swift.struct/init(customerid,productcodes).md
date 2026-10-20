@@ -1,7 +1,8 @@
 # init(customerID:productCodes:)
 
 **Framework**: Video Subscriber Account  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an Apple subscription object.
 

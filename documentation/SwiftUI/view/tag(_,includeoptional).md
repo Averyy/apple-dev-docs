@@ -1,7 +1,8 @@
 # tag(_:includeOptional:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the unique tag value of this view.
 
@@ -27,11 +28,11 @@ A view with the specified tag set.
 
 #### Discussion
 
-Use this modifier to differentiate among certain selectable views, like the possible values of a [`Picker`](picker.md) or the tabs of a [`TabView`](tabview.md). Tag values can be of any type that conforms to the [`Hashable`](https://developer.apple.com/documentation/swift/hashable) protocol.
+Use this modifier to differentiate among certain selectable views, like the possible values of a [`Picker`](../picker.md) or the tabs of a [`TabView`](../tabview.md). Tag values can be of any type that conforms to the [`Hashable`](../../Swift/hashable.md) protocol.
 
 This modifier will write the tag value for the type `V`, as well as `Optional<V>` if `includeOptional` is enabled. Containers checking for tags of either type will see the value as set.
 
-In the example below, the [`ForEach`](foreach.md) loop in the [`Picker`](picker.md) view builder iterates over the `Flavor` enumeration. It extracts the string value of each enumeration element for use in constructing the row label, and uses the enumeration value as input to the `tag(_:)` modifier.
+In the example below, the [`ForEach`](../foreach.md) loop in the [`Picker`](../picker.md) view builder iterates over the `Flavor` enumeration. It extracts the string value of each enumeration element for use in constructing the row label, and uses the enumeration value as input to the `tag(_:)` modifier.
 
 ```swift
 struct FlavorPicker: View {
@@ -53,22 +54,23 @@ struct FlavorPicker: View {
 }
 ```
 
-The selection type of the [`Picker`](picker.md) is an `Optional<Flavor>` and so it will look for tags on its contents of `Optional<Flavor>` type. Since the tag modifier defaults to having `includeOptional` enabled, even though the tag for each option is a non-optional `Flavor`, the tag modifier writes values for both the non-optional, and optional versions of the value, allowing the contents to be selectable by the [`Picker`](picker.md).
+The selection type of the [`Picker`](../picker.md) is an `Optional<Flavor>` and so it will look for tags on its contents of `Optional<Flavor>` type. Since the tag modifier defaults to having `includeOptional` enabled, even though the tag for each option is a non-optional `Flavor`, the tag modifier writes values for both the non-optional, and optional versions of the value, allowing the contents to be selectable by the [`Picker`](../picker.md).
 
-A [`ForEach`](foreach.md) automatically applies a default tag to each enumerated view using the `id` parameter of the corresponding element. If the element’s `id` parameter and the picker’s `selection` input have exactly the same type, or the same type but optional, you can omit the explicit tag modifier.
+A [`ForEach`](../foreach.md) automatically applies a default tag to each enumerated view using the `id` parameter of the corresponding element. If the element’s `id` parameter and the picker’s `selection` input have exactly the same type, or the same type but optional, you can omit the explicit tag modifier.
 
-To see examples that don’t require an explicit tag, see [`Picker`](picker.md).
+To see examples that don’t require an explicit tag, see [`Picker`](../picker.md).
 
 ## Parameters
 
-- `tag`: A [`Hashable`](https://developer.apple.com/documentation/swift/hashable) value to use as the view’s tag.
+- `tag`: A [`Hashable`](../../Swift/hashable.md) value to use as the view’s tag.
 - `includeOptional`: If the tag value for `Optional<V>` should also be set.
 
 ## See Also
 
-- [func id<ID>(ID) -> some View](view/id(_:).md)
+### Managing the view hierarchy
+- [func id<ID>(ID) -> some View](./id%28_%29.md)
   Binds a view’s identity to the given proxy value.
-- [func equatable() -> EquatableView<Self>](view/equatable.md)
+- [func equatable() -> EquatableView<Self>](./equatable%28%29.md)
   Prevents the view from updating its child view when its new value is the same as its old value.
 
 

@@ -1,17 +1,22 @@
 # drawPagePost(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform post-page rendering.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func drawPagePost(_ page: PDFPage)
+```
+
+```objc
+- (void) drawPagePost:(PDFPage *) page;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ The default implementation of this method draws the text highlighting (if any) f
 
 ## See Also
 
-- [func draw(PDFPage)](pdfview/draw(_:).md)
+### Rendering the View and Printing
+- [func draw(PDFPage)](./draw%28_%29.md)
   Draw and render a visible page.
-- [func print(with: NSPrintInfo, autoRotate: Bool)](pdfview/print(with:autorotate:).md)
+- [func print(with: NSPrintInfo, autoRotate: Bool)](./print%28with,autorotate%29.md)
   Prints the document with the specified printer information.
-- [func print(with: NSPrintInfo, autoRotate: Bool, pageScaling: PDFPrintScalingMode)](pdfview/print(with:autorotate:pagescaling:).md)
+- [func print(with: NSPrintInfo, autoRotate: Bool, pageScaling: PDFPrintScalingMode)](./print%28with,autorotate,pagescaling%29.md)
   Prints the document with the specified printer and page-scaling information.
 
 

@@ -1,7 +1,8 @@
 # nullableList
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var nullableList: [Any]? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray * nullableList;
 ```
 
 

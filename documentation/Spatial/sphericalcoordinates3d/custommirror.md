@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom mirror for this instance.
 
@@ -11,7 +12,7 @@ The custom mirror for this instance.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ var customMirror: Mirror { get }
 
 ## See Also
 
-- [var azimuth: Angle2D](sphericalcoordinates3d/azimuth.md)
+### Inspecting a spherical coordinates structure’s properties
+- [var azimuth: Angle2D](./azimuth.md)
   The azimuthal angle, in radians.
-- [var inclination: Angle2D](sphericalcoordinates3d/inclination.md)
+- [var inclination: Angle2D](./inclination.md)
   The inclination angle, in radians.
-- [var radius: Double](sphericalcoordinates3d/radius.md)
+- [var radius: Double](./radius.md)
   The distance to the origin.
-- [var vector: simd_double3](sphericalcoordinates3d/vector.md)
+- [var vector: simd_double3](./vector.md)
   A simd three-element vector that contains the radius, inclination, and azimuth values.
 
 

@@ -1,12 +1,15 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
+- iOS 9.0+ - Deprecated in 10.0
+- iPadOS 9.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use UserNotifications Framework's UNNotificationAction or UNTextInputNotificationAction
 
 ## Declaration
 

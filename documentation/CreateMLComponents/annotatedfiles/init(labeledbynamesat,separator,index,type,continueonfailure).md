@@ -1,7 +1,8 @@
 # init(labeledByNamesAt:separator:index:type:continueOnFailure:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Reads training examples from a directory containing files having their labels in the name. The name can contain multiple words separated by a `separator`. So the `index` tells the position of the label in the file name. Files with incorrect name format are ignored.
 
@@ -24,7 +25,7 @@ init(labeledByNamesAt url: URL, separator: Character = ".", index: Int = 0, type
 
 Take for example this directory structure:
 
-```None
+```
 /
     fold1-foo-file1.png
     fold1-foo-file2.png
@@ -46,7 +47,8 @@ When we specify separator as “-” and index as 1, it would produce two labels
 
 ## See Also
 
-- [init(labeledBySubdirectoryNamesAt: URL, type: UTType, continueOnFailure: Bool) throws](annotatedfiles/init(labeledbysubdirectorynamesat:type:continueonfailure:).md)
+### Creating the feature
+- [init(labeledBySubdirectoryNamesAt: URL, type: UTType, continueOnFailure: Bool) throws](./init%28labeledbysubdirectorynamesat,type,continueonfailure%29.md)
   Reads training examples from a directory containing files in labeled sub-directories.
 
 

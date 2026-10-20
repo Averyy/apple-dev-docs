@@ -1,7 +1,8 @@
 # calloutEnabled
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 A Boolean value that determines whether the map shows a callout.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether the map shows a callout.
 
 ## Declaration
 
-```swift
+```
 calloutEnabled?: boolean;
 ```
 
@@ -20,9 +21,10 @@ The default value is `true`.
 
 ## See Also
 
-- [callout](annotationconstructoroptions/callout.md)
+### Creating callouts
+- [callout](./callout.md)
   A delegate that enables you to customize the annotation’s callout.
-- [calloutOffset](annotationconstructoroptions/calloutoffset.md)
+- [calloutOffset](./calloutoffset.md)
   The offset, in CSS pixels, of a callout from the top center of the element.
 
 

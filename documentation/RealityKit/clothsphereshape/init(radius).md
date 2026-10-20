@@ -1,7 +1,8 @@
 # init(radius:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sphere shape with the given radius.
 

@@ -1,7 +1,8 @@
 # AVInputPickerInteraction.Delegate
 
 **Framework**: AVKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The `AVInputPickerInteractionDelegate` protocol defines methods you use to receive notifications about transitions in an `AVInputPickerInteraction` object.
 
@@ -16,26 +17,31 @@ The `AVInputPickerInteractionDelegate` protocol defines methods you use to recei
 protocol Delegate : NSObjectProtocol
 ```
 
+```objc
+@protocol AVInputPickerInteractionDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to life cycle events
-- [func inputPickerInteractionWillBeginPresenting(AVInputPickerInteraction)](avinputpickerinteraction/delegate-swift.protocol/inputpickerinteractionwillbeginpresenting(_:).md)
+- [func inputPickerInteractionWillBeginPresenting(AVInputPickerInteraction)](./delegate-swift.protocol/inputpickerinteractionwillbeginpresenting%28_%29.md)
   Tells the delegate that the input picker view is about to present devices.
-- [func inputPickerInteractionDidEndPresenting(AVInputPickerInteraction)](avinputpickerinteraction/delegate-swift.protocol/inputpickerinteractiondidendpresenting(_:).md)
+- [func inputPickerInteractionDidEndPresenting(AVInputPickerInteraction)](./delegate-swift.protocol/inputpickerinteractiondidendpresenting%28_%29.md)
   Tells the delegate that the input picker view has finished presenting devices
-- [func inputPickerInteractionWillBeginDismissing(AVInputPickerInteraction)](avinputpickerinteraction/delegate-swift.protocol/inputpickerinteractionwillbegindismissing(_:).md)
+- [func inputPickerInteractionWillBeginDismissing(AVInputPickerInteraction)](./delegate-swift.protocol/inputpickerinteractionwillbegindismissing%28_%29.md)
   Tells the delegate that the input picker view is about to dismiss devices.
-- [func inputPickerInteractionDidEndDismissing(AVInputPickerInteraction)](avinputpickerinteraction/delegate-swift.protocol/inputpickerinteractiondidenddismissing(_:).md)
+- [func inputPickerInteractionDidEndDismissing(AVInputPickerInteraction)](./delegate-swift.protocol/inputpickerinteractiondidenddismissing%28_%29.md)
   Tells the delegate that the input picker view has finished dismissing devices.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any AVInputPickerInteraction.Delegate)?](avinputpickerinteraction/delegate-swift.property.md)
+### Setting the delegate
+- [var delegate: (any AVInputPickerInteraction.Delegate)?](./delegate-swift.property.md)
   The input picker view’s delegate.
 
 

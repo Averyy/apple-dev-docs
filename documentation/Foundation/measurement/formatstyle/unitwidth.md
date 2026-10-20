@@ -1,7 +1,8 @@
 # Measurement.FormatStyle.UnitWidth
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Specifies the width of the unit, determining the textual representation.
 
@@ -23,36 +24,37 @@ struct UnitWidth
 ## Topics
 
 ### Unit widths
-- [static var wide: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth/wide.md)
+- [static var wide: Measurement<UnitType>.FormatStyle.UnitWidth](./unitwidth/wide.md)
   A unit width that shows the full unit name.
-- [static var abbreviated: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth/abbreviated.md)
+- [static var abbreviated: Measurement<UnitType>.FormatStyle.UnitWidth](./unitwidth/abbreviated.md)
   An abbreviated unit width.
-- [static var narrow: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/unitwidth/narrow.md)
+- [static var narrow: Measurement<UnitType>.FormatStyle.UnitWidth](./unitwidth/narrow.md)
   The shortest unit width.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var width: Measurement<UnitType>.FormatStyle.UnitWidth](measurement/formatstyle/width.md)
+### Modifying a measurement format style
+- [var width: Measurement<UnitType>.FormatStyle.UnitWidth](./width.md)
   The width of the measurement unit.
-- [var numberFormatStyle: FloatingPointFormatStyle<Double>?](measurement/formatstyle/numberformatstyle.md)
+- [var numberFormatStyle: FloatingPointFormatStyle<Double>?](./numberformatstyle.md)
   The formatting of the measurement value.
-- [var usage: MeasurementFormatUnitUsage<UnitType>?](measurement/formatstyle/usage.md)
+- [var usage: MeasurementFormatUnitUsage<UnitType>?](./usage.md)
   The intended purpose of the formatted measurement.
-- [var hidesScaleName: Bool](measurement/formatstyle/hidesscalename.md)
+- [var hidesScaleName: Bool](./hidesscalename.md)
   The visibility of the unit name of a temperature.
-- [var locale: Locale](measurement/formatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale of the format style.
-- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](measurement/formatstyle/locale(_:).md)
+- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](./locale%28_%29.md)
   Modifies the measurement format style to use the specified locale.
 
 

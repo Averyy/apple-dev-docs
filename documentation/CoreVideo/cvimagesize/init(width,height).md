@@ -1,7 +1,8 @@
 # init(width:height:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an instance with given width and height
 

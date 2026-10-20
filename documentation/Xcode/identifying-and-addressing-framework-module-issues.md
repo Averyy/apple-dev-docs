@@ -1,6 +1,7 @@
 # Identifying and addressing framework module issues
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Detect and fix common problems found in framework modules with the module verifier.
 
@@ -22,25 +23,25 @@ Some examples of these problems include:
 
 When you enable the module verifier, it finds module problems in your code and displays errors for them in Xcode’s Issue navigator, just like compiler errors or warnings.
 
-##### Enable the Module Verifier Build Setting
+##### Enable the module verifier build setting
 
 In your Xcode project, select your framework’s target, then select the Build Settings tab. Scroll down to the Apple Clang Module Verifier section. For new projects created in Xcode 14.3 or later, the Enable Module Verifier setting defaults to Yes. For projects you created in earlier versions of Xcode, change the setting to Yes.
 
-![Xcode build settings that show the Enable Module Verifier setting set to Yes.](/images/com.apple.Xcode/identifying-and-addressing-framework-module-issues-2@2x.png)
+![Xcode build settings that show the Enable Module Verifier setting set to Yes.](https://developer.apple.com/tutorials/images/com.apple.Xcode/identifying-and-addressing-framework-module-issues-2@2x.png)
 
 Then, check the values for Supported Languages and Supported Language Dialects, and update them to match your project’s requirements. View Quick Help for each setting to find valid values.
 
-For more information about configuring build settings, see [`Configuring the build settings of a target`](configuring-the-build-settings-of-a-target.md).
+For more information about configuring build settings, see [Configuring the build settings of a target](./configuring-the-build-settings-of-a-target.md).
 
-##### Build Your Project and Identify Issues
+##### Build your project and identify issues
 
 In Xcode, build your project, then show the Issue navigator to see issues in your project. Module verifier issues show up as errors in the Issue navigator.
 
-![Xcode Issue navigator that shows a highlighted module verifier issue and the corresponding line highlighted in the header file.](/images/com.apple.Xcode/identifying-and-addressing-framework-module-issues-1@2x.png)
+![Xcode Issue navigator that shows a highlighted module verifier issue and the corresponding line highlighted in the header file.](https://developer.apple.com/tutorials/images/com.apple.Xcode/identifying-and-addressing-framework-module-issues-1@2x.png)
 
 Review the issues, then click on an issue to highlight it in your source code.
 
-##### Address Common Issues
+##### Address common issues
 
 Identify each issue you find by matching it with an example error message in the following table. Then, use the error resolution examples to help you address the issue in your code.
 
@@ -56,13 +57,14 @@ Identify each issue you find by matching it with an example error message in the
 
 ## See Also
 
-- [Configuring the build settings of a target](configuring-the-build-settings-of-a-target.md)
+### Build settings
+- [Configuring the build settings of a target](./configuring-the-build-settings-of-a-target.md)
   Specify the options you use to compile, link, and produce a product from a target, and identify settings inherited from your project or the system.
-- [Adding a build configuration file to your project](adding-a-build-configuration-file-to-your-project.md)
+- [Adding a build configuration file to your project](./adding-a-build-configuration-file-to-your-project.md)
   Specify your project’s build settings in plain-text files, and supply different settings for debug and release builds.
-- [Build settings reference](build-settings-reference.md)
+- [Build settings reference](./build-settings-reference.md)
   A detailed list of individual Xcode build settings that control or change the way a target is built.
-- [Understanding build product layout changes in Xcode](understanding-build-product-layout-changes.md)
+- [Understanding build product layout changes in Xcode](./understanding-build-product-layout-changes.md)
 
 
 ---

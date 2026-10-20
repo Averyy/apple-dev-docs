@@ -2,6 +2,7 @@
 
 **Framework**: RoomPlan  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 A category to which this room attribute belongs.

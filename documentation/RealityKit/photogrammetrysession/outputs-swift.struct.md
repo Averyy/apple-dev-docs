@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Outputs
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of session-related updates.
 
@@ -20,19 +21,19 @@ struct Outputs
 ## Topics
 
 ### Iterating the collection
-- [func makeAsyncIterator() -> PhotogrammetrySession.Outputs.Iterator](photogrammetrysession/outputs-swift.struct/makeasynciterator.md)
+- [func makeAsyncIterator() -> PhotogrammetrySession.Outputs.Iterator](./outputs-swift.struct/makeasynciterator%28%29.md)
   Creates an asynchronous iterator for the collection.
 ### Structures
-- [PhotogrammetrySession.Outputs.Iterator](photogrammetrysession/outputs-swift.struct/iterator.md)
+- [PhotogrammetrySession.Outputs.Iterator](./outputs-swift.struct/iterator.md)
   An object for iterating over published output objects.
 ### Type Aliases
-- [PhotogrammetrySession.Outputs.Element](photogrammetrysession/outputs-swift.struct/element.md)
+- [PhotogrammetrySession.Outputs.Element](./outputs-swift.struct/element.md)
   The type of element used for Photogrammetry Session updates.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 
 ---

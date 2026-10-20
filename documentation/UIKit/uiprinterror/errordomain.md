@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The printing error domain.
 

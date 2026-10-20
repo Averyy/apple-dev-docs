@@ -1,7 +1,8 @@
 # gss_qop_t
 
 **Framework**: GSS  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A quality of protection setting.
 
@@ -18,31 +19,36 @@ A quality of protection setting.
 typealias gss_qop_t = OM_uint32
 ```
 
+```c
+typedef OM_uint32 gss_qop_t;
+```
+
 #### Discussion
 
-See [`Object Identifiers`](object-identifiers.md) for valid values.
+See [Object Identifiers](./object-identifiers.md) for valid values.
 
 ## See Also
 
-- [typealias gss_iov_buffer_t](gss_iov_buffer_t.md)
+### Buffer Data Structures
+- [typealias gss_iov_buffer_t](./gss_iov_buffer_t.md)
   The structure for a vectored I/O buffer and its defined type.
-- [typealias gss_iov_buffer_desc](gss_iov_buffer_desc.md)
+- [typealias gss_iov_buffer_desc](./gss_iov_buffer_desc.md)
   The structure for a vectored I/O buffer and its defined type.
-- [struct gss_iov_buffer_desc_struct](gss_iov_buffer_desc_struct.md)
+- [struct gss_iov_buffer_desc_struct](./gss_iov_buffer_desc_struct.md)
   The structure for a vectored I/O buffer and its defined type.
-- [typealias gss_buffer_t](gss_buffer_t.md)
+- [typealias gss_buffer_t](./gss_buffer_t.md)
   A pointer to a buffer descriptor that you use to exchange octet streams with many GSS-API functions.
-- [typealias gss_const_buffer_t](gss_const_buffer_t.md)
+- [typealias gss_const_buffer_t](./gss_const_buffer_t.md)
   A pointer to an immutable buffer descriptor that you use to exchange octet streams with many GSS-API functions.
-- [typealias gss_buffer_set_t](gss_buffer_set_t.md)
+- [typealias gss_buffer_set_t](./gss_buffer_set_t.md)
   A pointer to the descriptor that you use to manage an array of buffer descriptors.
-- [typealias gss_buffer_desc](gss_buffer_desc.md)
+- [typealias gss_buffer_desc](./gss_buffer_desc.md)
   The buffer descriptor that you use to exchange octet streams with many GSS-API functions.
-- [struct gss_buffer_desc_struct](gss_buffer_desc_struct.md)
+- [struct gss_buffer_desc_struct](./gss_buffer_desc_struct.md)
   The structure for a buffer descriptor that you use to exchange octet streams with many GSS-API functions.
-- [typealias gss_buffer_set_desc](gss_buffer_set_desc.md)
+- [typealias gss_buffer_set_desc](./gss_buffer_set_desc.md)
   The descriptor that you use to manage an array of buffer descriptors.
-- [struct gss_buffer_set_desc_struct](gss_buffer_set_desc_struct.md)
+- [struct gss_buffer_set_desc_struct](./gss_buffer_set_desc_struct.md)
   The structure for a buffer set descriptor that you use to manage an array of buffer descriptors.
 
 

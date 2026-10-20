@@ -1,7 +1,8 @@
 # SpeechTextDoneUPP
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a universal procedure pointer (UPP) to a text-done callback function.
 
@@ -14,9 +15,13 @@ Defines a universal procedure pointer (UPP) to a text-done callback function.
 typealias SpeechTextDoneUPP = SpeechTextDoneProcPtr
 ```
 
+```c
+typedef SpeechTextDoneProcPtr SpeechTextDoneUPP;
+```
+
 #### Discussion
 
-For more information, see the description of the [`SpeechTextDoneProcPtr`](speechtextdoneprocptr.md) callback function.
+For more information, see the description of the [`SpeechTextDoneProcPtr`](./speechtextdoneprocptr.md) callback function.
 
 
 ---

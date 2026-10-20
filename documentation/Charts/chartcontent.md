@@ -1,7 +1,8 @@
 # ChartContent
 
 **Framework**: Swift Charts  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the content that you draw on a chart.
 
@@ -23,7 +24,7 @@ A type that represents the content that you draw on a chart.
 
 #### Overview
 
-You build a [`Chart`](chart.md) by adding instances that conform to the `ChartContent` protocol to the chart’s `content` closure. The following example adds three explicit [`BarMark`](barmark.md) instances to a chart:
+You build a [`Chart`](./chart.md) by adding instances that conform to the `ChartContent` protocol to the chart’s `content` closure. The following example adds three explicit [`BarMark`](./barmark.md) instances to a chart:
 
 ```swift
 Chart {
@@ -44,13 +45,13 @@ Chart {
 
 The chart draws marks that correspond to the instances that you specify:
 
-![A bar chart with three vertical bars, all in the same color. The first is labeled Cube and has a value of 5. The second is labeled Sphere and has a value of 6. The third is labeled Pyramid and has a value of 4.](/images/com.apple.Charts/ChartContent-1-macOS@2x.png)
+![A bar chart with three vertical bars, all in the same color. The first is labeled Cube and has a value of 5. The second is labeled Sphere and has a value of 6. The third is labeled Pyramid and has a value of 4.](https://developer.apple.com/tutorials/images/com.apple.Charts/ChartContent-1-macOS@2x.png)
 
-You can combine any number of marks or types of marks in a single chart by listing them individually as shown in the above example, wrapping them in a [`ForEach`](https://developer.apple.com/documentation/swiftui/foreach), or any combination of these. For some mark types, like [`LineMark`](linemark.md), you can group the marks into series using the mark’s `series` initialization parameter.
+You can combine any number of marks or types of marks in a single chart by listing them individually as shown in the above example, wrapping them in a [`ForEach`](../SwiftUI/foreach.md), or any combination of these. For some mark types, like [`LineMark`](./linemark.md), you can group the marks into series using the mark’s `series` initialization parameter.
 
-##### Configure Chart Content
+##### Configure chart content
 
-The `ChartContent` protocol provides a set of modifiers that you use to configure the properties of chart content. These behave like SwiftUI view modifiers, except that they act on chart content rather than views. Any of the types that conform to the protocol can use these modifiers. For example, you can add the [`foregroundStyle(_:)`](chartcontent/foregroundstyle(_:).md) modifier to the bar representing the number of spheres in the previous example to make it red:
+The `ChartContent` protocol provides a set of modifiers that you use to configure the properties of chart content. These behave like SwiftUI view modifiers, except that they act on chart content rather than views. Any of the types that conform to the protocol can use these modifiers. For example, you can add the [`foregroundStyle(_:)`](./chartcontent/foregroundstyle%28_%29.md) modifier to the bar representing the number of spheres in the previous example to make it red:
 
 ```swift
 BarMark(
@@ -60,150 +61,151 @@ BarMark(
 .foregroundStyle(.red)
 ```
 
-![A bar chart with three vertical bars. The first and third bars are blue while the middle bar is red. The first is labeled Cube and has a value of 5. The second is labeled Sphere and has a value of 6. The third is labeled Pyramid and has a value of 4.](/images/com.apple.Charts/ChartContent-2-macOS@2x.png)
+![A bar chart with three vertical bars. The first and third bars are blue while the middle bar is red. The first is labeled Cube and has a value of 5. The second is labeled Sphere and has a value of 6. The third is labeled Pyramid and has a value of 4.](https://developer.apple.com/tutorials/images/com.apple.Charts/ChartContent-2-macOS@2x.png)
 
 ## Topics
 
 ### Styling marks
-- [func foregroundStyle<S>(S) -> some ChartContent](chartcontent/foregroundstyle(_:).md)
+- [func foregroundStyle<S>(S) -> some ChartContent](./chartcontent/foregroundstyle%28_%29.md)
   Sets the foreground style for the chart content.
-- [func opacity(Double) -> some ChartContent](chartcontent/opacity(_:).md)
+- [func opacity(Double) -> some ChartContent](./chartcontent/opacity%28_%29.md)
   Sets the opacity for the chart content.
-- [func blur(radius: CGFloat) -> some ChartContent](chartcontent/blur(radius:).md)
+- [func blur(radius: CGFloat) -> some ChartContent](./chartcontent/blur%28radius%29.md)
   Applies a Gaussian blur to this chart content.
-- [func cornerRadius(CGFloat, style: RoundedCornerStyle) -> some ChartContent](chartcontent/cornerradius(_:style:).md)
+- [func cornerRadius(CGFloat, style: RoundedCornerStyle) -> some ChartContent](./chartcontent/cornerradius%28_,style%29.md)
   Sets the corner radius of the chart content.
-- [func lineStyle(StrokeStyle) -> some ChartContent](chartcontent/linestyle(_:).md)
+- [func lineStyle(StrokeStyle) -> some ChartContent](./chartcontent/linestyle%28_%29.md)
   Sets the style for line marks.
-- [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some ChartContent](chartcontent/shadow(color:radius:x:y:).md)
+- [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some ChartContent](./chartcontent/shadow%28color,radius,x,y%29.md)
   A chart content that adds a shadow to this chart content.
-- [func interpolationMethod(InterpolationMethod) -> some ChartContent](chartcontent/interpolationmethod(_:).md)
+- [func interpolationMethod(InterpolationMethod) -> some ChartContent](./chartcontent/interpolationmethod%28_%29.md)
   Plots line and area marks with the interpolation method that you specify.
 ### Positioning marks
-- [func offset(CGSize) -> some ChartContent](chartcontent/offset(_:).md)
+- [func offset(CGSize) -> some ChartContent](./chartcontent/offset%28_%29.md)
   Applies an offset that you specify as a size to the chart content.
-- [func offset(x: CGFloat, y: CGFloat) -> some ChartContent](chartcontent/offset(x:y:).md)
+- [func offset(x: CGFloat, y: CGFloat) -> some ChartContent](./chartcontent/offset%28x,y%29.md)
   Applies a vertical and horizontal offset to the chart content.
-- [func offset(x: CGFloat, yStart: CGFloat, yEnd: CGFloat) -> some ChartContent](chartcontent/offset(x:ystart:yend:).md)
+- [func offset(x: CGFloat, yStart: CGFloat, yEnd: CGFloat) -> some ChartContent](./chartcontent/offset%28x,ystart,yend%29.md)
   Applies an offset to the chart content.
-- [func offset(xStart: CGFloat, xEnd: CGFloat, y: CGFloat) -> some ChartContent](chartcontent/offset(xstart:xend:y:).md)
+- [func offset(xStart: CGFloat, xEnd: CGFloat, y: CGFloat) -> some ChartContent](./chartcontent/offset%28xstart,xend,y%29.md)
   Applies an offset to the chart content.
-- [func offset(xStart: CGFloat, xEnd: CGFloat, yStart: CGFloat, yEnd: CGFloat) -> some ChartContent](chartcontent/offset(xstart:xend:ystart:yend:).md)
+- [func offset(xStart: CGFloat, xEnd: CGFloat, yStart: CGFloat, yEnd: CGFloat) -> some ChartContent](./chartcontent/offset%28xstart,xend,ystart,yend%29.md)
   Applies an offset to the chart content.
-- [func alignsMarkStylesWithPlotArea(Bool) -> some ChartContent](chartcontent/alignsmarkstyleswithplotarea(_:).md)
+- [func alignsMarkStylesWithPlotArea(Bool) -> some ChartContent](./chartcontent/alignsmarkstyleswithplotarea%28_%29.md)
   Aligns this item’s styles with the chart’s plot area.
 ### Setting symbol appearance
-- [func symbol<S>(S) -> some ChartContent](chartcontent/symbol(_:).md)
+- [func symbol<S>(S) -> some ChartContent](./chartcontent/symbol%28_%29.md)
   Sets a plotting symbol type for the chart content.
-- [func symbol<V>(symbol: () -> V) -> some ChartContent](chartcontent/symbol(symbol:).md)
+- [func symbol<V>(symbol: () -> V) -> some ChartContent](./chartcontent/symbol%28symbol%29.md)
   Sets a SwiftUI view to use as the symbol for the chart content.
-- [func symbolSize(CGSize) -> some ChartContent](chartcontent/symbolsize(_:)-7s0vk.md)
+- [func symbolSize(CGSize) -> some ChartContent](./chartcontent/symbolsize%28_%29-7s0vk.md)
   Sets the plotting symbol size for the chart content.
-- [func symbolSize(CGFloat) -> some ChartContent](chartcontent/symbolsize(_:)-8dtyt.md)
+- [func symbolSize(CGFloat) -> some ChartContent](./chartcontent/symbolsize%28_%29-8dtyt.md)
   Sets the plotting symbol size for the chart content according to a perceived area.
 ### Encoding data into mark characteristics
-- [func foregroundStyle<D>(by: PlottableValue<D>) -> some ChartContent](chartcontent/foregroundstyle(by:).md)
+- [func foregroundStyle<D>(by: PlottableValue<D>) -> some ChartContent](./chartcontent/foregroundstyle%28by%29.md)
   Represents data using a foreground style.
-- [func lineStyle<D>(by: PlottableValue<D>) -> some ChartContent](chartcontent/linestyle(by:).md)
+- [func lineStyle<D>(by: PlottableValue<D>) -> some ChartContent](./chartcontent/linestyle%28by%29.md)
   Represents data using line styles.
-- [func position<P>(by: PlottableValue<P>, axis: Axis?, span: MarkDimension) -> some ChartContent](chartcontent/position(by:axis:span:).md)
+- [func position<P>(by: PlottableValue<P>, axis: Axis?, span: MarkDimension) -> some ChartContent](./chartcontent/position%28by,axis,span%29.md)
   Represents data using position.
-- [func symbol<D>(by: PlottableValue<D>) -> some ChartContent](chartcontent/symbol(by:).md)
+- [func symbol<D>(by: PlottableValue<D>) -> some ChartContent](./chartcontent/symbol%28by%29.md)
   Represents data using different kinds of symbols.
-- [func symbolSize<D>(by: PlottableValue<D>) -> some ChartContent](chartcontent/symbolsize(by:).md)
+- [func symbolSize<D>(by: PlottableValue<D>) -> some ChartContent](./chartcontent/symbolsize%28by%29.md)
   Represents data using symbol sizes.
 ### Annotating marks
-- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, content: () -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:content:)-65emh.md)
+- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, content: () -> C) -> some ChartContent](./chartcontent/annotation%28position,alignment,spacing,content%29-65emh.md)
   Annotates this mark or collection of marks with a view positioned relative to its bounds.
-- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, content: (AnnotationContext) -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:content:)-26b2f.md)
+- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, content: (AnnotationContext) -> C) -> some ChartContent](./chartcontent/annotation%28position,alignment,spacing,content%29-26b2f.md)
   Annotates this mark or collection of marks with a view positioned relative to its bounds.
-- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: () -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-1kiow.md)
+- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: () -> C) -> some ChartContent](./chartcontent/annotation%28position,alignment,spacing,overflowresolution,content%29-1kiow.md)
   Annotates this mark or collection of marks with a view positioned relative to its bounds.
-- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: (AnnotationContext) -> C) -> some ChartContent](chartcontent/annotation(position:alignment:spacing:overflowresolution:content:)-6w4p3.md)
+- [func annotation<C>(position: AnnotationPosition, alignment: Alignment, spacing: CGFloat?, overflowResolution: AnnotationOverflowResolution, content: (AnnotationContext) -> C) -> some ChartContent](./chartcontent/annotation%28position,alignment,spacing,overflowresolution,content%29-6w4p3.md)
   Annotates this mark or collection of marks with a view positioned relative to its bounds.
 ### Layering chart content
-- [func compositingLayer() -> some ChartContent](chartcontent/compositinglayer.md)
-- [func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some ChartContent](chartcontent/compositinglayer(style:).md)
-- [func zIndex(Double) -> some ChartContent](chartcontent/zindex(_:).md)
+- [func compositingLayer() -> some ChartContent](./chartcontent/compositinglayer%28%29.md)
+- [func compositingLayer<V>(style: (PlaceholderContentView<Self>) -> V) -> some ChartContent](./chartcontent/compositinglayer%28style%29.md)
+- [func zIndex(Double) -> some ChartContent](./chartcontent/zindex%28_%29.md)
   Controls the display order of overlapping chart content.
 ### Masking and clipping
-- [func mask<C>(content: () -> C) -> some ChartContent](chartcontent/mask(content:).md)
+- [func mask<C>(content: () -> C) -> some ChartContent](./chartcontent/mask%28content%29.md)
   Masks chart content using the alpha channel of the specified content.
-- [func clipShape(some Shape, style: FillStyle) -> some ChartContent](chartcontent/clipshape(_:style:).md)
+- [func clipShape(some Shape, style: FillStyle) -> some ChartContent](./chartcontent/clipshape%28_,style%29.md)
   Sets a clip shape for the chart content.
 ### Configuring accessibility
-- [func accessibilityHidden(Bool) -> some ChartContent](chartcontent/accessibilityhidden(_:).md)
+- [func accessibilityHidden(Bool) -> some ChartContent](./chartcontent/accessibilityhidden%28_%29.md)
   Specifies whether to hide this chart content from system accessibility features.
-- [func accessibilityIdentifier(String) -> some ChartContent](chartcontent/accessibilityidentifier(_:).md)
+- [func accessibilityIdentifier(String) -> some ChartContent](./chartcontent/accessibilityidentifier%28_%29.md)
   Adds an identifier string to the chart content.
-- [func accessibilityLabel(LocalizedStringKey) -> some ChartContent](chartcontent/accessibilitylabel(_:)-40zjp.md)
+- [func accessibilityLabel(LocalizedStringKey) -> some ChartContent](./chartcontent/accessibilitylabel%28_%29-40zjp.md)
   Adds a label to the chart content that describes its contents.
-- [func accessibilityLabel<S>(S) -> some ChartContent](chartcontent/accessibilitylabel(_:)-5gk8d.md)
+- [func accessibilityLabel<S>(S) -> some ChartContent](./chartcontent/accessibilitylabel%28_%29-5gk8d.md)
   Adds a label to the chart content that describes its contents.
-- [func accessibilityLabel(Text) -> some ChartContent](chartcontent/accessibilitylabel(_:)-28985.md)
+- [func accessibilityLabel(Text) -> some ChartContent](./chartcontent/accessibilitylabel%28_%29-28985.md)
   Adds a label to the chart content that describes its contents.
-- [func accessibilityLabel(LocalizedStringResource) -> some ChartContent](chartcontent/accessibilitylabel(_:)-9tbjv.md)
+- [func accessibilityLabel(LocalizedStringResource) -> some ChartContent](./chartcontent/accessibilitylabel%28_%29-9tbjv.md)
   Adds a label to the chart content that describes its contents.
-- [func accessibilityValue(LocalizedStringKey) -> some ChartContent](chartcontent/accessibilityvalue(_:)-33c0e.md)
+- [func accessibilityValue(LocalizedStringKey) -> some ChartContent](./chartcontent/accessibilityvalue%28_%29-33c0e.md)
   Adds a description of the value that the chart content contains.
-- [func accessibilityValue<S>(S) -> some ChartContent](chartcontent/accessibilityvalue(_:)-4k545.md)
+- [func accessibilityValue<S>(S) -> some ChartContent](./chartcontent/accessibilityvalue%28_%29-4k545.md)
   Adds a description of the value that the chart content contains.
-- [func accessibilityValue(Text) -> some ChartContent](chartcontent/accessibilityvalue(_:)-5g7o4.md)
+- [func accessibilityValue(Text) -> some ChartContent](./chartcontent/accessibilityvalue%28_%29-5g7o4.md)
   Adds a description of the value that the chart content contains.
-- [func accessibilityValue(LocalizedStringResource) -> some ChartContent](chartcontent/accessibilityvalue(_:)-4f8vo.md)
+- [func accessibilityValue(LocalizedStringResource) -> some ChartContent](./chartcontent/accessibilityvalue%28_%29-4f8vo.md)
   Adds a description of the value that the chart content contains.
 ### Implementing chart content
-- [var body: Self.Body](chartcontent/body-swift.property.md)
+- [var body: Self.Body](./chartcontent/body-swift.property.md)
   The content and behavior of the chart content.
-- [associatedtype Body : ChartContent](chartcontent/body-swift.associatedtype.md)
+- [associatedtype Body : ChartContent](./chartcontent/body-swift.associatedtype.md)
   The type of chart content contained in the body of this instance.
 ### Supporting types
-- [struct AnyChartContent](anychartcontent.md)
+- [struct AnyChartContent](./anychartcontent.md)
   A type-erased chart content.
 
 ## Relationships
 
 ### Inherited By
-- [VectorizedChartContent](vectorizedchartcontent.md)
+- [VectorizedChartContent](./vectorizedchartcontent.md)
 ### Conforming Types
-- [AnyChartContent](anychartcontent.md)
-- [AreaMark](areamark.md)
-- [AreaPlot](areaplot.md)
-- [BarMark](barmark.md)
-- [BarPlot](barplot.md)
-- [BuilderConditional](builderconditional.md)
-- [FunctionAreaPlotContent](functionareaplotcontent.md)
-- [FunctionLinePlotContent](functionlineplotcontent.md)
-- [LineMark](linemark.md)
-- [LinePlot](lineplot.md)
-- [Plot](plot.md)
-- [PointMark](pointmark.md)
-- [PointPlot](pointplot.md)
-- [RectangleMark](rectanglemark.md)
-- [RectanglePlot](rectangleplot.md)
-- [RuleMark](rulemark.md)
-- [RulePlot](ruleplot.md)
-- [SectorMark](sectormark.md)
-- [SectorPlot](sectorplot.md)
-- [VectorizedAreaPlotContent](vectorizedareaplotcontent.md)
-- [VectorizedBarPlotContent](vectorizedbarplotcontent.md)
-- [VectorizedLinePlotContent](vectorizedlineplotcontent.md)
-- [VectorizedPointPlotContent](vectorizedpointplotcontent.md)
-- [VectorizedRectanglePlotContent](vectorizedrectangleplotcontent.md)
-- [VectorizedRulePlotContent](vectorizedruleplotcontent.md)
-- [VectorizedSectorPlotContent](vectorizedsectorplotcontent.md)
+- [AnyChartContent](./anychartcontent.md)
+- [AreaMark](./areamark.md)
+- [AreaPlot](./areaplot.md)
+- [BarMark](./barmark.md)
+- [BarPlot](./barplot.md)
+- [BuilderConditional](./builderconditional.md)
+- [FunctionAreaPlotContent](./functionareaplotcontent.md)
+- [FunctionLinePlotContent](./functionlineplotcontent.md)
+- [LineMark](./linemark.md)
+- [LinePlot](./lineplot.md)
+- [Plot](./plot.md)
+- [PointMark](./pointmark.md)
+- [PointPlot](./pointplot.md)
+- [RectangleMark](./rectanglemark.md)
+- [RectanglePlot](./rectangleplot.md)
+- [RuleMark](./rulemark.md)
+- [RulePlot](./ruleplot.md)
+- [SectorMark](./sectormark.md)
+- [SectorPlot](./sectorplot.md)
+- [VectorizedAreaPlotContent](./vectorizedareaplotcontent.md)
+- [VectorizedBarPlotContent](./vectorizedbarplotcontent.md)
+- [VectorizedLinePlotContent](./vectorizedlineplotcontent.md)
+- [VectorizedPointPlotContent](./vectorizedpointplotcontent.md)
+- [VectorizedRectanglePlotContent](./vectorizedrectangleplotcontent.md)
+- [VectorizedRulePlotContent](./vectorizedruleplotcontent.md)
+- [VectorizedSectorPlotContent](./vectorizedsectorplotcontent.md)
 
 ## See Also
 
-- [Creating a chart using Swift Charts](creating-a-chart-using-swift-charts.md)
+### Charts
+- [Creating a chart using Swift Charts](./creating-a-chart-using-swift-charts.md)
   Make a chart by combining chart building blocks in SwiftUI.
-- [Visualizing your app’s data](visualizing-your-app-s-data.md)
+- [Visualizing your app’s data](./visualizing-your-app-s-data.md)
   Build complex and interactive charts using Swift Charts.
-- [struct Chart](chart.md)
+- [struct Chart](./chart.md)
   A SwiftUI view that displays a chart.
-- [struct ChartContentBuilder](chartcontentbuilder.md)
+- [struct ChartContentBuilder](./chartcontentbuilder.md)
   A result builder that you use to compose the contents of a chart.
-- [struct Plot](plot.md)
+- [struct Plot](./plot.md)
   A mechanism for grouping chart contents into a single entity.
 
 

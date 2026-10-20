@@ -1,7 +1,8 @@
 # Install Media
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Install a book on a device.
 
@@ -9,7 +10,7 @@ Install a book on a device.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 11.0
 
 #### Discussion
 
@@ -27,7 +28,7 @@ If you install a book that isn’t from the Book Store with the same `Persistent
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +38,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS |
 | Required access right | AllowAppInstallation |
 
-##### Example Request and Response
+##### Example request and response
 
 **Enterprise**:
 
@@ -152,9 +153,9 @@ This command installs a book from the Book Store.
 ## Topics
 
 ### Commands and responses
-- [object InstallMediaCommand](installmediacommand.md)
+- [object InstallMediaCommand](./installmediacommand.md)
   The command to install a book on a device.
-- [object InstallMediaResponse](installmediaresponse.md)
+- [object InstallMediaResponse](./installmediaresponse.md)
   A response from the device after it processes the command to install a book on a device.
 
 ## Endpoint
@@ -163,13 +164,21 @@ This command installs a book from the Book Store.
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `InstallMediaCommand`
+
 The request object the server returns for the Install Media Command.
+
+## Responses
+
+- `200` OK (`InstallMediaResponse`, `application/xml`): The response object the system returns for the Install Media Command.
 
 ## See Also
 
-- [Managed Media List](managed-media-list-command.md)
+### Managed media
+- [Managed Media List](./managed-media-list-command.md)
   Get a list of the managed books on a device.
-- [Remove Media](remove-media-command.md)
+- [Remove Media](./remove-media-command.md)
   Remove a previously installed book from a device.
 
 

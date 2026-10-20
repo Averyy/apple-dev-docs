@@ -1,7 +1,8 @@
 # init(desktopIndependentWindow:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a filter that captures only the specified window.
 
@@ -15,19 +16,24 @@ Creates a filter that captures only the specified window.
 init(desktopIndependentWindow window: SCWindow)
 ```
 
+```objc
+- (instancetype) initWithDesktopIndependentWindow:(SCWindow *) window;
+```
+
 ## Parameters
 
 - `window`: A window to capture.
 
 ## See Also
 
-- [init(display: SCDisplay, including: [SCWindow])](sccontentfilter/init(display:including:).md)
+### Creating a filter
+- [init(display: SCDisplay, including: [SCWindow])](./init%28display,including%29.md)
   Creates a filter that captures only specific windows from a display.
-- [init(display: SCDisplay, excludingWindows: [SCWindow])](sccontentfilter/init(display:excludingwindows:).md)
+- [init(display: SCDisplay, excludingWindows: [SCWindow])](./init%28display,excludingwindows%29.md)
   Creates a filter that captures the contents of a display, excluding the specified windows.
-- [init(display: SCDisplay, including: [SCRunningApplication], exceptingWindows: [SCWindow])](sccontentfilter/init(display:including:exceptingwindows:).md)
+- [init(display: SCDisplay, including: [SCRunningApplication], exceptingWindows: [SCWindow])](./init%28display,including,exceptingwindows%29.md)
   Creates a filter that captures a display, including only windows of the specified apps.
-- [init(display: SCDisplay, excludingApplications: [SCRunningApplication], exceptingWindows: [SCWindow])](sccontentfilter/init(display:excludingapplications:exceptingwindows:).md)
+- [init(display: SCDisplay, excludingApplications: [SCRunningApplication], exceptingWindows: [SCWindow])](./init%28display,excludingapplications,exceptingwindows%29.md)
   Creates a filter that captures a display, excluding windows of the specified apps.
 
 

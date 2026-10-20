@@ -1,16 +1,17 @@
 # octet
 
 **Framework**: NetworkingDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The hardware address, specified as a series of six bytes.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 uint8_t octet[6];
 ```
 

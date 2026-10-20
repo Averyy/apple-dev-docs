@@ -1,7 +1,8 @@
 # seed
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The seed value that determines the random source’s behavior.
 
@@ -19,11 +20,15 @@ The seed value that determines the random source’s behavior.
 var seed: UInt64 { get set }
 ```
 
+```objc
+@property (nonatomic, assign) uint64_t seed;
+```
+
 #### Discussion
 
-Any two random sources initialized with the same seed value will generate the same sequence of random numbers. To replicate the behavior of an existing [`GKLinearCongruentialRandomSource`](gklinearcongruentialrandomsource.md) instance, read this property and then create a new instance by passing the resulting value to the [`init(seed:)`](gklinearcongruentialrandomsource/init(seed:).md) initializer.
+Any two random sources initialized with the same seed value will generate the same sequence of random numbers. To replicate the behavior of an existing [`GKLinearCongruentialRandomSource`](../gklinearcongruentialrandomsource.md) instance, read this property and then create a new instance by passing the resulting value to the [`init(seed:)`](./init%28seed%29.md) initializer.
 
-For a source of high-entropy seed data, see the [`SecRandomCopyBytes(_:_:_:)`](https://developer.apple.com/documentation/security/secrandomcopybytes(_:_:_:)) function.
+For a source of high-entropy seed data, see the [`SecRandomCopyBytes(_:_:_:)`](../../Security/secrandomcopybytes%28_,_,_%29.md) function.
 
 
 ---

@@ -1,7 +1,8 @@
 # bytes
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A raw span over the memory represented by this span.
 
@@ -19,6 +20,8 @@ A raw span over the memory represented by this span.
 ```swift
 var bytes: RawSpan { get }
 ```
+
+Available when `Element` conforms to `ConvertibleToBytes`.
 
 #### Return Value
 

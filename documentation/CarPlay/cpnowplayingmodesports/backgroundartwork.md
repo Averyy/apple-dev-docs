@@ -1,7 +1,8 @@
 # backgroundArtwork
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A large colorful image for the background of the now playing screen. A gradient or crossfade image works best, especially when it includes the primary colors of each team. Provide an image no larger than 500x500.
 
@@ -15,6 +16,10 @@ A large colorful image for the background of the now playing screen. A gradient 
 ```swift
 @NSCopying
 var backgroundArtwork: UIImage? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) UIImage * backgroundArtwork;
 ```
 
 

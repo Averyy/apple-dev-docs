@@ -1,7 +1,8 @@
 # supportedResources
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Additional system resources that a continuous background task can request.
 
@@ -16,13 +17,17 @@ Additional system resources that a continuous background task can request.
 class var supportedResources: BGContinuedProcessingTaskRequest.Resources { get }
 ```
 
+```objc
+@property (class, readonly) BGContinuedProcessingTaskRequestResources supportedResources;
+```
+
 ## Mentions
 
-- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
+- [Performing long-running tasks on iOS and iPadOS](../performing-long-running-tasks-on-ios-and-ipados.md)
 
 #### Discussion
 
-The [`BGContinuedProcessingTaskRequest.Resources`](bgcontinuedprocessingtaskrequest/resources.md) enumeration indicates optional system resources that a specific [`BGContinuedProcessingTaskRequest`](bgcontinuedprocessingtaskrequest.md) instance can request through its [`requiredResources`](bgcontinuedprocessingtaskrequest/requiredresources.md) property.
+The [`BGContinuedProcessingTaskRequest.Resources`](../bgcontinuedprocessingtaskrequest/resources.md) enumeration indicates optional system resources that a specific [`BGContinuedProcessingTaskRequest`](../bgcontinuedprocessingtaskrequest.md) instance can request through its [`requiredResources`](../bgcontinuedprocessingtaskrequest/requiredresources.md) property.
 
 Before requesting a resource, check this property to ensure that the device supports it.
 

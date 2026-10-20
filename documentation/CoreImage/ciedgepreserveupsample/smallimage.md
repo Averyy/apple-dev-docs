@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image that the filter upsamples.
@@ -11,7 +12,7 @@ The image that the filter upsamples.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,18 @@ The image that the filter upsamples.
 var smallImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * smallImage;
+```
+
 ## See Also
 
-- [var inputImage: CIImage?](ciedgepreserveupsample/inputimage.md)
+### Instance Properties
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var lumaSigma: Float](ciedgepreserveupsample/lumasigma.md)
+- [var lumaSigma: Float](./lumasigma.md)
   A value that specifies the influence of the input image’s luma information on the upsampling operation.
-- [var spatialSigma: Float](ciedgepreserveupsample/spatialsigma.md)
+- [var spatialSigma: Float](./spatialsigma.md)
   A value that specifies the influence of the input image’s spatial information on the upsampling operation.
 
 

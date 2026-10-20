@@ -1,7 +1,8 @@
 # transitionID
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Marks a transition from one source of buffers to another.
 

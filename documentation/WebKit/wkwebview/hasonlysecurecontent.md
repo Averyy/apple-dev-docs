@@ -1,7 +1,8 @@
 # hasOnlySecureContent
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the web view loaded all resources on the page through securely encrypted connections.
 
@@ -18,29 +19,34 @@ A Boolean value that indicates whether the web view loaded all resources on the 
 var hasOnlySecureContent: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasOnlySecureContent;
+```
+
 #### Discussion
 
-[`WKWebView`](wkwebview.md) is key-value observing (KVO) compliant for this property.
+[`WKWebView`](../wkwebview.md) is key-value observing (KVO) compliant for this property.
 
 ## See Also
 
-- [var scrollView: UIScrollView](wkwebview/scrollview.md)
+### Inspecting the view information
+- [var scrollView: UIScrollView](./scrollview.md)
   The scroll view associated with the web view.
-- [var title: String?](wkwebview/title.md)
+- [var title: String?](./title.md)
   The page title.
-- [var url: URL?](wkwebview/url.md)
+- [var url: URL?](./url.md)
   The URL for the current webpage.
-- [var mediaType: String?](wkwebview/mediatype.md)
+- [var mediaType: String?](./mediatype.md)
   The media type for the contents of the web view.
-- [var customUserAgent: String?](wkwebview/customuseragent.md)
+- [var customUserAgent: String?](./customuseragent.md)
   The custom user agent string.
-- [var serverTrust: SecTrust?](wkwebview/servertrust.md)
+- [var serverTrust: SecTrust?](./servertrust.md)
   The trust management object you use to evaluate trust for the current webpage.
-- [var themeColor: UIColor?](wkwebview/themecolor.md)
+- [var themeColor: UIColor?](./themecolor.md)
   The theme color that the system gets from the first valid meta tag in the webpage.
-- [var underPageBackgroundColor: UIColor!](wkwebview/underpagebackgroundcolor.md)
+- [var underPageBackgroundColor: UIColor!](./underpagebackgroundcolor.md)
   The color the web view displays behind the active page, visible when the user scrolls beyond the bounds of the page.
-- [var refreshController: NSRefreshController?](wkwebview/refreshcontroller.md)
+- [var refreshController: NSRefreshController?](./refreshcontroller.md)
 
 
 ---

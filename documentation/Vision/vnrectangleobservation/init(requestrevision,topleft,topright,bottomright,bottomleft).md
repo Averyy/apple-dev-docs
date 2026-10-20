@@ -1,7 +1,8 @@
 # init(requestRevision:topLeft:topRight:bottomRight:bottomLeft:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rectangle observation from its corner points.
 
@@ -19,6 +20,10 @@ Creates a rectangle observation from its corner points.
 convenience init(requestRevision: Int, topLeft: CGPoint, topRight: CGPoint, bottomRight: CGPoint, bottomLeft: CGPoint)
 ```
 
+```objc
++ (instancetype) rectangleObservationWithRequestRevision:(NSUInteger) requestRevision topLeft:(CGPoint) topLeft topRight:(CGPoint) topRight bottomRight:(CGPoint) bottomRight bottomLeft:(CGPoint) bottomLeft;
+```
+
 ## Parameters
 
 - `requestRevision`: The rectangle detector revision number. A higher revision indicates more recent iterations of the framework.
@@ -29,7 +34,8 @@ convenience init(requestRevision: Int, topLeft: CGPoint, topRight: CGPoint, bott
 
 ## See Also
 
-- [convenience init(requestRevision: Int, topLeft: CGPoint, bottomLeft: CGPoint, bottomRight: CGPoint, topRight: CGPoint)](vnrectangleobservation/init(requestrevision:topleft:bottomleft:bottomright:topright:).md)
+### Creating an Observation
+- [convenience init(requestRevision: Int, topLeft: CGPoint, bottomLeft: CGPoint, bottomRight: CGPoint, topRight: CGPoint)](./init%28requestrevision,topleft,bottomleft,bottomright,topright%29.md)
   Creates a rectangle observation from its corner points.
 
 

@@ -1,7 +1,8 @@
 # selectedIndex
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected object in the arranged objects array.
 
@@ -14,6 +15,10 @@ The currently selected object in the arranged objects array.
 var selectedIndex: Int { get set }
 ```
 
+```objc
+@property NSInteger selectedIndex;
+```
+
 #### Discussion
 
 To animate a transition to a new index, use the NSPageController class animator object.
@@ -22,9 +27,10 @@ This property is key-value observing compliant.
 
 ## See Also
 
-- [var arrangedObjects: [Any]](nspagecontroller/arrangedobjects.md)
+### Page Controller Items
+- [var arrangedObjects: [Any]](./arrangedobjects.md)
   An array containing the objects displayed in the page controller’s view.
-- [func navigateForward(to: Any)](nspagecontroller/navigateforward(to:).md)
+- [func navigateForward(to: Any)](./navigateforward%28to%29.md)
   Navigates to the specific object.
 
 

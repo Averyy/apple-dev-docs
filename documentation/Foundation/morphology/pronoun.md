@@ -1,7 +1,8 @@
 # Morphology.Pronoun
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A custom pronoun for referring to a third person.
 
@@ -22,44 +23,45 @@ struct Pronoun
 
 #### Overview
 
-Create instances of [`Morphology.Pronoun`](morphology/pronoun.md) when you need to define custom pronouns for a localized term of address.
+Create instances of [`Morphology.Pronoun`](./pronoun.md) when you need to define custom pronouns for a localized term of address.
 
-For examples of how to create custom pronouns, see [`TermOfAddress`](termofaddress.md).
+For examples of how to create custom pronouns, see [`TermOfAddress`](../termofaddress.md).
 
 ## Topics
 
 ### Creating pronouns
-- [init(pronoun: String, morphology: Morphology, dependentMorphology: Morphology?)](morphology/pronoun/init(pronoun:morphology:dependentmorphology:).md)
+- [init(pronoun: String, morphology: Morphology, dependentMorphology: Morphology?)](./pronoun/init%28pronoun,morphology,dependentmorphology%29.md)
   Creates a pronoun with the specified name, morphology, and dependent morphology.
 ### Using pronouns
-- [var pronoun: String](morphology/pronoun/pronoun.md)
+- [var pronoun: String](./pronoun/pronoun.md)
   The string representation of the pronoun.
-- [var morphology: Morphology](morphology/pronoun/morphology.md)
+- [var morphology: Morphology](./pronoun/morphology.md)
   The morphology of the pronoun form.
-- [var dependentMorphology: Morphology?](morphology/pronoun/dependentmorphology.md)
+- [var dependentMorphology: Morphology?](./pronoun/dependentmorphology.md)
   The dependent morphology of the pronoun form.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum InflectionRule](inflectionrule.md)
+### Automatic grammar agreement
+- [enum InflectionRule](../inflectionrule.md)
   A rule that affects how an attributed string performs automatic grammatical agreement.
-- [struct Morphology](morphology.md)
+- [struct Morphology](../morphology.md)
   A description of the grammatical properties of a string.
-- [struct TermOfAddress](termofaddress.md)
+- [struct TermOfAddress](../termofaddress.md)
   The type for representing grammatical gender in localized text.
-- [enum InflectionConcept](inflectionconcept.md)
+- [enum InflectionConcept](../inflectionconcept.md)
   An inflection method to use when localizing text.
 
 

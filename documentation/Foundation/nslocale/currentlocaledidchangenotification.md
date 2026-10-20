@@ -1,7 +1,8 @@
 # currentLocaleDidChangeNotification
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that indicates that the user’s locale changed.
 
@@ -20,19 +21,25 @@ A notification that indicates that the user’s locale changed.
 class let currentLocaleDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const NSCurrentLocaleDidChangeNotification;
+```
+
 #### Discussion
 
 Register for this notification if your app displays content (dates, times, numbers, and so on) that is affected by the locale. Use the notification to trigger updates to your app’s interface.
 
 ## See Also
 
-- [class NSNotification](nsnotification.md)
+### Related Documentation
+- [class NSNotification](../nsnotification.md)
   A container for information broadcast through a notification center to all registered observers.
-- [class var autoupdatingCurrent: Locale](nslocale/autoupdatingcurrent.md)
+### Getting the User’s Locale
+- [class var autoupdatingCurrent: Locale](./autoupdatingcurrent.md)
   A locale which tracks the user’s current preferences.
-- [class var current: Locale](nslocale/current.md)
+- [class var current: Locale](./current.md)
   A locale that represents the user’s region settings at the time the property is read.
-- [class var system: Locale](nslocale/system.md)
+- [class var system: Locale](./system.md)
   A locale representing the generic root values with little localization.
 
 

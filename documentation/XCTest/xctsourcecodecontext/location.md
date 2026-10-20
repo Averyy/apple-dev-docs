@@ -1,7 +1,8 @@
 # location
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A representation of a location in source code where a test issue occurred.
 
@@ -11,9 +12,14 @@ A representation of a location in source code where a test issue occurred.
 var location: XCTSourceCodeLocation? { get }
 ```
 
+```objc
+@property (readonly, nullable) XCTSourceCodeLocation * location;
+```
+
 ## See Also
 
-- [var callStack: [XCTSourceCodeFrame]](xctsourcecodecontext/callstack.md)
+### Context Information
+- [var callStack: [XCTSourceCodeFrame]](./callstack.md)
   An array of source code frames that describes the call stack when a test issue occurs.
 
 

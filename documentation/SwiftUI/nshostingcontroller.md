@@ -1,7 +1,8 @@
 # NSHostingController
 
 **Framework**: SwiftUI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An AppKit view controller that hosts SwiftUI view hierarchy.
 
@@ -17,65 +18,66 @@ An AppKit view controller that hosts SwiftUI view hierarchy.
 
 #### Overview
 
-Create an `NSHostingController` object when you want to integrate SwiftUI views into an AppKit view hierarchy. At creation time, specify the SwiftUI view you want to use as the root view for this view controller; you can change that view later using the [`rootView`](nshostingcontroller/rootview.md) property. Use the hosting controller like you would any other view controller, by presenting it or embedding it as a child view controller in your interface.
+Create an `NSHostingController` object when you want to integrate SwiftUI views into an AppKit view hierarchy. At creation time, specify the SwiftUI view you want to use as the root view for this view controller; you can change that view later using the [`rootView`](./nshostingcontroller/rootview.md) property. Use the hosting controller like you would any other view controller, by presenting it or embedding it as a child view controller in your interface.
 
 ## Topics
 
 ### Creating a hosting controller object
-- [init(rootView: Content)](nshostingcontroller/init(rootview:).md)
+- [init(rootView: Content)](./nshostingcontroller/init%28rootview%29.md)
   Creates a hosting controller object that wraps the specified SwiftUI view.
-- [init?(coder: NSCoder, rootView: Content)](nshostingcontroller/init(coder:rootview:).md)
+- [init?(coder: NSCoder, rootView: Content)](./nshostingcontroller/init%28coder,rootview%29.md)
   Creates a hosting controller object from an archive and the specified SwiftUI view.
-- [init?(coder: NSCoder)](nshostingcontroller/init(coder:).md)
+- [init?(coder: NSCoder)](./nshostingcontroller/init%28coder%29.md)
   Creates a hosting controller object from the contents of the specified archive.
 ### Getting the root view
-- [var rootView: Content](nshostingcontroller/rootview.md)
+- [var rootView: Content](./nshostingcontroller/rootview.md)
   The root view of the SwiftUI view hierarchy managed by this view controller.
-- [var identifier: NSUserInterfaceItemIdentifier?](nshostingcontroller/identifier.md)
+- [var identifier: NSUserInterfaceItemIdentifier?](./nshostingcontroller/identifier.md)
 ### Configuring the controller
-- [func sizeThatFits(in: CGSize) -> CGSize](nshostingcontroller/sizethatfits(in:).md)
+- [func sizeThatFits(in: CGSize) -> CGSize](./nshostingcontroller/sizethatfits%28in%29.md)
   Calculates and returns the most appropriate size for the current view.
-- [var preferredContentSize: NSSize](nshostingcontroller/preferredcontentsize.md)
-- [var sizingOptions: NSHostingSizingOptions](nshostingcontroller/sizingoptions.md)
+- [var preferredContentSize: NSSize](./nshostingcontroller/preferredcontentsize.md)
+- [var sizingOptions: NSHostingSizingOptions](./nshostingcontroller/sizingoptions.md)
   The options for how the hosting controller’s view creates and updates constraints based on the size of its SwiftUI content.
-- [var safeAreaRegions: SafeAreaRegions](nshostingcontroller/safearearegions.md)
+- [var safeAreaRegions: SafeAreaRegions](./nshostingcontroller/safearearegions.md)
   The safe area regions that this view controller adds to its view.
-- [var sceneBridgingOptions: NSHostingSceneBridgingOptions](nshostingcontroller/scenebridgingoptions.md)
+- [var sceneBridgingOptions: NSHostingSceneBridgingOptions](./nshostingcontroller/scenebridgingoptions.md)
   The options for which aspects of the window will be managed by this controller’s hosting view.
 
 ## Relationships
 
 ### Inherits From
-- [NSViewController](../appkit/nsviewcontroller.md)
+- [NSViewController](../AppKit/nsviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSEditor](../appkit/nseditor.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSeguePerforming](../appkit/nssegueperforming.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSEditor](../AppKit/nseditor.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSeguePerforming](../AppKit/nssegueperforming.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
 
 ## See Also
 
-- [Unifying your app’s animations](unifying-your-app-s-animations.md)
+### Displaying SwiftUI views in AppKit
+- [Unifying your app’s animations](./unifying-your-app-s-animations.md)
   Create a consistent UI animation experience across SwiftUI, UIKit, and AppKit.
-- [class NSHostingView](nshostingview.md)
+- [class NSHostingView](./nshostingview.md)
   An AppKit view that hosts a SwiftUI view hierarchy.
-- [class NSHostingMenu](nshostingmenu.md)
+- [class NSHostingMenu](./nshostingmenu.md)
   An AppKit menu with menu items that are defined by a SwiftUI View.
-- [struct NSHostingSizingOptions](nshostingsizingoptions.md)
+- [struct NSHostingSizingOptions](./nshostingsizingoptions.md)
   Options for how hosting views and controllers reflect their content’s size into Auto Layout constraints.
-- [class NSHostingSceneRepresentation](nshostingscenerepresentation.md)
+- [class NSHostingSceneRepresentation](./nshostingscenerepresentation.md)
   An AppKit type that hosts and can present SwiftUI scenes
-- [struct NSHostingSceneBridgingOptions](nshostingscenebridgingoptions.md)
+- [struct NSHostingSceneBridgingOptions](./nshostingscenebridgingoptions.md)
   Options for how hosting views and controllers manage aspects of the associated window.
 
 

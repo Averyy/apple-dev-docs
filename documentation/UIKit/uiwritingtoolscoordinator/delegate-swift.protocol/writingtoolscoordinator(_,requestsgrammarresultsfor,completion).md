@@ -1,7 +1,8 @@
 # writingToolsCoordinator(_:requestsGrammarResultsFor:completion:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for information about grammar issues in the specified context.
 
@@ -14,7 +15,15 @@ Asks the delegate for information about grammar issues in the specified context.
 ## Declaration
 
 ```swift
+optional func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, requestsGrammarResultsFor context: UIWritingToolsCoordinator.Context, completion: @escaping @Sendable ([NSTextCheckingResult]) -> Void)
+```
+
+```swift
 optional func writingToolsCoordinator(_ writingToolsCoordinator: UIWritingToolsCoordinator, grammarResultsFor context: UIWritingToolsCoordinator.Context) async -> [NSTextCheckingResult]
+```
+
+```objc
+- (void) writingToolsCoordinator:(UIWritingToolsCoordinator *) writingToolsCoordinator requestsGrammarResultsForContext:(UIWritingToolsCoordinatorContext *) context completion:(void (^)(NSArray<NSTextCheckingResult *> *results)) completion;
 ```
 
 #### Discussion

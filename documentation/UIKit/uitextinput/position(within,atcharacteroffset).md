@@ -1,7 +1,8 @@
 # position(within:atCharacterOffset:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the position within a range of a document’s text that corresponds to the character offset from the start of that range.
 
@@ -9,7 +10,7 @@ Returns the position within a range of a document’s text that corresponds to t
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,17 @@ Returns the position within a range of a document’s text that corresponds to t
 optional func position(within range: UITextRange, atCharacterOffset offset: Int) -> UITextPosition?
 ```
 
+```objc
+- (UITextPosition *) positionWithinRange:(UITextRange *) range atCharacterOffset:(NSInteger) offset;
+```
+
 #### Return Value
 
 An object that represents a position in a document’s visible text.
 
 #### Discussion
 
-You should implement this method if you don’t have a one-to-one correspondence between [`UITextPosition`](uitextposition.md) objects within the given range and character offsets into a document string.
+You should implement this method if you don’t have a one-to-one correspondence between [`UITextPosition`](../uitextposition.md) objects within the given range and character offsets into a document string.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ You should implement this method if you don’t have a one-to-one correspondence
 
 ## See Also
 
-- [func characterOffset(of: UITextPosition, within: UITextRange) -> Int](uitextinput/characteroffset(of:within:).md)
+### Reconciling text position and character offset
+- [func characterOffset(of: UITextPosition, within: UITextRange) -> Int](./characteroffset%28of,within%29.md)
   Returns the character offset of a position in a document’s text that falls within a specified range.
 
 

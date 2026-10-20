@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Decodes a nested container and returns a `Decoder` instance for decoding `super` from that container.
@@ -27,7 +28,7 @@ A new `Decoder` to pass to `super.init(from:)`.
 
 #### Discussion
 
-> **Note**: `DecodingError.valueNotFound` if the encountered encoded value is null, or of there are no more values to decode.
+> **Throws**: `DecodingError.valueNotFound` if the encountered encoded value is null, or of there are no more values to decode.
 
 
 ---

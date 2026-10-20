@@ -1,7 +1,8 @@
 # value
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value for the metaparameter.
 
@@ -19,11 +20,15 @@ A value for the metaparameter.
 var value: Any { get set }
 ```
 
+```objc
+@property (nonatomic, strong, readwrite) id value;
+```
+
 #### Discussion
 
-The framework sets this property to the subclass’s initializer argument; for example, see [`init(value:)`](phasenumbermetaparameterdefinition/init(value:).md).
+The framework sets this property to the subclass’s initializer argument; for example, see [`init(value:)`](../phasenumbermetaparameterdefinition/init%28value%29.md).
 
-An app changes the value at runtime by calling [`fade(value:duration:)`](phasenumbermetaparameter/fade(value:duration:).md) on the subclass.
+An app changes the value at runtime by calling [`fade(value:duration:)`](../phasenumbermetaparameter/fade%28value,duration%29.md) on the subclass.
 
 
 ---

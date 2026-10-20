@@ -1,6 +1,8 @@
 # Providing custom models for captured rooms and structure exports
 
-**Framework**: RoomPlan
+**Framework**: RoomPlan  
+**Role**: Sample Code  
+**Download**: [ProvidingCustomModelsForCapturedRoomsAndStructureExports.zip](https://docs-assets.developer.apple.com/published/92666d9d480f/ProvidingCustomModelsForCapturedRoomsAndStructureExports.zip)
 
 Enhance the look of an exported 3D model by substituting object bounding boxes with detailed 3D renditions.
 
@@ -12,14 +14,14 @@ Enhance the look of an exported 3D model by substituting object bounding boxes w
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC23 session 10192: [`Explore enhancements to RoomPlan`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10192).
+> **Note**: This sample code project is associated with WWDC23 session 10192: [Explore enhancements to RoomPlan](https://developer.apple.com/wwdc23/10192).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the `RoomPlanExporter` target in Xcode:
 
 1. Set the run destination to an iOS 17 or later device; this app doesn’t support Simulator.
-2. Export a scanned room in JSON format, which you generate with the [`Create a 3D model of an interior room by guiding the user through an AR experience`](create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience.md). Alternatively, you can generate a JSON export of several rooms merged into a single structure by using the [`Merging multiple scans into a single structure`](merging-multiple-scans-into-a-single-structure.md).
+2. Export a scanned room in JSON format, which you generate with the [RoomCaptureView sample app](./create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience.md). Alternatively, you can generate a JSON export of several rooms merged into a single structure by using the [Scan-merging sample app](./merging-multiple-scans-into-a-single-structure.md).
 
 To run the app:
 
@@ -34,7 +36,7 @@ The `RoomPlanCatalogGenerator` target in Xcode provides a command-line tool that
 2. Select the Run task’s Arguments tab.
 3. Click or tap the checkbox to enable just the first argument:
 
-```None
+```
 create-folders -i "~/RoomPlan/Catalog/"
 ```
 
@@ -44,17 +46,17 @@ create-folders -i "~/RoomPlan/Catalog/"
 4. Select the `RoomPlanCatalogGenerator` scheme and choose ‘Edit Scheme’.
 5. In the Run task’s Arguments pane, click or tap the checkbox to enable just the second argument:
 
-```None
+```
 generate -i "~/RoomPlan/Catalog" \
          -o "~/RoomPlan/RoomPlanCatalog.bundle"
 ```
 
 1. Run the scheme in Xcode, which generates a `RoomPlanCatalog.bundle` file from the folder structure filled with 3D models.
-2. Place a scanned room in JSON format at the `~/RoomPlan/Room.json` path on disk. You generate the file by exporting a scanned room with the [`Create a 3D model of an interior room by guiding the user through an AR experience`](create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience.md), or by exporting several rooms merged into a single structure with the [`Merging multiple scans into a single structure`](merging-multiple-scans-into-a-single-structure.md).
+2. Place a scanned room in JSON format at the `~/RoomPlan/Room.json` path on disk. You generate the file by exporting a scanned room with the [RoomCaptureView sample app](./create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience.md), or by exporting several rooms merged into a single structure with the [Scan-merging sample app](./merging-multiple-scans-into-a-single-structure.md).
 3. Select the `RoomPlanCatalogGenerator` scheme and choose ‘Edit Scheme’.
 4. In the Run task’s Arguments pane, click or tap the checkbox to enable just the third argument:
 
-```None
+```
 convert -i "~/RoomPlan/Room.json" \
         -c "~/RoomPlan/RoomPlanCatalog.bundle" \ 
         -o "~/RoomPlan/Room.usdz"
@@ -64,11 +66,12 @@ convert -i "~/RoomPlan/Room.json" \
 
 ## See Also
 
-- [class RoomBuilder](roombuilder.md)
+### 3D Asset Output
+- [class RoomBuilder](./roombuilder.md)
   An object that generates a 3D asset from room-capture data.
-- [class StructureBuilder](structurebuilder.md)
+- [class StructureBuilder](./structurebuilder.md)
   An object that combines multiple scan sessions into a single captured result.
-- [CapturedRoom.USDExportOptions](capturedroom/usdexportoptions.md)
+- [CapturedRoom.USDExportOptions](./capturedroom/usdexportoptions.md)
   Options that determine the underlying data format of a scan export.
 
 

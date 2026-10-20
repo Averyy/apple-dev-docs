@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the container.
 
@@ -19,13 +20,26 @@ The name of the container.
 var name: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * name;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * name;
+```
+
 ## See Also
 
-- [var identifier: String](cncontainer/identifier.md)
+### Getting the Container Information
+- [var identifier: String](./identifier.md)
   The unique identifier for a contacts container on the device.
-- [var type: CNContainerType](cncontainer/type.md)
+- [var type: CNContainerType](./type.md)
   The type of the container.
-- [enum CNContainerType](cncontainertype.md)
+- [enum CNContainerType](../cncontainertype.md)
   The container may be local on the device or associated with a server account that has contacts.
 
 

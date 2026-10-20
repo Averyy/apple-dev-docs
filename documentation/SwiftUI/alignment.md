@@ -1,7 +1,8 @@
 # Alignment
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An alignment in both axes.
 
@@ -23,16 +24,16 @@ struct Alignment
 
 ## Mentions
 
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
-- [Building layouts with stack views](building-layouts-with-stack-views.md)
+- [Aligning views within a stack](./aligning-views-within-a-stack.md)
+- [Building layouts with stack views](./building-layouts-with-stack-views.md)
 
 #### Overview
 
-An `Alignment` contains a [`HorizontalAlignment`](horizontalalignment.md) guide and a [`VerticalAlignment`](verticalalignment.md) guide. Specify an alignment to direct the behavior of certain layout containers and modifiers, like when you place views in a [`ZStack`](zstack.md), or layer a view in front of or behind another view using [`overlay(alignment:content:)`](view/overlay(alignment:content:).md) or [`background(alignment:content:)`](view/background(alignment:content:).md), respectively. During layout, SwiftUI brings the specified guides of the affected views together, aligning the views.
+An `Alignment` contains a [`HorizontalAlignment`](./horizontalalignment.md) guide and a [`VerticalAlignment`](./verticalalignment.md) guide. Specify an alignment to direct the behavior of certain layout containers and modifiers, like when you place views in a [`ZStack`](./zstack.md), or layer a view in front of or behind another view using [`overlay(alignment:content:)`](./view/overlay%28alignment,content%29.md) or [`background(alignment:content:)`](./view/background%28alignment,content%29.md), respectively. During layout, SwiftUI brings the specified guides of the affected views together, aligning the views.
 
 SwiftUI provides a set of built-in alignments that represent common combinations of the built-in horizontal and vertical alignment guides. The blue boxes in the following diagram demonstrate the alignment named by each box’s label, relative to the background view:
 
-![A square that’s divided into four equal quadrants. The upper-](/images/com.apple.SwiftUI/Alignment-1-iOS@2x.png)
+![A square that’s divided into four equal quadrants. The upper-](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Alignment-1-iOS@2x.png)
 
 The following code generates the diagram above, where each blue box appears in an overlay that’s configured with a different alignment:
 
@@ -81,13 +82,13 @@ private struct BackgroundView: View {
 }
 ```
 
-To avoid crowding, the alignment diagram shows only two of the available text baseline alignments. The others align as their names imply. Notice that the first text baseline alignment aligns with the top-most line of text in the background view, while the last text baseline aligns with the bottom-most line. For more information about text baseline alignment, see [`VerticalAlignment`](verticalalignment.md).
+To avoid crowding, the alignment diagram shows only two of the available text baseline alignments. The others align as their names imply. Notice that the first text baseline alignment aligns with the top-most line of text in the background view, while the last text baseline aligns with the bottom-most line. For more information about text baseline alignment, see [`VerticalAlignment`](./verticalalignment.md).
 
-In a left-to-right language like English, the leading and trailing alignments appear on the left and right edges, respectively. SwiftUI reverses these in right-to-left language environments. For more information, see [`HorizontalAlignment`](horizontalalignment.md).
+In a left-to-right language like English, the leading and trailing alignments appear on the left and right edges, respectively. SwiftUI reverses these in right-to-left language environments. For more information, see [`HorizontalAlignment`](./horizontalalignment.md).
 
-##### Custom Alignment
+##### Custom alignment
 
-You can create custom alignments — which you typically do to make use of custom horizontal or vertical guides — by using the [`init(horizontal:vertical:)`](alignment/init(horizontal:vertical:).md) initializer. For example, you can combine a custom vertical guide called `firstThird` with the built-in horizontal [`center`](horizontalalignment/center.md) guide, and use it to configure a [`ZStack`](zstack.md):
+You can create custom alignments — which you typically do to make use of custom horizontal or vertical guides — by using the [`init(horizontal:vertical:)`](./alignment/init%28horizontal,vertical%29.md) initializer. For example, you can combine a custom vertical guide called `firstThird` with the built-in horizontal [`center`](./horizontalalignment/center.md) guide, and use it to configure a [`ZStack`](./zstack.md):
 
 ```swift
 ZStack(alignment: Alignment(horizontal: .center, vertical: .firstThird)) {
@@ -95,82 +96,83 @@ ZStack(alignment: Alignment(horizontal: .center, vertical: .firstThird)) {
 }
 ```
 
-For more information about creating custom guides, including the code that creates the custom `firstThird` alignment in the example above, see [`AlignmentID`](alignmentid.md).
+For more information about creating custom guides, including the code that creates the custom `firstThird` alignment in the example above, see [`AlignmentID`](./alignmentid.md).
 
 ## Topics
 
 ### Getting top guides
-- [static let topLeading: Alignment](alignment/topleading.md)
+- [static let topLeading: Alignment](./alignment/topleading.md)
   A guide that marks the top and leading edges of the view.
-- [static let top: Alignment](alignment/top.md)
+- [static let top: Alignment](./alignment/top.md)
   A guide that marks the top edge of the view.
-- [static let topTrailing: Alignment](alignment/toptrailing.md)
+- [static let topTrailing: Alignment](./alignment/toptrailing.md)
   A guide that marks the top and trailing edges of the view.
 ### Getting middle guides
-- [static let leading: Alignment](alignment/leading.md)
+- [static let leading: Alignment](./alignment/leading.md)
   A guide that marks the leading edge of the view.
-- [static let center: Alignment](alignment/center.md)
+- [static let center: Alignment](./alignment/center.md)
   A guide that marks the center of the view.
-- [static let trailing: Alignment](alignment/trailing.md)
+- [static let trailing: Alignment](./alignment/trailing.md)
   A guide that marks the trailing edge of the view.
 ### Getting bottom guides
-- [static let bottomLeading: Alignment](alignment/bottomleading.md)
+- [static let bottomLeading: Alignment](./alignment/bottomleading.md)
   A guide that marks the bottom and leading edges of the view.
-- [static let bottom: Alignment](alignment/bottom.md)
+- [static let bottom: Alignment](./alignment/bottom.md)
   A guide that marks the bottom edge of the view.
-- [static let bottomTrailing: Alignment](alignment/bottomtrailing.md)
+- [static let bottomTrailing: Alignment](./alignment/bottomtrailing.md)
   A guide that marks the bottom and trailing edges of the view.
 ### Getting text baseline guides
-- [static var leadingFirstTextBaseline: Alignment](alignment/leadingfirsttextbaseline.md)
+- [static var leadingFirstTextBaseline: Alignment](./alignment/leadingfirsttextbaseline.md)
   A guide that marks the leading edge and top-most text baseline in a view.
-- [static var centerFirstTextBaseline: Alignment](alignment/centerfirsttextbaseline.md)
+- [static var centerFirstTextBaseline: Alignment](./alignment/centerfirsttextbaseline.md)
   A guide that marks the top-most text baseline in a view.
-- [static var trailingFirstTextBaseline: Alignment](alignment/trailingfirsttextbaseline.md)
+- [static var trailingFirstTextBaseline: Alignment](./alignment/trailingfirsttextbaseline.md)
   A guide that marks the trailing edge and top-most text baseline in a view.
-- [static var leadingLastTextBaseline: Alignment](alignment/leadinglasttextbaseline.md)
+- [static var leadingLastTextBaseline: Alignment](./alignment/leadinglasttextbaseline.md)
   A guide that marks the leading edge and bottom-most text baseline in a view.
-- [static var centerLastTextBaseline: Alignment](alignment/centerlasttextbaseline.md)
+- [static var centerLastTextBaseline: Alignment](./alignment/centerlasttextbaseline.md)
   A guide that marks the bottom-most text baseline in a view.
-- [static var trailingLastTextBaseline: Alignment](alignment/trailinglasttextbaseline.md)
+- [static var trailingLastTextBaseline: Alignment](./alignment/trailinglasttextbaseline.md)
   A guide that marks the trailing edge and bottom-most text baseline in a view.
 ### Creating a custom alignment
-- [init(horizontal: HorizontalAlignment, vertical: VerticalAlignment)](alignment/init(horizontal:vertical:).md)
+- [init(horizontal: HorizontalAlignment, vertical: VerticalAlignment)](./alignment/init%28horizontal,vertical%29.md)
   Creates a custom alignment value with the specified horizontal and vertical alignment guides.
-- [var horizontal: HorizontalAlignment](alignment/horizontal.md)
+- [var horizontal: HorizontalAlignment](./alignment/horizontal.md)
   The alignment on the horizontal axis.
-- [var vertical: VerticalAlignment](alignment/vertical.md)
+- [var vertical: VerticalAlignment](./alignment/vertical.md)
   The alignment on the vertical axis.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
+### Aligning views
+- [Aligning views within a stack](./aligning-views-within-a-stack.md)
   Position views inside a stack using alignment guides.
-- [Aligning views across stacks](aligning-views-across-stacks.md)
+- [Aligning views across stacks](./aligning-views-across-stacks.md)
   Create a custom alignment and use it to align views across multiple stacks.
-- [func alignmentGuide(_:computeValue:)](view/alignmentguide(_:computevalue:).md)
+- [func alignmentGuide(_:computeValue:)](./view/alignmentguide%28_,computevalue%29.md)
   Sets the view’s horizontal alignment.
-- [struct HorizontalAlignment](horizontalalignment.md)
+- [struct HorizontalAlignment](./horizontalalignment.md)
   An alignment position along the horizontal axis.
-- [struct VerticalAlignment](verticalalignment.md)
+- [struct VerticalAlignment](./verticalalignment.md)
   An alignment position along the vertical axis.
-- [struct DepthAlignment](depthalignment.md)
+- [struct DepthAlignment](./depthalignment.md)
   An alignment position along the depth axis.
-- [protocol AlignmentID](alignmentid.md)
+- [protocol AlignmentID](./alignmentid.md)
   A type that you use to create custom alignment guides.
-- [struct ViewDimensions](viewdimensions.md)
+- [struct ViewDimensions](./viewdimensions.md)
   A view’s size and alignment guides in its own coordinate space.
-- [struct ViewDimensions3D](viewdimensions3d.md)
+- [struct ViewDimensions3D](./viewdimensions3d.md)
   A view’s 3D size and alignment guides in its own coordinate space.
-- [struct SpatialContainer](spatialcontainer.md)
+- [struct SpatialContainer](./spatialcontainer.md)
   A layout container that aligns overlapping content in 3D space.
 
 

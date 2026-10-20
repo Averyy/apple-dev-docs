@@ -1,7 +1,8 @@
 # JPKIPassContents.Certificate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The certificate data associated with an identity document.
 
@@ -22,20 +23,21 @@ Use this structure to access the underlying certificate data you use to sign the
 ## Topics
 
 ### Defining data
-- [let data: Data](jpkipasscontents/certificate/data.md)
+- [let data: Data](./certificate/data.md)
   The result of the signed data from the requested digital identity in X.509 DER format.
 
 ## See Also
 
-- [JPKIPassContents.UserIdentity](jpkipasscontents/useridentity-swift.struct.md)
+### Defining access to the identity passes
+- [JPKIPassContents.UserIdentity](./useridentity-swift.struct.md)
   The functionality for the type of user identification.
-- [JPKIPassContents.SigningIdentity](jpkipasscontents/signingidentity-swift.struct.md)
+- [JPKIPassContents.SigningIdentity](./signingidentity-swift.struct.md)
   The authentication for signing user identification.
-- [JPKIPassContents.Signature](jpkipasscontents/signature.md)
+- [JPKIPassContents.Signature](./signature.md)
   The resulting signed data and certificate you use to sign the pass.
-- [JPKIPassContents.AuthenticationRequest](jpkipasscontents/authenticationrequest.md)
+- [JPKIPassContents.AuthenticationRequest](./authenticationrequest.md)
   The user authentification request based on the generics type.
-- [JPKIPassContents.Identity](jpkipasscontents/identity.md)
+- [JPKIPassContents.Identity](./identity.md)
   Defines the common functionality that JPKI digital identities support.
 
 

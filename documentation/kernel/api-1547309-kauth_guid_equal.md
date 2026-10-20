@@ -1,14 +1,15 @@
 # kauth_guid_equal
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int kauth_guid_equal(guid_t *_guid1, guid_t *_guid2);
 ```
 

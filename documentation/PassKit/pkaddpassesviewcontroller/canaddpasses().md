@@ -1,7 +1,8 @@
 # canAddPasses()
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the device supports adding passes.
 
@@ -17,16 +18,21 @@ Returns a Boolean value that indicates whether the device supports adding passes
 class func canAddPasses() -> Bool
 ```
 
+```objc
++ (BOOL) canAddPasses;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports adding passes; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the device supports adding passes; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [Wallet Developer Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195)
-- [class func isPassLibraryAvailable() -> Bool](pkpasslibrary/ispasslibraryavailable.md)
+### Related Documentation
+- [Wallet Developer Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html#//apple_ref/doc/uid/TP40012195)
+- [class func isPassLibraryAvailable() -> Bool](../pkpasslibrary/ispasslibraryavailable%28%29.md)
   Returns a Boolean value that indicates whether the pass library is available.
-- [class PKPassLibrary](pkpasslibrary.md)
+- [class PKPassLibrary](../pkpasslibrary.md)
   Provides an interface to the user’s library of passes.
 
 

@@ -1,7 +1,8 @@
 # CXErrorDomainNotificationServiceExtension
 
 **Framework**: CallKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 14.5+
@@ -14,6 +15,10 @@
 
 ```swift
 let CXErrorDomainNotificationServiceExtension: String
+```
+
+```c
+extern NSErrorDomain const CXErrorDomainNotificationServiceExtension;
 ```
 
 

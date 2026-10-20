@@ -1,7 +1,8 @@
 # isAdjustingSignalCompensationDelayWhileRunningSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether adjusting the signal compensation delay property of an external sync device is supported while the session is running.
 
@@ -18,9 +19,13 @@ Whether adjusting the signal compensation delay property of an external sync dev
 var isAdjustingSignalCompensationDelayWhileRunningSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAdjustingSignalCompensationDelayWhileRunningSupported) BOOL adjustingSignalCompensationDelayWhileRunningSupported;
+```
+
 #### Discussion
 
-This property returns `true` if the `signalCompensationDelay` of an [`AVExternalSyncDevice`](avexternalsyncdevice.md) being followed by this device’s [`AVCaptureDeviceInput`](avcapturedeviceinput.md) can be adjusted while the [`AVCaptureSession`](avcapturesession.md) is running.
+This property returns `true` if the `signalCompensationDelay` of an [`AVExternalSyncDevice`](../avexternalsyncdevice.md) being followed by this device’s [`AVCaptureDeviceInput`](../avcapturedeviceinput.md) can be adjusted while the [`AVCaptureSession`](../avcapturesession.md) is running.
 
 
 ---

@@ -1,7 +1,8 @@
 # message
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The message contained in this notification.
 
@@ -16,13 +17,14 @@ let message: RCSMessage
 
 ## See Also
 
-- [let groupContext: RCSGroupContext?](rcsservice/incomingmessagenotification/groupcontext.md)
+### Inspecting notification properties
+- [let groupContext: RCSGroupContext?](./groupcontext.md)
   The group context associated with this message.
-- [struct RCSGroupContext](rcsgroupcontext.md)
+- [struct RCSGroupContext](../../rcsgroupcontext.md)
   Structure containing information about a message’s group.
-- [let suggestions: [RCSService.Business.Suggestion]](rcsservice/incomingmessagenotification/suggestions.md)
+- [let suggestions: [RCSService.Business.Suggestion]](./suggestions.md)
   An array of suggestions associated with the message.
-- [RCSService.Business.Suggestion](rcsservice/business/suggestion.md)
+- [RCSService.Business.Suggestion](../business/suggestion.md)
   Enumeration representing a suggestion from a business.
 
 

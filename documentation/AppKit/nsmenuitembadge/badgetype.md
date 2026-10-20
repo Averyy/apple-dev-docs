@@ -1,7 +1,8 @@
 # NSMenuItemBadge.BadgeType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that define types of badges for display.
 
@@ -14,41 +15,46 @@ Constants that define types of badges for display.
 enum BadgeType
 ```
 
+```c
+enum NSMenuItemBadgeType : NSInteger;
+```
+
 #### Overview
 
-The predefined strings that display are localizable and automatically handle any pluralization of [`itemCount`](nsmenuitembadge/itemcount.md).
+The predefined strings that display are localizable and automatically handle any pluralization of [`itemCount`](./itemcount.md).
 
 ## Topics
 
 ### Getting badge types
-- [NSMenuItemBadge.BadgeType.alerts](nsmenuitembadge/badgetype/alerts.md)
+- [NSMenuItemBadge.BadgeType.alerts](./badgetype/alerts.md)
   A badge representing the number of alerts.
-- [NSMenuItemBadge.BadgeType.newItems](nsmenuitembadge/badgetype/newitems.md)
+- [NSMenuItemBadge.BadgeType.newItems](./badgetype/newitems.md)
   A badge representing the number of new items.
-- [NSMenuItemBadge.BadgeType.none](nsmenuitembadge/badgetype/none.md)
+- [NSMenuItemBadge.BadgeType.none](./badgetype/none.md)
   A badge with no string portion.
-- [NSMenuItemBadge.BadgeType.updates](nsmenuitembadge/badgetype/updates.md)
+- [NSMenuItemBadge.BadgeType.updates](./badgetype/updates.md)
   A badge representing the number of available updates.
 ### Initializers
-- [init?(rawValue: Int)](nsmenuitembadge/badgetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./badgetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func alerts(count: Int) -> Self](nsmenuitembadge/alerts(count:).md)
+### Creating badges of a specific type
+- [class func alerts(count: Int) -> Self](./alerts%28count%29.md)
   Creates an alert-style badge with an integer count and a predefined label that represents the number of alerts.
-- [class func newItems(count: Int) -> Self](nsmenuitembadge/newitems(count:).md)
+- [class func newItems(count: Int) -> Self](./newitems%28count%29.md)
   Creates a new item-style badge with an integer count and a predefined label that represents the number of new items.
-- [class func updates(count: Int) -> Self](nsmenuitembadge/updates(count:).md)
+- [class func updates(count: Int) -> Self](./updates%28count%29.md)
   Creates an update-style badge with an integer count and a predefined label that represents the number of available updates.
 
 

@@ -1,15 +1,20 @@
 # mFlags
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var mFlags: AUParameterMIDIMappingFlags
+```
+
+```c
+AUParameterMIDIMappingFlags mFlags;
 ```
 
 

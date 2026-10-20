@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a skeleton resource from a mesh resource skeleton.
 
@@ -21,7 +22,7 @@ convenience init(from skeleton: MeshResource.Skeleton) throws
 
 #### Discussion
 
-> **Note**: If the skeleton asset cannot be created.
+> **Throws**: If the skeleton asset cannot be created.
 
 ## Parameters
 

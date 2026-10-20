@@ -1,9 +1,10 @@
 # planeCount
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Number of planes in this pixel buffer. This value will always be greater than 0. `planeCount` is more efficient to access than count property of `planes`. A non-planar pixel buffer implicitly defines a single plane. To check if the pixel buffer was defined with planes use [`isPlanar`](cvpixelbufferrepresentable/isplanar.md) property.
+Number of planes in this pixel buffer. This value will always be greater than 0. `planeCount` is more efficient to access than count property of `planes`. A non-planar pixel buffer implicitly defines a single plane. To check if the pixel buffer was defined with planes use [`isPlanar`](./isplanar.md) property.
 
 **Availability**:
 - iOS 26.0+

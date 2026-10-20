@@ -1,7 +1,8 @@
 # JWSRenewalInfoDecodedPayload
 
 **Framework**: App Store Server Notifications  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A decoded payload containing subscription renewal information for an auto-renewable subscription.
 
@@ -10,23 +11,23 @@ A decoded payload containing subscription renewal information for an auto-renewa
 
 ## Declaration
 
-```swift
+```
 object JWSRenewalInfoDecodedPayload
 ```
 
 ## Mentions
 
-- [App Store Server Notifications changelog](app-store-server-notifications-changelog.md)
+- [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
 ## Topics
 
 ### Data types
-- [Transaction data types](transaction-data-types.md)
+- [Transaction data types](./transaction-data-types.md)
   Refer to these data types for decoded transaction and renewal information payloads.
 
 ## Properties
 
-- `appAccountToken` (appAccountToken): A UUID you create at the time of purchase that associates the transaction with a customer on your own service. This is the token that applies to the upcoming renewal transaction. If your app doesn’t provide an `appAccountToken`, this field is omitted.  For more information, see [`appAccountToken(_:)`](https://developer.apple.com/documentation/storekit/product/purchaseoption/appaccounttoken(_:)).
+- `appAccountToken` (appAccountToken): A UUID you create at the time of purchase that associates the transaction with a customer on your own service. This is the token that applies to the upcoming renewal transaction. If your app doesn’t provide an `appAccountToken`, this field is omitted.  For more information, see [`appAccountToken(_:)`](../StoreKit/product/purchaseoption/appaccounttoken%28_%29.md).
 - `appTransactionId` (appTransactionId): The unique identifier of the app download transaction.
 - `autoRenewProductId` (autoRenewProductId): The product identifier of the product that renews at the next billing period.
 - `autoRenewStatus` (autoRenewStatus): The renewal status of the auto-renewable subscription.
@@ -53,11 +54,12 @@ object JWSRenewalInfoDecodedPayload
 
 ## See Also
 
-- [object JWSTransactionDecodedPayload](jwstransactiondecodedpayload.md)
+### JWS header and payload data types
+- [object JWSTransactionDecodedPayload](./jwstransactiondecodedpayload.md)
   A decoded payload that contains transaction information.
-- [object JWSDecodedHeader](jwsdecodedheader.md)
+- [object JWSDecodedHeader](./jwsdecodedheader.md)
   A decoded JSON Web Signature header containing transaction or renewal information.
-- [Transaction data types](transaction-data-types.md)
+- [Transaction data types](./transaction-data-types.md)
   Refer to these data types for decoded transaction and renewal information payloads.
 
 

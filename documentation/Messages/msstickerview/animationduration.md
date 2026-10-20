@@ -1,7 +1,8 @@
 # animationDuration
 
 **Framework**: Messages  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of time it takes to complete the sticker’s animation.
 
@@ -16,13 +17,18 @@ The amount of time it takes to complete the sticker’s animation.
 var animationDuration: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval animationDuration;
+```
+
 ## See Also
 
-- [func isAnimating() -> Bool](msstickerview/isanimating.md)
+### Controlling Sticker Animation
+- [func isAnimating() -> Bool](./isanimating%28%29.md)
   Returns a Boolean value that indicates whether the sticker is animating.
-- [func startAnimating()](msstickerview/startanimating.md)
+- [func startAnimating()](./startanimating%28%29.md)
   Starts the sticker’s animation, beginning with the first frame.
-- [func stopAnimating()](msstickerview/stopanimating.md)
+- [func stopAnimating()](./stopanimating%28%29.md)
   Stops the sticker’s animation.
 
 

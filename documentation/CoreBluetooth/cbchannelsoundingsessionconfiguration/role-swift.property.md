@@ -1,7 +1,8 @@
 # role
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The channel sounding role a CBPeripheral should assume for a given session.
 
@@ -14,6 +15,10 @@ The channel sounding role a CBPeripheral should assume for a given session.
 
 ```swift
 var role: CBChannelSoundingSessionConfiguration.Role { get }
+```
+
+```objc
+@property (nonatomic, readonly) CBChannelSoundingSessionConfigurationRole role;
 ```
 
 

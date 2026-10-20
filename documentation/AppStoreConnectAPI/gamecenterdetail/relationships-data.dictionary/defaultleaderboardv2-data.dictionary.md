@@ -1,7 +1,8 @@
 # GameCenterDetail.Relationships.DefaultLeaderboardV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the default leaderboard of the Game Center detail.
 
@@ -10,7 +11,7 @@ The data that describes the default leaderboard of the Game Center detail.
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetail.Relationships.DefaultLeaderboardV2
 ```
 
@@ -21,7 +22,7 @@ object GameCenterDetail.Relationships.DefaultLeaderboardV2
 ## Topics
 
 ### Dictionaries
-- [object GameCenterDetail.Relationships.DefaultLeaderboardV2.Data](gamecenterdetail/relationships-data.dictionary/defaultleaderboardv2-data.dictionary/data-data.dictionary.md)
+- [object GameCenterDetail.Relationships.DefaultLeaderboardV2.Data](./defaultleaderboardv2-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

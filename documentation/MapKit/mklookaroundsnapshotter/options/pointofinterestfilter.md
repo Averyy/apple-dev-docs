@@ -1,7 +1,8 @@
 # pointOfInterestFilter
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A filter to use to customize what map features are visible in the snapshot.
 
@@ -19,11 +20,16 @@ A filter to use to customize what map features are visible in the snapshot.
 var pointOfInterestFilter: MKPointOfInterestFilter? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) MKPointOfInterestFilter * pointOfInterestFilter;
+```
+
 ## See Also
 
-- [var size: CGSize](mklookaroundsnapshotter/options/size.md)
+### Customizing Snaphot Appearance
+- [var size: CGSize](./size.md)
   The requested size of the snapshot image.
-- [var traitCollection: UITraitCollection](mklookaroundsnapshotter/options/traitcollection.md)
+- [var traitCollection: UITraitCollection](./traitcollection.md)
   A collection of traits that describes orientation and other characteristics of the snapshot.
 
 

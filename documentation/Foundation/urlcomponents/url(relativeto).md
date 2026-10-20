@@ -1,7 +1,8 @@
 # url(relativeTo:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a URL based on the component settings and relative to a given base URL.
 
@@ -26,9 +27,10 @@ If the NSURLComponents has an authority component (user, password, host or port)
 
 ## See Also
 
-- [var url: URL?](urlcomponents/url.md)
+### Getting the URL
+- [var url: URL?](./url.md)
   A URL created from the components.
-- [var string: String?](urlcomponents/string.md)
+- [var string: String?](./string.md)
   A URL derived from the components object, in string form.
 
 

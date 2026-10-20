@@ -1,7 +1,8 @@
 # userData
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var userData: MTLIntersectionFunctionSignature { get }
+```
+
+```c
+MTLIntersectionFunctionSignatureUserData
 ```
 
 #### Discussion

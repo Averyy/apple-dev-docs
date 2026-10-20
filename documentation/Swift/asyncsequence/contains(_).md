@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the asynchronous sequence contains the given element.
 
@@ -19,6 +20,8 @@ Returns a Boolean value that indicates whether the asynchronous sequence contain
 ```swift
 func contains(_ search: Self.Element) async rethrows -> Bool
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 #### Return Value
 
@@ -41,19 +44,20 @@ print(containsFive)
 
 ## See Also
 
-- [func contains(where: (Self.Element) async throws -> Bool) async rethrows -> Bool](asyncsequence/contains(where:).md)
+### Finding Elements
+- [func contains(where: (Self.Element) async throws -> Bool) async rethrows -> Bool](./contains%28where%29.md)
   Returns a Boolean value that indicates whether the asynchronous sequence contains an element that satisfies the given predicate.
-- [func allSatisfy((Self.Element) async throws -> Bool) async rethrows -> Bool](asyncsequence/allsatisfy(_:).md)
+- [func allSatisfy((Self.Element) async throws -> Bool) async rethrows -> Bool](./allsatisfy%28_%29.md)
   Returns a Boolean value that indicates whether all elements produced by the asynchronous sequence satisfy the given predicate.
-- [func first(where: (Self.Element) async throws -> Bool) async rethrows -> Self.Element?](asyncsequence/first(where:).md)
+- [func first(where: (Self.Element) async throws -> Bool) async rethrows -> Self.Element?](./first%28where%29.md)
   Returns the first element of the sequence that satisfies the given predicate.
-- [func min() async rethrows -> Self.Element?](asyncsequence/min.md)
+- [func min() async rethrows -> Self.Element?](./min%28%29.md)
   Returns the minimum element in an asynchronous sequence of comparable elements.
-- [func min(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](asyncsequence/min(by:).md)
+- [func min(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](./min%28by%29.md)
   Returns the minimum element in the asynchronous sequence, using the given predicate as the comparison between elements.
-- [func max() async rethrows -> Self.Element?](asyncsequence/max.md)
+- [func max() async rethrows -> Self.Element?](./max%28%29.md)
   Returns the maximum element in an asynchronous sequence of comparable elements.
-- [func max(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](asyncsequence/max(by:).md)
+- [func max(by: (Self.Element, Self.Element) async throws -> Bool) async rethrows -> Self.Element?](./max%28by%29.md)
   Returns the maximum element in the asynchronous sequence, using the given predicate as the comparison between elements.
 
 

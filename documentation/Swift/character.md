@@ -1,7 +1,8 @@
 # Character
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A single extended grapheme cluster that approximates a user-perceived character.
 
@@ -51,134 +52,135 @@ print(usFlag)
 // Prints "🇺🇸"
 ```
 
-For more information about the Unicode terms used in this discussion, see the [`Unicode.org glossary`](https://developer.apple.comhttp://www.unicode.org/glossary/). In particular, this discussion mentions [`extended grapheme clusters`](https://developer.apple.comhttp://www.unicode.org/glossary/#extended_grapheme_cluster) and [`Unicode scalar values`](https://developer.apple.comhttp://www.unicode.org/glossary/#unicode_scalar_value).
+For more information about the Unicode terms used in this discussion, see the [Unicode.org glossary](http://www.unicode.org/glossary/). In particular, this discussion mentions [extended grapheme clusters](http://www.unicode.org/glossary/#extended_grapheme_cluster) and [Unicode scalar values](http://www.unicode.org/glossary/#unicode_scalar_value).
 
 ## Topics
 
 ### Creating a Character
-- [init(String)](character/init(_:)-6o1aq.md)
+- [init(String)](./character/init%28_%29-6o1aq.md)
   Creates a character from a single-character string.
 ### Writing to a Text Stream
-- [func write<Target>(to: inout Target)](character/write(to:).md)
+- [func write<Target>(to: inout Target)](./character/write%28to%29.md)
   Writes the character into the given output stream.
 ### Comparing Characters
-- [static func == (Character, Character) -> Bool](character/==(_:_:).md)
+- [static func == (Character, Character) -> Bool](./character/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (borrowing Self, borrowing Self) -> Bool](character/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./character/noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
 ### Working with a Character’s Unicode Values
-- [init(Unicode.Scalar)](character/init(_:)-8hq6x.md)
+- [init(Unicode.Scalar)](./character/init%28_%29-8hq6x.md)
   Creates a character containing the given Unicode scalar value.
-- [var unicodeScalars: Character.UnicodeScalarView](character/unicodescalars.md)
-- [Character.UnicodeScalarView](character/unicodescalarview.md)
-- [var isASCII: Bool](character/isascii.md)
+- [var unicodeScalars: Character.UnicodeScalarView](./character/unicodescalars.md)
+- [Character.UnicodeScalarView](./character/unicodescalarview.md)
+- [var isASCII: Bool](./character/isascii.md)
   A Boolean value indicating whether this is an ASCII character.
-- [var asciiValue: UInt8?](character/asciivalue.md)
+- [var asciiValue: UInt8?](./character/asciivalue.md)
   The ASCII encoding value of this character, if it is an ASCII character.
 ### Inspecting a Character
-- [var isLetter: Bool](character/isletter.md)
+- [var isLetter: Bool](./character/isletter.md)
   A Boolean value indicating whether this character is a letter.
-- [var isPunctuation: Bool](character/ispunctuation.md)
+- [var isPunctuation: Bool](./character/ispunctuation.md)
   A Boolean value indicating whether this character represents punctuation.
-- [var isNewline: Bool](character/isnewline.md)
+- [var isNewline: Bool](./character/isnewline.md)
   A Boolean value indicating whether this character represents a newline.
-- [var isWhitespace: Bool](character/iswhitespace.md)
+- [var isWhitespace: Bool](./character/iswhitespace.md)
   A Boolean value indicating whether this character represents whitespace, including newlines.
-- [var isSymbol: Bool](character/issymbol.md)
+- [var isSymbol: Bool](./character/issymbol.md)
   A Boolean value indicating whether this character represents a symbol.
-- [var isMathSymbol: Bool](character/ismathsymbol.md)
+- [var isMathSymbol: Bool](./character/ismathsymbol.md)
   A Boolean value indicating whether this character represents a symbol that naturally appears in mathematical contexts.
-- [var isCurrencySymbol: Bool](character/iscurrencysymbol.md)
+- [var isCurrencySymbol: Bool](./character/iscurrencysymbol.md)
   A Boolean value indicating whether this character represents a currency symbol.
 ### Checking a Character’s Case
-- [var isCased: Bool](character/iscased.md)
+- [var isCased: Bool](./character/iscased.md)
   A Boolean value indicating whether this character changes under any form of case conversion.
-- [var isUppercase: Bool](character/isuppercase.md)
+- [var isUppercase: Bool](./character/isuppercase.md)
   A Boolean value indicating whether this character is considered uppercase.
-- [func uppercased() -> String](character/uppercased.md)
+- [func uppercased() -> String](./character/uppercased%28%29.md)
   Returns an uppercased version of this character.
-- [var isLowercase: Bool](character/islowercase.md)
+- [var isLowercase: Bool](./character/islowercase.md)
   A Boolean value indicating whether this character is considered lowercase.
-- [func lowercased() -> String](character/lowercased.md)
+- [func lowercased() -> String](./character/lowercased%28%29.md)
   Returns a lowercased version of this character.
 ### Checking a Character’s Numeric Properties
-- [var isNumber: Bool](character/isnumber.md)
+- [var isNumber: Bool](./character/isnumber.md)
   A Boolean value indicating whether this character represents a number.
-- [var isWholeNumber: Bool](character/iswholenumber.md)
+- [var isWholeNumber: Bool](./character/iswholenumber.md)
   A Boolean value indicating whether this character represents a whole number.
-- [var wholeNumberValue: Int?](character/wholenumbervalue.md)
+- [var wholeNumberValue: Int?](./character/wholenumbervalue.md)
   The numeric value this character represents, if it represents a whole number.
-- [var isHexDigit: Bool](character/ishexdigit.md)
+- [var isHexDigit: Bool](./character/ishexdigit.md)
   A Boolean value indicating whether this character represents a hexadecimal digit.
-- [var hexDigitValue: Int?](character/hexdigitvalue.md)
+- [var hexDigitValue: Int?](./character/hexdigitvalue.md)
   The numeric value this character represents, if it is a hexadecimal digit.
 ### Creating a Range Expression
-- [static func ... (Self, Self) -> ClosedRange<Self>](character/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./character/dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ... (Self) -> PartialRangeThrough<Self>](character/'...(_:)-4mm4x.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./character/dotdotdot%28_%29-4mm4x.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self) -> PartialRangeFrom<Self>](character/'...(_:)-6ct59.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./character/dotdotdot%28_%29-6ct59.md)
   Returns a partial range extending upward from a lower bound.
 ### Describing a Character
-- [var description: String](character/description.md)
+- [var description: String](./character/description.md)
   A textual representation of this instance.
-- [var debugDescription: String](character/debugdescription.md)
+- [var debugDescription: String](./character/debugdescription.md)
   A textual representation of the character, suitable for debugging.
-- [var customMirror: Mirror](character/custommirror.md)
+- [var customMirror: Mirror](./character/custommirror.md)
   A mirror that reflects the `Character` instance.
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](character/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./character/customplaygroundquicklook.md)
   A custom playground Quick Look for the `Character` instance.
-- [func hash(into: inout Hasher)](character/hash(into:).md)
+- [func hash(into: inout Hasher)](./character/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Infrequently Used Functionality
-- [init(extendedGraphemeClusterLiteral: Character)](character/init(extendedgraphemeclusterliteral:).md)
+- [init(extendedGraphemeClusterLiteral: Character)](./character/init%28extendedgraphemeclusterliteral%29.md)
   Creates a character with the specified value.
-- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](character/init(unicodescalarliteral:).md)
+- [init(unicodeScalarLiteral: Self.ExtendedGraphemeClusterLiteralType)](./character/init%28unicodescalarliteral%29.md)
 ### Instance Properties
-- [var utf16: Character.UTF16View](character/utf16.md)
+- [var utf16: Character.UTF16View](./character/utf16.md)
   A UTF-16 encoding of `self`.
-- [var utf8: Character.UTF8View](character/utf8.md)
+- [var utf8: Character.UTF8View](./character/utf8.md)
   A UTF-8 encoding of `self`.
 ### Type Aliases
-- [Character.Output](character/output.md)
-- [Character.UTF16View](character/utf16view.md)
+- [Character.Output](./character/output.md)
+- [Character.UTF16View](./character/utf16view.md)
   A view of a character’s contents as a collection of UTF-16 code units. See String.UTF16View for more information
-- [Character.UTF8View](character/utf8view.md)
+- [Character.UTF8View](./character/utf8view.md)
   A view of a character’s contents as a collection of UTF-8 code units. See String.UTF8View for more information
 ### Default Implementations
-- [Comparable Implementations](character/comparable-implementations.md)
-- [CustomDebugStringConvertible Implementations](character/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](character/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](character/customstringconvertible-implementations.md)
-- [Equatable Implementations](character/equatable-implementations.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](character/expressiblebyextendedgraphemeclusterliteral-implementations.md)
-- [ExpressibleByUnicodeScalarLiteral Implementations](character/expressiblebyunicodescalarliteral-implementations.md)
-- [Hashable Implementations](character/hashable-implementations.md)
-- [LosslessStringConvertible Implementations](character/losslessstringconvertible-implementations.md)
-- [TextOutputStreamable Implementations](character/textoutputstreamable-implementations.md)
+- [Comparable Implementations](./character/comparable-implementations.md)
+- [CustomDebugStringConvertible Implementations](./character/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./character/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./character/customstringconvertible-implementations.md)
+- [Equatable Implementations](./character/equatable-implementations.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral Implementations](./character/expressiblebyextendedgraphemeclusterliteral-implementations.md)
+- [ExpressibleByUnicodeScalarLiteral Implementations](./character/expressiblebyunicodescalarliteral-implementations.md)
+- [Hashable Implementations](./character/hashable-implementations.md)
+- [LosslessStringConvertible Implementations](./character/losslessstringconvertible-implementations.md)
+- [TextOutputStreamable Implementations](./character/textoutputstreamable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](comparable.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](expressiblebyunicodescalarliteral.md)
-- [Hashable](hashable.md)
-- [LosslessStringConvertible](losslessstringconvertible.md)
-- [RegexComponent](regexcomponent.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [TextOutputStreamable](textoutputstreamable.md)
+- [Comparable](./comparable.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](./expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](./expressiblebyunicodescalarliteral.md)
+- [Hashable](./hashable.md)
+- [LosslessStringConvertible](./losslessstringconvertible.md)
+- [RegexComponent](./regexcomponent.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [TextOutputStreamable](./textoutputstreamable.md)
 
 ## See Also
 
-- [struct String](string.md)
+### Strings and Characters
+- [struct String](./string.md)
   A Unicode string value that is a collection of characters.
 
 

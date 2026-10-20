@@ -1,17 +1,22 @@
 # setIsAccessibilityElement(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets whether the object is an accessibility element that an assistive app can access.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
 ```swift
 func setIsAccessibilityElement(_ isAccessibilityElement: Bool)
+```
+
+```objc
+- (void) setIsAccessibilityElement:(BOOL) isAccessibilityElement;
 ```
 
 #### Discussion
@@ -20,21 +25,22 @@ Use this method to change the accessibility status of your interface objects.
 
 ## Parameters
 
-- `isAccessibilityElement`: [`true`](https://developer.apple.com/documentation/swift/true) if the object is an accessibility element or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+- `isAccessibilityElement`: [`true`](../../Swift/true.md) if the object is an accessibility element or [`false`](../../Swift/false.md) if it is not.
 
 ## See Also
 
-- [func setAccessibilityIdentifier(String?)](wkinterfaceobject/setaccessibilityidentifier(_:).md)
+### Configuring the Accessibility Attributes
+- [func setAccessibilityIdentifier(String?)](./setaccessibilityidentifier%28_%29.md)
   Sets the unique identifier string for the interface object.
-- [func setAccessibilityLabel(String?)](wkinterfaceobject/setaccessibilitylabel(_:).md)
+- [func setAccessibilityLabel(String?)](./setaccessibilitylabel%28_%29.md)
   Sets a succinct label on the object that identifies the accessibility element.
-- [func setAccessibilityHint(String?)](wkinterfaceobject/setaccessibilityhint(_:).md)
+- [func setAccessibilityHint(String?)](./setaccessibilityhint%28_%29.md)
   Sets the description of what happens when performing an action on the accessibility element.
-- [func setAccessibilityValue(String?)](wkinterfaceobject/setaccessibilityvalue(_:).md)
+- [func setAccessibilityValue(String?)](./setaccessibilityvalue%28_%29.md)
   Sets the value of the accessibility element.
-- [func setAccessibilityTraits(UIAccessibilityTraits)](wkinterfaceobject/setaccessibilitytraits(_:).md)
+- [func setAccessibilityTraits(UIAccessibilityTraits)](./setaccessibilitytraits%28_%29.md)
   Sets the combination of accessibility traits that best characterize the accessibility element.
-- [func setAccessibilityImageRegions([WKAccessibilityImageRegion])](wkinterfaceobject/setaccessibilityimageregions(_:).md)
+- [func setAccessibilityImageRegions([WKAccessibilityImageRegion])](./setaccessibilityimageregions%28_%29.md)
   Marks portions of an image as separate accessible elements.
 
 

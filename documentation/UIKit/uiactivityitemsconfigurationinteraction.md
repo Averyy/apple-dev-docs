@@ -1,7 +1,8 @@
 # UIActivityItemsConfigurationInteraction
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes types of interactions.
 
@@ -17,35 +18,40 @@ A structure that describes types of interactions.
 struct UIActivityItemsConfigurationInteraction
 ```
 
+```c
+typedef NSString * UIActivityItemsConfigurationInteraction;
+```
+
 #### Overview
 
-Specify which interactions you want the activity view to include in [`supportedInteractions`](uiactivityitemsconfiguration/supportedinteractions.md).
+Specify which interactions you want the activity view to include in [`supportedInteractions`](./uiactivityitemsconfiguration/supportedinteractions.md).
 
 ## Topics
 
 ### Selecting interactions
-- [static let copy: UIActivityItemsConfigurationInteraction](uiactivityitemsconfigurationinteraction/copy.md)
+- [static let copy: UIActivityItemsConfigurationInteraction](./uiactivityitemsconfigurationinteraction/copy.md)
   The copy interaction.
-- [static let share: UIActivityItemsConfigurationInteraction](uiactivityitemsconfigurationinteraction/share.md)
+- [static let share: UIActivityItemsConfigurationInteraction](./uiactivityitemsconfigurationinteraction/share.md)
   The share interaction.
 ### Creating an interaction type
-- [init(String)](uiactivityitemsconfigurationinteraction/init(_:).md)
+- [init(String)](./uiactivityitemsconfigurationinteraction/init%28_%29.md)
   Creates an activity items configuration interaction.
-- [init(rawValue: String)](uiactivityitemsconfigurationinteraction/init(rawvalue:).md)
+- [init(rawValue: String)](./uiactivityitemsconfigurationinteraction/init%28rawvalue%29.md)
   Creates an activity items configuration interaction with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var supportedInteractions: [UIActivityItemsConfigurationInteraction]](uiactivityitemsconfiguration/supportedinteractions.md)
+### Managing supported interactions
+- [var supportedInteractions: [UIActivityItemsConfigurationInteraction]](./uiactivityitemsconfiguration/supportedinteractions.md)
   The types of interactions that the configuration supports.
 
 

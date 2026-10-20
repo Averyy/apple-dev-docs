@@ -1,7 +1,8 @@
 # clamped(to:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clamps all elements to the given lower and upper bounds, inclusively.
 
@@ -20,6 +21,16 @@ Clamps all elements to the given lower and upper bounds, inclusively.
 func clamped(to bounds: ClosedRange<Float>) -> MLTensor
 ```
 
+**Other overloads**:
+
+```swift
+func clamped(to bounds: PartialRangeFrom<Float>) -> MLTensor
+```
+
+```swift
+func clamped(to bounds: PartialRangeThrough<Float>) -> MLTensor
+```
+
 #### Discussion
 
 For example:
@@ -32,7 +43,8 @@ await y.shapedArray(of: Float.self) // is [0.0, 1.0, 1.0]
 
 ## See Also
 
-- [func concatenated(with: MLTensor, alongAxis: Int) -> MLTensor](mltensor/concatenated(with:alongaxis:).md)
+### Clamping and concatenating
+- [func concatenated(with: MLTensor, alongAxis: Int) -> MLTensor](./concatenated%28with,alongaxis%29.md)
   Returns a concatenated tensor along the specified axis.
 
 

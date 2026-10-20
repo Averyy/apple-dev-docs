@@ -1,17 +1,18 @@
 # height
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of the scissor rectangle, in pixels.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,18 @@ The height of the scissor rectangle, in pixels.
 var height: Int
 ```
 
+```c
+NSUInteger height;
+```
+
 ## See Also
 
-- [var width: Int](mtlscissorrect/width.md)
+### Specifying scissor boundaries
+- [var width: Int](./width.md)
   The width of the scissor rectangle, in pixels.
-- [var x: Int](mtlscissorrect/x.md)
+- [var x: Int](./x.md)
   The x window coordinate of the upper-left corner of the scissor rectangle.
-- [var y: Int](mtlscissorrect/y.md)
+- [var y: Int](./y.md)
   The y window coordinate of the upper-left corner of the scissor rectangle.
 
 

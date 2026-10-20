@@ -1,7 +1,8 @@
 # init(kind:offset:sub:size:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template structure.
 

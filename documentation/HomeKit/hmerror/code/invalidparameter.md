@@ -1,7 +1,8 @@
 # HMError.Code.invalidParameter
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating the object is invalid for the given operation.
 
@@ -19,17 +20,22 @@ An error indicating the object is invalid for the given operation.
 case invalidParameter
 ```
 
+```c
+HMErrorCodeInvalidParameter
+```
+
 #### Discussion
 
 For example, the home object issues an error when attempting to add a room that exists in another home.
 
 ## See Also
 
-- [HMError.Code.missingParameter](hmerror/code/missingparameter.md)
+### Parameter errors
+- [HMError.Code.missingParameter](./missingparameter.md)
   An error indicating a missing parameter.
-- [HMError.Code.nilParameter](hmerror/code/nilparameter.md)
+- [HMError.Code.nilParameter](./nilparameter.md)
   An error indicating that `nil` was passed for an operation that does not accept `nil`.
-- [HMError.Code.unconfiguredParameter](hmerror/code/unconfiguredparameter.md)
+- [HMError.Code.unconfiguredParameter](./unconfiguredparameter.md)
   An error indicating an unconfigured parameter.
 
 

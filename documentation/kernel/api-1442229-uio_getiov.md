@@ -1,14 +1,15 @@
 # uio_getiov
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int uio_getiov(uio_t a_uio, int a_index, user_addr_t *a_baseaddr_p, user_size_t *a_length_p);
 ```
 

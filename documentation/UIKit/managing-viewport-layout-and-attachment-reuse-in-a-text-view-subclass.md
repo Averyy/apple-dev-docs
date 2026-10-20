@@ -1,6 +1,7 @@
 # Managing viewport layout and attachment reuse in text views
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Customize layout and preserve attachment views in your text view subclass.
 
@@ -8,13 +9,13 @@ Customize layout and preserve attachment views in your text view subclass.
 
 If you build a text editor with rich attachments — like images, videos, or interactive controls — you may notice that attachment views flicker or lose their state when someone scrolls the attachment out of the viewport, or types in the same paragraph. This is because text views discard and recreate attachment views as part of their normal layout process.
 
-[`UITextView`](uitextview.md) and [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) conform to [`NSTextViewportLayoutControllerDelegate`](nstextviewportlayoutcontrollerdelegate.md), giving your subclass direct access to the layout process. You can override the delegate methods to respond to layout events and customize how text fragments appear.
+[`UITextView`](./uitextview.md) and [`NSTextView`](../AppKit/nstextview.md) conform to [`NSTextViewportLayoutControllerDelegate`](./nstextviewportlayoutcontrollerdelegate.md), giving your subclass direct access to the layout process. You can override the delegate methods to respond to layout events and customize how text fragments appear.
 
 You can also register reuse policies to tell the text view which attachment views to preserve across scrolling and editing, eliminating flicker and preserving states like focus and playback position.
 
-##### Override Viewport Layout Methods
+##### Override viewport layout methods
 
-[`layoutViewport()`](nstextviewportlayoutcontroller/layoutviewport().md) encompasses the viewport layout process. Each time the visual state within the viewport changes, TextKit calls it. During each viewport layout process, [`NSTextViewportLayoutController`](nstextviewportlayoutcontroller.md) calls the text view’s delegate methods at three points — before it starts, before each text layout fragment is about to be rendered, and after it completes. Override any of these methods in your [`UITextView`](uitextview.md) (or [`NSTextView`](https://developer.apple.com/documentation/appkit/nstextview) in macOS) subclass to customize what happens at each stage:
+[`layoutViewport()`](./nstextviewportlayoutcontroller/layoutviewport%28%29.md) encompasses the viewport layout process. Each time the visual state within the viewport changes, TextKit calls it. During each viewport layout process, [`NSTextViewportLayoutController`](./nstextviewportlayoutcontroller.md) calls the text view’s delegate methods at three points — before it starts, before each text layout fragment is about to be rendered, and after it completes. Override any of these methods in your [`UITextView`](./uitextview.md) (or [`NSTextView`](../AppKit/nstextview.md) in macOS) subclass to customize what happens at each stage:
 
 ```swift
 class CustomTextView: UITextView {
@@ -43,21 +44,21 @@ class CustomTextView: UITextView {
 }
 ```
 
-> ❗ **Important**: All overrides of viewport layout delegate methods must call `super`, because omitting it breaks layout. Query any [`NSTextViewportLayoutController`](nstextviewportlayoutcontroller.md) state only inside [`textViewportLayoutControllerDidLayout(_:)`](uitextview/textviewportlayoutcontrollerdidlayout(_:).md); querying it from other delegate methods can cause crashes.
+> ❗ **Important**: All overrides of viewport layout delegate methods must call `super`, because omitting it breaks layout. Query any [`NSTextViewportLayoutController`](./nstextviewportlayoutcontroller.md) state only inside [`textViewportLayoutControllerDidLayout(_:)`](./uitextview/textviewportlayoutcontrollerdidlayout%28_%29.md); querying it from other delegate methods can cause crashes.
 
 The following table shows the set of available override points:
 
 | Method | When called |
 | --- | --- |
-| [`textViewportLayoutControllerWillLayout(_:)`](uitextview/textviewportlayoutcontrollerwilllayout(_:).md) | Before each layout pass begins |
-| [`textViewportLayoutController(_:configureRenderingSurfaceFor:)`](uitextview/textviewportlayoutcontroller(_:configurerenderingsurfacefor:).md) | Once per laid-out fragment, with its rendering surface |
-| [`textViewportLayoutControllerDidLayout(_:)`](uitextview/textviewportlayoutcontrollerdidlayout(_:).md) | After each layout pass completes |
-| [`textViewportLayoutControllerReceivedSetNeedsLayout(_:)`](uitextview/textviewportlayoutcontrollerreceivedsetneedslayout(_:).md) | When the viewport requests a layout invalidation |
-| [`viewportBounds(for:)`](uitextview/viewportbounds(for:).md) | To query the current viewport bounds |
+| [`textViewportLayoutControllerWillLayout(_:)`](./uitextview/textviewportlayoutcontrollerwilllayout%28_%29.md) | Before each layout pass begins |
+| [`textViewportLayoutController(_:configureRenderingSurfaceFor:)`](./uitextview/textviewportlayoutcontroller%28_,configurerenderingsurfacefor%29.md) | Once per laid-out fragment, with its rendering surface |
+| [`textViewportLayoutControllerDidLayout(_:)`](./uitextview/textviewportlayoutcontrollerdidlayout%28_%29.md) | After each layout pass completes |
+| [`textViewportLayoutControllerReceivedSetNeedsLayout(_:)`](./uitextview/textviewportlayoutcontrollerreceivedsetneedslayout%28_%29.md) | When the viewport requests a layout invalidation |
+| [`viewportBounds(for:)`](./uitextview/viewportbounds%28for%29.md) | To query the current viewport bounds |
 
-##### Register Reuse Policies
+##### Register reuse policies
 
-Use the registration API to preserve attachment views across layout passes. Call [`register(_:forTextAttachmentViewProviderType:)`](uitextview/register(_:fortextattachmentviewprovidertype:).md) once during setup to declare the reuse behavior per provider type:
+Use the registration API to preserve attachment views across layout passes. Call [`register(_:forTextAttachmentViewProviderType:)`](./uitextview/register%28_,fortextattachmentviewprovidertype%29.md) once during setup to declare the reuse behavior per provider type:
 
 ```swift
 // Retain video attachment views across both scrolling and paragraph edits.
@@ -77,25 +78,26 @@ After you register a provider type, the text view holds on to those attachment v
 
 ## See Also
 
-- [Using TextKit 2 to interact with text](using-textkit-2-to-interact-with-text.md)
+### Layout
+- [Using TextKit 2 to interact with text](./using-textkit-2-to-interact-with-text.md)
   Interact with text by managing text selection and inserting custom text elements.
-- [Display text with a custom layout](display-text-with-a-custom-layout.md)
+- [Display text with a custom layout](./display-text-with-a-custom-layout.md)
   Lay out text in a custom-shaped container and apply glyph substitutions.
-- [class NSTextLayoutManager](nstextlayoutmanager.md)
+- [class NSTextLayoutManager](./nstextlayoutmanager.md)
   The primary class that you use to manage text layout and presentation for custom text displays.
-- [class NSTextContainer](nstextcontainer.md)
+- [class NSTextContainer](./nstextcontainer.md)
   A region where text layout occurs.
-- [class NSTextLayoutFragment](nstextlayoutfragment.md)
+- [class NSTextLayoutFragment](./nstextlayoutfragment.md)
   A class that represents the layout fragment typically corresponding to a rendering surface, such as a layer or view subclass.
-- [class NSTextLineFragment](nstextlinefragment.md)
+- [class NSTextLineFragment](./nstextlinefragment.md)
   A class that represents a line fragment as a single textual layout and rendering unit inside a text layout fragment.
-- [class NSTextViewportLayoutController](nstextviewportlayoutcontroller.md)
+- [class NSTextViewportLayoutController](./nstextviewportlayoutcontroller.md)
   Manages the layout process inside the viewport interacting with its delegate.
-- [protocol NSTextViewportRenderingSurface](nstextviewportrenderingsurface.md)
+- [protocol NSTextViewportRenderingSurface](./nstextviewportrenderingsurface.md)
   A protocol that identifies a view or layer as a drawable element for a text layout fragment.
-- [protocol NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
+- [protocol NSTextViewportRenderingSurfaceKey](./nstextviewportrenderingsurfacekey.md)
   A protocol that lets you use an object to identify a rendering surface when storing or retrieving it.
-- [protocol NSTextLayoutOrientationProvider](nstextlayoutorientationprovider.md)
+- [protocol NSTextLayoutOrientationProvider](./nstextlayoutorientationprovider.md)
   A set of methods that define the orientation of text for an object.
 
 

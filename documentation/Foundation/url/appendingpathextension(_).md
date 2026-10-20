@@ -1,7 +1,8 @@
 # appendingPathExtension(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a URL by appending the specified path extension to self.
 
@@ -32,11 +33,12 @@ Certain special characters (for example, Unicode right-to-left marks) can’t be
 
 ## See Also
 
-- [func appendPathExtension(String)](url/appendpathextension(_:).md)
+### Adding a path extension
+- [func appendPathExtension(String)](./appendpathextension%28_%29.md)
   Appends the specified path extension to self.
-- [func appendPathExtension(for: UTType)](url/appendpathextension(for:).md)
+- [func appendPathExtension(for: UTType)](./appendpathextension%28for%29.md)
   Appends the preferred path extension for the type you specify.
-- [func appendingPathExtension(for: UTType) -> URL](url/appendingpathextension(for:).md)
+- [func appendingPathExtension(for: UTType) -> URL](./appendingpathextension%28for%29.md)
   Returns a URL by appending the preferred path extension for the type you specify to the URL’s last path component.
 
 

@@ -1,14 +1,15 @@
 # IOUSBHostIsochronousTransactionCompletionAction
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*IOUSBHostIsochronousTransactionCompletionAction)(void *owner, void *parameter, IOReturn status, IOUSBHostIsochronousTransaction *transactionList);
 ```
 

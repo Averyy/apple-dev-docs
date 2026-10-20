@@ -1,7 +1,8 @@
 # init(type:length:_:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create TLV with the specified sizes for the type and length fields.
 

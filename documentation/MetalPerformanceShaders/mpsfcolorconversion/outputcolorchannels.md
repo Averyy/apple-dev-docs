@@ -1,7 +1,8 @@
 # outputColorChannels
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var outputColorChannels: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger outputColorChannels;
 ```
 
 #### Discussion

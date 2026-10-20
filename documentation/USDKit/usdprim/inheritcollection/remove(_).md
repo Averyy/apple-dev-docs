@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a specific inherit arc from the prim.
 
@@ -21,7 +22,7 @@ func remove(_ primPath: USDLayer.Path) throws
 
 #### Discussion
 
-> **Note**: An error if the inherit cannot be removed.
+> **Throws**: An error if the inherit cannot be removed.
 
 ## Parameters
 

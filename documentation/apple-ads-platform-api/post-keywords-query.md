@@ -1,7 +1,8 @@
 # Query Keywords
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Query keywords using structured filters, sorting, and pagination.
 
@@ -16,7 +17,7 @@ This endpoint queries keywords using a standard `QueryRequest` body. Either `adG
 - The `campaignId` field scopes the query to all keywords across a campaign, and only supports `EQUALS`. There is no campaign-level keyword concept the way there is for negative keywords.
 - Filtering by `id` (`EQUALS` or `IN`) is exempt from the `adGroupId`/`campaignId` requirement, since `id` already fully bounds the query.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -26,11 +27,11 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | `adGroupId` | integer | `EQUALS`, `IN` | Yes | The ad group this keyword belongs to. |
 | `campaignId` | integer | `EQUALS` | Yes | The campaign ID of the parent campaign. Informational only. |
 | `text` | string | `EQUALS`, `STARTS_WITH` | Yes | The original advertiser-given keyword text. |
-| `matchType` | string (enum) | `EQUALS`, `IN` | Yes | Keyword match type. See [`KeywordMatchType`](keywordmatchtype.md). |
-| `status` | string (enum) | `EQUALS`, `IN` | Yes | Whether the keyword is active and eligible to serve. See [`KeywordStatus`](keywordstatus.md). |
+| `matchType` | string (enum) | `EQUALS`, `IN` | Yes | Keyword match type. See [`KeywordMatchType`](./keywordmatchtype.md). |
+| `status` | string (enum) | `EQUALS`, `IN` | Yes | Whether the keyword is active and eligible to serve. See [`KeywordStatus`](./keywordstatus.md). |
 | `deleted` | boolean | `EQUALS` | Yes | Whether the keyword has been deleted. |
 
-The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Payload Examples
 
@@ -308,17 +309,34 @@ POST /v1/keywords/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`KeywordQueryResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Keyword](post-keywords.md)
+- [Create a Keyword](./post-keywords.md)
   Create a new keyword in an ad group, setting the match type and optional bid amount.
-- [Get a Keyword](get-keywords-_id_.md)
+- [Get a Keyword](./get-keywords-_id_.md)
   Retrieve a single keyword by its unique identifier.
-- [Update a Keyword](put-keywords-_id_.md)
+- [Update a Keyword](./put-keywords-_id_.md)
   Update a keyword’s bid amount or status to optimize spend and control delivery for that term.
-- [Delete a Keyword](delete-keywords-_id_.md)
+- [Delete a Keyword](./delete-keywords-_id_.md)
   Soft-delete a keyword by ID, setting its deleted field to true and stopping bids on that term.
 
 

@@ -1,7 +1,8 @@
 # ImmersiveVideoFrame.VideoLayout
 
 **Framework**: Immersive Media Support  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that specifies the layout of left and right eyes within an immersive video frame.
 
@@ -18,22 +19,22 @@ enum VideoLayout
 ## Topics
 
 ### Enumeration Cases
-- [ImmersiveVideoFrame.VideoLayout.mono](immersivevideoframe/videolayout/mono.md)
+- [ImmersiveVideoFrame.VideoLayout.mono](./videolayout/mono.md)
   A value that represents mono video layout.
-- [ImmersiveVideoFrame.VideoLayout.overUnder](immersivevideoframe/videolayout/overunder.md)
+- [ImmersiveVideoFrame.VideoLayout.overUnder](./videolayout/overunder.md)
   A value that represents over-under video layout.
-- [ImmersiveVideoFrame.VideoLayout.separate](immersivevideoframe/videolayout/separate.md)
+- [ImmersiveVideoFrame.VideoLayout.separate](./videolayout/separate.md)
   A value that represents stereo video but separated.
-- [ImmersiveVideoFrame.VideoLayout.sideBySide](immersivevideoframe/videolayout/sidebyside.md)
+- [ImmersiveVideoFrame.VideoLayout.sideBySide](./videolayout/sidebyside.md)
   A value that represents side by side video layout.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

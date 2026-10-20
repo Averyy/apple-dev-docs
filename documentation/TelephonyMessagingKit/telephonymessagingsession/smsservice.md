@@ -1,7 +1,8 @@
 # smsService
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Short Message Service (SMS) service associated with this session.
 
@@ -16,11 +17,12 @@ final var smsService: SMSService { get }
 
 ## Mentions
 
-- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](../creating-a-carrier-messaging-app.md)
 
 ## See Also
 
-- [class SMSService](smsservice.md)
+### Using Short Message Service (SMS)
+- [class SMSService](../smsservice.md)
   A class that provides an interface for performing SMS operations.
 
 

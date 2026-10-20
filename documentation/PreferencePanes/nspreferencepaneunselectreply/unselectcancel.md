@@ -1,7 +1,8 @@
 # NSPreferencePaneUnselectReply.unselectCancel
 
 **Framework**: Preference Panes  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Cancel the deselection.
 
@@ -15,12 +16,17 @@ Cancel the deselection.
 case unselectCancel
 ```
 
+```c
+NSUnselectCancel
+```
+
 ## See Also
 
-- [NSPreferencePaneUnselectReply.unselectNow](nspreferencepaneunselectreply/unselectnow.md)
+### Replies
+- [NSPreferencePaneUnselectReply.unselectNow](./unselectnow.md)
   Continue the deselection.
-- [NSPreferencePaneUnselectReply.unselectLater](nspreferencepaneunselectreply/unselectlater.md)
-  Delay the deselection until the preference pane invokes [`reply(toShouldUnselect:)`](nspreferencepane/reply(toshouldunselect:).md).
+- [NSPreferencePaneUnselectReply.unselectLater](./unselectlater.md)
+  Delay the deselection until the preference pane invokes [`reply(toShouldUnselect:)`](../nspreferencepane/reply%28toshouldunselect%29.md).
 
 
 ---

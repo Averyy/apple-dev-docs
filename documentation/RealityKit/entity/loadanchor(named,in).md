@@ -1,7 +1,8 @@
 # loadAnchor(named:in:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Synchronously loads an anchor entity from a bundle.
 
@@ -11,7 +12,7 @@ Synchronously loads an anchor entity from a bundle.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,15 +23,15 @@ Synchronously loads an anchor entity from a bundle.
 
 ## Mentions
 
-- [Loading entities from a file](loading-entities-from-a-file.md)
+- [Loading entities from a file](../loading-entities-from-a-file.md)
 
 #### Return Value
 
-The root entity in the loaded file, which Reality Kit casts as an [`AnchorEntity`](anchorentity.md).
+The root entity in the loaded file, which Reality Kit casts as an [`AnchorEntity`](../anchorentity.md).
 
 #### Discussion
 
-Loading an [`Entity`](entity.md) with this method blocks the main actor because it’s synchronous, so only call it from a command-line application. The method can stall a regular app, which makes it visibly hitch, and the system terminates an app if its UI becomes unresponsive. See [`init(named:in:)`](entity/init(named:in:).md) for an example that demonstrates how to safely load content.
+Loading an [`Entity`](../entity.md) with this method blocks the main actor because it’s synchronous, so only call it from a command-line application. The method can stall a regular app, which makes it visibly hitch, and the system terminates an app if its UI becomes unresponsive. See [`init(named:in:)`](./init%28named,in%29.md) for an example that demonstrates how to safely load content.
 
 ## Parameters
 
@@ -39,11 +40,12 @@ Loading an [`Entity`](entity.md) with this method blocks the main actor because 
 
 ## See Also
 
-- [static func loadAnchor(contentsOf: URL, withName: String?) throws -> AnchorEntity](entity/loadanchor(contentsof:withname:).md)
+### Loading an anchor entity
+- [static func loadAnchor(contentsOf: URL, withName: String?) throws -> AnchorEntity](./loadanchor%28contentsof,withname%29.md)
   Synchronously loads an anchor entity from a file URL.
-- [static func loadAnchorAsync(named: String, in: Bundle?) -> LoadRequest<AnchorEntity>](entity/loadanchorasync(named:in:).md)
+- [static func loadAnchorAsync(named: String, in: Bundle?) -> LoadRequest<AnchorEntity>](./loadanchorasync%28named,in%29.md)
   Asynchronously loads an anchor entity from a bundle.
-- [static func loadAnchorAsync(contentsOf: URL, withName: String?) -> LoadRequest<AnchorEntity>](entity/loadanchorasync(contentsof:withname:).md)
+- [static func loadAnchorAsync(contentsOf: URL, withName: String?) -> LoadRequest<AnchorEntity>](./loadanchorasync%28contentsof,withname%29.md)
   Asynchronously loads an anchor entity from a file URL.
 
 

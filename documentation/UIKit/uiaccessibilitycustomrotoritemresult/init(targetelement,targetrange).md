@@ -1,7 +1,8 @@
 # init(targetElement:targetRange:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rotor item result from the specified target element and text range.
 
@@ -16,6 +17,10 @@ Creates a rotor item result from the specified target element and text range.
 
 ```swift
 init(targetElement: any NSObjectProtocol, targetRange: UITextRange?)
+```
+
+```objc
+- (instancetype) initWithTargetElement:(id<NSObject>) targetElement targetRange:(UITextRange *) targetRange;
 ```
 
 #### Return Value

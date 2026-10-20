@@ -1,7 +1,8 @@
 # CLanguageStandard
 
 **Framework**: PackageDescription  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The supported C language standard you use to compile C sources in the package.
 
@@ -14,71 +15,72 @@ enum CLanguageStandard
 ## Topics
 
 ### Enumeration Cases
-- [CLanguageStandard.c11](clanguagestandard/c11.md)
+- [CLanguageStandard.c11](./clanguagestandard/c11.md)
   The identifier for the ISO C 2011 language standard.
-- [CLanguageStandard.c17](clanguagestandard/c17.md)
+- [CLanguageStandard.c17](./clanguagestandard/c17.md)
   The identifier for the ISO C 2017 language stadard.
-- [CLanguageStandard.c18](clanguagestandard/c18.md)
+- [CLanguageStandard.c18](./clanguagestandard/c18.md)
   The identifier for the ISO C 2017 language standard.
-- [CLanguageStandard.c2x](clanguagestandard/c2x.md)
+- [CLanguageStandard.c2x](./clanguagestandard/c2x.md)
   The identifier for the ISO C2x draft language standard.
-- [CLanguageStandard.c89](clanguagestandard/c89.md)
+- [CLanguageStandard.c89](./clanguagestandard/c89.md)
   The identifier for the ISO C 1989 language standard.
-- [CLanguageStandard.c90](clanguagestandard/c90.md)
+- [CLanguageStandard.c90](./clanguagestandard/c90.md)
   The identifier for the ISO C 1990 language standard.
-- [CLanguageStandard.c99](clanguagestandard/c99.md)
+- [CLanguageStandard.c99](./clanguagestandard/c99.md)
   The identifier for the ISO C 1999 language standard.
-- [CLanguageStandard.gnu11](clanguagestandard/gnu11.md)
+- [CLanguageStandard.gnu11](./clanguagestandard/gnu11.md)
   The identifier for the ISO C 2011 language standard with GNU extensions.
-- [CLanguageStandard.gnu17](clanguagestandard/gnu17.md)
+- [CLanguageStandard.gnu17](./clanguagestandard/gnu17.md)
   The identifier for the ISO C 2017 language standard with GNU extensions.
-- [CLanguageStandard.gnu18](clanguagestandard/gnu18.md)
+- [CLanguageStandard.gnu18](./clanguagestandard/gnu18.md)
   The identifier for the ISO C 2017 language standard with GNU extensions.
-- [CLanguageStandard.gnu2x](clanguagestandard/gnu2x.md)
+- [CLanguageStandard.gnu2x](./clanguagestandard/gnu2x.md)
   The identifier for the ISO C2x draft language standard with GNU extensions.
-- [CLanguageStandard.gnu89](clanguagestandard/gnu89.md)
+- [CLanguageStandard.gnu89](./clanguagestandard/gnu89.md)
   The identifier for the ISO C 1990 language standard with GNU extensions.
-- [CLanguageStandard.gnu90](clanguagestandard/gnu90.md)
+- [CLanguageStandard.gnu90](./clanguagestandard/gnu90.md)
   The identifier for the ISO C 1990 language standard with GNU extensions.
-- [CLanguageStandard.gnu99](clanguagestandard/gnu99.md)
+- [CLanguageStandard.gnu99](./clanguagestandard/gnu99.md)
   The identifier for the ISO C 1999 language standard with GNU extensions.
-- [CLanguageStandard.iso9899_1990](clanguagestandard/iso9899_1990.md)
+- [CLanguageStandard.iso9899_1990](./clanguagestandard/iso9899_1990.md)
   The identifier for the ISO C 1990 language standard.
-- [CLanguageStandard.iso9899_199409](clanguagestandard/iso9899_199409.md)
+- [CLanguageStandard.iso9899_199409](./clanguagestandard/iso9899_199409.md)
   The identifier for the ISO C 1990 language standard with amendment 1.
-- [CLanguageStandard.iso9899_1999](clanguagestandard/iso9899_1999.md)
+- [CLanguageStandard.iso9899_1999](./clanguagestandard/iso9899_1999.md)
   The identifier for the ISO C 1999 language standard.
-- [CLanguageStandard.iso9899_2011](clanguagestandard/iso9899_2011.md)
+- [CLanguageStandard.iso9899_2011](./clanguagestandard/iso9899_2011.md)
   The identifier for the ISO C 2011 language standard.
-- [CLanguageStandard.iso9899_2017](clanguagestandard/iso9899_2017.md)
+- [CLanguageStandard.iso9899_2017](./clanguagestandard/iso9899_2017.md)
   The identifier for the ISO C 2017 language standard.
-- [CLanguageStandard.iso9899_2018](clanguagestandard/iso9899_2018.md)
+- [CLanguageStandard.iso9899_2018](./clanguagestandard/iso9899_2018.md)
   The identifier for the ISO C 2017 language standard.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [enum SwiftLanguageMode](swiftlanguagemode.md)
+### Declaring Supported Languages
+- [enum SwiftLanguageMode](./swiftlanguagemode.md)
   The Swift language mode used to compile Swift sources in the package
-- [enum CXXLanguageStandard](cxxlanguagestandard.md)
+- [enum CXXLanguageStandard](./cxxlanguagestandard.md)
   The supported C++ language standard you use to compile C++ sources in the package.
-- [var swiftLanguageModes: [SwiftLanguageMode]?](package/swiftlanguagemodes.md)
+- [var swiftLanguageModes: [SwiftLanguageMode]?](./package/swiftlanguagemodes.md)
   The list of Swift language modes with which this package is compatible.
-- [var cLanguageStandard: CLanguageStandard?](package/clanguagestandard.md)
+- [var cLanguageStandard: CLanguageStandard?](./package/clanguagestandard.md)
   The C language standard to use for all C targets in this package.
-- [var cxxLanguageStandard: CXXLanguageStandard?](package/cxxlanguagestandard.md)
+- [var cxxLanguageStandard: CXXLanguageStandard?](./package/cxxlanguagestandard.md)
   The C++ language standard to use for all C++ targets in this package.
-- [typealias SwiftVersion](swiftversion.md)
+- [typealias SwiftVersion](./swiftversion.md)
   Type alias to previous name for backward source compatibility
-- [var swiftLanguageVersions: [SwiftVersion]?](package/swiftlanguageversions.md)
+- [var swiftLanguageVersions: [SwiftVersion]?](./package/swiftlanguageversions.md)
   Legacy property name, accesses value of `swiftLanguageModes`
 
 

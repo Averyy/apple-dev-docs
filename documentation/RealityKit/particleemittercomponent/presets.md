@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.Presets
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Initial configurations that can be set when starting a new simulation.
 
@@ -22,26 +23,27 @@ struct Presets
 ## Topics
 
 ### Type Properties
-- [static var fireworks: ParticleEmitterComponent](particleemittercomponent/presets/fireworks.md)
+- [static var fireworks: ParticleEmitterComponent](./presets/fireworks.md)
   Particles that emit in regular bursts and spawn secondary particles
-- [static var impact: ParticleEmitterComponent](particleemittercomponent/presets/impact.md)
+- [static var impact: ParticleEmitterComponent](./presets/impact.md)
   Particles that emit in a radial pattern and simulate dust from an object hitting the ground
-- [static var magic: ParticleEmitterComponent](particleemittercomponent/presets/magic.md)
+- [static var magic: ParticleEmitterComponent](./presets/magic.md)
   Particles that twinkle and emit spawn particles
-- [static var rain: ParticleEmitterComponent](particleemittercomponent/presets/rain.md)
+- [static var rain: ParticleEmitterComponent](./presets/rain.md)
   Fast, semi-opaque particles rendered as streaks
-- [static var snow: ParticleEmitterComponent](particleemittercomponent/presets/snow.md)
+- [static var snow: ParticleEmitterComponent](./presets/snow.md)
   Softly falling particles that incorporate motion from a noise pattern
-- [static var sparks: ParticleEmitterComponent](particleemittercomponent/presets/sparks.md)
+- [static var sparks: ParticleEmitterComponent](./presets/sparks.md)
   Quick and short lived particles that accumulate color to simulate welding sparks
 
 ## See Also
 
-- [Simulating particles in your visionOS app](simulating-particles-in-your-visionos-app.md)
+### Particle simulation
+- [Simulating particles in your visionOS app](../simulating-particles-in-your-visionos-app.md)
   Add a range of visual effects to a RealityKit view by attaching a particle emitter component to an entity.
-- [struct ParticleEmitterComponent](particleemittercomponent.md)
+- [struct ParticleEmitterComponent](../particleemittercomponent.md)
   A component that emits particles.
-- [ParticleEmitterComponent.ParticleEmitter](particleemittercomponent/particleemitter.md)
+- [ParticleEmitterComponent.ParticleEmitter](./particleemitter.md)
 
 
 ---

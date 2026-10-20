@@ -1,7 +1,8 @@
 # centerOfMass
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the center of mass and the orientation of the principal axes.
 
@@ -11,7 +12,7 @@ The position of the center of mass and the orientation of the principal axes.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,9 +28,10 @@ The `orientation` defines the principal axes, such the inertia matrix is a diago
 
 ## See Also
 
-- [var mass: Float](physicsmassproperties/mass.md)
+### Getting mass properties
+- [var mass: Float](./mass.md)
   The mass in kilograms.
-- [var inertia: SIMD3<Float>](physicsmassproperties/inertia.md)
+- [var inertia: SIMD3<Float>](./inertia.md)
   The inertia in kilograms per square meter.
 
 

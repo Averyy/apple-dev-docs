@@ -1,11 +1,12 @@
 # Equatable Implementations
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func == (CKSyncEngine.PendingDatabaseChange, CKSyncEngine.PendingDatabaseChange) -> Bool](cksyncengine-5sie5/pendingdatabasechange/==(_:_:).md)
+- [static func == (CKSyncEngine.PendingDatabaseChange, CKSyncEngine.PendingDatabaseChange) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 
 

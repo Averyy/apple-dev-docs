@@ -1,7 +1,8 @@
 # CTLineCreateTruncatedLine(_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a truncated line from an existing line.
 
@@ -20,6 +21,10 @@ Creates a truncated line from an existing line.
 func CTLineCreateTruncatedLine(_ line: CTLine, _ width: Double, _ truncationType: CTLineTruncationType, _ truncationToken: CTLine?) -> CTLine?
 ```
 
+```c
+extern CTLineRefCTLineCreateTruncatedLine(CTLineRef line, double width, CTLineTruncationType truncationType, CTLineRef truncationToken);
+```
+
 #### Return Value
 
 A reference to a truncated CTLine object if the call was successful; otherwise, `NULL`.
@@ -32,14 +37,15 @@ The line specified in `truncationToken` should have a width less than the width 
 
 - `line`: The line from which to create a truncated line.
 - `width`: The width at which truncation begins. The line is truncated if its width is greater than the width passed in this parameter.
-- `truncationType`: The type of truncation to perform if needed. See [`CTLineTruncationType`](ctlinetruncationtype.md) for possible values.
+- `truncationType`: The type of truncation to perform if needed. See [`CTLineTruncationType`](./ctlinetruncationtype.md) for possible values.
 - `truncationToken`: This token is added at the point where truncation took place, to indicate that the line was truncated. Usually, the truncation token is the ellipsis character (`U+2026`). If this parameter is set to `NULL`, then no truncation token is used and the line is simply cut off.
 
 ## See Also
 
-- [func CTLineCreateWithAttributedString(CFAttributedString) -> CTLine](ctlinecreatewithattributedstring(_:).md)
+### Creating Lines
+- [func CTLineCreateWithAttributedString(CFAttributedString) -> CTLine](./ctlinecreatewithattributedstring%28_%29.md)
   Creates a single immutable line object from an attributed string.
-- [func CTLineCreateJustifiedLine(CTLine, CGFloat, Double) -> CTLine?](ctlinecreatejustifiedline(_:_:_:).md)
+- [func CTLineCreateJustifiedLine(CTLine, CGFloat, Double) -> CTLine?](./ctlinecreatejustifiedline%28_,_,_%29.md)
   Creates a justified line from an existing line.
 
 

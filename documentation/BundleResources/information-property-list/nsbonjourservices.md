@@ -1,7 +1,8 @@
 # NSBonjourServices
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 Bonjour service types browsed by the app.
 
@@ -12,9 +13,10 @@ Bonjour service types browsed by the app.
 - tvOS 14.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `NSBonjourServices` (Bonjour services)
+- **Type**: array of string 
 
 #### Discussion
 
@@ -22,11 +24,12 @@ The value associated with this key is an array of strings that represent Bonjour
 
 ## See Also
 
-- [NSAdvertisingAttributionReportEndpoint](information-property-list/nsadvertisingattributionreportendpoint.md)
+### Network
+- [NSAdvertisingAttributionReportEndpoint](./nsadvertisingattributionreportendpoint.md)
   The URL where Private Click Measurement and SKAdNetwork send attribution information.
-- [NSAppTransportSecurity](information-property-list/nsapptransportsecurity.md)
+- [NSAppTransportSecurity](./nsapptransportsecurity.md)
   A description of changes made to the default security for HTTP connections.
-- [CKSharingSupported](information-property-list/cksharingsupported.md)
+- [CKSharingSupported](./cksharingsupported.md)
   A Boolean value that indicates your app supports CloudKit Sharing.
 
 

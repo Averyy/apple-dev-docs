@@ -1,7 +1,8 @@
 # soOutputToAudioDevice
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.6+
@@ -14,7 +15,7 @@ var soOutputToAudioDevice: OSType { get }
 
 #### Discussion
 
-Pass a pointer to an [`AudioDeviceID`](https://developer.apple.com/documentation/coreaudio/audiodeviceid) in the `speechInfo` parameter to play to this file, or `0` to play through the default audio output device.
+Pass a pointer to an [`AudioDeviceID`](../CoreAudio/audiodeviceid.md) in the `speechInfo` parameter to play to this file, or `0` to play through the default audio output device.
 
 This selector works with the `SetSpeechInfo` function.
 

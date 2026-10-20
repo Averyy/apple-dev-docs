@@ -5,15 +5,15 @@
 ## Topics
 
 ### Constants
-- [var kBridgeSoftwareRunningCantSleep: Int](kbridgesoftwarerunningcantsleep.md)
-- [var kCantReportProcessorTemperatureErr: Int](kcantreportprocessortemperatureerr.md)
-- [var kNoSuchPowerSource: Int](knosuchpowersource.md)
-- [var kPowerHandlerExistsForDeviceErr: Int](kpowerhandlerexistsfordeviceerr.md)
-- [var kPowerHandlerNotFoundForDeviceErr: Int](kpowerhandlernotfoundfordeviceerr.md)
-- [var kPowerHandlerNotFoundForProcErr: Int](kpowerhandlernotfoundforprocerr.md)
-- [var kPowerMgtMessageNotHandled: Int](kpowermgtmessagenothandled.md)
-- [var kPowerMgtRequestDenied: Int](kpowermgtrequestdenied.md)
-- [var kProcessorTempRoutineRequiresMPLib2: Int](kprocessortemproutinerequiresmplib2.md)
+- [var kBridgeSoftwareRunningCantSleep: Int](../../kbridgesoftwarerunningcantsleep.md)
+- [var kCantReportProcessorTemperatureErr: Int](../../kcantreportprocessortemperatureerr.md)
+- [var kNoSuchPowerSource: Int](../../knosuchpowersource.md)
+- [var kPowerHandlerExistsForDeviceErr: Int](../../kpowerhandlerexistsfordeviceerr.md)
+- [var kPowerHandlerNotFoundForDeviceErr: Int](../../kpowerhandlernotfoundfordeviceerr.md)
+- [var kPowerHandlerNotFoundForProcErr: Int](../../kpowerhandlernotfoundforprocerr.md)
+- [var kPowerMgtMessageNotHandled: Int](../../kpowermgtmessagenothandled.md)
+- [var kPowerMgtRequestDenied: Int](../../kpowermgtrequestdenied.md)
+- [var kProcessorTempRoutineRequiresMPLib2: Int](../../kprocessortemproutinerequiresmplib2.md)
 
 
 ---

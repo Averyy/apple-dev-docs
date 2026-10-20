@@ -1,17 +1,22 @@
 # baseWritingDirection
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The initial writing direction used to determine the actual writing direction for text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var baseWritingDirection: NSWritingDirection { get set }
+```
+
+```objc
+@property NSWritingDirection baseWritingDirection;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # converting(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a measurement created by converting the receiver to the specified unit.
 
@@ -20,13 +21,17 @@ Returns a measurement created by converting the receiver to the specified unit.
 func converting(to unit: Unit) -> Measurement<Unit>
 ```
 
+```objc
+- (NSMeasurement *) measurementByConvertingToUnit:(NSUnit *) unit;
+```
+
 #### Return Value
 
 A new measurement with a value calculated by converting into the new unit.
 
 #### Discussion
 
-This method raises an [`invalidArgumentException`](nsexceptionname/invalidargumentexception.md) if the receiver cannot be converted to unit.
+This method raises an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md) if the receiver cannot be converted to unit.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ This method raises an [`invalidArgumentException`](nsexceptionname/invalidargume
 
 ## See Also
 
-- [func canBeConverted(to: Unit) -> Bool](nsmeasurement/canbeconverted(to:).md)
+### Converting to Other Units
+- [func canBeConverted(to: Unit) -> Bool](./canbeconverted%28to%29.md)
   Indicates whether the measurement can be converted to the given unit.
 
 

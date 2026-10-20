@@ -1,7 +1,8 @@
 # disableSemanticSearch
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to exclude semantic-based search results from the output.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether to exclude semantic-based search results 
 var disableSemanticSearch: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL disableSemanticSearch;
+```
+
 #### Discussion
 
 Semantic searching finds matches that are related to the original term, but not necessarily a lexical match. For example, a search for the string “Sun and Moon” might also return a result with a title like “Sol and Luna”. The default value of this property is `false`, which enables the delivery of semantic search results.
@@ -26,9 +31,10 @@ You might set this property to `true` when you want to perform only a lexical ma
 
 ## See Also
 
-- [var maxResultCount: Int](csuserquerycontext/maxresultcount.md)
+### Configuring search options
+- [var maxResultCount: Int](./maxresultcount.md)
   The maximum number of search results for the query to return.
-- [var maxSuggestionCount: Int](csuserquerycontext/maxsuggestioncount.md)
+- [var maxSuggestionCount: Int](./maxsuggestioncount.md)
   The maximum number of suggested text completions for the query to return.
 
 

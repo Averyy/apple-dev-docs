@@ -1,7 +1,8 @@
 # AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related App Store Versions resource.
 
@@ -10,7 +11,7 @@ The type and ID of a related App Store Versions resource.
 
 ## Declaration
 
-```swift
+```
 object AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion.Data
 ```
 
@@ -18,6 +19,8 @@ object AppClipDefaultExperience.Relationships.ReleaseWithAppStoreVersion.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related App Store Versions resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appStoreVersions`
 
 
 ---

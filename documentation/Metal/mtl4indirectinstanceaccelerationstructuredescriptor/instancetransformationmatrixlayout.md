@@ -1,7 +1,8 @@
 # instanceTransformationMatrixLayout
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the layout for the transformation matrices in the instance descriptor buffer and the motion transformation matrix buffer.
 
@@ -19,9 +20,13 @@ Specifies the layout for the transformation matrices in the instance descriptor 
 var instanceTransformationMatrixLayout: MTLMatrixLayout { get set }
 ```
 
+```objc
+@property (nonatomic) MTLMatrixLayout instanceTransformationMatrixLayout;
+```
+
 #### Discussion
 
-Metal interprets the value of this property as the layout for the buffers that both [`instanceDescriptorBuffer`](mtl4indirectinstanceaccelerationstructuredescriptor/instancedescriptorbuffer.md) and [`motionTransformBuffer`](mtl4indirectinstanceaccelerationstructuredescriptor/motiontransformbuffer.md) reference.
+Metal interprets the value of this property as the layout for the buffers that both [`instanceDescriptorBuffer`](./instancedescriptorbuffer.md) and [`motionTransformBuffer`](./motiontransformbuffer.md) reference.
 
 Defaults to `MTLMatrixLayoutColumnMajor`.
 

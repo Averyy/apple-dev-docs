@@ -1,10 +1,11 @@
 # kP1Mode
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kP1Mode: BluetoothHCIPageScanPeriodModes { get }
 ```
 
+```c
+kP1Mode
+```
+
 ## See Also
 
-- [var kP0Mode: BluetoothHCIPageScanPeriodModes](kp0mode.md)
-- [var kP2Mode: BluetoothHCIPageScanPeriodModes](kp2mode.md)
+### Constants
+- [var kP0Mode: BluetoothHCIPageScanPeriodModes](./kp0mode.md)
+- [var kP2Mode: BluetoothHCIPageScanPeriodModes](./kp2mode.md)
 
 
 ---

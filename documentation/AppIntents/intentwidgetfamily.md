@@ -1,14 +1,15 @@
 # IntentWidgetFamily
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -20,36 +21,36 @@ enum IntentWidgetFamily
 ## Topics
 
 ### Enumeration Cases
-- [IntentWidgetFamily.accessoryCircular](intentwidgetfamily/accessorycircular.md)
+- [IntentWidgetFamily.accessoryCircular](./intentwidgetfamily/accessorycircular.md)
   A circular widget.
-- [IntentWidgetFamily.accessoryCorner](intentwidgetfamily/accessorycorner.md)
+- [IntentWidgetFamily.accessoryCorner](./intentwidgetfamily/accessorycorner.md)
   A corner widget.
-- [IntentWidgetFamily.accessoryInline](intentwidgetfamily/accessoryinline.md)
+- [IntentWidgetFamily.accessoryInline](./intentwidgetfamily/accessoryinline.md)
   A flat widget that contains a single row of text and an optional image.
-- [IntentWidgetFamily.accessoryRectangular](intentwidgetfamily/accessoryrectangular.md)
+- [IntentWidgetFamily.accessoryRectangular](./intentwidgetfamily/accessoryrectangular.md)
   A rectangular widget.
-- [IntentWidgetFamily.systemExtraLarge](intentwidgetfamily/systemextralarge.md)
+- [IntentWidgetFamily.systemExtraLarge](./intentwidgetfamily/systemextralarge.md)
   An extra large widget.
-- [IntentWidgetFamily.systemExtraLargePortrait](intentwidgetfamily/systemextralargeportrait.md)
+- [IntentWidgetFamily.systemExtraLargePortrait](./intentwidgetfamily/systemextralargeportrait.md)
   An extra large portrait widget.
-- [IntentWidgetFamily.systemLarge](intentwidgetfamily/systemlarge.md)
+- [IntentWidgetFamily.systemLarge](./intentwidgetfamily/systemlarge.md)
   A large widget.
-- [IntentWidgetFamily.systemMedium](intentwidgetfamily/systemmedium.md)
+- [IntentWidgetFamily.systemMedium](./intentwidgetfamily/systemmedium.md)
   A medium-sized widget.
-- [IntentWidgetFamily.systemSmall](intentwidgetfamily/systemsmall.md)
+- [IntentWidgetFamily.systemSmall](./intentwidgetfamily/systemsmall.md)
   A small widget.
 ### Type Aliases
-- [IntentWidgetFamily.Specification](intentwidgetfamily/specification.md)
-- [IntentWidgetFamily.UnwrappedType](intentwidgetfamily/unwrappedtype.md)
-- [IntentWidgetFamily.ValueType](intentwidgetfamily/valuetype.md)
+- [IntentWidgetFamily.Specification](./intentwidgetfamily/specification.md)
+- [IntentWidgetFamily.UnwrappedType](./intentwidgetfamily/unwrappedtype.md)
+- [IntentWidgetFamily.ValueType](./intentwidgetfamily/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentWidgetFamily>](intentwidgetfamily/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentWidgetFamily>](./intentwidgetfamily/defaultresolverspecification.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

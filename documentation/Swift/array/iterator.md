@@ -1,7 +1,8 @@
 # Array.Iterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that allows iteration over an array’s elements.
 
@@ -22,13 +23,14 @@ typealias Iterator = IndexingIterator<Array<Element>>
 
 ## See Also
 
-- [typealias Index](array/index.md)
+### Supporting Types
+- [typealias Index](./index.md)
   The index type for arrays, `Int`.
-- [typealias Indices](array/indices.md)
+- [typealias Indices](./indices.md)
   The type that represents the indices that are valid for subscripting an array, in ascending order.
-- [typealias ArrayLiteralElement](array/arrayliteralelement.md)
+- [typealias ArrayLiteralElement](./arrayliteralelement.md)
   The type of the elements of an array literal.
-- [typealias SubSequence](array/subsequence.md)
+- [typealias SubSequence](./subsequence.md)
   A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 
 

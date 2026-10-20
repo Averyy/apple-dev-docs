@@ -1,7 +1,8 @@
 # paperRect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the paper for printing.
 
@@ -17,17 +18,23 @@ The size of the paper for printing.
 var paperRect: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect paperRect;
+```
+
 #### Discussion
 
 The value of this property is a rectangle that defines the size of paper chosen for the print job. The origin is always (0,0).
 
 ## See Also
 
-- [var printPaper: UIPrintPaper?](uiprintinteractioncontroller/printpaper.md)
+### Related Documentation
+- [var printPaper: UIPrintPaper?](../uiprintinteractioncontroller/printpaper.md)
   An object that represents the paper size and printing area for the print job.
-- [var numberOfPages: Int](uiprintpagerenderer/numberofpages.md)
+### Accessing information about the print job
+- [var numberOfPages: Int](./numberofpages.md)
   The number of pages to render.
-- [var printableRect: CGRect](uiprintpagerenderer/printablerect.md)
+- [var printableRect: CGRect](./printablerect.md)
   The area in which printing can occur.
 
 

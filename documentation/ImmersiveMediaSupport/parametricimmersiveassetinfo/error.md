@@ -1,7 +1,8 @@
 # ParametricImmersiveAssetInfo.Error
 
 **Framework**: Immersive Media Support  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that occurs during the conversion process of the parametric immersive asset.
 
@@ -21,21 +22,21 @@ struct Error
 ## Topics
 
 ### Instance Properties
-- [var errorDescription: String?](parametricimmersiveassetinfo/error/errordescription.md)
+- [var errorDescription: String?](./error/errordescription.md)
   A description of what went wrong, for debugging purposes.
-- [let errorType: ParametricImmersiveAssetInfo.Error.ErrorType](parametricimmersiveassetinfo/error/errortype-swift.property.md)
+- [let errorType: ParametricImmersiveAssetInfo.Error.ErrorType](./error/errortype-swift.property.md)
   An error type that describes this error.
 ### Enumerations
-- [ParametricImmersiveAssetInfo.Error.ErrorType](parametricimmersiveassetinfo/error/errortype-swift.enum.md)
+- [ParametricImmersiveAssetInfo.Error.ErrorType](./error/errortype-swift.enum.md)
   A type of an error that may occur when converting the original wide field of view video asset to a parametric immersive asset.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../../Swift/error.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

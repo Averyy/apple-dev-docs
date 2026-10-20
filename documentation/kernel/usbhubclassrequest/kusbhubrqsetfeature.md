@@ -1,7 +1,8 @@
 # kUSBHubRqSetFeature
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 A request to set a feature.
 
@@ -10,7 +11,7 @@ A request to set a feature.
 
 ## Declaration
 
-```swift
+```c
 kUSBHubRqSetFeature = 3
 ```
 

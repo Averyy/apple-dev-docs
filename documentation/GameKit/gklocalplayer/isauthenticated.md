@@ -1,7 +1,8 @@
 # isAuthenticated
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a local player has signed in to Game Center.
 
@@ -20,17 +21,30 @@ A Boolean value that indicates whether a local player has signed in to Game Cent
 var isAuthenticated: Bool { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, getter=isAuthenticated) BOOL authenticated;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, getter=isAuthenticated) BOOL authenticated;
+```
+
 ## Mentions
 
-- [Authenticating a player](authenticating-a-player.md)
+- [Authenticating a player](../authenticating-a-player.md)
 
 ## See Also
 
-- [var authenticateHandler: ((UIViewController?, (any Error)?) -> Void)?](gklocalplayer/authenticatehandler.md)
+### Authenticating the Local Player
+- [var authenticateHandler: ((UIViewController?, (any Error)?) -> Void)?](./authenticatehandler.md)
   A handler that GameKit calls while initializing the local player.
-- [func fetchItems(forIdentityVerificationSignature: ((URL?, Data?, Data?, UInt64, (any Error)?) -> Void)?)](gklocalplayer/fetchitems(foridentityverificationsignature:).md)
+- [func fetchItems(forIdentityVerificationSignature: ((URL?, Data?, Data?, UInt64, (any Error)?) -> Void)?)](./fetchitems%28foridentityverificationsignature%29.md)
   Generates a signature that you can use to authenticate the local player on your own server.
-- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
+- [static let GKPlayerAuthenticationDidChangeNotificationName: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gkplayerauthenticationdidchangenotificationname.md)
   A notification that posts after GameKit authenticates the local player.
 
 

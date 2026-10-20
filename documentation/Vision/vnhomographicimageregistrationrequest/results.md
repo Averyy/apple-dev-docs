@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the image registration request.
 
@@ -17,6 +18,10 @@ The results of the image registration request.
 
 ```swift
 var results: [VNImageHomographicAlignmentObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNImageHomographicAlignmentObservation *> * results;
 ```
 
 

@@ -1,7 +1,8 @@
 # scrollDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scroll direction of the grid.
 
@@ -9,7 +10,7 @@ The scroll direction of the grid.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The scroll direction of the grid.
 var scrollDirection: UICollectionView.ScrollDirection { get set }
 ```
 
+```objc
+@property (nonatomic) UICollectionViewScrollDirection scrollDirection;
+```
+
 #### Discussion
 
 The grid layout scrolls along one axis only, either horizontally or vertically. For the non scrolling axis, the width of the collection view in that dimension serves as starting width of the content.
 
-The default value of this property is [`UICollectionView.ScrollDirection.vertical`](uicollectionview/scrolldirection/vertical.md).
+The default value of this property is [`UICollectionView.ScrollDirection.vertical`](../uicollectionview/scrolldirection/vertical.md).
 
 ## See Also
 
-- [UICollectionView.ScrollDirection](uicollectionview/scrolldirection.md)
+### Configuring the scroll direction
+- [UICollectionView.ScrollDirection](../uicollectionview/scrolldirection.md)
   Constants that indicate the direction of scrolling for the layout.
 
 

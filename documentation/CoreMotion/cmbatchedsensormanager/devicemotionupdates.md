@@ -1,7 +1,8 @@
 # CMBatchedSensorManager.DeviceMotionUpdates
 
 **Framework**: Core Motion  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - watchOS 10.0+
@@ -15,21 +16,22 @@ struct DeviceMotionUpdates
 ## Topics
 
 ### Structures
-- [CMBatchedSensorManager.DeviceMotionUpdates.Iterator](cmbatchedsensormanager/devicemotionupdates/iterator.md)
+- [CMBatchedSensorManager.DeviceMotionUpdates.Iterator](./devicemotionupdates/iterator.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [func startDeviceMotionUpdates()](cmbatchedsensormanager/startdevicemotionupdates.md)
-- [func startDeviceMotionUpdates(handler: ([CMDeviceMotion]?, (any Error)?) -> Void)](cmbatchedsensormanager/startdevicemotionupdates(handler:).md)
-- [func stopDeviceMotionUpdates()](cmbatchedsensormanager/stopdevicemotionupdates.md)
-- [var deviceMotionBatch: [CMDeviceMotion]?](cmbatchedsensormanager/devicemotionbatch.md)
-- [func deviceMotionUpdates() -> CMBatchedSensorManager.DeviceMotionUpdates](cmbatchedsensormanager/devicemotionupdates.md)
-- [var isDeviceMotionActive: Bool](cmbatchedsensormanager/isdevicemotionactive.md)
+### Collecting device-motion data
+- [func startDeviceMotionUpdates()](./startdevicemotionupdates%28%29.md)
+- [func startDeviceMotionUpdates(handler: ([CMDeviceMotion]?, (any Error)?) -> Void)](./startdevicemotionupdates%28handler%29.md)
+- [func stopDeviceMotionUpdates()](./stopdevicemotionupdates%28%29.md)
+- [var deviceMotionBatch: [CMDeviceMotion]?](./devicemotionbatch.md)
+- [func deviceMotionUpdates() -> CMBatchedSensorManager.DeviceMotionUpdates](./devicemotionupdates%28%29.md)
+- [var isDeviceMotionActive: Bool](./isdevicemotionactive.md)
 
 
 ---

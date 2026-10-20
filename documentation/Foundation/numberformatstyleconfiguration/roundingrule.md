@@ -1,7 +1,8 @@
 # NumberFormatStyleConfiguration.RoundingRule
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type used for rounding rule values.
 
@@ -22,19 +23,20 @@ typealias RoundingRule = FloatingPointRoundingRule
 
 #### Discussion
 
-[`NumberFormatStyleConfiguration`](numberformatstyleconfiguration.md) uses the [`FloatingPointRoundingRule`](https://developer.apple.com/documentation/swift/floatingpointroundingrule) enumeration for rounding rule values.
+[`NumberFormatStyleConfiguration`](../numberformatstyleconfiguration.md) uses the [`FloatingPointRoundingRule`](../../Swift/floatingpointroundingrule.md) enumeration for rounding rule values.
 
 ## See Also
 
-- [NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](numberformatstyleconfiguration/decimalseparatordisplaystrategy.md)
+### Specifying Configuration
+- [NumberFormatStyleConfiguration.DecimalSeparatorDisplayStrategy](./decimalseparatordisplaystrategy.md)
   A structure that an integer format style uses to configure a decimal separator display strategy.
-- [NumberFormatStyleConfiguration.Grouping](numberformatstyleconfiguration/grouping.md)
+- [NumberFormatStyleConfiguration.Grouping](./grouping.md)
   A structure that an integer format style uses to configure grouping.
-- [NumberFormatStyleConfiguration.Precision](numberformatstyleconfiguration/precision.md)
+- [NumberFormatStyleConfiguration.Precision](./precision.md)
   A structure that an integer format style uses to configure precision.
-- [NumberFormatStyleConfiguration.SignDisplayStrategy](numberformatstyleconfiguration/signdisplaystrategy.md)
+- [NumberFormatStyleConfiguration.SignDisplayStrategy](./signdisplaystrategy.md)
   A structure that an integer format style uses to configure a sign display strategy.
-- [NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation.md)
+- [NumberFormatStyleConfiguration.Notation](./notation.md)
   A structure that an integer format style uses to configure notation.
 
 

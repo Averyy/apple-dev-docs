@@ -1,7 +1,8 @@
 # write(to:metadata:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the recommender as a Core ML model file at the given URL.
 
@@ -21,7 +22,8 @@ func write(to fileURL: URL, metadata: MLModelMetadata? = nil) throws
 
 ## See Also
 
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlrecommender/write(tofile:metadata:).md)
+### Saving a recommender
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./write%28tofile,metadata%29.md)
   Exports the recommender as a Core ML model file at the given file path.
 
 

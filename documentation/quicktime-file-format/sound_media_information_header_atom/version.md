@@ -1,21 +1,23 @@
 # Version
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 1-byte specification of the version of this sound media information header atom.
 
 ## See Also
 
-- [Size](sound_media_information_header_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this sound media information header atom.
-- [Type](sound_media_information_header_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Flags](sound_media_information_header_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte space for sound media information flags.
-- [Balance](sound_media_information_header_atom/balance.md)
+- [Balance](./balance.md)
   A 16-bit integer that specifies the sound balance of this sound media.
-- [Reserved](sound_media_information_header_atom/reserved.md)
+- [Reserved](./reserved.md)
   Reserved for use by Apple.
 
 

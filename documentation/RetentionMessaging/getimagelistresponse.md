@@ -1,7 +1,8 @@
 # GetImageListResponse
 
 **Framework**: Retention Messaging API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that contains status information for all images.
 
@@ -10,13 +11,13 @@ A response that contains status information for all images.
 
 ## Declaration
 
-```swift
+```
 object GetImageListResponse
 ```
 
 #### Discussion
 
-The [`Get Image List`](get-image-list.md) endpoint returns this response.
+The [`Get Image List`](./get-image-list.md) endpoint returns this response.
 
 ## Properties
 
@@ -24,13 +25,14 @@ The [`Get Image List`](get-image-list.md) endpoint returns this response.
 
 ## See Also
 
-- [Upload Image](upload-image.md)
+### Image configuration
+- [Upload Image](./upload-image.md)
   Uploads an image to use for retention messaging.
-- [Delete Image](delete-image.md)
+- [Delete Image](./delete-image.md)
   Deletes a previously uploaded image.
-- [Get Image List](get-image-list.md)
+- [Get Image List](./get-image-list.md)
   Gets the image identifier and state for all uploaded images.
-- [object GetImageListResponseItem](getimagelistresponseitem.md)
+- [object GetImageListResponseItem](./getimagelistresponseitem.md)
   An image identifier and state information for an image.
 
 

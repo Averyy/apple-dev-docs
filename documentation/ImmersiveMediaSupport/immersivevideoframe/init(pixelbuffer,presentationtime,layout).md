@@ -1,7 +1,8 @@
 # init(pixelBuffer:presentationTime:layout:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a video frame with one pixelBuffer and specified layout.
 
@@ -19,7 +20,7 @@ init(pixelBuffer: CVPixelBuffer, presentationTime: CMTime, layout: ImmersiveVide
 
 - `pixelBuffer`: pixelBuffer containing the video frame.
 - `presentationTime`: Presentation time of the video frame.
-- `layout`: How left and right eye is packed into the pixelBuffer. See [`ImmersiveVideoFrame.VideoLayout`](immersivevideoframe/videolayout.md) for the valid options.
+- `layout`: How left and right eye is packed into the pixelBuffer. See [`ImmersiveVideoFrame.VideoLayout`](./videolayout.md) for the valid options.
 
 
 ---

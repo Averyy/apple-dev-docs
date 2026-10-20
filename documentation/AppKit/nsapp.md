@@ -1,12 +1,13 @@
 # NSApp
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The global variable for the shared app instance.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ The global variable for the shared app instance.
 var NSApp: NSApplication!
 ```
 
+```c
+extern NSApplication * NSApp;
+```
+
 #### Discussion
 
-The value in this global variable is the same as accessing the [`shared`](nsapplication/shared.md) property of the app.
+The value in this global variable is the same as accessing the [`shared`](./nsapplication/shared.md) property of the app.
 
 ## See Also
 
-- [class var shared: NSApplication](nsapplication/shared.md)
+### Getting the shared app object
+- [class var shared: NSApplication](./nsapplication/shared.md)
   Returns the application instance, creating it if it doesn’t exist yet.
 
 

@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corner radius, in points, of each full-screen browser item.
 
@@ -14,15 +15,20 @@ The corner radius, in points, of each full-screen browser item.
 var cornerRadius: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat cornerRadius;
+```
+
 #### Discussion
 
 The default value is 36.0 points.
 
 ## See Also
 
-- [var interitemSpacing: CGFloat](tvbrowserviewcontroller/interitemspacing.md)
+### Modifying the Browser Appearance
+- [var interitemSpacing: CGFloat](./interitemspacing.md)
   The spacing between full-screen browser items.
-- [var maskInset: UIEdgeInsets](tvbrowserviewcontroller/maskinset.md)
+- [var maskInset: UIEdgeInsets](./maskinset.md)
   The amount by which the content of the cell is inset.
 
 

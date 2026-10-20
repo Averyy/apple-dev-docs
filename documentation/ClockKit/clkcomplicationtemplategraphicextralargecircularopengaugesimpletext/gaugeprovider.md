@@ -1,12 +1,15 @@
 # gaugeProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gauge to display in the complication.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,11 +18,16 @@ The gauge to display in the complication.
 var gaugeProvider: CLKGaugeProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKGaugeProvider * gaugeProvider;
+```
+
 ## See Also
 
-- [var bottomTextProvider: CLKTextProvider](clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/bottomtextprovider.md)
+### Setting the Complication Data
+- [var bottomTextProvider: CLKTextProvider](./bottomtextprovider.md)
   The text to display at the bottom of the gauge.
-- [var centerTextProvider: CLKTextProvider](clkcomplicationtemplategraphicextralargecircularopengaugesimpletext/centertextprovider.md)
+- [var centerTextProvider: CLKTextProvider](./centertextprovider.md)
   The text to display in the center of the gauge.
 
 

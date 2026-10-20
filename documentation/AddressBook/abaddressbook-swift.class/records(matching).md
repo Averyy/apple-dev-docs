@@ -1,17 +1,22 @@
 # records(matching:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of records that match the given search element, or returns an empty array if no records match the search element.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func records(matching search: ABSearchElement!) -> [Any]!
+```
+
+```objc
+- (NSArray *) recordsMatchingSearchElement:(ABSearchElement *) search;
 ```
 
 #### Return Value

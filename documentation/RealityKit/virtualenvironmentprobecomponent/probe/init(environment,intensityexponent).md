@@ -1,7 +1,8 @@
 # init(environment:intensityExponent:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a virtual-environment probe from an environment resource and intensity value.
 

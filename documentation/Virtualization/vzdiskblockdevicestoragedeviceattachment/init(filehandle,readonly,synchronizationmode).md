@@ -1,7 +1,8 @@
 # init(fileHandle:readOnly:synchronizationMode:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new block storage device attachment from a file handle and with the specified access mode, synchronization mode, and error object that you provide.
 
@@ -14,6 +15,10 @@ Creates a new block storage device attachment from a file handle and with the sp
 init(fileHandle: FileHandle, readOnly: Bool, synchronizationMode: VZDiskSynchronizationMode) throws
 ```
 
+```objc
+- (instancetype) initWithFileHandle:(NSFileHandle *) fileHandle readOnly:(BOOL) readOnly synchronizationMode:(VZDiskSynchronizationMode) synchronizationMode error:(NSError **) error;
+```
+
 #### Discussion
 
 > **Note**:  The disk attachment retains the file handle, and the handle must be open when the virtual machine starts.
@@ -22,9 +27,9 @@ The `readOnly` parameter affects how the Virtualization framework exposes the di
 
 ## Parameters
 
-- `fileHandle`: The [`FileHandle`](https://developer.apple.com/documentation/foundation/filehandle) to a block device to attach to this VM.
+- `fileHandle`: The [`FileHandle`](../../Foundation/filehandle.md) to a block device to attach to this VM.
 - `readOnly`: A Boolean value that indicates whether this disk attachment is read-only; otherwise, if the file handle allows writes, the device can write data into it.
-- `synchronizationMode`: The [`VZDiskSynchronizationMode`](vzdisksynchronizationmode.md) value that defines how the disk synchronizes with the underlying storage when the guest operating system flushes data.
+- `synchronizationMode`: The [`VZDiskSynchronizationMode`](../vzdisksynchronizationmode.md) value that defines how the disk synchronizes with the underlying storage when the guest operating system flushes data.
 
 
 ---

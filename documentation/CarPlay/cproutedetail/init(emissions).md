@@ -1,7 +1,8 @@
 # init(emissions:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for emissions data.
 
@@ -14,6 +15,10 @@ Creates additional route information for emissions data.
 
 ```swift
 convenience init(emissions: Measurement<UnitMass>)
+```
+
+```objc
++ (instancetype) routeDetailWithEmissions:(NSMeasurement<NSUnitMass *> *) emissions;
 ```
 
 #### Return Value
@@ -30,9 +35,11 @@ This method provides flexibility for apps that want to display emissions data di
 
 ## Parameters
 
-- `emissions`: A measurement of emissions using @c NSUnitMass. The system formats with appropriate units and precision. Common units include: - @c NSUnitMass.grams for small emissions quantities
-- @c NSUnitMass.kilograms for standard emissions display
-- @c NSUnitMass.milligrams for particulate matter or trace pollutants
+- `emissions`: A measurement of emissions using @c NSUnitMass. The system formats with appropriate units and precision. Common units include:
+
+  - @c NSUnitMass.grams for small emissions quantities
+  - @c NSUnitMass.kilograms for standard emissions display
+  - @c NSUnitMass.milligrams for particulate matter or trace pollutants
 
 
 ---

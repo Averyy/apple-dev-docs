@@ -1,7 +1,8 @@
 # dropDuplicates()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a subset of the column by removing all duplicate elements.
 
@@ -19,6 +20,8 @@ Creates a subset of the column by removing all duplicate elements.
 func dropDuplicates() -> MLDataColumn<Element>
 ```
 
+Available when `Element` conforms to `MLDataValueConvertible`.
+
 #### Return Value
 
 A new column.
@@ -29,7 +32,8 @@ A new column.
 
 ## See Also
 
-- [func dropMissing() -> MLDataColumn<Element>](mldatacolumn/dropmissing.md)
+### Discarding elements to generate a column
+- [func dropMissing() -> MLDataColumn<Element>](./dropmissing%28%29.md)
   Creates a subset of the column by removing all elements without a value.
 
 

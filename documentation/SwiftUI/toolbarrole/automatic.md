@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic role.
 
@@ -22,7 +23,7 @@ static var automatic: ToolbarRole { get }
 
 #### Discussion
 
-In iOS, tvOS, and watchOS this resolves to the [`navigationStack`](toolbarrole/navigationstack.md) role. In macOS, this resolves to the [`editor`](toolbarrole/editor.md) role.
+In iOS, tvOS, and watchOS this resolves to the [`navigationStack`](./navigationstack.md) role. In macOS, this resolves to the [`editor`](./editor.md) role.
 
 
 ---

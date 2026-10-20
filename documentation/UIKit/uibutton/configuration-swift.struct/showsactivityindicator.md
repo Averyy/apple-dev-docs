@@ -1,7 +1,8 @@
 # showsActivityIndicator
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the button displays an activity indicator instead of an image.
 
@@ -10,7 +11,7 @@ A Boolean value that determines whether the button displays an activity indicato
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ var showsActivityIndicator: Bool { get set }
 
 #### Discussion
 
-The button respects the [`imagePlacement`](uibutton/configuration-swift.struct/imageplacement.md) property when positioning the activity indicator.
+The button respects the [`imagePlacement`](./imageplacement.md) property when positioning the activity indicator.
 
 ## See Also
 
-- [var activityIndicatorColorTransformer: UIConfigurationColorTransformer?](uibutton/configuration-swift.struct/activityindicatorcolortransformer.md)
+### Configuring the activity indicator
+- [var activityIndicatorColorTransformer: UIConfigurationColorTransformer?](./activityindicatorcolortransformer.md)
   The color transformer for resolving the color of the activity indicator.
 
 

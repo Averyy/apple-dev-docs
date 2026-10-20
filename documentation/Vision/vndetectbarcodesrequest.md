@@ -1,7 +1,8 @@
 # VNDetectBarcodesRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that detects barcodes in an image.
 
@@ -19,52 +20,57 @@ A request that detects barcodes in an image.
 class VNDetectBarcodesRequest
 ```
 
+```objc
+@interface VNDetectBarcodesRequest : VNImageBasedRequest
+```
+
 #### Overview
 
-This request returns an array of [`VNBarcodeObservation`](vnbarcodeobservation.md) objects, one for each barcode it detects.
+This request returns an array of [`VNBarcodeObservation`](./vnbarcodeobservation.md) objects, one for each barcode it detects.
 
 ## Topics
 
 ### Specifying Symbologies
-- [func supportedSymbologies() throws -> [VNBarcodeSymbology]](vndetectbarcodesrequest/supportedsymbologies.md)
+- [func supportedSymbologies() throws -> [VNBarcodeSymbology]](./vndetectbarcodesrequest/supportedsymbologies%28%29.md)
   Returns the barcode symbologies that the request supports.
-- [var symbologies: [VNBarcodeSymbology]](vndetectbarcodesrequest/symbologies.md)
+- [var symbologies: [VNBarcodeSymbology]](./vndetectbarcodesrequest/symbologies.md)
   The barcode symbologies that the request detects in an image.
-- [var coalesceCompositeSymbologies: Bool](vndetectbarcodesrequest/coalescecompositesymbologies.md)
+- [var coalesceCompositeSymbologies: Bool](./vndetectbarcodesrequest/coalescecompositesymbologies.md)
   A Boolean value that indicates whether to coalesce multiple codes based on the symbology.
-- [struct VNBarcodeSymbology](vnbarcodesymbology.md)
+- [struct VNBarcodeSymbology](./vnbarcodesymbology.md)
   The barcode symbologies that the framework detects.
-- [class var supportedSymbologies: [VNBarcodeSymbology]](vndetectbarcodesrequest/supportedsymbologies.md)
+- [class var supportedSymbologies: [VNBarcodeSymbology]](./vndetectbarcodesrequest/supportedsymbologies.md)
   The array of barcode symbologies that the request supports.
 ### Accessing the Results
-- [var results: [VNBarcodeObservation]?](vndetectbarcodesrequest/results.md)
+- [var results: [VNBarcodeObservation]?](./vndetectbarcodesrequest/results.md)
   The results of a barcode detection request.
-- [class VNBarcodeObservation](vnbarcodeobservation.md)
+- [class VNBarcodeObservation](./vnbarcodeobservation.md)
   An object that represents barcode information that an image analysis request detects.
 ### Identifying Request Revisions
-- [var VNDetectBarcodesRequestRevision3: Int](vndetectbarcodesrequestrevision3.md)
+- [var VNDetectBarcodesRequestRevision3: Int](./vndetectbarcodesrequestrevision3.md)
   A constant for specifying revision 3 of the barcode detection request.
-- [var VNDetectBarcodesRequestRevision2: Int](vndetectbarcodesrequestrevision2.md)
+- [var VNDetectBarcodesRequestRevision2: Int](./vndetectbarcodesrequestrevision2.md)
   A constant for specifying revision 2 of the barcode detection request.
-- [var VNDetectBarcodesRequestRevision1: Int](vndetectbarcodesrequestrevision1.md)
+- [var VNDetectBarcodesRequestRevision1: Int](./vndetectbarcodesrequestrevision1.md)
   A constant for specifying revision 1 of the barcode detection request.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [enum VNBarcodeCompositeType](vnbarcodecompositetype.md)
+### Barcode detection
+- [enum VNBarcodeCompositeType](./vnbarcodecompositetype.md)
   Composite types for barcode requests.
 
 

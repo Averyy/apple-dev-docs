@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two message authentication codes are equal.
 
@@ -31,7 +32,8 @@ A Boolean value that’s `true` if the message authentication codes are equivale
 
 ## See Also
 
-- [static func == <D>(Self, D) -> Bool](messageauthenticationcode/==(_:_:)-3rxc4.md)
+### Comparing codes
+- [static func == <D>(Self, D) -> Bool](./eqeq%28_,_%29-3rxc4.md)
   Returns a Boolean value indicating whether a message authentication code is equivalent to a collection of binary data.
 
 

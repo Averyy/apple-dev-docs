@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw data of an IPv4 address.
 
@@ -22,13 +23,14 @@ var rawValue: Data { get }
 
 ## See Also
 
-- [let interface: NWInterface?](ipv4address/interface.md)
+### Inspecting Address Properties
+- [let interface: NWInterface?](./interface.md)
   The interface associated with this address.
-- [var isLinkLocal: Bool](ipv4address/islinklocal.md)
+- [var isLinkLocal: Bool](./islinklocal.md)
   A Boolean indicating whether this address is in a link-local range.
-- [var isLoopback: Bool](ipv4address/isloopback.md)
+- [var isLoopback: Bool](./isloopback.md)
   A Boolean indicating whether this address is a loopback address for the local device.
-- [var isMulticast: Bool](ipv4address/ismulticast.md)
+- [var isMulticast: Bool](./ismulticast.md)
   A Boolean indicating whether this address is a multicast address.
 
 

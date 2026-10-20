@@ -1,7 +1,8 @@
 # OSRelatedKernelExtensionKey
 
 **Framework**: System Extensions  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 let OSRelatedKernelExtensionKey: String
+```
+
+```c
+extern NSString * const OSRelatedKernelExtensionKey;
 ```
 
 

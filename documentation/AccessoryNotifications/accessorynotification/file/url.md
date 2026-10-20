@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL that locates the file’s data.
 

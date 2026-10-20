@@ -1,7 +1,8 @@
 # WebPage.DeviceSensorAuthorization.Permission.deviceOrientationAndMotion
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The orientation and motion of the device.
 

@@ -1,14 +1,15 @@
 # kIOMediumEthernetAuto
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOMediumEthernetAuto = ( IFM_AUTO    | IFM_ETHER )
 ```
 

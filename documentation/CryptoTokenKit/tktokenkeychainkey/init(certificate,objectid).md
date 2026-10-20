@@ -1,7 +1,8 @@
 # init(certificate:objectID:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a token keychain key with data from the specified certificate reference and a given object ID.
 
@@ -20,6 +21,10 @@ Initializes a token keychain key with data from the specified certificate refere
 init?(certificate certificateRef: SecCertificate?, objectID: TKToken.ObjectID)
 ```
 
+```objc
+- (instancetype) initWithCertificate:(SecCertificateRef) certificateRef objectID:(TKTokenObjectID) objectID;
+```
+
 #### Return Value
 
 A new token keychain certificate.
@@ -30,7 +35,9 @@ This is the designated initializer.
 
 ## Parameters
 
-- `certificateRef`: The certificate reference. You can create a `SecCertificateRef` value from a data object using the `SecCertificateCreateWithData` function.
+- `certificateRef`: The certificate reference.
+
+  You can create a `SecCertificateRef` value from a data object using the `SecCertificateCreateWithData` function.
 - `objectID`: The object ID.
 
 

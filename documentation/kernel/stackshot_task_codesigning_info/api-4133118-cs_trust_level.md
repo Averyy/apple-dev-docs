@@ -1,14 +1,15 @@
 # cs_trust_level
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 uint32_t cs_trust_level;
 ```
 

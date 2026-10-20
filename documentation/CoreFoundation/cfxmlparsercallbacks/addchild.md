@@ -1,17 +1,22 @@
 # addChild
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Called when a child is added.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var addChild: CFXMLParserAddChildCallBack!
+```
+
+```c
+CFXMLParserAddChildCallBack addChild;
 ```
 
 

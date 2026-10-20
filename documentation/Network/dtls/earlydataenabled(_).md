@@ -1,7 +1,8 @@
 # earlyDataEnabled(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enable early data (0-RTT) for DTLS.
 

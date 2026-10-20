@@ -1,7 +1,8 @@
 # renderTargetArrayIndexOffset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An offset into the list of render targets.
 
@@ -19,19 +20,24 @@ An offset into the list of render targets.
 var renderTargetArrayIndexOffset: UInt32
 ```
 
+```c
+uint32_t renderTargetArrayIndexOffset;
+```
+
 ## Mentions
 
-- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Improving rendering performance with vertex amplification](../improving-rendering-performance-with-vertex-amplification.md)
 
 #### Discussion
 
-To specify a list of offsets, call the [`setVertexAmplificationCount(_:viewMappings:)`](mtlrendercommandencoder/setvertexamplificationcount(_:viewmappings:).md) method.
+To specify a list of offsets, call the [`setVertexAmplificationCount(_:viewMappings:)`](../mtlrendercommandencoder/setvertexamplificationcount%28_,viewmappings%29.md) method.
 
 When your app renders to different render targets, you specify the render target index to render to in your vertex shader by adding the `render_target_array_index` attribute to one of the vertex shader’s outputs. If you are using vertex amplification, Metal calculates the index for each amplified vertex by adding the index offset for the vertex to the value returned from your shader.
 
 ## See Also
 
-- [var viewportArrayIndexOffset: UInt32](mtlvertexamplificationviewmapping/viewportarrayindexoffset.md)
+### Specifying mapping offsets
+- [var viewportArrayIndexOffset: UInt32](./viewportarrayindexoffset.md)
   An offset into the list of viewports.
 
 

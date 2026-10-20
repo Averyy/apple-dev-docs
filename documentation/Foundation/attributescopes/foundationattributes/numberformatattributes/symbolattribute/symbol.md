@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute.Symbol
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 15.0+
@@ -21,24 +22,24 @@ enum Symbol
 ## Topics
 
 ### Enumeration Cases
-- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute.Symbol.currency](attributescopes/foundationattributes/numberformatattributes/symbolattribute/symbol/currency.md)
-- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute.Symbol.decimalSeparator](attributescopes/foundationattributes/numberformatattributes/symbolattribute/symbol/decimalseparator.md)
-- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute.Symbol.groupingSeparator](attributescopes/foundationattributes/numberformatattributes/symbolattribute/symbol/groupingseparator.md)
-- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute.Symbol.percent](attributescopes/foundationattributes/numberformatattributes/symbolattribute/symbol/percent.md)
-- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute.Symbol.sign](attributescopes/foundationattributes/numberformatattributes/symbolattribute/symbol/sign.md)
+- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute.Symbol.currency](./symbol/currency.md)
+- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute.Symbol.decimalSeparator](./symbol/decimalseparator.md)
+- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute.Symbol.groupingSeparator](./symbol/groupingseparator.md)
+- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute.Symbol.percent](./symbol/percent.md)
+- [AttributeScopes.FoundationAttributes.NumberFormatAttributes.SymbolAttribute.Symbol.sign](./symbol/sign.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../../../Swift/copyable.md)
+- [Decodable](../../../../../Swift/decodable.md)
+- [Encodable](../../../../../Swift/encodable.md)
+- [Equatable](../../../../../Swift/equatable.md)
+- [Escapable](../../../../../Swift/escapable.md)
+- [Hashable](../../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../../Swift/sendablemetatype.md)
 
 
 ---

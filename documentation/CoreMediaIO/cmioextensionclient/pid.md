@@ -1,7 +1,8 @@
 # pid
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The process identifier of the client.
 
@@ -15,9 +16,14 @@ The process identifier of the client.
 var pid: pid_t { get }
 ```
 
+```objc
+@property (atomic, readonly) pid_t pid;
+```
+
 ## See Also
 
-- [var clientID: UUID](cmioextensionclient/clientid.md)
+### Identifying a Client
+- [var clientID: UUID](./clientid.md)
   A unique client identifier.
 
 

@@ -1,7 +1,8 @@
 # CNContactStoreDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when changes occur to the contact store.
 

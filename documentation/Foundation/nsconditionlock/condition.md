@@ -1,7 +1,8 @@
 # condition
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The condition associated with the receiver.
 
@@ -18,6 +19,10 @@ The condition associated with the receiver.
 
 ```swift
 var condition: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger condition;
 ```
 
 #### Discussion

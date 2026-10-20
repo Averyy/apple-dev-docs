@@ -1,17 +1,18 @@
 # PHASESoundEvent.StartHandlerReason.finishedPlaying
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the framework successfully started the sound event.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ Indicates the framework successfully started the sound event.
 case finishedPlaying
 ```
 
+```c
+PHASESoundEventStartHandlerReasonFinishedPlaying
+```
+
 ## See Also
 
-- [PHASESoundEvent.StartHandlerReason.terminated](phasesoundevent/starthandlerreason/terminated.md)
+### Reasons
+- [PHASESoundEvent.StartHandlerReason.terminated](./terminated.md)
   Indicates the framework terminated the sound event abruptly.
-- [PHASESoundEvent.StartHandlerReason.failure](phasesoundevent/starthandlerreason/failure.md)
+- [PHASESoundEvent.StartHandlerReason.failure](./failure.md)
   Indicates an error occurred while starting the sound event.
 
 

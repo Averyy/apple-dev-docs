@@ -1,7 +1,8 @@
 # NSData.CompressionAlgorithm.zlib
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The zlib compression algorithm, recommended for cross-platform compression.
 
@@ -20,13 +21,18 @@ The zlib compression algorithm, recommended for cross-platform compression.
 case zlib
 ```
 
+```c
+NSDataCompressionAlgorithmZlib
+```
+
 ## See Also
 
-- [NSData.CompressionAlgorithm.lz4](nsdata/compressionalgorithm/lz4.md)
+### Algorithms
+- [NSData.CompressionAlgorithm.lz4](./lz4.md)
   The LZ4 compression algorithm, recommended for fast compression.
-- [NSData.CompressionAlgorithm.lzfse](nsdata/compressionalgorithm/lzfse.md)
+- [NSData.CompressionAlgorithm.lzfse](./lzfse.md)
   The LZFSE compression algorithm, recommended for use on Apple platforms.
-- [NSData.CompressionAlgorithm.lzma](nsdata/compressionalgorithm/lzma.md)
+- [NSData.CompressionAlgorithm.lzma](./lzma.md)
   The LZMA compression algorithm, recommended for high-compression ratio.
 
 

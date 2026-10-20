@@ -1,22 +1,24 @@
 # bcopy
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void bcopy(const void *src, void *dst, size_t n);
 ```
 
 ## See Also
 
-- [strlcpy](1579349-strlcpy.md)
-- [strncpy](1579331-strncpy.md)
-- [STRDUP](1579334-strdup.md)
+### Copy
+- [strlcpy](./api-1579349-strlcpy.md)
+- [strncpy](./api-1579331-strncpy.md)
+- [STRDUP](./api-1579334-strdup.md)
 
 
 ---

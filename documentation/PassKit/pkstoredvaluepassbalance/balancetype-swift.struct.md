@@ -1,17 +1,18 @@
 # PKStoredValuePassBalance.BalanceType
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of value that the balance represents, such as money or points.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,35 +20,40 @@ The type of value that the balance represents, such as money or points.
 struct BalanceType
 ```
 
+```c
+typedef NSString * PKStoredValuePassBalanceType;
+```
+
 ## Topics
 
 ### Creating a balance type
-- [init(rawValue: String)](pkstoredvaluepassbalance/balancetype-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./balancetype-swift.struct/init%28rawvalue%29.md)
   Creates a balance type.
 ### Reading the balance type
-- [static let cash: PKStoredValuePassBalance.BalanceType](pkstoredvaluepassbalance/balancetype-swift.struct/cash.md)
+- [static let cash: PKStoredValuePassBalance.BalanceType](./balancetype-swift.struct/cash.md)
   An identifier indicating a balance that represents money.
-- [static let loyaltyPoints: PKStoredValuePassBalance.BalanceType](pkstoredvaluepassbalance/balancetype-swift.struct/loyaltypoints.md)
+- [static let loyaltyPoints: PKStoredValuePassBalance.BalanceType](./balancetype-swift.struct/loyaltypoints.md)
   An identifier indicating a balance that represents points.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var expiryDate: Date?](pkstoredvaluepassbalance/expirydate.md)
+### Getting the pass status
+- [var expiryDate: Date?](./expirydate.md)
   The date that the balance expires.
-- [var amount: Decimal](pkstoredvaluepassbalance/amount-2nwf5.md)
+- [var amount: Decimal](./amount-2nwf5.md)
   The current balance of a stored-value pass in money or points.
-- [var balanceType: PKStoredValuePassBalance.BalanceType](pkstoredvaluepassbalance/balancetype-swift.property.md)
+- [var balanceType: PKStoredValuePassBalance.BalanceType](./balancetype-swift.property.md)
   The type of value that the balance represents, such as money or points.
-- [var currencyCode: String?](pkstoredvaluepassbalance/currencycode.md)
+- [var currencyCode: String?](./currencycode.md)
   The ISO 4217 currency code of the balance.
 
 

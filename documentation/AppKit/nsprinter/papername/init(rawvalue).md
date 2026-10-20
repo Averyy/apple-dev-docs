@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified raw value.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -16,7 +17,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](nsprinter/papername/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Creates a paper name.
 
 

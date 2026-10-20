@@ -1,7 +1,8 @@
 # UIImage.SymbolColorRenderingMode.gradient
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Renders the symbol’s color layers using gradients.
 
@@ -17,6 +18,10 @@ Renders the symbol’s color layers using gradients.
 
 ```swift
 case gradient
+```
+
+```c
+UIImageSymbolColorRenderingModeGradient
 ```
 
 

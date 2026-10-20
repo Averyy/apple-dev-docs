@@ -1,7 +1,8 @@
 # countPerMinute
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metric’s counts per minute.
 

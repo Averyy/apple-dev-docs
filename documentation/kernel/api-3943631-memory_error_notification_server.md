@@ -1,14 +1,15 @@
 # memory_error_notification_server_routine
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 mig_routine_t memory_error_notification_server_routine(mach_msg_header_t *InHeadP);
 ```
 

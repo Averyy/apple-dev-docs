@@ -1,7 +1,8 @@
 # systemSettings
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The System Settings item.
 
@@ -13,6 +14,10 @@ The System Settings item.
 
 ```swift
 static let systemSettings: AEAppleMenuItem
+```
+
+```c
+extern AEAppleMenuItem const AEAppleMenuItemSystemSettings;
 ```
 
 

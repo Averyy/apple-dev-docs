@@ -1,7 +1,8 @@
 # baseAddress
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the first element of the buffer.
 

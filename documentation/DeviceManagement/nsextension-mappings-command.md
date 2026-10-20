@@ -1,7 +1,8 @@
 # NSExtension Mappings
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of the installed extensions for a user on a device.
 
@@ -10,11 +11,11 @@ Get a list of the installed extensions for a user on a device.
 
 #### Discussion
 
-This list is a superset of the list that [`ActiveNSExtensionsCommand`](activensextensionscommand.md) returns. It may contain extensions that the system never enables due to various restrictions.
+This list is a superset of the list that [`ActiveNSExtensionsCommand`](./activensextensionscommand.md) returns. It may contain extensions that the system never enables due to various restrictions.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -24,7 +25,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | QueryInstalledApps |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -107,9 +108,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object NSExtensionMappingsCommand](nsextensionmappingscommand.md)
+- [object NSExtensionMappingsCommand](./nsextensionmappingscommand.md)
   The command to get a list of the installed extensions for a user on a device.
-- [object NSExtensionMappingsResponse](nsextensionmappingsresponse.md)
+- [object NSExtensionMappingsResponse](./nsextensionmappingsresponse.md)
   A response from the device after it processes the command to get a list of the installed extensions for a user on a device.
 
 ## Endpoint
@@ -118,11 +119,19 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `NSExtensionMappingsCommand`
+
 The request object the server returns for the NSExtension Mappings Command.
+
+## Responses
+
+- `200` OK (`NSExtensionMappingsResponse`, `application/xml`): The response object the system returns for the NSExtension Mappings Command.
 
 ## See Also
 
-- [Active NSExtensions](active-nsextensions-command.md)
+### Extensions
+- [Active NSExtensions](./active-nsextensions-command.md)
   Get a list of active extensions for a user on a device.
 
 

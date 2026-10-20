@@ -1,7 +1,8 @@
 # gzip
 
 **Framework**: App Store Connect API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A binary value that represents a gzip-compressed file.
 
@@ -10,7 +11,7 @@ A binary value that represents a gzip-compressed file.
 
 ## Declaration
 
-```swift
+```
 binary gzip
 ```
 

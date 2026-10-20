@@ -1,7 +1,8 @@
 # wasConnectedNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when a new capture device becomes available.
 
@@ -19,25 +20,30 @@ A notification the system posts when a new capture device becomes available.
 class let wasConnectedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVCaptureDeviceWasConnectedNotification;
+```
+
 #### Discussion
 
-The notification’s [`object`](https://developer.apple.com/documentation/foundation/notification/object) property contains the capture device that connected.
+The notification’s [`object`](../../Foundation/notification/object.md) property contains the capture device that connected.
 
 ## See Also
 
-- [AVCaptureDevice.DiscoverySession](avcapturedevice/discoverysession.md)
+### Finding and monitoring devices
+- [AVCaptureDevice.DiscoverySession](./discoverysession.md)
   An object that finds capture devices that match specific search criteria.
-- [class func `default`(AVCaptureDevice.DeviceType, for: AVMediaType?, position: AVCaptureDevice.Position) -> AVCaptureDevice?](avcapturedevice/default(_:for:position:).md)
+- [class func `default`(AVCaptureDevice.DeviceType, for: AVMediaType?, position: AVCaptureDevice.Position) -> AVCaptureDevice?](./default%28_,for,position%29.md)
   Returns the default device for the specified device type, media type, and position.
-- [class func `default`(for: AVMediaType) -> AVCaptureDevice?](avcapturedevice/default(for:).md)
+- [class func `default`(for: AVMediaType) -> AVCaptureDevice?](./default%28for%29.md)
   Returns the default device that captures the specified media type.
-- [init?(uniqueID: String)](avcapturedevice/init(uniqueid:).md)
+- [init?(uniqueID: String)](./init%28uniqueid%29.md)
   Creates an object that represents a device with the specified identifier.
-- [class let wasDisconnectedNotification: NSNotification.Name](avcapturedevice/wasdisconnectednotification.md)
+- [class let wasDisconnectedNotification: NSNotification.Name](./wasdisconnectednotification.md)
   A notification the system posts when an existing device becomes unavailable.
-- [class func devices(for: AVMediaType) -> [AVCaptureDevice]](avcapturedevice/devices(for:).md)
+- [class func devices(for: AVMediaType) -> [AVCaptureDevice]](./devices%28for%29.md)
   Returns devices capable of capturing media of the specified type.
-- [class func devices() -> [AVCaptureDevice]](avcapturedevice/devices.md)
+- [class func devices() -> [AVCaptureDevice]](./devices%28%29.md)
   Returns all available capture devices on the system.
 
 

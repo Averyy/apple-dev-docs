@@ -1,7 +1,8 @@
 # linearColor
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that interpolates between colors in a linear color space.
 
@@ -22,9 +23,10 @@ static var linearColor: GraphicsContext.GradientOptions { get }
 
 ## See Also
 
-- [static var mirror: GraphicsContext.GradientOptions](graphicscontext/gradientoptions/mirror.md)
+### Getting gradient options
+- [static var mirror: GraphicsContext.GradientOptions](./mirror.md)
   An option that repeats the gradient outside its nominal range, reflecting every other instance.
-- [static var `repeat`: GraphicsContext.GradientOptions](graphicscontext/gradientoptions/repeat.md)
+- [static var `repeat`: GraphicsContext.GradientOptions](./repeat.md)
   An option that repeats the gradient outside its nominal range.
 
 

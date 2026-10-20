@@ -1,9 +1,10 @@
 # field
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A structure containing 3-axis calibrated magnetic field data. See the description of the [`CMMagneticField`](cmmagneticfield.md) structure.
+A structure containing 3-axis calibrated magnetic field data. See the description of the [`CMMagneticField`](../cmmagneticfield.md) structure.
 
 **Availability**:
 - iOS 4.0+
@@ -19,10 +20,15 @@ A structure containing 3-axis calibrated magnetic field data. See the descriptio
 var field: CMMagneticField
 ```
 
+```c
+CMMagneticField field;
+```
+
 ## See Also
 
-- [var accuracy: CMMagneticFieldCalibrationAccuracy](cmcalibratedmagneticfield/accuracy.md)
-  An enum-constant value that indicates the accuracy of the magnetic field estimate. See [`CMMagneticFieldCalibrationAccuracy`](cmmagneticfieldcalibrationaccuracy.md).
+### Accessing the Field Values
+- [var accuracy: CMMagneticFieldCalibrationAccuracy](./accuracy.md)
+  An enum-constant value that indicates the accuracy of the magnetic field estimate. See [`CMMagneticFieldCalibrationAccuracy`](../cmmagneticfieldcalibrationaccuracy.md).
 
 
 ---

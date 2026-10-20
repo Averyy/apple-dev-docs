@@ -1,7 +1,8 @@
 # init(type:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a texture slot descriptor with the given texture type.
 

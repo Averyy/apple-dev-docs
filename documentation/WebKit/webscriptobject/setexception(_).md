@@ -1,17 +1,22 @@
 # setException(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Raises a scripting environment exception in the context of the current object.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 func setException(_ description: String!)
+```
+
+```objc
+- (void) setException:(NSString *) description;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ func setException(_ description: String!)
 
 ## See Also
 
-- [class func throwException(String!) -> Bool](webscriptobject/throwexception(_:).md)
+### Raising exceptions
+- [class func throwException(String!) -> Bool](./throwexception%28_%29.md)
   Raises an exception in the current script execution context.
 
 

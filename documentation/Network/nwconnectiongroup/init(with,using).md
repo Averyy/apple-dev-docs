@@ -1,7 +1,8 @@
 # init(with:using:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new connection group with a group identifier.
 
@@ -22,11 +23,12 @@ init(with: any NWGroupDescriptor, using: NWParameters)
 
 ## See Also
 
-- [class NWMulticastGroup](nwmulticastgroup.md)
+### Establishing Group Connectivity
+- [class NWMulticastGroup](../nwmulticastgroup.md)
   A descriptor for a group you use to join an IP multicast group on a local network.
-- [protocol NWGroupDescriptor](nwgroupdescriptor.md)
+- [protocol NWGroupDescriptor](../nwgroupdescriptor.md)
   A protocol that defines a group of endpoints with which you can communicate, such as a multicast group.
-- [func start(queue: DispatchQueue)](nwconnectiongroup/start(queue:).md)
+- [func start(queue: DispatchQueue)](./start%28queue%29.md)
   Joins the group, registers to receive messages, and sets the queue on you handle group events.
 
 

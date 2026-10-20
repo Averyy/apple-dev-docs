@@ -1,7 +1,8 @@
 # MTRDeviceControllerRegistrationDeviceInternalStateKey
 
 **Framework**: Matter  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.3+
@@ -16,6 +17,10 @@
 
 ```swift
 let MTRDeviceControllerRegistrationDeviceInternalStateKey: String
+```
+
+```c
+extern NSString * const MTRDeviceControllerRegistrationDeviceInternalStateKey;
 ```
 
 

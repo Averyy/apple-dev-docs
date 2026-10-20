@@ -1,7 +1,8 @@
 # Delete a review screenshot for an In-App Purchase
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Delete an image that you uploaded for review of an In-App Purchase.
 
@@ -14,15 +15,27 @@ Delete an image that you uploaded for review of an In-App Purchase.
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read In-App Purchase review screenshot information](get-v1-inapppurchaseappstorereviewscreenshots-_id_.md)
+### Endpoints
+- [Read In-App Purchase review screenshot information](./get-v1-inapppurchaseappstorereviewscreenshots-_id_.md)
   Get information about a specific review screenshot for an In-App Purchase.
-- [Create an In-App Purchase review screenshot](post-v1-inapppurchaseappstorereviewscreenshots.md)
+- [Create an In-App Purchase review screenshot](./post-v1-inapppurchaseappstorereviewscreenshots.md)
   Reserve a review screenshot for an In-App Purchase.
-- [Commit a review screenshot for an In-App Purchase](patch-v1-inapppurchaseappstorereviewscreenshots-_id_.md)
+- [Commit a review screenshot for an In-App Purchase](./patch-v1-inapppurchaseappstorereviewscreenshots-_id_.md)
   Commit an uploaded image asset as a review screenshot for an In-App Purchase.
 
 

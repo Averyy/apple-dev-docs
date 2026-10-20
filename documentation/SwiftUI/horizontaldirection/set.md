@@ -1,7 +1,8 @@
 # HorizontalDirection.Set
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An efficient set of horizontal directions.
 
@@ -24,29 +25,29 @@ struct Set
 ## Topics
 
 ### Initializers
-- [init(HorizontalDirection)](horizontaldirection/set/init(_:).md)
+- [init(HorizontalDirection)](./set/init%28_%29.md)
   Creates a set of directions containing only the specified direction.
 ### Type Properties
-- [static let all: HorizontalDirection.Set](horizontaldirection/set/all.md)
+- [static let all: HorizontalDirection.Set](./set/all.md)
   A set containing the leading and trailing horizontal directions.
-- [static let leading: HorizontalDirection.Set](horizontaldirection/set/leading.md)
+- [static let leading: HorizontalDirection.Set](./set/leading.md)
   A set containing only the leading horizontal direction.
-- [static let trailing: HorizontalDirection.Set](horizontaldirection/set/trailing.md)
+- [static let trailing: HorizontalDirection.Set](./set/trailing.md)
   A set containing only the trailing horizontal direction.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../Swift/hashable.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 
 ---

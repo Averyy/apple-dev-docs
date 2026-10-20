@@ -1,7 +1,8 @@
 # init(toolCalls:toolOutputs:instructionText:prompts:responses:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structured transcript.
 

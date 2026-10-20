@@ -1,7 +1,8 @@
 # travelEstimates
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Travel estimates for reaching this waypoint, including time and distance calculations.
 
@@ -14,6 +15,10 @@ Travel estimates for reaching this waypoint, including time and distance calcula
 
 ```swift
 var travelEstimates: CPTravelEstimates { get set }
+```
+
+```objc
+@property (nonatomic, strong) CPTravelEstimates * travelEstimates;
 ```
 
 

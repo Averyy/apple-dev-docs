@@ -1,7 +1,8 @@
 # ITLibExportFeature.none
 
 **Framework**: iTunes Library  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The iTunes library doesn’t support any export features.
 
@@ -13,6 +14,10 @@ The iTunes library doesn’t support any export features.
 
 ```swift
 case none
+```
+
+```c
+ITLibExportFeatureNone
 ```
 
 

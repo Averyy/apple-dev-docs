@@ -1,7 +1,8 @@
 # ctl_name
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The kernel control name to find.
 
@@ -10,13 +11,14 @@ The kernel control name to find.
 
 ## Declaration
 
-```swift
+```c
 char ctl_name[96];
 ```
 
 ## See Also
 
-- [ctl_id](ctl_info/1809204-ctl_id.md)
+### Fields
+- [ctl_id](./api-1809204-ctl_id.md)
   The kernel control id, filled out upon return.
 
 

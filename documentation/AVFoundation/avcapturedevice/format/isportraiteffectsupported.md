@@ -1,7 +1,8 @@
 # isPortraitEffectSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the format supports the Portrait Effect feature.
 
@@ -18,15 +19,20 @@ A Boolean value that indicates whether the format supports the Portrait Effect f
 var isPortraitEffectSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isPortraitEffectSupported) BOOL portraitEffectSupported;
+```
+
 #### Discussion
 
-Enabling a Portrait Effect applies a shallow depth-of-field effect to objects in the background. See the [`isPortraitEffectEnabled`](avcapturedevice/isportraiteffectenabled.md) property of [`AVCaptureDevice`](avcapturedevice.md) for more information.
+Enabling a Portrait Effect applies a shallow depth-of-field effect to objects in the background. See the [`isPortraitEffectEnabled`](../isportraiteffectenabled.md) property of [`AVCaptureDevice`](../../avcapturedevice.md) for more information.
 
 ## See Also
 
-- [var isPortraitEffectsMatteStillImageDeliverySupported: Bool](avcapturedevice/format/isportraiteffectsmattestillimagedeliverysupported.md)
+### Determining Portrait Effects support
+- [var isPortraitEffectsMatteStillImageDeliverySupported: Bool](./isportraiteffectsmattestillimagedeliverysupported.md)
   A Boolean indicating whether the device supports portrait matte effects in still-image capture.
-- [var videoFrameRateRangeForPortraitEffect: AVFrameRateRange?](avcapturedevice/format/videoframeraterangeforportraiteffect.md)
+- [var videoFrameRateRangeForPortraitEffect: AVFrameRateRange?](./videoframeraterangeforportraiteffect.md)
   The range of frame rates available when Portrait Effect is active.
 
 

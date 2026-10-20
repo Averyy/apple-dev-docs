@@ -1,7 +1,8 @@
 # startDeviceMotionUpdates(to:withHandler:)
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts device-motion updates with a handler.
 
@@ -18,6 +19,10 @@ Starts device-motion updates with a handler.
 func startDeviceMotionUpdates(to queue: OperationQueue, withHandler handler: @escaping CMHeadphoneMotionManager.DeviceMotionHandler)
 ```
 
+```objc
+- (void) startDeviceMotionUpdatesToQueue:(NSOperationQueue *) queue withHandler:(CMHeadphoneDeviceMotionHandler) handler;
+```
+
 ## Parameters
 
 - `queue`: The queue for handling updates.
@@ -25,12 +30,13 @@ func startDeviceMotionUpdates(to queue: OperationQueue, withHandler handler: @es
 
 ## See Also
 
-- [func startDeviceMotionUpdates()](cmheadphonemotionmanager/startdevicemotionupdates.md)
+### Starting and Stopping Updates
+- [func startDeviceMotionUpdates()](./startdevicemotionupdates%28%29.md)
   Starts device-motion updates.
-- [func startConnectionStatusUpdates()](cmheadphonemotionmanager/startconnectionstatusupdates.md)
-- [func stopDeviceMotionUpdates()](cmheadphonemotionmanager/stopdevicemotionupdates.md)
+- [func startConnectionStatusUpdates()](./startconnectionstatusupdates%28%29.md)
+- [func stopDeviceMotionUpdates()](./stopdevicemotionupdates%28%29.md)
   Stops device-motion updates.
-- [func stopConnectionStatusUpdates()](cmheadphonemotionmanager/stopconnectionstatusupdates.md)
+- [func stopConnectionStatusUpdates()](./stopconnectionstatusupdates%28%29.md)
 
 
 ---

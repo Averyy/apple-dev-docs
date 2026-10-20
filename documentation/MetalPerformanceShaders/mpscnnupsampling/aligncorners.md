@@ -1,7 +1,8 @@
 # alignCorners
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 var alignCorners: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL alignCorners;
+```
+
 ## See Also
 
-- [var scaleFactorX: Double](mpscnnupsampling/scalefactorx.md)
-- [var scaleFactorY: Double](mpscnnupsampling/scalefactory.md)
+### Instance Properties
+- [var scaleFactorX: Double](./scalefactorx.md)
+- [var scaleFactorY: Double](./scalefactory.md)
 
 
 ---

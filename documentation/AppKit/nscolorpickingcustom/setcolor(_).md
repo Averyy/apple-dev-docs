@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adjusts the receiver to make the specified color the currently selected color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -16,9 +17,13 @@ Adjusts the receiver to make the specified color the currently selected color.
 func setColor(_ newColor: NSColor)
 ```
 
+```objc
+- (void) setColor:(NSColor *) newColor;
+```
+
 #### Discussion
 
-This method is invoked on the current color picker each time `NSColorPanel`‘s [`color`](nscolorpanel/color.md) method is invoked. If `color` is actually different from the color picker’s color (as it would be if, for example, the user dragged a color into `NSColorPanel`‘s color well), this method could be used to update the color picker’s color to reflect the change.
+This method is invoked on the current color picker each time `NSColorPanel`‘s [`color`](../nscolorpanel/color.md) method is invoked. If `color` is actually different from the color picker’s color (as it would be if, for example, the user dragged a color into `NSColorPanel`‘s color well), this method could be used to update the color picker’s color to reflect the change.
 
 ## Parameters
 
@@ -26,7 +31,8 @@ This method is invoked on the current color picker each time `NSColorPanel`‘s 
 
 ## See Also
 
-- [var color: NSColor](nscolorpanel/color.md)
+### Related Documentation
+- [var color: NSColor](../nscolorpanel/color.md)
   The color of the receiver.
 
 

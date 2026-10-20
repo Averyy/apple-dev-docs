@@ -1,11 +1,14 @@
 # kODMatchInsensitiveEndsWith
 
 **Framework**: Open Directory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS 10.6+
+- Mac Catalyst
+- macOS 10.6+ - Deprecated in 10.10
+
+> **Deprecated**: case matching is defined by attribute schema
 
 ## Declaration
 
@@ -13,18 +16,23 @@
 var kODMatchInsensitiveEndsWith: Int { get }
 ```
 
+```c
+kODMatchInsensitiveEndsWith
+```
+
 ## See Also
 
-- [var kODMatchAny: Int](kodmatchany.md)
-- [var kODMatchBeginsWith: Int](kodmatchbeginswith.md)
-- [var kODMatchContains: Int](kodmatchcontains.md)
-- [var kODMatchEndsWith: Int](kodmatchendswith.md)
-- [var kODMatchEqualTo: Int](kodmatchequalto.md)
-- [var kODMatchGreaterThan: Int](kodmatchgreaterthan.md)
-- [var kODMatchInsensitiveBeginsWith: Int](kodmatchinsensitivebeginswith.md)
-- [var kODMatchInsensitiveContains: Int](kodmatchinsensitivecontains.md)
-- [var kODMatchInsensitiveEqualTo: Int](kodmatchinsensitiveequalto.md)
-- [var kODMatchLessThan: Int](kodmatchlessthan.md)
+### Constants
+- [var kODMatchAny: Int](./kodmatchany.md)
+- [var kODMatchBeginsWith: Int](./kodmatchbeginswith.md)
+- [var kODMatchContains: Int](./kodmatchcontains.md)
+- [var kODMatchEndsWith: Int](./kodmatchendswith.md)
+- [var kODMatchEqualTo: Int](./kodmatchequalto.md)
+- [var kODMatchGreaterThan: Int](./kodmatchgreaterthan.md)
+- [var kODMatchInsensitiveBeginsWith: Int](./kodmatchinsensitivebeginswith.md)
+- [var kODMatchInsensitiveContains: Int](./kodmatchinsensitivecontains.md)
+- [var kODMatchInsensitiveEqualTo: Int](./kodmatchinsensitiveequalto.md)
+- [var kODMatchLessThan: Int](./kodmatchlessthan.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(frame:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a search bar with a specified frame.
 
@@ -17,15 +18,20 @@ Creates a search bar with a specified frame.
 init(frame: CGRect)
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame;
+```
+
 ## Parameters
 
 - `frame`: A rectangle that specifies the initial location and size of the search bar in its superview’s coordinates.
 
 ## See Also
 
-- [convenience init()](uisearchbar/init.md)
+### Creating a search bar
+- [convenience init()](./init%28%29.md)
   Initializes the search bar to its default state.
-- [init?(coder: NSCoder)](uisearchbar/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a search bar from data in a given unarchiver.
 
 

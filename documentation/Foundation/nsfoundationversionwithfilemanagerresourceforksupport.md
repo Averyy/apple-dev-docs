@@ -1,7 +1,8 @@
 # NSFoundationVersionWithFileManagerResourceForkSupport
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The version of the Foundation framework in which `NSFileManager` first supported resource forks.
 
@@ -18,6 +19,10 @@ The version of the Foundation framework in which `NSFileManager` first supported
 
 ```swift
 var NSFoundationVersionWithFileManagerResourceForkSupport: Int32 { get }
+```
+
+```c
+#define NSFoundationVersionWithFileManagerResourceForkSupport
 ```
 
 

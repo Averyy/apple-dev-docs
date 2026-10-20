@@ -1,7 +1,8 @@
 # CMSampleBufferGetOutputDecodeTimeStamp(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the output decode timestamp of a sample buffer.
 
@@ -20,13 +21,17 @@ Returns the output decode timestamp of a sample buffer.
 func CMSampleBufferGetOutputDecodeTimeStamp(_ sbuf: CMSampleBuffer) -> CMTime
 ```
 
+```c
+extern CMTime CMSampleBufferGetOutputDecodeTimeStamp(CMSampleBufferRef sbuf);
+```
+
 #### Return Value
 
 The output decode timestamp of the `CMSampleBuffer` or `kCMTimeInvalid` if there is an error.
 
 #### Discussion
 
-For consistency with [`CMSampleBufferGetOutputPresentationTimeStamp(_:)`](cmsamplebuffergetoutputpresentationtimestamp(_:).md), this function calculates the returned value as:
+For consistency with [`CMSampleBufferGetOutputPresentationTimeStamp(_:)`](./cmsamplebuffergetoutputpresentationtimestamp%28_%29.md), this function calculates the returned value as:
 
 `OutputPresentationTimeStamp + ((DecodeTimeStamp - PresentationTimeStamp) / SpeedMultiplier)`
 
@@ -36,23 +41,24 @@ For consistency with [`CMSampleBufferGetOutputPresentationTimeStamp(_:)`](cmsamp
 
 ## See Also
 
-- [func CMSampleBufferGetDuration(CMSampleBuffer) -> CMTime](cmsamplebuffergetduration(_:).md)
+### Inspecting Duration and Timing
+- [func CMSampleBufferGetDuration(CMSampleBuffer) -> CMTime](./cmsamplebuffergetduration%28_%29.md)
   Returns the total duration of a sample buffer.
-- [func CMSampleBufferGetDecodeTimeStamp(CMSampleBuffer) -> CMTime](cmsamplebuffergetdecodetimestamp(_:).md)
+- [func CMSampleBufferGetDecodeTimeStamp(CMSampleBuffer) -> CMTime](./cmsamplebuffergetdecodetimestamp%28_%29.md)
   Returns the decode timestamp that’s the earliest numerically of all the samples in a sample buffer.
-- [func CMSampleBufferGetPresentationTimeStamp(CMSampleBuffer) -> CMTime](cmsamplebuffergetpresentationtimestamp(_:).md)
+- [func CMSampleBufferGetPresentationTimeStamp(CMSampleBuffer) -> CMTime](./cmsamplebuffergetpresentationtimestamp%28_%29.md)
   Returns the presentation timestamp that’s the earliest numerically of all the samples in a sample buffer.
-- [func CMSampleBufferGetOutputDuration(CMSampleBuffer) -> CMTime](cmsamplebuffergetoutputduration(_:).md)
+- [func CMSampleBufferGetOutputDuration(CMSampleBuffer) -> CMTime](./cmsamplebuffergetoutputduration%28_%29.md)
   Returns the output duration of a sample buffer.
-- [func CMSampleBufferGetOutputPresentationTimeStamp(CMSampleBuffer) -> CMTime](cmsamplebuffergetoutputpresentationtimestamp(_:).md)
+- [func CMSampleBufferGetOutputPresentationTimeStamp(CMSampleBuffer) -> CMTime](./cmsamplebuffergetoutputpresentationtimestamp%28_%29.md)
   Returns the output presentation timestamp of a sample buffer.
-- [func CMSampleBufferSetOutputPresentationTimeStamp(CMSampleBuffer, newValue: CMTime) -> OSStatus](cmsamplebuffersetoutputpresentationtimestamp(_:newvalue:).md)
+- [func CMSampleBufferSetOutputPresentationTimeStamp(CMSampleBuffer, newValue: CMTime) -> OSStatus](./cmsamplebuffersetoutputpresentationtimestamp%28_,newvalue%29.md)
   Sets an output presentation timestamp to use in place of a calculated value.
-- [func CMSampleBufferGetSampleTimingInfo(CMSampleBuffer, at: CMItemIndex, timingInfoOut: UnsafeMutablePointer<CMSampleTimingInfo>) -> OSStatus](cmsamplebuffergetsampletiminginfo(_:at:timinginfoout:).md)
+- [func CMSampleBufferGetSampleTimingInfo(CMSampleBuffer, at: CMItemIndex, timingInfoOut: UnsafeMutablePointer<CMSampleTimingInfo>) -> OSStatus](./cmsamplebuffergetsampletiminginfo%28_,at,timinginfoout%29.md)
   Retrieves a timing information structure that describes a specified sample in a sample buffer.
-- [func CMSampleBufferGetSampleTimingInfoArray(CMSampleBuffer, entryCount: CMItemCount, arrayToFill: UnsafeMutablePointer<CMSampleTimingInfo>?, entriesNeededOut: UnsafeMutablePointer<CMItemCount>?) -> OSStatus](cmsamplebuffergetsampletiminginfoarray(_:entrycount:arraytofill:entriesneededout:).md)
+- [func CMSampleBufferGetSampleTimingInfoArray(CMSampleBuffer, entryCount: CMItemCount, arrayToFill: UnsafeMutablePointer<CMSampleTimingInfo>?, entriesNeededOut: UnsafeMutablePointer<CMItemCount>?) -> OSStatus](./cmsamplebuffergetsampletiminginfoarray%28_,entrycount,arraytofill,entriesneededout%29.md)
   Retrieves an array of sample timing information structures that represents each sample in a sample buffer.
-- [func CMSampleBufferGetOutputSampleTimingInfoArray(CMSampleBuffer, entryCount: CMItemCount, arrayToFill: UnsafeMutablePointer<CMSampleTimingInfo>?, entriesNeededOut: UnsafeMutablePointer<CMItemCount>?) -> OSStatus](cmsamplebuffergetoutputsampletiminginfoarray(_:entrycount:arraytofill:entriesneededout:).md)
+- [func CMSampleBufferGetOutputSampleTimingInfoArray(CMSampleBuffer, entryCount: CMItemCount, arrayToFill: UnsafeMutablePointer<CMSampleTimingInfo>?, entriesNeededOut: UnsafeMutablePointer<CMItemCount>?) -> OSStatus](./cmsamplebuffergetoutputsampletiminginfoarray%28_,entrycount,arraytofill,entriesneededout%29.md)
   Retrieves an array of output timing information structures that represents each sample in a sample buffer.
 
 

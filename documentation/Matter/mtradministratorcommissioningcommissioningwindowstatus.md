@@ -1,7 +1,8 @@
 # MTRAdministratorCommissioningCommissioningWindowStatus
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,24 +19,28 @@
 enum MTRAdministratorCommissioningCommissioningWindowStatus
 ```
 
+```c
+enum MTRAdministratorCommissioningCommissioningWindowStatus : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRAdministratorCommissioningCommissioningWindowStatus.basicWindowOpen](mtradministratorcommissioningcommissioningwindowstatus/basicwindowopen.md)
-- [MTRAdministratorCommissioningCommissioningWindowStatus.enhancedWindowOpen](mtradministratorcommissioningcommissioningwindowstatus/enhancedwindowopen.md)
-- [MTRAdministratorCommissioningCommissioningWindowStatus.windowNotOpen](mtradministratorcommissioningcommissioningwindowstatus/windownotopen.md)
+- [MTRAdministratorCommissioningCommissioningWindowStatus.basicWindowOpen](./mtradministratorcommissioningcommissioningwindowstatus/basicwindowopen.md)
+- [MTRAdministratorCommissioningCommissioningWindowStatus.enhancedWindowOpen](./mtradministratorcommissioningcommissioningwindowstatus/enhancedwindowopen.md)
+- [MTRAdministratorCommissioningCommissioningWindowStatus.windowNotOpen](./mtradministratorcommissioningcommissioningwindowstatus/windownotopen.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtradministratorcommissioningcommissioningwindowstatus/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtradministratorcommissioningcommissioningwindowstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Traits and the trait environment
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 Get information about traits and the environment in which your app runs, and share data with your view hierarchy.
 
@@ -12,12 +13,12 @@ The trait system propagates values from the top of the hierarchy downward. When 
 
 Use custom traits to propagate data that needs to flow through these parts of your view hierarchy:
 
-- Window scene ([`UIWindowScene`](uiwindowscene.md))
-- Window ([`UIWindow`](uiwindow.md))
-- Presentation controller ([`UIPresentationController`](uipresentationcontroller.md))
-- View controller ([`UIViewController`](uiviewcontroller.md))
-- View ([`UIView`](uiview.md))
-- Subview ([`UIView`](uiview.md))
+- Window scene ([`UIWindowScene`](./uiwindowscene.md))
+- Window ([`UIWindow`](./uiwindow.md))
+- Presentation controller ([`UIPresentationController`](./uipresentationcontroller.md))
+- View controller ([`UIViewController`](./uiviewcontroller.md))
+- View ([`UIView`](./uiview.md))
+- Subview ([`UIView`](./uiview.md))
 
 Custom traits are particularly useful for:
 
@@ -31,40 +32,41 @@ Avoid using custom traits in cases where you can directly set properties on a vi
 ## Topics
 
 ### Essentials
-- [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
+- [Adapting your app when traits change](./adapting-your-app-when-traits-change.md)
   Find out when system changes happen that affect your app, then update your app efficiently.
 ### Observing and managing traits
-- [Automatic trait tracking](automatic-trait-tracking.md)
+- [Automatic trait tracking](./automatic-trait-tracking.md)
   Reduce the need to manually register for trait changes when you use traits within a method or closure that supports automatic trait tracking.
-- [class UITraitCollection](uitraitcollection.md)
+- [class UITraitCollection](./uitraitcollection.md)
   A collection of data that represents the environment for an individual element in your app’s user interface.
-- [protocol UITraitEnvironment](uitraitenvironment.md)
+- [protocol UITraitEnvironment](./uitraitenvironment.md)
   A set of methods that makes the iOS interface environment available to your app.
-- [protocol UITraitChangeObservable](uitraitchangeobservable-67e94.md)
+- [protocol UITraitChangeObservable](./uitraitchangeobservable-67e94.md)
   A type that calls your code in reaction to changes in the trait environment.
-- [protocol UIMutableTraits](uimutabletraits-13ja5.md)
+- [protocol UIMutableTraits](./uimutabletraits-13ja5.md)
   A mutable container of traits.
-- [protocol UIAdaptivePresentationControllerDelegate](uiadaptivepresentationcontrollerdelegate.md)
+- [protocol UIAdaptivePresentationControllerDelegate](./uiadaptivepresentationcontrollerdelegate.md)
   A set of methods that, in conjunction with a presentation controller, determine how to respond to trait changes in your app.
-- [protocol UIContentContainer](uicontentcontainer.md)
+- [protocol UIContentContainer](./uicontentcontainer.md)
   A set of methods for adapting the contents of your view controllers to size and trait changes.
 ### Custom traits
-- [Providing data to the view hierarchy with custom traits](providing-data-to-the-view-hierarchy-with-custom-traits.md)
+- [Providing data to the view hierarchy with custom traits](./providing-data-to-the-view-hierarchy-with-custom-traits.md)
   Share data that needs to flow hierarchically across multiple levels of your view hierarchy.
-- [protocol UIMutableTraits](uimutabletraits-13ja5.md)
+- [protocol UIMutableTraits](./uimutabletraits-13ja5.md)
   A mutable container of traits.
-- [typealias UITrait](uitrait-9423.md)
+- [typealias UITrait](./uitrait-9423.md)
   A type representing a trait in a trait collection.
-- [protocol UITraitDefinition](uitraitdefinition-64c15.md)
+- [protocol UITraitDefinition](./uitraitdefinition-64c15.md)
   A type representing a trait in a trait collection.
-- [protocol UITraitBridgedEnvironmentKey](uitraitbridgedenvironmentkey.md)
+- [protocol UITraitBridgedEnvironmentKey](./uitraitbridgedenvironmentkey.md)
 ### System traits
-- [struct UITraitNavigationTitleAlignment](uitraitnavigationtitlealignment-swift.struct.md)
-- [struct UITraitSystemPrefersReducedResourceUsage](uitraitsystemprefersreducedresourceusage-swift.struct.md)
+- [struct UITraitNavigationTitleAlignment](./uitraitnavigationtitlealignment-swift.struct.md)
+- [struct UITraitSystemPrefersReducedResourceUsage](./uitraitsystemprefersreducedresourceusage-swift.struct.md)
 
 ## See Also
 
-- [Responding to changing display modes on Apple TV](responding-to-changing-display-modes-on-apple-tv.md)
+### Adaptivity and traits
+- [Responding to changing display modes on Apple TV](./responding-to-changing-display-modes-on-apple-tv.md)
   Change images and resources dynamically when the screen gamut on your device changes.
 
 

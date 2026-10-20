@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the PPK.
 
@@ -19,11 +20,16 @@ The identifier for the PPK.
 var identifier: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [var keychainReference: Data](nevpnikev2ppkconfiguration/keychainreference.md)
+### Accessing the configuration parameters
+- [var keychainReference: Data](./keychainreference.md)
   A persistent reference to the key in the keychain.
-- [var isMandatory: Bool](nevpnikev2ppkconfiguration/ismandatory.md)
+- [var isMandatory: Bool](./ismandatory.md)
   A Boolean value that indicates whether it’s mandatory for the VPN server to use this PPK.
 
 

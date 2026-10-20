@@ -1,7 +1,8 @@
 # setTextures(_:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes references to an array of textures into the argument buffer.
 
@@ -11,7 +12,7 @@ Encodes references to an array of textures into the argument buffer.
 - Mac Catalyst 11.0+
 - macOS 10.13+
 - tvOS 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ func setTextures(_ textures: [(any MTLTexture)?], range: Range<Int>)
 ## Parameters
 
 - `textures`: An array of textures the method encodes.
-- `range`: A range of indices within the argument buffer for each element in `textures`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instances.
+- `range`: A range of indices within the argument buffer for each element in `textures`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instances.
 
 ## See Also
 
-- [func setTexture((any MTLTexture)?, index: Int)](mtlargumentencoder/settexture(_:index:).md)
+### Encoding textures
+- [func setTexture((any MTLTexture)?, index: Int)](./settexture%28_,index%29.md)
   Encodes a reference to a texture into the argument buffer.
 
 

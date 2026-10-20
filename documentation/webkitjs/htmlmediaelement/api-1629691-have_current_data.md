@@ -11,7 +11,7 @@ Data for the current playback position is available, but not enough to begin pla
 
 ## Declaration
 
-```swift
+```
 const unsigned short HAVE_CURRENT_DATA;
 ```
 

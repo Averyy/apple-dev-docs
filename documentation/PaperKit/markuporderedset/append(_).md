@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a new member to the end of the set, if the set doesn’t already contain it.
 
@@ -29,11 +30,12 @@ A pair (`inserted`, `index`), where inserted is a Boolean value indicating wheth
 
 ## See Also
 
-- [func append(contentsOf: some Sequence<any Markup>)](markuporderedset/append(contentsof:).md)
+### Adding elements
+- [func append(contentsOf: some Sequence<any Markup>)](./append%28contentsof%29.md)
   Appends the contents of a sequence to the end of the set, excluding elements that are already members.
-- [func insert(MarkupOrderedSet.Element, at: Int) -> (inserted: Bool, index: Int)](markuporderedset/insert(_:at:).md)
+- [func insert(MarkupOrderedSet.Element, at: Int) -> (inserted: Bool, index: Int)](./insert%28_,at%29.md)
   Inserts a new member at the specified index, if the set doesn’t already contain it.
-- [func updateOrAppend(MarkupOrderedSet.Element) -> MarkupOrderedSet.Element?](markuporderedset/updateorappend(_:).md)
+- [func updateOrAppend(MarkupOrderedSet.Element) -> MarkupOrderedSet.Element?](./updateorappend%28_%29.md)
   Adds the given element to the set unconditionally, either appending it to the set, or replacing an existing value if one with the same id is present.
 
 

@@ -1,7 +1,8 @@
 # Product.Library.LibraryType.dynamic
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A dynamically linked library.
 
@@ -13,7 +14,8 @@ case dynamic
 
 ## See Also
 
-- [Product.Library.LibraryType.static](product/library/librarytype/static.md)
+### Enumeration Cases
+- [Product.Library.LibraryType.static](./static.md)
   A statically linked library.
 
 

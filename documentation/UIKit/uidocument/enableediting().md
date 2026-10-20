@@ -1,7 +1,8 @@
 # enableEditing()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables editing when it’s safe again to make changes to a document.
 
@@ -17,13 +18,18 @@ Enables editing when it’s safe again to make changes to a document.
 func enableEditing()
 ```
 
+```objc
+- (void) enableEditing;
+```
+
 #### Discussion
 
-Subclasses should override this method to allow the user to edit the document when it’s safe to do so. This method override should be paired with an override of [`disableEditing()`](uidocument/disableediting().md). The default implementation of this method does nothing.
+Subclasses should override this method to allow the user to edit the document when it’s safe to do so. This method override should be paired with an override of [`disableEditing()`](./disableediting%28%29.md). The default implementation of this method does nothing.
 
 ## See Also
 
-- [func disableEditing()](uidocument/disableediting.md)
+### Disabling and enabling editing
+- [func disableEditing()](./disableediting%28%29.md)
   Disables editing when it’s unsafe to make changes to a document.
 
 

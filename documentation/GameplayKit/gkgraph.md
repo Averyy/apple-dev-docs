@@ -1,7 +1,8 @@
 # GKGraph
 
 **Framework**: GameplayKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of nodes that describes the navigability of a game world and provides *pathfinding* methods to search for routes through that space.
 
@@ -19,82 +20,87 @@ A collection of nodes that describes the navigability of a game world and provid
 class GKGraph
 ```
 
+```objc
+@interface GKGraph : NSObject
+```
+
 #### Overview
 
-Individual nodes in a graph represent discrete locations that a character or other object in your game can occupy, and the connections between adjacent nodes represent the ability of a game entity to travel from one location to another. Use the [`GKGraph`](gkgraph.md) class to create a general graph, or the [`GKGridGraph`](gkgridgraph.md), [`GKObstacleGraph`](gkobstaclegraph.md), or [`GKMeshGraph`](gkmeshgraph.md) subclass to generate specialized graphs that contain more information about the geometry of your game world.
+Individual nodes in a graph represent discrete locations that a character or other object in your game can occupy, and the connections between adjacent nodes represent the ability of a game entity to travel from one location to another. Use the [`GKGraph`](./gkgraph.md) class to create a general graph, or the [`GKGridGraph`](./gkgridgraph.md), [`GKObstacleGraph`](./gkobstaclegraph.md), or [`GKMeshGraph`](./gkmeshgraph.md) subclass to generate specialized graphs that contain more information about the geometry of your game world.
 
 Each set of graph and node classes can generate graphs for different kinds of spaces:
 
-- The base classes [`GKGraph`](gkgraph.md) and [`GKGraphNode`](gkgraphnode.md) contain functionality general to all graphs and nodes. You can also use these classes on their own to construct graphs that contain no geometry information. This option is useful for games where the connections between spaces are more important than their physical locations, such as board games.
-- Use the [`GKGridGraph`](gkgridgraph.md) and [`GKGridGraphNode`](gkgridgraphnode.md) classes to describe game worlds that constrain movement to an integer grid, such as tactical role-playing games.
-- Use the [`GKObstacleGraph`](gkobstaclegraph.md) or [`GKMeshGraph`](gkmeshgraph.md) class to describe 2D game worlds that allow continuous movement in open spaces that are interrupted by impassable obstacles ([`GKPolygonObstacle`](gkpolygonobstacle.md) objects). Obstacle graphs automatically generate nodes containing 2D point information ([`GKGraphNode2D`](gkgraphnode2d.md) objects), and you can also add your own such nodes representing locations of interest.
+- The base classes [`GKGraph`](./gkgraph.md) and [`GKGraphNode`](./gkgraphnode.md) contain functionality general to all graphs and nodes. You can also use these classes on their own to construct graphs that contain no geometry information. This option is useful for games where the connections between spaces are more important than their physical locations, such as board games.
+- Use the [`GKGridGraph`](./gkgridgraph.md) and [`GKGridGraphNode`](./gkgridgraphnode.md) classes to describe game worlds that constrain movement to an integer grid, such as tactical role-playing games.
+- Use the [`GKObstacleGraph`](./gkobstaclegraph.md) or [`GKMeshGraph`](./gkmeshgraph.md) class to describe 2D game worlds that allow continuous movement in open spaces that are interrupted by impassable obstacles ([`GKPolygonObstacle`](./gkpolygonobstacle.md) objects). Obstacle graphs automatically generate nodes containing 2D point information ([`GKGraphNode2D`](./gkgraphnode2d.md) objects), and you can also add your own such nodes representing locations of interest.
 
-The graphs modeled by this class are always *directed*—that is, a connection between two nodes describes one direction of travel between them. To enable travel between two nodes in either direction, you must create a connection in each direction. You can choose to connect both directions at once with the [`connectToLowestCostNode(node:bidirectional:)`](gkgraph/connecttolowestcostnode(node:bidirectional:).md) method (for graphs) or the addConnection:bidirectional: method (for nodes).
+The graphs modeled by this class are always *directed*—that is, a connection between two nodes describes one direction of travel between them. To enable travel between two nodes in either direction, you must create a connection in each direction. You can choose to connect both directions at once with the [`connectToLowestCostNode(node:bidirectional:)`](./gkgraph/connecttolowestcostnode%28node,bidirectional%29.md) method (for graphs) or the addConnection:bidirectional: method (for nodes).
 
 Using a graph for pathfinding typically involves three major steps:
 
 1. Create a graph once (for example, when initializing a game level class) with static information about your game world.
-2. When you need to find a route between points, connect temporary nodes to the graph at those points. Use the [`connectToLowestCostNode(node:bidirectional:)`](gkgraph/connecttolowestcostnode(node:bidirectional:).md) method to connect nodes using their own geometry information, or the [`connectUsingObstacles(node:)`](gkobstaclegraph/connectusingobstacles(node:).md) or [`connectToAdjacentNodes(node:)`](gkgridgraph/connecttoadjacentnodes(node:).md) method to use the additional constraints of obstacle and grid graphs.
-3. Call the [`findPath(from:to:)`](gkgraph/findpath(from:to:).md) method to find a route between locations in the graph. This method returns an array of graph nodes, starting with the requested start point of the path, and proceeding to adjacent nodes in order until it reaches the requested end point. Use the geometry information contained in each node to make use of the route—for example, in a SpriteKit game you might create a sequence of move actions to move a character from point to point along the path.
+2. When you need to find a route between points, connect temporary nodes to the graph at those points. Use the [`connectToLowestCostNode(node:bidirectional:)`](./gkgraph/connecttolowestcostnode%28node,bidirectional%29.md) method to connect nodes using their own geometry information, or the [`connectUsingObstacles(node:)`](./gkobstaclegraph/connectusingobstacles%28node%29.md) or [`connectToAdjacentNodes(node:)`](./gkgridgraph/connecttoadjacentnodes%28node%29.md) method to use the additional constraints of obstacle and grid graphs.
+3. Call the [`findPath(from:to:)`](./gkgraph/findpath%28from,to%29.md) method to find a route between locations in the graph. This method returns an array of graph nodes, starting with the requested start point of the path, and proceeding to adjacent nodes in order until it reaches the requested end point. Use the geometry information contained in each node to make use of the route—for example, in a SpriteKit game you might create a sequence of move actions to move a character from point to point along the path.
 4. The temporary nodes you created for finding a path typically have little usefulness after a path has been found. Remove those nodes before reusing the graph for future searches.
 
-To learn more about graphs and pathfinding, see [`Pathfinding`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Pathfinding.html#//apple_ref/doc/uid/TP40015172-CH3) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+To learn more about graphs and pathfinding, see [Pathfinding](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Pathfinding.html#//apple_ref/doc/uid/TP40015172-CH3) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Topics
 
 ### Creating a Graph
-- [init([GKGraphNode])](gkgraph/init(_:).md)
+- [init([GKGraphNode])](./gkgraph/init%28_%29.md)
   Initializes a graph with the specified list of nodes.
 ### Working with Nodes in a Graph
-- [func add([GKGraphNode])](gkgraph/add(_:).md)
+- [func add([GKGraphNode])](./gkgraph/add%28_%29.md)
   Adds the specified nodes to the graph.
-- [func connectToLowestCostNode(node: GKGraphNode, bidirectional: Bool)](gkgraph/connecttolowestcostnode(node:bidirectional:).md)
+- [func connectToLowestCostNode(node: GKGraphNode, bidirectional: Bool)](./gkgraph/connecttolowestcostnode%28node,bidirectional%29.md)
   Adds a node to the graph, connecting it to the node already in the graph for which the connection has the lowest cost.
-- [func remove([GKGraphNode])](gkgraph/remove(_:).md)
+- [func remove([GKGraphNode])](./gkgraph/remove%28_%29.md)
   Removes the specified nodes from the graph.
-- [var nodes: [GKGraphNode]?](gkgraph/nodes.md)
+- [var nodes: [GKGraphNode]?](./gkgraph/nodes.md)
   The list of nodes in the graph.
 ### Pathfinding with a Graph
-- [func findPath(from: GKGraphNode, to: GKGraphNode) -> [GKGraphNode]](gkgraph/findpath(from:to:).md)
+- [func findPath(from: GKGraphNode, to: GKGraphNode) -> [GKGraphNode]](./gkgraph/findpath%28from,to%29.md)
   Computes and returns a sequence of nodes that represents the shortest traversal of the graph between the specified nodes.
 ### Initializers
-- [init?(coder: NSCoder)](gkgraph/init(coder:).md)
-- [init(nodes: [GKGraphNode])](gkgraph/init(nodes:).md)
+- [init?(coder: NSCoder)](./gkgraph/init%28coder%29.md)
+- [init(nodes: [GKGraphNode])](./gkgraph/init%28nodes%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [GKGridGraph](gkgridgraph.md)
-- [GKMeshGraph](gkmeshgraph.md)
-- [GKObstacleGraph](gkobstaclegraph.md)
+- [GKGridGraph](./gkgridgraph.md)
+- [GKMeshGraph](./gkmeshgraph.md)
+- [GKObstacleGraph](./gkobstaclegraph.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class GKObstacleGraph](gkobstaclegraph.md)
+### Pathfinding
+- [class GKObstacleGraph](./gkobstaclegraph.md)
   A navigation graph for 2D game worlds that creates a minimal network for precise pathfinding around obstacles.
-- [class GKMeshGraph](gkmeshgraph.md)
+- [class GKMeshGraph](./gkmeshgraph.md)
   A navigation graph for 2D game worlds that creates a space-filling network for smooth pathfinding around obstacles.
-- [class GKGridGraph](gkgridgraph.md)
+- [class GKGridGraph](./gkgridgraph.md)
   A navigation graph for 2D game worlds where movement is constrained to an integer grid.
-- [class GKGraphNode](gkgraphnode.md)
+- [class GKGraphNode](./gkgraphnode.md)
   A single node in a navigation graph for use in pathfinding.
-- [class GKGraphNode2D](gkgraphnode2d.md)
+- [class GKGraphNode2D](./gkgraphnode2d.md)
   A node in a navigation graph, associated with a point in continuous 2D space.
-- [class GKGraphNode3D](gkgraphnode3d.md)
+- [class GKGraphNode3D](./gkgraphnode3d.md)
   A node in a navigation graph, associated with a point in continuous 3D space.
-- [class GKGridGraphNode](gkgridgraphnode.md)
+- [class GKGridGraphNode](./gkgridgraphnode.md)
   A node in a navigation graph, associated with a position on a discrete two-dimensional grid.
 
 

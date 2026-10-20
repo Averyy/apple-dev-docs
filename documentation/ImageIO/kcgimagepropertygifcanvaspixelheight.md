@@ -1,7 +1,8 @@
 # kCGImagePropertyGIFCanvasPixelHeight
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The height of the main image, in pixels.
 
@@ -20,13 +21,18 @@ The height of the main image, in pixels.
 let kCGImagePropertyGIFCanvasPixelHeight: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyGIFCanvasPixelHeight;
+```
+
 ## See Also
 
-- [let kCGImagePropertyGIFCanvasPixelWidth: CFString](kcgimagepropertygifcanvaspixelwidth.md)
+### Image Properties
+- [let kCGImagePropertyGIFCanvasPixelWidth: CFString](./kcgimagepropertygifcanvaspixelwidth.md)
   The width of the main image, in pixels.
-- [let kCGImagePropertyGIFHasGlobalColorMap: CFString](kcgimagepropertygifhasglobalcolormap.md)
+- [let kCGImagePropertyGIFHasGlobalColorMap: CFString](./kcgimagepropertygifhasglobalcolormap.md)
   A Boolean value that indicates whether the GIF has a global color map.
-- [let kCGImagePropertyGIFImageColorMap: CFString](kcgimagepropertygifimagecolormap.md)
+- [let kCGImagePropertyGIFImageColorMap: CFString](./kcgimagepropertygifimagecolormap.md)
   The image color map.
 
 

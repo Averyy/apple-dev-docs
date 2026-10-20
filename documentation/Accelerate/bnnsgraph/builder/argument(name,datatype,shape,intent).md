@@ -1,7 +1,8 @@
 # argument(name:dataType:shape:intent:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers and returns an input or in-out tensor argument to the graph.
 
@@ -24,7 +25,7 @@ func argument<T>(name: String? = nil, dataType: T.Type, shape: [Int], intent: BN
 
 The following code shows how to specify inputs with flexible shapes. The code calls `setBatchSize` before executing the context to specify that the two inputs and the output tensors are 8-element vectors:
 
-```None
+```
        let context = try? BNNSGraph.makeContext ({
            builder in
 

@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content of the dynamic profile.
@@ -23,13 +24,14 @@ The content of the dynamic profile.
 
 ## See Also
 
-- [associatedtype Body : LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/body-swift.associatedtype.md)
+### Implementing a dynamic profile
+- [associatedtype Body : LanguageModelSession.DynamicProfile](./body-swift.associatedtype.md)
   The type of dynamic profile that represent this profile.
-- [LanguageModelSession.DynamicProfile.DynamicProfile](languagemodelsession/dynamicprofile/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfile.DynamicProfile](./dynamicprofile.md)
   The dynamic profile type that a dynamic profile’s body composes.
-- [LanguageModelSession.DynamicProfile.Profile](languagemodelsession/dynamicprofile/profile.md)
+- [LanguageModelSession.DynamicProfile.Profile](./profile.md)
   The profile type that a dynamic profile activates.
-- [LanguageModelSession.DynamicProfile.SessionProperty](languagemodelsession/dynamicprofile/sessionproperty.md)
+- [LanguageModelSession.DynamicProfile.SessionProperty](./sessionproperty.md)
   A property wrapper that provides access to a session property from within a dynamic profile.
 
 

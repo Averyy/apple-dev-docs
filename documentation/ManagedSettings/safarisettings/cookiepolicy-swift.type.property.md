@@ -1,7 +1,8 @@
 # cookiePolicy
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata for the setting that configures Safari’s policy for cookies.
 
@@ -18,13 +19,14 @@ static let cookiePolicy: SettingMetadata<SafariSettings.CookiePolicy>
 
 #### Discussion
 
-Use `cookiePolicy` to access the metadata for [`cookiePolicy`](safarisettings/cookiepolicy-swift.property.md). The default value is [`SafariSettings.CookiePolicy.always`](safarisettings/cookiepolicy-swift.enum/always.md).
+Use `cookiePolicy` to access the metadata for [`cookiePolicy`](./cookiepolicy-swift.property.md). The default value is [`SafariSettings.CookiePolicy.always`](./cookiepolicy-swift.enum/always.md).
 
 ## See Also
 
-- [var cookiePolicy: SafariSettings.CookiePolicy?](safarisettings/cookiepolicy-swift.property.md)
+### Specifying a cookie policy
+- [var cookiePolicy: SafariSettings.CookiePolicy?](./cookiepolicy-swift.property.md)
   Defines the conditions under which Safari accepts cookies.
-- [SafariSettings.CookiePolicy](safarisettings/cookiepolicy-swift.enum.md)
+- [SafariSettings.CookiePolicy](./cookiepolicy-swift.enum.md)
   The conditions under which Safari accepts cookies.
 
 

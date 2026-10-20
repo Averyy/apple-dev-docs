@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new random nonce.
 
@@ -26,7 +27,8 @@ The default nonce is a 12-byte random nonce.
 
 ## See Also
 
-- [init<D>(data: D) throws](chachapoly/nonce/init(data:).md)
+### Creating a nonce
+- [init<D>(data: D) throws](./init%28data%29.md)
   Creates a nonce from the given data.
 
 

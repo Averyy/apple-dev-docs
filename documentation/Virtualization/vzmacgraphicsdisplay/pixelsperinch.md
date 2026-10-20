@@ -1,7 +1,8 @@
 # pixelsPerInch
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the pixel density of the display in pixels per inch.
 
@@ -12,6 +13,10 @@ Returns the pixel density of the display in pixels per inch.
 
 ```swift
 var pixelsPerInch: Int { get }
+```
+
+```objc
+@property (readonly) NSInteger pixelsPerInch;
 ```
 
 

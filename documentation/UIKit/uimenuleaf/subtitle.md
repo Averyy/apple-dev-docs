@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The element’s subtitle.
@@ -17,6 +18,10 @@ The element’s subtitle.
 
 ```swift
 var subtitle: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
 

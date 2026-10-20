@@ -1,7 +1,8 @@
 # paperkit
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The UTType for storing paper data.
 

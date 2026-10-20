@@ -1,15 +1,20 @@
 # tokenBucketSize
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var tokenBucketSize: UInt32
+```
+
+```c
+uint32_t tokenBucketSize;
 ```
 
 

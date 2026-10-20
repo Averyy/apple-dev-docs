@@ -1,7 +1,8 @@
 # cursorHeight
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The actual size of the cursor is returned.
 
@@ -10,7 +11,7 @@ The actual size of the cursor is returned.
 
 ## Declaration
 
-```swift
+```c
 UInt32 cursorHeight;
 ```
 

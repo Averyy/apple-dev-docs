@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The backing storage for force effect inputs.
 

@@ -1,7 +1,8 @@
 # AxisGridLine
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A line that a chart draws across its plot area to indicate a reference point along a particular axis.
 
@@ -22,32 +23,33 @@ struct AxisGridLine
 
 ## Mentions
 
-- [Customizing axes in Swift Charts](customizing-axes-in-swift-charts.md)
+- [Customizing axes in Swift Charts](./customizing-axes-in-swift-charts.md)
 
 ## Topics
 
 ### Initializers
-- [init(centered: Bool?, stroke: StrokeStyle?)](axisgridline/init(centered:stroke:).md)
+- [init(centered: Bool?, stroke: StrokeStyle?)](./axisgridline/init%28centered,stroke%29.md)
   Creates an axis grid line with the given properties.
 
 ## Relationships
 
 ### Conforms To
-- [AxisMark](axismark.md)
+- [AxisMark](./axismark.md)
 
 ## See Also
 
-- [protocol AxisMark](axismark.md)
+### Axis marks
+- [protocol AxisMark](./axismark.md)
   A type that serves as the basic building block for the elements of an axis.
-- [struct AxisTick](axistick.md)
+- [struct AxisTick](./axistick.md)
   A mark that a chart draws on an axis to indicate a reference point along that axis.
-- [struct AxisValueLabel](axisvaluelabel.md)
+- [struct AxisValueLabel](./axisvaluelabel.md)
   A label that describes the value for an axis mark.
-- [struct AxisValue](axisvalue.md)
+- [struct AxisValue](./axisvalue.md)
   A value for an axis mark.
-- [struct AnyAxisMark](anyaxismark.md)
+- [struct AnyAxisMark](./anyaxismark.md)
   A type-erased axis mark.
-- [struct AxisMarkBuilder](axismarkbuilder.md)
+- [struct AxisMarkBuilder](./axismarkbuilder.md)
   A result builder that constructs axis marks and overrides default marks.
 
 

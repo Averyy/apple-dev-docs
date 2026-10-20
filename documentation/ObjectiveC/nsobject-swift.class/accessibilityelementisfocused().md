@@ -1,7 +1,8 @@
 # accessibilityElementIsFocused()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether an assistive technology is focused on the accessibility element.
 
@@ -9,7 +10,7 @@ Returns a Boolean value indicating whether an assistive technology is focused on
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ Returns a Boolean value indicating whether an assistive technology is focused on
 func accessibilityElementIsFocused() -> Bool
 ```
 
+```objc
+- (BOOL) accessibilityElementIsFocused;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if an assistive technology is virtually focused on the element; otherwise, [`NO`](no.md).
+[`YES`](../yes.md) if an assistive technology is virtually focused on the element; otherwise, [`NO`](../no.md).
 
 ## See Also
 
-- [func accessibilityElementDidBecomeFocused()](nsobject-swift.class/accessibilityelementdidbecomefocused.md)
+### Getting focus information
+- [func accessibilityElementDidBecomeFocused()](./accessibilityelementdidbecomefocused%28%29.md)
   Sent after an assistive technology has set its virtual focus on the accessibility element.
-- [func accessibilityElementDidLoseFocus()](nsobject-swift.class/accessibilityelementdidlosefocus.md)
+- [func accessibilityElementDidLoseFocus()](./accessibilityelementdidlosefocus%28%29.md)
   Sent after an assistive technology has removed its virtual focus from an accessibility element.
-- [func accessibilityAssistiveTechnologyFocusedIdentifiers() -> Set<UIAccessibility.AssistiveTechnologyIdentifier>?](nsobject-swift.class/accessibilityassistivetechnologyfocusedidentifiers.md)
+- [func accessibilityAssistiveTechnologyFocusedIdentifiers() -> Set<UIAccessibility.AssistiveTechnologyIdentifier>?](./accessibilityassistivetechnologyfocusedidentifiers%28%29.md)
   Returns a set of identifier keys indicating which assistive app has focus on the accessibility element.
 
 

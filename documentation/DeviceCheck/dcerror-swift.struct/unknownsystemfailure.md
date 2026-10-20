@@ -1,7 +1,8 @@
 # unknownSystemFailure
 
 **Framework**: DeviceCheck  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A failure has occurred, such as the failure to generate a token.
 
@@ -22,15 +23,16 @@ static var unknownSystemFailure: DCError.Code { get }
 
 ## See Also
 
-- [static var featureUnsupported: DCError.Code](dcerror-swift.struct/featureunsupported.md)
+### Errors
+- [static var featureUnsupported: DCError.Code](./featureunsupported.md)
   DeviceCheck is not available on this device.
-- [static var invalidInput: DCError.Code](dcerror-swift.struct/invalidinput.md)
+- [static var invalidInput: DCError.Code](./invalidinput.md)
   An error code that indicates when your app provides data that isn’t formatted correctly.
-- [static var invalidKey: DCError.Code](dcerror-swift.struct/invalidkey.md)
+- [static var invalidKey: DCError.Code](./invalidkey.md)
   An error caused by a failed attempt to use the App Attest key.
-- [static var serverUnavailable: DCError.Code](dcerror-swift.struct/serverunavailable.md)
+- [static var serverUnavailable: DCError.Code](./serverunavailable.md)
   An error that indicates a failed attempt to contact the App Attest service during an attestation.
-- [DCError.Code](dcerror-swift.struct/code.md)
+- [DCError.Code](./code.md)
   DeviceCheck error codes.
 
 

@@ -1,7 +1,8 @@
 # evaluateScript(_:withSourceURL:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executes the specified JavaScript code, treating the specified URL as its source location.
 
@@ -17,6 +18,10 @@ Executes the specified JavaScript code, treating the specified URL as its source
 
 ```swift
 func evaluateScript(_ script: String!, withSourceURL sourceURL: URL!) -> JSValue!
+```
+
+```objc
+- (JSValue *) evaluateScript:(NSString *) script withSourceURL:(NSURL *) sourceURL;
 ```
 
 #### Return Value
@@ -36,7 +41,8 @@ The `sourceURL` parameter is informative only; debuggers may use this URL when r
 
 ## See Also
 
-- [func evaluateScript(String!) -> JSValue!](jscontext/evaluatescript(_:).md)
+### Evaluating scripts
+- [func evaluateScript(String!) -> JSValue!](./evaluatescript%28_%29.md)
   Executes the specified JavaScript code.
 
 

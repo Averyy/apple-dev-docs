@@ -1,7 +1,8 @@
 # mNumberBuffers
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of audio buffers in the list.
 
@@ -20,9 +21,14 @@ The number of audio buffers in the list.
 var mNumberBuffers: UInt32
 ```
 
+```c
+UInt32 mNumberBuffers;
+```
+
 ## See Also
 
-- [var mBuffers: AudioBuffer](audiobufferlist/mbuffers.md)
+### Accessing the Data
+- [var mBuffers: AudioBuffer](./mbuffers.md)
   A variable-length array of audio buffers.
 
 

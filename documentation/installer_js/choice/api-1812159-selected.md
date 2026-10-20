@@ -11,11 +11,13 @@ A Boolean value that indicates whether the choice is selected.
 
 ## See Also
 
-- [enabled](choice/1812168-enabled.md)
+### Accessing a Choice’s State
+- [enabled](./api-1812168-enabled.md)
   A Boolean value that indicates whether the choice is enabled.
-- [visible](choice/1812175-visible.md)
+- [visible](./api-1812175-visible.md)
   A Boolean that indicates whether the choice is visible.
-- [Installer JS](installer_js.md)
+### Related Documentation
+- [Installer JS](../installer_js.md)
   Manage and customize the installation and distribution experience.
 
 

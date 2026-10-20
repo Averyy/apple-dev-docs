@@ -1,14 +1,15 @@
 # clr_be_bit
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int clr_be_bit(void);
 ```
 

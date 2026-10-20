@@ -5,19 +5,19 @@
 ## Topics
 
 ### Constants
-- [var memAZErr: Int](memazerr.md)
-- [var memAdrErr: Int](memadrerr.md)
-- [var memBCErr: Int](membcerr.md)
-- [var memFullErr: Int](memfullerr.md)
-- [var memLockedErr: Int](memlockederr.md)
-- [var memPCErr: Int](mempcerr.md)
-- [var memPurErr: Int](mempurerr.md)
-- [var memROZErr: Int](memrozerr.md)
-- [var memROZError: Int](memrozerror.md)
-- [var memROZWarn: Int](memrozwarn.md)
-- [var memSCErr: Int](memscerr.md)
-- [var memWZErr: Int](memwzerr.md)
-- [var nilHandleErr: Int](nilhandleerr.md)
+- [var memAZErr: Int](../../memazerr.md)
+- [var memAdrErr: Int](../../memadrerr.md)
+- [var memBCErr: Int](../../membcerr.md)
+- [var memFullErr: Int](../../memfullerr.md)
+- [var memLockedErr: Int](../../memlockederr.md)
+- [var memPCErr: Int](../../mempcerr.md)
+- [var memPurErr: Int](../../mempurerr.md)
+- [var memROZErr: Int](../../memrozerr.md)
+- [var memROZError: Int](../../memrozerror.md)
+- [var memROZWarn: Int](../../memrozwarn.md)
+- [var memSCErr: Int](../../memscerr.md)
+- [var memWZErr: Int](../../memwzerr.md)
+- [var nilHandleErr: Int](../../nilhandleerr.md)
 
 
 ---

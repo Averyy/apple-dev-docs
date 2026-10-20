@@ -1,7 +1,8 @@
 # leaveChannel(channelUUID:)
 
 **Framework**: Push to Talk  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Leaves a channel with the identifier.
 
@@ -16,9 +17,13 @@ Leaves a channel with the identifier.
 func leaveChannel(channelUUID: UUID)
 ```
 
+```objc
+- (void) leaveChannelWithUUID:(NSUUID *) channelUUID;
+```
+
 #### Discussion
 
-If successful, you receive a callback from [`channelManager(_:didLeaveChannel:reason:)`](ptchannelmanagerdelegate/channelmanager(_:didleavechannel:reason:).md) with `PTChannelLeaveReason.programmaticRequest`; otherwise, you receive a failure reason through [`channelManager(_:failedToLeaveChannel:error:)`](ptchannelmanagerdelegate/channelmanager(_:failedtoleavechannel:error:).md).
+If successful, you receive a callback from [`channelManager(_:didLeaveChannel:reason:)`](../ptchannelmanagerdelegate/channelmanager%28_,didleavechannel,reason%29.md) with `PTChannelLeaveReason.programmaticRequest`; otherwise, you receive a failure reason through [`channelManager(_:failedToLeaveChannel:error:)`](../ptchannelmanagerdelegate/channelmanager%28_,failedtoleavechannel,error%29.md).
 
 ## Parameters
 
@@ -26,7 +31,8 @@ If successful, you receive a callback from [`channelManager(_:didLeaveChannel:re
 
 ## See Also
 
-- [func requestJoinChannel(channelUUID: UUID, descriptor: PTChannelDescriptor)](ptchannelmanager/requestjoinchannel(channeluuid:descriptor:).md)
+### Joining and leaving a channel
+- [func requestJoinChannel(channelUUID: UUID, descriptor: PTChannelDescriptor)](./requestjoinchannel%28channeluuid,descriptor%29.md)
   Joins a channel with the identifier and descriptor you specify.
 
 

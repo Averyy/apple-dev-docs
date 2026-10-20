@@ -1,7 +1,8 @@
 # CiBuildRun.Relationships.DestinationBranch.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a related Git References resource that represents the build run’s destination branch.
 
@@ -10,7 +11,7 @@ The type and ID of a related Git References resource that represents the build r
 
 ## Declaration
 
-```swift
+```
 object CiBuildRun.Relationships.DestinationBranch.Data
 ```
 
@@ -18,6 +19,8 @@ object CiBuildRun.Relationships.DestinationBranch.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the related Git References resource that represents the destination branch.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `scmGitReferences`
 
 
 ---

@@ -1,12 +1,15 @@
 # WKTextInputMode.allowAnimatedEmoji
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Text from dictation and suggestions plus both animated and non animated emoji.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
+
+> **Deprecated**: Animated Emojis are no longer supported. Use WKTextInputModeAllowEmoji instead
 
 ## Declaration
 
@@ -14,11 +17,16 @@ Text from dictation and suggestions plus both animated and non animated emoji.
 case allowAnimatedEmoji
 ```
 
+```c
+WKTextInputModeAllowAnimatedEmoji
+```
+
 ## See Also
 
-- [WKTextInputMode.plain](wktextinputmode/plain.md)
+### Constants
+- [WKTextInputMode.plain](./plain.md)
   Text from dictation and suggestions only. Do not allow emoji of any kind.
-- [WKTextInputMode.allowEmoji](wktextinputmode/allowemoji.md)
+- [WKTextInputMode.allowEmoji](./allowemoji.md)
   Text from dictation and suggestions plus non animated emoji.
 
 

@@ -1,7 +1,8 @@
 # AVCaptureAudioPreviewOutput
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A capture output that provides a preview of the captured audio.
 
@@ -14,32 +15,37 @@ A capture output that provides a preview of the captured audio.
 class AVCaptureAudioPreviewOutput
 ```
 
+```objc
+@interface AVCaptureAudioPreviewOutput : AVCaptureOutput
+```
+
 ## Topics
 
 ### Creating preview output
-- [init()](avcaptureaudiopreviewoutput/init.md)
+- [init()](./avcaptureaudiopreviewoutput/init%28%29.md)
   Creates an audio preview output object.
 ### Configuring the output
-- [var volume: Float](avcaptureaudiopreviewoutput/volume.md)
+- [var volume: Float](./avcaptureaudiopreviewoutput/volume.md)
   The output volume of the audio preview.
-- [var outputDeviceUniqueID: String?](avcaptureaudiopreviewoutput/outputdeviceuniqueid.md)
+- [var outputDeviceUniqueID: String?](./avcaptureaudiopreviewoutput/outputdeviceuniqueid.md)
   The unique identifier of the Core Audio output device to use for audio preview.
 
 ## Relationships
 
 ### Inherits From
-- [AVCaptureOutput](avcaptureoutput.md)
+- [AVCaptureOutput](./avcaptureoutput.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCaptureVideoPreviewLayer](avcapturevideopreviewlayer.md)
+### Capture preview
+- [class AVCaptureVideoPreviewLayer](./avcapturevideopreviewlayer.md)
   A Core Animation layer that displays video from a camera device.
 
 

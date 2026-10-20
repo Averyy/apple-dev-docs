@@ -1,7 +1,8 @@
 # descriptorForRequiredKeys(for:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the required key descriptor for the specified formatting style of the contact.
 
@@ -19,6 +20,10 @@ Returns the required key descriptor for the specified formatting style of the co
 class func descriptorForRequiredKeys(for style: CNContactFormatterStyle) -> any CNKeyDescriptor
 ```
 
+```objc
++ (id<CNKeyDescriptor>) descriptorForRequiredKeysForStyle:(CNContactFormatterStyle) style;
+```
+
 #### Return Value
 
 The contact key descriptor for the formatting style.
@@ -33,9 +38,10 @@ Include this method with the keys to fetch when fetching contacts. To format mul
 
 ## See Also
 
-- [class var descriptorForRequiredKeysForDelimiter: any CNKeyDescriptor](cncontactformatter/descriptorforrequiredkeysfordelimiter.md)
+### Getting a descriptor
+- [class var descriptorForRequiredKeysForDelimiter: any CNKeyDescriptor](./descriptorforrequiredkeysfordelimiter.md)
   Returns the required key descriptor for the name delimiter.
-- [class var descriptorForRequiredKeysForNameOrder: any CNKeyDescriptor](cncontactformatter/descriptorforrequiredkeysfornameorder.md)
+- [class var descriptorForRequiredKeysForNameOrder: any CNKeyDescriptor](./descriptorforrequiredkeysfornameorder.md)
   Returns the required key descriptor for the display name order.
 
 

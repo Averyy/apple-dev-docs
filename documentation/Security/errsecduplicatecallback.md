@@ -1,7 +1,8 @@
 # errSecDuplicateCallback
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 More than one callback of the same name exists.
 
@@ -18,6 +19,10 @@ More than one callback of the same name exists.
 
 ```swift
 var errSecDuplicateCallback: OSStatus { get }
+```
+
+```c
+errSecDuplicateCallback
 ```
 
 

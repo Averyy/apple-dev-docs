@@ -1,7 +1,8 @@
 # equipmentID
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the equipment being moved.
 
@@ -16,13 +17,14 @@ var equipmentID: EquipmentIdentifier { get }
 
 ## See Also
 
-- [var parentID: EquipmentIdentifier](moveequipmentaction/parentid.md)
+### Getting the equipment in the action
+- [var parentID: EquipmentIdentifier](./parentid.md)
   The equipment ID the moved equipment is being grouped under
-- [var playerID: Player.ID?](moveequipmentaction/playerid.md)
+- [var playerID: Player.ID?](./playerid.md)
   The ID of the player who is moving the equipment.
-- [var order: MoveEquipmentAction.Order?](moveequipmentaction/order-swift.property.md)
+- [var order: MoveEquipmentAction.Order?](./order-swift.property.md)
   The order in which the equipment should be inserted.
-- [MoveEquipmentAction.Order](moveequipmentaction/order-swift.enum.md)
+- [MoveEquipmentAction.Order](./order-swift.enum.md)
   The possible orders of equipment.
 
 

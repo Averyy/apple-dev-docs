@@ -1,14 +1,15 @@
 # UIImagePickerController.CameraFlashMode.off
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that flash illumination is always off, no matter what the ambient light conditions are.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,11 +17,16 @@ Specifies that flash illumination is always off, no matter what the ambient ligh
 case off
 ```
 
+```c
+UIImagePickerControllerCameraFlashModeOff
+```
+
 ## See Also
 
-- [UIImagePickerController.CameraFlashMode.auto](uiimagepickercontroller/cameraflashmode-swift.enum/auto.md)
+### Constants
+- [UIImagePickerController.CameraFlashMode.auto](./auto.md)
   Specifies that the device should consider ambient light conditions to automatically determine whether or not to use flash illumination.
-- [UIImagePickerController.CameraFlashMode.on](uiimagepickercontroller/cameraflashmode-swift.enum/on.md)
+- [UIImagePickerController.CameraFlashMode.on](./on.md)
   Specifies that flash illumination is always on, no matter what the ambient light conditions are.
 
 

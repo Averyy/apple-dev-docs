@@ -1,7 +1,8 @@
 # contactIdentifier
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact identifier provided by the user for the account.
 

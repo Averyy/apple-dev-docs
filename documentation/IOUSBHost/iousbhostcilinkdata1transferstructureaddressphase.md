@@ -1,7 +1,8 @@
 # IOUSBHostCILinkData1TransferStructureAddressPhase
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,9 +14,14 @@
 var IOUSBHostCILinkData1TransferStructureAddressPhase: UInt { get }
 ```
 
+```c
+IOUSBHostCILinkData1TransferStructureAddressPhase
+```
+
 ## See Also
 
-- [var IOUSBHostCILinkData1TransferStructureAddress: UInt](iousbhostcilinkdata1transferstructureaddress.md)
+### Constants
+- [var IOUSBHostCILinkData1TransferStructureAddress: UInt](./iousbhostcilinkdata1transferstructureaddress.md)
 
 
 ---

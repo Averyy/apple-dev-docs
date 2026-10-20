@@ -1,7 +1,8 @@
 # strides
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance, in elements, between consecutive values along each dimension.
 
@@ -20,15 +21,16 @@ var strides: [Int] { get }
 
 #### Discussion
 
-The strides array has the same number of elements as [`shape`](ndarray/shape.md), where `strides[i]` describes the distance between consecutive elements in the `i`th dimension.
+The strides array has the same number of elements as [`shape`](./shape.md), where `strides[i]` describes the distance between consecutive elements in the `i`th dimension.
 
 ## See Also
 
-- [var shape: [Int]](ndarray/shape.md)
+### Inspecting an array
+- [var shape: [Int]](./shape.md)
   The length of each dimension of the array.
-- [var scalarType: NDArray.ScalarType](ndarray/scalartype-swift.property.md)
+- [var scalarType: NDArray.ScalarType](./scalartype-swift.property.md)
   The scalar type of the array.
-- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/interleavelayout-swift.property.md)
+- [var interleaveLayout: NDArray.InterleaveLayout?](./interleavelayout-swift.property.md)
   Returns the interleaved layout of this ndArray, or `nil` if there is no interleave.
 
 

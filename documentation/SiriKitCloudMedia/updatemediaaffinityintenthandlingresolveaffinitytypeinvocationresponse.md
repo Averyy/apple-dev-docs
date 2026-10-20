@@ -1,7 +1,8 @@
 # UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Your service’s response to a request that expresses a preference or dislike for a media item.
 
@@ -10,14 +11,14 @@ Your service’s response to a request that expresses a preference or dislike fo
 
 ## Declaration
 
-```swift
+```
 object UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse
 ```
 
 ## Topics
 
 ### Specifying the Result
-- [object UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse.Result](updatemediaaffinityintenthandlingresolveaffinitytypeinvocationresponse/result-data.dictionary.md)
+- [object UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse.Result](./updatemediaaffinityintenthandlingresolveaffinitytypeinvocationresponse/result-data.dictionary.md)
   The results of resolving the media affinity in an update media affinity intent.
 
 ## Properties
@@ -25,16 +26,19 @@ object UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse
 - `result` (UpdateMediaAffinityIntentHandlingResolveAffinityTypeInvocationResponse.Result) *(required)*: The results of processing the intent.
 - `method` (string) *(required)*: The action your service takes to process this intent.
 
+  **Allowed Values**: `UpdateMediaAffinityIntentHandling.resolveAffinityType`
+
 ## Relationships
 
 ### Inherits From
-- [InvocationResponse](invocationresponse.md)
+- [InvocationResponse](./invocationresponse.md)
 
 ## See Also
 
-- [type MediaAffinityType](mediaaffinitytype.md)
+### Discerning Like or Dislike
+- [type MediaAffinityType](./mediaaffinitytype.md)
   A preference or dislike for a media item.
-- [object MediaAffinityTypeResolutionResult](mediaaffinitytyperesolutionresult.md)
+- [object MediaAffinityTypeResolutionResult](./mediaaffinitytyperesolutionresult.md)
   A media affinity that matches an update media affinity intent, or information about why your service can’t determine the media affinity.
 
 

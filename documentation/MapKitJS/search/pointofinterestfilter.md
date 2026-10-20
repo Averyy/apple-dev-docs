@@ -1,7 +1,8 @@
 # pointOfInterestFilter
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A filter to use to include or exclude point-of-interest categories.
 
@@ -10,14 +11,14 @@ A filter to use to include or exclude point-of-interest categories.
 
 ## Declaration
 
-```swift
+```
 get pointOfInterestFilter(): PointOfInterestFilter | null;
 set pointOfInterestFilter(value: PointOfInterestFilter | null);
 ```
 
 #### Discussion
 
-If you provide a [`PointOfInterestFilter`](pointofinterestfilter.md) and set [`includePointsOfInterest`](search/includepointsofinterest.md) to `false`, the filter takes precedence and MapKit JS ignores the Boolean.
+If you provide a [`PointOfInterestFilter`](../pointofinterestfilter.md) and set [`includePointsOfInterest`](./includepointsofinterest.md) to `false`, the filter takes precedence and MapKit JS ignores the Boolean.
 
 
 ---

@@ -1,7 +1,8 @@
 # isCurrentComplicationInfo
 
 **Framework**: Watch Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the data is related to the app’s complication.
 
@@ -17,13 +18,18 @@ A Boolean indicating whether the data is related to the app’s complication.
 var isCurrentComplicationInfo: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCurrentComplicationInfo) BOOL currentComplicationInfo;
+```
+
 #### Discussion
 
-This property is set to [`true`](https://developer.apple.com/documentation/swift/true) if you initiated the transfer using the [`transferCurrentComplicationUserInfo(_:)`](wcsession/transfercurrentcomplicationuserinfo(_:).md) method of the [`WCSession`](wcsession.md) object or [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+This property is set to [`true`](../../Swift/true.md) if you initiated the transfer using the [`transferCurrentComplicationUserInfo(_:)`](../wcsession/transfercurrentcomplicationuserinfo%28_%29.md) method of the [`WCSession`](../wcsession.md) object or [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [var userInfo: [String : Any]](wcsessionuserinfotransfer/userinfo.md)
+### Getting the Transfer Information
+- [var userInfo: [String : Any]](./userinfo.md)
   The data being transferred.
 
 

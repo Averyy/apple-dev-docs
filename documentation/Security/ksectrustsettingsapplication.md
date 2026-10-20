@@ -1,7 +1,8 @@
 # kSecTrustSettingsApplication
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A trusted application reference for the application checking the certificate’s trust settings.
 
@@ -15,9 +16,13 @@ A trusted application reference for the application checking the certificate’s
 var kSecTrustSettingsApplication: String { get }
 ```
 
+```c
+#define kSecTrustSettingsApplication
+```
+
 #### Discussion
 
-The value is a [`SecTrustedApplication`](sectrustedapplication.md) object.
+The value is a [`SecTrustedApplication`](./sectrustedapplication.md) object.
 
 
 ---

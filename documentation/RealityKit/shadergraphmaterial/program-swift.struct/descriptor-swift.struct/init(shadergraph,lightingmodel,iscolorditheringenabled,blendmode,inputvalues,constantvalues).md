@@ -1,7 +1,8 @@
 # init(shaderGraph:lightingModel:isColorDitheringEnabled:blendMode:inputValues:constantValues:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor with explicit configuration.
 
@@ -21,7 +22,8 @@ init(shaderGraph: ShaderGraph, lightingModel: LightingModel, isColorDitheringEna
 
 ## See Also
 
-- [init(inferredFrom: ShaderGraph, inputValues: [String : MaterialParameters.Value], constantValues: MTLFunctionConstantValues) throws](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/init(inferredfrom:inputvalues:constantvalues:).md)
+### Creating a descriptor
+- [init(inferredFrom: ShaderGraph, inputValues: [String : MaterialParameters.Value], constantValues: MTLFunctionConstantValues) throws](./init%28inferredfrom,inputvalues,constantvalues%29.md)
   Creates a descriptor by inferring configuration from a shader graph.
 
 

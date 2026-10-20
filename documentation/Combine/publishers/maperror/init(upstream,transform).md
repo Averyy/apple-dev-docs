@@ -1,7 +1,8 @@
 # init(upstream:transform:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that converts any failure from the upstream publisher into a new error.
 
@@ -27,7 +28,8 @@ init(upstream: Upstream, transform: @escaping (Upstream.Failure) -> Failure)
 
 ## See Also
 
-- [init(upstream: Upstream, (Upstream.Failure) -> Failure)](publishers/maperror/init(upstream:_:).md)
+### Creating an error-mapping publisher
+- [init(upstream: Upstream, (Upstream.Failure) -> Failure)](./init%28upstream,_%29.md)
 
 
 ---

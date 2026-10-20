@@ -1,7 +1,8 @@
 # init(contentsOfURL:error:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated dictionary using the keys and values found at a given URL.
 
@@ -26,7 +27,7 @@ An initialized dictionary that contains the dictionary at `url`, or `nil` if the
 
 #### Discussion
 
-The dictionary representation in the file identified by `url` must contain only property list objects ([`NSString`](nsstring.md), [`NSData`](nsdata.md), [`NSDate`](nsdate.md), [`NSNumber`](nsnumber.md), [`NSArray`](nsarray.md), or [`NSDictionary`](nsdictionary.md) objects). For more details, see [`Property List Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html#//apple_ref/doc/uid/10000048i). The objects contained by this dictionary are immutable, even if the dictionary is mutable.
+The dictionary representation in the file identified by `url` must contain only property list objects ([`NSString`](../nsstring.md), [`NSData`](../nsdata.md), [`NSDate`](../nsdate.md), [`NSNumber`](../nsnumber.md), [`NSArray`](../nsarray.md), or [`NSDictionary`](../nsdictionary.md) objects). For more details, see [Property List Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html#//apple_ref/doc/uid/10000048i). The objects contained by this dictionary are immutable, even if the dictionary is mutable.
 
 In Swift, this initializer throws if there is an error loading the URL, or if the contents of the resource are an invalid representation of a dictionary.
 
@@ -37,7 +38,8 @@ In Swift, this initializer throws if there is an error loading the URL, or if th
 
 ## See Also
 
-- [convenience init?(contentsOfFile: String)](nsdictionary/init(contentsoffile:).md)
+### Creating a Dictionary from an External Source
+- [convenience init?(contentsOfFile: String)](./init%28contentsoffile%29.md)
   Initializes a newly allocated dictionary using the keys and values found in a file at a given path.
 
 

@@ -1,7 +1,8 @@
 # targetColorTexture
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The output texture where the postprocess callback writes the modified frame buffer.
 

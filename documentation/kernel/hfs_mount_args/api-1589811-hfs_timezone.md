@@ -1,14 +1,15 @@
 # hfs_timezone
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 struct timezone hfs_timezone;
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:
@@ -21,9 +22,10 @@ associatedtype Body : View
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](arrangementviewstyle/makebody(configuration:).md)
+### Creating a view using an arrangement view style
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view for the arrangement view style from the configuration.
-- [ArrangementViewStyle.Configuration](arrangementviewstyle/configuration.md)
+- [ArrangementViewStyle.Configuration](./configuration.md)
   The configuration the style uses to create the arrangement view.
 
 

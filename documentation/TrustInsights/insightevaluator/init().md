@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Trust Insights  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new insight evaluator object you use to request insights.
 

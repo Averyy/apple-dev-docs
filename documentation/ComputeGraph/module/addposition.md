@@ -1,13 +1,14 @@
 # module::addPosition
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Moves an element by adding an offset to its current position.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void module::addPosition(float3 offset)
 
 Use this function to translate an element relative to its current location by applying a position offset.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/module__addPosition.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/module__addPosition.svg)
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # sendLevelMetaParameterDefinition
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that gradually updates the amount of audio signal that passes through to the output.
 
@@ -19,11 +20,15 @@ A parameter that gradually updates the amount of audio signal that passes throug
 var sendLevelMetaParameterDefinition: PHASENumberMetaParameterDefinition? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) PHASENumberMetaParameterDefinition * sendLevelMetaParameterDefinition;
+```
+
 #### Discussion
 
 Use this property to fade reverb effects into a spatial mixer’s output.
 
-For example, to begin with no reverb and gradually enable it, start by silencing reverb by setting the [`lateReverb`](phasespatialcategory/latereverb.md) entry’s [`sendLevel`](phasespatialpipelineentry/sendlevel.md) to `0`. Begin the fade by calling [`fade(value:duration:)`](phasenumbermetaparameter/fade(value:duration:).md) on this property with an argument of `1`.
+For example, to begin with no reverb and gradually enable it, start by silencing reverb by setting the [`lateReverb`](../phasespatialcategory/latereverb.md) entry’s [`sendLevel`](./sendlevel.md) to `0`. Begin the fade by calling [`fade(value:duration:)`](../phasenumbermetaparameter/fade%28value,duration%29.md) on this property with an argument of `1`.
 
 
 ---

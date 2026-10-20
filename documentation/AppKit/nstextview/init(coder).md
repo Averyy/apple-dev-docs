@@ -1,12 +1,13 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a text view with data in an unarchiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Initializes a text view with data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(frame: NSRect, textContainer: NSTextContainer?)](nstextview/init(frame:textcontainer:).md)
+### Creating a text view
+- [init(frame: NSRect, textContainer: NSTextContainer?)](./init%28frame,textcontainer%29.md)
   Initializes a text view.
-- [init(frame: NSRect)](nstextview/init(frame:).md)
+- [init(frame: NSRect)](./init%28frame%29.md)
   Initializes a text view.
-- [convenience init(usingTextLayoutManager: Bool)](nstextview/init(usingtextlayoutmanager:).md)
+- [convenience init(usingTextLayoutManager: Bool)](./init%28usingtextlayoutmanager%29.md)
 
 
 ---

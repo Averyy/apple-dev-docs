@@ -1,16 +1,17 @@
 # DDDevice.MediaPlaybackState.playing
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates when the device plays media.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,11 +19,16 @@ A state that indicates when the device plays media.
 case playing
 ```
 
+```c
+DDDeviceMediaPlaybackStatePlaying
+```
+
 ## See Also
 
-- [DDDevice.MediaPlaybackState.noContent](dddevice/mediaplaybackstate-swift.enum/nocontent.md)
+### Distinguishing media playback states
+- [DDDevice.MediaPlaybackState.noContent](./nocontent.md)
   A state that indicates when the device plays no content.
-- [DDDevice.MediaPlaybackState.paused](dddevice/mediaplaybackstate-swift.enum/paused.md)
+- [DDDevice.MediaPlaybackState.paused](./paused.md)
   A state that indicates when content playback for the device pauses.
 
 

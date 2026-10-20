@@ -1,7 +1,8 @@
 # auxiliaryPlanes
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The auxiliary planes that this tensor reference requires.
 
@@ -19,9 +20,13 @@ The auxiliary planes that this tensor reference requires.
 var auxiliaryPlanes: [MTLTensorAuxiliaryPlaneType] { get }
 ```
 
+```objc
+@property (readonly) NSArray<MTLTensorAuxiliaryPlaneType *> * auxiliaryPlanes;
+```
+
 #### Discussion
 
-Returns an array of [`MTLTensorAuxiliaryPlaneType`](mtltensorauxiliaryplanetype.md) objects describing each auxiliary plane the shader expects. Empty if the tensor has no auxiliary planes.
+Returns an array of [`MTLTensorAuxiliaryPlaneType`](../mtltensorauxiliaryplanetype.md) objects describing each auxiliary plane the shader expects. Empty if the tensor has no auxiliary planes.
 
 
 ---

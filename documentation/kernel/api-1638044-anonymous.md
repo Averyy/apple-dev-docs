@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,10 +19,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kREPORT_CAPACITY_16_DataSize](1638044-anonymous/kreport_capacity_16_datasize.md)
-- [kREPORT_CAPACITY_DataSize](1638044-anonymous/kreport_capacity_datasize.md)
-- [kREPORT_CAPACITY_16_DataSize](../driverkit/kreport_capacity_16_datasize.md)
-- [kREPORT_CAPACITY_DataSize](../driverkit/kreport_capacity_datasize.md)
+- [kREPORT_CAPACITY_16_DataSize](./api-1638044-anonymous/kreport_capacity_16_datasize.md)
+- [kREPORT_CAPACITY_DataSize](./api-1638044-anonymous/kreport_capacity_datasize.md)
+- [kREPORT_CAPACITY_16_DataSize](../DriverKit/kreport_capacity_16_datasize.md)
+- [kREPORT_CAPACITY_DataSize](../DriverKit/kreport_capacity_datasize.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # addTrustedRootCertificate(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func addTrustedRootCertificate(with params: MTROperationalCredentialsClusterAddTrustedRootCertificateParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func addTrustedRootCertificate(with params: MTROperationalCredentialsClusterAddTrustedRootCertificateParams) async throws
+```
+
+```objc
+- (void) addTrustedRootCertificateWithParams:(MTROperationalCredentialsClusterAddTrustedRootCertificateParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

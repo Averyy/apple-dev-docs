@@ -1,7 +1,8 @@
 # kUSBInformationRootHubisBuiltIn
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The USB root hub is built-in.
 
@@ -10,7 +11,7 @@ The USB root hub is built-in.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationRootHubisBuiltIn = 10
 ```
 

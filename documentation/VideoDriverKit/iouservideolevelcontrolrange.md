@@ -1,7 +1,8 @@
 # IOUserVideoLevelControlRange
 
 **Framework**: VideoDriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control that supports a range of floating-point values.
 
@@ -10,7 +11,7 @@ A control that supports a range of floating-point values.
 
 ## Declaration
 
-```swift
+```c
 struct IOUserVideoLevelControlRange;
 ```
 
@@ -21,20 +22,21 @@ struct IOUserVideoLevelControlRange;
 ## Topics
 
 ### Acccessing range limits
-- [m_min](iouservideolevelcontrolrange/m_min.md)
-- [m_max](iouservideolevelcontrolrange/m_max.md)
+- [m_min](./iouservideolevelcontrolrange/m_min.md)
+- [m_max](./iouservideolevelcontrolrange/m_max.md)
 
 ## See Also
 
-- [Create](iouservideolevelcontrol/create.md)
+### Creating a level control
+- [Create](./iouservideolevelcontrol/create.md)
   A static factory method that allocates and initializes a video level control.
-- [init](iouservideolevelcontrol/init.md)
+- [init](./iouservideolevelcontrol/init.md)
   Initializes an video level control.
-- [IOUserVideoDriver](iouservideodriver.md)
+- [IOUserVideoDriver](./iouservideodriver.md)
   A video driver.
-- [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+- [IOUserVideoObjectPropertyElement](./videodriverkit-page/iouservideoobjectpropertyelement.md)
   An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
-- [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+- [IOUserVideoObjectPropertyScope](./videodriverkit-page/iouservideoobjectpropertyscope.md)
   A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
 
 

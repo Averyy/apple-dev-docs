@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a view representing the body of a gauge.
@@ -31,9 +32,10 @@ The system calls this modifier on each instance of gauge within a view hierarchy
 
 ## See Also
 
-- [GaugeStyle.Configuration](gaugestyle/configuration.md)
+### Creating custom gauge styles
+- [GaugeStyle.Configuration](./configuration.md)
   The properties of a gauge instance.
-- [associatedtype Body : View](gaugestyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view representing the body of a gauge.
 
 

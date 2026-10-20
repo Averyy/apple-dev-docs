@@ -1,14 +1,15 @@
 # wakeup
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 void wakeup(void *chan);
 ```
 

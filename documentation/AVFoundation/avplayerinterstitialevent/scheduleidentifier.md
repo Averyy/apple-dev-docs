@@ -1,7 +1,8 @@
 # scheduleIdentifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the daterange-schedule that produced this event. nil if the event was not a product of a daterange-schedule.
 
@@ -18,6 +19,10 @@ The identifier of the daterange-schedule that produced this event. nil if the ev
 
 ```swift
 var scheduleIdentifier: String? { get }
+```
+
+```objc
+@property (readonly, nullable) NSString * scheduleIdentifier;
 ```
 
 

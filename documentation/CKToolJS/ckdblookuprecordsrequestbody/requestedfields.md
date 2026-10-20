@@ -1,7 +1,8 @@
 # requestedFields
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of record field names that limits the amount of data returned in this operation.
 
@@ -10,7 +11,7 @@ The array of record field names that limits the amount of data returned in this 
 
 ## Declaration
 
-```swift
+```
 attribute string[]? requestedFields;
 ```
 

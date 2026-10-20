@@ -1,7 +1,8 @@
 # GSSCreateName(_:_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a GSS name given a buffer and a type.
 
@@ -18,27 +19,32 @@ Returns a GSS name given a buffer and a type.
 func GSSCreateName(_ name: CFTypeRef, _ name_type: gss_const_OID, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?) -> gss_name_t?
 ```
 
+```c
+gss_name_tGSSCreateName(CFTypeRef name, gss_const_OID name_type, CFErrorRef*error);
+```
+
 #### Return Value
 
-A GSS name for the given buffer and type, or `NULL` on failure. Release this object with a call to [`gss_release_name(_:_:)`](gss_release_name(_:_:).md) when you are done with it.
+A GSS name for the given buffer and type, or `NULL` on failure. Release this object with a call to [`gss_release_name(_:_:)`](./gss_release_name%28_,_%29.md) when you are done with it.
 
 ## Parameters
 
 - `name`: A name buffer describing the credential. The buffer is either a `CFDataRef` or a `CFStringRef` containing the name.
-- `name_type`: An OID name type constant, such as [`GSS_C_NT_USER_NAME`](gss_c_nt_user_name.md).
+- `name_type`: An OID name type constant, such as [`GSS_C_NT_USER_NAME`](./gss_c_nt_user_name.md).
 - `error`: A `CFErrorRef` pointer that the function sets to point at a new error object if the function call fails, or `NULL` to ignore the error. If the error exists, it describes the reason for the failure, and you are responsible for releasing it with `CFRelease`.
 
 ## See Also
 
-- [typealias gss_name_t](gss_name_t.md)
+### Creation and Destruction
+- [typealias gss_name_t](./gss_name_t.md)
   A pointer to an opaque type that you use to communicate name objects with GSS-API functions.
-- [typealias gss_const_name_t](gss_const_name_t.md)
+- [typealias gss_const_name_t](./gss_const_name_t.md)
   A pointer to an immutable version of the opaque descriptor used to exchange name objects with GSS-API functions.
-- [func gss_canonicalize_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, gss_OID, UnsafeMutablePointer<gss_name_t?>) -> OM_uint32](gss_canonicalize_name(_:_:_:_:).md)
+- [func gss_canonicalize_name(UnsafeMutablePointer<OM_uint32>, gss_name_t, gss_OID, UnsafeMutablePointer<gss_name_t?>) -> OM_uint32](./gss_canonicalize_name%28_,_,_,_%29.md)
   Converts an internal name into a mechanism name.
-- [func GSSNameCreateDisplayString(gss_name_t) -> Unmanaged<CFString>?](gssnamecreatedisplaystring(_:).md)
+- [func GSSNameCreateDisplayString(gss_name_t) -> Unmanaged<CFString>?](./gssnamecreatedisplaystring%28_%29.md)
   Returns a string suitable for displaying to the user from a GSS name.
-- [func gss_release_name(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_name_t?>) -> OM_uint32](gss_release_name(_:_:).md)
+- [func gss_release_name(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_name_t?>) -> OM_uint32](./gss_release_name%28_,_%29.md)
   Frees the resources associated with a name object.
 
 

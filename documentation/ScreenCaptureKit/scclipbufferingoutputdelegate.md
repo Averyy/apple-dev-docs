@@ -1,7 +1,8 @@
 # SCClipBufferingOutputDelegate
 
 **Framework**: ScreenCaptureKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,10 @@
 protocol SCClipBufferingOutputDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol SCClipBufferingOutputDelegate <NSObject>
+```
+
 #### Overview
 
 Defines an interface for delegates of SCClipBufferingOutput to respond to events that occur during clip buffering.
@@ -24,14 +29,14 @@ Defines an interface for delegates of SCClipBufferingOutput to respond to events
 ## Topics
 
 ### Instance Methods
-- [func clipBufferingOutput(SCClipBufferingOutput, didFailWithError: any Error)](scclipbufferingoutputdelegate/clipbufferingoutput(_:didfailwitherror:).md)
-- [func clipBufferingOutputDidStartBuffering(SCClipBufferingOutput)](scclipbufferingoutputdelegate/clipbufferingoutputdidstartbuffering(_:).md)
-- [func clipBufferingOutputDidStopBuffering(SCClipBufferingOutput)](scclipbufferingoutputdelegate/clipbufferingoutputdidstopbuffering(_:).md)
+- [func clipBufferingOutput(SCClipBufferingOutput, didFailWithError: any Error)](./scclipbufferingoutputdelegate/clipbufferingoutput%28_,didfailwitherror%29.md)
+- [func clipBufferingOutputDidStartBuffering(SCClipBufferingOutput)](./scclipbufferingoutputdelegate/clipbufferingoutputdidstartbuffering%28_%29.md)
+- [func clipBufferingOutputDidStopBuffering(SCClipBufferingOutput)](./scclipbufferingoutputdelegate/clipbufferingoutputdidstopbuffering%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

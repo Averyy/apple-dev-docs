@@ -1,7 +1,8 @@
 # kIOMasterPortDefault
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The default mach port used to initiate communication with IOKit.
 
@@ -13,6 +14,10 @@ The default mach port used to initiate communication with IOKit.
 
 ```swift
 let kIOMasterPortDefault: mach_port_t
+```
+
+```c
+const mach_port_t kIOMasterPortDefault;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # StatusEnhancedLoggingTimestamp
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that reports the device’s enhanced log collection session timestamp.
 
@@ -14,13 +15,13 @@ The status item that reports the device’s enhanced log collection session time
 
 ## Declaration
 
-```swift
+```
 object StatusEnhancedLoggingTimestamp
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +32,7 @@ object StatusEnhancedLoggingTimestamp
 | Allowed in system scope | iOS, Shared iPad, tvOS |
 | Allowed in user scope | macOS |
 
-##### Status Item Example
+##### Status item example
 
 ```json
 {
@@ -47,11 +48,12 @@ object StatusEnhancedLoggingTimestamp
 
 ## See Also
 
-- [object StatusEnhancedLoggingStatus](statusenhancedloggingstatus.md)
+### Enhanced logging items
+- [object StatusEnhancedLoggingStatus](./statusenhancedloggingstatus.md)
   The status item that reports the device’s enhanced log collection session status.
-- [object StatusEnhancedLoggingAppleCareToken](statusenhancedloggingapplecaretoken.md)
+- [object StatusEnhancedLoggingAppleCareToken](./statusenhancedloggingapplecaretoken.md)
   The status item that reports the device’s enhanced log collection session AppleCare token.
-- [object StatusEnhancedLoggingNonInteractiveEligibility](statusenhancedloggingnoninteractiveeligibility.md)
+- [object StatusEnhancedLoggingNonInteractiveEligibility](./statusenhancedloggingnoninteractiveeligibility.md)
   The status item that reports whether the device is eligible to run a non-interactive enhanced log collection session.
 
 

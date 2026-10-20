@@ -1,7 +1,8 @@
 # CGImageMetadataGetTypeID()
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the type identifier for metadata objects.
 
@@ -20,9 +21,13 @@ Returns the type identifier for metadata objects.
 func CGImageMetadataGetTypeID() -> CFTypeID
 ```
 
+```c
+extern CFTypeID CGImageMetadataGetTypeID();
+```
+
 #### Return Value
 
-The type identifier for [`CGImageMetadata`](cgimagemetadata.md) and [`CGMutableImageMetadata`](cgmutableimagemetadata.md) objects.
+The type identifier for [`CGImageMetadata`](./cgimagemetadata.md) and [`CGMutableImageMetadata`](./cgmutableimagemetadata.md) objects.
 
 
 ---

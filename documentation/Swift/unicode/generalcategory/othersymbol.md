@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.otherSymbol
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A symbol of another type.
 
@@ -22,7 +23,7 @@ case otherSymbol
 
 #### Discussion
 
-This value corresponds to the category `Other_Symbol` (abbreviated `So`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Other_Symbol` (abbreviated `So`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

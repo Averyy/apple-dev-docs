@@ -1,7 +1,8 @@
 # excludeCellularServices
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system excludes all cellular services network traffic from the tunnel.
 
@@ -18,25 +19,30 @@ A Boolean value that indicates whether the system excludes all cellular services
 var excludeCellularServices: Bool { get set }
 ```
 
+```objc
+@property BOOL excludeCellularServices;
+```
+
 ## Mentions
 
-- [Routing your VPN network traffic](routing-your-vpn-network-traffic.md)
+- [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
 #### Discussion
 
-If this property is [`true`](https://developer.apple.com/documentation/swift/true), the system excludes cellular services — such as Wi-Fi Calling, MMS, SMS, and Visual Voicemail — but only when the [`includeAllNetworks`](nevpnprotocol/includeallnetworks.md) property is also [`true`](https://developer.apple.com/documentation/swift/true). This property doesn’t impact services that use the cellular network only — such as VoLTE — which the system automatically excludes. [`NETransparentProxyManager`](netransparentproxymanager.md) doesn’t support this property.
+If this property is [`true`](../../Swift/true.md), the system excludes cellular services — such as Wi-Fi Calling, MMS, SMS, and Visual Voicemail — but only when the [`includeAllNetworks`](./includeallnetworks.md) property is also [`true`](../../Swift/true.md). This property doesn’t impact services that use the cellular network only — such as VoLTE — which the system automatically excludes. [`NETransparentProxyManager`](../netransparentproxymanager.md) doesn’t support this property.
 
-The default value for this property is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value for this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var includeAllNetworks: Bool](nevpnprotocol/includeallnetworks.md)
+### Routing network traffic
+- [var includeAllNetworks: Bool](./includeallnetworks.md)
   A Boolean value that indicates whether the system sends most network traffic over the tunnel.
-- [var excludeAPNs: Bool](nevpnprotocol/excludeapns.md)
+- [var excludeAPNs: Bool](./excludeapns.md)
   A Boolean value that indicates whether the system excludes all APNs network traffic from the tunnel.
-- [var excludeLocalNetworks: Bool](nevpnprotocol/excludelocalnetworks.md)
+- [var excludeLocalNetworks: Bool](./excludelocalnetworks.md)
   A Boolean value that indicates whether the system excludes all traffic destined for local networks from the tunnel.
-- [var enforceRoutes: Bool](nevpnprotocol/enforceroutes.md)
+- [var enforceRoutes: Bool](./enforceroutes.md)
   A Boolean value that indicates whether route rules for the tunnel take precedence over any locally defined routes.
 
 

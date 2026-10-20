@@ -1,7 +1,8 @@
 # kAXSelectedRowsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array of the accessibility objects representing the currently selected rows in this table or outline view.
 
@@ -12,6 +13,10 @@ An array of the accessibility objects representing the currently selected rows i
 
 ```swift
 var kAXSelectedRowsAttribute: String { get }
+```
+
+```c
+#define kAXSelectedRowsAttribute
 ```
 
 

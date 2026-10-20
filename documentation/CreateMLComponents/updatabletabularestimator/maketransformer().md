@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a default-initialized transformer suitable for incremental fitting.
@@ -23,8 +24,9 @@ func makeTransformer() -> Self.Transformer
 
 ## See Also
 
-- [func update(inout Self.Transformer, with: DataFrame) async throws](updatabletabularestimator/update(_:with:).md)
-- [func update(inout Self.Transformer, with: DataFrame, eventHandler: EventHandler?) async throws](updatabletabularestimator/update(_:with:eventhandler:).md)
+### Transforming
+- [func update(inout Self.Transformer, with: DataFrame) async throws](./update%28_,with%29.md)
+- [func update(inout Self.Transformer, with: DataFrame, eventHandler: EventHandler?) async throws](./update%28_,with,eventhandler%29.md)
   Updates a transformer with a new sequence of examples.
 
 

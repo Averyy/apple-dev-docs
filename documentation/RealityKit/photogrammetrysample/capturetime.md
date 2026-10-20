@@ -1,7 +1,8 @@
 # captureTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capture time of the sample.
 

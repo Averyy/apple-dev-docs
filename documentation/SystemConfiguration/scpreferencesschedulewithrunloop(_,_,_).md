@@ -1,7 +1,8 @@
 # SCPreferencesScheduleWithRunLoop(_:_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Schedules commit and apply notifications for the specified preferences session using the specified run loop and mode.
 
@@ -12,6 +13,10 @@ Schedules commit and apply notifications for the specified preferences session u
 
 ```swift
 func SCPreferencesScheduleWithRunLoop(_ prefs: SCPreferences, _ runLoop: CFRunLoop, _ runLoopMode: CFString) -> Bool
+```
+
+```c
+Boolean SCPreferencesScheduleWithRunLoop(SCPreferencesRef prefs, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
 #### Return Value
@@ -26,11 +31,12 @@ func SCPreferencesScheduleWithRunLoop(_ prefs: SCPreferences, _ runLoop: CFRunLo
 
 ## See Also
 
-- [func SCPreferencesSetCallback(SCPreferences, SCPreferencesCallBack?, UnsafeMutablePointer<SCPreferencesContext>?) -> Bool](scpreferencessetcallback(_:_:_:).md)
+### Managing Notifications and Callbacks
+- [func SCPreferencesSetCallback(SCPreferences, SCPreferencesCallBack?, UnsafeMutablePointer<SCPreferencesContext>?) -> Bool](./scpreferencessetcallback%28_,_,_%29.md)
   Assigns the specified callback to the specified preferences session.
-- [func SCPreferencesUnscheduleFromRunLoop(SCPreferences, CFRunLoop, CFString) -> Bool](scpreferencesunschedulefromrunloop(_:_:_:).md)
+- [func SCPreferencesUnscheduleFromRunLoop(SCPreferences, CFRunLoop, CFString) -> Bool](./scpreferencesunschedulefromrunloop%28_,_,_%29.md)
   Unschedules commit and apply notifications for the specified preferences session from the specified run loop and mode.
-- [func SCPreferencesSetDispatchQueue(SCPreferences, dispatch_queue_t?) -> Bool](scpreferencessetdispatchqueue(_:_:).md)
+- [func SCPreferencesSetDispatchQueue(SCPreferences, dispatch_queue_t?) -> Bool](./scpreferencessetdispatchqueue%28_,_%29.md)
   Schedules commit and apply notifications for the specified preferences session using the specified dispatch queue.
 
 

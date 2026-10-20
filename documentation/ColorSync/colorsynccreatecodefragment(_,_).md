@@ -1,7 +1,8 @@
 # ColorSyncCreateCodeFragment(_:_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a code fragment from a sequence of profiles.
 
@@ -20,6 +21,10 @@ Creates a code fragment from a sequence of profiles.
 func ColorSyncCreateCodeFragment(_ profileSequence: CFArray!, _ options: CFDictionary!) -> Unmanaged<CFTypeRef>!
 ```
 
+```c
+extern CFTypeRefColorSyncCreateCodeFragment(CFArrayRef profileSequence, CFDictionaryRef options);
+```
+
 #### Return Value
 
 A `CFTypeRef` representing a ColorSync code fragment, or `NULL` in case of failure.
@@ -30,14 +35,14 @@ Each dictionary in `profileSequence` contains a profile object and information o
 
 Required keys:
 
-- [`kColorSyncProfile`](kcolorsyncprofile.md): A [`ColorSyncProfile`](colorsyncprofile.md).
-- [`kColorSyncRenderingIntent`](kcolorsyncrenderingintent.md): A `CFStringRef` defining the rendering intent.
-- [`kColorSyncTransformTag`](kcolorsynctransformtag.md): A `CFStringRef` defining which tags to use.
+- [`kColorSyncProfile`](./kcolorsyncprofile.md): A [`ColorSyncProfile`](./colorsyncprofile.md).
+- [`kColorSyncRenderingIntent`](./kcolorsyncrenderingintent.md): A `CFStringRef` defining the rendering intent.
+- [`kColorSyncTransformTag`](./kcolorsynctransformtag.md): A `CFStringRef` defining which tags to use.
 
 Optional key:
 
-- [`kColorSyncBlackPointCompensation`](kcolorsyncblackpointcompensation.md): A `CFBooleanRef` to enable or disable black point compensation.
-- [`kColorSyncExtendedRange`](kcolorsyncextendedrange.md): A `CFBooleanRef` to enable or disable extended range; disabling implies floating point conversions.
+- [`kColorSyncBlackPointCompensation`](./kcolorsyncblackpointcompensation.md): A `CFBooleanRef` to enable or disable black point compensation.
+- [`kColorSyncExtendedRange`](./kcolorsyncextendedrange.md): A `CFBooleanRef` to enable or disable extended range; disabling implies floating point conversions.
 
 ## Parameters
 
@@ -46,9 +51,10 @@ Optional key:
 
 ## See Also
 
-- [var kColorSyncTransformCodeFragmentType: Unmanaged<CFString>!](kcolorsynctransformcodefragmenttype.md)
+### Extracting a conversion for vImage
+- [var kColorSyncTransformCodeFragmentType: Unmanaged<CFString>!](./kcolorsynctransformcodefragmenttype.md)
   A key for the type of code fragment to create, or that the framework created.
-- [var kColorSyncTransformCodeFragmentMD5: Unmanaged<CFString>!](kcolorsynctransformcodefragmentmd5.md)
+- [var kColorSyncTransformCodeFragmentMD5: Unmanaged<CFString>!](./kcolorsynctransformcodefragmentmd5.md)
   A key for the MD5 checksum of the code fragment.
 
 

@@ -1,7 +1,8 @@
 # MTLGPUFamily.metal4
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -17,9 +18,14 @@
 case metal4
 ```
 
+```c
+MTLGPUFamilyMetal4
+```
+
 ## See Also
 
-- [MTLGPUFamily.metal3](mtlgpufamily/metal3.md)
+### Checking for Metal family GPU support
+- [MTLGPUFamily.metal3](./metal3.md)
   Represents the Metal 3 features.
 
 

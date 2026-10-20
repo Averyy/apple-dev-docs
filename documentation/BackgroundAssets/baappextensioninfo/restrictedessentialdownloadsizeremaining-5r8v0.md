@@ -1,7 +1,8 @@
 # restrictedEssentialDownloadSizeRemaining
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -19,7 +20,8 @@ var restrictedEssentialDownloadSizeRemaining: Int? { get }
 
 ## See Also
 
-- [var restrictedDownloadSizeRemaining: Int?](baappextensioninfo/restricteddownloadsizeremaining-4hea4.md)
+### Getting the size of the remaining downloads
+- [var restrictedDownloadSizeRemaining: Int?](./restricteddownloadsizeremaining-4hea4.md)
 
 
 ---

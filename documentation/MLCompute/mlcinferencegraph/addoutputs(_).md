@@ -1,21 +1,26 @@
 # addOutputs(_:)
 
 **Framework**: ML Compute  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the outputs you specify to the inference graph.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 func addOutputs(_ outputs: [String : MLCTensor]) -> Bool
+```
+
+```objc
+- (BOOL) addOutputs:(NSDictionary<NSString *,MLCTensor *> *) outputs;
 ```
 
 #### Return Value
@@ -28,17 +33,18 @@ I`true` if the operation was successful.
 
 ## See Also
 
-- [func addInputs([String : MLCTensor]) -> Bool](mlcinferencegraph/addinputs(_:).md)
+### Preparing Inference Graphs
+- [func addInputs([String : MLCTensor]) -> Bool](./addinputs%28_%29.md)
   Adds the inputs you specify to the inference graph.
-- [func addInputs([String : MLCTensor], lossLabels: [String : MLCTensor]?, lossLabelWeights: [String : MLCTensor]?) -> Bool](mlcinferencegraph/addinputs(_:losslabels:losslabelweights:).md)
+- [func addInputs([String : MLCTensor], lossLabels: [String : MLCTensor]?, lossLabelWeights: [String : MLCTensor]?) -> Bool](./addinputs%28_,losslabels,losslabelweights%29.md)
   Adds the inputs, loss labels, and loss label weights that you specify to the inference graph.
-- [func compile(options: MLCGraphCompilationOptions, device: MLCDevice) -> Bool](mlcinferencegraph/compile(options:device:).md)
+- [func compile(options: MLCGraphCompilationOptions, device: MLCDevice) -> Bool](./compile%28options,device%29.md)
   Compiles the inference graph for the options and device you specify.
-- [func compile(options: MLCGraphCompilationOptions, device: MLCDevice, inputTensors: [String : MLCTensor]?, inputTensorsData: [String : MLCTensorData]?) -> Bool](mlcinferencegraph/compile(options:device:inputtensors:inputtensorsdata:).md)
+- [func compile(options: MLCGraphCompilationOptions, device: MLCDevice, inputTensors: [String : MLCTensor]?, inputTensorsData: [String : MLCTensorData]?) -> Bool](./compile%28options,device,inputtensors,inputtensorsdata%29.md)
   Compiles the inference graph for the options, device, and input tensors you specify.
-- [func link(with: [MLCInferenceGraph]) -> Bool](mlcinferencegraph/link(with:).md)
+- [func link(with: [MLCInferenceGraph]) -> Bool](./link%28with%29.md)
   Links the inference graphs you specify.
-- [struct MLCGraphCompilationOptions](mlcgraphcompilationoptions.md)
+- [struct MLCGraphCompilationOptions](../mlcgraphcompilationoptions.md)
   A bitmask that specifies the options you use when compiling a graph.
 
 

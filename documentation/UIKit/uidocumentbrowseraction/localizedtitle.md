@@ -1,7 +1,8 @@
 # localizedTitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title that appears in the menu or navigation bar.
 
@@ -17,13 +18,18 @@ The title that appears in the menu or navigation bar.
 var localizedTitle: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * localizedTitle;
+```
+
 ## See Also
 
-- [var identifier: String](uidocumentbrowseraction/identifier.md)
+### Accessing activity data
+- [var identifier: String](./identifier.md)
   The action’s unique identifier.
-- [var availability: UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.property.md)
+- [var availability: UIDocumentBrowserAction.Availability](./availability-swift.property.md)
   A value that defines where the action can appear (in the Edit Menu, the navigation bar, or both).
-- [UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.struct.md)
+- [UIDocumentBrowserAction.Availability](./availability-swift.struct.md)
   Values that determine where the action can appear in the document browser.
 
 

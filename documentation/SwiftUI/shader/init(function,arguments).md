@@ -1,7 +1,8 @@
 # init(function:arguments:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new shader from a function and the uniform argument values to bind to the function.
 
@@ -21,7 +22,8 @@ init(function: ShaderFunction, arguments: [Shader.Argument])
 
 ## See Also
 
-- [Shader.Argument](shader/argument.md)
+### Creating a shader
+- [Shader.Argument](./argument.md)
   A single uniform argument value to a shader function.
 
 

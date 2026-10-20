@@ -1,14 +1,15 @@
 # properties
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 - Swift 5.1+
 
 ## Declaration
@@ -16,6 +17,8 @@
 ```swift
 static var properties: UIView.Invalidations.Properties { get }
 ```
+
+Available when `Self` is `UIView.Invalidations.Properties`.
 
 
 ---

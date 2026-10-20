@@ -1,7 +1,8 @@
 # width(for:rectEdge:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -17,11 +18,16 @@
 func width(for layer: NSTextBlock.Layer, rectEdge: CGRectEdge) -> CGFloat
 ```
 
+```objc
+- (CGFloat) widthForLayer:(NSTextBlockLayer) layer rectEdge:(CGRectEdge) rectEdge;
+```
+
 ## See Also
 
-- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](nstextblock/setwidth(_:type:for:).md)
-- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, rectEdge: CGRectEdge)](nstextblock/setwidth(_:type:for:rectedge:).md)
-- [func widthValueType(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> NSTextBlock.ValueType](nstextblock/widthvaluetype(for:rectedge:).md)
+### Setting layer widths
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](./setwidth%28_,type,for%29.md)
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, rectEdge: CGRectEdge)](./setwidth%28_,type,for,rectedge%29.md)
+- [func widthValueType(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> NSTextBlock.ValueType](./widthvaluetype%28for,rectedge%29.md)
 
 
 ---

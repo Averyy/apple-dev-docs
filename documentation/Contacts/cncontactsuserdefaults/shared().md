@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The singleton contacts user defaults object.
 
@@ -19,9 +20,13 @@ The singleton contacts user defaults object.
 class func shared() -> Self
 ```
 
+```objc
++ (instancetype) sharedDefaults;
+```
+
 #### Return Value
 
-Returns the shared [`CNContactsUserDefaults`](cncontactsuserdefaults.md) object.
+Returns the shared [`CNContactsUserDefaults`](../cncontactsuserdefaults.md) object.
 
 
 ---

@@ -1,7 +1,8 @@
 # identityToken
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A JSON Web Token (JWT) that securely communicates information about the user to your app.
 
@@ -18,13 +19,18 @@ A JSON Web Token (JWT) that securely communicates information about the user to 
 var identityToken: Data? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSData * identityToken;
+```
+
 ## See Also
 
-- [var accessToken: Data?](asauthorizationsinglesignoncredential/accesstoken.md)
+### Identifying a User
+- [var accessToken: Data?](./accesstoken.md)
   An access token used to get an identity token.
-- [var state: String?](asauthorizationsinglesignoncredential/state.md)
+- [var state: String?](./state.md)
   An arbitrary string that your app provided to the request that generated this credential.
-- [var authorizedScopes: [ASAuthorization.Scope]](asauthorizationsinglesignoncredential/authorizedscopes.md)
+- [var authorizedScopes: [ASAuthorization.Scope]](./authorizedscopes.md)
   The contact information the user authorized your app to access.
 
 

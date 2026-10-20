@@ -1,7 +1,8 @@
 # CNImageRenderingSessionConfiguration
 
 **Framework**: Cinematic  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Configuration for a CNImageRenderingSession, specifying the rendering quality and algorithm version.
 
@@ -18,35 +19,39 @@ Configuration for a CNImageRenderingSession, specifying the rendering quality an
 class CNImageRenderingSessionConfiguration
 ```
 
+```objc
+@interface CNImageRenderingSessionConfiguration : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(quality: CNRenderingQuality)](cnimagerenderingsessionconfiguration/init(quality:).md)
+- [init(quality: CNRenderingQuality)](./cnimagerenderingsessionconfiguration/init%28quality%29.md)
   Initialize with the latest rendering version
-- [init?(quality: CNRenderingQuality, renderingVersion: Int)](cnimagerenderingsessionconfiguration/init(quality:renderingversion:).md)
+- [init?(quality: CNRenderingQuality, renderingVersion: Int)](./cnimagerenderingsessionconfiguration/init%28quality,renderingversion%29.md)
   Initialize with a specific rendering version.
 ### Instance Properties
-- [var quality: CNRenderingQuality](cnimagerenderingsessionconfiguration/quality.md)
-- [var renderingVersion: Int](cnimagerenderingsessionconfiguration/renderingversion.md)
+- [var quality: CNRenderingQuality](./cnimagerenderingsessionconfiguration/quality.md)
+- [var renderingVersion: Int](./cnimagerenderingsessionconfiguration/renderingversion.md)
   Rendering version used to render
 ### Type Properties
-- [class var latestRenderingVersion: Int](cnimagerenderingsessionconfiguration/latestrenderingversion.md)
+- [class var latestRenderingVersion: Int](./cnimagerenderingsessionconfiguration/latestrenderingversion.md)
   The version of the newest rendering algorithm
 ### Type Methods
-- [class func isRenderingVersionSupported(Int) -> Bool](cnimagerenderingsessionconfiguration/isrenderingversionsupported(_:).md)
+- [class func isRenderingVersionSupported(Int) -> Bool](./cnimagerenderingsessionconfiguration/isrenderingversionsupported%28_%29.md)
   Checks if a given rendering version is supported on the current build
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

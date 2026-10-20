@@ -1,7 +1,8 @@
 # init(exactly:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value, if the given integer can be represented exactly.
 
@@ -13,6 +14,8 @@ Creates a new value, if the given integer can be represented exactly.
 ```swift
 init?<Source>(exactly value: Source) where Source : BinaryInteger
 ```
+
+Available when `RawSignificand` conforms to `FixedWidthInteger`.
 
 #### Discussion
 

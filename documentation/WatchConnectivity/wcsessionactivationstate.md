@@ -1,7 +1,8 @@
 # WCSessionActivationState
 
 **Framework**: Watch Connectivity  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the activation state of a session.
 
@@ -18,35 +19,40 @@ Constants indicating the activation state of a session.
 enum WCSessionActivationState
 ```
 
+```c
+enum WCSessionActivationState : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [WCSessionActivationState.notActivated](wcsessionactivationstate/notactivated.md)
+- [WCSessionActivationState.notActivated](./wcsessionactivationstate/notactivated.md)
   The session is not activated. When in this state, no communication occurs between the Watch app and iOS app. It is a programmer error to try to send data to the counterpart app while in this state.
-- [WCSessionActivationState.inactive](wcsessionactivationstate/inactive.md)
+- [WCSessionActivationState.inactive](./wcsessionactivationstate/inactive.md)
   The session was active but is transitioning to the deactivated state. The session’s delegate object may still receive data while in this state, but it is a programmer error to try to send data to the counterpart app.
-- [WCSessionActivationState.activated](wcsessionactivationstate/activated.md)
+- [WCSessionActivationState.activated](./wcsessionactivationstate/activated.md)
   The session is active and the Watch app and iOS app may communicate with each other freely.
 ### Initializers
-- [init?(rawValue: Int)](wcsessionactivationstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wcsessionactivationstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let WCErrorDomain: String](wcerrordomain.md)
+### Constants
+- [let WCErrorDomain: String](./wcerrordomain.md)
   The domain for errors associated with the Watch Connectivity framework.
-- [struct WCError](wcerror.md)
+- [struct WCError](./wcerror.md)
   A structure that contains Watch Connectivity error information.
-- [WCError.Code](wcerror/code.md)
+- [WCError.Code](./wcerror/code.md)
   Constants for errors during a session.
 
 

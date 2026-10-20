@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the item.
 
@@ -14,9 +15,14 @@ The unique identifier for the item.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [var expirationDate: Date?](tvtopshelfitem/expirationdate.md)
+### Getting the Item Attributes
+- [var expirationDate: Date?](./expirationdate.md)
   The date on which the item becomes unavailable.
 
 

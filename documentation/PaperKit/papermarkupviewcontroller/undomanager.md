@@ -1,7 +1,8 @@
 # undoManager
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -18,9 +19,10 @@
 
 ## See Also
 
-- [var delegate: (any PaperMarkupViewController.Delegate)?](papermarkupviewcontroller/delegate-swift.property.md)
+### Responding to changes
+- [var delegate: (any PaperMarkupViewController.Delegate)?](./delegate-swift.property.md)
   The delegate for responding to a person’s actions.
-- [PaperMarkupViewController.Delegate](papermarkupviewcontroller/delegate-swift.protocol.md)
+- [PaperMarkupViewController.Delegate](./delegate-swift.protocol.md)
   The interface for responding to interactions in a markup view controller.
 
 

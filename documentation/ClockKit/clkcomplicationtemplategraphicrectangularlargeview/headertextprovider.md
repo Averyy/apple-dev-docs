@@ -1,12 +1,15 @@
 # headerTextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text provider for a row of text.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -21,7 +24,8 @@ The template supports multicolored text from this text provider.
 
 ## See Also
 
-- [var content: Content](clkcomplicationtemplategraphicrectangularlargeview/content.md)
+### Accessing the Content
+- [var content: Content](./content.md)
   The SwiftUI view displayed by the template.
 
 

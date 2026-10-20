@@ -1,7 +1,8 @@
 # init(recordsToSave:recordIDsToDelete:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation for modifying the specified records.
 
@@ -11,7 +12,7 @@ Creates an operation for modifying the specified records.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -32,7 +33,8 @@ The records that you intend to save or delete must all reside in the same databa
 
 ## See Also
 
-- [init()](ckmodifyrecordsoperation/init.md)
+### Creating a Modify Record Operation
+- [init()](./init%28%29.md)
   Creates an empty modify records operation.
 
 

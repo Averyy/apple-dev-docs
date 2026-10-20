@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var driverHardwareGoneErr: Int](driverhardwaregoneerr.md)
-- [var hwParamErr: Int](hwparamerr.md)
-- [var teScrapSizeErr: Int](tescrapsizeerr.md)
+- [var driverHardwareGoneErr: Int](../../driverhardwaregoneerr.md)
+- [var hwParamErr: Int](../../hwparamerr.md)
+- [var teScrapSizeErr: Int](../../tescrapsizeerr.md)
 
 
 ---

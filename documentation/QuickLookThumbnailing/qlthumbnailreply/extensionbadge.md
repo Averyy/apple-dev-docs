@@ -1,7 +1,8 @@
 # extensionBadge
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short string that identifies the file type that the system uses as a badge when producing an icon thumbnail.
 
@@ -16,6 +17,10 @@ A short string that identifies the file type that the system uses as a badge whe
 
 ```swift
 var extensionBadge: String { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * extensionBadge;
 ```
 
 

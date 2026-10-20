@@ -1,7 +1,8 @@
 # pushOut
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The text system pushes out individual lines to avoid an orphan word on the last line of the paragraph.
 
@@ -19,15 +20,20 @@ The text system pushes out individual lines to avoid an orphan word on the last 
 static var pushOut: NSParagraphStyle.LineBreakStrategy { get }
 ```
 
+```c
+NSLineBreakStrategyPushOut
+```
+
 #### Discussion
 
 To avoid an orphan word on the last line of a paragraph before a page break, the text system may extend individual lines by one or more words. Typically, the text system only pushes out the last line by one word.
 
 ## See Also
 
-- [static var hangulWordPriority: NSParagraphStyle.LineBreakStrategy](nsparagraphstyle/linebreakstrategy-swift.struct/hangulwordpriority.md)
+### Getting the line-break styles
+- [static var hangulWordPriority: NSParagraphStyle.LineBreakStrategy](./hangulwordpriority.md)
   The text system prohibits breaking between Hangul characters.
-- [static var standard: NSParagraphStyle.LineBreakStrategy](nsparagraphstyle/linebreakstrategy-swift.struct/standard.md)
+- [static var standard: NSParagraphStyle.LineBreakStrategy](./standard.md)
   The text system uses the same configuration of line-break strategies that it uses for standard UI labels.
 
 

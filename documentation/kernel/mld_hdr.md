@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct mld_hdr {
     ...
 };
@@ -17,8 +17,8 @@ struct mld_hdr {
 ## Topics
 
 ### Instance Properties
-- [mld_addr](mld_hdr/3754095-mld_addr.md)
-- [mld_icmp6_hdr](mld_hdr/3754096-mld_icmp6_hdr.md)
+- [mld_addr](./mld_hdr/api-3754095-mld_addr.md)
+- [mld_icmp6_hdr](./mld_hdr/api-3754096-mld_icmp6_hdr.md)
 
 
 ---

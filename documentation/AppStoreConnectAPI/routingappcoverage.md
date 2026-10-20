@@ -1,7 +1,8 @@
 # RoutingAppCoverage
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A GeoJSON file defining the geographic coverage area of a turn-by-turn navigation app, required for App Store submission.
 
@@ -10,16 +11,16 @@ A GeoJSON file defining the geographic coverage area of a turn-by-turn navigatio
 
 ## Declaration
 
-```swift
+```
 object RoutingAppCoverage
 ```
 
 ## Topics
 
 ### Objects
-- [object RoutingAppCoverage.Attributes](routingappcoverage/attributes-data.dictionary.md)
+- [object RoutingAppCoverage.Attributes](./routingappcoverage/attributes-data.dictionary.md)
   Attributes that describe a Routing App Coverages resource.
-- [object RoutingAppCoverage.Relationships](routingappcoverage/relationships-data.dictionary.md)
+- [object RoutingAppCoverage.Relationships](./routingappcoverage/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
@@ -28,19 +29,20 @@ object RoutingAppCoverage
 - `id` (string) *(required)*
 - `links` (ResourceLinks)
 - `relationships` (RoutingAppCoverage.Relationships)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `routingAppCoverages`
 
 ## See Also
 
-- [object RoutingAppCoverageCreateRequest](routingappcoveragecreaterequest.md)
+### Objects
+- [object RoutingAppCoverageCreateRequest](./routingappcoveragecreaterequest.md)
   The request body you use to create a Routing App Coverage.
-- [object RoutingAppCoverageResponse](routingappcoverageresponse.md)
+- [object RoutingAppCoverageResponse](./routingappcoverageresponse.md)
   The response body for endpoints that read or modify the routing app coverage file for an app version.
-- [object RoutingAppCoverageUpdateRequest](routingappcoverageupdaterequest.md)
+- [object RoutingAppCoverageUpdateRequest](./routingappcoverageupdaterequest.md)
   The request body you use to update a Routing App Coverage.
-- [object AppMediaStateError](appmediastateerror.md)
+- [object AppMediaStateError](./appmediastateerror.md)
   An error code and description.
-- [object AppMediaAssetState](appmediaassetstate.md)
+- [object AppMediaAssetState](./appmediaassetstate.md)
   The state of an app or media upload, including any errors and warnings.
 
 

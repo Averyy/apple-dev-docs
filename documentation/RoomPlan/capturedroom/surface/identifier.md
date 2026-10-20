@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique alphanumeric value that the framework assigns the surface.
 
@@ -18,13 +19,14 @@ var identifier: UUID { get }
 
 ## See Also
 
-- [var parentIdentifier: UUID?](capturedroom/surface/parentidentifier.md)
+### Identifying a surface
+- [var parentIdentifier: UUID?](./parentidentifier.md)
   A unique alphanumeric value that identifies a surface’s parent surface.
-- [var category: CapturedRoom.Surface.Category](capturedroom/surface/category-swift.property.md)
+- [var category: CapturedRoom.Surface.Category](./category-swift.property.md)
   A classification that the captured room assigns the surface.
-- [CapturedRoom.Surface.Category](capturedroom/surface/category-swift.enum.md)
+- [CapturedRoom.Surface.Category](./category-swift.enum.md)
   Classifications of a surface in a captured room.
-- [var confidence: CapturedRoom.Confidence](capturedroom/surface/confidence.md)
+- [var confidence: CapturedRoom.Confidence](./confidence.md)
   A level of certainty in the surface’s category.
 
 

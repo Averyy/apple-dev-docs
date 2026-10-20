@@ -1,7 +1,8 @@
 # setPinned(_:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to set the pinned state of the tab.
 
@@ -15,7 +16,15 @@ Called to set the pinned state of the tab.
 ## Declaration
 
 ```swift
+optional func setPinned(_ pinned: Bool, for context: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func setPinned(_ pinned: Bool, for context: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) setPinned:(BOOL) pinned forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -30,7 +39,8 @@ This is equivalent to the user selecting to pin or unpin the tab through a menu 
 
 ## See Also
 
-- [func isPinned(for: WKWebExtensionContext) -> Bool](wkwebextensiontab/ispinned(for:).md)
+### Related Documentation
+- [func isPinned(for: WKWebExtensionContext) -> Bool](./ispinned%28for%29.md)
   Called when the pinned state of the tab is needed.
 
 

@@ -1,7 +1,8 @@
 # segments
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content of the instructions, in natural language.
 
@@ -25,7 +26,8 @@ var segments: [Transcript.Segment]
 
 ## See Also
 
-- [var toolDefinitions: [Transcript.ToolDefinition]](transcript/instructions/tooldefinitions.md)
+### Inspecting instructions
+- [var toolDefinitions: [Transcript.ToolDefinition]](./tooldefinitions.md)
   A list of tools made available to the model.
 
 

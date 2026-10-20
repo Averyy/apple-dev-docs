@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns the size of the extra padding added to any drawing layer used to rasterize the text. For example when drawing the text with a shadow this may be used to extend the drawing bounds to avoid clipping the shadow.
@@ -24,6 +25,12 @@ var displayPadding: EdgeInsets { get }
 #### Discussion
 
 The default implementation of this function returns an empty set of insets.
+
+## Default Implementations
+
+### TextRenderer Implementations
+- [var displayPadding: EdgeInsets](./displaypadding-9l6t9.md)
+  Returns the size of the extra padding added to any drawing layer used to rasterize the text. For example when drawing the text with a shadow this may be used to extend the drawing bounds to avoid clipping the shadow.
 
 
 ---

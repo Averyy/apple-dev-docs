@@ -1,7 +1,8 @@
 # SKAdTestPostbackVersion
 
 **Framework**: StoreKit Test  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A constant that indicates the postback version.
 
@@ -16,45 +17,50 @@ A constant that indicates the postback version.
 struct SKAdTestPostbackVersion
 ```
 
+```c
+typedef NSString * SKAdTestPostbackVersion;
+```
+
 #### Overview
 
-This postback version number corresponds to a version of SKAdNetwork. All versions of [`SKAdNetwork`](https://developer.apple.com/documentation/storekit/skadnetwork) have specific instructions for signing ads and validating postbacks. The testing environment supports testing the versions indicated by the constants listed in the Getting SKAdNetwork Versions section below.
+This postback version number corresponds to a version of SKAdNetwork. All versions of [`SKAdNetwork`](../StoreKit/skadnetwork.md) have specific instructions for signing ads and validating postbacks. The testing environment supports testing the versions indicated by the constants listed in the Getting SKAdNetwork Versions section below.
 
-For more information about versions, see [`SKAdNetwork release notes`](https://developer.apple.com/documentation/storekit/skadnetwork-release-notes).
+For more information about versions, see [SKAdNetwork release notes](../StoreKit/skadnetwork-release-notes.md).
 
 ## Topics
 
 ### Getting SKAdNetwork Versions
-- [static let version4_0: SKAdTestPostbackVersion](skadtestpostbackversion/version4_0.md)
+- [static let version4_0: SKAdTestPostbackVersion](./skadtestpostbackversion/version4_0.md)
   A constant that represents SKAdNetwork version 4.0.
-- [static let version3_0: SKAdTestPostbackVersion](skadtestpostbackversion/version3_0.md)
+- [static let version3_0: SKAdTestPostbackVersion](./skadtestpostbackversion/version3_0.md)
   A constant that represents SKAdNetwork version 3.0.
-- [static let version2_2: SKAdTestPostbackVersion](skadtestpostbackversion/version2_2.md)
+- [static let version2_2: SKAdTestPostbackVersion](./skadtestpostbackversion/version2_2.md)
   A constant that represents SKAdNetwork version 2.2.
-- [static let version2_1: SKAdTestPostbackVersion](skadtestpostbackversion/version2_1.md)
+- [static let version2_1: SKAdTestPostbackVersion](./skadtestpostbackversion/version2_1.md)
   A constant that represents SKAdNetwork version 2.1.
 ### Initializing the Postback Version
-- [init(rawValue: String)](skadtestpostbackversion/init(rawvalue:).md)
+- [init(rawValue: String)](./skadtestpostbackversion/init%28rawvalue%29.md)
   Initialize a version object with the supplied raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Testing and validating ad impression signatures and postbacks for SKAdNetwork](testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
+### Ad impression and postback testing
+- [Testing and validating ad impression signatures and postbacks for SKAdNetwork](./testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
   Validate your ad impressions and test your postbacks by creating unit tests using the StoreKit Test framework.
-- [class SKAdTestSession](skadtestsession.md)
+- [class SKAdTestSession](./skadtestsession.md)
   The class you use to test ad impressions and postbacks in Xcode.
-- [class SKAdTestPostback](skadtestpostback.md)
+- [class SKAdTestPostback](./skadtestpostback.md)
   A test postback that contains ad conversion information in the testing environment.
-- [class SKAdTestPostbackResponse](skadtestpostbackresponse.md)
+- [class SKAdTestPostbackResponse](./skadtestpostbackresponse.md)
   The status and error information for a postback that the system sends in the testing environment.
 
 

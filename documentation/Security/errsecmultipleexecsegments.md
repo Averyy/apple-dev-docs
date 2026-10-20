@@ -1,7 +1,8 @@
 # errSecMultipleExecSegments
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The image contains multiple executable segments.
 
@@ -13,6 +14,10 @@ The image contains multiple executable segments.
 
 ```swift
 var errSecMultipleExecSegments: OSStatus { get }
+```
+
+```c
+errSecMultipleExecSegments
 ```
 
 

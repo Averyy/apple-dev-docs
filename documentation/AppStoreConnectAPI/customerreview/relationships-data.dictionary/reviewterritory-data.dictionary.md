@@ -1,21 +1,22 @@
 # CustomerReview.Relationships.ReviewTerritory
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object CustomerReview.Relationships.ReviewTerritory
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object CustomerReview.Relationships.ReviewTerritory.Data](customerreview/relationships-data.dictionary/reviewterritory-data.dictionary/data-data.dictionary.md)
+- [object CustomerReview.Relationships.ReviewTerritory.Data](./reviewterritory-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

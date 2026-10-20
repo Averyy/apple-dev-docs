@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a ray-tracing acceleration structure command encoder from a descriptor.
@@ -20,17 +21,22 @@ Creates a ray-tracing acceleration structure command encoder from a descriptor.
 func makeAccelerationStructureCommandEncoder(descriptor: MTLAccelerationStructurePassDescriptor) -> any MTLAccelerationStructureCommandEncoder
 ```
 
+```objc
+- (id<MTLAccelerationStructureCommandEncoder>) accelerationStructureCommandEncoderWithDescriptor:(MTLAccelerationStructurePassDescriptor *) descriptor;
+```
+
 #### Discussion
 
-Use an [`MTLAccelerationStructureCommandEncoder`](mtlaccelerationstructurecommandencoder.md) instance’s methods to set up a single ray-tracing pass.
+Use an [`MTLAccelerationStructureCommandEncoder`](../mtlaccelerationstructurecommandencoder.md) instance’s methods to set up a single ray-tracing pass.
 
 ## Parameters
 
-- `descriptor`: An [`MTLAccelerationStructurePassDescriptor`](mtlaccelerationstructurepassdescriptor.md) instance that configures the [`MTLAccelerationStructureCommandEncoder`](mtlaccelerationstructurecommandencoder.md) the method returns.
+- `descriptor`: An [`MTLAccelerationStructurePassDescriptor`](../mtlaccelerationstructurepassdescriptor.md) instance that configures the [`MTLAccelerationStructureCommandEncoder`](../mtlaccelerationstructurecommandencoder.md) the method returns.
 
 ## See Also
 
-- [func makeAccelerationStructureCommandEncoder() -> (any MTLAccelerationStructureCommandEncoder)?](mtlcommandbuffer/makeaccelerationstructurecommandencoder.md)
+### Creating acceleration structure encoders
+- [func makeAccelerationStructureCommandEncoder() -> (any MTLAccelerationStructureCommandEncoder)?](./makeaccelerationstructurecommandencoder%28%29.md)
   Creates a ray-tracing acceleration structure command encoder that uses default settings.
 
 

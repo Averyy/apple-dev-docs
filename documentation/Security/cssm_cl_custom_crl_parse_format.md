@@ -1,7 +1,8 @@
 # CSSM_CL_CUSTOM_CRL_PARSE_FORMAT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_CL_CUSTOM_CRL_PARSE_FORMAT: Int { get }
+```
+
+```c
+CSSM_CL_CUSTOM_CRL_PARSE_FORMAT
 ```
 
 

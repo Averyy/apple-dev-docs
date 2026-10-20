@@ -1,7 +1,8 @@
 # init(_:systemImage:role:intent:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button with a specified role that generates its label from a string and a system image.
 
@@ -20,9 +21,23 @@ nonisolated
 init(_ title: some StringProtocol, systemImage: String, role: ButtonRole? = nil, intent: some AppIntent)
 ```
 
+Available when `Label` is `Label<Text, Image>`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, systemImage: String, role: ButtonRole? = nil, intent: some AppIntent)
+```
+
+```swift
+nonisolated
+init(_ titleResource: LocalizedStringResource, systemImage: String, role: ButtonRole? = nil, intent: some AppIntent)
+```
+
 #### Discussion
 
-This initializer creates a [`Label`](label.md) view on your behalf, and treats the title similar to [`init(_:)`](text/init(_:)-9d1g4.md). See [`Text`](text.md) for more information about localizing strings.
+This initializer creates a [`Label`](../label.md) view on your behalf, and treats the title similar to [`init(_:)`](../text/init%28_%29-9d1g4.md). See [`Text`](../text.md) for more information about localizing strings.
 
 ## Parameters
 
@@ -33,15 +48,16 @@ This initializer creates a [`Label`](label.md) view on your behalf, and treats t
 
 ## See Also
 
-- [init(_:intent:)](button/init(_:intent:).md)
+### Creating a button to perform an App Intent
+- [init(_:intent:)](./init%28_,intent%29.md)
   Creates a button that performs an `AppIntent` and generates its label from a localized string key.
-- [init<I>(intent: I, label: () -> Label)](button/init(intent:label:).md)
+- [init<I>(intent: I, label: () -> Label)](./init%28intent,label%29.md)
   Creates a button that performs an `AppIntent`.
-- [init(_:role:intent:)](button/init(_:role:intent:).md)
+- [init(_:role:intent:)](./init%28_,role,intent%29.md)
   Creates a button with a specified role that performs an `AppIntent` and generates its label from a string.
-- [init(role: ButtonRole?, intent: some AppIntent, label: () -> Label)](button/init(role:intent:label:).md)
+- [init(role: ButtonRole?, intent: some AppIntent, label: () -> Label)](./init%28role,intent,label%29.md)
   Creates a button with a specified role that performs an `AppIntent`.
-- [init(_:image:role:intent:)](button/init(_:image:role:intent:).md)
+- [init(_:image:role:intent:)](./init%28_,image,role,intent%29.md)
   Creates a button with a specified role that generates its label from a string and an image resource.
 
 

@@ -1,7 +1,8 @@
 # FinanceStore.HistoryToken
 
 **Framework**: FinanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the starting point to use for financial data queries.
 
@@ -17,24 +18,24 @@ struct HistoryToken
 
 #### Overview
 
-The framework returns this as part of a [`FinanceStore.Changes`](financestore/changes.md) instance when iterating over a `History` sequence.
+The framework returns this as part of a [`FinanceStore.Changes`](./changes.md) instance when iterating over a `History` sequence.
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](financestore/historytoken/init(from:).md)
+- [init(from: any Decoder) throws](./historytoken/init%28from%29.md)
   Initializes a new history token using data from the provided decoder.
 ### Instance Methods
-- [func encode(to: any Encoder) throws](financestore/historytoken/encode(to:).md)
+- [func encode(to: any Encoder) throws](./historytoken/encode%28to%29.md)
   Encodes the history token into the provided encoder.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

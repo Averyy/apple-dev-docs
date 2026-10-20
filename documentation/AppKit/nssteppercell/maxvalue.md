@@ -1,17 +1,22 @@
 # maxValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum value for the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var maxValue: Double { get set }
+```
+
+```objc
+@property double maxValue;
 ```
 
 #### Discussion
@@ -20,10 +25,12 @@ The default is 59.
 
 ## See Also
 
-- [Stepper Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Steppers/Steppers.html#//apple_ref/doc/uid/10000108i)
-- [var minValue: Double](nssteppercell/minvalue.md)
+### Related Documentation
+- [Stepper Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Steppers/Steppers.html#//apple_ref/doc/uid/10000108i)
+### Specifying value range
+- [var minValue: Double](./minvalue.md)
   The minimum value for the receiver.
-- [var increment: Double](nssteppercell/increment.md)
+- [var increment: Double](./increment.md)
   The amount by which the receiver will change per increment or decrement.
 
 

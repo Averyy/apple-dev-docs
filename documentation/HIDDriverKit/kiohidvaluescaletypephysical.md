@@ -1,25 +1,27 @@
 # kIOHIDValueScaleTypePhysical
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An option to scale the value with respect to the physical minimum and maximum values.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDValueScaleTypePhysical
 ```
 
 ## See Also
 
-- [kIOHIDValueScaleTypeCalibrated](kiohidvaluescaletypecalibrated.md)
+### Getting the Options
+- [kIOHIDValueScaleTypeCalibrated](./kiohidvaluescaletypecalibrated.md)
   An option to scale the value with respect to a set of calibration properties.
-- [kIOHIDValueScaleTypeExponent](kiohidvaluescaletypeexponent.md)
+- [kIOHIDValueScaleTypeExponent](./kiohidvaluescaletypeexponent.md)
   An option to scale the value with respect to the element’s unit exponent.
 
 

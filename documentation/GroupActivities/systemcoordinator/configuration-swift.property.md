@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current configuration of the system coordinator.
 
@@ -16,11 +17,12 @@ final var configuration: SystemCoordinator.Configuration { get set }
 
 #### Discussion
 
-This property stores the [`SystemCoordinator`](systemcoordinator.md) object’s current support for displaying spatial Personas and placing them and your content in a shared simulation space. Assign a new value to this property to support spatial Personas and shared context in the current activity. The default configuration doesn’t enable support for these features.
+This property stores the [`SystemCoordinator`](../systemcoordinator.md) object’s current support for displaying spatial Personas and placing them and your content in a shared simulation space. Assign a new value to this property to support spatial Personas and shared context in the current activity. The default configuration doesn’t enable support for these features.
 
 ## See Also
 
-- [SystemCoordinator.Configuration](systemcoordinator/configuration-swift.struct.md)
+### Configuring the system coordinator
+- [SystemCoordinator.Configuration](./configuration-swift.struct.md)
   A structure that specifies your app’s support for activities that take place in a shared simulation space.
 
 

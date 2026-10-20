@@ -1,27 +1,29 @@
 # IOPrintPlane
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void IOPrintPlane(const IORegistryPlane *plane);
 ```
 
 ## See Also
 
-- [IORegistryEntry](ioregistryentry.md)
+### Driver Registry
+- [IORegistryEntry](./ioregistryentry.md)
   The base class for all objects in the registry.
-- [IORegistryIterator](ioregistryiterator.md)
+- [IORegistryIterator](./ioregistryiterator.md)
   An iterator over the registry.
-- [IOBSDNameMatching](1575336-iobsdnamematching.md)
+- [IOBSDNameMatching](./api-1575336-iobsdnamematching.md)
   Create a matching dictionary that specifies an IOService match based on BSD device name.
-- [Registry Utilities](iokit_fundamentals/registry_utilities.md)
-- [Registry Keys](iokit_fundamentals/registry_keys.md)
+- [Registry Utilities](./iokit_fundamentals/registry_utilities.md)
+- [Registry Keys](./iokit_fundamentals/registry_keys.md)
 
 
 ---

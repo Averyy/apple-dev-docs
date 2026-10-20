@@ -1,7 +1,8 @@
 # CPMaximumMessageItemLeadingDetailTextImageSize
 
 **Framework**: CarPlay  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Maximum size of an image for the detailed text leading image.
 
@@ -14,6 +15,10 @@ Maximum size of an image for the detailed text leading image.
 
 ```swift
 let CPMaximumMessageItemLeadingDetailTextImageSize: CGSize
+```
+
+```c
+extern const CGSize CPMaximumMessageItemLeadingDetailTextImageSize;
 ```
 
 

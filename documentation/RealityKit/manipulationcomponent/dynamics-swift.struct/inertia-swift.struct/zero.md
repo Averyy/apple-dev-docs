@@ -1,7 +1,8 @@
 # zero
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The object moves as if it is weightless.
 

@@ -1,7 +1,8 @@
 # maximalIdentifier
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a BCP-47 identifier that always includes the script: “zh-Hant-TW”, “en-Latn-US”
 

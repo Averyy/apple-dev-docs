@@ -1,7 +1,8 @@
 # kCGImagePropertyPNGComment
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string that contains image comments.
 
@@ -20,25 +21,30 @@ A string that contains image comments.
 let kCGImagePropertyPNGComment: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyPNGComment;
+```
+
 ## See Also
 
-- [let kCGImagePropertyPNGTitle: CFString](kcgimagepropertypngtitle.md)
+### Descriptive Information
+- [let kCGImagePropertyPNGTitle: CFString](./kcgimagepropertypngtitle.md)
   A string that holds the image’s title.
-- [let kCGImagePropertyPNGDescription: CFString](kcgimagepropertypngdescription.md)
+- [let kCGImagePropertyPNGDescription: CFString](./kcgimagepropertypngdescription.md)
   A string that describes the image.
-- [let kCGImagePropertyPNGDisclaimer: CFString](kcgimagepropertypngdisclaimer.md)
+- [let kCGImagePropertyPNGDisclaimer: CFString](./kcgimagepropertypngdisclaimer.md)
   A disclaimer string.
-- [let kCGImagePropertyPNGWarning: CFString](kcgimagepropertypngwarning.md)
+- [let kCGImagePropertyPNGWarning: CFString](./kcgimagepropertypngwarning.md)
   A warning string.
-- [let kCGImagePropertyPNGAuthor: CFString](kcgimagepropertypngauthor.md)
+- [let kCGImagePropertyPNGAuthor: CFString](./kcgimagepropertypngauthor.md)
   A string that identifies the author of the image.
-- [let kCGImagePropertyPNGCopyright: CFString](kcgimagepropertypngcopyright.md)
+- [let kCGImagePropertyPNGCopyright: CFString](./kcgimagepropertypngcopyright.md)
   A string that identifies the copyright of the image.
-- [let kCGImagePropertyPNGCreationTime: CFString](kcgimagepropertypngcreationtime.md)
+- [let kCGImagePropertyPNGCreationTime: CFString](./kcgimagepropertypngcreationtime.md)
   A string that identifies the date and time the image was created.
-- [let kCGImagePropertyPNGModificationTime: CFString](kcgimagepropertypngmodificationtime.md)
+- [let kCGImagePropertyPNGModificationTime: CFString](./kcgimagepropertypngmodificationtime.md)
   A string that identifies the last date and time the image was modified.
-- [let kCGImagePropertyPNGSoftware: CFString](kcgimagepropertypngsoftware.md)
+- [let kCGImagePropertyPNGSoftware: CFString](./kcgimagepropertypngsoftware.md)
   A string that identifies the software used to create the image.
 
 

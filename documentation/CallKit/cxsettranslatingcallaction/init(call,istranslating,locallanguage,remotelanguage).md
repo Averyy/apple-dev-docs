@@ -1,7 +1,8 @@
 # init(call:isTranslating:localLanguage:remoteLanguage:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 init(call uuid: UUID, isTranslating: Bool, localLanguage: String, remoteLanguage: String)
+```
+
+```objc
+- (instancetype) initWithCallUUID:(NSUUID *) uuid isTranslating:(BOOL) isTranslating localLanguage:(NSString *) localLanguage remoteLanguage:(NSString *) remoteLanguage;
 ```
 
 

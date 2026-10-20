@@ -1,7 +1,8 @@
 # cancelPowerAdjustRequest(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command CancelPowerAdjustRequest
 
@@ -17,7 +18,15 @@ Command CancelPowerAdjustRequest
 ## Declaration
 
 ```swift
+func cancelPowerAdjustRequest(with params: MTRDeviceEnergyManagementClusterCancelPowerAdjustRequestParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func cancelPowerAdjustRequest(with params: MTRDeviceEnergyManagementClusterCancelPowerAdjustRequestParams?) async throws
+```
+
+```objc
+- (void) cancelPowerAdjustRequestWithParams:(MTRDeviceEnergyManagementClusterCancelPowerAdjustRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

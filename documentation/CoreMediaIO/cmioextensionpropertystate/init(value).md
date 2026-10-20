@@ -1,7 +1,8 @@
 # init(value:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a property state with a value.
 
@@ -15,9 +16,13 @@ Creates a property state with a value.
 convenience init(value: ObjectType?)
 ```
 
+```objc
+- (instancetype) initWithValue:(ObjectType) value;
+```
+
 #### Discussion
 
-The system supports the following value types: [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSData`](https://developer.apple.com/documentation/foundation/nsdata), and [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber).
+The system supports the following value types: [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSArray`](../../Foundation/nsarray.md), [`NSString`](../../Foundation/nsstring.md), [`NSData`](../../Foundation/nsdata.md), and [`NSNumber`](../../Foundation/nsnumber.md).
 
 ## Parameters
 
@@ -25,7 +30,8 @@ The system supports the following value types: [`NSDictionary`](https://develope
 
 ## See Also
 
-- [init(value: ObjectType?, attributes: CMIOExtensionPropertyAttributes<ObjectType>?)](cmioextensionpropertystate/init(value:attributes:).md)
+### Creating a Property State
+- [init(value: ObjectType?, attributes: CMIOExtensionPropertyAttributes<ObjectType>?)](./init%28value,attributes%29.md)
   Creates a property state with a value and attributes.
 
 

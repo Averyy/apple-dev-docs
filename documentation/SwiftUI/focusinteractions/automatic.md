@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The view supports whatever focus-driven interactions are commonly expected for interactive content on the current platform.
 
@@ -22,9 +23,10 @@ static var automatic: FocusInteractions { get }
 
 ## See Also
 
-- [static let activate: FocusInteractions](focusinteractions/activate.md)
+### Creating the interaction types
+- [static let activate: FocusInteractions](./activate.md)
   The view has a primary action that can be activated via focus gestures.
-- [static let edit: FocusInteractions](focusinteractions/edit.md)
+- [static let edit: FocusInteractions](./edit.md)
   The view captures input from non-spatial sources like a keyboard or Digital Crown.
 
 

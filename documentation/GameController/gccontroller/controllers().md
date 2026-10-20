@@ -1,7 +1,8 @@
 # controllers()
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the connected controllers for the device.
 
@@ -19,10 +20,14 @@ Returns the connected controllers for the device.
 class func controllers() -> [GCController]
 ```
 
+```objc
++ (NSArray<GCController *> *) controllers;
+```
+
 ## Mentions
 
-- [Discovering game controllers](discovering-game-controllers.md)
-- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+- [Discovering game controllers](../discovering-game-controllers.md)
+- [Discovering and tracking spatial game controllers and styli](../discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
 #### Return Value
 
@@ -30,17 +35,18 @@ The currently connected controllers.
 
 #### Discussion
 
-To track the connection status of controllers, observe the framework notifications. The framework posts the [`GCControllerDidConnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdidconnect) (Swift) and [`GCControllerDidBecomeCurrent`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdidbecomecurrent) (Swift) notifications when a controller connects to a device. For Objective-C, it posts the [`GCControllerDidConnectNotification`](gccontrollerdidconnectnotification.md) and [`GCControllerDidBecomeCurrentNotification`](gccontrollerdidbecomecurrentnotification.md) notifications. When a controller disconnects from a device, it posts the [`GCControllerDidDisconnect`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect) (Swift) and [`GCControllerDidStopBeingCurrent`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/gccontrollerdidstopbeingcurrent) (Swift) notifications. For Objective-C, it posts the [`GCControllerDidDisconnectNotification`](gccontrollerdiddisconnectnotification.md) and [`GCControllerDidStopBeingCurrentNotification`](gccontrollerdidstopbeingcurrentnotification.md) notifications.
+To track the connection status of controllers, observe the framework notifications. The framework posts the [`GCControllerDidConnect`](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md) (Swift) and [`GCControllerDidBecomeCurrent`](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidbecomecurrent.md) (Swift) notifications when a controller connects to a device. For Objective-C, it posts the [`GCControllerDidConnectNotification`](../gccontrollerdidconnectnotification.md) and [`GCControllerDidBecomeCurrentNotification`](../gccontrollerdidbecomecurrentnotification.md) notifications. When a controller disconnects from a device, it posts the [`GCControllerDidDisconnect`](../../Foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect.md) (Swift) and [`GCControllerDidStopBeingCurrent`](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidstopbeingcurrent.md) (Swift) notifications. For Objective-C, it posts the [`GCControllerDidDisconnectNotification`](../gccontrollerdiddisconnectnotification.md) and [`GCControllerDidStopBeingCurrentNotification`](../gccontrollerdidstopbeingcurrentnotification.md) notifications.
 
 ## See Also
 
-- [class func startWirelessControllerDiscovery(completionHandler: (() -> Void)?)](gccontroller/startwirelesscontrollerdiscovery(completionhandler:).md)
+### Discovering controllers
+- [class func startWirelessControllerDiscovery(completionHandler: (() -> Void)?)](./startwirelesscontrollerdiscovery%28completionhandler%29.md)
   Starts searching for nearby wireless controllers.
-- [class func stopWirelessControllerDiscovery()](gccontroller/stopwirelesscontrollerdiscovery.md)
+- [class func stopWirelessControllerDiscovery()](./stopwirelesscontrollerdiscovery%28%29.md)
   Stops searching for nearby wireless controllers.
-- [static let GCControllerDidConnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md)
+- [static let GCControllerDidConnect: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md)
   A notification that posts after a controller connects to the device.
-- [static let GCControllerDidDisconnect: NSNotification.Name](../foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect.md)
+- [static let GCControllerDidDisconnect: NSNotification.Name](../../Foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect.md)
   A notification that posts after a controller disconnects from the device.
 
 

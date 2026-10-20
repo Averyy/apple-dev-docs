@@ -1,36 +1,50 @@
 # objc_func_loadImage
 
 **Framework**: Objective-C Runtime  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+typealias objc_func_loadImage = (OpaquePointer) -> Void
+```
+
+*Mac Catalyst, macOS*
 
 ```swift
 typealias objc_func_loadImage = (UnsafePointer<mach_header>) -> Void
 ```
 
+```c
+typedef void (*)(const struct mach_header *) objc_func_loadImage;
+```
+
 ## See Also
 
-- [typealias NSInteger](nsinteger.md)
+### Data Types
+- [typealias NSInteger](./nsinteger.md)
   Describes an integer.
-- [typealias objc_exception_handler](objc_exception_handler.md)
-- [typealias objc_exception_matcher](objc_exception_matcher.md)
-- [typealias objc_exception_preprocessor](objc_exception_preprocessor.md)
-- [typealias objc_hook_getClass](objc_hook_getclass.md)
-- [typealias objc_hook_getImageName](objc_hook_getimagename.md)
-- [typealias objc_hook_lazyClassNamer](objc_hook_lazyclassnamer.md)
-- [typealias objc_objectptr_t](objc_objectptr_t.md)
-- [typealias objc_uncaught_exception_handler](objc_uncaught_exception_handler.md)
-- [typealias objc_zone_t](objc_zone_t.md)
+- [typealias objc_exception_handler](./objc_exception_handler.md)
+- [typealias objc_exception_matcher](./objc_exception_matcher.md)
+- [typealias objc_exception_preprocessor](./objc_exception_preprocessor.md)
+- [typealias objc_hook_getClass](./objc_hook_getclass.md)
+- [typealias objc_hook_getImageName](./objc_hook_getimagename.md)
+- [typealias objc_hook_lazyClassNamer](./objc_hook_lazyclassnamer.md)
+- [typealias objc_objectptr_t](./objc_objectptr_t.md)
+- [typealias objc_uncaught_exception_handler](./objc_uncaught_exception_handler.md)
+- [typealias objc_zone_t](./objc_zone_t.md)
 
 
 ---

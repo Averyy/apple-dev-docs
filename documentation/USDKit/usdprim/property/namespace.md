@@ -1,7 +1,8 @@
 # namespace
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The namespace prefix of this property’s name, or an empty token if it has none.
 

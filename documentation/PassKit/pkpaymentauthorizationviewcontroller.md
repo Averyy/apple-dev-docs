@@ -1,7 +1,8 @@
 # PKPaymentAuthorizationViewController
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that presents a sheet that prompts the user to authorize a payment request.
 
@@ -18,6 +19,18 @@ An object that presents a sheet that prompts the user to authorize a payment req
 class PKPaymentAuthorizationViewController
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@interface PKPaymentAuthorizationViewController : UIViewController
+```
+
+*macOS*
+
+```objc
+@interface PKPaymentAuthorizationViewController : NSViewController
+```
+
 #### Overview
 
 After the user authorizes the payment request for a transaction, the delegate is called with a payment token used to authorize the transaction’s payment.
@@ -25,65 +38,66 @@ After the user authorizes the payment request for a transaction, the delegate is
 ## Topics
 
 ### Determining whether the user can make payments
-- [class func canMakePayments() -> Bool](pkpaymentauthorizationviewcontroller/canmakepayments.md)
+- [class func canMakePayments() -> Bool](./pkpaymentauthorizationviewcontroller/canmakepayments%28%29.md)
   Returns whether the user can make payments.
-- [class func canMakePayments(usingNetworks: [PKPaymentNetwork]) -> Bool](pkpaymentauthorizationviewcontroller/canmakepayments(usingnetworks:).md)
+- [class func canMakePayments(usingNetworks: [PKPaymentNetwork]) -> Bool](./pkpaymentauthorizationviewcontroller/canmakepayments%28usingnetworks%29.md)
   Returns whether the user can make payments through the specified network.
-- [class func canMakePayments(usingNetworks: [PKPaymentNetwork], capabilities: PKMerchantCapability) -> Bool](pkpaymentauthorizationviewcontroller/canmakepayments(usingnetworks:capabilities:).md)
+- [class func canMakePayments(usingNetworks: [PKPaymentNetwork], capabilities: PKMerchantCapability) -> Bool](./pkpaymentauthorizationviewcontroller/canmakepayments%28usingnetworks,capabilities%29.md)
   Returns whether the user can make payments using a card from the specified network with the specified capabilities.
-- [class func supportsDisbursements() -> Bool](pkpaymentauthorizationviewcontroller/supportsdisbursements.md)
+- [class func supportsDisbursements() -> Bool](./pkpaymentauthorizationviewcontroller/supportsdisbursements%28%29.md)
   Returns a Boolean value that indicates whether this device can process disbursement requests.
-- [class func supportsDisbursements(using: [PKPaymentNetwork]) -> Bool](pkpaymentauthorizationviewcontroller/supportsdisbursements(using:).md)
+- [class func supportsDisbursements(using: [PKPaymentNetwork]) -> Bool](./pkpaymentauthorizationviewcontroller/supportsdisbursements%28using%29.md)
   Returns a Boolean value that indicates whether this device can process disbursement requests using the specified payment networks.
-- [class func supportsDisbursements(using: [PKPaymentNetwork], capabilities: PKMerchantCapability) -> Bool](pkpaymentauthorizationviewcontroller/supportsdisbursements(using:capabilities:).md)
+- [class func supportsDisbursements(using: [PKPaymentNetwork], capabilities: PKMerchantCapability) -> Bool](./pkpaymentauthorizationviewcontroller/supportsdisbursements%28using,capabilities%29.md)
   Returns a Boolean value that indicates whether this device can process disbursement requests using the specified payment networks and merchant capabilities.
 ### Handling user interactions
-- [var delegate: (any PKPaymentAuthorizationViewControllerDelegate)?](pkpaymentauthorizationviewcontroller/delegate.md)
+- [var delegate: (any PKPaymentAuthorizationViewControllerDelegate)?](./pkpaymentauthorizationviewcontroller/delegate.md)
   The view controller’s delegate.
-- [protocol PKPaymentAuthorizationViewControllerDelegate](pkpaymentauthorizationviewcontrollerdelegate.md)
+- [protocol PKPaymentAuthorizationViewControllerDelegate](./pkpaymentauthorizationviewcontrollerdelegate.md)
   Methods that let you respond to user interactions with your payment authorization view controller.
 ### Creating a payment authorization view controller
-- [init?(paymentRequest: PKPaymentRequest)](pkpaymentauthorizationviewcontroller/init(paymentrequest:).md)
+- [init?(paymentRequest: PKPaymentRequest)](./pkpaymentauthorizationviewcontroller/init%28paymentrequest%29.md)
   Initializes and returns a payment authorization view controller.
-- [convenience init(disbursementRequest: PKDisbursementRequest)](pkpaymentauthorizationviewcontroller/init(disbursementrequest:).md)
+- [convenience init(disbursementRequest: PKDisbursementRequest)](./pkpaymentauthorizationviewcontroller/init%28disbursementrequest%29.md)
   Initializes and returns a new payment authorization view controller with the provided disbursement request.
 
 ## Relationships
 
 ### Inherits From
-- [NSViewController](../appkit/nsviewcontroller.md)
-- [UIViewController](../uikit/uiviewcontroller.md)
+- [NSViewController](../AppKit/nsviewcontroller.md)
+- [UIViewController](../UIKit/uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSEditor](../appkit/nseditor.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSeguePerforming](../appkit/nssegueperforming.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UIAppearanceContainer](../uikit/uiappearancecontainer.md)
-- [UIContentContainer](../uikit/uicontentcontainer.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIStateRestoring](../uikit/uistaterestoring.md)
-- [UITraitChangeObservable](../uikit/uitraitchangeobservable-67e94.md)
-- [UITraitEnvironment](../uikit/uitraitenvironment.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSEditor](../AppKit/nseditor.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSeguePerforming](../AppKit/nssegueperforming.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UIAppearanceContainer](../UIKit/uiappearancecontainer.md)
+- [UIContentContainer](../UIKit/uicontentcontainer.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIStateRestoring](../UIKit/uistaterestoring.md)
+- [UITraitChangeObservable](../UIKit/uitraitchangeobservable-67e94.md)
+- [UITraitEnvironment](../UIKit/uitraitenvironment.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [class PKPaymentAuthorizationController](pkpaymentauthorizationcontroller.md)
+### Apple Pay availability
+- [class PKPaymentAuthorizationController](./pkpaymentauthorizationcontroller.md)
   An object that presents a sheet that prompts the user to authorize a payment request.
 
 

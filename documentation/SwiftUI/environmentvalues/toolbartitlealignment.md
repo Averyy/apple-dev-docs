@@ -1,7 +1,8 @@
 # toolbarTitleAlignment
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alignment the navigation bar resolved for its title.
 
@@ -22,9 +23,9 @@ var toolbarTitleAlignment: ToolbarTitleAlignment { get set }
 
 #### Discussion
 
-Read this from a custom title view (like a `ToolbarItem` using the [`title`](toolbaritemplacement/title.md) placement) to lay out its content to match the alignment the system chose.
+Read this from a custom title view (like a `ToolbarItem` using the [`title`](../toolbaritemplacement/title.md) placement) to lay out its content to match the alignment the system chose.
 
-When the system has resolved an alignment for the title, this reports that concrete alignment, [`leading`](toolbartitlealignment/leading.md) or [`center`](toolbartitlealignment/center.md), even when you have not set a preference with [`toolbarTitleAlignment(_:)`](view/toolbartitlealignment(_:).md). Otherwise it is [`automatic`](toolbartitlealignment/automatic.md).
+When the system has resolved an alignment for the title, this reports that concrete alignment, [`leading`](../toolbartitlealignment/leading.md) or [`center`](../toolbartitlealignment/center.md), even when you have not set a preference with [`toolbarTitleAlignment(_:)`](../view/toolbartitlealignment%28_%29.md). Otherwise it is [`automatic`](../toolbartitlealignment/automatic.md).
 
 ```swift
 struct AlbumTitle: View {

@@ -1,7 +1,8 @@
 # NSExceptionDomains
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 Custom App Transport Security (ATS) configurations for named domains.
 
@@ -11,9 +12,10 @@ Custom App Transport Security (ATS) configurations for named domains.
 - macOS 10.11+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `NSExceptionDomains` (Exception Domains)
+- **Type**: dictionary
 
 #### Discussion
 
@@ -33,33 +35,33 @@ NSExceptionDomains : Dictionary {
 Follow these rules when setting a domain name string:
 
 - **Use lowercase** — Use `example.com`, not `EXAMPLE.COM`.
-- **Use a DNS domain name, IP address, or range of IP addresses** — In iOS 17, iPadOS 17, and macOS 14, you can use an IPv4 address, for example `192.168.42.63`, or an IPv6 address, for example `2001:db8:12::34`. You can also use a classless inter-domain routing (CIDR) range, for example `2001:db8:12::/48`. For information about how ATS handles IP addresses, see [`NSAllowsLocalNetworking`](information-property-list/nsapptransportsecurity/nsallowslocalnetworking.md).
+- **Use a DNS domain name, IP address, or range of IP addresses** — In iOS 17, iPadOS 17, and macOS 14, you can use an IPv4 address, for example `192.168.42.63`, or an IPv6 address, for example `2001:db8:12::34`. You can also use a classless inter-domain routing (CIDR) range, for example `2001:db8:12::/48`. For information about how ATS handles IP addresses, see [`NSAllowsLocalNetworking`](./nsallowslocalnetworking.md).
 
 > **Note**:  If you exclude a DNS domain name and your app contacts a host by IP address, the ATS exclusion for the domain name doesn’t apply to the connection even if a DNS query for the domain name would resolve to the IP address. If you exclude an IP address and your app contacts a host by DNS name that resolves to that IP address, the ATS exclusion for the IP address doesn’t apply to the connection.
 
 - **Don’t include a port number** — Use `example.com`, not `example.com:443`.
 - **Don’t include a trailing dot, unless you only want to match a domain string with a trailing dot** — For example, `example.com.` (with a trailing dot) matches “example.com.” but not “example.com”. Similarly, `example.com` matches “example.com” but not “example.com.”.
-- **Don’t use wildcard domains** — Don’t use `*.example.com`. Instead, use `example.com` and set [`NSIncludesSubdomains`](information-property-list/nsincludessubdomains.md) to `YES`.
+- **Don’t use wildcard domains** — Don’t use `*.example.com`. Instead, use `example.com` and set [`NSIncludesSubdomains`](../nsincludessubdomains.md) to `YES`.
 
 The values for the keys in each individual domain’s dictionary control how ATS treats connections made to that domain.
 
-> **Note**:  If you specify an exception domain dictionary, ATS ignores any global configuration keys, like [`NSAllowsArbitraryLoads`](information-property-list/nsapptransportsecurity/nsallowsarbitraryloads.md), for that domain. This is true even if you leave the domain-specific dictionary empty and rely entirely on its keys’ default values.
+> **Note**:  If you specify an exception domain dictionary, ATS ignores any global configuration keys, like [`NSAllowsArbitraryLoads`](./nsallowsarbitraryloads.md), for that domain. This is true even if you leave the domain-specific dictionary empty and rely entirely on its keys’ default values.
 
 ## Topics
 
 ### Subdomains
-- [NSIncludesSubdomains](information-property-list/nsincludessubdomains.md)
+- [NSIncludesSubdomains](../nsincludessubdomains.md)
   A Boolean value that indicates whether to extend the configuration to subdomains of the given domain.
 ### Exceptions
-- [NSExceptionAllowsInsecureHTTPLoads](information-property-list/nsexceptionallowsinsecurehttploads.md)
+- [NSExceptionAllowsInsecureHTTPLoads](../nsexceptionallowsinsecurehttploads.md)
   A Boolean value indicating whether to allow insecure HTTP loads.
-- [NSExceptionMinimumTLSVersion](information-property-list/nsexceptionminimumtlsversion.md)
+- [NSExceptionMinimumTLSVersion](../nsexceptionminimumtlsversion.md)
   The minimum Transport Layer Security (TLS) version for network connections.
-- [NSExceptionRequiresForwardSecrecy](information-property-list/nsexceptionrequiresforwardsecrecy.md)
+- [NSExceptionRequiresForwardSecrecy](../nsexceptionrequiresforwardsecrecy.md)
   A Boolean value indicating whether to override the perfect forward secrecy requirement.
-- [NSRequiresCertificateTransparency](information-property-list/nsrequirescertificatetransparency.md)
+- [NSRequiresCertificateTransparency](../nsrequirescertificatetransparency.md)
   An obsolete Boolean value indicating whether to require Certificate Transparency.
-- [NSExceptionRequiresNIAPTLSPackageVersion](information-property-list/nsexceptionrequiresniaptlspackageversion.md)
+- [NSExceptionRequiresNIAPTLSPackageVersion](../nsexceptionrequiresniaptlspackageversion.md)
   A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
 
 

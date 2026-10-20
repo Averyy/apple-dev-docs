@@ -1,7 +1,8 @@
 # beginPath
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Denotes the beginning of new path.
 
@@ -11,7 +12,7 @@ Denotes the beginning of new path.
 
 ## Declaration
 
-```swift
+```
 void beginPath();
 ```
 
@@ -21,9 +22,10 @@ Any calls to `arcTo`, `bezierCurveTo`, `lineTo`, `moveTo`, or `quadraticCurveTo`
 
 ## See Also
 
-- [clip](canvasrenderingcontext2d/1631003-clip.md)
+### Creating Paths (Lines, Curves, Arcs, and Shapes)
+- [clip](./api-1631003-clip.md)
   Constrains the clipping region of the canvas to the current path.
-- [isPointInPath](canvasrenderingcontext2d/1631233-ispointinpath.md)
+- [isPointInPath](./api-1631233-ispointinpath.md)
   Determines whether a specified point is within the area defined by the current path.
 
 

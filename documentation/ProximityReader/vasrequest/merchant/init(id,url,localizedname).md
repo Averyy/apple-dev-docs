@@ -1,7 +1,8 @@
 # init(id:url:localizedName:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new merchant object with the specified information.
 

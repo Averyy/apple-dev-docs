@@ -1,7 +1,8 @@
 # stencilResolveFilter
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filter used for stencil multisample resolve.
 
@@ -19,9 +20,13 @@ The filter used for stencil multisample resolve.
 var stencilResolveFilter: MTLMultisampleStencilResolveFilter { get set }
 ```
 
+```objc
+@property (nonatomic) MTLMultisampleStencilResolveFilter stencilResolveFilter;
+```
+
 #### Discussion
 
-The default value is [`MTLMultisampleStencilResolveFilter.sample0`](mtlmultisamplestencilresolvefilter/sample0.md).
+The default value is [`MTLMultisampleStencilResolveFilter.sample0`](../mtlmultisamplestencilresolvefilter/sample0.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the parent element if this text element is a child of an enclosing element.
 
@@ -18,11 +19,16 @@ A value that represents the parent element if this text element is a child of an
 weak var parent: NSTextElement? { get }
 ```
 
+```objc
+@property (weak, readonly, nullable) NSTextElement * parentElement;
+```
+
 ## See Also
 
-- [var isRepresentedElement: Bool](nstextelement/isrepresentedelement.md)
+### Accessing text elements
+- [var isRepresentedElement: Bool](./isrepresentedelement.md)
   A Boolean value that indicates whether this element is in the text layout.
-- [var childElements: [NSTextElement]](nstextelement/childelements.md)
+- [var childElements: [NSTextElement]](./childelements.md)
   An array of zero or more child text elements.
 
 

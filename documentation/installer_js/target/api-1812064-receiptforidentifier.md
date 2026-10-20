@@ -7,11 +7,11 @@ Provides information about the receipt for a given package on the installation h
 
 ## Declaration
 
-```swift
+```
 receiptForIdentifier(packageID)
 ```
 
-#### Return_value
+#### Return Value
 
 A dictionary with information about the receipt for the specified package.
 

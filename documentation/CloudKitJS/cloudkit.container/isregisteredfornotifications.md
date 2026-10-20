@@ -1,7 +1,8 @@
 # isRegisteredForNotifications
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Boolean value indicating whether this container is registered to receive push notifications.
 
@@ -10,7 +11,7 @@ Boolean value indicating whether this container is registered to receive push no
 
 ## Declaration
 
-```swift
+```
 attribute Boolean isRegisteredForNotifications;
 ```
 
@@ -20,13 +21,14 @@ attribute Boolean isRegisteredForNotifications;
 
 ## See Also
 
-- [addNotificationListener](cloudkit.container/addnotificationlistener.md)
+### Receiving Notifications
+- [addNotificationListener](./addnotificationlistener.md)
   Adds a function to call when a push notification occurs.
-- [removeNotificationListener](cloudkit.container/removenotificationlistener.md)
+- [removeNotificationListener](./removenotificationlistener.md)
   Removes a function to call when a push notification occurs.
-- [registerForNotifications](cloudkit.container/registerfornotifications.md)
+- [registerForNotifications](./registerfornotifications.md)
   Registers to receive push notifications.
-- [unregisterForNotifications](cloudkit.container/unregisterfornotifications.md)
+- [unregisterForNotifications](./unregisterfornotifications.md)
   Unregisters to receive push notifications.
 
 

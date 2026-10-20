@@ -1,7 +1,8 @@
 # ringtoneSound
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the sound resource in the app bundle to be used for the provider ringtone.
 
@@ -19,11 +20,16 @@ The name of the sound resource in the app bundle to be used for the provider rin
 var ringtoneSound: String? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSString * ringtoneSound;
+```
+
 ## See Also
 
-- [var localizedName: String?](cxproviderconfiguration/localizedname.md)
+### Configuring Native Call UI
+- [var localizedName: String?](./localizedname.md)
   The localized name of the provider.
-- [var iconTemplateImageData: Data?](cxproviderconfiguration/icontemplateimagedata.md)
+- [var iconTemplateImageData: Data?](./icontemplateimagedata.md)
   The PNG data for the icon image to be displayed for the provider.
 
 

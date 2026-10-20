@@ -1,7 +1,8 @@
 # HMCharacteristicValueLabelNamespace
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the label namespace.
 
@@ -19,25 +20,29 @@ Possible values for the label namespace.
 enum HMCharacteristicValueLabelNamespace
 ```
 
+```c
+enum HMCharacteristicValueLabelNamespace : NSInteger;
+```
+
 ## Topics
 
 ### Namespaces
-- [HMCharacteristicValueLabelNamespace.dot](hmcharacteristicvaluelabelnamespace/dot.md)
+- [HMCharacteristicValueLabelNamespace.dot](./hmcharacteristicvaluelabelnamespace/dot.md)
   The label index indicates the number of dots, like `.`, `..`, `...`, and so on.
-- [HMCharacteristicValueLabelNamespace.numeral](hmcharacteristicvaluelabelnamespace/numeral.md)
+- [HMCharacteristicValueLabelNamespace.numeral](./hmcharacteristicvaluelabelnamespace/numeral.md)
   The label index indicates the arabic numeral, like 1, 2, 3, and so on.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluelabelnamespace/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluelabelnamespace/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

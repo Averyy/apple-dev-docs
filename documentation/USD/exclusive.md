@@ -1,6 +1,7 @@
 # exclusive
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 A Boolean value that determines if a behavior executes exclusively.
 
@@ -16,9 +17,10 @@ uniform bool exclusive = false
 
 ## See Also
 
-- [triggers](triggers.md)
+### Properties
+- [triggers](./triggers.md)
   A list of prims that execute a behavior’s actions.
-- [actions](actions.md)
+- [actions](./actions.md)
   A list of actions that make up the group.
 
 

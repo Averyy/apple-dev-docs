@@ -1,7 +1,8 @@
 # address
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The host address.
 
@@ -18,15 +19,20 @@ The host address.
 var address: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * address;
+```
+
 ## See Also
 
-- [var name: String](midinetworkhost/name.md)
+### Inspecting Host Properties
+- [var name: String](./name.md)
   The host name.
-- [var netServiceName: String?](midinetworkhost/netservicename.md)
+- [var netServiceName: String?](./netservicename.md)
   The net service name.
-- [var netServiceDomain: String?](midinetworkhost/netservicedomain.md)
+- [var netServiceDomain: String?](./netservicedomain.md)
   The net service domain.
-- [var port: Int](midinetworkhost/port.md)
+- [var port: Int](./port.md)
   The host port.
 
 

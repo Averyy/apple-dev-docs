@@ -1,7 +1,8 @@
 # trailingZeroBitCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of trailing zeros in this value’s binary representation.
 

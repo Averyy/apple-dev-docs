@@ -1,7 +1,8 @@
 # share
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A string that represents the record type for CloudKit share records.
 
@@ -11,7 +12,7 @@ A string that represents the record type for CloudKit share records.
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -23,7 +24,8 @@ static let share: CKRecord.RecordType
 
 ## See Also
 
-- [static let userRecord: CKRecord.RecordType](ckrecord/systemtype/userrecord.md)
+### Types of System Records
+- [static let userRecord: CKRecord.RecordType](./userrecord.md)
   A string that represents the record type for CloudKit user records.
 
 

@@ -1,7 +1,8 @@
 # SecItemAttr.serviceItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the service attribute.
 
@@ -13,6 +14,10 @@ Identifies the service attribute.
 
 ```swift
 case serviceItemAttr
+```
+
+```c
+kSecServiceItemAttr
 ```
 
 #### Discussion

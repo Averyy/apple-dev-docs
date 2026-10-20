@@ -1,7 +1,8 @@
 # update(_:forFileAt:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides searchable attributes for a file at the specified URL.
 
@@ -18,9 +19,13 @@ Provides searchable attributes for a file at the specified URL.
 func update(_ attributes: CSSearchableItemAttributeSet, forFileAt contentURL: URL) throws
 ```
 
+```objc
+- (BOOL) updateAttributes:(CSSearchableItemAttributeSet *) attributes forFileAtURL:(NSURL *) contentURL error:(NSError **) error;
+```
+
 #### Discussion
 
-When Core Spotlight invokes this method, update the properties of the attribute set according to the content in the specified file. For a complete list of properties available, see [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md).
+When Core Spotlight invokes this method, update the properties of the attribute set according to the content in the specified file. For a complete list of properties available, see [`CSSearchableItemAttributeSet`](../cssearchableitemattributeset.md).
 
 > ❗ **Important**:  Core Spotlight indexes files in batches and may call this method simultaneously on multiple queues with different values of `contentURL`.
 

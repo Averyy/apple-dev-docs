@@ -1,7 +1,8 @@
 # init(scheme:host:port:path:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL components instance
 

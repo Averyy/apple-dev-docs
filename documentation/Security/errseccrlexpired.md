@@ -1,7 +1,8 @@
 # errSecCRLExpired
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate revocation list has expired.
 
@@ -18,6 +19,10 @@ The certificate revocation list has expired.
 
 ```swift
 var errSecCRLExpired: OSStatus { get }
+```
+
+```c
+errSecCRLExpired
 ```
 
 

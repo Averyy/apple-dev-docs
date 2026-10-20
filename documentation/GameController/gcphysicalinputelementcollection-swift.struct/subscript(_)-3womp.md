@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Game Controller  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the collection’s elements using the element’s name.
 
@@ -11,13 +12,15 @@ Accesses the collection’s elements using the element’s name.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 subscript<Name>(elementName: Name) -> Name.PhysicalInputElement? where Name : GCPhysicalInputElementTypedName { get }
 ```
+
+Available when `T` conforms to `GCPhysicalInputElement`.
 
 
 ---

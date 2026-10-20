@@ -1,7 +1,8 @@
 # CMSyncConvertTime(_:from:to:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts a time from one timebase or clock to another timebase or clock.
 
@@ -20,6 +21,10 @@ Converts a time from one timebase or clock to another timebase or clock.
 func CMSyncConvertTime(_ time: CMTime, from fromClockOrTimebase: CMClockOrTimebase, to toClockOrTimebase: CMClockOrTimebase) -> CMTime
 ```
 
+```c
+extern CMTime CMSyncConvertTime(CMTime time, CMClockOrTimebaseRef fromClockOrTimebase, CMClockOrTimebaseRef toClockOrTimebase);
+```
+
 #### Discussion
 
 If both have a common host, the function syncs the clock or timebase based on the rates in the common tree rooted in that host.
@@ -28,11 +33,12 @@ If they have different host clocks (or are both clocks), this calculation also c
 
 ## See Also
 
-- [func CMSyncGetTime(CMClockOrTimebase) -> CMTime](cmsyncgettime(_:).md)
+### Getting and Syncing Time
+- [func CMSyncGetTime(CMClockOrTimebase) -> CMTime](./cmsyncgettime%28_%29.md)
   Returns the time from a clock or timebase.
-- [func CMSyncGetRelativeRate(CMClockOrTimebase, relativeTo: CMClockOrTimebase) -> Float64](cmsyncgetrelativerate(_:relativeto:).md)
+- [func CMSyncGetRelativeRate(CMClockOrTimebase, relativeTo: CMClockOrTimebase) -> Float64](./cmsyncgetrelativerate%28_,relativeto%29.md)
   Returns the relative rate of one timebase or clock relative to another timebase or clock.
-- [func CMSyncGetRelativeRateAndAnchorTime(CMClockOrTimebase, relativeTo: CMClockOrTimebase, relativeRateOut: UnsafeMutablePointer<Float64>?, anchorTimeOut: UnsafeMutablePointer<CMTime>?, relativeToAnchorTimeOut: UnsafeMutablePointer<CMTime>?) -> OSStatus](cmsyncgetrelativerateandanchortime(_:relativeto:relativerateout:anchortimeout:relativetoanchortimeout:).md)
+- [func CMSyncGetRelativeRateAndAnchorTime(CMClockOrTimebase, relativeTo: CMClockOrTimebase, relativeRateOut: UnsafeMutablePointer<Float64>?, anchorTimeOut: UnsafeMutablePointer<CMTime>?, relativeToAnchorTimeOut: UnsafeMutablePointer<CMTime>?) -> OSStatus](./cmsyncgetrelativerateandanchortime%28_,relativeto,relativerateout,anchortimeout,relativetoanchortimeout%29.md)
   Returns the relative rate of one timebase or clock relative to another timebase or clock and the times of each timebase or clock at which the relative rate went into effect.
 
 

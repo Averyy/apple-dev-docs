@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a placement that indicates the system should present the window more prominently than others in the space.
 
@@ -9,8 +10,8 @@ Creates a placement that indicates the system should present the window more pro
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 

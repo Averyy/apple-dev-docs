@@ -1,7 +1,8 @@
 # rect
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a rectangle encapsulating the bounds.
 

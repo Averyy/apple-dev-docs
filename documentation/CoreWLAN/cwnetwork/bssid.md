@@ -1,7 +1,8 @@
 # bssid
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The basic service set identifier (BSSID) for the network, returned as UTF-8 string.
 
@@ -14,29 +15,34 @@ The basic service set identifier (BSSID) for the network, returned as UTF-8 stri
 var bssid: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * bssid;
+```
+
 #### Discussion
 
 Returns a UTF-8 string formatted as <00:00:00:00:00:00>.
 
 ## See Also
 
-- [var beaconInterval: Int](cwnetwork/beaconinterval.md)
+### Instance Properties
+- [var beaconInterval: Int](./beaconinterval.md)
   The beacon interval (ms) for the network.
-- [var countryCode: String?](cwnetwork/countrycode.md)
+- [var countryCode: String?](./countrycode.md)
   The country code (ISO/IEC 3166-1:1997) for the network.
-- [var ibss: Bool](cwnetwork/ibss.md)
+- [var ibss: Bool](./ibss.md)
   The network is an IBSS network.
-- [var informationElementData: Data?](cwnetwork/informationelementdata.md)
+- [var informationElementData: Data?](./informationelementdata.md)
   Information element data included in beacon or probe response frames.
-- [var noiseMeasurement: Int](cwnetwork/noisemeasurement.md)
+- [var noiseMeasurement: Int](./noisemeasurement.md)
   The aggregate noise measurement (dBm) for the network.
-- [var rssiValue: Int](cwnetwork/rssivalue.md)
+- [var rssiValue: Int](./rssivalue.md)
   The aggregate received signal strength indication (RSSI) measurement (dBm) for the network.
-- [var ssid: String?](cwnetwork/ssid.md)
+- [var ssid: String?](./ssid.md)
   The service set identifier (SSID) for the network, encoded as a string.
-- [var ssidData: Data?](cwnetwork/ssiddata.md)
+- [var ssidData: Data?](./ssiddata.md)
   The service set identifier (SSID) for the network, returned as data.
-- [var wlanChannel: CWChannel?](cwnetwork/wlanchannel.md)
+- [var wlanChannel: CWChannel?](./wlanchannel.md)
   The channel for the network.
 
 

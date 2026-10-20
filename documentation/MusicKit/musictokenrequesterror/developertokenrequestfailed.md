@@ -1,7 +1,8 @@
 # MusicTokenRequestError.developerTokenRequestFailed
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a failure in the process of fetching a developer token for the current app.
 

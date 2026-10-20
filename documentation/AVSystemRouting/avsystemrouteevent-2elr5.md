@@ -1,7 +1,8 @@
 # AVSystemRouteEvent
 
 **Framework**: AVSystemRouting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents an event that occurs on a system route.
 
@@ -18,28 +19,29 @@ final class AVSystemRouteEvent
 
 ## Mentions
 
-- [Routing media to third-party devices](routing-media-to-third-party-devices.md)
+- [Routing media to third-party devices](./routing-media-to-third-party-devices.md)
 
 ## Topics
 
 ### Instance Properties
-- [var reason: AVSystemRouteEvent.Reason](avsystemrouteevent-2elr5/reason-swift.property.md)
+- [var reason: AVSystemRouteEvent.Reason](./avsystemrouteevent-2elr5/reason-swift.property.md)
   The reason for the routing event.
-- [var route: AVSystemRoute](avsystemrouteevent-2elr5/route.md)
+- [var route: AVSystemRoute](./avsystemrouteevent-2elr5/route.md)
   The system route for the event.
 ### Enumerations
-- [AVSystemRouteEvent.Reason](avsystemrouteevent-2elr5/reason-swift.enum.md)
+- [AVSystemRouteEvent.Reason](./avsystemrouteevent-2elr5/reason-swift.enum.md)
   Values that indicate the reason for a routing event.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AVSystemRouteEvent.Reason](avsystemrouteevent-2elr5/reason-swift.enum.md)
+### Routing events
+- [AVSystemRouteEvent.Reason](./avsystemrouteevent-2elr5/reason-swift.enum.md)
   Values that indicate the reason for a routing event.
 
 

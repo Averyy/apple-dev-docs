@@ -1,7 +1,8 @@
 # CardMetadata
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Data about the card, including its expiration date and suffix.
 
@@ -11,31 +12,42 @@ Data about the card, including its expiration date and suffix.
 
 ## Declaration
 
-```swift
+```
 object CardMetadata
 ```
 
 ## Properties
 
 - `cardCountry` (string): The 2-letter ISO country code.
+
+  **Maximum Length**: `2`
 - `expirationDate` (string): The card’s expiration date.
+
+  **Maximum Length**: `8`
 - `fpanSuffix` (string): The last four digits of a card’s number.
+
+  **Maximum Length**: `4`
 - `longDescription` (string): The long card description.
+
+  **Maximum Length**: `128`
 - `shortDescription` (string): The short card description.
+
+  **Maximum Length**: `64`
 
 ## See Also
 
-- [Get Details of a Merchant Token Event](merchant-token-event-retrieval.md)
+### Merchant token event retrieval
+- [Get Details of a Merchant Token Event](./merchant-token-event-retrieval.md)
   Get the details of a merchant token event after receiving a notification.
-- [object MerchantTokenEventResponse](merchanttokeneventresponse.md)
+- [object MerchantTokenEventResponse](./merchanttokeneventresponse.md)
   A response body that contains information about a life-cycle event for a merchant token.
-- [object MerchantTokenMetadata](merchanttokenmetadata.md)
+- [object MerchantTokenMetadata](./merchanttokenmetadata.md)
   The card information related to a merchant token, including its card art and metadata.
-- [object CardArt](cardart.md)
+- [object CardArt](./cardart.md)
   Data for displaying art to represent a card.
-- [object EncryptedTokenMetadata](encryptedtokenmetadata.md)
+- [object EncryptedTokenMetadata](./encryptedtokenmetadata.md)
   Encrypted data about the merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
-- [object TokenMetadata](tokenmetadata.md)
+- [object TokenMetadata](./tokenmetadata.md)
   Unencrypted metadata about a merchant token, including its Merchant Payment Account Number (MPAN) and expiration date.
 
 

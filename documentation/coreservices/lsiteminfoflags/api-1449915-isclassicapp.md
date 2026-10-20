@@ -1,7 +1,8 @@
 # isClassicApp
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Item is an application that cannot run natively and must be launched in the Classic emulation environment.
 

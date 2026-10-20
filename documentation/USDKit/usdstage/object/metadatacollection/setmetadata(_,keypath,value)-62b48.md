@@ -1,7 +1,8 @@
 # setMetadata(_:keyPath:value:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value at `keyPath` within the dictionary-valued metadata for the given key.
 

@@ -1,7 +1,8 @@
 # isHighDynamicRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates that this image is tagged for display of high dynamic range content.
 
@@ -19,13 +20,18 @@ Indicates that this image is tagged for display of high dynamic range content.
 var isHighDynamicRange: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL isHighDynamicRange;
+```
+
 ## See Also
 
-- [func imageRestrictedToStandardDynamicRange() -> UIImage](uiimage/imagerestrictedtostandarddynamicrange.md)
+### Specifying the dynamic range
+- [func imageRestrictedToStandardDynamicRange() -> UIImage](./imagerestrictedtostandarddynamicrange%28%29.md)
   Returns a new image that will render within the standard range.
-- [func heicData() -> Data?](uiimage/heicdata.md)
+- [func heicData() -> Data?](./heicdata%28%29.md)
   Returns HEIC data representing the image, or nil if such a representation could not be generated. HEIC is recommended for efficiently storing all kinds of images, including those with high dynamic range content.
-- [UIImage.DynamicRange](uiimage/dynamicrange.md)
+- [UIImage.DynamicRange](./dynamicrange.md)
 
 
 ---

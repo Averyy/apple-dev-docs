@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object from the opacity property of an existing physically based material.
 
@@ -20,9 +21,9 @@ init(_ value: PhysicallyBasedMaterial.Opacity)
 
 #### Discussion
 
-This initializer creates a new object by copying values from an existing physically based material’s [`blending`](physicallybasedmaterial/blending-swift.property.md) property. All of the copied values, including [`scale`](custommaterial/opacity/scale.md), [`texture`](custommaterial/opacity/texture.md), and [`opacityThreshold`](custommaterial/opacitythreshold.md) are available to the material’s surface shader function, but RealityKit draws the entity fully opaque unless the surface shader function calls `params.surface().set_opacity()`.
+This initializer creates a new object by copying values from an existing physically based material’s [`blending`](../../physicallybasedmaterial/blending-swift.property.md) property. All of the copied values, including [`scale`](./scale.md), [`texture`](./texture.md), and [`opacityThreshold`](../opacitythreshold.md) are available to the material’s surface shader function, but RealityKit draws the entity fully opaque unless the surface shader function calls `params.surface().set_opacity()`.
 
-The following Metal code demonstrates how to emulate the blending logic RealityKit uses to render entities with a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) in your custom material’s surface shader function:
+The following Metal code demonstrates how to emulate the blending logic RealityKit uses to render entities with a [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md) in your custom material’s surface shader function:
 
 ```swift
     // Retrieve the opacity scale and threshold from the CustomMaterial.
@@ -58,13 +59,14 @@ The following Metal code demonstrates how to emulate the blending logic RealityK
 
 ## Parameters
 
-- `value`: The opacity property from the [`PhysicallyBasedMaterial`](physicallybasedmaterial.md)’s [`blending`](physicallybasedmaterial/blending-swift.property.md) property.
+- `value`: The opacity property from the [`PhysicallyBasedMaterial`](../../physicallybasedmaterial.md)’s [`blending`](../../physicallybasedmaterial/blending-swift.property.md) property.
 
 ## See Also
 
-- [init(floatLiteral: Float)](custommaterial/opacity/init(floatliteral:).md)
+### Creating an opacity object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an opacity object from a single value.
-- [init(scale: Float, texture: CustomMaterial.Texture?)](custommaterial/opacity/init(scale:texture:).md)
+- [init(scale: Float, texture: CustomMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates an object that defines the opacity of an entity using a single value, a UV-mapped image texture, or both.
 
 

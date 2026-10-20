@@ -1,14 +1,15 @@
 # ipc_info_port_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ipc_info_port {
     ...
 } ipc_info_port_t;
@@ -17,8 +18,8 @@ typedef struct ipc_info_port {
 ## Topics
 
 ### Instance Properties
-- [iip_port_object](ipc_info_port_t/3728004-iip_port_object.md)
-- [iip_receiver_object](ipc_info_port_t/3728005-iip_receiver_object.md)
+- [iip_port_object](./ipc_info_port_t/api-3728004-iip_port_object.md)
+- [iip_receiver_object](./ipc_info_port_t/api-3728005-iip_receiver_object.md)
 
 
 ---

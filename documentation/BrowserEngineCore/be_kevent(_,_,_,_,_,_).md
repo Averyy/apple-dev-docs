@@ -1,7 +1,8 @@
 # be_kevent(_:_:_:_:_:_:)
 
 **Framework**: BrowserEngineCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Registers for kernel events on the specified queue, and returns events that are pending on the queue, using 32-bit data types.
 
@@ -13,6 +14,10 @@ Registers for kernel events on the specified queue, and returns events that are 
 
 ```swift
 func be_kevent(_ kq: Int32, _ changelist: UnsafePointer<kevent>!, _ nchanges: Int32, _ eventlist: UnsafeMutablePointer<kevent>!, _ nevents: Int32, _ be_flags: UInt32) -> Int32
+```
+
+```c
+extern int be_kevent(int kq, const struct kevent *changelist, int nchanges, struct kevent *eventlist, int nevents, unsigned int be_flags);
 ```
 
 #### Return Value
@@ -29,7 +34,7 @@ Use the `EV_SET` macro to fill out `struct kevent` structures with information a
 
 If `be_kevent` encounters an error when there are fewer than `nevents` events written to the `eventlist` array, it adds an event that has the `EV_ERROR` flag set in its `flags` field, and the error information in its `data` field. The `be_kevent` function only returns `-1` if it encounters an error that there isn’t space for it to record in `eventlist`.
 
-You can poll for events on `kq` by passing [`BE_KEVENT_RETURN_IMMEDIATELY`](be_kevent_return_immediately.md) in the `be_flags` argument. Otherwise, `be_kevent64` waits until `nevents` matching events occur on the queue.
+You can poll for events on `kq` by passing [`BE_KEVENT_RETURN_IMMEDIATELY`](./be_kevent_return_immediately.md) in the `be_flags` argument. Otherwise, `be_kevent64` waits until `nevents` matching events occur on the queue.
 
 ## Parameters
 
@@ -42,11 +47,12 @@ You can poll for events on `kq` by passing [`BE_KEVENT_RETURN_IMMEDIATELY`](be_k
 
 ## See Also
 
-- [func be_kevent64(Int32, UnsafePointer<kevent64_s>!, Int32, UnsafeMutablePointer<kevent64_s>!, Int32, UInt32) -> Int32](be_kevent64(_:_:_:_:_:_:).md)
+### Kernel events
+- [func be_kevent64(Int32, UnsafePointer<kevent64_s>!, Int32, UnsafeMutablePointer<kevent64_s>!, Int32, UInt32) -> Int32](./be_kevent64%28_,_,_,_,_,_%29.md)
   Registers for kernel events on the specified queue, and returns events that are pending on the queue, using 64-bit data types.
-- [var BE_KEVENT_NO_FLAGS: Int32](be_kevent_no_flags.md)
+- [var BE_KEVENT_NO_FLAGS: Int32](./be_kevent_no_flags.md)
   Indicates that no flags are set in a request to receive kernel events.
-- [var BE_KEVENT_RETURN_IMMEDIATELY: Int32](be_kevent_return_immediately.md)
+- [var BE_KEVENT_RETURN_IMMEDIATELY: Int32](./be_kevent_return_immediately.md)
   Indicates that a request to receive kernel events needs to return without waiting for events.
 
 

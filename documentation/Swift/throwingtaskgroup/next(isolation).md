@@ -1,7 +1,8 @@
 # next(isolation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
 
@@ -68,18 +69,19 @@ If the next child task throws an error and you propagate that error from this me
 
 Don’t call this method from outside the task where this task group was created. In most cases, the Swift type system prevents this mistake; for example, because the `add(priority:operation:)` method is mutating, that method can’t be called from a concurrent execution context like a child task.
 
-> **Note**: The error thrown by the next child task that completes.
+> **Throws**: The error thrown by the next child task that completes.
 
-> **Note**: `nextResult()`
+> **See Also**: `nextResult()`
 
 ## See Also
 
-- [func next() async throws -> ChildTaskResult?](throwingtaskgroup/next.md)
-- [func nextResult() async -> Result<ChildTaskResult, Failure>?](throwingtaskgroup/nextresult.md)
+### Accessing Individual Results
+- [func next() async throws -> ChildTaskResult?](./next%28%29.md)
+- [func nextResult() async -> Result<ChildTaskResult, Failure>?](./nextresult%28%29.md)
   Wait for the next child task to complete, and return a result containing either the value that the child task returned or the error that it threw.
-- [var isEmpty: Bool](throwingtaskgroup/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
-- [func waitForAll() async throws](throwingtaskgroup/waitforall.md)
+- [func waitForAll() async throws](./waitforall%28%29.md)
   Wait for all of the group’s remaining tasks to complete.
 
 

@@ -1,7 +1,8 @@
 # presentationContextNotProvided
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A context wasn’t provided.
 
@@ -20,11 +21,12 @@ static var presentationContextNotProvided: ASWebAuthenticationSessionError.Code 
 
 ## See Also
 
-- [static var canceledLogin: ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/canceledlogin.md)
+### Error Codes
+- [static var canceledLogin: ASWebAuthenticationSessionError.Code](./canceledlogin.md)
   The login has been canceled.
-- [static var presentationContextInvalid: ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/presentationcontextinvalid.md)
+- [static var presentationContextInvalid: ASWebAuthenticationSessionError.Code](./presentationcontextinvalid.md)
   The context was invalid.
-- [ASWebAuthenticationSessionError.Code](aswebauthenticationsessionerror/code.md)
+- [ASWebAuthenticationSessionError.Code](./code.md)
   The error code for a web authentication session error.
 
 

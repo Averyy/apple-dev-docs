@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for the text storage object.
 
@@ -18,13 +19,18 @@ The delegate for the text storage object.
 weak var delegate: (any NSTextStorageDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<NSTextStorageDelegate> delegate;
+```
+
 #### Discussion
 
-Use a delegate object to monitor edits occurring to the text contents. Your delegate object must conform to the [`NSTextStorageDelegate`](nstextstoragedelegate.md) protocol.
+Use a delegate object to monitor edits occurring to the text contents. Your delegate object must conform to the [`NSTextStorageDelegate`](../nstextstoragedelegate.md) protocol.
 
 ## See Also
 
-- [protocol NSTextStorageDelegate](nstextstoragedelegate.md)
+### Processing the editing actions
+- [protocol NSTextStorageDelegate](../nstextstoragedelegate.md)
   The optional methods that delegates of text storage objects implement to handle text-edit processing.
 
 

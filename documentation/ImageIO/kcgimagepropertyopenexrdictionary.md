@@ -1,7 +1,8 @@
 # kCGImagePropertyOpenEXRDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of properties specific to the OpenEXR metadata standard.
 
@@ -20,9 +21,14 @@ A dictionary of properties specific to the OpenEXR metadata standard.
 let kCGImagePropertyOpenEXRDictionary: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyOpenEXRDictionary;
+```
+
 ## See Also
 
-- [let kCGImagePropertyOpenEXRAspectRatio: CFString](kcgimagepropertyopenexraspectratio.md)
+### Open EXR Properties
+- [let kCGImagePropertyOpenEXRAspectRatio: CFString](./kcgimagepropertyopenexraspectratio.md)
   The aspect ratio of the image.
 
 

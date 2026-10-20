@@ -1,7 +1,8 @@
 # isMonitoringAvailable(for:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value indicating whether the device supports region monitoring using the specified class.
 
@@ -18,9 +19,13 @@ Returns a Boolean value indicating whether the device supports region monitoring
 class func isMonitoringAvailable(for regionClass: AnyClass) -> Bool
 ```
 
+```objc
++ (BOOL) isMonitoringAvailableForClass:(Class) regionClass;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device is capable of monitoring regions using the specified class or [`false`](https://developer.apple.com/documentation/swift/false) if it is not.
+[`true`](../../Swift/true.md) if the device is capable of monitoring regions using the specified class or [`false`](../../Swift/false.md) if it is not.
 
 #### Discussion
 
@@ -28,21 +33,22 @@ The availability of region monitoring support is dependent on the hardware prese
 
 ## Parameters
 
-- `regionClass`: A region monitoring class from the MapKit framework. This class must descend from the [`CLRegion`](clregion.md) class.
+- `regionClass`: A region monitoring class from the MapKit framework. This class must descend from the [`CLRegion`](../clregion.md) class.
 
 ## See Also
 
-- [class func significantLocationChangeMonitoringAvailable() -> Bool](cllocationmanager/significantlocationchangemonitoringavailable.md)
+### Determining the availability of services
+- [class func significantLocationChangeMonitoringAvailable() -> Bool](./significantlocationchangemonitoringavailable%28%29.md)
   Returns a Boolean value indicating whether the significant-change location service is available on the device.
-- [class func headingAvailable() -> Bool](cllocationmanager/headingavailable.md)
+- [class func headingAvailable() -> Bool](./headingavailable%28%29.md)
   Returns a Boolean value indicating whether the location manager is able to generate heading-related events.
-- [var isAuthorizedForWidgetUpdates: Bool](cllocationmanager/isauthorizedforwidgetupdates.md)
+- [var isAuthorizedForWidgetUpdates: Bool](./isauthorizedforwidgetupdates.md)
   A Boolean value that indicates whether a widget is eligible to receive location updates.
-- [var accuracyAuthorization: CLAccuracyAuthorization](cllocationmanager/accuracyauthorization.md)
+- [var accuracyAuthorization: CLAccuracyAuthorization](./accuracyauthorization.md)
   A value that indicates the level of location accuracy the app has permission to use.
-- [class func isRangingAvailable() -> Bool](cllocationmanager/israngingavailable.md)
+- [class func isRangingAvailable() -> Bool](./israngingavailable%28%29.md)
   Returns a Boolean value indicating whether the device supports ranging of beacons that use the iBeacon protocol.
-- [class func locationServicesEnabled() -> Bool](cllocationmanager/locationservicesenabled.md)
+- [class func locationServicesEnabled() -> Bool](./locationservicesenabled%28%29.md)
   Returns a Boolean value indicating whether location services are enabled on the device.
 
 

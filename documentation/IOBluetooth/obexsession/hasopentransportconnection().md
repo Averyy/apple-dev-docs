@@ -1,17 +1,22 @@
 # hasOpenTransportConnection()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 You must override this - it will be called periodically to determine if a transport connection is open or not.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func hasOpenTransportConnection() -> Bool
+```
+
+```objc
+- (Boolean) hasOpenTransportConnection;
 ```
 
 #### Return Value

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct IOUSBHostIsochronousTransactionCompletion {
     ...
 };
@@ -17,9 +17,9 @@ struct IOUSBHostIsochronousTransactionCompletion {
 ## Topics
 
 ### Instance Properties
-- [action](iousbhostisochronoustransactioncompletion/3753546-action.md)
-- [owner](iousbhostisochronoustransactioncompletion/3753547-owner.md)
-- [parameter](iousbhostisochronoustransactioncompletion/3753548-parameter.md)
+- [action](./iousbhostisochronoustransactioncompletion/api-3753546-action.md)
+- [owner](./iousbhostisochronoustransactioncompletion/api-3753547-owner.md)
+- [parameter](./iousbhostisochronoustransactioncompletion/api-3753548-parameter.md)
 
 
 ---

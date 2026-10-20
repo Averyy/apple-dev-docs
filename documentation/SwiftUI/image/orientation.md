@@ -1,7 +1,8 @@
 # Image.Orientation
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The orientation of an image.
 
@@ -25,53 +26,54 @@ enum Orientation
 
 Many image formats such as JPEG include orientation metadata in the image data. In other cases, you can specify image orientation in code. Properly specifying orientation is often important both for displaying the image and for certain kinds of image processing.
 
-In SwiftUI, you provide an orientation value when initializing an [`Image`](image.md) from an existing [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage).
+In SwiftUI, you provide an orientation value when initializing an [`Image`](../image.md) from an existing [`CGImage`](../../CoreGraphics/cgimage.md).
 
 ## Topics
 
 ### Getting image orientations
-- [Image.Orientation.up](image/orientation/up.md)
+- [Image.Orientation.up](./orientation/up.md)
   A value that indicates the original pixel data matches the image’s intended display orientation.
-- [Image.Orientation.down](image/orientation/down.md)
+- [Image.Orientation.down](./orientation/down.md)
   A value that indicates a 180° rotation of the image from the orientation of its original pixel data.
-- [Image.Orientation.left](image/orientation/left.md)
+- [Image.Orientation.left](./orientation/left.md)
   A value that indicates a 90° counterclockwise rotation from the orientation of its original pixel data.
-- [Image.Orientation.right](image/orientation/right.md)
+- [Image.Orientation.right](./orientation/right.md)
   A value that indicates a 90° clockwise rotation of the image from the orientation of its original pixel data.
 ### Getting mirrored image orientation
-- [Image.Orientation.upMirrored](image/orientation/upmirrored.md)
+- [Image.Orientation.upMirrored](./orientation/upmirrored.md)
   A value that indicates a horizontal flip of the image from the orientation of its original pixel data.
-- [Image.Orientation.downMirrored](image/orientation/downmirrored.md)
+- [Image.Orientation.downMirrored](./orientation/downmirrored.md)
   A value that indicates a vertical flip of the image from the orientation of its original pixel data.
-- [Image.Orientation.leftMirrored](image/orientation/leftmirrored.md)
+- [Image.Orientation.leftMirrored](./orientation/leftmirrored.md)
   A value that indicates a 90° clockwise rotation and horizontal flip of the image from the orientation of its original pixel data.
-- [Image.Orientation.rightMirrored](image/orientation/rightmirrored.md)
+- [Image.Orientation.rightMirrored](./orientation/rightmirrored.md)
   A value that indicates a 90° counterclockwise rotation and horizontal flip from the orientation of its original pixel data.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Fitting images into available space](fitting-images-into-available-space.md)
+### Configuring an image
+- [Fitting images into available space](../fitting-images-into-available-space.md)
   Adjust the size and shape of images in your app’s user interface by applying view modifiers.
-- [func imageScale(Image.Scale) -> some View](view/imagescale(_:).md)
+- [func imageScale(Image.Scale) -> some View](../view/imagescale%28_%29.md)
   Scales images within the view according to one of the relative sizes available including small, medium, and large images sizes.
-- [var imageScale: Image.Scale](environmentvalues/imagescale.md)
+- [var imageScale: Image.Scale](../environmentvalues/imagescale.md)
   The image scale for this environment.
-- [Image.Scale](image/scale.md)
+- [Image.Scale](./scale.md)
   A scale to apply to vector images relative to text.
-- [Image.ResizingMode](image/resizingmode.md)
+- [Image.ResizingMode](./resizingmode.md)
   The modes that SwiftUI uses to resize an image to fit within its containing view.
 
 

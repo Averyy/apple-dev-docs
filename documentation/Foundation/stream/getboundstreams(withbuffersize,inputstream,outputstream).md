@@ -1,7 +1,8 @@
 # getBoundStreams(withBufferSize:inputStream:outputStream:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates and returns by reference a bound pair of input and output streams.
 
@@ -20,15 +21,19 @@ Creates and returns by reference a bound pair of input and output streams.
 class func getBoundStreams(withBufferSize bufferSize: Int, inputStream: AutoreleasingUnsafeMutablePointer<InputStream?>?, outputStream: AutoreleasingUnsafeMutablePointer<OutputStream?>?)
 ```
 
+```objc
++ (void) getBoundStreamsWithBufferSize:(NSUInteger) bufferSize inputStream:(NSInputStream **) inputStream outputStream:(NSOutputStream **) outputStream;
+```
+
 ## Mentions
 
-- [Uploading streams of data](uploading-streams-of-data.md)
+- [Uploading streams of data](../uploading-streams-of-data.md)
 
 #### Discussion
 
 The created streams are bound to one another, such that any data written to `outputStream` is received by `inputStream`.
 
-This is a convenience method for calling [`CFStreamCreateBoundPair(_:_:_:_:)`](https://developer.apple.com/documentation/corefoundation/cfstreamcreateboundpair(_:_:_:_:)) and bridging from the returned Core Foundation types.
+This is a convenience method for calling [`CFStreamCreateBoundPair(_:_:_:_:)`](../../CoreFoundation/cfstreamcreateboundpair%28_,_,_,_%29.md) and bridging from the returned Core Foundation types.
 
 ## Parameters
 
@@ -38,7 +43,8 @@ This is a convenience method for calling [`CFStreamCreateBoundPair(_:_:_:_:)`](h
 
 ## See Also
 
-- [func CFStreamCreateBoundPair(CFAllocator!, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!, CFIndex)](../corefoundation/cfstreamcreateboundpair(_:_:_:_:).md)
+### Related Documentation
+- [func CFStreamCreateBoundPair(CFAllocator!, UnsafeMutablePointer<Unmanaged<CFReadStream>?>!, UnsafeMutablePointer<Unmanaged<CFWriteStream>?>!, CFIndex)](../../CoreFoundation/cfstreamcreateboundpair%28_,_,_,_%29.md)
   Creates a bound pair of read and write streams.
 
 

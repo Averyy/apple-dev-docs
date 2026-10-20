@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a command queue with the provided configuration.
@@ -18,6 +19,10 @@ Creates a command queue with the provided configuration.
 
 ```swift
 func makeCommandQueue(descriptor: MTLCommandQueueDescriptor) -> (any MTLCommandQueue)?
+```
+
+```objc
+- (id<MTLCommandQueue>) newCommandQueueWithDescriptor:(MTLCommandQueueDescriptor *) descriptor;
 ```
 
 ## Parameters

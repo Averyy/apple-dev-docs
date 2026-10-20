@@ -1,7 +1,8 @@
 # deferredPaymentRequest
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that requests a recurring payment, such as a hotel booking or a pre-order.
 
@@ -11,7 +12,7 @@ A property that requests a recurring payment, such as a hotel booking or a pre-o
 
 ## Declaration
 
-```swift
+```
 ApplePayDeferredPaymentRequest deferredPaymentRequest;
 ```
 

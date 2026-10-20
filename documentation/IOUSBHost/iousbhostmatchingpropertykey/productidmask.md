@@ -1,7 +1,8 @@
 # productIDMask
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The matching property on a mask of product IDs.
 
@@ -15,19 +16,24 @@ The matching property on a mask of product IDs.
 static let productIDMask: IOUSBHostMatchingPropertyKey
 ```
 
+```c
+extern IOUSBHostMatchingPropertyKey IOUSBHostMatchingPropertyKeyProductIDMask;
+```
+
 ## See Also
 
-- [static let vendorID: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/vendorid.md)
+### Device Properties
+- [static let vendorID: IOUSBHostMatchingPropertyKey](./vendorid.md)
   The matching property for the device’s vendor ID.
-- [static let productID: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/productid.md)
+- [static let productID: IOUSBHostMatchingPropertyKey](./productid.md)
   The matching property for the device’s product ID.
-- [static let deviceReleaseNumber: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/devicereleasenumber.md)
+- [static let deviceReleaseNumber: IOUSBHostMatchingPropertyKey](./devicereleasenumber.md)
   The matching property for the device’s release number.
-- [static let configurationValue: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/configurationvalue.md)
+- [static let configurationValue: IOUSBHostMatchingPropertyKey](./configurationvalue.md)
   The matching property for the device’s current configuration value.
-- [static let speed: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/speed.md)
+- [static let speed: IOUSBHostMatchingPropertyKey](./speed.md)
   The matching property for the device’s enumeration speed.
-- [static let productIDArray: IOUSBHostMatchingPropertyKey](iousbhostmatchingpropertykey/productidarray.md)
+- [static let productIDArray: IOUSBHostMatchingPropertyKey](./productidarray.md)
   The matching property on a list of product IDs.
 
 

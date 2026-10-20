@@ -1,7 +1,8 @@
 # state
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An arbitrary string that your app provided to the request that generated this credential.
 
@@ -18,13 +19,18 @@ An arbitrary string that your app provided to the request that generated this cr
 var state: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * state;
+```
+
 ## See Also
 
-- [var identityToken: Data?](asauthorizationsinglesignoncredential/identitytoken.md)
+### Identifying a User
+- [var identityToken: Data?](./identitytoken.md)
   A JSON Web Token (JWT) that securely communicates information about the user to your app.
-- [var accessToken: Data?](asauthorizationsinglesignoncredential/accesstoken.md)
+- [var accessToken: Data?](./accesstoken.md)
   An access token used to get an identity token.
-- [var authorizedScopes: [ASAuthorization.Scope]](asauthorizationsinglesignoncredential/authorizedscopes.md)
+- [var authorizedScopes: [ASAuthorization.Scope]](./authorizedscopes.md)
   The contact information the user authorized your app to access.
 
 

@@ -1,7 +1,8 @@
 # status(transactionID:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Gets the subscription status for a transaction ID.
 
@@ -22,11 +23,12 @@ static func status(transactionID: UInt64) async throws -> SubscriptionStatus?
 
 ## See Also
 
-- [var status: [Product.SubscriptionInfo.Status]](product/subscriptioninfo/status-swift.property.md)
+### Determining the subscription status
+- [var status: [Product.SubscriptionInfo.Status]](./status-swift.property.md)
   An array that contains status information for a subscription group, including renewal and transaction information.
-- [static func status(for: String) async throws -> [Product.SubscriptionInfo.Status]](product/subscriptioninfo/status(for:).md)
+- [static func status(for: String) async throws -> [Product.SubscriptionInfo.Status]](./status%28for%29.md)
   Gets the subscription status for a subscription group identifier.
-- [Product.SubscriptionInfo.Status](product/subscriptioninfo/status-swift.struct.md)
+- [Product.SubscriptionInfo.Status](./status-swift.struct.md)
   The renewal status information for an auto-renewable subscription.
 
 

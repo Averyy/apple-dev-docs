@@ -1,7 +1,8 @@
 # SCDynamicStoreSetDispatchQueue(_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Initiates notifications for the notification keys, using the specified dispatch queue for the callback.
 
@@ -12,6 +13,10 @@ Initiates notifications for the notification keys, using the specified dispatch 
 
 ```swift
 func SCDynamicStoreSetDispatchQueue(_ store: SCDynamicStore, _ queue: dispatch_queue_t?) -> Bool
+```
+
+```c
+Boolean SCDynamicStoreSetDispatchQueue(SCDynamicStoreRef store, dispatch_queue_t queue);
 ```
 
 #### Return Value
@@ -25,9 +30,10 @@ func SCDynamicStoreSetDispatchQueue(_ store: SCDynamicStore, _ queue: dispatch_q
 
 ## See Also
 
-- [func SCDynamicStoreNotifyValue(SCDynamicStore?, CFString) -> Bool](scdynamicstorenotifyvalue(_:_:).md)
+### Monitoring Keys and Values
+- [func SCDynamicStoreNotifyValue(SCDynamicStore?, CFString) -> Bool](./scdynamicstorenotifyvalue%28_,_%29.md)
   Causes a notification to be delivered for the specified key in the dynamic store.
-- [func SCDynamicStoreSetNotificationKeys(SCDynamicStore, CFArray?, CFArray?) -> Bool](scdynamicstoresetnotificationkeys(_:_:_:).md)
+- [func SCDynamicStoreSetNotificationKeys(SCDynamicStore, CFArray?, CFArray?) -> Bool](./scdynamicstoresetnotificationkeys%28_,_,_%29.md)
   Specifies a set of keys and key patterns that should be monitored for changes.
 
 

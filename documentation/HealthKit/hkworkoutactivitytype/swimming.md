@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.swimming
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for swimming.
 
@@ -19,31 +20,36 @@ The constant for swimming.
 case swimming
 ```
 
+```c
+HKWorkoutActivityTypeSwimming
+```
+
 ## Mentions
 
-- [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
+- [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
 #### Discussion
 
-If your app uses the [`HKWorkoutActivityType.swimming`](hkworkoutactivitytype/swimming.md) or [`HKWorkoutActivityType.other`](hkworkoutactivitytype/other.md) activity type, you must explain how your app calculates workout data when sensor information is not available. For more information, see the [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/watchos/interaction/workout/). HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
+If your app uses the [`HKWorkoutActivityType.swimming`](./swimming.md) or [`HKWorkoutActivityType.other`](./other.md) activity type, you must explain how your app calculates workout data when sensor information is not available. For more information, see the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/watchos/interaction/workout/). HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
 
 ## See Also
 
-- [HKWorkoutActivityType.paddleSports](hkworkoutactivitytype/paddlesports.md)
+### Water activities
+- [HKWorkoutActivityType.paddleSports](./paddlesports.md)
   The constant for canoeing, kayaking, paddling an outrigger, paddling a stand-up paddle board, and related sports.
-- [HKWorkoutActivityType.rowing](hkworkoutactivitytype/rowing.md)
+- [HKWorkoutActivityType.rowing](./rowing.md)
   The constant for rowing.
-- [HKWorkoutActivityType.sailing](hkworkoutactivitytype/sailing.md)
+- [HKWorkoutActivityType.sailing](./sailing.md)
   The constant for sailing.
-- [HKWorkoutActivityType.surfingSports](hkworkoutactivitytype/surfingsports.md)
+- [HKWorkoutActivityType.surfingSports](./surfingsports.md)
   The constant for a variety of surf sports, including surfing, kite surfing, and wind surfing.
-- [HKWorkoutActivityType.underwaterDiving](hkworkoutactivitytype/underwaterdiving.md)
+- [HKWorkoutActivityType.underwaterDiving](./underwaterdiving.md)
   The constant for underwater diving.
-- [HKWorkoutActivityType.waterFitness](hkworkoutactivitytype/waterfitness.md)
+- [HKWorkoutActivityType.waterFitness](./waterfitness.md)
   The constant for aerobic exercise performed in shallow water.
-- [HKWorkoutActivityType.waterPolo](hkworkoutactivitytype/waterpolo.md)
+- [HKWorkoutActivityType.waterPolo](./waterpolo.md)
   The constant for playing water polo.
-- [HKWorkoutActivityType.waterSports](hkworkoutactivitytype/watersports.md)
+- [HKWorkoutActivityType.waterSports](./watersports.md)
   The constant for a variety of water sports, including water skiing, wake boarding, and related activities.
 
 

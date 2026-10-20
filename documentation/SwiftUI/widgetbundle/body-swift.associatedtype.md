@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of widget that represents the content of the bundle.
@@ -22,13 +23,14 @@ associatedtype Body : Widget
 
 #### Discussion
 
-When you support more than one widget, Swift infers this type from your implementation of the required [`body`](widgetbundle/body-swift.property.md) property.
+When you support more than one widget, Swift infers this type from your implementation of the required [`body`](./body-swift.property.md) property.
 
 ## See Also
 
-- [var body: Self.Body](widgetbundle/body-swift.property.md)
+### Implementing a widget bundle
+- [var body: Self.Body](./body-swift.property.md)
   Declares the group of widgets that an app supports.
-- [struct WidgetBundleBuilder](widgetbundlebuilder.md)
+- [struct WidgetBundleBuilder](../widgetbundlebuilder.md)
   A custom attribute that constructs a widget bundle’s body.
 
 

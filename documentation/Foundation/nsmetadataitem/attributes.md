@@ -1,7 +1,8 @@
 # attributes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the attribute keys for the metadata item’s values.
 
@@ -20,15 +21,20 @@ An array containing the attribute keys for the metadata item’s values.
 var attributes: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * attributes;
+```
+
 #### Discussion
 
 This property contains an array of attribute keys, representing the values available from this metadata item. For a list of possible keys, see `Attribute Keys`.
 
 ## See Also
 
-- [func value(forAttribute: String) -> Any?](nsmetadataitem/value(forattribute:).md)
+### Getting Item Attributes
+- [func value(forAttribute: String) -> Any?](./value%28forattribute%29.md)
   Returns the receiver’s metadata attribute name specified by a given key.
-- [func values(forAttributes: [String]) -> [String : Any]?](nsmetadataitem/values(forattributes:).md)
+- [func values(forAttributes: [String]) -> [String : Any]?](./values%28forattributes%29.md)
   Returns a dictionary containing the key-value pairs for the attribute names specified by a given array of keys.
 
 

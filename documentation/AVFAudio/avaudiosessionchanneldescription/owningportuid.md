@@ -1,7 +1,8 @@
 # owningPortUID
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier (UID) for this channel’s owning port.
 
@@ -19,17 +20,22 @@ The unique identifier (UID) for this channel’s owning port.
 var owningPortUID: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * owningPortUID;
+```
+
 #### Discussion
 
-You can use the value of this property along with the value of the [`channelNumber`](avaudiosessionchanneldescription/channelnumber.md) property to communicate with specific hardware channels.
+You can use the value of this property along with the value of the [`channelNumber`](./channelnumber.md) property to communicate with specific hardware channels.
 
 ## See Also
 
-- [var channelName: String](avaudiosessionchanneldescription/channelname.md)
+### Getting the channel information
+- [var channelName: String](./channelname.md)
   The descriptive name for the channel.
-- [var channelNumber: Int](avaudiosessionchanneldescription/channelnumber.md)
+- [var channelNumber: Int](./channelnumber.md)
   The index of this channel in its owning port’s array of channels.
-- [var channelLabel: AudioChannelLabel](avaudiosessionchanneldescription/channellabel.md)
+- [var channelLabel: AudioChannelLabel](./channellabel.md)
   A description of the physical location of this channel.
 
 

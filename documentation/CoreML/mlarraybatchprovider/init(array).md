@@ -1,7 +1,8 @@
 # init(array:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the batch provider based on the array of feature providers.
 
@@ -20,13 +21,18 @@ Creates the batch provider based on the array of feature providers.
 init(array: [any MLFeatureProvider])
 ```
 
+```objc
+- (instancetype) initWithFeatureProviderArray:(NSArray<id<MLFeatureProvider>> *) array;
+```
+
 ## Parameters
 
 - `array`: The array of feature providers for the batch.
 
 ## See Also
 
-- [init(dictionary: [String : [Any]]) throws](mlarraybatchprovider/init(dictionary:).md)
+### Creating a batch provider
+- [init(dictionary: [String : [Any]]) throws](./init%28dictionary%29.md)
   Creates a batch provider based on feature names and their associated arrays of data.
 
 

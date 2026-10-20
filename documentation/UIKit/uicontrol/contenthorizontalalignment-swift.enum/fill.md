@@ -1,16 +1,17 @@
 # UIControl.ContentHorizontalAlignment.fill
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Aligns the content horizontally to fill the content rectangles; text may wrap and images may be stretched.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,17 +19,22 @@ Aligns the content horizontally to fill the content rectangles; text may wrap an
 case fill
 ```
 
+```c
+UIControlContentHorizontalAlignmentFill
+```
+
 ## See Also
 
-- [UIControl.ContentHorizontalAlignment.center](uicontrol/contenthorizontalalignment-swift.enum/center.md)
+### Constants
+- [UIControl.ContentHorizontalAlignment.center](./center.md)
   Aligns the content horizontally in the center of the control.
-- [UIControl.ContentHorizontalAlignment.left](uicontrol/contenthorizontalalignment-swift.enum/left.md)
+- [UIControl.ContentHorizontalAlignment.left](./left.md)
   Aligns the content horizontally from the left of the control (the default).
-- [UIControl.ContentHorizontalAlignment.right](uicontrol/contenthorizontalalignment-swift.enum/right.md)
+- [UIControl.ContentHorizontalAlignment.right](./right.md)
   Aligns the content horizontally from the right of the control.
-- [UIControl.ContentHorizontalAlignment.leading](uicontrol/contenthorizontalalignment-swift.enum/leading.md)
+- [UIControl.ContentHorizontalAlignment.leading](./leading.md)
   Aligns the content horizontally from the leading edge of the control.
-- [UIControl.ContentHorizontalAlignment.trailing](uicontrol/contenthorizontalalignment-swift.enum/trailing.md)
+- [UIControl.ContentHorizontalAlignment.trailing](./trailing.md)
   Aligns the content horizontally from the trailing edge of the control.
 
 

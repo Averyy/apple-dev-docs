@@ -1,7 +1,8 @@
 # voice
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A voice specification structure that uniquely identifies the voice. 
 
@@ -12,6 +13,10 @@ A voice specification structure that uniquely identifies the voice.
 
 ```swift
 var voice: VoiceSpec
+```
+
+```c
+VoiceSpec voice;
 ```
 
 

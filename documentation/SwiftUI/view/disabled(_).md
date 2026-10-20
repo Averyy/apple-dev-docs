@@ -1,7 +1,8 @@
 # disabled(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a condition that controls whether someone can interact with this view.
 
@@ -27,7 +28,7 @@ A view that controls whether someone can interact with this view.
 
 #### Discussion
 
-Add this modifier to a view to indicate whether it responds to interactions such as a tap, click, or gesture. The following example disables a [`Button`](button.md) when the Boolean value `isLoading` is `true`:
+Add this modifier to a view to indicate whether it responds to interactions such as a tap, click, or gesture. The following example disables a [`Button`](../button.md) when the Boolean value `isLoading` is `true`:
 
 ```swift
 @State private var isLoading: Bool = false
@@ -38,7 +39,7 @@ var body: some View {
 }
 ```
 
-Add this modifier to a container, such as a [`VStack`](vstack.md), to indicate whether views in the container are currently interactive, and to override any `.disabled(_:)` modifiers you set on views within the container or view hierarchy. In the following example, the `.disabled(true)` modifier on the [`VStack`](vstack.md) disables all of the [`Button`](button.md) instances in the stack, even the button that has the modifier `.disabled(false)`.
+Add this modifier to a container, such as a [`VStack`](../vstack.md), to indicate whether views in the container are currently interactive, and to override any `.disabled(_:)` modifiers you set on views within the container or view hierarchy. In the following example, the `.disabled(true)` modifier on the [`VStack`](../vstack.md) disables all of the [`Button`](../button.md) instances in the stack, even the button that has the modifier `.disabled(false)`.
 
 ```swift
 VStack {
@@ -56,11 +57,12 @@ VStack {
 
 ## See Also
 
-- [var isEnabled: Bool](environmentvalues/isenabled.md)
+### Managing view interaction
+- [var isEnabled: Bool](../environmentvalues/isenabled.md)
   A Boolean value that indicates whether the view associated with this environment allows user interaction.
-- [func interactionActivityTrackingTag(String) -> some View](view/interactionactivitytrackingtag(_:).md)
+- [func interactionActivityTrackingTag(String) -> some View](./interactionactivitytrackingtag%28_%29.md)
   Sets a tag that you use for tracking interactivity.
-- [func invalidatableContent(Bool) -> some View](view/invalidatablecontent(_:).md)
+- [func invalidatableContent(Bool) -> some View](./invalidatablecontent%28_%29.md)
   Mark the receiver as their content might be invalidated.
 
 

@@ -1,7 +1,8 @@
 # SecItemAttr.volumeItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the volume attribute.
 
@@ -13,6 +14,10 @@ Identifies the volume attribute.
 
 ```swift
 case volumeItemAttr
+```
+
+```c
+kSecVolumeItemAttr
 ```
 
 #### Discussion

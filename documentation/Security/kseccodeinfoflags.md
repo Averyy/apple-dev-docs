@@ -1,7 +1,8 @@
 # kSecCodeInfoFlags
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the static (on-disk) state of the object.
 
@@ -15,9 +16,13 @@ A key whose value indicates the static (on-disk) state of the object.
 let kSecCodeInfoFlags: CFString
 ```
 
+```c
+extern CFStringRef const kSecCodeInfoFlags;
+```
+
 #### Discussion
 
-The value is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber). See [`SecCodeSignatureFlags`](seccodesignatureflags.md) for a list of possible values.
+The value is a [`CFNumber`](../CoreFoundation/cfnumber.md). See [`SecCodeSignatureFlags`](./seccodesignatureflags.md) for a list of possible values.
 
 
 ---

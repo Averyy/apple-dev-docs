@@ -1,7 +1,8 @@
 # UserInvitationCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that you set that describe the new resource.
 
@@ -10,7 +11,7 @@ Attributes that you set that describe the new resource.
 
 ## Declaration
 
-```swift
+```
 object UserInvitationCreateRequest.Data.Attributes
 ```
 
@@ -25,9 +26,11 @@ object UserInvitationCreateRequest.Data.Attributes
 
 ## See Also
 
-- [User Invitations](user-invitations.md)
+### Related Documentation
+- [User Invitations](../../user-invitations.md)
   Email invitations to join your App Store Connect team.
-- [object UserInvitationCreateRequest.Data.Relationships](userinvitationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object UserInvitationCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

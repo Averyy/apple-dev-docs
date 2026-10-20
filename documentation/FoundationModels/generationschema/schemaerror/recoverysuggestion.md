@@ -1,7 +1,8 @@
 # recoverySuggestion
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A suggestion that indicates how to handle the error.
 

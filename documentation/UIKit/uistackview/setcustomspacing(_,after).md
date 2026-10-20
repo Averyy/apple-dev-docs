@@ -1,7 +1,8 @@
 # setCustomSpacing(_:after:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies custom spacing after the specified view.
 
@@ -18,13 +19,18 @@ Applies custom spacing after the specified view.
 func setCustomSpacing(_ spacing: CGFloat, after arrangedSubview: UIView)
 ```
 
+```objc
+- (void) setCustomSpacing:(CGFloat) spacing afterView:(UIView *) arrangedSubview;
+```
+
 ## See Also
 
-- [func customSpacing(after: UIView) -> CGFloat](uistackview/customspacing(after:).md)
+### Adding space between items
+- [func customSpacing(after: UIView) -> CGFloat](./customspacing%28after%29.md)
   Returns the custom spacing after the specified view.
-- [class let spacingUseDefault: CGFloat](uistackview/spacingusedefault.md)
+- [class let spacingUseDefault: CGFloat](./spacingusedefault.md)
   The default spacing for subviews within a stack view.
-- [class let spacingUseSystem: CGFloat](uistackview/spacingusesystem.md)
+- [class let spacingUseSystem: CGFloat](./spacingusesystem.md)
   The system-defined spacing to the neighboring view.
 
 

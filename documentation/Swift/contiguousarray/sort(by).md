@@ -1,7 +1,8 @@
 # sort(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sorts the collection in place, using the given predicate as the comparison between elements.
 
@@ -19,6 +20,8 @@ Sorts the collection in place, using the given predicate as the comparison betwe
 ```swift
 mutating func sort(by areInIncreasingOrder: (Self.Element, Self.Element) throws -> Bool) rethrows
 ```
+
+Available when `Self` conforms to `RandomAccessCollection`.
 
 #### Discussion
 
@@ -68,7 +71,7 @@ print(students)
 
 The sorting algorithm is guaranteed to be stable. A stable sort preserves the relative order of elements for which `areInIncreasingOrder` does not establish an order.
 
-> **Note**: O(*n* log *n*), where *n* is the length of the collection.
+> **Complexity**: O(*n* log *n*), where *n* is the length of the collection.
 
 ## Parameters
 

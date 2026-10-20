@@ -1,7 +1,8 @@
 # alertAvailability
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The weather alerts availability.
 
@@ -22,9 +23,10 @@ var alertAvailability: WeatherAvailability.AvailabilityKind
 
 ## See Also
 
-- [var minuteAvailability: WeatherAvailability.AvailabilityKind](weatheravailability/minuteavailability.md)
+### Getting the properties
+- [var minuteAvailability: WeatherAvailability.AvailabilityKind](./minuteavailability.md)
   The minute forecast availability.
-- [WeatherAvailability.AvailabilityKind](weatheravailability/availabilitykind.md)
+- [WeatherAvailability.AvailabilityKind](./availabilitykind.md)
   The availability kind.
 
 

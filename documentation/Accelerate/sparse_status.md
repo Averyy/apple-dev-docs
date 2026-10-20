@@ -1,23 +1,28 @@
 # sparse_status
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type reflecting the status of an operations.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct sparse_status
+```
+
+```c
+typedef enum { ... } sparse_status;
 ```
 
 #### Overview
@@ -27,38 +32,39 @@ struct sparse_status
 ## Topics
 
 ### Constants
-- [var SPARSE_SUCCESS: sparse_status](sparse_success.md)
+- [var SPARSE_SUCCESS: sparse_status](./sparse_success.md)
   Operation was a success.
-- [var SPARSE_ILLEGAL_PARAMETER: sparse_status](sparse_illegal_parameter.md)
+- [var SPARSE_ILLEGAL_PARAMETER: sparse_status](./sparse_illegal_parameter.md)
   Operation was not completed because one or more of the arguments had an illegal value.
-- [var SPARSE_CANNOT_SET_PROPERTY: sparse_status](sparse_cannot_set_property.md)
+- [var SPARSE_CANNOT_SET_PROPERTY: sparse_status](./sparse_cannot_set_property.md)
   A property was set after values were inserted into the matrix.
-- [var SPARSE_SYSTEM_ERROR: sparse_status](sparse_system_error.md)
+- [var SPARSE_SYSTEM_ERROR: sparse_status](./sparse_system_error.md)
   An internal error has occured, such as non enough memory.
 ### Initializers
-- [init(Int32)](sparse_status/init(_:).md)
-- [init(rawValue: Int32)](sparse_status/init(rawvalue:).md)
+- [init(Int32)](./sparse_status/init%28_%29.md)
+- [init(rawValue: Int32)](./sparse_status/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: Int32](sparse_status/rawvalue.md)
+- [var rawValue: Int32](./sparse_status/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias sparse_dimension](sparse_dimension.md)
+### Supporting types
+- [typealias sparse_dimension](./sparse_dimension.md)
   The dimension type.
-- [typealias sparse_index](sparse_index.md)
+- [typealias sparse_index](./sparse_index.md)
   The index type.
-- [typealias sparse_matrix_double](sparse_matrix_double.md)
+- [typealias sparse_matrix_double](./sparse_matrix_double.md)
   Sparse matrix opaque type for double.
-- [typealias sparse_matrix_float](sparse_matrix_float.md)
+- [typealias sparse_matrix_float](./sparse_matrix_float.md)
   Sparse matrix opaque type for float.
 
 

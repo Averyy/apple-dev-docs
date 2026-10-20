@@ -1,23 +1,28 @@
 # init(baseGeometry:bones:boneInverseBindTransforms:boneWeights:boneIndices:)
 
 **Framework**: SceneKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a skinner object with the specified visible geometry and skeleton information.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 convenience init(baseGeometry: SCNGeometry?, bones: [SCNNode], boneInverseBindTransforms: [NSValue]?, boneWeights: SCNGeometrySource, boneIndices: SCNGeometrySource)
+```
+
+```objc
++ (instancetype) skinnerWithBaseGeometry:(SCNGeometry *) baseGeometry bones:(NSArray<SCNNode *> *) bones boneInverseBindTransforms:(NSArray<NSValue *> *) boneInverseBindTransforms boneWeights:(SCNGeometrySource *) boneWeights boneIndices:(SCNGeometrySource *) boneIndices;
 ```
 
 #### Return Value
@@ -26,15 +31,15 @@ A new skinner object.
 
 #### Discussion
 
-To use the skinner object in a scene, assign it to the [`skinner`](scnnode/skinner.md) property of a node. That node’s [`geometry`](scnnode/geometry.md) property should reference the same [`SCNGeometry`](scngeometry.md) object as the skinner’s [`baseGeometry`](scnskinner/basegeometry.md) property.
+To use the skinner object in a scene, assign it to the [`skinner`](../scnnode/skinner.md) property of a node. That node’s [`geometry`](../scnnode/geometry.md) property should reference the same [`SCNGeometry`](../scngeometry.md) object as the skinner’s [`baseGeometry`](./basegeometry.md) property.
 
 ## Parameters
 
 - `baseGeometry`: The geometry whose surface the skinner’s animation skeleton deforms.
-- `bones`: An array of [`SCNNode`](scnnode.md) objects, each representing a bone or control point for the animation skeleton.
-- `boneInverseBindTransforms`: An array of [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects containing [`SCNMatrix4`](scnmatrix4-swift.struct.md) transforms, each of which corresponds to a node in the [`bones`](scnskinner/bones.md) array. Each value is the inverse of the bone node’s transform from bind space (that is, of the concatenation of all transforms from the skeleton root down to that bone) in the skeleton’s default pose.
-- `boneWeights`: The geometry source defining the influence of each bone on the positions of vertices in the geometry. For details, see the [`boneWeights`](scnskinner/boneweights.md) property.
-- `boneIndices`: The geometry source defining the mapping from bone indices in skeleton data to the skinner’s bones array. For details, see the [`boneIndices`](scnskinner/boneindices.md) property.
+- `bones`: An array of [`SCNNode`](../scnnode.md) objects, each representing a bone or control point for the animation skeleton.
+- `boneInverseBindTransforms`: An array of [`NSValue`](../../Foundation/nsvalue.md) objects containing [`SCNMatrix4`](../scnmatrix4-swift.struct.md) transforms, each of which corresponds to a node in the [`bones`](./bones.md) array. Each value is the inverse of the bone node’s transform from bind space (that is, of the concatenation of all transforms from the skeleton root down to that bone) in the skeleton’s default pose.
+- `boneWeights`: The geometry source defining the influence of each bone on the positions of vertices in the geometry. For details, see the [`boneWeights`](./boneweights.md) property.
+- `boneIndices`: The geometry source defining the mapping from bone indices in skeleton data to the skinner’s bones array. For details, see the [`boneIndices`](./boneindices.md) property.
 
 
 ---

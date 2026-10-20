@@ -1,7 +1,8 @@
 # init(languageModel:vocabulary:)
 
 **Framework**: Speech  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration with the locations of language model and vocabulary files.
 
@@ -18,11 +19,16 @@ Creates a configuration with the locations of language model and vocabulary file
 init(languageModel: URL, vocabulary: URL?)
 ```
 
+```objc
+- (instancetype) initWithLanguageModel:(NSURL *) languageModel vocabulary:(NSURL *) vocabulary;
+```
+
 ## See Also
 
-- [init(languageModel: URL)](sfspeechlanguagemodel/configuration/init(languagemodel:).md)
+### Creating a language model configuration
+- [init(languageModel: URL)](./init%28languagemodel%29.md)
   Creates a configuration with the location of a language model file.
-- [init(languageModel: URL, vocabulary: URL?, weight: NSNumber?)](sfspeechlanguagemodel/configuration/init(languagemodel:vocabulary:weight:).md)
+- [init(languageModel: URL, vocabulary: URL?, weight: NSNumber?)](./init%28languagemodel,vocabulary,weight%29.md)
   Creates a configuration with the locations of language model and vocabulary files, and custom weight.
 
 

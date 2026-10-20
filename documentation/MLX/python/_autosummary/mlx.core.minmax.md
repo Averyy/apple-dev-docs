@@ -6,40 +6,13 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.mi
 
 # mlx.core.minmax
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.minmax.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.minmax
-
- Table of contents 
-
-## Contents
-
-# mlx.core.minmax
-
-**minmax(*a: array*, */*, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, ***, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array)]**
+**minmax(*a: array*, */*, *axis: None | int | Sequence[int] = None*, *keepdims: bool = False*, ***, *stream: StreamOrDevice = None*) → [tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)[[array](mlx.core.array.md#mlx.core.array), [array](mlx.core.array.md#mlx.core.array)]**
 : Return the minimum and maximum over the given axes.
-Equivalent to calling [min()](mlx.core.min.html#mlx.core.min) and [max()](mlx.core.max.html#mlx.core.max) separately.
+Equivalent to calling [min()](mlx.core.min.md#mlx.core.min) and [max()](mlx.core.max.md#mlx.core.max) separately.
 
 Parameters:
 
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 **axis** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Axis or axes to reduce over.
 If unspecified, reduce over the entire array.
 **keepdims** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – Keep reduced axes as singleton
@@ -49,6 +22,4 @@ Returns:
 The minimum and maximum arrays, in that order.
 
 Return type:
-[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.html#mlx.core.array), [array](mlx.core.array.html#mlx.core.array))
-
-** Contents
+[tuple](https://docs.python.org/3/builtins/stdtypes.html#tuple)([array](mlx.core.array.md#mlx.core.array), [array](mlx.core.array.md#mlx.core.array))

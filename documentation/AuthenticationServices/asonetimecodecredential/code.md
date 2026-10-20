@@ -1,7 +1,8 @@
 # code
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The one-time passcode.
 
@@ -16,6 +17,10 @@ The one-time passcode.
 
 ```swift
 var code: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * code;
 ```
 
 

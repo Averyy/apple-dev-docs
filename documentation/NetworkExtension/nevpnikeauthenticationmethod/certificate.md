@@ -1,9 +1,10 @@
 # NEVPNIKEAuthenticationMethod.certificate
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Use a certificate and private key as the authentication credential. The certificate and private key set in the [`identityReference`](nevpnprotocol/identityreference.md) or [`identityData`](nevpnprotocol/identitydata.md) property will be used.
+Use a certificate and private key as the authentication credential. The certificate and private key set in the [`identityReference`](../nevpnprotocol/identityreference.md) or [`identityData`](../nevpnprotocol/identitydata.md) property will be used.
 
 **Availability**:
 - iOS 8.0+
@@ -19,12 +20,17 @@ Use a certificate and private key as the authentication credential. The certific
 case certificate
 ```
 
+```c
+NEVPNIKEAuthenticationMethodCertificate
+```
+
 ## See Also
 
-- [NEVPNIKEAuthenticationMethod.none](nevpnikeauthenticationmethod/none.md)
-  Do not authenticate with the IPSec server. Note that extended authentication may still be performed if the [`useExtendedAuthentication`](nevpnprotocolipsec/useextendedauthentication.md) property is set. This value is only valid for IKE version 2 (IKEv2)
-- [NEVPNIKEAuthenticationMethod.sharedSecret](nevpnikeauthenticationmethod/sharedsecret.md)
-  Use a shared secret as the authentication credential. The shared secret set in the [`sharedSecretReference`](nevpnprotocolipsec/sharedsecretreference.md) property will be used.
+### Authentication methods
+- [NEVPNIKEAuthenticationMethod.none](./none.md)
+  Do not authenticate with the IPSec server. Note that extended authentication may still be performed if the [`useExtendedAuthentication`](../nevpnprotocolipsec/useextendedauthentication.md) property is set. This value is only valid for IKE version 2 (IKEv2)
+- [NEVPNIKEAuthenticationMethod.sharedSecret](./sharedsecret.md)
+  Use a shared secret as the authentication credential. The shared secret set in the [`sharedSecretReference`](../nevpnprotocolipsec/sharedsecretreference.md) property will be used.
 
 
 ---

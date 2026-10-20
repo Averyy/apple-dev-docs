@@ -1,7 +1,8 @@
 # complete
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A guide that uses all available search techniques.
 
@@ -20,9 +21,10 @@ static var complete: SpotlightSearchTool.Guide { get }
 
 ## See Also
 
-- [static func dynamic(SpotlightSearchTool.GuidanceProfile) -> SpotlightSearchTool.Guide](spotlightsearchtool/guide/dynamic(_:).md)
+### Setting the guidance levels
+- [static func dynamic(SpotlightSearchTool.GuidanceProfile) -> SpotlightSearchTool.Guide](./dynamic%28_%29.md)
   A guide that includes only the search techniques specified by the given profile.
-- [static func focused(SpotlightSearchTool.ContentDomain) -> SpotlightSearchTool.Guide](spotlightsearchtool/guide/focused(_:).md)
+- [static func focused(SpotlightSearchTool.ContentDomain) -> SpotlightSearchTool.Guide](./focused%28_%29.md)
   A guide that searches only the specified content domain using a compact, on-device-friendly schema.
 
 

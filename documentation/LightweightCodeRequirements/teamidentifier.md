@@ -1,7 +1,8 @@
 # TeamIdentifier
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A constraint that tests whether the provided team identifier matches the team identified in the code signature.
 
@@ -23,54 +24,55 @@ struct TeamIdentifier
 ## Topics
 
 ### Initializers
-- [init(String)](teamidentifier/init(_:).md)
+- [init(String)](./teamidentifier/init%28_%29.md)
   Matches if the provided string matches the team identifier of the code.
-- [init(from: any Decoder) throws](teamidentifier/init(from:).md)
+- [init(from: any Decoder) throws](./teamidentifier/init%28from%29.md)
   Create a new instance by decoding from the given decoder
 ### Instance Methods
-- [func encode(to: any Encoder) throws](teamidentifier/encode(to:).md)
+- [func encode(to: any Encoder) throws](./teamidentifier/encode%28to%29.md)
   Encodes this value into the given encoder
 ### Type Aliases
-- [TeamIdentifier.DataType](teamidentifier/datatype.md)
+- [TeamIdentifier.DataType](./teamidentifier/datatype.md)
   The basic input data type for this constraint: String.
-- [TeamIdentifier.OutType](teamidentifier/outtype.md)
-  The type of this constraint: [`TeamIdentifier`](teamidentifier.md).
+- [TeamIdentifier.OutType](./teamidentifier/outtype.md)
+  The type of this constraint: [`TeamIdentifier`](./teamidentifier.md).
 ### Type Methods
-- [static func `in`([TeamIdentifier.DataType]) -> TeamIdentifier.OutType](teamidentifier/in(_:)-1z4vz.md)
+- [static func `in`([TeamIdentifier.DataType]) -> TeamIdentifier.OutType](./teamidentifier/in%28_%29-1z4vz.md)
   Matches if the team identifier of the code matches any of the provided team identifiers.
-- [static func `in`(TeamIdentifier.DataType...) -> TeamIdentifier.OutType](teamidentifier/in(_:)-9x3l9.md)
+- [static func `in`(TeamIdentifier.DataType...) -> TeamIdentifier.OutType](./teamidentifier/in%28_%29-9x3l9.md)
   Matches if the team identifier of the code matches any of the provided team identifiers.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [LaunchConstraint](launchconstraint.md)
-- [OnDiskConstraint](ondiskconstraint.md)
-- [ProcessConstraint](processconstraint.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [LaunchConstraint](./launchconstraint.md)
+- [OnDiskConstraint](./ondiskconstraint.md)
+- [ProcessConstraint](./processconstraint.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CodeDirectoryHash](codedirectoryhash.md)
+### Testing properties of executable code
+- [struct CodeDirectoryHash](./codedirectoryhash.md)
   A constraint that matches the hash of a code directory of a code file or of a running or launching process.
-- [class EntitlementsQuery](entitlementsquery.md)
+- [class EntitlementsQuery](./entitlementsquery.md)
   A constraint that tests values in the entitlements dictionary associated with a process or code file.
-- [struct InfoPlistHash](infoplisthash.md)
+- [struct InfoPlistHash](./infoplisthash.md)
   A constraint that tests the specified hash against the Information property list hash stored in the code signature of the process or code file.
-- [struct IsInitProcess](isinitprocess.md)
+- [struct IsInitProcess](./isinitprocess.md)
   A constraint that tests whether a process is the operating system’s initial process.
-- [struct IsMainBinary](ismainbinary.md)
+- [struct IsMainBinary](./ismainbinary.md)
   A constraint that tests whether a code file is a main binary.
-- [struct IsSIPProtected](issipprotected.md)
+- [struct IsSIPProtected](./issipprotected.md)
   A constraint that tests whether a code file or process is on a volume protected by System Integrity Protection (SIP).
-- [struct PlatformType](platformtype.md)
+- [struct PlatformType](./platformtype.md)
   A constraint that tests whether a code file or running process targets a given platform.
-- [struct SigningIdentifier](signingidentifier.md)
+- [struct SigningIdentifier](./signingidentifier.md)
   A constraint that tests whether the provided signing identifier matches the signature attached to the code.
-- [struct ValidationCategory](validationcategory.md)
+- [struct ValidationCategory](./validationcategory.md)
   A constraint that tests whether a code file or running process is signed in a way that conforms to the specified validation category.
 
 

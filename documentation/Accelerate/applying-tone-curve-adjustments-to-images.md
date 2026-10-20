@@ -1,6 +1,8 @@
 # Applying tone curve adjustments to images
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Sample Code  
+**Download**: [ApplyingToneCurveAdjustmentsToImages.zip](https://docs-assets.developer.apple.com/published/a4ddc72d3634/ApplyingToneCurveAdjustmentsToImages.zip)
 
 Use the vImage library’s polynomial transform to apply tone curve adjustments to images.
 
@@ -10,21 +12,21 @@ Use the vImage library’s polynomial transform to apply tone curve adjustments 
 
 #### Overview
 
-The vImage library provides a suite of functions for applying polynomials to images. The results of these functions are similar to the [`Curves adjustment`](https://developer.apple.comhttps://support.apple.com/en-gb/guide/photos/pht7875d6b19/7.0/mac/12.0) tool in the [`Mac Photos`](https://developer.apple.comhttps://www.apple.com/uk/macos/photos/) app. You can use the polynomial adjustment functions to adjust the overall look of a photo, change the look of specific colors (red, green, and blue), and adjust settings for the black point, midtones, and white point.
+The vImage library provides a suite of functions for applying polynomials to images. The results of these functions are similar to the [Curves adjustment](https://support.apple.com/en-gb/guide/photos/pht7875d6b19/7.0/mac/12.0) tool in the [Mac Photos](https://www.apple.com/uk/macos/photos/) app. You can use the polynomial adjustment functions to adjust the overall look of a photo, change the look of specific colors (red, green, and blue), and adjust settings for the black point, midtones, and white point.
 
-This sample code project calculates the polynomial coefficients from a set of values that the user defines using handles in the user interface. The vImage polynomial functions evaluate the polynomial coefficients to define the tone curve. The technique that calculates the coefficients is the Vandermonde method. To learn more about this technique, see [`Finding an interpolating polynomial using the Vandermonde method`](finding-an-interpolating-polynomial-using-the-vandermonde-method.md).
+This sample code project calculates the polynomial coefficients from a set of values that the user defines using handles in the user interface. The vImage polynomial functions evaluate the polynomial coefficients to define the tone curve. The technique that calculates the coefficients is the Vandermonde method. To learn more about this technique, see [Finding an interpolating polynomial using the Vandermonde method](./finding-an-interpolating-polynomial-using-the-vandermonde-method.md).
 
-To generate the smooth curves in the user interface, the app passes the same coefficients that the vImage polynomial transform function uses to the vDSP [`evaluatePolynomial(usingCoefficients:withVariables:)`](vdsp/evaluatepolynomial(usingcoefficients:withvariables:)-31vi2.md) function.
+To generate the smooth curves in the user interface, the app passes the same coefficients that the vImage polynomial transform function uses to the vDSP [`evaluatePolynomial(usingCoefficients:withVariables:)`](./vdsp/evaluatepolynomial%28usingcoefficients,withvariables%29-31vi2.md) function.
 
 The following image shows the sample code project’s app. The circles on the curves are the handles that the user can drag vertically, and the image changes to show the effect of the polynomial transform.
 
-![A screenshot showing the sample code app with the transformed photograph on the left after adjustment, and the three tone curve controls on the right for the red, green, and blue channels.](/images/com.apple.accelerate/vImagePolynomial_2x.png)
+![A screenshot showing the sample code app with the transformed photograph on the left after adjustment, and the three tone curve controls on the right for the red, green, and blue channels.](https://developer.apple.com/tutorials/images/com.apple.accelerate/vImagePolynomial_2x.png)
 
-##### Convert the Interleaved Source Image to Planar Buffers
+##### Convert the interleaved source image to planar buffers
 
-The sample code project accepts source images that it converts to RGB, 32-bit per channel format. Because the vImage polynomial transform functions work on planar buffers, the code creates a [`vImage.PlanarFx3`](vimage/planarfx3.md) multiple-plane [`vImage.PixelBuffer`](vimage/pixelbuffer.md) structure that contains the separate red, green, and blue channels.
+The sample code project accepts source images that it converts to RGB, 32-bit per channel format. Because the vImage polynomial transform functions work on planar buffers, the code creates a [`vImage.PlanarFx3`](./vimage/planarfx3.md) multiple-plane [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) structure that contains the separate red, green, and blue channels.
 
-After creating [`vImage.PixelBuffer`](vimage/pixelbuffer.md) structures that store the interleaved and planar representations of the source image, the `populatePlanarSourceBuffers()` function copies and deinterleaves the interleaved image to the planar buffers.
+After creating [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) structures that store the interleaved and planar representations of the source image, the `populatePlanarSourceBuffers()` function copies and deinterleaves the interleaved image to the planar buffers.
 
 ```swift
 func populatePlanarSourceBuffers() {
@@ -32,11 +34,11 @@ func populatePlanarSourceBuffers() {
 }
 ```
 
-To learn more about working with planar buffers in vImage, see [`Optimizing image-processing performance`](optimizing-image-processing-performance.md).
+To learn more about working with planar buffers in vImage, see [Optimizing image-processing performance](./optimizing-image-processing-performance.md).
 
-##### Create the Default Curve Control Points
+##### Create the default curve control points
 
-The sample code project defines five data points for each color channel that control the tone curve. By default, these form a linear ramp from `0` to `1`. The code calls [`ramp(withInitialValue:increment:count:)`](vdsp/ramp(withinitialvalue:increment:count:)-3cast.md) to populate the `redHandleValues`, `greenHandleValues`, and `blueHandleValues` arrays. The following shows the code that populates the `greenHandleValues` array:
+The sample code project defines five data points for each color channel that control the tone curve. By default, these form a linear ramp from `0` to `1`. The code calls [`ramp(withInitialValue:increment:count:)`](./vdsp/ramp%28withinitialvalue,increment,count%29-3cast.md) to populate the `redHandleValues`, `greenHandleValues`, and `blueHandleValues` arrays. The following shows the code that populates the `greenHandleValues` array:
 
 ```swift
 greenHandleValues = vDSP.ramp(
@@ -46,11 +48,11 @@ greenHandleValues = vDSP.ramp(
 
 When the sample code app first launches, the default values form a linear tone curve that renders as a stright line in the user interface.
 
-![A screenshot showing the sample code app with the original unadjusted photograph on the left, and the three linear tone controls on the right for the red, green, and blue channels.](/images/com.apple.accelerate/tone_curve.png)
+![A screenshot showing the sample code app with the original unadjusted photograph on the left, and the three linear tone controls on the right for the red, green, and blue channels.](https://developer.apple.com/tutorials/images/com.apple.accelerate/tone_curve.png)
 
 The default control points create an output image that’s identical to the input image. That is, for each pixel, the transformed output value is equal to the input value.
 
-##### Apply the Polynomial Transform
+##### Apply the polynomial transform
 
 When the user adjusts the control points in the user interface, a `didSet` property observer applies the polynomial to the corresponding planar buffer. For example, the following shows the code for the green values:
 
@@ -68,7 +70,7 @@ When the user adjusts the control points in the user interface, a `didSet` prope
 }
 ```
 
-The `calculateAndApplyPolynomial()` function calls `calculateCoefficients()` to calculate the coefficients using the Vandermonde method. It then passes the coefficients to [`applyPolynomial(coefficientSegments:boundaries:destination:)`](vimage/pixelbuffer/applypolynomial(coefficientsegments:boundaries:destination:)-26zom.md). The vImage polynomial function effectively creates a polynomial curve from the specified coefficients and uses that as the tone curve. For each point on the curve, the horizontal position represents the input value, and the vertical position represents the output value.
+The `calculateAndApplyPolynomial()` function calls `calculateCoefficients()` to calculate the coefficients using the Vandermonde method. It then passes the coefficients to [`applyPolynomial(coefficientSegments:boundaries:destination:)`](./vimage/pixelbuffer/applypolynomial%28coefficientsegments,boundaries,destination%29-26zom.md). The vImage polynomial function effectively creates a polynomial curve from the specified coefficients and uses that as the tone curve. For each point on the curve, the horizontal position represents the input value, and the vertical position represents the output value.
 
 ```swift
 func calculateAndApplyPolynomial(
@@ -93,13 +95,13 @@ func calculateAndApplyPolynomial(
     }
 ```
 
-After the transform, the `displayPlanarDestinationBuffers()` function calls [`interleave(destination:)`](vimage/pixelbuffer/interleave(destination:)-46cgi.md) to generate an interleaved image that the sample code displays in the user interface.
+After the transform, the `displayPlanarDestinationBuffers()` function calls [`interleave(destination:)`](./vimage/pixelbuffer/interleave%28destination%29-46cgi.md) to generate an interleaved image that the sample code displays in the user interface.
 
-##### Display the Tone Curve in the User Interface
+##### Display the tone curve in the user interface
 
 The `PolynomialEditor` class uses the coefficients that the `applyPolynomial()` function computes to render a representation of the response curve.
 
-The `updatePath()` function calls [`evaluatePolynomial(usingCoefficients:withVariables:result:)`](vdsp/evaluatepolynomial(usingcoefficients:withvariables:result:)-2ncdh.md) to build a [`CGPath`](https://developer.apple.com/documentation/coregraphics/cgpath) instance that the editor uses to render a smooth curve in the user interface.
+The `updatePath()` function calls [`evaluatePolynomial(usingCoefficients:withVariables:result:)`](./vdsp/evaluatepolynomial%28usingcoefficients,withvariables,result%29-2ncdh.md) to build a [`CGPath`](../CoreGraphics/cgpath.md) instance that the editor uses to render a smooth curve in the user interface.
 
 ```swift
 static func updatePath(path: inout Path,
@@ -135,17 +137,18 @@ static func updatePath(path: inout Path,
 
 ## See Also
 
-- [Adjusting the brightness and contrast of an image](adjusting-the-brightness-and-contrast-of-an-image.md)
+### Color and Tone Adjustment
+- [Adjusting the brightness and contrast of an image](./adjusting-the-brightness-and-contrast-of-an-image.md)
   Use a gamma function to apply a linear or exponential curve.
-- [Adjusting saturation and applying tone mapping](adjusting-saturation-and-applying-tone-mapping.md)
+- [Adjusting saturation and applying tone mapping](./adjusting-saturation-and-applying-tone-mapping.md)
   Convert an RGB image to discrete luminance and chrominance channels, and apply color and contrast treatments.
-- [Adjusting the hue of an image](adjusting-the-hue-of-an-image.md)
+- [Adjusting the hue of an image](./adjusting-the-hue-of-an-image.md)
   Convert an image to L*a*b* color space and apply hue adjustment.
-- [Specifying histograms with vImage](specifying-histograms-with-vimage.md)
+- [Specifying histograms with vImage](./specifying-histograms-with-vimage.md)
   Calculate the histogram of one image, and apply it to a second image.
-- [Enhancing image contrast with histogram manipulation](enhancing-image-contrast-with-histogram-manipulation.md)
+- [Enhancing image contrast with histogram manipulation](./enhancing-image-contrast-with-histogram-manipulation.md)
   Enhance and adjust the contrast of an image with histogram equalization and contrast stretching.
-- [Histogram](histogram.md)
+- [Histogram](./histogram.md)
   Calculate or manipulate an image’s histogram.
 
 

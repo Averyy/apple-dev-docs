@@ -1,7 +1,8 @@
 # locationFlags
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The location flags.
 
@@ -11,17 +12,18 @@ This field must contain the value `kQTVRSameFile`, indicating that the node is t
 
 ## See Also
 
-- [majorVersion](node_location_atom_structure/majorversion.md)
+### Data fields
+- [majorVersion](./majorversion.md)
   The major version number of the file format.
-- [minorVersion](node_location_atom_structure/minorversion.md)
+- [minorVersion](./minorversion.md)
   The minor version number of the file format.
-- [nodeType](node_location_atom_structure/nodetype.md)
+- [nodeType](./nodetype.md)
   The node type.
-- [locationData](node_location_atom_structure/locationdata.md)
+- [locationData](./locationdata.md)
   The location of the node data.
-- [reserved1](node_location_atom_structure/reserved1.md)
+- [reserved1](./reserved1.md)
   Reserved.
-- [reserved2](node_location_atom_structure/reserved2.md)
+- [reserved2](./reserved2.md)
   Reserved.
 
 

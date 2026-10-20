@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Decode and return the scalar starting at `currentCodeUnitOffset`. After the function returns, `currentCodeUnitOffset` holds the position at the end of the returned scalar, which is also the start of the next scalar.
 
@@ -24,7 +25,7 @@ mutating func next() -> Unicode.Scalar?
 
 Returns `nil` if at the end of the `UTF8Span`.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

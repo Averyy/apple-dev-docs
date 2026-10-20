@@ -1,7 +1,8 @@
 # urlSession(_:readClosedFor:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the read side of the underlying socket has been closed.
 
@@ -20,6 +21,10 @@ Tells the delegate that the read side of the underlying socket has been closed.
 optional func urlSession(_ session: URLSession, readClosedFor streamTask: URLSessionStreamTask)
 ```
 
+```objc
+- (void) URLSession:(NSURLSession *) session readClosedForStreamTask:(NSURLSessionStreamTask *) streamTask;
+```
+
 #### Discussion
 
 This method may be called even if no reads are currently in progress. This method does not indicate that the stream reached end-of-file (EOF), such that no more data can be read.
@@ -31,7 +36,8 @@ This method may be called even if no reads are currently in progress. This metho
 
 ## See Also
 
-- [func urlSession(URLSession, writeClosedFor: URLSessionStreamTask)](urlsessionstreamdelegate/urlsession(_:writeclosedfor:).md)
+### Handling closing events
+- [func urlSession(URLSession, writeClosedFor: URLSessionStreamTask)](./urlsession%28_,writeclosedfor%29.md)
   Tells the delegate that the write side of the underlying socket has been closed.
 
 

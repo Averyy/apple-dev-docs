@@ -1,7 +1,8 @@
 # base
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the underlying string from which this substring was derived.
 

@@ -1,12 +1,15 @@
 # init(headerLabel:headerTextProvider:bodyTextProvider:gaugeProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new template that has a header row with a SwiftUI view and text, body text, and a gauge.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 

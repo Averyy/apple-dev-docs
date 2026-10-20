@@ -1,7 +1,8 @@
 # MPSGraphDeviceType.metal
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Device of type Metal
 
@@ -17,6 +18,10 @@ Device of type Metal
 
 ```swift
 case metal
+```
+
+```c
+MPSGraphDeviceTypeMetal
 ```
 
 

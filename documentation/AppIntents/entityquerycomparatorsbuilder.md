@@ -1,7 +1,8 @@
 # EntityQueryComparatorsBuilder
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A result builder that allows you to declaratively describe the comparators for a queryable property.
 
@@ -11,7 +12,7 @@ A result builder that allows you to declaratively describe the comparators for a
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -24,23 +25,24 @@ enum EntityQueryComparatorsBuilder<Entity, Subject, Property, PropertyType, Comp
 ## Topics
 
 ### Building query comparators
-- [static func buildBlock(AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>...) -> [AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>]](entityquerycomparatorsbuilder/buildblock(_:).md)
-- [struct AnyEntityQueryComparator](anyentityquerycomparator.md)
+- [static func buildBlock(AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>...) -> [AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>]](./entityquerycomparatorsbuilder/buildblock%28_%29.md)
+- [struct AnyEntityQueryComparator](./anyentityquerycomparator.md)
   A type that erases the type information of the underlying query comparator.
-- [static func buildExpression(EntityQueryComparator<Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](entityquerycomparatorsbuilder/buildexpression(_:)-4g6f9.md)
-- [static func buildExpression(EntityQueryComparator<Property, PropertyType, PropertyType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](entityquerycomparatorsbuilder/buildexpression(_:)-5tlbq.md)
-- [static func buildExpression<InputType>(ContainsComparator<Property, PropertyType, InputType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](entityquerycomparatorsbuilder/buildexpression(_:)-6v6cj.md)
-- [static func buildExpression<InputType>(IsBetweenComparator<Property, PropertyType, InputType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](entityquerycomparatorsbuilder/buildexpression(_:)-8jx4k.md)
-- [class EntityQueryComparator](entityquerycomparator.md)
+- [static func buildExpression(EntityQueryComparator<Property, PropertyType, PropertyType.UnwrappedType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](./entityquerycomparatorsbuilder/buildexpression%28_%29-4g6f9.md)
+- [static func buildExpression(EntityQueryComparator<Property, PropertyType, PropertyType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](./entityquerycomparatorsbuilder/buildexpression%28_%29-5tlbq.md)
+- [static func buildExpression<InputType>(ContainsComparator<Property, PropertyType, InputType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](./entityquerycomparatorsbuilder/buildexpression%28_%29-6v6cj.md)
+- [static func buildExpression<InputType>(IsBetweenComparator<Property, PropertyType, InputType, ComparatorMappingType>) -> AnyEntityQueryComparator<Entity, Subject, Property, PropertyType, ComparatorMappingType>](./entityquerycomparatorsbuilder/buildexpression%28_%29-8jx4k.md)
+- [class EntityQueryComparator](./entityquerycomparator.md)
   The base class for all concrete entity query comparators.
 
 ## See Also
 
-- [convenience init(KeyPath<Subject, Property>, comparators: () -> EntityQueryProperty<Entity, Subject, Property, PropertyType, ComparatorMappingType>.QueryComparators)](entityqueryproperty/init(_:comparators:).md)
+### Creating queryable properties
+- [convenience init(KeyPath<Subject, Property>, comparators: () -> EntityQueryProperty<Entity, Subject, Property, PropertyType, ComparatorMappingType>.QueryComparators)](./entityqueryproperty/init%28_,comparators%29.md)
   Initializes a EntityQueryProperty that applies to entity property at the provided keyPath.
-- [init(KeyPath<Subject, Property>, entityProvider: (Entity) -> Subject, comparators: () -> EntityQueryProperty<Entity, Subject, Property, PropertyType, ComparatorMappingType>.QueryComparators)](entityqueryproperty/init(_:entityprovider:comparators:).md)
+- [init(KeyPath<Subject, Property>, entityProvider: (Entity) -> Subject, comparators: () -> EntityQueryProperty<Entity, Subject, Property, PropertyType, ComparatorMappingType>.QueryComparators)](./entityqueryproperty/init%28_,entityprovider,comparators%29.md)
   Initializes a EntityQueryProperty that applies to entity property at the provided keyPath.
-- [EntityQueryProperty.QueryComparators](entityqueryproperty/querycomparators.md)
+- [EntityQueryProperty.QueryComparators](./entityqueryproperty/querycomparators.md)
   A type alias for the type that represents a collection of query comparators.
 
 

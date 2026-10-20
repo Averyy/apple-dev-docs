@@ -1,7 +1,8 @@
 # AggregationOperation.median(of:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The median of the metric’s values.
 

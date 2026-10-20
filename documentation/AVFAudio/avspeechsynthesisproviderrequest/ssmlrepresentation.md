@@ -1,7 +1,8 @@
 # ssmlRepresentation
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The description of the text to synthesize.
 
@@ -20,15 +21,20 @@ The description of the text to synthesize.
 var ssmlRepresentation: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * ssmlRepresentation;
+```
+
 #### Discussion
 
 The Speech Synthesis Markup Language describes the speech synthesis attributes for the customization of pitch, rate, intonation, and more.
 
 ## See Also
 
-- [var voice: AVSpeechSynthesisProviderVoice](avspeechsynthesisproviderrequest/voice.md)
+### Inspecting a request
+- [var voice: AVSpeechSynthesisProviderVoice](./voice.md)
   The voice to use in the speech request.
-- [class AVSpeechSynthesisProviderVoice](avspeechsynthesisprovidervoice.md)
+- [class AVSpeechSynthesisProviderVoice](../avspeechsynthesisprovidervoice.md)
   An object that represents a voice that an audio unit provides to its host.
 
 

@@ -1,7 +1,8 @@
 # UILexiconEntry
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A read-only term pair, available within a lexicon object, for a custom keyboard.
 
@@ -18,45 +19,50 @@ A read-only term pair, available within a lexicon object, for a custom keyboard.
 class UILexiconEntry
 ```
 
+```objc
+@interface UILexiconEntry : NSObject
+```
+
 #### Overview
 
-You can employ a lexicon entry by matching user input against the entry’s [`userInput`](uilexiconentry/userinput.md) value, and then inserting into the current text input object the corresponding [`documentText`](uilexiconentry/documenttext.md) value. For example, if the user typed the string “iphone”, the lexicon entry with that exact, case-sensitive string in the [`userInput`](uilexiconentry/userinput.md) property has the string “iPhone” in the corresponding [`documentText`](uilexiconentry/documenttext.md) property.
+You can employ a lexicon entry by matching user input against the entry’s [`userInput`](./uilexiconentry/userinput.md) value, and then inserting into the current text input object the corresponding [`documentText`](./uilexiconentry/documenttext.md) value. For example, if the user typed the string “iphone”, the lexicon entry with that exact, case-sensitive string in the [`userInput`](./uilexiconentry/userinput.md) property has the string “iPhone” in the corresponding [`documentText`](./uilexiconentry/documenttext.md) property.
 
-In some cases, the [`documentText`](uilexiconentry/documenttext.md) string is in a different text script than the [`userInput`](uilexiconentry/userinput.md) string.
+In some cases, the [`documentText`](./uilexiconentry/documenttext.md) string is in a different text script than the [`userInput`](./uilexiconentry/userinput.md) string.
 
-For information on custom keyboards, which are based on the [`UIInputViewController`](uiinputviewcontroller.md) class, see [`Creating a custom keyboard`](creating-a-custom-keyboard.md).
+For information on custom keyboards, which are based on the [`UIInputViewController`](./uiinputviewcontroller.md) class, see [Creating a custom keyboard](./creating-a-custom-keyboard.md).
 
 ## Topics
 
 ### Accessing a lexicon entry
-- [var documentText: String](uilexiconentry/documenttext.md)
+- [var documentText: String](./uilexiconentry/documenttext.md)
   Text to be inserted into a text input object by a custom keyboard, corresponding to the user input value in the same lexicon entry.
-- [var userInput: String](uilexiconentry/userinput.md)
+- [var userInput: String](./uilexiconentry/userinput.md)
   Text to match, during user input, to provide appropriate output to a text document from the document text value in the same lexicon entry.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [protocol UITextDocumentProxy](uitextdocumentproxy.md)
+### Custom keyboard
+- [protocol UITextDocumentProxy](./uitextdocumentproxy.md)
   An object that provides textual context to a custom keyboard.
-- [protocol UIInputViewAudioFeedback](uiinputviewaudiofeedback.md)
+- [protocol UIInputViewAudioFeedback](./uiinputviewaudiofeedback.md)
   A property that enables a custom input or keyboard accessory view to play standard keyboard input clicks.
-- [class UIInputViewController](uiinputviewcontroller.md)
+- [class UIInputViewController](./uiinputviewcontroller.md)
   The primary view controller for a custom keyboard app extension.
-- [class UILexicon](uilexicon.md)
+- [class UILexicon](./uilexicon.md)
   A read-only array of term pairs, each in a lexicon entry object, for a custom keyboard.
 
 

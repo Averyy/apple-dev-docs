@@ -1,7 +1,8 @@
 # CKRecord.ReferenceAction
 
 **Framework**: CloudKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the behavior when deleting a referenced record.
 
@@ -10,7 +11,7 @@ Constants that indicate the behavior when deleting a referenced record.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,31 +21,36 @@ Constants that indicate the behavior when deleting a referenced record.
 enum ReferenceAction
 ```
 
+```c
+enum CKReferenceAction : NSUInteger;
+```
+
 ## Topics
 
 ### Deletion Reference Actions
-- [CKRecord.ReferenceAction.none](ckrecord/referenceaction/none.md)
+- [CKRecord.ReferenceAction.none](./referenceaction/none.md)
   A reference action that has no cascading behavior.
-- [CKRecord.ReferenceAction.deleteSelf](ckrecord/referenceaction/deleteself.md)
+- [CKRecord.ReferenceAction.deleteSelf](./referenceaction/deleteself.md)
   A reference action that cascades deletions.
 ### Initializers
-- [init?(rawValue: UInt)](ckrecord/referenceaction/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./referenceaction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var action: CKRecord.ReferenceAction](ckrecord/reference/action-swift.property.md)
+### Getting the Reference Attributes
+- [var action: CKRecord.ReferenceAction](./reference/action-swift.property.md)
   The ownership behavior for the records.
-- [var recordID: CKRecord.ID](ckrecord/reference/recordid.md)
+- [var recordID: CKRecord.ID](./reference/recordid.md)
   The ID of the referenced record.
 
 

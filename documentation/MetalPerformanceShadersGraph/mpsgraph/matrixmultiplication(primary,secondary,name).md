@@ -1,7 +1,8 @@
 # matrixMultiplication(primary:secondary:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the matrix multiplication of 2 input tensors with support for broadcasting.
 
@@ -17,6 +18,10 @@ Computes the matrix multiplication of 2 input tensors with support for broadcast
 
 ```swift
 func matrixMultiplication(primary primaryTensor: MPSGraphTensor, secondary secondaryTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) matrixMultiplicationWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
 #### Return Value

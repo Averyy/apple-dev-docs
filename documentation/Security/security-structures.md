@@ -1,12 +1,13 @@
 # Security Structures
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [struct SecCEBasicConstraints](seccebasicconstraints.md)
-- [struct SecCEPolicyConstraints](seccepolicyconstraints.md)
+- [struct SecCEBasicConstraints](./seccebasicconstraints.md)
+- [struct SecCEPolicyConstraints](./seccepolicyconstraints.md)
 
 
 ---

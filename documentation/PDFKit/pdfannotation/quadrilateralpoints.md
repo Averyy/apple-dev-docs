@@ -1,7 +1,8 @@
 # quadrilateralPoints
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of values that represents the points bounding the marked-up text.
 
@@ -10,7 +11,7 @@ An array of values that represents the points bounding the marked-up text.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ An array of values that represents the points bounding the marked-up text.
 var quadrilateralPoints: [NSValue]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<NSValue *> * quadrilateralPoints;
+```
+
 #### Discussion
 
-The array contains `N * 4` [`NSValue`](https://developer.apple.com/documentation/foundation/nsvalue) objects that use [`pointValue`](https://developer.apple.com/documentation/foundation/nsvalue/pointvalue) or [`cgPointValue`](https://developer.apple.com/documentation/foundation/nsvalue/cgpointvalue) to define `N` quadrilaterals in page-space coordinates, where `N` is the number of quad points. The order of the points is a Z pattern as follows:
+The array contains `N * 4` [`NSValue`](../../Foundation/nsvalue.md) objects that use [`pointValue`](../../Foundation/nsvalue/pointvalue.md) or [`cgPointValue`](../../Foundation/nsvalue/cgpointvalue.md) to define `N` quadrilaterals in page-space coordinates, where `N` is the number of quad points. The order of the points is a Z pattern as follows:
 
 - Upper-left point
 - Upper-right point
@@ -32,9 +37,10 @@ The coordinates of each point are relative to the bound’s origin of the annota
 
 ## See Also
 
-- [var markupType: PDFMarkupType](pdfannotation/markuptype.md)
+### Configuring Text Markup Annotations
+- [var markupType: PDFMarkupType](./markuptype.md)
   The markup type that the annotation displays, either highlight, strikethrough, underline, or redact.
-- [enum PDFMarkupType](pdfmarkuptype.md)
+- [enum PDFMarkupType](../pdfmarkuptype.md)
   The styles available for markup annotations in PDFKit.
 
 

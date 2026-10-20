@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds, following an entry’s date, that WidgetKit considers the widget for rotation to the top of the stack.
 
@@ -21,11 +22,12 @@ var duration: TimeInterval
 
 ## Mentions
 
-- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
+- [Increasing the visibility of widgets in Smart Stacks](../widget-suggestions-in-smart-stacks.md)
 
 ## See Also
 
-- [var score: Float](timelineentryrelevance/score.md)
+### Configuring Relevance Properties
+- [var score: Float](./score.md)
   A value that indicates the relevance of an entry compared to other entries in the current and past timelines.
 
 

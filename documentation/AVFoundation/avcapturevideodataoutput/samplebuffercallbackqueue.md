@@ -1,7 +1,8 @@
 # sampleBufferCallbackQueue
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The queue on which the system invokes delegate callbacks.
 
@@ -19,17 +20,22 @@ The queue on which the system invokes delegate callbacks.
 var sampleBufferCallbackQueue: dispatch_queue_t? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) dispatch_queue_t sampleBufferCallbackQueue;
+```
+
 #### Discussion
 
-You set the queue using [`setSampleBufferDelegate(_:queue:)`](avcapturevideodataoutput/setsamplebufferdelegate(_:queue:).md).
+You set the queue using [`setSampleBufferDelegate(_:queue:)`](./setsamplebufferdelegate%28_,queue%29.md).
 
 ## See Also
 
-- [func setSampleBufferDelegate((any AVCaptureVideoDataOutputSampleBufferDelegate)?, queue: dispatch_queue_t?)](avcapturevideodataoutput/setsamplebufferdelegate(_:queue:).md)
+### Receiving captured video data
+- [func setSampleBufferDelegate((any AVCaptureVideoDataOutputSampleBufferDelegate)?, queue: dispatch_queue_t?)](./setsamplebufferdelegate%28_,queue%29.md)
   Sets the sample buffer delegate and the queue for invoking callbacks.
-- [var sampleBufferDelegate: (any AVCaptureVideoDataOutputSampleBufferDelegate)?](avcapturevideodataoutput/samplebufferdelegate.md)
+- [var sampleBufferDelegate: (any AVCaptureVideoDataOutputSampleBufferDelegate)?](./samplebufferdelegate.md)
   The capture object’s delegate.
-- [protocol AVCaptureVideoDataOutputSampleBufferDelegate](avcapturevideodataoutputsamplebufferdelegate.md)
+- [protocol AVCaptureVideoDataOutputSampleBufferDelegate](../avcapturevideodataoutputsamplebufferdelegate.md)
   Methods for receiving sample buffers from, and monitoring the status of, a video data output.
 
 

@@ -1,7 +1,8 @@
 # SRAmbientLightSample
 
 **Framework**: SensorKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The amount of ambient light in the user’s environment.
 
@@ -16,53 +17,58 @@ The amount of ambient light in the user’s environment.
 class SRAmbientLightSample
 ```
 
+```objc
+@interface SRAmbientLightSample : NSObject
+```
+
 #### Overview
 
-The [`ambientLightSensor`](srsensor/ambientlightsensor.md) sensor provides this class as its [`sample`](srfetchresult/sample.md) type.
+The [`ambientLightSensor`](./srsensor/ambientlightsensor.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 
 ## Topics
 
 ### Measuring light level
-- [var chromaticity: SRAmbientLightSample.Chromaticity](srambientlightsample/chromaticity-swift.property.md)
+- [var chromaticity: SRAmbientLightSample.Chromaticity](./srambientlightsample/chromaticity-swift.property.md)
   A coordinate pair that describes the sample’s light brightness and tint.
-- [SRAmbientLightSample.Chromaticity](srambientlightsample/chromaticity-swift.struct.md)
+- [SRAmbientLightSample.Chromaticity](./srambientlightsample/chromaticity-swift.struct.md)
   A coordinate pair that describes light brightness and tint.
-- [var lux: Measurement<UnitIlluminance>](srambientlightsample/lux.md)
+- [var lux: Measurement<UnitIlluminance>](./srambientlightsample/lux.md)
   An object that describes the sample’s luminous flux.
-- [var placement: SRAmbientLightSample.SensorPlacement](srambientlightsample/placement.md)
+- [var placement: SRAmbientLightSample.SensorPlacement](./srambientlightsample/placement.md)
   The light’s location relative to the sensor.
-- [SRAmbientLightSample.SensorPlacement](srambientlightsample/sensorplacement.md)
+- [SRAmbientLightSample.SensorPlacement](./srambientlightsample/sensorplacement.md)
   Directional values that describe light-source location with respect to the sensor.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SRDeviceUsageReport](srdeviceusagereport.md)
+### Interpreting data
+- [class SRDeviceUsageReport](./srdeviceusagereport.md)
   The frequency and relative duration that the user uses their device, particular Apple apps, or websites.
-- [class SRKeyboardMetrics](srkeyboardmetrics.md)
+- [class SRKeyboardMetrics](./srkeyboardmetrics.md)
   The configuration of a device’s keyboard and its usage patterns.
-- [class SRMediaEvent](srmediaevent.md)
+- [class SRMediaEvent](./srmediaevent.md)
   A user interaction with a media object, such as an image or a video.
-- [class SRMessagesUsageReport](srmessagesusagereport.md)
+- [class SRMessagesUsageReport](./srmessagesusagereport.md)
   An object that describes the user’s Messages app activity over a period of time.
-- [class SRPhoneUsageReport](srphoneusagereport.md)
+- [class SRPhoneUsageReport](./srphoneusagereport.md)
   An object that describes the user’s phone activity over a period of time.
-- [class SRVisit](srvisit.md)
+- [class SRVisit](./srvisit.md)
   The user’s progress in their daily travel routine.
-- [class SRWristDetection](srwristdetection.md)
+- [class SRWristDetection](./srwristdetection.md)
   The configuration of a watch on the wearer’s wrist.
 
 

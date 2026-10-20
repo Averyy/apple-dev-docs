@@ -1,7 +1,8 @@
 # HMServiceTypeInputSource
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An accessory input source service.
 
@@ -19,17 +20,22 @@ An accessory input source service.
 let HMServiceTypeInputSource: String
 ```
 
+```c
+extern NSString * const HMServiceTypeInputSource;
+```
+
 ## See Also
 
-- [let HMServiceTypeCameraControl: String](hmservicetypecameracontrol.md)
+### Video and Audio
+- [let HMServiceTypeCameraControl: String](./hmservicetypecameracontrol.md)
   A camera control service.
-- [let HMServiceTypeCameraRTPStreamManagement: String](hmservicetypecamerartpstreammanagement.md)
+- [let HMServiceTypeCameraRTPStreamManagement: String](./hmservicetypecamerartpstreammanagement.md)
   A stream management service.
-- [let HMServiceTypeMicrophone: String](hmservicetypemicrophone.md)
+- [let HMServiceTypeMicrophone: String](./hmservicetypemicrophone.md)
   A microphone service.
-- [let HMServiceTypeSpeaker: String](hmservicetypespeaker.md)
+- [let HMServiceTypeSpeaker: String](./hmservicetypespeaker.md)
   An audio speaker service.
-- [let HMServiceTypeTelevision: String](hmservicetypetelevision.md)
+- [let HMServiceTypeTelevision: String](./hmservicetypetelevision.md)
   A television service.
 
 

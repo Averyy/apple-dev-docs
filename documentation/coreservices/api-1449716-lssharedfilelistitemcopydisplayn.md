@@ -1,7 +1,8 @@
 # LSSharedFileListItemCopyDisplayName(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+ - Deprecated in 10.11
@@ -10,6 +11,10 @@
 
 ```swift
 func LSSharedFileListItemCopyDisplayName(_ inItem: LSSharedFileListItem) -> Unmanaged<CFString>
+```
+
+```c
+CFStringRef LSSharedFileListItemCopyDisplayName(LSSharedFileListItemRef inItem);
 ```
 
 

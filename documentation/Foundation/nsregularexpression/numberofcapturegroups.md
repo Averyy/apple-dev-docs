@@ -1,7 +1,8 @@
 # numberOfCaptureGroups
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the number of capture groups in the regular expression.
 
@@ -20,19 +21,24 @@ Returns the number of capture groups in the regular expression.
 var numberOfCaptureGroups: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger numberOfCaptureGroups;
+```
+
 #### Discussion
 
 A capture group consists of each possible match within a regular expression. Each capture group can then be used in a replacement template to insert that value into a replacement string.
 
-This value puts a limit on the values of `n` for `$n` in templates, and it determines the number of ranges in the returned [`NSTextCheckingResult`](nstextcheckingresult.md) instances returned in the `match...` methods.
+This value puts a limit on the values of `n` for `$n` in templates, and it determines the number of ranges in the returned [`NSTextCheckingResult`](../nstextcheckingresult.md) instances returned in the `match...` methods.
 
 An exception will be generated if you attempt to access a result with an index value exceeding `numberOfCaptureGroups``-1`.
 
 ## See Also
 
-- [var pattern: String](nsregularexpression/pattern.md)
+### Getting the Regular Expression and Options
+- [var pattern: String](./pattern.md)
   Returns the regular expression pattern.
-- [var options: NSRegularExpression.Options](nsregularexpression/options-swift.property.md)
+- [var options: NSRegularExpression.Options](./options-swift.property.md)
   Returns the options used when the regular expression option was created.
 
 

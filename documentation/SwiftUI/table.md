@@ -1,7 +1,8 @@
 # Table
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container that presents rows of data arranged in one or more columns, optionally providing the ability to select one or more members.
 
@@ -21,7 +22,7 @@ struct Table<Value, Rows, Columns> where Value == Rows.TableRowValue, Rows : Tab
 
 #### Overview
 
-You commonly create tables from collections of data. The following example shows how to create a simple, three-column table from an array of `Person` instances that conform to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol:
+You commonly create tables from collections of data. The following example shows how to create a simple, three-column table from an array of `Person` instances that conform to the [`Identifiable`](../Swift/identifiable.md) protocol:
 
 ```swift
 struct Person: Identifiable {
@@ -51,13 +52,13 @@ struct PeopleTable: View {
 }
 ```
 
-![A table with three columns and four rows, showing the](/images/com.apple.SwiftUI/Table-1-iOS@2x.png)
+![A table with three columns and four rows, showing the](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Table-1-iOS@2x.png)
 
 If there are more rows than can fit in the available space, `Table` provides vertical scrolling automatically. On macOS, the table also provides horizontal scrolling if there are more columns than can fit in the width of the view. Scroll bars appear as needed on iOS; on macOS, the `Table` shows or hides scroll bars based on the “Show scroll bars” system preference.
 
-##### Supporting Selection in Tables
+##### Supporting selection in tables
 
-To make rows of a table selectable, provide a binding to a selection variable. Binding to a single instance of the table data’s [`id`](https://developer.apple.com/documentation/swift/identifiable/id-8t2ws) type creates a single-selection table. Binding to a [`Set`](https://developer.apple.com/documentation/swift/set) creates a table that supports multiple selections. The following example shows how to add multi-select to the previous example. A [`Text`](text.md) view below the table shows the number of items currently selected.
+To make rows of a table selectable, provide a binding to a selection variable. Binding to a single instance of the table data’s [`id`](../Swift/identifiable/id-8t2ws.md) type creates a single-selection table. Binding to a [`Set`](../Swift/set.md) creates a table that supports multiple selections. The following example shows how to add multi-select to the previous example. A [`Text`](./text.md) view below the table shows the number of items currently selected.
 
 ```swift
 struct SelectableTable: View {
@@ -74,11 +75,11 @@ struct SelectableTable: View {
 }
 ```
 
-##### Supporting Sorting in Tables
+##### Supporting sorting in tables
 
-To make the columns of a table sortable, provide a binding to an array of [`SortComparator`](https://developer.apple.com/documentation/foundation/sortcomparator) instances. The table reflects the sorted state through its column headers, allowing sorting for any columns with key paths.
+To make the columns of a table sortable, provide a binding to an array of [`SortComparator`](../Foundation/sortcomparator.md) instances. The table reflects the sorted state through its column headers, allowing sorting for any columns with key paths.
 
-When the table sort descriptors update, re-sort the data collection that underlies the table; the table itself doesn’t perform a sort operation. You can watch for changes in the sort descriptors by using a [`onChange(of:perform:)`](view/onchange(of:perform:).md) modifier, and then sort the data in the modifier’s `perform` closure.
+When the table sort descriptors update, re-sort the data collection that underlies the table; the table itself doesn’t perform a sort operation. You can watch for changes in the sort descriptors by using a [`onChange(of:perform:)`](./view/onchange%28of,perform%29.md) modifier, and then sort the data in the modifier’s `perform` closure.
 
 The following example shows how to add sorting capability to the previous example:
 
@@ -99,11 +100,11 @@ struct SortableTable: View {
 }
 ```
 
-##### Building Tables with Static Rows
+##### Building tables with static rows
 
 To create a table from static rows, rather than the contents of a collection of data, you provide both the columns and the rows.
 
-The following example shows a table that calculates prices from applying varying gratuities (“tips”) to a fixed set of prices. It creates the table with the [`init(of:columns:rows:)`](table/init(of:columns:rows:).md) initializer, with the `rows` parameter providing the base price that each row uses for its calculations. Each column receives each price and performs its calculation, producing a [`Text`](text.md) to display the formatted result.
+The following example shows a table that calculates prices from applying varying gratuities (“tips”) to a fixed set of prices. It creates the table with the [`init(of:columns:rows:)`](./table/init%28of,columns,rows%29.md) initializer, with the `rows` parameter providing the base price that each row uses for its calculations. Each column receives each price and performs its calculation, producing a [`Text`](./text.md) to display the formatted result.
 
 ```swift
 struct Purchase: Identifiable {
@@ -137,17 +138,17 @@ struct TipTable: View {
 }
 ```
 
-![A table with four columns and three rows. Each row of the](/images/com.apple.SwiftUI/Table-2-macOS@2x.png)
+![A table with four columns and three rows. Each row of the](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Table-2-macOS@2x.png)
 
-##### Styling Tables
+##### Styling tables
 
-Use the [`tableStyle(_:)`](view/tablestyle(_:).md) modifier to set a [`TableStyle`](tablestyle.md) for all tables within a view. SwiftUI provides several table styles, such as [`InsetTableStyle`](insettablestyle.md) and, on macOS, [`BorderedTableStyle`](borderedtablestyle.md). The default style is [`AutomaticTableStyle`](automatictablestyle.md), which is available on all platforms that support `Table`.
+Use the [`tableStyle(_:)`](./view/tablestyle%28_%29.md) modifier to set a [`TableStyle`](./tablestyle.md) for all tables within a view. SwiftUI provides several table styles, such as [`InsetTableStyle`](./insettablestyle.md) and, on macOS, [`BorderedTableStyle`](./borderedtablestyle.md). The default style is [`AutomaticTableStyle`](./automatictablestyle.md), which is available on all platforms that support `Table`.
 
-##### Using Tables on Different Platforms
+##### Using tables on different platforms
 
 You can define a single table for use on macOS, iOS, iPadOS, and visionOS. On iOS, iPadOS, and visionOS, the size class provided by the environment is used to transition the table’s layout. Regular size class environments on iPadOS, visionOS, and the inner display of iPhone Duo will display headers and all of the columns in the table. However, on other iPhones or in a compact horizontal size class environment — typical on iPhone Duo’s outer display or iPad in certain modes, like smaller windowed apps — the table has limited space to display its columns. To conserve space, the table automatically hides headers and all columns after the first when it detects this condition.
 
-To provide a good user experience in a space-constrained environment, you can customize the first column to show more information when you detect that the [`horizontalSizeClass`](environmentvalues/horizontalsizeclass.md) environment value becomes [`UserInterfaceSizeClass.compact`](userinterfacesizeclass/compact.md). For example, you can modify the sortable table from above to conditionally show all the information in the first column:
+To provide a good user experience in a space-constrained environment, you can customize the first column to show more information when you detect that the [`horizontalSizeClass`](./environmentvalues/horizontalsizeclass.md) environment value becomes [`UserInterfaceSizeClass.compact`](./userinterfacesizeclass/compact.md). For example, you can modify the sortable table from above to conditionally show all the information in the first column:
 
 ```swift
 struct CompactableTable: View {
@@ -186,67 +187,68 @@ By making this change, you provide a list-like appearance for narrower displays,
 ## Topics
 
 ### Creating a table from columns
-- [init<Data>(Data, columns: () -> Columns)](table/init(_:columns:).md)
+- [init<Data>(Data, columns: () -> Columns)](./table/init%28_,columns%29.md)
   Creates a table that computes its rows based on a collection of identifiable data.
-- [init(_:selection:columns:)](table/init(_:selection:columns:).md)
+- [init(_:selection:columns:)](./table/init%28_,selection,columns%29.md)
   Creates a table that computes its rows based on a collection of identifiable data, and that supports selecting multiple rows.
 ### Creating a sortable table from columns
-- [init<Data, Sort>(Data, sortOrder: Binding<[Sort]>, columns: () -> Columns)](table/init(_:sortorder:columns:).md)
+- [init<Data, Sort>(Data, sortOrder: Binding<[Sort]>, columns: () -> Columns)](./table/init%28_,sortorder,columns%29.md)
   Creates a sortable table that computes its rows based on a collection of identifiable data.
-- [init(_:selection:sortOrder:columns:)](table/init(_:selection:sortorder:columns:).md)
+- [init(_:selection:sortOrder:columns:)](./table/init%28_,selection,sortorder,columns%29.md)
   Creates a sortable table that computes its rows based on a collection of identifiable data, and supports selecting multiple rows.
 ### Creating a table from columns and rows
-- [init(of: Value.Type, columns: () -> Columns, rows: () -> Rows)](table/init(of:columns:rows:).md)
+- [init(of: Value.Type, columns: () -> Columns, rows: () -> Rows)](./table/init%28of,columns,rows%29.md)
   Creates a table with the given columns and rows that generates its contents using values of the given type.
-- [init(of:selection:columns:rows:)](table/init(of:selection:columns:rows:).md)
+- [init(of:selection:columns:rows:)](./table/init%28of,selection,columns,rows%29.md)
   Creates a table with the given columns and rows that supports selecting multiple rows that generates its data using values of the given type.
 ### Creating a sortable table from columns and rows
-- [init<Sort>(of: Value.Type, sortOrder: Binding<[Sort]>, columns: () -> Columns, rows: () -> Rows)](table/init(of:sortorder:columns:rows:).md)
+- [init<Sort>(of: Value.Type, sortOrder: Binding<[Sort]>, columns: () -> Columns, rows: () -> Rows)](./table/init%28of,sortorder,columns,rows%29.md)
   Creates a sortable table with the given columns and rows.
-- [init(of:selection:sortOrder:columns:rows:)](table/init(of:selection:sortorder:columns:rows:).md)
+- [init(of:selection:sortOrder:columns:rows:)](./table/init%28of,selection,sortorder,columns,rows%29.md)
   Creates a sortable table with the given columns and rows that supports selecting multiple rows.
-- [init<Sort>(sortOrder: Binding<[Sort]>, columns: () -> Columns, rows: () -> Rows)](table/init(sortorder:columns:rows:).md)
+- [init<Sort>(sortOrder: Binding<[Sort]>, columns: () -> Columns, rows: () -> Rows)](./table/init%28sortorder,columns,rows%29.md)
   Creates a sortable table with the given columns and rows.
-- [init(selection:sortOrder:columns:rows:)](table/init(selection:sortorder:columns:rows:).md)
+- [init(selection:sortOrder:columns:rows:)](./table/init%28selection,sortorder,columns,rows%29.md)
   Creates a sortable table with the given columns and rows that supports selecting multiple rows.
 ### Creating a table with customizable columns
-- [init<Data>(Data, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns)](table/init(_:columncustomization:columns:).md)
+- [init<Data>(Data, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns)](./table/init%28_,columncustomization,columns%29.md)
   Creates a table that computes its rows based on a collection of identifiable data and has dynamically customizable columns.
-- [init(_:selection:columnCustomization:columns:)](table/init(_:selection:columncustomization:columns:).md)
+- [init(_:selection:columnCustomization:columns:)](./table/init%28_,selection,columncustomization,columns%29.md)
   Creates a table that computes its rows based on a collection of identifiable data, that supports selecting multiple rows, and that has dynamically customizable columns.
-- [init(_:selection:sortOrder:columnCustomization:columns:)](table/init(_:selection:sortorder:columncustomization:columns:).md)
+- [init(_:selection:sortOrder:columnCustomization:columns:)](./table/init%28_,selection,sortorder,columncustomization,columns%29.md)
   Creates a sortable table that computes its rows based on a collection of identifiable data, supports selecting multiple rows, and has dynamically customizable columns.
-- [init<Data, Sort>(Data, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns)](table/init(_:sortorder:columncustomization:columns:).md)
+- [init<Data, Sort>(Data, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns)](./table/init%28_,sortorder,columncustomization,columns%29.md)
   Creates a sortable table that computes its rows based on a collection of identifiable data and has dynamically customizable columns.
 ### Creating a table with dynamically customizable columns
-- [init(of: Value.Type, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns, rows: () -> Rows)](table/init(of:columncustomization:columns:rows:).md)
+- [init(of: Value.Type, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns, rows: () -> Rows)](./table/init%28of,columncustomization,columns,rows%29.md)
   Creates a table with the given columns and rows that generates its contents using values of the given type and has dynamically customizable columns.
-- [init(of:selection:columnCustomization:columns:rows:)](table/init(of:selection:columncustomization:columns:rows:).md)
+- [init(of:selection:columnCustomization:columns:rows:)](./table/init%28of,selection,columncustomization,columns,rows%29.md)
   Creates a table with the given columns and rows that supports selecting multiple rows that generates its data using values of the given type and has dynamically customizable columns.
-- [init(of:selection:sortOrder:columnCustomization:columns:rows:)](table/init(of:selection:sortorder:columncustomization:columns:rows:).md)
+- [init(of:selection:sortOrder:columnCustomization:columns:rows:)](./table/init%28of,selection,sortorder,columncustomization,columns,rows%29.md)
   Creates a sortable table with the given columns and rows that supports selecting multiple rows and dynamically customizable columns.
-- [init<Sort>(of: Value.Type, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns, rows: () -> Rows)](table/init(of:sortorder:columncustomization:columns:rows:).md)
+- [init<Sort>(of: Value.Type, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>, columns: () -> Columns, rows: () -> Rows)](./table/init%28of,sortorder,columncustomization,columns,rows%29.md)
   Creates a sortable table with the given columns and rows and has dynamically customizable columns.
 ### Creating a hierarchical table
-- [init<Data>(Data, children: KeyPath<Value, Data?>, columnCustomization: Binding<TableColumnCustomization<Value>>?, columns: () -> Columns)](table/init(_:children:columncustomization:columns:).md)
+- [init<Data>(Data, children: KeyPath<Value, Data?>, columnCustomization: Binding<TableColumnCustomization<Value>>?, columns: () -> Columns)](./table/init%28_,children,columncustomization,columns%29.md)
   Creates a hierarchical table that computes its rows based on a collection of identifiable data and key path to the children of that data.
-- [init(_:children:selection:columnCustomization:columns:)](table/init(_:children:selection:columncustomization:columns:).md)
+- [init(_:children:selection:columnCustomization:columns:)](./table/init%28_,children,selection,columncustomization,columns%29.md)
   Creates a hierarchical table that computes its rows based on a collection of identifiable data and key path to the children of that data, and supports selecting multiple rows.
-- [init(_:children:selection:sortOrder:columnCustomization:columns:)](table/init(_:children:selection:sortorder:columncustomization:columns:).md)
+- [init(_:children:selection:sortOrder:columnCustomization:columns:)](./table/init%28_,children,selection,sortorder,columncustomization,columns%29.md)
   Creates a sortable, hierarchical table that computes its rows based on a collection of identifiable data and key path to the children of that data, and supports selecting multiple rows.
-- [init<Data, Sort>(Data, children: KeyPath<Data.Element, Data?>, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>?, columns: () -> Columns)](table/init(_:children:sortorder:columncustomization:columns:).md)
+- [init<Data, Sort>(Data, children: KeyPath<Data.Element, Data?>, sortOrder: Binding<[Sort]>, columnCustomization: Binding<TableColumnCustomization<Value>>?, columns: () -> Columns)](./table/init%28_,children,sortorder,columncustomization,columns%29.md)
   Creates a sortable, hierarchical table that computes its rows based on a collection of identifiable data and key path to the children of that data.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [Building a great Mac app with SwiftUI](building-a-great-mac-app-with-swiftui.md)
+### Creating a table
+- [Building a great Mac app with SwiftUI](./building-a-great-mac-app-with-swiftui.md)
   Create engaging SwiftUI Mac apps by incorporating side bars, tables, toolbars, and several other popular user interface elements.
-- [func tableStyle<S>(S) -> some View](view/tablestyle(_:).md)
+- [func tableStyle<S>(S) -> some View](./view/tablestyle%28_%29.md)
   Sets the style for tables within this view.
 
 

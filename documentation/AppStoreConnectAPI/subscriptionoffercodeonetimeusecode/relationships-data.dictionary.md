@@ -1,7 +1,8 @@
 # SubscriptionOfferCodeOneTimeUseCode.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionOfferCodeOneTimeUseCode.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object SubscriptionOfferCodeOneTimeUseCode.Relationships.OfferCode](subscriptionoffercodeonetimeusecode/relationships-data.dictionary/offercode-data.dictionary.md)
+- [object SubscriptionOfferCodeOneTimeUseCode.Relationships.OfferCode](./relationships-data.dictionary/offercode-data.dictionary.md)
 ### Dictionaries
-- [object SubscriptionOfferCodeOneTimeUseCode.Relationships.Values](subscriptionoffercodeonetimeusecode/relationships-data.dictionary/values-data.dictionary.md)
+- [object SubscriptionOfferCodeOneTimeUseCode.Relationships.Values](./relationships-data.dictionary/values-data.dictionary.md)
 
 ## Properties
 
@@ -28,7 +29,8 @@ object SubscriptionOfferCodeOneTimeUseCode.Relationships
 
 ## See Also
 
-- [object SubscriptionOfferCodeOneTimeUseCode.Attributes](subscriptionoffercodeonetimeusecode/attributes-data.dictionary.md)
+### Objects
+- [object SubscriptionOfferCodeOneTimeUseCode.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a subscription offer code one time use code resource.
 
 

@@ -1,7 +1,8 @@
 # PromotedPurchase.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a promoted purchase resource.
 
@@ -10,19 +11,20 @@ Attributes that describe a promoted purchase resource.
 
 ## Declaration
 
-```swift
+```
 object PromotedPurchase.Attributes
 ```
 
 ## Properties
 
 - `enabled` (boolean)
-- `state` (string)
+- `state` (string): **Allowed Values**: `APPROVED`, `IN_REVIEW`, `PREPARE_FOR_SUBMISSION`, `REJECTED`
 - `visibleForAllUsers` (boolean)
 
 ## See Also
 
-- [object PromotedPurchase.Relationships](promotedpurchase/relationships-data.dictionary.md)
+### Objects and types
+- [object PromotedPurchase.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

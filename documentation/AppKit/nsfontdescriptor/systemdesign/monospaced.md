@@ -1,7 +1,8 @@
 # monospaced
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A font with a monospace appearance.
 
@@ -14,13 +15,18 @@ A font with a monospace appearance.
 static let monospaced: NSFontDescriptor.SystemDesign
 ```
 
+```c
+extern NSFontDescriptorSystemDesign const NSFontDescriptorSystemDesignMonospaced;
+```
+
 ## See Also
 
-- [static let `default`: NSFontDescriptor.SystemDesign](nsfontdescriptor/systemdesign/default.md)
+### Designs
+- [static let `default`: NSFontDescriptor.SystemDesign](./default.md)
   The default font design.
-- [static let rounded: NSFontDescriptor.SystemDesign](nsfontdescriptor/systemdesign/rounded.md)
+- [static let rounded: NSFontDescriptor.SystemDesign](./rounded.md)
   A font with a rounded appearance.
-- [static let serif: NSFontDescriptor.SystemDesign](nsfontdescriptor/systemdesign/serif.md)
+- [static let serif: NSFontDescriptor.SystemDesign](./serif.md)
   A font with a serif design.
 
 

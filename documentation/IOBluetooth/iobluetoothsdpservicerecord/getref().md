@@ -1,17 +1,22 @@
 # getRef()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an IOBluetoothSDPServiceRecordRef representation of the target IOBluetoothSDPServiceRecord object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getRef() -> Unmanaged<IOBluetoothSDPServiceRecordRef>!
+```
+
+```objc
+- (IOBluetoothSDPServiceRecordRef) getSDPServiceRecordRef;
 ```
 
 #### Return Value

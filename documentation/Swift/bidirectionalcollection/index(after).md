@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the position immediately after the given index.
@@ -32,6 +33,12 @@ The successor of an index must be well defined. For an index `i` into a collecti
 ## Parameters
 
 - `i`: A valid index of the collection. `i` must be less than `endIndex`.
+
+## Default Implementations
+
+### BidirectionalCollection Implementations
+- [func index(after: Self.Index) -> Self.Index](./index%28after%29-4zlq6.md)
+  Returns the position immediately after the given index.
 
 
 ---

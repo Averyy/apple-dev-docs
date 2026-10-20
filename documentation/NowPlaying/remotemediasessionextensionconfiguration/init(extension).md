@@ -1,7 +1,8 @@
 # init(extension:)
 
 **Framework**: Now Playing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new configuration with the specified extension instance.
 

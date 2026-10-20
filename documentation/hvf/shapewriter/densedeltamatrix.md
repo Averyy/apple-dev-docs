@@ -2,6 +2,7 @@
 
 **Framework**: hvf  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A dense matrix of segment delta values for extrema, in column order. The columns correspond to the axis extrema, with minimum first, then maximum

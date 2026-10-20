@@ -1,7 +1,8 @@
 # init(fromVersionString:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an FHIR version object from a string representation of the version.
 
@@ -18,6 +19,10 @@ Creates an FHIR version object from a string representation of the version.
 convenience init(fromVersionString versionString: String) throws
 ```
 
+```objc
++ (instancetype) versionFromVersionString:(NSString *) versionString error:(NSError **) errorOut;
+```
+
 #### Discussion
 
 The string must be in the following format: `<major>.<minor>.<patch>`.
@@ -28,9 +33,10 @@ The string must be in the following format: `<major>.<minor>.<patch>`.
 
 ## See Also
 
-- [class func primaryDSTU2() -> Self](hkfhirversion/primarydstu2.md)
+### Creating Version Objects
+- [class func primaryDSTU2() -> Self](./primarydstu2%28%29.md)
   Returns the primary Second Draft Standard for Trial Use (DSTU2) version.
-- [class func primaryR4() -> Self](hkfhirversion/primaryr4.md)
+- [class func primaryR4() -> Self](./primaryr4%28%29.md)
   Returns the primary Release 4 (R4) version.
 
 

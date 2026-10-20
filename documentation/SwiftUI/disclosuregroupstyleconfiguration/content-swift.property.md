@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content of the disclosure group.
 
@@ -20,7 +21,8 @@ let content: DisclosureGroupStyleConfiguration.Content
 
 ## See Also
 
-- [DisclosureGroupStyleConfiguration.Content](disclosuregroupstyleconfiguration/content-swift.struct.md)
+### Configuring the content
+- [DisclosureGroupStyleConfiguration.Content](./content-swift.struct.md)
   A type-erased content of a disclosure group.
 
 

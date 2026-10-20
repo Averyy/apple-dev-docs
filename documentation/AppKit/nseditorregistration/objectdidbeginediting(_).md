@@ -1,10 +1,11 @@
 # objectDidBeginEditing(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -13,9 +14,14 @@
 optional func objectDidBeginEditing(_ editor: any NSEditor)
 ```
 
+```objc
+- (void) objectDidBeginEditing:(id<NSEditor>) editor;
+```
+
 ## See Also
 
-- [func objectDidEndEditing(any NSEditor)](nseditorregistration/objectdidendediting(_:).md)
+### Instance Methods
+- [func objectDidEndEditing(any NSEditor)](./objectdidendediting%28_%29.md)
 
 
 ---

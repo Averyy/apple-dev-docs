@@ -1,7 +1,8 @@
 # LeftTopRear
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The left top rear channel.
 
@@ -10,25 +11,26 @@ The left top rear channel.
 
 ## Declaration
 
-```swift
+```c
 LeftTopRear
 ```
 
 ## See Also
 
-- [Left](audiodriverkit/iouseraudiochannellabel/left.md)
+### Left Channels
+- [Left](./left.md)
   The left channel.
-- [LeftCenter](audiodriverkit/iouseraudiochannellabel/leftcenter.md)
+- [LeftCenter](./leftcenter.md)
   The left center channel.
-- [LeftTopFront](audiodriverkit/iouseraudiochannellabel/lefttopfront.md)
+- [LeftTopFront](./lefttopfront.md)
   The left top front channel.
-- [VerticalHeightLeft](audiodriverkit/iouseraudiochannellabel/verticalheightleft.md)
+- [VerticalHeightLeft](./verticalheightleft.md)
   A synonym for the top-left–front channel.
-- [LeftTopMiddle](audiodriverkit/iouseraudiochannellabel/lefttopmiddle.md)
+- [LeftTopMiddle](./lefttopmiddle.md)
   The left top middle channel.
-- [LeftTotal](audiodriverkit/iouseraudiochannellabel/lefttotal.md)
+- [LeftTotal](./lefttotal.md)
   A matrix encode of four left channels.
-- [LeftWide](audiodriverkit/iouseraudiochannellabel/leftwide.md)
+- [LeftWide](./leftwide.md)
   The left wide channel.
 
 

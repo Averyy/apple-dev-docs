@@ -1,7 +1,8 @@
 # CSSM_WORDID_ACL
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_WORDID_ACL: Int { get }
+```
+
+```c
+CSSM_WORDID_ACL
 ```
 
 

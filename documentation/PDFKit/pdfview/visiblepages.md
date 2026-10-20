@@ -1,7 +1,8 @@
 # visiblePages
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an array of `PDFPage` objects that represent the currently visible pages.
 
@@ -19,13 +20,18 @@ Returns an array of `PDFPage` objects that represent the currently visible pages
 var visiblePages: [PDFPage] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<PDFPage *> * visiblePages;
+```
+
 ## See Also
 
-- [var currentPage: PDFPage?](pdfview/currentpage.md)
+### Navigating Within a Document
+- [var currentPage: PDFPage?](./currentpage.md)
   Returns the current page.
-- [var currentDestination: PDFDestination?](pdfview/currentdestination.md)
+- [var currentDestination: PDFDestination?](./currentdestination.md)
   Returns a `PDFDestination` object representing the current page and the current point in the view specified in page space.
-- [Navigation](navigation.md)
+- [Navigation](../navigation.md)
   Operations for moving through page history and seeking to a page in a document.
 
 

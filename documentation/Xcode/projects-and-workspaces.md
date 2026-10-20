@@ -7,41 +7,42 @@ Manage the code and resources you use to build apps, libraries, and other softwa
 ## Topics
 
 ### Navigation
-- [Configuring the Xcode project window](configuring-the-xcode-project-window.md)
+- [Configuring the Xcode project window](./configuring-the-xcode-project-window.md)
   Customize the Xcode project window and editor area to view and edit project files in a configuration you prefer.
-- [Finding and replacing content in a project](finding-and-replacing-content-in-a-project.md)
+- [Finding and replacing content in a project](./finding-and-replacing-content-in-a-project.md)
   Search some or all of your project for text strings or symbol names, and perform advanced searches using regular expressions.
 ### Project configuration
-- [Updating your Xcode project configuration file format](updating-your-xcode-project-configuration-file-format.md)
+- [Updating your Xcode project configuration file format](./updating-your-xcode-project-configuration-file-format.md)
   Configure your Xcode project to use the JSON project configuration file format that’s more human-readable and editable by coding intelligence agents.
-- [Managing your app’s information property list values](../bundleresources/managing-your-app-s-information-property-list.md)
+- [Managing your app’s information property list values](../BundleResources/managing-your-app-s-information-property-list.md)
   Customize the information property list values for your app using Xcode.
-- [Adding package dependencies to your app](adding-package-dependencies-to-your-app.md)
+- [Adding package dependencies to your app](./adding-package-dependencies-to-your-app.md)
   Integrate package dependencies to share code between projects, or leverage code from other developers.
-- [Creating a Mac version of your iPad app](../uikit/creating-a-mac-version-of-your-ipad-app.md)
+- [Creating a Mac version of your iPad app](../UIKit/creating-a-mac-version-of-your-ipad-app.md)
   Bring your iPad app to macOS with Mac Catalyst.
-- [Setting up a watchOS project](../watchos-apps/setting-up-a-watchos-project.md)
+- [Setting up a watchOS project](../watchOS-Apps/setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
-- [Embedding a command-line tool in a sandboxed app](embedding-a-helper-tool-in-a-sandboxed-app.md)
+- [Embedding a command-line tool in a sandboxed app](./embedding-a-helper-tool-in-a-sandboxed-app.md)
   Add a command-line tool to a sandboxed app’s Xcode project so the resulting app can run it as a helper tool.
 ### Customization
-- [Downloading and installing additional Xcode components](downloading-and-installing-additional-xcode-components.md)
+- [Downloading and installing additional Xcode components](./downloading-and-installing-additional-xcode-components.md)
   Add more simulated devices, optional features, and support for additional platforms.
-- [Customizing your workspace using themes](customizing-your-workspace-using-themes.md)
+- [Customizing your workspace using themes](./customizing-your-workspace-using-themes.md)
   Personalize the appearance of Xcode on your Mac.
 ### Associated domains and universal links
-- [Allowing apps and websites to link to your content](allowing-apps-and-websites-to-link-to-your-content.md)
+- [Allowing apps and websites to link to your content](./allowing-apps-and-websites-to-link-to-your-content.md)
   Use universal links to link directly to content within your app and share data securely.
 
 ## See Also
 
-- [Source control management](source-control-management.md)
+### Xcode IDE
+- [Source control management](./source-control-management.md)
   Back up your files, collaborate with others, and tag your releases with Git source control support in Xcode.
-- [Capabilities](capabilities.md)
+- [Capabilities](./capabilities.md)
   Enable services that Apple provides, such as In-App Purchase, Push Notifications, Apple Pay, iCloud, and many others.
-- [Build system](build-system.md)
+- [Build system](./build-system.md)
   Compile your code into a binary format, and customize your project settings to build your code.
-- [Command-line tools](command-line-tools.md)
+- [Command-line tools](./command-line-tools.md)
   Develop and customize your projects in Terminal.
 
 

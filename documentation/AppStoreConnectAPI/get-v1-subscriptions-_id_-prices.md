@@ -1,7 +1,8 @@
 # List all prices for a subscription
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of prices for an auto-renewable subscription, by territory.
 
@@ -10,13 +11,13 @@ Get a list of prices for an auto-renewable subscription, by territory.
 
 ## Mentions
 
-- [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
+- [Configuring subscription prices across territories](./configuring-subscription-prices-across-territories.md)
 
 ##### Example Request and Response
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/subscriptions/6470878936/prices?filter[territory]=USA&include=subscriptionPricePoint,territory&limit=2
 ```
 
@@ -82,23 +83,39 @@ GET https://api.appstoreconnect.apple.com/v1/subscriptions/6470878936/prices?fil
 
 ## Parameters
 
-- `fields[subscriptionPricePoints]` ([string])
-- `fields[subscriptionPrices]` ([string])
-- `fields[territories]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[subscriptionPricePoints]` ([string]): **Allowed Values**: `customerPrice`, `proceeds`, `proceedsYear2`, `territory`, `equalizations`, `adjustedEqualizations`
+- `fields[subscriptionPrices]` ([string]): **Allowed Values**: `startDate`, `preserved`, `planType`, `territory`, `subscriptionPricePoint`
+- `fields[territories]` ([string]): **Allowed Values**: `currency`
 - `filter[subscriptionPricePoint]` ([string])
 - `filter[territory]` ([string])
-- `include` ([string])
-- `limit` (integer)
-- `filter[planType]` ([string])
+- `include` ([string]): **Allowed Values**: `territory`, `subscriptionPricePoint`
+- `limit` (integer): **Maximum**: `200`
+- `filter[planType]` ([string]): **Allowed Values**: `MONTHLY`, `UPFRONT`
+
+## Responses
+
+- `200` OK (`SubscriptionPricesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List all price points for a subscription](get-v1-subscriptions-_id_-pricepoints.md)
+### Getting price points and prices
+- [List all price points for a subscription](./get-v1-subscriptions-_id_-pricepoints.md)
   Get a list of price points for an auto-renewable subscription by territory.
-- [List price point IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-pricepoints.md)
-- [List all subscription price ids for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-prices.md)
+- [List price point IDs for an auto-renewable subscription](./get-v1-subscriptions-_id_-relationships-pricepoints.md)
+- [List all subscription price ids for an auto-renewable subscription](./get-v1-subscriptions-_id_-relationships-prices.md)
   Get a list of resource IDs representing subscription prices for an auto-renewable subscription.
-- [Delete prices from a subscription](delete-v1-subscriptions-_id_-relationships-prices.md)
+- [Delete prices from a subscription](./delete-v1-subscriptions-_id_-relationships-prices.md)
   Delete a scheduled subscription price change for an auto-renewable subscription.
 
 

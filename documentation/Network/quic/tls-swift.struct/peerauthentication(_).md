@@ -1,7 +1,8 @@
 # peerAuthentication(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specify a preference for how to authenticate the peer.
 

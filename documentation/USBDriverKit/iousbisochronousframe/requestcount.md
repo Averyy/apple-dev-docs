@@ -1,7 +1,8 @@
 # requestCount
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of bytes to transfer for this frame.
 
@@ -10,7 +11,7 @@ The number of bytes to transfer for this frame.
 
 ## Declaration
 
-```swift
+```c
 uint32_t requestCount;
 ```
 
@@ -20,13 +21,14 @@ Set the value of this field before making an isochronous request.
 
 ## See Also
 
-- [status](iousbisochronousframe/status.md)
+### Getting the Frame Properties
+- [status](./status.md)
   The completion status for this individual frame.
-- [completeCount](iousbisochronousframe/completecount.md)
+- [completeCount](./completecount.md)
   The number of bytes actually transferred for this frame.
-- [reserved](iousbisochronousframe/reserved.md)
+- [reserved](./reserved.md)
   Reserved for future use.
-- [timeStamp](iousbisochronousframe/timestamp.md)
+- [timeStamp](./timestamp.md)
   The frame’s observed completion time.
 
 

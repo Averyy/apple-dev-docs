@@ -1,7 +1,8 @@
 # TableColumnForEach
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that computes columns on demand from an underlying collection of identified data.
 
@@ -21,7 +22,7 @@ struct TableColumnForEach<Data, ID, RowValue, Sort, Content> where Data : Random
 
 #### Overview
 
-Use `TableColumnForEach` to create columns based on a [`RandomAccessCollection`](https://developer.apple.com/documentation/swift/randomaccesscollection) of some data type. Either the collection’s elements must conform to [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) or you need to provide an `id` parameter to the `TableColumnForEach` initializer.
+Use `TableColumnForEach` to create columns based on a [`RandomAccessCollection`](../Swift/randomaccesscollection.md) of some data type. Either the collection’s elements must conform to [`Identifiable`](../Swift/identifiable.md) or you need to provide an `id` parameter to the `TableColumnForEach` initializer.
 
 The following example shows the interface for an `AudioSampleTrack`, which h as a collection of `AudioSample` across a dynamic number of `AudioChannel`s. The `Table` is created for displaying rows for each sample. It has one static column for the sample’s timestamp and uses a `TableColumnForEach` instance to produce a column for each of the audio channels in the track.
 
@@ -70,30 +71,31 @@ struct ContentView: View {
 ## Topics
 
 ### Creating the collection
-- [init(_:content:)](tablecolumnforeach/init(_:content:).md)
+- [init(_:content:)](./tablecolumnforeach/init%28_,content%29.md)
   Creates an instance that uniquely identifies and creates table columns across updates based on the identity of the underlying data.
-- [init(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> Content)](tablecolumnforeach/init(_:id:content:).md)
+- [init(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> Content)](./tablecolumnforeach/init%28_,id,content%29.md)
   Creates an instance that uniquely identifies and creates table columns across updates based on the provided key path to the underlying data’s identifier.
 ### Accessing collection content
-- [var content: (Data.Element) -> Content](tablecolumnforeach/content.md)
+- [var content: (Data.Element) -> Content](./tablecolumnforeach/content.md)
   A function to create content on demand using the underlying data.
-- [var data: Data](tablecolumnforeach/data.md)
+- [var data: Data](./tablecolumnforeach/data.md)
   The collection of underlying identified data that SwiftUI uses to create columns dynamically.
 
 ## Relationships
 
 ### Conforms To
-- [TableColumnContent](tablecolumncontent.md)
+- [TableColumnContent](./tablecolumncontent.md)
 
 ## See Also
 
-- [struct TableColumn](tablecolumn.md)
+### Creating columns
+- [struct TableColumn](./tablecolumn.md)
   A column that displays a view for each row in a table.
-- [protocol TableColumnContent](tablecolumncontent.md)
+- [protocol TableColumnContent](./tablecolumncontent.md)
   A type used to represent columns within a table.
-- [struct TableColumnAlignment](tablecolumnalignment.md)
+- [struct TableColumnAlignment](./tablecolumnalignment.md)
   Describes the alignment of the content of a table column.
-- [struct TableColumnBuilder](tablecolumnbuilder.md)
+- [struct TableColumnBuilder](./tablecolumnbuilder.md)
   A result builder that creates table column content from closures.
 
 

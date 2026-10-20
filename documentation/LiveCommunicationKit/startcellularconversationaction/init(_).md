@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action that initiates a cellular conversation using information from a recent conversation.
 
@@ -26,7 +27,8 @@ Starting a cellular conversation from a recent conversation uses the same inform
 
 ## See Also
 
-- [init(Handle, cellularService: CellularService?)](startcellularconversationaction/init(_:cellularservice:).md)
+### Request creation
+- [init(Handle, cellularService: CellularService?)](./init%28_,cellularservice%29.md)
   Creates an action that initiates a cellular network conversation.
 
 

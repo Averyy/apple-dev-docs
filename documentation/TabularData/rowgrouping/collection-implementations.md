@@ -1,11 +1,12 @@
 # Collection Implementations
 
-**Framework**: TabularData
+**Framework**: TabularData  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var count: Int](rowgrouping/count.md)
+- [var count: Int](./count.md)
   The number of groups in the row grouping.
 
 

@@ -1,7 +1,8 @@
 # disabledProfiles
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object’s disabled profiles.
 
@@ -18,9 +19,14 @@ The object’s disabled profiles.
 var disabledProfiles: [MIDICIProfile] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<MIDICIProfile *> * disabledProfiles;
+```
+
 ## See Also
 
-- [var enabledProfiles: [MIDICIProfile]](midiciprofilestate/enabledprofiles.md)
+### Accessing Profiles
+- [var enabledProfiles: [MIDICIProfile]](./enabledprofiles.md)
   The object’s enabled profiles.
 
 

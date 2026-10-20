@@ -1,7 +1,8 @@
 # hasAmbiguousLayout
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the constraints impacting the layout of the view incompletely specify the location of the view.
 
@@ -9,7 +10,7 @@ A Boolean value that determines whether the constraints impacting the layout of 
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ A Boolean value that determines whether the constraints impacting the layout of 
 var hasAmbiguousLayout: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasAmbiguousLayout;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the view’s location is incompletely specified, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+The value of this property is [`true`](../../Swift/true.md) if the view’s location is incompletely specified, [`false`](../../Swift/false.md) otherwise.
 
 If there aren’t enough constraints in the system to uniquely determine layout, the layout is considered ambiguous. For example, if the only constraint in the system is `x = y + 100`, the layout is ambiguous because there are many possible values for `x` and `y`. UIKit does not automatically detect every ambiguous layout, so you may need to look for symptoms of ambiguity, such as views that jump from place to place, or that are in the wrong place.
 
@@ -28,9 +33,10 @@ This property should only be used for debugging constraint-based layout. No app 
 
 ## See Also
 
-- [func constraintsAffectingLayout(for: NSLayoutConstraint.Axis) -> [NSLayoutConstraint]](uiview/constraintsaffectinglayout(for:).md)
+### Debugging Auto Layout
+- [func constraintsAffectingLayout(for: NSLayoutConstraint.Axis) -> [NSLayoutConstraint]](./constraintsaffectinglayout%28for%29.md)
   Returns the constraints impacting the layout of the view for a given axis.
-- [func exerciseAmbiguityInLayout()](uiview/exerciseambiguityinlayout.md)
+- [func exerciseAmbiguityInLayout()](./exerciseambiguityinlayout%28%29.md)
   Randomly changes the frame of a view with an ambiguous layout between the different valid values.
 
 

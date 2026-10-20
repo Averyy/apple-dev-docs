@@ -1,7 +1,8 @@
 # add(_:forMode:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a port as an input source to the specified mode of the run loop.
 
@@ -20,6 +21,10 @@ Adds a port as an input source to the specified mode of the run loop.
 func add(_ aPort: Port, forMode mode: RunLoop.Mode)
 ```
 
+```objc
+- (void) addPort:(NSPort *) aPort forMode:(NSRunLoopMode) mode;
+```
+
 #### Discussion
 
 This method schedules the port with the receiver. You can add a port to multiple input modes. When the receiver is running in the specified mode, it dispatches messages destined for that port to the port’s designated handler routine.
@@ -31,7 +36,8 @@ This method schedules the port with the receiver. You can add a port to multiple
 
 ## See Also
 
-- [func remove(Port, forMode: RunLoop.Mode)](runloop/remove(_:formode:).md)
+### Managing Ports
+- [func remove(Port, forMode: RunLoop.Mode)](./remove%28_,formode%29.md)
   Removes a port from the specified input mode of the run loop.
 
 

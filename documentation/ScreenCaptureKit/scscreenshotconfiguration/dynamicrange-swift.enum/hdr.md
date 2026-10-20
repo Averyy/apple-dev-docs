@@ -1,18 +1,23 @@
 # SCScreenshotConfiguration.DynamicRange.hdr
 
 **Framework**: ScreenCaptureKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returns a high dynamic range image to the client.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case hdr
+```
+
+```c
+SCScreenshotDynamicRangeHDR
 ```
 
 

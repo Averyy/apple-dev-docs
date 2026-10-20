@@ -1,11 +1,12 @@
 # TemporalTransformer Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func applied(to: some TemporalSequence<MLShapedArray<Scalar>>, eventHandler: EventHandler?) async throws -> AnyTemporalSequence<MLShapedArray<Scalar>>](lineartimeseriesforecaster/model/applied(to:eventhandler:)-3h2wx.md)
+- [func applied(to: some TemporalSequence<MLShapedArray<Scalar>>, eventHandler: EventHandler?) async throws -> AnyTemporalSequence<MLShapedArray<Scalar>>](./applied%28to,eventhandler%29-3h2wx.md)
   Performs the transformation on an input sequence.
 
 

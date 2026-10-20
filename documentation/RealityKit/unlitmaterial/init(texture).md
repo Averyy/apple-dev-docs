@@ -1,7 +1,8 @@
 # init(texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new unlit material with the provided color texture.
 
@@ -21,15 +22,16 @@ init(texture: TextureResource)
 
 ## See Also
 
-- [init()](unlitmaterial/init.md)
+### Creating an unlit material
+- [init()](./init%28%29.md)
   Creates an unlit material.
-- [init(color: NSColor)](unlitmaterial/init(color:)-8xgq2.md)
+- [init(color: NSColor)](./init%28color%29-8xgq2.md)
   Creates an unlit material with the given base color.
-- [init(applyPostProcessToneMap: Bool)](unlitmaterial/init(applypostprocesstonemap:).md)
+- [init(applyPostProcessToneMap: Bool)](./init%28applypostprocesstonemap%29.md)
   Creates an UnlitMaterial with the given tone mapping setting
-- [init(color: NSColor, applyPostProcessToneMap: Bool)](unlitmaterial/init(color:applypostprocesstonemap:)-899er.md)
+- [init(color: NSColor, applyPostProcessToneMap: Bool)](./init%28color,applypostprocesstonemap%29-899er.md)
   Creates an UnlitMaterial with the given color and tone mapping setting
-- [init(program: UnlitMaterial.Program)](unlitmaterial/init(program:).md)
+- [init(program: UnlitMaterial.Program)](./init%28program%29.md)
 
 
 ---

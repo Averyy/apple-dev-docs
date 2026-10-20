@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional identifier the class returns as a string.
 
@@ -20,15 +21,20 @@ An optional identifier the class returns as a string.
 var identifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSString * identifier;
+```
+
 #### Discussion
 
-Note that the GeoJSON specification states that the identifier can be a number or a string. However, this [`identifier`](mkgeojsonfeature/identifier.md) returns as a string.
+Note that the GeoJSON specification states that the identifier can be a number or a string. However, this [`identifier`](./identifier.md) returns as a string.
 
 ## See Also
 
-- [var geometry: [any MKShape & MKGeoJSONObject]](mkgeojsonfeature/geometry.md)
+### Feature properties
+- [var geometry: [any MKShape & MKGeoJSONObject]](./geometry.md)
   The shape or shapes associated with the GeoJSON feature.
-- [var properties: Data?](mkgeojsonfeature/properties.md)
+- [var properties: Data?](./properties.md)
   Optional serialized JSON data that corresponds to the properties key.
 
 

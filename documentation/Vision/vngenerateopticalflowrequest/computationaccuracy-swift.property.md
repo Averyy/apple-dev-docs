@@ -1,7 +1,8 @@
 # computationAccuracy
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accuracy level for computing optical flow.
 
@@ -19,13 +20,18 @@ The accuracy level for computing optical flow.
 var computationAccuracy: VNGenerateOpticalFlowRequest.ComputationAccuracy { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) VNGenerateOpticalFlowRequestComputationAccuracy computationAccuracy;
+```
+
 ## See Also
 
-- [VNGenerateOpticalFlowRequest.ComputationAccuracy](vngenerateopticalflowrequest/computationaccuracy-swift.enum.md)
+### Configuring the Request
+- [VNGenerateOpticalFlowRequest.ComputationAccuracy](./computationaccuracy-swift.enum.md)
   The supported optical flow accuracy levels.
-- [var outputPixelFormat: OSType](vngenerateopticalflowrequest/outputpixelformat.md)
+- [var outputPixelFormat: OSType](./outputpixelformat.md)
   The output buffer’s pixel format.
-- [var keepNetworkOutput: Bool](vngenerateopticalflowrequest/keepnetworkoutput.md)
+- [var keepNetworkOutput: Bool](./keepnetworkoutput.md)
   A Boolean value that indicates whether to keep the raw pixel buffer coming from the machine learning network.
 
 

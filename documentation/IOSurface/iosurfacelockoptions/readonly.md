@@ -1,7 +1,8 @@
 # readOnly
 
 **Framework**: IOSurface  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,13 +18,18 @@
 static var readOnly: IOSurfaceLockOptions { get }
 ```
 
+```c
+kIOSurfaceLockReadOnly
+```
+
 #### Discussion
 
 If you are not going to modify the data while you hold the lock, you should set this flag to avoid invalidating any existing caches of the buffer contents. This flag should be passed both to the lock and unlock functions. Non-symmentrical usage of this flag will result in undefined behavior.
 
 ## See Also
 
-- [static var avoidSync: IOSurfaceLockOptions](iosurfacelockoptions/avoidsync.md)
+### Options
+- [static var avoidSync: IOSurfaceLockOptions](./avoidsync.md)
 
 
 ---

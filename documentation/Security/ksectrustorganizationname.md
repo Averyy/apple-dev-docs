@@ -1,7 +1,8 @@
 # kSecTrustOrganizationName
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is the organization name field of the subject of the leaf certificate.
 
@@ -20,9 +21,13 @@ A key whose value is the organization name field of the subject of the leaf cert
 let kSecTrustOrganizationName: CFString
 ```
 
+```c
+extern CFStringRef const kSecTrustOrganizationName;
+```
+
 #### Discussion
 
-The value is a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) that is meant to be displayed to the user as the validated name of the company or entity that owns the certificate, but only if the [`kSecTrustExtendedValidation`](ksectrustextendedvalidation.md) key is present.
+The value is a [`CFString`](../CoreFoundation/cfstring.md) that is meant to be displayed to the user as the validated name of the company or entity that owns the certificate, but only if the [`kSecTrustExtendedValidation`](./ksectrustextendedvalidation.md) key is present.
 
 
 ---

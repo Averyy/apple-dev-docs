@@ -1,7 +1,8 @@
 # subscript(_:_:_:_:_:)
 
 **Framework**: Core ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 18.0+
@@ -20,10 +21,11 @@ subscript(firstRange: (any MLTensorRangeExpression)?, secondRange: (any MLTensor
 
 ## See Also
 
-- [subscript((any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:).md)
-- [subscript(UnboundedRange, (any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:_:).md)
-- [subscript((any MLTensorRangeExpression)?, UnboundedRange, (any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:_:_:).md)
-- [subscript((any MLTensorRangeExpression)?, (any MLTensorRangeExpression)?, UnboundedRange, (any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:_:_:_:).md)
+### Accessing a multiarray’s elements
+- [subscript((any MLTensorRangeExpression)?...) -> MLTensor](./subscript%28_%29.md)
+- [subscript(UnboundedRange, (any MLTensorRangeExpression)?...) -> MLTensor](./subscript%28_,_%29.md)
+- [subscript((any MLTensorRangeExpression)?, UnboundedRange, (any MLTensorRangeExpression)?...) -> MLTensor](./subscript%28_,_,_%29.md)
+- [subscript((any MLTensorRangeExpression)?, (any MLTensorRangeExpression)?, UnboundedRange, (any MLTensorRangeExpression)?...) -> MLTensor](./subscript%28_,_,_,_%29.md)
 
 
 ---

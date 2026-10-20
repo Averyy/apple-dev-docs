@@ -1,7 +1,8 @@
 # setCaptionSide(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setCaptionSide(_ captionSide: String!)
+```
+
+```objc
+- (void) setCaptionSide:(NSString *) captionSide;
 ```
 
 

@@ -1,7 +1,8 @@
 # verdict(for:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Determines if accessing the specified URL is allowed or denied.
 
@@ -19,7 +20,7 @@ class func verdict(for url: URL) async -> NEURLFilter.Verdict
 
 #### Return Value
 
-A [`NEURLFilter.Verdict`](neurlfilter/verdict.md) that indicates whether the filter allows or denies connecting to the URL. If the verdict is deny, the caller should fail the URL request.
+A [`NEURLFilter.Verdict`](./verdict.md) that indicates whether the filter allows or denies connecting to the URL. If the verdict is deny, the caller should fail the URL request.
 
 #### Discussion
 
@@ -31,7 +32,8 @@ Callers should honor the return verdict to prevent communication with restricted
 
 ## See Also
 
-- [NEURLFilter.Verdict](neurlfilter/verdict.md)
+### Evaluating a URL
+- [NEURLFilter.Verdict](./verdict.md)
   A verdict returned by a URL filter.
 
 

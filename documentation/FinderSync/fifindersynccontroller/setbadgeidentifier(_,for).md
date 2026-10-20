@@ -1,7 +1,8 @@
 # setBadgeIdentifier(_:for:)
 
 **Framework**: Finder Sync  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the badge for a file or directory.
 
@@ -14,11 +15,15 @@ Sets the badge for a file or directory.
 func setBadgeIdentifier(_ badgeID: String, for url: URL)
 ```
 
+```objc
+- (void) setBadgeIdentifier:(NSString *) badgeID forURL:(NSURL *) url;
+```
+
 #### Discussion
 
 Adds the specified badge to the given file or directory. Setting the identifier to an empty string (`@""`) removes the badge.
 
-Avoid adding badges to items that the Finder hasn’t displayed yet. When setting the initial badge, call this method from your Finder Sync extension’s [`requestBadgeIdentifier(for:)`](fifindersyncprotocol/requestbadgeidentifier(for:).md) method. When updating badges, call this method only for items that have already received a badge.
+Avoid adding badges to items that the Finder hasn’t displayed yet. When setting the initial badge, call this method from your Finder Sync extension’s [`requestBadgeIdentifier(for:)`](../fifindersyncprotocol/requestbadgeidentifier%28for%29.md) method. When updating badges, call this method only for items that have already received a badge.
 
 ## Parameters
 
@@ -27,17 +32,19 @@ Avoid adding badges to items that the Finder hasn’t displayed yet. When settin
 
 ## See Also
 
-- [func requestBadgeIdentifier(for: URL)](fifindersyncprotocol/requestbadgeidentifier(for:).md)
+### Related Documentation
+- [func requestBadgeIdentifier(for: URL)](../fifindersyncprotocol/requestbadgeidentifier%28for%29.md)
   Requests a badge for the given file or directory.
-- [class func `default`() -> Self](fifindersynccontroller/default.md)
+### Managing the Finder Sync Controller
+- [class func `default`() -> Self](./default%28%29.md)
   Returns the shared Finder Sync controller object.
-- [var directoryURLs: Set<URL>!](fifindersynccontroller/directoryurls.md)
+- [var directoryURLs: Set<URL>!](./directoryurls.md)
   The directories managed by this extension.
-- [func selectedItemURLs() -> [URL]?](fifindersynccontroller/selecteditemurls.md)
+- [func selectedItemURLs() -> [URL]?](./selecteditemurls%28%29.md)
   Returns an array of selected items.
-- [func setBadgeImage(NSImage, label: String?, forBadgeIdentifier: String)](fifindersynccontroller/setbadgeimage(_:label:forbadgeidentifier:).md)
+- [func setBadgeImage(NSImage, label: String?, forBadgeIdentifier: String)](./setbadgeimage%28_,label,forbadgeidentifier%29.md)
   Sets the badge image and label for the given ID.
-- [func targetedURL() -> URL?](fifindersynccontroller/targetedurl.md)
+- [func targetedURL() -> URL?](./targetedurl%28%29.md)
   Returns the URL of the Finder’s current target.
 
 

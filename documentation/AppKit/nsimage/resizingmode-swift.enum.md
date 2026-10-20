@@ -1,7 +1,8 @@
 # NSImage.ResizingMode
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that describe the resizing mode for the image.
 
@@ -14,35 +15,40 @@ Constants that describe the resizing mode for the image.
 enum ResizingMode
 ```
 
+```c
+enum NSImageResizingMode : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSImage.ResizingMode.tile](nsimage/resizingmode-swift.enum/tile.md)
+- [NSImage.ResizingMode.tile](./resizingmode-swift.enum/tile.md)
   The image tiles when it resizes.
-- [NSImage.ResizingMode.stretch](nsimage/resizingmode-swift.enum/stretch.md)
+- [NSImage.ResizingMode.stretch](./resizingmode-swift.enum/stretch.md)
   The image stretches when it resizes.
 ### Initializers
-- [init?(rawValue: Int)](nsimage/resizingmode-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./resizingmode-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isValid: Bool](nsimage/isvalid.md)
+### Managing Drawing Options
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether it is possible to draw an image representation.
-- [var backgroundColor: NSColor](nsimage/backgroundcolor.md)
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The background color for the image.
-- [var capInsets: NSEdgeInsets](nsimage/capinsets.md)
+- [var capInsets: NSEdgeInsets](./capinsets.md)
   The cap insets for the image.
-- [var resizingMode: NSImage.ResizingMode](nsimage/resizingmode-swift.property.md)
+- [var resizingMode: NSImage.ResizingMode](./resizingmode-swift.property.md)
   The resizing mode for the image.
 
 

@@ -1,7 +1,8 @@
 # asciiOnlyCharacterClasses(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a regular expression that matches only ASCII characters when matching character classes.
 

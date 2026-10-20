@@ -1,7 +1,8 @@
 # init(languageCode:debugDescription:metadata:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates information describing a language or locale the model doesn’t support.
 

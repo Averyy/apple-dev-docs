@@ -1,20 +1,25 @@
 # SSLSessionOption.breakOnServerAuth
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Enables returning from [`SSLHandshake(_:)`](sslhandshake(_:).md) (with a result of `errSSLServerAuthCompleted`) when the server authentication portion of the handshake is complete to allow your application to perform its own certificate verification.
+Enables returning from [`SSLHandshake(_:)`](../sslhandshake%28_%29.md) (with a result of `errSSLServerAuthCompleted`) when the server authentication portion of the handshake is complete to allow your application to perform its own certificate verification.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.2+
+- iOS 2.0+ - Deprecated in 13.0
+- iPadOS 2.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.2+ - Deprecated in 10.15
 
 ## Declaration
 
 ```swift
 case breakOnServerAuth
+```
+
+```c
+kSSLSessionOptionBreakOnServerAuth
 ```
 
 #### Discussion

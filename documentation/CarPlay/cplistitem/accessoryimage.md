@@ -1,7 +1,8 @@
 # accessoryImage
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image that the list item displays in its trailing region.
 
@@ -16,13 +17,18 @@ The image that the list item displays in its trailing region.
 var accessoryImage: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UIImage * accessoryImage;
+```
+
 ## See Also
 
-- [var accessoryType: CPListItemAccessoryType](cplistitem/accessorytype.md)
+### Managing Accessories
+- [var accessoryType: CPListItemAccessoryType](./accessorytype.md)
   The accessory that the list item displays in its trailing region.
-- [enum CPListItemAccessoryType](cplistitemaccessorytype.md)
+- [enum CPListItemAccessoryType](../cplistitemaccessorytype.md)
   The accessory types that a list item can display.
-- [func setAccessoryImage(UIImage?)](cplistitem/setaccessoryimage(_:).md)
+- [func setAccessoryImage(UIImage?)](./setaccessoryimage%28_%29.md)
   Updates the list item’s accessory image.
 
 

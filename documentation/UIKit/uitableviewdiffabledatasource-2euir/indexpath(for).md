@@ -1,7 +1,8 @@
 # indexPath(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index path for the item with the specified identifier in the table view.
 
@@ -10,7 +11,7 @@ Returns an index path for the item with the specified identifier in the table vi
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -33,7 +34,8 @@ This method is a constant time operation, O(1), which means you can look up an i
 
 ## See Also
 
-- [func itemIdentifier(for: IndexPath) -> ItemIdentifierType?](uitableviewdiffabledatasource-2euir/itemidentifier(for:).md)
+### Identifying items
+- [func itemIdentifier(for: IndexPath) -> ItemIdentifierType?](./itemidentifier%28for%29.md)
   Returns an identifier for the item at the specified index path in the table view.
 
 

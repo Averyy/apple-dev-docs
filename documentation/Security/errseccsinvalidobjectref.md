@@ -1,7 +1,8 @@
 # errSecCSInvalidObjectRef
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Invalid API object reference.
 
@@ -13,6 +14,10 @@ Invalid API object reference.
 
 ```swift
 var errSecCSInvalidObjectRef: OSStatus { get }
+```
+
+```c
+errSecCSInvalidObjectRef
 ```
 
 

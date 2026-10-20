@@ -1,18 +1,19 @@
 # filters
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of Core Image filters to be applied to the rendered contents of the node.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,9 +21,13 @@ An array of Core Image filters to be applied to the rendered contents of the nod
 var filters: [CIFilter]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray<CIFilter *> * filters;
+```
+
 #### Discussion
 
-An array of [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class) objects.
+An array of [`CIFilter`](../../CoreImage/cifilter-swift.class.md) objects.
 
 When this array is nonempty, SceneKit renders the node (and its child node hierarchy) into an image buffer and then applies the filters before compositing the filters’ output into the rendered scene. The order of the array determines the order of the Core Image filter chain. For example, the following code applies a pixellate filter to the rendered node and then a blur filter to the output of the pixellate filter:
 
@@ -41,7 +46,7 @@ pixellateFilter.name = @"pixellate";
 node.filters = @[ pixellateFilter, gaussianBlurFilter ];
 ```
 
-After you attach filters to a node, you can modify filter parameters only by calling [`setValue(_:forKeyPath:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/setvalue(_:forkeypath:)) on the node the filter is attached to. (Directly modifying the parameters of a filter attached to a node results in undefined behavior.) To refer to a filter by key path, you must set the filter’s `name` property to a string that uniquely identifies that filter instance, as shown in the code above.
+After you attach filters to a node, you can modify filter parameters only by calling [`setValue(_:forKeyPath:)`](../../ObjectiveC/nsobject-swift.class/setvalue%28_,forkeypath%29.md) on the node the filter is attached to. (Directly modifying the parameters of a filter attached to a node results in undefined behavior.) To refer to a filter by key path, you must set the filter’s `name` property to a string that uniquely identifies that filter instance, as shown in the code above.
 
 You can also animate filter parameters by their key paths, as in the code below that animates one of the filters from the previous example.
 
@@ -67,7 +72,8 @@ animation.duration = 2.0;
 
 ## See Also
 
-- [var rendererDelegate: (any SCNNodeRendererDelegate)?](scnnode/rendererdelegate.md)
+### Customizing Node Rendering
+- [var rendererDelegate: (any SCNNodeRendererDelegate)?](./rendererdelegate.md)
   An object responsible for rendering custom contents for the node using Metal or OpenGL.
 
 

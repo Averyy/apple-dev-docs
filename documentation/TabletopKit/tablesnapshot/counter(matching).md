@@ -1,7 +1,8 @@
 # counter(matching:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - visionOS 2.0+
@@ -14,7 +15,8 @@ func counter(matching id: ScoreCounter.ID) -> ScoreCounter?
 
 ## See Also
 
-- [var counters: [ScoreCounter]](tablesnapshot/counters.md)
+### Getting score counters
+- [var counters: [ScoreCounter]](./counters.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingsCustomizationActivity.customizeInAppAction
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Customize the in-app action.
 
@@ -16,6 +17,10 @@ Customize the in-app action.
 
 ```swift
 case customizeInAppAction
+```
+
+```c
+GCControllerHomeButtonSettingsCustomizeInAppActionActivity
 ```
 
 

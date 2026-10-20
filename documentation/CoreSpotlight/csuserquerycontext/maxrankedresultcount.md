@@ -1,7 +1,8 @@
 # maxRankedResultCount
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of ranked results to return during the query.
 
@@ -18,13 +19,18 @@ The maximum number of ranked results to return during the query.
 var maxRankedResultCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger maxRankedResultCount;
+```
+
 #### Discussion
 
 Spotlight ranks a limited number of results by default, but you can change the default value to improve performance or better suit your app’s interface. For example, you might want to return only the five most relevant results due to space constraints in your UI.
 
 ## See Also
 
-- [var enableRankedResults: Bool](csuserquerycontext/enablerankedresults.md)
+### Configuring the ranked results behavior
+- [var enableRankedResults: Bool](./enablerankedresults.md)
   A Boolean value that indicates whether the query sorts results by their relevance.
 
 

@@ -1,7 +1,8 @@
 # userReadable
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The user can read the item.
 
@@ -18,15 +19,20 @@ The user can read the item.
 static var userReadable: NSFileProviderFileSystemFlags { get }
 ```
 
+```c
+NSFileProviderFileSystemUserReadable
+```
+
 ## See Also
 
-- [static var userWritable: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/userwritable.md)
+### Flags
+- [static var userWritable: NSFileProviderFileSystemFlags](./userwritable.md)
   The user can modify the item.
-- [static var userExecutable: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/userexecutable.md)
+- [static var userExecutable: NSFileProviderFileSystemFlags](./userexecutable.md)
   The user can execute the item.
-- [static var hidden: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/hidden.md)
+- [static var hidden: NSFileProviderFileSystemFlags](./hidden.md)
   By default, the system hides the item when the user views the file system.
-- [static var pathExtensionHidden: NSFileProviderFileSystemFlags](nsfileproviderfilesystemflags/pathextensionhidden.md)
+- [static var pathExtensionHidden: NSFileProviderFileSystemFlags](./pathextensionhidden.md)
   By default, the system hides the item’s extension when showing its filename.
 
 

@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode.commandNotSupported
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Your app attempted an unsupported Secure Element command.
 

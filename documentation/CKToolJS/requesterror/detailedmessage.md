@@ -1,7 +1,8 @@
 # detailedMessage
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains any additional information about this error.
 
@@ -10,7 +11,7 @@ A string that contains any additional information about this error.
 
 ## Declaration
 
-```swift
+```
 attribute string? detailedMessage;
 ```
 

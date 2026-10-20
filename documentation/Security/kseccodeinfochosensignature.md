@@ -1,7 +1,8 @@
 # kSecCodeInfoChosenSignature
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 let kSecCodeInfoChosenSignature: CFString
+```
+
+```c
+extern CFStringRef const kSecCodeInfoChosenSignature;
 ```
 
 #### Discussion

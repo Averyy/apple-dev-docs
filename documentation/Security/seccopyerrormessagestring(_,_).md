@@ -1,7 +1,8 @@
 # SecCopyErrorMessageString(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a string explaining the meaning of a security result code.
 
@@ -20,13 +21,17 @@ Returns a string explaining the meaning of a security result code.
 func SecCopyErrorMessageString(_ status: OSStatus, _ reserved: UnsafeMutableRawPointer?) -> CFString?
 ```
 
+```c
+CFStringRefSecCopyErrorMessageString(OSStatus status, void *reserved);
+```
+
 #### Return Value
 
-A human-readable string describing the result, or `nil` if no string is available for the specified result code. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished using it.
+A human-readable string describing the result, or `nil` if no string is available for the specified result code. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished using it.
 
 ## Parameters
 
-- `status`: A result code of type `OSStatus` returned by a security function. See [`Security Framework Result Codes`](security-framework-result-codes.md) for a list of codes.
+- `status`: A result code of type `OSStatus` returned by a security function. See [Security Framework Result Codes](./security-framework-result-codes.md) for a list of codes.
 - `reserved`: Reserved for future use. Pass `nil` for this parameter.
 
 

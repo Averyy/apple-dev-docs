@@ -1,7 +1,8 @@
 # setBorderColor(_:rectEdge:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 27.0+
@@ -12,11 +13,16 @@
 func setBorderColor(_ borderColor: NSColor?, rectEdge: CGRectEdge)
 ```
 
+```objc
+- (void) setBorderColor:(NSColor *) borderColor rectEdge:(CGRectEdge) rectEdge;
+```
+
 ## See Also
 
-- [var backgroundColor: NSColor?](nstextblock/backgroundcolor.md)
+### Working with color
+- [var backgroundColor: NSColor?](./backgroundcolor.md)
   The background color of the text block.
-- [func setBorderColor(NSColor?)](nstextblock/setbordercolor(_:).md)
+- [func setBorderColor(NSColor?)](./setbordercolor%28_%29.md)
   Sets the color of all borders of the text block.
 
 

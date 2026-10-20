@@ -1,7 +1,8 @@
 # wasAttributeConsumed(_:)
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A method that indicates whether the file system used the given attribute.
 
@@ -14,15 +15,20 @@ A method that indicates whether the file system used the given attribute.
 func wasAttributeConsumed(_ attribute: FSItem.Attribute) -> Bool
 ```
 
+```objc
+- (BOOL) wasAttributeConsumed:(FSItemAttribute) attribute;
+```
+
 ## Parameters
 
-- `attribute`: The [`FSItem.Attribute`](fsitem/attribute.md) to check.
+- `attribute`: The [`FSItem.Attribute`](../attribute.md) to check.
 
 ## See Also
 
-- [var consumedAttributes: FSItem.Attribute](fsitem/setattributesrequest/consumedattributes.md)
+### Inspecting used attributes
+- [var consumedAttributes: FSItem.Attribute](./consumedattributes.md)
   The attributes successfully used by the file system.
-- [FSItem.Attribute](fsitem/attribute.md)
+- [FSItem.Attribute](../attribute.md)
   A value that indicates a set of item attributes to get or set.
 
 

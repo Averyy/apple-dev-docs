@@ -1,7 +1,8 @@
 # destroyQueues
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Releases the shared input and output queues.
 
@@ -10,7 +11,7 @@ Releases the shared input and output queues.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t destroyQueues();
 ```
 
@@ -24,17 +25,18 @@ The queues cannot be destroyed while the stream is open by a client.
 
 ## See Also
 
-- [GetInputQueue](iouservideostream/getinputqueue.md)
+### Working with queues
+- [GetInputQueue](./getinputqueue.md)
   Gets the buffer queue for the stream.
-- [GetOutputQueue](iouservideostream/getoutputqueue.md)
+- [GetOutputQueue](./getoutputqueue.md)
   Gets the memory descriptor used for video IO that was initialized with or set on the video stream.
-- [createQueues](iouservideostream/createqueues.md)
+- [createQueues](./createqueues.md)
   Creates the shared input and output queues, without regard to whether the stream is open or not.
-- [dequeueInputEntry](iouservideostream/dequeueinputentry.md)
-- [enqueueOutputEntry](iouservideostream/enqueueoutputentry.md)
-- [SendBufferQueueChange](iouservideostream/sendbufferqueuechange.md)
+- [dequeueInputEntry](./dequeueinputentry.md)
+- [enqueueOutputEntry](./enqueueoutputentry.md)
+- [SendBufferQueueChange](./sendbufferqueuechange.md)
   Sends a notification to the host that the buffer queue has changed.
-- [IOStreamBufferQueue](iostreambufferqueue.md)
+- [IOStreamBufferQueue](../iostreambufferqueue.md)
 
 
 ---

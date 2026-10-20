@@ -2,9 +2,10 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
-Assign an [`ActorID`](distributedactorsystem/actorid.md) for the passed actor type.
+Assign an [`ActorID`](./actorid.md) for the passed actor type.
 
 **Availability**:
 - iOS 16.0+
@@ -12,7 +13,7 @@ Assign an [`ActorID`](distributedactorsystem/actorid.md) for the passed actor ty
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Network  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 15.4+

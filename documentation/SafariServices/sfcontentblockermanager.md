@@ -1,7 +1,8 @@
 # SFContentBlockerManager
 
 **Framework**: Safari Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that your app uses to interact with a content blocker extension.
 
@@ -18,6 +19,10 @@ A class that your app uses to interact with a content blocker extension.
 class SFContentBlockerManager
 ```
 
+```objc
+@interface SFContentBlockerManager : NSObject
+```
+
 #### Overview
 
 Use this class to determine the state of your content blocker and reload the content-blocking rules used by Safari.
@@ -25,29 +30,30 @@ Use this class to determine the state of your content blocker and reload the con
 ## Topics
 
 ### Acting Based on the State of Your Content Blocker
-- [class func getStateOfContentBlocker(withIdentifier: String, completionHandler: (SFContentBlockerState?, (any Error)?) -> Void)](sfcontentblockermanager/getstateofcontentblocker(withidentifier:completionhandler:).md)
+- [class func getStateOfContentBlocker(withIdentifier: String, completionHandler: (SFContentBlockerState?, (any Error)?) -> Void)](./sfcontentblockermanager/getstateofcontentblocker%28withidentifier,completionhandler%29.md)
   Determines the state of your content blocker.
 ### Reloading Your Content-Blocking Rules
-- [class func reloadContentBlocker(withIdentifier: String, completionHandler: (((any Error)?) -> Void)?)](sfcontentblockermanager/reloadcontentblocker(withidentifier:completionhandler:).md)
+- [class func reloadContentBlocker(withIdentifier: String, completionHandler: (((any Error)?) -> Void)?)](./sfcontentblockermanager/reloadcontentblocker%28withidentifier,completionhandler%29.md)
   Tells Safari to reload the specified extension’s content-blocking rules.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating a content blocker](creating-a-content-blocker.md)
+### Content blockers
+- [Creating a content blocker](./creating-a-content-blocker.md)
   Create a content blocker for Safari in Xcode.
-- [class SFContentBlockerState](sfcontentblockerstate.md)
+- [class SFContentBlockerState](./sfcontentblockerstate.md)
   The state of a content blocker extension.
 
 

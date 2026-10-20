@@ -1,7 +1,8 @@
 # calculateHDRStats(for:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Given an IOSurface, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then update the surface’s attachments to store the values.
 
@@ -17,6 +18,10 @@ Given an IOSurface, use the receiving Core Image context to calculate its HDR st
 
 ```swift
 func calculateHDRStats(for surface: IOSurfaceRef)
+```
+
+```objc
+- (void) calculateHDRStatsForIOSurface:(IOSurfaceRef) surface;
 ```
 
 #### Discussion

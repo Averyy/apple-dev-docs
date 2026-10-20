@@ -1,15 +1,16 @@
 # kAudioCodecPropertyFormatCFString
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAudioCodecPropertyFormatCFString: AudioCodecPropertyID { get }
 ```
 
+```c
+kAudioCodecPropertyFormatCFString
+```
+
 ## See Also
 
-- [var kAudioCodecPropertyManufacturerCFString: AudioCodecPropertyID](kaudiocodecpropertymanufacturercfstring.md)
-- [var kAudioCodecPropertyNameCFString: AudioCodecPropertyID](kaudiocodecpropertynamecfstring.md)
+### Constants
+- [var kAudioCodecPropertyManufacturerCFString: AudioCodecPropertyID](./kaudiocodecpropertymanufacturercfstring.md)
+- [var kAudioCodecPropertyNameCFString: AudioCodecPropertyID](./kaudiocodecpropertynamecfstring.md)
 
 
 ---

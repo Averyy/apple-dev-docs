@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount to offset the view by.
 
@@ -22,7 +23,8 @@ var offset: CGSize
 
 ## See Also
 
-- [init(CGSize)](offsettransition/init(_:).md)
+### Creating the transition
+- [init(CGSize)](./init%28_%29.md)
   Creates a transition that offset the view by the specified amount.
 
 

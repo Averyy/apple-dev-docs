@@ -1,7 +1,8 @@
 # CFBundleURLIconFile
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the icon image file, without the extension, to be used for this type.
 
@@ -13,17 +14,19 @@ The name of the icon image file, without the extension, to be used for this type
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CFBundleURLIconFile` (Document Icon File Name)
+- **Type**: string
 
 ## See Also
 
-- [CFBundleTypeRole](information-property-list/cfbundleurltypes/cfbundletyperole.md)
+### Property List Keys
+- [CFBundleTypeRole](./cfbundletyperole.md)
   The app’s role with respect to the type.
-- [CFBundleURLName](information-property-list/cfbundleurltypes/cfbundleurlname.md)
+- [CFBundleURLName](./cfbundleurlname.md)
   The abstract name for this type.
-- [CFBundleURLSchemes](information-property-list/cfbundleurltypes/cfbundleurlschemes.md)
+- [CFBundleURLSchemes](./cfbundleurlschemes.md)
   The URL schemes supported by this type.
 
 

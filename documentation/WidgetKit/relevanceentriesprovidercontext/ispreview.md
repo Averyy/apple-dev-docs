@@ -1,7 +1,8 @@
 # isPreview
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates when the widget appears as a preview-only.
 

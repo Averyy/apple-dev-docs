@@ -1,7 +1,8 @@
 # AVCaptionRegion.Scroll.none
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type that indicates no scrolling.
 
@@ -17,9 +18,14 @@ A type that indicates no scrolling.
 case none
 ```
 
+```c
+AVCaptionRegionScrollNone
+```
+
 ## See Also
 
-- [AVCaptionRegion.Scroll.rollUp](avcaptionregion/scroll-swift.enum/rollup.md)
+### Scroll values
+- [AVCaptionRegion.Scroll.rollUp](./rollup.md)
   A type that indicates a roll-up scroll effect.
 
 

@@ -1,7 +1,8 @@
 # init(base64EncodedString:options:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a data object with the given Base64 encoded string.
 
@@ -26,28 +27,29 @@ A data object built by Base64 decoding the provided string. Returns `nil` if the
 
 #### Discussion
 
-The default implementation of this method will reject non-alphabet characters, including line break characters. To support different encodings and ignore non-alphabet characters, specify an `options` value of [`ignoreUnknownCharacters`](nsdata/base64decodingoptions/ignoreunknowncharacters.md).
+The default implementation of this method will reject non-alphabet characters, including line break characters. To support different encodings and ignore non-alphabet characters, specify an `options` value of [`ignoreUnknownCharacters`](./base64decodingoptions/ignoreunknowncharacters.md).
 
 ## Parameters
 
 - `base64String`: A Base-64 encoded string.
-- `options`: A mask that specifies options for Base-64 decoding the data. Possible values are given in [`NSData.Base64DecodingOptions`](nsdata/base64decodingoptions.md).
+- `options`: A mask that specifies options for Base-64 decoding the data. Possible values are given in [`NSData.Base64DecodingOptions`](./base64decodingoptions.md).
 
 ## See Also
 
-- [init?(base64EncodedData: Data, options: NSData.Base64DecodingOptions)](nsdata/init(base64encodeddata:options:).md)
+### Encoding and Decoding Base64 Representations
+- [init?(base64EncodedData: Data, options: NSData.Base64DecodingOptions)](./init%28base64encodeddata,options%29.md)
   Initializes a data object with the given Base64 encoded data.
-- [init?(base64Encoding: String)](nsdata/init(base64encoding:).md)
+- [init?(base64Encoding: String)](./init%28base64encoding%29.md)
   Initializes a data object initialized with the given Base64 encoded string.
-- [func base64EncodedData(options: NSData.Base64EncodingOptions) -> Data](nsdata/base64encodeddata(options:).md)
+- [func base64EncodedData(options: NSData.Base64EncodingOptions) -> Data](./base64encodeddata%28options%29.md)
   Creates a Base64, UTF-8 encoded data object from the string using the given options.
-- [func base64EncodedString(options: NSData.Base64EncodingOptions) -> String](nsdata/base64encodedstring(options:).md)
+- [func base64EncodedString(options: NSData.Base64EncodingOptions) -> String](./base64encodedstring%28options%29.md)
   Creates a Base64 encoded string from the string using the given options.
-- [func base64Encoding() -> String](nsdata/base64encoding.md)
+- [func base64Encoding() -> String](./base64encoding%28%29.md)
   Initializes a Base64 encoded string from the string.
-- [NSData.Base64EncodingOptions](nsdata/base64encodingoptions.md)
+- [NSData.Base64EncodingOptions](./base64encodingoptions.md)
   Options for methods used to Base64 encode data.
-- [NSData.Base64DecodingOptions](nsdata/base64decodingoptions.md)
+- [NSData.Base64DecodingOptions](./base64decodingoptions.md)
   Options to modify the decoding algorithm used to decode Base64 encoded data.
 
 

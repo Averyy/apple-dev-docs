@@ -1,14 +1,15 @@
 # NewUserClient
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t NewUserClient(uint32_t in_type, IOUserClient **out_user_client);
 ```
 

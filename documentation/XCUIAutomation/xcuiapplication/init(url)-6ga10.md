@@ -1,10 +1,11 @@
 # init(URL:)
 
 **Framework**: XCUIAutomation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 - Xcode 16.3+
 
 ## Declaration

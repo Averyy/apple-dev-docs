@@ -1,7 +1,8 @@
 # QDPolyProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias QDPolyProcPtr = (GrafVerb, PolyHandle?) -> Void
+```
+
+```c
+typedef void (*QDPolyProcPtr)(GrafVerb verb, PolyHandle poly);
 ```
 
 

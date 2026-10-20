@@ -1,16 +1,19 @@
 # MTRBaseClusterBridgedDeviceBasic
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
-- Mac Catalyst 16.1+
-- macOS 13.0+
-- tvOS 16.1+
-- visionOS 1.0+
-- watchOS 9.1+
+- iOS 16.1+ - Deprecated in 17.0
+- iPadOS 16.1+ - Deprecated in 17.0
+- Mac Catalyst 16.1+ - Deprecated in 17.0
+- macOS 13.0+ - Deprecated in 14.0
+- tvOS 16.1+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 9.1+ - Deprecated in 10.0
+
+> **Deprecated**: Please use MTRBaseClusterBridgedDeviceBasicInformation
 
 ## Declaration
 
@@ -18,86 +21,90 @@
 class MTRBaseClusterBridgedDeviceBasic
 ```
 
+```objc
+@interface MTRBaseClusterBridgedDeviceBasic : MTRBaseClusterBridgedDeviceBasicInformation
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRBaseDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrbaseclusterbridgeddevicebasic/init(device:endpoint:queue:).md)
+- [init?(device: MTRBaseDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrbaseclusterbridgeddevicebasic/init%28device,endpoint,queue%29.md)
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeacceptedcommandlist(completionhandler:).md)
-- [func readAttributeAttributeList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeattributelist(completionhandler:).md)
-- [func readAttributeClusterRevision(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeclusterrevision(completionhandler:).md)
-- [func readAttributeFeatureMap(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributefeaturemap(completionhandler:).md)
-- [func readAttributeGeneratedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributegeneratedcommandlist(completionhandler:).md)
-- [func readAttributeHardwareVersion(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributehardwareversion(completionhandler:).md)
-- [func readAttributeHardwareVersionString(completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributehardwareversionstring(completionhandler:).md)
-- [func readAttributeManufacturingDate(completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributemanufacturingdate(completionhandler:).md)
-- [func readAttributeNodeLabel(completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributenodelabel(completionhandler:).md)
-- [func readAttributePartNumber(completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributepartnumber(completionhandler:).md)
-- [func readAttributeProductLabel(completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeproductlabel(completionhandler:).md)
-- [func readAttributeProductName(completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeproductname(completionhandler:).md)
-- [func readAttributeProductURL(completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeproducturl(completionhandler:).md)
-- [func readAttributeReachable(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributereachable(completionhandler:).md)
-- [func readAttributeSerialNumber(completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeserialnumber(completionhandler:).md)
-- [func readAttributeSoftwareVersion(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributesoftwareversion(completionhandler:).md)
-- [func readAttributeSoftwareVersionString(completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributesoftwareversionstring(completionhandler:).md)
-- [func readAttributeUniqueID(completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeuniqueid(completionhandler:).md)
-- [func readAttributeVendorID(completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributevendorid(completionhandler:).md)
-- [func readAttributeVendorName(completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributevendorname(completionhandler:).md)
-- [func subscribeAttributeAcceptedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributeacceptedcommandlist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeAttributeList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributeattributelist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeClusterRevision(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributeclusterrevision(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeFeatureMap(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributefeaturemap(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeGeneratedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributegeneratedcommandlist(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeHardwareVersion(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributehardwareversion(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeHardwareVersionString(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributehardwareversionstring(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeManufacturingDate(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributemanufacturingdate(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeNodeLabel(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributenodelabel(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributePartNumber(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributepartnumber(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeProductLabel(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributeproductlabel(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeProductName(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributeproductname(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeProductURL(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributeproducturl(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeReachable(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributereachable(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeSerialNumber(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributeserialnumber(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeSoftwareVersion(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributesoftwareversion(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeSoftwareVersionString(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributesoftwareversionstring(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeUniqueID(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributeuniqueid(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeVendorID(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributevendorid(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func subscribeAttributeVendorName(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/subscribeattributevendorname(withmininterval:maxinterval:params:subscriptionestablished:reporthandler:).md)
-- [func writeAttributeNodeLabel(withValue: String, completionHandler: ((any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/writeattributenodelabel(withvalue:completionhandler:).md)
-- [func writeAttributeNodeLabel(withValue: String, params: MTRWriteParams?, completionHandler: ((any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/writeattributenodelabel(withvalue:params:completionhandler:).md)
+- [func readAttributeAcceptedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeacceptedcommandlist%28completionhandler%29.md)
+- [func readAttributeAttributeList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeattributelist%28completionhandler%29.md)
+- [func readAttributeClusterRevision(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeclusterrevision%28completionhandler%29.md)
+- [func readAttributeFeatureMap(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributefeaturemap%28completionhandler%29.md)
+- [func readAttributeGeneratedCommandList(completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributegeneratedcommandlist%28completionhandler%29.md)
+- [func readAttributeHardwareVersion(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributehardwareversion%28completionhandler%29.md)
+- [func readAttributeHardwareVersionString(completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributehardwareversionstring%28completionhandler%29.md)
+- [func readAttributeManufacturingDate(completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributemanufacturingdate%28completionhandler%29.md)
+- [func readAttributeNodeLabel(completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributenodelabel%28completionhandler%29.md)
+- [func readAttributePartNumber(completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributepartnumber%28completionhandler%29.md)
+- [func readAttributeProductLabel(completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeproductlabel%28completionhandler%29.md)
+- [func readAttributeProductName(completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeproductname%28completionhandler%29.md)
+- [func readAttributeProductURL(completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeproducturl%28completionhandler%29.md)
+- [func readAttributeReachable(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributereachable%28completionhandler%29.md)
+- [func readAttributeSerialNumber(completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeserialnumber%28completionhandler%29.md)
+- [func readAttributeSoftwareVersion(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributesoftwareversion%28completionhandler%29.md)
+- [func readAttributeSoftwareVersionString(completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributesoftwareversionstring%28completionhandler%29.md)
+- [func readAttributeUniqueID(completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeuniqueid%28completionhandler%29.md)
+- [func readAttributeVendorID(completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributevendorid%28completionhandler%29.md)
+- [func readAttributeVendorName(completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributevendorname%28completionhandler%29.md)
+- [func subscribeAttributeAcceptedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributeacceptedcommandlist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeAttributeList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributeattributelist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeClusterRevision(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributeclusterrevision%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeFeatureMap(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributefeaturemap%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeGeneratedCommandList(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributegeneratedcommandlist%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeHardwareVersion(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributehardwareversion%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeHardwareVersionString(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributehardwareversionstring%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeManufacturingDate(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributemanufacturingdate%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeNodeLabel(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributenodelabel%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributePartNumber(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributepartnumber%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeProductLabel(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributeproductlabel%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeProductName(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributeproductname%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeProductURL(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributeproducturl%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeReachable(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributereachable%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeSerialNumber(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributeserialnumber%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeSoftwareVersion(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributesoftwareversion%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeSoftwareVersionString(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributesoftwareversionstring%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeUniqueID(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributeuniqueid%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeVendorID(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributevendorid%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func subscribeAttributeVendorName(withMinInterval: NSNumber, maxInterval: NSNumber, params: MTRSubscribeParams?, subscriptionEstablished: MTRSubscriptionEstablishedHandler?, reportHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/subscribeattributevendorname%28withmininterval,maxinterval,params,subscriptionestablished,reporthandler%29.md)
+- [func writeAttributeNodeLabel(withValue: String, completionHandler: ((any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/writeattributenodelabel%28withvalue,completionhandler%29.md)
+- [func writeAttributeNodeLabel(withValue: String, params: MTRWriteParams?, completionHandler: ((any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/writeattributenodelabel%28withvalue,params,completionhandler%29.md)
 ### Type Methods
-- [class func readAttributeAcceptedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeacceptedcommandlist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeAttributeList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeattributelist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeClusterRevision(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeclusterrevision(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeFeatureMap(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributefeaturemap(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeGeneratedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributegeneratedcommandlist(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeHardwareVersion(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributehardwareversion(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeHardwareVersionString(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributehardwareversionstring(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeManufacturingDate(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributemanufacturingdate(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeNodeLabel(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributenodelabel(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributePartNumber(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributepartnumber(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeProductLabel(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeproductlabel(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeProductName(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeproductname(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeProductURL(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeproducturl(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeReachable(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributereachable(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeSerialNumber(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeserialnumber(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeSoftwareVersion(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributesoftwareversion(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeSoftwareVersionString(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributesoftwareversionstring(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeUniqueID(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributeuniqueid(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeVendorID(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributevendorid(withattributecache:endpoint:queue:completionhandler:).md)
-- [class func readAttributeVendorName(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](mtrbaseclusterbridgeddevicebasic/readattributevendorname(withattributecache:endpoint:queue:completionhandler:).md)
+- [class func readAttributeAcceptedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeacceptedcommandlist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeAttributeList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeattributelist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeClusterRevision(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeclusterrevision%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeFeatureMap(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributefeaturemap%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeGeneratedCommandList(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: ([Any]?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributegeneratedcommandlist%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeHardwareVersion(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributehardwareversion%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeHardwareVersionString(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributehardwareversionstring%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeManufacturingDate(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributemanufacturingdate%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeNodeLabel(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributenodelabel%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributePartNumber(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributepartnumber%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeProductLabel(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeproductlabel%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeProductName(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeproductname%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeProductURL(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeproducturl%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeReachable(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributereachable%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeSerialNumber(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeserialnumber%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeSoftwareVersion(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributesoftwareversion%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeSoftwareVersionString(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributesoftwareversionstring%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeUniqueID(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributeuniqueid%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeVendorID(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (NSNumber?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributevendorid%28withattributecache,endpoint,queue,completionhandler%29.md)
+- [class func readAttributeVendorName(withAttributeCache: MTRAttributeCacheContainer, endpoint: NSNumber, queue: dispatch_queue_t, completionHandler: (String?, (any Error)?) -> Void)](./mtrbaseclusterbridgeddevicebasic/readattributevendorname%28withattributecache,endpoint,queue,completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRBaseClusterBridgedDeviceBasicInformation](mtrbaseclusterbridgeddevicebasicinformation.md)
+- [MTRBaseClusterBridgedDeviceBasicInformation](./mtrbaseclusterbridgeddevicebasicinformation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

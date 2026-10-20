@@ -1,7 +1,8 @@
 # supportsMetal4FX(_:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Queries whether a Metal device supports temporal scaling compatible with Metal 4.
 
@@ -18,9 +19,13 @@ Queries whether a Metal device supports temporal scaling compatible with Metal 4
 class func supportsMetal4FX(_ device: any MTLDevice) -> Bool
 ```
 
+```objc
++ (BOOL) supportsMetal4FX:(id<MTLDevice>) device;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports temporal scaling with Metal 4, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the device supports temporal scaling with Metal 4, [`false`](../../Swift/false.md) otherwise.
 
 ## Parameters
 

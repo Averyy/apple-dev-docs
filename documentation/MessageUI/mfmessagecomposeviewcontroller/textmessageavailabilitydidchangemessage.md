@@ -1,7 +1,8 @@
 # MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage
 
 **Framework**: Message UI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Message type for text message availability change notifications.
 
@@ -26,29 +27,29 @@ This notification is posted when the value of `+canSendText` changes, indicating
 ## Topics
 
 ### Initializers
-- [init(canSendText: Bool)](mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/init(cansendtext:).md)
+- [init(canSendText: Bool)](./textmessageavailabilitydidchangemessage/init%28cansendtext%29.md)
   Initialize with text message availability status
 ### Instance Properties
-- [var canSendText: Bool](mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/cansendtext.md)
+- [var canSendText: Bool](./textmessageavailabilitydidchangemessage/cansendtext.md)
   Whether text messages can be sent on this device
 ### Type Aliases
-- [MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage.Subject](mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/subject.md)
+- [MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage.Subject](./textmessageavailabilitydidchangemessage/subject.md)
   The notification subject type
 ### Type Properties
-- [static var name: Notification.Name](mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/name.md)
+- [static var name: Notification.Name](./textmessageavailabilitydidchangemessage/name.md)
   The existing Objective-C notification name
 ### Type Methods
-- [static func makeMessage(Notification) -> MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage?](mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/makemessage(_:).md)
+- [static func makeMessage(Notification) -> MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage?](./textmessageavailabilitydidchangemessage/makemessage%28_%29.md)
   Transform a legacy Notification into a type-safe Message
-- [static func makeNotification(MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage) -> Notification](mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/makenotification(_:).md)
+- [static func makeNotification(MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage) -> Notification](./textmessageavailabilitydidchangemessage/makenotification%28_%29.md)
   Transform a type-safe Message into a legacy Notification
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../../Foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # pixelLength
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of a pixel on the screen.
 
@@ -22,19 +23,20 @@ var pixelLength: CGFloat { get }
 
 #### Discussion
 
-This value is usually equal to `1` divided by [`displayScale`](environmentvalues/displayscale.md).
+This value is usually equal to `1` divided by [`displayScale`](./displayscale.md).
 
 ## See Also
 
-- [var isLuminanceReduced: Bool](environmentvalues/isluminancereduced.md)
+### Reacting to interface characteristics
+- [var isLuminanceReduced: Bool](./isluminancereduced.md)
   A Boolean value that indicates whether the display or environment currently requires reduced luminance.
-- [var displayScale: CGFloat](environmentvalues/displayscale.md)
+- [var displayScale: CGFloat](./displayscale.md)
   The display scale of this environment.
-- [var horizontalSizeClass: UserInterfaceSizeClass?](environmentvalues/horizontalsizeclass.md)
+- [var horizontalSizeClass: UserInterfaceSizeClass?](./horizontalsizeclass.md)
   The horizontal size class of this environment.
-- [var verticalSizeClass: UserInterfaceSizeClass?](environmentvalues/verticalsizeclass.md)
+- [var verticalSizeClass: UserInterfaceSizeClass?](./verticalsizeclass.md)
   The vertical size class of this environment.
-- [enum UserInterfaceSizeClass](userinterfacesizeclass.md)
+- [enum UserInterfaceSizeClass](../userinterfacesizeclass.md)
   A set of values that indicate the visual size available to the view.
 
 

@@ -1,7 +1,8 @@
 # init(retainedElements:nonRetainedElements:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a mobile driver’s license raw data request.
 
@@ -18,11 +19,12 @@ init(retainedElements: [MobileDriversLicenseRawDataRequest.Element] = [], nonRet
 
 ## See Also
 
-- [var retainedElements: [MobileDriversLicenseRawDataRequest.Element]](mobiledriverslicenserawdatarequest/retainedelements.md)
+### Creating a raw data request
+- [var retainedElements: [MobileDriversLicenseRawDataRequest.Element]](./retainedelements.md)
   The document elements you’re requesting and intend to retain for an indefinite period of time.
-- [var nonRetainedElements: [MobileDriversLicenseRawDataRequest.Element]](mobiledriverslicenserawdatarequest/nonretainedelements.md)
+- [var nonRetainedElements: [MobileDriversLicenseRawDataRequest.Element]](./nonretainedelements.md)
   The document elements you’re requesting and intend to retain no longer than is necessary to process the result in realtime.
-- [MobileDriversLicenseRawDataRequest.Element](mobiledriverslicenserawdatarequest/element.md)
+- [MobileDriversLicenseRawDataRequest.Element](./element.md)
   A type representing an element that you can request from a mobile driver’s license.
 
 

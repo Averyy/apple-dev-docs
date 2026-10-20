@@ -1,7 +1,8 @@
 # NSTableViewDiffableDataSource.CellProvider
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure that configures and returns a cell for a table view from its diffable data source.
 
@@ -16,7 +17,8 @@ typealias CellProvider = (NSTableView, NSTableColumn, Int, ItemIdentifierType) -
 
 ## See Also
 
-- [init(tableView: NSTableView, cellProvider: NSTableViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.CellProvider)](nstableviewdiffabledatasource-c5gl/init(tableview:cellprovider:).md)
+### Creating a Diffable Data Source
+- [init(tableView: NSTableView, cellProvider: NSTableViewDiffableDataSource<SectionIdentifierType, ItemIdentifierType>.CellProvider)](./init%28tableview,cellprovider%29.md)
   Creates a diffable data source with the specified cell provider, and connects it to the specified table view.
 
 

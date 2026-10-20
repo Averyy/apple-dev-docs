@@ -1,6 +1,7 @@
 # Creating particle systems in Reality Composer Pro
 
-**Framework**: Reality Composer Pro
+**Framework**: Reality Composer Pro  
+**Role**: Article
 
 Add Particle Emitters and Particles to scenes to create nearly any type of visual effect.
 
@@ -17,15 +18,15 @@ Particle Emitter properties appear in the Inspector, divided between two tabs: a
 - **Emitter properties** — Emitter properties control the general shape and geometry of the emitter.
 - **Particle properties** — Particle properties control the look, color, texture, shape, and other characteristics of emitted particles. In addition, there are two separate types of particles you can configure: **Main** particles and **Secondary** particles (particles spawned by particles).
 
-#### Add a Particle Emitter to an Entity
+#### Add a Particle Emitter to an entity
 
 Control-click World in the Reality Composer Pro Hierarchy, then choose **Add Child Entity** > **Geometry** > **Sphere**. Name the sphere in the Hierarchy and press Enter. The new sphere is selected in the Inspector — if it isn’t, click the sphere in the Viewport to select it. In the Inspector, click **Add Component** and select **Particle Emitter**.
 
 > **Note**: You can start typing “particle” in the search box to quickly find the Particle Emitter component.
 
-![A screenshot of Reality Composer Pro's Add Particle Emitter menu.](/images/RealityComposerPro/ParticleEmitter@2x.png)
+![A screenshot of Reality Composer Pro's Add Particle Emitter menu.](https://developer.apple.com/tutorials/images/RealityComposerPro/ParticleEmitter@2x.png)
 
-#### Configure the Emitter and Main Particles
+#### Configure the emitter and main particles
 
 On the **Emitter** tab, configure the following properties:
 
@@ -46,7 +47,7 @@ In the Inspector, click **Particles** and configure the following properties:
 
 Watch how your changes affect the particle emitter and emitted particles, then configure the Secondary Particles.
 
-![A screenshot of Reality Composer Pro sample entity emitting particles.](/images/RealityComposerPro/ParticleEmitter2@2x.png)
+![A screenshot of Reality Composer Pro sample entity emitting particles.](https://developer.apple.com/tutorials/images/RealityComposerPro/ParticleEmitter2@2x.png)
 
 #### Configure Secondary Particles
 
@@ -57,15 +58,15 @@ If you stopped the simulation, select **Simulate** above the Workspace and then 
 - **Start Color A** - Click the color and use the sliders to change to any color you like. Try green.
 - **End Color A** - Change to any color you like. Try purple.
 
-![A screenshot of Reality Composer Pro sample entity emitting particles.](/images/RealityComposerPro/ParticleEmitter3@2x.png)
+![A screenshot of Reality Composer Pro sample entity emitting particles.](https://developer.apple.com/tutorials/images/RealityComposerPro/ParticleEmitter3@2x.png)
 
 The sphere emits streams of particles that change color, beginning with the start color and changing to the end color over its lifetime. When the main particle expires, it emits the secondary particles. The secondary particle goes from its start color to its end color over its lifetime.
 
-#### Explore Additional Properties
+#### Explore additional properties
 
-The following descriptions cover some of the more common particle emitter and particle properties you can experiment with. For a complete description of all properties, see [`ParticleEmitterComponent`](https://developer.apple.com/documentation/realitykit/particleemittercomponent) and [`ParticleEmitterComponent.ParticleEmitter`](https://developer.apple.com/documentation/realitykit/particleemittercomponent/particleemitter).
+The following descriptions cover some of the more common particle emitter and particle properties you can experiment with. For a complete description of all properties, see [`ParticleEmitterComponent`](../RealityKit/particleemittercomponent.md) and [`ParticleEmitterComponent.ParticleEmitter`](../RealityKit/particleemittercomponent/particleemitter.md).
 
-#### Review Emitter Properties
+#### Review emitter properties
 
 - **Emission Direction** - The direction particles are emitted when `birthDirection` is set to World or Local. Defaults to (0, 1, 0).
 - **Shape Size** - The size, in meters, of the emitter shape geometry. This controls the dimensions of the region from which particles are spawned, not the size of individual particles.
@@ -76,7 +77,7 @@ The following descriptions cover some of the more common particle emitter and pa
 - **Shape** - Defines the general shape — such as a sphere, cone, plane, or others — of how particles are emitted. The Emitter Shape is independent of the entity shape. For example, you can create a sphere entity that emits particles in a cone shape. Certain Shape properties only apply to specific shapes — for example, **Torus Radius** only applies when a Torus Shape is selected.
 - **Birth Location** - The point of origin for the particles. This determines whether particles are emitted from the surface or from the vertices of the surface.
 
-#### Review Particle Properties
+#### Review particle properties
 
 - **Life Span** - The number of seconds the particle lasts.
 - **Image** - Browse to and select an image to use for the particle.

@@ -1,7 +1,8 @@
 # UISearchSuggestion
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of attributes that a selectable search suggestion must provide.
 
@@ -19,38 +20,43 @@ A set of attributes that a selectable search suggestion must provide.
 protocol UISearchSuggestion : NSObjectProtocol
 ```
 
+```objc
+@protocol UISearchSuggestion <NSObject>
+```
+
 #### Overview
 
-Provide common or predicted search queries to save the user the time of typing their entire query in a [`UISearchController`](uisearchcontroller.md) field. [`UISearchSuggestionItem`](uisearchsuggestionitem.md) provides a simple implementation of this protocol. You may also define and use your own type that conforms to [`UISearchSuggestion`](uisearchsuggestion.md).
+Provide common or predicted search queries to save the user the time of typing their entire query in a [`UISearchController`](./uisearchcontroller.md) field. [`UISearchSuggestionItem`](./uisearchsuggestionitem.md) provides a simple implementation of this protocol. You may also define and use your own type that conforms to [`UISearchSuggestion`](./uisearchsuggestion.md).
 
 ## Topics
 
 ### Describing a search suggestion
-- [var localizedSuggestion: String?](uisearchsuggestion/localizedsuggestion.md)
+- [var localizedSuggestion: String?](./uisearchsuggestion/localizedsuggestion.md)
   A label for the suggestion, usually the search term the suggestion represents.
-- [var localizedDescription: String?](uisearchsuggestion/localizeddescription.md)
+- [var localizedDescription: String?](./uisearchsuggestion/localizeddescription.md)
   A description of the suggestion.
-- [var localizedAttributedSuggestion: NSAttributedString?](uisearchsuggestion/localizedattributedsuggestion.md)
+- [var localizedAttributedSuggestion: NSAttributedString?](./uisearchsuggestion/localizedattributedsuggestion.md)
   An attributed label for the suggestion, usually the search term the suggestion represents.
-- [var iconImage: UIImage?](uisearchsuggestion/iconimage.md)
+- [var iconImage: UIImage?](./uisearchsuggestion/iconimage.md)
   An image for display on the suggestion.
-- [var representedObject: Any?](uisearchsuggestion/representedobject.md)
+- [var representedObject: Any?](./uisearchsuggestion/representedobject.md)
   An object for tracking supplementary information about the search suggestion.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [UISearchSuggestionItem](uisearchsuggestionitem.md)
+- [UISearchSuggestionItem](./uisearchsuggestionitem.md)
 
 ## See Also
 
-- [var searchSuggestions: [any UISearchSuggestion]?](uisearchcontroller/searchsuggestions.md)
+### Providing search suggestions
+- [var searchSuggestions: [any UISearchSuggestion]?](./uisearchcontroller/searchsuggestions.md)
   A list of suggestions to offer as shortcuts below the search field.
-- [var ignoresSearchSuggestionsForSearchBarPlacementStacked: Bool](uisearchcontroller/ignoressearchsuggestionsforsearchbarplacementstacked.md)
+- [var ignoresSearchSuggestionsForSearchBarPlacementStacked: Bool](./uisearchcontroller/ignoressearchsuggestionsforsearchbarplacementstacked.md)
   A Boolean value you use to specify whether the search controller prevents search suggestions from displaying for a stacked search bar.
-- [class UISearchSuggestionItem](uisearchsuggestionitem.md)
+- [class UISearchSuggestionItem](./uisearchsuggestionitem.md)
   A selectable search parameter.
 
 

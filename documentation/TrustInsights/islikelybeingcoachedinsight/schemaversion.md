@@ -1,7 +1,8 @@
 # IsLikelyBeingCoachedInsight.SchemaVersion
 
 **Framework**: Trust Insights  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of insight values present in the available schema versions.
 
@@ -18,20 +19,21 @@ An enumeration of insight values present in the available schema versions.
 ## Topics
 
 ### Enumeration Cases - generated
-- [IsLikelyBeingCoachedInsight.SchemaVersion.version1](islikelybeingcoachedinsight/schemaversion/version1.md)
+- [IsLikelyBeingCoachedInsight.SchemaVersion.version1](./schemaversion/version1.md)
   Values available in schema version1.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [IsLikelyBeingCoachedInsight.Value](islikelybeingcoachedinsight/value.md)
+### Enumerations - generated
+- [IsLikelyBeingCoachedInsight.Value](./value.md)
   The levels of trust the framework returns for the “is likely being coached” insight.
 
 

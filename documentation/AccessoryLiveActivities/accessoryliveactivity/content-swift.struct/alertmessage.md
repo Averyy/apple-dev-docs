@@ -1,7 +1,8 @@
 # AccessoryLiveActivity.Content.AlertMessage
 
 **Framework**: Accessory Live Activities  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The content you use as an alert for a Live Activity update on your accessory.
 
@@ -17,25 +18,26 @@ struct AlertMessage
 
 #### Overview
 
-Use the message’s [`title`](accessoryliveactivity/content-swift.struct/alertmessage/title.md) and [`body`](accessoryliveactivity/content-swift.struct/alertmessage/body.md) properties to create a notification-style alert on your accessory.
+Use the message’s [`title`](./alertmessage/title.md) and [`body`](./alertmessage/body.md) properties to create a notification-style alert on your accessory.
 
 ## Topics
 
 ### Accessing alert text
-- [let title: String](accessoryliveactivity/content-swift.struct/alertmessage/title.md)
+- [let title: String](./alertmessage/title.md)
   The title of the alert.
-- [let body: String](accessoryliveactivity/content-swift.struct/alertmessage/body.md)
+- [let body: String](./alertmessage/body.md)
   The body text of the alert.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let alert: AccessoryLiveActivity.Content.AlertMessage?](accessoryliveactivity/content-swift.struct/alert.md)
+### Alerting people
+- [let alert: AccessoryLiveActivity.Content.AlertMessage?](./alert.md)
   The Live Activity update’s alert message.
 
 

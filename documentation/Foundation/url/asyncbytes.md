@@ -1,7 +1,8 @@
 # URL.AsyncBytes
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of bytes loaded from the URL.
 
@@ -23,29 +24,30 @@ struct AsyncBytes
 ## Topics
 
 ### Creating an iterator
-- [func makeAsyncIterator() -> URL.AsyncBytes.AsyncIterator](url/asyncbytes/makeasynciterator.md)
+- [func makeAsyncIterator() -> URL.AsyncBytes.AsyncIterator](./asyncbytes/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [URL.AsyncBytes.AsyncIterator](url/asyncbytes/asynciterator.md)
+- [URL.AsyncBytes.AsyncIterator](./asyncbytes/asynciterator.md)
   The iterator type that produces elements of this asynchronous sequence.
 ### Adapting Textual Sequences
-- [var lines: AsyncLineSequence<URL.AsyncBytes>](url/lines.md)
+- [var lines: AsyncLineSequence<URL.AsyncBytes>](./lines.md)
   The URL’s resource data, as an asynchronous sequence of lines of text.
 ### Supporting Types
-- [URL.AsyncBytes.Element](url/asyncbytes/element.md)
+- [URL.AsyncBytes.Element](./asyncbytes/element.md)
   The type of element produced by this asynchronous sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var resourceBytes: URL.AsyncBytes](url/resourcebytes.md)
+### Loading URL contents asynchronously
+- [var resourceBytes: URL.AsyncBytes](./resourcebytes.md)
   The URL’s resource data, as an asynchronous sequence of bytes.
-- [var lines: AsyncLineSequence<URL.AsyncBytes>](url/lines.md)
+- [var lines: AsyncLineSequence<URL.AsyncBytes>](./lines.md)
   The URL’s resource data, as an asynchronous sequence of lines of text.
 
 

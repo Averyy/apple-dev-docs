@@ -1,7 +1,8 @@
 # pulldownAction
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action to perform when someone clicks in the color area of the color well.
 
@@ -14,13 +15,18 @@ The action to perform when someone clicks in the color area of the color well.
 var pulldownAction: Selector? { get set }
 ```
 
+```objc
+@property (nullable) SEL pulldownAction;
+```
+
 #### Discussion
 
-Specify a custom action method to replace the system popover and color picker. For a color well with the [`NSColorWell.Style.minimal`](nscolorwell/style/minimal.md) or [`NSColorWell.Style.expanded`](nscolorwell/style/expanded.md) style, clicks in the color area normally display a popover with the system color picker.  If you specify a value for this property and the [`pulldownTarget`](nscolorwell/pulldowntarget.md) property, clicks in the color area execute your custom action method instead.
+Specify a custom action method to replace the system popover and color picker. For a color well with the [`NSColorWell.Style.minimal`](./style/minimal.md) or [`NSColorWell.Style.expanded`](./style/expanded.md) style, clicks in the color area normally display a popover with the system color picker.  If you specify a value for this property and the [`pulldownTarget`](./pulldowntarget.md) property, clicks in the color area execute your custom action method instead.
 
 ## See Also
 
-- [var pulldownTarget: AnyObject?](nscolorwell/pulldowntarget.md)
+### Customizing the color selection behavior
+- [var pulldownTarget: AnyObject?](./pulldowntarget.md)
   The target object that defines the action you want to perform when someone interacts with the color well.
 
 

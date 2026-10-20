@@ -1,7 +1,8 @@
 # isAnimating
 
 **Framework**: Screen Saver  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the screen saver is animating.
 
@@ -14,17 +15,22 @@ A Boolean value that indicates whether the screen saver is animating.
 var isAnimating: Bool { get }
 ```
 
+```objc
+@property (atomic, readonly, getter=isAnimating) BOOL animating;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) when the screen saver is animating, and [`false`](https://developer.apple.com/documentation/swift/false) when it isn’t.
+The value of this property is [`true`](../../Swift/true.md) when the screen saver is animating, and [`false`](../../Swift/false.md) when it isn’t.
 
 ## See Also
 
-- [func startAnimation()](screensaverview/startanimation.md)
+### Animating the screen saver
+- [func startAnimation()](./startanimation%28%29.md)
   Activates the periodic timer that animates the screen saver.
-- [func animateOneFrame()](screensaverview/animateoneframe.md)
+- [func animateOneFrame()](./animateoneframe%28%29.md)
   Advances the screen saver’s animation by a single frame.
-- [func stopAnimation()](screensaverview/stopanimation.md)
+- [func stopAnimation()](./stopanimation%28%29.md)
   Deactivates the timer that advances the animation.
 
 

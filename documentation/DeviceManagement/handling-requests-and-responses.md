@@ -1,6 +1,7 @@
 # Handling requests and responses
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Write a request for app or book metadata and handle responses from the API.
 
@@ -8,7 +9,7 @@ Write a request for app or book metadata and handle responses from the API.
 
 Learn how to compose a request to get data from the Apps and Books Metadata for Organizations API, and how to interpret responses.
 
-#### Compose a Request
+#### Compose a request
 
 To compose a request, first specify the root path — `https://api.ent.apple.com/v1` for enterprise organizations, or `https://api.edu.apple.com/v1` for educational organizations.
 
@@ -22,15 +23,15 @@ GET https://api.ent.apple.com/v1/catalog/{storefront}/stoken-authenticated-apps?
 
 You must also include the organization’s `sToken` as a cookie named `itvt` to access the `stoken-authenticated-apps` and `stoken-authenticated-books` endpoints.
 
-Most requests return only the requested resource. For information about how to request related resources at the same time, see [`Fetching resources with extended attributes`](fetching-resources-with-extended-attributes.md).
+Most requests return only the requested resource. For information about how to request related resources at the same time, see [Fetching resources with extended attributes](./fetching-resources-with-extended-attributes.md).
 
-#### Interpret a Response
+#### Interpret a response
 
 There are three kinds of responses: resource collection, results, and errors.
 
 Results responses always have a top-level `results` member object that contains the information for the response. Results responses are always unique to the endpoint.
 
-Error responses contain an array of one or more error objects that indicate any issues while handling the request. The status code of the response reflects the primary error. See [`Error`](https://developer.apple.com/documentation/applemusicapi/error) and [`HTTP Status Codes`](https://developer.apple.com/documentation/applemusicapi/http-status-codes).
+Error responses contain an array of one or more error objects that indicate any issues while handling the request. The status code of the response reflects the primary error. See [`Error`](../AppleMusicAPI/error.md) and [HTTP Status Codes](../AppleMusicAPI/http-status-codes.md).
 
 Default responses for common requests include:
 

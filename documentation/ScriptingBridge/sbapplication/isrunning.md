@@ -1,7 +1,8 @@
 # isRunning
 
 **Framework**: Scripting Bridge  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the target application represented by the receiver is running.
 
@@ -15,21 +16,26 @@ A Boolean that indicates whether the target application represented by the recei
 var isRunning: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isRunning) BOOL running;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the application is running, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the application is running, [`false`](../../Swift/false.md) otherwise.
 
-This may be [`true`](https://developer.apple.com/documentation/swift/true) for instances initialized with a bundle identifier or URL because `SBApplication` launches the application only when it’s necessary to send it an event.
+This may be [`true`](../../Swift/true.md) for instances initialized with a bundle identifier or URL because `SBApplication` launches the application only when it’s necessary to send it an event.
 
 ## See Also
 
-- [func activate()](sbapplication/activate.md)
+### Controlling the Application
+- [func activate()](./activate%28%29.md)
   Moves the target application to the foreground immediately.
-- [var launchFlags: LSLaunchFlags](sbapplication/launchflags.md)
+- [var launchFlags: LSLaunchFlags](./launchflags.md)
   The launch flags for the application represented by the receiver.
-- [var sendMode: AESendMode](sbapplication/sendmode.md)
+- [var sendMode: AESendMode](./sendmode.md)
   The mode for sending Apple events to the target application.
-- [var timeout: Int](sbapplication/timeout.md)
+- [var timeout: Int](./timeout.md)
   The period the application will wait to receive reply Apple events.
 
 

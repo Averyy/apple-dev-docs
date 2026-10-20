@@ -1,7 +1,8 @@
 # eventSource
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A stage that receives events from a simulation (e.g. update or terminate), and initializes new particles for another simulation.
 
@@ -12,7 +13,7 @@ A stage that receives events from a simulation (e.g. update or terminate), and i
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

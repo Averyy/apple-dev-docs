@@ -1,7 +1,8 @@
 # joined(separator:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string by concatenating the elements of the sequence, adding the given separator between each element.
 
@@ -19,6 +20,8 @@ Returns a new string by concatenating the elements of the sequence, adding the g
 ```swift
 func joined(separator: String = "") -> String
 ```
+
+Available when `Element` conforms to `StringProtocol`.
 
 #### Return Value
 

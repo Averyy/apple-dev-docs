@@ -1,14 +1,15 @@
 # kBluetoothHCICommandWriteLEHostSupported
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandWriteLEHostSupported = 0x006D
 ```
 

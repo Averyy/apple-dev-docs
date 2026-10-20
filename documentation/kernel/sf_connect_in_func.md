@@ -1,18 +1,19 @@
 # sf_connect_in_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*sf_connect_in_func)(void *cookie, socket_t so, const struct sockaddr *from);
 ```
 
-#### Return_value
+#### Return Value
 
 Return: 0 - The caller will continue with normal processing of the connection. Anything Else - The caller will rejecting the incoming connection.
 

@@ -1,7 +1,8 @@
 # ControlGroupStyleConfiguration.Content
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased content of a `ControlGroup`.
 
@@ -23,11 +24,12 @@ A type-erased content of a `ControlGroup`.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [let content: ControlGroupStyleConfiguration.Content](controlgroupstyleconfiguration/content-swift.property.md)
+### Configuring the content
+- [let content: ControlGroupStyleConfiguration.Content](./content-swift.property.md)
   A view that represents the content of the `ControlGroup`.
 
 

@@ -1,7 +1,8 @@
 # primaryRotationBehavior
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation behavior describing how an object rotates due to pose changes from the primary input source, for example a single hand pose re-orienting.
 

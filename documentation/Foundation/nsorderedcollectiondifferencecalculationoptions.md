@@ -1,7 +1,8 @@
 # NSOrderedCollectionDifferenceCalculationOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify the options to use when creating an ordered collection difference.
 
@@ -20,34 +21,39 @@ Constants that specify the options to use when creating an ordered collection di
 struct NSOrderedCollectionDifferenceCalculationOptions
 ```
 
+```c
+enum NSOrderedCollectionDifferenceCalculationOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Creating Difference Calculation Options
-- [init(rawValue: UInt)](nsorderedcollectiondifferencecalculationoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./nsorderedcollectiondifferencecalculationoptions/init%28rawvalue%29.md)
   Creates a set of difference calculation options.
 ### Difference Calculation Options
-- [static var inferMoves: NSOrderedCollectionDifferenceCalculationOptions](nsorderedcollectiondifferencecalculationoptions/infermoves.md)
+- [static var inferMoves: NSOrderedCollectionDifferenceCalculationOptions](./nsorderedcollectiondifferencecalculationoptions/infermoves.md)
   An option that identifies insertions or removals as moves.
-- [static var omitInsertedObjects: NSOrderedCollectionDifferenceCalculationOptions](nsorderedcollectiondifferencecalculationoptions/omitinsertedobjects.md)
+- [static var omitInsertedObjects: NSOrderedCollectionDifferenceCalculationOptions](./nsorderedcollectiondifferencecalculationoptions/omitinsertedobjects.md)
   An option that indicates that the difference should omit references to the insertions.
-- [static var omitRemovedObjects: NSOrderedCollectionDifferenceCalculationOptions](nsorderedcollectiondifferencecalculationoptions/omitremovedobjects.md)
+- [static var omitRemovedObjects: NSOrderedCollectionDifferenceCalculationOptions](./nsorderedcollectiondifferencecalculationoptions/omitremovedobjects.md)
   An option that indicates that the difference should omit references to the removals.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [class NSOrderedCollectionDifference](nsorderedcollectiondifference.md)
+### Comparing with Another Array
+- [class NSOrderedCollectionDifference](./nsorderedcollectiondifference.md)
   An object representing the difference between two ordered collections.
 
 

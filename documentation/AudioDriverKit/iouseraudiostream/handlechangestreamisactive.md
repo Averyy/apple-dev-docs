@@ -1,7 +1,8 @@
 # HandleChangeStreamIsActive
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the stream the activity state is changing.
 
@@ -10,17 +11,17 @@ Tells the stream the activity state is changing.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HandleChangeStreamIsActive(bool in_is_active);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-The default implementation calls [`SetStreamIsActive`](iouseraudiostream/setstreamisactive.md) and returns [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess). Subclass and override this method to handle changes to the stream format and return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) upon success.
+The default implementation calls [`SetStreamIsActive`](./setstreamisactive.md) and returns [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md). Subclass and override this method to handle changes to the stream format and return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) upon success.
 
 ## Parameters
 
@@ -28,9 +29,10 @@ The default implementation calls [`SetStreamIsActive`](iouseraudiostream/setstre
 
 ## See Also
 
-- [HandleChangeCurrentStreamFormat](iouseraudiostream/handlechangecurrentstreamformat.md)
+### Managing Stream Changes
+- [HandleChangeCurrentStreamFormat](./handlechangecurrentstreamformat.md)
   Tells the stream the format is changing.
-- [DeviceSampleRateChanged](iouseraudiostream/devicesampleratechanged.md)
+- [DeviceSampleRateChanged](./devicesampleratechanged.md)
   Updates stream formats, in response to the owning audio device changing its sample rate.
 
 

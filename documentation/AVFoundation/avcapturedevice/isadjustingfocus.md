@@ -1,7 +1,8 @@
 # isAdjustingFocus
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device is currently adjusting its focus setting.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether the device is currently adjusting its foc
 
 ```swift
 var isAdjustingFocus: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isAdjustingFocus) BOOL adjustingFocus;
 ```
 
 #### Discussion

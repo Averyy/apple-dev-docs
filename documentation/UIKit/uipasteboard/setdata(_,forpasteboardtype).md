@@ -1,7 +1,8 @@
 # setData(_:forPasteboardType:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Puts data on the pasteboard for the specified representation type.
 
@@ -17,9 +18,13 @@ Puts data on the pasteboard for the specified representation type.
 func setData(_ data: Data, forPasteboardType pasteboardType: String)
 ```
 
+```objc
+- (void) setData:(NSData *) data forPasteboardType:(NSString *) pasteboardType;
+```
+
 #### Discussion
 
-Use this method to put raw data on the pasteboard. For example, you could archive a graph of model objects and pass the resulting [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object to a related app via a pasteboard using a custom pasteboard type. (To put objects—such as [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`UIImage`](uiimage.md), or [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects—on the pasteboard, use the [`setValue(_:forPasteboardType:)`](uipasteboard/setvalue(_:forpasteboardtype:).md) method.) This method writes data for the first item in the pasteboard. Calling this method replaces any items currently in the pasteboard.
+Use this method to put raw data on the pasteboard. For example, you could archive a graph of model objects and pass the resulting [`NSData`](../../Foundation/nsdata.md) object to a related app via a pasteboard using a custom pasteboard type. (To put objects—such as [`NSString`](../../Foundation/nsstring.md), [`NSArray`](../../Foundation/nsarray.md), [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSDate`](../../Foundation/nsdate.md), [`NSNumber`](../../Foundation/nsnumber.md), [`UIImage`](../uiimage.md), or [`NSURL`](../../Foundation/nsurl.md) objects—on the pasteboard, use the [`setValue(_:forPasteboardType:)`](./setvalue%28_,forpasteboardtype%29.md) method.) This method writes data for the first item in the pasteboard. Calling this method replaces any items currently in the pasteboard.
 
 ## Parameters
 
@@ -28,23 +33,24 @@ Use this method to put raw data on the pasteboard. For example, you could archiv
 
 ## See Also
 
-- [var numberOfItems: Int](uipasteboard/numberofitems.md)
+### Getting and setting pasteboard items
+- [var numberOfItems: Int](./numberofitems.md)
   The number of items for the pasteboard.
-- [var items: [[String : Any]]](uipasteboard/items.md)
+- [var items: [[String : Any]]](./items.md)
   The pasteboard items on the pasteboard.
-- [func addItems([[String : Any]])](uipasteboard/additems(_:).md)
+- [func addItems([[String : Any]])](./additems%28_%29.md)
   Appends pasteboard items to the current contents of the pasteboard.
-- [func setItems([[String : Any]], options: [UIPasteboard.OptionsKey : Any])](uipasteboard/setitems(_:options:).md)
+- [func setItems([[String : Any]], options: [UIPasteboard.OptionsKey : Any])](./setitems%28_,options%29.md)
   Adds an array of items to a pasteboard, and sets privacy options for all the items on the pasteboard.
-- [func data(forPasteboardType: String) -> Data?](uipasteboard/data(forpasteboardtype:).md)
+- [func data(forPasteboardType: String) -> Data?](./data%28forpasteboardtype%29.md)
   Returns the data on the pasteboard for the given representation type.
-- [func data(forPasteboardType: String, inItemSet: IndexSet?) -> [Data]?](uipasteboard/data(forpasteboardtype:initemset:).md)
+- [func data(forPasteboardType: String, inItemSet: IndexSet?) -> [Data]?](./data%28forpasteboardtype,initemset%29.md)
   Returns the data objects in the indicated pasteboard items that have the given representation type.
-- [func value(forPasteboardType: String) -> Any?](uipasteboard/value(forpasteboardtype:).md)
+- [func value(forPasteboardType: String) -> Any?](./value%28forpasteboardtype%29.md)
   Returns an object on the pasteboard for the given representation type.
-- [func values(forPasteboardType: String, inItemSet: IndexSet?) -> [Any]?](uipasteboard/values(forpasteboardtype:initemset:).md)
+- [func values(forPasteboardType: String, inItemSet: IndexSet?) -> [Any]?](./values%28forpasteboardtype,initemset%29.md)
   Returns the objects on the indicated pasteboard items that have the given representation type.
-- [func setValue(Any, forPasteboardType: String)](uipasteboard/setvalue(_:forpasteboardtype:).md)
+- [func setValue(Any, forPasteboardType: String)](./setvalue%28_,forpasteboardtype%29.md)
   Puts an object on the pasteboard for the specified representation type.
 
 

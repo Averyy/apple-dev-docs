@@ -1,17 +1,22 @@
 # init(deviceCyan:magenta:yellow:black:alpha:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object using the given opacity value and CMYK components.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(deviceCyan cyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFloat, alpha: CGFloat)
+```
+
+```objc
++ (NSColor *) colorWithDeviceCyan:(CGFloat) cyan magenta:(CGFloat) magenta yellow:(CGFloat) yellow black:(CGFloat) black alpha:(CGFloat) alpha;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ Values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as
 
 ## See Also
 
-- [func getCyan(UnsafeMutablePointer<CGFloat>?, magenta: UnsafeMutablePointer<CGFloat>?, yellow: UnsafeMutablePointer<CGFloat>?, black: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?)](nscolor/getcyan(_:magenta:yellow:black:alpha:).md)
+### Related Documentation
+- [func getCyan(UnsafeMutablePointer<CGFloat>?, magenta: UnsafeMutablePointer<CGFloat>?, yellow: UnsafeMutablePointer<CGFloat>?, black: UnsafeMutablePointer<CGFloat>?, alpha: UnsafeMutablePointer<CGFloat>?)](./getcyan%28_,magenta,yellow,black,alpha%29.md)
   Returns the color object’s CMYK and opacity values.
 
 

@@ -1,7 +1,8 @@
 # localizedUppercase
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An uppercase version of the string that is produced using the current locale.
 

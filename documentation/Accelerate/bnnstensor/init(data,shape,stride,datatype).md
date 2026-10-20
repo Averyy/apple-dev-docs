@@ -1,7 +1,8 @@
 # init(data:shape:stride:dataType:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `BNNSTensor` that references the same memory as the specified `UnsafeMutableRawBufferPointer`.
 

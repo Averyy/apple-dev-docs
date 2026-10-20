@@ -1,7 +1,8 @@
 # WKWebExtensionWindow
 
 **Framework**: WebKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol with methods that represent a window to web extensions.
 
@@ -19,65 +20,70 @@ A protocol with methods that represent a window to web extensions.
 protocol WKWebExtensionWindow : NSObjectProtocol
 ```
 
+```objc
+@protocol WKWebExtensionWindow <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func activeTab(for: WKWebExtensionContext) -> (any WKWebExtensionTab)?](wkwebextensionwindow/activetab(for:).md)
+- [func activeTab(for: WKWebExtensionContext) -> (any WKWebExtensionTab)?](./wkwebextensionwindow/activetab%28for%29.md)
   Called when the active tab is needed for the window.
-- [func close(for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](wkwebextensionwindow/close(for:completionhandler:).md)
+- [func close(for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](./wkwebextensionwindow/close%28for,completionhandler%29.md)
   Called to close the window.
-- [func focus(for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](wkwebextensionwindow/focus(for:completionhandler:).md)
+- [func focus(for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](./wkwebextensionwindow/focus%28for,completionhandler%29.md)
   Called to focus the window.
-- [func frame(for: WKWebExtensionContext) -> CGRect](wkwebextensionwindow/frame(for:).md)
+- [func frame(for: WKWebExtensionContext) -> CGRect](./wkwebextensionwindow/frame%28for%29.md)
   Called when the frame of the window is needed.
-- [func isPrivate(for: WKWebExtensionContext) -> Bool](wkwebextensionwindow/isprivate(for:).md)
+- [func isPrivate(for: WKWebExtensionContext) -> Bool](./wkwebextensionwindow/isprivate%28for%29.md)
   Called when the private state of the window is needed.
-- [func screenFrame(for: WKWebExtensionContext) -> CGRect](wkwebextensionwindow/screenframe(for:).md)
+- [func screenFrame(for: WKWebExtensionContext) -> CGRect](./wkwebextensionwindow/screenframe%28for%29.md)
   Called when the screen frame containing the window is needed.
-- [func setFrame(CGRect, for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](wkwebextensionwindow/setframe(_:for:completionhandler:).md)
+- [func setFrame(CGRect, for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](./wkwebextensionwindow/setframe%28_,for,completionhandler%29.md)
   Called to set the frame of the window.
-- [func setWindowState(WKWebExtension.WindowState, for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](wkwebextensionwindow/setwindowstate(_:for:completionhandler:).md)
+- [func setWindowState(WKWebExtension.WindowState, for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](./wkwebextensionwindow/setwindowstate%28_,for,completionhandler%29.md)
   Called to set the state of the window.
-- [func tabs(for: WKWebExtensionContext) -> [any WKWebExtensionTab]](wkwebextensionwindow/tabs(for:).md)
+- [func tabs(for: WKWebExtensionContext) -> [any WKWebExtensionTab]](./wkwebextensionwindow/tabs%28for%29.md)
   Called when the tabs are needed for the window.
-- [func windowState(for: WKWebExtensionContext) -> WKWebExtension.WindowState](wkwebextensionwindow/windowstate(for:).md)
+- [func windowState(for: WKWebExtensionContext) -> WKWebExtension.WindowState](./wkwebextensionwindow/windowstate%28for%29.md)
   Called when the state of the window is needed.
-- [func windowType(for: WKWebExtensionContext) -> WKWebExtension.WindowType](wkwebextensionwindow/windowtype(for:).md)
+- [func windowType(for: WKWebExtensionContext) -> WKWebExtension.WindowType](./wkwebextensionwindow/windowtype%28for%29.md)
   Called when the type of the window is needed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WKWebExtension](wkwebextension.md)
+### Web extensions
+- [class WKWebExtension](./wkwebextension.md)
   An object that encapsulates a web extension’s resources that the manifest file defines.
-- [protocol WKWebExtensionTab](wkwebextensiontab.md)
+- [protocol WKWebExtensionTab](./wkwebextensiontab.md)
   A protocol with methods that represent a tab to web extensions.
-- [class WKWebExtensionContext](wkwebextensioncontext.md)
+- [class WKWebExtensionContext](./wkwebextensioncontext.md)
   An object that represents the runtime environment for a web extension.
-- [class WKWebExtensionController](wkwebextensioncontroller.md)
+- [class WKWebExtensionController](./wkwebextensioncontroller.md)
   An object that manages a set of loaded extension contexts.
-- [protocol WKWebExtensionControllerDelegate](wkwebextensioncontrollerdelegate.md)
+- [protocol WKWebExtensionControllerDelegate](./wkwebextensioncontrollerdelegate.md)
   A group of methods you use to customize web extension interactions.
-- [WKWebExtension.Action](wkwebextension/action.md)
+- [WKWebExtension.Action](./wkwebextension/action.md)
   An object that encapsulates the properties for an individual web extension action.
-- [WKWebExtension.Command](wkwebextension/command.md)
+- [WKWebExtension.Command](./wkwebextension/command.md)
   An object that encapsulates the properties for an individual web extension command.
-- [WKWebExtension.MatchPattern](wkwebextension/matchpattern.md)
+- [WKWebExtension.MatchPattern](./wkwebextension/matchpattern.md)
   An object that represents a way to specify groups of URLs.
-- [WKWebExtension.MessagePort](wkwebextension/messageport.md)
+- [WKWebExtension.MessagePort](./wkwebextension/messageport.md)
   An object that manages message-based communication with a web extension.
-- [WKWebExtension.DataRecord](wkwebextension/datarecord.md)
+- [WKWebExtension.DataRecord](./wkwebextension/datarecord.md)
   An object that represents a record of stored data for a specific web extension context.
-- [WKWebExtension.TabConfiguration](wkwebextension/tabconfiguration.md)
+- [WKWebExtension.TabConfiguration](./wkwebextension/tabconfiguration.md)
   An object that encapsulates configuration options for a tab in an extension.
-- [WKWebExtension.WindowConfiguration](wkwebextension/windowconfiguration.md)
+- [WKWebExtension.WindowConfiguration](./wkwebextension/windowconfiguration.md)
   An object that encapsulates configuration options for a window in an extension.
-- [WKWebExtensionController.Configuration](wkwebextensioncontroller/configuration-swift.class.md)
-  A [`WKWebExtensionController.Configuration`](wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
+- [WKWebExtensionController.Configuration](./wkwebextensioncontroller/configuration-swift.class.md)
+  A [`WKWebExtensionController.Configuration`](./wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
 
 
 ---

@@ -1,14 +1,15 @@
 # reserved_6
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 u_int64_t reserved_6;
 ```
 

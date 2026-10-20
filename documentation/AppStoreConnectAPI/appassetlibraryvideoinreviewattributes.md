@@ -1,7 +1,8 @@
 # AppAssetLibraryVideoInReviewAttributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes of an app asset library video that’s in the in review state.
 
@@ -10,36 +11,37 @@ The attributes of an app asset library video that’s in the in review state.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryVideoInReviewAttributes
 ```
 
 ## Relationships
 
 ### Inherits From
-- [AppAssetLibraryVideoCommonAttributes](appassetlibraryvideocommonattributes.md)
+- [AppAssetLibraryVideoCommonAttributes](./appassetlibraryvideocommonattributes.md)
 
 ## See Also
 
-- [object AppAssetLibraryVideoCommonAttributes](appassetlibraryvideocommonattributes.md)
+### Asset state attributes
+- [object AppAssetLibraryVideoCommonAttributes](./appassetlibraryvideocommonattributes.md)
   The attributes common to an app asset library video in any state.
-- [object AppAssetLibraryVideoAwaitingUploadAttributes](appassetlibraryvideoawaitinguploadattributes.md)
+- [object AppAssetLibraryVideoAwaitingUploadAttributes](./appassetlibraryvideoawaitinguploadattributes.md)
   The attributes of an app asset library video that’s in the awaiting upload state.
-- [object AppAssetLibraryVideoUploadCompleteAttributes](appassetlibraryvideouploadcompleteattributes.md)
+- [object AppAssetLibraryVideoUploadCompleteAttributes](./appassetlibraryvideouploadcompleteattributes.md)
   The attributes of an app asset library video that’s in the upload complete state.
-- [object AppAssetLibraryVideoReadyForReviewAttributes](appassetlibraryvideoreadyforreviewattributes.md)
+- [object AppAssetLibraryVideoReadyForReviewAttributes](./appassetlibraryvideoreadyforreviewattributes.md)
   The attributes of an app asset library video that’s in the ready for review state.
-- [object AppAssetLibraryVideoWaitingForReviewAttributes](appassetlibraryvideowaitingforreviewattributes.md)
+- [object AppAssetLibraryVideoWaitingForReviewAttributes](./appassetlibraryvideowaitingforreviewattributes.md)
   The attributes of an app asset library video that’s in the waiting for review state.
-- [object AppAssetLibraryVideoAcceptedAttributes](appassetlibraryvideoacceptedattributes.md)
+- [object AppAssetLibraryVideoAcceptedAttributes](./appassetlibraryvideoacceptedattributes.md)
   The attributes of an app asset library video that’s in the accepted state.
-- [object AppAssetLibraryVideoApprovedAttributes](appassetlibraryvideoapprovedattributes.md)
+- [object AppAssetLibraryVideoApprovedAttributes](./appassetlibraryvideoapprovedattributes.md)
   The attributes of an app asset library video that’s in the approved state.
-- [object AppAssetLibraryVideoRejectedAttributes](appassetlibraryvideorejectedattributes.md)
+- [object AppAssetLibraryVideoRejectedAttributes](./appassetlibraryvideorejectedattributes.md)
   The attributes of an app asset library video that’s in the rejected state.
-- [object AppAssetLibraryVideoFailedAttributes](appassetlibraryvideofailedattributes.md)
+- [object AppAssetLibraryVideoFailedAttributes](./appassetlibraryvideofailedattributes.md)
   The attributes of an app asset library video that’s in the failed state.
-- [object AppAssetLibraryVideoArchivedAttributes](appassetlibraryvideoarchivedattributes.md)
+- [object AppAssetLibraryVideoArchivedAttributes](./appassetlibraryvideoarchivedattributes.md)
   The attributes of an app asset library video that’s in the archived state.
 
 

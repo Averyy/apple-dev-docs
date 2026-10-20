@@ -1,7 +1,8 @@
 # targetQuantityLowerBound
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target’s lower bound.
 
@@ -20,9 +21,10 @@ var targetQuantityLowerBound: HKQuantity { get }
 
 ## See Also
 
-- [var target: ClosedRange<Measurement<UnitFrequency>>](cadencerangealert/target.md)
+### Accessing the alert data
+- [var target: ClosedRange<Measurement<UnitFrequency>>](./target.md)
   The target range.
-- [var targetQuantityUpperBound: HKQuantity](cadencerangealert/targetquantityupperbound.md)
+- [var targetQuantityUpperBound: HKQuantity](./targetquantityupperbound.md)
   The target’s upper bound.
 
 

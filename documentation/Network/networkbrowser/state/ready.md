@@ -1,7 +1,8 @@
 # NetworkBrowser.State.ready
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The browser is active and will monitor services on the network. Set the `browseResultsChangedHandler` to get updates for these services.
 

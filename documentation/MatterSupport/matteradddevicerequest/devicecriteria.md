@@ -1,7 +1,8 @@
 # MatterAddDeviceRequest.DeviceCriteria
 
 **Framework**: MatterSupport  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A predicate to match against possible devices that may appear in the picker.
 
@@ -10,7 +11,7 @@ A predicate to match against possible devices that may appear in the picker.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,41 +22,42 @@ enum DeviceCriteria
 ## Topics
 
 ### Creating criteria
-- [init(from: any Decoder) throws](matteradddevicerequest/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Create the request from a decoder.
 ### Defining the criteria
-- [MatterAddDeviceRequest.DeviceCriteria.allDevices](matteradddevicerequest/devicecriteria/alldevices.md)
+- [MatterAddDeviceRequest.DeviceCriteria.allDevices](./devicecriteria/alldevices.md)
   All device match without any filtering.
-- [case all([MatterAddDeviceRequest.DeviceCriteria])](matteradddevicerequest/devicecriteria/all(_:).md)
+- [case all([MatterAddDeviceRequest.DeviceCriteria])](./devicecriteria/all%28_%29.md)
   A device matches the given criteria if it matches all of the individual ones
-- [case any([MatterAddDeviceRequest.DeviceCriteria])](matteradddevicerequest/devicecriteria/any(_:).md)
+- [case any([MatterAddDeviceRequest.DeviceCriteria])](./devicecriteria/any%28_%29.md)
   A device matches the given criteria if it matches any one of the individual ones .
-- [MatterAddDeviceRequest.DeviceCriteria.commissioningID(_:)](matteradddevicerequest/devicecriteria/commissioningid(_:).md)
+- [MatterAddDeviceRequest.DeviceCriteria.commissioningID(_:)](./devicecriteria/commissioningid%28_%29.md)
   A device matches if it has the given commissioning identifier.
-- [MatterAddDeviceRequest.DeviceCriteria.fabricNode(rootPublicKey:nodeID:)](matteradddevicerequest/devicecriteria/fabricnode(rootpublickey:nodeid:).md)
+- [MatterAddDeviceRequest.DeviceCriteria.fabricNode(rootPublicKey:nodeID:)](./devicecriteria/fabricnode%28rootpublickey,nodeid%29.md)
   A device matches if it’s paired to a fabric using the provided fabric and node identifiers.
-- [case not(MatterAddDeviceRequest.DeviceCriteria)](matteradddevicerequest/devicecriteria/not(_:).md)
+- [case not(MatterAddDeviceRequest.DeviceCriteria)](./devicecriteria/not%28_%29.md)
   A device matches the given criteria if it does not match the provided criteria.
-- [MatterAddDeviceRequest.DeviceCriteria.productID(_:)](matteradddevicerequest/devicecriteria/productid(_:).md)
+- [MatterAddDeviceRequest.DeviceCriteria.productID(_:)](./devicecriteria/productid%28_%29.md)
   A device matches if it has the given product identifier.
-- [MatterAddDeviceRequest.DeviceCriteria.serialNumber(_:)](matteradddevicerequest/devicecriteria/serialnumber(_:).md)
+- [MatterAddDeviceRequest.DeviceCriteria.serialNumber(_:)](./devicecriteria/serialnumber%28_%29.md)
   A device matches if it has the given product identifier.
-- [MatterAddDeviceRequest.DeviceCriteria.vendorID(_:)](matteradddevicerequest/devicecriteria/vendorid(_:).md)
+- [MatterAddDeviceRequest.DeviceCriteria.vendorID(_:)](./devicecriteria/vendorid%28_%29.md)
   A device matches if it has the given vendor.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var showDeviceCriteria: MatterAddDeviceRequest.DeviceCriteria](matteradddevicerequest/showdevicecriteria.md)
+### Defining the device criteria
+- [var showDeviceCriteria: MatterAddDeviceRequest.DeviceCriteria](./showdevicecriteria.md)
   A predicate that filters what devices appear in the picker.
 
 

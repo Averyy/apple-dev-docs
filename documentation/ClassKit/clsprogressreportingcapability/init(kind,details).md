@@ -1,7 +1,8 @@
 # init(kind:details:)
 
 **Framework**: ClassKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new progress reporting capability of the given type with a descriptive string.
 
@@ -16,6 +17,10 @@ Creates a new progress reporting capability of the given type with a descriptive
 
 ```swift
 init(kind: CLSProgressReportingCapability.Kind, details: String?)
+```
+
+```objc
+- (instancetype) initWithKind:(CLSProgressReportingCapabilityKind) kind details:(NSString *) details;
 ```
 
 ## Parameters

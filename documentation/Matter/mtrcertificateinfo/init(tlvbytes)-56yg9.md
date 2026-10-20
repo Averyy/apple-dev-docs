@@ -1,7 +1,8 @@
 # init(tlvBytes:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(tlvBytes bytes: Data)
+```
+
+```objc
+- (instancetype) initWithTLVBytes:(MTRCertificateTLVBytes) bytes;
 ```
 
 

@@ -1,7 +1,8 @@
 # compareFunction
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sampler comparison function used when performing a sample compare operation on a depth texture.
 
@@ -19,15 +20,20 @@ The sampler comparison function used when performing a sample compare operation 
 var compareFunction: MTLCompareFunction { get set }
 ```
 
+```objc
+@property (nonatomic) MTLCompareFunction compareFunction;
+```
+
 #### Discussion
 
-The default value is [`MTLCompareFunction.never`](mtlcomparefunction/never.md).
+The default value is [`MTLCompareFunction.never`](../mtlcomparefunction/never.md).
 
-The [`MTLFeatureSet.iOS_GPUFamily3_v1`](mtlfeatureset/ios_gpufamily3_v1.md) and [`MTLFeatureSet.iOS_GPUFamily1_v1`](mtlfeatureset/ios_gpufamily1_v1.md) feature sets allow you to define a framework-side sampler comparison function for an [`MTLSamplerState`](mtlsamplerstate.md) instance. All feature sets support shader-side sampler comparison functions, as described in the [`Metal Shading Language Specification`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
+The [`MTLFeatureSet.iOS_GPUFamily3_v1`](../mtlfeatureset/ios_gpufamily3_v1.md) and [`MTLFeatureSet.iOS_GPUFamily1_v1`](../mtlfeatureset/ios_gpufamily1_v1.md) feature sets allow you to define a framework-side sampler comparison function for an [`MTLSamplerState`](../mtlsamplerstate.md) instance. All feature sets support shader-side sampler comparison functions, as described in the [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf).
 
 ## See Also
 
-- [enum MTLCompareFunction](mtlcomparefunction.md)
+### Declaring the depth comparison mode
+- [enum MTLCompareFunction](../mtlcomparefunction.md)
   Options used to specify how a sample compare operation should be performed on a depth texture.
 
 

@@ -1,7 +1,8 @@
 # URLSession.AsyncBytes
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of bytes.
 
@@ -23,58 +24,59 @@ struct AsyncBytes
 ## Topics
 
 ### Adapting textual sequences
-- [struct AsyncCharacterSequence](asynccharactersequence.md)
+- [struct AsyncCharacterSequence](../asynccharactersequence.md)
   An asynchronous sequence of characters.
-- [struct AsyncUnicodeScalarSequence](asyncunicodescalarsequence.md)
+- [struct AsyncUnicodeScalarSequence](../asyncunicodescalarsequence.md)
   An asychronous sequence of Unicode scalar values.
-- [struct AsyncLineSequence](asynclinesequence.md)
+- [struct AsyncLineSequence](../asynclinesequence.md)
   An asynchronous sequence of lines of text.
 ### Accessing the URL session task
-- [var task: URLSessionDataTask](urlsession/asyncbytes/task.md)
+- [var task: URLSessionDataTask](./asyncbytes/task.md)
   The URL session task that performs the data transfer.
 ### Structures
-- [URLSession.AsyncBytes.Iterator](urlsession/asyncbytes/iterator.md)
+- [URLSession.AsyncBytes.Iterator](./asyncbytes/iterator.md)
 ### Type Aliases
-- [URLSession.AsyncBytes.AsyncIterator](urlsession/asyncbytes/asynciterator.md)
-- [URLSession.AsyncBytes.Element](urlsession/asyncbytes/element.md)
+- [URLSession.AsyncBytes.AsyncIterator](./asyncbytes/asynciterator.md)
+- [URLSession.AsyncBytes.Element](./asyncbytes/element.md)
   The type of element produced by this asynchronous sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func bytes(for: URLRequest, delegate: (any URLSessionTaskDelegate)?) async throws -> (URLSession.AsyncBytes, URLResponse)](urlsession/bytes(for:delegate:).md)
+### Performing asynchronous transfers
+- [func bytes(for: URLRequest, delegate: (any URLSessionTaskDelegate)?) async throws -> (URLSession.AsyncBytes, URLResponse)](./bytes%28for,delegate%29.md)
   Retrieves the contents of a URL based on the specified URL request and delivers an asynchronous sequence of bytes.
-- [func bytes(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (URLSession.AsyncBytes, URLResponse)](urlsession/bytes(from:delegate:).md)
+- [func bytes(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (URLSession.AsyncBytes, URLResponse)](./bytes%28from,delegate%29.md)
   Retrieves the contents of a given URL and delivers an asynchronous sequence of bytes.
-- [func data(for: URLRequest, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](urlsession/data(for:delegate:).md)
+- [func data(for: URLRequest, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](./data%28for,delegate%29.md)
   Downloads the contents of a URL based on the specified URL request and delivers the data asynchronously.
-- [func data(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](urlsession/data(from:delegate:).md)
+- [func data(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](./data%28from,delegate%29.md)
   Retrieves the contents of a URL and delivers the data asynchronously.
-- [func data(for: URLRequest) async throws -> (Data, URLResponse)](urlsession/data(for:).md)
+- [func data(for: URLRequest) async throws -> (Data, URLResponse)](./data%28for%29.md)
   Convenience method to load data using a URLRequest, creates and resumes a URLSessionDataTask internally.
-- [func data(from: URL) async throws -> (Data, URLResponse)](urlsession/data(from:).md)
+- [func data(from: URL) async throws -> (Data, URLResponse)](./data%28from%29.md)
   Convenience method to load data using a URL, creates and resumes a URLSessionDataTask internally.
-- [func download(for: URLRequest, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](urlsession/download(for:delegate:).md)
+- [func download(for: URLRequest, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](./download%28for,delegate%29.md)
   Retrieves the contents of a URL based on the specified URL request and delivers the URL of the saved file asynchronously.
-- [func download(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](urlsession/download(from:delegate:).md)
+- [func download(from: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](./download%28from,delegate%29.md)
   Retrieves the contents of a URL and delivers the URL of the saved file asynchronously.
-- [func download(resumeFrom: Data, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](urlsession/download(resumefrom:delegate:).md)
+- [func download(resumeFrom: Data, delegate: (any URLSessionTaskDelegate)?) async throws -> (URL, URLResponse)](./download%28resumefrom,delegate%29.md)
   Resumes a previously-paused download and delivers the URL of the saved file asynchronously.
-- [func upload(for: URLRequest, from: Data, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](urlsession/upload(for:from:delegate:).md)
+- [func upload(for: URLRequest, from: Data, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](./upload%28for,from,delegate%29.md)
   Uploads data to a URL based on the specified URL request and delivers the result asynchronously.
-- [func upload(for: URLRequest, fromFile: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](urlsession/upload(for:fromfile:delegate:).md)
+- [func upload(for: URLRequest, fromFile: URL, delegate: (any URLSessionTaskDelegate)?) async throws -> (Data, URLResponse)](./upload%28for,fromfile,delegate%29.md)
   Uploads data to a URL and delivers the result asynchronously.
-- [func upload(for: URLRequest, from: Data) async throws -> (Data, URLResponse)](urlsession/upload(for:from:).md)
+- [func upload(for: URLRequest, from: Data) async throws -> (Data, URLResponse)](./upload%28for,from%29.md)
   Convenience method to upload data using a URLRequest, creates and resumes a URLSessionUploadTask internally.
-- [func upload(for: URLRequest, fromFile: URL) async throws -> (Data, URLResponse)](urlsession/upload(for:fromfile:).md)
+- [func upload(for: URLRequest, fromFile: URL) async throws -> (Data, URLResponse)](./upload%28for,fromfile%29.md)
   Convenience method to upload data using a URLRequest, creates and resumes a URLSessionUploadTask internally.
-- [protocol URLSessionTaskDelegate](urlsessiontaskdelegate.md)
+- [protocol URLSessionTaskDelegate](../urlsessiontaskdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events.
 
 

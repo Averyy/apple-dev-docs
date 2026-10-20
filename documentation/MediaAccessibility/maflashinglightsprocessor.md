@@ -1,7 +1,8 @@
 # MAFlashingLightsProcessor
 
 **Framework**: Media Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that processes a framebuffer object to detect and dim sequences of flashing lights.
 
@@ -19,11 +20,15 @@ A class that processes a framebuffer object to detect and dim sequences of flash
 class MAFlashingLightsProcessor
 ```
 
+```objc
+@interface MAFlashingLightsProcessor : NSObject
+```
+
 #### Overview
 
-A device with the Dim Flashing Lights setting on automatically dims the brightness of flashing effect sequences when it detects them in video content. If your app performs custom video drawing instead of using [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) APIs, you can use the [`MAFlashingLightsProcessor`](maflashinglightsprocessor.md) class to detect and mitigate sequences of flashing effects in your video content.
+A device with the Dim Flashing Lights setting on automatically dims the brightness of flashing effect sequences when it detects them in video content. If your app performs custom video drawing instead of using [AVFoundation](../AVFoundation/AVFoundation.md) APIs, you can use the [`MAFlashingLightsProcessor`](./maflashinglightsprocessor.md) class to detect and mitigate sequences of flashing effects in your video content.
 
-The following example shows how you might incorporate [`MAFlashingLightsProcessor`](maflashinglightsprocessor.md) into code that uses [`Core Video`](https://developer.apple.com/documentation/corevideo) APIs.
+The following example shows how you might incorporate [`MAFlashingLightsProcessor`](./maflashinglightsprocessor.md) into code that uses [Core Video](../CoreVideo/CoreVideo.md) APIs.
 
 ```swift
 import MediaAccessibility
@@ -84,40 +89,41 @@ func readVideoBuffer() {
 }
 ```
 
-For more information, see [`Flashing lights`](flashing-lights.md).
+For more information, see [Flashing lights](./flashing-lights.md).
 
 ## Topics
 
 ### Checking compatibility
-- [func canProcessSurface(IOSurfaceRef) -> Bool](maflashinglightsprocessor/canprocesssurface(_:).md)
+- [func canProcessSurface(IOSurfaceRef) -> Bool](./maflashinglightsprocessor/canprocesssurface%28_%29.md)
   Returns a Boolean value that indicates whether the flashing lights processor can process the content in the surface for sequences of flashing lights.
 ### Processing video content
-- [func processSurface(IOSurfaceRef, outSurface: inout IOSurfaceRef, timestamp: CFAbsoluteTime, options: [MAFlashingLightsProcessor.OptionKey : Any]?) -> MAFlashingLightsProcessor.Result](maflashinglightsprocessor/processsurface(_:outsurface:timestamp:options:).md)
+- [func processSurface(IOSurfaceRef, outSurface: inout IOSurfaceRef, timestamp: CFAbsoluteTime, options: [MAFlashingLightsProcessor.OptionKey : Any]?) -> MAFlashingLightsProcessor.Result](./maflashinglightsprocessor/processsurface%28_,outsurface,timestamp,options%29.md)
   Processes a surface by analyzing pixels for sequences of flashing lights and mitigates them by dimming the content.
-- [MAFlashingLightsProcessor.Result](maflashinglightsprocessor/result.md)
+- [MAFlashingLightsProcessor.Result](./maflashinglightsprocessor/result.md)
   An object that reports the result of the flashing lights processor.
-- [MAFlashingLightsProcessor.OptionKey](maflashinglightsprocessor/optionkey.md)
+- [MAFlashingLightsProcessor.OptionKey](./maflashinglightsprocessor/optionkey.md)
   Options for the flashing lights processor.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Responding to changes in the flashing lights setting](responding-to-changes-in-the-flashing-lights-setting.md)
+### Dim flashing lights
+- [Responding to changes in the flashing lights setting](./responding-to-changes-in-the-flashing-lights-setting.md)
   Adjust your UI when a person chooses to dim flashing lights on their Apple device.
-- [func MADimFlashingLightsEnabled() -> Bool](madimflashinglightsenabled().md)
+- [func MADimFlashingLightsEnabled() -> Bool](./madimflashinglightsenabled%28%29.md)
   Returns a Boolean value that indicates whether the flashing lights setting is enabled on the device.
-- [let kMADimFlashingLightsChangedNotification: CFString](kmadimflashinglightschangednotification.md)
+- [let kMADimFlashingLightsChangedNotification: CFString](./kmadimflashinglightschangednotification.md)
   A notification that posts when a person changes the flashing lights setting on the device.
 
 

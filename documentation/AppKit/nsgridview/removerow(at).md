@@ -1,7 +1,8 @@
 # removeRow(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the row from the grid view at the index.
 
@@ -14,13 +15,18 @@ Removes the row from the grid view at the index.
 func removeRow(at index: Int)
 ```
 
+```objc
+- (void) removeRowAtIndex:(NSInteger) index;
+```
+
 ## See Also
 
-- [func addRow(with: [NSView]) -> NSGridRow](nsgridview/addrow(with:).md)
+### Adding, Removing, and Moving Rows
+- [func addRow(with: [NSView]) -> NSGridRow](./addrow%28with%29.md)
   Adds an array of views to a new row.
-- [func insertRow(at: Int, with: [NSView]) -> NSGridRow](nsgridview/insertrow(at:with:).md)
+- [func insertRow(at: Int, with: [NSView]) -> NSGridRow](./insertrow%28at,with%29.md)
   Inserts the array of view objects into the grid view at the index.
-- [func moveRow(at: Int, to: Int)](nsgridview/moverow(at:to:).md)
+- [func moveRow(at: Int, to: Int)](./moverow%28at,to%29.md)
   Moves the specified row to the new row location.
 
 

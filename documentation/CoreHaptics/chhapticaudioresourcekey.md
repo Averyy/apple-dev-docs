@@ -1,7 +1,8 @@
 # CHHapticAudioResourceKey
 
 **Framework**: Core Haptics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias for a key that identifies the playback behavior of an audio resource.
 
@@ -9,7 +10,7 @@ A type alias for a key that identifies the playback behavior of an audio resourc
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -19,11 +20,16 @@ A type alias for a key that identifies the playback behavior of an audio resourc
 typealias CHHapticAudioResourceKey = NSString
 ```
 
+```c
+typedef NSString * CHHapticAudioResourceKey;
+```
+
 ## See Also
 
-- [let CHHapticAudioResourceKeyLoopEnabled: String](chhapticaudioresourcekeyloopenabled.md)
+### Audio Resource Keys
+- [let CHHapticAudioResourceKeyLoopEnabled: String](./chhapticaudioresourcekeyloopenabled.md)
   A key for a Boolean value that indicates whether to loop audio playback.
-- [let CHHapticAudioResourceKeyUseVolumeEnvelope: String](chhapticaudioresourcekeyusevolumeenvelope.md)
+- [let CHHapticAudioResourceKeyUseVolumeEnvelope: String](./chhapticaudioresourcekeyusevolumeenvelope.md)
   A key for a Boolean value that indicates whether audio file playback fades in and out using an envelope.
 
 

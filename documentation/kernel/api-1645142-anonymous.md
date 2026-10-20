@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOFBBitRateHBR](1645142-anonymous/kiofbbitratehbr.md)
-- [kIOFBBitRateHBR2](1645142-anonymous/kiofbbitratehbr2.md)
-- [kIOFBBitRateRBR](1645142-anonymous/kiofbbitraterbr.md)
+- [kIOFBBitRateHBR](./api-1645142-anonymous/kiofbbitratehbr.md)
+- [kIOFBBitRateHBR2](./api-1645142-anonymous/kiofbbitratehbr2.md)
+- [kIOFBBitRateRBR](./api-1645142-anonymous/kiofbbitraterbr.md)
 
 
 ---

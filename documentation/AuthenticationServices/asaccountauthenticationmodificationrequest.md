@@ -1,7 +1,8 @@
 # ASAccountAuthenticationModificationRequest
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to modify an account’s authentication properties.
 
@@ -17,32 +18,37 @@ A request to modify an account’s authentication properties.
 class ASAccountAuthenticationModificationRequest
 ```
 
+```objc
+@interface ASAccountAuthenticationModificationRequest : NSObject
+```
+
 #### Overview
 
-To initiate an account authentication modification request from your app, use either [`ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest`](asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest.md) or [`ASAccountAuthenticationModificationReplacePasswordWithSignInWithAppleRequest`](asaccountauthenticationmodificationreplacepasswordwithsigninwithapplerequest.md).
+To initiate an account authentication modification request from your app, use either [`ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest`](./asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest.md) or [`ASAccountAuthenticationModificationReplacePasswordWithSignInWithAppleRequest`](./asaccountauthenticationmodificationreplacepasswordwithsigninwithapplerequest.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [ASAccountAuthenticationModificationReplacePasswordWithSignInWithAppleRequest](asaccountauthenticationmodificationreplacepasswordwithsigninwithapplerequest.md)
-- [ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest](asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest.md)
+- [ASAccountAuthenticationModificationReplacePasswordWithSignInWithAppleRequest](./asaccountauthenticationmodificationreplacepasswordwithsigninwithapplerequest.md)
+- [ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest](./asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func perform(ASAccountAuthenticationModificationRequest)](asaccountauthenticationmodificationcontroller/perform(_:).md)
+### Initiating Security Upgrades from Your App
+- [func perform(ASAccountAuthenticationModificationRequest)](./asaccountauthenticationmodificationcontroller/perform%28_%29.md)
   Performs a request to upgrade the authentication credentials for an account to a strong password, or to use Sign in with Apple.
-- [class ASAccountAuthenticationModificationReplacePasswordWithSignInWithAppleRequest](asaccountauthenticationmodificationreplacepasswordwithsigninwithapplerequest.md)
+- [class ASAccountAuthenticationModificationReplacePasswordWithSignInWithAppleRequest](./asaccountauthenticationmodificationreplacepasswordwithsigninwithapplerequest.md)
   A request to upgrade from using a password to using Sign in with Apple.
-- [class ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest](asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest.md)
+- [class ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest](./asaccountauthenticationmodificationupgradepasswordtostrongpasswordrequest.md)
   A request to automatically upgrade from a weak password to a strong password.
 
 

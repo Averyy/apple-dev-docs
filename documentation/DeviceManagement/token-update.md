@@ -1,7 +1,8 @@
 # Token Update
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Updates the token for a device on the server.
 
@@ -16,7 +17,7 @@ Updates the token for a device on the server.
 
 #### Discussion
 
-The device sends an initial `TokenUpdate` message to the server when it installs the MDM payload. The server needs to send push messages to the device only after receiving the first `TokenUpdate` message. If the device reports that it is `AwaitingConfiguration`, the MDM server needs to send a [`Device Configured`](device-configured-command.md) MDM command before the device allows the user to proceed in Setup Assistant. This gives the MDM server the opportunity to perform some setup using MDM commands.
+The device sends an initial `TokenUpdate` message to the server when it installs the MDM payload. The server needs to send push messages to the device only after receiving the first `TokenUpdate` message. If the device reports that it is `AwaitingConfiguration`, the MDM server needs to send a [`Device Configured`](./device-configured-command.md) MDM command before the device allows the user to proceed in Setup Assistant. This gives the MDM server the opportunity to perform some setup using MDM commands.
 
 In addition to sending the initial `TokenUpdate` message, the device may send additional `TokenUpdate` messages to the check-in server at any time while it has a valid MDM enrollment.
 
@@ -28,7 +29,7 @@ Although a device can send the `TokenUpdate` message multiple times, it might se
 
 > **Note**:  The topic string for the MDM check-in protocol needs to start with `com.apple.mgmt.\*` where `\*` is a unique suffix.
 
-##### Check in Availability
+##### Check-in availability
 
 |  |  |
 | --- | --- |
@@ -40,7 +41,7 @@ Although a device can send the `TokenUpdate` message multiple times, it might se
 ## Topics
 
 ### Requests
-- [object TokenUpdateRequest](tokenupdaterequest.md)
+- [object TokenUpdateRequest](./tokenupdaterequest.md)
   The token update request details.
 
 ## Endpoint
@@ -49,23 +50,31 @@ Although a device can send the `TokenUpdate` message multiple times, it might se
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm-checkin`  
+**Type**: `TokenUpdateRequest`
+
 The request object the system sends for the `TokenUpdate` request.
+
+## Responses
+
+- `200` OK
 
 ## See Also
 
-- [Authenticate](authenticate.md)
+### Commands
+- [Authenticate](./authenticate.md)
   Authenticates a user during MDM payload installation.
-- [User Authenticate](user-authenticate.md)
+- [User Authenticate](./user-authenticate.md)
   Authenticates a user with a two-step authentication protocol.
-- [Check Out](check-out.md)
+- [Check Out](./check-out.md)
   Responds to the removal of the MDM enrollment profile from a device.
-- [Get Token](get-token.md)
+- [Get Token](./get-token.md)
   Gets a token from the server.
-- [Get Bootstrap Token](get-bootstrap-token.md)
+- [Get Bootstrap Token](./get-bootstrap-token.md)
   Gets the bootstrap token from the server.
-- [Set Bootstrap Token](set-bootstrap-token.md)
+- [Set Bootstrap Token](./set-bootstrap-token.md)
   Sends the bootstrap token to the server.
-- [Return To Service](return-to-service.md)
+- [Return To Service](./return-to-service.md)
   Gets the return-to-service configuration from the server.
 
 

@@ -1,15 +1,20 @@
 # nonRelRev
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var nonRelRev: UInt8
+```
+
+```c
+UInt8 nonRelRev;
 ```
 
 

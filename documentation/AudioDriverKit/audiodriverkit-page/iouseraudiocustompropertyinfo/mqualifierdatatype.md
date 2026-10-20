@@ -1,7 +1,8 @@
 # mQualifierDataType
 
 **Framework**: AudioDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data type of the of the custom property’s qualifier data.
 
@@ -10,15 +11,16 @@ The data type of the of the custom property’s qualifier data.
 
 ## Declaration
 
-```swift
+```c
 IOUserAudioCustomPropertyDataType mQualifierDataType;
 ```
 
 ## See Also
 
-- [mSelector](audiodriverkit/iouseraudiocustompropertyinfo/mselector.md)
+### Property Metadata
+- [mSelector](./mselector.md)
   The property selector of the custom property.
-- [mPropertyDataType](audiodriverkit/iouseraudiocustompropertyinfo/mpropertydatatype.md)
+- [mPropertyDataType](./mpropertydatatype.md)
   The data type of the of the custom property’s data.
 
 

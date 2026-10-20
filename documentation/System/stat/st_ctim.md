@@ -1,7 +1,8 @@
 # st_ctim
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Time of last status (inode) change, given as a C `timespec` since the Epoch.
 

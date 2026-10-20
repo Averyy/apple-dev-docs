@@ -1,7 +1,8 @@
 # JSONSerialization.ReadingOptions
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options used when creating Foundation objects from JSON data.
 
@@ -20,46 +21,51 @@ Options used when creating Foundation objects from JSON data.
 struct ReadingOptions
 ```
 
+```c
+enum NSJSONReadingOptions : NSUInteger;
+```
+
 #### Overview
 
-Use these options when parsing JSON with [`jsonObject(with:options:)`](jsonserialization/jsonobject(with:options:)-8demi.md) and [`jsonObject(with:options:)`](jsonserialization/jsonobject(with:options:)-3afap.md).
+Use these options when parsing JSON with [`jsonObject(with:options:)`](./jsonobject%28with,options%29-8demi.md) and [`jsonObject(with:options:)`](./jsonobject%28with,options%29-3afap.md).
 
 ## Topics
 
 ### Creating a Reading Options Instance
-- [init(rawValue: UInt)](jsonserialization/readingoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./readingoptions/init%28rawvalue%29.md)
   Creates a set of JSON formatting options from an integer that represents those options.
 ### Reading Options
-- [static var mutableContainers: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/mutablecontainers.md)
+- [static var mutableContainers: JSONSerialization.ReadingOptions](./readingoptions/mutablecontainers.md)
   Specifies that arrays and dictionaries in the returned object are mutable.
-- [static var mutableLeaves: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/mutableleaves.md)
+- [static var mutableLeaves: JSONSerialization.ReadingOptions](./readingoptions/mutableleaves.md)
   Specifies that leaf strings in the JSON object graph are mutable.
-- [static var fragmentsAllowed: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/fragmentsallowed.md)
+- [static var fragmentsAllowed: JSONSerialization.ReadingOptions](./readingoptions/fragmentsallowed.md)
   Specifies that the parser allows top-level objects that aren’t arrays or dictionaries.
-- [static var json5Allowed: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/json5allowed.md)
+- [static var json5Allowed: JSONSerialization.ReadingOptions](./readingoptions/json5allowed.md)
   Specifies that reading serialized JSON data supports the JSON5 syntax.
-- [static var topLevelDictionaryAssumed: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/topleveldictionaryassumed.md)
+- [static var topLevelDictionaryAssumed: JSONSerialization.ReadingOptions](./readingoptions/topleveldictionaryassumed.md)
   Specifies that the parser assumes the top level of the JSON data is a dictionary, even if it doesn’t begin and end with curly braces.
-- [static var allowFragments: JSONSerialization.ReadingOptions](jsonserialization/readingoptions/allowfragments.md)
+- [static var allowFragments: JSONSerialization.ReadingOptions](./readingoptions/allowfragments.md)
   A deprecated option that specifies that the parser should allow top-level objects that aren’t arrays or dictionaries.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [class func jsonObject(with: Data, options: JSONSerialization.ReadingOptions) throws -> Any](jsonserialization/jsonobject(with:options:)-8demi.md)
+### Creating a JSON Object
+- [class func jsonObject(with: Data, options: JSONSerialization.ReadingOptions) throws -> Any](./jsonobject%28with,options%29-8demi.md)
   Returns a Foundation object from given JSON data.
-- [class func jsonObject(with: InputStream, options: JSONSerialization.ReadingOptions) throws -> Any](jsonserialization/jsonobject(with:options:)-3afap.md)
+- [class func jsonObject(with: InputStream, options: JSONSerialization.ReadingOptions) throws -> Any](./jsonobject%28with,options%29-3afap.md)
   Returns a Foundation object from JSON data in a given stream.
 
 

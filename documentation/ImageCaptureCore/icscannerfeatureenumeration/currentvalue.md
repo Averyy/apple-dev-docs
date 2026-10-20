@@ -1,7 +1,8 @@
 # currentValue
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 unowned(unsafe) var currentValue: AnyObject { get set }
+```
+
+```objc
+@property (assign) id currentValue;
 ```
 
 

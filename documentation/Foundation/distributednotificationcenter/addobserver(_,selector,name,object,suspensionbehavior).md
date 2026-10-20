@@ -1,7 +1,8 @@
 # addObserver(_:selector:name:object:suspensionBehavior:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an entry to the receiver’s dispatch table with a specific observer and suspended-notifications behavior, and optional notification name and sender.
 
@@ -15,9 +16,13 @@ Adds an entry to the receiver’s dispatch table with a specific observer and su
 func addObserver(_ observer: Any, selector: Selector, name: NSNotification.Name?, object: String?, suspensionBehavior: DistributedNotificationCenter.SuspensionBehavior)
 ```
 
+```objc
+- (void) addObserver:(id) observer selector:(SEL) selector name:(NSNotificationName) name object:(NSString *) object suspensionBehavior:(NSNotificationSuspensionBehavior) suspensionBehavior;
+```
+
 #### Discussion
 
-The receiver does not retain `notificationObserver`. Therefore, you should always send `NotificationCenter/removeObserver(_:)` or [`removeObserver(_:name:object:)`](distributednotificationcenter/removeobserver(_:name:object:).md) to the receiver before releasing `notificationObserver`.
+The receiver does not retain `notificationObserver`. Therefore, you should always send `NotificationCenter/removeObserver(_:)` or [`removeObserver(_:name:object:)`](./removeobserver%28_,name,object%29.md) to the receiver before releasing `notificationObserver`.
 
 ## Parameters
 
@@ -29,11 +34,13 @@ The receiver does not retain `notificationObserver`. Therefore, you should alway
 
 ## See Also
 
-- [func postNotificationName(NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]?, deliverImmediately: Bool)](distributednotificationcenter/postnotificationname(_:object:userinfo:deliverimmediately:).md)
+### Related Documentation
+- [func postNotificationName(NSNotification.Name, object: String?, userInfo: [AnyHashable : Any]?, deliverImmediately: Bool)](./postnotificationname%28_,object,userinfo,deliverimmediately%29.md)
   Creates a notification with information and an immediate-delivery specifier, and posts it to the receiver.
-- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: String?)](distributednotificationcenter/addobserver(_:selector:name:object:).md)
+### Managing Observers
+- [func addObserver(Any, selector: Selector, name: NSNotification.Name?, object: String?)](./addobserver%28_,selector,name,object%29.md)
   Adds an entry to the notification center’s dispatch table with an observer, a selector, and an optional notification name and sender.
-- [func removeObserver(Any, name: NSNotification.Name?, object: String?)](distributednotificationcenter/removeobserver(_:name:object:).md)
+- [func removeObserver(Any, name: NSNotification.Name?, object: String?)](./removeobserver%28_,name,object%29.md)
   Removes matching entries from the receiver’s dispatch table.
 
 

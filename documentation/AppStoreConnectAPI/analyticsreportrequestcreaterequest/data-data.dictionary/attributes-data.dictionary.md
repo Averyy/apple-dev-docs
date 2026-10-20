@@ -1,7 +1,8 @@
 # AnalyticsReportRequestCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an analytics report create request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an analytics report create request resource.
 
 ## Declaration
 
-```swift
+```
 object AnalyticsReportRequestCreateRequest.Data.Attributes
 ```
 
@@ -18,9 +19,12 @@ object AnalyticsReportRequestCreateRequest.Data.Attributes
 
 - `accessType` (string) *(required)*: The `accessType` `ONGOING` provides current data and is the most typical. It generates reports daily, weekly and monthly. Use `ONE_TIME_SNAPSHOT` to get historical data.
 
+  **Allowed Values**: `ONE_TIME_SNAPSHOT`, `ONGOING`
+
 ## See Also
 
-- [object AnalyticsReportRequestCreateRequest.Data.Relationships](analyticsreportrequestcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AnalyticsReportRequestCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

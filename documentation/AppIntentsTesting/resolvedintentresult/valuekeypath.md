@@ -1,7 +1,8 @@
 # ResolvedIntentResult.ValueKeyPath
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that enables key-path syntax for the intent result.
 
@@ -27,7 +28,7 @@ You normally don’t use this type directly, instead you use it indirectly when 
 ## Topics
 
 ### Instance Properties
-- [let value: Never](resolvedintentresult/valuekeypath/value.md)
+- [let value: Never](./valuekeypath/value.md)
 
 
 ---

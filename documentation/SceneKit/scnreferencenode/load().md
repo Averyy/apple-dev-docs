@@ -1,18 +1,19 @@
 # load()
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads content into the node from its referenced external scene file.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,21 +21,26 @@ Loads content into the node from its referenced external scene file.
 func load()
 ```
 
+```objc
+- (void) load;
+```
+
 #### Discussion
 
 When SceneKit loads the referenced scene file, all children of the scene file’s root node become children of the reference node.
 
-If the node has already been loaded (either automatically, according to the [`loadingPolicy`](scnreferencenode/loadingpolicy.md) property, or through a previous call to this method), calling this method has no effect.
+If the node has already been loaded (either automatically, according to the [`loadingPolicy`](./loadingpolicy.md) property, or through a previous call to this method), calling this method has no effect.
 
 ## See Also
 
-- [var referenceURL: URL](scnreferencenode/referenceurl.md)
+### Loading and Unloading a Reference Node’s Content
+- [var referenceURL: URL](./referenceurl.md)
   The URL to a scene file from which to load content for the reference node.
-- [var loadingPolicy: SCNReferenceLoadingPolicy](scnreferencenode/loadingpolicy.md)
+- [var loadingPolicy: SCNReferenceLoadingPolicy](./loadingpolicy.md)
   An option for whether to load the node’s content automatically.
-- [var isLoaded: Bool](scnreferencenode/isloaded.md)
+- [var isLoaded: Bool](./isloaded.md)
   A Boolean value that indicates whether the reference node has already loaded its content.
-- [func unload()](scnreferencenode/unload.md)
+- [func unload()](./unload%28%29.md)
   Removes the node’s children and marks the node as not loaded.
 
 

@@ -1,7 +1,8 @@
 # appearanceAnimation
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A CSS animation that runs when the annotation appears on the map.
 
@@ -10,13 +11,13 @@ A CSS animation that runs when the annotation appears on the map.
 
 ## Declaration
 
-```swift
+```
 get appearanceAnimation(): string;
 ```
 
 #### Discussion
 
-This property isn’t supported for [`PlaceAnnotation`](placeannotation.md).
+This property isn’t supported for [`PlaceAnnotation`](../placeannotation.md).
 
 
 ---

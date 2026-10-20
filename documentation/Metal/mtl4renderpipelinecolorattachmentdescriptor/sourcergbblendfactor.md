@@ -1,7 +1,8 @@
 # sourceRGBBlendFactor
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Configures the source RGB blend factor.
 
@@ -19,9 +20,13 @@ Configures the source RGB blend factor.
 var sourceRGBBlendFactor: MTLBlendFactor { get set }
 ```
 
+```objc
+@property (nonatomic) MTLBlendFactor sourceRGBBlendFactor;
+```
+
 #### Discussion
 
-This property defaults to [`MTLBlendFactor.one`](mtlblendfactor/one.md).
+This property defaults to [`MTLBlendFactor.one`](../mtlblendfactor/one.md).
 
 
 ---

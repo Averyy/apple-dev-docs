@@ -1,7 +1,8 @@
 # systemProtectionDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification posted when the system-protection attributes of a scene change.
 
@@ -17,15 +18,20 @@ nonisolated
 class let systemProtectionDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UISceneSystemProtectionDidChangeNotification;
+```
+
 #### Discussion
 
 The object of the notification is the scene for which protection attributes changed.
 
 ## See Also
 
-- [var systemProtectionManager: UIScene.SystemProtectionManager?](uiscene/systemprotectionmanager-swift.property.md)
+### Working with system protection manager
+- [var systemProtectionManager: UIScene.SystemProtectionManager?](./systemprotectionmanager-swift.property.md)
   The system protection manager associated with this scene.
-- [UIScene.SystemProtectionManager](uiscene/systemprotectionmanager-swift.class.md)
+- [UIScene.SystemProtectionManager](./systemprotectionmanager-swift.class.md)
   A class that represents the status of system protection for the scene.
 
 

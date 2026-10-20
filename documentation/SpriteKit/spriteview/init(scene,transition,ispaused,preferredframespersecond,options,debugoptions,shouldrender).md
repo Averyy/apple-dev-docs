@@ -1,7 +1,8 @@
 # init(scene:transition:isPaused:preferredFramesPerSecond:options:debugOptions:shouldRender:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 15.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,10 +21,11 @@ nonisolated init(scene: SKScene, transition: SKTransition? = nil, isPaused: Bool
 
 ## See Also
 
-- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int)](spriteview/init(scene:transition:ispaused:preferredframespersecond:).md)
-- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int, options: SpriteView.Options, shouldRender: (TimeInterval) -> Bool)](spriteview/init(scene:transition:ispaused:preferredframespersecond:options:shouldrender:).md)
-- [SpriteView.Options](spriteview/options.md)
-- [SpriteView.DebugOptions](spriteview/debugoptions.md)
+### Creating a Sprite View
+- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int)](./init%28scene,transition,ispaused,preferredframespersecond%29.md)
+- [init(scene: SKScene, transition: SKTransition?, isPaused: Bool, preferredFramesPerSecond: Int, options: SpriteView.Options, shouldRender: (TimeInterval) -> Bool)](./init%28scene,transition,ispaused,preferredframespersecond,options,shouldrender%29.md)
+- [SpriteView.Options](./options.md)
+- [SpriteView.DebugOptions](./debugoptions.md)
 
 
 ---

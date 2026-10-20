@@ -1,7 +1,8 @@
 # tonic
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root note of the musical key.
 
@@ -22,7 +23,8 @@ let tonic: KeyResult.Tonic
 
 ## See Also
 
-- [KeyResult.KeySignature](keyresult/keysignature.md)
+### Getting the notes of a key
+- [KeyResult.KeySignature](../keysignature.md)
   The set of sharp and flat symbols for the notes.
 
 

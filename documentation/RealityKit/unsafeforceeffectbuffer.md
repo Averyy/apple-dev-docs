@@ -1,7 +1,8 @@
 # UnsafeForceEffectBuffer
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Provides access to physics body parameters from the effect’s update function or event handler.
 
@@ -26,34 +27,35 @@ This struct is a transient buffer view of underlying data, and is only available
 ## Topics
 
 ### Structures
-- [UnsafeForceEffectBuffer.Iterator](unsafeforceeffectbuffer/iterator.md)
+- [UnsafeForceEffectBuffer.Iterator](./unsafeforceeffectbuffer/iterator.md)
   Iterates over all elements of the `UnsafeForceEffectBuffer`.
 ### Instance Properties
-- [var count: Int](unsafeforceeffectbuffer/count.md)
+- [var count: Int](./unsafeforceeffectbuffer/count.md)
   Returns the number of elements in the buffer.
 ### Instance Methods
-- [func makeIterator() -> UnsafeForceEffectBuffer<T>.Iterator](unsafeforceeffectbuffer/makeiterator.md)
+- [func makeIterator() -> UnsafeForceEffectBuffer<T>.Iterator](./unsafeforceeffectbuffer/makeiterator%28%29.md)
   Returns an iterator for the sequence.
 ### Subscripts
-- [subscript(Int) -> T](unsafeforceeffectbuffer/subscript(_:).md)
+- [subscript(Int) -> T](./unsafeforceeffectbuffer/subscript%28_%29.md)
   Returns an element by index.
 
 ## Relationships
 
 ### Conforms To
-- [Sequence](../swift/sequence.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [func update(parameters: inout ForceEffectParameters)](forceeffectprotocol/update(parameters:).md)
+### Updating effects
+- [func update(parameters: inout ForceEffectParameters)](./forceeffectprotocol/update%28parameters%29.md)
   Defines how the custom force effect computes forces at each physics simulation step.
-- [static func register(((inout ForceEffectEvent<Self>) -> Void)?)](forceeffectprotocol/register(_:)-1zt9t.md)
+- [static func register(((inout ForceEffectEvent<Self>) -> Void)?)](./forceeffectprotocol/register%28_%29-1zt9t.md)
   Registers the custom effect.
-- [struct PhysicsBodyParameterTypes](physicsbodyparametertypes.md)
+- [struct PhysicsBodyParameterTypes](./physicsbodyparametertypes.md)
   Defines which rigid body inputs are required by a force effect’s update handler.
-- [struct ForceEffectParameters](forceeffectparameters.md)
+- [struct ForceEffectParameters](./forceeffectparameters.md)
   The force effect input data to the effect’s update handler or closure.
-- [struct ForceEffectEvent](forceeffectevent.md)
+- [struct ForceEffectEvent](./forceeffectevent.md)
   A struct that defines the arguments to the custom force effect update closure.
 
 

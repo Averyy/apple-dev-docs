@@ -1,9 +1,10 @@
 # inkType
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The type of ink, such as pen or pencil, as defined in the [`PKInkType`](pkinktype.md) enumeration.
+The type of ink, such as pen or pencil, as defined in the [`PKInkType`](../pkinktype.md) enumeration.
 
 **Availability**:
 - iOS 14.0+
@@ -18,9 +19,14 @@ The type of ink, such as pen or pencil, as defined in the [`PKInkType`](pkinktyp
 var inkType: __PKInkType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) PKInkType inkType;
+```
+
 ## See Also
 
-- [var color: UIColor](pkinkreference/color.md)
+### Getting the ink attributes
+- [var color: UIColor](./color.md)
   The base color for this ink.
 
 

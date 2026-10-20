@@ -1,7 +1,8 @@
 # maximumImageSize
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum size of an image, in bytes, allowed for a sent group message.
 
@@ -16,7 +17,7 @@ var maximumImageSize: Measurement<UnitInformationStorage>?
 
 #### Discussion
 
-When this value isn’t set, the system uses the value of [`maximumMessageSize`](mmsservice/configuration/maximummessagesize.md) instead.
+When this value isn’t set, the system uses the value of [`maximumMessageSize`](./maximummessagesize.md) instead.
 
 
 ---

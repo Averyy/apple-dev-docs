@@ -1,13 +1,14 @@
 # CGDisplayChangeSummaryFlags
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The configuration parameters that are passed to a display reconfiguration callback function.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,80 +16,85 @@ The configuration parameters that are passed to a display reconfiguration callba
 struct CGDisplayChangeSummaryFlags
 ```
 
+```c
+enum CGDisplayChangeSummaryFlags : uint32_t;
+```
+
 #### Overview
 
-For information about how these constants are used, see the callback [`CGDisplayReconfigurationCallBack`](cgdisplayreconfigurationcallback.md).
+For information about how these constants are used, see the callback [`CGDisplayReconfigurationCallBack`](./cgdisplayreconfigurationcallback.md).
 
 ## Topics
 
 ### Constants
-- [static var beginConfigurationFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/beginconfigurationflag.md)
+- [static var beginConfigurationFlag: CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags/beginconfigurationflag.md)
   The display configuration is about to change.
-- [static var movedFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/movedflag.md)
+- [static var movedFlag: CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags/movedflag.md)
   The location of the upper-left corner of the display in the global display coordinate space has changed.
-- [static var setMainFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/setmainflag.md)
+- [static var setMainFlag: CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags/setmainflag.md)
   The display is now the main display.
-- [static var setModeFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/setmodeflag.md)
+- [static var setModeFlag: CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags/setmodeflag.md)
   The display mode has changed.
-- [static var addFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/addflag.md)
+- [static var addFlag: CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags/addflag.md)
   The display has been added to the active display list.
-- [static var removeFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/removeflag.md)
+- [static var removeFlag: CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags/removeflag.md)
   The display has been removed from the active display list.
-- [static var enabledFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/enabledflag.md)
+- [static var enabledFlag: CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags/enabledflag.md)
   The display has been enabled.
-- [static var disabledFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/disabledflag.md)
+- [static var disabledFlag: CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags/disabledflag.md)
   The display has been disabled.
-- [static var mirrorFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/mirrorflag.md)
+- [static var mirrorFlag: CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags/mirrorflag.md)
   The display is now mirroring another display.
-- [static var unMirrorFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/unmirrorflag.md)
+- [static var unMirrorFlag: CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags/unmirrorflag.md)
   The display is no longer mirroring another display.
-- [static var desktopShapeChangedFlag: CGDisplayChangeSummaryFlags](cgdisplaychangesummaryflags/desktopshapechangedflag.md)
+- [static var desktopShapeChangedFlag: CGDisplayChangeSummaryFlags](./cgdisplaychangesummaryflags/desktopshapechangedflag.md)
 ### Initializers
-- [init(rawValue: UInt32)](cgdisplaychangesummaryflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./cgdisplaychangesummaryflags/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct CGCaptureOptions](cgcaptureoptions.md)
+### Enumerations
+- [struct CGCaptureOptions](./cgcaptureoptions.md)
   Configuration parameters that are used when capturing displays.
-- [enum CGColorConversionInfoTransformType](cgcolorconversioninfotransformtype.md)
+- [enum CGColorConversionInfoTransformType](./cgcolorconversioninfotransformtype.md)
   Constants describing how a color conversion uses color spaces.
-- [enum CGColorRenderingIntent](cgcolorrenderingintent.md)
+- [enum CGColorRenderingIntent](./cgcolorrenderingintent.md)
   Handling options for colors that are not located within the destination color space of a graphics context.
-- [struct CGConfigureOption](cgconfigureoption.md)
+- [struct CGConfigureOption](./cgconfigureoption.md)
   The scope of the changes in a display configuration transaction.
-- [enum CGDisplayStreamFrameStatus](cgdisplaystreamframestatus.md)
+- [enum CGDisplayStreamFrameStatus](./cgdisplaystreamframestatus.md)
   Describes a frame update event.
-- [enum CGDisplayStreamUpdateRectType](cgdisplaystreamupdaterecttype.md)
+- [enum CGDisplayStreamUpdateRectType](./cgdisplaystreamupdaterecttype.md)
   Use these constants to determine which rectangles your app is interested in.
-- [enum CGError](cgerror.md)
+- [enum CGError](./cgerror.md)
   A uniform type for result codes returned by functions in Core Graphics.
-- [enum CGEventField](cgeventfield.md)
+- [enum CGEventField](./cgeventfield.md)
   Constants used as keys to access specialized fields in low-level events.
-- [struct CGEventFilterMask](cgeventfiltermask.md)
+- [struct CGEventFilterMask](./cgeventfiltermask.md)
   Specify masks for classes of low-level events that can be filtered during event suppression states.
-- [struct CGEventFlags](cgeventflags.md)
+- [struct CGEventFlags](./cgeventflags.md)
   Constants that indicate the modifier key state at the time an event is created, as well as other event-related states.
-- [enum CGEventMouseSubtype](cgeventmousesubtype.md)
-  Constants used with the [`CGEventField.mouseEventSubtype`](cgeventfield/mouseeventsubtype.md) event field.
-- [enum CGEventSourceStateID](cgeventsourcestateid.md)
+- [enum CGEventMouseSubtype](./cgeventmousesubtype.md)
+  Constants used with the [`CGEventField.mouseEventSubtype`](./cgeventfield/mouseeventsubtype.md) event field.
+- [enum CGEventSourceStateID](./cgeventsourcestateid.md)
   Constants that specify the possible source states of an event source.
-- [enum CGEventSuppressionState](cgeventsuppressionstate.md)
+- [enum CGEventSuppressionState](./cgeventsuppressionstate.md)
   Specify the event suppression states that can occur after posting an event.
-- [enum CGEventTapLocation](cgeventtaplocation.md)
+- [enum CGEventTapLocation](./cgeventtaplocation.md)
   Constants that specify possible tapping points for events.
-- [enum CGEventTapOptions](cgeventtapoptions.md)
+- [enum CGEventTapOptions](./cgeventtapoptions.md)
   Constants that specify whether a new event tap is an active filter or a passive listener.
 
 

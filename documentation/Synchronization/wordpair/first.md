@@ -1,7 +1,8 @@
 # first
 
 **Framework**: Synchronization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first element in this word pair.
 

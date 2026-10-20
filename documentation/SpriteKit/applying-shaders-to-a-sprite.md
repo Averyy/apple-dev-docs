@@ -1,12 +1,13 @@
 # Applying Shaders to a Sprite
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Write custom GLSL code that modifies the look of your sprite.
 
 #### Overview
 
-You can use the [`shader`](skspritenode/shader.md) property of a sprite node to change the appearance of a texture with a custom OpenGL ES fragment shader embedded within a [`SKShader`](skshader.md) object. Custom shaders offer almost limitless possibilities, from adding blurs and color treatments to textures to generating imagery such as random noise.
+You can use the [`shader`](./skspritenode/shader.md) property of a sprite node to change the appearance of a texture with a custom OpenGL ES fragment shader embedded within a [`SKShader`](./skshader.md) object. Custom shaders offer almost limitless possibilities, from adding blurs and color treatments to textures to generating imagery such as random noise.
 
 The following code shows a small custom shader which inverts the color of a texture while leaving the alpha or transparency unaffected:
 
@@ -30,17 +31,18 @@ void main() {
 
 The following figure illustrates the effect of the shader. The original image, on the left, has its colors inverted by the shader:
 
-![Example of a color inverted sprite](/images/com.apple.spritekit/media-2983067@2x.png)
+![Example of a color inverted sprite](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-2983067@2x.png)
 
 ## See Also
 
-- [var shader: SKShader?](skspritenode/shader.md)
+### Adding a Custom Shader to a Sprite
+- [var shader: SKShader?](./skspritenode/shader.md)
   A text file that defines code that does custom per-pixel drawing or colorization.
-- [var attributeValues: [String : SKAttributeValue]](skspritenode/attributevalues.md)
+- [var attributeValues: [String : SKAttributeValue]](./skspritenode/attributevalues.md)
   The values of each attribute associated with the node’s attached shader.
-- [func setValue(SKAttributeValue, forAttribute: String)](skspritenode/setvalue(_:forattribute:).md)
+- [func setValue(SKAttributeValue, forAttribute: String)](./skspritenode/setvalue%28_,forattribute%29.md)
   Sets an attribute value for an attached shader.
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](skspritenode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./skspritenode/value%28forattributenamed%29.md)
   Sets the value of a shader attribute.
 
 

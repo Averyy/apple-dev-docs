@@ -1,7 +1,8 @@
 # prefix(while:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a sequence containing the initial, consecutive elements that satisfy the given predicate.
 
@@ -36,7 +37,7 @@ let positivePrefix = numbers.prefix(while: { $0 > 0 })
 
 If `predicate` matches every element in the sequence, the resulting sequence contains every element of the sequence.
 
-> **Note**: O(*k*), where *k* is the length of the result.
+> **Complexity**: O(*k*), where *k* is the length of the result.
 
 ## Parameters
 
@@ -44,9 +45,10 @@ If `predicate` matches every element in the sequence, the resulting sequence con
 
 ## See Also
 
-- [func prefix(Int) -> PrefixSequence<Self>](sequence/prefix(_:).md)
+### Selecting Elements
+- [func prefix(Int) -> PrefixSequence<Self>](./prefix%28_%29.md)
   Returns a sequence, up to the specified maximum length, containing the initial elements of the sequence.
-- [func suffix(Int) -> [Self.Element]](sequence/suffix(_:).md)
+- [func suffix(Int) -> [Self.Element]](./suffix%28_%29.md)
   Returns a subsequence, up to the given maximum length, containing the final elements of the sequence.
 
 

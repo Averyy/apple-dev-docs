@@ -1,7 +1,8 @@
 # kill
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The code wants to be terminated if it ever loses its validity.
 
@@ -13,6 +14,10 @@ The code wants to be terminated if it ever loses its validity.
 
 ```swift
 static var kill: SecCodeStatus { get }
+```
+
+```c
+kSecCodeStatusKill
 ```
 
 #### Discussion

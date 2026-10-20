@@ -1,7 +1,8 @@
 # kAXZoomButtonSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A zoom button (that is, the green button in a window’s title bar that adjusts the window’s size).
 
@@ -12,6 +13,10 @@ A zoom button (that is, the green button in a window’s title bar that adjusts 
 
 ```swift
 var kAXZoomButtonSubrole: String { get }
+```
+
+```c
+#define kAXZoomButtonSubrole
 ```
 
 

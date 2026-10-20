@@ -1,7 +1,8 @@
 # player
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player object to perform routing operations for.
 
@@ -12,6 +13,10 @@ The player object to perform routing operations for.
 
 ```swift
 var player: AVPlayer? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) AVPlayer * player;
 ```
 
 

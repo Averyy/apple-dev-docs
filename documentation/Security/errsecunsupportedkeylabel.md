@@ -1,7 +1,8 @@
 # errSecUnsupportedKeyLabel
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key label is not supported.
 
@@ -18,6 +19,10 @@ The key label is not supported.
 
 ```swift
 var errSecUnsupportedKeyLabel: OSStatus { get }
+```
+
+```c
+errSecUnsupportedKeyLabel
 ```
 
 

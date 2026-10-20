@@ -1,16 +1,21 @@
 # plugin_type
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var plugin_type: es_sudo_plugin_type_t
+```
+
+```c
+es_sudo_plugin_type_t plugin_type;
 ```
 
 

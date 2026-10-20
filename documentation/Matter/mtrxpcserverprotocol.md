@@ -1,7 +1,8 @@
 # MTRXPCServerProtocol
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 18.3+
@@ -18,17 +19,21 @@
 protocol MTRXPCServerProtocol : MTRXPCServerProtocol_MTRDevice, MTRXPCServerProtocol_MTRDeviceController
 ```
 
+```objc
+@protocol MTRXPCServerProtocol <NSObject, MTRXPCServerProtocol_MTRDevice, MTRXPCServerProtocol_MTRDeviceController>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func deviceController(UUID, checkInWithContext: [AnyHashable : Any])](mtrxpcserverprotocol/devicecontroller(_:checkinwithcontext:).md)
+- [func deviceController(UUID, checkInWithContext: [AnyHashable : Any])](./mtrxpcserverprotocol/devicecontroller%28_,checkinwithcontext%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRXPCServerProtocol_MTRDevice](mtrxpcserverprotocol_mtrdevice.md)
-- [MTRXPCServerProtocol_MTRDeviceController](mtrxpcserverprotocol_mtrdevicecontroller.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [MTRXPCServerProtocol_MTRDevice](./mtrxpcserverprotocol_mtrdevice.md)
+- [MTRXPCServerProtocol_MTRDeviceController](./mtrxpcserverprotocol_mtrdevicecontroller.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # Publishing remote media sessions
 
-**Framework**: Now Playing
+**Framework**: Now Playing  
+**Role**: Article
 
 Show media from an external device on the Lock Screen and Control Center.
 
@@ -8,13 +9,13 @@ Show media from an external device on the Lock Screen and Control Center.
 
 A remote session represents media playback happening on an external device such as a speaker, streaming stick, or smart TV. When you publish a remote session, the framework makes the external device’s playback available for display on the Lock Screen and Control Center. Your app extension handles any commands the system routes back to the device.
 
-Remote sessions use an app extension architecture. An app extension conforming to [`RemoteMediaSessionExtension`](remotemediasessionextension.md) provides the session content and handles commands.
+Remote sessions use an app extension architecture. An app extension conforming to [`RemoteMediaSessionExtension`](./remotemediasessionextension.md) provides the session content and handles commands.
 
-Send push notifications from your server to start and update remote sessions, so the framework makes remote playback available for display even when your app isn’t running. In your main app, use [`RemoteMediaSession`](remotemediasession.md) to start, fetch, and update sessions.
+Send push notifications from your server to start and update remote sessions, so the framework makes remote playback available for display even when your app isn’t running. In your main app, use [`RemoteMediaSession`](./remotemediasession.md) to start, fetch, and update sessions.
 
-#### Define Session Attributes
+#### Define session attributes
 
-Create a [`Codable`](https://developer.apple.com/documentation/swift/codable) type that captures the playback state of the external device. Your app and extension share this type to communicate session state. Conform to [`RemoteMediaSessionAttributes`](remotemediasessionattributes.md) and include only the fields your app needs to represent the external device’s playback.
+Create a [`Codable`](../Swift/codable.md) type that captures the playback state of the external device. Your app and extension share this type to communicate session state. Conform to [`RemoteMediaSessionAttributes`](./remotemediasessionattributes.md) and include only the fields your app needs to represent the external device’s playback.
 
 ```swift
 struct MySessionAttributes: RemoteMediaSessionAttributes {
@@ -29,7 +30,7 @@ struct MySessionAttributes: RemoteMediaSessionAttributes {
 }
 ```
 
-#### Declare the Extension
+#### Declare the extension
 
 Add an app extension target to your project. In the extension’s Info pane in Xcode, add an `EXAppExtensionAttributes` dictionary with an `EXExtensionPointIdentifier` of `com.apple.nowplaying.remote-media`. Xcode writes the following entries to the extension’s `Info.plist` file:
 
@@ -41,9 +42,9 @@ Add an app extension target to your project. In the extension’s Info pane in X
 </dict>
 ```
 
-#### Create the App Extension
+#### Create the app extension
 
-Define a type that conforms to [`RemoteMediaSessionExtension`](remotemediasessionextension.md) and annotate it with `@main`. The system calls [`session(_:)`](remotemediasessionextension/session(_:).md) when it needs your extension to produce a session for a given set of attributes. From the [`configuration`](https://developer.apple.com/documentation/extensionfoundation/appextension/configuration-swift.property) property, return a [`RemoteMediaSessionExtensionConfiguration`](remotemediasessionextensionconfiguration.md) initialized with your extension instance.
+Define a type that conforms to [`RemoteMediaSessionExtension`](./remotemediasessionextension.md) and annotate it with `@main`. The system calls [`session(_:)`](./remotemediasessionextension/session%28_%29.md) when it needs your extension to produce a session for a given set of attributes. From the [`configuration`](../ExtensionFoundation/appextension/configuration-swift.property.md) property, return a [`RemoteMediaSessionExtensionConfiguration`](./remotemediasessionextensionconfiguration.md) initialized with your extension instance.
 
 ```swift
 import ExtensionFoundation
@@ -63,9 +64,9 @@ struct MyRemotePlaybackExtension: RemoteMediaSessionExtension {
 
 The framework caches the sessions your extension returns and routes subsequent updates and commands to the same instance. If your extension connects to a backend or device, establish that connection once and reuse it across `session(_:)` calls.
 
-#### Implement the Remote Session Representable
+#### Implement the remote session representable
 
-Create a type that conforms to [`RemoteMediaSessionRepresentable`](remotemediasessionrepresentable.md) to provide content, playback state, commands, and device information. Mark it with [`Observable`](https://developer.apple.com/documentation/observation/observable) to detect changes automatically.
+Create a type that conforms to [`RemoteMediaSessionRepresentable`](./remotemediasessionrepresentable.md) to provide content, playback state, commands, and device information. Mark it with [`Observable`](../Observation/observable.md) to detect changes automatically.
 
 ```swift
 import NowPlaying
@@ -96,11 +97,11 @@ final class MyRemoteSession: @MainActor RemoteMediaSessionRepresentable {
 }
 ```
 
-The system delivers incoming attribute changes to [`update(_:)`](remotemediasessionrepresentable/update(_:).md). Save them to your stored attributes so the Now Playing interface reflects the external device’s current state.
+The system delivers incoming attribute changes to [`update(_:)`](./remotemediasessionrepresentable/update%28_%29.md). Save them to your stored attributes so the Now Playing interface reflects the external device’s current state.
 
-#### Provide Content and Commands
+#### Provide content and commands
 
-Implement [`content`](remotemediasessionrepresentable/content.md) and [`commands`](remotemediasessionrepresentable/commands.md) on your type to describe what’s playing and which commands the remote session supports. Forward each command to the external device.
+Implement [`content`](./remotemediasessionrepresentable/content.md) and [`commands`](./remotemediasessionrepresentable/commands.md) on your type to describe what’s playing and which commands the remote session supports. Forward each command to the external device.
 
 ```swift
 extension MyRemoteSession {
@@ -138,9 +139,9 @@ extension MyRemoteSession {
 }
 ```
 
-#### Provide Devices and Control Capabilities
+#### Provide devices and control capabilities
 
-Return the devices playing as part of the session from the [`devices`](remotemediasessionrepresentable/devices.md) property. Each [`MediaDevice`](mediadevice.md) declares the operations the system can perform on it through an array of [`MediaDevice.Capability`](mediadevice/capability.md) values.
+Return the devices playing as part of the session from the [`devices`](./remotemediasessionrepresentable/devices.md) property. Each [`MediaDevice`](./mediadevice.md) declares the operations the system can perform on it through an array of [`MediaDevice.Capability`](./mediadevice/capability.md) values.
 
 ```swift
 extension MyRemoteSession {
@@ -161,13 +162,13 @@ extension MyRemoteSession {
 }
 ```
 
-Use [`absoluteVolume(_:onChange:)`](mediadevice/capability/absolutevolume(_:onchange:).md) when the device exposes a volume level in the range `0.0` to `1.0`. The system calls the closure with the requested level when someone adjusts the volume slider.
+Use [`absoluteVolume(_:onChange:)`](./mediadevice/capability/absolutevolume%28_,onchange%29.md) when the device exposes a volume level in the range `0.0` to `1.0`. The system calls the closure with the requested level when someone adjusts the volume slider.
 
-For devices that only support stepwise volume changes, use [`relativeVolume(onIncrement:onDecrement:)`](mediadevice/capability/relativevolume(onincrement:ondecrement:).md) instead.
+For devices that only support stepwise volume changes, use [`relativeVolume(onIncrement:onDecrement:)`](./mediadevice/capability/relativevolume%28onincrement,ondecrement%29.md) instead.
 
-#### Start and Update Sessions From Your App
+#### Start and update sessions from your app
 
-In your main app, use [`RemoteMediaSession`](remotemediasession.md) to start a session and send updates when the external device’s state changes:
+In your main app, use [`RemoteMediaSession`](./remotemediasession.md) to start a session and send updates when the external device’s state changes:
 
 ```swift
 let remoteSession = try await RemoteMediaSession.start(attributes: attributes)
@@ -179,27 +180,27 @@ When the external device’s state changes, update the session with new attribut
 try await remoteSession.update(updatedAttributes)
 ```
 
-To have the system show this session on the Lock Screen and Control Center, call [`requestToBecomeSystemPrimary()`](remotemediasession/requesttobecomesystemprimary().md):
+To have the system show this session on the Lock Screen and Control Center, call [`requestToBecomeSystemPrimary()`](./remotemediasession/requesttobecomesystemprimary%28%29.md):
 
 ```swift
 try await remoteSession.requestToBecomeSystemPrimary()
 ```
 
-> **Note**: Your app must be in the foreground when you call [`requestToBecomeSystemPrimary()`](remotemediasession/requesttobecomesystemprimary().md). If your app is in the background, the request has no effect.
+> **Note**: Your app must be in the foreground when you call [`requestToBecomeSystemPrimary()`](./remotemediasession/requesttobecomesystemprimary%28%29.md). If your app is in the background, the request has no effect.
 
-When playback ends, call [`end()`](remotemediasession/end().md) to remove the session:
+When playback ends, call [`end()`](./remotemediasession/end%28%29.md) to remove the session:
 
 ```swift
 try await remoteSession.end()
 ```
 
-#### Start and Update Sessions From Push Notifications
+#### Start and update sessions from push notifications
 
 Remote sessions support push notifications. Your server can start, update, or end sessions when your app isn’t running. Use this approach when playback starts from a remote device without someone opening your app.
 
-##### Observe the Push to Start Token
+##### Observe the push-to-start token
 
-The push-to-start token lets your server start new remote sessions with a push notification. Observe [`pushToStartTokenUpdates`](remotemediasession/pushtostarttokenupdates.md) to receive the token whenever it changes, and read [`pushToStartToken`](remotemediasession/pushtostarttoken.md) to get the current value at any time. Send the latest token to your server so it can send push notifications to the right device.
+The push-to-start token lets your server start new remote sessions with a push notification. Observe [`pushToStartTokenUpdates`](./remotemediasession/pushtostarttokenupdates.md) to receive the token whenever it changes, and read [`pushToStartToken`](./remotemediasession/pushtostarttoken.md) to get the current value at any time. Send the latest token to your server so it can send push notifications to the right device.
 
 ```swift
 // Observe token updates.
@@ -217,9 +218,9 @@ if let token = RemoteMediaSession<MySessionAttributes>.pushToStartToken {
 }
 ```
 
-##### Observe Session Update Tokens
+##### Observe session update tokens
 
-Each active session has its own push token for receiving updates and end events. Observe [`pushTokenUpdates`](remotemediasessionrepresentable/pushtokenupdates.md) from inside your extension’s session, and query the latest token using [`pushToken`](remotemediasessionrepresentable/pushtoken.md):
+Each active session has its own push token for receiving updates and end events. Observe [`pushTokenUpdates`](./remotemediasessionrepresentable/pushtokenupdates.md) from inside your extension’s session, and query the latest token using [`pushToken`](./remotemediasessionrepresentable/pushtoken.md):
 
 ```swift
 extension MyRemoteSession {
@@ -240,20 +241,20 @@ extension MyRemoteSession {
 }
 ```
 
-#### Send Push Notifications From Your Server
+#### Send push notifications from your server
 
 Your server sends APNs push notifications to start, update, or end remote sessions. Use the `nowplaying` push type for each push and target the topic `<your-bundle-id>.push-type.nowplaying`.
 
 Set the following headers on your APNs request:
 
-```None
+```
 apns-topic: com.example.myapp.push-type.nowplaying
 apns-push-type: nowplaying
 ```
 
-##### Start a Session
+##### Start a session
 
-To start a new remote session, send a push to the push-to-start token. The `event` field must be `"start"`, and the `attributes` field must contain a JSON-encoded representation of your [`RemoteMediaSessionAttributes`](remotemediasessionattributes.md):
+To start a new remote session, send a push to the push-to-start token. The `event` field must be `"start"`, and the `attributes` field must contain a JSON-encoded representation of your [`RemoteMediaSessionAttributes`](./remotemediasessionattributes.md):
 
 ```json
 {
@@ -288,9 +289,9 @@ To start a new remote session, send a push to the push-to-start token. The `even
 }
 ```
 
-When the system receives this push, it wakes your app extension and calls [`session(_:)`](remotemediasessionextension/session(_:).md) with the decoded attributes. Return a [`RemoteMediaSessionRepresentable`](remotemediasessionrepresentable.md) object from this method.
+When the system receives this push, it wakes your app extension and calls [`session(_:)`](./remotemediasessionextension/session%28_%29.md) with the decoded attributes. Return a [`RemoteMediaSessionRepresentable`](./remotemediasessionrepresentable.md) object from this method.
 
-##### Update a Session
+##### Update a session
 
 To update an existing session, like when someone skips to the next track on the remote device, send a push notification to the session’s update token with the `event` field set to `"update"`:
 
@@ -327,9 +328,9 @@ To update an existing session, like when someone skips to the next track on the 
 }
 ```
 
-The system delivers the updated attributes to your extension’s [`update(_:)`](remotemediasessionrepresentable/update(_:).md) method, and the Now Playing interface updates to reflect the new content.
+The system delivers the updated attributes to your extension’s [`update(_:)`](./remotemediasessionrepresentable/update%28_%29.md) method, and the Now Playing interface updates to reflect the new content.
 
-##### End a Session
+##### End a session
 
 To end a session when playback stops on the remote device, send a push to the session’s update token with the `event` field set to `"end"`. Only the session `id` is required in the attributes:
 
@@ -347,19 +348,20 @@ To end a session when playback stops on the remote device, send a push to the se
 
 ## See Also
 
-- [protocol RemoteMediaSessionRepresentable](remotemediasessionrepresentable.md)
+### Remote sessions
+- [protocol RemoteMediaSessionRepresentable](./remotemediasessionrepresentable.md)
   A session that plays remotely, potentially across multiple devices.
-- [class RemoteMediaSession](remotemediasession.md)
+- [class RemoteMediaSession](./remotemediasession.md)
   A session that manages remote media playback across devices.
-- [protocol RemoteMediaSessionExtension](remotemediasessionextension.md)
+- [protocol RemoteMediaSessionExtension](./remotemediasessionextension.md)
   An app extension that provides remote media sessions.
-- [class RemoteMediaSessionExtensionConfiguration](remotemediasessionextensionconfiguration.md)
+- [class RemoteMediaSessionExtensionConfiguration](./remotemediasessionextensionconfiguration.md)
   The configuration object for a remote playback extension.
-- [protocol RemoteMediaSessionAttributes](remotemediasessionattributes.md)
+- [protocol RemoteMediaSessionAttributes](./remotemediasessionattributes.md)
   A type that represents attributes for remote sessions.
-- [enum RemoteMediaSessionError](remotemediasessionerror.md)
+- [enum RemoteMediaSessionError](./remotemediasessionerror.md)
   Errors that can occur during remote session operations.
-- [struct MediaDevice](mediadevice.md)
+- [struct MediaDevice](./mediadevice.md)
   A device that plays media in a remote session.
 
 

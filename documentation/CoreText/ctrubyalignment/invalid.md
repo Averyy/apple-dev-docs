@@ -1,7 +1,8 @@
 # CTRubyAlignment.invalid
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The alignment is invalid.
 
@@ -20,21 +21,26 @@ The alignment is invalid.
 case invalid
 ```
 
+```c
+kCTRubyAlignmentInvalid
+```
+
 ## See Also
 
-- [CTRubyAlignment.auto](ctrubyalignment/auto.md)
+### Constants
+- [CTRubyAlignment.auto](./auto.md)
   Core Text automatically determines the alignment.
-- [CTRubyAlignment.start](ctrubyalignment/start.md)
+- [CTRubyAlignment.start](./start.md)
   Aligns the ruby text with the starting edge of the base text.
-- [CTRubyAlignment.center](ctrubyalignment/center.md)
+- [CTRubyAlignment.center](./center.md)
   Centers the ruby text within the width of the base text.
-- [CTRubyAlignment.end](ctrubyalignment/end.md)
+- [CTRubyAlignment.end](./end.md)
   Aligns the ruby text with the ending edge of the base text.
-- [CTRubyAlignment.distributeLetter](ctrubyalignment/distributeletter.md)
+- [CTRubyAlignment.distributeLetter](./distributeletter.md)
   Distributes the ruby text evenly over the width of the base text, aligning the first and last characters of the ruby text with the first and last characters of the base text.
-- [CTRubyAlignment.distributeSpace](ctrubyalignment/distributespace.md)
+- [CTRubyAlignment.distributeSpace](./distributespace.md)
   Distributes the ruby text evenly over the width of the base text, adding space before the first and after the last character.
-- [CTRubyAlignment.lineEdge](ctrubyalignment/lineedge.md)
+- [CTRubyAlignment.lineEdge](./lineedge.md)
   Aligns the ruby text to an adjacent line edge.
 
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Init with label (required by RawRepresentable).
 

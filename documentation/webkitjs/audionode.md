@@ -1,7 +1,8 @@
 # AudioNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface AudioNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [AudioContext](audionode/1631014-audiocontext.md)
-- [channelCount](audionode/1629607-channelcount.md)
-- [channelCountMode](audionode/1634286-channelcountmode.md)
-- [channelInterpretation](audionode/1629516-channelinterpretation.md)
-- [numberOfInputs](audionode/1629831-numberofinputs.md)
-- [numberOfOutputs](audionode/1629628-numberofoutputs.md)
+- [AudioContext](./audionode/api-1631014-audiocontext.md)
+- [channelCount](./audionode/api-1629607-channelcount.md)
+- [channelCountMode](./audionode/api-1634286-channelcountmode.md)
+- [channelInterpretation](./audionode/api-1629516-channelinterpretation.md)
+- [numberOfInputs](./audionode/api-1629831-numberofinputs.md)
+- [numberOfOutputs](./audionode/api-1629628-numberofoutputs.md)
 ### Instance Methods
-- [connect](audionode/1632189-connect.md)
-- [disconnect](audionode/1629638-disconnect.md)
+- [connect](./audionode/api-1632189-connect.md)
+- [disconnect](./audionode/api-1629638-disconnect.md)
 
 ## Relationships
 

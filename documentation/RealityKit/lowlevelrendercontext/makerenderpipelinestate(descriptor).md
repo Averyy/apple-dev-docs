@@ -2,9 +2,10 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
-Synchronous variant of [`makeRenderPipelineState(descriptor:)`](lowlevelrendercontext/makerenderpipelinestate(descriptor:).md). Blocks the current thread until compilation completes.
+Synchronous variant of [`makeRenderPipelineState(descriptor:)`](./makerenderpipelinestate%28descriptor%29.md). Blocks the current thread until compilation completes.
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,13 @@ Synchronous variant of [`makeRenderPipelineState(descriptor:)`](lowlevelrenderco
 
 ```swift
 func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) throws -> sending LowLevelRenderPipelineState
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+(nonsending) func makeRenderPipelineState(descriptor: LowLevelRenderPipelineState.Descriptor) async throws -> sending LowLevelRenderPipelineState
 ```
 
 

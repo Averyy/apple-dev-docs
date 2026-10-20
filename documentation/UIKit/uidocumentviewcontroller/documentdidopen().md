@@ -1,7 +1,8 @@
 # documentDidOpen()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an opportunity to configure the view after the system loads the controller’s document into memory.
 
@@ -17,9 +18,13 @@ Provides an opportunity to configure the view after the system loads the control
 func documentDidOpen()
 ```
 
+```objc
+- (void) documentDidOpen;
+```
+
 ## Mentions
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+- [Customizing a document-based app’s launch experience](../customizing-a-document-based-app-s-launch-experience.md)
 
 #### Discussion
 
@@ -31,13 +36,14 @@ override func documentDidOpen() {
 }
 ```
 
-Configure the view in its own method and call that method in both `documentDidOpen()` and [`viewDidLoad()`](uiviewcontroller/viewdidload().md). There is no timing guarantee between when the system calls `documentDidOpen` and when it loads the view controller’s view.
+Configure the view in its own method and call that method in both `documentDidOpen()` and [`viewDidLoad()`](../uiviewcontroller/viewdidload%28%29.md). There is no timing guarantee between when the system calls `documentDidOpen` and when it loads the view controller’s view.
 
 ## See Also
 
-- [var document: UIDocument?](uidocumentviewcontroller/document.md)
+### Managing the document view
+- [var document: UIDocument?](./document.md)
   The document that the controller presents or edits.
-- [func openDocument(completionHandler: (Bool) -> Void)](uidocumentviewcontroller/opendocument(completionhandler:).md)
+- [func openDocument(completionHandler: (Bool) -> Void)](./opendocument%28completionhandler%29.md)
   Opens a document in a document view controller from outside the document view controller.
 
 

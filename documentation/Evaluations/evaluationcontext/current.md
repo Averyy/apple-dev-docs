@@ -1,7 +1,8 @@
 # current
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current evaluation context within the active test scope.
 

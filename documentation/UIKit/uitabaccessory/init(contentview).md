@@ -1,7 +1,8 @@
 # init(contentView:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new accessory with the specified content view.
 
@@ -14,6 +15,10 @@ Creates a new accessory with the specified content view.
 
 ```swift
 init(contentView: UIView)
+```
+
+```objc
+- (instancetype) initWithContentView:(UIView *) contentView;
 ```
 
 

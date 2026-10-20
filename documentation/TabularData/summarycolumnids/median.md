@@ -1,7 +1,8 @@
 # median
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier that represents the summary’s column of medians.
 

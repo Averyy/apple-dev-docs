@@ -1,7 +1,8 @@
 # selectedInputType
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of input, in UTI format, of the input received by the action.
 
@@ -15,6 +16,10 @@ The type of input, in UTI format, of the input received by the action.
 var selectedInputType: String? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSString * selectedInputType;
+```
+
 #### Discussion
 
 Getting this value provides the type of input the action is configured to accept. For example, your action may have the ability to accept files and folders, or documents, depending on how it’s configured and what action precedes it in the workflow.
@@ -25,17 +30,18 @@ Through its interface, the action can could be configured to allow the user to s
 
 ## See Also
 
-- [var name: String](amaction/name.md)
+### Getting Action Information
+- [var name: String](./name.md)
   The name of the action.
-- [var progressValue: CGFloat](amaction/progressvalue.md)
+- [var progressValue: CGFloat](./progressvalue.md)
   A float value between 0 and 1, which indicates how far along the action is while processing.
-- [var ignoresInput: Bool](amaction/ignoresinput.md)
+- [var ignoresInput: Bool](./ignoresinput.md)
   A Boolean value that indicates whether the action acts upon its input or the input is ignored.
-- [var output: Any?](amaction/output.md)
+- [var output: Any?](./output.md)
   The action’s output.
-- [var selectedOutputType: String?](amaction/selectedoutputtype.md)
+- [var selectedOutputType: String?](./selectedoutputtype.md)
   The type of output, in UTI format, of the output to be produced by the action.
-- [var isStopped: Bool](amaction/isstopped.md)
+- [var isStopped: Bool](./isstopped.md)
   A Boolean value that indicates whether the user clicked the stop button on the parent workflow.
 
 

@@ -1,7 +1,8 @@
 # errSSLATSCiphersuiteViolation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The selected ciphersuite isn’t App Transport Security compliant.
 
@@ -20,9 +21,13 @@ The selected ciphersuite isn’t App Transport Security compliant.
 var errSSLATSCiphersuiteViolation: OSStatus { get }
 ```
 
+```c
+errSSLATSCiphersuiteViolation
+```
+
 #### Overview
 
-For more information about App Transport Security (ATS) compliance, see [`Preventing Insecure Network Connections`](preventing-insecure-network-connections.md).
+For more information about App Transport Security (ATS) compliance, see [Preventing Insecure Network Connections](./preventing-insecure-network-connections.md).
 
 
 ---

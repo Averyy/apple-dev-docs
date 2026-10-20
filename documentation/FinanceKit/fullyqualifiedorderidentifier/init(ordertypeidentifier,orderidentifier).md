@@ -1,7 +1,8 @@
 # init(orderTypeIdentifier:orderIdentifier:)
 
 **Framework**: FinanceKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the object with values that uniquely identify an order within an order type.
 
@@ -18,7 +19,7 @@ init(orderTypeIdentifier: String, orderIdentifier: String)
 
 #### Discussion
 
-In combination with the order type identifier, these two properties uniquely identify an order in [`FinanceStore`](financestore.md).
+In combination with the order type identifier, these two properties uniquely identify an order in [`FinanceStore`](../financestore.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # concentric
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Corner styles will be concentric with its container, varying the radius as needed in all four corners.
 

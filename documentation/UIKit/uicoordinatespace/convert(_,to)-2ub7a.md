@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Converts a point from the coordinate space of the current object to the specified coordinate space.
@@ -9,13 +10,17 @@ Converts a point from the coordinate space of the current object to the specifie
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func convert(_ point: CGPoint, to coordinateSpace: any UICoordinateSpace) -> CGPoint
+```
+
+```objc
+- (CGPoint) convertPoint:(CGPoint) point toCoordinateSpace:(id<UICoordinateSpace>) coordinateSpace;
 ```
 
 #### Return Value
@@ -29,11 +34,12 @@ A point specified in the target coordinate space.
 
 ## See Also
 
-- [func convert(CGPoint, from: any UICoordinateSpace) -> CGPoint](uicoordinatespace/convert(_:from:)-3w27q.md)
+### Converting between coordinate spaces
+- [func convert(CGPoint, from: any UICoordinateSpace) -> CGPoint](./convert%28_,from%29-3w27q.md)
   Converts a point from the specified coordinate space to the coordinate space of the current object.
-- [func convert(CGRect, to: any UICoordinateSpace) -> CGRect](uicoordinatespace/convert(_:to:)-3imkt.md)
+- [func convert(CGRect, to: any UICoordinateSpace) -> CGRect](./convert%28_,to%29-3imkt.md)
   Converts a rectangle from the coordinate space of the current object to the specified coordinate space.
-- [func convert(CGRect, from: any UICoordinateSpace) -> CGRect](uicoordinatespace/convert(_:from:)-9921a.md)
+- [func convert(CGRect, from: any UICoordinateSpace) -> CGRect](./convert%28_,from%29-9921a.md)
   Converts a rectangle from the specified coordinate space to the coordinate space of the current object.
 
 

@@ -1,7 +1,8 @@
 # GroupNotFoundError
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An error that indicates the group wasn’t found.
 
@@ -10,30 +11,31 @@ An error that indicates the group wasn’t found.
 
 ## Declaration
 
-```swift
+```
 object GroupNotFoundError
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
-A request returns this error if you call the [`Get Group Members`](get-group-members.md) endpoint with a `groupId` that’s well-formed but doesn’t identify a group in your app.
+A request returns this error if you call the [`Get Group Members`](./get-group-members.md) endpoint with a `groupId` that’s well-formed but doesn’t identify a group in your app.
 
-A group that existed previously can stop existing — for example, when its subscription ends. Get a current `groupId` by calling the [`Get Customer Groups`](get-customer-groups.md) endpoint.
+A group that existed previously can stop existing — for example, when its subscription ends. Get a current `groupId` by calling the [`Get Customer Groups`](./get-customer-groups.md) endpoint.
 
 ## Properties
 
-- `errorCode` (int64)
-- `errorMessage` (string)
+- `errorCode` (int64): **Allowed Values**: `4040022`
+- `errorMessage` (string): **Allowed Values**: `Group not found.`
 
 ## See Also
 
-- [object InvalidGroupIdError](invalidgroupiderror.md)
+### Group membership errors
+- [object InvalidGroupIdError](./invalidgroupiderror.md)
   An error that indicates the group identifier is invalid.
-- [object InvalidLimitError](invalidlimiterror.md)
+- [object InvalidLimitError](./invalidlimiterror.md)
   An error that indicates the request limit is invalid.
 
 

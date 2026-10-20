@@ -1,17 +1,18 @@
 # bounded_array_ref<T, TrappingPolicy>
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Constructor
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bounded_array_ref<T, TrappingPolicy>(T (&)[N]( & array)[]);
 ```
 

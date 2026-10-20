@@ -1,7 +1,8 @@
 # IOUSBDeviceRequestPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to a structure that defines a standard device request.
 
@@ -10,23 +11,24 @@ A pointer to a structure that defines a standard device request.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBDevRequest *IOUSBDeviceRequestPtr;
 ```
 
 ## See Also
 
-- [IOUSBDevReqOOL](iousbdevreqool.md)
+### Device Requests
+- [IOUSBDevReqOOL](./iousbdevreqool.md)
   An internal structure to pass parameters between IOUSBLib and UserClient.
-- [IOUSBDevReqOOLTO](iousbdevreqoolto.md)
+- [IOUSBDevReqOOLTO](./iousbdevreqoolto.md)
   An internal structure to pass parameters between IOUSBLib and UserClient.
-- [IOUSBDevRequest](iousbdevrequest.md)
+- [IOUSBDevRequest](./iousbdevrequest.md)
   A structure that defines a standard device request.
-- [IOUSBDevRequestTO](iousbdevrequestto.md)
+- [IOUSBDevRequestTO](./iousbdevrequestto.md)
   A structure that defines a standard device request with timeout.
-- [IOUSBDeviceRequest](iousbdevicerequest.md)
+- [IOUSBDeviceRequest](./iousbdevicerequest.md)
   A structure that defines a standard device request.
-- [IOUSBDeviceRequestSetSELData](iousbdevicerequestsetseldata.md)
+- [IOUSBDeviceRequestSetSELData](./iousbdevicerequestsetseldata.md)
   The structure for receiving system exit latency values.
 
 

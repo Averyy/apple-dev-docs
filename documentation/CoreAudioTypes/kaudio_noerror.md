@@ -1,7 +1,8 @@
 # kAudio_NoError
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kAudio_NoError: OSStatus { get }
+```
+
+```c
+kAudio_NoError
 ```
 
 

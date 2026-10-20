@@ -1,10 +1,11 @@
 # init(nonRelRev:stage:minorAndBugRev:majorRev:)
 
 **Framework**: Audio Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

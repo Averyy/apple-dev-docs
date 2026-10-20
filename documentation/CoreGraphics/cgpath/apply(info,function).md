@@ -1,7 +1,8 @@
 # apply(info:function:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 For each element in a graphics path, calls a custom applier function.
 
@@ -10,7 +11,7 @@ For each element in a graphics path, calls a custom applier function.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,6 +21,10 @@ For each element in a graphics path, calls a custom applier function.
 func apply(info: UnsafeMutableRawPointer?, function: CGPathApplierFunction)
 ```
 
+```c
+extern void CGPathApply(CGPathRef path, void *info, CGPathApplierFunction function);
+```
+
 #### Discussion
 
 For each element in the specified path, Core Graphics calls the applier function, which can examine (but not modify) the element.
@@ -27,15 +32,16 @@ For each element in the specified path, Core Graphics calls the applier function
 ## Parameters
 
 - `info`: A pointer to the user data that Core Graphics will pass to the function being applied, or `NULL`.
-- `function`: A pointer to the function to apply. See [`CGPathApplierFunction`](cgpathapplierfunction.md) for more information.
+- `function`: A pointer to the function to apply. See [`CGPathApplierFunction`](../cgpathapplierfunction.md) for more information.
 
 ## See Also
 
-- [typealias CGPathApplierFunction](cgpathapplierfunction.md)
+### Applying a Function to the Elements of a Path
+- [typealias CGPathApplierFunction](../cgpathapplierfunction.md)
   Defines a callback function that can view an element in a graphics path.
-- [struct CGPathElement](cgpathelement.md)
+- [struct CGPathElement](../cgpathelement.md)
   A data structure that provides information about a path element.
-- [enum CGPathElementType](cgpathelementtype.md)
+- [enum CGPathElementType](../cgpathelementtype.md)
   The type of element found in a path.
 
 

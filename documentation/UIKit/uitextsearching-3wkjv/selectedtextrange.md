@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The range of selected text in a document.
@@ -10,7 +11,7 @@ The range of selected text in a document.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,7 +25,8 @@ If the text range has a length, it indicates the currently selected text. If it 
 
 ## See Also
 
-- [var selectedTextSearchDocument: Self.DocumentIdentifier?](uitextsearching-3wkjv/selectedtextsearchdocument.md)
+### Identifying selected text
+- [var selectedTextSearchDocument: Self.DocumentIdentifier?](./selectedtextsearchdocument.md)
   The object that uniquely identifies the specific document with selected text.
 
 

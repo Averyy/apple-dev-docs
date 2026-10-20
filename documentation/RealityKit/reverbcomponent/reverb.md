@@ -1,7 +1,8 @@
 # reverb
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reverberation setting the component applies to spatial audio.
 

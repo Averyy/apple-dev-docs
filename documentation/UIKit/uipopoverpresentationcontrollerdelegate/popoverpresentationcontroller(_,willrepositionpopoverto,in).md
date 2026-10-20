@@ -1,7 +1,8 @@
 # popoverPresentationController(_:willRepositionPopoverTo:in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that UIKit needs to reposition the popover’s location.
 
@@ -15,6 +16,10 @@ Tells the delegate that UIKit needs to reposition the popover’s location.
 
 ```swift
 optional func popoverPresentationController(_ popoverPresentationController: UIPopoverPresentationController, willRepositionPopoverTo rect: UnsafeMutablePointer<CGRect>, in view: AutoreleasingUnsafeMutablePointer<UIView>)
+```
+
+```objc
+- (void) popoverPresentationController:(UIPopoverPresentationController *) popoverPresentationController willRepositionPopoverToRect:(CGRect *) rect inView:(UIView **) view;
 ```
 
 #### Discussion

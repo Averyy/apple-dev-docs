@@ -1,7 +1,8 @@
 # iCloudPhotosEnabled
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the iCloud Photo Library is enabled on the device.
 
@@ -18,9 +19,14 @@ A Boolean value indicating whether the iCloud Photo Library is enabled on the de
 var iCloudPhotosEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL iCloudPhotosEnabled;
+```
+
 ## See Also
 
-- [var isAccessRestrictedAppleDevice: Bool](iccameradevice/isaccessrestrictedappledevice.md)
+### Detecting Apple Devices
+- [var isAccessRestrictedAppleDevice: Bool](./isaccessrestrictedappledevice.md)
   A Boolean value indicating whether the device is an Apple device, passcode-locked, and connected to an untrusted host.
 
 

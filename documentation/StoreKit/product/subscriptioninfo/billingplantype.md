@@ -1,7 +1,8 @@
 # Product.SubscriptionInfo.BillingPlanType
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.4+
@@ -20,22 +21,22 @@ struct BillingPlanType
 
 ## Mentions
 
-- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+- [Supporting monthly subscriptions with a 12-month commitment](../../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 ## Topics
 
 ### Type Properties - generated
-- [static let monthly: Product.SubscriptionInfo.BillingPlanType](product/subscriptioninfo/billingplantype/monthly.md)
-- [static let upFront: Product.SubscriptionInfo.BillingPlanType](product/subscriptioninfo/billingplantype/upfront.md)
+- [static let monthly: Product.SubscriptionInfo.BillingPlanType](./billingplantype/monthly.md)
+- [static let upFront: Product.SubscriptionInfo.BillingPlanType](./billingplantype/upfront.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

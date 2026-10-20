@@ -1,12 +1,15 @@
 # canDraw(in:pixelFormat:forLayerTime:displayTime:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked to ask the layer whether it can (or should) draw.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.14
+
+> **Deprecated**: Please use CAMetalLayer instead.
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Invoked to ask the layer whether it can (or should) draw.
 func canDraw(in context: NSOpenGLContext, pixelFormat: NSOpenGLPixelFormat, forLayerTime t: CFTimeInterval, displayTime ts: UnsafePointer<CVTimeStamp>) -> Bool
 ```
 
+```objc
+- (BOOL) canDrawInOpenGLContext:(NSOpenGLContext *) context pixelFormat:(NSOpenGLPixelFormat *) pixelFormat forLayerTime:(CFTimeInterval) t displayTime:(const CVTimeStamp *) ts;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver should render OpenGL content, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the receiver should render OpenGL content, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
-This method is called before attempting to render the frame for the layer time specified by `timeInterval`. If the method returns [`false`](https://developer.apple.com/documentation/swift/false), the frame is skipped. The default implementation always returns [`true`](https://developer.apple.com/documentation/swift/true).
+This method is called before attempting to render the frame for the layer time specified by `timeInterval`. If the method returns [`false`](../../Swift/false.md), the frame is skipped. The default implementation always returns [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -31,8 +38,10 @@ This method is called before attempting to render the frame for the layer time s
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
-- [func draw(in: NSOpenGLContext, pixelFormat: NSOpenGLPixelFormat, forLayerTime: CFTimeInterval, displayTime: UnsafePointer<CVTimeStamp>)](nsopengllayer/draw(in:pixelformat:forlayertime:displaytime:).md)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Drawing the Content
+- [func draw(in: NSOpenGLContext, pixelFormat: NSOpenGLPixelFormat, forLayerTime: CFTimeInterval, displayTime: UnsafePointer<CVTimeStamp>)](./draw%28in,pixelformat,forlayertime,displaytime%29.md)
   Draws the OpenGL content for the specified time.
 
 

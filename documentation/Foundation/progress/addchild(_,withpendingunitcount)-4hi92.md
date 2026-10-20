@@ -1,7 +1,8 @@
 # addChild(_:withPendingUnitCount:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a ProgressReporter as a child to a Progress, which constitutes a portion of Progress’s totalUnitCount.
 

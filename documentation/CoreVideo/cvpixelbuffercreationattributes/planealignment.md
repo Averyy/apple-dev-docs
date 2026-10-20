@@ -1,7 +1,8 @@
 # planeAlignment
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Planes start on a byte number that’s a multiple of this value.
 

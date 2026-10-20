@@ -1,23 +1,25 @@
 # IOFWGetAbsoluteTime
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 void IOFWGetAbsoluteTime(AbsoluteTime *result);
 ```
 
 ## See Also
 
-- [SubtractFWCycleTimeFromFWCycleTime](1589090-subtractfwcycletimefromfwcycleti.md)
-- [AddFWCycleTimeToFWCycleTime](1589089-addfwcycletimetofwcycletime.md)
-- [FWComputeCRC16](1589088-fwcomputecrc16.md)
-- [FWUpdateCRC16](1589087-fwupdatecrc16.md)
+### Utilities
+- [SubtractFWCycleTimeFromFWCycleTime](./api-1589090-subtractfwcycletimefromfwcycleti.md)
+- [AddFWCycleTimeToFWCycleTime](./api-1589089-addfwcycletimetofwcycletime.md)
+- [FWComputeCRC16](./api-1589088-fwcomputecrc16.md)
+- [FWUpdateCRC16](./api-1589087-fwupdatecrc16.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # predicates
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predicate that limits the results that the query returns.
 
@@ -10,7 +11,7 @@ A predicate that limits the results that the query returns.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,9 +22,10 @@ var predicates: [HKSamplePredicate<Sample>] { get set }
 
 ## See Also
 
-- [var anchor: HKQueryAnchor?](hkanchoredobjectquerydescriptor/anchor.md)
+### Accessing Query Properties
+- [var anchor: HKQueryAnchor?](./anchor.md)
   An anchor that a previous anchored object query returned.
-- [var limit: Int?](hkanchoredobjectquerydescriptor/limit.md)
+- [var limit: Int?](./limit.md)
   The maximum number of samples that the query returns.
 
 

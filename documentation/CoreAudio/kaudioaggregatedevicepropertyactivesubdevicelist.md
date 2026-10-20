@@ -1,11 +1,12 @@
 # kAudioAggregateDevicePropertyActiveSubDeviceList
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,12 +14,17 @@
 var kAudioAggregateDevicePropertyActiveSubDeviceList: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioAggregateDevicePropertyActiveSubDeviceList
+```
+
 ## See Also
 
-- [var kAudioAggregateDevicePropertyComposition: AudioObjectPropertySelector](kaudioaggregatedevicepropertycomposition.md)
-- [var kAudioAggregateDevicePropertyFullSubDeviceList: AudioObjectPropertySelector](kaudioaggregatedevicepropertyfullsubdevicelist.md)
-- [var kAudioAggregateDevicePropertyMasterSubDevice: AudioObjectPropertySelector](kaudioaggregatedevicepropertymastersubdevice.md)
-- [var kAudioAggregateDevicePropertyClockDevice: AudioObjectPropertySelector](kaudioaggregatedevicepropertyclockdevice.md)
+### Constants
+- [var kAudioAggregateDevicePropertyComposition: AudioObjectPropertySelector](./kaudioaggregatedevicepropertycomposition.md)
+- [var kAudioAggregateDevicePropertyFullSubDeviceList: AudioObjectPropertySelector](./kaudioaggregatedevicepropertyfullsubdevicelist.md)
+- [var kAudioAggregateDevicePropertyMasterSubDevice: AudioObjectPropertySelector](./kaudioaggregatedevicepropertymastersubdevice.md)
+- [var kAudioAggregateDevicePropertyClockDevice: AudioObjectPropertySelector](./kaudioaggregatedevicepropertyclockdevice.md)
 
 
 ---

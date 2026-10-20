@@ -1,7 +1,8 @@
 # kAXURLDockItemSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An icon in the Dock that represents a URL.
 
@@ -12,6 +13,10 @@ An icon in the Dock that represents a URL.
 
 ```swift
 var kAXURLDockItemSubrole: String { get }
+```
+
+```c
+#define kAXURLDockItemSubrole
 ```
 
 

@@ -1,7 +1,8 @@
 # id
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the sent receipt.
 

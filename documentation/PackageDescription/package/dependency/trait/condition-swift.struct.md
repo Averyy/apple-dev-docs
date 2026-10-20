@@ -1,7 +1,8 @@
 # Package.Dependency.Trait.Condition
 
 **Framework**: PackageDescription  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A condition that limits the application of a trait for a dependency.
 
@@ -17,16 +18,16 @@ struct Condition
 ## Topics
 
 ### Type Methods
-- [static func when(traits: Set<String>) -> Package.Dependency.Trait.Condition?](package/dependency/trait/condition-swift.struct/when(traits:).md)
+- [static func when(traits: Set<String>) -> Package.Dependency.Trait.Condition?](./condition-swift.struct/when%28traits%29.md)
   Creates a package dependency trait condition.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

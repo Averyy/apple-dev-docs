@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_CLEAR_TASK_SET
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_CLEAR_TASK_SET = 0x0E
 ```
 

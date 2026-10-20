@@ -1,7 +1,8 @@
 # AVMIDIPlayer
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that plays MIDI data through a system sound module.
 
@@ -19,60 +20,65 @@ An object that plays MIDI data through a system sound module.
 class AVMIDIPlayer
 ```
 
+```objc
+@interface AVMIDIPlayer : NSObject
+```
+
 #### Overview
 
-For more information about preparing your app to play audio, see [`Configuring your app for media playback`](https://developer.apple.com/documentation/avfoundation/configuring-your-app-for-media-playback).
+For more information about preparing your app to play audio, see [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md).
 
-> ❗ **Important**:  For more advanced MIDI playback capabilities, like playing MIDI data through an external synthesizer or sampler, use [`AVAudioEngine`](avaudioengine.md) instead.
+> ❗ **Important**:  For more advanced MIDI playback capabilities, like playing MIDI data through an external synthesizer or sampler, use [`AVAudioEngine`](./avaudioengine.md) instead.
 
 ## Topics
 
 ### Creating a MIDI player
-- [init(contentsOf: URL, soundBankURL: URL?) throws](avmidiplayer/init(contentsof:soundbankurl:).md)
+- [init(contentsOf: URL, soundBankURL: URL?) throws](./avmidiplayer/init%28contentsof,soundbankurl%29.md)
   Creates a player to play a MIDI file with the specified soundbank.
-- [init(data: Data, soundBankURL: URL?) throws](avmidiplayer/init(data:soundbankurl:).md)
+- [init(data: Data, soundBankURL: URL?) throws](./avmidiplayer/init%28data,soundbankurl%29.md)
   Creates a player to play MIDI data with the specified soundbank.
 ### Controlling playback
-- [func prepareToPlay()](avmidiplayer/preparetoplay.md)
+- [func prepareToPlay()](./avmidiplayer/preparetoplay%28%29.md)
   Prepares the player to play the sequence by prerolling all events.
-- [func play((() -> Void)?)](avmidiplayer/play(_:).md)
+- [func play((() -> Void)?)](./avmidiplayer/play%28_%29.md)
   Plays the MIDI sequence.
-- [typealias AVMIDIPlayerCompletionHandler](avmidiplayercompletionhandler.md)
+- [typealias AVMIDIPlayerCompletionHandler](./avmidiplayercompletionhandler.md)
   A callback the system invokes when MIDI playback completes.
-- [func stop()](avmidiplayer/stop.md)
+- [func stop()](./avmidiplayer/stop%28%29.md)
   Stops playing the sequence.
-- [var isPlaying: Bool](avmidiplayer/isplaying.md)
+- [var isPlaying: Bool](./avmidiplayer/isplaying.md)
   A Boolean value that indicates whether the sequence is playing.
 ### Configuring playback settings
-- [var rate: Float](avmidiplayer/rate.md)
+- [var rate: Float](./avmidiplayer/rate.md)
   The playback rate of the player.
 ### Accessing player timing
-- [var currentPosition: TimeInterval](avmidiplayer/currentposition.md)
+- [var currentPosition: TimeInterval](./avmidiplayer/currentposition.md)
   The current playback position, in seconds.
-- [var duration: TimeInterval](avmidiplayer/duration.md)
+- [var duration: TimeInterval](./avmidiplayer/duration.md)
   The duration, in seconds, of the currently loaded file.
 ### Initializers
-- [init(contentsOfURL: URL, soundBankURL: URL?) throws](avmidiplayer/init(contentsofurl:soundbankurl:).md)
+- [init(contentsOfURL: URL, soundBankURL: URL?) throws](./avmidiplayer/init%28contentsofurl,soundbankurl%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVAudioPlayer](avaudioplayer.md)
+### Basic playback and recording
+- [class AVAudioPlayer](./avaudioplayer.md)
   An object that plays audio data from a file or buffer.
-- [class AVAudioRecorder](avaudiorecorder.md)
+- [class AVAudioRecorder](./avaudiorecorder.md)
   An object that records audio data to a file.
 
 

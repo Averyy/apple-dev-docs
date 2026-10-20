@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated set.
 
@@ -20,6 +21,10 @@ Initializes a newly allocated set.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A set.
@@ -30,7 +35,8 @@ This method is a designated initializer of `NSMutableSet`.
 
 ## See Also
 
-- [init(capacity: Int)](nsmutableset/init(capacity:).md)
+### Creating a mutable set
+- [init(capacity: Int)](./init%28capacity%29.md)
   Returns an initialized mutable set with a given initial capacity.
 
 

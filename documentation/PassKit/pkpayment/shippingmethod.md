@@ -1,7 +1,8 @@
 # shippingMethod
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user-selected shipping method for this transaction.
 
@@ -19,19 +20,24 @@ The user-selected shipping method for this transaction.
 var shippingMethod: PKShippingMethod? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) PKShippingMethod * shippingMethod;
+```
+
 #### Discussion
 
-A value is set for this property only if the corresponding payment request specified available shipping methods in the [`shippingMethods`](pkpaymentrequest/shippingmethods.md) property of the [`PKPaymentRequest`](pkpaymentrequest.md) object. Otherwise, the value is `nil.`
+A value is set for this property only if the corresponding payment request specified available shipping methods in the [`shippingMethods`](../pkpaymentrequest/shippingmethods.md) property of the [`PKPaymentRequest`](../pkpaymentrequest.md) object. Otherwise, the value is `nil.`
 
 ## See Also
 
-- [var billingContact: PKContact?](pkpayment/billingcontact.md)
+### Working with billing and shipping information
+- [var billingContact: PKContact?](./billingcontact.md)
   The user-selected billing address for this transaction.
-- [var shippingContact: PKContact?](pkpayment/shippingcontact.md)
+- [var shippingContact: PKContact?](./shippingcontact.md)
   The user-selected shipping address for this transaction.
-- [class PKContact](pkcontact.md)
+- [class PKContact](../pkcontact.md)
   An object that encapsulates contact information needed for billing and shipping.
-- [class PKShippingMethod](pkshippingmethod.md)
+- [class PKShippingMethod](../pkshippingmethod.md)
   An object that defines a shipping method for delivering physical goods.
 
 

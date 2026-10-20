@@ -1,7 +1,8 @@
 # init(reflecting:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a string with a detailed representation of the given value, suitable for debugging.
 
@@ -59,15 +60,16 @@ print(String(reflecting: p))
 
 ## See Also
 
-- [init<T>(T)](string/init(_:)-1ywfq.md)
+### Converting Other Types to Strings
+- [init<T>(T)](./init%28_%29-1ywfq.md)
   Creates an instance from the description of a given `LosslessStringConvertible` instance.
-- [init<Subject>(describing: Subject)](string/init(describing:)-588wb.md)
+- [init<Subject>(describing: Subject)](./init%28describing%29-588wb.md)
   Creates a string representing the given value.
-- [init<Subject>(describing: Subject)](string/init(describing:)-hsqw.md)
+- [init<Subject>(describing: Subject)](./init%28describing%29-hsqw.md)
   Creates a string representing the given value.
-- [init<Subject>(describing: Subject)](string/init(describing:)-6ttci.md)
+- [init<Subject>(describing: Subject)](./init%28describing%29-6ttci.md)
   Creates a string representing the given value.
-- [init<Subject>(describing: Subject)](string/init(describing:)-67ncf.md)
+- [init<Subject>(describing: Subject)](./init%28describing%29-67ncf.md)
   Creates a string representing the given value.
 
 

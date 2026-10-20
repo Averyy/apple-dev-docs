@@ -1,7 +1,8 @@
 # x5c
 
 **Framework**: Retention Messaging API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A JSON Web Signature (JWS) header parameter that contains the certificate chain that corresponds to the key you use to digitally sign the JWS.
 
@@ -10,15 +11,16 @@ A JSON Web Signature (JWS) header parameter that contains the certificate chain 
 
 ## Declaration
 
-```swift
+```
 [string] x5c
 ```
 
 ## See Also
 
-- [object JWSDecodedHeader](jwsdecodedheader.md)
+### Real-time request header
+- [object JWSDecodedHeader](./jwsdecodedheader.md)
   A decoded JSON Web Signature (JWS) header.
-- [type alg](alg.md)
+- [type alg](./alg.md)
   An algorithm you use to sign a JSON Web Signature (JWS).
 
 

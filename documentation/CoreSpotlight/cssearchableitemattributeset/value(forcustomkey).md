@@ -1,7 +1,8 @@
 # value(forCustomKey:)
 
 **Framework**: Core Spotlight  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value associated with the specified custom attribute key.
 
@@ -18,6 +19,10 @@ Returns the value associated with the specified custom attribute key.
 func value(forCustomKey key: CSCustomAttributeKey) -> (any NSSecureCoding)?
 ```
 
+```objc
+- (id<NSSecureCoding>) valueForCustomKey:(CSCustomAttributeKey *) key;
+```
+
 #### Return Value
 
 The value associated with the custom attribute key.
@@ -28,7 +33,8 @@ The value associated with the custom attribute key.
 
 ## See Also
 
-- [func setValue((any NSSecureCoding)?, forCustomKey: CSCustomAttributeKey)](cssearchableitemattributeset/setvalue(_:forcustomkey:).md)
+### Accessing custom attributes
+- [func setValue((any NSSecureCoding)?, forCustomKey: CSCustomAttributeKey)](./setvalue%28_,forcustomkey%29.md)
   Sets the value for a custom attribute key.
 
 

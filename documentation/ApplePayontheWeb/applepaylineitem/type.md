@@ -1,7 +1,8 @@
 # type
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether the line item is final or pending.
 
@@ -11,33 +12,34 @@ A value that indicates whether the line item is final or pending.
 
 ## Declaration
 
-```swift
+```
 ApplePayLineItemType type;
 ```
 
 #### Discussion
 
-See [`ApplePayLineItemType`](applepaylineitemtype.md) for valid values.
+See [`ApplePayLineItemType`](../applepaylineitemtype.md) for valid values.
 
 The default value is `final`.
 
-Note that if a line item’s [`type`](applepaylineitem/type.md) is `pending`, the Apple Pay payment sheet doesn’t display the value in [`amount`](applepaylineitem/amount.md), and instead displays “pending”.
+Note that if a line item’s [`type`](./type.md) is `pending`, the Apple Pay payment sheet doesn’t display the value in [`amount`](./amount.md), and instead displays “pending”.
 
-If a line item’s [`type`](applepaylineitem/type.md) is `final`, the payment sheet displays the value in [`amount`](applepaylineitem/amount.md).
+If a line item’s [`type`](./type.md) is `final`, the payment sheet displays the value in [`amount`](./amount.md).
 
 ## Topics
 
 ### Line Item Type
-- [ApplePayLineItemType](applepaylineitemtype.md)
+- [ApplePayLineItemType](../applepaylineitemtype.md)
   A type that indicates whether a line item is final or pending.
 
 ## See Also
 
-- [label](applepaylineitem/label.md)
+### Setting line item properties
+- [label](./label.md)
   A required value that’s a short, localized description of the line item.
-- [amount](applepaylineitem/amount.md)
+- [amount](./amount.md)
   A required value that’s the monetary amount of the line item.
-- [ApplePayLineItemType](applepaylineitemtype.md)
+- [ApplePayLineItemType](../applepaylineitemtype.md)
   A type that indicates whether a line item is final or pending.
 
 

@@ -1,7 +1,8 @@
 # open(_:options:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an already-loaded layer at the identifier, or opens it from the resolved asset path.
 
@@ -25,7 +26,7 @@ The opened layer.
 
 #### Discussion
 
-> **Note**: An error if the layer cannot be opened or created.
+> **Throws**: An error if the layer cannot be opened or created.
 
 ## Parameters
 
@@ -34,11 +35,12 @@ The opened layer.
 
 ## See Also
 
-- [static func find(identifier: String) -> USDLayer?](usdlayer/find(identifier:).md)
+### Opening and finding layers
+- [static func find(identifier: String) -> USDLayer?](./find%28identifier%29.md)
   Returns an already-loaded layer with this identifier, or `nil` if none is loaded. Does no I/O.
-- [USDLayer.OpenOptions](usdlayer/openoptions.md)
+- [USDLayer.OpenOptions](./openoptions.md)
   Options for opening a layer.
-- [USDLayer.Permission](usdlayer/permission.md)
+- [USDLayer.Permission](./permission.md)
   Access permission for a spec.
 
 

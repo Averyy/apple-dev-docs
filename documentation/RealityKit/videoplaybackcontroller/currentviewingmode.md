@@ -1,7 +1,8 @@
 # currentViewingMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Is the currently playing video in mono or stereo? This is optional because the video may not currently be playing, or the mode is otherwise not available.
 

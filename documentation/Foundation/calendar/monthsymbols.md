@@ -1,7 +1,8 @@
 # monthSymbols
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of months in this calendar, localized to the Calendar’s `locale`.
 
@@ -28,15 +29,16 @@ For example, for English in the Gregorian calendar, returns `["January", "Februa
 
 ## See Also
 
-- [var shortMonthSymbols: [String]](calendar/shortmonthsymbols.md)
+### Getting Month Symbols
+- [var shortMonthSymbols: [String]](./shortmonthsymbols.md)
   A list of shorter-named months in this calendar, localized to the Calendar’s `locale`.
-- [var veryShortMonthSymbols: [String]](calendar/veryshortmonthsymbols.md)
+- [var veryShortMonthSymbols: [String]](./veryshortmonthsymbols.md)
   A list of very-shortly-named months in this calendar, localized to the Calendar’s `locale`.
-- [var standaloneMonthSymbols: [String]](calendar/standalonemonthsymbols.md)
+- [var standaloneMonthSymbols: [String]](./standalonemonthsymbols.md)
   A list of standalone months in this calendar, localized to the Calendar’s `locale`.
-- [var shortStandaloneMonthSymbols: [String]](calendar/shortstandalonemonthsymbols.md)
+- [var shortStandaloneMonthSymbols: [String]](./shortstandalonemonthsymbols.md)
   A list of shorter-named standalone months in this calendar, localized to the Calendar’s `locale`.
-- [var veryShortStandaloneMonthSymbols: [String]](calendar/veryshortstandalonemonthsymbols.md)
+- [var veryShortStandaloneMonthSymbols: [String]](./veryshortstandalonemonthsymbols.md)
   A list of very-shortly-named standalone months in this calendar, localized to the Calendar’s `locale`.
 
 

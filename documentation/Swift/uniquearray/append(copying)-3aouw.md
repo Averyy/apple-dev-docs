@@ -1,7 +1,8 @@
 # append(copying:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the elements of a span to the end of this array.
 
@@ -24,7 +25,7 @@ mutating func append(copying newElements: Span<Element>)
 
 If the array does not have sufficient capacity to hold enough elements, then this reallocates the array’s storage to extend its capacity, using a geometric growth rate.
 
-> **Note**: O(`newElements.count`) when amortized over many invocations on the same array.
+> **Complexity**: O(`newElements.count`) when amortized over many invocations on the same array.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # documentInteractionControllerRectForPreview(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when a document interaction controller needs the rectangle to use as the starting point for animating the display of a document preview.
 
@@ -17,13 +18,17 @@ Called when a document interaction controller needs the rectangle to use as the 
 optional func documentInteractionControllerRectForPreview(_ controller: UIDocumentInteractionController) -> CGRect
 ```
 
+```objc
+- (CGRect) documentInteractionControllerRectForPreview:(UIDocumentInteractionController *) controller;
+```
+
 #### Return Value
 
-A rectangle in the coordinate system of the view returned by the [`documentInteractionControllerViewForPreview(_:)`](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerviewforpreview(_:).md) method.
+A rectangle in the coordinate system of the view returned by the [`documentInteractionControllerViewForPreview(_:)`](./documentinteractioncontrollerviewforpreview%28_%29.md) method.
 
 #### Discussion
 
-If you do not implement the [`documentInteractionControllerViewForPreview(_:)`](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerviewforpreview(_:).md) method, or if you do implement it but return a `nil` value, this method is not called. If you do not implement this method, the starting rectangle is assumed to be the bounds of the view returned by the [`documentInteractionControllerViewForPreview(_:)`](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerviewforpreview(_:).md) method.
+If you do not implement the [`documentInteractionControllerViewForPreview(_:)`](./documentinteractioncontrollerviewforpreview%28_%29.md) method, or if you do implement it but return a `nil` value, this method is not called. If you do not implement this method, the starting rectangle is assumed to be the bounds of the view returned by the [`documentInteractionControllerViewForPreview(_:)`](./documentinteractioncontrollerviewforpreview%28_%29.md) method.
 
 ## Parameters
 
@@ -31,9 +36,10 @@ If you do not implement the [`documentInteractionControllerViewForPreview(_:)`](
 
 ## See Also
 
-- [func documentInteractionControllerViewControllerForPreview(UIDocumentInteractionController) -> UIViewController](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerviewcontrollerforpreview(_:).md)
+### Configuring the parent view controller
+- [func documentInteractionControllerViewControllerForPreview(UIDocumentInteractionController) -> UIViewController](./documentinteractioncontrollerviewcontrollerforpreview%28_%29.md)
   Called when a document interaction controller needs a view controller for presenting a document preview.
-- [func documentInteractionControllerViewForPreview(UIDocumentInteractionController) -> UIView?](uidocumentinteractioncontrollerdelegate/documentinteractioncontrollerviewforpreview(_:).md)
+- [func documentInteractionControllerViewForPreview(UIDocumentInteractionController) -> UIView?](./documentinteractioncontrollerviewforpreview%28_%29.md)
   Called when a document interaction controller needs the starting point for animating the display of a document preview.
 
 

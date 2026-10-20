@@ -1,7 +1,8 @@
 # UnicodeDecodingResult.emptyInput
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication that no more Unicode scalars are available in the input.
 

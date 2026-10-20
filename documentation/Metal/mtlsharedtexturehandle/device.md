@@ -1,7 +1,8 @@
 # device
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device object that created the texture.
 
@@ -19,13 +20,18 @@ The device object that created the texture.
 var device: any MTLDevice { get }
 ```
 
+```objc
+@property (readonly) id<MTLDevice> device;
+```
+
 #### Discussion
 
-A texture is always associated with the [`MTLDevice`](mtldevice.md) that created it and can be used only with that device.
+A texture is always associated with the [`MTLDevice`](../mtldevice.md) that created it and can be used only with that device.
 
 ## See Also
 
-- [var label: String?](mtlsharedtexturehandle/label.md)
+### Identifying the shared texture handle
+- [var label: String?](./label.md)
   A string that identifies the texture.
 
 

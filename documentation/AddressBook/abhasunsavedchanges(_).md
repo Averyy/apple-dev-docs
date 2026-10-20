@@ -1,17 +1,22 @@
 # ABHasUnsavedChanges(_:)
 
 **Framework**: Address Book  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns whether if there are unsaved changes in the address book.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func ABHasUnsavedChanges(_ addressBook: ABAddressBookRef!) -> Bool
+```
+
+```c
+extern bool ABHasUnsavedChanges(ABAddressBookRef addressBook);
 ```
 
 #### Return Value
@@ -28,11 +33,12 @@ The unsaved changes flag is set automatically whenever changes are made to the a
 
 ## See Also
 
-- [func ABGetSharedAddressBook() -> Unmanaged<ABAddressBookRef>!](abgetsharedaddressbook().md)
+### Address Book
+- [func ABGetSharedAddressBook() -> Unmanaged<ABAddressBookRef>!](./abgetsharedaddressbook%28%29.md)
   Returns the unique shared ABAddressBook object.
-- [func ABCopyDefaultCountryCode(ABAddressBookRef!) -> Unmanaged<CFString>!](abcopydefaultcountrycode(_:).md)
+- [func ABCopyDefaultCountryCode(ABAddressBookRef!) -> Unmanaged<CFString>!](./abcopydefaultcountrycode%28_%29.md)
   Returns the default country code for records with unspecified country codes.
-- [func ABSave(ABAddressBookRef!) -> Bool](absave(_:).md)
+- [func ABSave(ABAddressBookRef!) -> Bool](./absave%28_%29.md)
   Saves all the changes made since the last save.
 
 

@@ -1,7 +1,8 @@
 # timeZone
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time zone used to create and parse date representations. When unspecified, GMT is used.
 
@@ -20,14 +21,19 @@ The time zone used to create and parse date representations. When unspecified, G
 var timeZone: TimeZone! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSTimeZone * timeZone;
+```
+
 #### Discussion
 
 Resetting this property can incur a significant performance cost, as it may cause internal state to be regenerated.
 
 ## See Also
 
-- [var formatOptions: ISO8601DateFormatter.Options](iso8601dateformatter/formatoptions.md)
-  Options for generating and parsing ISO 8601 date representations. See [`ISO8601DateFormatter.Options`](iso8601dateformatter/options.md) for possible values.
+### Configuring the Formatter
+- [var formatOptions: ISO8601DateFormatter.Options](./formatoptions.md)
+  Options for generating and parsing ISO 8601 date representations. See [`ISO8601DateFormatter.Options`](./options.md) for possible values.
 
 
 ---

@@ -1,7 +1,8 @@
 # PulseSymbolEffect
 
 **Framework**: Symbols  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that fades the opacity of some or all layers in a symbol-based image.
 
@@ -60,48 +61,49 @@ imageView2.addSymbolEffect(.pulse.wholeSymbol, options: .repeat(3))
 ## Topics
 
 ### Determining effect scope
-- [var byLayer: PulseSymbolEffect](pulsesymboleffect/bylayer.md)
+- [var byLayer: PulseSymbolEffect](./pulsesymboleffect/bylayer.md)
   An effect requesting an animation that pulses only the layers marked to always pulse.
-- [var wholeSymbol: PulseSymbolEffect](pulsesymboleffect/wholesymbol.md)
+- [var wholeSymbol: PulseSymbolEffect](./pulsesymboleffect/wholesymbol.md)
   An effect requesting an animation that pulses all layers simultaneously.
 ### Accessing the configuration
-- [var configuration: SymbolEffectConfiguration](pulsesymboleffect/configuration.md)
+- [var configuration: SymbolEffectConfiguration](./pulsesymboleffect/configuration.md)
   The configuration for the effect.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [DiscreteSymbolEffect](discretesymboleffect.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [IndefiniteSymbolEffect](indefinitesymboleffect.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SymbolEffect](symboleffect.md)
+- [Copyable](../Swift/copyable.md)
+- [DiscreteSymbolEffect](./discretesymboleffect.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [IndefiniteSymbolEffect](./indefinitesymboleffect.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SymbolEffect](./symboleffect.md)
 
 ## See Also
 
-- [struct AppearSymbolEffect](appearsymboleffect.md)
+### Symbol effect types
+- [struct AppearSymbolEffect](./appearsymboleffect.md)
   A type that makes the layers of a symbol-based image appear separately or as a whole.
-- [struct AutomaticSymbolEffect](automaticsymboleffect.md)
+- [struct AutomaticSymbolEffect](./automaticsymboleffect.md)
   A type that applies the default animation to a symbol-based image in a context-sensitive manner.
-- [struct BounceSymbolEffect](bouncesymboleffect.md)
+- [struct BounceSymbolEffect](./bouncesymboleffect.md)
   A type that applies a transitory scaling effect, or bounce, to the layers in a symbol-based image separately or as a whole.
-- [struct DisappearSymbolEffect](disappearsymboleffect.md)
+- [struct DisappearSymbolEffect](./disappearsymboleffect.md)
   A type that makes the layers of a symbol-based image disappear separately or as a whole.
-- [struct ReplaceSymbolEffect](replacesymboleffect.md)
+- [struct ReplaceSymbolEffect](./replacesymboleffect.md)
   A type that replaces the layers of one symbol-based image with those of another.
-- [struct ScaleSymbolEffect](scalesymboleffect.md)
+- [struct ScaleSymbolEffect](./scalesymboleffect.md)
   A type that scales the layers in a symbol-based image separately or as a whole.
-- [struct VariableColorSymbolEffect](variablecolorsymboleffect.md)
+- [struct VariableColorSymbolEffect](./variablecolorsymboleffect.md)
   A type that replaces the opacity of variable layers in a symbol-based image in a repeatable sequence.
-- [struct BreatheSymbolEffect](breathesymboleffect.md)
+- [struct BreatheSymbolEffect](./breathesymboleffect.md)
   A symbol effect that applies the Breathe animation to symbol images.
-- [struct RotateSymbolEffect](rotatesymboleffect.md)
+- [struct RotateSymbolEffect](./rotatesymboleffect.md)
   A symbol effect that applies the Rotate animation to symbol images.
-- [struct WiggleSymbolEffect](wigglesymboleffect.md)
+- [struct WiggleSymbolEffect](./wigglesymboleffect.md)
   A symbol effect that applies the Wiggle animation to symbol images.
 
 

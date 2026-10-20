@@ -1,7 +1,8 @@
 # relative(to:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns this path made relative to the given anchor.
 

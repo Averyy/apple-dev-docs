@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Obtain the size of the heap, in bytes, this pipeline requires during the execution.
@@ -20,9 +21,13 @@ Obtain the size of the heap, in bytes, this pipeline requires during the executi
 var intermediatesHeapSize: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger intermediatesHeapSize;
+```
+
 #### Discussion
 
-Use this value to allocate a [`MTLHeap`](mtlheap.md) instance of sufficient size that you can then provide to [`dispatchNetwork(intermediatesHeap:)`](mtl4machinelearningcommandencoder/dispatchnetwork(intermediatesheap:).md).
+Use this value to allocate a [`MTLHeap`](../mtlheap.md) instance of sufficient size that you can then provide to [`dispatchNetwork(intermediatesHeap:)`](../mtl4machinelearningcommandencoder/dispatchnetwork%28intermediatesheap%29.md).
 
 Metal uses this heap to store intermediate data as it executes the pipeline. It is your responsibility to provide a heap at least as large as this property requests.
 

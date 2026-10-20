@@ -1,7 +1,8 @@
 # string(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a formatted string for a date relative to the current date and time.
 
@@ -20,13 +21,17 @@ Creates a formatted string for a date relative to the current date and time.
 func string(for obj: Any?) -> String?
 ```
 
+```objc
+- (NSString *) stringForObjectValue:(id) obj;
+```
+
 #### Return Value
 
-A string that represents the date interval between a date and the current date and time, or `nil` if obj isn’t an instance of [`NSDate`](nsdate.md).
+A string that represents the date interval between a date and the current date and time, or `nil` if obj isn’t an instance of [`NSDate`](../nsdate.md).
 
 #### Discussion
 
-To determine the relative interval, the formatter uses [`date`](nsdate/date.md) as the reference date.
+To determine the relative interval, the formatter uses [`date`](../nsdate/date.md) as the reference date.
 
 ## Parameters
 
@@ -34,11 +39,12 @@ To determine the relative interval, the formatter uses [`date`](nsdate/date.md) 
 
 ## See Also
 
-- [func localizedString(for: Date, relativeTo: Date) -> String](relativedatetimeformatter/localizedstring(for:relativeto:).md)
+### Converting Dates to Formatted Strings
+- [func localizedString(for: Date, relativeTo: Date) -> String](./localizedstring%28for,relativeto%29.md)
   Formats the date interval from the reference date to the specified date using the formatter’s calendar.
-- [func localizedString(from: DateComponents) -> String](relativedatetimeformatter/localizedstring(from:).md)
+- [func localizedString(from: DateComponents) -> String](./localizedstring%28from%29.md)
   Formats a relative time represented by the specified date components.
-- [func localizedString(fromTimeInterval: TimeInterval) -> String](relativedatetimeformatter/localizedstring(fromtimeinterval:).md)
+- [func localizedString(fromTimeInterval: TimeInterval) -> String](./localizedstring%28fromtimeinterval%29.md)
   Formats the specified time interval using the formatter’s calendar.
 
 

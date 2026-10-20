@@ -1,7 +1,8 @@
 # mean
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mean of the distribution.
 
@@ -17,6 +18,10 @@ The mean of the distribution.
 
 ```swift
 var mean: Float { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) float mean;
 ```
 
 #### Discussion

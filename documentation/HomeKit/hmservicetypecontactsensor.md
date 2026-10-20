@@ -1,7 +1,8 @@
 # HMServiceTypeContactSensor
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A contact sensor service.
 
@@ -19,13 +20,18 @@ A contact sensor service.
 let HMServiceTypeContactSensor: String
 ```
 
+```c
+extern NSString * const HMServiceTypeContactSensor;
+```
+
 ## See Also
 
-- [let HMServiceTypeMotionSensor: String](hmservicetypemotionsensor.md)
+### Safety and Security
+- [let HMServiceTypeMotionSensor: String](./hmservicetypemotionsensor.md)
   A motion sensor service.
-- [let HMServiceTypeOccupancySensor: String](hmservicetypeoccupancysensor.md)
+- [let HMServiceTypeOccupancySensor: String](./hmservicetypeoccupancysensor.md)
   An occupancy sensor service.
-- [let HMServiceTypeSecuritySystem: String](hmservicetypesecuritysystem.md)
+- [let HMServiceTypeSecuritySystem: String](./hmservicetypesecuritysystem.md)
   A security system service.
 
 

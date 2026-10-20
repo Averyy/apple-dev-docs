@@ -1,7 +1,8 @@
 # GameCenterAchievementCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,15 +11,15 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAchievementCreateRequest.Data.Relationships.GameCenterDetail](gamecenterachievementcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
-- [object GameCenterAchievementCreateRequest.Data.Relationships.GameCenterGroup](gamecenterachievementcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary.md)
+- [object GameCenterAchievementCreateRequest.Data.Relationships.GameCenterDetail](./relationships-data.dictionary/gamecenterdetail-data.dictionary.md)
+- [object GameCenterAchievementCreateRequest.Data.Relationships.GameCenterGroup](./relationships-data.dictionary/gamecentergroup-data.dictionary.md)
 
 ## Properties
 
@@ -27,7 +28,8 @@ object GameCenterAchievementCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object GameCenterAchievementCreateRequest.Data.Attributes](gamecenterachievementcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object GameCenterAchievementCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a achievement resource.
 
 

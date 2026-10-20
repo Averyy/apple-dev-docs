@@ -1,7 +1,8 @@
 # moveItem(withIdentifier:afterItemWithIdentifier:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Moves the item from its current position in the snapshot to the position immediately after the specified item.
 
@@ -14,6 +15,10 @@ Moves the item from its current position in the snapshot to the position immedia
 func moveItem(withIdentifier fromIdentifier: Any, afterItemWithIdentifier toIdentifier: Any)
 ```
 
+```objc
+- (void) moveItemWithIdentifier:(ItemIdentifierType) fromIdentifier afterItemWithIdentifier:(ItemIdentifierType) toIdentifier;
+```
+
 ## Parameters
 
 - `fromIdentifier`: The identifier of the item to move in the snapshot.
@@ -21,11 +26,12 @@ func moveItem(withIdentifier fromIdentifier: Any, afterItemWithIdentifier toIden
 
 ## See Also
 
-- [func moveItem(withIdentifier: Any, beforeItemWithIdentifier: Any)](nsdiffabledatasourcesnapshotreference/moveitem(withidentifier:beforeitemwithidentifier:).md)
+### Reordering items and sections
+- [func moveItem(withIdentifier: Any, beforeItemWithIdentifier: Any)](./moveitem%28withidentifier,beforeitemwithidentifier%29.md)
   Moves the item from its current position in the snapshot to the position immediately before the specified item.
-- [func moveSection(withIdentifier: Any, afterSectionWithIdentifier: Any)](nsdiffabledatasourcesnapshotreference/movesection(withidentifier:aftersectionwithidentifier:).md)
+- [func moveSection(withIdentifier: Any, afterSectionWithIdentifier: Any)](./movesection%28withidentifier,aftersectionwithidentifier%29.md)
   Moves the section from its current position in the snapshot to the position immediately after the specified section.
-- [func moveSection(withIdentifier: Any, beforeSectionWithIdentifier: Any)](nsdiffabledatasourcesnapshotreference/movesection(withidentifier:beforesectionwithidentifier:).md)
+- [func moveSection(withIdentifier: Any, beforeSectionWithIdentifier: Any)](./movesection%28withidentifier,beforesectionwithidentifier%29.md)
   Moves the section from its current position in the snapshot to the position immediately before the specified section.
 
 

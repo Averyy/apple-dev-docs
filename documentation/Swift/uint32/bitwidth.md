@@ -1,7 +1,8 @@
 # bitWidth
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The number of bits used for the underlying binary representation of values of this type.
 

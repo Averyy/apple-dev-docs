@@ -1,7 +1,8 @@
 # NSAsynchronousFetchRequest
 
 **Framework**: Core Data  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A fetch request that retrieves results asynchronously and supports progress notification.
 
@@ -10,7 +11,7 @@ A fetch request that retrieves results asynchronously and supports progress noti
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,39 +21,44 @@ A fetch request that retrieves results asynchronously and supports progress noti
 class NSAsynchronousFetchRequest<ResultType> where ResultType : NSFetchRequestResult
 ```
 
+```objc
+@interface NSAsynchronousFetchRequest : NSPersistentStoreRequest
+```
+
 ## Topics
 
 ### Initializing a Request
-- [init(fetchRequest: NSFetchRequest<ResultType>, completionBlock: ((NSAsynchronousFetchResult<ResultType>) -> Void)?)](nsasynchronousfetchrequest/init(fetchrequest:completionblock:).md)
+- [init(fetchRequest: NSFetchRequest<ResultType>, completionBlock: ((NSAsynchronousFetchResult<ResultType>) -> Void)?)](./nsasynchronousfetchrequest/init%28fetchrequest,completionblock%29.md)
   Initializes a new asynchronous fetch request configured with the provided fetch request and completion block.
 ### Preparing a Request
-- [var completionBlock: NSPersistentStoreAsynchronousFetchResultCompletionBlock?](nsasynchronousfetchrequest/completionblock.md)
+- [var completionBlock: NSPersistentStoreAsynchronousFetchResultCompletionBlock?](./nsasynchronousfetchrequest/completionblock.md)
   The block that is executed when the fetch request has completed.
-- [var estimatedResultCount: Int](nsasynchronousfetchrequest/estimatedresultcount.md)
+- [var estimatedResultCount: Int](./nsasynchronousfetchrequest/estimatedresultcount.md)
   A configuration parameter that assists Core Data with scheduling the asynchronous fetch request.
-- [var fetchRequest: NSFetchRequest<ResultType>](nsasynchronousfetchrequest/fetchrequest.md)
+- [var fetchRequest: NSFetchRequest<ResultType>](./nsasynchronousfetchrequest/fetchrequest.md)
   The underlying fetch request that is executed asynchronously.
 
 ## Relationships
 
 ### Inherits From
-- [NSPersistentStoreRequest](nspersistentstorerequest.md)
+- [NSPersistentStoreRequest](./nspersistentstorerequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSFetchRequest](nsfetchrequest.md)
+### Fetch requests
+- [class NSFetchRequest](./nsfetchrequest.md)
   A description of search criteria used to retrieve data from a persistent store.
-- [class NSAsynchronousFetchResult](nsasynchronousfetchresult.md)
+- [class NSAsynchronousFetchResult](./nsasynchronousfetchresult.md)
   A fetch result object that encompasses the response from an executed asynchronous fetch request.
-- [class NSFetchedResultsController](nsfetchedresultscontroller.md)
+- [class NSFetchedResultsController](./nsfetchedresultscontroller.md)
   A controller that you use to manage the results of a Core Data fetch request and to display data to the user.
 
 

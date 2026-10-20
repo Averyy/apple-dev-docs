@@ -1,7 +1,8 @@
 # addItems(items)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a collection of annotations, overlays, or other item collections to the map.
 
@@ -10,13 +11,13 @@ Adds a collection of annotations, overlays, or other item collections to the map
 
 ## Declaration
 
-```swift
+```
 addItems(items: (Overlay | Annotation)[]): (Annotation | Overlay)[];
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 #### Return Value
 
@@ -24,17 +25,18 @@ Returns an array of items added to the map.
 
 #### Discussion
 
-Use [`addItems()`](map/additems.md) to add elements to the map after importing them from [`importGeoJSON()`](mapkit/importgeojson.md).
+Use [`addItems()`](./additems.md) to add elements to the map after importing them from [`importGeoJSON()`](../mapkit/importgeojson.md).
 
-This method doesn’t change the map’s visible region. Use [`showItems()`](map/showitems.md) with the list of items to change the map’s view.
+This method doesn’t change the map’s visible region. Use [`showItems()`](./showitems.md) with the list of items to change the map’s view.
 
 ## Parameters
 
-- `items`: An array of annotations, overlays, or the data returned from [`importGeoJSON()`](mapkit/importgeojson.md) to display on the map.
+- `items`: An array of annotations, overlays, or the data returned from [`importGeoJSON()`](../mapkit/importgeojson.md) to display on the map.
 
 ## See Also
 
-- [removeItems(items)](map/removeitems.md)
+### Adding and removing geographical features
+- [removeItems(items)](./removeitems.md)
   Removes a collection of annotations, overlays, or other item collections from the map.
 
 

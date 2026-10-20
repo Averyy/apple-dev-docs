@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a value containing the specified dictionary.
 

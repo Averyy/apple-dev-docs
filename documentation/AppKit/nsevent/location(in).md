@@ -1,17 +1,22 @@
 # location(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the location of the receiver in the coordinate system of the given node.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func location(in node: SKNode) -> CGPoint
+```
+
+```objc
+- (CGPoint) locationInNode:(SKNode *) node;
 ```
 
 #### Return Value

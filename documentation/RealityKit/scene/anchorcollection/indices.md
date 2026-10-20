@@ -1,7 +1,8 @@
 # Scene.AnchorCollection.Indices
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the indices that are valid for subscripting the collection, in ascending order.
 
@@ -11,7 +12,7 @@ A type that represents the indices that are valid for subscripting the collectio
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

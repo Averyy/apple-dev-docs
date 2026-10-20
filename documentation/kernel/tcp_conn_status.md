@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct tcp_conn_status;
 ```
 

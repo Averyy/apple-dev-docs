@@ -1,7 +1,8 @@
 # init(title:identifier:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that describes a location where a virtual conference takes place.
 
@@ -17,6 +18,10 @@ Creates an object that describes a location where a virtual conference takes pla
 
 ```swift
 init(title: String, identifier: EKVirtualConferenceRoomTypeIdentifier)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title identifier:(EKVirtualConferenceRoomTypeIdentifier) identifier;
 ```
 
 #### Return Value

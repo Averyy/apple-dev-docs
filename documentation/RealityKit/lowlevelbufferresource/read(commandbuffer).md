@@ -1,7 +1,8 @@
 # read(commandBuffer:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Metal buffer containing the current contents of the buffer resource for GPU read operations.
 
@@ -31,7 +32,8 @@ The renderer waits for the provided command buffer to complete before discarding
 
 ## See Also
 
-- [func read<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](lowlevelbufferresource/read(_:).md)
+### Reading buffer contents
+- [func read<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](./read%28_%29.md)
   Reads the current contents of the buffer resource synchronously on the CPU.
 
 

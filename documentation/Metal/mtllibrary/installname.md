@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The installation name for a dynamic library.
@@ -20,9 +21,13 @@ The installation name for a dynamic library.
 var installName: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * installName;
+```
+
 #### Discussion
 
-Metal ignores this property if the library’s [`type`](mtllibrary/type.md) isn’t  [`MTLLibraryType.dynamic`](mtllibrarytype/dynamic.md). Otherwise this property is a non-`nil` value specifying a file system path to the dynamic library.
+Metal ignores this property if the library’s [`type`](./type.md) isn’t  [`MTLLibraryType.dynamic`](../mtllibrarytype/dynamic.md). Otherwise this property is a non-`nil` value specifying a file system path to the dynamic library.
 
 Metal uses the installation name whenever you create a pipeline state object that directly or indirectly relies on a dynamic library. Metal embeds the installation name into any Metal library that links against the dynamic library.
 
@@ -36,7 +41,8 @@ Use a relative path when you include the dynamic library as part of a bundle or 
 
 ## See Also
 
-- [var type: MTLLibraryType](mtllibrary/type.md)
+### Querying basic library attributes
+- [var type: MTLLibraryType](./type.md)
   The library’s basic type.
 
 

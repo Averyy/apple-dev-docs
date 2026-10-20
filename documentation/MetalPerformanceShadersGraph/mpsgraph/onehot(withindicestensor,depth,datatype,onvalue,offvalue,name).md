@@ -1,7 +1,8 @@
 # oneHot(withIndicesTensor:depth:dataType:onValue:offValue:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a oneHot operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a oneHot operation and returns the result tensor.
 
 ```swift
 func oneHot(withIndicesTensor indicesTensor: MPSGraphTensor, depth: Int, dataType: MPSDataType, onValue: Double, offValue: Double, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) oneHotWithIndicesTensor:(MPSGraphTensor *) indicesTensor depth:(NSUInteger) depth dataType:(MPSDataType) dataType onValue:(double) onValue offValue:(double) offValue name:(NSString *) name;
 ```
 
 #### Return Value

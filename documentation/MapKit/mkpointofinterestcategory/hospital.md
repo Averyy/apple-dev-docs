@@ -1,7 +1,8 @@
 # hospital
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The point of interest category for hospitals.
 
@@ -20,13 +21,18 @@ The point of interest category for hospitals.
 static let hospital: MKPointOfInterestCategory
 ```
 
+```c
+extern MKPointOfInterestCategory const MKPointOfInterestCategoryHospital;
+```
+
 ## See Also
 
-- [static let fireStation: MKPointOfInterestCategory](mkpointofinterestcategory/firestation.md)
+### Health and safety
+- [static let fireStation: MKPointOfInterestCategory](./firestation.md)
   The point of interest category for fire stations.
-- [static let pharmacy: MKPointOfInterestCategory](mkpointofinterestcategory/pharmacy.md)
+- [static let pharmacy: MKPointOfInterestCategory](./pharmacy.md)
   The point of interest category for pharmacies.
-- [static let police: MKPointOfInterestCategory](mkpointofinterestcategory/police.md)
+- [static let police: MKPointOfInterestCategory](./police.md)
   The point of interest category for police.
 
 

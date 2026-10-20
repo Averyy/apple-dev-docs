@@ -1,7 +1,8 @@
 # formRemainder(dividingBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces this value with the remainder of itself divided by the given value.
 

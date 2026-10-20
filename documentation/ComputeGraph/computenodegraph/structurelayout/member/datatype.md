@@ -1,9 +1,10 @@
 # dataType
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Data type. For types such as `.struct` and `.pointer`, see [`typeName`](computenodegraph/structurelayout/member/typename.md) and `components` for additional information.
+Data type. For types such as `.struct` and `.pointer`, see [`typeName`](./typename.md) and `components` for additional information.
 
 **Availability**:
 - iOS 27.0+
@@ -12,7 +13,7 @@ Data type. For types such as `.struct` and `.pointer`, see [`typeName`](computen
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # boundingRegion
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map region that encloses the returned search results.
 
@@ -20,13 +21,18 @@ The map region that encloses the returned search results.
 var boundingRegion: MKCoordinateRegion { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKCoordinateRegion boundingRegion;
+```
+
 #### Discussion
 
 The returned region is the smallest bounding box that encloses all of the map items. If there’s only one search result, the size of the region may be `(0, 0)`.
 
 ## See Also
 
-- [var mapItems: [MKMapItem]](mklocalsearch/response/mapitems.md)
+### Getting the search results
+- [var mapItems: [MKMapItem]](./mapitems.md)
   An array of map items representing the search results.
 
 

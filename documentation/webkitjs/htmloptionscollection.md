@@ -1,7 +1,8 @@
 # HTMLOptionsCollection
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLOptionsCollection
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](htmloptionscollection/1633821-length.md)
-- [selectedIndex](htmloptionscollection/1633147-selectedindex.md)
+- [length](./htmloptionscollection/api-1633821-length.md)
+- [selectedIndex](./htmloptionscollection/api-1633147-selectedindex.md)
 ### Instance Methods
-- [add](htmloptionscollection/1629635-add.md)
-- [item](htmloptionscollection/2528137-item.md)
-- [namedItem](htmloptionscollection/1631040-nameditem.md)
-- [remove](htmloptionscollection/1631341-remove.md)
+- [add](./htmloptionscollection/api-1629635-add.md)
+- [item](./htmloptionscollection/api-2528137-item.md)
+- [namedItem](./htmloptionscollection/api-1631040-nameditem.md)
+- [remove](./htmloptionscollection/api-1631341-remove.md)
 
 ## Relationships
 

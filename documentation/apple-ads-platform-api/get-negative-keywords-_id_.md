@@ -1,7 +1,8 @@
 # Get a Negative Keyword
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve a single negative keyword by its unique identifier.
 
@@ -35,7 +36,7 @@ Deleted negative keywords remain retrievable by ID and never expose a `bid` fiel
 
 A campaign-level negative keyword. The `adGroupId` field is absent. This exclusion applies across all ad groups in the campaign.
 
-```None
+```
 GET https://api.ads.apple.com/v1/negative-keywords/777888999
 ```
 
@@ -63,7 +64,7 @@ GET https://api.ads.apple.com/v1/negative-keywords/777888999
 
 An ad-group-level negative keyword. The `adGroupId` field is present. This exclusion is scoped to that ad group only.
 
-```None
+```
 GET https://api.ads.apple.com/v1/negative-keywords/777888998
 ```
 
@@ -92,17 +93,33 @@ GET https://api.ads.apple.com/v1/negative-keywords/777888998
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`NegativeKeywordResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Negative Keyword](post-negative-keywords.md)
+- [Create a Negative Keyword](./post-negative-keywords.md)
   Create a negative keyword at the campaign or ad group level to prevent ads from showing for unwanted search terms.
-- [Query Negative Keywords](post-negative-keywords-query.md)
+- [Query Negative Keywords](./post-negative-keywords-query.md)
   Query negative keywords using structured filters, sorting, and pagination.
-- [Update a Negative Keyword](put-negative-keywords-_id_.md)
+- [Update a Negative Keyword](./put-negative-keywords-_id_.md)
   Update a negative keyword’s status to enable or pause its search term exclusion.
-- [Delete a Negative Keyword](delete-negative-keywords-_id_.md)
+- [Delete a Negative Keyword](./delete-negative-keywords-_id_.md)
   Soft-delete a negative keyword by ID.
 
 

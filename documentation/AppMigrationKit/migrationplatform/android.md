@@ -1,7 +1,8 @@
 # android
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Android platform, as used in a migration.
 

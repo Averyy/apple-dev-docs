@@ -1,7 +1,8 @@
 # backgroundContents
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents for the background of the thumbstick.
 
@@ -16,19 +17,24 @@ The contents for the background of the thumbstick.
 var backgroundContents: TCControlContents? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) TCControlContents * backgroundContents;
+```
+
 #### Discussion
 
 May be `nil`.
 
 ## See Also
 
-- [var hidesWhenNotPressed: Bool](tcthumbstick/hideswhennotpressed.md)
+### Inspecting a thumbstick
+- [var hidesWhenNotPressed: Bool](./hideswhennotpressed.md)
   A Boolean value that indicates whether to hide the thumbstick when it is not being pressed.
-- [var highlightDuration: TimeInterval](tcthumbstick/highlightduration.md)
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var stickContents: TCControlContents?](tcthumbstick/stickcontents.md)
+- [var stickContents: TCControlContents?](./stickcontents.md)
   The contents for the thumbstick itself.
-- [var stickSize: CGSize](tcthumbstick/sticksize.md)
+- [var stickSize: CGSize](./sticksize.md)
   The size (width, height) of the thumbstick stick itself in points.
 
 

@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The current location of the dragged image’s origin, in the base coordinate system of the destination object’s window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -16,13 +17,18 @@ The current location of the dragged image’s origin, in the base coordinate sys
 var draggedImageLocation: NSPoint { get }
 ```
 
+```objc
+@property (readonly) NSPoint draggedImageLocation;
+```
+
 #### Discussion
 
-The image moves along with the mouse pointer (the position of which is given by [`draggingLocation`](nsdragginginfo/dragginglocation.md)) but may be positioned at some offset.
+The image moves along with the mouse pointer (the position of which is given by [`draggingLocation`](./dragginglocation.md)) but may be positioned at some offset.
 
 ## See Also
 
-- [var draggedImage: NSImage?](nsdragginginfo/draggedimage.md)
+### Getting image information
+- [var draggedImage: NSImage?](./draggedimage.md)
   The image that represents the dragging item.
 
 

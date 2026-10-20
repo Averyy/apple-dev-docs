@@ -1,18 +1,19 @@
 # CFStringNormalizationForm.KC
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Compatibility decomposition followed by canonical composition.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ Compatibility decomposition followed by canonical composition.
 case KC
 ```
 
+```c
+kCFStringNormalizationFormKC
+```
+
 ## See Also
 
-- [CFStringNormalizationForm.D](cfstringnormalizationform/d.md)
+### Constants
+- [CFStringNormalizationForm.D](./d.md)
   Canonical decomposition.
-- [CFStringNormalizationForm.KD](cfstringnormalizationform/kd.md)
+- [CFStringNormalizationForm.KD](./kd.md)
   Compatibility decomposition.
-- [CFStringNormalizationForm.C](cfstringnormalizationform/c.md)
+- [CFStringNormalizationForm.C](./c.md)
   Canonical decomposition followed by canonical composition.
 
 

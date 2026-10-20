@@ -1,7 +1,8 @@
 # onTextChange
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A function the system calls when the text in a search or text field changes.
 
@@ -10,7 +11,7 @@ A function the system calls when the text in a search or text field changes.
 
 ## Declaration
 
-```swift
+```
 attribute function onTextChange;
 ```
 
@@ -20,7 +21,8 @@ Provide a callback function for the `onTextChange` attribute to respond to chang
 
 ## See Also
 
-- [text](keyboard/1627359-text.md)
+### Setting and Retrieving Text
+- [text](./api-1627359-text.md)
   The text inside a search or text field.
 
 

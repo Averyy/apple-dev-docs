@@ -1,7 +1,8 @@
 # AttributeScopes.CoreTextAttributes.TextAlignmentAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An attribute defining the explicit horizontal alignment of a paragraph.
 
@@ -23,17 +24,17 @@ enum TextAlignmentAttribute
 
 #### Overview
 
-> ❗ **Important**: Note that this attribute is not for usage with CoreText APIs directly, but exposed to give other frameworks common vocabulary to express the text alignment concept as defined by CoreText in Swift. For more details, see [`AttributeScopes.CoreTextAttributes`](attributescopes/coretextattributes.md).
+> ❗ **Important**: Note that this attribute is not for usage with CoreText APIs directly, but exposed to give other frameworks common vocabulary to express the text alignment concept as defined by CoreText in Swift. For more details, see [`AttributeScopes.CoreTextAttributes`](../coretextattributes.md).
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

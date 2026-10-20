@@ -1,7 +1,8 @@
 # QuickTime File Format
 
 **Framework**: QuickTime File Format  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 An object-oriented file format for the storage and exchange of digital media between devices, applications, and operating systems.
 
@@ -20,33 +21,33 @@ QuickTime files are used to store QuickTime movies, as well as other data. If yo
 ## Topics
 
 ### Essentials
-- [Storing and sharing media with QuickTime files](storing_and_sharing_media_with_quicktime_files.md)
+- [Storing and sharing media with QuickTime files](./storing_and_sharing_media_with_quicktime_files.md)
   Build QuickTime files with atoms, QT atoms, and atom containers.
 ### Movies
-- [Movie atoms](movie_atoms.md)
+- [Movie atoms](./movie_atoms.md)
   Atoms that act as a container for the information that describes a movie’s data.
-- [Track atoms](track_atoms.md)
+- [Track atoms](./track_atoms.md)
   Atoms that define a single track of a movie.
-- [Media atoms](media_atoms.md)
+- [Media atoms](./media_atoms.md)
   Atoms that describe and define a track’s media type and sample data.
-- [Sample atoms](sample_atoms.md)
+- [Sample atoms](./sample_atoms.md)
   Atoms that describe samples, which are single elements in a sequence of time-ordered data.
-- [Structuring movie data and features](structuring_movie_data_and_features.md)
+- [Structuring movie data and features](./structuring_movie_data_and_features.md)
   Build movies with compressed or reference data, and add features like effect descriptions and alternate subtitle tracks.
 ### Metadata
-- [Metadata atoms and types](metadata_atoms_and_types.md)
+- [Metadata atoms and types](./metadata_atoms_and_types.md)
   Store metadata in QuickTime Movie files.
 ### Media data
-- [Media data atom types](media_data_atom_types.md)
+- [Media data atom types](./media_data_atom_types.md)
   Store different types of media data, including video, sound, subtitles, and more.
 ### Data types
-- [Basic QuickTime data types](basic_data_types.md)
+- [Basic QuickTime data types](./basic_data_types.md)
   Express values in QuickTime files with common data types.
 ### Change log
-- [QuickTime File Format change log](revision_history.md)
+- [QuickTime File Format change log](./revision_history.md)
   Changes to the QuickTime File Format.
 ### Deprecated
-- [Deprecated atoms](deprecated_atoms.md)
+- [Deprecated atoms](./deprecated_atoms.md)
   Review unsupported atoms.
 
 

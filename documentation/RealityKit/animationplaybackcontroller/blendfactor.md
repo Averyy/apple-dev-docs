@@ -1,7 +1,8 @@
 # blendFactor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of influence the controller gives to its animation.
 
@@ -11,7 +12,7 @@ The level of influence the controller gives to its animation.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,17 +27,18 @@ You can run multiple animations on the same property, for example, walking and j
 
 ## See Also
 
-- [func pause()](animationplaybackcontroller/pause.md)
+### Inspecting and controlling playback
+- [func pause()](./pause%28%29.md)
   Pauses the animation.
-- [func resume()](animationplaybackcontroller/resume.md)
+- [func resume()](./resume%28%29.md)
   Resumes a paused animation.
-- [func stop()](animationplaybackcontroller/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops an animation.
-- [var isPlaying: Bool](animationplaybackcontroller/isplaying.md)
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean value that indicates whether the animation plays.
-- [var isStopped: Bool](animationplaybackcontroller/isstopped.md)
+- [var isStopped: Bool](./isstopped.md)
   A Boolean value that indicates whether the animation stopped.
-- [var isValid: Bool](animationplaybackcontroller/isvalid.md)
+- [var isValid: Bool](./isvalid.md)
   A Boolean value that indicates whether the animation controller is functional.
 
 

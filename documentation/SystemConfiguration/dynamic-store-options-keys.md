@@ -1,13 +1,14 @@
 # Dynamic Store Options Keys
 
-**Framework**: System Configuration
+**Framework**: System Configuration  
+**Role**: API Collection
 
 Keys that indicate the options for a dynamic store session.
 
 ## Topics
 
 ### Constants
-- [let kSCDynamicStoreUseSessionKeys: CFString](kscdynamicstoreusesessionkeys.md)
+- [let kSCDynamicStoreUseSessionKeys: CFString](./kscdynamicstoreusesessionkeys.md)
   All keys added or set into the dynamic store should be per-session keys.
 
 

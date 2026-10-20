@@ -1,7 +1,8 @@
 # DataDetector.Match.HighlightStyle.regular
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A highlight style that indicates the match is accentuated in a nonintrusive manner.
 

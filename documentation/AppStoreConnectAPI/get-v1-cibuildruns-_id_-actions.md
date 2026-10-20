@@ -1,7 +1,8 @@
 # List all actions for an xcode cloud build
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 List all actions Xcode Cloud performed during a specific build.
 
@@ -16,7 +17,7 @@ The example request below lists actions Xcode Cloud performed during a specific 
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/ciBuildRuns/074e6e3e-8343-49dd-87a3-c4274ba0faab/actions
 ```
 
@@ -86,19 +87,39 @@ GET https://api.appstoreconnect.apple.com/v1/ciBuildRuns/074e6e3e-8343-49dd-87a3
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Build Runs resource.
+
+### Query Parameters
+
 - `fields[ciBuildActions]` ([string]): Additional fields to include for each Actions resource returned by the response.
+
+  **Allowed Values**: `name`, `actionType`, `startedDate`, `finishedDate`, `issueCounts`, `executionProgress`, `completionStatus`, `isRequiredToPass`, `buildRun`, `artifacts`, `issues`, `testResults`
 - `limit` (integer): The number of Actions resources to return.
-- `fields[ciBuildRuns]` ([string])
-- `include` ([string])
+
+  **Maximum**: `200`
+- `fields[ciBuildRuns]` ([string]): **Allowed Values**: `number`, `createdDate`, `startedDate`, `finishedDate`, `sourceCommit`, `destinationCommit`, `isPullRequestBuild`, `issueCounts`, `executionProgress`, `completionStatus`, `startReason`, `cancelReason`, `builds`, `workflow`, `product`, `sourceBranchOrTag`, `destinationBranch`, `actions`, `pullRequest`
+- `include` ([string]): **Allowed Values**: `buildRun`
+
+## Responses
+
+- `200` OK (`CiBuildActionsResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read xcode cloud build information](get-v1-cibuildruns-_id_.md)
+### Getting Build Information
+- [Read xcode cloud build information](./get-v1-cibuildruns-_id_.md)
   Get information about a specific Xcode Cloud build.
-- [List all builds xcode cloud created in app store connect](get-v1-cibuildruns-_id_-builds.md)
+- [List all builds xcode cloud created in app store connect](./get-v1-cibuildruns-_id_-builds.md)
   List All App Store Connect and TestFlight Builds when it performed a build.
-- [List action IDs for a CI build run](get-v1-cibuildruns-_id_-relationships-actions.md)
-- [List build IDs for a CI build run](get-v1-cibuildruns-_id_-relationships-builds.md)
+- [List action IDs for a CI build run](./get-v1-cibuildruns-_id_-relationships-actions.md)
+- [List build IDs for a CI build run](./get-v1-cibuildruns-_id_-relationships-builds.md)
 
 
 ---

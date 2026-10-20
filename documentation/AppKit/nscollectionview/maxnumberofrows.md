@@ -1,17 +1,24 @@
 # maxNumberOfRows
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of rows that the collection view displays.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.14
+
+> **Deprecated**: Use NSCollectionViewGridLayout as the receiver's collectionViewLayout, setting its maximumNumberOfRows instead
 
 ## Declaration
 
 ```swift
 var maxNumberOfRows: Int { get set }
+```
+
+```objc
+@property NSUInteger maxNumberOfRows;
 ```
 
 #### Discussion
@@ -22,13 +29,14 @@ It is possible for a collection view to specify both a maximum number of rows an
 
 ## See Also
 
-- [var itemPrototype: NSCollectionViewItem?](nscollectionview/itemprototype.md)
+### Deprecated properties
+- [var itemPrototype: NSCollectionViewItem?](./itemprototype.md)
   The receiver’s collection view item prototype.
-- [var maxNumberOfColumns: Int](nscollectionview/maxnumberofcolumns.md)
+- [var maxNumberOfColumns: Int](./maxnumberofcolumns.md)
   The maximum number of columns that the collection view displays.
-- [var minItemSize: NSSize](nscollectionview/minitemsize.md)
+- [var minItemSize: NSSize](./minitemsize.md)
   The minimum size (in points) of items in the collection view grid.
-- [var maxItemSize: NSSize](nscollectionview/maxitemsize.md)
+- [var maxItemSize: NSSize](./maxitemsize.md)
   The maximum size (in points) of items in the collection view grid.
 
 

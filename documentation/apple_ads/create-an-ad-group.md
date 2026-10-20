@@ -1,28 +1,31 @@
 # Create an Ad Group
 
 **Framework**: Apple Ads  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Creates an ad group as part of a campaign.
 
 **Availability**:
-- Search Ads 5.0+
+- Search Ads 5.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Mentions
 
-- [Apple Ads Campaign Management API 5](apple-search-ads-campaign-management-api-5.md)
+- [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
 #### Discussion
 
-To create ad groups, use the associated `campaignId` as a resource in the URI. In the request, specify [`TargetingDimensions`](targetingdimensions.md) and apply it to ad groups.
+To create ad groups, use the associated `campaignId` as a resource in the URI. In the request, specify [`TargetingDimensions`](./targetingdimensions.md) and apply it to ad groups.
 
 > **Note**:  You can’t create or update ad groups with geotargeting for campaigns with multiple `countriesOrRegions`.
 
-##### Payload Example Create an Ad Group with Targeting
+##### Payload example: Create an ad group with targeting
 
 **Request**:
 
-```None
+```
 POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 
 {
@@ -124,11 +127,11 @@ POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 }
 ```
 
-##### Payload Example Create an Ad Group Without Targeting
+##### Payload example: Create an ad group without targeting
 
 **Request**:
 
-```None
+```
 POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 
 {
@@ -194,7 +197,7 @@ POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 }
 ```
 
-##### Payload Example Create an Automated Ad Group in a Campaign with a Maximize Conversions Bid Strategy
+##### Payload example: Create an automated ad group in a campaign with a Maximize Conversions bid strategy
 
 A Maximize Conversions campaign will return an error of `AUTOMATED_KEYWORDS_REQUIRED_AD_GROUP_MISSING` and not run until an automated ad group is created.
 
@@ -204,11 +207,11 @@ In automated ad groups:
 - Audience settings and keywords can’t be edited but optional ad groups can be added to the campaign and include audience settings and keywords.
 - Negative keywords can be added.
 
-A Maximize Conversions bid strategy requires the use of Search Match and an automatically created ad group. See [`AdGroup`](adgroup.md) for more details on fields and see [`Ad Groups`](ad-groups.md) for details on Search Match. See payload example in [`Create a Campaign`](create-a-campaign.md) to create a Maximize Conversions campaign.
+A Maximize Conversions bid strategy requires the use of Search Match and an automatically created ad group. See [`AdGroup`](./adgroup.md) for more details on fields and see [Ad Groups](./ad-groups.md) for details on Search Match. See payload example in [`Create a Campaign`](./create-a-campaign.md) to create a Maximize Conversions campaign.
 
 **Request**:
 
-```None
+```
 POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 
 {
@@ -269,7 +272,7 @@ POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 }
 ```
 
-##### Payload Example Create an Ad Group with a Campaign with a Maximize Conversions Bid Strategy
+##### Payload example: Create an ad group with a campaign with a Maximize Conversions bid strategy
 
 In maximize conversions campaigns:
 
@@ -278,7 +281,7 @@ In maximize conversions campaigns:
 
 **Request**:
 
-```None
+```
 POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 
 {
@@ -345,25 +348,41 @@ POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 
 ## Parameters
 
+### Path Parameters
+
 - `campaignId` (int64) *(required)*: The unique identifier for the campaign.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `AdGroup`
+
 The request body that includes the details of the ad group and campaign.
+
+## Responses
+
+- `200` OK (`AdGroupResponse`, `application/json`): If the call succeeds, the API returns the [`AdGroup`](./adgroup.md) object in the response payload with an HTTP status code of `200(OK)`. If unsuccessful, the HTTP status code indicates the error with details in the error message.
+- `400` Bad Request (`ApiErrorResponse`, `application/json`): An invalid query or missing required parameters.
+- `401` Unauthorized (`ApiErrorResponse`, `application/json`): An unauthenticated call fails to get the requested response.
+- `403` Forbidden (`ApiErrorResponse`, `application/json`): Insufficient rights to the resource.
+- `404` Not Found (`ApiErrorResponse`, `application/json`): The API can’t locate the resource.
+- `429` (`ApiErrorResponse`, `application/json`): The API calls exceed rate-limit thresholds. See the Rate Limits subsection of [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md).
+- `500` Internal Server Error (`ApiErrorResponse`, `application/json`): The Apple Ads server is temporarily down or unreachable. The request may be valid, but you need to retry it later.
 
 ## See Also
 
-- [Find Ad Groups](find-ad-groups.md)
+### Ad Group Endpoints
+- [Find Ad Groups](./find-ad-groups.md)
   Fetches ad groups within a campaign.
-- [Find Ad Groups (org-level)](find-ad-groups-(org-level).md)
+- [Find Ad Groups (org-level)](./find-ad-groups-%28org-level%29.md)
   Fetches ad groups within an organization.
-- [Get an Ad Group](get-an-ad-group.md)
+- [Get an Ad Group](./get-an-ad-group.md)
   Fetches a specific ad group with a campaign and ad group identifier.
-- [Get all Ad Groups](get-all-ad-groups.md)
+- [Get all Ad Groups](./get-all-ad-groups.md)
   Fetches all ad groups with a campaign identifier.
-- [Update an Ad Group](update-an-ad-group.md)
+- [Update an Ad Group](./update-an-ad-group.md)
   Updates an ad group with an ad group identifier.
-- [Delete an Ad Group](delete-an-ad-group.md)
+- [Delete an Ad Group](./delete-an-ad-group.md)
   Deletes an ad group with a campaign and ad group identifier.
 
 

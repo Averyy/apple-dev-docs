@@ -1,7 +1,8 @@
 # body
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A rectangular view that’s filled with the shape style.
 
@@ -20,9 +21,11 @@ A rectangular view that’s filled with the shape style.
 var body: _ShapeView<Rectangle, Self> { get }
 ```
 
+Available when `Self` conforms to `View` and `Body` is `_ShapeView<Rectangle, Self>`.
+
 #### Discussion
 
-For a [`ShapeStyle`](shapestyle.md) that also conforms to the [`View`](view.md) protocol, like [`Color`](color.md) or [`LinearGradient`](lineargradient.md), this default implementation of the [`body`](view/body-8kl5o.md) property provides a visual representation for the shape style. As a result, you can use the shape style in a view hierarchy like any other view:
+For a [`ShapeStyle`](../shapestyle.md) that also conforms to the [`View`](../view.md) protocol, like [`Color`](../color.md) or [`LinearGradient`](../lineargradient.md), this default implementation of the [`body`](../view/body-8kl5o.md) property provides a visual representation for the shape style. As a result, you can use the shape style in a view hierarchy like any other view:
 
 ```swift
 ZStack {
@@ -32,7 +35,7 @@ ZStack {
 .frame(width: 200, height: 50)
 ```
 
-![A screenshot of a cyan rectangle with the text hello appearing](/images/com.apple.SwiftUI/ShapeStyle-body-1@2x.png)
+![A screenshot of a cyan rectangle with the text hello appearing](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ShapeStyle-body-1@2x.png)
 
 
 ---

@@ -1,12 +1,13 @@
 # init()
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a printing information object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Creates a printing information object.
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [class var shared: NSPrintInfo](nsprintinfo/shared.md)
+### Creating the Printing Information Object
+- [class var shared: NSPrintInfo](./shared.md)
   The shared printing information object.
-- [init(dictionary: [NSPrintInfo.AttributeKey : Any])](nsprintinfo/init(dictionary:).md)
+- [init(dictionary: [NSPrintInfo.AttributeKey : Any])](./init%28dictionary%29.md)
   Returns a printing information object initialized with the parameters in the specified dictionary.
-- [init(coder: NSCoder)](nsprintinfo/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a printing information object from data in an unarchiver.
 
 

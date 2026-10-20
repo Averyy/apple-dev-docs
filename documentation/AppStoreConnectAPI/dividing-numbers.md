@@ -1,6 +1,7 @@
 # Dividing numbers
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Return the result of dividing one number into another.
 
@@ -18,13 +19,14 @@ number div(number $dividend, number $divisor)
 
 -`dividend`: The number that the function divides. -`divisor`: The number that the function divides into `dividend`.
 
-##### Return Value
+##### Return value
 
 The result or quotient of dividing `divisor` into `dividend`. If `divisor` is `zero`, `null`.
 
 ## See Also
 
-- [Subtracting numbers](subtracting-numbers.md)
+### Numeric functions
+- [Subtracting numbers](./subtracting-numbers.md)
   Return the result of subtracting two numbers.
 
 

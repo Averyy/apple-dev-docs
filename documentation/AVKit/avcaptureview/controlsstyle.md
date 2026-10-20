@@ -1,7 +1,8 @@
 # controlsStyle
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style of the capture controls presented by the view.
 
@@ -14,11 +15,16 @@ The style of the capture controls presented by the view.
 var controlsStyle: AVCaptureViewControlsStyle { get set }
 ```
 
+```objc
+@property AVCaptureViewControlsStyle controlsStyle;
+```
+
 ## See Also
 
-- [enum AVCaptureViewControlsStyle](avcaptureviewcontrolsstyle.md)
+### Customizing the view
+- [enum AVCaptureViewControlsStyle](../avcaptureviewcontrolsstyle.md)
   Constants that describe the capture view’s supported controls styles.
-- [var videoGravity: AVLayerVideoGravity](avcaptureview/videogravity.md)
+- [var videoGravity: AVLayerVideoGravity](./videogravity.md)
   A string value that defines how the capture view displays video within its bounds.
 
 

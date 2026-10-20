@@ -1,7 +1,8 @@
 # boundaryResolution
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Resolution of the shape.
 
@@ -21,7 +22,7 @@ var boundaryResolution: MeshResource.ShapeExtrusionOptions.CurveStrokeResolution
 
 #### Discussion
 
-The default value is [`MeshResource.ShapeExtrusionOptions.CurveStrokeResolution.uniformSegmentsPerSpan(segmentCount:)`](meshresource/shapeextrusionoptions/curvestrokeresolution/uniformsegmentsperspan(segmentcount:).md) with a segment count of 6.
+The default value is [`MeshResource.ShapeExtrusionOptions.CurveStrokeResolution.uniformSegmentsPerSpan(segmentCount:)`](./curvestrokeresolution/uniformsegmentsperspan%28segmentcount%29.md) with a segment count of 6.
 
 
 ---

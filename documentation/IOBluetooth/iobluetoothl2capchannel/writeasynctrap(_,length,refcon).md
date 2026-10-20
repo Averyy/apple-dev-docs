@@ -1,15 +1,20 @@
 # writeAsyncTrap(_:length:refcon:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func writeAsyncTrap(_ data: UnsafeMutableRawPointer!, length: UInt16, refcon: UnsafeMutableRawPointer!) -> IOReturn
+```
+
+```objc
+- (IOReturn) writeAsyncTrap:(void *) data length:(UInt16) length refcon:(void *) refcon;
 ```
 
 

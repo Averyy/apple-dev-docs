@@ -1,7 +1,8 @@
 # FreeBlock
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A function to call once when the `CMBlockBuffer` is disposed.
 
@@ -20,17 +21,22 @@ A function to call once when the `CMBlockBuffer` is disposed.
 var FreeBlock: ((UnsafeMutableRawPointer?, UnsafeMutableRawPointer, Int) -> Void)?
 ```
 
+```c
+void (*)(void *, void *, unsigned long) FreeBlock;
+```
+
 #### Discussion
 
 Pass `NULL` if you don’t want a function to be called after disposal. The function will not be called if no memory block is ever allocated or supplied.
 
 ## See Also
 
-- [var AllocateBlock: ((UnsafeMutableRawPointer?, Int) -> UnsafeMutableRawPointer?)?](cmblockbuffercustomblocksource/allocateblock.md)
+### Properties
+- [var AllocateBlock: ((UnsafeMutableRawPointer?, Int) -> UnsafeMutableRawPointer?)?](./allocateblock.md)
   The function to allocate memory.
-- [var refCon: UnsafeMutableRawPointer?](cmblockbuffercustomblocksource/refcon.md)
+- [var refCon: UnsafeMutableRawPointer?](./refcon.md)
   Contextual information passed to both the allocate and free function calls.
-- [var version: UInt32](cmblockbuffercustomblocksource/version.md)
+- [var version: UInt32](./version.md)
 
 
 ---

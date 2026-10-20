@@ -1,7 +1,8 @@
 # CKSyncEngine.Event.AccountChange
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The user signed in or out of their account.
 
@@ -11,7 +12,7 @@ The user signed in or out of their account.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -33,30 +34,31 @@ Note that it’s possible the account changes multiple times while your app is q
 ## Topics
 
 ### Understanding the change
-- [let changeType: CKSyncEngine.Event.AccountChange.ChangeType](cksyncengine-5sie5/event/accountchange/changetype-swift.property.md)
+- [let changeType: CKSyncEngine.Event.AccountChange.ChangeType](./accountchange/changetype-swift.property.md)
   The iCloud account’s change type.
-- [CKSyncEngine.Event.AccountChange.ChangeType](cksyncengine-5sie5/event/accountchange/changetype-swift.enum.md)
+- [CKSyncEngine.Event.AccountChange.ChangeType](./accountchange/changetype-swift.enum.md)
   Describes a change to the device’s iCloud account.
-- [enum CKSyncEngineAccountChangeType](cksyncengineaccountchangetype.md)
+- [enum CKSyncEngineAccountChangeType](../../cksyncengineaccountchangetype.md)
   Describes a change to the device’s iCloud account.
 ### Debugging the event
-- [var description: String](cksyncengine-5sie5/event/accountchange/description.md)
+- [var description: String](./accountchange/description.md)
   A textual description of the event that’s suitable for logging.
 ### Default Implementations
-- [CustomStringConvertible Implementations](cksyncengine-5sie5/event/accountchange/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./accountchange/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomStringConvertible](../../../Swift/customstringconvertible.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case accountChange(CKSyncEngine.Event.AccountChange)](cksyncengine-5sie5/event/accountchange(_:).md)
+### Account changes
+- [case accountChange(CKSyncEngine.Event.AccountChange)](./accountchange%28_%29.md)
   The user signed in or out of their account.
 
 

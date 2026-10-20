@@ -1,15 +1,16 @@
 # handleGameControllerReport
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 21.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void handleGameControllerReport(uint64_t timestamp, uint32_t reportID);
 ```
 

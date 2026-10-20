@@ -1,7 +1,8 @@
 # suppressesPlayerRendering
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the player object renders the receiver’s output.
 
@@ -19,9 +20,13 @@ A Boolean value that indicates whether the player object renders the receiver’
 var suppressesPlayerRendering: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL suppressesPlayerRendering;
+```
+
 #### Discussion
 
-When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false) (the default), the player object handles the rendering of the receiver’s associated output. Change the value of this property to [`true`](https://developer.apple.com/documentation/swift/true) to suppress the rendering of the media data associated with this object.
+When the value of this property is [`false`](../../Swift/false.md) (the default), the player object handles the rendering of the receiver’s associated output. Change the value of this property to [`true`](../../Swift/true.md) to suppress the rendering of the media data associated with this object.
 
 
 ---

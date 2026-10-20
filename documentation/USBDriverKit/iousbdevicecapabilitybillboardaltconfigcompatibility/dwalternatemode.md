@@ -1,21 +1,23 @@
 # dwAlternateMode
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t dwAlternateMode;
 ```
 
 ## See Also
 
-- [wSVID](iousbdevicecapabilitybillboardaltconfigcompatibility/wsvid.md)
-- [iAlternateModeString](iousbdevicecapabilitybillboardaltconfigcompatibility/ialternatemodestring.md)
+### Accessing the Descriptor Properties
+- [wSVID](./wsvid.md)
+- [iAlternateModeString](./ialternatemodestring.md)
 
 
 ---

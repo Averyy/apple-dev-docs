@@ -1,18 +1,19 @@
 # init()
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a coordinate span that represents a width and height on a map.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,8 +23,9 @@ init()
 
 ## See Also
 
-- [init(latitudeDelta: CLLocationDegrees, longitudeDelta: CLLocationDegrees)](mkcoordinatespan/init(latitudedelta:longitudedelta:).md)
-  Creates a new [`MKCoordinateSpan`](mkcoordinatespan.md) from the specified values.
+### Creating a coordinate span
+- [init(latitudeDelta: CLLocationDegrees, longitudeDelta: CLLocationDegrees)](./init%28latitudedelta,longitudedelta%29.md)
+  Creates a new [`MKCoordinateSpan`](../mkcoordinatespan.md) from the specified values.
 
 
 ---

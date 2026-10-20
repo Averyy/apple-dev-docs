@@ -1,7 +1,8 @@
 # participants
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Array of participants in group chat.
 
@@ -16,9 +17,10 @@ let participants: [RCSHandle.URI]
 
 ## See Also
 
-- [let groupHandle: RCSHandle.Group](rcsservice/creategroupchatrequest/result/grouphandle.md)
+### Accessing result properties
+- [let groupHandle: RCSHandle.Group](./grouphandle.md)
   Handle for the newly created group.
-- [let subject: String?](rcsservice/creategroupchatrequest/result/subject.md)
+- [let subject: String?](./subject.md)
   The group chat’s subject.
 
 

@@ -1,7 +1,8 @@
 # HKMetadataKeyHeartRateSensorLocation
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The location where a specific heart rate reading was taken.
 
@@ -19,19 +20,24 @@ The location where a specific heart rate reading was taken.
 let HKMetadataKeyHeartRateSensorLocation: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyHeartRateSensorLocation;
+```
+
 #### Discussion
 
-This key takes an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) containing an [`HKHeartRateSensorLocation`](hkheartratesensorlocation.md) as its value.
+This key takes an [`NSNumber`](../Foundation/nsnumber.md) containing an [`HKHeartRateSensorLocation`](./hkheartratesensorlocation.md) as its value.
 
 ## Topics
 
 ### Valid Locations
-- [enum HKHeartRateSensorLocation](hkheartratesensorlocation.md)
+- [enum HKHeartRateSensorLocation](./hkheartratesensorlocation.md)
   Constants that indicate where on the body the heart rate sensor is located.
 
 ## See Also
 
-- [let HKMetadataKeyHeartRateMotionContext: String](hkmetadatakeyheartratemotioncontext.md)
+### Metadata Keys
+- [let HKMetadataKeyHeartRateMotionContext: String](./hkmetadatakeyheartratemotioncontext.md)
   The user’s activity level when the heart rate sample was measured.
 
 

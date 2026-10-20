@@ -1,7 +1,8 @@
 # CNCinematicCapability.needsPreprocessing
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The cinematic asset needs preprocessing before it can be used
 
@@ -16,6 +17,10 @@ The cinematic asset needs preprocessing before it can be used
 
 ```swift
 case needsPreprocessing
+```
+
+```c
+CNCinematicCapabilityNeedsPreprocessing
 ```
 
 

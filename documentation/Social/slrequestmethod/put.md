@@ -1,7 +1,8 @@
 # SLRequestMethod.PUT
 
 **Framework**: Social  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Uses a PUT request to submit the data.
 
@@ -17,13 +18,18 @@ Uses a PUT request to submit the data.
 case PUT
 ```
 
+```c
+SLRequestMethodPUT
+```
+
 ## See Also
 
-- [SLRequestMethod.GET](slrequestmethod/get.md)
+### Constants
+- [SLRequestMethod.GET](./get.md)
   Requests information from the specified resource.
-- [SLRequestMethod.POST](slrequestmethod/post.md)
+- [SLRequestMethod.POST](./post.md)
   Submits data to be processed.
-- [SLRequestMethod.DELETE](slrequestmethod/delete.md)
+- [SLRequestMethod.DELETE](./delete.md)
   Deletes the specified resource.
 
 

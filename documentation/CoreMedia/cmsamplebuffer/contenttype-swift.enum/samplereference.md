@@ -1,7 +1,8 @@
 # CMSampleBuffer.ContentType.sampleReference
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sample buffer references sample data at a URL.
 

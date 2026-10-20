@@ -1,7 +1,8 @@
 # MTLVertexFormat.invalid
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A sentinel value that represents an empty set of vertex format options.
 
@@ -10,13 +11,17 @@ A sentinel value that represents an empty set of vertex format options.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 case invalid
+```
+
+```c
+MTLVertexFormatInvalid
 ```
 
 

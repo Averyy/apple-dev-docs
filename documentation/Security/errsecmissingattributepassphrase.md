@@ -1,7 +1,8 @@
 # errSecMissingAttributePassphrase
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A passphrase attribute is missing.
 
@@ -18,6 +19,10 @@ A passphrase attribute is missing.
 
 ```swift
 var errSecMissingAttributePassphrase: OSStatus { get }
+```
+
+```c
+errSecMissingAttributePassphrase
 ```
 
 

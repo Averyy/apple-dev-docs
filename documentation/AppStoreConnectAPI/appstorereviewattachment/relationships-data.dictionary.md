@@ -1,7 +1,8 @@
 # AppStoreReviewAttachment.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppStoreReviewAttachment.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreReviewAttachment.Relationships.AppStoreReviewDetail](appstorereviewattachment/relationships-data.dictionary/appstorereviewdetail-data.dictionary.md)
+- [object AppStoreReviewAttachment.Relationships.AppStoreReviewDetail](./relationships-data.dictionary/appstorereviewdetail-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppStoreReviewAttachment.Relationships
 
 ## See Also
 
-- [object AppStoreReviewAttachment.Attributes](appstorereviewattachment/attributes-data.dictionary.md)
+### Objects
+- [object AppStoreReviewAttachment.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an App Store Review Attachments resource.
 
 

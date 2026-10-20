@@ -1,7 +1,8 @@
 # value
 
 **Framework**: GSS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the bytes in the buffer.
 
@@ -18,9 +19,14 @@ A pointer to the bytes in the buffer.
 var value: UnsafeMutableRawPointer!
 ```
 
+```c
+void * value;
+```
+
 ## See Also
 
-- [var length: Int](gss_buffer_desc_struct/length.md)
+### Instance Properties
+- [var length: Int](./length.md)
   The number of bytes held in the buffer.
 
 

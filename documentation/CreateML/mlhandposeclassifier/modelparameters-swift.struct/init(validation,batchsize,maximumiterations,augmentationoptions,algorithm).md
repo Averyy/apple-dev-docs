@@ -1,7 +1,8 @@
 # init(validation:batchSize:maximumIterations:augmentationOptions:algorithm:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of training session parameters for a hand pose classifier task.
 
@@ -20,7 +21,7 @@ init(validation: MLHandPoseClassifier.ModelParameters.ValidationData = .split(st
 
 #### Discussion
 
-- validation: An [`MLHandPoseClassifier.ModelParameters.ValidationData`](mlhandposeclassifier/modelparameters-swift.struct/validationdata.md) instance.
+- validation: An [`MLHandPoseClassifier.ModelParameters.ValidationData`](./validationdata.md) instance.
 - batchSize: The number of images the training session uses for each of its training iterations.
 - maximumIterations: The largest number of training iterations the training session can use.
 - augmentationOptions: The variations the training session uses to add more variety to its training dataset.

@@ -1,7 +1,8 @@
 # DockAccessory.StateChanges
 
 **Framework**: DockKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of dock accessory state changes.
 
@@ -20,33 +21,34 @@ struct StateChanges
 ## Topics
 
 ### Iterating over state changes
-- [DockAccessory.StateChanges.Iterator](dockaccessory/statechanges/iterator.md)
+- [DockAccessory.StateChanges.Iterator](./statechanges/iterator.md)
   An object that allows iteration over dock accessory state changes.
-- [func makeAsyncIterator() -> DockAccessory.StateChanges.Iterator](dockaccessory/statechanges/makeasynciterator.md)
+- [func makeAsyncIterator() -> DockAccessory.StateChanges.Iterator](./statechanges/makeasynciterator%28%29.md)
   Creates and returns an iterator that traverses the list of dock accessory state changes.
-- [DockAccessory.StateChanges.Element](dockaccessory/statechanges/element.md)
+- [DockAccessory.StateChanges.Element](./statechanges/element.md)
   A dock accessory state change.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [var firmwareVersion: String?](dockaccessory/firmwareversion.md)
+### Getting accessory information
+- [var firmwareVersion: String?](./firmwareversion.md)
   The firmware version of the dock accessory.
-- [var hardwareModel: String?](dockaccessory/hardwaremodel.md)
+- [var hardwareModel: String?](./hardwaremodel.md)
   The model of the dock accessory.
-- [let identifier: DockAccessory.Identifier](dockaccessory/identifier-swift.property.md)
+- [let identifier: DockAccessory.Identifier](./identifier-swift.property.md)
   The name and unique identifer of the dock accessory.
-- [DockAccessory.Identifier](dockaccessory/identifier-swift.struct.md)
+- [DockAccessory.Identifier](./identifier-swift.struct.md)
   Information that uniquely identifies the dock accessory.
-- [DockAccessory.Category](dockaccessory/category.md)
+- [DockAccessory.Category](./category.md)
   Types of supported dock accesories.
-- [DockAccessory.State](dockaccessory/state.md)
+- [DockAccessory.State](./state.md)
   The state of a dock accessory.
-- [DockAccessory.StateChange](dockaccessory/statechange.md)
+- [DockAccessory.StateChange](./statechange.md)
   An event that indicates a change in the state of a dock accessory.
 
 

@@ -1,7 +1,8 @@
 # UITabAccessory.Environment.unspecified
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the absence of any information about whether or not the trait collection is from a view that is in a tab accessory.
 
@@ -14,6 +15,10 @@ Indicates the absence of any information about whether or not the trait collecti
 
 ```swift
 case unspecified
+```
+
+```c
+UITabAccessoryEnvironmentUnspecified
 ```
 
 

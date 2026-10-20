@@ -1,7 +1,8 @@
 # NEIPv6Route
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The settings for an IPv6 route.
 
@@ -19,45 +20,50 @@ The settings for an IPv6 route.
 class NEIPv6Route
 ```
 
+```objc
+@interface NEIPv6Route : NSObject
+```
+
 ## Mentions
 
-- [Routing your VPN network traffic](routing-your-vpn-network-traffic.md)
+- [Routing your VPN network traffic](./routing-your-vpn-network-traffic.md)
 
 ## Topics
 
 ### Creating an IPv6 Route
-- [init(destinationAddress: String, networkPrefixLength: NSNumber)](neipv6route/init(destinationaddress:networkprefixlength:).md)
+- [init(destinationAddress: String, networkPrefixLength: NSNumber)](./neipv6route/init%28destinationaddress,networkprefixlength%29.md)
   Initialize the NEIPv6Route
-- [class func `default`() -> NEIPv6Route](neipv6route/default.md)
+- [class func `default`() -> NEIPv6Route](./neipv6route/default%28%29.md)
   A convenience method for creating the default IPv4 route.
 ### Accessing IPv6 Route Properties
-- [var destinationAddress: String](neipv6route/destinationaddress.md)
+- [var destinationAddress: String](./neipv6route/destinationaddress.md)
   The destination network address of the route.
-- [var destinationNetworkPrefixLength: NSNumber](neipv6route/destinationnetworkprefixlength.md)
+- [var destinationNetworkPrefixLength: NSNumber](./neipv6route/destinationnetworkprefixlength.md)
   The destination network prefix length of the route.
-- [var gatewayAddress: String?](neipv6route/gatewayaddress.md)
+- [var gatewayAddress: String?](./neipv6route/gatewayaddress.md)
   The address of the next-hop gateway of the route.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var includedRoutes: [NEIPv6Route]?](neipv6settings/includedroutes.md)
+### Routing network traffic
+- [var includedRoutes: [NEIPv6Route]?](./neipv6settings/includedroutes.md)
   The IPv6 network traffic that the system routes to the TUN interface.
-- [var excludedRoutes: [NEIPv6Route]?](neipv6settings/excludedroutes.md)
+- [var excludedRoutes: [NEIPv6Route]?](./neipv6settings/excludedroutes.md)
   The IPv6 network traffic that the system routes to the primary physical interface, not the TUN interface.
 
 

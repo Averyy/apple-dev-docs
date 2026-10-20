@@ -1,10 +1,13 @@
 # NSSpeechSynthesizer.VoiceName
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 14.0
+
+> **Deprecated**: Use AVSpeechSynthesizer in AVFoundation instead
 
 ## Declaration
 
@@ -12,30 +15,35 @@
 struct VoiceName
 ```
 
+```c
+typedef NSString * NSSpeechSynthesizerVoiceName;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](nsspeechsynthesizer/voicename/init(rawvalue:).md)
+- [init(rawValue: String)](./voicename/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class var availableVoices: [NSSpeechSynthesizer.VoiceName]](nsspeechsynthesizer/availablevoices.md)
+### Getting Speech Synthesizer Information
+- [class var availableVoices: [NSSpeechSynthesizer.VoiceName]](./availablevoices.md)
   Provides the identifiers of the voices available on the system.
-- [class func attributes(forVoice: NSSpeechSynthesizer.VoiceName) -> [NSSpeechSynthesizer.VoiceAttributeKey : Any]](nsspeechsynthesizer/attributes(forvoice:).md)
+- [class func attributes(forVoice: NSSpeechSynthesizer.VoiceName) -> [NSSpeechSynthesizer.VoiceAttributeKey : Any]](./attributes%28forvoice%29.md)
   Provides the attribute dictionary of a voice.
-- [class var defaultVoice: NSSpeechSynthesizer.VoiceName](nsspeechsynthesizer/defaultvoice.md)
+- [class var defaultVoice: NSSpeechSynthesizer.VoiceName](./defaultvoice.md)
   Provides the identifier of the default voice.
-- [NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey.md)
-  The following constants are keys for the dictionary returned by [`attributes(forVoice:)`](nsspeechsynthesizer/attributes(forvoice:).md).
+- [NSSpeechSynthesizer.VoiceAttributeKey](./voiceattributekey.md)
+  The following constants are keys for the dictionary returned by [`attributes(forVoice:)`](./attributes%28forvoice%29.md).
 
 
 ---

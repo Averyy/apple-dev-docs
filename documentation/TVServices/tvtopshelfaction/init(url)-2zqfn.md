@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: TV Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new action object that displays the content at the specified URL.
 
@@ -12,6 +13,10 @@ Creates a new action object that displays the content at the specified URL.
 
 ```swift
 init(url URL: URL)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) URL;
 ```
 
 #### Return Value

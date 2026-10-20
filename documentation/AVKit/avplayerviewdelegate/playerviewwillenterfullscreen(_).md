@@ -1,7 +1,8 @@
 # playerViewWillEnterFullScreen(_:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the player view is about to enter full-screen mode.
 
@@ -14,19 +15,24 @@ Tells the delegate that the player view is about to enter full-screen mode.
 optional func playerViewWillEnterFullScreen(_ playerView: AVPlayerView)
 ```
 
+```objc
+- (void) playerViewWillEnterFullScreen:(AVPlayerView *) playerView;
+```
+
 ## Parameters
 
 - `playerView`: The player view.
 
 ## See Also
 
-- [func playerViewDidEnterFullScreen(AVPlayerView)](avplayerviewdelegate/playerviewdidenterfullscreen(_:).md)
+### Responding to full-screen events
+- [func playerViewDidEnterFullScreen(AVPlayerView)](./playerviewdidenterfullscreen%28_%29.md)
   Tells the delegate that the player view entered full-screen mode.
-- [func playerViewWillExitFullScreen(AVPlayerView)](avplayerviewdelegate/playerviewwillexitfullscreen(_:).md)
+- [func playerViewWillExitFullScreen(AVPlayerView)](./playerviewwillexitfullscreen%28_%29.md)
   Tells the delegate that the player view is about to exit full-screen mode.
-- [func playerViewDidExitFullScreen(AVPlayerView)](avplayerviewdelegate/playerviewdidexitfullscreen(_:).md)
+- [func playerViewDidExitFullScreen(AVPlayerView)](./playerviewdidexitfullscreen%28_%29.md)
   Tells the delegate that the player view exited full-screen mode.
-- [func playerView(AVPlayerView, restoreUserInterfaceForFullScreenExitWithCompletionHandler: (Bool) -> Void)](avplayerviewdelegate/playerview(_:restoreuserinterfaceforfullscreenexitwithcompletionhandler:).md)
+- [func playerView(AVPlayerView, restoreUserInterfaceForFullScreenExitWithCompletionHandler: (Bool) -> Void)](./playerview%28_,restoreuserinterfaceforfullscreenexitwithcompletionhandler%29.md)
   Tells the delegate to restore the app’s user interface when exiting full-screen mode.
 
 

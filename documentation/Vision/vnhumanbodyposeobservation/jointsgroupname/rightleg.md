@@ -1,7 +1,8 @@
 # rightLeg
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The right leg.
 
@@ -19,9 +20,14 @@ The right leg.
 static let rightLeg: VNHumanBodyPoseObservation.JointsGroupName
 ```
 
+```c
+extern VNHumanBodyPoseObservationJointsGroupName const VNHumanBodyPoseObservationJointsGroupNameRightLeg;
+```
+
 ## See Also
 
-- [static let leftLeg: VNHumanBodyPoseObservation.JointsGroupName](vnhumanbodyposeobservation/jointsgroupname/leftleg.md)
+### Legs
+- [static let leftLeg: VNHumanBodyPoseObservation.JointsGroupName](./leftleg.md)
   The left leg.
 
 

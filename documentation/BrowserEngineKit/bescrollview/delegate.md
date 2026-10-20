@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that responds to the scroll view’s scroll updates.
 
@@ -17,9 +18,13 @@ A delegate that responds to the scroll view’s scroll updates.
 weak var delegate: (any BEScrollViewDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<BEScrollViewDelegate> delegate;
+```
+
 #### Discussion
 
-`BEScrollView` doesn’t retain the delegate, which must conform to the [`BEScrollViewDelegate`](bescrollviewdelegate.md) protocol.
+`BEScrollView` doesn’t retain the delegate, which must conform to the [`BEScrollViewDelegate`](../bescrollviewdelegate.md) protocol.
 
 
 ---

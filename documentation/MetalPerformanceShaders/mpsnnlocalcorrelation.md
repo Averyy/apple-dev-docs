@@ -1,7 +1,8 @@
 # MPSNNLocalCorrelation
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,32 +18,36 @@
 class MPSNNLocalCorrelation
 ```
 
+```objc
+@interface MPSNNLocalCorrelation : MPSNNReduceBinary
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsnnlocalcorrelation/init(coder:device:).md)
-- [convenience init(device: any MTLDevice)](mpsnnlocalcorrelation/init(device:).md)
-- [init(device: any MTLDevice, windowInX: Int, windowInY: Int, strideInX: Int, strideInY: Int)](mpsnnlocalcorrelation/init(device:windowinx:windowiny:strideinx:strideiny:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpsnnlocalcorrelation/init%28coder,device%29.md)
+- [convenience init(device: any MTLDevice)](./mpsnnlocalcorrelation/init%28device%29.md)
+- [init(device: any MTLDevice, windowInX: Int, windowInY: Int, strideInX: Int, strideInY: Int)](./mpsnnlocalcorrelation/init%28device,windowinx,windowiny,strideinx,strideiny%29.md)
 ### Instance Properties
-- [var strideInX: Int](mpsnnlocalcorrelation/strideinx.md)
-- [var strideInY: Int](mpsnnlocalcorrelation/strideiny.md)
-- [var windowInX: Int](mpsnnlocalcorrelation/windowinx.md)
-- [var windowInY: Int](mpsnnlocalcorrelation/windowiny.md)
+- [var strideInX: Int](./mpsnnlocalcorrelation/strideinx.md)
+- [var strideInY: Int](./mpsnnlocalcorrelation/strideiny.md)
+- [var windowInX: Int](./mpsnnlocalcorrelation/windowinx.md)
+- [var windowInY: Int](./mpsnnlocalcorrelation/windowiny.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNReduceBinary](mpsnnreducebinary.md)
+- [MPSNNReduceBinary](./mpsnnreducebinary.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

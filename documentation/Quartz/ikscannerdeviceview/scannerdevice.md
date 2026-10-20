@@ -1,7 +1,8 @@
 # scannerDevice
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device used for scanning
 
@@ -12,6 +13,10 @@ The device used for scanning
 
 ```swift
 unowned(unsafe) var scannerDevice: ICScannerDevice! { get set }
+```
+
+```objc
+@property (assign) ICScannerDevice * scannerDevice;
 ```
 
 

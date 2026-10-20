@@ -1,7 +1,8 @@
 # MTLStitchedLibraryDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A description of a new library of procedurally generated functions.
 
@@ -19,53 +20,58 @@ A description of a new library of procedurally generated functions.
 class MTLStitchedLibraryDescriptor
 ```
 
+```objc
+@interface MTLStitchedLibraryDescriptor : NSObject
+```
+
 #### Overview
 
-An [`MTLStitchedLibraryDescriptor`](mtlstitchedlibrarydescriptor.md) describes a library of new stitched functions. A *stitched function* is a visible function you create by composing other Metal shader functions together in a function graph.
+An [`MTLStitchedLibraryDescriptor`](./mtlstitchedlibrarydescriptor.md) describes a library of new stitched functions. A *stitched function* is a visible function you create by composing other Metal shader functions together in a function graph.
 
-Configure a stitched library descriptor by assigning an array of one or more [`MTLFunctionStitchingGraph`](mtlfunctionstitchinggraph.md) instances, each describing a stitched function, to the [`functionGraphs`](mtlstitchedlibrarydescriptor/functiongraphs.md) property. Then assign an [`MTLFunction`](mtlfunction.md) array that includes all the functions the graphs depend on to the [`functions`](mtlstitchedlibrarydescriptor/functions.md) property.
+Configure a stitched library descriptor by assigning an array of one or more [`MTLFunctionStitchingGraph`](./mtlfunctionstitchinggraph.md) instances, each describing a stitched function, to the [`functionGraphs`](./mtlstitchedlibrarydescriptor/functiongraphs.md) property. Then assign an [`MTLFunction`](./mtlfunction.md) array that includes all the functions the graphs depend on to the [`functions`](./mtlstitchedlibrarydescriptor/functions.md) property.
 
-Create a stitched library from the descriptor by passing it to the [`makeLibrary(stitchedDescriptor:)`](mtldevice/makelibrary(stitcheddescriptor:).md) method of an [`MTLDevice`](mtldevice.md). You can change the descriptor to create other libraries without affecting any existing ones.
+Create a stitched library from the descriptor by passing it to the [`makeLibrary(stitchedDescriptor:)`](./mtldevice/makelibrary%28stitcheddescriptor%29.md) method of an [`MTLDevice`](./mtldevice.md). You can change the descriptor to create other libraries without affecting any existing ones.
 
 ## Topics
 
 ### Configuring a stitched library
-- [var functions: [any MTLFunction]](mtlstitchedlibrarydescriptor/functions.md)
+- [var functions: [any MTLFunction]](./mtlstitchedlibrarydescriptor/functions.md)
   The list of functions for creating the stitched library.
-- [var functionGraphs: [MTLFunctionStitchingGraph]](mtlstitchedlibrarydescriptor/functiongraphs.md)
+- [var functionGraphs: [MTLFunctionStitchingGraph]](./mtlstitchedlibrarydescriptor/functiongraphs.md)
   The function graphs that define the new stitched library’s functions.
 ### Instance Properties
-- [var binaryArchives: [any MTLBinaryArchive]](mtlstitchedlibrarydescriptor/binaryarchives.md)
-- [var options: MTLStitchedLibraryOptions](mtlstitchedlibrarydescriptor/options.md)
+- [var binaryArchives: [any MTLBinaryArchive]](./mtlstitchedlibrarydescriptor/binaryarchives.md)
+- [var options: MTLStitchedLibraryOptions](./mtlstitchedlibrarydescriptor/options.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Customizing shaders using function pointers and stitching](customizing-shaders-using-function-pointers-and-stitching.md)
+### Stitched function libraries
+- [Customizing shaders using function pointers and stitching](./customizing-shaders-using-function-pointers-and-stitching.md)
   Define custom shader behavior at runtime by creating functions from existing ones and preferentially linking to others in a dynamic library.
-- [class MTLFunctionStitchingGraph](mtlfunctionstitchinggraph.md)
+- [class MTLFunctionStitchingGraph](./mtlfunctionstitchinggraph.md)
   A description of a new stitched function.
-- [class MTLFunctionStitchingInputNode](mtlfunctionstitchinginputnode.md)
+- [class MTLFunctionStitchingInputNode](./mtlfunctionstitchinginputnode.md)
   A call graph node that describes an input to the call graph.
-- [class MTLFunctionStitchingFunctionNode](mtlfunctionstitchingfunctionnode.md)
+- [class MTLFunctionStitchingFunctionNode](./mtlfunctionstitchingfunctionnode.md)
   A call graph node that describes a function call and its inputs.
-- [protocol MTLFunctionStitchingNode](mtlfunctionstitchingnode.md)
+- [protocol MTLFunctionStitchingNode](./mtlfunctionstitchingnode.md)
   A protocol to identify call graph nodes.
-- [class MTLFunctionStitchingAttributeAlwaysInline](mtlfunctionstitchingattributealwaysinline.md)
+- [class MTLFunctionStitchingAttributeAlwaysInline](./mtlfunctionstitchingattributealwaysinline.md)
   An attribute to specify that Metal needs to inline all of the function calls when generating the stitched function.
-- [protocol MTLFunctionStitchingAttribute](mtlfunctionstitchingattribute.md)
+- [protocol MTLFunctionStitchingAttribute](./mtlfunctionstitchingattribute.md)
   A protocol to identify types that customize how the Metal compiler stitches a function together.
 
 

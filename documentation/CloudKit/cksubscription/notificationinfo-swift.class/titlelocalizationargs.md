@@ -1,7 +1,8 @@
 # titleLocalizationArgs
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fields for building a notification’s title.
 
@@ -10,7 +11,7 @@ The fields for building a notification’s title.
 - iPadOS 11.0+
 - Mac Catalyst 13.1+
 - macOS 10.13+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 - Swift 4.2+
 
@@ -28,9 +29,10 @@ If you use `%@` for your substitution variables, CloudKit replaces those variabl
 
 ## See Also
 
-- [var title: String?](cksubscription/notificationinfo-swift.class/title.md)
+### Accessing the Notification Title
+- [var title: String?](./title.md)
   The notification’s title.
-- [var titleLocalizationKey: String?](cksubscription/notificationinfo-swift.class/titlelocalizationkey.md)
+- [var titleLocalizationKey: String?](./titlelocalizationkey.md)
   The key that identifies the localized string for the notification’s title.
 
 

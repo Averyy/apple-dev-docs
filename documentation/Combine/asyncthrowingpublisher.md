@@ -1,7 +1,8 @@
 # AsyncThrowingPublisher
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that exposes its elements as a throwing asynchronous sequence.
 
@@ -22,32 +23,33 @@ struct AsyncThrowingPublisher<P> where P : Publisher
 
 #### Overview
 
-`AsyncThrowingPublisher` conforms to [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), which allows callers to receive values with the `for`-`await`-`in` syntax, rather than attaching a [`Subscriber`](subscriber.md). If the upstream publisher terminates with an error, `AsyncThrowingPublisher` throws the error to the awaiting caller.
+`AsyncThrowingPublisher` conforms to [`AsyncSequence`](../Swift/asyncsequence.md), which allows callers to receive values with the `for`-`await`-`in` syntax, rather than attaching a [`Subscriber`](./subscriber.md). If the upstream publisher terminates with an error, `AsyncThrowingPublisher` throws the error to the awaiting caller.
 
-Use the [`values`](publisher/values-v7nz.md) property of the [`Publisher`](publisher.md) protocol to wrap an existing publisher with an instance of this type.
+Use the [`values`](./publisher/values-v7nz.md) property of the [`Publisher`](./publisher.md) protocol to wrap an existing publisher with an instance of this type.
 
 ## Topics
 
 ### Creating an asynchronous publisher
-- [init(_:)](asyncthrowingpublisher/init(_:).md)
+- [init(_:)](./asyncthrowingpublisher/init%28_%29.md)
   Creates a publisher that exposes elements received from an upstream publisher as a throwing asynchronous sequence.
 ### Creating an iterator
-- [func makeAsyncIterator() -> AsyncThrowingPublisher<P>.Iterator](asyncthrowingpublisher/makeasynciterator.md)
+- [func makeAsyncIterator() -> AsyncThrowingPublisher<P>.Iterator](./asyncthrowingpublisher/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [AsyncThrowingPublisher.Iterator](asyncthrowingpublisher/iterator.md)
+- [AsyncThrowingPublisher.Iterator](./asyncthrowingpublisher/iterator.md)
   The iterator that produces elements of the asynchronous publisher sequence.
 ### Supporting types
-- [AsyncThrowingPublisher.Element](asyncthrowingpublisher/element.md)
+- [AsyncThrowingPublisher.Element](./asyncthrowingpublisher/element.md)
   The type of element produced by this asynchronous sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
 
 ## See Also
 
-- [struct AsyncPublisher](asyncpublisher.md)
+### Asynchronous Publishers
+- [struct AsyncPublisher](./asyncpublisher.md)
   A publisher that exposes its elements as an asynchronous sequence.
 
 

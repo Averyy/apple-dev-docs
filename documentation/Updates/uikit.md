@@ -1,131 +1,132 @@
 # UIKit updates
 
-**Framework**: Updates
+**Framework**: Updates  
+**Role**: Article
 
 Learn about important changes to UIKit.
 
 #### Overview
 
-Browse notable changes in [`UIKit`](https://developer.apple.com/documentation/uikit).
+Browse notable changes in [UIKit](../UIKit/UIKit.md).
 
 #### September 2026
 
-##### Arrangement View Controllers
+##### Arrangement view controllers
 
-- Arrange primary and secondary view controllers using an adaptive layout that responds to the environment with [`UIArrangementViewController`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller).
-- Assign a view controller to the primary or secondary view of an arrangement using [`setViewController(_:for:animated:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/setviewcontroller(_:for:animated:)) with a [`UIArrangementViewController.ViewPlacement`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/viewplacement).
-- Update the arrangement a view controller uses, such as a split or overlay arrangement, using [`updateArrangement(_:animated:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/updatearrangement(_:animated:)).
-- Create a custom arrangement by conforming to [`UIArrangementViewController.Arrangement`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/arrangement), providing [`defaultViewProperties`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/arrangement/defaultviewproperties), and implementing [`setViewProperties(_:for:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/arrangement/setviewproperties(_:for:)) to configure how each view appears within the arrangement.
-- Look up the view controller for a view placement using [`viewController(for:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/viewcontroller(for:)), get its state (including z-index, split axis, and visibility) using [`state(for:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/state(for:)), and find the placement for a view controller using [`placement(for:)`](https://developer.apple.com/documentation/uikit/uiarrangementviewcontroller/placement(for:)).
-- Split views on one or more axes using [`UISplitArrangement`](https://developer.apple.com/documentation/uikit/uisplitarrangement-swift.struct) and restrict which axes the split can use with [`axes(_:)`](https://developer.apple.com/documentation/uikit/uisplitarrangement-swift.struct/axes(_:)). Configure the minimum, preferred, and maximum size of a view within the split using [`UISplitArrangement.DimensionRange`](https://developer.apple.com/documentation/uikit/uisplitarrangement-swift.struct/dimensionrange), specifying each size as an absolute, fractional, automatic, or intrinsic [`UISplitArrangement.Dimension`](https://developer.apple.com/documentation/uikit/uisplitarrangement-swift.struct/dimension) value.
-- Overlay views using [`UIOverlayArrangement`](https://developer.apple.com/documentation/uikit/uioverlayarrangement-swift.struct), and use [`axes(_:)`](https://developer.apple.com/documentation/uikit/uioverlayarrangement-swift.struct/axes(_:)) to restrict the axes on which the overlay can transition to a side-by-side layout.
-- Find the nearest ancestor arrangement view controller from a descendant view controller using its [`arrangementViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller/arrangementviewcontroller) property.
+- Arrange primary and secondary view controllers using an adaptive layout that responds to the environment with [`UIArrangementViewController`](../UIKit/uiarrangementviewcontroller.md).
+- Assign a view controller to the primary or secondary view of an arrangement using [`setViewController(_:for:animated:)`](../UIKit/uiarrangementviewcontroller/setviewcontroller%28_,for,animated%29.md) with a [`UIArrangementViewController.ViewPlacement`](../UIKit/uiarrangementviewcontroller/viewplacement.md).
+- Update the arrangement a view controller uses, such as a split or overlay arrangement, using [`updateArrangement(_:animated:)`](../UIKit/uiarrangementviewcontroller/updatearrangement%28_,animated%29.md).
+- Create a custom arrangement by conforming to [`UIArrangementViewController.Arrangement`](../UIKit/uiarrangementviewcontroller/arrangement.md), providing [`defaultViewProperties`](../UIKit/uiarrangementviewcontroller/arrangement/defaultviewproperties.md), and implementing [`setViewProperties(_:for:)`](../UIKit/uiarrangementviewcontroller/arrangement/setviewproperties%28_,for%29.md) to configure how each view appears within the arrangement.
+- Look up the view controller for a view placement using [`viewController(for:)`](../UIKit/uiarrangementviewcontroller/viewcontroller%28for%29.md), get its state (including z-index, split axis, and visibility) using [`state(for:)`](../UIKit/uiarrangementviewcontroller/state%28for%29.md), and find the placement for a view controller using [`placement(for:)`](../UIKit/uiarrangementviewcontroller/placement%28for%29.md).
+- Split views on one or more axes using [`UISplitArrangement`](../UIKit/uisplitarrangement-swift.struct.md) and restrict which axes the split can use with [`axes(_:)`](../UIKit/uisplitarrangement-swift.struct/axes%28_%29.md). Configure the minimum, preferred, and maximum size of a view within the split using [`UISplitArrangement.DimensionRange`](../UIKit/uisplitarrangement-swift.struct/dimensionrange.md), specifying each size as an absolute, fractional, automatic, or intrinsic [`UISplitArrangement.Dimension`](../UIKit/uisplitarrangement-swift.struct/dimension.md) value.
+- Overlay views using [`UIOverlayArrangement`](../UIKit/uioverlayarrangement-swift.struct.md), and use [`axes(_:)`](../UIKit/uioverlayarrangement-swift.struct/axes%28_%29.md) to restrict the axes on which the overlay can transition to a side-by-side layout.
+- Find the nearest ancestor arrangement view controller from a descendant view controller using its [`arrangementViewController`](../UIKit/uiviewcontroller/arrangementviewcontroller.md) property.
 
-##### Reserved Regions
+##### Reserved regions
 
-- Identify and avoid a region of a view reserved by hardware, such as a camera or the hinge, using [`UIView.ReservedRegion`](https://developer.apple.com/documentation/uikit/uiview/reservedregion).
-- Query the reserved regions that intersect a view using the [`reservedRegions(kind:options:)`](https://developer.apple.com/documentation/uikit/uiview/reservedregions(kind:options:)) method, specifying a [`UIView.ReservedRegion.Kind`](https://developer.apple.com/documentation/uikit/uiview/reservedregion/kind-swift.struct) such as `.occlusion` or `.division`.
-- Include inactive reserved regions in a query using the [`includeInactive`](https://developer.apple.com/documentation/uikit/uiview/reservedregion/queryoptions/includeinactive) option.
+- Identify and avoid a region of a view reserved by hardware, such as a camera or the hinge, using [`UIView.ReservedRegion`](../UIKit/uiview/reservedregion.md).
+- Query the reserved regions that intersect a view using the [`reservedRegions(kind:options:)`](../UIKit/uiview/reservedregions%28kind,options%29.md) method, specifying a [`UIView.ReservedRegion.Kind`](../UIKit/uiview/reservedregion/kind-swift.struct.md) such as `.occlusion` or `.division`.
+- Include inactive reserved regions in a query using the [`includeInactive`](../UIKit/uiview/reservedregion/queryoptions/includeinactive.md) option.
 
 ##### Hinge
 
-- Observe the state of the hinge associated with a view’s hierarchy by adding a [`UIHingeInteraction`](https://developer.apple.com/documentation/uikit/uihingeinteraction) to the view. The interaction’s handler receives a [`UIHingeInteraction.Update`](https://developer.apple.com/documentation/uikit/uihingeinteraction/update) with the current hinge, or `nil` when the interaction leaves a hierarchy that provides hinge updates.
-- Read the hinge’s current angle and status, such as `.closed`, `.partiallyOpen`, or `.fullyOpen`, using [`UIHinge`](https://developer.apple.com/documentation/uikit/uihinge).
+- Observe the state of the hinge associated with a view’s hierarchy by adding a [`UIHingeInteraction`](../UIKit/uihingeinteraction.md) to the view. The interaction’s handler receives a [`UIHingeInteraction.Update`](../UIKit/uihingeinteraction/update.md) with the current hinge, or `nil` when the interaction leaves a hierarchy that provides hinge updates.
+- Read the hinge’s current angle and status, such as `.closed`, `.partiallyOpen`, or `.fullyOpen`, using [`UIHinge`](../UIKit/uihinge.md).
 
-##### Controls on the Vertical Axis
+##### Controls on the vertical axis
 
-- Opt a view controller out of showing bar content on the vertical axis, or let the system decide, using [`preferredVerticalBarBehavior`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredverticalbarbehavior) and the [`UIVerticalBarBehavior`](https://developer.apple.com/documentation/uikit/uiverticalbarbehavior) values `automatic` and `disabled`.
-- Defer a view controller’s preference for showing bar content on the vertical axis to one of its descendants using [`childForPreferredVerticalBarBehavior`](https://developer.apple.com/documentation/uikit/uiviewcontroller/childforpreferredverticalbarbehavior), and signal that the preferred configuration has changed with [`setNeedsUpdateOfVerticalBarConfiguration()`](https://developer.apple.com/documentation/uikit/uiviewcontroller/setneedsupdateofverticalbarconfiguration()).
-- Read the edge where the system places controls on the vertical axis using [`verticalBarEdge`](https://developer.apple.com/documentation/uikit/uitraitcollection/verticalbaredge), which returns a [`UIVerticalBarEdge`](https://developer.apple.com/documentation/uikit/uiverticalbaredge) value such as `.leading` or `.trailing`. Register for changes to it using the traits from [`systemTraitsAffectingVerticalBarEdge`](https://developer.apple.com/documentation/uikit/uitraitcollection/systemtraitsaffectingverticalbaredge-475st).
-- Reserve a layout region for bar content on a specific edge using [`bar(onEdge:extent:)`](https://developer.apple.com/documentation/uikit/uiview/layoutregion/bar(onedge:extent:)-2tj1g).
+- Opt a view controller out of showing bar content on the vertical axis, or let the system decide, using [`preferredVerticalBarBehavior`](../UIKit/uiviewcontroller/preferredverticalbarbehavior.md) and the [`UIVerticalBarBehavior`](../UIKit/uiverticalbarbehavior.md) values `automatic` and `disabled`.
+- Defer a view controller’s preference for showing bar content on the vertical axis to one of its descendants using [`childForPreferredVerticalBarBehavior`](../UIKit/uiviewcontroller/childforpreferredverticalbarbehavior.md), and signal that the preferred configuration has changed with [`setNeedsUpdateOfVerticalBarConfiguration()`](../UIKit/uiviewcontroller/setneedsupdateofverticalbarconfiguration%28%29.md).
+- Read the edge where the system places controls on the vertical axis using [`verticalBarEdge`](../UIKit/uitraitcollection/verticalbaredge.md), which returns a [`UIVerticalBarEdge`](../UIKit/uiverticalbaredge.md) value such as `.leading` or `.trailing`. Register for changes to it using the traits from [`systemTraitsAffectingVerticalBarEdge`](../UIKit/uitraitcollection/systemtraitsaffectingverticalbaredge-475st.md).
+- Reserve a layout region for bar content on a specific edge using [`bar(onEdge:extent:)`](../UIKit/uiview/layoutregion/bar%28onedge,extent%29-2tj1g.md).
 
-##### Scene Accessories
+##### Scene accessories
 
-- Present content on the outer display of iPhone Duo while the device is open, the app is in the foreground, and a camera capture session is active, using [`cameraCapture(sceneConfiguration:)`](https://developer.apple.com/documentation/uikit/uisceneaccessory/cameracapture(sceneconfiguration:)) on [`UISceneAccessory`](https://developer.apple.com/documentation/uikit/uisceneaccessory).
-- Identify a scene created from a camera capture accessory registration using the [`windowCameraCaptureAccessory`](https://developer.apple.com/documentation/uikit/uiscenesession/role-swift.struct/windowcameracaptureaccessory) session role.
+- Present content on the outer display of iPhone Duo while the device is open, the app is in the foreground, and a camera capture session is active, using [`cameraCapture(sceneConfiguration:)`](../UIKit/uisceneaccessory/cameracapture%28sceneconfiguration%29.md) on [`UISceneAccessory`](../UIKit/uisceneaccessory.md).
+- Identify a scene created from a camera capture accessory registration using the [`windowCameraCaptureAccessory`](../UIKit/uiscenesession/role-swift.struct/windowcameracaptureaccessory.md) session role.
 
-##### Bar Items
+##### Bar items
 
-- Control whether a bar button item appears on the vertical or horizontal axis using the [`axisBehavior`](https://developer.apple.com/documentation/uikit/uibarbuttonitem/axisbehavior-swift.property) property with a [`UIBarButtonItem.AxisBehavior`](https://developer.apple.com/documentation/uikit/uibarbuttonitem/axisbehavior-swift.enum) value, such as `.horizontalOnly` or `.verticalPreferred`.
-- Control how bars compress when the system renders different types of bars together and space is constrained using the [`verticalBarCompressionBehavior`](https://developer.apple.com/documentation/uikit/uinavigationitem/verticalbarcompressionbehavior) property with a [`UIVerticalBarCompressionBehavior`](https://developer.apple.com/documentation/uikit/uiverticalbarcompressionbehavior) value, such as `.prefersBarItems` or `.prefersTabBar`.
+- Control whether a bar button item appears on the vertical or horizontal axis using the [`axisBehavior`](../UIKit/uibarbuttonitem/axisbehavior-swift.property.md) property with a [`UIBarButtonItem.AxisBehavior`](../UIKit/uibarbuttonitem/axisbehavior-swift.enum.md) value, such as `.horizontalOnly` or `.verticalPreferred`.
+- Control how bars compress when the system renders different types of bars together and space is constrained using the [`verticalBarCompressionBehavior`](../UIKit/uinavigationitem/verticalbarcompressionbehavior.md) property with a [`UIVerticalBarCompressionBehavior`](../UIKit/uiverticalbarcompressionbehavior.md) value, such as `.prefersBarItems` or `.prefersTabBar`.
 
 #### June 2026
 
 ##### General
 
-- Align sensor data from Core Location and Core Motion with your app’s UI orientation by setting a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) as the body of a [`CLLocationManager`](https://developer.apple.com/documentation/corelocation/cllocationmanager) or [`CMMotionManager`](https://developer.apple.com/documentation/coremotion/cmmotionmanager) instance.
-- Use [`UICollectionViewCompositionalLayoutSectionProvider`](https://developer.apple.com/documentation/uikit/uicollectionviewcompositionallayoutsectionprovider) closures as part of automatic observation tracking to automatically invalidate and update compositional layouts when observable objects change.
-- Use [`UIRefreshControl`](https://developer.apple.com/documentation/uikit/uirefreshcontrol) and [`UIStepper`](https://developer.apple.com/documentation/uikit/uistepper) in Mac apps built with Mac Catalyst. These controls are now fully supported in the Mac idiom.
+- Align sensor data from Core Location and Core Motion with your app’s UI orientation by setting a [`UIView`](../UIKit/uiview.md) as the body of a [`CLLocationManager`](../CoreLocation/cllocationmanager.md) or [`CMMotionManager`](../CoreMotion/cmmotionmanager.md) instance.
+- Use [`UICollectionViewCompositionalLayoutSectionProvider`](../UIKit/uicollectionviewcompositionallayoutsectionprovider.md) closures as part of automatic observation tracking to automatically invalidate and update compositional layouts when observable objects change.
+- Use [`UIRefreshControl`](../UIKit/uirefreshcontrol.md) and [`UIStepper`](../UIKit/uistepper.md) in Mac apps built with Mac Catalyst. These controls are now fully supported in the Mac idiom.
 
-##### App Life Cycle
+##### App life cycle
 
-- Adopt the UIKit scene-based life cycle using the guidance in [`Transitioning to the UIKit scene-based life cycle`](https://developer.apple.com/documentation/uikit/transitioning-to-the-uikit-scene-based-life-cycle). Starting in iOS 27, apps built with the latest SDK must use the scene-based life cycle or they fail to launch.
+- Adopt the UIKit scene-based life cycle using the guidance in [Transitioning to the UIKit scene-based life cycle](../UIKit/transitioning-to-the-uikit-scene-based-life-cycle.md). Starting in iOS 27, apps built with the latest SDK must use the scene-based life cycle or they fail to launch.
 
-##### Drag and Drop
+##### Drag and drop
 
-- Control drag initiation timing in gesture-rich views by configuring [`UIDragInteraction`](https://developer.apple.com/documentation/uikit/uidraginteraction). Use [`allowsPointerDragBeforeLiftDelay`](https://developer.apple.com/documentation/uikit/uidraginteraction/allowspointerdragbeforeliftdelay) to independently control when pointer-initiated drags begin.
+- Control drag initiation timing in gesture-rich views by configuring [`UIDragInteraction`](../UIKit/uidraginteraction.md). Use [`allowsPointerDragBeforeLiftDelay`](../UIKit/uidraginteraction/allowspointerdragbeforeliftdelay.md) to independently control when pointer-initiated drags begin.
 
-##### Text Views
+##### Text views
 
-- Override viewport layout methods directly in a [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview) subclass by conforming to [`NSTextViewportLayoutControllerDelegate`](https://developer.apple.com/documentation/uikit/nstextviewportlayoutcontrollerdelegate).
-- Register a [`UITextAttachmentViewProviderReusePolicy`](https://developer.apple.com/documentation/uikit/uitextattachmentviewproviderreusepolicy) on `UITextView` to retain attachment views during scrolling and editing, preventing flicker and preserving view state.
-- Use [`NSTextTable`](https://developer.apple.com/documentation/uikit/nstexttable), [`NSTextBlock`](https://developer.apple.com/documentation/uikit/nstextblock), and [`NSTextTableBlock`](https://developer.apple.com/documentation/uikit/nstexttableblock) to represent table structures in attributed strings.
-- Access paragraph text blocks using [`textBlocks`](https://developer.apple.com/documentation/uikit/nsparagraphstyle/textblocks).
-- Use [`NSTextViewportRenderingSurface`](https://developer.apple.com/documentation/uikit/nstextviewportrenderingsurface) to render text in custom views and layers, and [`NSTextViewportRenderingSurfaceKey`](https://developer.apple.com/documentation/uikit/nstextviewportrenderingsurfacekey) to identify them for caching.
+- Override viewport layout methods directly in a [`UITextView`](../UIKit/uitextview.md) subclass by conforming to [`NSTextViewportLayoutControllerDelegate`](../UIKit/nstextviewportlayoutcontrollerdelegate.md).
+- Register a [`UITextAttachmentViewProviderReusePolicy`](../UIKit/uitextattachmentviewproviderreusepolicy.md) on `UITextView` to retain attachment views during scrolling and editing, preventing flicker and preserving view state.
+- Use [`NSTextTable`](../UIKit/nstexttable.md), [`NSTextBlock`](../UIKit/nstextblock.md), and [`NSTextTableBlock`](../UIKit/nstexttableblock.md) to represent table structures in attributed strings.
+- Access paragraph text blocks using [`textBlocks`](../UIKit/nsparagraphstyle/textblocks.md).
+- Use [`NSTextViewportRenderingSurface`](../UIKit/nstextviewportrenderingsurface.md) to render text in custom views and layers, and [`NSTextViewportRenderingSurfaceKey`](../UIKit/nstextviewportrenderingsurfacekey.md) to identify them for caching.
 
 #### June 2025
 
 ##### General
 
-- Provide seamless immersive visuals by using [`UIBackgroundExtensionView`](https://developer.apple.com/documentation/uikit/uibackgroundextensionview) to extend a view’s content under sidebars and inspectors.
-- Apply Liquid Glass effects to views using [`UIGlassEffect`](https://developer.apple.com/documentation/uikit/uiglasseffect).
-- Organize views together for morph animations in [`UIGlassContainerEffect`](https://developer.apple.com/documentation/uikit/uiglasscontainereffect).
-- Add or adjust effects at the edge of a scroll view with [`UIScrollEdgeEffect`](https://developer.apple.com/documentation/uikit/uiscrolledgeeffect).
-- Apply Liquid Glass effects to buttons with [`glass()`](https://developer.apple.com/documentation/uikit/uibutton/configuration-swift.struct/glass()) and [`prominentGlass()`](https://developer.apple.com/documentation/uikit/uibutton/configuration-swift.struct/prominentglass()).
-- UIKit now supports Swift Observable objects. Use observable objects in [`layoutSubviews()`](https://developer.apple.com/documentation/uikit/uiview/layoutsubviews()); then UIKit automatically invalidates and updates the UI when those objects change.
-- Add a badge to a [`UIBarButtonItem`](https://developer.apple.com/documentation/uikit/uibarbuttonitem) with [`badge`](https://developer.apple.com/documentation/uikit/uibarbuttonitem/badge-4sz3f).
-- Notification payloads are now strongly typed: [`NotificationCenter.MessageIdentifier`](https://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier).
+- Provide seamless immersive visuals by using [`UIBackgroundExtensionView`](../UIKit/uibackgroundextensionview.md) to extend a view’s content under sidebars and inspectors.
+- Apply Liquid Glass effects to views using [`UIGlassEffect`](../UIKit/uiglasseffect.md).
+- Organize views together for morph animations in [`UIGlassContainerEffect`](../UIKit/uiglasscontainereffect.md).
+- Add or adjust effects at the edge of a scroll view with [`UIScrollEdgeEffect`](../UIKit/uiscrolledgeeffect.md).
+- Apply Liquid Glass effects to buttons with [`glass()`](../UIKit/uibutton/configuration-swift.struct/glass%28%29.md) and [`prominentGlass()`](../UIKit/uibutton/configuration-swift.struct/prominentglass%28%29.md).
+- UIKit now supports Swift Observable objects. Use observable objects in [`layoutSubviews()`](../UIKit/uiview/layoutsubviews%28%29.md); then UIKit automatically invalidates and updates the UI when those objects change.
+- Add a badge to a [`UIBarButtonItem`](../UIKit/uibarbuttonitem.md) with [`badge`](../UIKit/uibarbuttonitem/badge-4sz3f.md).
+- Notification payloads are now strongly typed: [`NotificationCenter.MessageIdentifier`](../Foundation/notificationcenter/messageidentifier.md).
 
-##### Menu Bar in Ipados
+##### Menu bar in iPadOS
 
 - Swipe from the top to reveal an iPad app’s full menu. Menus on iPad support images, submenus, inline sections, checkmarks, and more.
-- Configure main menus with [`UIMainMenuSystem`](https://developer.apple.com/documentation/uikit/uimainmenusystem).
+- Configure main menus with [`UIMainMenuSystem`](../UIKit/uimainmenusystem.md).
 
-##### High Dynamic Range Hdr
+##### High dynamic range (HDR)
 
-- [`UIColorPickerViewController`](https://developer.apple.com/documentation/uikit/uicolorpickerviewcontroller) supports picking HDR colors, with a maximum supported exposure value.
-- Observe [`UITraitHDRHeadroomUsageLimit`](https://developer.apple.com/documentation/uikit/uitraithdrheadroomusagelimit-swift.struct) to automatically adjust HDR usage when a view with HDR content is not in focus.
+- [`UIColorPickerViewController`](../UIKit/uicolorpickerviewcontroller.md) supports picking HDR colors, with a maximum supported exposure value.
+- Observe [`UITraitHDRHeadroomUsageLimit`](../UIKit/uitraithdrheadroomusagelimit-swift.struct.md) to automatically adjust HDR usage when a view with HDR content is not in focus.
 
 #### June 2024
 
 ##### General
 
-- Leverage automatic trait usage tracking inside key update methods such as [`layoutSubviews()`](https://developer.apple.com/documentation/uikit/uiview/layoutsubviews()), eliminating the need for manual trait change registration and invalidation.
-- Add repeat, wiggle, breathe, and rotate effects to [`SF Symbols`](https://developer.apple.comhttps://developer.apple.com/sf-symbols/).
-- Take advantage of enhancements to [`UIListContentConfiguration`](https://developer.apple.com/documentation/uikit/uilistcontentconfiguration-swift.struct), which now automatically updates to match the style of the containing list by using the new [`UIListEnvironment`](https://developer.apple.com/documentation/uikit/uilistenvironment) trait from the trait collection, removing the need to instantiate a configuration for a specific list style yourself.
-- Opt out or restrict collaboration on certain types of data through the share sheet using [`UIActivityCollaborationMode`](https://developer.apple.com/documentation/uikit/uiactivitycollaborationmode).
-- Select a specific week of the year in [`UICalendarView`](https://developer.apple.com/documentation/uikit/uicalendarview) using the new [`UICalendarSelectionWeekOfYear`](https://developer.apple.com/documentation/uikit/uicalendarselectionweekofyear) selection option.
-- Observe, participate in, and affect the UI update process using [`UIUpdateLink`](https://developer.apple.com/documentation/uikit/uiupdatelink).
+- Leverage automatic trait usage tracking inside key update methods such as [`layoutSubviews()`](../UIKit/uiview/layoutsubviews%28%29.md), eliminating the need for manual trait change registration and invalidation.
+- Add repeat, wiggle, breathe, and rotate effects to [SF Symbols](https://developer.apple.com/sf-symbols/).
+- Take advantage of enhancements to [`UIListContentConfiguration`](../UIKit/uilistcontentconfiguration-swift.struct.md), which now automatically updates to match the style of the containing list by using the new [`UIListEnvironment`](../UIKit/uilistenvironment.md) trait from the trait collection, removing the need to instantiate a configuration for a specific list style yourself.
+- Opt out or restrict collaboration on certain types of data through the share sheet using [`UIActivityCollaborationMode`](../UIKit/uiactivitycollaborationmode.md).
+- Select a specific week of the year in [`UICalendarView`](../UIKit/uicalendarview.md) using the new [`UICalendarSelectionWeekOfYear`](../UIKit/uicalendarselectionweekofyear.md) selection option.
+- Observe, participate in, and affect the UI update process using [`UIUpdateLink`](../UIKit/uiupdatelink.md).
 
 ##### Navigation
 
-- Showcase your app and its unique identity with a new, customizable launch design for document-based apps. In UIKit, define [`launchOptions`](https://developer.apple.com/documentation/uikit/uidocumentviewcontroller/launchoptions-swift.property) on your [`UIDocumentViewController`](https://developer.apple.com/documentation/uikit/uidocumentviewcontroller).
-- Make your app’s navigation more immersive by adopting the new tab bar on iPad. If your app presents a rich hierarchy of tab items, set the  [`mode`](https://developer.apple.com/documentation/uikit/uitabbarcontroller/mode-swift.property) to [`UITabBarController.Mode.tabSidebar`](https://developer.apple.com/documentation/uikit/uitabbarcontroller/mode-swift.enum/tabsidebar) to automatically switch between the tab bar and sidebar representations. In SwiftUI, use [`sidebarAdaptable`](https://developer.apple.com/documentation/swiftui/tabviewstyle/sidebaradaptable).
-- Transition between views in a way that feels fluid and consistent using a systemwide zoom transition. In UIKit, configure your view controller’s [`preferredTransition`](https://developer.apple.com/documentation/uikit/uiviewcontroller/preferredtransition) to [`zoom(options:sourceViewProvider:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/transition/zoom(options:sourceviewprovider:)). In SwiftUI, use [`zoom(sourceID:in:)`](https://developer.apple.com/documentation/swiftui/navigationtransition/zoom(sourceid:in:)).
+- Showcase your app and its unique identity with a new, customizable launch design for document-based apps. In UIKit, define [`launchOptions`](../UIKit/uidocumentviewcontroller/launchoptions-swift.property.md) on your [`UIDocumentViewController`](../UIKit/uidocumentviewcontroller.md).
+- Make your app’s navigation more immersive by adopting the new tab bar on iPad. If your app presents a rich hierarchy of tab items, set the  [`mode`](../UIKit/uitabbarcontroller/mode-swift.property.md) to [`UITabBarController.Mode.tabSidebar`](../UIKit/uitabbarcontroller/mode-swift.enum/tabsidebar.md) to automatically switch between the tab bar and sidebar representations. In SwiftUI, use [`sidebarAdaptable`](../SwiftUI/tabviewstyle/sidebaradaptable.md).
+- Transition between views in a way that feels fluid and consistent using a systemwide zoom transition. In UIKit, configure your view controller’s [`preferredTransition`](../UIKit/uiviewcontroller/preferredtransition.md) to [`zoom(options:sourceViewProvider:)`](../UIKit/uiviewcontroller/transition/zoom%28options,sourceviewprovider%29.md). In SwiftUI, use [`zoom(sourceID:in:)`](../SwiftUI/navigationtransition/zoom%28sourceid,in%29.md).
 
-##### Framework Interoperability
+##### Framework interoperability
 
-- Reuse existing UIKit gesture recognizer code in SwiftUI. In SwiftUI, create UIKit gesture recognizers using [`UIGestureRecognizerRepresentable`](https://developer.apple.com/documentation/swiftui/uigesturerecognizerrepresentable). In UIKit, refer to SwiftUI gestures by name using [`name`](https://developer.apple.com/documentation/uikit/uigesturerecognizer/name).
+- Reuse existing UIKit gesture recognizer code in SwiftUI. In SwiftUI, create UIKit gesture recognizers using [`UIGestureRecognizerRepresentable`](../SwiftUI/uigesturerecognizerrepresentable.md). In UIKit, refer to SwiftUI gestures by name using [`name`](../UIKit/uigesturerecognizer/name.md).
 
-##### Visionos
+##### visionOS
 
-- Support more varieties of list layouts by configuring whether section headers stretch to fill the entire width of the list or shrink to tightly hug their content. For collection views, use [`contentHuggingElements`](https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.property) on [`UICollectionLayoutListConfiguration`](https://developer.apple.com/documentation/uikit/uicollectionlayoutlistconfiguration-swift.struct). For table views, use [`contentHuggingElements`](https://developer.apple.com/documentation/uikit/uitableview/contenthuggingelements) on [`UITableView`](https://developer.apple.com/documentation/uikit/uitableview).
-- Animate SF Symbols on visionOS using the symbol effects API and [`UIImageView`](https://developer.apple.com/documentation/uikit/uiimageview).
-- Apply hierarchical vibrant text color to labels using [`UIColor.Prominence`](https://developer.apple.com/documentation/uikit/uicolor/prominence-swift.enum).
-- Specify an action to perform without shifting the focus away from the keyboard using [`keyboardAction`](https://developer.apple.com/documentation/uikit/uitextinputassistantitem/keyboardaction).
-- Push a new scene in place of an existing scene using [`UIWindowScenePushPlacement`](https://developer.apple.com/documentation/uikit/uiwindowscenepushplacement-swift.struct). The new scene appears in the same position as the original scene, hiding it. Closing the new scene makes the original scene reappear.
+- Support more varieties of list layouts by configuring whether section headers stretch to fill the entire width of the list or shrink to tightly hug their content. For collection views, use [`contentHuggingElements`](../UIKit/uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.property.md) on [`UICollectionLayoutListConfiguration`](../UIKit/uicollectionlayoutlistconfiguration-swift.struct.md). For table views, use [`contentHuggingElements`](../UIKit/uitableview/contenthuggingelements.md) on [`UITableView`](../UIKit/uitableview.md).
+- Animate SF Symbols on visionOS using the symbol effects API and [`UIImageView`](../UIKit/uiimageview.md).
+- Apply hierarchical vibrant text color to labels using [`UIColor.Prominence`](../UIKit/uicolor/prominence-swift.enum.md).
+- Specify an action to perform without shifting the focus away from the keyboard using [`keyboardAction`](../UIKit/uitextinputassistantitem/keyboardaction.md).
+- Push a new scene in place of an existing scene using [`UIWindowScenePushPlacement`](../UIKit/uiwindowscenepushplacement-swift.struct.md). The new scene appears in the same position as the original scene, hiding it. Closing the new scene makes the original scene reappear.
 
-##### Tvos
+##### tvOS
 
 - Create a unifying color theme in your app by specifying an accent color in your app’s asset catalog, which is now supported in tvOS.
 
@@ -134,65 +135,66 @@ Browse notable changes in [`UIKit`](https://developer.apple.com/documentation/ui
 ##### General
 
 - Preview your views and view controllers alongside your code using the new `#Preview` Swift macro.
-- Take advantage of a new view controller appearance callback, [`viewIsAppearing(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewisappearing(_:)), to run code that depends on the view’s initial geometry. The system calls this method when both the view and view controller have an up-to-date trait collection, and after the superview adds the view to the hierarchy and lays it out. This method deploys back to iOS 13.
-- Learn about enhancements to the trait system, which let you define custom traits for your own data, quickly change trait values throughout the view hierarchy, and register for trait changes in more flexible ways. For more information, see WWDC23 session 10057: [`Unleash the UIKit trait system`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10057/).
-- Display and manage empty state consistently in your app with [`UIContentUnavailableConfiguration`](https://developer.apple.com/documentation/uikit/uicontentunavailableconfiguration-swift.struct), which provides new system standard styles and layouts for common empty states. Help people understand why no content is present, and when possible, provide guidance on how to add content.
-- Create a powerful text experience in your app. Define richer interactions by changing the default tap or menu behavior when interacting with a text item. If you implement a custom UI for displaying text, support the redesigned text cursor by adopting the new text selection UI. Mark up text fields with additional text content types to help people fill out forms even faster. For more information, see WWDC23 session 10058: [`What’s new with text and text interactions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10058/).
-- Let people drop supported files and content onto your app icon on the Home Screen to open them in your app. To make sure your app is properly configured, verify that your `Info.plist` file specifies the file types your app supports using [`CFBundleDocumentTypes`](https://developer.apple.com/documentation/bundleresources/information-property-list/cfbundledocumenttypes).
+- Take advantage of a new view controller appearance callback, [`viewIsAppearing(_:)`](../UIKit/uiviewcontroller/viewisappearing%28_%29.md), to run code that depends on the view’s initial geometry. The system calls this method when both the view and view controller have an up-to-date trait collection, and after the superview adds the view to the hierarchy and lays it out. This method deploys back to iOS 13.
+- Learn about enhancements to the trait system, which let you define custom traits for your own data, quickly change trait values throughout the view hierarchy, and register for trait changes in more flexible ways. For more information, see WWDC23 session 10057: [Unleash the UIKit trait system](https://developer.apple.com/videos/play/wwdc2023/10057/).
+- Display and manage empty state consistently in your app with [`UIContentUnavailableConfiguration`](../UIKit/uicontentunavailableconfiguration-swift.struct.md), which provides new system standard styles and layouts for common empty states. Help people understand why no content is present, and when possible, provide guidance on how to add content.
+- Create a powerful text experience in your app. Define richer interactions by changing the default tap or menu behavior when interacting with a text item. If you implement a custom UI for displaying text, support the redesigned text cursor by adopting the new text selection UI. Mark up text fields with additional text content types to help people fill out forms even faster. For more information, see WWDC23 session 10058: [What’s new with text and text interactions](https://developer.apple.com/videos/play/wwdc2023/10058/).
+- Let people drop supported files and content onto your app icon on the Home Screen to open them in your app. To make sure your app is properly configured, verify that your `Info.plist` file specifies the file types your app supports using [`CFBundleDocumentTypes`](../BundleResources/information-property-list/cfbundledocumenttypes.md).
 
-##### Accessibility and Internationalization
+##### Accessibility and internationalization
 
 - Simplify how you maintain your accessibility code with block-based setters for accessibility attributes. Make sure people receive the most important information first by specifying a default, low, or high priority for announcements. Enhance custom accessibility elements with the new toggle and zoom accessibility traits.
 - Create a great text experience for international users by testing your UI in all languages. Adopt text styles to take advantage of enhancements to the font system, like improved wrapping and hyphenation for Chinese, German, Japanese, and Korean, as well as enhancements for variable line heights that improve legibility in several languages, including Arabic, Hindi, Thai, and Vietnamese. Access localized variants of symbol images by specifying a locale.
 
-##### Ipados
+##### iPadOS
 
 - Help people customize their Stage Manager configuration by including a larger target area for dragging windows. Leverage new resizing behavior for split view controllers to get the most out of your UI in Stage Manager.
-- Support scrolling of your scroll view content with hardware keyboard shortcuts. This behavior is enabled by default, which you can override using [`allowsKeyboardScrolling`](https://developer.apple.com/documentation/uikit/uiscrollview/allowskeyboardscrolling).
-- Simplify document management in your document-centric apps. Set your `UIDocument` subclass as the rename delegate of a navigation item to handle file renaming automatically. Build your content view controller from `UIDocumentViewController`, which provides a system default experience for managing documents: automatically configuring the title menu, sharing, drag and drop, key commands, and more. For more information, see WWDC23 session 10056: [`Build better document-centric apps`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10056/).
-- Enhance the Apple Pencil experience in your iPadOS app. Give your app a sense of depth by using [`UIHoverGestureRecognizer`](https://developer.apple.com/documentation/uikit/uihovergesturerecognizer) to draw a preview of the stroke. Support the beautiful new inks in PencilKit, including monoline, fountain pen, watercolor, and crayon.
+- Support scrolling of your scroll view content with hardware keyboard shortcuts. This behavior is enabled by default, which you can override using [`allowsKeyboardScrolling`](../UIKit/uiscrollview/allowskeyboardscrolling.md).
+- Simplify document management in your document-centric apps. Set your `UIDocument` subclass as the rename delegate of a navigation item to handle file renaming automatically. Build your content view controller from `UIDocumentViewController`, which provides a system default experience for managing documents: automatically configuring the title menu, sharing, drag and drop, key commands, and more. For more information, see WWDC23 session 10056: [Build better document-centric apps](https://developer.apple.com/videos/play/wwdc2023/10056/).
+- Enhance the Apple Pencil experience in your iPadOS app. Give your app a sense of depth by using [`UIHoverGestureRecognizer`](../UIKit/uihovergesturerecognizer.md) to draw a preview of the stroke. Support the beautiful new inks in PencilKit, including monoline, fountain pen, watercolor, and crayon.
 
-##### Views and Controls
+##### Views and controls
 
 - Animate symbol images with new symbol effects, including bounce, pulse, variable color, scale, appear, disappear, and replace.
-- Build even more performant apps with flexible layouts using collection views. Apply diffable data source snapshots and perform batch updates with even better performance. Use the [`uniformAcrossSiblings(estimate:)`](https://developer.apple.com/documentation/uikit/nscollectionlayoutdimension/uniformacrosssiblings(estimate:)) dimension for compositional layouts to specify uniform size across sibling items, with smaller items increasing in size to match their largest sibling.
-- Simplify spring animations by providing duration and bounce parameters for the new view animation method, [`animate(springDuration:bounce:initialSpringVelocity:delay:options:animations:completion:)`](https://developer.apple.com/documentation/uikit/uiview/animate(springduration:bounce:initialspringvelocity:delay:options:animations:completion:)).
+- Build even more performant apps with flexible layouts using collection views. Apply diffable data source snapshots and perform batch updates with even better performance. Use the [`uniformAcrossSiblings(estimate:)`](../UIKit/nscollectionlayoutdimension/uniformacrosssiblings%28estimate%29.md) dimension for compositional layouts to specify uniform size across sibling items, with smaller items increasing in size to match their largest sibling.
+- Simplify spring animations by providing duration and bounce parameters for the new view animation method, [`animate(springDuration:bounce:initialSpringVelocity:delay:options:animations:completion:)`](../UIKit/uiview/animate%28springduration,bounce,initialspringvelocity,delay,options,animations,completion%29.md).
 - Represent fractional progress through a page of content with page controls.
 - Display and manipulate high dynamic range (HDR) images.
-- Display your menu as a palette with [`displayAsPalette`](https://developer.apple.com/documentation/uikit/uimenu/options-swift.struct/displayaspalette) for it to appear as a row of menu elements for choosing from a collection of items.
-- Take advantage of the [`UIStatusBarStyle.default`](https://developer.apple.com/documentation/uikit/uistatusbarstyle/default) status bar style, which now automatically chooses a light or dark appearance that maintains contrast with the content underneath it.
+- Display your menu as a palette with [`displayAsPalette`](../UIKit/uimenu/options-swift.struct/displayaspalette.md) for it to appear as a row of menu elements for choosing from a collection of items.
+- Take advantage of the [`UIStatusBarStyle.default`](../UIKit/uistatusbarstyle/default.md) status bar style, which now automatically chooses a light or dark appearance that maintains contrast with the content underneath it.
 
 ## See Also
 
-- [Accelerate updates](accelerate.md)
+### Technology and frameworks
+- [Accelerate updates](./accelerate.md)
   Learn about important changes to Accelerate.
-- [Accessibility updates](accessibility.md)
+- [Accessibility updates](./accessibility.md)
   Learn about important changes to Accessibility.
-- [ActivityKit updates](activitykit.md)
+- [ActivityKit updates](./activitykit.md)
   Learn about important changes in ActivityKit.
-- [AdAttributionKit Updates](adattributionkit.md)
+- [AdAttributionKit Updates](./adattributionkit.md)
   Learn about important changes to AdAttributionKit.
-- [App Clips updates](appclips.md)
+- [App Clips updates](./appclips.md)
   Learn about important changes in App Clips.
-- [App Intents updates](appintents.md)
+- [App Intents updates](./appintents.md)
   Learn about important changes in App Intents.
-- [AppKit updates](appkit.md)
+- [AppKit updates](./appkit.md)
   Learn about important changes to AppKit.
-- [Apple Intelligence updates](apple-intelligence.md)
+- [Apple Intelligence updates](./apple-intelligence.md)
   Learn about important changes to Apple Intelligence.
-- [AppleMapsServerAPI Updates](applemapsserverapi.md)
+- [AppleMapsServerAPI Updates](./applemapsserverapi.md)
   Learn about important changes to AppleMapsServerAPI.
-- [Apple Pencil updates](applepencil.md)
+- [Apple Pencil updates](./applepencil.md)
   Learn about important changes to Apple Pencil.
-- [ARKit updates](arkit.md)
+- [ARKit updates](./arkit.md)
   Learn about important changes to ARKit.
-- [Audio Toolbox updates](audiotoolbox.md)
+- [Audio Toolbox updates](./audiotoolbox.md)
   Learn about important changes to Audio Toolbox.
-- [AuthenticationServices updates](authenticationservices.md)
+- [AuthenticationServices updates](./authenticationservices.md)
   Learn about important changes to AuthenticationServices.
-- [AVFAudio updates](avfaudio.md)
+- [AVFAudio updates](./avfaudio.md)
   Learn about important changes to AVFAudio.
-- [AVFoundation updates](avfoundation.md)
+- [AVFoundation updates](./avfoundation.md)
   Learn about important changes to AVFoundation.
 
 

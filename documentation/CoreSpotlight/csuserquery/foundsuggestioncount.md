@@ -1,7 +1,8 @@
 # foundSuggestionCount
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of suggested items the query found so far.
 
@@ -18,17 +19,22 @@ The number of suggested items the query found so far.
 var foundSuggestionCount: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger foundSuggestionCount;
+```
+
 #### Discussion
 
 As the query runs, it updates the value in this property to reflect the total number of suggestions.
 
 ## See Also
 
-- [func start()](csuserquery/start.md)
+### Executing the query with handler blocks
+- [func start()](./start%28%29.md)
   Starts searching the index for items that match the current query string and parameters.
-- [func cancel()](csuserquery/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the current query operation.
-- [var foundSuggestionsHandler: (([CSSuggestion]) -> Void)?](csuserquery/foundsuggestionshandler.md)
+- [var foundSuggestionsHandler: (([CSSuggestion]) -> Void)?](./foundsuggestionshandler.md)
   The block to execute when the query delivers a new batch of suggested items.
 
 

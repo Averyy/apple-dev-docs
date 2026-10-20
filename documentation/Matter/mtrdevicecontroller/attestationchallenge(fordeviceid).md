@@ -1,7 +1,8 @@
 # attestationChallenge(forDeviceID:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func attestationChallenge(forDeviceID deviceID: NSNumber) -> Data?
+```
+
+```objc
+- (NSData *) attestationChallengeForDeviceID:(NSNumber *) deviceID;
 ```
 
 

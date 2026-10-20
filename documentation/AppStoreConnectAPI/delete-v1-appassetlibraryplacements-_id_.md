@@ -1,7 +1,8 @@
 # Delete an app asset library placement
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Delete an app asset library placement.
 
@@ -10,7 +11,7 @@ Delete an app asset library placement.
 
 ## Mentions
 
-- [Placing assets on your App Store surfaces](placing-assets-on-your-app-store-surfaces.md)
+- [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md)
 
 #### Discussion
 
@@ -18,13 +19,13 @@ Delete an app asset library placement.
 
 **Request**:
 
-```None
+```
 DELETE https://api.appstoreconnect.apple.com/v1/appAssetLibraryPlacements/2e000005-e036-8f0b-8f25-6dbc2baa784a
 ```
 
 **Response**:
 
-```None
+```
 HTTP/1.1 204 No Content
 ```
 
@@ -34,11 +35,23 @@ HTTP/1.1 204 No Content
 
 ## Parameters
 
+### Path Parameters
+
 - `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
+## Responses
+
+- `204` No Content
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an app asset library placement](post-v1-appassetlibraryplacements.md)
+### Managing placements
+- [Create an app asset library placement](./post-v1-appassetlibraryplacements.md)
   Create an app asset library placement.
 
 

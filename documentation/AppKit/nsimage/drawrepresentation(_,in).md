@@ -1,12 +1,13 @@
 # drawRepresentation(_:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the image using the specified image representation object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Draws the image using the specified image representation object.
 func drawRepresentation(_ imageRep: NSImageRep, in rect: NSRect) -> Bool
 ```
 
+```objc
+- (BOOL) drawRepresentation:(NSImageRep *) imageRep inRect:(NSRect) rect;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the image was successfully drawn; otherwise, returns [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the image was successfully drawn; otherwise, returns [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method fills the specified rectangle with the image’s current background color and then sends a message to the specified image representation asking if to draw itself. If the image supports the ability to scale itself when it is resized, this method sends a [`draw(in:)`](nsimagerep/draw(in:).md) message; otherwise, it sends a [`draw(at:)`](nsimagerep/draw(at:).md) message.
+This method fills the specified rectangle with the image’s current background color and then sends a message to the specified image representation asking if to draw itself. If the image supports the ability to scale itself when it is resized, this method sends a [`draw(in:)`](../nsimagerep/draw%28in%29.md) message; otherwise, it sends a [`draw(at:)`](../nsimagerep/draw%28at%29.md) message.
 
 You should not call this method directly; an `NSImage` object uses it to cache and print its image representations. You can override this method to change the way images are rendered into their caches and onto the printed page. For example, you could scale or rotate the coordinate system before sending this message to `super` to continue rendering the image representation.
 
@@ -33,17 +38,19 @@ If the background color is fully transparent and the image data is not being cac
 
 ## See Also
 
-- [var backgroundColor: NSColor](nsimage/backgroundcolor.md)
+### Related Documentation
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The background color for the image.
-- [func draw(in: NSRect)](nsimage/draw(in:).md)
+### Drawing Images
+- [func draw(in: NSRect)](./draw%28in%29.md)
   Draws the image in the specified rectangle.
-- [func draw(at: NSPoint, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](nsimage/draw(at:from:operation:fraction:).md)
+- [func draw(at: NSPoint, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](./draw%28at,from,operation,fraction%29.md)
   Draws all or part of the image at the specified point in the current coordinate system.
-- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](nsimage/draw(in:from:operation:fraction:).md)
+- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat)](./draw%28in,from,operation,fraction%29.md)
   Draws all or part of the image in the specified rectangle in the current coordinate system.
-- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat, respectFlipped: Bool, hints: [NSImageRep.HintKey : Any]?)](nsimage/draw(in:from:operation:fraction:respectflipped:hints:).md)
+- [func draw(in: NSRect, from: NSRect, operation: NSCompositingOperation, fraction: CGFloat, respectFlipped: Bool, hints: [NSImageRep.HintKey : Any]?)](./draw%28in,from,operation,fraction,respectflipped,hints%29.md)
   Draws all or part of the image in the specified rectangle respecting the hints and the orientation of the current coordinate system.
-- [enum NSCompositingOperation](nscompositingoperation.md)
+- [enum NSCompositingOperation](../nscompositingoperation.md)
   Constants that describe compositing operators in terms of source and destination images, each having an opaque and transparent region.
 
 

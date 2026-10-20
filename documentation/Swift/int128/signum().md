@@ -1,7 +1,8 @@
 # signum()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `-1` if this value is negative and `1` if it’s positive; otherwise, `0`.
 

@@ -1,7 +1,8 @@
 # PhysicallyBasedMaterial.Opacity
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that defines the opacity of an entity.
 
@@ -11,7 +12,7 @@ An object that defines the opacity of an entity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,35 +23,36 @@ struct Opacity
 ## Topics
 
 ### Creating an opacity object
-- [init(floatLiteral: Float)](physicallybasedmaterial/opacity/init(floatliteral:).md)
+- [init(floatLiteral: Float)](./opacity/init%28floatliteral%29.md)
   Creates an opacity object using a single value.
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/opacity/init(scale:texture:).md)
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./opacity/init%28scale,texture%29.md)
   Creates an opacity object using a single value or a texture.
-- [init(CustomMaterial.Opacity)](physicallybasedmaterial/opacity/init(_:).md)
+- [init(CustomMaterial.Opacity)](./opacity/init%28_%29.md)
   Creates an opacity object using a custom material’s opacity property.
 ### Accessing opacity values
-- [var texture: PhysicallyBasedMaterial.Texture?](physicallybasedmaterial/opacity/texture.md)
+- [var texture: PhysicallyBasedMaterial.Texture?](./opacity/texture.md)
   The amount of opacity specified using a UV-mapped image.
-- [static var textureSemantic: TextureResource.Semantic](physicallybasedmaterial/opacity/texturesemantic.md)
+- [static var textureSemantic: TextureResource.Semantic](./opacity/texturesemantic.md)
   The intended use of the object’s texture property.
-- [var scale: Float](physicallybasedmaterial/opacity/scale.md)
-- [var opacityThreshold: Float?](physicallybasedmaterial/opacitythreshold.md)
+- [var scale: Float](./opacity/scale.md)
+- [var opacityThreshold: Float?](./opacitythreshold.md)
   A threshold below which RealityKit ignores opacity.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByFloatLiteral](../../Swift/expressiblebyfloatliteral.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [PhysicallyBasedMaterial.Blending.opaque](physicallybasedmaterial/blending-swift.enum/opaque.md)
+### Specifying opacity
+- [PhysicallyBasedMaterial.Blending.opaque](./blending-swift.enum/opaque.md)
   An opaque surface.
-- [case transparent(opacity: PhysicallyBasedMaterial.Opacity)](physicallybasedmaterial/blending-swift.enum/transparent(opacity:).md)
+- [case transparent(opacity: PhysicallyBasedMaterial.Opacity)](./blending-swift.enum/transparent%28opacity%29.md)
   A surface that’s transparent.
-- [var opacityThreshold: Float?](physicallybasedmaterial/opacitythreshold.md)
+- [var opacityThreshold: Float?](./opacitythreshold.md)
   A threshold below which RealityKit ignores opacity.
 
 

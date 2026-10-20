@@ -1,14 +1,15 @@
 # uio_create
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 uio_t uio_create(int a_iovcount, off_t a_offset, int a_spacetype, int a_iodirection);
 ```
 

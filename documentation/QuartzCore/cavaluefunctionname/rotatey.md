@@ -1,7 +1,8 @@
 # rotateY
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value function that rotates by the input value, in radians, around the y-axis. This value function expects a single input value.
 
@@ -19,11 +20,16 @@ A value function that rotates by the input value, in radians, around the y-axis.
 static let rotateY: CAValueFunctionName
 ```
 
+```c
+extern CAValueFunctionName const kCAValueFunctionRotateY;
+```
+
 ## See Also
 
-- [static let rotateX: CAValueFunctionName](cavaluefunctionname/rotatex.md)
+### Constants
+- [static let rotateX: CAValueFunctionName](./rotatex.md)
   A value function that rotates by the input value, in radians, around the x-axis. This value function expects a single input value.
-- [static let rotateZ: CAValueFunctionName](cavaluefunctionname/rotatez.md)
+- [static let rotateZ: CAValueFunctionName](./rotatez.md)
   A value function that rotates by the input value, in radians, around the z-axis. This value function expects a single input value.
 
 

@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: TranslationUIProvider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the scene to translate the user’s selected text, with the provided View content.
 

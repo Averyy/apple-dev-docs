@@ -1,7 +1,8 @@
 # BetaAppReviewSubmission.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BetaAppReviewSubmission.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppReviewSubmission.Relationships.Build](betaappreviewsubmission/relationships-data.dictionary/build-data.dictionary.md)
+- [object BetaAppReviewSubmission.Relationships.Build](./relationships-data.dictionary/build-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object BetaAppReviewSubmission.Relationships
 
 ## See Also
 
-- [object BetaAppReviewSubmission.Attributes](betaappreviewsubmission/attributes-data.dictionary.md)
+### Objects
+- [object BetaAppReviewSubmission.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a Beta App Review Submissions resource.
 
 

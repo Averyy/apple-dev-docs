@@ -1,7 +1,8 @@
 # AXNumericDataAxisDescriptor.ScaleType.linear
 
 **Framework**: Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A linear scale.
 
@@ -20,11 +21,16 @@ A linear scale.
 case linear
 ```
 
+```c
+AXScaleTypeLinear
+```
+
 ## See Also
 
-- [AXNumericDataAxisDescriptor.ScaleType.ln](axnumericdataaxisdescriptor/scaletype-swift.enum/ln.md)
+### Scales
+- [AXNumericDataAxisDescriptor.ScaleType.ln](./ln.md)
   A natural log scale.
-- [AXNumericDataAxisDescriptor.ScaleType.log10](axnumericdataaxisdescriptor/scaletype-swift.enum/log10.md)
+- [AXNumericDataAxisDescriptor.ScaleType.log10](./log10.md)
   A log scale.
 
 

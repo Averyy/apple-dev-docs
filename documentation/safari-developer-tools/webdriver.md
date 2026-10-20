@@ -20,29 +20,30 @@ Test execution is confined to special automation windows that are isolated from 
 
 To prevent any attempts to interact with the window or web content during a test, Safari installs a transparent “glass pane” over the automation windows while the browser is being used for WebDriver testing. This pane catches any stray interactions (mouse, keyboard, resizing, and so on) that could affect the automation window. If a running test gets stuck, you can interrupt it by “breaking” the glass pane and stopping the session. When an automation session is interrupted, the test’s connection to the browser is permanently severed, and the automation window remains open for further inspection, until closed manually.
 
-#### One Session at a Time to Mimic User Interaction
+#### One Session at a Time, to Mimic User Interaction
 
 Only one Safari browser instance can be active at any given time, and only one WebDriver session at a time can be attached to the browser instance. These constraints ensure that the simulated behavior (mouse, keyboard, touch, and so forth) accurately reflects what a user can do in a macOS windowing environment and prevents tests from competing with each other for window and keyboard focus.
 
 ## Topics
 
 ### Enabling WebDriver
-- [Enable WebDriver on macOS](macos-enabling-webdriver.md)
+- [Enable WebDriver on macOS](./macos-enabling-webdriver.md)
   Enable WebDriver to automate testing of Safari on macOS.
-- [Enable WebDriver on iOS and iPadOS](ios-enabling-webdriver.md)
+- [Enable WebDriver on iOS and iPadOS](./ios-enabling-webdriver.md)
   Enable WebDriver to automate testing of Safari on iOS and iPadOS using a connected Mac.
 
 ## See Also
 
-- [Develop menu](develop-menu.md)
+### Tools
+- [Develop menu](./develop-menu.md)
   Access tools for debugging webpages in Safari, as well as tools for debugging web content in other apps and on other devices.
-- [Web Inspector](web-inspector.md)
+- [Web Inspector](./web-inspector.md)
   Use Web Inspector to inspect and debug your HTML, CSS, and JavaScript.
-- [Responsive Design Mode](responsive-design-mode.md)
+- [Responsive Design Mode](./responsive-design-mode.md)
   Use Responsive Design Mode to test your `media` queries and other dynamic styles to ensure your webpages look great on any screen.
-- [Inspect Apps and Devices](inspect-apps-and-devices.md)
+- [Inspect Apps and Devices](./inspect-apps-and-devices.md)
   Discover all inspectable web content in Safari and other apps on your Mac and on connected devices.
-- [Connecting an AI agent to Safari](connecting-an-ai-agent-to-safari.md)
+- [Connecting an AI agent to Safari](./connecting-an-ai-agent-to-safari.md)
   Inspect, test, and debug your website with an AI agent connected to the Safari MCP server.
 
 

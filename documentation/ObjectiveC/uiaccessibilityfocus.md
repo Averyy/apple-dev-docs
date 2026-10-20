@@ -1,6 +1,7 @@
 # UIAccessibilityFocus
 
-**Framework**: Objective-C Runtime
+**Framework**: Objective-C Runtime  
+**Role**: API Collection
 
 An informal protocol that provides a way to determine whether an assistive app, such as VoiceOver, has focus on an accessible element.
 
@@ -11,25 +12,27 @@ VoiceOver and other assistive technologies place a virtual focus on elements, wh
 ## Topics
 
 ### Getting focus information
-- [func accessibilityElementDidBecomeFocused()](nsobject-swift.class/accessibilityelementdidbecomefocused.md)
+- [func accessibilityElementDidBecomeFocused()](./nsobject-swift.class/accessibilityelementdidbecomefocused%28%29.md)
   Sent after an assistive technology has set its virtual focus on the accessibility element.
-- [func accessibilityElementDidLoseFocus()](nsobject-swift.class/accessibilityelementdidlosefocus.md)
+- [func accessibilityElementDidLoseFocus()](./nsobject-swift.class/accessibilityelementdidlosefocus%28%29.md)
   Sent after an assistive technology has removed its virtual focus from an accessibility element.
-- [func accessibilityElementIsFocused() -> Bool](nsobject-swift.class/accessibilityelementisfocused.md)
+- [func accessibilityElementIsFocused() -> Bool](./nsobject-swift.class/accessibilityelementisfocused%28%29.md)
   Returns a Boolean value indicating whether an assistive technology is focused on the accessibility element.
-- [func accessibilityAssistiveTechnologyFocusedIdentifiers() -> Set<UIAccessibility.AssistiveTechnologyIdentifier>?](nsobject-swift.class/accessibilityassistivetechnologyfocusedidentifiers.md)
+- [func accessibilityAssistiveTechnologyFocusedIdentifiers() -> Set<UIAccessibility.AssistiveTechnologyIdentifier>?](./nsobject-swift.class/accessibilityassistivetechnologyfocusedidentifiers%28%29.md)
   Returns a set of identifier keys indicating which assistive app has focus on the accessibility element.
 
 ## See Also
 
-- [Accessibility Programming Guide for iOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785)
-- [UIAccessibility](../uikit/uiaccessibility-protocol.md)
+### Related Documentation
+- [Accessibility Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/iPhoneAccessibility/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008785)
+### Improving Accessibility
+- [UIAccessibility](../UIKit/uiaccessibility-protocol.md)
   A set of methods that provides accessibility information about views and controls in an app’s user interface.
-- [UIAccessibilityContainer](../uikit/uiaccessibilitycontainer.md)
+- [UIAccessibilityContainer](../UIKit/uiaccessibilitycontainer.md)
   Provide a set of methods that view subclasses use to make subcomponents accessible as separate elements.
-- [UIAccessibilityAction](uiaccessibilityaction.md)
+- [UIAccessibilityAction](./uiaccessibilityaction.md)
   A set of methods that accessibility elements can use to support specific actions.
-- [UIAccessibilityDragging](uiaccessibilitydragging.md)
+- [UIAccessibilityDragging](./uiaccessibilitydragging.md)
   A pair of properties to allow you to fine-tune how drags and drops are exposed to assistive technologies.
 
 

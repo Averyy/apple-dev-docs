@@ -1,7 +1,8 @@
 # allowsDirectories
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the file upload control supports the selection of directories.
 
@@ -18,9 +19,14 @@ A Boolean value that indicates whether the file upload control supports the sele
 var allowsDirectories: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL allowsDirectories;
+```
+
 ## See Also
 
-- [var allowsMultipleSelection: Bool](wkopenpanelparameters/allowsmultipleselection.md)
+### Configuring the panel parameters
+- [var allowsMultipleSelection: Bool](./allowsmultipleselection.md)
   A Boolean value that indicates whether the file upload control supports multiple files.
 
 

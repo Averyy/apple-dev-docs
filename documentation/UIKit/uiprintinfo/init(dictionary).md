@@ -1,7 +1,8 @@
 # init(dictionary:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a print-information object that is initialized with the data in the passed-in dictionary.
 
@@ -17,6 +18,10 @@ Returns a print-information object that is initialized with the data in the pass
 init(dictionary: [AnyHashable : Any]?)
 ```
 
+```objc
++ (UIPrintInfo *) printInfoWithDictionary:(NSDictionary *) dictionary;
+```
+
 #### Return Value
 
 An instance of `UIPrintInfo` or `nil` if the object could not be created.
@@ -25,7 +30,7 @@ An instance of `UIPrintInfo` or `nil` if the object could not be created.
 
 You use the `dictionary` parameter to initialize a `UIPrintInfo` object with stored print-job information.  Some applications might archive a previous `UIPrintInfo` object and use that for a future print job with this method.
 
-You can later access the dictionary by calling the [`dictionaryRepresentation`](uiprintinfo/dictionaryrepresentation.md) method on the `UIPrintInfo` object.
+You can later access the dictionary by calling the [`dictionaryRepresentation`](./dictionaryrepresentation.md) method on the `UIPrintInfo` object.
 
 ## Parameters
 
@@ -33,11 +38,12 @@ You can later access the dictionary by calling the [`dictionaryRepresentation`](
 
 ## See Also
 
-- [class func printInfo() -> UIPrintInfo](uiprintinfo/printinfo.md)
+### Creating a print info object
+- [class func printInfo() -> UIPrintInfo](./printinfo%28%29.md)
   Returns a print-information object initialized with default values.
-- [var dictionaryRepresentation: [AnyHashable : Any]](uiprintinfo/dictionaryrepresentation.md)
+- [var dictionaryRepresentation: [AnyHashable : Any]](./dictionaryrepresentation.md)
   A dictionary representation of a print-information object.
-- [init?(coder: NSCoder)](uiprintinfo/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a print info object from data in an unarchiver.
 
 

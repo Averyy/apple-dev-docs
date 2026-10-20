@@ -1,7 +1,8 @@
 # overallDurationHint
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A hint to the total duration of fragments that currently exist or may exist in the future.
 
@@ -20,17 +21,20 @@ A hint to the total duration of fragments that currently exist or may exist in t
 static var overallDurationHint: AVAsyncProperty<Root, CMTime> { get }
 ```
 
+Available when `Root` inherits `AVAsset`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
-For QuickTime movie files and MPEG-4 files, the system obtains the value of this property from the `mehd` box of the `mvex` box, if present. If no total fragment duration hint is available, the value of this property is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
+For QuickTime movie files and MPEG-4 files, the system obtains the value of this property from the `mehd` box of the `mvex` box, if present. If no total fragment duration hint is available, the value of this property is [`invalid`](../../CoreMedia/cmtime/invalid.md).
 
 ## See Also
 
-- [static var canContainFragments: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/cancontainfragments.md)
+### Loading fragment support
+- [static var canContainFragments: AVAsyncProperty<Root, Bool>](./cancontainfragments.md)
   A Boolean value that indicates whether you can extend the asset by fragments.
-- [static var containsFragments: AVAsyncProperty<Root, Bool>](avpartialasyncproperty/containsfragments.md)
+- [static var containsFragments: AVAsyncProperty<Root, Bool>](./containsfragments.md)
   A Boolean value that indicates whether at least one movie fragment extends the asset.
 
 

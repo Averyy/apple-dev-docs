@@ -1,7 +1,8 @@
 # price
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The price of the product in local currency.
 

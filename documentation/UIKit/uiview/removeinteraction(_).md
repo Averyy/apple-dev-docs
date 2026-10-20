@@ -1,7 +1,8 @@
 # removeInteraction(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an interaction from the view.
 
@@ -18,17 +19,22 @@ Removes an interaction from the view.
 func removeInteraction(_ interaction: any UIInteraction)
 ```
 
+```objc
+- (void) removeInteraction:(id<UIInteraction>) interaction;
+```
+
 ## Parameters
 
 - `interaction`: The interaction object to remove from the view.
 
 ## See Also
 
-- [func addInteraction(any UIInteraction)](uiview/addinteraction(_:).md)
+### Adding and removing interactions
+- [func addInteraction(any UIInteraction)](./addinteraction%28_%29.md)
   Adds an interaction to the view.
-- [var interactions: [any UIInteraction]](uiview/interactions.md)
+- [var interactions: [any UIInteraction]](./interactions.md)
   The array of interactions for the view.
-- [protocol UIInteraction](uiinteraction.md)
+- [protocol UIInteraction](../uiinteraction.md)
   The protocol that an interaction implements to access the view that owns it.
 
 

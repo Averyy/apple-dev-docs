@@ -1,7 +1,8 @@
 # submitScope(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prevents submission triggers originating from this view to invoke a submission action configured by a submission modifier higher up in the view hierarchy.
 
@@ -23,7 +24,7 @@ func submitScope(_ isBlocking: Bool = true) -> some View
 
 #### Discussion
 
-Use this modifier when you want to avoid specific views from initiating a submission action configured by the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier. In the example below, the tag field doesn’t trigger the submission of the form:
+Use this modifier when you want to avoid specific views from initiating a submission action configured by the [`onSubmit(of:_:)`](./onsubmit%28of,_%29.md) modifier. In the example below, the tag field doesn’t trigger the submission of the form:
 
 ```swift
 Form {
@@ -45,9 +46,10 @@ Form {
 
 ## See Also
 
-- [func onSubmit(of: SubmitTriggers, () -> Void) -> some View](view/onsubmit(of:_:).md)
+### Responding to submission events
+- [func onSubmit(of: SubmitTriggers, () -> Void) -> some View](./onsubmit%28of,_%29.md)
   Adds an action to perform when the user submits a value to this view.
-- [struct SubmitTriggers](submittriggers.md)
+- [struct SubmitTriggers](../submittriggers.md)
   A type that defines various triggers that result in the firing of a submission action.
 
 

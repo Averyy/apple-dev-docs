@@ -1,7 +1,8 @@
 # open(url:mode:)
 
 **Framework**: DiskImageKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a configuration to use for opening a disk image.
 
@@ -14,21 +15,23 @@ Returns a configuration to use for opening a disk image.
 static func open(url: URL, mode: OpenConfiguration.Mode = .automatic) -> Self
 ```
 
+Available when `Self` is `OpenConfiguration`.
+
 #### Return Value
 
-An [`OpenConfiguration`](openconfiguration.md) instance.
+An [`OpenConfiguration`](../openconfiguration.md) instance.
 
 #### Discussion
 
 The following example demonstrates how to open a disk image.
 
-```None
+```
 let image = try DiskImage(opening: .open(url: imageURL))
 ```
 
 ## Parameters
 
-- `url`: A [`URL`](https://developer.apple.com/documentation/foundation/url)  of the disk image file to open.
+- `url`: A [`URL`](../../Foundation/url.md)  of the disk image file to open.
 - `mode`: Mode in which to open the image (read-only or read-write).
 
 

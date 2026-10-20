@@ -1,7 +1,8 @@
 # ContactProviderExtension
 
 **Framework**: ContactProvider  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol your app extension implements, which provides contact items to the system-wide Contacts ecosystem.
 
@@ -27,9 +28,9 @@ For the system to recognize your app extension, use the following identifier in 
 </dict>
 ```
 
-Installing the host app installs your extension, but the system won’t run the extension until the extension domain is enabled. When the extension runs, the system first calls the extension’s [`configure(for:)`](contactproviderextension/configure(for:).md) method. Then you set up the enumerator that provides contact items from your data store.
+Installing the host app installs your extension, but the system won’t run the extension until the extension domain is enabled. When the extension runs, the system first calls the extension’s [`configure(for:)`](./contactproviderextension/configure%28for%29.md) method. Then you set up the enumerator that provides contact items from your data store.
 
-The following shows a basic implementation of a `ContactProviderExtension`. Because `ContactProviderExtension` inherits from [`ContactItemEnumerating`](contactitemenumerating.md) the implementation also implements [`enumerator(for:)`](contactitemenumerating/enumerator(for:).md) which returns a [`ContactItemEnumerator`](contactitemenumerator.md) on demand. In this example, the extension sets up a `RootContainerEnumerator` to provide its contact items; see the [`ContactItemEnumerator`](contactitemenumerator.md) discussion for details of how `RootContainerEnumerator` works.
+The following shows a basic implementation of a `ContactProviderExtension`. Because `ContactProviderExtension` inherits from [`ContactItemEnumerating`](./contactitemenumerating.md) the implementation also implements [`enumerator(for:)`](./contactitemenumerating/enumerator%28for%29.md) which returns a [`ContactItemEnumerator`](./contactitemenumerator.md) on demand. In this example, the extension sets up a `RootContainerEnumerator` to provide its contact items; see the [`ContactItemEnumerator`](./contactitemenumerator.md) discussion for details of how `RootContainerEnumerator` works.
 
 ```swift
 import ContactProvider
@@ -59,17 +60,17 @@ class ExtensionExample: ContactProviderExtension {
 ## Topics
 
 ### Configuring an extension
-- [func configure(for: any ContactProviderDomain)](contactproviderextension/configure(for:).md)
+- [func configure(for: any ContactProviderDomain)](./contactproviderextension/configure%28for%29.md)
   Configures the extension instance for a domain.
 ### Managing the extension life cycle
-- [func invalidate() async throws](contactproviderextension/invalidate.md)
+- [func invalidate() async throws](./contactproviderextension/invalidate%28%29.md)
   Invalidates the extension.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
-- [ContactItemEnumerating](contactitemenumerating.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
+- [ContactItemEnumerating](./contactitemenumerating.md)
 
 
 ---

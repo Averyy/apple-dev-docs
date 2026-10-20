@@ -1,20 +1,27 @@
 # interfaceOrientation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientation to use when displaying content in your windows.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 26.0
+- iPadOS 13.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+
+> **Deprecated**: Use effectiveGeometry.interfaceOrientation instead.
 
 ## Declaration
 
 ```swift
 var interfaceOrientation: UIInterfaceOrientation { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIInterfaceOrientation interfaceOrientation;
 ```
 
 #### Discussion
@@ -23,9 +30,10 @@ The interface orientation normally corresponds to the device orientation, but it
 
 ## See Also
 
-- [var coordinateSpace: any UICoordinateSpace](uiwindowscene/coordinatespace.md)
+### Deprecated
+- [var coordinateSpace: any UICoordinateSpace](./coordinatespace.md)
   The coordinate space occupied by the scene.
-- [UIWindowScene.PresentationStyle](uiwindowscene/presentationstyle.md)
+- [UIWindowScene.PresentationStyle](./presentationstyle.md)
   The placement of a window scene relative to other scenes in the workspace.
 
 

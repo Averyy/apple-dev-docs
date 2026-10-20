@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The location where the change occurred.
@@ -19,11 +20,16 @@ The location where the change occurred.
 var side: NSFileProviderTestingOperationSide { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderTestingOperationSide side;
+```
+
 ## See Also
 
-- [var itemIdentifier: NSFileProviderItemIdentifier](nsfileprovidertestingingestion/itemidentifier.md)
+### Accessing the Operation’s Data
+- [var itemIdentifier: NSFileProviderItemIdentifier](./itemidentifier.md)
   The unique identifier for the item that changed.
-- [var item: NSFileProviderItem?](nsfileprovidertestingingestion/item.md)
+- [var item: NSFileProviderItem?](./item.md)
   A description of the item that changed.
 
 

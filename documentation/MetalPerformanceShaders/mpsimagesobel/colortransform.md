@@ -1,7 +1,8 @@
 # colorTransform
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color transform used to initialize the Sobel filter.
 
@@ -17,6 +18,10 @@ The color transform used to initialize the Sobel filter.
 
 ```swift
 var colorTransform: UnsafePointer<Float> { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) const float * colorTransform;
 ```
 
 #### Discussion

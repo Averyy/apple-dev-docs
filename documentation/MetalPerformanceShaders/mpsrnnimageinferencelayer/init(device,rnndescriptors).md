@@ -1,7 +1,8 @@
 # init(device:rnnDescriptors:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,11 +18,16 @@
 init(device: any MTLDevice, rnnDescriptors: [MPSRNNDescriptor])
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device rnnDescriptors:(NSArray<const MPSRNNDescriptor *> *) rnnDescriptors;
+```
+
 ## See Also
 
-- [init?(coder: NSCoder, device: any MTLDevice)](mpsrnnimageinferencelayer/init(coder:device:).md)
-- [init(device: any MTLDevice, rnnDescriptor: MPSRNNDescriptor)](mpsrnnimageinferencelayer/init(device:rnndescriptor:).md)
-- [class MPSRNNDescriptor](mpsrnndescriptor.md)
+### Initializers
+- [init?(coder: NSCoder, device: any MTLDevice)](./init%28coder,device%29.md)
+- [init(device: any MTLDevice, rnnDescriptor: MPSRNNDescriptor)](./init%28device,rnndescriptor%29.md)
+- [class MPSRNNDescriptor](../mpsrnndescriptor.md)
   A description of a recursive neural network block or layer.
 
 

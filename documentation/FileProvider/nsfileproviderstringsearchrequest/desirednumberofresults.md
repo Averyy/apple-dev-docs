@@ -1,7 +1,8 @@
 # desiredNumberOfResults
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How many results the system is requesting. This is a hint to the extension, to help avoid unnecessary work. The extension may return more results than this.
 
@@ -12,6 +13,10 @@ How many results the system is requesting. This is a hint to the extension, to h
 
 ```swift
 var desiredNumberOfResults: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSInteger desiredNumberOfResults;
 ```
 
 

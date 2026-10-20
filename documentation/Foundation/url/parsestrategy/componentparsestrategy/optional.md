@@ -1,7 +1,8 @@
 # URL.ParseStrategy.ComponentParseStrategy.optional
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A strategy that treats the presence of the associated component as optional.
 
@@ -22,9 +23,10 @@ case optional
 
 ## See Also
 
-- [URL.ParseStrategy.ComponentParseStrategy.required](url/parsestrategy/componentparsestrategy/required.md)
+### Component parse strategies
+- [URL.ParseStrategy.ComponentParseStrategy.required](./required.md)
   A strategy that requires the presence of the associated component for parsing to succeed.
-- [URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)](url/parsestrategy/componentparsestrategy/defaultvalue(_:).md)
+- [URL.ParseStrategy.ComponentParseStrategy.defaultValue(_:)](./defaultvalue%28_%29.md)
   A strategy that provides a default value for a component if it’s absent in the source string.
 
 

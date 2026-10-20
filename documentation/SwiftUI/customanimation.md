@@ -1,7 +1,8 @@
 # CustomAnimation
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that defines how an animatable value changes over time.
 
@@ -43,15 +44,15 @@ struct ElasticEaseInEaseOutAnimation: CustomAnimation {
 }
 ```
 
-> **Note**: To maintain state during the life span of a custom animation, use the [`state`](animationcontext/state.md) property available on the `context` parameter value. You can also use context’s [`environment`](animationcontext/environment.md) property to retrieve environment values from the view that created the custom animation. For more information, see [`AnimationContext`](animationcontext.md).
+> **Note**: To maintain state during the life span of a custom animation, use the [`state`](./animationcontext/state.md) property available on the `context` parameter value. You can also use context’s [`environment`](./animationcontext/environment.md) property to retrieve environment values from the view that created the custom animation. For more information, see [`AnimationContext`](./animationcontext.md).
 
-To create an [`Animation`](animation.md) instance of a custom animation, use the [`init(_:)`](animation/init(_:).md) initializer, passing in an instance of a custom animation; for example:
+To create an [`Animation`](./animation.md) instance of a custom animation, use the [`init(_:)`](./animation/init%28_%29.md) initializer, passing in an instance of a custom animation; for example:
 
 ```swift
 Animation(ElasticEaseInEaseOutAnimation(duration: 5.0))
 ```
 
-To help make view code more readable, extend [`Animation`](animation.md) and add a static property and function that returns an `Animation` instance of a custom animation. For example, the following code adds the static property `elasticEaseInEaseOut` that returns the elastic ease-in ease-out animation with a default duration of `0.35` seconds. Next, the code adds a method that returns the animation with a specified duration.
+To help make view code more readable, extend [`Animation`](./animation.md) and add a static property and function that returns an `Animation` instance of a custom animation. For example, the following code adds the static property `elasticEaseInEaseOut` that returns the elastic ease-in ease-out animation with a default duration of `0.35` seconds. Next, the code adds a method that returns the animation with a specified duration.
 
 ```swift
 extension Animation {
@@ -86,37 +87,40 @@ struct ElasticEaseInEaseOutView: View {
 }
 ```
 
+[Video: A video that shows a circle that moves from one edge of the view to the other using an elastic ease-in ease-out animation. The circle's initial position is near the leading edge of the view. The circle begins moving slightly towards the leading, then towards trail edges of the view before it moves off the leading edge showing only two-thirds of the circle. The circle then moves quickly to the trailing edge of the view, going slightly beyond the edge so that only two-thirds of the circle is visible. The circle bounces back into full view before settling into position near the trailing edge of the view. The circle repeats this animation in reverse, going from the trailing edge of the view to the leading edge.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/animation-20-elastic.mp4)
+
 ## Topics
 
 ### Animating a value
-- [func animate<V>(value: V, time: TimeInterval, context: inout AnimationContext<V>) -> V?](customanimation/animate(value:time:context:).md)
+- [func animate<V>(value: V, time: TimeInterval, context: inout AnimationContext<V>) -> V?](./customanimation/animate%28value,time,context%29.md)
   Calculates the value of the animation at the specified time.
 ### Getting the velocity
-- [func velocity<V>(value: V, time: TimeInterval, context: AnimationContext<V>) -> V?](customanimation/velocity(value:time:context:).md)
+- [func velocity<V>(value: V, time: TimeInterval, context: AnimationContext<V>) -> V?](./customanimation/velocity%28value,time,context%29.md)
   Calculates the velocity of the animation at a specified time.
 ### Determining whether to merge
-- [func shouldMerge<V>(previous: Animation, value: V, time: TimeInterval, context: inout AnimationContext<V>) -> Bool](customanimation/shouldmerge(previous:value:time:context:).md)
+- [func shouldMerge<V>(previous: Animation, value: V, time: TimeInterval, context: inout AnimationContext<V>) -> Bool](./customanimation/shouldmerge%28previous,value,time,context%29.md)
   Determines whether an instance of the animation can merge with other running animations.
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AnimationContext](animationcontext.md)
+### Creating custom animations
+- [struct AnimationContext](./animationcontext.md)
   Contextual values that a custom animation can use to manage state and access a view’s environment.
-- [struct AnimationState](animationstate.md)
+- [struct AnimationState](./animationstate.md)
   A container that stores the state for a custom animation.
-- [protocol AnimationStateKey](animationstatekey.md)
+- [protocol AnimationStateKey](./animationstatekey.md)
   A key for accessing animation state values.
-- [struct UnitCurve](unitcurve.md)
+- [struct UnitCurve](./unitcurve.md)
   A  function defined by a two-dimensional curve that maps an input progress in the range [0,1] to an output progress that is also in the range [0,1]. By changing the shape of the curve, the effective speed of an animation or other interpolation can be changed.
-- [struct Spring](spring.md)
+- [struct Spring](./spring.md)
   A representation of a spring’s motion.
 
 

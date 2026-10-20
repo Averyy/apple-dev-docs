@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Optional: Unique identifier for this section of custom fields.
 

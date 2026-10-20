@@ -1,15 +1,16 @@
 # ExtAudioFilePacketTableInfoOverride
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,11 +18,16 @@
 typealias ExtAudioFilePacketTableInfoOverride = Int32
 ```
 
+```c
+typedef SInt32 ExtAudioFilePacketTableInfoOverride;
+```
+
 ## See Also
 
-- [typealias ExtAudioFileRef](extaudiofileref.md)
+### Data Types
+- [typealias ExtAudioFileRef](./extaudiofileref.md)
   An opaque structure representing an extended audio file object.
-- [typealias ExtAudioFilePropertyID](extaudiofilepropertyid.md)
+- [typealias ExtAudioFilePropertyID](./extaudiofilepropertyid.md)
   An audio file object property identifier.
 
 

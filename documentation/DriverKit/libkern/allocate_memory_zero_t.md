@@ -1,24 +1,25 @@
 # allocate_memory_zero_t
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 struct allocate_memory_zero_t;
 ```
 
 ## Topics
 
 ### Instance Methods
-- [allocate_memory_zero_t](libkern/allocate_memory_zero_t/allocate_memory_zero_t.md)
+- [allocate_memory_zero_t](./allocate_memory_zero_t/allocate_memory_zero_t.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # defaultTabInterval
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number used as the document’s default tab spacing.
 
@@ -14,17 +15,22 @@ A number used as the document’s default tab spacing.
 var defaultTabInterval: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat defaultTabInterval;
+```
+
 #### Discussion
 
-This property represents the default tab interval in points. The system places tabs after the last specified in [`tabStops`](https://developer.apple.comhttps://developer.apple.com/library/archive/#id(tabStops)) at integer multiples of this distance (if positive). Default value is `0.0`.
+This property represents the default tab interval in points. The system places tabs after the last specified in [tabStops](https://developer.apple.com/library/archive/#id(tabStops)) at integer multiples of this distance (if positive). Default value is `0.0`.
 
 ## See Also
 
-- [func addTabStop(NSTextTab)](nsmutableparagraphstyle/addtabstop(_:).md)
+### Specifying tab information
+- [func addTabStop(NSTextTab)](./addtabstop%28_%29.md)
   Adds the specified tab stop to the paragraph.
-- [func removeTabStop(NSTextTab)](nsmutableparagraphstyle/removetabstop(_:).md)
+- [func removeTabStop(NSTextTab)](./removetabstop%28_%29.md)
   Removes the first text tab with a location and type equal to the specified tab stop.
-- [var tabStops: [NSTextTab]!](nsmutableparagraphstyle/tabstops.md)
+- [var tabStops: [NSTextTab]!](./tabstops.md)
   The text tab objects that represent the paragraph’s tab stops.
 
 

@@ -1,12 +1,13 @@
 # isAutorotated
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system has automatically rotated the user interface so that it is properly oriented for another viewer.
 
 **Availability**:
-- watchOS 4.2+
+- watchOS 4.2+ - Deprecated in 9.2
 
 ## Declaration
 
@@ -14,21 +15,27 @@ A Boolean value that indicates whether the system has automatically rotated the 
 var isAutorotated: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAutorotated) BOOL autorotated;
+```
+
 #### Discussion
 
 Normally, when a user rotates their wrist–for example, to show a watchOS app to another person–the watch is likely to interpret this motion as dropping the wrist and may put the app to sleep. When autorotation is enabled, watchOS instead keeps the interface awake and rotates the content so that it is oriented properly for the viewer.
 
-For more information on enabling autorotation, see [`isAutorotating`](wkextension/isautorotating.md).
+For more information on enabling autorotation, see [`isAutorotating`](./isautorotating.md).
 
 ## See Also
 
-- [func deviceOrientationDidChange()](wkextensiondelegate/deviceorientationdidchange.md)
+### Related Documentation
+- [func deviceOrientationDidChange()](../wkextensiondelegate/deviceorientationdidchange%28%29.md)
   Tells the delegate that the device’s orientation has changed.
-- [var isAutorotating: Bool](wkextension/isautorotating.md)
+### Managing the user interface
+- [var isAutorotating: Bool](./isautorotating.md)
   A Boolean value that determines whether the interface automatically rotates when the user flips their wrist.
-- [var globalTintColor: UIColor](wkextension/globaltintcolor.md)
+- [var globalTintColor: UIColor](./globaltintcolor.md)
   The watchOS app’s global tint color.
-- [func enableWaterLock()](wkextension/enablewaterlock.md)
+- [func enableWaterLock()](./enablewaterlock%28%29.md)
   Disables the Apple Watch touch screen to prevent accidental taps while the watch is underwater.
 
 

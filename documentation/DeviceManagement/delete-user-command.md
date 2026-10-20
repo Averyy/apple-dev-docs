@@ -1,7 +1,8 @@
 # Delete User
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Delete a user’s account from a device.
 
@@ -15,7 +16,7 @@ Delete a user’s account from a device.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Error Codes
+##### Error codes
 
 An error response uses one of the following error codes:
 
@@ -24,7 +25,7 @@ An error response uses one of the following error codes:
 - `12073`: The user has data to sync and ForceDeletion is false or unspecified.
 - `12074`: Unable to delete the user. In macOS, this error code also returns for an attempt to delete the last administrator account.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ An error response uses one of the following error codes:
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -78,9 +79,9 @@ An error response uses one of the following error codes:
 ## Topics
 
 ### Commands and responses
-- [object DeleteUserCommand](deleteusercommand.md)
+- [object DeleteUserCommand](./deleteusercommand.md)
   The command to delete a user’s account from a device.
-- [object DeleteUserResponse](deleteuserresponse.md)
+- [object DeleteUserResponse](./deleteuserresponse.md)
   A response from the device after it processes the command to delete a user’s account from a device.
 
 ## Endpoint
@@ -89,13 +90,21 @@ An error response uses one of the following error codes:
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `DeleteUserCommand`
+
 The request object the server returns for the Delete User Command.
+
+## Responses
+
+- `200` OK (`DeleteUserResponse`, `application/xml`): The response object the system returns for the Delete User Command.
 
 ## See Also
 
-- [User List](user-list-command.md)
+### User management
+- [User List](./user-list-command.md)
   Get a list of users with active accounts on a device.
-- [Log Out User](log-out-user-command.md)
+- [Log Out User](./log-out-user-command.md)
   Force the current user to log out of a device.
 
 

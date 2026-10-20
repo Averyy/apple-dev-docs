@@ -1,7 +1,8 @@
 # NSSystemExtensionUsageDescriptionKey
 
 **Framework**: System Extensions  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A message that tells the user why the app is trying to install a system extension bundle.
 
@@ -17,13 +18,18 @@ A message that tells the user why the app is trying to install a system extensio
 let NSSystemExtensionUsageDescriptionKey: String
 ```
 
+```c
+extern NSString * const NSSystemExtensionUsageDescriptionKey;
+```
+
 #### Discussion
 
-This key is required for all system extensions except DriverKit extensions, and must be in the extension’s `Info.plist` file. Failure to include this key results in an error at activation time. For DriverKit extensions, use [`OSBundleUsageDescriptionKey`](osbundleusagedescriptionkey.md) instead.
+This key is required for all system extensions except DriverKit extensions, and must be in the extension’s `Info.plist` file. Failure to include this key results in an error at activation time. For DriverKit extensions, use [`OSBundleUsageDescriptionKey`](./osbundleusagedescriptionkey.md) instead.
 
 ## See Also
 
-- [let OSBundleUsageDescriptionKey: String](osbundleusagedescriptionkey.md)
+### Usage descriptions
+- [let OSBundleUsageDescriptionKey: String](./osbundleusagedescriptionkey.md)
   A message that tells the user why the app is trying to install a driver extension bundle.
 
 

@@ -1,7 +1,8 @@
 # subCategory
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var subCategory: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSString * subCategory;
 ```
 
 

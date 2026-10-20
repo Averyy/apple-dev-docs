@@ -1,7 +1,8 @@
 # MusicPropertySource.catalog
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The source representing the Apple Music catalog.
 

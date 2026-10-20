@@ -1,7 +1,8 @@
 # isPaused
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that you can set to temporarily stop applying body tracking to the model and freeze the model in its current pose.
 

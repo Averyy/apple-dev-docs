@@ -1,7 +1,8 @@
 # CSDiskSpaceRecoveryCallback
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSDiskSpaceRecoveryCallback = (Bool, UInt64, CFError?) -> Void
+```
+
+```c
+typedef void (^CSDiskSpaceRecoveryCallback)(Boolean succeeded, UInt64 bytesFree, CFErrorRef error);
 ```
 
 

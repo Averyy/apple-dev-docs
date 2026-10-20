@@ -1,7 +1,8 @@
 # createSVGPathSegLinetoVerticalRel
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 3.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 SVGPathSegLinetoVerticalRel createSVGPathSegLinetoVerticalRel(
     optional unrestricted float y
 );

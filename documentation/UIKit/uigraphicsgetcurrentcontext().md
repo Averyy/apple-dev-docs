@@ -1,16 +1,17 @@
 # UIGraphicsGetCurrentContext()
 
 **Framework**: UIKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the current graphics context.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 2.0+
 
 ## Declaration
@@ -19,23 +20,28 @@ Returns the current graphics context.
 func UIGraphicsGetCurrentContext() -> CGContext?
 ```
 
+```c
+extern CGContextRefUIGraphicsGetCurrentContext();
+```
+
 #### Return Value
 
 The current graphics context.
 
 #### Discussion
 
-The current graphics context is `nil` by default. Prior to calling its `drawRect:` method, view objects push a valid context onto the stack, making it current. If you are not using a `UIView` object to do your drawing, however, you must push a valid context onto the stack manually using the [`UIGraphicsPushContext(_:)`](uigraphicspushcontext(_:).md) function.
+The current graphics context is `nil` by default. Prior to calling its `drawRect:` method, view objects push a valid context onto the stack, making it current. If you are not using a `UIView` object to do your drawing, however, you must push a valid context onto the stack manually using the [`UIGraphicsPushContext(_:)`](./uigraphicspushcontext%28_%29.md) function.
 
 This function may be called from any thread of your app.
 
 ## See Also
 
-- [func UIGraphicsPushContext(CGContext)](uigraphicspushcontext(_:).md)
+### Graphics context primitives
+- [func UIGraphicsPushContext(CGContext)](./uigraphicspushcontext%28_%29.md)
   Makes the specified graphics context the current context.
-- [func UIGraphicsPopContext()](uigraphicspopcontext().md)
+- [func UIGraphicsPopContext()](./uigraphicspopcontext%28%29.md)
   Removes the current graphics context from the top of the stack, restoring the previous context.
-- [func UIRectClip(CGRect)](uirectclip(_:).md)
+- [func UIRectClip(CGRect)](./uirectclip%28_%29.md)
   Modifies the current clipping path by intersecting it with the specified rectangle.
 
 

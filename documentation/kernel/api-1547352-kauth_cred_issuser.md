@@ -1,14 +1,15 @@
 # kauth_cred_issuser
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int kauth_cred_issuser(kauth_cred_t _cred);
 ```
 

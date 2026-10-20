@@ -1,18 +1,19 @@
 # CFDataCreate(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an immutable CFData object using data copied from a specified byte buffer.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates an immutable CFData object using data copied from a specified byte buffe
 func CFDataCreate(_ allocator: CFAllocator!, _ bytes: UnsafePointer<UInt8>!, _ length: CFIndex) -> CFData!
 ```
 
+```c
+extern CFDataRefCFDataCreate(CFAllocatorRef allocator, const UInt8 *bytes, CFIndex length);
+```
+
 #### Return Value
 
-A new CFData object, or `NULL` if there was a problem creating the object. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new CFData object, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -36,9 +41,10 @@ You must supply a count of the bytes in the buffer. This function always copies 
 
 ## See Also
 
-- [func CFDataCreateCopy(CFAllocator!, CFData!) -> CFData!](cfdatacreatecopy(_:_:).md)
+### Creating a CFData Object
+- [func CFDataCreateCopy(CFAllocator!, CFData!) -> CFData!](./cfdatacreatecopy%28_,_%29.md)
   Creates an immutable copy of a CFData object.
-- [func CFDataCreateWithBytesNoCopy(CFAllocator!, UnsafePointer<UInt8>!, CFIndex, CFAllocator!) -> CFData!](cfdatacreatewithbytesnocopy(_:_:_:_:).md)
+- [func CFDataCreateWithBytesNoCopy(CFAllocator!, UnsafePointer<UInt8>!, CFIndex, CFAllocator!) -> CFData!](./cfdatacreatewithbytesnocopy%28_,_,_,_%29.md)
   Creates an immutable CFData object from an external (client-owned) byte buffer.
 
 

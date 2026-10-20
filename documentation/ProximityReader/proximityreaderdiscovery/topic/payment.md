@@ -1,7 +1,8 @@
 # ProximityReaderDiscovery.Topic.Payment
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The subtopics that show merchants how to accept different types of payments with *Tap to Pay* on iPhone.
 
@@ -23,20 +24,21 @@ Each topic has a dedicated learning purpose for merchants.
 ## Topics
 
 ### Enumeration Cases
-- [ProximityReaderDiscovery.Topic.Payment.howToTap](proximityreaderdiscovery/topic/payment/howtotap.md)
+- [ProximityReaderDiscovery.Topic.Payment.howToTap](./payment/howtotap.md)
   A topic that shows merchants how to use Tap to Pay on iPhone to pay for goods and services.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case payment(ProximityReaderDiscovery.Topic.Payment)](proximityreaderdiscovery/topic/payment(_:).md)
+### Creating a discovery object
+- [case payment(ProximityReaderDiscovery.Topic.Payment)](./payment%28_%29.md)
   A topic related to accepting payments.
 
 

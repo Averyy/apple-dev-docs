@@ -1,7 +1,8 @@
 # init(samplingQuality:specularCubeDimension:compression:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an environment creation options structure.
 

@@ -1,7 +1,8 @@
 # gradualDecoderRefresh
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the decoder refresh count.
 

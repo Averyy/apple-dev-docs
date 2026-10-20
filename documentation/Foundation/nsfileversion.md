@@ -1,7 +1,8 @@
 # NSFileVersion
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A snapshot of a file at a specific point in time.
 
@@ -20,6 +21,10 @@ A snapshot of a file at a specific point in time.
 class NSFileVersion
 ```
 
+```objc
+@interface NSFileVersion : NSObject
+```
+
 #### Overview
 
 Use the methods of this class to access, create, and manage file revisions in your app.
@@ -33,81 +38,82 @@ In addition to managing local files, the system also uses this class to manage c
 ## Topics
 
 ### Getting the Version of a File
-- [class func currentVersionOfItem(at: URL) -> NSFileVersion?](nsfileversion/currentversionofitem(at:).md)
+- [class func currentVersionOfItem(at: URL) -> NSFileVersion?](./nsfileversion/currentversionofitem%28at%29.md)
   Returns the most recent version object for the file at the specified URL.
-- [class func otherVersionsOfItem(at: URL) -> [NSFileVersion]?](nsfileversion/otherversionsofitem(at:).md)
+- [class func otherVersionsOfItem(at: URL) -> [NSFileVersion]?](./nsfileversion/otherversionsofitem%28at%29.md)
   Returns all versions of the specified file except the current version.
-- [class func version(itemAt: URL, forPersistentIdentifier: Any) -> NSFileVersion?](nsfileversion/version(itemat:forpersistentidentifier:).md)
+- [class func version(itemAt: URL, forPersistentIdentifier: Any) -> NSFileVersion?](./nsfileversion/version%28itemat,forpersistentidentifier%29.md)
   Returns the version of the file that has the specified persistent ID.
-- [class func temporaryDirectoryURLForNewVersionOfItem(at: URL) -> URL](nsfileversion/temporarydirectoryurlfornewversionofitem(at:).md)
+- [class func temporaryDirectoryURLForNewVersionOfItem(at: URL) -> URL](./nsfileversion/temporarydirectoryurlfornewversionofitem%28at%29.md)
   Creates and returns a temporary directory to use for saving the contents of the file.
 ### Creating a New Version
-- [class func addOfItem(at: URL, withContentsOf: URL, options: NSFileVersion.AddingOptions) throws -> NSFileVersion](nsfileversion/addofitem(at:withcontentsof:options:).md)
+- [class func addOfItem(at: URL, withContentsOf: URL, options: NSFileVersion.AddingOptions) throws -> NSFileVersion](./nsfileversion/addofitem%28at,withcontentsof,options%29.md)
   Creates a version of the file at the specified location.
 ### Accessing the Version Information
-- [var url: URL](nsfileversion/url.md)
+- [var url: URL](./nsfileversion/url.md)
   The URL identifying the location of the file associated with the file version object.
-- [var localizedName: String?](nsfileversion/localizedname.md)
+- [var localizedName: String?](./nsfileversion/localizedname.md)
   The string containing the user-presentable name of the file version.
-- [var localizedNameOfSavingComputer: String?](nsfileversion/localizednameofsavingcomputer.md)
+- [var localizedNameOfSavingComputer: String?](./nsfileversion/localizednameofsavingcomputer.md)
   The user-presentable name of the computer on which the revision was saved.
-- [var modificationDate: Date?](nsfileversion/modificationdate.md)
+- [var modificationDate: Date?](./nsfileversion/modificationdate.md)
   The modification date of the version.
-- [var persistentIdentifier: any NSCoding](nsfileversion/persistentidentifier.md)
+- [var persistentIdentifier: any NSCoding](./nsfileversion/persistentidentifier.md)
   The identifier for this version of the file.
-- [var isDiscardable: Bool](nsfileversion/isdiscardable.md)
+- [var isDiscardable: Bool](./nsfileversion/isdiscardable.md)
   A Boolean value that specifies whether the system can delete the associated file at some future time.
 ### Handling Version Conflicts
-- [var isConflict: Bool](nsfileversion/isconflict.md)
+- [var isConflict: Bool](./nsfileversion/isconflict.md)
   A Boolean value indicating whether the contents of the version are in conflict with the contents of another version.
-- [var isResolved: Bool](nsfileversion/isresolved.md)
+- [var isResolved: Bool](./nsfileversion/isresolved.md)
   A Boolean value that indicates if the version object is in conflict or not.
-- [class func unresolvedConflictVersionsOfItem(at: URL) -> [NSFileVersion]?](nsfileversion/unresolvedconflictversionsofitem(at:).md)
+- [class func unresolvedConflictVersionsOfItem(at: URL) -> [NSFileVersion]?](./nsfileversion/unresolvedconflictversionsofitem%28at%29.md)
   Returns an array of version objects that are currently in conflict for the specified URL.
 ### Replacing and Deleting Versions
-- [func replaceItem(at: URL, options: NSFileVersion.ReplacingOptions) throws -> URL](nsfileversion/replaceitem(at:options:).md)
+- [func replaceItem(at: URL, options: NSFileVersion.ReplacingOptions) throws -> URL](./nsfileversion/replaceitem%28at,options%29.md)
   Replace the contents of the specified file with the contents of the current version’s file.
-- [func remove() throws](nsfileversion/remove.md)
+- [func remove() throws](./nsfileversion/remove%28%29.md)
   Remove this version object and its associated file from the version store.
-- [class func removeOtherVersionsOfItem(at: URL) throws](nsfileversion/removeotherversionsofitem(at:).md)
+- [class func removeOtherVersionsOfItem(at: URL) throws](./nsfileversion/removeotherversionsofitem%28at%29.md)
   Removes all versions of a file, except the current one, from the version store.
 ### Constants
-- [NSFileVersion.AddingOptions](nsfileversion/addingoptions.md)
+- [NSFileVersion.AddingOptions](./nsfileversion/addingoptions.md)
   Options for adding a new file version.
-- [NSFileVersion.ReplacingOptions](nsfileversion/replacingoptions.md)
+- [NSFileVersion.ReplacingOptions](./nsfileversion/replacingoptions.md)
   Options for replacing a file version.
 ### Initializers
-- [init?(ofItemAtURL: URL, forPersistentIdentifier: Any)](nsfileversion/init(ofitematurl:forpersistentidentifier:).md)
+- [init?(ofItemAtURL: URL, forPersistentIdentifier: Any)](./nsfileversion/init%28ofitematurl,forpersistentidentifier%29.md)
 ### Instance Properties
-- [var hasLocalContents: Bool](nsfileversion/haslocalcontents.md)
+- [var hasLocalContents: Bool](./nsfileversion/haslocalcontents.md)
   Whether the version has local contents. Versions that are returned by +getNonlocalVersionsOfItemAtURL:completionHandler: do not initially have local contents. You can only access their contents, either directly via the URL or by invoking -replaceItemAtURL:options:error:, from within a coordinated read on the NSFileVersion’s URL.
-- [var hasThumbnail: Bool](nsfileversion/hasthumbnail.md)
+- [var hasThumbnail: Bool](./nsfileversion/hasthumbnail.md)
   Whether the version has a thumbnail image available. Thumbnails for versions from +getNonlocalVersionsOfItemAtURL:completionHandler: may not immediately be available. As soon as it becomes available, this property will change from NO to YES. You can use KVO to be notified of this change. If a thumbnail is available, you can access it using NSURLThumbnailKey or NSURLThumbnailDictionaryKey.
-- [var originatorNameComponents: PersonNameComponents?](nsfileversion/originatornamecomponents.md)
+- [var originatorNameComponents: PersonNameComponents?](./nsfileversion/originatornamecomponents.md)
   The name components of the user who created this version of the file. Is nil if the file is not shared or if the current user is the originator.
 ### Type Methods
-- [class func getNonlocalVersionsOfItem(at: URL, completionHandler: ([NSFileVersion]?, (any Error)?) -> Void)](nsfileversion/getnonlocalversionsofitem(at:completionhandler:).md)
+- [class func getNonlocalVersionsOfItem(at: URL, completionHandler: ([NSFileVersion]?, (any Error)?) -> Void)](./nsfileversion/getnonlocalversionsofitem%28at,completionhandler%29.md)
   Asynchronously returns an array of NSFileVersions associated with the file located by the given URL, or nil if there is no such file or another error occurs.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class FileHandle](filehandle.md)
+### Managed file access
+- [class FileHandle](./filehandle.md)
   An object-oriented wrapper for a file descriptor.
-- [class NSFileSecurity](nsfilesecurity.md)
+- [class NSFileSecurity](./nsfilesecurity.md)
   A stub class that encapsulates security information about a file.
-- [class FileWrapper](filewrapper.md)
+- [class FileWrapper](./filewrapper.md)
   A representation of a node (a file, directory, or symbolic link) in the file system.
 
 

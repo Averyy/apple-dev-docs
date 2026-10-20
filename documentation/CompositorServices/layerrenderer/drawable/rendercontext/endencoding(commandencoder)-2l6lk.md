@@ -1,7 +1,8 @@
 # endEncoding(commandEncoder:)
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finish encoding the render context.
 
@@ -15,23 +16,28 @@ Finish encoding the render context.
 func endEncoding(commandEncoder command_encoder: any MTL4RenderCommandEncoder)
 ```
 
+```c
+void cp_drawable_render_context_mtl4_end_encoding(cp_drawable_render_context_t render_context, id<MTL4RenderCommandEncoder>command_encoder);
+```
+
 #### Discussion
 
-`endEncoding(commandEncoder:)` passes the ownership of the command encoder to the drawable render context and calls [`endEncoding()`](https://developer.apple.com/documentation/metal/mtlcommandencoder/endencoding()) on the command encoder. The command encoder used in the render context has the following constraints:
+`endEncoding(commandEncoder:)` passes the ownership of the command encoder to the drawable render context and calls [`endEncoding()`](../../../../Metal/mtlcommandencoder/endencoding%28%29.md) on the command encoder. The command encoder used in the render context has the following constraints:
 
 - The `colorAttachment[0]` contains the color texture provided by the layer renderer drawable.
-- The [`depthAttachment`](https://developer.apple.com/documentation/metal/mtlrenderpassdescriptor/depthattachment) contains the depth texture provided by the layer renderer drawable.
-- The [`renderTargetArrayLength`](https://developer.apple.com/documentation/metal/mtlrenderpassdescriptor/rendertargetarraylength) is the same as the number of views in the layer renderer drawable.
-- The [`rasterizationRateMap`](https://developer.apple.com/documentation/metal/mtlrenderpassdescriptor/rasterizationratemap) matches the one provided by the layer renderer drawable.
+- The [`depthAttachment`](../../../../Metal/mtlrenderpassdescriptor/depthattachment.md) contains the depth texture provided by the layer renderer drawable.
+- The [`renderTargetArrayLength`](../../../../Metal/mtlrenderpassdescriptor/rendertargetarraylength.md) is the same as the number of views in the layer renderer drawable.
+- The [`rasterizationRateMap`](../../../../Metal/mtlrenderpassdescriptor/rasterizationratemap.md) matches the one provided by the layer renderer drawable.
 - The API doesn’t support dedicated and shared layouts.
 
-If the render encoder has multiple color attachments, set [`supportColorAttachmentMapping`](https://developer.apple.com/documentation/metal/mtl4renderpassdescriptor/supportcolorattachmentmapping) to `true` to avoid Metal API validation errors.
+If the render encoder has multiple color attachments, set [`supportColorAttachmentMapping`](../../../../Metal/mtl4renderpassdescriptor/supportcolorattachmentmapping.md) to `true` to avoid Metal API validation errors.
 
 For testing performance of this method, always test your app on-device rather than in Simulator. However, if you need to iterate on your code in development, you can disable API validation in Xcode, or separate the rendering into multiple render encoders for other color attachments.
 
 ## See Also
 
-- [func drawMaskOnStencilAttachment(commandEncoder: any MTL4RenderCommandEncoder, value: UInt8)](layerrenderer/drawable/rendercontext/drawmaskonstencilattachment(commandencoder:value:)-7npim.md)
+### Rendering with Metal 4
+- [func drawMaskOnStencilAttachment(commandEncoder: any MTL4RenderCommandEncoder, value: UInt8)](./drawmaskonstencilattachment%28commandencoder,value%29-7npim.md)
   Store the value parameter in the stencil texture in the pixels that the Compositor displays onscreen.
 
 

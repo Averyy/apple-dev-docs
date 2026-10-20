@@ -1,7 +1,8 @@
 # mapRectThatFits(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a centered map rectangle with the same aspect ratio as the map view’s frame.
 
@@ -17,6 +18,10 @@ Returns a centered map rectangle with the same aspect ratio as the map view’s 
 
 ```swift
 func mapRectThatFits(_ mapRect: MKMapRect) -> MKMapRect
+```
+
+```objc
+- (MKMapRect) mapRectThatFits:(MKMapRect) mapRect;
 ```
 
 #### Return Value
@@ -35,9 +40,10 @@ You can use this method to normalize map rectangle values before displaying the 
 
 ## See Also
 
-- [func regionThatFits(MKCoordinateRegion) -> MKCoordinateRegion](mkmapview/regionthatfits(_:).md)
+### Adjusting map regions and rectangles
+- [func regionThatFits(MKCoordinateRegion) -> MKCoordinateRegion](./regionthatfits%28_%29.md)
   Adjusts the aspect ratio of the specified region to ensure that it fits in the map view’s frame.
-- [func mapRectThatFits(MKMapRect, edgePadding: UIEdgeInsets) -> MKMapRect](mkmapview/maprectthatfits(_:edgepadding:).md)
+- [func mapRectThatFits(MKMapRect, edgePadding: UIEdgeInsets) -> MKMapRect](./maprectthatfits%28_,edgepadding%29.md)
   Returns a centered, inset map rectangle with the same aspect ratio as the map view’s frame.
 
 

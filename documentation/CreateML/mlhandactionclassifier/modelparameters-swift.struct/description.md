@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the hand action parameters.
 
@@ -20,9 +21,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mlhandactionclassifier/modelparameters-swift.struct/debugdescription.md)
+### Describing hand action model parameters
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the hand action parameters suitable for debugging.
-- [var playgroundDescription: Any](mlhandactionclassifier/modelparameters-swift.struct/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the hand action parameters that’s viewable in a playground.
 
 

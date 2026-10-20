@@ -1,7 +1,8 @@
 # appExtensionIdentity
 
 **Framework**: ExtensionFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifying information for the app extension you want to launch.
 
@@ -22,7 +23,7 @@ var appExtensionIdentity: AppExtensionIdentity { get set }
 
 #### Discussion
 
-Specify this value at initialization time. Fetch identity information from the [`AppExtensionPoint.Monitor`](appextensionpoint/monitor.md) type.
+Specify this value at initialization time. Fetch identity information from the [`AppExtensionPoint.Monitor`](../../appextensionpoint/monitor.md) type.
 
 
 ---

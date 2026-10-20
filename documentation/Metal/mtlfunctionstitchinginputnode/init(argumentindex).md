@@ -1,7 +1,8 @@
 # init(argumentIndex:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new input node.
 
@@ -17,6 +18,10 @@ Creates a new input node.
 
 ```swift
 init(argumentIndex argument: Int)
+```
+
+```objc
+- (instancetype) initWithArgumentIndex:(NSUInteger) argument;
 ```
 
 ## Parameters

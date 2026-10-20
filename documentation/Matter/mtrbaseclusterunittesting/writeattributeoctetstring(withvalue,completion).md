@@ -1,7 +1,8 @@
 # writeAttributeOctetString(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeOctetString(withValue value: Data, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeOctetString(withValue value: Data) async throws
+```
+
+```objc
+- (void) writeAttributeOctetStringWithValue:(NSData *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

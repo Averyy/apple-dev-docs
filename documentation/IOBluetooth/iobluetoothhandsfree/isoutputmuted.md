@@ -1,7 +1,8 @@
 # isOutputMuted
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Return the output mute state.
 
@@ -14,13 +15,18 @@ Return the output mute state.
 var isOutputMuted: Bool { get set }
 ```
 
+```objc
+@property (assign, getter=isOutputMuted) BOOL outputMuted;
+```
+
 #### Discussion
 
 Returns the outputs mute state.
 
 ## See Also
 
-- [var isInputMuted: Bool](iobluetoothhandsfree/isinputmuted.md)
+### Related Documentation
+- [var isInputMuted: Bool](./isinputmuted.md)
   Return the input mute state.
 
 

@@ -1,7 +1,8 @@
 # TimelineSchedule.Mode
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the timeline schedule update mode.
 
@@ -22,7 +23,8 @@ typealias Mode = TimelineScheduleMode
 
 ## See Also
 
-- [enum TimelineScheduleMode](timelineschedulemode.md)
+### Specifying a mode
+- [enum TimelineScheduleMode](../timelineschedulemode.md)
   A mode of operation for timeline schedule updates.
 
 

@@ -1,7 +1,8 @@
 # token
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The token to which the session is bound.
 
@@ -18,6 +19,10 @@ The token to which the session is bound.
 
 ```swift
 var token: TKToken { get }
+```
+
+```objc
+@property (readonly) TKToken * token;
 ```
 
 

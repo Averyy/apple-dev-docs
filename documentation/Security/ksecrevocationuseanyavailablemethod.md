@@ -1,7 +1,8 @@
 # kSecRevocationUseAnyAvailableMethod
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Perform either OCSP or CRL checking.
 
@@ -20,9 +21,13 @@ Perform either OCSP or CRL checking.
 var kSecRevocationUseAnyAvailableMethod: CFOptionFlags { get }
 ```
 
+```c
+kSecRevocationUseAnyAvailableMethod
+```
+
 #### Discussion
 
-The checking is performed according to the method(s) specified in the certificate and the value of [`kSecRevocationPreferCRL`](ksecrevocationprefercrl.md).
+The checking is performed according to the method(s) specified in the certificate and the value of [`kSecRevocationPreferCRL`](./ksecrevocationprefercrl.md).
 
 
 ---

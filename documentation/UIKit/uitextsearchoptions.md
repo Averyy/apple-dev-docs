@@ -1,7 +1,8 @@
 # UITextSearchOptions
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object containing the configurable options for a text search.
 
@@ -18,46 +19,51 @@ An object containing the configurable options for a text search.
 class UITextSearchOptions
 ```
 
+```objc
+@interface UITextSearchOptions : NSObject
+```
+
 ## Topics
 
 ### Configuring searches
-- [var stringCompareOptions: NSString.CompareOptions](uitextsearchoptions/stringcompareoptions.md)
+- [var stringCompareOptions: NSString.CompareOptions](./uitextsearchoptions/stringcompareoptions.md)
   The options to use in comparisons when searching text for matches to a string.
-- [var wordMatchMethod: UITextSearchOptions.WordMatchMethod](uitextsearchoptions/wordmatchmethod-swift.property.md)
+- [var wordMatchMethod: UITextSearchOptions.WordMatchMethod](./uitextsearchoptions/wordmatchmethod-swift.property.md)
   The method to use when searching text for matches to words.
-- [UITextSearchOptions.WordMatchMethod](uitextsearchoptions/wordmatchmethod-swift.enum.md)
+- [UITextSearchOptions.WordMatchMethod](./uitextsearchoptions/wordmatchmethod-swift.enum.md)
   Constants that describe the method to use when searching text for words that match a string.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [class UIFindInteraction](uifindinteraction.md)
+### Find and replace
+- [class UIFindInteraction](./uifindinteraction.md)
   An interaction that provides text finding and replacing operations using a system find panel.
-- [protocol UIFindInteractionDelegate](uifindinteractiondelegate.md)
+- [protocol UIFindInteractionDelegate](./uifindinteractiondelegate.md)
   A delegate object that provides a session object to manage the search state for a find interaction and receives notifications of search session lifetimes.
-- [class UIFindSession](uifindsession.md)
+- [class UIFindSession](./uifindsession.md)
   An abstract base class that manages the state, presentation, and behavior for a search that the find interaction initiates.
-- [class UITextSearchingFindSession](uitextsearchingfindsession.md)
+- [class UITextSearchingFindSession](./uitextsearchingfindsession.md)
   A find session object that wraps a searchable object implementing the text-searching protocol.
-- [protocol UITextSearching](uitextsearching-3wkjv.md)
+- [protocol UITextSearching](./uitextsearching-3wkjv.md)
   The methods you use on a find session’s searchable objects to perform search operations and decorate the found text results.
-- [enum UITextSearchFoundTextStyle](uitextsearchfoundtextstyle.md)
+- [enum UITextSearchFoundTextStyle](./uitextsearchfoundtextstyle.md)
   Constants that describe the style a find session uses to decorate the text.
-- [UITextSearchOptions.WordMatchMethod](uitextsearchoptions/wordmatchmethod-swift.enum.md)
+- [UITextSearchOptions.WordMatchMethod](./uitextsearchoptions/wordmatchmethod-swift.enum.md)
   Constants that describe the method to use when searching text for words that match a string.
-- [UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.enum.md)
+- [UIFindSession.SearchResultDisplayStyle](./uifindsession/searchresultdisplaystyle-swift.enum.md)
   Constants that describe the results summary the find panel UI includes.
 
 

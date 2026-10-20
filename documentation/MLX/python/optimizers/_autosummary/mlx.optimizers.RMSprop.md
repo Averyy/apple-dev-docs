@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/optimizers/_autosummary/
 
 # mlx.optimizers.RMSprop
 
-**
-
-- [.rst](../../../_sources/python/optimizers/_autosummary/mlx.optimizers.RMSprop.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.optimizers.RMSprop
-
- Table of contents 
-
-## Contents
-
-# mlx.optimizers.RMSprop
-
 **class RMSprop(*learning_rate: float | Callable[[array], array]*, *alpha: float = 0.99*, *eps: float = 1e-08*)**
 : The RMSprop optimizer [1].
 [1]: Tieleman, T. and Hinton, G. 2012. Lecture 6.5-rmsprop, coursera: Neural
@@ -58,5 +31,3 @@ Performs the RMSprop parameter update and stores \(v\) in the optimizer state.
 
 `init_single`(parameter, state)
 Initialize optimizer state
-
-** Contents

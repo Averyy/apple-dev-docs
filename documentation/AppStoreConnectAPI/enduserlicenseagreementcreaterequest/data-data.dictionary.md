@@ -1,7 +1,8 @@
 # EndUserLicenseAgreementCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,23 +11,23 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object EndUserLicenseAgreementCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object EndUserLicenseAgreementCreateRequest.Data.Attributes](enduserlicenseagreementcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object EndUserLicenseAgreementCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
-- [object EndUserLicenseAgreementCreateRequest.Data.Relationships](enduserlicenseagreementcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object EndUserLicenseAgreementCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
 
 - `attributes` (EndUserLicenseAgreementCreateRequest.Data.Attributes) *(required)*
 - `relationships` (EndUserLicenseAgreementCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `endUserLicenseAgreements`
 
 
 ---

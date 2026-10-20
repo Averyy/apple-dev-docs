@@ -1,7 +1,8 @@
 # MPSCNNDropoutGradientNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of a gradient dropout filter.
 
@@ -19,30 +20,35 @@ A representation of a gradient dropout filter.
 class MPSCNNDropoutGradientNode
 ```
 
+```objc
+@interface MPSCNNDropoutGradientNode : MPSNNGradientFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)](mpscnndropoutgradientnode/init(sourcegradient:sourceimage:gradientstate:keepprobability:seed:maskstrideinpixels:).md)
+- [init(sourceGradient: MPSNNImageNode, sourceImage: MPSNNImageNode, gradientState: MPSNNGradientStateNode, keepProbability: Float, seed: Int, maskStrideInPixels: MTLSize)](./mpscnndropoutgradientnode/init%28sourcegradient,sourceimage,gradientstate,keepprobability,seed,maskstrideinpixels%29.md)
 ### Instance Properties
-- [var keepProbability: Float](mpscnndropoutgradientnode/keepprobability.md)
-- [var maskStrideInPixels: MTLSize](mpscnndropoutgradientnode/maskstrideinpixels.md)
-- [var seed: Int](mpscnndropoutgradientnode/seed.md)
+- [var keepProbability: Float](./mpscnndropoutgradientnode/keepprobability.md)
+- [var maskStrideInPixels: MTLSize](./mpscnndropoutgradientnode/maskstrideinpixels.md)
+- [var seed: Int](./mpscnndropoutgradientnode/seed.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNGradientFilterNode](mpsnngradientfilternode.md)
+- [MPSNNGradientFilterNode](./mpsnngradientfilternode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNDropoutNode](mpscnndropoutnode.md)
+### Dropout Layer Nodes
+- [class MPSCNNDropoutNode](./mpscnndropoutnode.md)
   A representation of a dropout filter.
 
 

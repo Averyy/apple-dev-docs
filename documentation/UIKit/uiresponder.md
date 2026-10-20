@@ -1,7 +1,8 @@
 # UIResponder
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract interface for responding to and handling events.
 
@@ -9,7 +10,7 @@ An abstract interface for responding to and handling events.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,192 +20,197 @@ An abstract interface for responding to and handling events.
 class UIResponder
 ```
 
+```objc
+@interface UIResponder : NSObject
+```
+
 ## Mentions
 
-- [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
-- [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
-- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+- [Using responders and the responder chain to handle events](./using-responders-and-the-responder-chain-to-handle-events.md)
+- [Handling key presses made on a physical keyboard](./handling-key-presses-made-on-a-physical-keyboard.md)
+- [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
 
 #### Overview
 
-Responder objects — instances of [`UIResponder`](uiresponder.md) — constitute the event-handling backbone of a UIKit app. Many key objects are also responders, including the [`UIApplication`](uiapplication.md) object, [`UIViewController`](uiviewcontroller.md) objects, and all [`UIView`](uiview.md) objects (which includes [`UIWindow`](uiwindow.md)). As events occur, UIKit dispatches them to your app’s responder objects for handling.
+Responder objects — instances of [`UIResponder`](./uiresponder.md) — constitute the event-handling backbone of a UIKit app. Many key objects are also responders, including the [`UIApplication`](./uiapplication.md) object, [`UIViewController`](./uiviewcontroller.md) objects, and all [`UIView`](./uiview.md) objects (which includes [`UIWindow`](./uiwindow.md)). As events occur, UIKit dispatches them to your app’s responder objects for handling.
 
-There are several kinds of events, including touch events, motion events, remote-control events, and press events. To handle a specific type of event, a responder must override the corresponding methods. For example, to handle touch events, a responder implements the [`touchesBegan(_:with:)`](uiresponder/touchesbegan(_:with:).md), [`touchesMoved(_:with:)`](uiresponder/touchesmoved(_:with:).md), [`touchesEnded(_:with:)`](uiresponder/touchesended(_:with:).md), and [`touchesCancelled(_:with:)`](uiresponder/touchescancelled(_:with:).md) methods. In the case of touches, the responder uses the event information provided by UIKit to track changes to those touches and to update the app’s interface appropriately.
+There are several kinds of events, including touch events, motion events, remote-control events, and press events. To handle a specific type of event, a responder must override the corresponding methods. For example, to handle touch events, a responder implements the [`touchesBegan(_:with:)`](./uiresponder/touchesbegan%28_,with%29.md), [`touchesMoved(_:with:)`](./uiresponder/touchesmoved%28_,with%29.md), [`touchesEnded(_:with:)`](./uiresponder/touchesended%28_,with%29.md), and [`touchesCancelled(_:with:)`](./uiresponder/touchescancelled%28_,with%29.md) methods. In the case of touches, the responder uses the event information provided by UIKit to track changes to those touches and to update the app’s interface appropriately.
 
 In addition to handling events, UIKit responders also manage the forwarding of unhandled events to other parts of your app. If a given responder doesn’t handle an event, it forwards that event to the next event in the responder chain. UIKit manages the responder chain dynamically, using predefined rules to determine which object should be next to receive an event. For example, a view forwards events to its superview, and the root view of a hierarchy forwards events to its view controller.
 
-Responders process [`UIEvent`](uievent.md) objects but can also accept custom input through an input view. The system’s keyboard is the most obvious example of an input view. When the user taps a [`UITextField`](uitextfield.md) and [`UITextView`](uitextview.md) object onscreen, the view becomes the first responder and displays its input view, which is the system keyboard. Similarly, you can create custom input views and display them when other responders become active. To associate a custom input view with a responder, assign that view to the [`inputView`](uiresponder/inputview.md) property of the responder.
+Responders process [`UIEvent`](./uievent.md) objects but can also accept custom input through an input view. The system’s keyboard is the most obvious example of an input view. When the user taps a [`UITextField`](./uitextfield.md) and [`UITextView`](./uitextview.md) object onscreen, the view becomes the first responder and displays its input view, which is the system keyboard. Similarly, you can create custom input views and display them when other responders become active. To associate a custom input view with a responder, assign that view to the [`inputView`](./uiresponder/inputview.md) property of the responder.
 
-For information about responders and the responder chain, see [`Using responders and the responder chain to handle events`](using-responders-and-the-responder-chain-to-handle-events.md).
+For information about responders and the responder chain, see [Using responders and the responder chain to handle events](./using-responders-and-the-responder-chain-to-handle-events.md).
 
 ## Topics
 
 ### Managing the responder chain
-- [var next: UIResponder?](uiresponder/next.md)
+- [var next: UIResponder?](./uiresponder/next.md)
   Returns the next responder in the responder chain, or `nil` if there’s no next responder.
-- [var isFirstResponder: Bool](uiresponder/isfirstresponder.md)
+- [var isFirstResponder: Bool](./uiresponder/isfirstresponder.md)
   Returns a Boolean value indicating whether this object is the first responder.
-- [var canBecomeFirstResponder: Bool](uiresponder/canbecomefirstresponder.md)
+- [var canBecomeFirstResponder: Bool](./uiresponder/canbecomefirstresponder.md)
   Returns a Boolean value indicating whether this object can become the first responder.
-- [func becomeFirstResponder() -> Bool](uiresponder/becomefirstresponder.md)
+- [func becomeFirstResponder() -> Bool](./uiresponder/becomefirstresponder%28%29.md)
   Asks UIKit to make this object the first responder in its window.
-- [var canResignFirstResponder: Bool](uiresponder/canresignfirstresponder.md)
+- [var canResignFirstResponder: Bool](./uiresponder/canresignfirstresponder.md)
   Returns a Boolean value indicating whether the responder is willing to relinquish first-responder status.
-- [func resignFirstResponder() -> Bool](uiresponder/resignfirstresponder.md)
+- [func resignFirstResponder() -> Bool](./uiresponder/resignfirstresponder%28%29.md)
   Notifies this object that it has been asked to relinquish its status as first responder in its window.
 ### Responding to touch events
-- [func touchesBegan(Set<UITouch>, with: UIEvent?)](uiresponder/touchesbegan(_:with:).md)
+- [func touchesBegan(Set<UITouch>, with: UIEvent?)](./uiresponder/touchesbegan%28_,with%29.md)
   Tells this object that one or more new touches occurred in a view or window.
-- [func touchesMoved(Set<UITouch>, with: UIEvent?)](uiresponder/touchesmoved(_:with:).md)
+- [func touchesMoved(Set<UITouch>, with: UIEvent?)](./uiresponder/touchesmoved%28_,with%29.md)
   Tells the responder when one or more touches associated with an event changed.
-- [func touchesEnded(Set<UITouch>, with: UIEvent?)](uiresponder/touchesended(_:with:).md)
+- [func touchesEnded(Set<UITouch>, with: UIEvent?)](./uiresponder/touchesended%28_,with%29.md)
   Tells the responder when one or more fingers are raised from a view or window.
-- [func touchesCancelled(Set<UITouch>, with: UIEvent?)](uiresponder/touchescancelled(_:with:).md)
+- [func touchesCancelled(Set<UITouch>, with: UIEvent?)](./uiresponder/touchescancelled%28_,with%29.md)
   Tells the responder when a system event (such as a system alert) cancels a touch sequence.
-- [func touchesEstimatedPropertiesUpdated(Set<UITouch>)](uiresponder/touchesestimatedpropertiesupdated(_:).md)
+- [func touchesEstimatedPropertiesUpdated(Set<UITouch>)](./uiresponder/touchesestimatedpropertiesupdated%28_%29.md)
   Tells the responder that updated values were received for previously estimated properties or that an update is no longer expected.
 ### Responding to motion events
-- [func motionBegan(UIEvent.EventSubtype, with: UIEvent?)](uiresponder/motionbegan(_:with:).md)
+- [func motionBegan(UIEvent.EventSubtype, with: UIEvent?)](./uiresponder/motionbegan%28_,with%29.md)
   Tells the responder that a motion event has begun.
-- [func motionEnded(UIEvent.EventSubtype, with: UIEvent?)](uiresponder/motionended(_:with:).md)
+- [func motionEnded(UIEvent.EventSubtype, with: UIEvent?)](./uiresponder/motionended%28_,with%29.md)
   Tells the responder that a motion event has ended.
-- [func motionCancelled(UIEvent.EventSubtype, with: UIEvent?)](uiresponder/motioncancelled(_:with:).md)
+- [func motionCancelled(UIEvent.EventSubtype, with: UIEvent?)](./uiresponder/motioncancelled%28_,with%29.md)
   Tells the responder that a motion event has been canceled.
 ### Responding to press events
-- [func pressesBegan(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressesbegan(_:with:).md)
+- [func pressesBegan(Set<UIPress>, with: UIPressesEvent?)](./uiresponder/pressesbegan%28_,with%29.md)
   Tells this object when a physical button is first pressed.
-- [func pressesChanged(Set<UIPress>, with: UIPressesEvent?)](uiresponder/presseschanged(_:with:).md)
+- [func pressesChanged(Set<UIPress>, with: UIPressesEvent?)](./uiresponder/presseschanged%28_,with%29.md)
   Tells this object when a value associated with a press has changed.
-- [func pressesEnded(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressesended(_:with:).md)
+- [func pressesEnded(Set<UIPress>, with: UIPressesEvent?)](./uiresponder/pressesended%28_,with%29.md)
   Tells the object when a button is released.
-- [func pressesCancelled(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressescancelled(_:with:).md)
+- [func pressesCancelled(Set<UIPress>, with: UIPressesEvent?)](./uiresponder/pressescancelled%28_,with%29.md)
   Tells this object when a system event (such as a low-memory warning) cancels a press event.
 ### Responding to remote-control events
-- [func remoteControlReceived(with: UIEvent?)](uiresponder/remotecontrolreceived(with:).md)
+- [func remoteControlReceived(with: UIEvent?)](./uiresponder/remotecontrolreceived%28with%29.md)
   Tells the object when a remote-control event is received.
 ### Managing input views
-- [var inputView: UIView?](uiresponder/inputview.md)
+- [var inputView: UIView?](./uiresponder/inputview.md)
   The custom input view to display when the responder becomes the first responder.
-- [var inputViewController: UIInputViewController?](uiresponder/inputviewcontroller.md)
+- [var inputViewController: UIInputViewController?](./uiresponder/inputviewcontroller.md)
   The custom input view controller to use when the responder becomes the first responder.
-- [var inputAccessoryView: UIView?](uiresponder/inputaccessoryview.md)
+- [var inputAccessoryView: UIView?](./uiresponder/inputaccessoryview.md)
   The custom input accessory view to display when the responder becomes the first responder.
-- [var inputAccessoryViewController: UIInputViewController?](uiresponder/inputaccessoryviewcontroller.md)
+- [var inputAccessoryViewController: UIInputViewController?](./uiresponder/inputaccessoryviewcontroller.md)
   The custom input accessory view controller to display when the responder becomes the first responder.
-- [func reloadInputViews()](uiresponder/reloadinputviews.md)
+- [func reloadInputViews()](./uiresponder/reloadinputviews%28%29.md)
   Updates the custom input and accessory views when the object is the first responder.
 ### Getting the undo manager
-- [var undoManager: UndoManager?](uiresponder/undomanager.md)
+- [var undoManager: UndoManager?](./uiresponder/undomanager.md)
   Returns the nearest shared undo manager in the responder chain.
 ### Building and validating commands
-- [func buildMenu(with: any UIMenuBuilder)](uiresponder/buildmenu(with:).md)
+- [func buildMenu(with: any UIMenuBuilder)](./uiresponder/buildmenu%28with%29.md)
   Asks the receiving responder to add and remove items from a menu system.
-- [func validate(UICommand)](uiresponder/validate(_:).md)
+- [func validate(UICommand)](./uiresponder/validate%28_%29.md)
   Asks the receiving responder to validate the command.
-- [func canPerformAction(Selector, withSender: Any?) -> Bool](uiresponder/canperformaction(_:withsender:).md)
+- [func canPerformAction(Selector, withSender: Any?) -> Bool](./uiresponder/canperformaction%28_,withsender%29.md)
   Requests the receiving responder to enable or disable the specified command in the user interface.
-- [func target(forAction: Selector, withSender: Any?) -> Any?](uiresponder/target(foraction:withsender:).md)
+- [func target(forAction: Selector, withSender: Any?) -> Any?](./uiresponder/target%28foraction,withsender%29.md)
   Returns the target object that responds to an action.
 ### Accessing the available key commands
-- [var keyCommands: [UIKeyCommand]?](uiresponder/keycommands.md)
+- [var keyCommands: [UIKeyCommand]?](./uiresponder/keycommands.md)
   The key commands that trigger actions on this responder.
 ### Managing the text input mode
-- [var textInputMode: UITextInputMode?](uiresponder/textinputmode.md)
+- [var textInputMode: UITextInputMode?](./uiresponder/textinputmode.md)
   The text input mode for this responder object.
-- [var textInputContextIdentifier: String?](uiresponder/textinputcontextidentifier.md)
+- [var textInputContextIdentifier: String?](./uiresponder/textinputcontextidentifier.md)
   An identifier signifying that the responder should preserve its text input mode information.
-- [class func clearTextInputContextIdentifier(String)](uiresponder/cleartextinputcontextidentifier(_:).md)
+- [class func clearTextInputContextIdentifier(String)](./uiresponder/cleartextinputcontextidentifier%28_%29.md)
   Clears text input mode information from the app’s user defaults.
-- [var inputAssistantItem: UITextInputAssistantItem](uiresponder/inputassistantitem.md)
+- [var inputAssistantItem: UITextInputAssistantItem](./uiresponder/inputassistantitem.md)
   The input assistant to use when configuring the keyboard’s shortcuts bar.
 ### Supporting user activities
-- [var userActivity: NSUserActivity?](uiresponder/useractivity.md)
+- [var userActivity: NSUserActivity?](./uiresponder/useractivity.md)
   An object encapsulating a user activity supported by this responder.
-- [func restoreUserActivityState(NSUserActivity)](uiresponder/restoreuseractivitystate(_:).md)
+- [func restoreUserActivityState(NSUserActivity)](./uiresponder/restoreuseractivitystate%28_%29.md)
   Restores the state needed to continue the given user activity.
-- [func updateUserActivityState(NSUserActivity)](uiresponder/updateuseractivitystate(_:).md)
+- [func updateUserActivityState(NSUserActivity)](./uiresponder/updateuseractivitystate%28_%29.md)
   Updates the state of the given user activity.
 ### Managing activity items
-- [var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)?](uiresponder/activityitemsconfiguration.md)
+- [var activityItemsConfiguration: (any UIActivityItemsConfigurationReading)?](./uiresponder/activityitemsconfiguration.md)
 ### Accessing the editing interaction
-- [var editingInteractionConfiguration: UIEditingInteractionConfiguration](uiresponder/editinginteractionconfiguration.md)
-- [enum UIEditingInteractionConfiguration](uieditinginteractionconfiguration.md)
+- [var editingInteractionConfiguration: UIEditingInteractionConfiguration](./uiresponder/editinginteractionconfiguration.md)
+- [enum UIEditingInteractionConfiguration](./uieditinginteractionconfiguration.md)
 ### Capturing text from the camera
-- [func captureTextFromCamera(Any?)](uiresponder/capturetextfromcamera(_:).md)
+- [func captureTextFromCamera(Any?)](./uiresponder/capturetextfromcamera%28_%29.md)
   Starts scanning text using the device’s camera.
 ### Managing the Touch Bar
-- [func makeTouchBar() -> NSTouchBar?](uiresponder/maketouchbar.md)
+- [func makeTouchBar() -> NSTouchBar?](./uiresponder/maketouchbar%28%29.md)
   Asks the receiving responder to create and configure a Touch Bar object.
-- [var touchBar: NSTouchBar?](uiresponder/touchbar.md)
+- [var touchBar: NSTouchBar?](./uiresponder/touchbar.md)
   The Touch Bar object for the responder.
 ### Constants
-- [class let keyboardAnimationCurveUserInfoKey: String](uiresponder/keyboardanimationcurveuserinfokey.md)
+- [class let keyboardAnimationCurveUserInfoKey: String](./uiresponder/keyboardanimationcurveuserinfokey.md)
   A user info key to retrieve the animation curve that the system uses to animate the keyboard onto or off the screen.
-- [class let keyboardAnimationDurationUserInfoKey: String](uiresponder/keyboardanimationdurationuserinfokey.md)
+- [class let keyboardAnimationDurationUserInfoKey: String](./uiresponder/keyboardanimationdurationuserinfokey.md)
   A user info key to retrieve the duration of the keyboard animation in seconds.
-- [class let keyboardDidChangeFrameNotification: NSNotification.Name](uiresponder/keyboarddidchangeframenotification.md)
+- [class let keyboardDidChangeFrameNotification: NSNotification.Name](./uiresponder/keyboarddidchangeframenotification.md)
   A notification that posts immediately after a change in the keyboard’s frame.
-- [class let keyboardDidHideNotification: NSNotification.Name](uiresponder/keyboarddidhidenotification.md)
+- [class let keyboardDidHideNotification: NSNotification.Name](./uiresponder/keyboarddidhidenotification.md)
   A notification that posts immediately after dismissing the keyboard.
-- [class let keyboardDidShowNotification: NSNotification.Name](uiresponder/keyboarddidshownotification.md)
+- [class let keyboardDidShowNotification: NSNotification.Name](./uiresponder/keyboarddidshownotification.md)
   A notification that posts immediately after displaying the keyboard.
-- [class let keyboardFrameBeginUserInfoKey: String](uiresponder/keyboardframebeginuserinfokey.md)
+- [class let keyboardFrameBeginUserInfoKey: String](./uiresponder/keyboardframebeginuserinfokey.md)
   A user info key to retrieve the keyboard’s frame at the beginning of its animation.
-- [class let keyboardFrameEndUserInfoKey: String](uiresponder/keyboardframeenduserinfokey.md)
+- [class let keyboardFrameEndUserInfoKey: String](./uiresponder/keyboardframeenduserinfokey.md)
   A user info key to retrieve the keyboard’s frame at the end of its animation.
-- [class let keyboardIsLocalUserInfoKey: String](uiresponder/keyboardislocaluserinfokey.md)
+- [class let keyboardIsLocalUserInfoKey: String](./uiresponder/keyboardislocaluserinfokey.md)
   A user info key to retrieve a Boolean value that indicates whether the keyboard belongs to the current app.
-- [class let keyboardWillChangeFrameNotification: NSNotification.Name](uiresponder/keyboardwillchangeframenotification.md)
+- [class let keyboardWillChangeFrameNotification: NSNotification.Name](./uiresponder/keyboardwillchangeframenotification.md)
   A notification that posts immediately prior to a change in the keyboard’s frame.
-- [class let keyboardWillHideNotification: NSNotification.Name](uiresponder/keyboardwillhidenotification.md)
+- [class let keyboardWillHideNotification: NSNotification.Name](./uiresponder/keyboardwillhidenotification.md)
   A notification that posts immediately prior to dismissing the keyboard.
-- [class let keyboardWillShowNotification: NSNotification.Name](uiresponder/keyboardwillshownotification.md)
+- [class let keyboardWillShowNotification: NSNotification.Name](./uiresponder/keyboardwillshownotification.md)
   A notification that posts immediately prior to displaying the keyboard.
 ### Structures
-- [UIResponder.KeyboardDidChangeFrameMessage](uiresponder/keyboarddidchangeframemessage.md)
-- [UIResponder.KeyboardDidHideMessage](uiresponder/keyboarddidhidemessage.md)
-- [UIResponder.KeyboardDidShowMessage](uiresponder/keyboarddidshowmessage.md)
-- [UIResponder.KeyboardWillChangeFrameMessage](uiresponder/keyboardwillchangeframemessage.md)
-- [UIResponder.KeyboardWillHideMessage](uiresponder/keyboardwillhidemessage.md)
-- [UIResponder.KeyboardWillShowMessage](uiresponder/keyboardwillshowmessage.md)
+- [UIResponder.KeyboardDidChangeFrameMessage](./uiresponder/keyboarddidchangeframemessage.md)
+- [UIResponder.KeyboardDidHideMessage](./uiresponder/keyboarddidhidemessage.md)
+- [UIResponder.KeyboardDidShowMessage](./uiresponder/keyboarddidshowmessage.md)
+- [UIResponder.KeyboardWillChangeFrameMessage](./uiresponder/keyboardwillchangeframemessage.md)
+- [UIResponder.KeyboardWillHideMessage](./uiresponder/keyboardwillhidemessage.md)
+- [UIResponder.KeyboardWillShowMessage](./uiresponder/keyboardwillshowmessage.md)
 ### Instance Properties
-- [var pencilKitResponderState: PKResponderState](uiresponder/pencilkitresponderstate.md)
+- [var pencilKitResponderState: PKResponderState](./uiresponder/pencilkitresponderstate.md)
   The PencilKit state associated with the responder object.
 ### Instance Methods
-- [func provider(for: UIDeferredMenuElement) -> UIDeferredMenuElement.Provider?](uiresponder/provider(for:).md)
+- [func provider(for: UIDeferredMenuElement) -> UIDeferredMenuElement.Provider?](./uiresponder/provider%28for%29.md)
   Asks the responder for an element provider to fulfill the given focus-based deferred element. Check the `identifier` of the deferred element to identify which deferred element this is. By default, this returns nil. Return a non-nil `provider` to make this responder responsible for providing elements for this fulfillment of the deferred element.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UIAccessibilityElement](uiaccessibilityelement.md)
-- [UIApplication](uiapplication.md)
-- [UIScene](uiscene.md)
-- [UIView](uiview.md)
-- [UIViewController](uiviewcontroller.md)
+- [UIAccessibilityElement](./uiaccessibilityelement.md)
+- [UIApplication](./uiapplication.md)
+- [UIScene](./uiscene.md)
+- [UIView](./uiview.md)
+- [UIViewController](./uiviewcontroller.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [Sendable](../swift/sendable.md)
-- [UIActivityItemsConfigurationProviding](uiactivityitemsconfigurationproviding.md)
-- [UIPasteConfigurationSupporting](uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](uiresponderstandardeditactions.md)
-- [UIUserActivityRestoring](uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [UIActivityItemsConfigurationProviding](./uiactivityitemsconfigurationproviding.md)
+- [UIPasteConfigurationSupporting](./uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](./uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](./uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
+### Essentials
+- [Using responders and the responder chain to handle events](./using-responders-and-the-responder-chain-to-handle-events.md)
   Learn how to handle events that propagate through your app.
-- [class UIEvent](uievent.md)
+- [class UIEvent](./uievent.md)
   An object that describes a single user interaction with your app.
 
 

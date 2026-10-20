@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestTypeStandard
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The type standard.
 
@@ -10,7 +11,7 @@ The type standard.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestTypeStandard = (kIOUSBDeviceRequestTypeValueStandard << kIOUSBDeviceRequestTypePhase)
 ```
 

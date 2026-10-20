@@ -1,7 +1,8 @@
 # projected(_:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns this vector projected onto the specified vector.
 

@@ -1,7 +1,8 @@
 # errSSLWeakPeerEphemeralDHKey
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates a weak ephemeral dh key.
 
@@ -18,6 +19,10 @@ Indicates a weak ephemeral dh key.
 
 ```swift
 var errSSLWeakPeerEphemeralDHKey: OSStatus { get }
+```
+
+```c
+errSSLWeakPeerEphemeralDHKey
 ```
 
 

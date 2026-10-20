@@ -1,7 +1,8 @@
 # Get MerchantToken Usage Information Package
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve the merchant token usage information package from the merchant server.
 
@@ -12,7 +13,7 @@ Retrieve the merchant token usage information package from the merchant server.
 
 The user’s device calls this API to get the merchant token usage information package from the merchant server. Devices use the `webServiceURL` delivered to the Apple Pay server as part of the metadata.
 
-For more information on formatting your merchant token usage information, see [`Adding merchant token usage information`](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information)
+For more information on formatting your merchant token usage information, see [Adding merchant token usage information](https://developer.apple.com/documentation/applepaymerchanttokenmanagementapi/adding-merchant-token-usage-information)
 
 ## Endpoint
 
@@ -20,33 +21,46 @@ For more information on formatting your merchant token usage information, see [`
 
 ## Parameters
 
+### Path Parameters
+
+- `merchantTokenIdentifier` (string) *(required)*: The unique identifier of the merchant token.
+
+### Header Parameters
+
 - `Authorization` (string) *(required)*: Authentication for the usage information. The scheme is `ApplePayMerchantTokenUsageInformation` with the `authenticationToken` as a parameter. For example, `ApplePayMerchantTokenUsageInformation {authenticationToken}`.
+
+## Responses
+
+- `200` OK (`GetMerchantTokenUsageInformationPackageResponse`, `application/json`): The request was successful and the response includes the encrypted merchant token usage information package.
+- `401` Unauthorized (`ErrorResponse`, `application/json`): Unauthorized. See the body for more details.
+- `404` Not Found (`ErrorResponse`, `application/json`): Not found. See the body for more details.
 
 ## See Also
 
-- [Retrieve Merchant Token Public Key](retrieve-merchant-token-public-key.md)
+### Merchant token usage information
+- [Retrieve Merchant Token Public Key](./retrieve-merchant-token-public-key.md)
   Get the merchant token public key.
-- [MerchantToken Usage Data Availability Notification](merchanttoken-usage-data-availability-notification.md)
+- [MerchantToken Usage Data Availability Notification](./merchanttoken-usage-data-availability-notification.md)
   Notify Apple servers that the user’s devices can retrieve merchant token usage information.
-- [object MerchantTokenUsageDataAvailabilityNotificationRequest](merchanttokenusagedataavailabilitynotificationrequest.md)
+- [object MerchantTokenUsageDataAvailabilityNotificationRequest](./merchanttokenusagedataavailabilitynotificationrequest.md)
   The data for the merchant token usage data availability notification request.
-- [object GetMerchantTokenUsageInformationPackageResponse](getmerchanttokenusageinformationpackageresponse.md)
+- [object GetMerchantTokenUsageInformationPackageResponse](./getmerchanttokenusageinformationpackageresponse.md)
   The encrypted merchant token usage information package.
-- [object AutomaticReloadPaymentDetails](../applepaymerchanttokenusageinformation/automaticreloadpaymentdetails.md)
+- [object AutomaticReloadPaymentDetails](../ApplePayMerchantTokenUsageInformation/automaticreloadpaymentdetails.md)
   Details about an automatic reload payment.
-- [object CurrencyAmount](../applepaymerchanttokenusageinformation/currencyamount.md)
+- [object CurrencyAmount](../ApplePayMerchantTokenUsageInformation/currencyamount.md)
   An amount of money.
-- [object DeferredPaymentDetails](../applepaymerchanttokenusageinformation/deferredpaymentdetails.md)
+- [object DeferredPaymentDetails](../ApplePayMerchantTokenUsageInformation/deferredpaymentdetails.md)
   Details about a deferred payment, such as a hotel booking or a preorder.
-- [object PastPayment](../applepaymerchanttokenusageinformation/pastpayment.md)
+- [object PastPayment](../ApplePayMerchantTokenUsageInformation/pastpayment.md)
   A past payment.
-- [object PaymentIssueDetails](../applepaymerchanttokenusageinformation/paymentissuedetails.md)
+- [object PaymentIssueDetails](../ApplePayMerchantTokenUsageInformation/paymentissuedetails.md)
   Details about a payment issue, such as a declined payment.
-- [object RecurringPaymentDetails](../applepaymerchanttokenusageinformation/recurringpaymentdetails.md)
+- [object RecurringPaymentDetails](../ApplePayMerchantTokenUsageInformation/recurringpaymentdetails.md)
   Details about a recurring payment, typically a subscription.
-- [object UpcomingPayment](../applepaymerchanttokenusageinformation/upcomingpayment.md)
+- [object UpcomingPayment](../ApplePayMerchantTokenUsageInformation/upcomingpayment.md)
   An upcoming payment.
-- [object UsageInformation](../applepaymerchanttokenusageinformation/usageinformation.md)
+- [object UsageInformation](../ApplePayMerchantTokenUsageInformation/usageinformation.md)
   Information about the usage of a merchant token, such as past and upcoming payments.
 
 

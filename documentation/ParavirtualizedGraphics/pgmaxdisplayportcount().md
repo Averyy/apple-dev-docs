@@ -1,7 +1,8 @@
 # PGMaxDisplayPortCount()
 
 **Framework**: Paravirtualized Graphics  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -11,6 +12,10 @@
 
 ```swift
 func PGMaxDisplayPortCount() -> UInt32
+```
+
+```c
+extern uint32_t PGMaxDisplayPortCount();
 ```
 
 

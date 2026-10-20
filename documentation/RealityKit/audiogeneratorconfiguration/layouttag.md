@@ -1,7 +1,8 @@
 # layoutTag
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format in which the audio channels are specified.
 

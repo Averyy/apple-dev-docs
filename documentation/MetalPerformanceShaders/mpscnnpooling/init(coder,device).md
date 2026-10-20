@@ -1,7 +1,8 @@
 # init(coder:device:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a pooling filter.
 
@@ -19,11 +20,16 @@ Initializes a pooling filter.
 init?(coder aDecoder: NSCoder, device: any MTLDevice)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder device:(id<MTLDevice>) device;
+```
+
 ## See Also
 
-- [convenience init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](mpscnnpooling/init(device:kernelwidth:kernelheight:).md)
+### Instance Methods
+- [convenience init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)](./init%28device,kernelwidth,kernelheight%29.md)
   Initializes a pooling filter.
-- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](mpscnnpooling/init(device:kernelwidth:kernelheight:strideinpixelsx:strideinpixelsy:).md)
+- [init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int, strideInPixelsX: Int, strideInPixelsY: Int)](./init%28device,kernelwidth,kernelheight,strideinpixelsx,strideinpixelsy%29.md)
   Initializes a pooling filter.
 
 

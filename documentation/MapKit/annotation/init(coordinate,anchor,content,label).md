@@ -1,7 +1,8 @@
 # init(coordinate:anchor:content:label:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an annotation that displays a view on the map using coordinates, anchor location, view, and label you provide.
 
@@ -11,7 +12,7 @@ Creates an annotation that displays a view on the map using coordinates, anchor 
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -30,17 +31,18 @@ Creates an annotation that displays a view on the map using coordinates, anchor 
 
 ## See Also
 
-- [init(LocalizedStringKey, coordinate: CLLocationCoordinate2D, anchor: UnitPoint, accessoryAnchor: UnitPoint, content: () -> Content)](annotation/init(_:coordinate:anchor:accessoryanchor:content:)-6rxmn.md)
+### Creating annotations
+- [init(LocalizedStringKey, coordinate: CLLocationCoordinate2D, anchor: UnitPoint, accessoryAnchor: UnitPoint, content: () -> Content)](./init%28_,coordinate,anchor,accessoryanchor,content%29-6rxmn.md)
   Creates an annotation that displays a view at a coordinate on the map.
-- [init<S>(S, coordinate: CLLocationCoordinate2D, anchor: UnitPoint, accessoryAnchor: UnitPoint, content: () -> Content)](annotation/init(_:coordinate:anchor:accessoryanchor:content:)-14m3t.md)
+- [init<S>(S, coordinate: CLLocationCoordinate2D, anchor: UnitPoint, accessoryAnchor: UnitPoint, content: () -> Content)](./init%28_,coordinate,anchor,accessoryanchor,content%29-14m3t.md)
   Creates an annotation that displays a view at a coordinate on the map.
-- [init(coordinate: CLLocationCoordinate2D, anchor: UnitPoint, accessoryAnchor: UnitPoint, content: () -> Content, label: () -> Label)](annotation/init(coordinate:anchor:accessoryanchor:content:label:).md)
+- [init(coordinate: CLLocationCoordinate2D, anchor: UnitPoint, accessoryAnchor: UnitPoint, content: () -> Content, label: () -> Label)](./init%28coordinate,anchor,accessoryanchor,content,label%29.md)
   Creates an annotation that displays a view at a coordinate on the map.
-- [init(item: MKMapItem, anchor: UnitPoint, accessoryAnchor: UnitPoint, content: () -> Content)](annotation/init(item:anchor:accessoryanchor:content:).md)
+- [init(item: MKMapItem, anchor: UnitPoint, accessoryAnchor: UnitPoint, content: () -> Content)](./init%28item,anchor,accessoryanchor,content%29.md)
   Creates an annotation that displays a view at a coordinate on the map.
-- [init(LocalizedStringKey, coordinate: CLLocationCoordinate2D, anchor: UnitPoint, content: () -> Content)](annotation/init(_:coordinate:anchor:content:)-2w242.md)
+- [init(LocalizedStringKey, coordinate: CLLocationCoordinate2D, anchor: UnitPoint, content: () -> Content)](./init%28_,coordinate,anchor,content%29-2w242.md)
   Creates an annotation that displays a view at a coordinate on the map.
-- [init<S>(S, coordinate: CLLocationCoordinate2D, anchor: UnitPoint, content: () -> Content)](annotation/init(_:coordinate:anchor:content:)-6wnoh.md)
+- [init<S>(S, coordinate: CLLocationCoordinate2D, anchor: UnitPoint, content: () -> Content)](./init%28_,coordinate,anchor,content%29-6wnoh.md)
   Creates an annotation that displays a view at a coordinate on the map using a title key, coordinate, anchor location, and view you provide.
 
 

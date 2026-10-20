@@ -1,12 +1,13 @@
 # PlaneAnchor.Classification.notAvailable
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A plane classification is currently unavailable.
 
 **Availability**:
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 26.0 (renamed: SurfaceClassification)
 
 ## Declaration
 
@@ -16,9 +17,10 @@ case notAvailable
 
 ## See Also
 
-- [PlaneAnchor.Classification.undetermined](planeanchor/classification-swift.enum/undetermined.md)
+### Getting unknown classifications
+- [PlaneAnchor.Classification.undetermined](./undetermined.md)
   A plane classification hasn’t been determined yet.
-- [PlaneAnchor.Classification.unknown](planeanchor/classification-swift.enum/unknown.md)
+- [PlaneAnchor.Classification.unknown](./unknown.md)
   A plane classification isn’t one of the known classes.
 
 

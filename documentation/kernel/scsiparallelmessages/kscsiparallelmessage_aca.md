@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_ACA
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_ACA = 0x24
 ```
 

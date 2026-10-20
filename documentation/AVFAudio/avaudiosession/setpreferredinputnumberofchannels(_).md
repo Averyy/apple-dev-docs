@@ -1,7 +1,8 @@
 # setPreferredInputNumberOfChannels(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preferred number of input channels for the current route.
 
@@ -18,11 +19,15 @@ Sets the preferred number of input channels for the current route.
 func setPreferredInputNumberOfChannels(_ count: Int) throws
 ```
 
+```objc
+- (BOOL) setPreferredInputNumberOfChannels:(NSInteger) count error:(NSError **) outError;
+```
+
 #### Discussion
 
-This method requests a change to the number of input channels. To determine whether the change has taken effect, query or key-value observe the [`inputNumberOfChannels`](avaudiosession/inputnumberofchannels.md) property.
+This method requests a change to the number of input channels. To determine whether the change has taken effect, query or key-value observe the [`inputNumberOfChannels`](./inputnumberofchannels.md) property.
 
-Requesting input channels less than one or greater than that returned by the [`maximumInputNumberOfChannels`](avaudiosession/maximuminputnumberofchannels.md) results in an error.
+Requesting input channels less than one or greater than that returned by the [`maximumInputNumberOfChannels`](./maximuminputnumberofchannels.md) results in an error.
 
 Set the preferred number of input channels only after setting the audio sessionâ€™s category and mode, and activating the session.
 
@@ -32,11 +37,12 @@ Set the preferred number of input channels only after setting the audio sessionâ
 
 ## See Also
 
-- [var preferredInputNumberOfChannels: Int](avaudiosession/preferredinputnumberofchannels.md)
+### Setting the number of input channels
+- [var preferredInputNumberOfChannels: Int](./preferredinputnumberofchannels.md)
   The preferred number of input channels for the current route.
-- [var inputNumberOfChannels: Int](avaudiosession/inputnumberofchannels.md)
+- [var inputNumberOfChannels: Int](./inputnumberofchannels.md)
   The number of audio input channels for the current route.
-- [var maximumInputNumberOfChannels: Int](avaudiosession/maximuminputnumberofchannels.md)
+- [var maximumInputNumberOfChannels: Int](./maximuminputnumberofchannels.md)
   The maximum number of input channels available for the current audio route.
 
 

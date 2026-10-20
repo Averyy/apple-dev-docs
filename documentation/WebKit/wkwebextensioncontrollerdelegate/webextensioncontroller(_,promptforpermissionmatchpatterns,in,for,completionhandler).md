@@ -1,7 +1,8 @@
 # webExtensionController(_:promptForPermissionMatchPatterns:in:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an extension context requests access to a set of match patterns.
 
@@ -15,7 +16,15 @@ Called when an extension context requests access to a set of match patterns.
 ## Declaration
 
 ```swift
+optional func webExtensionController(_ controller: WKWebExtensionController, promptForPermissionMatchPatterns matchPatterns: Set<WKWebExtension.MatchPattern>, in tab: (any WKWebExtensionTab)?, for extensionContext: WKWebExtensionContext, completionHandler: @escaping (Set<WKWebExtension.MatchPattern>, Date?) -> Void)
+```
+
+```swift
 optional func webExtensionController(_ controller: WKWebExtensionController, promptForPermissionMatchPatterns matchPatterns: Set<WKWebExtension.MatchPattern>, in tab: (any WKWebExtensionTab)?, for extensionContext: WKWebExtensionContext) async -> (Set<WKWebExtension.MatchPattern>, Date?)
+```
+
+```objc
+- (void) webExtensionController:(WKWebExtensionController *) controller promptForPermissionMatchPatterns:(NSSet<WKWebExtensionMatchPattern *> *) matchPatterns inTab:(id<WKWebExtensionTab>) tab forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(NSSet<WKWebExtensionMatchPattern *> *allowedMatchPatterns, NSDate *expirationDate)) completionHandler;
 ```
 
 #### Discussion

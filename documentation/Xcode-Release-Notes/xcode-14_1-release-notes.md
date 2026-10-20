@@ -1,6 +1,7 @@
 # Xcode 14.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -23,14 +24,20 @@ Xcode 14.1 includes Swift 5.7 and SDKs for iOS 16.1, iPadOS 16.1, tvOS 16.1, wat
 ###### Known Issues
 
 - After Running a widget extension, users will need to manually start the debugging session with Debug -> Attach to Process. (99285608)
-- RealityKit’s FromToByAnimation may cause an app built with iOS 16 or macOS 13 SDKs to fail to launch on iOS 15 or macOS 12. (100228035) **Workaround**: Use the non-deprecated FromToByAnimation initializer which takes a `bindTarget:` parameter. If you encounter an ambiguous use error with the OrbitAnimation, using a `bindTarget:` parameter will resolve the ambiguity.
-- App Shortcuts don’t support the use of compiler directives such as `#if` within the definition of the `appShortcuts` list. (100468932) **Workaround**: Avoid the use of compiler directives in App Shortcuts definitions. Consider having a AppShortcutProvider unique to each platform if there are differences in App Shortcuts between platforms.
+- RealityKit’s FromToByAnimation may cause an app built with iOS 16 or macOS 13 SDKs to fail to launch on iOS 15 or macOS 12. (100228035)
+
+  **Workaround**: Use the non-deprecated FromToByAnimation initializer which takes a `bindTarget:` parameter. If you encounter an ambiguous use error with the OrbitAnimation, using a `bindTarget:` parameter will resolve the ambiguity.
+- App Shortcuts don’t support the use of compiler directives such as `#if` within the definition of the `appShortcuts` list. (100468932)
+
+  **Workaround**: Avoid the use of compiler directives in App Shortcuts definitions. Consider having a AppShortcutProvider unique to each platform if there are differences in App Shortcuts between platforms.
 
 ##### Build System
 
 ###### Known Issues
 
-- When removing a condition from the variant editor, the value won’t be persisted. (98149034) **Workaround**: Use the Build Settings Editor to remove the condition.
+- When removing a condition from the variant editor, the value won’t be persisted. (98149034)
+
+  **Workaround**: Use the Build Settings Editor to remove the condition.
 
 ##### Interface Builder
 
@@ -46,7 +53,9 @@ Xcode 14.1 includes Swift 5.7 and SDKs for iOS 16.1, iPadOS 16.1, tvOS 16.1, wat
 
 ###### Known Issues
 
-- Previously released simulators may not appear in Platforms pane after logging out and back in. (100815609) **Workaround**: Rebooting the system restores the list of previously released simulators.
+- Previously released simulators may not appear in Platforms pane after logging out and back in. (100815609)
+
+  **Workaround**: Rebooting the system restores the list of previously released simulators.
 
 ##### Source Control
 
@@ -64,26 +73,29 @@ Xcode 14.1 includes Swift 5.7 and SDKs for iOS 16.1, iPadOS 16.1, tvOS 16.1, wat
 
 - Fixed an issue that affected reliability of dragging the program counter when debugging. (99465275)
 
-##### Storekit
+##### StoreKit
 
 ###### Resolved Issues
 
-- Fixed: Using the following StoreKit properties and methods on apps with a minimum deployment target below iOS 16, macOS 13, watchOS 9, and tvOS 16 will cause the app to crash at launch when running on systems earlier than iOS 16, macOS 13, watchOS 9 and tvOS 16: - `priceFormatStyle` and `subscriptionPeriodFormatStyle` on `Product` values
-- `environmentStringRepresentation` and `recentSubscriptionStartDate` on `Product.SubscriptionInfo.RenewalInfo` values
-- `environmentStringRepresentation` on `Transaction` values
-- `dateRange(referenceDate:)` and `formatted(_:referenceDate:)` on `Product.SubscriptionPeriod` values (99962885) (FB11516463)
+- Fixed: Using the following StoreKit properties and methods on apps with a minimum deployment target below iOS 16, macOS 13, watchOS 9, and tvOS 16 will cause the app to crash at launch when running on systems earlier than iOS 16, macOS 13, watchOS 9 and tvOS 16:
+
+  - `priceFormatStyle` and `subscriptionPeriodFormatStyle` on `Product` values
+  - `environmentStringRepresentation` and `recentSubscriptionStartDate` on `Product.SubscriptionInfo.RenewalInfo` values
+  - `environmentStringRepresentation` on `Transaction` values
+  - `dateRange(referenceDate:)` and `formatted(_:referenceDate:)` on `Product.SubscriptionPeriod` values (99962885) (FB11516463)
 
 ## See Also
 
-- [Xcode 14.3.1 Release Notes](xcode-14_3_1-release-notes.md)
+### Xcode 14
+- [Xcode 14.3.1 Release Notes](./xcode-14_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.3 Release Notes](xcode-14_3-release-notes.md)
+- [Xcode 14.3 Release Notes](./xcode-14_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.2 Release Notes](xcode-14_2-release-notes.md)
+- [Xcode 14.2 Release Notes](./xcode-14_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14.0.1 Release Notes](xcode-14_0_1-release-notes.md)
+- [Xcode 14.0.1 Release Notes](./xcode-14_0_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 14 Release Notes](xcode-14-release-notes.md)
+- [Xcode 14 Release Notes](./xcode-14-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

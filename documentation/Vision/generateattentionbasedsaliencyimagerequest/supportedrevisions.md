@@ -1,7 +1,8 @@
 # supportedRevisions
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of revisions the request supports.
 
@@ -22,9 +23,10 @@ static let supportedRevisions: [GenerateAttentionBasedSaliencyImageRequest.Revis
 
 ## See Also
 
-- [let revision: GenerateAttentionBasedSaliencyImageRequest.Revision](generateattentionbasedsaliencyimagerequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: GenerateAttentionBasedSaliencyImageRequest.Revision](./revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [GenerateAttentionBasedSaliencyImageRequest.Revision](generateattentionbasedsaliencyimagerequest/revision-swift.enum.md)
+- [GenerateAttentionBasedSaliencyImageRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

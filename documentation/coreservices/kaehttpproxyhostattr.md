@@ -1,7 +1,8 @@
 # kAEHTTPProxyHostAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A value of type `typeChar` or `typeUTF8Text`.
 

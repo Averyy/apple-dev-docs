@@ -1,7 +1,8 @@
 # voltUnit(with:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring the electrical potential difference in volts with the provided prefix.
 
@@ -19,13 +20,18 @@ Returns a HealthKit unit for measuring the electrical potential difference in vo
 class func voltUnit(with prefix: HKMetricPrefix) -> Self
 ```
 
+```objc
++ (instancetype) voltUnitWithMetricPrefix:(HKMetricPrefix) prefix;
+```
+
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](../hkmetricprefix.md).
 
 ## See Also
 
-- [class func volt() -> Self](hkunit/volt.md)
+### Electrical potential difference
+- [class func volt() -> Self](./volt%28%29.md)
   Returns a HealthKit unit for measuring the difference in electrical potential using volts.
 
 

@@ -1,7 +1,8 @@
 # previewProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that provides previews for the activity items.
 
@@ -17,9 +18,14 @@ A closure that provides previews for the activity items.
 var previewProvider: ((Int, UIActivityItemsConfigurationPreviewIntent, CGSize) -> NSItemProvider?)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSItemProvider * (^previewProvider)(NSInteger index, UIActivityItemsConfigurationPreviewIntent intent, CGSize suggestedSize);
+```
+
 ## See Also
 
-- [struct UIActivityItemsConfigurationPreviewIntent](uiactivityitemsconfigurationpreviewintent.md)
+### Managing previews
+- [struct UIActivityItemsConfigurationPreviewIntent](../uiactivityitemsconfigurationpreviewintent.md)
   A structure that specifies the types of activity item previews.
 
 

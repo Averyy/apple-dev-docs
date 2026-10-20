@@ -1,7 +1,8 @@
 # canEvaluatePolicy(_:error:)
 
 **Framework**: Local Authentication  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assesses whether authentication can proceed for a given policy.
 
@@ -19,9 +20,13 @@ Assesses whether authentication can proceed for a given policy.
 func canEvaluatePolicy(_ policy: LAPolicy, error: NSErrorPointer) -> Bool
 ```
 
+```objc
+- (BOOL) canEvaluatePolicy:(LAPolicy) policy error:(NSError **) error;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the policy can be evaluated, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the policy can be evaluated, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -29,20 +34,23 @@ Some policies impose requirements that must be met before authentication can pro
 
 Don’t store the return value from this method because it might change as a result of changes in the system. For example, a user might disable Touch ID after you call this method.
 
-> ❗ **Important**:  Don’t call this method in the reply block of the [`evaluatePolicy(_:localizedReason:reply:)`](lacontext/evaluatepolicy(_:localizedreason:reply:).md) method because that might lead to deadlock.
+> ❗ **Important**:  Don’t call this method in the reply block of the [`evaluatePolicy(_:localizedReason:reply:)`](./evaluatepolicy%28_,localizedreason,reply%29.md) method because that might lead to deadlock.
 
 ## Parameters
 
-- `policy`: The policy to evaluate. For possible values, see [`LAPolicy`](lapolicy.md).
-- `error`: If the method fails, it uses this parameter to return an error detailing what went wrong. See [`LAError.Code`](laerror-swift.struct/code.md) for possible error codes. Specify `nil` for this parameter to ignore any errors.
+- `policy`: The policy to evaluate. For possible values, see [`LAPolicy`](../lapolicy.md).
+- `error`: If the method fails, it uses this parameter to return an error detailing what went wrong. See [`LAError.Code`](../laerror-swift.struct/code.md) for possible error codes.
+
+  Specify `nil` for this parameter to ignore any errors.
 
 ## See Also
 
-- [enum LAPolicy](lapolicy.md)
+### Checking availability
+- [enum LAPolicy](../lapolicy.md)
   The set of available local authentication policies.
-- [var biometryType: LABiometryType](lacontext/biometrytype.md)
+- [var biometryType: LABiometryType](./biometrytype.md)
   The type of biometric authentication supported by the device.
-- [enum LABiometryType](labiometrytype.md)
+- [enum LABiometryType](../labiometrytype.md)
   The set of available biometric authentication types.
 
 

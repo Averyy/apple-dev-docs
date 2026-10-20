@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Enables managed CloudKit sync using the primary ubiquity container from the app’s entitlements.
 
@@ -23,9 +24,10 @@ static var automatic: ModelConfiguration.CloudKitDatabase { get }
 
 ## See Also
 
-- [static func `private`(String) -> ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.struct/private(_:).md)
+### Getting discovery options
+- [static func `private`(String) -> ModelConfiguration.CloudKitDatabase](./private%28_%29.md)
   Enables managed CloudKit sync using the specified ubiquity container.
-- [static var none: ModelConfiguration.CloudKitDatabase](modelconfiguration/cloudkitdatabase-swift.struct/none.md)
+- [static var none: ModelConfiguration.CloudKitDatabase](./none.md)
   Disables managed CloudKit sync.
 
 

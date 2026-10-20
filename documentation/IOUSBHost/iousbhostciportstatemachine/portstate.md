@@ -1,7 +1,8 @@
 # portState
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,16 +14,21 @@
 var portState: IOUSBHostCIPortState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) IOUSBHostCIPortState portState;
+```
+
 ## See Also
 
-- [var connected: Bool](iousbhostciportstatemachine/connected.md)
-- [var controllerInterface: IOUSBHostControllerInterface](iousbhostciportstatemachine/controllerinterface.md)
-- [var linkState: IOUSBHostCILinkState](iousbhostciportstatemachine/linkstate.md)
-- [var overcurrent: Bool](iousbhostciportstatemachine/overcurrent.md)
-- [var portNumber: Int](iousbhostciportstatemachine/portnumber.md)
-- [var portStatus: IOUSBHostCIPortStatus](iousbhostciportstatemachine/portstatus.md)
-- [var powered: Bool](iousbhostciportstatemachine/powered.md)
-- [var speed: IOUSBHostCIDeviceSpeed](iousbhostciportstatemachine/speed.md)
+### Instance Properties
+- [var connected: Bool](./connected.md)
+- [var controllerInterface: IOUSBHostControllerInterface](./controllerinterface.md)
+- [var linkState: IOUSBHostCILinkState](./linkstate.md)
+- [var overcurrent: Bool](./overcurrent.md)
+- [var portNumber: Int](./portnumber.md)
+- [var portStatus: IOUSBHostCIPortStatus](./portstatus.md)
+- [var powered: Bool](./powered.md)
+- [var speed: IOUSBHostCIDeviceSpeed](./speed.md)
 
 
 ---

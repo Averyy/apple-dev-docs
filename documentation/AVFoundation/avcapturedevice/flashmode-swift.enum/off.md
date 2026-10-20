@@ -1,7 +1,8 @@
 # AVCaptureDevice.FlashMode.off
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode that indicates the flash is off.
 
@@ -18,11 +19,16 @@ A mode that indicates the flash is off.
 case off
 ```
 
+```c
+AVCaptureFlashModeOff
+```
+
 ## See Also
 
-- [AVCaptureDevice.FlashMode.on](avcapturedevice/flashmode-swift.enum/on.md)
+### Flash modes
+- [AVCaptureDevice.FlashMode.on](./on.md)
   A mode that indicates the flash is on.
-- [AVCaptureDevice.FlashMode.auto](avcapturedevice/flashmode-swift.enum/auto.md)
+- [AVCaptureDevice.FlashMode.auto](./auto.md)
   A mode that indicates the device continuously monitors light levels and uses the flash when necessary.
 
 

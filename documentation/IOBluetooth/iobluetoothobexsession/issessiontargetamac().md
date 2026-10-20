@@ -1,17 +1,22 @@
 # isSessionTargetAMac()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells whether the target device is a Mac by checking its service record.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func isSessionTargetAMac() -> Bool
+```
+
+```objc
+- (BOOL) isSessionTargetAMac;
 ```
 
 #### Return Value

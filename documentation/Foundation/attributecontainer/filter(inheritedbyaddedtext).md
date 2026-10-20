@@ -1,7 +1,8 @@
 # filter(inheritedByAddedText:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the attribute container with only attributes that specify the provided inheritance behavior.
 

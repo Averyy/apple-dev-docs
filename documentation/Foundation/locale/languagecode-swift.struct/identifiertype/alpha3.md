@@ -1,7 +1,8 @@
 # Locale.LanguageCode.IdentifierType.alpha3
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Three-letter alpha-3 code, e.g. “eng” for English
 

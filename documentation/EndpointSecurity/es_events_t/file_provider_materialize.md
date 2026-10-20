@@ -1,13 +1,14 @@
 # file_provider_materialize
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties of an event that indicates the materialization of a file provider.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ Properties of an event that indicates the materialization of a file provider.
 var file_provider_materialize: es_event_file_provider_materialize_t { get set }
 ```
 
+```c
+es_event_file_provider_materialize_t file_provider_materialize;
+```
+
 #### Discussion
 
-See the [`File Provider`](https://developer.apple.com/documentation/fileprovider) framework for more information on file providers.
+See the [File Provider](../../FileProvider/FileProvider.md) framework for more information on file providers.
 
 ## See Also
 
-- [var file_provider_update: es_event_file_provider_update_t](es_events_t/file_provider_update.md)
+### File Provider Events
+- [var file_provider_update: es_event_file_provider_update_t](./file_provider_update.md)
   Properties of an event that indicates an update to a file provider.
 
 

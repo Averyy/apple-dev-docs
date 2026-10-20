@@ -1,7 +1,8 @@
 # readAttributeRangeRestrictedInt8s(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeRangeRestrictedInt8s(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeRangeRestrictedInt8sWithParams:(MTRReadParams *) params;
 ```
 
 

@@ -1,7 +1,8 @@
 # AEGetAttributeDesc(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets a copy of the descriptor for a specified Apple event attribute from an Apple event; typically used when your application needs to pass the descriptor on to another function.
 
@@ -14,31 +15,36 @@ Gets a copy of the descriptor for a specified Apple event attribute from an Appl
 func AEGetAttributeDesc(_ theAppleEvent: UnsafePointer<AppleEvent>!, _ theAEKeyword: AEKeyword, _ desiredType: DescType, _ result: UnsafeMutablePointer<AEDesc>!) -> OSErr
 ```
 
-#### Return_value
+```c
+OSErr AEGetAttributeDesc(const AppleEvent *theAppleEvent, AEKeyword theAEKeyword, DescType desiredType, AEDesc *result);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
-To get Apple event attribute data for your application to use directly, call [`AEGetAttributePtr(_:_:_:_:_:_:_:)`](1445109-aegetattributeptr.md). To get a descriptor for an Apple event attribute to pass on to another Apple Event Manager routine, call `AEGetAttributeDesc`. 
+To get Apple event attribute data for your application to use directly, call [`AEGetAttributePtr(_:_:_:_:_:_:_:)`](./api-1445109-aegetattributeptr.md). To get a descriptor for an Apple event attribute to pass on to another Apple Event Manager routine, call `AEGetAttributeDesc`. 
 
-##### 1770186
+##### Version-Notes
 
 Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAppleEvent`: A pointer to the Apple event to get the attribute descriptor from. See [`AppleEvent`](appleevent.md).
-- `theAEKeyword`: The keyword that specifies the desired attribute. Some keyword constants are described in [`Keyword Attribute Constants`](apple_events/1542920-keyword_attribute_constants.md). See [`AEKeyword`](aekeyword.md).
-- `result`: A pointer to a descriptor. On successful return, a copy of the specified Apple event attribute, coerced, if necessary, to the descriptor type specified in `desiredType`. On error, a null descriptor. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it. See [`AEDesc`](aedesc.md).
+- `theAppleEvent`: A pointer to the Apple event to get the attribute descriptor from. See [`AppleEvent`](./appleevent.md).
+- `theAEKeyword`: The keyword that specifies the desired attribute. Some keyword constants are described in [Keyword Attribute Constants](./apple_events/api-1542920-keyword_attribute_constants.md). See [`AEKeyword`](./aekeyword.md).
+- `result`: A pointer to a descriptor. On successful return, a copy of the specified Apple event attribute, coerced, if necessary, to the descriptor type specified in `desiredType`. On error, a null descriptor. If the function returns successfully, your application should call the [`AEDisposeDesc(_:)`](./api-1444208-aedisposedesc.md) function to dispose of the resulting descriptor after it has finished using it. See [`AEDesc`](./aedesc.md).
 
 ## See Also
 
-- [func AEGetAttributePtr(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](1445109-aegetattributeptr.md)
+### Getting Data or Descriptors From Apple Events and Apple Event Records
+- [func AEGetAttributePtr(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](./api-1445109-aegetattributeptr.md)
   Gets a copy of the data for a specified Apple event attribute from an Apple event; typically used when your application needs to work with the data directly.
-- [func AEGetParamDesc(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](1449233-aegetparamdesc.md)
+- [func AEGetParamDesc(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<AEDesc>!) -> OSErr](./api-1449233-aegetparamdesc.md)
   Gets a copy of the descriptor for a keyword-specified Apple event parameter from an Apple event or an Apple event record.
-- [func AEGetParamPtr(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](1444069-aegetparamptr.md)
+- [func AEGetParamPtr(UnsafePointer<AppleEvent>!, AEKeyword, DescType, UnsafeMutablePointer<DescType>!, UnsafeMutableRawPointer!, Size, UnsafeMutablePointer<Size>!) -> OSErr](./api-1444069-aegetparamptr.md)
   Gets a copy of the data for a specified Apple event parameter from an Apple event or an Apple event record.
 
 

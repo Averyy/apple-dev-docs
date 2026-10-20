@@ -1,7 +1,8 @@
 # Siri Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app handles Siri requests.
 
@@ -11,9 +12,10 @@ A Boolean value that indicates whether the app handles Siri requests.
 - visionOS 1.0+
 - watchOS 3.2+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.siri` (Siri)
+- **Type**: boolean
 
 #### Discussion
 

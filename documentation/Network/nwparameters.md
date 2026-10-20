@@ -1,7 +1,8 @@
 # NWParameters
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that stores the protocols to use for connections, options for sending data, and network path constraints.
 
@@ -22,115 +23,116 @@ final class NWParameters
 
 ## Mentions
 
-- [Indicating the source of network activity](indicating-the-source-of-network-activity.md)
+- [Indicating the source of network activity](./indicating-the-source-of-network-activity.md)
 
 ## Topics
 
 ### Creating Parameters
-- [class var tls: NWParameters](nwparameters/tls.md)
+- [class var tls: NWParameters](./nwparameters/tls.md)
   A set of default parameters for connections and listeners that use TLS and TCP.
-- [class var tcp: NWParameters](nwparameters/tcp.md)
+- [class var tcp: NWParameters](./nwparameters/tcp.md)
   A set of default parameters for connections and listeners that use TCP.
-- [class var dtls: NWParameters](nwparameters/dtls.md)
+- [class var dtls: NWParameters](./nwparameters/dtls.md)
   A set of default parameters for connections and listeners that use DTLS and UDP.
-- [class var udp: NWParameters](nwparameters/udp.md)
+- [class var udp: NWParameters](./nwparameters/udp.md)
   A set of default parameters for connections and listeners that use UDP.
-- [class func quic(alpn: [String]) -> NWParameters](nwparameters/quic(alpn:).md)
+- [class func quic(alpn: [String]) -> NWParameters](./nwparameters/quic%28alpn%29.md)
   Returns a set of default parameters for connections and listeners that use QUIC, with a set of supported Application-Layer Protocol Negotiation values.
-- [class func quicDatagram(alpn: [String]) -> NWParameters](nwparameters/quicdatagram(alpn:).md)
+- [class func quicDatagram(alpn: [String]) -> NWParameters](./nwparameters/quicdatagram%28alpn%29.md)
   Returns a set of default parameters for connections and listeners that use QUIC datagrams, with a set of supported Application-Layer Protocol Negotiation values.
-- [convenience init(tls: NWProtocolTLS.Options?, tcp: NWProtocolTCP.Options)](nwparameters/init(tls:tcp:).md)
+- [convenience init(tls: NWProtocolTLS.Options?, tcp: NWProtocolTCP.Options)](./nwparameters/init%28tls,tcp%29.md)
   Initializes parameters for TLS connections and listeners with custom TLS and TCP options.
-- [convenience init(dtls: NWProtocolTLS.Options?, udp: NWProtocolUDP.Options)](nwparameters/init(dtls:udp:).md)
+- [convenience init(dtls: NWProtocolTLS.Options?, udp: NWProtocolUDP.Options)](./nwparameters/init%28dtls,udp%29.md)
   Initializes parameters for DTLS connections and listeners with custom DTLS and UDP options.
-- [convenience init(quic: NWProtocolQUIC.Options)](nwparameters/init(quic:).md)
+- [convenience init(quic: NWProtocolQUIC.Options)](./nwparameters/init%28quic%29.md)
   Initializes parameters for QUIC connections and listeners with custom QUIC options.
-- [init()](nwparameters/init.md)
+- [init()](./nwparameters/init%28%29.md)
   Initializes parameters for connections, listeners, and browsers with no protocols specified.
-- [init(customIPProtocolNumber: UInt8)](nwparameters/init(customipprotocolnumber:).md)
+- [init(customIPProtocolNumber: UInt8)](./nwparameters/init%28customipprotocolnumber%29.md)
   Initializes parameters for connections and listeners using a custom IP protocol.
-- [func copy() -> NWParameters](nwparameters/copy.md)
+- [func copy() -> NWParameters](./nwparameters/copy%28%29.md)
   Performs a deep copy of a parameters object.
 ### Modifying Protocol Stacks
-- [var defaultProtocolStack: NWParameters.ProtocolStack](nwparameters/defaultprotocolstack.md)
+- [var defaultProtocolStack: NWParameters.ProtocolStack](./nwparameters/defaultprotocolstack.md)
   The protocol stack used by connections and listeners.
-- [NWParameters.ProtocolStack](nwparameters/protocolstack.md)
+- [NWParameters.ProtocolStack](./nwparameters/protocolstack.md)
   An ordered set of protocol options that define the protocols that connections and listeners use.
-- [class NWProtocol](nwprotocol.md)
+- [class NWProtocol](./nwprotocol.md)
   The abstract superclass used by Network framework protocols and by custom network protocols that you define.
 ### Selecting Paths
-- [var requiredInterfaceType: NWInterface.InterfaceType](nwparameters/requiredinterfacetype.md)
+- [var requiredInterfaceType: NWInterface.InterfaceType](./nwparameters/requiredinterfacetype.md)
   An interface type to require on connections and listeners.
-- [var requiredInterface: NWInterface?](nwparameters/requiredinterface.md)
+- [var requiredInterface: NWInterface?](./nwparameters/requiredinterface.md)
   A specific interface to require on connections, listeners, and browsers.
-- [var requiredLocalEndpoint: NWEndpoint?](nwparameters/requiredlocalendpoint.md)
+- [var requiredLocalEndpoint: NWEndpoint?](./nwparameters/requiredlocalendpoint.md)
   A specific local IP address and port to use for connections and listeners.
-- [var prohibitConstrainedPaths: Bool](nwparameters/prohibitconstrainedpaths.md)
+- [var prohibitConstrainedPaths: Bool](./nwparameters/prohibitconstrainedpaths.md)
   A Boolean that prevents connections, listeners, and browsers from using network paths marked as constrained by Low Data Mode.
-- [var prohibitExpensivePaths: Bool](nwparameters/prohibitexpensivepaths.md)
+- [var prohibitExpensivePaths: Bool](./nwparameters/prohibitexpensivepaths.md)
   A Boolean that prevents connections, listeners, and browsers from using network paths marked as expensive.
-- [var prohibitedInterfaceTypes: [NWInterface.InterfaceType]?](nwparameters/prohibitedinterfacetypes.md)
+- [var prohibitedInterfaceTypes: [NWInterface.InterfaceType]?](./nwparameters/prohibitedinterfacetypes.md)
   A list of interface types that connections, listeners, and browsers will not use.
-- [var prohibitedInterfaces: [NWInterface]?](nwparameters/prohibitedinterfaces.md)
+- [var prohibitedInterfaces: [NWInterface]?](./nwparameters/prohibitedinterfaces.md)
   A list of specific interfaces that connections and listeners will not use.
 ### Customizing Connection Options
-- [var multipathServiceType: NWParameters.MultipathServiceType](nwparameters/multipathservicetype-swift.property.md)
+- [var multipathServiceType: NWParameters.MultipathServiceType](./nwparameters/multipathservicetype-swift.property.md)
   An option to allow connections to use multipath protocols.
-- [NWParameters.MultipathServiceType](nwparameters/multipathservicetype-swift.enum.md)
+- [NWParameters.MultipathServiceType](./nwparameters/multipathservicetype-swift.enum.md)
   Modes in which a connection can support multipath protocols.
-- [var serviceClass: NWParameters.ServiceClass](nwparameters/serviceclass-swift.property.md)
+- [var serviceClass: NWParameters.ServiceClass](./nwparameters/serviceclass-swift.property.md)
   The traffic characteristics network connections send and receive.
-- [NWParameters.ServiceClass](nwparameters/serviceclass-swift.enum.md)
+- [NWParameters.ServiceClass](./nwparameters/serviceclass-swift.enum.md)
   Indicates how the system prioritizes transmitted traffic by your latency and throughput needs.
-- [var allowFastOpen: Bool](nwparameters/allowfastopen.md)
+- [var allowFastOpen: Bool](./nwparameters/allowfastopen.md)
   A Boolean that enables sending application data with protocol handshakes.
-- [var expiredDNSBehavior: NWParameters.ExpiredDNSBehavior](nwparameters/expireddnsbehavior-swift.property.md)
+- [var expiredDNSBehavior: NWParameters.ExpiredDNSBehavior](./nwparameters/expireddnsbehavior-swift.property.md)
   A behavior that defines how expired DNS answers will be used.
-- [NWParameters.ExpiredDNSBehavior](nwparameters/expireddnsbehavior-swift.enum.md)
+- [NWParameters.ExpiredDNSBehavior](./nwparameters/expireddnsbehavior-swift.enum.md)
   Options for configuring how expired DNS answers should be used.
-- [var requiresDNSSECValidation: Bool](nwparameters/requiresdnssecvalidation.md)
+- [var requiresDNSSECValidation: Bool](./nwparameters/requiresdnssecvalidation.md)
   A Boolean value that determines whether a connection requires DNSSEC validation when resolving endpoints.
-- [var preferNoProxies: Bool](nwparameters/prefernoproxies.md)
+- [var preferNoProxies: Bool](./nwparameters/prefernoproxies.md)
   A Boolean that indicates that connections should ignore proxies when they are enabled on the system.
-- [var includePeerToPeer: Bool](nwparameters/includepeertopeer.md)
+- [var includePeerToPeer: Bool](./nwparameters/includepeertopeer.md)
   A Boolean that enables peer-to-peer link technologies for connections and listeners.
-- [var allowLocalEndpointReuse: Bool](nwparameters/allowlocalendpointreuse.md)
+- [var allowLocalEndpointReuse: Bool](./nwparameters/allowlocalendpointreuse.md)
   A Boolean that allows reusing local addresses and ports across connections.
-- [var acceptLocalOnly: Bool](nwparameters/acceptlocalonly.md)
+- [var acceptLocalOnly: Bool](./nwparameters/acceptlocalonly.md)
   A Boolean that restricts listeners to only accepting connections from the local link.
 ### Configuring Privacy Settings
-- [func setPrivacyContext(NWParameters.PrivacyContext)](nwparameters/setprivacycontext(_:).md)
+- [func setPrivacyContext(NWParameters.PrivacyContext)](./nwparameters/setprivacycontext%28_%29.md)
   Associates a privacy context with any connections or listeners that use the parameters.
-- [NWParameters.PrivacyContext](nwparameters/privacycontext.md)
+- [NWParameters.PrivacyContext](./nwparameters/privacycontext.md)
   An object that defines the privacy requirements for a set of connections.
 ### Instance Properties
-- [var allowUltraConstrainedPaths: Bool](nwparameters/allowultraconstrainedpaths.md)
+- [var allowUltraConstrainedPaths: Bool](./nwparameters/allowultraconstrainedpaths.md)
   Allow connection to use interfaces considered ultra-constrained by the system
-- [var attribution: NWParameters.Attribution](nwparameters/attribution-swift.property.md)
-- [var wifiAware: WAParameters](nwparameters/wifiaware.md)
+- [var attribution: NWParameters.Attribution](./nwparameters/attribution-swift.property.md)
+- [var wifiAware: WAParameters](./nwparameters/wifiaware.md)
   Get and set Wi-Fi Aware specific connection parameters.
 ### Instance Methods
-- [func wifiAware((inout WAParameters) -> Void) -> Self](nwparameters/wifiaware(_:).md)
+- [func wifiAware((inout WAParameters) -> Void) -> Self](./nwparameters/wifiaware%28_%29.md)
   Configure Wi-Fi Aware properties on an `NWParameters` object.
 ### Type Properties
-- [class var applicationService: NWParameters](nwparameters/applicationservice.md)
+- [class var applicationService: NWParameters](./nwparameters/applicationservice.md)
   The default parameters for connecting with other, local devices that are running your app.
 ### Enumerations
-- [NWParameters.Attribution](nwparameters/attribution-swift.enum.md)
+- [NWParameters.Attribution](./nwparameters/attribution-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [NWParametersProvider](nwparametersprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [NWParametersProvider](./nwparametersprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum NWEndpoint](nwendpoint.md)
+### Essentials
+- [enum NWEndpoint](./nwendpoint.md)
   A local or remote endpoint in a network connection.
 
 

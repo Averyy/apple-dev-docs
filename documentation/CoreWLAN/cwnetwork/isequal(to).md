@@ -1,7 +1,8 @@
 # isEqual(to:)
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Method for determining CWNetwork object equality.
 
@@ -12,6 +13,10 @@ Method for determining CWNetwork object equality.
 
 ```swift
 func isEqual(to network: CWNetwork) -> Bool
+```
+
+```objc
+- (BOOL) isEqualToNetwork:(CWNetwork *) network;
 ```
 
 #### Return Value

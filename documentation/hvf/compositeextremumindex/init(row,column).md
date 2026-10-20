@@ -1,7 +1,8 @@
 # init(row:column:)
 
 **Framework**: hvf  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.4+

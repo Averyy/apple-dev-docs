@@ -1,6 +1,7 @@
 # Displaying progress views and gauges
 
-**Framework**: ClockKit
+**Framework**: ClockKit  
+**Role**: Article
 
 Add rich visual data to your SwiftUI complications with progress views and gauges.
 
@@ -12,7 +13,7 @@ Gauges, on the other hand, depict a value within a given range of values. You co
 
 ##### Create a Progress View
 
-To instantiate a [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview), call the initializer and pass a value.
+To instantiate a [`ProgressView`](../SwiftUI/progressview.md), call the initializer and pass a value.
 
 ```swift
 // A progress view that is 20% complete.
@@ -23,7 +24,7 @@ By default, the progress view takes a value between 0.0 and 1.0, and visually re
 
 ##### Customize a Progress View
 
-Customize a progress view by selecting a style, adding labels, and setting a tint color. [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview) supports linear and circular styles. By default, the SwiftUI selects the style based on the view’s context. However, you can add a `progressViewStyle(_:)` modifier to specify the style.
+Customize a progress view by selecting a style, adding labels, and setting a tint color. [`ProgressView`](../SwiftUI/progressview.md) supports linear and circular styles. By default, the SwiftUI selects the style based on the view’s context. However, you can add a `progressViewStyle(_:)` modifier to specify the style.
 
 The following code sets a circular style.
 
@@ -33,7 +34,7 @@ ProgressView(value: 0.4)
     .progressViewStyle(CircularProgressViewStyle())
 ```
 
-![A preview of the circular progress view, showing a task that is 40 percent complete.](/images/com.apple.clockkit/media-3686517@2x.png)
+![A preview of the circular progress view, showing a task that is 40 percent complete.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3686517@2x.png)
 
 The code below sets a linear style.
 
@@ -43,9 +44,9 @@ ProgressView(value: 0.6)
     .progressViewStyle(LinearProgressViewStyle())
 ```
 
-![A preview of the linear progress view showing a task that is 60 percent complete.](/images/com.apple.clockkit/media-3686525@2x.png)
+![A preview of the linear progress view showing a task that is 60 percent complete.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3686525@2x.png)
 
-[`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview) also supports a label that describes the task. Pass a closure that returns a [`View`](https://developer.apple.com/documentation/swiftui/view) to the progress view’s initializer.
+[`ProgressView`](../SwiftUI/progressview.md) also supports a label that describes the task. Pass a closure that returns a [`View`](../SwiftUI/view.md) to the progress view’s initializer.
 
 ```swift
 // A progress view with an image label.
@@ -56,7 +57,7 @@ ProgressView(value: 0.8) {
 }
 ```
 
-![Previews of the circular and linear progress views with a coffee cup image as the label.](/images/com.apple.clockkit/media-3686524@2x.png)
+![Previews of the circular and linear progress views with a coffee cup image as the label.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3686524@2x.png)
 
 The label appears inside a circular style, and below and to the left of the linear progress bar.
 
@@ -71,11 +72,11 @@ ProgressView(value: 0.4) {
 .progressViewStyle(CircularProgressViewStyle(tint: .green))
 ```
 
-![A preview of the tinted, circular progress view with a green gauge.](/images/com.apple.clockkit/media-3686514@2x.png)
+![A preview of the tinted, circular progress view with a green gauge.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3686514@2x.png)
 
 ##### Create a Gauge
 
-In many ways, the [`Gauge`](https://developer.apple.com/documentation/swiftui/gauge) is similar to the [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview). It supports both a linear and circular style, and you can add a label and tinting. The main difference is that the gauge represents a value within a specified range—not the percent complete. It also has additional options, like labels for the range’s minimum, maximum values, and a label for the current value. Finally, it supports color gradients.
+In many ways, the [`Gauge`](../SwiftUI/gauge.md) is similar to the [`ProgressView`](../SwiftUI/progressview.md). It supports both a linear and circular style, and you can add a label and tinting. The main difference is that the gauge represents a value within a specified range—not the percent complete. It also has additional options, like labels for the range’s minimum, maximum values, and a label for the current value. Finally, it supports color gradients.
 
 ##### Customize a Gauge
 
@@ -96,25 +97,26 @@ Gauge(value: 76.0, in: 60.0...85.0) {
         Gradient(colors: [.green, .yellow, .orange, .red])))
 ```
 
-![A preview of the gauge view showing 76 degrees with a high of 85 and a low of 60.](/images/com.apple.clockkit/media-3686516@2x.png)
+![A preview of the gauge view showing 76 degrees with a high of 85 and a low of 60.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3686516@2x.png)
 
 Note that the gauge doesn’t show the label (`ºF` in this example) when you specify the minimum and maximum value labels.
 
 ## See Also
 
-- [Creating complications for your watchOS app](creating-complications-for-your-watchos-app.md)
+### Articles
+- [Creating complications for your watchOS app](./creating-complications-for-your-watchos-app.md)
   Set up and implement complications for your watchOS app.
-- [Declaring complications for your app](declaring-complications-for-your-app.md)
+- [Declaring complications for your app](./declaring-complications-for-your-app.md)
   Define the complications that your app supports.
-- [Creating a timeline entry](creating-a-timeline-entry.md)
+- [Creating a timeline entry](./creating-a-timeline-entry.md)
   Package your app-specific data into a template and create a timeline entry for that template.
-- [Loading future timeline events](loading-future-timeline-events.md)
+- [Loading future timeline events](./loading-future-timeline-events.md)
   Preserve battery life and improve performance on the watch by providing a timeline with expected data and updates.
-- [Keeping your complications up to date](keeping-your-complications-up-to-date.md)
+- [Keeping your complications up to date](./keeping-your-complications-up-to-date.md)
   Replace or extend the data in your complication’s timeline.
-- [Building complications with SwiftUI](building-complications-with-swiftui.md)
+- [Building complications with SwiftUI](./building-complications-with-swiftui.md)
   Design the appearance of a graphic complication using SwiftUI.
-- [Adding text to a complication](adding-text-to-a-complication.md)
+- [Adding text to a complication](./adding-text-to-a-complication.md)
   Use text in SwiftUI complications.
 
 

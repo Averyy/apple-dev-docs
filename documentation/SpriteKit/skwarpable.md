@@ -1,9 +1,10 @@
 # SKWarpable
 
 **Framework**: SpriteKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-A protocol for objects that can be warped and animated by an [`SKWarpGeometry`](skwarpgeometry.md).
+A protocol for objects that can be warped and animated by an [`SKWarpGeometry`](./skwarpgeometry.md).
 
 **Availability**:
 - iOS 10.0+
@@ -20,34 +21,39 @@ A protocol for objects that can be warped and animated by an [`SKWarpGeometry`](
 protocol SKWarpable : NSObjectProtocol
 ```
 
+```objc
+@protocol SKWarpable <NSObject>
+```
+
 ## Mentions
 
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
-- [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
+- [Animate the Warping of a Sprite](./animate-the-warping-of-a-sprite.md)
+- [Warping SpriteKit Content By Using an Effect Node](./warping-spritekit-content-by-using-an-effect-node.md)
 
 ## Topics
 
 ### Instance Properties
-- [var subdivisionLevels: Int](skwarpable/subdivisionlevels.md)
+- [var subdivisionLevels: Int](./skwarpable/subdivisionlevels.md)
   The maximum number of subdivision iterations used to generate the final vertices.
-- [var warpGeometry: SKWarpGeometry?](skwarpable/warpgeometry.md)
+- [var warpGeometry: SKWarpGeometry?](./skwarpable/warpgeometry.md)
   The warp geometry used to define the distortion.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Conforming Types
-- [SKEffectNode](skeffectnode.md)
-- [SKScene](skscene.md)
-- [SKSpriteNode](skspritenode.md)
+- [SKEffectNode](./skeffectnode.md)
+- [SKScene](./skscene.md)
+- [SKSpriteNode](./skspritenode.md)
 
 ## See Also
 
-- [class SKWarpGeometry](skwarpgeometry.md)
-  A definition for a deformation of nodes that conform to [`SKWarpable`](skwarpable.md).
-- [class SKWarpGeometryGrid](skwarpgeometrygrid.md)
-  A definition for a grid-based deformation of nodes that conform to [`SKWarpable`](skwarpable.md).
+### Warping
+- [class SKWarpGeometry](./skwarpgeometry.md)
+  A definition for a deformation of nodes that conform to [`SKWarpable`](./skwarpable.md).
+- [class SKWarpGeometryGrid](./skwarpgeometrygrid.md)
+  A definition for a grid-based deformation of nodes that conform to [`SKWarpable`](./skwarpable.md).
 
 
 ---

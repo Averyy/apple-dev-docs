@@ -1,7 +1,8 @@
 # dataDecodingStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The strategy that a decoder uses to decode raw data.
 
@@ -22,11 +23,12 @@ var dataDecodingStrategy: JSONDecoder.DataDecodingStrategy { get set }
 
 #### Discussion
 
-The default strategy is the [`JSONDecoder.DataDecodingStrategy.base64`](jsondecoder/datadecodingstrategy-swift.enum/base64.md) strategy.
+The default strategy is the [`JSONDecoder.DataDecodingStrategy.base64`](./datadecodingstrategy-swift.enum/base64.md) strategy.
 
 ## See Also
 
-- [JSONDecoder.DataDecodingStrategy](jsondecoder/datadecodingstrategy-swift.enum.md)
+### Decoding Raw Data
+- [JSONDecoder.DataDecodingStrategy](./datadecodingstrategy-swift.enum.md)
   The strategies for decoding raw data.
 
 

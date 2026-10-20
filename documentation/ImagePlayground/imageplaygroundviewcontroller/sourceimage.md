@@ -1,7 +1,8 @@
 # sourceImage
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image to use as source input for generating the new image.
 
@@ -13,6 +14,15 @@ An image to use as source input for generating the new image.
 - visionOS 2.4+
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+@MainActor
+@objc @preconcurrency var sourceImage: UIImage? { get set }
+```
+
+*macOS*
 
 ```swift
 @MainActor
@@ -27,7 +37,8 @@ Typically, you provide an image big enough to fit the device’s display. The ex
 
 ## See Also
 
-- [var concepts: [ImagePlaygroundConcept]](imageplaygroundviewcontroller/concepts.md)
+### Specifying the source content
+- [var concepts: [ImagePlaygroundConcept]](./concepts.md)
   An array of elements that describes the expected contents of the image.
 
 

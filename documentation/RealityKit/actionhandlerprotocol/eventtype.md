@@ -1,7 +1,8 @@
 # ActionHandlerProtocol.EventType
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The event type returned to each event function in the handler.
 

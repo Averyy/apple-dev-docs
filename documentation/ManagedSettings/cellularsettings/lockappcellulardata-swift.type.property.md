@@ -1,7 +1,8 @@
 # lockAppCellularData
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata associated with the constraint that locks the cellular data setting.
 
@@ -22,7 +23,8 @@ The default value is `false`.
 
 ## See Also
 
-- [var lockAppCellularData: Bool?](cellularsettings/lockappcellulardata-swift.property.md)
+### Locking app access to cell data
+- [var lockAppCellularData: Bool?](./lockappcellulardata-swift.property.md)
   A Boolean value that indicates whether to prevent the user from changing cellular data settings.
 
 

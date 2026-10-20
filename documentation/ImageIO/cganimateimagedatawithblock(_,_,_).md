@@ -1,7 +1,8 @@
 # CGAnimateImageDataWithBlock(_:_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Animate the sequence of images using data from a Graphics Interchange Format (GIF) or Animated Portable Network Graphics (APNG) file file.
 
@@ -20,33 +21,38 @@ Animate the sequence of images using data from a Graphics Interchange Format (GI
 func CGAnimateImageDataWithBlock(_ data: CFData, _ options: CFDictionary?, _ block: @escaping CGImageSourceAnimationBlock) -> OSStatus
 ```
 
+```c
+extern OSStatus CGAnimateImageDataWithBlock(CFDataRef data, CFDictionaryRef options, CGImageSourceAnimationBlock block);
+```
+
 #### Return Value
 
 A status code indicating the success or failure of the animation.
 
 #### Discussion
 
-The function executes the provided `block` for each frame of the animation. By default, the function uses the timing information contained in the image’s metadata. This information includes the number of seconds between individual frames, and the number of times to loop the animation. For example, the function uses the [`kCGImagePropertyGIFDelayTime`](kcgimagepropertygifdelaytime.md) and [`kCGImagePropertyGIFLoopCount`](kcgimagepropertygifloopcount.md) tags from a GIF image’s metadata. To override the default timing information, provide the appropriate keys in the `options` dictionary.
+The function executes the provided `block` for each frame of the animation. By default, the function uses the timing information contained in the image’s metadata. This information includes the number of seconds between individual frames, and the number of times to loop the animation. For example, the function uses the [`kCGImagePropertyGIFDelayTime`](./kcgimagepropertygifdelaytime.md) and [`kCGImagePropertyGIFLoopCount`](./kcgimagepropertygifloopcount.md) tags from a GIF image’s metadata. To override the default timing information, provide the appropriate keys in the `options` dictionary.
 
 ## Parameters
 
 - `data`: The image data to animate.
-- `options`: Additional playback options. Include the [`kCGImageAnimationDelayTime`](kcgimageanimationdelaytime.md) or [`kCGImageAnimationLoopCount`](kcgimageanimationloopcount.md) keys to override the timing information in the image file. Include the [`kCGImageAnimationStartIndex`](kcgimageanimationstartindex.md) key to specify the index of the first image in the animation.
+- `options`: Additional playback options. Include the [`kCGImageAnimationDelayTime`](./kcgimageanimationdelaytime.md) or [`kCGImageAnimationLoopCount`](./kcgimageanimationloopcount.md) keys to override the timing information in the image file. Include the [`kCGImageAnimationStartIndex`](./kcgimageanimationstartindex.md) key to specify the index of the first image in the animation.
 - `block`: The animation block to execute for each image frame. The system executes this block on the main queue, and at the intervals indicated by the image’s delay time metadata. Use this block to display the provided image in your interface.
 
 ## See Also
 
-- [func CGAnimateImageAtURLWithBlock(CFURL, CFDictionary?, CGImageSourceAnimationBlock) -> OSStatus](cganimateimageaturlwithblock(_:_:_:).md)
+### Animations
+- [func CGAnimateImageAtURLWithBlock(CFURL, CFDictionary?, CGImageSourceAnimationBlock) -> OSStatus](./cganimateimageaturlwithblock%28_,_,_%29.md)
   Animate the sequence of images in the Graphics Interchange Format (GIF) or Animated Portable Network Graphics (APNG) file at the specified URL.
-- [typealias CGImageSourceAnimationBlock](cgimagesourceanimationblock.md)
+- [typealias CGImageSourceAnimationBlock](./cgimagesourceanimationblock.md)
   The block to execute for each frame of an image animation.
-- [let kCGImageAnimationStartIndex: CFString](kcgimageanimationstartindex.md)
+- [let kCGImageAnimationStartIndex: CFString](./kcgimageanimationstartindex.md)
   A property that specifies the index of the first frame of an animation.
-- [let kCGImageAnimationDelayTime: CFString](kcgimageanimationdelaytime.md)
+- [let kCGImageAnimationDelayTime: CFString](./kcgimageanimationdelaytime.md)
   The number of seconds to wait before displaying the next image in an animated sequence.
-- [let kCGImageAnimationLoopCount: CFString](kcgimageanimationloopcount.md)
+- [let kCGImageAnimationLoopCount: CFString](./kcgimageanimationloopcount.md)
   The number of times to repeat the animated sequence.
-- [enum CGImageAnimationStatus](cgimageanimationstatus.md)
+- [enum CGImageAnimationStatus](./cgimageanimationstatus.md)
   Constants that indicate the result of animating an image sequence.
 
 

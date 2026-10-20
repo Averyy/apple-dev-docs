@@ -1,7 +1,8 @@
 # isDeviceMotionSupported
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 4.0+
@@ -16,10 +17,15 @@
 class var isDeviceMotionSupported: Bool { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly, getter=isDeviceMotionSupported) BOOL deviceMotionSupported;
+```
+
 ## See Also
 
-- [class var authorizationStatus: CMAuthorizationStatus](cmbatchedsensormanager/authorizationstatus.md)
-- [class var isAccelerometerSupported: Bool](cmbatchedsensormanager/isaccelerometersupported.md)
+### Determining authorization and availability
+- [class var authorizationStatus: CMAuthorizationStatus](./authorizationstatus.md)
+- [class var isAccelerometerSupported: Bool](./isaccelerometersupported.md)
 
 
 ---

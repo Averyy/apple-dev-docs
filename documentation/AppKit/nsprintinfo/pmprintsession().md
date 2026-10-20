@@ -1,7 +1,8 @@
 # pmPrintSession()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Core Printing object configured with the print info’s session information.
 
@@ -14,9 +15,13 @@ Returns a Core Printing object configured with the print info’s session inform
 func pmPrintSession() -> UnsafeMutableRawPointer
 ```
 
+```objc
+- (void *) PMPrintSession;
+```
+
 #### Return Value
 
-A pointer to a [`PMPrintSession`](https://developer.apple.com/documentation/applicationservices/pmprintsession) object, an opaque type that stores information about a print job. You should not call `PMRelease` to release the returned object, except to balance calls to `PMRetain` that your code also issued.
+A pointer to a [`PMPrintSession`](../../applicationservices/pmprintsession.md) object, an opaque type that stores information about a print job. You should not call `PMRelease` to release the returned object, except to balance calls to `PMRetain` that your code also issued.
 
 #### Discussion
 
@@ -24,19 +29,20 @@ The information in the returned `PMPrintSession` object is consistent with the r
 
 ## See Also
 
-- [var printSettings: NSMutableDictionary](nsprintinfo/printsettings.md)
+### Accessing Core Printing Information
+- [var printSettings: NSMutableDictionary](./printsettings.md)
   A mutable dictionary containing the print settings from Core Printing.
-- [NSPrintInfo.SettingKey](nsprintinfo/settingkey.md)
+- [NSPrintInfo.SettingKey](./settingkey.md)
   The type you use to specify a print info setting key.
-- [func pmPageFormat() -> UnsafeMutableRawPointer](nsprintinfo/pmpageformat.md)
+- [func pmPageFormat() -> UnsafeMutableRawPointer](./pmpageformat%28%29.md)
   Returns a Core Printing object configured with the print info’s page format information.
-- [func pmPrintSettings() -> UnsafeMutableRawPointer](nsprintinfo/pmprintsettings.md)
+- [func pmPrintSettings() -> UnsafeMutableRawPointer](./pmprintsettings%28%29.md)
   Returns a Core Printing object configured with the print info’s print settings information
-- [func updateFromPMPageFormat()](nsprintinfo/updatefrompmpageformat.md)
+- [func updateFromPMPageFormat()](./updatefrompmpageformat%28%29.md)
   Synchronizes the print info’s page format information with information from its associated page format object.
-- [func updateFromPMPrintSettings()](nsprintinfo/updatefrompmprintsettings.md)
+- [func updateFromPMPrintSettings()](./updatefrompmprintsettings%28%29.md)
   Synchronizes the print info’s print settings information with information from its associated print settings object.
-- [func takeSettings(from: NSPDFInfo)](nsprintinfo/takesettings(from:).md)
+- [func takeSettings(from: NSPDFInfo)](./takesettings%28from%29.md)
   Updates the print info with all the settings and attributes in the specified PDF info object.
 
 

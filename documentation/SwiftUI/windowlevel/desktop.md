@@ -1,7 +1,8 @@
 # desktop
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Desktop window level.
 

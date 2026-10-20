@@ -1,7 +1,8 @@
 # CInterop.Mode
 
 **Framework**: System  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 15.0+

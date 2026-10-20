@@ -1,7 +1,8 @@
 # showOverlayTemplate(_:animated:completion:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Show a template as an overlay over the current template hierarchy. Only one overlay template may be shown at a time.
 
@@ -13,7 +14,15 @@ Show a template as an overlay over the current template hierarchy. Only one over
 ## Declaration
 
 ```swift
+func showOverlayTemplate(_ templateToShow: CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func showOverlayTemplate(_ templateToShow: CPTemplate, animated: Bool) async throws -> Bool
+```
+
+```objc
+- (void) showOverlayTemplate:(CPTemplate *) templateToShow animated:(BOOL) animated completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 #### Discussion

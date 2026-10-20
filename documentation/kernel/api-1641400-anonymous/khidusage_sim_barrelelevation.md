@@ -1,14 +1,15 @@
 # kHIDUsage_Sim_BarrelElevation
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Sim_BarrelElevation = 0xCA
 ```
 

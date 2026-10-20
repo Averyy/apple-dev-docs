@@ -1,7 +1,8 @@
 # scaledToFit3D()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scales this view to fit its parent.
 
@@ -38,23 +39,24 @@ Model3D(named: "Plane") { resolved in
 
 ## See Also
 
-- [func scaledToFill() -> some View](view/scaledtofill.md)
+### Scale
+- [func scaledToFill() -> some View](./scaledtofill%28%29.md)
   Scales this view to fill its parent.
-- [func scaledToFill3D() -> some View](view/scaledtofill3d.md)
+- [func scaledToFill3D() -> some View](./scaledtofill3d%28%29.md)
   Scales this view to fill its parent.
-- [func scaledToFit() -> some View](view/scaledtofit.md)
+- [func scaledToFit() -> some View](./scaledtofit%28%29.md)
   Scales this view to fit its parent.
-- [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
+- [func scaleEffect(_:anchor:)](./scaleeffect%28_,anchor%29.md)
   Scales this view uniformly by the specified factor, relative to an anchor point.
-- [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
+- [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](./scaleeffect%28x,y,anchor%29.md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
-- [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)
+- [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](./scaleeffect%28x,y,z,anchor%29.md)
   Scales this view by the specified horizontal, vertical, and depth factors, relative to an anchor point.
-- [func imageScale(Image.Scale) -> some View](view/imagescale(_:).md)
+- [func imageScale(Image.Scale) -> some View](./imagescale%28_%29.md)
   Scales images within the view according to one of the relative sizes available including small, medium, and large images sizes.
-- [func aspectRatio(_:contentMode:)](view/aspectratio(_:contentmode:).md)
+- [func aspectRatio(_:contentMode:)](./aspectratio%28_,contentmode%29.md)
   Constrains this view’s dimensions to the specified aspect ratio.
-- [func aspectRatio3D(Size3D?, contentMode: ContentMode) -> some View](view/aspectratio3d(_:contentmode:).md)
+- [func aspectRatio3D(Size3D?, contentMode: ContentMode) -> some View](./aspectratio3d%28_,contentmode%29.md)
   Constrains this view’s dimensions to the specified 3D aspect ratio.
 
 

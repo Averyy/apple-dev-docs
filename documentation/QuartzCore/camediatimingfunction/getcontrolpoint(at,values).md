@@ -1,7 +1,8 @@
 # getControlPoint(at:values:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the control point for the specified index.
 
@@ -17,6 +18,10 @@ Returns the control point for the specified index.
 
 ```swift
 func getControlPoint(at idx: Int, values ptr: UnsafeMutablePointer<Float>)
+```
+
+```objc
+- (void) getControlPointAtIndex:(size_t) idx values:(float[2]) ptr;
 ```
 
 #### Discussion

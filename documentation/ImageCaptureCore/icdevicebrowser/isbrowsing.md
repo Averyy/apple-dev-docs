@@ -1,7 +1,8 @@
 # isBrowsing
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the device browser is browsing for devices.
 
@@ -18,17 +19,22 @@ A Boolean value indicating whether the device browser is browsing for devices.
 var isBrowsing: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isBrowsing) BOOL browsing;
+```
+
 ## See Also
 
-- [var devices: [ICDevice]?](icdevicebrowser/devices.md)
+### Browsing Devices
+- [var devices: [ICDevice]?](./devices.md)
   All devices found by the browser.
-- [class ICDevice](icdevice.md)
+- [class ICDevice](../icdevice.md)
   An abstract object that represents a device.
-- [var browsedDeviceTypeMask: ICDeviceTypeMask](icdevicebrowser/browseddevicetypemask.md)
+- [var browsedDeviceTypeMask: ICDeviceTypeMask](./browseddevicetypemask.md)
   A mask whose set bits indicate the type of devices being browsed after the delegate receives the start message.
-- [func start()](icdevicebrowser/start.md)
+- [func start()](./start%28%29.md)
   Tells the delegate to start looking for devices.
-- [func stop()](icdevicebrowser/stop.md)
+- [func stop()](./stop%28%29.md)
   Tells the delegate to stop looking for devices.
 
 

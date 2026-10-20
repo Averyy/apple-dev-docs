@@ -1,14 +1,15 @@
 # apfs_smr
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 struct smr apfs_smr;
 ```
 

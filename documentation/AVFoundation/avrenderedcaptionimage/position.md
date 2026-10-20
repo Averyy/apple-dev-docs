@@ -1,7 +1,8 @@
 # position
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A point that defines the position, in pixels, of the rendered caption image relative to the video frame.
 
@@ -17,11 +18,16 @@ A point that defines the position, in pixels, of the rendered caption image rela
 var position: CGPoint { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGPoint position;
+```
+
 ## See Also
 
-- [var pixelBuffer: CVPixelBuffer](avrenderedcaptionimage/pixelbuffer.md)
+### Inspecting the image
+- [var pixelBuffer: CVPixelBuffer](./pixelbuffer.md)
   An object that contains pixel data for the rendered caption.
-- [var readOnlyPixelBuffer: CVReadOnlyPixelBuffer](avrenderedcaptionimage/readonlypixelbuffer.md)
+- [var readOnlyPixelBuffer: CVReadOnlyPixelBuffer](./readonlypixelbuffer.md)
   A CVReadOnlyPixelBuffer that contains pixel data for the rendered caption
 
 

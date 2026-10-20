@@ -1,7 +1,8 @@
 # rangeOfComposedCharacterSequences(for:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the range in the string of the composed character sequences for a given range.
 

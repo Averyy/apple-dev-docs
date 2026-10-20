@@ -1,16 +1,17 @@
 # Error Callback User-Information String
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 Specifies information about the text being synthesized when an error occurs.
 
 ## Topics
 
 ### Constants
-- [let kSpeechErrorCallbackSpokenString: CFString](kspeecherrorcallbackspokenstring.md)
+- [let kSpeechErrorCallbackSpokenString: CFString](../kspeecherrorcallbackspokenstring.md)
   The text being synthesized when the error occurred.
-- [let kSpeechErrorCallbackCharacterOffset: CFString](kspeecherrorcallbackcharacteroffset.md)
-  The character index in the text being synthesized when the error occurred (the string representing the text is in [`kSpeechErrorCallbackSpokenString`](kspeecherrorcallbackspokenstring.md)).
+- [let kSpeechErrorCallbackCharacterOffset: CFString](../kspeecherrorcallbackcharacteroffset.md)
+  The character index in the text being synthesized when the error occurred (the string representing the text is in [`kSpeechErrorCallbackSpokenString`](../kspeecherrorcallbackspokenstring.md)).
 
 
 ---

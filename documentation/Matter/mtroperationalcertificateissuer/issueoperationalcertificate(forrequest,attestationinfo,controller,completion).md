@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func issueOperationalCertificate(forRequest csrInfo: MTROperationalCSRInfo, attestationInfo: MTRDeviceAttestationInfo, controller: MTRDeviceController, completion: @escaping @Sendable (MTROperationalCertificateChain?, (any Error)?) -> Void)
+```
+
+```swift
 func issueOperationalCertificate(forRequest csrInfo: MTROperationalCSRInfo, attestationInfo: MTRDeviceAttestationInfo, controller: MTRDeviceController) async throws -> MTROperationalCertificateChain
+```
+
+```objc
+- (void) issueOperationalCertificateForRequest:(MTROperationalCSRInfo *) csrInfo attestationInfo:(MTRDeviceAttestationInfo *) attestationInfo controller:(MTRDeviceController *) controller completion:(void (^)(MTROperationalCertificateChain *info, NSError *error)) completion;
 ```
 
 

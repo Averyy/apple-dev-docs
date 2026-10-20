@@ -1,7 +1,8 @@
 # RCSService.Business.URIEntry.URIType
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Enumeration representing the type of URI.
 
@@ -17,30 +18,31 @@ enum URIType
 ## Topics
 
 ### Determining URI type
-- [RCSService.Business.URIEntry.URIType.sip](rcsservice/business/urientry/uritype/sip.md)
+- [RCSService.Business.URIEntry.URIType.sip](./uritype/sip.md)
   SIP URI.
-- [RCSService.Business.URIEntry.URIType.other](rcsservice/business/urientry/uritype/other.md)
+- [RCSService.Business.URIEntry.URIType.other](./uritype/other.md)
   Other type of URI.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let uri: URL](rcsservice/business/urientry/uri.md)
+### Accessing URI properties
+- [let uri: URL](./uri.md)
   URI provided by business.
-- [let type: RCSService.Business.URIEntry.URIType](rcsservice/business/urientry/type.md)
+- [let type: RCSService.Business.URIEntry.URIType](./type.md)
   Type of URI.
-- [let label: RCSService.Business.URIEntry.Label](rcsservice/business/urientry/label-swift.property.md)
+- [let label: RCSService.Business.URIEntry.Label](./label-swift.property.md)
   Label for URI.
-- [RCSService.Business.URIEntry.Label](rcsservice/business/urientry/label-swift.enum.md)
+- [RCSService.Business.URIEntry.Label](./label-swift.enum.md)
   Enumeration representing the URI label.
 
 

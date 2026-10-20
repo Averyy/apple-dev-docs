@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s localized subtitle.
 
@@ -20,15 +21,16 @@ let subtitle: String?
 
 ## See Also
 
-- [let name: String](managedapp/name.md)
+### Obtaining general information
+- [let name: String](./name.md)
   The app’s localized name.
-- [let description: String?](managedapp/description.md)
+- [let description: String?](./description.md)
   The app’s localized description.
-- [let fileSize: Measurement<UnitInformationStorage>?](managedapp/filesize.md)
+- [let fileSize: Measurement<UnitInformationStorage>?](./filesize.md)
   The size of the app in bytes.
-- [func iconURL(fitting: CGSize) -> URL?](managedapp/iconurl(fitting:).md)
+- [func iconURL(fitting: CGSize) -> URL?](./iconurl%28fitting%29.md)
   A URL for the icon of the app.
-- [func screenshotURLs(fitting: CGSize) -> [URL]](managedapp/screenshoturls(fitting:).md)
+- [func screenshotURLs(fitting: CGSize) -> [URL]](./screenshoturls%28fitting%29.md)
   An array of the app’s screenshot URLs.
 
 

@@ -1,7 +1,8 @@
 # isEncrypted
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the specified PDF file is encrypted.
 
@@ -10,7 +11,7 @@ Returns whether the specified PDF file is encrypted.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,19 +21,24 @@ Returns whether the specified PDF file is encrypted.
 var isEncrypted: Bool { get }
 ```
 
+```c
+extern bool CGPDFDocumentIsEncrypted(CGPDFDocumentRef document);
+```
+
 #### Discussion
 
-If the document is encrypted, a password must be supplied before certain operations are enabled. For more information, see [`unlockWithPassword(_:)`](cgpdfdocument/unlockwithpassword(_:).md).
+If the document is encrypted, a password must be supplied before certain operations are enabled. For more information, see [`unlockWithPassword(_:)`](./unlockwithpassword%28_%29.md).
 
 ## See Also
 
-- [var allowsCopying: Bool](cgpdfdocument/allowscopying.md)
+### Working with an Encrypted PDF Document
+- [var allowsCopying: Bool](./allowscopying.md)
   Returns whether the specified PDF document allows copying.
-- [var allowsPrinting: Bool](cgpdfdocument/allowsprinting.md)
+- [var allowsPrinting: Bool](./allowsprinting.md)
   Returns whether a PDF document allows printing.
-- [var isUnlocked: Bool](cgpdfdocument/isunlocked.md)
+- [var isUnlocked: Bool](./isunlocked.md)
   Returns whether the specified PDF document is currently unlocked.
-- [func unlockWithPassword(UnsafePointer<CChar>) -> Bool](cgpdfdocument/unlockwithpassword(_:).md)
+- [func unlockWithPassword(UnsafePointer<CChar>) -> Bool](./unlockwithpassword%28_%29.md)
   Unlocks an encrypted PDF document when a valid password is supplied.
 
 

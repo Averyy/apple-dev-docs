@@ -1,7 +1,8 @@
 # AVCaptureDevice.AutoFocusRangeRestriction.none
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device attempts to focus on objects at any range.
 
@@ -17,15 +18,20 @@ The device attempts to focus on objects at any range.
 case none
 ```
 
+```c
+AVCaptureAutoFocusRangeRestrictionNone
+```
+
 #### Discussion
 
 This value is the default, and the only value allowed on devices that do not support focus range restriction.
 
 ## See Also
 
-- [AVCaptureDevice.AutoFocusRangeRestriction.near](avcapturedevice/autofocusrangerestriction-swift.enum/near.md)
+### Constants
+- [AVCaptureDevice.AutoFocusRangeRestriction.near](./near.md)
   The device primarily attempts to focus on subjects near the camera.
-- [AVCaptureDevice.AutoFocusRangeRestriction.far](avcapturedevice/autofocusrangerestriction-swift.enum/far.md)
+- [AVCaptureDevice.AutoFocusRangeRestriction.far](./far.md)
   The device primarily attempts to focus on subjects far away from the camera.
 
 

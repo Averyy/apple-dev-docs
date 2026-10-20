@@ -1,7 +1,8 @@
 # y
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The chromaticity y-value.
 
@@ -16,9 +17,14 @@ The chromaticity y-value.
 var y: Float32
 ```
 
+```c
+Float32 y;
+```
+
 ## See Also
 
-- [var x: Float32](srambientlightsample/chromaticity-swift.struct/x.md)
+### Setting chromaticity
+- [var x: Float32](./x.md)
   The chromaticity x-value.
 
 

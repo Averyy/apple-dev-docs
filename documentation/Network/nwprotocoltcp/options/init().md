@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a default set of TCP connection options.
 
@@ -22,21 +23,22 @@ init()
 
 ## See Also
 
-- [var enableFastOpen: Bool](nwprotocoltcp/options/enablefastopen.md)
+### Customizing TCP Options
+- [var enableFastOpen: Bool](./enablefastopen.md)
   A Boolean that enables TCP Fast Open on a connection.
-- [var maximumSegmentSize: Int](nwprotocoltcp/options/maximumsegmentsize.md)
+- [var maximumSegmentSize: Int](./maximumsegmentsize.md)
   TCP’s maximum segment size in bytes.
-- [var noDelay: Bool](nwprotocoltcp/options/nodelay.md)
+- [var noDelay: Bool](./nodelay.md)
   A Boolean that disables Nagle’s algorithm for TCP.
-- [var noOptions: Bool](nwprotocoltcp/options/nooptions.md)
+- [var noOptions: Bool](./nooptions.md)
   A Boolean that sets TCP into no-options mode.
-- [var noPush: Bool](nwprotocoltcp/options/nopush.md)
+- [var noPush: Bool](./nopush.md)
   A Boolean that sets TCP into no-push mode.
-- [var retransmitFinDrop: Bool](nwprotocoltcp/options/retransmitfindrop.md)
+- [var retransmitFinDrop: Bool](./retransmitfindrop.md)
   A Boolean that causes TCP to drop its connection after not receiving an ACK packet after a FIN packet.
-- [var disableAckStretching: Bool](nwprotocoltcp/options/disableackstretching.md)
+- [var disableAckStretching: Bool](./disableackstretching.md)
   A Boolean that disables TCP acknowledgment stretching.
-- [var disableECN: Bool](nwprotocoltcp/options/disableecn.md)
+- [var disableECN: Bool](./disableecn.md)
   A Boolean that disables negotiation of Explicit Congestion Notification markings.
 
 

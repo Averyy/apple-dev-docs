@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Suspends until the input is ready for more media data, then appends the sample buffer.
 
@@ -22,7 +23,7 @@ nonisolated
 
 #### Discussion
 
-> **Note**: An error if the underlying writer failed.
+> **Throws**: An error if the underlying writer failed.
 
 ## Parameters
 
@@ -30,9 +31,10 @@ nonisolated
 
 ## See Also
 
-- [func appendImmediately(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) throws -> Bool](avassetwriterinput/samplebufferreceiver/appendimmediately(_:).md)
+### Appending samples
+- [func appendImmediately(CMReadySampleBuffer<CMSampleBuffer.DynamicContent>) throws -> Bool](./appendimmediately%28_%29.md)
   Appends the sample buffer synchronously if the input is ready for more media data.
-- [func finish()](avassetwriterinput/samplebufferreceiver/finish.md)
+- [func finish()](./finish%28%29.md)
   Indicates to the AVAssetWriter that no more buffers will be appended to this receiver.
 
 

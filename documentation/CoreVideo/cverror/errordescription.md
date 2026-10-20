@@ -1,7 +1,8 @@
 # errorDescription
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Localized messages describing the error.
 

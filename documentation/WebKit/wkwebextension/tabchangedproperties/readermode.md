@@ -1,7 +1,8 @@
 # readerMode
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the reader mode state changed.
 
@@ -16,6 +17,10 @@ Indicates the reader mode state changed.
 
 ```swift
 static var readerMode: WKWebExtension.TabChangedProperties { get }
+```
+
+```c
+WKWebExtensionTabChangedPropertiesReaderMode
 ```
 
 

@@ -1,7 +1,8 @@
 # boundingBoxBuffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A array of motion keyframes, each containing bounding box data.
 
@@ -19,9 +20,14 @@ A array of motion keyframes, each containing bounding box data.
 var boundingBoxBuffers: [MTLMotionKeyframeData] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<MTLMotionKeyframeData *> * boundingBoxBuffers;
+```
+
 ## See Also
 
-- [var boundingBoxStride: Int](mtlaccelerationstructuremotionboundingboxgeometrydescriptor/boundingboxstride.md)
+### Specifying bounding boxes data
+- [var boundingBoxStride: Int](./boundingboxstride.md)
   The stride, in bytes, between bounding boxes in each buffer.
 
 

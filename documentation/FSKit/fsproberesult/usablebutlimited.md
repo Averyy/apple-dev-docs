@@ -1,7 +1,8 @@
 # usableButLimited
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A probe result for a recognized file system that is usable, but with limited capabilities.
 
@@ -14,19 +15,24 @@ A probe result for a recognized file system that is usable, but with limited cap
 class var usableButLimited: FSProbeResult { get }
 ```
 
+```objc
+@property (class, readonly) FSProbeResult * usableButLimitedProbeResult;
+```
+
 #### Discussion
 
-This kind of probe result lacks the [`name`](fsproberesult/name.md), [`containerID`](fsproberesult/containerid.md), or both. Don’t return this result from probing a resource that isn’t limited.
+This kind of probe result lacks the [`name`](./name.md), [`containerID`](./containerid.md), or both. Don’t return this result from probing a resource that isn’t limited.
 
 ## See Also
 
-- [class func recognized(name: String, containerID: FSContainerIdentifier) -> Self](fsproberesult/recognized(name:containerid:).md)
+### Working with results
+- [class func recognized(name: String, containerID: FSContainerIdentifier) -> Self](./recognized%28name,containerid%29.md)
   Creates a probe result for a recognized file system.
-- [class func usable(name: String, containerID: FSContainerIdentifier) -> Self](fsproberesult/usable(name:containerid:).md)
+- [class func usable(name: String, containerID: FSContainerIdentifier) -> Self](./usable%28name,containerid%29.md)
   Creates a probe result for a recognized and usable file system.
-- [class func usableButLimited(name: String, containerID: FSContainerIdentifier) -> Self](fsproberesult/usablebutlimited(name:containerid:).md)
+- [class func usableButLimited(name: String, containerID: FSContainerIdentifier) -> Self](./usablebutlimited%28name,containerid%29.md)
   Creates a probe result for a recognized file system that is usable, but with limited capabilities.
-- [class var notRecognized: FSProbeResult](fsproberesult/notrecognized.md)
+- [class var notRecognized: FSProbeResult](./notrecognized.md)
   A probe result for an unrecognized file system.
 
 

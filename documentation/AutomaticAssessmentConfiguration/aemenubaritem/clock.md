@@ -1,7 +1,8 @@
 # clock
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Clock system menu bar item.
 
@@ -13,6 +14,10 @@ The Clock system menu bar item.
 
 ```swift
 static let clock: AEMenuBarItem
+```
+
+```c
+extern AEMenuBarItem const AEMenuBarItemClock;
 ```
 
 

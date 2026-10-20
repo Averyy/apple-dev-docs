@@ -1,14 +1,17 @@
 # AppEncryptionDeclaration.Relationships.Builds.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
-- App Store Connect API 2.2+
+- App Store Connect API 2.2+ - Deprecated in 2.4
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object AppEncryptionDeclaration.Relationships.Builds.Data
 ```
 
@@ -16,6 +19,8 @@ object AppEncryptionDeclaration.Relationships.Builds.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `builds`
 
 
 ---

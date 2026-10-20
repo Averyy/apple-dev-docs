@@ -1,7 +1,8 @@
 # recordType
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record type to search.
 
@@ -11,7 +12,7 @@ The record type to search.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 - Swift 4.2+
 
@@ -27,9 +28,10 @@ A query’s results include only records of the specified type. The record type 
 
 ## See Also
 
-- [var predicate: NSPredicate](ckquery/predicate.md)
+### Accessing the Query Parameters
+- [var predicate: NSPredicate](./predicate.md)
   The predicate to use for matching records.
-- [var sortDescriptors: [NSSortDescriptor]?](ckquery/sortdescriptors.md)
+- [var sortDescriptors: [NSSortDescriptor]?](./sortdescriptors.md)
   The sort descriptors for organizing the query’s results.
 
 

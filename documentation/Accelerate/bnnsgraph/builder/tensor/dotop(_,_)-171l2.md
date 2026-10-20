@@ -1,7 +1,8 @@
 # .|(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Adds an element-wise logical or operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an element-wise logical or operation to the current graph.
 ```swift
 static func .| (lhs: BNNSGraph.Builder.Tensor<Bool>, rhs: BNNSGraph.Builder.Tensor<Bool>) -> BNNSGraph.Builder.Tensor<Bool>
 ```
+
+Available when `T` is `Bool`.
 
 
 ---

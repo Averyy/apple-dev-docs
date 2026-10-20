@@ -11,9 +11,9 @@ Your application can use these constants when it calls the `AEInteractWithUser(_
 ## Topics
 
 ### Constants
-- [var kAEDefaultTimeout: Int](kaedefaulttimeout.md)
+- [var kAEDefaultTimeout: Int](../kaedefaulttimeout.md)
   The timeout value is determined by the Apple Event Manager. The default timeout value is about one minute.
-- [var kNoTimeOut: Int](knotimeout.md)
+- [var kNoTimeOut: Int](../knotimeout.md)
   Your application is willing to wait indefinitely. Most commonly, you instead provide a timeout value (in ticks) that will provide a reasonable amount of time for the current operation.
 
 

@@ -1,7 +1,8 @@
 # PaymentCardReaderSession.ReadError.noReaderSession
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No reader session available or the session isn’t ready.
 
@@ -18,39 +19,40 @@ case noReaderSession
 
 #### Discussion
 
-The host app must call [`prepare(using:)`](paymentcardreader/prepare(using:).md) to create a reader session.
+The host app must call [`prepare(using:)`](../../paymentcardreader/prepare%28using%29.md) to create a reader session.
 
 ## See Also
 
-- [PaymentCardReaderSession.ReadError.cardReadFailed](paymentcardreadersession/readerror/cardreadfailed.md)
+### Getting the error
+- [PaymentCardReaderSession.ReadError.cardReadFailed](./cardreadfailed.md)
   An error occurred when reading the card.
-- [PaymentCardReaderSession.ReadError.invalidAmount](paymentcardreadersession/readerror/invalidamount.md)
+- [PaymentCardReaderSession.ReadError.invalidAmount](./invalidamount.md)
   The request contained an invalid amount.
-- [PaymentCardReaderSession.ReadError.invalidCurrencyCode](paymentcardreadersession/readerror/invalidcurrencycode.md)
+- [PaymentCardReaderSession.ReadError.invalidCurrencyCode](./invalidcurrencycode.md)
   The request included an invalid currency code.
-- [PaymentCardReaderSession.ReadError.invalidPreferredAID](paymentcardreadersession/readerror/invalidpreferredaid.md)
+- [PaymentCardReaderSession.ReadError.invalidPreferredAID](./invalidpreferredaid.md)
   The preferred AID specified in the transaction request is invalid.
-- [PaymentCardReaderSession.ReadError.invalidVASMerchants(_:)](paymentcardreadersession/readerror/invalidvasmerchants(_:).md)
+- [PaymentCardReaderSession.ReadError.invalidVASMerchants(_:)](./invalidvasmerchants%28_%29.md)
   The specified list of VAS merchants list is invalid.
-- [PaymentCardReaderSession.ReadError.invalidVASRequestParameters(_:)](paymentcardreadersession/readerror/invalidvasrequestparameters(_:).md)
+- [PaymentCardReaderSession.ReadError.invalidVASRequestParameters(_:)](./invalidvasrequestparameters%28_%29.md)
   The specified VAS parameters are invalid.
-- [PaymentCardReaderSession.ReadError.nfcDisabled](paymentcardreadersession/readerror/nfcdisabled.md)
+- [PaymentCardReaderSession.ReadError.nfcDisabled](./nfcdisabled.md)
   NFC is disabled on the device.
-- [PaymentCardReaderSession.ReadError.passcodeDisabled](paymentcardreadersession/readerror/passcodedisabled.md)
+- [PaymentCardReaderSession.ReadError.passcodeDisabled](./passcodedisabled.md)
   Read operations aren’t allowed when the device’s passcode is disabled.
-- [PaymentCardReaderSession.ReadError.paymentCardDeclined](paymentcardreadersession/readerror/paymentcarddeclined.md)
+- [PaymentCardReaderSession.ReadError.paymentCardDeclined](./paymentcarddeclined.md)
   The payment card declined the transaction.
-- [PaymentCardReaderSession.ReadError.paymentReadFailed](paymentcardreadersession/readerror/paymentreadfailed.md)
+- [PaymentCardReaderSession.ReadError.paymentReadFailed](./paymentreadfailed.md)
   An internal failure prevented the read operation.
-- [PaymentCardReaderSession.ReadError.pinCancelled](paymentcardreadersession/readerror/pincancelled.md)
+- [PaymentCardReaderSession.ReadError.pinCancelled](./pincancelled.md)
   The current PIN capture was cancelled, also cancelling any ongoing read operation.
-- [PaymentCardReaderSession.ReadError.pinNotAllowed](paymentcardreadersession/readerror/pinnotallowed.md)
+- [PaymentCardReaderSession.ReadError.pinNotAllowed](./pinnotallowed.md)
   The time window allowed for a PIN capture after a card read has expired or requesting the PIN is simply not supported by your current configuration.
-- [PaymentCardReaderSession.ReadError.pinEntryFailed](paymentcardreadersession/readerror/pinentryfailed.md)
+- [PaymentCardReaderSession.ReadError.pinEntryFailed](./pinentryfailed.md)
   An error occurred when capturing the PIN.
-- [PaymentCardReaderSession.ReadError.pinEntryTimeout](paymentcardreadersession/readerror/pinentrytimeout.md)
+- [PaymentCardReaderSession.ReadError.pinEntryTimeout](./pinentrytimeout.md)
   The current PIN capture was not completed in allowed time.
-- [PaymentCardReaderSession.ReadError.pinTokenInvalid](paymentcardreadersession/readerror/pintokeninvalid.md)
+- [PaymentCardReaderSession.ReadError.pinTokenInvalid](./pintokeninvalid.md)
   An error that indicates an invalid PIN token.
 
 

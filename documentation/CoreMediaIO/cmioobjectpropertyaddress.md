@@ -1,7 +1,8 @@
 # CMIOObjectPropertyAddress
 
 **Framework**: Core Media I/O  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,30 +14,35 @@
 struct CMIOObjectPropertyAddress
 ```
 
+```c
+struct CMIOObjectPropertyAddress;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cmioobjectpropertyaddress/init.md)
-- [init(mSelector: CMIOObjectPropertySelector, mScope: CMIOObjectPropertyScope, mElement: CMIOObjectPropertyElement)](cmioobjectpropertyaddress/init(mselector:mscope:melement:).md)
+- [init()](./cmioobjectpropertyaddress/init%28%29.md)
+- [init(mSelector: CMIOObjectPropertySelector, mScope: CMIOObjectPropertyScope, mElement: CMIOObjectPropertyElement)](./cmioobjectpropertyaddress/init%28mselector,mscope,melement%29.md)
 ### Instance Properties
-- [var mElement: CMIOObjectPropertyElement](cmioobjectpropertyaddress/melement.md)
-- [var mScope: CMIOObjectPropertyScope](cmioobjectpropertyaddress/mscope.md)
-- [var mSelector: CMIOObjectPropertySelector](cmioobjectpropertyaddress/mselector.md)
+- [var mElement: CMIOObjectPropertyElement](./cmioobjectpropertyaddress/melement.md)
+- [var mScope: CMIOObjectPropertyScope](./cmioobjectpropertyaddress/mscope.md)
+- [var mSelector: CMIOObjectPropertySelector](./cmioobjectpropertyaddress/mselector.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct CMIODeviceAVCCommand](cmiodeviceavccommand.md)
-- [struct CMIODeviceRS422Command](cmiodevicers422command.md)
-- [struct CMIODeviceSMPTETimeCallback](cmiodevicesmptetimecallback.md)
-- [struct CMIODeviceStreamConfiguration](cmiodevicestreamconfiguration.md)
-- [struct CMIOStreamDeck](cmiostreamdeck.md)
-- [struct CMIOStreamScheduledOutputNotificationProcAndRefCon](cmiostreamscheduledoutputnotificationprocandrefcon.md)
+### Structures
+- [struct CMIODeviceAVCCommand](./cmiodeviceavccommand.md)
+- [struct CMIODeviceRS422Command](./cmiodevicers422command.md)
+- [struct CMIODeviceSMPTETimeCallback](./cmiodevicesmptetimecallback.md)
+- [struct CMIODeviceStreamConfiguration](./cmiodevicestreamconfiguration.md)
+- [struct CMIOStreamDeck](./cmiostreamdeck.md)
+- [struct CMIOStreamScheduledOutputNotificationProcAndRefCon](./cmiostreamscheduledoutputnotificationprocandrefcon.md)
 
 
 ---

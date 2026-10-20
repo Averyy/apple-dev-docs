@@ -1,7 +1,8 @@
 # rawData
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encrypted, signed, or both encrypted and signed data for the outgoing message.
 
@@ -14,13 +15,18 @@ The encrypted, signed, or both encrypted and signed data for the outgoing messag
 var rawData: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * rawData;
+```
+
 ## See Also
 
-- [init(rawData: Data, isSigned: Bool, isEncrypted: Bool)](meencodedoutgoingmessage/init(rawdata:issigned:isencrypted:).md)
+### Encoding Outgoing Messages
+- [init(rawData: Data, isSigned: Bool, isEncrypted: Bool)](./init%28rawdata,issigned,isencrypted%29.md)
   Creates an object that contains the outgoing message’s encoded data, and indicates if the encoder encrypted or signed the message.
-- [var isEncrypted: Bool](meencodedoutgoingmessage/isencrypted.md)
+- [var isEncrypted: Bool](./isencrypted.md)
   A Boolean value that indicates if the message encoder encrypted the message.
-- [var isSigned: Bool](meencodedoutgoingmessage/issigned.md)
+- [var isSigned: Bool](./issigned.md)
   A Boolean value that indicates if the message encoder signed the message.
 
 

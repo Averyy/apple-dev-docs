@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct esptail {
     ...
 };
@@ -17,8 +17,8 @@ struct esptail {
 ## Topics
 
 ### Instance Properties
-- [esp_nxt](esptail/1426543-esp_nxt.md)
-- [esp_padlen](esptail/1426541-esp_padlen.md)
+- [esp_nxt](./esptail/api-1426543-esp_nxt.md)
+- [esp_padlen](./esptail/api-1426541-esp_padlen.md)
 
 
 ---

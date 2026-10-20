@@ -1,7 +1,8 @@
 # setAction(_:forSegmentAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the action for the segment at the index you specify.
 
@@ -18,20 +19,25 @@ Sets the action for the segment at the index you specify.
 func setAction(_ action: UIAction, forSegmentAt segment: Int)
 ```
 
+```objc
+- (void) setAction:(UIAction *) action forSegmentAtIndex:(NSUInteger) segment;
+```
+
 #### Discussion
 
-Segments prefer images over titles when the action contains both. Selecting a segment invokes the action’s [`UIActionHandler`](uiactionhandler.md), as well as handlers for the [`valueChanged`](uicontrol/event/valuechanged.md) and [`primaryActionTriggered`](uicontrol/event/primaryactiontriggered.md) control events.
+Segments prefer images over titles when the action contains both. Selecting a segment invokes the action’s [`UIActionHandler`](../uiactionhandler.md), as well as handlers for the [`valueChanged`](../uicontrol/event/valuechanged.md) and [`primaryActionTriggered`](../uicontrol/event/primaryactiontriggered.md) control events.
 
-> **Note**:  This method asserts an error if the action’s [`UIAction.Identifier`](uiaction/identifier-swift.struct.md) doesn’t match the action of the existing segment at this index, or isn’t unique within all actions associated with the segmented control.
+> **Note**:  This method asserts an error if the action’s [`UIAction.Identifier`](../uiaction/identifier-swift.struct.md) doesn’t match the action of the existing segment at this index, or isn’t unique within all actions associated with the segmented control.
 
 ## Parameters
 
-- `action`: A [`UIAction`](uiaction.md) object to set on the segment at the index you specify.
+- `action`: A [`UIAction`](../uiaction.md) object to set on the segment at the index you specify.
 - `segment`: An integer index of a segment.
 
 ## See Also
 
-- [func actionForSegment(at: Int) -> UIAction?](uisegmentedcontrol/actionforsegment(at:).md)
+### Managing segment actions
+- [func actionForSegment(at: Int) -> UIAction?](./actionforsegment%28at%29.md)
   Fetches the action of the segment at the index you specify, if one exists.
 
 

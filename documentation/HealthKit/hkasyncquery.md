@@ -1,7 +1,8 @@
 # HKAsyncQuery
 
 **Framework**: HealthKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines an asynchronous method for running queries.
 
@@ -10,7 +11,7 @@ A protocol that defines an asynchronous method for running queries.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,35 +22,36 @@ protocol HKAsyncQuery
 
 ## Mentions
 
-- [Running Queries with Swift Concurrency](running-queries-with-swift-concurrency.md)
+- [Running Queries with Swift Concurrency](./running-queries-with-swift-concurrency.md)
 
 ## Topics
 
 ### Running Queries
-- [associatedtype Output](hkasyncquery/output.md)
-- [func result(for: HKHealthStore) async throws -> Self.Output](hkasyncquery/result(for:).md)
+- [associatedtype Output](./hkasyncquery/output.md)
+- [func result(for: HKHealthStore) async throws -> Self.Output](./hkasyncquery/result%28for%29.md)
   Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
 
 ## Relationships
 
 ### Conforming Types
-- [HKActivitySummaryQueryDescriptor](hkactivitysummaryquerydescriptor.md)
-- [HKAnchoredObjectQueryDescriptor](hkanchoredobjectquerydescriptor.md)
-- [HKSampleQueryDescriptor](hksamplequerydescriptor.md)
-- [HKSourceQueryDescriptor](hksourcequerydescriptor.md)
-- [HKStatisticsCollectionQueryDescriptor](hkstatisticscollectionquerydescriptor.md)
-- [HKStatisticsQueryDescriptor](hkstatisticsquerydescriptor.md)
-- [HKUserAnnotatedMedicationQueryDescriptor](hkuserannotatedmedicationquerydescriptor.md)
-- [HKVerifiableClinicalRecordQueryDescriptor](hkverifiableclinicalrecordquerydescriptor.md)
-- [HKWorkoutEffortRelationshipQueryDescriptor](hkworkouteffortrelationshipquerydescriptor.md)
+- [HKActivitySummaryQueryDescriptor](./hkactivitysummaryquerydescriptor.md)
+- [HKAnchoredObjectQueryDescriptor](./hkanchoredobjectquerydescriptor.md)
+- [HKSampleQueryDescriptor](./hksamplequerydescriptor.md)
+- [HKSourceQueryDescriptor](./hksourcequerydescriptor.md)
+- [HKStatisticsCollectionQueryDescriptor](./hkstatisticscollectionquerydescriptor.md)
+- [HKStatisticsQueryDescriptor](./hkstatisticsquerydescriptor.md)
+- [HKUserAnnotatedMedicationQueryDescriptor](./hkuserannotatedmedicationquerydescriptor.md)
+- [HKVerifiableClinicalRecordQueryDescriptor](./hkverifiableclinicalrecordquerydescriptor.md)
+- [HKWorkoutEffortRelationshipQueryDescriptor](./hkworkouteffortrelationshipquerydescriptor.md)
 
 ## See Also
 
-- [Running Queries with Swift Concurrency](running-queries-with-swift-concurrency.md)
+### Swift concurrency support
+- [Running Queries with Swift Concurrency](./running-queries-with-swift-concurrency.md)
   Use Swift concurrency to manage one-shot and long-running queries.
-- [protocol HKAsyncSequenceQuery](hkasyncsequencequery.md)
+- [protocol HKAsyncSequenceQuery](./hkasyncsequencequery.md)
   A protocol that defines a method for running queries that returns results using an asynchronous sequence.
-- [struct HKSamplePredicate](hksamplepredicate.md)
+- [struct HKSamplePredicate](./hksamplepredicate.md)
   A predicate for queries that return a collection of matching sample objects.
 
 

@@ -1,7 +1,8 @@
 # VTSessionCopyProperty(_:key:allocator:valueOut:)
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves a property on a Video Toolbox session.
 
@@ -19,9 +20,13 @@ Retrieves a property on a Video Toolbox session.
 func VTSessionCopyProperty(_ session: VTSession, key propertyKey: CFString, allocator: CFAllocator?, valueOut propertyValueOut: UnsafeMutableRawPointer?) -> OSStatus
 ```
 
+```c
+extern OSStatus VTSessionCopyProperty(VTSessionRef session, CFStringRef propertyKey, CFAllocatorRef allocator, void *propertyValueOut);
+```
+
 #### Return Value
 
-`noErr` if successful; [`kVTPropertyNotSupportedErr`](kvtpropertynotsupportederr.md) for unrecognized or unsupported properties.
+`noErr` if successful; [`kVTPropertyNotSupportedErr`](./kvtpropertynotsupportederr.md) for unrecognized or unsupported properties.
 
 #### Discussion
 
@@ -32,15 +37,16 @@ func VTSessionCopyProperty(_ session: VTSession, key propertyKey: CFString, allo
 - `session`: A Video Toolbox session object.
 - `propertyKey`: The key for the property to retrieve.
 - `allocator`: An allocator suitable for use when copying property values.
-- `propertyValueOut`: Points to a variable to receive the property value, which must be a CF-registered type – the caller may call [`CFGetTypeID(_:)`](https://developer.apple.com/documentation/corefoundation/cfgettypeid(_:)) on it to identify which specific type. The caller must release the this property value.
+- `propertyValueOut`: Points to a variable to receive the property value, which must be a CF-registered type – the caller may call [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) on it to identify which specific type. The caller must release the this property value.
 
 ## See Also
 
-- [func VTSessionCopySerializableProperties(VTSession, allocator: CFAllocator?, dictionaryOut: UnsafeMutablePointer<CFDictionary?>) -> OSStatus](vtsessioncopyserializableproperties(_:allocator:dictionaryout:).md)
+### Getting Properties
+- [func VTSessionCopySerializableProperties(VTSession, allocator: CFAllocator?, dictionaryOut: UnsafeMutablePointer<CFDictionary?>) -> OSStatus](./vtsessioncopyserializableproperties%28_,allocator,dictionaryout%29.md)
   Retrieves the set of serializable property keys and their current values.
-- [func VTSessionCopySupportedPropertyDictionary(VTSession, supportedPropertyDictionaryOut: UnsafeMutablePointer<CFDictionary?>) -> OSStatus](vtsessioncopysupportedpropertydictionary(_:supportedpropertydictionaryout:).md)
+- [func VTSessionCopySupportedPropertyDictionary(VTSession, supportedPropertyDictionaryOut: UnsafeMutablePointer<CFDictionary?>) -> OSStatus](./vtsessioncopysupportedpropertydictionary%28_,supportedpropertydictionaryout%29.md)
   Retrieves a dictionary enumerating all the supported properties of a video toolbox session.
-- [Supported Property Dictionary Constants](supported-dictionary-constants.md)
+- [Supported Property Dictionary Constants](./supported-dictionary-constants.md)
   Property dictionary key and constant values.
 
 

@@ -1,7 +1,8 @@
 # AVAudioNode
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use for audio generation, processing, or an I/O block.
 
@@ -20,93 +21,98 @@ An object you use for audio generation, processing, or an I/O block.
 class AVAudioNode
 ```
 
+```objc
+@interface AVAudioNode : NSObject
+```
+
 #### Overview
 
-An [`AVAudioEngine`](avaudioengine.md) object contains instances of audio nodes that you attach, and this base class provides common functionality. Instances of this class don’t provide useful functionality until you attach them to an engine.
+An [`AVAudioEngine`](./avaudioengine.md) object contains instances of audio nodes that you attach, and this base class provides common functionality. Instances of this class don’t provide useful functionality until you attach them to an engine.
 
 Nodes have input and output busses that serve as connection points. For example, an effect has one input bus and one output bus, and a mixer has multiple input busses and one output bus.
 
-A bus contains a format the framework expresses in terms of sample rate and channel count. Formats must match exactly when making connections between nodes, excluding [`AVAudioMixerNode`](avaudiomixernode.md) and [`AVAudioOutputNode`](avaudiooutputnode.md).
+A bus contains a format the framework expresses in terms of sample rate and channel count. Formats must match exactly when making connections between nodes, excluding [`AVAudioMixerNode`](./avaudiomixernode.md) and [`AVAudioOutputNode`](./avaudiooutputnode.md).
 
 ## Topics
 
 ### Inspecting input buses
-- [typealias AVAudioNodeBus](avaudionodebus.md)
+- [typealias AVAudioNodeBus](./avaudionodebus.md)
   The index of a bus on an audio node.
-- [func inputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](avaudionode/inputformat(forbus:).md)
+- [func inputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](./avaudionode/inputformat%28forbus%29.md)
   Gets the input format for the bus you specify.
-- [func name(forInputBus: AVAudioNodeBus) -> String?](avaudionode/name(forinputbus:).md)
+- [func name(forInputBus: AVAudioNodeBus) -> String?](./avaudionode/name%28forinputbus%29.md)
   Gets the name of the input bus you specify.
-- [var numberOfInputs: Int](avaudionode/numberofinputs.md)
+- [var numberOfInputs: Int](./avaudionode/numberofinputs.md)
   The number of input busses for the node.
 ### Inspecting output buses
-- [func outputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](avaudionode/outputformat(forbus:).md)
+- [func outputFormat(forBus: AVAudioNodeBus) -> AVAudioFormat](./avaudionode/outputformat%28forbus%29.md)
   Retrieves the output format for the bus you specify.
-- [func name(forOutputBus: AVAudioNodeBus) -> String?](avaudionode/name(foroutputbus:).md)
+- [func name(forOutputBus: AVAudioNodeBus) -> String?](./avaudionode/name%28foroutputbus%29.md)
   Retrieves the name of the output bus you specify.
-- [var numberOfOutputs: Int](avaudionode/numberofoutputs.md)
+- [var numberOfOutputs: Int](./avaudionode/numberofoutputs.md)
   The number of output busses for the node.
 ### Managing audio taps
-- [func installAudioTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, tapProvider: (AVReadOnlyAudioPCMBuffer, AVAudioTime) -> Void) throws](avaudionode/installaudiotap(onbus:buffersize:format:tapprovider:).md)
+- [func installAudioTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, tapProvider: (AVReadOnlyAudioPCMBuffer, AVAudioTime) -> Void) throws](./avaudionode/installaudiotap%28onbus,buffersize,format,tapprovider%29.md)
   Install a tap on a bus using a sendable block
-- [func installTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, block: AVAudioNodeTapBlock)](avaudionode/installtap(onbus:buffersize:format:block:).md)
+- [func installTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, block: AVAudioNodeTapBlock)](./avaudionode/installtap%28onbus,buffersize,format,block%29.md)
   Installs an audio tap on a bus you specify to record, monitor, and observe the output of the node.
-- [func removeTap(onBus: AVAudioNodeBus)](avaudionode/removetap(onbus:).md)
+- [func removeTap(onBus: AVAudioNodeBus)](./avaudionode/removetap%28onbus%29.md)
   Removes an audio tap on a bus you specify.
-- [typealias AVAudioNodeTapBlock](avaudionodetapblock.md)
+- [typealias AVAudioNodeTapBlock](./avaudionodetapblock.md)
   The block that receives copies of the output of an audio node.
 ### Getting the owning engine
-- [var engine: AVAudioEngine?](avaudionode/engine.md)
+- [var engine: AVAudioEngine?](./avaudionode/engine.md)
   The audio engine that manages the node, if any.
 ### Getting the last render time
-- [var lastRenderTime: AVAudioTime?](avaudionode/lastrendertime.md)
+- [var lastRenderTime: AVAudioTime?](./avaudionode/lastrendertime.md)
   The most recent render time.
 ### Getting audio node properties
-- [func withAUAudioUnit<R, E>((borrowing AUAudioUnit) throws(E) -> R) throws(E) -> R](avaudionode/withauaudiounit(_:).md)
+- [func withAUAudioUnit<R, E>((borrowing AUAudioUnit) throws(E) -> R) throws(E) -> R](./avaudionode/withauaudiounit%28_%29.md)
   Provides scoped access to the node’s AUAudioUnit
-- [var auAudioUnit: AUAudioUnit](avaudionode/auaudiounit-1gu8g.md)
+- [var auAudioUnit: AUAudioUnit](./avaudionode/auaudiounit-1gu8g.md)
   An audio unit object that wraps or underlies the implementation’s audio unit.
-- [var latency: TimeInterval](avaudionode/latency.md)
+- [var latency: TimeInterval](./avaudionode/latency.md)
   The processing latency of the node, in seconds.
-- [var outputPresentationLatency: TimeInterval](avaudionode/outputpresentationlatency.md)
+- [var outputPresentationLatency: TimeInterval](./avaudionode/outputpresentationlatency.md)
   The maximum render pipeline latency downstream of the node, in seconds.
 ### Resetting the audio node
-- [func reset()](avaudionode/reset.md)
+- [func reset()](./avaudionode/reset%28%29.md)
   Clears a unit’s previous processing state.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVAudioEnvironmentNode](avaudioenvironmentnode.md)
-- [AVAudioIONode](avaudioionode.md)
-- [AVAudioMixerNode](avaudiomixernode.md)
-- [AVAudioPlayerNode](avaudioplayernode.md)
-- [AVAudioSinkNode](avaudiosinknode.md)
-- [AVAudioSourceNode](avaudiosourcenode.md)
-- [AVAudioUnit](avaudiounit.md)
+- [AVAudioEnvironmentNode](./avaudioenvironmentnode.md)
+- [AVAudioIONode](./avaudioionode.md)
+- [AVAudioMixerNode](./avaudiomixernode.md)
+- [AVAudioPlayerNode](./avaudioplayernode.md)
+- [AVAudioSinkNode](./avaudiosinknode.md)
+- [AVAudioSourceNode](./avaudiosourcenode.md)
+- [AVAudioUnit](./avaudiounit.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Using voice processing](using-voice-processing.md)
+### Engine and nodes
+- [Using voice processing](./using-voice-processing.md)
   Add voice-processing capabilities to your app by using audio engine.
-- [class AVAudioEngine](avaudioengine.md)
+- [class AVAudioEngine](./avaudioengine.md)
   An object that manages a graph of audio nodes, controls playback, and configures real-time rendering constraints.
-- [class AVAudioInputNode](avaudioinputnode.md)
+- [class AVAudioInputNode](./avaudioinputnode.md)
   An object that connects to the system’s audio input.
-- [class AVAudioOutputNode](avaudiooutputnode.md)
+- [class AVAudioOutputNode](./avaudiooutputnode.md)
   An object that connects to the system’s audio output.
-- [class AVAudioIONode](avaudioionode.md)
+- [class AVAudioIONode](./avaudioionode.md)
   An object that performs audio input or output in the engine.
 
 

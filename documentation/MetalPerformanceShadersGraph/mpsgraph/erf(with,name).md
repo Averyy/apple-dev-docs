@@ -1,7 +1,8 @@
 # erf(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the error function to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the error function to the input tensor elements.
 
 ```swift
 func erf(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) erfWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # channelManager(_:failedToJoinChannel:error:)
 
 **Framework**: Push to Talk  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the observer that the app failed to join a Push to Talk channel.
 
@@ -16,9 +17,13 @@ Tells the observer that the app failed to join a Push to Talk channel.
 optional func channelManager(_ channelManager: PTChannelManager, failedToJoinChannel channelUUID: UUID, error: any Error)
 ```
 
+```objc
+- (void) channelManager:(PTChannelManager *) channelManager failedToJoinChannelWithUUID:(NSUUID *) channelUUID error:(NSError *) error;
+```
+
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
 ## Parameters
 
@@ -28,11 +33,12 @@ optional func channelManager(_ channelManager: PTChannelManager, failedToJoinCha
 
 ## See Also
 
-- [func channelManager(PTChannelManager, didJoinChannel: UUID, reason: PTChannelJoinReason)](ptchannelmanagerdelegate/channelmanager(_:didjoinchannel:reason:).md)
+### Joining and leaving a channel
+- [func channelManager(PTChannelManager, didJoinChannel: UUID, reason: PTChannelJoinReason)](./channelmanager%28_,didjoinchannel,reason%29.md)
   Tells the observer that the app successfully joined a Push to Talk channel.
-- [func channelManager(PTChannelManager, didLeaveChannel: UUID, reason: PTChannelLeaveReason)](ptchannelmanagerdelegate/channelmanager(_:didleavechannel:reason:).md)
+- [func channelManager(PTChannelManager, didLeaveChannel: UUID, reason: PTChannelLeaveReason)](./channelmanager%28_,didleavechannel,reason%29.md)
   Tells the observer that the app left a Push to Talk channel.
-- [func channelManager(PTChannelManager, failedToLeaveChannel: UUID, error: any Error)](ptchannelmanagerdelegate/channelmanager(_:failedtoleavechannel:error:).md)
+- [func channelManager(PTChannelManager, failedToLeaveChannel: UUID, error: any Error)](./channelmanager%28_,failedtoleavechannel,error%29.md)
   Tells the observer that the app failed to leave a Push to Talk channel.
 
 

@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique string you choose that identifies the room.
 
@@ -19,11 +20,16 @@ A unique string you choose that identifies the room.
 var identifier: EKVirtualConferenceRoomTypeIdentifier { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) EKVirtualConferenceRoomTypeIdentifier identifier;
+```
+
 ## See Also
 
-- [var title: String](ekvirtualconferenceroomtypedescriptor/title.md)
+### Configuring Room Type Descriptors
+- [var title: String](./title.md)
   The user-visible name of a room where virtual conferences take place, such as Personal Room or Team Room.
-- [typealias EKVirtualConferenceRoomTypeIdentifier](ekvirtualconferenceroomtypeidentifier.md)
+- [typealias EKVirtualConferenceRoomTypeIdentifier](../ekvirtualconferenceroomtypeidentifier.md)
   The type for a room type identifier.
 
 

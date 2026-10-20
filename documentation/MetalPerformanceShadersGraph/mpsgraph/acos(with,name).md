@@ -1,7 +1,8 @@
 # acos(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the inverse cosine operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the inverse cosine operation to the input tensor elements.
 
 ```swift
 func acos(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) acosWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # appleLog
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the Apple Log identifier.
 

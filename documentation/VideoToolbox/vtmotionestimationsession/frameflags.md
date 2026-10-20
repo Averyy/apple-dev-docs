@@ -1,7 +1,8 @@
 # VTMotionEstimationSession.FrameFlags
 
 **Framework**: Video Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -20,22 +21,23 @@ struct FrameFlags
 ## Topics
 
 ### Type Properties
-- [static let currentBufferWillBeNextReferenceBuffer: VTMotionEstimationSession.FrameFlags](vtmotionestimationsession/frameflags/currentbufferwillbenextreferencebuffer.md)
+- [static let currentBufferWillBeNextReferenceBuffer: VTMotionEstimationSession.FrameFlags](./frameflags/currentbufferwillbenextreferencebuffer.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func motion(of: CVReadOnlyPixelBuffer, comparedTo: CVReadOnlyPixelBuffer, flags: VTMotionEstimationSession.FrameFlags) async throws -> VTMotionEstimationSession.Motion](vtmotionestimationsession/motion(of:comparedto:flags:).md)
+### Estimating motion
+- [func motion(of: CVReadOnlyPixelBuffer, comparedTo: CVReadOnlyPixelBuffer, flags: VTMotionEstimationSession.FrameFlags) async throws -> VTMotionEstimationSession.Motion](./motion%28of,comparedto,flags%29.md)
 
 
 ---

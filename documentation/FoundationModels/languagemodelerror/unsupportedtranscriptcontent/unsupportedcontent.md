@@ -1,7 +1,8 @@
 # unsupportedContent
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transcript entries that the model can’t process.
 
@@ -21,9 +22,10 @@ var unsupportedContent: [Transcript.Entry]
 
 ## See Also
 
-- [var metadata: [String : any Sendable]](languagemodelerror/unsupportedtranscriptcontent/metadata.md)
+### Inspecting unsupported transcript content errors
+- [var metadata: [String : any Sendable]](./metadata.md)
   Additional information about the failure, keyed by name.
-- [var debugDescription: String](languagemodelerror/unsupportedtranscriptcontent/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 

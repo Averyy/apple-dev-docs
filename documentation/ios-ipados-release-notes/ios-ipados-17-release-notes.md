@@ -1,12 +1,13 @@
 # iOS & iPadOS 17 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 17. The SDK comes bundled with Xcode 15. For information on the compatibility requirements for Xcode 15, see [`Xcode 15 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-15-release-notes).
+The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 17. The SDK comes bundled with Xcode 15. For information on the compatibility requirements for Xcode 15, see [Xcode 15 Release Notes](../Xcode-Release-Notes/xcode-15-release-notes.md).
 
 ##### General
 
@@ -14,7 +15,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Devices with a large number of installed apps will display an Apple logo with progress bar for an extended period while the file system format is updated. This is a one-time migration when upgrading to iOS 17 beta for the first time.  (109431767)
 
-##### 3d Objects
+##### 3D Objects
 
 ###### Resolved Issues
 
@@ -24,14 +25,20 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### New Features
 
-- Spatial - Introduced trigonometry functions for [`Spatial angle type`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/angle2d#4180998).
-- Introduced spherical linear interpolation for [`Spatial rotations`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/rotation3d/4157007-slerp).
-- Introduced  swing-twist decomposition for [`Spatial rotations`](https://developer.apple.comhttps://developer.apple.com/documentation/spatial/rotation3d#4130747).
-- BNNS - Introduced [`BNNSRandomFillCategoricalFloat`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4126856-bnnsrandomfillcategoricalfloat) that fills a tensor with random values from the categorical distributions with event probabilities.
-- Introduced [`k-nearest neighbors calculation`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/bnns#4164142).
-- vImage - Introduced [`vImageConvolveFloatKernel_ARGB8888`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4172614-vimageconvolvefloatkernel_argb88) that applies convolution to 8-bit-per-channel, 4-channel interleaved images using 32-bit floating-point weights.
-- Introduced [`vImageSepConvolve_ARGB8888`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/4172615-vimagesepconvolve_argb8888) that applies separable convolution to 8-bit-per-channel, 4-channel interleaved images.
-- Added flood fill, perspective transform, and new lookup table transforms to [`vImage.PixelBuffer`](https://developer.apple.comhttps://developer.apple.com/documentation/accelerate/vimage/pixelbuffer).  (105830806)
+- Spatial
+
+  - Introduced trigonometry functions for [Spatial angle type](../Spatial/angle2d.md#4180998).
+  - Introduced spherical linear interpolation for [Spatial rotations](../Spatial/rotation3d/api-4157007-slerp.md).
+  - Introduced  swing-twist decomposition for [Spatial rotations](../Spatial/rotation3d.md#4130747).
+- BNNS
+
+  - Introduced [BNNSRandomFillCategoricalFloat](../Accelerate/api-4126856-bnnsrandomfillcategoricalfloat.md) that fills a tensor with random values from the categorical distributions with event probabilities.
+  - Introduced [k-nearest neighbors calculation](../Accelerate/bnns.md#4164142).
+- vImage
+
+  - Introduced [vImageConvolveFloatKernel_ARGB8888](../Accelerate/api-4172614-vimageconvolvefloatkernel_argb88.md) that applies convolution to 8-bit-per-channel, 4-channel interleaved images using 32-bit floating-point weights.
+  - Introduced [vImageSepConvolve_ARGB8888](../Accelerate/api-4172615-vimagesepconvolve_argb8888.md) that applies separable convolution to 8-bit-per-channel, 4-channel interleaved images.
+  - Added flood fill, perspective transform, and new lookup table transforms to [vImage.PixelBuffer](../Accelerate/vimage/pixelbuffer.md).  (105830806)
 
 ##### Accessibility
 
@@ -40,25 +47,25 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: VoiceOver might not speak predictive text in some text fields.  (108858169)
 - Fixed: After creating a Personal Voice, you might not be able to select this voice to use with Live Speech.  (109580709)
 
-##### Airdrop
+##### AirDrop
 
 ###### Resolved Issues
 
 - Fixed: With any Classroom class set up, the AirDrop browser on teacher and student devices will not show any device.  (111254299)
 - Fixed: On iPad, in Settings > General > AirDrop, a switch is shown labeled “Bringing Devices Together”.  This switch is without function on iPad.  (112292330)
 
-##### Airplay
+##### AirPlay
 
 ###### Resolved Issues
 
 - Fixed: The AirPlay picker list might not populate, except for the current route.  (109610361)
 - Fixed: AirPlay mirroring isn’t currently available on iPad Pro (10.5-inch) or iPad Pro (12.9-inch) (2nd generation). Using iPad as an extended display for a Mac might also be affected.  (109683501)
 
-##### Airpods
+##### AirPods
 
 ###### New Features
 
-- To test new features such as Adaptive Audio, Personalized Volume, and Conversation Awareness, developers need to install AirPods beta firmware. To learn more, see [`Installing Apple Beta Software`](https://developer.apple.comhttps://developer.apple.com/support/install-beta/)  (110183983)
+- To test new features such as Adaptive Audio, Personalized Volume, and Conversation Awareness, developers need to install AirPods beta firmware. To learn more, see [Installing Apple Beta Software](https://developer.apple.com/support/install-beta/)  (110183983)
 - With Personalized Volume, when watching third party media, a volume slider might show up.  (110266313)
 - Conversation Awareness might react to self-made sounds such as humming, throat clearing, and might fail to end automatically when there is ongoing speech nearby.  (110266324)
 - Conversation Boost in Control Center Hearing Module will not turn on the feature.   (110266328)
@@ -116,7 +123,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 - The Credential Provider API for password managers has been expanded to support passkeys. Credential providers can save and offer passkeys for apps and websites across the system.  (83501802) (FB9651656)
 - `ASSettingsHelper` allows password manager apps to directly open the Settings view where the Credential Provider Extension for system-wide Password AutoFill and passkey sign-in can be enabled. `ASSettingsHelper` also allows verification code (TOTP) apps to directly open the Settings view where you can configure which app opens verification code setup links.  (106351958) (FB12039478)
 
-##### Camera and Avfoundation Capture
+##### Camera and AVFoundation Capture
 
 ###### Resolved Issues
 
@@ -129,7 +136,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Car keys shared from Android to iOS/watchOS cannot be added to Wallet app.  (104402733)
 - Fixed: Car keys shared from Android to iOS/watchOS cannot be added to Wallet app  (110800534)
 
-##### Carplay
+##### CarPlay
 
 ###### Resolved Issues
 
@@ -150,7 +157,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: The user cannot disable Center Stage in Control Center for FaceTime when using an Apple Studio Display’s camera. This affects iPads without a front-facing Ultra Wide camera.  (109838002)
 
-##### Check in
+##### Check In
 
 ###### Resolved Issues
 
@@ -175,27 +182,29 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Shared iPad will sit in “Prepared” state when using Declarative Device Management to enforce a software update.  (111934749) **Workaround:** Use legacy MDM commands to update the shared iPad.
+- Shared iPad will sit in “Prepared” state when using Declarative Device Management to enforce a software update.  (111934749)
 
-##### Esim Transfer
+  **Workaround:** Use legacy MDM commands to update the shared iPad.
+
+##### eSIM transfer
 
 ###### Resolved Issues
 
 - Fixed: eSIM transfer using “Transfer From Nearby iPhone” between devices using different iCloud accounts, or devices without an iCloud account might fail.  (109543664)
 
-##### Facetime
+##### FaceTime
 
 ###### Resolved Issues
 
 - Fixed: Black rectangle is shown behind the reaction picker while it is being animated. After animation completes, the picker has black corners.  (113222206)
 
-##### Facetime Handoff
+##### Facetime handoff
 
 ###### Resolved Issues
 
 - Fixed: Facetime handoff to another device might result in call drop or no media.  (110126569)
 
-##### Facetime on Apple Tv
+##### FaceTime on Apple TV
 
 ###### Resolved Issues
 
@@ -231,7 +240,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Default simulator locale is set to `en-001`. Clinical Health Records and Sharing with doctor features are missing in Health App on Simulator.  (109408273)
 
-##### Health Clinical Vitals Category Room
+##### Health Clinical Vitals category room
 
 ###### Resolved Issues
 
@@ -260,13 +269,19 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Users might encounter an issue that results in their Home Widgets showing “No Accessories” even though they are configured properly.  (110424040)
 - Fixed: Accessory with multiple services configured are filtered out and not shown on the Widget.  (110547396)
 
-##### Icloud Backups
+##### iCloud Backups
 
 ###### Known Issues
 
-- The first backup on a post beta 4 build when users have been on beta 4 prior might take a longer time to complete if there are a large number of message attachments.  Both automatic and manual backups might take a longer time to complete and get deferred over days which can lead to users seeing that the device has not been backed up in a while.  (110840177) **Workaround:** Turn off and delete iCloud backups and turn it back on: Settings -> iCloud Backup -> Select the device -> Turn off and delete from iCloud To turn it back on Settings -> iCloud Backup -> Toggle on Backup this phone
+- The first backup on a post beta 4 build when users have been on beta 4 prior might take a longer time to complete if there are a large number of message attachments.  Both automatic and manual backups might take a longer time to complete and get deferred over days which can lead to users seeing that the device has not been backed up in a while.  (110840177)
 
-##### Imageio
+  **Workaround:** Turn off and delete iCloud backups and turn it back on:
+
+  Settings -> iCloud Backup -> Select the device -> Turn off and delete from iCloud
+
+  To turn it back on Settings -> iCloud Backup -> Toggle on Backup this phone
+
+##### ImageIO
 
 ###### Resolved Issues
 
@@ -342,7 +357,9 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- The Catch up affordance might display incorrectly.  (109468262) **Workaround:** Leave and return to the affected conversation.
+- The Catch up affordance might display incorrectly.  (109468262)
+
+  **Workaround:** Leave and return to the affected conversation.
 
 ##### Metal
 
@@ -363,12 +380,12 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 ###### New Features
 
 - iPhone and iPad devices running iOS 17 beta support joining wired 802.1X networks. Apple TV devices running tvOS 17 beta also support joining wired 802.1X networks.  (12867782)
-- `URLSession` supports resumable uploads in HTTP. Just like download tasks, upload tasks can now be paused and resumed if the server supports the latest protocol draft. To learn more, see [`Resumable Uploads for HTTP`](https://developer.apple.comhttps://www.ietf.org/archive/id/draft-ietf-httpbis-resumable-upload-01.txt).  (68890505)
+- `URLSession` supports resumable uploads in HTTP. Just like download tasks, upload tasks can now be paused and resumed if the server supports the latest protocol draft. To learn more, see [Resumable Uploads for HTTP](https://www.ietf.org/archive/id/draft-ietf-httpbis-resumable-upload-01.txt).  (68890505)
 - Apple devices now support connection to 802.1X networks using EAP-TLS with TLS 1.3 (EAP-TLS 1.3). EAP-TLS 1.3 further improves security and privacy by always providing forward secrecy, never disclosing the peer identity, and by mandating use of revocation checking when compared to EAP-TLS with earlier versions of TLS.  (74526852)
 
 ###### Resolved Issues
 
-- Fixed: For apps linked on or after iOS 17 and aligned OS versions, App Transport Security now requires secure connections to external IP addresses by default. For more information on these requirements, see [`Preventing Insecure Network Connections`](https://developer.apple.comhttps://developer.apple.com/documentation/security/preventing_insecure_network_connections). Exceptions can be made using [`NSExceptionDomains`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information_property_list/nsapptransportsecurity/nsexceptiondomains), which now supports exceptions for individual IP addresses and ranges specified in classless inter-domain routing (CIDR) notation.  (101967030)
+- Fixed: For apps linked on or after iOS 17 and aligned OS versions, App Transport Security now requires secure connections to external IP addresses by default. For more information on these requirements, see [Preventing Insecure Network Connections](../Security/preventing_insecure_network_connections.md). Exceptions can be made using [NSExceptionDomains](../BundleResources/information_property_list/nsapptransportsecurity/nsexceptiondomains.md), which now supports exceptions for individual IP addresses and ranges specified in classless inter-domain routing (CIDR) notation.  (101967030)
 - Fixed: For apps linked on or after iOS 17 beta, macOS 14 beta, watchOS 10 beta, and tvOS 17 beta, the `Transfer-Encoding` header field of a streamed `HTTP/1` request is set to `chunked` instead of `Chunked`.  (107390029)
 - Fixed: Apps which use IPv4 traffic via NAT464 on an IPv6-only network, including certain mobile carriers, might not work.  (109750536)
 
@@ -390,7 +407,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Phone app may be badged with an incorrect number of unread voicemails.  (113044765)
 
-##### Phone Software Update
+##### Phone / Software Update
 
 ###### Resolved Issues
 
@@ -406,7 +423,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Applications providing image content via `PHContentEditingOutput.renderedContentURL` in formats other than `UTType.jpeg` will fail with an `.invalidResource` error.  (110068158)
 
-##### Pre Filled Titles for Events and Reminders
+##### Pre-filled Titles for Events and Reminders
 
 ###### New Features
 
@@ -419,11 +436,11 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: When a user clears their Significant Locations history, this change will not be immediately reflected in Photos and it could take up to a week or more for the change to be reflected.  (106171658)
 - Fixed: Time in Daylight is supported on Apple Watch Series 5 and later. However, when using a model of Apple Watch which doesn’t support Time in Daylight, the privacy toggle switch is still displayed even though toggling it has no effect. On Apple Watch, the toggle is located in Settings > Privacy & Security > Health > Time in Daylight. On iPhone, the toggle is located in Watch app > Privacy > Time in Daylight.  (108907052)
 
-##### Proximityreader
+##### ProximityReader
 
 ###### Resolved Issues
 
-- Fixed: Calling the [`prepare(using:)`](https://developer.apple.com/documentation/proximityreader/mobiledocumentreader/prepare(using:)) method on a [`MobileDocumentReader`](https://developer.apple.com/documentation/proximityreader/mobiledocumentreader) instance might fail if the device is set to certain languages and regions.  (110013699)
+- Fixed: Calling the [prepare(using:)](../ProximityReader/mobiledocumentreader/prepare%28using%29.md) method on a [MobileDocumentReader](../ProximityReader/mobiledocumentreader.md) instance might fail if the device is set to certain languages and regions.  (110013699)
 
 ##### Reactions
 
@@ -455,27 +472,27 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: In Settings > General > About, the available storage might be inconsistent with the storage usage reported in Settings > General > [iPhone, iPad] Storage. The storage usage reported in Settings > General > [iPhone, iPad] Storage is accurate.  (109051437)
 
-##### Settings %7c Passcode
+##### Settings | Passcode
 
 ###### Resolved Issues
 
 - Fixed: When changing the device passcode, the “Passcode Options” link does not appear and the passcode cannot be changed from a numeric one to an alphanumeric one.  (110705323)
 
-##### Shareplay
+##### SharePlay
 
 ###### Resolved Issues
 
 - Fixed: Connecting SharePlay in-car sessions by scanning the QR code might not work.  (109275769)
 - Fixed: When user disables the “Discoverable by Nearby Contacts” setting or starts playing something other than Apple Music, it will cause the advertisement to stop and will be unable to resume advertising again for that session.  (111420528)
 
-##### Shazamkit
+##### ShazamKit
 
 ###### Resolved Issues
 
 - Fixed: `SHManagedSession.State` is unavailable.  (109670750)
 - Fixed: `SHLibrary.default.items` is unavailable.  (109670918)
 
-##### Skadnetwork
+##### SKAdNetwork
 
 ###### Resolved Issues
 
@@ -500,7 +517,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: The gesture to open the switcher doesn’t work while using Stage Manager.  (109580340)
 
-##### Standby
+##### StandBy
 
 ###### New Features
 
@@ -521,30 +538,36 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Freeform - On iPad and iPhone emoji with skin tone options cannot be inserted onto the canvas.  (110253100)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- You can use the new [`showManageSubscriptions(in:)`](https://developer.apple.com/documentation/storekit/appstore/3803198-showmanagesubscriptions) API with a subscription group ID to show a user the subscriptions they own within a subscription group, along with the other plan options available in that group.  (87853800)
-- Users have access to the new `Product.SubscriptionInfo.Status.all` sequence to get the status for each of your app’s subscription groups. One can use the new `subscriptionStatus` property on the latest [`Transaction`](https://developer.apple.com﻿https://developer.apple.com/documentation/storekit/transaction) value for a subscription to access the full status information.  (102064614)
+- You can use the new [showManageSubscriptions(in:)](../StoreKit/appstore/api-3803198-showmanagesubscriptions.md) API with a subscription group ID to show a user the subscriptions they own within a subscription group, along with the other plan options available in that group.  (87853800)
+- Users have access to the new `Product.SubscriptionInfo.Status.all` sequence to get the status for each of your app’s subscription groups. One can use the new `subscriptionStatus` property on the latest [Transaction](https://developer.apple.com﻿https://developer.apple.com/documentation/storekit/transaction) value for a subscription to access the full status information.  (102064614)
 - StoreKit 2 now provides a collection of UI components to help merchandise in-app purchases. Use `ProductView`, `StoreView` and `SubscriptionStoreView` to add in-app purchases to an app with just a few lines of code.  (102066107)
 - Users can access in-app purchase product metadata and entitlement information from a SwiftUI view using new view modifier APIs in StoreKit. Declare a view as dependent on a single product or collection of products using `storeProductTask(for:priority:action:)` or `storeProductsTask(for:priority:action:)` respectively. Declare a view as dependent on the current entitlement for a product using `currentEntitlementTask(for:priority:action:)`. Declare a view as dependent on the status of a subscription group with `subscriptionStatusTask(for:priority:action:)`. All of the modifiers will start a task to load the data before the view appears, and provide your action with the state of the task as it progresses and whenever the data changes.  (102397222)
-- User have access to the new `groupLevel` property of [`Product.SubscriptionInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo) to understand the level of service of a subscription plan.  (103885148)
-- Users have access to the new `reason`, and `storefront` properties on [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction) to understand the reason why the transaction was created, and which storefront it is for. The new `renewalDate` property on [`RenewalInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo) to understand if and when a subscription will renew next.  (104246730)
-- Users have access to new `groupDisplayName` property of [`Product.SubscriptionInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo) to get the localized display name of a subscription plan’s group.  (105689964)
-- The [`subscriptionStoreControlBackground(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstorecontrolbackground) view modifier is available when using StoreKit and SwiftUI. Use this modifier to set the background behind controls in [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) instances within a view to a gradient material effect, or any shape style.  (105690554)
-- The [`productViewIconBorder()`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticproductplaceholdericon/4278999-producticonborder) view modifier is available when using StoreKit and SwiftUI. Use this modifier on the icons to provide [`ProductView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview) and [`StoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview) to add a standard border around the icon.  (106649532)
-- You can now customize the button style used for purchase and subscribe buttons in [`ProductView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview), [`StoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview) and [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) instances. Use the [`buttonStyle(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/buttonstyle(_:)-7qx1) view modifier to choose any standard button style, or a custom button style.  (107713282)
-- StoreKit Views`ProductView` and `StoreView` have initializers have initializers that give you access to the promotional icon as a SwiftUI view and the various phases of the loading operation. Use initializers such as [`init(id:icon:placeholderIcon:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/productview/4202217-init), [`init(_:icon:)]`(https://developer.apple.com/documentation/storekit/productview/4202214-init), [`init(ids:icon:placeholderIcon:)](https://developer.apple.com/documentation/storekit/storeview/4203378-init), and [init(products:icon:)``](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview/4203382-init) to provide an icon view for each phase.  (110470147)
-- The following StoreKit types are renamed: • `DefaultProductViewStyle` is renamed to [`AutomaticProductViewStyle`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticproductviewstyle) • `DefaultSubscriptionStoreMarketingContent` is renamed to [`AutomaticSubscriptionStoreMarketingContent`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticsubscriptionstoremarketingcontent) • `DefaultProductPlaceholderIcon` is renamed to [`AutomaticProductPlaceholderIcon`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/automaticproductplaceholdericon)  (111185321)
+- User have access to the new `groupLevel` property of [Product.SubscriptionInfo](../StoreKit/product/subscriptioninfo.md) to understand the level of service of a subscription plan.  (103885148)
+- Users have access to the new `reason`, and `storefront` properties on [Transaction](../StoreKit/transaction.md) to understand the reason why the transaction was created, and which storefront it is for. The new `renewalDate` property on [RenewalInfo](../StoreKit/product/subscriptioninfo/renewalinfo.md) to understand if and when a subscription will renew next.  (104246730)
+- Users have access to new `groupDisplayName` property of [`Product.SubscriptionInfo`](../StoreKit/product/subscriptioninfo.md) to get the localized display name of a subscription plan’s group.  (105689964)
+- The [subscriptionStoreControlBackground(_:)](../StoreKit/subscriptionstorecontrolbackground.md) view modifier is available when using StoreKit and SwiftUI. Use this modifier to set the background behind controls in [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) instances within a view to a gradient material effect, or any shape style.  (105690554)
+- The [productViewIconBorder()](../StoreKit/automaticproductplaceholdericon/api-4278999-producticonborder.md) view modifier is available when using StoreKit and SwiftUI. Use this modifier on the icons to provide [ProductView](../StoreKit/productview.md) and [StoreView](../StoreKit/storeview.md) to add a standard border around the icon.  (106649532)
+- You can now customize the button style used for purchase and subscribe buttons in [`ProductView`](../StoreKit/productview.md), [`StoreView`](../StoreKit/storeview.md) and [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) instances. Use the [buttonStyle(_:)](../SwiftUI/view/buttonstyle%28_%29-7qx1.md) view modifier to choose any standard button style, or a custom button style.  (107713282)
+- StoreKit Views`ProductView` and `StoreView` have initializers have initializers that give you access to the promotional icon as a SwiftUI view and the various phases of the loading operation. Use initializers such as [init(id:icon:placeholderIcon:)](../StoreKit/productview/api-4202217-init.md), [`init(_:icon:)]`(https://developer.apple.com/documentation/storekit/productview/4202214-init), [init(ids:icon:placeholderIcon:)](https://developer.apple.com/documentation/storekit/storeview/4203378-init), and [init(products:icon:)`](../StoreKit/storeview/api-4203382-init.md) to provide an icon view for each phase.  (110470147)
+- The following StoreKit types are renamed:
+
+  • `DefaultProductViewStyle` is renamed to [AutomaticProductViewStyle](../StoreKit/automaticproductviewstyle.md)
+
+  • `DefaultSubscriptionStoreMarketingContent` is renamed to [AutomaticSubscriptionStoreMarketingContent](../StoreKit/automaticsubscriptionstoremarketingcontent.md)
+
+  • `DefaultProductPlaceholderIcon` is renamed to [AutomaticProductPlaceholderIcon](../StoreKit/automaticproductplaceholdericon.md)  (111185321)
 
 ###### Resolved Issues
 
-- Fixed: When testing in the sandbox environment, the `groupDisplayName` property on [`Product.SubscriptionInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo) might return an empty string if the localization in the current storefront is not in an approved state. When using the `SubscriptionStoreView` without providing a marketing content view, the automatic view might show the name of the app instead of the subscription group’s display name.  (107206601)
-- Fixed the loading animation for [`StoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/storeview) instances displaying a single product.  (110414023)
-- Fixed issue where [`loadProduct(withParameters:completionBlock:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/skstoreproductviewcontroller/1620632-loadproduct) was called from a background thread.  (110640574) (FB12323139)
-- Fixed issue where [`StoreView`](https://developer.apple.com﻿﻿https://developer.apple.com/documentation/storekit/storeview) or [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview) content might appear in English, or show a localization key, instead of showing localized text for the App Store storefront.  (110734447)
-- Fixed an issue which can cause unexpected layouts when providing a tall view as custom marketing content for a [`SubscriptionStoreView`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/subscriptionstoreview).  (112862984) (FB12748731)
+- Fixed: When testing in the sandbox environment, the `groupDisplayName` property on [`Product.SubscriptionInfo`](../StoreKit/product/subscriptioninfo.md) might return an empty string if the localization in the current storefront is not in an approved state. When using the `SubscriptionStoreView` without providing a marketing content view, the automatic view might show the name of the app instead of the subscription group’s display name.  (107206601)
+- Fixed the loading animation for [`StoreView`](../StoreKit/storeview.md) instances displaying a single product.  (110414023)
+- Fixed issue where [loadProduct(withParameters:completionBlock:)](../StoreKit/skstoreproductviewcontroller/api-1620632-loadproduct.md) was called from a background thread.  (110640574) (FB12323139)
+- Fixed issue where [StoreView](https://developer.apple.com﻿﻿https://developer.apple.com/documentation/storekit/storeview) or [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) content might appear in English, or show a localization key, instead of showing localized text for the App Store storefront.  (110734447)
+- Fixed an issue which can cause unexpected layouts when providing a tall view as custom marketing content for a [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md).  (112862984) (FB12748731)
 
 ##### Swift
 
@@ -560,20 +583,24 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 - Use `chartXSelection`, `chartYSelection` and `chartAngleSelection` to enable selection on a chart. If needed, use `chartGesture` to override the default gesture for selection.  (79083764)
 - Swift Charts now supports creating pie charts and donut charts using the new `SectorMark` API.  (102309263)
 - Pass an `AnnotationOverflowResolution` to the `annotation` modifier to specify how to align an annotation when it would otherwise overflow the bounds of the chart or the plot.  (106009062)
-- Use `ChartProxy.plotContainerFrame` to obtain the visible portion of the plot in a scrollable chart. ```swift
- Chart { ... }
- .chartScrollableAxes(.horizontal)
- .chartOverlay { proxy in
-     GeometryReader { geometry in
-         if let plotContainerFrame = proxy.plotContainerFrame {
-             let frame = geometry[plotContainerFrame]
-             Path(frame)
-                 .stroke(.black, lineWidth: 1)
-                 .allowsHitTesting(false)
-         }
-     }
- }
-``` (109675790)
+- Use `ChartProxy.plotContainerFrame` to obtain the visible portion of the plot in a scrollable chart.
+
+  ```swift
+   Chart { ... }
+   .chartScrollableAxes(.horizontal)
+   .chartOverlay { proxy in
+       GeometryReader { geometry in
+           if let plotContainerFrame = proxy.plotContainerFrame {
+               let frame = geometry[plotContainerFrame]
+               Path(frame)
+                   .stroke(.black, lineWidth: 1)
+                   .allowsHitTesting(false)
+           }
+       }
+   }
+  ```
+
+  (109675790)
 
 ###### Resolved Issues
 
@@ -591,17 +618,27 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Annotations on a scrollable chart might be clipped.  (109164195)
 
-##### Swiftdata
+##### SwiftData
 
 ###### New Features
 
-- Existing `@Query` property declarations might not always correctly infer the model type for predicate and sort descriptor parameters. (Note: the `@Query` attribute is now resolved as a macro, instead of as a property wrapper.) For example, specifying a filter predicate as a parameter to the `@Query` attribute will now require explicitly providing the model type used in the predicate, i.e. `#Predicate<ModelType> { … }` instead of `#Predicate { … }`: ```swift
- @Query(filter: #Predicate<Person> { ... }) var people: [Person]
-``` Another example: passing a sort descriptor or key path will now require explicitly providing the model type used for the root type of the key path, i.e. `\ModelType.property` instead of `\.property`: ```swift
- @Query(sort: [SortDescriptor(\Person.name)]) var people: [Person]
- 
- @Query(sort: \Person.name) var people: [Person]
-``` In all cases, the model type used in the `filter:` and `sort:` parameters is still required to be the same type used as the element in the query’s wrapped array type, and will emit a build error if not.  (109433172)
+- Existing `@Query` property declarations might not always correctly infer the model type for predicate and sort descriptor parameters. (Note: the `@Query` attribute is now resolved as a macro, instead of as a property wrapper.)
+
+  For example, specifying a filter predicate as a parameter to the `@Query` attribute will now require explicitly providing the model type used in the predicate, i.e. `#Predicate<ModelType> { … }` instead of `#Predicate { … }`:
+
+  ```swift
+   @Query(filter: #Predicate<Person> { ... }) var people: [Person]
+  ```
+
+  Another example: passing a sort descriptor or key path will now require explicitly providing the model type used for the root type of the key path, i.e. `\ModelType.property` instead of `\.property`:
+
+  ```swift
+   @Query(sort: [SortDescriptor(\Person.name)]) var people: [Person]
+   
+   @Query(sort: \Person.name) var people: [Person]
+  ```
+
+  In all cases, the model type used in the `filter:` and `sort:` parameters is still required to be the same type used as the element in the query’s wrapped array type, and will emit a build error if not.  (109433172)
 
 ###### Resolved Issues
 
@@ -627,9 +664,11 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139) **Workaround:** Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
+- SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139)
 
-##### Swiftui
+  **Workaround:** Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
+
+##### SwiftUI
 
 ###### New Features
 
@@ -638,7 +677,11 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 - Spring animations will now default to being critically damped (i.e. a bounce of 0).  (75149732)
 - Scenes in Catalyst now support the `windowResizability` modifier.  (84203422)
 - Added support for `dialogSeverity` in Catalyst applications.  (95918809)
-- Use the `springLoadingBehavior(_:)` view modifier to control spring loading behavior of views. Some views, like `TabView`, default to allowing spring loading, while others, like `Button`, do not. Spring loading refers to a view being activated during a drag and drop interaction. On iOS this can occur when pausing briefly on top of a view with dragged content. On macOS this can occur with similar brief pauses or on pressure-sensitive systems by “force clicking” during the drag.  (96569875) (FB10572945)
+- Use the `springLoadingBehavior(_:)` view modifier to control spring loading behavior of views.
+
+  Some views, like `TabView`, default to allowing spring loading, while others, like `Button`, do not.
+
+  Spring loading refers to a view being activated during a drag and drop interaction. On iOS this can occur when pausing briefly on top of a view with dragged content. On macOS this can occur with similar brief pauses or on pressure-sensitive systems by “force clicking” during the drag.  (96569875) (FB10572945)
 - `List`s using the `SidebarListStyle` hosted in primary column of a UIKit `UISplitNavigationController` were previously rendering with an `insetGrouped` appearance.  With this change they will render as the expected `sidebar` appearance similar to if the `List` were hosted in a SwiftUI `NavigationSplitView`.  (96909195)
 - Previously all `Section`s inside `List`s using the `SidebarListStyle` received outline disclosure indicators at the top of every `Section` even when a developer did not provide a header for the section. This lead to odd looking floating disclosure indicators.  (98001084)
 - Use the `buttonRepeatBehavior(_:)` view modifier to make buttons repeatedly trigger their actions on prolonged interactions.  Apply this to buttons that increment or decrement a value or perform some other inherently iterative operation. Interactions such as pressing-and-holding on the button, holding the button’s keyboard shortcut, and holding down the space key while the button is focused trigger this repeat behavior.  (102156410)
@@ -646,7 +689,9 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 - During gesture change callbacks, velocity will automatically be tracked so that it can be applied to animations that finish when the gesture finishes.  (103371523)
 - When two Text are vertically adjacent (for example in a VStack with no spacer in between) SwiftUI will automatically calculate appropriate spacing. To opt-out if this behavior either place a Spacer or specify spacing parameter to the container view.  (104782785)
 - For apps built using the macOS 14 SDK, using `DismissAction` to close a window will default to using `DismissBehavior.interactive`.  (105406945)
-- A `NavigationSplitView` collapses into a single column in some situations, such as on iPhone, Apple Watch, or iPad in slide-over. When this happens the columns of the split view are arranged into a stack. By default, the split view automatically decides which column appears as the top of this stack based on the contents of the columns. It considers whether any embedded `List` views have selections and whether any embedded `NavigationStack` views have non-empty paths. `NavigationSplitView` provides new initializers that give users control over which column of the split view appears on top. Use initializers like `NavigationSplitView(preferredTopColumn:sidebar:content:detail:)` or `NavigationSplitView(preferredTopColumn:sidebar:detail:)` and provide a binding specifying the column that should be visible when the split view is collapsed into a stack. When using an app pops the stack, SwiftUI updates the binding.  (106241051)
+- A `NavigationSplitView` collapses into a single column in some situations, such as on iPhone, Apple Watch, or iPad in slide-over. When this happens the columns of the split view are arranged into a stack. By default, the split view automatically decides which column appears as the top of this stack based on the contents of the columns. It considers whether any embedded `List` views have selections and whether any embedded `NavigationStack` views have non-empty paths.
+
+  `NavigationSplitView` provides new initializers that give users control over which column of the split view appears on top. Use initializers like `NavigationSplitView(preferredTopColumn:sidebar:content:detail:)` or `NavigationSplitView(preferredTopColumn:sidebar:detail:)` and provide a binding specifying the column that should be visible when the split view is collapsed into a stack. When using an app pops the stack, SwiftUI updates the binding.  (106241051)
 - When using `@Environment(\.self)` to capture an entire `EnvironmentValues`, SwiftUI will now track which properties are accessed to only invalidate the property when those properties change.  (106310433)
 - Use the new `navigationDestination(item:destination:)` overload to present a navigation destination when a bound item is non-`nil`, or to dismiss the destination when the bound item becomes `nil` again.  (106319528)
 - Shapes now default to mirroring when in a right to left layout direction.   (107405880)
@@ -665,21 +710,29 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Scroll environment properties like isScrollEnabled and scrollDismissesKeyboardMode are no longer propagated past nested scroll views.  (99195890)
 - Fixed: Gestures could be misaligned if an app was backgrounded while a sheet was presented.  (99202394)
 - Fixed: Previously it was possible for views animating their removal via a transition to be drawn above a view with the same zIndex that has not yet been removed. This was unintentional and has now been updated: views transitioning out of the view hierarchy are always drawn below non-removed views with the same zIndex.  (101085960)
-- Fixed: Table row identifiers in `ForEach` are now derived from their `ForEach` identifier rather than the `TableRow` identifier within the `ForEach`. In this example, from within a `Table`: ```None
- ForEach(myData) { data in
-     TableRow(data.someFieldAlsoOfTypeData)
- }
-``` the resulting identifiers used by SwiftUI are now `data.id` rather than `data.someFieldAlsoOfTypeData.id`. If user needs to restore prior behavior, specify the ID explicitly using the `id` of the `ForEach`.  (101174261)
+- Fixed: Table row identifiers in `ForEach` are now derived from their `ForEach` identifier rather than the `TableRow` identifier within the `ForEach`. In this example, from within a `Table`:
+
+  ```
+   ForEach(myData) { data in
+       TableRow(data.someFieldAlsoOfTypeData)
+   }
+  ```
+
+  the resulting identifiers used by SwiftUI are now `data.id` rather than `data.someFieldAlsoOfTypeData.id`. If user needs to restore prior behavior, specify the ID explicitly using the `id` of the `ForEach`.  (101174261)
 - Fixed: Buttons in toolbars on iOS have improved metrics but support fewer customizations.  (102198062)
 - Fixed: LazyVGrid or LazyHGrid has an improved layout when used with fixedSize().  (103075945)
 - Fixed: A visual artifact around sheets when rotating iPhone.  (106020927)
-- Fixed: The new `.navigationDestination(item:content:)` modifier now works correctly both inside a `NavigationStack` and outside a stack but inside a column of a `NavigationSplitView`. Inside a stack, setting the bound item to a non-nil value will push a view onto the stack immediate above the view containing the modifier. Setting the bound item to a nil value will pop the view. Outside a stack but inside a column of a `NavigationSplitView`, setting the bound item to a non-nil value will replace the root view of the subsequent column. Setting the bound item to a nil value will restore the original root view.  (106106406)
+- Fixed: The new `.navigationDestination(item:content:)` modifier now works correctly both inside a `NavigationStack` and outside a stack but inside a column of a `NavigationSplitView`.
+
+  Inside a stack, setting the bound item to a non-nil value will push a view onto the stack immediate above the view containing the modifier. Setting the bound item to a nil value will pop the view.
+
+  Outside a stack but inside a column of a `NavigationSplitView`, setting the bound item to a non-nil value will replace the root view of the subsequent column. Setting the bound item to a nil value will restore the original root view.  (106106406)
 - Fixed: In some circumstances, the first view pushed onto a `NavigationStack` or collapsed `NavigationSplitView` might fail to animate.  (106602046)
 - Fixed: When a flexible frame modifier (e.g. frame(minHeight: 100, maxHeight: 200)) is used inside a scroll view the modified view could end up truncating content. This would most often be visible with the content view being a VStack with multiline text.  (107014454)
 - Fixed: When scrolling to the end of a scroll view using ScrollViewReader, the final offset will be clamped to the scroll view’s total content size and no longer overscroll.  (107558652) (FB12094127)
 - Fixed: Removed a spurious warning, “NavigationLink presenting a value must appear inside a NavigationContent-based NavigationView. Link will be disabled.”  (107877668) (FB12111423)
 - Fixed: Views in Lists and Lazy Stacks might be improperly displayed after scrolling.  (108021411)
-- Fixed: The [`help(_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view/help(_:)-9lm7l) modifier now displays tooltips in apps built with Mac Catalyst and iOS apps on Mac.  (108063751)
+- Fixed: The [help(_:)](../SwiftUI/view/help%28_%29-9lm7l.md) modifier now displays tooltips in apps built with Mac Catalyst and iOS apps on Mac.  (108063751)
 - Fixed: Suggested search tokens will be hidden by default when the search text is not empty  (108381393)
 - Fixed: ScrollView when used with the searchable modifier has an improved transition when presenting or dismissing search on iOS and iPadOS.  (109265624)
 - Fixed: Two `NavigationSplitView` initializers taking `columnVisibility` as a value rather than a `Binding`.  (109426553)
@@ -689,45 +742,59 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- `View.defaultFocus(_:_:)` isn’t reliable with text controls.  (109750983) **Workaround:** Manually update focus state bindings from an action passed to `View.onAppear(perform:)`.
-- The `.presentationBackground(_:)` modifier does not work on `.inspector` (FB12326152).  (110656975) (FB12326152)
-- Using the `@Environment(\.dismiss)` callable from within an inspector presentation does not dismiss the inspector. This is a bug.  (111643518) (FB12501848) **Workaround:** Use the `Binding` provided to the inspector initializer to dismiss and present the inspector.
-- Using a `NavigationStack` within an `.inspector` within a `NavigationSplitView` can interfere with the split view’s navigation. (FB12567417)  (112018368) (FB12567417) **Workaround:** Either move the inspector modifier *outside* of the `NavigationSplitView`, or remove the `NavigationStack` from the inspector. If the goal is to have a navigation title in the inspector, placing the inspector outside of the split view is recommended to avoid nested navigation bars. If the goal is to have a navigation title in the inspector strictly inside a `NavigationSplitView`, consider using the `.safeAreaInset(edge: .top) { ... }` modifier to add a title compatible with scrollable content. Note that the `.navigationTitle(_:)` modifier will add a navigation title in any inspector construction *when the inspector presents as a sheet*.
-- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860) **Workaround:** There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
+- `View.defaultFocus(_:_:)` isn’t reliable with text controls.  (109750983)
 
-##### Swiftui Outline
+  **Workaround:** Manually update focus state bindings from an action passed to `View.onAppear(perform:)`.
+- The `.presentationBackground(_:)` modifier does not work on `.inspector` (FB12326152).  (110656975) (FB12326152)
+- Using the `@Environment(\.dismiss)` callable from within an inspector presentation does not dismiss the inspector. This is a bug.  (111643518) (FB12501848)
+
+  **Workaround:** Use the `Binding` provided to the inspector initializer to dismiss and present the inspector.
+- Using a `NavigationStack` within an `.inspector` within a `NavigationSplitView` can interfere with the split view’s navigation. (FB12567417)  (112018368) (FB12567417)
+
+  **Workaround:** Either move the inspector modifier *outside* of the `NavigationSplitView`, or remove the `NavigationStack` from the inspector. If the goal is to have a navigation title in the inspector, placing the inspector outside of the split view is recommended to avoid nested navigation bars. If the goal is to have a navigation title in the inspector strictly inside a `NavigationSplitView`, consider using the `.safeAreaInset(edge: .top) { ... }` modifier to add a title compatible with scrollable content. Note that the `.navigationTitle(_:)` modifier will add a navigation title in any inspector construction *when the inspector presents as a sheet*.
+- On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860)
+
+  **Workaround:** There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
+
+##### SwiftUI Outline
 
 ###### Resolved Issues
 
-- Fixed: Leaf views in `OutlineGroup`s (those views where the `children` keyPath argument has a value of `nil`) are no longer wrapped in implicit `HStack`s. If relying on an implicit `HStack` before, users will now see multiple rows when linking against the new SDK. In this example: ```swift
- private struct Node: Identifiable {
-     let id = UUID()
-     let name: String
-     let children: [Node]?
- }
- 
- fileprivate let data = [
-     Node(name: "One", children: [.init(name: "Two", children: nil)]),
-     Node(name: "A", children: [
-         .init(name: "B", children: nil),
-         .init(name: "C", children: nil),
-         .init(name: "D", children: nil),
-     ])
- ]
- 
- struct OutlineExample: View {
-     var body: some View {
-         List(data) { node in
-             DisclosureGroup("Node \(node.name)", isExpanded: .constant(true)) {
-                 OutlineGroup(node, children: \.children) { child in
-                     Label("Row:", systemImage: "circle.hexagonpath.fill")
-                     Text("Node \(child.name)")
-                 }
-             }
-         }
-     }
- }
-``` (104751549)
+- Fixed: Leaf views in `OutlineGroup`s (those views where the `children` keyPath argument has a value of `nil`) are no longer wrapped in implicit `HStack`s. If relying on an implicit `HStack` before, users will now see multiple rows when linking against the new SDK.
+
+  In this example:
+
+  ```swift
+   private struct Node: Identifiable {
+       let id = UUID()
+       let name: String
+       let children: [Node]?
+   }
+   
+   fileprivate let data = [
+       Node(name: "One", children: [.init(name: "Two", children: nil)]),
+       Node(name: "A", children: [
+           .init(name: "B", children: nil),
+           .init(name: "C", children: nil),
+           .init(name: "D", children: nil),
+       ])
+   ]
+   
+   struct OutlineExample: View {
+       var body: some View {
+           List(data) { node in
+               DisclosureGroup("Node \(node.name)", isExpanded: .constant(true)) {
+                   OutlineGroup(node, children: \.children) { child in
+                       Label("Row:", systemImage: "circle.hexagonpath.fill")
+                       Text("Node \(child.name)")
+                   }
+               }
+           }
+       }
+   }
+  ```
+
+  (104751549)
 
 ##### Symbol Effects
 
@@ -735,17 +802,19 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: In the objective-C API in Symbols.framework, requesting `effectWithWholeSymbol` on `NSSymbolPulseEffect` and `NSSymbolBounceEffect` will result in the effect being configured to animate by layer instead.  (109284710)
 
-##### Turn By Turn Navigation
+##### Turn-by-turn Navigation
 
 ###### Resolved Issues
 
 - Fixed: In some cases, users in China may hear an incorrect distance spoken for an instruction whilst navigating.  (113131913)
 
-##### Uikit
+##### UIKit
 
 ###### New Features
 
-- When you build your app against iOS 17.0, iPadOS 17.0, or macOS 14.0 SDKs, the evaluted indirect input event support mode will change. Apps built on these SDKs without the `UIApplicationSupportsIndirectInputEvents` key will have indirect input event support enabled. Apps built on these SDKs with the `UIApplicationSupportsIndirectInputEvents` will have that key honored. If indirect input event support is not desired when built against the listed SDKs, add `UIApplicationSupportsIndirectInputEvents` to your info.plist with a boolean value of `NO`.  (68295914)
+- When you build your app against iOS 17.0, iPadOS 17.0, or macOS 14.0 SDKs, the evaluted indirect input event support mode will change. Apps built on these SDKs without the `UIApplicationSupportsIndirectInputEvents` key will have indirect input event support enabled. Apps built on these SDKs with the `UIApplicationSupportsIndirectInputEvents` will have that key honored.
+
+  If indirect input event support is not desired when built against the listed SDKs, add `UIApplicationSupportsIndirectInputEvents` to your info.plist with a boolean value of `NO`.  (68295914)
 - `UIDevice.batteryLevel` is rounded to the closest multiple of 0.05.  (107718393)
 - The query rects passed in to `-layoutAttributesForElementsInRect:` will be more specific to the collection view’s frame, and the rect might intersect with previously queried frames. If subclassing a UIKit vended layout and modifying the frames of elements by applying offsets, make sure that the same offset is applied to the rect passed in to `-layoutAttributesForElementsInRect:` as well, or the user might see items disappearing when they shouldn’t be.  (108663389)
 
@@ -754,7 +823,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: The new `UIHoverStyle` API doesn’t currently add any visible hover effects when set on a `UIView`.  (108409077)
 - Fixed: Prior to iOS 17 and tvOS 17, `UIGestureRecognizer` would set its `state` to `UIGestureRecognizerStateFailed` in the base implementation of `- (void)pressesBegan:withEvent:` if there are no active touches. In iOS 17 and tvOS 17, this behavior has been fixed. On tvOS, `UIGestureRecognizer` allows `UIPressTypeSelect` by default, thus custom `UIGestureRecognizer`s that do not set `allowedPressTypes` might have been relying on this behavior to put themselves into a terminal state after they receive a `UIPress` of type `UIPressTypeSelect`. `UIGestureRecognizer`s that receive events but do not reach a terminal state will block gesture recognizer dependency graphs from resetting, which can cause an app’s interface to become unresponsive. It is important to for custom `UIGestureRecognizer`s on tvOS 17 to either either set `allowedPressTypes` to an empty array if they do not handle `UIPressTypeSelect`, or to implement the `UIPressesEvent` response methods in `UIGestureRecognizerSubclass.h`, and set themselves to a terminal state as appropriate.  (111175673)
 
-##### Uikit Documents
+##### UIKit Documents
 
 ###### Resolved Issues
 
@@ -773,7 +842,7 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: The Video Effects menu bar item might not appear for certain applications.  (110038665)
 
-##### Videotoolbox
+##### VideoToolbox
 
 ###### Resolved Issues
 
@@ -797,10 +866,12 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Resolved Issues
 
-- Fixed: The user will be unable to: - withdraw or transfer money to Apple Savings account.
-- apply for Pay Later via wallet
-- transfer partial balances out of Apple Cash
-- add money to transit passes  (110667374)
+- Fixed: The user will be unable to:
+
+  - withdraw or transfer money to Apple Savings account.
+  - apply for Pay Later via wallet
+  - transfer partial balances out of Apple Cash
+  - add money to transit passes  (110667374)
 
 ##### Wallpaper
 
@@ -819,20 +890,20 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Placeholders are displayed in locations where Weather averages data isn’t available.  (110133240)
 
-##### Webkit
+##### WebKit
 
 ###### Known Issues
 
 - External camera previews appear rotated 90 degrees.  (105520083)
 
-##### Wi Fi
+##### Wi-Fi
 
 ###### Resolved Issues
 
 - Fixed: Wi-Fi might not connect automatically to known networks after updating to iOS 17 beta if the device isn’t passcode-protected and isn’t signed into iCloud.  (109813416)
 - Fixed: While a Mac has active traffic via Wi-Fi, you might experience difficulty discovering and connecting to Continuity Camera.  (109954955)
 
-##### Widgetkit
+##### WidgetKit
 
 ###### Resolved Issues
 
@@ -850,9 +921,11 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Manually configured widgets might lose their configuration.  (108616752) **Workaround:** Reconfigure the affected widgets.
+- Manually configured widgets might lose their configuration.  (108616752)
 
-##### Wifi
+  **Workaround:** Reconfigure the affected widgets.
+
+##### WiFi
 
 ###### Resolved Issues
 
@@ -860,17 +933,18 @@ The iOS & iPadOS 17 SDK provides support to develop apps for iPhone and iPad run
 
 ## See Also
 
-- [iOS & iPadOS 17.6 Release Notes](ios-ipados-17_6-release-notes.md)
+### iOS & iPadOS 17
+- [iOS & iPadOS 17.6 Release Notes](./ios-ipados-17_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 17.5 Release Notes](ios-ipados-17_5-release-notes.md)
+- [iOS & iPadOS 17.5 Release Notes](./ios-ipados-17_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 17.4 Release Notes](ios-ipados-17_4-release-notes.md)
+- [iOS & iPadOS 17.4 Release Notes](./ios-ipados-17_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 17.3 Release Notes](ios-ipados-17_3-release-notes.md)
+- [iOS & iPadOS 17.3 Release Notes](./ios-ipados-17_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 17.2 Release Notes](ios-ipados-17_2-release-notes.md)
+- [iOS & iPadOS 17.2 Release Notes](./ios-ipados-17_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 17.1 Release Notes](ios-ipados-17_1-release-notes.md)
+- [iOS & iPadOS 17.1 Release Notes](./ios-ipados-17_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

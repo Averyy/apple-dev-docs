@@ -1,7 +1,8 @@
 # maxControlsCount
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of controls a capture session supports.
 
@@ -18,29 +19,34 @@ The maximum number of controls a capture session supports.
 var maxControlsCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger maxControlsCount;
+```
+
 ## Mentions
 
-- [Enhancing your app experience with the Camera Control](enhancing-your-app-experience-with-the-camera-control.md)
+- [Enhancing your app experience with the Camera Control](../enhancing-your-app-experience-with-the-camera-control.md)
 
 ## See Also
 
-- [var supportsControls: Bool](avcapturesession/supportscontrols.md)
+### Configuring capture controls
+- [var supportsControls: Bool](./supportscontrols.md)
   A Boolean value that indicates whether a capture session supports controls.
-- [var controls: [AVCaptureControl]](avcapturesession/controls.md)
+- [var controls: [AVCaptureControl]](./controls.md)
   The controls that allow configuring the camera system from device hardware.
-- [func canAddControl(AVCaptureControl) -> Bool](avcapturesession/canaddcontrol(_:).md)
+- [func canAddControl(AVCaptureControl) -> Bool](./canaddcontrol%28_%29.md)
   Returns a Boolean value that indicates whether a capture session add the specified control.
-- [func addControl(AVCaptureControl)](avcapturesession/addcontrol(_:).md)
+- [func addControl(AVCaptureControl)](./addcontrol%28_%29.md)
   Adds a control to a capture session.
-- [func removeControl(AVCaptureControl)](avcapturesession/removecontrol(_:).md)
+- [func removeControl(AVCaptureControl)](./removecontrol%28_%29.md)
   Removes a control from a capture session.
-- [func setControlsDelegate((any AVCaptureSessionControlsDelegate)?, queue: dispatch_queue_t?)](avcapturesession/setcontrolsdelegate(_:queue:).md)
+- [func setControlsDelegate((any AVCaptureSessionControlsDelegate)?, queue: dispatch_queue_t?)](./setcontrolsdelegate%28_,queue%29.md)
   Sets a delegate object for the system to call when it activates and presents controls.
-- [protocol AVCaptureSessionControlsDelegate](avcapturesessioncontrolsdelegate.md)
+- [protocol AVCaptureSessionControlsDelegate](../avcapturesessioncontrolsdelegate.md)
   A protocol that defines the interface to respond to capture control activation and presentation events.
-- [var controlsDelegate: (any AVCaptureSessionControlsDelegate)?](avcapturesession/controlsdelegate.md)
+- [var controlsDelegate: (any AVCaptureSessionControlsDelegate)?](./controlsdelegate.md)
   A delegate object that observes changes to the state of capture controls.
-- [var controlsDelegateCallbackQueue: dispatch_queue_t?](avcapturesession/controlsdelegatecallbackqueue.md)
+- [var controlsDelegateCallbackQueue: dispatch_queue_t?](./controlsdelegatecallbackqueue.md)
   The dispatch queue on which the system calls controls delegate methods.
 
 

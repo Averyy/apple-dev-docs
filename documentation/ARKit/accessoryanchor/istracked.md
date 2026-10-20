@@ -1,7 +1,8 @@
 # isTracked
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this anchor is currently tracked or not.
 

@@ -1,7 +1,8 @@
 # init(playerLayer:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a content source with a player layer.
 
@@ -19,15 +20,20 @@ Creates a content source with a player layer.
 init(playerLayer: AVPlayerLayer)
 ```
 
+```objc
+- (instancetype) initWithPlayerLayer:(AVPlayerLayer *) playerLayer;
+```
+
 ## Parameters
 
 - `playerLayer`: The player layer to show in Picture in Picture.
 
 ## See Also
 
-- [init(sampleBufferDisplayLayer: AVSampleBufferDisplayLayer, playbackDelegate: any AVPictureInPictureSampleBufferPlaybackDelegate)](avpictureinpicturecontroller/contentsource-swift.class/init(samplebufferdisplaylayer:playbackdelegate:).md)
+### Creating a content source
+- [init(sampleBufferDisplayLayer: AVSampleBufferDisplayLayer, playbackDelegate: any AVPictureInPictureSampleBufferPlaybackDelegate)](./init%28samplebufferdisplaylayer,playbackdelegate%29.md)
   Creates a content source with a sample buffer display layer.
-- [init(activeVideoCallSourceView: UIView, contentViewController: AVPictureInPictureVideoCallViewController)](avpictureinpicturecontroller/contentsource-swift.class/init(activevideocallsourceview:contentviewcontroller:).md)
+- [init(activeVideoCallSourceView: UIView, contentViewController: AVPictureInPictureVideoCallViewController)](./init%28activevideocallsourceview,contentviewcontroller%29.md)
   Creates a content source with an active video call.
 
 

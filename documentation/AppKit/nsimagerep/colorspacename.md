@@ -1,17 +1,22 @@
 # colorSpaceName
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the color space used by the image data.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var colorSpaceName: NSColorSpaceName { get set }
+```
+
+```objc
+@property (copy) NSColorSpaceName colorSpaceName;
 ```
 
 #### Discussion
@@ -30,19 +35,20 @@ By default, an `NSImageRep` object’s color space name is `NSCalibratedRGBColor
 
 ## See Also
 
-- [var bitsPerSample: Int](nsimagerep/bitspersample.md)
+### Specifying Information About the Representation
+- [var bitsPerSample: Int](./bitspersample.md)
   The number of bits per sample in the object (if the object is a planar image, this property contains the number of bits per sample per plane).
-- [var hasAlpha: Bool](nsimagerep/hasalpha.md)
+- [var hasAlpha: Bool](./hasalpha.md)
   A Boolean value that indicates whether the image data has an alpha channel.
-- [var isOpaque: Bool](nsimagerep/isopaque.md)
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value that indicates whether the image is opaque.
-- [var pixelsHigh: Int](nsimagerep/pixelshigh.md)
+- [var pixelsHigh: Int](./pixelshigh.md)
   The height of the image, measured in pixels.
-- [var pixelsWide: Int](nsimagerep/pixelswide.md)
+- [var pixelsWide: Int](./pixelswide.md)
   The width of the image, measured in pixels.
-- [var layoutDirection: NSImage.LayoutDirection](nsimagerep/layoutdirection.md)
+- [var layoutDirection: NSImage.LayoutDirection](./layoutdirection.md)
   The layout direction for the image.
-- [Device-Specific Value](device-specific-value.md)
+- [Device-Specific Value](../device-specific-value.md)
   A constant that is used by image representations to denote an attribute whose value changes to match the display device.
 
 

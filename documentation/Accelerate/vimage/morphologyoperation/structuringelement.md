@@ -1,7 +1,8 @@
 # structuringElement
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dilation or erosion structuring element.
 
@@ -11,7 +12,7 @@ The dilation or erosion structuring element.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ var structuringElement: vImage.ConvolutionKernel2D<ComponentType>? { get }
 
 ## See Also
 
-- [var height: vImagePixelCount](vimage/morphologyoperation/height.md)
+### Instance Properties
+- [var height: vImagePixelCount](./height.md)
   The height of the morphology kernel.
-- [var width: vImagePixelCount](vimage/morphologyoperation/width.md)
+- [var width: vImagePixelCount](./width.md)
   The width of the morphology kernel.
 
 

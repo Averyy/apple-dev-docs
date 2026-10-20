@@ -1,7 +1,8 @@
 # GetDeviceParams
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets device parameters in response to a call from the framework.
 
@@ -10,31 +11,32 @@ Gets device parameters in response to a call from the framework.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetDeviceParams(struct DeviceParams *deviceParams);
 ```
 
 #### Return Value
 
-A value that indicates the get-device-params result. Return [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) to inidicate success. To indicate a failure, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants) for error definitions.
+A value that indicates the get-device-params result. Return [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) to inidicate success. To indicate a failure, see [IOKit Constants](../../iokit/iokit_constants.md) for error definitions.
 
 ## Parameters
 
-- `deviceParams`: An in/out [`DeviceParams`](deviceparams.md) parameter. On output, populate this structure with the device’s parameter data.
+- `deviceParams`: An in/out [`DeviceParams`](../deviceparams.md) parameter. On output, populate this structure with the device’s parameter data.
 
 ## See Also
 
-- [GetVendorString](iouserblockstoragedevice/getvendorstring.md)
+### Reporting Device Metadata
+- [GetVendorString](./getvendorstring.md)
   Gets a string that identifies the vendor in response to a call from the framework.
-- [GetProductString](iouserblockstoragedevice/getproductstring.md)
+- [GetProductString](./getproductstring.md)
   Gets a string that identifies the product in response to a call from the framework.
-- [GetRevisionString](iouserblockstoragedevice/getrevisionstring.md)
+- [GetRevisionString](./getrevisionstring.md)
   Gets a string that identifies the current revision in response to a call from the framework.
-- [GetAdditionalInfoString](iouserblockstoragedevice/getadditionalinfostring.md)
+- [GetAdditionalInfoString](./getadditionalinfostring.md)
   Gets a string that provides additional information in response to a call from the framework.
-- [DeviceString](devicestring.md)
+- [DeviceString](../devicestring.md)
   A type that represents a string of character data from the device.
-- [DeviceParams](deviceparams.md)
+- [DeviceParams](../deviceparams.md)
   A structure that represents hardware-specific properties of the block storage device.
 
 

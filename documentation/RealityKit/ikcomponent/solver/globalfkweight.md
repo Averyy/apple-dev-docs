@@ -1,7 +1,8 @@
 # globalFkWeight
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The solver global forward kinematics demand’s weight.
 
@@ -21,9 +22,9 @@ var globalFkWeight: Float { get set }
 
 #### Discussion
 
-Multiplied with the per-joint per-axis forward kinematics weight [`fkWeightPerAxis`](ikcomponent/joint/fkweightperaxis.md).
+Multiplied with the per-joint per-axis forward kinematics weight [`fkWeightPerAxis`](../joint/fkweightperaxis.md).
 
-The initial value is from the respective [`globalFkWeight`](ikrig/globalfkweight.md).
+The initial value is from the respective [`globalFkWeight`](../../ikrig/globalfkweight.md).
 
 
 ---

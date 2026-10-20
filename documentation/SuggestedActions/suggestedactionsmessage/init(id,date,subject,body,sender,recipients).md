@@ -1,7 +1,8 @@
 # init(id:date:subject:body:sender:recipients:)
 
 **Framework**: Suggested Actions  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a representation of a message that the system uses to display suggested actions.
 
@@ -29,7 +30,8 @@ init(id: some Hashable, date: Date, subject: AttributedString?, body: Attributed
 
 ## See Also
 
-- [SuggestedActionsMessage.Participant](suggestedactionsmessage/participant.md)
+### Creating the message representation
+- [SuggestedActionsMessage.Participant](./participant.md)
   A sender or recipient of a message in a conversation.
 
 

@@ -1,7 +1,8 @@
 # LibrarySongsResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response to a library songs request.
 
@@ -10,21 +11,22 @@ The response to a library songs request.
 
 ## Declaration
 
-```swift
+```
 object LibrarySongsResponse
 ```
 
 ## Properties
 
-- `data` ([LibrarySongs]) *(required)*: The [`LibrarySongs`](librarysongs.md) included in the response for the request.
+- `data` ([LibrarySongs]) *(required)*: The [`LibrarySongs`](./librarysongs.md) included in the response for the request.
 
 ## See Also
 
-- [object Songs](songs.md)
+### Handling the Response
+- [object Songs](./songs.md)
   A resource object that represents a song.
-- [object SongsResponse](songsresponse.md)
+- [object SongsResponse](./songsresponse.md)
   The response to a songs request.
-- [object LibrarySongs](librarysongs.md)
+- [object LibrarySongs](./librarysongs.md)
   A resource object that represents a library song.
 
 

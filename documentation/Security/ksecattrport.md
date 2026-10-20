@@ -1,7 +1,8 @@
 # kSecAttrPort
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the item’s port.
 
@@ -20,9 +21,13 @@ A key whose value indicates the item’s port.
 let kSecAttrPort: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrPort;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and represents an Internet port number. Items of class [`kSecClassInternetPassword`](ksecclassinternetpassword.md) have this attribute.
+The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and represents an Internet port number. Items of class [`kSecClassInternetPassword`](./ksecclassinternetpassword.md) have this attribute.
 
 
 ---

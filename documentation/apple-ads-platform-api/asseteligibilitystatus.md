@@ -1,7 +1,8 @@
 # AssetEligibilityStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 Overall eligibility status for an asset’s policy evaluation.
 
@@ -10,23 +11,31 @@ Overall eligibility status for an asset’s policy evaluation.
 
 ## Declaration
 
-```swift
+```
 string AssetEligibilityStatus
 ```
 
+## Possible Values
+
+- `ELIGIBLE`: No policy constraints. The asset can serve in any applicable context.
+- `INELIGIBLE`: The asset can’t serve in any context.
+- `LIMITED`: The asset can serve in some placements or countries but is blocked in others. Inspect `blockedGroups` on the parent object for details.
+- `PENDING`: The asset requires review before it can be used.
+- `UNDEFINED`: Eligibility has not yet been determined.
+
 #### Discussion
 
-The `status` field on [`AssetEligibility`](asseteligibility.md) is always one of these values. Treat it as the first check before inspecting `blockedGroups` or `allowedGroups`.
+The `status` field on [`AssetEligibility`](./asseteligibility.md) is always one of these values. Treat it as the first check before inspecting `blockedGroups` or `allowedGroups`.
 
 The `INELIGIBLE` and `PENDING` statuses mean you should not use the asset in a creative, regardless of what the constraint groups contain. The `LIMITED` status is the only value where you need to consult those groups for placement- and market-specific detail.
 
 ## See Also
 
-- [type AssetType](assettype.md)
+- [type AssetType](./assettype.md)
   The media type of an asset.
-- [type ImageType](imagetype.md)
+- [type ImageType](./imagetype.md)
   Image format type for an uploaded asset.
-- [type Orientation](orientation.md)
+- [type Orientation](./orientation.md)
   Asset orientation and aspect ratio classification.
 
 

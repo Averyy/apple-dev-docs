@@ -1,7 +1,8 @@
 # trackConfiguration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -18,7 +19,8 @@
 
 ## See Also
 
-- [UISlider.TrackConfiguration](uislider/trackconfiguration-swift.struct.md)
+### Configuring the track
+- [UISlider.TrackConfiguration](./trackconfiguration-swift.struct.md)
 
 
 ---

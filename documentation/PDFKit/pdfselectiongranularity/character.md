@@ -1,7 +1,8 @@
 # PDFSelectionGranularity.character
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -17,10 +18,15 @@
 case character
 ```
 
+```c
+PDFSelectionGranularityCharacter
+```
+
 ## See Also
 
-- [PDFSelectionGranularity.line](pdfselectiongranularity/line.md)
-- [PDFSelectionGranularity.word](pdfselectiongranularity/word.md)
+### Enumeration Cases
+- [PDFSelectionGranularity.line](./line.md)
+- [PDFSelectionGranularity.word](./word.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # appleVersionID
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.4+
@@ -15,9 +16,10 @@ let appleVersionID: AppleVersionID
 
 ## See Also
 
-- [let account: String?](applibrary/app/metadata/account.md)
-- [let shortVersion: String](applibrary/app/metadata/shortversion.md)
-- [let version: String](applibrary/app/metadata/version.md)
+### Inspecting app metadata
+- [let account: String?](./account.md)
+- [let shortVersion: String](./shortversion.md)
+- [let version: String](./version.md)
 
 
 ---

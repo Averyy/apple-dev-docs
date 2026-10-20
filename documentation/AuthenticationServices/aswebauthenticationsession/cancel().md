@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a web authentication session.
 
@@ -19,19 +20,24 @@ Cancels a web authentication session.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 ## Mentions
 
-- [Authenticating a User Through a Web Service](authenticating-a-user-through-a-web-service.md)
+- [Authenticating a User Through a Web Service](../authenticating-a-user-through-a-web-service.md)
 
 #### Discussion
 
-If the session has already presented a view with the authentication webpage, calling this method dismisses that view. Calling [`cancel()`](aswebauthenticationsession/cancel().md) on an already canceled session has no effect.
+If the session has already presented a view with the authentication webpage, calling this method dismisses that view. Calling [`cancel()`](./cancel%28%29.md) on an already canceled session has no effect.
 
 ## See Also
 
-- [var canStart: Bool](aswebauthenticationsession/canstart.md)
+### Starting and Stopping a Session
+- [var canStart: Bool](./canstart.md)
   A Boolean indicating whether the session can begin.
-- [func start() -> Bool](aswebauthenticationsession/start.md)
+- [func start() -> Bool](./start%28%29.md)
   Starts a web authentication session.
 
 

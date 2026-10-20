@@ -1,7 +1,8 @@
 # loadRule(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specifies the rule used to determine if referenced payloads are loaded.
 

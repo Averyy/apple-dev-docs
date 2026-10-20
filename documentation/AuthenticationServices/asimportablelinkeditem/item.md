@@ -1,7 +1,8 @@
 # item
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the item linked by this linked item.
 
@@ -20,7 +21,8 @@ var item: Data
 
 ## See Also
 
-- [var account: Data?](asimportablelinkeditem/account.md)
+### Accessing linked item properties
+- [var account: Data?](./account.md)
   The unique identifier of the account, if any, to which the linked item belongs.
 
 

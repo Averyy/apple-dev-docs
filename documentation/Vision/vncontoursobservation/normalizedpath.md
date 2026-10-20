@@ -1,7 +1,8 @@
 # normalizedPath
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The detected contours as a path object in normalized coordinates.
 
@@ -19,19 +20,24 @@ The detected contours as a path object in normalized coordinates.
 var normalizedPath: CGPath { get }
 ```
 
+```objc
+@property (readonly) CGPathRef normalizedPath;
+```
+
 ## See Also
 
-- [var contourCount: Int](vncontoursobservation/contourcount.md)
+### Inspecting the Observation
+- [var contourCount: Int](./contourcount.md)
   The total number of detected contours.
-- [var topLevelContours: [VNContour]](vncontoursobservation/toplevelcontours.md)
+- [var topLevelContours: [VNContour]](./toplevelcontours.md)
   An array of contours that don’t have another contour enclosing them.
-- [var topLevelContourCount: Int](vncontoursobservation/toplevelcontourcount.md)
+- [var topLevelContourCount: Int](./toplevelcontourcount.md)
   The total number of detected top-level contours.
-- [func contour(at: Int) throws -> VNContour](vncontoursobservation/contour(at:)-9on0y.md)
+- [func contour(at: Int) throws -> VNContour](./contour%28at%29-9on0y.md)
   Retrieves the contour object at the specified index, irrespective of hierarchy.
-- [func contour(at: IndexPath) throws -> VNContour](vncontoursobservation/contour(at:)-52odo.md)
+- [func contour(at: IndexPath) throws -> VNContour](./contour%28at%29-52odo.md)
   Retrieves the contour object at the specified index path.
-- [class VNContour](vncontour.md)
+- [class VNContour](../vncontour.md)
   A class that represents a detected contour in an image.
 
 

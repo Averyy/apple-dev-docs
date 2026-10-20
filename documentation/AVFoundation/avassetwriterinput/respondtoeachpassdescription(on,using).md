@@ -1,7 +1,8 @@
 # respondToEachPassDescription(on:using:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the input to invoke a callback whenever it begins a new pass.
 
@@ -19,16 +20,20 @@ Tells the input to invoke a callback whenever it begins a new pass.
 func respondToEachPassDescription(on queue: dispatch_queue_t, using block: @escaping @Sendable () -> Void)
 ```
 
+```objc
+- (void) respondToEachPassDescriptionOnQueue:(dispatch_queue_t) queue usingBlock:(dispatch_block_t) block;
+```
+
 #### Discussion
 
 A typical implemementation of the callback block performs the following steps:
 
-1. Gets the value of the [`currentPassDescription`](avassetwriterinput/currentpassdescription.md) property and configures media data source accordingly.
-2. Calls the [`requestMediaDataWhenReady(on:using:)`](avassetwriterinput/requestmediadatawhenready(on:using:).md) method to begin appending data for the current pass.
+1. Gets the value of the [`currentPassDescription`](./currentpassdescription.md) property and configures media data source accordingly.
+2. Calls the [`requestMediaDataWhenReady(on:using:)`](./requestmediadatawhenready%28on,using%29.md) method to begin appending data for the current pass.
 
-After you’ve appended all media data for the current pass, call the [`markCurrentPassAsFinished()`](avassetwriterinput/markcurrentpassasfinished().md) method have the system determine whether to perform another pass. If it performs an additional pass the system invokes the callback to begin the next pass. When it determines that it requires no additional passes, the system invokes the callback one final time so the client can invoke [`markAsFinished()`](avassetwriterinput/markasfinished().md) in response to the value of [`currentPassDescription`](avassetwriterinput/currentpassdescription.md) becoming `nil`.
+After you’ve appended all media data for the current pass, call the [`markCurrentPassAsFinished()`](./markcurrentpassasfinished%28%29.md) method have the system determine whether to perform another pass. If it performs an additional pass the system invokes the callback to begin the next pass. When it determines that it requires no additional passes, the system invokes the callback one final time so the client can invoke [`markAsFinished()`](./markasfinished%28%29.md) in response to the value of [`currentPassDescription`](./currentpassdescription.md) becoming `nil`.
 
-> ❗ **Important**:  Before calling this method, you must add the input to an asset writer and call the writer’s [`startWriting()`](avassetwriter/startwriting().md) method.
+> ❗ **Important**:  Before calling this method, you must add the input to an asset writer and call the writer’s [`startWriting()`](../avassetwriter/startwriting%28%29.md) method.
 
 ## Parameters
 
@@ -37,17 +42,18 @@ After you’ve appended all media data for the current pass, call the [`markCurr
 
 ## See Also
 
-- [var canPerformMultiplePasses: Bool](avassetwriterinput/canperformmultiplepasses.md)
+### Performing multiple-pass encoding
+- [var canPerformMultiplePasses: Bool](./canperformmultiplepasses.md)
   A Boolean value that indicates whether the input may perform multiple passes over appended media data.
-- [var currentPassDescription: AVAssetWriterInputPassDescription?](avassetwriterinput/currentpassdescription.md)
+- [var currentPassDescription: AVAssetWriterInputPassDescription?](./currentpassdescription.md)
   An object that describes the requirements for the current pass.
-- [class AVAssetWriterInputPassDescription](avassetwriterinputpassdescription.md)
+- [class AVAssetWriterInputPassDescription](../avassetwriterinputpassdescription.md)
   An object that defines the interface to query for the requirements of the current pass.
-- [func markCurrentPassAsFinished()](avassetwriterinput/markcurrentpassasfinished.md)
+- [func markCurrentPassAsFinished()](./markcurrentpassasfinished%28%29.md)
   Tells the input to analyze the appended media to determine whether it can improve the results by reencoding certain segments.
-- [var performsMultiPassEncodingIfSupported: Bool](avassetwriterinput/performsmultipassencodingifsupported.md)
+- [var performsMultiPassEncodingIfSupported: Bool](./performsmultipassencodingifsupported.md)
   A Boolean value that indicates whether the input attempts to encode the source media data using multiple passes.
-- [AVAssetWriterInput.MultiPassController](avassetwriterinput/multipasscontroller.md)
+- [AVAssetWriterInput.MultiPassController](./multipasscontroller.md)
   Provides an interface to receive an async sequence of pass descriptions for the writer input receiver, if multi-pass is supported.
 
 

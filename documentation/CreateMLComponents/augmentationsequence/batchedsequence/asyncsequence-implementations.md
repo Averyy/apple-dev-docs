@@ -1,11 +1,12 @@
 # AsyncSequence Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [AugmentationSequence.BatchedSequence.AsyncIterator](augmentationsequence/batchedsequence/asynciterator.md)
+- [AugmentationSequence.BatchedSequence.AsyncIterator](./asynciterator.md)
   The iterator that produces batches.
 
 

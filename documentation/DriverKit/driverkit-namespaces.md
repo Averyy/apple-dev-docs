@@ -1,20 +1,22 @@
 # DriverKit Namespaces
 
-**Framework**: DriverKit
+**Framework**: DriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Namespaces
-- [libkern](libkern.md)
-- [os_detail](os_detail.md)
+- [libkern](./libkern.md)
+- [os_detail](./os_detail.md)
 
 ## See Also
 
-- [DriverKit Structures](driverkit-structures.md)
-- [DriverKit Enumerations](driverkit-enumerations.md)
-- [DriverKit Constants](driverkit-constants.md)
-- [DriverKit Functions](driverkit-functions.md)
-- [DriverKit Data Types](driverkit-data-types.md)
+### Reference
+- [DriverKit Structures](./driverkit-structures.md)
+- [DriverKit Enumerations](./driverkit-enumerations.md)
+- [DriverKit Constants](./driverkit-constants.md)
+- [DriverKit Functions](./driverkit-functions.md)
+- [DriverKit Data Types](./driverkit-data-types.md)
 
 
 ---

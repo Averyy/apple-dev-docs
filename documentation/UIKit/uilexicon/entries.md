@@ -1,7 +1,8 @@
 # entries
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A read-only array of term pairs for use by a custom keyboard.
 
@@ -15,6 +16,10 @@ A read-only array of term pairs for use by a custom keyboard.
 
 ```swift
 var entries: [UILexiconEntry] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<UILexiconEntry *> * entries;
 ```
 
 

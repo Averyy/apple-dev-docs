@@ -1,7 +1,8 @@
 # configuration(openIDConfigurationURL:clientID:issuer:completion:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a login configuration using the OpenID configuration.
 
@@ -11,7 +12,15 @@ Creates a login configuration using the OpenID configuration.
 ## Declaration
 
 ```swift
+class func configuration(openIDConfigurationURL: URL, clientID: String, issuer: String?, completion: @escaping @Sendable (ASAuthorizationProviderExtensionLoginConfiguration?, (any Error)?) -> Void)
+```
+
+```swift
 class func configuration(openIDConfigurationURL: URL, clientID: String, issuer: String?) async throws -> ASAuthorizationProviderExtensionLoginConfiguration
+```
+
+```objc
++ (void) configurationWithOpenIDConfigurationURL:(NSURL *) openIDConfigurationURL clientID:(NSString *) clientID issuer:(NSString *) issuer completion:(void (^)(ASAuthorizationProviderExtensionLoginConfiguration *loginConfiguration, NSError *error)) completion;
 ```
 
 ## Parameters
@@ -23,7 +32,8 @@ class func configuration(openIDConfigurationURL: URL, clientID: String, issuer: 
 
 ## See Also
 
-- [init(clientID: String, issuer: String, tokenEndpointURL: URL, jwksEndpointURL: URL, audience: String?)](asauthorizationproviderextensionloginconfiguration/init(clientid:issuer:tokenendpointurl:jwksendpointurl:audience:).md)
+### Creating the configuration
+- [init(clientID: String, issuer: String, tokenEndpointURL: URL, jwksEndpointURL: URL, audience: String?)](./init%28clientid,issuer,tokenendpointurl,jwksendpointurl,audience%29.md)
   Creates a configuration with the required values.
 
 

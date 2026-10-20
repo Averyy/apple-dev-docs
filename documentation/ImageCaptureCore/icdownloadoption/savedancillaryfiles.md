@@ -1,7 +1,8 @@
 # savedAncillaryFiles
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of files associated with the file being downloaded.
 
@@ -18,23 +19,28 @@ An array of files associated with the file being downloaded.
 static let savedAncillaryFiles: ICDownloadOption
 ```
 
+```c
+extern ICDownloadOption const ICSavedAncillaryFiles;
+```
+
 #### Discussion
 
-The options dictionary returned in [`didDownloadFile(_:error:options:contextInfo:)`](iccameradevicedownloaddelegate/diddownloadfile(_:error:options:contextinfo:).md) might have this key.
+The options dictionary returned in [`didDownloadFile(_:error:options:contextInfo:)`](../iccameradevicedownloaddelegate/diddownloadfile%28_,error,options,contextinfo%29.md) might have this key.
 
 ## See Also
 
-- [static let downloadsDirectoryURL: ICDownloadOption](icdownloadoption/downloadsdirectoryurl.md)
+### Download Options
+- [static let downloadsDirectoryURL: ICDownloadOption](./downloadsdirectoryurl.md)
   A writable directory where the downloaded files should be saved.
-- [static let saveAsFilename: ICDownloadOption](icdownloadoption/saveasfilename.md)
+- [static let saveAsFilename: ICDownloadOption](./saveasfilename.md)
   The name to be used for the downloaded file.
-- [static let savedFilename: ICDownloadOption](icdownloadoption/savedfilename.md)
+- [static let savedFilename: ICDownloadOption](./savedfilename.md)
   The actual name of the saved file.
-- [static let overwrite: ICDownloadOption](icdownloadoption/overwrite.md)
+- [static let overwrite: ICDownloadOption](./overwrite.md)
   A Boolean value indicating whether the downloaded file should overwrite an existing file with the same name and extension.
-- [static let deleteAfterSuccessfulDownload: ICDownloadOption](icdownloadoption/deleteaftersuccessfuldownload.md)
+- [static let deleteAfterSuccessfulDownload: ICDownloadOption](./deleteaftersuccessfuldownload.md)
   A Boolean value indicating whether to delete the file from the device after a successful download.
-- [static let sidecarFiles: ICDownloadOption](icdownloadoption/sidecarfiles.md)
+- [static let sidecarFiles: ICDownloadOption](./sidecarfiles.md)
   A Boolean value indicating whether to download all sidecar files along with the media file.
 
 

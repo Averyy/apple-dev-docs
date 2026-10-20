@@ -1,7 +1,8 @@
 # errSecInvalidRequestor
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The requestor is not valid.
 
@@ -18,6 +19,10 @@ The requestor is not valid.
 
 ```swift
 var errSecInvalidRequestor: OSStatus { get }
+```
+
+```c
+errSecInvalidRequestor
 ```
 
 

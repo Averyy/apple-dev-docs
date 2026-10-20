@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Narrows an untyped [`USDLayer.Spec`](usdlayer/spec.md) to an attribute spec.
+Narrows an untyped [`USDLayer.Spec`](../../../usdlayer/spec.md) to an attribute spec.
 
 **Availability**:
 - iOS 27.0+

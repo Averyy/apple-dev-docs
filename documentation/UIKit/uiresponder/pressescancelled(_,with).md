@@ -1,7 +1,8 @@
 # pressesCancelled(_:with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells this object when a system event (such as a low-memory warning) cancels a press event.
 
@@ -18,6 +19,10 @@ Tells this object when a system event (such as a low-memory warning) cancels a p
 func pressesCancelled(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 ```
 
+```objc
+- (void) pressesCancelled:(NSSet<UIPress *> *) presses withEvent:(UIPressesEvent *) event;
+```
+
 #### Discussion
 
 UIKit calls this method when it receives a system interruption requiring cancellation of the press sequence. An interruption is anything that causes the application to become inactive or causes the view handling the press events to be removed from its window. Your implementation of this method should clean up any state associated with handling the press sequence. Failure to handle cancellation is likely to lead to incorrect behavior or crashes.
@@ -26,16 +31,17 @@ The default implementation of this method forwards the message up the responder 
 
 ## Parameters
 
-- `presses`: A set of [`UIPress`](uipress.md) instances that represent the presses associated with the event. The phase of each press is set to [`UIPress.Phase.cancelled`](uipress/phase-swift.enum/cancelled.md).
+- `presses`: A set of [`UIPress`](../uipress.md) instances that represent the presses associated with the event. The phase of each press is set to [`UIPress.Phase.cancelled`](../uipress/phase-swift.enum/cancelled.md).
 - `event`: The event to which the presses belong.
 
 ## See Also
 
-- [func pressesBegan(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressesbegan(_:with:).md)
+### Responding to press events
+- [func pressesBegan(Set<UIPress>, with: UIPressesEvent?)](./pressesbegan%28_,with%29.md)
   Tells this object when a physical button is first pressed.
-- [func pressesChanged(Set<UIPress>, with: UIPressesEvent?)](uiresponder/presseschanged(_:with:).md)
+- [func pressesChanged(Set<UIPress>, with: UIPressesEvent?)](./presseschanged%28_,with%29.md)
   Tells this object when a value associated with a press has changed.
-- [func pressesEnded(Set<UIPress>, with: UIPressesEvent?)](uiresponder/pressesended(_:with:).md)
+- [func pressesEnded(Set<UIPress>, with: UIPressesEvent?)](./pressesended%28_,with%29.md)
   Tells the object when a button is released.
 
 

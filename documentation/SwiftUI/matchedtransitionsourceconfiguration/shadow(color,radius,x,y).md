@@ -1,7 +1,8 @@
 # shadow(color:radius:x:y:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the specified shadow effect to the matched transition source.
 

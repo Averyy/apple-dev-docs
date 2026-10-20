@@ -1,7 +1,8 @@
 # hasAuthoredAssetInfoByKey(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether authored asset information exists at the given key path.
 

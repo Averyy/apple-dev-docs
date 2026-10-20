@@ -1,7 +1,8 @@
 # state
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state of the command.
 
@@ -18,17 +19,22 @@ The state of the command.
 var state: UIMenuElement.State { get set }
 ```
 
+```objc
+@property (nonatomic) UIMenuElementState state;
+```
+
 ## See Also
 
-- [var title: String](uicommand/title.md)
+### Getting information about the command
+- [var title: String](./title.md)
   The command’s title.
-- [var image: UIImage?](uicommand/image.md)
+- [var image: UIImage?](./image.md)
   The command’s image.
-- [var action: Selector](uicommand/action.md)
+- [var action: Selector](./action.md)
   The selector identifying the action method called after the user selects the command.
-- [var discoverabilityTitle: String?](uicommand/discoverabilitytitle.md)
+- [var discoverabilityTitle: String?](./discoverabilitytitle.md)
   An elaborated title that explains the purpose of the command.
-- [var attributes: UIMenuElement.Attributes](uicommand/attributes.md)
+- [var attributes: UIMenuElement.Attributes](./attributes.md)
   The attributes indicating the style of the command.
 
 

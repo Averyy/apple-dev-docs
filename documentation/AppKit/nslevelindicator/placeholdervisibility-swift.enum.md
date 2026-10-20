@@ -1,10 +1,11 @@
 # NSLevelIndicator.PlaceholderVisibility
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,30 +13,35 @@
 enum PlaceholderVisibility
 ```
 
+```c
+enum NSLevelIndicatorPlaceholderVisibility : NSInteger;
+```
+
 ## Topics
 
 ### Visibility
-- [NSLevelIndicator.PlaceholderVisibility.automatic](nslevelindicator/placeholdervisibility-swift.enum/automatic.md)
-- [NSLevelIndicator.PlaceholderVisibility.always](nslevelindicator/placeholdervisibility-swift.enum/always.md)
-- [NSLevelIndicator.PlaceholderVisibility.whileEditing](nslevelindicator/placeholdervisibility-swift.enum/whileediting.md)
+- [NSLevelIndicator.PlaceholderVisibility.automatic](./placeholdervisibility-swift.enum/automatic.md)
+- [NSLevelIndicator.PlaceholderVisibility.always](./placeholdervisibility-swift.enum/always.md)
+- [NSLevelIndicator.PlaceholderVisibility.whileEditing](./placeholdervisibility-swift.enum/whileediting.md)
 ### Initializers
-- [init?(rawValue: Int)](nslevelindicator/placeholdervisibility-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./placeholdervisibility-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var ratingPlaceholderImage: NSImage?](nslevelindicator/ratingplaceholderimage.md)
+### Managing Placeholder Information
+- [var ratingPlaceholderImage: NSImage?](./ratingplaceholderimage.md)
   Sets the image used by the rating indicator style in place of the default faded placeholder image.
-- [var placeholderVisibility: NSLevelIndicator.PlaceholderVisibility](nslevelindicator/placeholdervisibility-swift.property.md)
+- [var placeholderVisibility: NSLevelIndicator.PlaceholderVisibility](./placeholdervisibility-swift.property.md)
   For a rating-style indicator, sets the conditions under which rating placeholders are displayed.
 
 

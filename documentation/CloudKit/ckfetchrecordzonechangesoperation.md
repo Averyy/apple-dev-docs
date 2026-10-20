@@ -1,7 +1,8 @@
 # CKFetchRecordZoneChangesOperation
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An operation that fetches record zone changes.
 
@@ -20,9 +21,13 @@ An operation that fetches record zone changes.
 class CKFetchRecordZoneChangesOperation
 ```
 
+```objc
+@interface CKFetchRecordZoneChangesOperation : CKDatabaseOperation
+```
+
 ## Mentions
 
-- [Encrypting User Data](encrypting-user-data.md)
+- [Encrypting User Data](./encrypting-user-data.md)
 
 #### Overview
 
@@ -30,9 +35,9 @@ Use this operation to fetch record changes in one or more record zones, such as 
 
 > **Note**: Only private and shared databases support this operation. If you attempt to execute this operation in the public database, CloudKit returns an error.
 
-CloudKit processes the record zones in succession, and returns the changes for each zone in batches. Each batch yields a new change token. If all batches return without error, the operation issues a final change token for that zone. The change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) and are safe to cache on-disk. This operation’s tokens aren’t compatible with [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) so you should segregate them in your app’s cache. Don’t infer behavior or order from the tokens’ contents.
+CloudKit processes the record zones in succession, and returns the changes for each zone in batches. Each batch yields a new change token. If all batches return without error, the operation issues a final change token for that zone. The change tokens conform to [`NSSecureCoding`](../Foundation/nssecurecoding.md) and are safe to cache on-disk. This operation’s tokens aren’t compatible with [`CKFetchDatabaseChangesOperation`](./ckfetchdatabasechangesoperation.md) so you should segregate them in your app’s cache. Don’t infer behavior or order from the tokens’ contents.
 
-If you create record zones in the private database, fetch all changes the first time the app launches. Cache the results on-device and use [`CKRecordZoneSubscription`](ckrecordzonesubscription.md) to subscribe to future changes. Fetch those changes on receipt of the push notifications the subscription generates. If you use the shared database, subscribe to changes with [`CKDatabaseSubscription`](ckdatabasesubscription.md) instead. When a user participates in sharing, CloudKit adds and removes record zones. This means you don’t know in advance which zones exist in the shared database. Use [`CKFetchDatabaseChangesOperation`](ckfetchdatabasechangesoperation.md) to fetch shared record zones on receipt of the subscription’s push notifications. Then fetch the changes in those zones using this operation. Regardless of which database you use, it’s not necessary to perform fetches each time your app launches, or to schedule fetches at regular intervals.
+If you create record zones in the private database, fetch all changes the first time the app launches. Cache the results on-device and use [`CKRecordZoneSubscription`](./ckrecordzonesubscription.md) to subscribe to future changes. Fetch those changes on receipt of the push notifications the subscription generates. If you use the shared database, subscribe to changes with [`CKDatabaseSubscription`](./ckdatabasesubscription.md) instead. When a user participates in sharing, CloudKit adds and removes record zones. This means you don’t know in advance which zones exist in the shared database. Use [`CKFetchDatabaseChangesOperation`](./ckfetchdatabasechangesoperation.md) to fetch shared record zones on receipt of the subscription’s push notifications. Then fetch the changes in those zones using this operation. Regardless of which database you use, it’s not necessary to perform fetches each time your app launches, or to schedule fetches at regular intervals.
 
 To run the operation, add it to the corresponding database’s operation queue. The operation executes its callbacks on a private serial queue.
 
@@ -93,60 +98,61 @@ operation.qualityOfService = NSQualityOfServiceUtility;
 ## Topics
 
 ### Creating a Zone Change Operation
-- [convenience init(recordZoneIDs: [CKRecordZone.ID]?, configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?)](ckfetchrecordzonechangesoperation/init(recordzoneids:configurationsbyrecordzoneid:).md)
+- [convenience init(recordZoneIDs: [CKRecordZone.ID]?, configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?)](./ckfetchrecordzonechangesoperation/init%28recordzoneids,configurationsbyrecordzoneid%29.md)
   Creates an operation for fetching record zone changes.
-- [init()](ckfetchrecordzonechangesoperation/init.md)
+- [init()](./ckfetchrecordzonechangesoperation/init%28%29.md)
   Creates an empty fetch record zone changes operation.
 ### Configuring the Zone Change Operation
-- [var configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?](ckfetchrecordzonechangesoperation/configurationsbyrecordzoneid.md)
+- [var configurationsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneConfiguration]?](./ckfetchrecordzonechangesoperation/configurationsbyrecordzoneid.md)
   A dictionary of configurations for fetching change operations by zone identifier.
-- [CKFetchRecordZoneChangesOperation.ZoneConfiguration](ckfetchrecordzonechangesoperation/zoneconfiguration.md)
+- [CKFetchRecordZoneChangesOperation.ZoneConfiguration](./ckfetchrecordzonechangesoperation/zoneconfiguration.md)
   A configuration object that describes the information to fetch from a record zone.
-- [var fetchAllChanges: Bool](ckfetchrecordzonechangesoperation/fetchallchanges.md)
+- [var fetchAllChanges: Bool](./ckfetchrecordzonechangesoperation/fetchallchanges.md)
   A Boolean value that indicates whether to send repeated requests to the server.
-- [var recordZoneIDs: [CKRecordZone.ID]?](ckfetchrecordzonechangesoperation/recordzoneids.md)
+- [var recordZoneIDs: [CKRecordZone.ID]?](./ckfetchrecordzonechangesoperation/recordzoneids.md)
   The IDs of the record zones that contain the records to fetch.
 ### Processing the Zone Change Operation Results
-- [var recordChangedBlock: ((CKRecord) -> Void)?](ckfetchrecordzonechangesoperation/recordchangedblock.md)
+- [var recordChangedBlock: ((CKRecord) -> Void)?](./ckfetchrecordzonechangesoperation/recordchangedblock.md)
   The closure to execute with the contents of a changed record.
-- [var recordWithIDWasDeletedBlock: ((CKRecord.ID, CKRecord.RecordType) -> Void)?](ckfetchrecordzonechangesoperation/recordwithidwasdeletedblock-3z14c.md)
+- [var recordWithIDWasDeletedBlock: ((CKRecord.ID, CKRecord.RecordType) -> Void)?](./ckfetchrecordzonechangesoperation/recordwithidwasdeletedblock-3z14c.md)
   The closure to execute when a record no longer exists.
-- [var recordZoneChangeTokensUpdatedBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?) -> Void)?](ckfetchrecordzonechangesoperation/recordzonechangetokensupdatedblock.md)
+- [var recordZoneChangeTokensUpdatedBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?) -> Void)?](./ckfetchrecordzonechangesoperation/recordzonechangetokensupdatedblock.md)
   The closure to execute when the change token updates.
-- [var recordZoneFetchCompletionBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?, Bool, (any Error)?) -> Void)?](ckfetchrecordzonechangesoperation/recordzonefetchcompletionblock.md)
+- [var recordZoneFetchCompletionBlock: ((CKRecordZone.ID, CKServerChangeToken?, Data?, Bool, (any Error)?) -> Void)?](./ckfetchrecordzonechangesoperation/recordzonefetchcompletionblock.md)
   The closure to execute when a record zone’s fetch finishes.
-- [var fetchRecordZoneChangesCompletionBlock: (((any Error)?) -> Void)?](ckfetchrecordzonechangesoperation/fetchrecordzonechangescompletionblock.md)
+- [var fetchRecordZoneChangesCompletionBlock: (((any Error)?) -> Void)?](./ckfetchrecordzonechangesoperation/fetchrecordzonechangescompletionblock.md)
   The closure to execute when the operation finishes.
 ### Deprecated
-- [Deprecated Symbols](ckfetchrecordzonechangesoperation-deprecated-symbols.md)
+- [Deprecated Symbols](./ckfetchrecordzonechangesoperation-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Instance Properties
-- [var fetchRecordZoneChangesResultBlock: ((Result<Void, any Error>) -> Void)?](ckfetchrecordzonechangesoperation/fetchrecordzonechangesresultblock.md)
+- [var fetchRecordZoneChangesResultBlock: ((Result<Void, any Error>) -> Void)?](./ckfetchrecordzonechangesoperation/fetchrecordzonechangesresultblock.md)
   The closure to execute when the operation finishes.
-- [var recordWasChangedBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)?](ckfetchrecordzonechangesoperation/recordwaschangedblock-x5bw.md)
+- [var recordWasChangedBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)?](./ckfetchrecordzonechangesoperation/recordwaschangedblock-x5bw.md)
   The closure to execute with the results of retrieving a record change.
-- [var recordZoneFetchResultBlock: ((CKRecordZone.ID, Result<(serverChangeToken: CKServerChangeToken, clientChangeTokenData: Data?, moreComing: Bool), any Error>) -> Void)?](ckfetchrecordzonechangesoperation/recordzonefetchresultblock.md)
+- [var recordZoneFetchResultBlock: ((CKRecordZone.ID, Result<(serverChangeToken: CKServerChangeToken, clientChangeTokenData: Data?, moreComing: Bool), any Error>) -> Void)?](./ckfetchrecordzonechangesoperation/recordzonefetchresultblock.md)
   The closure to execute when a record zone’s fetch finishes.
 
 ## Relationships
 
 ### Inherits From
-- [CKDatabaseOperation](ckdatabaseoperation.md)
+- [CKDatabaseOperation](./ckdatabaseoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKRecordZoneSubscription](ckrecordzonesubscription.md)
+### Record Zone Changes
+- [class CKRecordZoneSubscription](./ckrecordzonesubscription.md)
   A subscription that generates push notifications when CloudKit modifies records in a specific record zone.
-- [class CKRecordZoneNotification](ckrecordzonenotification.md)
+- [class CKRecordZoneNotification](./ckrecordzonenotification.md)
   A notification that triggers when the contents of a record zone change.
 
 

@@ -1,7 +1,8 @@
 # disablesGroup
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that causes the filter to composite the object and its shadow separately in the current layer.
 
@@ -22,11 +23,12 @@ static var disablesGroup: GraphicsContext.ShadowOptions { get }
 
 ## See Also
 
-- [static var invertsAlpha: GraphicsContext.ShadowOptions](graphicscontext/shadowoptions/invertsalpha.md)
+### Getting shadow options
+- [static var invertsAlpha: GraphicsContext.ShadowOptions](./invertsalpha.md)
   An option that causes the filter to invert the alpha of the shadow.
-- [static var shadowAbove: GraphicsContext.ShadowOptions](graphicscontext/shadowoptions/shadowabove.md)
+- [static var shadowAbove: GraphicsContext.ShadowOptions](./shadowabove.md)
   An option that causes the filter to draw the shadow above the object, rather than below it.
-- [static var shadowOnly: GraphicsContext.ShadowOptions](graphicscontext/shadowoptions/shadowonly.md)
+- [static var shadowOnly: GraphicsContext.ShadowOptions](./shadowonly.md)
   An option that causes the filter to draw only the shadow, and omit the source object.
 
 

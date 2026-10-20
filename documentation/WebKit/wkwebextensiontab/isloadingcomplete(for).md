@@ -1,7 +1,8 @@
 # isLoadingComplete(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to check if the tab has finished loading.
 
@@ -18,9 +19,13 @@ Called to check if the tab has finished loading.
 optional func isLoadingComplete(for context: WKWebExtensionContext) -> Bool
 ```
 
+```objc
+- (BOOL) isLoadingCompleteForWebExtensionContext:(WKWebExtensionContext *) context;
+```
+
 #### Discussion
 
-Defaults to [`isLoading`](wkwebview/isloading.md) of the tab’s web view if not implemented.
+Defaults to [`isLoading`](../wkwebview/isloading.md) of the tab’s web view if not implemented.
 
 ## Parameters
 

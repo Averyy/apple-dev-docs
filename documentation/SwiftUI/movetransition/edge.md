@@ -1,7 +1,8 @@
 # edge
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The edge to move the view towards.
 
@@ -22,7 +23,8 @@ var edge: Edge
 
 ## See Also
 
-- [init(edge: Edge)](movetransition/init(edge:).md)
+### Creating the transition
+- [init(edge: Edge)](./init%28edge%29.md)
   Creates a transition that moves the view away, towards the specified edge of the view.
 
 

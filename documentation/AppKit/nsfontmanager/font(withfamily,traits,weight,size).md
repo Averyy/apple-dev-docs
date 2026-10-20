@@ -1,17 +1,22 @@
 # font(withFamily:traits:weight:size:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to load a font with the specified characteristics.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func font(withFamily family: String, traits: NSFontTraitMask, weight: Int, size: CGFloat) -> NSFont?
+```
+
+```objc
+- (NSFont *) fontWithFamily:(NSString *) family traits:(NSFontTraitMask) traits weight:(NSInteger) weight size:(CGFloat) size;
 ```
 
 #### Return Value

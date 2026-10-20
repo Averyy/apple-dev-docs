@@ -1,7 +1,8 @@
 # border(_:width:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a border to this view with the specified style and width.
 
@@ -23,8 +24,8 @@ func border<S>(_ content: S, width: CGFloat = 1) -> some View where S : ShapeSty
 
 ## Mentions
 
-- [Configuring views](configuring-views.md)
-- [Inspecting view layout](inspecting-view-layout.md)
+- [Configuring views](../configuring-views.md)
+- [Inspecting view layout](../inspecting-view-layout.md)
 
 #### Return Value
 
@@ -39,7 +40,7 @@ Text("Purple border inside the view bounds.")
     .border(Color.purple, width: 4)
 ```
 
-![A screenshot showing the text Purple border inside the view bounds.](/images/com.apple.SwiftUI/View-border-1@2x.png)
+![A screenshot showing the text Purple border inside the view bounds.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-border-1@2x.png)
 
 To place a border around the outside of this view, apply padding of the same width before adding the border:
 
@@ -49,38 +50,39 @@ Text("Purple border outside the view bounds.")
     .border(Color.purple, width: 4)
 ```
 
-![A screenshot showing the text Purple border outside the view bounds.](/images/com.apple.SwiftUI/View-border-2@2x.png)
+![A screenshot showing the text Purple border outside the view bounds.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/View-border-2@2x.png)
 
 ## Parameters
 
-- `content`: A value that conforms to the [`ShapeStyle`](shapestyle.md) protocol, like a [`Color`](color.md) or [`HierarchicalShapeStyle`](hierarchicalshapestyle.md), that SwiftUI uses to fill the border.
+- `content`: A value that conforms to the [`ShapeStyle`](../shapestyle.md) protocol, like a [`Color`](../color.md) or [`HierarchicalShapeStyle`](../hierarchicalshapestyle.md), that SwiftUI uses to fill the border.
 - `width`: The thickness of the border. The default is 1 pixel.
 
 ## See Also
 
-- [func foregroundStyle<S>(S) -> some View](view/foregroundstyle(_:).md)
+### Styling content
+- [func foregroundStyle<S>(S) -> some View](./foregroundstyle%28_%29.md)
   Sets a view’s foreground elements to use a given style.
-- [func foregroundStyle<S1, S2>(S1, S2) -> some View](view/foregroundstyle(_:_:).md)
+- [func foregroundStyle<S1, S2>(S1, S2) -> some View](./foregroundstyle%28_,_%29.md)
   Sets the primary and secondary levels of the foreground style in the child view.
-- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](view/foregroundstyle(_:_:_:).md)
+- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](./foregroundstyle%28_,_,_%29.md)
   Sets the primary, secondary, and tertiary levels of the foreground style.
-- [func backgroundStyle<S>(S) -> some View](view/backgroundstyle(_:).md)
+- [func backgroundStyle<S>(S) -> some View](./backgroundstyle%28_%29.md)
   Sets the specified style to render backgrounds within the view.
-- [var backgroundStyle: AnyShapeStyle?](environmentvalues/backgroundstyle.md)
+- [var backgroundStyle: AnyShapeStyle?](../environmentvalues/backgroundstyle.md)
   An optional style that overrides the default system background style when set.
-- [protocol ShapeStyle](shapestyle.md)
+- [protocol ShapeStyle](../shapestyle.md)
   A color or pattern to use when rendering a shape.
-- [struct AnyShapeStyle](anyshapestyle.md)
+- [struct AnyShapeStyle](../anyshapestyle.md)
   A type-erased ShapeStyle value.
-- [struct Gradient](gradient.md)
+- [struct Gradient](../gradient.md)
   A color gradient represented as an array of color stops, each having a parametric location value.
-- [struct MeshGradient](meshgradient.md)
+- [struct MeshGradient](../meshgradient.md)
   A two-dimensional gradient defined by a 2D grid of positioned colors.
-- [struct AnyGradient](anygradient.md)
+- [struct AnyGradient](../anygradient.md)
   A color gradient.
-- [struct ShadowStyle](shadowstyle.md)
+- [struct ShadowStyle](../shadowstyle.md)
   A style to use when rendering shadows.
-- [struct Glass](glass.md)
+- [struct Glass](../glass.md)
   A structure that defines the configuration of the Liquid Glass material.
 
 

@@ -1,7 +1,8 @@
 # result(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the user annotated medications given the query descriptor configuration. Returns the empty array if no HKUserAnnotatedMedication objects match.
 

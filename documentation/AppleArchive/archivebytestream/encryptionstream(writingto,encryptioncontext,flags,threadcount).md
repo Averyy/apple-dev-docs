@@ -1,7 +1,8 @@
 # encryptionStream(writingTo:encryptionContext:flags:threadCount:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a encryption sequential input stream.
 
@@ -11,7 +12,7 @@ Creates a encryption sequential input stream.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -30,18 +31,19 @@ The operation reads decompressed and decrypted data from the supplied archive by
 
 Create the encryption context from `encryptedStream`, and add the credentials to unlock the stream before calling this function.
 
-The stream that the function returns only implements [`read(into:)`](archivebytestreamprotocol/read(into:).md) and [`read(into:atOffset:)`](archivebytestreamprotocol/read(into:atoffset:).md).
+The stream that the function returns only implements [`read(into:)`](../archivebytestreamprotocol/read%28into%29.md) and [`read(into:atOffset:)`](../archivebytestreamprotocol/read%28into,atoffset%29.md).
 
 ## Parameters
 
-- `encryptedStream`: An input stream that provides encrypted and compressed data. The stream must implement [`read(into:)`](archivebytestreamprotocol/read(into:).md) and [`read(into:atOffset:)`](archivebytestreamprotocol/read(into:atoffset:).md).
+- `encryptedStream`: An input stream that provides encrypted and compressed data. The stream must implement [`read(into:)`](../archivebytestreamprotocol/read%28into%29.md) and [`read(into:atOffset:)`](../archivebytestreamprotocol/read%28into,atoffset%29.md).
 - `context`: The encryption context that provides options and credentials.
 - `flags`: Flags that control the behavior of the operation.
 - `threadCount`: The number of worker threads that the operation uses, set to `0` for default.
 
 ## See Also
 
-- [static func encryptionStream(appendingTo: ArchiveByteStream, encryptionContext: ArchiveEncryptionContext, flags: ArchiveFlags, threadCount: Int) -> ArchiveByteStream?](archivebytestream/encryptionstream(appendingto:encryptioncontext:flags:threadcount:).md)
+### Encrypting Data
+- [static func encryptionStream(appendingTo: ArchiveByteStream, encryptionContext: ArchiveEncryptionContext, flags: ArchiveFlags, threadCount: Int) -> ArchiveByteStream?](./encryptionstream%28appendingto,encryptioncontext,flags,threadcount%29.md)
   Reopens an existing encryption sequential output stream.
 
 

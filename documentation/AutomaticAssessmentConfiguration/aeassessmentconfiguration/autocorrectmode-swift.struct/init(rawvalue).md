@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new mode instance.
 

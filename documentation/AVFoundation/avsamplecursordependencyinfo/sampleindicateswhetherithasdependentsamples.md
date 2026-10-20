@@ -1,18 +1,19 @@
 # sampleIndicatesWhetherItHasDependentSamples
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the sample indicates if other samples depend on it.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,17 +21,22 @@ A Boolean value that determines whether the sample indicates if other samples de
 var sampleIndicatesWhetherItHasDependentSamples: ObjCBool
 ```
 
+```c
+BOOL sampleIndicatesWhetherItHasDependentSamples;
+```
+
 ## See Also
 
-- [var sampleHasDependentSamples: ObjCBool](avsamplecursordependencyinfo/samplehasdependentsamples.md)
+### Dependency information
+- [var sampleHasDependentSamples: ObjCBool](./samplehasdependentsamples.md)
   A Boolean value that determines whether the sample has dependent samples.
-- [var sampleIndicatesWhetherItDependsOnOthers: ObjCBool](avsamplecursordependencyinfo/sampleindicateswhetheritdependsonothers.md)
+- [var sampleIndicatesWhetherItDependsOnOthers: ObjCBool](./sampleindicateswhetheritdependsonothers.md)
   A Boolean value that determines whether the sample indicates that it depends on other samples.
-- [var sampleDependsOnOthers: ObjCBool](avsamplecursordependencyinfo/sampledependsonothers.md)
+- [var sampleDependsOnOthers: ObjCBool](./sampledependsonothers.md)
   A Boolean value that determines whether the sample depends on other samples.
-- [var sampleIndicatesWhetherItHasRedundantCoding: ObjCBool](avsamplecursordependencyinfo/sampleindicateswhetherithasredundantcoding.md)
+- [var sampleIndicatesWhetherItHasRedundantCoding: ObjCBool](./sampleindicateswhetherithasredundantcoding.md)
   A Boolean value that determines whether the sample indicates that it has redundant coding.
-- [var sampleHasRedundantCoding: ObjCBool](avsamplecursordependencyinfo/samplehasredundantcoding.md)
+- [var sampleHasRedundantCoding: ObjCBool](./samplehasredundantcoding.md)
   A Boolean value that determines whether the sample has redundant coding.
 
 

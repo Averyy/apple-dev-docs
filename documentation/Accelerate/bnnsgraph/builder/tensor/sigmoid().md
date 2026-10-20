@@ -1,7 +1,8 @@
 # sigmoid()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a sigmoid activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a sigmoid activation operation to the current graph.
 ```swift
 func sigmoid() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

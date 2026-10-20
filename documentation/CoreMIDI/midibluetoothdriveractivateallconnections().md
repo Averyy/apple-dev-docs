@@ -1,7 +1,8 @@
 # MIDIBluetoothDriverActivateAllConnections()
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Promote all active Bluetooth connections into an online MIDI device capable of input and output.
 
@@ -20,6 +21,10 @@ Promote all active Bluetooth connections into an online MIDI device capable of i
 func MIDIBluetoothDriverActivateAllConnections() -> OSStatus
 ```
 
+```c
+extern OSStatus MIDIBluetoothDriverActivateAllConnections();
+```
+
 #### Return Value
 
 A status code that indicates the result of the activation.
@@ -28,16 +33,17 @@ A status code that indicates the result of the activation.
 
 To establish a Bluetooth MIDI driver connection to a Bluetooth Low Energy (BLE) MIDI peripheral, perform the following steps:
 
-1. Scan for the peripheral’s advertised BLE MIDI service by using [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth).
-2. Connect to the advertised peripheral by using [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth).
-3. Call [`MIDIBluetoothDriverActivateAllConnections()`](midibluetoothdriveractivateallconnections().md) upon successful connection.
-4. Confirm the peripheral’s registration by using [`Core MIDI`](CoreMIDI.md) and inspecting [`MIDIDeviceRef`](midideviceref.md).
+1. Scan for the peripheral’s advertised BLE MIDI service by using [Core Bluetooth](../CoreBluetooth/CoreBluetooth.md).
+2. Connect to the advertised peripheral by using [Core Bluetooth](../CoreBluetooth/CoreBluetooth.md).
+3. Call [`MIDIBluetoothDriverActivateAllConnections()`](./midibluetoothdriveractivateallconnections%28%29.md) upon successful connection.
+4. Confirm the peripheral’s registration by using [Core MIDI](./CoreMIDI.md) and inspecting [`MIDIDeviceRef`](./midideviceref.md).
 
-If the device reference is present, [`Core MIDI`](CoreMIDI.md) owns a connection to the peripheral, so use [`Core Bluetooth`](https://developer.apple.com/documentation/corebluetooth) to disconnect from the peripheral.
+If the device reference is present, [Core MIDI](./CoreMIDI.md) owns a connection to the peripheral, so use [Core Bluetooth](../CoreBluetooth/CoreBluetooth.md) to disconnect from the peripheral.
 
 ## See Also
 
-- [func MIDIBluetoothDriverDisconnect(CFString) -> OSStatus](midibluetoothdriverdisconnect(_:).md)
+### Managing Device Connections
+- [func MIDIBluetoothDriverDisconnect(CFString) -> OSStatus](./midibluetoothdriverdisconnect%28_%29.md)
   Disconnect the Bluetooth MIDI driver from a Bluetooth Low Energy MIDI peripheral.
 
 

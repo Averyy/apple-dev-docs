@@ -1,14 +1,15 @@
 # mATAPIuseDMA
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 mATAPIuseDMA = 1 << bATAPIuseDMA
 ```
 

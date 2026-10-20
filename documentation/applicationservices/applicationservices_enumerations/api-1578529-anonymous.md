@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kICAttrLockedMask: UInt32](kicattrlockedmask.md)
-- [var kICAttrNoChange: UInt32](kicattrnochange.md)
-- [var kICAttrVolatileMask: UInt32](kicattrvolatilemask.md)
+- [var kICAttrLockedMask: UInt32](../kicattrlockedmask.md)
+- [var kICAttrNoChange: UInt32](../kicattrnochange.md)
+- [var kICAttrVolatileMask: UInt32](../kicattrvolatilemask.md)
 
 
 ---

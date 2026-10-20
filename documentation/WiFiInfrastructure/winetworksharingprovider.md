@@ -1,7 +1,8 @@
 # WINetworkSharingProvider
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A provider that delivers updated Wi-Fi network information to your app extension.
 
@@ -22,47 +23,48 @@ Use `WINetworkSharingProvider` to receive real-time updates about Wi-Fi networks
 
 The provider delivers network updates through an async sequence that you can filter and process according to your app’s needs. Each event contains the current state of the shared networks, along with flags indicating when new networks become available or when your container app requests sharing. When networks become available for sharing or when your accessory needs additional networks, use the provider to present system UI that allows people to select and share networks. The interface can integrate with your accessory’s scan results to show signal strength and compatibility information.
 
-> ❗ **Important**: Your `WiFiNetworkSharing` app extension can only use the methods in this class. The extension needs both the [`com.apple.developer.wifi-infrastructure`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.wifi-infrastructure) entitlement with the `WiFiNetworkSharing` capability declared and the [`com.apple.developer.accessory-transport-extension`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.accessory-transport-extension) entitlement.
+> ❗ **Important**: Your `WiFiNetworkSharing` app extension can only use the methods in this class. The extension needs both the [`com.apple.developer.wifi-infrastructure`](../BundleResources/entitlements/com.apple.developer.wifi-infrastructure.md) entitlement with the `WiFiNetworkSharing` capability declared and the [`com.apple.developer.accessory-transport-extension`](../BundleResources/entitlements/com.apple.developer.accessory-transport-extension.md) entitlement.
 
 ## Topics
 
 ### Creating network sharing provider instances
-- [init(for: ASAccessory) async throws](winetworksharingprovider/init(for:).md)
+- [init(for: ASAccessory) async throws](./winetworksharingprovider/init%28for%29.md)
   Creates a provider for the specified accessory.
 ### Getting accessory data
-- [let accessory: ASAccessory](winetworksharingprovider/accessory.md)
+- [let accessory: ASAccessory](./winetworksharingprovider/accessory.md)
   The accessory that receives the shared networks.
 ### Getting network updates
 - [func networkEvents(matching: Predicate<WINetworkSharingProvider.Network>?) -> some Sendable & AsyncSequence<WINetworkSharingProvider.NetworkEvent, any Error>
-](winetworksharingprovider/networkevents(matching:).md)
+](./winetworksharingprovider/networkevents%28matching%29.md)
   Returns an async sequence of network events, containing current shared networks and future updates.
-- [WINetworkSharingProvider.NetworkEvent](winetworksharingprovider/networkevent.md)
+- [WINetworkSharingProvider.NetworkEvent](./winetworksharingprovider/networkevent.md)
   An event that occurred, indicating an update to the available shared networks.
-- [WINetworkSharingProvider.Network](winetworksharingprovider/network.md)
+- [WINetworkSharingProvider.Network](./winetworksharingprovider/network.md)
   A Wi-Fi network to share with a connected accessory.
 ### Getting information about access point connections
-- [WINetworkSharingProvider.AccessPointConnection](winetworksharingprovider/accesspointconnection.md)
+- [WINetworkSharingProvider.AccessPointConnection](./winetworksharingprovider/accesspointconnection.md)
   A Wi-Fi access point the host is currently connected to, which may be shared with a connected accessory.
-- [WINetworkSharingProvider.AccessPointConnectionEvent](winetworksharingprovider/accesspointconnectionevent.md)
+- [WINetworkSharingProvider.AccessPointConnectionEvent](./winetworksharingprovider/accesspointconnectionevent.md)
   An event that indicates an update to the available shared access points.
 - [func accessPointConnectionEvents(matching: Predicate<WINetworkSharingProvider.AccessPointConnection>?) -> some Sendable & AsyncSequence<WINetworkSharingProvider.AccessPointConnectionEvent, any Error>
-](winetworksharingprovider/accesspointconnectionevents(matching:).md)
+](./winetworksharingprovider/accesspointconnectionevents%28matching%29.md)
   Returns an async sequence of access point events containing the currently connected access point(s) and future updates.
 ### Displaying network selection
-- [func presentAskToShareUI(scanProvider: ((ASAccessory, WINetworkSharingProvider.AccessoryScanRequest) async -> WINetworkSharingProvider.AccessoryScanResponse?)?) async throws -> WINetworkSharingAskToShareState](winetworksharingprovider/presentasktoshareui(scanprovider:).md)
+- [func presentAskToShareUI(scanProvider: ((ASAccessory, WINetworkSharingProvider.AccessoryScanRequest) async -> WINetworkSharingProvider.AccessoryScanResponse?)?) async throws -> WINetworkSharingAskToShareState](./winetworksharingprovider/presentasktoshareui%28scanprovider%29.md)
   Presents system UI asking people to share available networks with an accessory.
-- [WINetworkSharingProvider.AccessoryScanRequest](winetworksharingprovider/accessoryscanrequest.md)
+- [WINetworkSharingProvider.AccessoryScanRequest](./winetworksharingprovider/accessoryscanrequest.md)
   A request for the accessory to scan for available Wi-Fi networks.
-- [WINetworkSharingProvider.AccessoryScanResponse](winetworksharingprovider/accessoryscanresponse.md)
+- [WINetworkSharingProvider.AccessoryScanResponse](./winetworksharingprovider/accessoryscanresponse.md)
   A scan response from the accessory containing Wi-Fi scan results, if any.
-- [WINetworkSharingProvider.AccessoryScanResult](winetworksharingprovider/accessoryscanresult.md)
+- [WINetworkSharingProvider.AccessoryScanResult](./winetworksharingprovider/accessoryscanresult.md)
   An access point that the accessory was able to discover in its Wi-Fi scans.
 
 ## See Also
 
-- [class WINetworkSharingController](winetworksharingcontroller.md)
+### Network sharing
+- [class WINetworkSharingController](./winetworksharingcontroller.md)
   A controller that enables your container app to control network-sharing functions with connected accessories.
-- [enum WINetworkSharingAskToShareState](winetworksharingasktosharestate.md)
+- [enum WINetworkSharingAskToShareState](./winetworksharingasktosharestate.md)
   The authorization state for sharing the current Wi-Fi network with an accessory.
 
 

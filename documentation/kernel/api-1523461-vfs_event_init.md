@@ -1,7 +1,8 @@
 # vfs_event_init
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 This function should not be called by kexts.
 
@@ -10,7 +11,7 @@ This function should not be called by kexts.
 
 ## Declaration
 
-```swift
+```c
 void vfs_event_init(void);
 ```
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a capabilities instance from a list of supported capabilities.
 
@@ -21,7 +22,8 @@ init(_ capabilities: [LanguageModelCapabilities.Capability])
 
 ## See Also
 
-- [LanguageModelCapabilities.Capability](languagemodelcapabilities/capability.md)
+### Creating an instance
+- [LanguageModelCapabilities.Capability](./capability.md)
   A capability that a given language model may or may not have.
 
 

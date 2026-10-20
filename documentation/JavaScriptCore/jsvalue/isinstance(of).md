@@ -1,7 +1,8 @@
 # isInstance(of:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether the value is an instance of another JavaScript object value.
 
@@ -19,9 +20,13 @@ Returns a Boolean value indicating whether the value is an instance of another J
 func isInstance(of value: Any!) -> Bool
 ```
 
+```objc
+- (BOOL) isInstanceOf:(id) value;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this value inherits from `value`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if this value inherits from `value`; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -33,9 +38,10 @@ This method is analogous to the `instanceof` operator in JavaScript: it tests fo
 
 ## See Also
 
-- [func isEqual(to: Any!) -> Bool](jsvalue/isequal(to:).md)
+### Comparing JavaScript Values
+- [func isEqual(to: Any!) -> Bool](./isequal%28to%29.md)
   Compares the value to another for strict equality.
-- [func isEqualWithTypeCoercion(to: Any!) -> Bool](jsvalue/isequalwithtypecoercion(to:).md)
+- [func isEqualWithTypeCoercion(to: Any!) -> Bool](./isequalwithtypecoercion%28to%29.md)
   Compares the value to another for equivalence, allowing type conversion.
 
 

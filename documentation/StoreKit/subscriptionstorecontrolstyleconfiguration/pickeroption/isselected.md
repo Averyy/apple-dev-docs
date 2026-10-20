@@ -1,7 +1,8 @@
 # isSelected
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the picker option is in a selected state.
 
@@ -21,7 +22,7 @@ let isSelected: Bool
 
 #### Discussion
 
-Use the [`isSelected`](subscriptionstorecontrolstyleconfiguration/pickeroption/isselected.md) property to display a selection indicator, such as a checkmark, in its correct state. The following code example shows a checkmark when [`isSelected`](subscriptionstorecontrolstyleconfiguration/pickeroption/isselected.md) is true:
+Use the [`isSelected`](./isselected.md) property to display a selection indicator, such as a checkmark, in its correct state. The following code example shows a checkmark when [`isSelected`](./isselected.md) is true:
 
 ```swift
 SubscriptionPickerOption(option) { pickerOption in 
@@ -34,18 +35,19 @@ HStack {
 }
 ```
 
-The [`SubscriptionStorePicker`](subscriptionstorepicker.md) automatically updates the picker’s selection state as customers interact with your picker. However, the [`SubscriptionStorePicker`](subscriptionstorepicker.md) doesn’t display selection indicators. Your app needs to display selection indicators in the picker option label.
+The [`SubscriptionStorePicker`](../../subscriptionstorepicker.md) automatically updates the picker’s selection state as customers interact with your picker. However, the [`SubscriptionStorePicker`](../../subscriptionstorepicker.md) doesn’t display selection indicators. Your app needs to display selection indicators in the picker option label.
 
-Use the [`SubscriptionStoreControlStyleConfiguration.PickerOption`](subscriptionstorecontrolstyleconfiguration/pickeroption.md) value, which represents the properties of a subscription picker option’s label, to display the selection indicator.
+Use the [`SubscriptionStoreControlStyleConfiguration.PickerOption`](../pickeroption.md) value, which represents the properties of a subscription picker option’s label, to display the selection indicator.
 
 ## See Also
 
-- [var subscription: Product](subscriptionstorecontrolstyleconfiguration/pickeroption/subscription.md)
+### Getting properties of the subscription picker option
+- [var subscription: Product](./subscription.md)
   The auto-renewable subscription that the picker option represents.
-- [var activeOffer: Product.SubscriptionOffer?](subscriptionstorecontrolstyleconfiguration/pickeroption/activeoffer.md)
-- [var icon: SubscriptionStoreControlStyleConfiguration.Icon?](subscriptionstorecontrolstyleconfiguration/pickeroption/icon.md)
+- [var activeOffer: Product.SubscriptionOffer?](./activeoffer.md)
+- [var icon: SubscriptionStoreControlStyleConfiguration.Icon?](./icon.md)
   The subscription option’s icon.
-- [var id: Product.ID](subscriptionstorecontrolstyleconfiguration/pickeroption/id.md)
+- [var id: Product.ID](./id.md)
 
 
 ---

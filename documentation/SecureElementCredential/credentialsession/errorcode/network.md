@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode.network
 
 **Framework**: SecureElementCredential  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device’s internet connection is offline.
 

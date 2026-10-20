@@ -1,7 +1,8 @@
 # encode(to:)
 
 **Framework**: AlarmKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs encoding to a given encoder.
 
@@ -22,7 +23,8 @@ func encode(to encoder: any Encoder) throws
 
 ## See Also
 
-- [init(from: any Decoder) throws](alarmbutton/init(from:).md)
+### Encoding and decoding
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates an alarm button from a decoder.
 
 

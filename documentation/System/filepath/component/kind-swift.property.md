@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of this component
 

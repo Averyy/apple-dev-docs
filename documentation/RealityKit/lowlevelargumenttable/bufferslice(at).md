@@ -1,7 +1,8 @@
 # bufferSlice(at:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the buffer slice bound at the given index, or `nil` if the slot is unset.
 
@@ -27,7 +28,8 @@ The buffer slice at `index`, or `nil` if the slot is unoccupied.
 
 ## See Also
 
-- [func setBufferSlice(LowLevelBufferSlice, at: Int) throws(LowLevelRenderContextError)](lowlevelargumenttable/setbufferslice(_:at:).md)
+### Accessing buffer slices
+- [func setBufferSlice(LowLevelBufferSlice, at: Int) throws(LowLevelRenderContextError)](./setbufferslice%28_,at%29.md)
   Binds a buffer slice to the slot at the given index.
 
 

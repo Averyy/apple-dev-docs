@@ -1,7 +1,8 @@
 # pairwise(_:scale:judge:scoringMode:evaluationTarget:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a pairwise comparison evaluator that compares the model’s response against the sample’s expected value.
 
@@ -22,7 +23,7 @@ static func pairwise(_ name: String, scale: ScoringScale, judge: any LanguageMod
 
 ## Mentions
 
-- [Scoring with model-judge evaluators](scoring-with-model-as-judge-evaluators.md)
+- [Scoring with model-judge evaluators](../scoring-with-model-as-judge-evaluators.md)
 
 #### Discussion
 
@@ -38,7 +39,8 @@ The judge sees the model’s output under “Response” and the expected value 
 
 ## See Also
 
-- [static func pairwise(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode, evaluationTarget: ((Input.ExpectedValue) -> String)?) -> ModelJudgeEvaluator<Input>](modeljudgeevaluator/pairwise(judge:dimensions:scoringmode:evaluationtarget:).md)
+### Creating a pairwise evaluator
+- [static func pairwise(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode, evaluationTarget: ((Input.ExpectedValue) -> String)?) -> ModelJudgeEvaluator<Input>](./pairwise%28judge,dimensions,scoringmode,evaluationtarget%29.md)
   Creates a multi-metric pairwise comparison evaluator.
 
 

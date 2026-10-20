@@ -1,7 +1,8 @@
 # isEqualWithTypeCoercion(to:)
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the value to another for equivalence, allowing type conversion.
 
@@ -19,9 +20,13 @@ Compares the value to another for equivalence, allowing type conversion.
 func isEqualWithTypeCoercion(to value: Any!) -> Bool
 ```
 
+```objc
+- (BOOL) isEqualWithTypeCoercionToObject:(id) value;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the values are equivalent; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the values are equivalent; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -33,9 +38,10 @@ This method is analogous to the equality operator `==` in JavaScript: it first c
 
 ## See Also
 
-- [func isEqual(to: Any!) -> Bool](jsvalue/isequal(to:).md)
+### Comparing JavaScript Values
+- [func isEqual(to: Any!) -> Bool](./isequal%28to%29.md)
   Compares the value to another for strict equality.
-- [func isInstance(of: Any!) -> Bool](jsvalue/isinstance(of:).md)
+- [func isInstance(of: Any!) -> Bool](./isinstance%28of%29.md)
   Returns a Boolean value indicating whether the value is an instance of another JavaScript object value.
 
 

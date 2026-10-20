@@ -1,12 +1,13 @@
 # NSAccessibility.ParameterizedAttribute
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that describe parameterized attributes.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,84 +15,89 @@ Values that describe parameterized attributes.
 struct ParameterizedAttribute
 ```
 
+```c
+typedef NSString * NSAccessibilityParameterizedAttributeName;
+```
+
 ## Topics
 
 ### Attribute Names
-- [static let attributedStringForRange: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/attributedstringforrange.md)
+- [static let attributedStringForRange: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/attributedstringforrange.md)
   Does not use attributes from Appkit/AttributedString.h (`NSAttributedString`).
-- [static let boundsForRange: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/boundsforrange.md)
+- [static let boundsForRange: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/boundsforrange.md)
   The rectangle (`NSValue` containing an `NSRect` value) enclosing the specified range of characters (`NSValue` containing an `NSRange` value). If the range crosses a line boundary, the returned rectangle will fully enclose all the lines of characters.
-- [static let cellForColumnAndRow: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/cellforcolumnandrow.md)
+- [static let cellForColumnAndRow: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/cellforcolumnandrow.md)
   The cell at the specified row and column.
-- [static let indexForChildUIElementAttribute: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/indexforchilduielementattribute.md)
-- [static let indexForChildUIElementInNavigationOrderAttribute: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/indexforchilduielementinnavigationorderattribute.md)
-- [static let layoutPointForScreenPoint: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/layoutpointforscreenpoint.md)
+- [static let indexForChildUIElementAttribute: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/indexforchilduielementattribute.md)
+- [static let indexForChildUIElementInNavigationOrderAttribute: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/indexforchilduielementinnavigationorderattribute.md)
+- [static let layoutPointForScreenPoint: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/layoutpointforscreenpoint.md)
   The point in the layout area (`NSValue`) corresponding to the specified point on the screen (`NSValue`).
-- [static let layoutSizeForScreenSize: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/layoutsizeforscreensize.md)
+- [static let layoutSizeForScreenSize: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/layoutsizeforscreensize.md)
   The size of the layout area in points (`NSValue`) corresponding to the specified screen size (`NSValue`).
-- [static let lineForIndex: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/lineforindex.md)
+- [static let lineForIndex: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/lineforindex.md)
   The line number (`NSNumber`) of the specified character (`NSNumber`).
-- [static let rangeForIndex: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/rangeforindex.md)
+- [static let rangeForIndex: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/rangeforindex.md)
   The full range of characters (`NSValue` containing an `NSRange` value), including the specified character, which compose a single glyph (`NSNumber`).
-- [static let rangeForLine: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/rangeforline.md)
+- [static let rangeForLine: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/rangeforline.md)
   The range of characters (`NSValue` containing an `NSRange` value) corresponding to the specified line number (`NSNumber`).
-- [static let rangeForPosition: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/rangeforposition.md)
+- [static let rangeForPosition: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/rangeforposition.md)
   The range of characters (`NSValue` containing an `NSRange` value) composing the glyph at the specified point (`NSValue` containing an `NSPoint` value).
-- [static let resultsForSearchPredicateParameterizedAttribute: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/resultsforsearchpredicateparameterizedattribute.md)
-- [static let rtfForRange: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/rtfforrange.md)
+- [static let resultsForSearchPredicateParameterizedAttribute: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/resultsforsearchpredicateparameterizedattribute.md)
+- [static let rtfForRange: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/rtfforrange.md)
   The RTF data (`NSData`) describing the specified range of characters (`NSValue` containing an `NSRange` value).
-- [static let screenPointForLayoutPoint: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/screenpointforlayoutpoint.md)
+- [static let screenPointForLayoutPoint: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/screenpointforlayoutpoint.md)
   The screen point (`NSValue`) corresponding to the specified point in the layout area (`NSValue`).
-- [static let screenSizeForLayoutSize: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/screensizeforlayoutsize.md)
+- [static let screenSizeForLayoutSize: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/screensizeforlayoutsize.md)
   The size of the screen in points (`NSValue`) corresponding to the specified size of the layout area (`NSValue`).
-- [static let stringForRange: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/stringforrange.md)
+- [static let stringForRange: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/stringforrange.md)
   The substring (`NSString`) specified by the range (`NSValue` containing an `NSRange` value).
-- [static let styleRangeForIndex: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/stylerangeforindex.md)
+- [static let styleRangeForIndex: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/stylerangeforindex.md)
   The full range of characters (`NSValue` containing an `NSRange` value), including the specified character (`NSNumber`), which have the same style.
-- [static let uiElementsForSearchPredicateParameterizedAttribute: NSAccessibility.ParameterizedAttribute](nsaccessibility-swift.struct/parameterizedattribute/uielementsforsearchpredicateparameterizedattribute.md)
+- [static let uiElementsForSearchPredicateParameterizedAttribute: NSAccessibility.ParameterizedAttribute](./parameterizedattribute/uielementsforsearchpredicateparameterizedattribute.md)
 ### Initializers
-- [init(rawValue: String)](nsaccessibility-swift.struct/parameterizedattribute/init(rawvalue:).md)
+- [init(rawValue: String)](./parameterizedattribute/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSAccessibility.Action](nsaccessibility-swift.struct/action.md)
+### Accessibility Types
+- [NSAccessibility.Action](./action.md)
   Constants that describe types of actions.
-- [NSAccessibility.AnnotationAttributeKey](nsaccessibility-swift.struct/annotationattributekey.md)
+- [NSAccessibility.AnnotationAttributeKey](./annotationattributekey.md)
   Keys for annotation attributes.
-- [enum NSAccessibilityAnnotationPosition](nsaccessibilityannotationposition.md)
+- [enum NSAccessibilityAnnotationPosition](../nsaccessibilityannotationposition.md)
   Constants that specify the position where the annotation applies.
-- [NSAccessibility.Attribute](nsaccessibility-swift.struct/attribute.md)
+- [NSAccessibility.Attribute](./attribute.md)
   Constants that describe attributes.
-- [NSAccessibility.FontAttributeKey](nsaccessibility-swift.struct/fontattributekey.md)
+- [NSAccessibility.FontAttributeKey](./fontattributekey.md)
   Keys for font attributes.
-- [enum NSAccessibilityOrientation](nsaccessibilityorientation.md)
+- [enum NSAccessibilityOrientation](../nsaccessibilityorientation.md)
   Values that indicate the orientation of accessibility elements, such as scroll bars and split views.
-- [NSAccessibility.OrientationValue](nsaccessibility-swift.struct/orientationvalue.md)
+- [NSAccessibility.OrientationValue](./orientationvalue.md)
   Values that indicate the orientation of user interface elements, such as scroll bars and split views.
-- [NSAccessibility.Role](nsaccessibility-swift.struct/role.md)
+- [NSAccessibility.Role](./role.md)
   Values that describe types of objects that accessibility elements represent.
-- [enum NSAccessibilityRulerMarkerType](nsaccessibilityrulermarkertype.md)
+- [enum NSAccessibilityRulerMarkerType](../nsaccessibilityrulermarkertype.md)
   Values that indicate the marker type of an accessibility element.
-- [NSAccessibility.RulerMarkerTypeValue](nsaccessibility-swift.struct/rulermarkertypevalue.md)
+- [NSAccessibility.RulerMarkerTypeValue](./rulermarkertypevalue.md)
   Values that describe ruler marker types.
-- [NSAccessibility.RulerUnitValue](nsaccessibility-swift.struct/rulerunitvalue.md)
+- [NSAccessibility.RulerUnitValue](./rulerunitvalue.md)
   Values that indicate the unit values of a ruler or layout area.
-- [NSAccessibility.SortDirectionValue](nsaccessibility-swift.struct/sortdirectionvalue.md)
+- [NSAccessibility.SortDirectionValue](./sortdirectionvalue.md)
   Values that indicate the sort direction of a column.
-- [enum NSAccessibilitySortDirection](nsaccessibilitysortdirection.md)
+- [enum NSAccessibilitySortDirection](../nsaccessibilitysortdirection.md)
   Values that indicate the sort direction of a column.
-- [NSAccessibility.Subrole](nsaccessibility-swift.struct/subrole.md)
+- [NSAccessibility.Subrole](./subrole.md)
   Values that describe specialized object subtypes that accessibility elements represent.
-- [enum NSAccessibilityUnits](nsaccessibilityunits.md)
+- [enum NSAccessibilityUnits](../nsaccessibilityunits.md)
   Values that indicate the unit values of a ruler or layout area.
 
 

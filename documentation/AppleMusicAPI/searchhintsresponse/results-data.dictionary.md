@@ -1,7 +1,8 @@
 # SearchHintsResponse.Results
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the autocomplete options for the hint.
 
@@ -10,7 +11,7 @@ An object that represents the autocomplete options for the hint.
 
 ## Declaration
 
-```swift
+```
 object SearchHintsResponse.Results
 ```
 

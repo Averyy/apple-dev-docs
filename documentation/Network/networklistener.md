@@ -1,7 +1,8 @@
 # NetworkListener
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Listen for incoming network connections.
 
@@ -27,41 +28,41 @@ A listener receives incoming connections by binding to a local endpoint. It acce
 ## Topics
 
 ### Initializers
-- [convenience init(for: (any ListenerProvider)?, using: () -> ApplicationProtocol) throws](networklistener/init(for:using:)-2hkg.md)
+- [convenience init(for: (any ListenerProvider)?, using: () -> ApplicationProtocol) throws](./networklistener/init%28for,using%29-2hkg.md)
   Create a listener that advertises a service with a protocol stack to use for listening.
-- [convenience init(for: (any ListenerProvider)?, using: NWParametersBuilder<ApplicationProtocol>) throws](networklistener/init(for:using:)-2vh87.md)
+- [convenience init(for: (any ListenerProvider)?, using: NWParametersBuilder<ApplicationProtocol>) throws](./networklistener/init%28for,using%29-2vh87.md)
   Create a listener that advertises a service with a protocol stack and parameters to use for listening.
 ### Instance Properties
-- [var newConnectionLimit: Int](networklistener/newconnectionlimit.md)
+- [var newConnectionLimit: Int](./networklistener/newconnectionlimit.md)
   Configure the listener’s new connection limit.
-- [var port: NWEndpoint.Port?](networklistener/port.md)
+- [var port: NWEndpoint.Port?](./networklistener/port.md)
   The port that the listener is listening on.
-- [var service: NWListener.Service?](networklistener/service.md)
+- [var service: NWListener.Service?](./networklistener/service.md)
   An optional service to advertise with the listener.
 ### Instance Methods
-- [func newConnectionLimit(Int) -> Self](networklistener/newconnectionlimit(_:).md)
+- [func newConnectionLimit(Int) -> Self](./networklistener/newconnectionlimit%28_%29.md)
   Configure the listener’s new connection limit.
-- [func onServiceRegistrationUpdate((NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.ServiceRegistrationChange) -> Void) -> Self](networklistener/onserviceregistrationupdate(_:).md)
+- [func onServiceRegistrationUpdate((NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.ServiceRegistrationChange) -> Void) -> Self](./networklistener/onserviceregistrationupdate%28_%29.md)
   Set a closure to be called when the listener has added or removed a registered service.
-- [func onStateUpdate((NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.State) -> Void) -> Self](networklistener/onstateupdate(_:).md)
+- [func onStateUpdate((NetworkListener<ApplicationProtocol>, NetworkListener<ApplicationProtocol>.State) -> Void) -> Self](./networklistener/onstateupdate%28_%29.md)
   Set a closure to be called when the listener’s state changes.
-- [func run((NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](networklistener/run(_:)-42k25.md)
+- [func run((NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](./networklistener/run%28_%29-42k25.md)
   Run the listener and receive incoming multiplexed connections.
-- [func run((NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](networklistener/run(_:)-4iov3.md)
+- [func run((NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](./networklistener/run%28_%29-4iov3.md)
   Run the listener and receive incoming connections.
 ### Type Aliases
-- [NetworkListener.ServiceRegistrationUpdateHandler](networklistener/serviceregistrationupdatehandler.md)
-- [NetworkListener.StateUpdateHandler](networklistener/stateupdatehandler.md)
+- [NetworkListener.ServiceRegistrationUpdateHandler](./networklistener/serviceregistrationupdatehandler.md)
+- [NetworkListener.StateUpdateHandler](./networklistener/stateupdatehandler.md)
 ### Enumerations
-- [NetworkListener.ServiceRegistrationChange](networklistener/serviceregistrationchange.md)
-- [NetworkListener.State](networklistener/state.md)
+- [NetworkListener.ServiceRegistrationChange](./networklistener/serviceregistrationchange.md)
+- [NetworkListener.State](./networklistener/state.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -10,7 +10,7 @@ Help with problems you might run into.
 
 ## Installation
 
-See <doc:install> for more information.  If you use Xcode or SwiftPM to reference
+See [Installation](install.md) for more information.  If you use Xcode or SwiftPM to reference
 the package on github.com there should be no manual steps.
 
 If you clone the `mlx-swift` repository yourself, e.g. in order to
@@ -78,7 +78,7 @@ There are a few approaches that have been observed to work around the issue:
 
 ## Porting Python Code
 
-See <doc:converting-python> for examples and information about
+See [Converting From Python](Articles/converting-python.md) for examples and information about
 symbol changes from python to swift.  [Porting and implementing models](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/porting)
 contains information about porting models from MLX (Python) to Swift.
 
@@ -88,4 +88,4 @@ It isn't possible to use the iOS simulator for developing MLX applications, sinc
 a modern [Metal MTLGPUFamily](https://developer.apple.com/documentation/metal/mtlgpufamily)
 and the simulator does not provide that.
 
-See <doc:running-on-ios>.
+See [Running on iOS](Articles/running-on-ios.md).

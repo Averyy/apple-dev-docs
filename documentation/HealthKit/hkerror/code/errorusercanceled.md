@@ -1,7 +1,8 @@
 # HKError.Code.errorUserCanceled
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user canceled the operation.
 
@@ -19,27 +20,32 @@ The user canceled the operation.
 case errorUserCanceled
 ```
 
+```c
+HKErrorUserCanceled
+```
+
 ## See Also
 
-- [HKError.Code.errorHealthDataUnavailable](hkerror/code/errorhealthdataunavailable.md)
+### Errors
+- [HKError.Code.errorHealthDataUnavailable](./errorhealthdataunavailable.md)
   HealthKit accessed on an unsupported device, such as an iPad.
-- [HKError.Code.errorHealthDataRestricted](hkerror/code/errorhealthdatarestricted.md)
+- [HKError.Code.errorHealthDataRestricted](./errorhealthdatarestricted.md)
   A Mobile Device Management (MDM) profile restricts the use of HealthKit on this device.
-- [HKError.Code.errorInvalidArgument](hkerror/code/errorinvalidargument.md)
+- [HKError.Code.errorInvalidArgument](./errorinvalidargument.md)
   The app passed an invalid argument to the HealthKit API.
-- [HKError.Code.errorAuthorizationDenied](hkerror/code/errorauthorizationdenied.md)
+- [HKError.Code.errorAuthorizationDenied](./errorauthorizationdenied.md)
   The user hasn’t given the app permission to save data.
-- [HKError.Code.errorAuthorizationNotDetermined](hkerror/code/errorauthorizationnotdetermined.md)
+- [HKError.Code.errorAuthorizationNotDetermined](./errorauthorizationnotdetermined.md)
   The app hasn’t yet asked the user for the authorization required to complete the task.
-- [HKError.Code.errorRequiredAuthorizationDenied](hkerror/code/errorrequiredauthorizationdenied.md)
+- [HKError.Code.errorRequiredAuthorizationDenied](./errorrequiredauthorizationdenied.md)
   The user hasn’t granted the application authorization to access all the required clinical record types.
-- [HKError.Code.errorDatabaseInaccessible](hkerror/code/errordatabaseinaccessible.md)
+- [HKError.Code.errorDatabaseInaccessible](./errordatabaseinaccessible.md)
   The HealthKit data is unavailable because it’s protected and the device is locked.
-- [HKError.Code.errorAnotherWorkoutSessionStarted](hkerror/code/erroranotherworkoutsessionstarted.md)
+- [HKError.Code.errorAnotherWorkoutSessionStarted](./erroranotherworkoutsessionstarted.md)
   Another app started a workout session.
-- [HKError.Code.errorUserExitedWorkoutSession](hkerror/code/erroruserexitedworkoutsession.md)
+- [HKError.Code.errorUserExitedWorkoutSession](./erroruserexitedworkoutsession.md)
   The user exited your application while a workout session was running.
-- [HKError.Code.errorNoData](hkerror/code/errornodata.md)
+- [HKError.Code.errorNoData](./errornodata.md)
   Data is unavailable for the requested query and predicate.
 
 

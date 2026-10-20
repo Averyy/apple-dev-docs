@@ -1,7 +1,8 @@
 # updateTitleVariants(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 func updateTitleVariants(_ titleVariants: [String])
+```
+
+```objc
+- (void) updateTitleVariants:(NSArray<NSString *> *) titleVariants;
 ```
 
 

@@ -1,7 +1,8 @@
 # SubscriptionStoreControlStyle
 
 **Framework**: StoreKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that specifies the appearance and interaction of controls in the subscription store view instances within the view hierarchy.
 
@@ -23,18 +24,18 @@ A type that specifies the appearance and interaction of controls in the subscrip
 
 #### Overview
 
-Use the [`subscriptionStoreControlStyle(_:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:)) view modifier to configure the subscription store control style for a view hierarchy.
+Use the [`subscriptionStoreControlStyle(_:)`](../SwiftUI/view/subscriptionstorecontrolstyle%28_%29.md) view modifier to configure the subscription store control style for a view hierarchy.
 
 ```swift
 SubscriptionStoreView(groupID: "SAMPLE")
     .subscriptionStoreControlStyle(.prominentPicker)
 ```
 
-You can also configure the control placement using the [`subscriptionStoreControlStyle(_:placement:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolstyle(_:placement:)) view modifier.
+You can also configure the control placement using the [`subscriptionStoreControlStyle(_:placement:)`](../SwiftUI/view/subscriptionstorecontrolstyle%28_,placement%29.md) view modifier.
 
-##### Create Custom Styles
+##### Create custom styles
 
-To create a custom style, declare a type that conforms to the `SubscriptionStoreControlStyle` protocol and implement the required [`makeBody(configuration:)`](subscriptionstorecontrolstyle/makebody(configuration:).md) method. For example, you can define a style that adds price comparison captions to buttons.
+To create a custom style, declare a type that conforms to the `SubscriptionStoreControlStyle` protocol and implement the required [`makeBody(configuration:)`](./subscriptionstorecontrolstyle/makebody%28configuration%29.md) method. For example, you can define a style that adds price comparison captions to buttons.
 
 ```swift
 struct PriceComparisonButtonsSubscriptionStoreControlStyle: SubscriptionStoreControlStyle {
@@ -45,9 +46,9 @@ struct PriceComparisonButtonsSubscriptionStoreControlStyle: SubscriptionStoreCon
 }
 ```
 
-Inside the method, use the `configuration` parameter, which is a [`SubscriptionStoreControlStyleConfiguration`](subscriptionstorecontrolstyleconfiguration.md) value, to get the properties of the control, such as the subscriptions to merchandise. For examples that show constructing a view from the configuration value, see [`makeBody(configuration:)`](subscriptionstorecontrolstyle/makebody(configuration:).md).
+Inside the method, use the `configuration` parameter, which is a [`SubscriptionStoreControlStyleConfiguration`](./subscriptionstorecontrolstyleconfiguration.md) value, to get the properties of the control, such as the subscriptions to merchandise. For examples that show constructing a view from the configuration value, see [`makeBody(configuration:)`](./subscriptionstorecontrolstyle/makebody%28configuration%29.md).
 
-The subscription store control style protocol has a [`Placement`](subscriptionstorecontrolstyle/placement.md) associated type, which represents the placements that the style supports. To optionally restrict the placements your custom style supports, explicitly declare a type alias named `Placement`. For more information about restricting placements, see [`SubscriptionStoreControlPlacement`](subscriptionstorecontrolplacement.md). If you don’t declare the type alias, your custom style automatically uses the [`AutomaticSubscriptionStoreControlPlacement`](automaticsubscriptionstorecontrolplacement.md) as its [`Placement`](subscriptionstorecontrolstyle/placement.md) associated type.
+The subscription store control style protocol has a [`Placement`](./subscriptionstorecontrolstyle/placement.md) associated type, which represents the placements that the style supports. To optionally restrict the placements your custom style supports, explicitly declare a type alias named `Placement`. For more information about restricting placements, see [`SubscriptionStoreControlPlacement`](./subscriptionstorecontrolplacement.md). If you don’t declare the type alias, your custom style automatically uses the [`AutomaticSubscriptionStoreControlPlacement`](./automaticsubscriptionstorecontrolplacement.md) as its [`Placement`](./subscriptionstorecontrolstyle/placement.md) associated type.
 
 The following code example declares a `Placement` type alias:
 
@@ -82,77 +83,78 @@ SubscriptionStoreView(groupID: "SAMPLE")
 ## Topics
 
 ### Getting built-in subscription store control styles
-- [static var automatic: AutomaticSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/automatic.md)
+- [static var automatic: AutomaticSubscriptionStoreControlStyle](./subscriptionstorecontrolstyle/automatic.md)
   A subscription store control style that resolves its appearance automatically, based on the current context.
-- [static var buttons: ButtonsSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/buttons.md)
+- [static var buttons: ButtonsSubscriptionStoreControlStyle](./subscriptionstorecontrolstyle/buttons.md)
   A subscription store control style that displays a subscribe button for each subscription plan.
-- [static var picker: PickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/picker.md)
+- [static var picker: PickerSubscriptionStoreControlStyle](./subscriptionstorecontrolstyle/picker.md)
   A subscription store control style that displays subscription plans as a picker control, with a single button to subscribe.
-- [static var prominentPicker: ProminentPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/prominentpicker.md)
+- [static var prominentPicker: ProminentPickerSubscriptionStoreControlStyle](./subscriptionstorecontrolstyle/prominentpicker.md)
   A subscription store control style that displays subscription plans as a prominent picker control, with a single button to subscribe.
-- [static var pagedPicker: PagedPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/pagedpicker.md)
+- [static var pagedPicker: PagedPickerSubscriptionStoreControlStyle](./subscriptionstorecontrolstyle/pagedpicker.md)
   A subscription store control style that displays subscription plans as a paged picker control, with a single button to subscribe.
-- [static var pagedProminentPicker: PagedProminentPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/pagedprominentpicker.md)
+- [static var pagedProminentPicker: PagedProminentPickerSubscriptionStoreControlStyle](./subscriptionstorecontrolstyle/pagedprominentpicker.md)
   A subscription store control style that displays subscription plans as a prominent paged picker control, with a single button to subscribe.
-- [static var compactPicker: CompactPickerSubscriptionStoreControlStyle](subscriptionstorecontrolstyle/compactpicker.md)
+- [static var compactPicker: CompactPickerSubscriptionStoreControlStyle](./subscriptionstorecontrolstyle/compactpicker.md)
   A subscription store control style that displays subscription plans as a compact control, with a single button to subscribe.
 ### Creating custom subscription store control styles
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](subscriptionstorecontrolstyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./subscriptionstorecontrolstyle/makebody%28configuration%29.md)
   Creates a view that represents the body of a subscription store control.
-- [SubscriptionStoreControlStyle.Configuration](subscriptionstorecontrolstyle/configuration.md)
+- [SubscriptionStoreControlStyle.Configuration](./subscriptionstorecontrolstyle/configuration.md)
   The properties of a subscription store control that includes the list of auto-renewable subscriptions to merchandise.
-- [SubscriptionStoreControlStyle.SubscribeButton](subscriptionstorecontrolstyle/subscribebutton.md)
+- [SubscriptionStoreControlStyle.SubscribeButton](./subscriptionstorecontrolstyle/subscribebutton.md)
   A button for subscribing to an in-app subscription.
-- [SubscriptionStoreControlStyle.SubscriptionPicker](subscriptionstorecontrolstyle/subscriptionpicker.md)
+- [SubscriptionStoreControlStyle.SubscriptionPicker](./subscriptionstorecontrolstyle/subscriptionpicker.md)
   A composite control for selecting a subscription option and confirming the subscription.
-- [SubscriptionStoreControlStyle.SubscriptionPickerOption](subscriptionstorecontrolstyle/subscriptionpickeroption.md)
+- [SubscriptionStoreControlStyle.SubscriptionPickerOption](./subscriptionstorecontrolstyle/subscriptionpickeroption.md)
   A subscription option within a subscription picker control.
-- [struct SubscriptionStoreControlPlacementKey](subscriptionstorecontrolplacementkey.md)
+- [struct SubscriptionStoreControlPlacementKey](./subscriptionstorecontrolplacementkey.md)
   A placement for a subscription store control in a store view.
-- [associatedtype Placement : SubscriptionStoreControlPlacement = AutomaticSubscriptionStoreControlPlacement](subscriptionstorecontrolstyle/placement.md)
+- [associatedtype Placement : SubscriptionStoreControlPlacement = AutomaticSubscriptionStoreControlPlacement](./subscriptionstorecontrolstyle/placement.md)
   The placement of subscription controls in a subscription store.
-- [associatedtype Body : View](subscriptionstorecontrolstyle/body.md)
+- [associatedtype Body : View](./subscriptionstorecontrolstyle/body.md)
   A view that represents the body of a subscription store control.
 ### Supporting types
-- [struct AutomaticSubscriptionStoreControlStyle](automaticsubscriptionstorecontrolstyle.md)
+- [struct AutomaticSubscriptionStoreControlStyle](./automaticsubscriptionstorecontrolstyle.md)
   The default in-app subscription store control style that resolves its appearance based on the view’s context.
-- [struct ButtonsSubscriptionStoreControlStyle](buttonssubscriptionstorecontrolstyle.md)
+- [struct ButtonsSubscriptionStoreControlStyle](./buttonssubscriptionstorecontrolstyle.md)
   A subscription store control style that displays a subscribe button for each subscription plan.
-- [struct PickerSubscriptionStoreControlStyle](pickersubscriptionstorecontrolstyle.md)
+- [struct PickerSubscriptionStoreControlStyle](./pickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a picker control, with a single button to subscribe.
-- [struct ProminentPickerSubscriptionStoreControlStyle](prominentpickersubscriptionstorecontrolstyle.md)
+- [struct ProminentPickerSubscriptionStoreControlStyle](./prominentpickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a prominent picker control, with a single button to subscribe.
-- [struct CompactPickerSubscriptionStoreControlStyle](compactpickersubscriptionstorecontrolstyle.md)
+- [struct CompactPickerSubscriptionStoreControlStyle](./compactpickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a compact picker control, with a single button to subscribe.
-- [struct PagedPickerSubscriptionStoreControlStyle](pagedpickersubscriptionstorecontrolstyle.md)
+- [struct PagedPickerSubscriptionStoreControlStyle](./pagedpickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a paged picker control, with a single button to subscribe.
-- [struct PagedProminentPickerSubscriptionStoreControlStyle](pagedprominentpickersubscriptionstorecontrolstyle.md)
+- [struct PagedProminentPickerSubscriptionStoreControlStyle](./pagedprominentpickersubscriptionstorecontrolstyle.md)
   A subscription store control style that displays subscription plans as a paged prominent picker control, with a single button to subscribe.
-- [struct AutomaticSubscriptionStoreControlPlacement](automaticsubscriptionstorecontrolplacement.md)
+- [struct AutomaticSubscriptionStoreControlPlacement](./automaticsubscriptionstorecontrolplacement.md)
   A system-defined placement for a subscription store view.
 
 ## Relationships
 
 ### Conforming Types
-- [AutomaticSubscriptionStoreControlStyle](automaticsubscriptionstorecontrolstyle.md)
-- [ButtonsSubscriptionStoreControlStyle](buttonssubscriptionstorecontrolstyle.md)
-- [CompactPickerSubscriptionStoreControlStyle](compactpickersubscriptionstorecontrolstyle.md)
-- [PagedPickerSubscriptionStoreControlStyle](pagedpickersubscriptionstorecontrolstyle.md)
-- [PagedProminentPickerSubscriptionStoreControlStyle](pagedprominentpickersubscriptionstorecontrolstyle.md)
-- [PickerSubscriptionStoreControlStyle](pickersubscriptionstorecontrolstyle.md)
-- [ProminentPickerSubscriptionStoreControlStyle](prominentpickersubscriptionstorecontrolstyle.md)
+- [AutomaticSubscriptionStoreControlStyle](./automaticsubscriptionstorecontrolstyle.md)
+- [ButtonsSubscriptionStoreControlStyle](./buttonssubscriptionstorecontrolstyle.md)
+- [CompactPickerSubscriptionStoreControlStyle](./compactpickersubscriptionstorecontrolstyle.md)
+- [PagedPickerSubscriptionStoreControlStyle](./pagedpickersubscriptionstorecontrolstyle.md)
+- [PagedProminentPickerSubscriptionStoreControlStyle](./pagedprominentpickersubscriptionstorecontrolstyle.md)
+- [PickerSubscriptionStoreControlStyle](./pickersubscriptionstorecontrolstyle.md)
+- [ProminentPickerSubscriptionStoreControlStyle](./prominentpickersubscriptionstorecontrolstyle.md)
 
 ## See Also
 
+### Styling subscription store controls
 - [func subscriptionStoreControlStyle(some SubscriptionStoreControlStyle) -> some View
-](../swiftui/view/subscriptionstorecontrolstyle(_:).md)
+](../SwiftUI/view/subscriptionstorecontrolstyle%28_%29.md)
   Sets the control style for subscription store views within a view.
 - [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some View
-](../swiftui/view/subscriptionstorecontrolstyle(_:placement:).md)
+](../SwiftUI/view/subscriptionstorecontrolstyle%28_,placement%29.md)
   Sets the control style and control placement for subscription store views within a view.
-- [struct SubscriptionStoreControlStyleConfiguration](subscriptionstorecontrolstyleconfiguration.md)
+- [struct SubscriptionStoreControlStyleConfiguration](./subscriptionstorecontrolstyleconfiguration.md)
   The properties of a subscription store control that includes the list of auto-renewable subscriptions to merchandise.
-- [protocol SubscriptionStoreControlPlacement](subscriptionstorecontrolplacement.md)
+- [protocol SubscriptionStoreControlPlacement](./subscriptionstorecontrolplacement.md)
   A type that specifies the placement of a subscription control in a subscription store view.
 
 

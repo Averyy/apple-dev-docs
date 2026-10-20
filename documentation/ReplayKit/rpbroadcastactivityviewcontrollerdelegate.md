@@ -1,16 +1,19 @@
 # RPBroadcastActivityViewControllerDelegate
 
 **Framework**: ReplayKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol you implement to respond to changes to a broadcast activity user interface.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 10.0+ - Deprecated in 27.0
+- iPadOS 10.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -18,24 +21,29 @@ The protocol you implement to respond to changes to a broadcast activity user in
 protocol RPBroadcastActivityViewControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol RPBroadcastActivityViewControllerDelegate <NSObject>
+```
+
 #### Overview
 
-Use this class to respond to changes to a broadcast activity user interface, represented by an [`RPBroadcastActivityViewController`](rpbroadcastactivityviewcontroller.md) object.
+Use this class to respond to changes to a broadcast activity user interface, represented by an [`RPBroadcastActivityViewController`](./rpbroadcastactivityviewcontroller.md) object.
 
 ## Topics
 
 ### Connecting to a Service
-- [func broadcastActivityViewController(RPBroadcastActivityViewController, didFinishWith: RPBroadcastController?, error: (any Error)?)](rpbroadcastactivityviewcontrollerdelegate/broadcastactivityviewcontroller(_:didfinishwith:error:).md)
+- [func broadcastActivityViewController(RPBroadcastActivityViewController, didFinishWith: RPBroadcastController?, error: (any Error)?)](./rpbroadcastactivityviewcontrollerdelegate/broadcastactivityviewcontroller%28_,didfinishwith,error%29.md)
   Indicates that the broadcast activity view controller is ready to be dismissed.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any RPBroadcastActivityViewControllerDelegate)?](rpbroadcastactivityviewcontroller/delegate.md)
+### Getting the Delegate
+- [var delegate: (any RPBroadcastActivityViewControllerDelegate)?](./rpbroadcastactivityviewcontroller/delegate.md)
   The delegate for the broadcast activity view controller.
 
 

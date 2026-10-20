@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the list element is enabled.
 
@@ -14,6 +15,10 @@ A Boolean value indicating whether the list element is enabled.
 
 ```swift
 var isEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isEnabled) BOOL enabled;
 ```
 
 #### Discussion

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func setDepthStencilState(_ depthStencilState: (any MTLDepthStencilState)?, index: Int)
+```
+
+```objc
+- (void) setDepthStencilState:(id<MTLDepthStencilState>) depthStencilState atIndex:(NSUInteger) index;
 ```
 
 #### Discussion

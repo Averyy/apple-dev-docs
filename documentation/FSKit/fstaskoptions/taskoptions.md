@@ -1,7 +1,8 @@
 # taskOptions
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strings that represent command-line options for the task.
 
@@ -12,6 +13,10 @@ An array of strings that represent command-line options for the task.
 
 ```swift
 var taskOptions: [String] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<NSString *> * taskOptions;
 ```
 
 #### Discussion

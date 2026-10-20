@@ -1,7 +1,8 @@
 # secureSendReceipt
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The send receipt of the original message.
 
@@ -16,11 +17,12 @@ var secureSendReceipt: RCSMessage.SecureSendReceipt?
 
 #### Discussion
 
-Set this after receiving an [`RCSMessage.DispositionNotification`](rcsmessage/dispositionnotification.md) message whose disposition is [`RCSMessage.Disposition.deliveryFailedDueToDecryptionFailure`](rcsmessage/disposition/deliveryfailedduetodecryptionfailure.md).
+Set this after receiving an [`RCSMessage.DispositionNotification`](../../rcsmessage/dispositionnotification.md) message whose disposition is [`RCSMessage.Disposition.deliveryFailedDueToDecryptionFailure`](../../rcsmessage/disposition/deliveryfailedduetodecryptionfailure.md).
 
 ## See Also
 
-- [RCSMessage.SecureSendReceipt](rcsmessage/securesendreceipt.md)
+### Inspecting receipts
+- [RCSMessage.SecureSendReceipt](../../rcsmessage/securesendreceipt.md)
   A structure that contains the security context of an end-to-end encrypted message.
 
 

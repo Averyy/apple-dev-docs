@@ -1,7 +1,8 @@
 # handledEventTypes
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The types of game controller events that should be delivered through the Game Controller framework.
 
@@ -17,9 +18,14 @@ The types of game controller events that should be delivered through the Game Co
 var handledEventTypes: GCUIEventTypes { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) GCUIEventTypes handledEventTypes;
+```
+
 ## See Also
 
-- [struct GCUIEventTypes](gcuieventtypes.md)
+### Getting the event types
+- [struct GCUIEventTypes](../gcuieventtypes.md)
 
 
 ---

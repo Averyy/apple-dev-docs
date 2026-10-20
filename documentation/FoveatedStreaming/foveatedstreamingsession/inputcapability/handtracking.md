@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.InputCapability.handTracking
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Hand tracking input.
 

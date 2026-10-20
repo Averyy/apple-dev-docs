@@ -1,7 +1,8 @@
 # UICollectionLayoutSectionOrthogonalScrollingBehavior.continuous
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The section allows users to scroll its content orthogonally with continuous scrolling.
 
@@ -18,17 +19,22 @@ The section allows users to scroll its content orthogonally with continuous scro
 case continuous
 ```
 
+```c
+UICollectionLayoutSectionOrthogonalScrollingBehaviorContinuous
+```
+
 ## See Also
 
-- [UICollectionLayoutSectionOrthogonalScrollingBehavior.none](uicollectionlayoutsectionorthogonalscrollingbehavior/none.md)
+### Constants
+- [UICollectionLayoutSectionOrthogonalScrollingBehavior.none](./none.md)
   The section does not allow users to scroll its content orthogonally.
-- [UICollectionLayoutSectionOrthogonalScrollingBehavior.continuousGroupLeadingBoundary](uicollectionlayoutsectionorthogonalscrollingbehavior/continuousgroupleadingboundary.md)
+- [UICollectionLayoutSectionOrthogonalScrollingBehavior.continuousGroupLeadingBoundary](./continuousgroupleadingboundary.md)
   The section allows users to scroll its content orthogonally, coming to a natural stop at the leading boundary of the visible group.
-- [UICollectionLayoutSectionOrthogonalScrollingBehavior.paging](uicollectionlayoutsectionorthogonalscrollingbehavior/paging.md)
+- [UICollectionLayoutSectionOrthogonalScrollingBehavior.paging](./paging.md)
   The section allows users to page its content orthogonally.
-- [UICollectionLayoutSectionOrthogonalScrollingBehavior.groupPaging](uicollectionlayoutsectionorthogonalscrollingbehavior/grouppaging.md)
+- [UICollectionLayoutSectionOrthogonalScrollingBehavior.groupPaging](./grouppaging.md)
   The section allows users to page its content orthogonally one group at a time.
-- [UICollectionLayoutSectionOrthogonalScrollingBehavior.groupPagingCentered](uicollectionlayoutsectionorthogonalscrollingbehavior/grouppagingcentered.md)
+- [UICollectionLayoutSectionOrthogonalScrollingBehavior.groupPagingCentered](./grouppagingcentered.md)
   The section allows users to page its content orthogonally one group at a time, centering each group.
 
 

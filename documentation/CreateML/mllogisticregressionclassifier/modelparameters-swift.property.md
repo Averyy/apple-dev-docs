@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying parameters used when training the model.
 
@@ -21,9 +22,10 @@ let modelParameters: MLLogisticRegressionClassifier.ModelParameters
 
 ## See Also
 
-- [var model: MLModel](mllogisticregressionclassifier/model.md)
+### Inspecting a boosted tree classifier
+- [var model: MLModel](./model.md)
   The Core ML model.
-- [MLLogisticRegressionClassifier.ModelParameters](mllogisticregressionclassifier/modelparameters-swift.struct.md)
+- [MLLogisticRegressionClassifier.ModelParameters](./modelparameters-swift.struct.md)
   Parameters that affect the process of training a model.
 
 

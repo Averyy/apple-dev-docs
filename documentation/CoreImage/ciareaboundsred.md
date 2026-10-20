@@ -1,15 +1,16 @@
 # CIAreaBoundsRed
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,16 +18,21 @@
 protocol CIAreaBoundsRed : CIAreaReductionFilter
 ```
 
+```objc
+@protocol CIAreaBoundsRed <CIAreaReductionFilter>
+```
+
 ## Relationships
 
 ### Inherits From
-- [CIAreaReductionFilter](ciareareductionfilter.md)
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIAreaReductionFilter](./ciareareductionfilter.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [protocol CIMaximumScaleTransform](cimaximumscaletransform.md)
-- [protocol CIToneMapHeadroom](citonemapheadroom.md)
+### Protocols
+- [protocol CIMaximumScaleTransform](./cimaximumscaletransform.md)
+- [protocol CIToneMapHeadroom](./citonemapheadroom.md)
 
 
 ---

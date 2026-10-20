@@ -1,7 +1,8 @@
 # BindTarget.internal(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A bind target that refers to a framework-provided property.
 
@@ -10,7 +11,7 @@ A bind target that refers to a framework-provided property.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,13 +21,14 @@ case `internal`(InternalBindPath)
 
 ## See Also
 
-- [BindTarget.jointTransforms](bindtarget/jointtransforms.md)
+### Choosing a bind target
+- [BindTarget.jointTransforms](./jointtransforms.md)
   An option that specifies that the entity’s joint transforms animate.
-- [BindTarget.parameter(_:)](bindtarget/parameter(_:).md)
+- [BindTarget.parameter(_:)](./parameter%28_%29.md)
   Provides a property that animates from the given textual name.
-- [BindTarget.path(_:)](bindtarget/path(_:).md)
+- [BindTarget.path(_:)](./path%28_%29.md)
   Provides a complex bind path capable of animating additional entities other than the current entity.
-- [BindTarget.transform](bindtarget/transform.md)
+- [BindTarget.transform](./transform.md)
   A option that specifies that the target entity’s transform animates.
 
 

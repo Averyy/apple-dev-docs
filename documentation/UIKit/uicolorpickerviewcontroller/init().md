@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color picker view controller.
 
@@ -15,6 +16,10 @@ Creates a color picker view controller.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

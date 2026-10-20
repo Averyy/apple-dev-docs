@@ -1,7 +1,8 @@
 # init(_:backgroundStyle:_:backgroundAccessoryView:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a launch scene for document-based applications with a title, a background style, a set of actions, and a background accessory view.
 
@@ -18,9 +19,28 @@ Creates a launch scene for document-based applications with a title, a backgroun
 nonisolated init<B>(_ title: LocalizedStringResource, backgroundStyle: B = BackgroundStyle(), @ContentBuilder _ actions: () -> Actions = { DefaultDocumentGroupLaunchActions() }, @ContentBuilder backgroundAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View) where B : ShapeStyle
 ```
 
+Available when `Actions` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init<B>(_ title: LocalizedStringKey, backgroundStyle: B = BackgroundStyle(), @ContentBuilder _ actions: () -> Actions = { DefaultDocumentGroupLaunchActions() }, @ContentBuilder backgroundAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View) where B : ShapeStyle
+```
+
+```swift
+nonisolated
+init<B>(_ title: Text? = nil, backgroundStyle: B = BackgroundStyle(), @ContentBuilder _ actions: () -> Actions = { DefaultDocumentGroupLaunchActions() }, @ContentBuilder backgroundAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View) where B : ShapeStyle
+```
+
+```swift
+nonisolated
+init<B>(_ title: some StringProtocol, backgroundStyle: B = BackgroundStyle(), @ContentBuilder _ actions: () -> Actions = { DefaultDocumentGroupLaunchActions() }, @ContentBuilder backgroundAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View) where B : ShapeStyle
+```
+
 #### Discussion
 
-Use a `DocumentGroupLaunchScene` alongside any [`DocumentGroup`](documentgroup.md) scenes. If you don’t implement a `DocumentGroup` in the app declaration, you can get the same design by implementing a [`DocumentLaunchView`](documentlaunchview.md).
+Use a `DocumentGroupLaunchScene` alongside any [`DocumentGroup`](../documentgroup.md) scenes. If you don’t implement a `DocumentGroup` in the app declaration, you can get the same design by implementing a [`DocumentLaunchView`](../documentlaunchview.md).
 
 ## Parameters
 
@@ -31,11 +51,12 @@ Use a `DocumentGroupLaunchScene` alongside any [`DocumentGroup`](documentgroup.m
 
 ## See Also
 
-- [init(_:backgroundStyle:_:)](documentgrouplaunchscene/init(_:backgroundstyle:_:).md)
+### Creating a launch scene with a background style
+- [init(_:backgroundStyle:_:)](./init%28_,backgroundstyle,_%29.md)
   Creates a launch scene for document-based applications with a title, a background style, and a set of actions.
-- [init(_:backgroundStyle:_:backgroundAccessoryView:overlayAccessoryView:)](documentgrouplaunchscene/init(_:backgroundstyle:_:backgroundaccessoryview:overlayaccessoryview:).md)
+- [init(_:backgroundStyle:_:backgroundAccessoryView:overlayAccessoryView:)](./init%28_,backgroundstyle,_,backgroundaccessoryview,overlayaccessoryview%29.md)
   Creates a launch scene for document-based applications with a title, a background style, a set of actions, and background and overlay accessory views.
-- [init(_:backgroundStyle:_:overlayAccessoryView:)](documentgrouplaunchscene/init(_:backgroundstyle:_:overlayaccessoryview:).md)
+- [init(_:backgroundStyle:_:overlayAccessoryView:)](./init%28_,backgroundstyle,_,overlayaccessoryview%29.md)
   Creates a launch scene for document-based applications with a title, a background style, a set of actions, and an overlay accessory view.
 
 

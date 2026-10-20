@@ -1,25 +1,27 @@
 # OSIterator
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef struct OSIterator OSIterator;
 ```
 
 ## See Also
 
-- [OSAsyncReference](osasyncreference.md)
-- [OSAsyncReference64](osasyncreference64.md)
-- [OSContainer](oscontainer.md)
-- [OSKextRequestTag](oskextrequesttag.md)
+### Typedefs
+- [OSAsyncReference](./osasyncreference.md)
+- [OSAsyncReference64](./osasyncreference64.md)
+- [OSContainer](./oscontainer.md)
+- [OSKextRequestTag](./oskextrequesttag.md)
   Identifies a kext request made to user space.
-- [OSType](ostype.md)
+- [OSType](./ostype.md)
 
 
 ---

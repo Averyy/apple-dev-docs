@@ -1,19 +1,20 @@
 # SCSITaskAttribute
 
 **Framework**: DriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Attributes for task delivery.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 typedef enum SCSITaskAttribute : unsigned int { ... } SCSITaskAttribute;
 ```
 
@@ -24,28 +25,29 @@ The Task Attribute defines how this task should be managed when determing order 
 ## Topics
 
 ### Constants
-- [kSCSITask_SIMPLE](scsitaskattribute/kscsitask_simple.md)
-- [kSCSITask_ORDERED](scsitaskattribute/kscsitask_ordered.md)
-- [kSCSITask_HEAD_OF_QUEUE](scsitaskattribute/kscsitask_head_of_queue.md)
-- [kSCSITask_ACA](scsitaskattribute/kscsitask_aca.md)
+- [kSCSITask_SIMPLE](./scsitaskattribute/kscsitask_simple.md)
+- [kSCSITask_ORDERED](./scsitaskattribute/kscsitask_ordered.md)
+- [kSCSITask_HEAD_OF_QUEUE](./scsitaskattribute/kscsitask_head_of_queue.md)
+- [kSCSITask_ACA](./scsitaskattribute/kscsitask_aca.md)
 
 ## See Also
 
-- [IOLockAssertState](iolockassertstate.md)
-- [IORWLockAssertState](iorwlockassertstate.md)
-- [kC0DataMaxStringLen](kc0datamaxstringlen.md)
-- [kINQUIRY_ANSI_VERSION_Mask](kinquiry_ansi_version_mask.md)
-- [kINQUIRY_ANSI_VERSION_NoClaimedConformance](kinquiry_ansi_version_noclaimedconformance.md)
-- [kINQUIRY_ANSI_VERSION_SCSI_1_Compliant](kinquiry_ansi_version_scsi_1_compliant.md)
-- [kINQUIRY_ANSI_VERSION_SCSI_2_Compliant](kinquiry_ansi_version_scsi_2_compliant.md)
-- [kINQUIRY_ANSI_VERSION_SCSI_SPC_2_Compliant](kinquiry_ansi_version_scsi_spc_2_compliant.md)
-- [kINQUIRY_ANSI_VERSION_SCSI_SPC_3_Compliant](kinquiry_ansi_version_scsi_spc_3_compliant.md)
-- [kINQUIRY_ANSI_VERSION_SCSI_SPC_Compliant](kinquiry_ansi_version_scsi_spc_compliant.md)
-- [kINQUIRY_Byte3_AERC_Bit](kinquiry_byte3_aerc_bit.md)
-- [kINQUIRY_Byte3_AERC_Mask](kinquiry_byte3_aerc_mask.md)
-- [kINQUIRY_Byte3_HISUP_Bit](kinquiry_byte3_hisup_bit.md)
-- [kINQUIRY_Byte3_HISUP_Mask](kinquiry_byte3_hisup_mask.md)
-- [kINQUIRY_Byte3_NORMACA_Bit](kinquiry_byte3_normaca_bit.md)
+### Enumerations
+- [IOLockAssertState](./iolockassertstate.md)
+- [IORWLockAssertState](./iorwlockassertstate.md)
+- [kC0DataMaxStringLen](./kc0datamaxstringlen.md)
+- [kINQUIRY_ANSI_VERSION_Mask](./kinquiry_ansi_version_mask.md)
+- [kINQUIRY_ANSI_VERSION_NoClaimedConformance](./kinquiry_ansi_version_noclaimedconformance.md)
+- [kINQUIRY_ANSI_VERSION_SCSI_1_Compliant](./kinquiry_ansi_version_scsi_1_compliant.md)
+- [kINQUIRY_ANSI_VERSION_SCSI_2_Compliant](./kinquiry_ansi_version_scsi_2_compliant.md)
+- [kINQUIRY_ANSI_VERSION_SCSI_SPC_2_Compliant](./kinquiry_ansi_version_scsi_spc_2_compliant.md)
+- [kINQUIRY_ANSI_VERSION_SCSI_SPC_3_Compliant](./kinquiry_ansi_version_scsi_spc_3_compliant.md)
+- [kINQUIRY_ANSI_VERSION_SCSI_SPC_Compliant](./kinquiry_ansi_version_scsi_spc_compliant.md)
+- [kINQUIRY_Byte3_AERC_Bit](./kinquiry_byte3_aerc_bit.md)
+- [kINQUIRY_Byte3_AERC_Mask](./kinquiry_byte3_aerc_mask.md)
+- [kINQUIRY_Byte3_HISUP_Bit](./kinquiry_byte3_hisup_bit.md)
+- [kINQUIRY_Byte3_HISUP_Mask](./kinquiry_byte3_hisup_mask.md)
+- [kINQUIRY_Byte3_NORMACA_Bit](./kinquiry_byte3_normaca_bit.md)
 
 
 ---

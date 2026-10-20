@@ -1,7 +1,8 @@
 # MPMediaPredicateComparison.equalTo
 
 **Framework**: Media Player  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Matches when a media item’s value for a given property is equal to the value in the media property predicate.
 
@@ -17,9 +18,14 @@ Matches when a media item’s value for a given property is equal to the value i
 case equalTo
 ```
 
+```c
+MPMediaPredicateComparisonEqualTo
+```
+
 ## See Also
 
-- [MPMediaPredicateComparison.contains](mpmediapredicatecomparison/contains.md)
+### Constants
+- [MPMediaPredicateComparison.contains](./contains.md)
   Matches when a media item’s value for a given property is contained in the value of the media property predicate.
 
 

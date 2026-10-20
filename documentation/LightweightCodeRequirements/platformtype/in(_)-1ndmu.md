@@ -1,7 +1,8 @@
 # in(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Matches if the process is running as any of the specified platform types or if the file supports any of the specified platform types.
 

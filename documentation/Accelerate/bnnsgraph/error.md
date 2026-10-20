@@ -1,7 +1,8 @@
 # BNNSGraph.Error
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that a graph context throws.
 
@@ -11,7 +12,7 @@ Error codes that a graph context throws.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -23,24 +24,24 @@ enum Error
 ## Topics
 
 ### Error codes
-- [BNNSGraph.Error.unableToCreateContext](bnnsgraph/error/unabletocreatecontext.md)
+- [BNNSGraph.Error.unableToCreateContext](./error/unabletocreatecontext.md)
   The call to the underlying context-creation function failed.
-- [BNNSGraph.Error.unableToCreateGraph](bnnsgraph/error/unabletocreategraph.md)
+- [BNNSGraph.Error.unableToCreateGraph](./error/unabletocreategraph.md)
   The call to the underlying graph-creation function failed.
-- [BNNSGraph.Error.unableToExecute](bnnsgraph/error/unabletoexecute.md)
+- [BNNSGraph.Error.unableToExecute](./error/unabletoexecute.md)
   The call to the underlying graph-execute function failed.
-- [BNNSGraph.Error.unableToSetDynamicShapes](bnnsgraph/error/unabletosetdynamicshapes.md)
+- [BNNSGraph.Error.unableToSetDynamicShapes](./error/unabletosetdynamicshapes.md)
   The call to the underlying set dynamic shapes function failed.
 ### Enumeration Cases
-- [BNNSGraph.Error.unableToMakeGraph(_:)](bnnsgraph/error/unabletomakegraph(_:).md)
+- [BNNSGraph.Error.unableToMakeGraph(_:)](./error/unabletomakegraph%28_%29.md)
   Indicates that the call to the underlying `BNNSGraphContextSetDynamicShapes` function failed.
 
 ## Relationships
 
 ### Conforms To
-- [Error](../swift/error.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Error](../../Swift/error.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

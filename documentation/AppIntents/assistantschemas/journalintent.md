@@ -1,7 +1,8 @@
 # AssistantSchemas.JournalIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app intents that offer journaling functionality.
 
@@ -23,24 +24,24 @@ protocol JournalIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var createAudioEntry: some AssistantSchemas.Intent](assistantschemas/journalintent/createaudioentry.md)
+- [var createAudioEntry: some AssistantSchemas.Intent](./journalintent/createaudioentry.md)
   The app intent conforms to the schema for creating a voice journal entry.
-- [var createEntry: some AssistantSchemas.Intent](assistantschemas/journalintent/createentry.md)
+- [var createEntry: some AssistantSchemas.Intent](./journalintent/createentry.md)
   The app intent conforms to the schema for creating a journal entry.
-- [var deleteEntry: some AssistantSchemas.Intent](assistantschemas/journalintent/deleteentry.md)
+- [var deleteEntry: some AssistantSchemas.Intent](./journalintent/deleteentry.md)
   The app intent conforms to the schema for deleting a journal entry.
-- [var search: some AssistantSchemas.Intent](assistantschemas/journalintent/search.md)
+- [var search: some AssistantSchemas.Intent](./journalintent/search.md)
   The app intent conforms to the schema for searching in journal entries.
-- [var updateEntry: some AssistantSchemas.Intent](assistantschemas/journalintent/updateentry.md)
+- [var updateEntry: some AssistantSchemas.Intent](./journalintent/updateentry.md)
   The app intent conforms to the schema for updating a journal entry.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
+- [AssistantSchemas.IntentSchema](./intentschema.md)
 
 
 ---

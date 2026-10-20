@@ -1,7 +1,8 @@
 # updated
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Managed objects that were updated during this save.
 

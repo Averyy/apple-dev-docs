@@ -1,17 +1,22 @@
 # reloadCriteria()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Instructs the receiver to refetch criteria from its delegate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func reloadCriteria()
+```
+
+```objc
+- (void) reloadCriteria;
 ```
 
 #### Discussion
@@ -20,11 +25,12 @@ You can use this method to indicate that the available criteria may have changed
 
 ## See Also
 
-- [func setCriteria([Any], andDisplayValues: [Any], forRowAt: Int)](nsruleeditor/setcriteria(_:anddisplayvalues:forrowat:).md)
+### Providing Data
+- [func setCriteria([Any], andDisplayValues: [Any], forRowAt: Int)](./setcriteria%28_,anddisplayvalues,forrowat%29.md)
   Modifies the row at a given index to contain the given items and values.
-- [func criteria(forRow: Int) -> [Any]](nsruleeditor/criteria(forrow:).md)
+- [func criteria(forRow: Int) -> [Any]](./criteria%28forrow%29.md)
   Returns the currently chosen items for a given row.
-- [func displayValues(forRow: Int) -> [Any]](nsruleeditor/displayvalues(forrow:).md)
+- [func displayValues(forRow: Int) -> [Any]](./displayvalues%28forrow%29.md)
   Returns the chosen values for a given row.
 
 

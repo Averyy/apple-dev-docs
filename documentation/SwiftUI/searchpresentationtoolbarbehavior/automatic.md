@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic behavior.
 
@@ -22,7 +23,8 @@ static var automatic: SearchPresentationToolbarBehavior { get }
 
 ## See Also
 
-- [static var avoidHidingContent: SearchPresentationToolbarBehavior](searchpresentationtoolbarbehavior/avoidhidingcontent.md)
+### Getting toolbar behaviors
+- [static var avoidHidingContent: SearchPresentationToolbarBehavior](./avoidhidingcontent.md)
   The avoid hiding content behavior.
 
 

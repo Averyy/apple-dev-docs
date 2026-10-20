@@ -1,21 +1,22 @@
 # TerritoryAvailabilityInlineCreate.Relationships.Territory
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object TerritoryAvailabilityInlineCreate.Relationships.Territory
 ```
 
 ## Topics
 
 ### Objects
-- [object TerritoryAvailabilityInlineCreate.Relationships.Territory.Data](territoryavailabilityinlinecreate/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+- [object TerritoryAvailabilityInlineCreate.Relationships.Territory.Data](./territory-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

@@ -1,7 +1,8 @@
 # addRemovalHandler(_:forTokenID:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a removal handler for the specified token ID.
 
@@ -20,9 +21,13 @@ Adds a removal handler for the specified token ID.
 func addRemovalHandler(_ removalHandler: @escaping (String) -> Void, forTokenID tokenID: String)
 ```
 
+```objc
+- (void) addRemovalHandler:(void (^)(NSString *tokenID)) removalHandler forTokenID:(NSString *) tokenID;
+```
+
 ## Mentions
 
-- [Using Cryptographic Assets Stored on a Smart Card](using-cryptographic-assets-stored-on-a-smart-card.md)
+- [Using Cryptographic Assets Stored on a Smart Card](../using-cryptographic-assets-stored-on-a-smart-card.md)
 
 #### Discussion
 
@@ -32,12 +37,17 @@ Adding a removal handler will remove any existing removal handlers for the speci
 
 ## Parameters
 
-- `removalHandler`: A block to be called when the specified token is removed. This block takes a single argument: - **tokenID**: The identifier of the removed token.
-- `tokenID`: The identifier of the token to watch for removal. If [`tokenIDs`](tktokenwatcher/tokenids.md) doesn’t contain `tokenID`, `insertionHandler` is executed immediately.
+- `removalHandler`: A block to be called when the specified token is removed. This block takes a single argument:
+
+  - **tokenID**: The identifier of the removed token.
+- `tokenID`: The identifier of the token to watch for removal.
+
+  If [`tokenIDs`](./tokenids.md) doesn’t contain `tokenID`, `insertionHandler` is executed immediately.
 
 ## See Also
 
-- [func setInsertionHandler((String) -> Void)](tktokenwatcher/setinsertionhandler(_:).md)
+### Configuring Handlers
+- [func setInsertionHandler((String) -> Void)](./setinsertionhandler%28_%29.md)
   Sets an insertion handler closure to be called when a new token is inserted into the system.
 
 

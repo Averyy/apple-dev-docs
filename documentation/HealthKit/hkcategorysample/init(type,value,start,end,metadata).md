@@ -1,7 +1,8 @@
 # init(type:value:start:end:metadata:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a newly instantiated category sample with the provided metadata.
 
@@ -17,6 +18,10 @@ Creates a newly instantiated category sample with the provided metadata.
 
 ```swift
 convenience init(type: HKCategoryType, value: Int, start startDate: Date, end endDate: Date, metadata: [String : Any]?)
+```
+
+```objc
++ (instancetype) categorySampleWithType:(HKCategoryType *) type value:(NSInteger) value startDate:(NSDate *) startDate endDate:(NSDate *) endDate metadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
 #### Return Value
@@ -66,29 +71,33 @@ HKCategorySample *categorySample =
 
 ## Parameters
 
-- `type`: The category type for this sample. For a complete list, see [`HKCategoryTypeIdentifier`](hkcategorytypeidentifier.md).
-- `value`: The value for this sample. This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see Category Type Identifiers in [`HealthKit Constants`](healthkit-constants.md).
+- `type`: The category type for this sample. For a complete list, see [`HKCategoryTypeIdentifier`](../hkcategorytypeidentifier.md).
+- `value`: The value for this sample. This value must come from the appropriate category value enumeration. Each category type uses its own enumeration. For more information, see Category Type Identifiers in [HealthKit Constants](../healthkit-constants.md).
 - `startDate`: The start date for the sample. This must be equal to or earlier than the end date; otherwise, this method throws an exception (`NSInvalidArgumentException`).
 - `endDate`: The end date for the sample. This must be equal to or later than the start date; otherwise, this method throws an exception (`NSInvalidArgumentException`).
-- `metadata`: The metadata dictionary contains extra information describing this sample. The dictionary’s keys are all [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects. The values may be [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects or [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) objects. For a complete list of predefined metadata keys, see Metadata Keys in [`HealthKit Constants`](healthkit-constants.md). Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the HealthKit category sample’s capabilities.
+- `metadata`: The metadata dictionary contains extra information describing this sample. The dictionary’s keys are all [`NSString`](../../Foundation/nsstring.md) objects. The values may be [`NSString`](../../Foundation/nsstring.md) objects, [`NSNumber`](../../Foundation/nsnumber.md) objects or [`NSDate`](../../Foundation/nsdate.md) objects. For a complete list of predefined metadata keys, see Metadata Keys in [HealthKit Constants](../healthkit-constants.md).
+
+  Using predefined keys helps facilitate sharing data between apps; however, you are also encouraged to create your own, custom keys as needed to extend the HealthKit category sample’s capabilities.
 
 ## See Also
 
-- [var value: Int](hkcategorysample/value.md)
+### Related Documentation
+- [var value: Int](./value.md)
   The category value for this sample.
-- [class func categoryType(forIdentifier: HKCategoryTypeIdentifier) -> HKCategoryType?](hkobjecttype/categorytype(foridentifier:).md)
+- [class func categoryType(forIdentifier: HKCategoryTypeIdentifier) -> HKCategoryType?](../hkobjecttype/categorytype%28foridentifier%29.md)
   Returns the shared category type for the provided identifier.
-- [var endDate: Date](hksample/enddate.md)
+- [var endDate: Date](../hksample/enddate.md)
   The sample’s end date.
-- [var metadata: [String : Any]?](hkobject/metadata.md)
+- [var metadata: [String : Any]?](../hkobject/metadata.md)
   The metadata for this HealthKit object.
-- [var categoryType: HKCategoryType](hkcategorysample/categorytype.md)
+- [var categoryType: HKCategoryType](./categorytype.md)
   The category type for this sample.
-- [var startDate: Date](hksample/startdate.md)
+- [var startDate: Date](../hksample/startdate.md)
   The sample’s start date.
-- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date)](hkcategorysample/init(type:value:start:end:).md)
+### Creating Category Samples
+- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date)](./init%28type,value,start,end%29.md)
   Creates a newly instantiated category sample.
-- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date, device: HKDevice?, metadata: [String : Any]?)](hkcategorysample/init(type:value:start:end:device:metadata:).md)
+- [convenience init(type: HKCategoryType, value: Int, start: Date, end: Date, device: HKDevice?, metadata: [String : Any]?)](./init%28type,value,start,end,device,metadata%29.md)
   Creates a newly instantiated category sample including the provided device and metadata.
 
 

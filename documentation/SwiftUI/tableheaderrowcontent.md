@@ -1,7 +1,8 @@
 # TableHeaderRowContent
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A table row that displays a single view instead of columned content.
 
@@ -26,23 +27,24 @@ You do not create this type directly. The framework creates it on your behalf.
 ## Relationships
 
 ### Conforms To
-- [TableRowContent](tablerowcontent.md)
+- [TableRowContent](./tablerowcontent.md)
 
 ## See Also
 
-- [struct TableRow](tablerow.md)
+### Creating rows
+- [struct TableRow](./tablerow.md)
   A row that represents a data value in a table.
-- [protocol TableRowContent](tablerowcontent.md)
+- [protocol TableRowContent](./tablerowcontent.md)
   A type used to represent table rows.
-- [struct TupleTableRowContent](tupletablerowcontent.md)
+- [struct TupleTableRowContent](./tupletablerowcontent.md)
   A type of table column content that creates table rows created from a Swift tuple of table rows.
-- [struct TableForEachContent](tableforeachcontent.md)
+- [struct TableForEachContent](./tableforeachcontent.md)
   A type of table row content that creates table rows created by iterating over a collection.
-- [struct EmptyTableRowContent](emptytablerowcontent.md)
+- [struct EmptyTableRowContent](./emptytablerowcontent.md)
   A table row content that doesn’t produce any rows.
-- [protocol DynamicTableRowContent](dynamictablerowcontent.md)
+- [protocol DynamicTableRowContent](./dynamictablerowcontent.md)
   A type of table row content that generates table rows from an underlying collection of data.
-- [struct TableRowBuilder](tablerowbuilder.md)
+- [struct TableRowBuilder](./tablerowbuilder.md)
   A result builder that creates table row content from closures.
 
 

@@ -1,7 +1,8 @@
 # init(x:y:t:domain:function:)
 
 **Framework**: Swift Charts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mark that graphs a parametric function (x, y) = f(t).
 
@@ -21,6 +22,8 @@ nonisolated
 init<S1, S2, S3>(x: S1, y: S2, t: S3, domain: ClosedRange<Double>, function: @escaping @Sendable (Double) -> (x: Double, y: Double)) where S1 : StringProtocol, S2 : StringProtocol, S3 : StringProtocol
 ```
 
+Available when `Content` is `FunctionLinePlotContent`.
+
 #### Discussion
 
 Parameters:
@@ -35,11 +38,12 @@ Parameters:
 
 ## See Also
 
-- [init(x: Text, y: Text, t: Text, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](lineplot/init(x:y:t:domain:function:)-5c4bo.md)
+### Plotting parametric functions
+- [init(x: Text, y: Text, t: Text, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](./init%28x,y,t,domain,function%29-5c4bo.md)
   Creates a mark that graphs a parametric function (x, y) = f(t).
-- [init(x: LocalizedStringKey, y: LocalizedStringKey, t: LocalizedStringKey, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](lineplot/init(x:y:t:domain:function:)-7bvyi.md)
+- [init(x: LocalizedStringKey, y: LocalizedStringKey, t: LocalizedStringKey, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](./init%28x,y,t,domain,function%29-7bvyi.md)
   Creates a mark that graphs a parametric function (x, y) = f(t).
-- [init(x: LocalizedStringResource, y: LocalizedStringResource, t: LocalizedStringResource, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](lineplot/init(x:y:t:domain:function:)-610ta.md)
+- [init(x: LocalizedStringResource, y: LocalizedStringResource, t: LocalizedStringResource, domain: ClosedRange<Double>, function: (Double) -> (x: Double, y: Double))](./init%28x,y,t,domain,function%29-610ta.md)
   Creates a mark that graphs a parametric function (x, y) = f(t).
 
 

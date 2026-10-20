@@ -1,7 +1,8 @@
 # P256.Signing.PrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A P-256 private key used to create cryptographic signatures.
 
@@ -23,45 +24,46 @@ struct PrivateKey
 ## Topics
 
 ### Creating a private key
-- [init<Bytes>(rawRepresentation: Bytes) throws](p256/signing/privatekey/init(rawrepresentation:).md)
+- [init<Bytes>(rawRepresentation: Bytes) throws](./privatekey/init%28rawrepresentation%29.md)
   Creates a P-256 private key for signing from a collection of bytes.
-- [init(compactRepresentable: Bool)](p256/signing/privatekey/init(compactrepresentable:).md)
+- [init(compactRepresentable: Bool)](./privatekey/init%28compactrepresentable%29.md)
   Creates a random P-256 private key for signing.
-- [init<Bytes>(derRepresentation: Bytes) throws](p256/signing/privatekey/init(derrepresentation:).md)
+- [init<Bytes>(derRepresentation: Bytes) throws](./privatekey/init%28derrepresentation%29.md)
   Creates a P-256 private key for signing from a Distinguished Encoding Rules (DER) encoded representation.
-- [init(pemRepresentation: String) throws](p256/signing/privatekey/init(pemrepresentation:).md)
+- [init(pemRepresentation: String) throws](./privatekey/init%28pemrepresentation%29.md)
   Creates a P-256 private key for signing from a Privacy-Enhanced Mail PEM) representation.
-- [init<Bytes>(x963Representation: Bytes) throws](p256/signing/privatekey/init(x963representation:).md)
+- [init<Bytes>(x963Representation: Bytes) throws](./privatekey/init%28x963representation%29.md)
   Creates a P-256 private key for signing from an ANSI x9.63 representation.
 ### Representing the key
-- [var rawRepresentation: Data](p256/signing/privatekey/rawrepresentation.md)
+- [var rawRepresentation: Data](./privatekey/rawrepresentation.md)
   A data representation of the private key.
-- [var derRepresentation: Data](p256/signing/privatekey/derrepresentation.md)
+- [var derRepresentation: Data](./privatekey/derrepresentation.md)
   A Distinguished Encoding Rules (DER) encoded representation of the private key.
-- [var pemRepresentation: String](p256/signing/privatekey/pemrepresentation.md)
+- [var pemRepresentation: String](./privatekey/pemrepresentation.md)
   A Privacy-Enhanced Mail (PEM) representation of the private key.
-- [var x963Representation: Data](p256/signing/privatekey/x963representation.md)
+- [var x963Representation: Data](./privatekey/x963representation.md)
   An ANSI x9.63 representation of the private key.
 ### Finding the public key
-- [var publicKey: P256.Signing.PublicKey](p256/signing/privatekey/publickey.md)
+- [var publicKey: P256.Signing.PublicKey](./privatekey/publickey.md)
   The corresponding public key.
 ### Creating a signature
-- [func signature<D>(for: D) throws -> P256.Signing.ECDSASignature](p256/signing/privatekey/signature(for:)-5h94p.md)
+- [func signature<D>(for: D) throws -> P256.Signing.ECDSASignature](./privatekey/signature%28for%29-5h94p.md)
   Generates an Elliptic Curve Digital Signature Algorithm (ECDSA) signature of the data you provide over the P-256 elliptic curve, using SHA-256 as the hash function.
-- [func signature<D>(for: D) throws -> P256.Signing.ECDSASignature](p256/signing/privatekey/signature(for:)-1iyzc.md)
+- [func signature<D>(for: D) throws -> P256.Signing.ECDSASignature](./privatekey/signature%28for%29-1iyzc.md)
   Generates an Elliptic Curve Digital Signature Algorithm (ECDSA) signature of the digest you provide over the P-256 elliptic curve.
-- [P256.Signing.ECDSASignature](p256/signing/ecdsasignature.md)
+- [P256.Signing.ECDSASignature](./ecdsasignature.md)
   A P-256 elliptic curve digital signature algorithm (ECDSA) signature.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [P256.Signing.PublicKey](p256/signing/publickey.md)
+### Using keys
+- [P256.Signing.PublicKey](./publickey.md)
   A P-256 public key used to verify cryptographic signatures.
 
 

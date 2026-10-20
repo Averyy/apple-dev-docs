@@ -1,7 +1,8 @@
 # shape
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shape to use for the hover effect.
 
@@ -24,7 +25,8 @@ If the value of this property is `nil`, the system chooses a default shape based
 
 ## See Also
 
-- [struct UIShape](uishape-swift.struct.md)
+### Specifying a hover shape
+- [struct UIShape](../uishape-swift.struct.md)
   An abstract representation of a shape.
 
 

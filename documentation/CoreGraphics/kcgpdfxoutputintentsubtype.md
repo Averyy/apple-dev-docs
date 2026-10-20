@@ -1,7 +1,8 @@
 # kCGPDFXOutputIntentSubtype
 
 **Framework**: Core Graphics  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The output intent subtype. This key is required.
 
@@ -20,18 +21,23 @@ The output intent subtype. This key is required.
 let kCGPDFXOutputIntentSubtype: CFString
 ```
 
+```c
+extern CFStringRef const kCGPDFXOutputIntentSubtype;
+```
+
 #### Discussion
 
-The value of this key must be a [`CFString`](https://developer.apple.com/documentation/corefoundation/cfstring) object equal to `"GTS_PDFX"`; otherwise, the dictionary is ignored.
+The value of this key must be a [`CFString`](../CoreFoundation/cfstring.md) object equal to `"GTS_PDFX"`; otherwise, the dictionary is ignored.
 
 ## See Also
 
-- [let kCGPDFXOutputConditionIdentifier: CFString](kcgpdfxoutputconditionidentifier.md)
-- [let kCGPDFXOutputCondition: CFString](kcgpdfxoutputcondition.md)
+### Output Intent Keys
+- [let kCGPDFXOutputConditionIdentifier: CFString](./kcgpdfxoutputconditionidentifier.md)
+- [let kCGPDFXOutputCondition: CFString](./kcgpdfxoutputcondition.md)
   A text string identifying the intended output device or production condition in a human-readable form.
-- [let kCGPDFXRegistryName: CFString](kcgpdfxregistryname.md)
-- [let kCGPDFXInfo: CFString](kcgpdfxinfo.md)
-- [let kCGPDFXDestinationOutputProfile: CFString](kcgpdfxdestinationoutputprofile.md)
+- [let kCGPDFXRegistryName: CFString](./kcgpdfxregistryname.md)
+- [let kCGPDFXInfo: CFString](./kcgpdfxinfo.md)
+- [let kCGPDFXDestinationOutputProfile: CFString](./kcgpdfxdestinationoutputprofile.md)
 
 
 ---

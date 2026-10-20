@@ -1,7 +1,8 @@
 # unobscuredContentRect
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The visible content region, excluding parts covered by view-specific UI.
 
@@ -16,6 +17,10 @@ The visible content region, excluding parts covered by view-specific UI.
 
 ```swift
 optional var unobscuredContentRect: CGRect { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGRect unobscuredContentRect;
 ```
 
 #### Return Value

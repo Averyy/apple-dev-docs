@@ -1,7 +1,8 @@
 # transports
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of transport types.
 
@@ -17,11 +18,16 @@ The array of transport types.
 var transports: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport] { get set }
 ```
 
+```objc
+@property (nonatomic) NSArray<NSString *> * transports;
+```
+
 ## See Also
 
-- [init(credentialID: Data, transports: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport])](asauthorizationsecuritykeypublickeycredentialdescriptor/init(credentialid:transports:).md)
+### Creating the descriptor
+- [init(credentialID: Data, transports: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport])](./init%28credentialid,transports%29.md)
   Creates the object with the credential ID and the array of transports.
-- [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](asauthorizationsecuritykeypublickeycredentialdescriptor/transport.md)
+- [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](./transport.md)
   A structure that defines the security key credential transport type.
 
 

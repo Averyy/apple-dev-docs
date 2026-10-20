@@ -1,7 +1,8 @@
 # addAction(to:target:selector:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action with the specified target and selector to the UI update link for a particular UI update phase.
 
@@ -18,15 +19,20 @@ Adds an action with the specified target and selector to the UI update link for 
 func addAction(to phase: UIUpdateActionPhase, target: Any, selector: Selector)
 ```
 
+```objc
+- (void) addActionToPhase:(UIUpdateActionPhase *) phase target:(id) target selector:(SEL) selector;
+```
+
 ## See Also
 
-- [func addAction(handler: (UIUpdateLink, UIUpdateInfo) -> Void)](uiupdatelink/addaction(handler:).md)
+### Adding actions
+- [func addAction(handler: (UIUpdateLink, UIUpdateInfo) -> Void)](./addaction%28handler%29.md)
   Adds an action with the specified handler to the UI update link.
-- [func addAction(to: UIUpdateActionPhase, handler: (UIUpdateLink, UIUpdateInfo) -> Void)](uiupdatelink/addaction(to:handler:).md)
+- [func addAction(to: UIUpdateActionPhase, handler: (UIUpdateLink, UIUpdateInfo) -> Void)](./addaction%28to,handler%29.md)
   Adds an action with the specified handler to the UI update link for a particular UI update phase.
-- [func addAction(target: Any, selector: Selector)](uiupdatelink/addaction(target:selector:).md)
+- [func addAction(target: Any, selector: Selector)](./addaction%28target,selector%29.md)
   Adds an action with the specified target and selector to the UI update link.
-- [class UIUpdateActionPhase](uiupdateactionphase.md)
+- [class UIUpdateActionPhase](../uiupdateactionphase.md)
   An object that defines specific phases of the UI update process.
 
 

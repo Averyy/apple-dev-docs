@@ -1,7 +1,8 @@
 # vfs_devblocksize
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Get the block size of the device underlying a mount.
 
@@ -10,11 +11,11 @@ Get the block size of the device underlying a mount.
 
 ## Declaration
 
-```swift
+```c
 int vfs_devblocksize(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Block size.
 

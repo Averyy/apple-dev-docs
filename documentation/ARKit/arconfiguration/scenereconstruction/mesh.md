@@ -1,7 +1,8 @@
 # mesh
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A polygonal mesh approximation of the physical environment.
 
@@ -15,11 +16,16 @@ A polygonal mesh approximation of the physical environment.
 static var mesh: ARConfiguration.SceneReconstruction { get }
 ```
 
+```c
+ARSceneReconstructionMesh
+```
+
 ## See Also
 
-- [init(rawValue: UInt)](arconfiguration/scenereconstruction/init(rawvalue:).md)
+### Modeling the Environment
+- [init(rawValue: UInt)](./init%28rawvalue%29.md)
   Initializes a scene-reconstruction object.
-- [static var meshWithClassification: ARConfiguration.SceneReconstruction](arconfiguration/scenereconstruction/meshwithclassification.md)
+- [static var meshWithClassification: ARConfiguration.SceneReconstruction](./meshwithclassification.md)
   An approximate shape of the physical environment, including classification of the real-world objects within it.
 
 

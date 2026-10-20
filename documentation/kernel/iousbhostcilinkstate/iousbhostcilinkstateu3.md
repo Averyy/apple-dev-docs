@@ -1,14 +1,15 @@
 # IOUSBHostCILinkStateU3
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCILinkStateU3 = 3
 ```
 

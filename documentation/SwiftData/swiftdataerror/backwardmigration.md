@@ -1,7 +1,8 @@
 # backwardMigration
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +22,8 @@ static let backwardMigration: SwiftDataError
 
 ## See Also
 
-- [static let unknownSchema: SwiftDataError](swiftdataerror/unknownschema.md)
+### Migration errors
+- [static let unknownSchema: SwiftDataError](./unknownschema.md)
 
 
 ---

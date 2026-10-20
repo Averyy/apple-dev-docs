@@ -1,7 +1,8 @@
 # toolName
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the tool being invoked.
 
@@ -21,9 +22,10 @@ var toolName: String
 
 ## See Also
 
-- [var arguments: GeneratedContent](transcript/toolcall/arguments.md)
+### Inspecting a tool call
+- [var arguments: GeneratedContent](./arguments.md)
   Arguments to pass to the invoked tool.
-- [var metadata: [String : GeneratedContent]](transcript/toolcall/metadata.md)
+- [var metadata: [String : GeneratedContent]](./metadata.md)
   Metadata produced by the model while generating this tool call.
 
 

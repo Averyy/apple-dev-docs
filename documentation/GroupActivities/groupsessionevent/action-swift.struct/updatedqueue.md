@@ -1,7 +1,8 @@
 # updatedQueue
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An action that represents a nonspecific change to the queue.
 
@@ -21,13 +22,14 @@ static let updatedQueue: GroupSessionEvent.Action
 
 #### Discussion
 
-Use this action when the other action types don’t accurately describe the change you made to the queue. If you can specify the change using a [`GroupSessionEvent.Action.QueueChange`](groupsessionevent/action-swift.struct/queuechange.md) type, use the [`updatedQueue(_:)`](groupsessionevent/action-swift.struct/updatedqueue(_:).md) method instead.
+Use this action when the other action types don’t accurately describe the change you made to the queue. If you can specify the change using a [`GroupSessionEvent.Action.QueueChange`](./queuechange.md) type, use the [`updatedQueue(_:)`](./updatedqueue%28_%29.md) method instead.
 
 ## See Also
 
-- [static func updatedQueue(GroupSessionEvent.Action.QueueChange) -> GroupSessionEvent.Action](groupsessionevent/action-swift.struct/updatedqueue(_:).md)
+### Getting change-related actions
+- [static func updatedQueue(GroupSessionEvent.Action.QueueChange) -> GroupSessionEvent.Action](./updatedqueue%28_%29.md)
   Returns an action that represents a change to the playback queue.
-- [GroupSessionEvent.Action.QueueChange](groupsessionevent/action-swift.struct/queuechange.md)
+- [GroupSessionEvent.Action.QueueChange](./queuechange.md)
   A type that describes a modification to the playback queue.
 
 

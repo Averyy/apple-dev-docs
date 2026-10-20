@@ -1,7 +1,8 @@
 # PDFInterpolationQuality
 
 **Framework**: PDFKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A wrapper for the specified interpolation quality.
 
@@ -19,33 +20,38 @@ A wrapper for the specified interpolation quality.
 enum PDFInterpolationQuality
 ```
 
+```c
+enum PDFInterpolationQuality : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [PDFInterpolationQuality.none](pdfinterpolationquality/none.md)
+- [PDFInterpolationQuality.none](./pdfinterpolationquality/none.md)
   The case where no interpolation quality is specified.
-- [PDFInterpolationQuality.low](pdfinterpolationquality/low.md)
+- [PDFInterpolationQuality.low](./pdfinterpolationquality/low.md)
   The case specifying low interpolation quality.
-- [PDFInterpolationQuality.high](pdfinterpolationquality/high.md)
+- [PDFInterpolationQuality.high](./pdfinterpolationquality/high.md)
   The case specifying high interpolation quality.
 ### Initializers
-- [init?(rawValue: Int)](pdfinterpolationquality/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pdfinterpolationquality/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var shouldAntiAlias: Bool](pdfview/shouldantialias.md)
+### Antialiasing
+- [var shouldAntiAlias: Bool](./pdfview/shouldantialias.md)
   A Boolean value indicating whether the view is antialiased.
-- [var interpolationQuality: PDFInterpolationQuality](pdfview/interpolationquality.md)
+- [var interpolationQuality: PDFInterpolationQuality](./pdfview/interpolationquality.md)
   The interpolation quality for images drawn into the `PDFView` context.
 
 

@@ -1,14 +1,15 @@
 # id
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the electrical load event.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,11 +19,12 @@ let id: UUID
 
 ## See Also
 
-- [let timestamp: Date](electrichvacloadevent/timestamp.md)
+### Getting load event information
+- [let timestamp: Date](./timestamp.md)
   The timestamp for when the event occurred.
-- [let session: ElectricHVACLoadEvent.Session](electrichvacloadevent/session-swift.property.md)
+- [let session: ElectricHVACLoadEvent.Session](./session-swift.property.md)
   The session information.
-- [ElectricHVACLoadEvent.Session](electrichvacloadevent/session-swift.struct.md)
+- [ElectricHVACLoadEvent.Session](./session-swift.struct.md)
   A session that tracks the event.
 
 

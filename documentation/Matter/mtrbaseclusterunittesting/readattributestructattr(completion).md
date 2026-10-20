@@ -1,7 +1,8 @@
 # readAttributeStructAttr(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeStructAttr(completion: @escaping @Sendable (MTRUnitTestingClusterSimpleStruct?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeStructAttr() async throws -> MTRUnitTestingClusterSimpleStruct
+```
+
+```objc
+- (void) readAttributeStructAttrWithCompletion:(void (^)(MTRUnitTestingClusterSimpleStruct *value, NSError *error)) completion;
 ```
 
 

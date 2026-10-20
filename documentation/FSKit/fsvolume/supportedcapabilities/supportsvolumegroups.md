@@ -1,7 +1,8 @@
 # supportsVolumeGroups
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean property that indicates whether the volume supports volume groups.
 
@@ -14,15 +15,20 @@ A Boolean property that indicates whether the volume supports volume groups.
 var supportsVolumeGroups: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL supportsVolumeGroups;
+```
+
 #### Discussion
 
 Volume groups involve multiple logical file systems that the system can mount and unmount together, and for which the system can present common file system identifier information.
 
 ## See Also
 
-- [var supportsSharedSpace: Bool](fsvolume/supportedcapabilities/supportssharedspace.md)
+### Declaring volume capabilities
+- [var supportsSharedSpace: Bool](./supportssharedspace.md)
   A Boolean property that indicates whether the volume supports multiple logical file systems that share space in a single “partition.”
-- [var doesNotSupportVolumeSizes: Bool](fsvolume/supportedcapabilities/doesnotsupportvolumesizes.md)
+- [var doesNotSupportVolumeSizes: Bool](./doesnotsupportvolumesizes.md)
   A Boolean property that indicates the volume doesn’t support certain volume size reports.
 
 

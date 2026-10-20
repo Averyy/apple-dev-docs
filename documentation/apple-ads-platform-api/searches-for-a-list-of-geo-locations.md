@@ -1,7 +1,8 @@
 # Search Geo Locations
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Search for geographic locations for use in ad group geo targeting.
 
@@ -10,7 +11,7 @@ Search for geographic locations for use in ad group geo targeting.
 
 #### Discussion
 
-This endpoint returns a list of geographic locations matching the search criteria. To discover valid geo location identifiers by name before assigning targets to an ad group, use this endpoint. For ID-based lookup of known locations, use the POST endpoint `POST /v1/search/geo` ([`Query Geo Locations`](gets-a-list-of-geo-locations.md)) instead.
+This endpoint returns a list of geographic locations matching the search criteria. To discover valid geo location identifiers by name before assigning targets to an ad group, use this endpoint. For ID-based lookup of known locations, use the POST endpoint `POST /v1/search/geo` ([`Query Geo Locations`](./gets-a-list-of-geo-locations.md)) instead.
 
 The API sorts results alphabetically by `displayName` and paginates them. Each result includes a `legacyId`, which is a pipe-delimited string encoding the full geographic hierarchy (such as `US|CA|San Francisco`), and an `eligibility` object scoped to the requested `supplySource`.
 
@@ -24,7 +25,7 @@ Every request requires `supplySource`, which determines which `entity` types are
 
 Search for localities matching “San Francisco” in the US for App Store campaigns.
 
-```None
+```
 GET https://api.ads.apple.com/v1/search/geo?query=San%20Francisco&entity=Locality&countrycode=US&supplySource=APPSTORE
 ```
 
@@ -66,7 +67,7 @@ GET https://api.ads.apple.com/v1/search/geo?query=San%20Francisco&entity=Localit
 
 Return all admin areas (states) in the US for Maps campaigns. Omit `query` to return every match.
 
-```None
+```
 GET https://api.ads.apple.com/v1/search/geo?entity=AdminArea&countrycode=US&supplySource=MAPS
 ```
 
@@ -106,7 +107,7 @@ GET https://api.ads.apple.com/v1/search/geo?entity=AdminArea&countrycode=US&supp
 
 Search for localities in New York, excluding soft-blocked geos.
 
-```None
+```
 GET https://api.ads.apple.com/v1/search/geo?query=New%20York&entity=Locality&countrycode=US&supplySource=APPSTORE&eligible=true
 ```
 
@@ -148,11 +149,43 @@ GET https://api.ads.apple.com/v1/search/geo?query=New%20York&entity=Locality&cou
 
 ## Parameters
 
+### Query Parameters
+
+- `supplySource` (SearchSupplySourceType) *(required)*: Supply source context for eligibility evaluation. Case-insensitive. Values: `APPSTORE`, `MAPS`. Controls which `entity` types are available. `APPSTORE` excludes the `PostalCode` entity, which is a `MAPS`-level geo. `MAPS` excludes the `Country` entity and restricts results to the US and Canada. Example: `supplySource=APPSTORE`. Omitting it returns a 400 error.
+- `query` (string): Search string. Minimum 2 characters. The API rejects shorter values with error code `MIN_QUERY_LENGTH`. Use `\*` to return all matching geos, or omit the parameter for the same result. Example: `query=San Francisco`.
+
+  **Default**: `*:*`
+- `entity` (GeoEntityType): Geo entity type to filter results. Values: `Country`, `AdminArea`, `Locality`, `PostalCode`. Example: `entity=Locality`.
+- `countrycode` (string): ISO 3166-1 alpha-2 country code to scope results. When `entity` is `AdminArea`, `Locality`, or `PostalCode` and `countrycode` is omitted, defaults to `US`. Example: `countrycode=US`.
+
+  **Default**: `US`
+- `eligible` (boolean): Controls soft-block filtering. When `false` (default), the API includes soft-blocked geos (low search volume, sparse coverage) with eligibility data. When `true`, the API excludes them from results entirely. Example: `eligible=true`.
+
+  **Default**: `false`
+- `offset` (int32): Zero-based index of the first result to return. Defaults to `0`. Example: `offset=20`.
+
+  **Default**: `0`
+- `pageSize` (int32): Maximum number of results per page. Defaults to `20`. Example: `pageSize=50`.
+
+  **Default**: `20`
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`GeoSearchResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Query Geo Locations](gets-a-list-of-geo-locations.md)
+- [Query Geo Locations](./gets-a-list-of-geo-locations.md)
   Search for geographic locations by entity type and ID for use in ad group geo targeting.
 
 

@@ -1,12 +1,13 @@
 # handle(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the system launched your app to resume an extended runtime session.
 
 **Availability**:
-- watchOS 6.0+
+- watchOS 6.0+ - Deprecated in 9.2
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Tells the delegate that the system launched your app to resume an extended runti
 optional func handle(_ extendedRuntimeSession: WKExtendedRuntimeSession)
 ```
 
+```objc
+- (void) handleExtendedRuntimeSession:(WKExtendedRuntimeSession *) extendedRuntimeSession;
+```
+
 ## Mentions
 
-- [Using extended runtime sessions](using-extended-runtime-sessions.md)
+- [Using extended runtime sessions](../using-extended-runtime-sessions.md)
 
 #### Discussion
 

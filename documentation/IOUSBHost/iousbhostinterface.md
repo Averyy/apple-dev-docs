@@ -1,7 +1,8 @@
 # IOUSBHostInterface
 
 **Framework**: IOUSBHost  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The class for accessing USB-related services.
 
@@ -15,45 +16,50 @@ The class for accessing USB-related services.
 class IOUSBHostInterface
 ```
 
+```objc
+@interface IOUSBHostInterface : IOUSBHostObject
+```
+
 #### Overview
 
-Use this class to create pipes, retrieve descriptors, send device requests, and enable power savings. Create an instance of the class with [`initWithIOService:options:queue:error:interestHandler:`](iousbhostobject/initwithioservice:options:queue:error:interesthandler:.md).
+Use this class to create pipes, retrieve descriptors, send device requests, and enable power savings. Create an instance of the class with [`initWithIOService:options:queue:error:interestHandler:`](./iousbhostobject/initwithioservice_options_queue_error_interesthandler_.md).
 
 ## Topics
 
 ### Retrieving Function Descriptors
-- [var configurationDescriptor: UnsafePointer<IOUSBConfigurationDescriptor>](iousbhostinterface/configurationdescriptor.md)
+- [var configurationDescriptor: UnsafePointer<IOUSBConfigurationDescriptor>](./iousbhostinterface/configurationdescriptor.md)
   The configuration descriptor for the interface.
-- [var interfaceDescriptor: UnsafePointer<IOUSBInterfaceDescriptor>](iousbhostinterface/interfacedescriptor.md)
+- [var interfaceDescriptor: UnsafePointer<IOUSBInterfaceDescriptor>](./iousbhostinterface/interfacedescriptor.md)
   The descriptor for the interface.
 ### Managing Pipes
-- [func selectAlternateSetting(Int) throws](iousbhostinterface/selectalternatesetting(_:).md)
+- [func selectAlternateSetting(Int) throws](./iousbhostinterface/selectalternatesetting%28_%29.md)
   Selects an alternative setting for the interface.
-- [func copyPipe(withAddress: Int) throws -> IOUSBHostPipe](iousbhostinterface/copypipe(withaddress:).md)
+- [func copyPipe(withAddress: Int) throws -> IOUSBHostPipe](./iousbhostinterface/copypipe%28withaddress%29.md)
   Copies a pipe for a specific endpoint address.
 ### Enabling Power Savings
-- [var idleTimeout: TimeInterval](iousbhostinterface/idletimeout.md)
+- [var idleTimeout: TimeInterval](./iousbhostinterface/idletimeout.md)
   The current idle suspend timeout.
-- [func setIdleTimeout(TimeInterval) throws](iousbhostinterface/setidletimeout(_:).md)
+- [func setIdleTimeout(TimeInterval) throws](./iousbhostinterface/setidletimeout%28_%29.md)
   Sets the desired idle suspend timeout for the interface.
 
 ## Relationships
 
 ### Inherits From
-- [IOUSBHostObject](iousbhostobject.md)
+- [IOUSBHostObject](./iousbhostobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class IOUSBHostPipe](iousbhostpipe.md)
+### Function Drivers
+- [class IOUSBHostPipe](./iousbhostpipe.md)
   The class that sends control, bulk, interrupt, and isochronous input/output requests for function drivers, and manages stream capabilities.
-- [class IOUSBHostStream](iousbhoststream.md)
+- [class IOUSBHostStream](./iousbhoststream.md)
   The class responsible for sending stream data for function drivers.
 
 

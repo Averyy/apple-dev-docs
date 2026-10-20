@@ -1,7 +1,8 @@
 # data
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Extract a `Data` object.
 

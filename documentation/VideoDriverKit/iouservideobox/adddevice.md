@@ -1,7 +1,8 @@
 # AddDevice
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a video device to the video box.
 
@@ -10,7 +11,7 @@ Adds a video device to the video box.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t AddDevice(IOUserVideoDevice *in_device);
 ```
 
@@ -28,15 +29,16 @@ The box doesn’t own the device. The device’s reference count will be increme
 
 ## See Also
 
-- [RemoveDevice](iouservideobox/removedevice.md)
+### Managing box contents
+- [RemoveDevice](./removedevice.md)
   Removes a video device from the video box.
-- [IOUserVideoDevice](iouservideodevice.md)
+- [IOUserVideoDevice](../iouservideodevice.md)
   A video device.
-- [AddClockDevice](iouservideobox/addclockdevice.md)
+- [AddClockDevice](./addclockdevice.md)
   Adds a clock device video box.
-- [RemoveClockDevice](iouservideobox/removeclockdevice.md)
+- [RemoveClockDevice](./removeclockdevice.md)
   Removes aa clock device from the video box.
-- [IOUserVideoClockDevice](iouservideoclockdevice.md)
+- [IOUserVideoClockDevice](../iouservideoclockdevice.md)
   A clock device.
 
 

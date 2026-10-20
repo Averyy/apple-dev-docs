@@ -1,7 +1,8 @@
 # hasChanges
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the difference has changes.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates if the difference has changes.
 var hasChanges: Bool { get }
 ```
 
+```objc
+@property (assign, readonly) BOOL hasChanges;
+```
+
 ## See Also
 
-- [var insertions: [NSOrderedCollectionChange]](nsorderedcollectiondifference/insertions.md)
+### Accessing Changes
+- [var insertions: [NSOrderedCollectionChange]](./insertions.md)
   A collection of insertion change objects.
-- [var removals: [NSOrderedCollectionChange]](nsorderedcollectiondifference/removals.md)
+- [var removals: [NSOrderedCollectionChange]](./removals.md)
   A collection of removal change objects.
-- [class NSOrderedCollectionChange](nsorderedcollectionchange.md)
+- [class NSOrderedCollectionChange](../nsorderedcollectionchange.md)
   An object that represents an indexed change within an ordered collection.
-- [enum NSCollectionChangeType](nscollectionchangetype.md)
+- [enum NSCollectionChangeType](../nscollectionchangetype.md)
   The type of change represented in computing the difference of an ordered collection.
 
 

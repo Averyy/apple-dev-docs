@@ -1,7 +1,8 @@
 # init(version:info:retain:release:copyDescription:)
 
 **Framework**: CFNetwork  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that contains user-defined data and callbacks for net service browsers using the specified values.
 
@@ -21,7 +22,8 @@ init(version: CFIndex, info: UnsafeMutableRawPointer?, retain: CFAllocatorRetain
 
 ## See Also
 
-- [init()](cfnetserviceclientcontext/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates an object that contains user-defined data and callbacks for net service browsers.
 
 

@@ -1,7 +1,8 @@
 # MTLSamplerBorderColor.opaqueBlack
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An opaque black color `(0,0,0,1)` for texture values outside the border
 
@@ -19,11 +20,16 @@ An opaque black color `(0,0,0,1)` for texture values outside the border
 case opaqueBlack
 ```
 
+```c
+MTLSamplerBorderColorOpaqueBlack
+```
+
 ## See Also
 
-- [MTLSamplerBorderColor.transparentBlack](mtlsamplerbordercolor/transparentblack.md)
+### Specifying border color options
+- [MTLSamplerBorderColor.transparentBlack](./transparentblack.md)
   A transparent black color `(0,0,0,0)` for texture values outside the border.
-- [MTLSamplerBorderColor.opaqueWhite](mtlsamplerbordercolor/opaquewhite.md)
+- [MTLSamplerBorderColor.opaqueWhite](./opaquewhite.md)
   An opaque white color `(1,1,1,1)` for texture values outside the border.
 
 

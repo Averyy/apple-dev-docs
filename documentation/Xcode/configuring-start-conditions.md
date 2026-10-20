@@ -1,6 +1,7 @@
 # Configuring start conditions
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Configure Xcode Cloud to start a build when you update a branch, pull request, or Git tag, or based on a schedule.
 
@@ -18,25 +19,25 @@ You can configure your Xcode Cloud workflow with any of the following start cond
 
 By configuring several start conditions for one workflow and reusing the workflow at different moments in your development life cycle, you can reduce the number of workflows you need to maintain. For example, you can configure one workflow to perform verifications for each change to a branch or a pull request — you don’t need to configure two separate workflows.
 
-For additional information about Xcode Cloud workflows, see [`Xcode Cloud workflow reference`](xcode-cloud-workflow-reference.md), [`Explore Xcode Cloud workflows`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10268), and [`Customize your Advanced Xcode Cloud workflows`](https://developer.apple.comhttps://developer.apple.com/wwdc21/10269).
+For additional information about Xcode Cloud workflows, see [Xcode Cloud workflow reference](./xcode-cloud-workflow-reference.md), [Explore Xcode Cloud workflows](https://developer.apple.com/wwdc21/10268), and [Customize your Advanced Xcode Cloud workflows](https://developer.apple.com/wwdc21/10269).
 
-#### Edit Add and Remove Start Conditions
+#### Edit, add, and remove start conditions
 
 To make changes to a workflow’s start conditions, open your workflow in Xcode, choose an already configured start condition in the Start Conditions section, or add a new start condition using the Add button (+) next to Start Conditions.
 
-![A screenshot that shows a workflow’s Start Condition section in Xcode.](/images/com.apple.Xcode/Configuring-Start-Conditions-1@2x.png)
+![A screenshot that shows a workflow’s Start Condition section in Xcode.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Configuring-Start-Conditions-1@2x.png)
 
-Additionally, configure your workflow and its start conditions in the Xcode Cloud tab on the [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com) website. This is especially convenient if you manage Xcode Cloud workflows but don’t have access to the Xcode project — a common case in a corporate context.
+Additionally, configure your workflow and its start conditions in the Xcode Cloud tab on the [App Store Connect](https://appstoreconnect.apple.com) website. This is especially convenient if you manage Xcode Cloud workflows but don’t have access to the Xcode project — a common case in a corporate context.
 
-![A screenshot that shows a workflow’s Start Condition section on the App Store Connect website.](/images/com.apple.Xcode/Configuring-Start-Conditions-2@2x.png)
+![A screenshot that shows a workflow’s Start Condition section on the App Store Connect website.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Configuring-Start-Conditions-2@2x.png)
 
 > **Note**: You need to use Xcode to initially configure your project or workspace to use Xcode Cloud. After you’ve started your first build, you can manage workflows in either Xcode or App Store Connect.
 
-##### Review the Default Start Condition
+##### Review the default start condition
 
-When you create a new workflow, Xcode configures a default workflow that uses the Branch Changes start condition for each change to your repository’s default branch. Even if the workflow doesn’t take a lot of time to complete, starting a new build for every change from your repository’s default branch can be impractical. For example, a workflow that runs UI tests on many simulated devices can take a significant amount of time and slow your development cycle. To start builds less frequently, use a different start condition or configure Xcode Cloud to monitor or ignore changes to specific files or folders as described in [`Monitor or ignore specific files and folders`](configuring-start-conditions#Monitor-or-ignore-specific-files-and-folders.md) below.
+When you create a new workflow, Xcode configures a default workflow that uses the Branch Changes start condition for each change to your repository’s default branch. Even if the workflow doesn’t take a lot of time to complete, starting a new build for every change from your repository’s default branch can be impractical. For example, a workflow that runs UI tests on many simulated devices can take a significant amount of time and slow your development cycle. To start builds less frequently, use a different start condition or configure Xcode Cloud to monitor or ignore changes to specific files or folders as described in [Monitor or ignore specific files and folders](./configuring-start-conditions.md#Monitor-or-ignore-specific-files-and-folders) below.
 
-##### Monitor Custom Branches for Changes
+##### Monitor custom branches for changes
 
 By default, workflows use the Branch Changes start condition for your Git repository’s default branch. However, you might want to configure Xcode Cloud to monitor a different branch, several branches, or every branch for changes.
 
@@ -45,13 +46,13 @@ First, open your workflow in Xcode or App Store Connect. Select or add the Branc
 - Choose the Any Branch setting to monitor every branch for changes. Note that this setting can start a lot of builds unless you set the Auto-cancel Builds setting or configure custom conditions.
 - Choose the Custom Branches setting to add one or more custom branches. Existing branches appear as you type, and both Xcode and App Store Connect display a warning if you enter a branch that doesn’t exist in your remote Git repository.
 
-![A screenshot of Xcode that shows a workflow’s Start Condition section with configured custom branches that begin with the string “feature”.](/images/com.apple.Xcode/Configuring-Start-Conditions-3@2x.png)
+![A screenshot of Xcode that shows a workflow’s Start Condition section with configured custom branches that begin with the string “feature”.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Configuring-Start-Conditions-3@2x.png)
 
 > 💡 **Tip**: Instead of specifying several custom branches, configure a workflow to start a build from every branch that starts with a custom string. For example, enter `feature` and choose “Branches beginning with feature”.
 
-You can further customize the Branch Changes start condition with the Custom Conditions setting. For more information, see [`Monitor or ignore specific files and folders`](configuring-start-conditions#Monitor-or-ignore-specific-files-and-folders.md) below.
+You can further customize the Branch Changes start condition with the Custom Conditions setting. For more information, see [Monitor or ignore specific files and folders](./configuring-start-conditions.md#Monitor-or-ignore-specific-files-and-folders) below.
 
-##### Start Builds for Changes to a Pull Request
+##### Start builds for changes to a pull request
 
 By using pull requests, you use a collaborative software development process that helps with identifying errors. To help detect issues in a PR, add the Pull Request Changes start condition to a workflow. Xcode Cloud starts a new build when you create or update a PR.
 
@@ -64,24 +65,24 @@ By default, the Pull Request Changes condition starts a new build for each new o
 
 Instead of specifying several custom source and target branches, configure a workflow to start a build if a PR involves branches that start with a custom string. For example, use Any Branch for the Source Branch setting. Then, change the Target Branch setting to Custom Branches and enter `release`. As a result, Xcode Cloud starts a build from every PR that targets branches that start with  `release`.
 
-![A screenshot of Xcode that shows a workflow that uses the Pull Request Changes start condition. The user has configured the condition to start a new build for PRs for any source branch and target branches that start with the string release.](/images/com.apple.Xcode/Configuring-Start-Conditions-4@2x.png)
+![A screenshot of Xcode that shows a workflow that uses the Pull Request Changes start condition. The user has configured the condition to start a new build for PRs for any source branch and target branches that start with the string release.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Configuring-Start-Conditions-4@2x.png)
 
-You can further customize the Pull Request Changes start condition with the Custom Conditions setting. For more information, see [`Monitor or ignore specific files and folders`](configuring-start-conditions#Monitor-or-ignore-specific-files-and-folders.md) below.
+You can further customize the Pull Request Changes start condition with the Custom Conditions setting. For more information, see [Monitor or ignore specific files and folders](./configuring-start-conditions.md#Monitor-or-ignore-specific-files-and-folders) below.
 
-##### Start Builds for New or Updated Git Tags
+##### Start builds for new or updated Git tags
 
 Similar to how you can configure a workflow that starts a new build if a branch changes, configure Xcode Cloud to start a build if you create or update a Git tag. Add the Tag Changes start condition in Xcode or App Store Connect to a workflow and choose between:
 
 - **Any Tag**: This setting tells Xcode Cloud to start a new build every time you create or update a tag.
 - **Custom Tags**: This setting tells Xcode Cloud to monitor one or more custom tags for changes. Both Xcode and App Store Connect display a warning if you enter a tag that doesn’t exist on your remote Git repository.
 
-![A screenshot of App Store Connect that shows the Tag Changes start condition. The user has configured the condition for tags that start with the string v1.](/images/com.apple.Xcode/Configuring-Start-Conditions-5@2x.png)
+![A screenshot of App Store Connect that shows the Tag Changes start condition. The user has configured the condition for tags that start with the string v1.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Configuring-Start-Conditions-5@2x.png)
 
 > 💡 **Tip**: Instead of specifying several custom tags, configure a workflow to start a build from every tag that starts with a given string. For example, enter `v1` and choose “Tags beginning with v1”.
 
 You can further customize the Branch Changes start condition with the Custom Conditions setting.
 
-##### Monitor or Ignore Specific Files and Folders
+##### Monitor or ignore specific files and folders
 
 If you add the Branch Changes, Pull Request Changes, or Tag Changes start condition to a workflow, there’s a chance Xcode Cloud starts new builds too often. For example, your team may use a single repository for all of your team’s code and not every change affects your app. In contrast, you might want Xcode Cloud to only start a build if a specific file or folder changes. To accommodate these use cases, further configure start conditions to ignore changes to custom files and folders or to only start a build if a specified file or folder changes.
 
@@ -103,23 +104,23 @@ If you choose Filename, don’t include a wildcard like `*` in the filename. For
 
 > **Note**: A start condition’s Custom Conditions setting can either start or skip a build, not both.
 
-##### Skip a Build
+##### Skip a build
 
 When you push changes to your Git repository in quick succession — for example, in early development of your app — you may want Xcode Cloud to ignore a change and not start a build. To tell Xcode Cloud to skip a build when you push changes, include `[ci skip]` in the title or message of the latest commit you push to your remote repository.
 
-If you require Xcode Cloud builds or actions to succeed before users can merge a PR, the website for a PR indicates that Xcode Cloud skipped a build for the most recent change. To learn more about configuring requirements for PRs, see [`Configuring requirements for merging a pull request`](configuring-requirements-for-merging-a-pull-request.md).
+If you require Xcode Cloud builds or actions to succeed before users can merge a PR, the website for a PR indicates that Xcode Cloud skipped a build for the most recent change. To learn more about configuring requirements for PRs, see [Configuring requirements for merging a pull request](./configuring-requirements-for-merging-a-pull-request.md).
 
-##### Set a Schedule
+##### Set a schedule
 
-In addition to starting a build when a change meets a start condition, you can configure a workflow to start a build based on a schedule. For example, distributing a new version of your app to testers with [`TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/) for every branch or pull request change will overwhelm your testers. Instead, distribute a new version based on a schedule; for example, once per week.
+In addition to starting a build when a change meets a start condition, you can configure a workflow to start a build based on a schedule. For example, distributing a new version of your app to testers with [TestFlight](https://developer.apple.com/testflight/) for every branch or pull request change will overwhelm your testers. Instead, distribute a new version based on a schedule; for example, once per week.
 
 To configure a workflow to start a build based on a schedule, add the On a Schedule for a Branch start condition and specify the frequency, time, and branch.
 
 The following screenshot shows a workflow that starts a build on every business day at 10:00 p.m. Central European Time from the `main` branch:
 
-![A screenshot that shows a workflow in Xcode that starts a build on every business day at 10:00 p.m. Central European Time from the main branch.](/images/com.apple.Xcode/Configuring-Start-Conditions-6@2x.png)
+![A screenshot that shows a workflow in Xcode that starts a build on every business day at 10:00 p.m. Central European Time from the main branch.](https://developer.apple.com/tutorials/images/com.apple.Xcode/Configuring-Start-Conditions-6@2x.png)
 
-##### Manually Start a Build
+##### Manually start a build
 
 Team members can manually start an Xcode Cloud build for workflows you configure with specific start conditions. To support starting a build manually without tying it to a Git event or a schedule, add a Manual Start condition and configure the specific branches, tags, and pull requests to which it applies.
 

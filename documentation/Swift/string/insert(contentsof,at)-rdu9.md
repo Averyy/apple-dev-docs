@@ -1,7 +1,8 @@
 # insert(contentsOf:at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the elements of a sequence into the collection at the specified position.
 
@@ -35,7 +36,7 @@ print(numbers)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
+> **Complexity**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If `i == endIndex`, this method is equivalent to `append(contentsOf:)`.
 
 ## Parameters
 
@@ -44,11 +45,12 @@ Calling this method may invalidate any existing indices for use with this collec
 
 ## See Also
 
-- [func insert(Character, at: String.Index)](string/insert(_:at:).md)
+### Inserting Characters
+- [func insert(Character, at: String.Index)](./insert%28_,at%29.md)
   Inserts a new character at the specified position.
-- [func insert(Self.Element, at: Self.Index)](string/insert(_:at:)-88yqh.md)
+- [func insert(Self.Element, at: Self.Index)](./insert%28_,at%29-88yqh.md)
   Inserts a new element into the collection at the specified position.
-- [func insert<S>(contentsOf: S, at: String.Index)](string/insert(contentsof:at:).md)
+- [func insert<S>(contentsOf: S, at: String.Index)](./insert%28contentsof,at%29.md)
   Inserts a collection of characters at the specified position.
 
 

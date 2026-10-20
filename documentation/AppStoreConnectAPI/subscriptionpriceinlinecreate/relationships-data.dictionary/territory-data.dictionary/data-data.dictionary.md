@@ -1,7 +1,8 @@
 # SubscriptionPriceInlineCreate.Relationships.Territory.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to update a subscription price inline create.
 
@@ -10,14 +11,14 @@ The request body you use to update a subscription price inline create.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionPriceInlineCreate.Relationships.Territory.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `territories`
 
 
 ---

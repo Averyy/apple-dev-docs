@@ -1,7 +1,8 @@
 # WebKitMediaKeys
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,18 +10,18 @@
 
 ## Declaration
 
-```swift
+```
 interface WebKitMediaKeys
 ```
 
 ## Topics
 
 ### Instance Properties
-- [keySystem](webkitmediakeys/2871340-keysystem.md)
+- [keySystem](./webkitmediakeys/api-2871340-keysystem.md)
 ### Instance Methods
-- [createSession](webkitmediakeys/2871278-createsession.md)
+- [createSession](./webkitmediakeys/api-2871278-createsession.md)
 ### Type Methods
-- [isTypeSupported](webkitmediakeys/2871070-istypesupported.md)
+- [isTypeSupported](./webkitmediakeys/api-2871070-istypesupported.md)
 
 
 ---

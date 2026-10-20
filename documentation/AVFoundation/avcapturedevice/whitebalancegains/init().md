@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 The default initializer for white balance gains.
 
@@ -19,7 +20,8 @@ init()
 
 ## See Also
 
-- [init(redGain: Float, greenGain: Float, blueGain: Float)](avcapturedevice/whitebalancegains/init(redgain:greengain:bluegain:).md)
+### Creating white balance gains
+- [init(redGain: Float, greenGain: Float, blueGain: Float)](./init%28redgain,greengain,bluegain%29.md)
   Initializes a white balance gain from its red, green, and blue gain components.
 
 

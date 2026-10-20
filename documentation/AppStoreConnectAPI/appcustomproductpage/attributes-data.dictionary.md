@@ -1,7 +1,8 @@
 # AppCustomProductPage.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an app custom product page resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an app custom product page resource.
 
 ## Declaration
 
-```swift
+```
 object AppCustomProductPage.Attributes
 ```
 
@@ -22,7 +23,8 @@ object AppCustomProductPage.Attributes
 
 ## See Also
 
-- [object AppCustomProductPage.Relationships](appcustomproductpage/relationships-data.dictionary.md)
+### Objects
+- [object AppCustomProductPage.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

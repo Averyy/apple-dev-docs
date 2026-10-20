@@ -1,7 +1,8 @@
 # init(forUpdatingAtPath:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a file handle initialized for reading and writing to the file, device, or named socket at the specified path.
 
@@ -20,13 +21,17 @@ Returns a file handle initialized for reading and writing to the file, device, o
 convenience init?(forUpdatingAtPath path: String)
 ```
 
+```objc
++ (instancetype) fileHandleForUpdatingAtPath:(NSString *) path;
+```
+
 #### Return Value
 
 The initialized file handle object or `nil` if no file exists at `path`.
 
 #### Discussion
 
-The file pointer is set to the beginning of the file. The returned object responds to both   `read...` messages and [`write(_:)`](filehandle/write(_:).md).
+The file pointer is set to the beginning of the file. The returned object responds to both   `read...` messages and [`write(_:)`](./write%28_%29.md).
 
 When using this method to create a file handle object, the file handle owns its associated file descriptor and is responsible for closing it.
 
@@ -36,27 +41,29 @@ When using this method to create a file handle object, the file handle owns its 
 
 ## See Also
 
-- [var availableData: Data](filehandle/availabledata.md)
+### Related Documentation
+- [var availableData: Data](./availabledata.md)
   The data currently available in the receiver.
-- [func readData(ofLength: Int) -> Data](filehandle/readdata(oflength:).md)
+- [func readData(ofLength: Int) -> Data](./readdata%28oflength%29.md)
   Reads data synchronously up to the specified number of bytes.
-- [func readDataToEndOfFile() -> Data](filehandle/readdatatoendoffile.md)
+- [func readDataToEndOfFile() -> Data](./readdatatoendoffile%28%29.md)
   Reads the available data synchronously up to the end of file or maximum number of bytes.
-- [convenience init(fileDescriptor: Int32)](filehandle/init(filedescriptor:).md)
+### Creating a file handle
+- [convenience init(fileDescriptor: Int32)](./init%28filedescriptor%29.md)
   Creates and returns a file handle object associated with the specified file descriptor.
-- [init(fileDescriptor: Int32, closeOnDealloc: Bool)](filehandle/init(filedescriptor:closeondealloc:).md)
+- [init(fileDescriptor: Int32, closeOnDealloc: Bool)](./init%28filedescriptor,closeondealloc%29.md)
   Creates and returns a file handle object associated with the specified file descriptor and deallocation policy.
-- [convenience init?(forReadingAtPath: String)](filehandle/init(forreadingatpath:).md)
+- [convenience init?(forReadingAtPath: String)](./init%28forreadingatpath%29.md)
   Returns a file handle initialized for reading the file, device, or named socket at the specified path.
-- [convenience init(forReadingFromURL: URL) throws](filehandle/init(forreadingfromurl:).md)
+- [convenience init(forReadingFromURL: URL) throws](./init%28forreadingfromurl%29.md)
   Returns a file handle initialized for reading the file, device, or named socket at the specified URL.
-- [convenience init?(forWritingAtPath: String)](filehandle/init(forwritingatpath:).md)
+- [convenience init?(forWritingAtPath: String)](./init%28forwritingatpath%29.md)
   Returns a file handle initialized for writing to the file, device, or named socket at the specified path.
-- [convenience init(forWritingToURL: URL) throws](filehandle/init(forwritingtourl:).md)
+- [convenience init(forWritingToURL: URL) throws](./init%28forwritingtourl%29.md)
   Returns a file handle initialized for writing to the file, device, or named socket at the specified URL.
-- [convenience init(forUpdatingURL: URL) throws](filehandle/init(forupdatingurl:).md)
+- [convenience init(forUpdatingURL: URL) throws](./init%28forupdatingurl%29.md)
   Returns a file handle initialized for reading and writing to the file, device, or named socket at the specified URL.
-- [init?(coder: NSCoder)](filehandle/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns a file handle initialized from data in an unarchiver.
 
 

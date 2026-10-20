@@ -1,7 +1,8 @@
 # ScrollPhase.decelerating
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The decelerating phase where the user use has stopped interacting with the scroll view and the scroll view is decelerating towards its final target.
 
@@ -22,13 +23,14 @@ case decelerating
 
 ## See Also
 
-- [ScrollPhase.animating](scrollphase/animating.md)
+### Getting scroll gesture states
+- [ScrollPhase.animating](./animating.md)
   The animating phase where the scroll view is animating towards a final target.
-- [ScrollPhase.idle](scrollphase/idle.md)
+- [ScrollPhase.idle](./idle.md)
   The idle phase where no kind of scrolling is occurring.
-- [ScrollPhase.interacting](scrollphase/interacting.md)
+- [ScrollPhase.interacting](./interacting.md)
   The interacting phase where the user is interacting with the scroll view.
-- [ScrollPhase.tracking](scrollphase/tracking.md)
+- [ScrollPhase.tracking](./tracking.md)
   The tracking phase where the scroll view is tracking a potential scroll by the user but the user hasn’t started a scroll.
 
 

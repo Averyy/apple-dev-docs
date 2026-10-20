@@ -1,7 +1,8 @@
 # availability
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The availability setting for the event.
 
@@ -19,39 +20,45 @@ The availability setting for the event.
 var availability: EKEventAvailability { get set }
 ```
 
+```objc
+@property (nonatomic) EKEventAvailability availability;
+```
+
 #### Discussion
 
 This setting is used by CalDAV and Exchange servers to indicate how the event should be treated for scheduling purposes.
 
-If the event’s calendar does not support availability settings, this property’s value is [`EKEventAvailability.notSupported`](ekeventavailability/notsupported.md).
+If the event’s calendar does not support availability settings, this property’s value is [`EKEventAvailability.notSupported`](../ekeventavailability/notsupported.md).
 
 ## See Also
 
-- [enum EKEventAvailability](ekeventavailability.md)
+### Related Documentation
+- [enum EKEventAvailability](../ekeventavailability.md)
   The event’s availability setting for scheduling purposes.
-- [var eventIdentifier: String!](ekevent/eventidentifier.md)
+### Accessing Event Properties
+- [var eventIdentifier: String!](./eventidentifier.md)
   A unique identifier for the event.
-- [var startDate: Date!](ekevent/startdate.md)
+- [var startDate: Date!](./startdate.md)
   The start date of the event.
-- [var endDate: Date!](ekevent/enddate.md)
+- [var endDate: Date!](./enddate.md)
   The end date for the event.
-- [var isAllDay: Bool](ekevent/isallday.md)
+- [var isAllDay: Bool](./isallday.md)
   A Boolean value that indicates whether the event is an all-day event.
-- [var occurrenceDate: Date!](ekevent/occurrencedate.md)
+- [var occurrenceDate: Date!](./occurrencedate.md)
   The original occurrence date of an event if it is part of a recurring series.
-- [var isDetached: Bool](ekevent/isdetached.md)
+- [var isDetached: Bool](./isdetached.md)
   A Boolean value that indicates whether an event is a detached instance of a repeating event.
-- [var organizer: EKParticipant?](ekevent/organizer.md)
+- [var organizer: EKParticipant?](./organizer.md)
   The organizer associated with the event.
-- [var status: EKEventStatus](ekevent/status.md)
+- [var status: EKEventStatus](./status.md)
   The status of the event.
-- [var birthdayContactIdentifier: String?](ekevent/birthdaycontactidentifier.md)
+- [var birthdayContactIdentifier: String?](./birthdaycontactidentifier.md)
   The contact identifier of the person for this birthday event.
-- [var structuredLocation: EKStructuredLocation?](ekevent/structuredlocation.md)
+- [var structuredLocation: EKStructuredLocation?](./structuredlocation.md)
   The event’s location with a potential geocoordinate.
-- [var birthdayPersonID: Int](ekevent/birthdaypersonid.md)
+- [var birthdayPersonID: Int](./birthdaypersonid.md)
   The Address Book framework record identifier of the person for this birthday event.
-- [var birthdayPersonUniqueID: String?](ekevent/birthdaypersonuniqueid.md)
+- [var birthdayPersonUniqueID: String?](./birthdaypersonuniqueid.md)
   The Address Book framework record identifier of the person for this birthday event.
 
 

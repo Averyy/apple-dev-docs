@@ -1,14 +1,15 @@
 # task_gpu_stat_reserved2
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 uint64_t task_gpu_stat_reserved2;
 ```
 

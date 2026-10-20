@@ -1,7 +1,8 @@
 # init(labeledBySubdirectoryNamesAt:type:continueOnFailure:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Reads training examples from a directory containing files in labeled sub-directories.
 
@@ -24,7 +25,7 @@ init(labeledBySubdirectoryNamesAt url: URL, type: UTType, continueOnFailure: Boo
 
 Take for example this directory structure:
 
-```None
+```
 /
     foo/
         file1.png
@@ -44,7 +45,8 @@ It would produce two labels (foo and bar) with two URLs each.
 
 ## See Also
 
-- [init(labeledByNamesAt: URL, separator: Character, index: Int, type: UTType, continueOnFailure: Bool) throws](annotatedfiles/init(labeledbynamesat:separator:index:type:continueonfailure:).md)
+### Creating the feature
+- [init(labeledByNamesAt: URL, separator: Character, index: Int, type: UTType, continueOnFailure: Bool) throws](./init%28labeledbynamesat,separator,index,type,continueonfailure%29.md)
   Reads training examples from a directory containing files having their labels in the name. The name can contain multiple words separated by a `separator`. So the `index` tells the position of the label in the file name. Files with incorrect name format are ignored.
 
 

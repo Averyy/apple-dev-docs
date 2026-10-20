@@ -1,7 +1,8 @@
 # userDefinedAttributes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Attributes of the event that the vendor or app defines.
 
@@ -18,6 +19,10 @@ Attributes of the event that the vendor or app defines.
 
 ```swift
 var userDefinedAttributes: [AnyHashable : any Sendable] { get set }
+```
+
+```objc
+@property (nonatomic, readonly) NSDictionary * userDefinedAttributes;
 ```
 
 

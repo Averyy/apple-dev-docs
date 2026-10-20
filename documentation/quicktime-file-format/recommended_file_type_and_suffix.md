@@ -1,6 +1,7 @@
 # Recommended file type and suffix
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Identify your image file with a file type and suffix.
 
@@ -10,7 +11,8 @@ On Mac OS systems, QuickTime image files are identified by the file type `'qtif'
 
 ## See Also
 
-- [Atom types in QuickTime image files](atom_types_in_quicktime_image_files.md)
+### Storing image data
+- [Atom types in QuickTime image files](./atom_types_in_quicktime_image_files.md)
   Build QuickTime image files with atoms.
 
 

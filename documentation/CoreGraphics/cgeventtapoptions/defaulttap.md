@@ -1,16 +1,21 @@
 # CGEventTapOptions.defaultTap
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case defaultTap
+```
+
+```c
+kCGEventTapOptionDefault
 ```
 
 #### Discussion
@@ -19,7 +24,8 @@ Specifies that a new event tap is an active filter. (Applications targeting OS X
 
 ## See Also
 
-- [CGEventTapOptions.listenOnly](cgeventtapoptions/listenonly.md)
+### Constants
+- [CGEventTapOptions.listenOnly](./listenonly.md)
 
 
 ---

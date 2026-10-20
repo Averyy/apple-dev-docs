@@ -1,7 +1,8 @@
 # uniformEdges(topRadius:bottomRadius:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A configuration that applies the `topRadius` uniformly to the top-left and top-right corners, and the `bottomRadius` uniformly to the bottom-left and bottom-right corners. When the uniform corners differ, it uses the largest of the resolved corner radii.
 
@@ -12,6 +13,10 @@ A configuration that applies the `topRadius` uniformly to the top-left and top-r
 
 ```swift
 class func uniformEdges(topRadius: NSViewCornerRadius, bottomRadius: NSViewCornerRadius) -> NSViewCornerConfiguration
+```
+
+```objc
++ (NSViewCornerConfiguration *) configurationWithUniformTopRadius:(NSViewCornerRadius *) topRadius bottomRadius:(NSViewCornerRadius *) bottomRadius;
 ```
 
 ## Parameters

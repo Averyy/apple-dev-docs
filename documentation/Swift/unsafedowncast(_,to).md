@@ -1,7 +1,8 @@
 # unsafeDowncast(_:to:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the given instance cast unconditionally to the specified type.
 
@@ -39,7 +40,8 @@ Use this function instead of `unsafeBitcast(_:to:)` because this function is mor
 
 ## See Also
 
-- [func unsafeBitCast<T, U>(T, to: U.Type) -> U](unsafebitcast(_:to:).md)
+### Instance Casting
+- [func unsafeBitCast<T, U>(T, to: U.Type) -> U](./unsafebitcast%28_,to%29.md)
   Returns the bits of the given instance, interpreted as having the specified type.
 
 

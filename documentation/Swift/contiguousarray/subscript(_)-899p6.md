@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the element at the specified position.
 
@@ -31,7 +32,7 @@ print(streets[1])
 // Prints "Butler"
 ```
 
-> **Note**: Reading an element from an array is O(1). Writing is O(1) unless the array’s storage is shared with another array, in which case writing is O(*n*), where *n* is the length of the array.
+> **Complexity**: Reading an element from an array is O(1). Writing is O(1) unless the array’s storage is shared with another array, in which case writing is O(*n*), where *n* is the length of the array.
 
 ## Parameters
 

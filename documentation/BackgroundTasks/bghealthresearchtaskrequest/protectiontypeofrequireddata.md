@@ -1,7 +1,8 @@
 # protectionTypeOfRequiredData
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The file protection required to access health research data relevant to complete the task.
 
@@ -16,6 +17,10 @@ The file protection required to access health research data relevant to complete
 
 ```swift
 unowned(unsafe) var protectionTypeOfRequiredData: NSString { get set }
+```
+
+```objc
+@property (assign) NSFileProtectionType protectionTypeOfRequiredData;
 ```
 
 

@@ -1,22 +1,27 @@
 # updateHandler
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler for monitoring updates to activity summaries saved in the HealthKit store.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var updateHandler: (@Sendable (HKActivitySummaryQuery, [HKActivitySummary]?, (any Error)?) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^updateHandler)(HKActivitySummaryQuery *query, NSArray<HKActivitySummary *> *updatedActivitySummaries, NSError *error);
 ```
 
 #### Discussion

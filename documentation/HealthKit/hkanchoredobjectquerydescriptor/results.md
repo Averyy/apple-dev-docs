@@ -1,7 +1,8 @@
 # HKAnchoredObjectQueryDescriptor.Results
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence that emits updates from an anchored object query.
 
@@ -10,7 +11,7 @@ An asynchronous sequence that emits updates from an anchored object query.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -19,24 +20,27 @@ An asynchronous sequence that emits updates from an anchored object query.
 struct Results
 ```
 
+Available when `Sample` inherits `HKSample`.
+
 ## Topics
 
 ### Creating an Iterator
-- [HKAnchoredObjectQueryDescriptor.Results.Iterator](hkanchoredobjectquerydescriptor/results/iterator.md)
+- [HKAnchoredObjectQueryDescriptor.Results.Iterator](./results/iterator.md)
   An iterator for accessing anchored object results.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../../Swift/asyncsequence.md)
 
 ## See Also
 
-- [func result(for: HKHealthStore) async throws -> HKAnchoredObjectQueryDescriptor<Sample>.Result](hkanchoredobjectquerydescriptor/result(for:).md)
+### Running Queries
+- [func result(for: HKHealthStore) async throws -> HKAnchoredObjectQueryDescriptor<Sample>.Result](./result%28for%29.md)
   Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
-- [func results(for: HKHealthStore) -> HKAnchoredObjectQueryDescriptor<Sample>.Results](hkanchoredobjectquerydescriptor/results(for:).md)
+- [func results(for: HKHealthStore) -> HKAnchoredObjectQueryDescriptor<Sample>.Results](./results%28for%29.md)
   Initiates a long-running query that returns its results using an asynchronous sequence.
-- [HKAnchoredObjectQueryDescriptor.Result](hkanchoredobjectquerydescriptor/result.md)
+- [HKAnchoredObjectQueryDescriptor.Result](./result.md)
   A set of results from an anchored object query.
 
 

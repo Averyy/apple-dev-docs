@@ -1,7 +1,8 @@
 # string
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original pattern string.
 
@@ -16,6 +17,10 @@ The original pattern string.
 
 ```swift
 var string: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * string;
 ```
 
 

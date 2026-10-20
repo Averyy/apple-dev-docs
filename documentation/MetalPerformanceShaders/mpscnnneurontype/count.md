@@ -1,7 +1,8 @@
 # MPSCNNNeuronType.count
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -17,33 +18,38 @@
 case count
 ```
 
+```c
+MPSCNNNeuronTypeCount
+```
+
 ## See Also
 
-- [MPSCNNNeuronType.none](mpscnnneurontype/none.md)
+### Enumeration Cases
+- [MPSCNNNeuronType.none](./none.md)
   A neuron type indicating no neuron filter.
-- [MPSCNNNeuronType.reLU](mpscnnneurontype/relu.md)
+- [MPSCNNNeuronType.reLU](./relu.md)
   A neuron type indicating a rectified linear unit neuron filter.
-- [MPSCNNNeuronType.linear](mpscnnneurontype/linear.md)
+- [MPSCNNNeuronType.linear](./linear.md)
   A neuron type indicating a linear neuron filter.
-- [MPSCNNNeuronType.sigmoid](mpscnnneurontype/sigmoid.md)
+- [MPSCNNNeuronType.sigmoid](./sigmoid.md)
   A neuron type indicating a sigmoid neuron filter.
-- [MPSCNNNeuronType.hardSigmoid](mpscnnneurontype/hardsigmoid.md)
+- [MPSCNNNeuronType.hardSigmoid](./hardsigmoid.md)
   A neuron type indicating a hard sigmoid neuron filter.
-- [MPSCNNNeuronType.tanH](mpscnnneurontype/tanh.md)
+- [MPSCNNNeuronType.tanH](./tanh.md)
   A neuron type indicating a hyperbolic tangent neuron filter.
-- [MPSCNNNeuronType.absolute](mpscnnneurontype/absolute.md)
+- [MPSCNNNeuronType.absolute](./absolute.md)
   A neuron type indicating an absolute neuron filter.
-- [MPSCNNNeuronType.softPlus](mpscnnneurontype/softplus.md)
+- [MPSCNNNeuronType.softPlus](./softplus.md)
   A neuron type indicating a parametric softplus neuron filter.
-- [MPSCNNNeuronType.softSign](mpscnnneurontype/softsign.md)
+- [MPSCNNNeuronType.softSign](./softsign.md)
   A neuron type indicating a softsign neuron filter.
-- [MPSCNNNeuronType.ELU](mpscnnneurontype/elu.md)
+- [MPSCNNNeuronType.ELU](./elu.md)
   A neuron type indicating a parametric exponential linear unit neuron filter.
-- [MPSCNNNeuronType.exponential](mpscnnneurontype/exponential.md)
-- [MPSCNNNeuronType.geLU](mpscnnneurontype/gelu.md)
-- [MPSCNNNeuronType.logarithm](mpscnnneurontype/logarithm.md)
-- [MPSCNNNeuronType.pReLU](mpscnnneurontype/prelu.md)
-- [MPSCNNNeuronType.power](mpscnnneurontype/power.md)
+- [MPSCNNNeuronType.exponential](./exponential.md)
+- [MPSCNNNeuronType.geLU](./gelu.md)
+- [MPSCNNNeuronType.logarithm](./logarithm.md)
+- [MPSCNNNeuronType.pReLU](./prelu.md)
+- [MPSCNNNeuronType.power](./power.md)
 
 
 ---

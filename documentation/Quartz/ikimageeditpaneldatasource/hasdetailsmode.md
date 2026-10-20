@@ -1,7 +1,8 @@
 # hasDetailsMode
 
 **Framework**: Quartz  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the details mode view tab should be displayed.
 
@@ -14,15 +15,20 @@ Returns whether the details mode view tab should be displayed.
 optional var hasDetailsMode: Bool { get }
 ```
 
+```objc
+@property (atomic, readonly) BOOL hasDetailsMode;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the tab should be displayed, otherwise NO.
+[`true`](../../Swift/true.md) if the tab should be displayed, otherwise NO.
 
 ## See Also
 
-- [var hasAdjustMode: Bool](ikimageeditpaneldatasource/hasadjustmode.md)
+### New Methods
+- [var hasAdjustMode: Bool](./hasadjustmode.md)
   Returns whether the adjust mode view tab should be displayed.
-- [var hasEffectsMode: Bool](ikimageeditpaneldatasource/haseffectsmode.md)
+- [var hasEffectsMode: Bool](./haseffectsmode.md)
   Returns whether the effects mode view tab should be displayed.
 
 

@@ -1,7 +1,8 @@
 # MKDistanceFormatter.Units
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that reflect the type of units to use in the string.
 
@@ -20,47 +21,52 @@ Constants that reflect the type of units to use in the string.
 enum Units
 ```
 
+```c
+enum MKDistanceFormatterUnits : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MKDistanceFormatter.Units.default](mkdistanceformatter/units-swift.enum/default.md)
+- [MKDistanceFormatter.Units.default](./units-swift.enum/default.md)
   The format uses the locale information to determine which units to use.
-- [MKDistanceFormatter.Units.metric](mkdistanceformatter/units-swift.enum/metric.md)
+- [MKDistanceFormatter.Units.metric](./units-swift.enum/metric.md)
   The format uses metric units.
-- [MKDistanceFormatter.Units.imperial](mkdistanceformatter/units-swift.enum/imperial.md)
+- [MKDistanceFormatter.Units.imperial](./units-swift.enum/imperial.md)
   The format uses imperial units.
-- [MKDistanceFormatter.Units.imperialWithYards](mkdistanceformatter/units-swift.enum/imperialwithyards.md)
+- [MKDistanceFormatter.Units.imperialWithYards](./units-swift.enum/imperialwithyards.md)
   The format uses imperial units that include measurements in yards.
-- [MKDistanceFormatter.Units.default](mkdistanceformatter/units-swift.enum/default.md)
+- [MKDistanceFormatter.Units.default](./units-swift.enum/default.md)
   The format uses the locale information to determine which units to use.
-- [MKDistanceFormatter.Units.metric](mkdistanceformatter/units-swift.enum/metric.md)
+- [MKDistanceFormatter.Units.metric](./units-swift.enum/metric.md)
   The format uses metric units.
-- [MKDistanceFormatter.Units.imperial](mkdistanceformatter/units-swift.enum/imperial.md)
+- [MKDistanceFormatter.Units.imperial](./units-swift.enum/imperial.md)
   The format uses imperial units.
-- [MKDistanceFormatter.Units.imperialWithYards](mkdistanceformatter/units-swift.enum/imperialwithyards.md)
+- [MKDistanceFormatter.Units.imperialWithYards](./units-swift.enum/imperialwithyards.md)
   The format uses imperial units that include measurements in yards.
 ### Initializers
-- [init?(rawValue: UInt)](mkdistanceformatter/units-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./units-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var locale: Locale!](mkdistanceformatter/locale.md)
+### Specifying the format
+- [var locale: Locale!](./locale.md)
   The locale to use when formatting strings.
-- [var units: MKDistanceFormatter.Units](mkdistanceformatter/units-swift.property.md)
+- [var units: MKDistanceFormatter.Units](./units-swift.property.md)
   The measuring system — imperial or metric — to use for units.
-- [var unitStyle: MKDistanceFormatter.DistanceUnitStyle](mkdistanceformatter/unitstyle.md)
+- [var unitStyle: MKDistanceFormatter.DistanceUnitStyle](./unitstyle.md)
   The preferred style for units.
-- [MKDistanceFormatter.DistanceUnitStyle](mkdistanceformatter/distanceunitstyle.md)
+- [MKDistanceFormatter.DistanceUnitStyle](./distanceunitstyle.md)
   Constants that indicate the format style to use for strings.
 
 

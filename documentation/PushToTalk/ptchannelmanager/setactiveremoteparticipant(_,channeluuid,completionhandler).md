@@ -1,7 +1,8 @@
 # setActiveRemoteParticipant(_:channelUUID:completionHandler:)
 
 **Framework**: Push to Talk  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the active remote participant with the channel identifier.
 
@@ -13,18 +14,30 @@ Sets the active remote participant with the channel identifier.
 ## Declaration
 
 ```swift
+func setActiveRemoteParticipant(_ participant: PTParticipant?, channelUUID: UUID, completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func setActiveRemoteParticipant(_ participant: PTParticipant?, channelUUID: UUID) async throws
+```
+
+```objc
+- (void) setActiveRemoteParticipant:(PTParticipant *) participant forChannelUUID:(NSUUID *) channelUUID completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
 #### Discussion
 
-> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift
-func setActiveRemoteParticipant(_ participant: PTParticipant?, channelUUID: UUID) async throws
-``` For information about concurrency and asynchronous code in Swift, see [`Calling Objective-C APIs Asynchronously`](https://developer.apple.com/documentation/swift/calling-objective-c-apis-asynchronously).
+> ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
+>
+> ```swift
+> func setActiveRemoteParticipant(_ participant: PTParticipant?, channelUUID: UUID) async throws
+> ```
+>
+> For information about concurrency and asynchronous code in Swift, see [Calling Objective-C APIs Asynchronously](../../Swift/calling-objective-c-apis-asynchronously.md).
 
 When you receive incoming audio from a remote participant, set the participant value, which updates the system user interface and blocks transmission by the local user. When the user stops speaking, set the active participant to `nil`.
 
@@ -32,7 +45,9 @@ When you receive incoming audio from a remote participant, set the participant v
 
 - `participant`: The remote participant to become active.
 - `channelUUID`: The channel identifier the participant becomes active in.
-- `completionHandler`: The completion handler that contains an optional error. - **`error`**: An error, if any, that indicates the reason why the system couldn’t set the active participant.
+- `completionHandler`: The completion handler that contains an optional error.
+
+  - **`error`**: An error, if any, that indicates the reason why the system couldn’t set the active participant.
 
 
 ---

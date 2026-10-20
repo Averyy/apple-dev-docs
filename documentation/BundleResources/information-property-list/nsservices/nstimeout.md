@@ -1,26 +1,29 @@
 # NSTimeout
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The amount of time, in milliseconds, that the system waits for a response from the service.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSTimeout` (Timeout value (in milliseconds))
+- **Type**: string
 
 ## See Also
 
-- [NSKeyEquivalent](information-property-list/nsservices/nskeyequivalent.md)
+### Invocation
+- [NSKeyEquivalent](./nskeyequivalent.md)
   A keyboard shortcut that invokes the service menu command.
-- [NSMenuItem](information-property-list/nsservices/nsmenuitem.md)
+- [NSMenuItem](./nsmenuitem.md)
   Text for a Services menu item.
-- [NSMessage](information-property-list/nsservices/nsmessage.md)
+- [NSMessage](./nsmessage.md)
   An instance method that invokes the service.
-- [NSPortName](information-property-list/nsservices/nsportname.md)
+- [NSPortName](./nsportname.md)
   The port that the service monitors for incoming requests.
 
 

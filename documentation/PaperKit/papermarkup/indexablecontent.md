@@ -1,7 +1,8 @@
 # indexableContent
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -18,17 +19,18 @@ var indexableContent: String? { get async }
 
 ## See Also
 
-- [var subelements: MarkupOrderedSet](papermarkup/subelements.md)
+### Accessing elements
+- [var subelements: MarkupOrderedSet](./subelements.md)
   The subelements of the paper markup.
-- [var id: MarkupID<PaperMarkup>](papermarkup/id.md)
+- [var id: MarkupID<PaperMarkup>](./id.md)
   The unique identifier of the markup.
-- [var bounds: CGRect](papermarkup/bounds.md)
+- [var bounds: CGRect](./bounds.md)
   The bounds of the paper.
-- [var contentsRenderFrame: CGRect](papermarkup/contentsrenderframe.md)
+- [var contentsRenderFrame: CGRect](./contentsrenderframe.md)
   The frame that tightly fits the rendered contents on the paper.
-- [var featureSet: FeatureSet](papermarkup/featureset.md)
+- [var featureSet: FeatureSet](./featureset.md)
   The set of features used by this data model.
-- [var backgroundColor: CGColor?](papermarkup/backgroundcolor.md)
+- [var backgroundColor: CGColor?](./backgroundcolor.md)
   The background color of the paper.
 
 

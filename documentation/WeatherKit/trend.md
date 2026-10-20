@@ -1,7 +1,8 @@
 # Trend
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure describing an observed pattern in the data for weather at a location for a specific condition.
 
@@ -23,21 +24,21 @@ struct Trend<Dimension> where Dimension : Dimension
 ## Topics
 
 ### Instance Properties
-- [var baseline: TrendBaseline<Dimension>](trend/baseline.md)
+- [var baseline: TrendBaseline<Dimension>](./trend/baseline.md)
   The manner in which the comparison between the baseline and current values are compared.
-- [var currentValue: Measurement<Dimension>](trend/currentvalue.md)
+- [var currentValue: Measurement<Dimension>](./trend/currentvalue.md)
   The current recorded value for the condition in which the trend is compared against.
-- [var deviation: Deviation](trend/deviation.md)
+- [var deviation: Deviation](./trend/deviation.md)
   Semantically describes the manner in which the observed trend compares the current value against the baseline value.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

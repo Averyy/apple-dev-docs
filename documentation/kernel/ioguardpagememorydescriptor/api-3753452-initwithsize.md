@@ -1,14 +1,15 @@
 # initWithSize
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool initWithSize(vm_size_t size);
 ```
 

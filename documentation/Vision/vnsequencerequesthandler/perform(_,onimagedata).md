@@ -1,7 +1,8 @@
 # perform(_:onImageData:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules one or more Vision requests to be performed on raw image data.
 
@@ -19,34 +20,39 @@ Schedules one or more Vision requests to be performed on raw image data.
 func perform(_ requests: [VNRequest], onImageData imageData: Data) throws
 ```
 
+```objc
+- (BOOL) performRequests:(NSArray<VNRequest *> *) requests onImageData:(NSData *) imageData error:(NSError **) error;
+```
+
 ## Parameters
 
-- `requests`: An array of [`VNRequest`](vnrequest.md) requests to perform.
+- `requests`: An array of [`VNRequest`](../vnrequest.md) requests to perform.
 - `imageData`: The input image data on which to perform the request.
 
 ## See Also
 
-- [func perform([VNRequest], on: CGImage) throws](vnsequencerequesthandler/perform(_:on:)-3zt7l.md)
+### Performing a Sequence Request
+- [func perform([VNRequest], on: CGImage) throws](./perform%28_,on%29-3zt7l.md)
   Schedules Vision requests to be performed on a Core Graphics image.
-- [func perform([VNRequest], on: CGImage, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:on:orientation:)-3gcmv.md)
+- [func perform([VNRequest], on: CGImage, orientation: CGImagePropertyOrientation) throws](./perform%28_,on,orientation%29-3gcmv.md)
   Schedules one or more Vision requests to be performed on a Core Graphics image with known orientation.
-- [func perform([VNRequest], on: CIImage) throws](vnsequencerequesthandler/perform(_:on:)-9jtgj.md)
+- [func perform([VNRequest], on: CIImage) throws](./perform%28_,on%29-9jtgj.md)
   Schedules one or more Vision requests to be performed on Core Image image data.
-- [func perform([VNRequest], on: CIImage, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:on:orientation:)-1bkm1.md)
+- [func perform([VNRequest], on: CIImage, orientation: CGImagePropertyOrientation) throws](./perform%28_,on,orientation%29-1bkm1.md)
   Schedules one or more Vision requests to be performed on Core Image image data with known orientation.
-- [func perform([VNRequest], on: CVPixelBuffer) throws](vnsequencerequesthandler/perform(_:on:)-3d7nt.md)
+- [func perform([VNRequest], on: CVPixelBuffer) throws](./perform%28_,on%29-3d7nt.md)
   Schedules one or more Vision requests to be performed on a Core Video pixel buffer.
-- [func perform([VNRequest], on: CVPixelBuffer, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:on:orientation:)-2wvt8.md)
+- [func perform([VNRequest], on: CVPixelBuffer, orientation: CGImagePropertyOrientation) throws](./perform%28_,on,orientation%29-2wvt8.md)
   Schedules one or more Vision requests to be performed on a Core Video pixel buffer with known orientation.
-- [func perform([VNRequest], on: CMSampleBuffer) throws](vnsequencerequesthandler/perform(_:on:)-45e73.md)
+- [func perform([VNRequest], on: CMSampleBuffer) throws](./perform%28_,on%29-45e73.md)
   Performs one or more requests on an image contained within a sample buffer.
-- [func perform([VNRequest], on: CMSampleBuffer, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:on:orientation:)-6b7rk.md)
+- [func perform([VNRequest], on: CMSampleBuffer, orientation: CGImagePropertyOrientation) throws](./perform%28_,on,orientation%29-6b7rk.md)
   Performs one or more requests on an image of a specified orientation contained within a sample buffer.
-- [func perform([VNRequest], onImageData: Data, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:onimagedata:orientation:).md)
+- [func perform([VNRequest], onImageData: Data, orientation: CGImagePropertyOrientation) throws](./perform%28_,onimagedata,orientation%29.md)
   Schedules one or more Vision requests to be performed on raw data containing an image with known orientation.
-- [func perform([VNRequest], onImageURL: URL) throws](vnsequencerequesthandler/perform(_:onimageurl:).md)
+- [func perform([VNRequest], onImageURL: URL) throws](./perform%28_,onimageurl%29.md)
   Schedules one or more Vision requests to be performed on an image.
-- [func perform([VNRequest], onImageURL: URL, orientation: CGImagePropertyOrientation) throws](vnsequencerequesthandler/perform(_:onimageurl:orientation:).md)
+- [func perform([VNRequest], onImageURL: URL, orientation: CGImagePropertyOrientation) throws](./perform%28_,onimageurl,orientation%29.md)
   Schedules one or more Vision requests to be performed on an image with known orientation, at a specific URL.
 
 

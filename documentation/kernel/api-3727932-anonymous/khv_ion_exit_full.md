@@ -1,14 +1,15 @@
 # kHV_ION_EXIT_FULL
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 kHV_ION_EXIT_FULL = (1u << 3)
 ```
 

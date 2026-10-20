@@ -1,7 +1,8 @@
 # init(from:to:mode:timing:isAdditive:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new action that interpolates towards a specified final transform.
 
@@ -18,6 +19,8 @@ Creates a new action that interpolates towards a specified final transform.
 ```swift
 init(from: Value? = nil, to: Value, mode: FromToByAction<Value>.TransformMode = .default, timing: AnimationTimingFunction = .linear, isAdditive: Bool = false)
 ```
+
+Available when `Value` is `Transform`.
 
 #### Discussion
 

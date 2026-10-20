@@ -1,9 +1,10 @@
 # rootNode
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The SpriteKit scene managed by this [`GKScene`](gkscene.md) object.
+The SpriteKit scene managed by this [`GKScene`](../gkscene.md) object.
 
 **Availability**:
 - iOS 10.0+
@@ -19,9 +20,13 @@ The SpriteKit scene managed by this [`GKScene`](gkscene.md) object.
 var rootNode: (any GKSceneRootNodeType)? { get set }
 ```
 
+```objc
+@property (nonatomic, nullable) id<GKSceneRootNodeType> rootNode;
+```
+
 #### Discussion
 
-The [`GKSceneRootNodeType`](gkscenerootnodetype.md) protocol is an indirect type for game scene classes that the [`GKScene`](gkscene.md) class can load. [`SKScene`](https://developer.apple.com/documentation/spritekit/skscene) is the only class currently supported for loading with the [`GKScene`](gkscene.md) class.
+The [`GKSceneRootNodeType`](../gkscenerootnodetype.md) protocol is an indirect type for game scene classes that the [`GKScene`](../gkscene.md) class can load. [`SKScene`](../../SpriteKit/skscene.md) is the only class currently supported for loading with the [`GKScene`](../gkscene.md) class.
 
 
 ---

@@ -1,37 +1,40 @@
 # SFSafariStyleSheet
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The style sheet for a Safari extension.
 
 **Availability**:
 - macOS 10.11.5+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `SFSafariStyleSheet`
+- **Type**: array of dictionary 
 
 ## Topics
 
 ### URL Patterns
-- [Allowed URL Patterns](information-property-list/nsextension/sfsafaristylesheet/allowed-url-patterns.md)
+- [Allowed URL Patterns](./sfsafaristylesheet/allowed-url-patterns.md)
   The webpages that the style sheet can be injected into.
-- [Excluded URL Patterns](information-property-list/nsextension/sfsafaristylesheet/excluded-url-patterns.md)
+- [Excluded URL Patterns](./sfsafaristylesheet/excluded-url-patterns.md)
   The webpages that the style sheet can’t be injected into.
 ### Path
-- [Style Sheet](information-property-list/nsextension/sfsafaristylesheet/style-sheet.md)
+- [Style Sheet](./sfsafaristylesheet/style-sheet.md)
   The path to the style sheet, relative to the Resources folder in the app extension’s bundle.
 
 ## See Also
 
-- [SFSafariContentScript](information-property-list/nsextension/sfsafaricontentscript.md)
+### SafariServices
+- [SFSafariContentScript](./sfsafaricontentscript.md)
   The content scripts for a Safari extension.
-- [SFSafariContextMenu](information-property-list/nsextension/sfsafaricontextmenu.md)
+- [SFSafariContextMenu](./sfsafaricontextmenu.md)
   The context menu items for a Safari extension.
-- [SFSafariToolbarItem](information-property-list/nsextension/sfsafaritoolbaritem.md)
+- [SFSafariToolbarItem](./sfsafaritoolbaritem.md)
   The items to add to the toolbar for a Safari extension.
-- [SFSafariWebsiteAccess](information-property-list/nsextension/sfsafariwebsiteaccess.md)
+- [SFSafariWebsiteAccess](./sfsafariwebsiteaccess.md)
   The webpages a Safari extension can access.
 
 

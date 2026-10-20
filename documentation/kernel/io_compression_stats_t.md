@@ -1,14 +1,15 @@
 # io_compression_stats_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.3+
 
 ## Declaration
 
-```swift
+```c
 typedef struct io_compression_stats {
     ...
 } io_compression_stats_t;
@@ -17,10 +18,10 @@ typedef struct io_compression_stats {
 ## Topics
 
 ### Instance Properties
-- [block_compressed_size_dist](io_compression_stats_t/3728060-block_compressed_size_dist.md)
-- [buffer_size_compression_dist](io_compression_stats_t/3728061-buffer_size_compression_dist.md)
-- [compressed_size](io_compression_stats_t/3728062-compressed_size.md)
-- [uncompressed_size](io_compression_stats_t/3728063-uncompressed_size.md)
+- [block_compressed_size_dist](./io_compression_stats_t/api-3728060-block_compressed_size_dist.md)
+- [buffer_size_compression_dist](./io_compression_stats_t/api-3728061-buffer_size_compression_dist.md)
+- [compressed_size](./io_compression_stats_t/api-3728062-compressed_size.md)
+- [uncompressed_size](./io_compression_stats_t/api-3728063-uncompressed_size.md)
 
 
 ---

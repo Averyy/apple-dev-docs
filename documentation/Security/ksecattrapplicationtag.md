@@ -1,7 +1,8 @@
 # kSecAttrApplicationTag
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the item’s private tag.
 
@@ -20,13 +21,17 @@ A key whose value indicates the item’s private tag.
 let kSecAttrApplicationTag: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrApplicationTag;
+```
+
 ## Mentions
 
-- [Generating New Cryptographic Keys](generating-new-cryptographic-keys.md)
+- [Generating New Cryptographic Keys](./generating-new-cryptographic-keys.md)
 
 #### Discussion
 
-The corresponding value is of type [`CFData`](https://developer.apple.com/documentation/corefoundation/cfdata) and contains private tag data.
+The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md) and contains private tag data.
 
 On key creation, if not explicitly specified, this attribute defaults to `NULL`.
 

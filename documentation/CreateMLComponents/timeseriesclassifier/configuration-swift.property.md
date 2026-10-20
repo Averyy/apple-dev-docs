@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration.
 
@@ -21,7 +22,8 @@ var configuration: TimeSeriesClassifierConfiguration
 
 ## See Also
 
-- [var labels: Set<Label>](timeseriesclassifier/labels.md)
+### Inspecting a time series classifier
+- [var labels: Set<Label>](./labels.md)
   The set of possible labels.
 
 

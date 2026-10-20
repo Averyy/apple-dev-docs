@@ -1,7 +1,8 @@
 # toBase64String
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a regular string to a `Base64String`.
 
@@ -10,7 +11,7 @@ Converts a regular string to a `Base64String`.
 
 ## Declaration
 
-```swift
+```
 static Base64String toBase64String();
 ```
 

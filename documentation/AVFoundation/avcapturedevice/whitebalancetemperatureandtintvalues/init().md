@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a default value.
 
@@ -19,7 +20,8 @@ init()
 
 ## See Also
 
-- [init(temperature: Float, tint: Float)](avcapturedevice/whitebalancetemperatureandtintvalues/init(temperature:tint:).md)
+### Creating temperature and tint values
+- [init(temperature: Float, tint: Float)](./init%28temperature,tint%29.md)
   Creates a structure with a white balance temperature and tint.
 
 

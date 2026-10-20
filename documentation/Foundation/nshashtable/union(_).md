@@ -1,7 +1,8 @@
 # union(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds each element in another given hash table to the receiving hash table, if not present.
 
@@ -20,9 +21,13 @@ Adds each element in another given hash table to the receiving hash table, if no
 func union(_ other: NSHashTable<ObjectType>)
 ```
 
+```objc
+- (void) unionHashTable:(NSHashTable<id> *) other;
+```
+
 #### Discussion
 
-The equality test used for members depends on the personality option selected. For instance, choosing the [`objectPersonality`](nspointerfunctions/options/objectpersonality.md) option will use `isEqual:` to determine equality. See [`NSPointerFunctions.Options`](nspointerfunctions/options.md) for more information on personality options and their corresponding equality tests.
+The equality test used for members depends on the personality option selected. For instance, choosing the [`objectPersonality`](../nspointerfunctions/options/objectpersonality.md) option will use `isEqual:` to determine equality. See [`NSPointerFunctions.Options`](../nspointerfunctions/options.md) for more information on personality options and their corresponding equality tests.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ The equality test used for members depends on the personality option selected. F
 
 ## See Also
 
-- [func minus(NSHashTable<ObjectType>)](nshashtable/minus(_:).md)
+### Set Functions
+- [func minus(NSHashTable<ObjectType>)](./minus%28_%29.md)
   Removes each element in another given hash table from the receiving hash table, if present.
 
 

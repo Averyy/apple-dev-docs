@@ -1,7 +1,8 @@
 # transport
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data transport for the device.
 
@@ -16,7 +17,7 @@ var transport: HIDDeviceTransport?
 
 #### Discussion
 
-A[`HIDDeviceTransport`](hiddevicetransport.md) that specifies the type of transport that the data sent to and from the device  uses.
+A[`HIDDeviceTransport`](../../hiddevicetransport.md) that specifies the type of transport that the data sent to and from the device  uses.
 
 
 ---

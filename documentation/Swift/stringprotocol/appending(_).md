@@ -1,7 +1,8 @@
 # appending(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string created by appending the given string.
 

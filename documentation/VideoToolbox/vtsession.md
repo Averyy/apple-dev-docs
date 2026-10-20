@@ -1,7 +1,8 @@
 # VTSession
 
 **Framework**: Video Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A reference to a VideoToolbox compression session,  decompression session or pixel transfer session.
 
@@ -17,6 +18,10 @@ A reference to a VideoToolbox compression session,  decompression session or pix
 
 ```swift
 typealias VTSession = CFTypeRef
+```
+
+```c
+typedef CFTypeRef VTSessionRef;
 ```
 
 

@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceImageUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,14 +11,14 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceImageUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAdvancedExperienceImageUpdateRequest.Data.Attributes](appclipadvancedexperienceimageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppClipAdvancedExperienceImageUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the updated Advanced App Clip Experience Images resource.
 
 ## Properties
@@ -25,6 +26,8 @@ object AppClipAdvancedExperienceImageUpdateRequest.Data
 - `attributes` (AppClipAdvancedExperienceImageUpdateRequest.Data.Attributes): The attributes that describe the request that updates an Advanced App Clip Experience Images resource.
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the request.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appClipAdvancedExperienceImages`
 
 
 ---

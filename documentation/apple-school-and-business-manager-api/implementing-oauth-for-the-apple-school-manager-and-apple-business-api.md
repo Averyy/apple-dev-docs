@@ -1,6 +1,7 @@
 # Implementing OAuth for the Apple School Manager and Apple Business API
 
-**Framework**: Apple School Manager and Apple Business APIs
+**Framework**: Apple School Manager and Apple Business APIs  
+**Role**: Article
 
 Manage secure access to Apple School Manager and Apple Business API accounts.
 
@@ -10,19 +11,19 @@ The Apple School Manager and Apple Business APIs support OAuth 2. With OAuth 2, 
 
 A user with the role of Administrator in Apple School Manager or the role of Organization Administrator in Apple Business creates these credentials. For information about creating an app account, see:
 
-- [`Create an API account in Apple School Manager`](https://developer.apple.comhttps://support.apple.com/guide/apple-school-manager/axm33189f66a)
-- [`Create an API account in Apple Business`](https://developer.apple.comhttps://support.apple.com/guide/business/axm33189f66a)
+- [Create an API account in Apple School Manager](https://support.apple.com/guide/apple-school-manager/axm33189f66a)
+- [Create an API account in Apple Business](https://support.apple.com/guide/business/axm33189f66a)
 
 To make API calls, you attach the access token as a bearer token in the authorization header. This implementation process guides you through the following steps to obtain that access token:
 
 - Create a client assertion.
 - Request an access token.
 
-##### Create a Client Assertion
+##### Create a client assertion
 
-A client assertion is a JSON web token ([`JWT`](https://developer.apple.comhttps://tools.ietf.org/html/rfc7519)) that an app creates and signs using a private key. The client assertion obtains an access token by calling the authorization server.
+A client assertion is a JSON web token ([JWT](https://tools.ietf.org/html/rfc7519)) that an app creates and signs using a private key. The client assertion obtains an access token by calling the authorization server.
 
-The example below is a Python script that generates, encodes, and signs a client assertion using an app’s private key. It expects [`PyJWT`](https://developer.apple.comhttps://pyjwt.readthedocs.io) to be installed in the executing Python environment. If you decide to create your own JWT using a different programming language and open source library, be sure the library you use supports [`elliptic curve`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc6605) methods.
+The example below is a Python script that generates, encodes, and signs a client assertion using an app’s private key. It expects [PyJWT](https://pyjwt.readthedocs.io) to be installed in the executing Python environment. If you decide to create your own JWT using a different programming language and open source library, be sure the library you use supports [elliptic curve](https://datatracker.ietf.org/doc/html/rfc6605) methods.
 
 > ❗ **Important**: Ensure that you copy the private key into your working directory.
 
@@ -123,7 +124,7 @@ a0k8cVVtnq- _93fYJIt9Z64CTvlH3uOeh7uaEv3nIxpXhvhkTySpUmY8e04TO09oTyZijiloByv3KFQ
 2OOJ8L 5N5_CeEc5p9LWjT1pcX8ATamOycZz2Q
 ```
 
-##### Request an Access Token
+##### Request an access token
 
 To receive an access token, make a POST request to the authorization server using the client assertion above. When an access token expires, use the same process to obtain a new one.
 

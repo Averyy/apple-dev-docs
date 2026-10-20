@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The drop interaction object added by UIKit to the text view.
@@ -16,6 +17,10 @@ The drop interaction object added by UIKit to the text view.
 
 ```swift
 var textDropInteraction: UIDropInteraction? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) UIDropInteraction * textDropInteraction;
 ```
 
 

@@ -1,7 +1,8 @@
 # ids
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifiers of the score counters.
 
@@ -16,7 +17,8 @@ var ids: [ScoreCounter.ID] { get }
 
 ## See Also
 
-- [var count: Int](countercollection/count.md)
+### Getting the counter details
+- [var count: Int](./count.md)
   The number of score counters.
 
 

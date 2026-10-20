@@ -1,7 +1,8 @@
 # items
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The items to display from the inset interface.
 
@@ -12,6 +13,10 @@ The items to display from the inset interface.
 
 ```swift
 var items: [TVTopShelfItem] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<TVTopShelfItem *> * items;
 ```
 
 

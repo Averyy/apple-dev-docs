@@ -1,7 +1,8 @@
 # paddingBottom
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that defines the padding in height dimension at the bottom.
 
@@ -17,6 +18,10 @@ The property that defines the padding in height dimension at the bottom.
 
 ```swift
 var paddingBottom: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger paddingBottom;
 ```
 
 

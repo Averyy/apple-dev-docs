@@ -1,7 +1,8 @@
 # CMTag.Value
 
 **Framework**: Core Media  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A wrapper type for a value associated with a tag.
 
@@ -23,21 +24,21 @@ enum Value
 ## Topics
 
 ### Value Types
-- [CMTag.Value.int64(_:)](cmtag-swift.class/value/int64(_:).md)
+- [CMTag.Value.int64(_:)](./value/int64%28_%29.md)
   Represents a 64-bit integer.
-- [CMTag.Value.float64(_:)](cmtag-swift.class/value/float64(_:).md)
+- [CMTag.Value.float64(_:)](./value/float64%28_%29.md)
   Represents a 64-bit floating point number.
-- [CMTag.Value.flags(_:)](cmtag-swift.class/value/flags(_:).md)
+- [CMTag.Value.flags(_:)](./value/flags%28_%29.md)
   Represents a 64-bit wide bitflag field.
-- [CMTag.Value.osType(_:)](cmtag-swift.class/value/ostype(_:).md)
+- [CMTag.Value.osType(_:)](./value/ostype%28_%29.md)
   Represents a 64-bit identifier used by the operating system.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

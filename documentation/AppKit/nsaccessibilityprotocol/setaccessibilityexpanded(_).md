@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets a Boolean value that determines whether accessibility element is in an expanded state.
@@ -17,35 +18,36 @@ func setAccessibilityExpanded(_ accessibilityExpanded: Bool)
 
 ## See Also
 
-- [func accessibilityColumnHeaderUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilitycolumnheaderuielements.md)
+### Configuring table and outline views
+- [func accessibilityColumnHeaderUIElements() -> [Any]?](./accessibilitycolumnheaderuielements%28%29.md)
   Returns the column header accessibility elements for the table or outline.
-- [func setAccessibilityColumnHeaderUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilitycolumnheaderuielements(_:).md)
+- [func setAccessibilityColumnHeaderUIElements([Any]?)](./setaccessibilitycolumnheaderuielements%28_%29.md)
   Sets the column header accessibility elements for the table or outline.
-- [func accessibilityColumns() -> [Any]?](nsaccessibilityprotocol/accessibilitycolumns.md)
+- [func accessibilityColumns() -> [Any]?](./accessibilitycolumns%28%29.md)
   Returns the column accessibility elements for the table or outline.
-- [func setAccessibilityColumns([Any]?)](nsaccessibilityprotocol/setaccessibilitycolumns(_:).md)
+- [func setAccessibilityColumns([Any]?)](./setaccessibilitycolumns%28_%29.md)
   Sets the column accessibility elements for the table or outline.
-- [func accessibilityColumnTitles() -> [Any]?](nsaccessibilityprotocol/accessibilitycolumntitles.md)
+- [func accessibilityColumnTitles() -> [Any]?](./accessibilitycolumntitles%28%29.md)
   Returns the column titles for the accessibility element.
-- [func setAccessibilityColumnTitles([Any]?)](nsaccessibilityprotocol/setaccessibilitycolumntitles(_:).md)
+- [func setAccessibilityColumnTitles([Any]?)](./setaccessibilitycolumntitles%28_%29.md)
   Sets the column titles for the accessibility element.
-- [func isAccessibilityExpanded() -> Bool](nsaccessibilityprotocol/isaccessibilityexpanded.md)
+- [func isAccessibilityExpanded() -> Bool](./isaccessibilityexpanded%28%29.md)
   Returns a Boolean value that determines whether the accessibility element is in an expanded state.
-- [func accessibilityHeader() -> Any?](nsaccessibilityprotocol/accessibilityheader.md)
+- [func accessibilityHeader() -> Any?](./accessibilityheader%28%29.md)
   Returns the header for the table view.
-- [func setAccessibilityHeader(Any?)](nsaccessibilityprotocol/setaccessibilityheader(_:).md)
+- [func setAccessibilityHeader(Any?)](./setaccessibilityheader%28_%29.md)
   Sets the header for the table view.
-- [func accessibilityIndex() -> Int](nsaccessibilityprotocol/accessibilityindex.md)
+- [func accessibilityIndex() -> Int](./accessibilityindex%28%29.md)
   Returns the index of the row or column that the accessibility element represents.
-- [func setAccessibilityIndex(Int)](nsaccessibilityprotocol/setaccessibilityindex(_:).md)
+- [func setAccessibilityIndex(Int)](./setaccessibilityindex%28_%29.md)
   Sets the index of the row or column that the accessibility element represents.
-- [func accessibilityRowHeaderUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilityrowheaderuielements.md)
+- [func accessibilityRowHeaderUIElements() -> [Any]?](./accessibilityrowheaderuielements%28%29.md)
   Returns the row header accessibility elements for the table or outline.
-- [func setAccessibilityRowHeaderUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilityrowheaderuielements(_:).md)
+- [func setAccessibilityRowHeaderUIElements([Any]?)](./setaccessibilityrowheaderuielements%28_%29.md)
   Sets the row header accessibility elements for the table or outline.
-- [func accessibilityRows() -> [Any]?](nsaccessibilityprotocol/accessibilityrows.md)
+- [func accessibilityRows() -> [Any]?](./accessibilityrows%28%29.md)
   Returns the row accessibility elements for the table or outline.
-- [func setAccessibilityRows([Any]?)](nsaccessibilityprotocol/setaccessibilityrows(_:).md)
+- [func setAccessibilityRows([Any]?)](./setaccessibilityrows%28_%29.md)
   Sets the row accessibility elements for the table or outline.
 
 

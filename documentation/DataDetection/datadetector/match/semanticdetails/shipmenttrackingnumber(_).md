@@ -1,7 +1,8 @@
 # DataDetector.Match.SemanticDetails.shipmentTrackingNumber(_:)
 
 **Framework**: DataDetection  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A match that the data detector determines represents a shipping tracking number.
 
@@ -22,7 +23,7 @@ case shipmentTrackingNumber(DataDetector.Match.SemanticDetails.ShipmentTrackingN
 
 ## Parameters
 
-- `ShipmentTrackingNumber`: A [`DataDetector.Match.SemanticDetails.ShipmentTrackingNumber`](datadetector/match/semanticdetails/shipmenttrackingnumber.md) structure.
+- `ShipmentTrackingNumber`: A [`DataDetector.Match.SemanticDetails.ShipmentTrackingNumber`](./shipmenttrackingnumber.md) structure.
 
 
 ---

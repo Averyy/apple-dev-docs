@@ -1,7 +1,8 @@
 # stateUpdateHandler
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that delivers channel state updates.
 
@@ -17,9 +18,10 @@ final var stateUpdateHandler: (@Sendable (NWEthernetChannel.State) -> Void)? { g
 
 ## See Also
 
-- [var state: NWEthernetChannel.State](nwethernetchannel/state-swift.property.md)
+### Handling State Updates
+- [var state: NWEthernetChannel.State](./state-swift.property.md)
   The current state of the channel.
-- [NWEthernetChannel.State](nwethernetchannel/state-swift.enum.md)
+- [NWEthernetChannel.State](./state-swift.enum.md)
   States indicating whether an Ethernet channel is able to send and receive frames.
 
 

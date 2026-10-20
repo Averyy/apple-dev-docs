@@ -1,7 +1,8 @@
 # elementKind
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies the type of supplementary item.
 
@@ -12,6 +13,10 @@ A string that identifies the type of supplementary item.
 
 ```swift
 var elementKind: String { get }
+```
+
+```objc
+@property (readonly) NSString * elementKind;
 ```
 
 

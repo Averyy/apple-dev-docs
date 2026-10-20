@@ -1,7 +1,8 @@
 # GLKTextureEnvMode.replace
 
 **Framework**: GLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The output color is set to the color fetched from the texture. The input color is ignored.
 
@@ -17,11 +18,16 @@ The output color is set to the color fetched from the texture. The input color i
 case replace
 ```
 
+```c
+GLKTextureEnvModeReplace
+```
+
 ## See Also
 
-- [GLKTextureEnvMode.modulate](glktextureenvmode/modulate.md)
+### Constants
+- [GLKTextureEnvMode.modulate](./modulate.md)
   The output color is calculated by multiplying the texture’s color by the input color.
-- [GLKTextureEnvMode.decal](glktextureenvmode/decal.md)
+- [GLKTextureEnvMode.decal](./decal.md)
   The output color is calculated by using the texture’s alpha component to blend the texture’s color with the input color.
 
 

@@ -1,7 +1,8 @@
 # JSValueIsStrictEqual(_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Tests whether two JavaScript values are strict equal.
 
@@ -19,9 +20,13 @@ Tests whether two JavaScript values are strict equal.
 func JSValueIsStrictEqual(_ ctx: JSContextRef!, _ a: JSValueRef!, _ b: JSValueRef!) -> Bool
 ```
 
+```c
+bool JSValueIsStrictEqual(JSContextRef ctx, JSValueRef a, JSValueRef b);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two values are strict equal according to the JavaScript `===` operator; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if the two values are strict equal according to the JavaScript `===` operator; otherwise, [`false`](../Swift/false.md).
 
 ## Parameters
 
@@ -31,9 +36,10 @@ func JSValueIsStrictEqual(_ ctx: JSContextRef!, _ a: JSValueRef!, _ b: JSValueRe
 
 ## See Also
 
-- [func JSValueIsEqual(JSContextRef!, JSValueRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> Bool](jsvalueisequal(_:_:_:_:).md)
+### Comparing Values
+- [func JSValueIsEqual(JSContextRef!, JSValueRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> Bool](./jsvalueisequal%28_,_,_,_%29.md)
   Tests whether two JavaScript values are equal.
-- [func JSValueIsInstanceOfConstructor(JSContextRef!, JSValueRef!, JSObjectRef!, UnsafeMutablePointer<JSValueRef?>!) -> Bool](jsvalueisinstanceofconstructor(_:_:_:_:).md)
+- [func JSValueIsInstanceOfConstructor(JSContextRef!, JSValueRef!, JSObjectRef!, UnsafeMutablePointer<JSValueRef?>!) -> Bool](./jsvalueisinstanceofconstructor%28_,_,_,_%29.md)
   Tests whether a JavaScript value is an object that the specified constructor creates.
 
 

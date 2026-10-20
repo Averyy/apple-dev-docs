@@ -1,7 +1,8 @@
 # attributedTitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The styled title text to display in the refresh control.
 
@@ -17,13 +18,18 @@ The styled title text to display in the refresh control.
 var attributedTitle: NSAttributedString? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSAttributedString * attributedTitle;
+```
+
 #### Discussion
 
 The default value of this property is `nil`.
 
 ## See Also
 
-- [var tintColor: UIColor!](uirefreshcontrol/tintcolor.md)
+### Accessing the control attributes
+- [var tintColor: UIColor!](./tintcolor.md)
   The tint color for the refresh control.
 
 

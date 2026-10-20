@@ -1,7 +1,8 @@
 # bufferTypeCode
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type code of the buffer type.
 
@@ -11,7 +12,7 @@ The type code of the buffer type.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

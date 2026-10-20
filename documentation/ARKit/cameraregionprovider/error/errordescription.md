@@ -1,7 +1,8 @@
 # errorDescription
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message describing what error occurred.
 

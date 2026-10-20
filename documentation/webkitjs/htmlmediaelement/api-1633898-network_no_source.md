@@ -11,7 +11,7 @@ No media resource was found.
 
 ## Declaration
 
-```swift
+```
 const unsigned short NETWORK_NO_SOURCE;
 ```
 

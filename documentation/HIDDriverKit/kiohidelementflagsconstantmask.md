@@ -1,28 +1,30 @@
 # kIOHIDElementFlagsConstantMask
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDElementFlagsConstantMask
 ```
 
 ## See Also
 
-- [kIOHIDElementFlagsBufferedByteMask](kiohidelementflagsbufferedbytemask.md)
-- [kIOHIDElementFlagsNoPreferredMask](kiohidelementflagsnopreferredmask.md)
-- [kIOHIDElementFlagsNonLinearMask](kiohidelementflagsnonlinearmask.md)
-- [kIOHIDElementFlagsNullStateMask](kiohidelementflagsnullstatemask.md)
-- [kIOHIDElementFlagsRelativeMask](kiohidelementflagsrelativemask.md)
-- [kIOHIDElementFlagsVariableMask](kiohidelementflagsvariablemask.md)
-- [kIOHIDElementFlagsVolativeMask](kiohidelementflagsvolativemask.md)
-- [kIOHIDElementFlagsWrapMask](kiohidelementflagswrapmask.md)
+### Getting the Element Flag Masks
+- [kIOHIDElementFlagsBufferedByteMask](./kiohidelementflagsbufferedbytemask.md)
+- [kIOHIDElementFlagsNoPreferredMask](./kiohidelementflagsnopreferredmask.md)
+- [kIOHIDElementFlagsNonLinearMask](./kiohidelementflagsnonlinearmask.md)
+- [kIOHIDElementFlagsNullStateMask](./kiohidelementflagsnullstatemask.md)
+- [kIOHIDElementFlagsRelativeMask](./kiohidelementflagsrelativemask.md)
+- [kIOHIDElementFlagsVariableMask](./kiohidelementflagsvariablemask.md)
+- [kIOHIDElementFlagsVolativeMask](./kiohidelementflagsvolativemask.md)
+- [kIOHIDElementFlagsWrapMask](./kiohidelementflagswrapmask.md)
 
 
 ---

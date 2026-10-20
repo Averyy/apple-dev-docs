@@ -1,7 +1,8 @@
 # init(description:version:author:license:creatorDefined:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates model metadata.
 

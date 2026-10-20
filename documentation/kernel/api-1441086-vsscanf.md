@@ -1,14 +1,15 @@
 # vsscanf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int vsscanf(const char *, const char *, va_list);
 ```
 

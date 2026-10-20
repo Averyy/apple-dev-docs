@@ -1,7 +1,8 @@
 # update(data:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the message authentication code computation with a block of data.
 
@@ -26,9 +27,10 @@ mutating func update<D>(data: D) where D : DataProtocol
 
 ## See Also
 
-- [init(key: SymmetricKey)](hmac/init(key:).md)
+### Creating an authentication code iteratively
+- [init(key: SymmetricKey)](./init%28key%29.md)
   Creates a message authentication code generator.
-- [func finalize() -> HMAC<H>.MAC](hmac/finalize.md)
+- [func finalize() -> HMAC<H>.MAC](./finalize%28%29.md)
   Finalizes the message authentication computation and returns the computed code.
 
 

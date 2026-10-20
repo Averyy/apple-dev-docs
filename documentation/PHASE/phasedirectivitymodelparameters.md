@@ -1,7 +1,8 @@
 # PHASEDirectivityModelParameters
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A base class for objects that direct sound.
 
@@ -19,34 +20,39 @@ A base class for objects that direct sound.
 class PHASEDirectivityModelParameters
 ```
 
+```objc
+@interface PHASEDirectivityModelParameters : NSObject
+```
+
 #### Overview
 
-Several classes derive from this class that implement a unique strategy to direct sound. Rather than create an instance of this class, instantiate a subclass, such as [`PHASECardioidDirectivityModelParameters`](phasecardioiddirectivitymodelparameters.md) or [`PHASEConeDirectivityModelParameters`](phaseconedirectivitymodelparameters.md).
+Several classes derive from this class that implement a unique strategy to direct sound. Rather than create an instance of this class, instantiate a subclass, such as [`PHASECardioidDirectivityModelParameters`](./phasecardioiddirectivitymodelparameters.md) or [`PHASEConeDirectivityModelParameters`](./phaseconedirectivitymodelparameters.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [PHASECardioidDirectivityModelParameters](phasecardioiddirectivitymodelparameters.md)
-- [PHASEConeDirectivityModelParameters](phaseconedirectivitymodelparameters.md)
+- [PHASECardioidDirectivityModelParameters](./phasecardioiddirectivitymodelparameters.md)
+- [PHASEConeDirectivityModelParameters](./phaseconedirectivitymodelparameters.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASECardioidDirectivityModelParameters](phasecardioiddirectivitymodelparameters.md)
+### Sound Directivity
+- [class PHASECardioidDirectivityModelParameters](./phasecardioiddirectivitymodelparameters.md)
   An object that directs sound in a heart-shaped curve surrounding a sound source.
-- [class PHASECardioidDirectivityModelSubbandParameters](phasecardioiddirectivitymodelsubbandparameters.md)
+- [class PHASECardioidDirectivityModelSubbandParameters](./phasecardioiddirectivitymodelsubbandparameters.md)
   A data set that projects sound of a certain frequency outward in the shape of a heart.
-- [class PHASEConeDirectivityModelParameters](phaseconedirectivitymodelparameters.md)
+- [class PHASEConeDirectivityModelParameters](./phaseconedirectivitymodelparameters.md)
   An object that directs sound in a cone-shaped curve that extends from a sound source.
-- [class PHASEConeDirectivityModelSubbandParameters](phaseconedirectivitymodelsubbandparameters.md)
+- [class PHASEConeDirectivityModelSubbandParameters](./phaseconedirectivitymodelsubbandparameters.md)
   A data set that projects sound of a certain frequency outward in the shape of a cone.
 
 

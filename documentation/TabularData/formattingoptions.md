@@ -1,7 +1,8 @@
 # FormattingOptions
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of parameters that indicate how to present the contents of data frame or column types to a printable string.
 
@@ -23,46 +24,47 @@ struct FormattingOptions
 ## Topics
 
 ### Creating the Options Object
-- [init()](formattingoptions/init.md)
+- [init()](./formattingoptions/init%28%29.md)
   Creates a formatting options instance with default parameters.
-- [init(locale: Locale)](formattingoptions/init(locale:).md)
+- [init(locale: Locale)](./formattingoptions/init%28locale%29.md)
   Creates a formatting options instance with a locale.
-- [init(maximumLineWidth: Int, maximumCellWidth: Int, maximumRowCount: Int, includesColumnTypes: Bool)](formattingoptions/init(maximumlinewidth:maximumcellwidth:maximumrowcount:includescolumntypes:).md)
+- [init(maximumLineWidth: Int, maximumCellWidth: Int, maximumRowCount: Int, includesColumnTypes: Bool)](./formattingoptions/init%28maximumlinewidth,maximumcellwidth,maximumrowcount,includescolumntypes%29.md)
   Creates a formatting options instance.
 ### Getting the Properties
-- [var dateFormatStyle: Date.FormatStyle](formattingoptions/dateformatstyle.md)
+- [var dateFormatStyle: Date.FormatStyle](./formattingoptions/dateformatstyle.md)
   The date format style.
-- [var floatingPointFormatStyle: FloatingPointFormatStyle<Double>](formattingoptions/floatingpointformatstyle.md)
+- [var floatingPointFormatStyle: FloatingPointFormatStyle<Double>](./formattingoptions/floatingpointformatstyle.md)
   The floating point format style.
-- [var includesColumnTypes: Bool](formattingoptions/includescolumntypes.md)
+- [var includesColumnTypes: Bool](./formattingoptions/includescolumntypes.md)
   A Boolean value that indicates whether the description includes the column types.
-- [var integerFormatStyle: IntegerFormatStyle<Int>](formattingoptions/integerformatstyle.md)
+- [var integerFormatStyle: IntegerFormatStyle<Int>](./formattingoptions/integerformatstyle.md)
   The integer format style.
-- [var locale: Locale](formattingoptions/locale.md)
+- [var locale: Locale](./formattingoptions/locale.md)
   The locale.
-- [var maximumCellWidth: Int](formattingoptions/maximumcellwidth.md)
+- [var maximumCellWidth: Int](./formattingoptions/maximumcellwidth.md)
   The largest number of characters a description can generate per cell.
-- [var maximumLineWidth: Int](formattingoptions/maximumlinewidth.md)
+- [var maximumLineWidth: Int](./formattingoptions/maximumlinewidth.md)
   The largest number of characters a description can generate per line.
-- [var maximumRowCount: Int](formattingoptions/maximumrowcount.md)
+- [var maximumRowCount: Int](./formattingoptions/maximumrowcount.md)
   The largest number of rows a description can generate.
 ### Instance Properties
-- [var includesRowAndColumnCounts: Bool](formattingoptions/includesrowandcolumncounts.md)
+- [var includesRowAndColumnCounts: Bool](./formattingoptions/includesrowandcolumncounts.md)
   A Boolean value that indicates whether the description includes the number of rows and columns.
-- [var includesRowIndices: Bool](formattingoptions/includesrowindices.md)
+- [var includesRowIndices: Bool](./formattingoptions/includesrowindices.md)
   A Boolean value that indicates whether the description includes the row indices.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum Order](order.md)
+### Supporting Types
+- [enum Order](./order.md)
   A type that represents a sort ordering.
-- [struct ColumnID](columnid.md)
+- [struct ColumnID](./columnid.md)
   A column identifier that stores a column’s name and the type of its elements.
 
 

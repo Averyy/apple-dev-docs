@@ -1,7 +1,8 @@
 # width
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 An integer containing the width of the canvas in CSS pixels.
 
@@ -11,7 +12,7 @@ An integer containing the width of the canvas in CSS pixels.
 
 ## Declaration
 
-```swift
+```
 attribute unsigned long width;
 ```
 
@@ -21,7 +22,8 @@ Setting the `width` or `height` property, even without changing it, clears the c
 
 ## See Also
 
-- [height](htmlcanvaselement/1634228-height.md)
+### Setting Canvas Dimensions
+- [height](./api-1634228-height.md)
   An integer containing the height of the canvas in CSS pixels.
 
 

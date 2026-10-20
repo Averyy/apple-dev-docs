@@ -1,17 +1,22 @@
 # foundDevices()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns found IOBluetoothDevice objects as an array.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func foundDevices() -> [Any]!
+```
+
+```objc
+- (NSArray *) foundDevices;
 ```
 
 #### Return Value

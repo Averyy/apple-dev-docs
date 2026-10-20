@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A distortion field texture that the frame interpolator uses to correct barrel distortion.
@@ -17,6 +18,10 @@ A distortion field texture that the frame interpolator uses to correct barrel di
 
 ```swift
 var distortionTexture: (any MTLTexture)? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) id<MTLTexture> distortionTexture;
 ```
 
 #### Discussion

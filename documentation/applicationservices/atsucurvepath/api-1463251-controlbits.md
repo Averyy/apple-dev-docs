@@ -1,7 +1,8 @@
 # controlBits
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var controlBits: UInt32
+```
+
+```c
+UInt32 controlBits[1];
 ```
 
 

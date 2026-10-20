@@ -1,7 +1,8 @@
 # Double.SIMD16Storage
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Storage for a vector of 16 floating-point values.
 
@@ -24,37 +25,38 @@ struct SIMD16Storage
 ## Topics
 
 ### Initializers
-- [init()](double/simd16storage/init.md)
+- [init()](./simd16storage/init%28%29.md)
   Creates a vector with zero in all lanes.
 ### Instance Properties
-- [var scalarCount: Int](double/simd16storage/scalarcount.md)
+- [var scalarCount: Int](./simd16storage/scalarcount.md)
   The number of scalars, or elements, in the vector.
 ### Subscripts
-- [subscript(Int) -> Double](double/simd16storage/subscript(_:).md)
+- [subscript(Int) -> Double](./simd16storage/subscript%28_%29.md)
   Accesses the element at the specified index.
 ### Type Aliases
-- [Double.SIMD16Storage.Scalar](double/simd16storage/scalar.md)
+- [Double.SIMD16Storage.Scalar](./simd16storage/scalar.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [SIMDStorage](simdstorage.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](../bitwisecopyable.md)
+- [SIMDStorage](../simdstorage.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 ## See Also
 
-- [typealias SIMDMaskScalar](double/simdmaskscalar.md)
-- [Double.SIMD2Storage](double/simd2storage.md)
+### SIMD-Supporting Types
+- [typealias SIMDMaskScalar](./simdmaskscalar.md)
+- [Double.SIMD2Storage](./simd2storage.md)
   Storage for a vector of two floating-point values.
-- [Double.SIMD4Storage](double/simd4storage.md)
+- [Double.SIMD4Storage](./simd4storage.md)
   Storage for a vector of four floating-point values.
-- [Double.SIMD8Storage](double/simd8storage.md)
+- [Double.SIMD8Storage](./simd8storage.md)
   Storage for a vector of eight floating-point values.
-- [Double.SIMD32Storage](double/simd32storage.md)
+- [Double.SIMD32Storage](./simd32storage.md)
   Storage for a vector of 32 floating-point values.
-- [Double.SIMD64Storage](double/simd64storage.md)
+- [Double.SIMD64Storage](./simd64storage.md)
   Storage for a vector of 64 floating-point values.
 
 

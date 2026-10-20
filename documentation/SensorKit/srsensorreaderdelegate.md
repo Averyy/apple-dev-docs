@@ -1,19 +1,26 @@
 # SRSensorReaderDelegate
 
 **Framework**: SensorKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of callbacks the framework invokes to notify the app of sensor-related events.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 27.0
+- iPadOS 13.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+
+> **Deprecated**: Use SRReader<Sensor> class
 
 ## Declaration
 
 ```swift
 protocol SRSensorReaderDelegate : NSObjectProtocol
+```
+
+```objc
+@protocol SRSensorReaderDelegate <NSObject>
 ```
 
 #### Overview
@@ -23,47 +30,48 @@ To access sensor data, assign an object as the delegate and implement its callba
 ## Topics
 
 ### Checking Authorization Status
-- [func sensorReader(SRSensorReader, didChange: SRAuthorizationStatus)](srsensorreaderdelegate/sensorreader(_:didchange:).md)
+- [func sensorReader(SRSensorReader, didChange: SRAuthorizationStatus)](./srsensorreaderdelegate/sensorreader%28_,didchange%29.md)
   Notifies the delegate of the reader’s new authorization status.
 ### Fetching Devices
-- [func sensorReader(SRSensorReader, didFetch: [SRDevice])](srsensorreaderdelegate/sensorreader(_:didfetch:).md)
+- [func sensorReader(SRSensorReader, didFetch: [SRDevice])](./srsensorreaderdelegate/sensorreader%28_,didfetch%29.md)
   Provides the delegate with one or more devices.
-- [func sensorReader(SRSensorReader, fetchDevicesDidFailWithError: any Error)](srsensorreaderdelegate/sensorreader(_:fetchdevicesdidfailwitherror:).md)
+- [func sensorReader(SRSensorReader, fetchDevicesDidFailWithError: any Error)](./srsensorreaderdelegate/sensorreader%28_,fetchdevicesdidfailwitherror%29.md)
   Provides the delegate a reason when the reader fails to fetch devices.
-- [class SRDevice](srdevice.md)
+- [class SRDevice](./srdevice.md)
   A representation of a device that provides sample data.
 ### Recording Data
-- [func sensorReaderWillStartRecording(SRSensorReader)](srsensorreaderdelegate/sensorreaderwillstartrecording(_:).md)
+- [func sensorReaderWillStartRecording(SRSensorReader)](./srsensorreaderdelegate/sensorreaderwillstartrecording%28_%29.md)
   Notifies the delegate when a reader starts recording.
-- [func sensorReader(SRSensorReader, startRecordingFailedWithError: any Error)](srsensorreaderdelegate/sensorreader(_:startrecordingfailedwitherror:).md)
+- [func sensorReader(SRSensorReader, startRecordingFailedWithError: any Error)](./srsensorreaderdelegate/sensorreader%28_,startrecordingfailedwitherror%29.md)
   Provides the delegate with a reason when the reader fails to record.
-- [func sensorReaderDidStopRecording(SRSensorReader)](srsensorreaderdelegate/sensorreaderdidstoprecording(_:).md)
+- [func sensorReaderDidStopRecording(SRSensorReader)](./srsensorreaderdelegate/sensorreaderdidstoprecording%28_%29.md)
   Notifies the delegate when a reader stops recording.
-- [func sensorReader(SRSensorReader, stopRecordingFailedWithError: any Error)](srsensorreaderdelegate/sensorreader(_:stoprecordingfailedwitherror:).md)
+- [func sensorReader(SRSensorReader, stopRecordingFailedWithError: any Error)](./srsensorreaderdelegate/sensorreader%28_,stoprecordingfailedwitherror%29.md)
   Provides the delegate with a reason when the reader fails to stop recording.
 ### Reading Recorded Data
-- [func sensorReader(SRSensorReader, fetching: SRFetchRequest, didFetchResult: SRFetchResult<AnyObject>) -> Bool](srsensorreaderdelegate/sensorreader(_:fetching:didfetchresult:).md)
+- [func sensorReader(SRSensorReader, fetching: SRFetchRequest, didFetchResult: SRFetchResult<AnyObject>) -> Bool](./srsensorreaderdelegate/sensorreader%28_,fetching,didfetchresult%29.md)
   Provides the delegate with a fetch result.
-- [func sensorReader(SRSensorReader, didCompleteFetch: SRFetchRequest)](srsensorreaderdelegate/sensorreader(_:didcompletefetch:).md)
+- [func sensorReader(SRSensorReader, didCompleteFetch: SRFetchRequest)](./srsensorreaderdelegate/sensorreader%28_,didcompletefetch%29.md)
   Provides the delegate with a completed fetch request.
-- [func sensorReader(SRSensorReader, fetching: SRFetchRequest, failedWithError: any Error)](srsensorreaderdelegate/sensorreader(_:fetching:failedwitherror:).md)
+- [func sensorReader(SRSensorReader, fetching: SRFetchRequest, failedWithError: any Error)](./srsensorreaderdelegate/sensorreader%28_,fetching,failedwitherror%29.md)
   Provides the delegate with a fetch failure reason.
 ### Interpreting Errors
-- [let SRErrorDomain: String](srerrordomain.md)
+- [let SRErrorDomain: String](./srerrordomain.md)
   An error domain that’s unique to the framework.
-- [struct SRError](srerror.md)
+- [struct SRError](./srerror.md)
   An error that SensorKit reports.
-- [SRError.Code](srerror/code.md)
+- [SRError.Code](./srerror/code.md)
   The kinds of problems that stop a recording or a fetch.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any SRSensorReaderDelegate)?](srsensorreader/delegate.md)
+### Responding to sensor events
+- [var delegate: (any SRSensorReaderDelegate)?](./srsensorreader/delegate.md)
   An object that responds to sensor-related events.
 
 

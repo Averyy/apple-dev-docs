@@ -1,19 +1,24 @@
 # WKDownload.PlaceholderPolicy.disable
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
 - Mac Catalyst 18.2+
-- macOS ?+
+- macOS
 - visionOS 2.2+
 
 ## Declaration
 
 ```swift
 case disable
+```
+
+```c
+WKDownloadPlaceholderPolicyDisable
 ```
 
 

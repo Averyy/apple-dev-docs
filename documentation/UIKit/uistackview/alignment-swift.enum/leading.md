@@ -1,7 +1,8 @@
 # UIStackView.Alignment.leading
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A layout for vertical stacks where the stack view aligns the leading edge of its arranged views along its leading edge.
 
@@ -18,29 +19,34 @@ A layout for vertical stacks where the stack view aligns the leading edge of its
 case leading
 ```
 
+```c
+UIStackViewAlignmentLeading
+```
+
 #### Discussion
 
-This value is equivalent to the [`top`](uistackview/alignment-swift.enum/top.md) alignment for horizontal stacks.
+This value is equivalent to the [`top`](./top.md) alignment for horizontal stacks.
 
-The following image shows an example of a vertical stack view that uses the [`UIStackView.Alignment.leading`](uistackview/alignment-swift.enum/leading.md) alignment.
+The following image shows an example of a vertical stack view that uses the [`UIStackView.Alignment.leading`](./leading.md) alignment.
 
-![A vertical stack view with four arranged subviews. The stack view aligns the subviews to its leading edge.](/images/com.apple.uikit/media-2557458@2x.png)
+![A vertical stack view with four arranged subviews. The stack view aligns the subviews to its leading edge.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2557458@2x.png)
 
 ## See Also
 
-- [UIStackView.Alignment.fill](uistackview/alignment-swift.enum/fill.md)
+### Constants
+- [UIStackView.Alignment.fill](./fill.md)
   A layout where the stack view resizes its arranged views so that they fill the available space perpendicular to the stack view’s axis.
-- [UIStackView.Alignment.center](uistackview/alignment-swift.enum/center.md)
+- [UIStackView.Alignment.center](./center.md)
   A layout where the stack view aligns the center of its arranged views with its center along its axis.
-- [UIStackView.Alignment.trailing](uistackview/alignment-swift.enum/trailing.md)
+- [UIStackView.Alignment.trailing](./trailing.md)
   A layout for vertical stacks where the stack view aligns the trailing edge of its arranged views along its trailing edge.
-- [static var top: UIStackView.Alignment](uistackview/alignment-swift.enum/top.md)
+- [static var top: UIStackView.Alignment](./top.md)
   A layout for horizontal stacks where the stack view aligns the top edge of its arranged views along its top edge.
-- [static var bottom: UIStackView.Alignment](uistackview/alignment-swift.enum/bottom.md)
+- [static var bottom: UIStackView.Alignment](./bottom.md)
   A layout for horizontal stacks where the stack view aligns the bottom edge of its arranged views along its bottom edge.
-- [UIStackView.Alignment.firstBaseline](uistackview/alignment-swift.enum/firstbaseline.md)
+- [UIStackView.Alignment.firstBaseline](./firstbaseline.md)
   A layout for horizontal stacks where the stack view aligns its arranged views based on their first baseline.
-- [UIStackView.Alignment.lastBaseline](uistackview/alignment-swift.enum/lastbaseline.md)
+- [UIStackView.Alignment.lastBaseline](./lastbaseline.md)
   A layout for horizontal stacks where the stack view aligns its arranged views based on their last baseline.
 
 

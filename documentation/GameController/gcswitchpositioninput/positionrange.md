@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The range of possible values for the switch.
@@ -20,11 +21,16 @@ The range of possible values for the switch.
 var positionRange: NSRange { get }
 ```
 
+```objc
+@property (readonly) NSRange positionRange;
+```
+
 ## See Also
 
-- [var isSequential: Bool](gcswitchpositioninput/issequential.md)
+### Getting the characteristics
+- [var isSequential: Bool](./issequential.md)
   A Boolean value that indicates whether the position change is sequential.
-- [var canWrap: Bool](gcswitchpositioninput/canwrap.md)
+- [var canWrap: Bool](./canwrap.md)
   A Boolean value that indicates whether the position value wraps when it reaches the range’s minimum or maximum value.
 
 

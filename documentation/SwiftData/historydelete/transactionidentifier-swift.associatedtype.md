@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type associated with the transaction identifier.
@@ -24,9 +25,10 @@ associatedtype TransactionIdentifier : Comparable, Hashable, Sendable
 
 ## See Also
 
-- [associatedtype ChangeIdentifier : Comparable, Hashable, Sendable](historydelete/changeidentifier-swift.associatedtype.md)
+### Associated types
+- [associatedtype ChangeIdentifier : Comparable, Hashable, Sendable](./changeidentifier-swift.associatedtype.md)
   The type associated with the change identifier.
-- [associatedtype Model : PersistentModel](historydelete/model.md)
+- [associatedtype Model : PersistentModel](./model.md)
   The type associated with the persistent model.
 
 

@@ -1,7 +1,8 @@
 # headerButton
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A button that the section header displays.
 
@@ -17,11 +18,16 @@ A button that the section header displays.
 var headerButton: CPButton? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) CPButton * headerButton;
+```
+
 ## See Also
 
-- [var headerImage: UIImage?](cplistsection/headerimage.md)
+### Configuring Section Headers
+- [var headerImage: UIImage?](./headerimage.md)
   An image that the section header displays.
-- [var headerSubtitle: String?](cplistsection/headersubtitle.md)
+- [var headerSubtitle: String?](./headersubtitle.md)
   A string that the header displays as a subtitle.
 
 

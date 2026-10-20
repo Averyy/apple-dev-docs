@@ -1,7 +1,8 @@
 # init(inkType:color:width:azimuth:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -12,8 +13,28 @@
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+init(inkType type: __PKInkType, color: UIColor, width: CGFloat, azimuth angle: CGFloat)
+```
+
+*macOS*
+
 ```swift
 init(inkType type: __PKInkType, color: NSColor, width: CGFloat, azimuth angle: CGFloat)
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+- (instancetype) initWithInkType:(PKInkType) type color:(UIColor *) color width:(CGFloat) width azimuth:(CGFloat) angle;
+```
+
+*macOS*
+
+```objc
+- (instancetype) initWithInkType:(PKInkType) type color:(NSColor *) color width:(CGFloat) width azimuth:(CGFloat) angle;
 ```
 
 

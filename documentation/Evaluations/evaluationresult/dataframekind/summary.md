@@ -1,7 +1,8 @@
 # EvaluationResult.DataFrameKind.summary
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The aggregated summary DataFrame.
 

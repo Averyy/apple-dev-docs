@@ -1,7 +1,8 @@
 # NEURLFilterStatusDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Name of the NSNotification that is posted when the URL filter status changes.
 

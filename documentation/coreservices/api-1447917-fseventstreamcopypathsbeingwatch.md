@@ -1,7 +1,8 @@
 # FSEventStreamCopyPathsBeingWatched(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,7 +14,11 @@
 func FSEventStreamCopyPathsBeingWatched(_ streamRef: ConstFSEventStreamRef) -> CFArray
 ```
 
-#### Return_value
+```c
+CFArrayRef FSEventStreamCopyPathsBeingWatched(ConstFSEventStreamRef streamRef);
+```
+
+#### Return Value
 
 A CFArray of CFStringRefs corresponding to those supplied when the stream was created. Ownership follows the Copy rule.
 

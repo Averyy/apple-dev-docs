@@ -1,7 +1,8 @@
 # buttonStyle
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style to use when displaying the button.
 
@@ -16,11 +17,16 @@ The style to use when displaying the button.
 var buttonStyle: CPBarButtonStyle { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CPBarButtonStyle buttonStyle;
+```
+
 ## See Also
 
-- [var buttonType: CPBarButton.Type](cpbarbutton/buttontype.md)
+### Getting the Button Style
+- [var buttonType: CPBarButton.Type](./buttontype.md)
   The display type for the bar button.
-- [enum CPBarButtonStyle](cpbarbuttonstyle.md)
+- [enum CPBarButtonStyle](../cpbarbuttonstyle.md)
   The display style of a bar button.
 
 

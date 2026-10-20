@@ -1,14 +1,15 @@
 # kHIDUsage_Csmr_ACSplit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Csmr_ACSplit = 0x29A
 ```
 

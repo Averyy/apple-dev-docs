@@ -1,7 +1,8 @@
 # projectPoint(_:viewRotationAngle:viewportSize:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Project a 3D point in world coordinate system into 2D viewport space.
 
@@ -13,6 +14,10 @@ Project a 3D point in world coordinate system into 2D viewport space.
 
 ```swift
 func projectPoint(_ point: simd_float3, viewRotationAngle: CGFloat, viewportSize: CGSize) -> CGPoint
+```
+
+```objc
+- (CGPoint) projectPoint:(simd_float3) point viewRotationAngle:(CGFloat) viewRotationAngle viewportSize:(CGSize) viewportSize;
 ```
 
 #### Return Value

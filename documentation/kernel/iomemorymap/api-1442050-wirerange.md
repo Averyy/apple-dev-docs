@@ -1,14 +1,15 @@
 # wireRange
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn wireRange(uint32_t options, mach_vm_size_t offset, mach_vm_size_t length);
 ```
 

@@ -1,16 +1,17 @@
 # MLCComparisonOperation
 
 **Framework**: ML Compute  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A comparison operation.
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- macOS 11.3+
-- tvOS 14.5+
+- iOS 14.5+ - Deprecated in 17.4
+- iPadOS 14.5+ - Deprecated in 17.4
+- Mac Catalyst 14.5+ - Deprecated in 17.4
+- macOS 11.3+ - Deprecated in 14.3
+- tvOS 14.5+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,39 +19,44 @@ A comparison operation.
 enum MLCComparisonOperation
 ```
 
+```c
+enum MLCComparisonOperation : int32_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MLCComparisonOperation.equal](mlccomparisonoperation/equal.md)
-- [MLCComparisonOperation.greater](mlccomparisonoperation/greater.md)
-- [MLCComparisonOperation.greaterOrEqual](mlccomparisonoperation/greaterorequal.md)
-- [MLCComparisonOperation.less](mlccomparisonoperation/less.md)
-- [MLCComparisonOperation.lessOrEqual](mlccomparisonoperation/lessorequal.md)
-- [MLCComparisonOperation.logicalAND](mlccomparisonoperation/logicaland.md)
-- [MLCComparisonOperation.logicalNAND](mlccomparisonoperation/logicalnand.md)
-- [MLCComparisonOperation.logicalNOR](mlccomparisonoperation/logicalnor.md)
-- [MLCComparisonOperation.logicalNOT](mlccomparisonoperation/logicalnot.md)
-- [MLCComparisonOperation.logicalOR](mlccomparisonoperation/logicalor.md)
-- [MLCComparisonOperation.logicalXOR](mlccomparisonoperation/logicalxor.md)
-- [MLCComparisonOperation.notEqual](mlccomparisonoperation/notequal.md)
-- [var debugDescription: String](mlccomparisonoperation/debugdescription.md)
+- [MLCComparisonOperation.equal](./mlccomparisonoperation/equal.md)
+- [MLCComparisonOperation.greater](./mlccomparisonoperation/greater.md)
+- [MLCComparisonOperation.greaterOrEqual](./mlccomparisonoperation/greaterorequal.md)
+- [MLCComparisonOperation.less](./mlccomparisonoperation/less.md)
+- [MLCComparisonOperation.lessOrEqual](./mlccomparisonoperation/lessorequal.md)
+- [MLCComparisonOperation.logicalAND](./mlccomparisonoperation/logicaland.md)
+- [MLCComparisonOperation.logicalNAND](./mlccomparisonoperation/logicalnand.md)
+- [MLCComparisonOperation.logicalNOR](./mlccomparisonoperation/logicalnor.md)
+- [MLCComparisonOperation.logicalNOT](./mlccomparisonoperation/logicalnot.md)
+- [MLCComparisonOperation.logicalOR](./mlccomparisonoperation/logicalor.md)
+- [MLCComparisonOperation.logicalXOR](./mlccomparisonoperation/logicalxor.md)
+- [MLCComparisonOperation.notEqual](./mlccomparisonoperation/notequal.md)
+- [var debugDescription: String](./mlccomparisonoperation/debugdescription.md)
   A textual description of the comparison operation, suitable for debugging.
 ### Initializers
-- [init?(rawValue: Int32)](mlccomparisonoperation/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./mlccomparisonoperation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init(operation: MLCComparisonOperation)](mlccomparisonlayer/init(operation:).md)
+### Creating Comparison Layers
+- [convenience init(operation: MLCComparisonOperation)](./mlccomparisonlayer/init%28operation%29.md)
   Creates a comparison layer with the operation you specify.
 
 

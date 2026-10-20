@@ -1,7 +1,8 @@
 # NSItemProvider.PreferredPresentationStyle
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The presentation styles that determine how a view shows an item provider’s data.
 
@@ -22,34 +23,35 @@ enum PreferredPresentationStyle
 ## Topics
 
 ### Presentation Styles
-- [NSItemProvider.PreferredPresentationStyle.unspecified](nsitemprovider/preferredpresentationstyle-swift.enum/unspecified.md)
+- [NSItemProvider.PreferredPresentationStyle.unspecified](./preferredpresentationstyle-swift.enum/unspecified.md)
   A presentation style indicating that no preferred style is specified.
-- [NSItemProvider.PreferredPresentationStyle.inline](nsitemprovider/preferredpresentationstyle-swift.enum/inline.md)
+- [NSItemProvider.PreferredPresentationStyle.inline](./preferredpresentationstyle-swift.enum/inline.md)
   A presentation style indicating that the item provider data should be presented inline.
-- [NSItemProvider.PreferredPresentationStyle.attachment](nsitemprovider/preferredpresentationstyle-swift.enum/attachment.md)
+- [NSItemProvider.PreferredPresentationStyle.attachment](./preferredpresentationstyle-swift.enum/attachment.md)
   A presentation style indicating that the item provider data should be presented as an attachment.
 ### Initializers
-- [init?(rawValue: Int)](nsitemprovider/preferredpresentationstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./preferredpresentationstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var preferredPresentationSize: CGSize](nsitemprovider/preferredpresentationsize.md)
+### Configuring the provider
+- [var preferredPresentationSize: CGSize](./preferredpresentationsize.md)
   The ideal presentation size of the item.
-- [var preferredPresentationStyle: NSItemProvider.PreferredPresentationStyle](nsitemprovider/preferredpresentationstyle-swift.property.md)
+- [var preferredPresentationStyle: NSItemProvider.PreferredPresentationStyle](./preferredpresentationstyle-swift.property.md)
   The preferred style for presenting the item provider’s data.
-- [var suggestedName: String?](nsitemprovider/suggestedname.md)
+- [var suggestedName: String?](./suggestedname.md)
   The filename to use when writing the provided data to a file on disk.
-- [var teamData: Data?](nsitemprovider/teamdata.md)
+- [var teamData: Data?](./teamdata.md)
   The collection of data an app uses to hold private team information during drag and drop.
 
 

@@ -1,7 +1,8 @@
 # books
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app entities that describe ebooks or audiobooks.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for app entities that describe ebooks or audiobooks
 ```swift
 static var books: some AssistantSchemas.BooksEntity { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EntitySchema`.
 
 
 ---

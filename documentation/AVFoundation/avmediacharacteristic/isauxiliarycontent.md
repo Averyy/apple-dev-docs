@@ -1,7 +1,8 @@
 # isAuxiliaryContent
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A media characteristic that indicates a track or media selection option includes content its author indicates is auxiliary to the asset’s presentation.
 
@@ -20,6 +21,10 @@ A media characteristic that indicates a track or media selection option includes
 static let isAuxiliaryContent: AVMediaCharacteristic
 ```
 
+```c
+extern AVMediaCharacteristic const AVMediaCharacteristicIsAuxiliaryContent;
+```
+
 #### Discussion
 
 An example of auxiliary content is audio commentary about the presentation.
@@ -30,11 +35,12 @@ For QuickTime movies and `.m4v` files, a media option has this characteristic on
 
 ## See Also
 
-- [static let isOriginalContent: AVMediaCharacteristic](avmediacharacteristic/isoriginalcontent.md)
+### Content
+- [static let isOriginalContent: AVMediaCharacteristic](./isoriginalcontent.md)
   A media characteristic that indicates that a track or media selection option contains original content.
-- [static let isMainProgramContent: AVMediaCharacteristic](avmediacharacteristic/ismainprogramcontent.md)
+- [static let isMainProgramContent: AVMediaCharacteristic](./ismainprogramcontent.md)
   A media characteristic that indicates a track or media selection option includes content its author indicates is essential to the asset’s presentation.
-- [static let machineGenerated: AVMediaCharacteristic](avmediacharacteristic/machinegenerated.md)
+- [static let machineGenerated: AVMediaCharacteristic](./machinegenerated.md)
   A media characteristic that indicates that a track was generated in an automated fashion by a machine.
 
 

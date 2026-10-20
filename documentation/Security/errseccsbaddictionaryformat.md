@@ -1,7 +1,8 @@
 # errSecCSBadDictionaryFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A required information property list (Info.plist) file or resource is malformed.
 
@@ -13,6 +14,10 @@ A required information property list (Info.plist) file or resource is malformed.
 
 ```swift
 var errSecCSBadDictionaryFormat: OSStatus { get }
+```
+
+```c
+errSecCSBadDictionaryFormat
 ```
 
 

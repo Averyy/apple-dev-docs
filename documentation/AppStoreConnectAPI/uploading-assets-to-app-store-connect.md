@@ -1,6 +1,7 @@
 # Uploading Assets to App Store Connect
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: Article
 
 Upload screenshots, app previews, attachments for App Review, and routing app coverage files to App Store Connect.
 
@@ -15,24 +16,24 @@ There are four steps to upload an asset:
 3. Commit the upload.
 4. Verify that App Store Connect processed the asset successfully.
 
-> **Note**:  The app screenshot, app screenshot set, app preview, app preview set, and in-app event screenshot resources are deprecated. Manage screenshots, previews, and in-app event media with the [`App Asset Library`](app-asset-library.md) and [`App Asset Library placements`](app-asset-library-placements.md) instead.
+> **Note**:  The app screenshot, app screenshot set, app preview, app preview set, and in-app event screenshot resources are deprecated. Manage screenshots, previews, and in-app event media with the [App Asset Library](./app-asset-library.md) and [placements](./app-asset-library-placements.md) instead.
 
 This workflow is the same for every asset type you manage and upload using the following API resources:
 
 | Asset Type | API Resource |
 | --- | --- |
-| App Store screenshots | [`App Screenshot Sets`](app-screenshot-sets.md)   [`App Screenshots`](app-screenshots.md) |
-| App event screenshots | [`App Event Screenshots`](app-event-screenshots.md) |
-| App previews | [`App Preview Sets`](app-preview-sets.md)   [`App Previews`](app-previews.md) |
-| App Clip card images | [`App Clip Header Images`](app-clip-header-images.md)   [`Advanced App Clip Experience Images`](advanced-app-clip-experience-images.md) |
-| Attachments for the App Review team | [`App Store review attachments`](app-store-review-attachments.md) |
-| Game center activity images | [`Game Center activity images`](game-center-activity-images.md) |
-| Game center challenge images | [`Game Center challenge images`](game-center-challenge-images.md) |
-| In-App Purchase App Store review screenshots | [`In-App Purchase App Store Review Screenshots`](in-app-purchase-app-store-review-screenshots.md) |
-| In-App Purchase images | [`In-App Purchase images`](in-app-purchase-images.md) |
-| Subscription App Store review screenshots | [`Subscription App Store Review Screenshots`](subscription-app-store-review-screenshots.md) |
-| Subscription images | [`Subscription images`](subscription-images.md) |
-| Routing app coverage files | [`Routing App Coverages`](routing-app-coverages.md) |
+| App Store screenshots | [App Screenshot Sets](./app-screenshot-sets.md)   [App Screenshots](./app-screenshots.md) |
+| App event screenshots | [App Event Screenshots](./app-event-screenshots.md) |
+| App previews | [App Preview Sets](./app-preview-sets.md)   [App Previews](./app-previews.md) |
+| App Clip card images | [App Clip Header Images](./app-clip-header-images.md)   [Advanced App Clip Experience Images](./advanced-app-clip-experience-images.md) |
+| Attachments for the App Review team | [App Store review attachments](./app-store-review-attachments.md) |
+| Game center activity images | [Game Center activity images](./game-center-activity-images.md) |
+| Game center challenge images | [Game Center challenge images](./game-center-challenge-images.md) |
+| In-App Purchase App Store review screenshots | [In-App Purchase App Store Review Screenshots](./in-app-purchase-app-store-review-screenshots.md) |
+| In-App Purchase images | [In-App Purchase images](./in-app-purchase-images.md) |
+| Subscription App Store review screenshots | [Subscription App Store Review Screenshots](./subscription-app-store-review-screenshots.md) |
+| Subscription images | [Subscription images](./subscription-images.md) |
+| Routing app coverage files | [Routing App Coverages](./routing-app-coverages.md) |
 
 ##### Make an Asset Reservation
 
@@ -132,7 +133,7 @@ Note the upload operations. In this example, the file can be uploaded in a singl
 
 After you make a successful reservation, your asset moves into the `AWAITING_UPLOAD` state, which you can see in the response.
 
-If your reservation request fails, the API returns an error code ([`ErrorResponse`](errorresponse.md)). For more information, see [`Interpreting and Handling Errors`](interpreting-and-handling-errors.md).
+If your reservation request fails, the API returns an error code ([`ErrorResponse`](./errorresponse.md)). For more information, see [Interpreting and Handling Errors](./interpreting-and-handling-errors.md).
 
 ##### Upload the Asset
 
@@ -142,7 +143,7 @@ The next step in delivering an asset to App Store Connect is uploading the binar
 
 If your asset is large enough, you will receive multiple upload operations, each specifying the length in bytes and the byte offset into the file. Divide the large asset into binary data parts as specified by those instructions. One option, using the `length` 11097, is:
 
-```None
+```
 split -b 11097 sample_image.png
 ```
 
@@ -214,15 +215,16 @@ If your asset fails processing at App Store Connect, the asset state will change
 
 ## See Also
 
-- [Creating API Keys for App Store Connect API](creating-api-keys-for-app-store-connect-api.md)
+### Essentials
+- [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md)
   Create API keys to sign JSON Web Tokens (JWTs) and authorize API requests.
-- [Generating Tokens for API Requests](generating-tokens-for-api-requests.md)
+- [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md)
   Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
-- [Revoking API Keys](revoking-api-keys.md)
+- [Revoking API Keys](./revoking-api-keys.md)
   Revoke unused, lost, or compromised private keys.
-- [Identifying Rate Limits](identifying-rate-limits.md)
+- [Identifying Rate Limits](./identifying-rate-limits.md)
   Recognize the rate limits that REST API responses provide and handle them in your code.
-- [App Store Connect API Release Notes](app-store-connect-api-release-notes.md)
+- [App Store Connect API Release Notes](./app-store-connect-api-release-notes.md)
   Learn about new features and updates in the App Store Connect API.
 
 

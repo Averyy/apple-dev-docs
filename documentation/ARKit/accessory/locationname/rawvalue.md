@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location name string.
 

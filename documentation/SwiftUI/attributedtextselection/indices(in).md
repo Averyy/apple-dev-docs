@@ -1,7 +1,8 @@
 # indices(in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The current text selection indices.
 
@@ -52,7 +53,7 @@ struct ContentView: View {
 }
 ```
 
-For more details on attributed string index validity, see [`isValid(within:)`](https://developer.apple.com/documentation/foundation/attributedstring/index/isvalid(within:)-8fw50).
+For more details on attributed string index validity, see [`isValid(within:)`](../../Foundation/attributedstring/index/isvalid%28within%29-8fw50.md).
 
 
 ---

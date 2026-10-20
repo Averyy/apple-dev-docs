@@ -1,15 +1,16 @@
 # kAudioComponentValidationParameter_LoadOutOfProcess
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,10 +18,15 @@
 var kAudioComponentValidationParameter_LoadOutOfProcess: String { get }
 ```
 
+```c
+#define kAudioComponentValidationParameter_LoadOutOfProcess
+```
+
 ## See Also
 
-- [func AudioComponentValidate(AudioComponent, CFDictionary?, UnsafeMutablePointer<AudioComponentValidationResult>) -> OSStatus](audiocomponentvalidate(_:_:_:).md)
-- [enum AudioComponentValidationResult](audiocomponentvalidationresult.md)
+### Validating an Audio Component
+- [func AudioComponentValidate(AudioComponent, CFDictionary?, UnsafeMutablePointer<AudioComponentValidationResult>) -> OSStatus](./audiocomponentvalidate%28_,_,_%29.md)
+- [enum AudioComponentValidationResult](./audiocomponentvalidationresult.md)
 
 
 ---

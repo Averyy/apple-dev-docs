@@ -1,7 +1,8 @@
 # prediction(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Locates objects in an image and generates an annotation for each object it detects.
 
@@ -16,7 +17,7 @@ func prediction(from image: URL) throws -> MLObjectDetector.DetectedObjects
 
 #### Return Value
 
-An [`MLObjectDetector.DetectedObjects`](mlobjectdetector/detectedobjects.md) instance — which is an [`MLObjectDetector.ObjectAnnotation`](mlobjectdetector/objectannotation.md) array — where each annotation represents an item the object detector found in the image.
+An [`MLObjectDetector.DetectedObjects`](./detectedobjects.md) instance — which is an [`MLObjectDetector.ObjectAnnotation`](./objectannotation.md) array — where each annotation represents an item the object detector found in the image.
 
 ## Parameters
 
@@ -24,11 +25,12 @@ An [`MLObjectDetector.DetectedObjects`](mlobjectdetector/detectedobjects.md) ins
 
 ## See Also
 
-- [func predictions(from: [URL]) throws -> [MLObjectDetector.DetectedObjects]](mlobjectdetector/predictions(from:).md)
+### Testing an object detector
+- [func predictions(from: [URL]) throws -> [MLObjectDetector.DetectedObjects]](./predictions%28from%29.md)
   Locates objects in an array of images and generates an array of annotation collections, one for each input image.
-- [MLObjectDetector.DetectedObjects](mlobjectdetector/detectedobjects.md)
+- [MLObjectDetector.DetectedObjects](./detectedobjects.md)
   An array of annotations that represent the items an object detector found in an image.
-- [MLObjectDetector.ObjectAnnotation](mlobjectdetector/objectannotation.md)
+- [MLObjectDetector.ObjectAnnotation](./objectannotation.md)
   The label, location, and confidence score of an item the object detector found in an image.
 
 

@@ -1,7 +1,8 @@
 # stations
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stations for the personal recommendation.
 

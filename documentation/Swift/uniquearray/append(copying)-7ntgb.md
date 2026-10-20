@@ -1,7 +1,8 @@
 # append(copying:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copies the elements of a sequence to the end of this array.
 
@@ -24,7 +25,7 @@ mutating func append(copying newElements: some Sequence<Element>)
 
 If the array does not have sufficient capacity to hold enough elements, then this reallocates the array’s storage to extend its capacity, using a geometric growth rate. If the input sequence does not provide a precise estimate of its count, then the array’s storage may need to be resized more than once.
 
-> **Note**: O(*m*), where *m* is the length of `newElements`, when amortized over many invocations over the same array.
+> **Complexity**: O(*m*), where *m* is the length of `newElements`, when amortized over many invocations over the same array.
 
 ## Parameters
 

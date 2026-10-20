@@ -1,7 +1,8 @@
 # cellularServiceID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cellular service identifier associated with the message.
 
@@ -16,15 +17,16 @@ let cellularServiceID: CellularServiceID
 
 ## See Also
 
-- [struct CellularServiceID](cellularserviceid.md)
+### Accessing message properties
+- [struct CellularServiceID](../cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [let handle: SMSHandle](smsmessage/handle.md)
+- [let handle: SMSHandle](./handle.md)
   A handle that represents the originator of an incoming message or the destination of an outgoing message.
-- [struct SMSHandle](smshandle.md)
+- [struct SMSHandle](../smshandle.md)
   A structure that represents an SMS address.
-- [let messageID: SMSMessageID](smsmessage/messageid.md)
+- [let messageID: SMSMessageID](./messageid.md)
   A message identifier for the message.
-- [struct SMSMessageID](smsmessageid.md)
+- [struct SMSMessageID](../smsmessageid.md)
   A structure that represents an SMS message identifier.
 
 

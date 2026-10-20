@@ -1,7 +1,8 @@
 # WINetworkSharingError.appNotInForeground
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates your app can’t perform the requested operation because it isn’t running in the foreground.
 
@@ -18,7 +19,8 @@ case appNotInForeground
 
 ## See Also
 
-- [WINetworkSharingError.appNotPermitted](winetworksharingerror/appnotpermitted.md)
+### Checking for app issues
+- [WINetworkSharingError.appNotPermitted](./appnotpermitted.md)
   Indicates the person hasn’t granted your app permission to use the shared networks API for the accessory.
 
 

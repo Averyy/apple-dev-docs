@@ -1,7 +1,8 @@
 # AVAudioVoiceProcessingSpeechActivityEvent
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of speech activity events.
 
@@ -19,29 +20,34 @@ Types of speech activity events.
 enum AVAudioVoiceProcessingSpeechActivityEvent
 ```
 
+```c
+enum AVAudioVoiceProcessingSpeechActivityEvent : NSInteger;
+```
+
 ## Topics
 
 ### Creating an activity event
-- [init?(rawValue: Int)](avaudiovoiceprocessingspeechactivityevent/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avaudiovoiceprocessingspeechactivityevent/init%28rawvalue%29.md)
 ### Identifying activity events
-- [AVAudioVoiceProcessingSpeechActivityEvent.started](avaudiovoiceprocessingspeechactivityevent/started.md)
+- [AVAudioVoiceProcessingSpeechActivityEvent.started](./avaudiovoiceprocessingspeechactivityevent/started.md)
   Indicates the start of speech activity.
-- [AVAudioVoiceProcessingSpeechActivityEvent.ended](avaudiovoiceprocessingspeechactivityevent/ended.md)
+- [AVAudioVoiceProcessingSpeechActivityEvent.ended](./avaudiovoiceprocessingspeechactivityevent/ended.md)
   Indicates the end of speech activity.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setMutedSpeechActivityEventListener(((AVAudioVoiceProcessingSpeechActivityEvent) -> Void)?) -> Bool](avaudioinputnode/setmutedspeechactivityeventlistener(_:).md)
+### Handling muted speech events
+- [func setMutedSpeechActivityEventListener(((AVAudioVoiceProcessingSpeechActivityEvent) -> Void)?) -> Bool](./avaudioinputnode/setmutedspeechactivityeventlistener%28_%29.md)
 
 
 ---

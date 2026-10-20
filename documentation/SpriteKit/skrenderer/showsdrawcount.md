@@ -1,7 +1,8 @@
 # showsDrawCount
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the view displays the number of drawing passes it needed to render the view.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether the view displays the number of drawing p
 var showsDrawCount: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsDrawCount;
+```
+
 #### Discussion
 
-Some operations in SpriteKit can require multiple rendering passes to draw a scene’s content. For example, an [`SKEffectNode`](skeffectnode.md) object must render its children into a separate buffer, apply the effect, and then perform another pass to blend those results into its parent node. These additional rendering passes use more rendering resources, reducing your game’s frame rate or increasing its total power consumption. Use the draw count as another piece of data when you profile your game’s performance.
+Some operations in SpriteKit can require multiple rendering passes to draw a scene’s content. For example, an [`SKEffectNode`](../skeffectnode.md) object must render its children into a separate buffer, apply the effect, and then perform another pass to blend those results into its parent node. These additional rendering passes use more rendering resources, reducing your game’s frame rate or increasing its total power consumption. Use the draw count as another piece of data when you profile your game’s performance.
 
 ## See Also
 
-- [var showsNodeCount: Bool](skrenderer/showsnodecount.md)
+### Enabling Visual Statistics for Debugging
+- [var showsNodeCount: Bool](./showsnodecount.md)
   A Boolean value that indicates whether the view displays an overlay that shows physics bodies that are visible in the scene.
-- [var showsQuadCount: Bool](skrenderer/showsquadcount.md)
+- [var showsQuadCount: Bool](./showsquadcount.md)
   A Boolean value that indicates whether the view displays the number of rectangles used to render the scene.
-- [var showsPhysics: Bool](skrenderer/showsphysics.md)
+- [var showsPhysics: Bool](./showsphysics.md)
   A Boolean value that indicates whether the view displays physics-related debugging information.
-- [var showsFields: Bool](skrenderer/showsfields.md)
+- [var showsFields: Bool](./showsfields.md)
   A Boolean value that indicates whether the view displays information about physics fields in the scene.
 
 

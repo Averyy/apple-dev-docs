@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSizeOfATAModelString](1646132-anonymous/ksizeofatamodelstring.md)
-- [kSizeOfATARevisionString](1646132-anonymous/ksizeofatarevisionstring.md)
+- [kSizeOfATAModelString](./api-1646132-anonymous/ksizeofatamodelstring.md)
+- [kSizeOfATARevisionString](./api-1646132-anonymous/ksizeofatarevisionstring.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ResponseErrorInfo
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about the error.
 
@@ -10,14 +11,14 @@ Information about the error.
 
 ## Declaration
 
-```swift
+```
 object ResponseErrorInfo
 ```
 
 ## Topics
 
 ### Objects and Data Types
-- [object Asset](asset.md)
+- [object Asset](./asset.md)
   A product in the store.
 
 ## Properties

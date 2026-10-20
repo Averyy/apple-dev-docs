@@ -1,7 +1,8 @@
 # MPSStateResourceList
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface for objects that define resources for Metal Performance Shaders state containers.
 
@@ -19,25 +20,29 @@ An interface for objects that define resources for Metal Performance Shaders sta
 class MPSStateResourceList
 ```
 
+```objc
+@interface MPSStateResourceList : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init()](mpsstateresourcelist/init.md)
+- [init()](./mpsstateresourcelist/init%28%29.md)
 ### Instance Methods
-- [func appendBuffer(Int)](mpsstateresourcelist/appendbuffer(_:).md)
-- [func appendTexture(MTLTextureDescriptor)](mpsstateresourcelist/appendtexture(_:).md)
+- [func appendBuffer(Int)](./mpsstateresourcelist/appendbuffer%28_%29.md)
+- [func appendTexture(MTLTextureDescriptor)](./mpsstateresourcelist/appendtexture%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

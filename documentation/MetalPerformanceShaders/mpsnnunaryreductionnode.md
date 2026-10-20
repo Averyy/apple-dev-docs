@@ -1,7 +1,8 @@
 # MPSNNUnaryReductionNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 12.1+
@@ -17,40 +18,44 @@
 class MPSNNUnaryReductionNode
 ```
 
+```objc
+@interface MPSNNUnaryReductionNode : MPSNNFilterNode
+```
+
 ## Topics
 
 ### Initializers
-- [init(source: MPSNNImageNode)](mpsnnunaryreductionnode/init(source:).md)
+- [init(source: MPSNNImageNode)](./mpsnnunaryreductionnode/init%28source%29.md)
 ### Instance Properties
-- [var clipRectSource: MTLRegion](mpsnnunaryreductionnode/cliprectsource.md)
+- [var clipRectSource: MTLRegion](./mpsnnunaryreductionnode/cliprectsource.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNNFilterNode](mpsnnfilternode.md)
+- [MPSNNFilterNode](./mpsnnfilternode.md)
 ### Inherited By
-- [MPSNNReductionColumnMaxNode](mpsnnreductioncolumnmaxnode.md)
-- [MPSNNReductionColumnMeanNode](mpsnnreductioncolumnmeannode.md)
-- [MPSNNReductionColumnMinNode](mpsnnreductioncolumnminnode.md)
-- [MPSNNReductionColumnSumNode](mpsnnreductioncolumnsumnode.md)
-- [MPSNNReductionFeatureChannelsArgumentMaxNode](mpsnnreductionfeaturechannelsargumentmaxnode.md)
-- [MPSNNReductionFeatureChannelsArgumentMinNode](mpsnnreductionfeaturechannelsargumentminnode.md)
-- [MPSNNReductionFeatureChannelsMaxNode](mpsnnreductionfeaturechannelsmaxnode.md)
-- [MPSNNReductionFeatureChannelsMeanNode](mpsnnreductionfeaturechannelsmeannode.md)
-- [MPSNNReductionFeatureChannelsMinNode](mpsnnreductionfeaturechannelsminnode.md)
-- [MPSNNReductionFeatureChannelsSumNode](mpsnnreductionfeaturechannelssumnode.md)
-- [MPSNNReductionRowMaxNode](mpsnnreductionrowmaxnode.md)
-- [MPSNNReductionRowMeanNode](mpsnnreductionrowmeannode.md)
-- [MPSNNReductionRowMinNode](mpsnnreductionrowminnode.md)
-- [MPSNNReductionRowSumNode](mpsnnreductionrowsumnode.md)
-- [MPSNNReductionSpatialMeanNode](mpsnnreductionspatialmeannode.md)
+- [MPSNNReductionColumnMaxNode](./mpsnnreductioncolumnmaxnode.md)
+- [MPSNNReductionColumnMeanNode](./mpsnnreductioncolumnmeannode.md)
+- [MPSNNReductionColumnMinNode](./mpsnnreductioncolumnminnode.md)
+- [MPSNNReductionColumnSumNode](./mpsnnreductioncolumnsumnode.md)
+- [MPSNNReductionFeatureChannelsArgumentMaxNode](./mpsnnreductionfeaturechannelsargumentmaxnode.md)
+- [MPSNNReductionFeatureChannelsArgumentMinNode](./mpsnnreductionfeaturechannelsargumentminnode.md)
+- [MPSNNReductionFeatureChannelsMaxNode](./mpsnnreductionfeaturechannelsmaxnode.md)
+- [MPSNNReductionFeatureChannelsMeanNode](./mpsnnreductionfeaturechannelsmeannode.md)
+- [MPSNNReductionFeatureChannelsMinNode](./mpsnnreductionfeaturechannelsminnode.md)
+- [MPSNNReductionFeatureChannelsSumNode](./mpsnnreductionfeaturechannelssumnode.md)
+- [MPSNNReductionRowMaxNode](./mpsnnreductionrowmaxnode.md)
+- [MPSNNReductionRowMeanNode](./mpsnnreductionrowmeannode.md)
+- [MPSNNReductionRowMinNode](./mpsnnreductionrowminnode.md)
+- [MPSNNReductionRowSumNode](./mpsnnreductionrowsumnode.md)
+- [MPSNNReductionSpatialMeanNode](./mpsnnreductionspatialmeannode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

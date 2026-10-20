@@ -1,7 +1,8 @@
 # Create a workflow
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a new Xcode Cloud workflow for an Xcode Cloud product.
 
@@ -16,7 +17,7 @@ The example request below creates a new workflow that performs the archive actio
 
 **Request**:
 
-```None
+```
 {    
 “data”: {
         “type”: “ciWorkflows”,
@@ -160,13 +161,27 @@ The example request below creates a new workflow that performs the archive actio
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `CiWorkflowCreateRequest`
+
 The request body you use to create a new Xcode Cloud workflow.
+
+## Responses
+
+- `201` Created (`CiWorkflowResponse`, `application/json`): The request completed successfully and a new Workflows resource has been created.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `409` Conflict (`ErrorResponse`, `application/json`): The provided resource data is not valid.
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Update an xcode cloud workflow](patch-v1-ciworkflows-_id_.md)
+### Managing Xcode Cloud Workflows
+- [Update an xcode cloud workflow](./patch-v1-ciworkflows-_id_.md)
   Make changes to an Xcode Cloud workflow.
-- [Delete a workflow](delete-v1-ciworkflows-_id_.md)
+- [Delete a workflow](./delete-v1-ciworkflows-_id_.md)
   Delete an Xcode Cloud workflow and all of its associated data.
 
 

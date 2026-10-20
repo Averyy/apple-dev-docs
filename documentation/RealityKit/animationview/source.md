@@ -1,7 +1,8 @@
 # source
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The original animation that this structure modifies.
 
@@ -11,7 +12,7 @@ The original animation that this structure modifies.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,11 +22,12 @@ var source: (any AnimationDefinition)? { get set }
 
 ## See Also
 
-- [var name: String](animationview/name.md)
+### Configuring the animation view
+- [var name: String](./name.md)
   A textual name for the animation.
-- [var bindTarget: BindTarget](animationview/bindtarget.md)
+- [var bindTarget: BindTarget](./bindtarget.md)
   A textual name that identifies the animated property.
-- [var blendLayer: Int32](animationview/blendlayer.md)
+- [var blendLayer: Int32](./blendlayer.md)
   The order in which the framework composites the animation.
 
 

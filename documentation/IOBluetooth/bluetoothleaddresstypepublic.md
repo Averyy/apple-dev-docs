@@ -1,10 +1,11 @@
 # BluetoothLEAddressTypePublic
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var BluetoothLEAddressTypePublic: BluetoothLEAddressType { get }
 ```
 
+```c
+BluetoothLEAddressTypePublic
+```
+
 ## See Also
 
-- [var BluetoothLEAddressTypeRandom: BluetoothLEAddressType](bluetoothleaddresstyperandom.md)
+### Constants
+- [var BluetoothLEAddressTypeRandom: BluetoothLEAddressType](./bluetoothleaddresstyperandom.md)
 
 
 ---

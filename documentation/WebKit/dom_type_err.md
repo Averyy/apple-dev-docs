@@ -1,10 +1,11 @@
 # DOM_TYPE_ERR
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var DOM_TYPE_ERR: DOMXPathExceptionCode { get }
 ```
 
+```c
+DOM_TYPE_ERR
+```
+
 ## See Also
 
-- [var DOM_INVALID_EXPRESSION_ERR: DOMXPathExceptionCode](dom_invalid_expression_err.md)
+### Constants
+- [var DOM_INVALID_EXPRESSION_ERR: DOMXPathExceptionCode](./dom_invalid_expression_err.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # currentUpdateInfo()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an object that describes the current UI update state.
 
@@ -18,13 +19,18 @@ Returns an object that describes the current UI update state.
 func currentUpdateInfo() -> UIUpdateInfo?
 ```
 
+```objc
+- (UIUpdateInfo *) currentUpdateInfo;
+```
+
 #### Return Value
 
-During a UI update, returns a [`UIUpdateInfo`](uiupdateinfo.md) object that describes the current UI update state. Outside a UI update, returns `nil`.
+During a UI update, returns a [`UIUpdateInfo`](../uiupdateinfo.md) object that describes the current UI update state. Outside a UI update, returns `nil`.
 
 ## See Also
 
-- [class UIUpdateInfo](uiupdateinfo.md)
+### Getting the current UI update information
+- [class UIUpdateInfo](../uiupdateinfo.md)
   An object that contains detailed information about the current UI update state.
 
 

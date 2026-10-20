@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color to display behind the preview.
 
@@ -19,11 +20,16 @@ The background color to display behind the preview.
 var backgroundColor: UIColor! { get set }
 ```
 
+```objc
+@property (nonatomic, copy, null_resettable) UIColor * backgroundColor;
+```
+
 ## See Also
 
-- [var visiblePath: UIBezierPath?](uipreviewparameters/visiblepath.md)
+### Configuring the preview attributes
+- [var visiblePath: UIBezierPath?](./visiblepath.md)
   The portion of the view to show in the preview.
-- [var shadowPath: UIBezierPath?](uipreviewparameters/shadowpath.md)
+- [var shadowPath: UIBezierPath?](./shadowpath.md)
   The path to use for drawing the preview’s shadow.
 
 

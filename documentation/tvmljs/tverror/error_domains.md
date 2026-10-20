@@ -1,17 +1,18 @@
 # Error Domains
 
-**Framework**: TVMLKit JS
+**Framework**: TVMLKit JS  
+**Role**: API Collection
 
 The predefined error domains.
 
 ## Topics
 
 ### Constants
-- [NSPOSIXErrorDomain](tverror/error_domains/1807794-nsposixerrordomain.md)
+- [NSPOSIXErrorDomain](./error_domains/api-1807794-nsposixerrordomain.md)
   POSIX/BSD errors.
-- [NSOSStatusErrorDomain](tverror/error_domains/1807796-nsosstatuserrordomain.md)
+- [NSOSStatusErrorDomain](./error_domains/api-1807796-nsosstatuserrordomain.md)
   macOS/Carbon errors.
-- [NSMachErrorDomain](tverror/error_domains/1807799-nsmacherrordomain.md)
+- [NSMachErrorDomain](./error_domains/api-1807799-nsmacherrordomain.md)
   Mach errors.
 
 

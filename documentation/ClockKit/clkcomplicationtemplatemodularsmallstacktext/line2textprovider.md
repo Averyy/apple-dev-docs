@@ -1,12 +1,15 @@
 # line2TextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display on the bottom line of the complication.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,17 +18,22 @@ The text to display on the bottom line of the complication.
 var line2TextProvider: CLKTextProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKTextProvider * line2TextProvider;
+```
+
 #### Discussion
 
 Space for text is limited in this particular template so keep strings as short as possible.
 
-When the [`highlightLine2`](clkcomplicationtemplatemodularsmallstacktext/highlightline2.md) property is [`true`](https://developer.apple.com/documentation/swift/true), a tint color is applied to this text. In multicolor environments, the text provider or template provide the tint color. In monochrome environments, the clock face provides the tint color.
+When the [`highlightLine2`](./highlightline2.md) property is [`true`](../../Swift/true.md), a tint color is applied to this text. In multicolor environments, the text provider or template provide the tint color. In monochrome environments, the clock face provides the tint color.
 
 ## See Also
 
-- [var line1TextProvider: CLKTextProvider](clkcomplicationtemplatemodularsmallstacktext/line1textprovider.md)
+### Setting the Complication Data
+- [var line1TextProvider: CLKTextProvider](./line1textprovider.md)
   The text to display on the top line of the complication.
-- [var highlightLine2: Bool](clkcomplicationtemplatemodularsmallstacktext/highlightline2.md)
+- [var highlightLine2: Bool](./highlightline2.md)
   A Boolean value indicating which line should be drawn with a highlight.
 
 

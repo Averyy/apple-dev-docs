@@ -1,7 +1,8 @@
 # FinancialConnectionUIExtensionScene
 
 **Framework**: FinanceKitUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.0+
@@ -18,9 +19,9 @@
 ## Relationships
 
 ### Inherits From
-- [AppExtensionScene](../extensionkit/appextensionscene.md)
+- [AppExtensionScene](../ExtensionKit/appextensionscene.md)
 ### Conforming Types
-- [FinancialConnectionUIExtensionAuthorizationScene](financialconnectionuiextensionauthorizationscene.md)
+- [FinancialConnectionUIExtensionAuthorizationScene](./financialconnectionuiextensionauthorizationscene.md)
 
 
 ---

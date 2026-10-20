@@ -1,7 +1,8 @@
 # autocorrectedRanges
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that requests the ranges of text the system autocorrects within the document.
 
@@ -15,6 +16,10 @@ An option that requests the ranges of text the system autocorrects within the do
 
 ```swift
 static var autocorrectedRanges: BETextDocumentRequest.Options { get }
+```
+
+```c
+BETextDocumentOptionAutocorrectedRanges
 ```
 
 

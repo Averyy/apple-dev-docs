@@ -1,7 +1,8 @@
 # init(exactly:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -20,8 +21,9 @@ init?(exactly number: NSNumber)
 
 ## See Also
 
-- [init(NSNumber)](bool/init(_:)-3mody.md)
-- [init(truncating: NSNumber)](bool/init(truncating:).md)
+### Converting an NSNumber to a Boolean
+- [init(NSNumber)](./init%28_%29-3mody.md)
+- [init(truncating: NSNumber)](./init%28truncating%29.md)
 
 
 ---

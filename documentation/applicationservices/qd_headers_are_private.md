@@ -1,7 +1,8 @@
 # QD_HEADERS_ARE_PRIVATE
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 var QD_HEADERS_ARE_PRIVATE: Int32 { get }
+```
+
+```c
+#define QD_HEADERS_ARE_PRIVATE
 ```
 
 

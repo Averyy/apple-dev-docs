@@ -1,9 +1,10 @@
 # typeCompDescriptor
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Specifies a comparison descriptor. Data is one of the constants described in [`AEDisposeToken(_:)`](1446783-aedisposetoken.md).
+Specifies a comparison descriptor. Data is one of the constants described in [`AEDisposeToken(_:)`](./api-1446783-aedisposetoken.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

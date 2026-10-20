@@ -1,7 +1,8 @@
 # BNNS.ConvolutionLayer
 
 **Framework**: Accelerate  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer object that wraps a convolution filter and manages its deinitialization.
 
@@ -11,8 +12,10 @@ A layer object that wraps a convolution filter and manages its deinitialization.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -23,36 +26,37 @@ class ConvolutionLayer
 ## Topics
 
 ### Creating a Convolution Layer
-- [convenience init?(type: BNNS.ConvolutionType, input: BNNSNDArrayDescriptor, weights: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, bias: BNNSNDArrayDescriptor?, padding: BNNS.ConvolutionPadding, activation: BNNS.ActivationFunction, groupCount: Int, stride: (x: Int, y: Int), dilationStride: (x: Int, y: Int), filterParameters: BNNSFilterParameters?)](bnns/convolutionlayer/init(type:input:weights:output:bias:padding:activation:groupcount:stride:dilationstride:filterparameters:).md)
+- [convenience init?(type: BNNS.ConvolutionType, input: BNNSNDArrayDescriptor, weights: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, bias: BNNSNDArrayDescriptor?, padding: BNNS.ConvolutionPadding, activation: BNNS.ActivationFunction, groupCount: Int, stride: (x: Int, y: Int), dilationStride: (x: Int, y: Int), filterParameters: BNNSFilterParameters?)](./convolutionlayer/init%28type,input,weights,output,bias,padding,activation,groupcount,stride,dilationstride,filterparameters%29.md)
   Returns a new convolution layer.
 ### Specifying a Convolution Type
-- [BNNS.ConvolutionType](bnns/convolutiontype.md)
+- [BNNS.ConvolutionType](./convolutiontype.md)
   Constants that describe convolution types.
 ### Specifying Convolution Padding
-- [BNNS.ConvolutionPadding](bnns/convolutionpadding.md)
+- [BNNS.ConvolutionPadding](./convolutionpadding.md)
   Constants that describe convolution padding modes.
 ### Applying a Convolution Layer
-- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor, generatingWeightsGradient: BNNSNDArrayDescriptor?, generatingBiasGradient: BNNSNDArrayDescriptor?) throws](bnns/convolutionlayer/applybackward(batchsize:input:output:outputgradient:generatinginputgradient:generatingweightsgradient:generatingbiasgradient:).md)
+- [func applyBackward(batchSize: Int, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, outputGradient: BNNSNDArrayDescriptor, generatingInputGradient: BNNSNDArrayDescriptor, generatingWeightsGradient: BNNSNDArrayDescriptor?, generatingBiasGradient: BNNSNDArrayDescriptor?) throws](./convolutionlayer/applybackward%28batchsize,input,output,outputgradient,generatinginputgradient,generatingweightsgradient,generatingbiasgradient%29.md)
   Applies the layer backward to generate input gradients.
 
 ## Relationships
 
 ### Inherits From
-- [BNNS.UnaryLayer](bnns/unarylayer.md)
+- [BNNS.UnaryLayer](./unarylayer.md)
 ### Inherited By
-- [BNNS.FullyConnectedLayer](bnns/fullyconnectedlayer.md)
+- [BNNS.FullyConnectedLayer](./fullyconnectedlayer.md)
 
 ## See Also
 
-- [struct BNNSConvolutionLayerParameters](bnnsconvolutionlayerparameters.md)
+### Convolution layers
+- [struct BNNSConvolutionLayerParameters](../bnnsconvolutionlayerparameters.md)
   A structure containing convolution parameters.
-- [func BNNSFilterCreateConvolutionLayer(UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSConvolutionLayerParameters>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreateconvolutionlayer(_:_:_:_:).md)
+- [func BNNSFilterCreateConvolutionLayer(UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSImageStackDescriptor>, UnsafePointer<BNNSConvolutionLayerParameters>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](../bnnsfiltercreateconvolutionlayer%28_,_,_,_%29.md)
   Returns a convolution filter, initialized with input, output, layer, and filter parameters.
-- [struct BNNSLayerParametersConvolution](bnnslayerparametersconvolution.md)
+- [struct BNNSLayerParametersConvolution](../bnnslayerparametersconvolution.md)
   A structure that contains the parameters of a convolution layer.
-- [func BNNSFilterCreateLayerConvolution(UnsafePointer<BNNSLayerParametersConvolution>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayerconvolution(_:_:).md)
+- [func BNNSFilterCreateLayerConvolution(UnsafePointer<BNNSLayerParametersConvolution>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](../bnnsfiltercreatelayerconvolution%28_,_%29.md)
   Returns a new convolution layer.
-- [func BNNSFilterCreateLayerTransposedConvolution(UnsafePointer<BNNSLayerParametersConvolution>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](bnnsfiltercreatelayertransposedconvolution(_:_:).md)
+- [func BNNSFilterCreateLayerTransposedConvolution(UnsafePointer<BNNSLayerParametersConvolution>, UnsafePointer<BNNSFilterParameters>?) -> BNNSFilter?](../bnnsfiltercreatelayertransposedconvolution%28_,_%29.md)
   Returns a new transposed convolution layer.
 
 

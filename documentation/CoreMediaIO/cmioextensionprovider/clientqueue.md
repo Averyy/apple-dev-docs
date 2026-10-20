@@ -1,7 +1,8 @@
 # clientQueue
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dispatch queue on which the system performs client operations.
 
@@ -15,9 +16,14 @@ The dispatch queue on which the system performs client operations.
 var clientQueue: dispatch_queue_t { get }
 ```
 
+```objc
+@property (atomic, strong, readonly) dispatch_queue_t clientQueue;
+```
+
 ## See Also
 
-- [var source: (any CMIOExtensionProviderSource)?](cmioextensionprovider/source.md)
+### Inspecting a Provider
+- [var source: (any CMIOExtensionProviderSource)?](./source.md)
   The source for the provider.
 
 

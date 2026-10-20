@@ -1,11 +1,12 @@
 # AsyncSequence Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [LanguageModelExecutorGenerationChannel.AsyncIterator](languagemodelexecutorgenerationchannel/asynciterator.md)
+- [LanguageModelExecutorGenerationChannel.AsyncIterator](./asynciterator.md)
   An asynchronous iterator that produces the generation events sent on a channel.
 
 

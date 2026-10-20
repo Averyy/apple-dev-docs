@@ -2,6 +2,7 @@
 
 **Framework**: hvf  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Create a new Shape, and return a ShapeWriter to fill it in

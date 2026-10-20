@@ -1,7 +1,8 @@
 # distance(from:to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the distance between two indices.
 
@@ -20,13 +21,15 @@ Returns the distance between two indices.
 func distance(from start: Self.Index, to end: Self.Index) -> Self.Index.Stride
 ```
 
+Available when `Index` conforms to `Strideable`, `Indices` is `Range<Self.Index>`, and `Index.Stride` is `Int`.
+
 #### Return Value
 
 The distance between `start` and `end`.
 
 #### Discussion
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

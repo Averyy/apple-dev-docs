@@ -1,7 +1,8 @@
 # alwaysShowsDecimalSeparator
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether the receiver always shows the decimal separator, even for integer numbers.
 
@@ -20,23 +21,28 @@ Determines whether the receiver always shows the decimal separator, even for int
 var alwaysShowsDecimalSeparator: Bool { get set }
 ```
 
+```objc
+@property BOOL alwaysShowsDecimalSeparator;
+```
+
 ## See Also
 
-- [var groupingSeparator: String!](numberformatter/groupingseparator.md)
+### Configuring Separators and Grouping Size
+- [var groupingSeparator: String!](./groupingseparator.md)
   The string used by the receiver for a grouping separator.
-- [var usesGroupingSeparator: Bool](numberformatter/usesgroupingseparator.md)
+- [var usesGroupingSeparator: Bool](./usesgroupingseparator.md)
   Determines whether the receiver displays the group separator.
-- [var thousandSeparator: String!](numberformatter/thousandseparator.md)
+- [var thousandSeparator: String!](./thousandseparator.md)
   The character the receiver uses as a thousand separator.
-- [var hasThousandSeparators: Bool](numberformatter/hasthousandseparators.md)
+- [var hasThousandSeparators: Bool](./hasthousandseparators.md)
   Determines whether the receiver uses thousand separators.
-- [var decimalSeparator: String!](numberformatter/decimalseparator.md)
+- [var decimalSeparator: String!](./decimalseparator.md)
   The character the receiver uses as a decimal separator.
-- [var currencyDecimalSeparator: String!](numberformatter/currencydecimalseparator.md)
+- [var currencyDecimalSeparator: String!](./currencydecimalseparator.md)
   The string used by the receiver as a currency decimal separator.
-- [var groupingSize: Int](numberformatter/groupingsize.md)
+- [var groupingSize: Int](./groupingsize.md)
   The grouping size of the receiver.
-- [var secondaryGroupingSize: Int](numberformatter/secondarygroupingsize.md)
+- [var secondaryGroupingSize: Int](./secondarygroupingsize.md)
   The secondary grouping size of the receiver.
 
 

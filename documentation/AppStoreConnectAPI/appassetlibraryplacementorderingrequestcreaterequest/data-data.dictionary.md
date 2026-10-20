@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementOrderingRequestCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an app asset library placement ordering request.
 
@@ -10,21 +11,21 @@ The request body you use to create an app asset library placement ordering reque
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Attributes](appassetlibraryplacementorderingrequestcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the new app asset library placement ordering request resource.
-- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships](appassetlibraryplacementorderingrequestcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appAssetLibraryPlacementOrderingRequests`
 - `attributes` (AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Attributes)
 - `relationships` (AppAssetLibraryPlacementOrderingRequestCreateRequest.Data.Relationships)
 

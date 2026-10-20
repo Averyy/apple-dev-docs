@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A convenience method for creating the default IPv4 route.
 
@@ -19,18 +20,23 @@ A convenience method for creating the default IPv4 route.
 class func `default`() -> NEIPv4Route
 ```
 
+```objc
++ (NEIPv4Route * const) defaultRoute;
+```
+
 #### Return Value
 
-An [`NEIPv4Route`](neipv4route.md) object containing the default IPv4 route.
+An [`NEIPv4Route`](../neipv4route.md) object containing the default IPv4 route.
 
 #### Discussion
 
-Set this route in the `includedRoutes` array in the [`NEIPv4Settings`](neipv4settings.md) object to specify that all IPv4 network traffic be routed to the TUN interface by default.
+Set this route in the `includedRoutes` array in the [`NEIPv4Settings`](../neipv4settings.md) object to specify that all IPv4 network traffic be routed to the TUN interface by default.
 
 ## See Also
 
-- [init(destinationAddress: String, subnetMask: String)](neipv4route/init(destinationaddress:subnetmask:).md)
-  Initialize the [`NEIPv4Route`](neipv4route.md) object.
+### Creating an IPv4 Route
+- [init(destinationAddress: String, subnetMask: String)](./init%28destinationaddress,subnetmask%29.md)
+  Initialize the [`NEIPv4Route`](../neipv4route.md) object.
 
 
 ---

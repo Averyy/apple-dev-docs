@@ -1,7 +1,8 @@
 # init(hasMotion:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -20,7 +21,8 @@ init(hasMotion: Bool = true)
 
 ## See Also
 
-- [var hasMotion: Bool](transitionproperties/hasmotion.md)
+### Creating the transition properties
+- [var hasMotion: Bool](./hasmotion.md)
   Whether the transition includes motion.
 
 

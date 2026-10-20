@@ -1,7 +1,8 @@
 # image
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image used to represent the item.
 
@@ -9,7 +10,7 @@ The image used to represent the item.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,27 +19,32 @@ The image used to represent the item.
 var image: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * image;
+```
+
 #### Discussion
 
 This image can be used to create other images to represent this item on the bar—for example, a selected and unselected image may be derived from this image. You should set this property before adding the item to a bar. The default value is `nil`.
 
 ## See Also
 
-- [var title: String?](uibaritem/title.md)
+### Getting and setting properties
+- [var title: String?](./title.md)
   The title displayed on the item.
-- [var landscapeImagePhone: UIImage?](uibaritem/landscapeimagephone.md)
+- [var landscapeImagePhone: UIImage?](./landscapeimagephone.md)
   The image to use to represent the item in landscape orientation when using the iPhone appearance idiom.
-- [var largeContentSizeImage: UIImage?](uibaritem/largecontentsizeimage.md)
+- [var largeContentSizeImage: UIImage?](./largecontentsizeimage.md)
   The image to display for users who are blind or have low vision.
-- [var imageInsets: UIEdgeInsets](uibaritem/imageinsets.md)
+- [var imageInsets: UIEdgeInsets](./imageinsets.md)
   The image inset or outset for each edge.
-- [var landscapeImagePhoneInsets: UIEdgeInsets](uibaritem/landscapeimagephoneinsets.md)
+- [var landscapeImagePhoneInsets: UIEdgeInsets](./landscapeimagephoneinsets.md)
   The image inset or outset for each edge of the image in landscape orientation when using the iPhone appearance idiom.
-- [var largeContentSizeImageInsets: UIEdgeInsets](uibaritem/largecontentsizeimageinsets.md)
+- [var largeContentSizeImageInsets: UIEdgeInsets](./largecontentsizeimageinsets.md)
   The insets to apply to the bar item’s large image when displaying the image in an assistive UI.
-- [var isEnabled: Bool](uibaritem/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value indicating whether the item is enabled.
-- [var tag: Int](uibaritem/tag.md)
+- [var tag: Int](./tag.md)
   The bar item’s tag, an app-supplied integer that you can use to identify bar item objects in your app.
 
 

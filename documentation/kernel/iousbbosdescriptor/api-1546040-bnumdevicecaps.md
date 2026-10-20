@@ -1,7 +1,8 @@
 # bNumDeviceCaps
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of separate device capability descriptors in the binary object store.
 
@@ -10,17 +11,18 @@ The number of separate device capability descriptors in the binary object store.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bNumDeviceCaps;
 ```
 
 ## See Also
 
-- [bLength](iousbbosdescriptor/1545985-blength.md)
+### Getting the Properties
+- [bLength](./api-1545985-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbbosdescriptor/1546245-bdescriptortype.md)
+- [bDescriptorType](./api-1546245-bdescriptortype.md)
   The type of the descriptor.
-- [wTotalLength](iousbbosdescriptor/1546141-wtotallength.md)
+- [wTotalLength](./api-1546141-wtotallength.md)
   The length of this descriptor and all of its subdescriptors.
 
 

@@ -1,7 +1,8 @@
 # NSVisualEffectView
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view that adds translucency and vibrancy effects to the views in your interface.
 
@@ -14,6 +15,10 @@ A view that adds translucency and vibrancy effects to the views in your interfac
 class NSVisualEffectView
 ```
 
+```objc
+@interface NSVisualEffectView : NSView
+```
+
 #### Overview
 
 Use visual effect views primarily as background views for your app’s content. A visual effect view makes your foreground content more prominent by employing the following effects:
@@ -21,95 +26,96 @@ Use visual effect views primarily as background views for your app’s content. 
 - **Translucency** and the blurring of background content adds depth to your interface.
 - **Vibrancy** is a subtle blending of foreground and background colors to increase the contrast and make the foreground content stand out visually.
 
-The material and blending mode you assign determines the exact appearance of the visual effect. Not all materials support transparency, and materials apply vibrancy in different ways. The appearance and behavior of materials can also change based on system settings, so always pick a material based on its intended use. For example, use the [`NSVisualEffectView.Material.sidebar`](nsvisualeffectview/material-swift.enum/sidebar.md) material when your view serves as the background of your window’s sidebar.  Don’t select materials based on the apparent colors they impart on your interface.
+The material and blending mode you assign determines the exact appearance of the visual effect. Not all materials support transparency, and materials apply vibrancy in different ways. The appearance and behavior of materials can also change based on system settings, so always pick a material based on its intended use. For example, use the [`NSVisualEffectView.Material.sidebar`](./nsvisualeffectview/material-swift.enum/sidebar.md) material when your view serves as the background of your window’s sidebar.  Don’t select materials based on the apparent colors they impart on your interface.
 
 AppKit creates visual effect views automatically for window titlebars, popovers, and source list table views. You don’t need to add visual effect views to those elements of your interface.
 
 ##### Choosing a Translucency Effect for Your View
 
-For visual effect views you create yourself, use the [`blendingMode`](nsvisualeffectview/blendingmode-swift.property.md) property to specify how and where you want the translucency applied.
+For visual effect views you create yourself, use the [`blendingMode`](./nsvisualeffectview/blendingmode-swift.property.md) property to specify how and where you want the translucency applied.
 
 - **Behind-window blending** uses the content behind the window as the background for your visual effect view. Behind-window blending makes your entire window stand out above other windows and apps on the desktop. Sheets and popovers use behind-window blending.
 - **In-window blending** uses the window’s content as the background for your visual effect view. Typically, you use in-window blending with scrolling content, so that the scrolled content remains partially visible under other parts of your window chrome. Toolbars always use in-window blending.
 
-![An illustration of a window whose title bar and side bar use visual effect views with different blending options. The title bar uses in-window blending which blends content from the window with the bar. The side bar uses behind-window blending, which allows part of the desktop to show through. ](/images/com.apple.appkit/media-3198506@2x.png)
+![An illustration of a window whose title bar and side bar use visual effect views with different blending options. The title bar uses in-window blending which blends content from the window with the bar. The side bar uses behind-window blending, which allows part of the desktop to show through. ](https://developer.apple.com/tutorials/images/com.apple.appkit/media-3198506@2x.png)
 
 ##### Enabling Vibrancy for Foreground Content
 
-The presence of a visual effect view in your view hierarchy does not automatically add vibrancy to your content. For custom views, you must explicitly enable vibrancy by overriding the [`allowsVibrancy`](nsview/allowsvibrancy.md) property and returning [`true`](https://developer.apple.com/documentation/swift/true).
+The presence of a visual effect view in your view hierarchy does not automatically add vibrancy to your content. For custom views, you must explicitly enable vibrancy by overriding the [`allowsVibrancy`](./nsview/allowsvibrancy.md) property and returning [`true`](../Swift/true.md).
 
-> **Note**:  AppKit views and controls automatically add vibrancy where appropriate. For example, [`NSTextField`](nstextfield.md) enables vibrancy to increase the contrast between the text and background. Don’t change the vibrancy settings of standard AppKit views and controls.
+> **Note**:  AppKit views and controls automatically add vibrancy where appropriate. For example, [`NSTextField`](./nstextfield.md) enables vibrancy to increase the contrast between the text and background. Don’t change the vibrancy settings of standard AppKit views and controls.
 
 It is recommended that you enable vibrancy only in the leaf views of your view hierarchy. Subviews inherit the vibrancy of their parent. Once enabled in a parent view, a subview cannot turn off vibrancy. As a result, enabling vibrancy in a parent view can lead to subviews that look incorrect if they are not designed to take advantage of the vibrancy effect.
 
 Vibrancy works best when your custom views contain grayscale content. Combining a grayscale foreground with a color background works well, because AppKit improves the contrast while only subtly changing the foreground hue. The same isn’t always true when blending two different color values. Dramatically different foreground and background hues can cancel each other out or result in colors that don’t match your original designs.
 
-Instead of defining custom grayscale color assets, consider using the built-in colors [`labelColor`](nscolor/labelcolor.md), [`secondaryLabelColor`](nscolor/secondarylabelcolor.md), [`tertiaryLabelColor`](nscolor/tertiarylabelcolor.md), and [`quaternaryLabelColor`](nscolor/quaternarylabelcolor.md). While typically used with text, these colors are applicable with any app content. The built-in colors represent varying levels of contrast for your content, with [`labelColor`](nscolor/labelcolor.md) offering the most contrast, and [`quaternaryLabelColor`](nscolor/quaternarylabelcolor.md) offering the least contrast.
+Instead of defining custom grayscale color assets, consider using the built-in colors [`labelColor`](./nscolor/labelcolor.md), [`secondaryLabelColor`](./nscolor/secondarylabelcolor.md), [`tertiaryLabelColor`](./nscolor/tertiarylabelcolor.md), and [`quaternaryLabelColor`](./nscolor/quaternarylabelcolor.md). While typically used with text, these colors are applicable with any app content. The built-in colors represent varying levels of contrast for your content, with [`labelColor`](./nscolor/labelcolor.md) offering the most contrast, and [`quaternaryLabelColor`](./nscolor/quaternarylabelcolor.md) offering the least contrast.
 
 ##### Subclassing Notes
 
 If you subclass `NSVisualEffectView`:
 
-- Always call `super` if you override [`viewDidMoveToWindow()`](nsview/viewdidmovetowindow().md) or [`viewWillMove(toWindow:)`](nsview/viewwillmove(towindow:).md).
-- Do not override [`draw(_:)`](nsview/draw(_:).md) or [`updateLayer()`](nsview/updatelayer().md).
+- Always call `super` if you override [`viewDidMoveToWindow()`](./nsview/viewdidmovetowindow%28%29.md) or [`viewWillMove(toWindow:)`](./nsview/viewwillmove%28towindow%29.md).
+- Do not override [`draw(_:)`](./nsview/draw%28_%29.md) or [`updateLayer()`](./nsview/updatelayer%28%29.md).
 
 ## Topics
 
 ### Specifying the Background Material
-- [var material: NSVisualEffectView.Material](nsvisualeffectview/material-swift.property.md)
+- [var material: NSVisualEffectView.Material](./nsvisualeffectview/material-swift.property.md)
   The material shown by the visual effect view.
-- [NSVisualEffectView.Material](nsvisualeffectview/material-swift.enum.md)
+- [NSVisualEffectView.Material](./nsvisualeffectview/material-swift.enum.md)
   Constants to specify the material shown by the visual effect view.
 ### Specifying the Effect Appearance
-- [var blendingMode: NSVisualEffectView.BlendingMode](nsvisualeffectview/blendingmode-swift.property.md)
+- [var blendingMode: NSVisualEffectView.BlendingMode](./nsvisualeffectview/blendingmode-swift.property.md)
   A value indicating how the view’s contents blend with the surrounding content.
-- [NSVisualEffectView.BlendingMode](nsvisualeffectview/blendingmode-swift.enum.md)
+- [NSVisualEffectView.BlendingMode](./nsvisualeffectview/blendingmode-swift.enum.md)
   Constants that specify whether the visual effect view blends with what’s either behind or within the window.
-- [var isEmphasized: Bool](nsvisualeffectview/isemphasized.md)
+- [var isEmphasized: Bool](./nsvisualeffectview/isemphasized.md)
   A Boolean value indicating whether to emphasize the look of the material.
-- [var interiorBackgroundStyle: NSView.BackgroundStyle](nsvisualeffectview/interiorbackgroundstyle.md)
+- [var interiorBackgroundStyle: NSView.BackgroundStyle](./nsvisualeffectview/interiorbackgroundstyle.md)
   The view’s interior background style.
 ### Masking the Visual Effect
-- [var maskImage: NSImage?](nsvisualeffectview/maskimage.md)
+- [var maskImage: NSImage?](./nsvisualeffectview/maskimage.md)
   An image whose alpha channel masks the visual effect view’s material.
 ### Enabling or Disabling the Effect
-- [var state: NSVisualEffectView.State](nsvisualeffectview/state-swift.property.md)
+- [var state: NSVisualEffectView.State](./nsvisualeffectview/state-swift.property.md)
   A value that indicates whether a view has a visual effect applied.
-- [NSVisualEffectView.State](nsvisualeffectview/state-swift.enum.md)
+- [NSVisualEffectView.State](./nsvisualeffectview/state-swift.enum.md)
   Constants to specify how the material appearance should reflect window activity state.
 ### Handling Moves to a Different Window
-- [func viewDidMoveToWindow()](nsvisualeffectview/viewdidmovetowindow.md)
+- [func viewDidMoveToWindow()](./nsvisualeffectview/viewdidmovetowindow%28%29.md)
   Notifies the view that it moved to a new window.
-- [func viewWillMove(toWindow: NSWindow?)](nsvisualeffectview/viewwillmove(towindow:).md)
+- [func viewWillMove(toWindow: NSWindow?)](./nsvisualeffectview/viewwillmove%28towindow%29.md)
   Notifies the view immediately before it moves to a new window (which may be `nil`).
 
 ## Relationships
 
 ### Inherits From
-- [NSView](nsview.md)
+- [NSView](./nsview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](nstouchbarprovider.md)
-- [NSUserActivityRestoring](nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](./nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](./nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](./nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](./nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](./nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](./nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](./nstouchbarprovider.md)
+- [NSUserActivityRestoring](./nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](./nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSBox](nsbox.md)
+### Visual adornments
+- [class NSBox](./nsbox.md)
   A stylized rectangular box with an optional title.
 
 

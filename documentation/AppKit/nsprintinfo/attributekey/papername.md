@@ -1,12 +1,13 @@
 # paperName
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An `NSString` object containing the paper name.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ An `NSString` object containing the paper name.
 static let paperName: NSPrintInfo.AttributeKey
 ```
 
+```c
+extern NSPrintInfoAttributeKey const NSPrintPaperName;
+```
+
 ## See Also
 
-- [static let paperSize: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/papersize.md)
+### Page Setup Attributes
+- [static let paperSize: NSPrintInfo.AttributeKey](./papersize.md)
   An `NSSize` value specifying the height and width of paper in points.
-- [static let orientation: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/orientation.md)
+- [static let orientation: NSPrintInfo.AttributeKey](./orientation.md)
   An `NSNumber` object containing an `NSPrintingOrientation`.
-- [static let scalingFactor: NSPrintInfo.AttributeKey](nsprintinfo/attributekey/scalingfactor.md)
+- [static let scalingFactor: NSPrintInfo.AttributeKey](./scalingfactor.md)
   Scale factor percentage before pagination.
 
 

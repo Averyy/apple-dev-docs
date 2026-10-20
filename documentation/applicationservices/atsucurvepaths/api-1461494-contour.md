@@ -1,7 +1,8 @@
 # contour
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var contour: ATSUCurvePath
+```
+
+```c
+ATSUCurvePath contour[1];
 ```
 
 

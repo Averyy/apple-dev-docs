@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An output pixelBuffer object that your Core Image Processor Kernel can write to.
@@ -20,13 +21,18 @@ An output pixelBuffer object that your Core Image Processor Kernel can write to.
 var pixelBuffer: CVPixelBuffer? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) CVPixelBufferRef pixelBuffer;
+```
+
 ## See Also
 
-- [var baseAddress: UnsafeMutableRawPointer](ciimageprocessoroutput/baseaddress.md)
+### Providing Output Image Data
+- [var baseAddress: UnsafeMutableRawPointer](./baseaddress.md)
   The base address of CPU memory that your Core Image Processor Kernel can write pixels to.
-- [var metalTexture: (any MTLTexture)?](ciimageprocessoroutput/metaltexture.md)
+- [var metalTexture: (any MTLTexture)?](./metaltexture.md)
   A Metal texture object that can be bound for output using Metal.
-- [var surface: IOSurfaceRef](ciimageprocessoroutput/surface.md)
+- [var surface: IOSurfaceRef](./surface.md)
   An output surface object that your Core Image Processor Kernel can write to.
 
 

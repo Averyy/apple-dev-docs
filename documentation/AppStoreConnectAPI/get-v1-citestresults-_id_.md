@@ -1,7 +1,8 @@
 # Read test result information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a specific test result Xcode Cloud created when it performed a build with a test action.
 
@@ -16,7 +17,7 @@ The example request below retrieves result information for a test Xcode Cloud pe
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/ciTestResults/5ecb25ea-ce31-4b50-b88c-f1bf64c698ae
 ```
 
@@ -59,7 +60,24 @@ GET https://api.appstoreconnect.apple.com/v1/ciTestResults/5ecb25ea-ce31-4b50-b8
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Test Results resource.
+
+### Query Parameters
+
 - `fields[ciTestResults]` ([string]): Additional fields to include for the Test Results resource returned by the response.
+
+  **Allowed Values**: `className`, `name`, `status`, `fileSource`, `message`, `destinationTestResults`
+
+## Responses
+
+- `200` OK (`CiTestResultResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 
 ---

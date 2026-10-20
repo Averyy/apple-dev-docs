@@ -1,91 +1,93 @@
 # Apple Ads Campaign Management API 5
 
-**Framework**: Apple Ads
+**Framework**: Apple Ads  
+**Role**: Article
 
 Learn about changes to Apple Ads Campaign Management API 5.
 
 #### Overview
 
-> **Note**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [`Apple Ads Platform API`](https://developer.apple.comhttps://developer.apple.com/documentation/apple-ads-platform-api) instead.
+> **Deprecated**: The Apple Ads Campaign Management API is deprecated and will be sunset on January 26, 2027. Use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md) instead.
 
-##### 56
+##### 5.6
 
 Released in June, 2026
 
 Lifetime budgets have been deprecated and the `budgetAmount` field has been removed from the API and documentation. When calling the API, use `dailyBudgetAmount`.
 
-##### 55
+##### 5.5
 
 Released in February, 2026
 
 Introduces Maximize Conversions, a new automated bid strategy that optimizes for the highest conversion volume at your target cost-per-acquisition (CPA). The Maximize Conversions bid strategy in a campaign uses an automated ad group with Search Match to automatically discover and bid on relevant keywords.
 
-- To create a Maximize Conversions bid strategy campaign, see the payload example in [`Create a Campaign`](create-a-campaign.md).
-- For details on automated ad groups, see [`Ad Groups`](ad-groups.md). To create an automated ad group, see the payload example in [`Create an Ad Group`](create-an-ad-group.md).
-- To switch between manual (default) and Maximize Conversions bid strategies, see the payload examples in  [`Update a Campaign`](update-a-campaign.md).
-- For reports with a Maximize Conversions bidding strategy, see [`Get Campaign-Level Reports`](get-campaign-level-reports.md) and [`Get Ad Group-Level Reports`](get-ad-group-level-reports.md).
+- To create a Maximize Conversions bid strategy campaign, see the payload example in [`Create a Campaign`](./create-a-campaign.md).
+- For details on automated ad groups, see [Ad Groups](./ad-groups.md). To create an automated ad group, see the payload example in [`Create an Ad Group`](./create-an-ad-group.md).
+- To switch between manual (default) and Maximize Conversions bid strategies, see the payload examples in  [`Update a Campaign`](./update-a-campaign.md).
+- For reports with a Maximize Conversions bidding strategy, see [`Get Campaign-Level Reports`](./get-campaign-level-reports.md) and [`Get Ad Group-Level Reports`](./get-ad-group-level-reports.md).
 
-##### 54
+##### 5.4
 
 Released in December, 2025
 
-- New reporting metrics have been added to support App Store preorders: `tapPreOrdersPlaced`, `viewPreOrdersPlaced` and `totalPreOrdersPlaced`. See [`SpendRow`](spendrow.md) and [`ExtendedSpendRow`](extendedspendrow.md) for descriptions.
+- New reporting metrics have been added to support App Store preorders: `tapPreOrdersPlaced`, `viewPreOrdersPlaced` and `totalPreOrdersPlaced`. See [`SpendRow`](./spendrow.md) and [`ExtendedSpendRow`](./extendedspendrow.md) for descriptions.
 
-##### 53
+##### 5.3
 
 Released in August, 2025.
 
-- The [`Create a Budget Order`](create-a-budget-order.md) endpoint no longer supports a single placement type. All responses to API requests you make to create new budget orders contain all possible values for [`SupplySource`](supplysource.md).
+- The [`Create a Budget Order`](./create-a-budget-order.md) endpoint no longer supports a single placement type. All responses to API requests you make to create new budget orders contain all possible values for [`SupplySource`](./supplysource.md).
 
-##### 521
+##### 5.2.1
 
 Released in May, 2025.
 
-- The [`Create a Campaign`](create-a-campaign.md) endpoint supports an optional `budgetAmount` to manage the total budget of a campaign. You can only add a `budgetAmount` at the time of campaign creation. You can’t update a campaign to use `budgetAmount`. For more information, see [`Campaign`](campaign.md).
+- The [`Create a Campaign`](./create-a-campaign.md) endpoint supports an optional `budgetAmount` to manage the total budget of a campaign. You can only add a `budgetAmount` at the time of campaign creation. You can’t update a campaign to use `budgetAmount`. For more information, see [`Campaign`](./campaign.md).
 
-##### 52
+##### 5.2
 
 Released in March, 2025.
 
-- Added endpoints to retrieve app details and localized app details. See [`Get App Details`](get-app-details.md) and [`Get Localized App Details`](get-localized-app-details.md).
-- `APPSTORE_SEARCH_TAB` campaigns require that you [`Create a Creative`](create-a-creative.md) using either a default product page or a custom product page as the tap destination. As of API version 5.2, you need to create a default product page ad to use with `APPSTORE_SEARCH_TAB` campaigns. At the release of API version 5.2 Apple automatically creates a default product page ad for all existing, running `APPSTORE_SEARCH_TAB` campaigns. See also [`CreativeType`](creativetype.md).
-- The [`Find App Assets`](find-app-assets.md) endpoint now supports default product page ads. The [`Find Ad Creative Rejection Reasons`](find-ad-creative-rejection-reasons.md) endpoint now supports rejection reasons related to default product pages and product page optimization.
-- Added support to use custom product pages as an ad’s tap destination. `APPSTORE_SEARCH_TAB` ad-level metrics are reported through [`Get Ad-Level Reports`](get-ad-level-reports.md). Historical ad-level metrics (before API version 5.2 release) are reported against `adId=-1`. For ad-level metrics after API version 5.2 release, all default product page ads are reported against a new, real `adID` in reporting payloads.
-- `APPSTORE_SEARCH_TAB` campaigns can optionally include a deep link. See [`ProductPageDetail`](productpagedetail.md).
+- Added endpoints to retrieve app details and localized app details. See [`Get App Details`](./get-app-details.md) and [`Get Localized App Details`](./get-localized-app-details.md).
+- `APPSTORE_SEARCH_TAB` campaigns require that you [`Create a Creative`](./create-a-creative.md) using either a default product page or a custom product page as the tap destination. As of API version 5.2, you need to create a default product page ad to use with `APPSTORE_SEARCH_TAB` campaigns. At the release of API version 5.2 Apple automatically creates a default product page ad for all existing, running `APPSTORE_SEARCH_TAB` campaigns. See also [`CreativeType`](./creativetype.md).
+- The [`Find App Assets`](./find-app-assets.md) endpoint now supports default product page ads. The [`Find Ad Creative Rejection Reasons`](./find-ad-creative-rejection-reasons.md) endpoint now supports rejection reasons related to default product pages and product page optimization.
+- Added support to use custom product pages as an ad’s tap destination. `APPSTORE_SEARCH_TAB` ad-level metrics are reported through [`Get Ad-Level Reports`](./get-ad-level-reports.md). Historical ad-level metrics (before API version 5.2 release) are reported against `adId=-1`. For ad-level metrics after API version 5.2 release, all default product page ads are reported against a new, real `adID` in reporting payloads.
+- `APPSTORE_SEARCH_TAB` campaigns can optionally include a deep link. See [`ProductPageDetail`](./productpagedetail.md).
 
-##### 51
+##### 5.1
 
 Released in October, 2024.
 
-- A read-only `deepLink` field has been added to the [`ProductPageDetail`](productpagedetail.md) response. Advertisers can add deep links to custom product pages through [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com). Retrieve your product page metadata with [`Get Product Pages`](get-product-pages.md) and [`Get Product Pages by Identifier`](get-product-pages-by-identifier.md) endpoints. Deep links are available on iOS 18 and later for Today tab and search results ads, and iPadOS 18 and later for search results ads.
-- A correction has been made to the [`Find Ad Groups`](find-ad-groups.md) endpoint. The selector [`Condition`](condition.md) operator accepts only EQUALS in requests.
+- A read-only `deepLink` field has been added to the [`ProductPageDetail`](./productpagedetail.md) response. Advertisers can add deep links to custom product pages through [App Store Connect](https://appstoreconnect.apple.com). Retrieve your product page metadata with [`Get Product Pages`](./get-product-pages.md) and [`Get Product Pages by Identifier`](./get-product-pages-by-identifier.md) endpoints. Deep links are available on iOS 18 and later for Today tab and search results ads, and iPadOS 18 and later for search results ads.
+- A correction has been made to the [`Find Ad Groups`](./find-ad-groups.md) endpoint. The selector [`Condition`](./condition.md) operator accepts only EQUALS in requests.
 
-##### 50
+##### 5.0
 
 Released in May, 2024.
 
-- View-through reporting metrics provide details on Apple Search Ads campaign performance. Installs, new downloads, and redownloads are available as a standalone total, tap-through, and view-through. All reports reflect the new metrics. See [`SpendRow`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_ads/spendrow) and [`ExtendedSpendRow`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_ads/extendedspendrow).
-- Get Keyword-Level Reports and Get Keyword-Level within Ad Group Reports reflect a new suggestedBidAmount field, replacing deprecated `bidMin` and `bidMax` fields. See [`KeywordBidRecommendation`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_ads/keywordbidrecommendation).
-- Get [`Search Term-Level Reports`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_ads/gets-reports-on-search-terms-within-a-campaign.-the-information-per-campaign-is-composed-of-the-metrics,-dimensions-requested-in-the-request-parameter) and [`Get Search Term-Level within Ad Group Reports`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_ads/gets-reports-on-targeting-searchterm-within-a-adgroup.-the-information-per-adgroup-is-composed-of-the-metrics,-dimensions-requested-in-the-request-parameter) require the timezone to be ORTZ.
+- View-through reporting metrics provide details on Apple Search Ads campaign performance. Installs, new downloads, and redownloads are available as a standalone total, tap-through, and view-through. All reports reflect the new metrics. See [SpendRow](./spendrow.md) and [ExtendedSpendRow](./extendedspendrow.md).
+- Get Keyword-Level Reports and Get Keyword-Level within Ad Group Reports reflect a new suggestedBidAmount field, replacing deprecated `bidMin` and `bidMax` fields. See [KeywordBidRecommendation](./keywordbidrecommendation.md).
+- Get [Search Term-Level Reports](./gets-reports-on-search-terms-within-a-campaign.-the-information-per-campaign-is-composed-of-the-metrics,-dimensions-requested-in-the-request-parameter.md) and [Get Search Term-Level within Ad Group Reports](./gets-reports-on-targeting-searchterm-within-a-adgroup.-the-information-per-adgroup-is-composed-of-the-metrics,-dimensions-requested-in-the-request-parameter.md) require the timezone to be ORTZ.
 
 Other new features include:
 
-- Prior to API 5, new campaigns required a `dailyBudgetAmount` or a `budgetAmount`, or both. A `dailyBudgetAmount` is now a required field for all new campaigns. See [`Create a campaign`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_ads/creates-a-campaign).
-- Multiple default languages are supported for [`countries or regions`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_ads/countryorregion).
+- Prior to API 5, new campaigns required a `dailyBudgetAmount` or a `budgetAmount`, or both. A `dailyBudgetAmount` is now a required field for all new campaigns. See [Create a campaign](./creates-a-campaign.md).
+- Multiple default languages are supported for [countries or regions](./countryorregion.md).
 
 Deprecations:
 
-All [`Creative Sets`](creative-sets.md) endpoints are deprecated and unavailable in API 5.
+All [Creative Sets](./creative-sets.md) endpoints are deprecated and unavailable in API 5.
 
 ## See Also
 
-- [Apple Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
+### Changelog
+- [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
   Learn about changes to Apple Ads Campaign Management API 4.
-- [Apple Ads Campaign Management API 3](apple-search-ads-campaign-management-api-3.md)
+- [Apple Ads Campaign Management API 3](./apple-search-ads-campaign-management-api-3.md)
   Apple no longer supports this API.
-- [Apple Ads Campaign Management API 2](apple-search-ads-campaign-management-api-2.md)
+- [Apple Ads Campaign Management API 2](./apple-search-ads-campaign-management-api-2.md)
   Apple no longer supports this API.
-- [Apple Ads Campaign Management API 1](apple-search-ads-campaign-management-api-1.md)
+- [Apple Ads Campaign Management API 1](./apple-search-ads-campaign-management-api-1.md)
   Apple no longer supports this API.
 
 

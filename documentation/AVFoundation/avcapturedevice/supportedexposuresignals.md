@@ -1,7 +1,8 @@
 # supportedExposureSignals
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates what values can be included in `enabledExposureSignals`. This property is key-value observable.
 
@@ -17,16 +18,21 @@ Indicates what values can be included in `enabledExposureSignals`. This property
 var supportedExposureSignals: Set<AVCaptureDeviceExposureSignal> { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nonnull) NSSet<NSString *> * supportedExposureSignals;
+```
+
 ## See Also
 
-- [var activeExposureSignals: Set<AVCaptureDeviceExposureSignal>](avcapturedevice/activeexposuresignals.md)
+### Configuring exposure signals
+- [var activeExposureSignals: Set<AVCaptureDeviceExposureSignal>](./activeexposuresignals.md)
   Reports which characteristics the auto exposure system associates with the current scene. Auto exposure may adjust properties such as lens aperture size based on these factors. This property is key-value observable.
-- [var enabledExposureSignals: Set<AVCaptureDeviceExposureSignal>](avcapturedevice/enabledexposuresignals.md)
+- [var enabledExposureSignals: Set<AVCaptureDeviceExposureSignal>](./enabledexposuresignals.md)
   Can be assigned to control which characteristics AE should use in its decision making, must be a subset of supportedExposureSignals.
-- [var automaticallyEnablesExposureSignals: Bool](avcapturedevice/automaticallyenablesexposuresignals.md)
+- [var automaticallyEnablesExposureSignals: Bool](./automaticallyenablesexposuresignals.md)
   When true (the default), capture sessions may automatically modify `enabledExposureSignals` based on changes to other device or session properties.
-- [struct AVCaptureDeviceExposureSignal](avcapturedeviceexposuresignal.md)
-  Values that can be used to configure the auto exposure system via [`enabledExposureSignals`](avcapturedevice/enabledexposuresignals.md) and associated methods.
+- [struct AVCaptureDeviceExposureSignal](../avcapturedeviceexposuresignal.md)
+  Values that can be used to configure the auto exposure system via [`enabledExposureSignals`](./enabledexposuresignals.md) and associated methods.
 
 
 ---

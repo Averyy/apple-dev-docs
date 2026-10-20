@@ -1,7 +1,8 @@
 # VideoPlayerEvents.SpatialVideoModeDidChange
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - visionOS 26.0+
@@ -15,17 +16,17 @@ struct SpatialVideoModeDidChange
 ## Topics
 
 ### Instance Properties
-- [let currentMode: VideoPlayerComponent.SpatialVideoMode](videoplayerevents/spatialvideomodedidchange/currentmode.md)
+- [let currentMode: VideoPlayerComponent.SpatialVideoMode](./spatialvideomodedidchange/currentmode.md)
   Current media mode
-- [let previousMode: VideoPlayerComponent.SpatialVideoMode](videoplayerevents/spatialvideomodedidchange/previousmode.md)
+- [let previousMode: VideoPlayerComponent.SpatialVideoMode](./spatialvideomodedidchange/previousmode.md)
   Previous media mode
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

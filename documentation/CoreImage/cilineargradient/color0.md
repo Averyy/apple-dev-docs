@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The first color to use in the gradient.
@@ -11,7 +12,7 @@ The first color to use in the gradient.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,18 @@ The first color to use in the gradient.
 var color0: CIColor { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIColor * color0;
+```
+
 ## See Also
 
-- [var color1: CIColor](cilineargradient/color1.md)
+### Instance Properties
+- [var color1: CIColor](./color1.md)
   The second color to use in the gradient.
-- [var point0: CGPoint](cilineargradient/point0.md)
+- [var point0: CGPoint](./point0.md)
   The starting position of the gradient.
-- [var point1: CGPoint](cilineargradient/point1.md)
+- [var point1: CGPoint](./point1.md)
   The ending position of the gradient.
 
 

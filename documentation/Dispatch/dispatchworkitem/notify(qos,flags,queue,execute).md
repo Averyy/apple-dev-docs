@@ -1,7 +1,8 @@
 # notify(qos:flags:queue:execute:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules the execution of the specified work item, with the specified quality-of-service, after the completion of the current work item.
 
@@ -10,9 +11,9 @@ Schedules the execution of the specified work item, with the specified quality-o
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,14 +23,15 @@ func notify(qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], 
 
 ## Parameters
 
-- `qos`: The quality-of-service class to use when prioritizing the work item’s execution. For a list of possible values, see [`DispatchQoS`](dispatchqos.md).
-- `flags`: Configuration flags for the work item. For a list of possible values, see [`DispatchWorkItemFlags`](dispatchworkitemflags.md).
+- `qos`: The quality-of-service class to use when prioritizing the work item’s execution. For a list of possible values, see [`DispatchQoS`](../dispatchqos.md).
+- `flags`: Configuration flags for the work item. For a list of possible values, see [`DispatchWorkItemFlags`](../dispatchworkitemflags.md).
 - `queue`: The queue on which to execute the work item in the execute parameter.
 - `execute`: The work item to execute after the completion of the current work item.
 
 ## See Also
 
-- [func notify(queue: DispatchQueue, execute: DispatchWorkItem)](dispatchworkitem/notify(queue:execute:).md)
+### Adding a Completion Handler
+- [func notify(queue: DispatchQueue, execute: DispatchWorkItem)](./notify%28queue,execute%29.md)
   Schedules the execution of the specified work item after the completion of the current work item.
 
 

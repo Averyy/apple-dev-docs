@@ -1,18 +1,19 @@
 # CGPatternCallbacks
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that holds a version and two callback functions for drawing a custom pattern.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,34 +21,39 @@ A structure that holds a version and two callback functions for drawing a custom
 struct CGPatternCallbacks
 ```
 
+```c
+struct CGPatternCallbacks;
+```
+
 #### Overview
 
-You supply a [`CGPatternCallbacks`](cgpatterncallbacks.md) structure to the function [`init(info:bounds:matrix:xStep:yStep:tiling:isColored:callbacks:)`](cgpattern/init(info:bounds:matrix:xstep:ystep:tiling:iscolored:callbacks:).md) to create a data provider for direct access. The functions specified by the [`CGPatternCallbacks`](cgpatterncallbacks.md) structure are responsible for drawing the pattern and for handling the pattern’s memory management.
+You supply a [`CGPatternCallbacks`](./cgpatterncallbacks.md) structure to the function [`init(info:bounds:matrix:xStep:yStep:tiling:isColored:callbacks:)`](./cgpattern/init%28info,bounds,matrix,xstep,ystep,tiling,iscolored,callbacks%29.md) to create a data provider for direct access. The functions specified by the [`CGPatternCallbacks`](./cgpatterncallbacks.md) structure are responsible for drawing the pattern and for handling the pattern’s memory management.
 
 ## Topics
 
 ### Initializers
-- [init()](cgpatterncallbacks/init.md)
-- [init(version: UInt32, drawPattern: CGPatternDrawPatternCallback?, releaseInfo: CGPatternReleaseInfoCallback?)](cgpatterncallbacks/init(version:drawpattern:releaseinfo:).md)
+- [init()](./cgpatterncallbacks/init%28%29.md)
+- [init(version: UInt32, drawPattern: CGPatternDrawPatternCallback?, releaseInfo: CGPatternReleaseInfoCallback?)](./cgpatterncallbacks/init%28version,drawpattern,releaseinfo%29.md)
 ### Instance Properties
-- [var drawPattern: CGPatternDrawPatternCallback?](cgpatterncallbacks/drawpattern.md)
-  A pointer to a custom function that draws thepattern. For information about this callback function, see [`CGPatternDrawPatternCallback`](cgpatterndrawpatterncallback.md).
-- [var releaseInfo: CGPatternReleaseInfoCallback?](cgpatterncallbacks/releaseinfo.md)
-  An optional pointer to a custom function that’sinvoked when the pattern is released. [`CGPatternReleaseInfoCallback`](cgpatternreleaseinfocallback.md).
-- [var version: UInt32](cgpatterncallbacks/version.md)
-  The version of the structure passed in as a parameterto the [`init(info:bounds:matrix:xStep:yStep:tiling:isColored:callbacks:)`](cgpattern/init(info:bounds:matrix:xstep:ystep:tiling:iscolored:callbacks:).md). Forthis version of the structure, you should set this value to zero.
+- [var drawPattern: CGPatternDrawPatternCallback?](./cgpatterncallbacks/drawpattern.md)
+  A pointer to a custom function that draws thepattern. For information about this callback function, see [`CGPatternDrawPatternCallback`](./cgpatterndrawpatterncallback.md).
+- [var releaseInfo: CGPatternReleaseInfoCallback?](./cgpatterncallbacks/releaseinfo.md)
+  An optional pointer to a custom function that’sinvoked when the pattern is released. [`CGPatternReleaseInfoCallback`](./cgpatternreleaseinfocallback.md).
+- [var version: UInt32](./cgpatterncallbacks/version.md)
+  The version of the structure passed in as a parameterto the [`init(info:bounds:matrix:xStep:yStep:tiling:isColored:callbacks:)`](./cgpattern/init%28info,bounds,matrix,xstep,ystep,tiling,iscolored,callbacks%29.md). Forthis version of the structure, you should set this value to zero.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias CGPatternDrawPatternCallback](cgpatterndrawpatterncallback.md)
+### Callbacks
+- [typealias CGPatternDrawPatternCallback](./cgpatterndrawpatterncallback.md)
   Draws a pattern cell.
-- [typealias CGPatternReleaseInfoCallback](cgpatternreleaseinfocallback.md)
+- [typealias CGPatternReleaseInfoCallback](./cgpatternreleaseinfocallback.md)
   Release private data or resources associated with the pattern.
 
 

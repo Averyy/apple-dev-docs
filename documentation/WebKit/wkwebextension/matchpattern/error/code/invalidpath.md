@@ -1,7 +1,8 @@
 # WKWebExtension.MatchPattern.Error.Code.invalidPath
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the path component was invalid.
 
@@ -16,6 +17,10 @@ Indicates that the path component was invalid.
 
 ```swift
 case invalidPath
+```
+
+```c
+WKWebExtensionMatchPatternErrorInvalidPath
 ```
 
 

@@ -1,15 +1,16 @@
 # removedNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that a pasteboard object posts just before an app removes it.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,18 @@ nonisolated
 class let removedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIPasteboardRemovedNotification;
+```
+
 #### Discussion
 
-The removal class method is [`remove(withName:)`](uipasteboard/remove(withname:).md). There is no `userInfo` dictionary.
+The removal class method is [`remove(withName:)`](./remove%28withname%29.md). There is no `userInfo` dictionary.
 
 ## See Also
 
-- [class let changedNotification: NSNotification.Name](uipasteboard/changednotification.md)
+### Notifications
+- [class let changedNotification: NSNotification.Name](./changednotification.md)
   A notification that a pasteboard object posts when its contents change.
 
 

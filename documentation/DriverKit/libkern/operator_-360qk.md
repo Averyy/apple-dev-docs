@@ -1,17 +1,18 @@
 # operator<
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function Template
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 template <typename T, typename U, typename P, typename = detail::detail::WhenOrderable<T * *, U * *>> bool operator<(T * *a, const bounded_ptr<U, P> & b);
 ```
 

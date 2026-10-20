@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CryptoTokenKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a token watcher.
 
@@ -20,9 +21,14 @@ Initializes a token watcher.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init(insertionHandler: (String) -> Void)](tktokenwatcher/init(insertionhandler:).md)
+### Creating Token Watchers
+- [init(insertionHandler: (String) -> Void)](./init%28insertionhandler%29.md)
   Initializes a token watcher with the specified insertion handler.
 
 

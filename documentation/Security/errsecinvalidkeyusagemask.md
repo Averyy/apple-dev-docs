@@ -1,7 +1,8 @@
 # errSecInvalidKeyUsageMask
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key usage mask is not valid.
 
@@ -18,6 +19,10 @@ The key usage mask is not valid.
 
 ```swift
 var errSecInvalidKeyUsageMask: OSStatus { get }
+```
+
+```c
+errSecInvalidKeyUsageMask
 ```
 
 

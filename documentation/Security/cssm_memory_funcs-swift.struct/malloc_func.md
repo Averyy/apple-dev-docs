@@ -1,7 +1,8 @@
 # malloc_func
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var malloc_func: CSSM_MALLOC!
+```
+
+```c
+CSSM_MALLOC malloc_func;
 ```
 
 

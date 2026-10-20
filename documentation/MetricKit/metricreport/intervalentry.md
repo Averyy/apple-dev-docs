@@ -1,7 +1,8 @@
 # MetricReport.IntervalEntry
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A metric entry that covers a specific time interval.
 
@@ -19,13 +20,13 @@ struct IntervalEntry
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 
-`IntervalEntry` contains all metric values for a given time interval. Access it through [`intervalEntries`](metricreport/intervalentries.md).
+`IntervalEntry` contains all metric values for a given time interval. Access it through [`intervalEntries`](./intervalentries.md).
 
-Use the [`fullDayEntry`](https://developer.apple.com/documentation/swift/array/fulldayentry) convenience property on the collection to retrieve the entry with the full 24-hour aggregate:
+Use the [`fullDayEntry`](../../Swift/array/fulldayentry.md) convenience property on the collection to retrieve the entry with the full 24-hour aggregate:
 
 ```swift
 let entry = report.intervalEntries.fullDayEntry
@@ -39,28 +40,28 @@ for result in entry.values {
 
 When you enable state reporting, `intervalEntries` contains shorter sub-interval entries in addition to the full-day entry.
 
-Each `IntervalEntry` provides a `duration` but no start timestamp, so you can’t associate an entry with a specific time of day. To determine when the overall reporting period occurred, use `timeRange` on the parent [`MetricReport`](metricreport.md).
+Each `IntervalEntry` provides a `duration` but no start timestamp, so you can’t associate an entry with a specific time of day. To determine when the overall reporting period occurred, use `timeRange` on the parent [`MetricReport`](../metricreport.md).
 
 ## Topics
 
 ### Interval details
-- [let duration: Measurement<UnitDuration>](metricreport/intervalentry/duration.md)
+- [let duration: Measurement<UnitDuration>](./intervalentry/duration.md)
   The duration of this collection interval.
-- [let states: [MetricManager.ReportedState]](metricreport/intervalentry/states.md)
+- [let states: [MetricManager.ReportedState]](./intervalentry/states.md)
   All states that were active during this collection interval.
 ### Metric values
-- [let values: [MetricResult]](metricreport/intervalentry/values.md)
+- [let values: [MetricResult]](./intervalentry/values.md)
   The metric values for this entry.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

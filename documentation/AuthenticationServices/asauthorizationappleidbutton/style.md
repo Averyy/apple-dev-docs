@@ -1,7 +1,8 @@
 # ASAuthorizationAppleIDButton.Style
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A style for the authorization button.
 
@@ -19,33 +20,38 @@ A style for the authorization button.
 enum Style
 ```
 
+```c
+enum ASAuthorizationAppleIDButtonStyle : NSInteger;
+```
+
 ## Topics
 
 ### Choosing a Button Style
-- [ASAuthorizationAppleIDButton.Style.black](asauthorizationappleidbutton/style/black.md)
+- [ASAuthorizationAppleIDButton.Style.black](./style/black.md)
   A black button.
-- [ASAuthorizationAppleIDButton.Style.white](asauthorizationappleidbutton/style/white.md)
+- [ASAuthorizationAppleIDButton.Style.white](./style/white.md)
   A white button.
-- [ASAuthorizationAppleIDButton.Style.whiteOutline](asauthorizationappleidbutton/style/whiteoutline.md)
+- [ASAuthorizationAppleIDButton.Style.whiteOutline](./style/whiteoutline.md)
   A button with a white outline.
 ### Initializers
-- [init?(rawValue: Int)](asauthorizationappleidbutton/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cornerRadius: CGFloat](asauthorizationappleidbutton/cornerradius.md)
+### Styling the Button
+- [var cornerRadius: CGFloat](./cornerradius.md)
   The radius, in points, for the rounded corners on the Apple ID sign-in button.
-- [ASAuthorizationAppleIDButton.ButtonType](asauthorizationappleidbutton/buttontype.md)
+- [ASAuthorizationAppleIDButton.ButtonType](./buttontype.md)
   A type for the authorization button.
 
 

@@ -1,7 +1,8 @@
 # playbackTime
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current playback time, in seconds, of the current entry.
 
@@ -21,7 +22,7 @@ var playbackTime: TimeInterval { get set }
 
 #### Discussion
 
-Changing the value of this property moves the playhead to the new location. For content streaming live from a server, this value represents the time from the beginning of the playlist when it first loads. This property returns `NaN` if the [`CMTime`](https://developer.apple.com/documentation/coremedia/cmtime) is invalid or indefinite.
+Changing the value of this property moves the playhead to the new location. For content streaming live from a server, this value represents the time from the beginning of the playlist when it first loads. This property returns `NaN` if the [`CMTime`](../../CoreMedia/cmtime.md) is invalid or indefinite.
 
 
 ---

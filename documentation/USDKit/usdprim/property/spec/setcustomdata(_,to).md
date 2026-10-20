@@ -1,7 +1,8 @@
 # setCustomData(_:to:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets `key` in the custom data dictionary to `value`.
 

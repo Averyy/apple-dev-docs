@@ -1,7 +1,8 @@
 # captureReadiness
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that indicates whether the coordinator’s photo output is ready to respond to new capture requests in a timely manner.
 
@@ -18,9 +19,13 @@ A value that indicates whether the coordinator’s photo output is ready to resp
 var captureReadiness: AVCapturePhotoOutput.CaptureReadiness { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCapturePhotoOutputCaptureReadiness captureReadiness;
+```
+
 #### Discussion
 
-The value incorporates the photo output’s [`captureReadiness`](avcapturephotooutput/capturereadiness-swift.property.md) property value and any requests registered by calling the [`startTrackingCaptureRequest(using:)`](avcapturephotooutputreadinesscoordinator/starttrackingcapturerequest(using:).md) method. The system updates this value before calling the [`readinessCoordinator(_:captureReadinessDidChange:)`](avcapturephotooutputreadinesscoordinatordelegate/readinesscoordinator(_:capturereadinessdidchange:).md) method.
+The value incorporates the photo output’s [`captureReadiness`](../avcapturephotooutput/capturereadiness-swift.property.md) property value and any requests registered by calling the [`startTrackingCaptureRequest(using:)`](./starttrackingcapturerequest%28using%29.md) method. The system updates this value before calling the [`readinessCoordinator(_:captureReadinessDidChange:)`](../avcapturephotooutputreadinesscoordinatordelegate/readinesscoordinator%28_,capturereadinessdidchange%29.md) method.
 
 This property is key-value observable.
 

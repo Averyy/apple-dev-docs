@@ -1,7 +1,8 @@
 # isFixedFocus
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A BOOL indicating whether this metadata object represents a fixed focus.
 
@@ -18,23 +19,28 @@ A BOOL indicating whether this metadata object represents a fixed focus.
 var isFixedFocus: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isFixedFocus) BOOL fixedFocus;
+```
+
 ## See Also
 
-- [var bounds: CGRect](avmetadataobject/bounds.md)
+### Inspecting the metadata
+- [var bounds: CGRect](./bounds.md)
   The bounding rectangle associated with the metadata.
-- [var duration: CMTime](avmetadataobject/duration.md)
+- [var duration: CMTime](./duration.md)
   The duration of the media associated with this metadata object.
-- [var time: CMTime](avmetadataobject/time.md)
+- [var time: CMTime](./time.md)
   The media time value associated with the metadata object.
-- [var type: AVMetadataObject.ObjectType](avmetadataobject/type.md)
+- [var type: AVMetadataObject.ObjectType](./type.md)
   The type of metadata that this object provides.
-- [AVMetadataObject.ObjectType](avmetadataobject/objecttype.md)
+- [AVMetadataObject.ObjectType](./objecttype.md)
   Constants that identify metadata object types.
-- [var cinematicVideoFocusMode: AVCaptureDevice.CinematicVideoFocusMode](avmetadataobject/cinematicvideofocusmode.md)
+- [var cinematicVideoFocusMode: AVCaptureDevice.CinematicVideoFocusMode](./cinematicvideofocusmode.md)
   The current focus mode when an object is detected during a Cinematic Video recording.
-- [var groupID: Int](avmetadataobject/groupid.md)
+- [var groupID: Int](./groupid.md)
   An identifier associated with a metadata object used to group it with other metadata objects belonging to a common parent.
-- [var objectID: Int](avmetadataobject/objectid.md)
+- [var objectID: Int](./objectid.md)
   A unique identifier for each detected object type (face, body, hands, heads, salient objects and focus-tracked objects) in a collection.
 
 

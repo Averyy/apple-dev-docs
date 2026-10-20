@@ -1,7 +1,8 @@
 # MobileDocumentDataResponse
 
 **Framework**: ProximityReader  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents a mobile document data response.
 
@@ -19,14 +20,14 @@ protocol MobileDocumentDataResponse : Hashable, Sendable
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [MobileDriversLicenseDataRequest.Response](mobiledriverslicensedatarequest/response.md)
-- [MobileNationalIDCardDataRequest.Response](mobilenationalidcarddatarequest/response.md)
-- [MobilePhotoIDDataRequest.Response](mobilephotoiddatarequest/response.md)
+- [MobileDriversLicenseDataRequest.Response](./mobiledriverslicensedatarequest/response.md)
+- [MobileNationalIDCardDataRequest.Response](./mobilenationalidcarddatarequest/response.md)
+- [MobilePhotoIDDataRequest.Response](./mobilephotoiddatarequest/response.md)
 
 
 ---

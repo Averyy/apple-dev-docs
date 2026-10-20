@@ -1,7 +1,8 @@
 # state(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the view state for a placement in the arrangement.
 
@@ -25,7 +26,8 @@ Returns the view state for a placement in the arrangement.
 
 ## See Also
 
-- [UIArrangementViewController.ViewState](uiarrangementviewcontroller/viewstate.md)
+### Getting view state
+- [UIArrangementViewController.ViewState](./viewstate.md)
   The state of a view within an arrangement.
 
 

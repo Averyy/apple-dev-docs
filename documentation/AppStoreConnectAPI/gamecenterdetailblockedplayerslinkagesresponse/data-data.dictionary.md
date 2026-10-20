@@ -1,7 +1,8 @@
 # GameCenterDetailBlockedPlayersLinkagesResponse.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The resource identifier for a blocked player related to a Game Center detail.
 
@@ -10,14 +11,18 @@ The resource identifier for a blocked player related to a Game Center detail.
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetailBlockedPlayersLinkagesResponse.Data
 ```
 
 ## Properties
 
-- `id` (string) *(required)*: The player’s game-scoped ID — the same identifier GameKit vends as [`gamePlayerID`](https://developer.apple.com/documentation/gamekit/gkplayer/gameplayerid).
-- `type` (string) *(required)*: The resource type. - gameCenterDetailPlayers:
+- `id` (string) *(required)*: The player’s game-scoped ID — the same identifier GameKit vends as [`gamePlayerID`](../../GameKit/gkplayer/gameplayerid.md).
+- `type` (string) *(required)*: The resource type.
+
+  - gameCenterDetailPlayers:
+
+  **Allowed Values**: `gameCenterDetailPlayers`
 
 
 ---

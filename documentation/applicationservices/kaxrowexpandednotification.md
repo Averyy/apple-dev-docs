@@ -1,7 +1,8 @@
 # kAXRowExpandedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification that a row in an outline has been expanded.
 
@@ -12,6 +13,10 @@ Notification that a row in an outline has been expanded.
 
 ```swift
 var kAXRowExpandedNotification: String { get }
+```
+
+```c
+#define kAXRowExpandedNotification
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # location
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first index in the command execution range.
 
@@ -19,9 +20,14 @@ The first index in the command execution range.
 var location: UInt32
 ```
 
+```c
+uint32_t location;
+```
+
 ## See Also
 
-- [var length: UInt32](mtlindirectcommandbufferexecutionrange/length.md)
+### Examining the range
+- [var length: UInt32](./length.md)
   The number of items in the command execution range.
 
 

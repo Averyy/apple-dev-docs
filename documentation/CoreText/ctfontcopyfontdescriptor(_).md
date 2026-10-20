@@ -1,7 +1,8 @@
 # CTFontCopyFontDescriptor(_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the normalized font descriptor for the given font reference.
 
@@ -20,6 +21,10 @@ Returns the normalized font descriptor for the given font reference.
 func CTFontCopyFontDescriptor(_ font: CTFont) -> CTFontDescriptor
 ```
 
+```c
+extern CTFontDescriptorRefCTFontCopyFontDescriptor(CTFontRef font);
+```
+
 #### Return Value
 
 A normalized font descriptor for a font containing enough information to recreate this font at a later time.
@@ -30,17 +35,18 @@ A normalized font descriptor for a font containing enough information to recreat
 
 ## See Also
 
-- [func CTFontCopyAttribute(CTFont, CFString) -> CFTypeRef?](ctfontcopyattribute(_:_:).md)
+### Getting Font Data
+- [func CTFontCopyAttribute(CTFont, CFString) -> CFTypeRef?](./ctfontcopyattribute%28_,_%29.md)
   Returns the value associated with an arbitrary attribute of the given font.
-- [func CTFontGetSize(CTFont) -> CGFloat](ctfontgetsize(_:).md)
+- [func CTFontGetSize(CTFont) -> CGFloat](./ctfontgetsize%28_%29.md)
   Returns the point size of the given font.
-- [func CTFontGetMatrix(CTFont) -> CGAffineTransform](ctfontgetmatrix(_:).md)
+- [func CTFontGetMatrix(CTFont) -> CGAffineTransform](./ctfontgetmatrix%28_%29.md)
   Returns the transformation matrix of the given font.
-- [func CTFontGetSymbolicTraits(CTFont) -> CTFontSymbolicTraits](ctfontgetsymbolictraits(_:).md)
+- [func CTFontGetSymbolicTraits(CTFont) -> CTFontSymbolicTraits](./ctfontgetsymbolictraits%28_%29.md)
   Returns the symbolic traits of the given font.
-- [func CTFontCopyTraits(CTFont) -> CFDictionary](ctfontcopytraits(_:).md)
+- [func CTFontCopyTraits(CTFont) -> CFDictionary](./ctfontcopytraits%28_%29.md)
   Returns the traits dictionary of the given font.
-- [func CTFontCopyDefaultCascadeListForLanguages(CTFont, CFArray?) -> CFArray?](ctfontcopydefaultcascadelistforlanguages(_:_:).md)
+- [func CTFontCopyDefaultCascadeListForLanguages(CTFont, CFArray?) -> CFArray?](./ctfontcopydefaultcascadelistforlanguages%28_,_%29.md)
   Retrieves an ordered list of font substitution preferences.
 
 

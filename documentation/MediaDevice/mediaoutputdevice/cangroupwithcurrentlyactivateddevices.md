@@ -1,7 +1,8 @@
 # canGroupWithCurrentlyActivatedDevices
 
 **Framework**: Media Device  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether this device can be grouped with devices that are currently activated.
 
@@ -18,7 +19,7 @@ let canGroupWithCurrentlyActivatedDevices: Bool
 
 #### Discussion
 
-When `true`, this device supports being added to a group with other devices via [`activateDevice(_:session:for:)`](mediadeviceextension/activatedevice(_:session:for:).md)
+When `true`, this device supports being added to a group with other devices via [`activateDevice(_:session:for:)`](../mediadeviceextension/activatedevice%28_,session,for%29.md)
 
 When `false`, the device must be activated independently and cannot join ongoing playback sessions on other devices.
 

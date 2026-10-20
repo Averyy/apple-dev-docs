@@ -1,7 +1,8 @@
 # failed
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error that indicates a failure for an unspecified reason.
 
@@ -19,9 +20,10 @@ static var failed: UIAccessibility.GuidedAccessError.Code { get }
 
 ## See Also
 
-- [static var permissionDenied: UIAccessibility.GuidedAccessError.Code](uiaccessibility/guidedaccesserror/permissiondenied.md)
+### Accessing error codes
+- [static var permissionDenied: UIAccessibility.GuidedAccessError.Code](./permissiondenied.md)
   An error that indicates the app isn’t authorized to perform the requested action.
-- [UIAccessibility.GuidedAccessError.Code](uiaccessibility/guidedaccesserror/code.md)
+- [UIAccessibility.GuidedAccessError.Code](./code.md)
   Error codes for Guided Access.
 
 

@@ -1,7 +1,8 @@
 # acceptanceStatus
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the user’s acceptance of the share.
 
@@ -20,15 +21,20 @@ The current state of the user’s acceptance of the share.
 var acceptanceStatus: CKShare.ParticipantAcceptanceStatus { get }
 ```
 
+```objc
+@property (assign, readonly) CKShareParticipantAcceptanceStatus acceptanceStatus;
+```
+
 #### Discussion
 
-This property contains the current state of the participant’s acceptance of the share. For a list of possible values, see [`CKShare.ParticipantAcceptanceStatus`](ckshare/participantacceptancestatus.md).
+This property contains the current state of the participant’s acceptance of the share. For a list of possible values, see [`CKShare.ParticipantAcceptanceStatus`](../participantacceptancestatus.md).
 
 ## See Also
 
-- [CKShare.Participant.AcceptanceStatus](ckshare/participant/acceptancestatus-swift.typealias.md)
+### Accessing the Participant’s Status
+- [CKShare.Participant.AcceptanceStatus](./acceptancestatus-swift.typealias.md)
   A type that represents the acceptance status of the participant.
-- [CKShare.ParticipantAcceptanceStatus](ckshare/participantacceptancestatus.md)
+- [CKShare.ParticipantAcceptanceStatus](../participantacceptancestatus.md)
   Constants that represent the status of a participant.
 
 

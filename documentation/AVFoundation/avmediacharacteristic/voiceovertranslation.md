@@ -1,7 +1,8 @@
 # voiceOverTranslation
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A media characteristic that indicates that a track or media selection option contains a language translation and verbal interpretation of spoken dialog.
 
@@ -20,17 +21,22 @@ A media characteristic that indicates that a track or media selection option con
 static let voiceOverTranslation: AVMediaCharacteristic
 ```
 
+```c
+extern AVMediaCharacteristic const AVMediaCharacteristicVoiceOverTranslation;
+```
+
 ## See Also
 
-- [static let audible: AVMediaCharacteristic](avmediacharacteristic/audible.md)
+### Audible
+- [static let audible: AVMediaCharacteristic](./audible.md)
   A media characteristic that indicates that a track or media selection option includes audible content.
-- [static let dubbedTranslation: AVMediaCharacteristic](avmediacharacteristic/dubbedtranslation.md)
+- [static let dubbedTranslation: AVMediaCharacteristic](./dubbedtranslation.md)
   A media characteristic that indicates that a track or media selection option contains audio language or dialect translation of the original content.
-- [static let enhancesSpeechIntelligibility: AVMediaCharacteristic](avmediacharacteristic/enhancesspeechintelligibility.md)
+- [static let enhancesSpeechIntelligibility: AVMediaCharacteristic](./enhancesspeechintelligibility.md)
   A media characteristic that indicates a track or media selection option includes audio processed to enhance the intelligibility of speech.
-- [static let describesMusicAndSoundForAccessibility: AVMediaCharacteristic](avmediacharacteristic/describesmusicandsoundforaccessibility.md)
+- [static let describesMusicAndSoundForAccessibility: AVMediaCharacteristic](./describesmusicandsoundforaccessibility.md)
   A media characteristic that indicates that a track or media selection option includes legible content in the language of its specified locale.
-- [static let tactileMinimal: AVMediaCharacteristic](avmediacharacteristic/tactileminimal.md)
+- [static let tactileMinimal: AVMediaCharacteristic](./tactileminimal.md)
   A media characteristic that indicates that a track or media selection option includes haptic content.
 
 

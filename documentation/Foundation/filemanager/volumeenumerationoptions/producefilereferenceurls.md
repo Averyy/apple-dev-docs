@@ -1,7 +1,8 @@
 # produceFileReferenceURLs
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The enumeration produces file reference URLs rather than path-based URLs.
 
@@ -20,9 +21,14 @@ The enumeration produces file reference URLs rather than path-based URLs.
 static var produceFileReferenceURLs: FileManager.VolumeEnumerationOptions { get }
 ```
 
+```c
+NSVolumeEnumerationProduceFileReferenceURLs
+```
+
 ## See Also
 
-- [static var skipHiddenVolumes: FileManager.VolumeEnumerationOptions](filemanager/volumeenumerationoptions/skiphiddenvolumes.md)
+### Volume Enumeration Options
+- [static var skipHiddenVolumes: FileManager.VolumeEnumerationOptions](./skiphiddenvolumes.md)
   The enumeration skips hidden volumes.
 
 

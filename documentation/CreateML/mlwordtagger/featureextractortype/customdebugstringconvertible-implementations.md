@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: Create ML
+**Framework**: Create ML  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](mlwordtagger/featureextractortype/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the feature extractor that’s suitable for output during debugging.
 
 

@@ -1,7 +1,8 @@
 # options
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration options for the current menu.
 
@@ -18,9 +19,14 @@ The configuration options for the current menu.
 var options: UIMenu.Options { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIMenuOptions options;
+```
+
 ## See Also
 
-- [var identifier: UIMenu.Identifier](uimenu/identifier-swift.property.md)
+### Getting menu details
+- [var identifier: UIMenu.Identifier](./identifier-swift.property.md)
   The unique identifier for the current menu.
 
 

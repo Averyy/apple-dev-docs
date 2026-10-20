@@ -1,7 +1,8 @@
 # displayText
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The display name for this medication.
 
@@ -17,6 +18,10 @@ The display name for this medication.
 
 ```swift
 var displayText: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * displayText;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # NSFallDetectionUsageDescription
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A message to the user that explains the app’s request for permission to access fall detection event data.
 
@@ -11,17 +12,19 @@ A message to the user that explains the app’s request for permission to access
 - visionOS 1.0+
 - watchOS 7.2+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSFallDetectionUsageDescription` (Privacy - Fall Detection Usage Description)
+- **Type**: string
 
 #### Discussion
 
-> ❗ **Important**:  If your app uses the [`CMFallDetectionManager`](https://developer.apple.com/documentation/coremotion/cmfalldetectionmanager), the app requires this key.
+> ❗ **Important**:  If your app uses the [`CMFallDetectionManager`](../../CoreMotion/cmfalldetectionmanager.md), the app requires this key.
 
 ## See Also
 
-- [NSMotionUsageDescription](information-property-list/nsmotionusagedescription.md)
+### Motion
+- [NSMotionUsageDescription](./nsmotionusagedescription.md)
   A message that tells people why the app is requesting access to the device’s motion data.
 
 

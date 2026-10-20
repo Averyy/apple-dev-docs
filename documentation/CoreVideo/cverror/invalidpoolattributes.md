@@ -1,7 +1,8 @@
 # invalidPoolAttributes
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A CVBufferPool cannot be created with the given attributes.
 

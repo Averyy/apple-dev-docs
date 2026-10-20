@@ -1,7 +1,8 @@
 # initializeCloudKitSchema(options:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the CloudKit schema for all stores in the container that manage a CloudKit database.
 
@@ -20,9 +21,13 @@ Creates the CloudKit schema for all stores in the container that manage a CloudK
 func initializeCloudKitSchema(options: NSPersistentCloudKitContainerSchemaInitializationOptions = []) throws
 ```
 
+```objc
+- (BOOL) initializeCloudKitSchemaWithOptions:(NSPersistentCloudKitContainerSchemaInitializationOptions) options error:(NSError **) error;
+```
+
 #### Discussion
 
-To create the schema, this method creates a set of representative [`CKRecord`](https://developer.apple.com/documentation/cloudkit/ckrecord) instances for all stores in the container that use Core Data with CloudKit, and uploads them to CloudKit. These records have a representative value for every field Core Data might serialize for the specified managed object model. After successfully uploading the records, the schema is visible in the CloudKit Dashboard and the container deletes the representative records.
+To create the schema, this method creates a set of representative [`CKRecord`](../../CloudKit/ckrecord.md) instances for all stores in the container that use Core Data with CloudKit, and uploads them to CloudKit. These records have a representative value for every field Core Data might serialize for the specified managed object model. After successfully uploading the records, the schema is visible in the CloudKit Dashboard and the container deletes the representative records.
 
 > **Note**:  This method also validates the managed object model in use for a store, so if the model isn’t valid for use with CloudKit, a validation error may return.
 
@@ -32,7 +37,8 @@ To create the schema, this method creates a set of representative [`CKRecord`](h
 
 ## See Also
 
-- [struct NSPersistentCloudKitContainerSchemaInitializationOptions](nspersistentcloudkitcontainerschemainitializationoptions.md)
+### Promoting Your Schema
+- [struct NSPersistentCloudKitContainerSchemaInitializationOptions](../nspersistentcloudkitcontainerschemainitializationoptions.md)
   Options that control the behavior when promoting the container’s schema to CloudKit.
 
 

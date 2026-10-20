@@ -1,7 +1,8 @@
 # titlePositionAdjustment
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance, in points, by which to offset the title horizontally and vertically.
 
@@ -18,15 +19,20 @@ The distance, in points, by which to offset the title horizontally and verticall
 var titlePositionAdjustment: UIOffset { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIOffset titlePositionAdjustment;
+```
+
 #### Discussion
 
 Positive values move the title down and to the right. Negative values move the title up and to the left.
 
 ## See Also
 
-- [var titleTextAttributes: [NSAttributedString.Key : Any]](uinavigationbarappearance/titletextattributes.md)
+### Configuring the title
+- [var titleTextAttributes: [NSAttributedString.Key : Any]](./titletextattributes.md)
   String attributes to apply to the text of a standard-size title.
-- [var largeTitleTextAttributes: [NSAttributedString.Key : Any]](uinavigationbarappearance/largetitletextattributes.md)
+- [var largeTitleTextAttributes: [NSAttributedString.Key : Any]](./largetitletextattributes.md)
   String attributes to apply to the text of a large-size title.
 
 

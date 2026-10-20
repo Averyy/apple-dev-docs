@@ -1,7 +1,8 @@
 # property
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that the media property predicate uses when you invoke a query.
 
@@ -17,11 +18,16 @@ The property that the media property predicate uses when you invoke a query.
 var property: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * property;
+```
+
 ## See Also
 
-- [var value: Any?](mpmediapropertypredicate/value.md)
+### Examining media property predicates
+- [var value: Any?](./value.md)
   The value that the media property predicate matches against when you invoke a query.
-- [var comparisonType: MPMediaPredicateComparison](mpmediapropertypredicate/comparisontype.md)
+- [var comparisonType: MPMediaPredicateComparison](./comparisontype.md)
   The type of matching comparison that the media property predicate performs when you invoke a query.
 
 

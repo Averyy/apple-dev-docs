@@ -1,7 +1,8 @@
 # alignment
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the alignment of a dragged item.
 
@@ -28,15 +29,16 @@ Only plays feedback on iOS and macOS.
 
 ## See Also
 
-- [static let decrease: SensoryFeedback](sensoryfeedback/decrease.md)
+### Indicating changes and selections
+- [static let decrease: SensoryFeedback](./decrease.md)
   Indicates that an important value decreased below a significant threshold.
-- [static let increase: SensoryFeedback](sensoryfeedback/increase.md)
+- [static let increase: SensoryFeedback](./increase.md)
   Indicates that an important value increased above a significant threshold.
-- [static let levelChange: SensoryFeedback](sensoryfeedback/levelchange.md)
+- [static let levelChange: SensoryFeedback](./levelchange.md)
   Indicates movement between discrete levels of pressure.
-- [static let selection: SensoryFeedback](sensoryfeedback/selection.md)
+- [static let selection: SensoryFeedback](./selection.md)
   Indicates that a UI element’s values are changing.
-- [static let pathComplete: SensoryFeedback](sensoryfeedback/pathcomplete.md)
+- [static let pathComplete: SensoryFeedback](./pathcomplete.md)
   Indicates a drawn path has completed and/or recognized.
 
 

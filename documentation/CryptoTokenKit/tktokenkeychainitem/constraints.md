@@ -1,9 +1,10 @@
 # constraints
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Access constraints for the keychain item, keyed by [`TKTokenOperation`](tktokenoperation.md) values wrapped in [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects.
+Access constraints for the keychain item, keyed by [`TKTokenOperation`](../tktokenoperation.md) values wrapped in [`NSNumber`](../../Foundation/nsnumber.md) objects.
 
 **Availability**:
 - iOS 10.0+
@@ -20,11 +21,16 @@ Access constraints for the keychain item, keyed by [`TKTokenOperation`](tktokeno
 var constraints: [NSNumber : Any]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSDictionary<NSNumber *,id> * constraints;
+```
+
 ## See Also
 
-- [var objectID: TKToken.ObjectID](tktokenkeychainitem/objectid.md)
+### Accessing Keychain Item Attributes
+- [var objectID: TKToken.ObjectID](./objectid.md)
   Returns the object ID used for keychain item identification.
-- [var label: String?](tktokenkeychainitem/label.md)
+- [var label: String?](./label.md)
   The user-visible label for the keychain item.
 
 

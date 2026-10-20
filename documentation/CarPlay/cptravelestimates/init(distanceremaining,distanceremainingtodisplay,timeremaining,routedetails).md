@@ -1,7 +1,8 @@
 # init(distanceRemaining:distanceRemainingToDisplay:timeRemaining:routeDetails:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a @c CPTravelEstimates with distance, distance to display, time remaining, and additional trip information.
 
@@ -14,6 +15,10 @@ Initialize a @c CPTravelEstimates with distance, distance to display, time remai
 
 ```swift
 init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining time: TimeInterval, routeDetails: [CPRouteDetail])
+```
+
+```objc
+- (instancetype) initWithDistanceRemaining:(NSMeasurement<NSUnitLength *> *) distanceRemaining distanceRemainingToDisplay:(NSMeasurement<NSUnitLength *> *) distanceRemainingToDisplay timeRemaining:(NSTimeInterval) time routeDetails:(NSArray<CPRouteDetail *> *) routeDetails;
 ```
 
 

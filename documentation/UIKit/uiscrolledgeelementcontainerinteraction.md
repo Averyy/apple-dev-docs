@@ -1,7 +1,8 @@
 # UIScrollEdgeElementContainerInteraction
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Add this interaction to a container view of views that overlay the edge of a scroll view. Any descendants of this view that should affect the shape of the edge effect, such as labels, images, glass views, and controls, will automatically do so.
 
@@ -19,11 +20,15 @@ Add this interaction to a container view of views that overlay the edge of a scr
 class UIScrollEdgeElementContainerInteraction
 ```
 
+```objc
+@interface UIScrollEdgeElementContainerInteraction : NSObject
+```
+
 #### Overview
 
 In the following example, an interaction is added to a container view of buttons that overlay the bottom edge of a scroll view.
 
-```None
+```
 let interaction = UIScrollEdgeElementContainerInteraction()
 interaction.scrollView = scrollView
 interaction.edge = .bottom
@@ -33,28 +38,29 @@ buttonContainer.addInteraction(interaction)
 ## Topics
 
 ### Instance Properties
-- [var edge: UIRectEdge](uiscrolledgeelementcontainerinteraction/edge.md)
+- [var edge: UIRectEdge](./uiscrolledgeelementcontainerinteraction/edge.md)
   The edge of the scroll view to affect
-- [var scrollView: UIScrollView?](uiscrolledgeelementcontainerinteraction/scrollview.md)
+- [var scrollView: UIScrollView?](./uiscrolledgeelementcontainerinteraction/scrollview.md)
   The scroll view to affect
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIInteraction](uiinteraction.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIInteraction](./uiinteraction.md)
 
 ## See Also
 
-- [class UIBackgroundExtensionView](uibackgroundextensionview.md)
+### Interacting with adjacent views
+- [class UIBackgroundExtensionView](./uibackgroundextensionview.md)
   A view that extends content to fill its own bounds.
 
 

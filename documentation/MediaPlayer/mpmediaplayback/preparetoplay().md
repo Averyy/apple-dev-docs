@@ -2,6 +2,7 @@
 
 **Framework**: Media Player  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Prepares a media player for playback.
@@ -19,21 +20,26 @@ Prepares a media player for playback.
 func prepareToPlay()
 ```
 
+```objc
+- (void) prepareToPlay;
+```
+
 #### Discussion
 
-If a media player isn’t already prepared to play when you call the [`play()`](mpmediaplayback/play().md) method, that method automatically calls this method. However, to minimize playback delay, call this method before you call [`play()`](mpmediaplayback/play().md).
+If a media player isn’t already prepared to play when you call the [`play()`](./play%28%29.md) method, that method automatically calls this method. However, to minimize playback delay, call this method before you call [`play()`](./play%28%29.md).
 
-Calling this method may interrupt the media player’s audio session. For information on interruptions and how to respond to them, see [`Audio Session Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875).
+Calling this method may interrupt the media player’s audio session. For information on interruptions and how to respond to them, see [Audio Session Programming Guide](https://developer.apple.com/library/archive/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007875).
 
 ## See Also
 
-- [func play()](mpmediaplayback/play.md)
+### Starting and stopping playback
+- [func play()](./play%28%29.md)
   Initiates playback of the current item.
-- [func pause()](mpmediaplayback/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses playback of the current item.
-- [func stop()](mpmediaplayback/stop.md)
+- [func stop()](./stop%28%29.md)
   Ends playback of the current item.
-- [var isPreparedToPlay: Bool](mpmediaplayback/ispreparedtoplay.md)
+- [var isPreparedToPlay: Bool](./ispreparedtoplay.md)
   A Boolean value indicating whether a media player is ready to play.
 
 

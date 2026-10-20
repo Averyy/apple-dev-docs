@@ -1,20 +1,22 @@
 # Power Configuration Settings
 
-**Framework**: USBDriverKit
+**Framework**: USBDriverKit  
+**Role**: API Collection
 
 Constants for configuring the power settings.
 
 ## Topics
 
 ### Getting the Settings
-- [kIOUSBConfigurationDescriptorAttributeRemoteWakeCapable](kiousbconfigurationdescriptorattributeremotewakecapable.md)
-- [kIOUSBConfigurationDescriptorAttributeSelfPowered](kiousbconfigurationdescriptorattributeselfpowered.md)
+- [kIOUSBConfigurationDescriptorAttributeRemoteWakeCapable](./kiousbconfigurationdescriptorattributeremotewakecapable.md)
+- [kIOUSBConfigurationDescriptorAttributeSelfPowered](./kiousbconfigurationdescriptorattributeselfpowered.md)
 
 ## See Also
 
-- [IOUSBConfigurationDescriptor](iousbconfigurationdescriptor.md)
+### Configuration Descriptors
+- [IOUSBConfigurationDescriptor](./iousbconfigurationdescriptor.md)
   The structure for storing a USB configuration descriptor.
-- [IOUSBConfigurationDescHeader](iousbconfigurationdescheader.md)
+- [IOUSBConfigurationDescHeader](./iousbconfigurationdescheader.md)
   The header of a configuration descriptor.
 
 

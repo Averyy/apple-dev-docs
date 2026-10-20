@@ -1,7 +1,8 @@
 # width
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the list.
 
@@ -22,7 +23,7 @@ var width: ListFormatStyle<Style, Base>.Width
 
 #### Discussion
 
-The `width` property controls the size of the list. The [`locale`](listformatstyle/locale.md) determines the formatting and abbreviation of the string for the given `width`.
+The `width` property controls the size of the list. The [`locale`](./locale.md) determines the formatting and abbreviation of the string for the given `width`.
 
 For example, for English:
 
@@ -37,19 +38,20 @@ For example, for English:
 // “One, Two, Three” 
 ```
 
-The default value is [`ListFormatStyle.Width.standard`](listformatstyle/width-swift.enum/standard.md).
+The default value is [`ListFormatStyle.Width.standard`](./width-swift.enum/standard.md).
 
 ## See Also
 
-- [ListFormatStyle.Width](listformatstyle/width-swift.enum.md)
+### Modifying a list format style
+- [ListFormatStyle.Width](./width-swift.enum.md)
   The type representing the width of a list.
-- [var listType: ListFormatStyle<Style, Base>.ListType](listformatstyle/listtype-swift.property.md)
+- [var listType: ListFormatStyle<Style, Base>.ListType](./listtype-swift.property.md)
   The type of the list.
-- [ListFormatStyle.ListType](listformatstyle/listtype-swift.enum.md)
+- [ListFormatStyle.ListType](./listtype-swift.enum.md)
   A type that describes whether the returned list contains cumulative or alternative elements.
-- [var locale: Locale](listformatstyle/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use when formatting items in the list.
-- [func locale(Locale) -> ListFormatStyle<Style, Base>](listformatstyle/locale(_:).md)
+- [func locale(Locale) -> ListFormatStyle<Style, Base>](./locale%28_%29.md)
   Modifies the list format style to use the specified locale.
 
 

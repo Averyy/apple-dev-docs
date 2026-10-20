@@ -1,7 +1,8 @@
 # HelpLink
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A button with a standard appearance that opens app-specific help documentation.
 
@@ -53,29 +54,30 @@ struct SheetContentView: View {
 ## Topics
 
 ### Creating a help link
-- [init(action: () -> Void)](helplink/init(action:).md)
+- [init(action: () -> Void)](./helplink/init%28action%29.md)
   Constructs a new help link with the specified action.
-- [init(destination: URL)](helplink/init(destination:).md)
+- [init(destination: URL)](./helplink/init%28destination%29.md)
   Constructs a new help link that opens the specified destination URL.
-- [init(anchor: NSHelpManager.AnchorName)](helplink/init(anchor:).md)
+- [init(anchor: NSHelpManager.AnchorName)](./helplink/init%28anchor%29.md)
   Constructs a new help link with the specified anchor in the main app bundle’s book.
-- [init(anchor: NSHelpManager.AnchorName, book: NSHelpManager.BookName)](helplink/init(anchor:book:).md)
+- [init(anchor: NSHelpManager.AnchorName, book: NSHelpManager.BookName)](./helplink/init%28anchor,book%29.md)
   Constructs a new help link with the specified anchor and book.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Link](link.md)
+### Linking to other content
+- [struct Link](./link.md)
   A control for navigating to a URL.
-- [struct ShareLink](sharelink.md)
+- [struct ShareLink](./sharelink.md)
   A view that controls a sharing presentation.
-- [struct SharePreview](sharepreview.md)
+- [struct SharePreview](./sharepreview.md)
   A representation of a type to display in a share preview.
-- [struct TextFieldLink](textfieldlink.md)
+- [struct TextFieldLink](./textfieldlink.md)
   A control that requests text input from the user when pressed.
 
 

@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text interaction with the specified mode.
 
@@ -15,6 +16,10 @@ Creates a text interaction with the specified mode.
 
 ```swift
 convenience init(for mode: UITextInteractionMode)
+```
+
+```objc
++ (instancetype) textInteractionForMode:(UITextInteractionMode) mode;
 ```
 
 #### Return Value

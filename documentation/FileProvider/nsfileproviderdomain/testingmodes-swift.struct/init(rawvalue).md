@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a newly-created testing mode.
 

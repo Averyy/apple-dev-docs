@@ -1,7 +1,8 @@
 # AVExperienceController.Experience.multiview
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An experience where multiple videos play together.
 
@@ -16,7 +17,7 @@ case multiview
 
 #### Discussion
 
-Configure this experience type using an [`AVMultiviewManager`](avmultiviewmanager.md).
+Configure this experience type using an [`AVMultiviewManager`](../../avmultiviewmanager.md).
 
 It’s valid to transition to this experience from a player view controller that isn’t in a view hierarchy. This is useful when adding additional videos to a multiview experience.
 
@@ -24,11 +25,12 @@ Transition to embedded to remove an item from the multiview experience.
 
 ## See Also
 
-- [AVExperienceController.Experience.embedded](avexperiencecontroller/experience-swift.enum/embedded.md)
+### Supported experiences
+- [AVExperienceController.Experience.embedded](./embedded.md)
   An experience where the video embeds within its original container.
-- [AVExperienceController.Experience.expanded](avexperiencecontroller/experience-swift.enum/expanded.md)
+- [AVExperienceController.Experience.expanded](./expanded.md)
   An experience where the system places the video outside of its original container.
-- [AVExperienceController.Experience.immersive](avexperiencecontroller/experience-swift.enum/immersive.md)
+- [AVExperienceController.Experience.immersive](./immersive.md)
   Indicates an experience in which the video extends beyond the app window boundaries/container.
 
 

@@ -1,7 +1,8 @@
 # kSpeechPhonemeOptionsProperty
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Get or set the options for the generation of phonetic output.
 
@@ -14,11 +15,15 @@ Get or set the options for the generation of phonetic output.
 let kSpeechPhonemeOptionsProperty: CFString
 ```
 
+```c
+const CFStringRef kSpeechPhonemeOptionsProperty;
+```
+
 #### Discussion
 
-The value associated with this property is a pointer to an `CFNumber` object containing the flags (options) you would pass to [`soPhonemeOptions`](sophonemeoptions.md). (See [`Phoneme Generation Options`](speech_synthesis_manager/1552233-phoneme_generation_options.md) for a complete list of options.)
+The value associated with this property is a pointer to an `CFNumber` object containing the flags (options) you would pass to [`soPhonemeOptions`](./sophonemeoptions.md). (See [Phoneme Generation Options](./speech_synthesis_manager/api-1552233-phoneme_generation_options.md) for a complete list of options.)
 
-This property works with the [`SetSpeechProperty(_:_:_:)`](1459256-setspeechproperty.md) and the [`CopySpeechProperty(_:_:_:)`](1459075-copyspeechproperty.md) functions.
+This property works with the [`SetSpeechProperty(_:_:_:)`](./api-1459256-setspeechproperty.md) and the [`CopySpeechProperty(_:_:_:)`](./api-1459075-copyspeechproperty.md) functions.
 
 
 ---

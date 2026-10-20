@@ -1,7 +1,8 @@
 # toString
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string representation of this object.
 
@@ -10,13 +11,13 @@ Returns a string representation of this object.
 
 ## Declaration
 
-```swift
+```
 String toString();
 ```
 
 #### Return Value
 
-A string representation of this [`CloudKit.SubscriptionsResponse`](cloudkit.subscriptionsresponse.md) object.
+A string representation of this [`CloudKit.SubscriptionsResponse`](../cloudkit.subscriptionsresponse.md) object.
 
 
 ---

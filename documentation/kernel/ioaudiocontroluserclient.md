@@ -1,41 +1,43 @@
 # IOAudioControlUserClient
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```cpp
 class IOAudioControlUserClient : IOUserClient
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- clientClose](ioaudiocontroluserclient/1430445-clientclose.md)
-- [- clientDied](ioaudiocontroluserclient/1430433-clientdied.md)
-- [- free](ioaudiocontroluserclient/1430447-free.md)
-- [- getMetaClass](ioaudiocontroluserclient/1430437-getmetaclass.md)
-- [- initWithAudioControl](ioaudiocontroluserclient/1430444-initwithaudiocontrol.md)
-- [- initWithAudioControl](ioaudiocontroluserclient/3516519-initwithaudiocontrol.md)
-- [- registerNotificationPort](ioaudiocontroluserclient/1430439-registernotificationport.md)
-- [- sendChangeNotification](ioaudiocontroluserclient/1430436-sendchangenotification.md)
-- [- sendValueChangeNotification](ioaudiocontroluserclient/1430441-sendvaluechangenotification.md)
+- [- clientClose](./ioaudiocontroluserclient/api-1430445-clientclose.md)
+- [- clientDied](./ioaudiocontroluserclient/api-1430433-clientdied.md)
+- [- free](./ioaudiocontroluserclient/api-1430447-free.md)
+- [- getMetaClass](./ioaudiocontroluserclient/api-1430437-getmetaclass.md)
+- [- initWithAudioControl](./ioaudiocontroluserclient/api-1430444-initwithaudiocontrol.md)
+- [- initWithAudioControl](./ioaudiocontroluserclient/api-3516519-initwithaudiocontrol.md)
+- [- registerNotificationPort](./ioaudiocontroluserclient/api-1430439-registernotificationport.md)
+- [- sendChangeNotification](./ioaudiocontroluserclient/api-1430436-sendchangenotification.md)
+- [- sendValueChangeNotification](./ioaudiocontroluserclient/api-1430441-sendvaluechangenotification.md)
 ### Type Methods
-- [+ withAudioControl](ioaudiocontroluserclient/1430435-withaudiocontrol.md)
-- [+ withAudioControl](ioaudiocontroluserclient/3516520-withaudiocontrol.md)
+- [+ withAudioControl](./ioaudiocontroluserclient/api-1430435-withaudiocontrol.md)
+- [+ withAudioControl](./ioaudiocontroluserclient/api-3516520-withaudiocontrol.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOUserClient](iouserclient.md)
+- [IOUserClient](./iouserclient.md)
 
 ## See Also
 
-- [IOAudioEngineUserClient](ioaudioengineuserclient.md)
+### User-Space Access
+- [IOAudioEngineUserClient](./ioaudioengineuserclient.md)
 
 
 ---

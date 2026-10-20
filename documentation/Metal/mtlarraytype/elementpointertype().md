@@ -1,7 +1,8 @@
 # elementPointerType()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a description of the underlying pointer type when an array holds pointers as its elements.
 
@@ -19,21 +20,26 @@ Provides a description of the underlying pointer type when an array holds pointe
 func elementPointerType() -> MTLPointerType?
 ```
 
+```objc
+- (MTLPointerType *) elementPointerType;
+```
+
 #### Return Value
 
 An object that describes the pointer. If the array elements aren’t pointers, this method returns `nil`.
 
 #### Discussion
 
-Use this method if [`elementType`](mtlarraytype/elementtype.md) is [`MTLDataType.pointer`](mtldatatype/pointer.md).
+Use this method if [`elementType`](./elementtype.md) is [`MTLDataType.pointer`](../mtldatatype/pointer.md).
 
 ## See Also
 
-- [func element() -> MTLArrayType?](mtlarraytype/element.md)
+### Obtaining details for complex array elements
+- [func element() -> MTLArrayType?](./element%28%29.md)
   Provides a description of the underlying type when an array holds other arrays as its elements.
-- [func elementStructType() -> MTLStructType?](mtlarraytype/elementstructtype.md)
+- [func elementStructType() -> MTLStructType?](./elementstructtype%28%29.md)
   Provides a description of the underlying struct type when an array holds structs as its elements.
-- [func elementTextureReferenceType() -> MTLTextureReferenceType?](mtlarraytype/elementtexturereferencetype.md)
+- [func elementTextureReferenceType() -> MTLTextureReferenceType?](./elementtexturereferencetype%28%29.md)
   Provides a description of the underlying texture type when an array holds textures as its elements.
 
 

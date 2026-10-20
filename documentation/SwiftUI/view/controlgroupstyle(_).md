@@ -1,7 +1,8 @@
 # controlGroupStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for control groups within this view.
 
@@ -26,7 +27,8 @@ func controlGroupStyle<S>(_ style: S) -> some View where S : ControlGroupStyle
 
 ## See Also
 
-- [struct ControlGroup](controlgroup.md)
+### Presenting a group of controls
+- [struct ControlGroup](../controlgroup.md)
   A container view that displays semantically-related controls in a visually-appropriate manner for the context
 
 

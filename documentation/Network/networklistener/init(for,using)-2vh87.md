@@ -1,7 +1,8 @@
 # init(for:using:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a listener that advertises a service with a protocol stack and parameters to use for listening.
 

@@ -1,7 +1,8 @@
 # collectionView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection view object currently using this layout.
 
@@ -12,6 +13,10 @@ The collection view object currently using this layout.
 
 ```swift
 weak var collectionView: NSCollectionView? { get }
+```
+
+```objc
+@property (weak, readonly, nullable) NSCollectionView * collectionView;
 ```
 
 #### Discussion

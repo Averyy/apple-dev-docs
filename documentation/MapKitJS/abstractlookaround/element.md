@@ -1,7 +1,8 @@
 # element
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that represents the Look Around view’s containing Document Object Model (DOM) element.
 
@@ -10,19 +11,20 @@ A property that represents the Look Around view’s containing Document Object M
 
 ## Declaration
 
-```swift
+```
 get element(): HTMLDivElement;
 ```
 
 ## See Also
 
-- [scene](abstractlookaround/scene.md)
+### Getting information about the Look Around object and its state
+- [scene](./scene.md)
   The Look Around scene the framework is displaying.
-- [padding](abstractlookaround/padding.md)
+- [padding](./padding.md)
   The padding options for the Look Around view.
-- [readyState](abstractlookaround/readystate.md)
+- [readyState](./readystate.md)
   A value that represents the loading state of the Look Around object.
-- [const LookAroundReadyState](lookaroundreadystate.md)
+- [const LookAroundReadyState](../lookaroundreadystate.md)
   Values that indicate the state of the Look Around object in the browser.
 
 

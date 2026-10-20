@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The typed value the model produces.
 
@@ -22,7 +23,8 @@ var value: Value
 
 ## See Also
 
-- [var transcript: StructuredTranscript?](modelsubject/transcript.md)
+### Accessing the content
+- [var transcript: StructuredTranscript?](./transcript.md)
   The structured transcript from the model session.
 
 

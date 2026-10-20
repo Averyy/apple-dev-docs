@@ -1,7 +1,8 @@
 # init(merchantIdentifier:externalIdentifier:merchantName:merchantDomain:amount:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a payment token context for a single merchant.
 
@@ -16,6 +17,10 @@ Create a payment token context for a single merchant.
 
 ```swift
 init(merchantIdentifier: String, externalIdentifier: String, merchantName: String, merchantDomain: String?, amount: NSDecimalNumber)
+```
+
+```objc
+- (instancetype) initWithMerchantIdentifier:(NSString *) merchantIdentifier externalIdentifier:(NSString *) externalIdentifier merchantName:(NSString *) merchantName merchantDomain:(NSString *) merchantDomain amount:(NSDecimalNumber *) amount;
 ```
 
 ## Parameters

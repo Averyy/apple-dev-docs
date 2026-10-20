@@ -1,7 +1,8 @@
 # precision
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The numeric precision of this operation’s value.
 

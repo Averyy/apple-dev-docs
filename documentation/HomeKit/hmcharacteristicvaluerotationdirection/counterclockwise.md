@@ -1,7 +1,8 @@
 # HMCharacteristicValueRotationDirection.counterClockwise
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Counter-clockwise rotation.
 
@@ -19,9 +20,14 @@ Counter-clockwise rotation.
 case counterClockwise
 ```
 
+```c
+HMCharacteristicValueRotationDirectionCounterClockwise
+```
+
 ## See Also
 
-- [HMCharacteristicValueRotationDirection.clockwise](hmcharacteristicvaluerotationdirection/clockwise.md)
+### Rotation
+- [HMCharacteristicValueRotationDirection.clockwise](./clockwise.md)
   Clockwise rotation.
 
 

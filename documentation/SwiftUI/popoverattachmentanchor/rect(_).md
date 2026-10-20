@@ -1,7 +1,8 @@
 # PopoverAttachmentAnchor.rect(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The anchor point for the popover relative to the source’s frame.
 
@@ -22,7 +23,8 @@ case rect(Anchor<CGRect>.Source)
 
 ## See Also
 
-- [PopoverAttachmentAnchor.point(_:)](popoverattachmentanchor/point(_:).md)
+### Getting attachment anchors
+- [PopoverAttachmentAnchor.point(_:)](./point%28_%29.md)
   The anchor point for the popover expressed as a unit point  that describes possible alignments relative to a SwiftUI view.
 
 

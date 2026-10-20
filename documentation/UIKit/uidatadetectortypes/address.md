@@ -1,7 +1,8 @@
 # address
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to detect strings with the format of an address.
 
@@ -17,25 +18,30 @@ An option to detect strings with the format of an address.
 static var address: UIDataDetectorTypes { get }
 ```
 
+```c
+UIDataDetectorTypeAddress
+```
+
 ## See Also
 
-- [static var phoneNumber: UIDataDetectorTypes](uidatadetectortypes/phonenumber.md)
+### Constants
+- [static var phoneNumber: UIDataDetectorTypes](./phonenumber.md)
   An option to detect strings with the format of a phone number.
-- [static var link: UIDataDetectorTypes](uidatadetectortypes/link.md)
+- [static var link: UIDataDetectorTypes](./link.md)
   An option to detect strings with the format of a URL.
-- [static var calendarEvent: UIDataDetectorTypes](uidatadetectortypes/calendarevent.md)
+- [static var calendarEvent: UIDataDetectorTypes](./calendarevent.md)
   An option to detect strings with the format of a calendar event.
-- [static var shipmentTrackingNumber: UIDataDetectorTypes](uidatadetectortypes/shipmenttrackingnumber.md)
+- [static var shipmentTrackingNumber: UIDataDetectorTypes](./shipmenttrackingnumber.md)
   An option to detect strings with the format of a tracking number from a package delivery company.
-- [static var flightNumber: UIDataDetectorTypes](uidatadetectortypes/flightnumber.md)
+- [static var flightNumber: UIDataDetectorTypes](./flightnumber.md)
   An option to detect strings with the format of a flight number from an airline.
-- [static var lookupSuggestion: UIDataDetectorTypes](uidatadetectortypes/lookupsuggestion.md)
+- [static var lookupSuggestion: UIDataDetectorTypes](./lookupsuggestion.md)
   An option to detect strings with the format of information that a person might want to look up.
-- [static var money: UIDataDetectorTypes](uidatadetectortypes/money.md)
+- [static var money: UIDataDetectorTypes](./money.md)
   An option to detect strings with the format of an amount of money.
-- [static var physicalValue: UIDataDetectorTypes](uidatadetectortypes/physicalvalue.md)
+- [static var physicalValue: UIDataDetectorTypes](./physicalvalue.md)
   An option to detect strings with the format of a physical value, such as length or temperature.
-- [static var all: UIDataDetectorTypes](uidatadetectortypes/all.md)
+- [static var all: UIDataDetectorTypes](./all.md)
   An option to detect all available types of data.
 
 

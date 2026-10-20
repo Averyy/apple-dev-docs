@@ -1,7 +1,8 @@
 # GetReference
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns a pointer to any additional memory allocated by the action object on your behalf.
 
@@ -11,13 +12,13 @@ Returns a pointer to any additional memory allocated by the action object on you
 
 ## Declaration
 
-```swift
+```c
 void * GetReference(void);
 ```
 
-#### Return_value
+#### Return Value
 
-A pointer to the additional storage you requested at creation time. This method returns `NULL` if you passed `0` to the `referenceSize` parameter of the [`Create`](osaction/3438206-create.md) method. It also returns `NULL` if the action object doesn't belong to the current process. 
+A pointer to the additional storage you requested at creation time. This method returns `NULL` if you passed `0` to the `referenceSize` parameter of the [`Create`](./api-3438206-create.md) method. It also returns `NULL` if the action object doesn't belong to the current process. 
 
 #### Discussion
 

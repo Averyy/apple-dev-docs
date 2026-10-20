@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expiration date of a pass.
 
@@ -9,7 +10,7 @@ The expiration date of a pass.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 8.0+
 
@@ -19,13 +20,18 @@ The expiration date of a pass.
 var expirationDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDate * expirationDate;
+```
+
 ## See Also
 
-- [var balances: [PKStoredValuePassBalance]](pkstoredvaluepassproperties/balances.md)
+### Reading the stored-value pass properties
+- [var balances: [PKStoredValuePassBalance]](./balances.md)
   The amount available for transactions for a service represented by a stored-value pass.
-- [var isBlocked: Bool](pkstoredvaluepassproperties/isblocked.md)
+- [var isBlocked: Bool](./isblocked.md)
   A Boolean value that indicates the pass issuer disabled a stored-value pass.
-- [var isBlacklisted: Bool](pkstoredvaluepassproperties/isblacklisted.md)
+- [var isBlacklisted: Bool](./isblacklisted.md)
   A Boolean value that indicates the pass issuer disabled a stored-value pass.
 
 

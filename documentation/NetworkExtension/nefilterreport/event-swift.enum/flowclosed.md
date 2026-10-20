@@ -1,7 +1,8 @@
 # NEFilterReport.Event.flowClosed
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type of event indicating the report is for a flow’s closing.
 
@@ -18,13 +19,18 @@ A type of event indicating the report is for a flow’s closing.
 case flowClosed
 ```
 
+```c
+NEFilterReportEventFlowClosed
+```
+
 ## See Also
 
-- [NEFilterReport.Event.newFlow](nefilterreport/event-swift.enum/newflow.md)
+### Event Types
+- [NEFilterReport.Event.newFlow](./newflow.md)
   A type of event indicating the report is for a new flow.
-- [NEFilterReport.Event.dataDecision](nefilterreport/event-swift.enum/datadecision.md)
+- [NEFilterReport.Event.dataDecision](./datadecision.md)
   A type of event indicating the report is about a pass/block decision made after analyzing some amount of a flow’s data.
-- [NEFilterReport.Event.statistics](nefilterreport/event-swift.enum/statistics.md)
+- [NEFilterReport.Event.statistics](./statistics.md)
   A type of event indicating the report is for the latest statistics of the flow.
 
 

@@ -1,16 +1,17 @@
 # resetPhysicsTransform(_:recursive:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the position and velocities of the simulated physics body.
 
 **Availability**:
-- iOS 13.0+ - Deprecated
-- iPadOS 13.0+ - Deprecated
-- Mac Catalyst 13.0+ - Deprecated
-- macOS 10.15+ - Deprecated
-- visionOS 1.0+ - Deprecated
+- iOS 13.0+ - Deprecated (renamed: resetPhysicsTransform(recursive:))
+- iPadOS 13.0+ - Deprecated (renamed: resetPhysicsTransform(recursive:))
+- Mac Catalyst 13.0+ - Deprecated (renamed: resetPhysicsTransform(recursive:))
+- macOS 10.15+ - Deprecated (renamed: resetPhysicsTransform(recursive:))
+- visionOS 1.0+ - Deprecated (renamed: resetPhysicsTransform(recursive:))
 
 ## Declaration
 
@@ -21,7 +22,7 @@ Resets the position and velocities of the simulated physics body.
 
 #### Discussion
 
-Call this method to change the transform applied to a body by physics simulation. This only matters for dynamic rigid bodies, with a [`mode`](physicsbodycomponent/mode.md) of [`PhysicsBodyMode.dynamic`](physicsbodymode/dynamic.md). This is the only kind of body that’s affected by physics simulations. For all others, modify the entity’s [`transform`](hastransform/transform.md) property directly.
+Call this method to change the transform applied to a body by physics simulation. This only matters for dynamic rigid bodies, with a [`mode`](../physicsbodycomponent/mode.md) of [`PhysicsBodyMode.dynamic`](../physicsbodymode/dynamic.md). This is the only kind of body that’s affected by physics simulations. For all others, modify the entity’s [`transform`](../hastransform/transform.md) property directly.
 
 Conversely, directly modifying the transform of a dynamic body has no effect because the physics simulation overwrites it on every frame.
 
@@ -32,7 +33,8 @@ Conversely, directly modifying the transform of a dynamic body has no effect bec
 
 ## See Also
 
-- [func resetPhysicsTransform(recursive: Bool)](hasphysicsbody/resetphysicstransform(recursive:).md)
+### Resetting physics simulations
+- [func resetPhysicsTransform(recursive: Bool)](./resetphysicstransform%28recursive%29.md)
   Resets the position, orientation, and velocities of the simulated physics body.
 
 

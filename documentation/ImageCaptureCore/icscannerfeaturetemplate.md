@@ -1,7 +1,8 @@
 # ICScannerFeatureTemplate
 
 **Framework**: ImageCaptureCore  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A group of one or more rectangular scan areas that can be used with a scanner functional unit.
 
@@ -14,34 +15,39 @@ A group of one or more rectangular scan areas that can be used with a scanner fu
 class ICScannerFeatureTemplate
 ```
 
+```objc
+@interface ICScannerFeatureTemplate : ICScannerFeature
+```
+
 ## Topics
 
 ### Instance Properties
-- [var targets: [NSMutableArray]](icscannerfeaturetemplate/targets.md)
+- [var targets: [NSMutableArray]](./icscannerfeaturetemplate/targets.md)
 
 ## Relationships
 
 ### Inherits From
-- [ICScannerFeature](icscannerfeature.md)
+- [ICScannerFeature](./icscannerfeature.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ICScannerFeature](icscannerfeature.md)
+### Features
+- [class ICScannerFeature](./icscannerfeature.md)
   An abstract class that describes a scanner feature.
-- [class ICScannerFeatureBoolean](icscannerfeatureboolean.md)
+- [class ICScannerFeatureBoolean](./icscannerfeatureboolean.md)
   A feature with a value of `YES` or `NO`.
-- [class ICScannerFeatureEnumeration](icscannerfeatureenumeration.md)
+- [class ICScannerFeatureEnumeration](./icscannerfeatureenumeration.md)
   A feature that can have one of several discrete values, strings or numbers.
-- [class ICScannerFeatureRange](icscannerfeaturerange.md)
+- [class ICScannerFeatureRange](./icscannerfeaturerange.md)
   A feature with a value that lies within a range.
-- [enum ICScannerFeatureType](icscannerfeaturetype.md)
+- [enum ICScannerFeatureType](./icscannerfeaturetype.md)
   The types of scanner features.
 
 

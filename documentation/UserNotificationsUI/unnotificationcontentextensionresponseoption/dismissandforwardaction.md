@@ -1,7 +1,8 @@
 # UNNotificationContentExtensionResponseOption.dismissAndForwardAction
 
 **Framework**: User Notifications UI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Dismiss the notification interface and forward the notification to the app.
 
@@ -18,15 +19,20 @@ Dismiss the notification interface and forward the notification to the app.
 case dismissAndForwardAction
 ```
 
+```c
+UNNotificationContentExtensionResponseOptionDismissAndForwardAction
+```
+
 #### Discussion
 
 Choose this option when you want the app to respond to the action or handle it.
 
 ## See Also
 
-- [UNNotificationContentExtensionResponseOption.doNotDismiss](unnotificationcontentextensionresponseoption/donotdismiss.md)
+### Response Options
+- [UNNotificationContentExtensionResponseOption.doNotDismiss](./donotdismiss.md)
   Don’t dismiss the notification interface.
-- [UNNotificationContentExtensionResponseOption.dismiss](unnotificationcontentextensionresponseoption/dismiss.md)
+- [UNNotificationContentExtensionResponseOption.dismiss](./dismiss.md)
   Dismiss the notification interface.
 
 

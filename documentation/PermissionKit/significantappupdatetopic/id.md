@@ -1,7 +1,8 @@
 # id
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The unique identifier the system uses to categorize this topic type.
 
@@ -24,7 +25,8 @@ The system uses this identifier to group related permission requests and ensure 
 
 ## See Also
 
-- [let description: String](significantappupdatetopic/description.md)
+### Accessing properties
+- [let description: String](./description.md)
   A description of the significant update that initiates the permission question.
 
 

@@ -1,7 +1,8 @@
 # Image
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A texture referencing a 2D image file.
 
@@ -15,7 +16,112 @@ A texture referencing a 2D image file.
 
 #### Parameter Types
 
-#### Parameter Descriptions
+**Image (float)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Float |
+| `Texture Coordinates` | Vector2f |
+| `Uaddressmode` | String |
+| `Vaddressmode` | String |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Image (vector3f)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Vector3f |
+| `Texture Coordinates` | Vector2f |
+| `Uaddressmode` | String |
+| `Vaddressmode` | String |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+**Image (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Color3 |
+| `Texture Coordinates` | Vector2f |
+| `Uaddressmode` | String |
+| `Vaddressmode` | String |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Image (half)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Half |
+| `Texture Coordinates` | Vector2f |
+| `Uaddressmode` | String |
+| `Vaddressmode` | String |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Half |
+
+**Image (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Color4 |
+| `Texture Coordinates` | Vector2f |
+| `Uaddressmode` | String |
+| `Vaddressmode` | String |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Image (vector2f)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Vector2f |
+| `Texture Coordinates` | Vector2f |
+| `Uaddressmode` | String |
+| `Vaddressmode` | String |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Image (vector4f)**:
+
+| Input | Type |
+| --- | --- |
+| `File` | AssetPath |
+| `Default` | Vector4f |
+| `Texture Coordinates` | Vector2f |
+| `Uaddressmode` | String |
+| `Vaddressmode` | String |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+#### Parameter descriptions
 
 - **`File`**: The image file to use for the texture.
 - **`Default`**: The default value to use if the ​file​ reference fails to resolve.
@@ -33,21 +139,30 @@ The Image node creates a material from an image file. This node samples data fro
 - periodic: Texture coordinates outside the normal range will “wrap around.” This behavior is effectively equivalent to applying modulo 1 to the coordinates.
 - mirror: Texture coordinates outside the normal range will be mirrored.
 
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/ImageAddressMode1.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/ImageAddressMode2.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/ImageAddressMode3.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/ImageAddressMode4.png)
+
 Below is an example of a simple node graph that uses the Image node to create a material from an image:
 
-![None](/images/ShaderGraph-Docs/ImageGraph.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/ImageGraph.png)
 
 Below, the resulting texture applies to a cube:
 
-![None](/images/ShaderGraph-Docs/ImageMaterial.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/ImageMaterial.png)
 
 ## See Also
 
-- [Tiled Image](2d-texture/tiled-image.md)
+### Nodes
+- [Tiled Image](./tiled-image.md)
   Samples data from an image with provisions for offsetting and tiling in UV space.
-- [UV Texture](2d-texture/uv-texture.md)
+- [UV Texture](./uv-texture.md)
   A MaterialX version of USD UV Texture reader.
-- [Transform 2D](2d-texture/transform-2d.md)
+- [Transform 2D](./transform-2d.md)
   A node that applies an affine transformation to a 2d input.
 
 

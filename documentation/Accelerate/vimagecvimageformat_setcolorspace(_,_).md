@@ -1,7 +1,8 @@
 # vImageCVImageFormat_SetColorSpace(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the color space of a Core Video image format.
 
@@ -20,9 +21,13 @@ Sets the color space of a Core Video image format.
 func vImageCVImageFormat_SetColorSpace(_ format: vImageCVImageFormat, _ colorspace: CGColorSpace!) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageCVImageFormat_SetColorSpace(vImageCVImageFormatRef format, CGColorSpaceRef colorspace);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -37,9 +42,11 @@ For YpCbCr images, the color space describes the image encoding of the RGB image
 
 ## See Also
 
-- [var colorSpace: CGColorSpace?](vimagecvimageformat/colorspace.md)
+### Related Documentation
+- [var colorSpace: CGColorSpace?](./vimagecvimageformat/colorspace.md)
   The color space of the Core Video image format.
-- [func vImageCVImageFormat_GetColorSpace(vImageConstCVImageFormat) -> Unmanaged<CGColorSpace>!](vimagecvimageformat_getcolorspace(_:).md)
+### Querying and setting the color space
+- [func vImageCVImageFormat_GetColorSpace(vImageConstCVImageFormat) -> Unmanaged<CGColorSpace>!](./vimagecvimageformat_getcolorspace%28_%29.md)
   Returns the color space of a Core Video image format.
 
 

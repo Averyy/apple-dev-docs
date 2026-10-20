@@ -1,18 +1,19 @@
 # AVMetadataKeySpace
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines a metadata key space.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,60 +21,65 @@ A structure that defines a metadata key space.
 struct AVMetadataKeySpace
 ```
 
+```c
+typedef NSString * AVMetadataKeySpace;
+```
+
 ## Topics
 
 ### Common key space
-- [static let common: AVMetadataKeySpace](avmetadatakeyspace/common.md)
+- [static let common: AVMetadataKeySpace](./avmetadatakeyspace/common.md)
   The common key space.
 ### Format-specific key spaces
-- [static let audioFile: AVMetadataKeySpace](avmetadatakeyspace/audiofile.md)
+- [static let audioFile: AVMetadataKeySpace](./avmetadatakeyspace/audiofile.md)
   The AudioToolbox audio file key space.
-- [static let hlsDateRange: AVMetadataKeySpace](avmetadatakeyspace/hlsdaterange.md)
+- [static let hlsDateRange: AVMetadataKeySpace](./avmetadatakeyspace/hlsdaterange.md)
   The HTTP Live Streaming key space.
-- [static let iTunes: AVMetadataKeySpace](avmetadatakeyspace/itunes.md)
+- [static let iTunes: AVMetadataKeySpace](./avmetadatakeyspace/itunes.md)
   The iTunes key space.
-- [static let icy: AVMetadataKeySpace](avmetadatakeyspace/icy.md)
+- [static let icy: AVMetadataKeySpace](./avmetadatakeyspace/icy.md)
   The Icecast/ShoutCAST streaming key space.
-- [static let id3: AVMetadataKeySpace](avmetadatakeyspace/id3.md)
+- [static let id3: AVMetadataKeySpace](./avmetadatakeyspace/id3.md)
   The ID3 key space.
-- [static let isoUserData: AVMetadataKeySpace](avmetadatakeyspace/isouserdata.md)
+- [static let isoUserData: AVMetadataKeySpace](./avmetadatakeyspace/isouserdata.md)
   The ISO key space.
-- [static let quickTimeMetadata: AVMetadataKeySpace](avmetadatakeyspace/quicktimemetadata.md)
+- [static let quickTimeMetadata: AVMetadataKeySpace](./avmetadatakeyspace/quicktimemetadata.md)
   The QuickTime metadata key space.
-- [static let quickTimeUserData: AVMetadataKeySpace](avmetadatakeyspace/quicktimeuserdata.md)
+- [static let quickTimeUserData: AVMetadataKeySpace](./avmetadatakeyspace/quicktimeuserdata.md)
   The QuickTime user data key space.
 ### Initializers
-- [init(String)](avmetadatakeyspace/init(_:).md)
+- [init(String)](./avmetadatakeyspace/init%28_%29.md)
   Creates a key space with a string.
-- [init(rawValue: String)](avmetadatakeyspace/init(rawvalue:).md)
+- [init(rawValue: String)](./avmetadatakeyspace/init%28rawvalue%29.md)
   Creates a key space with a raw string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Retrieving media metadata](retrieving-media-metadata.md)
+### Metadata
+- [Retrieving media metadata](./retrieving-media-metadata.md)
   Load descriptive metadata for media assets and their tracks.
-- [class AVMetadataItem](avmetadataitem.md)
+- [class AVMetadataItem](./avmetadataitem.md)
   A metadata item for an audiovisual asset or one of its tracks.
-- [class AVMutableMetadataItem](avmutablemetadataitem.md)
+- [class AVMutableMetadataItem](./avmutablemetadataitem.md)
   A mutable metadata item for an audiovisual asset or for one of its tracks.
-- [struct AVMetadataIdentifier](avmetadataidentifier.md)
+- [struct AVMetadataIdentifier](./avmetadataidentifier.md)
   A structure that defines identifiers for metadata formats.
-- [struct AVMetadataKey](avmetadatakey.md)
+- [struct AVMetadataKey](./avmetadatakey.md)
   A structure that defines a metadata key.
-- [struct AVMetadataExtraAttributeKey](avmetadataextraattributekey.md)
+- [struct AVMetadataExtraAttributeKey](./avmetadataextraattributekey.md)
   A structure that defines keys for extra metadata attributes.
-- [struct AVMetadataFormat](avmetadataformat.md)
+- [struct AVMetadataFormat](./avmetadataformat.md)
   A structure that defines metadata formats.
-- [class AVMetadataItemFilter](avmetadataitemfilter.md)
+- [class AVMetadataItemFilter](./avmetadataitemfilter.md)
   An object that filters selected information from a metadata item.
 
 

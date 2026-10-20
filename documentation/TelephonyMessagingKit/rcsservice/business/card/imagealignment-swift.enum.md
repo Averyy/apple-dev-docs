@@ -1,7 +1,8 @@
 # RCSService.Business.Card.ImageAlignment
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Image alignment within a card.
 
@@ -17,40 +18,41 @@ enum ImageAlignment
 ## Topics
 
 ### Determining image alignment
-- [RCSService.Business.Card.ImageAlignment.left](rcsservice/business/card/imagealignment-swift.enum/left.md)
+- [RCSService.Business.Card.ImageAlignment.left](./imagealignment-swift.enum/left.md)
   Left alignment.
-- [RCSService.Business.Card.ImageAlignment.right](rcsservice/business/card/imagealignment-swift.enum/right.md)
+- [RCSService.Business.Card.ImageAlignment.right](./imagealignment-swift.enum/right.md)
   Right alignment.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let content: RCSService.Business.Card.Content](rcsservice/business/card/content-swift.property.md)
+### Accessing card properties
+- [let content: RCSService.Business.Card.Content](./content-swift.property.md)
   Content of card.
-- [RCSService.Business.Card.Content](rcsservice/business/card/content-swift.struct.md)
+- [RCSService.Business.Card.Content](./content-swift.struct.md)
   Structure containing the contents of a card.
-- [let titleFontStyle: RCSService.Business.Card.FontStyle](rcsservice/business/card/titlefontstyle.md)
+- [let titleFontStyle: RCSService.Business.Card.FontStyle](./titlefontstyle.md)
   Style to use for title.
-- [let descriptionFontStyle: RCSService.Business.Card.FontStyle](rcsservice/business/card/descriptionfontstyle.md)
+- [let descriptionFontStyle: RCSService.Business.Card.FontStyle](./descriptionfontstyle.md)
   Style to use for description.
-- [RCSService.Business.Card.FontStyle](rcsservice/business/card/fontstyle.md)
+- [RCSService.Business.Card.FontStyle](./fontstyle.md)
   Structure representing font style attributes in a card.
-- [let imageAlignment: RCSService.Business.Card.ImageAlignment?](rcsservice/business/card/imagealignment-swift.property.md)
+- [let imageAlignment: RCSService.Business.Card.ImageAlignment?](./imagealignment-swift.property.md)
   Image alignment of card.
-- [let orientation: RCSService.Business.Card.Orientation](rcsservice/business/card/orientation-swift.property.md)
+- [let orientation: RCSService.Business.Card.Orientation](./orientation-swift.property.md)
   The orientation to use when displaying the card.
-- [RCSService.Business.Card.Orientation](rcsservice/business/card/orientation-swift.enum.md)
+- [RCSService.Business.Card.Orientation](./orientation-swift.enum.md)
   Enumeration indicating the orientation of a card.
-- [let styleSheetURL: URL?](rcsservice/business/card/stylesheeturl.md)
+- [let styleSheetURL: URL?](./stylesheeturl.md)
   A URL to a CSS for the rendering of the card.
 
 

@@ -1,7 +1,8 @@
 # applyFillProperties(to:atZoomScale:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the receiver’s fill-related drawing properties to the specified graphics context.
 
@@ -19,6 +20,10 @@ Applies the receiver’s fill-related drawing properties to the specified graphi
 func applyFillProperties(to context: CGContext, atZoomScale zoomScale: MKZoomScale)
 ```
 
+```objc
+- (void) applyFillPropertiesToContext:(CGContextRef) context atZoomScale:(MKZoomScale) zoomScale;
+```
+
 #### Discussion
 
 This is a convenience method for applying all of the drawing properties used when filling a path. This method applies the current fill color to the specified graphics context.
@@ -30,13 +35,14 @@ This is a convenience method for applying all of the drawing properties used whe
 
 ## See Also
 
-- [func applyStrokeProperties(to: CGContext, atZoomScale: MKZoomScale)](mkoverlaypathrenderer/applystrokeproperties(to:atzoomscale:).md)
+### Drawing the path
+- [func applyStrokeProperties(to: CGContext, atZoomScale: MKZoomScale)](./applystrokeproperties%28to,atzoomscale%29.md)
   Applies the renderer’s stroke-related drawing properties to the specified graphics context.
-- [func strokePath(CGPath, in: CGContext)](mkoverlaypathrenderer/strokepath(_:in:).md)
+- [func strokePath(CGPath, in: CGContext)](./strokepath%28_,in%29.md)
   Draws a line along the specified path.
-- [func fillPath(CGPath, in: CGContext)](mkoverlaypathrenderer/fillpath(_:in:).md)
+- [func fillPath(CGPath, in: CGContext)](./fillpath%28_,in%29.md)
   Fills the area that the specified path encloses.
-- [var shouldRasterize: Bool](mkoverlaypathrenderer/shouldrasterize.md)
+- [var shouldRasterize: Bool](./shouldrasterize.md)
   A Boolean value that determines whether the overlay path renderer renders the overlay as a bitmap before compositing.
 
 

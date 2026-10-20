@@ -1,7 +1,8 @@
 # extracting(unchecked:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Constructs a new span over the bytes within the supplied range of positions within this span.
 
@@ -32,7 +33,7 @@ The returned span’s first item is always at offset 0; unlike buffer slices, ex
 
 This function does not validate `bounds`; this is an unsafe operation.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

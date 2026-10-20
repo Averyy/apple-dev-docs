@@ -1,7 +1,8 @@
 # MTRPowerSourceBatCommonDesignation.designation25500
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.5+
@@ -16,6 +17,10 @@
 
 ```swift
 case designation25500
+```
+
+```c
+MTRPowerSourceBatCommonDesignation25500
 ```
 
 

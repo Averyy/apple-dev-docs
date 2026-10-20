@@ -1,7 +1,8 @@
 # DatePicker
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control for selecting an absolute date.
 
@@ -22,13 +23,13 @@ struct DatePicker<Label> where Label : View
 
 ## Mentions
 
-- [Laying out a simple view](laying-out-a-simple-view.md)
+- [Laying out a simple view](./laying-out-a-simple-view.md)
 
 #### Overview
 
-Use a `DatePicker` when you want to provide a view that allows the user to select a calendar date, and optionally a time. The view binds to a [`Date`](https://developer.apple.com/documentation/foundation/date) instance.
+Use a `DatePicker` when you want to provide a view that allows the user to select a calendar date, and optionally a time. The view binds to a [`Date`](../Foundation/date.md) instance.
 
-The following example creates a basic `DatePicker`, which appears on iOS as text representing the date. This example limits the display to only the calendar date, not the time. When the user taps or clicks the text, a calendar view animates in, from which the user can select a date. When the user dismisses the calendar view, the view updates the bound [`Date`](https://developer.apple.com/documentation/foundation/date).
+The following example creates a basic `DatePicker`, which appears on iOS as text representing the date. This example limits the display to only the calendar date, not the time. When the user taps or clicks the text, a calendar view animates in, from which the user can select a date. When the user dismisses the calendar view, the view updates the bound [`Date`](../Foundation/date.md).
 
 ```swift
 @State private var date = Date()
@@ -42,7 +43,7 @@ var body: some View {
 }
 ```
 
-![An iOS date picker, consisting of a label that says Start Date, and a](/images/com.apple.SwiftUI/SwiftUI-DatePicker-basic@2x.png)
+![An iOS date picker, consisting of a label that says Start Date, and a](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-DatePicker-basic@2x.png)
 
 For cases where adding a subtitle to the label is desired, use a view builder that creates multiple `Text` views where the first text represents the title and the second text represents the subtitle:
 
@@ -80,11 +81,11 @@ var body: some View {
 }
 ```
 
-![A SwiftUI standard date picker on iOS, with the label Start Date, and](/images/com.apple.SwiftUI/SwiftUI-DatePicker-selectFromRange@2x.png)
+![A SwiftUI standard date picker on iOS, with the label Start Date, and](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-DatePicker-selectFromRange@2x.png)
 
-##### Styling Date Pickers
+##### Styling date pickers
 
-To use a different style of date picker, use the [`datePickerStyle(_:)`](view/datepickerstyle(_:).md) view modifier. The following example shows the graphical date picker style.
+To use a different style of date picker, use the [`datePickerStyle(_:)`](./view/datepickerstyle%28_%29.md) view modifier. The following example shows the graphical date picker style.
 
 ```swift
 @State private var date = Date()
@@ -99,39 +100,40 @@ var body: some View {
 }
 ```
 
-![A SwiftUI date picker using the graphical style, with the label Start Date](/images/com.apple.SwiftUI/SwiftUI-DatePicker-graphicalStyle@2x.png)
+![A SwiftUI date picker using the graphical style, with the label Start Date](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-DatePicker-graphicalStyle@2x.png)
 
 ## Topics
 
 ### Creating a date picker for any date
-- [init(_:selection:displayedComponents:)](datepicker/init(_:selection:displayedcomponents:).md)
+- [init(_:selection:displayedComponents:)](./datepicker/init%28_,selection,displayedcomponents%29.md)
   Creates an instance that selects a `Date` with an unbounded range.
-- [init(selection: Binding<Date>, displayedComponents: DatePicker<Label>.Components, label: () -> Label)](datepicker/init(selection:displayedcomponents:label:).md)
+- [init(selection: Binding<Date>, displayedComponents: DatePicker<Label>.Components, label: () -> Label)](./datepicker/init%28selection,displayedcomponents,label%29.md)
   Creates an instance that selects a `Date` with an unbounded range.
 ### Creating a date picker for specific dates
-- [init(_:selection:in:displayedComponents:)](datepicker/init(_:selection:in:displayedcomponents:).md)
+- [init(_:selection:in:displayedComponents:)](./datepicker/init%28_,selection,in,displayedcomponents%29.md)
   Creates an instance that selects a `Date` in a closed range.
-- [init(selection:in:displayedComponents:label:)](datepicker/init(selection:in:displayedcomponents:label:).md)
+- [init(selection:in:displayedComponents:label:)](./datepicker/init%28selection,in,displayedcomponents,label%29.md)
   Creates an instance that selects a `Date` in a closed range.
 ### Setting date picker components
-- [DatePicker.Components](datepicker/components.md)
-- [struct DatePickerComponents](datepickercomponents.md)
+- [DatePicker.Components](./datepicker/components.md)
+- [struct DatePickerComponents](./datepickercomponents.md)
   The date and time components that a date picker shows.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [func datePickerStyle<S>(S) -> some View](view/datepickerstyle(_:).md)
+### Choosing dates
+- [func datePickerStyle<S>(S) -> some View](./view/datepickerstyle%28_%29.md)
   Sets the style for date pickers within this view.
-- [struct MultiDatePicker](multidatepicker.md)
+- [struct MultiDatePicker](./multidatepicker.md)
   A control for picking multiple dates.
-- [var calendar: Calendar](environmentvalues/calendar.md)
+- [var calendar: Calendar](./environmentvalues/calendar.md)
   The current calendar that views should use when handling dates.
-- [var timeZone: TimeZone](environmentvalues/timezone.md)
+- [var timeZone: TimeZone](./environmentvalues/timezone.md)
   The current time zone that views should use when handling dates.
 
 

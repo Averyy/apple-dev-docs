@@ -1,7 +1,8 @@
 # serviceType
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the service.
 
@@ -19,15 +20,20 @@ The type of the service.
 var serviceType: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * serviceType;
+```
+
 #### Discussion
 
-The [`serviceType`](hmservice/servicetype.md) property contains a string that indicates what the service does. See [`Accessory Service Types`](accessory-service-types.md) for a list of possible service types.
+The [`serviceType`](./servicetype.md) property contains a string that indicates what the service does. See [Accessory Service Types](../accessory-service-types.md) for a list of possible service types.
 
 ## See Also
 
-- [Accessory Service Types](accessory-service-types.md)
+### Getting the service type
+- [Accessory Service Types](../accessory-service-types.md)
   The service types supported by HomeKit.
-- [var localizedDescription: String](hmservice/localizeddescription.md)
+- [var localizedDescription: String](./localizeddescription.md)
   The localized description of the service.
 
 

@@ -1,7 +1,8 @@
 # MediaIntelligenceVideoAsset.Kind.url(_:)
 
 **Framework**: Media Intelligence  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A video located at the specified URL.
 
@@ -21,7 +22,7 @@ case url(URL)
 
 ## Mentions
 
-- [Finding the best moments in a video](finding-the-best-moments-in-a-video.md)
+- [Finding the best moments in a video](../../finding-the-best-moments-in-a-video.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # searchCompletion(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates a fully formed string with the value of this view when used as a search suggestion.
 
@@ -21,9 +22,16 @@ nonisolated
 func searchCompletion(_ completion: String) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func searchCompletion<T>(_ token: T) -> some View where T : Identifiable
+```
+
 ## Mentions
 
-- [Suggesting search terms](suggesting-search-terms.md)
+- [Suggesting search terms](../suggesting-search-terms.md)
 
 #### Discussion
 
@@ -46,15 +54,16 @@ SearchPlaceholderView()
 
 ## See Also
 
-- [Suggesting search terms](suggesting-search-terms.md)
+### Making search suggestions
+- [Suggesting search terms](../suggesting-search-terms.md)
   Provide suggestions to people searching for content in your app.
-- [func searchSuggestions<S>(() -> S) -> some View](view/searchsuggestions(_:).md)
+- [func searchSuggestions<S>(() -> S) -> some View](./searchsuggestions%28_%29.md)
   Configures the search suggestions for this view.
-- [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](view/searchsuggestions(_:for:).md)
+- [func searchSuggestions(Visibility, for: SearchSuggestionsPlacement.Set) -> some View](./searchsuggestions%28_,for%29.md)
   Configures how to display search suggestions within this view.
-- [func searchable(text:tokens:suggestedTokens:placement:prompt:token:)](view/searchable(text:tokens:suggestedtokens:placement:prompt:token:).md)
+- [func searchable(text:tokens:suggestedTokens:placement:prompt:token:)](./searchable%28text,tokens,suggestedtokens,placement,prompt,token%29.md)
   Marks this view as searchable with text, tokens, and suggestions.
-- [struct SearchSuggestionsPlacement](searchsuggestionsplacement.md)
+- [struct SearchSuggestionsPlacement](../searchsuggestionsplacement.md)
   The ways that SwiftUI displays search suggestions.
 
 

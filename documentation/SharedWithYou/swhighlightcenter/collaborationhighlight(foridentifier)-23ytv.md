@@ -1,7 +1,8 @@
 # collaborationHighlight(forIdentifier:)
 
 **Framework**: Shared with You  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a collaboration highlight for a specified collaboration identifier.
 
@@ -18,25 +19,30 @@ Returns a collaboration highlight for a specified collaboration identifier.
 func collaborationHighlight(forIdentifier collaborationIdentifier: SWCollaborationIdentifier) throws -> SWCollaborationHighlight
 ```
 
+```objc
+- (SWCollaborationHighlight *) collaborationHighlightForIdentifier:(SWCollaborationIdentifier) collaborationIdentifier error:(NSError **) error;
+```
+
 #### Return Value
 
 The `SWCollaborationHighlight` associated with the `identifier`.
 
 ## Parameters
 
-- `collaborationIdentifier`: The unique identifier that the system uses to find the [`SWCollaborationHighlight`](swcollaborationhighlight.md).
+- `collaborationIdentifier`: The unique identifier that the system uses to find the [`SWCollaborationHighlight`](../swcollaborationhighlight.md).
 
 ## See Also
 
-- [class var isSystemCollaborationSupportAvailable: Bool](swhighlightcenter/issystemcollaborationsupportavailable.md)
+### Retrieving collaboration highlights
+- [class var isSystemCollaborationSupportAvailable: Bool](./issystemcollaborationsupportavailable.md)
   A Boolean value that represents full support for Messages collaboration features.
-- [func collaborationHighlight(forIdentifier: String) throws -> SWCollaborationHighlight](swhighlightcenter/collaborationhighlight(foridentifier:)-87lhr.md)
+- [func collaborationHighlight(forIdentifier: String) throws -> SWCollaborationHighlight](./collaborationhighlight%28foridentifier%29-87lhr.md)
   Returns a collaboration highlight for a specified identifier string.
-- [func getCollaborationHighlight(for: URL, completionHandler: (SWCollaborationHighlight?, (any Error)?) -> Void)](swhighlightcenter/getcollaborationhighlight(for:completionhandler:).md)
+- [func getCollaborationHighlight(for: URL, completionHandler: (SWCollaborationHighlight?, (any Error)?) -> Void)](./getcollaborationhighlight%28for,completionhandler%29.md)
   Returns a collaboration highlight for a specified URL.
-- [func getHighlightFor(URL, completionHandler: (SWHighlight?, (any Error)?) -> Void)](swhighlightcenter/gethighlightfor(_:completionhandler:).md)
+- [func getHighlightFor(URL, completionHandler: (SWHighlight?, (any Error)?) -> Void)](./gethighlightfor%28_,completionhandler%29.md)
   Returns a highlight for a specified URL.
-- [func getSignedIdentityProof(for: SWCollaborationHighlight, using: Data, completionHandler: (SWPerson.SignedIdentityProof?, (any Error)?) -> Void)](swhighlightcenter/getsignedidentityproof(for:using:completionhandler:).md)
+- [func getSignedIdentityProof(for: SWCollaborationHighlight, using: Data, completionHandler: (SWPerson.SignedIdentityProof?, (any Error)?) -> Void)](./getsignedidentityproof%28for,using,completionhandler%29.md)
   Signs passed-in data with the local device’s private key.
 
 

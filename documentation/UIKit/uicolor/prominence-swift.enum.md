@@ -1,7 +1,8 @@
 # UIColor.Prominence
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that indicates the prominence of a color in the interface.
 
@@ -18,9 +19,13 @@ A type that indicates the prominence of a color in the interface.
 enum Prominence
 ```
 
+```c
+enum UIColorProminence : NSInteger;
+```
+
 #### Overview
 
-Interface elements, such as text labels, can have a different level of prominence in the UI. For example, a title label appears more prominently than a subtitle or caption. When you specify a label’s color, you can pass one of the [`UIColor.Prominence`](uicolor/prominence-swift.enum.md) constants to [`withProminence(_:)`](uicolor/withprominence(_:).md) to communicate how prominently to display that color in the UI.
+Interface elements, such as text labels, can have a different level of prominence in the UI. For example, a title label appears more prominently than a subtitle or caption. When you specify a label’s color, you can pass one of the [`UIColor.Prominence`](./prominence-swift.enum.md) constants to [`withProminence(_:)`](./withprominence%28_%29.md) to communicate how prominently to display that color in the UI.
 
 The following code creates a label with a secondary, vibrant red color:
 
@@ -33,31 +38,32 @@ label.textColor = .systemRed.withProminence(.secondary)
 ## Topics
 
 ### Constants
-- [UIColor.Prominence.primary](uicolor/prominence-swift.enum/primary.md)
+- [UIColor.Prominence.primary](./prominence-swift.enum/primary.md)
   A color with a primary prominence, the most prominent in the interface.
-- [UIColor.Prominence.secondary](uicolor/prominence-swift.enum/secondary.md)
+- [UIColor.Prominence.secondary](./prominence-swift.enum/secondary.md)
   A color with a secondary prominence.
-- [UIColor.Prominence.tertiary](uicolor/prominence-swift.enum/tertiary.md)
+- [UIColor.Prominence.tertiary](./prominence-swift.enum/tertiary.md)
   A color with a tertiary prominence.
-- [UIColor.Prominence.quaternary](uicolor/prominence-swift.enum/quaternary.md)
+- [UIColor.Prominence.quaternary](./prominence-swift.enum/quaternary.md)
   A color with a quaternary prominence, the least prominent in the interface.
 ### Initializers
-- [init?(rawValue: Int)](uicolor/prominence-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./prominence-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var prominence: UIColor.Prominence](uicolor/prominence-swift.property.md)
-- [func withProminence(UIColor.Prominence) -> UIColor](uicolor/withprominence(_:).md)
+### Working with color prominence
+- [var prominence: UIColor.Prominence](./prominence-swift.property.md)
+- [func withProminence(UIColor.Prominence) -> UIColor](./withprominence%28_%29.md)
   Returns the version of the current color that results from applying the specified prominence.
 
 

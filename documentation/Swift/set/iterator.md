@@ -1,7 +1,8 @@
 # Set.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator over the members of a `Set<Element>`.
 
@@ -21,25 +22,28 @@ An iterator over the members of a `Set<Element>`.
 struct Iterator
 ```
 
+Available when `Element` conforms to `Hashable`.
+
 ## Topics
 
 ### Default Implementations
-- [CustomReflectable Implementations](set/iterator/customreflectable-implementations.md)
-- [IteratorProtocol Implementations](set/iterator/iteratorprotocol-implementations.md)
+- [CustomReflectable Implementations](./iterator/customreflectable-implementations.md)
+- [IteratorProtocol Implementations](./iterator/iteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
-- [CustomReflectable](customreflectable.md)
-- [Escapable](escapable.md)
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Copyable](../copyable.md)
+- [CustomReflectable](../customreflectable.md)
+- [Escapable](../escapable.md)
+- [IteratorProtocol](../iteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 ## See Also
 
-- [struct Index](set/index.md)
+### Supporting Types
+- [struct Index](./index.md)
   The position of an element in a set.
 
 

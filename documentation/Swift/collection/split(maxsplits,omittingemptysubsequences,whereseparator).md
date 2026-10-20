@@ -1,7 +1,8 @@
 # split(maxSplits:omittingEmptySubsequences:whereSeparator:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the longest possible subsequences of the collection, in order, that don’t contain elements satisfying the given predicate.
 
@@ -50,7 +51,7 @@ print(line.split(omittingEmptySubsequences: false, whereSeparator: { $0 == " " }
 // Prints "["BLANCHE:", "", "", "I", "don\'t", "want", "realism.", "I", "want", "magic!"]"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
@@ -60,9 +61,10 @@ print(line.split(omittingEmptySubsequences: false, whereSeparator: { $0 == " " }
 
 ## See Also
 
-- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](collection/split(separator:maxsplits:omittingemptysubsequences:)-6c22.md)
+### Splitting and Joining Elements
+- [func split(separator: Self.Element, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](./split%28separator,maxsplits,omittingemptysubsequences%29-6c22.md)
   Returns the longest possible subsequences of the collection, in order, around elements equal to the given element.
-- [func split<C>(separator: C, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](collection/split(separator:maxsplits:omittingemptysubsequences:)-9esbr.md)
+- [func split<C>(separator: C, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Self.SubSequence]](./split%28separator,maxsplits,omittingemptysubsequences%29-9esbr.md)
   Returns the longest possible subsequences of the collection, in order, around elements equal to the given separator.
 
 

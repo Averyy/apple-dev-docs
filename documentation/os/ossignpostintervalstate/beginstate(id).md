@@ -1,7 +1,8 @@
 # beginState(id:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Recreates interval state from the specified signpost ID.
 
@@ -11,7 +12,7 @@ Recreates interval state from the specified signpost ID.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration

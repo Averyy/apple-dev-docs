@@ -1,7 +1,8 @@
 # NDArray.ScalarType.float32
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 32-bit floating-point type.
 
@@ -20,15 +21,16 @@ case float32
 
 ## Mentions
 
-- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+- [Integrating on-device AI models in your app with Core AI](../../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
 ## See Also
 
-- [NDArray.ScalarType.float16](ndarray/scalartype-swift.enum/float16.md)
+### Defining floating-point types
+- [NDArray.ScalarType.float16](./float16.md)
   A 16-bit floating-point type.
-- [NDArray.ScalarType.float64](ndarray/scalartype-swift.enum/float64.md)
+- [NDArray.ScalarType.float64](./float64.md)
   A 64-bit floating-point type.
-- [NDArray.ScalarType.bfloat16](ndarray/scalartype-swift.enum/bfloat16.md)
+- [NDArray.ScalarType.bfloat16](./bfloat16.md)
   A 16-bit brain floating-point type.
 
 

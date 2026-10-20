@@ -1,11 +1,14 @@
 # canceledLogin
 
 **Framework**: Safari Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 11.0+
-- iPadOS 11.0+
+- iOS 11.0+ - Deprecated in 12.0
+- iPadOS 11.0+ - Deprecated in 12.0
+
+> **Deprecated**: Use ASWebAuthenticationSessionErrorCode instead
 
 ## Declaration
 

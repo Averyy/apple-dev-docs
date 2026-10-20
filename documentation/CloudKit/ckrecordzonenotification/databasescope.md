@@ -1,7 +1,8 @@
 # databaseScope
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of database for the record zone.
 
@@ -20,9 +21,13 @@ The type of database for the record zone.
 var databaseScope: CKDatabase.Scope { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CKDatabaseScope databaseScope;
+```
+
 #### Discussion
 
-This property’s value is one of the constants that [`CKDatabase.Scope`](ckdatabase/scope.md) defines.
+This property’s value is one of the constants that [`CKDatabase.Scope`](../ckdatabase/scope.md) defines.
 
 
 ---

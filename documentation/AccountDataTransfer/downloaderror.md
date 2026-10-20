@@ -1,7 +1,8 @@
 # DownloadError
 
 **Framework**: Account Data Transfer  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that describes an error the server encounters preparing download URLs for a request.
 
@@ -10,7 +11,7 @@ An object that describes an error the server encounters preparing download URLs 
 
 ## Declaration
 
-```swift
+```
 object DownloadError
 ```
 
@@ -25,15 +26,20 @@ The `statusMessage` field has one of these values:
 
 - `statusCheckDelay` (integer): The number of seconds to wait before re-requesting the status.
 - `status` (string): The outcome of the operation.
+
+  **Allowed Values**: `error`
 - `statusMessage` (string): The reason the server encountered an error.
+
+  **Allowed Values**: `in_progress`, `request_not_found`, `invalid_request_status`
 
 ## See Also
 
-- [Get one-time request download URLs](get-one-time-request-download-urls.md)
+### Downloads
+- [Get one-time request download URLs](./get-one-time-request-download-urls.md)
   Get URLs to retrieve someone’s data.
-- [Get recurring request download URLs](get-recurring-request-download-urls.md)
+- [Get recurring request download URLs](./get-recurring-request-download-urls.md)
   Get URLs to download a snapshot of someone’s data from a recurring series.
-- [object DownloadLinks](downloadlinks.md)
+- [object DownloadLinks](./downloadlinks.md)
   An object that contains URLs to download someone’s account data.
 
 

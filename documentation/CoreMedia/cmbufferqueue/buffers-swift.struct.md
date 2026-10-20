@@ -1,7 +1,8 @@
 # CMBufferQueue.Buffers
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sequence of `CMBuffer`s.
 
@@ -23,12 +24,13 @@ struct Buffers
 ## Relationships
 
 ### Conforms To
-- [Sequence](../swift/sequence.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [CMBufferQueue.Handlers](cmbufferqueue/handlers.md)
-- [CMBufferQueue.Error](cmbufferqueue/error.md)
+### Data Types
+- [CMBufferQueue.Handlers](./handlers.md)
+- [CMBufferQueue.Error](./error.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # origin
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the “slice” of noise samples contained in the noise map relative to the unit coordinate space of the noise object it was created from.
 
@@ -19,17 +20,22 @@ The position of the “slice” of noise samples contained in the noise map rela
 var origin: vector_double2 { get }
 ```
 
+```objc
+@property (nonatomic, readonly) vector_double2 origin;
+```
+
 #### Discussion
 
-This property is read-only; you define the origin of a noise map when creating it with the [`interpolatedValue(at:)`](gknoisemap/interpolatedvalue(at:).md) initializer.
+This property is read-only; you define the origin of a noise map when creating it with the [`interpolatedValue(at:)`](./interpolatedvalue%28at%29.md) initializer.
 
 ## See Also
 
-- [var size: vector_double2](gknoisemap/size.md)
+### Inspecting a Noise Map
+- [var size: vector_double2](./size.md)
   The size of the “slice” of noise samples contained in the noise map relative to the unit coordinate space of the noise object it was created from.
-- [var sampleCount: vector_int2](gknoisemap/samplecount.md)
+- [var sampleCount: vector_int2](./samplecount.md)
   The width and height of integer grid for which the noise map contains sampled noise values.
-- [var isSeamless: Bool](gknoisemap/isseamless.md)
+- [var isSeamless: Bool](./isseamless.md)
   A Boolean value indicating whether the noise map’s output can repeat seamlessly in all directions.
 
 

@@ -1,7 +1,8 @@
 # kAXDisclosedRowsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array of accessibility objects representing the disclosed rows of this user interface element.
 
@@ -12,6 +13,10 @@ An array of accessibility objects representing the disclosed rows of this user i
 
 ```swift
 var kAXDisclosedRowsAttribute: String { get }
+```
+
+```c
+#define kAXDisclosedRowsAttribute
 ```
 
 

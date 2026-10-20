@@ -1,7 +1,8 @@
 # maximumWidth(for:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The maximum width for the specified eraser type.
 
@@ -18,13 +19,18 @@ The maximum width for the specified eraser type.
 class func maximumWidth(for eraserType: __PKEraserType) -> CGFloat
 ```
 
+```objc
++ (CGFloat) maximumWidthForEraserType:(PKEraserType) eraserType;
+```
+
 ## See Also
 
-- [var width: CGFloat](pkerasertoolreference/width.md)
+### Getting the width information
+- [var width: CGFloat](./width.md)
   The width of the eraser.
-- [class func defaultWidth(for: __PKEraserType) -> CGFloat](pkerasertoolreference/defaultwidth(for:).md)
+- [class func defaultWidth(for: __PKEraserType) -> CGFloat](./defaultwidth%28for%29.md)
   The default width for the specified eraser type.
-- [class func minimumWidth(for: __PKEraserType) -> CGFloat](pkerasertoolreference/minimumwidth(for:).md)
+- [class func minimumWidth(for: __PKEraserType) -> CGFloat](./minimumwidth%28for%29.md)
   The minimum width for the specified eraser type.
 
 

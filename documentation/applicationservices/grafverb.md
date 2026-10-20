@@ -1,7 +1,8 @@
 # GrafVerb
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias GrafVerb = Int8
+```
+
+```c
+typedef SInt8 GrafVerb;
 ```
 
 

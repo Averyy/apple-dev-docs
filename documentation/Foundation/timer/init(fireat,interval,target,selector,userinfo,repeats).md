@@ -1,7 +1,8 @@
 # init(fireAt:interval:target:selector:userInfo:repeats:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a timer using the specified object and selector.
 
@@ -20,40 +21,49 @@ Initializes a timer using the specified object and selector.
 init(fireAt date: Date, interval ti: TimeInterval, target t: Any, selector s: Selector, userInfo ui: Any?, repeats rep: Bool)
 ```
 
+```objc
+- (instancetype) initWithFireDate:(NSDate *) date interval:(NSTimeInterval) ti target:(id) t selector:(SEL) s userInfo:(id) ui repeats:(BOOL) rep;
+```
+
 #### Return Value
 
-The receiver, initialized such that, when added to a run loop, it will fire at `date` and then, if `repeats` is [`true`](https://developer.apple.com/documentation/swift/true), every `ti` after that.
+The receiver, initialized such that, when added to a run loop, it will fire at `date` and then, if `repeats` is [`true`](../../Swift/true.md), every `ti` after that.
 
 #### Discussion
 
-You must add the new timer to a run loop, using [`add(_:forMode:)`](runloop/add(_:formode:)-392ag.md). Upon firing, the timer sends the message `aSelector` to `target`. (If the timer is configured to repeat, there is no need to subsequently re-add the timer to the run loop.)
+You must add the new timer to a run loop, using [`add(_:forMode:)`](../runloop/add%28_,formode%29-392ag.md). Upon firing, the timer sends the message `aSelector` to `target`. (If the timer is configured to repeat, there is no need to subsequently re-add the timer to the run loop.)
 
 ## Parameters
 
 - `date`: The time at which the timer should first fire.
 - `ti`: For a repeating timer, this parameter contains the number of seconds between firings of the timer. If `ti` is less than or equal to `0.0`, this method chooses the nonnegative value of `0.0001` seconds instead.
 - `t`: The object to which to send the message specified by `aSelector` when the timer fires. The timer maintains a strong reference to this object until it (the timer) is invalidated.
-- `s`: The message to send to `target` when the timer fires. The selector should have the following signature: `timerFireMethod:` (including a colon to indicate that the method takes an argument). The timer passes itself as the argument, thus the method would adopt the following pattern: ```objc
-- (void)timerFireMethod:(NSTimer *)timer
-```
+- `s`: The message to send to `target` when the timer fires.
+
+  The selector should have the following signature: `timerFireMethod:` (including a colon to indicate that the method takes an argument). The timer passes itself as the argument, thus the method would adopt the following pattern:
+
+  ```objc
+  - (void)timerFireMethod:(NSTimer *)timer
+  ```
 - `ui`: Custom user info for the timer. The timer maintains a strong reference to this object until it (the timer) is invalidated. This parameter may be `nil`.
-- `rep`: If [`true`](https://developer.apple.com/documentation/swift/true), the timer will repeatedly reschedule itself until invalidated. If [`false`](https://developer.apple.com/documentation/swift/false), the timer will be invalidated after it fires.
+- `rep`: If [`true`](../../Swift/true.md), the timer will repeatedly reschedule itself until invalidated. If [`false`](../../Swift/false.md), the timer will be invalidated after it fires.
 
 ## See Also
 
-- [class func scheduledTimer(withTimeInterval: TimeInterval, repeats: Bool, block: (Timer) -> Void) -> Timer](timer/scheduledtimer(withtimeinterval:repeats:block:).md)
+### Creating a Timer
+- [class func scheduledTimer(withTimeInterval: TimeInterval, repeats: Bool, block: (Timer) -> Void) -> Timer](./scheduledtimer%28withtimeinterval,repeats,block%29.md)
   Creates a timer and schedules it on the current run loop in the default mode.
-- [class func scheduledTimer(timeInterval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool) -> Timer](timer/scheduledtimer(timeinterval:target:selector:userinfo:repeats:).md)
+- [class func scheduledTimer(timeInterval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool) -> Timer](./scheduledtimer%28timeinterval,target,selector,userinfo,repeats%29.md)
   Creates a timer and schedules it on the current run loop in the default mode.
-- [class func scheduledTimer(timeInterval: TimeInterval, invocation: NSInvocation, repeats: Bool) -> Timer](timer/scheduledtimer(timeinterval:invocation:repeats:).md)
+- [class func scheduledTimer(timeInterval: TimeInterval, invocation: NSInvocation, repeats: Bool) -> Timer](./scheduledtimer%28timeinterval,invocation,repeats%29.md)
   Creates a new timer and schedules it on the current run loop in the default mode.
-- [init(timeInterval: TimeInterval, repeats: Bool, block: (Timer) -> Void)](timer/init(timeinterval:repeats:block:).md)
+- [init(timeInterval: TimeInterval, repeats: Bool, block: (Timer) -> Void)](./init%28timeinterval,repeats,block%29.md)
   Initializes a timer object with the specified time interval and block.
-- [init(timeInterval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool)](timer/init(timeinterval:target:selector:userinfo:repeats:).md)
+- [init(timeInterval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool)](./init%28timeinterval,target,selector,userinfo,repeats%29.md)
   Initializes a timer object with the specified object and selector.
-- [init(timeInterval: TimeInterval, invocation: NSInvocation, repeats: Bool)](timer/init(timeinterval:invocation:repeats:).md)
+- [init(timeInterval: TimeInterval, invocation: NSInvocation, repeats: Bool)](./init%28timeinterval,invocation,repeats%29.md)
   Initializes a timer object with the specified invocation object.
-- [convenience init(fire: Date, interval: TimeInterval, repeats: Bool, block: (Timer) -> Void)](timer/init(fire:interval:repeats:block:).md)
+- [convenience init(fire: Date, interval: TimeInterval, repeats: Bool, block: (Timer) -> Void)](./init%28fire,interval,repeats,block%29.md)
   Initializes a timer for the specified date and time interval with the specified block.
 
 

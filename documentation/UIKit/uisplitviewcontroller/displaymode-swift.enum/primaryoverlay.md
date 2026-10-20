@@ -1,15 +1,18 @@
 # primaryOverlay
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The primary view controller is layered on top of the secondary view controller, leaving the secondary view controller partially visible.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 8.0+ - Deprecated in 14.0 (renamed: UISplitViewController.DisplayMode.oneOverSecondary)
+- iPadOS 8.0+ - Deprecated in 14.0 (renamed: UISplitViewController.DisplayMode.oneOverSecondary)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: UISplitViewController.DisplayMode.oneOverSecondary)
+- tvOS - Deprecated in 14.0 (renamed: UISplitViewController.DisplayMode.oneOverSecondary)
+
+> **Deprecated**: Use [`UISplitViewController.DisplayMode.oneOverSecondary`](./oneoversecondary.md) instead.
 
 ## Declaration
 
@@ -17,11 +20,16 @@ The primary view controller is layered on top of the secondary view controller, 
 static var primaryOverlay: UISplitViewController.DisplayMode { get }
 ```
 
+```c
+UISplitViewControllerDisplayModePrimaryOverlay
+```
+
 ## See Also
 
-- [static var primaryHidden: UISplitViewController.DisplayMode](uisplitviewcontroller/displaymode-swift.enum/primaryhidden.md)
+### Deprecated
+- [static var primaryHidden: UISplitViewController.DisplayMode](./primaryhidden.md)
   The primary view controller is hidden.
-- [static var allVisible: UISplitViewController.DisplayMode](uisplitviewcontroller/displaymode-swift.enum/allvisible.md)
+- [static var allVisible: UISplitViewController.DisplayMode](./allvisible.md)
   The primary and secondary view controllers are displayed side-by-side onscreen.
 
 

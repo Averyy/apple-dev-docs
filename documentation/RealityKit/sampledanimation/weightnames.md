@@ -1,7 +1,8 @@
 # weightNames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the weights to animate.
 
@@ -18,6 +19,8 @@ The names of the weights to animate.
 ```swift
 var weightNames: [String] { get set }
 ```
+
+Available when `Value` is `BlendShapeWeights`.
 
 
 ---

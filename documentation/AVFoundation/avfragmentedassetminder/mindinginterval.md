@@ -1,7 +1,8 @@
 # mindingInterval
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An interval that specifies when to perform a check for additional fragments.
 
@@ -18,6 +19,10 @@ An interval that specifies when to perform a check for additional fragments.
 
 ```swift
 var mindingInterval: TimeInterval { get set }
+```
+
+```objc
+@property (nonatomic) NSTimeInterval mindingInterval;
 ```
 
 #### Discussion

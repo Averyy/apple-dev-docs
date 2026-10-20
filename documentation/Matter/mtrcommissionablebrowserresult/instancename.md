@@ -1,7 +1,8 @@
 # instanceName
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var instanceName: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * instanceName;
 ```
 
 

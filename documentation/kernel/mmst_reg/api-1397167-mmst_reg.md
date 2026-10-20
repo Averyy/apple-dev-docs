@@ -1,14 +1,15 @@
 # mmst_reg
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 char mmst_reg[10];
 ```
 

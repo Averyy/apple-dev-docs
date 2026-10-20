@@ -1,7 +1,8 @@
 # CSIdentityClientContext
 
 **Framework**: Core Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,18 +14,24 @@
 struct CSIdentityClientContext
 ```
 
+```c
+typedef struct CSIdentityClientContext {
+    ...
+} CSIdentityClientContext;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](csidentityclientcontext/1448614-init.md)
-- [init(version: CFIndex, info: UnsafeMutableRawPointer!, retain: CFAllocatorRetainCallBack!, release: CFAllocatorReleaseCallBack!, copyDescription: CFAllocatorCopyDescriptionCallBack!, statusUpdated: CSIdentityStatusUpdatedCallback!)](csidentityclientcontext/1792093-init.md)
+- [init()](./csidentityclientcontext/api-1448614-init.md)
+- [init(version: CFIndex, info: UnsafeMutableRawPointer!, retain: CFAllocatorRetainCallBack!, release: CFAllocatorReleaseCallBack!, copyDescription: CFAllocatorCopyDescriptionCallBack!, statusUpdated: CSIdentityStatusUpdatedCallback!)](./csidentityclientcontext/api-1792093-init.md)
 ### Instance Properties
-- [var copyDescription: CFAllocatorCopyDescriptionCallBack!](csidentityclientcontext/1445249-copydescription.md)
-- [var info: UnsafeMutableRawPointer!](csidentityclientcontext/1443727-info.md)
-- [var release: CFAllocatorReleaseCallBack!](csidentityclientcontext/1448741-release.md)
-- [var retain: CFAllocatorRetainCallBack!](csidentityclientcontext/1444414-retain.md)
-- [var statusUpdated: CSIdentityStatusUpdatedCallback!](csidentityclientcontext/1447852-statusupdated.md)
-- [var version: CFIndex](csidentityclientcontext/1448370-version.md)
+- [var copyDescription: CFAllocatorCopyDescriptionCallBack!](./csidentityclientcontext/api-1445249-copydescription.md)
+- [var info: UnsafeMutableRawPointer!](./csidentityclientcontext/api-1443727-info.md)
+- [var release: CFAllocatorReleaseCallBack!](./csidentityclientcontext/api-1448741-release.md)
+- [var retain: CFAllocatorRetainCallBack!](./csidentityclientcontext/api-1444414-retain.md)
+- [var statusUpdated: CSIdentityStatusUpdatedCallback!](./csidentityclientcontext/api-1447852-statusupdated.md)
+- [var version: CFIndex](./csidentityclientcontext/api-1448370-version.md)
 
 
 ---

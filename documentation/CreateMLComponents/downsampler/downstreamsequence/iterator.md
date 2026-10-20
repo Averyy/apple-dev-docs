@@ -1,7 +1,8 @@
 # Downsampler.DownStreamSequence.Iterator
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An async iterator of down stream sequence.
 
@@ -20,10 +21,12 @@ An async iterator of down stream sequence.
 struct Iterator
 ```
 
+Available when `Input` conforms to `Sendable`.
+
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # percentComplete
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of the transition (specified as a percentage of the overall duration) that’s complete.
 
@@ -9,7 +10,7 @@ The amount of the transition (specified as a percentage of the overall duration)
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,29 @@ The amount of the transition (specified as a percentage of the overall duration)
 var percentComplete: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat percentComplete;
+```
+
 #### Discussion
 
-The value in this property reflects the last value passed to the [`update(_:)`](uipercentdriveninteractivetransition/update(_:).md) method.
+The value in this property reflects the last value passed to the [`update(_:)`](./update%28_%29.md) method.
 
 ## See Also
 
-- [func update(CGFloat)](uipercentdriveninteractivetransition/update(_:).md)
+### Related Documentation
+- [func update(CGFloat)](./update%28_%29.md)
   Updates the completion percentage of the transition.
-- [var timingCurve: (any UITimingCurveProvider)?](uipercentdriveninteractivetransition/timingcurve.md)
+### Accessing transition attributes
+- [var timingCurve: (any UITimingCurveProvider)?](./timingcurve.md)
   The timing curve to use when driving the animations.
-- [var completionCurve: UIView.AnimationCurve](uipercentdriveninteractivetransition/completioncurve.md)
+- [var completionCurve: UIView.AnimationCurve](./completioncurve.md)
   Indicates the animation completion curve for an interactive transition.
-- [var duration: CGFloat](uipercentdriveninteractivetransition/duration.md)
+- [var duration: CGFloat](./duration.md)
   The overall duration (in seconds) of the transition animation.
-- [var completionSpeed: CGFloat](uipercentdriveninteractivetransition/completionspeed.md)
+- [var completionSpeed: CGFloat](./completionspeed.md)
   The speed of the transition animation.
-- [var wantsInteractiveStart: Bool](uipercentdriveninteractivetransition/wantsinteractivestart.md)
+- [var wantsInteractiveStart: Bool](./wantsinteractivestart.md)
   A Boolean value indicating whether the animations are interactive initially.
 
 

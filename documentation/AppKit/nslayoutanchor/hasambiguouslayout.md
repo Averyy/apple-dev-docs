@@ -1,7 +1,8 @@
 # hasAmbiguousLayout
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the constraints impacting the anchor specify its location ambiguously.
 
@@ -14,13 +15,18 @@ A Boolean value indicating whether the constraints impacting the anchor specify 
 var hasAmbiguousLayout: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL hasAmbiguousLayout;
+```
+
 ## See Also
 
-- [var constraintsAffectingLayout: [NSLayoutConstraint]](nslayoutanchor/constraintsaffectinglayout.md)
+### Debugging the anchor
+- [var constraintsAffectingLayout: [NSLayoutConstraint]](./constraintsaffectinglayout.md)
   The constraints that impact the layout of the anchor.
-- [var name: String](nslayoutanchor/name.md)
+- [var name: String](./name.md)
   The name assigned to the anchor for debugging purposes.
-- [var item: AnyObject?](nslayoutanchor/item.md)
+- [var item: AnyObject?](./item.md)
   The layout item used to calculate the anchor’s position.
 
 

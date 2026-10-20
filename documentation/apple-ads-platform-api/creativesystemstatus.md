@@ -1,7 +1,8 @@
 # CreativeSystemStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 System-evaluated validation state for an ad creative.
 
@@ -10,23 +11,29 @@ System-evaluated validation state for an ad creative.
 
 ## Declaration
 
-```swift
+```
 string CreativeSystemStatus
 ```
+
+## Possible Values
+
+- `VALID`: The ad creative has passed all system validation checks and is ready to serve. The ad creative may still be subject to additional review.
+- `INVALID`: The ad creative has failed one or more validation checks. Check `systemStatusReasons` for the cause.
+- `PENDING`: The ad creative is undergoing system validation, policy determination, or waiting for asset CDN availability.
 
 #### Discussion
 
 The `CreativeSystemStatus` is a read-only field that reflects whether an ad creative has passed all system validation checks and is eligible to serve.
 
-When the status isn’t `VALID`, inspect `systemStatusReasons` on the [`Creative`](creative.md) object to determine the specific blocking condition.
+When the status isn’t `VALID`, inspect `systemStatusReasons` on the [`Creative`](./creative.md) object to determine the specific blocking condition.
 
 ## See Also
 
-- [type CreativeType](creativetype.md)
+- [type CreativeType](./creativetype.md)
   Enum identifying the visual format and placement context of an ad creative.
-- [type CreativeSystemStatusReason](creativesystemstatusreason.md)
+- [type CreativeSystemStatusReason](./creativesystemstatusreason.md)
   A reason code explaining why an ad creative isn’t valid or is pending review.
-- [type DestinationType](destinationtype.md)
+- [type DestinationType](./destinationtype.md)
   Specifies where an ad sends users after they tap it.
 
 

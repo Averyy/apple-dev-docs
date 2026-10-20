@@ -1,7 +1,8 @@
 # requestAuthorization(toShare:read:completion:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests permission to save and read the specified data types.
 
@@ -19,6 +20,10 @@ Requests permission to save and read the specified data types.
 func requestAuthorization(toShare typesToShare: Set<HKSampleType>?, read typesToRead: Set<HKObjectType>?, completion: @escaping @Sendable (Bool, (any Error)?) -> Void)
 ```
 
+```objc
+- (void) requestAuthorizationToShareTypes:(NSSet<HKSampleType *> *) typesToShare readTypes:(NSSet<HKObjectType *> *) typesToRead completion:(void (^)(BOOL success, NSError *error)) completion;
+```
+
 #### Discussion
 
 HealthKit performs these requests asynchronously. If you call this method with a new data type (a type of data that the user hasn’t previously granted or denied permission for in this app), the system automatically displays the permission form, listing all the requested permissions. After the user has finished responding, this method calls its completion block on a background queue. If the user has already chosen to grant or prohibit access to all of the types specified, HealthKit calls the completion without prompting the user.
@@ -29,47 +34,50 @@ Each data type has two separate permissions, one to read it and one to share it.
 
 Customize the messages displayed on the permissions sheet by setting the following keys:
 
-- [`NSHealthShareUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthshareusagedescription) customizes the message for reading data.
-- [`NSHealthUpdateUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nshealthupdateusagedescription) customizes the message for writing data.
+- [`NSHealthShareUsageDescription`](../../BundleResources/information-property-list/nshealthshareusagedescription.md) customizes the message for reading data.
+- [`NSHealthUpdateUsageDescription`](../../BundleResources/information-property-list/nshealthupdateusagedescription.md) customizes the message for writing data.
 
 > ⚠️ **Warning**:  You must set the usage keys, or your app will crash when you request authorization.
 
-For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list).
+For projects created using Xcode 13 or later, set these keys in the Target Properties list on the app’s Info tab. For projects created with Xcode 12 or earlier, set these keys in the apps `Info.plist` file. For more information, see [`Information Property List`](../../BundleResources/information-property-list.md).
 
 After users have set the permissions for your app, they can always change them using either the Settings or the Health app. Your app appears in the Health app’s Sources tab, even if the user didn’t allow permission to read or share data.
 
 ## Parameters
 
-- `typesToShare`: A set containing the data types you want to share. This set can contain any concrete subclass of the [`HKSampleType`](hksampletype.md) class (any of the [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md), or [`HKCorrelationType`](hkcorrelationtype.md) classes ). If the user grants permission, your app can create and save these data types to the HealthKit store.
-- `typesToRead`: A set containing the data types you want to read. This set can contain any concrete subclass of the [`HKObjectType`](hkobjecttype.md) class (any of the [`HKCharacteristicType`](hkcharacteristictype.md) , [`HKQuantityType`](hkquantitytype.md), [`HKCategoryType`](hkcategorytype.md), [`HKWorkoutType`](hkworkouttype.md), or [`HKCorrelationType`](hkcorrelationtype.md) classes). If the user grants permission, your app can read these data types from the HealthKit store.
-- `completion`: A block called after the user finishes responding to the request. The system calls this block with the following parameters: - **`success`**: A Boolean value that indicates whether the request succeeded. This value doesn’t indicate whether the user actually granted permission. The parameter is [`false`](https://developer.apple.com/documentation/swift/false) if an error occurred while processing the request; otherwise, it’s [`true`](https://developer.apple.com/documentation/swift/true).
-- **`error`**: An error object. If an error occurred, this object contains information about the error; otherwise, it’s set to `nil`.
+- `typesToShare`: A set containing the data types you want to share. This set can contain any concrete subclass of the [`HKSampleType`](../hksampletype.md) class (any of the [`HKQuantityType`](../hkquantitytype.md), [`HKCategoryType`](../hkcategorytype.md), [`HKWorkoutType`](../hkworkouttype.md), or [`HKCorrelationType`](../hkcorrelationtype.md) classes ). If the user grants permission, your app can create and save these data types to the HealthKit store.
+- `typesToRead`: A set containing the data types you want to read. This set can contain any concrete subclass of the [`HKObjectType`](../hkobjecttype.md) class (any of the [`HKCharacteristicType`](../hkcharacteristictype.md) , [`HKQuantityType`](../hkquantitytype.md), [`HKCategoryType`](../hkcategorytype.md), [`HKWorkoutType`](../hkworkouttype.md), or [`HKCorrelationType`](../hkcorrelationtype.md) classes). If the user grants permission, your app can read these data types from the HealthKit store.
+- `completion`: A block called after the user finishes responding to the request. The system calls this block with the following parameters:
+
+  - **`success`**: A Boolean value that indicates whether the request succeeded. This value doesn’t indicate whether the user actually granted permission. The parameter is [`false`](../../Swift/false.md) if an error occurred while processing the request; otherwise, it’s [`true`](../../Swift/true.md).
+  - **`error`**: An error object. If an error occurred, this object contains information about the error; otherwise, it’s set to `nil`.
 
 ## See Also
 
-- [func authorizationStatus(for: HKObjectType) -> HKAuthorizationStatus](hkhealthstore/authorizationstatus(for:).md)
+### Accessing HealthKit
+- [func authorizationStatus(for: HKObjectType) -> HKAuthorizationStatus](./authorizationstatus%28for%29.md)
   Returns the app’s authorization status for sharing the specified data type.
-- [enum HKAuthorizationStatus](hkauthorizationstatus.md)
+- [enum HKAuthorizationStatus](../hkauthorizationstatus.md)
   Constants indicating the authorization status for a particular data type.
-- [func getRequestStatusForAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>, completion: (HKAuthorizationRequestStatus, (any Error)?) -> Void)](hkhealthstore/getrequeststatusforauthorization(toshare:read:completion:).md)
+- [func getRequestStatusForAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>, completion: (HKAuthorizationRequestStatus, (any Error)?) -> Void)](./getrequeststatusforauthorization%28toshare,read,completion%29.md)
   Indicates whether the system presents the user with a permission sheet if your app requests authorization for the provided types.
-- [enum HKAuthorizationRequestStatus](hkauthorizationrequeststatus.md)
+- [enum HKAuthorizationRequestStatus](../hkauthorizationrequeststatus.md)
   Values that indicate whether your app needs to request authorization from the user.
-- [class func isHealthDataAvailable() -> Bool](hkhealthstore/ishealthdataavailable.md)
+- [class func isHealthDataAvailable() -> Bool](./ishealthdataavailable%28%29.md)
   Returns a Boolean value that indicates whether HealthKit is available on this device.
-- [func supportsHealthRecords() -> Bool](hkhealthstore/supportshealthrecords.md)
+- [func supportsHealthRecords() -> Bool](./supportshealthrecords%28%29.md)
   Returns a Boolean value that indicates whether the current device supports clinical records.
-- [func requestAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>) async throws](hkhealthstore/requestauthorization(toshare:read:).md)
+- [func requestAuthorization(toShare: Set<HKSampleType>, read: Set<HKObjectType>) async throws](./requestauthorization%28toshare,read%29.md)
   Asynchronously requests permission to save and read the specified data types.
-- [func requestPerObjectReadAuthorization(for: HKObjectType, predicate: NSPredicate?, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/requestperobjectreadauthorization(for:predicate:completion:).md)
+- [func requestPerObjectReadAuthorization(for: HKObjectType, predicate: NSPredicate?, completion: (Bool, (any Error)?) -> Void)](./requestperobjectreadauthorization%28for,predicate,completion%29.md)
   Asynchronously requests permission to read a data type that requires per-object authorization (such as vision prescriptions).
-- [func handleAuthorizationForExtension(completion: (Bool, (any Error)?) -> Void)](hkhealthstore/handleauthorizationforextension(completion:).md)
+- [func handleAuthorizationForExtension(completion: (Bool, (any Error)?) -> Void)](./handleauthorizationforextension%28completion%29.md)
   Requests permission to save and read the data types specified by an extension.
-- [var authorizationViewControllerPresenter: UIViewController?](hkhealthstore/authorizationviewcontrollerpresenter.md)
+- [var authorizationViewControllerPresenter: UIViewController?](./authorizationviewcontrollerpresenter.md)
   The view controller that presents HealthKit authorization sheets.
-- [func getEarliestAuthorizedSampleDate(for: Set<HKObjectType>, completion: ([HKObjectType : Date]?, (any Error)?) -> Void)](hkhealthstore/getearliestauthorizedsampledate(for:completion:).md)
+- [func getEarliestAuthorizedSampleDate(for: Set<HKObjectType>, completion: ([HKObjectType : Date]?, (any Error)?) -> Void)](./getearliestauthorizedsampledate%28for,completion%29.md)
   Returns the earliest date that the person permits your app to read samples for the given data types.
-- [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
+- [func earliestPermittedSampleDate() -> Date](./earliestpermittedsampledate%28%29.md)
   Returns the earliest date that the framework permits your app to save or read samples.
 
 

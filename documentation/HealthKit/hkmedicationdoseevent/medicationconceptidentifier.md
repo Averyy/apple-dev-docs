@@ -1,7 +1,8 @@
 # medicationConceptIdentifier
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the medication concept the system associates with this dose event.
 
@@ -20,9 +21,13 @@ The identifier of the medication concept the system associates with this dose ev
 var medicationConceptIdentifier: HKHealthConceptIdentifier { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) HKHealthConceptIdentifier * medicationConceptIdentifier;
+```
+
 #### Discussion
 
-The system uses this identifier to link the dose event back to its [`HKMedicationConcept`](hkmedicationconcept.md) object.
+The system uses this identifier to link the dose event back to its [`HKMedicationConcept`](../hkmedicationconcept.md) object.
 
 
 ---

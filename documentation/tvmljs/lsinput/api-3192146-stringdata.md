@@ -1,14 +1,15 @@
 # stringData
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 attribute String stringData;
 ```
 

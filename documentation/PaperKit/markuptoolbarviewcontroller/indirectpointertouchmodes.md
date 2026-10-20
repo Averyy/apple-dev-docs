@@ -1,7 +1,8 @@
 # indirectPointerTouchModes
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The modes available for a user to select.
 
@@ -22,7 +23,8 @@ Default is `[.selection, .drawing]`
 
 ## See Also
 
-- [var selectedIndirectPointerTouchMode: PaperMarkupViewController.TouchMode](markuptoolbarviewcontroller/selectedindirectpointertouchmode.md)
+### Managing touch modes
+- [var selectedIndirectPointerTouchMode: PaperMarkupViewController.TouchMode](./selectedindirectpointertouchmode.md)
   The currently selected pointer mode.
 
 

@@ -1,7 +1,8 @@
 # GameCenterMatchmakingTestPlayerPropertyInlineCreate.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for sample player properties.
 
@@ -10,7 +11,7 @@ The attributes for sample player properties.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingTestPlayerPropertyInlineCreate.Attributes
 ```
 

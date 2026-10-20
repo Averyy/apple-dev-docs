@@ -1,7 +1,8 @@
 # SoftwareUpdateSettingsBeta_RequireProgramObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The device automatically enrolls in this beta program. This key must only be present if the `ProgramEnrollment` key is set to `AlwaysOn`. The `OfferPrograms` key must not be present if this key is present.
 
@@ -13,7 +14,7 @@ The device automatically enrolls in this beta program. This key must only be pre
 
 ## Declaration
 
-```swift
+```
 object SoftwareUpdateSettingsBeta_RequireProgramObject
 ```
 
@@ -24,7 +25,8 @@ object SoftwareUpdateSettingsBeta_RequireProgramObject
 
 ## See Also
 
-- [object SoftwareUpdateSettingsBeta_ProgramObject](softwareupdatesettingsbeta_programobject.md)
+### Objects
+- [object SoftwareUpdateSettingsBeta_ProgramObject](./softwareupdatesettingsbeta_programobject.md)
   The name and token associated with a specific beta program to be allowed.
 
 

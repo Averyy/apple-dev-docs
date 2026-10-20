@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kev_msg {
     ...
 };
@@ -21,16 +21,16 @@ This structure is used when posting a kernel event.
 ## Topics
 
 ### Fields
-- [vendor_code](kev_msg/1446947-vendor_code.md)
+- [vendor_code](./kev_msg/api-1446947-vendor_code.md)
   The vendor code assigned by kev_vendor_code_find.
-- [kev_class](kev_msg/1446923-kev_class.md)
+- [kev_class](./kev_msg/api-1446923-kev_class.md)
   The event's class.
-- [dv](kev_msg/1446996-dv.md)
+- [dv](./kev_msg/api-1446996-dv.md)
   An array of vectors describing additional data to be appended to the kernel event.
 ### Instance Properties
-- [event_code](kev_msg/1446986-event_code.md)
+- [event_code](./kev_msg/api-1446986-event_code.md)
   The event's code.
-- [kev_subclass](kev_msg/1446957-kev_subclass.md)
+- [kev_subclass](./kev_msg/api-1446957-kev_subclass.md)
   The event's subclass.
 
 

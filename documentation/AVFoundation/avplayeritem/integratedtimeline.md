@@ -1,7 +1,8 @@
 # integratedTimeline
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integrated timeline that represents the player item timing including its scheduled interstitial events.
 
@@ -21,19 +22,24 @@ nonisolated
 var integratedTimeline: AVPlayerItemIntegratedTimeline { get }
 ```
 
+```objc
+@property (readonly) AVPlayerItemIntegratedTimeline * integratedTimeline;
+```
+
 #### Discussion
 
 The value is `nil` for player items in an interstitial player.
 
 ## See Also
 
-- [var automaticallyHandlesInterstitialEvents: Bool](avplayeritem/automaticallyhandlesinterstitialevents.md)
+### Configuring interstitial events
+- [var automaticallyHandlesInterstitialEvents: Bool](./automaticallyhandlesinterstitialevents.md)
   A Boolean value that indicates whether the player item automatically plays interstitial events according to server-side directives.
-- [var translatesPlayerInterstitialEvents: Bool](avplayeritem/translatesplayerinterstitialevents.md)
+- [var translatesPlayerInterstitialEvents: Bool](./translatesplayerinterstitialevents.md)
   A Boolean value that indicates whether the player translates interstitial events to interstitial time ranges.
-- [var interstitialTimeRanges: [AVInterstitialTimeRange]](avplayeritem/interstitialtimeranges.md)
+- [var interstitialTimeRanges: [AVInterstitialTimeRange]](./interstitialtimeranges.md)
   An array of time ranges that identify interstitial content.
-- [var template: AVPlayerItem?](avplayeritem/template.md)
+- [var template: AVPlayerItem?](./template.md)
   The template player item that initializes this instance.
 
 

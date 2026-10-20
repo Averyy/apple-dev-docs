@@ -1,7 +1,8 @@
 # loadFactoryReverbPreset(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Loads one of the reverbs factory presets.
 
@@ -20,6 +21,10 @@ Loads one of the reverbs factory presets.
 func loadFactoryReverbPreset(_ preset: AVAudioUnitReverbPreset)
 ```
 
+```objc
+- (void) loadFactoryReverbPreset:(AVAudioUnitReverbPreset) preset;
+```
+
 #### Discussion
 
 Loading a factory reverb preset changes the sound of the reverb. This is independent of the filter which follows the reverb in the signal chain.
@@ -30,11 +35,13 @@ Loading a factory reverb preset changes the sound of the reverb. This is indepen
 
 ## See Also
 
-- [var enable: Bool](avaudioenvironmentreverbparameters/enable.md)
+### Related Documentation
+- [var enable: Bool](./enable.md)
   A Boolean value that indicates whether reverberation is in an enabled state.
-- [var level: Float](avaudioenvironmentreverbparameters/level.md)
+### Getting and setting reverb values
+- [var level: Float](./level.md)
   Controls the amount of reverb, in decibels.
-- [var filterParameters: AVAudioUnitEQFilterParameters](avaudioenvironmentreverbparameters/filterparameters.md)
+- [var filterParameters: AVAudioUnitEQFilterParameters](./filterparameters.md)
   A filter that the system applies to the output.
 
 

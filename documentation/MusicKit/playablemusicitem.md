@@ -1,7 +1,8 @@
 # PlayableMusicItem
 
 **Framework**: MusicKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of properties that a music player uses to initiate playback for a music item.
 
@@ -22,35 +23,36 @@ protocol PlayableMusicItem : MusicItem
 ## Topics
 
 ### Instance Properties
-- [var playParameters: PlayParameters?](playablemusicitem/playparameters.md)
+- [var playParameters: PlayParameters?](./playablemusicitem/playparameters.md)
   The parameters to use to play the music item.
 
 ## Relationships
 
 ### Inherits From
-- [MusicItem](musicitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MusicItem](./musicitem.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [Album](album.md)
-- [MusicPlayer.Queue.Entry.Item](musicplayer/queue/entry/item-swift.enum.md)
-- [Playlist](playlist.md)
-- [Playlist.Entry](playlist/entry.md)
-- [Playlist.Entry.Item](playlist/entry/item-swift.enum.md)
-- [RecentlyPlayedMusicItem](recentlyplayedmusicitem.md)
-- [Song](song.md)
-- [Station](station.md)
-- [Track](track.md)
+- [Album](./album.md)
+- [MusicPlayer.Queue.Entry.Item](./musicplayer/queue/entry/item-swift.enum.md)
+- [Playlist](./playlist.md)
+- [Playlist.Entry](./playlist/entry.md)
+- [Playlist.Entry.Item](./playlist/entry/item-swift.enum.md)
+- [RecentlyPlayedMusicItem](./recentlyplayedmusicitem.md)
+- [Song](./song.md)
+- [Station](./station.md)
+- [Track](./track.md)
 
 ## See Also
 
-- [class ApplicationMusicPlayer](applicationmusicplayer.md)
+### Playback
+- [class ApplicationMusicPlayer](./applicationmusicplayer.md)
   An object your app uses to play music in a way that doesn’t affect the Music app’s state.
-- [class SystemMusicPlayer](systemmusicplayer.md)
+- [class SystemMusicPlayer](./systemmusicplayer.md)
   An object your app uses to play music by controlling the Music app’s state.
-- [class MusicPlayer](musicplayer.md)
+- [class MusicPlayer](./musicplayer.md)
   An object your app uses to play music.
-- [struct PlayParameters](playparameters.md)
+- [struct PlayParameters](./playparameters.md)
   An opaque object that represents parameters to initiate playback of a playable music item using a music player.
 
 

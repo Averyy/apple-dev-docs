@@ -1,7 +1,8 @@
 # isTrashed
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether an item is in the trash.
 
@@ -17,11 +18,16 @@ A Boolean value that indicates whether an item is in the trash.
 optional var isTrashed: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isTrashed) BOOL trashed;
+```
+
 ## See Also
 
-- [var parentItemIdentifier: NSFileProviderItemIdentifier](nsfileprovideritemprotocol/parentitemidentifier.md)
+### Specifying Content Location
+- [var parentItemIdentifier: NSFileProviderItemIdentifier](./parentitemidentifier.md)
   The persistent identifier of the item’s parent folder.
-- [var symlinkTargetPath: String?](nsfileprovideritemprotocol/symlinktargetpath.md)
+- [var symlinkTargetPath: String?](./symlinktargetpath.md)
   The target of the symlink.
 
 

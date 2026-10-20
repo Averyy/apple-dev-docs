@@ -1,7 +1,8 @@
 # BuildBetaNotification
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A push notification sent to eligible TestFlight testers when a new build is available to install.
 
@@ -10,7 +11,7 @@ A push notification sent to eligible TestFlight testers when a new build is avai
 
 ## Declaration
 
-```swift
+```
 object BuildBetaNotification
 ```
 
@@ -20,11 +21,14 @@ object BuildBetaNotification
 - `links` (ResourceLinks): Navigational links that include the self-link.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `buildBetaNotifications`
+
 ## See Also
 
-- [object BuildBetaNotificationCreateRequest](buildbetanotificationcreaterequest.md)
+### Objects
+- [object BuildBetaNotificationCreateRequest](./buildbetanotificationcreaterequest.md)
   The request body you use to create a Build Beta Notification.
-- [object BuildBetaNotificationResponse](buildbetanotificationresponse.md)
+- [object BuildBetaNotificationResponse](./buildbetanotificationresponse.md)
   The response body for the endpoint that sends a beta test notification for a build.
 
 

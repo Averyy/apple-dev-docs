@@ -1,7 +1,8 @@
 # CategoricalSummary
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A categorical summary of a collection’s elements.
 
@@ -33,38 +34,39 @@ Each categorical summary has 5 statistics about a collection:
 ## Topics
 
 ### Creating a Summary
-- [init()](categoricalsummary/init.md)
+- [init()](./categoricalsummary/init%28%29.md)
   Creates a categorical summary with default values.
-- [init(someCount: Int, noneCount: Int, uniqueCount: Int, mode: [Element])](categoricalsummary/init(somecount:nonecount:uniquecount:mode:).md)
+- [init(someCount: Int, noneCount: Int, uniqueCount: Int, mode: [Element])](./categoricalsummary/init%28somecount,nonecount,uniquecount,mode%29.md)
   Creates a categorical summary.
 ### Inspecting a Summary
-- [var debugDescription: String](categoricalsummary/debugdescription.md)
+- [var debugDescription: String](./categoricalsummary/debugdescription.md)
   A text representation of the summary’s statistics suitable for debugging.
-- [var mode: [Element]](categoricalsummary/mode.md)
+- [var mode: [Element]](./categoricalsummary/mode.md)
   The most common values in a column, ignoring missing elements.
-- [var uniqueCount: Int](categoricalsummary/uniquecount.md)
+- [var uniqueCount: Int](./categoricalsummary/uniquecount.md)
   The number of elements with distinct values in a column that excludes missing elements.
-- [var someCount: Int](categoricalsummary/somecount.md)
+- [var someCount: Int](./categoricalsummary/somecount.md)
   The number of non-missing elements in the column.
-- [var noneCount: Int](categoricalsummary/nonecount.md)
+- [var noneCount: Int](./categoricalsummary/nonecount.md)
   The number of missing elements in the column.
-- [var totalCount: Int](categoricalsummary/totalcount.md)
+- [var totalCount: Int](./categoricalsummary/totalcount.md)
   The total number of elements in the column.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NumericSummary](numericsummary.md)
+### Statistical Summaries
+- [struct NumericSummary](./numericsummary.md)
   A summary of a numerical column.
-- [struct AnyCategoricalSummary](anycategoricalsummary.md)
+- [struct AnyCategoricalSummary](./anycategoricalsummary.md)
   A type-erased categorical summary.
 
 

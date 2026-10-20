@@ -1,7 +1,8 @@
 # pressure
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ambient pressure.
 
@@ -19,9 +20,14 @@ The ambient pressure.
 var pressure: Measurement<UnitPressure> { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSMeasurement<NSUnitPressure *> * pressure;
+```
+
 ## See Also
 
-- [var temperature: Measurement<UnitTemperature>](cmambientpressuredata/temperature.md)
+### Accessing the data
+- [var temperature: Measurement<UnitTemperature>](./temperature.md)
   The temperature.
 
 

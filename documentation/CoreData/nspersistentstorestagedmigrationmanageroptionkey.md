@@ -1,7 +1,8 @@
 # NSPersistentStoreStagedMigrationManagerOptionKey
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key for specifying your staged migration manager.
 
@@ -20,9 +21,14 @@ The key for specifying your staged migration manager.
 let NSPersistentStoreStagedMigrationManagerOptionKey: String
 ```
 
+```c
+extern NSString * const NSPersistentStoreStagedMigrationManagerOptionKey;
+```
+
 ## See Also
 
-- [class NSStagedMigrationManager](nsstagedmigrationmanager.md)
+### Migration staging
+- [class NSStagedMigrationManager](./nsstagedmigrationmanager.md)
   An object that handles the migration event loop and provides access to the migrating persistent store.
 
 

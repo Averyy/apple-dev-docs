@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.PersonNameComponentAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type for using a person name component as an attribute.
 
@@ -24,23 +25,24 @@ enum PersonNameComponentAttribute
 ## Topics
 
 ### Enumerations
-- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component](attributescopes/foundationattributes/personnamecomponentattribute/component.md)
+- [AttributeScopes.FoundationAttributes.PersonNameComponentAttribute.Component](./personnamecomponentattribute/component.md)
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [Escapable](../swift/escapable.md)
-- [ObjectiveCConvertibleAttributedStringKey](objectivecconvertibleattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [Escapable](../../../Swift/escapable.md)
+- [ObjectiveCConvertibleAttributedStringKey](../../objectivecconvertibleattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let personNameComponent: AttributeScopes.FoundationAttributes.PersonNameComponentAttribute](attributescopes/foundationattributes/personnamecomponent.md)
+### Using person name component attributes
+- [let personNameComponent: AttributeScopes.FoundationAttributes.PersonNameComponentAttribute](./personnamecomponent.md)
   A property for accessing a person name component attribute.
 
 

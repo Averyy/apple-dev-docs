@@ -1,7 +1,8 @@
 # SpeechTranscriber
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A speech-to-text transcription module that’s appropriate for normal conversation and general purposes.
 
@@ -23,65 +24,66 @@ final class SpeechTranscriber
 
 Several transcriber instances can share the same backing engine instances and models, so long as the transcribers are configured similarly in certain respects.
 
-##### Check Device Support
+##### Check device support
 
-Use the [`isAvailable`](speechtranscriber/isavailable.md) or [`supportedLocales`](speechtranscriber/supportedlocales.md) properties to see if the current device supports the speech-to-text models used by `SpeechTranscriber`. If it does not, consider disabling the feature or using [`DictationTranscriber`](dictationtranscriber.md) instead.
+Use the [`isAvailable`](./speechtranscriber/isavailable.md) or [`supportedLocales`](./speechtranscriber/supportedlocales.md) properties to see if the current device supports the speech-to-text models used by `SpeechTranscriber`. If it does not, consider disabling the feature or using [`DictationTranscriber`](./dictationtranscriber.md) instead.
 
 ## Topics
 
 ### Creating a transcriber
-- [convenience init(locale: Locale, preset: SpeechTranscriber.Preset)](speechtranscriber/init(locale:preset:).md)
+- [convenience init(locale: Locale, preset: SpeechTranscriber.Preset)](./speechtranscriber/init%28locale,preset%29.md)
   Creates a general-purpose transcriber according to a preset.
-- [convenience init(locale: Locale, transcriptionOptions: Set<SpeechTranscriber.TranscriptionOption>, reportingOptions: Set<SpeechTranscriber.ReportingOption>, attributeOptions: Set<SpeechTranscriber.ResultAttributeOption>)](speechtranscriber/init(locale:transcriptionoptions:reportingoptions:attributeoptions:).md)
+- [convenience init(locale: Locale, transcriptionOptions: Set<SpeechTranscriber.TranscriptionOption>, reportingOptions: Set<SpeechTranscriber.ReportingOption>, attributeOptions: Set<SpeechTranscriber.ResultAttributeOption>)](./speechtranscriber/init%28locale,transcriptionoptions,reportingoptions,attributeoptions%29.md)
   Creates a general-purpose transcriber.
-- [SpeechTranscriber.Preset](speechtranscriber/preset.md)
+- [SpeechTranscriber.Preset](./speechtranscriber/preset.md)
   Predefined transcriber configurations.
 ### Configuring transcription
-- [SpeechTranscriber.ReportingOption](speechtranscriber/reportingoption.md)
+- [SpeechTranscriber.ReportingOption](./speechtranscriber/reportingoption.md)
   Options relating to the transcriber’s result delivery.
-- [SpeechTranscriber.ResultAttributeOption](speechtranscriber/resultattributeoption.md)
+- [SpeechTranscriber.ResultAttributeOption](./speechtranscriber/resultattributeoption.md)
   Options relating to the attributes of the transcription.
-- [SpeechTranscriber.TranscriptionOption](speechtranscriber/transcriptionoption.md)
+- [SpeechTranscriber.TranscriptionOption](./speechtranscriber/transcriptionoption.md)
   Options relating to the text of the transcription.
 ### Checking device support
-- [static var isAvailable: Bool](speechtranscriber/isavailable.md)
+- [static var isAvailable: Bool](./speechtranscriber/isavailable.md)
   A Boolean value that indicates whether this module is available given the device’s hardware and capabilities.
 ### Checking locale support
-- [static var installedLocales: [Locale]](speechtranscriber/installedlocales.md)
+- [static var installedLocales: [Locale]](./speechtranscriber/installedlocales.md)
   The locales that the transcriber can transcribe into, considering only locales that are installed on the device.
-- [static var supportedLocales: [Locale]](speechtranscriber/supportedlocales.md)
+- [static var supportedLocales: [Locale]](./speechtranscriber/supportedlocales.md)
   The locales that the transcriber can transcribe into, including locales that may not be installed but are downloadable.
-- [static func supportedLocale(equivalentTo: Locale) async -> Locale?](speechtranscriber/supportedlocale(equivalentto:).md)
+- [static func supportedLocale(equivalentTo: Locale) async -> Locale?](./speechtranscriber/supportedlocale%28equivalentto%29.md)
   A locale from the module’s supported locales equivalent to the given locale.
 ### Checking audio format support
-- [var availableCompatibleAudioFormats: [AVAudioFormat]](speechmodule/availablecompatibleaudioformats.md)
+- [var availableCompatibleAudioFormats: [AVAudioFormat]](./speechmodule/availablecompatibleaudioformats.md)
   The audio formats that this module is able to analyze, given its configuration.
 ### Getting results
-- [var results: some Sendable & AsyncSequence<SpeechTranscriber.Result, any Error>](speechtranscriber/results.md)
+- [var results: some Sendable & AsyncSequence<SpeechTranscriber.Result, any Error>](./speechtranscriber/results.md)
   The asynchronous sequence of transcription results.
-- [SpeechTranscriber.Result](speechtranscriber/result.md)
+- [SpeechTranscriber.Result](./speechtranscriber/result.md)
   A phrase or passage of transcribed speech. The phrases are sent in order.
 ### Inspecting the transcriber
-- [var selectedLocales: [Locale]](localedependentspeechmodule/selectedlocales.md)
+- [var selectedLocales: [Locale]](./localedependentspeechmodule/selectedlocales.md)
   The set of asset locales specified by the module’s configuration.
 
 ## Relationships
 
 ### Conforms To
-- [LocaleDependentSpeechModule](localedependentspeechmodule.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SpeechModule](speechmodule.md)
+- [LocaleDependentSpeechModule](./localedependentspeechmodule.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SpeechModule](./speechmodule.md)
 
 ## See Also
 
-- [class DictationTranscriber](dictationtranscriber.md)
+### Modules
+- [class DictationTranscriber](./dictationtranscriber.md)
   A speech-to-text transcription module that’s similar to system dictation features and compatible with older devices.
-- [class SpeechDetector](speechdetector.md)
+- [class SpeechDetector](./speechdetector.md)
   A module that performs a voice activity detection (VAD) analysis.
-- [protocol SpeechModule](speechmodule.md)
+- [protocol SpeechModule](./speechmodule.md)
   Protocol that all analyzer modules conform to.
-- [protocol LocaleDependentSpeechModule](localedependentspeechmodule.md)
+- [protocol LocaleDependentSpeechModule](./localedependentspeechmodule.md)
   A module that requires locale-specific assets.
 
 

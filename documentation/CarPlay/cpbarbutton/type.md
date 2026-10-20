@@ -1,7 +1,8 @@
 # CPBarButton.Type
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of bar buttons.
 
@@ -16,37 +17,42 @@ Types of bar buttons.
 enum `Type`
 ```
 
+```c
+enum CPBarButtonType : NSUInteger;
+```
+
 ## Topics
 
 ### Button Types
-- [CPBarButton.Type.text](cpbarbutton/type/text.md)
+- [CPBarButton.Type.text](./type/text.md)
   A text style bar button.
-- [CPBarButton.Type.image](cpbarbutton/type/image.md)
+- [CPBarButton.Type.image](./type/image.md)
   An image style bar button.
 ### Initializers
-- [init?(rawValue: UInt)](cpbarbutton/type/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./type/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init?(coder: NSCoder)](cpbarbutton/init(coder:).md)
+### Creating a CarPlay Bar Button
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a button initialized  from data in the specified coder object.
-- [init(type: CPBarButton.Type, handler: CPBarButtonHandler?)](cpbarbutton/init(type:handler:).md)
+- [init(type: CPBarButton.Type, handler: CPBarButtonHandler?)](./init%28type,handler%29.md)
   Creates a bar button with a type and handler.
-- [init(image: UIImage, handler: CPBarButtonHandler?)](cpbarbutton/init(image:handler:).md)
+- [init(image: UIImage, handler: CPBarButtonHandler?)](./init%28image,handler%29.md)
   Creates a bar button that displays an image.
-- [init(title: String, handler: CPBarButtonHandler?)](cpbarbutton/init(title:handler:).md)
+- [init(title: String, handler: CPBarButtonHandler?)](./init%28title,handler%29.md)
   Creates a bar button that displays a text label.
-- [typealias CPBarButtonHandler](cpbarbuttonhandler.md)
+- [typealias CPBarButtonHandler](../cpbarbuttonhandler.md)
   A block that CarPlay calls when the user taps a bar button.
 
 

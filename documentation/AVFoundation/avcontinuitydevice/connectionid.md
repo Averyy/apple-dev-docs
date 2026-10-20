@@ -1,7 +1,8 @@
 # connectionID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A universally unique value that identifies a specific continuity device.
 
@@ -12,6 +13,10 @@ A universally unique value that identifies a specific continuity device.
 
 ```swift
 var connectionID: UUID { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUUID * connectionID;
 ```
 
 

@@ -1,14 +1,15 @@
 # continueTracking(at:sourceImage:sourceDisparity:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An object that continues to track an object that you’ve started tracking, and adds a new detection to the detection track you’re building.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

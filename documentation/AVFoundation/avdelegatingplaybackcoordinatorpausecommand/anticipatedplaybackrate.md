@@ -1,7 +1,8 @@
 # anticipatedPlaybackRate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which the coordinator expects the current item to play.
 
@@ -19,13 +20,18 @@ The rate at which the coordinator expects the current item to play.
 var anticipatedPlaybackRate: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float anticipatedPlaybackRate;
+```
+
 #### Discussion
 
 Consider this command complete after the player is ready to start playback at the indicated rate.
 
 ## See Also
 
-- [var shouldBufferInAnticipationOfPlayback: Bool](avdelegatingplaybackcoordinatorpausecommand/shouldbufferinanticipationofplayback.md)
+### Accessing command details
+- [var shouldBufferInAnticipationOfPlayback: Bool](./shouldbufferinanticipationofplayback.md)
   A Boolean value that indicates whether the player starts buffering in preparation for a request to begin playback.
 
 

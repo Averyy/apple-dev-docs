@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 enum StandardUSB30::tTimingParameters : unsigned int {
     ...
 };
@@ -17,8 +17,8 @@ enum StandardUSB30::tTimingParameters : unsigned int {
 ## Topics
 
 ### Constants
-- [StandardUSB30::kTimingParameterBELTDefaultNs](standardusb30_ttimingparameters/standardusb30_ktimingparameterbeltdefaultns.md)
-- [StandardUSB30::kTimingParameterBELTMinNs](standardusb30_ttimingparameters/standardusb30_ktimingparameterbeltminns.md)
+- [StandardUSB30::kTimingParameterBELTDefaultNs](./standardusb30_ttimingparameters/standardusb30_ktimingparameterbeltdefaultns.md)
+- [StandardUSB30::kTimingParameterBELTMinNs](./standardusb30_ttimingparameters/standardusb30_ktimingparameterbeltminns.md)
 
 
 ---

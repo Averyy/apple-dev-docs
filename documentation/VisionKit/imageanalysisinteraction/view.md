@@ -1,7 +1,8 @@
 # view
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view that uses this interaction.
 
@@ -20,15 +21,16 @@ The view that uses this interaction.
 
 ## See Also
 
-- [var delegate: (any ImageAnalysisInteractionDelegate)?](imageanalysisinteraction/delegate.md)
+### Configuring an image interaction
+- [var delegate: (any ImageAnalysisInteractionDelegate)?](./delegate.md)
   The delegate that handles the interaction callbacks.
-- [var analysis: ImageAnalysis?](imageanalysisinteraction/analysis.md)
+- [var analysis: ImageAnalysis?](./analysis.md)
   The results of analyzing an image for items that people can interact with.
-- [var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/preferredinteractiontypes.md)
+- [var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes](./preferredinteractiontypes.md)
   The types of interactions that people can perform with the image.
-- [ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/interactiontypes.md)
+- [ImageAnalysisInteraction.InteractionTypes](./interactiontypes.md)
   The types of interactions that people can perform with an image.
-- [var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/activeinteractiontypes.md)
+- [var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes](./activeinteractiontypes.md)
   The types of interactions that a person actively performs.
 
 

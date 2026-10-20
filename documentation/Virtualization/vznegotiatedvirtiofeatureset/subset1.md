@@ -1,7 +1,8 @@
 # subset1
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that represent feature bits 32 through 63.
 
@@ -12,6 +13,10 @@ The value that represent feature bits 32 through 63.
 
 ```swift
 var subset1: UInt32 { get }
+```
+
+```objc
+@property (readonly) uint32_t subset1;
 ```
 
 

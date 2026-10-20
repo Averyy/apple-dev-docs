@@ -1,7 +1,8 @@
 # errSecTimestampUnacceptedExtension
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The requested extension is not supported by the timestamp authority.
 
@@ -18,6 +19,10 @@ The requested extension is not supported by the timestamp authority.
 
 ```swift
 var errSecTimestampUnacceptedExtension: OSStatus { get }
+```
+
+```c
+errSecTimestampUnacceptedExtension
 ```
 
 

@@ -1,7 +1,8 @@
 # addSublayer(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the layer to the layer’s list of sublayers.
 
@@ -19,6 +20,10 @@ Appends the layer to the layer’s list of sublayers.
 func addSublayer(_ layer: CALayer)
 ```
 
+```objc
+- (void) addSublayer:(CALayer *) layer;
+```
+
 #### Discussion
 
 If the array in the sublayers property is `nil`, calling this method creates an array for that property and adds the specified layer to it.
@@ -29,19 +34,20 @@ If the array in the sublayers property is `nil`, calling this method creates an 
 
 ## See Also
 
-- [var sublayers: [CALayer]?](calayer/sublayers.md)
+### Managing the layer hierarchy
+- [var sublayers: [CALayer]?](./sublayers.md)
   An array containing the layer’s sublayers.
-- [var superlayer: CALayer?](calayer/superlayer.md)
+- [var superlayer: CALayer?](./superlayer.md)
   The superlayer of the layer.
-- [func removeFromSuperlayer()](calayer/removefromsuperlayer.md)
+- [func removeFromSuperlayer()](./removefromsuperlayer%28%29.md)
   Detaches the layer from its parent layer.
-- [func insertSublayer(CALayer, at: UInt32)](calayer/insertsublayer(_:at:).md)
+- [func insertSublayer(CALayer, at: UInt32)](./insertsublayer%28_,at%29.md)
   Inserts the specified layer into the receiver’s list of sublayers at the specified index.
-- [func insertSublayer(CALayer, below: CALayer?)](calayer/insertsublayer(_:below:).md)
+- [func insertSublayer(CALayer, below: CALayer?)](./insertsublayer%28_,below%29.md)
   Inserts the specified sublayer below a different sublayer that already belongs to the receiver.
-- [func insertSublayer(CALayer, above: CALayer?)](calayer/insertsublayer(_:above:).md)
+- [func insertSublayer(CALayer, above: CALayer?)](./insertsublayer%28_,above%29.md)
   Inserts the specified sublayer above a different sublayer that already belongs to the receiver.
-- [func replaceSublayer(CALayer, with: CALayer)](calayer/replacesublayer(_:with:).md)
+- [func replaceSublayer(CALayer, with: CALayer)](./replacesublayer%28_,with%29.md)
   Replaces the specified sublayer with a different layer object.
 
 

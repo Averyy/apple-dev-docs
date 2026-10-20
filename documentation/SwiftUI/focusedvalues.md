@@ -1,7 +1,8 @@
 # FocusedValues
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of state exported by the focused scene or view and its ancestors.
 
@@ -34,7 +35,7 @@ The `Entry` macro automatically generates the underlying key type and provides t
 
 ##### Publishing Values in Your Views
 
-Views publish focused values using the [`focusedValue(_:_:)`](view/focusedvalue(_:_:).md) modifier:
+Views publish focused values using the [`focusedValue(_:_:)`](./view/focusedvalue%28_,_%29.md) modifier:
 
 ```swift
 struct DocumentCellView: View {
@@ -47,7 +48,7 @@ struct DocumentCellView: View {
 }
 ```
 
-For scene-wide values that should be available depending on the focused scene, use [`focusedSceneValue(_:_:)`](view/focusedscenevalue(_:_:).md):
+For scene-wide values that should be available depending on the focused scene, use [`focusedSceneValue(_:_:)`](./view/focusedscenevalue%28_,_%29.md):
 
 ```swift
 struct DocumentViewer: View {
@@ -60,9 +61,9 @@ struct DocumentViewer: View {
 }
 ```
 
-##### Accessing the Current Focused Value
+##### Accessing the current focused value
 
-Use the [`FocusedValue`](focusedvalue.md) property wrapper in your [`App`](app.md) or [`View`](view.md) to read the current value in the `body`. The [`FocusedBinding`](focusedbinding.md) can be used as a convenient way to access the `wrappedValue` if the value type of the focused value is a `Binding`:
+Use the [`FocusedValue`](./focusedvalue.md) property wrapper in your [`App`](./app.md) or [`View`](./view.md) to read the current value in the `body`. The [`FocusedBinding`](./focusedbinding.md) can be used as a convenient way to access the `wrappedValue` if the value type of the focused value is a `Binding`:
 
 ```swift
 @main
@@ -88,23 +89,24 @@ struct DocumentApp: App {
 ## Topics
 
 ### Getting the value for a key
-- [subscript<Key>(Key.Type) -> Key.Value?](focusedvalues/subscript(_:).md)
+- [subscript<Key>(Key.Type) -> Key.Value?](./focusedvalues/subscript%28_%29.md)
   Reads and writes values associated with a given focused value key.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [func focusedValue<T>(T?) -> some View](view/focusedvalue(_:).md)
+### Exposing value types to focused views
+- [func focusedValue<T>(T?) -> some View](./view/focusedvalue%28_%29.md)
   Sets the focused value for the given object type.
-- [func focusedValue(_:_:)](view/focusedvalue(_:_:).md)
+- [func focusedValue(_:_:)](./view/focusedvalue%28_,_%29.md)
   Modifies this view by injecting a value that you provide for use by other views whose state depends on the focused view hierarchy.
-- [func focusedSceneValue<T>(T?) -> some View](view/focusedscenevalue(_:).md)
+- [func focusedSceneValue<T>(T?) -> some View](./view/focusedscenevalue%28_%29.md)
   Sets the focused value for the given object type at a scene-wide scope.
-- [func focusedSceneValue(_:_:)](view/focusedscenevalue(_:_:).md)
+- [func focusedSceneValue(_:_:)](./view/focusedscenevalue%28_,_%29.md)
   Modifies this view by injecting a value that you provide for use by other views whose state depends on the focused scene.
 
 

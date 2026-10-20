@@ -1,7 +1,8 @@
 # selectedDataSource
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected audio data source for the port.
 
@@ -18,17 +19,22 @@ The currently selected audio data source for the port.
 var selectedDataSource: AVAudioSessionDataSourceDescription? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVAudioSessionDataSourceDescription * selectedDataSource;
+```
+
 #### Discussion
 
 If this property returns `nil`, the port doesn’t support selecting between multiple data sources.
 
 ## See Also
 
-- [var dataSources: [AVAudioSessionDataSourceDescription]?](avaudiosessionportdescription/datasources.md)
+### Managing a port’s data sources
+- [var dataSources: [AVAudioSessionDataSourceDescription]?](./datasources.md)
   The available data sources for the port.
-- [var preferredDataSource: AVAudioSessionDataSourceDescription?](avaudiosessionportdescription/preferreddatasource.md)
+- [var preferredDataSource: AVAudioSessionDataSourceDescription?](./preferreddatasource.md)
   The preferred audio data source for the port.
-- [func setPreferredDataSource(AVAudioSessionDataSourceDescription?) throws](avaudiosessionportdescription/setpreferreddatasource(_:).md)
+- [func setPreferredDataSource(AVAudioSessionDataSourceDescription?) throws](./setpreferreddatasource%28_%29.md)
   Sets the preferred audio data source for the port.
 
 

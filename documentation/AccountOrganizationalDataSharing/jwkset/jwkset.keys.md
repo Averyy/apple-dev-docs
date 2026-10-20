@@ -1,7 +1,8 @@
 # JWKSet.Keys
 
 **Framework**: Account & Organizational Data Sharing  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Dictionary
 
 An object that defines a single JSON Web Key.
 
@@ -10,13 +11,13 @@ An object that defines a single JSON Web Key.
 
 ## Declaration
 
-```swift
+```
 object JWKSet.Keys
 ```
 
 #### Overview
 
-JWK is an open standard ([`RFC 7517`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc7517)) that defines a data structure to represent cryptographic keys.
+JWK is an open standard ([RFC 7517](https://www.rfc-editor.org/rfc/rfc7517)) that defines a data structure to represent cryptographic keys.
 
 ## Properties
 

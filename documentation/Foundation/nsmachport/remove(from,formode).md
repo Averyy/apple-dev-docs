@@ -1,7 +1,8 @@
 # remove(from:forMode:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the receiver from the run loop mode `mode` of `runLoop`.
 
@@ -20,6 +21,10 @@ Removes the receiver from the run loop mode `mode` of `runLoop`.
 func remove(from runLoop: RunLoop, forMode mode: RunLoop.Mode)
 ```
 
+```objc
+- (void) removeFromRunLoop:(NSRunLoop *) runLoop forMode:(NSRunLoopMode) mode;
+```
+
 #### Discussion
 
 When the receiver is removed, the run loop stops monitoring the Mach port for incoming messages.
@@ -31,7 +36,8 @@ When the receiver is removed, the run loop stops monitoring the Mach port for in
 
 ## See Also
 
-- [func schedule(in: RunLoop, forMode: RunLoop.Mode)](nsmachport/schedule(in:formode:).md)
+### Scheduling the Port on a Run Loop
+- [func schedule(in: RunLoop, forMode: RunLoop.Mode)](./schedule%28in,formode%29.md)
   Schedules the receiver into the run loop mode `mode` of `runLoop`.
 
 

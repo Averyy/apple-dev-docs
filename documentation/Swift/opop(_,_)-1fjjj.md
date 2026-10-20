@@ -1,7 +1,8 @@
 # ??(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Performs a nil-coalescing operation, returning the wrapped value of an `Optional` instance or a default `Optional` value.
 
@@ -54,7 +55,8 @@ If `userPrefs[greetingKey]` has a value, that value is assigned to `greeting`. I
 
 ## See Also
 
-- [func ?? <T>(consuming T?, @autoclosure () throws -> T) rethrows -> T](__(_:_:)-9xjze.md)
+### Coalescing Nil Values
+- [func ?? <T>(consuming T?, @autoclosure () throws -> T) rethrows -> T](./opop%28_,_%29-9xjze.md)
   Performs a nil-coalescing operation, returning the wrapped value of an `Optional` instance or a default value.
 
 

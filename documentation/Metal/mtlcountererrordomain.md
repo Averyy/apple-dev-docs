@@ -1,7 +1,8 @@
 # MTLCounterErrorDomain
 
 **Framework**: Metal  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for Metal counter sample buffer errors.
 
@@ -17,6 +18,10 @@ The domain for Metal counter sample buffer errors.
 
 ```swift
 let MTLCounterErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const MTLCounterErrorDomain;
 ```
 
 

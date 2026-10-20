@@ -1,12 +1,13 @@
 # delegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate for all text views sharing the receiver’s layout manager.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ The delegate for all text views sharing the receiver’s layout manager.
 weak var delegate: (any NSTextViewDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSTextViewDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol NSTextViewDelegate](nstextviewdelegate.md)
+### Managing the text view’s content
+- [protocol NSTextViewDelegate](../nstextviewdelegate.md)
   A set of optional methods that text view delegates can use to manage selection, set text attributes, work with the spell checker, and more.
 
 

@@ -1,14 +1,15 @@
 # kBluetoothLESecurityManagerCommandCodePairingDHKeyCheck
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothLESecurityManagerCommandCodePairingDHKeyCheck = 0x0D
 ```
 

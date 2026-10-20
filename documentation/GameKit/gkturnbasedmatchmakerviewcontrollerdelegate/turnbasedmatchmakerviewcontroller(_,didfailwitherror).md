@@ -2,6 +2,7 @@
 
 **Framework**: GameKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles when an error occurs while the local player invites other players.
@@ -20,6 +21,10 @@ Handles when an error occurs while the local player invites other players.
 func turnBasedMatchmakerViewController(_ viewController: GKTurnBasedMatchmakerViewController, didFailWithError error: any Error)
 ```
 
+```objc
+- (void) turnBasedMatchmakerViewController:(GKTurnBasedMatchmakerViewController *) viewController didFailWithError:(NSError *) error;
+```
+
 #### Discussion
 
 This method needs to dismiss the view controller.
@@ -31,7 +36,8 @@ This method needs to dismiss the view controller.
 
 ## See Also
 
-- [func turnBasedMatchmakerViewControllerWasCancelled(GKTurnBasedMatchmakerViewController)](gkturnbasedmatchmakerviewcontrollerdelegate/turnbasedmatchmakerviewcontrollerwascancelled(_:).md)
+### Handling Cancellation and Errors
+- [func turnBasedMatchmakerViewControllerWasCancelled(GKTurnBasedMatchmakerViewController)](./turnbasedmatchmakerviewcontrollerwascancelled%28_%29.md)
   Handles when the player dismisses the view controller without inviting players.
 
 

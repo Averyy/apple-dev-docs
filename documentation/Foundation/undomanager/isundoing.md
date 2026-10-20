@@ -1,7 +1,8 @@
 # isUndoing
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value that indicates whether the manager is in the process of performing an undo action.
 
@@ -20,13 +21,18 @@ Returns a Boolean value that indicates whether the manager is in the process of 
 var isUndoing: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isUndoing) BOOL undoing;
+```
+
 #### Discussion
 
-The value is [`true`](https://developer.apple.com/documentation/swift/true) if the manager is performing its [`undo()`](undomanager/undo().md) or [`undoNestedGroup()`](undomanager/undonestedgroup().md) method, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+The value is [`true`](../../Swift/true.md) if the manager is performing its [`undo()`](./undo%28%29.md) or [`undoNestedGroup()`](./undonestedgroup%28%29.md) method, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isRedoing: Bool](undomanager/isredoing.md)
+### Checking whether undo or redo is in process
+- [var isRedoing: Bool](./isredoing.md)
   Returns a Boolean value that indicates whether the manager is in the process of performing a redo action.
 
 

@@ -1,7 +1,8 @@
 # stiffness
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The spring stiffness coefficient.
 
@@ -19,19 +20,24 @@ The spring stiffness coefficient.
 var stiffness: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat stiffness;
+```
+
 #### Discussion
 
-The default stiffness coefficient is `100`. Increasing the [`stiffness`](caspringanimation/stiffness.md) reduces the number of oscillations and will reduce the settling duration. Decreasing the [`stiffness`](caspringanimation/stiffness.md) increases the the number of oscillations and will increase the settling duration.
+The default stiffness coefficient is `100`. Increasing the [`stiffness`](./stiffness.md) reduces the number of oscillations and will reduce the settling duration. Decreasing the [`stiffness`](./stiffness.md) increases the the number of oscillations and will increase the settling duration.
 
 ## See Also
 
-- [var damping: CGFloat](caspringanimation/damping.md)
+### Configuring Physical Attributes
+- [var damping: CGFloat](./damping.md)
   Defines how the spring’s motion should be damped due to the forces of friction.
-- [var initialVelocity: CGFloat](caspringanimation/initialvelocity.md)
+- [var initialVelocity: CGFloat](./initialvelocity.md)
   The initial velocity of the object attached to the spring.
-- [var mass: CGFloat](caspringanimation/mass.md)
+- [var mass: CGFloat](./mass.md)
   The mass of the object attached to the end of the spring.
-- [var settlingDuration: CFTimeInterval](caspringanimation/settlingduration.md)
+- [var settlingDuration: CFTimeInterval](./settlingduration.md)
   The estimated duration required for the spring system to be considered at rest.
 
 

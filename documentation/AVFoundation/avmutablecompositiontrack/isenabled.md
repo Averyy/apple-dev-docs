@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the tracks is in an enabled state.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether the tracks is in an enabled state.
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 ## See Also
 
-- [var naturalTimeScale: CMTimeScale](avmutablecompositiontrack/naturaltimescale.md)
+### Configuring track properties
+- [var naturalTimeScale: CMTimeScale](./naturaltimescale.md)
   The time scale in which you can perform time-based operations without extra numerical conversion.
-- [var languageCode: String?](avmutablecompositiontrack/languagecode.md)
+- [var languageCode: String?](./languagecode.md)
   The language associated with the track, as an ISO 639-2/T language code.
-- [var extendedLanguageTag: String?](avmutablecompositiontrack/extendedlanguagetag.md)
+- [var extendedLanguageTag: String?](./extendedlanguagetag.md)
   The language tag associated with the track, as an RFC 4646 language tag.
-- [var preferredTransform: CGAffineTransform](avmutablecompositiontrack/preferredtransform.md)
+- [var preferredTransform: CGAffineTransform](./preferredtransform.md)
   The preferred transformation of the visual media data for display purposes.
-- [var preferredVolume: Float](avmutablecompositiontrack/preferredvolume.md)
+- [var preferredVolume: Float](./preferredvolume.md)
   The volume the track prefers for its audible media data.
 
 

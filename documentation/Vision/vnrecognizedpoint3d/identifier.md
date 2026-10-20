@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier that provides context about what kind of point the request recognizes.
 
@@ -17,6 +18,10 @@ The identifier that provides context about what kind of point the request recogn
 
 ```swift
 var identifier: VNRecognizedPointKey { get }
+```
+
+```objc
+@property (copy, readonly) VNRecognizedPointKey identifier;
 ```
 
 

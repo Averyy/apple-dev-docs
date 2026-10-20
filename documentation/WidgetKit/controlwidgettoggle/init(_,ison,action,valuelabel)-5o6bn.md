@@ -1,7 +1,8 @@
 # init(_:isOn:action:valueLabel:)
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toggle template for a control.
 
@@ -19,6 +20,8 @@ Creates a toggle template for a control.
 @preconcurrency init(_ titleKey: LocalizedStringKey, isOn: Bool, action: Action, @ViewBuilder valueLabel: @escaping (Bool) -> ValueLabel) where Action : SetValueIntent, Action.ValueType == Bool
 ```
 
+Available when `Label` is `Text` and `ValueLabel` conforms to `View`.
+
 ## Parameters
 
 - `titleKey`: The key to a localized string to display as the title of the toggle.
@@ -28,13 +31,14 @@ Creates a toggle template for a control.
 
 ## See Also
 
-- [init(isOn: Bool, action: Action, label: () -> Label)](controlwidgettoggle/init(ison:action:label:).md)
+### Initializers
+- [init(isOn: Bool, action: Action, label: () -> Label)](./init%28ison,action,label%29.md)
   Creates a toggle template for a control.
-- [init(isOn: Bool, action: Action, label: () -> Label, valueLabel: (Bool) -> ValueLabel)](controlwidgettoggle/init(ison:action:label:valuelabel:).md)
+- [init(isOn: Bool, action: Action, label: () -> Label, valueLabel: (Bool) -> ValueLabel)](./init%28ison,action,label,valuelabel%29.md)
   Creates a toggle template for a control.
-- [init(some StringProtocol, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](controlwidgettoggle/init(_:ison:action:valuelabel:)-33wfq.md)
+- [init(some StringProtocol, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](./init%28_,ison,action,valuelabel%29-33wfq.md)
   Creates a toggle template for a control.
-- [init(LocalizedStringResource, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](controlwidgettoggle/init(_:ison:action:valuelabel:)-4lk32.md)
+- [init(LocalizedStringResource, isOn: Bool, action: Action, valueLabel: (Bool) -> ValueLabel)](./init%28_,ison,action,valuelabel%29-4lk32.md)
   Creates a toggle template for a control.
 
 

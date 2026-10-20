@@ -1,7 +1,8 @@
 # Schema.Attribute
 
 **Framework**: SwiftData  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes the configuration and behavior of a specific property of a model class.
 
@@ -24,37 +25,38 @@ class Attribute
 ## Topics
 
 ### Creating an attribute
-- [init(Schema.Attribute.Option..., originalName: String?, hashModifier: String?)](schema/attribute/init(_:originalname:hashmodifier:).md)
-- [init(name: String, originalName: String?, options: [Schema.Attribute.Option], valueType: any Any.Type, defaultValue: Any?, hashModifier: String?)](schema/attribute/init(name:originalname:options:valuetype:defaultvalue:hashmodifier:).md)
+- [init(Schema.Attribute.Option..., originalName: String?, hashModifier: String?)](./attribute/init%28_,originalname,hashmodifier%29.md)
+- [init(name: String, originalName: String?, options: [Schema.Attribute.Option], valueType: any Any.Type, defaultValue: Any?, hashModifier: String?)](./attribute/init%28name,originalname,options,valuetype,defaultvalue,hashmodifier%29.md)
 ### Specifying value information
-- [var defaultValue: Any?](schema/attribute/defaultvalue.md)
+- [var defaultValue: Any?](./attribute/defaultvalue.md)
 ### Determining behavior
-- [var options: [Schema.Attribute.Option]](schema/attribute/options.md)
-- [var isTransformable: Bool](schema/attribute/istransformable.md)
+- [var options: [Schema.Attribute.Option]](./attribute/options.md)
+- [var isTransformable: Bool](./attribute/istransformable.md)
 ### Versioning
-- [var hashModifier: String?](schema/attribute/hashmodifier.md)
+- [var hashModifier: String?](./attribute/hashmodifier.md)
 ### Structures
-- [Schema.Attribute.Option](schema/attribute/option.md)
+- [Schema.Attribute.Option](./attribute/option.md)
 ### Instance Properties
-- [var isCodable: Bool](schema/attribute/iscodable.md)
+- [var isCodable: Bool](./attribute/iscodable.md)
 
 ## Relationships
 
 ### Inherited By
-- [Schema.CompositeAttribute](schema/compositeattribute.md)
+- [Schema.CompositeAttribute](./compositeattribute.md)
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [SchemaProperty](schemaproperty.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [SchemaProperty](../schemaproperty.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Schema.CompositeAttribute](schema/compositeattribute.md)
+### Attributes
+- [Schema.CompositeAttribute](./compositeattribute.md)
   An object that describes an attribute that derives its value by composing other attributes.
 
 

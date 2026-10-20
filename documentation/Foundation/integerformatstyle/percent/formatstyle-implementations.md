@@ -1,13 +1,14 @@
 # FormatStyle Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func format(Value) -> String](integerformatstyle/percent/format(_:).md)
+- [func format(Value) -> String](./format%28_%29.md)
   Formats an integer, using this style.
-- [func locale(Locale) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/locale(_:).md)
+- [func locale(Locale) -> IntegerFormatStyle<Value>.Percent](./locale%28_%29.md)
   Modifies the format style to use the specified locale.
 
 

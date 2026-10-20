@@ -1,7 +1,8 @@
 # MTL4CommandQueueError.Code.outOfMemory
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the GPU doesn’t have sufficient memory to execute a command buffer.
 
@@ -17,6 +18,10 @@ Indicates the GPU doesn’t have sufficient memory to execute a command buffer.
 
 ```swift
 case outOfMemory
+```
+
+```c
+MTL4CommandQueueErrorOutOfMemory
 ```
 
 

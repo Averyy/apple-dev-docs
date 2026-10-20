@@ -1,7 +1,8 @@
 # id
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier that relates the request to a conversation in the FaceTime framework.
 
@@ -20,7 +21,8 @@ let id: UUID
 
 ## See Also
 
-- [let url: URL](liveassistancerequest/url.md)
+### Working with request properties
+- [let url: URL](./url.md)
   The FaceTime-generated URL for this request.
 
 

@@ -1,7 +1,8 @@
 # black
 
 **Framework**: FinanceKitUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A black button with white lettering.
 
@@ -18,7 +19,8 @@ static let black: AddOrderToWalletButtonStyle
 
 ## See Also
 
-- [static let blackOutline: AddOrderToWalletButtonStyle](addordertowalletbuttonstyle/blackoutline.md)
+### Type Properties
+- [static let blackOutline: AddOrderToWalletButtonStyle](./blackoutline.md)
   A black button with a light outline.
 
 

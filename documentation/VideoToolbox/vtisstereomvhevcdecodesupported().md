@@ -1,7 +1,8 @@
 # VTIsStereoMVHEVCDecodeSupported()
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether the system supports MV-HEVC decoding.
 
@@ -19,17 +20,22 @@ Returns a Boolean value that indicates whether the system supports MV-HEVC decod
 func VTIsStereoMVHEVCDecodeSupported() -> Bool
 ```
 
+```c
+extern Boolean VTIsStereoMVHEVCDecodeSupported();
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the system supports MV-HEVC decoding; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if the system supports MV-HEVC decoding; otherwise, [`false`](../Swift/false.md).
 
 #### Discussion
 
-A return value of [`true`](https://developer.apple.com/documentation/swift/true) doesn’t guarantee that decoding resources are available at all times.
+A return value of [`true`](../Swift/true.md) doesn’t guarantee that decoding resources are available at all times.
 
 ## See Also
 
-- [typealias VTDecompressionMultiImageCapableOutputHandler](vtdecompressionmultiimagecapableoutputhandler.md)
+### Decoding Multi-Image Frames
+- [typealias VTDecompressionMultiImageCapableOutputHandler](./vtdecompressionmultiimagecapableoutputhandler.md)
   A type alias for callback that the system invokes when it finishes decompressing a frame.
 
 

@@ -1,7 +1,8 @@
 # TimeCode
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A format for a stream of time stamps.
 
@@ -10,19 +11,20 @@ A format for a stream of time stamps.
 
 ## Declaration
 
-```swift
+```c
 TimeCode
 ```
 
 #### Discussion
 
-This format describes a stream of [`IOAudioTimeStamp`](https://developer.apple.com/documentation/iokit/ioaudiotimestamp) valuess, using the [`IOAudioTimeStamp`](https://developer.apple.com/documentation/iokit/ioaudiotimestamp) flags.
+This format describes a stream of [`IOAudioTimeStamp`](../../../iokit/ioaudiotimestamp.md) valuess, using the [`IOAudioTimeStamp`](../../../iokit/ioaudiotimestamp.md) flags.
 
 ## See Also
 
-- [MIDIStream](audiodriverkit/iouseraudioformatid/midistream.md)
+### Non-Sample Formats
+- [MIDIStream](./midistream.md)
   A format for a stream of MIDI packet lists.
-- [ParameterValueStream](audiodriverkit/iouseraudioformatid/parametervaluestream.md)
+- [ParameterValueStream](./parametervaluestream.md)
   A format for a side-chain of 32-bit floating-point data.
 
 

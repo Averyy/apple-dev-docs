@@ -1,27 +1,29 @@
 # BluetoothSDPPDUID
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef uint8_t BluetoothSDPPDUID;
 ```
 
 ## See Also
 
-- [BluetoothSDPDataElementSizeDescriptor](bluetoothsdpdataelementsizedescriptor.md)
-- [BluetoothSDPDataElementTypeDescriptor](bluetoothsdpdataelementtypedescriptor.md)
-- [BluetoothSDPErrorCode](bluetoothsdperrorcode.md)
-- [BluetoothSDPServiceAttributeID](bluetoothsdpserviceattributeid.md)
-- [BluetoothSDPServiceRecordHandle](bluetoothsdpservicerecordhandle.md)
-- [BluetoothSDPTransactionID](bluetoothsdptransactionid.md)
-- [BluetoothSDPUUID16](bluetoothsdpuuid16.md)
-- [BluetoothSDPUUID32](bluetoothsdpuuid32.md)
+### Service Discovery Protocol (SPD)
+- [BluetoothSDPDataElementSizeDescriptor](./bluetoothsdpdataelementsizedescriptor.md)
+- [BluetoothSDPDataElementTypeDescriptor](./bluetoothsdpdataelementtypedescriptor.md)
+- [BluetoothSDPErrorCode](./bluetoothsdperrorcode.md)
+- [BluetoothSDPServiceAttributeID](./bluetoothsdpserviceattributeid.md)
+- [BluetoothSDPServiceRecordHandle](./bluetoothsdpservicerecordhandle.md)
+- [BluetoothSDPTransactionID](./bluetoothsdptransactionid.md)
+- [BluetoothSDPUUID16](./bluetoothsdpuuid16.md)
+- [BluetoothSDPUUID32](./bluetoothsdpuuid32.md)
 
 
 ---

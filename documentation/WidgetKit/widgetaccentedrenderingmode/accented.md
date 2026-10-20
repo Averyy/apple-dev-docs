@@ -1,7 +1,8 @@
 # accented
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the `Image` should be included as part of the accented widget group.
 
@@ -21,7 +22,7 @@ static let accented: WidgetAccentedRenderingMode
 
 ## Mentions
 
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](../optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
 
 #### Discussion
 

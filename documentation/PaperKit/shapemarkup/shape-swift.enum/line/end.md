@@ -1,7 +1,8 @@
 # end
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ending point in unit coordinate space.
 

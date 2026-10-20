@@ -1,7 +1,8 @@
 # audioTracks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tracks from which the output reads audio.
 
@@ -19,9 +20,14 @@ The tracks from which the output reads audio.
 var audioTracks: [AVAssetTrack] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVAssetTrack *> * audioTracks;
+```
+
 ## See Also
 
-- [var audioSettings: [String : Any]?](avassetreaderaudiomixoutput/audiosettings.md)
+### Inspecting an output
+- [var audioSettings: [String : Any]?](./audiosettings.md)
   The audio settings that the output uses.
 
 

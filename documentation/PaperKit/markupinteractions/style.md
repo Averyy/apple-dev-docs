@@ -1,7 +1,8 @@
 # style
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Allows style changes.
 
@@ -20,15 +21,16 @@ static let style: MarkupInteractions
 
 ## See Also
 
-- [static let rotate: MarkupInteractions](markupinteractions/rotate.md)
+### Configuring interactions
+- [static let rotate: MarkupInteractions](./rotate.md)
   Allows rotation.
-- [static let resize: MarkupInteractions](markupinteractions/resize.md)
+- [static let resize: MarkupInteractions](./resize.md)
   Allows resizing.
-- [static let move: MarkupInteractions](markupinteractions/move.md)
+- [static let move: MarkupInteractions](./move.md)
   Allows moving.
-- [static let delete: MarkupInteractions](markupinteractions/delete.md)
+- [static let delete: MarkupInteractions](./delete.md)
   Allows deletion.
-- [static let select: MarkupInteractions](markupinteractions/select.md)
+- [static let select: MarkupInteractions](./select.md)
   Allows selection.
 
 

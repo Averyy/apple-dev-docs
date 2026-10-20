@@ -1,7 +1,8 @@
 # edges
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The acceptable starting edges for the gesture.
 
@@ -16,9 +17,13 @@ The acceptable starting edges for the gesture.
 var edges: UIRectEdge { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIRectEdge edges;
+```
+
 ## Mentions
 
-- [Handling pan gestures](handling-pan-gestures.md)
+- [Handling pan gestures](../handling-pan-gestures.md)
 
 #### Discussion
 
@@ -26,7 +31,8 @@ The edges you specify are always relative to the app’s current interface orien
 
 ## See Also
 
-- [struct UIRectEdge](uirectedge.md)
+### Specifying the starting edges
+- [struct UIRectEdge](../uirectedge.md)
   Constants that specify the edges of a rectangle.
 
 

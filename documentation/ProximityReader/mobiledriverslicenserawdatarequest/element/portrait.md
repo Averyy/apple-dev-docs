@@ -1,7 +1,8 @@
 # portrait
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The portrait of the mobile driver’s license holder on record with the issuer.
 

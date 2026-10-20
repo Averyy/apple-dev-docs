@@ -1,12 +1,13 @@
 # tvOS 14.5 Release Notes
 
-**Framework**: tvOS Release Notes
+**Framework**: tvOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 14.5 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 14.5. The SDK comes bundled with Xcode 12.5. For information on the compatibility requirements for Xcode 12.5, see [`Xcode 12.5 Release Notes`](https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-release-notes).
+The tvOS 14.5 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 14.5. The SDK comes bundled with Xcode 12.5. For information on the compatibility requirements for Xcode 12.5, see [Xcode 12.5 Release Notes](../Xcode-Release-Notes/xcode-12_5-release-notes.md).
 
 ##### Accessibility
 
@@ -18,30 +19,30 @@ The tvOS 14.5 SDK provides support to develop tvOS apps for Apple TV devices run
 
 ###### Resolved Issues
 
-- Using [`Published`](https://developer.apple.com/documentation/combine/published) in a subclass of a type conforming to [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject) now correctly publishes changes. (70305995)
+- Using [`Published`](../Combine/published.md) in a subclass of a type conforming to [`ObservableObject`](../Combine/observableobject.md) now correctly publishes changes. (70305995)
 
-##### Swiftui
+##### SwiftUI
 
 ###### New Features
 
-- Added [`TitleAndIconLabelStyle`](https://developer.apple.com/documentation/swiftui/titleandiconlabelstyle), a new style for [`Label`](https://developer.apple.com/documentation/swiftui/label) views that shows both the title and icon of the label using a system-standard layout. In most cases, labels show both title and icon by default. However, some containers might apply a different default label style to their content, such as only showing icons within toolbars on macOS and iOS. To opt in to showing both the title and the icon, apply the title and icon label style: `Label("Lightning", systemImage: "bolt.fill").labelStyle(TitleAndIconLabelStyle())`. (64646578)
-- Types conforming to any style protocol, such as [`ButtonStyle`](https://developer.apple.com/documentation/swiftui/buttonstyle) or [`ToggleStyle`](https://developer.apple.com/documentation/swiftui/togglestyle), are now enforced to be value types. Styles must be structures or enumerations, not classes, and conforming a class to a style protocol may trigger an assertion. This is the same restriction that the system has always enforced on types conforming to [`View`](https://developer.apple.com/documentation/swiftui/view). (62886135)
+- Added [`TitleAndIconLabelStyle`](../SwiftUI/titleandiconlabelstyle.md), a new style for [`Label`](../SwiftUI/label.md) views that shows both the title and icon of the label using a system-standard layout. In most cases, labels show both title and icon by default. However, some containers might apply a different default label style to their content, such as only showing icons within toolbars on macOS and iOS. To opt in to showing both the title and the icon, apply the title and icon label style: `Label("Lightning", systemImage: "bolt.fill").labelStyle(TitleAndIconLabelStyle())`. (64646578)
+- Types conforming to any style protocol, such as [`ButtonStyle`](../SwiftUI/buttonstyle.md) or [`ToggleStyle`](../SwiftUI/togglestyle.md), are now enforced to be value types. Styles must be structures or enumerations, not classes, and conforming a class to a style protocol may trigger an assertion. This is the same restriction that the system has always enforced on types conforming to [`View`](../SwiftUI/view.md). (62886135)
 
 ###### Resolved Issues
 
-- You can now apply multiple [`sheet(isPresented:onDismiss:content:)`](https://developer.apple.com/documentation/swiftui/view/sheet(ispresented:ondismiss:content:)) and [`fullScreenCover(item:onDismiss:content:)`](https://developer.apple.com/documentation/swiftui/view/fullscreencover(item:ondismiss:content:)) modifiers in the same view hierarchy. (74246633)
-- Dynamic properties such as [`State`](https://developer.apple.com/documentation/swiftui/state), [`Environment`](https://developer.apple.com/documentation/swiftui/environment), and others now work correctly in [`ButtonStyle`](https://developer.apple.com/documentation/swiftui/buttonstyle) instances. (62886135)
-- [`ProgressView`](https://developer.apple.com/documentation/swiftui/progressview) instances initialized with a [`Progress`](https://developer.apple.com/documentation/foundation/progress) object now correctly track updates to the `Progress` object from background threads, and no longer issue a “not allowed” console warning. (69999449)
-- [`InlinePickerStyle`](https://developer.apple.com/documentation/swiftui/inlinepickerstyle) now resolves as an in-line section if applied to a [`Picker`](https://developer.apple.com/documentation/swiftui/picker) within a [`List`](https://developer.apple.com/documentation/swiftui/list) on iOS, watchOS, and tvOS, using a checkmark to indicate the selected option. (71383311)
-- [`AppStorage`](https://developer.apple.com/documentation/swiftui/appstorage) property wrappers now work as expected when contained inside an [`ObservableObject`](https://developer.apple.com/documentation/combine/observableobject), causing the system to emit the `objectWillChange` publisher. (65562845)
-- Using [`scrollTo(_:anchor:)`](https://developer.apple.com/documentation/swiftui/scrollviewproxy/scrollto(_:anchor:)) without specifying an anchor now scrolls the [`List`](https://developer.apple.com/documentation/swiftui/list) the minimum amount to make it visible. (70184639)
+- You can now apply multiple [`sheet(isPresented:onDismiss:content:)`](../SwiftUI/view/sheet%28ispresented,ondismiss,content%29.md) and [`fullScreenCover(item:onDismiss:content:)`](../SwiftUI/view/fullscreencover%28item,ondismiss,content%29.md) modifiers in the same view hierarchy. (74246633)
+- Dynamic properties such as [`State`](../SwiftUI/state.md), [`Environment`](../SwiftUI/environment.md), and others now work correctly in [`ButtonStyle`](../SwiftUI/buttonstyle.md) instances. (62886135)
+- [`ProgressView`](../SwiftUI/progressview.md) instances initialized with a [`Progress`](../Foundation/progress.md) object now correctly track updates to the `Progress` object from background threads, and no longer issue a “not allowed” console warning. (69999449)
+- [`InlinePickerStyle`](../SwiftUI/inlinepickerstyle.md) now resolves as an in-line section if applied to a [`Picker`](../SwiftUI/picker.md) within a [`List`](../SwiftUI/list.md) on iOS, watchOS, and tvOS, using a checkmark to indicate the selected option. (71383311)
+- [`AppStorage`](../SwiftUI/appstorage.md) property wrappers now work as expected when contained inside an [`ObservableObject`](../Combine/observableobject.md), causing the system to emit the `objectWillChange` publisher. (65562845)
+- Using [`scrollTo(_:anchor:)`](../SwiftUI/scrollviewproxy/scrollto%28_,anchor%29.md) without specifying an anchor now scrolls the [`List`](../SwiftUI/list.md) the minimum amount to make it visible. (70184639)
 
-##### Uikit
+##### UIKit
 
 ###### Resolved Issues
 
-- [`leadingAccessoryView`](https://developer.apple.com/documentation/uikit/uitabbar/leadingaccessoryview) and [`trailingAccessoryView`](https://developer.apple.com/documentation/uikit/uitabbar/trailingaccessoryview) in [`UITabBar`](https://developer.apple.com/documentation/uikit/uitabbar) now appear correctly with right-to-left languages. (66755869)
-- In a [`UICollectionView`](https://developer.apple.com/documentation/uikit/uicollectionview), the focusability of a cell no longer depends on the delegate returning `YES` from the [`collectionView(_:shouldHighlightItemAt:)`](https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/collectionview(_:shouldhighlightitemat:)) and [`collectionView(_:shouldSelectItemAt:)`](https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/collectionview(_:shouldselectitemat:)) methods if they are implemented and [`collectionView(_:canFocusItemAt:)`](https://developer.apple.com/documentation/uikit/uicollectionviewdelegate/collectionview(_:canfocusitemat:)) method is not implemented. (70245159)
+- [`leadingAccessoryView`](../UIKit/uitabbar/leadingaccessoryview.md) and [`trailingAccessoryView`](../UIKit/uitabbar/trailingaccessoryview.md) in [`UITabBar`](../UIKit/uitabbar.md) now appear correctly with right-to-left languages. (66755869)
+- In a [`UICollectionView`](../UIKit/uicollectionview.md), the focusability of a cell no longer depends on the delegate returning `YES` from the [`collectionView(_:shouldHighlightItemAt:)`](../UIKit/uicollectionviewdelegate/collectionview%28_,shouldhighlightitemat%29.md) and [`collectionView(_:shouldSelectItemAt:)`](../UIKit/uicollectionviewdelegate/collectionview%28_,shouldselectitemat%29.md) methods if they are implemented and [`collectionView(_:canFocusItemAt:)`](../UIKit/uicollectionviewdelegate/collectionview%28_,canfocusitemat%29.md) method is not implemented. (70245159)
 
 ##### Xcode
 
@@ -51,17 +52,18 @@ The tvOS 14.5 SDK provides support to develop tvOS apps for Apple TV devices run
 
 ## See Also
 
-- [tvOS 14.7 Release Notes](tvos-14_7-release-notes.md)
+### tvOS 14
+- [tvOS 14.7 Release Notes](./tvos-14_7-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 14.6 Release Notes](tvos-14_6-release-notes.md)
+- [tvOS 14.6 Release Notes](./tvos-14_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 14.4 Release Notes](tvos-14_4-release-notes.md)
+- [tvOS 14.4 Release Notes](./tvos-14_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 14.3 Release Notes](tvos-14_3-release-notes.md)
+- [tvOS 14.3 Release Notes](./tvos-14_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 14.2 Release Notes](tvos-14_2-release-notes.md)
+- [tvOS 14.2 Release Notes](./tvos-14_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 14 Release Notes](tvos-14-release-notes.md)
+- [tvOS 14 Release Notes](./tvos-14-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

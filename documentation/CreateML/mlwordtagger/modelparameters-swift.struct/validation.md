@@ -1,7 +1,8 @@
 # validation
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The validation dataset.
 
@@ -16,15 +17,16 @@ var validation: MLWordTagger.ModelParameters.ValidationData { get set }
 
 #### Discussion
 
-The default value is an [`MLWordTagger.ModelParameters.ValidationData.split(strategy:)`](mlwordtagger/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md) instance with the [`MLSplitStrategy.automatic`](mlsplitstrategy/automatic.md) split strategy``, which automatically generates the validation dataset by partitioning up to 10% of the training dataset.
+The default value is an [`MLWordTagger.ModelParameters.ValidationData.split(strategy:)`](./validationdata-swift.enum/split%28strategy%29.md) instance with the [`MLSplitStrategy.automatic`](../../mlsplitstrategy/automatic.md) split strategy``, which automatically generates the validation dataset by partitioning up to 10% of the training dataset.
 
 ## See Also
 
-- [var algorithm: MLWordTagger.ModelAlgorithmType](mlwordtagger/modelparameters-swift.struct/algorithm.md)
+### Accessing parameters
+- [var algorithm: MLWordTagger.ModelAlgorithmType](./algorithm.md)
   The algorithm type.
-- [var language: NLLanguage?](mlwordtagger/modelparameters-swift.struct/language.md)
+- [var language: NLLanguage?](./language.md)
   The language setting.
-- [var maxIterations: Int?](mlwordtagger/modelparameters-swift.struct/maxiterations.md)
+- [var maxIterations: Int?](./maxiterations.md)
   The maximum training iterations.
 
 

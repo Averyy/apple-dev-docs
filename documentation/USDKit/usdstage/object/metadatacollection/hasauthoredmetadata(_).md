@@ -1,7 +1,8 @@
 # hasAuthoredMetadata(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether metadata for the given key has an authored value.
 

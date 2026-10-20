@@ -1,7 +1,8 @@
 # a
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,9 +21,10 @@ let a: A
 
 ## See Also
 
-- [let b: B](publishers/combinelatest4/b.md)
-- [let c: C](publishers/combinelatest4/c.md)
-- [let d: D](publishers/combinelatest4/d.md)
+### Inspecting publisher properties
+- [let b: B](./b.md)
+- [let c: C](./c.md)
+- [let d: D](./d.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AgeRangeService.Error.network
 
 **Framework**: Declared Age Range  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a network or server issue prevented completing the age range request.
 

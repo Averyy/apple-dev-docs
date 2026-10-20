@@ -1,7 +1,8 @@
 # action
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action of the On Demand Rule.
 
@@ -19,13 +20,18 @@ The action of the On Demand Rule.
 var action: NEOnDemandRuleAction { get }
 ```
 
+```objc
+@property (readonly) NEOnDemandRuleAction action;
+```
+
 #### Discussion
 
 The action of the On Demand Rule represents the behavior for triggering the corresponding VPN when the rule conditions are matched.
 
 ## See Also
 
-- [enum NEOnDemandRuleAction](neondemandruleaction.md)
+### Accessing the rule action
+- [enum NEOnDemandRuleAction](../neondemandruleaction.md)
 
 
 ---

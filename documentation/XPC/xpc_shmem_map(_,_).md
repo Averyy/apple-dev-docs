@@ -1,7 +1,8 @@
 # xpc_shmem_map(_:_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Maps the region that the XPC shared memory object boxes into the caller’s address space.
 
@@ -10,7 +11,7 @@ Maps the region that the XPC shared memory object boxes into the caller’s addr
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Maps the region that the XPC shared memory object boxes into the caller’s addr
 
 ```swift
 func xpc_shmem_map(_ xshmem: xpc_object_t, _ region: UnsafeMutablePointer<UnsafeMutableRawPointer?>) -> Int
+```
+
+```c
+extern size_t xpc_shmem_map(xpc_object_t xshmem, void **region);
 ```
 
 #### Return Value
@@ -37,7 +42,8 @@ It is the responsibility of the caller to manage protections on the new region a
 
 ## See Also
 
-- [func xpc_shmem_create(UnsafeMutableRawPointer, Int) -> xpc_object_t](xpc_shmem_create(_:_:).md)
+### Shared memory objects
+- [func xpc_shmem_create(UnsafeMutableRawPointer, Int) -> xpc_object_t](./xpc_shmem_create%28_,_%29.md)
   Creates an XPC object that represents the specified shared memory region.
 
 

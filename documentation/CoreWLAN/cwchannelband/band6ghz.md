@@ -1,7 +1,8 @@
 # CWChannelBand.band6GHz
 
 **Framework**: Core WLAN  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 case band6GHz
+```
+
+```c
+kCWChannelBand6GHz
 ```
 
 

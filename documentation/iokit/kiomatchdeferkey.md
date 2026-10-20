@@ -1,7 +1,8 @@
 # kIOMatchDeferKey
 
 **Framework**: IOKit  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var kIOMatchDeferKey: String { get }
+```
+
+```c
+#define kIOMatchDeferKey
 ```
 
 

@@ -1,7 +1,8 @@
 # kMDItemXMPDigitalSourceType
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 let kMDItemXMPDigitalSourceType: CFString!
+```
+
+```c
+const CFStringRef kMDItemXMPDigitalSourceType;
 ```
 
 

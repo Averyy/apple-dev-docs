@@ -1,7 +1,8 @@
 # DequeueWithCoalesce
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Removes the next queue entry, but doesn't automatically send notifications.
 
@@ -11,34 +12,35 @@ Removes the next queue entry, but doesn't automatically send notifications.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t DequeueWithCoalesce(bool *sendDataServiced, IODataQueueClientDequeueEntryBlock callback);
 ```
 
-#### Return_value
+#### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, [`kIOReturnUnderrun`](https://developer.apple.com/documentation/driverkit/kioreturnunderrun) if the queue is empty, or [`kIOReturnError`](https://developer.apple.com/documentation/driverkit/kioreturnerror) if the queue is corrupt. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, [`kIOReturnUnderrun`](../../DriverKit/kioreturnunderrun.md) if the queue is empty, or [`kIOReturnError`](../../DriverKit/kioreturnerror.md) if the queue is corrupt. See [Error Codes](../../DriverKit/error-codes.md). 
 
 ## Parameters
 
-- `sendDataServiced`: A Boolean value that indicates that this method would have sent a notification. Initialize the value to `false`, and then make one or more calls to this method. If the value is `true` after all of those calls, call the [`SendDataServiced`](iodataqueuedispatchsource/3438185-senddataserviced.md) method yourself to deliver the notification.
+- `sendDataServiced`: A Boolean value that indicates that this method would have sent a notification. Initialize the value to `false`, and then make one or more calls to this method. If the value is `true` after all of those calls, call the [`SendDataServiced`](./api-3438185-senddataserviced.md) method yourself to deliver the notification.
 - `callback`: The callback that you use to process the dequeued data.
 
 ## See Also
 
-- [- SetDataAvailableHandler](../driverkit/iodataqueuedispatchsource/setdataavailablehandler.md)
+### Removing Work from the Queue
+- [- SetDataAvailableHandler](../../DriverKit/iodataqueuedispatchsource/setdataavailablehandler.md)
   Sets the handler block to run when another object adds data to the queue.
-- [- DataAvailable](../driverkit/iodataqueuedispatchsource/dataavailable.md)
+- [- DataAvailable](../../DriverKit/iodataqueuedispatchsource/dataavailable.md)
   Responds to the addition of new data to the queue. 
-- [- IsDataAvailable](iodataqueuedispatchsource/3438182-isdataavailable.md)
+- [- IsDataAvailable](./api-3438182-isdataavailable.md)
   Checks whether the data queue contains data to process.
-- [- Peek](iodataqueuedispatchsource/3438183-peek.md)
+- [- Peek](./api-3438183-peek.md)
   Returns the next queue entry without removing it from the queue.
-- [- Dequeue](iodataqueuedispatchsource/3438178-dequeue.md)
+- [- Dequeue](./api-3438178-dequeue.md)
   Removes the next entry from the queue.
-- [- SendDataServiced](iodataqueuedispatchsource/3438185-senddataserviced.md)
+- [- SendDataServiced](./api-3438185-senddataserviced.md)
   Notifies interested parties that you removed data from the queue. 
-- [IODataQueueClientDequeueEntryBlock](../driverkit/iodataqueueclientdequeueentryblock.md)
+- [IODataQueueClientDequeueEntryBlock](../../DriverKit/iodataqueueclientdequeueentryblock.md)
   The handler block you use to remove data from a queue. 
 
 

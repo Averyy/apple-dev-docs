@@ -1,7 +1,8 @@
 # UIUserInterfaceIdiom.tv
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interface designed for tvOS and Apple TV.
 
@@ -18,19 +19,24 @@ An interface designed for tvOS and Apple TV.
 case tv
 ```
 
+```c
+UIUserInterfaceIdiomTV
+```
+
 ## See Also
 
-- [UIUserInterfaceIdiom.unspecified](uiuserinterfaceidiom/unspecified.md)
+### Idioms
+- [UIUserInterfaceIdiom.unspecified](./unspecified.md)
   An unspecified idiom.
-- [UIUserInterfaceIdiom.phone](uiuserinterfaceidiom/phone.md)
+- [UIUserInterfaceIdiom.phone](./phone.md)
   An interface designed for iPhone and iPod touch.
-- [UIUserInterfaceIdiom.pad](uiuserinterfaceidiom/pad.md)
+- [UIUserInterfaceIdiom.pad](./pad.md)
   An interface designed for iPad.
-- [UIUserInterfaceIdiom.carPlay](uiuserinterfaceidiom/carplay.md)
+- [UIUserInterfaceIdiom.carPlay](./carplay.md)
   An interface designed for an in-car experience.
-- [UIUserInterfaceIdiom.mac](uiuserinterfaceidiom/mac.md)
+- [UIUserInterfaceIdiom.mac](./mac.md)
   An interface designed for the Mac.
-- [UIUserInterfaceIdiom.vision](uiuserinterfaceidiom/vision.md)
+- [UIUserInterfaceIdiom.vision](./vision.md)
   An interface designed for visionOS and Apple Vision Pro.
 
 

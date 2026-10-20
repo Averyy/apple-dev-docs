@@ -1,7 +1,8 @@
 # name
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the submesh.
 
@@ -17,6 +18,10 @@ The name of the submesh.
 
 ```swift
 var name: String { get set }
+```
+
+```objc
+@property (nonatomic, copy, nonnull) NSString * name;
 ```
 
 #### Discussion

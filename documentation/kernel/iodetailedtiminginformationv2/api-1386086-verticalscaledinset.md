@@ -1,7 +1,8 @@
 # verticalScaledInset
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 If the mode is scaled, sets the number of active lines to remove the top and bottom edges in order to display an underscanned image.
 
@@ -10,7 +11,7 @@ If the mode is scaled, sets the number of active lines to remove the top and bot
 
 ## Declaration
 
-```swift
+```c
 UInt32 verticalScaledInset;
 ```
 

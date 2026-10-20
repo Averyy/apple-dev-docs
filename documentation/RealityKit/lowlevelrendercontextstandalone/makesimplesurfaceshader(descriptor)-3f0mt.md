@@ -1,7 +1,8 @@
 # makeSimpleSurfaceShader(descriptor:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously creates a simple surface shader using a built-in tint color or texture implementation, as described by the given descriptor.
 
@@ -18,13 +19,19 @@ nonisolated
 (nonsending) final func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSurfaceDescriptor) async throws -> sending LowLevelMaterialResource.SurfaceShader
 ```
 
+**Other overloads**:
+
+```swift
+final func makeSimpleSurfaceShader(descriptor: LowLevelMaterialResource.SimpleSurfaceDescriptor) throws -> sending LowLevelMaterialResource.SurfaceShader
+```
+
 #### Return Value
 
-A compiled [`LowLevelMaterialResource.SurfaceShader`](lowlevelmaterialresource/surfaceshader.md).
+A compiled [`LowLevelMaterialResource.SurfaceShader`](../lowlevelmaterialresource/surfaceshader.md).
 
 #### Discussion
 
-> **Note**: An error if shader compilation fails.
+> **Throws**: An error if shader compilation fails.
 
 ## Parameters
 

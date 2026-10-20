@@ -1,7 +1,8 @@
 # outputSampleTimings
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Output timing information of each sample in the sample buffer.
 
@@ -19,6 +20,8 @@ Output timing information of each sample in the sample buffer.
 ```swift
 var outputSampleTimings: CMSampleBuffer.TimingPerSample? { get }
 ```
+
+Available when `Content` conforms to `CMSampleBuffer.MultiSampleContent`.
 
 
 ---

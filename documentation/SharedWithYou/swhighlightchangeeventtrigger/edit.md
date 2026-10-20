@@ -1,7 +1,8 @@
 # SWHighlightChangeEventTrigger.edit
 
 **Framework**: Shared with You  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Signifies a highlight edit.
 
@@ -18,13 +19,18 @@ Signifies a highlight edit.
 case edit
 ```
 
+```c
+SWHighlightChangeEventTriggerEdit
+```
+
 ## Mentions
 
-- [Adding shared content collaboration to your app](adding-shared-content-collaboration-to-your-app.md)
+- [Adding shared content collaboration to your app](../adding-shared-content-collaboration-to-your-app.md)
 
 ## See Also
 
-- [SWHighlightChangeEventTrigger.comment](swhighlightchangeeventtrigger/comment.md)
+### Change actions
+- [SWHighlightChangeEventTrigger.comment](./comment.md)
   Signifies a highlight comment.
 
 

@@ -1,7 +1,8 @@
 # Float80.RawSignificand
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that represents the encoded significand of a value.
 

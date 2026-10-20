@@ -1,7 +1,8 @@
 # init(subscriptionsToSave:subscriptionIDsToDelete:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation for saving and deleting the specified subscriptions.
 
@@ -11,7 +12,7 @@ Creates an operation for saving and deleting the specified subscriptions.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 - Swift 4.2+
 
@@ -32,7 +33,8 @@ The subscriptions that you want to save or delete must reside in the same contai
 
 ## See Also
 
-- [init()](ckmodifysubscriptionsoperation/init.md)
+### Creating a Modify Subscriptions Operation
+- [init()](./init%28%29.md)
   Creates an empty modify subscriptions operation.
 
 

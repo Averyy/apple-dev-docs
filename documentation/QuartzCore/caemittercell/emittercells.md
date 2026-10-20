@@ -1,7 +1,8 @@
 # emitterCells
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional array containing the sub-cells of this cell.
 
@@ -19,15 +20,19 @@ An optional array containing the sub-cells of this cell.
 var emitterCells: [CAEmitterCell]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<CAEmitterCell *> * emitterCells;
+```
+
 #### Discussion
 
 When specified, each particle emitted by the cell acts as an emitter for each of the cell’s sub-cells. The emission point is the current particle position and the emission angle is relative to the current direction of the particle.
 
 The default value of this property is `nil`.
 
-The following code shows how you can create a firework style effect using sub-cells. The `fireworkCell` has an emission longitude of one quarter turn anti-clockwise to emit particles upwards. It emits `trailCell` instances which have a slight [`yAcceleration`](caemittercell/yacceleration.md) that simulates gravity.
+The following code shows how you can create a firework style effect using sub-cells. The `fireworkCell` has an emission longitude of one quarter turn anti-clockwise to emit particles upwards. It emits `trailCell` instances which have a slight [`yAcceleration`](./yacceleration.md) that simulates gravity.
 
-Note that the [`scale`](caemittercell/scale.md) and [`color`](caemittercell/color.md) of `fireworkCell` are inherited by `trailCell`.
+Note that the [`scale`](./scale.md) and [`color`](./color.md) of `fireworkCell` are inherited by `trailCell`.
 
 Listing 1. Creating particle trails
 
@@ -62,10 +67,11 @@ view.layer.addSublayer(emitterLayer)
 
 ## See Also
 
-- [var contents: Any?](caemittercell/contents.md)
+### Providing Emitter Cell Content
+- [var contents: Any?](./contents.md)
   An object that provides the contents of the layer. Animatable.
-- [var contentsRect: CGRect](caemittercell/contentsrect.md)
-  A rectangle (in the unit coordinate space) that specifies the portion of [`contents`](caemittercell/contents.md) that the receiver should draw. Animatable.
+- [var contentsRect: CGRect](./contentsrect.md)
+  A rectangle (in the unit coordinate space) that specifies the portion of [`contents`](./contents.md) that the receiver should draw. Animatable.
 
 
 ---

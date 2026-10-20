@@ -1,7 +1,8 @@
 # init(identifiers:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new entity identifier collection.
 

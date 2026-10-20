@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells your request handler to authorize the given request.
@@ -19,6 +20,10 @@ Tells your request handler to authorize the given request.
 func beginAuthorization(with request: ASAuthorizationProviderExtensionAuthorizationRequest)
 ```
 
+```objc
+- (void) beginAuthorizationWithRequest:(ASAuthorizationProviderExtensionAuthorizationRequest *) request;
+```
+
 #### Discussion
 
 The system calls this method on the main thread.
@@ -29,9 +34,10 @@ The system calls this method on the main thread.
 
 ## See Also
 
-- [func cancelAuthorization(with: ASAuthorizationProviderExtensionAuthorizationRequest)](asauthorizationproviderextensionauthorizationrequesthandler/cancelauthorization(with:).md)
+### Starting or Canceling a Request
+- [func cancelAuthorization(with: ASAuthorizationProviderExtensionAuthorizationRequest)](./cancelauthorization%28with%29.md)
   Tells your request handler to cancel the authorization of the given request.
-- [class ASAuthorizationProviderExtensionAuthorizationRequest](asauthorizationproviderextensionauthorizationrequest.md)
+- [class ASAuthorizationProviderExtensionAuthorizationRequest](../asauthorizationproviderextensionauthorizationrequest.md)
   An authorization request that your provider extension handles.
 
 

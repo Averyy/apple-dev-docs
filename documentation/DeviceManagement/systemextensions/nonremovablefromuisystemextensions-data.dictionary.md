@@ -1,7 +1,8 @@
 # SystemExtensions.NonRemovableFromUISystemExtensions
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A dictionary that maps team identifiers to bundle identifiers of extensions that are non-removable.
 
@@ -10,7 +11,7 @@ A dictionary that maps team identifiers to bundle identifiers of extensions that
 
 ## Declaration
 
-```swift
+```
 object SystemExtensions.NonRemovableFromUISystemExtensions
 ```
 
@@ -20,13 +21,14 @@ object SystemExtensions.NonRemovableFromUISystemExtensions
 
 ## See Also
 
-- [object SystemExtensions.AllowedSystemExtensionTypes](systemextensions/allowedsystemextensiontypes-data.dictionary.md)
+### Objects
+- [object SystemExtensions.AllowedSystemExtensionTypes](./allowedsystemextensiontypes-data.dictionary.md)
   A dictionary that maps team identifiers to system extensions.
-- [object SystemExtensions.AllowedSystemExtensions](systemextensions/allowedsystemextensions-data.dictionary.md)
+- [object SystemExtensions.AllowedSystemExtensions](./allowedsystemextensions-data.dictionary.md)
   A dictionary that maps team identifiers to bundle identifiers that are allowed.
-- [object SystemExtensions.NonRemovableSystemExtensions](systemextensions/nonremovablesystemextensions-data.dictionary.md)
+- [object SystemExtensions.NonRemovableSystemExtensions](./nonremovablesystemextensions-data.dictionary.md)
   A dictionary that maps team identifiers to bundle identifiers of extensions that are non-removable.
-- [object SystemExtensions.RemovableSystemExtensions](systemextensions/removablesystemextensions-data.dictionary.md)
+- [object SystemExtensions.RemovableSystemExtensions](./removablesystemextensions-data.dictionary.md)
   A dictionary that maps team identifiers to bundle identifiers of extensions that are removable.
 
 

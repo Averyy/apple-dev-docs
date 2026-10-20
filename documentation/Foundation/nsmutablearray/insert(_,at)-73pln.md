@@ -1,7 +1,8 @@
 # insert(_:at:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the objects in the provided array into the receiving array at the specified indexes.
 
@@ -18,6 +19,10 @@ Inserts the objects in the provided array into the receiving array at the specif
 
 ```swift
 func insert(_ objects: [Any], at indexes: IndexSet)
+```
+
+```objc
+- (void) insertObjects:(NSArray<id> *) objects atIndexes:(NSIndexSet *) indexes;
 ```
 
 #### Discussion
@@ -93,11 +98,12 @@ If `objects` or `indexes` is `nil`, this method will raises an exception.
 
 ## See Also
 
-- [func add(Any)](nsmutablearray/add(_:).md)
+### Adding Objects
+- [func add(Any)](./add%28_%29.md)
   Inserts a given object at the end of the array.
-- [func addObjects(from: [Any])](nsmutablearray/addobjects(from:).md)
+- [func addObjects(from: [Any])](./addobjects%28from%29.md)
   Adds the objects contained in another given array to the end of the receiving array’s content.
-- [func insert(Any, at: Int)](nsmutablearray/insert(_:at:)-5dbx5.md)
+- [func insert(Any, at: Int)](./insert%28_,at%29-5dbx5.md)
   Inserts a given object into the array’s contents at a given index.
 
 

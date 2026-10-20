@@ -1,7 +1,8 @@
 # size
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the point.
 
@@ -18,11 +19,16 @@ The size of the point.
 var size: CGSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGSize size;
+```
+
 ## See Also
 
-- [var opacity: CGFloat](pkstrokepointreference/opacity.md)
+### Getting the point’s drawing data
+- [var opacity: CGFloat](./opacity.md)
   Opacity of the point.
-- [var secondaryScale: CGFloat](pkstrokepointreference/secondaryscale.md)
+- [var secondaryScale: CGFloat](./secondaryscale.md)
 
 
 ---

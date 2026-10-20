@@ -1,7 +1,8 @@
 # url
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An address for a web resource, such as a webpage or image.
 
@@ -18,6 +19,10 @@ An address for a web resource, such as a webpage or image.
 
 ```swift
 var url: URL { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSURL * URL;
 ```
 
 

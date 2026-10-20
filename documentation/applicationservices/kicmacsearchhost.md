@@ -1,7 +1,8 @@
 # kICMacSearchHost
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kICMacSearchHost: String { get }
+```
+
+```c
+#define kICMacSearchHost
 ```
 
 

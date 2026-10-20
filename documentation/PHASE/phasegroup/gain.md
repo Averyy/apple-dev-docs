@@ -1,7 +1,8 @@
 # gain
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Modifies the volume of the group’s sounds.
 
@@ -19,13 +20,18 @@ Modifies the volume of the group’s sounds.
 var gain: Double { get set }
 ```
 
+```objc
+@property (nonatomic, assign) double gain;
+```
+
 #### Discussion
 
 This property modifies the volume of all audio in the group. The framework clamps the value to the range between `0` and `1`, where `0` silences the audio and `1` doesn’t modify the original volume.
 
 ## See Also
 
-- [func fadeGain(gain: Double, duration: Double, curveType: PHASECurveType)](phasegroup/fadegain(gain:duration:curvetype:).md)
+### Conrolling Loudness
+- [func fadeGain(gain: Double, duration: Double, curveType: PHASECurveType)](./fadegain%28gain,duration,curvetype%29.md)
   Adjusts the volume of the sounds in a group gradually.
 
 

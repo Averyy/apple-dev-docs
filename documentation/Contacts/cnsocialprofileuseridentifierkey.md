@@ -1,7 +1,8 @@
 # CNSocialProfileUserIdentifierKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The social profile user identifier.
 
@@ -19,17 +20,22 @@ The social profile user identifier.
 let CNSocialProfileUserIdentifierKey: String
 ```
 
+```c
+extern NSString * const CNSocialProfileUserIdentifierKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNSocialProfileServiceKey: String](cnsocialprofileservicekey.md)
+### Social Profile Keys
+- [let CNSocialProfileServiceKey: String](./cnsocialprofileservicekey.md)
   The social profile service.
-- [let CNSocialProfileURLStringKey: String](cnsocialprofileurlstringkey.md)
+- [let CNSocialProfileURLStringKey: String](./cnsocialprofileurlstringkey.md)
   The social profile URL.
-- [let CNSocialProfileUsernameKey: String](cnsocialprofileusernamekey.md)
+- [let CNSocialProfileUsernameKey: String](./cnsocialprofileusernamekey.md)
   The social profile user name.
 
 

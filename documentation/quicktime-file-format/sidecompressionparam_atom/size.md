@@ -1,15 +1,17 @@
 # Size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An unsigned 32-bit integer holding the size of the decompression parameters atom.
 
 ## See Also
 
-- [Type](sidecompressionparam_atom/type.md)
+### Data fields
+- [Type](./type.md)
   An unsigned 32-bit field.
-- [Extension atoms](sidecompressionparam_atom/extension_atoms.md)
+- [Extension atoms](./extension_atoms.md)
   Atoms containing the necessary out-of-band decompression parameters for the sound decompressor.
 
 

@@ -1,7 +1,8 @@
 # predictionWithConfidence(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Predicts multiple possible labels and their confidence scores for the specified string.
 
@@ -28,11 +29,12 @@ A dictionary of label predictions and confidence scores.
 
 ## See Also
 
-- [func prediction(from: String) throws -> String](mltextclassifier/prediction(from:).md)
+### Testing a text classifier
+- [func prediction(from: String) throws -> String](./prediction%28from%29.md)
   Classifies a string with a label.
-- [func predictions(from:)](mltextclassifier/predictions(from:).md)
+- [func predictions(from:)](./predictions%28from%29.md)
   Classifies an array of strings with labels.
-- [func predictionsWithConfidence(from:)](mltextclassifier/predictionswithconfidence(from:).md)
+- [func predictionsWithConfidence(from:)](./predictionswithconfidence%28from%29.md)
   Predicts multiple possible labels and their confidence scores for each string in the specified array.
 
 

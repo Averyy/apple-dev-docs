@@ -1,7 +1,8 @@
 # constant
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Port is constant and doesn’t need to be changeable.
 
@@ -12,7 +13,7 @@ Port is constant and doesn’t need to be changeable.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,7 +23,7 @@ static let constant: ComputeNodeGraph.Port.Options
 
 #### Discussion
 
-Parameters with [`constant`](computenodegraph/port/options/constant.md) that are available at compile time can aid in optimization.
+Parameters with [`constant`](./constant.md) that are available at compile time can aid in optimization.
 
 
 ---

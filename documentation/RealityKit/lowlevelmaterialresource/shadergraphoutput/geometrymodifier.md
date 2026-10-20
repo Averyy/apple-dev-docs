@@ -1,7 +1,8 @@
 # geometryModifier
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The compiled geometry modifier, or `nil` if the ShaderGraph does not include one.
 
@@ -19,7 +20,8 @@ var geometryModifier: LowLevelMaterialResource.GeometryModifier? { get }
 
 ## See Also
 
-- [var surfaceShader: LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/shadergraphoutput/surfaceshader.md)
+### Specifying the shaders
+- [var surfaceShader: LowLevelMaterialResource.SurfaceShader](./surfaceshader.md)
   The compiled surface shader.
 
 

@@ -1,7 +1,8 @@
 # activate()
 
 **Framework**: XPC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Activates a session so you can send messages.
 
@@ -11,7 +12,7 @@ Activates a session so you can send messages.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,23 +23,24 @@ func activate() throws
 
 #### Discussion
 
-> ❗ **Important**:  Don’t call [`activate()`](xpcsession/activate().md) on a session that’s already active.
+> ❗ **Important**:  Don’t call [`activate()`](./activate%28%29.md) on a session that’s already active.
 
-If you create an inactive session using the [`inactive`](xpcsession/initializationoptions/inactive.md) initialization option, you must activate the session before deinitialization. Deinitializing an inactive session causes the process to crash.
+If you create an inactive session using the [`inactive`](./initializationoptions/inactive.md) initialization option, you must activate the session before deinitialization. Deinitializing an inactive session causes the process to crash.
 
-If activation fails, this method automatically cancels the session and throws a [`XPCRichError`](xpcricherror.md) that describes the reason activation failed.
+If activation fails, this method automatically cancels the session and throws a [`XPCRichError`](../xpcricherror.md) that describes the reason activation failed.
 
 ## See Also
 
-- [func setIncomingMessageHandler<Message>((Message) -> (any Encodable)?)](xpcsession/setincomingmessagehandler(_:)-2ukdh.md)
+### Managing the life cycle
+- [func setIncomingMessageHandler<Message>((Message) -> (any Encodable)?)](./setincomingmessagehandler%28_%29-2ukdh.md)
   Sets a closure to receive incoming decodable messages for a session.
-- [func setIncomingMessageHandler((XPCReceivedMessage) -> (any Encodable)?)](xpcsession/setincomingmessagehandler(_:)-5lu26.md)
+- [func setIncomingMessageHandler((XPCReceivedMessage) -> (any Encodable)?)](./setincomingmessagehandler%28_%29-5lu26.md)
   Sets a closure to receive incoming received messages for a session.
-- [func setIncomingMessageHandler((XPCDictionary) -> XPCDictionary?)](xpcsession/setincomingmessagehandler(_:)-75ou9.md)
+- [func setIncomingMessageHandler((XPCDictionary) -> XPCDictionary?)](./setincomingmessagehandler%28_%29-75ou9.md)
   Sets a closure to receive incoming dictionary messages for a session.
-- [func cancel(reason: String)](xpcsession/cancel(reason:).md)
+- [func cancel(reason: String)](./cancel%28reason%29.md)
   Cancels a session, discarding any unsent messages.
-- [func setCancellationHandler((XPCRichError) -> Void)](xpcsession/setcancellationhandler(_:).md)
+- [func setCancellationHandler((XPCRichError) -> Void)](./setcancellationhandler%28_%29.md)
   Sets a closure the session calls when it’s canceled.
 
 

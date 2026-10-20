@@ -1,12 +1,13 @@
 # init(CIColor:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color object from the specified Core Image color.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

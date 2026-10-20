@@ -1,14 +1,15 @@
 # kIOMemoryUseReserve
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOMemoryUseReserve = 0x00800000
 ```
 

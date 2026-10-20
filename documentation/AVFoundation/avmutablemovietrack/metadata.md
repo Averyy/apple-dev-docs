@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of metadata stored by the track.
 
@@ -19,13 +20,18 @@ An array of metadata stored by the track.
 var metadata: [AVMetadataItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<AVMetadataItem *> * metadata;
+```
+
 ## See Also
 
-- [var commonMetadata: [AVMetadataItem]](avmutablemovietrack/commonmetadata.md)
+### Accessing metadata
+- [var commonMetadata: [AVMetadataItem]](./commonmetadata.md)
   An array of metadata items for all common metadata keys that have a value.
-- [var availableMetadataFormats: [AVMetadataFormat]](avmutablemovietrack/availablemetadataformats.md)
+- [var availableMetadataFormats: [AVMetadataFormat]](./availablemetadataformats.md)
   An array of metadata formats available for the track.
-- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](avmutablemovietrack/metadata(forformat:).md)
+- [func metadata(forFormat: AVMetadataFormat) -> [AVMetadataItem]](./metadata%28forformat%29.md)
   Returns metadata items that a track contains for the specified format.
 
 

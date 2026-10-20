@@ -1,7 +1,8 @@
 # maskPattern
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data mask pattern for the QR code symbol.
 
@@ -19,17 +20,22 @@ The data mask pattern for the QR code symbol.
 var maskPattern: UInt8 { get }
 ```
 
+```objc
+@property (readonly) uint8_t maskPattern;
+```
+
 #### Discussion
 
 QR Codes support eight data mask patterns, which are used to avoid large black or large white areas inside the symbol body. Valid values range from 0 to 7.
 
 ## See Also
 
-- [var errorCorrectedPayload: Data](ciqrcodedescriptor/errorcorrectedpayload-swift.property.md)
+### Examining a Descriptor
+- [var errorCorrectedPayload: Data](./errorcorrectedpayload-swift.property.md)
   The error-corrected codeword payload that comprises the QR code symbol.
-- [var symbolVersion: Int](ciqrcodedescriptor/symbolversion-swift.property.md)
+- [var symbolVersion: Int](./symbolversion-swift.property.md)
   The version of the QR code which corresponds to the size of the QR code symbol.
-- [var errorCorrectionLevel: CIQRCodeDescriptor.ErrorCorrectionLevel](ciqrcodedescriptor/errorcorrectionlevel-swift.property.md)
+- [var errorCorrectionLevel: CIQRCodeDescriptor.ErrorCorrectionLevel](./errorcorrectionlevel-swift.property.md)
   The error correction level of the QR code symbol.
 
 

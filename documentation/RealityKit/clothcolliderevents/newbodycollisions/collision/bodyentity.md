@@ -1,7 +1,8 @@
 # bodyEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity of the body that collided with the collider.
 
@@ -18,8 +19,9 @@ let bodyEntity: Entity
 
 ## See Also
 
-- [var bodyComponent: ClothBodyComponent?](clothcolliderevents/newbodycollisions/collision/bodycomponent.md)
-  The [`ClothBodyComponent`](clothbodycomponent.md) of the colliding body, if still present on the entity.
+### Identifying the collider
+- [var bodyComponent: ClothBodyComponent?](./bodycomponent.md)
+  The [`ClothBodyComponent`](../../../clothbodycomponent.md) of the colliding body, if still present on the entity.
 
 
 ---

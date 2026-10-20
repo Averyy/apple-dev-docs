@@ -1,7 +1,8 @@
 # negate()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Negates this decimal.
 

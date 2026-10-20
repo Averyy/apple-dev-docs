@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the boosted tree regressor that’s suitable for output during debugging.
 
@@ -21,9 +22,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](mlboostedtreeregressor/description.md)
+### Describing a boosted tree regressor
+- [var description: String](./description.md)
   A text representation of the boosted tree regressor.
-- [var playgroundDescription: Any](mlboostedtreeregressor/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the boosted tree regressor shown in a playground.
 
 

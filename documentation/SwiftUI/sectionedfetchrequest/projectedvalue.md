@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A binding to the request’s mutable configuration properties.
 
@@ -23,11 +24,12 @@ A binding to the request’s mutable configuration properties.
 
 #### Discussion
 
-This property behaves like the [`projectedValue`](fetchrequest/projectedvalue.md) of a [`FetchRequest`](fetchrequest.md). In particular, SwiftUI returns the value associated with this property when you use [`SectionedFetchRequest`](sectionedfetchrequest.md) as a property wrapper on a [`SectionedFetchResults`](sectionedfetchresults.md) instance and then access the results with a dollar sign (`$`) prefix. The value that SwiftUI returns is a [`Binding`](binding.md) to the request’s [`SectionedFetchRequest.Configuration`](sectionedfetchrequest/configuration.md) structure, which dynamically configures the request.
+This property behaves like the [`projectedValue`](../fetchrequest/projectedvalue.md) of a [`FetchRequest`](../fetchrequest.md). In particular, SwiftUI returns the value associated with this property when you use [`SectionedFetchRequest`](../sectionedfetchrequest.md) as a property wrapper on a [`SectionedFetchResults`](../sectionedfetchresults.md) instance and then access the results with a dollar sign (`$`) prefix. The value that SwiftUI returns is a [`Binding`](../binding.md) to the request’s [`SectionedFetchRequest.Configuration`](./configuration.md) structure, which dynamically configures the request.
 
 ## See Also
 
-- [SectionedFetchRequest.Configuration](sectionedfetchrequest/configuration.md)
+### Configuring a request dynamically
+- [SectionedFetchRequest.Configuration](./configuration.md)
   The request’s configurable properties.
 
 

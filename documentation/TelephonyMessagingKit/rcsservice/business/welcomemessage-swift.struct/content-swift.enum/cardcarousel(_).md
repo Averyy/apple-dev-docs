@@ -1,7 +1,8 @@
 # RCSService.Business.WelcomeMessage.Content.cardCarousel(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Card carousel content.
 

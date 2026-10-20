@@ -1,7 +1,8 @@
 # GCObservation
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface GCObservation
 ```
 
 ## Topics
 
 ### Instance Properties
-- [wasCollected](gcobservation/2528118-wascollected.md)
+- [wasCollected](./gcobservation/api-2528118-wascollected.md)
 
 
 ---

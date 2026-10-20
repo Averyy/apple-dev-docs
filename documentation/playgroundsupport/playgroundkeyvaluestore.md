@@ -1,7 +1,8 @@
 # PlaygroundKeyValueStore
 
 **Framework**: Playground Support  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 A data storage container you use to persist information across different sessions.
 
@@ -36,16 +37,17 @@ if let keyValue = PlaygroundKeyValueStore.current.keyValueStore["animal"],
 ## Topics
 
 ### Persisting Data
-- [static let current: PlaygroundKeyValueStore](playgroundkeyvaluestore/3029533-current.md)
+- [static let current: PlaygroundKeyValueStore](./playgroundkeyvaluestore/api-3029533-current.md)
   A reference to the key-value store for the current playground book.
-- [subscript(String) -> PlaygroundValue?](playgroundkeyvaluestore/3029534-subscript.md)
+- [subscript(String) -> PlaygroundValue?](./playgroundkeyvaluestore/api-3029534-subscript.md)
   Reads or stores the value associated with the given key in the key-value store.
 
 ## See Also
 
-- [enum PlaygroundValue](playgroundvalue.md)
+### Data Persistence
+- [enum PlaygroundValue](./playgroundvalue.md)
   The types you can save in the key-value store or send in messages to live views.
-- [let playgroundSharedDataDirectory: URL](playgroundshareddatadirectory.md)
+- [let playgroundSharedDataDirectory: URL](./playgroundshareddatadirectory.md)
   The path to the directory containing data shared between all playgrounds in Xcode.
 
 

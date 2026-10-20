@@ -1,12 +1,13 @@
 # warningValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The warning value of the level indicator control.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ The warning value of the level indicator control.
 var warningValue: Double { get set }
 ```
 
+```objc
+@property double warningValue;
+```
+
 ## See Also
 
-- [var minValue: Double](nslevelindicatorcell/minvalue.md)
+### Configuring the Range of Values
+- [var minValue: Double](./minvalue.md)
   The minimum value of the control.
-- [var maxValue: Double](nslevelindicatorcell/maxvalue.md)
+- [var maxValue: Double](./maxvalue.md)
   The maximum value of the control.
-- [var levelIndicatorStyle: NSLevelIndicator.Style](nslevelindicatorcell/levelindicatorstyle.md)
+- [var levelIndicatorStyle: NSLevelIndicator.Style](./levelindicatorstyle.md)
   The style of the level indicator control.
-- [var criticalValue: Double](nslevelindicatorcell/criticalvalue.md)
+- [var criticalValue: Double](./criticalvalue.md)
   The critical value of the level indicator control.
 
 

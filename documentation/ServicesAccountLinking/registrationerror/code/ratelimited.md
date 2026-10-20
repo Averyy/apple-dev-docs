@@ -1,7 +1,8 @@
 # RegistrationError.Code.rateLimited
 
 **Framework**: ServicesAccountLinking  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The server rate-limited the request.
 
@@ -16,9 +17,13 @@ The server rate-limited the request.
 case rateLimited
 ```
 
+```c
+SALRegistrationErrorRateLimited
+```
+
 #### Discussion
 
-Check the error’s `userInfo` for [`RegistrationErrorRetryAfterKey`](registrationerrorretryafterkey.md) to get the server-provided retry interval. If absent, use exponential backoff.
+Check the error’s `userInfo` for [`RegistrationErrorRetryAfterKey`](../../registrationerrorretryafterkey.md) to get the server-provided retry interval. If absent, use exponential backoff.
 
 
 ---

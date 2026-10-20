@@ -1,7 +1,8 @@
 # kCTFontCollectionRemoveDuplicatesOption
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 3.2+
@@ -18,13 +19,18 @@
 let kCTFontCollectionRemoveDuplicatesOption: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontCollectionRemoveDuplicatesOption;
+```
+
 #### Discussion
 
 Option key to specify filtering of duplicates.
 
 ## See Also
 
-- [struct CTFontCollectionCopyOptions](ctfontcollectioncopyoptions.md)
+### Constants
+- [struct CTFontCollectionCopyOptions](./ctfontcollectioncopyoptions.md)
   Option bits for use with CTFontCollectionCopyFontAttribute(s).
 
 

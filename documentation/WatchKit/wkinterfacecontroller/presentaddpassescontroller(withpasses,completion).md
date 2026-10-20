@@ -1,7 +1,8 @@
 # presentAddPassesController(withPasses:completion:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a modal interface for presenting passes to the user.
 
@@ -11,12 +12,20 @@ Displays a modal interface for presenting passes to the user.
 ## Declaration
 
 ```swift
+func presentAddPassesController(withPasses passes: [PKPass], completion: @escaping () -> Void)
+```
+
+```swift
 func presentAddPassesController(withPasses passes: [PKPass]) async
+```
+
+```objc
+- (void) presentAddPassesControllerWithPasses:(NSArray<PKPass *> *) passes completion:(void (^)()) completion;
 ```
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md)
+- [Navigating Between Scenes](../navigating-between-scenes.md)
 
 #### Discussion
 
@@ -26,12 +35,13 @@ The user dismisses the interface using the built-in controls. At dismissal time,
 
 ## Parameters
 
-- `passes`: An array of [`PKPass`](https://developer.apple.com/documentation/passkit/pkpass) objects that you want to present to the user.
+- `passes`: An array of [`PKPass`](../../PassKit/pkpass.md) objects that you want to present to the user.
 - `completion`: The block to execute when the user is ready to dismiss the interface. Use this block to perform any cleanup tasks related to the dismissal of the modal interface. This block has no return value and takes no parameters.
 
 ## See Also
 
-- [func dismissAddPassesController()](wkinterfacecontroller/dismissaddpassescontroller.md)
+### Adding PassKit passes
+- [func dismissAddPassesController()](./dismissaddpassescontroller%28%29.md)
   Dismisses the pass interface controller
 
 

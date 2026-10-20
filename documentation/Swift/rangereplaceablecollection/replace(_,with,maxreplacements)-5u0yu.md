@@ -1,7 +1,8 @@
 # replace(_:with:maxReplacements:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces all occurrences of a target sequence with a given collection
 
@@ -19,6 +20,8 @@ Replaces all occurrences of a target sequence with a given collection
 ```swift
 mutating func replace<C, Replacement>(_ other: C, with replacement: Replacement, maxReplacements: Int = .max) where C : Collection, Replacement : Collection, Self.Element == C.Element, C.Element == Replacement.Element
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 ## Parameters
 

@@ -1,14 +1,15 @@
 # tUSBHostPortConnectable
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 typedef enum tUSBHostPortConnectable : unsigned int {
     ...
 } tUSBHostPortConnectable;
@@ -17,8 +18,8 @@ typedef enum tUSBHostPortConnectable : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBHostPortConnectable](tusbhostportconnectable/kusbhostportconnectable.md)
-- [kUSBHostPortNotConnectable](tusbhostportconnectable/kusbhostportnotconnectable.md)
+- [kUSBHostPortConnectable](./tusbhostportconnectable/kusbhostportconnectable.md)
+- [kUSBHostPortNotConnectable](./tusbhostportconnectable/kusbhostportnotconnectable.md)
 
 
 ---

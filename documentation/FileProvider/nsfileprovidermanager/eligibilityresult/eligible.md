@@ -1,7 +1,8 @@
 # NSFileProviderManager.EligibilityResult.eligible
 
 **Framework**: File Provider  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 15.0+
@@ -14,8 +15,9 @@ case eligible
 
 ## See Also
 
-- [NSFileProviderManager.EligibilityResult.ineligible(_:)](nsfileprovidermanager/eligibilityresult/ineligible(_:).md)
-- [struct NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason.md)
+### Determining eligibility
+- [NSFileProviderManager.EligibilityResult.ineligible(_:)](./ineligible%28_%29.md)
+- [struct NSFileProviderVolumeUnsupportedReason](../../nsfileprovidervolumeunsupportedreason.md)
   Constants that describe why an external volume might not be eligible for storing a domain.
 
 

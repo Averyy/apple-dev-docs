@@ -1,7 +1,8 @@
 # Soccer
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for soccer fields.
 
@@ -10,7 +11,7 @@ The point-of-interest category for soccer fields.
 
 ## Declaration
 
-```swift
+```
 readonly Soccer: "Soccer";
 ```
 

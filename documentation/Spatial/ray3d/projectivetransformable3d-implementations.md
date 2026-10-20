@@ -1,11 +1,12 @@
 # ProjectiveTransformable3D Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func applying(ProjectiveTransform3D) -> Ray3D](ray3d/applying(_:)-2aom9.md)
+- [func applying(ProjectiveTransform3D) -> Ray3D](./applying%28_%29-2aom9.md)
   Returns a ray that results from applying the specified projective transform.
 
 

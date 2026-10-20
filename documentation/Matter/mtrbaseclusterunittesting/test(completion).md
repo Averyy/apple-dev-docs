@@ -1,7 +1,8 @@
 # test(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func test(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func test() async throws
+```
+
+```objc
+- (void) testWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

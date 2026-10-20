@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the writer to write media data to its output file.
 
@@ -21,21 +22,22 @@ func start() throws
 
 #### Discussion
 
-> **Note**: An error if reading fails to start.
+> **Throws**: An error if reading fails to start.
 
 ## See Also
 
-- [func startWriting() -> Bool](avassetwriter/startwriting.md)
+### Managing writing sessions
+- [func startWriting() -> Bool](./startwriting%28%29.md)
   Tells the writer to start writing its output.
-- [func startSession(atSourceTime: CMTime)](avassetwriter/startsession(atsourcetime:).md)
+- [func startSession(atSourceTime: CMTime)](./startsession%28atsourcetime%29.md)
   Starts an asset-writing session.
-- [func endSession(atSourceTime: CMTime)](avassetwriter/endsession(atsourcetime:).md)
+- [func endSession(atSourceTime: CMTime)](./endsession%28atsourcetime%29.md)
   Finishes an asset-writing session.
-- [func finishWriting(completionHandler: () -> Void)](avassetwriter/finishwriting(completionhandler:).md)
+- [func finishWriting(completionHandler: () -> Void)](./finishwriting%28completionhandler%29.md)
   Marks all unfinished inputs as finished and completes the writing of the output file.
-- [func cancelWriting()](avassetwriter/cancelwriting.md)
+- [func cancelWriting()](./cancelwriting%28%29.md)
   Cancels the creation of the output file.
-- [func finishWriting() -> Bool](avassetwriter/finishwriting.md)
+- [func finishWriting() -> Bool](./finishwriting%28%29.md)
   Completes the writing of the output file.
 
 

@@ -1,7 +1,8 @@
 # init(name:point:in:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new accessibility location descriptor with a specified point in a view.
 
@@ -17,11 +18,16 @@ Initializes a new accessibility location descriptor with a specified point in a 
 convenience init(name: String, point: CGPoint, in view: UIView)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name point:(CGPoint) point inView:(UIView *) view;
+```
+
 ## See Also
 
-- [init(attributedName: NSAttributedString, point: CGPoint, in: UIView)](uiaccessibilitylocationdescriptor/init(attributedname:point:in:).md)
+### Initializing the descriptor
+- [init(attributedName: NSAttributedString, point: CGPoint, in: UIView)](./init%28attributedname,point,in%29.md)
   Initializes a new accessibility location descriptor using an attributed string and a specified point in a view.
-- [convenience init(name: String, view: UIView)](uiaccessibilitylocationdescriptor/init(name:view:).md)
+- [convenience init(name: String, view: UIView)](./init%28name,view%29.md)
   Initializes a new accessibility location descriptor with a specified view’s activation point.
 
 

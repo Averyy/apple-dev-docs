@@ -1,7 +1,8 @@
 # ForceEffectBounds.sphere(radius:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A spherical boundary that’s centered at the origin of the force effect and has a non-negative radius.
 

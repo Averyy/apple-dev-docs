@@ -1,17 +1,22 @@
 # calcSize()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calculates the minimum required width and height of the receiver’s menu item.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func calcSize()
+```
+
+```objc
+- (void) calcSize;
 ```
 
 #### Discussion
@@ -22,15 +27,16 @@ This method is invoked automatically when necessary. You should not need to invo
 
 ## See Also
 
-- [var needsSizing: Bool](nsmenuitemcell/needssizing.md)
+### Calculating the Size of a Menu Item
+- [var needsSizing: Bool](./needssizing.md)
   A Boolean value indicating whether the size of the menu needs to be calculated.
-- [var imageWidth: CGFloat](nsmenuitemcell/imagewidth.md)
+- [var imageWidth: CGFloat](./imagewidth.md)
   The width of the image associated with the menu item.
-- [var titleWidth: CGFloat](nsmenuitemcell/titlewidth.md)
+- [var titleWidth: CGFloat](./titlewidth.md)
   The width of the menu item’s text, measured in points.
-- [var keyEquivalentWidth: CGFloat](nsmenuitemcell/keyequivalentwidth.md)
+- [var keyEquivalentWidth: CGFloat](./keyequivalentwidth.md)
   The width of the menu item’s key equivalent string.
-- [var stateImageWidth: CGFloat](nsmenuitemcell/stateimagewidth.md)
+- [var stateImageWidth: CGFloat](./stateimagewidth.md)
   The width of the image used to indicate the state of the menu item.
 
 

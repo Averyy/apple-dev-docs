@@ -1,7 +1,8 @@
 # MTLTensorError.Code.internalError
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An internal Metal error occurred.
 
@@ -17,6 +18,10 @@ An internal Metal error occurred.
 
 ```swift
 case internalError
+```
+
+```c
+MTLTensorErrorInternalError
 ```
 
 

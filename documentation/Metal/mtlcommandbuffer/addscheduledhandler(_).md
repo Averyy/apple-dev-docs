@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Registers a completion handler the GPU device calls immediately after it schedules the command buffer to run on the GPU.
@@ -11,7 +12,7 @@ Registers a completion handler the GPU device calls immediately after it schedul
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,21 +21,25 @@ Registers a completion handler the GPU device calls immediately after it schedul
 func addScheduledHandler(_ block: @escaping MTLCommandBufferHandler)
 ```
 
+```objc
+- (void) addScheduledHandler:(MTLCommandBufferHandler) block;
+```
+
 ## Mentions
 
-- [Setting up a command structure](setting-up-a-command-structure.md)
+- [Setting up a command structure](../setting-up-a-command-structure.md)
 
 #### Discussion
 
 You can register one or more scheduling completion handlers for the same command buffer. The GPU device’s driver (on the CPU) calls the completion handlers after it finishes scheduling the command buffer to run on the GPU.
 
-> ❗ **Important**:  You can only call this method before calling the command buffer’s [`commit()`](mtlcommandbuffer/commit().md) method.
+> ❗ **Important**:  You can only call this method before calling the command buffer’s [`commit()`](./commit%28%29.md) method.
 
-The GPU device schedules each command buffer — along with tasks from other command buffers — after it identifies the command buffer’s dependencies. At that time, the GPU device sets the command buffer’s status to [`MTLCommandBufferStatus.scheduled`](mtlcommandbufferstatus/scheduled.md) and calls your completion handler.
+The GPU device schedules each command buffer — along with tasks from other command buffers — after it identifies the command buffer’s dependencies. At that time, the GPU device sets the command buffer’s status to [`MTLCommandBufferStatus.scheduled`](../mtlcommandbufferstatus/scheduled.md) and calls your completion handler.
 
-> **Note**:  The command buffer’s [`status`](mtlcommandbuffer/status.md) property may be equal to another (larger) value by the time your completion handler runs, including [`MTLCommandBufferStatus.completed`](mtlcommandbufferstatus/completed.md).
+> **Note**:  The command buffer’s [`status`](./status.md) property may be equal to another (larger) value by the time your completion handler runs, including [`MTLCommandBufferStatus.completed`](../mtlcommandbufferstatus/completed.md).
 
-You can use the command buffer’s [`kernelEndTime`](mtlcommandbuffer/kernelendtime.md) and [`kernelStartTime`](mtlcommandbuffer/kernelstarttime.md) properties to calculate how much time the CPU spends scheduling the command buffer.
+You can use the command buffer’s [`kernelEndTime`](./kernelendtime.md) and [`kernelStartTime`](./kernelstarttime.md) properties to calculate how much time the CPU spends scheduling the command buffer.
 
 **Swift**:
 
@@ -69,9 +74,10 @@ commandBuffer.addScheduledHandler { commandBuffer in
 
 ## See Also
 
-- [func addCompletedHandler(MTLCommandBufferHandler)](mtlcommandbuffer/addcompletedhandler(_:).md)
+### Registering state change handlers
+- [func addCompletedHandler(MTLCommandBufferHandler)](./addcompletedhandler%28_%29.md)
   Registers a completion handler the GPU device calls immediately after the GPU finishes running the commands in the command buffer.
-- [typealias MTLCommandBufferHandler](mtlcommandbufferhandler.md)
+- [typealias MTLCommandBufferHandler](../mtlcommandbufferhandler.md)
   A completion handler signature a GPU device calls when it finishes scheduling a command buffer, or when the GPU finishes running it.
 
 

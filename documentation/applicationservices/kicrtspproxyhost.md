@@ -1,7 +1,8 @@
 # kICRTSPProxyHost
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.1+
@@ -10,6 +11,10 @@
 
 ```swift
 var kICRTSPProxyHost: String { get }
+```
+
+```c
+#define kICRTSPProxyHost
 ```
 
 

@@ -1,7 +1,8 @@
 # init(body:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a content instance with the given message body.
 

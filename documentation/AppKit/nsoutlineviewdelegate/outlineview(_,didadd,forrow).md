@@ -1,7 +1,8 @@
 # outlineView(_:didAdd:forRow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Implemented to know when a new row view is added to the table.
 
@@ -13,6 +14,10 @@ Implemented to know when a new row view is added to the table.
 ```swift
 @MainActor
 optional func outlineView(_ outlineView: NSOutlineView, didAdd rowView: NSTableRowView, forRow row: Int)
+```
+
+```objc
+- (void) outlineView:(NSOutlineView *) outlineView didAddRowView:(NSTableRowView *) rowView forRow:(NSInteger) row;
 ```
 
 #### Discussion
@@ -27,11 +32,12 @@ This delegate method is for NSView-based outline views. At this point, you can c
 
 ## See Also
 
-- [func outlineView(NSOutlineView, didRemove: NSTableRowView, forRow: Int)](nsoutlineviewdelegate/outlineview(_:didremove:forrow:).md)
+### Working with NSView-Based Outline Views
+- [func outlineView(NSOutlineView, didRemove: NSTableRowView, forRow: Int)](./outlineview%28_,didremove,forrow%29.md)
   Implemented to know when a row view is removed from the table
-- [func outlineView(NSOutlineView, rowViewForItem: Any) -> NSTableRowView?](nsoutlineviewdelegate/outlineview(_:rowviewforitem:).md)
+- [func outlineView(NSOutlineView, rowViewForItem: Any) -> NSTableRowView?](./outlineview%28_,rowviewforitem%29.md)
   implement this method to return a custom `NSTableRowView` for a particular item.
-- [func outlineView(NSOutlineView, viewFor: NSTableColumn?, item: Any) -> NSView?](nsoutlineviewdelegate/outlineview(_:viewfor:item:).md)
+- [func outlineView(NSOutlineView, viewFor: NSTableColumn?, item: Any) -> NSView?](./outlineview%28_,viewfor,item%29.md)
   Implemented to return the view used to display the specified item and column.
 
 

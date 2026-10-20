@@ -1,16 +1,17 @@
 # UIEvent.EventSubtype.none
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The event has no subtype.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,33 +19,38 @@ The event has no subtype.
 case none
 ```
 
+```c
+UIEventSubtypeNone
+```
+
 #### Discussion
 
-This is the subtype for events of the [`UIEvent.EventType.touches`](uievent/eventtype/touches.md) general type.
+This is the subtype for events of the [`UIEvent.EventType.touches`](../eventtype/touches.md) general type.
 
 ## See Also
 
-- [UIEvent.EventSubtype.motionShake](uievent/eventsubtype/motionshake.md)
+### Constants
+- [UIEvent.EventSubtype.motionShake](./motionshake.md)
   The event is related to a person shaking the device.
-- [UIEvent.EventSubtype.remoteControlPlay](uievent/eventsubtype/remotecontrolplay.md)
+- [UIEvent.EventSubtype.remoteControlPlay](./remotecontrolplay.md)
   A remote-control event for playing audio or video.
-- [UIEvent.EventSubtype.remoteControlPause](uievent/eventsubtype/remotecontrolpause.md)
+- [UIEvent.EventSubtype.remoteControlPause](./remotecontrolpause.md)
   A remote-control event for pausing audio or video.
-- [UIEvent.EventSubtype.remoteControlStop](uievent/eventsubtype/remotecontrolstop.md)
+- [UIEvent.EventSubtype.remoteControlStop](./remotecontrolstop.md)
   A remote-control event for stopping audio or video from playing.
-- [UIEvent.EventSubtype.remoteControlTogglePlayPause](uievent/eventsubtype/remotecontroltoggleplaypause.md)
+- [UIEvent.EventSubtype.remoteControlTogglePlayPause](./remotecontroltoggleplaypause.md)
   A remote-control event for toggling audio or video between play and pause.
-- [UIEvent.EventSubtype.remoteControlNextTrack](uievent/eventsubtype/remotecontrolnexttrack.md)
+- [UIEvent.EventSubtype.remoteControlNextTrack](./remotecontrolnexttrack.md)
   A remote-control event for skipping to the next audio or video track.
-- [UIEvent.EventSubtype.remoteControlPreviousTrack](uievent/eventsubtype/remotecontrolprevioustrack.md)
+- [UIEvent.EventSubtype.remoteControlPreviousTrack](./remotecontrolprevioustrack.md)
   A remote-control event for skipping to the previous audio or video track.
-- [UIEvent.EventSubtype.remoteControlBeginSeekingBackward](uievent/eventsubtype/remotecontrolbeginseekingbackward.md)
+- [UIEvent.EventSubtype.remoteControlBeginSeekingBackward](./remotecontrolbeginseekingbackward.md)
   A remote-control event to start seeking backward through the audio or video medium.
-- [UIEvent.EventSubtype.remoteControlEndSeekingBackward](uievent/eventsubtype/remotecontrolendseekingbackward.md)
+- [UIEvent.EventSubtype.remoteControlEndSeekingBackward](./remotecontrolendseekingbackward.md)
   A remote-control event to end seeking backward through the audio or video medium.
-- [UIEvent.EventSubtype.remoteControlBeginSeekingForward](uievent/eventsubtype/remotecontrolbeginseekingforward.md)
+- [UIEvent.EventSubtype.remoteControlBeginSeekingForward](./remotecontrolbeginseekingforward.md)
   A remote-control event to start seeking forward through the audio or video medium.
-- [UIEvent.EventSubtype.remoteControlEndSeekingForward](uievent/eventsubtype/remotecontrolendseekingforward.md)
+- [UIEvent.EventSubtype.remoteControlEndSeekingForward](./remotecontrolendseekingforward.md)
   A remote-control event to end seeking forward through the audio or video medium.
 
 

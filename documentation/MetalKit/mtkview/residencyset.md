@@ -1,7 +1,8 @@
 # residencySet
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.4+
@@ -15,6 +16,10 @@
 
 ```swift
 var residencySet: any MTLResidencySet { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) id<MTLResidencySet> residencySet;
 ```
 
 #### Discussion

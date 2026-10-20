@@ -1,7 +1,8 @@
 # accept(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Accepts the specified share metadatas and returns the accepted shares to an awaiting caller.
 
@@ -11,7 +12,7 @@ Accepts the specified share metadatas and returns the accepted shares to an awai
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -22,11 +23,11 @@ func accept(_ metadatas: [CKShare.Metadata]) async throws -> [CKShare.Metadata :
 
 #### Return Value
 
-A dictionary of accepted shares. The dictionary uses the share metadatas you specify in `metadatas` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/swift/result) that contains either the corresponding accepted share, or an error that describes why CloudKit can’t accept that share.
+A dictionary of accepted shares. The dictionary uses the share metadatas you specify in `metadatas` as its keys. The value of each key is a [`Result`](../../Swift/result.md) that contains either the corresponding accepted share, or an error that describes why CloudKit can’t accept that share.
 
 #### Discussion
 
-This method accepts shares asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKAcceptSharesOperation`](ckacceptsharesoperation.md) and configure it to use the necessary priority.
+This method accepts shares asynchronously and with a low priority. If you want the task to execute with a higher priority, create an instance of [`CKAcceptSharesOperation`](../ckacceptsharesoperation.md) and configure it to use the necessary priority.
 
 ## Parameters
 

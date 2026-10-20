@@ -1,7 +1,8 @@
 # description
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this camera frame provider.
 
@@ -16,7 +17,8 @@ final var description: String { get }
 
 ## See Also
 
-- [var state: DataProviderState](cameraframeprovider/state.md)
+### Getting information about the camera frame provider
+- [var state: DataProviderState](./state.md)
   The state of a camera frame provider.
 
 

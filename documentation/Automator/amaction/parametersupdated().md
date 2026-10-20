@@ -1,7 +1,8 @@
 # parametersUpdated()
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the action to update its user interface from its stored parameters, which have changed.
 
@@ -15,9 +16,14 @@ Requests the action to update its user interface from its stored parameters, whi
 func parametersUpdated()
 ```
 
+```objc
+- (void) parametersUpdated;
+```
+
 ## See Also
 
-- [func updateParameters()](amaction/updateparameters.md)
+### Updating Action Parameters
+- [func updateParameters()](./updateparameters%28%29.md)
   Requests the action to update its stored set of parameters from the settings in the action’s user interface.
 
 

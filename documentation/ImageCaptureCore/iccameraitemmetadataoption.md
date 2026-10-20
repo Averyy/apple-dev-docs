@@ -1,7 +1,8 @@
 # ICCameraItemMetadataOption
 
 **Framework**: ImageCaptureCore  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An option for the item’s metadata.
 
@@ -18,29 +19,34 @@ An option for the item’s metadata.
 struct ICCameraItemMetadataOption
 ```
 
+```c
+typedef NSString * ICCameraItemMetadataOption;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: String)](iccameraitemmetadataoption/init(rawvalue:).md)
+- [init(rawValue: String)](./iccameraitemmetadataoption/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func requestMetadata()](iccameraitem/requestmetadata.md)
+### Requesting Metadata
+- [func requestMetadata()](./iccameraitem/requestmetadata%28%29.md)
   Requests metadata for the item.
-- [var metadata: [AnyHashable : Any]?](iccameraitem/metadata.md)
+- [var metadata: [AnyHashable : Any]?](./iccameraitem/metadata.md)
   The item’s metadata.
-- [var metadataIfAvailable: [String : Any]?](iccameraitem/metadataifavailable.md)
+- [var metadataIfAvailable: [String : Any]?](./iccameraitem/metadataifavailable.md)
   The item’s metadata if it is readily available.
-- [func flushMetadataCache()](iccameraitem/flushmetadatacache.md)
+- [func flushMetadataCache()](./iccameraitem/flushmetadatacache%28%29.md)
   Deletes the item’s cached metadata.
 
 

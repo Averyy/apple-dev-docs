@@ -1,18 +1,21 @@
 # init(input_size:hidden_size:batch_size:num_layers:seq_len:dropout:lstm_flags:sequence_descriptor:input_descriptor:output_descriptor:input_gate:forget_gate:candidate_gate:output_gate:hidden_activation:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new long short-term memory (LSTM) parameters structure from the specified parameters.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -24,7 +27,7 @@ init(input_size: Int, hidden_size: Int, batch_size: Int, num_layers: Int, seq_le
 
 To enable peephole connections, set the weights pointer in the corresponding gates descriptor. To enable bias, set the bias pointer in the corresponding gates descriptor.
 
-BNNS treats the [`hidden_desc`](bnnslstmdatadescriptor/hidden_desc.md) of the [`input_descriptor`](bnnslayerparameterslstm/input_descriptor.md) as a zero-filled array if its [`data`](bnnsndarraydescriptor/data.md) is `nil`. BNNS treats the [`cell_state_desc`](bnnslstmdatadescriptor/cell_state_desc.md) of the [`input_descriptor`](bnnslayerparameterslstm/input_descriptor.md) as a zero-filled array if its [`data`](bnnsndarraydescriptor/data.md) is `nil`.
+BNNS treats the [`hidden_desc`](../bnnslstmdatadescriptor/hidden_desc.md) of the [`input_descriptor`](./input_descriptor.md) as a zero-filled array if its [`data`](../bnnsndarraydescriptor/data.md) is `nil`. BNNS treats the [`cell_state_desc`](../bnnslstmdatadescriptor/cell_state_desc.md) of the [`input_descriptor`](./input_descriptor.md) as a zero-filled array if its [`data`](../bnnsndarraydescriptor/data.md) is `nil`.
 
 ## Parameters
 
@@ -35,9 +38,9 @@ BNNS treats the [`hidden_desc`](bnnslstmdatadescriptor/hidden_desc.md) of the [`
 - `seq_len`: The size of the sequential input.
 - `dropout`: The dropout ratio to apply between LSTM layers. BNNS doesn’t apply dropout to the last stacked layer and ignores this parameter when the number of layers is `1`.
 - `lstm_flags`: Flags that control the behavior of an LSTM layer.
-- `sequence_descriptor`: A 1D array of unsigned-integer elements that determines the batch size for each step. If [`seq_len`](bnnslayerparameterslstm/seq_len.md) is greater than `1` and the [`data`](bnnsndarraydescriptor/data.md) property of this descriptor is `nil`, BNNS uses the same [`batch_size`](bnnslayerparameterslstm/batch_size.md) for the entire sequence.
-- `input_descriptor`: Descriptors of the input, hidden input, and cell-state input data. For more information, see [`input_descriptor`](bnnslayerparameterslstm/input_descriptor.md).
-- `output_descriptor`: Descriptors of the output, hidden output, and cell-state output data. For more information, see [`output_descriptor`](bnnslayerparameterslstm/output_descriptor.md).
+- `sequence_descriptor`: A 1D array of unsigned-integer elements that determines the batch size for each step. If [`seq_len`](./seq_len.md) is greater than `1` and the [`data`](../bnnsndarraydescriptor/data.md) property of this descriptor is `nil`, BNNS uses the same [`batch_size`](./batch_size.md) for the entire sequence.
+- `input_descriptor`: Descriptors of the input, hidden input, and cell-state input data. For more information, see [`input_descriptor`](./input_descriptor.md).
+- `output_descriptor`: Descriptors of the output, hidden output, and cell-state output data. For more information, see [`output_descriptor`](./output_descriptor.md).
 - `input_gate`: The descriptor of the input gate, which uses default sigmoid activation. Use C style multidimensional array notation to order the memory pointers as `[num_layers][num_directions][hidden_size][input_size/hidden_size]`.
 - `forget_gate`: The descriptor of the forget gate, which uses default sigmoid activation. Use C style multidimensional array notation to order the memory pointers as `[num_layers][num_directions][hidden_size][input_size/hidden_size]`.
 - `candidate_gate`: The descriptor of the candidate gate, which uses default tanh activation. Use C style multidimensional array notation to order the memory pointers as `[num_layers][num_directions][hidden_size][input_size/hidden_size]`.
@@ -46,7 +49,8 @@ BNNS treats the [`hidden_desc`](bnnslstmdatadescriptor/hidden_desc.md) of the [`
 
 ## See Also
 
-- [init()](bnnslayerparameterslstm/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Returns a new long short-term memory (LSTM) parameters structure.
 
 

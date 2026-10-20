@@ -1,17 +1,22 @@
 # ruler
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s ruler view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 weak var ruler: NSRulerView? { get }
+```
+
+```objc
+@property (weak, readonly) NSRulerView * ruler;
 ```
 
 

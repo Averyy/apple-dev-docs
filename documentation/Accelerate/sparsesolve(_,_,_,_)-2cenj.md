@@ -1,7 +1,8 @@
 # SparseSolve(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Solve `Ax=b` using the specified iterative method for complex float values.
 
@@ -20,27 +21,34 @@ Solve `Ax=b` using the specified iterative method for complex float values.
 func SparseSolve(_ method: SparseIterativeMethod, _ ApplyOperator: @escaping (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Float, DenseVector_Complex_Float) -> Void, _ b: DenseVector_Complex_Float, _ x: DenseVector_Complex_Float) -> SparseIterativeStatus_t
 ```
 
+```c
+static SparseIterativeStatus_t SparseSolve(SparseIterativeMethod method, void (^ApplyOperator)(bool accumulate, enum CBLAS_TRANSPOSE trans, DenseVector_Complex_Float x, DenseVector_Complex_Float y), DenseVector_Complex_Float b, DenseVector_Complex_Float x);
+```
+
 ## Parameters
 
 - `method`: (Input) Iterative method specification, eg return value of `SparseConjugateGradient()`.
-- `ApplyOperator`: `ApplyOperator(accumulate, trans, x, y)` should perform the operation `y = op(A)x` if `accumulate` is `false`, or `y += op(A)x` if `accumulate` is `true`. - **`accumulate`**: (input) Indicates whether to perform `Y += op(A)X` (if true) or `Y = op(A)X` (if false).
-- **`trans`**: (input) Indicates whether `op(A)` is the application of `A` (`trans=CblasNoTrans`) or `A^T` (`trans=CblasTrans`).
-- **`X`**: The matrix to multiply.
-- **`Y`**: The matrix in which to accumulate or store the result.
+- `ApplyOperator`: `ApplyOperator(accumulate, trans, x, y)` should perform the operation `y = op(A)x` if `accumulate` is `false`, or `y += op(A)x` if `accumulate` is `true`.
+
+  - **`accumulate`**: (input) Indicates whether to perform `Y += op(A)X` (if true) or `Y = op(A)X` (if false).
+  - **`trans`**: (input) Indicates whether `op(A)` is the application of `A` (`trans=CblasNoTrans`) or `A^T` (`trans=CblasTrans`).
+  - **`X`**: The matrix to multiply.
+  - **`Y`**: The matrix in which to accumulate or store the result.
 - `b`: The right-hand side `b` to solve for. If `a` has dimension `m x n`, then `b` must have length `m`.
 - `x`: On entry, initial guess for solution, on return the solution. If `A` has dimension `m x n`, then `x` must have length `n`. If no good initial estimate is available, user should set the initial guess to be the zero vector.
 
 ## See Also
 
-- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Double, DenseVector_Complex_Double) -> Void, DenseVector_Complex_Double, DenseVector_Complex_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:)-35kl2.md)
+### Iterative sparse solve functions for complex matrices
+- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Double, DenseVector_Complex_Double) -> Void, DenseVector_Complex_Double, DenseVector_Complex_Double) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_%29-35kl2.md)
   Solve `Ax=b` using the specified iterative method for complex double values.
-- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Double, DenseVector_Complex_Double) -> Void, DenseVector_Complex_Double, DenseVector_Complex_Double, SparseOpaquePreconditioner_Complex_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-1ogxn.md)
+- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Double, DenseVector_Complex_Double) -> Void, DenseVector_Complex_Double, DenseVector_Complex_Double, SparseOpaquePreconditioner_Complex_Double) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-1ogxn.md)
   Solve `Ax=b` using the specified iterative method for complex double values.
-- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Float, DenseVector_Complex_Float) -> Void, DenseVector_Complex_Float, DenseVector_Complex_Float, SparseOpaquePreconditioner_Complex_Float) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-2bm9r.md)
+- [func SparseSolve(SparseIterativeMethod, (Bool, CBLAS_TRANSPOSE, DenseVector_Complex_Float, DenseVector_Complex_Float) -> Void, DenseVector_Complex_Float, DenseVector_Complex_Float, SparseOpaquePreconditioner_Complex_Float) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-2bm9r.md)
   Solve `Ax=b` using the specified iterative method for complex float values.
-- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Complex_Float, DenseVector_Complex_Float, DenseVector_Complex_Float, SparseOpaquePreconditioner_Complex_Float) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-2ygeh.md)
+- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Complex_Float, DenseVector_Complex_Float, DenseVector_Complex_Float, SparseOpaquePreconditioner_Complex_Float) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-2ygeh.md)
   Solve `Ax=b` using the specified iterative method for complex float values.
-- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double, SparseOpaquePreconditioner_Complex_Double) -> SparseIterativeStatus_t](sparsesolve(_:_:_:_:_:)-7yfqx.md)
+- [func SparseSolve(SparseIterativeMethod, SparseMatrix_Complex_Double, DenseVector_Complex_Double, DenseVector_Complex_Double, SparseOpaquePreconditioner_Complex_Double) -> SparseIterativeStatus_t](./sparsesolve%28_,_,_,_,_%29-7yfqx.md)
   Solve `Ax=b` using the specified iterative method for complex double values.
 
 

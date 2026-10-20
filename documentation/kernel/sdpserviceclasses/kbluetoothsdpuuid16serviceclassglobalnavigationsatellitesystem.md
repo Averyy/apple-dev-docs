@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassGlobalNavigationSatelliteSystem
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassGlobalNavigationSatelliteSystem = 0x1135
 ```
 

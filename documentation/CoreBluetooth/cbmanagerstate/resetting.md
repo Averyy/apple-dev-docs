@@ -1,7 +1,8 @@
 # CBManagerState.resetting
 
 **Framework**: Core Bluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates the connection with the system service was momentarily lost.
 
@@ -20,21 +21,26 @@ A state that indicates the connection with the system service was momentarily lo
 case resetting
 ```
 
+```c
+CBManagerStateResetting
+```
+
 #### Discussion
 
 This state indicates that Bluetooth is trying to reconnect. After it reconnects, Core Bluetooth updates the state value.
 
 ## See Also
 
-- [CBManagerState.poweredOff](cbmanagerstate/poweredoff.md)
+### Manager States
+- [CBManagerState.poweredOff](./poweredoff.md)
   A state that indicates Bluetooth is currently powered off.
-- [CBManagerState.poweredOn](cbmanagerstate/poweredon.md)
+- [CBManagerState.poweredOn](./poweredon.md)
   A state that indicates Bluetooth is currently powered on and available to use.
-- [CBManagerState.unauthorized](cbmanagerstate/unauthorized.md)
+- [CBManagerState.unauthorized](./unauthorized.md)
   A state that indicates the application isn’t authorized to use the Bluetooth low energy role.
-- [CBManagerState.unknown](cbmanagerstate/unknown.md)
+- [CBManagerState.unknown](./unknown.md)
   The manager’s state is unknown.
-- [CBManagerState.unsupported](cbmanagerstate/unsupported.md)
+- [CBManagerState.unsupported](./unsupported.md)
   A state that indicates this device doesn’t support the Bluetooth low energy central or client role.
 
 

@@ -1,12 +1,15 @@
 # WebView
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
-`WebView` is the core view class in the WebKit framework that manages interactions between the `WebFrame` and `WebFrameView` classes. To embed web content in your application, you just create a `WebView` object, attach it to a window, and send a [`load(_:)`](webframe/load(_:)-47p2s.md) message to its main frame.
+`WebView` is the core view class in the WebKit framework that manages interactions between the `WebFrame` and `WebFrameView` classes. To embed web content in your application, you just create a `WebView` object, attach it to a window, and send a [`load(_:)`](./webframe/load%28_%29-47p2s.md) message to its main frame.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
@@ -15,340 +18,346 @@
 class WebView
 ```
 
+```objc
+@interface WebView : NSView
+```
+
 #### Overview
 
-> **Note**:  In apps that run in OS X 10.10 and later, use the [`WKWebView`](wkwebview.md) class instead of using [`WebView`](webview-swift.class.md).
+> **Note**:  In apps that run in OS X 10.10 and later, use the [`WKWebView`](./wkwebview.md) class instead of using [`WebView`](./webview-swift.class.md).
 
 Behind the scenes, `WebFrame` objects encapsulate the content contained in a single frame element. A hierarchy of `WebFrame` objects is used to model an entire webpage where the root is called the **main frame**. There is a `WebFrameView` object per `WebFrame` object used to display the frame content. Therefore, there is a parallel hierarchy of `WebFrameView` objects used to render an entire page. The `WebView` object is also the parent view of this hierarchy. You do not need to create `WebFrame` and `WebFrameView` objects directly. These objects are automatically created when the page loads, either programmatically or by the user clicking a link.
 
 You customize your embedded web content by implementing `WebView` delegates to handle certain aspects of the process. `WebView` objects have multiple delegates because the process of loading a webpage is asynchronous and complicated if errors occur. All the `WebView` delegates use informal protocols so you only need to implement only the delegates and methods that define the behavior you wish to change—default implementations are already provided.
 
-For example, you might want to implement the frame load and resource load delegates to monitor the load progress and display status messages. Applications that use multiple windows may want to implement a user interface delegate. See the individual informal delegate protocols for more details: `WebFrameLoadDelegate`, `WebPolicyDelegate`, [`WebResourceLoadDelegate`](webresourceloaddelegate.md), and [`WebUIDelegate`](webuidelegate.md).
+For example, you might want to implement the frame load and resource load delegates to monitor the load progress and display status messages. Applications that use multiple windows may want to implement a user interface delegate. See the individual informal delegate protocols for more details: `WebFrameLoadDelegate`, `WebPolicyDelegate`, [`WebResourceLoadDelegate`](./webresourceloaddelegate.md), and [`WebUIDelegate`](./webuidelegate.md).
 
-Another way to monitor load progress with less control is to observe the [`WebViewProgressEstimateChangedNotification`](webviewprogressestimatechangednotification.md), [`WebViewProgressFinishedNotification`](webviewprogressfinishednotification.md), and [`WebViewProgressStartedNotification`](webviewprogressstartednotification.md) notifications. For example, you could observe these notifications to implement a simple progress indicator in your application. You update the progress indicator by invoking the [`estimatedProgress`](webview-swift.class/estimatedprogress.md) method to get an estimate of the amount of content that is currently loaded.
+Another way to monitor load progress with less control is to observe the [`WebViewProgressEstimateChangedNotification`](./webviewprogressestimatechangednotification.md), [`WebViewProgressFinishedNotification`](./webviewprogressfinishednotification.md), and [`WebViewProgressStartedNotification`](./webviewprogressstartednotification.md) notifications. For example, you could observe these notifications to implement a simple progress indicator in your application. You update the progress indicator by invoking the [`estimatedProgress`](./webview-swift.class/estimatedprogress.md) method to get an estimate of the amount of content that is currently loaded.
 
-A `WebView` object is intended to support most features you would expect in a web browser except that it doesn’t implement the specific user interface for those features. You are responsible for implementing the user interface objects such as status bars, toolbars, buttons, and text fields. For example, a `WebView` object manages a back-forward list by default, and has [`goBack(_:)`](webview-swift.class/goback(_:).md) and [`goForward(_:)`](webview-swift.class/goforward(_:).md) action methods. It is your responsibility to create the buttons that would send theses action messages. Note, there is some overhead in maintaining a back-forward list and page cache, so you should disable it if your application doesn’t use it.
+A `WebView` object is intended to support most features you would expect in a web browser except that it doesn’t implement the specific user interface for those features. You are responsible for implementing the user interface objects such as status bars, toolbars, buttons, and text fields. For example, a `WebView` object manages a back-forward list by default, and has [`goBack(_:)`](./webview-swift.class/goback%28_%29.md) and [`goForward(_:)`](./webview-swift.class/goforward%28_%29.md) action methods. It is your responsibility to create the buttons that would send theses action messages. Note, there is some overhead in maintaining a back-forward list and page cache, so you should disable it if your application doesn’t use it.
 
-You use a `WebPreferences` object to encapsulate the preferences of a `WebView` object, such as the font, text encoding, and image settings. You can modify the preferences for individual `WebView` objects or specify a shared `WebPreferences` object using the [`preferencesIdentifier`](webview-swift.class/preferencesidentifier.md) method. Use the [`autosaves`](webpreferences/autosaves.md)  `WebPreferences` method to specify whether the preferences should be automatically saved to the user defaults database.
+You use a `WebPreferences` object to encapsulate the preferences of a `WebView` object, such as the font, text encoding, and image settings. You can modify the preferences for individual `WebView` objects or specify a shared `WebPreferences` object using the [`preferencesIdentifier`](./webview-swift.class/preferencesidentifier.md) method. Use the [`autosaves`](./webpreferences/autosaves.md)  `WebPreferences` method to specify whether the preferences should be automatically saved to the user defaults database.
 
-You can also extend WebKit by implementing your own document view and representation classes for specific MIME types. Use the [`registerClass(_:representationClass:forMIMEType:)`](webview-swift.class/registerclass(_:representationclass:formimetype:).md) class method to register your custom classes with a `WebView` object.
+You can also extend WebKit by implementing your own document view and representation classes for specific MIME types. Use the [`registerClass(_:representationClass:forMIMEType:)`](./webview-swift.class/registerclass%28_,representationclass,formimetype%29.md) class method to register your custom classes with a `WebView` object.
 
 ## Topics
 
 ### Registering Document Views and Representations
-- [class func registerURLScheme(asLocal: String!)](webview-swift.class/registerurlscheme(aslocal:).md)
+- [class func registerURLScheme(asLocal: String!)](./webview-swift.class/registerurlscheme%28aslocal%29.md)
   Adds the specified URL scheme to the list of local schemes.
-- [class func registerClass(AnyClass!, representationClass: AnyClass!, forMIMEType: String!)](webview-swift.class/registerclass(_:representationclass:formimetype:).md)
+- [class func registerClass(AnyClass!, representationClass: AnyClass!, forMIMEType: String!)](./webview-swift.class/registerclass%28_,representationclass,formimetype%29.md)
   Specifies the view and representation objects to be used for specific MIME types.
 ### Initializing Views
-- [init!(frame: NSRect, frameName: String!, groupName: String!)](webview-swift.class/init(frame:framename:groupname:).md)
+- [init!(frame: NSRect, frameName: String!, groupName: String!)](./webview-swift.class/init%28frame,framename,groupname%29.md)
   Initializes the receiver with a frame rectangle, frame name, and group name.
 ### Closing the View
-- [func close()](webview-swift.class/close.md)
+- [func close()](./webview-swift.class/close%28%29.md)
   Closes the web view when it’s no longer needed.
-- [var shouldCloseWithWindow: Bool](webview-swift.class/shouldclosewithwindow.md)
+- [var shouldCloseWithWindow: Bool](./webview-swift.class/shouldclosewithwindow.md)
   A Boolean that indicates whether the web view should close when its window or host window closes.
 ### Getting the Main Frame
-- [var mainFrame: WebFrame!](webview-swift.class/mainframe.md)
+- [var mainFrame: WebFrame!](./webview-swift.class/mainframe.md)
   The main frame, the root of the web frame hierarchy for this page.
 ### Loading Content
-- [func stopLoading(Any?)](webview-swift.class/stoploading(_:).md)
+- [func stopLoading(Any?)](./webview-swift.class/stoploading%28_%29.md)
   An action method that stops the loading of any web frame content managed by the receiver.
-- [func takeStringURLFrom(Any?)](webview-swift.class/takestringurlfrom(_:).md)
+- [func takeStringURLFrom(Any?)](./webview-swift.class/takestringurlfrom%28_%29.md)
   Sets the receiver’s current location by obtaining a URL string from the sender.
-- [func reload(Any?)](webview-swift.class/reload(_:).md)
+- [func reload(Any?)](./webview-swift.class/reload%28_%29.md)
   An action method that reloads the current page.
-- [func reloadFromOrigin(Any?)](webview-swift.class/reloadfromorigin(_:).md)
+- [func reloadFromOrigin(Any?)](./webview-swift.class/reloadfromorigin%28_%29.md)
   Action method that performs an end-to-end revalidation using cache-validating conditionals if possible.
-- [var estimatedProgress: Double](webview-swift.class/estimatedprogress.md)
+- [var estimatedProgress: Double](./webview-swift.class/estimatedprogress.md)
   An estimate, as a percentage, of the amount of content that is currently loaded.
 ### Drawing
-- [var drawsBackground: Bool](webview-swift.class/drawsbackground.md)
+- [var drawsBackground: Bool](./webview-swift.class/drawsbackground.md)
   A Boolean that indicates whether the web view draws a background.
-- [var shouldUpdateWhileOffscreen: Bool](webview-swift.class/shouldupdatewhileoffscreen.md)
+- [var shouldUpdateWhileOffscreen: Bool](./webview-swift.class/shouldupdatewhileoffscreen.md)
   A Boolean that inidicates whether the web view should update even when it is not in a window that is currently visible.
 ### Moving Back and Forward
-- [func setMaintainsBackForwardList(Bool)](webview-swift.class/setmaintainsbackforwardlist(_:).md)
+- [func setMaintainsBackForwardList(Bool)](./webview-swift.class/setmaintainsbackforwardlist%28_%29.md)
   Sets whether to use a back-forward list.
-- [var backForwardList: WebBackForwardList!](webview-swift.class/backforwardlist.md)
+- [var backForwardList: WebBackForwardList!](./webview-swift.class/backforwardlist.md)
   The receiver’s back-forward list.
-- [var canGoBack: Bool](webview-swift.class/cangoback.md)
+- [var canGoBack: Bool](./webview-swift.class/cangoback.md)
   A Boolean that indicates whether the previous location can be loaded.
-- [func goBack() -> Bool](webview-swift.class/goback.md)
+- [func goBack() -> Bool](./webview-swift.class/goback%28%29.md)
   Loads the previous location in the back-forward list.
-- [func goBack(Any?)](webview-swift.class/goback(_:).md)
+- [func goBack(Any?)](./webview-swift.class/goback%28_%29.md)
   An action method that loads the previous location in the back-forward list.
-- [var canGoForward: Bool](webview-swift.class/cangoforward.md)
+- [var canGoForward: Bool](./webview-swift.class/cangoforward.md)
   A Boolean that indicates whether the next location can be loaded.
-- [func goForward() -> Bool](webview-swift.class/goforward.md)
+- [func goForward() -> Bool](./webview-swift.class/goforward%28%29.md)
   Loads the next location in the back-forward list.
-- [func goForward(Any?)](webview-swift.class/goforward(_:).md)
+- [func goForward(Any?)](./webview-swift.class/goforward%28_%29.md)
   An action method that loads the next location in the back-forward list.
-- [func go(toBackForwardItem: WebHistoryItem!) -> Bool](webview-swift.class/go(tobackforwarditem:).md)
+- [func go(toBackForwardItem: WebHistoryItem!) -> Bool](./webview-swift.class/go%28tobackforwarditem%29.md)
   Loads a specific location from the back-forward list and sets it as the current item.
 ### Changing the Text Size
-- [var canMakeTextLarger: Bool](webview-swift.class/canmaketextlarger.md)
+- [var canMakeTextLarger: Bool](./webview-swift.class/canmaketextlarger.md)
   A Boolean that indicates whether the text can be made larger.
-- [func makeTextLarger(Any?)](webview-swift.class/maketextlarger(_:).md)
+- [func makeTextLarger(Any?)](./webview-swift.class/maketextlarger%28_%29.md)
   Action method that increases the text size by one unit.
-- [var canMakeTextSmaller: Bool](webview-swift.class/canmaketextsmaller.md)
+- [var canMakeTextSmaller: Bool](./webview-swift.class/canmaketextsmaller.md)
   A Boolean that indicates whether the text can be made smaller.
-- [func makeTextSmaller(Any?)](webview-swift.class/maketextsmaller(_:).md)
+- [func makeTextSmaller(Any?)](./webview-swift.class/maketextsmaller%28_%29.md)
   Action method that reduces the text size by one unit.
 ### Getting and Setting Delegates
-- [var downloadDelegate: (any WebDownloadDelegate)!](webview-swift.class/downloaddelegate.md)
+- [var downloadDelegate: (any WebDownloadDelegate)!](./webview-swift.class/downloaddelegate.md)
   The receiver’s download delegate.
-- [var frameLoadDelegate: (any WebFrameLoadDelegate)!](webview-swift.class/frameloaddelegate.md)
+- [var frameLoadDelegate: (any WebFrameLoadDelegate)!](./webview-swift.class/frameloaddelegate.md)
   The receiver’s frame load delegate.
-- [var policyDelegate: (any WebPolicyDelegate)!](webview-swift.class/policydelegate.md)
+- [var policyDelegate: (any WebPolicyDelegate)!](./webview-swift.class/policydelegate.md)
   The receiver’s policy delegate.
-- [var resourceLoadDelegate: (any WebResourceLoadDelegate)!](webview-swift.class/resourceloaddelegate.md)
+- [var resourceLoadDelegate: (any WebResourceLoadDelegate)!](./webview-swift.class/resourceloaddelegate.md)
   The receiver’s resource load delegate.
-- [var uiDelegate: (any WebUIDelegate)!](webview-swift.class/uidelegate.md)
+- [var uiDelegate: (any WebUIDelegate)!](./webview-swift.class/uidelegate.md)
   The receiver’s user interface delegate.
 ### Getting and Setting the Window
-- [var hostWindow: NSWindow!](webview-swift.class/hostwindow.md)
+- [var hostWindow: NSWindow!](./webview-swift.class/hostwindow.md)
   The receiver’s host window.
 ### Getting and Setting Preferences
-- [var preferences: WebPreferences!](webview-swift.class/preferences.md)
+- [var preferences: WebPreferences!](./webview-swift.class/preferences.md)
   The receiver’s preferences.
-- [var preferencesIdentifier: String!](webview-swift.class/preferencesidentifier.md)
+- [var preferencesIdentifier: String!](./webview-swift.class/preferencesidentifier.md)
   The identifier of the receiver’s preferences.
 ### Getting and Setting Frame Contents
-- [var isLoading: Bool](webview-swift.class/isloading.md)
+- [var isLoading: Bool](./webview-swift.class/isloading.md)
   A Boolean that indicates whether the web view is loading content.
-- [var selectedFrame: WebFrame!](webview-swift.class/selectedframe.md)
+- [var selectedFrame: WebFrame!](./webview-swift.class/selectedframe.md)
   The frame with the active selection.
-- [var mainFrameURL: String!](webview-swift.class/mainframeurl.md)
+- [var mainFrameURL: String!](./webview-swift.class/mainframeurl.md)
   The URL that the main frame loads.
-- [var mainFrameTitle: String!](webview-swift.class/mainframetitle.md)
+- [var mainFrameTitle: String!](./webview-swift.class/mainframetitle.md)
   The HTML title of the loaded page.
-- [var mainFrameIcon: NSImage!](webview-swift.class/mainframeicon.md)
+- [var mainFrameIcon: NSImage!](./webview-swift.class/mainframeicon.md)
   The site’s favicon.
-- [var mainFrameDocument: DOMDocument!](webview-swift.class/mainframedocument.md)
+- [var mainFrameDocument: DOMDocument!](./webview-swift.class/mainframedocument.md)
   The DOM document for the main frame.
 ### Getting and Setting Content Information
-- [class func canShowMIMEType(String!) -> Bool](webview-swift.class/canshowmimetype(_:).md)
+- [class func canShowMIMEType(String!) -> Bool](./webview-swift.class/canshowmimetype%28_%29.md)
   Returns whether the receiver can display content of a given MIME type.
-- [class func mimeTypesShownAsHTML() -> [Any]!](webview-swift.class/mimetypesshownashtml.md)
+- [class func mimeTypesShownAsHTML() -> [Any]!](./webview-swift.class/mimetypesshownashtml%28%29.md)
   Returns a list of MIME types that WebKit renders as HTML.
-- [class func setMIMETypesShownAsHTML([Any]!)](webview-swift.class/setmimetypesshownashtml(_:).md)
+- [class func setMIMETypesShownAsHTML([Any]!)](./webview-swift.class/setmimetypesshownashtml%28_%29.md)
   Sets the MIME types that WebKit attempts to render as HTML.
-- [class func canShowMIMEType(asHTML: String!) -> Bool](webview-swift.class/canshowmimetype(ashtml:).md)
+- [class func canShowMIMEType(asHTML: String!) -> Bool](./webview-swift.class/canshowmimetype%28ashtml%29.md)
   Returns whether the receiver interprets a MIME type as HTML.
-- [var supportsTextEncoding: Bool](webview-swift.class/supportstextencoding.md)
+- [var supportsTextEncoding: Bool](./webview-swift.class/supportstextencoding.md)
   A Boolean that indicates whether the document view supports different text encodings.
-- [var customTextEncodingName: String!](webview-swift.class/customtextencodingname.md)
+- [var customTextEncodingName: String!](./webview-swift.class/customtextencodingname.md)
   The custom text encoding name.
-- [var textSizeMultiplier: Float](webview-swift.class/textsizemultiplier.md)
+- [var textSizeMultiplier: Float](./webview-swift.class/textsizemultiplier.md)
   The font size multiplier for text displayed in web frame view objects managed by the receiver.
 ### Searching the Document
-- [func search(for: String!, direction: Bool, caseSensitive: Bool, wrap: Bool) -> Bool](webview-swift.class/search(for:direction:casesensitive:wrap:).md)
+- [func search(for: String!, direction: Bool, caseSensitive: Bool, wrap: Bool) -> Bool](./webview-swift.class/search%28for,direction,casesensitive,wrap%29.md)
   Searches a document view for a string and highlights it if it is found.
 ### Getting and Setting the Group Name
-- [var groupName: String!](webview-swift.class/groupname.md)
+- [var groupName: String!](./webview-swift.class/groupname.md)
   The receiver’s group name.
 ### Getting and Setting User-agent Strings
-- [func userAgent(for: URL!) -> String!](webview-swift.class/useragent(for:).md)
+- [func userAgent(for: URL!) -> String!](./webview-swift.class/useragent%28for%29.md)
   Returns the appropriate user-agent string for a given URL.
-- [var applicationNameForUserAgent: String!](webview-swift.class/applicationnameforuseragent.md)
+- [var applicationNameForUserAgent: String!](./webview-swift.class/applicationnameforuseragent.md)
   The receiver’s application name that is used in the user-agent string.
-- [var customUserAgent: String!](webview-swift.class/customuseragent.md)
+- [var customUserAgent: String!](./webview-swift.class/customuseragent.md)
   The receiver’s custom user-agent string.
 ### Processing JavaScript
-- [func stringByEvaluatingJavaScript(from: String!) -> String!](webview-swift.class/stringbyevaluatingjavascript(from:).md)
+- [func stringByEvaluatingJavaScript(from: String!) -> String!](./webview-swift.class/stringbyevaluatingjavascript%28from%29.md)
   Returns the result of running a script.
 ### Using the Pasteboard
-- [class func url(from: NSPasteboard!) -> URL!](webview-swift.class/url(from:).md)
+- [class func url(from: NSPasteboard!) -> URL!](./webview-swift.class/url%28from%29.md)
   Returns a URL from the specified pasteboard.
-- [class func urlTitle(from: NSPasteboard!) -> String!](webview-swift.class/urltitle(from:).md)
+- [class func urlTitle(from: NSPasteboard!) -> String!](./webview-swift.class/urltitle%28from%29.md)
   Returns the title of a URL from the specified pasteboard.
-- [func pasteboardTypes(forElement: [AnyHashable : Any]!) -> [Any]!](webview-swift.class/pasteboardtypes(forelement:).md)
+- [func pasteboardTypes(forElement: [AnyHashable : Any]!) -> [Any]!](./webview-swift.class/pasteboardtypes%28forelement%29.md)
   Returns an array of pasteboard types for an element.
-- [var pasteboardTypesForSelection: [Any]!](webview-swift.class/pasteboardtypesforselection.md)
+- [var pasteboardTypesForSelection: [Any]!](./webview-swift.class/pasteboardtypesforselection.md)
   An array of pasteboard types that can be used for the current selection of the receiver.
-- [func writeElement([AnyHashable : Any]!, withPasteboardTypes: [Any]!, to: NSPasteboard!)](webview-swift.class/writeelement(_:withpasteboardtypes:to:).md)
+- [func writeElement([AnyHashable : Any]!, withPasteboardTypes: [Any]!, to: NSPasteboard!)](./webview-swift.class/writeelement%28_,withpasteboardtypes,to%29.md)
   Writes an element to the pasteboard using a list of types.
-- [func writeSelection(withPasteboardTypes: [Any]!, to: NSPasteboard!)](webview-swift.class/writeselection(withpasteboardtypes:to:).md)
+- [func writeSelection(withPasteboardTypes: [Any]!, to: NSPasteboard!)](./webview-swift.class/writeselection%28withpasteboardtypes,to%29.md)
   Writes the receiver’s current selection to a pasteboard using a list of types.
 ### Dragging
-- [func element(at: NSPoint) -> [AnyHashable : Any]!](webview-swift.class/element(at:).md)
+- [func element(at: NSPoint) -> [AnyHashable : Any]!](./webview-swift.class/element%28at%29.md)
   Returns a dictionary description of the element at a given point in the receiver’s coordinates.
-- [func moveDragCaret(to: NSPoint)](webview-swift.class/movedragcaret(to:).md)
+- [func moveDragCaret(to: NSPoint)](./webview-swift.class/movedragcaret%28to%29.md)
   Moves the drag caret that indicates the destination of a drag operation to a given point.
-- [func removeDragCaret()](webview-swift.class/removedragcaret.md)
+- [func removeDragCaret()](./webview-swift.class/removedragcaret%28%29.md)
   Removes the drag caret that indicates the destination of a drag operation.
 ### Cut, Copy and Paste Action Methods
-- [func copy(Any?)](webview-swift.class/copy(_:).md)
+- [func copy(Any?)](./webview-swift.class/copy%28_%29.md)
   Action method that copies the selected content to the general pasteboard.
-- [func copyFont(Any?)](webview-swift.class/copyfont(_:).md)
+- [func copyFont(Any?)](./webview-swift.class/copyfont%28_%29.md)
   An action method that copies font information onto the font pasteboard.
-- [func cut(Any?)](webview-swift.class/cut(_:).md)
+- [func cut(Any?)](./webview-swift.class/cut%28_%29.md)
   An action method that deletes selected content and puts it on the general pasteboard.
-- [func delete(Any?)](webview-swift.class/delete(_:).md)
+- [func delete(Any?)](./webview-swift.class/delete%28_%29.md)
   An action method that deletes the selected content.
-- [func paste(Any?)](webview-swift.class/paste(_:).md)
+- [func paste(Any?)](./webview-swift.class/paste%28_%29.md)
   An action method that pastes content from the pasteboard at the insertion point or over the selection.
-- [func pasteFont(Any?)](webview-swift.class/pastefont(_:).md)
+- [func pasteFont(Any?)](./webview-swift.class/pastefont%28_%29.md)
   An action method that pastes font information from the font pasteboard.
-- [func pasteAsPlainText(Any?)](webview-swift.class/pasteasplaintext(_:).md)
+- [func pasteAsPlainText(Any?)](./webview-swift.class/pasteasplaintext%28_%29.md)
   An action method that pastes pasteboard content as plain text.
-- [func pasteAsRichText(Any?)](webview-swift.class/pasteasrichtext(_:).md)
+- [func pasteAsRichText(Any?)](./webview-swift.class/pasteasrichtext%28_%29.md)
   An action method that pastes pasteboard content into the receiver as rich text, maintaining its attributes.
 ### Content Alignment Action Methods
-- [func alignCenter(Any?)](webview-swift.class/aligncenter(_:).md)
+- [func alignCenter(Any?)](./webview-swift.class/aligncenter%28_%29.md)
   An action method that applies center alignment to selected content or all content if there’s no selection.
-- [func alignJustified(Any?)](webview-swift.class/alignjustified(_:).md)
+- [func alignJustified(Any?)](./webview-swift.class/alignjustified%28_%29.md)
   An action method that applies full justification to selected content or all content if there’s no selection.
-- [func alignLeft(Any?)](webview-swift.class/alignleft(_:).md)
+- [func alignLeft(Any?)](./webview-swift.class/alignleft%28_%29.md)
   An action method that applies left justification to selected content or all content if there’s no selection.
-- [func alignRight(Any?)](webview-swift.class/alignright(_:).md)
+- [func alignRight(Any?)](./webview-swift.class/alignright%28_%29.md)
   An action method that applies right justification to selected content or all content if there is no selection.
 ### Changing the Font, Color and Other Attributes When Editing
-- [func changeFont(Any?)](webview-swift.class/changefont(_:).md)
+- [func changeFont(Any?)](./webview-swift.class/changefont%28_%29.md)
   An action method that changes the font of the selection, or all content if there is no selection.
-- [func changeAttributes(Any?)](webview-swift.class/changeattributes(_:).md)
+- [func changeAttributes(Any?)](./webview-swift.class/changeattributes%28_%29.md)
   An action method that changes the attributes of the current selection.
-- [func changeDocumentBackgroundColor(Any?)](webview-swift.class/changedocumentbackgroundcolor(_:).md)
+- [func changeDocumentBackgroundColor(Any?)](./webview-swift.class/changedocumentbackgroundcolor%28_%29.md)
   Sets the background color of the selected content.
-- [func changeColor(Any?)](webview-swift.class/changecolor(_:).md)
+- [func changeColor(Any?)](./webview-swift.class/changecolor%28_%29.md)
   Sets the color of the selected content.
 ### Spell-checking Action Methods
-- [func checkSpelling(Any?)](webview-swift.class/checkspelling(_:).md)
+- [func checkSpelling(Any?)](./webview-swift.class/checkspelling%28_%29.md)
   An action method that searches for a misspelled word in the receiver.
-- [func showGuessPanel(Any?)](webview-swift.class/showguesspanel(_:).md)
+- [func showGuessPanel(Any?)](./webview-swift.class/showguesspanel%28_%29.md)
   An action method that shows a spelling correction panel.
 ### Find Panel Action Method
-- [func performFindPanelAction(Any?)](webview-swift.class/performfindpanelaction(_:).md)
+- [func performFindPanelAction(Any?)](./webview-swift.class/performfindpanelaction%28_%29.md)
   An action method that opens the Find menu and Find panel.
 ### Controlling Speakable Text
-- [func startSpeaking(Any?)](webview-swift.class/startspeaking(_:).md)
+- [func startSpeaking(Any?)](./webview-swift.class/startspeaking%28_%29.md)
   An action method that starts speaking the selected text or all text if there’s no selection.
-- [func stopSpeaking(Any?)](webview-swift.class/stopspeaking(_:).md)
+- [func stopSpeaking(Any?)](./webview-swift.class/stopspeaking%28_%29.md)
   An action method that stops speaking that is in progress.
 ### Getting and Setting Document Editing Attributes
-- [var isEditable: Bool](webview-swift.class/iseditable.md)
+- [var isEditable: Bool](./webview-swift.class/iseditable.md)
   A Boolean that indicates whether the user is allowed to edit the document.
-- [var smartInsertDeleteEnabled: Bool](webview-swift.class/smartinsertdeleteenabled.md)
+- [var smartInsertDeleteEnabled: Bool](./webview-swift.class/smartinsertdeleteenabled.md)
   A Boolean that indicates whether smart-space insertion and deletion is enabled.
-- [var isContinuousSpellCheckingEnabled: Bool](webview-swift.class/iscontinuousspellcheckingenabled.md)
+- [var isContinuousSpellCheckingEnabled: Bool](./webview-swift.class/iscontinuousspellcheckingenabled.md)
   A Boolean that indicates whether the web view has continuous spell-checking enabled.
-- [var spellCheckerDocumentTag: Int](webview-swift.class/spellcheckerdocumenttag.md)
+- [var spellCheckerDocumentTag: Int](./webview-swift.class/spellcheckerdocumenttag.md)
   The spell-checker document tag for this document.
-- [var undoManager: UndoManager!](webview-swift.class/undomanager.md)
+- [var undoManager: UndoManager!](./webview-swift.class/undomanager.md)
   The receiver’s undo manager.
-- [var editingDelegate: (any WebEditingDelegate)!](webview-swift.class/editingdelegate.md)
+- [var editingDelegate: (any WebEditingDelegate)!](./webview-swift.class/editingdelegate.md)
   The receiver’s editing delegate.
-- [func editableDOMRange(for: NSPoint) -> DOMRange!](webview-swift.class/editabledomrange(for:).md)
+- [func editableDOMRange(for: NSPoint) -> DOMRange!](./webview-swift.class/editabledomrange%28for%29.md)
   Returns the editable DOM object located at a given point.
 ### Editing Documents
-- [func replaceSelection(with: DOMNode!)](webview-swift.class/replaceselection(with:)-5px9m.md)
+- [func replaceSelection(with: DOMNode!)](./webview-swift.class/replaceselection%28with%29-5px9m.md)
   Replaces the receiver’s current selection with the specified DOM node.
-- [func replaceSelection(withText: String!)](webview-swift.class/replaceselection(withtext:).md)
+- [func replaceSelection(withText: String!)](./webview-swift.class/replaceselection%28withtext%29.md)
   Replaces the current selection with a string of text.
-- [func replaceSelection(withMarkupString: String!)](webview-swift.class/replaceselection(withmarkupstring:).md)
+- [func replaceSelection(withMarkupString: String!)](./webview-swift.class/replaceselection%28withmarkupstring%29.md)
   Replaces the current selection with mixed text and markup.
-- [func replaceSelection(with: WebArchive!)](webview-swift.class/replaceselection(with:)-3vj8l.md)
+- [func replaceSelection(with: WebArchive!)](./webview-swift.class/replaceselection%28with%29-3vj8l.md)
   Replaces the current selection with an archive’s contents.
-- [func deleteSelection()](webview-swift.class/deleteselection.md)
+- [func deleteSelection()](./webview-swift.class/deleteselection%28%29.md)
   Deletes the receiver’s current selection unless it’s collapsed.
-- [func moveToBeginningOfSentence(Any?)](webview-swift.class/movetobeginningofsentence(_:).md)
+- [func moveToBeginningOfSentence(Any?)](./webview-swift.class/movetobeginningofsentence%28_%29.md)
   Moves the insertion point to the beginning of the current sentence.
-- [func moveToBeginningOfSentenceAndModifySelection(Any?)](webview-swift.class/movetobeginningofsentenceandmodifyselection(_:).md)
+- [func moveToBeginningOfSentenceAndModifySelection(Any?)](./webview-swift.class/movetobeginningofsentenceandmodifyselection%28_%29.md)
   Moves the insertion point and extends the selection to the beginning of the current sentence.
-- [func moveToEndOfSentence(Any?)](webview-swift.class/movetoendofsentence(_:).md)
+- [func moveToEndOfSentence(Any?)](./webview-swift.class/movetoendofsentence%28_%29.md)
   Moves the insertion point to the end of the current sentence.
-- [func moveToEndOfSentenceAndModifySelection(Any?)](webview-swift.class/movetoendofsentenceandmodifyselection(_:).md)
+- [func moveToEndOfSentenceAndModifySelection(Any?)](./webview-swift.class/movetoendofsentenceandmodifyselection%28_%29.md)
   Moves the insertion point and extends the selection to the end of the current sentence.
-- [func selectSentence(Any?)](webview-swift.class/selectsentence(_:).md)
+- [func selectSentence(Any?)](./webview-swift.class/selectsentence%28_%29.md)
   Selects the entire sentence around the insertion point.
-- [func toggleContinuousSpellChecking(Any?)](webview-swift.class/togglecontinuousspellchecking(_:).md)
+- [func toggleContinuousSpellChecking(Any?)](./webview-swift.class/togglecontinuousspellchecking%28_%29.md)
   Toggles whether continuous spell checking is available.
-- [func toggleSmartInsertDelete(Any?)](webview-swift.class/togglesmartinsertdelete(_:).md)
+- [func toggleSmartInsertDelete(Any?)](./webview-swift.class/togglesmartinsertdelete%28_%29.md)
   Toggles whether spaces around selected words are inserted or deleted to preserve proper spacing and punctuation.
-- [var canMakeTextStandardSize: Bool](webview-swift.class/canmaketextstandardsize.md)
+- [var canMakeTextStandardSize: Bool](./webview-swift.class/canmaketextstandardsize.md)
   A Boolean that indicates whether the current text size is a multiple of 1.
-- [func makeTextStandardSize(Any?)](webview-swift.class/maketextstandardsize(_:).md)
+- [func makeTextStandardSize(Any?)](./webview-swift.class/maketextstandardsize%28_%29.md)
   Resets the text size to a multiple of 1.
-- [var maintainsInactiveSelection: Bool](webview-swift.class/maintainsinactiveselection.md)
+- [var maintainsInactiveSelection: Bool](./webview-swift.class/maintainsinactiveselection.md)
   A Boolean that indicates whether the selection is maintained when focus is lost.
 ### Selecting Content in the Document
-- [var selectedDOMRange: DOMRange!](webview-swift.class/selecteddomrange.md)
+- [var selectedDOMRange: DOMRange!](./webview-swift.class/selecteddomrange.md)
   The range of the current selection.
-- [func setSelectedDOMRange(DOMRange!, affinity: NSSelectionAffinity)](webview-swift.class/setselecteddomrange(_:affinity:).md)
+- [func setSelectedDOMRange(DOMRange!, affinity: NSSelectionAffinity)](./webview-swift.class/setselecteddomrange%28_,affinity%29.md)
   Selects a range of nodes.
-- [var selectionAffinity: NSSelectionAffinity](webview-swift.class/selectionaffinity.md)
+- [var selectionAffinity: NSSelectionAffinity](./webview-swift.class/selectionaffinity.md)
   The current selection affinity.
 ### Getting and Setting CSS Properties
-- [func computedStyle(for: DOMElement!, pseudoElement: String!) -> DOMCSSStyleDeclaration!](webview-swift.class/computedstyle(for:pseudoelement:).md)
+- [func computedStyle(for: DOMElement!, pseudoElement: String!) -> DOMCSSStyleDeclaration!](./webview-swift.class/computedstyle%28for,pseudoelement%29.md)
   Returns the computed style of an element and its pseudo element.
-- [var mediaStyle: String!](webview-swift.class/mediastyle.md)
+- [var mediaStyle: String!](./webview-swift.class/mediastyle.md)
   The receiver’s CSS media property.
-- [var typingStyle: DOMCSSStyleDeclaration!](webview-swift.class/typingstyle.md)
+- [var typingStyle: DOMCSSStyleDeclaration!](./webview-swift.class/typingstyle.md)
   The receiver’s CSS typing style.
-- [func styleDeclaration(withText: String!) -> DOMCSSStyleDeclaration!](webview-swift.class/styledeclaration(withtext:).md)
+- [func styleDeclaration(withText: String!) -> DOMCSSStyleDeclaration!](./webview-swift.class/styledeclaration%28withtext%29.md)
   Returns the CSS style declaration for the specified text.
-- [func applyStyle(DOMCSSStyleDeclaration!)](webview-swift.class/applystyle(_:).md)
+- [func applyStyle(DOMCSSStyleDeclaration!)](./webview-swift.class/applystyle%28_%29.md)
   Applies the CSS typing style to the current selection.
 ### Using WebScript
-- [var windowScriptObject: WebScriptObject!](webview-swift.class/windowscriptobject.md)
+- [var windowScriptObject: WebScriptObject!](./webview-swift.class/windowscriptobject.md)
   The receiver’s window object from the scripting environment.
 ### Constants
-- [Element Dictionary Keys](element-dictionary-keys.md)
+- [Element Dictionary Keys](./element-dictionary-keys.md)
   Predefined keys used to access an element dictionary.
 ### Notifications
-- [static let WebViewDidBeginEditing: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewdidbeginediting.md)
+- [static let WebViewDidBeginEditing: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/webviewdidbeginediting.md)
   Posted when a web view begins any operation that changes its contents in response to user editing.
-- [static let WebViewDidChange: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewdidchange.md)
+- [static let WebViewDidChange: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/webviewdidchange.md)
   Posted when a web view performs any operation that changes its contents in response to user editing.
-- [static let WebViewDidChangeSelection: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewdidchangeselection.md)
+- [static let WebViewDidChangeSelection: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/webviewdidchangeselection.md)
   Posted when a web view changes its typing selection.
-- [static let WebViewDidChangeTypingStyle: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewdidchangetypingstyle.md)
+- [static let WebViewDidChangeTypingStyle: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/webviewdidchangetypingstyle.md)
   Posted when a web view changes its typing style.
-- [static let WebViewDidEndEditing: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewdidendediting.md)
+- [static let WebViewDidEndEditing: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/webviewdidendediting.md)
   Posted when a web view ends any operation that changes its contents in response to user editing.
-- [static let WebViewProgressEstimateChanged: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewprogressestimatechanged.md)
+- [static let WebViewProgressEstimateChanged: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/webviewprogressestimatechanged.md)
   Posted by a WebView object when the estimated progress value of a load changes.
-- [static let WebViewProgressFinished: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewprogressfinished.md)
+- [static let WebViewProgressFinished: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/webviewprogressfinished.md)
   Posted by a WebView object when the load has finished.
-- [static let WebViewProgressStarted: NSNotification.Name](../foundation/nsnotification/name-swift.struct/webviewprogressstarted.md)
+- [static let WebViewProgressStarted: NSNotification.Name](../Foundation/nsnotification/name-swift.struct/webviewprogressstarted.md)
   Posted by a WebView object when a load begins, including a load that is initiated in a subframe.
 ### Instance Methods
-- [func overWrite(Any?)](webview-swift.class/overwrite(_:).md)
+- [func overWrite(Any?)](./webview-swift.class/overwrite%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSView](../appkit/nsview.md)
+- [NSView](../AppKit/nsview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [NSUserInterfaceValidations](../appkit/nsuserinterfacevalidations.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [NSUserInterfaceValidations](../AppKit/nsuserinterfacevalidations.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WebKit Objective-C Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
-- [enum WebNavigationType](webnavigationtype.md)
-  Possible values for the [`WebActionNavigationTypeKey`](webactionnavigationtypekey.md) key that appears in an action dictionary.
-- [enum WebViewInsertAction](webviewinsertaction.md)
+### Related Documentation
+- [WebKit Objective-C Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
+### Content
+- [enum WebNavigationType](./webnavigationtype.md)
+  Possible values for the [`WebActionNavigationTypeKey`](./webactionnavigationtypekey.md) key that appears in an action dictionary.
+- [enum WebViewInsertAction](./webviewinsertaction.md)
   The type of user action that initiated a delegate message.
 
 

@@ -1,7 +1,8 @@
 # init(dwSize:dwCommand:lpvInBuffer:cbInBuffer:lpvOutBuffer:cbOutBuffer:)
 
 **Framework**: Force Feedback  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,7 +16,8 @@ init(dwSize: DWORD, dwCommand: DWORD, lpvInBuffer: UnsafeMutableRawPointer!, cbI
 
 ## See Also
 
-- [init()](ffeffescape/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

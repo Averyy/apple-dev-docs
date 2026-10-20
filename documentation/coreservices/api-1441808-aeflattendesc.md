@@ -1,7 +1,8 @@
 # AEFlattenDesc(_:_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Flattens the specified descriptor and stores the data in the supplied buffer.
 
@@ -14,13 +15,17 @@ Flattens the specified descriptor and stores the data in the supplied buffer.
 func AEFlattenDesc(_ theAEDesc: UnsafePointer<AEDesc>!, _ buffer: Ptr!, _ bufferSize: Size, _ actualSize: UnsafeMutablePointer<Size>!) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus AEFlattenDesc(const AEDesc *theAEDesc, Ptr buffer, Size bufferSize, Size *actualSize);
+```
 
-A result code. See [`Result Codes`](https://developer.apple.com/documentation/applicationservices/apple_event_manager#1656145).
+#### Return Value
+
+A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
 #### Discussion
 
-Flattening a descriptor serializes the data it contains. That is, it reduces a complex, possibly deeply nested structure to a series of bytes that can conveniently be stored. The descriptor can be reconstituted from the stored bytes with the [`AEUnflattenDesc(_:_:)`](1448997-aeunflattendesc.md) function.
+Flattening a descriptor serializes the data it contains. That is, it reduces a complex, possibly deeply nested structure to a series of bytes that can conveniently be stored. The descriptor can be reconstituted from the stored bytes with the [`AEUnflattenDesc(_:_:)`](./api-1448997-aeunflattendesc.md) function.
 
 Applications can be scriptable and work with Apple events without needing to flatten and unflatten descriptors. Flattening is a special-purpose capability that is useful in circumstances where it may be convenient to store data by saving and restoring a descriptor, rather than having to manually extract the data from it, store the data as a separate step, then manually recreate the descriptor (if necessary). For example, you might use flattening to store a preference setting received through an Apple event.
 
@@ -30,22 +35,25 @@ Flattening and unflattening works across OS versions, including between Mac OS 9
 
 Flattening is endian-neutral. That is, you can save flattened data on a machine that is either big-endian or little-endian, then retrieve and unflatten the data on either type of machine, without any special steps by your application.
 
-##### 1770222
+##### Version-Notes
 
 Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDesc`: A pointer to the descriptor to be flattened. See [`AEDesc`](aedesc.md).
+- `theAEDesc`: A pointer to the descriptor to be flattened. See [`AEDesc`](./aedesc.md).
 - `buffer`: A pointer to memory, allocated by the application, where the flattened data will be stored. See the `bufferSize` parameter for information on how large a buffer you should allocate.
-- `bufferSize`: The size of the buffer pointed to by buffer. Prior to calling `AEFlattenDesc`, you call the [`AESizeOfFlattenedDesc(_:)`](1447305-aesizeofflatteneddesc.md) function to determine the required size of the buffer for the flatten operation. If `bufferSize` is too small, `AEFlattenDesc` returns `errAEBufferTooSmall` and doesn’t store any data in the buffer.
+- `bufferSize`: The size of the buffer pointed to by buffer. Prior to calling `AEFlattenDesc`, you call the [`AESizeOfFlattenedDesc(_:)`](./api-1447305-aesizeofflatteneddesc.md) function to determine the required size of the buffer for the flatten operation.
+
+  If `bufferSize` is too small, `AEFlattenDesc` returns `errAEBufferTooSmall` and doesn’t store any data in the buffer.
 - `actualSize`: A pointer to a size variable. On return, the variable contains the actual size of the flattened data. You can specify `NULL` for this parameter if you do not care about the returned size.
 
 ## See Also
 
-- [func AESizeOfFlattenedDesc(UnsafePointer<AEDesc>!) -> Size](1447305-aesizeofflatteneddesc.md)
+### Serializing Apple Event Data
+- [func AESizeOfFlattenedDesc(UnsafePointer<AEDesc>!) -> Size](./api-1447305-aesizeofflatteneddesc.md)
   Returns the amount of buffer space needed to store the descriptor after flattening it.
-- [func AEUnflattenDesc(UnsafeRawPointer!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](1448997-aeunflattendesc.md)
+- [func AEUnflattenDesc(UnsafeRawPointer!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](./api-1448997-aeunflattendesc.md)
   Unflattens the data in the passed buffer and creates a descriptor from it.
 
 

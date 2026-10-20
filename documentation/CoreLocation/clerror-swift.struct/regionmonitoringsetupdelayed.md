@@ -1,7 +1,8 @@
 # regionMonitoringSetupDelayed
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that indicates Core Location couldn’t initialize the region monitoring feature immediately.
 
@@ -22,11 +23,12 @@ static var regionMonitoringSetupDelayed: CLError.Code { get }
 
 ## See Also
 
-- [static var regionMonitoringDenied: CLError.Code](clerror-swift.struct/regionmonitoringdenied.md)
+### Getting region monitoring errors
+- [static var regionMonitoringDenied: CLError.Code](./regionmonitoringdenied.md)
   A constant that indicates the user denied access to the region monitoring service.
-- [static var regionMonitoringFailure: CLError.Code](clerror-swift.struct/regionmonitoringfailure.md)
+- [static var regionMonitoringFailure: CLError.Code](./regionmonitoringfailure.md)
   A constant that indicates the location manager failed to monitor a registered region.
-- [static var regionMonitoringResponseDelayed: CLError.Code](clerror-swift.struct/regionmonitoringresponsedelayed.md)
+- [static var regionMonitoringResponseDelayed: CLError.Code](./regionmonitoringresponsedelayed.md)
   A constant that indicates Core Location will deliver events but they may be delayed.
 
 

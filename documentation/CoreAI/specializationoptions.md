@@ -1,7 +1,8 @@
 # SpecializationOptions
 
 **Framework**: Core AI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -18,44 +19,45 @@ struct SpecializationOptions
 
 ## Mentions
 
-- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+- [Managing model specialization and caching](./managing-model-specialization-and-caching.md)
 
 ## Topics
 
 ### Using preset options
-- [static let `default`: SpecializationOptions](specializationoptions/default.md)
+- [static let `default`: SpecializationOptions](./specializationoptions/default.md)
   Options that allow the model to use all available compute units.
-- [static let cpuOnly: SpecializationOptions](specializationoptions/cpuonly.md)
+- [static let cpuOnly: SpecializationOptions](./specializationoptions/cpuonly.md)
   Options that restrict compute to the CPU only.
 ### Creating custom options
-- [init(preferredComputeUnitKind: ComputeUnitKind)](specializationoptions/init(preferredcomputeunitkind:).md)
+- [init(preferredComputeUnitKind: ComputeUnitKind)](./specializationoptions/init%28preferredcomputeunitkind%29.md)
   Creates options with a preferred compute unit kind.
 ### Configuring compute units
-- [var allowedComputeUnitKinds: Set<ComputeUnitKind>](specializationoptions/allowedcomputeunitkinds.md)
+- [var allowedComputeUnitKinds: Set<ComputeUnitKind>](./specializationoptions/allowedcomputeunitkinds.md)
   The set of compute units the specialized model can use.
-- [var preferredComputeUnitKind: ComputeUnitKind?](specializationoptions/preferredcomputeunitkind.md)
+- [var preferredComputeUnitKind: ComputeUnitKind?](./specializationoptions/preferredcomputeunitkind.md)
   The preferred compute unit kind, if one was specified.
 ### Configuring specialization behavior
-- [var expectFrequentReshapes: Bool](specializationoptions/expectfrequentreshapes.md)
+- [var expectFrequentReshapes: Bool](./specializationoptions/expectfrequentreshapes.md)
   Setting to allow more optimal specialization if the model performs frequent reshapes based on usage
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+### Configuration
+- [Managing model specialization and caching](./managing-model-specialization-and-caching.md)
   Configure model specialization, manage cached assets, and reduce your app’s storage footprint.
-- [Compiling Core AI models ahead of time](compiling-core-ai-models-ahead-of-time.md)
+- [Compiling Core AI models ahead of time](./compiling-core-ai-models-ahead-of-time.md)
   Reduce on-device specialization time by compiling Core AI models at build time.
-- [class AIModelCache](aimodelcache.md)
+- [class AIModelCache](./aimodelcache.md)
   A cache that stores the specialized model artifacts for inference.
-- [enum ComputeUnitKind](computeunitkind.md)
+- [enum ComputeUnitKind](./computeunitkind.md)
   A type of hardware compute unit available for model inference.
 
 

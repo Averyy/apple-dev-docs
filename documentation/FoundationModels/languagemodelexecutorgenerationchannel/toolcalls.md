@@ -1,7 +1,8 @@
 # LanguageModelExecutorGenerationChannel.ToolCalls
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A tool-call lifecycle event, including per-call argument streaming, reasoning, metadata, usage, or retraction.
 
@@ -21,41 +22,42 @@ struct ToolCalls
 
 #### Overview
 
-Events for a specific tool call route through [`toolCall(id:name:action:)`](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/toolcall(id:name:action:).md). Use [`removeToolCall(id:)`](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/removetoolcall(id:).md) to drop a tool call the model retracted.
+Events for a specific tool call route through [`toolCall(id:name:action:)`](./toolcalls/action-swift.struct/toolcall%28id,name,action%29.md). Use [`removeToolCall(id:)`](./toolcalls/action-swift.struct/removetoolcall%28id%29.md) to drop a tool call the model retracted.
 
 ## Topics
 
 ### Handling tool calls
-- [var action: LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.property.md)
+- [var action: LanguageModelExecutorGenerationChannel.ToolCalls.Action](./toolcalls/action-swift.property.md)
   The action to perform.
-- [LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls.Action](./toolcalls/action-swift.struct.md)
   An operation that can be performed on a tool-calls entry.
-- [var entryID: String?](languagemodelexecutorgenerationchannel/toolcalls/entryid.md)
+- [var entryID: String?](./toolcalls/entryid.md)
   The identifier for the entry.
-- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall](languagemodelexecutorgenerationchannel/toolcalls/toolcall.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall](./toolcalls/toolcall.md)
   A per-tool-call event payload.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LanguageModelExecutorGenerationChannel.Metadata](languagemodelexecutorgenerationchannel/metadata.md)
+### Accessing the event types
+- [LanguageModelExecutorGenerationChannel.Metadata](./metadata.md)
   Snapshot of an entry’s metadata dictionary.
-- [LanguageModelExecutorGenerationChannel.Reasoning](languagemodelexecutorgenerationchannel/reasoning.md)
+- [LanguageModelExecutorGenerationChannel.Reasoning](./reasoning.md)
   A reasoning event.
-- [LanguageModelExecutorGenerationChannel.ReasoningSignature](languagemodelexecutorgenerationchannel/reasoningsignature.md)
+- [LanguageModelExecutorGenerationChannel.ReasoningSignature](./reasoningsignature.md)
   Payload for a reasoning entry’s signature update.
-- [LanguageModelExecutorGenerationChannel.TextFragment](languagemodelexecutorgenerationchannel/textfragment.md)
+- [LanguageModelExecutorGenerationChannel.TextFragment](./textfragment.md)
   Text appended to a streaming entry’s current text segment.
-- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
+- [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](./textsegmentreplacement.md)
   A replacement for a streaming entry’s current text segment.
-- [LanguageModelExecutorGenerationChannel.Response](languagemodelexecutorgenerationchannel/response.md)
+- [LanguageModelExecutorGenerationChannel.Response](./response.md)
   A model-generated response event: text, segment replacements, citations, advisories, custom segments, metadata, or usage.
-- [LanguageModelExecutorGenerationChannel.Usage](languagemodelexecutorgenerationchannel/usage.md)
+- [LanguageModelExecutorGenerationChannel.Usage](./usage.md)
   Snapshot of an entry’s token totals.
 
 

@@ -1,14 +1,15 @@
 # UpdateEventFlagsCallback
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*UpdateEventFlagsCallback)(OSObject *target, unsigned int flags, OSObject *sender, void *refcon);
 ```
 

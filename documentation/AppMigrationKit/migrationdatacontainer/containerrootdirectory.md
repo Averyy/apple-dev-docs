@@ -1,7 +1,8 @@
 # containerRootDirectory
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root container directory of the app.
 
@@ -17,9 +18,10 @@ let containerRootDirectory: URL
 
 ## See Also
 
-- [var applicationSupportDirectory: URL](migrationdatacontainer/applicationsupportdirectory.md)
+### Accessing app directories
+- [var applicationSupportDirectory: URL](./applicationsupportdirectory.md)
   The application support directory within the container.
-- [var documentsDirectory: URL](migrationdatacontainer/documentsdirectory.md)
+- [var documentsDirectory: URL](./documentsdirectory.md)
   The documents directory within the app container.
 
 

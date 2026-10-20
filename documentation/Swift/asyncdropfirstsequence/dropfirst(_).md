@@ -1,7 +1,8 @@
 # dropFirst(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Omits a specified number of elements from the base asynchronous sequence, then passes through all remaining elements.
 
@@ -19,6 +20,8 @@ Omits a specified number of elements from the base asynchronous sequence, then p
 ```swift
 func dropFirst(_ count: Int = 1) -> AsyncDropFirstSequence<Base>
 ```
+
+Available when `Base` conforms to `AsyncSequence`.
 
 #### Discussion
 

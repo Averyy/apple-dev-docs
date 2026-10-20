@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Shears the entity.
@@ -24,6 +25,12 @@ mutating func shear(_ shear: Self.AxisEnumeration)
 ## Parameters
 
 - `shear`: The axis and shear factors.
+
+## Default Implementations
+
+### Shearable3DProtocol Implementations
+- [func shear(Self.AxisEnumeration)](./shear%28_%29-x4om.md)
+  Shears the entity.
 
 
 ---

@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared WatchKit app object.
 
@@ -12,6 +13,10 @@ Returns the shared WatchKit app object.
 
 ```swift
 class func shared() -> WKApplication
+```
+
+```objc
++ (WKApplication *) sharedApplication;
 ```
 
 #### Return Value

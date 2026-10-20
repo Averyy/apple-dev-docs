@@ -1,7 +1,8 @@
 # NWPathMonitor
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An observer that you use to monitor and react to network changes.
 
@@ -23,44 +24,45 @@ final class NWPathMonitor
 ## Topics
 
 ### Creating Path Monitors
-- [init()](nwpathmonitor/init.md)
+- [init()](./nwpathmonitor/init%28%29.md)
   Initializes a path monitor to observe all available interface types.
-- [init(requiredInterfaceType: NWInterface.InterfaceType)](nwpathmonitor/init(requiredinterfacetype:).md)
+- [init(requiredInterfaceType: NWInterface.InterfaceType)](./nwpathmonitor/init%28requiredinterfacetype%29.md)
   Initializes a path monitor to observe a specific interface type.
-- [init(prohibitedInterfaceTypes: [NWInterface.InterfaceType])](nwpathmonitor/init(prohibitedinterfacetypes:).md)
+- [init(prohibitedInterfaceTypes: [NWInterface.InterfaceType])](./nwpathmonitor/init%28prohibitedinterfacetypes%29.md)
   Initializes a path monitor to observe interface types that are not explicitly prohibited.
-- [func start(queue: DispatchQueue)](nwpathmonitor/start(queue:).md)
+- [func start(queue: DispatchQueue)](./nwpathmonitor/start%28queue%29.md)
   Starts monitoring path changes, and sets a queue on which to deliver path events.
-- [var queue: DispatchQueue?](nwpathmonitor/queue.md)
+- [var queue: DispatchQueue?](./nwpathmonitor/queue.md)
   The queue on which path events are delivered.
 ### Handling Path Updates
-- [var currentPath: NWPath](nwpathmonitor/currentpath.md)
+- [var currentPath: NWPath](./nwpathmonitor/currentpath.md)
   The currently available network path observed by the path monitor.
-- [var pathUpdateHandler: ((NWPath) -> Void)?](nwpathmonitor/pathupdatehandler.md)
+- [var pathUpdateHandler: ((NWPath) -> Void)?](./nwpathmonitor/pathupdatehandler.md)
   A handler that receives network path updates.
 ### Canceling Path Monitors
-- [func cancel()](nwpathmonitor/cancel.md)
+- [func cancel()](./nwpathmonitor/cancel%28%29.md)
   Stops receiving network path updates.
 ### Structures
-- [NWPathMonitor.Iterator](nwpathmonitor/iterator.md)
+- [NWPathMonitor.Iterator](./nwpathmonitor/iterator.md)
 ### Type Properties
-- [static var ethernetChannel: NWPathMonitor](nwpathmonitor/ethernetchannel.md)
+- [static var ethernetChannel: NWPathMonitor](./nwpathmonitor/ethernetchannel.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NWPath](nwpath.md)
+### Paths and Interfaces
+- [struct NWPath](./nwpath.md)
   An object that contains information about the properties of the network that a connection uses, or that are available to your app.
-- [struct NWInterface](nwinterface.md)
+- [struct NWInterface](./nwinterface.md)
   An interface that a network connection uses to send and receive data.
 
 

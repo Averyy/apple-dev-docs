@@ -1,7 +1,8 @@
 # HMCharacteristicValueCurrentMediaState
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that indicate the current media state
 
@@ -19,33 +20,37 @@ Values that indicate the current media state
 enum HMCharacteristicValueCurrentMediaState
 ```
 
+```c
+enum HMCharacteristicValueCurrentMediaState : NSInteger;
+```
+
 ## Topics
 
 ### Current media states
-- [HMCharacteristicValueCurrentMediaState.interrupted](hmcharacteristicvaluecurrentmediastate/interrupted.md)
+- [HMCharacteristicValueCurrentMediaState.interrupted](./hmcharacteristicvaluecurrentmediastate/interrupted.md)
   The current media is interrupted.
-- [HMCharacteristicValueCurrentMediaState.loading](hmcharacteristicvaluecurrentmediastate/loading.md)
+- [HMCharacteristicValueCurrentMediaState.loading](./hmcharacteristicvaluecurrentmediastate/loading.md)
   The current media is loading.
-- [HMCharacteristicValueCurrentMediaState.paused](hmcharacteristicvaluecurrentmediastate/paused.md)
+- [HMCharacteristicValueCurrentMediaState.paused](./hmcharacteristicvaluecurrentmediastate/paused.md)
   The current media is paused.
-- [HMCharacteristicValueCurrentMediaState.playing](hmcharacteristicvaluecurrentmediastate/playing.md)
+- [HMCharacteristicValueCurrentMediaState.playing](./hmcharacteristicvaluecurrentmediastate/playing.md)
   The current media is playing.
-- [HMCharacteristicValueCurrentMediaState.stopped](hmcharacteristicvaluecurrentmediastate/stopped.md)
+- [HMCharacteristicValueCurrentMediaState.stopped](./hmcharacteristicvaluecurrentmediastate/stopped.md)
   The current media stopped playing.
-- [HMCharacteristicValueCurrentMediaState.unknown](hmcharacteristicvaluecurrentmediastate/unknown.md)
+- [HMCharacteristicValueCurrentMediaState.unknown](./hmcharacteristicvaluecurrentmediastate/unknown.md)
   The current media state is unknown.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvaluecurrentmediastate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvaluecurrentmediastate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

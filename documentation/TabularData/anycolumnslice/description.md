@@ -1,7 +1,8 @@
 # description
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the column slice.
 
@@ -22,9 +23,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](anycolumnslice/debugdescription.md)
+### Describing a Column Slice
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the column slice suitable for debugging.
-- [var customMirror: Mirror](anycolumnslice/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the column slice.
 
 

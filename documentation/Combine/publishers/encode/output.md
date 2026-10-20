@@ -1,7 +1,8 @@
 # Publishers.Encode.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher uses the encoder’s output type.
 
 ## See Also
 
-- [Publishers.Encode.Failure](publishers/encode/failure.md)
+### Declaring supporting types
+- [Publishers.Encode.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

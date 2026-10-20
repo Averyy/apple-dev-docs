@@ -1,7 +1,8 @@
 # dataValue
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The multidimensional array wrapped in a data value.
 

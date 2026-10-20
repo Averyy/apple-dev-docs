@@ -1,7 +1,8 @@
 # AVCaptionGrouper
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that analyzes the temporal overlaps of caption objects to create caption groups for each span of concurrent captions.
 
@@ -17,30 +18,35 @@ An object that analyzes the temporal overlaps of caption objects to create capti
 class AVCaptionGrouper
 ```
 
+```objc
+@interface AVCaptionGrouper : NSObject
+```
+
 ## Topics
 
 ### Adding captions
-- [func add(AVCaption)](avcaptiongrouper/add(_:).md)
+- [func add(AVCaption)](./avcaptiongrouper/add%28_%29.md)
   Adds a caption to the pending group.
 ### Generating captions groups
-- [func flushAddedCaptions(upTo: CMTime) -> [AVCaptionGroup]](avcaptiongrouper/flushaddedcaptions(upto:).md)
+- [func flushAddedCaptions(upTo: CMTime) -> [AVCaptionGroup]](./avcaptiongrouper/flushaddedcaptions%28upto%29.md)
   Creates caption groups for the captions you enqueue up to the time.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVCaptionGroup](avcaptiongroup.md)
+### Groups
+- [class AVCaptionGroup](./avcaptiongroup.md)
   An object that represents zero or more captions that intersect in time.
 
 

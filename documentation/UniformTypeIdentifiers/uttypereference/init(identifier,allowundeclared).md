@@ -1,7 +1,8 @@
 # init(identifier:allowUndeclared:)
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+
@@ -16,6 +17,10 @@
 
 ```swift
 convenience init?(identifier: String, allowUndeclared: Bool)
+```
+
+```objc
++ (instancetype) typeWithIdentifier:(NSString *) identifier allowUndeclared:(BOOL) allowUndeclared;
 ```
 
 #### Return Value

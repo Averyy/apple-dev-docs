@@ -1,7 +1,8 @@
 # coachingOverlayViewDidDeactivate(_:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells you when the coaching experience is completely deactivated.
 
@@ -15,15 +16,20 @@ Tells you when the coaching experience is completely deactivated.
 optional func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayView)
 ```
 
+```objc
+- (void) coachingOverlayViewDidDeactivate:(ARCoachingOverlayView *) coachingOverlayView;
+```
+
 #### Discussion
 
 Implement this function to do any custom actions your app requires to begin the AR experience. For example, when coaching is deactivated, your app might restore custom UI.
 
-When the coaching overlay is deactivating, [`isActive`](arcoachingoverlayview/isactive.md) is [`false`](https://developer.apple.com/documentation/swift/false). If the `animated` property of [`setActive(_:animated:)`](arcoachingoverlayview/setactive(_:animated:).md) is [`true`](https://developer.apple.com/documentation/swift/true), [`isActive`](arcoachingoverlayview/isactive.md) and [`isHidden`](https://developer.apple.com/documentation/uikit/uiview/ishidden) are [`false`](https://developer.apple.com/documentation/swift/false) while the coaching overlay is fading out. When the coaching overlay is deactivated without animation, or when the animation finishes, ARKit sends a  [`coachingOverlayViewDidDeactivate(_:)`](arcoachingoverlayviewdelegate/coachingoverlayviewdiddeactivate(_:).md) notification.
+When the coaching overlay is deactivating, [`isActive`](../arcoachingoverlayview/isactive.md) is [`false`](../../Swift/false.md). If the `animated` property of [`setActive(_:animated:)`](../arcoachingoverlayview/setactive%28_,animated%29.md) is [`true`](../../Swift/true.md), [`isActive`](../arcoachingoverlayview/isactive.md) and [`isHidden`](../../UIKit/uiview/ishidden.md) are [`false`](../../Swift/false.md) while the coaching overlay is fading out. When the coaching overlay is deactivated without animation, or when the animation finishes, ARKit sends a  [`coachingOverlayViewDidDeactivate(_:)`](./coachingoverlayviewdiddeactivate%28_%29.md) notification.
 
 ## See Also
 
-- [func coachingOverlayViewWillActivate(ARCoachingOverlayView)](arcoachingoverlayviewdelegate/coachingoverlayviewwillactivate(_:).md)
+### Enabling Coaching
+- [func coachingOverlayViewWillActivate(ARCoachingOverlayView)](./coachingoverlayviewwillactivate%28_%29.md)
   Tells you when the coaching overlay view activates.
 
 

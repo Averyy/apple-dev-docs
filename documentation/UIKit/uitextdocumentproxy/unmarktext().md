@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Unmarks the currently marked text.
@@ -19,13 +20,18 @@ Unmarks the currently marked text.
 func unmarkText()
 ```
 
+```objc
+- (void) unmarkText;
+```
+
 ## Mentions
 
-- [Handling text interactions in custom keyboards](handling-text-interactions-in-custom-keyboards.md)
+- [Handling text interactions in custom keyboards](../handling-text-interactions-in-custom-keyboards.md)
 
 ## See Also
 
-- [func setMarkedText(String, selectedRange: NSRange)](uitextdocumentproxy/setmarkedtext(_:selectedrange:).md)
+### Managing marked text
+- [func setMarkedText(String, selectedRange: NSRange)](./setmarkedtext%28_,selectedrange%29.md)
   Inserts the provided text and marks it to indicate that it’s part of an active input session.
 
 

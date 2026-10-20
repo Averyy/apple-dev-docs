@@ -1,16 +1,17 @@
 # init(classificationError:confusion:precisionRecall:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates empty classifier metrics.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.14+
-- tvOS 16.0+
+- iOS 15.0+ - Deprecated in 17.0
+- iPadOS 15.0+ - Deprecated in 17.0
+- Mac Catalyst 15.0+ - Deprecated in 17.0
+- macOS 10.14+ - Deprecated in 14.0
+- tvOS 16.0+ - Deprecated in 17.0
 - visionOS 1.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ init(classificationError: Double, confusion: MLDataTable, precisionRecall: MLDat
 
 #### Discussion
 
-You typically don’t initialize metrics directly. Instead you get metrics about your model after training. For example, when you train an [`MLClassifier`](mlclassifier.md), you can look at its [`trainingMetrics`](mlclassifier/trainingmetrics.md) and [`validationMetrics`](mlclassifier/validationmetrics.md) properties. Additionally, you can check the performance on a test set with the [`evaluation(on:)`](mlclassifier/evaluation(on:)-6433y.md) method.
+You typically don’t initialize metrics directly. Instead you get metrics about your model after training. For example, when you train an [`MLClassifier`](../mlclassifier.md), you can look at its [`trainingMetrics`](../mlclassifier/trainingmetrics.md) and [`validationMetrics`](../mlclassifier/validationmetrics.md) properties. Additionally, you can check the performance on a test set with the [`evaluation(on:)`](../mlclassifier/evaluation%28on%29-6433y.md) method.
 
 > ⚠️ **Warning**: This initializer should not be used, it creates an empty instance.
 

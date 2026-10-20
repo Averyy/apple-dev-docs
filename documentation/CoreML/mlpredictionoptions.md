@@ -1,7 +1,8 @@
 # MLPredictionOptions
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The options available when making a prediction.
 
@@ -20,38 +21,43 @@ The options available when making a prediction.
 class MLPredictionOptions
 ```
 
+```objc
+@interface MLPredictionOptions : NSObject
+```
+
 ## Topics
 
 ### Getting features
-- [var outputBackings: [String : Any]](mlpredictionoptions/outputbackings.md)
+- [var outputBackings: [String : Any]](./mlpredictionoptions/outputbackings.md)
   A dictionary of feature names and client-allocated buffers.
 ### Restricting computation to the CPU
-- [var usesCPUOnly: Bool](mlpredictionoptions/usescpuonly.md)
+- [var usesCPUOnly: Bool](./mlpredictionoptions/usescpuonly.md)
   A Boolean value that indicates whether a prediction is computed using only the CPU.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func prediction(from:)](mlmodel/prediction(from:).md)
-- [func prediction(from:options:)](mlmodel/prediction(from:options:).md)
-- [func predictions(fromBatch: any MLBatchProvider) throws -> any MLBatchProvider](mlmodel/predictions(frombatch:).md)
+### Making predictions
+- [func prediction(from:)](./mlmodel/prediction%28from%29.md)
+- [func prediction(from:options:)](./mlmodel/prediction%28from,options%29.md)
+- [func predictions(fromBatch: any MLBatchProvider) throws -> any MLBatchProvider](./mlmodel/predictions%28frombatch%29.md)
   Generates predictions for each input feature provider within the batch provider.
-- [func predictions(from: any MLBatchProvider, options: MLPredictionOptions) throws -> any MLBatchProvider](mlmodel/predictions(from:options:).md)
+- [func predictions(from: any MLBatchProvider, options: MLPredictionOptions) throws -> any MLBatchProvider](./mlmodel/predictions%28from,options%29.md)
   Generates a prediction for each input feature provider within the batch provider using the prediction options.
-- [func prediction(from:using:)](mlmodel/prediction(from:using:).md)
-- [func prediction(from:using:options:)](mlmodel/prediction(from:using:options:).md)
-- [Background Inference](../bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.inference.md)
+- [func prediction(from:using:)](./mlmodel/prediction%28from,using%29.md)
+- [func prediction(from:using:options:)](./mlmodel/prediction%28from,using,options%29.md)
+- [Background Inference](../BundleResources/entitlements/com.apple.developer.background-tasks.continued-processing.inference.md)
   An entitlement that lets a background task run inference on the Neural Engine.
 
 

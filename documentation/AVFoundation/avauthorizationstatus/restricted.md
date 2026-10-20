@@ -1,7 +1,8 @@
 # AVAuthorizationStatus.restricted
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates the app isn’t permitted to use media capture devices.
 
@@ -19,17 +20,22 @@ A status that indicates the app isn’t permitted to use media capture devices.
 case restricted
 ```
 
+```c
+AVAuthorizationStatusRestricted
+```
+
 #### Discussion
 
 This status occurs when a user can’t change the authorization status, possibly due to the system imposing restrictions like parental controls.
 
 ## See Also
 
-- [AVAuthorizationStatus.notDetermined](avauthorizationstatus/notdetermined.md)
+### Status values
+- [AVAuthorizationStatus.notDetermined](./notdetermined.md)
   A status that indicates the user hasn’t yet granted or denied authorization.
-- [AVAuthorizationStatus.denied](avauthorizationstatus/denied.md)
+- [AVAuthorizationStatus.denied](./denied.md)
   A status that indicates the user has explicitly denied an app permission to capture media.
-- [AVAuthorizationStatus.authorized](avauthorizationstatus/authorized.md)
+- [AVAuthorizationStatus.authorized](./authorized.md)
   A status that indicates the user has explicitly granted an app permission to capture media.
 
 

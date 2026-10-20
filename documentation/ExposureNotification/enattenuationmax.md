@@ -1,14 +1,17 @@
 # ENAttenuationMax
 
 **Framework**: Exposure Notification  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value that is the maximum for attenuation.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
@@ -16,9 +19,14 @@ The value that is the maximum for attenuation.
 var ENAttenuationMax: Int { get }
 ```
 
+```c
+ENAttenuationMax
+```
+
 ## See Also
 
-- [var ENAttenuationMin: Int](enattenuationmin.md)
+### Constants
+- [var ENAttenuationMin: Int](./enattenuationmin.md)
   The value that is the minimum for attenuation.
 
 

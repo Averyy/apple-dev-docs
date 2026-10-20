@@ -1,12 +1,13 @@
 # Macros
 
-**Framework**: SceneKit
+**Framework**: SceneKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Macros
-- [var SCN_ENABLE_METAL: Int32](scn_enable_metal.md)
-- [var SCN_ENABLE_OPENGL: Int32](scn_enable_opengl.md)
+- [var SCN_ENABLE_METAL: Int32](./scn_enable_metal.md)
+- [var SCN_ENABLE_OPENGL: Int32](./scn_enable_opengl.md)
 
 
 ---

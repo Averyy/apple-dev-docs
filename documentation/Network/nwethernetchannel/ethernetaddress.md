@@ -1,7 +1,8 @@
 # NWEthernetChannel.EthernetAddress
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 48-bit Ethernet address.
 
@@ -17,28 +18,29 @@ struct EthernetAddress
 ## Topics
 
 ### Creating Addresses
-- [init?(Data)](nwethernetchannel/ethernetaddress/init(_:)-62x9i.md)
+- [init?(Data)](./ethernetaddress/init%28_%29-62x9i.md)
   Initializes an Ethernet address with data.
-- [init?(String)](nwethernetchannel/ethernetaddress/init(_:)-1brh7.md)
+- [init?(String)](./ethernetaddress/init%28_%29-1brh7.md)
   Initializes an Ethernet address with a string.
 ### Inspecting Addresses
-- [var rawValue: Data](nwethernetchannel/ethernetaddress/rawvalue.md)
+- [var rawValue: Data](./ethernetaddress/rawvalue.md)
   The raw data of the Ethernet address.
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func send(content: Data, to: NWEthernetChannel.EthernetAddress, vlanTag: UInt16, completion: (NWError?) -> Void)](nwethernetchannel/send(content:to:vlantag:completion:).md)
+### Sending and Receiving Ethernet Frames
+- [func send(content: Data, to: NWEthernetChannel.EthernetAddress, vlanTag: UInt16, completion: (NWError?) -> Void)](./send%28content,to,vlantag,completion%29.md)
   Sends a single Ethernet frame over a channel to a specific Ethernet address.
-- [var receiveHandler: ((Data, UInt16, NWEthernetChannel.EthernetAddress, NWEthernetChannel.EthernetAddress) -> Void)?](nwethernetchannel/receivehandler.md)
+- [var receiveHandler: ((Data, UInt16, NWEthernetChannel.EthernetAddress, NWEthernetChannel.EthernetAddress) -> Void)?](./receivehandler.md)
   A handler that delivers inbound Ethernet frames.
 
 

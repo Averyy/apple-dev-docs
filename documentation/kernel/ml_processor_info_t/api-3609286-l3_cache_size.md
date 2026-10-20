@@ -1,14 +1,15 @@
 # l3_cache_size
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t l3_cache_size;
 ```
 

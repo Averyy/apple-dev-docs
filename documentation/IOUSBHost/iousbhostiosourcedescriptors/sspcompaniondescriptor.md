@@ -1,7 +1,8 @@
 # sspCompanionDescriptor
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor for a SuperSpeedPlus isochronous USB endpoint companion.
 
@@ -15,17 +16,22 @@ The descriptor for a SuperSpeedPlus isochronous USB endpoint companion.
 var sspCompanionDescriptor: IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor
 ```
 
+```c
+IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor sspCompanionDescriptor;
+```
+
 #### Discussion
 
 This descriptor may be necessary for `bcdUSB` versions 0x0300 and greater, depending on device operating speed and values set in the descriptors. See USB 3.2, 9.5 for more information.
 
 ## See Also
 
-- [var bcdUSB: UInt16](iousbhostiosourcedescriptors/bcdusb.md)
+### Descriptors
+- [var bcdUSB: UInt16](./bcdusb.md)
   The USB version that the device supports.
-- [var descriptor: IOUSBEndpointDescriptor](iousbhostiosourcedescriptors/descriptor.md)
+- [var descriptor: IOUSBEndpointDescriptor](./descriptor.md)
   The descriptor for a USB endpoint.
-- [var ssCompanionDescriptor: IOUSBSuperSpeedEndpointCompanionDescriptor](iousbhostiosourcedescriptors/sscompaniondescriptor.md)
+- [var ssCompanionDescriptor: IOUSBSuperSpeedEndpointCompanionDescriptor](./sscompaniondescriptor.md)
   The descriptor for a SuperSpeed USB endpoint companion.
 
 

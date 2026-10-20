@@ -1,23 +1,28 @@
 # particleScaleSpeed
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which a particle’s scale factor changes per second.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var particleScaleSpeed: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat particleScaleSpeed;
 ```
 
 #### Discussion
@@ -26,11 +31,12 @@ The default value is `0.0`.
 
 ## See Also
 
-- [var particleScale: CGFloat](skemitternode/particlescale.md)
+### Scaling Particles by a Factor
+- [var particleScale: CGFloat](./particlescale.md)
   The average initial scale factor of a particle.
-- [var particleScaleRange: CGFloat](skemitternode/particlescalerange.md)
+- [var particleScaleRange: CGFloat](./particlescalerange.md)
   The range of allowed random values for a particle’s initial scale.
-- [var particleScaleSequence: SKKeyframeSequence?](skemitternode/particlescalesequence.md)
+- [var particleScaleSequence: SKKeyframeSequence?](./particlescalesequence.md)
   The sequence used to specify the scale factor of a particle over its lifetime.
 
 

@@ -1,7 +1,8 @@
 # SRAcousticSettings.Accessibility.HeadphoneAccommodations.MediaEnhanceBoosting.none
 
 **Framework**: SensorKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.4+
@@ -12,6 +13,10 @@
 
 ```swift
 case none
+```
+
+```c
+SRAcousticSettingsAccessibilityHeadphoneAccommodationsMediaEnhanceBoostingNone
 ```
 
 

@@ -1,7 +1,8 @@
 # shouldChangeText(in:replacementText:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks whether to replace the text in the specified range.
 
@@ -9,7 +10,7 @@ Asks whether to replace the text in the specified range.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,17 @@ Asks whether to replace the text in the specified range.
 optional func shouldChangeText(in range: UITextRange, replacementText text: String) -> Bool
 ```
 
+```objc
+- (BOOL) shouldChangeTextInRange:(UITextRange *) range replacementText:(NSString *) text;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the text should be changed or [`false`](https://developer.apple.com/documentation/swift/false) if it should not.
+[`true`](../../Swift/true.md) if the text should be changed or [`false`](../../Swift/false.md) if it should not.
 
 #### Discussion
 
-Prior to replacing text, this method is called to give your delegate a chance to accept or reject the edits. If you do not implement this method, the return value defaults to [`true`](https://developer.apple.com/documentation/swift/true).
+Prior to replacing text, this method is called to give your delegate a chance to accept or reject the edits. If you do not implement this method, the return value defaults to [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -33,9 +38,10 @@ Prior to replacing text, this method is called to give your delegate a chance to
 
 ## See Also
 
-- [func text(in: UITextRange) -> String?](uitextinput/text(in:).md)
+### Replacing and returning text
+- [func text(in: UITextRange) -> String?](./text%28in%29.md)
   Returns the text in the specified range.
-- [func replace(UITextRange, withText: String)](uitextinput/replace(_:withtext:).md)
+- [func replace(UITextRange, withText: String)](./replace%28_,withtext%29.md)
   Replaces the text in a document that is in the specified range.
 
 

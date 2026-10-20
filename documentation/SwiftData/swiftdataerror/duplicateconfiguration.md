@@ -1,7 +1,8 @@
 # duplicateConfiguration
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,9 +22,10 @@ static let duplicateConfiguration: SwiftDataError
 
 ## See Also
 
-- [static let configurationFileNameContainsInvalidCharacters: SwiftDataError](swiftdataerror/configurationfilenamecontainsinvalidcharacters.md)
-- [static let configurationFileNameTooLong: SwiftDataError](swiftdataerror/configurationfilenametoolong.md)
-- [static let configurationSchemaNotFoundInContainerSchema: SwiftDataError](swiftdataerror/configurationschemanotfoundincontainerschema.md)
+### Configuration errors
+- [static let configurationFileNameContainsInvalidCharacters: SwiftDataError](./configurationfilenamecontainsinvalidcharacters.md)
+- [static let configurationFileNameTooLong: SwiftDataError](./configurationfilenametoolong.md)
+- [static let configurationSchemaNotFoundInContainerSchema: SwiftDataError](./configurationschemanotfoundincontainerschema.md)
 
 
 ---

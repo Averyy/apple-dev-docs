@@ -1,7 +1,8 @@
 # dataValueType
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The underlying type a machine learning sequence uses when it wraps itself in a data value.
 
@@ -21,7 +22,7 @@ static var dataValueType: MLDataValue.ValueType { get }
 
 #### Discussion
 
-A machine learning sequence is an [`MLDataValue.ValueType.sequence`](mldatavalue/valuetype/sequence.md).
+A machine learning sequence is an [`MLDataValue.ValueType.sequence`](../valuetype/sequence.md).
 
 
 ---

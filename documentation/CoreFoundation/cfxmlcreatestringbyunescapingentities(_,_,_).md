@@ -1,12 +1,13 @@
 # CFXMLCreateStringByUnescapingEntities(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Given a CFString object containing XML source with escaped entities, returns a string with specified XML entities unescaped.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Given a CFString object containing XML source with escaped entities, returns a s
 func CFXMLCreateStringByUnescapingEntities(_ allocator: CFAllocator!, _ string: CFString!, _ entitiesDictionary: CFDictionary!) -> CFString!
 ```
 
+```c
+extern CFStringRefCFXMLCreateStringByUnescapingEntities(CFAllocatorRef allocator, CFStringRef string, CFDictionaryRef entitiesDictionary);
+```
+
 #### Return Value
 
-A CFString object derived from `string` with entities identified in `entitiesDictionary` unescaped to their corresponding substrings. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A CFString object derived from `string` with entities identified in `entitiesDictionary` unescaped to their corresponding substrings. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -34,7 +39,8 @@ As an example of using this function, say you apply this function to string “R
 
 ## See Also
 
-- [func CFXMLCreateStringByEscapingEntities(CFAllocator!, CFString!, CFDictionary!) -> CFString!](cfxmlcreatestringbyescapingentities(_:_:_:).md)
+### CFXMLTree Miscellaneous Functions
+- [func CFXMLCreateStringByEscapingEntities(CFAllocator!, CFString!, CFDictionary!) -> CFString!](./cfxmlcreatestringbyescapingentities%28_,_,_%29.md)
   Given a CFString object containing XML source with unescaped entities, returns a string with specified XML entities escaped.
 
 

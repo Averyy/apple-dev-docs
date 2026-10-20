@@ -1,7 +1,8 @@
 # TouchBarItemPresence.optional(_:)
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Touch Bar view isn’t visible by default, but appears in the customization palette.
 
@@ -20,9 +21,10 @@ case optional(String)
 
 ## See Also
 
-- [TouchBarItemPresence.default(_:)](touchbaritempresence/default(_:).md)
+### Getting presence options
+- [TouchBarItemPresence.default(_:)](./default%28_%29.md)
   The Touch Bar view is visible by default, but can be removed during customization.
-- [TouchBarItemPresence.required(_:)](touchbaritempresence/required(_:).md)
+- [TouchBarItemPresence.required(_:)](./required%28_%29.md)
   The Touch Bar view is visible by default and cannot be removed during customization.
 
 

@@ -1,10 +1,13 @@
 # init(rawValue:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 27.0
+
+> **Deprecated**: Not applicable on Apple Silicon
 
 ## Declaration
 

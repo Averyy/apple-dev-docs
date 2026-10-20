@@ -1,7 +1,8 @@
 # nw_listener_state_waiting
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The listener is waiting for a network to become available.
 
@@ -20,15 +21,20 @@ The listener is waiting for a network to become available.
 var nw_listener_state_waiting: nw_listener_state_t { get }
 ```
 
+```c
+nw_listener_state_waiting
+```
+
 ## See Also
 
-- [var nw_listener_state_invalid: nw_listener_state_t](nw_listener_state_invalid.md)
+### Listener States
+- [var nw_listener_state_invalid: nw_listener_state_t](./nw_listener_state_invalid.md)
   The listener is not valid.
-- [var nw_listener_state_ready: nw_listener_state_t](nw_listener_state_ready.md)
+- [var nw_listener_state_ready: nw_listener_state_t](./nw_listener_state_ready.md)
   The listener is running and able to receive incoming connections.
-- [var nw_listener_state_failed: nw_listener_state_t](nw_listener_state_failed.md)
+- [var nw_listener_state_failed: nw_listener_state_t](./nw_listener_state_failed.md)
   The listener has encountered a fatal error.
-- [var nw_listener_state_cancelled: nw_listener_state_t](nw_listener_state_cancelled.md)
+- [var nw_listener_state_cancelled: nw_listener_state_t](./nw_listener_state_cancelled.md)
   The listener has been canceled.
 
 

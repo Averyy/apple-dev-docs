@@ -1,7 +1,8 @@
 # calloutOffset
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset (in points) at which to place the callout.
 
@@ -19,25 +20,30 @@ The offset (in points) at which to place the callout.
 var calloutOffset: CGPoint { get set }
 ```
 
+```objc
+@property (nonatomic) CGPoint calloutOffset;
+```
+
 #### Discussion
 
 This property determines the additional distance by which to move the callout. When this property is `(0, 0)`, the map view places the anchor point of the callout on the top-center point of the annotation view’s frame. Specifying positive offset values moves the callout down and to the right, and specifying negative values moves it up and to the left.
 
-MapKit doesn’t use the [`calloutOffset`](mkannotationview/calloutoffset.md) property in macOS apps. Instead, macOS apps use [`leftCalloutOffset`](mkannotationview/leftcalloutoffset.md) and [`rightCalloutOffset`](mkannotationview/rightcalloutoffset.md).
+MapKit doesn’t use the [`calloutOffset`](./calloutoffset.md) property in macOS apps. Instead, macOS apps use [`leftCalloutOffset`](./leftcalloutoffset.md) and [`rightCalloutOffset`](./rightcalloutoffset.md).
 
 ## See Also
 
-- [var isEnabled: Bool](mkannotationview/isenabled.md)
+### Getting and setting attributes
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the annotation is in an enabled state.
-- [var image: UIImage?](mkannotationview/image.md)
+- [var image: UIImage?](./image.md)
   The image the annotation view displays.
-- [var isHighlighted: Bool](mkannotationview/ishighlighted.md)
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that indicates whether the map view highlights the annotation view.
-- [var annotation: (any MKAnnotation)?](mkannotationview/annotation.md)
+- [var annotation: (any MKAnnotation)?](./annotation.md)
   The annotation object associated with the view.
-- [var centerOffset: CGPoint](mkannotationview/centeroffset.md)
+- [var centerOffset: CGPoint](./centeroffset.md)
   The offset (in points) at which to display the view.
-- [var reuseIdentifier: String?](mkannotationview/reuseidentifier.md)
+- [var reuseIdentifier: String?](./reuseidentifier.md)
   The string that identifies that the annotation view is reusable.
 
 

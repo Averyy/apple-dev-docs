@@ -1,7 +1,8 @@
 # IKComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that allows you to procedurally animate a skeletal model using a full body inverse kinematics solver.
 
@@ -25,7 +26,7 @@ Video games and live productions use inverse kinematics (IK) solvers to procedur
 
 Use `IKComponent` to create and control a full body iterative IK solver for your character. The solver procedurally adjusts the pose of your character to the demands you set. This component also maintains the state of the entity’s IK solvers within the overall skeletal animation system.
 
-##### Create a Solver
+##### Create a solver
 
 Define an inverse kinematics rig for the skeleton of the model you want to animate and generate an immutable resource containing it. Create a new component value with the resource.
 
@@ -69,11 +70,11 @@ let resource = try IKResource(rig: rig)
 armEntity.components.set(IKComponent(resource: resource))
 ```
 
-##### Update Settings and Demands
+##### Update settings and demands
 
 The initialized component provides update objects matching the structure of the rig. The update objects expose limited set of parameters and the ability to set the constraint demands that can be adjusted each frame.
 
-The forward kinematics (FK) demand is not set in this component. The solver uses the animation pose stored in the [`SkeletalPosesComponent`](skeletalposescomponent.md).
+The forward kinematics (FK) demand is not set in this component. The solver uses the animation pose stored in the [`SkeletalPosesComponent`](./skeletalposescomponent.md).
 
 ```swift
 // Get the IK component value with the current constraint targets.
@@ -98,55 +99,56 @@ armEntity.components[IKComponent.self]!.solvers[0].constraints["end_constraint"]
     .animationOverrideWeight.position = 1.0
 ```
 
-> **Note**: Any value updates won’t be reflected until the modified [`IKComponent`](ikcomponent.md) is set on the [`Entity`](entity.md).
+> **Note**: Any value updates won’t be reflected until the modified [`IKComponent`](./ikcomponent.md) is set on the [`Entity`](./entity.md).
 
 ## Topics
 
 ### Classes
-- [IKComponent.Constraint](ikcomponent/constraint.md)
+- [IKComponent.Constraint](./ikcomponent/constraint.md)
   The update stage object that lets you read and update the current settings of a single constraint in an IK solver.
-- [IKComponent.Joint](ikcomponent/joint.md)
+- [IKComponent.Joint](./ikcomponent/joint.md)
   The update stage object that lets you read and update the current settings of a single joint in an IK solver.
-- [IKComponent.Solver](ikcomponent/solver.md)
+- [IKComponent.Solver](./ikcomponent/solver.md)
   The update stage object that lets you read and update the current settings of a single solver instance.
 ### Structures
-- [IKComponent.ConstraintCollection](ikcomponent/constraintcollection.md)
+- [IKComponent.ConstraintCollection](./ikcomponent/constraintcollection.md)
   Ordered dictionary like container with fixed size.
-- [IKComponent.JointCollection](ikcomponent/jointcollection.md)
+- [IKComponent.JointCollection](./ikcomponent/jointcollection.md)
   Ordered dictionary like container with fixed size.
-- [IKComponent.SolverCollection](ikcomponent/solvercollection.md)
+- [IKComponent.SolverCollection](./ikcomponent/solvercollection.md)
   Ordered dictionary like container with fixed size.
 ### Initializers
-- [init(resource: IKResource?)](ikcomponent/init(resource:).md)
+- [init(resource: IKResource?)](./ikcomponent/init%28resource%29.md)
   Creates a new component value referencing the specified resource.
 ### Instance Properties
-- [var resource: IKResource?](ikcomponent/resource.md)
+- [var resource: IKResource?](./ikcomponent/resource.md)
   Reference to the resource describing the desired inverse kinematics setup.
-- [var solvers: IKComponent.SolverCollection](ikcomponent/solvers.md)
+- [var solvers: IKComponent.SolverCollection](./ikcomponent/solvers.md)
   The currently active solvers.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [IKComponent.Joint](ikcomponent/joint.md)
+### Inverse kinematics components
+- [IKComponent.Joint](./ikcomponent/joint.md)
   The update stage object that lets you read and update the current settings of a single joint in an IK solver.
-- [IKComponent.JointCollection](ikcomponent/jointcollection.md)
+- [IKComponent.JointCollection](./ikcomponent/jointcollection.md)
   Ordered dictionary like container with fixed size.
-- [IKComponent.Solver](ikcomponent/solver.md)
+- [IKComponent.Solver](./ikcomponent/solver.md)
   The update stage object that lets you read and update the current settings of a single solver instance.
-- [IKComponent.SolverCollection](ikcomponent/solvercollection.md)
+- [IKComponent.SolverCollection](./ikcomponent/solvercollection.md)
   Ordered dictionary like container with fixed size.
-- [IKComponent.Constraint](ikcomponent/constraint.md)
+- [IKComponent.Constraint](./ikcomponent/constraint.md)
   The update stage object that lets you read and update the current settings of a single constraint in an IK solver.
-- [IKComponent.ConstraintCollection](ikcomponent/constraintcollection.md)
+- [IKComponent.ConstraintCollection](./ikcomponent/constraintcollection.md)
   Ordered dictionary like container with fixed size.
-- [class IKResource](ikresource.md)
+- [class IKResource](./ikresource.md)
   A reference counted immutable resource which contains one or more inverse kinematics solver rigs.
-- [struct IKSolverDefinition](iksolverdefinition.md)
+- [struct IKSolverDefinition](./iksolverdefinition.md)
   A container describing a solver instance.
 
 

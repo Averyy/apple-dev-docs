@@ -1,10 +1,13 @@
 # TVDocumentError.Code.failed
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- tvOS 13.0+
+- tvOS 13.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -12,9 +15,14 @@
 case failed
 ```
 
+```c
+TVDocumentErrorFailed
+```
+
 ## See Also
 
-- [TVDocumentError.Code.cancelled](tvdocumenterror-swift.struct/code/cancelled.md)
+### Enumeration Cases
+- [TVDocumentError.Code.cancelled](./cancelled.md)
 
 
 ---

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum dyld_shared_cache_flags : unsigned int {
     ...
 };
@@ -17,9 +17,9 @@ enum dyld_shared_cache_flags : unsigned int {
 ## Topics
 
 ### Constants
-- [kSharedCacheAOT](dyld_shared_cache_flags/ksharedcacheaot.md)
-- [kSharedCacheDriverkit](dyld_shared_cache_flags/ksharedcachedriverkit.md)
-- [kSharedCacheSystemPrimary](dyld_shared_cache_flags/ksharedcachesystemprimary.md)
+- [kSharedCacheAOT](./dyld_shared_cache_flags/ksharedcacheaot.md)
+- [kSharedCacheDriverkit](./dyld_shared_cache_flags/ksharedcachedriverkit.md)
+- [kSharedCacheSystemPrimary](./dyld_shared_cache_flags/ksharedcachesystemprimary.md)
 
 
 ---

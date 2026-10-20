@@ -1,7 +1,8 @@
 # init(handle:nameComponents:avatarImage:)
 
 **Framework**: PermissionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates person information with contact details and optional display information.
 
@@ -26,7 +27,8 @@ init(handle: CommunicationHandle, nameComponents: PersonNameComponents? = nil, a
 
 ## See Also
 
-- [init(from: any Decoder) throws](communicationtopic/personinformation-swift.struct/init(from:).md)
+### Creating contact details
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates an instance from the given decoder.
 
 

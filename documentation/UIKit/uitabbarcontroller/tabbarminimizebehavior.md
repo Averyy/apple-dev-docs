@@ -1,7 +1,8 @@
 # tabBarMinimizeBehavior
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines the minimize behavior for the tab bar, if it is supported.
 
@@ -18,17 +19,22 @@ Defines the minimize behavior for the tab bar, if it is supported.
 var tabBarMinimizeBehavior: UITabBarController.MinimizeBehavior { get set }
 ```
 
+```objc
+@property (nonatomic, assign) UITabBarMinimizeBehavior tabBarMinimizeBehavior;
+```
+
 #### Discussion
 
 The default value for this property is `UITabBarMinimizeBehaviorAutomatic`.
 
 ## See Also
 
-- [var delegate: (any UITabBarControllerDelegate)?](uitabbarcontroller/delegate.md)
+### Customizing the tab bar behavior
+- [var delegate: (any UITabBarControllerDelegate)?](./delegate.md)
   The tab bar controller’s delegate object.
-- [protocol UITabBarControllerDelegate](uitabbarcontrollerdelegate.md)
+- [protocol UITabBarControllerDelegate](../uitabbarcontrollerdelegate.md)
   A set of methods you implement to customize the behavior of a tab bar.
-- [UITabBarController.MinimizeBehavior](uitabbarcontroller/minimizebehavior.md)
+- [UITabBarController.MinimizeBehavior](./minimizebehavior.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # kIORangeSupportsSignal_0700_0000
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIORangeSupportsSignal_0700_0000 = 0x00000008
 ```
 

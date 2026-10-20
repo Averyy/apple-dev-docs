@@ -1,7 +1,8 @@
 # AppExtensionPoint.Error.hostMustBeApplicationOrAppExtension
 
 **Framework**: ExtensionFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the definition of an extension point in an unsupported target.
 
@@ -22,13 +23,14 @@ case hostMustBeApplicationOrAppExtension
 
 ## See Also
 
-- [AppExtensionPoint.Error.hostMustDefineAppExtensionPoint(_:)](appextensionpoint/error/hostmustdefineappextensionpoint(_:).md)
+### Getting the error codes
+- [AppExtensionPoint.Error.hostMustDefineAppExtensionPoint(_:)](./hostmustdefineappextensionpoint%28_%29.md)
   An error that indicates an attempt to define an extension point outside an app.
-- [AppExtensionPoint.Error.hostMustHaveBundleIdentifier](appextensionpoint/error/hostmusthavebundleidentifier.md)
+- [AppExtensionPoint.Error.hostMustHaveBundleIdentifier](./hostmusthavebundleidentifier.md)
   An error that indicates the host app is missing its bundle identifier.
-- [AppExtensionPoint.Error.invalidAppExtensionPoint](appextensionpoint/error/invalidappextensionpoint.md)
+- [AppExtensionPoint.Error.invalidAppExtensionPoint](./invalidappextensionpoint.md)
   An error that indicates an attempt to bind to an unknown extension point.
-- [AppExtensionPoint.Error.unspecifiedAppExtensionPointName](appextensionpoint/error/unspecifiedappextensionpointname.md)
+- [AppExtensionPoint.Error.unspecifiedAppExtensionPointName](./unspecifiedappextensionpointname.md)
   An error that indicates the specified extension point is unknown.
 
 

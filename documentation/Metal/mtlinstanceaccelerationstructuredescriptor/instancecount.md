@@ -1,7 +1,8 @@
 # instanceCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of instances in the instance descriptor buffer.
 
@@ -19,13 +20,18 @@ The number of instances in the instance descriptor buffer.
 var instanceCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger instanceCount;
+```
+
 ## See Also
 
-- [var instanceDescriptorBuffer: (any MTLBuffer)?](mtlinstanceaccelerationstructuredescriptor/instancedescriptorbuffer.md)
+### Specifying the list of instances
+- [var instanceDescriptorBuffer: (any MTLBuffer)?](./instancedescriptorbuffer.md)
   A buffer that contains descriptions of each instance in the acceleration structure.
-- [var instanceDescriptorBufferOffset: Int](mtlinstanceaccelerationstructuredescriptor/instancedescriptorbufferoffset.md)
+- [var instanceDescriptorBufferOffset: Int](./instancedescriptorbufferoffset.md)
   The offset, in bytes, to the descripton of the first instance.
-- [var instanceDescriptorStride: Int](mtlinstanceaccelerationstructuredescriptor/instancedescriptorstride.md)
+- [var instanceDescriptorStride: Int](./instancedescriptorstride.md)
   The stride, in bytes, between instance descriptions.
 
 

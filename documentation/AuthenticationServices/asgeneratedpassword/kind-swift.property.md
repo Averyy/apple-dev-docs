@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of password that this represents.
 
@@ -15,6 +16,10 @@ The kind of password that this represents.
 
 ```swift
 var kind: ASGeneratedPassword.Kind { get }
+```
+
+```objc
+@property (nonatomic, readonly) ASGeneratedPasswordKind kind;
 ```
 
 

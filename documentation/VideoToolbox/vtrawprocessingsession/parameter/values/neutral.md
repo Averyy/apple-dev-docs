@@ -1,7 +1,8 @@
 # neutral
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 15.0+
@@ -14,11 +15,12 @@ var neutral: Value? { get }
 
 ## See Also
 
-- [var camera: Value?](vtrawprocessingsession/parameter/values/camera.md)
-- [var current: Value](vtrawprocessingsession/parameter/values/current.md)
-- [var initial: Value](vtrawprocessingsession/parameter/values/initial.md)
-- [var maximum: Value?](vtrawprocessingsession/parameter/values/maximum.md)
-- [var minimum: Value?](vtrawprocessingsession/parameter/values/minimum.md)
+### Instance Properties
+- [var camera: Value?](./camera.md)
+- [var current: Value](./current.md)
+- [var initial: Value](./initial.md)
+- [var maximum: Value?](./maximum.md)
+- [var minimum: Value?](./minimum.md)
 
 
 ---

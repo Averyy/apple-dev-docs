@@ -1,7 +1,8 @@
 # isAnimated()
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func isAnimated() -> Bool
+```
+
+```objc
+- (BOOL) isAnimated;
 ```
 
 

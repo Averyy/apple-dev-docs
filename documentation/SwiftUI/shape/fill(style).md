@@ -1,7 +1,8 @@
 # fill(style:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fills this shape with the foreground color.
 
@@ -31,7 +32,8 @@ A shape filled with the foreground color.
 
 ## See Also
 
-- [func fill(_:style:)](shape/fill(_:style:).md)
+### Filling a shape
+- [func fill(_:style:)](./fill%28_,style%29.md)
   Fills this shape with a color or gradient.
 
 

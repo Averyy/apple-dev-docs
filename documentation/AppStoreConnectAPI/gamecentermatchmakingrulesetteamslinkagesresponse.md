@@ -1,21 +1,22 @@
 # GameCenterMatchmakingRuleSetTeamsLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleSetTeamsLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterMatchmakingRuleSetTeamsLinkagesResponse.Data](gamecentermatchmakingrulesetteamslinkagesresponse/data-data.dictionary.md)
+- [object GameCenterMatchmakingRuleSetTeamsLinkagesResponse.Data](./gamecentermatchmakingrulesetteamslinkagesresponse/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,20 +26,21 @@ object GameCenterMatchmakingRuleSetTeamsLinkagesResponse
 
 ## See Also
 
-- [object GameCenterMatchmakingRuleSetCreateRequest](gamecentermatchmakingrulesetcreaterequest.md)
+### Objects
+- [object GameCenterMatchmakingRuleSetCreateRequest](./gamecentermatchmakingrulesetcreaterequest.md)
   The request body you use to create a rule set.
-- [object GameCenterMatchmakingRuleSetUpdateRequest](gamecentermatchmakingrulesetupdaterequest.md)
+- [object GameCenterMatchmakingRuleSetUpdateRequest](./gamecentermatchmakingrulesetupdaterequest.md)
   The request body you use to modify a rule set.
-- [object GameCenterMatchmakingRuleSetResponse](gamecentermatchmakingrulesetresponse.md)
+- [object GameCenterMatchmakingRuleSetResponse](./gamecentermatchmakingrulesetresponse.md)
   The response body for endpoints that create, modify, or get a single rule.
-- [object GameCenterMatchmakingRuleSetsResponse](gamecentermatchmakingrulesetsresponse.md)
+- [object GameCenterMatchmakingRuleSetsResponse](./gamecentermatchmakingrulesetsresponse.md)
   The response body for endpoints that get multiple rule sets.
-- [object GameCenterMatchmakingRulesResponse](gamecentermatchmakingrulesresponse.md)
+- [object GameCenterMatchmakingRulesResponse](./gamecentermatchmakingrulesresponse.md)
   The response body for endpoints that get multiple rules.
-- [object GameCenterMatchmakingRuleSet](gamecentermatchmakingruleset.md)
+- [object GameCenterMatchmakingRuleSet](./gamecentermatchmakingruleset.md)
   A named collection of matchmaking rules and queues that defines the logic for matching players in a Game Center game.
-- [object GameCenterMatchmakingRuleSetMatchmakingQueuesLinkagesResponse](gamecentermatchmakingrulesetmatchmakingqueueslinkagesresponse.md)
-- [object GameCenterMatchmakingRuleSetRulesLinkagesResponse](gamecentermatchmakingrulesetruleslinkagesresponse.md)
+- [object GameCenterMatchmakingRuleSetMatchmakingQueuesLinkagesResponse](./gamecentermatchmakingrulesetmatchmakingqueueslinkagesresponse.md)
+- [object GameCenterMatchmakingRuleSetRulesLinkagesResponse](./gamecentermatchmakingrulesetruleslinkagesresponse.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isEqualTo
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Compares certain members of two dictionaries with isEqualTo().
 
@@ -11,11 +12,19 @@ Compares certain members of two dictionaries with isEqualTo().
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+bool isEqualTo(const OSDictionary *aDictionary, const OSCollection *keys);
+```
+
+*macOS*
+
+```cpp
 virtual bool isEqualTo(const OSDictionary *aDictionary, const OSCollection *keys);
 ```
 
-#### Return_value
+#### Return Value
 
 true if both dictionaries have equal counts, every key exists in both, values for each key compare true with isEqualTo().
 
@@ -29,9 +38,10 @@ For each key in the given collection, both dictionaries must contain values for 
 
 ## See Also
 
-- [- isEqualTo](osdictionary/3433847-isequalto.md)
+### Comparing Dictionaries
+- [- isEqualTo](./api-3433847-isequalto.md)
   Compares all members of two dictionaries with isEqualTo().
-- [- isEqualTo](osdictionary/3433848-isequalto.md)
+- [- isEqualTo](./api-3433848-isequalto.md)
   Compares the dictionary with an OSObject
 
 

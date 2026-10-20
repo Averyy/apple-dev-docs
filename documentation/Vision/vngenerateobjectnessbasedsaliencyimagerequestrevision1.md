@@ -1,7 +1,8 @@
 # VNGenerateObjectnessBasedSaliencyImageRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the image saliency request.
 
@@ -17,6 +18,10 @@ A constant for specifying revision 1 of the image saliency request.
 
 ```swift
 var VNGenerateObjectnessBasedSaliencyImageRequestRevision1: Int { get }
+```
+
+```c
+static const NSUInteger VNGenerateObjectnessBasedSaliencyImageRequestRevision1;
 ```
 
 

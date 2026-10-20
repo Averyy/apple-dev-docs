@@ -1,7 +1,8 @@
 # callAsFunction()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the currently opened immersive space.
 
@@ -18,13 +19,13 @@ func callAsFunction() async
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`dismissImmersiveSpace`](environmentvalues/dismissimmersivespace.md) action:
+Don’t call this method directly. SwiftUI calls it when you call the [`dismissImmersiveSpace`](../environmentvalues/dismissimmersivespace.md) action:
 
 ```swift
 await dismissImmersiveSpace()
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Methods-with-Special-Names) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/declarations/#Methods-with-Special-Names) in *The Swift Programming Language*.
 
 
 ---

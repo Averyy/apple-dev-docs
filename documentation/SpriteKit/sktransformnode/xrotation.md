@@ -1,7 +1,8 @@
 # xRotation
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -18,12 +19,17 @@
 var xRotation: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat xRotation;
+```
+
 ## See Also
 
-- [var yRotation: CGFloat](sktransformnode/yrotation.md)
-- [func setEulerAngles(vector_float3)](sktransformnode/seteulerangles(_:).md)
-- [func setQuaternion(simd_quatf)](sktransformnode/setquaternion(_:).md)
-- [func setRotationMatrix(matrix_float3x3)](sktransformnode/setrotationmatrix(_:).md)
+### Rotating Child Nodes
+- [var yRotation: CGFloat](./yrotation.md)
+- [func setEulerAngles(vector_float3)](./seteulerangles%28_%29.md)
+- [func setQuaternion(simd_quatf)](./setquaternion%28_%29.md)
+- [func setRotationMatrix(matrix_float3x3)](./setrotationmatrix%28_%29.md)
 
 
 ---

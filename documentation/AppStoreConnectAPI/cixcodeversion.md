@@ -1,7 +1,8 @@
 # CiXcodeVersion
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An Xcode version available in Xcode Cloud for running workflow builds and tests.
 
@@ -10,16 +11,16 @@ An Xcode version available in Xcode Cloud for running workflow builds and tests.
 
 ## Declaration
 
-```swift
+```
 object CiXcodeVersion
 ```
 
 ## Topics
 
 ### Objects
-- [object CiXcodeVersion.Attributes](cixcodeversion/attributes-data.dictionary.md)
+- [object CiXcodeVersion.Attributes](./cixcodeversion/attributes-data.dictionary.md)
   The attributes that describe an Xcode Versions resource.
-- [object CiXcodeVersion.Relationships](cixcodeversion/relationships-data.dictionary.md)
+- [object CiXcodeVersion.Relationships](./cixcodeversion/relationships-data.dictionary.md)
   The relationships of the Xcode Versions resource you included in the request and those on which you can operate.
 
 ## Properties
@@ -30,13 +31,16 @@ object CiXcodeVersion
 - `relationships` (CiXcodeVersion.Relationships): The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `ciXcodeVersions`
+
 ## See Also
 
-- [object CiXcodeVersionResponse](cixcodeversionresponse.md)
+### Objects
+- [object CiXcodeVersionResponse](./cixcodeversionresponse.md)
   The response body for endpoints that read a single Xcode version available in Xcode Cloud.
-- [object CiXcodeVersionsResponse](cixcodeversionsresponse.md)
+- [object CiXcodeVersionsResponse](./cixcodeversionsresponse.md)
   The response body for endpoints that list Xcode versions available for Xcode Cloud.
-- [object CiXcodeVersionMacOsVersionsLinkagesResponse](cixcodeversionmacosversionslinkagesresponse.md)
+- [object CiXcodeVersionMacOsVersionsLinkagesResponse](./cixcodeversionmacosversionslinkagesresponse.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kSpeechPhonemeInfoSymbol
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The symbol used to represent the phoneme.
 
@@ -12,6 +13,10 @@ The symbol used to represent the phoneme.
 
 ```swift
 let kSpeechPhonemeInfoSymbol: CFString
+```
+
+```c
+const CFStringRef kSpeechPhonemeInfoSymbol;
 ```
 
 #### Discussion

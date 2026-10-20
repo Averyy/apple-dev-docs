@@ -1,7 +1,8 @@
 # errSecNoStorageModule
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 There is no storage module available.
 
@@ -18,6 +19,10 @@ There is no storage module available.
 
 ```swift
 var errSecNoStorageModule: OSStatus { get }
+```
+
+```c
+errSecNoStorageModule
 ```
 
 

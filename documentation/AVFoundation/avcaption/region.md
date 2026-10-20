@@ -1,20 +1,25 @@
 # region
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region in which the caption exists.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var region: AVCaptionRegion? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) AVCaptionRegion * region;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # MTLDeviceErrorDomain
 
 **Framework**: Metal  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.4+
@@ -15,6 +16,10 @@
 
 ```swift
 let MTLDeviceErrorDomain: String
+```
+
+```c
+extern NSErrorDomain const MTLDeviceErrorDomain;
 ```
 
 

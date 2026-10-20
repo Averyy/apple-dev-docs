@@ -1,7 +1,8 @@
 # EraseDeviceCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to remotely and immediately erase a device.
 
@@ -16,18 +17,18 @@ The command to remotely and immediately erase a device.
 
 ## Declaration
 
-```swift
+```
 object EraseDeviceCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object EraseDeviceCommand.Command](erasedevicecommand/command-data.dictionary.md)
+- [object EraseDeviceCommand.Command](./erasedevicecommand/command-data.dictionary.md)
   The command to remotely and immediately erase a device.
 
 ## Properties
@@ -37,7 +38,8 @@ object EraseDeviceCommand
 
 ## See Also
 
-- [object EraseDeviceResponse](erasedeviceresponse.md)
+### Commands and responses
+- [object EraseDeviceResponse](./erasedeviceresponse.md)
   A response from the device after it processes the command to remotely and immediately erase a device.
 
 

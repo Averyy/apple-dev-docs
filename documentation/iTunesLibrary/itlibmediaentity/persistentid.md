@@ -1,7 +1,8 @@
 # persistentID
 
 **Framework**: iTunes Library  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the media entity.
 
@@ -13,6 +14,10 @@ The unique identifier of the media entity.
 
 ```swift
 var persistentID: NSNumber { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly) NSNumber * persistentID;
 ```
 
 

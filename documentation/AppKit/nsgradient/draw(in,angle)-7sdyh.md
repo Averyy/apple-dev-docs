@@ -1,7 +1,8 @@
 # draw(in:angle:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fills the specified rectangle with a linear gradient.
 
@@ -12,6 +13,10 @@ Fills the specified rectangle with a linear gradient.
 
 ```swift
 func draw(in rect: NSRect, angle: CGFloat)
+```
+
+```objc
+- (void) drawInRect:(NSRect) rect angle:(CGFloat) angle;
 ```
 
 #### Discussion
@@ -36,9 +41,10 @@ The gradient drawn by this method is clipped to `rect`.
 
 ## See Also
 
-- [func draw(from: NSPoint, to: NSPoint, options: NSGradient.DrawingOptions)](nsgradient/draw(from:to:options:).md)
+### Drawing a Linear Gradient
+- [func draw(from: NSPoint, to: NSPoint, options: NSGradient.DrawingOptions)](./draw%28from,to,options%29.md)
   Draws a linear gradient between the specified start and end points.
-- [func draw(in: NSBezierPath, angle: CGFloat)](nsgradient/draw(in:angle:)-68adz.md)
+- [func draw(in: NSBezierPath, angle: CGFloat)](./draw%28in,angle%29-68adz.md)
   Fills the specified path with a linear gradient.
 
 

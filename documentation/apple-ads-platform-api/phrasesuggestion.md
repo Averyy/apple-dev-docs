@@ -1,7 +1,8 @@
 # PhraseSuggestion
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A phrase suggestion returned by the phrase suggestions endpoint.
 
@@ -10,7 +11,7 @@ A phrase suggestion returned by the phrase suggestions endpoint.
 
 ## Declaration
 
-```swift
+```
 object PhraseSuggestion
 ```
 
@@ -36,19 +37,19 @@ Phrase suggestions are similar to keyword suggestions but may reflect multi-word
 
 ## See Also
 
-- [object KeywordSuggestion](keywordsuggestion.md)
+- [object KeywordSuggestion](./keywordsuggestion.md)
   A keyword suggestion returned by the keyword suggestions endpoint.
-- [object CategorySuggestion](categorysuggestion.md)
+- [object CategorySuggestion](./categorysuggestion.md)
   A category suggestion returned by the category suggestions endpoint, for either an App Store app or an Apple Maps brand.
-- [object RecommendationQueryKeywordSuggestionResponse](recommendationquerykeywordsuggestionresponse.md)
+- [object RecommendationQueryKeywordSuggestionResponse](./recommendationquerykeywordsuggestionresponse.md)
   Response envelope returned by the keyword suggestions query endpoint, containing suggested keywords.
-- [object RecommendationQueryPhraseSuggestionResponse](recommendationqueryphrasesuggestionresponse.md)
+- [object RecommendationQueryPhraseSuggestionResponse](./recommendationqueryphrasesuggestionresponse.md)
   Response envelope returned by the phrase suggestions query endpoint, containing suggested phrases.
-- [object RecommendationQueryCategorySuggestionResponse](recommendationquerycategorysuggestionresponse.md)
+- [object RecommendationQueryCategorySuggestionResponse](./recommendationquerycategorysuggestionresponse.md)
   Response envelope returned by the category suggestions query endpoint, containing matched category suggestions.
-- [object TargetCpaSuggestion](targetcpasuggestion.md)
+- [object TargetCpaSuggestion](./targetcpasuggestion.md)
   A suggested Target CPA for a new Maximize Conversions campaign, based on historical performance and market conditions.
-- [object RecommendationQueryTargetCpaSuggestionResponse](recommendationquerytargetcpasuggestionresponse.md)
+- [object RecommendationQueryTargetCpaSuggestionResponse](./recommendationquerytargetcpasuggestionresponse.md)
   Response envelope returned by the Target CPA suggestions endpoint.
 
 

@@ -1,7 +1,8 @@
 # maximumHandCount
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of hands to detect in an image.
 
@@ -27,9 +28,10 @@ The default value is `2`.
 
 ## See Also
 
-- [var supportedJointNames: [HumanHandPoseObservation.JointName]](detecthumanhandposerequest/supportedjointnames.md)
+### Configuring a request
+- [var supportedJointNames: [HumanHandPoseObservation.JointName]](./supportedjointnames.md)
   The joint names the request supports.
-- [var supportedJointsGroupNames: [HumanHandPoseObservation.JointsGroupName]](detecthumanhandposerequest/supportedjointsgroupnames.md)
+- [var supportedJointsGroupNames: [HumanHandPoseObservation.JointsGroupName]](./supportedjointsgroupnames.md)
   The joint group names the request supports.
 
 

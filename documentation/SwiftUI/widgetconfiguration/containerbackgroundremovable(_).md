@@ -1,7 +1,8 @@
 # containerBackgroundRemovable(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A modifier that marks the background of a widget as removable.
 
@@ -38,11 +39,12 @@ This modifier has no effect on operation system versions prior to iOS 17, watchO
 
 ## See Also
 
-- [func supportedFamilies([WidgetFamily]) -> some WidgetConfiguration](widgetconfiguration/supportedfamilies(_:).md)
+### Setting the appearance
+- [func supportedFamilies([WidgetFamily]) -> some WidgetConfiguration](./supportedfamilies%28_%29.md)
   Sets the sizes that a widget supports.
-- [func contentMarginsDisabled() -> some WidgetConfiguration](widgetconfiguration/contentmarginsdisabled.md)
+- [func contentMarginsDisabled() -> some WidgetConfiguration](./contentmarginsdisabled%28%29.md)
   Disable default content margins.
-- [func disfavoredLocations([WidgetLocation], for: [WidgetFamily]) -> some WidgetConfiguration](widgetconfiguration/disfavoredlocations(_:for:).md)
+- [func disfavoredLocations([WidgetLocation], for: [WidgetFamily]) -> some WidgetConfiguration](./disfavoredlocations%28_,for%29.md)
   Sets the disfavored locations for a widget.
 
 

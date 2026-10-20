@@ -1,18 +1,21 @@
 # currencyCode
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The three-letter ISO 4217 currency code for the price of the product.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
-- visionOS 1.0+
-- watchOS 8.0+
+- iOS 15.0+ - Deprecated in 16.0 (renamed: currency.identifier)
+- iPadOS 15.0+ - Deprecated in 16.0 (renamed: currency.identifier)
+- Mac Catalyst 15.0+ - Deprecated in 16.0 (renamed: currency.identifier)
+- macOS 12.0+ - Deprecated in 13.0 (renamed: currency.identifier)
+- tvOS 15.0+ - Deprecated in 16.0 (renamed: currency.identifier)
+- visionOS 1.0+ - Deprecated in 1.1 (renamed: currency.identifier)
+- watchOS 8.0+ - Deprecated in 9.0 (renamed: currency.identifier)
+
+> **Deprecated**: Use [`currency`](./currency.md) instead. To get the currency code as a string, use the [`identifier`](../../Foundation/locale/currency-swift.struct/identifier.md) property of [`currency`](../product/subscriptioninfo/renewalinfo/currency.md).
 
 ## Declaration
 
@@ -23,27 +26,28 @@ var currencyCode: String? { get }
 
 #### Discussion
 
-The [`currencyCode`](transaction/currencycode.md) property contains an ISO 4217 alpha-3 string that represents the currency of the price of the product. Use [`currencyCode`](product/subscriptioninfo/renewalinfo/currencycode.md) to access the currency of the price on systems earlier than iOS 16, iPadOS 16, macOS 13, tvOS 16, and watchOS 9. Otherwise, use [`currency`](product/subscriptioninfo/renewalinfo/currency.md).
+The [`currencyCode`](./currencycode.md) property contains an ISO 4217 alpha-3 string that represents the currency of the price of the product. Use [`currencyCode`](../product/subscriptioninfo/renewalinfo/currencycode.md) to access the currency of the price on systems earlier than iOS 16, iPadOS 16, macOS 13, tvOS 16, and watchOS 9. Otherwise, use [`currency`](../product/subscriptioninfo/renewalinfo/currency.md).
 
-> ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [`Download financial reports`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [`Overview of reporting tools`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
+> ❗ **Important**:  For financial and accounting purposes, use the App Store Connect reporting tools. For more information, see [Download financial reports](https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports) and [Overview of reporting tools](https://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
 
-Don’t use [`currencyCode`](transaction/currencycode.md) to infer the storefront. Use the [`storefront`](transaction/storefront.md) value in the transaction instead.
+Don’t use [`currencyCode`](./currencycode.md) to infer the storefront. Use the [`storefront`](./storefront.md) value in the transaction instead.
 
-For more information on how you set prices, see [`Set a price for an Apple In-App Purchase`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-a-price-for-an-in-app-purchase).
+For more information on how you set prices, see [Set a price for an Apple In-App Purchase](https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-a-price-for-an-in-app-purchase).
 
 ## See Also
 
-- [var environmentStringRepresentation: String](transaction/environmentstringrepresentation.md)
+### Deprecated
+- [var environmentStringRepresentation: String](./environmentstringrepresentation.md)
   A string representation of the server environment.
-- [var offerID: String?](transaction/offerid.md)
+- [var offerID: String?](./offerid.md)
   A string that identifies an offer applied to the current subscription.
-- [var offerPaymentModeStringRepresentation: String?](transaction/offerpaymentmodestringrepresentation.md)
+- [var offerPaymentModeStringRepresentation: String?](./offerpaymentmodestringrepresentation.md)
   The string representation of the payment mode for a subscription offer.
-- [var offerType: Transaction.OfferType?](transaction/offertype-swift.property.md)
+- [var offerType: Transaction.OfferType?](./offertype-swift.property.md)
   The subscription offer type for the current subscription period.
-- [var reasonStringRepresentation: String](transaction/reasonstringrepresentation.md)
+- [var reasonStringRepresentation: String](./reasonstringrepresentation.md)
   The string representation of the transaction reason.
-- [var storefrontCountryCode: String](transaction/storefrontcountrycode.md)
+- [var storefrontCountryCode: String](./storefrontcountrycode.md)
   The three-letter code that represents the country or region associated with the App Store storefront of the purchase.
 
 

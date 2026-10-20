@@ -1,7 +1,8 @@
 # UpcomingPassInformationEntry
 
 **Framework**: Wallet Passes  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents the ordered list of all upcoming pass information entries.
 
@@ -12,22 +13,22 @@ An object that represents the ordered list of all upcoming pass information entr
 
 ## Declaration
 
-```swift
+```
 object UpcomingPassInformationEntry
 ```
 
 ## Topics
 
 ### Adding information to multievent passes
-- [object UpcomingPassInformationEntry.AdditionalInfoFields](upcomingpassinformationentry/additionalinfofields-data.dictionary.md)
+- [object UpcomingPassInformationEntry.AdditionalInfoFields](./upcomingpassinformationentry/additionalinfofields-data.dictionary.md)
   The fields of information that display in the Additional Info section below a pass.
-- [object UpcomingPassInformationEntry.BackFields](upcomingpassinformationentry/backfields-data.dictionary.md)
+- [object UpcomingPassInformationEntry.BackFields](./upcomingpassinformationentry/backfields-data.dictionary.md)
   The fields of information displayed in the details view  of the upcoming pass information entry.
-- [object UpcomingPassInformationEntry.DateInformation](upcomingpassinformationentry/dateinformation-data.dictionary.md)
+- [object UpcomingPassInformationEntry.DateInformation](./upcomingpassinformationentry/dateinformation-data.dictionary.md)
   Information about the start and end time of the upcoming pass information entry.
-- [object UpcomingPassInformationEntry.Images](upcomingpassinformationentry/images-data.dictionary.md)
+- [object UpcomingPassInformationEntry.Images](./upcomingpassinformationentry/images-data.dictionary.md)
   A collection of image names used to populate images in the details view.
-- [object UpcomingPassInformationEntry.URLs](upcomingpassinformationentry/urls-data.dictionary.md)
+- [object UpcomingPassInformationEntry.URLs](./upcomingpassinformationentry/urls-data.dictionary.md)
   An object with links to information about the upcoming pass information entry.
 
 ## Properties
@@ -44,19 +45,23 @@ object UpcomingPassInformationEntry
 - `semantics` (SemanticTags): The semantic, machine-readable metadata about the upcoming pass information entry.
 - `type` (string) *(required)*: The type of upcoming pass information entry.
 
+  **Allowed Values**: `event`
+
 ## See Also
 
-- [object UpcomingPassInformationEntryType](upcomingpassinformationentrytype.md)
+### Related Documentation
+- [object UpcomingPassInformationEntryType](./upcomingpassinformationentrytype.md)
   An object that represents a upcoming pass information entry for an specific upcoming event.
-- [Creating a poster event pass using semantic tags](creating-an-event-pass-using-semantic-tags.md)
+### Event passes
+- [Creating a poster event pass using semantic tags](./creating-an-event-pass-using-semantic-tags.md)
   Use semantic tags to provide up-to-date information for event passes.
-- [object Pass.EventTicket](pass/eventticket-data.dictionary.md)
+- [object Pass.EventTicket](./pass/eventticket-data.dictionary.md)
   An object that represents the groups of fields that display the information for an event ticket.
-- [object SemanticTags](semantictags.md)
+- [object SemanticTags](./semantictags.md)
   An object that contains machine-readable metadata the system uses to offer a pass and suggest related actions.
-- [object SemanticTagType](semantictagtype.md)
+- [object SemanticTagType](./semantictagtype.md)
   A compilation of data object types for semantic tags.
-- [object UpcomingPassInformationEntryType](upcomingpassinformationentrytype.md)
+- [object UpcomingPassInformationEntryType](./upcomingpassinformationentrytype.md)
   An object that represents a upcoming pass information entry for an specific upcoming event.
 
 

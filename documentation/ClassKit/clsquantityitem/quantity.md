@@ -1,7 +1,8 @@
 # quantity
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A quantity associated with the task.
 
@@ -16,6 +17,10 @@ A quantity associated with the task.
 
 ```swift
 var quantity: Double { get set }
+```
+
+```objc
+@property (nonatomic, assign) double quantity;
 ```
 
 

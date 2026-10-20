@@ -1,7 +1,8 @@
 # AudioServicesRemoveSystemSoundCompletion(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unregisters any completion callback functions that were registered for a specified system sound.
 
@@ -19,15 +20,20 @@ Unregisters any completion callback functions that were registered for a specifi
 func AudioServicesRemoveSystemSoundCompletion(_ inSystemSoundID: SystemSoundID)
 ```
 
+```c
+extern void AudioServicesRemoveSystemSoundCompletion(SystemSoundID inSystemSoundID);
+```
+
 ## Parameters
 
 - `inSystemSoundID`: The system sound for which callback functions should be removed.
 
 ## See Also
 
-- [func AudioServicesAddSystemSoundCompletion(SystemSoundID, CFRunLoop?, CFString?, AudioServicesSystemSoundCompletionProc, UnsafeMutableRawPointer?) -> OSStatus](audioservicesaddsystemsoundcompletion(_:_:_:_:_:).md)
+### Adding and Removing System Sound Callbacks
+- [func AudioServicesAddSystemSoundCompletion(SystemSoundID, CFRunLoop?, CFString?, AudioServicesSystemSoundCompletionProc, UnsafeMutableRawPointer?) -> OSStatus](./audioservicesaddsystemsoundcompletion%28_,_,_,_,_%29.md)
   Registers a callback function that is invoked when a specified system sound finishes playing.
-- [typealias AudioServicesSystemSoundCompletionProc](audioservicessystemsoundcompletionproc.md)
+- [typealias AudioServicesSystemSoundCompletionProc](./audioservicessystemsoundcompletionproc.md)
   A function the system invokes when a system sound finishes playing.
 
 

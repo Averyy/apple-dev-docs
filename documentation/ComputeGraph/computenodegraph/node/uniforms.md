@@ -1,7 +1,8 @@
 # uniforms
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Uniform values for the node.
 
@@ -12,7 +13,7 @@ Uniform values for the node.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

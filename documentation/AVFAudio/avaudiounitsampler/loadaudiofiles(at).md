@@ -1,7 +1,8 @@
 # loadAudioFiles(at:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the sampler by loading the specified audio files.
 
@@ -19,6 +20,10 @@ Configures the sampler by loading the specified audio files.
 func loadAudioFiles(at audioFiles: [URL]) throws
 ```
 
+```objc
+- (BOOL) loadAudioFilesAtURLs:(NSArray<NSURL *> *) audioFiles error:(NSError **) outError;
+```
+
 #### Discussion
 
 The framework loads the audio files into a new instrument with each audio file in its own sampler zone. The framework uses any information in the audio file for its placement in the instrument. For example, the root key and key range.
@@ -29,9 +34,10 @@ The framework loads the audio files into a new instrument with each audio file i
 
 ## See Also
 
-- [func loadInstrument(at: URL) throws](avaudiounitsampler/loadinstrument(at:).md)
+### Configuring the sampler Audio Unit
+- [func loadInstrument(at: URL) throws](./loadinstrument%28at%29.md)
   Configures the sampler with the specified instrument file.
-- [func loadSoundBankInstrument(at: URL, program: UInt8, bankMSB: UInt8, bankLSB: UInt8) throws](avaudiounitsampler/loadsoundbankinstrument(at:program:bankmsb:banklsb:).md)
+- [func loadSoundBankInstrument(at: URL, program: UInt8, bankMSB: UInt8, bankLSB: UInt8) throws](./loadsoundbankinstrument%28at,program,bankmsb,banklsb%29.md)
   Loads a specific instrument from the specified soundbank.
 
 

@@ -1,7 +1,8 @@
 # videoProvider
 
 **Framework**: Link Presentation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that retrieves data corresponding to a representative video for the URL.
 
@@ -20,13 +21,18 @@ An object that retrieves data corresponding to a representative video for the UR
 var videoProvider: NSItemProvider? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) NSItemProvider * videoProvider;
+```
+
 #### Discussion
 
-The item provider returns a video that [`AVFoundation`](https://developer.apple.com/documentation/avfoundation) can play.
+The item provider returns a video that [AVFoundation](../../AVFoundation/AVFoundation.md) can play.
 
 ## See Also
 
-- [var remoteVideoURL: URL?](lplinkmetadata/remotevideourl.md)
+### Getting the link’s video
+- [var remoteVideoURL: URL?](./remotevideourl.md)
   A remote URL corresponding to a representative video for the URL.
 
 

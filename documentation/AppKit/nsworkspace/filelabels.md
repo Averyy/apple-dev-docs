@@ -1,7 +1,8 @@
 # fileLabels
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of file labels, returned as strings.
 
@@ -14,19 +15,24 @@ The array of file labels, returned as strings.
 var fileLabels: [String] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSString *> * fileLabels;
+```
+
 #### Return Value
 
 An array of strings.
 
 #### Discussion
 
-You can listen for notifications named [`didChangeFileLabelsNotification`](nsworkspace/didchangefilelabelsnotification.md) to be notified when file labels change.
+You can listen for notifications named [`didChangeFileLabelsNotification`](./didchangefilelabelsnotification.md) to be notified when file labels change.
 
 You can safely call this method from any thread of your app.
 
 ## See Also
 
-- [var fileLabelColors: [NSColor]](nsworkspace/filelabelcolors.md)
+### Finder File Labels
+- [var fileLabelColors: [NSColor]](./filelabelcolors.md)
   The array of colors for the file labels.
 
 

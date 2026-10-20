@@ -1,7 +1,8 @@
 # Search for Library Resources
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Search the library by using a query.
 
@@ -10,15 +11,15 @@ Search the library by using a query.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `results` contains a map of search results. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `results` contains a map of search results. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
-This endpoint requires a music user token. For more information, see [`User Authentication for MusicKit`](user-authentication-for-musickit.md).
+This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/me/library/search?types=library-songs,library-albums&term=Happier
 ```
 
@@ -235,15 +236,29 @@ https://api.music.apple.com/v1/me/library/search?types=library-songs,library-alb
 
 ## Parameters
 
+### Query Parameters
+
 - `term` (string) *(required)*: The text for the search, with a plus sign (`+`) between each word to replace spaces (for example, `term=james+br`).
 - `types` ([string]) *(required)*: The list of the types of resources to include in the results. The possible values are `library-albums`, `library-songs`, `library-playlists`, `library-artists`, and `library-music-videos`.
+
+  **Allowed Values**: `library-albums`, `library-artists`, `library-music-videos`, `library-playlists`, `library-songs`
 - `limit` (integer): The number of objects or number of objects in the specified relationship returned.
+
+  **Default**: `5`; **Maximum**: `25`
 - `offset` (string): The next page or group of objects to fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 
+## Responses
+
+- `200` OK (`LibrarySearchResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `403` Forbidden (`ForbiddenResponse`, `application/json`): A response indicating invalid or insufficient authentication.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object LibrarySearchResponse](librarysearchresponse.md)
+### Related Documentation
+- [object LibrarySearchResponse](./librarysearchresponse.md)
   The response to a request for a library search.
 
 

@@ -1,7 +1,8 @@
 # transform(dftSetup:inputReal:inputImaginary:outputReal:outputImaginary:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 13.0+ - Deprecated
@@ -9,8 +10,10 @@
 - Mac Catalyst 13.0+ - Deprecated
 - macOS 10.15+ - Deprecated
 - tvOS 13.0+ - Deprecated
-- visionOS ?+
+- visionOS
 - watchOS 6.0+ - Deprecated
+
+> **Deprecated**: Use `vDSP.DiscreteFourierTransform`.
 
 ## Declaration
 

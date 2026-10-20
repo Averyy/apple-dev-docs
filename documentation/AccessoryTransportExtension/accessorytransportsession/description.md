@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Accessory Transport Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that describes the transport session.
 

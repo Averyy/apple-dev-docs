@@ -1,7 +1,8 @@
 # receive(as:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receive data from a connection as a fixed width integer.
 
@@ -19,6 +20,8 @@ Receive data from a connection as a fixed width integer.
 ```swift
 func receive<Value>(as type: Value.Type) async throws -> ApplicationProtocol.Message<Value> where Value : NetworkFixedWidthInteger
 ```
+
+Available when `ApplicationProtocol` conforms to `StreamProtocol`.
 
 #### Discussion
 

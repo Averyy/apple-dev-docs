@@ -1,14 +1,15 @@
 # cpuid_register_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 typedef enum cpuid_register_t : unsigned int {
     ...
 } cpuid_register_t;
@@ -17,10 +18,10 @@ typedef enum cpuid_register_t : unsigned int {
 ## Topics
 
 ### Constants
-- [eax](cpuid_register_t/eax.md)
-- [ebx](cpuid_register_t/ebx.md)
-- [ecx](cpuid_register_t/ecx.md)
-- [edx](cpuid_register_t/edx.md)
+- [eax](./cpuid_register_t/eax.md)
+- [ebx](./cpuid_register_t/ebx.md)
+- [ecx](./cpuid_register_t/ecx.md)
+- [edx](./cpuid_register_t/edx.md)
 
 
 ---

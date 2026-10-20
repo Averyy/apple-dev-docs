@@ -1,7 +1,8 @@
 # AlarmMetadata
 
 **Framework**: AlarmKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A metadata object that contains information about an alarm.
 
@@ -23,20 +24,21 @@ Provide an implementation of this for your own custom content or other informati
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AlarmPresentation](alarmpresentation.md)
+### Views
+- [struct AlarmPresentation](./alarmpresentation.md)
   An object that describes the content required for the alarm UI.
-- [struct AlarmPresentationState](alarmpresentationstate.md)
+- [struct AlarmPresentationState](./alarmpresentationstate.md)
   The system managed content state of an alarm Live Activity.
-- [struct AlarmAttributes](alarmattributes.md)
+- [struct AlarmAttributes](./alarmattributes.md)
   An object that contains all information necessary for the alarm UI.
 
 

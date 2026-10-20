@@ -1,24 +1,26 @@
 # Device
 
 **Framework**: MIDIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 Device
 ```
 
 ## See Also
 
-- [Destination](mididriverkit/iousermidiclassid/destination.md)
-- [Endpoint](mididriverkit/iousermidiclassid/endpoint.md)
-- [Entity](mididriverkit/iousermidiclassid/entity.md)
-- [Object](mididriverkit/iousermidiclassid/object.md)
-- [Source](mididriverkit/iousermidiclassid/source.md)
+### Constants
+- [Destination](./destination.md)
+- [Endpoint](./endpoint.md)
+- [Entity](./entity.md)
+- [Object](./object.md)
+- [Source](./source.md)
 
 
 ---

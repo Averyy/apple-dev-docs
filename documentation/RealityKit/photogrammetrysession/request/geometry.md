@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Request.Geometry
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that holds a bounding box and transformation data for a request.
 
@@ -20,26 +21,26 @@ struct Geometry
 ## Topics
 
 ### Creating a geometry instance
-- [init(bounds: BoundingBox, transform: Transform)](photogrammetrysession/request/geometry/init(bounds:transform:).md)
+- [init(bounds: BoundingBox, transform: Transform)](./geometry/init%28bounds,transform%29.md)
   Creates an instance with an optional bounding box and transform.
 ### Accessing geometry data
-- [var bounds: BoundingBox](photogrammetrysession/request/geometry/bounds.md)
+- [var bounds: BoundingBox](./geometry/bounds.md)
   The bounding box for the created entity.
-- [var transform: Transform](photogrammetrysession/request/geometry/transform.md)
+- [var transform: Transform](./geometry/transform.md)
   A transform applied to the created entity.
 ### Initializers
-- [init(orientedBounds: OrientedBoundingBox, transform: Transform)](photogrammetrysession/request/geometry/init(orientedbounds:transform:).md)
+- [init(orientedBounds: OrientedBoundingBox, transform: Transform)](./geometry/init%28orientedbounds,transform%29.md)
   Creates an instance from an oriented bounding box and transform.
 ### Instance Properties
-- [var orientedBounds: OrientedBoundingBox](photogrammetrysession/request/geometry/orientedbounds.md)
+- [var orientedBounds: OrientedBoundingBox](./geometry/orientedbounds.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

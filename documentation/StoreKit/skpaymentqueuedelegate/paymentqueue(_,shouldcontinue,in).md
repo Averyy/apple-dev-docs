@@ -1,18 +1,21 @@
 # paymentQueue(_:shouldContinue:in:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether to continue the transaction if the device’s App Store storefront changes during a transaction.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 13.0+ - Deprecated in 18.0
+- iPadOS 13.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.15+ - Deprecated in 15.0
+- tvOS 13.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: Pass Product.PurchaseOption.onStorefrontChange(shouldContinuePurchase:) to product.purchase(options:).
 
 ## Declaration
 
@@ -20,18 +23,22 @@ Asks the delegate whether to continue the transaction if the device’s App Stor
 optional func paymentQueue(_ paymentQueue: SKPaymentQueue, shouldContinue transaction: SKPaymentTransaction, in newStorefront: SKStorefront) -> Bool
 ```
 
+```objc
+- (BOOL) paymentQueue:(SKPaymentQueue *) paymentQueue shouldContinueTransaction:(SKPaymentTransaction *) transaction inStorefront:(SKStorefront *) newStorefront;
+```
+
 #### Discussion
 
 StoreKit calls this delegate method if the storefront changes while processing a transaction.
 
 - Return `true` if you wish to continue the transaction within the updated storefront.
-- Return `false` to stop the transaction. The transaction will fail with the error [`SKError.Code.storeProductNotAvailable`](skerror/code/storeproductnotavailable.md). In this case, consider displaying a message to the user indicating that the product isn’t available in the current storefront.
+- Return `false` to stop the transaction. The transaction will fail with the error [`SKError.Code.storeProductNotAvailable`](../skerror/code/storeproductnotavailable.md). In this case, consider displaying a message to the user indicating that the product isn’t available in the current storefront.
 
-If the delegate isn’t implemented, [`paymentQueue(_:shouldContinue:in:)`](skpaymentqueuedelegate/paymentqueue(_:shouldcontinue:in:).md) defaults to `true`.
+If the delegate isn’t implemented, [`paymentQueue(_:shouldContinue:in:)`](./paymentqueue%28_,shouldcontinue,in%29.md) defaults to `true`.
 
 This call times out after approximately one second, defaulting to `false` and causing the transaction to fail. The delegate should return as quickly as possible. Don’t perform any networking calls in this method. Your app should cache product availability information locally before starting a transaction.
 
-See [`SKStorefront`](skstorefront.md) for more information.
+See [`SKStorefront`](../skstorefront.md) for more information.
 
 
 ---

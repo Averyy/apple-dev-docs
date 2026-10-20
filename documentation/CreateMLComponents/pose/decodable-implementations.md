@@ -1,13 +1,14 @@
 # Decodable Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(from:)](pose/init(from:).md)
+- [init(from:)](./init%28from%29.md)
   Creates a pose by decoding from the given decoder.
-- [init(from: any Decoder) throws](pose/init(from:)-9ijwh.md)
+- [init(from: any Decoder) throws](./init%28from%29-9ijwh.md)
   Creates a pose by decoding from the given decoder.
 
 

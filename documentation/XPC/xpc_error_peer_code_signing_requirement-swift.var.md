@@ -1,7 +1,8 @@
 # XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT
 
 **Framework**: XPC  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -20,13 +21,14 @@ var XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT: xpc_object_t { get }
 
 ## See Also
 
-- [struct XPCRichError](xpcricherror.md)
+### Errors
+- [struct XPCRichError](./xpcricherror.md)
   An error that contains a description and indicates if you can retry the operation that caused the error.
-- [var XPC_TYPE_RICH_ERROR: xpc_type_t](xpc_type_rich_error-swift.var.md)
+- [var XPC_TYPE_RICH_ERROR: xpc_type_t](./xpc_type_rich_error-swift.var.md)
   A type that represents a rich error object.
-- [var XPC_TYPE_ERROR: xpc_type_t](xpc_type_error-swift.var.md)
+- [var XPC_TYPE_ERROR: xpc_type_t](./xpc_type_error-swift.var.md)
   A type that represents an error object.
-- [let XPC_ERROR_KEY_DESCRIPTION: UnsafePointer<CChar>](xpc_error_key_description-swift.var.md)
+- [let XPC_ERROR_KEY_DESCRIPTION: UnsafePointer<CChar>](./xpc_error_key_description-swift.var.md)
   A key for querying an error dictionary to retrieve a string with a human-readable description of the error.
 
 

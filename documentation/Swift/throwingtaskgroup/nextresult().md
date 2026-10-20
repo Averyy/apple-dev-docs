@@ -1,7 +1,8 @@
 # nextResult()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Wait for the next child task to complete, and return a result containing either the value that the child task returned or the error that it threw.
 
@@ -46,16 +47,17 @@ case .failure(let error): print("Failure: \(error)")
 
 If the next child task throws an error and you propagate that error from this method out of the body of a call to the `ThrowingTaskGroup.withThrowingTaskGroup(of:returning:body:)` method, then all remaining child tasks in that group are implicitly canceled.
 
-> **Note**: `next()`
+> **See Also**: `next()`
 
 ## See Also
 
-- [func next() async throws -> ChildTaskResult?](throwingtaskgroup/next.md)
-- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](throwingtaskgroup/next(isolation:).md)
+### Accessing Individual Results
+- [func next() async throws -> ChildTaskResult?](./next%28%29.md)
+- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](./next%28isolation%29.md)
   Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
-- [var isEmpty: Bool](throwingtaskgroup/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
-- [func waitForAll() async throws](throwingtaskgroup/waitforall.md)
+- [func waitForAll() async throws](./waitforall%28%29.md)
   Wait for all of the group’s remaining tasks to complete.
 
 

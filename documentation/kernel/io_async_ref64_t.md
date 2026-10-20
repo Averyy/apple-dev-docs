@@ -1,14 +1,15 @@
 # io_async_ref64_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 typedef io_user_reference_t io_async_ref64_t[8];
 ```
 

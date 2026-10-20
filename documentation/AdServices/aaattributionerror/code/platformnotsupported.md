@@ -1,7 +1,8 @@
 # AAAttributionError.Code.platformNotSupported
 
 **Framework**: AdServices  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The server is unable to provide a token because of an unsupported operating system.
 
@@ -18,11 +19,16 @@ The server is unable to provide a token because of an unsupported operating syst
 case platformNotSupported
 ```
 
+```c
+AAAttributionErrorCodePlatformNotSupported
+```
+
 ## See Also
 
-- [AAAttributionError.Code.internalError](aaattributionerror/code/internalerror.md)
+### Determining the cause of an error
+- [AAAttributionError.Code.internalError](./internalerror.md)
   The server is unable to provide a token because of an internal error.
-- [AAAttributionError.Code.networkError](aaattributionerror/code/networkerror.md)
+- [AAAttributionError.Code.networkError](./networkerror.md)
   The server is unable to provide a token because the internet isn’t available.
 
 

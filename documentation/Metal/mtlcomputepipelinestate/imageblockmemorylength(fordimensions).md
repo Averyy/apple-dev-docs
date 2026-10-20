@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the length of reserved memory for an imageblock of a given size.
@@ -20,13 +21,17 @@ Returns the length of reserved memory for an imageblock of a given size.
 func imageblockMemoryLength(forDimensions imageblockDimensions: MTLSize) -> Int
 ```
 
+```objc
+- (NSUInteger) imageblockMemoryLengthForDimensions:(MTLSize) imageblockDimensions;
+```
+
 #### Return Value
 
 The length, in bytes, occupied by the image block in memory.
 
 ## Parameters
 
-- `imageblockDimensions`: An [`MTLSize`](mtlsize.md) instance that represents the dimensions of an imageblock.
+- `imageblockDimensions`: An [`MTLSize`](../mtlsize.md) instance that represents the dimensions of an imageblock.
 
 
 ---

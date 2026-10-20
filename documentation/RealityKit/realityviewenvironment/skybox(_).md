@@ -1,7 +1,8 @@
 # skybox(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The view uses a skybox environment as the background.
 
@@ -20,7 +21,8 @@ static func skybox(_ skybox: EnvironmentResource) -> RealityViewEnvironment
 
 ## See Also
 
-- [static var `default`: RealityViewEnvironment](realityviewenvironment/default.md)
+### Setting the environment background
+- [static var `default`: RealityViewEnvironment](./default.md)
   The view uses any background style you apply via the view’s background style.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Animates the item to the specified location and inserts a placeholder cell at that location.
@@ -18,6 +19,10 @@ Animates the item to the specified location and inserts a placeholder cell at th
 func drop(_ dragItem: UIDragItem, to placeholder: UITableViewDropPlaceholder) -> any UITableViewDropPlaceholderContext
 ```
 
+```objc
+- (id<UITableViewDropPlaceholderContext>) dropItem:(UIDragItem *) dragItem toPlaceholder:(UITableViewDropPlaceholder *) placeholder;
+```
+
 #### Return Value
 
 The context object that you use to replace or remove the placeholder cell later. Store a reference to this object so that you can call its methods later.
@@ -26,9 +31,9 @@ The context object that you use to replace or remove the placeholder cell later.
 
 Use this method to insert a temporary placeholder cell (instead of a cell backed by actual data) into the table view. When calling this method, do not update your data source object to account for the placeholder. The table view manages the placeholder until you explicitly remove it using the returned context object.
 
-Typically, you use this method when you must load data asynchronously for a cell. Instead of updating your data source, you insert a placeholder cell. When the data is finally available, update your data source object and call the [`commitInsertion(dataSourceUpdates:)`](uitableviewdropplaceholdercontext/commitinsertion(datasourceupdates:).md) method of the returned context object to swap out the placeholder cell for an actual cell. You can also remove a placeholder cell that is no longer needed by calling the [`deletePlaceholder()`](uitableviewdropplaceholdercontext/deleteplaceholder().md) method.
+Typically, you use this method when you must load data asynchronously for a cell. Instead of updating your data source, you insert a placeholder cell. When the data is finally available, update your data source object and call the [`commitInsertion(dataSourceUpdates:)`](../uitableviewdropplaceholdercontext/commitinsertion%28datasourceupdates%29.md) method of the returned context object to swap out the placeholder cell for an actual cell. You can also remove a placeholder cell that is no longer needed by calling the [`deletePlaceholder()`](../uitableviewdropplaceholdercontext/deleteplaceholder%28%29.md) method.
 
-At some point after calling this method, the table view executes the [`cellUpdateHandler`](uitableviewplaceholder/cellupdatehandler.md) block in the provided `placeholder` object. Use that block to configure the contents of the placeholder cell.
+At some point after calling this method, the table view executes the [`cellUpdateHandler`](../uitableviewplaceholder/cellupdatehandler.md) block in the provided `placeholder` object. Use that block to configure the contents of the placeholder cell.
 
 ## Parameters
 
@@ -37,10 +42,11 @@ At some point after calling this method, the table view executes the [`cellUpdat
 
 ## See Also
 
-- [func drop(UIDragItem, toRowAt: IndexPath) -> any UIDragAnimating](uitableviewdropcoordinator/drop(_:torowat:).md)
+### Animating rows to their destination
+- [func drop(UIDragItem, toRowAt: IndexPath) -> any UIDragAnimating](./drop%28_,torowat%29.md)
   Animates the item to the specified index path in the table view.
-- [func drop(UIDragItem, intoRowAt: IndexPath, rect: CGRect) -> any UIDragAnimating](uitableviewdropcoordinator/drop(_:intorowat:rect:).md)
-- [func drop(UIDragItem, to: UIDragPreviewTarget) -> any UIDragAnimating](uitableviewdropcoordinator/drop(_:to:)-57wx.md)
+- [func drop(UIDragItem, intoRowAt: IndexPath, rect: CGRect) -> any UIDragAnimating](./drop%28_,intorowat,rect%29.md)
+- [func drop(UIDragItem, to: UIDragPreviewTarget) -> any UIDragAnimating](./drop%28_,to%29-57wx.md)
   Animates the item to an arbitrary location in your view hierarchy.
 
 

@@ -1,7 +1,8 @@
 # aggregateValue(_:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first aggregate value matching the given operation, or `-1` if not found.
 
@@ -22,7 +23,7 @@ func aggregateValue(_ operation: AggregationOperation) -> Double
 
 ## Mentions
 
-- [Evaluating language model responses](evaluating-language-model-responses.md)
+- [Evaluating language model responses](../evaluating-language-model-responses.md)
 
 ## Parameters
 
@@ -30,19 +31,20 @@ func aggregateValue(_ operation: AggregationOperation) -> Double
 
 ## See Also
 
-- [var summary: DataFrame](evaluationresult/summary.md)
+### Accessing results
+- [var summary: DataFrame](./summary.md)
   Aggregated statistics for each metric in the evaluation.
-- [var detailed: DataFrame](evaluationresult/detailed.md)
+- [var detailed: DataFrame](./detailed.md)
   Individual results for each sample in the evaluation.
-- [let evaluationInfo: [String : String]](evaluationresult/evaluationinfo.md)
+- [let evaluationInfo: [String : String]](./evaluationinfo.md)
   User-defined information about this evaluation, such as the model name, prompt version, or dataset.
-- [let evaluationID: String](evaluationresult/evaluationid.md)
+- [let evaluationID: String](./evaluationid.md)
   The identifier of the evaluation that produced these results.
-- [let resultID: UUID](evaluationresult/resultid.md)
+- [let resultID: UUID](./resultid.md)
   A unique identifier for this particular result.
-- [var reportMetadata: [String : any Sendable]](evaluationresult/reportmetadata.md)
+- [var reportMetadata: [String : any Sendable]](./reportmetadata.md)
   Framework-generated metadata used for report presentation.
-- [EvaluationResult.DataFrameKind](evaluationresult/dataframekind.md)
+- [EvaluationResult.DataFrameKind](./dataframekind.md)
   The kind of DataFrame to convert for JSON serialization.
 
 

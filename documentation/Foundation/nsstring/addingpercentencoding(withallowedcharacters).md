@@ -1,7 +1,8 @@
 # addingPercentEncoding(withAllowedCharacters:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new string made from the receiver by replacing all characters not in the specified set with percent-encoded characters.
 
@@ -20,6 +21,10 @@ Returns a new string made from the receiver by replacing all characters not in t
 func addingPercentEncoding(withAllowedCharacters allowedCharacters: CharacterSet) -> String?
 ```
 
+```objc
+- (NSString *) stringByAddingPercentEncodingWithAllowedCharacters:(NSCharacterSet *) allowedCharacters;
+```
+
 #### Return Value
 
 Returns the encoded string, or `nil` if the transformation is not possible.
@@ -34,15 +39,17 @@ UTF-8 encoding is used to determine the correct percent-encoded characters. Any 
 
 ## Parameters
 
-- `allowedCharacters`: The characters not replaced in the string. Typically, you specify one of the predefined character sets for a particular URL component, such as [`urlPathAllowed`](nscharacterset/urlpathallowed.md) or [`urlQueryAllowed`](nscharacterset/urlqueryallowed.md).
+- `allowedCharacters`: The characters not replaced in the string. Typically, you specify one of the predefined character sets for a particular URL component, such as [`urlPathAllowed`](../nscharacterset/urlpathallowed.md) or [`urlQueryAllowed`](../nscharacterset/urlqueryallowed.md).
 
 ## See Also
 
-- [func replacingPercentEscapes(using: UInt) -> String?](nsstring/replacingpercentescapes(using:).md)
+### Related Documentation
+- [func replacingPercentEscapes(using: UInt) -> String?](./replacingpercentescapes%28using%29.md)
   Returns a new string made by replacing in the receiver all percent escapes with the matching characters as determined by a given encoding.
-- [func addingPercentEscapes(using: UInt) -> String?](nsstring/addingpercentescapes(using:).md)
+- [func addingPercentEscapes(using: UInt) -> String?](./addingpercentescapes%28using%29.md)
   Returns a representation of the receiver using a given encoding to determine the percent escapes necessary to convert the receiver into a legal URL string.
-- [var removingPercentEncoding: String?](nsstring/removingpercentencoding.md)
+### Working with URL Strings
+- [var removingPercentEncoding: String?](./removingpercentencoding.md)
   Returns a new string made from the receiver by replacing all percent encoded sequences with the matching UTF-8 characters.
 
 

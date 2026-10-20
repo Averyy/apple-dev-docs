@@ -1,21 +1,22 @@
 # AppAccessibilityDeclarationsLinkagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object AppAccessibilityDeclarationsLinkagesResponse
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAccessibilityDeclarationsLinkagesResponse.Data](appaccessibilitydeclarationslinkagesresponse/data-data.dictionary.md)
+- [object AppAccessibilityDeclarationsLinkagesResponse.Data](./appaccessibilitydeclarationslinkagesresponse/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,17 +26,18 @@ object AppAccessibilityDeclarationsLinkagesResponse
 
 ## See Also
 
-- [object AccessibilityDeclaration](accessibilitydeclaration.md)
+### Objects
+- [object AccessibilityDeclaration](./accessibilitydeclaration.md)
   An app’s self-reported accessibility features and conformance information submitted for App Store review.
-- [object AccessibilityDeclarationsResponse](accessibilitydeclarationsresponse.md)
+- [object AccessibilityDeclarationsResponse](./accessibilitydeclarationsresponse.md)
   A response containing a list of accessibility declarations.
-- [object AccessibilityDeclarationCreateRequest](accessibilitydeclarationcreaterequest.md)
+- [object AccessibilityDeclarationCreateRequest](./accessibilitydeclarationcreaterequest.md)
   The request body you use to create an accessibility declaration for an app.
-- [object AccessibilityDeclarationResponse](accessibilitydeclarationresponse.md)
+- [object AccessibilityDeclarationResponse](./accessibilitydeclarationresponse.md)
   A response containing a single accessibility declaration for an app.
-- [object AccessibilityDeclarationUpdateRequest](accessibilitydeclarationupdaterequest.md)
+- [object AccessibilityDeclarationUpdateRequest](./accessibilitydeclarationupdaterequest.md)
   The request body you use to update an accessibility declaration for an app.
-- [type DeviceFamily](devicefamily.md)
+- [type DeviceFamily](./devicefamily.md)
   String that represents a device family.
 
 

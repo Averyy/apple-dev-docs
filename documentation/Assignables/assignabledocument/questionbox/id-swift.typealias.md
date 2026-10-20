@@ -1,7 +1,8 @@
 # AssignableDocument.QuestionBox.ID
 
 **Framework**: Assignables  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type representing the stable identity of this box.
 
@@ -9,7 +10,7 @@ A type representing the stable identity of this box.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

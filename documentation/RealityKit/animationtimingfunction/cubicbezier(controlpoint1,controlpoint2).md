@@ -1,7 +1,8 @@
 # cubicBezier(controlPoint1:controlPoint2:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a timing function that accelerates and then decelerates towards the target value with the cubic bezier shape specified by two control points.
 
@@ -11,7 +12,7 @@ Creates a timing function that accelerates and then decelerates towards the targ
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,15 +31,16 @@ The cubic bezier timing function.
 
 ## See Also
 
-- [static var `default`: AnimationTimingFunction](animationtimingfunction/default.md)
+### Creating timing functions
+- [static var `default`: AnimationTimingFunction](./default.md)
   A timing function that produces the default curve for the transition.
-- [static var easeIn: AnimationTimingFunction](animationtimingfunction/easein.md)
+- [static var easeIn: AnimationTimingFunction](./easein.md)
   A timing function that produces a gradual starting transition.
-- [static var easeInOut: AnimationTimingFunction](animationtimingfunction/easeinout.md)
+- [static var easeInOut: AnimationTimingFunction](./easeinout.md)
   A timing function that produces a gradual starting and ending transition.
-- [static var easeOut: AnimationTimingFunction](animationtimingfunction/easeout.md)
+- [static var easeOut: AnimationTimingFunction](./easeout.md)
   A timing function that produces a gradual ending transition.
-- [static var linear: AnimationTimingFunction](animationtimingfunction/linear.md)
+- [static var linear: AnimationTimingFunction](./linear.md)
   A timing function that produces a linear transition.
 
 

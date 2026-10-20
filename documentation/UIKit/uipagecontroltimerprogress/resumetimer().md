@@ -1,7 +1,8 @@
 # resumeTimer()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resume the timer if it is not currently active.
 
@@ -16,6 +17,10 @@ Resume the timer if it is not currently active.
 
 ```swift
 func resumeTimer()
+```
+
+```objc
+- (void) resumeTimer;
 ```
 
 

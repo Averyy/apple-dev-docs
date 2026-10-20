@@ -1,7 +1,8 @@
 # decode(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts from encoded to encoding-independent representation
 

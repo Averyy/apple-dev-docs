@@ -1,7 +1,8 @@
 # command(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves the command associated with the given event without performing it.
 
@@ -12,6 +13,10 @@ Retrieves the command associated with the given event without performing it.
 
 ```swift
 func command(for event: NSEvent) -> WKWebExtension.Command?
+```
+
+```objc
+- (WKWebExtensionCommand *) commandForEvent:(NSEvent *) event;
 ```
 
 #### Return Value

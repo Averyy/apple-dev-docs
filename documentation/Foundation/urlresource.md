@@ -1,7 +1,8 @@
 # URLResource
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A resource located at a particular file URL within a bundle.
 
@@ -22,44 +23,45 @@ struct URLResource
 
 #### Overview
 
-This type is similar to [`LocalizedStringResource`](localizedstringresource.md) in its ability to provide access to a resource in a bundle, possibly from another process. Use the [`URL`](url.md) initializer [`init(resource:)`](url/init(resource:).md) to resolve the resource.
+This type is similar to [`LocalizedStringResource`](./localizedstringresource.md) in its ability to provide access to a resource in a bundle, possibly from another process. Use the [`URL`](./url.md) initializer [`init(resource:)`](./url/init%28resource%29.md) to resolve the resource.
 
 ## Topics
 
 ### Creating a URL resource
-- [init(name: String, subdirectory: String?, locale: Locale, bundle: Bundle)](urlresource/init(name:subdirectory:locale:bundle:).md)
+- [init(name: String, subdirectory: String?, locale: Locale, bundle: Bundle)](./urlresource/init%28name,subdirectory,locale,bundle%29.md)
   Creates a URL resource from the given bundle, name, and subdirectory, optionally specifying a locale.
 ### Accessing resource properties
-- [let bundle: Bundle](urlresource/bundle.md)
+- [let bundle: Bundle](./urlresource/bundle.md)
   The bundle containing the resource.
-- [let name: String](urlresource/name.md)
+- [let name: String](./urlresource/name.md)
   The name of the resource in the bundle.
-- [let subdirectory: String?](urlresource/subdirectory.md)
+- [let subdirectory: String?](./urlresource/subdirectory.md)
   The subdirectory, if any, of the resource.
-- [var locale: Locale](urlresource/locale.md)
+- [var locale: Locale](./urlresource/locale.md)
   The bundle containing the resource.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Locale](locale.md)
+### Localization
+- [struct Locale](./locale.md)
   Information about linguistic, cultural, and technological conventions for use in formatting data for presentation.
-- [class NSOrthography](nsorthography.md)
+- [class NSOrthography](./nsorthography.md)
   A description of the linguistic content of natural language text, typically used for spelling and grammar checking.
-- [func NSLocalizedString(String, tableName: String?, bundle: Bundle, value: String, comment: String) -> String](nslocalizedstring(_:tablename:bundle:value:comment:).md)
+- [func NSLocalizedString(String, tableName: String?, bundle: Bundle, value: String, comment: String) -> String](./nslocalizedstring%28_,tablename,bundle,value,comment%29.md)
   Returns a localized string from a table that Xcode generates for you when exporting localizations.
-- [struct LocalizedStringResource](localizedstringresource.md)
+- [struct LocalizedStringResource](./localizedstringresource.md)
   A reference to a localizable string, accessible from another process.
-- [protocol CustomLocalizedStringResourceConvertible](customlocalizedstringresourceconvertible.md)
+- [protocol CustomLocalizedStringResourceConvertible](./customlocalizedstringresourceconvertible.md)
   A type that provides an out-of-process localizable description.
 
 

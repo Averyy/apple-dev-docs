@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color of the composition.
 
@@ -21,13 +22,14 @@ var backgroundColor: CGColor?
 
 ## See Also
 
-- [var enablePostProcessing: Bool](avvideocompositioninstruction-swift.class/configuration/enablepostprocessing.md)
+### Inspecting the configuration
+- [var enablePostProcessing: Bool](./enablepostprocessing.md)
   A Boolean value that indicates whether the composition enables post-processing.
-- [var layerInstructions: [AVVideoCompositionLayerInstruction]](avvideocompositioninstruction-swift.class/configuration/layerinstructions.md)
+- [var layerInstructions: [AVVideoCompositionLayerInstruction]](./layerinstructions.md)
   Instructions that specify how to layer and compose video frames from source tracks.
-- [var requiredSourceSampleDataTrackIDs: [CMPersistentTrackID]](avvideocompositioninstruction-swift.class/configuration/requiredsourcesampledatatrackids.md)
+- [var requiredSourceSampleDataTrackIDs: [CMPersistentTrackID]](./requiredsourcesampledatatrackids.md)
   The identifiers of source sample data tracks that the compositor requires to compose frames for the instruction.
-- [var timeRange: CMTimeRange](avvideocompositioninstruction-swift.class/configuration/timerange.md)
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range to which the instruction applies.
 
 

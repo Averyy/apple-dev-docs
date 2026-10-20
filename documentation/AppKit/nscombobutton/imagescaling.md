@@ -1,7 +1,8 @@
 # imageScaling
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scaling behavior to apply to the button’s image.
 
@@ -14,19 +15,24 @@ The scaling behavior to apply to the button’s image.
 var imageScaling: NSImageScaling { get set }
 ```
 
+```objc
+@property NSImageScaling imageScaling;
+```
+
 #### Discussion
 
-The default value of this property is [`NSImageScaling.scaleProportionallyDown`](nsimagescaling/scaleproportionallydown.md).
+The default value of this property is [`NSImageScaling.scaleProportionallyDown`](../nsimagescaling/scaleproportionallydown.md).
 
 ## See Also
 
-- [var style: NSComboButton.Style](nscombobutton/style-swift.property.md)
+### Configuring the Button Appearance
+- [var style: NSComboButton.Style](./style-swift.property.md)
   The appearance setting that determines how the button presents its menu .
-- [NSComboButton.Style](nscombobutton/style-swift.enum.md)
+- [NSComboButton.Style](./style-swift.enum.md)
   Constants that indicate how a combo button presents its menu.
-- [var title: String](nscombobutton/title.md)
+- [var title: String](./title.md)
   The localized string that the button displays.
-- [var image: NSImage?](nscombobutton/image.md)
+- [var image: NSImage?](./image.md)
   The image that the button displays.
 
 

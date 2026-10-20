@@ -1,7 +1,8 @@
 # gameSaveSyncingAlert(directory:finishedLoading:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a modal view while the game synced directory loads.
 

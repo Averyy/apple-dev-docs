@@ -1,17 +1,22 @@
 # copyRemoteFile(_:toLocalPath:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copy a remote file to a local path
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func copyRemoteFile(_ inRemoteFileName: String!, toLocalPath inLocalPathAndName: String!) -> OBEXError
+```
+
+```objc
+- (OBEXError) copyRemoteFile:(NSString *) inRemoteFileName toLocalPath:(NSString *) inLocalPathAndName;
 ```
 
 #### Return Value

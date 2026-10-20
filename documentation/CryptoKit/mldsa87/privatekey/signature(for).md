@@ -1,7 +1,8 @@
 # signature(for:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a MLDSA87 signature.
 
@@ -30,7 +31,8 @@ The MLDSA87 signature. This method throws if CryptoKit encounters an error produ
 
 ## See Also
 
-- [func signature<D, C>(for: D, context: C) throws -> Data](mldsa87/privatekey/signature(for:context:).md)
+### Signing data
+- [func signature<D, C>(for: D, context: C) throws -> Data](./signature%28for,context%29.md)
   Generates a MLDSA87 signature, with context.
 
 

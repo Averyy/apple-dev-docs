@@ -1,7 +1,8 @@
 # messages(of:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the asynchronous sequence of messages that match the app-specific type.
 
@@ -21,7 +22,7 @@ final func messages<Message>(of type: Message.Type) -> GroupSessionMessenger.Mes
 
 #### Discussion
 
-Call this method to receive the messages that other participants send to the group. This method returns a [`GroupSessionMessenger.Messages`](groupsessionmessenger/messages.md) structure, which conforms to the `AsyncSequence` protocol. This sequence contains all, some, or none of the messages sent over time. You retrieve messages by iterating over them using an asynchronous `for`-`in` loop, as shown in the following example:
+Call this method to receive the messages that other participants send to the group. This method returns a [`GroupSessionMessenger.Messages`](./messages.md) structure, which conforms to the `AsyncSequence` protocol. This sequence contains all, some, or none of the messages sent over time. You retrieve messages by iterating over them using an asynchronous `for`-`in` loop, as shown in the following example:
 
 ```swift
 let sessionMessenger = GroupSessionMessenger(session: groupSession)
@@ -39,11 +40,12 @@ async {
 
 ## See Also
 
-- [func messages(of: Data.Type) -> GroupSessionMessenger.Messages<Data>](groupsessionmessenger/messages(of:)-626qo.md)
+### Receiving data from other participants
+- [func messages(of: Data.Type) -> GroupSessionMessenger.Messages<Data>](./messages%28of%29-626qo.md)
   Returns the asynchronous sequence of messages that contain a generic data object.
-- [GroupSessionMessenger.Messages](groupsessionmessenger/messages.md)
+- [GroupSessionMessenger.Messages](./messages.md)
   An asynchronous sequence of messages sent to the session.
-- [GroupSessionMessenger.MessageContext](groupsessionmessenger/messagecontext.md)
+- [GroupSessionMessenger.MessageContext](./messagecontext.md)
   A structure that contains additional information about an incoming message, such as which device sent it.
 
 

@@ -1,7 +1,8 @@
 # Calendar.Identifier.islamicCivil
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifier for the Islamic civil calendar.
 
@@ -22,35 +23,36 @@ case islamicCivil
 
 ## See Also
 
-- [Calendar.Identifier.buddhist](calendar/identifier-swift.enum/buddhist.md)
+### Identifiers
+- [Calendar.Identifier.buddhist](./buddhist.md)
   Identifier for the Buddhist calendar.
-- [Calendar.Identifier.chinese](calendar/identifier-swift.enum/chinese.md)
+- [Calendar.Identifier.chinese](./chinese.md)
   Identifier for the Chinese calendar.
-- [Calendar.Identifier.coptic](calendar/identifier-swift.enum/coptic.md)
+- [Calendar.Identifier.coptic](./coptic.md)
   Identifier for the Coptic calendar.
-- [Calendar.Identifier.ethiopicAmeteAlem](calendar/identifier-swift.enum/ethiopicametealem.md)
+- [Calendar.Identifier.ethiopicAmeteAlem](./ethiopicametealem.md)
   Identifier for the Ethiopic (Amete Alem) calendar.
-- [Calendar.Identifier.ethiopicAmeteMihret](calendar/identifier-swift.enum/ethiopicametemihret.md)
+- [Calendar.Identifier.ethiopicAmeteMihret](./ethiopicametemihret.md)
   Identifier for the Ethiopic (Amete Mihret) calendar.
-- [Calendar.Identifier.gregorian](calendar/identifier-swift.enum/gregorian.md)
+- [Calendar.Identifier.gregorian](./gregorian.md)
   Identifier for the Gregorian calendar.
-- [Calendar.Identifier.hebrew](calendar/identifier-swift.enum/hebrew.md)
+- [Calendar.Identifier.hebrew](./hebrew.md)
   Identifier for the Hebrew calendar.
-- [Calendar.Identifier.indian](calendar/identifier-swift.enum/indian.md)
+- [Calendar.Identifier.indian](./indian.md)
   Identifier for the Indian calendar.
-- [Calendar.Identifier.islamic](calendar/identifier-swift.enum/islamic.md)
+- [Calendar.Identifier.islamic](./islamic.md)
   Identifier for the Islamic calendar.
-- [Calendar.Identifier.islamicTabular](calendar/identifier-swift.enum/islamictabular.md)
+- [Calendar.Identifier.islamicTabular](./islamictabular.md)
   Identifier for the tabular Islamic calendar.
-- [Calendar.Identifier.islamicUmmAlQura](calendar/identifier-swift.enum/islamicummalqura.md)
+- [Calendar.Identifier.islamicUmmAlQura](./islamicummalqura.md)
   Identifier for the Islamic Umm al-Qura calendar, as used in Saudi Arabia.
-- [Calendar.Identifier.iso8601](calendar/identifier-swift.enum/iso8601.md)
+- [Calendar.Identifier.iso8601](./iso8601.md)
   Identifier for the ISO8601 calendar.
-- [Calendar.Identifier.japanese](calendar/identifier-swift.enum/japanese.md)
+- [Calendar.Identifier.japanese](./japanese.md)
   Identifier for the Japanese calendar.
-- [Calendar.Identifier.persian](calendar/identifier-swift.enum/persian.md)
+- [Calendar.Identifier.persian](./persian.md)
   Identifier for the Persian calendar.
-- [Calendar.Identifier.republicOfChina](calendar/identifier-swift.enum/republicofchina.md)
+- [Calendar.Identifier.republicOfChina](./republicofchina.md)
   Identifier for the Republic of China calendar.
 
 

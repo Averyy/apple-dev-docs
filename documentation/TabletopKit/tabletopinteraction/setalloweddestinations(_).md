@@ -1,12 +1,13 @@
 # setAllowedDestinations(_:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets which equipment the interaction can target.
 
 **Availability**:
-- visionOS 2.0+
+- visionOS 2.0+ - Deprecated in 2.2 (renamed: setConfiguration)
 
 ## Declaration
 
@@ -16,12 +17,13 @@ func setAllowedDestinations(_ destination: TabletopInteraction.AllowedDestinatio
 
 ## See Also
 
-- [func setConfiguration(TabletopInteraction.Configuration)](tabletopinteraction/setconfiguration(_:).md)
+### Managing the interaction destination
+- [func setConfiguration(TabletopInteraction.Configuration)](./setconfiguration%28_%29.md)
   Sets the configuration of this interaction.
-- [TabletopInteraction.Configuration](tabletopinteraction/configuration.md)
-- [TabletopInteraction.AllowedDestinations](tabletopinteraction/alloweddestinations.md)
+- [TabletopInteraction.Configuration](./configuration.md)
+- [TabletopInteraction.AllowedDestinations](./alloweddestinations.md)
   The possible destinations of equipment in an interaction.
-- [TabletopInteraction.Destination](tabletopinteraction/destination.md)
+- [TabletopInteraction.Destination](./destination.md)
   An object that represents the destination position and orientation of equipment in an interaction.
 
 

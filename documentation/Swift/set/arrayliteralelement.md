@@ -1,7 +1,8 @@
 # Set.ArrayLiteralElement
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the elements of an array literal.
 
@@ -19,6 +20,8 @@ The type of the elements of an array literal.
 ```swift
 typealias ArrayLiteralElement = Element
 ```
+
+Available when `Element` conforms to `Hashable`.
 
 
 ---

@@ -1,14 +1,15 @@
 # ICReturnThumbnailError.Code
 
 **Framework**: ImageCaptureCore  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -16,47 +17,52 @@
 enum Code
 ```
 
+```c
+enum ICReturnThumbnailErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error Cases
-- [ICReturnThumbnailError.Code.alreadyFetching](icreturnthumbnailerror/code/alreadyfetching.md)
+- [ICReturnThumbnailError.Code.alreadyFetching](./code/alreadyfetching.md)
   Item thumbnail request is being serviced.
-- [ICReturnThumbnailError.Code.canceled](icreturnthumbnailerror/code/canceled.md)
+- [ICReturnThumbnailError.Code.canceled](./code/canceled.md)
   Item thumbnail request has been canceled.
-- [ICReturnThumbnailError.Code.invalid](icreturnthumbnailerror/code/invalid.md)
+- [ICReturnThumbnailError.Code.invalid](./code/invalid.md)
   Item thumbnail request completed with invalid result.
-- [ICReturnThumbnailError.Code.notAvailable](icreturnthumbnailerror/code/notavailable.md)
+- [ICReturnThumbnailError.Code.notAvailable](./code/notavailable.md)
   Item does not have thumbnail available.
-- [ICReturnThumbnailError.Code.alreadyFetching](icreturnthumbnailerror/code/alreadyfetching.md)
+- [ICReturnThumbnailError.Code.alreadyFetching](./code/alreadyfetching.md)
   Item thumbnail request is being serviced.
-- [ICReturnThumbnailError.Code.canceled](icreturnthumbnailerror/code/canceled.md)
+- [ICReturnThumbnailError.Code.canceled](./code/canceled.md)
   Item thumbnail request has been canceled.
-- [ICReturnThumbnailError.Code.invalid](icreturnthumbnailerror/code/invalid.md)
+- [ICReturnThumbnailError.Code.invalid](./code/invalid.md)
   Item thumbnail request completed with invalid result.
-- [ICReturnThumbnailError.Code.notAvailable](icreturnthumbnailerror/code/notavailable.md)
+- [ICReturnThumbnailError.Code.notAvailable](./code/notavailable.md)
   Item does not have thumbnail available.
 ### Initializers
-- [init?(rawValue: Int)](icreturnthumbnailerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var alreadyFetching: ICReturnThumbnailError.Code](icreturnthumbnailerror/alreadyfetching.md)
+### Error Codes
+- [static var alreadyFetching: ICReturnThumbnailError.Code](./alreadyfetching.md)
   Item thumbnail request is being serviced.
-- [static var canceled: ICReturnThumbnailError.Code](icreturnthumbnailerror/canceled.md)
+- [static var canceled: ICReturnThumbnailError.Code](./canceled.md)
   Item thumbnail request has been canceled.
-- [static var invalid: ICReturnThumbnailError.Code](icreturnthumbnailerror/invalid.md)
+- [static var invalid: ICReturnThumbnailError.Code](./invalid.md)
   Item thumbnail request completed with invalid result.
-- [static var notAvailable: ICReturnThumbnailError.Code](icreturnthumbnailerror/notavailable.md)
+- [static var notAvailable: ICReturnThumbnailError.Code](./notavailable.md)
   Item does not have thumbnail available.
 
 

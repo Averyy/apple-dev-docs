@@ -1,7 +1,8 @@
 # playerLayer
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The presenting player layer.
 
@@ -19,13 +20,18 @@ The presenting player layer.
 var playerLayer: AVPlayerLayer? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVPlayerLayer * playerLayer;
+```
+
 #### Discussion
 
 This value is `nil` if the content source doesn’t represent a player layer.
 
 ## See Also
 
-- [var sampleBufferDisplayLayer: AVSampleBufferDisplayLayer?](avpictureinpicturecontroller/contentsource-swift.class/samplebufferdisplaylayer.md)
+### Accessing the presentation layer
+- [var sampleBufferDisplayLayer: AVSampleBufferDisplayLayer?](./samplebufferdisplaylayer.md)
   The presenting sample buffer display layer.
 
 

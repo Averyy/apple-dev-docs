@@ -1,7 +1,8 @@
 # ARKitSession.Events.Element
 
 **Framework**: ARKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type representing a sequence’s elements.
 

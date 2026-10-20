@@ -1,7 +1,8 @@
 # kSCPropNetLinkDetaching
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Link key `Detaching`, whose value is of type `CFBoolean`.
 
@@ -14,9 +15,14 @@ The Link key `Detaching`, whose value is of type `CFBoolean`.
 let kSCPropNetLinkDetaching: CFString
 ```
 
+```c
+extern CFStringRef const kSCPropNetLinkDetaching;
+```
+
 ## See Also
 
-- [let kSCPropNetLinkActive: CFString](kscpropnetlinkactive-swift.var.md)
+### Constants
+- [let kSCPropNetLinkActive: CFString](./kscpropnetlinkactive-swift.var.md)
   The Link key `Active`, whose value is of type `CFBoolean`.
 
 

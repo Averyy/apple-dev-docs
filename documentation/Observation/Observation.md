@@ -1,7 +1,8 @@
 # Observation
 
 **Framework**: Observation  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Make responsive apps that update the presentation when underlying data changes.
 
@@ -24,7 +25,7 @@ The Observation frameworks provides the following capabilities:
 - Tracking changes within an instance of an observable type
 - Observing and utilizing those changes elsewhere, such as in an app’s user interface
 
-To declare a type as observable, attach the [`Observable()`](observable().md) macro to the type declaration. This macro declares and implements conformance to the [`Observable`](observable.md) protocol to the type at compile time.
+To declare a type as observable, attach the [`Observable()`](./observable%28%29.md) macro to the type declaration. This macro declares and implements conformance to the [`Observable`](./observable.md) protocol to the type at compile time.
 
 ```swift
 @Observable
@@ -39,7 +40,7 @@ class Car {
 }
 ```
 
-To track changes, use the [`withObservationTracking(_:onChange:)`](withobservationtracking(_:onchange:).md) function. For example, in the following code, the function calls the `onChange` closure when a car’s name changes. However, it doesn’t call the closure when a car’s `needsRepair` flag changes. That’s because the function only tracks properties read in its `apply` closure, and the closure doesn’t read the `needsRepair` property.
+To track changes, use the [`withObservationTracking(_:onChange:)`](./withobservationtracking%28_,onchange%29.md) function. For example, in the following code, the function calls the `onChange` closure when a car’s name changes. However, it doesn’t call the closure when a car’s `needsRepair` flag changes. That’s because the function only tracks properties read in its `apply` closure, and the closure doesn’t read the `needsRepair` property.
 
 ```swift
 func render() {
@@ -56,31 +57,31 @@ func render() {
 ## Topics
 
 ### Observable conformance
-- [macro Observable()](observable().md)
+- [macro Observable()](./observable%28%29.md)
   Defines and implements conformance of the Observable protocol.
-- [protocol Observable](observable.md)
+- [protocol Observable](./observable.md)
   A type that emits notifications to observers when underlying data changes.
 ### Change tracking
-- [func withObservationTracking<T>(() -> T, onChange: @autoclosure () -> () -> Void) -> T](withobservationtracking(_:onchange:).md)
+- [func withObservationTracking<T>(() -> T, onChange: @autoclosure () -> () -> Void) -> T](./withobservationtracking%28_,onchange%29.md)
   Tracks access to properties.
-- [struct ObservationRegistrar](observationregistrar.md)
+- [struct ObservationRegistrar](./observationregistrar.md)
   Provides storage for tracking and access to data changes.
 ### Observation in SwiftUI
-- [Managing model data in your app](../swiftui/managing-model-data-in-your-app.md)
+- [Managing model data in your app](../SwiftUI/managing-model-data-in-your-app.md)
   Create connections between your app’s data model and views.
-- [Migrating from the Observable Object protocol to the Observable macro](../swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
+- [Migrating from the Observable Object protocol to the Observable macro](../SwiftUI/migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
 ### Structures
-- [struct ObservationTracking](observationtracking.md)
-- [struct Observations](observations.md)
+- [struct ObservationTracking](./observationtracking.md)
+- [struct Observations](./observations.md)
   An asynchronous sequence generated from a closure that tracks the transactional changes of `@Observable` types.
 ### Functions
-- [func withContinuousObservation(options: ObservationTracking.Options, apply: (borrowing ObservationTracking.Event) -> Void) -> ObservationTracking.Token](withcontinuousobservation(options:apply:).md)
-- [func withObservationTracking<Result, Failure>(options: ObservationTracking.Options, () throws(Failure) -> Result, onChange: (borrowing ObservationTracking.Event) -> Void) throws(Failure) -> Result](withobservationtracking(options:_:onchange:).md)
+- [func withContinuousObservation(options: ObservationTracking.Options, apply: (borrowing ObservationTracking.Event) -> Void) -> ObservationTracking.Token](./withcontinuousobservation%28options,apply%29.md)
+- [func withObservationTracking<Result, Failure>(options: ObservationTracking.Options, () throws(Failure) -> Result, onChange: (borrowing ObservationTracking.Event) -> Void) throws(Failure) -> Result](./withobservationtracking%28options,_,onchange%29.md)
 ### Macros
-- [macro ObservationIgnored()](observationignored().md)
+- [macro ObservationIgnored()](./observationignored%28%29.md)
   Disables observation tracking of a property.
-- [macro ObservationTracked()](observationtracked().md)
+- [macro ObservationTracked()](./observationtracked%28%29.md)
   Synthesizes a property for accessors.
 
 

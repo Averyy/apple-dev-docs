@@ -1,7 +1,8 @@
 # buffer
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Metal buffer that contains a list of vectors.
 
@@ -15,17 +16,22 @@ A Metal buffer that contains a list of vectors.
 var buffer: any MTLBuffer { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) id<MTLBuffer> buffer;
+```
+
 #### Discussion
 
-Each vector in the buffer is of the type defined by [`format`](argeometrysource/format.md). Every vector may itself contain multiple scalars, defined by [`componentsPerVector`](argeometrysource/componentspervector.md).
+Each vector in the buffer is of the type defined by [`format`](./format.md). Every vector may itself contain multiple scalars, defined by [`componentsPerVector`](./componentspervector.md).
 
-The buffer’s [`storageMode`](https://developer.apple.com/documentation/metal/mtlresource/storagemode) is [`MTLStorageMode.shared`](https://developer.apple.com/documentation/metal/mtlstoragemode/shared) which allows it to be accessed on both, the CPU, and GPU.
+The buffer’s [`storageMode`](../../Metal/mtlresource/storagemode.md) is [`MTLStorageMode.shared`](../../Metal/mtlstoragemode/shared.md) which allows it to be accessed on both, the CPU, and GPU.
 
 ## See Also
 
-- [subscript(Int32) -> (Float, Float, Float)](argeometrysource/subscript(_:)-3v98f.md)
+### Accessing Geometry
+- [subscript(Int32) -> (Float, Float, Float)](./subscript%28_%29-3v98f.md)
   Provides the source float triplet at the subscripted index.
-- [subscript(Int32) -> CUnsignedChar](argeometrysource/subscript(_:)-7jf4y.md)
+- [subscript(Int32) -> CUnsignedChar](./subscript%28_%29-7jf4y.md)
   Provides the number at the subscripted index.
 
 

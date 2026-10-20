@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument.

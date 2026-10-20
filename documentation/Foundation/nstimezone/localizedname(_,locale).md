@@ -1,7 +1,8 @@
 # localizedName(_:locale:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the localized name of the time zone.
 
@@ -20,6 +21,10 @@ Returns the localized name of the time zone.
 func localizedName(_ style: NSTimeZone.NameStyle, locale: Locale?) -> String?
 ```
 
+```objc
+- (NSString *) localizedName:(NSTimeZoneNameStyle) style locale:(NSLocale *) locale;
+```
+
 #### Return Value
 
 The name of the receiver localized for `locale` using `style`.
@@ -31,7 +36,8 @@ The name of the receiver localized for `locale` using `style`.
 
 ## See Also
 
-- [var description: String](nstimezone/description.md)
+### Describing Time Zones
+- [var description: String](./description.md)
   A textual description of the time zone including the name, abbreviation, offset from GMT, and whether or not daylight saving time is currently in effect.
 
 

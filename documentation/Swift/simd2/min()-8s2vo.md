@@ -1,7 +1,8 @@
 # min()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The least element in the vector.
 
@@ -19,6 +20,8 @@ The least element in the vector.
 ```swift
 func min() -> Self.Scalar
 ```
+
+Available when `Scalar` conforms to `Comparable`.
 
 
 ---

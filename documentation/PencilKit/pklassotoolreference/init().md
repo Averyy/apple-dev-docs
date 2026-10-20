@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a lasso tool object for selecting content on a canvas view.
 
@@ -16,6 +17,10 @@ Creates a lasso tool object for selecting content on a canvas view.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 #### Return Value

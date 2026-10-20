@@ -1,7 +1,8 @@
 # acceptsFirstResponder
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 26.0+
@@ -15,7 +16,8 @@
 
 ## See Also
 
-- [var canBecomeFirstResponder: Bool](papermarkupviewcontroller/canbecomefirstresponder.md)
+### Managing first responder status
+- [var canBecomeFirstResponder: Bool](./canbecomefirstresponder.md)
 
 
 ---

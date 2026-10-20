@@ -1,7 +1,8 @@
 # default(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the default device that captures the specified media type.
 
@@ -19,6 +20,10 @@ Returns the default device that captures the specified media type.
 class func `default`(for mediaType: AVMediaType) -> AVCaptureDevice?
 ```
 
+```objc
++ (AVCaptureDevice *) defaultDeviceWithMediaType:(AVMediaType) mediaType;
+```
+
 #### Return Value
 
 The default device, or `nil` if no device with that media type exists.
@@ -29,19 +34,20 @@ The default device, or `nil` if no device with that media type exists.
 
 ## See Also
 
-- [AVCaptureDevice.DiscoverySession](avcapturedevice/discoverysession.md)
+### Finding and monitoring devices
+- [AVCaptureDevice.DiscoverySession](./discoverysession.md)
   An object that finds capture devices that match specific search criteria.
-- [class func `default`(AVCaptureDevice.DeviceType, for: AVMediaType?, position: AVCaptureDevice.Position) -> AVCaptureDevice?](avcapturedevice/default(_:for:position:).md)
+- [class func `default`(AVCaptureDevice.DeviceType, for: AVMediaType?, position: AVCaptureDevice.Position) -> AVCaptureDevice?](./default%28_,for,position%29.md)
   Returns the default device for the specified device type, media type, and position.
-- [init?(uniqueID: String)](avcapturedevice/init(uniqueid:).md)
+- [init?(uniqueID: String)](./init%28uniqueid%29.md)
   Creates an object that represents a device with the specified identifier.
-- [class let wasConnectedNotification: NSNotification.Name](avcapturedevice/wasconnectednotification.md)
+- [class let wasConnectedNotification: NSNotification.Name](./wasconnectednotification.md)
   A notification the system posts when a new capture device becomes available.
-- [class let wasDisconnectedNotification: NSNotification.Name](avcapturedevice/wasdisconnectednotification.md)
+- [class let wasDisconnectedNotification: NSNotification.Name](./wasdisconnectednotification.md)
   A notification the system posts when an existing device becomes unavailable.
-- [class func devices(for: AVMediaType) -> [AVCaptureDevice]](avcapturedevice/devices(for:).md)
+- [class func devices(for: AVMediaType) -> [AVCaptureDevice]](./devices%28for%29.md)
   Returns devices capable of capturing media of the specified type.
-- [class func devices() -> [AVCaptureDevice]](avcapturedevice/devices.md)
+- [class func devices() -> [AVCaptureDevice]](./devices%28%29.md)
   Returns all available capture devices on the system.
 
 

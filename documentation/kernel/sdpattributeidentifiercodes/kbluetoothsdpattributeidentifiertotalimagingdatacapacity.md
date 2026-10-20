@@ -1,14 +1,15 @@
 # kBluetoothSDPAttributeIdentifierTotalImagingDataCapacity
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPAttributeIdentifierTotalImagingDataCapacity = 0x0313
 ```
 

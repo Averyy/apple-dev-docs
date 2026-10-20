@@ -1,7 +1,8 @@
 # WINetworkSharingError.tooManyRequests
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the accessory exceeded the maximum number of requests.
 

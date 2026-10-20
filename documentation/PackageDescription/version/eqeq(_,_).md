@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: PackageDescription  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two values are equal.
 

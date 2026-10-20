@@ -1,7 +1,8 @@
 # Shader
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A reference to a function in a Metal shader library, along with its bound uniform argument values.
 
@@ -21,9 +22,9 @@ struct Shader
 
 #### Overview
 
-Shader values can be used as filter effects on views, see the [`colorEffect(_:isEnabled:)`](view/coloreffect(_:isenabled:).md), [`distortionEffect(_:maxSampleOffset:isEnabled:)`](view/distortioneffect(_:maxsampleoffset:isenabled:).md), and [`layerEffect(_:maxSampleOffset:isEnabled:)`](view/layereffect(_:maxsampleoffset:isenabled:).md) functions.
+Shader values can be used as filter effects on views, see the [`colorEffect(_:isEnabled:)`](./view/coloreffect%28_,isenabled%29.md), [`distortionEffect(_:maxSampleOffset:isEnabled:)`](./view/distortioneffect%28_,maxsampleoffset,isenabled%29.md), and [`layerEffect(_:maxSampleOffset:isEnabled:)`](./view/layereffect%28_,maxsampleoffset,isenabled%29.md) functions.
 
-Shaders also conform to the [`ShapeStyle`](shapestyle.md) protocol, letting their MSL shader function provide per-pixel color to fill any shape or text view. For a shader function to act as a fill pattern it must have a function signature matching:
+Shaders also conform to the [`ShapeStyle`](./shapestyle.md) protocol, letting their MSL shader function provide per-pixel color to fill any shape or text view. For a shader function to act as a fill pattern it must have a function signature matching:
 
 ```swift
 [[ stitchable ]] half4 name(float2 position, args...)
@@ -34,46 +35,47 @@ where `position` is the user-space coordinates of the pixel applied to the shade
 ## Topics
 
 ### Creating a shader
-- [init(function: ShaderFunction, arguments: [Shader.Argument])](shader/init(function:arguments:).md)
+- [init(function: ShaderFunction, arguments: [Shader.Argument])](./shader/init%28function,arguments%29.md)
   Creates a new shader from a function and the uniform argument values to bind to the function.
-- [Shader.Argument](shader/argument.md)
+- [Shader.Argument](./shader/argument.md)
   A single uniform argument value to a shader function.
 ### Getting the shader function
-- [var function: ShaderFunction](shader/function.md)
+- [var function: ShaderFunction](./shader/function.md)
   The shader function called by the shader.
-- [var arguments: [Shader.Argument]](shader/arguments.md)
+- [var arguments: [Shader.Argument]](./shader/arguments.md)
   The uniform argument values passed to the shader function.
 ### Configuring the shader
-- [var dithersColor: Bool](shader/ditherscolor.md)
+- [var dithersColor: Bool](./shader/ditherscolor.md)
   For shader functions that return color values, whether the returned color has dither noise added to it, or is simply rounded to the output bit-depth. For shaders generating smooth gradients, dithering is usually necessary to prevent visible banding in the result.
 ### Structures
-- [Shader.UsageType](shader/usagetype.md)
+- [Shader.UsageType](./shader/usagetype.md)
   The different ways in which a `Shader` may be used to render.
 ### Instance Methods
-- [func compile(as: Shader.UsageType) async throws](shader/compile(as:).md)
+- [func compile(as: Shader.UsageType) async throws](./shader/compile%28as%29.md)
   Attempts to asynchronously compile a shader function, to minimize the chance of stalling when it is first used for rendering.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ShapeStyle](shapestyle.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [ShapeStyle](./shapestyle.md)
 
 ## See Also
 
-- [func colorEffect(Shader, isEnabled: Bool) -> some View](view/coloreffect(_:isenabled:).md)
+### Accessing Metal shaders
+- [func colorEffect(Shader, isEnabled: Bool) -> some View](./view/coloreffect%28_,isenabled%29.md)
   Returns a new view that applies `shader` to `self` as a filter effect on the color of each pixel.
-- [func distortionEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some View](view/distortioneffect(_:maxsampleoffset:isenabled:).md)
+- [func distortionEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some View](./view/distortioneffect%28_,maxsampleoffset,isenabled%29.md)
   Returns a new view that applies `shader` to `self` as a geometric distortion effect on the location of each pixel.
-- [func layerEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some View](view/layereffect(_:maxsampleoffset:isenabled:).md)
+- [func layerEffect(Shader, maxSampleOffset: CGSize, isEnabled: Bool) -> some View](./view/layereffect%28_,maxsampleoffset,isenabled%29.md)
   Returns a new view that applies `shader` to `self` as a filter on the raster layer created from `self`.
-- [struct ShaderFunction](shaderfunction.md)
+- [struct ShaderFunction](./shaderfunction.md)
   A reference to a function in a Metal shader library.
-- [struct ShaderLibrary](shaderlibrary.md)
+- [struct ShaderLibrary](./shaderlibrary.md)
   A Metal shader library.
 
 

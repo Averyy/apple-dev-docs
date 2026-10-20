@@ -1,7 +1,8 @@
 # titleTextAttributes(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the title’s text attributes for a given control state.
 
@@ -9,13 +10,17 @@ Returns the title’s text attributes for a given control state.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func titleTextAttributes(for state: UIControl.State) -> [NSAttributedString.Key : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) titleTextAttributesForState:(UIControlState) state;
 ```
 
 #### Return Value
@@ -32,7 +37,8 @@ The dictionary may contain key-value pairs for text attributes for the font, tex
 
 ## See Also
 
-- [func setTitleTextAttributes([NSAttributedString.Key : Any]?, for: UIControl.State)](uibaritem/settitletextattributes(_:for:).md)
+### Customizing appearance
+- [func setTitleTextAttributes([NSAttributedString.Key : Any]?, for: UIControl.State)](./settitletextattributes%28_,for%29.md)
   Sets the title’s text attributes for a given control state.
 
 

@@ -1,7 +1,8 @@
 # accessibilityAttributedScrollStatus(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an attributed string describing the content at the current offset in the scroll view.
 
@@ -18,13 +19,17 @@ Returns an attributed string describing the content at the current offset in the
 optional func accessibilityAttributedScrollStatus(for scrollView: UIScrollView) -> NSAttributedString?
 ```
 
+```objc
+- (NSAttributedString *) accessibilityAttributedScrollStatusForScrollView:(UIScrollView *) scrollView;
+```
+
 #### Return Value
 
 An attributed string describing the content.
 
 #### Discussion
 
-Your implementation of this method returns a description of the content that’s currently visible in the scroll view. Use this method (instead of the [`accessibilityScrollStatus(for:)`](uiscrollviewaccessibilitydelegate/accessibilityscrollstatus(for:).md) method) when you want to include attributes that specify which language to use when speaking the text. For more information, see [`UIAccessibilitySpeechAttributeLanguage`](uiaccessibilityspeechattributelanguage.md).
+Your implementation of this method returns a description of the content that’s currently visible in the scroll view. Use this method (instead of the [`accessibilityScrollStatus(for:)`](./accessibilityscrollstatus%28for%29.md) method) when you want to include attributes that specify which language to use when speaking the text. For more information, see [`UIAccessibilitySpeechAttributeLanguage`](../uiaccessibilityspeechattributelanguage.md).
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Your implementation of this method returns a description of the content that’s
 
 ## See Also
 
-- [func accessibilityScrollStatus(for: UIScrollView) -> String?](uiscrollviewaccessibilitydelegate/accessibilityscrollstatus(for:).md)
+### Providing descriptive information
+- [func accessibilityScrollStatus(for: UIScrollView) -> String?](./accessibilityscrollstatus%28for%29.md)
   Returns a string describing the content at the current offset in the scroll view.
 
 

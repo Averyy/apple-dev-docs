@@ -1,7 +1,8 @@
 # PlainWindowStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The plain window style.
 
@@ -17,27 +18,28 @@ struct PlainWindowStyle
 
 #### Overview
 
-You can also use [`plain`](windowstyle/plain.md) to construct this style.
+You can also use [`plain`](./windowstyle/plain.md) to construct this style.
 
 ## Topics
 
 ### Creating the window style
-- [init()](plainwindowstyle/init.md)
+- [init()](./plainwindowstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [WindowStyle](windowstyle.md)
+- [WindowStyle](./windowstyle.md)
 
 ## See Also
 
-- [struct DefaultWindowStyle](defaultwindowstyle.md)
+### Supporting types
+- [struct DefaultWindowStyle](./defaultwindowstyle.md)
   The default window style.
-- [struct HiddenTitleBarWindowStyle](hiddentitlebarwindowstyle.md)
+- [struct HiddenTitleBarWindowStyle](./hiddentitlebarwindowstyle.md)
   A window style which hides both the window’s title and the backing of the titlebar area, allowing more of the window’s content to show.
-- [struct TitleBarWindowStyle](titlebarwindowstyle.md)
+- [struct TitleBarWindowStyle](./titlebarwindowstyle.md)
   A window style which displays the title bar section of the window.
-- [struct VolumetricWindowStyle](volumetricwindowstyle.md)
+- [struct VolumetricWindowStyle](./volumetricwindowstyle.md)
   A window style that creates a 3D volumetric window.
 
 

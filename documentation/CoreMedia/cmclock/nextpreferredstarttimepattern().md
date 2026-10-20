@@ -1,7 +1,8 @@
 # nextPreferredStartTimePattern()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the pattern of preferred start times, such as for synchronization with an external genlock signal.
 

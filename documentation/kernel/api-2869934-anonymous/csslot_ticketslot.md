@@ -1,14 +1,15 @@
 # CSSLOT_TICKETSLOT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 CSSLOT_TICKETSLOT = 0x10002
 ```
 

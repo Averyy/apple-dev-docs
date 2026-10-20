@@ -1,7 +1,8 @@
 # ComputeGraphComponent.UniformHandle
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+

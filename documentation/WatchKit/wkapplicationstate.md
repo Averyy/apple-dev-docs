@@ -1,7 +1,8 @@
 # WKApplicationState
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The running states of the Watch app.
 
@@ -14,35 +15,40 @@ The running states of the Watch app.
 enum WKApplicationState
 ```
 
+```c
+enum WKApplicationState : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [WKApplicationState.active](wkapplicationstate/active.md)
+- [WKApplicationState.active](./wkapplicationstate/active.md)
   The Watch app is running in the foreground and currently receiving events.
-- [WKApplicationState.inactive](wkapplicationstate/inactive.md)
+- [WKApplicationState.inactive](./wkapplicationstate/inactive.md)
   The Watch app is running in the foreground, but is not yet responding to actions from controls or gestures.
-- [WKApplicationState.background](wkapplicationstate/background.md)
+- [WKApplicationState.background](./wkapplicationstate/background.md)
   The Watch app is running in the background.
 ### Initializers
-- [init?(rawValue: Int)](wkapplicationstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkapplicationstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var applicationState: WKApplicationState](wkapplication/applicationstate.md)
+### Managing the app state
+- [var applicationState: WKApplicationState](./wkapplication/applicationstate.md)
   The runtime state of the watchOS app.
-- [var isApplicationRunningInDock: Bool](wkapplication/isapplicationrunningindock.md)
+- [var isApplicationRunningInDock: Bool](./wkapplication/isapplicationrunningindock.md)
   A Boolean value that indicates whether the app is running in the dock.
-- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](wkapplication/schedulebackgroundrefresh(withpreferreddate:userinfo:scheduledcompletion:).md)
+- [func scheduleBackgroundRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](./wkapplication/schedulebackgroundrefresh%28withpreferreddate,userinfo,scheduledcompletion%29.md)
   Schedules a background task to refresh the app’s data.
 
 

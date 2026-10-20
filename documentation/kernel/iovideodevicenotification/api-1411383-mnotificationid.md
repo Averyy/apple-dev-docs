@@ -1,7 +1,8 @@
 # mNotificationID
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A UInt32 that identifies the kind of the notification.
 
@@ -10,21 +11,22 @@ A UInt32 that identifies the kind of the notification.
 
 ## Declaration
 
-```swift
+```c
 UInt32 mNotificationID;
 ```
 
 ## See Also
 
-- [mObjectID](iovideodevicenotification/1411466-mobjectid.md)
+### Fields
+- [mObjectID](./api-1411466-mobjectid.md)
   The ID of the object to which the notification pertains.
-- [mNotificationArgument1](iovideodevicenotification/1411421-mnotificationargument1.md)
+- [mNotificationArgument1](./api-1411421-mnotificationargument1.md)
   A UInt32 whose usage depends on the the specific kind of notification.
-- [mNotificationArgument2](iovideodevicenotification/1411377-mnotificationargument2.md)
+- [mNotificationArgument2](./api-1411377-mnotificationargument2.md)
   A UInt32 whose usage depends on the the specific kind of notification.
-- [mNotificationArgument3](iovideodevicenotification/1411448-mnotificationargument3.md)
+- [mNotificationArgument3](./api-1411448-mnotificationargument3.md)
   A UInt64 whose usage depends on the the specific kind of notification.
-- [mNotificationArgument4](iovideodevicenotification/1411371-mnotificationargument4.md)
+- [mNotificationArgument4](./api-1411371-mnotificationargument4.md)
   A UInt64 whose usage depends on the the specific kind of notification.
 
 

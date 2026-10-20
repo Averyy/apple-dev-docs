@@ -1,7 +1,8 @@
 # beginMarkedContentSequence(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func beginMarkedContentSequence(_ tagType: CGPDFTagType) -> CGPDFMarkedContentItem?
+```
+
+```c
+extern CGPDFMarkedContentItemRefCGPDFContextBeginMarkedContentSequence(CGContextRef context, CGPDFTagType tagType);
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Allocates a new compute pipeline state by adding binary functions to this pipeline state.
@@ -18,6 +19,10 @@ Allocates a new compute pipeline state by adding binary functions to this pipeli
 
 ```swift
 func makeComputePipelineState(additionalBinaryFunctions: [any MTL4BinaryFunction]) throws -> any MTLComputePipelineState
+```
+
+```objc
+- (id<MTLComputePipelineState>) newComputePipelineStateWithBinaryFunctions:(NSArray<id<MTL4BinaryFunction>> *) additionalBinaryFunctions error:(NSError **) error;
 ```
 
 #### Return Value

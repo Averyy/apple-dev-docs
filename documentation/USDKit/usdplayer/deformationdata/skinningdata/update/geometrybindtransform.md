@@ -1,7 +1,8 @@
 # geometryBindTransform
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Changed geometry bind transform.
 

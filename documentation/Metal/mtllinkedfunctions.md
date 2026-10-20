@@ -1,7 +1,8 @@
 # MTLLinkedFunctions
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of related functions that Metal links to when necessary to create the function instance.
 
@@ -19,48 +20,53 @@ A set of related functions that Metal links to when necessary to create the func
 class MTLLinkedFunctions
 ```
 
+```objc
+@interface MTLLinkedFunctions : NSObject
+```
+
 #### Overview
 
-When you create a Metal function instance using an [`MTLFunctionDescriptor`](mtlfunctiondescriptor.md), you specify additional functions that Metal needs to link to when it compiles and links the underlying shader code. Most often, you need to do this if your shader takes a visible function table as one or more of its arguments. For Metal to create the [`MTLFunction`](mtlfunction.md) instance, it needs a complete list of functions that your shader can call so that it can resolve any dependencies and generate the correct code to run on the GPU.
+When you create a Metal function instance using an [`MTLFunctionDescriptor`](./mtlfunctiondescriptor.md), you specify additional functions that Metal needs to link to when it compiles and links the underlying shader code. Most often, you need to do this if your shader takes a visible function table as one or more of its arguments. For Metal to create the [`MTLFunction`](./mtlfunction.md) instance, it needs a complete list of functions that your shader can call so that it can resolve any dependencies and generate the correct code to run on the GPU.
 
 ## Topics
 
 ### Specifying related functions
-- [var functions: [any MTLFunction]?](mtllinkedfunctions/functions.md)
+- [var functions: [any MTLFunction]?](./mtllinkedfunctions/functions.md)
   An array of function objects to link to the new function.
-- [var binaryFunctions: [any MTLFunction]?](mtllinkedfunctions/binaryfunctions.md)
+- [var binaryFunctions: [any MTLFunction]?](./mtllinkedfunctions/binaryfunctions.md)
   An array of function objects already compiled to a binary representation to link.
-- [var groups: [String : [any MTLFunction]]?](mtllinkedfunctions/groups.md)
+- [var groups: [String : [any MTLFunction]]?](./mtllinkedfunctions/groups.md)
   An optional list of groups specifying which functions your shader can call at each call site.
-- [var privateFunctions: [any MTLFunction]?](mtllinkedfunctions/privatefunctions.md)
+- [var privateFunctions: [any MTLFunction]?](./mtllinkedfunctions/privatefunctions.md)
   An array of function objects to link to the new function, without exporting the functions publicly.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var name: String?](mtlfunctiondescriptor/name.md)
+### Specifying the function configuration
+- [var name: String?](./mtlfunctiondescriptor/name.md)
   The name of the function to fetch from the library.
-- [var specializedName: String?](mtlfunctiondescriptor/specializedname.md)
+- [var specializedName: String?](./mtlfunctiondescriptor/specializedname.md)
   A new name for the created function object.
-- [var constantValues: MTLFunctionConstantValues?](mtlfunctiondescriptor/constantvalues.md)
+- [var constantValues: MTLFunctionConstantValues?](./mtlfunctiondescriptor/constantvalues.md)
   The set of constant values assigned to the function constants.
-- [var options: MTLFunctionOptions](mtlfunctiondescriptor/options.md)
+- [var options: MTLFunctionOptions](./mtlfunctiondescriptor/options.md)
   Flags specifying how Metal should create the new function object.
-- [var binaryArchives: [any MTLBinaryArchive]?](mtlfunctiondescriptor/binaryarchives.md)
+- [var binaryArchives: [any MTLBinaryArchive]?](./mtlfunctiondescriptor/binaryarchives.md)
   The binary archives to search for a previously-compiled version of this function.
-- [struct MTLFunctionOptions](mtlfunctionoptions.md)
+- [struct MTLFunctionOptions](./mtlfunctionoptions.md)
   Options that define how Metal compiles a GPU function.
 
 

@@ -1,7 +1,8 @@
 # maxSpeed
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The agent’s maximum forward speed, in units per second.
 
@@ -19,19 +20,25 @@ The agent’s maximum forward speed, in units per second.
 var maxSpeed: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float maxSpeed;
+```
+
 #### Discussion
 
-When an agent evaluates the goals listed in its [`behavior`](gkagent/behavior.md) property, the result is an acceleration vector that changes the velocity of the agent. If the magnitude of the new velocity is greater than this value, the velocity is reduced to match this value.
+When an agent evaluates the goals listed in its [`behavior`](./behavior.md) property, the result is an acceleration vector that changes the velocity of the agent. If the magnitude of the new velocity is greater than this value, the velocity is reduced to match this value.
 
 ## See Also
 
-- [var speed: Float](gkagent/speed.md)
+### Related Documentation
+- [var speed: Float](./speed.md)
   The agent’s current forward speed, in units per second.
-- [var mass: Float](gkagent/mass.md)
+### Constraining an Agent’s Movement
+- [var mass: Float](./mass.md)
   The resistance of the agent to changes in speed or direction.
-- [var maxAcceleration: Float](gkagent/maxacceleration.md)
+- [var maxAcceleration: Float](./maxacceleration.md)
   The upper limit to changes in the agent’s speed or direction.
-- [var radius: Float](gkagent/radius.md)
+- [var radius: Float](./radius.md)
   The agent’s radius.
 
 

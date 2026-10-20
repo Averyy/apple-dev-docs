@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new custom context that provides unique data.
 

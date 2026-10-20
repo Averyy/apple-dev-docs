@@ -1,16 +1,19 @@
 # signpostCategory
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The developer-specified category of the custom metric represented by the object.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`signpostCategory`](../signpostintervalmetric/signpostcategory.md) instead.
 
 ## Declaration
 
@@ -18,11 +21,16 @@ The developer-specified category of the custom metric represented by the object.
 var signpostCategory: String { get }
 ```
 
+```objc
+@property (strong, readonly, nonnull) NSString * signpostCategory;
+```
+
 ## See Also
 
-- [var signpostName: String](mxsignpostmetric/signpostname.md)
+### Reading data about the custom metric
+- [var signpostName: String](./signpostname.md)
   The developer-specified name of the custom metric represented by the object.
-- [var totalCount: Int](mxsignpostmetric/totalcount.md)
+- [var totalCount: Int](./totalcount.md)
   The total number of occurrences of the captured custom metric.
 
 

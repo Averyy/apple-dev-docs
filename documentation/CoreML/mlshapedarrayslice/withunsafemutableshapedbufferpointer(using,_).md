@@ -1,7 +1,8 @@
 # withUnsafeMutableShapedBufferPointer(using:_:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with a pointer to the array’s mutable storage that has a specified buffer layout.
 
@@ -19,6 +20,8 @@ Calls the given closure with a pointer to the array’s mutable storage that has
 ```swift
 mutating func withUnsafeMutableShapedBufferPointer<R>(using bufferLayout: MLShapedArrayBufferLayout, _ body: (inout UnsafeMutableBufferPointer<Scalar>, [Int], [Int]) throws -> R) rethrows -> R
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar`.
 
 #### Discussion
 

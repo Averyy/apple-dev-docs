@@ -1,21 +1,26 @@
 # quadrature_integrate_options
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct quadrature_integrate_options
+```
+
+```c
+typedef struct { ... } quadrature_integrate_options;
 ```
 
 #### Overview
@@ -29,25 +34,26 @@ If a workspace is provided, this value is ignored, and the number of intervals i
 ## Topics
 
 ### Initializers
-- [init()](quadrature_integrate_options/init.md)
-- [init(integrator: quadrature_integrator, abs_tolerance: Double, rel_tolerance: Double, qag_points_per_interval: Int, max_intervals: Int)](quadrature_integrate_options/init(integrator:abs_tolerance:rel_tolerance:qag_points_per_interval:max_intervals:).md)
+- [init()](./quadrature_integrate_options/init%28%29.md)
+- [init(integrator: quadrature_integrator, abs_tolerance: Double, rel_tolerance: Double, qag_points_per_interval: Int, max_intervals: Int)](./quadrature_integrate_options/init%28integrator,abs_tolerance,rel_tolerance,qag_points_per_interval,max_intervals%29.md)
 ### Instance Properties
-- [var abs_tolerance: Double](quadrature_integrate_options/abs_tolerance.md)
-- [var integrator: quadrature_integrator](quadrature_integrate_options/integrator.md)
-- [var max_intervals: Int](quadrature_integrate_options/max_intervals.md)
-- [var qag_points_per_interval: Int](quadrature_integrate_options/qag_points_per_interval.md)
-- [var rel_tolerance: Double](quadrature_integrate_options/rel_tolerance.md)
+- [var abs_tolerance: Double](./quadrature_integrate_options/abs_tolerance.md)
+- [var integrator: quadrature_integrator](./quadrature_integrate_options/integrator.md)
+- [var max_intervals: Int](./quadrature_integrate_options/max_intervals.md)
+- [var qag_points_per_interval: Int](./quadrature_integrate_options/qag_points_per_interval.md)
+- [var rel_tolerance: Double](./quadrature_integrate_options/rel_tolerance.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias quadrature_function_array](quadrature_function_array.md)
-- [struct quadrature_integrate_function](quadrature_integrate_function.md)
+### Type Aliases
+- [typealias quadrature_function_array](./quadrature_function_array.md)
+- [struct quadrature_integrate_function](./quadrature_integrate_function.md)
 
 
 ---

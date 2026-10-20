@@ -1,7 +1,8 @@
 # MIDIUMPCIProfile
 
 **Framework**: Core MIDI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -16,31 +17,35 @@
 class MIDIUMPCIProfile
 ```
 
+```objc
+@interface MIDIUMPCIProfile : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var enabledChannelCount: MIDIUInteger14](midiumpciprofile/enabledchannelcount.md)
-- [var firstChannel: MIDIChannelNumber](midiumpciprofile/firstchannel.md)
-- [var groupOffset: MIDIUMPGroupNumber](midiumpciprofile/groupoffset.md)
-- [var isEnabled: Bool](midiumpciprofile/isenabled.md)
-- [var name: String](midiumpciprofile/name.md)
-- [var profileID: MIDICIProfileID](midiumpciprofile/profileid.md)
-- [var profileType: MIDICIProfileType](midiumpciprofile/profiletype.md)
-- [var totalChannelCount: MIDIUInteger14](midiumpciprofile/totalchannelcount.md)
+- [var enabledChannelCount: MIDIUInteger14](./midiumpciprofile/enabledchannelcount.md)
+- [var firstChannel: MIDIChannelNumber](./midiumpciprofile/firstchannel.md)
+- [var groupOffset: MIDIUMPGroupNumber](./midiumpciprofile/groupoffset.md)
+- [var isEnabled: Bool](./midiumpciprofile/isenabled.md)
+- [var name: String](./midiumpciprofile/name.md)
+- [var profileID: MIDICIProfileID](./midiumpciprofile/profileid.md)
+- [var profileType: MIDICIProfileType](./midiumpciprofile/profiletype.md)
+- [var totalChannelCount: MIDIUInteger14](./midiumpciprofile/totalchannelcount.md)
 ### Instance Methods
-- [func setProfileState(Bool, enabledChannelCount: MIDIUInteger14) throws](midiumpciprofile/setprofilestate(_:enabledchannelcount:).md)
+- [func setProfileState(Bool, enabledChannelCount: MIDIUInteger14) throws](./midiumpciprofile/setprofilestate%28_,enabledchannelcount%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # DeviceActivityCenter.MonitoringError.intervalTooLong
 
 **Framework**: Device Activity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The activity’s schedule has an interval that is too long.
 
@@ -22,13 +23,14 @@ The maximum interval length for monitoring device activity events is one week.
 
 ## See Also
 
-- [DeviceActivityCenter.MonitoringError.excessiveActivities](deviceactivitycenter/monitoringerror/excessiveactivities.md)
+### Checking for Errors
+- [DeviceActivityCenter.MonitoringError.excessiveActivities](./excessiveactivities.md)
   The calling process is monitoring too many activities.
-- [DeviceActivityCenter.MonitoringError.intervalTooShort](deviceactivitycenter/monitoringerror/intervaltooshort.md)
+- [DeviceActivityCenter.MonitoringError.intervalTooShort](./intervaltooshort.md)
   The activity’s schedule has an interval that is too short.
-- [DeviceActivityCenter.MonitoringError.invalidDateComponents](deviceactivitycenter/monitoringerror/invaliddatecomponents.md)
+- [DeviceActivityCenter.MonitoringError.invalidDateComponents](./invaliddatecomponents.md)
   The schedule’s date range is invalid.
-- [DeviceActivityCenter.MonitoringError.unauthorized](deviceactivitycenter/monitoringerror/unauthorized.md)
+- [DeviceActivityCenter.MonitoringError.unauthorized](./unauthorized.md)
   The calling process isn’t authorized to monitor device activity.
 
 

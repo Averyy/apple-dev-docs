@@ -1,7 +1,8 @@
 # kSecRevocationRequirePositiveResponse
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Require a positive response to pass the policy.
 
@@ -18,6 +19,10 @@ Require a positive response to pass the policy.
 
 ```swift
 var kSecRevocationRequirePositiveResponse: CFOptionFlags { get }
+```
+
+```c
+kSecRevocationRequirePositiveResponse
 ```
 
 #### Discussion

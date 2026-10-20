@@ -1,14 +1,15 @@
 # sockaddr_storage_ref_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct sockaddr_storage {
     ...
 } sockaddr_storage_ref_t;
@@ -17,8 +18,8 @@ typedef struct sockaddr_storage {
 ## Topics
 
 ### Instance Properties
-- [ss_family](sockaddr_storage_ref_t/1499357-ss_family.md)
-- [ss_len](sockaddr_storage_ref_t/1499331-ss_len.md)
+- [ss_family](./sockaddr_storage_ref_t/api-1499357-ss_family.md)
+- [ss_len](./sockaddr_storage_ref_t/api-1499331-ss_len.md)
 
 
 ---

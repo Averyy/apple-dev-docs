@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_link_status {
     ...
 };
@@ -17,9 +17,9 @@ struct if_link_status {
 ## Topics
 
 ### Instance Properties
-- [ifsr_len](if_link_status/3944193-ifsr_len.md)
-- [ifsr_u](if_link_status/3944194-ifsr_u.md)
-- [ifsr_version](if_link_status/3944195-ifsr_version.md)
+- [ifsr_len](./if_link_status/api-3944193-ifsr_len.md)
+- [ifsr_u](./if_link_status/api-3944194-ifsr_u.md)
+- [ifsr_version](./if_link_status/api-3944195-ifsr_version.md)
 
 
 ---

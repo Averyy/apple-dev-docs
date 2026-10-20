@@ -1,7 +1,8 @@
 # closedCaptioningStatusDidChangeNotification
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that UIKit posts when the setting for Closed Captions + SDH changes.
 
@@ -9,7 +10,7 @@ A notification that UIKit posts when the setting for Closed Captions + SDH chang
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ nonisolated
 static let closedCaptioningStatusDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const UIAccessibilityClosedCaptioningStatusDidChangeNotification;
+```
+
 #### Discussion
 
 This notification doesn’t include a parameter. Observe this notification using the default notification center.
 
 ## See Also
 
-- [static let boldTextStatusDidChangeNotification: NSNotification.Name](uiaccessibility/boldtextstatusdidchangenotification.md)
+### Text
+- [static let boldTextStatusDidChangeNotification: NSNotification.Name](./boldtextstatusdidchangenotification.md)
   A notification that UIKit posts when the system’s Bold Text setting changes.
 
 

@@ -1,7 +1,8 @@
 # compare(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 If `lhs` is ordered before `rhs` in the ordering described by the given sequence of `SortComparator`s
 

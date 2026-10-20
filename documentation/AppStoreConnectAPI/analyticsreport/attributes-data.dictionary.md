@@ -1,7 +1,8 @@
 # AnalyticsReport.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an analytics report resource.
 
@@ -10,13 +11,13 @@ Attributes that describe an analytics report resource.
 
 ## Declaration
 
-```swift
+```
 object AnalyticsReport.Attributes
 ```
 
 ## Properties
 
-- `category` (string)
+- `category` (string): **Allowed Values**: `APP_USAGE`, `APP_STORE_ENGAGEMENT`, `COMMERCE`, `FRAMEWORK_USAGE`, `PERFORMANCE`
 - `name` (string)
 
 

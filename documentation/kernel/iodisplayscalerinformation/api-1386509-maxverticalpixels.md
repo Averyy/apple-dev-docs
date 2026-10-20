@@ -1,7 +1,8 @@
 # maxVerticalPixels
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Maximum number of vertical source pixels (verticalScaled).
 
@@ -10,7 +11,7 @@ Maximum number of vertical source pixels (verticalScaled).
 
 ## Declaration
 
-```swift
+```c
 UInt32 maxVerticalPixels;
 ```
 

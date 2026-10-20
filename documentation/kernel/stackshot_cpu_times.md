@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct stackshot_cpu_times {
     ...
 };
@@ -17,8 +17,8 @@ struct stackshot_cpu_times {
 ## Topics
 
 ### Instance Properties
-- [system_usec](stackshot_cpu_times/1644366-system_usec.md)
-- [user_usec](stackshot_cpu_times/1644330-user_usec.md)
+- [system_usec](./stackshot_cpu_times/api-1644366-system_usec.md)
+- [user_usec](./stackshot_cpu_times/api-1644330-user_usec.md)
 
 
 ---

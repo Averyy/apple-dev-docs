@@ -1,7 +1,8 @@
 # usage
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of contexts in which you can use tensors you create with this descriptor.
 
@@ -19,12 +20,16 @@ A set of contexts in which you can use tensors you create with this descriptor.
 var usage: MTLTensorUsage { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLTensorUsage usage;
+```
+
 #### Discussion
 
 The default value for this property is a bitwise `OR` of:
 
-- [`render`](mtltensorusage/render.md)
-- [`compute`](mtltensorusage/compute.md)
+- [`render`](../mtltensorusage/render.md)
+- [`compute`](../mtltensorusage/compute.md)
 
 
 ---

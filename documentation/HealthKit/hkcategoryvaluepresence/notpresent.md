@@ -1,7 +1,8 @@
 # HKCategoryValuePresence.notPresent
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The symptom isn’t present.
 
@@ -19,9 +20,14 @@ The symptom isn’t present.
 case notPresent
 ```
 
+```c
+HKCategoryValuePresenceNotPresent
+```
+
 ## See Also
 
-- [HKCategoryValuePresence.present](hkcategoryvaluepresence/present.md)
+### Presence of Symptoms
+- [HKCategoryValuePresence.present](./present.md)
   The symptom is present.
 
 

@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The instance masks the request observes.
 
@@ -17,6 +18,10 @@ The instance masks the request observes.
 
 ```swift
 var results: [VNInstanceMaskObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNInstanceMaskObservation *> * results;
 ```
 
 

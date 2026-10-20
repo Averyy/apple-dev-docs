@@ -1,7 +1,8 @@
 # muted
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the muted state changed.
 
@@ -16,6 +17,10 @@ Indicates the muted state changed.
 
 ```swift
 static var muted: WKWebExtension.TabChangedProperties { get }
+```
+
+```c
+WKWebExtensionTabChangedPropertiesMuted
 ```
 
 

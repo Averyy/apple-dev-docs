@@ -1,7 +1,8 @@
 # characteristic
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The characteristic associated with the event.
 
@@ -19,9 +20,14 @@ The characteristic associated with the event.
 var characteristic: HMCharacteristic { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) HMCharacteristic * characteristic;
+```
+
 ## See Also
 
-- [var triggerValue: TriggerValueType?](hmcharacteristicevent/triggervalue.md)
+### Inspecting the event
+- [var triggerValue: TriggerValueType?](./triggervalue.md)
   The value of the characteristic that triggers the event.
 
 

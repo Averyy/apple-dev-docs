@@ -1,7 +1,8 @@
 # frameRateVariation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Defines a plus/minus range (in frames per second) from which a value is randomly selected to offset `frameRate`.
 

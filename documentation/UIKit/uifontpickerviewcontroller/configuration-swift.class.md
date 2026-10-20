@@ -1,7 +1,8 @@
 # UIFontPickerViewController.Configuration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The filters and display settings a font picker view controller uses to set up a font picker.
 
@@ -18,42 +19,47 @@ The filters and display settings a font picker view controller uses to set up a 
 class Configuration
 ```
 
+```objc
+@interface UIFontPickerViewControllerConfiguration : NSObject
+```
+
 ## Topics
 
 ### Customizing the font picker’s appearance
-- [var displayUsingSystemFont: Bool](uifontpickerviewcontroller/configuration-swift.class/displayusingsystemfont.md)
+- [var displayUsingSystemFont: Bool](./configuration-swift.class/displayusingsystemfont.md)
   A Boolean value that determines whether to use the system font for all font names in the font picker.
 ### Filtering available fonts
-- [var includeFaces: Bool](uifontpickerviewcontroller/configuration-swift.class/includefaces.md)
+- [var includeFaces: Bool](./configuration-swift.class/includefaces.md)
   A Boolean value that determines whether the font picker should allow the user to select from font faces, or just font families.
-- [var filteredTraits: UIFontDescriptor.SymbolicTraits](uifontpickerviewcontroller/configuration-swift.class/filteredtraits.md)
+- [var filteredTraits: UIFontDescriptor.SymbolicTraits](./configuration-swift.class/filteredtraits.md)
   A predicate to filter fonts based on their traits, like bold, italic, or monospace.
-- [var filteredLanguagesPredicate: NSPredicate?](uifontpickerviewcontroller/configuration-swift.class/filteredlanguagespredicate.md)
+- [var filteredLanguagesPredicate: NSPredicate?](./configuration-swift.class/filteredlanguagespredicate.md)
   A predicate to filter fonts based on the languages they support.
-- [class func filterPredicate(forFilteredLanguages: [String]) -> NSPredicate?](uifontpickerviewcontroller/configuration-swift.class/filterpredicate(forfilteredlanguages:).md)
+- [class func filterPredicate(forFilteredLanguages: [String]) -> NSPredicate?](./configuration-swift.class/filterpredicate%28forfilteredlanguages%29.md)
   Creates a font picker filter based on language support.
 ### Instance Properties
-- [var languageFilter: Predicate<[String]>?](uifontpickerviewcontroller/configuration-swift.class/languagefilter.md)
+- [var languageFilter: Predicate<[String]>?](./configuration-swift.class/languagefilter.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [class UIFontPickerViewController](uifontpickerviewcontroller.md)
+### Font picker
+- [class UIFontPickerViewController](../uifontpickerviewcontroller.md)
   A view controller that manages the interface for selecting a font that the system provides or the user installs.
-- [protocol UIFontPickerViewControllerDelegate](uifontpickerviewcontrollerdelegate.md)
+- [protocol UIFontPickerViewControllerDelegate](../uifontpickerviewcontrollerdelegate.md)
   A set of optional methods for receiving messages about the user’s interaction with the font picker.
 
 

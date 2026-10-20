@@ -1,7 +1,8 @@
 # action
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action for which an animation is being defined.
 

@@ -1,7 +1,8 @@
 # BNNSShuffleTypePixelShuffleNCHW
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The pixel shuffle for the NCHW (batch, channels, height, width) format, equivalent to depth-to-space in Column Row Depth (CRD) mode.
 
@@ -20,19 +21,24 @@ The pixel shuffle for the NCHW (batch, channels, height, width) format, equivale
 var BNNSShuffleTypePixelShuffleNCHW: BNNSShuffleType { get }
 ```
 
+```c
+BNNSShuffleTypePixelShuffleNCHW
+```
+
 #### Discussion
 
 Use this shuffle type to rearrange the elements in a tensor of shape `(N,C×rxr,H,W)` to a tensor of shape `(N,C,H×r,W×r)`, where `r` is an upscale factor.
 
 ## See Also
 
-- [init(UInt32)](bnnsshuffletype/init(_:).md)
-- [init(rawValue: UInt32)](bnnsshuffletype/init(rawvalue:).md)
-- [var rawValue: UInt32](bnnsshuffletype/rawvalue.md)
-- [var BNNSShuffleTypePixelUnshuffleNCHW: BNNSShuffleType](bnnsshuffletypepixelunshufflenchw.md)
+### Constants
+- [init(UInt32)](./bnnsshuffletype/init%28_%29.md)
+- [init(rawValue: UInt32)](./bnnsshuffletype/init%28rawvalue%29.md)
+- [var rawValue: UInt32](./bnnsshuffletype/rawvalue.md)
+- [var BNNSShuffleTypePixelUnshuffleNCHW: BNNSShuffleType](./bnnsshuffletypepixelunshufflenchw.md)
   The pixel unshuffle for the NCHW (batch, channels, height, width) format, equivalent to space-to-depth in Column Row Depth (CRD) mode.
-- [var BNNSShuffleTypeDepthToSpaceNCHW: BNNSShuffleType](bnnsshuffletypedepthtospacenchw.md)
-- [var BNNSShuffleTypeSpaceToDepthNCHW: BNNSShuffleType](bnnsshuffletypespacetodepthnchw.md)
+- [var BNNSShuffleTypeDepthToSpaceNCHW: BNNSShuffleType](./bnnsshuffletypedepthtospacenchw.md)
+- [var BNNSShuffleTypeSpaceToDepthNCHW: BNNSShuffleType](./bnnsshuffletypespacetodepthnchw.md)
 
 
 ---

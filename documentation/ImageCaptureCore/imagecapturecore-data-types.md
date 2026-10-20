@@ -1,17 +1,19 @@
 # ImageCaptureCore Data Types
 
-**Framework**: ImageCaptureCore
+**Framework**: ImageCaptureCore  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [struct ICAuthorizationStatus](icauthorizationstatus.md)
+- [struct ICAuthorizationStatus](./icauthorizationstatus.md)
 
 ## See Also
 
-- [ImageCaptureCore Constants](imagecapturecore-constants.md)
-- [ImageCaptureCore Enumerations](imagecapturecore-enumerations.md)
-- [ImageCaptureCore Macros](imagecapturecore-macros.md)
+### Articles
+- [ImageCaptureCore Constants](./imagecapturecore-constants.md)
+- [ImageCaptureCore Enumerations](./imagecapturecore-enumerations.md)
+- [ImageCaptureCore Macros](./imagecapturecore-macros.md)
 
 
 ---

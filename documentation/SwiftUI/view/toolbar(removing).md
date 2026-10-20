@@ -1,7 +1,8 @@
 # toolbar(removing:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove a toolbar item present by default
 
@@ -40,7 +41,8 @@ NavigationSplitView {
 
 ## See Also
 
-- [struct ToolbarDefaultItemKind](toolbardefaultitemkind.md)
+### Removing default items
+- [struct ToolbarDefaultItemKind](../toolbardefaultitemkind.md)
   A kind of toolbar item a `View` adds by default.
 
 

@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A debug description to help developers diagnose issues during development.
 

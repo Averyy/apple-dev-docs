@@ -1,7 +1,8 @@
 # NSGrammaticalCase.genitive
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case genitive
+```
+
+```c
+NSGrammaticalCaseGenitive
 ```
 
 

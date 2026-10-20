@@ -1,7 +1,8 @@
 # columnNames
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the columns in the data table.
 
@@ -21,9 +22,10 @@ var columnNames: MLDataTable.ColumnNames { get }
 
 ## See Also
 
-- [MLDataTable.ColumnNames](mldatatable/columnnames-swift.struct.md)
+### Getting information about a data table’s columns
+- [MLDataTable.ColumnNames](./columnnames-swift.struct.md)
   A collection of the names of the columns in a data table.
-- [var columnTypes: [String : MLDataValue.ValueType]](mldatatable/columntypes.md)
+- [var columnTypes: [String : MLDataValue.ValueType]](./columntypes.md)
   The type of the data in each column.
 
 

@@ -1,7 +1,8 @@
 # NEVPNConnectionError.noNetworkAvailable
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error code that indicates the VPN connection failed because the system isn’t connected to a network.
 
@@ -19,19 +20,24 @@ An error code that indicates the VPN connection failed because the system isn’
 case noNetworkAvailable
 ```
 
+```c
+NEVPNConnectionErrorNoNetworkAvailable
+```
+
 ## See Also
 
-- [NEVPNConnectionError.overslept](nevpnconnectionerror/overslept.md)
+### General error codes
+- [NEVPNConnectionError.overslept](./overslept.md)
   An error code that indicates the system slept for an extended period of time, causing the VPN connection to terminate.
-- [NEVPNConnectionError.unrecoverableNetworkChange](nevpnconnectionerror/unrecoverablenetworkchange.md)
+- [NEVPNConnectionError.unrecoverableNetworkChange](./unrecoverablenetworkchange.md)
   An error code that indicates network conditions changed such that the VPN connection needed to terminate.
-- [NEVPNConnectionError.configurationFailed](nevpnconnectionerror/configurationfailed.md)
+- [NEVPNConnectionError.configurationFailed](./configurationfailed.md)
   An error code that indicates the VPN connection failed because the configuration is invalid.
-- [NEVPNConnectionError.authenticationFailed](nevpnconnectionerror/authenticationfailed.md)
+- [NEVPNConnectionError.authenticationFailed](./authenticationfailed.md)
   An error code that indicates the VPN connection failed because the VPN server rejected the user credentials.
-- [NEVPNConnectionError.configurationNotFound](nevpnconnectionerror/configurationnotfound.md)
+- [NEVPNConnectionError.configurationNotFound](./configurationnotfound.md)
   An error code that indicates the VPN connection failed because the system couldn’t find a configuration.
-- [NEVPNConnectionError.negotiationFailed](nevpnconnectionerror/negotiationfailed.md)
+- [NEVPNConnectionError.negotiationFailed](./negotiationfailed.md)
   An error code that indicates the VPN connection failed because the negotiation failed.
 
 

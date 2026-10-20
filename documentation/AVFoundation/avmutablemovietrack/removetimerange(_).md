@@ -1,7 +1,8 @@
 # removeTimeRange(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified time range from a track.
 
@@ -19,17 +20,22 @@ Removes the specified time range from a track.
 func removeTimeRange(_ timeRange: CMTimeRange)
 ```
 
+```objc
+- (void) removeTimeRange:(CMTimeRange) timeRange;
+```
+
 ## Parameters
 
 - `timeRange`: The time range to remove.
 
 ## See Also
 
-- [func insertTimeRange(CMTimeRange, of: AVAssetTrack, at: CMTime, copySampleData: Bool) throws](avmutablemovietrack/inserttimerange(_:of:at:copysampledata:).md)
+### Managing time ranges
+- [func insertTimeRange(CMTimeRange, of: AVAssetTrack, at: CMTime, copySampleData: Bool) throws](./inserttimerange%28_,of,at,copysampledata%29.md)
   Inserts a portion of an asset track into the target movie.
-- [func insertEmptyTimeRange(CMTimeRange)](avmutablemovietrack/insertemptytimerange(_:).md)
+- [func insertEmptyTimeRange(CMTimeRange)](./insertemptytimerange%28_%29.md)
   Adds an empty time range to a track.
-- [func scaleTimeRange(CMTimeRange, toDuration: CMTime)](avmutablemovietrack/scaletimerange(_:toduration:).md)
+- [func scaleTimeRange(CMTimeRange, toDuration: CMTime)](./scaletimerange%28_,toduration%29.md)
   Changes the duration of a time range in a track.
 
 

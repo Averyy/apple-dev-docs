@@ -1,7 +1,8 @@
 # init(uuid:qualifier:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an entity identifier with the given UUID and qualifier data as a 64-bit unsigned integer.
 
@@ -14,6 +15,10 @@ Creates an entity identifier with the given UUID and qualifier data as a 64-bit 
 init(uuid: UUID, qualifier: UInt64)
 ```
 
+```objc
+- (instancetype) initWithUUID:(NSUUID *) uuid qualifier:(uint64_t) qualifier;
+```
+
 ## Parameters
 
 - `uuid`: The UUID to use for this identifier.
@@ -21,11 +26,12 @@ init(uuid: UUID, qualifier: UInt64)
 
 ## See Also
 
-- [init()](fsentityidentifier/init.md)
+### Creating an entity identifier
+- [init()](./init%28%29.md)
   Creates an entity identifier with a random UUID.
-- [init(uuid: UUID)](fsentityidentifier/init(uuid:)-9e20k.md)
+- [init(uuid: UUID)](./init%28uuid%29-9e20k.md)
   Creates an entity identifier with the given UUID.
-- [init(uuid: UUID, data: Data)](fsentityidentifier/init(uuid:data:)-8dixs.md)
+- [init(uuid: UUID, data: Data)](./init%28uuid,data%29-8dixs.md)
   Creates an entity identifier with the given UUID and qualifier data.
 
 

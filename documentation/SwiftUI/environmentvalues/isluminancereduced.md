@@ -1,7 +1,8 @@
 # isLuminanceReduced
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the display or environment currently requires reduced luminance.
 
@@ -40,19 +41,20 @@ var body: some View {
 
 In addition to the changes that you make, the system could also dim the display to achieve a suitable brightness. By reacting to `isLuminanceReduced`, you can preserve contrast and readability while helping to satisfy the reduced brightness requirement.
 
-> **Note**: On watchOS, the system typically sets this value to `true` when the user lowers their wrist, but the display remains on. Starting in watchOS 8, the system keeps your view visible on wrist down by default. If you want the system to blur the screen instead, as it did in earlier versions of watchOS, set the value for the [`WKSupportsAlwaysOnDisplay`](https://developer.apple.com/documentation/bundleresources/information-property-list/wksupportsalwaysondisplay) key in your app’s [`Information Property List`](https://developer.apple.com/documentation/bundleresources/information-property-list) file to `false`.
+> **Note**: On watchOS, the system typically sets this value to `true` when the user lowers their wrist, but the display remains on. Starting in watchOS 8, the system keeps your view visible on wrist down by default. If you want the system to blur the screen instead, as it did in earlier versions of watchOS, set the value for the [`WKSupportsAlwaysOnDisplay`](../../BundleResources/information-property-list/wksupportsalwaysondisplay.md) key in your app’s [`Information Property List`](../../BundleResources/information-property-list.md) file to `false`.
 
 ## See Also
 
-- [var displayScale: CGFloat](environmentvalues/displayscale.md)
+### Reacting to interface characteristics
+- [var displayScale: CGFloat](./displayscale.md)
   The display scale of this environment.
-- [var pixelLength: CGFloat](environmentvalues/pixellength.md)
+- [var pixelLength: CGFloat](./pixellength.md)
   The size of a pixel on the screen.
-- [var horizontalSizeClass: UserInterfaceSizeClass?](environmentvalues/horizontalsizeclass.md)
+- [var horizontalSizeClass: UserInterfaceSizeClass?](./horizontalsizeclass.md)
   The horizontal size class of this environment.
-- [var verticalSizeClass: UserInterfaceSizeClass?](environmentvalues/verticalsizeclass.md)
+- [var verticalSizeClass: UserInterfaceSizeClass?](./verticalsizeclass.md)
   The vertical size class of this environment.
-- [enum UserInterfaceSizeClass](userinterfacesizeclass.md)
+- [enum UserInterfaceSizeClass](../userinterfacesizeclass.md)
   A set of values that indicate the visual size available to the view.
 
 

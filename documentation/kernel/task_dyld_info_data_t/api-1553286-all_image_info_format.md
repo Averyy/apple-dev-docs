@@ -1,14 +1,15 @@
 # all_image_info_format
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 integer_t all_image_info_format;
 ```
 

@@ -1,7 +1,8 @@
 # length
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The logical size of the Metal buffer, in bytes.
 
@@ -19,11 +20,16 @@ The logical size of the Metal buffer, in bytes.
 var length: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger length;
+```
+
 ## See Also
 
-- [var buffer: any MTLBuffer](mtkmeshbuffer/buffer.md)
+### Metal Buffer Properties
+- [var buffer: any MTLBuffer](./buffer.md)
   The Metal buffer backing all vertex and index data.
-- [var offset: Int](mtkmeshbuffer/offset.md)
+- [var offset: Int](./offset.md)
   The byte offset of the data within the Metal buffer.
 
 

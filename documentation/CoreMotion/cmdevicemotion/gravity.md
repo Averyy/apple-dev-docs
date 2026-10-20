@@ -1,7 +1,8 @@
 # gravity
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gravity acceleration vector expressed in the device’s reference frame.
 
@@ -19,13 +20,18 @@ The gravity acceleration vector expressed in the device’s reference frame.
 var gravity: CMAcceleration { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMAcceleration gravity;
+```
+
 #### Discussion
 
-The total acceleration of the device is equal to gravity plus the acceleration the user imparts to the device ([`userAcceleration`](cmdevicemotion/useracceleration.md)).
+The total acceleration of the device is equal to gravity plus the acceleration the user imparts to the device ([`userAcceleration`](./useracceleration.md)).
 
 ## See Also
 
-- [var userAcceleration: CMAcceleration](cmdevicemotion/useracceleration.md)
+### Getting Acceleration Data
+- [var userAcceleration: CMAcceleration](./useracceleration.md)
   The acceleration that the user is giving to the device.
 
 

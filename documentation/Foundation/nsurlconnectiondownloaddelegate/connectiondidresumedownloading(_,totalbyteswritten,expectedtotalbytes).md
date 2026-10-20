@@ -1,7 +1,8 @@
 # connectionDidResumeDownloading(_:totalBytesWritten:expectedTotalBytes:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate when an URL connection resumes downloading a URL asset that was earlier suspended.
 
@@ -20,9 +21,13 @@ Sent to the delegate when an URL connection resumes downloading a URL asset that
 optional func connectionDidResumeDownloading(_ connection: NSURLConnection, totalBytesWritten: Int64, expectedTotalBytes: Int64)
 ```
 
+```objc
+- (void) connectionDidResumeDownloading:(NSURLConnection *) connection totalBytesWritten:(long long) totalBytesWritten expectedTotalBytes:(long long) expectedTotalBytes;
+```
+
 #### Discussion
 
-This method is invoked once a suspended download of a URL asset resumes downloading. In response, the delegate can display a progress indicator, setting the initial value of the indicator to where it was when downloading was suspended. After the URL-connection object sends this message, it sends one or more [`connection(_:didWriteData:totalBytesWritten:expectedTotalBytes:)`](nsurlconnectiondownloaddelegate/connection(_:didwritedata:totalbyteswritten:expectedtotalbytes:).md) to the delegate until the download concludes.
+This method is invoked once a suspended download of a URL asset resumes downloading. In response, the delegate can display a progress indicator, setting the initial value of the indicator to where it was when downloading was suspended. After the URL-connection object sends this message, it sends one or more [`connection(_:didWriteData:totalBytesWritten:expectedTotalBytes:)`](./connection%28_,didwritedata,totalbyteswritten,expectedtotalbytes%29.md) to the delegate until the download concludes.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ This method is invoked once a suspended download of a URL asset resumes download
 
 ## See Also
 
-- [func connection(NSURLConnection, didWriteData: Int64, totalBytesWritten: Int64, expectedTotalBytes: Int64)](nsurlconnectiondownloaddelegate/connection(_:didwritedata:totalbyteswritten:expectedtotalbytes:).md)
+### Managing Downloads of URL Assets
+- [func connection(NSURLConnection, didWriteData: Int64, totalBytesWritten: Int64, expectedTotalBytes: Int64)](./connection%28_,didwritedata,totalbyteswritten,expectedtotalbytes%29.md)
   Sent to the delegate to deliver progress information for a download of a URL asset to a destination file.
-- [func connectionDidFinishDownloading(NSURLConnection, destinationURL: URL)](nsurlconnectiondownloaddelegate/connectiondidfinishdownloading(_:destinationurl:).md)
+- [func connectionDidFinishDownloading(NSURLConnection, destinationURL: URL)](./connectiondidfinishdownloading%28_,destinationurl%29.md)
   Sent to the delegate when the URL connection has successfully downloaded the URL asset to a destination file.
 
 

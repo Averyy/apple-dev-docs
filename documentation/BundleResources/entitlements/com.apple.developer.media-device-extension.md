@@ -1,7 +1,8 @@
 # com.apple.developer.media-device-extension
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An array of media sharing protocol identifiers that an extension supports.
 
@@ -9,9 +10,10 @@ An array of media sharing protocol identifiers that an extension supports.
 - iOS 27.0+
 - iPadOS 27.0+
 
+## Details
 
-
-**Type**: string 
+- **Name**: `com.apple.developer.media-device-extension` (Media Sharing Extension)
+- **Type**: array of string 
 
 #### Discussion
 
@@ -24,23 +26,24 @@ Add this entitlement to your media device extension and its container app to int
 </array>
 ```
 
-Each string must match a protocol identifier declared in the extension’s [`UTExportedTypeDeclarations`](information-property-list/utexportedtypedeclarations.md) and the [`protocolType`](https://developer.apple.com/documentation/mediadevice/mediadeviceextension/protocoltype) property.
+Each string must match a protocol identifier declared in the extension’s [`UTExportedTypeDeclarations`](../information-property-list/utexportedtypedeclarations.md) and the [`protocolType`](../../MediaDevice/mediadeviceextension/protocoltype.md) property.
 
 An app that holds this entitlement can’t hold any other managed entitlements.
 
 Both the media device extension and its container app must declare this entitlement. The container app’s sole purpose must be the delivery and installation of the media device extension.
 
-For more information, see [`Creating a media device extension`](https://developer.apple.com/documentation/mediadevice/creating-a-media-device-extension) and [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+For more information, see [Creating a media device extension](../../MediaDevice/creating-a-media-device-extension.md) and [Adding capabilities to your app](../../Xcode/adding-capabilities-to-your-app.md).
 
 ## See Also
 
-- [com.apple.developer.coremotion.head-pose](entitlements/com.apple.developer.coremotion.head-pose.md)
+### Media
+- [com.apple.developer.coremotion.head-pose](./com.apple.developer.coremotion.head-pose.md)
   An entitlement that enables someone’s head movement to determine the orientation of spatialized sound output.
-- [com.apple.developer.spatial-audio.profile-access](entitlements/com.apple.developer.spatial-audio.profile-access.md)
+- [com.apple.developer.spatial-audio.profile-access](./com.apple.developer.spatial-audio.profile-access.md)
   An entitlement that enables your app to use the personalized spatial audio profile.
-- [com.apple.developer.avfoundation.multitasking-camera-access](entitlements/com.apple.developer.avfoundation.multitasking-camera-access.md)
+- [com.apple.developer.avfoundation.multitasking-camera-access](./com.apple.developer.avfoundation.multitasking-camera-access.md)
   A Boolean value that indicates whether an app may continue using the camera at the same time as another foreground app.
-- [Media Device Discovery Extension](entitlements/com.apple.developer.media-device-discovery-extension.md)
+- [Media Device Discovery Extension](./com.apple.developer.media-device-discovery-extension.md)
   An entitlement for an app extension that adds a specific third-party media receiver to a system device-picker UI.
 
 

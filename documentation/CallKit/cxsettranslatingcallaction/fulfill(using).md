@@ -1,7 +1,8 @@
 # fulfill(using:)
 
 **Framework**: CallKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -12,6 +13,10 @@
 
 ```swift
 func fulfill(using translationEngine: CXTranslationEngine)
+```
+
+```objc
+- (void) fulfillUsingTranslationEngine:(CXTranslationEngine) translationEngine;
 ```
 
 

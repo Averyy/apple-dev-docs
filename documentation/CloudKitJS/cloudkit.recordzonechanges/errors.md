@@ -1,7 +1,8 @@
 # errors
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Errors that may have occurred fetching the changed records.
 
@@ -10,7 +11,7 @@ Errors that may have occurred fetching the changed records.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.CKError[] errors;
 ```
 

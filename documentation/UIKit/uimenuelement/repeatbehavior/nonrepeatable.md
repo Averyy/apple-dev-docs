@@ -1,7 +1,8 @@
 # UIMenuElement.RepeatBehavior.nonRepeatable
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The element should not be repeatable.
 
@@ -16,6 +17,10 @@ The element should not be repeatable.
 
 ```swift
 case nonRepeatable
+```
+
+```c
+UIMenuElementRepeatBehaviorNonRepeatable
 ```
 
 

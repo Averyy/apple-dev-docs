@@ -1,7 +1,8 @@
 # FromToByAction.TransformMode.scene
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The provided transform is relative to the scene, in world space.
 

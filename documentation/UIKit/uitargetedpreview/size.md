@@ -1,7 +1,8 @@
 # size
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the view.
 
@@ -18,13 +19,18 @@ The size of the view.
 var size: CGSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGSize size;
+```
+
 ## See Also
 
-- [var view: UIView](uitargetedpreview/view.md)
+### Getting the preview attributes
+- [var view: UIView](./view.md)
   The view that’s the target of the animation.
-- [var target: UIPreviewTarget](uitargetedpreview/target.md)
+- [var target: UIPreviewTarget](./target.md)
   The container for the target view.
-- [var parameters: UIPreviewParameters](uitargetedpreview/parameters.md)
+- [var parameters: UIPreviewParameters](./parameters.md)
   Additional parameters to use when configuring the animations.
 
 

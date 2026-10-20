@@ -1,7 +1,8 @@
 # tailAngle
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angle of the tail in radians.
 

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an `WKApplicationDelegateAdaptor` using a WatchKit Application Delegate.
 
@@ -9,6 +10,20 @@ Creates an `WKApplicationDelegateAdaptor` using a WatchKit Application Delegate.
 - watchOS 10.0+
 
 ## Declaration
+
+```swift
+@MainActor
+@preconcurrency init(_ delegateType: DelegateType.Type = DelegateType.self)
+```
+
+Available when `DelegateType` inherits `NSObject`, `DelegateType` conforms to `Observable`, and `DelegateType` conforms to `WKApplicationDelegate`.
+
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency init(_ delegateType: DelegateType.Type = DelegateType.self)
+```
 
 ```swift
 @MainActor

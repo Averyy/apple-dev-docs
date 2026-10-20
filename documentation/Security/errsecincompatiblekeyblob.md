@@ -1,7 +1,8 @@
 # errSecIncompatibleKeyBlob
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified database has an incompatible key blob.
 
@@ -18,6 +19,10 @@ The specified database has an incompatible key blob.
 
 ```swift
 var errSecIncompatibleKeyBlob: OSStatus { get }
+```
+
+```c
+errSecIncompatibleKeyBlob
 ```
 
 

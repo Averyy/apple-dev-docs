@@ -1,7 +1,8 @@
 # VZGenericPlatformConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The platform configuration for a generic Intel or ARM virtual machine.
 
@@ -14,41 +15,46 @@ The platform configuration for a generic Intel or ARM virtual machine.
 class VZGenericPlatformConfiguration
 ```
 
+```objc
+@interface VZGenericPlatformConfiguration : VZPlatformConfiguration
+```
+
 ## Topics
 
 ### Creating a platform configuration
-- [init()](vzgenericplatformconfiguration/init.md)
+- [init()](./vzgenericplatformconfiguration/init%28%29.md)
   Returns a new generic platform configuration.
 ### Identifying the platform configuration
-- [var machineIdentifier: VZGenericMachineIdentifier](vzgenericplatformconfiguration/machineidentifier.md)
+- [var machineIdentifier: VZGenericMachineIdentifier](./vzgenericplatformconfiguration/machineidentifier.md)
   A value that represents a unique identifier for the virtual machine.
-- [var isNestedVirtualizationEnabled: Bool](vzgenericplatformconfiguration/isnestedvirtualizationenabled.md)
+- [var isNestedVirtualizationEnabled: Bool](./vzgenericplatformconfiguration/isnestedvirtualizationenabled.md)
   A Boolean value that indicates whether nested virtualization is in an enabled state.
-- [class var isNestedVirtualizationSupported: Bool](vzgenericplatformconfiguration/isnestedvirtualizationsupported.md)
+- [class var isNestedVirtualizationSupported: Bool](./vzgenericplatformconfiguration/isnestedvirtualizationsupported.md)
   A Boolean value that describes whether the platform configuration supports nested virtualization.
-- [class VZGenericMachineIdentifier](vzgenericmachineidentifier.md)
+- [class VZGenericMachineIdentifier](./vzgenericmachineidentifier.md)
   An object that represents a unique identifier for a virtual machine.
 
 ## Relationships
 
 ### Inherits From
-- [VZPlatformConfiguration](vzplatformconfiguration.md)
+- [VZPlatformConfiguration](./vzplatformconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZVirtualMachineConfiguration](vzvirtualmachineconfiguration.md)
+### Configurations
+- [class VZVirtualMachineConfiguration](./vzvirtualmachineconfiguration.md)
   The environment attributes and list of devices to use during the configuration of macOS or Linux VMs.
-- [class VZVirtualMachineStartOptions](vzvirtualmachinestartoptions.md)
+- [class VZVirtualMachineStartOptions](./vzvirtualmachinestartoptions.md)
   The abstract class for VM start options.
-- [class VZPlatformConfiguration](vzplatformconfiguration.md)
+- [class VZPlatformConfiguration](./vzplatformconfiguration.md)
   The base class for a platform configuration.
 
 

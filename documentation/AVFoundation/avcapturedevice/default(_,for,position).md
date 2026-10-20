@@ -1,7 +1,8 @@
 # default(_:for:position:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the default device for the specified device type, media type, and position.
 
@@ -19,9 +20,13 @@ Returns the default device for the specified device type, media type, and positi
 class func `default`(_ deviceType: AVCaptureDevice.DeviceType, for mediaType: AVMediaType?, position: AVCaptureDevice.Position) -> AVCaptureDevice?
 ```
 
+```objc
++ (AVCaptureDevice *) defaultDeviceWithDeviceType:(AVCaptureDeviceType) deviceType mediaType:(AVMediaType) mediaType position:(AVCaptureDevicePosition) position;
+```
+
 ## Mentions
 
-- [Choosing a capture device](choosing-a-capture-device.md)
+- [Choosing a capture device](../choosing-a-capture-device.md)
 
 #### Return Value
 
@@ -53,25 +58,26 @@ var defaultCamera: AVCaptureDevice? {
 
 ## Parameters
 
-- `deviceType`: The type of capture device to request, such as [`builtInWideAngleCamera`](avcapturedevice/devicetype-swift.struct/builtinwideanglecamera.md).
-- `mediaType`: The type of media to request capture of, such as [`video`](avmediatype/video.md) or [`audio`](avmediatype/audio.md).
-- `position`: The position of capture device to request relative to system hardware (front- or back-facing). Pass [`AVCaptureDevice.Position.unspecified`](avcapturedevice/position-swift.enum/unspecified.md) to search for devices regardless of position.
+- `deviceType`: The type of capture device to request, such as [`builtInWideAngleCamera`](./devicetype-swift.struct/builtinwideanglecamera.md).
+- `mediaType`: The type of media to request capture of, such as [`video`](../avmediatype/video.md) or [`audio`](../avmediatype/audio.md).
+- `position`: The position of capture device to request relative to system hardware (front- or back-facing). Pass [`AVCaptureDevice.Position.unspecified`](./position-swift.enum/unspecified.md) to search for devices regardless of position.
 
 ## See Also
 
-- [AVCaptureDevice.DiscoverySession](avcapturedevice/discoverysession.md)
+### Finding and monitoring devices
+- [AVCaptureDevice.DiscoverySession](./discoverysession.md)
   An object that finds capture devices that match specific search criteria.
-- [class func `default`(for: AVMediaType) -> AVCaptureDevice?](avcapturedevice/default(for:).md)
+- [class func `default`(for: AVMediaType) -> AVCaptureDevice?](./default%28for%29.md)
   Returns the default device that captures the specified media type.
-- [init?(uniqueID: String)](avcapturedevice/init(uniqueid:).md)
+- [init?(uniqueID: String)](./init%28uniqueid%29.md)
   Creates an object that represents a device with the specified identifier.
-- [class let wasConnectedNotification: NSNotification.Name](avcapturedevice/wasconnectednotification.md)
+- [class let wasConnectedNotification: NSNotification.Name](./wasconnectednotification.md)
   A notification the system posts when a new capture device becomes available.
-- [class let wasDisconnectedNotification: NSNotification.Name](avcapturedevice/wasdisconnectednotification.md)
+- [class let wasDisconnectedNotification: NSNotification.Name](./wasdisconnectednotification.md)
   A notification the system posts when an existing device becomes unavailable.
-- [class func devices(for: AVMediaType) -> [AVCaptureDevice]](avcapturedevice/devices(for:).md)
+- [class func devices(for: AVMediaType) -> [AVCaptureDevice]](./devices%28for%29.md)
   Returns devices capable of capturing media of the specified type.
-- [class func devices() -> [AVCaptureDevice]](avcapturedevice/devices.md)
+- [class func devices() -> [AVCaptureDevice]](./devices%28%29.md)
   Returns all available capture devices on the system.
 
 

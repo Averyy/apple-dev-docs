@@ -1,7 +1,8 @@
 # browserViewController(_:willCenterOn:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the specified view element is to be centered on the page.
 
@@ -14,9 +15,14 @@ Tells the delegate when the specified view element is to be centered on the page
 optional func browserViewController(_ browserViewController: TVBrowserViewController, willCenterOn viewElement: TVViewElement)
 ```
 
+```objc
+- (void) browserViewController:(TVBrowserViewController *) browserViewController willCenterOnViewElement:(TVViewElement *) viewElement;
+```
+
 ## See Also
 
-- [func browserViewController(TVBrowserViewController, didCenterOn: TVViewElement)](tvbrowserviewcontrollerdelegate/browserviewcontroller(_:didcenteron:).md)
+### Managing Focus
+- [func browserViewController(TVBrowserViewController, didCenterOn: TVViewElement)](./browserviewcontroller%28_,didcenteron%29.md)
   Tells the delegate how to respond when the specified view element completes the transition to becoming centered upon.
 
 

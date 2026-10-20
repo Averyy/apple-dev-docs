@@ -1,7 +1,8 @@
 # isAvailable(on:version:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether this node definition is available on a given platform and OS version.
 

@@ -1,7 +1,8 @@
 # write(to:metadata:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the sound classifier as a model file to a location in the file system.
 
@@ -35,7 +36,8 @@ This method:
 
 ## See Also
 
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mlsoundclassifier/write(tofile:metadata:).md)
+### Saving a sound classifier
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./write%28tofile,metadata%29.md)
   Exports the sound classifier as a model file to a path in the file system.
 
 

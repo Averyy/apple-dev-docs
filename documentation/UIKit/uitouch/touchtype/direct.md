@@ -1,7 +1,8 @@
 # UITouch.TouchType.direct
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A touch resulting from direct contact with the screen.
 
@@ -18,17 +19,22 @@ A touch resulting from direct contact with the screen.
 case direct
 ```
 
+```c
+UITouchTypeDirect
+```
+
 #### Discussion
 
 Direct touches occur when the user’s finger touches the screen.
 
 ## See Also
 
-- [UITouch.TouchType.indirect](uitouch/touchtype/indirect.md)
+### Touch types
+- [UITouch.TouchType.indirect](./indirect.md)
   A touch that doesn’t result from contact with the screen.
-- [UITouch.TouchType.pencil](uitouch/touchtype/pencil.md)
+- [UITouch.TouchType.pencil](./pencil.md)
   A touch from Apple Pencil.
-- [UITouch.TouchType.indirectPointer](uitouch/touchtype/indirectpointer.md)
+- [UITouch.TouchType.indirectPointer](./indirectpointer.md)
   A touch resulting from a button-based, indirect input device that describes the input sequence from button press to button release.
 
 

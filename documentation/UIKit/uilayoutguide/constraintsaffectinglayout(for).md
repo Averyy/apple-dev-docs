@@ -1,7 +1,8 @@
 # constraintsAffectingLayout(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The constraints that impact the layout of the guide.
 
@@ -18,9 +19,14 @@ The constraints that impact the layout of the guide.
 func constraintsAffectingLayout(for axis: NSLayoutConstraint.Axis) -> [NSLayoutConstraint]
 ```
 
+```objc
+- (NSArray<__kindof NSLayoutConstraint *> *) constraintsAffectingLayoutForAxis:(UILayoutConstraintAxis) axis;
+```
+
 ## See Also
 
-- [var hasAmbiguousLayout: Bool](uilayoutguide/hasambiguouslayout.md)
+### Debugging the layout guide
+- [var hasAmbiguousLayout: Bool](./hasambiguouslayout.md)
   A Boolean value indicating whether the constraints impacting the layout guide specify its location ambiguously.
 
 

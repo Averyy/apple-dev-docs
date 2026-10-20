@@ -1,7 +1,8 @@
 # init(lightweightCodeRequirements:)
 
 **Framework**: XPC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 26.0+

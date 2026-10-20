@@ -1,7 +1,8 @@
 # participants
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Array of participants to be added to group.
 
@@ -16,9 +17,10 @@ var participants: [RCSHandle.URI]
 
 ## See Also
 
-- [var cellularServiceID: CellularServiceID](rcsservice/addgroupchatparticipantsrequest/cellularserviceid.md)
+### Accessing request properties
+- [var cellularServiceID: CellularServiceID](./cellularserviceid.md)
   Service identifier to use for this request.
-- [var groupHandle: RCSHandle.Group](rcsservice/addgroupchatparticipantsrequest/grouphandle.md)
+- [var groupHandle: RCSHandle.Group](./grouphandle.md)
   Group handle indicating the group to which to add participants.
 
 

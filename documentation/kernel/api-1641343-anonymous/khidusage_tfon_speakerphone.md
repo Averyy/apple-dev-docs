@@ -1,14 +1,15 @@
 # kHIDUsage_Tfon_SpeakerPhone
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Tfon_SpeakerPhone = 0x2B
 ```
 

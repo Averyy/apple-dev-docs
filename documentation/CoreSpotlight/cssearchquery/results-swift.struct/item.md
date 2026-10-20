@@ -1,7 +1,8 @@
 # CSSearchQuery.Results.Item
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
@@ -19,21 +20,22 @@ struct Item
 ## Topics
 
 ### Instance Properties
-- [var item: CSSearchableItem](cssearchquery/results-swift.struct/item/item.md)
+- [var item: CSSearchableItem](./item/item.md)
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../../../Swift/comparable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Identifiable](../../../Swift/identifiable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CSSearchQuery.Results.Iterator](cssearchquery/results-swift.struct/iterator.md)
+### Structures
+- [CSSearchQuery.Results.Iterator](./iterator.md)
 
 
 ---

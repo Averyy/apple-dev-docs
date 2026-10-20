@@ -1,7 +1,8 @@
 # isHexDigit
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this character represents a hexadecimal digit.
 
@@ -26,13 +27,14 @@ Hexadecimal digits include 0-9, Latin letters a-f and A-F, and their fullwidth c
 
 ## See Also
 
-- [var isNumber: Bool](character/isnumber.md)
+### Checking a Character’s Numeric Properties
+- [var isNumber: Bool](./isnumber.md)
   A Boolean value indicating whether this character represents a number.
-- [var isWholeNumber: Bool](character/iswholenumber.md)
+- [var isWholeNumber: Bool](./iswholenumber.md)
   A Boolean value indicating whether this character represents a whole number.
-- [var wholeNumberValue: Int?](character/wholenumbervalue.md)
+- [var wholeNumberValue: Int?](./wholenumbervalue.md)
   The numeric value this character represents, if it represents a whole number.
-- [var hexDigitValue: Int?](character/hexdigitvalue.md)
+- [var hexDigitValue: Int?](./hexdigitvalue.md)
   The numeric value this character represents, if it is a hexadecimal digit.
 
 

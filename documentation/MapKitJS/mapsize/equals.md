@@ -1,7 +1,8 @@
 # equals(anotherSize)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares the sizes of two maps and indicates whether they’re of equal value.
 
@@ -10,7 +11,7 @@ Compares the sizes of two maps and indicates whether they’re of equal value.
 
 ## Declaration
 
-```swift
+```
 equals(anotherSize: MapSize): boolean;
 ```
 
@@ -24,7 +25,8 @@ Returns `true` if the `width` and `height` values of a map size exactly match th
 
 ## See Also
 
-- [copy()](mapsize/copy.md)
+### Copying and comparing map sizes
+- [copy()](./copy.md)
   Returns a copy of the map size object.
 
 

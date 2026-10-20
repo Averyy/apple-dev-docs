@@ -1,14 +1,15 @@
 # Accessing and modifying per-device data
 
-**Framework**: DeviceCheck
+**Framework**: DeviceCheck  
+**Role**: Article
 
 Use a token from your app to query and modify two per-device binary digits stored on an Apple server.
 
 #### Overview
 
-After you use the [`DCDevice`](dcdevice.md) class to generate an ephemeral token that identifies a device, your server uses HTTP `POST` commands to send requests to the query and update endpoints. The HTTP header field in each request must contain the authentication key you receive from Apple in a JSON web token (JWT). To create this token, you can use the same steps you use to create a provider authentication token for Apple Push Notification service (APNs); for details, see [`Communicate with APNs using authentication tokens`](https://developer.apple.comhttps://help.apple.com/developer-account/#/deva05921840).
+After you use the [`DCDevice`](./dcdevice.md) class to generate an ephemeral token that identifies a device, your server uses HTTP `POST` commands to send requests to the query and update endpoints. The HTTP header field in each request must contain the authentication key you receive from Apple in a JSON web token (JWT). To create this token, you can use the same steps you use to create a provider authentication token for Apple Push Notification service (APNs); for details, see [Communicate with APNs using authentication tokens](https://help.apple.com/developer-account/#/deva05921840).
 
-##### Create the Payload for a Query Request
+##### Create the payload for a query request
 
 To query the bits, you create a JSON payload that contains the fields listed in the table below.
 
@@ -36,7 +37,7 @@ When your query request succeeds, you receive a response that contains the field
 | `bit1` | Boolean | The value of the second bit |
 | `last_update_time` | String | The date of the last modification, in YYYY-MM format |
 
-##### Create the Payload for an Update Request
+##### Create the payload for an update request
 
 To update the bits, you create a JSON payload that contains the fields listed in the table below.
 
@@ -62,7 +63,7 @@ Here’s an example of a payload included in an update request:
 
 If the update was successful, you receive the HTTP response code `200`. For a full list of the response codes you can receive, see Understand the HTTP response codes.
 
-##### Create the Payload for a Device Validation Request
+##### Create the payload for a device validation request
 
 To validate a device, you create a JSON payload that contains the fields listed in the table below.
 
@@ -84,7 +85,7 @@ Here’s an example of a payload included in a device-validation request:
 
 If the request was successful, you receive the HTTP response code `200`. For a full list of response codes you can receive, see Understand the HTTP response codes.
 
-##### Send the Request
+##### Send the request
 
 Each request you send to the query and update endpoints must include an authorization header that contains your authentication key. The authentication key must use the ES256 algorithm and be in the Base 64 URL–encoded JSON web token format. If your token doesn’t use this format, you receive a `BAD_AUTHENTICATION_TOKEN` HTTP error.
 
@@ -113,7 +114,7 @@ To send a device-validation request, your `curl` command might look similar to t
 curl -i --verbose -H "Authorization: Bearer <GeneratedJWT>" \ -X POST --data-binary @ValidValidateDeviceToken Request.json \ https://api.development.devicecheck.apple.com/v1/validate_device_token 
 ```
 
-##### Understand the Http Response Codes
+##### Understand the HTTP response codes
 
 When you use the query and update endpoints to communicate with the server, you may receive one of the response codes listed in the table below.
 
@@ -136,7 +137,8 @@ When you use the query and update endpoints to communicate with the server, you 
 
 ## See Also
 
-- [class DCDevice](dcdevice.md)
+### Device identification
+- [class DCDevice](./dcdevice.md)
   A representation of a device that provides a unique, authenticated token.
 
 

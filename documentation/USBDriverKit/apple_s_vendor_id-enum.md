@@ -1,19 +1,21 @@
 # Apple’s Vendor ID
 
-**Framework**: USBDriverKit
+**Framework**: USBDriverKit  
+**Role**: API Collection
 
 Apple’s vendor ID, assigned by the USB-IF.
 
 ## Topics
 
 ### Getting the Vendor ID
-- [kIOUSBAppleVendorID](kiousbapplevendorid.md)
+- [kIOUSBAppleVendorID](./kiousbapplevendorid.md)
 
 ## See Also
 
-- [IOUSBDeviceDescriptor](iousbdevicedescriptor.md)
+### Device Descriptors
+- [IOUSBDeviceDescriptor](./iousbdevicedescriptor.md)
   The structure for storing a USB device descriptor.
-- [IOUSBDeviceQualifierDescriptor](iousbdevicequalifierdescriptor.md)
+- [IOUSBDeviceQualifierDescriptor](./iousbdevicequalifierdescriptor.md)
   The structure for storing a USB device qualifier descriptor.
 
 

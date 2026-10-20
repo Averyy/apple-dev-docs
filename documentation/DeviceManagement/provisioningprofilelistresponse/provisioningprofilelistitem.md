@@ -1,7 +1,8 @@
 # ProvisioningProfileListResponse.ProvisioningProfileListItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes a provisioning profile list item.
 
@@ -16,7 +17,7 @@ A dictionary that describes a provisioning profile list item.
 
 ## Declaration
 
-```swift
+```
 object ProvisioningProfileListResponse.ProvisioningProfileListItem
 ```
 
@@ -28,7 +29,8 @@ object ProvisioningProfileListResponse.ProvisioningProfileListItem
 
 ## See Also
 
-- [object ProvisioningProfileListResponse.ErrorChainItem](provisioningprofilelistresponse/errorchainitem.md)
+### Objects
+- [object ProvisioningProfileListResponse.ErrorChainItem](./errorchainitem.md)
   A dictionary that describes an error chain item.
 
 

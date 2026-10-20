@@ -1,7 +1,8 @@
 # identity
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identity rotation.
 
@@ -20,13 +21,18 @@ The identity rotation.
 static let identity: Rotation3D
 ```
 
+```c
+static const SPRotation3D SPRotation3DIdentity;
+```
+
 ## See Also
 
-- [static func slerp(from: Rotation3D, to: Rotation3D, t: Double, along: Rotation3D.SlerpPath) -> Rotation3D](rotation3d/slerp(from:to:t:along:).md)
+### Transforming a 3D rotation structure
+- [static func slerp(from: Rotation3D, to: Rotation3D, t: Double, along: Rotation3D.SlerpPath) -> Rotation3D](./slerp%28from,to,t,along%29.md)
   Returns the spherical linear interpolation along either the shortest or the longest arc between two rotations.
-- [Rotation3D.SlerpPath](rotation3d/slerppath.md)
+- [Rotation3D.SlerpPath](./slerppath.md)
   Constants that define the arc that a slerp operation takes.
-- [var inverse: Rotation3D](rotation3d/inverse.md)
+- [var inverse: Rotation3D](./inverse.md)
   The inverse of the rotation.
 
 

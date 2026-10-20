@@ -1,14 +1,15 @@
 # throttle_info_handle_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 typedef struct __throttle_info_handle *throttle_info_handle_t;
 ```
 

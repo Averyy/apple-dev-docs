@@ -1,7 +1,8 @@
 # ResourcesArchiver
 
 **Framework**: AppMigrationKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object your app uses to archive resources during an export operation.
 
@@ -22,14 +23,15 @@ final class ResourcesArchiver
 ## Topics
 
 ### Appending resources
-- [func appendItem(at: URL, pathInArchive: String?) async throws](resourcesarchiver/appenditem(at:pathinarchive:).md)
+- [func appendItem(at: URL, pathInArchive: String?) async throws](./resourcesarchiver/appenditem%28at,pathinarchive%29.md)
   Sends a file to the archiver for export.
 
 ## See Also
 
-- [func exportResources(to: sending ResourcesArchiver, request: MigrationRequestWithOptions<Self.OptionsType>) async throws](resourcesexportingwithoptions/exportresources(to:request:).md)
+### Exporting resources
+- [func exportResources(to: sending ResourcesArchiver, request: MigrationRequestWithOptions<Self.OptionsType>) async throws](./resourcesexportingwithoptions/exportresources%28to,request%29.md)
   Exports resources from the app, in response to a request from the migration system.
-- [struct MigrationRequestWithOptions](migrationrequestwithoptions.md)
+- [struct MigrationRequestWithOptions](./migrationrequestwithoptions.md)
   An object that exposes properties of the migration request.
 
 

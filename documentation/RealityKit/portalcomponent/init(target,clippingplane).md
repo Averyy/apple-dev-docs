@@ -1,7 +1,8 @@
 # init(target:clippingPlane:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a portal component with a target entity and an optional clipping plane.
 
@@ -21,18 +22,18 @@ init(target: Entity, clippingPlane: PortalComponent.ClippingPlane? = nil)
 
 #### Discussion
 
-This initializes the [`PortalComponent`](portalcomponent.md) with the given target entity, and an optional clipping plane. The target entity needs a [`WorldComponent`](worldcomponent.md) in its component set.
+This initializes the [`PortalComponent`](../portalcomponent.md) with the given target entity, and an optional clipping plane. The target entity needs a [`WorldComponent`](../worldcomponent.md) in its component set.
 
-To render a portal, an entity needs a [`PortalComponent`](portalcomponent.md) and a [`ModelComponent`](modelcomponent.md), using one or more [`PortalMaterial`](portalmaterial.md) instances.
+To render a portal, an entity needs a [`PortalComponent`](../portalcomponent.md) and a [`ModelComponent`](../modelcomponent.md), using one or more [`PortalMaterial`](../portalmaterial.md) instances.
 
-This initializer is equivalent to setting [`clippingMode`](portalcomponent/clippingmode-swift.property.md) with the corresponding [`PortalComponent.Plane`](portalcomponent/plane.md), leaving [`crossingMode`](portalcomponent/crossingmode-swift.property.md) at [`PortalComponent.CrossingMode.disabled`](portalcomponent/crossingmode-swift.enum/disabled.md).
+This initializer is equivalent to setting [`clippingMode`](./clippingmode-swift.property.md) with the corresponding [`PortalComponent.Plane`](./plane.md), leaving [`crossingMode`](./crossingmode-swift.property.md) at [`PortalComponent.CrossingMode.disabled`](./crossingmode-swift.enum/disabled.md).
 
-For new code, prefer [`init(target:clippingMode:crossingMode:)`](portalcomponent/init(target:clippingmode:crossingmode:).md), which lets you configure clipping and crossing together and supports volumetric boundaries.
+For new code, prefer [`init(target:clippingMode:crossingMode:)`](./init%28target,clippingmode,crossingmode%29.md), which lets you configure clipping and crossing together and supports volumetric boundaries.
 
 ## Parameters
 
 - `target`: A target world entity the portal is looking into.
-- `clippingPlane`: A planar representation of a portal to enable the clipping feature. When `nil`, [`clippingMode`](portalcomponent/clippingmode-swift.property.md) is [`PortalComponent.ClippingMode.disabled`](portalcomponent/clippingmode-swift.enum/disabled.md).
+- `clippingPlane`: A planar representation of a portal to enable the clipping feature. When `nil`, [`clippingMode`](./clippingmode-swift.property.md) is [`PortalComponent.ClippingMode.disabled`](./clippingmode-swift.enum/disabled.md).
 
 
 ---

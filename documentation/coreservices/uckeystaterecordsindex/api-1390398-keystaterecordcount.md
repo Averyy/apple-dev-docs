@@ -1,7 +1,8 @@
 # keyStateRecordCount
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 An unsigned 16-bit integer specifying the number of dead-key state records that are included in the resource.
 
@@ -13,6 +14,10 @@ An unsigned 16-bit integer specifying the number of dead-key state records that 
 
 ```swift
 var keyStateRecordCount: UInt16
+```
+
+```c
+UInt16 keyStateRecordCount;
 ```
 
 

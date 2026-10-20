@@ -1,7 +1,8 @@
 # cmpSize
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The size in bits of each component for a pixel.
 
@@ -12,6 +13,10 @@ The size in bits of each component for a pixel.
 
 ```swift
 var cmpSize: Int16
+```
+
+```c
+short cmpSize;
 ```
 
 #### Discussion

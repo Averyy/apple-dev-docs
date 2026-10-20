@@ -1,7 +1,8 @@
 # safeAreaInset(edge:alignment:spacing:content:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Shows the specified content beside the modified view.
 
@@ -19,6 +20,13 @@ Shows the specified content beside the modified view.
 ```swift
 nonisolated
 func safeAreaInset<V>(edge: HorizontalEdge, alignment: VerticalAlignment = .center, spacing: CGFloat? = nil, @ContentBuilder content: () -> V) -> some View where V : View
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func safeAreaInset<V>(edge: VerticalEdge, alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
 #### Return Value
@@ -51,15 +59,16 @@ struct ScrollableViewWithSideBar: View {
 
 ## See Also
 
-- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](view/ignoressafearea(_:edges:).md)
+### Staying in the safe areas
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](./ignoressafearea%28_,edges%29.md)
   Expands the safe area of a view.
-- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](view/ignoressafearea(_:edges:alignment:).md)
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](./ignoressafearea%28_,edges,alignment%29.md)
   Expands the safe area of a view aligning content within the new bounds using the provided alignment.
-- [func safeAreaPadding(_:)](view/safeareapadding(_:).md)
+- [func safeAreaPadding(_:)](./safeareapadding%28_%29.md)
   Adds the provided insets into the safe area of this view.
-- [func safeAreaPadding(Edge.Set, CGFloat?) -> some View](view/safeareapadding(_:_:).md)
+- [func safeAreaPadding(Edge.Set, CGFloat?) -> some View](./safeareapadding%28_,_%29.md)
   Adds the provided insets into the safe area of this view.
-- [struct SafeAreaRegions](safearearegions.md)
+- [struct SafeAreaRegions](../safearearegions.md)
   A set of symbolic safe area regions.
 
 

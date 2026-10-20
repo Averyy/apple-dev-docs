@@ -1,17 +1,22 @@
 # burnProgressPanel(_:burnDidFinish:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the delegate to handle the end-of-burn feedback.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func burnProgressPanel(_ theBurnPanel: DRBurnProgressPanel!, burnDidFinish burn: DRBurn!) -> Bool
+```
+
+```objc
+- (BOOL) burnProgressPanel:(DRBurnProgressPanel *) theBurnPanel burnDidFinish:(DRBurn *) burn;
 ```
 
 #### Return Value

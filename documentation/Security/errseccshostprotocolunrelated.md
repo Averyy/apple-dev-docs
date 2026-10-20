@@ -1,7 +1,8 @@
 # errSecCSHostProtocolUnrelated
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Host protocol violation: the specified code is not a guest of the specified code signing host.
 
@@ -13,6 +14,10 @@ Host protocol violation: the specified code is not a guest of the specified code
 
 ```swift
 var errSecCSHostProtocolUnrelated: OSStatus { get }
+```
+
+```c
+errSecCSHostProtocolUnrelated
 ```
 
 

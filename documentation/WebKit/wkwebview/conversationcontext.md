@@ -1,7 +1,8 @@
 # conversationContext
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 var conversationContext: UIConversationContext { get set }
 ```
 
+```objc
+@property (nonatomic, strong) UIConversationContext * conversationContext;
+```
+
 #### Discussion
 
 A reference to a conversation, such as a mail or messaging thread.
@@ -21,7 +26,8 @@ Set this conversation context before the keyboard appears; the keyboard uses thi
 
 ## See Also
 
-- [var isWritingToolsActive: Bool](wkwebview/iswritingtoolsactive.md)
+### Supporting Writing Tools
+- [var isWritingToolsActive: Bool](./iswritingtoolsactive.md)
 
 
 ---

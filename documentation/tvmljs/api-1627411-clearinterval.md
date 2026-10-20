@@ -1,7 +1,8 @@
 # clearInterval
 
 **Framework**: TVMLKit JS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Stops the function associated with the identifier from repeating.
 
@@ -10,7 +11,7 @@ Stops the function associated with the identifier from repeating.
 
 ## Declaration
 
-```swift
+```
 void clearInterval(
     in String intervalID
 );
@@ -18,7 +19,7 @@ void clearInterval(
 
 #### Discussion
 
-This function stops the function associated with the identifier created by the [`setInterval`](1627337-setinterval.md) function from executing.
+This function stops the function associated with the identifier created by the [`setInterval`](./api-1627337-setinterval.md) function from executing.
 
 ## Parameters
 
@@ -26,11 +27,12 @@ This function stops the function associated with the identifier created by the [
 
 ## See Also
 
-- [setInterval](1627337-setinterval.md)
+### Automating Function Timing
+- [setInterval](./api-1627337-setinterval.md)
   Repeatedly executes a given function at the given time interval.
-- [setTimeout](1627349-settimeout.md)
+- [setTimeout](./api-1627349-settimeout.md)
   Executes a given function after a set amount of time.
-- [clearTimeout](1627416-cleartimeout.md)
+- [clearTimeout](./api-1627416-cleartimeout.md)
   Stops the function associated with the identifier from executing.
 
 

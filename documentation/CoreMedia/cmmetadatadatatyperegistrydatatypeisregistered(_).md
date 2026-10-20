@@ -1,7 +1,8 @@
 # CMMetadataDataTypeRegistryDataTypeIsRegistered(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates the registration status of a data type identifier.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates the registration status of a data type id
 func CMMetadataDataTypeRegistryDataTypeIsRegistered(_ dataType: CFString) -> Bool
 ```
 
+```c
+extern Boolean CMMetadataDataTypeRegistryDataTypeIsRegistered(CFStringRef dataType);
+```
+
 #### Return Value
 
-[`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) if the data type has been registered; [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) otherwise.
+[`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) if the data type has been registered; [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) otherwise.
 
 ## Parameters
 
@@ -30,17 +35,18 @@ func CMMetadataDataTypeRegistryDataTypeIsRegistered(_ dataType: CFString) -> Boo
 
 ## See Also
 
-- [func CMMetadataDataTypeRegistryGetDataTypeDescription(CFString) -> CFString](cmmetadatadatatyperegistrygetdatatypedescription(_:).md)
+### Inspecting Metadata
+- [func CMMetadataDataTypeRegistryGetDataTypeDescription(CFString) -> CFString](./cmmetadatadatatyperegistrygetdatatypedescription%28_%29.md)
   Returns the data type description if it exists.
-- [func CMMetadataDataTypeRegistryGetConformingDataTypes(CFString) -> CFArray](cmmetadatadatatyperegistrygetconformingdatatypes(_:).md)
+- [func CMMetadataDataTypeRegistryGetConformingDataTypes(CFString) -> CFArray](./cmmetadatadatatyperegistrygetconformingdatatypes%28_%29.md)
   Returns the conforming data types for the data type, if any.
-- [func CMMetadataDataTypeRegistryDataTypeConformsToDataType(CFString, conformsTo: CFString) -> Bool](cmmetadatadatatyperegistrydatatypeconformstodatatype(_:conformsto:).md)
+- [func CMMetadataDataTypeRegistryDataTypeConformsToDataType(CFString, conformsTo: CFString) -> Bool](./cmmetadatadatatyperegistrydatatypeconformstodatatype%28_,conformsto%29.md)
   Returns a Boolean value that indicates whether a data type conforms to another data type.
-- [func CMMetadataDataTypeRegistryDataTypeIsBaseDataType(CFString) -> Bool](cmmetadatadatatyperegistrydatatypeisbasedatatype(_:).md)
+- [func CMMetadataDataTypeRegistryDataTypeIsBaseDataType(CFString) -> Bool](./cmmetadatadatatyperegistrydatatypeisbasedatatype%28_%29.md)
   Returns a Boolean value that indicates whether a data type identifier represents a base data type.
-- [func CMMetadataDataTypeRegistryGetBaseDataTypeForConformingDataType(CFString) -> CFString](cmmetadatadatatyperegistrygetbasedatatypeforconformingdatatype(_:).md)
+- [func CMMetadataDataTypeRegistryGetBaseDataTypeForConformingDataType(CFString) -> CFString](./cmmetadatadatatyperegistrygetbasedatatypeforconformingdatatype%28_%29.md)
   Returns the base data type identifier that a data type conforms to.
-- [func CMMetadataDataTypeRegistryGetBaseDataTypes() -> CFArray?](cmmetadatadatatyperegistrygetbasedatatypes().md)
+- [func CMMetadataDataTypeRegistryGetBaseDataTypes() -> CFArray?](./cmmetadatadatatyperegistrygetbasedatatypes%28%29.md)
   Returns an array of base data type identifiers.
 
 

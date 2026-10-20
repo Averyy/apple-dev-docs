@@ -1,7 +1,8 @@
 # isSuspended
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var isSuspended: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isSuspended) BOOL suspended;
 ```
 
 

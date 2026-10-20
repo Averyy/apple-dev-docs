@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new action for a call with data in an unarchiver.
 
@@ -18,13 +19,18 @@ Creates a new action for a call with data in an unarchiver.
 init?(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 ## Parameters
 
 - `aDecoder`: An unarchiver object.
 
 ## See Also
 
-- [init(call: UUID)](cxcallaction/init(call:).md)
+### Creating New Call Actions
+- [init(call: UUID)](./init%28call%29.md)
   Initializes a new action for a call identified by a given UUID.
 
 

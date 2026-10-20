@@ -1,7 +1,8 @@
 # controlPointBuffers
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var controlPointBuffers: [MTLMotionKeyframeData] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<MTLMotionKeyframeData *> * controlPointBuffers;
 ```
 
 

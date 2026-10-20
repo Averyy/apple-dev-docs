@@ -1,7 +1,8 @@
 # inputSourceID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for an input source.
 
@@ -14,13 +15,18 @@ An identifier for an input source.
 var inputSourceID: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * inputSourceID;
+```
+
 #### Discussion
 
 The identifier is unique among the input sources exposed by particular capture device instance.
 
 ## See Also
 
-- [var localizedName: String](avcapturedevice/inputsource/localizedname.md)
+### Accessing properties
+- [var localizedName: String](./localizedname.md)
   A localized, human-readable name for the input source.
 
 

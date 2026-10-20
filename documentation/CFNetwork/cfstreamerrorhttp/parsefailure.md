@@ -1,7 +1,8 @@
 # CFStreamErrorHTTP.parseFailure
 
 **Framework**: CFNetwork  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A parsing error occurred while an incoming message was being deserialized and appended to a message object. The headers of the incoming message may be formatted improperly.
 
@@ -19,11 +20,16 @@ A parsing error occurred while an incoming message was being deserialized and ap
 case parseFailure
 ```
 
+```c
+kCFStreamErrorHTTPParseFailure
+```
+
 ## See Also
 
-- [CFStreamErrorHTTP.redirectionLoop](cfstreamerrorhttp/redirectionloop.md)
+### Constants
+- [CFStreamErrorHTTP.redirectionLoop](./redirectionloop.md)
   A redirection loop has been detected.
-- [CFStreamErrorHTTP.badURL](cfstreamerrorhttp/badurl.md)
+- [CFStreamErrorHTTP.badURL](./badurl.md)
   The URL is not properly formatted.
 
 

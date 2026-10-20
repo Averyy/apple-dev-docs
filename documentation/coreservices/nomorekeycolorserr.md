@@ -1,7 +1,8 @@
 # noMoreKeyColorsErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 All the key indexes are in use. 
 

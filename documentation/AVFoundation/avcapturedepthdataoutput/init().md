@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a depth data output object.
 
@@ -15,6 +16,10 @@ Initializes a depth data output object.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

@@ -1,7 +1,8 @@
 # UINavigationBar.NSToolbarSection.content
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that hosts the navigation bar in the toolbar’s content column.
 
@@ -17,13 +18,18 @@ A constant that hosts the navigation bar in the toolbar’s content column.
 case content
 ```
 
+```c
+UINavigationBarNSToolbarSectionContent
+```
+
 ## See Also
 
-- [UINavigationBar.NSToolbarSection.none](uinavigationbar/nstoolbarsection/none.md)
+### Constants
+- [UINavigationBar.NSToolbarSection.none](./none.md)
   A constant that disables hosting the navigation bar in the toolbar.
-- [UINavigationBar.NSToolbarSection.sidebar](uinavigationbar/nstoolbarsection/sidebar.md)
+- [UINavigationBar.NSToolbarSection.sidebar](./sidebar.md)
   A constant that hosts the navigation bar in the toolbar’s sidebar column.
-- [UINavigationBar.NSToolbarSection.supplementary](uinavigationbar/nstoolbarsection/supplementary.md)
+- [UINavigationBar.NSToolbarSection.supplementary](./supplementary.md)
   A constant that hosts the navigation bar in the toolbar’s supplementary column.
 
 

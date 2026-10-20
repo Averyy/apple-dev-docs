@@ -1,7 +1,8 @@
 # sec_identity_copy_ref(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_identity_copy_ref(_ identity: sec_identity_t) -> Unmanaged<SecIdentity>?
+```
+
+```c
+SecIdentityRefsec_identity_copy_ref(sec_identity_t identity);
 ```
 
 #### Return Value

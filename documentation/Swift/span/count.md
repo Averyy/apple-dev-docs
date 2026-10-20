@@ -1,7 +1,8 @@
 # count
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of elements in the span.
 
@@ -24,7 +25,7 @@ var count: Int { get }
 
 To check whether the span is empty, use its `isEmpty` property instead of comparing `count` to zero.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

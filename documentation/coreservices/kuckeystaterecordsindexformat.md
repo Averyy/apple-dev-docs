@@ -1,9 +1,10 @@
 # kUCKeyStateRecordsIndexFormat
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-The format of a structure of type [`UCKeyStateRecordsIndex`](uckeystaterecordsindex.md).
+The format of a structure of type [`UCKeyStateRecordsIndex`](./uckeystaterecordsindex.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

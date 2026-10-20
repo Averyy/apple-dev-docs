@@ -1,7 +1,8 @@
 # wifiAware(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configure Wi-Fi Aware properties on an `NetworkConnection`
 
@@ -14,6 +15,8 @@ Configure Wi-Fi Aware properties on an `NetworkConnection`
 ```swift
 func wifiAware(_ configurator: (inout WAParameters) -> Void) -> NWParametersBuilder<Top, repeat each P>
 ```
+
+Available when `Top` conforms to `NetworkProtocolOptions` and `each P` conforms to `NetworkProtocolOptions`.
 
 #### Return Value
 

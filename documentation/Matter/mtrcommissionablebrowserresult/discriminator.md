@@ -1,7 +1,8 @@
 # discriminator
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var discriminator: NSNumber { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSNumber * discriminator;
 ```
 
 

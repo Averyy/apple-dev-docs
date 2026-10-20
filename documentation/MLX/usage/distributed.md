@@ -6,48 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/usage/distributed.html
 
 # Distributed Communication
 
-**
-
-- [.rst](../_sources/usage/distributed.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Distributed Communication
-
- Table of contents 
-
-## Contents
-
-# Distributed Communication
-
 MLX supports distributed communication operations that allow the computational cost
 of training or inference to be shared across many physical machines. At the
 moment we support several different communication backends introduced below.
 
 | Backend | Description |
 | --- | --- |
-| MPI | A full featured and mature distributed communications library. |
-| RING | Ring all reduce and all gather over TCP sockets. Always available and
-usually faster than MPI. |
-| JACCL | Low latency communication with RDMA over thunderbolt. Necessary for
-things like tensor parallelism. |
-| NCCL | The backend of choice for CUDA environments. |
+| [MPI](#mpi-section) | A full featured and mature distributed communications library. |
+| [RING](#ring-section) | Ring all reduce and all gather over TCP sockets. Always available and usually faster than MPI. |
+| [JACCL](#jaccl-section) | Low latency communication with RDMA over thunderbolt. Necessary for things like tensor parallelism. |
+| [NCCL](#nccl-section) | The backend of choice for CUDA environments. |
 
 The list of all currently supported operations and their documentation can be
-seen in the [API docs](../python/distributed.html#distributed).
+seen in the [API docs](../python/distributed.md#distributed).
 
 ## Getting Started
 
@@ -107,13 +78,13 @@ information on using `mlx.launch`.
 
 ### Selecting Backend
 
-You can select the backend you want to use when calling [init()](../python/_autosummary/mlx.core.distributed.init.html#mlx.core.distributed.init) by passing
+You can select the backend you want to use when calling [init()](../python/_autosummary/mlx.core.distributed.init.md#mlx.core.distributed.init) by passing
 one of `{'any', 'ring', 'jaccl', 'mpi', 'nccl'}`. When passing `any`, MLX will try all
 available backends. If they all fail then a singleton group is created.
 
 Note
 
-After a distributed backend is successfully initialized [init()](../python/_autosummary/mlx.core.distributed.init.html#mlx.core.distributed.init) will
+After a distributed backend is successfully initialized [init()](../python/_autosummary/mlx.core.distributed.init.md#mlx.core.distributed.init) will
 return **the same backend** if called without arguments or with backend set to
 `any`.
 
@@ -136,8 +107,8 @@ world_any = mx.distributed.init()  # same as MPI because it was initialized firs
 
 ## Distributed Program Examples
 
-- [Data Parallelism](../examples/data_parallelism.html#data-parallelism)
-- [Tensor Parallelism](../examples/tensor_parallelism.html#tensor-parallelism)
+- [Data Parallelism](../examples/data_parallelism.md#data-parallelism)
+- [Tensor Parallelism](../examples/tensor_parallelism.md#tensor-parallelism)
 
 ## Getting Started with Ring
 
@@ -145,7 +116,7 @@ The ring backend does not depend on any third party library so it is always
 available. It uses TCP sockets so the nodes need to be reachable via a network.
 As the name suggests the nodes are connected in a ring which means that rank 1
 can only communicate with rank 0 and rank 2, rank 2 only with rank 1 and rank 3
-and so on and so forth. As a result [send()](../python/_autosummary/mlx.core.distributed.send.html#mlx.core.distributed.send) and [recv()](../python/_autosummary/mlx.core.distributed.recv.html#mlx.core.distributed.recv) with
+and so on and so forth. As a result [send()](../python/_autosummary/mlx.core.distributed.send.md#mlx.core.distributed.send) and [recv()](../python/_autosummary/mlx.core.distributed.recv.md#mlx.core.distributed.recv) with
 arbitrary sender and receiver are not supported in the ring backend.
 
 ### Defining a Ring
@@ -251,11 +222,11 @@ the following topology visualizations, the left one is valid because there is a
 connection from any node to any other node, while for the one on the right M3
 Ultra 1 is not connected to M3 Ultra 2.
 
-![M3 Ultra thunderbolt mesh](../_static/distributed/m3-ultra-mesh.png)
+![M3 Ultra thunderbolt mesh](https://ml-explore.github.io/mlx/build/html/_static/distributed/m3-ultra-mesh.png)
 
 Fully connected mesh of four M3 Ultra.
 
-![M3 Ultra broken thunderbolt mesh](../_static/distributed/m3-ultra-mesh-broken.png)
+![M3 Ultra broken thunderbolt mesh](https://ml-explore.github.io/mlx/build/html/_static/distributed/m3-ultra-mesh-broken.png)
 
 Not a valid mesh (M3 Ultra 1 is not connected to M3 Ultra 2).
 
@@ -363,7 +334,7 @@ mlx.launch --verbose --backend jaccl --hostfile m3-ultra-jaccl.json -- \
 
 Note
 
-Defining the environment variable [MLX_METAL_FAST_SYNCH](environment_variables.html#envvar-MLX_METAL_FAST_SYNCH) to `1`
+Defining the environment variable [MLX_METAL_FAST_SYNCH](environment_variables.md#envvar-MLX_METAL_FAST_SYNCH) to `1`
 by passing `--env MLX_METAL_FAST_SYNCH=1` enables a different, faster way
 of synchronizing between the GPU and the CPU. It is not specific to the
 JACCL backend and can be used in all cases where the CPU and GPU need to
@@ -379,7 +350,7 @@ by default and best left unset.
 During initialization JACCL exchanges RDMA connection metadata between ranks
 over a side channel. By default this is a simple TCP star all-gather, but you
 can provide your own side-channel all-gather via the
-`all_gather_factory` argument of [mlx.core.distributed.init()](../python/_autosummary/mlx.core.distributed.init.html#mlx.core.distributed.init) when using
+`all_gather_factory` argument of [mlx.core.distributed.init()](../python/_autosummary/mlx.core.distributed.init.md#mlx.core.distributed.init) when using
 `backend='jaccl'`.
 
 The factory is called once per rank with `(rank, size)` and must return a
@@ -517,10 +488,10 @@ Below we list the environment variables required to use each backend.
 
 ### Ring
 
-[MLX_RANK](environment_variables.html#envvar-MLX_RANK) should contain a single 0-based integer that defines the rank of
+[MLX_RANK](environment_variables.md#envvar-MLX_RANK) should contain a single 0-based integer that defines the rank of
 the process.
 
-[MLX_HOSTFILE](environment_variables.html#envvar-MLX_HOSTFILE) should contain the path to a json file that contains IPs and
+[MLX_HOSTFILE](environment_variables.md#envvar-MLX_HOSTFILE) should contain the path to a json file that contains IPs and
 ports for each rank to listen to, something like the following:
 
 ```
@@ -532,18 +503,18 @@ ports for each rank to listen to, something like the following:
 ]
 ```
 
-[MLX_RING_VERBOSE](environment_variables.html#envvar-MLX_RING_VERBOSE) is optional and if set to 1 it enables some more logging
+[MLX_RING_VERBOSE](environment_variables.md#envvar-MLX_RING_VERBOSE) is optional and if set to 1 it enables some more logging
 from the distributed backend.
 
 ### JACCL
 
-[MLX_RANK](environment_variables.html#envvar-MLX_RANK) should contain a single 0-based integer that defines the rank of
+[MLX_RANK](environment_variables.md#envvar-MLX_RANK) should contain a single 0-based integer that defines the rank of
 the process.
 
-[MLX_JACCL_COORDINATOR](environment_variables.html#envvar-MLX_JACCL_COORDINATOR) should contain the IP and port that rank 0 can listen
+[MLX_JACCL_COORDINATOR](environment_variables.md#envvar-MLX_JACCL_COORDINATOR) should contain the IP and port that rank 0 can listen
 to all the other ranks connect to in order to establish the RDMA connections.
 
-[MLX_IBV_DEVICES](environment_variables.html#envvar-MLX_IBV_DEVICES) should contain the path to a json file that contains the
+[MLX_IBV_DEVICES](environment_variables.md#envvar-MLX_IBV_DEVICES) should contain the path to a json file that contains the
 ibverbs device names that connect each node to each other node, something like
 the following:
 
@@ -558,10 +529,10 @@ the following:
 
 ### NCCL
 
-[MLX_RANK](environment_variables.html#envvar-MLX_RANK) should contain a single 0-based integer that defines the rank of
+[MLX_RANK](environment_variables.md#envvar-MLX_RANK) should contain a single 0-based integer that defines the rank of
 the process.
 
-[MLX_WORLD_SIZE](environment_variables.html#envvar-MLX_WORLD_SIZE) should contain the total number of processes that will be
+[MLX_WORLD_SIZE](environment_variables.md#envvar-MLX_WORLD_SIZE) should contain the total number of processes that will be
 launched.
 
 **NCCL_HOST_IP** and **NCCL_PORT** should contain the IP and port that all
@@ -570,7 +541,7 @@ hosts can connect to to establish the NCCL communication.
 **CUDA_VISIBLE_DEVICES** should contain the local index of the gpu that
 corresponds to this process.
 
-Of course any [other environment variable](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/env.md) that is
+Of course any [other environment variable](https://docs.nvidia.com/deeplearning/nccl/user-guide/docs/env.html) that is
 used by NCCL can be set.
 
 ## Tips and Tricks
@@ -582,9 +553,9 @@ communication capabilities of MLX.
 You can use the pattern `mlx.launch -n2 -- my_script.py` to run a small
 scale test on a single node first.
 - *Batch your communication.*
-As described in the [training example](../examples/data_parallelism.html#training-example), performing a
+As described in the [training example](../examples/data_parallelism.md#training-example), performing a
 lot of small communications can hurt performance. Copy the approach of
-[mlx.nn.average_gradients()](../python/_autosummary/mlx.nn.average_gradients.html#mlx.nn.average_gradients) to gather many small communications in a
+[mlx.nn.average_gradients()](../python/_autosummary/mlx.nn.average_gradients.md#mlx.nn.average_gradients) to gather many small communications in a
 single large one.
 - *Visualize the connectivity.*
 Use `mlx.distributed_config --hosts h1,h2,h3 --over thunderbolt --dot` to
@@ -594,5 +565,3 @@ correctly. See the [JACCL section](#jaccl-section) for examples.
 `mlx.launch` is meant for interactive use. It broadcasts stdin to all
 processes and gathers stdout from all processes. This makes using `pdb` a
 breeze.
-
-** Contents

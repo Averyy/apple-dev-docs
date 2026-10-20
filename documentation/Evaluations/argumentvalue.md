@@ -1,7 +1,8 @@
 # ArgumentValue
 
 **Framework**: Evaluations  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A primitive, generable value type for argument specifications.
 
@@ -33,46 +34,47 @@ Unlike `StructuredValue`, this enum only contains primitive types (no recursive 
 ## Topics
 
 ### Values
-- [ArgumentValue.string(_:)](argumentvalue/string(_:).md)
+- [ArgumentValue.string(_:)](./argumentvalue/string%28_%29.md)
   A string value.
-- [ArgumentValue.int(_:)](argumentvalue/int(_:).md)
+- [ArgumentValue.int(_:)](./argumentvalue/int%28_%29.md)
   An integer value.
-- [ArgumentValue.double(_:)](argumentvalue/double(_:).md)
+- [ArgumentValue.double(_:)](./argumentvalue/double%28_%29.md)
   A double-precision floating-point value.
-- [ArgumentValue.bool(_:)](argumentvalue/bool(_:).md)
+- [ArgumentValue.bool(_:)](./argumentvalue/bool%28_%29.md)
   A Boolean value.
 ### Converting values
-- [var structuredValue: StructuredValue](argumentvalue/structuredvalue.md)
+- [var structuredValue: StructuredValue](./argumentvalue/structuredvalue.md)
   The equivalent structured value representation of this argument value.
-- [enum StructuredValue](structuredvalue.md)
+- [enum StructuredValue](./structuredvalue.md)
   A type-safe representation of JSON values.
 
 ## Relationships
 
 ### Conforms To
-- [ConvertibleFromGeneratedContent](../foundationmodels/convertiblefromgeneratedcontent.md)
-- [ConvertibleToGeneratedContent](../foundationmodels/convertibletogeneratedcontent.md)
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByBooleanLiteral](../swift/expressiblebybooleanliteral.md)
-- [ExpressibleByExtendedGraphemeClusterLiteral](../swift/expressiblebyextendedgraphemeclusterliteral.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [ExpressibleByStringLiteral](../swift/expressiblebystringliteral.md)
-- [ExpressibleByUnicodeScalarLiteral](../swift/expressiblebyunicodescalarliteral.md)
-- [Generable](../foundationmodels/generable.md)
-- [Hashable](../swift/hashable.md)
-- [InstructionsRepresentable](../foundationmodels/instructionsrepresentable.md)
-- [PromptRepresentable](../foundationmodels/promptrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ConvertibleFromGeneratedContent](../FoundationModels/convertiblefromgeneratedcontent.md)
+- [ConvertibleToGeneratedContent](../FoundationModels/convertibletogeneratedcontent.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [ExpressibleByBooleanLiteral](../Swift/expressiblebybooleanliteral.md)
+- [ExpressibleByExtendedGraphemeClusterLiteral](../Swift/expressiblebyextendedgraphemeclusterliteral.md)
+- [ExpressibleByFloatLiteral](../Swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../Swift/expressiblebyintegerliteral.md)
+- [ExpressibleByStringLiteral](../Swift/expressiblebystringliteral.md)
+- [ExpressibleByUnicodeScalarLiteral](../Swift/expressiblebyunicodescalarliteral.md)
+- [Generable](../FoundationModels/generable.md)
+- [Hashable](../Swift/hashable.md)
+- [InstructionsRepresentable](../FoundationModels/instructionsrepresentable.md)
+- [PromptRepresentable](../FoundationModels/promptrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum StructuredValue](structuredvalue.md)
+### Supporting types
+- [enum StructuredValue](./structuredvalue.md)
   A type-safe representation of JSON values.
 
 

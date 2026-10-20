@@ -1,7 +1,8 @@
 # allowsReplacementForCurrentlyHighlightedResult
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
 
@@ -17,25 +18,30 @@ A Boolean value that indicates whether to allow replacing the result the find pa
 var allowsReplacementForCurrentlyHighlightedResult: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL allowsReplacementForCurrentlyHighlightedResult;
+```
+
 #### Discussion
 
-This property determines whether the find panel supports replacement for the currently highlighted item. If [`true`](https://developer.apple.com/documentation/swift/true), the system enables the Replace button in the find panel and the hardware keyboard shortcuts for replacement.
+This property determines whether the find panel supports replacement for the currently highlighted item. If [`true`](../../Swift/true.md), the system enables the Replace button in the find panel and the hardware keyboard shortcuts for replacement.
 
-The default value is [`true`](https://developer.apple.com/documentation/swift/true) if [`supportsReplacement`](uifindsession/supportsreplacement.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+The default value is [`true`](../../Swift/true.md) if [`supportsReplacement`](./supportsreplacement.md) is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var resultCount: Int](uifindsession/resultcount.md)
+### Getting session information
+- [var resultCount: Int](./resultcount.md)
   The total number of results the search matches.
-- [var highlightedResultIndex: Int](uifindsession/highlightedresultindex.md)
+- [var highlightedResultIndex: Int](./highlightedresultindex.md)
   The index of the result the find panel highlights.
-- [var supportsReplacement: Bool](uifindsession/supportsreplacement.md)
+- [var supportsReplacement: Bool](./supportsreplacement.md)
   A Boolean value that indicates whether to allow replacing find panel results.
-- [var searchResultDisplayStyle: UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.property.md)
+- [var searchResultDisplayStyle: UIFindSession.SearchResultDisplayStyle](./searchresultdisplaystyle-swift.property.md)
   The information the find panel includes in the summary of found results.
-- [UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.enum.md)
+- [UIFindSession.SearchResultDisplayStyle](./searchresultdisplaystyle-swift.enum.md)
   Constants that describe the results summary the find panel UI includes.
-- [var allowsReplacement: Bool](uifindsession/allowsreplacement.md)
+- [var allowsReplacement: Bool](./allowsreplacement.md)
   A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
 
 

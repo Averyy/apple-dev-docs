@@ -1,7 +1,8 @@
 # HandSkeleton.JointName.middleFingerIntermediateBase
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 1.0+
@@ -14,10 +15,11 @@ case middleFingerIntermediateBase
 
 ## See Also
 
-- [HandSkeleton.JointName.middleFingerIntermediateTip](handskeleton/jointname/middlefingerintermediatetip.md)
-- [HandSkeleton.JointName.middleFingerKnuckle](handskeleton/jointname/middlefingerknuckle.md)
-- [HandSkeleton.JointName.middleFingerMetacarpal](handskeleton/jointname/middlefingermetacarpal.md)
-- [HandSkeleton.JointName.middleFingerTip](handskeleton/jointname/middlefingertip.md)
+### Middle finger joints
+- [HandSkeleton.JointName.middleFingerIntermediateTip](./middlefingerintermediatetip.md)
+- [HandSkeleton.JointName.middleFingerKnuckle](./middlefingerknuckle.md)
+- [HandSkeleton.JointName.middleFingerMetacarpal](./middlefingermetacarpal.md)
+- [HandSkeleton.JointName.middleFingerTip](./middlefingertip.md)
 
 
 ---

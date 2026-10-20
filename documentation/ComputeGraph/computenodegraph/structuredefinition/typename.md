@@ -1,7 +1,8 @@
 # typeName
 
 **Framework**: Compute Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name used to refer to the structure type.
 
@@ -12,7 +13,7 @@ The name used to refer to the structure type.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

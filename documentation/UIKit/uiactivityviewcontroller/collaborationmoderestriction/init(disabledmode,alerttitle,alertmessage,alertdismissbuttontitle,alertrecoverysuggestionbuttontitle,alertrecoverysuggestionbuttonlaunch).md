@@ -1,7 +1,8 @@
 # init(disabledMode:alertTitle:alertMessage:alertDismissButtonTitle:alertRecoverySuggestionButtonTitle:alertRecoverySuggestionButtonLaunch:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a disabled mode that displays an alert with a recovery suggestion.
 
@@ -17,13 +18,18 @@ Creates a disabled mode that displays an alert with a recovery suggestion.
 init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunch alertRecoverySuggestionButtonLaunchURL: URL)
 ```
 
+```objc
+- (instancetype) initWithDisabledMode:(UIActivityCollaborationMode) disabledMode alertTitle:(NSString *) alertTitle alertMessage:(NSString *) alertMessage alertDismissButtonTitle:(NSString *) alertDismissButtonTitle alertRecoverySuggestionButtonTitle:(NSString *) alertRecoverySuggestionButtonTitle alertRecoverySuggestionButtonLaunchURL:(NSURL *) alertRecoverySuggestionButtonLaunchURL;
+```
+
 ## See Also
 
-- [init(disabledMode: UIActivityCollaborationMode)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:).md)
+### Creating a disabled mode
+- [init(disabledMode: UIActivityCollaborationMode)](./init%28disabledmode%29.md)
   Copies the provided disabled mode.
-- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:).md)
+- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String)](./init%28disabledmode,alerttitle,alertmessage%29.md)
   Creates a disabled mode that displays an alert when someone tries to select that mode.
-- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:).md)
+- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String)](./init%28disabledmode,alerttitle,alertmessage,alertdismissbuttontitle%29.md)
   Creates a disabled mode that displays an alert with a customized dismiss button.
 
 

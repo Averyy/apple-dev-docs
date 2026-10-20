@@ -1,7 +1,8 @@
 # init(unordered:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a trajectory expectation with only unordered requirements.
 
@@ -22,7 +23,7 @@ init(unordered: [ToolExpectation])
 
 ## Mentions
 
-- [Evaluating tool-calling behavior](evaluating-tool-calling-behavior.md)
+- [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
 #### Discussion
 
@@ -34,9 +35,10 @@ Unordered-only expectations always allow additional calls.
 
 ## See Also
 
-- [init(ordered: [ToolExpectation], unordered: [ToolExpectation], allowsAdditionalToolCalls: Bool)](trajectoryexpectation/init(ordered:unordered:allowsadditionaltoolcalls:).md)
+### Creating multi-tool expectations
+- [init(ordered: [ToolExpectation], unordered: [ToolExpectation], allowsAdditionalToolCalls: Bool)](./init%28ordered,unordered,allowsadditionaltoolcalls%29.md)
   Creates a trajectory expectation with ordered and unordered requirements, and controls whether unmatched tool calls are permitted.
-- [init(ordered: [ToolExpectation], unordered: [ToolExpectation], disallowed: [ToolExpectation])](trajectoryexpectation/init(ordered:unordered:disallowed:).md)
+- [init(ordered: [ToolExpectation], unordered: [ToolExpectation], disallowed: [ToolExpectation])](./init%28ordered,unordered,disallowed%29.md)
   Creates a trajectory expectation with ordered and unordered requirements, plus specific tools that the model must not call.
 
 

@@ -1,18 +1,19 @@
 # leadingFrames
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of leading (previous) input frames the converter requires to perform a high-quality conversion.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The number of leading (previous) input frames the converter requires to perform 
 var leadingFrames: AVAudioFrameCount
 ```
 
+```c
+AVAudioFrameCount leadingFrames;
+```
+
 ## See Also
 
-- [var trailingFrames: AVAudioFrameCount](avaudioconverterprimeinfo/trailingframes.md)
+### Getting frame properties
+- [var trailingFrames: AVAudioFrameCount](./trailingframes.md)
   The number of trailing input frames, past the end input frame, the converter requires to perform a high-quality conversion.
 
 

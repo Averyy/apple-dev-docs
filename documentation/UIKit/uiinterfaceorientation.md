@@ -1,15 +1,16 @@
 # UIInterfaceOrientation
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the orientation of the app’s user interface.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,50 +18,55 @@ Constants that specify the orientation of the app’s user interface.
 enum UIInterfaceOrientation
 ```
 
+```c
+enum UIInterfaceOrientation : NSInteger;
+```
+
 #### Overview
 
-Starting in iOS 8, you should employ the [`UITraitCollection`](uitraitcollection.md) and [`UITraitEnvironment`](uitraitenvironment.md) APIs, and size class properties as used in those APIs, instead of using [`UIInterfaceOrientation`](uiinterfaceorientation.md) constants or otherwise writing your app in terms of interface orientation.
+Starting in iOS 8, you should employ the [`UITraitCollection`](./uitraitcollection.md) and [`UITraitEnvironment`](./uitraitenvironment.md) APIs, and size class properties as used in those APIs, instead of using [`UIInterfaceOrientation`](./uiinterfaceorientation.md) constants or otherwise writing your app in terms of interface orientation.
 
-In earlier versions of iOS, you used these constants in the [`statusBarOrientation`](uiapplication/statusbarorientation.md) property and the [`setStatusBarOrientation(_:animated:)`](uiapplication/setstatusbarorientation(_:animated:).md) method.
+In earlier versions of iOS, you used these constants in the [`statusBarOrientation`](./uiapplication/statusbarorientation.md) property and the [`setStatusBarOrientation(_:animated:)`](./uiapplication/setstatusbarorientation%28_,animated%29.md) method.
 
-> ❗ **Important**:  Notice that [`UIDeviceOrientation.landscapeRight`](uideviceorientation/landscaperight.md) is assigned to [`UIInterfaceOrientation.landscapeLeft`](uiinterfaceorientation/landscapeleft.md) and [`UIDeviceOrientation.landscapeLeft`](uideviceorientation/landscapeleft.md) is assigned to [`UIInterfaceOrientation.landscapeRight`](uiinterfaceorientation/landscaperight.md). The reason for this is that rotating the device requires rotating the content in the opposite direction.
+> ❗ **Important**:  Notice that [`UIDeviceOrientation.landscapeRight`](./uideviceorientation/landscaperight.md) is assigned to [`UIInterfaceOrientation.landscapeLeft`](./uiinterfaceorientation/landscapeleft.md) and [`UIDeviceOrientation.landscapeLeft`](./uideviceorientation/landscapeleft.md) is assigned to [`UIInterfaceOrientation.landscapeRight`](./uiinterfaceorientation/landscaperight.md). The reason for this is that rotating the device requires rotating the content in the opposite direction.
 
 ## Topics
 
 ### Orientations
-- [UIInterfaceOrientation.unknown](uiinterfaceorientation/unknown.md)
+- [UIInterfaceOrientation.unknown](./uiinterfaceorientation/unknown.md)
   The orientation of the device is unknown.
-- [UIInterfaceOrientation.portrait](uiinterfaceorientation/portrait.md)
+- [UIInterfaceOrientation.portrait](./uiinterfaceorientation/portrait.md)
   The device is in portrait mode, with the device upright and the Home button on the bottom.
-- [UIInterfaceOrientation.portraitUpsideDown](uiinterfaceorientation/portraitupsidedown.md)
+- [UIInterfaceOrientation.portraitUpsideDown](./uiinterfaceorientation/portraitupsidedown.md)
   The device is in portrait mode but is upside down, with the device upright and the Home button at the top.
-- [UIInterfaceOrientation.landscapeLeft](uiinterfaceorientation/landscapeleft.md)
+- [UIInterfaceOrientation.landscapeLeft](./uiinterfaceorientation/landscapeleft.md)
   The device is in landscape mode, with the device upright and the Home button on the left.
-- [UIInterfaceOrientation.landscapeRight](uiinterfaceorientation/landscaperight.md)
+- [UIInterfaceOrientation.landscapeRight](./uiinterfaceorientation/landscaperight.md)
   The device is in landscape mode, with the device upright and the Home button on the right.
 ### Orientation Checks
-- [var isLandscape: Bool](uiinterfaceorientation/islandscape.md)
+- [var isLandscape: Bool](./uiinterfaceorientation/islandscape.md)
   A Boolean value that indicates whether the user interface is currently presented in a landscape orientation.
-- [var isPortrait: Bool](uiinterfaceorientation/isportrait.md)
+- [var isPortrait: Bool](./uiinterfaceorientation/isportrait.md)
   A Boolean value that indicates whether the user interface is currently presented in a portrait orientation.
 ### Initializers
-- [init?(rawValue: Int)](uiinterfaceorientation/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uiinterfaceorientation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct UIInterfaceOrientationMask](uiinterfaceorientationmask.md)
+### Managing interface geometry
+- [struct UIInterfaceOrientationMask](./uiinterfaceorientationmask.md)
   Constants that specify a view controller’s supported interface orientations.
-- [class let invalidInterfaceOrientationException: NSExceptionName](uiapplication/invalidinterfaceorientationexception.md)
+- [class let invalidInterfaceOrientationException: NSExceptionName](./uiapplication/invalidinterfaceorientationexception.md)
   An exception that’s thrown if a view controller or the app returns an invalid set of supported interface orientations.
 
 

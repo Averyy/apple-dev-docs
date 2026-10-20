@@ -1,7 +1,8 @@
 # vImageLookupTable_Planar8toPlanar96(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Uses a lookup table to transform an 8-bit planar image to a 32-bit-per-channel, three-channel interleaved image.
 
@@ -20,13 +21,17 @@ Uses a lookup table to transform an 8-bit planar image to a 32-bit-per-channel, 
 func vImageLookupTable_Planar8toPlanar96(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ table: UnsafePointer<Pixel_FFFF>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageLookupTable_Planar8toPlanar96(const vImage_Buffer *src, const vImage_Buffer *dest, const Pixel_FFFF table[256], vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
-For each pixel, this function uses the 8-bit value from the source image as an index to the [`Pixel_FFFF`](pixel_ffff.md) value from the table. The per-pixel conversion calculation is equivalent to the following:
+For each pixel, this function uses the 8-bit value from the source image as an index to the [`Pixel_FFFF`](./pixel_ffff.md) value from the table. The per-pixel conversion calculation is equivalent to the following:
 
 ```c
 uint32_t table[256*4];       // 128 bits per pixel and 32 bits per channel.
@@ -117,16 +122,17 @@ printf("[%g, %g, %g,  %g, %g, %g,  %g, %g, %g,  %g, %g, %g,  %g, %g, %g]\n",
 
 - `src`: The source vImage buffer.
 - `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `table`: A lookup table that contains 256 [`Pixel_FFFF`](pixel_ffff.md) values. Elements `1`, `2`, and `3` store the red, green, and blue values.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `table`: A lookup table that contains 256 [`Pixel_FFFF`](./pixel_ffff.md) values. Elements `1`, `2`, and `3` store the red, green, and blue values.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageLookupTable_Planar8toPlanar24(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt32>, vImage_Flags) -> vImage_Error](vimagelookuptable_planar8toplanar24(_:_:_:_:).md)
+### Transforming planar-to-interleaved with a lookup table
+- [func vImageLookupTable_Planar8toPlanar24(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt32>, vImage_Flags) -> vImage_Error](./vimagelookuptable_planar8toplanar24%28_,_,_,_%29.md)
   Uses a lookup table to transform an 8-bit planar image to an 8-bit-per-channel, three-channel interleaved image.
-- [func vImageLookupTable_Planar8toPlanar48(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt64>, vImage_Flags) -> vImage_Error](vimagelookuptable_planar8toplanar48(_:_:_:_:).md)
+- [func vImageLookupTable_Planar8toPlanar48(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt64>, vImage_Flags) -> vImage_Error](./vimagelookuptable_planar8toplanar48%28_,_,_,_%29.md)
   Uses a lookup table to transform an 8-bit planar image to a 16-bit-per-channel, three-channel interleaved image.
-- [func vImageLookupTable_Planar8toPlanar128(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_FFFF>, vImage_Flags) -> vImage_Error](vimagelookuptable_planar8toplanar128(_:_:_:_:).md)
+- [func vImageLookupTable_Planar8toPlanar128(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_FFFF>, vImage_Flags) -> vImage_Error](./vimagelookuptable_planar8toplanar128%28_,_,_,_%29.md)
   Uses a lookup table to transform an 8-bit planar image to a 32-bit-per-channel, four-channel interleaved image.
 
 

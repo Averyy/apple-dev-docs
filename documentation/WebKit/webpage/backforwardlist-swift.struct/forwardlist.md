@@ -1,7 +1,8 @@
 # forwardList
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of items that follow the current item.
 

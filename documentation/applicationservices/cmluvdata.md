@@ -1,7 +1,8 @@
 # cmLuvData
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The L*u*v* data color space.
 

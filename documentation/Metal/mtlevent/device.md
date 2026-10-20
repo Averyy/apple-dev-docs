@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The device object that created the event.
@@ -20,9 +21,14 @@ The device object that created the event.
 var device: (any MTLDevice)? { get }
 ```
 
+```objc
+@property (readonly, nullable) id<MTLDevice> device;
+```
+
 ## See Also
 
-- [var label: String?](mtlevent/label.md)
+### Identifying the event
+- [var label: String?](./label.md)
   A string that identifies the event.
 
 

@@ -1,7 +1,8 @@
 # MLTask
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class for machine learning tasks.
 
@@ -20,47 +21,52 @@ An abstract base class for machine learning tasks.
 class MLTask
 ```
 
+```objc
+@interface MLTask : NSObject
+```
+
 #### Overview
 
-You don’t create use this class directly. Instead, use a class that inherits from this one, such as [`MLUpdateTask`](mlupdatetask.md).
+You don’t create use this class directly. Instead, use a class that inherits from this one, such as [`MLUpdateTask`](./mlupdatetask.md).
 
 ## Topics
 
 ### Identifying a task
-- [var taskIdentifier: String](mltask/taskidentifier.md)
+- [var taskIdentifier: String](./mltask/taskidentifier.md)
   A unique name of the task to distinguish it from all other tasks at runtime.
 ### Starting and stopping a task
-- [func resume()](mltask/resume.md)
+- [func resume()](./mltask/resume%28%29.md)
   Begins or resumes a machine learning task.
-- [func cancel()](mltask/cancel.md)
+- [func cancel()](./mltask/cancel%28%29.md)
   Cancels a machine learning task before it completes.
 ### Checking the state of a task
-- [var state: MLTaskState](mltask/state.md)
+- [var state: MLTaskState](./mltask/state.md)
   The current state of the machine learning task.
-- [enum MLTaskState](mltaskstate.md)
+- [enum MLTaskState](./mltaskstate.md)
   The state of a machine learning task.
-- [var error: (any Error)?](mltask/error.md)
+- [var error: (any Error)?](./mltask/error.md)
   The underlying error if the task is in a failed state.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MLUpdateTask](mlupdatetask.md)
+- [MLUpdateTask](./mlupdatetask.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Personalizing a Model with On-Device Updates](personalizing-a-model-with-on-device-updates.md)
+### On-device model updates
+- [Personalizing a Model with On-Device Updates](./personalizing-a-model-with-on-device-updates.md)
   Modify an updatable Core ML model by running an update task with labeled data.
-- [class MLUpdateTask](mlupdatetask.md)
+- [class MLUpdateTask](./mlupdatetask.md)
   A task that updates a model with additional training data.
 
 

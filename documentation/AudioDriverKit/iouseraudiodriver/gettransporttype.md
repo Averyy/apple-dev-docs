@@ -1,7 +1,8 @@
 # GetTransportType
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the transport type of the driver.
 
@@ -10,7 +11,7 @@ Gets the transport type of the driver.
 
 ## Declaration
 
-```swift
+```c
 IOUserAudioTransportType GetTransportType();
 ```
 
@@ -24,9 +25,10 @@ Getting the value synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetTransportType](iouseraudiodriver/settransporttype.md)
+### Working with Transport Type
+- [SetTransportType](./settransporttype.md)
   Set the transport type of the driver.
-- [IOUserAudioTransportType](audiodriverkit/iouseraudiotransporttype.md)
+- [IOUserAudioTransportType](../audiodriverkit-page/iouseraudiotransporttype.md)
   The type of transport to deliver audio.
 
 

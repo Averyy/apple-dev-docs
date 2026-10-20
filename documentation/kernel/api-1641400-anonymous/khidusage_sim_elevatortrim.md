@@ -1,14 +1,15 @@
 # kHIDUsage_Sim_ElevatorTrim
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Sim_ElevatorTrim = 0xB9
 ```
 

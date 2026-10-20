@@ -1,7 +1,8 @@
 # setPrefersNoInterruptionsFromSystemAlerts(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preference for not interrupting the audio session with system alerts.
 
@@ -19,13 +20,17 @@ Sets the preference for not interrupting the audio session with system alerts.
 func setPrefersNoInterruptionsFromSystemAlerts(_ inValue: Bool) throws
 ```
 
+```objc
+- (BOOL) setPrefersNoInterruptionsFromSystemAlerts:(BOOL) inValue error:(NSError **) outError;
+```
+
 ## Mentions
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+- [Handling audio interruptions](../handling-audio-interruptions.md)
 
 #### Discussion
 
-Beginning in iOS 14, users can set a global preference that indicates whether the system displays incoming calls using a banner or a full-screen display style. If using the banner style, setting this value to [`true`](https://developer.apple.com/documentation/swift/true) prevents the system from interrupting the audio session with incoming call notifications, and gives the user an opportunity to accept or decline the call. The system only interrupts the audio session if the user accepts the call.
+Beginning in iOS 14, users can set a global preference that indicates whether the system displays incoming calls using a banner or a full-screen display style. If using the banner style, setting this value to [`true`](../../Swift/true.md) prevents the system from interrupting the audio session with incoming call notifications, and gives the user an opportunity to accept or decline the call. The system only interrupts the audio session if the user accepts the call.
 
 Enabling this preference can improve the user experience of apps with audio sessions that you don’t want to interrupt, such as those that record audiovisual media or that you use for music performance.
 
@@ -37,13 +42,14 @@ Enabling this preference can improve the user experience of apps with audio sess
 
 ## See Also
 
-- [var prefersNoInterruptionsFromSystemAlerts: Bool](avaudiosession/prefersnointerruptionsfromsystemalerts.md)
+### Handling interruptions
+- [var prefersNoInterruptionsFromSystemAlerts: Bool](./prefersnointerruptionsfromsystemalerts.md)
   A Boolean value that indicates a preference for not interrupting the session with system alerts.
-- [var prefersInterruptionOnRouteDisconnect: Bool](avaudiosession/prefersinterruptiononroutedisconnect.md)
+- [var prefersInterruptionOnRouteDisconnect: Bool](./prefersinterruptiononroutedisconnect.md)
   A Boolean value that indicates whether the system interrupts the audio session when the active route disconnects.
-- [func setPrefersInterruptionOnRouteDisconnect(Bool) throws](avaudiosession/setprefersinterruptiononroutedisconnect(_:).md)
+- [func setPrefersInterruptionOnRouteDisconnect(Bool) throws](./setprefersinterruptiononroutedisconnect%28_%29.md)
   Sets a preference to interrupt the audio session when the active route disconnects.
-- [class let interruptionNotification: NSNotification.Name](avaudiosession/interruptionnotification.md)
+- [class let interruptionNotification: NSNotification.Name](./interruptionnotification.md)
   A notification the system posts when an audio interruption occurs.
 
 

@@ -1,7 +1,8 @@
 # MLImageClassifier.DataSource.filesByLabel(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Dictionary of labels to file URLs.
 
@@ -20,7 +21,8 @@ case filesByLabel([String : [URL]])
 
 ## See Also
 
-- [func labeledImages() throws -> [String : [URL]]](mlimageclassifier/datasource/labeledimages.md)
+### Retrieving the data
+- [func labeledImages() throws -> [String : [URL]]](./labeledimages%28%29.md)
   Returns the labeled images represented by the data source.
 
 

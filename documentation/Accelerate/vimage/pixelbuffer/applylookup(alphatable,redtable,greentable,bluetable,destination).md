@@ -1,7 +1,8 @@
 # applyLookup(alphaTable:redTable:greenTable:blueTable:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a set of four lookup tables to transform an interleaved, four-channel 8-bit image.
 
@@ -11,7 +12,7 @@ Applies a set of four lookup tables to transform an interleaved, four-channel 8-
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -20,11 +21,13 @@ Applies a set of four lookup tables to transform an interleaved, four-channel 8-
 func applyLookup(alphaTable: [Pixel_8]?, redTable: [Pixel_8]?, greenTable: [Pixel_8]?, blueTable: [Pixel_8]?, destination: vImage.PixelBuffer<vImage.Interleaved8x4>)
 ```
 
+Available when `Format` is `vImage.Interleaved8x4`.
+
 #### Discussion
 
 Use this function to apply individual lookup tables to each channel in an interleaved, four-channel image. Adjust the order of the tables for images that don’t use ARGB channel ordering. For example, use the `blueTable` parameter for the alpha lookup table to transform an RGBA image.
 
-The following code creates a simple lookup table that transforms a [`vImage.Interleaved8x4`](vimage/interleaved8x4.md) pixel buffer into its negative. For example, when an input pixel has the value `255, 255, 255, 255`, the output pixel has the value `0, 0, 0, 0`. Conversely, when an input pixel has the value `0, 0, 0, 0`, the output pixel has the value `255, 255, 255, 255`:
+The following code creates a simple lookup table that transforms a [`vImage.Interleaved8x4`](../interleaved8x4.md) pixel buffer into its negative. For example, when an input pixel has the value `255, 255, 255, 255`, the output pixel has the value `0, 0, 0, 0`. Conversely, when an input pixel has the value `0, 0, 0, 0`, the output pixel has the value `255, 255, 255, 255`:
 
 ```swift
 
@@ -45,27 +48,28 @@ sourceBuffer.applyLookup(alphaTable: nil,
 
 The images below show an example source image on the left and the negative result on the right.
 
-![Two versions of a close-up image of a fruit tree. On the left is the original color image, and on the right is the transformed, negative image with its colors inverted.](/images/com.apple.accelerate/media-4165177@2x.png)
+![Two versions of a close-up image of a fruit tree. On the left is the original color image, and on the right is the transformed, negative image with its colors inverted.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4165177@2x.png)
 
 ## Parameters
 
-- `alphaTable`: A lookup table for the alpha channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the alpha channel unchanged to the destination buffer.
-- `redTable`: A lookup table for the red channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the red channel unchanged to the destination buffer.
-- `greenTable`: A lookup table for the green channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the green channel unchanged to the destination buffer.
-- `blueTable`: A lookup table for the blue channel that contains 256 [`Pixel_8`](pixel_8.md) values. Pass `nil` to specify that the function copies the blue channel unchanged to the destination buffer.
+- `alphaTable`: A lookup table for the alpha channel that contains 256 [`Pixel_8`](../../pixel_8.md) values. Pass `nil` to specify that the function copies the alpha channel unchanged to the destination buffer.
+- `redTable`: A lookup table for the red channel that contains 256 [`Pixel_8`](../../pixel_8.md) values. Pass `nil` to specify that the function copies the red channel unchanged to the destination buffer.
+- `greenTable`: A lookup table for the green channel that contains 256 [`Pixel_8`](../../pixel_8.md) values. Pass `nil` to specify that the function copies the green channel unchanged to the destination buffer.
+- `blueTable`: A lookup table for the blue channel that contains 256 [`Pixel_8`](../../pixel_8.md) values. Pass `nil` to specify that the function copies the blue channel unchanged to the destination buffer.
 - `destination`: The destination pixel buffer.
 
 ## See Also
 
-- [func applyLookup([Pixel_8], destination: vImage.PixelBuffer<vImage.Planar8>)](vimage/pixelbuffer/applylookup(_:destination:)-5r7bq.md)
+### Transforming with a lookup table
+- [func applyLookup([Pixel_8], destination: vImage.PixelBuffer<vImage.Planar8>)](./applylookup%28_,destination%29-5r7bq.md)
   Applies a lookup table to transform an 8-bit planar image.
-- [func applyLookup([Pixel_F], destination: vImage.PixelBuffer<vImage.PlanarF>)](vimage/pixelbuffer/applylookup(_:destination:)-14pjo.md)
+- [func applyLookup([Pixel_F], destination: vImage.PixelBuffer<vImage.PlanarF>)](./applylookup%28_,destination%29-14pjo.md)
   Applies a lookup table to transform an 8-bit planar image to a 32-bit planar image.
-- [func applyLookup([Pixel_16U], destination: vImage.PixelBuffer<vImage.Planar16U>)](vimage/pixelbuffer/applylookup(_:destination:)-5oi4o.md)
+- [func applyLookup([Pixel_16U], destination: vImage.PixelBuffer<vImage.Planar16U>)](./applylookup%28_,destination%29-5oi4o.md)
   Applies a lookup table to transform an 8-bit planar image to a 16-bit planar image.
-- [func applyLookup([Pixel_8888], destination: vImage.PixelBuffer<vImage.Interleaved8x3>)](vimage/pixelbuffer/applylookup(_:destination:)-3ruls.md)
+- [func applyLookup([Pixel_8888], destination: vImage.PixelBuffer<vImage.Interleaved8x3>)](./applylookup%28_,destination%29-3ruls.md)
   Applies a lookup table to transform an 8-bit planar image to an 8-bit-per-channel, three-channel interleaved image.
-- [func applyLookup([Pixel_FFFF], destination: vImage.PixelBuffer<vImage.InterleavedFx3>)](vimage/pixelbuffer/applylookup(_:destination:)-1tsb5.md)
+- [func applyLookup([Pixel_FFFF], destination: vImage.PixelBuffer<vImage.InterleavedFx3>)](./applylookup%28_,destination%29-1tsb5.md)
   Applies a lookup table to transform an 8-bit planar image to a 32-bit-per-channel, three-channel interleaved image.
 
 

@@ -1,13 +1,14 @@
 # beginDocument
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The callback called at the beginning of the conversion of the PostScript document, or `NULL`.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,21 +16,26 @@ The callback called at the beginning of the conversion of the PostScript documen
 var beginDocument: CGPSConverterBeginDocumentCallback?
 ```
 
+```c
+CGPSConverterBeginDocumentCallback beginDocument;
+```
+
 ## See Also
 
-- [var beginPage: CGPSConverterBeginPageCallback?](cgpsconvertercallbacks/beginpage.md)
+### Instance Properties
+- [var beginPage: CGPSConverterBeginPageCallback?](./beginpage.md)
   The callback called at the start of the conversion of each page in the PostScript document, or `NULL`.
-- [var endDocument: CGPSConverterEndDocumentCallback?](cgpsconvertercallbacks/enddocument.md)
+- [var endDocument: CGPSConverterEndDocumentCallback?](./enddocument.md)
   The callback called at the end of conversion of the PostScript document, or `NULL`.
-- [var endPage: CGPSConverterEndPageCallback?](cgpsconvertercallbacks/endpage.md)
+- [var endPage: CGPSConverterEndPageCallback?](./endpage.md)
   The callback called at the end of the conversion of each page in the PostScript document, or `NULL`.
-- [var noteMessage: CGPSConverterMessageCallback?](cgpsconvertercallbacks/notemessage.md)
+- [var noteMessage: CGPSConverterMessageCallback?](./notemessage.md)
   The callback called to pass any messages that might result during the conversion, or `NULL`.
-- [var noteProgress: CGPSConverterProgressCallback?](cgpsconvertercallbacks/noteprogress.md)
+- [var noteProgress: CGPSConverterProgressCallback?](./noteprogress.md)
   The callback called periodically during the conversion to indicate that conversion is proceeding, or `NULL`.
-- [var releaseInfo: CGPSConverterReleaseInfoCallback?](cgpsconvertercallbacks/releaseinfo.md)
+- [var releaseInfo: CGPSConverterReleaseInfoCallback?](./releaseinfo.md)
   The callback called when the converter is deallocated, or `NULL`.
-- [var version: UInt32](cgpsconvertercallbacks/version.md)
+- [var version: UInt32](./version.md)
   The version number of the structure passed in as a parameter to the converter creation functions. The structure defined below is version `0`.
 
 

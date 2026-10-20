@@ -1,7 +1,8 @@
 # init(expressions:openString:closeString:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.2+

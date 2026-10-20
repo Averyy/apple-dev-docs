@@ -1,7 +1,8 @@
 # obtain(withRights:flags:environment:authorizedRights:)
 
 **Framework**: Security Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Authorizes and preauthorizes rights to access a privileged operation and returns the granted rights.
 
@@ -14,9 +15,13 @@ Authorizes and preauthorizes rights to access a privileged operation and returns
 func obtain(withRights rights: UnsafePointer<AuthorizationRights>!, flags: AuthorizationFlags, environment: UnsafePointer<AuthorizationEnvironment>!, authorizedRights: UnsafeMutablePointer<UnsafeMutablePointer<AuthorizationRights>?>!) throws
 ```
 
-#### Return Value
+```objc
+- (BOOL) obtainWithRights:(const AuthorizationRights *) rights flags:(AuthorizationFlags) flags environment:(const AuthorizationEnvironment *) environment authorizedRights:(AuthorizationRights **) authorizedRights error:(NSError **) error;
+```
 
-[`true`](https://developer.apple.com/documentation/swift/true) if operation completes successfully.
+#### Return value
+
+[`true`](../../Swift/true.md) if operation completes successfully.
 
 #### Discussion
 
@@ -26,28 +31,31 @@ The second reason to use this method is to authorize rights before performing a 
 
 The third reason to use this method is to authorize partial rights. By specifying the `kAuthorizationFlagPartialRights`, `kAuthorizationFlagInteractionAllowed`, and `kAuthorizationFlagExtendRights` masks as authorization options, the Security framework grants all rights it can authorize. On return, the authorized set contains all the rights.
 
-If you do not specify the `kAuthorizationFlagPartialRights` mask and the Security framework denies at least one right, then the method returns [`false`](https://developer.apple.com/documentation/swift/false) and the `error` parameter returns `errAuthorizationDenied`.
+If you do not specify the `kAuthorizationFlagPartialRights` mask and the Security framework denies at least one right, then the method returns [`false`](../../Swift/false.md) and the `error` parameter returns `errAuthorizationDenied`.
 
-If you do not specify the `kAuthorizationFlagInteractionAllowed` mask and the Security framework requires user interaction, then the method returns [`false`](https://developer.apple.com/documentation/swift/false) and the `error` parameter returns `errAuthorizationInteractionNotAllowed`.
+If you do not specify the `kAuthorizationFlagInteractionAllowed` mask and the Security framework requires user interaction, then the method returns [`false`](../../Swift/false.md) and the `error` parameter returns `errAuthorizationInteractionNotAllowed`.
 
-If you specify the `kAuthorizationFlagInteractionAllowed` mask and the user cancels the authentication process, then the method returns [`false`](https://developer.apple.com/documentation/swift/false) and the `error` parameter returns `errAuthorizationCanceled`.
+If you specify the `kAuthorizationFlagInteractionAllowed` mask and the user cancels the authentication process, then the method returns [`false`](../../Swift/false.md) and the `error` parameter returns `errAuthorizationCanceled`.
 
-> **Note**: In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/swift/about-imported-cocoa-error-parameters).
+> **Handling Errors in Swift**: In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and [About Imported Cocoa Error Parameters](../../Swift/about-imported-cocoa-error-parameters.md).
 
 ## Parameters
 
 - `rights`: A pointer to a set of authorization rights you create. Pass `NULL` if the application requires no rights at this time.
-- `flags`: A bit mask for specifying authorization options. Use the following option sets: - Pass the constant [`kAuthorizationFlagDefaults`](https://developer.apple.com/documentation/security/authorizationflags/kauthorizationflagdefaults) if no options are necessary.
-- Specify the [`extendRights`](https://developer.apple.com/documentation/security/authorizationflags/extendrights) mask to request rights. You can also specify the [`interactionAllowed`](https://developer.apple.com/documentation/security/authorizationflags/interactionallowed) mask to allow user interaction.
-- Specify the [`partialRights`](https://developer.apple.com/documentation/security/authorizationflags/partialrights) and [`extendRights`](https://developer.apple.com/documentation/security/authorizationflags/extendrights) masks to request partial rights. You can also specify the [`interactionAllowed`](https://developer.apple.com/documentation/security/authorizationflags/interactionallowed) mask to allow user interaction.
-- Specify the [`preAuthorize`](https://developer.apple.com/documentation/security/authorizationflags/preauthorize) and [`extendRights`](https://developer.apple.com/documentation/security/authorizationflags/extendrights) masks to preauthorize rights.
-- Specify the [`destroyRights`](https://developer.apple.com/documentation/security/authorizationflags/destroyrights) mask to prevent the Security framework from preserving the rights obtained during this call.
-- `environment`: Data used when authorizing or preauthorizing rights. In macOS 10.3 and later, you can pass icon or prompt data to be used in the authentication dialog box. Possible values for this parameter are listed in `Security/AuthorizationTags.h`. If you are not passing any data in this parameter, pass the constant [`kAuthorizationEmptyEnvironment`](https://developer.apple.com/documentation/security/kauthorizationemptyenvironment).
-- `authorizedRights`: A pointer to a newly allocated [`AuthorizationRights`](https://developer.apple.com/documentation/security/authorizationrights) structure. On return, this structure contains the rights granted by the Security framework. If you do not require this information, pass `NULL`. If you specify the [`preAuthorize`](https://developer.apple.com/documentation/security/authorizationflags/preauthorize) mask in the `flags` parameter, the method returns all the requested rights, including those not granted, but the flags of the rights that could not be preauthorized include the [`kAuthorizationFlagCanNotPreAuthorize`](https://developer.apple.com/documentation/security/kauthorizationflagcannotpreauthorize) bit. Free the memory associated with this set of rights by calling the Authorization Services function [`AuthorizationFreeItemSet(_:)`](https://developer.apple.com/documentation/security/authorizationfreeitemset(_:)).
+- `flags`: A bit mask for specifying authorization options. Use the following option sets:
+
+  - Pass the constant [`kAuthorizationFlagDefaults`](../../Security/authorizationflags/kauthorizationflagdefaults.md) if no options are necessary.
+  - Specify the [`extendRights`](../../Security/authorizationflags/extendrights.md) mask to request rights. You can also specify the [`interactionAllowed`](../../Security/authorizationflags/interactionallowed.md) mask to allow user interaction.
+  - Specify the [`partialRights`](../../Security/authorizationflags/partialrights.md) and [`extendRights`](../../Security/authorizationflags/extendrights.md) masks to request partial rights. You can also specify the [`interactionAllowed`](../../Security/authorizationflags/interactionallowed.md) mask to allow user interaction.
+  - Specify the [`preAuthorize`](../../Security/authorizationflags/preauthorize.md) and [`extendRights`](../../Security/authorizationflags/extendrights.md) masks to preauthorize rights.
+  - Specify the [`destroyRights`](../../Security/authorizationflags/destroyrights.md) mask to prevent the Security framework from preserving the rights obtained during this call.
+- `environment`: Data used when authorizing or preauthorizing rights. In macOS 10.3 and later, you can pass icon or prompt data to be used in the authentication dialog box. Possible values for this parameter are listed in `Security/AuthorizationTags.h`. If you are not passing any data in this parameter, pass the constant [`kAuthorizationEmptyEnvironment`](../../Security/kauthorizationemptyenvironment.md).
+- `authorizedRights`: A pointer to a newly allocated [`AuthorizationRights`](../../Security/authorizationrights.md) structure. On return, this structure contains the rights granted by the Security framework. If you do not require this information, pass `NULL`. If you specify the [`preAuthorize`](../../Security/authorizationflags/preauthorize.md) mask in the `flags` parameter, the method returns all the requested rights, including those not granted, but the flags of the rights that could not be preauthorized include the [`kAuthorizationFlagCanNotPreAuthorize`](../../Security/kauthorizationflagcannotpreauthorize.md) bit. Free the memory associated with this set of rights by calling the Authorization Services function [`AuthorizationFreeItemSet(_:)`](../../Security/authorizationfreeitemset%28_%29.md).
 
 ## See Also
 
-- [func obtain(withRight: AuthorizationString!, flags: AuthorizationFlags) throws](sfauthorization/obtain(withright:flags:).md)
+### Authorizing rights
+- [func obtain(withRight: AuthorizationString!, flags: AuthorizationFlags) throws](./obtain%28withright,flags%29.md)
   Authorizes and preauthorizes one specific right.
 
 

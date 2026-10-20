@@ -1,7 +1,8 @@
 # init(verbatim:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text view that displays a string literal without localization.
 
@@ -28,7 +29,7 @@ Use this initializer to create a text view with a string literal without perform
 Text(verbatim: "pencil") // Displays the string "pencil" in any locale.
 ```
 
-If you want to localize a string literal before displaying it, use the [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md) initializer instead. If you want to display a string variable, use the [`init(_:)`](text/init(_:)-9d1g4.md) initializer, which also bypasses localization.
+If you want to localize a string literal before displaying it, use the [`init(_:tableName:bundle:comment:)`](./init%28_,tablename,bundle,comment%29.md) initializer instead. If you want to display a string variable, use the [`init(_:)`](./init%28_%29-9d1g4.md) initializer, which also bypasses localization.
 
 ## Parameters
 
@@ -36,17 +37,18 @@ If you want to localize a string literal before displaying it, use the [`init(_:
 
 ## See Also
 
-- [init(LocalizedStringKey, tableName: String?, bundle: Bundle?, comment: StaticString?)](text/init(_:tablename:bundle:comment:).md)
+### Creating a text view
+- [init(LocalizedStringKey, tableName: String?, bundle: Bundle?, comment: StaticString?)](./init%28_,tablename,bundle,comment%29.md)
   Creates a text view that displays localized content identified by a key.
-- [init(_:)](text/init(_:).md)
+- [init(_:)](./init%28_%29.md)
   Creates a text view that displays styled attributed content.
-- [init(Date, style: Text.DateStyle)](text/init(_:style:).md)
+- [init(Date, style: Text.DateStyle)](./init%28_,style%29.md)
   Creates an instance that displays localized dates and times using a specific style.
-- [init(_:format:)](text/init(_:format:).md)
+- [init(_:format:)](./init%28_,format%29.md)
   Creates a text view that displays the formatted representation of a nonstring type supported by a corresponding format style.
-- [init(_:formatter:)](text/init(_:formatter:).md)
+- [init(_:formatter:)](./init%28_,formatter%29.md)
   Creates a text view that displays the formatted representation of a Foundation object.
-- [init(timerInterval: ClosedRange<Date>, pauseTime: Date?, countsDown: Bool, showsHours: Bool)](text/init(timerinterval:pausetime:countsdown:showshours:).md)
+- [init(timerInterval: ClosedRange<Date>, pauseTime: Date?, countsDown: Bool, showsHours: Bool)](./init%28timerinterval,pausetime,countsdown,showshours%29.md)
   Creates an instance that displays a timer counting within the provided interval.
 
 

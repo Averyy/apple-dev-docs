@@ -1,7 +1,8 @@
 # NEAppPushManagerError.Code
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that the local push API declares.
 
@@ -17,35 +18,40 @@ Error codes that the local push API declares.
 enum Code
 ```
 
+```c
+enum NEAppPushManagerError : NSInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [NEAppPushManagerError.Code.configurationInvalid](neapppushmanagererror-swift.struct/code/configurationinvalid.md)
+- [NEAppPushManagerError.Code.configurationInvalid](./code/configurationinvalid.md)
   An error code that indicates the app push configuration is invalid.
-- [NEAppPushManagerError.Code.configurationNotLoaded](neapppushmanagererror-swift.struct/code/configurationnotloaded.md)
+- [NEAppPushManagerError.Code.configurationNotLoaded](./code/configurationnotloaded.md)
   An error code that indicates the manager hasn’t loaded the app push configuration.
-- [NEAppPushManagerError.Code.inactiveSession](neapppushmanagererror-swift.struct/code/inactivesession.md)
+- [NEAppPushManagerError.Code.inactiveSession](./code/inactivesession.md)
   An error code that indicates an invalid attempt to perform an operation on an inactive session.
-- [NEAppPushManagerError.Code.internalError](neapppushmanagererror-swift.struct/code/internalerror.md)
+- [NEAppPushManagerError.Code.internalError](./code/internalerror.md)
   An error code that indicates an internal error in the local push connectivity framework.
 ### Initializers
-- [init?(rawValue: Int)](neapppushmanagererror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NEAppPushManagerError](neapppushmanagererror-swift.struct.md)
+### Handling errors
+- [struct NEAppPushManagerError](../neapppushmanagererror-swift.struct.md)
   An error that the push manager encounters.
-- [let NEAppPushErrorDomain: String](neapppusherrordomain.md)
+- [let NEAppPushErrorDomain: String](../neapppusherrordomain.md)
   The error domain string for local push errors.
 
 

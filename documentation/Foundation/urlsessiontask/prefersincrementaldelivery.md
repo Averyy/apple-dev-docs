@@ -1,7 +1,8 @@
 # prefersIncrementalDelivery
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether to deliver a partial response body in increments.
 
@@ -18,6 +19,10 @@ A Boolean value that determines whether to deliver a partial response body in in
 
 ```swift
 var prefersIncrementalDelivery: Bool { get set }
+```
+
+```objc
+@property BOOL prefersIncrementalDelivery;
 ```
 
 #### Discussion

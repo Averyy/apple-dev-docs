@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new audio file output.
 
@@ -12,6 +13,10 @@ Creates a new audio file output.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

@@ -1,7 +1,8 @@
 # autoCommit
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var autoCommit: CSSM_BOOL
+```
+
+```c
+CSSM_BOOL autoCommit;
 ```
 
 

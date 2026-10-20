@@ -1,7 +1,8 @@
 # failOnBinaryArchiveMiss
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that instructs the compiler to return an error when a GPU function isn’t in a binary archive.
 
@@ -19,6 +20,10 @@ An option that instructs the compiler to return an error when a GPU function isn
 static var failOnBinaryArchiveMiss: MTLFunctionOptions { get }
 ```
 
+```c
+MTLFunctionOptionFailOnBinaryArchiveMiss
+```
+
 #### Discussion
 
 By default, Metal compiles a function if it isn’t in a binary archive. When you set this option, Metal returns an error instead of compiling a missing function.
@@ -27,13 +32,14 @@ Setting this option is a way to verify that binary archives contain all the func
 
 ## See Also
 
-- [static var compileToBinary: MTLFunctionOptions](mtlfunctionoptions/compiletobinary.md)
+### Function compilation options
+- [static var compileToBinary: MTLFunctionOptions](./compiletobinary.md)
   An option that instructs the compiler to generate a binary format for dynamic linking.
-- [static var pipelineIndependent: MTLFunctionOptions](mtlfunctionoptions/pipelineindependent.md)
+- [static var pipelineIndependent: MTLFunctionOptions](./pipelineindependent.md)
   An option that generates the same function handle across all pipeline states that link a function, which lets you share function tables across pipeline states.
-- [static var storeFunctionInMetalPipelinesScript: MTLFunctionOptions](mtlfunctionoptions/storefunctioninmetalpipelinesscript.md)
+- [static var storeFunctionInMetalPipelinesScript: MTLFunctionOptions](./storefunctioninmetalpipelinesscript.md)
   An option that instructs the compiler to store function information for inspecting binary archives.
-- [static var storeFunctionInMetalScript: MTLFunctionOptions](mtlfunctionoptions/storefunctioninmetalscript.md)
+- [static var storeFunctionInMetalScript: MTLFunctionOptions](./storefunctioninmetalscript.md)
   An option that instructs the compiler to store function information for inspecting binary archives.
 
 

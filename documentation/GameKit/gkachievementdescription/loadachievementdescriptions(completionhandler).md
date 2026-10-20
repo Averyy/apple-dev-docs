@@ -1,7 +1,8 @@
 # loadAchievementDescriptions(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Downloads the localized descriptions of achievements from Game Center.
 
@@ -17,21 +18,33 @@ Downloads the localized descriptions of achievements from Game Center.
 ## Declaration
 
 ```swift
+class func loadAchievementDescriptions(completionHandler: (@Sendable ([GKAchievementDescription]?, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 class func loadAchievementDescriptions() async throws -> [GKAchievementDescription]
+```
+
+```objc
++ (void) loadAchievementDescriptionsWithCompletionHandler:(void (^)(NSArray<GKAchievementDescription *> *descriptions, NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Rewarding players with achievements](rewarding-players-with-achievements.md)
+- [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
 #### Discussion
 
-To load the artwork for an achievement, use the [`loadImage(completionHandler:)`](gkachievementdescription/loadimage(completionhandler:).md) method after using this method.
+To load the artwork for an achievement, use the [`loadImage(completionHandler:)`](./loadimage%28completionhandler%29.md) method after using this method.
 
 ## Parameters
 
-- `completionHandler`: A block that GameKit calls when this method completes the download. The block receives the following parameters: - **`descriptions`**: The [`GKAchievementDescription`](gkachievementdescription.md) objects that contain the localized text for the achievements in your game.
-- **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
+- `completionHandler`: A block that GameKit calls when this method completes the download.
+
+  The block receives the following parameters:
+
+  - **`descriptions`**: The [`GKAchievementDescription`](../gkachievementdescription.md) objects that contain the localized text for the achievements in your game.
+  - **`error`**: Describes an error if it occurs, or `nil` if the operation completes.
 
 
 ---

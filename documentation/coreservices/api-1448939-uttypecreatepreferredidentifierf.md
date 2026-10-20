@@ -1,7 +1,8 @@
 # UTTypeCreatePreferredIdentifierForTag(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a uniform type identifier for the type indicated by the specified tag.
 
@@ -20,7 +21,11 @@ Creates a uniform type identifier for the type indicated by the specified tag.
 func UTTypeCreatePreferredIdentifierForTag(_ inTagClass: CFString, _ inTag: CFString, _ inConformingToUTI: CFString?) -> Unmanaged<CFString>?
 ```
 
-#### Return_value
+```c
+CFStringRef UTTypeCreatePreferredIdentifierForTag(CFStringRef inTagClass, CFStringRef inTag, CFStringRef inConformingToUTI);
+```
+
+#### Return Value
 
 A new CFStringRef containing a uniform type identifier, or `NULL` if inTagClass is not a known tag class
 
@@ -28,7 +33,7 @@ A new CFStringRef containing a uniform type identifier, or `NULL` if inTagClass 
 
 This function is used to translate a type declared using another declaration mechanism (for example, MIME types) into a uniform type identifier. This function searches all UTI declarations for a matching translation. If a conforming parameter is assigned, the search is reduced to the subset of type identifiers that conform to that type.
 
-If there is more than one possible UTI for the specified tag, the UTI that will be returned is undefined. See [`UTTypeCreateAllIdentifiersForTag(_:_:_:)`](1447261-uttypecreateallidentifiersfortag.md) if you need to see all search results.
+If there is more than one possible UTI for the specified tag, the UTI that will be returned is undefined. See [`UTTypeCreateAllIdentifiersForTag(_:_:_:)`](./api-1447261-uttypecreateallidentifiersfortag.md) if you need to see all search results.
 
 If no result is found, this function creates a dynamic type beginning with the `dyn` prefix. This allows you to pass the UTI around and convert it back to the original tag.
 
@@ -40,9 +45,10 @@ If no result is found, this function creates a dynamic type beginning with the `
 
 ## See Also
 
-- [func UTTypeCopyPreferredTagWithClass(CFString, CFString) -> Unmanaged<CFString>?](1442744-uttypecopypreferredtagwithclass.md)
+### Related Documentation
+- [func UTTypeCopyPreferredTagWithClass(CFString, CFString) -> Unmanaged<CFString>?](./api-1442744-uttypecopypreferredtagwithclass.md)
   Translates a uniform type identifier to a list of tags in a different type classification method.
-- [Uniform Type Identifiers Overview](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319)
+- [Uniform Type Identifiers Overview](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/understanding_utis/understand_utis_intro/understand_utis_intro.html#//apple_ref/doc/uid/TP40001319)
 
 
 ---

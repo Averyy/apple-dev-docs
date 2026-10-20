@@ -1,7 +1,8 @@
 # BGContinuedProcessingTask
 
 **Framework**: Background Tasks  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A task that starts in the foreground and can continue running in the background as needed.
 
@@ -16,48 +17,53 @@ A task that starts in the foreground and can continue running in the background 
 class BGContinuedProcessingTask
 ```
 
+```objc
+@interface BGContinuedProcessingTask : BGTask
+```
+
 ## Mentions
 
-- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
+- [Performing long-running tasks on iOS and iPadOS](./performing-long-running-tasks-on-ios-and-ipados.md)
 
 #### Overview
 
-This task works with [`BGContinuedProcessingTaskRequest`](bgcontinuedprocessingtaskrequest.md).
+This task works with [`BGContinuedProcessingTaskRequest`](./bgcontinuedprocessingtaskrequest.md).
 
 The system displays the progress of this task in a Live Activity and a person can cancel it through the interface if they wish.
 
-The system can terminate a continuous background task abruptly depending on run-time conditions, for example, under resource constraints. Your implementation needs to report progress using the [`ProgressReporting`](https://developer.apple.com/documentation/foundation/progressreporting) protocol that this task conforms to. The system prioritizes the termination of tasks that reflect minimal or no progress, when resources become constrained.
+The system can terminate a continuous background task abruptly depending on run-time conditions, for example, under resource constraints. Your implementation needs to report progress using the [`ProgressReporting`](../Foundation/progressreporting.md) protocol that this task conforms to. The system prioritizes the termination of tasks that reflect minimal or no progress, when resources become constrained.
 
-For more information on Continuous Background Task requests, see [`Performing long-running tasks on iOS and iPadOS`](performing-long-running-tasks-on-ios-and-ipados.md).
+For more information on Continuous Background Task requests, see [Performing long-running tasks on iOS and iPadOS](./performing-long-running-tasks-on-ios-and-ipados.md).
 
 ## Topics
 
 ### Titling the task
-- [var title: String](bgcontinuedprocessingtask/title.md)
+- [var title: String](./bgcontinuedprocessingtask/title.md)
   The localized title displayed to a person.
-- [var subtitle: String](bgcontinuedprocessingtask/subtitle.md)
+- [var subtitle: String](./bgcontinuedprocessingtask/subtitle.md)
   The localized subtitle displayed to a person.
-- [func updateTitle(String, subtitle: String)](bgcontinuedprocessingtask/updatetitle(_:subtitle:).md)
+- [func updateTitle(String, subtitle: String)](./bgcontinuedprocessingtask/updatetitle%28_,subtitle%29.md)
   Update the task title and subtitle that the system displays to a person.
 
 ## Relationships
 
 ### Inherits From
-- [BGTask](bgtask.md)
+- [BGTask](./bgtask.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [ProgressReporting](../foundation/progressreporting.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [ProgressReporting](../Foundation/progressreporting.md)
 
 ## See Also
 
-- [Performing long-running tasks on iOS and iPadOS](performing-long-running-tasks-on-ios-and-ipados.md)
+### Foreground tasks with background support
+- [Performing long-running tasks on iOS and iPadOS](./performing-long-running-tasks-on-ios-and-ipados.md)
   Use a continuous background task to do work that can complete as needed.
-- [Background GPU Access](../bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu.md)
+- [Background GPU Access](../BundleResources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu.md)
   The entitlement the system requires for a continuous background task to use the GPU.
 
 

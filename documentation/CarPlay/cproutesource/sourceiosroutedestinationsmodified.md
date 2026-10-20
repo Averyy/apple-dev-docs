@@ -1,7 +1,8 @@
 # CPRouteSource.sourceiOSRouteDestinationsModified
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Route and destination(s) from the device are being used but both have been modified.
 
@@ -14,6 +15,10 @@ Route and destination(s) from the device are being used but both have been modif
 
 ```swift
 case sourceiOSRouteDestinationsModified
+```
+
+```c
+CPRouteSourceiOSRouteDestinationsModified
 ```
 
 

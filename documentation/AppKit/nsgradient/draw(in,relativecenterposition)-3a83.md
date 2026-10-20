@@ -1,7 +1,8 @@
 # draw(in:relativeCenterPosition:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a radial gradient starting at the center of the specified rectangle.
 
@@ -12,6 +13,10 @@ Draws a radial gradient starting at the center of the specified rectangle.
 
 ```swift
 func draw(in rect: NSRect, relativeCenterPosition: NSPoint)
+```
+
+```objc
+- (void) drawInRect:(NSRect) rect relativeCenterPosition:(NSPoint) relativeCenterPosition;
 ```
 
 #### Discussion
@@ -29,9 +34,10 @@ The gradient formed by this method is clipped to `rect`.
 
 ## See Also
 
-- [func draw(fromCenter: NSPoint, radius: CGFloat, toCenter: NSPoint, radius: CGFloat, options: NSGradient.DrawingOptions)](nsgradient/draw(fromcenter:radius:tocenter:radius:options:).md)
+### Drawing a Radial Gradient
+- [func draw(fromCenter: NSPoint, radius: CGFloat, toCenter: NSPoint, radius: CGFloat, options: NSGradient.DrawingOptions)](./draw%28fromcenter,radius,tocenter,radius,options%29.md)
   Draws a radial gradient between the specified circles.
-- [func draw(in: NSBezierPath, relativeCenterPosition: NSPoint)](nsgradient/draw(in:relativecenterposition:)-502cc.md)
+- [func draw(in: NSBezierPath, relativeCenterPosition: NSPoint)](./draw%28in,relativecenterposition%29-502cc.md)
   Draws a radial gradient starting at the center point of the specified path.
 
 

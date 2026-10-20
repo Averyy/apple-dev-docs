@@ -1,7 +1,8 @@
 # DDMatchFlightNumber
 
 **Framework**: DataDetection  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains a flight number that the data detection system matches.
 
@@ -20,6 +21,10 @@ An object that contains a flight number that the data detection system matches.
 class DDMatchFlightNumber
 ```
 
+```objc
+@interface DDMatchFlightNumber : DDMatch
+```
+
 #### Overview
 
 The DataDetection framework returns a flight number match in a `DDMatchFlightNumber` object, which contains an airline name and flight number.
@@ -27,38 +32,39 @@ The DataDetection framework returns a flight number match in a `DDMatchFlightNum
 ## Topics
 
 ### Getting flight information
-- [var airline: String](ddmatchflightnumber/airline.md)
+- [var airline: String](./ddmatchflightnumber/airline.md)
   The name of an airline.
-- [var flightNumber: String](ddmatchflightnumber/flightnumber.md)
+- [var flightNumber: String](./ddmatchflightnumber/flightnumber.md)
   A string that represents a flight number.
 
 ## Relationships
 
 ### Inherits From
-- [DDMatch](ddmatch.md)
+- [DDMatch](./ddmatch.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class DDMatchCalendarEvent](ddmatchcalendarevent.md)
+### Matched data types
+- [class DDMatchCalendarEvent](./ddmatchcalendarevent.md)
   An object that represents a calendar date or date range that the data detection system matches.
-- [class DDMatchEmailAddress](ddmatchemailaddress.md)
+- [class DDMatchEmailAddress](./ddmatchemailaddress.md)
   An object that contains an email address that the data detection system matches.
-- [class DDMatchLink](ddmatchlink.md)
+- [class DDMatchLink](./ddmatchlink.md)
   An object that contains a web link that the data detection system matches.
-- [class DDMatchMoneyAmount](ddmatchmoneyamount.md)
+- [class DDMatchMoneyAmount](./ddmatchmoneyamount.md)
   An object that contains an amount of money that the data detection system matches.
-- [class DDMatchPhoneNumber](ddmatchphonenumber.md)
+- [class DDMatchPhoneNumber](./ddmatchphonenumber.md)
   An object that contains a phone number that the data detection system matches.
-- [class DDMatchPostalAddress](ddmatchpostaladdress.md)
+- [class DDMatchPostalAddress](./ddmatchpostaladdress.md)
   An object that contains a postal address that the data detection system matches.
-- [class DDMatchShipmentTrackingNumber](ddmatchshipmenttrackingnumber.md)
+- [class DDMatchShipmentTrackingNumber](./ddmatchshipmenttrackingnumber.md)
   An object that contains parcel tracking information that the data detection system matches.
 
 

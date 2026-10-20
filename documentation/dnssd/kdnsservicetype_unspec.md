@@ -1,7 +1,8 @@
 # kDNSServiceType_UNSPEC
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceType_UNSPEC: Int { get }
+```
+
+```c
+kDNSServiceType_UNSPEC
 ```
 
 #### Discussion

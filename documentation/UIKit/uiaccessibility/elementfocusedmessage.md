@@ -1,7 +1,8 @@
 # UIAccessibility.ElementFocusedMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -20,15 +21,15 @@ struct ElementFocusedMessage
 ## Topics
 
 ### Initializers
-- [init(element: AnyObject?)](uiaccessibility/elementfocusedmessage/init(element:).md)
+- [init(element: AnyObject?)](./elementfocusedmessage/init%28element%29.md)
 ### Instance Properties
-- [var element: AnyObject?](uiaccessibility/elementfocusedmessage/element.md)
+- [var element: AnyObject?](./elementfocusedmessage/element.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

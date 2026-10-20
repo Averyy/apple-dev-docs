@@ -1,7 +1,8 @@
 # markConfigurationAsFinal()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the provider that no more reconfiguration of time ranges is necessary and allows the attached AVAssetReader to advance to `AVAssetReaderStatus/completed`.
 
@@ -21,7 +22,8 @@ func markConfigurationAsFinal()
 
 ## See Also
 
-- [func resetForReading(timeRanges: [CMTimeRange])](avassetreaderoutput/randomaccesscontroller/resetforreading(timeranges:).md)
+### Configuring a controller
+- [func resetForReading(timeRanges: [CMTimeRange])](./resetforreading%28timeranges%29.md)
   Starts reading over with a new set of time ranges.
 
 

@@ -1,7 +1,8 @@
 # errSecNoAccessForItem
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified item has no access control.
 
@@ -18,6 +19,10 @@ The specified item has no access control.
 
 ```swift
 var errSecNoAccessForItem: OSStatus { get }
+```
+
+```c
+errSecNoAccessForItem
 ```
 
 

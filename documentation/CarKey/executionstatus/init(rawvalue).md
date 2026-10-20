@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: CarKey  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new execution status with the specified value.
 
@@ -28,7 +29,8 @@ A new execution status type.
 
 ## See Also
 
-- [init(Int)](executionstatus/init(_:).md)
+### Creating the Execution Status
+- [init(Int)](./init%28_%29.md)
   Creates and returns a new execution status with the specified value.
 
 

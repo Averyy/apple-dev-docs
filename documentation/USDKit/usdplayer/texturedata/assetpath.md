@@ -1,7 +1,8 @@
 # assetPath
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Asset-relative path to the source texture file.
 

@@ -1,7 +1,8 @@
 # init(attributedString:range:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new line fragment from the attributed string for the range of characters you specify.
 
@@ -18,16 +19,21 @@ Creates a new line fragment from the attributed string for the range of characte
 init(attributedString: NSAttributedString, range: NSRange)
 ```
 
+```objc
+- (instancetype) initWithAttributedString:(NSAttributedString *) attributedString range:(NSRange) range;
+```
+
 ## Parameters
 
 - `attributedString`: The attributed string.
-- `range`: An [`NSRange`](https://developer.apple.com/documentation/foundation/nsrange-c.struct) that specifies which characters to include.
+- `range`: An [`NSRange`](../../Foundation/nsrange-c.struct.md) that specifies which characters to include.
 
 ## See Also
 
-- [init?(coder: NSCoder)](nstextlinefragment/init(coder:).md)
+### Creating line fragments
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a new line fragment with from data in an unarchiver.
-- [convenience init(string: String, attributes: [NSAttributedString.Key : Any], range: NSRange)](nstextlinefragment/init(string:attributes:range:).md)
+- [convenience init(string: String, attributes: [NSAttributedString.Key : Any], range: NSRange)](./init%28string,attributes,range%29.md)
   Creates a new line fragment using the string, attributes, and range you provide.
 
 

@@ -1,13 +1,14 @@
 # Notifications
 
-**Framework**: Security Interface
+**Framework**: Security Interface  
+**Role**: API Collection
 
 Notifications sent by this class.
 
 ## Topics
 
 ### Constants
-- [let SFCertificateViewDisclosureStateDidChange: String](sfcertificateviewdisclosurestatedidchange.md)
+- [let SFCertificateViewDisclosureStateDidChange: String](./sfcertificateviewdisclosurestatedidchange.md)
 
 
 ---

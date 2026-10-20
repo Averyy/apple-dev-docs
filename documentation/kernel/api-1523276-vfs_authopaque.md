@@ -1,7 +1,8 @@
 # vfs_authopaque
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determine if a filesystem's authorization decisions occur remotely.
 
@@ -10,11 +11,11 @@ Determine if a filesystem's authorization decisions occur remotely.
 
 ## Declaration
 
-```swift
+```c
 int vfs_authopaque(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if filesystem authorization is controlled remotely, else 0.
 

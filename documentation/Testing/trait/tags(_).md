@@ -1,18 +1,19 @@
 # tags(_:)
 
 **Framework**: Swift Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Construct a list of tags to apply to a test.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -22,15 +23,17 @@ Construct a list of tags to apply to a test.
 static func tags(_ tags: Tag...) -> Self
 ```
 
+Available when `Self` is `Tag.List`.
+
 ## Mentions
 
-- [Organizing test functions with suite types](organizingtests.md)
-- [Adding tags to tests](addingtags.md)
-- [Defining test functions](definingtests.md)
+- [Organizing test functions with suite types](../organizingtests.md)
+- [Adding tags to tests](../addingtags.md)
+- [Defining test functions](../definingtests.md)
 
 #### Return Value
 
-An instance of [`Tag.List`](tag/list.md) containing the specified tags.
+An instance of [`Tag.List`](../tag/list.md) containing the specified tags.
 
 ## Parameters
 
@@ -38,7 +41,8 @@ An instance of [`Tag.List`](tag/list.md) containing the specified tags.
 
 ## See Also
 
-- [var comments: [Comment]](trait/comments.md)
+### Categorizing tests and adding information
+- [var comments: [Comment]](./comments.md)
   The user-provided comments for this trait.
 
 

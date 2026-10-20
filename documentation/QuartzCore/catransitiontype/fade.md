@@ -1,7 +1,8 @@
 # fade
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The layer’s content fades as it becomes visible or hidden.
 
@@ -19,13 +20,18 @@ The layer’s content fades as it becomes visible or hidden.
 static let fade: CATransitionType
 ```
 
+```c
+extern CATransitionType const kCATransitionFade;
+```
+
 ## See Also
 
-- [static let moveIn: CATransitionType](catransitiontype/movein.md)
+### Constants
+- [static let moveIn: CATransitionType](./movein.md)
   The layer’s content slides into place over any existing content.
-- [static let push: CATransitionType](catransitiontype/push.md)
+- [static let push: CATransitionType](./push.md)
   The layer’s content pushes any existing content as it slides into place.
-- [static let reveal: CATransitionType](catransitiontype/reveal.md)
+- [static let reveal: CATransitionType](./reveal.md)
   The layer’s content is revealed gradually in the direction specified by the transition subtype.
 
 

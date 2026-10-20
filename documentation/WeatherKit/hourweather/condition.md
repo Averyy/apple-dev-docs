@@ -1,7 +1,8 @@
 # condition
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description of the weather condition for this hour.
 
@@ -22,11 +23,12 @@ var condition: WeatherCondition
 
 ## See Also
 
-- [var cloudCover: Double](hourweather/cloudcover.md)
+### Getting conditions
+- [var cloudCover: Double](./cloudcover.md)
   The percentage of the sky covered with clouds.
-- [var isDaylight: Bool](hourweather/isdaylight.md)
+- [var isDaylight: Bool](./isdaylight.md)
   The presence or absence of daylight at the requested location and hour.
-- [var visibility: Measurement<UnitLength>](hourweather/visibility.md)
+- [var visibility: Measurement<UnitLength>](./visibility.md)
   The distance at which an object can be clearly seen.
 
 

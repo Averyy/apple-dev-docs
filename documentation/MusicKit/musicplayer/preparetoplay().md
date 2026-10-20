@@ -1,7 +1,8 @@
 # prepareToPlay()
 
 **Framework**: MusicKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Prepares the current queue for playback, interrupting any active (nonmixable) audio sessions.
 

@@ -1,24 +1,25 @@
 # IOUSBHostCIPortState
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum IOUSBHostCIPortState IOUSBHostCIPortState;
 ```
 
 ## Topics
 
 ### Constants
-- [IOUSBHostCIPortStateActive](iousbhostciportstate/iousbhostciportstateactive.md)
-- [IOUSBHostCIPortStateOff](iousbhostciportstate/iousbhostciportstateoff.md)
-- [IOUSBHostCIPortStatePowered](iousbhostciportstate/iousbhostciportstatepowered.md)
-- [IOUSBHostCIPortStateSuspended](iousbhostciportstate/iousbhostciportstatesuspended.md)
+- [IOUSBHostCIPortStateActive](./iousbhostciportstate/iousbhostciportstateactive.md)
+- [IOUSBHostCIPortStateOff](./iousbhostciportstate/iousbhostciportstateoff.md)
+- [IOUSBHostCIPortStatePowered](./iousbhostciportstate/iousbhostciportstatepowered.md)
+- [IOUSBHostCIPortStateSuspended](./iousbhostciportstate/iousbhostciportstatesuspended.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # transactionID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A transaction identifier for the upload.
 
@@ -16,11 +17,12 @@ let transactionID: UUID
 
 ## See Also
 
-- [let fileMetadata: RCSFileTransferMetadata](rcsservice/fileuploadrequest/metadata/filemetadata.md)
+### Accessing upload metadata
+- [let fileMetadata: RCSFileTransferMetadata](./filemetadata.md)
   Metadata for the uploaded file.
-- [let thumbnailMetadata: RCSFileTransferMetadata?](rcsservice/fileuploadrequest/metadata/thumbnailmetadata.md)
+- [let thumbnailMetadata: RCSFileTransferMetadata?](./thumbnailmetadata.md)
   Metadata for the uploaded thumbnail.
-- [struct RCSFileTransferMetadata](rcsfiletransfermetadata.md)
+- [struct RCSFileTransferMetadata](../../../rcsfiletransfermetadata.md)
   A structure that contains metadata about an RCS file transfer.
 
 

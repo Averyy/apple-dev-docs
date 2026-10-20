@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives its elements.
 
@@ -22,7 +23,8 @@ let upstream: Upstream
 
 ## See Also
 
-- [let areInIncreasingOrder: (Upstream.Output, Upstream.Output) throws -> Bool](publishers/trycomparison/areinincreasingorder.md)
+### Inspecting publisher properties
+- [let areInIncreasingOrder: (Upstream.Output, Upstream.Output) throws -> Bool](./areinincreasingorder.md)
   A closure that receives two elements and returns true if they are in increasing order.
 
 

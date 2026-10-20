@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates and returns an iterator that traverses the list of dock accessory state changes.
 
@@ -19,9 +20,10 @@ func makeAsyncIterator() -> DockAccessory.StateChanges.Iterator
 
 ## See Also
 
-- [DockAccessory.StateChanges.Iterator](dockaccessory/statechanges/iterator.md)
+### Iterating over state changes
+- [DockAccessory.StateChanges.Iterator](./iterator.md)
   An object that allows iteration over dock accessory state changes.
-- [DockAccessory.StateChanges.Element](dockaccessory/statechanges/element.md)
+- [DockAccessory.StateChanges.Element](./element.md)
   A dock accessory state change.
 
 

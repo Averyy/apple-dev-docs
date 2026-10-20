@@ -1,7 +1,8 @@
 # VTDecompressionSessionGetTypeID()
 
 **Framework**: Video Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier for the decompression session.
 
@@ -17,6 +18,10 @@ Returns the Core Foundation type identifier for the decompression session.
 
 ```swift
 func VTDecompressionSessionGetTypeID() -> CFTypeID
+```
+
+```c
+extern CFTypeID VTDecompressionSessionGetTypeID();
 ```
 
 #### Return Value

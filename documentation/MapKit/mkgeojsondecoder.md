@@ -1,7 +1,8 @@
 # MKGeoJSONDecoder
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that decodes GeoJSON objects into MapKit types.
 
@@ -20,35 +21,40 @@ An object that decodes GeoJSON objects into MapKit types.
 class MKGeoJSONDecoder
 ```
 
+```objc
+@interface MKGeoJSONDecoder : NSObject
+```
+
 #### Overview
 
-The GeoJSON decoder returns objects that conform to the [`MKGeoJSONObject`](mkgeojsonobject.md) protocol.
+The GeoJSON decoder returns objects that conform to the [`MKGeoJSONObject`](./mkgeojsonobject.md) protocol.
 
 ## Topics
 
 ### Decoding GeoJSON objects
-- [func decode(Data) throws -> [any MKGeoJSONObject]](mkgeojsondecoder/decode(_:).md)
+- [func decode(Data) throws -> [any MKGeoJSONObject]](./mkgeojsondecoder/decode%28_%29.md)
   Decodes the provided data into native MapKit types that a map can display.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Displaying an Indoor Map](displaying-an-indoor-map.md)
+### Geographical features
+- [Displaying an Indoor Map](./displaying-an-indoor-map.md)
   Use the Indoor Mapping Data Format (IMDF) to show an indoor map with custom overlays and points of interest.
-- [class MKGeoJSONFeature](mkgeojsonfeature.md)
+- [class MKGeoJSONFeature](./mkgeojsonfeature.md)
   The decoded representation of a GeoJSON feature.
-- [protocol MKGeoJSONObject](mkgeojsonobject.md)
+- [protocol MKGeoJSONObject](./mkgeojsonobject.md)
   Objects that the GeoJSON decoder can return.
 
 

@@ -1,7 +1,8 @@
 # didDisconnect
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a keyboard accessory disconnects from the device.
 
@@ -18,6 +19,8 @@ The identifier of the message that posts after a keyboard accessory disconnects 
 ```swift
 static var didDisconnect: NotificationCenter.BaseMessageIdentifier<GCKeyboard.DidDisconnectMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCKeyboard.DidDisconnectMessage>`.
 
 
 ---

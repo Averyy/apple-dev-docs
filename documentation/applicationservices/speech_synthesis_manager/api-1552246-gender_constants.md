@@ -6,16 +6,16 @@ Constants that indicate the gender of the individual represented by avoice.
 
 #### Overview
 
-These constants are used in the `gender` field of the [`VoiceDescription`](voicedescription.md) structure. 
+These constants are used in the `gender` field of the [`VoiceDescription`](../voicedescription.md) structure. 
 
 ## Topics
 
 ### Constants
-- [var kNeuter: Int16](kneuter.md)
+- [var kNeuter: Int16](../kneuter.md)
   Neuter voice.
-- [var kMale: Int16](kmale.md)
+- [var kMale: Int16](../kmale.md)
   Male voice.
-- [var kFemale: Int16](kfemale.md)
+- [var kFemale: Int16](../kfemale.md)
   Female voice.
 
 

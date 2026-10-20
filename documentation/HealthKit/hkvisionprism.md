@@ -1,7 +1,8 @@
 # HKVisionPrism
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Prescription data for eye alignment.
 
@@ -19,9 +20,13 @@ Prescription data for eye alignment.
 class HKVisionPrism
 ```
 
+```objc
+@interface HKVisionPrism : NSObject
+```
+
 #### Overview
 
-To include prism information in a glasses prescription, start by creating an [`HKVisionPrism`](hkvisionprism.md) object.
+To include prism information in a glasses prescription, start by creating an [`HKVisionPrism`](./hkvisionprism.md) object.
 
 ```swift
 // The correction for eye alignment.
@@ -32,7 +37,7 @@ let prism = HKVisionPrism(amount: prismQuantity,
                           eye: .right)
 ```
 
-Then, pass this value to the [`HKGlassesLensSpecification`](hkglasseslensspecification.md)’s initializer.
+Then, pass this value to the [`HKGlassesLensSpecification`](./hkglasseslensspecification.md)’s initializer.
 
 ```swift
 // The prescription for the right eye.
@@ -68,64 +73,65 @@ do {
 ## Topics
 
 ### Creating vision prism objects
-- [init(amount: HKQuantity, angle: HKQuantity, eye: HKVisionEye)](hkvisionprism/init(amount:angle:eye:).md)
+- [init(amount: HKQuantity, angle: HKQuantity, eye: HKVisionEye)](./hkvisionprism/init%28amount,angle,eye%29.md)
   Creates a new vision prism object, using a single quantity and an alignment angle.
-- [init(verticalAmount: HKQuantity, verticalBase: HKPrismBase, horizontalAmount: HKQuantity, horizontalBase: HKPrismBase, eye: HKVisionEye)](hkvisionprism/init(verticalamount:verticalbase:horizontalamount:horizontalbase:eye:).md)
+- [init(verticalAmount: HKQuantity, verticalBase: HKPrismBase, horizontalAmount: HKQuantity, horizontalBase: HKPrismBase, eye: HKVisionEye)](./hkvisionprism/init%28verticalamount,verticalbase,horizontalamount,horizontalbase,eye%29.md)
   Creates a new vision prism object that separates the correction strength into horizontal and vertical components.
 ### Accessing lens specification data
-- [var eye: HKVisionEye](hkvisionprism/eye.md)
+- [var eye: HKVisionEye](./hkvisionprism/eye.md)
   A value indicating which eye the correction applies to.
-- [enum HKVisionEye](hkvisioneye.md)
+- [enum HKVisionEye](./hkvisioneye.md)
   A value that specifies the eye for a vision prescription.
-- [var amount: HKQuantity](hkvisionprism/amount.md)
+- [var amount: HKQuantity](./hkvisionprism/amount.md)
   The strength of the correction.
-- [var angle: HKQuantity](hkvisionprism/angle.md)
+- [var angle: HKQuantity](./hkvisionprism/angle.md)
   The orientation of the adjustment.
-- [var horizontalAmount: HKQuantity](hkvisionprism/horizontalamount.md)
+- [var horizontalAmount: HKQuantity](./hkvisionprism/horizontalamount.md)
   The strength of the horizontal correction.
-- [var horizontalBase: HKPrismBase](hkvisionprism/horizontalbase.md)
+- [var horizontalBase: HKPrismBase](./hkvisionprism/horizontalbase.md)
   The orientation of the horizontal portion of the correction.
-- [var verticalAmount: HKQuantity](hkvisionprism/verticalamount.md)
+- [var verticalAmount: HKQuantity](./hkvisionprism/verticalamount.md)
   The strength of the vertical correction.
-- [var verticalBase: HKPrismBase](hkvisionprism/verticalbase.md)
+- [var verticalBase: HKPrismBase](./hkvisionprism/verticalbase.md)
   The orientation of the vertical portion of the correction.
-- [enum HKPrismBase](hkprismbase.md)
+- [enum HKPrismBase](./hkprismbase.md)
   The orientation of the prism correction, represented by the location of the prism’s base (the thickest part of the prism).
 ### Initializers
-- [init?(coder: NSCoder)](hkvisionprism/init(coder:).md)
+- [init?(coder: NSCoder)](./hkvisionprism/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKVisionPrescription](hkvisionprescription.md)
+### Vision prescriptions
+- [class HKVisionPrescription](./hkvisionprescription.md)
   A sample that stores a vision prescription.
-- [class HKGlassesPrescription](hkglassesprescription.md)
+- [class HKGlassesPrescription](./hkglassesprescription.md)
   A sample that stores a prescription for glasses.
-- [class HKContactsPrescription](hkcontactsprescription.md)
+- [class HKContactsPrescription](./hkcontactsprescription.md)
   A sample that store a prescription for contacts.
-- [class HKGlassesLensSpecification](hkglasseslensspecification.md)
+- [class HKGlassesLensSpecification](./hkglasseslensspecification.md)
   An object that contains the glasses prescription data for one eye.
-- [class HKContactsLensSpecification](hkcontactslensspecification.md)
+- [class HKContactsLensSpecification](./hkcontactslensspecification.md)
   An object that contains the contacts prescription data for one eye.
-- [class HKLensSpecification](hklensspecification.md)
+- [class HKLensSpecification](./hklensspecification.md)
   An abstract superclass for lens specifications.
-- [class HKPrescriptionType](hkprescriptiontype.md)
+- [class HKPrescriptionType](./hkprescriptiontype.md)
   A type that identifies samples that store a prescription.
 
 

@@ -1,7 +1,8 @@
 # softsign()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a softsign activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a softsign activation operation to the current graph.
 ```swift
 func softsign() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

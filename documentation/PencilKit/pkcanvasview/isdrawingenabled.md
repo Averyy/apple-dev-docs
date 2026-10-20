@@ -1,7 +1,8 @@
 # isDrawingEnabled
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -13,6 +14,10 @@
 
 ```swift
 var isDrawingEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, getter=isDrawingEnabled) BOOL drawingEnabled;
 ```
 
 

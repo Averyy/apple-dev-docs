@@ -1,7 +1,8 @@
 # WorkoutPlan
 
 **Framework**: WorkoutKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A wrapper around a workout object that your app can use to open the object in Workout or schedule it for later.
 
@@ -21,35 +22,36 @@ struct WorkoutPlan
 ## Topics
 
 ### Creating a workout plan
-- [init(WorkoutPlan.Workout, id: UUID)](workoutplan/init(_:id:).md)
+- [init(WorkoutPlan.Workout, id: UUID)](./workoutplan/init%28_,id%29.md)
   Creates a new workout plan from the provided workout and ID.
-- [WorkoutPlan.Workout](workoutplan/workout-swift.enum.md)
+- [WorkoutPlan.Workout](./workoutplan/workout-swift.enum.md)
   The workout for the workout plan.
 ### Accessing workout plan data
-- [var workout: WorkoutPlan.Workout](workoutplan/workout-swift.property.md)
+- [var workout: WorkoutPlan.Workout](./workoutplan/workout-swift.property.md)
   The workout represented by this plan.
 ### Opening the workout plan
-- [func openInWorkoutApp() async throws](workoutplan/openinworkoutapp.md)
+- [func openInWorkoutApp() async throws](./workoutplan/openinworkoutapp%28%29.md)
   Opens the workout in Workout on Apple Watch.
 ### Initializers
-- [init(from: Data) throws](workoutplan/init(from:).md)
+- [init(from: Data) throws](./workoutplan/init%28from%29.md)
 ### Instance Properties
-- [var dataRepresentation: Data](workoutplan/datarepresentation.md)
+- [var dataRepresentation: Data](./workoutplan/datarepresentation.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ScheduledWorkoutPlan](scheduledworkoutplan.md)
+### Workout plans and schedules
+- [struct ScheduledWorkoutPlan](./scheduledworkoutplan.md)
   A wrapper around a workout plan that your app can use to schedule the workout plan.
-- [class WorkoutScheduler](workoutscheduler.md)
+- [class WorkoutScheduler](./workoutscheduler.md)
   An object for scheduling and managing workouts.
 
 

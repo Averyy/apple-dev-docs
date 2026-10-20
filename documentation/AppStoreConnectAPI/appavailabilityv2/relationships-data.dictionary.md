@@ -1,7 +1,8 @@
 # AppAvailabilityV2.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppAvailabilityV2.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppAvailabilityV2.Relationships.TerritoryAvailabilities](appavailabilityv2/relationships-data.dictionary/territoryavailabilities-data.dictionary.md)
+- [object AppAvailabilityV2.Relationships.TerritoryAvailabilities](./relationships-data.dictionary/territoryavailabilities-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object AppAvailabilityV2.Relationships
 
 ## See Also
 
-- [object AppAvailabilityV2.Attributes](appavailabilityv2/attributes-data.dictionary.md)
+### Objects
+- [object AppAvailabilityV2.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an app availability v2 resource.
 
 

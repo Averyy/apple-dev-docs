@@ -1,7 +1,8 @@
 # endSheet(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Ends a SwiftUI hosted sheet presentation.
 

@@ -1,7 +1,8 @@
 # hidesWhenStopped
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether the activity indicator is hidden when the animation is stopped.
 
@@ -9,7 +10,7 @@ A Boolean value that controls whether the activity indicator is hidden when the 
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ A Boolean value that controls whether the activity indicator is hidden when the 
 var hidesWhenStopped: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL hidesWhenStopped;
+```
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true) (the default), the receiver sets its [`isHidden`](uiview/ishidden.md) property (`UIView`) to [`true`](https://developer.apple.com/documentation/swift/true) when receiver is not animating. If the [`hidesWhenStopped`](uiactivityindicatorview/hideswhenstopped.md) property is [`false`](https://developer.apple.com/documentation/swift/false), the receiver is not hidden when animation stops. You stop an animating progress indicator with the [`stopAnimating()`](uiactivityindicatorview/stopanimating().md) method.
+If the value of this property is [`true`](../../Swift/true.md) (the default), the receiver sets its [`isHidden`](../uiview/ishidden.md) property (`UIView`) to [`true`](../../Swift/true.md) when receiver is not animating. If the [`hidesWhenStopped`](./hideswhenstopped.md) property is [`false`](../../Swift/false.md), the receiver is not hidden when animation stops. You stop an animating progress indicator with the [`stopAnimating()`](./stopanimating%28%29.md) method.
 
 ## See Also
 
-- [func startAnimating()](uiactivityindicatorview/startanimating.md)
+### Managing an activity indicator
+- [func startAnimating()](./startanimating%28%29.md)
   Starts the animation of the progress indicator.
-- [func stopAnimating()](uiactivityindicatorview/stopanimating.md)
+- [func stopAnimating()](./stopanimating%28%29.md)
   Stops the animation of the progress indicator.
-- [var isAnimating: Bool](uiactivityindicatorview/isanimating.md)
+- [var isAnimating: Bool](./isanimating.md)
   A Boolean value indicating whether the activity indicator is currently running its animation.
 
 

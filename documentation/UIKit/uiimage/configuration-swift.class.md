@@ -1,7 +1,8 @@
 # UIImage.Configuration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A configuration object that contains the traits that the system uses when selecting the current image variant.
 
@@ -19,55 +20,60 @@ A configuration object that contains the traits that the system uses when select
 class Configuration
 ```
 
+```objc
+@interface UIImageConfiguration : NSObject
+```
+
 #### Overview
 
 Images may contain multiple variants to account for environmental factors, such as whether the interface is light or dark. The image configuration object lets you override the current environment and render an image with specific attributes. For example, you might want to render a specific version of your image to your interface.
 
-[`UIImage.Configuration`](uiimage/configuration-swift.class.md) objects are immutable and you don’t create them directly. Instead, get an existing image configuration object from a [`UITraitCollection`](uitraitcollection.md) or [`UIImage`](uiimage.md) object. To add attributes to your configuration object, use the [`applying(_:)`](uiimage/configuration-swift.class/applying(_:).md) method to create a new object that merges the existing object’s values with new values you supply. Assign the new object to the [`preferredSymbolConfiguration`](uiimageview/preferredsymbolconfiguration.md) property of the [`UIImageView`](uiimageview.md) object you use to display the image. If you draw the image directly, use the [`withConfiguration(_:)`](uiimage/withconfiguration(_:).md) method to create a new image that contains the new attributes.
+[`UIImage.Configuration`](./configuration-swift.class.md) objects are immutable and you don’t create them directly. Instead, get an existing image configuration object from a [`UITraitCollection`](../uitraitcollection.md) or [`UIImage`](../uiimage.md) object. To add attributes to your configuration object, use the [`applying(_:)`](./configuration-swift.class/applying%28_%29.md) method to create a new object that merges the existing object’s values with new values you supply. Assign the new object to the [`preferredSymbolConfiguration`](../uiimageview/preferredsymbolconfiguration.md) property of the [`UIImageView`](../uiimageview.md) object you use to display the image. If you draw the image directly, use the [`withConfiguration(_:)`](./withconfiguration%28_%29.md) method to create a new image that contains the new attributes.
 
 ## Topics
 
 ### Modifying a configuration object
-- [func applying(UIImage.Configuration?) -> Self](uiimage/configuration-swift.class/applying(_:).md)
+- [func applying(UIImage.Configuration?) -> Self](./configuration-swift.class/applying%28_%29.md)
   Returns a configuration object that applies the specified configuration values on top of the current object’s values.
-- [func withTraitCollection(UITraitCollection?) -> Self](uiimage/configuration-swift.class/withtraitcollection(_:).md)
+- [func withTraitCollection(UITraitCollection?) -> Self](./configuration-swift.class/withtraitcollection%28_%29.md)
   Returns a new configuration object that merges the current traits with the traits from the specified trait collection.
 ### Getting the configuration traits
-- [var traitCollection: UITraitCollection?](uiimage/configuration-swift.class/traitcollection.md)
+- [var traitCollection: UITraitCollection?](./configuration-swift.class/traitcollection.md)
   The traits associated with the image configuration.
 ### Initializers
-- [init?(coder: NSCoder)](uiimage/configuration-swift.class/init(coder:).md)
-- [convenience init(locale: Locale?)](uiimage/configuration-swift.class/init(locale:).md)
-- [convenience init(traitCollection: UITraitCollection?)](uiimage/configuration-swift.class/init(traitcollection:).md)
+- [init?(coder: NSCoder)](./configuration-swift.class/init%28coder%29.md)
+- [convenience init(locale: Locale?)](./configuration-swift.class/init%28locale%29.md)
+- [convenience init(traitCollection: UITraitCollection?)](./configuration-swift.class/init%28traitcollection%29.md)
 ### Instance Properties
-- [var locale: Locale?](uiimage/configuration-swift.class/locale.md)
+- [var locale: Locale?](./configuration-swift.class/locale.md)
 ### Instance Methods
-- [func withLocale(Locale?) -> Self](uiimage/configuration-swift.class/withlocale(_:).md)
+- [func withLocale(Locale?) -> Self](./configuration-swift.class/withlocale%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [UIImage.SymbolConfiguration](uiimage/symbolconfiguration-swift.class.md)
+- [UIImage.SymbolConfiguration](./symbolconfiguration-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIImage](uiimage.md)
+### Representations
+- [class UIImage](../uiimage.md)
   An object that manages image data in your app.
-- [UIImage.SymbolConfiguration](uiimage/symbolconfiguration-swift.class.md)
+- [UIImage.SymbolConfiguration](./symbolconfiguration-swift.class.md)
   An object that contains the specific font, size, style, and weight attributes to apply to a symbol image.
 
 

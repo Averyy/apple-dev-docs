@@ -1,7 +1,8 @@
 # init(coefficient:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the unit converter with the coefficient you specify.
 
@@ -20,13 +21,17 @@ Initializes the unit converter with the coefficient you specify.
 convenience init(coefficient: Double)
 ```
 
+```objc
+- (instancetype) initWithCoefficient:(double) coefficient;
+```
+
 #### Return Value
 
 A unit converter initialized with the specified coefficient.
 
 #### Discussion
 
-Calling this initializer is equivalent to calling [`init(coefficient:constant:)`](unitconverterlinear/init(coefficient:constant:).md), passing `0` for the `constant` parameter.
+Calling this initializer is equivalent to calling [`init(coefficient:constant:)`](./init%28coefficient,constant%29.md), passing `0` for the `constant` parameter.
 
 ## Parameters
 
@@ -34,7 +39,8 @@ Calling this initializer is equivalent to calling [`init(coefficient:constant:)`
 
 ## See Also
 
-- [init(coefficient: Double, constant: Double)](unitconverterlinear/init(coefficient:constant:).md)
+### Creating Unit Converters
+- [init(coefficient: Double, constant: Double)](./init%28coefficient,constant%29.md)
   Creates a unit converter with the coefficient and constant you specify.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core ML  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides read-write access of the shaped array’s underlying memory to a closure.
@@ -31,7 +32,8 @@ The method returns the value your closure returns, if applicable.
 
 ## See Also
 
-- [func fill(with:)](mlshapedarrayprotocol/fill(with:).md)
+### Modifying a shaped array type
+- [func fill(with:)](./fill%28with%29.md)
   Fills the array with a value.
 
 

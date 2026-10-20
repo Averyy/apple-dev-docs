@@ -1,14 +1,15 @@
 # kHIDUsage_Dig_BatteryStrength
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Dig_BatteryStrength = 0x3B
 ```
 

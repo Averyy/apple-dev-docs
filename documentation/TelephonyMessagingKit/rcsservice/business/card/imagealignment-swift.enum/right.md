@@ -1,7 +1,8 @@
 # RCSService.Business.Card.ImageAlignment.right
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Right alignment.
 
@@ -16,7 +17,8 @@ case right
 
 ## See Also
 
-- [RCSService.Business.Card.ImageAlignment.left](rcsservice/business/card/imagealignment-swift.enum/left.md)
+### Determining image alignment
+- [RCSService.Business.Card.ImageAlignment.left](./left.md)
   Left alignment.
 
 

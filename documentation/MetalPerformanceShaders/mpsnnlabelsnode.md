@@ -1,7 +1,8 @@
 # MPSNNLabelsNode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A placeholder node denoting the per-element weight buffer used by loss and gradient loss kernels.
 
@@ -19,23 +20,28 @@ A placeholder node denoting the per-element weight buffer used by loss and gradi
 class MPSNNLabelsNode
 ```
 
+```objc
+@interface MPSNNLabelsNode : MPSNNStateNode
+```
+
 ## Relationships
 
 ### Inherits From
-- [MPSNNStateNode](mpsnnstatenode.md)
+- [MPSNNStateNode](./mpsnnstatenode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSCNNLossNode](mpscnnlossnode.md)
+### Loss Layer Nodes
+- [class MPSCNNLossNode](./mpscnnlossnode.md)
   A representation of a loss kernel.
-- [class MPSCNNYOLOLossNode](mpscnnyololossnode.md)
+- [class MPSCNNYOLOLossNode](./mpscnnyololossnode.md)
   A representation of a YOLO loss kernel.
 
 

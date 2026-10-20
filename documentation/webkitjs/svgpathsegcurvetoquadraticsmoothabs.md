@@ -1,7 +1,8 @@
 # SVGPathSegCurvetoQuadraticSmoothAbs
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegCurvetoQuadraticSmoothAbs
 ```
 
 ## Topics
 
 ### Instance Properties
-- [x](svgpathsegcurvetoquadraticsmoothabs/1632789-x.md)
-- [y](svgpathsegcurvetoquadraticsmoothabs/1633316-y.md)
+- [x](./svgpathsegcurvetoquadraticsmoothabs/api-1632789-x.md)
+- [y](./svgpathsegcurvetoquadraticsmoothabs/api-1633316-y.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGPathSeg](svgpathseg.md)
+- [SVGPathSeg](./svgpathseg.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # includesSchemaInInstructions
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to inject the model’s name, description, and parameters schema into the instructions of sessions.
 
@@ -20,11 +21,12 @@ var includesSchemaInInstructions: Bool { get }
 
 #### Discussion
 
-The Spotlight search tool implements this property as part of its conformance to the [`Tool`](https://developer.apple.com/documentation/foundationmodels/tool) protocol.
+The Spotlight search tool implements this property as part of its conformance to the [`Tool`](../../FoundationModels/tool.md) protocol.
 
 ## See Also
 
-- [var parameters: GenerationSchema](spotlightsearchtool/parameters.md)
+### Getting tool-specific properties
+- [var parameters: GenerationSchema](./parameters.md)
   The schema for the parameters this tool accepts.
 
 

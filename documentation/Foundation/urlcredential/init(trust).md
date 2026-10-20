@@ -1,7 +1,8 @@
 # init(trust:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL credential instance for server trust authentication, initialized with a accepted trust.
 
@@ -20,13 +21,17 @@ Creates a URL credential instance for server trust authentication, initialized w
 init(trust: SecTrust)
 ```
 
+```objc
+- (instancetype) initWithTrust:(SecTrustRef) trust;
+```
+
 #### Return Value
 
 A new URL credential object, containing the provided server trust.
 
 #### Discussion
 
-Before your implementation of [`urlSession(_:task:didReceive:completionHandler:)`](urlsessiontaskdelegate/urlsession(_:task:didreceive:completionhandler:).md) uses this initializer to create a server trust credential, you are responsible for evaluating the received [`SecTrust`](https://developer.apple.com/documentation/security/sectrust) instance. You get this [`serverTrust`](urlprotectionspace/servertrust.md) from the [`protectionSpace`](urlauthenticationchallenge/protectionspace.md) of the [`URLAuthenticationChallenge`](urlauthenticationchallenge.md) parameter that is passed to your delegate method. Pass the trust instance to [`SecTrustEvaluate(_:_:)`](https://developer.apple.com/documentation/security/sectrustevaluate(_:_:)) to evaluate it. If this call indicates the trust is invalid, you should cancel the challenge by passing the [`URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge`](urlsession/authchallengedisposition/cancelauthenticationchallenge.md) disposition to the completion handler.
+Before your implementation of [`urlSession(_:task:didReceive:completionHandler:)`](../urlsessiontaskdelegate/urlsession%28_,task,didreceive,completionhandler%29.md) uses this initializer to create a server trust credential, you are responsible for evaluating the received [`SecTrust`](../../Security/sectrust.md) instance. You get this [`serverTrust`](../urlprotectionspace/servertrust.md) from the [`protectionSpace`](../urlauthenticationchallenge/protectionspace.md) of the [`URLAuthenticationChallenge`](../urlauthenticationchallenge.md) parameter that is passed to your delegate method. Pass the trust instance to [`SecTrustEvaluate(_:_:)`](../../Security/sectrustevaluate%28_,_%29.md) to evaluate it. If this call indicates the trust is invalid, you should cancel the challenge by passing the [`URLSession.AuthChallengeDisposition.cancelAuthenticationChallenge`](../urlsession/authchallengedisposition/cancelauthenticationchallenge.md) disposition to the completion handler.
 
 ## Parameters
 
@@ -34,13 +39,14 @@ Before your implementation of [`urlSession(_:task:didReceive:completionHandler:)
 
 ## See Also
 
-- [init(forTrust: SecTrust)](urlcredential/init(fortrust:).md)
+### Creating a credential
+- [init(forTrust: SecTrust)](./init%28fortrust%29.md)
   Creates a URL credential instance for server trust authentication with a given accepted trust.
-- [init(identity: SecIdentity, certificates: [Any]?, persistence: URLCredential.Persistence)](urlcredential/init(identity:certificates:persistence:).md)
+- [init(identity: SecIdentity, certificates: [Any]?, persistence: URLCredential.Persistence)](./init%28identity,certificates,persistence%29.md)
   Creates a URL credential instance for resolving a client certificate authentication challenge.
-- [init(user: String, password: String, persistence: URLCredential.Persistence)](urlcredential/init(user:password:persistence:).md)
+- [init(user: String, password: String, persistence: URLCredential.Persistence)](./init%28user,password,persistence%29.md)
   Creates a URL credential instance initialized with a given user name and password, using a given persistence setting.
-- [URLCredential.Persistence](urlcredential/persistence-swift.enum.md)
+- [URLCredential.Persistence](./persistence-swift.enum.md)
   Constants that specify how long the credential will be kept.
 
 

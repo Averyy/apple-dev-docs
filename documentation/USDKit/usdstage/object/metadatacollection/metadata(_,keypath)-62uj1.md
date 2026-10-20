@@ -1,7 +1,8 @@
 # metadata(_:keyPath:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value at `keyPath` within the dictionary-valued metadata for the given key.
 

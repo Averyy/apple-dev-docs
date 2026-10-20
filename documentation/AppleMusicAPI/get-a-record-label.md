@@ -1,7 +1,8 @@
 # Get a Catalog Record Label
 
 **Framework**: Apple Music API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetch a record label by using its identifier.
 
@@ -10,13 +11,13 @@ Fetch a record label by using its identifier.
 
 #### Discussion
 
-If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [`Handling Requests and Responses`](handling-requests-and-responses.md).
+If successful, the HTTP status code is 200 (OK) and the `data` array contains the requested resource object. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 ##### Example
 
 **Request**:
 
-```None
+```
 https://api.music.apple.com/v1/catalog/us/record-labels/1543990853
 ```
 
@@ -58,20 +59,37 @@ https://api.music.apple.com/v1/catalog/us/record-labels/1543990853
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The unique identifier for the record label.
+- `storefront` (string) *(required)*: An iTunes Store territory, specified by an ISO 3166 alpha-2 country code. The possible values are the `id` attributes of `Storefront` objects.
+
+### Query Parameters
+
 - `extend` ([string]): A list of attribute extensions to apply to resources in the response.
 - `include` ([string]): Additional relationships to include in the fetch.
 - `l` (string): The localization to use, specified by a language tag. The possible values are in the `supportedLanguageTags` array belonging to the `Storefront` object specified by `storefront`. Otherwise, the default is `defaultLanguageTag` in `Storefront`.
 - `views` ([string]): The views to activate for the record label resource.
 
+  **Allowed Values**: `latest-releases`, `top-releases`
+
+## Responses
+
+- `200` OK (`RecordLabelsResponse`, `application/json`): The request was successful.
+- `401` Unauthorized (`UnauthorizedResponse`, `application/json`): A response indicating an incorrect `Authorization` header.
+- `500` Internal Server Error (`ErrorsResponse`, `application/json`): A response indicating an error occurred on the server.
+
 ## See Also
 
-- [object RecordLabels](recordlabels.md)
+### Related Documentation
+- [object RecordLabels](./recordlabels.md)
   A resource object that represents a record label.
-- [object RecordLabelsResponse](recordlabelsresponse.md)
+- [object RecordLabelsResponse](./recordlabelsresponse.md)
   The response to a request for record labels.
-- [Get a Catalog Record Label’s Relationship View Directly by Name](fetch-a-view-on-this-resource-by-name-5uhxd.md)
+### Requesting Catalog Record Labels
+- [Get a Catalog Record Label’s Relationship View Directly by Name](./fetch-a-view-on-this-resource-by-name-5uhxd.md)
   Fetch related resources for a single record label’s relationship view.
-- [Get Multiple Record Labels](get-multiple-record-labels.md)
+- [Get Multiple Record Labels](./get-multiple-record-labels.md)
   Fetch one or more record labels by using their identifiers.
 
 

@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an operation to the container’s queue.
 
@@ -10,7 +11,7 @@ Adds an operation to the container’s queue.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -18,6 +19,10 @@ Adds an operation to the container’s queue.
 
 ```swift
 func add(_ operation: CKOperation)
+```
+
+```objc
+- (void) addOperation:(CKOperation *) operation;
 ```
 
 #### Discussion

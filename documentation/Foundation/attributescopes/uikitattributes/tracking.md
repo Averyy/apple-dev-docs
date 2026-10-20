@@ -1,7 +1,8 @@
 # tracking
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing a tracking attribute.
 
@@ -21,11 +22,12 @@ let tracking: AttributeScopes.UIKitAttributes.TrackingAttribute
 
 ## See Also
 
-- [let font: AttributeScopes.UIKitAttributes.FontAttribute](attributescopes/uikitattributes/font.md)
+### Using Font and Layout Attributes
+- [let font: AttributeScopes.UIKitAttributes.FontAttribute](./font.md)
   A property for accessing a font attribute.
-- [let kern: AttributeScopes.UIKitAttributes.KernAttribute](attributescopes/uikitattributes/kern.md)
+- [let kern: AttributeScopes.UIKitAttributes.KernAttribute](./kern.md)
   A property for accessing a kerning attribute.
-- [let ligature: AttributeScopes.UIKitAttributes.LigatureAttribute](attributescopes/uikitattributes/ligature.md)
+- [let ligature: AttributeScopes.UIKitAttributes.LigatureAttribute](./ligature.md)
   A property for accessing a ligature attribute.
 
 

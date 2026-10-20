@@ -1,7 +1,8 @@
 # region
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region of the document you’re requesting.
 
@@ -18,13 +19,14 @@ var region: Locale.Region
 
 ## See Also
 
-- [var elements: [MobileNationalIDCardDisplayRequest.Element]](mobilenationalidcarddisplayrequest/elements.md)
+### Configuring the request details
+- [var elements: [MobileNationalIDCardDisplayRequest.Element]](./elements.md)
   The document elements you’re requesting.
-- [MobileNationalIDCardDisplayRequest.Element](mobilenationalidcarddisplayrequest/element.md)
+- [MobileNationalIDCardDisplayRequest.Element](./element.md)
   A type that represents an element you can request from a mobile national ID card.
-- [var options: MobileNationalIDCardDisplayRequest.Options](mobilenationalidcarddisplayrequest/options-swift.property.md)
+- [var options: MobileNationalIDCardDisplayRequest.Options](./options-swift.property.md)
   An object that customizes how to perform a display request.
-- [MobileNationalIDCardDisplayRequest.Options](mobilenationalidcarddisplayrequest/options-swift.struct.md)
+- [MobileNationalIDCardDisplayRequest.Options](./options-swift.struct.md)
   An object that customizes how to perform a display request.
 
 

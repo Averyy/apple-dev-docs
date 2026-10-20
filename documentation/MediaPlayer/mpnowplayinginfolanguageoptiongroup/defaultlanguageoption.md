@@ -1,7 +1,8 @@
 # defaultLanguageOption
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default language option for the group.
 
@@ -20,15 +21,20 @@ The default language option for the group.
 var defaultLanguageOption: MPNowPlayingInfoLanguageOption? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) MPNowPlayingInfoLanguageOption * defaultLanguageOption;
+```
+
 #### Discussion
 
-The value of this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) when there’s no default language option.
+The value of this property is [`nil`](../../ObjectiveC/nil-227m0.md) when there’s no default language option.
 
 ## See Also
 
-- [var allowEmptySelection: Bool](mpnowplayinginfolanguageoptiongroup/allowemptyselection.md)
+### Retrieving language option group information
+- [var allowEmptySelection: Bool](./allowemptyselection.md)
   A Boolean that indicates whether the system requires a selection for the language option group.
-- [var languageOptions: [MPNowPlayingInfoLanguageOption]](mpnowplayinginfolanguageoptiongroup/languageoptions.md)
+- [var languageOptions: [MPNowPlayingInfoLanguageOption]](./languageoptions.md)
   The available language options for the group.
 
 

@@ -1,16 +1,17 @@
 # asyncAndWait(execute:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
 - Mac Catalyst 12.0+
 - macOS 10.14+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 

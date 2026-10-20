@@ -1,7 +1,8 @@
 # WKHapticType.success
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the successful completion of a task or the answering of a question.
 
@@ -14,29 +15,34 @@ Indicates the successful completion of a task or the answering of a question.
 case success
 ```
 
+```c
+WKHapticTypeSuccess
+```
+
 ## See Also
 
-- [WKHapticType.notification](wkhaptictype/notification.md)
+### Constants
+- [WKHapticType.notification](./notification.md)
   Alerts the user to an arrived notification when the Watch app is not running in the foreground.
-- [WKHapticType.directionUp](wkhaptictype/directionup.md)
+- [WKHapticType.directionUp](./directionup.md)
   Indicates an increase in a specific value or when a value has gone above a certain threshold.
-- [WKHapticType.directionDown](wkhaptictype/directiondown.md)
+- [WKHapticType.directionDown](./directiondown.md)
   Indicates a decrease in a specific value or when a value has gone below a certain threshold.
-- [WKHapticType.failure](wkhaptictype/failure.md)
+- [WKHapticType.failure](./failure.md)
   Indicates the failed completion of a task or answering of a question.
-- [WKHapticType.retry](wkhaptictype/retry.md)
+- [WKHapticType.retry](./retry.md)
   Indicates that the user should retry a task that temporarily failed.
-- [WKHapticType.start](wkhaptictype/start.md)
+- [WKHapticType.start](./start.md)
   Indicates the beginning of an action.
-- [WKHapticType.stop](wkhaptictype/stop.md)
+- [WKHapticType.stop](./stop.md)
   Indicates the end of an action.
-- [WKHapticType.click](wkhaptictype/click.md)
+- [WKHapticType.click](./click.md)
   Indicates a simple click type of feedback.
-- [WKHapticType.navigationGenericManeuver](wkhaptictype/navigationgenericmaneuver.md)
+- [WKHapticType.navigationGenericManeuver](./navigationgenericmaneuver.md)
   Indicates a new navigation step.
-- [WKHapticType.navigationLeftTurn](wkhaptictype/navigationleftturn.md)
+- [WKHapticType.navigationLeftTurn](./navigationleftturn.md)
   Indicates that the user should turn left.
-- [WKHapticType.navigationRightTurn](wkhaptictype/navigationrightturn.md)
+- [WKHapticType.navigationRightTurn](./navigationrightturn.md)
   Indicates that the user should turn right.
 
 

@@ -1,7 +1,8 @@
 # AsyncPrefixWhileSequence
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy a given predicate.
 
@@ -23,34 +24,35 @@ struct AsyncPrefixWhileSequence<Base> where Base : AsyncSequence
 ## Topics
 
 ### Structures
-- [AsyncPrefixWhileSequence.Iterator](asyncprefixwhilesequence/iterator.md)
+- [AsyncPrefixWhileSequence.Iterator](./asyncprefixwhilesequence/iterator.md)
   The iterator that produces elements of the prefix-while sequence.
 ### Type Aliases
-- [AsyncPrefixWhileSequence.Failure](asyncprefixwhilesequence/failure.md)
+- [AsyncPrefixWhileSequence.Failure](./asyncprefixwhilesequence/failure.md)
   The type of the error that can be produced by the sequence.
 ### Default Implementations
-- [AsyncSequence Implementations](asyncprefixwhilesequence/asyncsequence-implementations.md)
+- [AsyncSequence Implementations](./asyncprefixwhilesequence/asyncsequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](asyncsequence.md)
-- [Copyable](copyable.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [AsyncSequence](./asyncsequence.md)
+- [Copyable](./copyable.md)
+- [Escapable](./escapable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [func prefix(Int) -> AsyncPrefixSequence<Self>](asyncsequence/prefix(_:).md)
+### Selecting Elements
+- [func prefix(Int) -> AsyncPrefixSequence<Self>](./asyncsequence/prefix%28_%29.md)
   Returns an asynchronous sequence, up to the specified maximum length, containing the initial elements of the base asynchronous sequence.
-- [struct AsyncPrefixSequence](asyncprefixsequence.md)
+- [struct AsyncPrefixSequence](./asyncprefixsequence.md)
   An asynchronous sequence, up to a specified maximum length, containing the initial elements of a base asynchronous sequence.
-- [func prefix(while: (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>](asyncsequence/prefix(while:)-2xy95.md)
+- [func prefix(while: (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>](./asyncsequence/prefix%28while%29-2xy95.md)
   Returns an asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy the given predicate.
-- [func prefix(while: (Self.Element) async throws -> Bool) rethrows -> AsyncThrowingPrefixWhileSequence<Self>](asyncsequence/prefix(while:)-6yp5n.md)
+- [func prefix(while: (Self.Element) async throws -> Bool) rethrows -> AsyncThrowingPrefixWhileSequence<Self>](./asyncsequence/prefix%28while%29-6yp5n.md)
   Returns an asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy the given error-throwing predicate.
-- [struct AsyncThrowingPrefixWhileSequence](asyncthrowingprefixwhilesequence.md)
+- [struct AsyncThrowingPrefixWhileSequence](./asyncthrowingprefixwhilesequence.md)
   An asynchronous sequence, containing the initial, consecutive elements of the base sequence that satisfy the given error-throwing predicate.
 
 

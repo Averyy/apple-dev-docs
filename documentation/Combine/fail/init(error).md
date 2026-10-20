@@ -1,7 +1,8 @@
 # init(error:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that immediately terminates with the specified failure.
 
@@ -26,7 +27,8 @@ init(error: Failure)
 
 ## See Also
 
-- [init(outputType: Output.Type, failure: Failure)](fail/init(outputtype:failure:).md)
+### Creating a fail publisher
+- [init(outputType: Output.Type, failure: Failure)](./init%28outputtype,failure%29.md)
   Creates publisher with the given output type, that immediately terminates with the specified failure.
 
 

@@ -2,17 +2,22 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the current layout options.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func layoutOptions() -> Int
+```
+
+```objc
+- (NSUInteger) layoutOptions;
 ```
 
 #### Return Value

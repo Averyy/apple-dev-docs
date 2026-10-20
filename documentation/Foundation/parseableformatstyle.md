@@ -1,7 +1,8 @@
 # ParseableFormatStyle
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can convert a given input data type into a representation in an output type.
 
@@ -23,55 +24,56 @@ protocol ParseableFormatStyle : FormatStyle
 ## Topics
 
 ### Declaring Parse Strategy
-- [var parseStrategy: Self.Strategy](parseableformatstyle/parsestrategy.md)
+- [var parseStrategy: Self.Strategy](./parseableformatstyle/parsestrategy.md)
   A `ParseStrategy` that can be used to parse this `FormatStyle`’s output
-- [associatedtype Strategy : ParseStrategy](parseableformatstyle/strategy.md)
+- [associatedtype Strategy : ParseStrategy](./parseableformatstyle/strategy.md)
 ### Type Properties
-- [static var http: Date.HTTPFormatStyle](parseableformatstyle/http-6qda5.md)
-- [static var http: DateComponents.HTTPFormatStyle](parseableformatstyle/http-yfpc.md)
-- [static var iso8601: Date.ISO8601FormatStyle](parseableformatstyle/iso8601-41vzo.md)
-- [static var iso8601: DateComponents.ISO8601FormatStyle](parseableformatstyle/iso8601-55wjm.md)
+- [static var http: Date.HTTPFormatStyle](./parseableformatstyle/http-6qda5.md)
+- [static var http: DateComponents.HTTPFormatStyle](./parseableformatstyle/http-yfpc.md)
+- [static var iso8601: Date.ISO8601FormatStyle](./parseableformatstyle/iso8601-41vzo.md)
+- [static var iso8601: DateComponents.ISO8601FormatStyle](./parseableformatstyle/iso8601-55wjm.md)
 ### Type Methods
-- [static func currency(code: String) -> Self](parseableformatstyle/currency(code:).md)
+- [static func currency(code: String) -> Self](./parseableformatstyle/currency%28code%29.md)
 ### Default Implementations
-- [FormatStyle Implementations](parseableformatstyle/formatstyle-implementations.md)
+- [FormatStyle Implementations](./parseableformatstyle/formatstyle-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [FormatStyle](./formatstyle.md)
+- [Hashable](../Swift/hashable.md)
 ### Conforming Types
-- [Date.FormatStyle](date/formatstyle.md)
-- [Date.HTTPFormatStyle](date/httpformatstyle.md)
-- [Date.ISO8601FormatStyle](date/iso8601formatstyle.md)
-- [Date.VerbatimFormatStyle](date/verbatimformatstyle.md)
-- [DateComponents.HTTPFormatStyle](datecomponents/httpformatstyle.md)
-- [DateComponents.ISO8601FormatStyle](datecomponents/iso8601formatstyle.md)
-- [Decimal.FormatStyle](decimal/formatstyle.md)
-- [Decimal.FormatStyle.Currency](decimal/formatstyle/currency.md)
-- [Decimal.FormatStyle.Percent](decimal/formatstyle/percent.md)
-- [FloatingPointFormatStyle](floatingpointformatstyle.md)
-- [FloatingPointFormatStyle.Currency](floatingpointformatstyle/currency.md)
-- [FloatingPointFormatStyle.Percent](floatingpointformatstyle/percent.md)
-- [IntegerFormatStyle](integerformatstyle.md)
-- [IntegerFormatStyle.Currency](integerformatstyle/currency.md)
-- [IntegerFormatStyle.Percent](integerformatstyle/percent.md)
-- [PersonNameComponents.FormatStyle](personnamecomponents/formatstyle.md)
-- [URL.FormatStyle](url/formatstyle.md)
+- [Date.FormatStyle](./date/formatstyle.md)
+- [Date.HTTPFormatStyle](./date/httpformatstyle.md)
+- [Date.ISO8601FormatStyle](./date/iso8601formatstyle.md)
+- [Date.VerbatimFormatStyle](./date/verbatimformatstyle.md)
+- [DateComponents.HTTPFormatStyle](./datecomponents/httpformatstyle.md)
+- [DateComponents.ISO8601FormatStyle](./datecomponents/iso8601formatstyle.md)
+- [Decimal.FormatStyle](./decimal/formatstyle.md)
+- [Decimal.FormatStyle.Currency](./decimal/formatstyle/currency.md)
+- [Decimal.FormatStyle.Percent](./decimal/formatstyle/percent.md)
+- [FloatingPointFormatStyle](./floatingpointformatstyle.md)
+- [FloatingPointFormatStyle.Currency](./floatingpointformatstyle/currency.md)
+- [FloatingPointFormatStyle.Percent](./floatingpointformatstyle/percent.md)
+- [IntegerFormatStyle](./integerformatstyle.md)
+- [IntegerFormatStyle.Currency](./integerformatstyle/currency.md)
+- [IntegerFormatStyle.Percent](./integerformatstyle/percent.md)
+- [PersonNameComponents.FormatStyle](./personnamecomponents/formatstyle.md)
+- [URL.FormatStyle](./url/formatstyle.md)
 
 ## See Also
 
-- [protocol ParseStrategy](parsestrategy.md)
+### Data parsing in Swift
+- [protocol ParseStrategy](./parsestrategy.md)
   A type that parses an input representation, such as a formatted string, into a provided data type.
-- [struct IntegerParseStrategy](integerparsestrategy.md)
+- [struct IntegerParseStrategy](./integerparsestrategy.md)
   A parse strategy for creating integer values from formatted strings.
-- [struct FloatingPointParseStrategy](floatingpointparsestrategy.md)
+- [struct FloatingPointParseStrategy](./floatingpointparsestrategy.md)
   A parse strategy for creating floating-point values from formatted strings.
-- [Decimal.ParseStrategy](decimal/parsestrategy.md)
+- [Decimal.ParseStrategy](./decimal/parsestrategy.md)
   A parse strategy for creating decimal values from formatted strings.
 
 

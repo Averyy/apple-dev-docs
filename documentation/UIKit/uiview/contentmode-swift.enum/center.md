@@ -1,16 +1,17 @@
 # UIView.ContentMode.center
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The option to center the content in the view’s bounds, keeping the proportions the same.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,31 +19,36 @@ The option to center the content in the view’s bounds, keeping the proportions
 case center
 ```
 
+```c
+UIViewContentModeCenter
+```
+
 ## See Also
 
-- [UIView.ContentMode.scaleToFill](uiview/contentmode-swift.enum/scaletofill.md)
+### Constants
+- [UIView.ContentMode.scaleToFill](./scaletofill.md)
   The option to scale the content to fit the size of itself by changing the aspect ratio of the content if necessary.
-- [UIView.ContentMode.scaleAspectFit](uiview/contentmode-swift.enum/scaleaspectfit.md)
+- [UIView.ContentMode.scaleAspectFit](./scaleaspectfit.md)
   The option to scale the content to fit the size of the view by maintaining the aspect ratio. Any remaining area of the view’s bounds is transparent.
-- [UIView.ContentMode.scaleAspectFill](uiview/contentmode-swift.enum/scaleaspectfill.md)
+- [UIView.ContentMode.scaleAspectFill](./scaleaspectfill.md)
   The option to scale the content to fill the size of the view. Some portion of the content may be clipped to fill the view’s bounds.
-- [UIView.ContentMode.redraw](uiview/contentmode-swift.enum/redraw.md)
-  The option to redisplay the view when the bounds change by invoking the [`setNeedsDisplay()`](uiview/setneedsdisplay().md) method.
-- [UIView.ContentMode.top](uiview/contentmode-swift.enum/top.md)
+- [UIView.ContentMode.redraw](./redraw.md)
+  The option to redisplay the view when the bounds change by invoking the [`setNeedsDisplay()`](../setneedsdisplay%28%29.md) method.
+- [UIView.ContentMode.top](./top.md)
   The option to center the content aligned at the top in the view’s bounds.
-- [UIView.ContentMode.bottom](uiview/contentmode-swift.enum/bottom.md)
+- [UIView.ContentMode.bottom](./bottom.md)
   The option to center the content aligned at the bottom in the view’s bounds.
-- [UIView.ContentMode.left](uiview/contentmode-swift.enum/left.md)
+- [UIView.ContentMode.left](./left.md)
   The option to align the content on the left of the view.
-- [UIView.ContentMode.right](uiview/contentmode-swift.enum/right.md)
+- [UIView.ContentMode.right](./right.md)
   The option to align the content on the right of the view.
-- [UIView.ContentMode.topLeft](uiview/contentmode-swift.enum/topleft.md)
+- [UIView.ContentMode.topLeft](./topleft.md)
   The option to align the content in the top-left corner of the view.
-- [UIView.ContentMode.topRight](uiview/contentmode-swift.enum/topright.md)
+- [UIView.ContentMode.topRight](./topright.md)
   The option to align the content in the top-right corner of the view.
-- [UIView.ContentMode.bottomLeft](uiview/contentmode-swift.enum/bottomleft.md)
+- [UIView.ContentMode.bottomLeft](./bottomleft.md)
   The option to align the content in the bottom-left corner of the view.
-- [UIView.ContentMode.bottomRight](uiview/contentmode-swift.enum/bottomright.md)
+- [UIView.ContentMode.bottomRight](./bottomright.md)
   The option to align the content in the bottom-right corner of the view.
 
 

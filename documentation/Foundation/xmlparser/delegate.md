@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object that receives messages about the parsing process.
 
@@ -20,9 +21,13 @@ A delegate object that receives messages about the parsing process.
 unowned(unsafe) var delegate: (any XMLParserDelegate)? { get set }
 ```
 
+```objc
+@property (assign, nullable) id<NSXMLParserDelegate> delegate;
+```
+
 #### Discussion
 
-For methods to be implemented by the delegate, see [`XMLParserDelegate`](xmlparserdelegate.md).
+For methods to be implemented by the delegate, see [`XMLParserDelegate`](../xmlparserdelegate.md).
 
 
 ---

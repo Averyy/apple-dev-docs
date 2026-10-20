@@ -1,7 +1,8 @@
 # kSPCProcCmd_COPY_AND_VERIFY
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSPCProcCmd_COPY_AND_VERIFY = 0x3A
 ```
 

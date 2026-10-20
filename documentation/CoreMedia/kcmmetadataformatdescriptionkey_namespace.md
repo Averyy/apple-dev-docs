@@ -1,7 +1,8 @@
 # kCMMetadataFormatDescriptionKey_Namespace
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that identifies the namespace.
 
@@ -20,37 +21,42 @@ A key that identifies the namespace.
 let kCMMetadataFormatDescriptionKey_Namespace: CFString
 ```
 
+```c
+extern CFStringRef const kCMMetadataFormatDescriptionKey_Namespace;
+```
+
 ## See Also
 
-- [let kCMMetadataBaseDataType_AffineTransformF64: CFString](kcmmetadatabasedatatype_affinetransformf64.md)
+### Constants
+- [let kCMMetadataBaseDataType_AffineTransformF64: CFString](./kcmmetadatabasedatatype_affinetransformf64.md)
   A type that identifies a 3x3 matrix of 64-bit big endian floating point numbers in a row-major order that specify an affine transform.
-- [let kCMMetadataFormatDescriptionKey_ConformingDataTypes: CFString](kcmmetadataformatdescriptionkey_conformingdatatypes.md)
+- [let kCMMetadataFormatDescriptionKey_ConformingDataTypes: CFString](./kcmmetadataformatdescriptionkey_conformingdatatypes.md)
   A key that identifies the conforming data types.
-- [let kCMMetadataFormatDescriptionKey_DataType: CFString](kcmmetadataformatdescriptionkey_datatype.md)
+- [let kCMMetadataFormatDescriptionKey_DataType: CFString](./kcmmetadataformatdescriptionkey_datatype.md)
   A key that identifies the data type.
-- [let kCMMetadataFormatDescriptionKey_DataTypeNamespace: CFString](kcmmetadataformatdescriptionkey_datatypenamespace.md)
+- [let kCMMetadataFormatDescriptionKey_DataTypeNamespace: CFString](./kcmmetadataformatdescriptionkey_datatypenamespace.md)
   A key that identifies the data type namespace.
-- [let kCMMetadataFormatDescriptionKey_LanguageTag: CFString](kcmmetadataformatdescriptionkey_languagetag.md)
+- [let kCMMetadataFormatDescriptionKey_LanguageTag: CFString](./kcmmetadataformatdescriptionkey_languagetag.md)
   A key that identifies the language tag.
-- [let kCMMetadataFormatDescriptionKey_LocalID: CFString](kcmmetadataformatdescriptionkey_localid.md)
+- [let kCMMetadataFormatDescriptionKey_LocalID: CFString](./kcmmetadataformatdescriptionkey_localid.md)
   A key that identifies the local identifier.
-- [let kCMMetadataFormatDescriptionKey_SetupData: CFString](kcmmetadataformatdescriptionkey_setupdata.md)
+- [let kCMMetadataFormatDescriptionKey_SetupData: CFString](./kcmmetadataformatdescriptionkey_setupdata.md)
   A key that identifies setup data.
-- [let kCMMetadataFormatDescriptionKey_StructuralDependency: CFString](kcmmetadataformatdescriptionkey_structuraldependency.md)
+- [let kCMMetadataFormatDescriptionKey_StructuralDependency: CFString](./kcmmetadataformatdescriptionkey_structuraldependency.md)
   A key that identifies the structural dependency.
-- [let kCMMetadataFormatDescriptionKey_Value: CFString](kcmmetadataformatdescriptionkey_value.md)
+- [let kCMMetadataFormatDescriptionKey_Value: CFString](./kcmmetadataformatdescriptionkey_value.md)
   A key that identifies the value.
-- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_DataType: CFString](kcmmetadataformatdescriptionmetadataspecificationkey_datatype.md)
+- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_DataType: CFString](./kcmmetadataformatdescriptionmetadataspecificationkey_datatype.md)
   A specification key that identifies the data type.
-- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_ExtendedLanguageTag: CFString](kcmmetadataformatdescriptionmetadataspecificationkey_extendedlanguagetag.md)
+- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_ExtendedLanguageTag: CFString](./kcmmetadataformatdescriptionmetadataspecificationkey_extendedlanguagetag.md)
   A specification key that identifies the extended language tag.
-- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_Identifier: CFString](kcmmetadataformatdescriptionmetadataspecificationkey_identifier.md)
+- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_Identifier: CFString](./kcmmetadataformatdescriptionmetadataspecificationkey_identifier.md)
   A specification key that identifies the identifier.
-- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_SetupData: CFString](kcmmetadataformatdescriptionmetadataspecificationkey_setupdata.md)
+- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_SetupData: CFString](./kcmmetadataformatdescriptionmetadataspecificationkey_setupdata.md)
   A specification key that identifies the setup data.
-- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_StructuralDependency: CFString](kcmmetadataformatdescriptionmetadataspecificationkey_structuraldependency.md)
+- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_StructuralDependency: CFString](./kcmmetadataformatdescriptionmetadataspecificationkey_structuraldependency.md)
   A specification key that identifies dependencies.
-- [let kCMMetadataFormatDescription_StructuralDependencyKey_DependencyIsInvalidFlag: CFString](kcmmetadataformatdescription_structuraldependencykey_dependencyisinvalidflag.md)
+- [let kCMMetadataFormatDescription_StructuralDependencyKey_DependencyIsInvalidFlag: CFString](./kcmmetadataformatdescription_structuraldependencykey_dependencyisinvalidflag.md)
   A specification key that identifies the depencency isn’t valid.
 
 

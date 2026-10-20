@@ -1,7 +1,8 @@
 # grams
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The grams unit of mass.
 
@@ -21,37 +22,42 @@ The grams unit of mass.
 class var grams: UnitMass { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitMass * grams;
+```
+
 ## See Also
 
-- [class var kilograms: UnitMass](unitmass/kilograms.md)
+### Accessing Predefined Units
+- [class var kilograms: UnitMass](./kilograms.md)
   The kilograms unit of mass.
-- [class var decigrams: UnitMass](unitmass/decigrams.md)
+- [class var decigrams: UnitMass](./decigrams.md)
   The decigrams unit of mass.
-- [class var centigrams: UnitMass](unitmass/centigrams.md)
+- [class var centigrams: UnitMass](./centigrams.md)
   The centigrams unit of mass.
-- [class var milligrams: UnitMass](unitmass/milligrams.md)
+- [class var milligrams: UnitMass](./milligrams.md)
   The milligrams unit of mass.
-- [class var micrograms: UnitMass](unitmass/micrograms.md)
+- [class var micrograms: UnitMass](./micrograms.md)
   The micrograms unit of mass.
-- [class var nanograms: UnitMass](unitmass/nanograms.md)
+- [class var nanograms: UnitMass](./nanograms.md)
   The nanograms unit of mass.
-- [class var picograms: UnitMass](unitmass/picograms.md)
+- [class var picograms: UnitMass](./picograms.md)
   The picograms unit of mass.
-- [class var ounces: UnitMass](unitmass/ounces.md)
+- [class var ounces: UnitMass](./ounces.md)
   The ounces unit of mass.
-- [pounds](1808594-pounds.md)
+- [pounds](../api-1808594-pounds.md)
   Returns the pounds unit of mass.
-- [class var pounds: UnitMass](unitmass/pounds.md)
+- [class var pounds: UnitMass](./pounds.md)
   The pounds unit of mass.
-- [class var stones: UnitMass](unitmass/stones.md)
+- [class var stones: UnitMass](./stones.md)
   The stone unit of mass.
-- [class var metricTons: UnitMass](unitmass/metrictons.md)
+- [class var metricTons: UnitMass](./metrictons.md)
   The metric tons unit of mass.
-- [class var shortTons: UnitMass](unitmass/shorttons.md)
+- [class var shortTons: UnitMass](./shorttons.md)
   The short tons unit of mass.
-- [class var carats: UnitMass](unitmass/carats.md)
+- [class var carats: UnitMass](./carats.md)
   The carats unit of mass.
-- [class var ouncesTroy: UnitMass](unitmass/ouncestroy.md)
+- [class var ouncesTroy: UnitMass](./ouncestroy.md)
   The ounces troy unit of mass.
 
 

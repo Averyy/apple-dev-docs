@@ -1,7 +1,8 @@
 # PKAutomaticReloadPaymentSummaryItem
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines a summary item for an automatic reload or refill payment, such as a store card top-up.
 
@@ -18,38 +19,43 @@ An object that defines a summary item for an automatic reload or refill payment,
 class PKAutomaticReloadPaymentSummaryItem
 ```
 
+```objc
+@interface PKAutomaticReloadPaymentSummaryItem : PKPaymentSummaryItem
+```
+
 #### Overview
 
-[`PKAutomaticReloadPaymentSummaryItem`](pkautomaticreloadpaymentsummaryitem.md) is a subclass of [`PKPaymentSummaryItem`](pkpaymentsummaryitem.md) and inherits all properties of the parent class.
+[`PKAutomaticReloadPaymentSummaryItem`](./pkautomaticreloadpaymentsummaryitem.md) is a subclass of [`PKPaymentSummaryItem`](./pkpaymentsummaryitem.md) and inherits all properties of the parent class.
 
-Add a summary item of this type to the [`paymentSummaryItems`](pkpaymentrequest/paymentsummaryitems.md) property of a [`PKPaymentRequest`](pkpaymentrequest.md) object to display an automatic reload payment in the summary items on the payment sheet to the user.
+Add a summary item of this type to the [`paymentSummaryItems`](./pkpaymentrequest/paymentsummaryitems.md) property of a [`PKPaymentRequest`](./pkpaymentrequest.md) object to display an automatic reload payment in the summary items on the payment sheet to the user.
 
 To describe an automatic reload payment, set the summary item values as follows:
 
-- Use the [`amount`](pkpaymentsummaryitem/amount.md) property to specify the reload amount when the account balance reaches the threshold amount, [`thresholdAmount`](pkautomaticreloadpaymentsummaryitem/thresholdamount.md).
-- Omit the [`type`](pkpaymentsummaryitem/type.md) property. The summary item type is only relevant for the [`PKPaymentSummaryItem`](pkpaymentsummaryitem.md) parent class.
+- Use the [`amount`](./pkpaymentsummaryitem/amount.md) property to specify the reload amount when the account balance reaches the threshold amount, [`thresholdAmount`](./pkautomaticreloadpaymentsummaryitem/thresholdamount.md).
+- Omit the [`type`](./pkpaymentsummaryitem/type.md) property. The summary item type is only relevant for the [`PKPaymentSummaryItem`](./pkpaymentsummaryitem.md) parent class.
 
 ## Topics
 
 ### Setting the automatic reload threshold
-- [var thresholdAmount: NSDecimalNumber](pkautomaticreloadpaymentsummaryitem/thresholdamount.md)
+- [var thresholdAmount: NSDecimalNumber](./pkautomaticreloadpaymentsummaryitem/thresholdamount.md)
   The balance an account reaches before you apply the automatic reload amount.
 
 ## Relationships
 
 ### Inherits From
-- [PKPaymentSummaryItem](pkpaymentsummaryitem.md)
+- [PKPaymentSummaryItem](./pkpaymentsummaryitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var automaticReloadBilling: PKAutomaticReloadPaymentSummaryItem](pkautomaticreloadpaymentrequest/automaticreloadbilling.md)
+### Setting the payment summary items
+- [var automaticReloadBilling: PKAutomaticReloadPaymentSummaryItem](./pkautomaticreloadpaymentrequest/automaticreloadbilling.md)
   Summary items that contain the top-up amount and balance threshold amount for the automatic reload payment.
 
 

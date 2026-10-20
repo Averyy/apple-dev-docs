@@ -1,7 +1,8 @@
 # secondaryTextureCoordinateTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A two-dimensional transformation to apply to the entity’s secondary texture coordinates.
 
@@ -21,7 +22,7 @@ var secondaryTextureCoordinateTransform: UnlitMaterial.TextureCoordinateTransfor
 
 #### Discussion
 
-This property transforms the secondary set. To transform the primary UV coordinates in a material, see [`textureCoordinateTransform`](unlitmaterial/texturecoordinatetransform-swift.property.md).
+This property transforms the secondary set. To transform the primary UV coordinates in a material, see [`textureCoordinateTransform`](./texturecoordinatetransform-swift.property.md).
 
 
 ---

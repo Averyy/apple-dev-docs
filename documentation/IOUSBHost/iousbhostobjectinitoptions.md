@@ -1,7 +1,8 @@
 # IOUSBHostObjectInitOptions
 
 **Framework**: IOUSBHost  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for initializing the host object.
 
@@ -15,38 +16,43 @@ Options for initializing the host object.
 struct IOUSBHostObjectInitOptions
 ```
 
+```c
+enum IOUSBHostObjectInitOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Options
-- [static var deviceCapture: IOUSBHostObjectInitOptions](iousbhostobjectinitoptions/devicecapture.md)
+- [static var deviceCapture: IOUSBHostObjectInitOptions](./iousbhostobjectinitoptions/devicecapture.md)
   The option to capture the device and terminate existing drivers.
 ### Initializing the Structure
-- [init(rawValue: UInt)](iousbhostobjectinitoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./iousbhostobjectinitoptions/init%28rawvalue%29.md)
   Initializes the object.
 ### Type Properties
-- [static var deviceSeize: IOUSBHostObjectInitOptions](iousbhostobjectinitoptions/deviceseize.md)
+- [static var deviceSeize: IOUSBHostObjectInitOptions](./iousbhostobjectinitoptions/deviceseize.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [typealias IOUSBHostInterestHandler](iousbhostinteresthandler.md)
+### Managing the Object Life Cycle
+- [typealias IOUSBHostInterestHandler](./iousbhostinteresthandler.md)
   The callback that handles underlying service-state changes.
-- [var ioService: io_service_t](iousbhostobject/ioservice.md)
+- [var ioService: io_service_t](./iousbhostobject/ioservice.md)
   A reference to the kernel object.
-- [var queue: dispatch_queue_t](iousbhostobject/queue.md)
+- [var queue: dispatch_queue_t](./iousbhostobject/queue.md)
   The queue for servicing input/output requests.
-- [func destroy()](iousbhostobject/destroy.md)
+- [func destroy()](./iousbhostobject/destroy%28%29.md)
   Removes underlying allocations and connections from the USB host object.
 
 

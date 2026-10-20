@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new compute policy using the given compute units.
 

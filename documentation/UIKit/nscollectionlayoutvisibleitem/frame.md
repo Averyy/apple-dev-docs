@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The frame rectangle, which describes the item’s location and size in its section’s coordinate system.
@@ -19,15 +20,20 @@ The frame rectangle, which describes the item’s location and size in its secti
 var frame: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect frame;
+```
+
 ## See Also
 
-- [var bounds: CGRect](nscollectionlayoutvisibleitem/bounds.md)
+### Configuring position
+- [var bounds: CGRect](./bounds.md)
   The bounds rectangle, which describes the item’s location and size in its own coordinate system.
-- [var center: CGPoint](nscollectionlayoutvisibleitem/center.md)
+- [var center: CGPoint](./center.md)
   The center point of the item’s frame rectangle.
-- [var transform: CGAffineTransform](nscollectionlayoutvisibleitem/transform.md)
+- [var transform: CGAffineTransform](./transform.md)
   The transform applied to the item, relative to the center of its bounds.
-- [var transform3D: CATransform3D](nscollectionlayoutvisibleitem/transform3d.md)
+- [var transform3D: CATransform3D](./transform3d.md)
   The 3D transform applied to the item.
 
 

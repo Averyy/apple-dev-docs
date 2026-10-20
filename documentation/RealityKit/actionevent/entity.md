@@ -1,7 +1,8 @@
 # entity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that owns the `BehaviorTreeComponent` and initiated this action.
 
@@ -18,6 +19,8 @@ The entity that owns the `BehaviorTreeComponent` and initiated this action.
 ```swift
 var entity: Entity? { get }
 ```
+
+Available when `ActionType` conforms to `BehaviorTreeAction`.
 
 #### Discussion
 

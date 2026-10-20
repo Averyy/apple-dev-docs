@@ -1,7 +1,8 @@
 # selectionManager(_:locationOfTextContainerAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the text location of the text container at the specified point.
 
@@ -12,6 +13,10 @@ Returns the text location of the text container at the specified point.
 
 ```swift
 optional func selectionManager(_ selectionManager: NSTextSelectionManager, locationOfTextContainerAt point: NSPoint) -> (any NSTextLocation)?
+```
+
+```objc
+- (id<NSTextLocation>) selectionManager:(NSTextSelectionManager *) selectionManager locationOfTextContainerAtPoint:(NSPoint) point;
 ```
 
 #### Return Value

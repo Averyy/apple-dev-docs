@@ -1,7 +1,8 @@
 # init(initializingFrom:shape:stride:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a `BNNSTensor` structure that’s initialized with every element of the source.
 

@@ -1,7 +1,8 @@
 # NSAttributedString.TextHighlightColorScheme
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify the highlight color to use with the text.
 
@@ -22,49 +23,50 @@ struct TextHighlightColorScheme
 
 #### Overview
 
-Use an [`NSAttributedString.TextHighlightColorScheme`](nsattributedstring/texthighlightcolorscheme.md) structure as the value of the [`textHighlightColorScheme`](nsattributedstring/key/texthighlightcolorscheme.md) attribute. That attribute specifies which color to use when drawing the highlight on the text. This attribute specifies only the color option. To display the highlight itself, add the [`textHighlightStyle`](nsattributedstring/key/texthighlightstyle.md) attribute to the text.
+Use an [`NSAttributedString.TextHighlightColorScheme`](./texthighlightcolorscheme.md) structure as the value of the [`textHighlightColorScheme`](./key/texthighlightcolorscheme.md) attribute. That attribute specifies which color to use when drawing the highlight on the text. This attribute specifies only the color option. To display the highlight itself, add the [`textHighlightStyle`](./key/texthighlightstyle.md) attribute to the text.
 
 ## Topics
 
 ### Getting the color schemes
-- [static let `default`: NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme/default.md)
+- [static let `default`: NSAttributedString.TextHighlightColorScheme](./texthighlightcolorscheme/default.md)
   The default system highlight color.
-- [static let blue: NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme/blue.md)
+- [static let blue: NSAttributedString.TextHighlightColorScheme](./texthighlightcolorscheme/blue.md)
   A blue highlight color.
-- [static let mint: NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme/mint.md)
+- [static let mint: NSAttributedString.TextHighlightColorScheme](./texthighlightcolorscheme/mint.md)
   A mint green highlight color.
-- [static let orange: NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme/orange.md)
+- [static let orange: NSAttributedString.TextHighlightColorScheme](./texthighlightcolorscheme/orange.md)
   An orange highlight color.
-- [static let pink: NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme/pink.md)
+- [static let pink: NSAttributedString.TextHighlightColorScheme](./texthighlightcolorscheme/pink.md)
   A pink highlight color.
-- [static let purple: NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme/purple.md)
+- [static let purple: NSAttributedString.TextHighlightColorScheme](./texthighlightcolorscheme/purple.md)
   A purple highlight color.
 ### Creating a color scheme
-- [init(String)](nsattributedstring/texthighlightcolorscheme/init(_:).md)
-- [init(rawValue: String)](nsattributedstring/texthighlightcolorscheme/init(rawvalue:).md)
+- [init(String)](./texthighlightcolorscheme/init%28_%29.md)
+- [init(rawValue: String)](./texthighlightcolorscheme/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSAttributedString.Key](nsattributedstring/key.md)
+### Getting text content attributes
+- [NSAttributedString.Key](./key.md)
   The attributes you apply to ranges of characters in an attributed string.
-- [NSAttributedString.TextHighlightStyle](nsattributedstring/texthighlightstyle.md)
+- [NSAttributedString.TextHighlightStyle](./texthighlightstyle.md)
   Constants that specify the type of highlight to apply to text.
-- [NSAttributedString.TextEffectStyle](nsattributedstring/texteffectstyle.md)
+- [NSAttributedString.TextEffectStyle](./texteffectstyle.md)
   Constants for the type of effect to apply to the text.
-- [NSAttributedString.SpellingState](nsattributedstring/spellingstate.md)
+- [NSAttributedString.SpellingState](./spellingstate.md)
   Constants for the spelling state attribute key.
-- [struct NSUnderlineStyle](../uikit/nsunderlinestyle.md)
+- [struct NSUnderlineStyle](../../UIKit/nsunderlinestyle.md)
   Constants for the underline style and strikethrough style attribute keys.
-- [enum NSWritingDirectionFormatType](../uikit/nswritingdirectionformattype.md)
+- [enum NSWritingDirectionFormatType](../../UIKit/nswritingdirectionformattype.md)
   Constants for the writing direction attribute key.
 
 

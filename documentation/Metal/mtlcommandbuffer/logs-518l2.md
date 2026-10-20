@@ -1,7 +1,8 @@
 # logs
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The messages the command buffer records as the GPU runs its commands.
 
@@ -11,7 +12,7 @@ The messages the command buffer records as the GPU runs its commands.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

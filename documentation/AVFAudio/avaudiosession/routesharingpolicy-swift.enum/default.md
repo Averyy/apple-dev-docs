@@ -1,17 +1,18 @@
 # AVAudioSession.RouteSharingPolicy.default
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A policy that follows standard rules for routing audio output.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ A policy that follows standard rules for routing audio output.
 case `default`
 ```
 
+```c
+AVAudioSessionRouteSharingPolicyDefault
+```
+
 ## See Also
 
-- [AVAudioSession.RouteSharingPolicy.longFormAudio](avaudiosession/routesharingpolicy-swift.enum/longformaudio.md)
+### Choosing a route-sharing policy
+- [AVAudioSession.RouteSharingPolicy.longFormAudio](./longformaudio.md)
   A policy that routes output to the shared long-form audio output.
-- [AVAudioSession.RouteSharingPolicy.longFormVideo](avaudiosession/routesharingpolicy-swift.enum/longformvideo.md)
+- [AVAudioSession.RouteSharingPolicy.longFormVideo](./longformvideo.md)
   A policy that routes output to the shared long-form video output.
-- [AVAudioSession.RouteSharingPolicy.independent](avaudiosession/routesharingpolicy-swift.enum/independent.md)
+- [AVAudioSession.RouteSharingPolicy.independent](./independent.md)
   A policy in which the route picker UI directs videos to a wireless route.
-- [static var longForm: AVAudioSession.RouteSharingPolicy](avaudiosession/routesharingpolicy-swift.enum/longform.md)
+- [static var longForm: AVAudioSession.RouteSharingPolicy](./longform.md)
   A policy that routes output to the shared long-form audio output.
 
 

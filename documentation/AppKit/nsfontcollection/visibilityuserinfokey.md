@@ -1,9 +1,10 @@
 # visibilityUserInfoKey
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-The visibly of the font collection. An NSNumber containing a value from the [`NSFontCollection.Visibility`](nsfontcollection/visibility.md) enum.
+The visibly of the font collection. An NSNumber containing a value from the [`NSFontCollection.Visibility`](./visibility.md) enum.
 
 **Availability**:
 - macOS 10.7+
@@ -14,14 +15,19 @@ The visibly of the font collection. An NSNumber containing a value from the [`NS
 class let visibilityUserInfoKey: NSFontCollection.UserInfoKey
 ```
 
+```c
+extern NSFontCollectionUserInfoKey const NSFontCollectionVisibilityKey;
+```
+
 ## See Also
 
-- [class let actionUserInfoKey: NSFontCollection.UserInfoKey](nsfontcollection/actionuserinfokey.md)
+### User Info Keys
+- [class let actionUserInfoKey: NSFontCollection.UserInfoKey](./actionuserinfokey.md)
   An action was taken. See `NSFontCollectionAction Key Values` for the possible values. An `NSString`.
-- [class let nameUserInfoKey: NSFontCollection.UserInfoKey](nsfontcollection/nameuserinfokey.md)
+- [class let nameUserInfoKey: NSFontCollection.UserInfoKey](./nameuserinfokey.md)
   The font collection’s name. If renamed, this is the new name. An `NSString`.
-- [class let oldNameUserInfoKey: NSFontCollection.UserInfoKey](nsfontcollection/oldnameuserinfokey.md)
-  Included as a value for the [`oldNameUserInfoKey`](nsfontcollection/oldnameuserinfokey.md) key, if present. This is the previous name. An `NSString`.
+- [class let oldNameUserInfoKey: NSFontCollection.UserInfoKey](./oldnameuserinfokey.md)
+  Included as a value for the [`oldNameUserInfoKey`](./oldnameuserinfokey.md) key, if present. This is the previous name. An `NSString`.
 
 
 ---

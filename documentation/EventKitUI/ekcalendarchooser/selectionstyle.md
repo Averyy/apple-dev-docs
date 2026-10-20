@@ -1,7 +1,8 @@
 # selectionStyle
 
 **Framework**: EventKit UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether to allow selection of multiple calendars.
 
@@ -17,17 +18,22 @@ Determines whether to allow selection of multiple calendars.
 var selectionStyle: EKCalendarChooserSelectionStyle { get }
 ```
 
+```objc
+@property (nonatomic, readonly) EKCalendarChooserSelectionStyle selectionStyle;
+```
+
 #### Discussion
 
-Possible values are described in [`EKCalendarChooserSelectionStyle`](ekcalendarchooserselectionstyle.md).
+Possible values are described in [`EKCalendarChooserSelectionStyle`](../ekcalendarchooserselectionstyle.md).
 
 ## See Also
 
-- [var selectedCalendars: Set<EKCalendar>](ekcalendarchooser/selectedcalendars.md)
+### Selecting a Calendar Type
+- [var selectedCalendars: Set<EKCalendar>](./selectedcalendars.md)
   The calendars selected by the user.
-- [enum EKCalendarChooserSelectionStyle](ekcalendarchooserselectionstyle.md)
+- [enum EKCalendarChooserSelectionStyle](../ekcalendarchooserselectionstyle.md)
   Indicates whether users may select a single calendar, or multiple calendars.
-- [enum EKCalendarChooserDisplayStyle](ekcalendarchooserdisplaystyle.md)
+- [enum EKCalendarChooserDisplayStyle](../ekcalendarchooserdisplaystyle.md)
   Indicates whether to display all calendars or writable calendars only.
 
 

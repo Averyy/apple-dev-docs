@@ -1,18 +1,19 @@
 # CFBitVectorCreate(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an immutable bit vector from a block of memory.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Creates an immutable bit vector from a block of memory.
 func CFBitVectorCreate(_ allocator: CFAllocator!, _ bytes: UnsafePointer<UInt8>!, _ numBits: CFIndex) -> CFBitVector!
 ```
 
+```c
+extern CFBitVectorRefCFBitVectorCreate(CFAllocatorRef allocator, const UInt8 *bytes, CFIndex numBits);
+```
+
 #### Return Value
 
-A new bit vector. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A new bit vector. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
@@ -32,7 +37,8 @@ A new bit vector. Ownership follows the [`The Create Rule`](https://developer.ap
 
 ## See Also
 
-- [func CFBitVectorCreateCopy(CFAllocator!, CFBitVector!) -> CFBitVector!](cfbitvectorcreatecopy(_:_:).md)
+### Creating a Bit Vector
+- [func CFBitVectorCreateCopy(CFAllocator!, CFBitVector!) -> CFBitVector!](./cfbitvectorcreatecopy%28_,_%29.md)
   Creates an immutable bit vector that is a copy of another bit vector.
 
 

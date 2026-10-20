@@ -1,7 +1,8 @@
 # init(uuid:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a player identifier.
 

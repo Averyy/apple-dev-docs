@@ -1,11 +1,12 @@
 # TextOutputStream Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func write(String)](defaultstringinterpolation/write(_:).md)
+- [func write(String)](./write%28_%29.md)
   Appends the given string to the stream.
 
 

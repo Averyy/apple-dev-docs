@@ -1,12 +1,13 @@
 # NSTableView.DropOperation.above
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the drop should occur above the specified row.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Specifies that the drop should occur above the specified row.
 case above
 ```
 
+```c
+NSTableViewDropAbove
+```
+
 ## See Also
 
-- [NSTableView.DropOperation.on](nstableview/dropoperation/on.md)
+### Constants
+- [NSTableView.DropOperation.on](./on.md)
   Specifies that the drop should occur on the specified row.
-- [NSTableView.DropOperation.on](nstableview/dropoperation/on.md)
+- [NSTableView.DropOperation.on](./on.md)
   Specifies that the drop should occur on the specified row.
 
 

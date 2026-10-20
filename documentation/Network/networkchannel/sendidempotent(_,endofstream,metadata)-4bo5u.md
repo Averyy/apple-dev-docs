@@ -1,7 +1,8 @@
 # sendIdempotent(_:endOfStream:metadata:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send data idempotently on a connection.
 
@@ -19,6 +20,8 @@ Send data idempotently on a connection.
 ```swift
 func sendIdempotent<Content>(_ content: Content, endOfStream: Bool = false, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]}) where Content : DataProtocol
 ```
+
+Available when `ApplicationProtocol` conforms to `StreamProtocol`.
 
 #### Discussion
 

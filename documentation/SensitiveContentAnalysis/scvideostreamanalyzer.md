@@ -1,7 +1,8 @@
 # SCVideoStreamAnalyzer
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that monitors a stream of video by analyzing frames for sensitive content.
 
@@ -16,9 +17,13 @@ An object that monitors a stream of video by analyzing frames for sensitive cont
 class SCVideoStreamAnalyzer
 ```
 
+```objc
+@interface SCVideoStreamAnalyzer : NSObject
+```
+
 ## Mentions
 
-- [Detecting sensitive content in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
+- [Detecting sensitive content in media and providing intervention options](./detecting-nudity-in-media-and-providing-intervention-options.md)
 
 #### Overview
 
@@ -26,65 +31,65 @@ Use this class to detect sensitive content in a video stream, such as on a confe
 
 Create an instance of this class for each video stream in the call.
 
-To begin analyzing the stream, pass it to either [`beginAnalysis(of:)`](scvideostreamanalyzer/beginanalysis(of:)-78qm.md) ([`AVCaptureDeviceInput`](https://developer.apple.com/documentation/avfoundation/avcapturedeviceinput)) or [`beginAnalysis(of:)`](scvideostreamanalyzer/beginanalysis(of:)-9ehkx.md) ([`VTDecompressionSession`](https://developer.apple.com/documentation/videotoolbox/vtdecompressionsession)), depending on your video playback implementation.
+To begin analyzing the stream, pass it to either [`beginAnalysis(of:)`](./scvideostreamanalyzer/beginanalysis%28of%29-78qm.md) ([`AVCaptureDeviceInput`](../AVFoundation/avcapturedeviceinput.md)) or [`beginAnalysis(of:)`](./scvideostreamanalyzer/beginanalysis%28of%29-9ehkx.md) ([`VTDecompressionSession`](../VideoToolbox/vtdecompressionsession.md)), depending on your video playback implementation.
 
 > ❗ **Important**:  This class works only when the Communication Safety parental control in Screen Time is enabled, or when the Sensitive Content Warnings setting is turned on. The initializers of this class throw an error if both settings are off.
 
-##### React to Sensitive Content
+##### React to sensitive content
 
-When the framework detects sensitive content in the stream, it calls [`analysisChangedHandler`](scvideostreamanalyzer/analysischangedhandler.md) immediately with an [`SCSensitivityAnalysis`](scsensitivityanalysis.md) object that includes information about the detection.
+When the framework detects sensitive content in the stream, it calls [`analysisChangedHandler`](./scvideostreamanalyzer/analysischangedhandler.md) immediately with an [`SCSensitivityAnalysis`](./scsensitivityanalysis.md) object that includes information about the detection.
 
-You implement the [`analysisChangedHandler`](scvideostreamanalyzer/analysischangedhandler.md) callback to inspect the detection results, which includes confirmation that content is sensitive as well as guidance on next steps your app can take. The framework offers your app suggestions in the handler, which include:
+You implement the [`analysisChangedHandler`](./scvideostreamanalyzer/analysischangedhandler.md) callback to inspect the detection results, which includes confirmation that content is sensitive as well as guidance on next steps your app can take. The framework offers your app suggestions in the handler, which include:
 
-- Alerting the person to the presence of sensitive content ([`shouldIndicateSensitivity`](scsensitivityanalysis/shouldindicatesensitivity.md))
-- Interrupting video playback ([`shouldInterruptVideo`](scsensitivityanalysis/shouldinterruptvideo.md))
-- Muting audio ([`shouldMuteAudio`](scsensitivityanalysis/shouldmuteaudio.md))
+- Alerting the person to the presence of sensitive content ([`shouldIndicateSensitivity`](./scsensitivityanalysis/shouldindicatesensitivity.md))
+- Interrupting video playback ([`shouldInterruptVideo`](./scsensitivityanalysis/shouldinterruptvideo.md))
+- Muting audio ([`shouldMuteAudio`](./scsensitivityanalysis/shouldmuteaudio.md))
 
-To stop analyzing the stream, call [`endAnalysis()`](scvideostreamanalyzer/endanalysis().md). If your app implements a custom stream decoder, you can analyze individual frames by passing pixel buffers to [`analyze(_:)`](scvideostreamanalyzer/analyze(_:).md).
+To stop analyzing the stream, call [`endAnalysis()`](./scvideostreamanalyzer/endanalysis%28%29.md). If your app implements a custom stream decoder, you can analyze individual frames by passing pixel buffers to [`analyze(_:)`](./scvideostreamanalyzer/analyze%28_%29.md).
 
-In the event of an error during analysis, the handler receives an error object that details what went wrong. For more information, see: [`SCVideoStreamAnalysisChangeHandler`](scvideostreamanalysischangehandler.md).
+In the event of an error during analysis, the handler receives an error object that details what went wrong. For more information, see: [`SCVideoStreamAnalysisChangeHandler`](./scvideostreamanalysischangehandler.md).
 
-##### Add the App Entitlement
+##### Add the app entitlement
 
-To use this class, the system requires the [`com.apple.developer.sensitivecontentanalysis.client`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.sensitivecontentanalysis.client) entitlement in your app’s code signature. Calls to the framework fail to return positive results without it. You can add this entitlement to your app by enabling the Sensitive Content Analysis capability in Xcode; see [`Adding capabilities to your app`](https://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+To use this class, the system requires the [`com.apple.developer.sensitivecontentanalysis.client`](../BundleResources/entitlements/com.apple.developer.sensitivecontentanalysis.client.md) entitlement in your app’s code signature. Calls to the framework fail to return positive results without it. You can add this entitlement to your app by enabling the Sensitive Content Analysis capability in Xcode; see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-For more information, see [`Detecting sensitive content in media and providing intervention options`](detecting-nudity-in-media-and-providing-intervention-options.md).
+For more information, see [Detecting sensitive content in media and providing intervention options](./detecting-nudity-in-media-and-providing-intervention-options.md).
 
 ## Topics
 
 ### Creating a video stream analyzer
-- [init(participantUUID: String, streamDirection: SCVideoStreamAnalyzer.StreamDirection) throws](scvideostreamanalyzer/init(participantuuid:streamdirection:).md)
+- [init(participantUUID: String, streamDirection: SCVideoStreamAnalyzer.StreamDirection) throws](./scvideostreamanalyzer/init%28participantuuid,streamdirection%29.md)
   Creates a video stream analyzer for the given call participant and stream option.
-- [SCVideoStreamAnalyzer.StreamDirection](scvideostreamanalyzer/streamdirection.md)
+- [SCVideoStreamAnalyzer.StreamDirection](./scvideostreamanalyzer/streamdirection.md)
   Options for the different types of analyzed video streams.
 ### Analyzing a video stream
-- [func analyze(CVPixelBuffer)](scvideostreamanalyzer/analyze(_:).md)
+- [func analyze(CVPixelBuffer)](./scvideostreamanalyzer/analyze%28_%29.md)
   Analyzes individual video-stream frames for sensitive content.
-- [func beginAnalysis(of: AVCaptureDeviceInput) throws](scvideostreamanalyzer/beginanalysis(of:)-78qm.md)
+- [func beginAnalysis(of: AVCaptureDeviceInput) throws](./scvideostreamanalyzer/beginanalysis%28of%29-78qm.md)
   Analyzes video frames for the given capture device input.
-- [func beginAnalysis(of: VTDecompressionSession) throws](scvideostreamanalyzer/beginanalysis(of:)-9ehkx.md)
+- [func beginAnalysis(of: VTDecompressionSession) throws](./scvideostreamanalyzer/beginanalysis%28of%29-9ehkx.md)
   Analyzes video frames for the given decompression session.
-- [var analysisChanges: some AsyncSequence<SCSensitivityAnalysis, any Error>](scvideostreamanalyzer/analysischanges.md)
+- [var analysisChanges: some AsyncSequence<SCSensitivityAnalysis, any Error>](./scvideostreamanalyzer/analysischanges.md)
   A stream your app uses to receive video-stream analysis results.
-- [func endAnalysis()](scvideostreamanalyzer/endanalysis.md)
+- [func endAnalysis()](./scvideostreamanalyzer/endanalysis%28%29.md)
   Stops stream analysis.
 ### Responding to sensitive content
-- [var analysis: SCSensitivityAnalysis?](scvideostreamanalyzer/analysis.md)
+- [var analysis: SCSensitivityAnalysis?](./scvideostreamanalyzer/analysis.md)
   The results of the first detected sensitive video frame.
-- [func continueStream()](scvideostreamanalyzer/continuestream.md)
+- [func continueStream()](./scvideostreamanalyzer/continuestream%28%29.md)
   Indicates that your app is ready to resume video stream analysis.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

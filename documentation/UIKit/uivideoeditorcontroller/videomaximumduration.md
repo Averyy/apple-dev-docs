@@ -1,7 +1,8 @@
 # videoMaximumDuration
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum duration, in seconds, permitted for trimmed movies saved by the video editor.
 
@@ -17,6 +18,10 @@ The maximum duration, in seconds, permitted for trimmed movies saved by the vide
 var videoMaximumDuration: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic) NSTimeInterval videoMaximumDuration;
+```
+
 #### Discussion
 
 The system-enforced maximum duration for a video recording is 10 minutes; you can set this value to 10 minutes or less. The default value for this property is also 10 minutes.
@@ -25,9 +30,10 @@ The video editor user interface forces the user to trim a loaded movie to fit wi
 
 ## See Also
 
-- [var videoPath: String](uivideoeditorcontroller/videopath.md)
+### Configuring the editor
+- [var videoPath: String](./videopath.md)
   The filesystem path to the movie to be loaded by the video editor.
-- [var videoQuality: UIImagePickerController.QualityType](uivideoeditorcontroller/videoquality.md)
+- [var videoQuality: UIImagePickerController.QualityType](./videoquality.md)
   The video quality to use when saving a trimmed movie.
 
 

@@ -1,7 +1,8 @@
 # NSVisualEffectView.Material.contentBackground
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The material for the background of opaque content.
 
@@ -14,6 +15,10 @@ The material for the background of opaque content.
 case contentBackground
 ```
 
+```c
+NSVisualEffectMaterialContentBackground
+```
+
 #### Discussion
 
 You might use this material as the background for content in a scroll view, table view, or collection view.
@@ -22,31 +27,32 @@ This material supports Desktop Tinting in Dark Mode. With Desktop Tinting, the s
 
 ## See Also
 
-- [NSVisualEffectView.Material.titlebar](nsvisualeffectview/material-swift.enum/titlebar.md)
+### Material Types
+- [NSVisualEffectView.Material.titlebar](./titlebar.md)
   The material for a window’s titlebar.
-- [NSVisualEffectView.Material.selection](nsvisualeffectview/material-swift.enum/selection.md)
+- [NSVisualEffectView.Material.selection](./selection.md)
   The material used to indicate a selection.
-- [NSVisualEffectView.Material.menu](nsvisualeffectview/material-swift.enum/menu.md)
+- [NSVisualEffectView.Material.menu](./menu.md)
   The material for menus.
-- [NSVisualEffectView.Material.popover](nsvisualeffectview/material-swift.enum/popover.md)
+- [NSVisualEffectView.Material.popover](./popover.md)
   The material for the background of popover windows.
-- [NSVisualEffectView.Material.sidebar](nsvisualeffectview/material-swift.enum/sidebar.md)
+- [NSVisualEffectView.Material.sidebar](./sidebar.md)
   The material for the background of window sidebars.
-- [NSVisualEffectView.Material.headerView](nsvisualeffectview/material-swift.enum/headerview.md)
+- [NSVisualEffectView.Material.headerView](./headerview.md)
   The material for in-line header or footer views.
-- [NSVisualEffectView.Material.sheet](nsvisualeffectview/material-swift.enum/sheet.md)
+- [NSVisualEffectView.Material.sheet](./sheet.md)
   The material for the background of sheet windows.
-- [NSVisualEffectView.Material.windowBackground](nsvisualeffectview/material-swift.enum/windowbackground.md)
+- [NSVisualEffectView.Material.windowBackground](./windowbackground.md)
   The material for the background of opaque windows.
-- [NSVisualEffectView.Material.hudWindow](nsvisualeffectview/material-swift.enum/hudwindow.md)
+- [NSVisualEffectView.Material.hudWindow](./hudwindow.md)
   The material for the background of heads-up display (HUD) windows.
-- [NSVisualEffectView.Material.fullScreenUI](nsvisualeffectview/material-swift.enum/fullscreenui.md)
+- [NSVisualEffectView.Material.fullScreenUI](./fullscreenui.md)
   The material for the background of a full-screen modal interface.
-- [NSVisualEffectView.Material.toolTip](nsvisualeffectview/material-swift.enum/tooltip.md)
+- [NSVisualEffectView.Material.toolTip](./tooltip.md)
   The material for the background of a tool tip.
-- [NSVisualEffectView.Material.underWindowBackground](nsvisualeffectview/material-swift.enum/underwindowbackground.md)
+- [NSVisualEffectView.Material.underWindowBackground](./underwindowbackground.md)
   The material to show under a window’s background.
-- [NSVisualEffectView.Material.underPageBackground](nsvisualeffectview/material-swift.enum/underpagebackground.md)
+- [NSVisualEffectView.Material.underPageBackground](./underpagebackground.md)
   The material for the area behind the pages of a document.
 
 

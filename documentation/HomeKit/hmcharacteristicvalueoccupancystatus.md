@@ -1,7 +1,8 @@
 # HMCharacteristicValueOccupancyStatus
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible values for the occupancy status.
 
@@ -19,25 +20,29 @@ Possible values for the occupancy status.
 enum HMCharacteristicValueOccupancyStatus
 ```
 
+```c
+enum HMCharacteristicValueOccupancyStatus : NSInteger;
+```
+
 ## Topics
 
 ### Occupancy Status
-- [HMCharacteristicValueOccupancyStatus.notOccupied](hmcharacteristicvalueoccupancystatus/notoccupied.md)
+- [HMCharacteristicValueOccupancyStatus.notOccupied](./hmcharacteristicvalueoccupancystatus/notoccupied.md)
   The home is not occupied.
-- [HMCharacteristicValueOccupancyStatus.occupied](hmcharacteristicvalueoccupancystatus/occupied.md)
+- [HMCharacteristicValueOccupancyStatus.occupied](./hmcharacteristicvalueoccupancystatus/occupied.md)
   The home is occupied.
 ### Initializers
-- [init?(rawValue: Int)](hmcharacteristicvalueoccupancystatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hmcharacteristicvalueoccupancystatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

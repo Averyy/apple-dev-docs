@@ -1,7 +1,8 @@
 # ApplePayPaymentAuthorizedEvent
 
 **Framework**: Apple Pay on the Web  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An event object that contains the token used to authorize a payment.
 
@@ -11,29 +12,30 @@ An event object that contains the token used to authorize a payment.
 
 ## Declaration
 
-```swift
+```
 interface ApplePayPaymentAuthorizedEvent
 ```
 
 #### Overview
 
-The event handler [`onpaymentauthorized`](applepaysession/onpaymentauthorized.md) receives this event object when a payment is authorized.
+The event handler [`onpaymentauthorized`](./applepaysession/onpaymentauthorized.md) receives this event object when a payment is authorized.
 
 ## Topics
 
 ### Payment property
-- [payment](applepaypaymentauthorizedevent/payment.md)
+- [payment](./applepaypaymentauthorizedevent/payment.md)
   The authorized payment information for this transaction.
 
 ## See Also
 
-- [onpaymentauthorized](applepaysession/onpaymentauthorized.md)
+### Handling payment authorization
+- [onpaymentauthorized](./applepaysession/onpaymentauthorized.md)
   An event handler the system calls when the user has authorized the Apple Pay payment with Touch ID, Face ID, or a passcode.
-- [completePayment](applepaysession/completepayment.md)
+- [completePayment](./applepaysession/completepayment.md)
   Completes the payment authorization with a result.
-- [ApplePayPayment](applepaypayment.md)
+- [ApplePayPayment](./applepaypayment.md)
   The result of authorizing a payment request that contains payment information.
-- [ApplePayPaymentAuthorizationResult](applepaypaymentauthorizationresult.md)
+- [ApplePayPaymentAuthorizationResult](./applepaypaymentauthorizationresult.md)
   The result of payment authorization, including status and errors.
 
 

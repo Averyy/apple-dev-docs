@@ -1,7 +1,8 @@
 # init(selection:in:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that selects multiple dates on or after some start date.
 
@@ -18,6 +19,20 @@ nonisolated
 init(selection: Binding<Set<DateComponents>>, in bounds: PartialRangeFrom<Date>, @ContentBuilder label: () -> Label)
 ```
 
+Available when `Label` conforms to `View`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(selection: Binding<Set<DateComponents>>, in bounds: PartialRangeUpTo<Date>, @ContentBuilder label: () -> Label)
+```
+
+```swift
+nonisolated
+init(selection: Binding<Set<DateComponents>>, in bounds: Range<Date>, @ContentBuilder label: () -> Label)
+```
+
 ## Parameters
 
 - `selection`: The date values being displayed and selected.
@@ -26,7 +41,8 @@ init(selection: Binding<Set<DateComponents>>, in bounds: PartialRangeFrom<Date>,
 
 ## See Also
 
-- [init(_:selection:in:)](multidatepicker/init(_:selection:in:).md)
+### Picking dates in a range
+- [init(_:selection:in:)](./init%28_,selection,in%29.md)
   Creates an instance that selects multiple dates on or after some start date.
 
 

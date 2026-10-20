@@ -1,16 +1,17 @@
 # init()
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ init()
 
 ## See Also
 
-- [init(word0: UInt32, word1: UInt32, word2: UInt32, word3: UInt32)](midimessage_128/init(word0:word1:word2:word3:).md)
+### Initializers
+- [init(word0: UInt32, word1: UInt32, word2: UInt32, word3: UInt32)](./init%28word0,word1,word2,word3%29.md)
 
 
 ---

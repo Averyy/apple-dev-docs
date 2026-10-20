@@ -1,7 +1,8 @@
 # NSTextLocation
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface you implement that represents an abstract location inside your document’s content.
 
@@ -19,30 +20,35 @@ An interface you implement that represents an abstract location inside your docu
 protocol NSTextLocation : NSObjectProtocol
 ```
 
+```objc
+@protocol NSTextLocation <NSObject>
+```
+
 ## Topics
 
 ### Comparing text locations
-- [func compare(any NSTextLocation) -> ComparisonResult](nstextlocation/compare(_:).md)
+- [func compare(any NSTextLocation) -> ComparisonResult](./nstextlocation/compare%28_%29.md)
   Compares and returns the logical ordering to location.
 ### Instance Properties
-- [var hash: Int](nstextlocation/hash.md)
+- [var hash: Int](./nstextlocation/hash.md)
   Must be consistent with results from `isEqual:` while also avoiding hash collisions.
 ### Instance Methods
-- [func isEqual(Any?) -> Bool](nstextlocation/isequal(_:).md)
+- [func isEqual(Any?) -> Bool](./nstextlocation/isequal%28_%29.md)
   Returns `true` for locations representing the same document position.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSTextRange](nstextrange.md)
+### Location and selection
+- [class NSTextRange](./nstextrange.md)
   A class that represents a contiguous range between two locations inside document contents.
-- [class NSTextSelection](nstextselection.md)
+- [class NSTextSelection](./nstextselection.md)
   A class that represents a single logical selection context that corresponds to an insertion point.
-- [class NSTextSelectionNavigation](nstextselectionnavigation.md)
+- [class NSTextSelectionNavigation](./nstextselectionnavigation.md)
   An interface you use to expose methods for obtaining results from actions performed on text selections.
 
 

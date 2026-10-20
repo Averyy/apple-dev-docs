@@ -1,7 +1,8 @@
 # clusterTimeSynchronizationAttributeSupportsDNSResolveID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterTimeSynchronizationAttributeSupportsDNSResolveID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterTimeSynchronizationAttributeSupportsDNSResolveID
 ```
 
 

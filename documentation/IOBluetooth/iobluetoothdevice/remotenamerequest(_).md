@@ -1,17 +1,22 @@
 # remoteNameRequest(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Issues a remote name request to the target device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func remoteNameRequest(_ target: Any!) -> IOReturn
+```
+
+```objc
+- (IOReturn) remoteNameRequest:(id) target;
 ```
 
 #### Return Value

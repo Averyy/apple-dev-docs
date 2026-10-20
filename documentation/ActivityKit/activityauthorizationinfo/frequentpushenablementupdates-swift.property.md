@@ -1,7 +1,8 @@
 # frequentPushEnablementUpdates
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence you use to observe whether a person permitted you to update Live Activities with frequent ActivityKit push notifications.
 
@@ -17,13 +18,14 @@ final let frequentPushEnablementUpdates: ActivityAuthorizationInfo.FrequentPushE
 
 ## Mentions
 
-- [Starting and updating Live Activities with ActivityKit push notifications](starting-and-updating-live-activities-with-activitykit-push-notifications.md)
+- [Starting and updating Live Activities with ActivityKit push notifications](../starting-and-updating-live-activities-with-activitykit-push-notifications.md)
 
 ## See Also
 
-- [var frequentPushesEnabled: Bool](activityauthorizationinfo/frequentpushesenabled.md)
+### Observing availability of frequent ActivityKit push notifications
+- [var frequentPushesEnabled: Bool](./frequentpushesenabled.md)
   A Boolean value that indicates whether a person permitted you to update Live Activities with frequent ActivityKit push notifications.
-- [ActivityAuthorizationInfo.FrequentPushEnablementUpdates](activityauthorizationinfo/frequentpushenablementupdates-swift.struct.md)
+- [ActivityAuthorizationInfo.FrequentPushEnablementUpdates](./frequentpushenablementupdates-swift.struct.md)
   A structure that can observe whether you can update Live Activities with frequent ActivityKit push notifications.
 
 

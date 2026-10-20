@@ -1,7 +1,8 @@
 # entity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity whose Gaussian splat rendering changed.
 

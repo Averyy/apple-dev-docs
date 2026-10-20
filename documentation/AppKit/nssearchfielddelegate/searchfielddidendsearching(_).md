@@ -1,7 +1,8 @@
 # searchFieldDidEndSearching(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The method that is called when the search field has ended its search for content.
 
@@ -15,9 +16,14 @@ The method that is called when the search field has ended its search for content
 optional func searchFieldDidEndSearching(_ sender: NSSearchField)
 ```
 
+```objc
+- (void) searchFieldDidEndSearching:(NSSearchField *) sender;
+```
+
 ## See Also
 
-- [func searchFieldDidStartSearching(NSSearchField)](nssearchfielddelegate/searchfielddidstartsearching(_:).md)
+### Detecting the Start and End of a Search
+- [func searchFieldDidStartSearching(NSSearchField)](./searchfielddidstartsearching%28_%29.md)
   The method that is called when the search field begins searching for content.
 
 

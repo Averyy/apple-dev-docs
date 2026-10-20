@@ -1,7 +1,8 @@
 # innerRadius
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius of inner points relative to outer points, in unit coordinate space (0.0 to 1.0).
 

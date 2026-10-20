@@ -1,7 +1,8 @@
 # lowestValue
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The lowest value to be produced by the distribution.
 
@@ -19,11 +20,16 @@ The lowest value to be produced by the distribution.
 var lowestValue: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSInteger lowestValue;
+```
+
 ## See Also
 
-- [var highestValue: Int](gkrandomdistribution/highestvalue.md)
+### Working with Characteristics of a Distribution
+- [var highestValue: Int](./highestvalue.md)
   The highest value to be produced by the distribution.
-- [var numberOfPossibleOutcomes: Int](gkrandomdistribution/numberofpossibleoutcomes.md)
+- [var numberOfPossibleOutcomes: Int](./numberofpossibleoutcomes.md)
   The number of unique values the distribution can generate.
 
 

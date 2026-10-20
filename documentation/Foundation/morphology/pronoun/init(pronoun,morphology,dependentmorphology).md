@@ -1,7 +1,8 @@
 # init(pronoun:morphology:dependentMorphology:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pronoun with the specified name, morphology, and dependent morphology.
 

@@ -1,7 +1,8 @@
 # excludingAllCategories
 
 **Framework**: MapKit JS  
-**Kind**: var
+**Kind**: var  
+**Role**: Static Property
 
 A filter that excludes all point-of-interest categories.
 
@@ -10,17 +11,18 @@ A filter that excludes all point-of-interest categories.
 
 ## Declaration
 
-```swift
+```
 static excludingAllCategories: () => PointOfInterestFilter;
 ```
 
 ## See Also
 
-- [excluding(categories)](pointofinterestfilter/excluding.md)
+### Creating filters
+- [excluding(categories)](./excluding.md)
   Creates a point-of-interest filter that excludes categories from a list that you provide.
-- [including(categories)](pointofinterestfilter/including.md)
+- [including(categories)](./including.md)
   Creates a point-of-interest filter that includes categories from a list that you provide.
-- [includingAllCategories](pointofinterestfilter/includingallcategories.md)
+- [includingAllCategories](./includingallcategories.md)
   A filter that includes all point-of-interest categories.
 
 

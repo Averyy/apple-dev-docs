@@ -1,7 +1,8 @@
 # content
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content of the labeled content instance.
 
@@ -22,7 +23,8 @@ let content: LabeledContentStyleConfiguration.Content
 
 ## See Also
 
-- [LabeledContentStyleConfiguration.Content](labeledcontentstyleconfiguration/content-swift.struct.md)
+### Configuring the content
+- [LabeledContentStyleConfiguration.Content](./content-swift.struct.md)
   A type-erased content of a labeled content instance.
 
 

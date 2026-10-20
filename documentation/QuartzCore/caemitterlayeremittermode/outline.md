@@ -1,7 +1,8 @@
 # outline
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Particles are emitted from the outline of the particle emitter.
 
@@ -19,13 +20,18 @@ Particles are emitted from the outline of the particle emitter.
 static let outline: CAEmitterLayerEmitterMode
 ```
 
+```c
+extern CAEmitterLayerEmitterMode const kCAEmitterLayerOutline;
+```
+
 ## See Also
 
-- [static let points: CAEmitterLayerEmitterMode](caemitterlayeremittermode/points.md)
+### Constants
+- [static let points: CAEmitterLayerEmitterMode](./points.md)
   Particles are emitted from points on the particle emitter.
-- [static let surface: CAEmitterLayerEmitterMode](caemitterlayeremittermode/surface.md)
+- [static let surface: CAEmitterLayerEmitterMode](./surface.md)
   Particles are emitted from the surface of the particle emitter.
-- [static let volume: CAEmitterLayerEmitterMode](caemitterlayeremittermode/volume.md)
+- [static let volume: CAEmitterLayerEmitterMode](./volume.md)
   Particles are emitted from the a position within the particle emitter.
 
 

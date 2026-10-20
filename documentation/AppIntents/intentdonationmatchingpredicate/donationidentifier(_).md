@@ -1,7 +1,8 @@
 # donationIdentifier(_:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a predicate that matches a single, previous donation.
 
@@ -11,7 +12,7 @@ Creates a predicate that matches a single, previous donation.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ A predicate that matches the specified donation.
 
 #### Discussion
 
-When you donate an app intent using the methods of [`IntentDonationManager`](intentdonationmanager.md), the method returns a unique identifier for that donation. Use this method to create a predicate that matches only the donation you specified.
+When you donate an app intent using the methods of [`IntentDonationManager`](../intentdonationmanager.md), the method returns a unique identifier for that donation. Use this method to create a predicate that matches only the donation you specified.
 
 ## Parameters
 
@@ -34,9 +35,10 @@ When you donate an app intent using the methods of [`IntentDonationManager`](int
 
 ## See Also
 
-- [static func entityIdentifier(EntityIdentifier) -> IntentDonationMatchingPredicate](intentdonationmatchingpredicate/entityidentifier(_:).md)
+### Creating a predicate
+- [static func entityIdentifier(EntityIdentifier) -> IntentDonationMatchingPredicate](./entityidentifier%28_%29.md)
   Creates a predicate to match any donation that contains the specified entity in a parameter.
-- [static func intentType(any AppIntent.Type, entityIdentifier: EntityIdentifier?) -> IntentDonationMatchingPredicate](intentdonationmatchingpredicate/intenttype(_:entityidentifier:).md)
+- [static func intentType(any AppIntent.Type, entityIdentifier: EntityIdentifier?) -> IntentDonationMatchingPredicate](./intenttype%28_,entityidentifier%29.md)
   Creates a predicate to match app intents of the specified type that optionally refers to a specific entity.
 
 

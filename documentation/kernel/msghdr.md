@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct msghdr {
     ...
 };
@@ -17,13 +17,13 @@ struct msghdr {
 ## Topics
 
 ### Instance Properties
-- [msg_control](msghdr/1499159-msg_control.md)
-- [msg_controllen](msghdr/1499161-msg_controllen.md)
-- [msg_flags](msghdr/1499114-msg_flags.md)
-- [msg_iov](msghdr/1499379-msg_iov.md)
-- [msg_iovlen](msghdr/1499171-msg_iovlen.md)
-- [msg_name](msghdr/1499188-msg_name.md)
-- [msg_namelen](msghdr/1499430-msg_namelen.md)
+- [msg_control](./msghdr/api-1499159-msg_control.md)
+- [msg_controllen](./msghdr/api-1499161-msg_controllen.md)
+- [msg_flags](./msghdr/api-1499114-msg_flags.md)
+- [msg_iov](./msghdr/api-1499379-msg_iov.md)
+- [msg_iovlen](./msghdr/api-1499171-msg_iovlen.md)
+- [msg_name](./msghdr/api-1499188-msg_name.md)
+- [msg_namelen](./msghdr/api-1499430-msg_namelen.md)
 
 
 ---

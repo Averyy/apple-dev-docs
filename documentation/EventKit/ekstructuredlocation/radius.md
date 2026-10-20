@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A minimum distance from the core location that would trigger the alarm or reminder.
 
@@ -19,15 +20,20 @@ A minimum distance from the core location that would trigger the alarm or remind
 var radius: Double { get set }
 ```
 
+```objc
+@property (nonatomic) double radius;
+```
+
 #### Discussion
 
 To use the default radius, set this property to `0`.
 
 ## See Also
 
-- [var title: String?](ekstructuredlocation/title.md)
+### Accessing Structured Location Properties
+- [var title: String?](./title.md)
   The title of the location.
-- [var geoLocation: CLLocation?](ekstructuredlocation/geolocation.md)
+- [var geoLocation: CLLocation?](./geolocation.md)
   The core location.
 
 

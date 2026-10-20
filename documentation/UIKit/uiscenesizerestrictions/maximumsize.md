@@ -1,7 +1,8 @@
 # maximumSize
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum width and height supported by your app’s windows.
 
@@ -18,11 +19,16 @@ The maximum width and height supported by your app’s windows.
 var maximumSize: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGSize maximumSize;
+```
+
 ## See Also
 
-- [var minimumSize: CGSize](uiscenesizerestrictions/minimumsize.md)
+### Setting the size restrictions
+- [var minimumSize: CGSize](./minimumsize.md)
   The minimum width and height supported by your app’s windows.
-- [var allowsFullScreen: Bool](uiscenesizerestrictions/allowsfullscreen.md)
+- [var allowsFullScreen: Bool](./allowsfullscreen.md)
   A Boolean value that indicates whether the scene can appear full screen.
 
 

@@ -1,7 +1,8 @@
 # max(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
 
@@ -42,7 +43,7 @@ print(greatestHue)
 // Prints "Optional((key: "Heliotrope", value: 296))"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 

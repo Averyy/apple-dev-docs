@@ -1,7 +1,8 @@
 # options
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of mutually exclusive media selection options
 
@@ -20,15 +21,20 @@ A collection of mutually exclusive media selection options
 var options: [AVMediaSelectionOption] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVMediaSelectionOption *> * options;
+```
+
 #### Discussion
 
-The value of the property is an array of [`AVMediaSelectionOption`](avmediaselectionoption.md) objects.
+The value of the property is an array of [`AVMediaSelectionOption`](../avmediaselectionoption.md) objects.
 
 ## See Also
 
-- [func mediaSelectionOption(withPropertyList: Any) -> AVMediaSelectionOption?](avmediaselectiongroup/mediaselectionoption(withpropertylist:).md)
+### Accessing media selection options
+- [func mediaSelectionOption(withPropertyList: Any) -> AVMediaSelectionOption?](./mediaselectionoption%28withpropertylist%29.md)
   Returns the media selection options that match the given property list.
-- [var defaultOption: AVMediaSelectionOption?](avmediaselectiongroup/defaultoption.md)
+- [var defaultOption: AVMediaSelectionOption?](./defaultoption.md)
   The default option in the group.
 
 

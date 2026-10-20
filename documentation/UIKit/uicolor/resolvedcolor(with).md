@@ -1,7 +1,8 @@
 # resolvedColor(with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the version of the current color that results from the specified traits.
 
@@ -18,15 +19,19 @@ Returns the version of the current color that results from the specified traits.
 func resolvedColor(with traitCollection: UITraitCollection) -> UIColor
 ```
 
+```objc
+- (UIColor *) resolvedColorWithTraitCollection:(UITraitCollection *) traitCollection;
+```
+
 #### Return Value
 
 The version of the color to display for the specified traits.
 
 #### Discussion
 
-Use this method when you need to resolve a dynamic color to a specific color value for the specified trait collection. For example, reading the [`cgColor`](uicolor/cgcolor.md) property or calling [`getRed(_:green:blue:alpha:)`](uicolor/getred(_:green:blue:alpha:).md) resolves a dynamic color to a specific color value that’s no longer dynamic. If your calling context isn’t inside one of the methods documented in the [`current`](uitraitcollection/current.md) property, you need to provide a trait collection from an appropriate trait environment, such as your view or view controller.
+Use this method when you need to resolve a dynamic color to a specific color value for the specified trait collection. For example, reading the [`cgColor`](./cgcolor.md) property or calling [`getRed(_:green:blue:alpha:)`](./getred%28_,green,blue,alpha%29.md) resolves a dynamic color to a specific color value that’s no longer dynamic. If your calling context isn’t inside one of the methods documented in the [`current`](../uitraitcollection/current.md) property, you need to provide a trait collection from an appropriate trait environment, such as your view or view controller.
 
-The example below uses this method set a border color on a [`CALayer`](https://developer.apple.com/documentation/quartzcore/calayer):
+The example below uses this method set a border color on a [`CALayer`](../../QuartzCore/calayer.md):
 
 ```swift
 // This method sets the border color when UITraitCollection.current is undefined.
@@ -47,7 +52,8 @@ func updateBorderColor(layer: CALayer) {
 
 ## See Also
 
-- [func performAsCurrent(() -> Void)](uitraitcollection/performascurrent(_:).md)
+### Related Documentation
+- [func performAsCurrent(() -> Void)](../uitraitcollection/performascurrent%28_%29.md)
   Executes custom code using the traits of the receiving trait collection.
 
 

@@ -1,15 +1,22 @@
 # present(animated:)
 
 **Framework**: TVMLKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
 ```swift
 func present(animated: Bool)
+```
+
+```objc
+- (void) presentWithAnimation:(BOOL) animated;
 ```
 
 

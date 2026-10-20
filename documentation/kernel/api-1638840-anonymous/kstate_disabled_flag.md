@@ -1,14 +1,15 @@
 # kState_Disabled_Flag
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kState_Disabled_Flag = 0x0001
 ```
 

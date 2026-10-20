@@ -1,7 +1,8 @@
 # init(log:)
 
 **Framework**: os  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a signpost ID for the specified log.
 
@@ -11,8 +12,10 @@ Creates a signpost ID for the specified log.
 - Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 5.0+
+
+> **Deprecated**: Use [`makeSignpostID()`](../ossignposter/makesignpostid%28%29.md) instead.
 
 ## Declaration
 
@@ -26,9 +29,10 @@ init(log: OSLog)
 
 ## See Also
 
-- [init(UInt64)](ossignpostid/init(_:).md)
+### Creating a Signpost Identifier
+- [init(UInt64)](./init%28_%29.md)
   Creates a signpost ID from an arbitrary 64-bit integer value.
-- [init(log: OSLog, object: AnyObject)](ossignpostid/init(log:object:).md)
+- [init(log: OSLog, object: AnyObject)](./init%28log,object%29.md)
   Creates a signpost ID and associates it with the specified object.
 
 

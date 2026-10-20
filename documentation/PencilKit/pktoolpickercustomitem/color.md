@@ -1,7 +1,8 @@
 # color
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current color of the custom tool item.
 
@@ -17,13 +18,18 @@ The current color of the custom tool item.
 var color: UIColor { get set }
 ```
 
+```objc
+@property (nonatomic, strong) UIColor * color;
+```
+
 ## See Also
 
-- [var width: CGFloat](pktoolpickercustomitem/width.md)
+### Configuring the custom item
+- [var width: CGFloat](./width.md)
   The current width of the custom tool item.
-- [var configuration: PKToolPickerCustomItem.Configuration](pktoolpickercustomitem/configuration-41nm4.md)
+- [var configuration: PKToolPickerCustomItem.Configuration](./configuration-41nm4.md)
   The configuration of the custom tool item.
-- [PKToolPickerCustomItem.Configuration](pktoolpickercustomitem/configuration-swift.struct.md)
+- [PKToolPickerCustomItem.Configuration](./configuration-swift.struct.md)
   A configuration that specifies the appearance and behavior of a custom tool item and its contents.
 
 

@@ -1,7 +1,8 @@
 # points
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 **Availability**:
 - Safari Desktop 5.1+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 readonly attribute SVGPointList points;
 ```
 

@@ -1,7 +1,8 @@
 # PreferenceKey
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A named value produced by a view.
 
@@ -27,19 +28,19 @@ A view with multiple children automatically combines its values for a given pref
 ## Topics
 
 ### Getting the default value
-- [static var defaultValue: Self.Value](preferencekey/defaultvalue.md)
+- [static var defaultValue: Self.Value](./preferencekey/defaultvalue.md)
   The default value of the preference.
-- [associatedtype Value](preferencekey/value.md)
+- [associatedtype Value](./preferencekey/value.md)
   The type of value produced by this preference.
 ### Combining preferences
-- [static func reduce(value: inout Self.Value, nextValue: () -> Self.Value)](preferencekey/reduce(value:nextvalue:).md)
+- [static func reduce(value: inout Self.Value, nextValue: () -> Self.Value)](./preferencekey/reduce%28value,nextvalue%29.md)
   Combines a sequence of values by modifying the previously-accumulated value with the result of a closure that provides the next value.
 
 ## Relationships
 
 ### Conforming Types
-- [PreferredColorSchemeKey](preferredcolorschemekey.md)
-- [Text.LayoutKey](text/layoutkey.md)
+- [PreferredColorSchemeKey](./preferredcolorschemekey.md)
+- [Text.LayoutKey](./text/layoutkey.md)
 
 
 ---

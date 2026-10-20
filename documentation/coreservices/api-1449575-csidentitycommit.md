@@ -1,7 +1,8 @@
 # CSIdentityCommit(_:_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityCommit(_ identity: CSIdentity!, _ authorization: AuthorizationRef!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
+```
+
+```c
+Boolean CSIdentityCommit(CSIdentityRef identity, AuthorizationRef authorization, CFErrorRef *error);
 ```
 
 

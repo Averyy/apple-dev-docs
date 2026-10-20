@@ -1,7 +1,8 @@
 # webExtensionContext
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The extension context to which this action is related.
 
@@ -16,6 +17,10 @@ The extension context to which this action is related.
 
 ```swift
 weak var webExtensionContext: WKWebExtensionContext? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly) WKWebExtensionContext * webExtensionContext;
 ```
 
 

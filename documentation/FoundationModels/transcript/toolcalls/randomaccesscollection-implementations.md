@@ -1,11 +1,12 @@
 # RandomAccessCollection Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Subscripts
-- [subscript(Int) -> Transcript.ToolCall](transcript/toolcalls/subscript(_:).md)
+- [subscript(Int) -> Transcript.ToolCall](./subscript%28_%29.md)
   Accesses the tool call at the specified position.
 
 

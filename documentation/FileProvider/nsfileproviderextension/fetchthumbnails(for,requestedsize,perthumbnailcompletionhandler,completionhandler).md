@@ -1,7 +1,8 @@
 # fetchThumbnails(for:requestedSize:perThumbnailCompletionHandler:completionHandler:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches the thumbnails for items that have been enumerated by the file provider.
 
@@ -17,15 +18,19 @@ Fetches the thumbnails for items that have been enumerated by the file provider.
 func fetchThumbnails(for itemIdentifiers: [NSFileProviderItemIdentifier], requestedSize size: CGSize, perThumbnailCompletionHandler: @escaping (NSFileProviderItemIdentifier, Data?, (any Error)?) -> Void, completionHandler: @escaping ((any Error)?) -> Void) -> Progress
 ```
 
+```objc
+- (NSProgress *) fetchThumbnailsForItemIdentifiers:(NSArray<NSString *> *) itemIdentifiers requestedSize:(CGSize) size perThumbnailCompletionHandler:(void (^)(NSFileProviderItemIdentifier identifier, NSData *imageData, NSError *error)) perThumbnailCompletionHandler completionHandler:(void (^)(NSError *error)) completionHandler;
+```
+
 #### Return Value
 
-An object that reports the progress of this request. If the thumbnails are no longer needed, the system can cancel this request by calling the progress object’s [`cancel()`](https://developer.apple.com/documentation/foundation/progress/cancel()) method.
+An object that reports the progress of this request. If the thumbnails are no longer needed, the system can cancel this request by calling the progress object’s [`cancel()`](../../Foundation/progress/cancel%28%29.md) method.
 
 #### Discussion
 
 For local files, the system automatically provides thumbnails for supported content types, and calls a Quick Look Preview extension to get thumbnails for custom types.
 
-However, the system cannot generate thumbnails for remote items. Instead, it calls this method to request thumbnails for items stored on a remote sever. The system caches these thumbnails, and only requests thumbnails for new items as they are needed. Thumbnails are cached based on the item’s [`versionIdentifier`](nsfileprovideritemprotocol/versionidentifier.md) property. To update an item’s thumbnail, update the item’s version identifier.
+However, the system cannot generate thumbnails for remote items. Instead, it calls this method to request thumbnails for items stored on a remote sever. The system caches these thumbnails, and only requests thumbnails for new items as they are needed. Thumbnails are cached based on the item’s [`versionIdentifier`](../nsfileprovideritemprotocol/versionidentifier.md) property. To update an item’s thumbnail, update the item’s version identifier.
 
 In your implementation, call the `perThumbnailCompletionHandler` block once for each item in the `itemIdentifiers` array. Call the `completionHandler` block only after calling `perThumbnailCompletionHandler` for each item.
 
@@ -99,10 +104,14 @@ override func fetchThumbnails(for itemIdentifiers: [NSFileProviderItemIdentifier
 
 - `itemIdentifiers`: The identifiers of the items that need thumbnails.
 - `size`: The size of the thumbnails, in pixels.
-- `perThumbnailCompletionHandler`: The completion handler for each thumbnail. Call this block once for each thumbnail returned. This completion handler takes the following parameters: - **identifier**: The identifier of the item.
-- **imageData**: A data object containing the thumbnail, or `nil` if an error occurred. This data object must be in an image format supported by [`Image I/O`](https://developer.apple.com/documentation/imageio).
-- **error**: An error object. If an error occurs for this item, pass in an object that describes the error; otherwise, set it to `nil`.
-- `completionHandler`: The completion handler for the entire request. Call this block after all thumbnails have been returned. This completion handler takes the following parameter: - **error**: An error object. If a global error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
+- `perThumbnailCompletionHandler`: The completion handler for each thumbnail. Call this block once for each thumbnail returned. This completion handler takes the following parameters:
+
+  - **identifier**: The identifier of the item.
+  - **imageData**: A data object containing the thumbnail, or `nil` if an error occurred. This data object must be in an image format supported by [Image I/O](../../ImageIO/ImageIO.md).
+  - **error**: An error object. If an error occurs for this item, pass in an object that describes the error; otherwise, set it to `nil`.
+- `completionHandler`: The completion handler for the entire request. Call this block after all thumbnails have been returned. This completion handler takes the following parameter:
+
+  - **error**: An error object. If a global error occurs, pass in an object that describes the error; otherwise, set it to `nil`.
 
 
 ---

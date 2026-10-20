@@ -1,7 +1,8 @@
 # AVSampleRateKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A floating point value that represents the sample rate, in hertz.
 
@@ -20,11 +21,16 @@ A floating point value that represents the sample rate, in hertz.
 let AVSampleRateKey: String
 ```
 
+```c
+extern NSString * const AVSampleRateKey;
+```
+
 ## See Also
 
-- [let AVFormatIDKey: String](avformatidkey.md)
+### General format keys
+- [let AVFormatIDKey: String](./avformatidkey.md)
   An integer value that represents the format of the audio data.
-- [let AVNumberOfChannelsKey: String](avnumberofchannelskey.md)
+- [let AVNumberOfChannelsKey: String](./avnumberofchannelskey.md)
   An integer value that represents the number of channels.
 
 

@@ -1,6 +1,8 @@
 # Disabling the pull-down gesture for a sheet
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Sample Code  
+**Download**: [DisablingThePullDownGestureForASheet.zip](https://docs-assets.developer.apple.com/published/2afc84a1a7e9/DisablingThePullDownGestureForASheet.zip)
 
 Ensure a positive user experience when presenting a view controller as a sheet.
 
@@ -12,11 +14,11 @@ Ensure a positive user experience when presenting a view controller as a sheet.
 
 #### Overview
 
-By default, a user can use a pull-down gesture to dismiss a view controller that presents as a sheet. UIKit allows you to disable the pull-down gesture in situations where using it might cause the user to lose data or recent changes. It’s also possible to explain why the user is unable to dismiss the view controller presentation by presenting an instance of [`UIAlertController`](uialertcontroller.md).
+By default, a user can use a pull-down gesture to dismiss a view controller that presents as a sheet. UIKit allows you to disable the pull-down gesture in situations where using it might cause the user to lose data or recent changes. It’s also possible to explain why the user is unable to dismiss the view controller presentation by presenting an instance of [`UIAlertController`](./uialertcontroller.md).
 
-##### Disable the Ability to Dismiss a Presentation
+##### Disable the ability to dismiss a presentation
 
-To disable dismissal of a view controller presentation, set [`isModalInPresentation`](uiviewcontroller/ismodalinpresentation.md) to `true`.
+To disable dismissal of a view controller presentation, set [`isModalInPresentation`](./uiviewcontroller/ismodalinpresentation.md) to `true`.
 
 ```swift
 // If there are unsaved changes, enable the Save button and disable the ability to
@@ -25,9 +27,9 @@ saveButton.isEnabled = hasChanges
 isModalInPresentation = hasChanges
 ```
 
-It’s also possible to return `false` from the presentation delegate’s [`presentationControllerShouldDismiss(_:)`](uiadaptivepresentationcontrollerdelegate/presentationcontrollershoulddismiss(_:).md) method. However, the system doesn’t call this method if [`isModalInPresentation`](uiviewcontroller/ismodalinpresentation.md) is `true` or when dismissing the presentation programmatically.
+It’s also possible to return `false` from the presentation delegate’s [`presentationControllerShouldDismiss(_:)`](./uiadaptivepresentationcontrollerdelegate/presentationcontrollershoulddismiss%28_%29.md) method. However, the system doesn’t call this method if [`isModalInPresentation`](./uiviewcontroller/ismodalinpresentation.md) is `true` or when dismissing the presentation programmatically.
 
-##### Explain Why the User Cant Dismiss a Presentation
+##### Explain why the user can’t dismiss a presentation
 
 To perform an action when the user attempts to dismiss a presentation that has disabled dismissal, set the presentation’s delegate as the code below shows:
 
@@ -37,7 +39,7 @@ To perform an action when the user attempts to dismiss a presentation that has d
 navigationController.presentationController?.delegate = editViewController
 ```
 
-After setting the delegate, implement [`presentationControllerDidAttemptToDismiss(_:)`](uiadaptivepresentationcontrollerdelegate/presentationcontrollerdidattempttodismiss(_:).md) and perform the action. The example below shows the presentation of an instance of [`UIAlertController`](uialertcontroller.md):
+After setting the delegate, implement [`presentationControllerDidAttemptToDismiss(_:)`](./uiadaptivepresentationcontrollerdelegate/presentationcontrollerdidattempttodismiss%28_%29.md) and perform the action. The example below shows the presentation of an instance of [`UIAlertController`](./uialertcontroller.md):
 
 ```swift
 func presentationControllerDidAttemptToDismiss(_ presentationController: UIPresentationController) {
@@ -76,9 +78,10 @@ func confirmCancel(showingSave: Bool) {
 
 ## See Also
 
-- [class UIPresentationController](uipresentationcontroller.md)
+### Presentation management
+- [class UIPresentationController](./uipresentationcontroller.md)
   An object that manages the transition animations and the presentation of view controllers onscreen.
-- [class UISheetPresentationController](uisheetpresentationcontroller.md)
+- [class UISheetPresentationController](./uisheetpresentationcontroller.md)
   A presentation controller that manages the appearance and behavior of a sheet.
 
 

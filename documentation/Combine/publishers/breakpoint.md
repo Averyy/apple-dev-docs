@@ -1,7 +1,8 @@
 # Publishers.Breakpoint
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that raises a debugger signal when a provided closure needs to stop the process in the debugger.
 
@@ -27,33 +28,34 @@ When any of the provided closures returns `true`, this publisher raises the `SIG
 ## Topics
 
 ### Creating a breakpoint publisher
-- [init(upstream: Upstream, receiveSubscription: ((any Subscription) -> Bool)?, receiveOutput: ((Upstream.Output) -> Bool)?, receiveCompletion: ((Subscribers.Completion<Publishers.Breakpoint<Upstream>.Failure>) -> Bool)?)](publishers/breakpoint/init(upstream:receivesubscription:receiveoutput:receivecompletion:).md)
+- [init(upstream: Upstream, receiveSubscription: ((any Subscription) -> Bool)?, receiveOutput: ((Upstream.Output) -> Bool)?, receiveCompletion: ((Subscribers.Completion<Publishers.Breakpoint<Upstream>.Failure>) -> Bool)?)](./breakpoint/init%28upstream,receivesubscription,receiveoutput,receivecompletion%29.md)
   Creates a breakpoint publisher with the provided upstream publisher and breakpoint-raising closures.
 ### Declaring supporting types
-- [Publishers.Breakpoint.Output](publishers/breakpoint/output.md)
+- [Publishers.Breakpoint.Output](./breakpoint/output.md)
   The kind of values published by this publisher.
-- [Publishers.Breakpoint.Failure](publishers/breakpoint/failure.md)
+- [Publishers.Breakpoint.Failure](./breakpoint/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/breakpoint/upstream.md)
+- [let upstream: Upstream](./breakpoint/upstream.md)
   The publisher from which this publisher receives elements.
-- [let receiveSubscription: ((any Subscription) -> Bool)?](publishers/breakpoint/receivesubscription.md)
+- [let receiveSubscription: ((any Subscription) -> Bool)?](./breakpoint/receivesubscription.md)
   A closure that executes when the publisher receives a subscription, and can raise a debugger signal by returning a true Boolean value.
-- [let receiveOutput: ((Upstream.Output) -> Bool)?](publishers/breakpoint/receiveoutput.md)
+- [let receiveOutput: ((Upstream.Output) -> Bool)?](./breakpoint/receiveoutput.md)
   A closure that executes when the publisher receives output from the upstream publisher, and can raise a debugger signal by returning a true Boolean value.
-- [let receiveCompletion: ((Subscribers.Completion<Publishers.Breakpoint<Upstream>.Failure>) -> Bool)?](publishers/breakpoint/receivecompletion.md)
+- [let receiveCompletion: ((Subscribers.Completion<Publishers.Breakpoint<Upstream>.Failure>) -> Bool)?](./breakpoint/receivecompletion.md)
   A closure that executes when the publisher receives completion, and can raise a debugger signal by returning a true Boolean value.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.HandleEvents](publishers/handleevents.md)
+### Debugging
+- [Publishers.HandleEvents](./handleevents.md)
   A publisher that performs the specified closures when publisher events occur.
-- [Publishers.Print](publishers/print.md)
+- [Publishers.Print](./print.md)
   A publisher that prints log messages for all publishing events, optionally prefixed with a given string.
 
 

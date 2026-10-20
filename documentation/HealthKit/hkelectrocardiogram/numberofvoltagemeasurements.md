@@ -1,7 +1,8 @@
 # numberOfVoltageMeasurements
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of voltage measurements associated with this sample.
 
@@ -19,13 +20,18 @@ The number of voltage measurements associated with this sample.
 var numberOfVoltageMeasurements: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSInteger numberOfVoltageMeasurements;
+```
+
 ## See Also
 
-- [var samplingFrequency: HKQuantity?](hkelectrocardiogram/samplingfrequency.md)
+### Accessing Voltage Measurements
+- [var samplingFrequency: HKQuantity?](./samplingfrequency.md)
   The frequency at which the Apple Watch sampled the voltage.
-- [HKElectrocardiogram.VoltageMeasurement](hkelectrocardiogram/voltagemeasurement.md)
+- [HKElectrocardiogram.VoltageMeasurement](./voltagemeasurement.md)
   The voltage for all leads at a single point in time.
-- [HKElectrocardiogram.Lead](hkelectrocardiogram/lead.md)
+- [HKElectrocardiogram.Lead](./lead.md)
   The lead used to record a voltage measurement.
 
 

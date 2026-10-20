@@ -1,12 +1,13 @@
 # NSFont
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The representation of a font in an app.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,183 +15,188 @@ The representation of a font in an app.
 class NSFont
 ```
 
+```objc
+@interface NSFont : NSObject
+```
+
 #### Overview
 
-[`NSFont`](nsfont.md) objects represent fonts to an app, providing access to characteristics of the font and assistance in laying out glyphs relative to one another. Font objects are also used to establish the current font for drawing text directly into a graphics context, using the [`set()`](nsfont/set().md) method.
+[`NSFont`](./nsfont.md) objects represent fonts to an app, providing access to characteristics of the font and assistance in laying out glyphs relative to one another. Font objects are also used to establish the current font for drawing text directly into a graphics context, using the [`set()`](./nsfont/set%28%29.md) method.
 
-You don’t create [`NSFont`](nsfont.md) objects using the `alloc` and `init` methods. Instead, you use either [`init(descriptor:size:)`](nsfont/init(descriptor:size:).md) or [`init(name:size:)`](nsfont/init(name:size:).md) to look up an available font and alter its size or matrix to your needs. These methods check for an existing font object with the specified characteristics, returning it if there is one. Otherwise, they look up the font data requested and create the appropriate object. [`NSFont`](nsfont.md) also defines a number of methods for getting standard system fonts, such as [`systemFont(ofSize:)`](nsfont/systemfont(ofsize:).md), [`userFont(ofSize:)`](nsfont/userfont(ofsize:).md), and [`messageFont(ofSize:)`](nsfont/messagefont(ofsize:).md). To request the default size for these standard fonts, pass a negative number or `0` as the font size. For more information on system fonts, see Human Interface Guidelines > [`Typography`](https://developer.apple.com/design/human-interface-guidelines/typography).
+You don’t create [`NSFont`](./nsfont.md) objects using the `alloc` and `init` methods. Instead, you use either [`init(descriptor:size:)`](./nsfont/init%28descriptor,size%29.md) or [`init(name:size:)`](./nsfont/init%28name,size%29.md) to look up an available font and alter its size or matrix to your needs. These methods check for an existing font object with the specified characteristics, returning it if there is one. Otherwise, they look up the font data requested and create the appropriate object. [`NSFont`](./nsfont.md) also defines a number of methods for getting standard system fonts, such as [`systemFont(ofSize:)`](./nsfont/systemfont%28ofsize%29.md), [`userFont(ofSize:)`](./nsfont/userfont%28ofsize%29.md), and [`messageFont(ofSize:)`](./nsfont/messagefont%28ofsize%29.md). To request the default size for these standard fonts, pass a negative number or `0` as the font size. For more information on system fonts, see Human Interface Guidelines > [Typography](https://developer.apple.com/design/human-interface-guidelines/typography).
 
 ## Topics
 
 ### Creating Arbitrary Fonts
-- [init?(name: String, size: CGFloat)](nsfont/init(name:size:).md)
+- [init?(name: String, size: CGFloat)](./nsfont/init%28name,size%29.md)
   Creates a font object for the specified font name and font size.
-- [init?(descriptor: NSFontDescriptor, size: CGFloat)](nsfont/init(descriptor:size:).md)
+- [init?(descriptor: NSFontDescriptor, size: CGFloat)](./nsfont/init%28descriptor,size%29.md)
   Returns a font object for the specified font descriptor and font size.
-- [init?(descriptor: NSFontDescriptor, textTransform: AffineTransform?)](nsfont/init(descriptor:texttransform:).md)
+- [init?(descriptor: NSFontDescriptor, textTransform: AffineTransform?)](./nsfont/init%28descriptor,texttransform%29.md)
   Returns a font object for the specified font descriptor and text transform.
-- [init?(name: String, matrix: UnsafePointer<CGFloat>)](nsfont/init(name:matrix:).md)
+- [init?(name: String, matrix: UnsafePointer<CGFloat>)](./nsfont/init%28name,matrix%29.md)
   Returns a font object for the specified font name and matrix.
 ### Creating User Fonts
-- [class func userFont(ofSize: CGFloat) -> NSFont?](nsfont/userfont(ofsize:).md)
+- [class func userFont(ofSize: CGFloat) -> NSFont?](./nsfont/userfont%28ofsize%29.md)
   Returns the font used by default for documents and other text under the user’s control (that is, text whose font the user can normally change), in the specified size.
-- [class func userFixedPitchFont(ofSize: CGFloat) -> NSFont?](nsfont/userfixedpitchfont(ofsize:).md)
+- [class func userFixedPitchFont(ofSize: CGFloat) -> NSFont?](./nsfont/userfixedpitchfont%28ofsize%29.md)
   Returns the font used by default for documents and other text under the user’s control (that is, text whose font the user can normally change), when that font should be fixed-pitch, in the specified size.
 ### Creating System Fonts
-- [class func preferredFont(forTextStyle: NSFont.TextStyle, options: [NSFont.TextStyleOptionKey : Any]) -> NSFont](nsfont/preferredfont(fortextstyle:options:).md)
+- [class func preferredFont(forTextStyle: NSFont.TextStyle, options: [NSFont.TextStyleOptionKey : Any]) -> NSFont](./nsfont/preferredfont%28fortextstyle,options%29.md)
   Returns the font associated with the text style.
-- [class func systemFont(ofSize: CGFloat) -> NSFont](nsfont/systemfont(ofsize:).md)
+- [class func systemFont(ofSize: CGFloat) -> NSFont](./nsfont/systemfont%28ofsize%29.md)
   Returns the standard system font with the specified size.
-- [class func systemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](nsfont/systemfont(ofsize:weight:).md)
+- [class func systemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](./nsfont/systemfont%28ofsize,weight%29.md)
   Returns the standard system font with the specified size and weight.
-- [class func boldSystemFont(ofSize: CGFloat) -> NSFont](nsfont/boldsystemfont(ofsize:).md)
+- [class func boldSystemFont(ofSize: CGFloat) -> NSFont](./nsfont/boldsystemfont%28ofsize%29.md)
   Returns the standard system font in boldface type with the specified size.
-- [class func monospacedSystemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](nsfont/monospacedsystemfont(ofsize:weight:).md)
+- [class func monospacedSystemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](./nsfont/monospacedsystemfont%28ofsize,weight%29.md)
   Returns a monospace version of the system font with the specified size and weight.
-- [class func monospacedDigitSystemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](nsfont/monospaceddigitsystemfont(ofsize:weight:).md)
+- [class func monospacedDigitSystemFont(ofSize: CGFloat, weight: NSFont.Weight) -> NSFont](./nsfont/monospaceddigitsystemfont%28ofsize,weight%29.md)
   Returns a version of the standard system font that contains monospaced digit glyphs.
-- [class var systemFontSize: CGFloat](nsfont/systemfontsize.md)
+- [class var systemFontSize: CGFloat](./nsfont/systemfontsize.md)
   Returns the size of the standard system font.
-- [class var smallSystemFontSize: CGFloat](nsfont/smallsystemfontsize.md)
+- [class var smallSystemFontSize: CGFloat](./nsfont/smallsystemfontsize.md)
   Returns the size of the standard small system font.
-- [NSFont.Weight](nsfont/weight.md)
+- [NSFont.Weight](./nsfont/weight.md)
   System-defined font-weight values.
-- [NSFont.TextStyle](nsfont/textstyle.md)
+- [NSFont.TextStyle](./nsfont/textstyle.md)
   Constants that specify the preferred text styles you use with fonts.
-- [NSFont.TextStyleOptionKey](nsfont/textstyleoptionkey.md)
+- [NSFont.TextStyleOptionKey](./nsfont/textstyleoptionkey.md)
   The options that you apply when requesting the font or font descriptor of a preferred text style.
 ### Creating UI Element Fonts
-- [class func labelFont(ofSize: CGFloat) -> NSFont](nsfont/labelfont(ofsize:).md)
+- [class func labelFont(ofSize: CGFloat) -> NSFont](./nsfont/labelfont%28ofsize%29.md)
   Returns the font used for standard interface labels in the specified size.
-- [class func messageFont(ofSize: CGFloat) -> NSFont](nsfont/messagefont(ofsize:).md)
+- [class func messageFont(ofSize: CGFloat) -> NSFont](./nsfont/messagefont%28ofsize%29.md)
   Returns the font used for standard interface items, such as button labels, menu items, and so on, in the specified size.
-- [class func menuBarFont(ofSize: CGFloat) -> NSFont](nsfont/menubarfont(ofsize:).md)
+- [class func menuBarFont(ofSize: CGFloat) -> NSFont](./nsfont/menubarfont%28ofsize%29.md)
   Returns the font used for menu bar items, in the specified size.
-- [class func menuFont(ofSize: CGFloat) -> NSFont](nsfont/menufont(ofsize:).md)
+- [class func menuFont(ofSize: CGFloat) -> NSFont](./nsfont/menufont%28ofsize%29.md)
   Returns the font used for menu items, in the specified size.
-- [class func controlContentFont(ofSize: CGFloat) -> NSFont](nsfont/controlcontentfont(ofsize:).md)
+- [class func controlContentFont(ofSize: CGFloat) -> NSFont](./nsfont/controlcontentfont%28ofsize%29.md)
   Returns the font used for the content of controls in the specified size.
-- [class func titleBarFont(ofSize: CGFloat) -> NSFont](nsfont/titlebarfont(ofsize:).md)
+- [class func titleBarFont(ofSize: CGFloat) -> NSFont](./nsfont/titlebarfont%28ofsize%29.md)
   Returns the font used for window title bars, in the specified size.
-- [class func paletteFont(ofSize: CGFloat) -> NSFont](nsfont/palettefont(ofsize:).md)
+- [class func paletteFont(ofSize: CGFloat) -> NSFont](./nsfont/palettefont%28ofsize%29.md)
   Returns the font used for palette window title bars, in the specified size.
-- [class func toolTipsFont(ofSize: CGFloat) -> NSFont](nsfont/tooltipsfont(ofsize:).md)
+- [class func toolTipsFont(ofSize: CGFloat) -> NSFont](./nsfont/tooltipsfont%28ofsize%29.md)
   Returns the font used for tool tips labels, in the specified size.
-- [class var labelFontSize: CGFloat](nsfont/labelfontsize.md)
+- [class var labelFontSize: CGFloat](./nsfont/labelfontsize.md)
   Returns the size of the standard label font.
-- [class func systemFontSize(for: NSControl.ControlSize) -> CGFloat](nsfont/systemfontsize(for:).md)
+- [class func systemFontSize(for: NSControl.ControlSize) -> CGFloat](./nsfont/systemfontsize%28for%29.md)
   Returns the font size used for the specified control size.
 ### Using a Font to Draw
-- [func set()](nsfont/set.md)
+- [func set()](./nsfont/set%28%29.md)
   Sets this font as the font for the current graphics context.
-- [func set(in: NSGraphicsContext)](nsfont/set(in:).md)
+- [func set(in: NSGraphicsContext)](./nsfont/set%28in%29.md)
   Sets this font as the font for the specified graphics context.
 ### Getting Font Metrics and Information
-- [var pointSize: CGFloat](nsfont/pointsize.md)
+- [var pointSize: CGFloat](./nsfont/pointsize.md)
   The point size of the font.
-- [var coveredCharacterSet: CharacterSet](nsfont/coveredcharacterset.md)
+- [var coveredCharacterSet: CharacterSet](./nsfont/coveredcharacterset.md)
   The character set containing all of the nominal characters that the font can render.
-- [var fontDescriptor: NSFontDescriptor](nsfont/fontdescriptor.md)
+- [var fontDescriptor: NSFontDescriptor](./nsfont/fontdescriptor.md)
   The font descriptor object for the font.
-- [var isFixedPitch: Bool](nsfont/isfixedpitch.md)
+- [var isFixedPitch: Bool](./nsfont/isfixedpitch.md)
   A Boolean value indicating whether all glyphs in the font have the same advancement.
-- [var mostCompatibleStringEncoding: UInt](nsfont/mostcompatiblestringencoding.md)
+- [var mostCompatibleStringEncoding: UInt](./nsfont/mostcompatiblestringencoding.md)
   The string encoding that works best with the font.
-- [Advanced Font Metrics](advanced-font-metrics.md)
+- [Advanced Font Metrics](./advanced-font-metrics.md)
   Retrieve details about ascender and descender heights, glyph bounding rectangles, glyph advancements, and more.
 ### Getting Information About Glyphs
-- [var numberOfGlyphs: Int](nsfont/numberofglyphs.md)
+- [var numberOfGlyphs: Int](./nsfont/numberofglyphs.md)
   The number of glyphs in the font.
-- [typealias NSGlyph](nsglyph.md)
+- [typealias NSGlyph](./nsglyph.md)
   The type used to specify glyphs.
-- [var NSControlGlyph: Int](nscontrolglyph.md)
+- [var NSControlGlyph: Int](./nscontrolglyph.md)
   The reserved code for a control glyph.
-- [var NSNullGlyph: Int](nsnullglyph.md)
+- [var NSNullGlyph: Int](./nsnullglyph.md)
   The reserved code for a null glyph.
 ### Getting Font Names
-- [var displayName: String?](nsfont/displayname.md)
+- [var displayName: String?](./nsfont/displayname.md)
   The name of the font, including family and face names, to use when displaying the font information to the user.
-- [var familyName: String?](nsfont/familyname.md)
+- [var familyName: String?](./nsfont/familyname.md)
   The family name of the font—for example, “Times” or “Helvetica.”
-- [var fontName: String](nsfont/fontname.md)
+- [var fontName: String](./nsfont/fontname.md)
   The full name of the font, as used in PostScript language code—for example, “Times-Roman” or “Helvetica-Oblique.”
 ### Setting User Fonts
-- [class func setUser(NSFont?)](nsfont/setuser(_:).md)
+- [class func setUser(NSFont?)](./nsfont/setuser%28_%29.md)
   Sets the font used by default for documents and other text under the user’s control to the specified font.
-- [class func setUserFixedPitch(NSFont?)](nsfont/setuserfixedpitch(_:).md)
+- [class func setUserFixedPitch(NSFont?)](./nsfont/setuserfixedpitch%28_%29.md)
   Sets the font used by default for documents and other text under the user’s control, when that font should be fixed-pitch, to the specified font.
 ### Vertical Fonts
-- [var isVertical: Bool](nsfont/isvertical.md)
+- [var isVertical: Bool](./nsfont/isvertical.md)
   A Boolean value indicating whether the font is a vertical font.
-- [var vertical: NSFont](nsfont/vertical-6ym79.md)
+- [var vertical: NSFont](./nsfont/vertical-6ym79.md)
   A vertical version of the font.
 ### Responding to Font-Related Notifications
-- [class let antialiasThresholdChangedNotification: NSNotification.Name](nsfont/antialiasthresholdchangednotification.md)
+- [class let antialiasThresholdChangedNotification: NSNotification.Name](./nsfont/antialiasthresholdchangednotification.md)
   Posted after the threshold for antialiasing changes.
-- [class let fontSetChangedNotification: NSNotification.Name](nsfont/fontsetchangednotification.md)
+- [class let fontSetChangedNotification: NSNotification.Name](./nsfont/fontsetchangednotification.md)
   Posted after the currently-set font changes.
 ### Type Aliases
-- [NSFont.Width](nsfont/width.md)
+- [NSFont.Width](./nsfont/width.md)
 ### Instance Properties
-- [var printer: NSFont](nsfont/printer.md)
+- [var printer: NSFont](./nsfont/printer.md)
   The scalable PostScript font corresponding to current font.
-- [var renderingMode: NSFontRenderingMode](nsfont/renderingmode.md)
+- [var renderingMode: NSFontRenderingMode](./nsfont/renderingmode.md)
   The rendering mode of the font.
-- [var screen: NSFont](nsfont/screen.md)
+- [var screen: NSFont](./nsfont/screen.md)
   The bitmapped screen font for the current font.
 ### Instance Methods
-- [func advancement(forGlyph: NSGlyph) -> NSSize](nsfont/advancement(forglyph:).md)
+- [func advancement(forGlyph: NSGlyph) -> NSSize](./nsfont/advancement%28forglyph%29.md)
   Returns the nominal spacing for the given glyph—the distance the current point moves after showing the glyph—accounting for the receiver’s size.
-- [func boundingRect(forGlyph: NSGlyph) -> NSRect](nsfont/boundingrect(forglyph:).md)
+- [func boundingRect(forGlyph: NSGlyph) -> NSRect](./nsfont/boundingrect%28forglyph%29.md)
   Returns the bounding rectangle for the specified glyph, scaled to the receiver’s size.
-- [func getAdvancements(NSSizeArray, forGlyphs: UnsafePointer<NSGlyph>, count: Int)](nsfont/getadvancements(_:forglyphs:count:).md)
+- [func getAdvancements(NSSizeArray, forGlyphs: UnsafePointer<NSGlyph>, count: Int)](./nsfont/getadvancements%28_,forglyphs,count%29.md)
   Returns an array of the advancements for the specified glyphs rendered by the receiver.
-- [func getAdvancements(NSSizeArray, forPackedGlyphs: UnsafeRawPointer, length: Int)](nsfont/getadvancements(_:forpackedglyphs:length:).md)
+- [func getAdvancements(NSSizeArray, forPackedGlyphs: UnsafeRawPointer, length: Int)](./nsfont/getadvancements%28_,forpackedglyphs,length%29.md)
   Returns an array of the advancements for the specified packed glyphs and rendered by the receiver.
-- [func getBoundingRects(NSRectArray, forGlyphs: UnsafePointer<NSGlyph>, count: Int)](nsfont/getboundingrects(_:forglyphs:count:).md)
+- [func getBoundingRects(NSRectArray, forGlyphs: UnsafePointer<NSGlyph>, count: Int)](./nsfont/getboundingrects%28_,forglyphs,count%29.md)
   Returns an array of the bounding rectangles for the specified glyphs rendered by the receiver.
-- [func glyph(withName: String) -> NSGlyph](nsfont/glyph(withname:).md)
+- [func glyph(withName: String) -> NSGlyph](./nsfont/glyph%28withname%29.md)
   Returns the named encoded glyph, or –1 if the receiver contains no such glyph.
-- [func screenFont(with: NSFontRenderingMode) -> NSFont](nsfont/screenfont(with:).md)
+- [func screenFont(with: NSFontRenderingMode) -> NSFont](./nsfont/screenfont%28with%29.md)
   Returns a bitmapped screen font, when sent to a font object representing a scalable PostScript font, with the specified rendering mode, matching the receiver in typeface and matrix (or size), or `nil` if such a font can’t be found.
-- [func withSize(CGFloat) -> NSFont](nsfont/withsize(_:).md)
+- [func withSize(CGFloat) -> NSFont](./nsfont/withsize%28_%29.md)
 ### Type Methods
-- [class func systemFont(ofSize: CGFloat, weight: NSFont.Weight, width: NSFont.Width) -> NSFont](nsfont/systemfont(ofsize:weight:width:).md)
+- [class func systemFont(ofSize: CGFloat, weight: NSFont.Weight, width: NSFont.Width) -> NSFont](./nsfont/systemfont%28ofsize,weight,width%29.md)
 ### Deprecated
-- [Deprecated symbols](nsfont-deprecated-symbols.md)
+- [Deprecated symbols](./nsfont-deprecated-symbols.md)
   Review symbols that are no longer in active development, and their recommended replacements.
 ### Structures
-- [NSFont.FontSetChangedMessage](nsfont/fontsetchangedmessage.md)
+- [NSFont.FontSetChangedMessage](./nsfont/fontsetchangedmessage.md)
 ### Initializers
-- [init?(coder: NSCoder)](nsfont/init(coder:).md)
+- [init?(coder: NSCoder)](./nsfont/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NSFontDescriptor](nsfontdescriptor.md)
+### Font Data
+- [class NSFontDescriptor](./nsfontdescriptor.md)
   A dictionary of attributes that describe a font.
-- [struct NSFontTraitMask](nsfonttraitmask.md)
+- [struct NSFontTraitMask](./nsfonttraitmask.md)
   Constants for isolating specific traits of a font.
-- [typealias NSFontFamilyClass](nsfontfamilyclass.md)
+- [typealias NSFontFamilyClass](./nsfontfamilyclass.md)
   Constants that classify certain stylistic qualities of the font.
-- [NSFontDescriptor.SymbolicTraits](nsfontdescriptor/symbolictraits-swift.struct.md)
+- [NSFontDescriptor.SymbolicTraits](./nsfontdescriptor/symbolictraits-swift.struct.md)
   A symbolic description of the stylistic aspects of a font.
-- [class NSFontAssetRequest](nsfontassetrequest.md)
-- [typealias NSFontSymbolicTraits](nsfontsymbolictraits.md)
+- [class NSFontAssetRequest](./nsfontassetrequest.md)
+- [typealias NSFontSymbolicTraits](./nsfontsymbolictraits.md)
   A symbolic description of stylistic aspects of a font.
 
 

@@ -1,7 +1,8 @@
 # FSEventStreamEventFlags
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias FSEventStreamEventFlags = UInt32
+```
+
+```c
+typedef UInt32 FSEventStreamEventFlags;
 ```
 
 #### Discussion

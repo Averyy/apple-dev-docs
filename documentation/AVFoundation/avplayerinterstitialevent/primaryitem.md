@@ -1,7 +1,8 @@
 # primaryItem
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player item that represents the primary content.
 
@@ -20,13 +21,18 @@ The player item that represents the primary content.
 weak var primaryItem: AVPlayerItem? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) AVPlayerItem * primaryItem;
+```
+
 #### Discussion
 
-The item must contain an [`AVAsset`](avasset.md) that provides intrinsic mappings from its timeline to realtime dates.
+The item must contain an [`AVAsset`](../avasset.md) that provides intrinsic mappings from its timeline to realtime dates.
 
 ## See Also
 
-- [var templateItems: [AVPlayerItem]](avplayerinterstitialevent/templateitems.md)
+### Accessing player items
+- [var templateItems: [AVPlayerItem]](./templateitems.md)
   An array of player item configurations to use as templates for player items that play interstitial content.
 
 

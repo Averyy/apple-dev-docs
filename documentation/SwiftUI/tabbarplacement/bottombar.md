@@ -1,7 +1,8 @@
 # bottomBar
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Bottom bar of a tab view.
 

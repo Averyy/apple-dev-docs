@@ -1,7 +1,8 @@
 # credentialParameters
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of parameters for the credential.
 
@@ -17,11 +18,16 @@ An array of parameters for the credential.
 var credentialParameters: [ASAuthorizationPublicKeyCredentialParameters] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<ASAuthorizationPublicKeyCredentialParameters *> * credentialParameters;
+```
+
 ## See Also
 
-- [var excludedCredentials: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor]](asauthorizationsecuritykeypublickeycredentialregistrationrequest/excludedcredentials.md)
+### Getting the properties
+- [var excludedCredentials: [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor]](./excludedcredentials.md)
   An array of excluded parameters for the credential.
-- [var residentKeyPreference: ASAuthorizationPublicKeyCredentialResidentKeyPreference](asauthorizationsecuritykeypublickeycredentialregistrationrequest/residentkeypreference.md)
+- [var residentKeyPreference: ASAuthorizationPublicKeyCredentialResidentKeyPreference](./residentkeypreference.md)
   The preference that indicates where the resident key resides.
 
 

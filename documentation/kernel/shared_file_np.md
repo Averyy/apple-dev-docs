@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct shared_file_np {
     ...
 };
@@ -17,9 +17,9 @@ struct shared_file_np {
 ## Topics
 
 ### Instance Properties
-- [sf_fd](shared_file_np/3553728-sf_fd.md)
-- [sf_mappings_count](shared_file_np/3553729-sf_mappings_count.md)
-- [sf_slide](shared_file_np/3553730-sf_slide.md)
+- [sf_fd](./shared_file_np/api-3553728-sf_fd.md)
+- [sf_mappings_count](./shared_file_np/api-3553729-sf_mappings_count.md)
+- [sf_slide](./shared_file_np/api-3553730-sf_slide.md)
 
 
 ---

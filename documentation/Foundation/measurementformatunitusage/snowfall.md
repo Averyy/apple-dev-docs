@@ -1,7 +1,8 @@
 # snowfall
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Used to format the snowfall amount
 
@@ -19,6 +20,8 @@ Used to format the snowfall amount
 ```swift
 static var snowfall: MeasurementFormatUnitUsage<UnitLength> { get }
 ```
+
+Available when `UnitType` is `UnitLength`.
 
 
 ---

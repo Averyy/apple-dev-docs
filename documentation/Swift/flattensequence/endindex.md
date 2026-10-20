@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection’s “past the end” position.
 
@@ -19,6 +20,8 @@ The collection’s “past the end” position.
 ```swift
 var endIndex: FlattenSequence<Base>.Index { get }
 ```
+
+Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
 #### Discussion
 

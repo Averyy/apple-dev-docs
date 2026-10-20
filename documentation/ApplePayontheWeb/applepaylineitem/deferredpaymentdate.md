@@ -1,7 +1,8 @@
 # deferredPaymentDate
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date, in the future, of the payment.
 
@@ -11,7 +12,7 @@ The date, in the future, of the payment.
 
 ## Declaration
 
-```swift
+```
 Date deferredPaymentDate;
 ```
 

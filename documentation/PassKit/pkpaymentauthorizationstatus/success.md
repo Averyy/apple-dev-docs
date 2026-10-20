@@ -1,7 +1,8 @@
 # PKPaymentAuthorizationStatus.success
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Merchant successfully authorized the transaction, or the transaction is expected to succeed.
 
@@ -19,25 +20,30 @@ Merchant successfully authorized the transaction, or the transaction is expected
 case success
 ```
 
+```c
+PKPaymentAuthorizationStatusSuccess
+```
+
 #### Discussion
 
 Use this value when the transaction is successful and no errors exist on the payment sheet.
 
 ## See Also
 
-- [PKPaymentAuthorizationStatus.failure](pkpaymentauthorizationstatus/failure.md)
+### Payment authorization status constants
+- [PKPaymentAuthorizationStatus.failure](./failure.md)
   Merchant failed to authorize the transaction.
-- [PKPaymentAuthorizationStatus.invalidBillingPostalAddress](pkpaymentauthorizationstatus/invalidbillingpostaladdress.md)
+- [PKPaymentAuthorizationStatus.invalidBillingPostalAddress](./invalidbillingpostaladdress.md)
   Invalid or unusable billing address.
-- [PKPaymentAuthorizationStatus.invalidShippingPostalAddress](pkpaymentauthorizationstatus/invalidshippingpostaladdress.md)
+- [PKPaymentAuthorizationStatus.invalidShippingPostalAddress](./invalidshippingpostaladdress.md)
   Invalid or unusable shipping address.
-- [PKPaymentAuthorizationStatus.invalidShippingContact](pkpaymentauthorizationstatus/invalidshippingcontact.md)
+- [PKPaymentAuthorizationStatus.invalidShippingContact](./invalidshippingcontact.md)
   Invalid or incomplete shipping contact.
-- [PKPaymentAuthorizationStatus.pinRequired](pkpaymentauthorizationstatus/pinrequired.md)
+- [PKPaymentAuthorizationStatus.pinRequired](./pinrequired.md)
   Transaction requires PIN entry.
-- [PKPaymentAuthorizationStatus.pinIncorrect](pkpaymentauthorizationstatus/pinincorrect.md)
+- [PKPaymentAuthorizationStatus.pinIncorrect](./pinincorrect.md)
   Incorrect PIN entered.
-- [PKPaymentAuthorizationStatus.pinLockout](pkpaymentauthorizationstatus/pinlockout.md)
+- [PKPaymentAuthorizationStatus.pinLockout](./pinlockout.md)
   PIN retry limit exceeded.
 
 

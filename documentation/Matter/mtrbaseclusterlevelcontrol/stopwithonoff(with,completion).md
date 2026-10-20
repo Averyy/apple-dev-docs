@@ -1,7 +1,8 @@
 # stopWithOnOff(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func stopWithOnOff(with params: MTRLevelControlClusterStopWithOnOffParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func stopWithOnOff(with params: MTRLevelControlClusterStopWithOnOffParams) async throws
+```
+
+```objc
+- (void) stopWithOnOffWithParams:(MTRLevelControlClusterStopWithOnOffParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

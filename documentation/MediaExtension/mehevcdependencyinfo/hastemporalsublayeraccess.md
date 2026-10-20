@@ -1,7 +1,8 @@
 # hasTemporalSubLayerAccess
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the sample has an HEVC temporal sublayer access (TSA) picture.
 
@@ -14,29 +15,34 @@ A Boolean value that indicates if the sample has an HEVC temporal sublayer acces
 var hasTemporalSubLayerAccess: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=hasTemporalSubLayerAccess) BOOL temporalSubLayerAccess;
+```
+
 #### Discussion
 
-This value maps to the [`kCMSampleAttachmentKey_HEVCTemporalSubLayerAccess`](https://developer.apple.com/documentation/coremedia/kcmsampleattachmentkey_hevctemporalsublayeraccess) sample buffer attachment.
+This value maps to the [`kCMSampleAttachmentKey_HEVCTemporalSubLayerAccess`](../../CoreMedia/kcmsampleattachmentkey_hevctemporalsublayeraccess.md) sample buffer attachment.
 
 ## See Also
 
-- [var hasStepwiseTemporalSubLayerAccess: Bool](mehevcdependencyinfo/hasstepwisetemporalsublayeraccess.md)
+### Inspecting the HEVC dependency attributes of a sample
+- [var hasStepwiseTemporalSubLayerAccess: Bool](./hasstepwisetemporalsublayeraccess.md)
   A Boolean value that indicates if the sample has an HEVC stepwise temporal sublayer access (STSA) picture.
-- [var syncSampleNALUnitType: Int16](mehevcdependencyinfo/syncsamplenalunittype.md)
+- [var syncSampleNALUnitType: Int16](./syncsamplenalunittype.md)
   The NAL unit type for HEVC sync sample groups.
-- [var temporalLevel: Int16](mehevcdependencyinfo/temporallevel.md)
+- [var temporalLevel: Int16](./temporallevel.md)
   The HEVC temporal level, if available.
-- [var profileSpace: Int16](mehevcdependencyinfo/profilespace.md)
+- [var profileSpace: Int16](./profilespace.md)
   The HEVC profile space, if available.
-- [var tierFlag: Int16](mehevcdependencyinfo/tierflag.md)
+- [var tierFlag: Int16](./tierflag.md)
   The HEVC tier level flag, if available.
-- [var profileIndex: Int16](mehevcdependencyinfo/profileindex.md)
+- [var profileIndex: Int16](./profileindex.md)
   The HEVC profile index, if available.
-- [var profileCompatibilityFlags: Data?](mehevcdependencyinfo/profilecompatibilityflags.md)
+- [var profileCompatibilityFlags: Data?](./profilecompatibilityflags.md)
   The HEVC profile compatibility flags (4 bytes), if available.
-- [var constraintIndicatorFlags: Data?](mehevcdependencyinfo/constraintindicatorflags.md)
+- [var constraintIndicatorFlags: Data?](./constraintindicatorflags.md)
   The HEVC constraint indicator flags (6 bytes), if available.
-- [var levelIndex: Int16](mehevcdependencyinfo/levelindex.md)
+- [var levelIndex: Int16](./levelindex.md)
   The HEVC level index, if available.
 
 

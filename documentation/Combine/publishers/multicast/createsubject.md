@@ -1,7 +1,8 @@
 # createSubject
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that returns a subject each time a subscriber attaches to the multicast publisher.
 
@@ -22,7 +23,8 @@ final let createSubject: () -> SubjectType
 
 ## See Also
 
-- [let upstream: Upstream](publishers/multicast/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives its elements.
 
 

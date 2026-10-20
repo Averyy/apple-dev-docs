@@ -1,17 +1,18 @@
 # ATA_DEVICE_SIGNATURE
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 UInt8 ATA_DEVICE_SIGNATURE[20];
 ```
 

@@ -1,7 +1,8 @@
 # BetaRecruitmentCriterionOption.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a beta recruitment criterion option resource.
 
@@ -10,14 +11,14 @@ Attributes that describe a beta recruitment criterion option resource.
 
 ## Declaration
 
-```swift
+```
 object BetaRecruitmentCriterionOption.Attributes
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BetaRecruitmentCriterionOption.Attributes.DeviceFamilyOsVersions](betarecruitmentcriterionoption/attributes-data.dictionary/devicefamilyosversions-data.dictionary.md)
+- [object BetaRecruitmentCriterionOption.Attributes.DeviceFamilyOsVersions](./attributes-data.dictionary/devicefamilyosversions-data.dictionary.md)
   The device family and minimum OS version pairings available for selection in a beta recruitment criterion option.
 
 ## Properties

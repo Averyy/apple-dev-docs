@@ -1,18 +1,19 @@
 # vertexFunctionName
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the vertex shader function to load from a Metal shader library.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,17 +21,22 @@ The name of the vertex shader function to load from a Metal shader library.
 var vertexFunctionName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * vertexFunctionName;
+```
+
 #### Discussion
 
 A program’s vertex shader executes once for each vertex in the geometry it renders. It takes as input the attributes of each vertex (such as position in model space, normal vectors, and texture coordinates). The vertex shader then outputs a clip-space position for the vertex, as well as values that the GPU interpolates across a surface and sends to the fragment shader.
 
-By default, SceneKit looks for a fragment shader function by this name in the default Metal library. To use shaders from a separate library file, change the [`library`](scnprogram/library.md) property.
+By default, SceneKit looks for a fragment shader function by this name in the default Metal library. To use shaders from a separate library file, change the [`library`](./library.md) property.
 
 ## See Also
 
-- [var fragmentFunctionName: String?](scnprogram/fragmentfunctionname.md)
+### Working With Metal Shaders
+- [var fragmentFunctionName: String?](./fragmentfunctionname.md)
   The name of the fragment shader function to load from a Metal shader library.
-- [var library: (any MTLLibrary)?](scnprogram/library.md)
+- [var library: (any MTLLibrary)?](./library.md)
   The Metal shader library containing shader functions to be used by this program.
 
 

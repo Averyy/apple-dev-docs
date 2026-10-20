@@ -1,7 +1,8 @@
 # createXPCRepresentation()
 
 **Framework**: Accessory Access  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an encoded representation of the USB accessory.
 
@@ -14,9 +15,13 @@ Creates an encoded representation of the USB accessory.
 func createXPCRepresentation() -> xpc_object_t
 ```
 
+```objc
+- (xpc_object_t) createXPCRepresentation;
+```
+
 #### Discussion
 
-A USB accessory can be encoded to [`xpc_object_t`](https://developer.apple.com/documentation/xpc/xpc_object_t), and passed to an XPC service over an XPC connection.
+A USB accessory can be encoded to [`xpc_object_t`](../../XPC/xpc_object_t.md), and passed to an XPC service over an XPC connection.
 
 
 ---

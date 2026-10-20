@@ -1,14 +1,15 @@
 # ubc_upl_unmap_range
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 int ubc_upl_unmap_range(upl_t, vm_offset_t, vm_size_t);
 ```
 

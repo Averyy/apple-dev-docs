@@ -1,18 +1,19 @@
 # APN
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures access point names.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 4.0+
+- iOS 4.0+ - Deprecated in 7.0
+- iPadOS 4.0+ - Deprecated in 7.0
+- Mac Catalyst 4.0+ - Deprecated in 7.0
 
 ## Declaration
 
-```swift
+```
 object APN
 ```
 
@@ -20,9 +21,9 @@ object APN
 
 Specify `com.apple.apn.managed` as the payload type.
 
-This profile is deprecated. Use the [`Cellular`](cellular.md) profile instead.
+This profile is deprecated. Use the [`Cellular`](./cellular.md) profile instead.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -37,25 +38,32 @@ This profile is deprecated. Use the [`Cellular`](cellular.md) profile instead.
 ## Topics
 
 ### Objects
-- [object APN.DefaultsData](apn/defaultsdata-data.dictionary.md)
+- [object APN.DefaultsData](./apn/defaultsdata-data.dictionary.md)
   An array of access point name dictionaries.
 
 ## Properties
 
-- `DefaultsData` (APN.DefaultsData) *(required)*: The list of access point names (APNs). Deprecated: iOS 7+ | iPadOS 7+
-- `DefaultsDomainName` (string) *(required)*: The domain name. Deprecated: iOS 7+ | iPadOS 7+
+- `DefaultsData` (APN.DefaultsData) *(required)* *(deprecated)*: The list of access point names (APNs).
+
+  Deprecated: iOS 7+ | iPadOS 7+
+- `DefaultsDomainName` (string) *(required)* *(deprecated)*: The domain name.
+
+  Deprecated: iOS 7+ | iPadOS 7+
+
+  **Allowed Values**: `com.apple.managedCarrier`
 
 ## See Also
 
-- [object FDERecoveryKeyRedirection](fderecoverykeyredirection.md)
+### Deprecated
+- [object FDERecoveryKeyRedirection](./fderecoverykeyredirection.md)
   The payload that configures FileVault recovery key redirection.
-- [object MediaManagementAllowedMedia](mediamanagementallowedmedia.md)
+- [object MediaManagementAllowedMedia](./mediamanagementallowedmedia.md)
   The payload that configures media management.
-- [object ParentalControlDictationAndProfanity](parentalcontroldictationandprofanity.md)
+- [object ParentalControlDictationAndProfanity](./parentalcontroldictationandprofanity.md)
   The payload that configures parental control for dictation and profanity.
-- [object ShareKit](sharekit.md)
+- [object ShareKit](./sharekit.md)
   The payload that configures ShareKit.
-- [object SystemPreferences](systempreferences.md)
+- [object SystemPreferences](./systempreferences.md)
   The payload that configures the preference panes.
 
 

@@ -1,7 +1,8 @@
 # isGuidanceEnabled
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the scanner provides help to a person when selecting items.
 
@@ -23,19 +24,20 @@ The guidance text, such as “Slow Down,” appears over the live video. The def
 
 ## See Also
 
-- [var delegate: (any DataScannerViewControllerDelegate)?](datascannerviewcontroller/delegate.md)
+### Configuring data scanners
+- [var delegate: (any DataScannerViewControllerDelegate)?](./delegate.md)
   The delegate that handles user interaction with items recognized by the data scanner.
-- [let qualityLevel: DataScannerViewController.QualityLevel](datascannerviewcontroller/qualitylevel-swift.property.md)
+- [let qualityLevel: DataScannerViewController.QualityLevel](./qualitylevel-swift.property.md)
   The resolution that the scanner uses to find data.
-- [DataScannerViewController.QualityLevel](datascannerviewcontroller/qualitylevel-swift.enum.md)
+- [DataScannerViewController.QualityLevel](./qualitylevel-swift.enum.md)
   The possible quality levels that the scanner uses to find data.
-- [let recognizesMultipleItems: Bool](datascannerviewcontroller/recognizesmultipleitems.md)
+- [let recognizesMultipleItems: Bool](./recognizesmultipleitems.md)
   A Boolean value that indicates whether the scanner should identify all items in the live video.
-- [let isHighFrameRateTrackingEnabled: Bool](datascannerviewcontroller/ishighframeratetrackingenabled.md)
+- [let isHighFrameRateTrackingEnabled: Bool](./ishighframeratetrackingenabled.md)
   A Boolean value that determines the frequency at which the scanner updates the geometry of recognized items.
-- [let isPinchToZoomEnabled: Bool](datascannerviewcontroller/ispinchtozoomenabled.md)
+- [let isPinchToZoomEnabled: Bool](./ispinchtozoomenabled.md)
   A Boolean value that indicates whether people can use a two-finger pinch-to-zoom gesture.
-- [let isHighlightingEnabled: Bool](datascannerviewcontroller/ishighlightingenabled.md)
+- [let isHighlightingEnabled: Bool](./ishighlightingenabled.md)
   A Boolean value that indicates whether the scanner displays highlights around recognized items.
 
 

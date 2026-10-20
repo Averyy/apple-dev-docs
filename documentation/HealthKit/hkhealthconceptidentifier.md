@@ -1,7 +1,8 @@
 # HKHealthConceptIdentifier
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A unique identifier for a specific health concept within a domain.
 
@@ -19,6 +20,10 @@ A unique identifier for a specific health concept within a domain.
 class HKHealthConceptIdentifier
 ```
 
+```objc
+@interface HKHealthConceptIdentifier : NSObject
+```
+
 #### Overview
 
 Each identifier points to one concept inside a domain. For example, within the medication domain, one identifier might represent ibuprofen while another represents insulin.
@@ -26,45 +31,46 @@ Each identifier points to one concept inside a domain. For example, within the m
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder)](hkhealthconceptidentifier/init(coder:).md)
+- [init?(coder: NSCoder)](./hkhealthconceptidentifier/init%28coder%29.md)
 ### Instance Properties
-- [var domain: HKHealthConceptDomain](hkhealthconceptidentifier/domain.md)
+- [var domain: HKHealthConceptDomain](./hkhealthconceptidentifier/domain.md)
   The domain this identifier belongs to.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKClinicalCoding](hkclinicalcoding.md)
+### Medication queries
+- [class HKClinicalCoding](./hkclinicalcoding.md)
   A clinical coding that represents a medical concept using a standardized coding system.
-- [class HKMedicationConcept](hkmedicationconcept.md)
+- [class HKMedicationConcept](./hkmedicationconcept.md)
   An object that describes a specific medication concept.
-- [class HKMedicationDoseEvent](hkmedicationdoseevent.md)
-- [class HKMedicationDoseEventType](hkmedicationdoseeventtype.md)
-- [class HKUserAnnotatedMedication](hkuserannotatedmedication.md)
+- [class HKMedicationDoseEvent](./hkmedicationdoseevent.md)
+- [class HKMedicationDoseEventType](./hkmedicationdoseeventtype.md)
+- [class HKUserAnnotatedMedication](./hkuserannotatedmedication.md)
   A reference to the tracked medication and the details a person can customize.
-- [class HKUserAnnotatedMedicationQuery](hkuserannotatedmedicationquery.md)
-- [class HKUserAnnotatedMedicationType](hkuserannotatedmedicationtype.md)
-- [struct HKHealthConceptDomain](hkhealthconceptdomain.md)
+- [class HKUserAnnotatedMedicationQuery](./hkuserannotatedmedicationquery.md)
+- [class HKUserAnnotatedMedicationType](./hkuserannotatedmedicationtype.md)
+- [struct HKHealthConceptDomain](./hkhealthconceptdomain.md)
   A domain that represents a health concept.
-- [struct HKMedicationGeneralForm](hkmedicationgeneralform.md)
+- [struct HKMedicationGeneralForm](./hkmedicationgeneralform.md)
   The manufactured form of a medication.
-- [struct HKUserAnnotatedMedicationQueryDescriptor](hkuserannotatedmedicationquerydescriptor.md)
+- [struct HKUserAnnotatedMedicationQueryDescriptor](./hkuserannotatedmedicationquerydescriptor.md)
 
 
 ---

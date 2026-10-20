@@ -1,18 +1,19 @@
 # minimumAngularLimit
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum rotation angle between the two bodies, measured in radians relative to their initial orientations.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,19 +21,24 @@ The minimum rotation angle between the two bodies, measured in radians relative 
 var minimumAngularLimit: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat minimumAngularLimit;
+```
+
 #### Discussion
 
 The default (and minimum) value of this property is `-M_PI`. With this value, the joint can spin clockwise (relative to the first body) with no limit.
 
-Set both this property and the [`maximumAngularLimit`](scnphysicssliderjoint/maximumangularlimit.md) property to the same value to prevent the bodies from rotating around their anchor points. (Set both properties to `0.0` to fix the bodies in their initial orientations.) Bodies whose orientation is fixed by a sliding joint may still slide, depending on the values of the [`minimumLinearLimit`](scnphysicssliderjoint/minimumlinearlimit.md) and [`maximumLinearLimit`](scnphysicssliderjoint/maximumlinearlimit.md) properties.
+Set both this property and the [`maximumAngularLimit`](./maximumangularlimit.md) property to the same value to prevent the bodies from rotating around their anchor points. (Set both properties to `0.0` to fix the bodies in their initial orientations.) Bodies whose orientation is fixed by a sliding joint may still slide, depending on the values of the [`minimumLinearLimit`](./minimumlinearlimit.md) and [`maximumLinearLimit`](./maximumlinearlimit.md) properties.
 
 ## See Also
 
-- [var minimumLinearLimit: CGFloat](scnphysicssliderjoint/minimumlinearlimit.md)
+### Limiting the Motion of a Slider Joint
+- [var minimumLinearLimit: CGFloat](./minimumlinearlimit.md)
   The minimum distance between the anchor points of the two bodies, relative to their initial positions.
-- [var maximumLinearLimit: CGFloat](scnphysicssliderjoint/maximumlinearlimit.md)
+- [var maximumLinearLimit: CGFloat](./maximumlinearlimit.md)
   The maximum distance between the anchor points of the two bodies, relative to their initial positions.
-- [var maximumAngularLimit: CGFloat](scnphysicssliderjoint/maximumangularlimit.md)
+- [var maximumAngularLimit: CGFloat](./maximumangularlimit.md)
   The maximum rotation angle between the two bodies, measured in radians relative to their initial orientations.
 
 

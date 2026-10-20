@@ -1,7 +1,8 @@
 # displays
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Displays system menu bar item.
 
@@ -13,6 +14,10 @@ The Displays system menu bar item.
 
 ```swift
 static let displays: AEMenuBarItem
+```
+
+```c
+extern AEMenuBarItem const AEMenuBarItemDisplays;
 ```
 
 

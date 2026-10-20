@@ -1,7 +1,8 @@
 # errSecInvalidAttributePrime
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A prime attribute is not valid.
 
@@ -18,6 +19,10 @@ A prime attribute is not valid.
 
 ```swift
 var errSecInvalidAttributePrime: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributePrime
 ```
 
 

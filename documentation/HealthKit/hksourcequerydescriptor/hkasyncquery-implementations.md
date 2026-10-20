@@ -1,11 +1,12 @@
 # HKAsyncQuery Implementations
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func result(for: HKHealthStore) async throws -> [HKSource]](hksourcequerydescriptor/result(for:).md)
+- [func result(for: HKHealthStore) async throws -> [HKSource]](./result%28for%29.md)
   Runs a one-shot query that asynchronously returns a snapshot of all the sources that saved matching data.
 
 

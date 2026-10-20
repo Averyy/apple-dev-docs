@@ -1,12 +1,13 @@
 # documentView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view the scroll view scrolls within its content view.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,19 @@ The view the scroll view scrolls within its content view.
 var documentView: NSView? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSView * documentView;
+```
+
 ## See Also
 
-- [var documentView: NSView?](nsclipview/documentview.md)
+### Related Documentation
+- [var documentView: NSView?](../nsclipview/documentview.md)
   The clip view’s document view.
-- [var contentView: NSClipView](nsscrollview/contentview.md)
+### Managing the Views
+- [var contentView: NSClipView](./contentview.md)
   The scroll view’s content view, the view that clips the document view.
-- [func addFloatingSubview(NSView, for: NSEvent.GestureAxis)](nsscrollview/addfloatingsubview(_:for:).md)
+- [func addFloatingSubview(NSView, for: NSEvent.GestureAxis)](./addfloatingsubview%28_,for%29.md)
   Adds a floating subview to the document view.
 
 

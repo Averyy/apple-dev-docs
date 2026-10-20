@@ -1,7 +1,8 @@
 # started
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An event that takes place when a new action event begins.
 
@@ -21,17 +22,18 @@ static var started: ActionEventType { get }
 
 ## See Also
 
-- [static var ended: ActionEventType](actioneventtype/ended.md)
+### Event types
+- [static var ended: ActionEventType](./ended.md)
   An event that takes place when the action event exits its time interval.
-- [static var paused: ActionEventType](actioneventtype/paused.md)
+- [static var paused: ActionEventType](./paused.md)
   An event that takes place when the animation pauses.
-- [static var resumed: ActionEventType](actioneventtype/resumed.md)
+- [static var resumed: ActionEventType](./resumed.md)
   An event that takes place when the animation resumes after a pause.
-- [static var updated: ActionEventType](actioneventtype/updated.md)
+- [static var updated: ActionEventType](./updated.md)
   An event that takes place after an action event starts and is within its time interval.
-- [static var skipped: ActionEventType](actioneventtype/skipped.md)
+- [static var skipped: ActionEventType](./skipped.md)
   An event that takes place when the system misses an action event’s time interval.
-- [static var terminated: ActionEventType](actioneventtype/terminated.md)
+- [static var terminated: ActionEventType](./terminated.md)
   An event that takes place when the animation ends.
 
 

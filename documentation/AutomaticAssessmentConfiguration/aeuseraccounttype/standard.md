@@ -1,7 +1,8 @@
 # AEUserAccountType.standard
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Requires a standard user account.
 
@@ -13,6 +14,10 @@ Requires a standard user account.
 
 ```swift
 case standard
+```
+
+```c
+AEUserAccountTypeStandard
 ```
 
 

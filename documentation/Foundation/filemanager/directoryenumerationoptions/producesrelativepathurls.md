@@ -1,7 +1,8 @@
 # producesRelativePathURLs
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to skip hidden files.
 
@@ -18,6 +19,10 @@ An option to skip hidden files.
 
 ```swift
 static var producesRelativePathURLs: FileManager.DirectoryEnumerationOptions { get }
+```
+
+```c
+NSDirectoryEnumerationProducesRelativePathURLs
 ```
 
 

@@ -1,7 +1,8 @@
 # init(_:sortUsing:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sortable column that generates its label from a localized string resource.
 
@@ -19,9 +20,28 @@ Creates a sortable column that generates its label from a localized string resou
 nonisolated init(_ titleResource: LocalizedStringResource, sortUsing comparator: Sort, @ContentBuilder content: @escaping (RowValue) -> Content)
 ```
 
+Available when `RowValue` conforms to `Identifiable`, `RowValue` is `Sort.Compared`, `Sort` conforms to `SortComparator`, `Content` conforms to `View`, and `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ text: Text, sortUsing comparator: Sort, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, sortUsing comparator: Sort, @ContentBuilder content: @escaping (RowValue) -> Content)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, sortUsing comparator: Sort, @ContentBuilder content: @escaping (RowValue) -> Content) where S : StringProtocol
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view on your behalf. For more information about localizing strings, see[`Text`](text.md).
+This initializer creates a [`Text`](../text.md) view on your behalf. For more information about localizing strings, see[`Text`](../text.md).
 
 ## Parameters
 
@@ -31,11 +51,12 @@ This initializer creates a [`Text`](text.md) view on your behalf. For more infor
 
 ## See Also
 
-- [init(_:value:content:)](tablecolumn/init(_:value:content:).md)
+### Creating a sortable column
+- [init(_:value:content:)](./init%28_,value,content%29.md)
   Creates a sortable column for Boolean values that generates its label from a localized string resource.
-- [init(_:value:comparator:)](tablecolumn/init(_:value:comparator:).md)
+- [init(_:value:comparator:)](./init%28_,value,comparator%29.md)
   Creates a sortable column that displays a string property, and generates its label from a localized string resource.
-- [init(_:value:comparator:content:)](tablecolumn/init(_:value:comparator:content:).md)
+- [init(_:value:comparator:content:)](./init%28_,value,comparator,content%29.md)
   Creates a sortable column that generates its label from a localized string resource.
 
 

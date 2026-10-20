@@ -1,7 +1,8 @@
 # replaceImage(with:)
 
 **Framework**: PaperKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the contents of this image markup with a `CGImage`.
 
@@ -28,13 +29,14 @@ Image content is shown scaled to fill.
 
 ## See Also
 
-- [var image: CGImage?](imagemarkup/image.md)
+### Accessing image content
+- [var image: CGImage?](./image.md)
   The image content displayed by this markup.
-- [func replaceImage(with: URL) throws](imagemarkup/replaceimage(with:)-10qzi.md)
+- [func replaceImage(with: URL) throws](./replaceimage%28with%29-10qzi.md)
   Replaces the contents of this image markup with an image file.
-- [var orientation: CGImagePropertyOrientation](imagemarkup/orientation.md)
+- [var orientation: CGImagePropertyOrientation](./orientation.md)
   The orientation of the image content.
-- [var contentsBounds: CGRect](imagemarkup/contentsbounds.md)
+- [var contentsBounds: CGRect](./contentsbounds.md)
   The portion of the image to display, in normalized coordinates.
 
 

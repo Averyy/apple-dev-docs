@@ -1,7 +1,8 @@
 # userScripts
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user scripts associated with the user content controller.
 
@@ -18,11 +19,16 @@ The user scripts associated with the user content controller.
 var userScripts: [WKUserScript] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<WKUserScript *> * userScripts;
+```
+
 ## See Also
 
-- [func addUserScript(WKUserScript)](wkusercontentcontroller/adduserscript(_:).md)
+### Adding and Removing Custom Scripts
+- [func addUserScript(WKUserScript)](./adduserscript%28_%29.md)
   Injects the specified script into the webpage’s content.
-- [func removeAllUserScripts()](wkusercontentcontroller/removealluserscripts.md)
+- [func removeAllUserScripts()](./removealluserscripts%28%29.md)
   Removes all user scripts from the web view.
 
 

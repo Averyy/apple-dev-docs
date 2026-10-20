@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared `NSScriptExecutionContext` instance.
 
@@ -15,13 +16,18 @@ Returns the shared `NSScriptExecutionContext` instance.
 class func shared() -> NSScriptExecutionContext
 ```
 
+```objc
++ (NSScriptExecutionContext *) sharedScriptExecutionContext;
+```
+
 #### Return Value
 
 The shared `NSScriptExecutionContext` instance, creating it first if it doesn’t exist.
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
 
 
 ---

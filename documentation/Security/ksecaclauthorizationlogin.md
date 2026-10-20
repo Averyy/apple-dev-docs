@@ -1,7 +1,8 @@
 # kSecACLAuthorizationLogin
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Use for a CSP (smart card) login.
 
@@ -12,6 +13,10 @@ Use for a CSP (smart card) login.
 
 ```swift
 let kSecACLAuthorizationLogin: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationLogin;
 ```
 
 

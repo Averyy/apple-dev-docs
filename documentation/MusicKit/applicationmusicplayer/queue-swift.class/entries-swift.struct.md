@@ -1,7 +1,8 @@
 # ApplicationMusicPlayer.Queue.Entries
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -20,21 +21,21 @@ struct Entries
 ## Topics
 
 ### Initializers
-- [init()](applicationmusicplayer/queue-swift.class/entries-swift.struct/init.md)
+- [init()](./entries-swift.struct/init%28%29.md)
   Creates an empty collection of entries.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [RangeReplaceableCollection](../swift/rangereplaceablecollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../../Swift/bidirectionalcollection.md)
+- [Collection](../../../Swift/collection.md)
+- [Equatable](../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../../Swift/hashable.md)
+- [MutableCollection](../../../Swift/mutablecollection.md)
+- [RandomAccessCollection](../../../Swift/randomaccesscollection.md)
+- [RangeReplaceableCollection](../../../Swift/rangereplaceablecollection.md)
+- [Sequence](../../../Swift/sequence.md)
 
 
 ---

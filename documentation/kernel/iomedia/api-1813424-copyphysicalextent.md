@@ -5,14 +5,14 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOStorage * copyPhysicalExtent(
  IOService *client, 
  UInt64 *byteStart, 
  UInt64 *byteCount);
 ```
 
-#### Return_value
+#### Return Value
 
 A reference to the physical storage object, which should be released by the caller, or a null on error.
 
@@ -28,26 +28,27 @@ Convert the specified byte offset into a physical byte offset, relative to a phy
 
 ## See Also
 
-- [getAttributes](iomedia/1813444-getattributes.md)
-- [getBase](iomedia/1813468-getbase.md)
-- [getContent](iomedia/1813495-getcontent.md)
-- [getContentHint](iomedia/1813522-getcontenthint.md)
-- [getPreferredBlockSize](iomedia/1813553-getpreferredblocksize.md)
-- [getSize](iomedia/1813585-getsize.md)
-- [handleClose](iomedia/1813614-handleclose.md)
-- [handleIsOpen](iomedia/1813630-handleisopen.md)
-- [handleOpen](iomedia/1813647-handleopen.md)
-- [init](iomedia/1813657-init.md)
-- [isEjectable](iomedia/1813664-isejectable.md)
-- [isFormatted](iomedia/1813670-isformatted.md)
-- [isWhole](iomedia/1813677-iswhole.md)
-- [isWritable](iomedia/1813683-iswritable.md)
-- [lockPhysicalExtents](iomedia/1813689-lockphysicalextents.md)
-- [read](iomedia/1813696-read.md)
-- [synchronizeCache](iomedia/1813702-synchronizecache.md)
-- [unlockPhysicalExtents](iomedia/1813710-unlockphysicalextents.md)
-- [unmap](iomedia/1813719-unmap.md)
-- [write](iomedia/1813725-write.md)
+### Miscellaneous
+- [getAttributes](./api-1813444-getattributes.md)
+- [getBase](./api-1813468-getbase.md)
+- [getContent](./api-1813495-getcontent.md)
+- [getContentHint](./api-1813522-getcontenthint.md)
+- [getPreferredBlockSize](./api-1813553-getpreferredblocksize.md)
+- [getSize](./api-1813585-getsize.md)
+- [handleClose](./api-1813614-handleclose.md)
+- [handleIsOpen](./api-1813630-handleisopen.md)
+- [handleOpen](./api-1813647-handleopen.md)
+- [init](./api-1813657-init.md)
+- [isEjectable](./api-1813664-isejectable.md)
+- [isFormatted](./api-1813670-isformatted.md)
+- [isWhole](./api-1813677-iswhole.md)
+- [isWritable](./api-1813683-iswritable.md)
+- [lockPhysicalExtents](./api-1813689-lockphysicalextents.md)
+- [read](./api-1813696-read.md)
+- [synchronizeCache](./api-1813702-synchronizecache.md)
+- [unlockPhysicalExtents](./api-1813710-unlockphysicalextents.md)
+- [unmap](./api-1813719-unmap.md)
+- [write](./api-1813725-write.md)
 
 
 ---

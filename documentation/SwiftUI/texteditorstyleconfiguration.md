@@ -1,7 +1,8 @@
 # TextEditorStyleConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The properties of a text editor.
 
@@ -20,19 +21,20 @@ struct TextEditorStyleConfiguration
 
 ## See Also
 
-- [func labelStyle<S>(S) -> some View](view/labelstyle(_:).md)
+### Styling views that display text
+- [func labelStyle<S>(S) -> some View](./view/labelstyle%28_%29.md)
   Sets the style for labels within this view.
-- [protocol LabelStyle](labelstyle.md)
+- [protocol LabelStyle](./labelstyle.md)
   A type that applies a custom appearance to all labels within a view.
-- [struct LabelStyleConfiguration](labelstyleconfiguration.md)
+- [struct LabelStyleConfiguration](./labelstyleconfiguration.md)
   The properties of a label.
-- [func textFieldStyle<S>(S) -> some View](view/textfieldstyle(_:).md)
+- [func textFieldStyle<S>(S) -> some View](./view/textfieldstyle%28_%29.md)
   Sets the style for text fields within this view.
-- [protocol TextFieldStyle](textfieldstyle.md)
+- [protocol TextFieldStyle](./textfieldstyle.md)
   A specification for the appearance and interaction of a text field.
-- [func textEditorStyle(some TextEditorStyle) -> some View](view/texteditorstyle(_:).md)
+- [func textEditorStyle(some TextEditorStyle) -> some View](./view/texteditorstyle%28_%29.md)
   Sets the style for text editors within this view.
-- [protocol TextEditorStyle](texteditorstyle.md)
+- [protocol TextEditorStyle](./texteditorstyle.md)
   A specification for the appearance and interaction of a text editor.
 
 

@@ -1,7 +1,8 @@
 # draftIdentifier
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document draft identifier, if the document hasn’t been materialized on disk yet.
 

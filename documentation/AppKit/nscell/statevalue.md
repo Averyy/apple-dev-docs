@@ -1,12 +1,13 @@
 # NSCell.StateValue
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Constants for specifying a cell’s state and are used mostly for buttons.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14 (renamed: NSControl.StateValue)
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Constants for specifying a cell’s state and are used mostly for buttons.
 typealias StateValue = NSControl.StateValue
 ```
 
+```c
+typedef NSControlStateValue NSCellStateValue;
+```
+
 #### Discussion
 
-These constants are described in [`Cell States`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ControlCell/Concepts/CellStates.html#//apple_ref/doc/uid/20000069).
+These constants are described in [Cell States](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ControlCell/Concepts/CellStates.html#//apple_ref/doc/uid/20000069).
 
 
 ---

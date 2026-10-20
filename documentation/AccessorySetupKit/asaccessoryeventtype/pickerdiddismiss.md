@@ -1,14 +1,15 @@
 # ASAccessoryEventType.pickerDidDismiss
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The discovery session picker dismissed.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,21 +17,26 @@ The discovery session picker dismissed.
 case pickerDidDismiss
 ```
 
+```c
+ASAccessoryEventTypePickerDidDismiss
+```
+
 ## Mentions
 
-- [Discovering and configuring accessories](discovering-and-configuring-accessories.md)
+- [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
 ## See Also
 
-- [ASAccessoryEventType.pickerDidPresent](asaccessoryeventtype/pickerdidpresent.md)
+### Picker events
+- [ASAccessoryEventType.pickerDidPresent](./pickerdidpresent.md)
   The discovery session picker appeared.
-- [ASAccessoryEventType.pickerSetupBridging](asaccessoryeventtype/pickersetupbridging.md)
+- [ASAccessoryEventType.pickerSetupBridging](./pickersetupbridging.md)
   The discovery session picker started bridging with an accessory.
-- [ASAccessoryEventType.pickerSetupPairing](asaccessoryeventtype/pickersetuppairing.md)
+- [ASAccessoryEventType.pickerSetupPairing](./pickersetuppairing.md)
   The discovery session picker started pairing with a Bluetooth accessory.
-- [ASAccessoryEventType.pickerSetupFailed](asaccessoryeventtype/pickersetupfailed.md)
+- [ASAccessoryEventType.pickerSetupFailed](./pickersetupfailed.md)
   The discovery session picker setup failed.
-- [ASAccessoryEventType.pickerSetupRename](asaccessoryeventtype/pickersetuprename.md)
+- [ASAccessoryEventType.pickerSetupRename](./pickersetuprename.md)
   The discovery session picker started renaming an accessory.
 
 

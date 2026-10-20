@@ -1,7 +1,8 @@
 # ChangeDetailsResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response envelope returned by the Get Change History Detail endpoint, wrapping an array of change detail records with pagination metadata.
 
@@ -10,7 +11,7 @@ The response envelope returned by the Get Change History Detail endpoint, wrappi
 
 ## Declaration
 
-```swift
+```
 object ChangeDetailsResponse
 ```
 
@@ -73,23 +74,23 @@ The `ChangeDetailsResponse` object is the response envelope returned by the chan
 
 ## Properties
 
-- `result` ([ChangeDetails]): An array of [`ChangeDetails`](changedetails.md) records. Each record contains the full field-level change history for one API entity within the transaction. Read-only.
-- `pagination` (Pagination): Pagination state for the response. See [`Pagination`](pagination.md). Contains `offset`, `pageSize`, and `totalCount`. Read-only.
-- `error` (ErrorMessage): Present when the request failed. See [`ErrorMessage`](errormessage.md). Contains error details. Read-only.
+- `result` ([ChangeDetails]): An array of [`ChangeDetails`](./changedetails.md) records. Each record contains the full field-level change history for one API entity within the transaction. Read-only.
+- `pagination` (Pagination): Pagination state for the response. See [`Pagination`](./pagination.md). Contains `offset`, `pageSize`, and `totalCount`. Read-only.
+- `error` (ErrorMessage): Present when the request failed. See [`ErrorMessage`](./errormessage.md). Contains error details. Read-only.
 
 ## See Also
 
-- [object ActivityDetail](activitydetail.md)
+- [object ActivityDetail](./activitydetail.md)
   A group of field-level changes that occurred within a single activity context in a change details record.
-- [object AuditSummary](auditsummary.md)
+- [object AuditSummary](./auditsummary.md)
   One row in the query change history response, grouping a single actor’s entity changes in one transaction by entity type and event type.
-- [object AuditSummaryResponse](auditsummaryresponse.md)
+- [object AuditSummaryResponse](./auditsummaryresponse.md)
   The response envelope returned by the Query Change History endpoint, wrapping an array of audit summary rows with pagination metadata.
-- [object BaseAuditResponse](baseauditresponse.md)
+- [object BaseAuditResponse](./baseauditresponse.md)
   Common response envelope fields shared by all change history response objects.
-- [object ChangeDetails](changedetails.md)
+- [object ChangeDetails](./changedetails.md)
   Field-level change record for a single API entity within a transaction.
-- [object ErrorMessage](errormessage.md)
+- [object ErrorMessage](./errormessage.md)
   Error information returned in a change history response when a request fails.
 
 

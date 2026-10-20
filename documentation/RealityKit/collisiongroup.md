@@ -1,7 +1,8 @@
 # CollisionGroup
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A bitmask used to define the collision group to which an entity belongs.
 
@@ -11,7 +12,7 @@ A bitmask used to define the collision group to which an entity belongs.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ struct CollisionGroup
 
 #### Overview
 
-Use collision groups along with [`CollisionFilter`](collisionfilter.md) to define custom collision properties for entities in your scene and to control which entities collide with which others. By default, all entities that participate in the physics simulation collide with all other participating entities. There are times, however, when you need certain entities to not collide with certain other entities, and that’s where collision groups and filters come into play.
+Use collision groups along with [`CollisionFilter`](./collisionfilter.md) to define custom collision properties for entities in your scene and to control which entities collide with which others. By default, all entities that participate in the physics simulation collide with all other participating entities. There are times, however, when you need certain entities to not collide with certain other entities, and that’s where collision groups and filters come into play.
 
 Create individual collision groups using raw bit flag values, like this:
 
@@ -32,7 +33,7 @@ let greenGroup = CollisionGroup(rawValue: 1 << 2)
 let yellowGroup = CollisionGroup(rawValue: 1 << 3)
 ```
 
-Because [`CollisionGroup`](collisiongroup.md) conforms to [`OptionSet`](https://developer.apple.com/documentation/swift/optionset), this allows you to create aggregate groups that encompass multiple individual collision groups, like so:
+Because [`CollisionGroup`](./collisiongroup.md) conforms to [`OptionSet`](../Swift/optionset.md), this allows you to create aggregate groups that encompass multiple individual collision groups, like so:
 
 ```swift
 let blueAndRedGroup = redGroup.union(blueGroup)
@@ -45,7 +46,7 @@ You can also define groups that have all entities except those in specific group
 let allButRedGroup = CollisionGroup.all.subtracting(redGroup)
 ```
 
-Collision groups aren’t assigned directly to entities. Instead, you create a [`CollisionFilter`](collisionfilter.md) for the group, and then assign that filter to all the entities you wish to include in its group. The collision filter’s mask defines which objects the entities in this group collide with, and all entities that share the same filter are part of the same collision group.
+Collision groups aren’t assigned directly to entities. Instead, you create a [`CollisionFilter`](./collisionfilter.md) for the group, and then assign that filter to all the entities you wish to include in its group. The collision filter’s mask defines which objects the entities in this group collide with, and all entities that share the same filter are part of the same collision group.
 
 ```swift
 let allButRedFilter = CollisionFilter(group: redGroup, mask: allButRedGroup)
@@ -55,43 +56,44 @@ redTeamPlayer1.collision?.filter = allButRedFilter
 ## Topics
 
 ### Standard collision groups
-- [static let `default`: CollisionGroup](collisiongroup/default.md)
+- [static let `default`: CollisionGroup](./collisiongroup/default.md)
   The default collision group for objects.
-- [static let all: CollisionGroup](collisiongroup/all.md)
+- [static let all: CollisionGroup](./collisiongroup/all.md)
   The collision group that represents all groups.
-- [static let sceneUnderstanding: CollisionGroup](collisiongroup/sceneunderstanding.md)
+- [static let sceneUnderstanding: CollisionGroup](./collisiongroup/sceneunderstanding.md)
   The default collision group for scene-understanding meshes.
 ### Creating a collision group
-- [init(rawValue: UInt32)](collisiongroup/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./collisiongroup/init%28rawvalue%29.md)
   Creates a collision group from a raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Simulating physics with collisions in your visionOS app](simulating-physics-with-collisions-in-your-visionos-app.md)
+### Collision shapes and groups
+- [Simulating physics with collisions in your visionOS app](./simulating-physics-with-collisions-in-your-visionos-app.md)
   Create entities that behave and react like physical objects in a RealityKit view.
-- [Configuring Collision in RealityKit](configuring-collision-in-realitykit.md)
+- [Configuring Collision in RealityKit](./configuring-collision-in-realitykit.md)
   Use collision groups and collision filters to control which objects collide.
-- [Creating an interactive 3D model in visionOS](../visionos/creating-an-interactable-3d-model-in-visionos.md)
+- [Creating an interactive 3D model in visionOS](../visionOS/creating-an-interactable-3d-model-in-visionos.md)
   Display an interactive car model using gestures in a reality view.
-- [struct CollisionComponent](collisioncomponent.md)
+- [struct CollisionComponent](./collisioncomponent.md)
   A component that gives an entity the ability to collide with other entities that also have collision components.
-- [CollisionComponent.Mode](collisioncomponent/mode-swift.enum.md)
+- [CollisionComponent.Mode](./collisioncomponent/mode-swift.enum.md)
   A mode that dictates how much collision data is collected for a given entity.
-- [class ShapeResource](shaperesource.md)
+- [class ShapeResource](./shaperesource.md)
   A representation of a shape.
-- [enum ShapeResourceError](shaperesourceerror.md)
-- [struct CollisionFilter](collisionfilter.md)
+- [enum ShapeResourceError](./shaperesourceerror.md)
+- [struct CollisionFilter](./collisionfilter.md)
   A set of masks that determine whether entities can collide during simulations.
-- [class TriggerVolume](triggervolume.md)
+- [class TriggerVolume](./triggervolume.md)
   An invisible 3D shape that detects when objects enter or exit a given region of space.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends the Request System Code command, as defined by the FeliCa card specification, to the tag.
@@ -14,7 +15,15 @@ Sends the Request System Code command, as defined by the FeliCa card specificati
 ## Declaration
 
 ```swift
+func requestSystemCode(completionHandler: @escaping @Sendable ([Data], (any Error)?) -> Void)
+```
+
+```swift
 func requestSystemCode() async throws -> [Data]
+```
+
+```objc
+- (void) requestSystemCodeWithCompletionHandler:(void (^)(NSArray<NSData *> *systemCodeList, NSError *error)) completionHandler;
 ```
 
 

@@ -1,7 +1,8 @@
 # stop(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command Stop
 
@@ -17,7 +18,15 @@ Command Stop
 ## Declaration
 
 ```swift
+func stop(with params: MTROvenCavityOperationalStateClusterStopParams?, completion: @escaping @Sendable (MTROvenCavityOperationalStateClusterOperationalCommandResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func stop(with params: MTROvenCavityOperationalStateClusterStopParams?) async throws -> MTROvenCavityOperationalStateClusterOperationalCommandResponseParams
+```
+
+```objc
+- (void) stopWithParams:(MTROvenCavityOperationalStateClusterStopParams *) params completion:(void (^)(MTROvenCavityOperationalStateClusterOperationalCommandResponseParams *data, NSError *error)) completion;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # calendarChooserDidCancel(_:)
 
 **Framework**: EventKit UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent when the user cancels a calendar selection.
 
@@ -17,15 +18,20 @@ Sent when the user cancels a calendar selection.
 optional func calendarChooserDidCancel(_ calendarChooser: EKCalendarChooser)
 ```
 
+```objc
+- (void) calendarChooserDidCancel:(EKCalendarChooser *) calendarChooser;
+```
+
 ## Parameters
 
 - `calendarChooser`: The calendar chooser that sent this message.
 
 ## See Also
 
-- [func calendarChooserDidFinish(EKCalendarChooser)](ekcalendarchooserdelegate/calendarchooserdidfinish(_:).md)
+### Selecting Calendars
+- [func calendarChooserDidFinish(EKCalendarChooser)](./calendarchooserdidfinish%28_%29.md)
   Sent when a user selects one or more calendars.
-- [func calendarChooserSelectionDidChange(EKCalendarChooser)](ekcalendarchooserdelegate/calendarchooserselectiondidchange(_:).md)
+- [func calendarChooserSelectionDidChange(EKCalendarChooser)](./calendarchooserselectiondidchange%28_%29.md)
   Sent when a user changes the selection.
 
 

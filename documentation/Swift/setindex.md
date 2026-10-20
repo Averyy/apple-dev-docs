@@ -1,7 +1,8 @@
 # SetIndex
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 8.0+
@@ -20,10 +21,11 @@ typealias SetIndex<Element> = Set<Element>.Index where Element : Hashable
 
 ## See Also
 
-- [typealias DictionaryIndex](dictionaryindex.md)
-- [typealias CountableClosedRange](countableclosedrange.md)
-- [typealias CountablePartialRangeFrom](countablepartialrangefrom.md)
-- [typealias CountableRange](countablerange.md)
+### Deprecated
+- [typealias DictionaryIndex](./dictionaryindex.md)
+- [typealias CountableClosedRange](./countableclosedrange.md)
+- [typealias CountablePartialRangeFrom](./countablepartialrangefrom.md)
+- [typealias CountableRange](./countablerange.md)
 
 
 ---

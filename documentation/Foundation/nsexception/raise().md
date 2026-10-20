@@ -1,7 +1,8 @@
 # raise()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Raises the receiver, causing program flow to jump to the local exception handler.
 
@@ -20,15 +21,20 @@ Raises the receiver, causing program flow to jump to the local exception handler
 func raise()
 ```
 
+```objc
+- (void) raise;
+```
+
 #### Discussion
 
 When there are no exception handlers in the exception handler stack, unless the exception is raised during the posting of a notification, this method calls the uncaught exception handler, in which last-minute logging can be performed. The program then terminates, regardless of the actions taken by the uncaught exception handler.
 
 ## See Also
 
-- [class func raise(NSExceptionName, format: String, arguments: CVaListPointer)](nsexception/raise(_:format:arguments:).md)
+### Creating and Raising an NSException Object
+- [class func raise(NSExceptionName, format: String, arguments: CVaListPointer)](./raise%28_,format,arguments%29.md)
   Creates and raises an exception with the specified name, reason, and arguments.
-- [init(name: NSExceptionName, reason: String?, userInfo: [AnyHashable : Any]?)](nsexception/init(name:reason:userinfo:).md)
+- [init(name: NSExceptionName, reason: String?, userInfo: [AnyHashable : Any]?)](./init%28name,reason,userinfo%29.md)
   Initializes and returns a newly allocated exception object.
 
 

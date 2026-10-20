@@ -1,17 +1,22 @@
 # objectID
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the IOBluetoothObjectID of the given IOBluetoothL2CAPChannel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var objectID: IOBluetoothObjectID { get }
+```
+
+```objc
+@property (assign, readonly) IOBluetoothObjectID objectID;
 ```
 
 #### Discussion

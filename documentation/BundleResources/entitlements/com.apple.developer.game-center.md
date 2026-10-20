@@ -1,7 +1,8 @@
 # Game Center Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether users of the app may see and compare achievements on a leaderboard, invite friends, and start multiplayer games.
 
@@ -12,9 +13,10 @@ A Boolean value that indicates whether users of the app may see and compare achi
 - macOS 10.8+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.game-center` (Game Center)
+- **Type**: boolean
 
 #### Discussion
 
@@ -22,7 +24,8 @@ To add this entitlement to your app, enable the Game Center capability in Xcode.
 
 ## See Also
 
-- [Initializing and configuring Game Center](../gamekit/initializing-and-configuring-game-center.md)
+### Related Documentation
+- [Initializing and configuring Game Center](../../GameKit/initializing-and-configuring-game-center.md)
   Enable Game Center, configure features, and test them locally in your Xcode project.
 
 

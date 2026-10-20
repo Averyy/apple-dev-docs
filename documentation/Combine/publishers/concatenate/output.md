@@ -1,7 +1,8 @@
 # Publishers.Concatenate.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher uses its source publishers’ output type.
 
 ## See Also
 
-- [Publishers.Concatenate.Failure](publishers/concatenate/failure.md)
+### Declaring supporting types
+- [Publishers.Concatenate.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

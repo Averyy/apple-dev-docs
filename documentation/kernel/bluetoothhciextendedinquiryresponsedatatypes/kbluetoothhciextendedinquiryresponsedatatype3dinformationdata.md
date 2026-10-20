@@ -1,14 +1,15 @@
 # kBluetoothHCIExtendedInquiryResponseDataType3DInformationData
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIExtendedInquiryResponseDataType3DInformationData = 0x3D
 ```
 

@@ -1,7 +1,8 @@
 # HKMedicationDoseEvent.LogStatus.notLogged
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The person undoes a previously logged medication status.
 
@@ -17,6 +18,10 @@ The person undoes a previously logged medication status.
 
 ```swift
 case notLogged
+```
+
+```c
+HKMedicationDoseEventLogStatusNotLogged
 ```
 
 #### Discussion

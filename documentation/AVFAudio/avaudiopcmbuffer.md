@@ -1,7 +1,8 @@
 # AVAudioPCMBuffer
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents an audio buffer you use with PCM audio formats.
 
@@ -20,6 +21,10 @@ An object that represents an audio buffer you use with PCM audio formats.
 class AVAudioPCMBuffer
 ```
 
+```objc
+@interface AVAudioPCMBuffer : AVAudioBuffer
+```
+
 #### Overview
 
 The PCM buffer class provides methods that are useful for manipulating buffers of audio in PCM format.
@@ -27,75 +32,76 @@ The PCM buffer class provides methods that are useful for manipulating buffers o
 ## Topics
 
 ### Creating a PCM audio buffer
-- [init?(pcmFormat: AVAudioFormat, frameCapacity: AVAudioFrameCount)](avaudiopcmbuffer/init(pcmformat:framecapacity:)-5jhd5.md)
+- [init?(pcmFormat: AVAudioFormat, frameCapacity: AVAudioFrameCount)](./avaudiopcmbuffer/init%28pcmformat,framecapacity%29-5jhd5.md)
   Creates a PCM audio buffer instance for PCM audio data.
-- [init?(pcmFormat: AVAudioFormat, bufferListNoCopy: UnsafePointer<AudioBufferList>, deallocator: ((UnsafePointer<AudioBufferList>) -> Void)?)](avaudiopcmbuffer/init(pcmformat:bufferlistnocopy:deallocator:)-9iwe7.md)
+- [init?(pcmFormat: AVAudioFormat, bufferListNoCopy: UnsafePointer<AudioBufferList>, deallocator: ((UnsafePointer<AudioBufferList>) -> Void)?)](./avaudiopcmbuffer/init%28pcmformat,bufferlistnocopy,deallocator%29-9iwe7.md)
   Creates a PCM audio buffer instance without copying samples, for PCM audio data, with a specified buffer list and a deallocator closure.
-- [convenience init(copying: AVAudioPCMBuffer)](avaudiopcmbuffer/init(copying:)-68es5.md)
+- [convenience init(copying: AVAudioPCMBuffer)](./avaudiopcmbuffer/init%28copying%29-68es5.md)
   Creates a mutable buffer by copying another PCM buffer’s audio data.
-- [convenience init(copying: AVReadOnlyAudioPCMBuffer)](avaudiopcmbuffer/init(copying:)-875xm.md)
+- [convenience init(copying: AVReadOnlyAudioPCMBuffer)](./avaudiopcmbuffer/init%28copying%29-875xm.md)
   Creates a mutable buffer by copying a read-only buffer’s audio data.
 ### Managing the frame length
-- [var frameLength: AVAudioFrameCount](avaudiopcmbuffer/framelength.md)
+- [var frameLength: AVAudioFrameCount](./avaudiopcmbuffer/framelength.md)
   The current number of valid sample frames in the buffer.
 ### Accessing PCM buffer data
-- [func channelData(Int) -> AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata(_:).md)
+- [func channelData(Int) -> AVAudioPCMBuffer.ChannelData](./avaudiopcmbuffer/channeldata%28_%29.md)
   Returns read-only access to a specific channel’s data.
-- [func mutableChannelData(Int) -> AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata(_:).md)
+- [func mutableChannelData(Int) -> AVAudioPCMBuffer.MutableChannelData](./avaudiopcmbuffer/mutablechanneldata%28_%29.md)
   Returns mutable access to a specific channel’s data.
-- [func withUnsafeAudioBufferList<R>((UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R](avaudiopcmbuffer/withunsafeaudiobufferlist(_:).md)
+- [func withUnsafeAudioBufferList<R>((UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R](./avaudiopcmbuffer/withunsafeaudiobufferlist%28_%29.md)
   Provides scoped read-only access to the audio buffer list.
-- [var floatChannelData: UnsafePointer<UnsafeMutablePointer<Float>>?](avaudiopcmbuffer/floatchanneldata.md)
+- [var floatChannelData: UnsafePointer<UnsafeMutablePointer<Float>>?](./avaudiopcmbuffer/floatchanneldata.md)
   The buffer’s audio samples as floating point values.
-- [var frameCapacity: AVAudioFrameCount](avaudiopcmbuffer/framecapacity.md)
+- [var frameCapacity: AVAudioFrameCount](./avaudiopcmbuffer/framecapacity.md)
   The buffer’s capacity, in audio sample frames.
-- [var int16ChannelData: UnsafePointer<UnsafeMutablePointer<Int16>>?](avaudiopcmbuffer/int16channeldata.md)
+- [var int16ChannelData: UnsafePointer<UnsafeMutablePointer<Int16>>?](./avaudiopcmbuffer/int16channeldata.md)
   The buffer’s 16-bit integer audio samples.
-- [var int32ChannelData: UnsafePointer<UnsafeMutablePointer<Int32>>?](avaudiopcmbuffer/int32channeldata.md)
+- [var int32ChannelData: UnsafePointer<UnsafeMutablePointer<Int32>>?](./avaudiopcmbuffer/int32channeldata.md)
   The buffer’s 32-bit integer audio samples.
-- [var stride: Int](avaudiopcmbuffer/stride.md)
+- [var stride: Int](./avaudiopcmbuffer/stride.md)
   The buffer’s number of interleaved channels.
-- [AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata.md)
+- [AVAudioPCMBuffer.ChannelData](./avaudiopcmbuffer/channeldata.md)
   Represents read-only channel data.
-- [AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata.md)
+- [AVAudioPCMBuffer.MutableChannelData](./avaudiopcmbuffer/mutablechanneldata.md)
   Represents mutable channel data.
 ### Initializers
-- [init?(PCMFormat: AVAudioFormat, bufferListNoCopy: UnsafePointer<AudioBufferList>, deallocator: ((UnsafePointer<AudioBufferList>) -> Void)?)](avaudiopcmbuffer/init(pcmformat:bufferlistnocopy:deallocator:)-2ms1j.md)
-- [init?(PCMFormat: AVAudioFormat, frameCapacity: AVAudioFrameCount)](avaudiopcmbuffer/init(pcmformat:framecapacity:)-7scyk.md)
+- [init?(PCMFormat: AVAudioFormat, bufferListNoCopy: UnsafePointer<AudioBufferList>, deallocator: ((UnsafePointer<AudioBufferList>) -> Void)?)](./avaudiopcmbuffer/init%28pcmformat,bufferlistnocopy,deallocator%29-2ms1j.md)
+- [init?(PCMFormat: AVAudioFormat, frameCapacity: AVAudioFrameCount)](./avaudiopcmbuffer/init%28pcmformat,framecapacity%29-7scyk.md)
 
 ## Relationships
 
 ### Inherits From
-- [AVAudioBuffer](avaudiobuffer.md)
+- [AVAudioBuffer](./avaudiobuffer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVAudioFile](avaudiofile.md)
+### Audio data
+- [class AVAudioFile](./avaudiofile.md)
   An object that represents an audio file that the system can open for reading or writing.
-- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
+- [class AVAudioCompressedBuffer](./avaudiocompressedbuffer.md)
   An object that represents an audio buffer that you use for compressed audio formats.
-- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+- [struct AVReadOnlyAudioPCMBuffer](./avreadonlyaudiopcmbuffer.md)
   A read-only, Sendable audio buffer for safe concurrent access.
-- [class AVAudioBuffer](avaudiobuffer.md)
+- [class AVAudioBuffer](./avaudiobuffer.md)
   An object that represents a buffer of audio data with a format.
-- [class AVAudioFormat](avaudioformat.md)
+- [class AVAudioFormat](./avaudioformat.md)
   An object that describes the representation of an audio format.
-- [class AVAudioChannelLayout](avaudiochannellayout.md)
+- [class AVAudioChannelLayout](./avaudiochannellayout.md)
   An object that describes the roles of a set of audio channels.
-- [class AVAudioConverter](avaudioconverter.md)
+- [class AVAudioConverter](./avaudioconverter.md)
   An object that converts streams of audio between formats.
-- [class AVAudioTime](avaudiotime.md)
+- [class AVAudioTime](./avaudiotime.md)
   An object you use to represent a moment in time.
-- [Audio settings](audio-settings.md)
+- [Audio settings](./audio-settings.md)
   Configure audio processing settings using standard key and value constants.
 
 

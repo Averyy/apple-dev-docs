@@ -1,19 +1,26 @@
 # splitViewController(_:willHide:with:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the specified view controller is about to be hidden.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 8.0
+- iPadOS 2.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Implement the [`splitViewController(_:willChangeTo:)`](./splitviewcontroller%28_,willchangeto%29.md) method instead.
 
 ## Declaration
 
 ```swift
 optional func splitViewController(_ svc: UISplitViewController, willHide aViewController: UIViewController, with barButtonItem: UIBarButtonItem, for pc: UIPopoverController)
+```
+
+```objc
+- (void) splitViewController:(UISplitViewController *) svc willHideViewController:(UIViewController *) aViewController withBarButtonItem:(UIBarButtonItem *) barButtonItem forPopoverController:(UIPopoverController *) pc;
 ```
 
 #### Discussion
@@ -29,11 +36,12 @@ When the split view controller rotates from a landscape to portrait orientation,
 
 ## See Also
 
-- [func splitViewController(UISplitViewController, shouldHide: UIViewController, in: UIInterfaceOrientation) -> Bool](uisplitviewcontrollerdelegate/splitviewcontroller(_:shouldhide:in:).md)
+### Deprecated
+- [func splitViewController(UISplitViewController, shouldHide: UIViewController, in: UIInterfaceOrientation) -> Bool](./splitviewcontroller%28_,shouldhide,in%29.md)
   Asks the delegate whether the first view controller should be hidden for the specified orientation.
-- [func splitViewController(UISplitViewController, willShow: UIViewController, invalidating: UIBarButtonItem)](uisplitviewcontrollerdelegate/splitviewcontroller(_:willshow:invalidating:).md)
+- [func splitViewController(UISplitViewController, willShow: UIViewController, invalidating: UIBarButtonItem)](./splitviewcontroller%28_,willshow,invalidating%29.md)
   Tells the delegate that the specified view controller is about to be shown again.
-- [func splitViewController(UISplitViewController, popoverController: UIPopoverController, willPresent: UIViewController)](uisplitviewcontrollerdelegate/splitviewcontroller(_:popovercontroller:willpresent:).md)
+- [func splitViewController(UISplitViewController, popoverController: UIPopoverController, willPresent: UIViewController)](./splitviewcontroller%28_,popovercontroller,willpresent%29.md)
   Tells the delegate that the hidden view controller is about to be displayed in a popover.
 
 

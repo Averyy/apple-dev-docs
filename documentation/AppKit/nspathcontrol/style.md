@@ -1,12 +1,13 @@
 # NSPathControl.Style
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 `NSPathStyle` constants represent the different visual and behavioral styles an `NSPathControl` or `NSPathCell` object can have.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,27 @@
 enum Style
 ```
 
+```c
+enum NSPathStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSPathControl.Style.standard](nspathcontrol/style/standard.md)
-- [NSPathControl.Style.popUp](nspathcontrol/style/popup.md)
+- [NSPathControl.Style.standard](./style/standard.md)
+- [NSPathControl.Style.popUp](./style/popup.md)
 ### Initializers
-- [init?(rawValue: Int)](nspathcontrol/style/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

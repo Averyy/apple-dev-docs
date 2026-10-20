@@ -1,7 +1,8 @@
 # style(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a shading instance that fills with the given shape style.
 
@@ -26,15 +27,16 @@ A shading instance filled with a shape style.
 
 #### Discussion
 
-Styles with geometry defined in a unit coordinate space map that space to the rectangle associated with the drawn object. You can adjust that using the [`in(_:)`](shapestyle/in(_:).md) method. The shape style might affect the blend mode and opacity of the drawn object.
+Styles with geometry defined in a unit coordinate space map that space to the rectangle associated with the drawn object. You can adjust that using the [`in(_:)`](../../shapestyle/in%28_%29.md) method. The shape style might affect the blend mode and opacity of the drawn object.
 
 ## Parameters
 
-- `style`: A [`ShapeStyle`](shapestyle.md) instance to draw with.
+- `style`: A [`ShapeStyle`](../../shapestyle.md) instance to draw with.
 
 ## See Also
 
-- [static var foreground: GraphicsContext.Shading](graphicscontext/shading/foreground.md)
+### Other shape styles
+- [static var foreground: GraphicsContext.Shading](./foreground.md)
   A shading instance that fills with the foreground style from the graphics context’s environment.
 
 

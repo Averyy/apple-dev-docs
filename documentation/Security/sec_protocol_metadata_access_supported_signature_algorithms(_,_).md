@@ -1,7 +1,8 @@
 # sec_protocol_metadata_access_supported_signature_algorithms(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_protocol_metadata_access_supported_signature_algorithms(_ metadata: sec_protocol_metadata_t, _ handler: @escaping (UInt16) -> Void) -> Bool
+```
+
+```c
+bool sec_protocol_metadata_access_supported_signature_algorithms(sec_protocol_metadata_t metadata, void (^handler)(uint16_t signature_algorithm));
 ```
 
 #### Return Value

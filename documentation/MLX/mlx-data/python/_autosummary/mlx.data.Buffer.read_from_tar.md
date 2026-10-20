@@ -6,23 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.Buffer.read_from_tar
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.data.Buffer.read_from_tar.rst)
-- **
-
-.pdf
-
-**
-
-# mlx.data.Buffer.read_from_tar
-
- Table of contents 
-
-## Contents
-
-# mlx.data.Buffer.read_from_tar
-
 **Buffer.read_from_tar(*self: mlx.data._c.Buffer*, *tarkey: str*, *ikey: str*, *okey: str*, *prefix: os.PathLike = ''*, *tar_prefix: os.PathLike = ''*, *from_key: bool = False*, *file_fetcher: mlx::data::core::FileFetcher = None*, *nested: bool = False*, *num_threads: int = 1*) → mlx.data._c.Buffer**
 : Read data from tarfiles.
 This function reads whole files from one or many tarfiles. It is
@@ -54,5 +37,3 @@ read the tar files possibly from a remote location.
 expand them inline. (default: False)
 **num_threads** ([int](https://docs.python.org/3/library/functions.html#int)) – When `nested` is True use that many parallel
 threads to index the nested archives. (default: 1)
-
-** Contents

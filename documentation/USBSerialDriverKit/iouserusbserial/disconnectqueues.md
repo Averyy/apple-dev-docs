@@ -1,7 +1,8 @@
 # DisconnectQueues
 
 **Framework**: USBSerialDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Releases the buffers that manage data moving to and from the device.
 
@@ -10,13 +11,13 @@ Releases the buffers that manage data moving to and from the device.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t DisconnectQueues();
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -24,7 +25,8 @@ During the cleanup of your driver, call this method to disconnect the data queue
 
 ## See Also
 
-- [ConnectQueues](iouserusbserial/connectqueues.md)
+### Configuring the Serial Data Queues
+- [ConnectQueues](./connectqueues.md)
   Creates and configures the buffers that store the data moving to and from the device.
 
 

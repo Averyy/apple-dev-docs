@@ -1,17 +1,22 @@
 # title
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title displayed on the button when it’s in its normal state.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var title: String! { get set }
+```
+
+```objc
+@property (copy, null_resettable) NSString * title;
 ```
 
 #### Discussion
@@ -20,15 +25,17 @@ If the button doesn’t display a title, the value of this property is the empty
 
 ## See Also
 
-- [var font: NSFont?](nscell/font.md)
+### Related Documentation
+- [var font: NSFont?](../nscell/font.md)
   The font that the cell uses to display text.
-- [func setButtonType(NSButton.ButtonType)](nsbuttoncell/setbuttontype(_:).md)
+- [func setButtonType(NSButton.ButtonType)](./setbuttontype%28_%29.md)
   Sets how the button highlights while pressed and how it shows its state.
-- [var alternateTitle: String](nsbuttoncell/alternatetitle.md)
+### Setting Titles
+- [var alternateTitle: String](./alternatetitle.md)
   The string displayed by the button when it’s in its alternate state.
-- [var attributedAlternateTitle: NSAttributedString](nsbuttoncell/attributedalternatetitle.md)
+- [var attributedAlternateTitle: NSAttributedString](./attributedalternatetitle.md)
   The title displayed by the button when it’s in its alternate state, as an attributed string.
-- [var attributedTitle: NSAttributedString](nsbuttoncell/attributedtitle.md)
+- [var attributedTitle: NSAttributedString](./attributedtitle.md)
   The title displayed by the button when it’s in its normal state as an attributed string.
 
 

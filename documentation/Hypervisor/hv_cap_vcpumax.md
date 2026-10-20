@@ -1,12 +1,13 @@
 # HV_CAP_VCPUMAX
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value that indicates the maximum number of available vCPUs.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,14 @@ A value that indicates the maximum number of available vCPUs.
 var HV_CAP_VCPUMAX: Int { get }
 ```
 
+```c
+HV_CAP_VCPUMAX
+```
+
 ## See Also
 
-- [var HV_CAP_ADDRSPACEMAX: Int](hv_cap_addrspacemax.md)
+### Capabilities
+- [var HV_CAP_ADDRSPACEMAX: Int](./hv_cap_addrspacemax.md)
   A value that indicates the maximum number of available address spaces.
 
 

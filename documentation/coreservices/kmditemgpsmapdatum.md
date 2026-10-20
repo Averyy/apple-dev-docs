@@ -1,7 +1,8 @@
 # kMDItemGPSMapDatum
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kMDItemGPSMapDatum: CFString!
+```
+
+```c
+const CFStringRef kMDItemGPSMapDatum;
 ```
 
 

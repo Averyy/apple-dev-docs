@@ -1,7 +1,8 @@
 # PlaygroundLiveViewRepresentation.view(_:)
 
 **Framework**: Playground Support  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 An AppKit view that's displayed as the live view.
 
@@ -21,7 +22,8 @@ This view must be the root of a view hierarchy (it must not have a superview), a
 
 ## See Also
 
-- [PlaygroundLiveViewRepresentation.viewController(_:)](playgroundliveviewrepresentation/viewcontroller-uej.md)
+### Displaying AppKit Views
+- [PlaygroundLiveViewRepresentation.viewController(_:)](./viewcontroller-uej.md)
   An AppKit view controller whose view is displayed as the live view.
 
 

@@ -1,7 +1,8 @@
 # lastRenderTime
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +18,10 @@
 var lastRenderTime: AVAudioTime? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) AVAudioTime * lastRenderTime;
+```
+
 #### Discussion
 
 Obtain the time for which the engine most recently rendered.
@@ -25,15 +30,16 @@ Will return nil if the engine is not running
 
 ## See Also
 
-- [func pause()](phaseengine/pause.md)
+### Controlling and Inspecting Playback State
+- [func pause()](./pause%28%29.md)
   Pauses all audio playback.
-- [func start() throws](phaseengine/start.md)
+- [func start() throws](./start%28%29.md)
   Starts or resumes all audio playback.
-- [func stop()](phaseengine/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops all audio playback.
-- [func update()](phaseengine/update.md)
+- [func update()](./update%28%29.md)
   Processes app commands and increments framework processing.
-- [var renderingState: PHASESoundEvent.RenderingState](phaseengine/renderingstate.md)
+- [var renderingState: PHASESoundEvent.RenderingState](./renderingstate.md)
   The status of the engine’s audio playback.
 
 

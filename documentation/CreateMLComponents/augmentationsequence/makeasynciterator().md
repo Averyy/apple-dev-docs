@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -22,7 +23,8 @@ func makeAsyncIterator() -> AugmentationSequence<Base, RandomTransformer, Random
 
 ## See Also
 
-- [AugmentationSequence.Element](augmentationsequence/element.md)
+### Creating an iterator
+- [AugmentationSequence.Element](./element.md)
   The type of element produced by this asynchronous sequence.
 
 

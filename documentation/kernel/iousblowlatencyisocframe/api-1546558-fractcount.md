@@ -1,7 +1,8 @@
 # frActCount
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The actual number of bytes that were transferred.
 
@@ -10,17 +11,18 @@ The actual number of bytes that were transferred.
 
 ## Declaration
 
-```swift
+```c
 UInt16 frActCount;
 ```
 
 ## See Also
 
-- [frReqCount](iousblowlatencyisocframe/1546127-frreqcount.md)
+### Getting the Properties
+- [frReqCount](./api-1546127-frreqcount.md)
   Input specifiying the number of bytes to read or write.
-- [frStatus](iousblowlatencyisocframe/1546079-frstatus.md)
+- [frStatus](./api-1546079-frstatus.md)
   The status of the frame.
-- [frTimeStamp](iousblowlatencyisocframe/1546493-frtimestamp.md)
+- [frTimeStamp](./api-1546493-frtimestamp.md)
   A timestamp that indicates when the system processed the frame.
 
 

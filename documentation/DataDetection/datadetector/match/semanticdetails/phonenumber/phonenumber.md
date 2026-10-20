@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that contains the phone number the data detector found.
 
@@ -26,7 +27,8 @@ The string may also contain an extension, such as a passcode or an office extens
 
 ## See Also
 
-- [let label: String?](datadetector/match/semanticdetails/phonenumber/label.md)
+### Components of a phone number
+- [let label: String?](./label.md)
   An optional string that may contain a value suitable to populate a label when creating a contact.
 
 

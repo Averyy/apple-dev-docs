@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothAirModeALawLog](1639975-anonymous/kbluetoothairmodealawlog.md)
-- [kBluetoothAirModeCVSD](1639975-anonymous/kbluetoothairmodecvsd.md)
-- [kBluetoothAirModeTransparentData](1639975-anonymous/kbluetoothairmodetransparentdata.md)
-- [kBluetoothAirModeULawLog](1639975-anonymous/kbluetoothairmodeulawlog.md)
+- [kBluetoothAirModeALawLog](./api-1639975-anonymous/kbluetoothairmodealawlog.md)
+- [kBluetoothAirModeCVSD](./api-1639975-anonymous/kbluetoothairmodecvsd.md)
+- [kBluetoothAirModeTransparentData](./api-1639975-anonymous/kbluetoothairmodetransparentdata.md)
+- [kBluetoothAirModeULawLog](./api-1639975-anonymous/kbluetoothairmodeulawlog.md)
 
 
 ---

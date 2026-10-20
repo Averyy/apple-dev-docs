@@ -1,7 +1,8 @@
 # bundleIdentifier
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique bundle identifier of the app.
 
@@ -15,11 +16,16 @@ The unique bundle identifier of the app.
 var bundleIdentifier: String { get }
 ```
 
+```objc
+@property (readonly) NSString * bundleIdentifier;
+```
+
 ## See Also
 
-- [var processID: pid_t](scrunningapplication/processid.md)
+### Inspecting an app
+- [var processID: pid_t](./processid.md)
   The system process identifier of the app.
-- [var applicationName: String](scrunningapplication/applicationname.md)
+- [var applicationName: String](./applicationname.md)
   The display name of the app.
 
 

@@ -1,7 +1,8 @@
 # SVGScriptElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGScriptElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [type](svgscriptelement/1632142-type.md)
+- [type](./svgscriptelement/api-1632142-type.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # setPreferredIOBufferDuration(_:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the preferred audio I/O buffer duration.
 
@@ -18,9 +19,13 @@ Sets the preferred audio I/O buffer duration.
 func setPreferredIOBufferDuration(_ duration: TimeInterval) throws
 ```
 
+```objc
+- (BOOL) setPreferredIOBufferDuration:(NSTimeInterval) duration error:(NSError **) outError;
+```
+
 #### Discussion
 
-This method requests a change to the I/O buffer duration. To determine whether the change has taken effect, use the [`ioBufferDuration`](avaudiosession/iobufferduration.md) property.
+This method requests a change to the I/O buffer duration. To determine whether the change has taken effect, use the [`ioBufferDuration`](./iobufferduration.md) property.
 
 The audio I/O buffer duration is the number of seconds for a single audio input/output cycle. For example, with an I/O buffer duration of 0.005 s, on each audio I/O cycle:
 
@@ -37,9 +42,10 @@ You can set a preferred I/O buffer duration before or after activating the audio
 
 ## See Also
 
-- [var ioBufferDuration: TimeInterval](avaudiosession/iobufferduration.md)
+### Configuring I/O buffer duration
+- [var ioBufferDuration: TimeInterval](./iobufferduration.md)
   The current I/O buffer duration, in seconds.
-- [var preferredIOBufferDuration: TimeInterval](avaudiosession/preferrediobufferduration.md)
+- [var preferredIOBufferDuration: TimeInterval](./preferrediobufferduration.md)
   The preferred I/O buffer duration, in seconds.
 
 

@@ -1,7 +1,8 @@
 # withMutableUniforms(ofType:stage:_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the given closure with an inout reference to the underlying storage bound to the custom uniforms argument of a surface shader or geometry modifier.
 
@@ -94,12 +95,13 @@ Material Functions support one additional argument buffer parameter like this, p
 
 ## See Also
 
-- [var program: CustomMaterial.Program](custommaterial/program-swift.property.md)
-- [var custom: CustomMaterial.Custom](custommaterial/custom-swift.property.md)
+### Setting shader properties
+- [var program: CustomMaterial.Program](./program-swift.property.md)
+- [var custom: CustomMaterial.Custom](./custom-swift.property.md)
   User-defined properties for the material’s shader functions.
-- [var lightingModel: CustomMaterial.LightingModel](custommaterial/lightingmodel-swift.property.md)
+- [var lightingModel: CustomMaterial.LightingModel](./lightingmodel-swift.property.md)
   The lighting model that the material uses.
-- [func withMutableUniforms<UniformsType>(ofType: UniformsType.Type, (inout UniformsType, inout CustomMaterial.ResourceStorage<UniformsType>) -> Void)](custommaterial/withmutableuniforms(oftype:_:).md)
+- [func withMutableUniforms<UniformsType>(ofType: UniformsType.Type, (inout UniformsType, inout CustomMaterial.ResourceStorage<UniformsType>) -> Void)](./withmutableuniforms%28oftype,_%29.md)
   Calls the given closure with an inout reference to the underlying storage bound to the custom uniforms argument of a surface shader and geometry modifier.
 
 

@@ -1,7 +1,8 @@
 # init(isOn:intent:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toggle performing an `AppIntent`.
 
@@ -20,6 +21,8 @@ nonisolated
 init<I>(isOn: Bool, intent: I, @ViewBuilder label: () -> Label) where I : AppIntent
 ```
 
+Available when `Label` conforms to `View`.
+
 ## Parameters
 
 - `isOn`: Whether the toggle is on or off.
@@ -28,7 +31,8 @@ init<I>(isOn: Bool, intent: I, @ViewBuilder label: () -> Label) where I : AppInt
 
 ## See Also
 
-- [init(_:isOn:intent:)](toggle/init(_:ison:intent:).md)
+### Creating a toggle for an App Intent
+- [init(_:isOn:intent:)](./init%28_,ison,intent%29.md)
   Creates a toggle performing an `AppIntent` and generates its label from a localized string key.
 
 

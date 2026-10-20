@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 Properties you use to customize how an arrangement presents views.
@@ -21,11 +22,12 @@ associatedtype ViewProperties
 
 #### Discussion
 
-For more information on configuring arrangements with view properties, refer to specific implementations such as [`UIOverlayArrangement`](uioverlayarrangement-swift.struct.md) or [`UISplitArrangement`](uisplitarrangement-swift.struct.md).
+For more information on configuring arrangements with view properties, refer to specific implementations such as [`UIOverlayArrangement`](../../uioverlayarrangement-swift.struct.md) or [`UISplitArrangement`](../../uisplitarrangement-swift.struct.md).
 
 ## See Also
 
-- [var defaultViewProperties: Self.ViewProperties](uiarrangementviewcontroller/arrangement/defaultviewproperties.md)
+### Getting the default view properties
+- [var defaultViewProperties: Self.ViewProperties](./defaultviewproperties.md)
   The default view properties for a view controller placed in the arrangement.
 
 

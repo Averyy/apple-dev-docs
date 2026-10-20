@@ -1,7 +1,8 @@
 # wrappingKey
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The secret key used to encrypt the asset.
 
@@ -10,7 +11,7 @@ The secret key used to encrypt the asset.
 
 ## Declaration
 
-```swift
+```
 attribute string? wrappingKey;
 ```
 

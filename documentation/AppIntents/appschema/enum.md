@@ -1,7 +1,8 @@
 # AppSchema.Enum
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,24 +22,24 @@ struct Enum
 ## Relationships
 
 ### Conforms To
-- [AppSchema.AudioEnum](appschema/audioenum.md)
-- [AppSchema.BooksEnum](appschema/booksenum.md)
-- [AppSchema.BrowserEnum](appschema/browserenum.md)
-- [AppSchema.CalendarEnum](appschema/calendarenum.md)
-- [AppSchema.CameraEnum](appschema/cameraenum.md)
-- [AppSchema.ClockEnum](appschema/clockenum.md)
-- [AppSchema.Kind](appschema/kind.md)
-- [AppSchema.MailEnum](appschema/mailenum.md)
-- [AppSchema.MapsEnum](appschema/mapsenum.md)
-- [AppSchema.MessagesEnum](appschema/messagesenum.md)
-- [AppSchema.PhoneEnum](appschema/phoneenum.md)
-- [AppSchema.PhotosEnum](appschema/photosenum.md)
-- [AppSchema.ReaderEnum](appschema/readerenum.md)
-- [AppSchema.RemindersEnum](appschema/remindersenum.md)
-- [AppSchema.WhiteboardEnum](appschema/whiteboardenum.md)
-- [AppSchemaEnum](appschemaenum.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [AppSchema.AudioEnum](./audioenum.md)
+- [AppSchema.BooksEnum](./booksenum.md)
+- [AppSchema.BrowserEnum](./browserenum.md)
+- [AppSchema.CalendarEnum](./calendarenum.md)
+- [AppSchema.CameraEnum](./cameraenum.md)
+- [AppSchema.ClockEnum](./clockenum.md)
+- [AppSchema.Kind](./kind.md)
+- [AppSchema.MailEnum](./mailenum.md)
+- [AppSchema.MapsEnum](./mapsenum.md)
+- [AppSchema.MessagesEnum](./messagesenum.md)
+- [AppSchema.PhoneEnum](./phoneenum.md)
+- [AppSchema.PhotosEnum](./photosenum.md)
+- [AppSchema.ReaderEnum](./readerenum.md)
+- [AppSchema.RemindersEnum](./remindersenum.md)
+- [AppSchema.WhiteboardEnum](./whiteboardenum.md)
+- [AppSchemaEnum](../appschemaenum.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # PersonalRecommendation.Relationships
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships for a recommendation resource.
 
@@ -10,23 +11,26 @@ The relationships for a recommendation resource.
 
 ## Declaration
 
-```swift
+```
 object PersonalRecommendation.Relationships
 ```
 
 ## Topics
 
 ### Related Objects
-- [object PersonalRecommendation.Relationships.PersonalRecommendationContentsRelationship](personalrecommendation/relationships-data.dictionary/personalrecommendationcontentsrelationship.md)
+- [object PersonalRecommendation.Relationships.PersonalRecommendationContentsRelationship](./relationships-data.dictionary/personalrecommendationcontentsrelationship.md)
   A relationship from the recommendation to its recommended content.
 
 ## Properties
 
-- `contents` (PersonalRecommendation.Relationships.PersonalRecommendationContentsRelationship): The contents associated with the content recommendation type. By default, `contents` includes objects. Fetch limits: 10 default, 10 maximum.
+- `contents` (PersonalRecommendation.Relationships.PersonalRecommendationContentsRelationship): The contents associated with the content recommendation type. By default, `contents` includes objects.
+
+  Fetch limits: 10 default, 10 maximum.
 
 ## See Also
 
-- [object PersonalRecommendation.Attributes](personalrecommendation/attributes-data.dictionary.md)
+### Related Objects
+- [object PersonalRecommendation.Attributes](./attributes-data.dictionary.md)
   The attributes for a recommendation resource.
 
 

@@ -1,7 +1,8 @@
 # init(multiPolygon:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a renderer that handles drawing for the specified multipolygon overlay object.
 
@@ -19,9 +20,13 @@ Creates and returns a renderer that handles drawing for the specified multipolyg
 init(multiPolygon: MKMultiPolygon)
 ```
 
+```objc
+- (instancetype) initWithMultiPolygon:(MKMultiPolygon *) multiPolygon;
+```
+
 ## Parameters
 
-- `multiPolygon`: An [`MKMultiPolygon`](mkmultipolygon.md) to initialize the renderer with.
+- `multiPolygon`: An [`MKMultiPolygon`](../mkmultipolygon.md) to initialize the renderer with.
 
 
 ---

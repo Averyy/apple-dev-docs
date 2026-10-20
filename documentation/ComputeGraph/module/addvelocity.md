@@ -1,13 +1,14 @@
 # module::addVelocity
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a velocity delta to the element’s current velocity.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void module::addVelocity(float3 velocity)
 
 Use this function to incrementally adjust an element’s velocity by adding a velocity vector to its existing value.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/module__addVelocity.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/module__addVelocity.svg)
 
 ## Parameters
 

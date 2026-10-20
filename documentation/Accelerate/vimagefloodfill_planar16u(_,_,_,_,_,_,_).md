@@ -1,7 +1,8 @@
 # vImageFloodFill_Planar16U(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a flood fill-operation to an unsigned 16-bit planar image.
 
@@ -20,15 +21,19 @@ Applies a flood fill-operation to an unsigned 16-bit planar image.
 func vImageFloodFill_Planar16U(_ srcDest: UnsafePointer<vImage_Buffer>, _ tempBuffer: UnsafeMutableRawPointer!, _ seedX: vImagePixelCount, _ seedY: vImagePixelCount, _ newValue: Pixel_16U, _ connectivity: Int32, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageFloodFill_Planar16U(const vImage_Buffer *srcDest, void *tempBuffer, vImagePixelCount seedX, vImagePixelCount seedY, Pixel_16U newValue, int connectivity, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [`Data Types and Constants`](data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
 #### Discussion
 
 The flood-fill function sets all pixels that are neighboring and identical to the seed pixel to a new color. The operation continues until it reaches the image boundary or until it sets all pixels within the connected component to the new value.
 
-##### Optimize Performance with Temporary Buffers
+##### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 
@@ -50,17 +55,20 @@ You can use the same workspace memory for a group of images that are different s
 - `seedY`: The y-coordinate that defines the position of the seed pixel inside the connected component.
 - `newValue`: The new pixel value that overwrites the pixels in the connected component.
 - `connectivity`: An integer that specifies which pixels the operation includes as neighbors. Pass either `4` or `8`. The four-connected neighborhood of a pixel are the pixels to the left and right, and those above and below. The eight-connected neighborhood also includes the pixels on the four diagonals.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md). To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](kvimagegettempbuffersize.md) flag.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
+
+  To instruct the function to return the minimum size of the workspace memory, set the [`kvImageGetTempBufferSize`](./kvimagegettempbuffersize.md) flag.
 
 ## See Also
 
-- [Applying flood fills to an image](applying-flood-fills-to-an-image.md)
+### Flood-filling buffers
+- [Applying flood fills to an image](./applying-flood-fills-to-an-image.md)
   Fill consistently colored connected parts of an image with a new color.
-- [func vImageFloodFill_Planar8(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, Pixel_8, Int32, vImage_Flags) -> vImage_Error](vimagefloodfill_planar8(_:_:_:_:_:_:_:).md)
+- [func vImageFloodFill_Planar8(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, Pixel_8, Int32, vImage_Flags) -> vImage_Error](./vimagefloodfill_planar8%28_,_,_,_,_,_,_%29.md)
   Applies a flood-fill operation to an 8-bit planar image.
-- [func vImageFloodFill_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafeMutablePointer<UInt8>!, Int32, vImage_Flags) -> vImage_Error](vimagefloodfill_argb8888(_:_:_:_:_:_:_:).md)
+- [func vImageFloodFill_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafeMutablePointer<UInt8>!, Int32, vImage_Flags) -> vImage_Error](./vimagefloodfill_argb8888%28_,_,_,_,_,_,_%29.md)
   Applies a flood-fill operation to an 8-bit-per-channel, four-channel interleaved image.
-- [func vImageFloodFill_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafeMutablePointer<UInt16>!, Int32, vImage_Flags) -> vImage_Error](vimagefloodfill_argb16u(_:_:_:_:_:_:_:).md)
+- [func vImageFloodFill_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImagePixelCount, vImagePixelCount, UnsafeMutablePointer<UInt16>!, Int32, vImage_Flags) -> vImage_Error](./vimagefloodfill_argb16u%28_,_,_,_,_,_,_%29.md)
   Applies a flood-fill operation to an unsigned 16-bit-per-channel, four-channel interleaved image.
 
 

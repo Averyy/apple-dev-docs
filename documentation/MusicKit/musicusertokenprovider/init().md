@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a user token provider.
 

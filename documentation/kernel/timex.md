@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct timex {
     ...
 };
@@ -17,23 +17,23 @@ struct timex {
 ## Topics
 
 ### Instance Properties
-- [calcnt](timex/2876427-calcnt.md)
-- [constant](timex/2876431-constant.md)
-- [errcnt](timex/2876416-errcnt.md)
-- [esterror](timex/2876396-esterror.md)
-- [freq](timex/2876434-freq.md)
-- [jitcnt](timex/2876385-jitcnt.md)
-- [jitter](timex/2876429-jitter.md)
-- [maxerror](timex/2876370-maxerror.md)
-- [modes](timex/2876398-modes.md)
-- [offset](timex/2876375-offset.md)
-- [ppsfreq](timex/2876413-ppsfreq.md)
-- [precision](timex/2876405-precision.md)
-- [shift](timex/2876435-shift.md)
-- [stabil](timex/2876380-stabil.md)
-- [status](timex/2876403-status.md)
-- [stbcnt](timex/2876417-stbcnt.md)
-- [tolerance](timex/2876421-tolerance.md)
+- [calcnt](./timex/api-2876427-calcnt.md)
+- [constant](./timex/api-2876431-constant.md)
+- [errcnt](./timex/api-2876416-errcnt.md)
+- [esterror](./timex/api-2876396-esterror.md)
+- [freq](./timex/api-2876434-freq.md)
+- [jitcnt](./timex/api-2876385-jitcnt.md)
+- [jitter](./timex/api-2876429-jitter.md)
+- [maxerror](./timex/api-2876370-maxerror.md)
+- [modes](./timex/api-2876398-modes.md)
+- [offset](./timex/api-2876375-offset.md)
+- [ppsfreq](./timex/api-2876413-ppsfreq.md)
+- [precision](./timex/api-2876405-precision.md)
+- [shift](./timex/api-2876435-shift.md)
+- [stabil](./timex/api-2876380-stabil.md)
+- [status](./timex/api-2876403-status.md)
+- [stbcnt](./timex/api-2876417-stbcnt.md)
+- [tolerance](./timex/api-2876421-tolerance.md)
 
 
 ---

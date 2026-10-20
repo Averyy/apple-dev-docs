@@ -1,7 +1,8 @@
 # isConnected
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can use the continuity device because it’s connected to the system.
 
@@ -14,9 +15,13 @@ A Boolean value that indicates whether you can use the continuity device because
 var isConnected: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isConnected) BOOL connected;
+```
+
 #### Discussion
 
-The value of the property can change from [`true`](https://developer.apple.com/documentation/swift/true) to [`false`](https://developer.apple.com/documentation/swift/false), but not the reverse. Instead, the system creates a new [`AVContinuityDevice`](avcontinuitydevice.md) instance when the same physical device reconnects to the system.
+The value of the property can change from [`true`](../../Swift/true.md) to [`false`](../../Swift/false.md), but not the reverse. Instead, the system creates a new [`AVContinuityDevice`](../avcontinuitydevice.md) instance when the same physical device reconnects to the system.
 
 
 ---

@@ -1,17 +1,22 @@
 # IOBluetoothL2CAPChannel
 
 **Framework**: IOBluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An instance of IOBluetoothL2CAPChannel represents a single open L2CAP channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class IOBluetoothL2CAPChannel
+```
+
+```objc
+@interface IOBluetoothL2CAPChannel : IOBluetoothObject
 ```
 
 #### Overview
@@ -23,89 +28,90 @@ After a new L2CAP channel is opened, the L2CAP configuration process will not be
 ## Topics
 
 ### Instance Properties
-- [var device: IOBluetoothDevice!](iobluetoothl2capchannel/device.md)
+- [var device: IOBluetoothDevice!](./iobluetoothl2capchannel/device.md)
   Returns the IOBluetoothDevice to which the target L2CAP channel is open.
-- [var incomingMTU: BluetoothL2CAPMTU](iobluetoothl2capchannel/incomingmtu.md)
+- [var incomingMTU: BluetoothL2CAPMTU](./iobluetoothl2capchannel/incomingmtu.md)
   Returns the current incoming MTU for the L2CAP channel.
-- [var localChannelID: BluetoothL2CAPChannelID](iobluetoothl2capchannel/localchannelid.md)
+- [var localChannelID: BluetoothL2CAPChannelID](./iobluetoothl2capchannel/localchannelid.md)
   Returns the local L2CAP channel ID for the target L2CAP channel.
-- [var objectID: IOBluetoothObjectID](iobluetoothl2capchannel/objectid.md)
+- [var objectID: IOBluetoothObjectID](./iobluetoothl2capchannel/objectid.md)
   Returns the IOBluetoothObjectID of the given IOBluetoothL2CAPChannel.
-- [var outgoingMTU: BluetoothL2CAPMTU](iobluetoothl2capchannel/outgoingmtu.md)
+- [var outgoingMTU: BluetoothL2CAPMTU](./iobluetoothl2capchannel/outgoingmtu.md)
   Returns the current outgoing MTU for the L2CAP channel.
-- [var psm: BluetoothL2CAPPSM](iobluetoothl2capchannel/psm.md)
+- [var psm: BluetoothL2CAPPSM](./iobluetoothl2capchannel/psm.md)
   Returns the PSM for the target L2CAP channel.
-- [var remoteChannelID: BluetoothL2CAPChannelID](iobluetoothl2capchannel/remotechannelid.md)
+- [var remoteChannelID: BluetoothL2CAPChannelID](./iobluetoothl2capchannel/remotechannelid.md)
   Returns the remote L2CAP channel ID for the target L2CAP channel.
 ### Instance Methods
-- [func close() -> IOReturn](iobluetoothl2capchannel/close.md)
+- [func close() -> IOReturn](./iobluetoothl2capchannel/close%28%29.md)
   Initiates the close process on an open L2CAP channel.
-- [func delegate() -> Any!](iobluetoothl2capchannel/delegate.md)
+- [func delegate() -> Any!](./iobluetoothl2capchannel/delegate%28%29.md)
   Returns the currently assigned delegate
-- [func isIncoming() -> Bool](iobluetoothl2capchannel/isincoming.md)
+- [func isIncoming() -> Bool](./iobluetoothl2capchannel/isincoming%28%29.md)
   Returns TRUE if the channel is an incoming channel.
-- [func register(forChannelCloseNotification: Any!, selector: Selector!) -> IOBluetoothUserNotification!](iobluetoothl2capchannel/register(forchannelclosenotification:selector:).md)
+- [func register(forChannelCloseNotification: Any!, selector: Selector!) -> IOBluetoothUserNotification!](./iobluetoothl2capchannel/register%28forchannelclosenotification,selector%29.md)
   Allows a client to register for a channel close notification.
-- [func requestRemoteMTU(BluetoothL2CAPMTU) -> IOReturn](iobluetoothl2capchannel/requestremotemtu(_:).md)
+- [func requestRemoteMTU(BluetoothL2CAPMTU) -> IOReturn](./iobluetoothl2capchannel/requestremotemtu%28_%29.md)
   Initiates the process to reconfigure the L2CAP channel with a new outgoing MTU.
-- [func setDelegate(Any!) -> IOReturn](iobluetoothl2capchannel/setdelegate(_:).md)
+- [func setDelegate(Any!) -> IOReturn](./iobluetoothl2capchannel/setdelegate%28_%29.md)
   Allows an object to register itself as client of the L2CAP channel.
-- [func setDelegate(Any!, withConfiguration: [AnyHashable : Any]!) -> IOReturn](iobluetoothl2capchannel/setdelegate(_:withconfiguration:).md)
+- [func setDelegate(Any!, withConfiguration: [AnyHashable : Any]!) -> IOReturn](./iobluetoothl2capchannel/setdelegate%28_,withconfiguration%29.md)
   Allows an object to register itself as client of the L2CAP channel.
-- [func writeAsync(UnsafeMutableRawPointer!, length: UInt16, refcon: UnsafeMutableRawPointer!) -> IOReturn](iobluetoothl2capchannel/writeasync(_:length:refcon:).md)
+- [func writeAsync(UnsafeMutableRawPointer!, length: UInt16, refcon: UnsafeMutableRawPointer!) -> IOReturn](./iobluetoothl2capchannel/writeasync%28_,length,refcon%29.md)
   Writes the given data over the target L2CAP channel asynchronously to the remote device.
-- [func writeAsyncTrap(UnsafeMutableRawPointer!, length: UInt16, refcon: UnsafeMutableRawPointer!) -> IOReturn](iobluetoothl2capchannel/writeasynctrap(_:length:refcon:).md)
-- [func writeSync(UnsafeMutableRawPointer!, length: UInt16) -> IOReturn](iobluetoothl2capchannel/writesync(_:length:).md)
+- [func writeAsyncTrap(UnsafeMutableRawPointer!, length: UInt16, refcon: UnsafeMutableRawPointer!) -> IOReturn](./iobluetoothl2capchannel/writeasynctrap%28_,length,refcon%29.md)
+- [func writeSync(UnsafeMutableRawPointer!, length: UInt16) -> IOReturn](./iobluetoothl2capchannel/writesync%28_,length%29.md)
   Writes the given data synchronously over the target L2CAP channel to the remote device.
 ### Type Methods
-- [class func register(forChannelOpenNotifications: Any!, selector: Selector!) -> IOBluetoothUserNotification!](iobluetoothl2capchannel/register(forchannelopennotifications:selector:).md)
+- [class func register(forChannelOpenNotifications: Any!, selector: Selector!) -> IOBluetoothUserNotification!](./iobluetoothl2capchannel/register%28forchannelopennotifications,selector%29.md)
   Allows a client to register for L2CAP channel open notifications for any L2CAP channel.
-- [class func register(forChannelOpenNotifications: Any!, selector: Selector!, withPSM: BluetoothL2CAPPSM, direction: IOBluetoothUserNotificationChannelDirection) -> IOBluetoothUserNotification!](iobluetoothl2capchannel/register(forchannelopennotifications:selector:withpsm:direction:).md)
+- [class func register(forChannelOpenNotifications: Any!, selector: Selector!, withPSM: BluetoothL2CAPPSM, direction: IOBluetoothUserNotificationChannelDirection) -> IOBluetoothUserNotification!](./iobluetoothl2capchannel/register%28forchannelopennotifications,selector,withpsm,direction%29.md)
   Allows a client to register for L2CAP channel open notifications for certain types of L2CAP channels.
-- [class func withObjectID(IOBluetoothObjectID) -> Self!](iobluetoothl2capchannel/withobjectid(_:).md)
+- [class func withObjectID(IOBluetoothObjectID) -> Self!](./iobluetoothl2capchannel/withobjectid%28_%29.md)
   Returns the IObluetoothL2CAPChannel with the given IOBluetoothObjectID.
 
 ## Relationships
 
 ### Inherits From
-- [IOBluetoothObject](iobluetoothobject.md)
+- [IOBluetoothObject](./iobluetoothobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [PortDelegate](../foundation/portdelegate.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [PortDelegate](../Foundation/portdelegate.md)
 
 ## See Also
 
-- [class IOBluetoothDevice](iobluetoothdevice.md)
+### Classes
+- [class IOBluetoothDevice](./iobluetoothdevice.md)
   An instance of IOBluetoothDevice represents a single remote Bluetooth device.
-- [class IOBluetoothDeviceInquiry](iobluetoothdeviceinquiry.md)
+- [class IOBluetoothDeviceInquiry](./iobluetoothdeviceinquiry.md)
   Object representing a device inquiry that finds Bluetooth devices in-range of the computer, and (optionally) retrieves name information for them.
-- [class IOBluetoothDevicePair](iobluetoothdevicepair.md)
+- [class IOBluetoothDevicePair](./iobluetoothdevicepair.md)
   An instance of IOBluetoothDevicePair represents a pairing attempt to a remote Bluetooth device.
-- [class IOBluetoothDeviceRef](iobluetoothdeviceref.md)
+- [class IOBluetoothDeviceRef](./iobluetoothdeviceref.md)
   An object that represents a Bluetooth I/O device.
-- [class IOBluetoothHandsFree](iobluetoothhandsfree.md)
+- [class IOBluetoothHandsFree](./iobluetoothhandsfree.md)
   Hands free profile class.
-- [class IOBluetoothHandsFreeAudioGateway](iobluetoothhandsfreeaudiogateway.md)
+- [class IOBluetoothHandsFreeAudioGateway](./iobluetoothhandsfreeaudiogateway.md)
   An object that sends data to a connected Bluetooth hands-free phone or headset and processes commands from it.
-- [class IOBluetoothHandsFreeDevice](iobluetoothhandsfreedevice.md)
+- [class IOBluetoothHandsFreeDevice](./iobluetoothhandsfreedevice.md)
   An object you use to manage phone calls on a connected Bluetooth hands-free phone or headset.
-- [class IOBluetoothHostController](iobluetoothhostcontroller.md)
+- [class IOBluetoothHostController](./iobluetoothhostcontroller.md)
   This class is a representation of a Bluetooth Host Controller Interface that is present on the local computer (either plugged in externally or available internally).
-- [class IOBluetoothL2CAPChannelRef](iobluetoothl2capchannelref.md)
-- [class IOBluetoothOBEXSession](iobluetoothobexsession.md)
+- [class IOBluetoothL2CAPChannelRef](./iobluetoothl2capchannelref.md)
+- [class IOBluetoothOBEXSession](./iobluetoothobexsession.md)
   An OBEX Session with a Bluetooth RFCOMM channel as the transport.
-- [class IOBluetoothObject](iobluetoothobject.md)
-- [class IOBluetoothObjectRef](iobluetoothobjectref.md)
-- [class IOBluetoothRFCOMMChannel](iobluetoothrfcommchannel.md)
+- [class IOBluetoothObject](./iobluetoothobject.md)
+- [class IOBluetoothObjectRef](./iobluetoothobjectref.md)
+- [class IOBluetoothRFCOMMChannel](./iobluetoothrfcommchannel.md)
   An instance of this class represents an RFCOMM channel as defined by the Bluetooth SDP spec..
-- [class IOBluetoothRFCOMMChannelRef](iobluetoothrfcommchannelref.md)
-- [class IOBluetoothSDPDataElement](iobluetoothsdpdataelement.md)
+- [class IOBluetoothRFCOMMChannelRef](./iobluetoothrfcommchannelref.md)
+- [class IOBluetoothSDPDataElement](./iobluetoothsdpdataelement.md)
   An instance of this class represents a single SDP data element as defined by the Bluetooth SDP spec.
 
 

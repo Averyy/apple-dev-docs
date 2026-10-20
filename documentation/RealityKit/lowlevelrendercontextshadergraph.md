@@ -1,7 +1,8 @@
 # LowLevelRenderContextShaderGraph
 
 **Framework**: RealityKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for creating Metal shader functions from a ShaderGraph.
 
@@ -19,37 +20,38 @@ protocol LowLevelRenderContextShaderGraph
 
 #### Overview
 
-Access this through [`shaderGraph`](lowlevelrendercontext/shadergraph.md).
+Access this through [`shaderGraph`](./lowlevelrendercontext/shadergraph.md).
 
 ## Topics
 
 ### Creating shader graph functions
-- [func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) throws -> sending LowLevelMaterialResource.ShaderGraphOutput](lowlevelrendercontextshadergraph/makeshadergraphfunctions(shadergraph:constantvalues:)-791l3.md)
-  A synchronous variant of [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](lowlevelrendercontextshadergraph/makeshadergraphfunctions(shadergraph:constantvalues:)-791l3.md) for non-async callers.
-- [func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) async throws -> sending LowLevelMaterialResource.ShaderGraphOutput](lowlevelrendercontextshadergraph/makeshadergraphfunctions(shadergraph:constantvalues:)-9d8oc.md)
+- [func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) throws -> sending LowLevelMaterialResource.ShaderGraphOutput](./lowlevelrendercontextshadergraph/makeshadergraphfunctions%28shadergraph,constantvalues%29-791l3.md)
+  A synchronous variant of [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](./lowlevelrendercontextshadergraph/makeshadergraphfunctions%28shadergraph,constantvalues%29-791l3.md) for non-async callers.
+- [func makeShaderGraphFunctions(shaderGraph: ShaderGraph, constantValues: MTLFunctionConstantValues) async throws -> sending LowLevelMaterialResource.ShaderGraphOutput](./lowlevelrendercontextshadergraph/makeshadergraphfunctions%28shadergraph,constantvalues%29-9d8oc.md)
   Compiles a ShaderGraph into a geometry modifier and surface shader.
 ### Instance Methods
-- [func makeShaderGraphFunctions(shaderGraph:constantValues:)](lowlevelrendercontextshadergraph/makeshadergraphfunctions(shadergraph:constantvalues:).md)
-  A synchronous variant of [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](lowlevelrendercontextshadergraph/makeshadergraphfunctions(shadergraph:constantvalues:).md) for non-async callers.
+- [func makeShaderGraphFunctions(shaderGraph:constantValues:)](./lowlevelrendercontextshadergraph/makeshadergraphfunctions%28shadergraph,constantvalues%29.md)
+  A synchronous variant of [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](./lowlevelrendercontextshadergraph/makeshadergraphfunctions%28shadergraph,constantvalues%29.md) for non-async callers.
 
 ## Relationships
 
 ### Conforming Types
-- [LowLevelRenderContextStandalone](lowlevelrendercontextstandalone.md)
+- [LowLevelRenderContextStandalone](./lowlevelrendercontextstandalone.md)
 
 ## See Also
 
-- [class LowLevelRenderer](lowlevelrenderer.md)
+### Render contexts
+- [class LowLevelRenderer](./lowlevelrenderer.md)
   A renderer that encodes draw calls for a collection of mesh instances into a Metal command buffer.
-- [protocol LowLevelRenderContext](lowlevelrendercontext.md)
+- [protocol LowLevelRenderContext](./lowlevelrendercontext.md)
   An entry point for creating rendering resources and compiling materials.
-- [protocol LowLevelRenderContextLighting](lowlevelrendercontextlighting.md)
+- [protocol LowLevelRenderContextLighting](./lowlevelrendercontextlighting.md)
   The interface for creating lighting functions for use in materials.
-- [class LowLevelRenderContextStandalone](lowlevelrendercontextstandalone.md)
+- [class LowLevelRenderContextStandalone](./lowlevelrendercontextstandalone.md)
   A standalone Metal-backed render context for creating low-level rendering resources.
-- [struct LowLevelRenderContextError](lowlevelrendercontexterror.md)
+- [struct LowLevelRenderContextError](./lowlevelrendercontexterror.md)
   An error thrown when binding or updating a low-level rendering resource fails.
-- [struct LowLevelRendererError](lowlevelrenderererror.md)
+- [struct LowLevelRendererError](./lowlevelrenderererror.md)
   An error thrown when creating or configuring a renderer.
 
 

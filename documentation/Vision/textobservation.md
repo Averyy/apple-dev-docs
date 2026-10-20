@@ -1,7 +1,8 @@
 # TextObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about regions of text that an image-analysis request detects.
 
@@ -23,29 +24,29 @@ struct TextObservation
 ## Topics
 
 ### Creating an observation
-- [init(VNTextObservation)](textobservation/init(_:).md)
+- [init(VNTextObservation)](./textobservation/init%28_%29.md)
   Creates a text observation.
 ### Inspecting an observation
-- [let characterBoxes: [RectangleObservation]?](textobservation/characterboxes.md)
+- [let characterBoxes: [RectangleObservation]?](./textobservation/characterboxes.md)
   An array of detected individual character bounding boxes.
-- [struct RectangleObservation](rectangleobservation.md)
+- [struct RectangleObservation](./rectangleobservation.md)
   An object that represents the four vertices of a detected rectangle.
 
 ## Relationships
 
 ### Conforms To
-- [BoundingBoxProviding](boundingboxproviding.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [QuadrilateralProviding](quadrilateralproviding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [BoundingBoxProviding](./boundingboxproviding.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [QuadrilateralProviding](./quadrilateralproviding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

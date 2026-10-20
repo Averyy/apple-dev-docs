@@ -1,7 +1,8 @@
 # pageController(_:didTransitionTo:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This message is sent when any page transition is completed.
 
@@ -15,6 +16,10 @@ This message is sent when any page transition is completed.
 optional func pageController(_ pageController: NSPageController, didTransitionTo object: Any)
 ```
 
+```objc
+- (void) pageController:(NSPageController *) pageController didTransitionToObject:(id) object;
+```
+
 ## Parameters
 
 - `pageController`: The page controller.
@@ -22,9 +27,10 @@ optional func pageController(_ pageController: NSPageController, didTransitionTo
 
 ## See Also
 
-- [func pageControllerWillStartLiveTransition(NSPageController)](nspagecontrollerdelegate/pagecontrollerwillstartlivetransition(_:).md)
+### Transition Notification
+- [func pageControllerWillStartLiveTransition(NSPageController)](./pagecontrollerwillstartlivetransition%28_%29.md)
   This message is sent when the user begins a transition.
-- [func pageControllerDidEndLiveTransition(NSPageController)](nspagecontrollerdelegate/pagecontrollerdidendlivetransition(_:).md)
+- [func pageControllerDidEndLiveTransition(NSPageController)](./pagecontrollerdidendlivetransition%28_%29.md)
   This message is sent when a transition animation completes.
 
 

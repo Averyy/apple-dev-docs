@@ -1,17 +1,24 @@
 # parentWindow
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s parent window.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Drawers are deprecated; consider using NSSplitViewController
 
 ## Declaration
 
 ```swift
 unowned(unsafe) var parentWindow: NSWindow? { get set }
+```
+
+```objc
+@property (assign, nullable) NSWindow * parentWindow;
 ```
 
 #### Discussion
@@ -20,7 +27,8 @@ Changes in a drawer’s parent window do not take place while the drawer is onsc
 
 ## See Also
 
-- [var contentView: NSView?](nsdrawer/contentview.md)
+### Managing Drawer Views
+- [var contentView: NSView?](./contentview.md)
   The receiver’s content view.
 
 

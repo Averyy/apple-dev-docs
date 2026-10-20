@@ -1,7 +1,8 @@
 # MIDIDeviceListGetNumberOfDevices(_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the number of devices in a device list.
 
@@ -18,6 +19,10 @@ Retrieves the number of devices in a device list.
 func MIDIDeviceListGetNumberOfDevices(_ devList: MIDIDeviceListRef) -> Int
 ```
 
+```c
+extern ItemCount MIDIDeviceListGetNumberOfDevices(MIDIDeviceListRef devList);
+```
+
 #### Return Value
 
 The number of devices in the list, or 0 if an error occurred.
@@ -28,13 +33,14 @@ The number of devices in the list, or 0 if an error occurred.
 
 ## See Also
 
-- [func MIDIDeviceListGetDevice(MIDIDeviceListRef, Int) -> MIDIDeviceRef](mididevicelistgetdevice(_:_:).md)
+### Managing Device Lists
+- [func MIDIDeviceListGetDevice(MIDIDeviceListRef, Int) -> MIDIDeviceRef](./mididevicelistgetdevice%28_,_%29.md)
   Retrieves a MIDI device from a device list.
-- [func MIDIDeviceListAddDevice(MIDIDeviceListRef, MIDIDeviceRef) -> OSStatus](mididevicelistadddevice(_:_:).md)
+- [func MIDIDeviceListAddDevice(MIDIDeviceListRef, MIDIDeviceRef) -> OSStatus](./mididevicelistadddevice%28_,_%29.md)
   Adds the specified device to the device list.
-- [func MIDIDeviceListDispose(MIDIDeviceListRef) -> OSStatus](mididevicelistdispose(_:).md)
+- [func MIDIDeviceListDispose(MIDIDeviceListRef) -> OSStatus](./mididevicelistdispose%28_%29.md)
   Disposes of a device list, but not its devices.
-- [typealias MIDIDeviceListRef](mididevicelistref.md)
+- [typealias MIDIDeviceListRef](./mididevicelistref.md)
   A list of MIDI devices.
 
 

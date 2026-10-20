@@ -1,7 +1,8 @@
 # filetype
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The item’s file type.
 
@@ -13,6 +14,10 @@ The item’s file type.
 
 ```swift
 var filetype: OSType
+```
+
+```c
+OSType filetype;
 ```
 
 

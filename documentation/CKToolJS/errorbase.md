@@ -1,7 +1,8 @@
 # ErrorBase
 
 **Framework**: CKTool JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class of any error emitted by functions in the client library.
 
@@ -10,24 +11,25 @@ The base class of any error emitted by functions in the client library.
 
 ## Declaration
 
-```swift
+```
 interface ErrorBase
 ```
 
 ## Topics
 
 ### Instance Properties
-- [message](errorbase/message.md)
+- [message](./errorbase/message.md)
   A description of the error.
 
 ## Relationships
 
 ### Inherits From
-- [ValidationError](validationerror.md)
+- [ValidationError](./validationerror.md)
 
 ## See Also
 
-- [Database, Length, Validation, and Value Errors](database-length-validation-and-value-errors.md)
+### Errors
+- [Database, Length, Validation, and Value Errors](./database-length-validation-and-value-errors.md)
 
 
 ---

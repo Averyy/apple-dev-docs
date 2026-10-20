@@ -1,7 +1,8 @@
 # atlasTextureSlice
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Index of the slice within the atlas.
 
@@ -21,7 +22,8 @@ var atlasTextureSlice: Int
 
 ## See Also
 
-- [var atlasTextureIndex: Int](lightmapresource/atlasreference/atlastextureindex.md)
+### Locating the atlas texture
+- [var atlasTextureIndex: Int](./atlastextureindex.md)
   Index of the atlas within the LightmapResource.
 
 

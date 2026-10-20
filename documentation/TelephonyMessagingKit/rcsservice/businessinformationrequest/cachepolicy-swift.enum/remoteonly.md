@@ -1,7 +1,8 @@
 # RCSService.BusinessInformationRequest.CachePolicy.remoteOnly
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Load from remote.
 
@@ -16,9 +17,10 @@ case remoteOnly
 
 ## See Also
 
-- [RCSService.BusinessInformationRequest.CachePolicy.cacheOnly](rcsservice/businessinformationrequest/cachepolicy-swift.enum/cacheonly.md)
+### Inspecting cache policies
+- [RCSService.BusinessInformationRequest.CachePolicy.cacheOnly](./cacheonly.md)
   Load from local cache.
-- [RCSService.BusinessInformationRequest.CachePolicy.cacheOrRemote](rcsservice/businessinformationrequest/cachepolicy-swift.enum/cacheorremote.md)
+- [RCSService.BusinessInformationRequest.CachePolicy.cacheOrRemote](./cacheorremote.md)
   Load from local cache if available, otherwise load from remote.
 
 

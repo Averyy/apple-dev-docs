@@ -1,7 +1,8 @@
 # AttributedString.AttributeMergePolicy
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of behaviors to apply when merging attributes.
 
@@ -22,33 +23,34 @@ enum AttributeMergePolicy
 
 #### Overview
 
-Use an [`AttributedString.AttributeMergePolicy`](attributedstring/attributemergepolicy.md) when working with methods like [`mergeAttributes(_:mergePolicy:)`](attributedstring/mergeattributes(_:mergepolicy:).md) to indicate how to resolve conflicts between multiple sets of attributes. When a source string and a merging attribute container both contain a given attribute with different values, the merge policy determines how to resolve the conflict.
+Use an [`AttributedString.AttributeMergePolicy`](./attributemergepolicy.md) when working with methods like [`mergeAttributes(_:mergePolicy:)`](./mergeattributes%28_,mergepolicy%29.md) to indicate how to resolve conflicts between multiple sets of attributes. When a source string and a merging attribute container both contain a given attribute with different values, the merge policy determines how to resolve the conflict.
 
 ## Topics
 
 ### Merge Policies
-- [AttributedString.AttributeMergePolicy.keepCurrent](attributedstring/attributemergepolicy/keepcurrent.md)
+- [AttributedString.AttributeMergePolicy.keepCurrent](./attributemergepolicy/keepcurrent.md)
   A policy to keep the string’s current attribute value when merging multiple sets of attributes.
-- [AttributedString.AttributeMergePolicy.keepNew](attributedstring/attributemergepolicy/keepnew.md)
+- [AttributedString.AttributeMergePolicy.keepNew](./attributemergepolicy/keepnew.md)
   A policy to keep the newly-merged attribute value when merging multiple sets of attributes.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setAttributes(AttributeContainer)](attributedstring/setattributes(_:).md)
+### Applying and Modifying Attributes
+- [func setAttributes(AttributeContainer)](./setattributes%28_%29.md)
   Sets the attributed string’s attributes to those in a specified attribute container.
-- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](attributedstring/mergeattributes(_:mergepolicy:).md)
+- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](./mergeattributes%28_,mergepolicy%29.md)
   Merges the attributed string’s attributes with those in a specified attribute container.
-- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](attributedstring/replaceattributes(_:with:).md)
+- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](./replaceattributes%28_,with%29.md)
   Replaces occurrences of attributes in one attribute container with those in another attribute container.
-- [protocol AttributedStringAttributeMutation](attributedstringattributemutation.md)
+- [protocol AttributedStringAttributeMutation](../attributedstringattributemutation.md)
   A protocol that defines in-place mutations for attributes in an attributed string.
 
 

@@ -1,7 +1,8 @@
 # init(itemIdentifier:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toolbar item with the specified identifier.
 
@@ -9,12 +10,16 @@ Creates a toolbar item with the specified identifier.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(itemIdentifier: NSToolbarItem.Identifier)
+```
+
+```objc
+- (instancetype) initWithItemIdentifier:(NSToolbarItemIdentifier) itemIdentifier;
 ```
 
 #### Return Value
@@ -27,9 +32,11 @@ A new toolbar item.
 
 ## See Also
 
-- [Integrating a Toolbar and Touch Bar into Your App](integrating-a-toolbar-and-touch-bar-into-your-app.md)
+### Related Documentation
+- [Integrating a Toolbar and Touch Bar into Your App](../integrating-a-toolbar-and-touch-bar-into-your-app.md)
   Provide users quick access to your app’s features from a toolbar and corresponding Touch Bar.
-- [convenience init(itemIdentifier: NSToolbarItem.Identifier, barButtonItem: UIBarButtonItem)](nstoolbaritem/init(itemidentifier:barbuttonitem:).md)
+### Creating a toolbar item
+- [convenience init(itemIdentifier: NSToolbarItem.Identifier, barButtonItem: UIBarButtonItem)](./init%28itemidentifier,barbuttonitem%29.md)
   Creates a toolbar item with property values from the specified bar button item.
 
 

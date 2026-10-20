@@ -1,7 +1,8 @@
 # StatusTestDictionaryValueDictionaryObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The test status dictionary value.
 
@@ -16,7 +17,7 @@ The test status dictionary value.
 
 ## Declaration
 
-```swift
+```
 object StatusTestDictionaryValueDictionaryObject
 ```
 

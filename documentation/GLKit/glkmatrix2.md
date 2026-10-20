@@ -1,7 +1,8 @@
 # GLKMatrix2
 
 **Framework**: GLKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A `2x2` matrix.
 
@@ -17,6 +18,10 @@ A `2x2` matrix.
 typealias GLKMatrix2 = _GLKMatrix2
 ```
 
+```c
+typedef union _GLKMatrix2 GLKMatrix2;
+```
+
 ##### Fields
 
 | Name | Description |
@@ -29,7 +34,8 @@ typealias GLKMatrix2 = _GLKMatrix2
 
 ## See Also
 
-- [typealias GLKMatrix3](glkmatrix3.md)
+### Data Types
+- [typealias GLKMatrix3](./glkmatrix3.md)
   A `3x3` matrix stored in column-major order.
 
 

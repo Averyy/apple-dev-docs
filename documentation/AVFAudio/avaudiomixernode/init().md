@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an audio mixer node.
 
@@ -18,6 +19,10 @@ Creates an audio mixer node.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

@@ -1,14 +1,15 @@
 # mach_voucher_attr_recipe_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 typedef struct mach_voucher_attr_recipe_data {
     ...
 } mach_voucher_attr_recipe_data_t;
@@ -17,50 +18,51 @@ typedef struct mach_voucher_attr_recipe_data {
 ## Topics
 
 ### Instance Properties
-- [command](mach_voucher_attr_recipe_data_t/1590376-command.md)
-- [content](mach_voucher_attr_recipe_data_t/1590320-content.md)
-- [content_size](mach_voucher_attr_recipe_data_t/1590351-content_size.md)
-- [key](mach_voucher_attr_recipe_data_t/1590325-key.md)
-- [previous_voucher](mach_voucher_attr_recipe_data_t/1590348-previous_voucher.md)
+- [command](./mach_voucher_attr_recipe_data_t/api-1590376-command.md)
+- [content](./mach_voucher_attr_recipe_data_t/api-1590320-content.md)
+- [content_size](./mach_voucher_attr_recipe_data_t/api-1590351-content_size.md)
+- [key](./mach_voucher_attr_recipe_data_t/api-1590325-key.md)
+- [previous_voucher](./mach_voucher_attr_recipe_data_t/api-1590348-previous_voucher.md)
 
 ## See Also
 
-- [mach_voucher_attr_command](1410145-mach_voucher_attr_command.md)
-- [mach_voucher_attr_control_create_mach_voucher](1477870-mach_voucher_attr_control_create.md)
-- [mach_voucher_attr_control_get_values](1477865-mach_voucher_attr_control_get_va.md)
-- [mach_voucher_debug_info](1410149-mach_voucher_debug_info.md)
-- [mach_voucher_extract_all_attr_recipes](1410119-mach_voucher_extract_all_attr_re.md)
-- [mach_voucher_extract_attr_content](1410080-mach_voucher_extract_attr_conten.md)
-- [mach_voucher_extract_attr_recipe](1410137-mach_voucher_extract_attr_recipe.md)
-- [host_create_mach_voucher](1502476-host_create_mach_voucher.md)
-- [host_register_mach_voucher_attr_manager](1502592-host_register_mach_voucher_attr_.md)
-- [host_register_well_known_mach_voucher_attr_manager](1502856-host_register_well_known_mach_vo.md)
-- [mach_voucher_attr_command_t](mach_voucher_attr_command_t.md)
-- [mach_voucher_attr_content_size_t](mach_voucher_attr_content_size_t.md)
-- [mach_voucher_attr_content_t](mach_voucher_attr_content_t.md)
-- [mach_voucher_attr_control_flags_t](mach_voucher_attr_control_flags_t.md)
-- [mach_voucher_attr_control_t](mach_voucher_attr_control_t.md)
-- [mach_voucher_attr_importance_refs](mach_voucher_attr_importance_refs.md)
-- [mach_voucher_attr_key_array_t](mach_voucher_attr_key_array_t.md)
-- [mach_voucher_attr_key_t](mach_voucher_attr_key_t.md)
-- [mach_voucher_attr_manager_t](mach_voucher_attr_manager_t.md)
-- [mach_voucher_attr_raw_recipe_array_size_t](mach_voucher_attr_raw_recipe_array_size_t.md)
-- [mach_voucher_attr_raw_recipe_array_t](mach_voucher_attr_raw_recipe_array_t.md)
-- [mach_voucher_attr_raw_recipe_size_t](mach_voucher_attr_raw_recipe_size_t.md)
-- [mach_voucher_attr_raw_recipe_t](mach_voucher_attr_raw_recipe_t.md)
-- [mach_voucher_attr_recipe_command_array_t](mach_voucher_attr_recipe_command_array_t.md)
-- [mach_voucher_attr_recipe_command_t](mach_voucher_attr_recipe_command_t.md)
-- [mach_voucher_attr_recipe_size_t](mach_voucher_attr_recipe_size_t.md)
-- [mach_voucher_attr_recipe_t](mach_voucher_attr_recipe_t.md)
-- [mach_voucher_attr_value_flags_t](mach_voucher_attr_value_flags_t.md)
-- [mach_voucher_attr_value_handle_array_size_t](mach_voucher_attr_value_handle_array_size_t.md)
-- [mach_voucher_attr_value_handle_array_t](mach_voucher_attr_value_handle_array_t.md)
-- [mach_voucher_attr_value_handle_t](mach_voucher_attr_value_handle_t.md)
-- [mach_voucher_attr_value_reference_t](mach_voucher_attr_value_reference_t.md)
-- [mach_voucher_name_array_t](mach_voucher_name_array_t.md)
-- [mach_voucher_name_t](mach_voucher_name_t.md)
-- [mach_voucher_selector_t](mach_voucher_selector_t.md)
-- [mach_voucher_t](mach_voucher_t.md)
+### Voucher
+- [mach_voucher_attr_command](./api-1410145-mach_voucher_attr_command.md)
+- [mach_voucher_attr_control_create_mach_voucher](./api-1477870-mach_voucher_attr_control_create.md)
+- [mach_voucher_attr_control_get_values](./api-1477865-mach_voucher_attr_control_get_va.md)
+- [mach_voucher_debug_info](./api-1410149-mach_voucher_debug_info.md)
+- [mach_voucher_extract_all_attr_recipes](./api-1410119-mach_voucher_extract_all_attr_re.md)
+- [mach_voucher_extract_attr_content](./api-1410080-mach_voucher_extract_attr_conten.md)
+- [mach_voucher_extract_attr_recipe](./api-1410137-mach_voucher_extract_attr_recipe.md)
+- [host_create_mach_voucher](./api-1502476-host_create_mach_voucher.md)
+- [host_register_mach_voucher_attr_manager](./api-1502592-host_register_mach_voucher_attr_.md)
+- [host_register_well_known_mach_voucher_attr_manager](./api-1502856-host_register_well_known_mach_vo.md)
+- [mach_voucher_attr_command_t](./mach_voucher_attr_command_t.md)
+- [mach_voucher_attr_content_size_t](./mach_voucher_attr_content_size_t.md)
+- [mach_voucher_attr_content_t](./mach_voucher_attr_content_t.md)
+- [mach_voucher_attr_control_flags_t](./mach_voucher_attr_control_flags_t.md)
+- [mach_voucher_attr_control_t](./mach_voucher_attr_control_t.md)
+- [mach_voucher_attr_importance_refs](./mach_voucher_attr_importance_refs.md)
+- [mach_voucher_attr_key_array_t](./mach_voucher_attr_key_array_t.md)
+- [mach_voucher_attr_key_t](./mach_voucher_attr_key_t.md)
+- [mach_voucher_attr_manager_t](./mach_voucher_attr_manager_t.md)
+- [mach_voucher_attr_raw_recipe_array_size_t](./mach_voucher_attr_raw_recipe_array_size_t.md)
+- [mach_voucher_attr_raw_recipe_array_t](./mach_voucher_attr_raw_recipe_array_t.md)
+- [mach_voucher_attr_raw_recipe_size_t](./mach_voucher_attr_raw_recipe_size_t.md)
+- [mach_voucher_attr_raw_recipe_t](./mach_voucher_attr_raw_recipe_t.md)
+- [mach_voucher_attr_recipe_command_array_t](./mach_voucher_attr_recipe_command_array_t.md)
+- [mach_voucher_attr_recipe_command_t](./mach_voucher_attr_recipe_command_t.md)
+- [mach_voucher_attr_recipe_size_t](./mach_voucher_attr_recipe_size_t.md)
+- [mach_voucher_attr_recipe_t](./mach_voucher_attr_recipe_t.md)
+- [mach_voucher_attr_value_flags_t](./mach_voucher_attr_value_flags_t.md)
+- [mach_voucher_attr_value_handle_array_size_t](./mach_voucher_attr_value_handle_array_size_t.md)
+- [mach_voucher_attr_value_handle_array_t](./mach_voucher_attr_value_handle_array_t.md)
+- [mach_voucher_attr_value_handle_t](./mach_voucher_attr_value_handle_t.md)
+- [mach_voucher_attr_value_reference_t](./mach_voucher_attr_value_reference_t.md)
+- [mach_voucher_name_array_t](./mach_voucher_name_array_t.md)
+- [mach_voucher_name_t](./mach_voucher_name_t.md)
+- [mach_voucher_selector_t](./mach_voucher_selector_t.md)
+- [mach_voucher_t](./mach_voucher_t.md)
 
 
 ---

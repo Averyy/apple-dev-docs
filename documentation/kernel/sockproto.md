@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sockproto {
     ...
 };
@@ -17,8 +17,8 @@ struct sockproto {
 ## Topics
 
 ### Instance Properties
-- [sp_family](sockproto/1499130-sp_family.md)
-- [sp_protocol](sockproto/1499174-sp_protocol.md)
+- [sp_family](./sockproto/api-1499130-sp_family.md)
+- [sp_protocol](./sockproto/api-1499174-sp_protocol.md)
 
 
 ---

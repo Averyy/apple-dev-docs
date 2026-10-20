@@ -1,12 +1,15 @@
 # NSOpenGLPixelFormat
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies the types of buffers and other attributes of the OpenGL context.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.14
+
+> **Deprecated**: The OpenGL API is deprecated. Use [Metal](../Metal/Metal.md) and [MetalKit](../MetalKit/MetalKit.md) instead.
 
 ## Declaration
 
@@ -14,65 +17,70 @@ An object that specifies the types of buffers and other attributes of the OpenGL
 class NSOpenGLPixelFormat
 ```
 
+```objc
+@interface NSOpenGLPixelFormat : NSObject
+```
+
 #### Overview
 
-To render with OpenGL into an [`NSOpenGLContext`](nsopenglcontext.md), you must specify the context’s pixel format.
+To render with OpenGL into an [`NSOpenGLContext`](./nsopenglcontext.md), you must specify the context’s pixel format.
 
-Every [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object wraps a low-level, platform-specific Core OpenGL (CGL) pixel format object. Your application can retrieve the CGL pixel format object by calling the [`cglPixelFormatObj`](nsopenglpixelformat/cglpixelformatobj.md) method. For more information on the underling CGL pixel format object, see `CGL`.
+Every [`NSOpenGLPixelFormat`](./nsopenglpixelformat.md) object wraps a low-level, platform-specific Core OpenGL (CGL) pixel format object. Your application can retrieve the CGL pixel format object by calling the [`cglPixelFormatObj`](./nsopenglpixelformat/cglpixelformatobj.md) method. For more information on the underling CGL pixel format object, see `CGL`.
 
 ## Topics
 
 ### Creating an OpenGL Pixel Format
-- [init?(cglPixelFormatObj: CGLPixelFormatObj)](nsopenglpixelformat/init(cglpixelformatobj:)-2zqw4.md)
+- [init?(cglPixelFormatObj: CGLPixelFormatObj)](./nsopenglpixelformat/init%28cglpixelformatobj%29-2zqw4.md)
   Returns an OpenGL pixel format object initialized with using an existing CGL pixel format object.
-- [convenience init?(attributes: UnsafePointer<NSOpenGLPixelFormatAttribute>)](nsopenglpixelformat/init(attributes:).md)
+- [convenience init?(attributes: UnsafePointer<NSOpenGLPixelFormatAttribute>)](./nsopenglpixelformat/init%28attributes%29.md)
   Returns an OpenGL pixel format object initialized with specified pixel format attributes.
 ### Managing the Pixel Format
-- [var cglPixelFormatObj: CGLPixelFormatObj?](nsopenglpixelformat/cglpixelformatobj.md)
+- [var cglPixelFormatObj: CGLPixelFormatObj?](./nsopenglpixelformat/cglpixelformatobj.md)
   The low-level, platform-specific Core OpenGL (CGL) pixel format object represented by the receiver.
-- [func getValues(UnsafeMutablePointer<GLint>, forAttribute: NSOpenGLPixelFormatAttribute, forVirtualScreen: GLint)](nsopenglpixelformat/getvalues(_:forattribute:forvirtualscreen:).md)
+- [func getValues(UnsafeMutablePointer<GLint>, forAttribute: NSOpenGLPixelFormatAttribute, forVirtualScreen: GLint)](./nsopenglpixelformat/getvalues%28_,forattribute,forvirtualscreen%29.md)
   Gets the value for the specified pixel format attribute.
-- [var numberOfVirtualScreens: GLint](nsopenglpixelformat/numberofvirtualscreens.md)
+- [var numberOfVirtualScreens: GLint](./nsopenglpixelformat/numberofvirtualscreens.md)
   The number of virtual screens associated with the OpenGL pixel format.
 ### Constants
-- [typealias NSOpenGLPixelFormatAttribute](nsopenglpixelformatattribute.md)
+- [typealias NSOpenGLPixelFormatAttribute](./nsopenglpixelformatattribute.md)
   Pixel format attributes for OpenGL.
-- [OpenGL Pixel Format Attributes](opengl-pixel-format-attributes.md)
+- [OpenGL Pixel Format Attributes](./opengl-pixel-format-attributes.md)
   Pixel format attributes for OpenGL.
-- [OpenGL Profiles](opengl-profiles.md)
+- [OpenGL Profiles](./opengl-profiles.md)
   Constants that specify the functionality provided by the renderer.
 ### Initializers
-- [init?(CGLPixelFormatObj: CGLPixelFormatObj)](nsopenglpixelformat/init(cglpixelformatobj:)-6et9a.md)
-- [init?(coder: NSCoder)](nsopenglpixelformat/init(coder:).md)
+- [init?(CGLPixelFormatObj: CGLPixelFormatObj)](./nsopenglpixelformat/init%28cglpixelformatobj%29-6et9a.md)
+- [init?(coder: NSCoder)](./nsopenglpixelformat/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class NSOpenGLView](nsopenglview.md)
+### Deprecated classes
+- [class NSOpenGLView](./nsopenglview.md)
   A view that displays OpenGL content in a view.
-- [class NSOpenGLContext](nsopenglcontext.md)
+- [class NSOpenGLContext](./nsopenglcontext.md)
   An object that represents an OpenGL graphics context, into which all OpenGL calls are rendered.
-- [class NSOpenGLLayer](nsopengllayer.md)
+- [class NSOpenGLLayer](./nsopengllayer.md)
   A subclass of `CAOpenGLLayer` that is suitable for rendering OpenGL into layers.
-- [class NSDrawer](nsdrawer.md)
+- [class NSDrawer](./nsdrawer.md)
   A user interface element that contains and displays text, scroll, and browser views, in addition to other view subclasses.
-- [class NSForm](nsform.md)
-  An `NSForm` object is a vertical matrix of [`NSFormCell`](nsformcell.md) objects to implement the fields.
-- [class NSFormCell](nsformcell.md)
+- [class NSForm](./nsform.md)
+  An `NSForm` object is a vertical matrix of [`NSFormCell`](./nsformcell.md) objects to implement the fields.
+- [class NSFormCell](./nsformcell.md)
   The `NSFormCell` class is used to implement text entry fields in a form. The left part of an `NSFormCell` object contains a title. The right part contains an editable text entry field.
-- [class NSMenuItemCell](nsmenuitemcell.md)
+- [class NSMenuItemCell](./nsmenuitemcell.md)
   An object that handles the measurement and display of a single menu item in its encompassing frame.
 
 

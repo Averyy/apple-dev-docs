@@ -1,7 +1,8 @@
 # week(ofYearSelection:canSelectWeekOfYear:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines if a week is available for selection.
 
@@ -17,9 +18,14 @@ Determines if a week is available for selection.
 optional func week(ofYearSelection selection: UICalendarSelectionWeekOfYear, canSelectWeekOfYear weekOfYearComponents: DateComponents?) -> Bool
 ```
 
+```objc
+- (BOOL) weekOfYearSelection:(UICalendarSelectionWeekOfYear *) selection canSelectWeekOfYear:(NSDateComponents *) weekOfYearComponents;
+```
+
 ## See Also
 
-- [func week(ofYearSelection: UICalendarSelectionWeekOfYear, didSelectWeekOfYear: DateComponents?)](uicalendarselectionweekofyeardelegate/week(ofyearselection:didselectweekofyear:).md)
+### Handling week-of-year selections
+- [func week(ofYearSelection: UICalendarSelectionWeekOfYear, didSelectWeekOfYear: DateComponents?)](./week%28ofyearselection,didselectweekofyear%29.md)
   Notifies the delegate after a person selects a week in the calendar view.
 
 

@@ -1,7 +1,8 @@
 # inputDelete
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A string that represents the Delete key.
 
@@ -19,9 +20,14 @@ nonisolated
 class let inputDelete: String
 ```
 
+```c
+extern NSString * const UIKeyInputDelete;
+```
+
 ## See Also
 
-- [class let inputEscape: String](uikeycommand/inputescape.md)
+### Control keys
+- [class let inputEscape: String](./inputescape.md)
   A string that represents the Escape key.
 
 

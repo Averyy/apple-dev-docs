@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kRegEntryNameTerminator](1645158-anonymous/kregentrynameterminator.md)
-- [kRegPathNameSeparator](1645158-anonymous/kregpathnameseparator.md)
-- [kRegPathNameTerminator](1645158-anonymous/kregpathnameterminator.md)
+- [kRegEntryNameTerminator](./api-1645158-anonymous/kregentrynameterminator.md)
+- [kRegPathNameSeparator](./api-1645158-anonymous/kregpathnameseparator.md)
+- [kRegPathNameTerminator](./api-1645158-anonymous/kregpathnameterminator.md)
 
 
 ---

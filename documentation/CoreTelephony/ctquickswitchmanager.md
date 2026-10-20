@@ -1,7 +1,8 @@
 # CTQuickSwitchManager
 
 **Framework**: Core Telephony  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that enables an app to register and query a device’s quick switch state.
 
@@ -16,43 +17,48 @@ An object that enables an app to register and query a device’s quick switch st
 class CTQuickSwitchManager
 ```
 
+```objc
+@interface CTQuickSwitchManager : NSObject
+```
+
 ## Topics
 
 ### Getting the state of the device
-- [func getDeviceState((CTQuickSwitchState, (any Error)?) -> Void)](ctquickswitchmanager/getdevicestate(_:).md)
+- [func getDeviceState((CTQuickSwitchState, (any Error)?) -> Void)](./ctquickswitchmanager/getdevicestate%28_%29.md)
   Gets the quick switch state of the current device.
-- [func getPhoneNumberState(forSuffix: String, completion: (CTQuickSwitchState, (any Error)?) -> Void)](ctquickswitchmanager/getphonenumberstate(forsuffix:completion:).md)
+- [func getPhoneNumberState(forSuffix: String, completion: (CTQuickSwitchState, (any Error)?) -> Void)](./ctquickswitchmanager/getphonenumberstate%28forsuffix,completion%29.md)
   Queries the quick switch state for a phone number whose suffix matches the provided phone number suffix.
 ### Registering and unregistering a device
-- [class func registerForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/registerforlaunch(onquickswitchstateevents:).md)
+- [class func registerForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](./ctquickswitchmanager/registerforlaunch%28onquickswitchstateevents%29.md)
   Registers the calling app for background launch whenever the device’s quick switch state changes.
-- [class func unregisterForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/unregisterforlaunch(onquickswitchstateevents:).md)
+- [class func unregisterForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](./ctquickswitchmanager/unregisterforlaunch%28onquickswitchstateevents%29.md)
   Removes the calling app’s registration for background launch on quick switch state changes.
 ### Responding to changes in the quick switch state
-- [var delegate: (any CTQuickSwitchManager.Delegate)?](ctquickswitchmanager/delegate-swift.property.md)
+- [var delegate: (any CTQuickSwitchManager.Delegate)?](./ctquickswitchmanager/delegate-swift.property.md)
   An object the system notifies to respond to quick switch events.
-- [func quickSwitchManager(CTQuickSwitchManager, didChangeTo: CTQuickSwitchState)](ctquickswitchmanager/delegate-swift.protocol/quickswitchmanager(_:didchangeto:).md)
+- [func quickSwitchManager(CTQuickSwitchManager, didChangeTo: CTQuickSwitchState)](./ctquickswitchmanager/delegate-swift.protocol/quickswitchmanager%28_,didchangeto%29.md)
   Indicates there’s been a change in device’s quick switch state.
-- [enum CTQuickSwitchState](ctquickswitchstate.md)
+- [enum CTQuickSwitchState](./ctquickswitchstate.md)
   Values that describe a device’s quick switch status.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any CTQuickSwitchManager.Delegate)?](ctquickswitchmanager/delegate-swift.property.md)
+### Adopting iPhone quick switch
+- [var delegate: (any CTQuickSwitchManager.Delegate)?](./ctquickswitchmanager/delegate-swift.property.md)
   An object the system notifies to respond to quick switch events.
-- [CTQuickSwitchManager.Delegate](ctquickswitchmanager/delegate-swift.protocol.md)
+- [CTQuickSwitchManager.Delegate](./ctquickswitchmanager/delegate-swift.protocol.md)
   Methods you implement to respond to changes in a device’s quick switch state.
 
 

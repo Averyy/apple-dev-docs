@@ -1,14 +1,15 @@
 # ConfigureInterrupts_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 12.3+ - Deprecated in 12.3
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t ConfigureInterrupts_Invoke(const IORPC rpc, OSMetaClassBase *target, ConfigureInterrupts_Handler func);
 ```
 

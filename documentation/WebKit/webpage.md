@@ -1,7 +1,8 @@
 # WebPage
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that controls and manages the behavior of interactive web content.
 
@@ -21,7 +22,7 @@ final class WebPage
 
 #### Overview
 
-A [`WebPage`](webpage.md) is an [`Observable`](https://developer.apple.com/documentation/observation/observable) type, which you use to access various properties of web content and track changes to them. Use [`WebPage`](webpage.md) to interact with web content, like evaluating JavaScript or converting the page to PDF data. The following example shows you how you can combine these capabilities to get specific metadata from an ephemeral page with a custom user agent:
+A [`WebPage`](./webpage.md) is an [`Observable`](../Observation/observable.md) type, which you use to access various properties of web content and track changes to them. Use [`WebPage`](./webpage.md) to interact with web content, like evaluating JavaScript or converting the page to PDF data. The following example shows you how you can combine these capabilities to get specific metadata from an ephemeral page with a custom user agent:
 
 ```swift
 func fetchMetadata(for url: URL) async throws -> (title: String, description: String) {
@@ -67,171 +68,172 @@ func fetchMetadata(for url: URL) async throws -> (title: String, description: St
 }
 ```
 
-Use [`WebPage`](webpage.md) to programmatically navigate to various types of resources like URL requests, HTML strings, and data. Optionally, you can observe these navigations through the async sequence returned by their associated loading functions, and you can customize them by using a type that conforms to the [`WebPage.NavigationDeciding`](webpage/navigationdeciding.md) protocol. You can also use the [`backForwardList`](webpage/backforwardlist-swift.property.md) property to observe changes to people’s navigation history, and to programmatically navigate to a specific back-forward list item.
+Use [`WebPage`](./webpage.md) to programmatically navigate to various types of resources like URL requests, HTML strings, and data. Optionally, you can observe these navigations through the async sequence returned by their associated loading functions, and you can customize them by using a type that conforms to the [`WebPage.NavigationDeciding`](./webpage/navigationdeciding.md) protocol. You can also use the [`backForwardList`](./webpage/backforwardlist-swift.property.md) property to observe changes to people’s navigation history, and to programmatically navigate to a specific back-forward list item.
 
-[`WebPage`](webpage.md) also conforms to the `Transferable` protocol. You can use this conformance to export the page to various different types of content, like PDF, web archive data, and other types. For customization of PDF or image exprt, use [`exported(as:)`](webpage/exported(as:).md).
+[`WebPage`](./webpage.md) also conforms to the `Transferable` protocol. You can use this conformance to export the page to various different types of content, like PDF, web archive data, and other types. For customization of PDF or image exprt, use [`exported(as:)`](./webpage/exported%28as%29.md).
 
 ## Topics
 
 ### Creating a WebPage
-- [WebPage.Configuration](webpage/configuration.md)
+- [WebPage.Configuration](./webpage/configuration.md)
   A configuration type that specifies the preferences and behaviors of a webpage.
-- [convenience init(configuration: WebPage.Configuration)](webpage/init(configuration:).md)
+- [convenience init(configuration: WebPage.Configuration)](./webpage/init%28configuration%29.md)
   Create a new WebPage.
-- [convenience init(configuration: WebPage.Configuration, dialogPresenter: some WebPage.DialogPresenting)](webpage/init(configuration:dialogpresenter:).md)
+- [convenience init(configuration: WebPage.Configuration, dialogPresenter: some WebPage.DialogPresenting)](./webpage/init%28configuration,dialogpresenter%29.md)
   Create a new WebPage.
-- [convenience init(configuration: WebPage.Configuration, navigationDecider: some WebPage.NavigationDeciding)](webpage/init(configuration:navigationdecider:).md)
+- [convenience init(configuration: WebPage.Configuration, navigationDecider: some WebPage.NavigationDeciding)](./webpage/init%28configuration,navigationdecider%29.md)
   Create a new WebPage.
-- [convenience init(configuration: WebPage.Configuration, navigationDecider: some WebPage.NavigationDeciding, dialogPresenter: some WebPage.DialogPresenting)](webpage/init(configuration:navigationdecider:dialogpresenter:).md)
+- [convenience init(configuration: WebPage.Configuration, navigationDecider: some WebPage.NavigationDeciding, dialogPresenter: some WebPage.DialogPresenting)](./webpage/init%28configuration,navigationdecider,dialogpresenter%29.md)
   Create a new WebPage.
 ### Managing navigation between webpages
-- [protocol NavigationDeciding](webpage/navigationdeciding.md)
+- [protocol NavigationDeciding](./webpage/navigationdeciding.md)
   Allows providing custom behavior to handle navigation changes and to coordinate these changes for the web page’s main page.
-- [WebPage.NavigationAction](webpage/navigationaction.md)
+- [WebPage.NavigationAction](./webpage/navigationaction.md)
   An object that contains information about an action that causes navigation to occur.
-- [WebPage.NavigationResponse](webpage/navigationresponse.md)
+- [WebPage.NavigationResponse](./webpage/navigationresponse.md)
   An object that contains the response to a navigation request, and which you use to make navigation-related policy decisions.
-- [WebPage.NavigationPreferences](webpage/navigationpreferences.md)
+- [WebPage.NavigationPreferences](./webpage/navigationpreferences.md)
   A type that specifies the behaviors to use when loading and rendering page content.
-- [var backForwardList: WebPage.BackForwardList](webpage/backforwardlist-swift.property.md)
+- [var backForwardList: WebPage.BackForwardList](./webpage/backforwardlist-swift.property.md)
   The webpage’s back-forward list.
-- [WebPage.FrameInfo](webpage/frameinfo.md)
+- [WebPage.FrameInfo](./webpage/frameinfo.md)
   A type that contains information about a frame on a webpage.
 ### Observing navigation between webpages
-- [WebPage.BackForwardList](webpage/backforwardlist-swift.struct.md)
+- [WebPage.BackForwardList](./webpage/backforwardlist-swift.struct.md)
   An observable representation of a webpage’s previously loaded resources.
-- [WebPage.NavigationEvent](webpage/navigationevent.md)
+- [WebPage.NavigationEvent](./webpage/navigationevent.md)
   A particular state that occurs during the progression of a navigation.
-- [var navigations: some AsyncSequence<WebPage.NavigationEvent, any Error>](webpage/navigations.md)
+- [var navigations: some AsyncSequence<WebPage.NavigationEvent, any Error>](./webpage/navigations.md)
   A sequence of all the navigation events that occur throughout the webpage, including both user navigation and programmatic navigation.
-- [WebPage.NavigationError](webpage/navigationerror.md)
+- [WebPage.NavigationError](./webpage/navigationerror.md)
   A specific error that caused a navigation to fail.
 ### Configuring a WebPage
-- [WebPage.Configuration](webpage/configuration.md)
+- [WebPage.Configuration](./webpage/configuration.md)
   A configuration type that specifies the preferences and behaviors of a webpage.
-- [WebPage.DeviceSensorAuthorization](webpage/devicesensorauthorization.md)
+- [WebPage.DeviceSensorAuthorization](./webpage/devicesensorauthorization.md)
   A type that describes the authorization permissions policy for the device’s sensors a web resource may access.
-- [struct URLScheme](urlscheme.md)
+- [struct URLScheme](./urlscheme.md)
   A type representing a valid URL scheme.
-- [protocol URLSchemeHandler](urlschemehandler.md)
+- [protocol URLSchemeHandler](./urlschemehandler.md)
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
-- [enum URLSchemeTaskResult](urlschemetaskresult.md)
-  A value used as part of a sequence of results from a [`URLSchemeHandler`](urlschemehandler.md), which can either be a `Data` or a `URLResponse`.
+- [enum URLSchemeTaskResult](./urlschemetaskresult.md)
+  A value used as part of a sequence of results from a [`URLSchemeHandler`](./urlschemehandler.md), which can either be a `Data` or a `URLResponse`.
 ### Loading web content
 - [func load(WebPage.BackForwardList.Item) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
-](webpage/load(_:)-32ngj.md)
+](./webpage/load%28_%29-32ngj.md)
   Navigates to an item from the back-forward list and sets it as the current item.
 - [func load(URLRequest) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
-](webpage/load(_:)-7kw3h.md)
+](./webpage/load%28_%29-7kw3h.md)
   Loads the web content that the specified URL request object references and navigates to that content.
 - [func load(URL?) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
-](webpage/load(_:)-8wfiq.md)
+](./webpage/load%28_%29-8wfiq.md)
   Loads the web content that the specified URL references and navigates to that content.
 - [func load(Data, mimeType: String, characterEncoding: String.Encoding, baseURL: URL) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
-](webpage/load(_:mimetype:characterencoding:baseurl:).md)
+](./webpage/load%28_,mimetype,characterencoding,baseurl%29.md)
   Loads the content of the specified data object and navigates to it.
 - [func load(html: String, baseURL: URL) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
-](webpage/load(html:baseurl:).md)
+](./webpage/load%28html,baseurl%29.md)
   Loads the contents of the specified HTML string and navigates to it.
 - [func load(simulatedRequest: URLRequest, responseHTML: String) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
-](webpage/load(simulatedrequest:responsehtml:).md)
+](./webpage/load%28simulatedrequest,responsehtml%29.md)
   Loads the web content from the HTML you provide as if the HTML were the response to the request.
 - [func load(simulatedRequest: URLRequest, response: URLResponse, responseData: Data) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
-](webpage/load(simulatedrequest:response:responsedata:).md)
+](./webpage/load%28simulatedrequest,response,responsedata%29.md)
   Loads the web content from the data you provide as if the data were the response to the request.
-- [var isLoading: Bool](webpage/isloading.md)
+- [var isLoading: Bool](./webpage/isloading.md)
   Indicates whether the webpage is currently loading content.
-- [var estimatedProgress: Double](webpage/estimatedprogress.md)
+- [var estimatedProgress: Double](./webpage/estimatedprogress.md)
   An estimate of completion percentage of the current navigation.
 ### Managing the loading process
 - [func reload(fromOrigin: Bool) -> some AsyncSequence<WebPage.NavigationEvent, any Error>
-](webpage/reload(fromorigin:).md)
+](./webpage/reload%28fromorigin%29.md)
   Reloads the current webpage.
-- [func stopLoading()](webpage/stoploading.md)
+- [func stopLoading()](./webpage/stoploading%28%29.md)
   Stops loading all resources on the current page.
 ### Inspecting page information
-- [WebPage.CSSMediaType](webpage/cssmediatype.md)
-  A CSS media type as defined by the [`CSS specification`](https://developer.apple.comhttps://www.w3.org/TR/mediaqueries-4/#media-types), or an arbitrary media type value.
-- [var title: String](webpage/title.md)
+- [WebPage.CSSMediaType](./webpage/cssmediatype.md)
+  A CSS media type as defined by the [CSS specification](https://www.w3.org/TR/mediaqueries-4/#media-types), or an arbitrary media type value.
+- [var title: String](./webpage/title.md)
   The page title.
-- [var url: URL?](webpage/url.md)
+- [var url: URL?](./webpage/url.md)
   The URL for the current webpage.
-- [var mediaType: WebPage.CSSMediaType?](webpage/mediatype.md)
+- [var mediaType: WebPage.CSSMediaType?](./webpage/mediatype.md)
   The media type for the contents of the webpage.
-- [var customUserAgent: String?](webpage/customuseragent.md)
+- [var customUserAgent: String?](./webpage/customuseragent.md)
   The custom user agent string.
-- [var serverTrust: SecTrust?](webpage/servertrust.md)
+- [var serverTrust: SecTrust?](./webpage/servertrust.md)
   The trust management object you use to evaluate trust for the current webpage.
-- [var hasOnlySecureContent: Bool](webpage/hasonlysecurecontent.md)
+- [var hasOnlySecureContent: Bool](./webpage/hasonlysecurecontent.md)
   Indicates whether the webpage loaded all resources on the page through securely encrypted connections.
-- [var themeColor: Color?](webpage/themecolor.md)
+- [var themeColor: Color?](./webpage/themecolor.md)
   The theme color that the system gets from the first valid meta tag in the webpage.
-- [var isBlockedByScreenTime: Bool](webpage/isblockedbyscreentime.md)
+- [var isBlockedByScreenTime: Bool](./webpage/isblockedbyscreentime.md)
   Indicates whether Screen Time blocking has occurred.
-- [var isInspectable: Bool](webpage/isinspectable.md)
+- [var isInspectable: Bool](./webpage/isinspectable.md)
   Indicates whether you can inspect the page with Safari Web Inspector.
-- [var isWritingToolsActive: Bool](webpage/iswritingtoolsactive.md)
+- [var isWritingToolsActive: Bool](./webpage/iswritingtoolsactive.md)
   Indicates whether Writing Tools is active for the page.
 ### Executing JavaScript
-- [func callJavaScript(String, arguments: [String : Any], in: WebPage.FrameInfo?, contentWorld: WKContentWorld?) async throws -> sending Any?](webpage/calljavascript(_:arguments:in:contentworld:).md)
+- [func callJavaScript(String, arguments: [String : Any], in: WebPage.FrameInfo?, contentWorld: WKContentWorld?) async throws -> sending Any?](./webpage/calljavascript%28_,arguments,in,contentworld%29.md)
   Executes the specified string as an async JavaScript function.
 ### Customizing JavaScript dialogs
-- [protocol DialogPresenting](webpage/dialogpresenting.md)
+- [protocol DialogPresenting](./webpage/dialogpresenting.md)
   Allows providing custom behavior to handle JavaScript actions and provide a response.
-- [WebPage.FileInputPromptResult](webpage/fileinputpromptresult.md)
+- [WebPage.FileInputPromptResult](./webpage/fileinputpromptresult.md)
   The result of handling a JavaScript open invocation.
-- [WebPage.JavaScriptConfirmResult](webpage/javascriptconfirmresult.md)
+- [WebPage.JavaScriptConfirmResult](./webpage/javascriptconfirmresult.md)
   The result of handling a JavaScript confirm invocation.
-- [WebPage.JavaScriptPromptResult](webpage/javascriptpromptresult.md)
+- [WebPage.JavaScriptPromptResult](./webpage/javascriptpromptresult.md)
   The result of handling a JavaScript confirm invocation.
 ### Exporting webpage content
-- [WebPage.ExportedContentConfiguration](webpage/exportedcontentconfiguration.md)
+- [WebPage.ExportedContentConfiguration](./webpage/exportedcontentconfiguration.md)
   A specialized configuration of a specific exportable type that can have specific properties unique to the content type.
-- [func exported(as: WebPage.ExportedContentConfiguration) async throws -> Data](webpage/exported(as:).md)
+- [func exported(as: WebPage.ExportedContentConfiguration) async throws -> Data](./webpage/exported%28as%29.md)
   Using the type’s `Transferable` conformance implementation, exports a value as binary data, optionally with a specified configuration for that type of data.
 ### Interacting with media
-- [WebPage.FullscreenState](webpage/fullscreenstate-swift.enum.md)
+- [WebPage.FullscreenState](./webpage/fullscreenstate-swift.enum.md)
   The set of possible fullscreen states a webpage may be in.
-- [func pauseAllMediaPlayback() async](webpage/pauseallmediaplayback.md)
+- [func pauseAllMediaPlayback() async](./webpage/pauseallmediaplayback%28%29.md)
   Pauses playback of all media in the web view.
-- [func mediaPlaybackState() async -> WKMediaPlaybackState](webpage/mediaplaybackstate.md)
+- [func mediaPlaybackState() async -> WKMediaPlaybackState](./webpage/mediaplaybackstate%28%29.md)
   Determine the playback status of media in the page.
-- [func setAllMediaPlaybackSuspended(Bool) async](webpage/setallmediaplaybacksuspended(_:).md)
+- [func setAllMediaPlaybackSuspended(Bool) async](./webpage/setallmediaplaybacksuspended%28_%29.md)
   Changes whether the webpage is suspending playback of all media in the page.
-- [func closeAllMediaPresentations() async](webpage/closeallmediapresentations.md)
+- [func closeAllMediaPresentations() async](./webpage/closeallmediapresentations%28%29.md)
   Closes all media the webpage is presenting, including picture-in-picture video and fullscreen video.
-- [var fullscreenState: WebPage.FullscreenState](webpage/fullscreenstate-swift.property.md)
+- [var fullscreenState: WebPage.FullscreenState](./webpage/fullscreenstate-swift.property.md)
   The fullscreen state the page is currently in.
 ### Managing the microphone and camera
-- [var cameraCaptureState: WKMediaCaptureState](webpage/cameracapturestate.md)
+- [var cameraCaptureState: WKMediaCaptureState](./webpage/cameracapturestate.md)
   Indicates whether the webpage is using the camera to capture images or video.
-- [var microphoneCaptureState: WKMediaCaptureState](webpage/microphonecapturestate.md)
+- [var microphoneCaptureState: WKMediaCaptureState](./webpage/microphonecapturestate.md)
   Indicates whether the webpage is using the microphone to capture audio.
-- [func setCameraCaptureState(WKMediaCaptureState) async](webpage/setcameracapturestate(_:).md)
+- [func setCameraCaptureState(WKMediaCaptureState) async](./webpage/setcameracapturestate%28_%29.md)
   Changes whether the webpage is using the camera to capture images or video.
-- [func setMicrophoneCaptureState(WKMediaCaptureState) async](webpage/setmicrophonecapturestate(_:).md)
+- [func setMicrophoneCaptureState(WKMediaCaptureState) async](./webpage/setmicrophonecapturestate%28_%29.md)
   Changes whether the webpage is using the microphone to capture audio.
 ### Structures
-- [WebPage.FormInfo](webpage/forminfo.md)
+- [WebPage.FormInfo](./webpage/forminfo.md)
   A type that contains information about a form submission from a webpage.
-- [WebPage.ImmersiveEnvironment](webpage/immersiveenvironment.md)
+- [WebPage.ImmersiveEnvironment](./webpage/immersiveenvironment.md)
   An object representing a website-provided immersive environment that is ready for presentation.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transferable](../coretransferable/transferable.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Transferable](../CoreTransferable/transferable.md)
 
 ## See Also
 
-- [Building a cross-platform web browser](building-a-cross-platform-web-browser.md)
+### Essentials
+- [Building a cross-platform web browser](./building-a-cross-platform-web-browser.md)
   Implement a browser on multiple platforms that loads content, manages navigation history, and saves favorite websites, using WebKit for SwiftUI.
-- [struct WebView](webview-swift.struct.md)
+- [struct WebView](./webview-swift.struct.md)
   A view that displays some web content.
 
 

@@ -1,9 +1,10 @@
 # keyProcessSerialNumber
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Process serial number. See also [`AEManagerInfo(_:_:)`](1449373-aemanagerinfo.md).
+Process serial number. See also [`AEManagerInfo(_:_:)`](./api-1449373-aemanagerinfo.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

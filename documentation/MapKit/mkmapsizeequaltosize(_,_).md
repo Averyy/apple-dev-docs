@@ -1,18 +1,19 @@
 # MKMapSizeEqualToSize(_:_:)
 
 **Framework**: MapKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether two map sizes are equal.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether two map sizes are equal.
 func MKMapSizeEqualToSize(_ size1: MKMapSize, _ size2: MKMapSize) -> Bool
 ```
 
+```c
+static BOOL MKMapSizeEqualToSize(MKMapSize size1, MKMapSize size2);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the `width` and `height` values in both sizes are exactly the same, or [`false`](https://developer.apple.com/documentation/swift/false) if one or both values are different.
+[`true`](../Swift/true.md) if the `width` and `height` values in both sizes are exactly the same, or [`false`](../Swift/false.md) if one or both values are different.
 
 ## Parameters
 

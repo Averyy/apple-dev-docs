@@ -1,7 +1,8 @@
 # addException(for:)
 
 **Framework**: Execution Policy  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 func addException(for url: URL) throws
+```
+
+```objc
+- (BOOL) addPolicyExceptionForURL:(NSURL *) url error:(NSError **) error;
 ```
 
 

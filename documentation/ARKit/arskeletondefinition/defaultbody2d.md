@@ -1,7 +1,8 @@
 # defaultBody2D
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default skeleton definition for bodies defined in 2D.
 
@@ -13,6 +14,10 @@ The default skeleton definition for bodies defined in 2D.
 
 ```swift
 class var defaultBody2D: ARSkeletonDefinition { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) ARSkeletonDefinition * defaultBody2DSkeletonDefinition;
 ```
 
 

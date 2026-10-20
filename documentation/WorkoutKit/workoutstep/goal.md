@@ -1,7 +1,8 @@
 # goal
 
 **Framework**: WorkoutKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A goal that determines when the step ends.
 
@@ -20,7 +21,8 @@ var goal: WorkoutGoal
 
 ## See Also
 
-- [var alert: (any WorkoutAlert)?](workoutstep/alert.md)
+### Accessing step data
+- [var alert: (any WorkoutAlert)?](./alert.md)
   Alerts used during the step.
 
 

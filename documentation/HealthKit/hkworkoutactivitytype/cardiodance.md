@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.cardioDance
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for cardiovascular dance workouts.
 
@@ -19,21 +20,26 @@ The constant for cardiovascular dance workouts.
 case cardioDance
 ```
 
+```c
+HKWorkoutActivityTypeCardioDance
+```
+
 #### Discussion
 
 HealthKit provides optimized calorie calculations for this activity based on the data from Apple Watch’s sensors.
 
 ## See Also
 
-- [HKWorkoutActivityType.barre](hkworkoutactivitytype/barre.md)
+### Studio activities
+- [HKWorkoutActivityType.barre](./barre.md)
   The constant for barre workout.
-- [HKWorkoutActivityType.socialDance](hkworkoutactivitytype/socialdance.md)
+- [HKWorkoutActivityType.socialDance](./socialdance.md)
   The constant for dancing with a partner or partners, such as swing, salsa, or folk dances.
-- [HKWorkoutActivityType.yoga](hkworkoutactivitytype/yoga.md)
+- [HKWorkoutActivityType.yoga](./yoga.md)
   The constant for practicing yoga.
-- [HKWorkoutActivityType.mindAndBody](hkworkoutactivitytype/mindandbody.md)
+- [HKWorkoutActivityType.mindAndBody](./mindandbody.md)
   The constant for performing activities like walking meditation, Gyrotonic exercise, and Qigong.
-- [HKWorkoutActivityType.pilates](hkworkoutactivitytype/pilates.md)
+- [HKWorkoutActivityType.pilates](./pilates.md)
   The constant for a pilates workout.
 
 

@@ -1,7 +1,8 @@
 # columnViewTemplateName
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A column view mode template image.
 
@@ -17,37 +18,42 @@ A column view mode template image.
 class let columnViewTemplateName: String
 ```
 
+```c
+extern NSImageName const NSImageNameColumnViewTemplate;
+```
+
 ## See Also
 
-- [class let actionTemplateName: String](nsimage/actiontemplatename.md)
+### System Images
+- [class let actionTemplateName: String](./actiontemplatename.md)
   An action menu template image.
-- [class let addTemplateName: String](nsimage/addtemplatename.md)
+- [class let addTemplateName: String](./addtemplatename.md)
   An add item template image.
-- [class let advancedName: String](nsimage/advancedname.md)
+- [class let advancedName: String](./advancedname.md)
   Advanced preferences toolbar icon for the preferences window.
-- [class let applicationIconName: String](nsimage/applicationiconname.md)
+- [class let applicationIconName: String](./applicationiconname.md)
   The app’s icon.
-- [class let bluetoothTemplateName: String](nsimage/bluetoothtemplatename.md)
+- [class let bluetoothTemplateName: String](./bluetoothtemplatename.md)
   A Bluetooth template image.
-- [class let bonjourName: String](nsimage/bonjourname.md)
+- [class let bonjourName: String](./bonjourname.md)
   A Bonjour icon.
-- [class let bookmarksTemplateName: String](nsimage/bookmarkstemplatename.md)
+- [class let bookmarksTemplateName: String](./bookmarkstemplatename.md)
   Bookmarks image suitable for a template.
-- [class let cautionName: String](nsimage/cautionname.md)
+- [class let cautionName: String](./cautionname.md)
   A caution image.
-- [class let colorPanelName: String](nsimage/colorpanelname.md)
+- [class let colorPanelName: String](./colorpanelname.md)
   A color panel toolbar icon.
-- [class let computerName: String](nsimage/computername.md)
+- [class let computerName: String](./computername.md)
   A computer icon.
-- [class let enterFullScreenTemplateName: String](nsimage/enterfullscreentemplatename.md)
+- [class let enterFullScreenTemplateName: String](./enterfullscreentemplatename.md)
   An enter full-screen mode template image.
-- [class let everyoneName: String](nsimage/everyonename.md)
+- [class let everyoneName: String](./everyonename.md)
   Permissions for all users.
-- [class let exitFullScreenTemplateName: String](nsimage/exitfullscreentemplatename.md)
+- [class let exitFullScreenTemplateName: String](./exitfullscreentemplatename.md)
   An exit full-screen mode template image.
-- [class let flowViewTemplateName: String](nsimage/flowviewtemplatename.md)
+- [class let flowViewTemplateName: String](./flowviewtemplatename.md)
   A cover flow view mode template image.
-- [class let folderName: String](nsimage/foldername.md)
+- [class let folderName: String](./foldername.md)
   A folder image.
 
 

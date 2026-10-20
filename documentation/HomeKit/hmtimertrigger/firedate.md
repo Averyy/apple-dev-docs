@@ -1,7 +1,8 @@
 # fireDate
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which the trigger will next fire.
 
@@ -19,13 +20,18 @@ The time at which the trigger will next fire.
 var fireDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDate * fireDate;
+```
+
 #### Discussion
 
 Timer triggers are only set at the beginning of a minute. Seconds are not used and an error will be returned if the fire date includes a seconds value other than 0. When the timer fires, it will typically fire within 1 minute of the scheduled fire date or calculated recurrence fire date, depending on system power and resource management.
 
 ## See Also
 
-- [func updateFireDate(Date, completionHandler: ((any Error)?) -> Void)](hmtimertrigger/updatefiredate(_:completionhandler:).md)
+### Choosing the fire date
+- [func updateFireDate(Date, completionHandler: ((any Error)?) -> Void)](./updatefiredate%28_,completionhandler%29.md)
   Updates the next fire date for the trigger.
 
 

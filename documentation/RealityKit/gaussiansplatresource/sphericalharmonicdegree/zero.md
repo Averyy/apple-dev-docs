@@ -1,7 +1,8 @@
 # GaussianSplatResource.SphericalHarmonicDegree.zero
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 3 values: diffuse color only.
 

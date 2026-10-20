@@ -1,14 +1,15 @@
 # low
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 - macOS 27.0+
-- tvOS ?+
+- tvOS
 - visionOS 27.0+
 
 ## Declaration
@@ -19,7 +20,8 @@ static var low: SpotLightComponent.Shadow.QualityMode { get }
 
 ## See Also
 
-- [static var medium: SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/qualitymode/medium.md)
+### Choosing a quality level
+- [static var medium: SpotLightComponent.Shadow.QualityMode](./medium.md)
 
 
 ---

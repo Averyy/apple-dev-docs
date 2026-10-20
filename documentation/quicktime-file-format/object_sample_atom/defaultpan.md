@@ -1,7 +1,8 @@
 # defaultPan
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The default pan angle, in degrees.
 
@@ -11,35 +12,36 @@ This is the pan angle used when the object is first displayed. The value of this
 
 ## See Also
 
-- [majorVersion](object_sample_atom/majorversion.md)
+### Data fields
+- [majorVersion](./majorversion.md)
   The major version number of the file format.
-- [minorVersion](object_sample_atom/minorversion.md)
+- [minorVersion](./minorversion.md)
   The minor version number of the file format.
-- [movieType](object_sample_atom/movietype.md)
+- [movieType](./movietype.md)
   The movie controller type.
-- [viewStateCount](object_sample_atom/viewstatecount.md)
+- [viewStateCount](./viewstatecount.md)
   The number of view states of the object.
-- [defaultViewState](object_sample_atom/defaultviewstate.md)
+- [defaultViewState](./defaultviewstate.md)
   The 1-based index of the default view state.
-- [mouseDownViewState](object_sample_atom/mousedownviewstate.md)
+- [mouseDownViewState](./mousedownviewstate.md)
   The 1-based index of the mouse-down view state.
-- [viewDuration](object_sample_atom/viewduration.md)
+- [viewDuration](./viewduration.md)
   The total movie duration of all image frames contained in an object’s view.
-- [columns](object_sample_atom/columns.md)
+- [columns](./columns.md)
   The number of columns in the object image array.
-- [rows](object_sample_atom/rows.md)
+- [rows](./rows.md)
   The number of rows in the object image array.
-- [mouseMotionScale](object_sample_atom/mousemotionscale.md)
+- [mouseMotionScale](./mousemotionscale.md)
   The mouse motion scale factor.
-- [minPan](object_sample_atom/minpan.md)
+- [minPan](./minpan.md)
   The minimum pan angle, in degrees.
-- [maxPan](object_sample_atom/maxpan.md)
+- [maxPan](./maxpan.md)
   The maximum pan angle, in degrees.
-- [minTilt](object_sample_atom/mintilt.md)
+- [minTilt](./mintilt.md)
   The minimum tilt angle, in degrees.
-- [maxTilt](object_sample_atom/maxtilt.md)
+- [maxTilt](./maxtilt.md)
   The maximum tilt angle, in degrees.
-- [defaultTilt](object_sample_atom/defaulttilt.md)
+- [defaultTilt](./defaulttilt.md)
   The default tilt angle, in degrees.
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct inpcb64_list_entry {
     ...
 };
@@ -17,8 +17,8 @@ struct inpcb64_list_entry {
 ## Topics
 
 ### Instance Properties
-- [le_next](inpcb64_list_entry/3754378-le_next.md)
-- [le_prev](inpcb64_list_entry/3754379-le_prev.md)
+- [le_next](./inpcb64_list_entry/api-3754378-le_next.md)
+- [le_prev](./inpcb64_list_entry/api-3754379-le_prev.md)
 
 
 ---

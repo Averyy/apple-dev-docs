@@ -1,6 +1,7 @@
 # Gaussian Splat Rendering Guidelines
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Article
 
 Improving performance and watching thermal state when rendering Gaussian splats
 
@@ -16,7 +17,7 @@ The `GaussianSplatComponent` renders the 3D Gaussian splat asset contained in it
 
 High compute load due to particularly demanding content may cause a device to become uncomfortably warm. While the system will throttle rendering to preserve frame rate, ***it is up to the developer to mitigate thermal impact***.  Apps should stay cool by observing the `NotificationCenter thermalStateDidChangeNotification`, and taking steps to reduce the load if the `ProcessInfo.thermalState` reaches serious or critical. The system will *not* automatically limit the rendering of an entity’s `GaussianSplatResource` in response to thermal state, so it is incumbent on developers to reduce the entity complexity until the thermal state has returned to fair or better.
 
-##### Reducing Gaussian Splat Complexity
+##### Reducing Gaussian splat complexity
 
 Much of the rendering cost of Gaussian splats is due to overdraw of numerous partially transparent splats. While much research effort goes into producing further optimized splats, some relatively simple approaches may reduce complexity with acceptable quality tradeoffs. Approaches to consider include truncating, decimating, or downsampling splat clouds, or culling less significant splats. Producing lower level of detail versions of splat assets may allow you to preserve performance when the system thermal levels or throttling state point to excessive rendering demands.
 

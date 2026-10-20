@@ -1,7 +1,8 @@
 # OrthographicCameraComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that defines an orthographic virtual camera and its settings.
 
@@ -27,7 +28,7 @@ To create an orthographic camera, add this component to an entity.
 
 | **Perspective camera** | **Orthographic camera** |
 | --- | --- |
-| ![An illustration of three cubes, one behind the other, rendered with a perspective camera. The cube farthest away appears smaller than the closest one.](/images/com.apple.RealityKit/orthocamera-perspective-cubes.png) | ![A screenshot of three cubes, one behind the other, rendered with a orthographic camera. The cubes appear the same size, regardless of their distance.](/images/com.apple.RealityKit/orthocamera-orthographic-cubes.png) |
+| ![An illustration of three cubes, one behind the other, rendered with a perspective camera. The cube farthest away appears smaller than the closest one.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/orthocamera-perspective-cubes.png) | ![A screenshot of three cubes, one behind the other, rendered with a orthographic camera. The cubes appear the same size, regardless of their distance.](https://developer.apple.com/tutorials/images/com.apple.RealityKit/orthocamera-orthographic-cubes.png) |
 
 You can add an `OrthographicCameraComponent` to an entity’s component set, and orient that entity so that it looks at a specific target using `Entity/look(at:from:upVector:relativeTo:)`.
 
@@ -54,34 +55,35 @@ In AR scenarios, the system provides the camera automatically; however, in non-A
 ## Topics
 
 ### Creating a camera component
-- [init()](orthographiccameracomponent/init.md)
+- [init()](./orthographiccameracomponent/init%28%29.md)
   Creates an orthographic camera component with default values.
 ### Setting focal points
-- [var far: Float](orthographiccameracomponent/far.md)
+- [var far: Float](./orthographiccameracomponent/far.md)
   The maximum distance in meters from the camera that the camera can see.
-- [var near: Float](orthographiccameracomponent/near.md)
+- [var near: Float](./orthographiccameracomponent/near.md)
   The minimum distance in meters from the camera that the camera can see.
 ### Setting the camera scale
-- [var scale: Float](orthographiccameracomponent/scale.md)
+- [var scale: Float](./orthographiccameracomponent/scale.md)
   A floating-point value the camera uses to scale entities.
-- [var scaleDirection: CameraFieldOfViewOrientation](orthographiccameracomponent/scaledirection.md)
+- [var scaleDirection: CameraFieldOfViewOrientation](./orthographiccameracomponent/scaledirection.md)
   The direction in which the camera applies scaling.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
-- [Equatable](../swift/equatable.md)
+- [Component](./component.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct PerspectiveCameraComponent](perspectivecameracomponent.md)
+### Cameras
+- [struct PerspectiveCameraComponent](./perspectivecameracomponent.md)
   A component that defines a virtual camera and its controls.
-- [enum CameraFieldOfViewOrientation](camerafieldofvieworientation.md)
+- [enum CameraFieldOfViewOrientation](./camerafieldofvieworientation.md)
   The orientations that a camera’s field-of-view degrees can apply.
-- [struct ProjectiveTransformCameraComponent](projectivetransformcameracomponent.md)
+- [struct ProjectiveTransformCameraComponent](./projectivetransformcameracomponent.md)
   A component that defines a virtual camera with a custom projection matrix.
-- [class PerspectiveCamera](perspectivecamera.md)
+- [class PerspectiveCamera](./perspectivecamera.md)
   A virtual camera that establishes the rendering perspective.
 
 

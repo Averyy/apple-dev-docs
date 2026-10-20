@@ -1,12 +1,13 @@
 # symbolic
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The symbolic traits value as a number object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ The symbolic traits value as a number object.
 static let symbolic: NSFontDescriptor.TraitKey
 ```
 
+```c
+extern NSFontDescriptorTraitKey NSFontSymbolicTrait;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
+The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object.
 
 ## See Also
 
-- [static let weight: NSFontDescriptor.TraitKey](nsfontdescriptor/traitkey/weight.md)
+### Trait Keys
+- [static let weight: NSFontDescriptor.TraitKey](./weight.md)
   The normalized weight value as a number object.
-- [static let width: NSFontDescriptor.TraitKey](nsfontdescriptor/traitkey/width.md)
+- [static let width: NSFontDescriptor.TraitKey](./width.md)
   The relative inter-glyph spacing value as a number object.
-- [static let slant: NSFontDescriptor.TraitKey](nsfontdescriptor/traitkey/slant.md)
+- [static let slant: NSFontDescriptor.TraitKey](./slant.md)
   The relative slant angle value as a number object.
 
 

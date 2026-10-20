@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Return the range for the text enclosing a text position in a text unit of a given granularity in a given direction.
@@ -10,7 +11,7 @@ Return the range for the text enclosing a text position in a text unit of a give
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Return the range for the text enclosing a text position in a text unit of a give
 func rangeEnclosingPosition(_ position: UITextPosition, with granularity: UITextGranularity, inDirection direction: UITextDirection) -> UITextRange?
 ```
 
+```objc
+- (UITextRange *) rangeEnclosingPosition:(UITextPosition *) position withGranularity:(UITextGranularity) granularity inDirection:(UITextDirection) direction;
+```
+
 #### Return Value
 
-A text-range representing a text unit of the given granularity in the given direction, or `nil` if there is no such enclosing unit.  Whether a boundary position is enclosed depends on the given direction, using the same rule as the [`isPosition(_:withinTextUnit:inDirection:)`](uitextinputtokenizer/isposition(_:withintextunit:indirection:).md) method.
+A text-range representing a text unit of the given granularity in the given direction, or `nil` if there is no such enclosing unit.  Whether a boundary position is enclosed depends on the given direction, using the same rule as the [`isPosition(_:withinTextUnit:inDirection:)`](./isposition%28_,withintextunit,indirection%29.md) method.
 
 #### Discussion
 

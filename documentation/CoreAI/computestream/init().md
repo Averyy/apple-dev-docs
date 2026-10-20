@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an empty compute stream.
 
@@ -20,7 +21,8 @@ convenience init()
 
 ## See Also
 
-- [init(commandQueue: any MTLCommandQueue)](computestream/init(commandqueue:).md)
+### Creating a stream
+- [init(commandQueue: any MTLCommandQueue)](./init%28commandqueue%29.md)
   Initialize a compute stream which will encode its work to the provided command queue.
 
 

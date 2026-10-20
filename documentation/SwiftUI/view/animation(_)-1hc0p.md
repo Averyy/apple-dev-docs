@@ -1,20 +1,30 @@
 # animation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the given animation to all animatable values within this view.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 15.0
+- iPadOS 13.0+ - Deprecated in 15.0
+- Mac Catalyst 13.0+ - Deprecated in 15.0
+- macOS 10.15+ - Deprecated in 12.0
+- tvOS 13.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 6.0+ - Deprecated in 8.0
+
+> **Deprecated**: Use [`withAnimation(_:_:)`](../withanimation%28_,_%29.md) or [`animation(_:value:)`](./animation%28_,value%29.md) instead.
 
 ## Declaration
+
+```swift
+nonisolated
+func animation(_ animation: Animation?) -> some View
+```
+
+**Other overloads**:
 
 ```swift
 nonisolated

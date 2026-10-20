@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -18,11 +19,16 @@
 var padding: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float padding;
+```
+
 ## See Also
 
-- [var scaleFactor: Float](ciattributedtextimagegenerator/scalefactor.md)
+### Instance Properties
+- [var scaleFactor: Float](./scalefactor.md)
   The scale at which to render the text.
-- [var text: NSAttributedString](ciattributedtextimagegenerator/text.md)
+- [var text: NSAttributedString](./text.md)
   The text to render.
 
 

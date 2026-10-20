@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the underlying disk image.
 
@@ -14,13 +15,18 @@ The URL of the underlying disk image.
 var url: URL { get }
 ```
 
+```objc
+@property (copy, readonly) NSURL * URL;
+```
+
 ## See Also
 
-- [var isReadOnly: Bool](vzdiskimagestoragedeviceattachment/isreadonly.md)
+### Getting the disk image details
+- [var isReadOnly: Bool](./isreadonly.md)
   A Boolean value that indicates whether the underlying disk image is read-only.
-- [var cachingMode: VZDiskImageCachingMode](vzdiskimagestoragedeviceattachment/cachingmode.md)
+- [var cachingMode: VZDiskImageCachingMode](./cachingmode.md)
   The current cacheing mode for the virtual disk image.
-- [var synchronizationMode: VZDiskImageSynchronizationMode](vzdiskimagestoragedeviceattachment/synchronizationmode.md)
+- [var synchronizationMode: VZDiskImageSynchronizationMode](./synchronizationmode.md)
   The mode in which the disk image synchronizes data with the underlying storage device.
 
 

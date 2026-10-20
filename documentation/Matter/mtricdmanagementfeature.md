@@ -1,7 +1,8 @@
 # MTRICDManagementFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -18,27 +19,31 @@
 struct MTRICDManagementFeature
 ```
 
+```c
+enum MTRICDManagementFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtricdmanagementfeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtricdmanagementfeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var checkInProtocolSupport: MTRICDManagementFeature](mtricdmanagementfeature/checkinprotocolsupport.md)
-- [static var dynamicSitLitSupport: MTRICDManagementFeature](mtricdmanagementfeature/dynamicsitlitsupport.md)
-- [static var longIdleTimeSupport: MTRICDManagementFeature](mtricdmanagementfeature/longidletimesupport.md)
-- [static var userActiveModeTrigger: MTRICDManagementFeature](mtricdmanagementfeature/useractivemodetrigger.md)
+- [static var checkInProtocolSupport: MTRICDManagementFeature](./mtricdmanagementfeature/checkinprotocolsupport.md)
+- [static var dynamicSitLitSupport: MTRICDManagementFeature](./mtricdmanagementfeature/dynamicsitlitsupport.md)
+- [static var longIdleTimeSupport: MTRICDManagementFeature](./mtricdmanagementfeature/longidletimesupport.md)
+- [static var userActiveModeTrigger: MTRICDManagementFeature](./mtricdmanagementfeature/useractivemodetrigger.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

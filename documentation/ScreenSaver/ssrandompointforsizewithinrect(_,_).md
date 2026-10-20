@@ -1,7 +1,8 @@
 # SSRandomPointForSizeWithinRect(_:_:)
 
 **Framework**: Screen Saver  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a random point.
 
@@ -12,6 +13,10 @@ Returns a random point.
 
 ```swift
 func SSRandomPointForSizeWithinRect(_ size: NSSize, _ rect: NSRect) -> NSPoint
+```
+
+```c
+static NSPoint SSRandomPointForSizeWithinRect(NSSize size, NSRect rect);
 ```
 
 #### Return Value
@@ -29,11 +34,12 @@ The Screen Saver framework automatically seeds the `random()` C function to gene
 
 ## See Also
 
-- [func SSRandomIntBetween(Int32, Int32) -> Int32](ssrandomintbetween(_:_:).md)
+### Utilities
+- [func SSRandomIntBetween(Int32, Int32) -> Int32](./ssrandomintbetween%28_,_%29.md)
   Returns a random integer value.
-- [func SSRandomFloatBetween(CGFloat, CGFloat) -> CGFloat](ssrandomfloatbetween(_:_:).md)
+- [func SSRandomFloatBetween(CGFloat, CGFloat) -> CGFloat](./ssrandomfloatbetween%28_,_%29.md)
   Returns a random float value.
-- [func SSCenteredRectInRect(NSRect, NSRect) -> NSRect](sscenteredrectinrect(_:_:).md)
+- [func SSCenteredRectInRect(NSRect, NSRect) -> NSRect](./sscenteredrectinrect%28_,_%29.md)
   Returns a rectangle.
 
 

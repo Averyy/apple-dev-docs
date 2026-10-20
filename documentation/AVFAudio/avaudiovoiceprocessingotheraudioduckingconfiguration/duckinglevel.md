@@ -1,7 +1,8 @@
 # duckingLevel
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ducking level of other audio.
 
@@ -18,11 +19,16 @@ The ducking level of other audio.
 var duckingLevel: AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level
 ```
 
+```c
+AVAudioVoiceProcessingOtherAudioDuckingLevel duckingLevel;
+```
+
 ## See Also
 
-- [var enableAdvancedDucking: ObjCBool](avaudiovoiceprocessingotheraudioduckingconfiguration/enableadvancedducking.md)
+### Configuring ducking
+- [var enableAdvancedDucking: ObjCBool](./enableadvancedducking.md)
   Enables advanced ducking which ducks other audio based on the presence of voice activity from local and remote chat participants.
-- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level](avaudiovoiceprocessingotheraudioduckingconfiguration/level.md)
+- [AVAudioVoiceProcessingOtherAudioDuckingConfiguration.Level](./level.md)
   Constants that define the supported ducking levels.
 
 

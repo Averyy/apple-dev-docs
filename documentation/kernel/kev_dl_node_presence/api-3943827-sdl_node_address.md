@@ -1,14 +1,15 @@
 # sdl_node_address
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 struct sockaddr_dl sdl_node_address;
 ```
 

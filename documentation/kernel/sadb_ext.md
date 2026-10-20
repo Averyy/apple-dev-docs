@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sadb_ext {
     ...
 };
@@ -17,8 +17,8 @@ struct sadb_ext {
 ## Topics
 
 ### Instance Properties
-- [sadb_ext_len](sadb_ext/1588248-sadb_ext_len.md)
-- [sadb_ext_type](sadb_ext/1588201-sadb_ext_type.md)
+- [sadb_ext_len](./sadb_ext/api-1588248-sadb_ext_len.md)
+- [sadb_ext_type](./sadb_ext/api-1588201-sadb_ext_type.md)
 
 
 ---

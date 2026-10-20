@@ -1,7 +1,8 @@
 # MTLCommandBufferError.Code
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes that indicate why a GPU is unable to finish running a command buffer.
 
@@ -10,7 +11,7 @@ Error codes that indicate why a GPU is unable to finish running a command buffer
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,46 +20,50 @@ Error codes that indicate why a GPU is unable to finish running a command buffer
 enum Code
 ```
 
+```c
+enum MTLCommandBufferError : NSUInteger;
+```
+
 ## Topics
 
 ### Error codes
-- [MTLCommandBufferError.Code.none](mtlcommandbuffererror-swift.struct/code/none.md)
+- [MTLCommandBufferError.Code.none](./code/none.md)
   An error code that represents the absence of any problems.
-- [MTLCommandBufferError.Code.timeout](mtlcommandbuffererror-swift.struct/code/timeout.md)
+- [MTLCommandBufferError.Code.timeout](./code/timeout.md)
   An error code that indicates the system interrupted and terminated the command buffer before it finished running.
-- [MTLCommandBufferError.Code.pageFault](mtlcommandbuffererror-swift.struct/code/pagefault.md)
+- [MTLCommandBufferError.Code.pageFault](./code/pagefault.md)
   An error code that indicates the command buffer generated a page fault the GPU can’t service.
-- [MTLCommandBufferError.Code.notPermitted](mtlcommandbuffererror-swift.struct/code/notpermitted.md)
+- [MTLCommandBufferError.Code.notPermitted](./code/notpermitted.md)
   An error code that indicates a process doesn’t have access to a GPU device.
-- [MTLCommandBufferError.Code.outOfMemory](mtlcommandbuffererror-swift.struct/code/outofmemory.md)
+- [MTLCommandBufferError.Code.outOfMemory](./code/outofmemory.md)
   An error code that indicates the GPU device doesn’t have sufficient memory to execute a command buffer.
-- [MTLCommandBufferError.Code.invalidResource](mtlcommandbuffererror-swift.struct/code/invalidresource.md)
+- [MTLCommandBufferError.Code.invalidResource](./code/invalidresource.md)
   An error code that indicates the command buffer has an invalid reference to resource.
-- [MTLCommandBufferError.Code.memoryless](mtlcommandbuffererror-swift.struct/code/memoryless.md)
+- [MTLCommandBufferError.Code.memoryless](./code/memoryless.md)
   An error code that indicates the GPU ran out of one or more of its internal resources that support memoryless render pass attachments.
-- [MTLCommandBufferError.Code.deviceRemoved](mtlcommandbuffererror-swift.struct/code/deviceremoved.md)
+- [MTLCommandBufferError.Code.deviceRemoved](./code/deviceremoved.md)
   An error code that indicates a person physically removed the GPU device before the command buffer finished running.
-- [MTLCommandBufferError.Code.stackOverflow](mtlcommandbuffererror-swift.struct/code/stackoverflow.md)
+- [MTLCommandBufferError.Code.stackOverflow](./code/stackoverflow.md)
   An error code that indicates the GPU terminated the command buffer because a kernel function of tile shader used too many stack frames.
-- [static var accessRevoked: MTLCommandBufferError.Code](mtlcommandbuffererror-swift.struct/code/accessrevoked.md)
+- [static var accessRevoked: MTLCommandBufferError.Code](./code/accessrevoked.md)
   An error code that indicates the system has revoked the Metal device’s access because it’s responsible for too many timeouts or hangs.
-- [MTLCommandBufferError.Code.internal](mtlcommandbuffererror-swift.struct/code/internal.md)
+- [MTLCommandBufferError.Code.internal](./code/internal.md)
   An error code that indicates the Metal framework has an internal problem.
 ### Deprecated
-- [MTLCommandBufferError.Code.blacklisted](mtlcommandbuffererror-swift.struct/code/blacklisted.md)
+- [MTLCommandBufferError.Code.blacklisted](./code/blacklisted.md)
   A former error code that indicates the system has revoked the Metal device’s access because it’s responsible for too many timeouts or hangs.
 ### Initializers
-- [init?(rawValue: UInt)](mtlcommandbuffererror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

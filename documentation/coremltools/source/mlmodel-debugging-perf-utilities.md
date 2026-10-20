@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/mlmodel-debugging-pe
 
 # Debugging And Performance Utilities
 
-**
-
-- [.md](../_sources/source/mlmodel-debugging-perf-utilities.md)
-- **
-
-.pdf
-
-**
-
-# Debugging And Performance Utilities
-
- Table of contents 
-
-## Contents
-
-# Debugging And Performance Utilities
-
 These utilities help identify and resolve both numerical and performance issues in exported Core ML models. When a model produces unexpected outputs-such as NaNs, infinities, or results that differ from the source model or exhibits performance bottlenecks, these tools assist in isolating the problematic operations. Once identified, targeted fixes can be applied to address and correct these issues, improving both the accuracy and efficiency of the model.
 
 Experimental
@@ -466,5 +449,3 @@ execution_time_measurements = benchmarker.benchmark_operation_execution(iteratio
 # The operations are sorted in descending order of execution time.
 print(f"Median execution time of the slowest operation: {execution_time_measurements[0].statistics.median} seconds")
 ```
-
-** Contents

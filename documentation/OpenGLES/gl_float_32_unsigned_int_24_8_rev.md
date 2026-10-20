@@ -1,7 +1,8 @@
 # GL_FLOAT_32_UNSIGNED_INT_24_8_REV
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_FLOAT_32_UNSIGNED_INT_24_8_REV: Int32 { get }
+```
+
+```c
+#define GL_FLOAT_32_UNSIGNED_INT_24_8_REV
 ```
 
 

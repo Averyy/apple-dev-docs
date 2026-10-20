@@ -1,7 +1,8 @@
 # init(identifier:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a container node with the given name.
 
@@ -19,15 +20,20 @@ Creates a container node with the given name.
 init(identifier: String)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier;
+```
+
 ## Parameters
 
 - `identifier`: A unique name for the node.
 
 ## See Also
 
-- [init()](phasecontainernodedefinition/init.md)
+### Creating a Node
+- [init()](./init%28%29.md)
   Creates a container node.
-- [class func new() -> Self](phasecontainernodedefinition/new.md)
+- [class func new() -> Self](./new%28%29.md)
   Creates a container node.
 
 

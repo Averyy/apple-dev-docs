@@ -1,7 +1,8 @@
 # xpc_activity_unregister(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unregisters an activity with the specified identifier.
 
@@ -14,11 +15,15 @@ Unregisters an activity with the specified identifier.
 func xpc_activity_unregister(_ identifier: UnsafePointer<CChar>)
 ```
 
+```c
+extern void xpc_activity_unregister(const char *identifier);
+```
+
 #### Discussion
 
 A dynamically registered activity will be deleted in response to this call. Statically registered activity (from a launchd property list) will be reverted to its original criteria if any modifications were made.
 
-Unregistering an activity has no effect on any outstanding [`xpc_activity_t`](xpc_activity_t.md) objects or any currently executing [`xpc_activity_handler_t`](xpc_activity_handler_t.md) blocks; however, no new handler block invocations will be made after it is unregistered.
+Unregistering an activity has no effect on any outstanding [`xpc_activity_t`](./xpc_activity_t.md) objects or any currently executing [`xpc_activity_handler_t`](./xpc_activity_handler_t.md) blocks; however, no new handler block invocations will be made after it is unregistered.
 
 ## Parameters
 
@@ -26,13 +31,14 @@ Unregistering an activity has no effect on any outstanding [`xpc_activity_t`](xp
 
 ## See Also
 
-- [func xpc_activity_register(UnsafePointer<CChar>, xpc_object_t, xpc_activity_handler_t)](xpc_activity_register(_:_:_:).md)
+### Registration
+- [func xpc_activity_register(UnsafePointer<CChar>, xpc_object_t, xpc_activity_handler_t)](./xpc_activity_register%28_,_,_%29.md)
   Registers an activity with the system.
-- [let XPC_ACTIVITY_CHECK_IN: xpc_object_t](xpc_activity_check_in.md)
+- [let XPC_ACTIVITY_CHECK_IN: xpc_object_t](./xpc_activity_check_in.md)
   A constant to check in with the system for a previously registered activity using the same identifier.
-- [typealias xpc_activity_t](xpc_activity_t.md)
+- [typealias xpc_activity_t](./xpc_activity_t.md)
   An XPC activity object.
-- [typealias xpc_activity_handler_t](xpc_activity_handler_t.md)
+- [typealias xpc_activity_handler_t](./xpc_activity_handler_t.md)
   A block to call when an XPC activity becomes eligible to run.
 
 

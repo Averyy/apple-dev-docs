@@ -1,7 +1,8 @@
 # expandedInterfaceDelegate
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate that manages the lifecycle of the status item’s expanded interface.
 
@@ -14,13 +15,18 @@ The delegate that manages the lifecycle of the status item’s expanded interfac
 weak var expandedInterfaceDelegate: (any NSStatusItemExpandedInterfaceDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<NSStatusItemExpandedInterfaceDelegate> expandedInterfaceDelegate;
+```
+
 #### Discussion
 
-Status items that assign an [`NSMenu`](nsmenu.md) to their button don’t receive expanded interface callbacks — the system handles the expanded menu interface automatically. The delegate shows the expanded interface, such as an [`NSWindow`](nswindow.md) positioned beneath the status item, in response to [`statusItem(_:didBegin:)`](nsstatusitemexpandedinterfacedelegate/statusitem(_:didbegin:).md), and dismisses the interface in response to [`statusItemDidEndExpandedInterfaceSession(_:animated:)`](nsstatusitemexpandedinterfacedelegate/statusitemdidendexpandedinterfacesession(_:animated:).md).
+Status items that assign an [`NSMenu`](../nsmenu.md) to their button don’t receive expanded interface callbacks — the system handles the expanded menu interface automatically. The delegate shows the expanded interface, such as an [`NSWindow`](../nswindow.md) positioned beneath the status item, in response to [`statusItem(_:didBegin:)`](../nsstatusitemexpandedinterfacedelegate/statusitem%28_,didbegin%29.md), and dismisses the interface in response to [`statusItemDidEndExpandedInterfaceSession(_:animated:)`](../nsstatusitemexpandedinterfacedelegate/statusitemdidendexpandedinterfacesession%28_,animated%29.md).
 
 ## See Also
 
-- [var expandedInterfaceSession: NSStatusItemExpandedInterfaceSession?](nsstatusitem/expandedinterfacesession.md)
+### Managing the expanded interface
+- [var expandedInterfaceSession: NSStatusItemExpandedInterfaceSession?](./expandedinterfacesession.md)
   A session object that tracks the lifecycle of the status item’s active expanded interface.
 
 

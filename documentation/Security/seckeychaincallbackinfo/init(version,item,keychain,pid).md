@@ -1,7 +1,8 @@
 # init(version:item:keychain:pid:)
 
 **Framework**: Security  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new keychain callback information structure.
 

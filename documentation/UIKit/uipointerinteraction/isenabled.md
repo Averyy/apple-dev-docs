@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the pointer interaction is an enabled state.
 
@@ -15,6 +16,10 @@ A Boolean value that indicates whether the pointer interaction is an enabled sta
 
 ```swift
 var isEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
 

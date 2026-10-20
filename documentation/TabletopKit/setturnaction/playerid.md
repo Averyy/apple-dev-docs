@@ -1,7 +1,8 @@
 # playerID
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the player who is setting the turn.
 
@@ -16,7 +17,8 @@ var playerID: Player.ID? { get }
 
 ## See Also
 
-- [var context: UInt64](setturnaction/context.md)
+### Getting the action properties
+- [var context: UInt64](./context.md)
   An integer value that your game uses.
 
 

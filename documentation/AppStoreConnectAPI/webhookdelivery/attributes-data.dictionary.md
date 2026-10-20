@@ -1,7 +1,8 @@
 # WebhookDelivery.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a webhook delivery resource.
 
@@ -10,22 +11,22 @@ Attributes that describe a webhook delivery resource.
 
 ## Declaration
 
-```swift
+```
 object WebhookDelivery.Attributes
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object WebhookDelivery.Attributes.Request](webhookdelivery/attributes-data.dictionary/request-data.dictionary.md)
+- [object WebhookDelivery.Attributes.Request](./attributes-data.dictionary/request-data.dictionary.md)
   The HTTP request details of a webhook delivery attempt, including headers and body.
-- [object WebhookDelivery.Attributes.Response](webhookdelivery/attributes-data.dictionary/response-data.dictionary.md)
+- [object WebhookDelivery.Attributes.Response](./attributes-data.dictionary/response-data.dictionary.md)
   The HTTP response received from the webhook endpoint during a delivery attempt.
 
 ## Properties
 
 - `createdDate` (date-time)
-- `deliveryState` (string)
+- `deliveryState` (string): **Allowed Values**: `SUCCEEDED`, `FAILED`, `PENDING`
 - `errorMessage` (string)
 - `redelivery` (boolean)
 - `request` (WebhookDelivery.Attributes.Request)

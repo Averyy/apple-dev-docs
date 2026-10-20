@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reason for the interruption.
 
@@ -17,6 +18,10 @@ The reason for the interruption.
 
 ```swift
 var reason: AVAudioSession.InterruptionReason { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVAudioSessionInterruptionReason reason;
 ```
 
 

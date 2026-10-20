@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Indicates whether the text view can process a given action.
@@ -18,10 +19,14 @@ Indicates whether the text view can process a given action.
 func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool
 ```
 
+```objc
+- (BOOL) canPerformAction:(SEL) action withSender:(id) sender;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
-- [Supporting extended text interactions](support-extended-text-interactions.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
+- [Supporting extended text interactions](../support-extended-text-interactions.md)
 
 #### Return Value
 
@@ -29,7 +34,7 @@ A Boolean value that indicates whether the text view can handle the action messa
 
 #### Discussion
 
-This method is similar to [`responds(to:)`](https://developer.apple.com/documentation/objectivec/nsobjectprotocol/responds(to:)), except that even if your text view implements the action message, it can decline to handle it by returning `false` from this method.
+This method is similar to [`responds(to:)`](../../ObjectiveC/nsobjectprotocol/responds%28to%29.md), except that even if your text view implements the action message, it can decline to handle it by returning `false` from this method.
 
 ## Parameters
 
@@ -38,7 +43,8 @@ This method is similar to [`responds(to:)`](https://developer.apple.com/document
 
 ## See Also
 
-- [func selectTextForEditMenuWithLocation(inView: CGPoint, completionHandler: (Bool, String?, NSRange) -> Void)](betextinput/selecttextforeditmenuwithlocation(inview:completionhandler:).md)
+### Managing the edit menu
+- [func selectTextForEditMenuWithLocation(inView: CGPoint, completionHandler: (Bool, String?, NSRange) -> Void)](./selecttextforeditmenuwithlocation%28inview,completionhandler%29.md)
   Indicates the edit menu displays at the given location in the text input view’s coordinate space.
 
 

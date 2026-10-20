@@ -1,14 +1,15 @@
 # kpc_config_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 typedef uint64_t kpc_config_t;
 ```
 

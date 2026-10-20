@@ -1,7 +1,8 @@
 # secondaryEdgeMode
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,23 +18,28 @@
 var secondaryEdgeMode: MPSImageEdgeMode { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MPSImageEdgeMode secondaryEdgeMode;
+```
+
 ## See Also
 
-- [var clipRect: MTLRegion](mpscnnbinarykernel/cliprect.md)
-- [var destinationFeatureChannelOffset: Int](mpscnnbinarykernel/destinationfeaturechanneloffset.md)
-- [var destinationImageAllocator: any MPSImageAllocator](mpscnnbinarykernel/destinationimageallocator.md)
-- [var isBackwards: Bool](mpscnnbinarykernel/isbackwards.md)
-- [var padding: any MPSNNPadding](mpscnnbinarykernel/padding.md)
-- [var primaryEdgeMode: MPSImageEdgeMode](mpscnnbinarykernel/primaryedgemode.md)
-- [var primaryOffset: MPSOffset](mpscnnbinarykernel/primaryoffset.md)
-- [var primaryStrideInPixelsX: Int](mpscnnbinarykernel/primarystrideinpixelsx.md)
-- [var primaryStrideInPixelsY: Int](mpscnnbinarykernel/primarystrideinpixelsy.md)
-- [var secondaryOffset: MPSOffset](mpscnnbinarykernel/secondaryoffset.md)
-- [var secondaryStrideInPixelsX: Int](mpscnnbinarykernel/secondarystrideinpixelsx.md)
-- [var secondaryStrideInPixelsY: Int](mpscnnbinarykernel/secondarystrideinpixelsy.md)
-- [var isStateModified: Bool](mpscnnbinarykernel/isstatemodified.md)
-- [var primaryDilationRateX: Int](mpscnnbinarykernel/primarydilationratex.md)
-- [var primaryDilationRateY: Int](mpscnnbinarykernel/primarydilationratey.md)
+### Instance Properties
+- [var clipRect: MTLRegion](./cliprect.md)
+- [var destinationFeatureChannelOffset: Int](./destinationfeaturechanneloffset.md)
+- [var destinationImageAllocator: any MPSImageAllocator](./destinationimageallocator.md)
+- [var isBackwards: Bool](./isbackwards.md)
+- [var padding: any MPSNNPadding](./padding.md)
+- [var primaryEdgeMode: MPSImageEdgeMode](./primaryedgemode.md)
+- [var primaryOffset: MPSOffset](./primaryoffset.md)
+- [var primaryStrideInPixelsX: Int](./primarystrideinpixelsx.md)
+- [var primaryStrideInPixelsY: Int](./primarystrideinpixelsy.md)
+- [var secondaryOffset: MPSOffset](./secondaryoffset.md)
+- [var secondaryStrideInPixelsX: Int](./secondarystrideinpixelsx.md)
+- [var secondaryStrideInPixelsY: Int](./secondarystrideinpixelsy.md)
+- [var isStateModified: Bool](./isstatemodified.md)
+- [var primaryDilationRateX: Int](./primarydilationratex.md)
+- [var primaryDilationRateY: Int](./primarydilationratey.md)
 
 
 ---

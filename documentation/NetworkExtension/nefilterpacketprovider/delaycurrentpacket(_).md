@@ -1,7 +1,8 @@
 # delayCurrentPacket(_:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Delay a packet currently processed by a packet handler.
 
@@ -14,9 +15,13 @@ Delay a packet currently processed by a packet handler.
 func delayCurrentPacket(_ context: NEFilterPacketContext) -> NEPacket
 ```
 
+```objc
+- (NEPacket *) delayCurrentPacket:(NEFilterPacketContext *) context;
+```
+
 #### Discussion
 
-This function is only valid within the [`packetHandler`](nefilterpacketprovider/packethandler.md) Swift closure or ObjectiveC block, which must return [`NEFilterPacketProvider.Verdict.delay`](nefilterpacketprovider/verdict/delay.md) after delaying the packet. The framework prevents further delivery of the packet through the network stack until it’s allowed or dropped. Allow the packet by calling [`allow(_:)`](nefilterpacketprovider/allow(_:).md), or drop it by releasing it.
+This function is only valid within the [`packetHandler`](./packethandler.md) Swift closure or ObjectiveC block, which must return [`NEFilterPacketProvider.Verdict.delay`](./verdict/delay.md) after delaying the packet. The framework prevents further delivery of the packet through the network stack until it’s allowed or dropped. Allow the packet by calling [`allow(_:)`](./allow%28_%29.md), or drop it by releasing it.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ This function is only valid within the [`packetHandler`](nefilterpacketprovider/
 
 ## See Also
 
-- [func allow(NEPacket)](nefilterpacketprovider/allow(_:).md)
+### Delaying packets
+- [func allow(NEPacket)](./allow%28_%29.md)
   Allow delivery of a previously-delayed packet.
 
 

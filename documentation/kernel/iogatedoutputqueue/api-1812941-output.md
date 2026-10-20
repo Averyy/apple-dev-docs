@@ -7,32 +7,33 @@ Overrides the method inherited from IOOutputQueue.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool scheduleServiceThread(
  void *param);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns true if a thread was successfully scheduled to service the queue.
 
 ## See Also
 
-- [free](iogatedoutputqueue/1812925-free.md)
+### Miscellaneous
+- [free](./api-1812925-free.md)
   Frees the IOGatedOutputQueue object.
-- [init](iogatedoutputqueue/1812930-init.md)
+- [init](./api-1812930-init.md)
   Initializes an IOGatedOutputQueue object.
-- [output(IOMbufQueue *, UInt32 *)](iogatedoutputqueue/1812936-output.md)
+- [output(IOMbufQueue *, UInt32 *)](./api-1812936-output.md)
   Transfers all packets in the mbuf queue to the target.
-- [scheduleServiceThread](iogatedoutputqueue/1812945-scheduleservicethread.md)
+- [scheduleServiceThread](./api-1812945-scheduleservicethread.md)
   Overrides the method inherited from IOOutputQueue.
-- [withTarget(IONetworkController *, IOWorkLoop *, UInt32)](iogatedoutputqueue/1812948-withtarget.md)
+- [withTarget(IONetworkController *, IOWorkLoop *, UInt32)](./api-1812948-withtarget.md)
   Factory method that constructs and initializes an IOGatedOutputQueue object.
-- [withTarget(IONetworkController *, IOWorkLoop *, UInt32, UInt32)](iogatedoutputqueue/1812950-withtarget.md)
+- [withTarget(IONetworkController *, IOWorkLoop *, UInt32, UInt32)](./api-1812950-withtarget.md)
   Factory method that constructs and initializes an IOGatedOutputQueue object.
-- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32)](iogatedoutputqueue/1812954-withtarget.md)
+- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32)](./api-1812954-withtarget.md)
   Factory method that constructs and initializes an IOGatedOutputQueue object.
-- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32, UInt32)](iogatedoutputqueue/1812957-withtarget.md)
+- [withTarget(OSObject *, IOOutputAction, IOWorkLoop *, UInt32, UInt32)](./api-1812957-withtarget.md)
   Factory method that constructs and initializes an IOGatedOutputQueue object.
 
 

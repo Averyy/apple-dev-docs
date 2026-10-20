@@ -1,7 +1,8 @@
 # formatted()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Format `self` using `IntegerFormatStyle()`
 

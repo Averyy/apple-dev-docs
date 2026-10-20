@@ -1,7 +1,8 @@
 # ARWorldTrackingConfiguration.PlaneDetection
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for whether and how the framework detects flat surfaces in captured images.
 
@@ -15,6 +16,10 @@ Options for whether and how the framework detects flat surfaces in captured imag
 struct PlaneDetection
 ```
 
+```c
+enum ARPlaneDetection : NSUInteger;
+```
+
 #### Overview
 
 By default, this configuration disables plane detection. If you enable horizontal or vertical plane detection, the session adds ARPlaneAnchor objects and notifies your ARSessionDelegate, ARSCNViewDelegate, or ARSKViewDelegate object when its analysis of captured video images detects an area that appears to be a flat surface.
@@ -24,33 +29,34 @@ Use an empty set literal `[]` to specify no plane detection.
 ## Topics
 
 ### Plane Detection Option Creation
-- [init(rawValue: UInt)](arworldtrackingconfiguration/planedetection-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./planedetection-swift.struct/init%28rawvalue%29.md)
   Creates plane detection options.
 ### Plane Detection Options
-- [static var horizontal: ARWorldTrackingConfiguration.PlaneDetection](arworldtrackingconfiguration/planedetection-swift.struct/horizontal.md)
+- [static var horizontal: ARWorldTrackingConfiguration.PlaneDetection](./planedetection-swift.struct/horizontal.md)
   The session detects planar surfaces that are perpendicular to gravity.
-- [static var vertical: ARWorldTrackingConfiguration.PlaneDetection](arworldtrackingconfiguration/planedetection-swift.struct/vertical.md)
+- [static var vertical: ARWorldTrackingConfiguration.PlaneDetection](./planedetection-swift.struct/vertical.md)
   The session detects surfaces that are parallel to gravity, regardless of other orientation.
-- [static var horizontal: ARWorldTrackingConfiguration.PlaneDetection](arworldtrackingconfiguration/planedetection-swift.struct/horizontal.md)
+- [static var horizontal: ARWorldTrackingConfiguration.PlaneDetection](./planedetection-swift.struct/horizontal.md)
   The session detects planar surfaces that are perpendicular to gravity.
-- [static var vertical: ARWorldTrackingConfiguration.PlaneDetection](arworldtrackingconfiguration/planedetection-swift.struct/vertical.md)
+- [static var vertical: ARWorldTrackingConfiguration.PlaneDetection](./planedetection-swift.struct/vertical.md)
   The session detects surfaces that are parallel to gravity, regardless of other orientation.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var planeDetection: ARWorldTrackingConfiguration.PlaneDetection](arbodytrackingconfiguration/planedetection.md)
+### Enabling Plane Detection
+- [var planeDetection: ARWorldTrackingConfiguration.PlaneDetection](../arbodytrackingconfiguration/planedetection.md)
   A value specifying whether and how the session attempts to automatically detect flat surfaces in the camera-captured image.
 
 

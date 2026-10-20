@@ -1,7 +1,8 @@
 # HandleChangeControlValue
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The system calls this virtual method when the control’s value changes.
 
@@ -10,7 +11,7 @@ The system calls this virtual method when the control’s value changes.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t HandleChangeControlValue(uint32_t in_control_value);
 ```
 

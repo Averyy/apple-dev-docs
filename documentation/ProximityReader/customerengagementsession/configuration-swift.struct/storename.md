@@ -1,7 +1,8 @@
 # storeName
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The store name or location to identify the specific store.
 

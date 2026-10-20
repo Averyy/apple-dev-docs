@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the mesh instance at the given index, or `nil` if the slot is unoccupied.
 
@@ -19,7 +20,7 @@ final subscript(position: Int) -> LowLevelMeshInstance? { get }
 
 #### Return Value
 
-The [`LowLevelMeshInstance`](lowlevelmeshinstance.md) at `position`, or `nil` if the slot is empty.
+The [`LowLevelMeshInstance`](../lowlevelmeshinstance.md) at `position`, or `nil` if the slot is empty.
 
 ## Parameters
 

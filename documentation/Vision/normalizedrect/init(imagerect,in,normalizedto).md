@@ -1,7 +1,8 @@
 # init(imageRect:in:normalizedTo:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a rectangle normalized to a region of interest in an image from a rectangle in an image coordinate space.
 
@@ -28,13 +29,14 @@ init(imageRect: CGRect, in imageSize: CGSize, normalizedTo regionOfInterest: Nor
 
 ## See Also
 
-- [init(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)](normalizedrect/init(x:y:width:height:).md)
+### Creating a normalized rectangle
+- [init(x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat)](./init%28x,y,width,height%29.md)
   Creates a rectangle with the specified coordinates.
-- [init(imageRect: CGRect, in: CGSize)](normalizedrect/init(imagerect:in:).md)
+- [init(imageRect: CGRect, in: CGSize)](./init%28imagerect,in%29.md)
   Creates a normalized rectangle from a rectangle in an image coordinate space.
-- [init(normalizedRect: CGRect)](normalizedrect/init(normalizedrect:).md)
+- [init(normalizedRect: CGRect)](./init%28normalizedrect%29.md)
   Creates a rectangle from the specified Core Graphics rectangle.
-- [static var fullImage: NormalizedRect](normalizedrect/fullimage.md)
+- [static var fullImage: NormalizedRect](./fullimage.md)
   A normalized rectangle with an origin at zero and a width and height of one.
 
 

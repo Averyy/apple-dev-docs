@@ -1,7 +1,8 @@
 # preferredMetalDevice
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The metal device you prefer this model use to make predictions (inference) and update the model.
 
@@ -20,13 +21,18 @@ The metal device you prefer this model use to make predictions (inference) and u
 var preferredMetalDevice: (any MTLDevice)? { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, nullable) id<MTLDevice> preferredMetalDevice;
+```
+
 #### Discussion
 
-If [`preferredMetalDevice`](mlmodelconfiguration/preferredmetaldevice.md) is `nil`, the default value, Core ML chooses a metal device for you.
+If [`preferredMetalDevice`](./preferredmetaldevice.md) is `nil`, the default value, Core ML chooses a metal device for you.
 
 ## See Also
 
-- [var allowLowPrecisionAccumulationOnGPU: Bool](mlmodelconfiguration/allowlowprecisionaccumulationongpu.md)
+### Configuring GPU usage
+- [var allowLowPrecisionAccumulationOnGPU: Bool](./allowlowprecisionaccumulationongpu.md)
   A Boolean value that determines whether to allow low-precision accumulation on a GPU.
 
 

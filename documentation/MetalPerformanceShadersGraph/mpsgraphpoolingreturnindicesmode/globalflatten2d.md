@@ -1,7 +1,8 @@
 # MPSGraphPoolingReturnIndicesMode.globalFlatten2D
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returns indices flattened in 2 innermost dimensions. eg: HW in NCHW.
 
@@ -17,6 +18,10 @@ Returns indices flattened in 2 innermost dimensions. eg: HW in NCHW.
 
 ```swift
 case globalFlatten2D
+```
+
+```c
+MPSGraphPoolingReturnIndicesGlobalFlatten2D
 ```
 
 

@@ -1,7 +1,8 @@
 # labelFont
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the font used to label the thumbnails.
 
@@ -15,6 +16,10 @@ Returns the font used to label the thumbnails.
 var labelFont: NSFont? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSFont * labelFont;
+```
+
 #### Return Value
 
 The font used in the thumbnail labels.
@@ -25,9 +30,10 @@ Typically, the label of a thumbnail is the page number of the page it represents
 
 ## See Also
 
-- [var maximumNumberOfColumns: Int](pdfthumbnailview/maximumnumberofcolumns.md)
+### Working with Thumbnail View Display Characteristics
+- [var maximumNumberOfColumns: Int](./maximumnumberofcolumns.md)
   Returns the maximum number of columns of thumbnails the thumbnail view can display.
-- [var backgroundColor: UIColor?](pdfthumbnailview/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./backgroundcolor.md)
   Returns the color used in the background of the thumbnail view.
 
 

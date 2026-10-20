@@ -1,7 +1,8 @@
 # maskBitDepth
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Unused.
 
@@ -10,7 +11,7 @@ Unused.
 
 ## Declaration
 
-```swift
+```c
 UInt32 maskBitDepth;
 ```
 

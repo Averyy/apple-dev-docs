@@ -1,7 +1,8 @@
 # Mono
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The mono channel.
 
@@ -10,7 +11,7 @@ The mono channel.
 
 ## Declaration
 
-```swift
+```c
 Mono
 ```
 

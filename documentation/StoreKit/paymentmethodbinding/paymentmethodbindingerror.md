@@ -1,7 +1,8 @@
 # PaymentMethodBinding.PaymentMethodBindingError
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error information for payment method binding.
 
@@ -19,27 +20,27 @@ enum PaymentMethodBindingError
 
 #### Overview
 
-The methods of [`PaymentMethodBinding`](paymentmethodbinding.md) may return these errors, as well as the [`StoreKitError.userCancelled`](storekiterror/usercancelled.md) error.
+The methods of [`PaymentMethodBinding`](../paymentmethodbinding.md) may return these errors, as well as the [`StoreKitError.userCancelled`](../storekiterror/usercancelled.md) error.
 
 ## Topics
 
 ### Getting error codes
-- [PaymentMethodBinding.PaymentMethodBindingError.failed](paymentmethodbinding/paymentmethodbindingerror/failed.md)
+- [PaymentMethodBinding.PaymentMethodBindingError.failed](./paymentmethodbindingerror/failed.md)
   The initialization or binding operation failed.
-- [PaymentMethodBinding.PaymentMethodBindingError.invalidPinningID](paymentmethodbinding/paymentmethodbindingerror/invalidpinningid.md)
+- [PaymentMethodBinding.PaymentMethodBindingError.invalidPinningID](./paymentmethodbindingerror/invalidpinningid.md)
   The in-app binding identifier is invalid or expired.
-- [PaymentMethodBinding.PaymentMethodBindingError.notEligible](paymentmethodbinding/paymentmethodbindingerror/noteligible.md)
+- [PaymentMethodBinding.PaymentMethodBindingError.notEligible](./paymentmethodbindingerror/noteligible.md)
   The user isn’t eligible.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

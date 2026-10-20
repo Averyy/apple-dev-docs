@@ -1,12 +1,13 @@
 # init(ciImage:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a representation of an image initialized to the specified Core Image instance.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Returns a representation of an image initialized to the specified Core Image ins
 init(ciImage image: CIImage)
 ```
 
+```objc
+- (instancetype) initWithCIImage:(CIImage *) image;
+```
+
 #### Return Value
 
-An initialized [`NSCIImageRep`](nsciimagerep.md) object, or `nil` if the object could not be initialized.
+An initialized [`NSCIImageRep`](../nsciimagerep.md) object, or `nil` if the object could not be initialized.
 
 ## Parameters
 
-- `image`: The [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) instance.
+- `image`: The [`CIImage`](../../CoreImage/ciimage.md) instance.
 
 
 ---

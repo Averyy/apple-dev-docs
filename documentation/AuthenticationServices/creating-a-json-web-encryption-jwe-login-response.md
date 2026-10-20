@@ -1,6 +1,7 @@
 # Creating a JSON Web Encryption (JWE) login response
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: Article
 
 Create an encrypted login response and configure the concatenation key derivation function (Concat KDF).
 
@@ -10,7 +11,7 @@ The identity provider (IdP) creates a login response, which is a JWE that’s en
 
 Key agreement uses the public key for the `UserDeviceEncryptionKey` that’s exchanged during registration. The supported encryption algorithm is A256GCM per RFC 7518 Section 5.3.
 
-##### Configure Concat Kdf
+##### Configure Concat KDF
 
 RFC 7518 Section 4.6.2 and NIST.800-56A sections 5.8.1 and 6.2.2.2 describe the configuration of Concat KDF for Platform SSO. See the table below for input definitions. The system concatenates the values per NIST.800-56A sections 5.8.1, and then computes a SHA-256 hash that it uses to create the key. The login response header needs to contain the `PartyUInfo`.
 
@@ -18,7 +19,7 @@ RFC 7518 Section 4.6.2 and NIST.800-56A sections 5.8.1 and 6.2.2.2 describe the 
 | --- | --- | --- |
 | `AlgorithmID` | Set to the octets of the ASCII representation of the enc (algorithm) Header Parameter value. | Per RFC 7518 Section 4.6.2 when using direct key agreement |
 | `PartyUInfo` | ` |  |
-| `PartyVInfo` | This needs to use the `jwe_crypto.apv` value from the login request. ![None](/images/com.apple.authenticationservices/spacer.png) ` |  |
+| `PartyVInfo` | This needs to use the `jwe_crypto.apv` value from the login request. ![](https://developer.apple.com/tutorials/images/com.apple.authenticationservices/spacer.png) ` |  |
 | `SuppPubInfo` | Set to the number of bits in the desired output key. | Per RFC 7518 Section 4.6.2 |
 | `SuppPrivInfo` | `NULL` | Per RFC 7518 Section 4.6.2 |
 
@@ -43,7 +44,7 @@ Ephemeral Public Key (EPK):
 
 `“epk” : {`
 
-```None
+```
 `“y” : “jbOoWZbgDFTEfLa1O_7ZuJy3R8d2XAw0CHWUKmJLsbU”,`
 
 `“x” : “BkFHRYQoleq39LplGqlcmsEdnw64w0wbcbHAEjrM4pw”,`
@@ -73,7 +74,7 @@ Device Encryption Public Key:
 
 `{`
 
-```None
+```
 `“crv” : “P-256”,`
 
 `“kty” : “EC”,`
@@ -114,7 +115,7 @@ The Concat KDF result is:
 
 `A146E4A23BDA2E53826C04D2F442BCFBD87BC2719D74B8A7DA00AF976267712E`
 
-##### Create the Response Jwe Header
+##### Create the response JWE header
 
 The response is a JWE that’s decrypted according to RFC 7516 Section 5.2 with JWE Compact Serialization.
 
@@ -149,7 +150,7 @@ The following code provides an example of a login response JWE header:
 }
 ```
 
-##### Create the Response Jwe Body
+##### Create the response JWE body
 
 The IdP creates a successful login response formatted per the OpenID spec, including an `id_token` and `refresh_token`. The `refresh_token` is the token that the system uses for SSO.
 
@@ -162,7 +163,7 @@ The JWE response body contains the following values:
 | `refresh_token_expires_in` | The time (in seconds) until the refresh token expires. If not present, the system uses `expires_in`. | Recommended. |
 | `expires_in` | The time in seconds until the tokens expire. | Required, if `refresh_token_expires_in` isn’t present |
 | `token_type` | `Bearer` | Expected, but not verified |
-| Kerberos TGT | Kerberos TGT, if [`kerberosTicketMappings`](asauthorizationproviderextensionloginconfiguration/kerberosticketmappings.md) is defined. | Optional. |
+| Kerberos TGT | Kerberos TGT, if [`kerberosTicketMappings`](./asauthorizationproviderextensionloginconfiguration/kerberosticketmappings.md) is defined. | Optional. |
 
 The following code provides an example of a login response JWE body:
 
@@ -177,11 +178,11 @@ The following code provides an example of a login response JWE body:
 }
 ```
 
-##### Handle a Failed Response
+##### Handle a failed response
 
 If the response returns a status code other than `200`, Platform SSO checks whether there’s a credential failure. If the credential is incorrect, the system prompts the user to enter it again. Other errors require another login attempt at a later time.
 
-By default, a HTTP response code of `401` is a credential error. The IdP can optionally specify a predicate to parse a JSON formatted response to determine if the result is a credential error or not, when the response code is `400` or `401`. The [`invalidCredentialPredicate`](asauthorizationproviderextensionloginconfiguration/invalidcredentialpredicate.md) specifies the predicate.
+By default, a HTTP response code of `401` is a credential error. The IdP can optionally specify a predicate to parse a JSON formatted response to determine if the result is a credential error or not, when the response code is `400` or `401`. The [`invalidCredentialPredicate`](./asauthorizationproviderextensionloginconfiguration/invalidcredentialpredicate.md) specifies the predicate.
 
 For example, the system can use the predicate `errorCode = ‘C0000006’ AND suberror = ‘invalid_password’` with the following failed response to match to a credential error:
 
@@ -197,11 +198,11 @@ Content-Type: application/json; charset=utf-8
 }
 ```
 
-##### Use the Kerberos Mapping
+##### Use the Kerberos mapping
 
 The SSO response from the IdP can optionally include Kerberos ticket-granting tickets (TGTs) for the user. Platform SSO uses the kerberos mapping from the login configuration to import the TGTs into a Kerberos cache and optionally use the TGT with the Kerberos extension.
 
-The Kerberos mapping is an instance of [`ASAuthorizationProviderExtensionKerberosMapping`](asauthorizationproviderextensionkerberosmapping.md) in the [`kerberosTicketMappings`](asauthorizationproviderextensionloginconfiguration/kerberosticketmappings.md). It indicates the SSO response entries to use for each of the elements, with each ticket being a sub-dictionary of the login response. The mapping entry maps the response JSON entry names for each ticket.
+The Kerberos mapping is an instance of [`ASAuthorizationProviderExtensionKerberosMapping`](./asauthorizationproviderextensionkerberosmapping.md) in the [`kerberosTicketMappings`](./asauthorizationproviderextensionloginconfiguration/kerberosticketmappings.md). It indicates the SSO response entries to use for each of the elements, with each ticket being a sub-dictionary of the login response. The mapping entry maps the response JSON entry names for each ticket.
 
 The following code sample provides an example of a login response body:
 
@@ -236,7 +237,7 @@ For the above login response, the Kerberos ticket mapping is:
 | `encryptionKeyTypeKeyName` | `encryptionKeyType` | The key name that contains the Kerberos session key type number. The value for this key should be the correct encryption type per RFC 3962 Section 7 for the session key. |
 | `sessionKeyKeyName` | `sessionKey` | The key name that contains the Kerberos session key. |
 
-The [`ASAuthorizationProviderExtensionKerberosMapping`](asauthorizationproviderextensionkerberosmapping.md) is:
+The [`ASAuthorizationProviderExtensionKerberosMapping`](./asauthorizationproviderextensionkerberosmapping.md) is:
 
 ```swift
 var mapping = ASAuthorizationProviderExtensionKerberosMapping()
@@ -255,9 +256,10 @@ If the Kerberos ticket is from a read-only domain controller (RODC) per MS-KILE 
 
 ## See Also
 
-- [Processing the JSON Web Encryption (JWE) login response](processing-the-json-web-encryption-jwe-login-response.md)
+### Login response
+- [Processing the JSON Web Encryption (JWE) login response](./processing-the-json-web-encryption-jwe-login-response.md)
   Validate the encrypted response.
-- [Performing encryption verification](performing-encryption-verification.md)
+- [Performing encryption verification](./performing-encryption-verification.md)
   Verify the login request and create a JSON Web Encryption (JWE) response.
 
 

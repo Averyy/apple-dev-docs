@@ -1,7 +1,8 @@
 # reparentEquipment(matching:childrenOf:order:context:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - visionOS 2.0+
@@ -11,6 +12,8 @@
 ```swift
 static func reparentEquipment(matching equipmentIDs: some Sequence<EquipmentIdentifier>, childrenOf parentID: EquipmentIdentifier, order: MoveEquipmentAction.Order? = nil, context: UInt64 = 0) -> Self
 ```
+
+Available when `Self` is `[MoveEquipmentAction]`.
 
 
 ---

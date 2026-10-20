@@ -1,7 +1,8 @@
 # accessors
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessors that have been granted access to this shared entity.
 

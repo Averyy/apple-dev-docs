@@ -1,7 +1,8 @@
 # StatusAccountListExchangeAccountObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An Exchange account.
 
@@ -14,13 +15,15 @@ An Exchange account.
 
 ## Declaration
 
-```swift
+```
 object StatusAccountListExchangeAccountObject
 ```
 
 ## Properties
 
 - `_removed` (boolean): If `true`, the device has removed the account and the status item object only contains this key and the `identifier` key.
+
+  **Default**: `false`
 - `are-calendars-enabled` (boolean): A Boolean value that indicates whether the Calendar app displays calendars and events for this account.
 - `are-contacts-enabled` (boolean): A Boolean value that indicates whether the Contacts app displays contacts for this account.
 - `are-notes-enabled` (boolean): A Boolean value that indicates whether the Notes app displays notes for this account.

@@ -1,7 +1,8 @@
 # AccessoryTransport.localNetwork
 
 **Framework**: Accessory Transport Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A transport method that uses the local network for data delivery.
 
@@ -16,17 +17,18 @@ case localNetwork
 
 ## Mentions
 
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+- [Receiving iOS notifications on an accessory](../receiving-ios-notifications-on-an-accessory.md)
 
 #### Discussion
 
-The system requires [`SecurityMessage.CipherSuite.xWing`](securitymessage/ciphersuite-swift.enum/xwing.md) cryptography for this transport method.
+The system requires [`SecurityMessage.CipherSuite.xWing`](../securitymessage/ciphersuite-swift.enum/xwing.md) cryptography for this transport method.
 
 ## See Also
 
-- [AccessoryTransport.bluetooth](accessorytransport/bluetooth.md)
+### Identifying transport types
+- [AccessoryTransport.bluetooth](./bluetooth.md)
   A transport method that uses Bluetooth for data delivery.
-- [AccessoryTransport.internet](accessorytransport/internet.md)
+- [AccessoryTransport.internet](./internet.md)
   A transport method that uses the internet for data delivery.
 
 

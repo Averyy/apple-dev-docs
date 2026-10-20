@@ -1,16 +1,19 @@
 # validationData
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Validation data represented as a `MLDataTable`.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 10.14+
+- iOS 15.0+ - Deprecated in 16.0
+- iPadOS 15.0+ - Deprecated in 16.0
+- Mac Catalyst 15.0+ - Deprecated in 16.0
+- macOS 10.14+ - Deprecated in 11.0
 - visionOS 1.0+
+
+> **Deprecated**: Use the validation property instead.
 
 ## Declaration
 
@@ -24,11 +27,12 @@ var validationData: MLDataTable? { get set }
 
 ## See Also
 
-- [var maxDepth: Int](mldecisiontreeregressor/modelparameters-swift.struct/maxdepth.md)
-- [var minChildWeight: Double](mldecisiontreeregressor/modelparameters-swift.struct/minchildweight.md)
-- [var minLossReduction: Double](mldecisiontreeregressor/modelparameters-swift.struct/minlossreduction.md)
-- [var randomSeed: Int](mldecisiontreeregressor/modelparameters-swift.struct/randomseed.md)
-- [var validation: MLDecisionTreeRegressor.ModelParameters.ValidationData](mldecisiontreeregressor/modelparameters-swift.struct/validation.md)
+### Accessing parameters
+- [var maxDepth: Int](./maxdepth.md)
+- [var minChildWeight: Double](./minchildweight.md)
+- [var minLossReduction: Double](./minlossreduction.md)
+- [var randomSeed: Int](./randomseed.md)
+- [var validation: MLDecisionTreeRegressor.ModelParameters.ValidationData](./validation.md)
   Validation data.
 
 

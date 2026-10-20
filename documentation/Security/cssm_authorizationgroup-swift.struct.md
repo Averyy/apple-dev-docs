@@ -1,7 +1,8 @@
 # cssm_authorizationgroup
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,19 +14,23 @@
 struct cssm_authorizationgroup
 ```
 
+```c
+struct cssm_authorizationgroup;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cssm_authorizationgroup-swift.struct/init.md)
-- [init(NumberOfAuthTags: uint32, AuthTags: UnsafeMutablePointer<CSSM_ACL_AUTHORIZATION_TAG>!)](cssm_authorizationgroup-swift.struct/init(numberofauthtags:authtags:).md)
+- [init()](./cssm_authorizationgroup-swift.struct/init%28%29.md)
+- [init(NumberOfAuthTags: uint32, AuthTags: UnsafeMutablePointer<CSSM_ACL_AUTHORIZATION_TAG>!)](./cssm_authorizationgroup-swift.struct/init%28numberofauthtags,authtags%29.md)
 ### Instance Properties
-- [var AuthTags: UnsafeMutablePointer<CSSM_ACL_AUTHORIZATION_TAG>!](cssm_authorizationgroup-swift.struct/authtags.md)
-- [var NumberOfAuthTags: uint32](cssm_authorizationgroup-swift.struct/numberofauthtags.md)
+- [var AuthTags: UnsafeMutablePointer<CSSM_ACL_AUTHORIZATION_TAG>!](./cssm_authorizationgroup-swift.struct/authtags.md)
+- [var NumberOfAuthTags: uint32](./cssm_authorizationgroup-swift.struct/numberofauthtags.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 
 ---

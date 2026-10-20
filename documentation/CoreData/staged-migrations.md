@@ -1,6 +1,7 @@
 # Staged migrations
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: API Collection
 
 Migrate complex data models containing changes that are incompatible with lightweight migrations.
 
@@ -17,23 +18,24 @@ As your object model evolves, you may find that the aggregate changes between tw
 ## Topics
 
 ### Migration staging
-- [let NSPersistentStoreStagedMigrationManagerOptionKey: String](nspersistentstorestagedmigrationmanageroptionkey.md)
+- [let NSPersistentStoreStagedMigrationManagerOptionKey: String](./nspersistentstorestagedmigrationmanageroptionkey.md)
   The key for specifying your staged migration manager.
-- [class NSStagedMigrationManager](nsstagedmigrationmanager.md)
+- [class NSStagedMigrationManager](./nsstagedmigrationmanager.md)
   An object that handles the migration event loop and provides access to the migrating persistent store.
 ### Migration stages
-- [class NSLightweightMigrationStage](nslightweightmigrationstage.md)
+- [class NSLightweightMigrationStage](./nslightweightmigrationstage.md)
   An object that describes a series of models suitable for lightweight migration.
-- [class NSCustomMigrationStage](nscustommigrationstage.md)
+- [class NSCustomMigrationStage](./nscustommigrationstage.md)
   An object that enables you to participate in the migration between two versions of the same model.
-- [class NSMigrationStage](nsmigrationstage.md)
+- [class NSMigrationStage](./nsmigrationstage.md)
   An abstract base class for describing an individual stage of a migration.
 
 ## See Also
 
-- [Migrating your data model automatically](migrating-your-data-model-automatically.md)
+### Data model migration
+- [Migrating your data model automatically](./migrating-your-data-model-automatically.md)
   Enable lightweight migrations to keep your data model and the underlying data in a consistent state.
-- [Manual migrations](manual-migrations.md)
+- [Manual migrations](./manual-migrations.md)
   Migrate elaborate data models with changes that go beyond the capabilities of both lightweight and staged migrations.
 
 

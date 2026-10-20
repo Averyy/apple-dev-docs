@@ -1,7 +1,8 @@
 # maximumLength
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum length of the fractional part, if shown.
 
@@ -22,11 +23,12 @@ var maximumLength: Int
 
 ## See Also
 
-- [var minimumLength: Int](duration/unitsformatstyle/fractionalpartdisplaystrategy/minimumlength.md)
+### Working with strategy properties
+- [var minimumLength: Int](./minimumlength.md)
   The minimum length of the fractional part, if shown.
-- [var roundingIncrement: Double?](duration/unitsformatstyle/fractionalpartdisplaystrategy/roundingincrement.md)
+- [var roundingIncrement: Double?](./roundingincrement.md)
   A multiple by which a formatter rounds a fractional part of a duration.
-- [var roundingRule: FloatingPointRoundingRule](duration/unitsformatstyle/fractionalpartdisplaystrategy/roundingrule.md)
+- [var roundingRule: FloatingPointRoundingRule](./roundingrule.md)
   The rule for rounding a unit up or down if it has a fractional part.
 
 

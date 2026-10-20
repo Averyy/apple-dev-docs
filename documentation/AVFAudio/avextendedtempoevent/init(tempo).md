@@ -1,7 +1,8 @@
 # init(tempo:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an extended tempo event.
 
@@ -17,6 +18,10 @@ Creates an extended tempo event.
 
 ```swift
 init(tempo: Double)
+```
+
+```objc
+- (instancetype) initWithTempo:(double) tempo;
 ```
 
 #### Discussion

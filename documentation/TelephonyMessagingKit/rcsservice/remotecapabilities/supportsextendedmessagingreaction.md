@@ -1,7 +1,8 @@
 # supportsExtendedMessagingReaction
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether remote end supports extended messaging reaction feature.
 

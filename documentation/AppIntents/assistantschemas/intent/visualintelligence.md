@@ -1,7 +1,8 @@
 # visualIntelligence
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for app intents that match visual intelligence intents.
 
@@ -15,6 +16,8 @@ Assistant schema conformance for app intents that match visual intelligence inte
 ```swift
 static var visualIntelligence: some AssistantSchemas.VisualIntelligenceIntent { get }
 ```
+
+Available when `Self` is `AssistantSchemas.IntentSchema`.
 
 
 ---

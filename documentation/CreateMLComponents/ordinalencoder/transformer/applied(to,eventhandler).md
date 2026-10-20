@@ -1,7 +1,8 @@
 # applied(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an ordinal encoding on a single input.
 
@@ -31,7 +32,8 @@ A ordinal encoded value.
 
 ## See Also
 
-- [func applied<S>(S, eventHandler: EventHandler?) throws -> [Int]](ordinalencoder/transformer/applied(_:eventhandler:).md)
+### Applying the transformation
+- [func applied<S>(S, eventHandler: EventHandler?) throws -> [Int]](./applied%28_,eventhandler%29.md)
   Performs an ordinal encoding on a sequence of inputs.
 
 

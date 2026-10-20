@@ -1,7 +1,8 @@
 # symbolSize(for:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the symbol size for the given data value. Returns `nil` if the symbol size scale is unavailable, or the value is invalid.
 

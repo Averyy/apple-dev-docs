@@ -1,7 +1,8 @@
 # GKGameActivity.State.initialized
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The game activity is initialized but has not started.
 
@@ -17,6 +18,10 @@ The game activity is initialized but has not started.
 
 ```swift
 case initialized
+```
+
+```c
+GKGameActivityStateInitialized
 ```
 
 

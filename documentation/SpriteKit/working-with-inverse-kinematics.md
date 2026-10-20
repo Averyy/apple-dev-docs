@@ -1,6 +1,7 @@
 # Working with Inverse Kinematics
 
-**Framework**: SpriteKit
+**Framework**: SpriteKit  
+**Role**: Article
 
 Gain fine-tuned control of objects that are connected by joints.
 
@@ -12,8 +13,8 @@ Inverse kinematics (IK) is the use of equations to drive a system of connected c
 
 SpriteKit’s IK relies on two classes:
 
-- [`SKAction`](skaction.md) object `reach` methods that solve an IK system (that run the system to make the end effector reach a specified position).
-- [`SKConstraint`](skconstraint.md) objects that constrain the position or orientation of nodes.
+- [`SKAction`](./skaction.md) object `reach` methods that solve an IK system (that run the system to make the end effector reach a specified position).
+- [`SKConstraint`](./skconstraint.md) objects that constrain the position or orientation of nodes.
 
 The following code creates a simple robot arm consisting of a fixed `shoulder` node and `upperArm`, `midArm`, and `lowerArm` sections that are joined by `elbow` and `wrist` nodes. At the end of the `wrist` is an `endEffector` node. The nodes are progressively children of each other.
 
@@ -51,7 +52,7 @@ endEffector.constraints = [ positionConstraint ]
 
 In its default position, the code above creates a node tree that looks like this (the shoulder is at the top, in blue, and the end effector is at the bottom, in yellow).
 
-![Robot arm in rest position](/images/com.apple.spritekit/media-3020290@2x.png)
+![Robot arm in rest position](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-3020290@2x.png)
 
 ##### Run the Solver
 
@@ -67,21 +68,22 @@ endEffector.run(reachAction)
 
 Given a location to the left of and slightly below the shoulder, the action finishes with the node tree looking like the following:
 
-![Robot arm after IK solve](/images/com.apple.spritekit/media-3020292@2x.png)
+![Robot arm after IK solve](https://developer.apple.com/tutorials/images/com.apple.spritekit/media-3020292@2x.png)
 
 ## See Also
 
-- [class SKPhysicsJoint](skphysicsjoint.md)
+### Physics Joints
+- [class SKPhysicsJoint](./skphysicsjoint.md)
   The abstract superclass for objects that connect physics bodies.
-- [class SKPhysicsJointFixed](skphysicsjointfixed.md)
+- [class SKPhysicsJointFixed](./skphysicsjointfixed.md)
   A joint that fuses two physics bodies together at a reference point.
-- [class SKPhysicsJointLimit](skphysicsjointlimit.md)
+- [class SKPhysicsJointLimit](./skphysicsjointlimit.md)
   A joint that imposes a maximum distance between two physics bodies, as if they were connected by a rope.
-- [class SKPhysicsJointPin](skphysicsjointpin.md)
+- [class SKPhysicsJointPin](./skphysicsjointpin.md)
   A joint that pins together two physics bodies, allowing independent rotation.
-- [class SKPhysicsJointSliding](skphysicsjointsliding.md)
+- [class SKPhysicsJointSliding](./skphysicsjointsliding.md)
   A joint that allows two physics bodies to slide along an axis.
-- [class SKPhysicsJointSpring](skphysicsjointspring.md)
+- [class SKPhysicsJointSpring](./skphysicsjointspring.md)
   A joint that simulates a spring connecting two physics bodies.
 
 

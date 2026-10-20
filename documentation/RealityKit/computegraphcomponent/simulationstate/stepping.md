@@ -1,9 +1,10 @@
 # ComputeGraphComponent.SimulationState.stepping
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-The simulation advances a single frame, then returns to [`ComputeGraphComponent.SimulationState.paused`](computegraphcomponent/simulationstate/paused.md).
+The simulation advances a single frame, then returns to [`ComputeGraphComponent.SimulationState.paused`](./paused.md).
 
 **Availability**:
 - iOS 27.0+

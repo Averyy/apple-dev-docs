@@ -1,7 +1,8 @@
 # SubdivisionSurfaceDeformer
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 OpenSubdiv surface deformation
 
@@ -22,17 +23,17 @@ struct SubdivisionSurfaceDeformer
 ## Topics
 
 ### Initializers
-- [init()](subdivisionsurfacedeformer/init.md)
+- [init()](./subdivisionsurfacedeformer/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [MeshDeformer](meshdeformer.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [MeshDeformer](./meshdeformer.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # NSFocusRingType.exterior
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The standard Aqua focus ring.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The standard Aqua focus ring.
 case exterior
 ```
 
+```c
+NSFocusRingTypeExterior
+```
+
 ## See Also
 
-- [NSFocusRingType.default](nsfocusringtype/default.md)
+### Constants
+- [NSFocusRingType.default](./default.md)
   The default focus ring type for a view or cell.
-- [NSFocusRingType.none](nsfocusringtype/none.md)
+- [NSFocusRingType.none](./none.md)
   No focus ring.
 
 

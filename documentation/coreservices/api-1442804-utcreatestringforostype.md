@@ -1,7 +1,8 @@
 # UTCreateStringForOSType(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Encodes an `OSType` into a string suitable for use as a tag argument.
 
@@ -14,7 +15,11 @@ Encodes an `OSType` into a string suitable for use as a tag argument.
 func UTCreateStringForOSType(_ inOSType: OSType) -> Unmanaged<CFString>
 ```
 
-#### Return_value
+```c
+CFStringRef UTCreateStringForOSType(OSType inOSType);
+```
+
+#### Return Value
 
 A string that encodes the OSType.
 
@@ -28,7 +33,8 @@ The UTI functions assume that all alternate identifier tags can be represented a
 
 ## See Also
 
-- [func UTGetOSTypeFromString(CFString) -> OSType](1450472-utgetostypefromstring.md)
+### Related Documentation
+- [func UTGetOSTypeFromString(CFString) -> OSType](./api-1450472-utgetostypefromstring.md)
   Decodes a tag string into an OSType.
 
 

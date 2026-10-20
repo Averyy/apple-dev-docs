@@ -1,7 +1,8 @@
 # init(attachment:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a block device configuration object that uses the specified storage medium.
 
@@ -14,13 +15,17 @@ Creates a block device configuration object that uses the specified storage medi
 init(attachment: VZStorageDeviceAttachment)
 ```
 
+```objc
+- (instancetype) initWithAttachment:(VZStorageDeviceAttachment *) attachment;
+```
+
 #### Return Value
 
 A block storage device configuration object to include in your virtual machine’s configuration.
 
 ## Parameters
 
-- `attachment`: The attachment object that provides the storage for the device. For example, specify a [`VZDiskImageStorageDeviceAttachment`](vzdiskimagestoragedeviceattachment.md) object to implement the storage using a local disk image on the host computer.
+- `attachment`: The attachment object that provides the storage for the device. For example, specify a [`VZDiskImageStorageDeviceAttachment`](../vzdiskimagestoragedeviceattachment.md) object to implement the storage using a local disk image on the host computer.
 
 
 ---

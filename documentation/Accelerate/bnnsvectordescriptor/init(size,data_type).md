@@ -1,16 +1,19 @@
 # init(size:data_type:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 10.0+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS ?+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 15.0
+- iPadOS 10.0+ - Deprecated in 15.0
+- Mac Catalyst 10.0+ - Deprecated in 15.0
+- macOS 10.12+ - Deprecated in 12.0
+- tvOS 10.0+ - Deprecated in 15.0
+- visionOS
+- watchOS 3.0+ - Deprecated in 8.0
+
+> **Deprecated**: BNNS switched to new Layer Parameters data structures.
 
 ## Declaration
 

@@ -1,7 +1,8 @@
 # init(kernelSizes:strides:dilationRates:paddingValues:paddingStyle:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 4D pooling descriptor with given values.
 
@@ -17,6 +18,10 @@ Creates a 4D pooling descriptor with given values.
 
 ```swift
 convenience init?(kernelSizes: [NSNumber], strides: [NSNumber], dilationRates: [NSNumber], paddingValues: [NSNumber], paddingStyle: MPSGraphPaddingStyle)
+```
+
+```objc
++ (instancetype) descriptorWithKernelSizes:(NSArray<NSNumber *> *) kernelSizes strides:(NSArray<NSNumber *> *) strides dilationRates:(NSArray<NSNumber *> *) dilationRates paddingValues:(NSArray<NSNumber *> *) paddingValues paddingStyle:(MPSGraphPaddingStyle) paddingStyle;
 ```
 
 #### Return Value

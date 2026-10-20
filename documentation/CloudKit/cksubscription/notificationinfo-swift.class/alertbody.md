@@ -1,7 +1,8 @@
 # alertBody
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text for the notification’s alert.
 
@@ -19,21 +20,26 @@ The text for the notification’s alert.
 var alertBody: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * alertBody;
+```
+
 #### Discussion
 
-Set this property’s value to have the system display the specified string when it receives the corresponding push notification. If you localize your app’s content, use the [`alertLocalizationKey`](cksubscription/notificationinfo-swift.class/alertlocalizationkey.md) property instead.
+Set this property’s value to have the system display the specified string when it receives the corresponding push notification. If you localize your app’s content, use the [`alertLocalizationKey`](./alertlocalizationkey.md) property instead.
 
 ## See Also
 
-- [var alertLocalizationKey: String?](cksubscription/notificationinfo-swift.class/alertlocalizationkey.md)
+### Accessing the Notification Alert
+- [var alertLocalizationKey: String?](./alertlocalizationkey.md)
   The key that identifies the localized string for the notification’s alert.
-- [var alertLocalizationArgs: [CKRecord.FieldKey]?](cksubscription/notificationinfo-swift.class/alertlocalizationargs.md)
+- [var alertLocalizationArgs: [CKRecord.FieldKey]?](./alertlocalizationargs.md)
   The fields for building a notification’s alert.
-- [var alertActionLocalizationKey: String?](cksubscription/notificationinfo-swift.class/alertactionlocalizationkey.md)
+- [var alertActionLocalizationKey: String?](./alertactionlocalizationkey.md)
   The key that identifies the localized string for the notification’s action.
-- [var alertLaunchImage: String?](cksubscription/notificationinfo-swift.class/alertlaunchimage.md)
+- [var alertLaunchImage: String?](./alertlaunchimage.md)
   The filename of an image to use as a launch image.
-- [var soundName: String?](cksubscription/notificationinfo-swift.class/soundname.md)
+- [var soundName: String?](./soundname.md)
   The filename of the sound file to play when a notification arrives.
 
 

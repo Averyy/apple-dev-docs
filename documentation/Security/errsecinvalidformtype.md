@@ -1,7 +1,8 @@
 # errSecInvalidFormType
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The form type is not valid.
 
@@ -18,6 +19,10 @@ The form type is not valid.
 
 ```swift
 var errSecInvalidFormType: OSStatus { get }
+```
+
+```c
+errSecInvalidFormType
 ```
 
 

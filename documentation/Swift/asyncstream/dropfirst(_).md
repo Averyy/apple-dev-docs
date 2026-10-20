@@ -1,7 +1,8 @@
 # dropFirst(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Omits a specified number of elements from the base asynchronous sequence, then passes through all remaining elements.
 
@@ -45,9 +46,10 @@ If the number of elements to drop exceeds the number of elements in the sequence
 
 ## See Also
 
-- [func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>](asyncstream/drop(while:).md)
+### Excluding Elements
+- [func drop(while: (Self.Element) async -> Bool) -> AsyncDropWhileSequence<Self>](./drop%28while%29.md)
   Omits elements from the base asynchronous sequence until a given closure returns false, after which it passes through all remaining elements.
-- [func filter((Self.Element) async -> Bool) -> AsyncFilterSequence<Self>](asyncstream/filter(_:).md)
+- [func filter((Self.Element) async -> Bool) -> AsyncFilterSequence<Self>](./filter%28_%29.md)
   Creates an asynchronous sequence that contains, in order, the elements of the base sequence that satisfy the given predicate.
 
 

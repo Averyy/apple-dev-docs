@@ -1,7 +1,8 @@
 # stateUpdateHandler
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A handler that receives listener state updates.
 
@@ -23,15 +24,16 @@ final var stateUpdateHandler: (@Sendable (NWListener.State) -> Void)? { get set 
 
 ## See Also
 
-- [init(using: NWParameters, on: NWEndpoint.Port) throws](nwlistener/init(using:on:).md)
+### Creating Listeners
+- [init(using: NWParameters, on: NWEndpoint.Port) throws](./init%28using,on%29.md)
   Initializes a network listener, with an optional local port.
-- [func start(queue: DispatchQueue)](nwlistener/start(queue:).md)
+- [func start(queue: DispatchQueue)](./start%28queue%29.md)
   Registers for listening, and sets the queue on which all listener events are delivered.
-- [NWListener.State](nwlistener/state-swift.enum.md)
+- [NWListener.State](./state-swift.enum.md)
   States indicating whether a listener is able to accept incoming connections.
-- [var port: NWEndpoint.Port?](nwlistener/port.md)
+- [var port: NWEndpoint.Port?](./port.md)
   The port on which the listener can accept connections.
-- [func cancel()](nwlistener/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Stops listening for inbound connections.
 
 

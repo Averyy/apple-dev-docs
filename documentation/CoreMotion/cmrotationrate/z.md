@@ -1,7 +1,8 @@
 # z
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value for the Z-axis.
 
@@ -19,11 +20,16 @@ The value for the Z-axis.
 var z: Double
 ```
 
+```c
+double z;
+```
+
 ## See Also
 
-- [var x: Double](cmrotationrate/x.md)
+### Getting the Rotation Rates
+- [var x: Double](./x.md)
   The value for the X-axis.
-- [var y: Double](cmrotationrate/y.md)
+- [var y: Double](./y.md)
   The value for the Y-axis.
 
 

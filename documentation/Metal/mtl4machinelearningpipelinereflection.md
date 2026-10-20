@@ -1,7 +1,8 @@
 # MTL4MachineLearningPipelineReflection
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents reflection information for a machine learning pipeline state.
 
@@ -19,29 +20,34 @@ Represents reflection information for a machine learning pipeline state.
 class MTL4MachineLearningPipelineReflection
 ```
 
+```objc
+@interface MTL4MachineLearningPipelineReflection : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var bindings: [any MTLBinding]](mtl4machinelearningpipelinereflection/bindings.md)
+- [var bindings: [any MTLBinding]](./mtl4machinelearningpipelinereflection/bindings.md)
   Describes every input and output of the pipeline.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MTL4MachineLearningPipelineDescriptor](mtl4machinelearningpipelinedescriptor.md)
+### Configuring a machine learning pipeline
+- [class MTL4MachineLearningPipelineDescriptor](./mtl4machinelearningpipelinedescriptor.md)
   Description for a machine learning pipeline state.
 
 

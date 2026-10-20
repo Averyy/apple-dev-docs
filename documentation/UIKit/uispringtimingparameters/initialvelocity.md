@@ -1,7 +1,8 @@
 # initialVelocity
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target property’s rate of change at the start of a spring animation, enabling a smooth transition into the animation.
 
@@ -18,13 +19,17 @@ The target property’s rate of change at the start of a spring animation, enabl
 var initialVelocity: CGVector { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGVector initialVelocity;
+```
+
 #### Discussion
 
 To create a smooth transition from an object in motion into a spring animation, initialize the spring timing parameters with an initial velocity. One common use of this property is to animate a view to a final resting position at the end of a pan gesture.
 
 For view position animations, both components of the initial velocity vector are considered. Each component specifies the initial rate of change along the respective `x` and `y` axes, normalized to the total distance of the animation. To calculate an initial velocity vector:
 
-1. Start with a velocity of the view in points per second. For example, when moving a view using a [`UIPanGestureRecognizer`](uipangesturerecognizer.md), you can use [`velocity(in:)`](uipangesturerecognizer/velocity(in:).md) for this starting value.
+1. Start with a velocity of the view in points per second. For example, when moving a view using a [`UIPanGestureRecognizer`](../uipangesturerecognizer.md), you can use [`velocity(in:)`](../uipangesturerecognizer/velocity%28in%29.md) for this starting value.
 2. Calculate the `x` and `y` distance, in points, from the view’s current position to the final position.
 3. Set the `dx` component of the initial velocity vector to the `x` velocity divided by the `x` distance. If the `x` distance is `0`, set `dx` to `0`.
 4. Set the `dy` component to the `y` velocity divided by the `y` distance. If the `y` distance is `0`, set `dy` to `0`.

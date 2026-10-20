@@ -1,7 +1,8 @@
 # contact
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contact the user added.
 
@@ -19,9 +20,14 @@ The contact the user added.
 var contact: CNContact { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) CNContact * contact;
+```
+
 ## See Also
 
-- [var containerIdentifier: String?](cnchangehistoryaddcontactevent/containeridentifier.md)
+### Getting event details
+- [var containerIdentifier: String?](./containeridentifier.md)
   A string that uniquely identifies the container where the user added the contact.
 
 

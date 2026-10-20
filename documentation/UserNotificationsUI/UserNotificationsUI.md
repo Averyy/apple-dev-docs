@@ -1,7 +1,8 @@
 # User Notifications UI
 
 **Framework**: User Notifications UI  
-**Kind**: module
+**Kind**: module  
+**Role**: Framework
 
 Customize the interface that displays local and remote notifications.
 
@@ -19,9 +20,9 @@ Customize how local and remote notifications appear on the user’s device by ad
 ## Topics
 
 ### Notification Content App Extension
-- [Customizing the Appearance of Notifications](customizing-the-appearance-of-notifications.md)
+- [Customizing the Appearance of Notifications](./customizing-the-appearance-of-notifications.md)
   Customize the appearance of your iOS app’s notification alerts with a notification content app extension.
-- [protocol UNNotificationContentExtension](unnotificationcontentextension.md)
+- [protocol UNNotificationContentExtension](./unnotificationcontentextension.md)
   An object that presents a custom interface for a delivered local or remote notification.
 
 

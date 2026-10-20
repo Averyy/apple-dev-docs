@@ -1,7 +1,8 @@
 # init(value:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a noise source with the specified constant value.
 
@@ -19,13 +20,17 @@ Initializes a noise source with the specified constant value.
 init(value: Double)
 ```
 
+```objc
+- (instancetype) initWithValue:(double) value;
+```
+
 #### Return Value
 
 A new noise source.
 
 #### Discussion
 
-To make use of this noise source, create a [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) or `SKTileMap` class.
+To make use of this noise source, create a [`GKNoise`](../gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](../gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](../../SpriteKit/sktexture.md) or `SKTileMap` class.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ To make use of this noise source, create a [`GKNoise`](gknoise.md) object from i
 
 ## See Also
 
-- [class func constantNoise(withValue: Double) -> Self](gkconstantnoisesource/constantnoise(withvalue:).md)
+### Creating a Noise Source
+- [class func constantNoise(withValue: Double) -> Self](./constantnoise%28withvalue%29.md)
   Creates a noise source with the specified constant value.
 
 

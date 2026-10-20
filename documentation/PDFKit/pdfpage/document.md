@@ -1,7 +1,8 @@
 # document
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the `PDFDocument` object with which the page is associated.
 
@@ -19,15 +20,20 @@ Returns the `PDFDocument` object with which the page is associated.
 weak var document: PDFDocument? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) PDFDocument * document;
+```
+
 ## See Also
 
-- [var label: String?](pdfpage/label.md)
+### Getting Information About a Page
+- [var label: String?](./label.md)
   Returns the label for the page.
-- [func bounds(for: PDFDisplayBox) -> CGRect](pdfpage/bounds(for:).md)
+- [func bounds(for: PDFDisplayBox) -> CGRect](./bounds%28for%29.md)
   Returns the bounds for the specified PDF display box.
-- [func setBounds(CGRect, for: PDFDisplayBox)](pdfpage/setbounds(_:for:).md)
+- [func setBounds(CGRect, for: PDFDisplayBox)](./setbounds%28_,for%29.md)
   Sets the bounds for the specified box.
-- [var rotation: Int](pdfpage/rotation.md)
+- [var rotation: Int](./rotation.md)
   Sets the rotation angle for the page in degrees.
 
 

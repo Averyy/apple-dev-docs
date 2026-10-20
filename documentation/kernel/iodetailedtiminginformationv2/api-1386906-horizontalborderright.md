@@ -1,7 +1,8 @@
 # horizontalBorderRight
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Number of pixels in right horizontal border.
 
@@ -10,7 +11,7 @@ Number of pixels in right horizontal border.
 
 ## Declaration
 
-```swift
+```c
 UInt32 horizontalBorderRight;
 ```
 

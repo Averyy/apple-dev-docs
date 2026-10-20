@@ -1,7 +1,8 @@
 # continuous
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Continuously anchors the entity to its target based on the target’s realtime location and hides the entity when the target is no longer in frame.
 

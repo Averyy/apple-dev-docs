@@ -1,6 +1,7 @@
 # Examining server tokens
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 View sample encrypted and unencrypted tokens to verify your server tokens are in the right format.
 
@@ -52,7 +53,8 @@ b1e482ef22093c7d54b23252f3bdb4d19b4d49","consumer_secret":"CS_27c083df1ab7271e
 
 ## See Also
 
-- [Interpreting Automated Device Enrollment error codes](interpreting-automated-device-enrollment-error-codes.md)
+### Examples and error codes
+- [Interpreting Automated Device Enrollment error codes](./interpreting-automated-device-enrollment-error-codes.md)
   Interpret the error codes you might encounter or that can happen during authentication.
 
 

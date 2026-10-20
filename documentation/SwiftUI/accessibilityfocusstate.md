@@ -1,7 +1,8 @@
 # AccessibilityFocusState
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper type that can read and write a value that SwiftUI updates as the focus of any active accessibility technology, such as VoiceOver, changes.
 
@@ -23,7 +24,7 @@ A property wrapper type that can read and write a value that SwiftUI updates as 
 
 #### Overview
 
-Use this capability to request that VoiceOver or other accessibility technologies programmatically focus on a specific element, or to determine whether VoiceOver or other accessibility technologies are focused on particular elements. Use [`accessibilityFocused(_:equals:)`](view/accessibilityfocused(_:equals:).md) or [`accessibilityFocused(_:)`](view/accessibilityfocused(_:).md) in conjunction with this property wrapper to identify accessibility elements for which you want to get or set accessibility focus. When accessibility focus enters the modified accessibility element, the framework updates the wrapped value of this property to match a given prototype value. When accessibility focus leaves, SwiftUI resets the wrapped value of an optional property to `nil` or the wrapped value of a Boolean property to `false`. Setting the property’s value programmatically has the reverse effect, causing accessibility focus to move to whichever accessibility element is associated with the updated value.
+Use this capability to request that VoiceOver or other accessibility technologies programmatically focus on a specific element, or to determine whether VoiceOver or other accessibility technologies are focused on particular elements. Use [`accessibilityFocused(_:equals:)`](./view/accessibilityfocused%28_,equals%29.md) or [`accessibilityFocused(_:)`](./view/accessibilityfocused%28_%29.md) in conjunction with this property wrapper to identify accessibility elements for which you want to get or set accessibility focus. When accessibility focus enters the modified accessibility element, the framework updates the wrapped value of this property to match a given prototype value. When accessibility focus leaves, SwiftUI resets the wrapped value of an optional property to `nil` or the wrapped value of a Boolean property to `false`. Setting the property’s value programmatically has the reverse effect, causing accessibility focus to move to whichever accessibility element is associated with the updated value.
 
 In the example below, when `notification` changes, and its  `isPriority` property is `true`, the accessibility focus moves to the notification `Text` element above the rest of the view’s content:
 
@@ -62,29 +63,30 @@ Some initializers of `AccessibilityFocusState` also allow specifying accessibili
 ## Topics
 
 ### Creating a focus state
-- [init()](accessibilityfocusstate/init.md)
+- [init()](./accessibilityfocusstate/init%28%29.md)
   Creates a new accessibility focus state for a Boolean value.
-- [init(for:)](accessibilityfocusstate/init(for:).md)
+- [init(for:)](./accessibilityfocusstate/init%28for%29.md)
   Creates a new accessibility focus state for a Boolean value, using the accessibility technologies you specify.
 ### Getting the state
-- [var projectedValue: AccessibilityFocusState<Value>.Binding](accessibilityfocusstate/projectedvalue.md)
+- [var projectedValue: AccessibilityFocusState<Value>.Binding](./accessibilityfocusstate/projectedvalue.md)
   A projection of the state value that can be used to establish bindings between view content and accessibility focus placement.
-- [var wrappedValue: Value](accessibilityfocusstate/wrappedvalue.md)
+- [var wrappedValue: Value](./accessibilityfocusstate/wrappedvalue.md)
   The current state value, taking into account whatever bindings might be in effect due to the current location of focus.
-- [AccessibilityFocusState.Binding](accessibilityfocusstate/binding.md)
+- [AccessibilityFocusState.Binding](./accessibilityfocusstate/binding.md)
 
 ## Relationships
 
 ### Conforms To
-- [DynamicProperty](dynamicproperty.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [DynamicProperty](./dynamicproperty.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accessibilityFocused(AccessibilityFocusState<Bool>.Binding) -> some View](view/accessibilityfocused(_:).md)
+### Controlling focus
+- [func accessibilityFocused(AccessibilityFocusState<Bool>.Binding) -> some View](./view/accessibilityfocused%28_%29.md)
   Modifies this view by binding its accessibility element’s focus state to the given boolean state value.
-- [func accessibilityFocused<Value>(AccessibilityFocusState<Value>.Binding, equals: Value) -> some View](view/accessibilityfocused(_:equals:).md)
+- [func accessibilityFocused<Value>(AccessibilityFocusState<Value>.Binding, equals: Value) -> some View](./view/accessibilityfocused%28_,equals%29.md)
   Modifies this view by binding its accessibility element’s focus state to the given state value.
 
 

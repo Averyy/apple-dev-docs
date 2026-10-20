@@ -1,7 +1,8 @@
 # ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation.read
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value to represent the read operation.
 
@@ -20,7 +21,8 @@ case read
 
 ## See Also
 
-- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation.write(_:)](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/operation-swift.enum/write(_:).md)
+### Input operations
+- [ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput.Operation.write(_:)](./write%28_%29.md)
   A value to represent the write operation.
 
 

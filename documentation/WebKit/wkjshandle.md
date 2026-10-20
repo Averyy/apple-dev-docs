@@ -1,7 +1,8 @@
 # WKJSHandle
 
 **Framework**: WebKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A WKJSHandle object contains a reference to a JavaScript object.
 
@@ -17,6 +18,10 @@ A WKJSHandle object contains a reference to a JavaScript object.
 ```swift
 @MainActor
 class WKJSHandle
+```
+
+```objc
+@interface WKJSHandle : NSObject
 ```
 
 #### Overview
@@ -35,41 +40,42 @@ Whatever JavaScript object the `WKJSHandle` represents, it will be protected fro
 ## Topics
 
 ### Instance Properties
-- [var contentWorld: WKContentWorld?](wkjshandle/contentworld.md)
-- [var sourceFrame: WKFrameInfo](wkjshandle/sourceframe.md)
+- [var contentWorld: WKContentWorld?](./wkjshandle/contentworld.md)
+- [var sourceFrame: WKFrameInfo](./wkjshandle/sourceframe.md)
 ### Instance Methods
-- [func getWindowProxyFrame(completionHandler: (WKFrameInfo?) -> Void)](wkjshandle/getwindowproxyframe(completionhandler:).md)
+- [func getWindowProxyFrame(completionHandler: (WKFrameInfo?) -> Void)](./wkjshandle/getwindowproxyframe%28completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class WKUserContentController](wkusercontentcontroller.md)
+### Page content
+- [class WKUserContentController](./wkusercontentcontroller.md)
   An object for managing interactions between JavaScript code and your web view, and for filtering content in your web view.
-- [class WKContentRuleListStore](wkcontentruleliststore.md)
+- [class WKContentRuleListStore](./wkcontentruleliststore.md)
   An object that contains the rules for how to load and filter content in the web view.
-- [class WKContentWorld](wkcontentworld.md)
+- [class WKContentWorld](./wkcontentworld.md)
   An object that defines a scope of execution for JavaScript code, and which you use to prevent conflicts between different scripts.
-- [class WKFrameInfo](wkframeinfo.md)
+- [class WKFrameInfo](./wkframeinfo.md)
   An object that contains information about a frame on a webpage.
-- [class WKSecurityOrigin](wksecurityorigin.md)
+- [class WKSecurityOrigin](./wksecurityorigin.md)
   An object that identifies the origin of a particular resource.
-- [class WKUserScript](wkuserscript.md)
+- [class WKUserScript](./wkuserscript.md)
   A script that the web view injects into a webpage.
-- [WKContentWorld.Configuration](wkcontentworld/configuration.md)
+- [WKContentWorld.Configuration](./wkcontentworld/configuration.md)
 
 
 ---

@@ -1,16 +1,17 @@
 # post(notification:argument:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Posts a notification to assistive apps.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,20 +20,25 @@ Posts a notification to assistive apps.
 static func post(notification: UIAccessibility.Notification, argument: Any?)
 ```
 
+```c
+extern void UIAccessibilityPostNotification(UIAccessibilityNotifications notification, id argument);
+```
+
 #### Discussion
 
 Your application might need to post accessibility notifications if you have user interface components that change very frequently or that appear and disappear.
 
 ## Parameters
 
-- `notification`: The notification to post (see “Notifications” in [`UIAccessibility`](uiaccessibility-protocol.md) for a list of notifications).
+- `notification`: The notification to post (see “Notifications” in [UIAccessibility](../uiaccessibility-protocol.md) for a list of notifications).
 - `argument`: The argument specified by the notification. Pass `nil` unless a notification specifies otherwise.
 
 ## See Also
 
-- [Notification names](notification-names.md)
+### Notifications
+- [Notification names](../notification-names.md)
   The names of notifications that the accessibility system generates.
-- [Notification dictionary keys](notification-dictionary-keys.md)
+- [Notification dictionary keys](../notification-dictionary-keys.md)
   Handle notifications with keys in the user info dictionary.
 
 

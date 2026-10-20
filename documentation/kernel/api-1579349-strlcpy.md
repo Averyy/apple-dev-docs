@@ -1,22 +1,24 @@
 # strlcpy
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 size_t strlcpy(char *dst, const char *src, size_t n);
 ```
 
 ## See Also
 
-- [strncpy](1579331-strncpy.md)
-- [bcopy](1579339-bcopy.md)
-- [STRDUP](1579334-strdup.md)
+### Copy
+- [strncpy](./api-1579331-strncpy.md)
+- [bcopy](./api-1579339-bcopy.md)
+- [STRDUP](./api-1579334-strdup.md)
 
 
 ---

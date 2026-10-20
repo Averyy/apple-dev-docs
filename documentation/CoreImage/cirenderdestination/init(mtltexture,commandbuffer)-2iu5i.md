@@ -1,7 +1,8 @@
 # init(mtlTexture:commandBuffer:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a render destination based on a Metal texture.
 
@@ -19,32 +20,37 @@ Creates a render destination based on a Metal texture.
 init(mtlTexture texture: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?)
 ```
 
+```objc
+- (instancetype) initWithMTLTexture:(id<MTLTexture>) texture commandBuffer:(id<MTLCommandBuffer>) commandBuffer;
+```
+
 #### Return Value
 
-A [`CIRenderDestination`](cirenderdestination.md) object for rendering to a Metal buffer.
+A [`CIRenderDestination`](../cirenderdestination.md) object for rendering to a Metal buffer.
 
 #### Discussion
 
-Rendering to a [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture)-backed [`CIRenderDestination`](cirenderdestination.md) is supported by only [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture)-backed [`CIContext`](cicontext.md) objects.  The texture must have [`MTLTextureType`](https://developer.apple.com/documentation/metal/mtltexturetype) of [`MTLTextureType.type2D`](https://developer.apple.com/documentation/metal/mtltexturetype/type2d).
+Rendering to a [`MTLTexture`](../../Metal/mtltexture.md)-backed [`CIRenderDestination`](../cirenderdestination.md) is supported by only [`MTLTexture`](../../Metal/mtltexture.md)-backed [`CIContext`](../cicontext.md) objects.  The texture must have [`MTLTextureType`](../../Metal/mtltexturetype.md) of [`MTLTextureType.type2D`](../../Metal/mtltexturetype/type2d.md).
 
-The destination’s [`colorSpace`](cirenderdestination/colorspace.md) property will default to a [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) created with [`sRGB`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/srgb), [`extendedSRGB`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/extendedsrgb), or [`genericGrayGamma2_2`](https://developer.apple.com/documentation/coregraphics/cgcolorspace/genericgraygamma2_2).
+The destination’s [`colorSpace`](./colorspace.md) property will default to a [`CGColorSpace`](../../CoreGraphics/cgcolorspace.md) created with [`sRGB`](../../CoreGraphics/cgcolorspace/srgb.md), [`extendedSRGB`](../../CoreGraphics/cgcolorspace/extendedsrgb.md), or [`genericGrayGamma2_2`](../../CoreGraphics/cgcolorspace/genericgraygamma2_2.md).
 
 ## Parameters
 
-- `texture`: The [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) object for rendering with [`MTLTextureType`](https://developer.apple.com/documentation/metal/mtltexturetype) of [`MTLTextureType.type2D`](https://developer.apple.com/documentation/metal/mtltexturetype/type2d).
-- `commandBuffer`: An optional [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) to use for rendering to the [`MTLTexture`](https://developer.apple.com/documentation/metal/mtltexture) destination.
+- `texture`: The [`MTLTexture`](../../Metal/mtltexture.md) object for rendering with [`MTLTextureType`](../../Metal/mtltexturetype.md) of [`MTLTextureType.type2D`](../../Metal/mtltexturetype/type2d.md).
+- `commandBuffer`: An optional [`MTLCommandBuffer`](../../Metal/mtlcommandbuffer.md) to use for rendering to the [`MTLTexture`](../../Metal/mtltexture.md) destination.
 
 ## See Also
 
-- [init(pixelBuffer: CVPixelBuffer)](cirenderdestination/init(pixelbuffer:).md)
+### Creating a Render Destination
+- [init(pixelBuffer: CVPixelBuffer)](./init%28pixelbuffer%29.md)
   Creates a render destination based on a Core Video pixel buffer.
-- [init(ioSurface: IOSurface)](cirenderdestination/init(iosurface:)-1hfcq.md)
+- [init(ioSurface: IOSurface)](./init%28iosurface%29-1hfcq.md)
   Creates a render destination based on an `IOSurface` object.
-- [init(width: Int, height: Int, pixelFormat: MTLPixelFormat, commandBuffer: (any MTLCommandBuffer)?, mtlTextureProvider: (() -> any MTLTexture)?)](cirenderdestination/init(width:height:pixelformat:commandbuffer:mtltextureprovider:).md)
+- [init(width: Int, height: Int, pixelFormat: MTLPixelFormat, commandBuffer: (any MTLCommandBuffer)?, mtlTextureProvider: (() -> any MTLTexture)?)](./init%28width,height,pixelformat,commandbuffer,mtltextureprovider%29.md)
   Creates a render destination based on a Metal texture with specified pixel format.
-- [init(glTexture: UInt32, target: UInt32, width: Int, height: Int)](cirenderdestination/init(gltexture:target:width:height:)-9ci8e.md)
+- [init(glTexture: UInt32, target: UInt32, width: Int, height: Int)](./init%28gltexture,target,width,height%29-9ci8e.md)
   Creates a render destination based on an OpenGL texture.
-- [init(bitmapData: UnsafeMutableRawPointer, width: Int, height: Int, bytesPerRow: Int, format: CIFormat)](cirenderdestination/init(bitmapdata:width:height:bytesperrow:format:).md)
+- [init(bitmapData: UnsafeMutableRawPointer, width: Int, height: Int, bytesPerRow: Int, format: CIFormat)](./init%28bitmapdata,width,height,bytesperrow,format%29.md)
   Creates a render destination based on a client-managed buffer.
 
 

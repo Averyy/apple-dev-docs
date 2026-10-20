@@ -1,7 +1,8 @@
 # init(diagonal:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a diagonal matrix with `s` on the diagonal and zeros elsewhere.
 

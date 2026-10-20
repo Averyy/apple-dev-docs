@@ -1,7 +1,8 @@
 # init(storeIDs:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new queue descriptor using the designated store identifiers.
 
@@ -16,6 +17,10 @@ Creates a new queue descriptor using the designated store identifiers.
 
 ```swift
 init(storeIDs: [String])
+```
+
+```objc
+- (instancetype) initWithStoreIDs:(NSArray<NSString *> *) storeIDs;
 ```
 
 #### Return Value

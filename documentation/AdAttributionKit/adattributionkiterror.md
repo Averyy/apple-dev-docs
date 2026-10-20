@@ -1,7 +1,8 @@
 # AdAttributionKitError
 
 **Framework**: AdAttributionKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe ad attribution error conditions.
 
@@ -19,37 +20,37 @@ enum AdAttributionKitError
 ## Topics
 
 ### Enumeration Cases
-- [AdAttributionKitError.conversionTagNotSupported](adattributionkiterror/conversiontagnotsupported.md)
+- [AdAttributionKitError.conversionTagNotSupported](./adattributionkiterror/conversiontagnotsupported.md)
   The postback update failed due to an unsupported use of conversion tag
-- [AdAttributionKitError.impressionExpired](adattributionkiterror/impressionexpired.md)
+- [AdAttributionKitError.impressionExpired](./adattributionkiterror/impressionexpired.md)
   The attribution failed because the impression expired.
-- [AdAttributionKitError.invalidConversionTag](adattributionkiterror/invalidconversiontag.md)
+- [AdAttributionKitError.invalidConversionTag](./adattributionkiterror/invalidconversiontag.md)
   The postback update failed due to an invalid conversion tag
-- [AdAttributionKitError.invalidImpressionJWSComponents](adattributionkiterror/invalidimpressionjwscomponents.md)
+- [AdAttributionKitError.invalidImpressionJWSComponents](./adattributionkiterror/invalidimpressionjwscomponents.md)
   The attribution failed due to invalid JWS components.
-- [AdAttributionKitError.invalidImpressionJWSHeader](adattributionkiterror/invalidimpressionjwsheader.md)
+- [AdAttributionKitError.invalidImpressionJWSHeader](./adattributionkiterror/invalidimpressionjwsheader.md)
   The attribution failed due to an invalid JWS header.
-- [AdAttributionKitError.invalidImpressionJWSPayload](adattributionkiterror/invalidimpressionjwspayload.md)
+- [AdAttributionKitError.invalidImpressionJWSPayload](./adattributionkiterror/invalidimpressionjwspayload.md)
   The attribution failed due to an invalid JWS payload.
-- [AdAttributionKitError.invalidImpressionJWSSignature](adattributionkiterror/invalidimpressionjwssignature.md)
+- [AdAttributionKitError.invalidImpressionJWSSignature](./adattributionkiterror/invalidimpressionjwssignature.md)
   The attribution failed due to an invalid JWS signature.
-- [AdAttributionKitError.missingAttributionView](adattributionkiterror/missingattributionview.md)
+- [AdAttributionKitError.missingAttributionView](./adattributionkiterror/missingattributionview.md)
   The attribution failed due to a missing attribution view.
-- [AdAttributionKitError.unknown](adattributionkiterror/unknown.md)
+- [AdAttributionKitError.unknown](./adattributionkiterror/unknown.md)
   The attribution failed due to an unknown, unrecoverable error.
 ### Instance Properties
-- [var description: String](adattributionkiterror/description.md)
+- [var description: String](./adattributionkiterror/description.md)
   A string that describes the error.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

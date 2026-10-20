@@ -1,6 +1,7 @@
 # Date Formatter Styles
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 Predefined date and time format styles.
 
@@ -16,22 +17,23 @@ The format for these date and time styles is not exact because they depend on th
 ## Topics
 
 ### Constants
-- [CFDateFormatterStyle.noStyle](cfdateformatterstyle/nostyle.md)
+- [CFDateFormatterStyle.noStyle](./cfdateformatterstyle/nostyle.md)
   Specifies no output.
-- [CFDateFormatterStyle.shortStyle](cfdateformatterstyle/shortstyle.md)
+- [CFDateFormatterStyle.shortStyle](./cfdateformatterstyle/shortstyle.md)
   Specifies a short style, typically numeric only, such as “11/23/37” or “3:30pm”.
-- [CFDateFormatterStyle.mediumStyle](cfdateformatterstyle/mediumstyle.md)
+- [CFDateFormatterStyle.mediumStyle](./cfdateformatterstyle/mediumstyle.md)
   Specifies a medium style, typically with abbreviated text, such as “Nov 23, 1937”.
-- [CFDateFormatterStyle.longStyle](cfdateformatterstyle/longstyle.md)
+- [CFDateFormatterStyle.longStyle](./cfdateformatterstyle/longstyle.md)
   Specifies a long style, typically with full text, such as “November 23, 1937” or “3:30:32pm”.
-- [CFDateFormatterStyle.fullStyle](cfdateformatterstyle/fullstyle.md)
+- [CFDateFormatterStyle.fullStyle](./cfdateformatterstyle/fullstyle.md)
   Specifies a full style with complete details, such as “Tuesday, April 12, 1952 AD” or “3:30:42pm PST”.
 
 ## See Also
 
-- [Date Formatter Property Keys](date-formatter-property-keys.md)
-  Keys used in key-value pairs to discover and specify the value of date formatter properties—used in conjunction with [`CFDateFormatterCopyProperty(_:_:)`](cfdateformattercopyproperty(_:_:).md) and [`CFDateFormatterSetProperty(_:_:_:)`](cfdateformattersetproperty(_:_:_:).md).
-- [Calendar Names](calendar-names.md)
+### Constants
+- [Date Formatter Property Keys](./date-formatter-property-keys.md)
+  Keys used in key-value pairs to discover and specify the value of date formatter properties—used in conjunction with [`CFDateFormatterCopyProperty(_:_:)`](./cfdateformattercopyproperty%28_,_%29.md) and [`CFDateFormatterSetProperty(_:_:_:)`](./cfdateformattersetproperty%28_,_,_%29.md).
+- [Calendar Names](./calendar-names.md)
   Calendar names used by CFDateFormatter.
 
 

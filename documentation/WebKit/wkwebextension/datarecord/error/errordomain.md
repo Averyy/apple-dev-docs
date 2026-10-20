@@ -1,9 +1,10 @@
 # errorDomain
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Indicates a [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) error.
+Indicates a [`WKWebExtension.DataRecord`](../../datarecord.md) error.
 
 **Availability**:
 - iOS 18.4+

@@ -1,7 +1,8 @@
 # none
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Prevents SwiftData from using a group container as the root location for the app’s persistent storage.
 
@@ -23,9 +24,10 @@ static var none: ModelConfiguration.GroupContainer { get }
 
 ## See Also
 
-- [static var automatic: ModelConfiguration.GroupContainer](modelconfiguration/groupcontainer-swift.struct/automatic.md)
+### Getting discovery options
+- [static var automatic: ModelConfiguration.GroupContainer](./automatic.md)
   Tells SwiftData to use the app’s primary group container as the root location for the persistent storage.
-- [static func identifier(String) -> ModelConfiguration.GroupContainer](modelconfiguration/groupcontainer-swift.struct/identifier(_:).md)
+- [static func identifier(String) -> ModelConfiguration.GroupContainer](./identifier%28_%29.md)
   Tells SwiftData to use the specified group container as the root location for the app’s persistent storage.
 
 

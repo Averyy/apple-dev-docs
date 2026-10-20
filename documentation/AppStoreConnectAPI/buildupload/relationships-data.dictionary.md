@@ -1,7 +1,8 @@
 # BuildUpload.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,22 +11,22 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BuildUpload.Relationships
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BuildUpload.Relationships.AssetDescriptionFile](buildupload/relationships-data.dictionary/assetdescriptionfile-data.dictionary.md)
+- [object BuildUpload.Relationships.AssetDescriptionFile](./relationships-data.dictionary/assetdescriptionfile-data.dictionary.md)
   The data that describes the asset description file related to a upload.
-- [object BuildUpload.Relationships.AssetFile](buildupload/relationships-data.dictionary/assetfile-data.dictionary.md)
+- [object BuildUpload.Relationships.AssetFile](./relationships-data.dictionary/assetfile-data.dictionary.md)
   The data that describes the asset file related to a upload.
-- [object BuildUpload.Relationships.AssetSpiFile](buildupload/relationships-data.dictionary/assetspifile-data.dictionary.md)
+- [object BuildUpload.Relationships.AssetSpiFile](./relationships-data.dictionary/assetspifile-data.dictionary.md)
   The data that describes the asset spi file related to a upload.
-- [object BuildUpload.Relationships.Build](buildupload/relationships-data.dictionary/build-data.dictionary.md)
+- [object BuildUpload.Relationships.Build](./relationships-data.dictionary/build-data.dictionary.md)
   The data that describes the build related to a upload.
-- [object BuildUpload.Relationships.BuildUploadFiles](buildupload/relationships-data.dictionary/builduploadfiles-data.dictionary.md)
+- [object BuildUpload.Relationships.BuildUploadFiles](./relationships-data.dictionary/builduploadfiles-data.dictionary.md)
   The data that describes the build related to a upload.
 
 ## Properties

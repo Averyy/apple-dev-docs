@@ -1,7 +1,8 @@
 # append(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends sample data to a media file and adds sample references for the added data to a track’s media sample tables.
 
@@ -42,7 +43,7 @@ Note that this method expects
 
 It’s safe for multiple threads to call this method on different tracks at once.
 
-> **Note**: This method throws AVErrorDiskFull if the device containing the track’s media data storage is full.
+> **Throws**: This method throws AVErrorDiskFull if the device containing the track’s media data storage is full.
 
 ## Parameters
 
@@ -50,9 +51,10 @@ It’s safe for multiple threads to call this method on different tracks at once
 
 ## See Also
 
-- [func append(CMSampleBuffer, decodeTime: UnsafeMutablePointer<CMTime>?, presentationTime: UnsafeMutablePointer<CMTime>?) throws](avmutablemovietrack/append(_:decodetime:presentationtime:).md)
+### Appending sample data
+- [func append(CMSampleBuffer, decodeTime: UnsafeMutablePointer<CMTime>?, presentationTime: UnsafeMutablePointer<CMTime>?) throws](./append%28_,decodetime,presentationtime%29.md)
   Appends sample data to a media file and adds sample references for the added data to a track’s media sample tables.
-- [func insertMediaTimeRange(CMTimeRange, into: CMTimeRange) -> Bool](avmutablemovietrack/insertmediatimerange(_:into:).md)
+- [func insertMediaTimeRange(CMTimeRange, into: CMTimeRange) -> Bool](./insertmediatimerange%28_,into%29.md)
   Inserts a reference to a media time range into a track.
 
 

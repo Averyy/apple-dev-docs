@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: PermissionKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two values are equal.
 
@@ -25,7 +26,8 @@ static func == (lhs: PermissionChoice, rhs: PermissionChoice) -> Bool
 
 ## See Also
 
-- [func hash(into: inout Hasher)](permissionchoice/hash(into:).md)
+### Computing hashes
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Performs a hash operation on the value by feeding its hash values into the given hasher.
 
 

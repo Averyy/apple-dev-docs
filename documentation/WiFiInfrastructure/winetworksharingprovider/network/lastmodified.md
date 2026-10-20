@@ -1,7 +1,8 @@
 # lastModified
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date when this network was last modified.
 
@@ -22,7 +23,8 @@ Use this property for informational purposes or broad filtering policies. Avoid 
 
 ## See Also
 
-- [let firstShared: Date](winetworksharingprovider/network/firstshared.md)
+### Getting the date
+- [let firstShared: Date](./firstshared.md)
   The date when this network was first shared to the accessory.
 
 

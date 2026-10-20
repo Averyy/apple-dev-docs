@@ -1,7 +1,8 @@
 # *(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Multiplies two values and produces their product.
 

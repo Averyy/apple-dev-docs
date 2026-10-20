@@ -1,7 +1,8 @@
 # kDNSServiceFlagsValidateOptional
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceFlagsValidateOptional: UInt32 { get }
+```
+
+```c
+kDNSServiceFlagsValidateOptional
 ```
 
 #### Discussion

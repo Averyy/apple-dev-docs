@@ -1,7 +1,8 @@
 # init(resource:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a `NSColor` with a color resource.
 
@@ -16,9 +17,10 @@ convenience init(resource: ColorResource)
 
 ## See Also
 
-- [init()](nscolor/init.md)
+### Creating color objects
+- [init()](./init%28%29.md)
   Initializes the color object.
-- [init?(coder: NSCoder)](nscolor/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a color object from data in an unarchiver.
 
 

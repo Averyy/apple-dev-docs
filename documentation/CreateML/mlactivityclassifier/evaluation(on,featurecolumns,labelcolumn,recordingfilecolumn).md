@@ -1,7 +1,8 @@
 # evaluation(on:featureColumns:labelColumn:recordingFileColumn:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates metrics describing the activity classifier’s performance on labeled activities in a data source.
 
@@ -14,22 +15,29 @@ Generates metrics describing the activity classifier’s performance on labeled 
 func evaluation(on testingData: MLActivityClassifier.DataSource, featureColumns: [String], labelColumn: String? = nil, recordingFileColumn: String? = nil) -> MLClassifierMetrics
 ```
 
+**Other overloads**:
+
+```swift
+func evaluation(on testingData: MLDataTable, featureColumns: [String], labelColumn: String, recordingFileColumn: String) -> MLClassifierMetrics
+```
+
 #### Return Value
 
-An [`MLClassifierMetrics`](mlclassifiermetrics.md) instance.
+An [`MLClassifierMetrics`](../mlclassifiermetrics.md) instance.
 
 ## Parameters
 
-- `testingData`: The activity data that you provide to test this model, contained in an [`MLActivityClassifier.DataSource`](mlactivityclassifier/datasource.md).
+- `testingData`: The activity data that you provide to test this model, contained in an [`MLActivityClassifier.DataSource`](./datasource.md).
 - `featureColumns`: The names of the columns that contain sensor data.
 - `labelColumn`: The name of the column that contain the activity labels. The method ignores this parameter if the data source uses a labeled directory.
 - `recordingFileColumn`: The name of the column that contain the recording file names. The method ignores this parameter if the data source uses a labeled directory.
 
 ## See Also
 
-- [var trainingMetrics: MLClassifierMetrics](mlactivityclassifier/trainingmetrics.md)
+### Evaluating an activity classifier
+- [var trainingMetrics: MLClassifierMetrics](./trainingmetrics.md)
   Measurements of the activity classifier’s performance on the training dataset.
-- [var validationMetrics: MLClassifierMetrics](mlactivityclassifier/validationmetrics.md)
+- [var validationMetrics: MLClassifierMetrics](./validationmetrics.md)
   Measurements of the activity classifier’s performance on the validation dataset.
 
 

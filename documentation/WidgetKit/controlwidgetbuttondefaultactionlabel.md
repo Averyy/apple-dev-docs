@@ -1,7 +1,8 @@
 # ControlWidgetButtonDefaultActionLabel
 
 **Framework**: WidgetKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view representing the default action label for a `ControlWidgetButton` if none is specified.
 
@@ -26,7 +27,7 @@ You don’t initialize this type yourself. Instead WidgetKit will create this ty
 ## Relationships
 
 ### Conforms To
-- [View](../swiftui/view.md)
+- [View](../SwiftUI/view.md)
 
 
 ---

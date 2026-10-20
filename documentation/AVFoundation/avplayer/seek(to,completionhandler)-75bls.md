@@ -1,7 +1,8 @@
 # seek(to:completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests that the player seek to a specified time, and to notify you when the seek is complete.
 
@@ -18,31 +19,43 @@ Requests that the player seek to a specified time, and to notify you when the se
 
 ```swift
 nonisolated
+func seek(to time: CMTime, completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
+nonisolated
 func seek(to time: CMTime) async -> Bool
+```
+
+```objc
+- (void) seekToTime:(CMTime) time completionHandler:(void (^)(BOOL finished)) completionHandler;
 ```
 
 #### Discussion
 
-Use this method to seek the current player item to the specified time and be notified when the operation completes. If the seek request completes without being interrupted (either by another seek request or by any other operation), the completion handler you provide is executed with the `finished` parameter set to [`true`](https://developer.apple.com/documentation/swift/true).
+Use this method to seek the current player item to the specified time and be notified when the operation completes. If the seek request completes without being interrupted (either by another seek request or by any other operation), the completion handler you provide is executed with the `finished` parameter set to [`true`](../../Swift/true.md).
 
-If another seek request is already in progress when you call this method, the completion handler for the in-progress seek request is executed immediately with the `finished` parameter set to [`false`](https://developer.apple.com/documentation/swift/false).
+If another seek request is already in progress when you call this method, the completion handler for the in-progress seek request is executed immediately with the `finished` parameter set to [`false`](../../Swift/false.md).
 
 ## Parameters
 
 - `time`: The time to which to seek.
-- `completionHandler`: The block to invoke when the seek operation has either been completed or been interrupted. The block takes one argument: - **finished**: Indicates whether the seek operation completed.
+- `completionHandler`: The block to invoke when the seek operation has either been completed or been interrupted. The block takes one argument:
+
+  - **finished**: Indicates whether the seek operation completed.
 
 ## See Also
 
-- [func seek(to: CMTime)](avplayer/seek(to:)-87h2r.md)
+### Seeking through media
+- [func seek(to: CMTime)](./seek%28to%29-87h2r.md)
   Requests that the player seek to a specified time.
-- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime)](avplayer/seek(to:tolerancebefore:toleranceafter:).md)
+- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime)](./seek%28to,tolerancebefore,toleranceafter%29.md)
   Requests that the player seek to a specified time with the amount of accuracy specified by the time tolerance values.
-- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: (Bool) -> Void)](avplayer/seek(to:tolerancebefore:toleranceafter:completionhandler:).md)
+- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: (Bool) -> Void)](./seek%28to,tolerancebefore,toleranceafter,completionhandler%29.md)
   Requests that the player seek to a specified time with the amount of accuracy specified by the time tolerance values, and to notify you when the seek is complete.
-- [func seek(to: Date)](avplayer/seek(to:)-9h9qr.md)
+- [func seek(to: Date)](./seek%28to%29-9h9qr.md)
   Requests that the player seek to a specified date.
-- [func seek(to: Date, completionHandler: (Bool) -> Void)](avplayer/seek(to:completionhandler:)-wr1l.md)
+- [func seek(to: Date, completionHandler: (Bool) -> Void)](./seek%28to,completionhandler%29-wr1l.md)
   Requests that the player seek to a specified date, and to notify you when the seek is complete.
 
 

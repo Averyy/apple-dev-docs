@@ -1,16 +1,19 @@
 # MapKitEvent
 
 **Framework**: MapKit JS  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A generic MapKit JS event object.
 
 **Availability**:
-- MapKit JS 5.0+
+- MapKit JS 5.0+ - Deprecated in 6.0
+
+> **Deprecated**: Removed in MapKit JS 6.0.0. Use standard `Event` instead.
 
 ## Declaration
 
-```swift
+```
 class MapKitEvent
 ```
 
@@ -21,23 +24,24 @@ The event object implements similar interfaces as the DOM `Event`, but you shoul
 ## Topics
 
 ### Instance Properties
-- [defaultPrevented](mapkitevent/defaultprevented.md)
+- [defaultPrevented](./mapkitevent/defaultprevented.md)
   A Boolean value that indicates whether the app canceled the event.
-- [target](mapkitevent/target.md)
+- [target](./mapkitevent/target.md)
   The object that dispatched the event.
-- [type](mapkitevent/type.md)
+- [type](./mapkitevent/type.md)
   A string that represents the type of the event.
 ### Instance Methods
-- [preventDefault()](mapkitevent/preventdefault.md)
+- [preventDefault()](./mapkitevent/preventdefault.md)
   Cancels the event if it’s cancelable, without stopping further propagation of the event.
-- [stopPropagation()](mapkitevent/stoppropagation.md)
+- [stopPropagation()](./mapkitevent/stoppropagation.md)
   Stops further propagation of the event.
 
 ## See Also
 
-- [type MapKitEventListener](mapkiteventlistener.md)
+### Deprecated
+- [type MapKitEventListener](./mapkiteventlistener.md)
   A type alias that represents a function or an object that receives a MapKit event.
-- [class MapKitEventTarget](mapkiteventtarget.md)
+- [class MapKitEventTarget](./mapkiteventtarget.md)
   An abstract class that defines the interface for objects that can dispatch events.
 
 

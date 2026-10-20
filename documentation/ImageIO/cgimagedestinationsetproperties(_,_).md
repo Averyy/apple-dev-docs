@@ -1,7 +1,8 @@
 # CGImageDestinationSetProperties(_:_:)
 
 **Framework**: Image I/O  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies one or more properties to all images in an image destination.
 
@@ -20,14 +21,19 @@ Applies one or more properties to all images in an image destination.
 func CGImageDestinationSetProperties(_ idst: CGImageDestination, _ properties: CFDictionary?)
 ```
 
+```c
+extern void CGImageDestinationSetProperties(CGImageDestinationRef idst, CFDictionaryRef properties);
+```
+
 ## Parameters
 
 - `idst`: The image destination to modify
-- `properties`: A dictionary that contains the properties to apply. For a list of possible values, see [`Image Properties`](image-properties.md) and doc:CGImageDestination/Configuring-the-Image-Behaviors.
+- `properties`: A dictionary that contains the properties to apply. For a list of possible values, see [Image Properties](./image-properties.md) and doc:CGImageDestination/Configuring-the-Image-Behaviors.
 
 ## See Also
 
-- [func CGImageDestinationAddAuxiliaryDataInfo(CGImageDestination, CFString, CFDictionary)](cgimagedestinationaddauxiliarydatainfo(_:_:_:).md)
+### Adding Metadata to the Image
+- [func CGImageDestinationAddAuxiliaryDataInfo(CGImageDestination, CFString, CFDictionary)](./cgimagedestinationaddauxiliarydatainfo%28_,_,_%29.md)
   Sets the auxiliary data, such as mattes and depth information, that accompany the image.
 
 

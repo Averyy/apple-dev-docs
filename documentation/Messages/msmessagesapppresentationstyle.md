@@ -1,7 +1,8 @@
 # MSMessagesAppPresentationStyle
 
 **Framework**: Messages  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Presentation styles that describe your iMessage app’s appearance.
 
@@ -16,37 +17,42 @@ Presentation styles that describe your iMessage app’s appearance.
 enum MSMessagesAppPresentationStyle
 ```
 
+```c
+enum MSMessagesAppPresentationStyle : NSUInteger;
+```
+
 ## Topics
 
 ### Presentation Styles
-- [MSMessagesAppPresentationStyle.compact](msmessagesapppresentationstyle/compact.md)
+- [MSMessagesAppPresentationStyle.compact](./msmessagesapppresentationstyle/compact.md)
   The iMessage App is displayed inside the keyboard area.
-- [MSMessagesAppPresentationStyle.expanded](msmessagesapppresentationstyle/expanded.md)
+- [MSMessagesAppPresentationStyle.expanded](./msmessagesapppresentationstyle/expanded.md)
   The iMessage App expands to fill most of the screen.
-- [MSMessagesAppPresentationStyle.transcript](msmessagesapppresentationstyle/transcript.md)
+- [MSMessagesAppPresentationStyle.transcript](./msmessagesapppresentationstyle/transcript.md)
   The iMessage app is displayed in the Messages app’s transcript or input field.
 ### Initializers
-- [init?(rawValue: UInt)](msmessagesapppresentationstyle/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./msmessagesapppresentationstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [IceCreamBuilder: Building an iMessage Extension](icecreambuilder-building-an-imessage-extension.md)
+### Custom iMessage app interface
+- [IceCreamBuilder: Building an iMessage Extension](./icecreambuilder-building-an-imessage-extension.md)
   Allow users to collaborate on the design of ice cream sundae stickers.
-- [Creating a Sticker App with a Custom Layout](creating-a-sticker-app-with-a-custom-layout.md)
+- [Creating a Sticker App with a Custom Layout](./creating-a-sticker-app-with-a-custom-layout.md)
   Expand on the Messages sticker app template to create an app with a customized user interface.
-- [class MSMessagesAppViewController](msmessagesappviewcontroller.md)
+- [class MSMessagesAppViewController](./msmessagesappviewcontroller.md)
   The principal view controller for iMessage apps.
-- [protocol MSMessagesAppTranscriptPresentation](msmessagesapptranscriptpresentation.md)
+- [protocol MSMessagesAppTranscriptPresentation](./msmessagesapptranscriptpresentation.md)
   A protocol that provides support for displaying live messages in the transcript of the Messages app.
 
 

@@ -1,7 +1,8 @@
 # exponent
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The exponent of the floating-point value.
 
@@ -42,19 +43,20 @@ The `exponent` property has the following edge cases:
 - If `x` is zero, then `x.exponent` is `Int.min`.
 - If `x` is +/-infinity or NaN, then `x.exponent` is `Int.max`
 
-This property implements the `logB` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+This property implements the `logB` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## See Also
 
-- [var ulp: Float](float/ulp.md)
+### Querying a Float
+- [var ulp: Float](./ulp.md)
   The unit in the last place of this value.
-- [var significand: Float](float/significand.md)
+- [var significand: Float](./significand.md)
   The significand of the floating-point value.
-- [var nextUp: Float](float/nextup.md)
+- [var nextUp: Float](./nextup.md)
   The least representable value that compares greater than this value.
-- [var nextDown: Self](float/nextdown.md)
+- [var nextDown: Self](./nextdown.md)
   The greatest representable value that compares less than this value.
-- [var binade: Float](float/binade.md)
+- [var binade: Float](./binade.md)
   The floating-point value with the same sign and exponent as this value, but with a significand of 1.0.
 
 

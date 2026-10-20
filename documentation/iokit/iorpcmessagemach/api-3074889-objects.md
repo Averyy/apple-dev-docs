@@ -1,7 +1,8 @@
 # objects
 
 **Framework**: IOKit  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var objects: ()
+```
+
+```c
+mach_msg_port_descriptor_t objects[0];
 ```
 
 

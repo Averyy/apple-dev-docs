@@ -1,7 +1,8 @@
 # WASubscriberBrowser.Endpoint
 
 **Framework**: Wi-Fi Aware  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A result for each discovered Wi-Fi Aware device.
 

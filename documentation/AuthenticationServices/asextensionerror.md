@@ -1,7 +1,8 @@
 # ASExtensionError
 
 **Framework**: Authentication Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A credential provider extension error.
 
@@ -21,38 +22,39 @@ struct ASExtensionError
 ## Topics
 
 ### Identifying the error domain
-- [static var errorDomain: String](asextensionerror/errordomain.md)
-- [let ASExtensionErrorDomain: String](asextensionerrordomain.md)
+- [static var errorDomain: String](./asextensionerror/errordomain.md)
+- [let ASExtensionErrorDomain: String](./asextensionerrordomain.md)
   The domain for a credential provider extension error.
 ### Error codes
-- [static var credentialIdentityNotFound: ASExtensionError.Code](asextensionerror/credentialidentitynotfound.md)
+- [static var credentialIdentityNotFound: ASExtensionError.Code](./asextensionerror/credentialidentitynotfound.md)
   The credential identity was not found.
-- [static var failed: ASExtensionError.Code](asextensionerror/failed.md)
+- [static var failed: ASExtensionError.Code](./asextensionerror/failed.md)
   The operation failed.
-- [static var userCanceled: ASExtensionError.Code](asextensionerror/usercanceled.md)
+- [static var userCanceled: ASExtensionError.Code](./asextensionerror/usercanceled.md)
   The user canceled the operation.
-- [static var userInteractionRequired: ASExtensionError.Code](asextensionerror/userinteractionrequired.md)
+- [static var userInteractionRequired: ASExtensionError.Code](./asextensionerror/userinteractionrequired.md)
   User interaction is required.
-- [ASExtensionError.Code](asextensionerror/code.md)
+- [ASExtensionError.Code](./asextensionerror/code.md)
   The codes for a credential provider extension error.
 ### Type Properties
-- [static var matchedExcludedCredential: ASExtensionError.Code](asextensionerror/matchedexcludedcredential.md)
+- [static var matchedExcludedCredential: ASExtensionError.Code](./asextensionerror/matchedexcludedcredential.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let ASExtensionErrorDomain: String](asextensionerrordomain.md)
+### Recognizing errors
+- [let ASExtensionErrorDomain: String](./asextensionerrordomain.md)
   The domain for a credential provider extension error.
-- [ASExtensionError.Code](asextensionerror/code.md)
+- [ASExtensionError.Code](./asextensionerror/code.md)
   The codes for a credential provider extension error.
 
 

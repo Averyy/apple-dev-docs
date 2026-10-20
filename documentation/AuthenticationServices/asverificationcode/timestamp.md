@@ -1,7 +1,8 @@
 # timestamp
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Date when the message was received by the device.
 

@@ -1,7 +1,8 @@
 # USDStageComponent.RenderResult
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The result of a render operation.
 
@@ -22,23 +23,24 @@ struct RenderResult
 ## Topics
 
 ### Instance Properties
-- [let errors: [USDRenderError]](usdstagecomponent/renderresult/errors.md)
+- [let errors: [USDRenderError]](./renderresult/errors.md)
   The errors encountered during the render, or an empty array if it succeeded.
-- [let status: USDStageComponent.RenderResult.Status](usdstagecomponent/renderresult/status-swift.property.md)
+- [let status: USDStageComponent.RenderResult.Status](./renderresult/status-swift.property.md)
   The status of the render operation.
 ### Enumerations
-- [USDStageComponent.RenderResult.Status](usdstagecomponent/renderresult/status-swift.enum.md)
+- [USDStageComponent.RenderResult.Status](./renderresult/status-swift.enum.md)
   The status of a render operation.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static func render(USDStage, to: Entity, at: USDStage.TimeCode) async -> USDStageComponent.RenderResult](usdstagecomponent/render(_:to:at:).md)
+### Rendering the stage
+- [static func render(USDStage, to: Entity, at: USDStage.TimeCode) async -> USDStageComponent.RenderResult](./render%28_,to,at%29.md)
   Renders a USD stage to an entity in manual mode.
 
 

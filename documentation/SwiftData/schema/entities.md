@@ -1,7 +1,8 @@
 # entities
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,8 +22,9 @@ final let entities: [Schema.Entity]
 
 ## See Also
 
-- [let entitiesByName: [String : Schema.Entity]](schema/entitiesbyname.md)
-- [Schema.Entity](schema/entity.md)
+### Accessing entities
+- [let entitiesByName: [String : Schema.Entity]](./entitiesbyname.md)
+- [Schema.Entity](./entity.md)
   An object that provides a blueprint for the associated model class.
 
 

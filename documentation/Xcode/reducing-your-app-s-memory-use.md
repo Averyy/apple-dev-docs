@@ -12,41 +12,47 @@ If the app is using too much memory, iOS sends it a warning. You get notificatio
 
 Because the device shares memory between apps and iOS processes, one app using too much memory can compromise the user experience across the whole device. Limiting the amount of memory an app uses can benefit users even when they’re using other apps.
 
-##### Understand Memory Use Metrics
+##### Understand memory-use metrics
 
 The Xcode Organizer and MetricKit each provide two metrics about memory use in an app. The first metric is peak memory use, which is the highest memory use observed in any of the samples taken. iOS collects this metric by sampling the app’s memory use periodically throughout the day. The second metric is memory use observed on suspension, measured when the app enters the background.
 
 iOS measures memory use as the number of memory pages in use multiplied by page size, which is typically 16 KB. Writing a single byte to allocated memory can increase memory use by 16 KB if iOS must allocate a new page to store that byte.
 
-![Illustration showing memory in use by an app. ](/images/com.apple.Xcode/reducing-your-app-s-memory-use-1@2x.png)
+![Illustration showing memory in use by an app. ](https://developer.apple.com/tutorials/images/com.apple.Xcode/reducing-your-app-s-memory-use-1@2x.png)
 
 Data structures defined in the app’s executable or linked libraries and frameworks contribute to the memory-use metric. Memory that the app allocates at runtime doesn’t initially contribute to this metric. Such memory is “clean,” and iOS doesn’t need to dedicate physical RAM to store it. When the app writes to the allocated memory, it becomes “dirty,” and iOS dedicates RAM to storing its content, as shown in the illustration below. Dirty memory contributes to the memory-use metric.
 
-##### View Data on Memory Use
+![Illustration showing how memory is considered to be in use when it's allocated.](https://developer.apple.com/tutorials/images/com.apple.Xcode/reducing-your-app-s-memory-use-allocated@2x.png)
 
-View your app’s memory use in the Memory pane of the Xcode Organizer window or by using [`MetricKit`](https://developer.apple.com/documentation/metrickit).
+![Illustration showing how memory is considered to be in use when it's written to.](https://developer.apple.com/tutorials/images/com.apple.Xcode/reducing-your-app-s-memory-use-written@2x.png)
 
-![Screenshot of the Memory metric pane in the Xcode Organizer. From left to right is the list of metrics and reports, the metric UI with two bar graphs: Peak Memory at the top and Memory at Suspension on the bottom, the selected version highlighted in the peak memory graph, and the comparison data for both graphs on the right side.](/images/com.apple.Xcode/reducing-your-app-s-memory-use-3@2x.png)
+##### View data on memory use
+
+View your app’s memory use in the Memory pane of the Xcode Organizer window or by using [MetricKit](../MetricKit/MetricKit.md).
+
+![Screenshot of the Memory metric pane in the Xcode Organizer. From left to right is the list of metrics and reports, the metric UI with two bar graphs: Peak Memory at the top and Memory at Suspension on the bottom, the selected version highlighted in the peak memory graph, and the comparison data for both graphs on the right side.](https://developer.apple.com/tutorials/images/com.apple.Xcode/reducing-your-app-s-memory-use-3@2x.png)
 
 The Memory pane shows information for peak memory in the top graph and memory at suspension on the bottom. Filter the information by device type and by typical memory used (50th percentile) or top memory used (90th percentile), using the two menus in the top right corner, to find possible problem areas. Compare the memory use of the current release with a previous one by clicking on bar in the graph for the desired release.
 
 ## Topics
 
 ### Tasks
-- [Gathering information about memory use](gathering-information-about-memory-use.md)
+- [Gathering information about memory use](./gathering-information-about-memory-use.md)
   Identify memory-use inefficiencies by measuring and profiling your app.
-- [Making changes to reduce memory use](making-changes-to-reduce-memory-use.md)
+- [Making changes to reduce memory use](./making-changes-to-reduce-memory-use.md)
   Decrease your app’s use of memory by addressing common causes of excessive use.
-- [Preventing memory-use regressions](preventing-memory-use-regressions.md)
+- [Preventing memory-use regressions](./preventing-memory-use-regressions.md)
   Measure the memory that your app’s features use, and detect increases by using XCTest performance tests.
-- [Responding to low-memory warnings](responding-to-low-memory-warnings.md)
+- [Responding to low-memory warnings](./responding-to-low-memory-warnings.md)
   Detect when your app is using excessive memory, and bring memory use under control.
 
 ## See Also
 
-- [Identifying high-memory use with jetsam event reports](identifying-high-memory-use-with-jetsam-event-reports.md)
+### Related Documentation
+- [Identifying high-memory use with jetsam event reports](./identifying-high-memory-use-with-jetsam-event-reports.md)
   Discover why the operating system terminated your app when available memory was low.
-- [Reducing your app’s size](reducing-your-app-s-size.md)
+### Memory and size
+- [Reducing your app’s size](./reducing-your-app-s-size.md)
   Measure your app’s size, optimize its assets and settings, and adopt technologies that help streamline installation over a mobile internet connection.
 
 

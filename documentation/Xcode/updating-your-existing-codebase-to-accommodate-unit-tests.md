@@ -1,6 +1,7 @@
 # Updating your existing codebase to accommodate unit tests
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Remove coupling between components to increase test coverage and reliability.
 
@@ -14,7 +15,7 @@ When the code you’re testing is coupled to another part of your project or a f
 
 The following sections propose changes that remove couplings in situations where coupling between the code under consideration and another component blocks testing. Each solution demonstrates how a test function works with the changed code to assert its behavior.
 
-##### Replace a Concrete Type with a Protocol
+##### Replace a concrete type with a protocol
 
 When your code relies on a specific type whose behavior makes testing difficult, create a protocol that lists the methods and properties used by your code. You can use this approach when interacting with components in your own codebase or with APIs from other sources outside of your control, including platform SDKs and Swift packages. Examples of such problematic dependencies include those that access external state, including user documents or databases, or those that don’t have deterministic results, including network connections or random value generators.
 
@@ -122,7 +123,7 @@ class AttachmentOpenerTests: XCTestCase {
 }
 ```
 
-##### Replace Named Type with Metatype Value
+##### Replace named type with metatype value
 
 When one class in your app creates and uses instances of another class, and the created objects introduce testing difficulties, it can be hard to test the class where they’re created. Parameterize the type of the created object and use a required initializer to create an instance. Examples of this difficult testing situation include a controller that creates a new document on the filesystem in response to a person’s action, or a method that interprets JSON received from a web service and creates new Core Data managed objects that represent the received data.
 
@@ -276,9 +277,9 @@ class DocumentLoaderTests: XCTestCase {
 }
 ```
 
-##### Subclass and Override Untestable Methods
+##### Subclass and override untestable methods
 
-When a class combines custom logic with interactions or behavior that make the class hard to test, introduce a subclass that overrides some of the class’s methods to make the others easier to test. It’s common to design classes that contain both app-specific logic, and interactions with the environment or frameworks that render behavior difficult to control in tests. A common example is a [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) subclass, which has app-specific code in its action methods and also loads views or presents other view controllers.
+When a class combines custom logic with interactions or behavior that make the class hard to test, introduce a subclass that overrides some of the class’s methods to make the others easier to test. It’s common to design classes that contain both app-specific logic, and interactions with the environment or frameworks that render behavior difficult to control in tests. A common example is a [`UIViewController`](../UIKit/uiviewcontroller.md) subclass, which has app-specific code in its action methods and also loads views or presents other view controllers.
 
 Introducing tests for the custom app logic is desirable, to ensure that this logic works as expected and to protect against regressions. The complexity of controlling or working around the interactions between the class and the environment make testing the logic difficult.
 
@@ -408,11 +409,11 @@ Add UI tests to verify the behavior of the real class in an end-to-end workflow 
 
 Subclassing and overriding untestable methods is the first step in redesigning existing code so app logic and integration with frameworks or external data are separated. Dividing the code this way makes it easier to understand which parts of your project implement the app’s features and which integrate with the rest of the system, and it also reduces the chance of introducing logic bugs when you change your code to take advantage of new APIs or adopt different technologies.
 
-##### Inject a Singleton
+##### Inject a singleton
 
 If your code uses a singleton object to gain access to globally-available state or behavior, turn the singleton into a parameter that you can replace to support isolation for testing. Singleton use can be spread throughout a codebase, which makes it hard to know the singleton’s state when it’s used by the component you’re trying to test. Running tests in different orders may produce different outcomes.
 
-> **Note**: Commonly-used singletons, including [`NSApplication`](https://developer.apple.com/documentation/appkit/nsapplication) and the default [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager), have behavior that’s dependent on external state. Components that use these singletons directly introduce more complications for reliable testing.
+> **Note**: Commonly-used singletons, including [`NSApplication`](../AppKit/nsapplication.md) and the default [`FileManager`](../Foundation/filemanager.md), have behavior that’s dependent on external state. Components that use these singletons directly introduce more complications for reliable testing.
 
 In this example, a `LoginHandler` object participates in authenticating someone to a network service. Part of its capability is retrieving a username that the app previously used for the service, which it gets from the standard user defaults object:
 
@@ -428,7 +429,7 @@ class LoginHandler {
 }
 ```
 
-[`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) relies on shared state that’s stored in the file system and might be modified by other code in the app or by someone editing files on their Mac. Replace direct access to the singleton object with a parameter or property that can be controlled from outside the component under test. In the app, continue to use the singleton as the collaborator for the component. In tests, supply an alternative object that’s easier to control.
+[`UserDefaults`](../Foundation/userdefaults.md) relies on shared state that’s stored in the file system and might be modified by other code in the app or by someone editing files on their Mac. Replace direct access to the singleton object with a parameter or property that can be controlled from outside the component under test. In the app, continue to use the singleton as the collaborator for the component. In tests, supply an alternative object that’s easier to control.
 
 The following listing shows the result of applying this change to the `LoginHandler` class listed above. The login handler gets the stored username from its `storage` object, which defaults to the user defaults singleton. An extension conforms `UserDefaults` to the `LoginStorage` protocol, so that tests can supply alternative implementations of the protocol.
 
@@ -509,15 +510,16 @@ class XCLoginHandlerTests : XCTestCase {
 }
 ```
 
-You may need to combine this change with those described in the article sections ([`Replace a concrete type with a protocol`](updating-your-existing-codebase-to-accommodate-unit-tests#Replace-a-concrete-type-with-a-protocol.md) and [`Subclass and override untestable methods`](updating-your-existing-codebase-to-accommodate-unit-tests#Subclass-and-override-untestable-methods.md)) to create the alternative object you use in the test in place of the singleton. You’ll need to do this where the singleton supplies behavior that’s difficult to control in a test, like [`FileManager`](https://developer.apple.com/documentation/foundation/filemanager) or [`NSApplication`](https://developer.apple.com/documentation/appkit/nsapplication).
+You may need to combine this change with those described in the article sections ([Replace a concrete type with a protocol](./updating-your-existing-codebase-to-accommodate-unit-tests.md#Replace-a-concrete-type-with-a-protocol) and [Subclass and override untestable methods](./updating-your-existing-codebase-to-accommodate-unit-tests.md#Subclass-and-override-untestable-methods)) to create the alternative object you use in the test in place of the singleton. You’ll need to do this where the singleton supplies behavior that’s difficult to control in a test, like [`FileManager`](../Foundation/filemanager.md) or [`NSApplication`](../AppKit/nsapplication.md).
 
 ## See Also
 
-- [Adding tests to your Xcode project](adding-tests-to-your-xcode-project.md)
+### Test development
+- [Adding tests to your Xcode project](./adding-tests-to-your-xcode-project.md)
   Include test targets that build code to test the logic in your functions, check for integration issues, automate UI workflows, and measure performance.
-- [Determining how much code your tests cover](determining-how-much-code-your-tests-cover.md)
+- [Determining how much code your tests cover](./determining-how-much-code-your-tests-cover.md)
   Use code coverage to focus new test development on areas that lack adequate testing.
-- [Improving code assessment by organizing tests into test plans](organizing-tests-to-improve-feedback.md)
+- [Improving code assessment by organizing tests into test plans](./organizing-tests-to-improve-feedback.md)
   Control the information you receive from your tests at different stages in the software engineering process by creating and configuring test plans.
 
 

@@ -1,7 +1,8 @@
 # CMSampleBuffer.ContentWithFormatDescription
 
 **Framework**: Core Media  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 This is a marker protocol to indicate content that always has a format description.
 
@@ -23,12 +24,12 @@ protocol ContentWithFormatDescription : CMSampleBuffer.Content
 ## Relationships
 
 ### Inherits From
-- [CMSampleBuffer.Content](cmsamplebuffer/content.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CMSampleBuffer.Content](./content.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 ### Conforming Types
-- [CMReadOnlyDataBlockBuffer](cmreadonlydatablockbuffer.md)
-- [CMSampleDataReference](cmsampledatareference.md)
+- [CMReadOnlyDataBlockBuffer](../cmreadonlydatablockbuffer.md)
+- [CMSampleDataReference](../cmsampledatareference.md)
 
 
 ---

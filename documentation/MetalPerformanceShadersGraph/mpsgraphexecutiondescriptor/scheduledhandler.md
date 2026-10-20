@@ -1,7 +1,8 @@
 # scheduledHandler
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handler that graph calls when it schedules the execution.
 
@@ -17,6 +18,10 @@ The handler that graph calls when it schedules the execution.
 
 ```swift
 var scheduledHandler: MPSGraphScheduledHandler { get set }
+```
+
+```objc
+@property (atomic, readwrite) MPSGraphScheduledHandler scheduledHandler;
 ```
 
 #### Discussion

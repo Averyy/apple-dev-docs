@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-pruning-algos.ht
 
 # Pruning Algorithms
 
-**
-
-- [.md](../_sources/source/opt-pruning-algos.md)
-- **
-
-.pdf
-
-**
-
-# Pruning Algorithms
-
- Table of contents 
-
-## Contents
-
-# Pruning Algorithms
-
 Core ML Tools offers a variety of algorithms for pruning model weights.
 
 ## Post-Training Pruning
@@ -95,7 +78,7 @@ In the tables below, we provide accuracy benchmarks on several models, pruned us
 
 See [Palettization Performance](opt-palettization-perf.md) page to learn more about how the benchmarked models were generated.
 
-All evaluations were performed on the final compressed (or uncompressed) CoreML models, using the validation subset of the dataset linked in [Model Info](opt-palettization-perf.html#model-info).
+All evaluations were performed on the final compressed (or uncompressed) CoreML models, using the validation subset of the dataset linked in [Model Info](opt-palettization-perf.md#model-info).
 The training time pruned models were trained for three trials, starting from the same pre-trained weights,
 and using a different ordering of data during training for each trial. For these models,
 we report the mean accuracy across the three trials, along with the standard deviation.
@@ -104,16 +87,14 @@ we report the mean accuracy across the three trials, along with the standard dev
 
 | Model Name | Config | Optimization Algorithm | Compression Ratio | Accuracy |
 | --- | --- | --- | --- | --- |
-| MobileNetv2-1.0 | Float16 | n/a | 1.0 | 71.86 |
-| MobileNetv2-1.0 | Unstructured Sparsity 50% | MagnitudePruner | 1.37 | 71.83 ± 0.01 |
-| MobileNetv2-1.0 | Unstructured Sparsity 75% | MagnitudePruner | 1.73 | 69.47 ± 0.07 |
-| MobileNetv3-small | Float16 | n/a | 1.0 | 67.58 |
-| MobileNetv3-small | Unstructured Sparsity 50% | MagnitudePruner | 1.73 | 66.55 ± 0.03 |
-| MobileNetv3-small | Unstructured Sparsity 75% | MagnitudePruner | 3.06 | 60.52 ± 0.06 |
-| ResNet50 | Float16 | n/a | 1.0 | 76.14 |
-| ResNet50 | Unstructured Sparsity 50% | MagnitudePruner | 1.77 | 73.64 ± 0.04 |
-| ResNet50 | Unstructured Sparsity 75% | MagnitudePruner | 3.17 | 73.40 ± 0.08 |
+| [MobileNetv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/uncompressed/MobileNetV2Alpha1.mlpackage.zip) | Float16 | n/a | 1.0 | 71.86 |
+| [MobileNetv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/pruned/MobileNetV2Alpha1UnstructuredSparsity50.mlpackage.zip) | Unstructured Sparsity 50% | MagnitudePruner | 1.37 | 71.83 ± 0.01 |
+| [MobileNetv2-1.0](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/pruned/MobileNetV2Alpha1UnstructuredSparsity75.mlpackage.zip) | Unstructured Sparsity 75% | MagnitudePruner | 1.73 | 69.47 ± 0.07 |
+| [MobileNetv3-small](https://ml-assets.apple.com/coreml/quantized_models/uncompressed/MobileNetV3Small.mlpackage.zip) | Float16 | n/a | 1.0 | 67.58 |
+| [MobileNetv3-small](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/pruned/MobileNetV3SmallUnstructuredSparsity50.mlpackage.zip) | [Unstructured Sparsity 50%](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/pruned/MobileNetV3SmallUnstructuredSparsity50.yaml) | MagnitudePruner | 1.73 | 66.55 ± 0.03 |
+| [MobileNetv3-small](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/pruned/MobileNetV3SmallUnstructuredSparsity75.mlpackage.zip) | [Unstructured Sparsity 75%](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/pruned/MobileNetV3SmallUnstructuredSparsity75.yaml) | MagnitudePruner | 3.06 | 60.52 ± 0.06 |
+| [ResNet50](https://ml-assets.apple.com/coreml/quantized_models/uncompressed/ResNet50.mlpackage.zip) | Float16 | n/a | 1.0 | 76.14 |
+| [ResNet50](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/pruned/ResNet50UnstructuredSparsity50.mlpackage.zip) | [Unstructured Sparsity 50%](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/pruned/ResNet50UnstructuredSparsity50.yaml) | MagnitudePruner | 1.77 | 73.64 ± 0.04 |
+| [ResNet50](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/pruned/ResNet50UnstructuredSparsity75.mlpackage.zip) | [Unstructured Sparsity 75%](https://ml-assets.apple.com/coreml/quantized_models/training_time_compressed/pruned/ResNet50UnstructuredSparsity75.yaml) | MagnitudePruner | 3.17 | 73.40 ± 0.08 |
 
 **Note**: The trained and compressed models and the `coremltools.optimize.torch` config files used for compression can be downloaded by clicking the respective links embedded in the model and config names.
-
-** Contents

@@ -1,7 +1,8 @@
 # JSContextGetGlobalObject(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the global object of a JavaScript execution context.
 
@@ -19,13 +20,17 @@ Gets the global object of a JavaScript execution context.
 func JSContextGetGlobalObject(_ ctx: JSContextRef!) -> JSObjectRef!
 ```
 
+```c
+JSObjectRefJSContextGetGlobalObject(JSContextRef ctx);
+```
+
 #### Return Value
 
 The global object of `ctx`.
 
 ## Parameters
 
-- `ctx`: The [`JSContextRef`](jscontextref.md) with the global object you want to get.
+- `ctx`: The [`JSContextRef`](./jscontextref.md) with the global object you want to get.
 
 
 ---

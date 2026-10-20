@@ -1,7 +1,8 @@
 # callAsFunction(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Builds an attribute container by setting an attribute and returning a modified attribute container.
 
@@ -23,7 +24,7 @@ func callAsFunction(_ value: T.Value) -> AttributeContainer where T.Value : Send
 
 #### Return Value
 
-An attribute container with the provided value set on the builder’s [`AttributedStringKey`](attributedstringkey.md).
+An attribute container with the provided value set on the builder’s [`AttributedStringKey`](../../attributedstringkey.md).
 
 ## Parameters
 

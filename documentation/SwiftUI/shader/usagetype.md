@@ -1,7 +1,8 @@
 # Shader.UsageType
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The different ways in which a `Shader` may be used to render.
 
@@ -22,22 +23,22 @@ struct UsageType
 ## Topics
 
 ### Type Properties
-- [static let colorEffect: Shader.UsageType](shader/usagetype/coloreffect.md)
+- [static let colorEffect: Shader.UsageType](./usagetype/coloreffect.md)
   The shader will be used as a color effect.
-- [static let distortionEffect: Shader.UsageType](shader/usagetype/distortioneffect.md)
+- [static let distortionEffect: Shader.UsageType](./usagetype/distortioneffect.md)
   The shader will be used as a geometric distortion effect.
-- [static let layerEffect: Shader.UsageType](shader/usagetype/layereffect.md)
+- [static let layerEffect: Shader.UsageType](./usagetype/layereffect.md)
   The shader will be used as a layer effect.
-- [static let shapeStyle: Shader.UsageType](shader/usagetype/shapestyle.md)
+- [static let shapeStyle: Shader.UsageType](./usagetype/shapestyle.md)
   The shader will be used as a `ShapeStyle` value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

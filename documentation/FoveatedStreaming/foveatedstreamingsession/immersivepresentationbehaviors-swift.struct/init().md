@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foveated Streaming  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 26.4+

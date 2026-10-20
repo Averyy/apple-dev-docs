@@ -1,7 +1,8 @@
 # NSWorkspace.DidRenameVolumeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -15,18 +16,18 @@ struct DidRenameVolumeMessage
 ## Topics
 
 ### Initializers
-- [init(localizedVolumeName: String, volumeURL: URL, oldLocalizedVolumeName: String, oldVolumeURL: URL)](nsworkspace/didrenamevolumemessage/init(localizedvolumename:volumeurl:oldlocalizedvolumename:oldvolumeurl:).md)
+- [init(localizedVolumeName: String, volumeURL: URL, oldLocalizedVolumeName: String, oldVolumeURL: URL)](./didrenamevolumemessage/init%28localizedvolumename,volumeurl,oldlocalizedvolumename,oldvolumeurl%29.md)
 ### Instance Properties
-- [var localizedVolumeName: String](nsworkspace/didrenamevolumemessage/localizedvolumename.md)
-- [var oldLocalizedVolumeName: String](nsworkspace/didrenamevolumemessage/oldlocalizedvolumename.md)
-- [var oldVolumeURL: URL](nsworkspace/didrenamevolumemessage/oldvolumeurl.md)
-- [var volumeURL: URL](nsworkspace/didrenamevolumemessage/volumeurl.md)
+- [var localizedVolumeName: String](./didrenamevolumemessage/localizedvolumename.md)
+- [var oldLocalizedVolumeName: String](./didrenamevolumemessage/oldlocalizedvolumename.md)
+- [var oldVolumeURL: URL](./didrenamevolumemessage/oldvolumeurl.md)
+- [var volumeURL: URL](./didrenamevolumemessage/volumeurl.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # kIOSurfaceContentHeadroom
 
 **Framework**: IOSurface  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 let kIOSurfaceContentHeadroom: CFString
+```
+
+```c
+extern CFStringRef const kIOSurfaceContentHeadroom;
 ```
 
 

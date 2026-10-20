@@ -1,7 +1,8 @@
 # exportKey(_:from:withName:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports an input or output key of an object in the filter chain.
 
@@ -14,9 +15,13 @@ Exports an input or output key of an object in the filter chain.
 func exportKey(_ key: String, from targetObject: Any, withName exportedKeyName: String?)
 ```
 
+```objc
+- (void) exportKey:(NSString *) key fromObject:(id) targetObject withName:(NSString *) exportedKeyName;
+```
+
 #### Discussion
 
-When you create a [`CIFilter`](cifilter-swift.class.md) object from a [`CIFilterGenerator`](cifiltergenerator.md) object, you might want the filter client to be able to set some of the parameters associated with the filter chain. You can make a parameter settable by  exporting the key associated with the parameter. If the exported key represents an input parameter of the filter, the key is exported as an input key. If the key represents an output parameter, it is exported as an output key.
+When you create a [`CIFilter`](../cifilter-swift.class.md) object from a [`CIFilterGenerator`](../cifiltergenerator.md) object, you might want the filter client to be able to set some of the parameters associated with the filter chain. You can make a parameter settable by  exporting the key associated with the parameter. If the exported key represents an input parameter of the filter, the key is exported as an input key. If the key represents an output parameter, it is exported as an output key.
 
 ## Parameters
 
@@ -26,11 +31,12 @@ When you create a [`CIFilter`](cifilter-swift.class.md) object from a [`CIFilter
 
 ## See Also
 
-- [var exportedKeys: [AnyHashable : Any]](cifiltergenerator/exportedkeys.md)
+### Managing Exported Keys
+- [var exportedKeys: [AnyHashable : Any]](./exportedkeys.md)
   Returns an array of the exported keys.
-- [func removeExportedKey(String)](cifiltergenerator/removeexportedkey(_:).md)
+- [func removeExportedKey(String)](./removeexportedkey%28_%29.md)
   Removes a key that was previously exported.
-- [func setAttributes([AnyHashable : Any], forExportedKey: String)](cifiltergenerator/setattributes(_:forexportedkey:).md)
+- [func setAttributes([AnyHashable : Any], forExportedKey: String)](./setattributes%28_,forexportedkey%29.md)
   Sets a dictionary of attributes for an exported key.
 
 

@@ -1,7 +1,8 @@
 # commandLine
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command-line parameters to pass to the Linux kernel at boot time.
 
@@ -14,13 +15,18 @@ The command-line parameters to pass to the Linux kernel at boot time.
 var commandLine: String { get set }
 ```
 
+```objc
+@property (copy) NSString * commandLine;
+```
+
 #### Discussion
 
-For information about the parameters you can pass to a Linux kernel, see “[`The kernel’s command-line parameters`](https://developer.apple.comhttps://www.kernel.org/doc/html/latest/admin-guide/kernel-parameters.html)”.
+For information about the parameters you can pass to a Linux kernel, see “[The kernel’s command-line parameters](https://www.kernel.org/doc/html/latest/admin-guide/kernel-parameters.html)”.
 
 ## See Also
 
-- [var initialRamdiskURL: URL?](vzlinuxbootloader/initialramdiskurl.md)
+### Configuring the boot parameters
+- [var initialRamdiskURL: URL?](./initialramdiskurl.md)
   The location of an optional RAM disk, which the boot loader maps into memory before it boots the Linux kernel.
 
 

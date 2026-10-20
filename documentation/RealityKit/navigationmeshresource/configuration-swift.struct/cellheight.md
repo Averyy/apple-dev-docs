@@ -1,7 +1,8 @@
 # cellHeight
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The height of a cell, in meters.
 
@@ -21,7 +22,8 @@ var cellHeight: Double
 
 ## See Also
 
-- [var cellSize: Double](navigationmeshresource/configuration-swift.struct/cellsize.md)
+### Configuring voxelization
+- [var cellSize: Double](./cellsize.md)
   The x-z size of a cell, in meters.
 
 

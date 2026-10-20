@@ -1,7 +1,8 @@
 # shadowCastBitMask
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mask that defines which lights are occluded by this sprite.
 
@@ -20,23 +21,28 @@ A mask that defines which lights are occluded by this sprite.
 var shadowCastBitMask: UInt32 { get set }
 ```
 
+```objc
+@property (nonatomic) uint32_t shadowCastBitMask;
+```
+
 ## Mentions
 
-- [Lighting a Sprite with Light Nodes](lighting-a-sprite-with-light-nodes.md)
+- [Lighting a Sprite with Light Nodes](../lighting-a-sprite-with-light-nodes.md)
 
 #### Discussion
 
-To determine whether this sprite blocks the light (casting a shadow), the sprite’s [`shadowedBitMask`](skspritenode/shadowedbitmask.md) property is tested against the light’s [`categoryBitMask`](https://developer.apple.com/documentation/scenekit/scnlight/categorybitmask) property by performing a logical AND operation. If the comparison results in a nonzero value, the sprite casts a shadow past itself.
+To determine whether this sprite blocks the light (casting a shadow), the sprite’s [`shadowedBitMask`](./shadowedbitmask.md) property is tested against the light’s [`categoryBitMask`](../../SceneKit/scnlight/categorybitmask.md) property by performing a logical AND operation. If the comparison results in a nonzero value, the sprite casts a shadow past itself.
 
 ## See Also
 
-- [Lighting a Sprite with Light Nodes](lighting-a-sprite-with-light-nodes.md)
+### Lighting a Sprite
+- [Lighting a Sprite with Light Nodes](../lighting-a-sprite-with-light-nodes.md)
   Add lighting and shadows to your scene with light nodes.
-- [var lightingBitMask: UInt32](skspritenode/lightingbitmask.md)
+- [var lightingBitMask: UInt32](./lightingbitmask.md)
   A mask that defines how this sprite is lit by light nodes in the scene.
-- [var shadowedBitMask: UInt32](skspritenode/shadowedbitmask.md)
+- [var shadowedBitMask: UInt32](./shadowedbitmask.md)
   A mask that defines which lights add shadows to the sprite.
-- [var normalTexture: SKTexture?](skspritenode/normaltexture.md)
+- [var normalTexture: SKTexture?](./normaltexture.md)
   A texture that specifies the normal map for the sprite.
 
 

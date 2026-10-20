@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-conversion.html
 
 # Conversion
 
-**
-
-- [.md](../_sources/source/opt-conversion.md)
-- **
-
-.pdf
-
-**
-
-# Conversion
-
- Table of contents 
-
-## Contents
-
-# Conversion
-
 Given a compressed torch model whose weights are compressed but still
 represented in dense `float` format,
 we want the converted Core ML model to have the corresponding
@@ -291,9 +274,9 @@ at the model level.
 
 | Key | Original Type | Optional | Sample Value / Shape | Additional Notes |
 | --- | --- | --- | --- | --- |
-| quantization_n_bits | int | No | torch.tensor(4) |  |
-| quantization_scale | tensor | No | torch.Size([3072,1]) | Rank of the scale need to match weight’s rank. The block_size on each dim will be inferred by the shape. |
-| zero_point | tensor | Yes | torch.Size([3072,1]) | Same shape asquantization_scale. |
+| quantization_n_bits | int | No | `torch.tensor(4)` |  |
+| quantization_scale | tensor | No | `torch.Size([3072, 1])` | Rank of the scale need to match weight’s rank. The block_size on each dim will be inferred by the shape. |
+| zero_point | tensor | Yes | `torch.Size([3072, 1])` | Same shape as `quantization_scale`. |
 
 Details about the shape of the scale and zero-point can be found in the `iOS18` `constexpr_blockwise_shift_scale` op.
 
@@ -301,8 +284,8 @@ Details about the shape of the scale and zero-point can be found in the `iOS18` 
 
 | Key | Original Type | Optional | Sample Value / Shape | Additional Notes |
 | --- | --- | --- | --- | --- |
-| lut | tensor | No | torch.Size([2,2,16,1]) | Rank of the lut should be weight’s rank + 2. The shape can be used to infer palettization configurations like group size, axis, cluster dim and n-bit. |
-| palettization_scale | tensor | Yes | torch.Size([3072,1]) | Rank of the scale need to match weight’s rank. |
+| lut | tensor | No | `torch.Size([2, 2, 16, 1])` | Rank of the lut should be weight’s rank + 2. The shape can be used to infer palettization configurations like group size, axis, cluster dim and n-bit. |
+| palettization_scale | tensor | Yes | `torch.Size([3072, 1])` | Rank of the scale need to match weight’s rank. |
 
 Details about the shape of the lookup table can be found in the `iOS18` `constexpr_lut_to_dense` op.
 
@@ -310,7 +293,7 @@ Details about the shape of the lookup table can be found in the `iOS18` `constex
 
 | Key | Original Type | Optional | Sample Value / Shape | Additional Notes |
 | --- | --- | --- | --- | --- |
-| compression_type | list of int | No | torch.tensor([1,3]) | List of compression types applied to the parameter in the order in which they were applied.1means pruning,2means palettization,3means quantization |
+| compression_type | list of int | No | `torch.tensor([1, 3])` | List of compression types applied to the parameter in the order in which they were applied. `1` means pruning, `2` means palettization, `3` means quantization |
 
 All these fields can be combined to cover all Core ML Tools 8 new compression schemas, as described
 below.
@@ -320,32 +303,30 @@ below.
 | Feature | Required Fields |
 | --- | --- |
 |  |  |
-| blockwise quantization | n_bitsquantization_scalezero_point (for affine & unsigned symmetric)compression_type = [3] |
+| blockwise quantization | n_bits quantization_scale zero_point (for affine & unsigned symmetric) compression_type = [3] |
 |  |  |
-| 4-bit quantization | n_bitsquantization_scalezero_point (for affine & unsigned symmetric)compression_type = [3] |
+| 4-bit quantization | n_bits quantization_scale zero_point (for affine & unsigned symmetric) compression_type = [3] |
 
 **Palettization**
 
 | Feature | Required Fields |
 | --- | --- |
 |  |  |
-| LUT with per-channel scales | palettization_scalecompression_type = [2] |
+| LUT with per-channel scales | palettization_scale compression_type = [2] |
 |  |  |
-| vector palettization | cluster_dimcompression_type = [2] |
+| vector palettization | cluster_dim compression_type = [2] |
 |  |  |
-| grouped-channel palettization | group_sizegroup_axiscompression_type = [2] |
+| grouped-channel palettization | group_size group_axis compression_type = [2] |
 |  |  |
-| LUT with 8-bit values | n_bitsquantization_scalezero_point (for affine & unsigned symmetric)compression_type = [2, 3] |
+| LUT with 8-bit values | n_bits quantization_scale zero_point (for affine & unsigned symmetric) compression_type = [2, 3] |
 
 **Joint compression**
 
 | Feature | Required Fields |
 | --- | --- |
 |  |  |
-| pruning + quantization (sparse weight where non-zero values are 8-bit quantized) | compression_type = [1, 3]n_bitsquantization_scalezero_point (for affine and unsigned symmetric) |
+| pruning + quantization (sparse weight where non-zero values are 8-bit quantized) | compression_type = [1, 3] n_bits quantization_scale zero_point (for affine and unsigned symmetric) |
 |  |  |
-| pruning + palettization (sparse weight where non-zero values are n-bit palettized) | compression_type = [1, 2]Same as required keys for palettization |
+| pruning + palettization (sparse weight where non-zero values are n-bit palettized) | compression_type = [1, 2] Same as required keys for palettization |
 |  |  |
-| pruning + palettization + quantization (sparse weight where non-zero values are n-bit palettized with int8 LUT) | compression_type = [1, 2, 3]Same as required keys for LUT with 8-bit values |
-
-** Contents
+| pruning + palettization + quantization (sparse weight where non-zero values are n-bit palettized with int8 LUT) | compression_type = [1, 2, 3] Same as required keys for LUT with 8-bit values |

@@ -1,7 +1,8 @@
 # typeIdentifier
 
 **Framework**: App Intents Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The enum type’s unique identifier.
 

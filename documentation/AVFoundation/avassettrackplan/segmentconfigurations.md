@@ -1,7 +1,8 @@
 # segmentConfigurations
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Array of AVPlannedSegmentConfigurations, each element specifying the configuration of a planned segment, ordered in output PTS order.
 
@@ -19,11 +20,16 @@ Array of AVPlannedSegmentConfigurations, each element specifying the configurati
 var segmentConfigurations: [AVPlannedSegmentConfiguration] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<AVPlannedSegmentConfiguration *> * segmentConfigurations;
+```
+
 ## See Also
 
-- [var mediaType: AVMediaType](avassettrackplan/mediatype.md)
+### Inspecting the track plan
+- [var mediaType: AVMediaType](./mediatype.md)
   The media type of this track.
-- [var assemblyTrackID: CMPersistentTrackID](avassettrackplan/assemblytrackid.md)
+- [var assemblyTrackID: CMPersistentTrackID](./assemblytrackid.md)
   This is the track ID of this track when it is included in the assemblyComposition the planner passes to the completion handler to assemble all planned segments of all tracks into a single AVComposition.
 
 

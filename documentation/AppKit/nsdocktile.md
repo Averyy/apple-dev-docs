@@ -1,7 +1,8 @@
 # NSDockTile
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The visual representation of your app’s miniaturized windows and app icon as they appear in the Dock.
 
@@ -14,9 +15,13 @@ The visual representation of your app’s miniaturized windows and app icon as t
 class NSDockTile
 ```
 
+```objc
+@interface NSDockTile : NSObject
+```
+
 #### Overview
 
-You do not create Dock tile objects explicitly in your app. Instead, you retrieve the Dock tile for an existing window or for the app by calling that object’s [`dockTile`](nswindow/docktile.md) method. Also, you do not subclass the [`NSDockTile`](nsdocktile.md) class; instead, you use the methods of the class to make the following customizations:
+You do not create Dock tile objects explicitly in your app. Instead, you retrieve the Dock tile for an existing window or for the app by calling that object’s [`dockTile`](./nswindow/docktile.md) method. Also, you do not subclass the [`NSDockTile`](./nsdocktile.md) class; instead, you use the methods of the class to make the following customizations:
 
 - Badge the tile with a custom string.
 - Remove or show the application icon badge.
@@ -26,7 +31,7 @@ If you decide to draw the tile content yourself, you must provide a custom conte
 
 ##### Application Dock Tiles
 
-An application Dock tile defaults to display the application’s [`applicationIconImage`](nsapplication/applicationiconimage.md).
+An application Dock tile defaults to display the application’s [`applicationIconImage`](./nsapplication/applicationiconimage.md).
 
 The application Dock tile never shows a smaller application icon badge.
 
@@ -41,40 +46,41 @@ A window Dock tile can use a custom view to draw the Dock icon. If a custom view
 ## Topics
 
 ### Drawing the Tile’s Content
-- [var contentView: NSView?](nsdocktile/contentview.md)
+- [var contentView: NSView?](./nsdocktile/contentview.md)
   The view to use for drawing the dock tile contents.
 ### Getting the Tile Information
-- [var size: NSSize](nsdocktile/size.md)
+- [var size: NSSize](./nsdocktile/size.md)
   The size of the tile.
-- [var owner: AnyObject?](nsdocktile/owner.md)
+- [var owner: AnyObject?](./nsdocktile/owner.md)
   The object represented by the dock tile.
 ### Applying Badge Icons to the Tile
-- [var showsApplicationBadge: Bool](nsdocktile/showsapplicationbadge.md)
+- [var showsApplicationBadge: Bool](./nsdocktile/showsapplicationbadge.md)
   A Boolean showing whether the tile is badged with the application’s icon
-- [var badgeLabel: String?](nsdocktile/badgelabel.md)
+- [var badgeLabel: String?](./nsdocktile/badgelabel.md)
   The string to be displayed in the tile’s badging area.
 ### Updating the Dock Tile
-- [func display()](nsdocktile/display.md)
+- [func display()](./nsdocktile/display%28%29.md)
   Redraws the dock tile’s content.
 ### Constants
-- [Dock Tile Plug-In Support Version](dock-tile-plug-in-support-version.md)
+- [Dock Tile Plug-In Support Version](./dock-tile-plug-in-support-version.md)
   The version of the AppKit framework containing support for dock tile plug-ins.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol NSDockTilePlugIn](nsdocktileplugin.md)
+### The Dock
+- [protocol NSDockTilePlugIn](./nsdocktileplugin.md)
   A set of methods implemented by plug-ins that allow an app’s Dock tile to be customized while the app is not running.
 
 

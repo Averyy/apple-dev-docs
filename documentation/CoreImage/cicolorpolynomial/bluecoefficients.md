@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Polynomial coefficients for the blue channel.
@@ -11,7 +12,7 @@ Polynomial coefficients for the blue channel.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ Polynomial coefficients for the blue channel.
 var blueCoefficients: CIVector { get set }
 ```
 
+```objc
+@property (nonatomic, retain) CIVector * blueCoefficients;
+```
+
 ## See Also
 
-- [var alphaCoefficients: CIVector](cicolorpolynomial/alphacoefficients.md)
+### Instance Properties
+- [var alphaCoefficients: CIVector](./alphacoefficients.md)
   Polynomial coefficients for the alpha channel.
-- [var greenCoefficients: CIVector](cicolorpolynomial/greencoefficients.md)
+- [var greenCoefficients: CIVector](./greencoefficients.md)
   Polynomial coefficients for the green channel.
-- [var inputImage: CIImage?](cicolorpolynomial/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var redCoefficients: CIVector](cicolorpolynomial/redcoefficients.md)
+- [var redCoefficients: CIVector](./redcoefficients.md)
   Polynomial coefficients for the red channel.
 
 

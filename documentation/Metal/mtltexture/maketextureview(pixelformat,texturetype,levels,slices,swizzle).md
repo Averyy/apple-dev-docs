@@ -1,7 +1,8 @@
 # makeTextureView(pixelFormat:textureType:levels:slices:swizzle:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new view of the texture, reinterpreting a subset of its data using a different type, pixel format, and swizzle pattern.
 
@@ -11,7 +12,7 @@ Creates a new view of the texture, reinterpreting a subset of its data using a d
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ func makeTextureView(pixelFormat: MTLPixelFormat, textureType: MTLTextureType, l
 
 #### Discussion
 
-For more information on texture views, see [`makeTextureView(pixelFormat:textureType:levels:slices:)`](mtltexture/maketextureview(pixelformat:texturetype:levels:slices:).md)
+For more information on texture views, see [`makeTextureView(pixelFormat:textureType:levels:slices:)`](./maketextureview%28pixelformat,texturetype,levels,slices%29.md)
 
 The swizzle pattern of the view is combined with that of the parent texture to generate the final swizzle pattern. For example: An `[R,G,A,B]` swizzle of a texture with a `[R,1,1,G]` swizzle pattern is `[R,1,G,1]`.
 
@@ -35,9 +36,10 @@ The swizzle pattern of the view is combined with that of the parent texture to g
 
 ## See Also
 
-- [func makeTextureView(pixelFormat: MTLPixelFormat) -> (any MTLTexture)?](mtltexture/maketextureview(pixelformat:).md)
+### Creating textures by reinterpreting existing texture data
+- [func makeTextureView(pixelFormat: MTLPixelFormat) -> (any MTLTexture)?](./maketextureview%28pixelformat%29.md)
   Creates a new view of the texture, reinterpreting its data using a different pixel format.
-- [func makeTextureView(pixelFormat: MTLPixelFormat, textureType: MTLTextureType, levels: Range<Int>, slices: Range<Int>) -> (any MTLTexture)?](mtltexture/maketextureview(pixelformat:texturetype:levels:slices:).md)
+- [func makeTextureView(pixelFormat: MTLPixelFormat, textureType: MTLTextureType, levels: Range<Int>, slices: Range<Int>) -> (any MTLTexture)?](./maketextureview%28pixelformat,texturetype,levels,slices%29.md)
   Creates a new view of the texture, reinterpreting a subset of its data using a different type and pixel format.
 
 

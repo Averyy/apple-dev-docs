@@ -1,7 +1,8 @@
 # replenishCapacity(completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a best-effort attempt to restore Pro Video Storage to the initial capacity specified by the user in Settings app.
 
@@ -15,24 +16,33 @@ Performs a best-effort attempt to restore Pro Video Storage to the initial capac
 ## Declaration
 
 ```swift
+func replenishCapacity(completionHandler: (@Sendable (Int, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func replenishCapacity() async throws -> Int
+```
+
+```objc
+- (void) replenishCapacityWithCompletionHandler:(void (^)(NSInteger remainingCapacity, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-If there is enough readily available free space on the file system, Pro Video Storage will be resized to [`initialCapacity`](avprovideostorage/initialcapacity.md). Otherwise, this method will attempt to resize it near that value.
+If there is enough readily available free space on the file system, Pro Video Storage will be resized to [`initialCapacity`](./initialcapacity.md). Otherwise, this method will attempt to resize it near that value.
 
 Pro Video Storage is busy when the replenish operation starts and is no longer busy when the completion handler is called.
 
 ## Parameters
 
-- `completionHandler`:  The completion handler is called on an arbitrary dispatch queue when the replenish operation finishes. The `remainingCapacity` parameter reflects the new size in bytes, which may be less than [`initialCapacity`](avprovideostorage/initialcapacity.md). If the operation fails, the `error` parameter is set and `remainingCapacity` is unchanged or -1 if there was a failure retrieving the value.
+- `completionHandler`:  The completion handler is called on an arbitrary dispatch queue when the replenish operation finishes. The `remainingCapacity` parameter reflects the new size in bytes, which may be less than [`initialCapacity`](./initialcapacity.md). If the operation fails, the `error` parameter is set and `remainingCapacity` is unchanged or -1 if there was a failure retrieving the value.
 
 ## See Also
 
-- [var initialCapacity: Int](avprovideostorage/initialcapacity.md)
+### Inspecting capacity
+- [var initialCapacity: Int](./initialcapacity.md)
   Initial size of Pro Video Storage in bytes.
-- [var remainingCapacity: Int](avprovideostorage/remainingcapacity.md)
+- [var remainingCapacity: Int](./remainingcapacity.md)
   Current size of Pro Video Storage in bytes.
 
 

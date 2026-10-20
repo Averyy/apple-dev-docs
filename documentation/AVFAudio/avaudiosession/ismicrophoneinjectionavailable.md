@@ -1,7 +1,8 @@
 # isMicrophoneInjectionAvailable
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether microphone injection is available.
 
@@ -17,19 +18,24 @@ A Boolean value that indicates whether microphone injection is available.
 var isMicrophoneInjectionAvailable: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isMicrophoneInjectionAvailable;
+```
+
 #### Discussion
 
-Observe changes to the value of this property by registering for notifications of type [`microphoneInjectionCapabilitiesChangeNotification`](avaudiosession/microphoneinjectioncapabilitieschangenotification.md).
+Observe changes to the value of this property by registering for notifications of type [`microphoneInjectionCapabilitiesChangeNotification`](./microphoneinjectioncapabilitieschangenotification.md).
 
 ## See Also
 
-- [var preferredMicrophoneInjectionMode: AVAudioSession.MicrophoneInjectionMode](avaudiosession/preferredmicrophoneinjectionmode.md)
+### Enabling adding audio to calls
+- [var preferredMicrophoneInjectionMode: AVAudioSession.MicrophoneInjectionMode](./preferredmicrophoneinjectionmode.md)
   The preferred mode of injecting audio into another app’s input stream.
-- [func setPreferredMicrophoneInjectionMode(AVAudioSession.MicrophoneInjectionMode) throws](avaudiosession/setpreferredmicrophoneinjectionmode(_:).md)
+- [func setPreferredMicrophoneInjectionMode(AVAudioSession.MicrophoneInjectionMode) throws](./setpreferredmicrophoneinjectionmode%28_%29.md)
   Sets the preferred mode of injecting audio into another app’s input stream.
-- [AVAudioSession.MicrophoneInjectionMode](avaudiosession/microphoneinjectionmode.md)
+- [AVAudioSession.MicrophoneInjectionMode](./microphoneinjectionmode.md)
   The modes of injecting audio into another app’s input stream.
-- [class let microphoneInjectionCapabilitiesChangeNotification: NSNotification.Name](avaudiosession/microphoneinjectioncapabilitieschangenotification.md)
+- [class let microphoneInjectionCapabilitiesChangeNotification: NSNotification.Name](./microphoneinjectioncapabilitieschangenotification.md)
   A notification the system posts when its capability to inject audio into an input stream changes.
 
 

@@ -1,7 +1,8 @@
 # EPError
 
 **Framework**: Execution Policy  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -16,21 +17,21 @@ struct EPError
 ## Topics
 
 ### Type Properties
-- [static var generic: EPError.Code](eperror-swift.struct/generic.md)
-- [static var notADeveloperTool: EPError.Code](eperror-swift.struct/notadevelopertool.md)
-- [static var errorDomain: String](eperror-swift.struct/errordomain.md)
+- [static var generic: EPError.Code](./eperror-swift.struct/generic.md)
+- [static var notADeveloperTool: EPError.Code](./eperror-swift.struct/notadevelopertool.md)
+- [static var errorDomain: String](./eperror-swift.struct/errordomain.md)
 ### Enumerations
-- [EPError.Code](eperror-swift.struct/code.md)
+- [EPError.Code](./eperror-swift.struct/code.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

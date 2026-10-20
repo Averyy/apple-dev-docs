@@ -1,7 +1,8 @@
 # logsInAutomatically
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to automatically log in the person at startup.
 
@@ -12,6 +13,10 @@ A Boolean value that indicates whether to automatically log in the person at sta
 
 ```swift
 var logsInAutomatically: Bool { get set }
+```
+
+```objc
+@property (readwrite) BOOL logsInAutomatically;
 ```
 
 

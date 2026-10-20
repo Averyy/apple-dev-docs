@@ -1,7 +1,8 @@
 # maximumValue
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum value for this parameter.
 
@@ -14,13 +15,18 @@ The maximum value for this parameter.
 var maximumValue: Float { get }
 ```
 
+```objc
+@property (readonly) float maximumValue;
+```
+
 ## See Also
 
-- [var currentValue: Float](merawprocessingparameter/floatingpoint/currentvalue.md)
+### Properties
+- [var currentValue: Float](./currentvalue.md)
   Get or set the current value for this parameter.
-- [var initialValue: Float](merawprocessingparameter/floatingpoint/initialvalue.md)
+- [var initialValue: Float](./initialvalue.md)
   The initial value for this parameter as defined in the sequence metadata.
-- [var minimumValue: Float](merawprocessingparameter/floatingpoint/minimumvalue.md)
+- [var minimumValue: Float](./minimumvalue.md)
   The minimum value for this parameter.
 
 

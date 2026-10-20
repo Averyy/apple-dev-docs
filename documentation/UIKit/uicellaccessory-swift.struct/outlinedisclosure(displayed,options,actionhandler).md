@@ -1,7 +1,8 @@
 # outlineDisclosure(displayed:options:actionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an outline disclosure system accessory with the specified display state, configuration options, and optional action handler.
 
@@ -9,7 +10,7 @@ Creates an outline disclosure system accessory with the specified display state,
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -27,13 +28,14 @@ Use this cell accessory to indicate that an item can expand and collapse, and to
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the outline disclosure appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](uicellaccessory-swift.struct/displayedstate/always.md).
-- `options`: Configuration options for the outline disclosure. See [`UICellAccessory.OutlineDisclosureOptions`](uicellaccessory-swift.struct/outlinedisclosureoptions.md) for possible configuration options.
+- `displayed`: The cell-editing states that the outline disclosure appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](./displayedstate/always.md).
+- `options`: Configuration options for the outline disclosure. See [`UICellAccessory.OutlineDisclosureOptions`](./outlinedisclosureoptions.md) for possible configuration options.
 - `actionHandler`: An optional closure that the system calls when a user interacts with the outline disclosure.
 
 ## See Also
 
-- [UICellAccessory.OutlineDisclosureOptions](uicellaccessory-swift.struct/outlinedisclosureoptions.md)
+### Creating an outline disclosure
+- [UICellAccessory.OutlineDisclosureOptions](./outlinedisclosureoptions.md)
   Configuration options for an outline disclosure.
 
 

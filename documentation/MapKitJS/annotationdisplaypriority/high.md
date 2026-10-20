@@ -1,7 +1,8 @@
 # High
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A high display priority, with a preset value of 750 out of 1000.
 
@@ -10,15 +11,16 @@ A high display priority, with a preset value of 750 out of 1000.
 
 ## Declaration
 
-```swift
+```
 readonly High: 750;
 ```
 
 ## See Also
 
-- [Low](annotationdisplaypriority/low.md)
+### Display priority values
+- [Low](./low.md)
   A low display priority, with a preset value of 250 out of 1000.
-- [Required](annotationdisplaypriority/required.md)
+- [Required](./required.md)
   The highest display priority, with a preset value of 1000 out of 1000.
 
 

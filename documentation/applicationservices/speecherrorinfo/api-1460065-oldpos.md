@@ -1,7 +1,8 @@
 # oldPos
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The character position within the text buffer being processed of the first error that occurred after the previous call to the `GetSpeechInfo` function with the `soErrors` selector.
 
@@ -12,6 +13,10 @@ The character position within the text buffer being processed of the first error
 
 ```swift
 var oldPos: Int
+```
+
+```c
+long oldPos;
 ```
 
 

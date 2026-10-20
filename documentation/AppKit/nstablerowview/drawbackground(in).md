@@ -1,7 +1,8 @@
 # drawBackground(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the background of the row in the rectangle.
 
@@ -14,11 +15,15 @@ Draws the background of the row in the rectangle.
 func drawBackground(in dirtyRect: NSRect)
 ```
 
+```objc
+- (void) drawBackgroundInRect:(NSRect) dirtyRect;
+```
+
 #### Discussion
 
 Overriding this method allows an application to draw a custom background for a table row view.
 
-By default, this method draws the background color or group row style as appropriate for the row. This method also draws the “below look” for a drop target if [`isTargetForDropOperation`](nstablerowview/istargetfordropoperation.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+By default, this method draws the background color or group row style as appropriate for the row. This method also draws the “below look” for a drop target if [`isTargetForDropOperation`](./istargetfordropoperation.md) is [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -26,13 +31,14 @@ By default, this method draws the background color or group row style as appropr
 
 ## See Also
 
-- [var backgroundColor: NSColor](nstablerowview/backgroundcolor.md)
+### Overriding Row View Display Characteristics
+- [var backgroundColor: NSColor](./backgroundcolor.md)
   The background color of the row.
-- [func drawDraggingDestinationFeedback(in: NSRect)](nstablerowview/drawdraggingdestinationfeedback(in:).md)
+- [func drawDraggingDestinationFeedback(in: NSRect)](./drawdraggingdestinationfeedback%28in%29.md)
   Draws the row’s dragging destination feedback when the entire row is a drop target.
-- [func drawSelection(in: NSRect)](nstablerowview/drawselection(in:).md)
+- [func drawSelection(in: NSRect)](./drawselection%28in%29.md)
   Draws the selected row.
-- [func drawSeparator(in: NSRect)](nstablerowview/drawseparator(in:).md)
+- [func drawSeparator(in: NSRect)](./drawseparator%28in%29.md)
   Draws the horizontal separator between table rows.
 
 

@@ -1,7 +1,8 @@
 # tileUrl
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the tile that failed to load.
 
@@ -10,7 +11,7 @@ The URL of the tile that failed to load.
 
 ## Declaration
 
-```swift
+```
 readonly tileUrl: string;
 ```
 

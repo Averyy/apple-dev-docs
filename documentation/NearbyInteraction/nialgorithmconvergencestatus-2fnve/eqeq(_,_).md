@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Nearby Interaction  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Determines whether two convergence statuses are equal.
 

@@ -1,12 +1,13 @@
 # nearestStartTime(atTime:withFlags:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Query the device to get a time equal to or later than the given time that is the best time to start IO.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

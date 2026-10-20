@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a configuration object that applies the specified configuration values on top of the current objectâ€™s values.
 
@@ -19,9 +20,13 @@ Returns a configuration object that applies the specified configuration values o
 func applying(_ otherConfiguration: UIImage.Configuration?) -> Self
 ```
 
+```objc
+- (instancetype) configurationByApplyingConfiguration:(UIImageConfiguration *) otherConfiguration;
+```
+
 ## Mentions
 
-- [Configuring and displaying symbol images in your UI](configuring-and-displaying-symbol-images-in-your-ui.md)
+- [Configuring and displaying symbol images in your UI](../../configuring-and-displaying-symbol-images-in-your-ui.md)
 
 #### Return Value
 
@@ -37,7 +42,8 @@ This method merges the traits from `otherConfiguration` with the current objectâ
 
 ## See Also
 
-- [func withTraitCollection(UITraitCollection?) -> Self](uiimage/configuration-swift.class/withtraitcollection(_:).md)
+### Modifying a configuration object
+- [func withTraitCollection(UITraitCollection?) -> Self](./withtraitcollection%28_%29.md)
   Returns a new configuration object that merges the current traits with the traits from the specified trait collection.
 
 

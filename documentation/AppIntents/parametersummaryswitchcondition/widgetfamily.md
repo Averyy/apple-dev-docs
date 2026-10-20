@@ -1,7 +1,8 @@
 # ParameterSummarySwitchCondition.WidgetFamily
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enum that represents a parameter summary Switch statement over widget family.
 
@@ -10,7 +11,7 @@ An enum that represents a parameter summary Switch statement over widget family.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,21 +23,22 @@ enum WidgetFamily
 ## Topics
 
 ### Enumeration Cases
-- [ParameterSummarySwitchCondition.WidgetFamily.widgetFamily](parametersummaryswitchcondition/widgetfamily/widgetfamily.md)
+- [ParameterSummarySwitchCondition.WidgetFamily.widgetFamily](./widgetfamily/widgetfamily.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [init(ParameterSummarySwitchCondition<Intent, Value, CaseCondition>.WidgetFamily, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-4vxvs.md)
+### Creating a switch condition
+- [init(ParameterSummarySwitchCondition<Intent, Value, CaseCondition>.WidgetFamily, () -> CaseCondition)](./init%28_,_%29-4vxvs.md)
   Initializes a parameter summary Switch statement over widget family.
-- [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-6cdw3.md)
+- [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](./init%28_,_%29-6cdw3.md)
   Creates a `Switch` statement that branches based on union value parameter cases.
-- [enum ParameterSummaryCaseBuilder](parametersummarycasebuilder.md)
+- [enum ParameterSummaryCaseBuilder](../parametersummarycasebuilder.md)
   A result builder that allows you to declaratively describe the cases of a switch statement in a parameter summary.
 
 

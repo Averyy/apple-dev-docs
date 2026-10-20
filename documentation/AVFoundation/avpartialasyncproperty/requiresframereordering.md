@@ -1,7 +1,8 @@
 # requiresFrameReordering
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether samples in the track may have different presentation and decode timestamps.
 
@@ -20,15 +21,18 @@ A Boolean value that indicates whether samples in the track may have different p
 static var requiresFrameReordering: AVAsyncProperty<Root, Bool> { get }
 ```
 
+Available when `Root` inherits `AVAssetTrack`.
+
 #### Discussion
 
-Use the [`load(_:isolation:)`](avasynchronouskeyvalueloading/load(_:isolation:).md) method to retrieve the property value.
+Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 
 ## See Also
 
-- [static var nominalFrameRate: AVAsyncProperty<Root, Float>](avpartialasyncproperty/nominalframerate.md)
+### Loading frame-based characteristics
+- [static var nominalFrameRate: AVAsyncProperty<Root, Float>](./nominalframerate.md)
   The frame rate of the track, in frames per second.
-- [static var minFrameDuration: AVAsyncProperty<Root, CMTime>](avpartialasyncproperty/minframeduration.md)
+- [static var minFrameDuration: AVAsyncProperty<Root, CMTime>](./minframeduration.md)
   The minimum duration of the track’s frames.
 
 

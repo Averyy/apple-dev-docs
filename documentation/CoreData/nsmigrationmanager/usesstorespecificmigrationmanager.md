@@ -1,7 +1,8 @@
 # usesStoreSpecificMigrationManager
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the migration manager tries to use a store specific migration manager to perform the  migration.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the migration manager tries to use a stor
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,19 +21,24 @@ A Boolean value that indicates whether the migration manager tries to use a stor
 var usesStoreSpecificMigrationManager: Bool { get set }
 ```
 
+```objc
+@property BOOL usesStoreSpecificMigrationManager;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver uses a store-specific migration manager, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver uses a store-specific migration manager, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver uses a store-specific migration manager, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+[`true`](../../Swift/true.md) if the receiver uses a store-specific migration manager, otherwise [`false`](../../Swift/false.md). The default value is [`true`](../../Swift/true.md).
 
 A store-specific migration manager class is not guaranteed to perform any of the migration manager delegate callbacks or update values for the observable properties.
 
 ## See Also
 
-- [var userInfo: [AnyHashable : Any]?](nsmigrationmanager/userinfo.md)
+### Customizing the Manager
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The user info for the migration manager.
 
 

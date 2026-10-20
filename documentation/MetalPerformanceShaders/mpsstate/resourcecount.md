@@ -1,7 +1,8 @@
 # resourceCount
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 var resourceCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger resourceCount;
+```
+
 ## See Also
 
-- [var isTemporary: Bool](mpsstate/istemporary.md)
-- [var label: String?](mpsstate/label.md)
-- [var readCount: Int](mpsstate/readcount.md)
-- [var resource: (any MTLResource)?](mpsstate/resource.md)
+### Instance Properties
+- [var isTemporary: Bool](./istemporary.md)
+- [var label: String?](./label.md)
+- [var readCount: Int](./readcount.md)
+- [var resource: (any MTLResource)?](./resource.md)
 
 
 ---

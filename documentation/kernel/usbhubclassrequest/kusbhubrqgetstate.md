@@ -1,7 +1,8 @@
 # kUSBHubRqGetState
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 A request to get state.
 
@@ -10,7 +11,7 @@ A request to get state.
 
 ## Declaration
 
-```swift
+```c
 kUSBHubRqGetState = 2
 ```
 

@@ -1,7 +1,8 @@
 # baseLeaderboardID
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID that Game Center uses to identify this leaderboard.
 
@@ -20,19 +21,24 @@ The ID that Game Center uses to identify this leaderboard.
 var baseLeaderboardID: String { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) NSString * baseLeaderboardID;
+```
+
 #### Discussion
 
 This is the same ID that App Store Connect uses to identify this leaderboard.
 
 ## See Also
 
-- [var title: String?](gkleaderboard/title.md)
+### Accessing Identifier and Type Properties
+- [var title: String?](./title.md)
   The localized title for the leaderboard.
-- [var type: GKLeaderboard.LeaderboardType](gkleaderboard/type.md)
+- [var type: GKLeaderboard.LeaderboardType](./type.md)
   The type of leaderboard, classic or recurring.
-- [GKLeaderboard.LeaderboardType](gkleaderboard/leaderboardtype.md)
+- [GKLeaderboard.LeaderboardType](./leaderboardtype.md)
   Specifies whether a leaderboard is recurring.
-- [var groupIdentifier: String?](gkleaderboard/groupidentifier.md)
+- [var groupIdentifier: String?](./groupidentifier.md)
   The identifier for the group the leaderboard belongs to.
 
 

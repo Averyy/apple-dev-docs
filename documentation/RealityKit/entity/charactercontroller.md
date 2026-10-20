@@ -1,7 +1,8 @@
 # characterController
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The character controller component for the entity.
 
@@ -11,7 +12,7 @@ The character controller component for the entity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ The character controller component for the entity.
 
 ## See Also
 
-- [var characterControllerState: CharacterControllerStateComponent?](entity/charactercontrollerstate.md)
+### Animating and controlling characters
+- [var characterControllerState: CharacterControllerStateComponent?](./charactercontrollerstate.md)
   The character controller state for  the entity.
-- [func moveCharacter(by: SIMD3<Float>, deltaTime: Float, relativeTo: Entity?, collisionHandler: ((CharacterControllerComponent.Collision) -> Void)?) -> CharacterControllerComponent.CollisionFlags](entity/movecharacter(by:deltatime:relativeto:collisionhandler:).md)
+- [func moveCharacter(by: SIMD3<Float>, deltaTime: Float, relativeTo: Entity?, collisionHandler: ((CharacterControllerComponent.Collision) -> Void)?) -> CharacterControllerComponent.CollisionFlags](./movecharacter%28by,deltatime,relativeto,collisionhandler%29.md)
   Moves the character along a specified vector over a period of time.
-- [func teleportCharacter(to: SIMD3<Float>, relativeTo: Entity?)](entity/teleportcharacter(to:relativeto:).md)
+- [func teleportCharacter(to: SIMD3<Float>, relativeTo: Entity?)](./teleportcharacter%28to,relativeto%29.md)
   Moves the character instantly to a new position.
 
 

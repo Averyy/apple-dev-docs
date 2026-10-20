@@ -1,7 +1,8 @@
 # presentAsModalWindow(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents another view controller as a modal window, also known as an alert.
 
@@ -14,13 +15,17 @@ Presents another view controller as a modal window, also known as an alert.
 func presentAsModalWindow(_ viewController: NSViewController)
 ```
 
+```objc
+- (void) presentViewControllerAsModalWindow:(NSViewController *) viewController;
+```
+
 #### Discussion
 
-This method calls the [`present(_:animator:)`](nsviewcontroller/present(_:animator:).md) method on `self` (the presenting view controller), and passes a modal window animator to that method.
+This method calls the [`present(_:animator:)`](./present%28_,animator%29.md) method on `self` (the presenting view controller), and passes a modal window animator to that method.
 
-The presented view controller is the delegate and the content view controller of its window. You can use [`NSWindowDelegate`](nswindowdelegate.md) methods to prevent the closing of the modal window, if needed.
+The presented view controller is the delegate and the content view controller of its window. You can use [`NSWindowDelegate`](../nswindowdelegate.md) methods to prevent the closing of the modal window, if needed.
 
-To dismiss the modal window, call the [`dismiss(_:)`](nsviewcontroller/dismiss(_:)-91my5.md) method on `self` (the presenting view controller).
+To dismiss the modal window, call the [`dismiss(_:)`](./dismiss%28_%29-91my5.md) method on `self` (the presenting view controller).
 
 ## Parameters
 
@@ -28,16 +33,17 @@ To dismiss the modal window, call the [`dismiss(_:)`](nsviewcontroller/dismiss(_
 
 ## See Also
 
-- [func present(NSViewController, animator: any NSViewControllerPresentationAnimator)](nsviewcontroller/present(_:animator:).md)
+### Presenting Another View Controller’s Content
+- [func present(NSViewController, animator: any NSViewControllerPresentationAnimator)](./present%28_,animator%29.md)
   Presents another view controller using a specified, custom animator for presentation and dismissal.
-- [func dismiss(NSViewController)](nsviewcontroller/dismiss(_:)-91my5.md)
+- [func dismiss(NSViewController)](./dismiss%28_%29-91my5.md)
   Dismisses a presented view controller, using the same animator that presented it.
-- [func present(NSViewController, asPopoverRelativeTo: NSRect, of: NSView, preferredEdge: NSRectEdge, behavior: NSPopover.Behavior)](nsviewcontroller/present(_:aspopoverrelativeto:of:preferrededge:behavior:).md)
+- [func present(NSViewController, asPopoverRelativeTo: NSRect, of: NSView, preferredEdge: NSRectEdge, behavior: NSPopover.Behavior)](./present%28_,aspopoverrelativeto,of,preferrededge,behavior%29.md)
   Presents another view controller as a popover.
-- [func present(NSViewController, asPopoverRelativeTo: NSRect, of: NSView, preferredEdge: NSRectEdge, behavior: NSPopover.Behavior, hasFullSizeContent: Bool)](nsviewcontroller/present(_:aspopoverrelativeto:of:preferrededge:behavior:hasfullsizecontent:).md)
-- [func presentAsSheet(NSViewController)](nsviewcontroller/presentassheet(_:).md)
+- [func present(NSViewController, asPopoverRelativeTo: NSRect, of: NSView, preferredEdge: NSRectEdge, behavior: NSPopover.Behavior, hasFullSizeContent: Bool)](./present%28_,aspopoverrelativeto,of,preferrededge,behavior,hasfullsizecontent%29.md)
+- [func presentAsSheet(NSViewController)](./presentassheet%28_%29.md)
   Presents another view controller as a sheet.
-- [func present(inWidget: NSViewController)](nsviewcontroller/present(inwidget:).md)
+- [func present(inWidget: NSViewController)](./present%28inwidget%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # adornments
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of visual adornments that appear on the markup canvas.
 
@@ -27,7 +28,8 @@ Adornments are supplementary visual elements you place on the canvas above the p
 
 ## See Also
 
-- [func adornmentFrame(for: UUID) -> CGRect?](papermarkupviewcontroller/adornmentframe(for:).md)
+### Managing adornments
+- [func adornmentFrame(for: UUID) -> CGRect?](./adornmentframe%28for%29.md)
   Returns the current frame of the specified adornment.
 
 

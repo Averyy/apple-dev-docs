@@ -1,7 +1,8 @@
 # mediumRoomDry
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The reverb of a medium-sized room with a significant amount of acoustical treatment.
 

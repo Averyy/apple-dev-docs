@@ -1,7 +1,8 @@
 # extracting(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Extracts and returns a copy of the entire buffer.
 

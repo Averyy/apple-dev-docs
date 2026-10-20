@@ -1,7 +1,8 @@
 # originFromAnchorTransform
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform from the environment probe anchor to the origin coordinate system.
 
@@ -16,9 +17,10 @@ var originFromAnchorTransform: simd_float4x4 { get }
 
 ## See Also
 
-- [var environmentTexture: (any MTLTexture)?](environmentprobeanchor/environmenttexture.md)
+### Getting anchor information
+- [var environmentTexture: (any MTLTexture)?](./environmenttexture.md)
   The environment texture of an anchor.
-- [var cameraScaleReference: Float](environmentprobeanchor/camerascalereference.md)
+- [var cameraScaleReference: Float](./camerascalereference.md)
   The camera scale reference of this anchor.
 
 

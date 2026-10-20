@@ -1,7 +1,8 @@
 # screenImageDimension
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image resolution of the currently presented image, in pixels.
 

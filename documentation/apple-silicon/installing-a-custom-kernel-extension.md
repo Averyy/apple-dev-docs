@@ -1,6 +1,7 @@
 # Installing a custom kernel extension
 
-**Framework**: Apple silicon
+**Framework**: Apple silicon  
+**Role**: Article
 
 Install kernel extensions using a custom installer package, and help users understand the installation process.
 
@@ -10,9 +11,9 @@ A kernel extension (or kext) is a bundle that performs low-level tasks. Kexts ru
 
 Always consider alternatives before creating a kext. The system provides numerous APIs to minimize the need for kexts. For example, you can use the DriverKit SDK to implement drivers for most types of hardware. In addition, the kernel runtime environment has more stringent code-level requirements, which makes the creation of kexts more challenging, and the consequences more severe if you do it incorrectly.
 
-For information about alternatives to kexts, see [`Implementing drivers, system extensions, and kexts`](https://developer.apple.com/documentation/systemextensions/implementing-drivers-system-extensions-and-kexts).
+For information about alternatives to kexts, see [Implementing drivers, system extensions, and kexts](../SystemExtensions/implementing-drivers-system-extensions-and-kexts.md).
 
-##### Load Kexts As the Final Step in Your Installer Package
+##### Load Kexts as the Final Step in Your Installer Package
 
 The most common way to install kexts is with a custom installer package. (Unlike apps and system extensions, you cannot distribute kexts through the Mac App Store.) Typically, you use a single package to copy each kext and any supporting software to the user’s system, and then you use scripts to load and configure the kexts for execution.
 
@@ -22,7 +23,7 @@ When creating your installer package, load your kexts as the final step in the i
 
 For more information about how to load kexts, run `kmutil load -h` in Terminal.
 
-##### Explain the Kext Loading Process to Users
+##### Explain the Kext-Loading Process to Users
 
 In macOS 11 and later, the loading of a kext requires the user to take actions outside of your installation package. When loading a kext, tell the user to perform the following one-time setup on Apple silicon:
 
@@ -62,7 +63,8 @@ For more details, see the `kmutil(8)` man page.
 
 ## See Also
 
-- [Debugging a custom kernel extension](debugging-a-custom-kernel-extension.md)
+### Kernel and drivers
+- [Debugging a custom kernel extension](./debugging-a-custom-kernel-extension.md)
   Configure your system to enable the debugging of custom kernel extensions from a second Mac.
 
 

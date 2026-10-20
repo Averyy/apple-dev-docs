@@ -1,7 +1,8 @@
 # MediaIntelligenceError
 
 **Framework**: Media Intelligence  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error that indicates a media analysis operation failed.
 
@@ -26,24 +27,24 @@ Framework methods throw this error when they encounter a problem processing a re
 ## Topics
 
 ### Errors
-- [MediaIntelligenceError.faceGroupProcessing](mediaintelligenceerror/facegroupprocessing.md)
+- [MediaIntelligenceError.faceGroupProcessing](./mediaintelligenceerror/facegroupprocessing.md)
   The framework can’t complete a face grouping operation.
-- [MediaIntelligenceError.mediaProcessing](mediaintelligenceerror/mediaprocessing.md)
+- [MediaIntelligenceError.mediaProcessing](./mediaintelligenceerror/mediaprocessing.md)
   The framework can’t process a media asset.
-- [MediaIntelligenceError.resultFetching](mediaintelligenceerror/resultfetching.md)
+- [MediaIntelligenceError.resultFetching](./mediaintelligenceerror/resultfetching.md)
   The framework can’t retrieve analysis results.
-- [MediaIntelligenceError.workingDirectory](mediaintelligenceerror/workingdirectory.md)
+- [MediaIntelligenceError.workingDirectory](./mediaintelligenceerror/workingdirectory.md)
   The framework can’t access the working directory.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

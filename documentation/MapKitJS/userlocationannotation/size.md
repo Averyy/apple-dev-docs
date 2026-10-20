@@ -1,7 +1,8 @@
 # size
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the user location annotation.
 
@@ -10,7 +11,7 @@ The size of the user location annotation.
 
 ## Declaration
 
-```swift
+```
 get size(): Size;
 set size(_: Size);
 ```

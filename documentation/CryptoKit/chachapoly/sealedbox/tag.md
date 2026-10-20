@@ -1,7 +1,8 @@
 # tag
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An authentication tag.
 
@@ -26,9 +27,10 @@ The authentication tag has a length of 16 bytes.
 
 ## See Also
 
-- [var nonce: ChaChaPoly.Nonce](chachapoly/sealedbox/nonce.md)
+### Inspecting the component elements
+- [var nonce: ChaChaPoly.Nonce](./nonce.md)
   The nonce used to encrypt the data.
-- [var ciphertext: Data](chachapoly/sealedbox/ciphertext.md)
+- [var ciphertext: Data](./ciphertext.md)
   The encrypted data.
 
 

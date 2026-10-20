@@ -1,7 +1,8 @@
 # evaluateURL(_:completionHandler:)
 
 **Framework**: BrowserKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -10,7 +11,15 @@
 ## Declaration
 
 ```swift
+func evaluateURL(_ url: URL, completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 func evaluateURL(_ url: URL) async -> Bool
+```
+
+```objc
+- (void) evaluateURL:(NSURL *) url completionHandler:(void (^)(BOOL shouldBlock)) completionHandler;
 ```
 
 #### Discussion

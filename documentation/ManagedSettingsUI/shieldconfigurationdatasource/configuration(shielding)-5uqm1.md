@@ -1,7 +1,8 @@
 # configuration(shielding:)
 
 **Framework**: Managed Settings UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests a configuration to use for a shield that covers an application.
 
@@ -26,7 +27,8 @@ The shield to display.
 
 ## See Also
 
-- [func configuration(shielding: Application, in: ActivityCategory) -> ShieldConfiguration](shieldconfigurationdatasource/configuration(shielding:in:)-ia14.md)
+### Styling an application shield
+- [func configuration(shielding: Application, in: ActivityCategory) -> ShieldConfiguration](./configuration%28shielding,in%29-ia14.md)
   Requests a configuration to use for a shield that covers an application because of its category.
 
 

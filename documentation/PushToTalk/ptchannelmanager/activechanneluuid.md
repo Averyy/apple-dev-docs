@@ -1,7 +1,8 @@
 # activeChannelUUID
 
 **Framework**: Push to Talk  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the active channel for the app.
 
@@ -14,6 +15,10 @@ The unique identifier of the active channel for the app.
 
 ```swift
 var activeChannelUUID: UUID? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) NSUUID * activeChannelUUID;
 ```
 
 #### Discussion

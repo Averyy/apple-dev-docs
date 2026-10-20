@@ -1,7 +1,8 @@
 # ManagementServerCapabilitiesSupportedFeaturesObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that contains the server’s optional protocol features.
 
@@ -16,7 +17,7 @@ A dictionary that contains the server’s optional protocol features.
 
 ## Declaration
 
-```swift
+```
 object ManagementServerCapabilitiesSupportedFeaturesObject
 ```
 

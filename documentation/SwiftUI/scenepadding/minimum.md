@@ -1,7 +1,8 @@
 # minimum
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The minimum scene padding value.
 
@@ -26,7 +27,8 @@ In macOS, this value represents the recommended spacing for the root view of a w
 
 ## See Also
 
-- [static let navigationBar: ScenePadding](scenepadding/navigationbar.md)
+### Getting padding values
+- [static let navigationBar: ScenePadding](./navigationbar.md)
   The navigation bar content scene padding.
 
 

@@ -1,14 +1,15 @@
 # getDataOff
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 23.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual size_t getDataOff() const;
 ```
 

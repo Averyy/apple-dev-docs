@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the request to find rectangular regions that contain people in an image.
 
@@ -17,6 +18,10 @@ The results of the request to find rectangular regions that contain people in an
 
 ```swift
 var results: [VNHumanObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNHumanObservation *> * results;
 ```
 
 

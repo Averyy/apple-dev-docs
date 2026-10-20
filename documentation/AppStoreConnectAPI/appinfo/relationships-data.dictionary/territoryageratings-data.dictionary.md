@@ -1,7 +1,8 @@
 # AppInfo.Relationships.TerritoryAgeRatings
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The territory-specific age rating relationships for an app info record, linking to age ratings in individual App Store regions.
 
@@ -10,7 +11,7 @@ The territory-specific age rating relationships for an app info record, linking 
 
 ## Declaration
 
-```swift
+```
 object AppInfo.Relationships.TerritoryAgeRatings
 ```
 

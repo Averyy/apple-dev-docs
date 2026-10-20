@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a body-tracking component for the given target.
 
@@ -22,7 +23,8 @@ init(_ target: BodyTrackingComponent.Target)
 
 ## See Also
 
-- [init()](bodytrackingcomponent/init.md)
+### Creating a body tracking component
+- [init()](./init%28%29.md)
   Creates a body-tracking component.
 
 

@@ -1,7 +1,8 @@
 # init(_:value:comparator:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sortable column that displays a string property, and generates its label from a localized string resource.
 
@@ -19,9 +20,48 @@ Creates a sortable column that displays a string property, and generates its lab
 nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text
 ```
 
+Available when `RowValue` conforms to `Identifiable`, `Sort` is `KeyPathComparator<RowValue>`, `Content` conforms to `View`, and `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text
+```
+
+```swift
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text
+```
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text, S : StringProtocol
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text, S : StringProtocol
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view for you. For more information about localizing strings, see [`Text`](text.md).
+This initializer creates a [`Text`](../text.md) view for you. For more information about localizing strings, see [`Text`](../text.md).
 
 ## Parameters
 
@@ -31,11 +71,12 @@ This initializer creates a [`Text`](text.md) view for you. For more information 
 
 ## See Also
 
-- [init(_:value:content:)](tablecolumn/init(_:value:content:).md)
+### Creating a sortable column
+- [init(_:value:content:)](./init%28_,value,content%29.md)
   Creates a sortable column for Boolean values that generates its label from a localized string resource.
-- [init(_:value:comparator:content:)](tablecolumn/init(_:value:comparator:content:).md)
+- [init(_:value:comparator:content:)](./init%28_,value,comparator,content%29.md)
   Creates a sortable column that generates its label from a localized string resource.
-- [init(_:sortUsing:content:)](tablecolumn/init(_:sortusing:content:).md)
+- [init(_:sortUsing:content:)](./init%28_,sortusing,content%29.md)
   Creates a sortable column that generates its label from a localized string resource.
 
 

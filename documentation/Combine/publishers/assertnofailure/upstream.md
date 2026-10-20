@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,11 +23,12 @@ let upstream: Upstream
 
 ## See Also
 
-- [let file: StaticString](publishers/assertnofailure/file.md)
+### Inspecting publisher properties
+- [let file: StaticString](./file.md)
   The filename used in the error message.
-- [let line: UInt](publishers/assertnofailure/line.md)
+- [let line: UInt](./line.md)
   The line number used in the error message.
-- [let prefix: String](publishers/assertnofailure/prefix.md)
+- [let prefix: String](./prefix.md)
   The string used at the beginning of the fatal error message.
 
 

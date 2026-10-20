@@ -1,7 +1,8 @@
 # CMMagneticFieldCalibrationAccuracy
 
 **Framework**: Core Motion  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Indicates the calibration accuracy of a magnetic field estimate
 
@@ -19,39 +20,44 @@ Indicates the calibration accuracy of a magnetic field estimate
 enum CMMagneticFieldCalibrationAccuracy
 ```
 
+```c
+enum CMMagneticFieldCalibrationAccuracy : int;
+```
+
 #### Overview
 
-One of the `enum` constants of the `CMMagneticFieldCalibrationAccuracy` type is the value of the accuracy field of the [`CMCalibratedMagneticField`](cmcalibratedmagneticfield.md) structure returned from the [`magneticField`](cmdevicemotion/magneticfield.md) property.
+One of the `enum` constants of the `CMMagneticFieldCalibrationAccuracy` type is the value of the accuracy field of the [`CMCalibratedMagneticField`](./cmcalibratedmagneticfield.md) structure returned from the [`magneticField`](./cmdevicemotion/magneticfield.md) property.
 
 ## Topics
 
 ### Constants
-- [CMMagneticFieldCalibrationAccuracy.uncalibrated](cmmagneticfieldcalibrationaccuracy/uncalibrated.md)
+- [CMMagneticFieldCalibrationAccuracy.uncalibrated](./cmmagneticfieldcalibrationaccuracy/uncalibrated.md)
   The magnetic field estimate is not calibrated.
-- [CMMagneticFieldCalibrationAccuracy.low](cmmagneticfieldcalibrationaccuracy/low.md)
+- [CMMagneticFieldCalibrationAccuracy.low](./cmmagneticfieldcalibrationaccuracy/low.md)
   The accuracy of the magnetic field calibration is low.
-- [CMMagneticFieldCalibrationAccuracy.medium](cmmagneticfieldcalibrationaccuracy/medium.md)
+- [CMMagneticFieldCalibrationAccuracy.medium](./cmmagneticfieldcalibrationaccuracy/medium.md)
   The accuracy of the magnetic field calibration is medium.
-- [CMMagneticFieldCalibrationAccuracy.high](cmmagneticfieldcalibrationaccuracy/high.md)
+- [CMMagneticFieldCalibrationAccuracy.high](./cmmagneticfieldcalibrationaccuracy/high.md)
   The accuracy of the magnetic field calibration is high.
 ### Initializers
-- [init?(rawValue: Int32)](cmmagneticfieldcalibrationaccuracy/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./cmmagneticfieldcalibrationaccuracy/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var magneticField: CMCalibratedMagneticField](cmdevicemotion/magneticfield.md)
+### Getting the Calibrated Magnetic Field
+- [var magneticField: CMCalibratedMagneticField](./cmdevicemotion/magneticfield.md)
   Returns the magnetic field vector with respect to the device.
-- [struct CMCalibratedMagneticField](cmcalibratedmagneticfield.md)
+- [struct CMCalibratedMagneticField](./cmcalibratedmagneticfield.md)
   Calibrated magnetic field data and an estimate of the accuracy of the calibration.
 
 

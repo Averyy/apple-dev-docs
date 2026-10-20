@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Accelerate  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Adds a slice operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a slice operation to the current graph.
 ```swift
 subscript(ranges: any BNNSGraph.Builder.SliceIndex...) -> BNNSGraph.Builder.Tensor<T> { get set }
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

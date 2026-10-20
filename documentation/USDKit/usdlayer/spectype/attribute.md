@@ -1,7 +1,8 @@
 # USDLayer.SpecType.attribute
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attribute spec.
 

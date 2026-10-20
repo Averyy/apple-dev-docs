@@ -1,7 +1,8 @@
 # kSSCSeqCmd_READ_ELEMENT_STATUS_ATTACHED
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSSCSeqCmd_READ_ELEMENT_STATUS_ATTACHED = 0xB4
 ```
 

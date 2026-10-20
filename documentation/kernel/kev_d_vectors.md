@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kev_d_vectors {
     ...
 };
@@ -21,9 +21,9 @@ This structure is used to append some data to a kernel event.
 ## Topics
 
 ### Fields
-- [data_length](kev_d_vectors/1446939-data_length.md)
+- [data_length](./kev_d_vectors/api-1446939-data_length.md)
   The length of data.
-- [data_ptr](kev_d_vectors/1446989-data_ptr.md)
+- [data_ptr](./kev_d_vectors/api-1446989-data_ptr.md)
   A pointer to data.
 
 

@@ -1,6 +1,8 @@
 # Adopting drag and drop using SwiftUI
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [AdoptingDragAndDropUsingSwiftUI.zip](https://docs-assets.developer.apple.com/published/865816f9f1f5/AdoptingDragAndDropUsingSwiftUI.zip)
 
 Enable drag-and-drop interactions in lists, tables and custom views.
 
@@ -16,7 +18,7 @@ Enable drag-and-drop interactions in lists, tables and custom views.
 
 This sample code project demonstrates how a SwiftUI view can act as a drag source or drop destination.
 
-To enable drag interactions, add the [`draggable(_:)`](view/draggable(_:).md) modifier to a view to send or receive [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) items within an app, among a collection of your own apps, or between your apps and others that support the import or export of a specified data format. To handle dropped content, use the [`dropDestination(for:action:isTargeted:)`](view/dropdestination(for:action:istargeted:).md) modifier to receive the expected dropped item.
+To enable drag interactions, add the [`draggable(_:)`](./view/draggable%28_%29.md) modifier to a view to send or receive [`Transferable`](../CoreTransferable/transferable.md) items within an app, among a collection of your own apps, or between your apps and others that support the import or export of a specified data format. To handle dropped content, use the [`dropDestination(for:action:isTargeted:)`](./view/dropdestination%28for,action,istargeted%29.md) modifier to receive the expected dropped item.
 
 In the sample app, people can drag a contact from a list of contacts and drop it into another app; such as Contacts, Notes, or Messages. Additionally, people can drag and drop new contacts from other apps, like Contacts or Notes, into the sample app.
 
@@ -41,11 +43,11 @@ List {
 }
 ```
 
-When someone drags a contact from a list of contacts, the app uses the [`draggable(_:preview:)`](view/draggable(_:preview:).md) modifier to define a custom preview for the dragged item.
+When someone drags a contact from a list of contacts, the app uses the [`draggable(_:preview:)`](./view/draggable%28_,preview%29.md) modifier to define a custom preview for the dragged item.
 
-To learn more about adopting the draggable API to provide items for drag operations, see [`Making a view into a drag source`](making-a-view-into-a-drag-source.md).
+To learn more about adopting the draggable API to provide items for drag operations, see [Making a view into a drag source](./making-a-view-into-a-drag-source.md).
 
-##### Enable Drop Interactions
+##### Enable drop interactions
 
 Use the `dropDestination(for:action:isTargeted:)` modifier to receive dragged items and define the destination that handles the dropped content.
 
@@ -55,7 +57,7 @@ Use the `dropDestination(for:action:isTargeted:)` modifier to receive dragged it
 }
 ```
 
-The modifier expects a type `Contact` which conforms to the `Transferable` protocol. The implementation of the `dropDestination(for:action:isTargeted:)` modifier uses the [`transferRepresentation`](https://developer.apple.comhttps://developer.apple.com/coretransferable/transferrepresentation) to receive a dragged item representing the dropped contact information.
+The modifier expects a type `Contact` which conforms to the `Transferable` protocol. The implementation of the `dropDestination(for:action:isTargeted:)` modifier uses the [transferRepresentation](https://developer.apple.com/coretransferable/transferrepresentation) to receive a dragged item representing the dropped contact information.
 
 The app defines the transfer representations in order of preference. The app uses the most suitable representation to create and initialize a `Contact` object.
 
@@ -79,13 +81,13 @@ static var transferRepresentation: some TransferRepresentation {
 }
 ```
 
-If the app receives an item with a custom [`Uniform Type Identifiers`](https://developer.apple.com/documentation/uniformtypeidentifiers), for example `com.example.contact`, it uses the [`CodableRepresentation`](https://developer.apple.com/documentation/coretransferable/codablerepresentation) to represent the `Contact` data structure.
+If the app receives an item with a custom [`uniform type identifier`](../UniformTypeIdentifiers/UniformTypeIdentifiers.md), for example `com.example.contact`, it uses the [`CodableRepresentation`](../CoreTransferable/codablerepresentation.md) to represent the `Contact` data structure.
 
 `com.example.contact` declared by the sample app conforms to public.contact. To ensure the operating system understands how to handle the content type, it should conform to either `UTType.data`, `UTType.package`, or one of the types that inherit from these two.
 
-[`ProxyRepresentation`](https://developer.apple.com/documentation/coretransferable/proxyrepresentation) serves as an alternative representation that allows people to drag and drop a contact into any text editor that doesn’t support `com.example.contact` or [`vCard`](https://developer.apple.com/documentation/uniformtypeidentifiers/uttype-swift.struct/vcard) content but works with text formats. In this case, the app exports the `phoneNumber` as a string. When someone drops a string on the [`List`](list.md) or [`Table`](table.md), the sample app uses the `ProxyRepresentation` to convert that string into a `Contact` object.
+[`ProxyRepresentation`](../CoreTransferable/proxyrepresentation.md) serves as an alternative representation that allows people to drag and drop a contact into any text editor that doesn’t support `com.example.contact` or [`vCard`](../UniformTypeIdentifiers/uttype-swift.struct/vcard.md) content but works with text formats. In this case, the app exports the `phoneNumber` as a string. When someone drops a string on the [`List`](./list.md) or [`Table`](./table.md), the sample app uses the `ProxyRepresentation` to convert that string into a `Contact` object.
 
-Finally, [`DataRepresentation`](https://developer.apple.com/documentation/coretransferable/datarepresentation) creates a binary representation of the `Contact` object and constructs the value for the receiver that supports the `vCard` content type.
+Finally, [`DataRepresentation`](../CoreTransferable/datarepresentation.md) creates a binary representation of the `Contact` object and constructs the value for the receiver that supports the `vCard` content type.
 
 When someone drops the contact on the `Table` or `List`, the completion handler inserts the dropped contact into the collection of contacts at the drop location. If the drop doesn’t specify an index, the completion handler adds the dropped contact to the end of the collection.
 
@@ -108,13 +110,14 @@ func handleDroppedContacts(droppedContacts: [Contact], index: Int? = nil) {
 
 Finally, the `dropDestination(for:action:isTargeted:)` modifier can receive drag interactions that start in any other view or app.
 
-For design guidance on adopting drag and drop, see Human Interface Guidelines > [`Drag and drop`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/drag-and-drop).
+For design guidance on adopting drag and drop, see Human Interface Guidelines > [Drag and drop](https://developer.apple.com/design/human-interface-guidelines/drag-and-drop).
 
 ## See Also
 
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+### Essentials
+- [Making a view into a drag source](./making-a-view-into-a-drag-source.md)
   Adopt draggable API to provide items for drag-and-drop operations.
-- [Reordering items in lists, stacks, grids, and custom layouts](reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
+- [Reordering items in lists, stacks, grids, and custom layouts](./reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
   Add drag-to-reorder interactions to SwiftUI layouts using reordering modifiers.
 
 

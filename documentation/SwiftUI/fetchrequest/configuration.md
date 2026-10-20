@@ -1,7 +1,8 @@
 # FetchRequest.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The request’s configurable properties.
 
@@ -23,20 +24,20 @@ The request’s configurable properties.
 
 #### Overview
 
-You initialize a [`FetchRequest`](fetchrequest.md) with an optional predicate and sort descriptors, either explicitly or using a configured [`NSFetchRequest`](https://developer.apple.com/documentation/coredata/nsfetchrequest). Later, you can dynamically update the predicate and sort parameters using the request’s configuration structure.
+You initialize a [`FetchRequest`](../fetchrequest.md) with an optional predicate and sort descriptors, either explicitly or using a configured [`NSFetchRequest`](../../CoreData/nsfetchrequest.md). Later, you can dynamically update the predicate and sort parameters using the request’s configuration structure.
 
-You access or bind to a request’s configuration components through properties on the associated [`FetchedResults`](fetchedresults.md) instance.
+You access or bind to a request’s configuration components through properties on the associated [`FetchedResults`](../fetchedresults.md) instance.
 
-##### Configure Using a Binding
+##### Configure using a binding
 
-Get a [`Binding`](binding.md) to a fetch request’s configuration structure by accessing the request’s [`projectedValue`](fetchrequest/projectedvalue.md), which you do by using the dollar sign (`$`) prefix on the associated results property. For example, you can create a request for `Quake` entities — a managed object type that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines — that initially sorts the results by time:
+Get a [`Binding`](../binding.md) to a fetch request’s configuration structure by accessing the request’s [`projectedValue`](./projectedvalue.md), which you do by using the dollar sign (`$`) prefix on the associated results property. For example, you can create a request for `Quake` entities — a managed object type that the [Loading and displaying a large data feed](../loading-and-displaying-a-large-data-feed.md) sample code project defines — that initially sorts the results by time:
 
 ```swift
 @FetchRequest(sortDescriptors: [SortDescriptor(\.time, order: .reverse)])
 private var quakes: FetchedResults<Quake>
 ```
 
-Then you can bind the request’s sort descriptors, which you access through the `quakes` result, to those of a [`Table`](table.md) instance:
+Then you can bind the request’s sort descriptors, which you access through the `quakes` result, to those of a [`Table`](../table.md) instance:
 
 ```swift
 Table(quakes, sortOrder: $quakes.sortDescriptors) {
@@ -54,15 +55,15 @@ A user who clicks on a table column header initiates the following sequence of e
 3. The reconfigured request fetches new results.
 4. SwiftUI redraws the table in response to new results.
 
-##### Set Configuration Directly
+##### Set configuration directly
 
-If you need to access the fetch request’s configuration elements directly, use the [`nsPredicate`](fetchedresults/nspredicate.md) and [`sortDescriptors`](fetchedresults/sortdescriptors.md) or [`nsSortDescriptors`](fetchedresults/nssortdescriptors.md) properties of the [`FetchedResults`](fetchedresults.md) instance. Continuing the example above, to enable the user to dynamically update the predicate, declare a [`State`](state.md) property to hold a query string:
+If you need to access the fetch request’s configuration elements directly, use the [`nsPredicate`](../fetchedresults/nspredicate.md) and [`sortDescriptors`](../fetchedresults/sortdescriptors.md) or [`nsSortDescriptors`](../fetchedresults/nssortdescriptors.md) properties of the [`FetchedResults`](../fetchedresults.md) instance. Continuing the example above, to enable the user to dynamically update the predicate, declare a [`State`](../state.md) property to hold a query string:
 
 ```swift
 @State private var query = ""
 ```
 
-Then add an [`onChange(of:initial:_:)`](view/onchange(of:initial:_:).md) modifier to the [`Table`](table.md) that sets a new predicate any time the query changes:
+Then add an [`onChange(of:initial:_:)`](../view/onchange%28of,initial,_%29.md) modifier to the [`Table`](../table.md) that sets a new predicate any time the query changes:
 
 ```swift
 .onChange(of: query) { _, value in
@@ -72,7 +73,7 @@ Then add an [`onChange(of:initial:_:)`](view/onchange(of:initial:_:).md) modifie
 }
 ```
 
-To give the user control over the string, add a [`TextField`](textfield.md) in your user interface that’s bound to the `query` state:
+To give the user control over the string, add a [`TextField`](../textfield.md) in your user interface that’s bound to the `query` state:
 
 ```swift
 TextField("Filter", text: $query)
@@ -83,23 +84,24 @@ When the user types into the text field, the predicate updates, the request fetc
 ## Topics
 
 ### Setting a predicate
-- [var nsPredicate: NSPredicate?](fetchrequest/configuration/nspredicate.md)
+- [var nsPredicate: NSPredicate?](./configuration/nspredicate.md)
   The request’s predicate.
 ### Setting sort descriptors
-- [var sortDescriptors: [SortDescriptor<Result>]](fetchrequest/configuration/sortdescriptors.md)
+- [var sortDescriptors: [SortDescriptor<Result>]](./configuration/sortdescriptors.md)
   The request’s sort descriptors, accessed as value types.
-- [var nsSortDescriptors: [NSSortDescriptor]](fetchrequest/configuration/nssortdescriptors.md)
+- [var nsSortDescriptors: [NSSortDescriptor]](./configuration/nssortdescriptors.md)
   The request’s sort descriptors, accessed as reference types.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var projectedValue: Binding<FetchRequest<Result>.Configuration>](fetchrequest/projectedvalue.md)
+### Configuring a request dynamically
+- [var projectedValue: Binding<FetchRequest<Result>.Configuration>](./projectedvalue.md)
   A binding to the request’s mutable configuration properties.
 
 

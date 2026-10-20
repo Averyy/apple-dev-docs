@@ -1,7 +1,8 @@
 # readAttributeScaledValue(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeScaledValue(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeScaledValue() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeScaledValueWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

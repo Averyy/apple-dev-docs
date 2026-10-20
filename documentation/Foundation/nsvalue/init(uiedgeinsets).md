@@ -1,7 +1,8 @@
 # init(UIEdgeInsets:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value object containing the specified UIKit edge insets structure.
 
@@ -16,7 +17,15 @@ Creates a new value object containing the specified UIKit edge insets structure.
 ## Declaration
 
 ```swift
+init(UIEdgeInsets insets: UIEdgeInsets)
+```
+
+```swift
 init(uiEdgeInsets insets: UIEdgeInsets)
+```
+
+```objc
++ (NSValue *) valueWithUIEdgeInsets:(UIEdgeInsets) insets;
 ```
 
 #### Return Value
@@ -29,13 +38,15 @@ A new value object that contains the edge inset information.
 
 ## See Also
 
-- [struct UIEdgeInsets](../uikit/uiedgeinsets.md)
+### Related Documentation
+- [struct UIEdgeInsets](../../UIKit/uiedgeinsets.md)
   The inset distances for views.
-- [init(UIOffset: UIOffset)](nsvalue/init(uioffset:).md)
+### Working with UIKit Geometry Values
+- [init(UIOffset: UIOffset)](./init%28uioffset%29.md)
   Creates a new value object containing the specified UIKit offset structure.
-- [var uiEdgeInsetsValue: UIEdgeInsets](nsvalue/uiedgeinsetsvalue.md)
+- [var uiEdgeInsetsValue: UIEdgeInsets](./uiedgeinsetsvalue.md)
   Returns the UIKit edge insets structure representation of the value.
-- [var uiOffsetValue: UIOffset](nsvalue/uioffsetvalue.md)
+- [var uiOffsetValue: UIOffset](./uioffsetvalue.md)
   Returns the UIKit offset structure representation of the value.
 
 

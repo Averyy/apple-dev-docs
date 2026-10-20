@@ -1,7 +1,8 @@
 # decimal
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard decimal format option.
 
@@ -11,7 +12,7 @@ The standard decimal format option.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ static var decimal: OSLogIntegerFormatting { get }
 
 ## Mentions
 
-- [Generating Log Messages from Your Code](generating-log-messages-from-your-code.md)
+- [Generating Log Messages from Your Code](../generating-log-messages-from-your-code.md)
 
 ## See Also
 
-- [static var hex: OSLogIntegerFormatting](oslogintegerformatting/hex.md)
+### Getting the Standard Formats
+- [static var hex: OSLogIntegerFormatting](./hex.md)
   The standard hexadecimal format option.
-- [static var octal: OSLogIntegerFormatting](oslogintegerformatting/octal.md)
+- [static var octal: OSLogIntegerFormatting](./octal.md)
   The standard octal format option.
 
 

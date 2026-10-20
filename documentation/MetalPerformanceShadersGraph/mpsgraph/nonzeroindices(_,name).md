@@ -1,7 +1,8 @@
 # nonZeroIndices(_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the indices of the non-zero elements of the input tensor.
 
@@ -17,6 +18,10 @@ Computes the indices of the non-zero elements of the input tensor.
 
 ```swift
 func nonZeroIndices(_ tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) nonZeroIndicesOfTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

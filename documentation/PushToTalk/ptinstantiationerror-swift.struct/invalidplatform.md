@@ -1,7 +1,8 @@
 # invalidPlatform
 
 **Framework**: Push to Talk  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An instantiation error that indicates the API isn’t available on the simulator or macOS devices.
 
@@ -18,15 +19,16 @@ static var invalidPlatform: PTInstantiationError.Code { get }
 
 ## See Also
 
-- [static var unknown: PTInstantiationError.Code](ptinstantiationerror-swift.struct/unknown.md)
+### Constants
+- [static var unknown: PTInstantiationError.Code](./unknown.md)
   An instantiation error that indicates an unknown error.
-- [static var missingBackgroundMode: PTInstantiationError.Code](ptinstantiationerror-swift.struct/missingbackgroundmode.md)
+- [static var missingBackgroundMode: PTInstantiationError.Code](./missingbackgroundmode.md)
   An instantiation error that indicates the app doesn’t have the background mode in an enabled state.
-- [static var missingPushServerEnvironment: PTInstantiationError.Code](ptinstantiationerror-swift.struct/missingpushserverenvironment.md)
+- [static var missingPushServerEnvironment: PTInstantiationError.Code](./missingpushserverenvironment.md)
   An instantiation error that indicates the app doesn’t have the push notification capability in an enabled state.
-- [static var missingEntitlement: PTInstantiationError.Code](ptinstantiationerror-swift.struct/missingentitlement.md)
+- [static var missingEntitlement: PTInstantiationError.Code](./missingentitlement.md)
   An instantiation error that indicates the app is missing the entitlement.
-- [static var instantiationAlreadyInProgress: PTInstantiationError.Code](ptinstantiationerror-swift.struct/instantiationalreadyinprogress.md)
+- [static var instantiationAlreadyInProgress: PTInstantiationError.Code](./instantiationalreadyinprogress.md)
   An instantiation error that indicates there’s already an in-flight instantiation request.
 
 

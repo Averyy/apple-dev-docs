@@ -1,7 +1,8 @@
 # psm
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The PSM of the channel.
 
@@ -18,6 +19,10 @@ The PSM of the channel.
 
 ```swift
 var psm: CBL2CAPPSM { get }
+```
+
+```objc
+@property (nonatomic, readonly) CBL2CAPPSM PSM;
 ```
 
 

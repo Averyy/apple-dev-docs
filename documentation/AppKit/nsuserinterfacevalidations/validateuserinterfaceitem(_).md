@@ -2,12 +2,13 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the sender should be enabled.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -16,17 +17,22 @@ Returns a Boolean value that indicates whether the sender should be enabled.
 func validateUserInterfaceItem(_ item: any NSValidatedUserInterfaceItem) -> Bool
 ```
 
+```objc
+- (BOOL) validateUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user interface item should be enabled, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the user interface item should be enabled, otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
-- `item`: The user interface item to validate. You can send `anItem` the [`action`](nsvalidateduserinterfaceitem/action.md) and [`tag`](nsvalidateduserinterfaceitem/tag.md) messages.
+- `item`: The user interface item to validate. You can send `anItem` the [`action`](../nsvalidateduserinterfaceitem/action.md) and [`tag`](../nsvalidateduserinterfaceitem/tag.md) messages.
 
 ## See Also
 
-- [User Interface Validation](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UIValidation/UIValidation.html#//apple_ref/doc/uid/10000040i)
+### Related Documentation
+- [User Interface Validation](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UIValidation/UIValidation.html#//apple_ref/doc/uid/10000040i)
 
 
 ---

@@ -1,7 +1,8 @@
 # USDLayer.Path.Kind.expression
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Connection expression path. Legacy USD syntax retained for classifying paths parsed from older USDA data.
 

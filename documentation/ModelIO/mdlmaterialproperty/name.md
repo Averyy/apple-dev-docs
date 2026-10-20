@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A descriptive name for the material property.
 
@@ -19,15 +20,20 @@ A descriptive name for the material property.
 var name: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * name;
+```
+
 #### Discussion
 
-A material property’s name is not used for rendering, but it can be useful in debugging. Model Model I/O  may set a material property’s name to a format-specific value when loading materials from an [`MDLAsset`](mdlasset.md) object.
+A material property’s name is not used for rendering, but it can be useful in debugging. Model Model I/O  may set a material property’s name to a format-specific value when loading materials from an [`MDLAsset`](../mdlasset.md) object.
 
 ## See Also
 
-- [var semantic: MDLMaterialSemantic](mdlmaterialproperty/semantic.md)
+### Using a Material Property
+- [var semantic: MDLMaterialSemantic](./semantic.md)
   The semantic meaning for the material property’s value.
-- [var type: MDLMaterialPropertyType](mdlmaterialproperty/type.md)
+- [var type: MDLMaterialPropertyType](./type.md)
   The data type stored in the material property’s value.
 
 

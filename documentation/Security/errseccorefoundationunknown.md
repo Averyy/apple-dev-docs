@@ -1,7 +1,8 @@
 # errSecCoreFoundationUnknown
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An unknown Core Foundation error occurred.
 
@@ -18,6 +19,10 @@ An unknown Core Foundation error occurred.
 
 ```swift
 var errSecCoreFoundationUnknown: OSStatus { get }
+```
+
+```c
+errSecCoreFoundationUnknown
 ```
 
 

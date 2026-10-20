@@ -1,18 +1,19 @@
 # kCFStreamSocketSecurityLevelSSLv2
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies that SSL version 2 be set as the security protocol for a socket stream.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.2+
-- tvOS ?+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 2.0+ - Deprecated in 10.0
+- iPadOS 2.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.2+ - Deprecated in 10.12
+- tvOS - Deprecated in 10.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 3.0
 
 ## Declaration
 
@@ -20,15 +21,20 @@ Specifies that SSL version 2 be set as the security protocol for a socket stream
 let kCFStreamSocketSecurityLevelSSLv2: CFString
 ```
 
+```c
+extern CFStringRef const kCFStreamSocketSecurityLevelSSLv2;
+```
+
 ## See Also
 
-- [let kCFStreamSocketSecurityLevelNone: CFString](kcfstreamsocketsecuritylevelnone.md)
+### Constants
+- [let kCFStreamSocketSecurityLevelNone: CFString](./kcfstreamsocketsecuritylevelnone.md)
   Specifies that no security level be set.
-- [let kCFStreamSocketSecurityLevelSSLv3: CFString](kcfstreamsocketsecuritylevelsslv3.md)
+- [let kCFStreamSocketSecurityLevelSSLv3: CFString](./kcfstreamsocketsecuritylevelsslv3.md)
   Specifies that SSL version 3 be set as the security protocol for a socket stream pair.
-- [let kCFStreamSocketSecurityLevelTLSv1: CFString](kcfstreamsocketsecurityleveltlsv1.md)
+- [let kCFStreamSocketSecurityLevelTLSv1: CFString](./kcfstreamsocketsecurityleveltlsv1.md)
   Specifies that TLS version 1 be set as the security protocol for a socket stream.
-- [let kCFStreamSocketSecurityLevelNegotiatedSSL: CFString](kcfstreamsocketsecuritylevelnegotiatedssl.md)
+- [let kCFStreamSocketSecurityLevelNegotiatedSSL: CFString](./kcfstreamsocketsecuritylevelnegotiatedssl.md)
   Specifies that the highest level security protocol that can be negotiated be set as the security protocol for a socket stream.
 
 

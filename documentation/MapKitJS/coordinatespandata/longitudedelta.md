@@ -1,7 +1,8 @@
 # longitudeDelta
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The longitude span in degrees.
 
@@ -10,13 +11,14 @@ The longitude span in degrees.
 
 ## Declaration
 
-```swift
+```
 longitudeDelta: number;
 ```
 
 ## See Also
 
-- [latitudeDelta](coordinatespandata/latitudedelta.md)
+### Span properties
+- [latitudeDelta](./latitudedelta.md)
   The latitude span in degrees.
 
 

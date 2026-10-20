@@ -1,7 +1,8 @@
 # WKMediaCaptureState
 
 **Framework**: WebKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that describes whether a media device, like a camera or microphone, is currently capturing audio or video.
 
@@ -18,37 +19,42 @@ An enumeration that describes whether a media device, like a camera or microphon
 enum WKMediaCaptureState
 ```
 
+```c
+enum WKMediaCaptureState : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [WKMediaCaptureState.active](wkmediacapturestate/active.md)
+- [WKMediaCaptureState.active](./wkmediacapturestate/active.md)
   The media device is actively capturing audio or video.
-- [WKMediaCaptureState.muted](wkmediacapturestate/muted.md)
+- [WKMediaCaptureState.muted](./wkmediacapturestate/muted.md)
   The media device is muted, and not actively capturing audio or video.
-- [WKMediaCaptureState.none](wkmediacapturestate/none.md)
+- [WKMediaCaptureState.none](./wkmediacapturestate/none.md)
   The media device is off.
 ### Initializers
-- [init?(rawValue: Int)](wkmediacapturestate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkmediacapturestate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var cameraCaptureState: WKMediaCaptureState](wkwebview/cameracapturestate.md)
+### Managing the microphone and camera
+- [var cameraCaptureState: WKMediaCaptureState](./wkwebview/cameracapturestate.md)
   An enumeration case that indicates whether the webpage is using the camera to capture images or video.
-- [var microphoneCaptureState: WKMediaCaptureState](wkwebview/microphonecapturestate.md)
+- [var microphoneCaptureState: WKMediaCaptureState](./wkwebview/microphonecapturestate.md)
   An enumeration case that indicates whether the webpage is using the microphone to capture audio.
-- [func setCameraCaptureState(WKMediaCaptureState, completionHandler: (() -> Void)?)](wkwebview/setcameracapturestate(_:completionhandler:).md)
+- [func setCameraCaptureState(WKMediaCaptureState, completionHandler: (() -> Void)?)](./wkwebview/setcameracapturestate%28_,completionhandler%29.md)
   Changes whether the webpage is using the camera to capture images or video.
-- [func setMicrophoneCaptureState(WKMediaCaptureState, completionHandler: (() -> Void)?)](wkwebview/setmicrophonecapturestate(_:completionhandler:).md)
+- [func setMicrophoneCaptureState(WKMediaCaptureState, completionHandler: (() -> Void)?)](./wkwebview/setmicrophonecapturestate%28_,completionhandler%29.md)
   Changes whether the webpage is using the microphone to capture audio.
 
 

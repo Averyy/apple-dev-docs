@@ -1,7 +1,8 @@
 # dynamicRange
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the type of image returned to the client; standard dynamic range, high dynamic range, or both.
 
@@ -13,6 +14,10 @@ Specifies the type of image returned to the client; standard dynamic range, high
 
 ```swift
 var dynamicRange: SCScreenshotConfiguration.DynamicRange { get set }
+```
+
+```objc
+@property (nonatomic, assign) SCScreenshotDynamicRange dynamicRange;
 ```
 
 

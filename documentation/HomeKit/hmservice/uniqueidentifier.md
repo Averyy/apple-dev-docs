@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the service.
 
@@ -19,11 +20,16 @@ A unique identifier for the service.
 var uniqueIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uniqueIdentifier;
+```
+
 ## See Also
 
-- [var name: String](hmservice/name.md)
+### Identifying the service
+- [var name: String](./name.md)
   The user specified name of the service.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmservice/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the service to the specified string.
 
 

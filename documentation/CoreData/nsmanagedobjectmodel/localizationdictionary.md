@@ -1,7 +1,8 @@
 # localizationDictionary
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localization dictionary of the model.
 
@@ -10,7 +11,7 @@ The localization dictionary of the model.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ The localization dictionary of the model.
 
 ```swift
 var localizationDictionary: [String : String]? { get set }
+```
+
+```objc
+@property (strong, nullable) NSDictionary<NSString *,NSString *> * localizationDictionary;
 ```
 
 #### Discussion

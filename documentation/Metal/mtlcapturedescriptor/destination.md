@@ -1,7 +1,8 @@
 # destination
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The destination for any captured command data.
 
@@ -19,15 +20,20 @@ The destination for any captured command data.
 var destination: MTLCaptureDestination { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MTLCaptureDestination destination;
+```
+
 #### Discussion
 
-The default value is [`MTLCaptureDestination.developerTools`](mtlcapturedestination/developertools.md).
+The default value is [`MTLCaptureDestination.developerTools`](../mtlcapturedestination/developertools.md).
 
 ## See Also
 
-- [var captureObject: Any?](mtlcapturedescriptor/captureobject.md)
+### Setting capture parameters
+- [var captureObject: Any?](./captureobject.md)
   The instance whose contents should be captured.
-- [var outputURL: URL?](mtlcapturedescriptor/outputurl.md)
+- [var outputURL: URL?](./outputurl.md)
   A URL for a file to write the capture data into.
 
 

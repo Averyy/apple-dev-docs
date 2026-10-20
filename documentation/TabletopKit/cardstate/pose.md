@@ -1,7 +1,8 @@
 # pose
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The 2D position and rotation of the equipment relative to the equipment parent, or table.
 
@@ -16,7 +17,8 @@ var pose: TableVisualState.Pose2D
 
 ## See Also
 
-- [var boundingBox: Rect3D](cardstate/boundingbox.md)
+### Rendering the equipment
+- [var boundingBox: Rect3D](./boundingbox.md)
   A 3D bounding box that encloses the card.
 
 

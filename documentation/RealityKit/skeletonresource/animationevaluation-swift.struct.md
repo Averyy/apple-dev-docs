@@ -1,7 +1,8 @@
 # SkeletonResource.AnimationEvaluation
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A bundle of additional animation-related skeletal data the runtime consumes when evaluating animations against this skeleton.
 
@@ -26,25 +27,26 @@ Provided at construction time and immutable for the lifetime of the resource. Ba
 ## Topics
 
 ### Creating an evaluation
-- [init(ikResources: [IKResource], blendMasks: [SkeletonResource.BlendMask])](skeletonresource/animationevaluation-swift.struct/init(ikresources:blendmasks:).md)
+- [init(ikResources: [IKResource], blendMasks: [SkeletonResource.BlendMask])](./animationevaluation-swift.struct/init%28ikresources,blendmasks%29.md)
   Creates an `AnimationEvaluation` bundle with the given IK resources and blend masks.
 ### Configuring the evaluation
-- [let ikResources: [IKResource]](skeletonresource/animationevaluation-swift.struct/ikresources.md)
+- [let ikResources: [IKResource]](./animationevaluation-swift.struct/ikresources.md)
   The IK resources associated with the skeleton.
-- [let blendMasks: [SkeletonResource.BlendMask]](skeletonresource/animationevaluation-swift.struct/blendmasks.md)
+- [let blendMasks: [SkeletonResource.BlendMask]](./animationevaluation-swift.struct/blendmasks.md)
   The blend masks associated with the skeleton.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let animationEvaluation: SkeletonResource.AnimationEvaluation](skeletonresource/animationevaluation-swift.property.md)
+### Configuring animation evaluation
+- [let animationEvaluation: SkeletonResource.AnimationEvaluation](./animationevaluation-swift.property.md)
   Animation-evaluation data baked into this resource at construction time.
-- [SkeletonResource.BlendMask](skeletonresource/blendmask.md)
+- [SkeletonResource.BlendMask](./blendmask.md)
   Describes a single blend mask for selective animation control.
 
 

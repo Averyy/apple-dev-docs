@@ -1,7 +1,8 @@
 # init(tagSchemes:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a linguistic tagger instance using the specified tag schemes and options.
 
@@ -20,19 +21,24 @@ Creates a linguistic tagger instance using the specified tag schemes and options
 init(tagSchemes: [NLTagScheme])
 ```
 
+```objc
+- (instancetype) initWithTagSchemes:(NSArray<NSString *> *) tagSchemes;
+```
+
 #### Discussion
 
-Pass any tag schemes to tagSchemes that you intend to use with the methods described in Enumerating linguistic tags and Getting linguistic tags in [`NLTagger`](nltagger.md).
+Pass any tag schemes to tagSchemes that you intend to use with the methods described in Enumerating linguistic tags and Getting linguistic tags in [`NLTagger`](../nltagger.md).
 
 > 💡 **Tip**:  Avoid specifying tag schemes that you won’t use to ensure optimal performance.
 
 ## Parameters
 
-- `tagSchemes`: An array of tag schemes to be used. See [`NLTagScheme`](nltagscheme.md) for the possible values.
+- `tagSchemes`: An array of tag schemes to be used. See [`NLTagScheme`](../nltagscheme.md) for the possible values.
 
 ## See Also
 
-- [var string: String?](nltagger/string.md)
+### Creating a tagger
+- [var string: String?](./string.md)
   The string being analyzed by the linguistic tagger.
 
 

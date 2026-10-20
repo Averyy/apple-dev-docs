@@ -1,7 +1,8 @@
 # init(canSendText:)
 
 **Framework**: Message UI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize with text message availability status
 

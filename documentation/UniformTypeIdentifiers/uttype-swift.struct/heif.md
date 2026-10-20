@@ -1,7 +1,8 @@
 # heif
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents High Efficiency Image File Format images.
 
@@ -24,13 +25,14 @@ static var heif: UTType { get }
 
 The identifier for this type is `public.heif`.
 
-This type conforms to a base type identified by `public.heif-standard`, which in turn conforms to [`UTTypeImage`](uttypeimage.md).
+This type conforms to a base type identified by `public.heif-standard`, which in turn conforms to [`UTTypeImage`](../uttypeimage.md).
 
 ## See Also
 
-- [static var heic: UTType](uttype-swift.struct/heic.md)
+### Apple image formats
+- [static var heic: UTType](./heic.md)
   A type that represents High Efficiency Image Coding images.
-- [static var livePhoto: UTType](uttype-swift.struct/livephoto.md)
+- [static var livePhoto: UTType](./livephoto.md)
   A type that represents Live Photos.
 
 

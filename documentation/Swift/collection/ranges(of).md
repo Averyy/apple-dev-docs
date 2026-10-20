@@ -1,7 +1,8 @@
 # ranges(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds and returns the ranges of the all occurrences of a given sequence within the collection.
 
@@ -19,6 +20,8 @@ Finds and returns the ranges of the all occurrences of a given sequence within t
 ```swift
 func ranges<C>(of other: C) -> [Range<Self.Index>] where C : Collection, Self.Element == C.Element
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 #### Return Value
 

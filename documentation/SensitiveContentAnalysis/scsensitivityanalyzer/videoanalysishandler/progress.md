@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that provides the app with status updates while a sensitive content check occurs for a video.
 

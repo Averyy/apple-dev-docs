@@ -1,7 +1,8 @@
 # RetrieveReportSuccessResponse
 
 **Framework**: External Purchase Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response that indicates success and includes your external purchase report data.
 
@@ -10,18 +11,18 @@ A response that indicates success and includes your external purchase report dat
 
 ## Declaration
 
-```swift
+```
 object RetrieveReportSuccessResponse
 ```
 
 #### Discussion
 
-This successful response contains the external purchase report data that you request when you call [`Retrieve External Purchase Report`](retrieve-external-purchase-report.md).
+This successful response contains the external purchase report data that you request when you call [`Retrieve External Purchase Report`](./retrieve-external-purchase-report.md).
 
 ## Topics
 
 ### Data types
-- [object ExternalPurchaseReport](externalpurchasereport.md)
+- [object ExternalPurchaseReport](./externalpurchasereport.md)
   The contents of an external purchase report for a single token.
 
 ## Properties
@@ -30,7 +31,8 @@ This successful response contains the external purchase report data that you req
 
 ## See Also
 
-- [Retrieve External Purchase Report](retrieve-external-purchase-report.md)
+### External purchase report retrieval
+- [Retrieve External Purchase Report](./retrieve-external-purchase-report.md)
   Get an external purchase report by providing its request identifier.
 
 

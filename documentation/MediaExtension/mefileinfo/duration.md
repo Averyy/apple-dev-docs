@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of the media asset, if available.
 
@@ -14,15 +15,20 @@ The duration of the media asset, if available.
 var duration: CMTime { get set }
 ```
 
+```objc
+@property (nonatomic) CMTime duration;
+```
+
 #### Discussion
 
-This value is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid) if the duration isn’t available.
+This value is [`invalid`](../../CoreMedia/cmtime/invalid.md) if the duration isn’t available.
 
 ## See Also
 
-- [var fragmentsStatus: MEFileInfo.FragmentsStatus](mefileinfo/fragmentsstatus-swift.property.md)
+### Inspecting file properties
+- [var fragmentsStatus: MEFileInfo.FragmentsStatus](./fragmentsstatus-swift.property.md)
   Indicates if the media asset contains fragments or is extendable by fragments.
-- [MEFileInfo.FragmentsStatus](mefileinfo/fragmentsstatus-swift.enum.md)
+- [MEFileInfo.FragmentsStatus](./fragmentsstatus-swift.enum.md)
   An enumeration that describes if a media asset contains or supports fragments.
 
 

@@ -1,7 +1,8 @@
 # quotientAndRemainder(dividingBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the quotient and remainder of this value divided by the given value.
 
@@ -41,11 +42,12 @@ let (q, r) = x.quotientAndRemainder(dividingBy: 933)
 
 ## See Also
 
-- [Integer Operators](integer-operators.md)
+### Performing Calculations
+- [Integer Operators](../integer-operators.md)
   Perform arithmetic and bitwise operations or compare values.
-- [func negate()](int/negate.md)
+- [func negate()](./negate%28%29.md)
   Replaces this value with its additive inverse.
-- [func isMultiple(of: Self) -> Bool](int/ismultiple(of:).md)
+- [func isMultiple(of: Self) -> Bool](./ismultiple%28of%29.md)
   Returns `true` if this value is a multiple of the given value, and `false` otherwise.
 
 

@@ -1,7 +1,8 @@
 # metalDevice
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The device that represents the underlying metal device.
 
@@ -18,6 +19,10 @@ The device that represents the underlying metal device.
 
 ```swift
 var metalDevice: (any MTLDevice)! { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) id<MTLDevice> metalDevice;
 ```
 
 

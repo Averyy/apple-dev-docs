@@ -1,7 +1,8 @@
 # NumberFormatter.Style.none
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An integer representation.
 
@@ -20,29 +21,34 @@ An integer representation.
 case none
 ```
 
+```c
+NSNumberFormatterNoStyle
+```
+
 #### Discussion
 
 For example, the number 1234.5678 is represented as 1235.
 
 ## See Also
 
-- [NumberFormatter.Style.decimal](numberformatter/style/decimal.md)
+### Formatting Styles
+- [NumberFormatter.Style.decimal](./decimal.md)
   A decimal style format.
-- [NumberFormatter.Style.percent](numberformatter/style/percent.md)
+- [NumberFormatter.Style.percent](./percent.md)
   A percent style format.
-- [NumberFormatter.Style.scientific](numberformatter/style/scientific.md)
+- [NumberFormatter.Style.scientific](./scientific.md)
   A scientific style format.
-- [NumberFormatter.Style.spellOut](numberformatter/style/spellout.md)
+- [NumberFormatter.Style.spellOut](./spellout.md)
   A style format in which numbers are spelled out in the language defined by the number formatter locale.
-- [NumberFormatter.Style.ordinal](numberformatter/style/ordinal.md)
+- [NumberFormatter.Style.ordinal](./ordinal.md)
   An ordinal style format.
-- [NumberFormatter.Style.currency](numberformatter/style/currency.md)
+- [NumberFormatter.Style.currency](./currency.md)
   A currency style format that uses the currency symbol defined by the number formatter locale.
-- [NumberFormatter.Style.currencyAccounting](numberformatter/style/currencyaccounting.md)
+- [NumberFormatter.Style.currencyAccounting](./currencyaccounting.md)
   An accounting currency style format that uses the currency symbol defined by the number formatter locale.
-- [NumberFormatter.Style.currencyISOCode](numberformatter/style/currencyisocode.md)
+- [NumberFormatter.Style.currencyISOCode](./currencyisocode.md)
   A currency style format that uses the ISO 4217 currency code defined by the number formatter locale.
-- [NumberFormatter.Style.currencyPlural](numberformatter/style/currencyplural.md)
+- [NumberFormatter.Style.currencyPlural](./currencyplural.md)
   A currency style format that uses the pluralized denomination defined by the number formatter locale.
 
 

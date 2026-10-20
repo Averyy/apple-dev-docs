@@ -1,7 +1,8 @@
 # erasePath(_:mask:transform:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 27.0+

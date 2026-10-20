@@ -1,7 +1,8 @@
 # gestureRecognizer(_:shouldReceive:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if a gesture recognizer should receive an object representing a touch or press event.
 
@@ -18,26 +19,31 @@ Asks the delegate if a gesture recognizer should receive an object representing 
 optional func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive event: UIEvent) -> Bool
 ```
 
+```objc
+- (BOOL) gestureRecognizer:(UIGestureRecognizer *) gestureRecognizer shouldReceiveEvent:(UIEvent *) event;
+```
+
 #### Return Value
 
-Return [`false`](https://developer.apple.com/documentation/swift/false) to prevent the gesture recognizer from seeing this event.
+Return [`false`](../../Swift/false.md) to prevent the gesture recognizer from seeing this event.
 
 #### Discussion
 
-UIKit calls this method once before either the [`gestureRecognizer(_:shouldReceive:)`](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-73vzu.md) method or the [`gestureRecognizer(_:shouldReceive:)`](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-16fuh.md) method of the gesture recognizer.
+UIKit calls this method once before either the [`gestureRecognizer(_:shouldReceive:)`](./gesturerecognizer%28_,shouldreceive%29-73vzu.md) method or the [`gestureRecognizer(_:shouldReceive:)`](./gesturerecognizer%28_,shouldreceive%29-16fuh.md) method of the gesture recognizer.
 
 ## Parameters
 
-- `gestureRecognizer`: An instance of a subclass of the abstract base class [`UIGestureRecognizer`](uigesturerecognizer.md).
-- `event`: A [`UIEvent`](uievent.md) object from the current press or touch sequence.
+- `gestureRecognizer`: An instance of a subclass of the abstract base class [`UIGestureRecognizer`](../uigesturerecognizer.md).
+- `event`: A [`UIEvent`](../uievent.md) object from the current press or touch sequence.
 
 ## See Also
 
-- [func gestureRecognizerShouldBegin(UIGestureRecognizer) -> Bool](uigesturerecognizerdelegate/gesturerecognizershouldbegin(_:).md)
+### Regulating gesture recognition
+- [func gestureRecognizerShouldBegin(UIGestureRecognizer) -> Bool](./gesturerecognizershouldbegin%28_%29.md)
   Asks the delegate if a gesture recognizer should begin interpreting touches.
-- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UITouch) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-16fuh.md)
+- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UITouch) -> Bool](./gesturerecognizer%28_,shouldreceive%29-16fuh.md)
   Asks the delegate if a gesture recognizer should receive an object representing a touch.
-- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UIPress) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:)-73vzu.md)
+- [func gestureRecognizer(UIGestureRecognizer, shouldReceive: UIPress) -> Bool](./gesturerecognizer%28_,shouldreceive%29-73vzu.md)
   Asks the delegate if a gesture recognizer should receive an object representing a press.
 
 

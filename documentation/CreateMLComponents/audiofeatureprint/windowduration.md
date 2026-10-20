@@ -1,7 +1,8 @@
 # windowDuration
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The window duration of the extractor.
 
@@ -25,7 +26,8 @@ The window duration should be greater than or equal to 0.5 seconds and less than
 
 ## See Also
 
-- [let overlapFactor: Double](audiofeatureprint/overlapfactor.md)
+### Getting the properties
+- [let overlapFactor: Double](./overlapfactor.md)
   The overlap factor of the extractor.
 
 

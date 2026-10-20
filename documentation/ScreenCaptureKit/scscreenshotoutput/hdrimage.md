@@ -1,7 +1,8 @@
 # hdrImage
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An output property that specifies the high dynamic range version of the screenshot.
 
@@ -15,9 +16,13 @@ An output property that specifies the high dynamic range version of the screensh
 var hdrImage: CGImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) CGImageRef hdrImage;
+```
+
 #### Discussion
 
-The output [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) uses the extended sRGB color space.
+The output [`CGImage`](../../CoreGraphics/cgimage.md) uses the extended sRGB color space.
 
 
 ---

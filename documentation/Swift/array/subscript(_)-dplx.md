@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the first metric with a metric name that equals the given metric’s name.
 
@@ -17,6 +18,8 @@ Returns the first metric with a metric name that equals the given metric’s nam
 ```swift
 subscript(metric: Metric) -> Metric? { get }
 ```
+
+Available when `Element` is `Metric`.
 
 
 ---

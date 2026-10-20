@@ -1,7 +1,8 @@
 # areasOfInterest
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Common names of the area in which the place resides.
 
@@ -10,21 +11,22 @@ Common names of the area in which the place resides.
 
 ## Declaration
 
-```swift
+```
 areasOfInterest: string[] | null;
 ```
 
 #### Discussion
 
-For example, the [`areasOfInterest`](place/areasofinterest.md) for a specific location in Golden Gate Park in San Francisco, California, are `["Lindley Meadow", "Golden Gate Park"]`.
+For example, the [`areasOfInterest`](./areasofinterest.md) for a specific location in Golden Gate Park in San Francisco, California, are `["Lindley Meadow", "Golden Gate Park"]`.
 
 ## See Also
 
-- [name](place/name.md)
+### Place name and category
+- [name](./name.md)
   The name of the place.
-- [formattedAddress](place/formattedaddress.md)
+- [formattedAddress](./formattedaddress.md)
   The address of the place, formatted using its conventions of its country or region.
-- [pointOfInterestCategory](place/pointofinterestcategory.md)
+- [pointOfInterestCategory](./pointofinterestcategory.md)
   The category of the place.
 
 

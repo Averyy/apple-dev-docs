@@ -1,7 +1,8 @@
 # setDomain(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an optional domain in which the identity is to be used.
 
@@ -14,9 +15,13 @@ Sets an optional domain in which the identity is to be used.
 func setDomain(_ domainString: String!)
 ```
 
+```objc
+- (void) setDomain:(NSString *) domainString;
+```
+
 #### Discussion
 
-Call this method to associate a domain with the chosen identity. If the user chooses an identity and a domain is set, an identity preference item is created in the default keychain. Subsequent calls to  [`SecIdentitySearchCreate`](https://developer.apple.com/documentation/security/secidentitysearchcreate) and [`SecIdentitySearchCopyNext`](https://developer.apple.com/documentation/security/secidentitysearchcopynext) return the preferred identity for this domain first.
+Call this method to associate a domain with the chosen identity. If the user chooses an identity and a domain is set, an identity preference item is created in the default keychain. Subsequent calls to  [`SecIdentitySearchCreate`](../../Security/secidentitysearchcreate.md) and [`SecIdentitySearchCopyNext`](../../Security/secidentitysearchcopynext.md) return the preferred identity for this domain first.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ Call this method to associate a domain with the chosen identity. If the user cho
 
 ## See Also
 
-- [func domain() -> String!](sfchooseidentitypanel/domain.md)
+### Working with Domains
+- [func domain() -> String!](./domain%28%29.md)
   Returns the domain that will be associated with the chosen identity.
 
 

@@ -1,7 +1,8 @@
 # UserResetDevice
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a bus reset of the external drive.
 
@@ -10,21 +11,22 @@ Performs a bus reset of the external drive.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t UserResetDevice(SCSIServiceResponse *response);
 ```
 
 #### Return Value
 
-A value that indicates the result of the bus reset. [`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) indicates success. For error definitions, see [`IOKit Constants`](https://developer.apple.com/documentation/iokit/iokit_constants).
+A value that indicates the result of the bus reset. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. For error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
 ## Parameters
 
-- `response`: A pointer to a [`SCSIServiceResponse`](https://developer.apple.com/documentation/iokit/scsiserviceresponse) instance. On return, the framework populates this reference with the response from the protocol driver.
+- `response`: A pointer to a [`SCSIServiceResponse`](../../iokit/scsiserviceresponse.md) instance. On return, the framework populates this reference with the response from the protocol driver.
 
 ## See Also
 
-- [UserDetermineDeviceCharacteristics](iouserscsiperipheraldevicetype07/userdeterminedevicecharacteristics.md)
+### Managing the device
+- [UserDetermineDeviceCharacteristics](./userdeterminedevicecharacteristics.md)
   Performs enumeration-time initializations in response to a call from the framework.
 
 

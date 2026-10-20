@@ -1,7 +1,8 @@
 # init(name:address:port:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a host with the specified name, adress, and port.
 
@@ -18,6 +19,10 @@ Creates a host with the specified name, adress, and port.
 convenience init(name: String, address: String, port: Int)
 ```
 
+```objc
++ (instancetype) hostWithName:(NSString *) name address:(NSString *) address port:(NSUInteger) port;
+```
+
 ## Parameters
 
 - `name`: The host name.
@@ -26,11 +31,12 @@ convenience init(name: String, address: String, port: Int)
 
 ## See Also
 
-- [convenience init(name: String, netService: NetService)](midinetworkhost/init(name:netservice:).md)
+### Creating Network Hosts
+- [convenience init(name: String, netService: NetService)](./init%28name,netservice%29.md)
   Creates a host with the specified name and net service.
-- [convenience init(name: String, netServiceName: String, netServiceDomain: String)](midinetworkhost/init(name:netservicename:netservicedomain:).md)
+- [convenience init(name: String, netServiceName: String, netServiceDomain: String)](./init%28name,netservicename,netservicedomain%29.md)
   Creates a host with the specified name, net service name, and domain.
-- [let MIDINetworkBonjourServiceType: String](midinetworkbonjourservicetype.md)
+- [let MIDINetworkBonjourServiceType: String](../midinetworkbonjourservicetype.md)
   The Bonjour service type.
 
 

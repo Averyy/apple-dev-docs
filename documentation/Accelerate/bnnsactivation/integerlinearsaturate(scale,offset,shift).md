@@ -1,7 +1,8 @@
 # integerLinearSaturate(scale:offset:shift:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an activation function that computes an arithmetic shift, preserving sign.
 
@@ -11,8 +12,10 @@ Returns an activation function that computes an arithmetic shift, preserving sig
 - Mac Catalyst 11.0+
 - macOS 10.13+
 - tvOS 11.0+
-- visionOS ?+
+- visionOS
 - watchOS 4.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -28,9 +31,11 @@ static func integerLinearSaturate(scale: Int32 = 1, offset: Int32 = 0, shift: In
 
 ## See Also
 
-- [BNNSActivationFunctionIntegerLinearSaturate](bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturate.md)
+### Related Documentation
+- [BNNSActivationFunctionIntegerLinearSaturate](../bnnsactivationfunction/bnnsactivationfunctionintegerlinearsaturate.md)
   An activation function that returns an arithmetic shift, preserving sign.
-- [static func integerLinearSaturatePerChannel(scale: UnsafePointer<Int32>, offset: UnsafePointer<Int32>, shift: UnsafePointer<Int32>) -> BNNSActivation](bnnsactivation/integerlinearsaturateperchannel(scale:offset:shift:).md)
+### Type Methods
+- [static func integerLinearSaturatePerChannel(scale: UnsafePointer<Int32>, offset: UnsafePointer<Int32>, shift: UnsafePointer<Int32>) -> BNNSActivation](./integerlinearsaturateperchannel%28scale,offset,shift%29.md)
   Returns an activation function that computes an arithmetic shift, preserving sign for each channel.
 
 

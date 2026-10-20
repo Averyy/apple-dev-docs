@@ -1,7 +1,8 @@
 # AppSchema.JournalIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the journal domain.
 
@@ -21,33 +22,34 @@ protocol JournalIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var createAudioEntry: some AppSchemaIntent](appschema/journalintent/createaudioentry.md)
+- [var createAudioEntry: some AppSchemaIntent](./journalintent/createaudioentry.md)
   An intent schema that creates a new audio journal entry.
-- [var createEntry: some AppSchemaIntent](appschema/journalintent/createentry.md)
+- [var createEntry: some AppSchemaIntent](./journalintent/createentry.md)
   An intent schema that creates a new journal entry.
-- [var deleteEntry: some AppSchemaIntent](appschema/journalintent/deleteentry.md)
+- [var deleteEntry: some AppSchemaIntent](./journalintent/deleteentry.md)
   An intent schema that deletes the specified journal entries.
-- [var search: some AppSchemaIntent](appschema/journalintent/search.md)
+- [var search: some AppSchemaIntent](./journalintent/search.md)
   An intent schema that searches journal entries.
-- [var updateEntry: some AppSchemaIntent](appschema/journalintent/updateentry.md)
+- [var updateEntry: some AppSchemaIntent](./journalintent/updateentry.md)
   An intent schema that updates journal entry.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var createAudioEntry: some AppSchemaIntent](appschema/journalintent/createaudioentry.md)
+### Actions
+- [var createAudioEntry: some AppSchemaIntent](./journalintent/createaudioentry.md)
   An intent schema that creates a new audio journal entry.
-- [var createEntry: some AppSchemaIntent](appschema/journalintent/createentry.md)
+- [var createEntry: some AppSchemaIntent](./journalintent/createentry.md)
   An intent schema that creates a new journal entry.
-- [var deleteEntry: some AppSchemaIntent](appschema/journalintent/deleteentry.md)
+- [var deleteEntry: some AppSchemaIntent](./journalintent/deleteentry.md)
   An intent schema that deletes the specified journal entries.
-- [var updateEntry: some AppSchemaIntent](appschema/journalintent/updateentry.md)
+- [var updateEntry: some AppSchemaIntent](./journalintent/updateentry.md)
   An intent schema that updates journal entry.
 
 

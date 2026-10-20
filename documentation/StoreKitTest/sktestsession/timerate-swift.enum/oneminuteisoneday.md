@@ -1,17 +1,20 @@
 # SKTestSession.TimeRate.oneMinuteIsOneDay
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rate of time in which 1 minute in the test environment represents one day.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 15.2 (renamed: SKTestSession.TimeRate.monthlyRenewalEveryThirtyMinutes)
+- iPadOS 14.0+ - Deprecated in 15.2 (renamed: SKTestSession.TimeRate.monthlyRenewalEveryThirtyMinutes)
+- Mac Catalyst 14.0+ - Deprecated in 15.2 (renamed: SKTestSession.TimeRate.monthlyRenewalEveryThirtyMinutes)
+- macOS 11.0+ - Deprecated in 12.1 (renamed: SKTestSession.TimeRate.monthlyRenewalEveryThirtyMinutes)
+- tvOS 14.0+ - Deprecated in 15.2 (renamed: SKTestSession.TimeRate.monthlyRenewalEveryThirtyMinutes)
+- watchOS 7.0+ - Deprecated in 8.3 (renamed: SKTestSession.TimeRate.monthlyRenewalEveryThirtyMinutes)
+
+> **Deprecated**: Use [`SKTestSession.TimeRate.monthlyRenewalEveryThirtyMinutes`](./monthlyrenewaleverythirtyminutes.md) instead.
 
 ## Declaration
 
@@ -19,17 +22,22 @@ A rate of time in which 1 minute in the test environment represents one day.
 case oneMinuteIsOneDay
 ```
 
+```c
+SKTestTimeRateOneMinuteIsOneDay
+```
+
 ## See Also
 
-- [SKTestSession.TimeRate.oneHourIsOneDay](sktestsession/timerate-swift.enum/onehourisoneday.md)
+### Deprecated
+- [SKTestSession.TimeRate.oneHourIsOneDay](./onehourisoneday.md)
   A rate of time in which 1 hour in the test environment represents one day.
-- [SKTestSession.TimeRate.thirtyMinutesIsOneDay](sktestsession/timerate-swift.enum/thirtyminutesisoneday.md)
+- [SKTestSession.TimeRate.thirtyMinutesIsOneDay](./thirtyminutesisoneday.md)
   A rate of time in which 30 minutes in the test environment represents one day.
-- [SKTestSession.TimeRate.fiveMinutesIsOneDay](sktestsession/timerate-swift.enum/fiveminutesisoneday.md)
+- [SKTestSession.TimeRate.fiveMinutesIsOneDay](./fiveminutesisoneday.md)
   A rate of time in which 5 minutes in the test environment represents one day.
-- [SKTestSession.TimeRate.thirtySecondsIsOneDay](sktestsession/timerate-swift.enum/thirtysecondsisoneday.md)
+- [SKTestSession.TimeRate.thirtySecondsIsOneDay](./thirtysecondsisoneday.md)
   A rate of time in which 30 seconds in the test environment represents one day.
-- [SKTestSession.TimeRate.oneSecondIsOneDay](sktestsession/timerate-swift.enum/onesecondisoneday.md)
+- [SKTestSession.TimeRate.oneSecondIsOneDay](./onesecondisoneday.md)
   A rate of time in which 1 second in the test environment represents one day.
 
 

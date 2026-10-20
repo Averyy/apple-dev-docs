@@ -1,7 +1,8 @@
 # WorkoutScheduler.AuthorizationState.restricted
 
 **Framework**: WorkoutKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system restricted your app from scheduling workouts.
 
@@ -20,11 +21,12 @@ case restricted
 
 ## See Also
 
-- [WorkoutScheduler.AuthorizationState.authorized](workoutscheduler/authorizationstate-swift.enum/authorized.md)
+### Determining the authorization status
+- [WorkoutScheduler.AuthorizationState.authorized](./authorized.md)
   The user authorized your app to schedule workouts.
-- [WorkoutScheduler.AuthorizationState.denied](workoutscheduler/authorizationstate-swift.enum/denied.md)
+- [WorkoutScheduler.AuthorizationState.denied](./denied.md)
   The user denied authorization for scheduling workouts.
-- [WorkoutScheduler.AuthorizationState.notDetermined](workoutscheduler/authorizationstate-swift.enum/notdetermined.md)
+- [WorkoutScheduler.AuthorizationState.notDetermined](./notdetermined.md)
   Your app hasn’t yet requested authorization to schedule workouts.
 
 

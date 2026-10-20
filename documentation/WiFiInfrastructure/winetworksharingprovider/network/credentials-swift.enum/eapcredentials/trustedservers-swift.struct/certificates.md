@@ -1,7 +1,8 @@
 # certificates
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of trusted server certificates.
 

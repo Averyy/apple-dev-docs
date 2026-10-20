@@ -1,15 +1,20 @@
 # DOM_UNSPECIFIED_EVENT_TYPE_ERR
 
 **Framework**: WebKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var DOM_UNSPECIFIED_EVENT_TYPE_ERR: DOMEventExceptionCode { get }
+```
+
+```c
+DOM_UNSPECIFIED_EVENT_TYPE_ERR
 ```
 
 

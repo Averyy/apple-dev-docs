@@ -1,7 +1,8 @@
 # isOnHold
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the call is on hold.
 
@@ -18,19 +19,24 @@ A Boolean value that indicates whether the call is on hold.
 var isOnHold: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly, getter=isOnHold) BOOL onHold;
+```
+
 #### Discussion
 
 When a caller places the call on hold, callers are unable to communicate with one another until the holding caller removes the call from hold.
 
 ## See Also
 
-- [var uuid: UUID](cxcall/uuid.md)
+### Accessing Call Attributes
+- [var uuid: UUID](./uuid.md)
   The unique identifier for the call.
-- [var isOutgoing: Bool](cxcall/isoutgoing.md)
+- [var isOutgoing: Bool](./isoutgoing.md)
   A Boolean value that indicates whether the call is outgoing.
-- [var hasConnected: Bool](cxcall/hasconnected.md)
+- [var hasConnected: Bool](./hasconnected.md)
   A Boolean value that indicates whether the call has connected.
-- [var hasEnded: Bool](cxcall/hasended.md)
+- [var hasEnded: Bool](./hasended.md)
   A Boolean value that indicates whether the call has ended.
 
 

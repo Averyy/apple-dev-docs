@@ -1,7 +1,8 @@
 # isHighlighted
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the menu item should be drawn highlighted.
 
@@ -12,6 +13,10 @@ A Boolean value that indicates whether the menu item should be drawn highlighted
 
 ```swift
 var isHighlighted: Bool { get }
+```
+
+```objc
+@property (readonly, getter=isHighlighted) BOOL highlighted;
 ```
 
 

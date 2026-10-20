@@ -1,7 +1,8 @@
 # CMSDecoderSetDetachedContent(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Specifies the message’s detached content, if any.
 
@@ -14,9 +15,13 @@ Specifies the message’s detached content, if any.
 func CMSDecoderSetDetachedContent(_ cmsDecoder: CMSDecoder, _ detachedContent: CFData) -> OSStatus
 ```
 
+```c
+OSStatus CMSDecoderSetDetachedContent(CMSDecoderRef cmsDecoder, CFDataRef detachedContent);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
@@ -33,11 +38,12 @@ You can call this function either before or after decoding the message (by calli
 
 ## See Also
 
-- [func CMSEncoderSetHasDetachedContent(CMSEncoder, Bool) -> OSStatus](cmsencodersethasdetachedcontent(_:_:).md)
+### Related Documentation
+- [func CMSEncoderSetHasDetachedContent(CMSEncoder, Bool) -> OSStatus](./cmsencodersethasdetachedcontent%28_,_%29.md)
   Specifies whether the signed data is to be separate from the message.
-- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](cmsdecodercreate(_:).md)
+- [func CMSDecoderCreate(UnsafeMutablePointer<CMSDecoder?>) -> OSStatus](./cmsdecodercreate%28_%29.md)
   Creates a CMSDecoder reference.
-- [func CMSDecoderCopySignerStatus(CMSDecoder, Int, CFTypeRef, Bool, UnsafeMutablePointer<CMSSignerStatus>?, UnsafeMutablePointer<SecTrust?>?, UnsafeMutablePointer<OSStatus>?) -> OSStatus](cmsdecodercopysignerstatus(_:_:_:_:_:_:_:).md)
+- [func CMSDecoderCopySignerStatus(CMSDecoder, Int, CFTypeRef, Bool, UnsafeMutablePointer<CMSSignerStatus>?, UnsafeMutablePointer<SecTrust?>?, UnsafeMutablePointer<OSStatus>?) -> OSStatus](./cmsdecodercopysignerstatus%28_,_,_,_,_,_,_%29.md)
   Obtains the status of a CMS message’s signature.
 
 

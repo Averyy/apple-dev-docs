@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: System  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Compares the meaningful file-metadata fields of two `Stat` values.
 

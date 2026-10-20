@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The base version of the model.
 
@@ -20,7 +21,7 @@ static var `default`: SystemLanguageModel { get }
 
 ## Mentions
 
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
+- [Generating content and performing tasks with Foundation Models](../generating-content-and-performing-tasks-with-foundation-models.md)
 
 #### Discussion
 

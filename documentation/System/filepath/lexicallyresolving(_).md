@@ -1,7 +1,8 @@
 # lexicallyResolving(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create a new `FilePath` by resolving `subpath` relative to `self`, ensuring that the result is lexically contained within `self`.
 

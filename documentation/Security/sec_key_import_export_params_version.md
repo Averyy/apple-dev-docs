@@ -1,7 +1,8 @@
 # SEC_KEY_IMPORT_EXPORT_PARAMS_VERSION
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The import/export parameter structure version.
 
@@ -14,9 +15,13 @@ The import/export parameter structure version.
 var SEC_KEY_IMPORT_EXPORT_PARAMS_VERSION: Int32 { get }
 ```
 
+```c
+#define SEC_KEY_IMPORT_EXPORT_PARAMS_VERSION
+```
+
 #### Discussion
 
-Use this constant to set the [`version`](seckeyimportexportparameters/version.md) property of an instance of the [`SecItemImportExportKeyParameters`](secitemimportexportkeyparameters.md) structure.
+Use this constant to set the [`version`](./seckeyimportexportparameters/version.md) property of an instance of the [`SecItemImportExportKeyParameters`](./secitemimportexportkeyparameters.md) structure.
 
 
 ---

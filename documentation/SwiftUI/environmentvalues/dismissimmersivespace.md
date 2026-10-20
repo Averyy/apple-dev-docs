@@ -1,7 +1,8 @@
 # dismissImmersiveSpace
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An immersive space dismissal action stored in a view’s environment.
 
@@ -17,9 +18,9 @@ var dismissImmersiveSpace: DismissImmersiveSpaceAction { get }
 
 #### Discussion
 
-Use this environment value to get a [`DismissImmersiveSpaceAction`](dismissimmersivespaceaction.md) instance for a given [`Environment`](environment.md). Then call the instance to dismiss a space. You call the instance directly because it defines a [`callAsFunction()`](dismissimmersivespaceaction/callasfunction().md) method that Swift calls when you call the instance.
+Use this environment value to get a [`DismissImmersiveSpaceAction`](../dismissimmersivespaceaction.md) instance for a given [`Environment`](../environment.md). Then call the instance to dismiss a space. You call the instance directly because it defines a [`callAsFunction()`](../dismissimmersivespaceaction/callasfunction%28%29.md) method that Swift calls when you call the instance.
 
-On macOS, this may be used to dismiss a remote immersive space declared with [`RemoteImmersiveSpace`](remoteimmersivespace.md).
+On macOS, this may be used to dismiss a remote immersive space declared with [`RemoteImmersiveSpace`](../remoteimmersivespace.md).
 
 For example, you can define a button that dismisses an immersive space:
 
@@ -49,11 +50,12 @@ struct DismissImmersiveSpaceButton: View {
 }
 ```
 
-The asynchronous call returns after the system finishes dismissing the space. Unlike the call to [`openImmersiveSpace`](environmentvalues/openimmersivespace.md) that you use to open the space — which requires an identifier, a value, or both to specify which space to open — the dismiss action requires no parameters because there can be only one immersive space open at a time. The call closes the space that is currently open, if any.
+The asynchronous call returns after the system finishes dismissing the space. Unlike the call to [`openImmersiveSpace`](./openimmersivespace.md) that you use to open the space — which requires an identifier, a value, or both to specify which space to open — the dismiss action requires no parameters because there can be only one immersive space open at a time. The call closes the space that is currently open, if any.
 
 ## See Also
 
-- [struct DismissImmersiveSpaceAction](dismissimmersivespaceaction.md)
+### Closing the immersive space
+- [struct DismissImmersiveSpaceAction](../dismissimmersivespaceaction.md)
   An action that dismisses an immersive space.
 
 

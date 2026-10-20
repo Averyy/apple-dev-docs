@@ -1,7 +1,8 @@
 # updateName(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the name of the service to the specified string.
 
@@ -14,19 +15,30 @@ Updates the name of the service to the specified string.
 ## Declaration
 
 ```swift
+func updateName(_ name: String, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func updateName(_ name: String) async throws
+```
+
+```objc
+- (void) updateName:(NSString *) name completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `name`: The new name. Must not match an existing name in the home.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var name: String](hmservice/name.md)
+### Identifying the service
+- [var name: String](./name.md)
   The user specified name of the service.
-- [var uniqueIdentifier: UUID](hmservice/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for the service.
 
 

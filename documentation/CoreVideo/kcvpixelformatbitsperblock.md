@@ -1,7 +1,8 @@
 # kCVPixelFormatBitsPerBlock
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 4.0+
@@ -18,33 +19,38 @@
 let kCVPixelFormatBitsPerBlock: CFString
 ```
 
+```c
+extern CFStringRef const kCVPixelFormatBitsPerBlock;
+```
+
 #### Discussion
 
 The number of bits per block. For simple pixel formats, this value is the same as the traditional bits-per-pixel value. This key is mandatory in pixel format descriptions. See the description for `kCVPixelFormatBlockWidth` for examples of bits-per-block values.
 
 ## See Also
 
-- [let kCVPixelFormatComponentRange: CFString](kcvpixelformatcomponentrange.md)
-- [let kCVPixelFormatComponentRange_FullRange: CFString](kcvpixelformatcomponentrange_fullrange.md)
-- [let kCVPixelFormatComponentRange_VideoRange: CFString](kcvpixelformatcomponentrange_videorange.md)
-- [let kCVPixelFormatComponentRange_WideRange: CFString](kcvpixelformatcomponentrange_widerange.md)
-- [let kCVPixelFormatContainsRGB: CFString](kcvpixelformatcontainsrgb.md)
-- [let kCVPixelFormatContainsYCbCr: CFString](kcvpixelformatcontainsycbcr.md)
-- [let kCVPixelFormatName: CFString](kcvpixelformatname.md)
+### Constants
+- [let kCVPixelFormatComponentRange: CFString](./kcvpixelformatcomponentrange.md)
+- [let kCVPixelFormatComponentRange_FullRange: CFString](./kcvpixelformatcomponentrange_fullrange.md)
+- [let kCVPixelFormatComponentRange_VideoRange: CFString](./kcvpixelformatcomponentrange_videorange.md)
+- [let kCVPixelFormatComponentRange_WideRange: CFString](./kcvpixelformatcomponentrange_widerange.md)
+- [let kCVPixelFormatContainsRGB: CFString](./kcvpixelformatcontainsrgb.md)
+- [let kCVPixelFormatContainsYCbCr: CFString](./kcvpixelformatcontainsycbcr.md)
+- [let kCVPixelFormatName: CFString](./kcvpixelformatname.md)
   The name of the pixel format (type `CFString`). This should be the same as the codec name you would use in QuickTime.
-- [let kCVPixelFormatConstant: CFString](kcvpixelformatconstant.md)
+- [let kCVPixelFormatConstant: CFString](./kcvpixelformatconstant.md)
   The pixel format constant for QuickTime.
-- [let kCVPixelFormatCodecType: CFString](kcvpixelformatcodectype.md)
+- [let kCVPixelFormatCodecType: CFString](./kcvpixelformatcodectype.md)
   The codec type (type `CFString`). For example, `'2vuy'` or `k422YpCbCr8CodecType`.
-- [let kCVPixelFormatFourCC: CFString](kcvpixelformatfourcc.md)
+- [let kCVPixelFormatFourCC: CFString](./kcvpixelformatfourcc.md)
   The Microsoft FourCC equivalent code for this pixel format (type `CFString`).
-- [let kCVPixelFormatContainsAlpha: CFString](kcvpixelformatcontainsalpha.md)
-  A Boolean value where [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) indicates that the format contains alpha and some images may be considered transparent; [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse) indicates that there is no alpha and images are always opaque.
-- [let kCVPixelFormatPlanes: CFString](kcvpixelformatplanes.md)
-- [let kCVPixelFormatBlockWidth: CFString](kcvpixelformatblockwidth.md)
-- [let kCVPixelFormatBlockHeight: CFString](kcvpixelformatblockheight.md)
+- [let kCVPixelFormatContainsAlpha: CFString](./kcvpixelformatcontainsalpha.md)
+  A Boolean value where [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) indicates that the format contains alpha and some images may be considered transparent; [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) indicates that there is no alpha and images are always opaque.
+- [let kCVPixelFormatPlanes: CFString](./kcvpixelformatplanes.md)
+- [let kCVPixelFormatBlockWidth: CFString](./kcvpixelformatblockwidth.md)
+- [let kCVPixelFormatBlockHeight: CFString](./kcvpixelformatblockheight.md)
   The height, in pixels, of the smallest byte-addressable group of pixels (type `CFNumber`). Assumed to be 1 if this key is not present.
-- [let kCVPixelFormatBlockHorizontalAlignment: CFString](kcvpixelformatblockhorizontalalignment.md)
+- [let kCVPixelFormatBlockHorizontalAlignment: CFString](./kcvpixelformatblockhorizontalalignment.md)
   The horizontal alignment requirements of this format (type `CFNumber`). For example,the alignment for v210 would be 8 here for the horizontal case to match the standard v210 row alignment value of 48. Assumed to be 1 if this key is not present.
 
 

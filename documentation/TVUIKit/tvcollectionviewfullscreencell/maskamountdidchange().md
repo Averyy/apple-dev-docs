@@ -1,7 +1,8 @@
 # maskAmountDidChange()
 
 **Framework**: TVUIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the cell when its mask amount changes.
 
@@ -14,11 +15,16 @@ Notifies the cell when its mask amount changes.
 func maskAmountDidChange()
 ```
 
+```objc
+- (void) maskAmountDidChange;
+```
+
 #### Discussion
 
 ## See Also
 
-- [func maskAmountWillChange(CGFloat)](tvcollectionviewfullscreencell/maskamountwillchange(_:).md)
+### Managing Cell Mask
+- [func maskAmountWillChange(CGFloat)](./maskamountwillchange%28_%29.md)
   Notifies the cell when its mask amount is about to change.
 
 

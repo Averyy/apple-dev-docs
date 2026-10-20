@@ -1,17 +1,24 @@
 # CVOpenGLTextureGetName(_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the texture target name of a CoreVideo OpenGL texture.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
+
+> **Deprecated**: OpenGL/OpenGLES is no longer supported. Use Metal APIs instead. (Define COREVIDEO_SILENCE_GL_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func CVOpenGLTextureGetName(_ image: CVOpenGLTexture) -> GLuint
+```
+
+```c
+extern GLuint CVOpenGLTextureGetName(CVOpenGLTextureRef image);
 ```
 
 #### Return Value
@@ -20,7 +27,7 @@ The target name of the texture.
 
 #### Discussion
 
-See the [`OpenGL specification`](https://developer.apple.comhttp://www.opengl.org/documentation/) for more information about texture targets.
+See the [OpenGL specification](http://www.opengl.org/documentation/) for more information about texture targets.
 
 ## Parameters
 
@@ -28,13 +35,14 @@ See the [`OpenGL specification`](https://developer.apple.comhttp://www.opengl.or
 
 ## See Also
 
-- [func CVOpenGLTextureGetTarget(CVOpenGLTexture) -> GLenum](cvopengltexturegettarget(_:).md)
+### Inspecting Textures
+- [func CVOpenGLTextureGetTarget(CVOpenGLTexture) -> GLenum](./cvopengltexturegettarget%28_%29.md)
   Returns the texture target (for example, `GL_TEXTURE_2D`) of an OpenGL texture.
-- [func CVOpenGLTextureGetCleanTexCoords(CVOpenGLTexture, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>)](cvopengltexturegetcleantexcoords(_:_:_:_:_:).md)
+- [func CVOpenGLTextureGetCleanTexCoords(CVOpenGLTexture, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>, UnsafeMutablePointer<GLfloat>)](./cvopengltexturegetcleantexcoords%28_,_,_,_,_%29.md)
   Returns the texture coordinates for the part of the image that should be displayed.
-- [func CVOpenGLTextureIsFlipped(CVOpenGLTexture) -> Bool](cvopengltextureisflipped(_:).md)
+- [func CVOpenGLTextureIsFlipped(CVOpenGLTexture) -> Bool](./cvopengltextureisflipped%28_%29.md)
   Determines whether an OpenGL texture is flipped vertically.
-- [func CVOpenGLTextureGetTypeID() -> CFTypeID](cvopengltexturegettypeid().md)
+- [func CVOpenGLTextureGetTypeID() -> CFTypeID](./cvopengltexturegettypeid%28%29.md)
   Obtains the Core Foundation ID for the Core Video OpenGL texture type.
 
 

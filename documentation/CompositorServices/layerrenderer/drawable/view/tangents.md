@@ -1,17 +1,24 @@
 # tangents
 
 **Framework**: Compositor Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tangent values for the angles you use to determine the planes of the viewing frustum.
 
 **Availability**:
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use cp_drawable_compute_projection instead
 
 ## Declaration
 
 ```swift
 var tangents: simd_float4 { get }
+```
+
+```c
+simd_float4 cp_view_get_tangents(cp_view_t view);
 ```
 
 #### Discussion
@@ -24,7 +31,8 @@ This function returns the tangent values you use to build the perspective projec
 
 ## See Also
 
-- [var transform: simd_float4x4](layerrenderer/drawable/view/transform.md)
+### Getting the transformations
+- [var transform: simd_float4x4](./transform.md)
   The transformation matrix that converts between the device’s coordinate space to the position of the view in that space.
 
 

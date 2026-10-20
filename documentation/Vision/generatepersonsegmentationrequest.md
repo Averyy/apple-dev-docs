@@ -1,7 +1,8 @@
 # GeneratePersonSegmentationRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that produces a matte image for a person it finds in the input image.
 
@@ -22,69 +23,70 @@ final class GeneratePersonSegmentationRequest
 
 #### Overview
 
-Perform this request to detect and generate an image mask for a person in an image. The request returns the resulting image mask in an instance of [`PixelBufferObservation`](pixelbufferobservation.md).
+Perform this request to detect and generate an image mask for a person in an image. The request returns the resulting image mask in an instance of [`PixelBufferObservation`](./pixelbufferobservation.md).
 
 ## Topics
 
 ### Creating a request
-- [init(GeneratePersonSegmentationRequest.Revision?, frameAnalysisSpacing: CMTime?)](generatepersonsegmentationrequest/init(_:frameanalysisspacing:).md)
+- [init(GeneratePersonSegmentationRequest.Revision?, frameAnalysisSpacing: CMTime?)](./generatepersonsegmentationrequest/init%28_,frameanalysisspacing%29.md)
   Creates a person-segmentation request.
 ### Performing a request
-- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-80bya.md)
+- [func perform(on: URL, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-80bya.md)
   Performs the request on an image URL and produces observations.
-- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3f3f1.md)
+- [func perform(on: Data, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3f3f1.md)
   Performs the request on image data and produces observations.
-- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-qxxx.md)
+- [func perform(on: CGImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-qxxx.md)
   Performs the request on a Core Graphics image and produces observations.
-- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-xspx.md)
+- [func perform(on: CVPixelBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-xspx.md)
   Performs the request on a pixel buffer and produces observations.
-- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-3hddl.md)
+- [func perform(on: CMSampleBuffer, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-3hddl.md)
   Performs the request on a Core Media buffer and produces observations.
-- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](imageprocessingrequest/perform(on:orientation:)-85ex1.md)
+- [func perform(on: CIImage, orientation: CGImagePropertyOrientation?) async throws -> Self.Result](./imageprocessingrequest/perform%28on,orientation%29-85ex1.md)
   Performs the request on a Core Image image and produces observations.
 ### Understanding the result
-- [struct PixelBufferObservation](pixelbufferobservation.md)
+- [struct PixelBufferObservation](./pixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
 ### Configuring a request
-- [var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.property.md)
+- [var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel](./generatepersonsegmentationrequest/qualitylevel-swift.property.md)
   A value that indicates how the request balances accuracy and performance.
-- [GeneratePersonSegmentationRequest.QualityLevel](generatepersonsegmentationrequest/qualitylevel-swift.enum.md)
+- [GeneratePersonSegmentationRequest.QualityLevel](./generatepersonsegmentationrequest/qualitylevel-swift.enum.md)
   Constants that define the levels of quality for a person-segmentation request.
-- [var outputPixelFormatType: OSType](generatepersonsegmentationrequest/outputpixelformattype.md)
+- [var outputPixelFormatType: OSType](./generatepersonsegmentationrequest/outputpixelformattype.md)
   The desired pixel format of the observation.
-- [var supportedOutputPixelFormats: [OSType]](generatepersonsegmentationrequest/supportedoutputpixelformats.md)
+- [var supportedOutputPixelFormats: [OSType]](./generatepersonsegmentationrequest/supportedoutputpixelformats.md)
   The collection of supported pixel format types.
 ### Getting the revision
-- [let revision: GeneratePersonSegmentationRequest.Revision](generatepersonsegmentationrequest/revision-swift.property.md)
+- [let revision: GeneratePersonSegmentationRequest.Revision](./generatepersonsegmentationrequest/revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [static let supportedRevisions: [GeneratePersonSegmentationRequest.Revision]](generatepersonsegmentationrequest/supportedrevisions.md)
+- [static let supportedRevisions: [GeneratePersonSegmentationRequest.Revision]](./generatepersonsegmentationrequest/supportedrevisions.md)
   The collection of revisions the request supports.
-- [GeneratePersonSegmentationRequest.Revision](generatepersonsegmentationrequest/revision-swift.enum.md)
+- [GeneratePersonSegmentationRequest.Revision](./generatepersonsegmentationrequest/revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [ImageProcessingRequest](imageprocessingrequest.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [StatefulRequest](statefulrequest.md)
-- [VisionRequest](visionrequest.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [ImageProcessingRequest](./imageprocessingrequest.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [StatefulRequest](./statefulrequest.md)
+- [VisionRequest](./visionrequest.md)
 
 ## See Also
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+### Image segmentation and subject lifting
+- [Isolating an object from a tap, box, or scribble](./segmenting-objects-with-iterative-refinement.md)
   Generate and refine a mask that isolates an object in an image based on a person’s selection.
-- [Segmenting objects using taps, scribbles or rectangles](segmenting-objects-using-taps-scribbles-or-rectangles.md)
+- [Segmenting objects using taps, scribbles or rectangles](./segmenting-objects-using-taps-scribbles-or-rectangles.md)
   Select objects or regions in a photo using taps, scribbles, or rectangle selection, and generate a segmentation mask using the iterative segmentation API.
-- [struct GenerateForegroundInstanceMaskRequest](generateforegroundinstancemaskrequest.md)
+- [struct GenerateForegroundInstanceMaskRequest](./generateforegroundinstancemaskrequest.md)
   A request that generates an instance mask of noticeable objects to separate from the background.
-- [struct GeneratePersonInstanceMaskRequest](generatepersoninstancemaskrequest.md)
+- [struct GeneratePersonInstanceMaskRequest](./generatepersoninstancemaskrequest.md)
   A request that produces a mask of individual people it finds in the input image.
-- [class GenerateIterativeSegmentationRequest](generateiterativesegmentationrequest.md)
+- [class GenerateIterativeSegmentationRequest](./generateiterativesegmentationrequest.md)
   A request that generates a segmentation mask from points, a rectangle, or a scribble.
 
 

@@ -1,7 +1,8 @@
 # SystemPackageProvider.yumItem(_:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Packages installable by the Yellowdog Updated, Modified (YUM) package manager.
 

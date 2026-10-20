@@ -1,7 +1,8 @@
 # allServices
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A dictionary of all subscribable services declared by your app, indexed by service name.
 
@@ -18,7 +19,7 @@ static var allServices: [WASubscribableService.ID : WASubscribableService] { get
 
 ## Mentions
 
-- [Adopting Wi-Fi Aware](adopting-wi-fi-aware.md)
+- [Adopting Wi-Fi Aware](../adopting-wi-fi-aware.md)
 
 #### Discussion
 

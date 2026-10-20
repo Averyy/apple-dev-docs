@@ -1,7 +1,8 @@
 # reloadControls(ofKind:)
 
 **Framework**: WidgetKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the templates for all controls of a particular kind.
 

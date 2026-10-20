@@ -1,17 +1,18 @@
 # EKAlarmProximity.enter
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The alarm is set to fire when entering a region.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ The alarm is set to fire when entering a region.
 case enter
 ```
 
+```c
+EKAlarmProximityEnter
+```
+
 ## See Also
 
-- [EKAlarmProximity.none](ekalarmproximity/none.md)
+### Constants
+- [EKAlarmProximity.none](./none.md)
   The alarm has no proximity trigger.
-- [EKAlarmProximity.leave](ekalarmproximity/leave.md)
+- [EKAlarmProximity.leave](./leave.md)
   The alarm is set to fire when leaving a region.
 
 

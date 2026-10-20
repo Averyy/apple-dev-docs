@@ -1,7 +1,8 @@
 # LoginWindowScripts
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures scripts to run at login and logout.
 
@@ -10,7 +11,7 @@ The payload that configures scripts to run at login and logout.
 
 ## Declaration
 
-```swift
+```
 object LoginWindowScripts
 ```
 
@@ -22,7 +23,7 @@ The MCX login and logout managed-scripts payload contains information about exec
 
 `Loginwindow` uses the `LoginHook` and `LogoutHook` string keys in `/var/root/Library/Preferences/com.apple.loginwindow.plist` to indicate a path to the executable script files, which run during user login and logout. The system passes the current user name as an argument to the file.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ The MCX login and logout managed-scripts payload contains information about exec
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -84,7 +85,7 @@ The MCX login and logout managed-scripts payload contains information about exec
 ## Topics
 
 ### Objects
-- [object LoginWindowScripts.ScriptsItems](loginwindowscripts/scriptsitems.md)
+- [object LoginWindowScripts.ScriptsItems](./loginwindowscripts/scriptsitems.md)
   A dictionary of login scripts.
 
 ## Properties
@@ -92,17 +93,22 @@ The MCX login and logout managed-scripts payload contains information about exec
 - `loginscripts` ([LoginWindowScripts.ScriptsItems]): An array of one or more dictionaries of scripts to run at user login time.
 - `logoutscripts` ([LoginWindowScripts.ScriptsItems]): An array of one or more dictionaries of scripts to run at user logout time.
 - `skipLoginHook` (boolean): If `true`, the system doesn’t execute the login scripts during login.
+
+  **Default**: `false`
 - `skipLogoutHook` (boolean): If `true`, the system doesn’t execute the logout scripts during logout.
+
+  **Default**: `false`
 
 ## See Also
 
-- [object LoginItemsManagedItems](loginitemsmanageditems.md)
+### Login
+- [object LoginItemsManagedItems](./loginitemsmanageditems.md)
   The payload that configures a device’s login items.
-- [object LoginWindowLoginItems](loginwindowloginitems.md)
+- [object LoginWindowLoginItems](./loginwindowloginitems.md)
   The payload that configures login behavior.
-- [object LoginWindow](loginwindow.md)
+- [object LoginWindow](./loginwindow.md)
   The payload that configures Login Window behavior.
-- [object ServiceManagementManagedLoginItems](servicemanagementmanagedloginitems.md)
+- [object ServiceManagementManagedLoginItems](./servicemanagementmanagedloginitems.md)
   This payload that configures managed login items, which auto-enables and auto-allows matched items.
 
 

@@ -1,7 +1,8 @@
 # kSecPolicyAppleTimeStamping
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Policy that causes evaluation of the validity of the time stamp on a signature. This can be used to allow verification that a certificate was valid at the time that something was signed with that certificate even if the certificate is no longer valid.
 
@@ -18,6 +19,10 @@ Policy that causes evaluation of the validity of the time stamp on a signature. 
 
 ```swift
 let kSecPolicyAppleTimeStamping: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyAppleTimeStamping;
 ```
 
 

@@ -1,16 +1,21 @@
 # CGMouseButton.right
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 case right
+```
+
+```c
+kCGMouseButtonRight
 ```
 
 #### Discussion
@@ -19,8 +24,9 @@ Specifies the right mouse button on a two-button or three-button mouse.
 
 ## See Also
 
-- [CGMouseButton.left](cgmousebutton/left.md)
-- [CGMouseButton.center](cgmousebutton/center.md)
+### Constants
+- [CGMouseButton.left](./left.md)
+- [CGMouseButton.center](./center.md)
 
 
 ---

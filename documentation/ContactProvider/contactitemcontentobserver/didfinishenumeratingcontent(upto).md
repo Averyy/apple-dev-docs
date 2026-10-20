@@ -2,6 +2,7 @@
 
 **Framework**: ContactProvider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Finishes the content enumeration to the observer.
@@ -26,11 +27,12 @@ Call this when there are no more items to enumerate. Any future item enumeration
 
 ## See Also
 
-- [func didFinishEnumeratingPage(upTo: ContactItemPage)](contactitemcontentobserver/didfinishenumeratingpage(upto:).md)
+### Ending enumeration
+- [func didFinishEnumeratingPage(upTo: ContactItemPage)](./didfinishenumeratingpage%28upto%29.md)
   Marks a page of items as completed.
-- [struct ContactItemPage](contactitempage.md)
+- [struct ContactItemPage](../contactitempage.md)
   A fixed offset into enumerating all contact items.
-- [func didFinishEnumeratingContentWithError(any Error)](contactitemcontentobserver/didfinishenumeratingcontentwitherror(_:).md)
+- [func didFinishEnumeratingContentWithError(any Error)](./didfinishenumeratingcontentwitherror%28_%29.md)
   Finishes the content enumeration with an error, indicating failure, to the observer.
 
 

@@ -1,7 +1,8 @@
 # MKMapSnapshotter.Options
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The options the snapshotter initializer uses to create a snapshotter to capture map-based imagery.
 
@@ -20,58 +21,63 @@ The options the snapshotter initializer uses to create a snapshotter to capture 
 class Options
 ```
 
+```objc
+@interface MKMapSnapshotOptions : NSObject
+```
+
 #### Overview
 
-After creating and configuring an instance of this class, you pass that instance to an [`MKMapSnapshotter`](mkmapsnapshotter.md) object. The snapshotter uses the configuration options to determine which portion of the map to capture, the viewing angle to use for the camera, and the map’s overall appearance.
+After creating and configuring an instance of this class, you pass that instance to an [`MKMapSnapshotter`](../mkmapsnapshotter.md) object. The snapshotter uses the configuration options to determine which portion of the map to capture, the viewing angle to use for the camera, and the map’s overall appearance.
 
-In macOS 10.14 and later, you can apply a light or dark appearance to your map snapshots by modifying the [`appearance`](mkmapsnapshotter/options/appearance.md) property of your snapshot options. Even if you specify a custom appearance, users can use the Maps app to force all maps to adopt a light appearance.
+In macOS 10.14 and later, you can apply a light or dark appearance to your map snapshots by modifying the [`appearance`](./options/appearance.md) property of your snapshot options. Even if you specify a custom appearance, users can use the Maps app to force all maps to adopt a light appearance.
 
 ## Topics
 
 ### Configuring the snapshot region
-- [var region: MKCoordinateRegion](mkmapsnapshotter/options/region.md)
+- [var region: MKCoordinateRegion](./options/region.md)
   The area of the map that you want to capture.
-- [var mapRect: MKMapRect](mkmapsnapshotter/options/maprect.md)
+- [var mapRect: MKMapRect](./options/maprect.md)
   The map rectangle that you want to capture.
-- [var camera: MKMapCamera](mkmapsnapshotter/options/camera.md)
+- [var camera: MKMapCamera](./options/camera.md)
   The camera to use when taking the map snapshot.
 ### Configuring the map data
-- [var preferredConfiguration: MKMapConfiguration](mkmapsnapshotter/options/preferredconfiguration.md)
+- [var preferredConfiguration: MKMapConfiguration](./options/preferredconfiguration.md)
   The map configuration style to use for snapshots.
-- [var mapType: MKMapType](mkmapsnapshotter/options/maptype.md)
+- [var mapType: MKMapType](./options/maptype.md)
   The map’s visual style.
-- [var showsBuildings: Bool](mkmapsnapshotter/options/showsbuildings.md)
+- [var showsBuildings: Bool](./options/showsbuildings.md)
   A Boolean that indicates whether the map displays extruded building information.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mkmapsnapshotter/options/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./options/pointofinterestfilter.md)
   The filter to use for determining the points of interest that appear in the snapshot.
-- [var showsPointsOfInterest: Bool](mkmapsnapshotter/options/showspointsofinterest.md)
+- [var showsPointsOfInterest: Bool](./options/showspointsofinterest.md)
   A Boolean value that indicates whether the map displays point-of-interest information.
 ### Configuring the image output
-- [var traitCollection: UITraitCollection](mkmapsnapshotter/options/traitcollection.md)
+- [var traitCollection: UITraitCollection](./options/traitcollection.md)
   Traits that determine the appearance of the map snapshot.
-- [var size: CGSize](mkmapsnapshotter/options/size.md)
+- [var size: CGSize](./options/size.md)
   The size of the image that you want to create.
-- [var appearance: NSAppearance?](mkmapsnapshotter/options/appearance.md)
+- [var appearance: NSAppearance?](./options/appearance.md)
   The visual style (light or dark) to apply to the map when rendering the snapshot image.
-- [var scale: CGFloat](mkmapsnapshotter/options/scale.md)
+- [var scale: CGFloat](./options/scale.md)
   The scale factor to use when creating the image.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [init(options: MKMapSnapshotter.Options)](mkmapsnapshotter/init(options:).md)
+### Creating a snapshotter object
+- [init(options: MKMapSnapshotter.Options)](./init%28options%29.md)
   Creates and returns a snapshotter object based on the specified options.
 
 

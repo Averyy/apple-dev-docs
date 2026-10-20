@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction of the packet.
 
@@ -14,12 +15,17 @@ The direction of the packet.
 var direction: NETrafficDirection { get }
 ```
 
+```objc
+@property (readonly) NETrafficDirection direction;
+```
+
 ## See Also
 
-- [var data: Data](nepacket/data.md)
-- [var metadata: NEFlowMetaData?](nepacket/metadata.md)
-- [var protocolFamily: sa_family_t](nepacket/protocolfamily.md)
-- [enum NETrafficDirection](netrafficdirection.md)
+### Accessing packet properties
+- [var data: Data](./data.md)
+- [var metadata: NEFlowMetaData?](./metadata.md)
+- [var protocolFamily: sa_family_t](./protocolfamily.md)
+- [enum NETrafficDirection](../netrafficdirection.md)
   A type to represent the direction of network traffic.
 
 

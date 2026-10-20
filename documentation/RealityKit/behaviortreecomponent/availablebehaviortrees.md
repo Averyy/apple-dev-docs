@@ -1,7 +1,8 @@
 # availableBehaviorTrees
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All the behavior trees that this component can access.
 
@@ -21,7 +22,8 @@ var availableBehaviorTrees: [String : BehaviorTreeResource] { get set }
 
 ## See Also
 
-- [var behaviorTree: BehaviorTreeResource?](behaviortreecomponent/behaviortree.md)
+### Accessing behavior trees
+- [var behaviorTree: BehaviorTreeResource?](./behaviortree.md)
   Accesses the current behavior tree. Note that setting the behavior tree to a tree not in `availableBehaviorTrees` will add a uniquely-named entry for the tree in `availableBehaviorTrees`.
 
 

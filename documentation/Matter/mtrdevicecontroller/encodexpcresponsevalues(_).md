@@ -1,7 +1,8 @@
 # encodeXPCResponseValues(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.0+
@@ -16,6 +17,10 @@
 
 ```swift
 class func encodeXPCResponseValues(_ values: [[String : Any]]?) -> [[String : Any]]?
+```
+
+```objc
++ (NSArray<NSDictionary<NSString *,id> *> *) encodeXPCResponseValues:(NSArray<NSDictionary<NSString *,id> *> *) values;
 ```
 
 

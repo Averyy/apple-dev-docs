@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct if_bandwidths {
     ...
 };
@@ -17,8 +17,8 @@ struct if_bandwidths {
 ## Topics
 
 ### Instance Properties
-- [eff_bw](if_bandwidths/3943867-eff_bw.md)
-- [max_bw](if_bandwidths/3943868-max_bw.md)
+- [eff_bw](./if_bandwidths/api-3943867-eff_bw.md)
+- [max_bw](./if_bandwidths/api-3943868-max_bw.md)
 
 
 ---

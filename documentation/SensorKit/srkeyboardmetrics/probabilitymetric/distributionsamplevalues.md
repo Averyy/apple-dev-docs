@@ -1,7 +1,8 @@
 # distributionSampleValues
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of sample values from the probability distribution.
 
@@ -14,6 +15,10 @@ An array of sample values from the probability distribution.
 
 ```swift
 var distributionSampleValues: [Measurement<UnitType>] { get }
+```
+
+```objc
+@property (copy, readonly) NSArray<NSMeasurement<__kindof NSUnit *> *> * distributionSampleValues;
 ```
 
 

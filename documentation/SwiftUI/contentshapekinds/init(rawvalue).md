@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a content shape kind.
 

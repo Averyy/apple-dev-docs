@@ -1,23 +1,28 @@
 # init(avPlayer:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Initializes a video node using an existing [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object.
+Initializes a video node using an existing [`AVPlayer`](../../AVFoundation/avplayer.md) object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 init(avPlayer player: AVPlayer)
+```
+
+```objc
+- (instancetype) initWithAVPlayer:(AVPlayer *) player;
 ```
 
 #### Return Value
@@ -26,9 +31,9 @@ An initialized video node.
 
 #### Discussion
 
-You can use the [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) object to control playback.
+You can use the [`AVPlayer`](../../AVFoundation/avplayer.md) object to control playback.
 
-Listing 1 shows, in Swift, how you can create a video node using the [`init(avPlayer:)`](skvideonode/init(avplayer:)-9ydbu.md) initializer.
+Listing 1 shows, in Swift, how you can create a video node using the [`init(avPlayer:)`](./init%28avplayer%29-9ydbu.md) initializer.
 
 Listing 1. Creating a video node with an AV Player
 
@@ -52,15 +57,16 @@ var videoNode: SKVideoNode? = {
 
 ## See Also
 
-- [init(fileNamed: String)](skvideonode/init(filenamed:).md)
+### Creating a Video Node
+- [init(fileNamed: String)](./init%28filenamed%29.md)
   Initializes a video node using a video file stored in the app bundle.
-- [init(url: URL)](skvideonode/init(url:)-2im38.md)
+- [init(url: URL)](./init%28url%29-2im38.md)
   Initializes a video node using a URL.
-- [init?(coder: NSCoder)](skvideonode/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Tells you when to initialize a video node that was created from an archive.
-- [init(videoFileNamed: String)](skvideonode/init(videofilenamed:).md)
+- [init(videoFileNamed: String)](./init%28videofilenamed%29.md)
   Initializes a video node using a video file stored in the app bundle.
-- [init(videoURL: URL)](skvideonode/init(videourl:).md)
+- [init(videoURL: URL)](./init%28videourl%29.md)
   Initializes a video node using a URL that points to a video file.
 
 

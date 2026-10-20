@@ -1,7 +1,8 @@
 # init(complexEquality:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Opts the executor into complex “same exclusive execution context” equality checks.
 

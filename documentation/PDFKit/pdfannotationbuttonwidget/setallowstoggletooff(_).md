@@ -1,15 +1,20 @@
 # setAllowsToggleToOff(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setAllowsToggleToOff(_ allowOff: Bool)
+```
+
+```objc
+- (void) setAllowsToggleToOff:(BOOL) allowOff;
 ```
 
 

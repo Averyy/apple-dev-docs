@@ -1,13 +1,14 @@
 # group::groupIndexInSystem
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the index of the current group within the particle system.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The zero-based index of this group in the system
 
 Use this function to identify which group the current element belongs to, enabling group-specific behaviors and calculations across multiple groups.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/group__groupIndexInSystem.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/group__groupIndexInSystem.svg)
 
 
 ---

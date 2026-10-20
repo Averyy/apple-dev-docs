@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a new instance that’s a copy of the receiver.
@@ -21,6 +22,10 @@ Returns a new instance that’s a copy of the receiver.
 func copy(with zone: NSZone? = nil) -> Any
 ```
 
+```objc
+- (id) copyWithZone:(NSZone *) zone;
+```
+
 #### Discussion
 
 The returned object is implicitly retained by the sender, who is responsible for releasing it. The copy returned is immutable if the consideration “immutable vs. mutable” applies to the receiving object; otherwise the exact nature of the copy is determined by the class.
@@ -31,11 +36,12 @@ The returned object is implicitly retained by the sender, who is responsible for
 
 ## See Also
 
-- [func mutableCopy(with: NSZone?) -> Any](nsmutablecopying/mutablecopy(with:).md)
+### Related Documentation
+- [func mutableCopy(with: NSZone?) -> Any](../nsmutablecopying/mutablecopy%28with%29.md)
   Returns a new instance that’s a mutable copy of the receiver.
-- [func copy() -> Any](../objectivec/nsobject-swift.class/copy.md)
+- [func copy() -> Any](../../ObjectiveC/nsobject-swift.class/copy%28%29.md)
   Returns the object returned by `copy(with:)`.
-- [Advanced Memory Management Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011i)
+- [Advanced Memory Management Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html#//apple_ref/doc/uid/10000011i)
 
 
 ---

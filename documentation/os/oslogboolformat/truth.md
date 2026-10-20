@@ -1,7 +1,8 @@
 # OSLogBoolFormat.truth
 
 **Framework**: os  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to format Boolean values as true or false strings.
 
@@ -11,7 +12,7 @@ An option to format Boolean values as true or false strings.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,7 +27,8 @@ This option formats a Boolean true value as `true` and a Boolean false value as 
 
 ## See Also
 
-- [OSLogBoolFormat.answer](oslogboolformat/answer.md)
+### Getting the Boolean Format Options
+- [OSLogBoolFormat.answer](./answer.md)
   An option to format Boolean values as yes or no strings.
 
 

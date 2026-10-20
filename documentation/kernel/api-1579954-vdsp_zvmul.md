@@ -1,7 +1,8 @@
 # vDSP_zvmul
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Multiplies two complex vectors, optionally conjugating one of them; single precision.
 
@@ -10,7 +11,7 @@ Multiplies two complex vectors, optionally conjugating one of them; single preci
 
 ## Declaration
 
-```swift
+```c
 void vDSP_zvmul(const DSPSplitComplex *__A, vDSP_Stride __IA, const DSPSplitComplex *__B, vDSP_Stride __IB, const DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __N, int __Conjugate);
 ```
 

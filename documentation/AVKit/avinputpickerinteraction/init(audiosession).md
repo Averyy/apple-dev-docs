@@ -1,7 +1,8 @@
 # init(audioSession:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance of AVInputPickerInteraction using a specific `AVAudioSession`.
 
@@ -16,6 +17,10 @@ Creates a new instance of AVInputPickerInteraction using a specific `AVAudioSess
 init(audioSession: AVAudioSession?)
 ```
 
+```objc
+- (instancetype) initWithAudioSession:(AVAudioSession *) audioSession;
+```
+
 #### Discussion
 
 Use this initializer when the provided `AVAudioSession` is in .record mode or you plan to switch it to record mode.
@@ -28,7 +33,8 @@ If nil session is passed in object will use a sharedInstance from `AVAudioSessio
 
 ## See Also
 
-- [init()](avinputpickerinteraction/init.md)
+### Creating an input picker
+- [init()](./init%28%29.md)
   Creates a new instance of AVInputPickerController using a default sharedInstance from `AVAudioSession`.
 
 

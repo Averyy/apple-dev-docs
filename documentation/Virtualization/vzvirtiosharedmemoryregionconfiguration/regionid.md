@@ -1,7 +1,8 @@
 # regionID
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shared memory region ID.
 
@@ -12,6 +13,10 @@ The shared memory region ID.
 
 ```swift
 var regionID: UInt8 { get }
+```
+
+```objc
+@property (readonly) uint8_t regionID;
 ```
 
 

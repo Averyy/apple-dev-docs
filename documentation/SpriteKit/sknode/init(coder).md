@@ -1,18 +1,19 @@
 # init(coder:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Called when a node is initialized from an .sks file.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ Called when a node is initialized from an .sks file.
 init?(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 ## See Also
 
-- [Getting Started with Nodes](getting-started-with-nodes.md)
+### First Steps
+- [Getting Started with Nodes](../getting-started-with-nodes.md)
   Learn about the fundamental properties that provide a foundation for all other nodes.
-- [init()](sknode/init.md)
+- [init()](./init%28%29.md)
   Initializes a blank node.
-- [convenience init?(fileNamed: String)](sknode/init(filenamed:).md)
+- [convenience init?(fileNamed: String)](./init%28filenamed%29.md)
   Creates a new node by loading an archive file from the game’s main bundle.
-- [convenience init(fileNamed: String, securelyWithClasses: Set<AnyHashable>) throws](sknode/init(filenamed:securelywithclasses:).md)
+- [convenience init(fileNamed: String, securelyWithClasses: Set<AnyHashable>) throws](./init%28filenamed,securelywithclasses%29.md)
 
 
 ---

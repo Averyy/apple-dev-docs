@@ -1,7 +1,8 @@
 # Edge.Corner.Set
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An efficient set of corners.
 
@@ -23,49 +24,49 @@ struct Set
 ## Topics
 
 ### Initializers
-- [init(Edge.Corner)](edge/corner/set/init(_:).md)
+- [init(Edge.Corner)](./set/init%28_%29.md)
   Creates set of corners containing only the specified corner.
-- [init(rawValue: Int8)](edge/corner/set/init(rawvalue:).md)
+- [init(rawValue: Int8)](./set/init%28rawvalue%29.md)
   Creates a corner set given a raw value.
 ### Instance Methods
-- [func contains(Edge.Corner) -> Bool](edge/corner/set/contains(_:).md)
+- [func contains(Edge.Corner) -> Bool](./set/contains%28_%29.md)
   Returns true only if `corner` is a member of the calling set.
 ### Type Properties
-- [static let all: Edge.Corner.Set](edge/corner/set/all.md)
+- [static let all: Edge.Corner.Set](./set/all.md)
   All corners.
-- [static let bottom: Edge.Corner.Set](edge/corner/set/bottom.md)
+- [static let bottom: Edge.Corner.Set](./set/bottom.md)
   The bottom leading and trailing corners.
-- [static let bottomLeading: Edge.Corner.Set](edge/corner/set/bottomleading.md)
+- [static let bottomLeading: Edge.Corner.Set](./set/bottomleading.md)
   The bottom leading corner.
-- [static let bottomTrailing: Edge.Corner.Set](edge/corner/set/bottomtrailing.md)
+- [static let bottomTrailing: Edge.Corner.Set](./set/bottomtrailing.md)
   The bottom trailing corner.
-- [static let leading: Edge.Corner.Set](edge/corner/set/leading.md)
+- [static let leading: Edge.Corner.Set](./set/leading.md)
   The top and bottom leading corners.
-- [static let none: Edge.Corner.Set](edge/corner/set/none.md)
+- [static let none: Edge.Corner.Set](./set/none.md)
   No corners.
-- [static let top: Edge.Corner.Set](edge/corner/set/top.md)
+- [static let top: Edge.Corner.Set](./set/top.md)
   The top leading and trailing corners.
-- [static let topLeading: Edge.Corner.Set](edge/corner/set/topleading.md)
+- [static let topLeading: Edge.Corner.Set](./set/topleading.md)
   The top leading corner.
-- [static let topTrailing: Edge.Corner.Set](edge/corner/set/toptrailing.md)
+- [static let topTrailing: Edge.Corner.Set](./set/toptrailing.md)
   The top trailing corner.
-- [static let trailing: Edge.Corner.Set](edge/corner/set/trailing.md)
+- [static let trailing: Edge.Corner.Set](./set/trailing.md)
   The top and bottom trailing corners.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Copyable](../../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../../Swift/hashable.md)
+- [OptionSet](../../../Swift/optionset.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../../Swift/setalgebra.md)
 
 
 ---

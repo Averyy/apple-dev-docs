@@ -1,6 +1,7 @@
 # Safari 26.5 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released May 11, 2026 — 26.5 (20624.2.5)
 
@@ -24,7 +25,7 @@ Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, m
 - Fixed a regression where animating to an implicit value for individual transform properties failed to animate. (173717819)
 - Fixed an issue where animation timelines could fail to restore correctly after navigating back to a page from the back-forward cache. (174561577)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -65,7 +66,7 @@ Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, m
 - Fixed an issue where a `readonly` date `<input>` could still be edited via keyboard using the date picker. (171535893)
 - Fixed an issue on iOS and iPadOS where `datalist` suggestions were presented directly over the associated input, obscuring it. (174264299)
 
-##### Html
+##### HTML
 
 ###### Resolved Issues
 
@@ -78,7 +79,7 @@ Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, m
 
 - Fixed a regression where images with `srcset` and `sizes` attributes containing `calc()` expressions with division by zero were not displayed. (173954748)
 
-##### Javascript
+##### JavaScript
 
 ###### Resolved Issues
 
@@ -113,7 +114,7 @@ Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, m
 - Fixed an issue where pinch-to-zoom could cause web content to jump or disappear on some websites. (172507916)
 - Fixed an issue where user-installed font variants could interfere with system font matching, causing incorrect fonts to be selected. (173345107)
 
-##### Svg
+##### SVG
 
 ###### New Features
 
@@ -140,7 +141,7 @@ Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, m
 - Fixed an issue where IndexedDB connections could become permanently broken until the page was reloaded. (172247569)
 - Fixed an issue where `document.hasStorageAccess()` could return a Promise that never resolves. (172424614)
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -158,13 +159,13 @@ Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, m
 
 - Fixed an issue where extensions with a trailing comma in `manifest.json` failed to load in Safari. (172120877)
 
-##### Webgl
+##### WebGL
 
 ###### Resolved Issues
 
 - Fixed WebGL shader compilation to properly handle `NaN` and `infinity` values.  (166699074)
 
-##### Webrtc
+##### WebRTC
 
 ###### Resolved Issues
 
@@ -177,17 +178,18 @@ Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, m
 
 ## See Also
 
-- [Safari 26.6 Release Notes](safari-26_6-release-notes.md)
+### Version 26
+- [Safari 26.6 Release Notes](./safari-26_6-release-notes.md)
   Released July 27, 2026 — 26.6 (20624.4.5)
-- [Safari 26.4 Release Notes](safari-26_4-release-notes.md)
+- [Safari 26.4 Release Notes](./safari-26_4-release-notes.md)
   Released March 24, 2026 — 26.4 (20624.1.16)
-- [Safari 26.3 Release Notes](safari-26_3-release-notes.md)
+- [Safari 26.3 Release Notes](./safari-26_3-release-notes.md)
   Released February 11, 2026 — 26.3 (20623.2.7)
-- [Safari 26.2 Release Notes](safari-26_2-release-notes.md)
+- [Safari 26.2 Release Notes](./safari-26_2-release-notes.md)
   Released December 12, 2025 — 26.2 (20623.1.14)
-- [Safari 26.1 Release Notes](safari-26_1-release-notes.md)
+- [Safari 26.1 Release Notes](./safari-26_1-release-notes.md)
   Released November 3, 2025 — 26.1 (20622.2.11)
-- [Safari 26.0 Release Notes](safari-26-release-notes.md)
+- [Safari 26.0 Release Notes](./safari-26-release-notes.md)
   Released September 15, 2025 — 26 (20622.1.22)
 
 

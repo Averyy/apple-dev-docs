@@ -1,7 +1,8 @@
 # comment
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored user comment, or `nil` if not authored.
 

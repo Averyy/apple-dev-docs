@@ -1,7 +1,8 @@
 # SurfaceSnappingInfo.AuthorizationStatus.restricted
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user is unable to grant authorization to share detailed information about their surroundings.
 

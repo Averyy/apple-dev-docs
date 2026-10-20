@@ -1,7 +1,8 @@
 # GLKMatrix4Identity
 
 **Framework**: GLKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A `4x4` identity matrix.
 
@@ -15,6 +16,10 @@ A `4x4` identity matrix.
 
 ```swift
 let GLKMatrix4Identity: GLKMatrix4
+```
+
+```c
+extern const GLKMatrix4 GLKMatrix4Identity;
 ```
 
 

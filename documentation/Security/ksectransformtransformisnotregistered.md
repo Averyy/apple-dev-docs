@@ -1,7 +1,8 @@
 # kSecTransformTransformIsNotRegistered
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A custom transform was asked to be created but the transform has not been registered.
 
@@ -9,7 +10,7 @@ A custom transform was asked to be created but the transform has not been regist
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.0+
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
@@ -18,6 +19,10 @@ A custom transform was asked to be created but the transform has not been regist
 
 ```swift
 var kSecTransformTransformIsNotRegistered: CFIndex { get }
+```
+
+```c
+kSecTransformTransformIsNotRegistered
 ```
 
 

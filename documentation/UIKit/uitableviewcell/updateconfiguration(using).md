@@ -1,7 +1,8 @@
 # updateConfiguration(using:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the cell’s configuration using the current state.
 
@@ -10,7 +11,7 @@ Updates the cell’s configuration using the current state.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,17 +22,18 @@ Updates the cell’s configuration using the current state.
 
 #### Discussion
 
-Avoid calling this method directly. Instead, use [`setNeedsUpdateConfiguration()`](uitableviewcell/setneedsupdateconfiguration().md) to request an update.
+Avoid calling this method directly. Instead, use [`setNeedsUpdateConfiguration()`](./setneedsupdateconfiguration%28%29.md) to request an update.
 
 Override this method in a subclass to update the cell’s configuration using the provided state.
 
-In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this cell’s `traitCollection`. For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
+In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this cell’s `traitCollection`. For more information, see [Automatic trait tracking](../automatic-trait-tracking.md).
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
+This method supports automatic observation tracking. For more information, see [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## See Also
 
-- [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](uitableviewcell/configurationupdatehandler-974.md)
+### Observing data in table view cells
+- [var configurationUpdateHandler: UITableViewCell.ConfigurationUpdateHandler?](./configurationupdatehandler-974.md)
   A block for handling updates to the cell’s configuration using the current state.
 
 

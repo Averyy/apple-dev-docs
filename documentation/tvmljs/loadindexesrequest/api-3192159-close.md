@@ -1,7 +1,8 @@
 # close
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Signals whether or not the data fetch is successful.
 
@@ -10,7 +11,7 @@ Signals whether or not the data fetch is successful.
 
 ## Declaration
 
-```swift
+```
 void close(
     in Boolean success
 );
@@ -18,7 +19,7 @@ void close(
 
 #### Discussion
 
-The Boolean value passed into the `close` method signals whether or not the data fetch succeeded. If true is passed, then those indexes are marked internally as loaded, and a [`loadindexes`](datasource/datasource/3192119-loadindexes.md) event for these indexes won't be invoked again. If false is passed, the [`loadindexes`](datasource/datasource/3192119-loadindexes.md) event will be invoked only when those indexes are needed again.
+The Boolean value passed into the `close` method signals whether or not the data fetch succeeded. If true is passed, then those indexes are marked internally as loaded, and a [`loadindexes`](../datasource/datasource/api-3192119-loadindexes.md) event for these indexes won't be invoked again. If false is passed, the [`loadindexes`](../datasource/datasource/api-3192119-loadindexes.md) event will be invoked only when those indexes are needed again.
 
 
 ---

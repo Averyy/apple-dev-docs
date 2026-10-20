@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new page structure from the given raw value.
 
@@ -19,7 +20,8 @@ init(rawValue: Data)
 
 ## See Also
 
-- [init(Data)](nsfileproviderpage/init(_:).md)
+### Initializers
+- [init(Data)](./init%28_%29.md)
   Creates a new page structure from the given raw value.
 
 

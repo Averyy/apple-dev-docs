@@ -1,17 +1,22 @@
 # setParagraphGlyphRange(_:separatorGlyphRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the glyph range being processed and the paragraph separator glyph range (the range of the paragraph separator character or characters).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setParagraphGlyphRange(_ paragraphRange: NSRange, separatorGlyphRange paragraphSeparatorRange: NSRange)
+```
+
+```objc
+- (void) setParagraphGlyphRange:(NSRange) paragraphRange separatorGlyphRange:(NSRange) paragraphSeparatorRange;
 ```
 
 ## Parameters
@@ -21,11 +26,12 @@ func setParagraphGlyphRange(_ paragraphRange: NSRange, separatorGlyphRange parag
 
 ## See Also
 
-- [var attributedString: NSAttributedString?](nsatstypesetter/attributedstring.md)
+### Accessing paragraph information
+- [var attributedString: NSAttributedString?](./attributedstring.md)
   The backing store that contains the text on which this typesetter operates.
-- [var paragraphGlyphRange: NSRange](nsatstypesetter/paragraphglyphrange.md)
+- [var paragraphGlyphRange: NSRange](./paragraphglyphrange.md)
   The current glyph range being processed.
-- [var paragraphSeparatorGlyphRange: NSRange](nsatstypesetter/paragraphseparatorglyphrange.md)
+- [var paragraphSeparatorGlyphRange: NSRange](./paragraphseparatorglyphrange.md)
   The current paragraph separator range that contains the current glyph range and extends from one paragraph separator character to the next.
 
 

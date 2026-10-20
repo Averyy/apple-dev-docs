@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style that provides the default system styling of a contact access button.
 

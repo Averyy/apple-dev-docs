@@ -1,7 +1,8 @@
 # checkForNFC(quickCheck:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Do a scan checking for whether the contents are in Normal Form C. When the contents are in NFC, canonical equivalence checks are much faster.
 
@@ -26,7 +27,7 @@ mutating func checkForNFC(quickCheck: Bool) -> Bool
 
 Updates the `isKnownNFC` bit.
 
-> **Note**: O(n)
+> **Complexity**: O(n)
 
 
 ---

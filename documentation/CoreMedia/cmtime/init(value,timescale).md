@@ -1,7 +1,8 @@
 # init(value:timescale:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a time with a value and timescale.
 
@@ -27,11 +28,12 @@ init(value: CMTimeValue, timescale: CMTimeScale)
 
 ## See Also
 
-- [init(value: CMTimeValue, timescale: CMTimeScale, flags: CMTimeFlags, epoch: CMTimeEpoch)](cmtime/init(value:timescale:flags:epoch:).md)
+### Creating a Time
+- [init(value: CMTimeValue, timescale: CMTimeScale, flags: CMTimeFlags, epoch: CMTimeEpoch)](./init%28value,timescale,flags,epoch%29.md)
   Creates a time with a value, timescale, flags, and epoch.
-- [init(seconds: Double, preferredTimescale: CMTimeScale)](cmtime/init(seconds:preferredtimescale:).md)
+- [init(seconds: Double, preferredTimescale: CMTimeScale)](./init%28seconds,preferredtimescale%29.md)
   Creates a time that represents number of seconds in a preferred timescale.
-- [init()](cmtime/init.md)
+- [init()](./init%28%29.md)
   Creates a time with an invalid value.
 
 

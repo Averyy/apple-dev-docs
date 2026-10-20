@@ -1,16 +1,21 @@
 # ES_TCC_AUTHORIZATION_RIGHT_SESSION_PID
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var ES_TCC_AUTHORIZATION_RIGHT_SESSION_PID: es_tcc_authorization_right_t { get }
+```
+
+```c
+ES_TCC_AUTHORIZATION_RIGHT_SESSION_PID
 ```
 
 

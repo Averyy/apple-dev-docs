@@ -1,15 +1,17 @@
 # MIDIDriverKit Constants
 
-**Framework**: MIDIDriverKit
+**Framework**: MIDIDriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [kIOUserMIDIObjectIDDriver](mididriverkit/kiousermidiobjectiddriver.md)
+- [kIOUserMIDIObjectIDDriver](./mididriverkit-page/kiousermidiobjectiddriver.md)
 
 ## See Also
 
-- [MIDIDriverKit Data Types](mididriverkit-data-types.md)
+### Reference
+- [MIDIDriverKit Data Types](./mididriverkit-data-types.md)
 
 
 ---

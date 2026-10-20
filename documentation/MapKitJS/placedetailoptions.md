@@ -1,7 +1,8 @@
 # PlaceDetailOptions
 
 **Framework**: MapKit JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Interface
 
 Options that you may provide when constructing place detail views.
 
@@ -10,23 +11,24 @@ Options that you may provide when constructing place detail views.
 
 ## Declaration
 
-```swift
+```
 interface PlaceDetailOptions
 ```
 
 ## Topics
 
 ### Instance Properties
-- [colorScheme](placedetailoptions/colorscheme.md)
+- [colorScheme](./placedetailoptions/colorscheme.md)
   The color scheme to use when displaying a place detail view.
-- [displaysMap](placedetailoptions/displaysmap.md)
+- [displaysMap](./placedetailoptions/displaysmap.md)
   A Boolean value that indicates whether to display the map in the place detail view.
 
 ## See Also
 
-- [new PlaceDetail(parent, place, options)](placedetail/placedetailconstructor.md)
+### Creating and terminating a place detail
+- [new PlaceDetail(parent, place, options)](./placedetail/placedetailconstructor.md)
   A representation of a place detail.
-- [destroy()](placedetail/destroy.md)
+- [destroy()](./placedetail/destroy.md)
   Terminates a place detail.
 
 

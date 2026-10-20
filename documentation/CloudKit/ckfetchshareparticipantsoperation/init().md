@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty operation.
 
@@ -20,15 +21,20 @@ Creates an empty operation.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
 You can use this operation only once.
 
-> **Note**: If you don’t set [`userIdentityLookupInfos`](ckfetchshareparticipantsoperation/useridentitylookupinfos.md) prior to executing the operation, it returns immediately with no results.
+> **Note**: If you don’t set [`userIdentityLookupInfos`](./useridentitylookupinfos.md) prior to executing the operation, it returns immediately with no results.
 
 ## See Also
 
-- [convenience init(userIdentityLookupInfos: [CKUserIdentity.LookupInfo])](ckfetchshareparticipantsoperation/init(useridentitylookupinfos:).md)
+### Creating an Operation
+- [convenience init(userIdentityLookupInfos: [CKUserIdentity.LookupInfo])](./init%28useridentitylookupinfos%29.md)
   Creates an operation for generating share participants from the specified user data.
 
 

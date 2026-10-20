@@ -1,7 +1,8 @@
 # init(assignAll:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a material assignment structure that assigns the same material to all faces.
 

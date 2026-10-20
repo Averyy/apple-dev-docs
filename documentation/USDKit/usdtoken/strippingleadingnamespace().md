@@ -1,7 +1,8 @@
 # strippingLeadingNamespace()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns this token with its leading namespace component removed.
 
@@ -25,7 +26,8 @@ The token with its leading namespace stripped, or the empty token if no namespac
 
 ## See Also
 
-- [func strippingNamespacePrefix(USDToken) -> USDToken?](usdtoken/strippingnamespaceprefix(_:).md)
+### Stripping namespaces
+- [func strippingNamespacePrefix(USDToken) -> USDToken?](./strippingnamespaceprefix%28_%29.md)
   Returns this token with the given namespace prefix removed.
 
 

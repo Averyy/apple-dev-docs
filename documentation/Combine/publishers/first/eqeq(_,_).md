@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Combine  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether two first publishers have equal upstream publishers.
 
@@ -19,6 +20,8 @@ Returns a Boolean value that indicates whether two first publishers have equal u
 ```swift
 static func == (lhs: Publishers.First<Upstream>, rhs: Publishers.First<Upstream>) -> Bool
 ```
+
+Available when `Upstream` conforms to `Publisher` and `Equatable`.
 
 #### Return Value
 

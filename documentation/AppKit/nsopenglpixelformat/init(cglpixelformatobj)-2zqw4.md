@@ -1,12 +1,13 @@
 # init(cglPixelFormatObj:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an OpenGL pixel format object initialized with using an existing CGL pixel format object.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Returns an OpenGL pixel format object initialized with using an existing CGL pix
 init?(cglPixelFormatObj format: CGLPixelFormatObj)
 ```
 
+```objc
+- (NSOpenGLPixelFormat *) initWithCGLPixelFormatObj:(CGLPixelFormatObj) format;
+```
+
 #### Return Value
 
-An intialized [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object that wraps the CGL pixel format object.
+An intialized [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object that wraps the CGL pixel format object.
 
 #### Discussion
 
-If your application already has a low-level CGL pixel format object, you can create an [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object to wrap it by calling this initializer. The [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object retains the CGL pixel format object by calling the `CGLRetainPixelFormat(_:)` function.
+If your application already has a low-level CGL pixel format object, you can create an [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object to wrap it by calling this initializer. The [`NSOpenGLPixelFormat`](../nsopenglpixelformat.md) object retains the CGL pixel format object by calling the `CGLRetainPixelFormat(_:)` function.
 
 Your application should not call `CGLDestroyPixelFormat(_:)` to dispose of the CGL pixel format object. Instead, your application should call `CGLReleasePixelFormat(_:)` to decrement its reference count.
 
@@ -30,7 +35,8 @@ Your application should not call `CGLDestroyPixelFormat(_:)` to dispose of the C
 
 ## See Also
 
-- [convenience init?(attributes: UnsafePointer<NSOpenGLPixelFormatAttribute>)](nsopenglpixelformat/init(attributes:).md)
+### Creating an OpenGL Pixel Format
+- [convenience init?(attributes: UnsafePointer<NSOpenGLPixelFormatAttribute>)](./init%28attributes%29.md)
   Returns an OpenGL pixel format object initialized with specified pixel format attributes.
 
 

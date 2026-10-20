@@ -1,7 +1,8 @@
 # positionTime
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The playback position used when setting the current time of the player.
 
@@ -18,6 +19,10 @@ The playback position used when setting the current time of the player.
 
 ```swift
 var positionTime: TimeInterval { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSTimeInterval positionTime;
 ```
 
 

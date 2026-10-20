@@ -1,7 +1,8 @@
 # UIUserInterfaceIdiom.phone
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An interface designed for iPhone and iPod touch.
 
@@ -9,7 +10,7 @@ An interface designed for iPhone and iPod touch.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ An interface designed for iPhone and iPod touch.
 case phone
 ```
 
+```c
+UIUserInterfaceIdiomPhone
+```
+
 ## See Also
 
-- [UIUserInterfaceIdiom.unspecified](uiuserinterfaceidiom/unspecified.md)
+### Idioms
+- [UIUserInterfaceIdiom.unspecified](./unspecified.md)
   An unspecified idiom.
-- [UIUserInterfaceIdiom.pad](uiuserinterfaceidiom/pad.md)
+- [UIUserInterfaceIdiom.pad](./pad.md)
   An interface designed for iPad.
-- [UIUserInterfaceIdiom.tv](uiuserinterfaceidiom/tv.md)
+- [UIUserInterfaceIdiom.tv](./tv.md)
   An interface designed for tvOS and Apple TV.
-- [UIUserInterfaceIdiom.carPlay](uiuserinterfaceidiom/carplay.md)
+- [UIUserInterfaceIdiom.carPlay](./carplay.md)
   An interface designed for an in-car experience.
-- [UIUserInterfaceIdiom.mac](uiuserinterfaceidiom/mac.md)
+- [UIUserInterfaceIdiom.mac](./mac.md)
   An interface designed for the Mac.
-- [UIUserInterfaceIdiom.vision](uiuserinterfaceidiom/vision.md)
+- [UIUserInterfaceIdiom.vision](./vision.md)
   An interface designed for visionOS and Apple Vision Pro.
 
 

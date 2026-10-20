@@ -18,7 +18,6 @@ Learn how to use and customize system-defined components to give people a famili
 - [Status](/design/human-interface-guidelines/status)
 - [System experiences](/design/human-interface-guidelines/system-experiences)
 
-
 ## Topics
 
 - [Content](content.md)
@@ -29,8 +28,6 @@ Learn how to use and customize system-defined components to give people a famili
 - [Selection and input](selection-and-input.md)
 - [Status](status.md)
 - [System experiences](system-experiences.md)
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/components](https://developer.apple.com/design/human-interface-guidelines/components)*

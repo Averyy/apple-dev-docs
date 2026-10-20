@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The clearcoat intensity specified as a single value.
 
@@ -20,7 +21,8 @@ var scale: Float
 
 ## See Also
 
-- [var texture: CustomMaterial.Texture?](custommaterial/clearcoatroughness-swift.struct/texture.md)
+### Accessing clearcoat roughness values
+- [var texture: CustomMaterial.Texture?](./texture.md)
   The clearcoat intensity specified using a UV-mapped image.
 
 

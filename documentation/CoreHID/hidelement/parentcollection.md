@@ -1,9 +1,10 @@
 # parentCollection
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-The [`HIDElementCollection`](hidelementcollection.md) that contains this element.
+The [`HIDElementCollection`](../hidelementcollection.md) that contains this element.
 
 **Availability**:
 - macOS 15.0+

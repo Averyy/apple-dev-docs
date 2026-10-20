@@ -1,7 +1,8 @@
 # defaultInitiatorRole
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default role to assign to the initiator of the group activity.
 

@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value indicating whether two arrays contain the same elements in the same order.
 
@@ -19,6 +20,8 @@ Returns a Boolean value indicating whether two arrays contain the same elements 
 ```swift
 static func == (lhs: ContiguousArray<Element>, rhs: ContiguousArray<Element>) -> Bool
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 #### Discussion
 

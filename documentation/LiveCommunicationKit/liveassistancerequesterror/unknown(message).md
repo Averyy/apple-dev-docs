@@ -1,7 +1,8 @@
 # LiveAssistanceRequestError.unknown(message:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates an unexpected failure prevented servicing the request.
 
@@ -24,7 +25,8 @@ case unknown(message: String)
 
 ## See Also
 
-- [LiveAssistanceRequestError.cannotFulfill(message:)](liveassistancerequesterror/cannotfulfill(message:).md)
+### Working with errors
+- [LiveAssistanceRequestError.cannotFulfill(message:)](./cannotfulfill%28message%29.md)
   An error that indicates the extension can’t fulfill the request.
 
 

@@ -1,7 +1,8 @@
 # UIMenuSystem.FindElementGroupConfiguration.Style.editableText
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Prefer a full set of elements for finding and replacing text, such as Find, Find and Replace, Find Navigation, and so on.
 
@@ -16,6 +17,10 @@ Prefer a full set of elements for finding and replacing text, such as Find, Find
 
 ```swift
 case editableText
+```
+
+```c
+UIMenuSystemFindElementGroupConfigurationStyleEditableText
 ```
 
 

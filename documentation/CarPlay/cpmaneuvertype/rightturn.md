@@ -1,7 +1,8 @@
 # CPManeuverType.rightTurn
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.4+
@@ -14,23 +15,28 @@
 case rightTurn
 ```
 
+```c
+CPManeuverTypeRightTurn
+```
+
 ## See Also
 
-- [CPManeuverType.arriveAtDestination](cpmaneuvertype/arriveatdestination.md)
-- [CPManeuverType.arriveAtDestinationLeft](cpmaneuvertype/arriveatdestinationleft.md)
-- [CPManeuverType.arriveAtDestinationRight](cpmaneuvertype/arriveatdestinationright.md)
-- [CPManeuverType.arriveEndOfDirections](cpmaneuvertype/arriveendofdirections.md)
-- [CPManeuverType.arriveEndOfNavigation](cpmaneuvertype/arriveendofnavigation.md)
-- [CPManeuverType.changeFerry](cpmaneuvertype/changeferry.md)
-- [CPManeuverType.changeHighway](cpmaneuvertype/changehighway.md)
-- [CPManeuverType.changeHighwayLeft](cpmaneuvertype/changehighwayleft.md)
-- [CPManeuverType.changeHighwayRight](cpmaneuvertype/changehighwayright.md)
-- [CPManeuverType.enterRoundabout](cpmaneuvertype/enterroundabout.md)
-- [CPManeuverType.enter_Ferry](cpmaneuvertype/enter_ferry.md)
-- [CPManeuverType.exitFerry](cpmaneuvertype/exitferry.md)
-- [CPManeuverType.exitRoundabout](cpmaneuvertype/exitroundabout.md)
-- [CPManeuverType.followRoad](cpmaneuvertype/followroad.md)
-- [CPManeuverType.highwayOffRampLeft](cpmaneuvertype/highwayofframpleft.md)
+### Maneuver types
+- [CPManeuverType.arriveAtDestination](./arriveatdestination.md)
+- [CPManeuverType.arriveAtDestinationLeft](./arriveatdestinationleft.md)
+- [CPManeuverType.arriveAtDestinationRight](./arriveatdestinationright.md)
+- [CPManeuverType.arriveEndOfDirections](./arriveendofdirections.md)
+- [CPManeuverType.arriveEndOfNavigation](./arriveendofnavigation.md)
+- [CPManeuverType.changeFerry](./changeferry.md)
+- [CPManeuverType.changeHighway](./changehighway.md)
+- [CPManeuverType.changeHighwayLeft](./changehighwayleft.md)
+- [CPManeuverType.changeHighwayRight](./changehighwayright.md)
+- [CPManeuverType.enterRoundabout](./enterroundabout.md)
+- [CPManeuverType.enter_Ferry](./enter_ferry.md)
+- [CPManeuverType.exitFerry](./exitferry.md)
+- [CPManeuverType.exitRoundabout](./exitroundabout.md)
+- [CPManeuverType.followRoad](./followroad.md)
+- [CPManeuverType.highwayOffRampLeft](./highwayofframpleft.md)
 
 
 ---

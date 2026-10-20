@@ -1,9 +1,10 @@
 # notLoaded
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
-Indicates that the context is not loaded by a [`WKWebExtensionController`](wkwebextensioncontroller.md).
+Indicates that the context is not loaded by a [`WKWebExtensionController`](../../wkwebextensioncontroller.md).
 
 **Availability**:
 - iOS 18.4+

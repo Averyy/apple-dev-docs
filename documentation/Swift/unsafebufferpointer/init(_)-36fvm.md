@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an immutable typed buffer pointer referencing the same memory as the given mutable buffer pointer.
 

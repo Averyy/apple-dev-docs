@@ -1,7 +1,8 @@
 # subscriptionPeriod
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration of time between subscription renewals.
 
@@ -22,7 +23,8 @@ let subscriptionPeriod: Product.SubscriptionPeriod
 
 ## See Also
 
-- [Product.SubscriptionPeriod](product/subscriptionperiod.md)
+### Getting the subscription period
+- [Product.SubscriptionPeriod](../subscriptionperiod.md)
   Values that represent the duration of time between subscription renewals.
 
 

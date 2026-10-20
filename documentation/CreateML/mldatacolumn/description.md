@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the column.
 
@@ -19,11 +20,14 @@ A text representation of the column.
 var description: String { get }
 ```
 
+Available when `Element` conforms to `MLDataValueConvertible`.
+
 ## See Also
 
-- [var playgroundDescription: Any](mldatacolumn/playgrounddescription.md)
+### Getting a description of a data column
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the column shown in a playground.
-- [var debugDescription: String](mldatacolumn/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the column for debugging.
 
 

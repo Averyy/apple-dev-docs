@@ -1,7 +1,8 @@
 # init(xpcService:targetQueue:options:requirement:cancellationHandler:)
 
 **Framework**: XPC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new session object representing a connection to the named service, and requires that the session peer has the specified requirement.
 

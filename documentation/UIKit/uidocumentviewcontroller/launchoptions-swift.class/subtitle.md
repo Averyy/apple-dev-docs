@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subtitle of the launch view. Default is `nil`. If `nil`, no subtitle will be displayed.
 
@@ -15,6 +16,10 @@ The subtitle of the launch view. Default is `nil`. If `nil`, no subtitle will be
 
 ```swift
 var subtitle: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
 

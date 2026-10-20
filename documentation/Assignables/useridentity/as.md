@@ -1,15 +1,16 @@
 # UserIdentity.As
 
 **Framework**: Assignables  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-An alias for [`UserIdentityFactory`](useridentityfactory.md) for convenience.
+An alias for [`UserIdentityFactory`](../useridentityfactory.md) for convenience.
 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ typealias As = UserIdentityFactory
 
 ## See Also
 
-- [func eraseToAnyUserIdentity() -> AnyUserIdentity](useridentity/erasetoanyuseridentity.md)
+### Getting a type eraser
+- [func eraseToAnyUserIdentity() -> AnyUserIdentity](./erasetoanyuseridentity%28%29.md)
   Wraps this user identity with a type eraser.
 
 

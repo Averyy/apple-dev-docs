@@ -1,7 +1,8 @@
 # DescriptionAttribute
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents a description attribute.
 
@@ -10,7 +11,7 @@ An object that represents a description attribute.
 
 ## Declaration
 
-```swift
+```
 object DescriptionAttribute
 ```
 
@@ -21,13 +22,14 @@ object DescriptionAttribute
 
 ## See Also
 
-- [object Artwork](artwork.md)
+### Getting common type information
+- [object Artwork](./artwork.md)
   An object that represents artwork.
-- [object Genres](genres.md)
+- [object Genres](./genres.md)
   A resource object that represents a music genre.
-- [object Apps](apps.md)
+- [object Apps](./apps.md)
   A resource object that represents an app.
-- [object Books](books.md)
+- [object Books](./books.md)
   A resource object that represents a book.
 
 

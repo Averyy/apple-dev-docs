@@ -1,7 +1,8 @@
 # keysToFetch
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The properties to fetch in the returned contacts.
 
@@ -19,9 +20,21 @@ The properties to fetch in the returned contacts.
 var keysToFetch: [any CNKeyDescriptor] { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy) NSArray<id<CNKeyDescriptor>> * keysToFetch;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy) NSArray<id<CNKeyDescriptor>> * keysToFetch;
+```
+
 #### Discussion
 
-An array of contact property keys or key descriptors from contact objects to be fetched in the returned contacts. For example, [`CNContactEmailAddressesKey`](cncontactemailaddresseskey.md), [`CNContactPhoneNumbersKey`](cncontactphonenumberskey.md), [`CNContactFormatterStyle.fullName`](cncontactformatterstyle/fullname.md) fetches the contact’s email addresses, phone numbers, and contact’s full name with the contact formatter.
+An array of contact property keys or key descriptors from contact objects to be fetched in the returned contacts. For example, [`CNContactEmailAddressesKey`](../cncontactemailaddresseskey.md), [`CNContactPhoneNumbersKey`](../cncontactphonenumberskey.md), [`CNContactFormatterStyle.fullName`](../cncontactformatterstyle/fullname.md) fetches the contact’s email addresses, phone numbers, and contact’s full name with the contact formatter.
 
 
 ---

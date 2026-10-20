@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text view from data in an unarchiver.
 
@@ -9,7 +10,7 @@ Creates a text view from data in an unarchiver.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ Creates a text view from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(frame: CGRect, textContainer: NSTextContainer?)](uitextview/init(frame:textcontainer:).md)
+### Initializing the text view
+- [init(frame: CGRect, textContainer: NSTextContainer?)](./init%28frame,textcontainer%29.md)
   Creates a new text view with the specified text container.
-- [convenience init(usingTextLayoutManager: Bool)](uitextview/init(usingtextlayoutmanager:).md)
+- [convenience init(usingTextLayoutManager: Bool)](./init%28usingtextlayoutmanager%29.md)
   Creates a new text view, with or without a text layout manager depending on the Boolean value you specify.
 
 

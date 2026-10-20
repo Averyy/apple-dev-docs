@@ -1,7 +1,8 @@
 # SetPanningChannels
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the current stereo panning channels.
 
@@ -10,13 +11,13 @@ Sets the current stereo panning channels.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetPanningChannels(IOUserAudioObjectPropertyElement in_left_channel, IOUserAudioObjectPropertyElement in_right_channel);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -26,16 +27,17 @@ This method synchronizes by using the work queue created by the object.
 
 ## Parameters
 
-- `in_left_channel`: The [`IOUserAudioObjectPropertyElement`](audiodriverkit/iouseraudioobjectpropertyelement.md) for the left channel.
-- `in_right_channel`: The [`IOUserAudioObjectPropertyElement`](audiodriverkit/iouseraudioobjectpropertyelement.md) for the right channel.
+- `in_left_channel`: The [`IOUserAudioObjectPropertyElement`](../audiodriverkit-page/iouseraudioobjectpropertyelement.md) for the left channel.
+- `in_right_channel`: The [`IOUserAudioObjectPropertyElement`](../audiodriverkit-page/iouseraudioobjectpropertyelement.md) for the right channel.
 
 ## See Also
 
-- [SetControlValue](iouseraudiostereopancontrol/setcontrolvalue.md)
+### Accessing the Value
+- [SetControlValue](./setcontrolvalue.md)
   Sets the stereo pan value of the control.
-- [GetControlValue](iouseraudiostereopancontrol/getcontrolvalue.md)
+- [GetControlValue](./getcontrolvalue.md)
   Gets the floating-point stereo pan value of the control.
-- [GetPanningChannels](iouseraudiostereopancontrol/getpanningchannels.md)
+- [GetPanningChannels](./getpanningchannels.md)
   Gets the current stereo panning channels.
 
 

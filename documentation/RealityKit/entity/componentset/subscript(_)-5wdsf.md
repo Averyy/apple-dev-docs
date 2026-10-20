@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Gets or sets the component of the specified type.
 
@@ -19,9 +20,21 @@ Gets or sets the component of the specified type.
 @abi(@MainActor @preconcurrency subscript<T>(optimized componentType: T.Type) -> T? where T : Component { get set }) @MainActor @preconcurrency subscript<T>(componentType: T.Type) -> T? where T : Component { get set }
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency subscript(componentType: any Component.Type) -> (any Component)? { get set }
+```
+
+```swift
+@abi(@MainActor @preconcurrency subscript<T>(optimized componentType: T.Type) -> T? where T : _ImplicitlyAnimatableBuiltinComponent { get set }) @MainActor @preconcurrency subscript<T>(componentType: T.Type) -> T? where T : _ImplicitlyAnimatableBuiltinComponent { get set }
+```
+
 ## See Also
 
-- [subscript(any Component.Type) -> (any Component)?](entity/componentset/subscript(_:)-47rhg.md)
+### Accessing members
+- [subscript(any Component.Type) -> (any Component)?](./subscript%28_%29-47rhg.md)
   Gets or sets the component with a specific dynamically supplied type.
 
 

@@ -1,7 +1,8 @@
 # MLModelTransformerAdaptor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that uses a Core ML model.
 
@@ -23,29 +24,30 @@ struct MLModelTransformerAdaptor<Scalar> where Scalar : MLShapedArrayScalar, Sca
 ## Topics
 
 ### Creating an adaptor
-- [init(model: MLModel) throws](mlmodeltransformeradaptor/init(model:).md)
+- [init(model: MLModel) throws](./mlmodeltransformeradaptor/init%28model%29.md)
   Creates a model adaptor from an MLModel.
-- [init(contentsOf: URL, configuration: MLModelConfiguration) throws](mlmodeltransformeradaptor/init(contentsof:configuration:).md)
+- [init(contentsOf: URL, configuration: MLModelConfiguration) throws](./mlmodeltransformeradaptor/init%28contentsof,configuration%29.md)
   Creates a model adaptor from a CoreML model URL.
 ### Getting the model
-- [let model: MLModel](mlmodeltransformeradaptor/model.md)
+- [let model: MLModel](./mlmodeltransformeradaptor/model.md)
   The CoreML model.
 ### Performing the transformation
-- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> MLShapedArray<Scalar>](mlmodeltransformeradaptor/applied(to:eventhandler:).md)
+- [func applied(to: MLShapedArray<Scalar>, eventHandler: EventHandler?) async throws -> MLShapedArray<Scalar>](./mlmodeltransformeradaptor/applied%28to,eventhandler%29.md)
   Performs a transformation on a single input.
 
 ## Relationships
 
 ### Conforms To
-- [Transformer](transformer.md)
+- [Transformer](./transformer.md)
 
 ## See Also
 
-- [struct MLModelClassifierAdaptor](mlmodelclassifieradaptor.md)
+### Core ML adaptors
+- [struct MLModelClassifierAdaptor](./mlmodelclassifieradaptor.md)
   A transformer that uses a Core ML model as a classifier.
-- [struct MLModelRegressorAdaptor](mlmodelregressoradaptor.md)
+- [struct MLModelRegressorAdaptor](./mlmodelregressoradaptor.md)
   A transformer that uses a Core ML model as a regressor.
-- [struct ModelMetadata](modelmetadata.md)
+- [struct ModelMetadata](./modelmetadata.md)
   User info keys that specify useful information about a model.
 
 

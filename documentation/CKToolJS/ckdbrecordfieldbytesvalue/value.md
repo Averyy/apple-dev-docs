@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of bytes this field contains.
 
@@ -10,7 +11,7 @@ The array of bytes this field contains.
 
 ## Declaration
 
-```swift
+```
 attribute ByteArray? value;
 ```
 

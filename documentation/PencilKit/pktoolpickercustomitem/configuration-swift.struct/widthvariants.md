@@ -1,7 +1,8 @@
 # widthVariants
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary with UI options for selecting width, with each element containing a width value and its corresponding image.
 
@@ -19,7 +20,8 @@ var widthVariants: [CGFloat : UIImage]
 
 ## See Also
 
-- [var defaultWidth: CGFloat](pktoolpickercustomitem/configuration-swift.struct/defaultwidth.md)
+### Customizing width
+- [var defaultWidth: CGFloat](./defaultwidth.md)
   The default width for the tool.
 
 

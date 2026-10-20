@@ -1,7 +1,8 @@
 # AirPrint
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures AirPrint printer discoverability in the user’s printer list.
 
@@ -14,7 +15,7 @@ The payload that configures AirPrint printer discoverability in the user’s pri
 
 ## Declaration
 
-```swift
+```
 object AirPrint
 ```
 
@@ -22,7 +23,7 @@ object AirPrint
 
 Specify `com.apple.airprint` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Specify `com.apple.airprint` as the payload type.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -84,7 +85,7 @@ Specify `com.apple.airprint` as the payload type.
 ## Topics
 
 ### Objects
-- [object AirPrint.AirPrintItem](airprint/airprintitem.md)
+- [object AirPrint.AirPrintItem](./airprint/airprintitem.md)
   A dictionary of AirPrint printer details.
 
 ## Properties
@@ -93,7 +94,8 @@ Specify `com.apple.airprint` as the payload type.
 
 ## See Also
 
-- [object Printing](printing.md)
+### Printing
+- [object Printing](./printing.md)
   The payload that configures printers.
 
 

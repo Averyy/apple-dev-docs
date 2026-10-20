@@ -1,16 +1,17 @@
 # resetClip()
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,10 +19,15 @@
 func resetClip()
 ```
 
+```c
+extern void CGContextResetClip(CGContextRef c);
+```
+
 ## See Also
 
-- [func draw(CGImage, in: CGRect, by: CGToneMapping, options: CFDictionary?) -> Bool](cgcontext/draw(_:in:by:options:).md)
-- [func setEDRTargetHeadroom(Float) -> Bool](cgcontext/setedrtargetheadroom(_:).md)
+### Instance Methods
+- [func draw(CGImage, in: CGRect, by: CGToneMapping, options: CFDictionary?) -> Bool](./draw%28_,in,by,options%29.md)
+- [func setEDRTargetHeadroom(Float) -> Bool](./setedrtargetheadroom%28_%29.md)
 
 
 ---

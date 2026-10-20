@@ -1,7 +1,8 @@
 # normal
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The normal of the contacting surfaces at the contact point. The normal direction points from the second shape to the first shape in scene coordinate space.
 

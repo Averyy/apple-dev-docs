@@ -1,7 +1,8 @@
 # bluetooth
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Bluetooth system menu bar item.
 
@@ -13,6 +14,10 @@ The Bluetooth system menu bar item.
 
 ```swift
 static let bluetooth: AEMenuBarItem
+```
+
+```c
+extern AEMenuBarItem const AEMenuBarItemBluetooth;
 ```
 
 

@@ -1,7 +1,8 @@
 # st_birthtim
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Time of file creation, given as a C `timespec` since the Epoch.
 

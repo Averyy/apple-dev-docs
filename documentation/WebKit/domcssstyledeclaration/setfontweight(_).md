@@ -1,7 +1,8 @@
 # setFontWeight(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setFontWeight(_ fontWeight: String!)
+```
+
+```objc
+- (void) setFontWeight:(NSString *) fontWeight;
 ```
 
 

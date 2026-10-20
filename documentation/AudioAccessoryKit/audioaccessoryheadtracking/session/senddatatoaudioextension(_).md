@@ -1,7 +1,8 @@
 # sendDataToAudioExtension(_:)
 
 **Framework**: AudioAccessoryKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forward a frame of IMU sensor data from the accessory to the Spatial Audio renderer.
 
@@ -16,7 +17,7 @@ final func sendDataToAudioExtension(_ data: Data) throws
 
 #### Discussion
 
-> **Note**: `AudioAccessoryError.invalidDataSize` if `data` is empty or larger than 70 bytes; `AudioAccessoryError.notActivated` if the session is not currently active.
+> **Throws**: `AudioAccessoryError.invalidDataSize` if `data` is empty or larger than 70 bytes; `AudioAccessoryError.notActivated` if the session is not currently active.
 
 ## Parameters
 

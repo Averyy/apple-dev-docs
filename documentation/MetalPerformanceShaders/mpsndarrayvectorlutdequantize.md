@@ -1,7 +1,8 @@
 # MPSNDArrayVectorLUTDequantize
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -17,27 +18,31 @@
 class MPSNDArrayVectorLUTDequantize
 ```
 
+```objc
+@interface MPSNDArrayVectorLUTDequantize : MPSNDArrayMultiaryKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, axis: Int)](mpsndarrayvectorlutdequantize/init(device:axis:).md)
+- [init(device: any MTLDevice, axis: Int)](./mpsndarrayvectorlutdequantize/init%28device,axis%29.md)
 ### Instance Properties
-- [var vectorAxis: Int](mpsndarrayvectorlutdequantize/vectoraxis.md)
+- [var vectorAxis: Int](./mpsndarrayvectorlutdequantize/vectoraxis.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSNDArrayMultiaryKernel](mpsndarraymultiarykernel.md)
+- [MPSNDArrayMultiaryKernel](./mpsndarraymultiarykernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

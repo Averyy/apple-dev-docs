@@ -1,7 +1,8 @@
 # threadNetworkIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for a Thread network that a home hub provides.
 
@@ -17,9 +18,10 @@ let threadNetworkIdentifier: Data
 
 ## See Also
 
-- [let hubPairingIdentity: HMHomeManager.PairingIdentity](hmhomemanager/provisionalconfiguration/hubpairingidentity.md)
+### Identifying a provisional home
+- [let hubPairingIdentity: HMHomeManager.PairingIdentity](./hubpairingidentity.md)
   Identity information that an installation service uses to set up a provisional home and pair devices.
-- [var dictionaryRepresentation: [String : any Sendable]](hmhomemanager/provisionalconfiguration/dictionaryrepresentation.md)
+- [var dictionaryRepresentation: [String : any Sendable]](./dictionaryrepresentation.md)
   A dictionary of attributes that an installation service uses to configure a home.
 
 

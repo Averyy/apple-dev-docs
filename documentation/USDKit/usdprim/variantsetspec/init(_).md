@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Narrows an untyped [`USDLayer.Spec`](usdlayer/spec.md) to a variant set spec.
+Narrows an untyped [`USDLayer.Spec`](../../usdlayer/spec.md) to a variant set spec.
 
 **Availability**:
 - iOS 27.0+

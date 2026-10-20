@@ -1,7 +1,8 @@
 # SFSpeechRecognitionTaskHint.unspecified
 
 **Framework**: Speech  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unspecified type of task.
 
@@ -18,17 +19,22 @@ An unspecified type of task.
 case unspecified
 ```
 
+```c
+SFSpeechRecognitionTaskHintUnspecified
+```
+
 #### Discussion
 
 Use this hint type when the intended use for captured speech does not match the other task types.
 
 ## See Also
 
-- [SFSpeechRecognitionTaskHint.dictation](sfspeechrecognitiontaskhint/dictation.md)
+### Hints
+- [SFSpeechRecognitionTaskHint.dictation](./dictation.md)
   A task that uses captured speech for text entry.
-- [SFSpeechRecognitionTaskHint.search](sfspeechrecognitiontaskhint/search.md)
+- [SFSpeechRecognitionTaskHint.search](./search.md)
   A task that uses captured speech to specify search terms.
-- [SFSpeechRecognitionTaskHint.confirmation](sfspeechrecognitiontaskhint/confirmation.md)
+- [SFSpeechRecognitionTaskHint.confirmation](./confirmation.md)
   A task that uses captured speech for short, confirmation-style requests.
 
 

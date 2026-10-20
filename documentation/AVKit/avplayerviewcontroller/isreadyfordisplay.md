@@ -1,7 +1,8 @@
 # isReadyForDisplay
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the player item’s first video frame is ready for display.
 
@@ -15,6 +16,10 @@ A Boolean value that indicates whether the player item’s first video frame is 
 
 ```swift
 var isReadyForDisplay: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isReadyForDisplay) BOOL readyForDisplay;
 ```
 
 #### Discussion

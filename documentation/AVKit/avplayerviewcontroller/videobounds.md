@@ -1,7 +1,8 @@
 # videoBounds
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size and position of the video image within the bounds of the view controller’s view.
 
@@ -17,23 +18,28 @@ The size and position of the video image within the bounds of the view controlle
 var videoBounds: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect videoBounds;
+```
+
 #### Discussion
 
-The size and position of this rectangle depend on the aspect ratio of the media (like 16:9 or 4:3), the bounds of the player view controller’s view, and the view controller’s [`videoGravity`](avplayerviewcontroller/videogravity.md).
+The size and position of this rectangle depend on the aspect ratio of the media (like 16:9 or 4:3), the bounds of the player view controller’s view, and the view controller’s [`videoGravity`](./videogravity.md).
 
 This property is key-value observable.
 
 ## See Also
 
-- [var showsPlaybackControls: Bool](avplayerviewcontroller/showsplaybackcontrols.md)
+### Configuring presentation
+- [var showsPlaybackControls: Bool](./showsplaybackcontrols.md)
   A Boolean value that indicates whether the player view controller shows playback controls.
-- [var contentOverlayView: UIView?](avplayerviewcontroller/contentoverlayview.md)
+- [var contentOverlayView: UIView?](./contentoverlayview.md)
   A view that displays between the video content and the playback controls.
-- [var videoGravity: AVLayerVideoGravity](avplayerviewcontroller/videogravity.md)
+- [var videoGravity: AVLayerVideoGravity](./videogravity.md)
   A string that specifies how the video displays within the bounds of the view controller’s view.
-- [var showsTimecodes: Bool](avplayerviewcontroller/showstimecodes.md)
+- [var showsTimecodes: Bool](./showstimecodes.md)
   A Boolean value that determines whether the player view displays timecodes, if available.
-- [var appliesPreferredDisplayCriteriaAutomatically: Bool](avplayerviewcontroller/appliespreferreddisplaycriteriaautomatically.md)
+- [var appliesPreferredDisplayCriteriaAutomatically: Bool](./appliespreferreddisplaycriteriaautomatically.md)
   A Boolean value that indicates whether the view controller automatically sets the screen’s display criteria to match that of the currently playing asset.
 
 

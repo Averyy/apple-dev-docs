@@ -1,7 +1,8 @@
 # allowedUnits
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The units that may be included in the output string.
 
@@ -22,11 +23,12 @@ var allowedUnits: Set<Duration.UnitsFormatStyle.Unit>
 
 ## See Also
 
-- [Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit.md)
+### Working with units
+- [Duration.UnitsFormatStyle.Unit](./unit.md)
   A unit to use in formatting a duration.
-- [var maximumUnitCount: Int?](duration/unitsformatstyle/maximumunitcount.md)
+- [var maximumUnitCount: Int?](./maximumunitcount.md)
   The maximum number of time units to include in the output string.
-- [var valueLengthLimits: Range<Int>?](duration/unitsformatstyle/valuelengthlimits.md)
+- [var valueLengthLimits: Range<Int>?](./valuelengthlimits.md)
   The padding or truncating behavior of the unit value.
 
 

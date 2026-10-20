@@ -1,7 +1,8 @@
 # init(for:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the class description for the specified class or, if it is not scriptable, for the first superclass that is.
 
@@ -15,6 +16,10 @@ Returns the class description for the specified class or, if it is not scriptabl
 init?(for aClass: AnyClass)
 ```
 
+```objc
++ (NSScriptClassDescription *) classDescriptionForClass:(Class) aClass;
+```
+
 #### Return Value
 
 The class description for the class specified by `aClass` or, if that class isn’t scriptable, for the class description for the first superclass that is. Returns `nil` if it doesn’t find a scriptable class.
@@ -25,9 +30,10 @@ The class description for the class specified by `aClass` or, if that class isn�
 
 ## See Also
 
-- [func forKey(String) -> NSScriptClassDescription?](nsscriptclassdescription/forkey(_:).md)
+### Getting a Script Class Description
+- [func forKey(String) -> NSScriptClassDescription?](./forkey%28_%29.md)
   Returns the class description instance for the class type of the specified attribute or relationship.
-- [var superclass: NSScriptClassDescription?](nsscriptclassdescription/superclass.md)
+- [var superclass: NSScriptClassDescription?](./superclass.md)
   Returns the class description instance for the superclass of the receiver’s class.
 
 

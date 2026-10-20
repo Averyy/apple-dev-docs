@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances to the next entity and returns it.
 
@@ -11,7 +12,7 @@ Advances to the next entity and returns it.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

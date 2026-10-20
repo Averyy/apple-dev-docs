@@ -1,7 +1,8 @@
 # alignmentRectProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that returns the alignment rectangle for the starting and ending views.
 
@@ -9,8 +10,8 @@ A closure that returns the alignment rectangle for the starting and ending views
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- tvOS ?+
-- visionOS ?+
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,12 @@ var alignmentRectProvider: ((UIViewController.Transition.ZoomOptions.AlignmentRe
 
 ## See Also
 
-- [UIViewController.Transition.ZoomOptions.AlignmentRectContext](uiviewcontroller/transition/zoomoptions/alignmentrectcontext.md)
+### Setting options
+- [UIViewController.Transition.ZoomOptions.AlignmentRectContext](./alignmentrectcontext.md)
   An object that contains a zoom transition’s starting and ending views.
-- [var dimmingColor: UIColor?](uiviewcontroller/transition/zoomoptions/dimmingcolor.md)
+- [var dimmingColor: UIColor?](./dimmingcolor.md)
   The dimming color.
-- [var dimmingVisualEffect: UIBlurEffect?](uiviewcontroller/transition/zoomoptions/dimmingvisualeffect.md)
+- [var dimmingVisualEffect: UIBlurEffect?](./dimmingvisualeffect.md)
   The dimming visual effect.
 
 

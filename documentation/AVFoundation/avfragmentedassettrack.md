@@ -1,7 +1,8 @@
 # AVFragmentedAssetTrack
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides the track-level interface to inspect a fragmented assetâ€™s media tracks.
 
@@ -20,33 +21,38 @@ An object that provides the track-level interface to inspect a fragmented assetâ
 class AVFragmentedAssetTrack
 ```
 
+```objc
+@interface AVFragmentedAssetTrack : AVAssetTrack
+```
+
 #### Overview
 
-This class subclasses [`AVAssetTrack`](avassettrack.md). It has no methods or properties of its own.
+This class subclasses [`AVAssetTrack`](./avassettrack.md). It has no methods or properties of its own.
 
 ## Relationships
 
 ### Inherits From
-- [AVAssetTrack](avassettrack.md)
+- [AVAssetTrack](./avassettrack.md)
 ### Conforms To
-- [AVAsynchronousKeyValueLoading](avasynchronouskeyvalueloading.md)
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AVAsynchronousKeyValueLoading](./avasynchronouskeyvalueloading.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVFragmentedAsset](avfragmentedasset.md)
+### Fragmented assets
+- [class AVFragmentedAsset](./avfragmentedasset.md)
   An asset with a duration that the system can extend without modifying its existing media data.
-- [class AVFragmentedAssetMinder](avfragmentedassetminder.md)
+- [class AVFragmentedAssetMinder](./avfragmentedassetminder.md)
   An object that periodically checks whether the system adds new fragments to a fragmented asset.
-- [protocol AVFragmentMinding](avfragmentminding.md)
+- [protocol AVFragmentMinding](./avfragmentminding.md)
   A protocol that defines whether an asset supports fragment minding.
 
 

@@ -46,9 +46,8 @@
       "hash": "a5366c0e527b8dea0a66fc932cc20e0e5bd51df35df55d5e59659bf54ef30619"
     },
     "https://developer.apple.com/documentation/createml/creating_a_model_from_tabular_data": {
-      "etag": "W/\"75df95e48725899ff22fb65948014136\"",
       "file_path": "documentation/CreateML/creating_a_model_from_tabular_data.md",
-      "hash": "665ca969087b21a36307fbff54ee91a5ecf290c6d245f7098691675115fe5e47"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/createml/data-table-derivation-operations": {
       "etag": "\"7426-659023b417d34-df\"",
@@ -66,9 +65,8 @@
       "hash": "2c371daa6ac512f2f02bb7829796d1617a933bb42388e6ad287b3a7a2e0c8d1b"
     },
     "https://developer.apple.com/documentation/createml/detecting_human_actions_in_a_live_video_feed": {
-      "etag": "W/\"51131dbac31e3ef23166b0c739c4049b\"",
       "file_path": "documentation/CreateML/detecting_human_actions_in_a_live_video_feed.md",
-      "hash": "74e157e5b6501816d1cc32bb795daac4d5bc8b16657e28d266e761033b07402b"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/createml/gathering-training-videos-for-an-action-classifier": {
       "etag": "\"24fd-659023b2080c0-df\"",
@@ -2591,9 +2589,8 @@
       "hash": "85c05f716b6fee1af259137c8a3e35e1fcc476a76356e42ba4deb31ae8d042f9"
     },
     "https://developer.apple.com/documentation/createml/mldatavalue/dictionarytype/init()": {
-      "etag": "W/\"7955838b2260aeee38ad419fc53d9a22\"",
       "file_path": "documentation/CreateML/mldatavalue/dictionarytype/init().md",
-      "hash": "b09fc108832d06b94939d34d39c528d52120a98e597f837762b0b22ddac7fa6b"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/createml/mldatavalue/dictionarytype/init(_:)": {
       "etag": "\"1c02-65d55becf09de-df\"",
@@ -2691,9 +2688,8 @@
       "hash": "06a5614ca4cf81d82536e2f9035746b39227bfc7cc0a27e9520d13b4390d6c53"
     },
     "https://developer.apple.com/documentation/createml/mldatavalue/multiarraytype/init()": {
-      "etag": "W/\"f452e2cd345ca720fd1068c07c4f6c95\"",
       "file_path": "documentation/CreateML/mldatavalue/multiarraytype/init().md",
-      "hash": "00aacbab543108b3d64592f008425079c374b22fa8bd3a4148b15ea748146084"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/createml/mldatavalue/multiarraytype/init(_:)": {
       "etag": "\"182d-65d55becd7a84-df\"",
@@ -2751,9 +2747,8 @@
       "hash": "9ae1c233da1ed2921affe46d6d97ad740737335f443b74379e044a1e241df502"
     },
     "https://developer.apple.com/documentation/createml/mldatavalue/sequencetype/init()": {
-      "etag": "W/\"54aef5faeba66f873d2699dbc5a056d0\"",
       "file_path": "documentation/CreateML/mldatavalue/sequencetype/init().md",
-      "hash": "9ec15f00e44943661ae22323fa25e4586b6ba40e489150ed5a4b10cc33fb653a"
+      "hash": ""
     },
     "https://developer.apple.com/documentation/createml/mldatavalue/sequencetype/init(_:)": {
       "etag": "\"2344-65d55becf09de-df\"",
@@ -8851,9 +8846,8 @@
       "hash": "a5366c0e527b8dea0a66fc932cc20e0e5bd51df35df55d5e59659bf54ef30619"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/creating_a_model_from_tabular_data.json": {
-      "etag": "W/\"75df95e48725899ff22fb65948014136\"",
       "file_path": "documentation/CreateML/creating_a_model_from_tabular_data.md",
-      "hash": "665ca969087b21a36307fbff54ee91a5ecf290c6d245f7098691675115fe5e47"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/data-table-derivation-operations.json": {
       "etag": "\"7426-659023b417d34-df\"",
@@ -8871,9 +8865,8 @@
       "hash": "2c371daa6ac512f2f02bb7829796d1617a933bb42388e6ad287b3a7a2e0c8d1b"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/detecting_human_actions_in_a_live_video_feed.json": {
-      "etag": "W/\"51131dbac31e3ef23166b0c739c4049b\"",
       "file_path": "documentation/CreateML/detecting_human_actions_in_a_live_video_feed.md",
-      "hash": "74e157e5b6501816d1cc32bb795daac4d5bc8b16657e28d266e761033b07402b"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/gathering-training-videos-for-an-action-classifier.json": {
       "etag": "\"24fd-659023b2080c0-df\"",
@@ -11416,9 +11409,8 @@
       "status": "error"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/dictionarytype/init().json": {
-      "etag": "W/\"7955838b2260aeee38ad419fc53d9a22\"",
       "file_path": "documentation/CreateML/mldatavalue/dictionarytype/init().md",
-      "hash": "b09fc108832d06b94939d34d39c528d52120a98e597f837762b0b22ddac7fa6b"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/dictionarytype/init(_:).json": {
       "etag": "\"1c02-65d55becf09de-df\"",
@@ -11516,9 +11508,8 @@
       "hash": "06a5614ca4cf81d82536e2f9035746b39227bfc7cc0a27e9520d13b4390d6c53"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/multiarraytype/init().json": {
-      "etag": "W/\"f452e2cd345ca720fd1068c07c4f6c95\"",
       "file_path": "documentation/CreateML/mldatavalue/multiarraytype/init().md",
-      "hash": "00aacbab543108b3d64592f008425079c374b22fa8bd3a4148b15ea748146084"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/multiarraytype/init(_:).json": {
       "etag": "\"182d-65d55becd7a84-df\"",
@@ -11576,9 +11567,8 @@
       "hash": "9ae1c233da1ed2921affe46d6d97ad740737335f443b74379e044a1e241df502"
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/sequencetype/init().json": {
-      "etag": "W/\"54aef5faeba66f873d2699dbc5a056d0\"",
       "file_path": "documentation/CreateML/mldatavalue/sequencetype/init().md",
-      "hash": "9ec15f00e44943661ae22323fa25e4586b6ba40e489150ed5a4b10cc33fb653a"
+      "hash": ""
     },
     "https://developer.apple.com/tutorials/data/documentation/createml/mldatavalue/sequencetype/init(_:).json": {
       "etag": "\"2344-65d55becf09de-df\"",
@@ -17632,6 +17622,9 @@
     }
   },
   "metadata": {
+    "render": {
+      "version": 1
+    },
     "total_pages": 3527
   }
 }

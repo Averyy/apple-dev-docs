@@ -1,7 +1,8 @@
 # AppClipHeaderImageCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes you set that describe the new App Clip Header Images resource.
 
@@ -10,7 +11,7 @@ The attributes you set that describe the new App Clip Header Images resource.
 
 ## Declaration
 
-```swift
+```
 object AppClipHeaderImageCreateRequest.Data.Attributes
 ```
 
@@ -21,7 +22,8 @@ object AppClipHeaderImageCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object AppClipHeaderImageCreateRequest.Data.Relationships](appclipheaderimagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppClipHeaderImageCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

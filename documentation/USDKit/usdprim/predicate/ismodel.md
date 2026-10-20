@@ -1,7 +1,8 @@
 # isModel
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns true if this prim’s kind metadata identifies it as a model.
 

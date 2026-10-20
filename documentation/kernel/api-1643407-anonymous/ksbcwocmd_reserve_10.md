@@ -1,7 +1,8 @@
 # kSBCWOCmd_RESERVE_10
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSBCWOCmd_RESERVE_10 = 0x56
 ```
 

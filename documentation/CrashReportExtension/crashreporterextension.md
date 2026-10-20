@@ -1,7 +1,8 @@
 # CrashReporterExtension
 
 **Framework**: CrashReportExtension  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The base type for crash reporter extensions.
 
@@ -9,7 +10,7 @@ The base type for crash reporter extensions.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,9 @@ protocol CrashReporterExtension : AppExtension
 
 #### Overview
 
-Conform to this protocol and implement [`processCrashReport(process:)`](crashreporterextension/processcrashreport(process:).md) to create a crash reporter. Your extension runs in its own process, separate from the crashed app.
+Conform to this protocol and implement [`processCrashReport(process:)`](./crashreporterextension/processcrashreport%28process%29.md) to create a crash reporter. Your extension runs in its own process, separate from the crashed app.
 
-The following example shows an implementation that accesses the crashed process’s [`corpsePort`](crashedprocess/corpseport.md) and [`binaryImages`](crashedprocess/binaryimages.md) for use in generating a crash report.
+The following example shows an implementation that accesses the crashed process’s [`corpsePort`](./crashedprocess/corpseport.md) and [`binaryImages`](./crashedprocess/binaryimages.md) for use in generating a crash report.
 
 ```swift
 @main
@@ -39,15 +40,15 @@ After collecting the needed information from the crashed process, you can persis
 ## Topics
 
 ### Processing a crash report
-- [func processCrashReport(process: CrashedProcess)](crashreporterextension/processcrashreport(process:).md)
+- [func processCrashReport(process: CrashedProcess)](./crashreporterextension/processcrashreport%28process%29.md)
   A method the system calls when a crash report is ready to be processed.
-- [class CrashedProcess](crashedprocess.md)
+- [class CrashedProcess](./crashedprocess.md)
   A synchronous client for accessing crash data from the host process.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
 
 
 ---

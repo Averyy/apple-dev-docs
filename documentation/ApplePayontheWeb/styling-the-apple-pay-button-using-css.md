@@ -1,16 +1,17 @@
 # Styling the Apple Pay Button Using CSS
 
-**Framework**: Apple Pay on the Web
+**Framework**: Apple Pay on the Web  
+**Role**: Article
 
 Choose a button color and size to suit your webpage.
 
 #### Overview
 
-You can experiment with styling and display of an Apple Pay button using the [`Apple Pay on the Web Demo`](https://developer.apple.comhttps://applepaydemo.apple.com). To support devices running iOS 10 and macOS 10.12, use the CSS template sample code in [`Displaying Apple Pay Buttons Using CSS`](displaying-apple-pay-buttons-using-css.md) to draw the appropriate button.
+You can experiment with styling and display of an Apple Pay button using the [Apple Pay on the Web Demo](https://applepaydemo.apple.com). To support devices running iOS 10 and macOS 10.12, use the CSS template sample code in [Displaying Apple Pay Buttons Using CSS](./displaying-apple-pay-buttons-using-css.md) to draw the appropriate button.
 
 To display an Apple Pay button set the `-webkit-appearance` CSS property of the element to `-apple-pay-button`.
 
-See the [`Human Interface Guidelines > Apple Pay`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/) for more information.
+See the [Human Interface Guidelines > Apple Pay](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/) for more information.
 
 ##### Set the Button Size
 
@@ -21,7 +22,7 @@ You can resize the Apple Pay button to fit your website. The minimum displayed w
 
 ##### Set the Button Style
 
-You can choose from several style options for the Apple Pay button to match your web site. See [`Human Interface Guidelines > Apple Pay`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/) for guidance on which style to choose.
+You can choose from several style options for the Apple Pay button to match your web site. See [Human Interface Guidelines > Apple Pay > Buttons and Marks](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/) for guidance on which style to choose.
 
 To display the black Apple Pay button, set the `-apple-pay-button-style` CSS property to `black`.
 
@@ -37,7 +38,7 @@ lang=en></div>
 
 The color options for the `-apple-pay-button-style` CSS property are `white`, `white-outline`, or `black`.
 
-##### Set the Buttons Corner Radius
+##### Set the Button’s Corner Radius
 
 You may configure the border radius of your Apple Pay button using the css `border-radius` property. The Apple Pay button supports a single `border-radius` value. If you set multiple `border-radius` properties, the largest value applies to all corners.
 
@@ -56,7 +57,8 @@ lang=en></div>
 
 ## See Also
 
-- [Localizing Apple Pay Buttons Using CSS](localizing-apple-pay-buttons-using-css.md)
+### Styling the Apple Pay Button
+- [Localizing Apple Pay Buttons Using CSS](./localizing-apple-pay-buttons-using-css.md)
   Set the language of an Apple Pay button.
 
 

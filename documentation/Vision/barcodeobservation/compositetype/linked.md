@@ -1,7 +1,8 @@
 # BarcodeObservation.CompositeType.linked
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A type that represents a linked composite type.
 
@@ -22,11 +23,12 @@ case linked
 
 ## See Also
 
-- [BarcodeObservation.CompositeType.gs1TypeA](barcodeobservation/compositetype/gs1typea.md)
+### Getting the composite types
+- [BarcodeObservation.CompositeType.gs1TypeA](./gs1typea.md)
   A type that represents trade items in bulk.
-- [BarcodeObservation.CompositeType.gs1TypeB](barcodeobservation/compositetype/gs1typeb.md)
+- [BarcodeObservation.CompositeType.gs1TypeB](./gs1typeb.md)
   A type that represents trade items by piece.
-- [BarcodeObservation.CompositeType.gs1TypeC](barcodeobservation/compositetype/gs1typec.md)
+- [BarcodeObservation.CompositeType.gs1TypeC](./gs1typec.md)
   A type that represents trade items in varying quantity.
 
 

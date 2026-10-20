@@ -1,7 +1,8 @@
 # isSpecularHitDistanceTextureEnabled
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scaler evaluates a specular hit distance texture as part of its operation.
 
@@ -16,6 +17,10 @@ A Boolean value indicating whether the scaler evaluates a specular hit distance 
 
 ```swift
 var isSpecularHitDistanceTextureEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, getter=isSpecularHitDistanceTextureEnabled) BOOL specularHitDistanceTextureEnabled;
 ```
 
 

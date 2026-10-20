@@ -1,7 +1,8 @@
 # init(_:widget:relevanceEntries:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview of a relevance-driven widget.
 

@@ -1,7 +1,8 @@
 # NLModel.ModelType.sequence
 
 **Framework**: Natural Language  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A sequence model type that tags text at the token level.
 
@@ -20,9 +21,14 @@ A sequence model type that tags text at the token level.
 case sequence
 ```
 
+```c
+NLModelTypeSequence
+```
+
 ## See Also
 
-- [NLModel.ModelType.classifier](nlmodel/modeltype/classifier.md)
+### Model types
+- [NLModel.ModelType.classifier](./classifier.md)
   A classifier model type that tags text at the phrase, sentence, paragraph, or higher level.
 
 

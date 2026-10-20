@@ -1,7 +1,8 @@
 # effect
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Parameters that can vary for different types.
 

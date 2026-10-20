@@ -1,7 +1,8 @@
 # CiProduct.Relationships.App
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the Products and Apps resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the Products and Apps 
 
 ## Declaration
 
-```swift
+```
 object CiProduct.Relationships.App
 ```
 
 ## Topics
 
 ### Objects
-- [object CiProduct.Relationships.App.Data](ciproduct/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+- [object CiProduct.Relationships.App.Data](./app-data.dictionary/data-data.dictionary.md)
   The type and ID of a related Apps resource.
 
 ## Properties
@@ -27,9 +28,10 @@ object CiProduct.Relationships.App
 
 ## See Also
 
-- [object CiProduct.Relationships.BundleId](ciproduct/relationships-data.dictionary/bundleid-data.dictionary.md)
+### Objects
+- [object CiProduct.Relationships.BundleId](./bundleid-data.dictionary.md)
   The data and links that describe the relationship between the Products and the Bundle IDs resources.
-- [object CiProduct.Relationships.PrimaryRepositories](ciproduct/relationships-data.dictionary/primaryrepositories-data.dictionary.md)
+- [object CiProduct.Relationships.PrimaryRepositories](./primaryrepositories-data.dictionary.md)
   The data, links, and paging information that describe the relationship between the Products resource and the Repositories resource that represents the primary repository.
 
 

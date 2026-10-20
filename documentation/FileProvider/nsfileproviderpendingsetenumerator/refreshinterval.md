@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The amount of time, in seconds, between updates to the pending set.
@@ -19,9 +20,14 @@ The amount of time, in seconds, between updates to the pending set.
 var refreshInterval: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval refreshInterval;
+```
+
 ## See Also
 
-- [var domainVersion: NSFileProviderDomainVersion?](nsfileproviderpendingsetenumerator/domainversion.md)
+### Accessing Refresh Data
+- [var domainVersion: NSFileProviderDomainVersion?](./domainversion.md)
   The domain version when the system last refreshed the pending set.
 
 

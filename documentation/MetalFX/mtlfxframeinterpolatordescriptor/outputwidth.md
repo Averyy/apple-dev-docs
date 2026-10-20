@@ -1,7 +1,8 @@
 # outputWidth
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width, in pixels, of the output color texture for the frame interpolator.
 
@@ -16,6 +17,10 @@ The width, in pixels, of the output color texture for the frame interpolator.
 
 ```swift
 var outputWidth: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger outputWidth;
 ```
 
 

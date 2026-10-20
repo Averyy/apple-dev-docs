@@ -1,15 +1,20 @@
 # OBEXSessionEvent
 
 **Framework**: IOBluetooth  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 struct OBEXSessionEvent
+```
+
+```c
+struct OBEXSessionEvent;
 ```
 
 #### Overview
@@ -19,44 +24,45 @@ When a new session event occurs, your selector (or C callback) will be given an 
 ## Topics
 
 ### Initializers
-- [init()](obexsessionevent/init.md)
-- [init(type: OBEXSessionEventType, session: OBEXSessionRef!, refCon: UnsafeMutableRawPointer!, isEndOfEventData: DarwinBoolean, reserved1: UnsafeMutableRawPointer!, reserved2: UnsafeMutableRawPointer!, u: OBEXSessionEvent.__Unnamed_union_u)](obexsessionevent/init(type:session:refcon:isendofeventdata:reserved1:reserved2:u:).md)
+- [init()](./obexsessionevent/init%28%29.md)
+- [init(type: OBEXSessionEventType, session: OBEXSessionRef!, refCon: UnsafeMutableRawPointer!, isEndOfEventData: DarwinBoolean, reserved1: UnsafeMutableRawPointer!, reserved2: UnsafeMutableRawPointer!, u: OBEXSessionEvent.__Unnamed_union_u)](./obexsessionevent/init%28type,session,refcon,isendofeventdata,reserved1,reserved2,u%29.md)
 ### Instance Properties
-- [var isEndOfEventData: DarwinBoolean](obexsessionevent/isendofeventdata.md)
-- [var refCon: UnsafeMutableRawPointer!](obexsessionevent/refcon.md)
-- [var reserved1: UnsafeMutableRawPointer!](obexsessionevent/reserved1.md)
-- [var reserved2: UnsafeMutableRawPointer!](obexsessionevent/reserved2.md)
-- [var session: OBEXSessionRef!](obexsessionevent/session.md)
-- [var type: OBEXSessionEventType](obexsessionevent/type.md)
-- [var u: OBEXSessionEvent.__Unnamed_union_u](obexsessionevent/u.md)
+- [var isEndOfEventData: DarwinBoolean](./obexsessionevent/isendofeventdata.md)
+- [var refCon: UnsafeMutableRawPointer!](./obexsessionevent/refcon.md)
+- [var reserved1: UnsafeMutableRawPointer!](./obexsessionevent/reserved1.md)
+- [var reserved2: UnsafeMutableRawPointer!](./obexsessionevent/reserved2.md)
+- [var session: OBEXSessionRef!](./obexsessionevent/session.md)
+- [var type: OBEXSessionEventType](./obexsessionevent/type.md)
+- [var u: OBEXSessionEvent.__Unnamed_union_u](./obexsessionevent/u.md)
 
 ## See Also
 
-- [struct OBEXAbortCommandData](obexabortcommanddata.md)
+### Data Types
+- [struct OBEXAbortCommandData](./obexabortcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXAbortCommandResponseData](obexabortcommandresponsedata.md)
+- [struct OBEXAbortCommandResponseData](./obexabortcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXConnectCommandData](obexconnectcommanddata.md)
+- [struct OBEXConnectCommandData](./obexconnectcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXConnectCommandResponseData](obexconnectcommandresponsedata.md)
+- [struct OBEXConnectCommandResponseData](./obexconnectcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXDisconnectCommandData](obexdisconnectcommanddata.md)
+- [struct OBEXDisconnectCommandData](./obexdisconnectcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXDisconnectCommandResponseData](obexdisconnectcommandresponsedata.md)
+- [struct OBEXDisconnectCommandResponseData](./obexdisconnectcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXErrorData](obexerrordata.md)
+- [struct OBEXErrorData](./obexerrordata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXGetCommandData](obexgetcommanddata.md)
+- [struct OBEXGetCommandData](./obexgetcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXGetCommandResponseData](obexgetcommandresponsedata.md)
+- [struct OBEXGetCommandResponseData](./obexgetcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXPutCommandData](obexputcommanddata.md)
+- [struct OBEXPutCommandData](./obexputcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXPutCommandResponseData](obexputcommandresponsedata.md)
+- [struct OBEXPutCommandResponseData](./obexputcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXSetPathCommandData](obexsetpathcommanddata.md)
+- [struct OBEXSetPathCommandData](./obexsetpathcommanddata.md)
   Part of the OBEXSessionEvent structure.
-- [struct OBEXSetPathCommandResponseData](obexsetpathcommandresponsedata.md)
+- [struct OBEXSetPathCommandResponseData](./obexsetpathcommandresponsedata.md)
   Part of the OBEXSessionEvent structure.
 
 

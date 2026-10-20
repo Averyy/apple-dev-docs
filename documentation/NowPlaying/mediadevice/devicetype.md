@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType
 
 **Framework**: Now Playing  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of device that plays media.
 
@@ -24,44 +25,44 @@ Use this enumeration to specify the type of playback device in a remote session.
 ## Topics
 
 ### Enumeration Cases
-- [MediaDevice.DeviceType.car](mediadevice/devicetype/car.md)
+- [MediaDevice.DeviceType.car](./devicetype/car.md)
   An in-car entertainment system.
-- [MediaDevice.DeviceType.desktop](mediadevice/devicetype/desktop.md)
+- [MediaDevice.DeviceType.desktop](./devicetype/desktop.md)
   A desktop computer.
-- [MediaDevice.DeviceType.gamingConsole](mediadevice/devicetype/gamingconsole.md)
+- [MediaDevice.DeviceType.gamingConsole](./devicetype/gamingconsole.md)
   A gaming console.
-- [MediaDevice.DeviceType.laptop](mediadevice/devicetype/laptop.md)
+- [MediaDevice.DeviceType.laptop](./devicetype/laptop.md)
   A laptop computer.
-- [MediaDevice.DeviceType.mediaStick](mediadevice/devicetype/mediastick.md)
+- [MediaDevice.DeviceType.mediaStick](./devicetype/mediastick.md)
   A media streaming stick.
-- [MediaDevice.DeviceType.phone](mediadevice/devicetype/phone.md)
+- [MediaDevice.DeviceType.phone](./devicetype/phone.md)
   A phone.
-- [MediaDevice.DeviceType.setTopBox](mediadevice/devicetype/settopbox.md)
+- [MediaDevice.DeviceType.setTopBox](./devicetype/settopbox.md)
   A set-top box.
-- [MediaDevice.DeviceType.speaker](mediadevice/devicetype/speaker.md)
+- [MediaDevice.DeviceType.speaker](./devicetype/speaker.md)
   A speaker device.
-- [MediaDevice.DeviceType.speakerGroup](mediadevice/devicetype/speakergroup.md)
+- [MediaDevice.DeviceType.speakerGroup](./devicetype/speakergroup.md)
   A group of speakers playing together as a single unit.
-- [MediaDevice.DeviceType.tablet](mediadevice/devicetype/tablet.md)
+- [MediaDevice.DeviceType.tablet](./devicetype/tablet.md)
   A tablet device.
-- [MediaDevice.DeviceType.tv](mediadevice/devicetype/tv.md)
+- [MediaDevice.DeviceType.tv](./devicetype/tv.md)
   A television.
-- [MediaDevice.DeviceType.tvAndSpeaker](mediadevice/devicetype/tvandspeaker.md)
+- [MediaDevice.DeviceType.tvAndSpeaker](./devicetype/tvandspeaker.md)
   A television paired with a speaker.
-- [MediaDevice.DeviceType.wearable](mediadevice/devicetype/wearable.md)
+- [MediaDevice.DeviceType.wearable](./devicetype/wearable.md)
   A wearable device like a watch.
-- [MediaDevice.DeviceType.web](mediadevice/devicetype/web.md)
+- [MediaDevice.DeviceType.web](./devicetype/web.md)
   A web browser.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

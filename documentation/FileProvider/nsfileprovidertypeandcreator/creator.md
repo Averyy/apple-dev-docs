@@ -1,7 +1,8 @@
 # creator
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s creator code.
 
@@ -18,9 +19,14 @@ The item’s creator code.
 var creator: OSType
 ```
 
+```c
+OSType creator;
+```
+
 ## See Also
 
-- [var type: OSType](nsfileprovidertypeandcreator/type.md)
+### Accessing Type and Creator Codes
+- [var type: OSType](./type.md)
   The item’s type code.
 
 

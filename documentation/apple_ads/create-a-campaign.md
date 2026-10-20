@@ -1,32 +1,35 @@
 # Create a Campaign
 
 **Framework**: Apple Ads  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Creates a campaign to promote an app.
 
 **Availability**:
-- Search Ads 5.0+
+- Search Ads 5.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Mentions
 
-- [Apple Ads Campaign Management API 5](apple-search-ads-campaign-management-api-5.md)
-- [Apple Ads Campaign Management API 3](apple-search-ads-campaign-management-api-3.md)
-- [Apple Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
+- [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
+- [Apple Ads Campaign Management API 3](./apple-search-ads-campaign-management-api-3.md)
+- [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
 #### Discussion
 
 Essential points for creating campaigns are:
 
-- Use [`Search for iOS apps`](search-for-ios-apps.md) to retrieve your `adamId` to use in the request payload.
-- Use [`Find App Eligibility Records`](find-app-eligibility-records.md) to determine your app eligibility to run in campaigns.
+- Use [`Search for iOS apps`](./search-for-ios-apps.md) to retrieve your `adamId` to use in the request payload.
+- Use [`Find App Eligibility Records`](./find-app-eligibility-records.md) to determine your app eligibility to run in campaigns.
 - A `dailyBudgetAmount` is a required field to manage the daily budget of your campaigns.
 - Use the `countriesOrRegions` attribute to assign App Store locations. To advertise in multiple markets, group countries and regions into a single campaign using ISO alpha-2 country code values.
-- See the [`Campaign`](campaign.md) object and [`SupplySource`](supplysource.md) for descriptions of attributes.
+- See the [`Campaign`](./campaign.md) object and [`SupplySource`](./supplysource.md) for descriptions of attributes.
 
-After creating a campaign, see [`Create an Ad Group`](create-an-ad-group.md).
+After creating a campaign, see [`Create an Ad Group`](./create-an-ad-group.md).
 
-##### Payload Example Create a Campaign with a Manual Bid Strategy
+##### Payload example: Create a campaign with a manual bid strategy
 
 **Request**:
 
@@ -99,13 +102,13 @@ POST https://api.searchads.apple.com/api/v5/campaigns
 }
 ```
 
-##### Payload Example Create a Campaign with a Maximize Conversions Bid Strategy
+##### Payload example: Create a campaign with a Maximize Conversions bid strategy
 
 - Set the `biddingStrategy` value to `MAX_CONVERSIONS`. If not specified, `biddingStrategy` defaults to `MANUAL_CPT`.
 - A `targetCpa` is required.
 - Only the `APPSTORE_SEARCH_RESULTS` `supplySources` placement is supported.
 
-After creating a Maximize Conversions bid strategy, see the automated ad group payload example in [`Create an Ad Group`](create-an-ad-group.md).
+After creating a Maximize Conversions bid strategy, see the automated ad group payload example in [`Create an Ad Group`](./create-an-ad-group.md).
 
 **Request**:
 
@@ -204,19 +207,33 @@ POST https://api.searchads.apple.com/api/v5/campaigns
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `Campaign`
+
 The request body that includes the details of the campaign.
+
+## Responses
+
+- `200` OK (`CampaignResponse`, `application/json`): If the call succeeds, the API returns the [`Campaign`](./campaign.md) object in the response payload with an HTTP status code of `200(OK)`. If unsuccessful, the HTTP status code indicates the error with details in the error message.
+- `400` Bad Request (`ApiErrorResponse`, `application/json`): An invalid query or missing required parameters.
+- `401` Unauthorized (`ApiErrorResponse`, `application/json`): An unauthenticated call fails to get the requested response.
+- `403` Forbidden (`ApiErrorResponse`, `application/json`): Insufficient rights to the resource.
+- `404` Not Found (`ApiErrorResponse`, `application/json`): The API can’t locate the resource.
+- `429` (`ApiErrorResponse`, `application/json`): The API calls exceed rate-limit thresholds. See the Rate Limits subsection of [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md).
+- `500` Internal Server Error (`ApiErrorResponse`, `application/json`): The Apple Ads server is temporarily down or unreachable. The request may be valid, but you need to retry it later.
 
 ## See Also
 
-- [Find Campaigns](find-campaigns.md)
+### Campaign Endpoints
+- [Find Campaigns](./find-campaigns.md)
   Fetches campaigns with selector operators.
-- [Get a Campaign](get-a-campaign.md)
+- [Get a Campaign](./get-a-campaign.md)
   Fetches a specific campaign by campaign identifier.
-- [Get all Campaigns](get-all-campaigns.md)
+- [Get all Campaigns](./get-all-campaigns.md)
   Fetches all of an organization’s assigned campaigns.
-- [Update a Campaign](update-a-campaign.md)
+- [Update a Campaign](./update-a-campaign.md)
   Updates a campaign with a campaign identifier.
-- [Delete a Campaign](delete-a-campaign.md)
+- [Delete a Campaign](./delete-a-campaign.md)
   Deletes a specific campaign by campaign identifier.
 
 

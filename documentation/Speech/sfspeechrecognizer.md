@@ -1,7 +1,8 @@
 # SFSpeechRecognizer
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use to check for the availability of the speech recognition service, and to initiate the speech recognition process.
 
@@ -18,34 +19,38 @@ An object you use to check for the availability of the speech recognition servic
 class SFSpeechRecognizer
 ```
 
+```objc
+@interface SFSpeechRecognizer : NSObject
+```
+
 ## Mentions
 
-- [Asking Permission to Use Speech Recognition](asking-permission-to-use-speech-recognition.md)
+- [Asking Permission to Use Speech Recognition](./asking-permission-to-use-speech-recognition.md)
 
 #### Overview
 
-An [`SFSpeechRecognizer`](sfspeechrecognizer.md) object is the central object for managing the speech recognizer process. Use this object to:
+An [`SFSpeechRecognizer`](./sfspeechrecognizer.md) object is the central object for managing the speech recognizer process. Use this object to:
 
 - Request authorization to use speech recognition services.
 - Specify the language to use during the recognition process.
 - Initiate new speech recognition tasks.
 
-##### Set Up Speech Recognition
+##### Set up speech recognition
 
-Each speech recognizer supports only one language, which you specify at creation time. The successful creation of a speech recognizer does not guarantee that speech recognition services are available. For some languages, the recognizer might require an Internet connection. Use the [`isAvailable`](sfspeechrecognizer/isavailable.md) property to find out if speech recognition services are available for the current language.
+Each speech recognizer supports only one language, which you specify at creation time. The successful creation of a speech recognizer does not guarantee that speech recognition services are available. For some languages, the recognizer might require an Internet connection. Use the [`isAvailable`](./sfspeechrecognizer/isavailable.md) property to find out if speech recognition services are available for the current language.
 
 To initiate the speech recognition process, do the following:
 
-1. Request authorization to use speech recognition. See [`Asking Permission to Use Speech Recognition`](asking-permission-to-use-speech-recognition.md).
-2. Create an [`SFSpeechRecognizer`](sfspeechrecognizer.md) object.
-3. Verify the availability of services using the [`isAvailable`](sfspeechrecognizer/isavailable.md) property of your speech recognizer object.
+1. Request authorization to use speech recognition. See [Asking Permission to Use Speech Recognition](./asking-permission-to-use-speech-recognition.md).
+2. Create an [`SFSpeechRecognizer`](./sfspeechrecognizer.md) object.
+3. Verify the availability of services using the [`isAvailable`](./sfspeechrecognizer/isavailable.md) property of your speech recognizer object.
 4. Prepare your audio content.
-5. Create a recognition request object—an object that descends from [`SFSpeechRecognitionRequest`](sfspeechrecognitionrequest.md).
-6. Call the [`recognitionTask(with:delegate:)`](sfspeechrecognizer/recognitiontask(with:delegate:).md) or [`recognitionTask(with:resultHandler:)`](sfspeechrecognizer/recognitiontask(with:resulthandler:).md) method to begin the recognition process.
+5. Create a recognition request object—an object that descends from [`SFSpeechRecognitionRequest`](./sfspeechrecognitionrequest.md).
+6. Call the [`recognitionTask(with:delegate:)`](./sfspeechrecognizer/recognitiontask%28with,delegate%29.md) or [`recognitionTask(with:resultHandler:)`](./sfspeechrecognizer/recognitiontask%28with,resulthandler%29.md) method to begin the recognition process.
 
-The type of recognition request object you create depends on whether you are processing an existing audio file or an incoming stream of audio. For existing audio files, create a [`SFSpeechURLRecognitionRequest`](sfspeechurlrecognitionrequest.md) object. For audio streams, create a [`SFSpeechAudioBufferRecognitionRequest`](sfspeechaudiobufferrecognitionrequest.md) object.
+The type of recognition request object you create depends on whether you are processing an existing audio file or an incoming stream of audio. For existing audio files, create a [`SFSpeechURLRecognitionRequest`](./sfspeechurlrecognitionrequest.md) object. For audio streams, create a [`SFSpeechAudioBufferRecognitionRequest`](./sfspeechaudiobufferrecognitionrequest.md) object.
 
-##### Create a Great User Experience for Speech Recognition
+##### Create a great user experience for speech recognition
 
 Here are some tips to consider when adding speech recognition support to your app.
 
@@ -57,65 +62,66 @@ Here are some tips to consider when adding speech recognition support to your ap
 ## Topics
 
 ### Creating a speech recognizer
-- [convenience init?()](sfspeechrecognizer/init.md)
+- [convenience init?()](./sfspeechrecognizer/init%28%29.md)
   Creates a speech recognizer associated with the user’s default language settings.
-- [init?(locale: Locale)](sfspeechrecognizer/init(locale:).md)
+- [init?(locale: Locale)](./sfspeechrecognizer/init%28locale%29.md)
   Creates a speech recognizer associated with the specified locale.
 ### Monitoring speech recognition availability
-- [var delegate: (any SFSpeechRecognizerDelegate)?](sfspeechrecognizer/delegate.md)
+- [var delegate: (any SFSpeechRecognizerDelegate)?](./sfspeechrecognizer/delegate.md)
   The delegate object that handles changes to the availability of speech recognition services.
-- [protocol SFSpeechRecognizerDelegate](sfspeechrecognizerdelegate.md)
+- [protocol SFSpeechRecognizerDelegate](./sfspeechrecognizerdelegate.md)
   A protocol that you adopt in your objects to track the availability of a speech recognizer.
-- [var isAvailable: Bool](sfspeechrecognizer/isavailable.md)
+- [var isAvailable: Bool](./sfspeechrecognizer/isavailable.md)
   A Boolean value that indicates whether the speech recognizer is currently available.
-- [var supportsOnDeviceRecognition: Bool](sfspeechrecognizer/supportsondevicerecognition.md)
+- [var supportsOnDeviceRecognition: Bool](./sfspeechrecognizer/supportsondevicerecognition.md)
   A Boolean value that indicates whether the speech recognizer can operate without network access.
 ### Requesting user authorization
-- [class func requestAuthorization((SFSpeechRecognizerAuthorizationStatus) -> Void)](sfspeechrecognizer/requestauthorization(_:).md)
+- [class func requestAuthorization((SFSpeechRecognizerAuthorizationStatus) -> Void)](./sfspeechrecognizer/requestauthorization%28_%29.md)
   Asks the user to allow your app to perform speech recognition.
-- [class func authorizationStatus() -> SFSpeechRecognizerAuthorizationStatus](sfspeechrecognizer/authorizationstatus.md)
+- [class func authorizationStatus() -> SFSpeechRecognizerAuthorizationStatus](./sfspeechrecognizer/authorizationstatus%28%29.md)
   Returns your app’s current authorization to perform speech recognition.
-- [enum SFSpeechRecognizerAuthorizationStatus](sfspeechrecognizerauthorizationstatus.md)
+- [enum SFSpeechRecognizerAuthorizationStatus](./sfspeechrecognizerauthorizationstatus.md)
   The app’s authorization to perform speech recognition.
 ### Configuring the speech recognizer
-- [var defaultTaskHint: SFSpeechRecognitionTaskHint](sfspeechrecognizer/defaulttaskhint.md)
+- [var defaultTaskHint: SFSpeechRecognitionTaskHint](./sfspeechrecognizer/defaulttaskhint.md)
   A hint that indicates the type of speech recognition being requested.
-- [var queue: OperationQueue](sfspeechrecognizer/queue.md)
+- [var queue: OperationQueue](./sfspeechrecognizer/queue.md)
   The queue on which to execute recognition task handlers and delegate methods.
 ### Performing speech recognition on audio
-- [func recognitionTask(with: SFSpeechRecognitionRequest, resultHandler: (SFSpeechRecognitionResult?, (any Error)?) -> Void) -> SFSpeechRecognitionTask](sfspeechrecognizer/recognitiontask(with:resulthandler:).md)
+- [func recognitionTask(with: SFSpeechRecognitionRequest, resultHandler: (SFSpeechRecognitionResult?, (any Error)?) -> Void) -> SFSpeechRecognitionTask](./sfspeechrecognizer/recognitiontask%28with,resulthandler%29.md)
   Executes the speech recognition request and delivers the results to the specified handler block.
-- [func recognitionTask(with: SFSpeechRecognitionRequest, delegate: any SFSpeechRecognitionTaskDelegate) -> SFSpeechRecognitionTask](sfspeechrecognizer/recognitiontask(with:delegate:).md)
+- [func recognitionTask(with: SFSpeechRecognitionRequest, delegate: any SFSpeechRecognitionTaskDelegate) -> SFSpeechRecognitionTask](./sfspeechrecognizer/recognitiontask%28with,delegate%29.md)
   Recognizes speech from the audio source associated with the specified request, using the specified delegate to manage the results.
-- [protocol SFSpeechRecognitionTaskDelegate](sfspeechrecognitiontaskdelegate.md)
+- [protocol SFSpeechRecognitionTaskDelegate](./sfspeechrecognitiontaskdelegate.md)
   A protocol with methods for managing multi-utterance speech recognition requests.
 ### Getting the current language
-- [var locale: Locale](sfspeechrecognizer/locale.md)
+- [var locale: Locale](./sfspeechrecognizer/locale.md)
   The locale of the speech recognizer.
-- [class func supportedLocales() -> Set<Locale>](sfspeechrecognizer/supportedlocales.md)
+- [class func supportedLocales() -> Set<Locale>](./sfspeechrecognizer/supportedlocales%28%29.md)
   Returns the set of locales that are supported by the speech recognizer.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Asking Permission to Use Speech Recognition](asking-permission-to-use-speech-recognition.md)
+### Essentials
+- [Asking Permission to Use Speech Recognition](./asking-permission-to-use-speech-recognition.md)
   Ask the user’s permission to perform speech recognition using Apple’s servers.
-- [protocol SFSpeechRecognizerDelegate](sfspeechrecognizerdelegate.md)
+- [protocol SFSpeechRecognizerDelegate](./sfspeechrecognizerdelegate.md)
   A protocol that you adopt in your objects to track the availability of a speech recognizer.
-- [enum SFSpeechRecognitionTaskHint](sfspeechrecognitiontaskhint.md)
+- [enum SFSpeechRecognitionTaskHint](./sfspeechrecognitiontaskhint.md)
   The type of task for which you are using speech recognition.
-- [enum SFSpeechRecognizerAuthorizationStatus](sfspeechrecognizerauthorizationstatus.md)
+- [enum SFSpeechRecognizerAuthorizationStatus](./sfspeechrecognizerauthorizationstatus.md)
   The app’s authorization to perform speech recognition.
 
 

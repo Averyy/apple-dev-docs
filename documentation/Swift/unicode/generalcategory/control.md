@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.control
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A C0 or C1 control code.
 
@@ -22,7 +23,7 @@ case control
 
 #### Discussion
 
-This value corresponds to the category `Control` (abbreviated `Cc`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Control` (abbreviated `Cc`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

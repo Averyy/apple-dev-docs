@@ -1,7 +1,8 @@
 # accommodatePresentedItemDeletion(completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells your object that its presented item is about to be deleted.
 
@@ -17,7 +18,15 @@ Tells your object that its presented item is about to be deleted.
 ## Declaration
 
 ```swift
+optional func accommodatePresentedItemDeletion(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 optional func accommodatePresentedItemDeletion() async throws
+```
+
+```objc
+- (void) accommodatePresentedItemDeletionWithCompletionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
 #### Discussion
@@ -28,15 +37,16 @@ A file coordinator calls this method when your object’s presented item is abou
 
 ## Parameters
 
-- `completionHandler`: The [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) to call after updating your data structures. Pass `nil` to the block’s `errorOrNil` parameter if you were able to successfully prepare for the deletion of the item. Pass an error object if your object could not prepare itself properly.
+- `completionHandler`: The [Block object](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) to call after updating your data structures. Pass `nil` to the block’s `errorOrNil` parameter if you were able to successfully prepare for the deletion of the item. Pass an error object if your object could not prepare itself properly.
 
 ## See Also
 
-- [func savePresentedItemChanges(completionHandler: ((any Error)?) -> Void)](nsfilepresenter/savepresenteditemchanges(completionhandler:).md)
+### Handling Changes to Files
+- [func savePresentedItemChanges(completionHandler: ((any Error)?) -> Void)](./savepresenteditemchanges%28completionhandler%29.md)
   Tells your object to save any unsaved changes for the presented item.
-- [func presentedItemDidMove(to: URL)](nsfilepresenter/presenteditemdidmove(to:).md)
+- [func presentedItemDidMove(to: URL)](./presenteditemdidmove%28to%29.md)
   Tells your object that the presented item moved or was renamed.
-- [func presentedItemDidChange()](nsfilepresenter/presenteditemdidchange.md)
+- [func presentedItemDidChange()](./presenteditemdidchange%28%29.md)
   Tells your object that the presented item’s contents or attributes changed.
 
 

@@ -1,7 +1,8 @@
 # UITextSmartDashesType.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use the default smart dash behavior.
 
@@ -18,15 +19,20 @@ Use the default smart dash behavior.
 case `default`
 ```
 
+```c
+UITextSmartDashesTypeDefault
+```
+
 #### Discussion
 
 This option selectively enables the smart dash behavior based on the keyboard type. For example, smart dashes are disabled for email address and password keyboards.
 
 ## See Also
 
-- [UITextSmartDashesType.no](uitextsmartdashestype/no.md)
+### Constants
+- [UITextSmartDashesType.no](./no.md)
   Disable smart dashes.
-- [UITextSmartDashesType.yes](uitextsmartdashestype/yes.md)
+- [UITextSmartDashesType.yes](./yes.md)
   Enable smart dashes.
 
 

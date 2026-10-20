@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceTimelineSegmentType.intro
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The segment contains an opening title sequence.
 
@@ -14,6 +15,10 @@ The segment contains an opening title sequence.
 
 ```swift
 case intro
+```
+
+```c
+AVPlaybackUserInterfaceTimelineSegmentTypeIntro
 ```
 
 

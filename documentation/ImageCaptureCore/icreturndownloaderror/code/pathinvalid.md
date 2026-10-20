@@ -1,21 +1,26 @@
 # ICReturnDownloadError.Code.pathInvalid
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The destination path is invalid.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case pathInvalid
+```
+
+```c
+ICReturnDownloadPathInvalid
 ```
 
 

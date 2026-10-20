@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Haptics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pattern key with a string.
 
@@ -9,7 +10,7 @@ Creates a pattern key with a string.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 

@@ -1,7 +1,8 @@
 # allowOverwrite
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the framework can overwrite the EFI variable store.
 
@@ -12,6 +13,10 @@ A Boolean value that indicates whether the framework can overwrite the EFI varia
 
 ```swift
 static var allowOverwrite: VZEFIVariableStore.InitializationOptions { get }
+```
+
+```c
+VZEFIVariableStoreInitializationOptionAllowOverwrite
 ```
 
 

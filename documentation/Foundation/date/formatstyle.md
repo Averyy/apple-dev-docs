@@ -1,7 +1,8 @@
 # Date.FormatStyle
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that creates a locale-appropriate string representation of a date instance and converts strings of dates and times into date instances.
 
@@ -24,19 +25,19 @@ struct FormatStyle
 
 A date format style shares the date and time formatting pattern preferred by the user’s locale for formatting and parsing.
 
-When you want to apply a specific formatting style to a single [`Date`](date.md) instance, use [`Date.FormatStyle`](date/formatstyle.md). For other instances, use the following:
+When you want to apply a specific formatting style to a single [`Date`](../date.md) instance, use [`Date.FormatStyle`](./formatstyle.md). For other instances, use the following:
 
-- When working with date representations in ISO 8601 format, use [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md).
-- To represent an interval between two date instances, use [`Date.RelativeFormatStyle`](date/relativeformatstyle.md).
-- To represent two dates as a pair, for example to get output that looks like `10/21/1985 1:45 PM - 9/13/2015 6:33 PM`, use [`Date.IntervalFormatStyle`](date/intervalformatstyle.md).
+- When working with date representations in ISO 8601 format, use [`Date.ISO8601FormatStyle`](./iso8601formatstyle.md).
+- To represent an interval between two date instances, use [`Date.RelativeFormatStyle`](./relativeformatstyle.md).
+- To represent two dates as a pair, for example to get output that looks like `10/21/1985 1:45 PM - 9/13/2015 6:33 PM`, use [`Date.IntervalFormatStyle`](./intervalformatstyle.md).
 
 ##### Formatting String Representations of Dates and Times
 
-[`Date.FormatStyle`](date/formatstyle.md) provides a variety of localized presets and configuration options to create user-visible representations of dates and times from instances of [`Date`](date.md).
+[`Date.FormatStyle`](./formatstyle.md) provides a variety of localized presets and configuration options to create user-visible representations of dates and times from instances of [`Date`](../date.md).
 
-When displaying a date to a user, use the [`formatted(date:time:)`](date/formatted(date:time:).md) instance method. Set the date and time styles of the date format style separately, according to your particular needs.
+When displaying a date to a user, use the [`formatted(date:time:)`](./formatted%28date,time%29.md) instance method. Set the date and time styles of the date format style separately, according to your particular needs.
 
-For example, to create a string with a full date and no time representation, set the [`Date.FormatStyle.DateStyle`](date/formatstyle/datestyle.md) to [`complete`](date/formatstyle/datestyle/complete.md) and the [`Date.FormatStyle.TimeStyle`](date/formatstyle/timestyle.md) to [`omitted`](date/formatstyle/timestyle/omitted.md). Conversely, to create a string representing only the time for the current locale and time zone, set the date style to [`omitted`](date/formatstyle/datestyle/omitted.md) and the time style to [`complete`](date/formatstyle/timestyle/complete.md), as the following code illustrates:
+For example, to create a string with a full date and no time representation, set the [`Date.FormatStyle.DateStyle`](./formatstyle/datestyle.md) to [`complete`](./formatstyle/datestyle/complete.md) and the [`Date.FormatStyle.TimeStyle`](./formatstyle/timestyle.md) to [`omitted`](./formatstyle/timestyle/omitted.md). Conversely, to create a string representing only the time for the current locale and time zone, set the date style to [`omitted`](./formatstyle/datestyle/omitted.md) and the time style to [`complete`](./formatstyle/timestyle/complete.md), as the following code illustrates:
 
 ```swift
 let birthday = Date()
@@ -47,7 +48,7 @@ birthday.formatted(date: .omitted, time: .complete) // 4:03:12 p.m. CST
 
 The results shown are for locale set to `en_US` and time zone set to `CST`.
 
-You can create string representations of a [`Date`](date.md) instance with various levels of brevity using preset date and time styles. The following example shows date styles of [`long`](date/formatstyle/datestyle/long.md), [`abbreviated`](date/formatstyle/datestyle/abbreviated.md), and [`numeric`](date/formatstyle/datestyle/numeric.md), and time styles of [`shortened`](date/formatstyle/timestyle/shortened.md), [`standard`](date/formatstyle/timestyle/standard.md), and [`complete`](date/formatstyle/timestyle/complete.md):
+You can create string representations of a [`Date`](../date.md) instance with various levels of brevity using preset date and time styles. The following example shows date styles of [`long`](./formatstyle/datestyle/long.md), [`abbreviated`](./formatstyle/datestyle/abbreviated.md), and [`numeric`](./formatstyle/datestyle/numeric.md), and time styles of [`shortened`](./formatstyle/timestyle/shortened.md), [`standard`](./formatstyle/timestyle/standard.md), and [`complete`](./formatstyle/timestyle/complete.md):
 
 ```swift
 let birthday = Date()
@@ -59,9 +60,9 @@ birthday.formatted(date: .numeric, time: .complete) // 1/17/2021, 4:03:12 PM CST
 birthday.formatted() // Jan 17, 2021, 4:03 PM
 ```
 
-The default date style is [`abbreviated`](date/formatstyle/datestyle/abbreviated.md) and the default time style is [`shortened`](date/formatstyle/timestyle/shortened.md).
+The default date style is [`abbreviated`](./formatstyle/datestyle/abbreviated.md) and the default time style is [`shortened`](./formatstyle/timestyle/shortened.md).
 
-For full customization of the string representation of a date, use the [`formatted(_:)`](date/formatted(_:).md) instance method of [`Date`](date.md) and provide a [`Date.FormatStyle`](date/formatstyle.md) instance.
+For full customization of the string representation of a date, use the [`formatted(_:)`](./formatted%28_%29.md) instance method of [`Date`](../date.md) and provide a [`Date.FormatStyle`](./formatstyle.md) instance.
 
 You can apply more customization of the date and time components and their representation in your app by appying a series of convenience modifiers to your format style. The following example applies a series of modifiers to the format style to precisely define the formatting of the year, month, day, hour, minute, and timezone components of the resulting string. The ordering of the date and time modifiers has no impact on the string produced.
 
@@ -86,7 +87,7 @@ birthday.formatted(
 // Sun, Jan 17, 2021 Anno Domini (week: 4), 11:18 AM America/Chicago
 ```
 
-[`Date.FormatStyle`](date/formatstyle.md) provides a convenient factory variable, [`dateTime`](formatstyle/datetime.md), used to shorten the syntax when applying date and time modifiers to customize the format, as in the following example:
+[`Date.FormatStyle`](./formatstyle.md) provides a convenient factory variable, [`dateTime`](../formatstyle/datetime.md), used to shorten the syntax when applying date and time modifiers to customize the format, as in the following example:
 
 ```swift
 let localeArray = ["en_US", "sv_SE", "en_GB", "th_TH", "fr_BE"]
@@ -108,7 +109,7 @@ for localeID in localeArray {
 
 ##### Parsing Dates and Times
 
-To parse a [`Date`](date.md) instance from an input string, use a date parse strategy. For example:
+To parse a [`Date`](../date.md) instance from an input string, use a date parse strategy. For example:
 
 ```swift
 let inputString = "Archive for month 8, archived on day 23 - complete."
@@ -122,7 +123,7 @@ The time defaults to midnight local time unless explicitly defined.
 
 The parse instance method attempts to parse a provided string into an instance of date using the source date format style. The function throws an error if it can’t parse the input string into a date instance.
 
-You can use [`Date.FormatStyle`](date/formatstyle.md) for round-trip formatting and parsing in a locale-aware manner. This date format style guides parsing the date instance from an input string, as the following code demonstrates:
+You can use [`Date.FormatStyle`](./formatstyle.md) for round-trip formatting and parsing in a locale-aware manner. This date format style guides parsing the date instance from an input string, as the following code demonstrates:
 
 ```swift
 let birthdayFormatStyle = Date.FormatStyle()
@@ -165,7 +166,7 @@ if let anniversary = try? Date(dateString, strategy: myFormat) {
 }
 ```
 
-After this code executes, `anniversary` contains a [`Date`](date.md) instance parsed from `dateString`.
+After this code executes, `anniversary` contains a [`Date`](../date.md) instance parsed from `dateString`.
 
 ##### Applying Format Styles Repeatedly
 
@@ -202,124 +203,125 @@ func formatIntroDates() {
 ## Topics
 
 ### Creating a Date Format Style
-- [init(date: Date.FormatStyle.DateStyle?, time: Date.FormatStyle.TimeStyle?, locale: Locale, calendar: Calendar, timeZone: TimeZone, capitalizationContext: FormatStyleCapitalizationContext)](date/formatstyle/init(date:time:locale:calendar:timezone:capitalizationcontext:).md)
+- [init(date: Date.FormatStyle.DateStyle?, time: Date.FormatStyle.TimeStyle?, locale: Locale, calendar: Calendar, timeZone: TimeZone, capitalizationContext: FormatStyleCapitalizationContext)](./formatstyle/init%28date,time,locale,calendar,timezone,capitalizationcontext%29.md)
   Creates an instance using the provided date, time, locale, calendar, time zone, and capitalization context.
 ### Specifying the Date Format
-- [func day(Date.FormatStyle.Symbol.Day) -> Date.FormatStyle](date/formatstyle/day(_:).md)
+- [func day(Date.FormatStyle.Symbol.Day) -> Date.FormatStyle](./formatstyle/day%28_%29.md)
   Modifies the date format style to use the specified day format style.
-- [func dayOfYear(Date.FormatStyle.Symbol.DayOfYear) -> Date.FormatStyle](date/formatstyle/dayofyear(_:).md)
+- [func dayOfYear(Date.FormatStyle.Symbol.DayOfYear) -> Date.FormatStyle](./formatstyle/dayofyear%28_%29.md)
   Modifies the date format style to use the specified day of the year format style.
-- [func era(Date.FormatStyle.Symbol.Era) -> Date.FormatStyle](date/formatstyle/era(_:).md)
+- [func era(Date.FormatStyle.Symbol.Era) -> Date.FormatStyle](./formatstyle/era%28_%29.md)
   Modifies the date format style to use the specified era format style.
-- [func month(Date.FormatStyle.Symbol.Month) -> Date.FormatStyle](date/formatstyle/month(_:).md)
+- [func month(Date.FormatStyle.Symbol.Month) -> Date.FormatStyle](./formatstyle/month%28_%29.md)
   Modifies the date format style to use the specified month format style.
-- [func quarter(Date.FormatStyle.Symbol.Quarter) -> Date.FormatStyle](date/formatstyle/quarter(_:).md)
+- [func quarter(Date.FormatStyle.Symbol.Quarter) -> Date.FormatStyle](./formatstyle/quarter%28_%29.md)
   Modifies the date format style to use the specified quarter format style.
-- [func week(Date.FormatStyle.Symbol.Week) -> Date.FormatStyle](date/formatstyle/week(_:).md)
+- [func week(Date.FormatStyle.Symbol.Week) -> Date.FormatStyle](./formatstyle/week%28_%29.md)
   Modifies the date format style to use the specified week format style.
-- [func weekday(Date.FormatStyle.Symbol.Weekday) -> Date.FormatStyle](date/formatstyle/weekday(_:).md)
+- [func weekday(Date.FormatStyle.Symbol.Weekday) -> Date.FormatStyle](./formatstyle/weekday%28_%29.md)
   Modifies the date format style to use the specified weekday format style.
-- [func year(Date.FormatStyle.Symbol.Year) -> Date.FormatStyle](date/formatstyle/year(_:).md)
+- [func year(Date.FormatStyle.Symbol.Year) -> Date.FormatStyle](./formatstyle/year%28_%29.md)
   Modifies the date format style to use the specified year format style.
-- [Date.FormatStyle.DateStyle](date/formatstyle/datestyle.md)
+- [Date.FormatStyle.DateStyle](./formatstyle/datestyle.md)
   Type that defines date styles varied in length or components included.
 ### Specifying the Time Format
-- [func hour(Date.FormatStyle.Symbol.Hour) -> Date.FormatStyle](date/formatstyle/hour(_:).md)
+- [func hour(Date.FormatStyle.Symbol.Hour) -> Date.FormatStyle](./formatstyle/hour%28_%29.md)
   Modifies the date format style to use the specified hour format style.
-- [func minute(Date.FormatStyle.Symbol.Minute) -> Date.FormatStyle](date/formatstyle/minute(_:).md)
+- [func minute(Date.FormatStyle.Symbol.Minute) -> Date.FormatStyle](./formatstyle/minute%28_%29.md)
   Modifies the date format style to use the specified minute format style.
-- [func second(Date.FormatStyle.Symbol.Second) -> Date.FormatStyle](date/formatstyle/second(_:).md)
+- [func second(Date.FormatStyle.Symbol.Second) -> Date.FormatStyle](./formatstyle/second%28_%29.md)
   Modifies the date format style to use the specified second format style.
-- [func secondFraction(Date.FormatStyle.Symbol.SecondFraction) -> Date.FormatStyle](date/formatstyle/secondfraction(_:).md)
+- [func secondFraction(Date.FormatStyle.Symbol.SecondFraction) -> Date.FormatStyle](./formatstyle/secondfraction%28_%29.md)
   Modifies the date format style to use the specified second fraction format style.
-- [func timeZone(Date.FormatStyle.Symbol.TimeZone) -> Date.FormatStyle](date/formatstyle/timezone(_:).md)
+- [func timeZone(Date.FormatStyle.Symbol.TimeZone) -> Date.FormatStyle](./formatstyle/timezone%28_%29.md)
   Modifies the date format style to use the specified time zone format style.
-- [Date.FormatStyle.TimeStyle](date/formatstyle/timestyle.md)
+- [Date.FormatStyle.TimeStyle](./formatstyle/timestyle.md)
   Type that defines time styles varied in length or components included.
 ### Modifying a Date Format Style
-- [func locale(Locale) -> Date.FormatStyle](date/formatstyle/locale(_:).md)
+- [func locale(Locale) -> Date.FormatStyle](./formatstyle/locale%28_%29.md)
   Modifies the date format style to use the specified locale.
-- [var timeZone: TimeZone](date/formatstyle/timezone.md)
+- [var timeZone: TimeZone](./formatstyle/timezone.md)
   The time zone to use when formatting the date and time components.
-- [var calendar: Calendar](date/formatstyle/calendar.md)
+- [var calendar: Calendar](./formatstyle/calendar.md)
   The calendar to use when formatting the date.
-- [var capitalizationContext: FormatStyleCapitalizationContext](date/formatstyle/capitalizationcontext.md)
+- [var capitalizationContext: FormatStyleCapitalizationContext](./formatstyle/capitalizationcontext.md)
   The capitalization context to use when formatting the date.
-- [var locale: Locale](date/formatstyle/locale.md)
+- [var locale: Locale](./formatstyle/locale.md)
   The locale to use when formatting the date and time components.
 ### Applying Visual Attributes to Dates
-- [var attributed: Date.AttributedStyle](date/formatstyle/attributed-swift.property.md)
+- [var attributed: Date.AttributedStyle](./formatstyle/attributed-swift.property.md)
   An attributed format style created from the date format style.
-- [struct AttributedStyle](date/attributedstyle.md)
+- [struct AttributedStyle](./attributedstyle.md)
   A structure that creates a locale-appropriate attributed string representation of a date instance.
 ### Applying a Format Style
-- [func format(Date) -> String](date/formatstyle/format(_:).md)
+- [func format(Date) -> String](./formatstyle/format%28_%29.md)
   Creates a locale-aware string representation from a date value.
 ### Parsing Dates
-- [func parse(String) throws -> Date](date/formatstyle/parse(_:).md)
+- [func parse(String) throws -> Date](./formatstyle/parse%28_%29.md)
   Parses a string into a date.
-- [var parseStrategy: Date.FormatStyle](date/formatstyle/parsestrategy.md)
+- [var parseStrategy: Date.FormatStyle](./formatstyle/parsestrategy.md)
   The strategy used to parse a string into a date.
-- [struct ParseStrategy](date/parsestrategy.md)
+- [struct ParseStrategy](./parsestrategy.md)
   Options for parsing string representations of dates to create a `Date` instance.
 ### Comparing Date Format Styles
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](./eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 ### Supporting Symbols
-- [Date.FormatStyle.Symbol](date/formatstyle/symbol.md)
+- [Date.FormatStyle.Symbol](./formatstyle/symbol.md)
   Types that customize formatting templates either by using the date format style’s modifier functions or by constructing fixed-pattern date format strings.
 ### Structures
-- [Date.FormatStyle.Attributed](date/formatstyle/attributed-swift.struct.md)
+- [Date.FormatStyle.Attributed](./formatstyle/attributed-swift.struct.md)
   The type preserving attributed variant of this style.
 ### Instance Properties
-- [var attributedStyle: Date.FormatStyle.Attributed](date/formatstyle/attributedstyle.md)
+- [var attributedStyle: Date.FormatStyle.Attributed](./formatstyle/attributedstyle.md)
   Return the type preserving attributed variant of this style.
 ### Default Implementations
-- [CustomConsumingRegexComponent Implementations](date/formatstyle/customconsumingregexcomponent-implementations.md)
-- [FormatStyle Implementations](date/formatstyle/formatstyle-implementations.md)
-- [ParseStrategy Implementations](date/formatstyle/parsestrategy-implementations.md)
-- [ParseableFormatStyle Implementations](date/formatstyle/parseableformatstyle-implementations.md)
-- [RegexComponent Implementations](date/formatstyle/regexcomponent-implementations.md)
+- [CustomConsumingRegexComponent Implementations](./formatstyle/customconsumingregexcomponent-implementations.md)
+- [FormatStyle Implementations](./formatstyle/formatstyle-implementations.md)
+- [ParseStrategy Implementations](./formatstyle/parsestrategy-implementations.md)
+- [ParseableFormatStyle Implementations](./formatstyle/parseableformatstyle-implementations.md)
+- [RegexComponent Implementations](./formatstyle/regexcomponent-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomConsumingRegexComponent](../swift/customconsumingregexcomponent.md)
-- [Decodable](../swift/decodable.md)
-- [DiscreteFormatStyle](discreteformatstyle.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [FormatStyle](formatstyle.md)
-- [Hashable](../swift/hashable.md)
-- [ParseStrategy](parsestrategy.md)
-- [ParseableFormatStyle](parseableformatstyle.md)
-- [RegexComponent](../swift/regexcomponent.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomConsumingRegexComponent](../../Swift/customconsumingregexcomponent.md)
+- [Decodable](../../Swift/decodable.md)
+- [DiscreteFormatStyle](../discreteformatstyle.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [FormatStyle](../formatstyle.md)
+- [Hashable](../../Swift/hashable.md)
+- [ParseStrategy](../parsestrategy.md)
+- [ParseableFormatStyle](../parseableformatstyle.md)
+- [RegexComponent](../../Swift/regexcomponent.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var dateTime: Date.FormatStyle](formatstyle/datetime.md)
+### Applying date and time styles
+- [static var dateTime: Date.FormatStyle](../formatstyle/datetime.md)
   A style for formatting a date and time.
-- [struct ISO8601FormatStyle](date/iso8601formatstyle.md)
+- [struct ISO8601FormatStyle](./iso8601formatstyle.md)
   A type that converts between dates and their ISO-8601 string representations.
-- [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](formatstyle/verbatim(_:locale:timezone:calendar:).md)
+- [static func verbatim(Date.FormatString, locale: Locale?, timeZone: TimeZone, calendar: Calendar) -> Date.VerbatimFormatStyle](../formatstyle/verbatim%28_,locale,timezone,calendar%29.md)
   Returns a style for formatting a date with an explicitly-specified style.
-- [struct VerbatimFormatStyle](date/verbatimformatstyle.md)
+- [struct VerbatimFormatStyle](./verbatimformatstyle.md)
   A style that formats a date with an explicitly-specified style.
-- [static var interval: Date.IntervalFormatStyle](formatstyle/interval.md)
+- [static var interval: Date.IntervalFormatStyle](../formatstyle/interval.md)
   A style for formatting a date interval.
-- [struct IntervalFormatStyle](date/intervalformatstyle.md)
+- [struct IntervalFormatStyle](./intervalformatstyle.md)
   A format style that creates string representations of date intervals.
-- [static func relative(presentation: Date.RelativeFormatStyle.Presentation, unitsStyle: Date.RelativeFormatStyle.UnitsStyle) -> Self](formatstyle/relative(presentation:unitsstyle:).md)
+- [static func relative(presentation: Date.RelativeFormatStyle.Presentation, unitsStyle: Date.RelativeFormatStyle.UnitsStyle) -> Self](../formatstyle/relative%28presentation,unitsstyle%29.md)
   Returns a style for formatting a date as relative to the current date.
-- [struct RelativeFormatStyle](date/relativeformatstyle.md)
+- [struct RelativeFormatStyle](./relativeformatstyle.md)
   A format style that forms locale-aware string representations of a relative date or time.
-- [static func components(style: Date.ComponentsFormatStyle.Style, fields: Set<Date.ComponentsFormatStyle.Field>?) -> Self](formatstyle/components(style:fields:).md)
+- [static func components(style: Date.ComponentsFormatStyle.Style, fields: Set<Date.ComponentsFormatStyle.Field>?) -> Self](../formatstyle/components%28style,fields%29.md)
   Returns a style for formatting a date interval in terms of specific date components.
-- [struct ComponentsFormatStyle](date/componentsformatstyle.md)
+- [struct ComponentsFormatStyle](./componentsformatstyle.md)
   A style for formatting a date interval in terms of specific date components.
 
 

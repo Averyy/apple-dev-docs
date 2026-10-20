@@ -1,7 +1,8 @@
 # session
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The AR session that manages motion tracking and camera image processing for the view’s contents.
 
@@ -15,13 +16,18 @@ The AR session that manages motion tracking and camera image processing for the 
 var session: ARSession { get set }
 ```
 
+```objc
+@property (nonatomic, strong) ARSession * session;
+```
+
 #### Discussion
 
 A view creates its own session object; use this property to access and configure the view’s session.
 
 ## See Also
 
-- [Providing 2D Virtual Content with SpriteKit](providing-2d-virtual-content-with-spritekit.md)
+### First Steps
+- [Providing 2D Virtual Content with SpriteKit](../providing-2d-virtual-content-with-spritekit.md)
   Use SpriteKit to place two-dimensional images in 3D space in your AR experience.
 
 

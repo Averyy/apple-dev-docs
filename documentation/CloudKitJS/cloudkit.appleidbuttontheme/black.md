@@ -1,7 +1,8 @@
 # BLACK
 
 **Framework**: CloudKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Black button.
 
@@ -10,15 +11,16 @@ Black button.
 
 ## Declaration
 
-```swift
+```
 const String BLACK;
 ```
 
 ## See Also
 
-- [WHITE](cloudkit.appleidbuttontheme/white.md)
+### Enumeration Cases
+- [WHITE](./white.md)
   White button.
-- [WHITE_WITH_OUTLINE](cloudkit.appleidbuttontheme/white_with_outline.md)
+- [WHITE_WITH_OUTLINE](./white_with_outline.md)
   White button with an outline.
 
 

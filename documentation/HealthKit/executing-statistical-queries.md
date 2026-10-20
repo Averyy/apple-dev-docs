@@ -1,6 +1,7 @@
 # Executing Statistical Queries
 
-**Framework**: HealthKit
+**Framework**: HealthKit  
+**Role**: Article
 
 Create and run statistical queries.
 
@@ -41,7 +42,7 @@ You use these values to create the query.
 
 ##### Create the Query
 
-To create the statistical query, call the [`init(quantityType:quantitySamplePredicate:options:completionHandler:)`](hkstatisticsquery/init(quantitytype:quantitysamplepredicate:options:completionhandler:).md) initializer. The following code creates a statistical query that calculates the total energy consumed during the specified time period.
+To create the statistical query, call the [`init(quantityType:quantitySamplePredicate:options:completionHandler:)`](./hkstatisticsquery/init%28quantitytype,quantitysamplepredicate,options,completionhandler%29.md) initializer. The following code creates a statistical query that calculates the total energy consumed during the specified time period.
 
 ```swift
 let query = HKStatisticsQuery(quantityType: energyConsumed, quantitySamplePredicate: today, options: .cumulativeSum) { (query, statisticsOrNil, errorOrNil) in
@@ -69,7 +70,7 @@ The query returns a statistics object that contains the values calculated by the
 
 ##### Run the Query
 
-After the query is instantiated, you run it by calling the HealthKit store’s [`execute(_:)`](hkhealthstore/execute(_:).md) method on the HealthKit store.
+After the query is instantiated, you run it by calling the HealthKit store’s [`execute(_:)`](./hkhealthstore/execute%28_%29.md) method on the HealthKit store.
 
 ```swift
 store.execute(query)
@@ -79,21 +80,22 @@ This method runs the query on an anonymous background queue. When the query is c
 
 ## See Also
 
-- [Executing Statistics Collection Queries](executing-statistics-collection-queries.md)
+### Statistics
+- [Executing Statistics Collection Queries](./executing-statistics-collection-queries.md)
   Calculate statistical data for graphs and charts.
-- [struct HKStatisticsQueryDescriptor](hkstatisticsquerydescriptor.md)
+- [struct HKStatisticsQueryDescriptor](./hkstatisticsquerydescriptor.md)
   A query descriptor that calculates the minimum, maximum, average, or sum over a set of samples from the HealthKit store.
-- [class HKStatisticsQuery](hkstatisticsquery.md)
+- [class HKStatisticsQuery](./hkstatisticsquery.md)
   A query that performs statistical calculations over a set of matching quantity samples, and returns the results.
-- [struct HKStatisticsCollectionQueryDescriptor](hkstatisticscollectionquerydescriptor.md)
+- [struct HKStatisticsCollectionQueryDescriptor](./hkstatisticscollectionquerydescriptor.md)
   A query descriptor that gathers a collection of statistics calculated over a series of fixed-length time intervals.
-- [class HKStatisticsCollectionQuery](hkstatisticscollectionquery.md)
+- [class HKStatisticsCollectionQuery](./hkstatisticscollectionquery.md)
   A query that performs multiple statistics queries over a series of fixed-length time intervals.
-- [class HKStatistics](hkstatistics.md)
+- [class HKStatistics](./hkstatistics.md)
   An object that represents the result of calculating the minimum, maximum, average, or sum over a set of samples from the HealthKit store.
-- [class HKStatisticsCollection](hkstatisticscollection.md)
+- [class HKStatisticsCollection](./hkstatisticscollection.md)
   An object that manages a collection of statistics, representing the results calculated over separate time intervals.
-- [struct HKStatisticsOptions](hkstatisticsoptions.md)
+- [struct HKStatisticsOptions](./hkstatisticsoptions.md)
   Options for specifying the statistic to calculate.
 
 

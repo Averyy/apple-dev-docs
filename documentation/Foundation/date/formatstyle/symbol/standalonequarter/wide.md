@@ -1,7 +1,8 @@
 # wide
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The full representation of a standalone quarter.
 
@@ -26,13 +27,14 @@ This custom format style conveys the complete representation of a standalone qua
 
 ## See Also
 
-- [static var abbreviated: Date.FormatStyle.Symbol.StandaloneQuarter](date/formatstyle/symbol/standalonequarter/abbreviated.md)
+### Modifying a Standalone Quarter
+- [static var abbreviated: Date.FormatStyle.Symbol.StandaloneQuarter](./abbreviated.md)
   The abbreviated representation of a standalone quarter.
-- [static var narrow: Date.FormatStyle.Symbol.StandaloneQuarter](date/formatstyle/symbol/standalonequarter/narrow.md)
+- [static var narrow: Date.FormatStyle.Symbol.StandaloneQuarter](./narrow.md)
   The shortest representation of a standalone quarter.
-- [static var oneDigit: Date.FormatStyle.Symbol.StandaloneQuarter](date/formatstyle/symbol/standalonequarter/onedigit.md)
+- [static var oneDigit: Date.FormatStyle.Symbol.StandaloneQuarter](./onedigit.md)
   The one-digit representation of a standalone quarter.
-- [static var twoDigits: Date.FormatStyle.Symbol.StandaloneQuarter](date/formatstyle/symbol/standalonequarter/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.StandaloneQuarter](./twodigits.md)
   The two-digit representation of a standalone quarter.
 
 

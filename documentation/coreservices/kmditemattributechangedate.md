@@ -1,7 +1,8 @@
 # kMDItemAttributeChangeDate
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The date and time of the last change made to a metadata attribute. A CFDate.
 
@@ -12,6 +13,10 @@ The date and time of the last change made to a metadata attribute. A CFDate.
 
 ```swift
 let kMDItemAttributeChangeDate: CFString!
+```
+
+```c
+const CFStringRef kMDItemAttributeChangeDate;
 ```
 
 

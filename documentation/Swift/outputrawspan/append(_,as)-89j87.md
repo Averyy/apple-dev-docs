@@ -1,7 +1,8 @@
 # append(_:as:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends the given value’s bytes to this span’s bytes.
 

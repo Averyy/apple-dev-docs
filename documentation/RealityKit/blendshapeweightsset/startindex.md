@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index of the first entry in a non-empty set.
 

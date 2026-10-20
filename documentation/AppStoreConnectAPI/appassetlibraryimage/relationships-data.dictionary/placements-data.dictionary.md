@@ -1,7 +1,8 @@
 # AppAssetLibraryImage.Relationships.Placements
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The placements that reuse the app asset library image.
 
@@ -10,14 +11,14 @@ The placements that reuse the app asset library image.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryImage.Relationships.Placements
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryImage.Relationships.Placements.Data](appassetlibraryimage/relationships-data.dictionary/placements-data.dictionary/data-data.dictionary.md)
+- [object AppAssetLibraryImage.Relationships.Placements.Data](./placements-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

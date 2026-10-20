@@ -1,7 +1,8 @@
 # ToolbarTitleAlignment
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A preferred alignment for a navigation bar’s title.
 
@@ -22,7 +23,7 @@ struct ToolbarTitleAlignment
 
 #### Overview
 
-Use values of this type with the [`toolbarTitleAlignment(_:)`](view/toolbartitlealignment(_:).md) modifier to override the title alignment the system would use.
+Use values of this type with the [`toolbarTitleAlignment(_:)`](./view/toolbartitlealignment%28_%29.md) modifier to override the title alignment the system would use.
 
 ```swift
 NavigationStack {
@@ -32,25 +33,25 @@ NavigationStack {
 }
 ```
 
-To read the alignment the system actually used, see [`toolbarTitleAlignment`](environmentvalues/toolbartitlealignment.md).
+To read the alignment the system actually used, see [`toolbarTitleAlignment`](./environmentvalues/toolbartitlealignment.md).
 
 ## Topics
 
 ### Type Properties
-- [static let automatic: ToolbarTitleAlignment](toolbartitlealignment/automatic.md)
+- [static let automatic: ToolbarTitleAlignment](./toolbartitlealignment/automatic.md)
   The system determines the alignment.
-- [static let center: ToolbarTitleAlignment](toolbartitlealignment/center.md)
+- [static let center: ToolbarTitleAlignment](./toolbartitlealignment/center.md)
   The title is center-aligned.
-- [static let leading: ToolbarTitleAlignment](toolbartitlealignment/leading.md)
+- [static let leading: ToolbarTitleAlignment](./toolbartitlealignment/leading.md)
   The title is leading-aligned.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

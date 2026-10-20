@@ -1,7 +1,8 @@
 # vmnet_return_t.VMNET_NOT_AUTHORIZED
 
 **Framework**: vmnet  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,9 +14,14 @@
 case VMNET_NOT_AUTHORIZED
 ```
 
+```c
+VMNET_NOT_AUTHORIZED
+```
+
 ## See Also
 
-- [vmnet_return_t.VMNET_SHARING_SERVICE_BUSY](vmnet_return_t/vmnet_sharing_service_busy.md)
+### Enumeration Cases
+- [vmnet_return_t.VMNET_SHARING_SERVICE_BUSY](./vmnet_sharing_service_busy.md)
 
 
 ---

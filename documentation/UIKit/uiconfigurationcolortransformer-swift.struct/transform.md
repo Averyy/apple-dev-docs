@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform closure of the color transformer.
 
@@ -10,7 +11,7 @@ The transform closure of the color transformer.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,7 +21,8 @@ let transform: (UIColor) -> UIColor
 
 ## See Also
 
-- [func callAsFunction(UIColor) -> UIColor](uiconfigurationcolortransformer-swift.struct/callasfunction(_:).md)
+### Calling the color transformer
+- [func callAsFunction(UIColor) -> UIColor](./callasfunction%28_%29.md)
   Calls the transform closure of the color transformer.
 
 

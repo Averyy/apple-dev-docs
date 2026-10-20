@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies the container that the size of its view is about to change.
@@ -10,13 +11,17 @@ Notifies the container that the size of its view is about to change.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func viewWillTransition(to size: CGSize, with coordinator: any UIViewControllerTransitionCoordinator)
+```
+
+```objc
+- (void) viewWillTransitionToSize:(CGSize) size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>) coordinator;
 ```
 
 #### Discussion
@@ -32,9 +37,11 @@ If you override this method in your custom view controllers, always call `super`
 
 ## See Also
 
-- [func size(forChildContentContainer: any UIContentContainer, withParentContainerSize: CGSize) -> CGSize](uicontentcontainer/size(forchildcontentcontainer:withparentcontainersize:).md)
+### Related Documentation
+- [func size(forChildContentContainer: any UIContentContainer, withParentContainerSize: CGSize) -> CGSize](./size%28forchildcontentcontainer,withparentcontainersize%29.md)
   Returns the size of the specified child view controller’s content.
-- [func willTransition(to: UITraitCollection, with: any UIViewControllerTransitionCoordinator)](uicontentcontainer/willtransition(to:with:).md)
+### Responding to environment changes
+- [func willTransition(to: UITraitCollection, with: any UIViewControllerTransitionCoordinator)](./willtransition%28to,with%29.md)
   Notifies the container that its trait collection changed.
 
 

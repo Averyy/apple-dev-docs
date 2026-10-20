@@ -1,7 +1,8 @@
 # ObjectDetectionAnnotation.CodingKeys.prominentObject
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -19,8 +20,9 @@ case prominentObject
 
 ## See Also
 
-- [ObjectDetectionAnnotation.CodingKeys.imageFileName](objectdetectionannotation/codingkeys/imagefilename.md)
-- [ObjectDetectionAnnotation.CodingKeys.objects](objectdetectionannotation/codingkeys/objects.md)
+### Coding keys
+- [ObjectDetectionAnnotation.CodingKeys.imageFileName](./imagefilename.md)
+- [ObjectDetectionAnnotation.CodingKeys.objects](./objects.md)
 
 
 ---

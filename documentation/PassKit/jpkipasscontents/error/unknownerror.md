@@ -1,7 +1,8 @@
 # JPKIPassContents.Error.unknownError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Unknown error occurred
 

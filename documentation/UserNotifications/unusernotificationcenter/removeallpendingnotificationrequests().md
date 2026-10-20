@@ -1,7 +1,8 @@
 # removeAllPendingNotificationRequests()
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all of your app’s pending local notifications.
 
@@ -20,6 +21,10 @@ Removes all of your app’s pending local notifications.
 func removeAllPendingNotificationRequests()
 ```
 
+```objc
+- (void) removeAllPendingNotificationRequests;
+```
+
 #### Discussion
 
 This method executes asynchronously, removing all pending notification requests on a secondary thread.
@@ -31,11 +36,12 @@ center.removeAllPendingNotificationRequests()
 
 ## See Also
 
-- [func add(UNNotificationRequest, withCompletionHandler: (((any Error)?) -> Void)?)](unusernotificationcenter/add(_:withcompletionhandler:).md)
+### Scheduling notifications
+- [func add(UNNotificationRequest, withCompletionHandler: (((any Error)?) -> Void)?)](./add%28_,withcompletionhandler%29.md)
   Schedules the delivery of a local notification.
-- [func getPendingNotificationRequests(completionHandler: ([UNNotificationRequest]) -> Void)](unusernotificationcenter/getpendingnotificationrequests(completionhandler:).md)
+- [func getPendingNotificationRequests(completionHandler: ([UNNotificationRequest]) -> Void)](./getpendingnotificationrequests%28completionhandler%29.md)
   Fetches all of your app’s local notifications that are pending delivery.
-- [func removePendingNotificationRequests(withIdentifiers: [String])](unusernotificationcenter/removependingnotificationrequests(withidentifiers:).md)
+- [func removePendingNotificationRequests(withIdentifiers: [String])](./removependingnotificationrequests%28withidentifiers%29.md)
   Removes your app’s local notifications that are pending and match the specified identifiers.
 
 

@@ -1,7 +1,8 @@
 # onInterruption
 
 **Framework**: ExtensionFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to run if the app extension’s process exits unexpectedly.
 

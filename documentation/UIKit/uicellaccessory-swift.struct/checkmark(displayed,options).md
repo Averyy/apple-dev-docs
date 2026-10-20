@@ -1,7 +1,8 @@
 # checkmark(displayed:options:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a checkmark system accessory with the specified display state and configuration options.
 
@@ -10,7 +11,7 @@ Creates a checkmark system accessory with the specified display state and config
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,12 +25,13 @@ A configured checkmark cell accessory. This accessory is a checkmark with the de
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the checkmark appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](uicellaccessory-swift.struct/displayedstate/always.md).
-- `options`: Configuration options for the checkmark. See [`UICellAccessory.CheckmarkOptions`](uicellaccessory-swift.struct/checkmarkoptions.md) for possible configuration options.
+- `displayed`: The cell-editing states that the checkmark appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.always`](./displayedstate/always.md).
+- `options`: Configuration options for the checkmark. See [`UICellAccessory.CheckmarkOptions`](./checkmarkoptions.md) for possible configuration options.
 
 ## See Also
 
-- [UICellAccessory.CheckmarkOptions](uicellaccessory-swift.struct/checkmarkoptions.md)
+### Creating a checkmark accessory
+- [UICellAccessory.CheckmarkOptions](./checkmarkoptions.md)
   Configuration options for a checkmark accessory.
 
 

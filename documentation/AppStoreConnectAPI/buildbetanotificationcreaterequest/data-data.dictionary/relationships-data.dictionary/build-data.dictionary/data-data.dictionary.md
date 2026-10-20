@@ -1,7 +1,8 @@
 # BuildBetaNotificationCreateRequest.Data.Relationships.Build.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of the resource that you’re relating with the resource you’re creating.
 
@@ -10,7 +11,7 @@ The type and ID of the resource that you’re relating with the resource you’r
 
 ## Declaration
 
-```swift
+```
 object BuildBetaNotificationCreateRequest.Data.Relationships.Build.Data
 ```
 
@@ -18,6 +19,8 @@ object BuildBetaNotificationCreateRequest.Data.Relationships.Build.Data
 
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
 - `type` (string) *(required)*: The types and IDs of the related data to update.
+
+  **Allowed Values**: `builds`
 
 
 ---

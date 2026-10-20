@@ -1,6 +1,7 @@
 # Improving interactions between Siri and your messaging app
 
-**Framework**: SiriKit
+**Framework**: SiriKit  
+**Role**: Article
 
 Donate app-specific content, use Siri’s contact suggestions, and adopt the latest platform features to create a more consistent messaging experience.
 
@@ -15,9 +16,9 @@ SiriKit provides a number of supplementary APIs that are specific to messaging a
 
 > 💡 **Tip**:  In addition to messaging apps, the content of the first two sections is applicable to apps using SiriKit’s VoIP-related intents. For example, [`INStartCallIntent`](https://developer.apple.com/documentation/intents/instartcallintent).
 
-For information about how Apple protects people’s privacy when your messaging or VoIP app shares information with the system, see the Siri section of [`Privacy - Features`](https://developer.apple.comhttps://www.apple.com/privacy/features).
+For information about how Apple protects people’s privacy when your messaging or VoIP app shares information with the system, see the Siri section of [Privacy - Features](https://www.apple.com/privacy/features).
 
-##### Donate Contact Vocabulary and App Interactions to Siri
+##### Donate contact vocabulary and app interactions to Siri
 
 Siri integrates with the Contacts app and uses the app’s contact database to suggest message recipients. If your app manages its own database of contacts, independent of the Contacts app, donate the names of those contacts using [`INVocabulary`](https://developer.apple.com/documentation/intents/invocabulary) to enable Siri to locate them when handling requests. If your messaging app supports group chats, use the same APIs to donate the in-app names of those group chats.
 
@@ -41,7 +42,7 @@ INVocabulary.shared().setVocabulary(contacts, of: .contactName)
 
 When someone performs an action in your messaging app and the app includes support for the corresponding intent, such as sending or replying to a message, create and donate an instance of [`INInteraction`](https://developer.apple.com/documentation/intents/ininteraction) to make Siri aware of the action. If your app uses the system’s Contacts database, reduce ambiguity by setting the [`contactIdentifier`](https://developer.apple.com/documentation/intents/inperson/contactidentifier) property for each of the interaction’s contacts to their corresponding database identifier; otherwise, set their [`customIdentifier`](https://developer.apple.com/documentation/intents/inperson/customidentifier) property to the unique value your app uses to identify them.
 
-##### Choose Recipients From the Matches Siri Suggests
+##### Choose recipients from the matches Siri suggests
 
 When Siri asks your intent handler to resolve a message’s recipients, it provides a collection of [`INPerson`](https://developer.apple.com/documentation/intents/inperson) objects — one for each recipient. Using data from the Contacts app (for example, work or family relationships), Siri populates the [`siriMatches`](https://developer.apple.com/documentation/intents/inperson/sirimatches) property on each instance of [`INPerson`](https://developer.apple.com/documentation/intents/inperson) with zero or more proposed contact matches, enabling your app to provide more accurate recipient options to the person sending the message.
 
@@ -54,7 +55,7 @@ Use the following guidance to determine which [`INPersonResolutionResult`](https
 
 If your messaging app allows people to attach a custom image to each of their contacts, use the [`image`](https://developer.apple.com/documentation/intents/inperson/image) property on [`INPerson`](https://developer.apple.com/documentation/intents/inperson) to provide that image when returning an instance of [`INPersonResolutionResult`](https://developer.apple.com/documentation/intents/inpersonresolutionresult).
 
-##### Enable People to Unsend or Edit Sent Messages
+##### Enable people to unsend or edit sent messages
 
 In iOS 16 and later, after a person sends a message from the Messages app or Siri, within a short duration after sending, they can unsend or edit that message. To add the same functionality to your messaging app, perform the following:
 
@@ -79,7 +80,7 @@ class UnsendMessagesIntentHandler: NSObject, INUnsendMessagesIntentHandling {
 
 SiriKit provides additional response codes specific to message unsending and editing. For more information, see [`INUnsendMessagesIntentResponseCode`](https://developer.apple.com/documentation/intents/inunsendmessagesintentresponsecode) and [`INEditMessageIntentResponseCode`](https://developer.apple.com/documentation/intents/ineditmessageintentresponsecode).
 
-##### Return Attachment Metadata in Siri Search Results
+##### Return attachment metadata in Siri search results
 
 When someone asks Siri for information about their sent or received messages, Siri creates an instance of [`INSearchForMessagesIntent`](https://developer.apple.com/documentation/intents/insearchformessagesintent) and requests your app to fulfill that intent. If the messages in your app’s results include attachments, use the appropriate attachment-related initializers on [`INMessage`](https://developer.apple.com/documentation/intents/inmessage) to provide additional information for Siri to announce or display. For example, you can include an array of [`INFile`](https://developer.apple.com/documentation/intents/infile) instances that describe each file (including their content type), or if a single message has several attachments, provide the count of attachments instead.
 
@@ -93,35 +94,36 @@ For more information, see the following:
 
 ## See Also
 
-- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
+### Articles
+- [Adding User Interactivity with Siri Shortcuts and the Shortcuts App](./adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md)
   Add custom intents and parameters to help users interact more quickly and effectively with Siri and the Shortcuts app.
-- [Defining Relevant Shortcuts for the Siri Watch Face](defining-relevant-shortcuts-for-the-siri-watch-face.md)
+- [Defining Relevant Shortcuts for the Siri Watch Face](./defining-relevant-shortcuts-for-the-siri-watch-face.md)
   Inform Siri when your app’s shortcuts may be useful to the user.
-- [Deleting Donated Shortcuts](deleting-donated-shortcuts.md)
+- [Deleting Donated Shortcuts](./deleting-donated-shortcuts.md)
   Remove your donations from Siri.
-- [Dispatching intents to handlers](dispatching-intents-to-handlers.md)
+- [Dispatching intents to handlers](./dispatching-intents-to-handlers.md)
   Provide SiriKit with an intent handler capable of handling a specific intent.
-- [Improving Siri Media Interactions and App Selection](improving-siri-media-interactions-and-app-selection.md)
+- [Improving Siri Media Interactions and App Selection](./improving-siri-media-interactions-and-app-selection.md)
   Fine-tune voice controls and improve Siri Suggestions by sharing app capabilities, customized names, and listening habits with the system.
-- [Registering Custom Vocabulary with SiriKit](registering-custom-vocabulary-with-sirikit.md)
+- [Registering Custom Vocabulary with SiriKit](./registering-custom-vocabulary-with-sirikit.md)
   Register your app’s custom terminology, and provide sample phrases for how to use your app with Siri.
-- [Confirming the Details of an Intent](confirming-the-details-of-an-intent.md)
+- [Confirming the Details of an Intent](./confirming-the-details-of-an-intent.md)
   Perform final validation of the intent parameters and verify that your services are ready to fulfill the intent.
-- [Handling an Intent](handling-an-intent.md)
+- [Handling an Intent](./handling-an-intent.md)
   Fulfill the intent and provide feedback to SiriKit about what you did.
-- [Resolving the Parameters of an Intent](resolving-the-parameters-of-an-intent.md)
+- [Resolving the Parameters of an Intent](./resolving-the-parameters-of-an-intent.md)
   Validate the parameters of an intent and make sure that you have the information you need to continue.
-- [Generating a List of Ride Options](generating-a-list-of-ride-options.md)
+- [Generating a List of Ride Options](./generating-a-list-of-ride-options.md)
   Generate ride options for Maps to display to the user.
-- [Handling the Ride-Booking Intents](handling-the-ride-booking-intents.md)
+- [Handling the Ride-Booking Intents](./handling-the-ride-booking-intents.md)
   Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
-- [Donating Reservations](donating-reservations.md)
+- [Donating Reservations](./donating-reservations.md)
   Inform Siri of reservations made from your app.
-- [Specifying Synonyms for Your App Name](specifying-synonyms-for-your-app-name.md)
+- [Specifying Synonyms for Your App Name](./specifying-synonyms-for-your-app-name.md)
   Provide alternative names for your app that are more familiar or easier for users to speak.
-- [Intent Phrases](intent-phrases.md)
+- [Intent Phrases](./intent-phrases.md)
   The keys that you include in your global vocabulary file to show how users engage your app from Siri.
-- [Localizing Your Vocabulary for Chinese Dialects](localizing-your-vocabulary-for-chinese-dialects.md)
+- [Localizing Your Vocabulary for Chinese Dialects](./localizing-your-vocabulary-for-chinese-dialects.md)
   Apply emphasis markers to your pronunciation tips to assist Siri with Chinese dialects.
 
 

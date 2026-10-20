@@ -1,7 +1,8 @@
 # weather
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A usage of a temperature measurement related to the weather.
 
@@ -20,9 +21,12 @@ A usage of a temperature measurement related to the weather.
 static var weather: MeasurementFormatUnitUsage<UnitTemperature> { get }
 ```
 
+Available when `UnitType` is `UnitTemperature`.
+
 ## See Also
 
-- [static var person: MeasurementFormatUnitUsage<UnitTemperature>](measurementformatunitusage/person-4ifk7.md)
+### Selecting a Format for a Temperature Measurement
+- [static var person: MeasurementFormatUnitUsage<UnitTemperature>](./person-4ifk7.md)
   A format usage of a temperature measurement for displaying a temperature as it relates to people.
 
 

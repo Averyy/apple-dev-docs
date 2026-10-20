@@ -1,15 +1,20 @@
 # state
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var state: hv_ioapic_state
+```
+
+```c
+struct hv_ioapic_state state;
 ```
 
 

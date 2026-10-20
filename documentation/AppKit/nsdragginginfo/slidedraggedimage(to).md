@@ -2,18 +2,23 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Slides the image to a specified location.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 func slideDraggedImage(to screenPoint: NSPoint)
+```
+
+```objc
+- (void) slideDraggedImageTo:(NSPoint) screenPoint;
 ```
 
 #### Discussion
@@ -34,9 +39,10 @@ This method has been available since OS X v 10.0, however it was not implemented
 
 ## See Also
 
-- [var animatesToDestination: Bool](nsdragginginfo/animatestodestination.md)
+### Sliding the image
+- [var animatesToDestination: Bool](./animatestodestination.md)
   A Boolean value that indicates whether the dragging formation animates while the drag is over the destination.
-- [var draggingFormation: NSDraggingFormation](nsdragginginfo/draggingformation.md)
+- [var draggingFormation: NSDraggingFormation](./draggingformation.md)
   The formation of the dragging items while the drag is over the destination.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a borrowing iterator over the elements of this sequence.
@@ -20,6 +21,11 @@ Returns a borrowing iterator over the elements of this sequence.
 ```swift
 func makeBorrowingIterator() -> Self.BorrowingIterator
 ```
+
+## Default Implementations
+
+### Iterable Implementations
+- [func makeBorrowingIterator() -> Self](./makeborrowingiterator%28%29-37ib.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # rootFrames
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Root frames for this call stack thread
 
@@ -20,11 +21,12 @@ let rootFrames: ContiguousArray<CallStackFrame>
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [let threadAttributed: Bool?](callstackthread/threadattributed.md)
+### Frames
+- [let threadAttributed: Bool?](./threadattributed.md)
   Indicates whether this call stack is attributed to a specific thread.
 
 

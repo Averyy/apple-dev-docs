@@ -1,17 +1,22 @@
 # sortDescriptors
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the sort descriptors used to arrange the tree controller’s content.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var sortDescriptors: [NSSortDescriptor] { get set }
+```
+
+```objc
+@property (copy) NSArray<NSSortDescriptor *> * sortDescriptors;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ When the value of this property is an empty array, the tree controller has no so
 
 ## See Also
 
-- [Cocoa Bindings](cocoa-bindings.md)
+### Related Documentation
+- [Cocoa Bindings](../cocoa-bindings.md)
   Automatically synchronize your data model with your app’s interface using Cocoa Bindings.
 
 

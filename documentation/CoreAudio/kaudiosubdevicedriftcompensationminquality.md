@@ -1,13 +1,14 @@
 # kAudioSubDeviceDriftCompensationMinQuality
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
+- iOS 16.0+ - Deprecated in 27.2 (renamed: kAudioAggregateDriftCompensationMinQuality)
+- iPadOS 16.0+ - Deprecated in 27.2 (renamed: kAudioAggregateDriftCompensationMinQuality)
+- Mac Catalyst 16.0+ - Deprecated in 27.2 (renamed: kAudioAggregateDriftCompensationMinQuality)
+- macOS 13.0+ - Deprecated in 27.2 (renamed: kAudioAggregateDriftCompensationMinQuality)
 
 ## Declaration
 
@@ -15,12 +16,17 @@
 var kAudioSubDeviceDriftCompensationMinQuality: UInt32 { get }
 ```
 
+```c
+kAudioSubDeviceDriftCompensationMinQuality
+```
+
 ## See Also
 
-- [var kAudioSubDeviceDriftCompensationHighQuality: UInt32](kaudiosubdevicedriftcompensationhighquality.md)
-- [var kAudioSubDeviceDriftCompensationLowQuality: UInt32](kaudiosubdevicedriftcompensationlowquality.md)
-- [var kAudioSubDeviceDriftCompensationMaxQuality: UInt32](kaudiosubdevicedriftcompensationmaxquality.md)
-- [var kAudioSubDeviceDriftCompensationMediumQuality: UInt32](kaudiosubdevicedriftcompensationmediumquality.md)
+### Constants
+- [var kAudioSubDeviceDriftCompensationHighQuality: UInt32](./kaudiosubdevicedriftcompensationhighquality.md)
+- [var kAudioSubDeviceDriftCompensationLowQuality: UInt32](./kaudiosubdevicedriftcompensationlowquality.md)
+- [var kAudioSubDeviceDriftCompensationMaxQuality: UInt32](./kaudiosubdevicedriftcompensationmaxquality.md)
+- [var kAudioSubDeviceDriftCompensationMediumQuality: UInt32](./kaudiosubdevicedriftcompensationmediumquality.md)
 
 
 ---

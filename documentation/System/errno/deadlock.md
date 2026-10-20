@@ -1,7 +1,8 @@
 # deadlock
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Resource deadlock avoided.
 
@@ -22,7 +23,7 @@ static var deadlock: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,9 +33,10 @@ The corresponding C error is `EDEADLK`.
 
 ## See Also
 
-- [static var noMemory: Errno](errno/nomemory.md)
+### Runtime Errors
+- [static var noMemory: Errno](./nomemory.md)
   Can’t allocate memory.
-- [static var wouldBlock: Errno](errno/wouldblock.md)
+- [static var wouldBlock: Errno](./wouldblock.md)
   Operation would block.
 
 

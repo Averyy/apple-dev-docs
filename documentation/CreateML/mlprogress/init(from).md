@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a progress instance by decoding from the given decoder.
 
@@ -25,7 +26,8 @@ init(from decoder: any Decoder) throws
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](mlprogress/encode(to:).md)
+### Encoding and decoding a session’s progress
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes the progress value into the given encoder.
 
 

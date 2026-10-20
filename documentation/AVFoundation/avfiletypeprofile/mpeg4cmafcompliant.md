@@ -1,7 +1,8 @@
 # mpeg4CMAFCompliant
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A file type profile that complies with the Common Media Application Format (CMAF).
 
@@ -20,13 +21,18 @@ A file type profile that complies with the Common Media Application Format (CMAF
 static let mpeg4CMAFCompliant: AVFileTypeProfile
 ```
 
+```c
+extern AVFileTypeProfile const AVFileTypeProfileMPEG4CMAFCompliant;
+```
+
 #### Discussion
 
-To learn more about CMAF, see [`About the Common Media Application Format with HTTP Live Streaming (HLS)`](https://developer.apple.com/documentation/http-live-streaming/about-the-common-media-application-format-with-http-live-streaming-hls).
+To learn more about CMAF, see [About the Common Media Application Format with HTTP Live Streaming (HLS)](../../HTTP-Live-Streaming/about-the-common-media-application-format-with-http-live-streaming-hls.md).
 
 ## See Also
 
-- [static let mpeg4AppleHLS: AVFileTypeProfile](avfiletypeprofile/mpeg4applehls.md)
+### File type profiles
+- [static let mpeg4AppleHLS: AVFileTypeProfile](./mpeg4applehls.md)
   A file type profile for Apple HTTP Live Streaming.
 
 

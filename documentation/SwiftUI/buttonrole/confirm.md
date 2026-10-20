@@ -1,7 +1,8 @@
 # confirm
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A role that indicates a button that confirms an operation.
 

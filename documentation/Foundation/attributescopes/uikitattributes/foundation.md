@@ -1,7 +1,8 @@
 # foundation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property for accessing attributes defined by the Foundation framework.
 

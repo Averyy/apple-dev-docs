@@ -1,7 +1,8 @@
 # ExpressibleByNilLiteral
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be initialized using the nil literal, `nil`.
 
@@ -27,23 +28,24 @@ protocol ExpressibleByNilLiteral : ~Copyable, ~Escapable
 ## Topics
 
 ### Initializers
-- [init(nilLiteral: ())](expressiblebynilliteral/init(nilliteral:).md)
+- [init(nilLiteral: ())](./expressiblebynilliteral/init%28nilliteral%29.md)
   Creates an instance initialized with `nil`.
 
 ## Relationships
 
 ### Conforming Types
-- [Optional](optional.md)
+- [Optional](./optional.md)
 
 ## See Also
 
-- [protocol ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
+### Value Literals
+- [protocol ExpressibleByIntegerLiteral](./expressiblebyintegerliteral.md)
   A type that can be initialized with an integer literal.
-- [protocol ExpressibleByFloatLiteral](expressiblebyfloatliteral.md)
+- [protocol ExpressibleByFloatLiteral](./expressiblebyfloatliteral.md)
   A type that can be initialized with a floating-point literal.
-- [protocol ExpressibleByBooleanLiteral](expressiblebybooleanliteral.md)
+- [protocol ExpressibleByBooleanLiteral](./expressiblebybooleanliteral.md)
   A type that can be initialized with the Boolean literals `true` and `false`.
-- [struct StaticBigInt](staticbigint.md)
+- [struct StaticBigInt](./staticbigint.md)
   An immutable arbitrary-precision signed integer.
 
 

@@ -1,7 +1,8 @@
 # Read Beta Tester Usage Metrics
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get usage metrics for a specific beta tester.
 
@@ -14,7 +15,7 @@ Get usage metrics for a specific beta tester.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/betaTesters/1aa1fe09-bb5c-47dd-a067-a6066db1d32d/metrics/betaTesterUsages?period=P90D&filter%5Bapps%5D=6447306070
 ```
 
@@ -66,15 +67,33 @@ https://api.appstoreconnect.apple.com/v1/betaTesters/1aa1fe09-bb5c-47dd-a067-a60
 
 ## Parameters
 
-- `filter[apps]` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `apps` resource ID from the [`List apps`](get-v1-apps.md) response.
-- `limit` (integer)
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `betaTesters` resource ID from the [`List beta testers`](./get-v1-betatesters.md) response.
+
+### Query Parameters
+
+- `filter[apps]` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `apps` resource ID from the [`List apps`](./get-v1-apps.md) response.
+- `limit` (integer): **Maximum**: `200`
 - `period` (string): -`P7D`: 7 days -`P30D`: 30 days -`P90D`: 90 days -`P365D`: 356 days
+
+  **Allowed Values**: `P7D`, `P30D`, `P90D`, `P365D`
+
+## Responses
+
+- `200` OK (`BetaTesterUsagesV1MetricResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read Beta Tester Metrics for an App](get-v1-apps-_id_-metrics-betatesterusages.md)
+### Beta Tester Metrics
+- [Read Beta Tester Metrics for an App](./get-v1-apps-_id_-metrics-betatesterusages.md)
   Get usage metrics for beta testers of a specific app.
-- [Read Metrics for Beta Testers in a Beta Group](get-v1-betagroups-_id_-metrics-betatesterusages.md)
+- [Read Metrics for Beta Testers in a Beta Group](./get-v1-betagroups-_id_-metrics-betatesterusages.md)
   Get beta tester usage metrics for a beta group.
 
 

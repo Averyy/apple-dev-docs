@@ -1,7 +1,8 @@
 # init(minimumDistance:maximumDistance:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a camera bounds with the zoom ranges you specify.
 
@@ -11,7 +12,7 @@ Creates a camera bounds with the zoom ranges you specify.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -27,9 +28,10 @@ init(minimumDistance: Double? = nil, maximumDistance: Double? = nil)
 
 ## See Also
 
-- [init(centerCoordinateBounds: MKCoordinateRegion, minimumDistance: Double?, maximumDistance: Double?)](mapcamerabounds/init(centercoordinatebounds:minimumdistance:maximumdistance:)-97kis.md)
+### Creating a map camera bounds
+- [init(centerCoordinateBounds: MKCoordinateRegion, minimumDistance: Double?, maximumDistance: Double?)](./init%28centercoordinatebounds,minimumdistance,maximumdistance%29-97kis.md)
   Creates a camera bounds with the specified region boundary and zoom ranges.
-- [init(centerCoordinateBounds: MKMapRect, minimumDistance: Double?, maximumDistance: Double?)](mapcamerabounds/init(centercoordinatebounds:minimumdistance:maximumdistance:)-27z4p.md)
+- [init(centerCoordinateBounds: MKMapRect, minimumDistance: Double?, maximumDistance: Double?)](./init%28centercoordinatebounds,minimumdistance,maximumdistance%29-27z4p.md)
   Creates a camera bounds with the specified map rectangle boundary and zoom ranges.
 
 

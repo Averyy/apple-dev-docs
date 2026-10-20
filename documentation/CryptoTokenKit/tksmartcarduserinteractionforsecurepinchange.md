@@ -1,7 +1,8 @@
 # TKSmartCardUserInteractionForSecurePINChange
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A representation of the user interaction for secure PIN change operations on a Smart Card reader.
 
@@ -20,6 +21,10 @@ A representation of the user interaction for secure PIN change operations on a S
 class TKSmartCardUserInteractionForSecurePINChange
 ```
 
+```objc
+@interface TKSmartCardUserInteractionForSecurePINChange : TKSmartCardUserInteractionForPINOperation
+```
+
 #### Overview
 
 The result of a user interaction is available once the interaction has completed.
@@ -27,35 +32,36 @@ The result of a user interaction is available once the interaction has completed
 ## Topics
 
 ### Configuring User Interaction
-- [var pinConfirmation: TKSmartCardUserInteractionForSecurePINChange.Confirmation](tksmartcarduserinteractionforsecurepinchange/pinconfirmation.md)
+- [var pinConfirmation: TKSmartCardUserInteractionForSecurePINChange.Confirmation](./tksmartcarduserinteractionforsecurepinchange/pinconfirmation.md)
   The way PIN confirmation is requested. `TKSmartCardPINConfirmationNone` by default.
-- [TKSmartCardUserInteractionForSecurePINChange.Confirmation](tksmartcarduserinteractionforsecurepinchange/confirmation.md)
+- [TKSmartCardUserInteractionForSecurePINChange.Confirmation](./tksmartcarduserinteractionforsecurepinchange/confirmation.md)
 
 ## Relationships
 
 ### Inherits From
-- [TKSmartCardUserInteractionForPINOperation](tksmartcarduserinteractionforpinoperation.md)
+- [TKSmartCardUserInteractionForPINOperation](./tksmartcarduserinteractionforpinoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func userInteractionForSecurePINVerification(TKSmartCardPINFormat, apdu: Data, pinByteOffset: Int) -> TKSmartCardUserInteractionForSecurePINVerification?](tksmartcard/userinteractionforsecurepinverification(_:apdu:pinbyteoffset:).md)
+### Managing User Interaction
+- [func userInteractionForSecurePINVerification(TKSmartCardPINFormat, apdu: Data, pinByteOffset: Int) -> TKSmartCardUserInteractionForSecurePINVerification?](./tksmartcard/userinteractionforsecurepinverification%28_,apdu,pinbyteoffset%29.md)
   Creates and returns a new user interaction object for secure PIN verification using the Smart Card reader facilities.
-- [func userInteractionForSecurePINChange(TKSmartCardPINFormat, apdu: Data, currentPINByteOffset: Int, newPINByteOffset: Int) -> TKSmartCardUserInteractionForSecurePINChange?](tksmartcard/userinteractionforsecurepinchange(_:apdu:currentpinbyteoffset:newpinbyteoffset:).md)
+- [func userInteractionForSecurePINChange(TKSmartCardPINFormat, apdu: Data, currentPINByteOffset: Int, newPINByteOffset: Int) -> TKSmartCardUserInteractionForSecurePINChange?](./tksmartcard/userinteractionforsecurepinchange%28_,apdu,currentpinbyteoffset,newpinbyteoffset%29.md)
   Creates a new user interaction object for secure PIN change using the smart card reader facilities (typically a HW keypad).
-- [class TKSmartCardPINFormat](tksmartcardpinformat.md)
+- [class TKSmartCardPINFormat](./tksmartcardpinformat.md)
   The formatting properties for a PIN, such as character encoding and length constraints.
-- [class TKSmartCardUserInteraction](tksmartcarduserinteraction.md)
+- [class TKSmartCardUserInteraction](./tksmartcarduserinteraction.md)
   The base class for encapsulating user interaction with a Smart Card reader.
-- [class TKSmartCardUserInteractionForPINOperation](tksmartcarduserinteractionforpinoperation.md)
+- [class TKSmartCardUserInteractionForPINOperation](./tksmartcarduserinteractionforpinoperation.md)
   A representation of user interaction for secure PIN operations on a Smart Card reader.
-- [class TKSmartCardUserInteractionForSecurePINVerification](tksmartcarduserinteractionforsecurepinverification.md)
+- [class TKSmartCardUserInteractionForSecurePINVerification](./tksmartcarduserinteractionforsecurepinverification.md)
   A representation of the user interaction for secure PIN change verification on a Smart Card reader.
 
 

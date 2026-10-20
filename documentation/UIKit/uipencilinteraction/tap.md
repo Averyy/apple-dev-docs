@@ -1,7 +1,8 @@
 # UIPencilInteraction.Tap
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interaction that represents a double tap on Apple Pencil.
 
@@ -18,40 +19,45 @@ An interaction that represents a double tap on Apple Pencil.
 class Tap
 ```
 
+```objc
+@interface UIPencilInteractionTap : NSObject
+```
+
 ## Topics
 
 ### Getting information about a double-tap interaction
-- [var timestamp: TimeInterval](uipencilinteraction/tap/timestamp.md)
+- [var timestamp: TimeInterval](./tap/timestamp.md)
   The timestamp of the double-tap interaction.
-- [var hoverPose: UIPencilHoverPose?](uipencilinteraction/tap/hoverpose.md)
+- [var hoverPose: UIPencilHoverPose?](./tap/hoverpose.md)
   The hover pose of Apple Pencil during a double-tap interaction.
-- [class UIPencilHoverPose](uipencilhoverpose.md)
+- [class UIPencilHoverPose](../uipencilhoverpose.md)
   An object that describes the hover pose of Apple Pencil during an interaction like double tap or squeeze.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [class UIPencilInteraction](uipencilinteraction.md)
+### Apple Pencil interactions in UIKit
+- [class UIPencilInteraction](../uipencilinteraction.md)
   An interaction that tells your app when a person double-taps or squeezes Apple Pencil.
-- [protocol UIPencilInteractionDelegate](uipencilinteractiondelegate.md)
+- [protocol UIPencilInteractionDelegate](../uipencilinteractiondelegate.md)
   The interface an object implements to handle double taps or squeezes a person makes on Apple Pencil.
-- [UIPencilInteraction.Squeeze](uipencilinteraction/squeeze.md)
+- [UIPencilInteraction.Squeeze](./squeeze.md)
   An interaction that represents a squeeze on Apple Pencil.
-- [UIPencilInteraction.Phase](uipencilinteraction/phase.md)
+- [UIPencilInteraction.Phase](./phase.md)
   Constants that describe the phases of an interaction on Apple Pencil.
-- [class UIPencilHoverPose](uipencilhoverpose.md)
+- [class UIPencilHoverPose](../uipencilhoverpose.md)
   An object that describes the hover pose of Apple Pencil during an interaction like double tap or squeeze.
 
 

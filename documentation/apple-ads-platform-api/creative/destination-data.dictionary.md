@@ -1,7 +1,8 @@
 # Creative.Destination
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Post-tap destination entity defining where users go after tapping the ad.
 
@@ -10,7 +11,7 @@ Post-tap destination entity defining where users go after tapping the ad.
 
 ## Declaration
 
-```swift
+```
 object Creative.Destination
 ```
 
@@ -20,7 +21,7 @@ Destination is the post-tap experience for the ad creative. The `destinationType
 
 ## Properties
 
-- `destinationType` (Destination.DestinationType): The type of post-tap destination. See [`DestinationType`](destinationtype.md). Immutable after creation.
+- `destinationType` (Destination.DestinationType): The type of post-tap destination. See [`DestinationType`](../destinationtype.md). Immutable after creation.
 - `parameters` (Destination.Parameters): Destination-specific parameters. Sub-fields: adamId (App Store app identifier, required), productPageId (UUID of a Custom Product Page created in App Store Connect, nullable string UUID, omit to use the default product page). Immutable after creation.
 - `url` (string): The resolved destination URL. Read-only, computed by the system from `destinationType` and `parameters`.
 

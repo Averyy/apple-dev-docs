@@ -1,7 +1,8 @@
 # supportsNegativeNumbers
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var supportsNegativeNumbers: Bool? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitSpeed>`.
+
 ## See Also
 
-- [var unit: IntentParameter<Value>.Speed?](intentparameter/unit-620ka.md)
-- [IntentParameter.Speed](intentparameter/speed.md)
-- [var defaultUnit: IntentParameter<Value>.Speed?](intentparameter/defaultunit-92l04.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-8a31x.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Speed?](./unit-620ka.md)
+- [IntentParameter.Speed](./speed.md)
+- [var defaultUnit: IntentParameter<Value>.Speed?](./defaultunit-92l04.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-8a31x.md)
 
 
 ---

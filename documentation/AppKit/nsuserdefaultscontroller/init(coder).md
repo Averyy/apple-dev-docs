@@ -1,10 +1,11 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(defaults: UserDefaults?, initialValues: [String : Any]?)](nsuserdefaultscontroller/init(defaults:initialvalues:).md)
+### Initializing a user defaults controller
+- [init(defaults: UserDefaults?, initialValues: [String : Any]?)](./init%28defaults,initialvalues%29.md)
   Returns an initialized NSUserDefaultsController object using the NSUserDefaults instance specified in `defaults` and the initial default values contained in the `initialValues` dictionary.
 
 

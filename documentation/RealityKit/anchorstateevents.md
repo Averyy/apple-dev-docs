@@ -1,7 +1,8 @@
 # AnchorStateEvents
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Events that trigger on an entity to indicate a change in anchor state.
 
@@ -21,23 +22,24 @@ enum AnchorStateEvents
 
 #### Overview
 
-You need to set up [`SpatialTrackingSession`](spatialtrackingsession.md) to listen for this event.
+You need to set up [`SpatialTrackingSession`](./spatialtrackingsession.md) to listen for this event.
 
 ## Topics
 
 ### Structures
-- [AnchorStateEvents.DidAnchor](anchorstateevents/didanchor.md)
+- [AnchorStateEvents.DidAnchor](./anchorstateevents/didanchor.md)
   Event that triggers on an entity after the entity is anchored with certain reasons.
-- [AnchorStateEvents.DidFailToAnchor](anchorstateevents/didfailtoanchor.md)
+- [AnchorStateEvents.DidFailToAnchor](./anchorstateevents/didfailtoanchor.md)
   Event that triggers on an entity when pending anchor encounters an error.
-- [AnchorStateEvents.WillUnanchor](anchorstateevents/willunanchor.md)
+- [AnchorStateEvents.WillUnanchor](./anchorstateevents/willunanchor.md)
   Event that triggers on an entity before the entity is unanchored with certain reasons.
 
 ## See Also
 
-- [enum SceneEvents](sceneevents.md)
+### Scene and entity lifecycle events
+- [enum SceneEvents](./sceneevents.md)
   Events the scene invokes.
-- [enum ComponentEvents](componentevents.md)
+- [enum ComponentEvents](./componentevents.md)
   Provides the events related to components.
 
 

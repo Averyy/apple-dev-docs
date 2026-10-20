@@ -1,7 +1,8 @@
 # windowDidChangeScreen(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the window has changed screens.
 
@@ -15,23 +16,28 @@ Tells the delegate that the window has changed screens.
 optional func windowDidChangeScreen(_ notification: Notification)
 ```
 
+```objc
+- (void) windowDidChangeScreen:(NSNotification *) notification;
+```
+
 #### Discussion
 
-You can retrieve the `NSWindow` object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) to `notification`.
+You can retrieve the `NSWindow` object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 
 ## Parameters
 
-- `notification`: A notification named [`didChangeScreenNotification`](nswindow/didchangescreennotification.md).
+- `notification`: A notification named [`didChangeScreenNotification`](../nswindow/didchangescreennotification.md).
 
 ## See Also
 
-- [func windowWillMove(Notification)](nswindowdelegate/windowwillmove(_:).md)
+### Moving Windows
+- [func windowWillMove(Notification)](./windowwillmove%28_%29.md)
   Tells the delegate that the window is about to move.
-- [func windowDidMove(Notification)](nswindowdelegate/windowdidmove(_:).md)
+- [func windowDidMove(Notification)](./windowdidmove%28_%29.md)
   Tells the delegate that the window has moved.
-- [func windowDidChangeScreenProfile(Notification)](nswindowdelegate/windowdidchangescreenprofile(_:).md)
+- [func windowDidChangeScreenProfile(Notification)](./windowdidchangescreenprofile%28_%29.md)
   Tells the delegate that the window has changed screen display profiles.
-- [func windowDidChangeBackingProperties(Notification)](nswindowdelegate/windowdidchangebackingproperties(_:).md)
+- [func windowDidChangeBackingProperties(Notification)](./windowdidchangebackingproperties%28_%29.md)
   Tells the delegate that the window backing properties changed.
 
 

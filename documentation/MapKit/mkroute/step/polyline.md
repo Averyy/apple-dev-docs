@@ -1,7 +1,8 @@
 # polyline
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The detailed step geometry.
 
@@ -18,6 +19,10 @@ The detailed step geometry.
 
 ```swift
 var polyline: MKPolyline { get }
+```
+
+```objc
+@property (nonatomic, readonly) MKPolyline * polyline;
 ```
 
 #### Discussion

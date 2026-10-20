@@ -1,7 +1,8 @@
 # blue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A blue highlight color.
 
@@ -22,15 +23,16 @@ static let blue: NSAttributedString.TextHighlightColorScheme
 
 ## See Also
 
-- [static let `default`: NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme/default.md)
+### Getting the color schemes
+- [static let `default`: NSAttributedString.TextHighlightColorScheme](./default.md)
   The default system highlight color.
-- [static let mint: NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme/mint.md)
+- [static let mint: NSAttributedString.TextHighlightColorScheme](./mint.md)
   A mint green highlight color.
-- [static let orange: NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme/orange.md)
+- [static let orange: NSAttributedString.TextHighlightColorScheme](./orange.md)
   An orange highlight color.
-- [static let pink: NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme/pink.md)
+- [static let pink: NSAttributedString.TextHighlightColorScheme](./pink.md)
   A pink highlight color.
-- [static let purple: NSAttributedString.TextHighlightColorScheme](nsattributedstring/texthighlightcolorscheme/purple.md)
+- [static let purple: NSAttributedString.TextHighlightColorScheme](./purple.md)
   A purple highlight color.
 
 

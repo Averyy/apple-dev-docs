@@ -1,7 +1,8 @@
 # init(size:data:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a logging argument structure from the pointer to the additional logging data.
 

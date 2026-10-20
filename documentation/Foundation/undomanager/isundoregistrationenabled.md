@@ -1,7 +1,8 @@
 # isUndoRegistrationEnabled
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the recording of undo operations is enabled.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether the recording of undo operations is enabl
 var isUndoRegistrationEnabled: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isUndoRegistrationEnabled) BOOL undoRegistrationEnabled;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if registration is enabled; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if registration is enabled; otherwise, [`false`](../../Swift/false.md).
 
-The default is [`true`](https://developer.apple.com/documentation/swift/true).
+The default is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func disableUndoRegistration()](undomanager/disableundoregistration.md)
+### Enabling and disabling undo
+- [func disableUndoRegistration()](./disableundoregistration%28%29.md)
   Disables the recording of undo operations.
-- [func enableUndoRegistration()](undomanager/enableundoregistration.md)
+- [func enableUndoRegistration()](./enableundoregistration%28%29.md)
   Enables the recording of undo operations.
 
 

@@ -1,7 +1,8 @@
 # convertLabToRGB()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts an image from CIELAB to RGB color space.
 
@@ -19,15 +20,19 @@ Converts an image from CIELAB to RGB color space.
 class func convertLabToRGB() -> any CIFilter & CIConvertLab
 ```
 
+```objc
++ (CIFilter<CIConvertLab> *) convertLabToRGBFilter;
+```
+
 #### Return Value
 
-The converted [`CIImage`](ciimage.md).
+The converted [`CIImage`](../ciimage.md).
 
 #### Discussion
 
 This filter converts an image from CIELAB color space to RGB. The CIELAB color space expresses color as three values: L* for the perceptual lightness, and a*b* for the colors red, green, blue, and yellow. The RGB color space expresses colors using the intensities of the three primary colors: red, green, and blue.
 
-- **`inputImage`**: A [`CIImage`](ciimage.md) containing the `RGB` image.
+- **`inputImage`**: A [`CIImage`](../ciimage.md) containing the `RGB` image.
 - **`normalize`**: If true, the three input channels are in the range 0 to 1. If false, the L* channel is in the range 0 to 100, and the a*b* channels are in the range -128 to 128.
 
 The following code applies the `convertLabToRGBFilter` to an image with the `normalize` flag set to the `true`:
@@ -41,39 +46,40 @@ func convertLabToRGB(inputImage: CIImage) -> CIImage {
 }
 ```
 
-![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. It has been transformed into the Lab color space. The bridge is a light cyan color and the sky is a gradient from yellow-green through to red-pink.  The right image shows the result of applying the convert-RGB-to-Lab to this image. The bridge is a red color and sky is gradient going from light blue at the horizon to dark blue at the top of the image.](/images/com.apple.coreimage/media-4407298@2x.png)
+![Two images arranged horizontally. The left image contains a photo of the Golden Gate Bridge with a clear sky as the background. It has been transformed into the Lab color space. The bridge is a light cyan color and the sky is a gradient from yellow-green through to red-pink.  The right image shows the result of applying the convert-RGB-to-Lab to this image. The bridge is a red color and sky is gradient going from light blue at the horizon to dark blue at the top of the image.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-4407298@2x.png)
 
 ## See Also
 
-- [class func colorCrossPolynomial() -> any CIFilter & CIColorCrossPolynomial](cifilter-swift.class/colorcrosspolynomial.md)
+### Color Effect Filters
+- [class func colorCrossPolynomial() -> any CIFilter & CIColorCrossPolynomial](./colorcrosspolynomial%28%29.md)
   Adjusts an image’s color by applying polynomial cross-products.
-- [class func colorCube() -> any CIFilter & CIColorCube](cifilter-swift.class/colorcube.md)
+- [class func colorCube() -> any CIFilter & CIColorCube](./colorcube%28%29.md)
   Adjusts an image’s pixels using a three-dimensional color table.
-- [class func colorCubeWithColorSpace() -> any CIFilter & CIColorCubeWithColorSpace](cifilter-swift.class/colorcubewithcolorspace.md)
+- [class func colorCubeWithColorSpace() -> any CIFilter & CIColorCubeWithColorSpace](./colorcubewithcolorspace%28%29.md)
   Adjusts an image’s pixels using a three-dimensional color table in specified color space.
-- [class func colorCubesMixedWithMask() -> any CIFilter & CIColorCubesMixedWithMask](cifilter-swift.class/colorcubesmixedwithmask.md)
+- [class func colorCubesMixedWithMask() -> any CIFilter & CIColorCubesMixedWithMask](./colorcubesmixedwithmask%28%29.md)
   Alters an image’s pixels using a three-dimensional color tables and a mask image.
-- [class func colorCurves() -> any CIFilter & CIColorCurves](cifilter-swift.class/colorcurves.md)
+- [class func colorCurves() -> any CIFilter & CIColorCurves](./colorcurves%28%29.md)
   Adjusts an image’s color curves.
-- [class func colorInvert() -> any CIFilter & CIColorInvert](cifilter-swift.class/colorinvert.md)
+- [class func colorInvert() -> any CIFilter & CIColorInvert](./colorinvert%28%29.md)
   Inverts an image’s colors.
-- [class func colorMap() -> any CIFilter & CIColorMap](cifilter-swift.class/colormap.md)
+- [class func colorMap() -> any CIFilter & CIColorMap](./colormap%28%29.md)
   Performs a transformation of the input image colors to colors from a gradient image.
-- [class func colorMonochrome() -> any CIFilter & CIColorMonochrome](cifilter-swift.class/colormonochrome.md)
+- [class func colorMonochrome() -> any CIFilter & CIColorMonochrome](./colormonochrome%28%29.md)
   Adjusts an image’s colors to shades of a single color.
-- [class func colorPosterize() -> any CIFilter & CIColorPosterize](cifilter-swift.class/colorposterize.md)
+- [class func colorPosterize() -> any CIFilter & CIColorPosterize](./colorposterize%28%29.md)
   Flattens an image’s colors.
-- [class func convertRGBtoLab() -> any CIFilter & CIConvertLab](cifilter-swift.class/convertrgbtolab.md)
+- [class func convertRGBtoLab() -> any CIFilter & CIConvertLab](./convertrgbtolab%28%29.md)
   Converts an image from RGB to CIELAB color space.
-- [class func dither() -> any CIFilter & CIDither](cifilter-swift.class/dither.md)
+- [class func dither() -> any CIFilter & CIDither](./dither%28%29.md)
   Applies randomized noise to produce a processed look.
-- [class func documentEnhancer() -> any CIFilter & CIDocumentEnhancer](cifilter-swift.class/documentenhancer.md)
+- [class func documentEnhancer() -> any CIFilter & CIDocumentEnhancer](./documentenhancer%28%29.md)
   Adjusts an image’s shadows and contrast.
-- [class func falseColor() -> any CIFilter & CIFalseColor](cifilter-swift.class/falsecolor.md)
+- [class func falseColor() -> any CIFilter & CIFalseColor](./falsecolor%28%29.md)
   Replaces an image’s colors with specified colors.
-- [class func labDeltaE() -> any CIFilter & CILabDeltaE](cifilter-swift.class/labdeltae.md)
+- [class func labDeltaE() -> any CIFilter & CILabDeltaE](./labdeltae%28%29.md)
   Compares an image’s color values.
-- [class func maskToAlpha() -> any CIFilter & CIMaskToAlpha](cifilter-swift.class/masktoalpha.md)
+- [class func maskToAlpha() -> any CIFilter & CIMaskToAlpha](./masktoalpha%28%29.md)
   Converts an image to a white image with an alpha component.
 
 

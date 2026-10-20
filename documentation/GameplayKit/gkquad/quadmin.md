@@ -1,7 +1,8 @@
 # quadMin
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corner of the rectangle with the lowest coordinate values (in most coordinate systems, the lower-left corner).
 
@@ -19,9 +20,14 @@ The corner of the rectangle with the lowest coordinate values (in most coordinat
 var quadMin: vector_float2
 ```
 
+```c
+vector_float2 quadMin;
+```
+
 ## See Also
 
-- [var quadMax: vector_float2](gkquad/quadmax.md)
+### Instance Properties
+- [var quadMax: vector_float2](./quadmax.md)
   The corner of the rectangle with the highest coordinate values (in most coordinate systems, the upper-right corner).
 
 

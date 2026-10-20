@@ -1,7 +1,8 @@
 # instantiateInitialController(creator:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the initial view controller from the storyboard and initializes it using your custom code.
 
@@ -22,17 +23,22 @@ The initial view controller in the storyboard.
 
 Every storyboard file has an initial controller object that represents the default interface to create. Use this method to construct that object using a custom code that you provide. Use this method when the constructor for your object takes parameters in addition to the specified `coder` object.
 
-In your `creator` block, create the view controller using your custom constructor method. Your custom constructor method must accept an [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder) parameter and must call the inherited [`init(coder:)`](nsresponder/init(coder:).md) method at some point during its execution. Not doing so is a programmer error.
+In your `creator` block, create the view controller using your custom constructor method. Your custom constructor method must accept an [`NSCoder`](../../Foundation/nscoder.md) parameter and must call the inherited [`init(coder:)`](../nsresponder/init%28coder%29.md) method at some point during its execution. Not doing so is a programmer error.
 
 ## Parameters
 
-- `creator`: A block that contains your custom creation code for the view controller. Use this block to create the view controller, initialize it with the provided coder object and any custom information you require, and return the result. This block returns a new view controller object and takes the following parameter: - **coder**: The coder object that contains the storyboard data to use when configuring the view controller. If you return `nil` from your block, this method creates the view controller using the default [`init(coder:)`](nsviewcontroller/init(coder:).md) method.
+- `creator`: A block that contains your custom creation code for the view controller. Use this block to create the view controller, initialize it with the provided coder object and any custom information you require, and return the result. This block returns a new view controller object and takes the following parameter:
+
+  - **coder**: The coder object that contains the storyboard data to use when configuring the view controller.
+
+  If you return `nil` from your block, this method creates the view controller using the default [`init(coder:)`](../nsviewcontroller/init%28coder%29.md) method.
 
 ## See Also
 
-- [func instantiateInitialController() -> Any?](nsstoryboard/instantiateinitialcontroller.md)
+### Loading the Initial View Controller
+- [func instantiateInitialController() -> Any?](./instantiateinitialcontroller%28%29.md)
   Creates the initial view controller or window controller from a storyboard.
-- [func instantiateInitialController<Controller>(creator: ((NSCoder) -> Controller?)?) -> Controller?](nsstoryboard/instantiateinitialcontroller(creator:)-529r1.md)
+- [func instantiateInitialController<Controller>(creator: ((NSCoder) -> Controller?)?) -> Controller?](./instantiateinitialcontroller%28creator%29-529r1.md)
   Creates the initial window controller from the storyboard and initializes it using your custom code.
 
 

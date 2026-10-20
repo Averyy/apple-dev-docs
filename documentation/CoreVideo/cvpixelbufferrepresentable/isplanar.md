@@ -1,7 +1,8 @@
 # isPlanar
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 True if the buffer was created with support for one or more planes.
 

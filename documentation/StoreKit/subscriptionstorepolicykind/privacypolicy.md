@@ -1,7 +1,8 @@
 # privacyPolicy
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The privacy policy type.
 
@@ -22,7 +23,8 @@ static var privacyPolicy: SubscriptionStorePolicyKind { get }
 
 ## See Also
 
-- [static var termsOfService: SubscriptionStorePolicyKind](subscriptionstorepolicykind/termsofservice.md)
+### Getting policy types
+- [static var termsOfService: SubscriptionStorePolicyKind](./termsofservice.md)
   The terms of service policy type.
 
 

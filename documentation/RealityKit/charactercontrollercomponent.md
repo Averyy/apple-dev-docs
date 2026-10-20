@@ -1,7 +1,8 @@
 # CharacterControllerComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that manages character movement.
 
@@ -11,7 +12,7 @@ A component that manages character movement.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,13 +22,13 @@ struct CharacterControllerComponent
 
 #### Overview
 
-To use a character controller, add a `CharacterControllerComponent` to your entity to make it a character entity. Use [`moveCharacter(by:deltaTime:relativeTo:collisionHandler:)`](entity/movecharacter(by:deltatime:relativeto:collisionhandler:).md) to move your character and respond to collisions, or [`teleportCharacter(to:relativeTo:)`](entity/teleportcharacter(to:relativeto:).md) to place your character instantaneously in 3D space.
+To use a character controller, add a `CharacterControllerComponent` to your entity to make it a character entity. Use [`moveCharacter(by:deltaTime:relativeTo:collisionHandler:)`](./entity/movecharacter%28by,deltatime,relativeto,collisionhandler%29.md) to move your character and respond to collisions, or [`teleportCharacter(to:relativeTo:)`](./entity/teleportcharacter%28to,relativeto%29.md) to place your character instantaneously in 3D space.
 
-> **Note**: [`PhysicsBodyComponent`](physicsbodycomponent.md) and [`CollisionComponent`](collisioncomponent.md) are incompatible with `CharacterControllerComponent`, and RealityKit deactivates them if you add them to the same entity.
+> **Note**: [`PhysicsBodyComponent`](./physicsbodycomponent.md) and [`CollisionComponent`](./collisioncomponent.md) are incompatible with `CharacterControllerComponent`, and RealityKit deactivates them if you add them to the same entity.
 
-#### Handle Collision
+#### Handle collision
 
-Character entities are capsular, and you can specify their height and radius in the component’s initializer. A character’s capsule shape aligns with its [`upVector`](charactercontrollercomponent/upvector.md) so that the top and bottom of the capsule pass through that direction vector.
+Character entities are capsular, and you can specify their height and radius in the component’s initializer. A character’s capsule shape aligns with its [`upVector`](./charactercontrollercomponent/upvector.md) so that the top and bottom of the capsule pass through that direction vector.
 
 Although characters don’t have a `CollisionComponent`, they can still interact with colliders. The collision handler in `moveCharacter(by:deltaTime:relativeTo:collisionHandler:)` allows you to respond to collisions with solid colliders in your scene.
 
@@ -38,17 +39,17 @@ entity.moveCharacter(by: velocity * deltaTime, deltaTime: deltaTime, relativeTo:
 }
 ```
 
-To handle collisions with colliders that have a [`mode`](collisioncomponent/mode-swift.property.md) of [`CollisionComponent.Mode.trigger`](collisioncomponent/mode-swift.enum/trigger.md), subscribe to the [`CollisionEvents.Began`](collisionevents/began.md) event for your [`RealityView`](realityview.md). This event doesn’t occur for solid collisions with your character, but RealityKit invokes it when your character enters a trigger. This is useful for collecting coins, claiming checkpoints, activating enemy behavior when your character enters an area, and many other interactions within games.
+To handle collisions with colliders that have a [`mode`](./collisioncomponent/mode-swift.property.md) of [`CollisionComponent.Mode.trigger`](./collisioncomponent/mode-swift.enum/trigger.md), subscribe to the [`CollisionEvents.Began`](./collisionevents/began.md) event for your [`RealityView`](./realityview.md). This event doesn’t occur for solid collisions with your character, but RealityKit invokes it when your character enters a trigger. This is useful for collecting coins, claiming checkpoints, activating enemy behavior when your character enters an area, and many other interactions within games.
 
-#### Update Your Character
+#### Update your character
 
 A common use case for `CharacterControllerComponent` is to control a character in a video game. Video games have update loops where characters and game logic update once each frame, allowing them to respond to player input in real time. `CharacterControllerComponent` works well in such a setup.
 
-To move your character in response to player input, subscribe to [`PhysicsSimulationEvents.WillSimulate`](physicssimulationevents/willsimulate.md) on [`RealityViewContent`](realityviewcontent.md) for your scene. The event object contains information like the time delta since the last update, and you can treat this callback as the update loop for your game.
+To move your character in response to player input, subscribe to [`PhysicsSimulationEvents.WillSimulate`](./physicssimulationevents/willsimulate.md) on [`RealityViewContent`](./realityviewcontent.md) for your scene. The event object contains information like the time delta since the last update, and you can treat this callback as the update loop for your game.
 
-> **Note**: You can also use [`SceneEvents.Update`](sceneevents/update.md) to run code for each frame, but avoid using it to control physics-based motion in your scene.
+> **Note**: You can also use [`SceneEvents.Update`](./sceneevents/update.md) to run code for each frame, but avoid using it to control physics-based motion in your scene.
 
-Read the values from [`CharacterControllerStateComponent`](charactercontrollerstatecomponent.md) to accumulate forces (such as gravity) and to check whether the character is on the ground. RealityKit calculates [`isOnGround`](charactercontrollerstatecomponent/isonground.md) and  [`velocity`](charactercontrollerstatecomponent/velocity.md) only after you call `moveCharacter(by:deltaTime:relativeTo:collisionHandler:)`, so it’s a good idea to call this function at each update.
+Read the values from [`CharacterControllerStateComponent`](./charactercontrollerstatecomponent.md) to accumulate forces (such as gravity) and to check whether the character is on the ground. RealityKit calculates [`isOnGround`](./charactercontrollerstatecomponent/isonground.md) and  [`velocity`](./charactercontrollerstatecomponent/velocity.md) only after you call `moveCharacter(by:deltaTime:relativeTo:collisionHandler:)`, so it’s a good idea to call this function at each update.
 
 ```swift
 let gravity: SIMD3<Float> = [0, -50, 0]
@@ -82,63 +83,66 @@ content.subscribe(to: PhysicsSimulationEvents.WillSimulate.self, on: playerEntit
 
 The following video shows a character entity jumping in response to player input:
 
+[Video: A video of a white capsule jumping on a flat gray plane in response to player input.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/character_controller_component_jump.mp4)
+
 ## Topics
 
 ### Creating a character controller component
-- [init()](charactercontrollercomponent/init.md)
+- [init()](./charactercontrollercomponent/init%28%29.md)
   Creates a character controller component using default values.
-- [init(radius: Float, height: Float, skinWidth: Float, slopeLimit: Float, stepLimit: Float, upVector: SIMD3<Float>, collisionFilter: CollisionFilter)](charactercontrollercomponent/init(radius:height:skinwidth:slopelimit:steplimit:upvector:collisionfilter:).md)
+- [init(radius: Float, height: Float, skinWidth: Float, slopeLimit: Float, stepLimit: Float, upVector: SIMD3<Float>, collisionFilter: CollisionFilter)](./charactercontrollercomponent/init%28radius,height,skinwidth,slopelimit,steplimit,upvector,collisionfilter%29.md)
   Creates a character controller component using specified values.
 ### Configuring a character
-- [var height: Float](charactercontrollercomponent/height.md)
+- [var height: Float](./charactercontrollercomponent/height.md)
   The capsule height.
-- [var radius: Float](charactercontrollercomponent/radius.md)
+- [var radius: Float](./charactercontrollercomponent/radius.md)
   The capsule radius.
-- [var skinWidth: Float](charactercontrollercomponent/skinwidth.md)
+- [var skinWidth: Float](./charactercontrollercomponent/skinwidth.md)
   An added tolerance around the character capsule.
-- [var slopeLimit: Float](charactercontrollercomponent/slopelimit.md)
+- [var slopeLimit: Float](./charactercontrollercomponent/slopelimit.md)
   The slope limit expressed as a limit angle in radians.
-- [var stepLimit: Float](charactercontrollercomponent/steplimit.md)
+- [var stepLimit: Float](./charactercontrollercomponent/steplimit.md)
   The maximum obstacle height that the controller can move over.
-- [var upVector: SIMD3<Float>](charactercontrollercomponent/upvector.md)
+- [var upVector: SIMD3<Float>](./charactercontrollercomponent/upvector.md)
   The y-axis direction relative to the physics origin.
 ### Managing character collisions
-- [var collisionFilter: CollisionFilter](charactercontrollercomponent/collisionfilter.md)
+- [var collisionFilter: CollisionFilter](./charactercontrollercomponent/collisionfilter.md)
   The character’s collision filter.
 ### Reading default values
-- [static let defaultHeight: Float](charactercontrollercomponent/defaultheight.md)
+- [static let defaultHeight: Float](./charactercontrollercomponent/defaultheight.md)
   The capsule height value RealityKit applies when you use the default initializer.
-- [static let defaultRadius: Float](charactercontrollercomponent/defaultradius.md)
+- [static let defaultRadius: Float](./charactercontrollercomponent/defaultradius.md)
   The capsule default radius RealityKit applies when you use the default initializer.
-- [static let defaultSkinWidth: Float](charactercontrollercomponent/defaultskinwidth.md)
+- [static let defaultSkinWidth: Float](./charactercontrollercomponent/defaultskinwidth.md)
   The skin width value RealityKit applies when you use the default initializer.
-- [static let defaultSlopeLimit: Float](charactercontrollercomponent/defaultslopelimit.md)
+- [static let defaultSlopeLimit: Float](./charactercontrollercomponent/defaultslopelimit.md)
   The slope limit value RealityKit applies when you use the default initializer.
-- [static let defaultStepLimit: Float](charactercontrollercomponent/defaultsteplimit.md)
+- [static let defaultStepLimit: Float](./charactercontrollercomponent/defaultsteplimit.md)
   The step limit value RealityKit applies when you use the default initializer.
-- [static let defaultUpVector: SIMD3<Float>](charactercontrollercomponent/defaultupvector.md)
+- [static let defaultUpVector: SIMD3<Float>](./charactercontrollercomponent/defaultupvector.md)
   The default up vector RealityKit applies when you use the default initializer.
 ### Animating a character
-- [struct JointTransforms](jointtransforms.md)
+- [struct JointTransforms](./jointtransforms.md)
   A set of animatable transform values for joints that collectively represent a single skeletal pose.
 ### Handling collisions
-- [CharacterControllerComponent.Collision](charactercontrollercomponent/collision.md)
+- [CharacterControllerComponent.Collision](./charactercontrollercomponent/collision.md)
   A container that holds collision state for the character controller.
-- [CharacterControllerComponent.CollisionFlags](charactercontrollercomponent/collisionflags.md)
+- [CharacterControllerComponent.CollisionFlags](./charactercontrollercomponent/collisionflags.md)
   An option set that specifies which parts of the character capsule have collided with other objects.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [CharacterControllerComponent.Collision](charactercontrollercomponent/collision.md)
+### Character control
+- [CharacterControllerComponent.Collision](./charactercontrollercomponent/collision.md)
   A container that holds collision state for the character controller.
-- [CharacterControllerComponent.CollisionFlags](charactercontrollercomponent/collisionflags.md)
+- [CharacterControllerComponent.CollisionFlags](./charactercontrollercomponent/collisionflags.md)
   An option set that specifies which parts of the character capsule have collided with other objects.
-- [struct CharacterControllerStateComponent](charactercontrollerstatecomponent.md)
+- [struct CharacterControllerStateComponent](./charactercontrollerstatecomponent.md)
   A component that represents the state of a character controller.
 
 

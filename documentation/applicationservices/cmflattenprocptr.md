@@ -1,7 +1,8 @@
 # CMFlattenProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a pointer to a data transfer callback function that transfers profile data from the format for embedded profiles to disk file format or vice versa.
 
@@ -14,9 +15,13 @@ Defines a pointer to a data transfer callback function that transfers profile da
 typealias CMFlattenProcPtr = (Int32, UnsafeMutablePointer<Int>?, UnsafeMutableRawPointer?, UnsafeMutableRawPointer?) -> OSErr
 ```
 
-#### Return_value
+```c
+typedef OSErr (*CMFlattenProcPtr)(SInt32 command, long *size, void *data, void *refCon);
+```
 
-A result code. See [`Result Codes`](colorsync_manager#1670295.md).
+#### Return Value
+
+A result code. See [Result Codes](./colorsync_manager.md#1670295).
 
 #### Discussion
 
@@ -57,7 +62,9 @@ When an application calls the `CMUnflattenProfile` function to transfer a profil
 - `command`: The command with which the `MyCMFlattenCallback` function is called. This command specifies the operation the function is to perform. 
 - `size`: A pointer to a size value. On input, the size in bytes of the data to transfer. On return, the size of the data actually transferred.
 - `data`: A pointer to the buffer supplied by the ColorSync Manager to use for the data transfer. 
-- `refCon`: A pointer to a reference constant that holds the application data passed in from the functions [`CMFlattenProfile`](colorsync_manager/1804897-cmflattenprofile.md), [`NCMUnflattenProfile`](colorsync_manager/1804901-ncmunflattenprofile.md), [`CMGetPS2ColorRenderingVMSize`](colorsync_manager/1805206-cmgetps2colorrenderingvmsize.md), [`CMGetPS2ColorRenderingIntent`](colorsync_manager/1805196-cmgetps2colorrenderingintent.md), or [`CMFlattenProfile`](colorsync_manager/1804897-cmflattenprofile.md). Each time the CMM calls your `MyCMFlattenCallback` function, it passes this data to the function. Starting in ColorSync version 2.5, the ColorSync Manager calls your function directly, without going through the preferred, or any, CMM.
+- `refCon`: A pointer to a reference constant that holds the application data passed in from the functions [CMFlattenProfile](./colorsync_manager/api-1804897-cmflattenprofile.md), [NCMUnflattenProfile](./colorsync_manager/api-1804901-ncmunflattenprofile.md), [CMGetPS2ColorRenderingVMSize](./colorsync_manager/api-1805206-cmgetps2colorrenderingvmsize.md), [CMGetPS2ColorRenderingIntent](./colorsync_manager/api-1805196-cmgetps2colorrenderingintent.md), or [CMFlattenProfile](./colorsync_manager/api-1804897-cmflattenprofile.md). Each time the CMM calls your `MyCMFlattenCallback` function, it passes this data to the function.
+
+  Starting in ColorSync version 2.5, the ColorSync Manager calls your function directly, without going through the preferred, or any, CMM.
 
 
 ---

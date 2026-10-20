@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct persona_modify_info {
     ...
 };
@@ -17,8 +17,8 @@ struct persona_modify_info {
 ## Topics
 
 ### Instance Properties
-- [persona_id](persona_modify_info/3042845-persona_id.md)
-- [unique_pid](persona_modify_info/3042846-unique_pid.md)
+- [persona_id](./persona_modify_info/api-3042845-persona_id.md)
+- [unique_pid](./persona_modify_info/api-3042846-unique_pid.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # renderingMode
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A setting that determines how the app renders an image.
 
@@ -9,7 +10,7 @@ A setting that determines how the app renders an image.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -19,15 +20,20 @@ A setting that determines how the app renders an image.
 var renderingMode: UIImage.RenderingMode { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIImageRenderingMode renderingMode;
+```
+
 #### Discussion
 
-The default rendering mode is [`UIImage.RenderingMode.automatic`](uiimage/renderingmode-swift.enum/automatic.md).
+The default rendering mode is [`UIImage.RenderingMode.automatic`](./renderingmode-swift.enum/automatic.md).
 
 ## See Also
 
-- [UIImage.RenderingMode](uiimage/renderingmode-swift.enum.md)
+### Getting rendering information
+- [UIImage.RenderingMode](./renderingmode-swift.enum.md)
   Constants that specify the possible rendering modes for an image.
-- [var imageRendererFormat: UIGraphicsImageRendererFormat](uiimage/imagerendererformat.md)
+- [var imageRendererFormat: UIGraphicsImageRendererFormat](./imagerendererformat.md)
   The preferred image renderer format for the image.
 
 

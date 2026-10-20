@@ -1,14 +1,15 @@
 # stage
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An indirect measurement of power consumption by an HVAC electric heating or cooling stage.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -31,7 +32,8 @@ For multi stage or variable speed systems, you should map stages based on their 
 
 ## See Also
 
-- [init(stage: Int)](electrichvacloadevent/electricalmeasurement/init(stage:).md)
+### Initializing an electrical measurement
+- [init(stage: Int)](./init%28stage%29.md)
   Initializes an electrical measurement for the electrical load event.
 
 

@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared data store object.
 
@@ -16,6 +17,10 @@ The shared data store object.
 
 ```swift
 class var shared: CLSDataStore { get }
+```
+
+```objc
+@property (class, nonatomic, strong, readonly) CLSDataStore * shared;
 ```
 
 #### Discussion

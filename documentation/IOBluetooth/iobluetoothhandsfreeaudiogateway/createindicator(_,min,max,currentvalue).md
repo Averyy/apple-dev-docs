@@ -1,7 +1,8 @@
 # createIndicator(_:min:max:currentValue:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a request to the Bluetooth device to show or update a status indicator.
 
@@ -14,22 +15,29 @@ Sends a request to the Bluetooth device to show or update a status indicator.
 func createIndicator(_ indicatorName: String!, min minValue: Int32, max maxValue: Int32, currentValue: Int32)
 ```
 
+```objc
+- (void) createIndicator:(NSString *) indicatorName min:(int) minValue max:(int) maxValue currentValue:(int) currentValue;
+```
+
 ## Parameters
 
-- `indicatorName`: The name of the indicator. Use one of the following constants: - [`IOBluetoothHandsFreeIndicatorService`](iobluetoothhandsfreeindicatorservice.md)
-- [`IOBluetoothHandsFreeIndicatorCall`](iobluetoothhandsfreeindicatorcall.md)
-- [`IOBluetoothHandsFreeIndicatorCallSetup`](iobluetoothhandsfreeindicatorcallsetup.md)
-- [`IOBluetoothHandsFreeIndicatorCallHeld`](iobluetoothhandsfreeindicatorcallheld.md)
-- [`IOBluetoothHandsFreeIndicatorSignal`](iobluetoothhandsfreeindicatorsignal.md)
-- [`IOBluetoothHandsFreeIndicatorRoam`](iobluetoothhandsfreeindicatorroam.md)
-- [`IOBluetoothHandsFreeIndicatorBattChg`](iobluetoothhandsfreeindicatorbattchg.md)
+- `indicatorName`: The name of the indicator. Use one of the following constants:
+
+  - [`IOBluetoothHandsFreeIndicatorService`](../iobluetoothhandsfreeindicatorservice.md)
+  - [`IOBluetoothHandsFreeIndicatorCall`](../iobluetoothhandsfreeindicatorcall.md)
+  - [`IOBluetoothHandsFreeIndicatorCallSetup`](../iobluetoothhandsfreeindicatorcallsetup.md)
+  - [`IOBluetoothHandsFreeIndicatorCallHeld`](../iobluetoothhandsfreeindicatorcallheld.md)
+  - [`IOBluetoothHandsFreeIndicatorSignal`](../iobluetoothhandsfreeindicatorsignal.md)
+  - [`IOBluetoothHandsFreeIndicatorRoam`](../iobluetoothhandsfreeindicatorroam.md)
+  - [`IOBluetoothHandsFreeIndicatorBattChg`](../iobluetoothhandsfreeindicatorbattchg.md)
 - `minValue`: The minimum value for the indicator.
 - `maxValue`: The maximum value for the indicator.
 - `currentValue`: The current value of the indicator.
 
 ## See Also
 
-- [Status Indicator Constants](status-indicator-constants.md)
+### Showing Status Indicators
+- [Status Indicator Constants](../status-indicator-constants.md)
   Send commands to modify the status indicators of a hands-free Bluetooth device.
 
 

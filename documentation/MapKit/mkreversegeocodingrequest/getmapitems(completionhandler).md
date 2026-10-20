@@ -1,7 +1,8 @@
 # getMapItems(completionHandler:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the map items relevant to the reverse geocoded location.
 
@@ -17,12 +18,21 @@ Returns the map items relevant to the reverse geocoded location.
 ## Declaration
 
 ```swift
+func getMapItems(completionHandler: @escaping @MainActor @Sendable ([MKMapItem]?, (any Error)?) -> Void)
+```
+
+```swift
 var mapItems: [MKMapItem] { get async throws }
+```
+
+```objc
+- (void) getMapItemsWithCompletionHandler:(void (^)(NSArray<MKMapItem *> *, NSError *)) completionHandler;
 ```
 
 ## See Also
 
-- [var preferredLocale: Locale?](mkreversegeocodingrequest/preferredlocale.md)
+### Getting information about map items and the reverse geocoder’s locale’
+- [var preferredLocale: Locale?](./preferredlocale.md)
   A value that indicates the preferred locale for the addresses the request returns, or `nil` if the framework should use the device locale.
 
 

@@ -1,7 +1,8 @@
 # AVFoundationErrorDomain
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain of AVFoundation errors.
 
@@ -20,9 +21,14 @@ The error domain of AVFoundation errors.
 let AVFoundationErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const AVFoundationErrorDomain;
+```
+
 ## See Also
 
-- [struct AVError](averror-swift.struct.md)
+### Errors
+- [struct AVError](./averror-swift.struct.md)
   A structure that defines the errors that framework operations can generate.
 
 

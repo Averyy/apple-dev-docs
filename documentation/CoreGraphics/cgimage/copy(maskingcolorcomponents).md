@@ -1,7 +1,8 @@
 # copy(maskingColorComponents:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 7.0+
@@ -20,9 +21,10 @@ func copy(maskingColorComponents components: [CGFloat]) -> CGImage?
 
 ## See Also
 
-- [func cropping(to: CGRect) -> CGImage?](cgimage/cropping(to:).md)
+### Creating images by modifying an image
+- [func cropping(to: CGRect) -> CGImage?](./cropping%28to%29.md)
   Creates a bitmap image using the data contained within a subregion of an existing bitmap image.
-- [func masking(CGImage) -> CGImage?](cgimage/masking(_:).md)
+- [func masking(CGImage) -> CGImage?](./masking%28_%29.md)
   Creates a bitmap image from an existing image and an image mask.
 
 

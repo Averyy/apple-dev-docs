@@ -1,7 +1,8 @@
 # wantsDynamicContentScaling
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - visionOS 1.0+
@@ -12,9 +13,14 @@
 var wantsDynamicContentScaling: Bool { get set }
 ```
 
+```objc
+@property BOOL wantsDynamicContentScaling;
+```
+
 ## See Also
 
-- [var cornerCurve: CALayerCornerCurve](calayer/cornercurve.md)
+### Instance properties
+- [var cornerCurve: CALayerCornerCurve](./cornercurve.md)
 
 
 ---

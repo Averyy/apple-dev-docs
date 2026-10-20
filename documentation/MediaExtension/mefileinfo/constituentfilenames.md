@@ -1,7 +1,8 @@
 # constituentFileNames
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var constituentFileNames: [String] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * constituentFileNames;
 ```
 
 #### Discussion

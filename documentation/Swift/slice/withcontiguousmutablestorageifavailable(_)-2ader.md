@@ -1,7 +1,8 @@
 # withContiguousMutableStorageIfAvailable(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 func withContiguousMutableStorageIfAvailable<R, Element>(_ body: (inout UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R? where Base == UnsafeMutableBufferPointer<Element>
 ```
+
+Available when `Base` conforms to `Collection`.
 
 
 ---

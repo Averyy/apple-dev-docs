@@ -1,7 +1,8 @@
 # NSWorkspace.DidMountVolumeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 26.0+
@@ -15,16 +16,16 @@ struct DidMountVolumeMessage
 ## Topics
 
 ### Initializers
-- [init(localizedVolumeName: String, volumeURL: URL)](nsworkspace/didmountvolumemessage/init(localizedvolumename:volumeurl:).md)
+- [init(localizedVolumeName: String, volumeURL: URL)](./didmountvolumemessage/init%28localizedvolumename,volumeurl%29.md)
 ### Instance Properties
-- [var localizedVolumeName: String](nsworkspace/didmountvolumemessage/localizedvolumename.md)
-- [var volumeURL: URL](nsworkspace/didmountvolumemessage/volumeurl.md)
+- [var localizedVolumeName: String](./didmountvolumemessage/localizedvolumename.md)
+- [var volumeURL: URL](./didmountvolumemessage/volumeurl.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

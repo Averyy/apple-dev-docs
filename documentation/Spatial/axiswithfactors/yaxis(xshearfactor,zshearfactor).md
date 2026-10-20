@@ -1,7 +1,8 @@
 # AxisWithFactors.yAxis(xShearFactor:zShearFactor:)
 
 **Framework**: Spatial  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Shears over the y-axis with shear factors for the x- and z-axis.
 
@@ -11,7 +12,7 @@ Shears over the y-axis with shear factors for the x- and z-axis.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,9 +28,10 @@ case yAxis(xShearFactor: Double, zShearFactor: Double)
 
 ## See Also
 
-- [case xAxis(yShearFactor: Double, zShearFactor: Double)](axiswithfactors/xaxis(yshearfactor:zshearfactor:).md)
+### Enumeration cases
+- [case xAxis(yShearFactor: Double, zShearFactor: Double)](./xaxis%28yshearfactor,zshearfactor%29.md)
   Shears over the x-axis with shear factors for the y- and z-axis.
-- [case zAxis(xShearFactor: Double, yShearFactor: Double)](axiswithfactors/zaxis(xshearfactor:yshearfactor:).md)
+- [case zAxis(xShearFactor: Double, yShearFactor: Double)](./zaxis%28xshearfactor,yshearfactor%29.md)
   Shears over the z-axis with shear factors for the x- and y-axis.
 
 

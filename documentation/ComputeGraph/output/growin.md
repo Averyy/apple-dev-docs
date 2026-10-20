@@ -1,13 +1,14 @@
 # output::growIn
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a smooth grow-in animation to the rendered output.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void output::growIn()
 
 This function scales the output size from 25% to 100% over the first 0.5 seconds of the element’s lifetime using a smooth interpolation. This creates a natural appearance effect where particles start small and grow to full size.
 
-> **Note**: This node is not general purpose and will be moved Visual: ![Graph](/images/com.apple.computegraph/output__growIn.svg)
+> **Deprecated**: This node is not general purpose and will be moved Visual: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/output__growIn.svg)
 
 
 ---

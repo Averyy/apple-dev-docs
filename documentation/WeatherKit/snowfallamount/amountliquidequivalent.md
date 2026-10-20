@@ -1,7 +1,8 @@
 # amountLiquidEquivalent
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimated amount of snowfall as liquid equivalent for the period.
 

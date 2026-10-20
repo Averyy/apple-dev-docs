@@ -1,7 +1,8 @@
 # window(_:shouldPopUpDocumentPathMenu:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the window displays the title pop-up menu in response to a Command-click or Control-click on its title.
 
@@ -15,9 +16,13 @@ Asks the delegate whether the window displays the title pop-up menu in response 
 optional func window(_ window: NSWindow, shouldPopUpDocumentPathMenu menu: NSMenu) -> Bool
 ```
 
+```objc
+- (BOOL) window:(NSWindow *) window shouldPopUpDocumentPathMenu:(NSMenu *) menu;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow the display of the title pop-up menu; [`false`](https://developer.apple.com/documentation/swift/false) to prevent it.
+[`true`](../../Swift/true.md) to allow the display of the title pop-up menu; [`false`](../../Swift/false.md) to prevent it.
 
 ## Parameters
 
@@ -26,7 +31,8 @@ optional func window(_ window: NSWindow, shouldPopUpDocumentPathMenu menu: NSMen
 
 ## See Also
 
-- [var representedURL: URL?](nswindow/representedurl.md)
+### Related Documentation
+- [var representedURL: URL?](../nswindow/representedurl.md)
   The URL of the file the window represents.
 
 

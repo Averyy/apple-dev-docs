@@ -1,7 +1,8 @@
 # GaussianSplatResource.ActivationFunction.identity
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Uses the values without transformation.
 

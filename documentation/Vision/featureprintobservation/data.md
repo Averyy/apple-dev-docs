@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The feature print data.
 
@@ -26,11 +27,12 @@ Vision divides the data into separate elements. Determine the type of element us
 
 ## See Also
 
-- [let elementCount: Int](featureprintobservation/elementcount.md)
+### Inspecting an observation
+- [let elementCount: Int](./elementcount.md)
   The total number of elements in the data.
-- [let elementType: ElementType](featureprintobservation/elementtype.md)
+- [let elementType: ElementType](./elementtype.md)
   The type of each element in the data.
-- [enum ElementType](elementtype.md)
+- [enum ElementType](../elementtype.md)
   The type of element in feature print data.
 
 

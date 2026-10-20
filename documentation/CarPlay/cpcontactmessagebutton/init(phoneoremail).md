@@ -1,7 +1,8 @@
 # init(phoneOrEmail:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a contact message button with the provided contact information.
 
@@ -14,6 +15,10 @@ Creates a contact message button with the provided contact information.
 
 ```swift
 init(phoneOrEmail: String)
+```
+
+```objc
+- (instancetype) initWithPhoneOrEmail:(NSString *) phoneOrEmail;
 ```
 
 #### Return Value

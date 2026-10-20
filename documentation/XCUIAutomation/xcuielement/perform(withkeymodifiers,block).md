@@ -1,7 +1,8 @@
 # perform(withKeyModifiers:block:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Executes a block of code while holding a combination keystroke.
 
@@ -9,7 +10,7 @@ Executes a block of code while holding a combination keystroke.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- macOS ?+
+- macOS
 - Xcode 16.3+
 
 ## Declaration
@@ -18,24 +19,29 @@ Executes a block of code while holding a combination keystroke.
 class func perform(withKeyModifiers flags: XCUIElement.KeyModifierFlags, block: () -> Void)
 ```
 
+```objc
++ (void) performWithKeyModifiers:(XCUIKeyModifierFlags) flags block:(void (^)()) block;
+```
+
 #### Discussion
 
 This method sets and holds the keyboard modifiers you provide while you call methods to click on, drag from, or type into elements in the block.
 
 ## Parameters
 
-- `flags`: A set of modifier flags ([`XCUIElement.KeyModifierFlags`](xcuielement/keymodifierflags.md)) to use while executing the block.
+- `flags`: A set of modifier flags ([`XCUIElement.KeyModifierFlags`](./keymodifierflags.md)) to use while executing the block.
 - `block`: The block to execute.
 
 ## See Also
 
-- [func typeKey(XCUIKeyboardKey, modifierFlags: XCUIElement.KeyModifierFlags)](xcuielement/typekey(_:modifierflags:)-6gaoi.md)
+### Combining keystrokes
+- [func typeKey(XCUIKeyboardKey, modifierFlags: XCUIElement.KeyModifierFlags)](./typekey%28_,modifierflags%29-6gaoi.md)
   Types a single key from the XCUIKeyboardKey enumeration with the specified modifier flags.
-- [func typeKey(String, modifierFlags: XCUIElement.KeyModifierFlags)](xcuielement/typekey(_:modifierflags:)-9ubn.md)
+- [func typeKey(String, modifierFlags: XCUIElement.KeyModifierFlags)](./typekey%28_,modifierflags%29-9ubn.md)
   Types a single key that a string represents with the flags you specify.
-- [struct XCUIKeyboardKey](xcuikeyboardkey.md)
+- [struct XCUIKeyboardKey](../xcuikeyboardkey.md)
   Constants to represent keys that have no typewritten equivalent.
-- [XCUIElement.KeyModifierFlags](xcuielement/keymodifierflags.md)
+- [XCUIElement.KeyModifierFlags](./keymodifierflags.md)
   Flags for simulating combination keystrokes with keys, such as Control, Option, Shift, and Command.
 
 

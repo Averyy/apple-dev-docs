@@ -1,7 +1,8 @@
 # calendars(for:)
 
 **Framework**: EventKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the calendars that belong to this source object that support a particular entity type.
 
@@ -19,6 +20,10 @@ Returns the calendars that belong to this source object that support a particula
 func calendars(for entityType: EKEntityType) -> Set<EKCalendar>
 ```
 
+```objc
+- (NSSet<EKCalendar *> *) calendarsForEntityType:(EKEntityType) entityType;
+```
+
 #### Return Value
 
 The calendars belonging to this source that support the entity type.
@@ -29,9 +34,11 @@ The calendars belonging to this source that support the entity type.
 
 ## See Also
 
-- [struct EKEntityMask](ekentitymask.md)
+### Related Documentation
+- [struct EKEntityMask](../ekentitymask.md)
   A bitmask of `EKEntityType` for specifying multiple entities at once.
-- [var calendars: Set<EKCalendar>](eksource/calendars.md)
+### Accessing Calendars
+- [var calendars: Set<EKCalendar>](./calendars.md)
   The calendars that belong to this source object.
 
 

@@ -1,14 +1,15 @@
 # insertTimeRange(_:of:at:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts a timeRange of Cinematic source asset into the corresponding tracks of a composition.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 14.0+
 - tvOS 17.0+
 

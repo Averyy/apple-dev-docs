@@ -1,7 +1,8 @@
 # HKHeartbeatSeriesSample
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A sample that represents a series of heartbeats.
 
@@ -19,45 +20,50 @@ A sample that represents a series of heartbeats.
 class HKHeartbeatSeriesSample
 ```
 
+```objc
+@interface HKHeartbeatSeriesSample : HKSeriesSample
+```
+
 #### Overview
 
-Use a [`HKHeartbeatSeriesQuery`](hkheartbeatseriesquery.md) to access the underlying heartbeat data.
+Use a [`HKHeartbeatSeriesQuery`](./hkheartbeatseriesquery.md) to access the underlying heartbeat data.
 
-The [`HKHeartbeatSeriesSample`](hkheartbeatseriessample.md) class is a subclass of the [`HKSeriesSample`](hkseriessample.md) class. These samples are immutable; you set the sample’s properties when you build them, and they can’t change.
+The [`HKHeartbeatSeriesSample`](./hkheartbeatseriessample.md) class is a subclass of the [`HKSeriesSample`](./hkseriessample.md) class. These samples are immutable; you set the sample’s properties when you build them, and they can’t change.
 
 ##### Extend Heartbeat Samples
 
-Like many HealthKit classes, you shouldn’t subclass the [`HKHeartbeatSeriesSample`](hkheartbeatseriessample.md) class. You may extend this class by adding metadata with custom keys to save related data used by your app.
+Like many HealthKit classes, you shouldn’t subclass the [`HKHeartbeatSeriesSample`](./hkheartbeatseriessample.md) class. You may extend this class by adding metadata with custom keys to save related data used by your app.
 
-For more information, see [`addMetadata(_:completion:)`](hkheartbeatseriesbuilder/addmetadata(_:completion:).md).
+For more information, see [`addMetadata(_:completion:)`](./hkheartbeatseriesbuilder/addmetadata%28_,completion%29.md).
 
 ## Topics
 
 ### Metadata
-- [let HKMetadataKeyAlgorithmVersion: String](hkmetadatakeyalgorithmversion.md)
+- [let HKMetadataKeyAlgorithmVersion: String](./hkmetadatakeyalgorithmversion.md)
   A key that indicates the version number of the algorithm used to calculate the sample’s value.
 
 ## Relationships
 
 ### Inherits From
-- [HKSeriesSample](hkseriessample.md)
+- [HKSeriesSample](./hkseriessample.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HKQuantitySeriesSampleBuilder](hkquantityseriessamplebuilder.md)
+### Series data
+- [class HKQuantitySeriesSampleBuilder](./hkquantityseriessamplebuilder.md)
   A builder object for incrementally building a sample that contains multiple quantities.
-- [class HKHeartbeatSeriesBuilder](hkheartbeatseriesbuilder.md)
+- [class HKHeartbeatSeriesBuilder](./hkheartbeatseriesbuilder.md)
   A builder object for incrementally building a heartbeat series.
 
 

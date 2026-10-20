@@ -1,7 +1,8 @@
 # mask
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collision group or groups, stored as a bitmask, with which the entity can collide.
 
@@ -11,7 +12,7 @@ The collision group or groups, stored as a bitmask, with which the entity can co
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var mask: CollisionGroup
 
 ## See Also
 
-- [var group: CollisionGroup](collisionfilter/group.md)
+### Customizing groups
+- [var group: CollisionGroup](./group.md)
   The collision group or groups, stored as a bit mask, to which the entity belongs.
 
 

@@ -1,7 +1,8 @@
 # kMDItemContentTypeTree
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 let kMDItemContentTypeTree: CFString!
+```
+
+```c
+const CFStringRef kMDItemContentTypeTree;
 ```
 
 

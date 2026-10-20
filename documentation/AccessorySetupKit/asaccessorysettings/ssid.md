@@ -1,7 +1,8 @@
 # ssid
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A hotspot identifier that clients can use to connect to an accessory’s hotspot.
 
@@ -15,9 +16,14 @@ A hotspot identifier that clients can use to connect to an accessory’s hotspot
 var ssid: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSString * SSID;
+```
+
 ## See Also
 
-- [var bluetoothTransportBridgingIdentifier: Data?](asaccessorysettings/bluetoothtransportbridgingidentifier.md)
+### Inspecting accessory settings
+- [var bluetoothTransportBridgingIdentifier: Data?](./bluetoothtransportbridgingidentifier.md)
   A 6-byte identifier for bridging classic transport profiles.
 
 

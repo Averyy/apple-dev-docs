@@ -1,18 +1,21 @@
 # init(coordinate:anchorPoint:content:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom annotation that provides a SwiftUI view to display at the map location that you specify.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS ?+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+- visionOS
+- watchOS 7.0+ - Deprecated in 10.0
+
+> **Deprecated**: Use Annotation along with Map initializers that take a MapContentBuilder instead.
 
 ## Declaration
 
@@ -27,7 +30,7 @@ Use the anchor point to align the SwiftUI view you return in content to the coor
 ## Parameters
 
 - `coordinate`: The location of the specified annotation.
-- `anchorPoint`: A [`CGPoint`](https://developer.apple.com/documentation/corefoundation/cgpoint) value in unit coordinate space that aligns the coordinate location of the annotation with view created. The default value `0.5`, which represents the center of the view.
+- `anchorPoint`: A [`CGPoint`](../../CoreFoundation/cgpoint.md) value in unit coordinate space that aligns the coordinate location of the annotation with view created. The default value `0.5`, which represents the center of the view.
 - `content`: The closure that returns a custom annotation view.
 
 

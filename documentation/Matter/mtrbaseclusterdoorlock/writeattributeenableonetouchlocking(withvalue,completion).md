@@ -1,7 +1,8 @@
 # writeAttributeEnableOneTouchLocking(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeEnableOneTouchLocking(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeEnableOneTouchLocking(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeEnableOneTouchLockingWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # id
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the transaction.
 
@@ -26,7 +27,8 @@ Every transaction such as an Apple In-App Purchase, restore, or subscription ren
 
 ## See Also
 
-- [let webOrderLineItemID: String?](transaction/weborderlineitemid.md)
+### Identifying a transaction
+- [let webOrderLineItemID: String?](./weborderlineitemid.md)
   A unique ID that identifies subscription purchase events across devices, including subscription renewals.
 
 

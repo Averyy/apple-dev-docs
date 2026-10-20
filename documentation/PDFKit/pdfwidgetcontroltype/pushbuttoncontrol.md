@@ -1,7 +1,8 @@
 # PDFWidgetControlType.pushButtonControl
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Push button control.
 
@@ -10,7 +11,7 @@ Push button control.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ Push button control.
 case pushButtonControl
 ```
 
+```c
+kPDFWidgetPushButtonControl
+```
+
 ## Mentions
 
-- [Adding Widgets to a PDF Document](adding-widgets-to-a-pdf-document.md)
+- [Adding Widgets to a PDF Document](../adding-widgets-to-a-pdf-document.md)
 
 ## See Also
 
-- [PDFWidgetControlType.unknownControl](pdfwidgetcontroltype/unknowncontrol.md)
+### Constants
+- [PDFWidgetControlType.unknownControl](./unknowncontrol.md)
   Unknown control type.
-- [PDFWidgetControlType.radioButtonControl](pdfwidgetcontroltype/radiobuttoncontrol.md)
+- [PDFWidgetControlType.radioButtonControl](./radiobuttoncontrol.md)
   Radio button control.
-- [PDFWidgetControlType.checkBoxControl](pdfwidgetcontroltype/checkboxcontrol.md)
+- [PDFWidgetControlType.checkBoxControl](./checkboxcontrol.md)
   Check box control.
 
 

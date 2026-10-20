@@ -1,7 +1,8 @@
 # MTRClusterLaundryWasherControls
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Cluster Laundry Washer Controls This cluster supports remotely monitoring and controlling the different types of functionality available to a washing device, such as a washing machine.
 
@@ -20,37 +21,41 @@ Cluster Laundry Washer Controls This cluster supports remotely monitoring and co
 class MTRClusterLaundryWasherControls
 ```
 
+```objc
+@interface MTRClusterLaundryWasherControls : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterlaundrywashercontrols/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterlaundrywashercontrols/init%28device,endpointid,queue%29.md)
   The queue is currently unused, but may be used in the future for calling completions for command invocations if commands are added to this cluster.
 ### Instance Methods
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterlaundrywashercontrols/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterlaundrywashercontrols/readattributeattributelist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterlaundrywashercontrols/readattributeclusterrevision(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterlaundrywashercontrols/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterlaundrywashercontrols/readattributegeneratedcommandlist(with:).md)
-- [func readAttributeNumberOfRinses(with: MTRReadParams?) -> [String : Any]?](mtrclusterlaundrywashercontrols/readattributenumberofrinses(with:).md)
-- [func readAttributeSpinSpeedCurrent(with: MTRReadParams?) -> [String : Any]?](mtrclusterlaundrywashercontrols/readattributespinspeedcurrent(with:).md)
-- [func readAttributeSpinSpeeds(with: MTRReadParams?) -> [String : Any]?](mtrclusterlaundrywashercontrols/readattributespinspeeds(with:).md)
-- [func readAttributeSupportedRinses(with: MTRReadParams?) -> [String : Any]?](mtrclusterlaundrywashercontrols/readattributesupportedrinses(with:).md)
-- [func writeAttributeNumberOfRinses(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterlaundrywashercontrols/writeattributenumberofrinses(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeNumberOfRinses(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterlaundrywashercontrols/writeattributenumberofrinses(withvalue:expectedvalueinterval:params:).md)
-- [func writeAttributeSpinSpeedCurrent(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterlaundrywashercontrols/writeattributespinspeedcurrent(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeSpinSpeedCurrent(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterlaundrywashercontrols/writeattributespinspeedcurrent(withvalue:expectedvalueinterval:params:).md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlaundrywashercontrols/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlaundrywashercontrols/readattributeattributelist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlaundrywashercontrols/readattributeclusterrevision%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlaundrywashercontrols/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlaundrywashercontrols/readattributegeneratedcommandlist%28with%29.md)
+- [func readAttributeNumberOfRinses(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlaundrywashercontrols/readattributenumberofrinses%28with%29.md)
+- [func readAttributeSpinSpeedCurrent(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlaundrywashercontrols/readattributespinspeedcurrent%28with%29.md)
+- [func readAttributeSpinSpeeds(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlaundrywashercontrols/readattributespinspeeds%28with%29.md)
+- [func readAttributeSupportedRinses(with: MTRReadParams?) -> [String : Any]?](./mtrclusterlaundrywashercontrols/readattributesupportedrinses%28with%29.md)
+- [func writeAttributeNumberOfRinses(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterlaundrywashercontrols/writeattributenumberofrinses%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeNumberOfRinses(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterlaundrywashercontrols/writeattributenumberofrinses%28withvalue,expectedvalueinterval,params%29.md)
+- [func writeAttributeSpinSpeedCurrent(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterlaundrywashercontrols/writeattributespinspeedcurrent%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeSpinSpeedCurrent(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterlaundrywashercontrols/writeattributespinspeedcurrent%28withvalue,expectedvalueinterval,params%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

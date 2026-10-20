@@ -1,7 +1,8 @@
 # strokedPath(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a stroked copy of the path using `style` to define how the stroked outline is created.
 

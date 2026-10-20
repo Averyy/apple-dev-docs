@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Group Activities  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of options from a raw value.
 
@@ -25,7 +26,8 @@ init(rawValue: Int)
 
 ## See Also
 
-- [let rawValue: Int](broadcastoptions/rawvalue.md)
+### Creating options from a raw value
+- [let rawValue: Int](./rawvalue.md)
   The raw value.
 
 

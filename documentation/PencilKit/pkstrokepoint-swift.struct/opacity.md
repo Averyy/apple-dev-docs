@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Opacity of the point.
 
@@ -20,16 +21,17 @@ var opacity: CGFloat { get }
 
 #### Discussion
 
-The opacity of a [`PKStrokePoint`](pkstrokepoint-swift.struct.md) has a range of `0-2`, which is a multiplier of the [`PKInk`](pkink-swift.struct.md) opacity.
+The opacity of a [`PKStrokePoint`](../pkstrokepoint-swift.struct.md) has a range of `0-2`, which is a multiplier of the [`PKInk`](../pkink-swift.struct.md) opacity.
 
 ## See Also
 
-- [var size: CGSize](pkstrokepoint-swift.struct/size.md)
+### Getting the point’s drawing data
+- [var size: CGSize](./size.md)
   The size of this point.
-- [var secondaryScale: CGFloat](pkstrokepoint-swift.struct/secondaryscale.md)
-- [var threshold: CGFloat](pkstrokepoint-swift.struct/threshold.md)
+- [var secondaryScale: CGFloat](./secondaryscale.md)
+- [var threshold: CGFloat](./threshold.md)
   The alpha threshold for clipping the stroke rendering for supported inks.
-- [var lateralJitter: CGFloat](pkstrokepoint-swift.struct/lateraljitter.md)
+- [var lateralJitter: CGFloat](./lateraljitter.md)
   The amount of lateral particle jitter at the stroke edge for supported inks.
 
 

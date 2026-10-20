@@ -1,7 +1,8 @@
 # addAction(_:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - visionOS 2.0+
@@ -14,8 +15,9 @@ func addAction(_ action: some TabletopAction)
 
 ## See Also
 
-- [func addAction(some CustomAction)](tabletopgame/addaction(_:)-9zgsy.md)
-- [func addActions(some Sequence<any TabletopAction>)](tabletopgame/addactions(_:).md)
+### Adding actions
+- [func addAction(some CustomAction)](./addaction%28_%29-9zgsy.md)
+- [func addActions(some Sequence<any TabletopAction>)](./addactions%28_%29.md)
 
 
 ---

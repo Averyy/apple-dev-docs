@@ -1,7 +1,8 @@
 # AppManagedInstallBehavior_LicenseObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A dictionary that describes the app’s license.
 
@@ -14,18 +15,24 @@ A dictionary that describes the app’s license.
 
 ## Declaration
 
-```swift
+```
 object AppManagedInstallBehavior_LicenseObject
 ```
 
 ## Mentions
 
-- [Installing, managing, updating, and removing apps](installing-managing-updating-and-removing-apps.md)
+- [Installing, managing, updating, and removing apps](./installing-managing-updating-and-removing-apps.md)
 
 ## Properties
 
-- `Assignment` (string): The type of license that the app uses for installation through the App Store, which is one of the following values: - `Device`: The app has a device license.
-- `User`: The app has a user license. This key needs to be present for App Store apps, when either `AppStoreID` or `BundleID` are present in the configuration.
+- `Assignment` (string): The type of license that the app uses for installation through the App Store, which is one of the following values:
+
+  - `Device`: The app has a device license.
+  - `User`: The app has a user license.
+
+  This key needs to be present for App Store apps, when either `AppStoreID` or `BundleID` are present in the configuration.
+
+  **Allowed Values**: `Device`, `User`
 
 
 ---

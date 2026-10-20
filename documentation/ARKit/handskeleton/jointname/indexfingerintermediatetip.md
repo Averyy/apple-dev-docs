@@ -1,7 +1,8 @@
 # HandSkeleton.JointName.indexFingerIntermediateTip
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 1.0+
@@ -14,10 +15,11 @@ case indexFingerIntermediateTip
 
 ## See Also
 
-- [HandSkeleton.JointName.indexFingerIntermediateBase](handskeleton/jointname/indexfingerintermediatebase.md)
-- [HandSkeleton.JointName.indexFingerKnuckle](handskeleton/jointname/indexfingerknuckle.md)
-- [HandSkeleton.JointName.indexFingerMetacarpal](handskeleton/jointname/indexfingermetacarpal.md)
-- [HandSkeleton.JointName.indexFingerTip](handskeleton/jointname/indexfingertip.md)
+### Index finger joints
+- [HandSkeleton.JointName.indexFingerIntermediateBase](./indexfingerintermediatebase.md)
+- [HandSkeleton.JointName.indexFingerKnuckle](./indexfingerknuckle.md)
+- [HandSkeleton.JointName.indexFingerMetacarpal](./indexfingermetacarpal.md)
+- [HandSkeleton.JointName.indexFingerTip](./indexfingertip.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # archiver(_:willReplace:with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate that one given object is being substituted for another given object.
 
@@ -20,6 +21,10 @@ Informs the delegate that one given object is being substituted for another give
 optional func archiver(_ archiver: NSKeyedArchiver, willReplace object: Any?, with newObject: Any?)
 ```
 
+```objc
+- (void) archiver:(NSKeyedArchiver *) archiver willReplaceObject:(id) object withObject:(id) newObject;
+```
+
 #### Discussion
 
 This method is called even when the delegate itself is doing, or has done, the substitution. The delegate may use this method if it is keeping track of the encoded or decoded objects.
@@ -32,13 +37,14 @@ This method is called even when the delegate itself is doing, or has done, the s
 
 ## See Also
 
-- [func archiver(NSKeyedArchiver, didEncode: Any?)](nskeyedarchiverdelegate/archiver(_:didencode:).md)
+### Encoding Data and Objects
+- [func archiver(NSKeyedArchiver, didEncode: Any?)](./archiver%28_,didencode%29.md)
   Informs the delegate that a given object has been encoded.
-- [func archiverDidFinish(NSKeyedArchiver)](nskeyedarchiverdelegate/archiverdidfinish(_:).md)
+- [func archiverDidFinish(NSKeyedArchiver)](./archiverdidfinish%28_%29.md)
   Notifies the delegate that encoding has finished.
-- [func archiver(NSKeyedArchiver, willEncode: Any) -> Any?](nskeyedarchiverdelegate/archiver(_:willencode:).md)
+- [func archiver(NSKeyedArchiver, willEncode: Any) -> Any?](./archiver%28_,willencode%29.md)
   Informs the delegate that `object` is about to be encoded.
-- [func archiverWillFinish(NSKeyedArchiver)](nskeyedarchiverdelegate/archiverwillfinish(_:).md)
+- [func archiverWillFinish(NSKeyedArchiver)](./archiverwillfinish%28_%29.md)
   Notifies the delegate that encoding is about to finish.
 
 

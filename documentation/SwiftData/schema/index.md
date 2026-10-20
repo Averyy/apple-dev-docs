@@ -1,7 +1,8 @@
 # Schema.Index
 
 **Framework**: SwiftData  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -22,23 +23,23 @@ final class Index<T> where T : PersistentModel
 ## Topics
 
 ### Initializers
-- [init(Schema.Index<T>.Types<T>...)](schema/index/init(_:)-4i37e.md)
-- [init([PartialKeyPath<T>]...)](schema/index/init(_:)-527in.md)
+- [init(Schema.Index<T>.Types<T>...)](./index/init%28_%29-4i37e.md)
+- [init([PartialKeyPath<T>]...)](./index/init%28_%29-527in.md)
 ### Instance Properties
-- [let indices: [Schema.Index<T>.Types<T>]](schema/index/indices.md)
+- [let indices: [Schema.Index<T>.Types<T>]](./index/indices.md)
 ### Enumerations
-- [Schema.Index.CodingKeys](schema/index/codingkeys.md)
-- [Schema.Index.Types](schema/index/types.md)
+- [Schema.Index.CodingKeys](./index/codingkeys.md)
+- [Schema.Index.Types](./index/types.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [SchemaProperty](schemaproperty.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [SchemaProperty](../schemaproperty.md)
 
 
 ---

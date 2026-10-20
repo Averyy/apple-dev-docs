@@ -1,7 +1,8 @@
 # localParticipant
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The participant on the current device.
 
@@ -25,7 +26,8 @@ Use this property to differentiate the participant on the current device from pa
 
 ## See Also
 
-- [var activeParticipants: Set<Participant>](groupsession/activeparticipants.md)
+### Getting the participants
+- [var activeParticipants: Set<Participant>](./activeparticipants.md)
   The set of participants currently engaged in the activity.
 
 

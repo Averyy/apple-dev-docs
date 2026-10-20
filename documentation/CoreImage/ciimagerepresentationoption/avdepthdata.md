@@ -1,7 +1,8 @@
 # avDepthData
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The depth data representation of an image.
 
@@ -19,25 +20,30 @@ The depth data representation of an image.
 static let avDepthData: CIImageRepresentationOption
 ```
 
+```c
+extern CIImageRepresentationOption const kCIImageRepresentationAVDepthData;
+```
+
 #### Discussion
 
-`options` dictionary key for image export methods to represent data as [`AVDepthData`](https://developer.apple.com/documentation/avfoundation/avdepthdata).
+`options` dictionary key for image export methods to represent data as [`AVDepthData`](../../AVFoundation/avdepthdata.md).
 
 ## See Also
 
-- [static let avPortraitEffectsMatte: CIImageRepresentationOption](ciimagerepresentationoption/avportraiteffectsmatte.md)
-- [static let avSemanticSegmentationMattes: CIImageRepresentationOption](ciimagerepresentationoption/avsemanticsegmentationmattes.md)
-- [static let depthImage: CIImageRepresentationOption](ciimagerepresentationoption/depthimage.md)
+### Type Properties
+- [static let avPortraitEffectsMatte: CIImageRepresentationOption](./avportraiteffectsmatte.md)
+- [static let avSemanticSegmentationMattes: CIImageRepresentationOption](./avsemanticsegmentationmattes.md)
+- [static let depthImage: CIImageRepresentationOption](./depthimage.md)
   `options` dictionary key for image export methods to output depth data.
-- [static let disparityImage: CIImageRepresentationOption](ciimagerepresentationoption/disparityimage.md)
+- [static let disparityImage: CIImageRepresentationOption](./disparityimage.md)
   `options` dictionary key for image export methods to output disparity data.
-- [static let portraitEffectsMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/portraiteffectsmatteimage.md)
-- [static let semanticSegmentationGlassesMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationglassesmatteimage.md)
-- [static let semanticSegmentationHairMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationhairmatteimage.md)
-- [static let semanticSegmentationSkinMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationskinmatteimage.md)
-- [static let semanticSegmentationSkyMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationskymatteimage.md)
-- [static let semanticSegmentationTeethMatteImage: CIImageRepresentationOption](ciimagerepresentationoption/semanticsegmentationteethmatteimage.md)
-- [static let hdrImage: CIImageRepresentationOption](ciimagerepresentationoption/hdrimage.md)
+- [static let portraitEffectsMatteImage: CIImageRepresentationOption](./portraiteffectsmatteimage.md)
+- [static let semanticSegmentationGlassesMatteImage: CIImageRepresentationOption](./semanticsegmentationglassesmatteimage.md)
+- [static let semanticSegmentationHairMatteImage: CIImageRepresentationOption](./semanticsegmentationhairmatteimage.md)
+- [static let semanticSegmentationSkinMatteImage: CIImageRepresentationOption](./semanticsegmentationskinmatteimage.md)
+- [static let semanticSegmentationSkyMatteImage: CIImageRepresentationOption](./semanticsegmentationskymatteimage.md)
+- [static let semanticSegmentationTeethMatteImage: CIImageRepresentationOption](./semanticsegmentationteethmatteimage.md)
+- [static let hdrImage: CIImageRepresentationOption](./hdrimage.md)
 
 
 ---

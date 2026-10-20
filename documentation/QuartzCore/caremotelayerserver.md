@@ -1,7 +1,8 @@
 # CARemoteLayerServer
 
 **Framework**: Core Animation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A legacy class for cross-process rendering.
 
@@ -15,34 +16,39 @@ A legacy class for cross-process rendering.
 class CARemoteLayerServer
 ```
 
+```objc
+@interface CARemoteLayerServer : NSObject
+```
+
 #### Overview
 
-`CARemoteLaterServer` is a legacy class for cross-process rendering. [`IOSurfaceCreateMachPort(_:)`](https://developer.apple.com/documentation/iosurface/iosurfacecreatemachport(_:)) and [`IOSurfaceCreateXPCObject(_:)`](https://developer.apple.com/documentation/iosurface/iosurfacecreatexpcobject(_:)), available with [`IOSurface`](https://developer.apple.com/documentation/iosurface/iosurface), offer an improved way to perform cross-process rendering.
+`CARemoteLaterServer` is a legacy class for cross-process rendering. [`IOSurfaceCreateMachPort(_:)`](../IOSurface/iosurfacecreatemachport%28_%29.md) and [`IOSurfaceCreateXPCObject(_:)`](../IOSurface/iosurfacecreatexpcobject%28_%29.md), available with [`IOSurface`](../IOSurface/iosurface-page.md), offer an improved way to perform cross-process rendering.
 
 ## Topics
 
 ### Creating a Server
-- [var serverPort: mach_port_t](caremotelayerserver/serverport.md)
+- [var serverPort: mach_port_t](./caremotelayerserver/serverport.md)
   The port number of the server.
 ### Getting a Server Instance
-- [class func shared() -> CARemoteLayerServer](caremotelayerserver/shared.md)
+- [class func shared() -> CARemoteLayerServer](./caremotelayerserver/shared%28%29.md)
   Returns the (singleton) instance of the shared remote layer server.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CARemoteLayerClient](caremotelayerclient.md)
+### Remote Display of Layer Content
+- [class CARemoteLayerClient](./caremotelayerclient.md)
   A legacy class for cross-process rendering.
 
 

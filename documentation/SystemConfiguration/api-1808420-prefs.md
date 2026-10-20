@@ -1,13 +1,15 @@
 # prefs
 
-**Framework**: System Configuration
+**Framework**: System Configuration  
+**Role**: Article
 
 The preferences session.
 
 ## See Also
 
-- [notificationType](1808421-notificationtype.md)
-  The type of notification, such as changes committed or changes applied. See [`SCPreferencesNotification`](scpreferencesnotification.md) for information about possible values.
+### Fields
+- [notificationType](./api-1808421-notificationtype.md)
+  The type of notification, such as changes committed or changes applied. See [`SCPreferencesNotification`](./scpreferencesnotification.md) for information about possible values.
 
 
 ---

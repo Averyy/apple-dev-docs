@@ -1,7 +1,8 @@
 # init(tag:value:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a BER-TLV record with the specified tag and value.
 
@@ -20,6 +21,10 @@ Initializes a BER-TLV record with the specified tag and value.
 init(tag: TKTLVTag, value: Data)
 ```
 
+```objc
+- (instancetype) initWithTag:(TKTLVTag) tag value:(NSData *) value;
+```
+
 #### Return Value
 
 A new TLV record containing the specified tag and value fields.
@@ -31,9 +36,10 @@ A new TLV record containing the specified tag and value fields.
 
 ## See Also
 
-- [init(tag: TKTLVTag, records: [TKTLVRecord])](tkbertlvrecord/init(tag:records:).md)
+### Creating TLV Records
+- [init(tag: TKTLVTag, records: [TKTLVRecord])](./init%28tag,records%29.md)
   Initializes a BER-TLV record with the specified tag and an array of TLV subrecords.
-- [typealias TKTLVTag](tktlvtag.md)
+- [typealias TKTLVTag](../tktlvtag.md)
   The type used to identify TLV format tags.
 
 

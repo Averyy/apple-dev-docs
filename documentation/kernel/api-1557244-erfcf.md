@@ -1,24 +1,26 @@
 # erfcf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 float erfcf(float);
 ```
 
 ## See Also
 
-- [erf](1557352-erf.md)
-- [erfc](1557322-erfc.md)
-- [erfcl](1557164-erfcl.md)
-- [erff](1557366-erff.md)
-- [erfl](1557285-erfl.md)
+### Error Function
+- [erf](./api-1557352-erf.md)
+- [erfc](./api-1557322-erfc.md)
+- [erfcl](./api-1557164-erfcl.md)
+- [erff](./api-1557366-erff.md)
+- [erfl](./api-1557285-erfl.md)
 
 
 ---

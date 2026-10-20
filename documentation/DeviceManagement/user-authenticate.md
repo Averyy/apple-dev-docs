@@ -1,7 +1,8 @@
 # User Authenticate
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Authenticates a user with a two-step authentication protocol.
 
@@ -18,7 +19,7 @@ If the server rejects the `DigestResponse` value because of an invalid password,
 
 The next time the user logs in, the client sends a new request and the server can optionally return `410` again. The `AuthToken` remains valid until the next time the client sends a `UserAuthenticate` request. The client initiates a handshake each time a mobile or network user logs in.
 
-##### Check in Availability
+##### Check-in availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ The next time the user logs in, the client sends a new request and the server ca
 ## Topics
 
 ### Requests
-- [object UserAuthenticateRequest](userauthenticaterequest.md)
+- [object UserAuthenticateRequest](./userauthenticaterequest.md)
   The user authenticate request details.
 
 ## Endpoint
@@ -39,23 +40,31 @@ The next time the user logs in, the client sends a new request and the server ca
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm-checkin`  
+**Type**: `UserAuthenticateRequest`
+
 The request object the system sends for the `UserAuthenticate` request.
+
+## Responses
+
+- `200` OK
 
 ## See Also
 
-- [Authenticate](authenticate.md)
+### Commands
+- [Authenticate](./authenticate.md)
   Authenticates a user during MDM payload installation.
-- [Check Out](check-out.md)
+- [Check Out](./check-out.md)
   Responds to the removal of the MDM enrollment profile from a device.
-- [Get Token](get-token.md)
+- [Get Token](./get-token.md)
   Gets a token from the server.
-- [Token Update](token-update.md)
+- [Token Update](./token-update.md)
   Updates the token for a device on the server.
-- [Get Bootstrap Token](get-bootstrap-token.md)
+- [Get Bootstrap Token](./get-bootstrap-token.md)
   Gets the bootstrap token from the server.
-- [Set Bootstrap Token](set-bootstrap-token.md)
+- [Set Bootstrap Token](./set-bootstrap-token.md)
   Sends the bootstrap token to the server.
-- [Return To Service](return-to-service.md)
+- [Return To Service](./return-to-service.md)
   Gets the return-to-service configuration from the server.
 
 

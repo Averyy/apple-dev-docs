@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sets the static text element that represents the accessibility element’s title.
@@ -17,15 +18,16 @@ func setAccessibilityTitleUIElement(_ accessibilityTitleUIElement: Any?)
 
 ## See Also
 
-- [func accessibilityLinkedUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilitylinkeduielements.md)
+### Configuring linkage elements
+- [func accessibilityLinkedUIElements() -> [Any]?](./accessibilitylinkeduielements%28%29.md)
   Returns the elements that have links with the accessibility element.
-- [func setAccessibilityLinkedUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilitylinkeduielements(_:).md)
+- [func setAccessibilityLinkedUIElements([Any]?)](./setaccessibilitylinkeduielements%28_%29.md)
   Sets the elements that have links with the accessibility element.
-- [func accessibilityServesAsTitleForUIElements() -> [Any]?](nsaccessibilityprotocol/accessibilityservesastitleforuielements.md)
+- [func accessibilityServesAsTitleForUIElements() -> [Any]?](./accessibilityservesastitleforuielements%28%29.md)
   Returns the list of elements that the accessibility element is a title for.
-- [func setAccessibilityServesAsTitleForUIElements([Any]?)](nsaccessibilityprotocol/setaccessibilityservesastitleforuielements(_:).md)
+- [func setAccessibilityServesAsTitleForUIElements([Any]?)](./setaccessibilityservesastitleforuielements%28_%29.md)
   Sets the list of elements that the accessibility element is a title for.
-- [func accessibilityTitleUIElement() -> Any?](nsaccessibilityprotocol/accessibilitytitleuielement.md)
+- [func accessibilityTitleUIElement() -> Any?](./accessibilitytitleuielement%28%29.md)
   Returns the static text element that represents the accessibility element’s title.
 
 

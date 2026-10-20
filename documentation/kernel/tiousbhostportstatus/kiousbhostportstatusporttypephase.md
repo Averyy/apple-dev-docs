@@ -1,7 +1,8 @@
 # kIOUSBHostPortStatusPortTypePhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The port type phase.
 
@@ -10,7 +11,7 @@ The port type phase.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBHostPortStatusPortTypePhase = IOUSBHostFamilyBitRangePhase(0, 3)
 ```
 

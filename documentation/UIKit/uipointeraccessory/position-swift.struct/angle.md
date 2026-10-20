@@ -1,7 +1,8 @@
 # angle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The angle of the accessory’s position, measured in radians clockwise from the top of the primary pointer.
 
@@ -9,7 +10,7 @@ The angle of the accessory’s position, measured in radians clockwise from the 
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,12 @@ var angle: CGFloat
 
 ## See Also
 
-- [init(offset: CGFloat, angle: CGFloat)](uipointeraccessory/position-swift.struct/init(offset:angle:).md)
+### Creating a custom accessory position
+- [init(offset: CGFloat, angle: CGFloat)](./init%28offset,angle%29.md)
   Creates a custom accessory position with the specified offset and angle.
-- [var offset: CGFloat](uipointeraccessory/position-swift.struct/offset.md)
+- [var offset: CGFloat](./offset.md)
   The offset of the accessory from the primary pointer.
-- [static let defaultOffset: CGFloat](uipointeraccessory/position-swift.struct/defaultoffset.md)
+- [static let defaultOffset: CGFloat](./defaultoffset.md)
   A constant that specifies the default offset of an accessory from the primary pointer shape.
 
 

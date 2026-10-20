@@ -1,7 +1,8 @@
 # SVGCircleElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,21 +10,21 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGCircleElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [cx](svgcircleelement/1634085-cx.md)
-- [cy](svgcircleelement/1630193-cy.md)
-- [r](svgcircleelement/1631743-r.md)
+- [cx](./svgcircleelement/api-1634085-cx.md)
+- [cy](./svgcircleelement/api-1630193-cy.md)
+- [r](./svgcircleelement/api-1631743-r.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGGraphicsElement](svggraphicselement.md)
+- [SVGGraphicsElement](./svggraphicselement.md)
 
 
 ---

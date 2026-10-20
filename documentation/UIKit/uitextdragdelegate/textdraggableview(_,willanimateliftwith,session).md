@@ -1,7 +1,8 @@
 # textDraggableView(_:willAnimateLiftWith:session:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the lift animation is about to begin, and gives you a chance to animate additional changes alongside the system animation.
 
@@ -17,9 +18,13 @@ Tells the delegate when the lift animation is about to begin, and gives you a ch
 optional func textDraggableView(_ textDraggableView: any UIView & UITextDraggable, willAnimateLiftWith animator: any UIDragAnimating, session: any UIDragSession)
 ```
 
+```objc
+- (void) textDraggableView:(UIView<UITextDraggable> *) textDraggableView willAnimateLiftWithAnimator:(id<UIDragAnimating>) animator session:(id<UIDragSession>) session;
+```
+
 #### Discussion
 
-You implement this delegate method when you want to add animations that happen alongside the system animation during the lift activity. To add such an animation, use the animator’s [`addAnimations(_:)`](uidraganimating/addanimations(_:).md) method. To add an animation that happens after the system animation has ended, use the animator’s [`addCompletion(_:)`](uidraganimating/addcompletion(_:).md) method.
+You implement this delegate method when you want to add animations that happen alongside the system animation during the lift activity. To add such an animation, use the animator’s [`addAnimations(_:)`](../uidraganimating/addanimations%28_%29.md) method. To add an animation that happens after the system animation has ended, use the animator’s [`addCompletion(_:)`](../uidraganimating/addcompletion%28_%29.md) method.
 
 ## Parameters
 

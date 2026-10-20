@@ -1,7 +1,8 @@
 # AccessibilityCustomContentKey
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Key used to specify the identifier and label associated with an entry of additional accessibility information.
 
@@ -27,19 +28,20 @@ Use `AccessibilityCustomContentKey` and the associated modifiers taking this val
 ## Topics
 
 ### Creating a key
-- [init(_:)](accessibilitycustomcontentkey/init(_:).md)
+- [init(_:)](./accessibilitycustomcontentkey/init%28_%29.md)
   Create an `AccessibilityCustomContentKey` with the specified label.
-- [init(_:id:)](accessibilitycustomcontentkey/init(_:id:).md)
+- [init(_:id:)](./accessibilitycustomcontentkey/init%28_,id%29.md)
   Create an `AccessibilityCustomContentKey` with the specified label and identifier.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [func accessibilityCustomContent(_:_:importance:)](view/accessibilitycustomcontent(_:_:importance:).md)
+### Adding custom descriptions
+- [func accessibilityCustomContent(_:_:importance:)](./view/accessibilitycustomcontent%28_,_,importance%29.md)
   Add additional accessibility information to the view.
 
 

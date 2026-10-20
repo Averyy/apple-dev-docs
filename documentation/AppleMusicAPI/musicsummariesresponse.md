@@ -1,14 +1,15 @@
 # MusicSummariesResponse
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - Apple Music 1.0+
 
 ## Declaration
 
-```swift
+```
 object MusicSummariesResponse
 ```
 

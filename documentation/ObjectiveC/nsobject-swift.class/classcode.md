@@ -1,18 +1,23 @@
 # classCode
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s Apple event type code, as stored in the `NSScriptClassDescription` object for the object’s class.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var classCode: FourCharCode { get }
+```
+
+```objc
+@property (readonly) FourCharCode classCode;
 ```
 
 #### Discussion
@@ -21,15 +26,16 @@ This property is used by Cocoa’s scripting support classes.
 
 ## See Also
 
-- [var className: String](nsobject-swift.class/classname.md)
+### Scripting
+- [var className: String](./classname.md)
   A string containing the name of the class.
-- [func copyScriptingValue(Any, forKey: String, withProperties: [String : Any]) -> Any?](nsobject-swift.class/copyscriptingvalue(_:forkey:withproperties:).md)
+- [func copyScriptingValue(Any, forKey: String, withProperties: [String : Any]) -> Any?](./copyscriptingvalue%28_,forkey,withproperties%29.md)
   Creates and returns one or more scripting objects to be inserted into the specified relationship by copying the passed-in value and setting the properties in the copied object or objects.
-- [func newScriptingObject(of: AnyClass, forValueForKey: String, withContentsValue: Any?, properties: [String : Any]) -> Any?](nsobject-swift.class/newscriptingobject(of:forvalueforkey:withcontentsvalue:properties:).md)
+- [func newScriptingObject(of: AnyClass, forValueForKey: String, withContentsValue: Any?, properties: [String : Any]) -> Any?](./newscriptingobject%28of,forvalueforkey,withcontentsvalue,properties%29.md)
   Creates and returns an instance of a scriptable class, setting its contents and properties, for insertion into the relationship identified by the key.
-- [var scriptingProperties: [String : Any]?](nsobject-swift.class/scriptingproperties.md)
+- [var scriptingProperties: [String : Any]?](./scriptingproperties.md)
   An `NSString`-keyed dictionary of the receiver’s scriptable properties.
-- [func scriptingValue(for: NSScriptObjectSpecifier) -> Any?](nsobject-swift.class/scriptingvalue(for:).md)
+- [func scriptingValue(for: NSScriptObjectSpecifier) -> Any?](./scriptingvalue%28for%29.md)
   Given an object specifier, returns the specified object or objects in the receiving container.
 
 

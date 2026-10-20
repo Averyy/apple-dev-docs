@@ -1,7 +1,8 @@
 # JSValueCompareInt64(_:_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func JSValueCompareInt64(_ ctx: JSContextRef, _ left: JSValueRef, _ right: Int64, _ exception: UnsafeMutablePointer<JSValueRef?>?) -> JSRelationCondition
+```
+
+```c
+JSRelationCondition JSValueCompareInt64(JSContextRef ctx, JSValueRef left, int64_t right, JSValueRef*exception);
 ```
 
 #### Return Value

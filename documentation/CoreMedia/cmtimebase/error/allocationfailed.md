@@ -1,7 +1,8 @@
 # allocationFailed
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A timebase error that indicates the memory allocation fails.
 
@@ -22,13 +23,14 @@ static let allocationFailed: NSError
 
 ## See Also
 
-- [static let invalidParameter: NSError](cmtimebase/error/invalidparameter.md)
+### Constants
+- [static let invalidParameter: NSError](./invalidparameter.md)
   A timebase error that indicates a parameter isn’t valid.
-- [static let missingRequiredParameter: NSError](cmtimebase/error/missingrequiredparameter.md)
+- [static let missingRequiredParameter: NSError](./missingrequiredparameter.md)
   A timebase error that indicates a missing parameter.
-- [static let readOnly: NSError](cmtimebase/error/readonly.md)
+- [static let readOnly: NSError](./readonly.md)
   A timebase error that indicates the system attempts to modify a read-only timebase.
-- [static let timerIntervalTooShort: NSError](cmtimebase/error/timerintervaltooshort.md)
+- [static let timerIntervalTooShort: NSError](./timerintervaltooshort.md)
   A timebase error that indicates the time interval is too short.
 
 

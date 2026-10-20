@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notation that automatically provides locale-appropriate behavior.
 
@@ -22,9 +23,10 @@ static var automatic: NumberFormatStyleConfiguration.Notation { get }
 
 ## See Also
 
-- [static var compactName: NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation/compactname.md)
+### Notations
+- [static var compactName: NumberFormatStyleConfiguration.Notation](./compactname.md)
   A locale-appropriate compact name notation.
-- [static var scientific: NumberFormatStyleConfiguration.Notation](numberformatstyleconfiguration/notation/scientific.md)
+- [static var scientific: NumberFormatStyleConfiguration.Notation](./scientific.md)
   A notation constant that formats values with scientific notation.
 
 

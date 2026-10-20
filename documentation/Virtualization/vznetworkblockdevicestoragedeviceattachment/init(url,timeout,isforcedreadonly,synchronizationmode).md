@@ -1,7 +1,8 @@
 # init(url:timeout:isForcedReadOnly:synchronizationMode:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new network block device storage attachment from an NBD Uniform Resource Indicator (URI) represented as a URL, timeout value, and read-only and synchronization modes that you provide.
 
@@ -14,20 +15,25 @@ Creates a new network block device storage attachment from an NBD Uniform Resour
 init(url URL: URL, timeout: TimeInterval, isForcedReadOnly forcedReadOnly: Bool, synchronizationMode: VZDiskSynchronizationMode) throws
 ```
 
+```objc
+- (instancetype) initWithURL:(NSURL *) URL timeout:(NSTimeInterval) timeout forcedReadOnly:(BOOL) forcedReadOnly synchronizationMode:(VZDiskSynchronizationMode) synchronizationMode error:(NSError **) error;
+```
+
 #### Discussion
 
-The `forcedReadOnly` parameter affects how framework exposes the NBD client to the guest operating system by the storage controller. As part of the NBD protocol, the NBD server advertises whether or not the disk exposed by the NBD client is read-only during the handshake phase of the protocol. Setting `forcedReadOnly` to [`true`](https://developer.apple.com/documentation/swift/true) forces the NBD client to show up as read-only to the guest regardless of whether or not the NBD server advertises itself as read-only.
+The `forcedReadOnly` parameter affects how framework exposes the NBD client to the guest operating system by the storage controller. As part of the NBD protocol, the NBD server advertises whether or not the disk exposed by the NBD client is read-only during the handshake phase of the protocol. Setting `forcedReadOnly` to [`true`](../../Swift/true.md) forces the NBD client to show up as read-only to the guest regardless of whether or not the NBD server advertises itself as read-only.
 
 ## Parameters
 
 - `URL`: The NBD’s URI represented as a URL.
 - `timeout`: The timeout value in seconds for the connection between the client and server. When the timeout expires, an attempt to reconnect with the server takes place.
-- `forcedReadOnly`: If [`true`](https://developer.apple.com/documentation/swift/true), the framework forces the disk attachment to be read-only, regardless of whether or not the NBD server supports write requests.
+- `forcedReadOnly`: If [`true`](../../Swift/true.md), the framework forces the disk attachment to be read-only, regardless of whether or not the NBD server supports write requests.
 - `synchronizationMode`: The mode in which the disk attachment synchronizes data with the underlying storage device.
 
 ## See Also
 
-- [convenience init(url: URL) throws](vznetworkblockdevicestoragedeviceattachment/init(url:)-6q4m7.md)
+### Creating network block device attachments
+- [convenience init(url: URL) throws](./init%28url%29-6q4m7.md)
   Creates a new network block device (NBD) storage attachment from an NDB Uniform Resource Indicator (URI) represented as a URL that you provide.
 
 

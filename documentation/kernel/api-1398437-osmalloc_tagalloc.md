@@ -1,7 +1,8 @@
 # OSMalloc_Tagalloc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a tag for use with OSMalloc functions.
 
@@ -10,11 +11,11 @@ Creates a tag for use with OSMalloc functions.
 
 ## Declaration
 
-```swift
+```c
 OSMallocTag OSMalloc_Tagalloc(const char *name, uint32_t flags);
 ```
 
-#### Return_value
+#### Return Value
 
 An opaque tag to be used with OSMalloc functions for tracking memory usage.
 
@@ -34,18 +35,19 @@ OSMalloc tags can have arbitrary names of a length up to 63 characters. Calling 
 
 ## See Also
 
-- [OSMalloc](1398447-osmalloc.md)
-  Allocates a block of memory associated with a given [`OSMallocTag`](osmalloctag.md).
-- [OSMalloc_Tagfree](1398439-osmalloc_tagfree.md)
+### Memory
+- [OSMalloc](./api-1398447-osmalloc.md)
+  Allocates a block of memory associated with a given [`OSMallocTag`](./osmalloctag.md).
+- [OSMalloc_Tagfree](./api-1398439-osmalloc_tagfree.md)
   Frees a tag used with OSMalloc functions.
-- [OSMalloc_noblock](1398431-osmalloc_noblock.md)
-  Allocates a block of memory associated with a given [`OSMallocTag`](osmalloctag.md), returning `NULL` if it would block.
-- [OSMalloc_nowait](1398445-osmalloc_nowait.md)
-  Equivalent to [`OSMalloc_noblock`](1398431-osmalloc_noblock.md).
-- [OSFree](1398441-osfree.md)
-  Frees a block of memory allocated by [`OSMalloc`](1398447-osmalloc.md).
-- [bzero](1579350-bzero.md)
-- [bzero_phys](1593364-bzero_phys.md)
+- [OSMalloc_noblock](./api-1398431-osmalloc_noblock.md)
+  Allocates a block of memory associated with a given [`OSMallocTag`](./osmalloctag.md), returning `NULL` if it would block.
+- [OSMalloc_nowait](./api-1398445-osmalloc_nowait.md)
+  Equivalent to [`OSMalloc_noblock`](./api-1398431-osmalloc_noblock.md).
+- [OSFree](./api-1398441-osfree.md)
+  Frees a block of memory allocated by [`OSMalloc`](./api-1398447-osmalloc.md).
+- [bzero](./api-1579350-bzero.md)
+- [bzero_phys](./api-1593364-bzero_phys.md)
 
 
 ---

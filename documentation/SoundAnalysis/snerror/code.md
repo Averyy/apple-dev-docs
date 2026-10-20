@@ -1,7 +1,8 @@
 # SNError.Code
 
 **Framework**: Sound Analysis  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The enumerated error codes that the Sound Analysis framework produces.
 
@@ -20,37 +21,42 @@ The enumerated error codes that the Sound Analysis framework produces.
 enum Code
 ```
 
+```c
+enum SNErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Errors
-- [SNError.Code.invalidModel](snerror/code/invalidmodel.md)
+- [SNError.Code.invalidModel](./code/invalidmodel.md)
   An error that indicates the sound classifier’s underlying Core ML model is an invalid model type.
-- [SNError.Code.invalidFormat](snerror/code/invalidformat.md)
+- [SNError.Code.invalidFormat](./code/invalidformat.md)
   An error that indicates the audio data’s format isn’t valid.
-- [SNError.Code.invalidFile](snerror/code/invalidfile.md)
+- [SNError.Code.invalidFile](./code/invalidfile.md)
   An error that indicates an audio file is invalid.
-- [SNError.Code.operationFailed](snerror/code/operationfailed.md)
+- [SNError.Code.operationFailed](./code/operationfailed.md)
   An error that occurs when the framework fails to analyze audio.
-- [SNError.Code.unknownError](snerror/code/unknownerror.md)
+- [SNError.Code.unknownError](./code/unknownerror.md)
   An error that represents a failure that no other error handles.
 ### Initializers
-- [init?(rawValue: Int)](snerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct SNError](snerror.md)
+### Errors
+- [struct SNError](../snerror.md)
   An error from the Sound Analysis framework.
-- [let SNErrorDomain: String](snerrordomain.md)
+- [let SNErrorDomain: String](../snerrordomain.md)
   A string that identifies the Sound Analysis error domain.
 
 

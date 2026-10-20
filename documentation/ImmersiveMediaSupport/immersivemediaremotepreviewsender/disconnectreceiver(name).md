@@ -1,9 +1,10 @@
 # disconnectReceiver(name:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Disconnects a specific remote preview receiver associated with the name provided when [`connectReceiver(name:endpoint:)`](immersivemediaremotepreviewsender/connectreceiver(name:endpoint:).md) was called.
+Disconnects a specific remote preview receiver associated with the name provided when [`connectReceiver(name:endpoint:)`](./connectreceiver%28name,endpoint%29.md) was called.
 
 **Availability**:
 - macOS 26.0+

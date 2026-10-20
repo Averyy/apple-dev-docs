@@ -1,9 +1,10 @@
 # CXCallDirectoryManager.EnabledStatus
 
 **Framework**: CallKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The enabled status of a Call Directory app extension, as reported by the [`getEnabledStatusForExtension(withIdentifier:completionHandler:)`](cxcalldirectorymanager/getenabledstatusforextension(withidentifier:completionhandler:).md) method.
+The enabled status of a Call Directory app extension, as reported by the [`getEnabledStatusForExtension(withIdentifier:completionHandler:)`](./getenabledstatusforextension%28withidentifier,completionhandler%29.md) method.
 
 **Availability**:
 - iOS 10.0+
@@ -17,33 +18,38 @@ The enabled status of a Call Directory app extension, as reported by the [`getEn
 enum EnabledStatus
 ```
 
+```c
+enum CXCallDirectoryEnabledStatus : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CXCallDirectoryManager.EnabledStatus.unknown](cxcalldirectorymanager/enabledstatus/unknown.md)
+- [CXCallDirectoryManager.EnabledStatus.unknown](./enabledstatus/unknown.md)
   Indicates that the enabled status for the extension is unknown.
-- [CXCallDirectoryManager.EnabledStatus.disabled](cxcalldirectorymanager/enabledstatus/disabled.md)
+- [CXCallDirectoryManager.EnabledStatus.disabled](./enabledstatus/disabled.md)
   Indicates that the extension is disabled.
-- [CXCallDirectoryManager.EnabledStatus.enabled](cxcalldirectorymanager/enabledstatus/enabled.md)
+- [CXCallDirectoryManager.EnabledStatus.enabled](./enabledstatus/enabled.md)
   Indicates that the extension is enabled.
 ### Initializers
-- [init?(rawValue: Int)](cxcalldirectorymanager/enabledstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./enabledstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func getEnabledStatusForExtension(withIdentifier: String, completionHandler: (CXCallDirectoryManager.EnabledStatus, (any Error)?) -> Void)](cxcalldirectorymanager/getenabledstatusforextension(withidentifier:completionhandler:).md)
+### Working with a Call Directory App Extension
+- [func getEnabledStatusForExtension(withIdentifier: String, completionHandler: (CXCallDirectoryManager.EnabledStatus, (any Error)?) -> Void)](./getenabledstatusforextension%28withidentifier,completionhandler%29.md)
   Asynchronously returns the enabled status of the extension with the specified identifier.
-- [func reloadExtension(withIdentifier: String, completionHandler: (((any Error)?) -> Void)?)](cxcalldirectorymanager/reloadextension(withidentifier:completionhandler:).md)
+- [func reloadExtension(withIdentifier: String, completionHandler: (((any Error)?) -> Void)?)](./reloadextension%28withidentifier,completionhandler%29.md)
   Asynchronously reloads the extension with the specified identifier.
 
 

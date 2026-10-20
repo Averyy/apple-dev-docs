@@ -1,7 +1,8 @@
 # setAnchorTime(_:referenceTime:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the time at a particular source time.
 

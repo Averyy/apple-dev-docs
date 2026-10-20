@@ -1,7 +1,8 @@
 # previousServerChangeToken
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The server change token.
 
@@ -21,15 +22,20 @@ The server change token.
 var previousServerChangeToken: CKServerChangeToken? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) CKServerChangeToken * previousServerChangeToken;
+```
+
 #### Discussion
 
-Assign the token you receive from the [`fetchDatabaseChangesCompletionBlock`](ckfetchdatabasechangesoperation/fetchdatabasechangescompletionblock.md) to this property. Doing so yields only the changes that occur after your most recent fetch operation. If you specify `nil` for this parameter, the operation fetches all changes.
+Assign the token you receive from the [`fetchDatabaseChangesCompletionBlock`](./fetchdatabasechangescompletionblock.md) to this property. Doing so yields only the changes that occur after your most recent fetch operation. If you specify `nil` for this parameter, the operation fetches all changes.
 
 ## See Also
 
-- [var fetchAllChanges: Bool](ckfetchdatabasechangesoperation/fetchallchanges.md)
+### Configuring the Operation
+- [var fetchAllChanges: Bool](./fetchallchanges.md)
   A Boolean value that indicates whether to send repeated requests to the server.
-- [var resultsLimit: Int](ckfetchdatabasechangesoperation/resultslimit.md)
+- [var resultsLimit: Int](./resultslimit.md)
   The maximum number of results that the operation fetches.
 
 

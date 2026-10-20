@@ -1,7 +1,8 @@
 # location
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corner of the screen to display the access point.
 
@@ -19,23 +20,28 @@ The corner of the screen to display the access point.
 var location: GKAccessPoint.Location { get set }
 ```
 
+```objc
+@property (nonatomic, assign) GKAccessPointLocation location;
+```
+
 ## Mentions
 
-- [Adding an access point to your game](adding-an-access-point-to-your-game.md)
+- [Adding an access point to your game](../adding-an-access-point-to-your-game.md)
 
 #### Discussion
 
 Use this property to set one of four corners to display the access point in your game. The default for left-to-right languages is the upper-left corner, and for right-to-left languages, it’s the upper-right corner.
 
-If the [`parentWindow`](gkaccesspoint/parentwindow.md) property is `nil` for volumetric and immersive visionOS games, GameKit doesn’t use the [`location`](gkaccesspoint/location-swift.property.md) property. For more information, see [`Configure the access point on visionOS`](adding-an-access-point-to-your-game#Configure-the-access-point-on-visionOS.md).
+If the [`parentWindow`](./parentwindow.md) property is `nil` for volumetric and immersive visionOS games, GameKit doesn’t use the [`location`](./location-swift.property.md) property. For more information, see [Configure the access point on visionOS](../adding-an-access-point-to-your-game.md#Configure-the-access-point-on-visionOS).
 
 ## See Also
 
-- [GKAccessPoint.Location](gkaccesspoint/location-swift.enum.md)
+### Managing the location
+- [GKAccessPoint.Location](./location-swift.enum.md)
   Specifies the corner of the screen to display the access point.
-- [var frameInScreenCoordinates: CGRect](gkaccesspoint/frameinscreencoordinates.md)
+- [var frameInScreenCoordinates: CGRect](./frameinscreencoordinates.md)
   The frame of the access point in screen coordinates.
-- [var parentWindow: UIWindow?](gkaccesspoint/parentwindow.md)
+- [var parentWindow: UIWindow?](./parentwindow.md)
   The window that contains the access point.
 
 

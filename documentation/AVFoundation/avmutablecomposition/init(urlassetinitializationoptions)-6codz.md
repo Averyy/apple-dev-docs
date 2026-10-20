@@ -1,7 +1,8 @@
 # init(URLAssetInitializationOptions:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+

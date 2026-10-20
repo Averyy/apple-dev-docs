@@ -1,18 +1,19 @@
 # mbuf_copy_pkthdr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_copy_pkthdr(mbuf_t dest, const mbuf_t src);
 ```
 
-#### Return_value
+#### Return Value
 
 0 upon success otherwise the errno error.
 

@@ -1,7 +1,8 @@
 # destinationPixelBufferAttributes
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
 
@@ -19,21 +20,26 @@ Pixel buffer attributes dictionary that describes requirements for pixel buffers
 var destinationPixelBufferAttributes: [String : any Sendable] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,id> * destinationPixelBufferAttributes;
+```
+
 #### Discussion
 
 Use `CVPixelBufferCreateResolvedAttributesDictionary` to combine this dictionary with your pixel buffer attributes dictionary.
 
 ## See Also
 
-- [var frameWidth: Int](vtlowlatencysuperresolutionscalerconfiguration/framewidth.md)
+### Inspecting the configuration
+- [var frameWidth: Int](./framewidth.md)
   Width of source frame in pixels.
-- [var frameHeight: Int](vtlowlatencysuperresolutionscalerconfiguration/frameheight.md)
+- [var frameHeight: Int](./frameheight.md)
   Height of source frame in pixels.
-- [var scaleFactor: Float](vtlowlatencysuperresolutionscalerconfiguration/scalefactor.md)
+- [var scaleFactor: Float](./scalefactor.md)
   Scale factor with which you initialized the configuration.
-- [var sourcePixelBufferAttributes: [String : any Sendable]](vtlowlatencysuperresolutionscalerconfiguration/sourcepixelbufferattributes.md)
+- [var sourcePixelBufferAttributes: [String : any Sendable]](./sourcepixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent source frames and reference frames.
-- [var supportedPixelFormats: [OSType]](vtlowlatencysuperresolutionscalerconfiguration/supportedpixelformats.md)
+- [var supportedPixelFormats: [OSType]](./supportedpixelformats.md)
 
 
 ---

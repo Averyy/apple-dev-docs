@@ -1,7 +1,8 @@
 # gss_process_context_token(_:_:_:)
 
 **Framework**: GSS  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Processes a token from a peer asynchronously.
 
@@ -18,13 +19,17 @@ Processes a token from a peer asynchronously.
 func gss_process_context_token(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ context_handle: gss_ctx_id_t, _ token_buffer: gss_buffer_t) -> OM_uint32
 ```
 
+```c
+OM_uint32 gss_process_context_token(OM_uint32 *minor_status, gss_ctx_id_t const context_handle, gss_buffer_t const token_buffer);
+```
+
 #### Return Value
 
-A status code set to [`GSS_S_COMPLETE`](gss_s_complete.md) on success. See [`Function Status`](function-status.md) for a description of other status outputs.
+A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 
 #### Discussion
 
-Normally, contexts exchange tokens during the initialization process, using [`gss_init_sec_context(_:_:_:_:_:_:_:_:_:_:_:_:_:)`](gss_init_sec_context(_:_:_:_:_:_:_:_:_:_:_:_:_:).md) and in the initiator and [`gss_accept_sec_context(_:_:_:_:_:_:_:_:_:_:_:)`](gss_accept_sec_context(_:_:_:_:_:_:_:_:_:_:_:).md) in the acceptor. Occasionally, a mechanism needs to send a token asynchronously, for example after a call to the [`gss_delete_sec_context(_:_:_:)`](gss_delete_sec_context(_:_:_:).md) function when you supply an output token buffer. The `gss_process_context_token` function provides a means to supply a token received from a peer to the context unexpectedly.
+Normally, contexts exchange tokens during the initialization process, using [`gss_init_sec_context(_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./gss_init_sec_context%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) and in the initiator and [`gss_accept_sec_context(_:_:_:_:_:_:_:_:_:_:_:)`](./gss_accept_sec_context%28_,_,_,_,_,_,_,_,_,_,_%29.md) in the acceptor. Occasionally, a mechanism needs to send a token asynchronously, for example after a call to the [`gss_delete_sec_context(_:_:_:)`](./gss_delete_sec_context%28_,_,_%29.md) function when you supply an output token buffer. The `gss_process_context_token` function provides a means to supply a token received from a peer to the context unexpectedly.
 
 ## Parameters
 
@@ -34,15 +39,16 @@ Normally, contexts exchange tokens during the initialization process, using [`gs
 
 ## See Also
 
-- [func gss_init_sec_context(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t?, UnsafeMutablePointer<gss_ctx_id_t?>, gss_name_t, gss_OID?, OM_uint32, OM_uint32, gss_channel_bindings_t?, gss_buffer_t?, UnsafeMutablePointer<gss_OID?>?, gss_buffer_t, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<OM_uint32>?) -> OM_uint32](gss_init_sec_context(_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+### Creation and Deletion
+- [func gss_init_sec_context(UnsafeMutablePointer<OM_uint32>, gss_cred_id_t?, UnsafeMutablePointer<gss_ctx_id_t?>, gss_name_t, gss_OID?, OM_uint32, OM_uint32, gss_channel_bindings_t?, gss_buffer_t?, UnsafeMutablePointer<gss_OID?>?, gss_buffer_t, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<OM_uint32>?) -> OM_uint32](./gss_init_sec_context%28_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Initiates a security context with a peer.
-- [func gss_accept_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, gss_cred_id_t?, gss_buffer_t?, gss_channel_bindings_t?, UnsafeMutablePointer<gss_name_t?>?, UnsafeMutablePointer<gss_OID?>?, gss_buffer_t, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<gss_cred_id_t?>?) -> OM_uint32](gss_accept_sec_context(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func gss_accept_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, gss_cred_id_t?, gss_buffer_t?, gss_channel_bindings_t?, UnsafeMutablePointer<gss_name_t?>?, UnsafeMutablePointer<gss_OID?>?, gss_buffer_t, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<OM_uint32>?, UnsafeMutablePointer<gss_cred_id_t?>?) -> OM_uint32](./gss_accept_sec_context%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Accepts a security context initiated by a peer.
-- [func gss_delete_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, gss_buffer_t?) -> OM_uint32](gss_delete_sec_context(_:_:_:).md)
+- [func gss_delete_sec_context(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t?>, gss_buffer_t?) -> OM_uint32](./gss_delete_sec_context%28_,_,_%29.md)
   Deletes a security context.
-- [func gss_release_cred(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_cred_id_t?>) -> OM_uint32](gss_release_cred(_:_:).md)
+- [func gss_release_cred(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_cred_id_t?>) -> OM_uint32](./gss_release_cred%28_,_%29.md)
   Releases the memory of a credential.
-- [func gss_set_sec_context_option(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t>?, gss_OID, gss_buffer_t?) -> OM_uint32](gss_set_sec_context_option(_:_:_:_:).md)
+- [func gss_set_sec_context_option(UnsafeMutablePointer<OM_uint32>, UnsafeMutablePointer<gss_ctx_id_t>?, gss_OID, gss_buffer_t?) -> OM_uint32](./gss_set_sec_context_option%28_,_,_,_%29.md)
   Sets an option on a context.
 
 

@@ -1,7 +1,8 @@
 # csrNonce
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var csrNonce: Data { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSData * csrNonce;
 ```
 
 

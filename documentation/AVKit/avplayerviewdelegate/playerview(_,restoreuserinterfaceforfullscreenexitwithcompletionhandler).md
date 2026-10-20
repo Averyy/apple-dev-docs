@@ -1,7 +1,8 @@
 # playerView(_:restoreUserInterfaceForFullScreenExitWithCompletionHandler:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate to restore the app’s user interface when exiting full-screen mode.
 
@@ -11,7 +12,15 @@ Tells the delegate to restore the app’s user interface when exiting full-scree
 ## Declaration
 
 ```swift
+optional func playerView(_ playerView: AVPlayerView, restoreUserInterfaceForFullScreenExitWithCompletionHandler completionHandler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 optional func playerViewRestoreUserInterfaceForFullScreenExit(_ playerView: AVPlayerView) async -> Bool
+```
+
+```objc
+- (void) playerView:(AVPlayerView *) playerView restoreUserInterfaceForFullScreenExitWithCompletionHandler:(void (^)(BOOL restored)) completionHandler;
 ```
 
 ## Parameters
@@ -21,13 +30,14 @@ optional func playerViewRestoreUserInterfaceForFullScreenExit(_ playerView: AVPl
 
 ## See Also
 
-- [func playerViewWillEnterFullScreen(AVPlayerView)](avplayerviewdelegate/playerviewwillenterfullscreen(_:).md)
+### Responding to full-screen events
+- [func playerViewWillEnterFullScreen(AVPlayerView)](./playerviewwillenterfullscreen%28_%29.md)
   Tells the delegate that the player view is about to enter full-screen mode.
-- [func playerViewDidEnterFullScreen(AVPlayerView)](avplayerviewdelegate/playerviewdidenterfullscreen(_:).md)
+- [func playerViewDidEnterFullScreen(AVPlayerView)](./playerviewdidenterfullscreen%28_%29.md)
   Tells the delegate that the player view entered full-screen mode.
-- [func playerViewWillExitFullScreen(AVPlayerView)](avplayerviewdelegate/playerviewwillexitfullscreen(_:).md)
+- [func playerViewWillExitFullScreen(AVPlayerView)](./playerviewwillexitfullscreen%28_%29.md)
   Tells the delegate that the player view is about to exit full-screen mode.
-- [func playerViewDidExitFullScreen(AVPlayerView)](avplayerviewdelegate/playerviewdidexitfullscreen(_:).md)
+- [func playerViewDidExitFullScreen(AVPlayerView)](./playerviewdidexitfullscreen%28_%29.md)
   Tells the delegate that the player view exited full-screen mode.
 
 

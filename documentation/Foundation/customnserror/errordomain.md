@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The domain of the error.
@@ -20,6 +21,12 @@ The domain of the error.
 ```swift
 static var errorDomain: String { get }
 ```
+
+## Default Implementations
+
+### CustomNSError Implementations
+- [static var errorDomain: String](./errordomain-84tuj.md)
+  Default domain of the error.
 
 
 ---

@@ -1,7 +1,8 @@
 # vImageConvert_ARGBFFFFtoARGB8888_dithered(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Converts a floating-point 32-bit-per-channel, 4-channel buffer to an 8-bit-per-channel, 4-channel buffer using the specified dithering algorithm.
 
@@ -20,35 +21,41 @@ Converts a floating-point 32-bit-per-channel, 4-channel buffer to an 8-bit-per-c
 func vImageConvert_ARGBFFFFtoARGB8888_dithered(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ maxFloat: UnsafePointer<Float>, _ minFloat: UnsafePointer<Float>, _ dither: Int32, _ permuteMap: UnsafePointer<UInt8>!, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvert_ARGBFFFFtoARGB8888_dithered(const vImage_Buffer *src, const vImage_Buffer *dest, const Pixel_FFFF maxFloat, const Pixel_FFFF minFloat, int dither, const uint8_t permuteMap[4], vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
 This function supports the following dithering algorithms:
 
-- **[`kvImageConvert_DitherNone`](kvimageconvert_dithernone.md)**: Doesn’t apply any dithering. This algorithm rounds the input values to the nearest representable value in the destination format.
-- **[`kvImageConvert_DitherOrdered`](kvimageconvert_ditherordered.md)**: Adds precomputed blue noise to the source image before it rounds the input values to the nearest representable value in the destination format. The vImage conversion functions support uniform and Gaussian noise by including [`kvImageConvert_OrderedUniformBlue`](kvimageconvert_ordereduniformblue.md) and [`kvImageConvert_OrderedGaussianBlue`](kvimageconvert_orderedgaussianblue.md), respectively.
-- **[`kvImageConvert_DitherOrderedReproducible`](kvimageconvert_ditherorderedreproducible.md)**: Returns the same result as [`kvImageConvert_DitherOrdered`](kvimageconvert_ditherordered.md), but uses the same offset into the blue noise for each call.
-- **[`kvImageConvert_DitherFloydSteinberg`](kvimageconvert_ditherfloydsteinberg.md)**: Applies Floyd-Steinberg dithering to the image.
-- **[`kvImageConvert_DitherAtkinson`](kvimageconvert_ditheratkinson.md)**: Applies Atkinson dithering to the image.
+- **[`kvImageConvert_DitherNone`](./kvimageconvert_dithernone.md)**: Doesn’t apply any dithering. This algorithm rounds the input values to the nearest representable value in the destination format.
+- **[`kvImageConvert_DitherOrdered`](./kvimageconvert_ditherordered.md)**: Adds precomputed blue noise to the source image before it rounds the input values to the nearest representable value in the destination format. The vImage conversion functions support uniform and Gaussian noise by including [`kvImageConvert_OrderedUniformBlue`](./kvimageconvert_ordereduniformblue.md) and [`kvImageConvert_OrderedGaussianBlue`](./kvimageconvert_orderedgaussianblue.md), respectively.
+- **[`kvImageConvert_DitherOrderedReproducible`](./kvimageconvert_ditherorderedreproducible.md)**: Returns the same result as [`kvImageConvert_DitherOrdered`](./kvimageconvert_ditherordered.md), but uses the same offset into the blue noise for each call.
+- **[`kvImageConvert_DitherFloydSteinberg`](./kvimageconvert_ditherfloydsteinberg.md)**: Applies Floyd-Steinberg dithering to the image.
+- **[`kvImageConvert_DitherAtkinson`](./kvimageconvert_ditheratkinson.md)**: Applies Atkinson dithering to the image.
 
 ## Parameters
 
 - `src`: A pointer to a vImage buffer structure that contains the source image whose data you want to convert.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `maxFloat`: The four maximum source pixel values.
 - `minFloat`: The four minimum source pixel values.
 - `dither`: Type of dithering to apply to the image, if any.
 - `permuteMap`: An array of four 8-bit integers with the values `0`, `1`, `2`, and 3, in some order. Each value specifies the channel from the source image that the function copies to the destination channel at the corresponding index.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Improving the quality of quantized images with dithering](improving-the-quality-of-quantized-images-with-dithering.md)
+### Related Documentation
+- [Improving the quality of quantized images with dithering](./improving-the-quality-of-quantized-images-with-dithering.md)
   Apply dithering to simulate colors that are unavailable in reduced bit depths.
-- [func vImageConvert_RGBFFFtoRGB888_dithered(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_F>, UnsafePointer<Pixel_F>, Int32, vImage_Flags) -> vImage_Error](vimageconvert_rgbffftorgb888_dithered(_:_:_:_:_:_:).md)
+### Converting from floating-point 32-bit-per-channel buffers
+- [func vImageConvert_RGBFFFtoRGB888_dithered(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Pixel_F>, UnsafePointer<Pixel_F>, Int32, vImage_Flags) -> vImage_Error](./vimageconvert_rgbffftorgb888_dithered%28_,_,_,_,_,_%29.md)
   Converts a floating-point 32-bit-per-channel, 3-channel buffer to an 8-bit-per-channel, 3-channel buffer using the specified dithering algorithm.
 
 

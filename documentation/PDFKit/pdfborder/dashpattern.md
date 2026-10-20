@@ -1,7 +1,8 @@
 # dashPattern
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gets the dash pattern for the border as an array of NSNumber objects.
 
@@ -19,21 +20,26 @@ Gets the dash pattern for the border as an array of NSNumber objects.
 var dashPattern: [Any]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSArray * dashPattern;
+```
+
 #### Discussion
 
 Refer to the description for `NSBezierPath` for more information.
 
 ## See Also
 
-- [var style: PDFBorderStyle](pdfborder/style.md)
+### Working with Border Styles and Characteristics
+- [var style: PDFBorderStyle](./style.md)
   Sets the border style.
-- [enum PDFBorderStyle](pdfborderstyle.md)
+- [enum PDFBorderStyle](../pdfborderstyle.md)
   PDF Kit annotation borders may have the following styles.
-- [var lineWidth: CGFloat](pdfborder/linewidth.md)
+- [var lineWidth: CGFloat](./linewidth.md)
   Sets the line width (in points) for the border.
-- [var borderKeyValues: [AnyHashable : Any]](pdfborder/borderkeyvalues.md)
+- [var borderKeyValues: [AnyHashable : Any]](./borderkeyvalues.md)
   A dictionary that contains a deep copy of all border properties.
-- [struct PDFBorderKey](pdfborderkey.md)
+- [struct PDFBorderKey](../pdfborderkey.md)
 
 
 ---

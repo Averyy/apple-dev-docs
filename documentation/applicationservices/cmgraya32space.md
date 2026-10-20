@@ -1,7 +1,8 @@
 # cmGrayA32Space
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A luminance color space with two components, a gray component followed by an alpha channel component. Each component value is 16 bits.
 

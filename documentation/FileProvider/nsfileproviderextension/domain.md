@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The domain managed by this file provider object.
 
@@ -17,11 +18,15 @@ The domain managed by this file provider object.
 var domain: NSFileProviderDomain? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSFileProviderDomain * domain;
+```
+
 #### Discussion
 
 If the File Provider extension does not use domains, this property is set to `nil`. By default, a File Provider extension does not have any domains.
 
-A new [`NSFileProviderExtension`](nsfileproviderextension.md) object is created for each domain added to the File Provider manager. The new File Provider’s [`domain`](nsfileproviderextension/domain.md) property is set to the added domain, and any items returned by the File Provider belong to that domain.
+A new [`NSFileProviderExtension`](../nsfileproviderextension.md) object is created for each domain added to the File Provider manager. The new File Provider’s [`domain`](./domain.md) property is set to the added domain, and any items returned by the File Provider belong to that domain.
 
 
 ---

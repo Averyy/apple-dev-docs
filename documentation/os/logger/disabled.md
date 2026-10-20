@@ -1,7 +1,8 @@
 # disabled
 
 **Framework**: os  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A disabled Logger that won’t emit log messages at runtime. Use to turn off all logging emitted using a specific logger variable.
 
@@ -11,7 +12,7 @@ A disabled Logger that won’t emit log messages at runtime. Use to turn off all
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

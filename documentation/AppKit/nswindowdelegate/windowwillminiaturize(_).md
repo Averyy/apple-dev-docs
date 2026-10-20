@@ -1,7 +1,8 @@
 # windowWillMiniaturize(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the window is about to be minimized.
 
@@ -15,19 +16,24 @@ Tells the delegate that the window is about to be minimized.
 optional func windowWillMiniaturize(_ notification: Notification)
 ```
 
+```objc
+- (void) windowWillMiniaturize:(NSNotification *) notification;
+```
+
 #### Discussion
 
-You can retrieve the `NSWindow` object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) to `notification`.
+You can retrieve the `NSWindow` object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 
 ## Parameters
 
-- `notification`: A notification named [`willMiniaturizeNotification`](nswindow/willminiaturizenotification.md).
+- `notification`: A notification named [`willMiniaturizeNotification`](../nswindow/willminiaturizenotification.md).
 
 ## See Also
 
-- [func windowDidMiniaturize(Notification)](nswindowdelegate/windowdidminiaturize(_:).md)
+### Minimizing Windows
+- [func windowDidMiniaturize(Notification)](./windowdidminiaturize%28_%29.md)
   Tells the delegate that the window has been minimized.
-- [func windowDidDeminiaturize(Notification)](nswindowdelegate/windowdiddeminiaturize(_:).md)
+- [func windowDidDeminiaturize(Notification)](./windowdiddeminiaturize%28_%29.md)
   Tells the delegate that the window has been deminimized.
 
 

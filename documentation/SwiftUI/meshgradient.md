@@ -1,7 +1,8 @@
 # MeshGradient
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A two-dimensional gradient defined by a 2D grid of positioned colors.
 
@@ -42,76 +43,77 @@ MeshGradient(width: 3, height: 3, points: [
 ## Topics
 
 ### Structures
-- [MeshGradient.BezierPoint](meshgradient/bezierpoint.md)
+- [MeshGradient.BezierPoint](./meshgradient/bezierpoint.md)
   One location in a gradient mesh, along with the four Bezier control points surrounding it.
 ### Initializers
-- [init(width: Int, height: Int, bezierPoints: [MeshGradient.BezierPoint], colors: [Color], background: Color, smoothsColors: Bool, colorSpace: Gradient.ColorSpace)](meshgradient/init(width:height:bezierpoints:colors:background:smoothscolors:colorspace:).md)
+- [init(width: Int, height: Int, bezierPoints: [MeshGradient.BezierPoint], colors: [Color], background: Color, smoothsColors: Bool, colorSpace: Gradient.ColorSpace)](./meshgradient/init%28width,height,bezierpoints,colors,background,smoothscolors,colorspace%29.md)
   Creates a new gradient mesh specified as a 2D grid of colored points, specifying the Bezier control points explicitly.
-- [init(width: Int, height: Int, bezierPoints: [MeshGradient.BezierPoint], resolvedColors: [Color.Resolved], background: Color, smoothsColors: Bool, colorSpace: Gradient.ColorSpace)](meshgradient/init(width:height:bezierpoints:resolvedcolors:background:smoothscolors:colorspace:).md)
+- [init(width: Int, height: Int, bezierPoints: [MeshGradient.BezierPoint], resolvedColors: [Color.Resolved], background: Color, smoothsColors: Bool, colorSpace: Gradient.ColorSpace)](./meshgradient/init%28width,height,bezierpoints,resolvedcolors,background,smoothscolors,colorspace%29.md)
   Creates a new gradient mesh specified as a 2D grid of colored points, specifying the Bezier control points explicitly, with already-resolved sRGB colors.
-- [init(width: Int, height: Int, locations: MeshGradient.Locations, colors: MeshGradient.Colors, background: Color, smoothsColors: Bool, colorSpace: Gradient.ColorSpace)](meshgradient/init(width:height:locations:colors:background:smoothscolors:colorspace:).md)
+- [init(width: Int, height: Int, locations: MeshGradient.Locations, colors: MeshGradient.Colors, background: Color, smoothsColors: Bool, colorSpace: Gradient.ColorSpace)](./meshgradient/init%28width,height,locations,colors,background,smoothscolors,colorspace%29.md)
   Creates a new gradient mesh specified as a 2D grid of colored vertices.
-- [init(width: Int, height: Int, points: [SIMD2<Float>], colors: [Color], background: Color, smoothsColors: Bool, colorSpace: Gradient.ColorSpace)](meshgradient/init(width:height:points:colors:background:smoothscolors:colorspace:).md)
+- [init(width: Int, height: Int, points: [SIMD2<Float>], colors: [Color], background: Color, smoothsColors: Bool, colorSpace: Gradient.ColorSpace)](./meshgradient/init%28width,height,points,colors,background,smoothscolors,colorspace%29.md)
   Creates a new gradient mesh specified as a 2D grid of colored points.
-- [init(width: Int, height: Int, points: [SIMD2<Float>], resolvedColors: [Color.Resolved], background: Color, smoothsColors: Bool, colorSpace: Gradient.ColorSpace)](meshgradient/init(width:height:points:resolvedcolors:background:smoothscolors:colorspace:).md)
+- [init(width: Int, height: Int, points: [SIMD2<Float>], resolvedColors: [Color.Resolved], background: Color, smoothsColors: Bool, colorSpace: Gradient.ColorSpace)](./meshgradient/init%28width,height,points,resolvedcolors,background,smoothscolors,colorspace%29.md)
   Creates a new gradient mesh specified as a 2D grid of colored points, with already-resolved sRGB colors.
 ### Instance Properties
-- [var background: Color](meshgradient/background.md)
+- [var background: Color](./meshgradient/background.md)
   The background color, this fills any points outside the defined vertex mesh.
-- [var colorSpace: Gradient.ColorSpace](meshgradient/colorspace.md)
+- [var colorSpace: Gradient.ColorSpace](./meshgradient/colorspace.md)
   The color space in which to interpolate vertex colors.
-- [var colors: MeshGradient.Colors](meshgradient/colors-swift.property.md)
+- [var colors: MeshGradient.Colors](./meshgradient/colors-swift.property.md)
   The array of colors. Must contain `width x height` elements.
-- [var height: Int](meshgradient/height.md)
+- [var height: Int](./meshgradient/height.md)
   The height of the mesh, i.e. the number of vertices per column.
-- [var locations: MeshGradient.Locations](meshgradient/locations-swift.property.md)
+- [var locations: MeshGradient.Locations](./meshgradient/locations-swift.property.md)
   The array of locations. Must contain `width x height` elements.
-- [var smoothsColors: Bool](meshgradient/smoothscolors.md)
+- [var smoothsColors: Bool](./meshgradient/smoothscolors.md)
   Whether cubic (smooth) interpolation should be used for the colors in the mesh (rather than only for the shape of the mesh).
-- [var width: Int](meshgradient/width.md)
+- [var width: Int](./meshgradient/width.md)
   The width of the mesh, i.e. the number of vertices per row.
 ### Enumerations
-- [MeshGradient.Colors](meshgradient/colors-swift.enum.md)
+- [MeshGradient.Colors](./meshgradient/colors-swift.enum.md)
   An array of colors.
-- [MeshGradient.Locations](meshgradient/locations-swift.enum.md)
+- [MeshGradient.Locations](./meshgradient/locations-swift.enum.md)
   An array of 2D locations and their control points.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [ShapeStyle](shapestyle.md)
-- [View](view.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [ShapeStyle](./shapestyle.md)
+- [View](./view.md)
 
 ## See Also
 
-- [func border<S>(S, width: CGFloat) -> some View](view/border(_:width:).md)
+### Styling content
+- [func border<S>(S, width: CGFloat) -> some View](./view/border%28_,width%29.md)
   Adds a border to this view with the specified style and width.
-- [func foregroundStyle<S>(S) -> some View](view/foregroundstyle(_:).md)
+- [func foregroundStyle<S>(S) -> some View](./view/foregroundstyle%28_%29.md)
   Sets a view’s foreground elements to use a given style.
-- [func foregroundStyle<S1, S2>(S1, S2) -> some View](view/foregroundstyle(_:_:).md)
+- [func foregroundStyle<S1, S2>(S1, S2) -> some View](./view/foregroundstyle%28_,_%29.md)
   Sets the primary and secondary levels of the foreground style in the child view.
-- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](view/foregroundstyle(_:_:_:).md)
+- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](./view/foregroundstyle%28_,_,_%29.md)
   Sets the primary, secondary, and tertiary levels of the foreground style.
-- [func backgroundStyle<S>(S) -> some View](view/backgroundstyle(_:).md)
+- [func backgroundStyle<S>(S) -> some View](./view/backgroundstyle%28_%29.md)
   Sets the specified style to render backgrounds within the view.
-- [var backgroundStyle: AnyShapeStyle?](environmentvalues/backgroundstyle.md)
+- [var backgroundStyle: AnyShapeStyle?](./environmentvalues/backgroundstyle.md)
   An optional style that overrides the default system background style when set.
-- [protocol ShapeStyle](shapestyle.md)
+- [protocol ShapeStyle](./shapestyle.md)
   A color or pattern to use when rendering a shape.
-- [struct AnyShapeStyle](anyshapestyle.md)
+- [struct AnyShapeStyle](./anyshapestyle.md)
   A type-erased ShapeStyle value.
-- [struct Gradient](gradient.md)
+- [struct Gradient](./gradient.md)
   A color gradient represented as an array of color stops, each having a parametric location value.
-- [struct AnyGradient](anygradient.md)
+- [struct AnyGradient](./anygradient.md)
   A color gradient.
-- [struct ShadowStyle](shadowstyle.md)
+- [struct ShadowStyle](./shadowstyle.md)
   A style to use when rendering shadows.
-- [struct Glass](glass.md)
+- [struct Glass](./glass.md)
   A structure that defines the configuration of the Liquid Glass material.
 
 

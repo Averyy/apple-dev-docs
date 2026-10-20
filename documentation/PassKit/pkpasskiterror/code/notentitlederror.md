@@ -1,7 +1,8 @@
 # PKPassKitError.Code.notEntitledError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Error caused by absence of the required entitlements for the given operation.
 
@@ -19,19 +20,24 @@ Error caused by absence of the required entitlements for the given operation.
 case notEntitledError
 ```
 
+```c
+PKNotEntitledError
+```
+
 #### Discussion
 
 Apps require appropriate entitlements to read, update or delete passes. To add these entitlements, enable the Wallet capabilities in Xcode.
 
 ## See Also
 
-- [PKPassKitError.Code.unknownError](pkpasskiterror/code/unknownerror.md)
+### Error codes
+- [PKPassKitError.Code.unknownError](./unknownerror.md)
   Unknown error.
-- [PKPassKitError.Code.invalidDataError](pkpasskiterror/code/invaliddataerror.md)
+- [PKPassKitError.Code.invalidDataError](./invaliddataerror.md)
   Invalid pass data.
-- [PKPassKitError.Code.unsupportedVersionError](pkpasskiterror/code/unsupportedversionerror.md)
+- [PKPassKitError.Code.unsupportedVersionError](./unsupportedversionerror.md)
   Unsupported pass version.
-- [PKPassKitError.Code.invalidSignature](pkpasskiterror/code/invalidsignature.md)
+- [PKPassKitError.Code.invalidSignature](./invalidsignature.md)
   Invalid pass signature.
 
 

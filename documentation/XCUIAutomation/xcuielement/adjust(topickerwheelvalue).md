@@ -1,20 +1,25 @@
 # adjust(toPickerWheelValue:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the value that the picker wheel displays.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 func adjust(toPickerWheelValue pickerWheelValue: String)
+```
+
+```objc
+- (void) adjustToPickerWheelValue:(NSString *) pickerWheelValue;
 ```
 
 #### Discussion

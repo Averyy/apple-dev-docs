@@ -1,7 +1,8 @@
 # firstIndex(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first index in which an element of the collection satisfies the given predicate.
 
@@ -36,7 +37,7 @@ if let i = students.firstIndex(where: { $0.hasPrefix("A") }) {
 // Prints "Abena starts with 'A'!"
 ```
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 

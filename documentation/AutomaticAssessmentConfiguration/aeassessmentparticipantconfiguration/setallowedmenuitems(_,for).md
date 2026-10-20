@@ -1,7 +1,8 @@
 # setAllowedMenuItems(_:for:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the allowed menu item titles for the given language.
 

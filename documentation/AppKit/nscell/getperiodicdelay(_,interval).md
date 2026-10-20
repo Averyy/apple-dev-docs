@@ -1,17 +1,22 @@
 # getPeriodicDelay(_:interval:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the initial delay and repeat values for continuous sending of action messages to target objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func getPeriodicDelay(_ delay: UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)
+```
+
+```objc
+- (void) getPeriodicDelay:(float *) delay interval:(float *) interval;
 ```
 
 #### Discussion
@@ -25,19 +30,21 @@ The default implementation returns a delay of `0.2` and an interval of `0.025` s
 
 ## See Also
 
-- [var isContinuous: Bool](nscell/iscontinuous.md)
+### Related Documentation
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value indicating whether the cell sends its action message continuously during mouse tracking.
-- [func trackMouse(with: NSEvent, in: NSRect, of: NSView, untilMouseUp: Bool) -> Bool](nscell/trackmouse(with:in:of:untilmouseup:).md)
+### Tracking the Mouse
+- [func trackMouse(with: NSEvent, in: NSRect, of: NSView, untilMouseUp: Bool) -> Bool](./trackmouse%28with,in,of,untilmouseup%29.md)
   Initiates the mouse tracking behavior in a cell.
-- [func startTracking(at: NSPoint, in: NSView) -> Bool](nscell/starttracking(at:in:).md)
+- [func startTracking(at: NSPoint, in: NSView) -> Bool](./starttracking%28at,in%29.md)
   Begins tracking mouse events within the receiver.
-- [func continueTracking(last: NSPoint, current: NSPoint, in: NSView) -> Bool](nscell/continuetracking(last:current:in:).md)
+- [func continueTracking(last: NSPoint, current: NSPoint, in: NSView) -> Bool](./continuetracking%28last,current,in%29.md)
   Returns a Boolean value that indicates whether mouse tracking should continue in the receiving cell.
-- [func stopTracking(last: NSPoint, current: NSPoint, in: NSView, mouseIsUp: Bool)](nscell/stoptracking(last:current:in:mouseisup:).md)
+- [func stopTracking(last: NSPoint, current: NSPoint, in: NSView, mouseIsUp: Bool)](./stoptracking%28last,current,in,mouseisup%29.md)
   Stops tracking mouse events within the receiver.
-- [var mouseDownFlags: Int](nscell/mousedownflags.md)
+- [var mouseDownFlags: Int](./mousedownflags.md)
   The modifier flags for the last (left) mouse-down event.
-- [class var prefersTrackingUntilMouseUp: Bool](nscell/preferstrackinguntilmouseup.md)
+- [class var prefersTrackingUntilMouseUp: Bool](./preferstrackinguntilmouseup.md)
   Returns a Boolean value that indicates whether tracking stops when the cursor leaves the cell.
 
 

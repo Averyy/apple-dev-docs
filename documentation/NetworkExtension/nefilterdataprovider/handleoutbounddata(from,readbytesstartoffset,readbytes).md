@@ -1,7 +1,8 @@
 # handleOutboundData(from:readBytesStartOffset:readBytes:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Make a filtering decision about a chunk of outbound data.
 
@@ -18,9 +19,13 @@ Make a filtering decision about a chunk of outbound data.
 func handleOutboundData(from flow: NEFilterFlow, readBytesStartOffset offset: Int, readBytes: Data) -> NEFilterDataVerdict
 ```
 
+```objc
+- (NEFilterDataVerdict *) handleOutboundDataFromFlow:(NEFilterFlow *) flow readBytesStartOffset:(NSUInteger) offset readBytes:(NSData *) readBytes;
+```
+
 #### Return Value
 
-An [`NEFilterDataVerdict`](nefilterdataverdict.md) indicating how the system should handle the chunk of data and all subsequent outbound data for the flow.
+An [`NEFilterDataVerdict`](../nefilterdataverdict.md) indicating how the system should handle the chunk of data and all subsequent outbound data for the flow.
 
 #### Discussion
 
@@ -28,21 +33,22 @@ An [`NEFilterDataVerdict`](nefilterdataverdict.md) indicating how the system sho
 
 ## Parameters
 
-- `flow`: An [`NEFilterFlow`](nefilterflow.md) object containing information about the flow.
+- `flow`: An [`NEFilterFlow`](../nefilterflow.md) object containing information about the flow.
 - `offset`: An unsigned integer containing the offset of the data stored in `readBytes`. This offset is measured from the beginning of the flow’s outbound data.
-- `readBytes`: An [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing the data to be filtered.
+- `readBytes`: An [`NSData`](../../Foundation/nsdata.md) object containing the data to be filtered.
 
 ## See Also
 
-- [func handleNewFlow(NEFilterFlow) -> NEFilterNewFlowVerdict](nefilterdataprovider/handlenewflow(_:).md)
+### Filtering network content
+- [func handleNewFlow(NEFilterFlow) -> NEFilterNewFlowVerdict](./handlenewflow%28_%29.md)
   Make a filtering decision for a newly-created flow of network content.
-- [func handleInboundData(from: NEFilterFlow, readBytesStartOffset: Int, readBytes: Data) -> NEFilterDataVerdict](nefilterdataprovider/handleinbounddata(from:readbytesstartoffset:readbytes:).md)
+- [func handleInboundData(from: NEFilterFlow, readBytesStartOffset: Int, readBytes: Data) -> NEFilterDataVerdict](./handleinbounddata%28from,readbytesstartoffset,readbytes%29.md)
   Make a filtering decision about a chunk of inbound data.
-- [enum NEFilterDataAttribute](nefilterdataattribute.md)
+- [enum NEFilterDataAttribute](../nefilterdataattribute.md)
   Attribute flags that describe the data handled by a filter.
-- [func handleInboundDataComplete(for: NEFilterFlow) -> NEFilterDataVerdict](nefilterdataprovider/handleinbounddatacomplete(for:).md)
+- [func handleInboundDataComplete(for: NEFilterFlow) -> NEFilterDataVerdict](./handleinbounddatacomplete%28for%29.md)
   Make a filtering decision after seeing all of the inbound data for a flow.
-- [func handleOutboundDataComplete(for: NEFilterFlow) -> NEFilterDataVerdict](nefilterdataprovider/handleoutbounddatacomplete(for:).md)
+- [func handleOutboundDataComplete(for: NEFilterFlow) -> NEFilterDataVerdict](./handleoutbounddatacomplete%28for%29.md)
   Make a filtering decision after seeing all of the outbound data for a flow.
 
 

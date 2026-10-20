@@ -1,7 +1,8 @@
 # events
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence of events that provide updates to the current authorization status of the session.
 
@@ -34,11 +35,12 @@ Task {
 
 ## See Also
 
-- [ARKitSession.Events](arkitsession/events-swift.struct.md)
+### Observing a session
+- [ARKitSession.Events](./events-swift.struct.md)
   A sequence of events.
-- [ARKitSession.Event](arkitsession/event.md)
+- [ARKitSession.Event](./event.md)
   Enumeration of possible session events.
-- [var description: String](arkitsession/description.md)
+- [var description: String](./description.md)
   A textual representation of this session.
 
 

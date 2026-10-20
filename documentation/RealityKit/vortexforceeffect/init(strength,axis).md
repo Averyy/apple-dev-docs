@@ -1,7 +1,8 @@
 # init(strength:axis:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a vortex force effect.
 

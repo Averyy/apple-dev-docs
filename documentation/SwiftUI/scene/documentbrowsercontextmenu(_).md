@@ -1,7 +1,8 @@
 # documentBrowserContextMenu(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds to a `DocumentGroupLaunchScene` actions that accept a list of selected files as their parameter.
 
@@ -28,9 +29,10 @@ The actions are displayed in the document browser navigation bar when a document
 
 ## See Also
 
-- [func documentLaunchTitle(_:)](scene/documentlaunchtitle(_:).md)
+### Configuring a document launcher scene
+- [func documentLaunchTitle(_:)](./documentlaunchtitle%28_%29.md)
   Sets the title displayed on the document launch card.
-- [func documentLaunchSubtitle(_:)](scene/documentlaunchsubtitle(_:).md)
+- [func documentLaunchSubtitle(_:)](./documentlaunchsubtitle%28_%29.md)
   Sets the subtitle displayed beneath the title on the document launch card.
 
 

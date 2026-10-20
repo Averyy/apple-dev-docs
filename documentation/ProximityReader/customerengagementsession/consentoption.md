@@ -1,7 +1,8 @@
 # CustomerEngagementSession.ConsentOption
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An option on the sign-up form to receive promotional emails and text messages.
 
@@ -19,34 +20,35 @@ enum ConsentOption
 ## Topics
 
 ### Enumeration Cases
-- [CustomerEngagementSession.ConsentOption.hidden](customerengagementsession/consentoption/hidden.md)
+- [CustomerEngagementSession.ConsentOption.hidden](./consentoption/hidden.md)
   Hides the option.
-- [CustomerEngagementSession.ConsentOption.preSelected](customerengagementsession/consentoption/preselected.md)
+- [CustomerEngagementSession.ConsentOption.preSelected](./consentoption/preselected.md)
   Shows the customer the receive promotions option with a default preference.
-- [CustomerEngagementSession.ConsentOption.visible](customerengagementsession/consentoption/visible.md)
+- [CustomerEngagementSession.ConsentOption.visible](./consentoption/visible.md)
   Shows the option with no default selected.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func requestCustomerInfo(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.CustomerInfo](customerengagementsession/requestcustomerinfo(for:fields:message:).md)
+### Requesting and getting customer information
+- [func requestCustomerInfo(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.CustomerInfo](./requestcustomerinfo%28for,fields,message%29.md)
   Opens a form so that the customer can share the contact information.
-- [func requestSignup(for: CustomerEngagementSession.Purpose, fields: [CustomerEngagementSession.Field], message: String?, emailConsent: CustomerEngagementSession.ConsentOption, smsConsent: CustomerEngagementSession.ConsentOption, termsAndConditions: String?) async throws -> CustomerEngagement.SignUp](customerengagementsession/requestsignup(for:fields:message:emailconsent:smsconsent:termsandconditions:).md)
+- [func requestSignup(for: CustomerEngagementSession.Purpose, fields: [CustomerEngagementSession.Field], message: String?, emailConsent: CustomerEngagementSession.ConsentOption, smsConsent: CustomerEngagementSession.ConsentOption, termsAndConditions: String?) async throws -> CustomerEngagement.SignUp](./requestsignup%28for,fields,message,emailconsent,smsconsent,termsandconditions%29.md)
   Opens a form so that the customer can share the contact information for the purpose of sign-up activity.
-- [func requestAddress(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.Address](customerengagementsession/requestaddress(for:fields:message:).md)
+- [func requestAddress(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.Address](./requestaddress%28for,fields,message%29.md)
   Opens a form so that the customer can share the postal address and additionally collect email address and phone number.
-- [func requestPayment(for: CustomerEngagement.ShoppingCartToken, using: PKPaymentRequest, delegate: any PKPaymentAuthorizationControllerDelegate) async throws -> Bool](customerengagementsession/requestpayment(for:using:delegate:).md)
+- [func requestPayment(for: CustomerEngagement.ShoppingCartToken, using: PKPaymentRequest, delegate: any PKPaymentAuthorizationControllerDelegate) async throws -> Bool](./requestpayment%28for,using,delegate%29.md)
   Opens a form so a customer can select a payment option.
-- [CustomerEngagementSession.Purpose](customerengagementsession/purpose.md)
+- [CustomerEngagementSession.Purpose](./purpose.md)
   The purpose of a customer information request.
-- [CustomerEngagementSession.Field](customerengagementsession/field.md)
+- [CustomerEngagementSession.Field](./field.md)
   The contact information field in a customer request form.
 
 

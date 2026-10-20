@@ -1,24 +1,26 @@
 # tanhl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double tanhl(long double);
 ```
 
 ## See Also
 
-- [tan](1557150-tan.md)
-- [tanf](1557258-tanf.md)
-- [tanh](1557370-tanh.md)
-- [tanhf](1557286-tanhf.md)
-- [tanl](1557239-tanl.md)
+### Tangent
+- [tan](./api-1557150-tan.md)
+- [tanf](./api-1557258-tanf.md)
+- [tanh](./api-1557370-tanh.md)
+- [tanhf](./api-1557286-tanhf.md)
+- [tanl](./api-1557239-tanl.md)
 
 
 ---

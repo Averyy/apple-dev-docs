@@ -1,12 +1,13 @@
 # autoenablesItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates if the button automatically enables and disables its items every time a user event occurs.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ A Boolean value that indicates if the button automatically enables and disables 
 var autoenablesItems: Bool { get set }
 ```
 
+```objc
+@property BOOL autoenablesItems;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the button automatically enables and disables items. The default value is [`true`](https://developer.apple.com/documentation/swift/true). For more information about enabling and disabling menu items, see NSMenuValidation.
+When the value of this property is [`true`](../../Swift/true.md), the button automatically enables and disables items. The default value is [`true`](../../Swift/true.md). For more information about enabling and disabling menu items, see NSMenuValidation.
 
 ## See Also
 
-- [var menu: NSMenu?](nspopupbuttoncell/menu.md)
+### Accessing menu attributes
+- [var menu: NSMenu?](./menu.md)
   The pop-up button’s associated menu.
-- [var pullsDown: Bool](nspopupbuttoncell/pullsdown.md)
+- [var pullsDown: Bool](./pullsdown.md)
   A Boolean value that indicates the behavior of the button’s menu.
-- [var preferredEdge: NSRectEdge](nspopupbuttoncell/preferrededge.md)
+- [var preferredEdge: NSRectEdge](./preferrededge.md)
   The edge of the cell from which the menu should pop out when screen conditions are restrictive.
-- [var usesItemFromMenu: Bool](nspopupbuttoncell/usesitemfrommenu.md)
+- [var usesItemFromMenu: Bool](./usesitemfrommenu.md)
   A Boolean value that indicates if the control uses an item from the menu for its own title.
-- [var altersStateOfSelectedItem: Bool](nspopupbuttoncell/altersstateofselecteditem.md)
+- [var altersStateOfSelectedItem: Bool](./altersstateofselecteditem.md)
   A Boolean value that indicates if the pop-up button links the state of the selected menu item to the current selection.
-- [var arrowPosition: NSPopUpButton.ArrowPosition](nspopupbuttoncell/arrowposition.md)
+- [var arrowPosition: NSPopUpButton.ArrowPosition](./arrowposition.md)
   The position of the arrow displayed on the button.
 
 

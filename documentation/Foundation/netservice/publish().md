@@ -1,17 +1,20 @@
 # publish()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to advertise the receiver’s on the network.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.2+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 27.2
+- iPadOS 2.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 10.2+ - Deprecated in 27.2
+- tvOS 9.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use nw_connection_t or nw_listener_t in Network framework instead
 
 ## Declaration
 
@@ -19,25 +22,30 @@ Attempts to advertise the receiver’s on the network.
 func publish()
 ```
 
+```objc
+- (void) publish;
+```
+
 #### Discussion
 
-This method returns immediately, with success or failure indicated by the callbacks to the delegate. This is equivalent to calling [`publish(options:)`](netservice/publish(options:).md) with the default options (`0`).
+This method returns immediately, with success or failure indicated by the callbacks to the delegate. This is equivalent to calling [`publish(options:)`](./publish%28options%29.md) with the default options (`0`).
 
 ## See Also
 
-- [func publish(options: NetService.Options)](netservice/publish(options:).md)
+### Using Network Services
+- [func publish(options: NetService.Options)](./publish%28options%29.md)
   Attempts to advertise the receiver on the network, with the given options.
-- [func resolve()](netservice/resolve.md)
+- [func resolve()](./resolve%28%29.md)
   Starts a resolve process for the service.
-- [func resolve(withTimeout: TimeInterval)](netservice/resolve(withtimeout:).md)
+- [func resolve(withTimeout: TimeInterval)](./resolve%28withtimeout%29.md)
   Starts a resolve process of a finite duration for the service.
-- [var port: Int](netservice/port.md)
+- [var port: Int](./port.md)
   The port on which the service is listening for connections.
-- [func startMonitoring()](netservice/startmonitoring.md)
+- [func startMonitoring()](./startmonitoring%28%29.md)
   Starts the monitoring of TXT-record updates for the receiver.
-- [func stop()](netservice/stop.md)
+- [func stop()](./stop%28%29.md)
   Halts a currently running attempt to publish or resolve a service.
-- [func stopMonitoring()](netservice/stopmonitoring.md)
+- [func stopMonitoring()](./stopmonitoring%28%29.md)
   Stops the monitoring of TXT-record updates for the receiver.
 
 

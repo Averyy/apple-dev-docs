@@ -1,7 +1,8 @@
 # sourcePlayerItem
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player item that’s the source of this configuration.
 
@@ -20,13 +21,18 @@ The player item that’s the source of this configuration.
 weak var sourcePlayerItem: AVPlayerItem? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) AVPlayerItem * sourcePlayerItem;
+```
+
 ## See Also
 
-- [var dataChannelDescription: [[CMTag]]](avplayervideooutput/configuration/datachanneldescription.md)
+### Inspecting the configuration
+- [var dataChannelDescription: [[CMTag]]](./datachanneldescription.md)
   An array of data channels selected for this configuration.
-- [var activationTime: CMTime](avplayervideooutput/configuration/activationtime.md)
+- [var activationTime: CMTime](./activationtime.md)
   The host time this configuration became active on its associated player object.
-- [var preferredTransform: CGAffineTransform](avplayervideooutput/configuration/preferredtransform.md)
+- [var preferredTransform: CGAffineTransform](./preferredtransform.md)
   The preferred transform of the visual media.
 
 

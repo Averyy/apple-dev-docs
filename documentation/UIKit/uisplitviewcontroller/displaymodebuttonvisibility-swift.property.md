@@ -1,7 +1,8 @@
 # displayModeButtonVisibility
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A setting that determines whether the display mode button is visible in the interface.
 
@@ -17,21 +18,26 @@ A setting that determines whether the display mode button is visible in the inte
 var displayModeButtonVisibility: UISplitViewController.DisplayModeButtonVisibility { get set }
 ```
 
+```objc
+@property (nonatomic) UISplitViewControllerDisplayModeButtonVisibility displayModeButtonVisibility;
+```
+
 ## See Also
 
-- [var preferredDisplayMode: UISplitViewController.DisplayMode](uisplitviewcontroller/preferreddisplaymode.md)
+### Managing the display mode
+- [var preferredDisplayMode: UISplitViewController.DisplayMode](./preferreddisplaymode.md)
   The preferred arrangement of the split view interface.
-- [var displayMode: UISplitViewController.DisplayMode](uisplitviewcontroller/displaymode-swift.property.md)
+- [var displayMode: UISplitViewController.DisplayMode](./displaymode-swift.property.md)
   The current arrangement of the split view interface.
-- [var displayModeButtonItem: UIBarButtonItem](uisplitviewcontroller/displaymodebuttonitem.md)
+- [var displayModeButtonItem: UIBarButtonItem](./displaymodebuttonitem.md)
   A button that changes the display mode of the split view controller.
-- [var presentsWithGesture: Bool](uisplitviewcontroller/presentswithgesture.md)
+- [var presentsWithGesture: Bool](./presentswithgesture.md)
   Specifies whether a hidden view controller can be presented and dismissed using a swipe gesture.
-- [var showsSecondaryOnlyButton: Bool](uisplitviewcontroller/showssecondaryonlybutton.md)
+- [var showsSecondaryOnlyButton: Bool](./showssecondaryonlybutton.md)
   Specifies whether the secondary view controller shows a button to toggle to and from the secondary-only display mode.
-- [UISplitViewController.DisplayMode](uisplitviewcontroller/displaymode-swift.enum.md)
+- [UISplitViewController.DisplayMode](./displaymode-swift.enum.md)
   Constants that describe the possible arrangements for a split view interface.
-- [UISplitViewController.DisplayModeButtonVisibility](uisplitviewcontroller/displaymodebuttonvisibility-swift.enum.md)
+- [UISplitViewController.DisplayModeButtonVisibility](./displaymodebuttonvisibility-swift.enum.md)
   Constants that determine the visibility of the display mode button.
 
 

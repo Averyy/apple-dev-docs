@@ -1,7 +1,8 @@
 # uniformlyScaled(by:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the entity uniformly scaled by the specified scalar value.
 

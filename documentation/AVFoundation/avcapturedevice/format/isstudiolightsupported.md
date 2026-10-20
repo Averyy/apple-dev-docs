@@ -1,7 +1,8 @@
 # isStudioLightSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the format supports Studio Light.
 
@@ -18,13 +19,18 @@ A Boolean value that indicates whether the format supports Studio Light.
 var isStudioLightSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isStudioLightSupported) BOOL studioLightSupported;
+```
+
 #### Discussion
 
-See [`isStudioLightEnabled`](avcapturedevice/isstudiolightenabled.md) for more information on the Studio Light feature.
+See [`isStudioLightEnabled`](../isstudiolightenabled.md) for more information on the Studio Light feature.
 
 ## See Also
 
-- [var videoFrameRateRangeForStudioLight: AVFrameRateRange?](avcapturedevice/format/videoframeraterangeforstudiolight.md)
+### Determining Studio Light support
+- [var videoFrameRateRangeForStudioLight: AVFrameRateRange?](./videoframeraterangeforstudiolight.md)
   A value that indicates the minimum and maximum frame rates available when a user enables Studio Light.
 
 

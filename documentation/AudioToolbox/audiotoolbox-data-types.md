@@ -1,21 +1,23 @@
 # AudioToolbox Data Types
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
 ## Topics
 
 ### Data Types
-- [typealias AUMIDIEventListBlock](aumidieventlistblock.md)
-- [typealias AudioFileComponentGetUserDataAtOffsetProc](audiofilecomponentgetuserdataatoffsetproc.md)
-- [typealias AudioFileComponentGetUserDataSize64Proc](audiofilecomponentgetuserdatasize64proc.md)
-- [typealias CallHostBlock](callhostblock.md)
+- [typealias AUMIDIEventListBlock](./aumidieventlistblock.md)
+- [typealias AudioFileComponentGetUserDataAtOffsetProc](./audiofilecomponentgetuserdataatoffsetproc.md)
+- [typealias AudioFileComponentGetUserDataSize64Proc](./audiofilecomponentgetuserdatasize64proc.md)
+- [typealias CallHostBlock](./callhostblock.md)
 
 ## See Also
 
-- [AudioToolbox Structures](audiotoolbox-structures.md)
-- [AudioToolbox Enumerations](audiotoolbox-enumerations.md)
-- [AudioToolbox Constants](audiotoolbox-constants.md)
-- [AudioToolbox Functions](audiotoolbox-functions.md)
+### Reference
+- [AudioToolbox Structures](./audiotoolbox-structures.md)
+- [AudioToolbox Enumerations](./audiotoolbox-enumerations.md)
+- [AudioToolbox Constants](./audiotoolbox-constants.md)
+- [AudioToolbox Functions](./audiotoolbox-functions.md)
 
 
 ---

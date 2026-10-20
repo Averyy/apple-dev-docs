@@ -1,7 +1,8 @@
 # NSFileManagerResumeSyncBehavior.dropLocalChanges
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Resumes synchronizing by overwriting any local changes with the remote version of the file.
 
@@ -18,15 +19,20 @@ Resumes synchronizing by overwriting any local changes with the remote version o
 case dropLocalChanges
 ```
 
+```c
+NSFileManagerResumeSyncBehaviorDropLocalChanges
+```
+
 #### Discussion
 
 If a conflict occurs, the file manager stores the local changes as an alternate version. Only use this behavior if you provide a separate means of resolving and merging conflicts.
 
 ## See Also
 
-- [NSFileManagerResumeSyncBehavior.preserveLocalChanges](nsfilemanagerresumesyncbehavior/preservelocalchanges.md)
+### Identifying sync behaviors
+- [NSFileManagerResumeSyncBehavior.preserveLocalChanges](./preservelocalchanges.md)
   Resumes synchronizing by uploading the local version of the file.
-- [NSFileManagerResumeSyncBehavior.afterUploadWithFailOnConflict](nsfilemanagerresumesyncbehavior/afteruploadwithfailonconflict.md)
+- [NSFileManagerResumeSyncBehavior.afterUploadWithFailOnConflict](./afteruploadwithfailonconflict.md)
   Resumes sync by first uploading the local version of the file, failing if the provider detects a conflict.
 
 

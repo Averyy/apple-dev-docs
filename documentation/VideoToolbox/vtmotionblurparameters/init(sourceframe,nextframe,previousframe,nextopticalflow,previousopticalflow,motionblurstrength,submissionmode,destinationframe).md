@@ -1,7 +1,8 @@
 # init(sourceFrame:nextFrame:previousFrame:nextOpticalFlow:previousOpticalFlow:motionBlurStrength:submissionMode:destinationFrame:)
 
 **Framework**: Video Toolbox  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 init?(sourceFrame: VTFrameProcessorFrame, nextFrame: VTFrameProcessorFrame?, previousFrame: VTFrameProcessorFrame?, nextOpticalFlow: VTFrameProcessorOpticalFlow?, previousOpticalFlow: VTFrameProcessorOpticalFlow?, motionBlurStrength: Int, submissionMode: VTMotionBlurParameters.SubmissionMode, destinationFrame: VTFrameProcessorFrame)
+```
+
+```objc
+- (instancetype) initWithSourceFrame:(VTFrameProcessorFrame *) sourceFrame nextFrame:(VTFrameProcessorFrame *) nextFrame previousFrame:(VTFrameProcessorFrame *) previousFrame nextOpticalFlow:(VTFrameProcessorOpticalFlow *) nextOpticalFlow previousOpticalFlow:(VTFrameProcessorOpticalFlow *) previousOpticalFlow motionBlurStrength:(NSInteger) motionBlurStrength submissionMode:(VTMotionBlurParametersSubmissionMode) submissionMode destinationFrame:(VTFrameProcessorFrame *) destinationFrame;
 ```
 
 ## Parameters

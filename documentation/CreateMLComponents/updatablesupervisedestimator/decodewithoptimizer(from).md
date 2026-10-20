@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reads the encoded transformer and optimizer with a decoder.
@@ -31,7 +32,8 @@ The decoded transformer.
 
 ## See Also
 
-- [func encodeWithOptimizer(Self.Transformer, to: inout any EstimatorEncoder) throws](updatablesupervisedestimator/encodewithoptimizer(_:to:).md)
+### Encoding and decoding
+- [func encodeWithOptimizer(Self.Transformer, to: inout any EstimatorEncoder) throws](./encodewithoptimizer%28_,to%29.md)
   Encodes the transformer and optimizer to an encoder.
 
 

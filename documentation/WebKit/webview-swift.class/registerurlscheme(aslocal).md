@@ -1,17 +1,24 @@
 # registerURLScheme(asLocal:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Adds the specified URL scheme to the list of local schemes.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
 ```swift
 class func registerURLScheme(asLocal scheme: String!)
+```
+
+```objc
++ (void) registerURLSchemeAsLocal:(NSString *) scheme;
 ```
 
 #### Discussion
@@ -24,7 +31,8 @@ You need to register a scheme as local to access resources with file URLs and to
 
 ## See Also
 
-- [class func registerClass(AnyClass!, representationClass: AnyClass!, forMIMEType: String!)](webview-swift.class/registerclass(_:representationclass:formimetype:).md)
+### Registering Document Views and Representations
+- [class func registerClass(AnyClass!, representationClass: AnyClass!, forMIMEType: String!)](./registerclass%28_,representationclass,formimetype%29.md)
   Specifies the view and representation objects to be used for specific MIME types.
 
 

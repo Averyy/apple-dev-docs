@@ -1,7 +1,8 @@
 # isRouteActive(_:)
 
 **Framework**: AVRouting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a route is active.
 
@@ -17,9 +18,13 @@ Returns a Boolean value that indicates whether a route is active.
 func isRouteActive(_ route: AVCustomDeviceRoute) -> Bool
 ```
 
+```objc
+- (BOOL) isRouteActive:(AVCustomDeviceRoute *) route;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the route is in an active state; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the route is in an active state; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -27,7 +32,8 @@ func isRouteActive(_ route: AVCustomDeviceRoute) -> Bool
 
 ## See Also
 
-- [func setActive(Bool, for: AVCustomDeviceRoute)](avcustomroutingcontroller/setactive(_:for:).md)
+### Activating a route
+- [func setActive(Bool, for: AVCustomDeviceRoute)](./setactive%28_,for%29.md)
   Sets the active state of a route.
 
 

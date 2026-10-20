@@ -1,7 +1,8 @@
 # fileMissing
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The deletion failed because the file could not be found.
 
@@ -18,13 +19,18 @@ The deletion failed because the file could not be found.
 static let fileMissing: ICDeleteError
 ```
 
+```c
+extern ICDeleteError const ICDeleteErrorFileMissing;
+```
+
 ## See Also
 
-- [static let canceled: ICDeleteError](icdeleteerror/canceled.md)
+### Reading a Deletion Error
+- [static let canceled: ICDeleteError](./canceled.md)
   The deletion was canceled.
-- [static let deviceMissing: ICDeleteError](icdeleteerror/devicemissing.md)
+- [static let deviceMissing: ICDeleteError](./devicemissing.md)
   The deletion failed because the device could not be found.
-- [static let readOnly: ICDeleteError](icdeleteerror/readonly.md)
+- [static let readOnly: ICDeleteError](./readonly.md)
   The deletion failed because the file had read-only permissions.
 
 

@@ -1,7 +1,8 @@
 # Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A standard label for user interface items, consisting of an icon with a title.
 
@@ -23,21 +24,21 @@ struct Label<Title, Icon> where Title : View, Icon : View
 
 ## Mentions
 
-- [Performing a search operation](performing-a-search-operation.md)
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
-- [Preparing views for localization](preparing-views-for-localization.md)
+- [Performing a search operation](./performing-a-search-operation.md)
+- [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
+- [Preparing views for localization](./preparing-views-for-localization.md)
 
 #### Overview
 
 One of the most common and recognizable user interface components is the combination of an icon and a label. This idiom appears across many kinds of apps and shows up in collections, lists, menus of action items, and disclosable lists, just to name a few.
 
-You create a label, in its simplest form, by providing a title and the name of an image, such as an icon from the [`SF Symbols`](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) collection:
+You create a label, in its simplest form, by providing a title and the name of an image, such as an icon from the [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols) collection:
 
 ```swift
 Label("Lightning", systemImage: "bolt.fill")
 ```
 
-You can also apply styles to labels in several ways. In the case of dynamic changes to the view after device rotation or change to a window size you might want to show only the text portion of the label using the [`titleOnly`](labelstyle/titleonly.md) label style:
+You can also apply styles to labels in several ways. In the case of dynamic changes to the view after device rotation or change to a window size you might want to show only the text portion of the label using the [`titleOnly`](./labelstyle/titleonly.md) label style:
 
 ```swift
 Label("Lightning", systemImage: "bolt.fill")
@@ -51,7 +52,7 @@ Label("Lightning", systemImage: "bolt.fill")
     .labelStyle(.iconOnly)
 ```
 
-Some containers might apply a different default label style, such as only showing icons within toolbars on macOS and iOS. To opt in to showing both the title and the icon, you can apply the [`titleAndIcon`](labelstyle/titleandicon.md) label style:
+Some containers might apply a different default label style, such as only showing icons within toolbars on macOS and iOS. To opt in to showing both the title and the icon, you can apply the [`titleAndIcon`](./labelstyle/titleandicon.md) label style:
 
 ```swift
 Label("Lightning", systemImage: "bolt.fill")
@@ -69,7 +70,7 @@ struct RedBorderedLabelStyle: LabelStyle {
 }
 ```
 
-For more extensive customization or to create a completely new label style, you’ll need to adopt the [`LabelStyle`](labelstyle.md) protocol and implement a [`LabelStyleConfiguration`](labelstyleconfiguration.md) for the new style.
+For more extensive customization or to create a completely new label style, you’ll need to adopt the [`LabelStyle`](./labelstyle.md) protocol and implement a [`LabelStyleConfiguration`](./labelstyleconfiguration.md) for the new style.
 
 To apply a common label style to a group of labels, apply the style to the view hierarchy that contains the labels:
 
@@ -82,7 +83,7 @@ VStack {
 .labelStyle(.iconOnly)
 ```
 
-It’s also possible to make labels using views to compose the label’s icon programmatically, rather than using a pre-made image. In this example, the icon portion of the label uses a filled [`Circle`](circle.md) overlaid with the user’s initials:
+It’s also possible to make labels using views to compose the label’s icon programmatically, rather than using a pre-made image. In this example, the icon portion of the label uses a filled [`Circle`](./circle.md) overlaid with the user’s initials:
 
 ```swift
 Label {
@@ -103,32 +104,33 @@ Label {
 ## Topics
 
 ### Creating a label
-- [init(_:image:)](label/init(_:image:).md)
+- [init(_:image:)](./label/init%28_,image%29.md)
   Creates a label with an icon image and a title generated from a localized string.
-- [init(_:systemImage:)](label/init(_:systemimage:).md)
+- [init(_:systemImage:)](./label/init%28_,systemimage%29.md)
   Creates a label with a system icon image and a title generated from a localized string.
-- [init(title: () -> Title, icon: () -> Icon)](label/init(title:icon:).md)
+- [init(title: () -> Title, icon: () -> Icon)](./label/init%28title,icon%29.md)
   Creates a label with a custom title and icon.
-- [init(_:)](label/init(_:).md)
+- [init(_:)](./label/init%28_%29.md)
   Creates a label representing a family activity application.
-- [init(_:image:)](label/init(_:image:).md)
+- [init(_:image:)](./label/init%28_,image%29.md)
   Creates a label with an icon image and a title generated from a localized string.
 ### Configuring a Label
-- [func labelIconToTitleSpacing(CGFloat) -> some View](view/labelicontotitlespacing(_:).md)
+- [func labelIconToTitleSpacing(CGFloat) -> some View](./view/labelicontotitlespacing%28_%29.md)
   Set the spacing between the icon and title in labels.
-- [func labelReservedIconWidth(CGFloat) -> some View](view/labelreservediconwidth(_:).md)
+- [func labelReservedIconWidth(CGFloat) -> some View](./view/labelreservediconwidth%28_%29.md)
   Set the width reserved for icons in labels.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct Text](text.md)
+### Displaying text
+- [struct Text](./text.md)
   A view that displays one or more lines of read-only text.
-- [func labelStyle<S>(S) -> some View](view/labelstyle(_:).md)
+- [func labelStyle<S>(S) -> some View](./view/labelstyle%28_%29.md)
   Sets the style for labels within this view.
 
 

@@ -1,7 +1,8 @@
 # NSTextScalingType.iOS
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Font sizes throughout the document appear visually similar to how they would render in iOS.
 
@@ -19,9 +20,14 @@ Font sizes throughout the document appear visually similar to how they would ren
 case iOS
 ```
 
+```c
+NSTextScalingiOS
+```
+
 ## See Also
 
-- [NSTextScalingType.standard](nstextscalingtype/standard.md)
+### Constants
+- [NSTextScalingType.standard](./standard.md)
   Font sizes throughout the document appear visually similar to how they would render in macOS and non-Apple platforms.
 
 

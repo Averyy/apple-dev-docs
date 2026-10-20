@@ -1,7 +1,8 @@
 # errSecMissingQualifiedCertStatement
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var errSecMissingQualifiedCertStatement: OSStatus { get }
+```
+
+```c
+errSecMissingQualifiedCertStatement
 ```
 
 

@@ -1,7 +1,8 @@
 # Version number
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 16-bit integer
 
@@ -11,15 +12,16 @@ Set to `0`.
 
 ## See Also
 
-- [Size](preview_atom/size.md)
+### Atom fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this preview atom.
-- [Type](preview_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Modification date](preview_atom/modification_date.md)
+- [Modification date](./modification_date.md)
   A 32-bit unsigned integer containing a date that indicates when the preview was last updated.
-- [Atom type](preview_atom/atom_type.md)
+- [Atom type](./atom_type.md)
   A 32-bit integer that indicates the type of atom that contains the preview data.
-- [Atom index](preview_atom/atom_index.md)
+- [Atom index](./atom_index.md)
   A 16-bit integer that identifies which atom of the specified type is to be used as the preview.
 
 

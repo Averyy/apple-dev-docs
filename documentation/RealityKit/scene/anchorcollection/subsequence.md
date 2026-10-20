@@ -1,7 +1,8 @@
 # Scene.AnchorCollection.SubSequence
 
 **Framework**: RealityKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A sequence that represents a contiguous subrange of the collection’s elements.
 
@@ -11,7 +12,7 @@ A sequence that represents a contiguous subrange of the collection’s elements.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ typealias SubSequence = Slice<Scene.AnchorCollection>
 
 ## See Also
 
-- [subscript(Int) -> any HasAnchoring](scene/anchorcollection/subscript(_:).md)
+### Accessing anchors
+- [subscript(Int) -> any HasAnchoring](./subscript%28_%29.md)
   Accesses the element at the specified position.
 
 

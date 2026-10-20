@@ -1,7 +1,8 @@
 # isAllowedValue(_:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks whether the model will accept an input feature value.
 
@@ -18,6 +19,10 @@ Checks whether the model will accept an input feature value.
 
 ```swift
 func isAllowedValue(_ value: MLFeatureValue) -> Bool
+```
+
+```objc
+- (BOOL) isAllowedValue:(MLFeatureValue *) value;
 ```
 
 #### Return Value

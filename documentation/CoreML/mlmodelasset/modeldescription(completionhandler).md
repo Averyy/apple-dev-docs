@@ -1,7 +1,8 @@
 # modelDescription(completionHandler:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The default model descripton.
 
@@ -17,7 +18,15 @@ The default model descripton.
 ## Declaration
 
 ```swift
+func modelDescription(completionHandler handler: @escaping @Sendable (MLModelDescription?, (any Error)?) -> Void)
+```
+
+```swift
 var modelDescription: MLModelDescription { get async throws }
+```
+
+```objc
+- (void) modelDescriptionWithCompletionHandler:(void (^)(MLModelDescription *modelDescription, NSError *error)) handler;
 ```
 
 #### Discussion
@@ -34,7 +43,8 @@ print(modelDescription)
 
 ## See Also
 
-- [func modelDescription(ofFunctionNamed: String, completionHandler: (MLModelDescription?, (any Error)?) -> Void)](mlmodelasset/modeldescription(offunctionnamed:completionhandler:).md)
+### Getting the model description
+- [func modelDescription(ofFunctionNamed: String, completionHandler: (MLModelDescription?, (any Error)?) -> Void)](./modeldescription%28offunctionnamed,completionhandler%29.md)
   The model descripton for a specified function.
 
 

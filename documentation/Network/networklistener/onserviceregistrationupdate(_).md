@@ -1,7 +1,8 @@
 # onServiceRegistrationUpdate(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set a closure to be called when the listener has added or removed a registered service.
 

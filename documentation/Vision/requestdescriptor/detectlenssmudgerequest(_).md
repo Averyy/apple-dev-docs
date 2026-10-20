@@ -1,7 +1,8 @@
 # RequestDescriptor.detectLensSmudgeRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a detect lens smudge request.
 
@@ -22,7 +23,8 @@ case detectLensSmudgeRequest(DetectLensSmudgeRequest.Revision)
 
 ## See Also
 
-- [case classifyImageRequest(ClassifyImageRequest.Revision)](requestdescriptor/classifyimagerequest(_:).md)
+### Getting the still-image descriptor
+- [case classifyImageRequest(ClassifyImageRequest.Revision)](./classifyimagerequest%28_%29.md)
   A descriptor that describes a classify image request.
 
 

@@ -1,14 +1,15 @@
 # kHIDUsage_Snsr_Data_Mechanical_GaugePressure
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Data_Mechanical_GaugePressure = 0x0496
 ```
 

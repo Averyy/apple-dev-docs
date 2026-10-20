@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBNotificationPostForcedResumeBit](1646390-anonymous/kusbnotificationpostforcedresumebit.md)
-- [kUSBNotificationPostForcedSuspendBit](1646390-anonymous/kusbnotificationpostforcedsuspendbit.md)
-- [kUSBNotificationPreForcedResumeBit](1646390-anonymous/kusbnotificationpreforcedresumebit.md)
-- [kUSBNotificationPreForcedSuspendBit](1646390-anonymous/kusbnotificationpreforcedsuspendbit.md)
+- [kUSBNotificationPostForcedResumeBit](./api-1646390-anonymous/kusbnotificationpostforcedresumebit.md)
+- [kUSBNotificationPostForcedSuspendBit](./api-1646390-anonymous/kusbnotificationpostforcedsuspendbit.md)
+- [kUSBNotificationPreForcedResumeBit](./api-1646390-anonymous/kusbnotificationpreforcedresumebit.md)
+- [kUSBNotificationPreForcedSuspendBit](./api-1646390-anonymous/kusbnotificationpreforcedsuspendbit.md)
 
 
 ---

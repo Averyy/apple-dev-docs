@@ -1,22 +1,27 @@
 # CIBlurredRoundedRectangleGenerator
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol for the Blurred Rounded Rectangle Generator filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 protocol CIBlurredRoundedRectangleGenerator : CIFilterProtocol
+```
+
+```objc
+@protocol CIBlurredRoundedRectangleGenerator <CIFilter>
 ```
 
 #### Overview
@@ -26,21 +31,21 @@ Generates a blurred rounded rectangle image with the specified extent, corner ra
 ## Topics
 
 ### Instance Properties
-- [var color: CIColor](ciblurredroundedrectanglegenerator/color.md)
+- [var color: CIColor](./ciblurredroundedrectanglegenerator/color.md)
   A color.
-- [var extent: CGRect](ciblurredroundedrectanglegenerator/extent.md)
+- [var extent: CGRect](./ciblurredroundedrectanglegenerator/extent.md)
   A rectangle that defines the extent of the effect.
-- [var radius: Float](ciblurredroundedrectanglegenerator/radius.md)
+- [var radius: Float](./ciblurredroundedrectanglegenerator/radius.md)
   The distance from the center of the effect.
-- [var sigma: Float](ciblurredroundedrectanglegenerator/sigma.md)
+- [var sigma: Float](./ciblurredroundedrectanglegenerator/sigma.md)
   The sigma for a gaussian blur.
-- [var smoothness: Float](ciblurredroundedrectanglegenerator/smoothness.md)
+- [var smoothness: Float](./ciblurredroundedrectanglegenerator/smoothness.md)
   A value to control the smoothness of the transition between the curved and linear edges of the shape.
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The normalized time ranges from 0 to 1, and is the time at which the animation result should be evaluated.

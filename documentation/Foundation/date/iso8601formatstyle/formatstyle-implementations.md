@@ -1,11 +1,12 @@
 # FormatStyle Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func format(Date) -> String](date/iso8601formatstyle/format(_:).md)
+- [func format(Date) -> String](./format%28_%29.md)
   Creates a locale-aware ISO 8601 string representation from a date value.
 
 

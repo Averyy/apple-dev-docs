@@ -1,7 +1,8 @@
 # setDelegate(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the delegate for this authorization view.
 
@@ -14,6 +15,10 @@ Sets the delegate for this authorization view.
 func setDelegate(_ delegate: Any!)
 ```
 
+```objc
+- (void) setDelegate:(id) delegate;
+```
+
 #### Discussion
 
 If you want to be notified of state changes (for example, when the user clicks the button), set a delegate and implement the delegate methods described in the delegate methods section.
@@ -24,7 +29,8 @@ If you want to be notified of state changes (for example, when the user clicks t
 
 ## See Also
 
-- [func delegate() -> Any!](sfauthorizationview/delegate.md)
+### Setting and getting the delegate for the view
+- [func delegate() -> Any!](./delegate%28%29.md)
   Returns the delegate for this view.
 
 

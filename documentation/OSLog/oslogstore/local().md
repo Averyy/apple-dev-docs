@@ -1,7 +1,8 @@
 # local()
 
 **Framework**: OSLog  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a log store representing the Mac’s local store.
 
@@ -14,13 +15,18 @@ Creates a log store representing the Mac’s local store.
 class func local() throws -> Self
 ```
 
+```objc
++ (instancetype) localStoreAndReturnError:(NSError **) error;
+```
+
 #### Discussion
 
 Gaining access to the local unified logging system requires permission from the system. The caller must be run by an admin account and have the `com.apple.logging.local-store` entitlement.
 
 ## See Also
 
-- [convenience init(url: URL) throws](oslogstore/init(url:)-5v3w7.md)
+### Creating Log Stores
+- [convenience init(url: URL) throws](./init%28url%29-5v3w7.md)
   Creates a log store based on a log archive.
 
 

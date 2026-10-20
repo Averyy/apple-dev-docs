@@ -1,7 +1,8 @@
 # init(destination:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a control, consisting of a URL and a label, used to navigate to the given URL.
 
@@ -28,7 +29,8 @@ Creates a control, consisting of a URL and a label, used to navigate to the give
 
 ## See Also
 
-- [init(_:destination:)](link/init(_:destination:).md)
+### Creating a link
+- [init(_:destination:)](./init%28_,destination%29.md)
   Creates a control, consisting of a URL and a title resource, used to navigate to a URL.
 
 

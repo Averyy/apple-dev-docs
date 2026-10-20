@@ -1,7 +1,8 @@
 # containerViewWillLayoutSubviews()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the presentation controller that layout is about to begin on the views of the container view.
 
@@ -9,7 +10,7 @@ Notifies the presentation controller that layout is about to begin on the views 
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Notifies the presentation controller that layout is about to begin on the views 
 func containerViewWillLayoutSubviews()
 ```
 
+```objc
+- (void) containerViewWillLayoutSubviews;
+```
+
 #### Discussion
 
-UIKit calls this method before adjusting the layout of the views in the container view. Use this method and the [`containerViewDidLayoutSubviews()`](uipresentationcontroller/containerviewdidlayoutsubviews().md) method to update any custom views managed by your presentation controller.
+UIKit calls this method before adjusting the layout of the views in the container view. Use this method and the [`containerViewDidLayoutSubviews()`](./containerviewdidlayoutsubviews%28%29.md) method to update any custom views managed by your presentation controller.
 
-In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this presentation controller’s `traitCollection` and the `traitCollection` of its [`containerView`](uipresentationcontroller/containerview.md). For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
+In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this presentation controller’s `traitCollection` and the `traitCollection` of its [`containerView`](./containerview.md). For more information, see [Automatic trait tracking](../automatic-trait-tracking.md).
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
+This method supports automatic observation tracking. For more information, see [Updating views automatically with observation tracking in UIKit](../updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## See Also
 
-- [func containerViewDidLayoutSubviews()](uipresentationcontroller/containerviewdidlayoutsubviews.md)
+### Observing data in presentation controllers
+- [func containerViewDidLayoutSubviews()](./containerviewdidlayoutsubviews%28%29.md)
   Notifies the presentation controller when layout ends on the views of the container view.
 
 

@@ -1,7 +1,8 @@
 # scale(relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the scale of an entity relative to the given entity.
 
@@ -11,7 +12,7 @@ Gets the scale of an entity relative to the given entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -26,9 +27,10 @@ Gets the scale of an entity relative to the given entity.
 
 ## See Also
 
-- [var scale: SIMD3<Float>](hastransform/scale.md)
+### Scaling an entity
+- [var scale: SIMD3<Float>](./scale.md)
   The scale of the entity relative to its parent.
-- [func setScale(SIMD3<Float>, relativeTo: Entity?)](hastransform/setscale(_:relativeto:).md)
+- [func setScale(SIMD3<Float>, relativeTo: Entity?)](./setscale%28_,relativeto%29.md)
   Sets the scale factor of the entity relative to the given reference entity.
 
 

@@ -1,7 +1,8 @@
 # errSSLModuleAttach
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Module attach failure.
 
@@ -18,6 +19,10 @@ Module attach failure.
 
 ```swift
 var errSSLModuleAttach: OSStatus { get }
+```
+
+```c
+errSSLModuleAttach
 ```
 
 

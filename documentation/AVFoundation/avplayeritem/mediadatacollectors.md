@@ -1,7 +1,8 @@
 # mediaDataCollectors
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection of associated media data collectors.
 
@@ -21,11 +22,16 @@ nonisolated
 var mediaDataCollectors: [AVPlayerItemMediaDataCollector] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVPlayerItemMediaDataCollector *> * mediaDataCollectors;
+```
+
 ## See Also
 
-- [func add(AVPlayerItemMediaDataCollector)](avplayeritem/add(_:)-9l3to.md)
+### Managing player item data collectors
+- [func add(AVPlayerItemMediaDataCollector)](./add%28_%29-9l3to.md)
   Adds the specified media data collector to the player item’s collection of media collectors.
-- [func remove(AVPlayerItemMediaDataCollector)](avplayeritem/remove(_:)-29iuz.md)
+- [func remove(AVPlayerItemMediaDataCollector)](./remove%28_%29-29iuz.md)
   Removes the specified media data collector from the player item’s collection of media collectors.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The collection of compute devices per stage that a request supports.
@@ -23,9 +24,10 @@ var supportedComputeStageDevices: [ComputeStage : [MLComputeDevice]] { get }
 
 ## See Also
 
-- [func computeDevice(for: ComputeStage) -> MLComputeDevice?](visionrequest/computedevice(for:).md)
+### Getting the compute device
+- [func computeDevice(for: ComputeStage) -> MLComputeDevice?](./computedevice%28for%29.md)
   Returns the compute device for a compute stage.
-- [enum ComputeStage](computestage.md)
+- [enum ComputeStage](../computestage.md)
   Types that represent the compute stage.
 
 

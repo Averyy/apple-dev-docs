@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The location of the directional pad represented as a point.
@@ -20,13 +21,18 @@ The location of the directional pad represented as a point.
 var xyAxes: any GCAxis2DInput { get }
 ```
 
+```objc
+@property (readonly) id<GCAxis2DInput> xyAxes;
+```
+
 ## See Also
 
-- [var xAxis: any GCAxisInput](gcdirectionpadelement/xaxis.md)
+### Axes
+- [var xAxis: any GCAxisInput](./xaxis.md)
   The input object that represents the x-axis on the directional pad.
-- [var yAxis: any GCAxisInput](gcdirectionpadelement/yaxis.md)
+- [var yAxis: any GCAxisInput](./yaxis.md)
   The input object that represents the y-axis on the directional pad.
-- [protocol GCAxis2DInput](gcaxis2dinput.md)
+- [protocol GCAxis2DInput](../gcaxis2dinput.md)
   The common properties of inputs that provide a normalized point in a two-dimensional coordinate system with a fixed origin.
 
 

@@ -1,7 +1,8 @@
 # GCControllerHomeButtonSettingsManager
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Access the game controller system Home button settings.
 
@@ -27,23 +28,23 @@ Performing operations on `GCControllerHomeButtonSettingsManager` is only permitt
 ## Topics
 
 ### Initializers
-- [init()](gccontrollerhomebuttonsettingsmanager-258mu/init.md)
-- [init(isolated any Actor)](gccontrollerhomebuttonsettingsmanager-258mu/init(_:).md)
+- [init()](./gccontrollerhomebuttonsettingsmanager-258mu/init%28%29.md)
+- [init(isolated any Actor)](./gccontrollerhomebuttonsettingsmanager-258mu/init%28_%29.md)
 ### Instance Properties
-- [var controllerHomeButtonInAppAction: (action: GCControllerHomeButtonSettingsManager.InAppAction, customized: GCControllerHomeButtonSettingsManager.SettingCustomizationStatus)](gccontrollerhomebuttonsettingsmanager-258mu/controllerhomebuttoninappaction.md)
+- [var controllerHomeButtonInAppAction: (action: GCControllerHomeButtonSettingsManager.InAppAction, customized: GCControllerHomeButtonSettingsManager.SettingCustomizationStatus)](./gccontrollerhomebuttonsettingsmanager-258mu/controllerhomebuttoninappaction.md)
   Get the current controller Home button in-app action setting.
-- [var controllerHomeButtonSystemAction: (action: GCControllerHomeButtonSettingsManager.SystemAction, customized: GCControllerHomeButtonSettingsManager.SettingCustomizationStatus)](gccontrollerhomebuttonsettingsmanager-258mu/controllerhomebuttonsystemaction.md)
+- [var controllerHomeButtonSystemAction: (action: GCControllerHomeButtonSettingsManager.SystemAction, customized: GCControllerHomeButtonSettingsManager.SettingCustomizationStatus)](./gccontrollerhomebuttonsettingsmanager-258mu/controllerhomebuttonsystemaction.md)
   Get the current controller Home button system action setting.
-- [var settingsUpdates: some AsyncSequence<(), Never>](gccontrollerhomebuttonsettingsmanager-258mu/settingsupdates.md)
+- [var settingsUpdates: some AsyncSequence<(), Never>](./gccontrollerhomebuttonsettingsmanager-258mu/settingsupdates.md)
   The asynchronous sequence of update notifications for the Home button settings.
 ### Instance Methods
-- [func openControllerHomeButtonSettings(for: GCControllerHomeButtonSettingsManager.SettingsCustomizationActivity) throws](gccontrollerhomebuttonsettingsmanager-258mu/opencontrollerhomebuttonsettings(for:).md)
+- [func openControllerHomeButtonSettings(for: GCControllerHomeButtonSettingsManager.SettingsCustomizationActivity) throws](./gccontrollerhomebuttonsettingsmanager-258mu/opencontrollerhomebuttonsettings%28for%29.md)
   Opens the Settings app to the screen in game controller settings where the user can change the controller shortcut action.
 ### Type Aliases
-- [GCControllerHomeButtonSettingsManager.InAppAction](gccontrollerhomebuttonsettingsmanager-258mu/inappaction.md)
-- [GCControllerHomeButtonSettingsManager.SettingCustomizationStatus](gccontrollerhomebuttonsettingsmanager-258mu/settingcustomizationstatus.md)
-- [GCControllerHomeButtonSettingsManager.SettingsCustomizationActivity](gccontrollerhomebuttonsettingsmanager-258mu/settingscustomizationactivity.md)
-- [GCControllerHomeButtonSettingsManager.SystemAction](gccontrollerhomebuttonsettingsmanager-258mu/systemaction.md)
+- [GCControllerHomeButtonSettingsManager.InAppAction](./gccontrollerhomebuttonsettingsmanager-258mu/inappaction.md)
+- [GCControllerHomeButtonSettingsManager.SettingCustomizationStatus](./gccontrollerhomebuttonsettingsmanager-258mu/settingcustomizationstatus.md)
+- [GCControllerHomeButtonSettingsManager.SettingsCustomizationActivity](./gccontrollerhomebuttonsettingsmanager-258mu/settingscustomizationactivity.md)
+- [GCControllerHomeButtonSettingsManager.SystemAction](./gccontrollerhomebuttonsettingsmanager-258mu/systemaction.md)
 
 
 ---

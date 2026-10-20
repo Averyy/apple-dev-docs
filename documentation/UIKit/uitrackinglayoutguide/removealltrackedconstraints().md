@@ -1,7 +1,8 @@
 # removeAllTrackedConstraints()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the layout guide from tracking any constraints.
 
@@ -15,6 +16,10 @@ Stops the layout guide from tracking any constraints.
 
 ```swift
 func removeAllTrackedConstraints()
+```
+
+```objc
+- (void) removeAllTrackedConstraints;
 ```
 
 #### Discussion

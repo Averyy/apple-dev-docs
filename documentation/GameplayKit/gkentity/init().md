@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new entity object.
 
@@ -19,15 +20,19 @@ Initializes a new entity object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A new entity object.
 
 #### Discussion
 
-If you create a [`GKEntity`](gkentity.md) subclass and define any additional initializers, you must delegate to this initializer. You do not need to subclass [`GKEntity`](gkentity.md) to use Entity-Component architecture—generally, you should create a custom entity class only when you need a place to store state or resources that are shared by multiple components.
+If you create a [`GKEntity`](../gkentity.md) subclass and define any additional initializers, you must delegate to this initializer. You do not need to subclass [`GKEntity`](../gkentity.md) to use Entity-Component architecture—generally, you should create a custom entity class only when you need a place to store state or resources that are shared by multiple components.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 
 ---

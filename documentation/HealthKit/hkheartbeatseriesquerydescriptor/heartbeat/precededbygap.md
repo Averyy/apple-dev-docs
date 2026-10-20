@@ -1,14 +1,15 @@
 # precededByGap
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -19,7 +20,8 @@ let precededByGap: Bool
 
 ## See Also
 
-- [let timeIntervalSinceStart: TimeInterval](hkheartbeatseriesquerydescriptor/heartbeat/timeintervalsincestart.md)
+### Accessing Heartbeat Data
+- [let timeIntervalSinceStart: TimeInterval](./timeintervalsincestart.md)
 
 
 ---

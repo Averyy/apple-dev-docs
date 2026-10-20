@@ -1,7 +1,8 @@
 # Airport
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for airports.
 
@@ -10,41 +11,42 @@ The point-of-interest category for airports.
 
 ## Declaration
 
-```swift
+```
 readonly Airport: "Airport";
 ```
 
 ## See Also
 
-- [AmusementPark](pointofinterestcategory/amusementpark.md)
+### Point-of-interest categories
+- [AmusementPark](./amusementpark.md)
   The point-of-interest category for amusement parks.
-- [Aquarium](pointofinterestcategory/aquarium.md)
+- [Aquarium](./aquarium.md)
   The point-of-interest category for aquariums.
-- [ATM](pointofinterestcategory/atm.md)
+- [ATM](./atm.md)
   The point-of-interest category for ATMs.
-- [Bakery](pointofinterestcategory/bakery.md)
+- [Bakery](./bakery.md)
   The point-of-interest category for bakeries.
-- [Bank](pointofinterestcategory/bank.md)
+- [Bank](./bank.md)
   The point-of-interest category for banks.
-- [Beach](pointofinterestcategory/beach.md)
+- [Beach](./beach.md)
   The point-of-interest category for beaches.
-- [Brewery](pointofinterestcategory/brewery.md)
+- [Brewery](./brewery.md)
   The point-of-interest category for breweries.
-- [Cafe](pointofinterestcategory/cafe.md)
+- [Cafe](./cafe.md)
   The point-of-interest category for cafes.
-- [Campground](pointofinterestcategory/campground.md)
+- [Campground](./campground.md)
   The point-of-interest category for campgrounds.
-- [CarRental](pointofinterestcategory/carrental.md)
+- [CarRental](./carrental.md)
   The point-of-interest category for car rentals.
-- [EVCharger](pointofinterestcategory/evcharger.md)
+- [EVCharger](./evcharger.md)
   The point-of-interest category for EV chargers.
-- [FireStation](pointofinterestcategory/firestation.md)
+- [FireStation](./firestation.md)
   The point-of-interest category for fire stations.
-- [FitnessCenter](pointofinterestcategory/fitnesscenter.md)
+- [FitnessCenter](./fitnesscenter.md)
   The point-of-interest category for fitness centers.
-- [FoodMarket](pointofinterestcategory/foodmarket.md)
+- [FoodMarket](./foodmarket.md)
   The point-of-interest category for food markets, supermarkets, grocery stores, and convenience stores.
-- [GasStation](pointofinterestcategory/gasstation.md)
+- [GasStation](./gasstation.md)
   The point-of-interest category for gas stations.
 
 

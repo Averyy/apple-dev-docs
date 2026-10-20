@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an annotation view using data from the specified unarchiver.
 
@@ -19,17 +20,22 @@ Creates an annotation view using data from the specified unarchiver.
 init?(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 ## Parameters
 
 - `aDecoder`: The unarchiver to read data from.
 
 ## See Also
 
-- [init(annotation: (any MKAnnotation)?, reuseIdentifier: String?)](mkannotationview/init(annotation:reuseidentifier:).md)
+### Creating and preparing an annotation view
+- [init(annotation: (any MKAnnotation)?, reuseIdentifier: String?)](./init%28annotation,reuseidentifier%29.md)
   Creates and returns a new annotation view.
-- [func prepareForReuse()](mkannotationview/prepareforreuse.md)
+- [func prepareForReuse()](./prepareforreuse%28%29.md)
   Calls this method when removing the view from the reuse queue.
-- [func prepareForDisplay()](mkannotationview/preparefordisplay.md)
+- [func prepareForDisplay()](./preparefordisplay%28%29.md)
   Notifies the annotation view that the map view is about to display it.
 
 

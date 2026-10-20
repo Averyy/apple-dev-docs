@@ -1,7 +1,8 @@
 # AVAssetWritingPlanner.SegmentResult.cancelled
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Cancel the current segment while allowing future resumption.
 
@@ -33,9 +34,10 @@ This is equivalent to calling `cancel()` on the segment request.
 
 ## See Also
 
-- [AVAssetWritingPlanner.SegmentResult.success](avassetwritingplanner/segmentresult/success.md)
+### Completion Options
+- [AVAssetWritingPlanner.SegmentResult.success](./success.md)
   Finish the segment successfully without saving state.
-- [AVAssetWritingPlanner.SegmentResult.successWithState(_:)](avassetwritingplanner/segmentresult/successwithstate(_:).md)
+- [AVAssetWritingPlanner.SegmentResult.successWithState(_:)](./successwithstate%28_%29.md)
   Finish the segment successfully with custom client state.
 
 

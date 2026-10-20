@@ -1,7 +1,8 @@
 # SKAdTestError.Code.missingPostbacks
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The testing environment doesn’t have any postbacks.
 
@@ -16,41 +17,46 @@ The testing environment doesn’t have any postbacks.
 case missingPostbacks
 ```
 
+```c
+SKAdTestErrorCodeMissingPostbacks
+```
+
 #### Discussion
 
-Check that the `postbacks` array you provide when calling [`setPostbacks(_:)`](skadtestsession/setpostbacks(_:).md) isn’t empty.
+Check that the `postbacks` array you provide when calling [`setPostbacks(_:)`](../../skadtestsession/setpostbacks%28_%29.md) isn’t empty.
 
 ## See Also
 
-- [SKAdTestError.Code.excessivePostbacks](skadtesterror/code/excessivepostbacks.md)
+### Postback Errors
+- [SKAdTestError.Code.excessivePostbacks](./excessivepostbacks.md)
   Too many postbacks submitted to the test session.
-- [SKAdTestError.Code.invalidConversionValue](skadtesterror/code/invalidconversionvalue.md)
+- [SKAdTestError.Code.invalidConversionValue](./invalidconversionvalue.md)
   The conversion value isn’t valid, in the testing environment.
-- [SKAdTestError.Code.invalidPostbackURL](skadtesterror/code/invalidpostbackurl.md)
+- [SKAdTestError.Code.invalidPostbackURL](./invalidpostbackurl.md)
   The URL for the postback isn’t valid, in the testing environment.
-- [SKAdTestError.Code.invalidRunnerUpPostback](skadtesterror/code/invalidrunneruppostback.md)
+- [SKAdTestError.Code.invalidRunnerUpPostback](./invalidrunneruppostback.md)
   A non-winning postback is defined with a version prior to version 3, in the testing environment.
-- [SKAdTestError.Code.invalidWinningPostbackCount](skadtesterror/code/invalidwinningpostbackcount.md)
+- [SKAdTestError.Code.invalidWinningPostbackCount](./invalidwinningpostbackcount.md)
   The number of winning postbacks isn’t valid, in the testing environment.
-- [SKAdTestError.Code.malformedPostbacks](skadtesterror/code/malformedpostbacks.md)
+- [SKAdTestError.Code.malformedPostbacks](./malformedpostbacks.md)
   The postback in the testing environment is malformed.
-- [SKAdTestError.Code.misplacedWinnerPostback](skadtesterror/code/misplacedwinnerpostback.md)
+- [SKAdTestError.Code.misplacedWinnerPostback](./misplacedwinnerpostback.md)
   A winning postback wasn’t found in the first position, in the testing environment.
-- [SKAdTestError.Code.missingWinningPostback](skadtesterror/code/missingwinningpostback.md)
+- [SKAdTestError.Code.missingWinningPostback](./missingwinningpostback.md)
   The testing environment is missing a winning postback.
-- [SKAdTestError.Code.noPendingPostbacks](skadtesterror/code/nopendingpostbacks.md)
+- [SKAdTestError.Code.noPendingPostbacks](./nopendingpostbacks.md)
   The test session doesn’t have any pending postbacks to send.
-- [SKAdTestError.Code.unlinkedWinningPostbacks](skadtesterror/code/unlinkedwinningpostbacks.md)
+- [SKAdTestError.Code.unlinkedWinningPostbacks](./unlinkedwinningpostbacks.md)
   The postbacks aren’t correctly related to one another.
-- [SKAdTestError.Code.excessivePostbacks](skadtesterror/code/excessivepostbacks.md)
+- [SKAdTestError.Code.excessivePostbacks](./excessivepostbacks.md)
   Too many postbacks submitted to the test session.
-- [SKAdTestError.Code.invalidConversionValue](skadtesterror/code/invalidconversionvalue.md)
+- [SKAdTestError.Code.invalidConversionValue](./invalidconversionvalue.md)
   The conversion value isn’t valid, in the testing environment.
-- [SKAdTestError.Code.invalidPostbackURL](skadtesterror/code/invalidpostbackurl.md)
+- [SKAdTestError.Code.invalidPostbackURL](./invalidpostbackurl.md)
   The URL for the postback isn’t valid, in the testing environment.
-- [SKAdTestError.Code.invalidRunnerUpPostback](skadtesterror/code/invalidrunneruppostback.md)
+- [SKAdTestError.Code.invalidRunnerUpPostback](./invalidrunneruppostback.md)
   A non-winning postback is defined with a version prior to version 3, in the testing environment.
-- [SKAdTestError.Code.invalidWinningPostbackCount](skadtesterror/code/invalidwinningpostbackcount.md)
+- [SKAdTestError.Code.invalidWinningPostbackCount](./invalidwinningpostbackcount.md)
   The number of winning postbacks isn’t valid, in the testing environment.
 
 

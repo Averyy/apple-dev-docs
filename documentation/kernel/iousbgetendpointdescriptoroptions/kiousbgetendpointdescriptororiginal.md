@@ -1,7 +1,8 @@
 # kIOUSBGetEndpointDescriptorOriginal
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The original descriptor that the system uses to create the pipe.
 
@@ -10,13 +11,14 @@ The original descriptor that the system uses to create the pipe.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBGetEndpointDescriptorOriginal = 0
 ```
 
 ## See Also
 
-- [kIOUSBGetEndpointDescriptorCurrentPolicy](iousbgetendpointdescriptoroptions/kiousbgetendpointdescriptorcurrentpolicy.md)
+### Getting the Options
+- [kIOUSBGetEndpointDescriptorCurrentPolicy](./kiousbgetendpointdescriptorcurrentpolicy.md)
   The descriptor controlling the current endpoint policy.
 
 

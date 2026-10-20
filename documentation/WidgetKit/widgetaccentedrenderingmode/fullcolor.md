@@ -1,7 +1,8 @@
 # fullColor
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the `Image` should be rendered at full color with no other color modifications. Only applies to iOS.
 
@@ -21,7 +22,7 @@ static let fullColor: WidgetAccentedRenderingMode
 
 ## Mentions
 
-- [Optimizing your widget for accented rendering mode and Liquid Glass](optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
+- [Optimizing your widget for accented rendering mode and Liquid Glass](../optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
 
 
 ---

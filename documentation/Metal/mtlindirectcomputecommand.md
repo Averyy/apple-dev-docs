@@ -1,7 +1,8 @@
 # MTLIndirectComputeCommand
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A compute command in an indirect command buffer.
 
@@ -19,61 +20,66 @@ A compute command in an indirect command buffer.
 protocol MTLIndirectComputeCommand : NSObjectProtocol
 ```
 
+```objc
+@protocol MTLIndirectComputeCommand <NSObject>
+```
+
 #### Overview
 
-Don’t implement this protocol; you get instances of this type by asking an [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) for them.
+Don’t implement this protocol; you get instances of this type by asking an [`MTLIndirectCommandBuffer`](./mtlindirectcommandbuffer.md) for them.
 
 Use this instance to reset or encode a command. You need to reset a command before encoding a new command.
 
 ## Topics
 
 ### Setting a command’s arguments
-- [func setComputePipelineState(any MTLComputePipelineState)](mtlindirectcomputecommand/setcomputepipelinestate(_:).md)
+- [func setComputePipelineState(any MTLComputePipelineState)](./mtlindirectcomputecommand/setcomputepipelinestate%28_%29.md)
   Sets the command’s compute pipeline state.
-- [func setImageblockWidth(Int, height: Int)](mtlindirectcomputecommand/setimageblockwidth(_:height:).md)
+- [func setImageblockWidth(Int, height: Int)](./mtlindirectcomputecommand/setimageblockwidth%28_,height%29.md)
   Sets the size, in pixels, of the imageblock.
-- [func setKernelBuffer(any MTLBuffer, offset: Int, at: Int)](mtlindirectcomputecommand/setkernelbuffer(_:offset:at:).md)
+- [func setKernelBuffer(any MTLBuffer, offset: Int, at: Int)](./mtlindirectcomputecommand/setkernelbuffer%28_,offset,at%29.md)
   Sets a buffer for the compute function.
-- [func setThreadgroupMemoryLength(Int, index: Int)](mtlindirectcomputecommand/setthreadgroupmemorylength(_:index:).md)
+- [func setThreadgroupMemoryLength(Int, index: Int)](./mtlindirectcomputecommand/setthreadgroupmemorylength%28_,index%29.md)
   Sets the size of a block of threadgroup memory.
-- [func setThreadgroupMemoryLength(Int, at: Int)](mtlindirectcomputecommand/setthreadgroupmemorylength(_:at:).md)
+- [func setThreadgroupMemoryLength(Int, at: Int)](./mtlindirectcomputecommand/setthreadgroupmemorylength%28_,at%29.md)
   Sets the size of a block of threadgroup memory.
-- [func setStageInRegion(MTLRegion)](mtlindirectcomputecommand/setstageinregion(_:).md)
+- [func setStageInRegion(MTLRegion)](./mtlindirectcomputecommand/setstageinregion%28_%29.md)
   Sets the region of the stage-in attributes to apply to the compute kernel.
-- [func setStageIn(MTLRegion)](mtlindirectcomputecommand/setstagein(_:).md)
+- [func setStageIn(MTLRegion)](./mtlindirectcomputecommand/setstagein%28_%29.md)
   Sets the region of the stage-in attributes to apply to the compute kernel.
 ### Synchronizing command execution
-- [func setBarrier()](mtlindirectcomputecommand/setbarrier.md)
+- [func setBarrier()](./mtlindirectcomputecommand/setbarrier%28%29.md)
   Adds a barrier to ensure that commands executed prior to this command are complete before this command executes.
-- [func clearBarrier()](mtlindirectcomputecommand/clearbarrier.md)
+- [func clearBarrier()](./mtlindirectcomputecommand/clearbarrier%28%29.md)
   Removes any barrier set on the command.
 ### Encoding a compute command
-- [func concurrentDispatchThreadgroups(MTLSize, threadsPerThreadgroup: MTLSize)](mtlindirectcomputecommand/concurrentdispatchthreadgroups(_:threadsperthreadgroup:).md)
+- [func concurrentDispatchThreadgroups(MTLSize, threadsPerThreadgroup: MTLSize)](./mtlindirectcomputecommand/concurrentdispatchthreadgroups%28_,threadsperthreadgroup%29.md)
   Encodes a compute command using a grid aligned to threadgroup boundaries.
-- [func concurrentDispatchThreads(MTLSize, threadsPerThreadgroup: MTLSize)](mtlindirectcomputecommand/concurrentdispatchthreads(_:threadsperthreadgroup:).md)
+- [func concurrentDispatchThreads(MTLSize, threadsPerThreadgroup: MTLSize)](./mtlindirectcomputecommand/concurrentdispatchthreads%28_,threadsperthreadgroup%29.md)
   Encodes a compute command using an arbitrarily sized grid.
 ### Resetting a command
-- [func reset()](mtlindirectcomputecommand/reset.md)
+- [func reset()](./mtlindirectcomputecommand/reset%28%29.md)
   Resets the command to its default state.
 ### Instance Methods
-- [func setKernelBuffer(any MTLBuffer, offset: Int, attributeStride: Int, at: Int)](mtlindirectcomputecommand/setkernelbuffer(_:offset:attributestride:at:).md)
+- [func setKernelBuffer(any MTLBuffer, offset: Int, attributeStride: Int, at: Int)](./mtlindirectcomputecommand/setkernelbuffer%28_,offset,attributestride,at%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct MTLRegion](mtlregion.md)
+### Indirect compute commands
+- [struct MTLRegion](./mtlregion.md)
   The bounds for a subset of an instance’s elements.
-- [struct MTLSize](mtlsize.md)
+- [struct MTLSize](./mtlsize.md)
   A type that represents one, two, or three dimensions of a type instance, such as an array or texture.
-- [struct MTLOrigin](mtlorigin.md)
+- [struct MTLOrigin](./mtlorigin.md)
   The coordinates for the front upper-left corner of a region.
-- [struct MTLStageInRegionIndirectArguments](mtlstageinregionindirectarguments.md)
+- [struct MTLStageInRegionIndirectArguments](./mtlstageinregionindirectarguments.md)
   The data layout required for the arguments needed to specify the stage-in region.
-- [struct MTLDispatchThreadgroupsIndirectArguments](mtldispatchthreadgroupsindirectarguments.md)
+- [struct MTLDispatchThreadgroupsIndirectArguments](./mtldispatchthreadgroupsindirectarguments.md)
   The data layout required for arguments needed to specify the size of threadgroups.
 
 

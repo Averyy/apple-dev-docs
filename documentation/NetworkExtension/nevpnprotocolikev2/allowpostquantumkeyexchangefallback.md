@@ -1,7 +1,8 @@
 # allowPostQuantumKeyExchangeFallback
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether servers that don’t support post-quantum key exchanges can skip them.
 
@@ -19,15 +20,20 @@ A Boolean value that indicates whether servers that don’t support post-quantum
 var allowPostQuantumKeyExchangeFallback: Bool { get set }
 ```
 
+```objc
+@property BOOL allowPostQuantumKeyExchangeFallback;
+```
+
 #### Discussion
 
-This property has no effect if you don’t configure any post-quantum key exchange methods in the [`NEVPNIKEv2SecurityAssociationParameters`](nevpnikev2securityassociationparameters.md). The property’s default value is `false`.
+This property has no effect if you don’t configure any post-quantum key exchange methods in the [`NEVPNIKEv2SecurityAssociationParameters`](../nevpnikev2securityassociationparameters.md). The property’s default value is `false`.
 
 ## See Also
 
-- [var ppkConfiguration: NEVPNIKEv2PPKConfiguration?](nevpnprotocolikev2/ppkconfiguration.md)
+### Supporting quantum-secure cryptography
+- [var ppkConfiguration: NEVPNIKEv2PPKConfiguration?](./ppkconfiguration.md)
   The configuration for a post-quantum pre-shared key (PPK).
-- [class NEVPNIKEv2PPKConfiguration](nevpnikev2ppkconfiguration.md)
+- [class NEVPNIKEv2PPKConfiguration](../nevpnikev2ppkconfiguration.md)
   A class that manages parameters of a post-quantum pre-shared key (PPK).
 
 

@@ -1,7 +1,8 @@
 # init(mutating:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mutable typed pointer referencing the same memory as the given immutable pointer.
 

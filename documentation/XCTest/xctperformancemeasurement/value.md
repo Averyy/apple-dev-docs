@@ -1,7 +1,8 @@
 # value
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The measured value, including the unit of measure.
 
@@ -19,15 +20,20 @@ The measured value, including the unit of measure.
 var value: Measurement<Unit> { get }
 ```
 
+```objc
+@property (copy, readonly) NSMeasurement * value;
+```
+
 ## See Also
 
-- [var doubleValue: Double](xctperformancemeasurement/doublevalue.md)
+### Accessing Measured Values
+- [var doubleValue: Double](./doublevalue.md)
   The measured value.
-- [var unitSymbol: String](xctperformancemeasurement/unitsymbol.md)
+- [var unitSymbol: String](./unitsymbol.md)
   A string that represents the unit of measurement.
-- [var polarity: XCTPerformanceMeasurement.Polarity](xctperformancemeasurement/polarity-swift.property.md)
+- [var polarity: XCTPerformanceMeasurement.Polarity](./polarity-swift.property.md)
   A constant that states whether larger or smaller measurements, relative to a set baseline, indicate better performance.
-- [XCTPerformanceMeasurement.Polarity](xctperformancemeasurement/polarity-swift.enum.md)
+- [XCTPerformanceMeasurement.Polarity](./polarity-swift.enum.md)
   Constants that state whether larger or smaller measurements, relative to a set baseline, indicate better performance.
 
 

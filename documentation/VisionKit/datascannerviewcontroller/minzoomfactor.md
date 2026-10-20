@@ -1,7 +1,8 @@
 # minZoomFactor
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum zoom factor that the camera supports.
 
@@ -19,9 +20,10 @@ var minZoomFactor: Double { get }
 
 ## See Also
 
-- [var zoomFactor: Double](datascannerviewcontroller/zoomfactor.md)
+### Zooming
+- [var zoomFactor: Double](./zoomfactor.md)
   The zoom factor for the live video in the camera.
-- [var maxZoomFactor: Double](datascannerviewcontroller/maxzoomfactor.md)
+- [var maxZoomFactor: Double](./maxzoomfactor.md)
   The maximum zoom factor that the camera supports.
 
 

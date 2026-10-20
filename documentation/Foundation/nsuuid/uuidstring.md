@@ -1,7 +1,8 @@
 # uuidString
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UUID as a string.
 
@@ -20,15 +21,20 @@ The UUID as a string.
 var uuidString: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * UUIDString;
+```
+
 #### Discussion
 
 A string containing a formatted UUID for example `E621E1F8-C36C-495A-93FC-0C247A3E6E5F`.
 
-Use this property when you need a string representation of the `NSUUID` object—for example, to compare with a [`CFUUID`](https://developer.apple.com/documentation/corefoundation/cfuuid) object.
+Use this property when you need a string representation of the `NSUUID` object—for example, to compare with a [`CFUUID`](../../CoreFoundation/cfuuid.md) object.
 
 ## See Also
 
-- [func getBytes(UnsafeMutablePointer<UInt8>)](nsuuid/getbytes(_:).md)
+### Get UUID Values
+- [func getBytes(UnsafeMutablePointer<UInt8>)](./getbytes%28_%29.md)
   Returns the UUID as bytes.
 
 

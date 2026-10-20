@@ -1,14 +1,15 @@
 # mach_port_is_connection_for_service
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t mach_port_is_connection_for_service(ipc_space_t task, mach_port_name_t connection_port, mach_port_name_t service_port, uint64_t *filter_policy_id);
 ```
 

@@ -1,7 +1,8 @@
 # WebViewImmersiveEnvironmentView
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A SwiftUI view that renders a specific website-provided immersive environment.
 
@@ -22,23 +23,24 @@ Place this view in your app’s Immersive Space hierarchy. Initialize it with th
 ## Topics
 
 ### Initializers
-- [init(WebPage.ImmersiveEnvironment)](webviewimmersiveenvironmentview/init(_:)-1ydxs.md)
-  Creates an immersive environment view from a [`WebPage.ImmersiveEnvironment`](webpage/immersiveenvironment.md).
-- [init(WKImmersiveEnvironment)](webviewimmersiveenvironmentview/init(_:)-2y2u7.md)
+- [init(WebPage.ImmersiveEnvironment)](./webviewimmersiveenvironmentview/init%28_%29-1ydxs.md)
+  Creates an immersive environment view from a [`WebPage.ImmersiveEnvironment`](./webpage/immersiveenvironment.md).
+- [init(WKImmersiveEnvironment)](./webviewimmersiveenvironmentview/init%28_%29-2y2u7.md)
   Creates an immersive environment view from a `WKImmersiveEnvironment`.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [WebPage.ImmersiveEnvironment](webpage/immersiveenvironment.md)
+### Immersive environments
+- [WebPage.ImmersiveEnvironment](./webpage/immersiveenvironment.md)
   An object representing a website-provided immersive environment that is ready for presentation.
-- [var allowsImmersiveEnvironments: Bool](webpage/configuration/allowsimmersiveenvironments.md)
+- [var allowsImmersiveEnvironments: Bool](./webpage/configuration/allowsimmersiveenvironments.md)
   Indicates whether website immersive environments are allowed.
 
 

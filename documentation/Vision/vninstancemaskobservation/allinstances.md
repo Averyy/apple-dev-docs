@@ -1,7 +1,8 @@
 # allInstances
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection that contains all instances, excluding the background.
 
@@ -19,9 +20,14 @@ The collection that contains all instances, excluding the background.
 var allInstances: IndexSet { get }
 ```
 
+```objc
+@property (copy, readonly) NSIndexSet * allInstances;
+```
+
 ## See Also
 
-- [var instanceMask: CVPixelBuffer](vninstancemaskobservation/instancemask.md)
+### Accessing Instances
+- [var instanceMask: CVPixelBuffer](./instancemask.md)
   The resulting mask that represents all instances.
 
 

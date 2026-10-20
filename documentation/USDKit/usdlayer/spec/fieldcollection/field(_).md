@@ -1,7 +1,8 @@
 # field(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value of `name`, or `nil` if the field is unauthored.
 

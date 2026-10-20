@@ -1,7 +1,8 @@
 # stopVideoCapture()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops video capture.
 
@@ -16,15 +17,20 @@ Stops video capture.
 func stopVideoCapture()
 ```
 
+```objc
+- (void) stopVideoCapture;
+```
+
 #### Discussion
 
-After you call this method to stop video capture, the system calls the image picker delegate’s [`imagePickerController(_:didFinishPickingMediaWithInfo:)`](uiimagepickercontrollerdelegate/imagepickercontroller(_:didfinishpickingmediawithinfo:).md) method.
+After you call this method to stop video capture, the system calls the image picker delegate’s [`imagePickerController(_:didFinishPickingMediaWithInfo:)`](../uiimagepickercontrollerdelegate/imagepickercontroller%28_,didfinishpickingmediawithinfo%29.md) method.
 
 ## See Also
 
-- [func takePicture()](uiimagepickercontroller/takepicture.md)
+### Capturing still images or movies
+- [func takePicture()](./takepicture%28%29.md)
   Captures a still image using the camera.
-- [func startVideoCapture() -> Bool](uiimagepickercontroller/startvideocapture.md)
+- [func startVideoCapture() -> Bool](./startvideocapture%28%29.md)
   Starts video capture using the camera specified by the camera device property.
 
 

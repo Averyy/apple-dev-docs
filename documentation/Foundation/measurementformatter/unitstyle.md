@@ -1,7 +1,8 @@
 # unitStyle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unit style.
 
@@ -20,19 +21,24 @@ The unit style.
 var unitStyle: Formatter.UnitStyle { get set }
 ```
 
+```objc
+@property NSFormattingUnitStyle unitStyle;
+```
+
 #### Discussion
 
-The possible values are [`Formatter.UnitStyle.short`](formatter/unitstyle/short.md), [`Formatter.UnitStyle.medium`](formatter/unitstyle/medium.md), and [`Formatter.UnitStyle.long`](formatter/unitstyle/long.md). The default value is [`Formatter.UnitStyle.medium`](formatter/unitstyle/medium.md).
+The possible values are [`Formatter.UnitStyle.short`](../formatter/unitstyle/short.md), [`Formatter.UnitStyle.medium`](../formatter/unitstyle/medium.md), and [`Formatter.UnitStyle.long`](../formatter/unitstyle/long.md). The default value is [`Formatter.UnitStyle.medium`](../formatter/unitstyle/medium.md).
 
 ## See Also
 
-- [var unitOptions: MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.property.md)
+### Specifying the Format
+- [var unitOptions: MeasurementFormatter.UnitOptions](./unitoptions-swift.property.md)
   The options for how the unit is formatted.
-- [MeasurementFormatter.UnitOptions](measurementformatter/unitoptions-swift.struct.md)
+- [MeasurementFormatter.UnitOptions](./unitoptions-swift.struct.md)
   Measurement formatter options.
-- [var locale: Locale!](measurementformatter/locale.md)
+- [var locale: Locale!](./locale.md)
   The locale of the formatter.
-- [var numberFormatter: NumberFormatter!](measurementformatter/numberformatter.md)
+- [var numberFormatter: NumberFormatter!](./numberformatter.md)
   The number formatter used to format the quantity of a measurement.
 
 

@@ -1,25 +1,26 @@
 # init
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles the basic initialization of the service.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
 ## Mentions
 
-- [Creating a Driver Using the DriverKit SDK](creating-a-driver-using-the-driverkit-sdk.md)
+- [Creating a Driver Using the DriverKit SDK](../creating-a-driver-using-the-driverkit-sdk.md)
 
 #### Return Value
 
@@ -27,17 +28,18 @@ virtual bool init();
 
 #### Discussion
 
-The system calls this method shortly after it instantiates your custom [`IOService`](ioservice.md) subclass, and before it calls the [`Start`](ioservice/start.md) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
+The system calls this method shortly after it instantiates your custom [`IOService`](../ioservice.md) subclass, and before it calls the [`Start`](./start.md) method of your service. Limit the work you do in this method to simple tasks that must occur before your service starts. For example, use this method to allocate memory for your `ivars` structure.
 
 Always call `super` early in your implementation of this method.
 
 ## See Also
 
-- [Start](ioservice/start.md)
+### Running the Service
+- [Start](./start.md)
   Starts the current service and associates it with the specified provider.
-- [Stop](ioservice/stop.md)
+- [Stop](./stop.md)
   Stops the service associated with the specified provider.
-- [free](ioservice/free.md)
+- [free](./free.md)
   Performs any final cleanup for the service.
 
 

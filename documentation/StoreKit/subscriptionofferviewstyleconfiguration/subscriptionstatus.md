@@ -1,7 +1,8 @@
 # subscriptionStatus
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,12 +17,13 @@ let subscriptionStatus: [Product.SubscriptionInfo.Status]
 
 ## See Also
 
-- [let activeOffer: Product.SubscriptionOffer?](subscriptionofferviewstyleconfiguration/activeoffer.md)
-- [let icon: SubscriptionOfferViewStyleConfiguration.Icon](subscriptionofferviewstyleconfiguration/icon-swift.property.md)
-- [let state: Product.CollectionTaskState](subscriptionofferviewstyleconfiguration/state.md)
-- [var subscriptionGroupDisplayName: String](subscriptionofferviewstyleconfiguration/subscriptiongroupdisplayname.md)
-- [var subscriptions: [Product]?](subscriptionofferviewstyleconfiguration/subscriptions.md)
-- [var visibleSubscription: Product?](subscriptionofferviewstyleconfiguration/visiblesubscription.md)
+### Instance Properties
+- [let activeOffer: Product.SubscriptionOffer?](./activeoffer.md)
+- [let icon: SubscriptionOfferViewStyleConfiguration.Icon](./icon-swift.property.md)
+- [let state: Product.CollectionTaskState](./state.md)
+- [var subscriptionGroupDisplayName: String](./subscriptiongroupdisplayname.md)
+- [var subscriptions: [Product]?](./subscriptions.md)
+- [var visibleSubscription: Product?](./visiblesubscription.md)
 
 
 ---

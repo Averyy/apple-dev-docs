@@ -1,7 +1,8 @@
 # init(type:languageTag:characteristics:displayName:identifier:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a single language option.
 
@@ -18,6 +19,10 @@ Creates a single language option.
 
 ```swift
 init(type languageOptionType: MPNowPlayingInfoLanguageOptionType, languageTag: String, characteristics languageOptionCharacteristics: [String]?, displayName: String, identifier: String)
+```
+
+```objc
+- (instancetype) initWithType:(MPNowPlayingInfoLanguageOptionType) languageOptionType languageTag:(NSString *) languageTag characteristics:(NSArray<NSString *> *) languageOptionCharacteristics displayName:(NSString *) displayName identifier:(NSString *) identifier;
 ```
 
 #### Return Value

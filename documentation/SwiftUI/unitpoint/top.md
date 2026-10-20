@@ -1,7 +1,8 @@
 # top
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A point that’s centered horizontally on the top edge of a view.
 
@@ -22,13 +23,14 @@ static let top: UnitPoint
 
 #### Discussion
 
-This point occupies the position where the horizontal and vertical alignment guides intersect for [`top`](alignment/top.md) alignment.
+This point occupies the position where the horizontal and vertical alignment guides intersect for [`top`](../alignment/top.md) alignment.
 
 ## See Also
 
-- [static let topLeading: UnitPoint](unitpoint/topleading.md)
+### Getting top points
+- [static let topLeading: UnitPoint](./topleading.md)
   A point that’s in the top, leading corner of a view.
-- [static let topTrailing: UnitPoint](unitpoint/toptrailing.md)
+- [static let topTrailing: UnitPoint](./toptrailing.md)
   A point that’s in the top, trailing corner of a view.
 
 

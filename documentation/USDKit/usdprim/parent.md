@@ -1,7 +1,8 @@
 # parent
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The immediate parent prim of this prim.
 
@@ -21,19 +22,20 @@ var parent: USDPrim? { get }
 
 ## See Also
 
-- [var path: USDLayer.Path](usdprim/path.md)
+### Identifying the prim
+- [var path: USDLayer.Path](./path.md)
   The complete scene path to this prim, relative to its stage.
-- [var primPath: USDLayer.Path](usdprim/primpath.md)
+- [var primPath: USDLayer.Path](./primpath.md)
   The complete scene path to this prim, relative to its stage.
-- [var isValid: Bool](usdprim/isvalid.md)
+- [var isValid: Bool](./isvalid.md)
   A Boolean value indicating whether this prim is valid.
-- [var specifier: USDPrim.Specifier](usdprim/specifier-swift.property.md)
+- [var specifier: USDPrim.Specifier](./specifier-swift.property.md)
   The specifier that describes how this prim is defined, such as `def`, `over`, or `class`.
-- [var stage: USDStage](usdprim/stage.md)
+- [var stage: USDStage](./stage.md)
   The stage that owns this prim.
-- [var description: String](usdprim/description.md)
+- [var description: String](./description.md)
   A summary description of this prim.
-- [USDPrim.Specifier](usdprim/specifier-swift.enum.md)
+- [USDPrim.Specifier](./specifier-swift.enum.md)
   How a prim definition behaves in composition.
 
 

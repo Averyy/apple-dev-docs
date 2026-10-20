@@ -1,7 +1,8 @@
 # maps
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that automatically adds and removes maps as the framework creates and destroys them.
 
@@ -10,13 +11,13 @@ An array that automatically adds and removes maps as the framework creates and d
 
 ## Declaration
 
-```swift
+```
 get maps(): Map[];
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 #### Discussion
 
@@ -24,7 +25,8 @@ You must load the appropriate library before accessing the array, otherwise, the
 
 ## See Also
 
-- [class Map](map.md)
+### Maps
+- [class Map](../map.md)
   An embeddable interactive map that you add to a webpage.
 
 

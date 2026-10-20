@@ -1,7 +1,8 @@
 # isDeviceCertified(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates whether the device supports the requested performance tier.
 
@@ -19,25 +20,30 @@ Indicates whether the device supports the requested performance tier.
 func isDeviceCertified(for performanceTier: NSDeviceCertification) -> Bool
 ```
 
+```objc
+- (BOOL) isDeviceCertifiedFor:(NSDeviceCertification) performanceTier;
+```
+
 #### Return Value
 
 `True` if the device meets the requirements for the given performance tier.
 
 ## Parameters
 
-- `performanceTier`: The desired system performance tier. [`iPhonePerformanceGaming`](https://developer.apple.com/documentation/metal/nsdevicecertification/iphoneperformancegaming) is the only performance tier.
+- `performanceTier`: The desired system performance tier. [`iPhonePerformanceGaming`](../../Metal/nsdevicecertification/iphoneperformancegaming.md) is the only performance tier.
 
 ## See Also
 
-- [var processorCount: Int](processinfo/processorcount.md)
+### Getting computer information
+- [var processorCount: Int](./processorcount.md)
   The number of processing cores available on the computer.
-- [var activeProcessorCount: Int](processinfo/activeprocessorcount.md)
+- [var activeProcessorCount: Int](./activeprocessorcount.md)
   The number of active processing cores available on the computer.
-- [var physicalMemory: UInt64](processinfo/physicalmemory.md)
+- [var physicalMemory: UInt64](./physicalmemory.md)
   The amount of physical memory on the computer in bytes.
-- [func hasPerformanceProfile(NSProcessPerformanceProfile) -> Bool](processinfo/hasperformanceprofile(_:).md)
+- [func hasPerformanceProfile(NSProcessPerformanceProfile) -> Bool](./hasperformanceprofile%28_%29.md)
   Indicates whether an app is running under a known performance profile.
-- [var systemUptime: TimeInterval](processinfo/systemuptime.md)
+- [var systemUptime: TimeInterval](./systemuptime.md)
   The amount of time the system has been awake since the last time it was restarted.
 
 

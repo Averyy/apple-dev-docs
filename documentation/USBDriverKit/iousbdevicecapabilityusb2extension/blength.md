@@ -1,22 +1,24 @@
 # bLength
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 uint8_t bLength;
 ```
 
 ## See Also
 
-- [bDescriptorType](iousbdevicecapabilityusb2extension/bdescriptortype.md)
-- [bDevCapabilityType](iousbdevicecapabilityusb2extension/bdevcapabilitytype.md)
-- [bmAttributes](iousbdevicecapabilityusb2extension/bmattributes.md)
+### Accessing the Descriptor Properties
+- [bDescriptorType](./bdescriptortype.md)
+- [bDevCapabilityType](./bdevcapabilitytype.md)
+- [bmAttributes](./bmattributes.md)
 
 
 ---

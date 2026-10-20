@@ -1,7 +1,8 @@
 # elementKindInterItemGapIndicator
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The element kind string assigned to the attributes object when it represents an inter-item gap.
 
@@ -14,11 +15,16 @@ The element kind string assigned to the attributes object when it represents an 
 class let elementKindInterItemGapIndicator: String
 ```
 
+```c
+extern NSCollectionViewSupplementaryElementKind const NSCollectionElementKindInterItemGapIndicator;
+```
+
 ## See Also
 
-- [class let elementKindSectionFooter: String](nscollectionview/elementkindsectionfooter.md)
+### Type Properties
+- [class let elementKindSectionFooter: String](./elementkindsectionfooter.md)
   A supplementary view that acts as a footer for a given section.
-- [class let elementKindSectionHeader: String](nscollectionview/elementkindsectionheader.md)
+- [class let elementKindSectionHeader: String](./elementkindsectionheader.md)
   A supplementary view that acts as a header for a given section.
 
 

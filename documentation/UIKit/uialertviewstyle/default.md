@@ -1,15 +1,16 @@
 # UIAlertViewStyle.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A standard alert.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@ A standard alert.
 case `default`
 ```
 
+```c
+UIAlertViewStyleDefault
+```
+
 ## See Also
 
-- [UIAlertViewStyle.secureTextInput](uialertviewstyle/securetextinput.md)
+### Constants
+- [UIAlertViewStyle.secureTextInput](./securetextinput.md)
   An alert that allows the user to enter text. The text field is obscured.
-- [UIAlertViewStyle.plainTextInput](uialertviewstyle/plaintextinput.md)
+- [UIAlertViewStyle.plainTextInput](./plaintextinput.md)
   An alert that allows the user to enter text.
-- [UIAlertViewStyle.loginAndPasswordInput](uialertviewstyle/loginandpasswordinput.md)
+- [UIAlertViewStyle.loginAndPasswordInput](./loginandpasswordinput.md)
   An alert that allows the user to enter a login identifier and password.
 
 

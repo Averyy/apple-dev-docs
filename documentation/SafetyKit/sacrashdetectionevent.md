@@ -1,7 +1,8 @@
 # SACrashDetectionEvent
 
 **Framework**: SafetyKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Describes the information about a vehicular crash.
 
@@ -18,46 +19,51 @@ Describes the information about a vehicular crash.
 class SACrashDetectionEvent
 ```
 
+```objc
+@interface SACrashDetectionEvent : NSObject
+```
+
 #### Overview
 
-When a vehicular crash occurs, SafetyKit calls your delegate’s [`crashDetectionManager(_:didDetect:)`](sacrashdetectiondelegate/crashdetectionmanager(_:diddetect:).md) method with an [`SACrashDetectionEvent`](sacrashdetectionevent.md) object. Inspect this object to determine information about the crash, including the date and time, location, and if the system attempted to contact emergency services.
+When a vehicular crash occurs, SafetyKit calls your delegate’s [`crashDetectionManager(_:didDetect:)`](./sacrashdetectiondelegate/crashdetectionmanager%28_,diddetect%29.md) method with an [`SACrashDetectionEvent`](./sacrashdetectionevent.md) object. Inspect this object to determine information about the crash, including the date and time, location, and if the system attempted to contact emergency services.
 
 ## Topics
 
 ### Determining the event type
-- [SACrashDetectionEvent.Response](sacrashdetectionevent/response-swift.enum.md)
+- [SACrashDetectionEvent.Response](./sacrashdetectionevent/response-swift.enum.md)
   An enumeration that defines possible emergency responses to a Crash Detection event.
-- [var date: Date](sacrashdetectionevent/date.md)
+- [var date: Date](./sacrashdetectionevent/date.md)
   The date and time the crash occurred.
-- [var location: CLLocation?](sacrashdetectionevent/location.md)
+- [var location: CLLocation?](./sacrashdetectionevent/location.md)
   The longitude and latitude where the crash detection occurred.
-- [var response: SACrashDetectionEvent.Response](sacrashdetectionevent/response-swift.property.md)
+- [var response: SACrashDetectionEvent.Response](./sacrashdetectionevent/response-swift.property.md)
   An indication of whether the system attempted to call an Emergency SOS provider.
 ### Initializers
-- [init?(coder: NSCoder)](sacrashdetectionevent/init(coder:).md)
+- [init?(coder: NSCoder)](./sacrashdetectionevent/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SACrashDetectionManager](sacrashdetectionmanager.md)
+### Detecting a crash
+- [class SACrashDetectionManager](./sacrashdetectionmanager.md)
   Provides registration and management of Crash Detection events.
-- [enum SAAuthorizationStatus](saauthorizationstatus.md)
+- [enum SAAuthorizationStatus](./saauthorizationstatus.md)
   An enumeration that represents the current Crash Detection event authorization state.
-- [protocol SACrashDetectionDelegate](sacrashdetectiondelegate.md)
+- [protocol SACrashDetectionDelegate](./sacrashdetectiondelegate.md)
   The protocol that an object adopts to receive Crash Detection events and changes to the authorization status.
 
 

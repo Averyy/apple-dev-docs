@@ -1,7 +1,8 @@
 # vn_default_error
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Default vnode operation to fill unsupported slots in vnode operation vectors.
 
@@ -10,11 +11,11 @@ Default vnode operation to fill unsupported slots in vnode operation vectors.
 
 ## Declaration
 
-```swift
+```c
 int vn_default_error(void);
 ```
 
-#### Return_value
+#### Return Value
 
 ENOTSUP
 

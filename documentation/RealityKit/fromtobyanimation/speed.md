@@ -1,7 +1,8 @@
 # speed
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A factor that increases or decreases the animation’s rate of playback.
 
@@ -11,7 +12,7 @@ A factor that increases or decreases the animation’s rate of playback.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,23 +24,24 @@ var speed: Float { get set }
 
 The default value is `1.0`, which doesn’t alter the animation’s duration. A value of `2.0` indicates that the duration is half the normal rate. A value of `0.5` indicates that the duration is twice the normal rate. Negative values play the animation in reverse.
 
-This property doesn’t affect the animation’s [`delay`](fromtobyanimation/delay.md).
+This property doesn’t affect the animation’s [`delay`](./delay.md).
 
 ## See Also
 
-- [var delay: TimeInterval](fromtobyanimation/delay.md)
+### Timing the animation
+- [var delay: TimeInterval](./delay.md)
   An amount of time that elapses before the animation plays.
-- [var duration: TimeInterval](fromtobyanimation/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The total playback time of the animation.
-- [var offset: TimeInterval](fromtobyanimation/offset.md)
+- [var offset: TimeInterval](./offset.md)
   The time, in seconds, at which the animation begins within the duration.
-- [var timing: AnimationTimingFunction](fromtobyanimation/timing.md)
+- [var timing: AnimationTimingFunction](./timing.md)
   An option that determines the animation’s pace over time.
-- [var trimDuration: TimeInterval?](fromtobyanimation/trimduration.md)
+- [var trimDuration: TimeInterval?](./trimduration.md)
   An optional duration that overrides the calculated duration.
-- [var trimStart: TimeInterval?](fromtobyanimation/trimstart.md)
+- [var trimStart: TimeInterval?](./trimstart.md)
   The time, in seconds, at which the animation plays.
-- [var trimEnd: TimeInterval?](fromtobyanimation/trimend.md)
+- [var trimEnd: TimeInterval?](./trimend.md)
   The time, in seconds, at which the animation stops.
 
 

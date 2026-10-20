@@ -1,7 +1,8 @@
 # dsohandle()
 
 **Framework**: Swift  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Produces the dynamic shared object (DSO) handle in use where the macro appears.
 

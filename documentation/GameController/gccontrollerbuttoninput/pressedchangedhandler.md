@@ -1,7 +1,8 @@
 # pressedChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that the element calls when the user presses or releases the button.
 
@@ -19,19 +20,24 @@ The block that the element calls when the user presses or releases the button.
 var pressedChangedHandler: GCControllerButtonValueChangedHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) GCControllerButtonValueChangedHandler pressedChangedHandler;
+```
+
 #### Discussion
 
-Set this handler when you only want to know when the user presses or releases the button — that is, when the [`isPressed`](gccontrollerbuttoninput/ispressed.md) property changes.
+Set this handler when you only want to know when the user presses or releases the button — that is, when the [`isPressed`](./ispressed.md) property changes.
 
 ## See Also
 
-- [var touchedChangedHandler: GCControllerButtonTouchedChangedHandler?](gccontrollerbuttoninput/touchedchangedhandler.md)
+### Getting change information
+- [var touchedChangedHandler: GCControllerButtonTouchedChangedHandler?](./touchedchangedhandler.md)
   The block that the element calls when the user touches the button.
-- [typealias GCControllerButtonTouchedChangedHandler](gccontrollerbuttontouchedchangedhandler.md)
+- [typealias GCControllerButtonTouchedChangedHandler](../gccontrollerbuttontouchedchangedhandler.md)
   The signature for the block that executes when the user touches the button if the controller supports that feature.
-- [var valueChangedHandler: GCControllerButtonValueChangedHandler?](gccontrollerbuttoninput/valuechangedhandler.md)
+- [var valueChangedHandler: GCControllerButtonValueChangedHandler?](./valuechangedhandler.md)
   The block that the element calls when the user changes the level of pressure on the button.
-- [typealias GCControllerButtonValueChangedHandler](gccontrollerbuttonvaluechangedhandler.md)
+- [typealias GCControllerButtonValueChangedHandler](../gccontrollerbuttonvaluechangedhandler.md)
   The signature for the block that executes when a button’s state changes.
 
 

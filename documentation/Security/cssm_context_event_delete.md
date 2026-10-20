@@ -1,7 +1,8 @@
 # CSSM_CONTEXT_EVENT_DELETE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_CONTEXT_EVENT_DELETE: Int { get }
+```
+
+```c
+CSSM_CONTEXT_EVENT_DELETE
 ```
 
 

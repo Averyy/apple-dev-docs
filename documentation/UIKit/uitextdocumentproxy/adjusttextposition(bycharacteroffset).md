@@ -2,16 +2,17 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Moves the insertion point forward or backward in the current text input object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,13 @@ Moves the insertion point forward or backward in the current text input object.
 func adjustTextPosition(byCharacterOffset offset: Int)
 ```
 
+```objc
+- (void) adjustTextPositionByCharacterOffset:(NSInteger) offset;
+```
+
 ## Mentions
 
-- [Handling text interactions in custom keyboards](handling-text-interactions-in-custom-keyboards.md)
+- [Handling text interactions in custom keyboards](../handling-text-interactions-in-custom-keyboards.md)
 
 ## Parameters
 

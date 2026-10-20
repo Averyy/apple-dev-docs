@@ -1,7 +1,8 @@
 # HKVerifiableClinicalRecordCredentialType
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of record returned by a verifiable clinical record query.
 
@@ -19,39 +20,44 @@ The type of record returned by a verifiable clinical record query.
 struct HKVerifiableClinicalRecordCredentialType
 ```
 
+```c
+typedef NSString * HKVerifiableClinicalRecordCredentialType;
+```
+
 ## Topics
 
 ### Identifying Record Types
-- [static let covid19: HKVerifiableClinicalRecordCredentialType](hkverifiableclinicalrecordcredentialtype/covid19.md)
+- [static let covid19: HKVerifiableClinicalRecordCredentialType](./hkverifiableclinicalrecordcredentialtype/covid19.md)
   A value that represents records about COVID-19.
-- [static let immunization: HKVerifiableClinicalRecordCredentialType](hkverifiableclinicalrecordcredentialtype/immunization.md)
+- [static let immunization: HKVerifiableClinicalRecordCredentialType](./hkverifiableclinicalrecordcredentialtype/immunization.md)
   A value that represents immunizations.
-- [static let laboratory: HKVerifiableClinicalRecordCredentialType](hkverifiableclinicalrecordcredentialtype/laboratory.md)
+- [static let laboratory: HKVerifiableClinicalRecordCredentialType](./hkverifiableclinicalrecordcredentialtype/laboratory.md)
   A value that represents laboratory results.
-- [static let recovery: HKVerifiableClinicalRecordCredentialType](hkverifiableclinicalrecordcredentialtype/recovery.md)
+- [static let recovery: HKVerifiableClinicalRecordCredentialType](./hkverifiableclinicalrecordcredentialtype/recovery.md)
   A value that represents recovery information.
 ### Creating Record Types
-- [init(rawValue: String)](hkverifiableclinicalrecordcredentialtype/init(rawvalue:).md)
+- [init(rawValue: String)](./hkverifiableclinicalrecordcredentialtype/init%28rawvalue%29.md)
   Creates a record type based on the provided string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKVerifiableClinicalRecordQueryDescriptor](hkverifiableclinicalrecordquerydescriptor.md)
+### Clinical record queries
+- [struct HKVerifiableClinicalRecordQueryDescriptor](./hkverifiableclinicalrecordquerydescriptor.md)
   A query interface that provides one-time access to a SMART Health Card or EU Digital COVID Certificate using Swift concurrency.
-- [class HKVerifiableClinicalRecordQuery](hkverifiableclinicalrecordquery.md)
+- [class HKVerifiableClinicalRecordQuery](./hkverifiableclinicalrecordquery.md)
   A query for one-time access to a SMART Health Card or EU Digital COVID Certificate.
-- [struct HKVerifiableClinicalRecordSourceType](hkverifiableclinicalrecordsourcetype.md)
+- [struct HKVerifiableClinicalRecordSourceType](./hkverifiableclinicalrecordsourcetype.md)
   The source type for the verifiable clinical record.
-- [class HKDocumentQuery](hkdocumentquery.md)
+- [class HKDocumentQuery](./hkdocumentquery.md)
   A query that returns a snapshot of all matching documents currently saved in the HealthKit store.
 
 

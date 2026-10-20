@@ -1,7 +1,8 @@
 # maximumAvatarImageSize
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum image size for the avatar image that a @c CPNavigationAlert can display.
 
@@ -14,6 +15,10 @@ The maximum image size for the avatar image that a @c CPNavigationAlert can disp
 
 ```swift
 class var maximumAvatarImageSize: CGSize { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) CGSize maximumAvatarImageSize;
 ```
 
 

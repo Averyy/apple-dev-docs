@@ -5,13 +5,13 @@
 ## Topics
 
 ### Constants
-- [var kColorSyncAlphaInfoMask: Int](../colorsync/kcolorsyncalphainfomask.md)
-- [var kColorSyncByteOrder16Big: Int](../colorsync/kcolorsyncbyteorder16big.md)
-- [var kColorSyncByteOrder16Little: Int](../colorsync/kcolorsyncbyteorder16little.md)
-- [var kColorSyncByteOrder32Big: Int](../colorsync/kcolorsyncbyteorder32big.md)
-- [var kColorSyncByteOrder32Little: Int](../colorsync/kcolorsyncbyteorder32little.md)
-- [var kColorSyncByteOrderDefault: Int](../colorsync/kcolorsyncbyteorderdefault.md)
-- [var kColorSyncByteOrderMask: Int](../colorsync/kcolorsyncbyteordermask.md)
+- [var kColorSyncAlphaInfoMask: Int](../../ColorSync/kcolorsyncalphainfomask.md)
+- [var kColorSyncByteOrder16Big: Int](../../ColorSync/kcolorsyncbyteorder16big.md)
+- [var kColorSyncByteOrder16Little: Int](../../ColorSync/kcolorsyncbyteorder16little.md)
+- [var kColorSyncByteOrder32Big: Int](../../ColorSync/kcolorsyncbyteorder32big.md)
+- [var kColorSyncByteOrder32Little: Int](../../ColorSync/kcolorsyncbyteorder32little.md)
+- [var kColorSyncByteOrderDefault: Int](../../ColorSync/kcolorsyncbyteorderdefault.md)
+- [var kColorSyncByteOrderMask: Int](../../ColorSync/kcolorsyncbyteordermask.md)
 
 
 ---

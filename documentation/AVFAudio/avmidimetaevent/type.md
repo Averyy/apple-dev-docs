@@ -1,7 +1,8 @@
 # type
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of meta event.
 
@@ -19,9 +20,14 @@ The type of meta event.
 var type: AVMIDIMetaEvent.EventType { get }
 ```
 
+```objc
+@property (readonly) AVMIDIMetaEventType type;
+```
+
 ## See Also
 
-- [AVMIDIMetaEvent.EventType](avmidimetaevent/eventtype.md)
+### Getting the meta event type
+- [AVMIDIMetaEvent.EventType](./eventtype.md)
   Constants that represent the types of meta events.
 
 

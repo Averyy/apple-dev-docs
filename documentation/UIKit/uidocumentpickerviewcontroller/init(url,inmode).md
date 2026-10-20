@@ -1,13 +1,14 @@
 # init(URL:inMode:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 8.0+ - Deprecated in 14.0
+- iPadOS 8.0+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -17,8 +18,9 @@ init(URL url: URL, inMode mode: UIDocumentPickerMode)
 
 ## See Also
 
-- [init(URLs: [URL], inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(urls:inmode:).md)
-- [init(documentTypes: [String], inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(documenttypes:inmode:).md)
+### Deprecated initializers
+- [init(URLs: [URL], inMode: UIDocumentPickerMode)](./init%28urls,inmode%29.md)
+- [init(documentTypes: [String], inMode: UIDocumentPickerMode)](./init%28documenttypes,inmode%29.md)
 
 
 ---

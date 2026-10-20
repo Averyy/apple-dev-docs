@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string that identifies the label for this content.
 
@@ -20,21 +21,26 @@ A localized string that identifies the label for this content.
 var label: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * label;
+```
+
 #### Discussion
 
 Make the label succinct to work well with assistive technology. For example, `Orientation` is an appropriate name for photo information.
 
 ## See Also
 
-- [var attributedLabel: NSAttributedString](axcustomcontent/attributedlabel.md)
+### Defining custom content
+- [var attributedLabel: NSAttributedString](./attributedlabel.md)
   A localized attributed string that identifies the label for this content.
-- [var value: String](axcustomcontent/value.md)
+- [var value: String](./value.md)
   A localized string that provides a value for the label.
-- [var attributedValue: NSAttributedString](axcustomcontent/attributedvalue.md)
+- [var attributedValue: NSAttributedString](./attributedvalue.md)
   A localized attributed string that provides a value for the label.
-- [var importance: AXCustomContent.Importance](axcustomcontent/importance-swift.property.md)
+- [var importance: AXCustomContent.Importance](./importance-swift.property.md)
   An object that determines when to output custom accessibility content.
-- [AXCustomContent.Importance](axcustomcontent/importance-swift.enum.md)
+- [AXCustomContent.Importance](./importance-swift.enum.md)
   Objects that control the timing of content output.
 
 

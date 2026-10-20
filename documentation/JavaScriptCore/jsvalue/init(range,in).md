@@ -1,7 +1,8 @@
 # init(range:in:)
 
 **Framework**: JavaScriptCore  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init!(range: NSRange, in context: JSContext!)
+```
+
+```objc
++ (JSValue *) valueWithRange:(NSRange) range inContext:(JSContext *) context;
 ```
 
 #### Return Value

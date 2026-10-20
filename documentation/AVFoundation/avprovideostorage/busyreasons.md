@@ -1,7 +1,8 @@
 # busyReasons
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether Pro Video Storage is busy and the associated reasons.
 
@@ -18,13 +19,18 @@ Whether Pro Video Storage is busy and the associated reasons.
 var busyReasons: Set<AVProVideoStorage.BusyReason> { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSSet<NSString *> * busyReasons;
+```
+
 #### Discussion
 
 A non-empty set indicates that Pro Video Storage is currently being modified. While this is non-empty, starting a video capture will fail with an error. This property is key-value observable.
 
 ## See Also
 
-- [AVProVideoStorage.BusyReason](avprovideostorage/busyreason.md)
+### Determining whether storage is busy
+- [AVProVideoStorage.BusyReason](./busyreason.md)
   A reason that Pro Video Storage may be busy.
 
 

@@ -1,7 +1,8 @@
 # monitorKinesiasExpirationDate()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the expiration date for the most recent monitoring period.
 
@@ -14,13 +15,17 @@ Returns the expiration date for the most recent monitoring period.
 func monitorKinesiasExpirationDate() -> Date?
 ```
 
+```objc
+- (NSDate *) monitorKinesiasExpirationDate;
+```
+
 #### Return Value
 
 The current expiration date, or `nil` if you have not yet begun monitoring.
 
 #### Discussion
 
-This date is set when you call the [`monitorKinesias(forDuration:)`](cmmovementdisordermanager/monitorkinesias(forduration:).md) method. You can extend the date by calling [`monitorKinesias(forDuration:)`](cmmovementdisordermanager/monitorkinesias(forduration:).md) again; however, you can’t shorten the monitoring duration.
+This date is set when you call the [`monitorKinesias(forDuration:)`](./monitorkinesias%28forduration%29.md) method. You can extend the date by calling [`monitorKinesias(forDuration:)`](./monitorkinesias%28forduration%29.md) again; however, you can’t shorten the monitoring duration.
 
 You can use the expiration date to determine whether you are currently monitoring the user.
 
@@ -39,7 +44,8 @@ if experiationDate > Date() {
 
 ## See Also
 
-- [func monitorKinesias(forDuration: TimeInterval)](cmmovementdisordermanager/monitorkinesias(forduration:).md)
+### Recording Movement Disorders
+- [func monitorKinesias(forDuration: TimeInterval)](./monitorkinesias%28forduration%29.md)
   Calculate and store tremor and dyskinetic symptom results for the duration of the specified time interval.
 
 

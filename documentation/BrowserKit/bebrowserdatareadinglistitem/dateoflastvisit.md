@@ -1,7 +1,8 @@
 # dateOfLastVisit
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date of the person’s last visit.
 
@@ -15,11 +16,16 @@ The date of the person’s last visit.
 var dateOfLastVisit: Date? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSDate * dateOfLastVisit;
+```
+
 ## See Also
 
-- [var title: String](bebrowserdatareadinglistitem/title.md)
+### Accessing item properties
+- [var title: String](./title.md)
   A localized title for a reading list item.
-- [var url: URL](bebrowserdatareadinglistitem/url.md)
+- [var url: URL](./url.md)
   A URL for the reading list item.
 
 

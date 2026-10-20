@@ -1,9 +1,10 @@
 # supportsRemoteScenes
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-Indicates if the current device supports presenting a [`RemoteImmersiveSpace`](remoteimmersivespace.md) on a remote device.
+Indicates if the current device supports presenting a [`RemoteImmersiveSpace`](../remoteimmersivespace.md) on a remote device.
 
 **Availability**:
 - iOS 26.0+

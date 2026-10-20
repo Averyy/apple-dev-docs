@@ -1,7 +1,8 @@
 # UITabBarController.Sidebar.Placement.tabBar
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Display the tab bar.
 
@@ -15,6 +16,10 @@ Display the tab bar.
 
 ```swift
 case tabBar
+```
+
+```c
+UITabBarControllerSidebarPlacementTabBar
 ```
 
 

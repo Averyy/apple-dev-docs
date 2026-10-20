@@ -1,7 +1,8 @@
 # validationAccuracy
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key associated with a validation accuracy metric.
 
@@ -22,25 +23,26 @@ static let validationAccuracy: MetricsKey
 
 ## See Also
 
-- [static let source: MetricsKey](metricskey/source.md)
+### Getting the properties
+- [static let source: MetricsKey](./source.md)
   A key associated with a temporal stream source (e.g. a file name).
-- [static let trainingAccuracy: MetricsKey](metricskey/trainingaccuracy.md)
+- [static let trainingAccuracy: MetricsKey](./trainingaccuracy.md)
   A key associated with a training accuracy metric.
-- [static let trainingError: MetricsKey](metricskey/trainingerror.md)
+- [static let trainingError: MetricsKey](./trainingerror.md)
   A key associated with a training error metric.
-- [static let trainingLoss: MetricsKey](metricskey/trainingloss.md)
+- [static let trainingLoss: MetricsKey](./trainingloss.md)
   A key associated with a training loss metric.
-- [static let trainingMaximumError: MetricsKey](metricskey/trainingmaximumerror.md)
+- [static let trainingMaximumError: MetricsKey](./trainingmaximumerror.md)
   A key associated with a training maximum error metric.
-- [static let trainingMeanAveragePrecision: MetricsKey](metricskey/trainingmeanaverageprecision.md)
+- [static let trainingMeanAveragePrecision: MetricsKey](./trainingmeanaverageprecision.md)
   A key associated with a training mean average precision metric.
-- [static let validationError: MetricsKey](metricskey/validationerror.md)
+- [static let validationError: MetricsKey](./validationerror.md)
   A key associated with a validation error metric.
-- [static let validationLoss: MetricsKey](metricskey/validationloss.md)
+- [static let validationLoss: MetricsKey](./validationloss.md)
   A key associated with a validation loss metric.
-- [static let validationMaximumError: MetricsKey](metricskey/validationmaximumerror.md)
+- [static let validationMaximumError: MetricsKey](./validationmaximumerror.md)
   A key associated with a validation maximum error metric.
-- [static let validationMeanAveragePrecision: MetricsKey](metricskey/validationmeanaverageprecision.md)
+- [static let validationMeanAveragePrecision: MetricsKey](./validationmeanaverageprecision.md)
   A key associated with a validation mean average precision metric.
 
 

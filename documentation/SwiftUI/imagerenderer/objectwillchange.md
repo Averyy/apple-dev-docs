@@ -1,7 +1,8 @@
 # objectWillChange
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A publisher that informs subscribers of changes to the image.
 
@@ -22,11 +23,12 @@ final let objectWillChange: PassthroughSubject<Void, Never>
 
 #### Discussion
 
-The renderer’s [`ObjectWillChangePublisher`](https://developer.apple.com/documentation/combine/observableobject/objectwillchangepublisher) publishes `Void` elements. Subscribers should interpret any event as indicating that the contents of the image may have changed.
+The renderer’s [`ObjectWillChangePublisher`](../../Combine/observableobject/objectwillchangepublisher.md) publishes `Void` elements. Subscribers should interpret any event as indicating that the contents of the image may have changed.
 
 ## See Also
 
-- [var isObservationEnabled: Bool](imagerenderer/isobservationenabled.md)
+### Producing a stream of images
+- [var isObservationEnabled: Bool](./isobservationenabled.md)
   If observers of this observed object should be notified when the produced image changes.
 
 

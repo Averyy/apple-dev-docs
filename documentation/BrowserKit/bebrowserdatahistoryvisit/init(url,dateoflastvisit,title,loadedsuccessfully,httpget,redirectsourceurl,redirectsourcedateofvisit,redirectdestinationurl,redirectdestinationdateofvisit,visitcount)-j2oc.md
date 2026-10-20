@@ -1,7 +1,8 @@
 # init(url:dateOfLastVisit:title:loadedSuccessfully:httpGet:redirectSourceURL:redirectSourceDateOfVisit:redirectDestinationURL:redirectDestinationDateOfVisit:visitCount:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a record of a page visit that includes metadata and redirect information.
 
@@ -13,6 +14,10 @@ Creates a record of a page visit that includes metadata and redirect information
 
 ```swift
 init(url: URL, dateOfLastVisit: Date, title: String?, loadedSuccessfully: Bool, httpGet: Bool, redirectSourceURL: URL?, redirectSourceDateOfVisit: Date?, redirectDestinationURL: URL?, redirectDestinationDateOfVisit: Date?, visitCount: Int)
+```
+
+```objc
+- (instancetype) initWithURL:(NSURL *) url dateOfLastVisit:(NSDate *) dateOfLastVisit title:(NSString *) title loadedSuccessfully:(BOOL) loadedSuccessfully httpGet:(BOOL) httpGet redirectSourceURL:(NSURL *) redirectSourceURL redirectSourceDateOfVisit:(NSDate *) redirectSourceDateOfVisit redirectDestinationURL:(NSURL *) redirectDestinationURL redirectDestinationDateOfVisit:(NSDate *) redirectDestinationDateOfVisit visitCount:(NSUInteger) visitCount;
 ```
 
 ## Parameters

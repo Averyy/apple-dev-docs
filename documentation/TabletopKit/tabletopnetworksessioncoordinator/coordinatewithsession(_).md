@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -15,7 +16,8 @@ func coordinateWithSession(_ session: Self.NetworkSession)
 
 ## See Also
 
-- [TabletopNetworkSessionCoordinator.NetworkSession](tabletopnetworksessioncoordinator/networksession.md)
+### Starting network sessions
+- [TabletopNetworkSessionCoordinator.NetworkSession](./networksession.md)
 
 
 ---

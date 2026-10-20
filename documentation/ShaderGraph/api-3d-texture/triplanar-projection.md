@@ -1,7 +1,8 @@
 # Triplanar Projection
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 Samples data from three images and projects each along its respective coordinate axis and blends them by geometric normal.
 
@@ -15,7 +16,103 @@ Samples data from three images and projects each along its respective coordinate
 
 #### Parameter Types
 
-#### Parameter Description
+**Triplanar Projection (float)**:
+
+| Input | Type |
+| --- | --- |
+| `File X` | AssetPath |
+| `File Y` | AssetPath |
+| `File Z` | AssetPath |
+| `Default` | Float |
+| `Position` | Vector3f |
+| `Normal` | Vector3f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Triplanar Projection (vector2f)**:
+
+| Input | Type |
+| --- | --- |
+| `File X` | AssetPath |
+| `File Y` | AssetPath |
+| `File Z` | AssetPath |
+| `Default` | Vector2f |
+| `Position` | Vector3f |
+| `Normal` | Vector3f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Triplanar Projection (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `File X` | AssetPath |
+| `File Y` | AssetPath |
+| `File Z` | AssetPath |
+| `Default` | Color3 |
+| `Position` | Vector3f |
+| `Normal` | Vector3f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Triplanar Projection (vector3f)**:
+
+| Input | Type |
+| --- | --- |
+| `File X` | AssetPath |
+| `File Y` | AssetPath |
+| `File Z` | AssetPath |
+| `Default` | Vector3f |
+| `Position` | Vector3f |
+| `Normal` | Vector3f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+**Triplanar Projection (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `File X` | AssetPath |
+| `File Y` | AssetPath |
+| `File Z` | AssetPath |
+| `Default` | Color4 |
+| `Position` | Vector3f |
+| `Normal` | Vector3f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Triplanar Projection (vector4f)**:
+
+| Input | Type |
+| --- | --- |
+| `File X` | AssetPath |
+| `File Y` | AssetPath |
+| `File Z` | AssetPath |
+| `Default` | Vector4f |
+| `Position` | Vector3f |
+| `Normal` | Vector3f |
+| `Filter Type` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+#### Parameter description
 
 - **`File X`**: The image file to project from the positive X direction toward the origin.
 - **`File Y`**: The image file to project from the positive Y direction toward the origin.
@@ -29,11 +126,11 @@ Samples data from three images and projects each along its respective coordinate
 
 Use the `Triplanar Projection` node to blend three different images together based on the vector normal of each point on the object. Areas of the object that are parallel with a coordinate axis cause the node to fully show the respective image. Areas of the object between the coordinate axis cause the node to render a mix of the images based on how close the normal is to each of the axis. The closer the normal is to the normal of a coordinate axis the strong the respective image is in the blend. Below is an example of a simple node graph that uses the `Triplanar Projection` node to blend the same grass image in the X and Y directions, and a tile texture in the Z direction:
 
-![None](/images/ShaderGraph-Docs/TriplanarGraph.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/TriplanarGraph.png)
 
 Below, the resulting texture applies to a sphere:
 
-![None](/images/ShaderGraph-Docs/TriplanarMaterial.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/TriplanarMaterial.png)
 
 
 ---

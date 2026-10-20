@@ -1,7 +1,8 @@
 # largeBlob
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Large blob extension.
 

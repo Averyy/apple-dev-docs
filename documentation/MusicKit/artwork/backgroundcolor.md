@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average background color of the image.
 

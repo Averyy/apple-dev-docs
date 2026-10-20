@@ -1,7 +1,8 @@
 # cameraZoomRange
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 Values that set the minimum and maximum distances of the camera from the map center.
 
@@ -10,13 +11,13 @@ Values that set the minimum and maximum distances of the camera from the map cen
 
 ## Declaration
 
-```swift
+```
 cameraZoomRange?: CameraZoomRangeData;
 ```
 
 #### Discussion
 
-Set this property with a [`CameraZoomRange`](camerazoomrange.md) instance, which is an object containing [`minCameraDistance`](camerazoomrange/mincameradistance.md) and [`maxCameraDistance`](camerazoomrange/maxcameradistance.md) properties.
+Set this property with a [`CameraZoomRange`](../camerazoomrange.md) instance, which is an object containing [`minCameraDistance`](../camerazoomrange/mincameradistance.md) and [`maxCameraDistance`](../camerazoomrange/maxcameradistance.md) properties.
 
 
 ---

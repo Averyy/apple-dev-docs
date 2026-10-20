@@ -1,7 +1,8 @@
 # help
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The standard Help menu.
 
@@ -18,17 +19,22 @@ The standard Help menu.
 static let help: UIMenu.Identifier
 ```
 
+```c
+extern UIMenuIdentifier const UIMenuHelp;
+```
+
 ## See Also
 
-- [static let application: UIMenu.Identifier](uimenu/identifier-swift.struct/application.md)
+### Top-level menus
+- [static let application: UIMenu.Identifier](./application.md)
   The standard app menu.
-- [static let file: UIMenu.Identifier](uimenu/identifier-swift.struct/file.md)
+- [static let file: UIMenu.Identifier](./file.md)
   The standard File menu.
-- [static let edit: UIMenu.Identifier](uimenu/identifier-swift.struct/edit.md)
+- [static let edit: UIMenu.Identifier](./edit.md)
   The standard Edit menu.
-- [static let view: UIMenu.Identifier](uimenu/identifier-swift.struct/view.md)
+- [static let view: UIMenu.Identifier](./view.md)
   The standard View menu.
-- [static let window: UIMenu.Identifier](uimenu/identifier-swift.struct/window.md)
+- [static let window: UIMenu.Identifier](./window.md)
   The standard Window menu.
 
 

@@ -1,7 +1,8 @@
 # PerformDeviceConfigurationChange
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The host calls this method to allow the device to perform a configuration change it previously requested by calling RequestDeviceConfigurationChange(), or a change to an IO state that requires a configuration change.
 
@@ -10,7 +11,7 @@ The host calls this method to allow the device to perform a configuration change
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t PerformDeviceConfigurationChange(uint64_t in_change_action, OSObject *in_change_info);
 ```
 
@@ -29,7 +30,8 @@ Subclass and override this method to handle any custom configuration change requ
 
 ## See Also
 
-- [AbortDeviceConfigurationChange](iouservideodevice/abortdeviceconfigurationchange.md)
+### Supporting device configuration changes
+- [AbortDeviceConfigurationChange](./abortdeviceconfigurationchange.md)
   The host calls this method to tell the driver not to perform a configuration change it requested by calling RequestDeviceConfigurationChange(). Subclass and override this method to handle any aborted custom configuration change requests. Then call the superclass implementation to update state.
 
 

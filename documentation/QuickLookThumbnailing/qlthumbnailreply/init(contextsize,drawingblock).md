@@ -1,7 +1,8 @@
 # init(contextSize:drawingBlock:)
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+

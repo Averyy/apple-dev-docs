@@ -1,9 +1,10 @@
 # RealityRenderer.EntityCollection
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-A collection of entities in a [`RealityRenderer`](realityrenderer.md).
+A collection of entities in a [`RealityRenderer`](../realityrenderer.md).
 
 **Availability**:
 - iOS 18.0+
@@ -22,28 +23,29 @@ struct EntityCollection
 
 #### Overview
 
-This collection is used by [`entities`](realityrenderer/entities.md).
+This collection is used by [`entities`](./entities.md).
 
 ## Relationships
 
 ### Conforms To
-- [Collection](../swift/collection.md)
-- [EntityCollection](entitycollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [Collection](../../Swift/collection.md)
+- [EntityCollection](../entitycollection.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [class RealityRenderer](realityrenderer.md)
+### Metal workflow rendering
+- [class RealityRenderer](../realityrenderer.md)
   A renderer that displays a RealityKit scene in an existing Metal workflow.
-- [RealityRenderer.CameraSettings](realityrenderer/camerasettings-swift.struct.md)
+- [RealityRenderer.CameraSettings](./camerasettings-swift.struct.md)
   Settings for rendering with a camera.
-- [RealityRenderer.CameraOutput](realityrenderer/cameraoutput.md)
+- [RealityRenderer.CameraOutput](./cameraoutput.md)
   Output produced by rendering with a camera.
-- [RealityRenderer.ImageBasedLight](realityrenderer/imagebasedlight.md)
+- [RealityRenderer.ImageBasedLight](./imagebasedlight.md)
   Describe the lighting properties for the scene.
-- [RealityRenderer.MetalEventAction](realityrenderer/metaleventaction.md)
+- [RealityRenderer.MetalEventAction](./metaleventaction.md)
   The structure describing an event and value to be signaled or waited for.
 
 

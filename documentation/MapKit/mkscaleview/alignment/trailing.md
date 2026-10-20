@@ -1,7 +1,8 @@
 # MKScaleView.Alignment.trailing
 
 **Framework**: MapKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Scale measurements begin at the trailing edge of the view.
 
@@ -18,15 +19,20 @@ Scale measurements begin at the trailing edge of the view.
 case trailing
 ```
 
+```c
+MKScaleViewAlignmentTrailing
+```
+
 #### Discussion
 
 This value causes the scale view to place the value `0` at the trailing edge of the view. The scale places the distance representing the current scale of the map at the leading edge of the view.
 
 ## See Also
 
-- [MKScaleView.Alignment.leading](mkscaleview/alignment/leading.md)
+### Alignment options
+- [MKScaleView.Alignment.leading](./leading.md)
   Scale measurements begin at the leading edge of the view.
-- [MKScaleView.Alignment.center](mkscaleview/alignment/center.md)
+- [MKScaleView.Alignment.center](./center.md)
   Scale measurements appear horizontally centered within the view.
 
 

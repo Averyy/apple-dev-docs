@@ -1,7 +1,8 @@
 # CKDatabase.DatabaseChange.Deletion.Reason.deleted
 
 **Framework**: CloudKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Your app deleted the record zone.
 
@@ -11,7 +12,7 @@ Your app deleted the record zone.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

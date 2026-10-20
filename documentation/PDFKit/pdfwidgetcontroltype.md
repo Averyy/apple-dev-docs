@@ -1,7 +1,8 @@
 # PDFWidgetControlType
 
 **Framework**: PDFKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of annotation buttons.
 
@@ -10,7 +11,7 @@ The types of annotation buttons.
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,45 +20,50 @@ The types of annotation buttons.
 enum PDFWidgetControlType
 ```
 
+```c
+enum PDFWidgetControlType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [PDFWidgetControlType.unknownControl](pdfwidgetcontroltype/unknowncontrol.md)
+- [PDFWidgetControlType.unknownControl](./pdfwidgetcontroltype/unknowncontrol.md)
   Unknown control type.
-- [PDFWidgetControlType.pushButtonControl](pdfwidgetcontroltype/pushbuttoncontrol.md)
+- [PDFWidgetControlType.pushButtonControl](./pdfwidgetcontroltype/pushbuttoncontrol.md)
   Push button control.
-- [PDFWidgetControlType.radioButtonControl](pdfwidgetcontroltype/radiobuttoncontrol.md)
+- [PDFWidgetControlType.radioButtonControl](./pdfwidgetcontroltype/radiobuttoncontrol.md)
   Radio button control.
-- [PDFWidgetControlType.checkBoxControl](pdfwidgetcontroltype/checkboxcontrol.md)
+- [PDFWidgetControlType.checkBoxControl](./pdfwidgetcontroltype/checkboxcontrol.md)
   Check box control.
 ### Initializers
-- [init?(rawValue: Int)](pdfwidgetcontroltype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pdfwidgetcontroltype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var widgetFieldType: PDFAnnotationWidgetSubtype](pdfannotation/widgetfieldtype.md)
+### Configuring Widget Annotations
+- [var widgetFieldType: PDFAnnotationWidgetSubtype](./pdfannotation/widgetfieldtype.md)
   The type of widget annotation, such as button, choice, or text.
-- [var widgetStringValue: String?](pdfannotation/widgetstringvalue.md)
+- [var widgetStringValue: String?](./pdfannotation/widgetstringvalue.md)
   The string value of the widget annotation.
-- [var widgetDefaultStringValue: String?](pdfannotation/widgetdefaultstringvalue.md)
+- [var widgetDefaultStringValue: String?](./pdfannotation/widgetdefaultstringvalue.md)
   The string value that the widget reverts to when performing a reset form action.
-- [var fieldName: String?](pdfannotation/fieldname.md)
+- [var fieldName: String?](./pdfannotation/fieldname.md)
   The widget identifier for form annotation actions and behaviors.
-- [var backgroundColor: UIColor?](pdfannotation/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./pdfannotation/backgroundcolor.md)
   The color of the widget’s background.
-- [var isReadOnly: Bool](pdfannotation/isreadonly.md)
+- [var isReadOnly: Bool](./pdfannotation/isreadonly.md)
   A Boolean value that determines whether the widget is editable.
-- [class PDFAppearanceCharacteristics](pdfappearancecharacteristics.md)
+- [class PDFAppearanceCharacteristics](./pdfappearancecharacteristics.md)
   An object that represents appearance characteristics of a widget annotation.
 
 

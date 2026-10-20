@@ -1,7 +1,8 @@
 # ExtensibleSSOPlatformSSO_UserCreation_TokenToUserMappingObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attribute mapping to use when creating users, or for authorization.
 
@@ -10,7 +11,7 @@ The attribute mapping to use when creating users, or for authorization.
 
 ## Declaration
 
-```swift
+```
 object ExtensibleSSOPlatformSSO_UserCreation_TokenToUserMappingObject
 ```
 

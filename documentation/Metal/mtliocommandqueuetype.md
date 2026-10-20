@@ -1,7 +1,8 @@
 # MTLIOCommandQueueType
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Designates the queue type for a new input/output command queue.
 
@@ -19,37 +20,42 @@ Designates the queue type for a new input/output command queue.
 enum MTLIOCommandQueueType
 ```
 
+```c
+enum MTLIOCommandQueueType : NSInteger;
+```
+
 ## Topics
 
 ### I/O command queue types
-- [MTLIOCommandQueueType.concurrent](mtliocommandqueuetype/concurrent.md)
+- [MTLIOCommandQueueType.concurrent](./mtliocommandqueuetype/concurrent.md)
   Sets a new input/output command queue’s type to a queue that runs commands concurrently.
-- [MTLIOCommandQueueType.serial](mtliocommandqueuetype/serial.md)
+- [MTLIOCommandQueueType.serial](./mtliocommandqueuetype/serial.md)
   Sets a new input/output command queue’s type to a queue that runs commands serially.
 ### Initializers
-- [init?(rawValue: Int)](mtliocommandqueuetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtliocommandqueuetype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLIOCommandQueue](mtliocommandqueue.md)
+### I/O command queues
+- [protocol MTLIOCommandQueue](./mtliocommandqueue.md)
   A command queue that schedules input/output commands for reading files in the file system, and writing to GPU resources and memory.
-- [class MTLIOCommandQueueDescriptor](mtliocommandqueuedescriptor.md)
+- [class MTLIOCommandQueueDescriptor](./mtliocommandqueuedescriptor.md)
   A configuration template you use to create a new input/output command queue.
-- [enum MTLIOPriority](mtliopriority.md)
+- [enum MTLIOPriority](./mtliopriority.md)
   Designates the priority for a new input/output command queue.
-- [protocol MTLIOScratchBufferAllocator](mtlioscratchbufferallocator.md)
+- [protocol MTLIOScratchBufferAllocator](./mtlioscratchbufferallocator.md)
   A protocol your app implements to provide scratch memory to an input/output command queue.
-- [protocol MTLIOScratchBuffer](mtlioscratchbuffer.md)
+- [protocol MTLIOScratchBuffer](./mtlioscratchbuffer.md)
   A protocol your app implements that wraps a Metal buffer instance to serve as scratch memory for an input/output command queue.
 
 

@@ -1,7 +1,8 @@
 # AppIntentDefinition
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A definition you use to dynamically create intent instances for testing.
 
@@ -22,11 +23,11 @@ struct AppIntentDefinition
 
 ## Mentions
 
-- [Testing your App Intents code](testing-your-app-intents-code.md)
+- [Testing your App Intents code](./testing-your-app-intents-code.md)
 
 #### Overview
 
-To create an app intent instance for testing, instantiate its corresponding intent definition for your app intent using [`IntentDefinitions`](intentdefinitions.md), then create an intent instance using [`makeIntent`](appintentdefinition/makeintent.md) as shown in the following example:
+To create an app intent instance for testing, instantiate its corresponding intent definition for your app intent using [`IntentDefinitions`](./intentdefinitions.md), then create an intent instance using [`makeIntent`](./appintentdefinition/makeintent.md) as shown in the following example:
 
 ```swift
 let definitions = IntentDefinitions(
@@ -44,26 +45,27 @@ let intent = orderIntent.makeIntent(
 ## Topics
 
 ### Creating an app intent instance
-- [var makeIntent: IntentValuePropertiesCallable<AnyAppIntent>](appintentdefinition/makeintent.md)
+- [var makeIntent: IntentValuePropertiesCallable<AnyAppIntent>](./appintentdefinition/makeintent.md)
   Creates a populated instance of this intent.
 ### Identifying the intent
-- [let identifier: String](appintentdefinition/identifier.md)
+- [let identifier: String](./appintentdefinition/identifier.md)
   The intent’s identifier.
-- [let bundleIdentifier: String](appintentdefinition/bundleidentifier.md)
+- [let bundleIdentifier: String](./appintentdefinition/bundleidentifier.md)
   The bundle identifier of the app that includes this intent.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var intents: IntentDefinitions.DefinitionCollection<AppIntentDefinition>](intentdefinitions/intents.md)
+### Accessing app intents
+- [var intents: IntentDefinitions.DefinitionCollection<AppIntentDefinition>](./intentdefinitions/intents.md)
   The definitions for the target app’s app intents.
 
 

@@ -1,7 +1,8 @@
 # allCases
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 All application categories supported at the current OS version.
 

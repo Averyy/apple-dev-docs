@@ -1,7 +1,8 @@
 # NWParametersBuilder
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An opaque class that is responsible for creating and configuring NWParameters based on the parameterized protocol stack.
 
@@ -23,19 +24,19 @@ struct NWParametersBuilder<Top, each P> where Top : NetworkProtocolOptions, repe
 ## Topics
 
 ### Initializers
-- [init(() -> (Top, repeat each P))](nwparametersbuilder/init(_:).md)
-- [init(auto: () -> (Top, repeat each P))](nwparametersbuilder/init(auto:).md)
+- [init(() -> (Top, repeat each P))](./nwparametersbuilder/init%28_%29.md)
+- [init(auto: () -> (Top, repeat each P))](./nwparametersbuilder/init%28auto%29.md)
 ### Instance Methods
-- [func wifiAware((inout WAParameters) -> Void) -> NWParametersBuilder<Top, repeat each P>](nwparametersbuilder/wifiaware(_:).md)
+- [func wifiAware((inout WAParameters) -> Void) -> NWParametersBuilder<Top, repeat each P>](./nwparametersbuilder/wifiaware%28_%29.md)
   Configure Wi-Fi Aware properties on an `NetworkConnection`
 ### Type Methods
-- [static func parameters(() -> (Top, repeat each P)) -> NWParametersBuilder<Top, repeat each P>](nwparametersbuilder/parameters(_:).md)
-- [static func parameters(initialParameters: NWParameters, () -> (Top, repeat each P)) -> NWParametersBuilder<Top, repeat each P>](nwparametersbuilder/parameters(initialparameters:_:).md)
+- [static func parameters(() -> (Top, repeat each P)) -> NWParametersBuilder<Top, repeat each P>](./nwparametersbuilder/parameters%28_%29.md)
+- [static func parameters(initialParameters: NWParameters, () -> (Top, repeat each P)) -> NWParametersBuilder<Top, repeat each P>](./nwparametersbuilder/parameters%28initialparameters,_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [NWParametersProvider](nwparametersprovider.md)
+- [NWParametersProvider](./nwparametersprovider.md)
 
 
 ---

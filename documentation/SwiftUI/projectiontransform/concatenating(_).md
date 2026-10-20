@@ -1,7 +1,8 @@
 # concatenating(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,8 +21,9 @@ func concatenating(_ rhs: ProjectionTransform) -> ProjectionTransform
 
 ## See Also
 
-- [func invert() -> Bool](projectiontransform/invert.md)
-- [func inverted() -> ProjectionTransform](projectiontransform/inverted.md)
+### Manipulating transforms
+- [func invert() -> Bool](./invert%28%29.md)
+- [func inverted() -> ProjectionTransform](./inverted%28%29.md)
 
 
 ---

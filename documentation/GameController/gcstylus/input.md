@@ -1,7 +1,8 @@
 # input
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gets the input profile for the stylus.
 
@@ -14,9 +15,13 @@ Gets the input profile for the stylus.
 var input: (any GCDevicePhysicalInput)? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) id<GCDevicePhysicalInput> input;
+```
+
 ## Mentions
 
-- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+- [Discovering and tracking spatial game controllers and styli](../discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
 #### Discussion
 
@@ -24,7 +29,8 @@ The input profile is represented as an object conforming to the `GCDevicePhysica
 
 ## See Also
 
-- [var haptics: GCDeviceHaptics?](gcstylus/haptics.md)
+### Getting input values and haptics
+- [var haptics: GCDeviceHaptics?](./haptics.md)
   Gets the haptics profile for the stylus, if supported.
 
 

@@ -1,7 +1,8 @@
 # commissioningProvisionedNetworkCredentials(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notification that network credentials have been successfully communicated to the commissionee and it’s going to try to join that network.  Note that for commissionees that are already on-network this notification will not happen.
 
@@ -18,6 +19,10 @@ Notification that network credentials have been successfully communicated to the
 
 ```swift
 optional func commissioningProvisionedNetworkCredentials(_ commissioning: MTRCommissioningOperation)
+```
+
+```objc
+- (void) commissioningProvisionedNetworkCredentials:(MTRCommissioningOperation *) commissioning;
 ```
 
 

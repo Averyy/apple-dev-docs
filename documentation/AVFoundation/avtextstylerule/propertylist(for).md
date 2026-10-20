@@ -1,7 +1,8 @@
 # propertyList(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts one or more text style rules into a serializable property list object.
 
@@ -19,9 +20,13 @@ Converts one or more text style rules into a serializable property list object.
 class func propertyList(for textStyleRules: [AVTextStyleRule]) -> Any
 ```
 
+```objc
++ (id) propertyListForTextStyleRules:(NSArray<AVTextStyleRule *> *) textStyleRules;
+```
+
 #### Return Value
 
-A property-list object that you can pass to the [`PropertyListSerialization`](https://developer.apple.com/documentation/foundation/propertylistserialization) serialization routines.
+A property-list object that you can pass to the [`PropertyListSerialization`](../../Foundation/propertylistserialization.md) serialization routines.
 
 #### Discussion
 

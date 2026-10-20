@@ -1,7 +1,8 @@
 # notInstalled
 
 **Framework**: Translation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The device doesn’t have the necessary languages downloaded to perform a translation and the session can’t request the person to download them.
 
@@ -19,17 +20,18 @@ static let notInstalled: TranslationError
 
 #### Discussion
 
-This error is thrown if [`canRequestDownloads`](translationsession/canrequestdownloads.md) is false and either the languages are supported but the person hasn’t approved them or if the person has approved them but the languages haven’t finished downloading.
+This error is thrown if [`canRequestDownloads`](../translationsession/canrequestdownloads.md) is false and either the languages are supported but the person hasn’t approved them or if the person has approved them but the languages haven’t finished downloading.
 
 ## See Also
 
-- [static let nothingToTranslate: TranslationError](translationerror/nothingtotranslate.md)
+### Handling general errors
+- [static let nothingToTranslate: TranslationError](./nothingtotranslate.md)
   No content to translate.
-- [static let unableToIdentifyLanguage: TranslationError](translationerror/unabletoidentifylanguage.md)
+- [static let unableToIdentifyLanguage: TranslationError](./unabletoidentifylanguage.md)
   The framework can’t identify the source language automatically.
-- [static let internalError: TranslationError](translationerror/internalerror.md)
+- [static let internalError: TranslationError](./internalerror.md)
   An error occurred internal to the translation engine.
-- [static let alreadyCancelled: TranslationError](translationerror/alreadycancelled.md)
+- [static let alreadyCancelled: TranslationError](./alreadycancelled.md)
   An error describing a translation session that you’ve cancelled before, which prevents the session from producing additional results.
 
 

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: PackageDescription  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the package product.
 

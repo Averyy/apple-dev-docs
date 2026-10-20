@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: MusicKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request to fetch top-level items in the Apple Music catalog.
 

@@ -1,7 +1,8 @@
 # position
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A position representing the estimated point of contact.
 
@@ -16,9 +17,10 @@ let position: Point3D
 
 ## See Also
 
-- [let impulse: Float](tablevisualstate/contact/impulse.md)
+### Getting collision metrics
+- [let impulse: Float](./impulse.md)
   Impulse, the force over time of the collision, in newton-seconds.
-- [let normal: Vector3D](tablevisualstate/contact/normal.md)
+- [let normal: Vector3D](./normal.md)
   The normal of the contacting surfaces at the contact point. The normal direction points from the second shape to the first shape.
 
 

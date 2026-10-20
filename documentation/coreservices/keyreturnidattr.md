@@ -1,7 +1,8 @@
 # keyReturnIDAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Return ID for a reply Apple event.
 

@@ -1,14 +1,15 @@
 # kPCIPMCD1Support
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kPCIPMCD1Support = 0x0200
 ```
 

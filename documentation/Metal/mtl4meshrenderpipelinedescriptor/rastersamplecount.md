@@ -1,7 +1,8 @@
 # rasterSampleCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets number of samples this pipeline applies for each fragment.
 
@@ -17,6 +18,10 @@ Sets number of samples this pipeline applies for each fragment.
 
 ```swift
 var rasterSampleCount: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger rasterSampleCount;
 ```
 
 

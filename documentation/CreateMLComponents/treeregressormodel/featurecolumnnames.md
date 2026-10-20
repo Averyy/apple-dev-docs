@@ -1,7 +1,8 @@
 # featureColumnNames
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the columns containing feature values.
 
@@ -22,7 +23,8 @@ var featureColumnNames: [String] { get }
 
 ## See Also
 
-- [var predictionColumnName: String](treeregressormodel/predictioncolumnname.md)
+### Getting the column names
+- [var predictionColumnName: String](./predictioncolumnname.md)
   The name of the column containing the predicted values.
 
 

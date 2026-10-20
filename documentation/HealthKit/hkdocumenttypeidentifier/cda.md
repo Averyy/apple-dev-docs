@@ -1,7 +1,8 @@
 # CDA
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The CDA Document type identifier, used when requesting permission to read or share CDA documents.
 
@@ -19,29 +20,34 @@ The CDA Document type identifier, used when requesting permission to read or sha
 static let CDA: HKDocumentTypeIdentifier
 ```
 
+```c
+extern HKDocumentTypeIdentifier const HKDocumentTypeIdentifierCDA;
+```
+
 ## See Also
 
-- [Accessing Health Records](accessing-health-records.md)
+### Medical records
+- [Accessing Health Records](../accessing-health-records.md)
   Read clinical record data from the HealthKit store.
-- [Accessing Sample Data in the Simulator](accessing-sample-data-in-the-simulator.md)
+- [Accessing Sample Data in the Simulator](../accessing-sample-data-in-the-simulator.md)
   Set up sample accounts to build and test your app.
-- [Accessing a User’s Clinical Records](accessing-a-user-s-clinical-records.md)
+- [Accessing a User’s Clinical Records](../accessing-a-user-s-clinical-records.md)
   Request authorization to query HealthKit for a user’s clinical records and display them in your app.
-- [Accessing Data from a SMART Health Card](accessing-data-from-a-smart-health-card.md)
+- [Accessing Data from a SMART Health Card](../accessing-data-from-a-smart-health-card.md)
   Query for and validate a verifiable clinical record.
-- [class HKClinicalRecord](hkclinicalrecord.md)
+- [class HKClinicalRecord](../hkclinicalrecord.md)
   A sample that stores a clinical record.
-- [class HKFHIRResource](hkfhirresource.md)
+- [class HKFHIRResource](../hkfhirresource.md)
   An object containing Fast Healthcare Interoperability Resources (FHIR) data.
-- [class HKVerifiableClinicalRecord](hkverifiableclinicalrecord.md)
+- [class HKVerifiableClinicalRecord](../hkverifiableclinicalrecord.md)
   A sample that represents the contents of a SMART Health Card or EU Digital COVID Certificate.
-- [class HKVerifiableClinicalRecordSubject](hkverifiableclinicalrecordsubject.md)
+- [class HKVerifiableClinicalRecordSubject](../hkverifiableclinicalrecordsubject.md)
   The subject associated with a signed clinical record.
-- [class HKCDADocumentSample](hkcdadocumentsample.md)
+- [class HKCDADocumentSample](../hkcdadocumentsample.md)
   A Clinical Document Architecture (CDA) sample that stores a single document.
-- [class HKDocumentSample](hkdocumentsample.md)
+- [class HKDocumentSample](../hkdocumentsample.md)
   An abstract class that represents a health document in the HealthKit store.
-- [class HKDocumentType](hkdocumenttype.md)
+- [class HKDocumentType](../hkdocumenttype.md)
   A sample type used to create queries for documents.
 
 

@@ -1,7 +1,8 @@
 # CachedURLResponse
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A cached response to a URL request.
 
@@ -20,62 +21,67 @@ A cached response to a URL request.
 class CachedURLResponse
 ```
 
+```objc
+@interface NSCachedURLResponse : NSObject
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](./accessing-cached-data.md)
 
 #### Overview
 
-A [`CachedURLResponse`](cachedurlresponse.md) object provides the server’s response metadata in the form of a [`URLResponse`](urlresponse.md) object, along with an [`NSData`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47169) object containing the actual cached content data. Its storage policy determines whether the response should be cached on disk, in memory, or not at all.
+A [`CachedURLResponse`](./cachedurlresponse.md) object provides the server’s response metadata in the form of a [`URLResponse`](./urlresponse.md) object, along with an [NSData](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47169) object containing the actual cached content data. Its storage policy determines whether the response should be cached on disk, in memory, or not at all.
 
 Cached responses also contain a user info dictionary where you can store app-specific information about the cached item.
 
-The [`URLCache`](urlcache.md) class stores and retrieves instances of [`CachedURLResponse`](cachedurlresponse.md).
+The [`URLCache`](./urlcache.md) class stores and retrieves instances of [`CachedURLResponse`](./cachedurlresponse.md).
 
 ## Topics
 
 ### Creating a cached URL response
-- [init(response: URLResponse, data: Data)](cachedurlresponse/init(response:data:).md)
+- [init(response: URLResponse, data: Data)](./cachedurlresponse/init%28response,data%29.md)
   Creates a cached URL response instance.
-- [init(response: URLResponse, data: Data, userInfo: [AnyHashable : Any]?, storagePolicy: URLCache.StoragePolicy)](cachedurlresponse/init(response:data:userinfo:storagepolicy:).md)
+- [init(response: URLResponse, data: Data, userInfo: [AnyHashable : Any]?, storagePolicy: URLCache.StoragePolicy)](./cachedurlresponse/init%28response,data,userinfo,storagepolicy%29.md)
   Creates a cached URL response with a given server response, data, user-info dictionary, and storage policy.
 ### Getting cached URL response properties
-- [var data: Data](cachedurlresponse/data.md)
+- [var data: Data](./cachedurlresponse/data.md)
   The cached response’s data.
-- [var response: URLResponse](cachedurlresponse/response.md)
+- [var response: URLResponse](./cachedurlresponse/response.md)
   The URL response object associated with the instance.
-- [var storagePolicy: URLCache.StoragePolicy](cachedurlresponse/storagepolicy.md)
+- [var storagePolicy: URLCache.StoragePolicy](./cachedurlresponse/storagepolicy.md)
   The cached response’s storage policy.
-- [var userInfo: [AnyHashable : Any]?](cachedurlresponse/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./cachedurlresponse/userinfo.md)
   The cached response’s user info dictionary.
 ### Setting cache storage policies
-- [URLCache.StoragePolicy](urlcache/storagepolicy.md)
-  These constants specify the caching strategy used by an [`CachedURLResponse`](cachedurlresponse.md) object.
+- [URLCache.StoragePolicy](./urlcache/storagepolicy.md)
+  These constants specify the caching strategy used by an [`CachedURLResponse`](./cachedurlresponse.md) object.
 ### Initializers
-- [init?(coder: NSCoder)](cachedurlresponse/init(coder:).md)
+- [init?(coder: NSCoder)](./cachedurlresponse/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Accessing cached data](accessing-cached-data.md)
+### Cache behavior
+- [Accessing cached data](./accessing-cached-data.md)
   Control how URL requests make use of previously cached data.
-- [class URLCache](urlcache.md)
+- [class URLCache](./urlcache.md)
   An object that maps URL requests to cached response objects.
 
 

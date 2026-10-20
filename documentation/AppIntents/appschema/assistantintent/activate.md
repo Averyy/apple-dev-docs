@@ -1,7 +1,8 @@
 # activate
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app intent conforms to the schema for launching your voice-based conversational app from the side button on iPhone in Japan.
 
@@ -18,15 +19,16 @@ var activate: some AppSchemaIntent { get }
 
 ## Mentions
 
-- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
+- [Launching your voice-based conversational app from the side button of iPhone](../../launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
 
 #### Overview
 
-Functionality provided by the `activate` schema API is only available on iPhone in Japan and requires the [`Side Button Access`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.side-button-access.allow) entitlement. During development, install your provisioning profile on your iPhone test device to test the functionality. For a production device, the country or region of your Apple Account must be set to Japan, and you must physically be located in Japan. For additional information, refer to [`Launching your voice-based conversational app from the side button of iPhone`](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md).
+Functionality provided by the `activate` schema API is only available on iPhone in Japan and requires the [`Side Button Access`](../../../BundleResources/entitlements/com.apple.developer.side-button-access.allow.md) entitlement. During development, install your provisioning profile on your iPhone test device to test the functionality. For a production device, the country or region of your Apple Account must be set to Japan, and you must physically be located in Japan. For additional information, refer to [Launching your voice-based conversational app from the side button of iPhone](../../launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md).
 
 ## See Also
 
-- [AppSchema.AssistantIntent](appschema/assistantintent.md)
+### Actions
+- [AppSchema.AssistantIntent](../assistantintent.md)
   Assistant schema conformance for app intents that offer support for the side button on iPhone in Japan.
 
 

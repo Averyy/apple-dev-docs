@@ -1,7 +1,8 @@
 # FileLocation
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A source code location reference indicating the file path, line number, and column of an issue in an Xcode Cloud build.
 
@@ -10,7 +11,7 @@ A source code location reference indicating the file path, line number, and colu
 
 ## Declaration
 
-```swift
+```
 object FileLocation
 ```
 
@@ -21,9 +22,10 @@ object FileLocation
 
 ## See Also
 
-- [object CiIssue](ciissue.md)
+### Objects
+- [object CiIssue](./ciissue.md)
   A warning or error produced during an Xcode Cloud build action, associated with a source file location.
-- [object CiIssueResponse](ciissueresponse.md)
+- [object CiIssueResponse](./ciissueresponse.md)
   The response body for endpoints that read a single issue from an Xcode Cloud build action.
 
 

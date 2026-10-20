@@ -1,12 +1,13 @@
 # NSColorSpace.Model.rgb
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The RGB (red-green-blue) color-space model.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ The RGB (red-green-blue) color-space model.
 case rgb
 ```
 
+```c
+NSColorSpaceModelRGB
+```
+
 ## See Also
 
-- [NSColorSpace.Model.unknown](nscolorspace/model/unknown.md)
+### Color Spaces
+- [NSColorSpace.Model.unknown](./unknown.md)
   An unknown color-space model.
-- [NSColorSpace.Model.gray](nscolorspace/model/gray.md)
+- [NSColorSpace.Model.gray](./gray.md)
   The grayscale color-space model.
-- [NSColorSpace.Model.cmyk](nscolorspace/model/cmyk.md)
+- [NSColorSpace.Model.cmyk](./cmyk.md)
   The CMYK (cyan-magenta-yellow-black) color-space model.
-- [NSColorSpace.Model.lab](nscolorspace/model/lab.md)
+- [NSColorSpace.Model.lab](./lab.md)
   The L*a*b* device-independent color-space model, which represents colors relative to a reference white point.
-- [NSColorSpace.Model.deviceN](nscolorspace/model/devicen.md)
+- [NSColorSpace.Model.deviceN](./devicen.md)
   The DeviceN color-space model from Adobe Systems, Inc.
-- [NSColorSpace.Model.indexed](nscolorspace/model/indexed.md)
+- [NSColorSpace.Model.indexed](./indexed.md)
   An indexed color space, which identifies discrete colors in a color list by index number.
-- [NSColorSpace.Model.patterned](nscolorspace/model/patterned.md)
+- [NSColorSpace.Model.patterned](./patterned.md)
   A pattern color space, which is a repeated image that creates a tiled pattern.
 
 

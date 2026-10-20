@@ -1,7 +1,8 @@
 # numberOfRows(inComponent:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of rows for a component.
 
@@ -15,6 +16,10 @@ Returns the number of rows for a component.
 
 ```swift
 func numberOfRows(inComponent component: Int) -> Int
+```
+
+```objc
+- (NSInteger) numberOfRowsInComponent:(NSInteger) component;
 ```
 
 #### Return Value
@@ -31,9 +36,10 @@ A picker view fetches the value of this property from the data source and and ca
 
 ## See Also
 
-- [var numberOfComponents: Int](uipickerview/numberofcomponents.md)
+### Getting the dimensions of the picker view
+- [var numberOfComponents: Int](./numberofcomponents.md)
   The number of components for the picker view.
-- [func rowSize(forComponent: Int) -> CGSize](uipickerview/rowsize(forcomponent:).md)
+- [func rowSize(forComponent: Int) -> CGSize](./rowsize%28forcomponent%29.md)
   Returns the size of a row for a component.
 
 

@@ -1,7 +1,8 @@
 # addBuffer
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add a buffer to a video stream.
 
@@ -10,7 +11,7 @@ Add a buffer to a video stream.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t addBuffer(IOUserVideoBuffer *buffer);
 ```
 
@@ -20,17 +21,18 @@ Adds an IOUserVideoBuffer to an IOUserVideoStream. It will be added to the end o
 
 ## See Also
 
-- [GetBufferCount](iouservideostream/getbuffercount.md)
+### Working with video buffers
+- [GetBufferCount](./getbuffercount.md)
   Returns the number of buffers in the buffer queue.
-- [GetBufferList](iouservideostream/getbufferlist.md)
+- [GetBufferList](./getbufferlist.md)
   Gets an array containing all the buffers in the video stream.
-- [GetBufferWithID](iouservideostream/getbufferwithid.md)
-- [addBuffers](iouservideostream/addbuffers.md)
-- [enqueueOutputBuffer](iouservideostream/enqueueoutputbuffer.md)
-- [IOUserVideoBuffer](iouservideobuffer.md)
-- [removeAllBuffers](iouservideostream/removeallbuffers.md)
+- [GetBufferWithID](./getbufferwithid.md)
+- [addBuffers](./addbuffers.md)
+- [enqueueOutputBuffer](./enqueueoutputbuffer.md)
+- [IOUserVideoBuffer](../iouservideobuffer.md)
+- [removeAllBuffers](./removeallbuffers.md)
   Removes all buffers from the video stream.
-- [SendOutputBufferNotification](iouservideostream/sendoutputbuffernotification.md)
+- [SendOutputBufferNotification](./sendoutputbuffernotification.md)
   Sends a notification to the host that data is available for reading on the output queue.
 
 

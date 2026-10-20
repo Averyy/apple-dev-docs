@@ -1,7 +1,8 @@
 # RunLoop.SchedulerTimeType
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The scheduler time type that the run loop uses.
 
@@ -23,44 +24,45 @@ struct SchedulerTimeType
 ## Topics
 
 ### Creating Scheduler Times
-- [init(Date)](runloop/schedulertimetype/init(_:).md)
+- [init(Date)](./schedulertimetype/init%28_%29.md)
   Initializes a run loop scheduler time with the given date.
 ### Working with Scheduler Time Intervals
-- [RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride.md)
+- [RunLoop.SchedulerTimeType.Stride](./schedulertimetype/stride.md)
   The interval by which run loop times advance.
-- [func advanced(by: RunLoop.SchedulerTimeType.Stride) -> RunLoop.SchedulerTimeType](runloop/schedulertimetype/advanced(by:).md)
+- [func advanced(by: RunLoop.SchedulerTimeType.Stride) -> RunLoop.SchedulerTimeType](./schedulertimetype/advanced%28by%29.md)
   Returns a run loop scheduler time calculated by advancing this instance’s time by the given interval.
-- [func distance(to: RunLoop.SchedulerTimeType) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/distance(to:).md)
+- [func distance(to: RunLoop.SchedulerTimeType) -> RunLoop.SchedulerTimeType.Stride](./schedulertimetype/distance%28to%29.md)
   Returns the distance to another run loop scheduler time.
 ### Inspecting Properties
-- [var date: Date](runloop/schedulertimetype/date.md)
+- [var date: Date](./schedulertimetype/date.md)
   The date this type represents.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Strideable](../swift/strideable.md)
+- [Comparable](../../Swift/comparable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Strideable](../../Swift/strideable.md)
 
 ## See Also
 
-- [func schedule(options: RunLoop.SchedulerOptions?, () -> Void)](runloop/schedule(options:_:).md)
+### Scheduling Combine Publishers
+- [func schedule(options: RunLoop.SchedulerOptions?, () -> Void)](./schedule%28options,_%29.md)
   Performs the action at some time after the specified date, using the scheduler’s minimum tolerance.
-- [func schedule(after: RunLoop.SchedulerTimeType, tolerance: RunLoop.SchedulerTimeType.Stride, options: RunLoop.SchedulerOptions?, () -> Void)](runloop/schedule(after:tolerance:options:_:).md)
+- [func schedule(after: RunLoop.SchedulerTimeType, tolerance: RunLoop.SchedulerTimeType.Stride, options: RunLoop.SchedulerOptions?, () -> Void)](./schedule%28after,tolerance,options,_%29.md)
   Performs the action at some time after the specified date, using the specified tolerance and options.
-- [func schedule(after: RunLoop.SchedulerTimeType, interval: RunLoop.SchedulerTimeType.Stride, tolerance: RunLoop.SchedulerTimeType.Stride, options: RunLoop.SchedulerOptions?, () -> Void) -> any Cancellable](runloop/schedule(after:interval:tolerance:options:_:).md)
+- [func schedule(after: RunLoop.SchedulerTimeType, interval: RunLoop.SchedulerTimeType.Stride, tolerance: RunLoop.SchedulerTimeType.Stride, options: RunLoop.SchedulerOptions?, () -> Void) -> any Cancellable](./schedule%28after,interval,tolerance,options,_%29.md)
   Performs the action at some time after the specified date, at the specified frequency, using the specified tolerance and options.
-- [var minimumTolerance: RunLoop.SchedulerTimeType.Stride](runloop/minimumtolerance.md)
+- [var minimumTolerance: RunLoop.SchedulerTimeType.Stride](./minimumtolerance.md)
   The minimum tolerance the run loop scheduler allows.
-- [var now: RunLoop.SchedulerTimeType](runloop/now.md)
+- [var now: RunLoop.SchedulerTimeType](./now.md)
   The run loop scheduler’s definition of the current moment in time.
-- [RunLoop.SchedulerOptions](runloop/scheduleroptions.md)
+- [RunLoop.SchedulerOptions](./scheduleroptions.md)
   A set of options that affect the operation of the run loop scheduler.
 
 

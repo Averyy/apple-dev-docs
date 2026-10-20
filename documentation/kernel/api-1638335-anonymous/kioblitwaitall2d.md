@@ -1,14 +1,15 @@
 # kIOBlitWaitAll2D
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOBlitWaitAll2D = 0x00000001
 ```
 

@@ -1,7 +1,8 @@
 # UIView.ReservedRegion.QueryOptions
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options for querying reserved regions.
 
@@ -20,22 +21,22 @@ struct QueryOptions
 
 #### Overview
 
-Pass query options to [`reservedRegions(kind:options:)`](uiview/reservedregions(kind:options:).md) to change which regions you get.
+Pass query options to [`reservedRegions(kind:options:)`](../reservedregions%28kind,options%29.md) to change which regions you get.
 
 ## Topics
 
 ### Setting query options
-- [static let includeInactive: UIView.ReservedRegion.QueryOptions](uiview/reservedregion/queryoptions/includeinactive.md)
+- [static let includeInactive: UIView.ReservedRegion.QueryOptions](./queryoptions/includeinactive.md)
   An option that includes inactive reserved regions in the results.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../../Swift/optionset.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../../Swift/setalgebra.md)
 
 
 ---

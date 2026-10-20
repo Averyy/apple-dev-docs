@@ -1,7 +1,8 @@
 # enumerateRenderingAttributes(from:reverse:using:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enumerates the rendering attributes from a location you specify.
 
@@ -12,6 +13,10 @@ Enumerates the rendering attributes from a location you specify.
 
 ```swift
 func enumerateRenderingAttributes(from location: any NSTextLocation, reverse: Bool, using block: (NSTextLayoutManager, [NSAttributedString.Key : Any], NSTextRange) -> Bool)
+```
+
+```objc
+- (void) enumerateRenderingAttributesFromLocation:(id<NSTextLocation>) location reverse:(BOOL) reverse usingBlock:(BOOL (^)(NSTextLayoutManager *textLayoutManager, NSDictionary<NSString *,id> *attributes, NSTextRange *textRange)) block;
 ```
 
 #### Discussion
@@ -26,17 +31,18 @@ This method only enumerates ranges with text that specify rendering attributes. 
 
 ## See Also
 
-- [class var linkRenderingAttributes: [NSAttributedString.Key : Any]](nstextlayoutmanager/linkrenderingattributes.md)
+### Adjusting rendering
+- [class var linkRenderingAttributes: [NSAttributedString.Key : Any]](./linkrenderingattributes.md)
   Returns the default set of attributes for rendering a link.
-- [func addRenderingAttribute(NSAttributedString.Key, value: Any?, for: NSTextRange)](nstextlayoutmanager/addrenderingattribute(_:value:for:).md)
+- [func addRenderingAttribute(NSAttributedString.Key, value: Any?, for: NSTextRange)](./addrenderingattribute%28_,value,for%29.md)
   Sets the rendering attribute for the value and range you specify.
-- [func renderingAttributes(forLink: Any, at: any NSTextLocation) -> [NSAttributedString.Key : Any]](nstextlayoutmanager/renderingattributes(forlink:at:).md)
+- [func renderingAttributes(forLink: Any, at: any NSTextLocation) -> [NSAttributedString.Key : Any]](./renderingattributes%28forlink,at%29.md)
   Returns a dictionary of rendering attributes for rendering a link.
-- [func invalidateRenderingAttributes(for: NSTextRange)](nstextlayoutmanager/invalidaterenderingattributes(for:).md)
+- [func invalidateRenderingAttributes(for: NSTextRange)](./invalidaterenderingattributes%28for%29.md)
   Invalidates the rendering attributes of the specified text range.
-- [func removeRenderingAttribute(NSAttributedString.Key, for: NSTextRange)](nstextlayoutmanager/removerenderingattribute(_:for:).md)
+- [func removeRenderingAttribute(NSAttributedString.Key, for: NSTextRange)](./removerenderingattribute%28_,for%29.md)
   Removes the rendering attribute from the specified text range.
-- [func setRenderingAttributes([NSAttributedString.Key : Any], for: NSTextRange)](nstextlayoutmanager/setrenderingattributes(_:for:).md)
+- [func setRenderingAttributes([NSAttributedString.Key : Any], for: NSTextRange)](./setrenderingattributes%28_,for%29.md)
   Sets the rendering attributes for the range you specify.
 
 

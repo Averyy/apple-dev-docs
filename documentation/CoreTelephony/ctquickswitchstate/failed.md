@@ -1,7 +1,8 @@
 # CTQuickSwitchState.failed
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework couldn’t determine the state of the device due to an error.
 
@@ -16,13 +17,18 @@ The framework couldn’t determine the state of the device due to an error.
 case failed
 ```
 
+```c
+CTQuickSwitchStateFailed
+```
+
 ## See Also
 
-- [CTQuickSwitchState.active](ctquickswitchstate/active.md)
+### Quick switch states
+- [CTQuickSwitchState.active](./active.md)
   This device is the active participant; cellular service is available on this device.
-- [CTQuickSwitchState.notEnrolled](ctquickswitchstate/notenrolled.md)
+- [CTQuickSwitchState.notEnrolled](./notenrolled.md)
   The device or phone number isn’t enrolled in quick switch.
-- [CTQuickSwitchState.passive](ctquickswitchstate/passive.md)
+- [CTQuickSwitchState.passive](./passive.md)
   This device is passive; cellular service is held by another device.
 
 

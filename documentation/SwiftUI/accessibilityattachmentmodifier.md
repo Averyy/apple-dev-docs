@@ -1,7 +1,8 @@
 # AccessibilityAttachmentModifier
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view modifier that adds accessibility properties to the view
 
@@ -24,11 +25,12 @@ struct AccessibilityAttachmentModifier
 ## Relationships
 
 ### Conforms To
-- [ViewModifier](viewmodifier.md)
+- [ViewModifier](./viewmodifier.md)
 
 ## See Also
 
-- [struct AccessibilityTechnologies](accessibilitytechnologies.md)
+### Supporting types
+- [struct AccessibilityTechnologies](./accessibilitytechnologies.md)
   Accessibility technologies available to the system.
 
 

@@ -1,7 +1,8 @@
 # requestAccess(completionHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Requests access to an external storage device on behalf of your app, which can present a dialog to a person on their device’s display.
 
@@ -15,7 +16,15 @@ Requests access to an external storage device on behalf of your app, which can p
 ## Declaration
 
 ```swift
+class func requestAccess(completionHandler handler: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 class func requestAccess() async -> Bool
+```
+
+```objc
++ (void) requestAccessWithCompletionHandler:(void (^)(BOOL granted)) handler;
 ```
 
 #### Discussion

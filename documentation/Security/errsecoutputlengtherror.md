@@ -1,7 +1,8 @@
 # errSecOutputLengthError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An output length error was detected.
 
@@ -18,6 +19,10 @@ An output length error was detected.
 
 ```swift
 var errSecOutputLengthError: OSStatus { get }
+```
+
+```c
+errSecOutputLengthError
 ```
 
 

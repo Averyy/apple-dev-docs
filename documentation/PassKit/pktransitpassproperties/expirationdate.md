@@ -1,7 +1,8 @@
 # expirationDate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date that the transit card expires.
 
@@ -19,17 +20,22 @@ The date that the transit card expires.
 var expirationDate: Date? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSDate * expirationDate;
+```
+
 #### Discussion
 
 Rules for expiry depend on the pass provider. The return value can be `nil` if the transit card does not support an expiration date.
 
 ## See Also
 
-- [var isInStation: Bool](pktransitpassproperties/isinstation.md)
+### Getting pass status
+- [var isInStation: Bool](./isinstation.md)
   A Boolean value that indicates whether the transit pass has tapped in at a station and has not tapped out.
-- [var isBlocked: Bool](pktransitpassproperties/isblocked.md)
+- [var isBlocked: Bool](./isblocked.md)
   A Boolean value that indicates the pass issuer disabled the pass.
-- [var isBlacklisted: Bool](pktransitpassproperties/isblacklisted.md)
+- [var isBlacklisted: Bool](./isblacklisted.md)
   A Boolean value that indicates the transit pass issuer disabled the pass.
 
 

@@ -1,7 +1,8 @@
 # OSTestAndSet
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Bit test and set operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
 
@@ -10,11 +11,11 @@ Bit test and set operation, performed atomically with respect to all devices tha
 
 ## Declaration
 
-```swift
+```c
 Boolean OSTestAndSet(UInt32 bit, volatile UInt8 *startAddress);
 ```
 
-#### Return_value
+#### Return Value
 
 true if the bit was already set, false otherwise.
 
@@ -31,7 +32,8 @@ The OSTestAndSet function sets a single bit in a byte at a specified address. It
 
 ## See Also
 
-- [OSTestAndClear](1576463-ostestandclear.md)
+### Test Operations
+- [OSTestAndClear](./api-1576463-ostestandclear.md)
   Bit test and clear operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
 
 

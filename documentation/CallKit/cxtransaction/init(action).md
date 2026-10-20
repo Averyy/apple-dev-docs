@@ -1,7 +1,8 @@
 # init(action:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new transaction with the specified action.
 
@@ -18,13 +19,17 @@ Initializes a new transaction with the specified action.
 convenience init(action: CXAction)
 ```
 
+```objc
+- (instancetype) initWithAction:(CXAction *) action;
+```
+
 #### Return Value
 
 A new transaction with the specified action.
 
 #### Discussion
 
-This initializer is a convenience for using the designated initializer and calling the [`addAction(_:)`](cxtransaction/addaction(_:).md) method passing `action`.
+This initializer is a convenience for using the designated initializer and calling the [`addAction(_:)`](./addaction%28_%29.md) method passing `action`.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ This initializer is a convenience for using the designated initializer and calli
 
 ## See Also
 
-- [init(actions: [CXAction])](cxtransaction/init(actions:).md)
+### Creating New Transactions
+- [init(actions: [CXAction])](./init%28actions%29.md)
   Initializes a new transaction with the specified actions.
 
 

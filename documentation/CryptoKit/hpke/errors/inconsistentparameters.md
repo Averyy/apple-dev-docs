@@ -1,7 +1,8 @@
 # HPKE.Errors.inconsistentParameters
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The parameters for initializing an HPKE sender or receiver are inconsistent.
 

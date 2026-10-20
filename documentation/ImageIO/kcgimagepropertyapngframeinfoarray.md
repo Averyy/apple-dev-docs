@@ -1,7 +1,8 @@
 # kCGImagePropertyAPNGFrameInfoArray
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An array of dictionaries that contain timing information for the image sequence.
 
@@ -20,17 +21,22 @@ An array of dictionaries that contain timing information for the image sequence.
 let kCGImagePropertyAPNGFrameInfoArray: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyAPNGFrameInfoArray;
+```
+
 #### Discussion
 
-The value of this property is a [`CFArray`](https://developer.apple.com/documentation/corefoundation/cfarray). Each [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary) in the array contains timing information about an image in the sequence.
+The value of this property is a [`CFArray`](../CoreFoundation/cfarray.md). Each [`CFDictionary`](../CoreFoundation/cfdictionary.md) in the array contains timing information about an image in the sequence.
 
 ## See Also
 
-- [let kCGImagePropertyAPNGDelayTime: CFString](kcgimagepropertyapngdelaytime.md)
+### Sequence Timing
+- [let kCGImagePropertyAPNGDelayTime: CFString](./kcgimagepropertyapngdelaytime.md)
   The number of seconds to wait before displaying the next image in an animated sequence.
-- [let kCGImagePropertyAPNGUnclampedDelayTime: CFString](kcgimagepropertyapngunclampeddelaytime.md)
+- [let kCGImagePropertyAPNGUnclampedDelayTime: CFString](./kcgimagepropertyapngunclampeddelaytime.md)
   The number of seconds to wait before displaying the next image in an animated sequence.
-- [let kCGImagePropertyAPNGLoopCount: CFString](kcgimagepropertyapngloopcount.md)
+- [let kCGImagePropertyAPNGLoopCount: CFString](./kcgimagepropertyapngloopcount.md)
   The number of times that an animated PNG should play through its frames before stopping.
 
 

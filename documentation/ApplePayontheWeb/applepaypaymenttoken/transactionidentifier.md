@@ -1,7 +1,8 @@
 # transactionIdentifier
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for this payment.
 
@@ -11,7 +12,7 @@ A unique identifier for this payment.
 
 ## Declaration
 
-```swift
+```
 DOMString transactionIdentifier;
 ```
 
@@ -21,9 +22,10 @@ This identifier is suitable for use in a receipt.
 
 ## See Also
 
-- [paymentMethod](applepaypaymenttoken/paymentmethod.md)
+### Payment Token Properties
+- [paymentMethod](./paymentmethod.md)
   Information about the card used in the transaction.
-- [paymentData](applepaypaymenttoken/paymentdata.md)
+- [paymentData](./paymentdata.md)
   An object containing the encrypted payment data.
 
 

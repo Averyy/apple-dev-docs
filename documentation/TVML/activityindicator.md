@@ -16,35 +16,36 @@ Use the `activityIndicator` to show your users that some sort of activity is tak
 </loadingTemplate>
 ```
 
-##### Subelements of Activityindicator
+##### Subelements of activityIndicator
 
-- [`title`](title.md)
+- [title](./title.md)
 
-##### Elements That Use Activityindicator
+##### Elements that Use activityIndicator
 
-- [`loadingTemplate`](loadingtemplate.md)
-- [`relatedContent`](relatedcontent.md)
+- [loadingTemplate](./loadingtemplate.md)
+- [relatedContent](./relatedcontent.md)
 
 ## Topics
 
 ### Valid TVML Styles
-- [margin](margin.md)
+- [margin](./margin.md)
   Specifies the spacing around an element.
-- [width](element-shaping-width.md)
+- [width](./element-shaping-width.md)
   Specifies how wide an element is.
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [progressBar](progressbar.md)
+### Overlay Elements
+- [progressBar](./progressbar.md)
   Places a progress bar on top of another element.
-- [separator](separator.md)
+- [separator](./separator.md)
   Displays a horizontal line.
 
 

@@ -1,7 +1,8 @@
 # Event
 
 **Framework**: Siri Event Suggestions Markup  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A sporting event, live show, or other scheduled event.
 
@@ -10,13 +11,13 @@ A sporting event, live show, or other scheduled event.
 
 ## Declaration
 
-```swift
+```
 object Event
 ```
 
 ## Properties
 
-- `@type` (string) *(required)*
+- `@type` (string) *(required)*: **Allowed Values**: `Event`, `ScreeningEvent`
 - `location` (Place) *(required)*: The venue hosting the event.
 - `name` (string) *(required)*: The name of the event.
 - `startDate` (dateTimeISO8601) *(required)*: The time and date the event starts.

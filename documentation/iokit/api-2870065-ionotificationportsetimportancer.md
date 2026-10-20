@@ -1,7 +1,8 @@
 # IONotificationPortSetImportanceReceiver(_:)
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 func IONotificationPortSetImportanceReceiver(_ notify: IONotificationPortRef!) -> kern_return_t
+```
+
+```c
+kern_return_t IONotificationPortSetImportanceReceiver(IONotificationPortRef notify);
 ```
 
 

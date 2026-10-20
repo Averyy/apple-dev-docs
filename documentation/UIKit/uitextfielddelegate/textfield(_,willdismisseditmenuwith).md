@@ -1,7 +1,8 @@
 # textField(_:willDismissEditMenuWith:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the system is about to dismiss an edit menu with an animator.
 
@@ -17,6 +18,10 @@ Tells the delegate that the system is about to dismiss an edit menu with an anim
 optional func textField(_ textField: UITextField, willDismissEditMenuWith animator: any UIEditMenuInteractionAnimating)
 ```
 
+```objc
+- (void) textField:(UITextField *) textField willDismissEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>) animator;
+```
+
 ## Parameters
 
 - `textField`: The text field showing the menu.
@@ -24,7 +29,8 @@ optional func textField(_ textField: UITextField, willDismissEditMenuWith animat
 
 ## See Also
 
-- [func textField(UITextField, willPresentEditMenuWith: any UIEditMenuInteractionAnimating)](uitextfielddelegate/textfield(_:willpresenteditmenuwith:).md)
+### Customizing an edit menu
+- [func textField(UITextField, willPresentEditMenuWith: any UIEditMenuInteractionAnimating)](./textfield%28_,willpresenteditmenuwith%29.md)
   Tells the delegate that the system is about to present an edit menu with an animator.
 
 

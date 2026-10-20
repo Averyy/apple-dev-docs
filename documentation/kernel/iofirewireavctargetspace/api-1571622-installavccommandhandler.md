@@ -1,14 +1,15 @@
 # installAVCCommandHandler
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn installAVCCommandHandler(IOFireWireAVCProtocolUserClient *userClient, IOFireWireAVCTargetCommandHandlerCallback callBack, OSAsyncReference64 asyncRef, UInt32 subUnitTypeAndID, UInt32 opCode, uint64_t userCallBack, uint64_t userRefCon);
 ```
 

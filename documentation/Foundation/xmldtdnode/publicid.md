@@ -1,7 +1,8 @@
 # publicID
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the public identifier associated with the receiver.
 
@@ -15,6 +16,10 @@ Returns the public identifier associated with the receiver.
 var publicID: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * publicID;
+```
+
 #### Return Value
 
 The public identifier associated with the receiver.
@@ -25,11 +30,12 @@ The public ID is applicable to entities and notations.
 
 ## See Also
 
-- [var isExternal: Bool](xmldtdnode/isexternal.md)
+### Managing DTD Identifiers
+- [var isExternal: Bool](./isexternal.md)
   True if the system id is set. Valid for entities and notations.
-- [var notationName: String?](xmldtdnode/notationname.md)
+- [var notationName: String?](./notationname.md)
   Returns the name of the notation associated with the receiver.
-- [var systemID: String?](xmldtdnode/systemid.md)
+- [var systemID: String?](./systemid.md)
   Returns the system identifier associated with the receiver.
 
 

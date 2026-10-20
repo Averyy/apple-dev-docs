@@ -1,17 +1,22 @@
 # tag
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tag identifying the receiver (not the tag of the receiver’s cell).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var tag: Int { get set }
+```
+
+```objc
+@property NSInteger tag;
 ```
 
 #### Discussion
@@ -20,7 +25,8 @@ Tags allow you to identify particular controls. Tag values are not used internal
 
 ## See Also
 
-- [func selectedTag() -> Int](nscontrol/selectedtag.md)
+### Related Documentation
+- [func selectedTag() -> Int](./selectedtag%28%29.md)
   Returns the tag of the receiver’s selected cell.
 
 

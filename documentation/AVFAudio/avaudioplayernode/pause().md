@@ -1,7 +1,8 @@
 # pause()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pauses the node’s playback.
 
@@ -20,6 +21,10 @@ Pauses the node’s playback.
 func pause()
 ```
 
+```objc
+- (void) pause;
+```
+
 #### Discussion
 
 The player’s sample time doesn’t advance while the node is in a paused state.
@@ -28,17 +33,18 @@ Pausing or stopping all of the players you connect to an engine doesn’t pause 
 
 ## See Also
 
-- [func prepare(withFrameCount: AVAudioFrameCount)](avaudioplayernode/prepare(withframecount:).md)
+### Controlling playback
+- [func prepare(withFrameCount: AVAudioFrameCount)](./prepare%28withframecount%29.md)
   Prepares the file regions or buffers you schedule for playback.
-- [func playAudio() throws](avaudioplayernode/playaudio.md)
-- [func playAudio(at: AVAudioTime?) throws](avaudioplayernode/playaudio(at:).md)
-- [func play()](avaudioplayernode/play.md)
+- [func playAudio() throws](./playaudio%28%29.md)
+- [func playAudio(at: AVAudioTime?) throws](./playaudio%28at%29.md)
+- [func play()](./play%28%29.md)
   Starts or resumes playback immediately.
-- [func play(at: AVAudioTime?)](avaudioplayernode/play(at:).md)
+- [func play(at: AVAudioTime?)](./play%28at%29.md)
   Starts or resumes playback at a time you specify.
-- [var isPlaying: Bool](avaudioplayernode/isplaying.md)
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean value that indicates whether the player is playing.
-- [func stop()](avaudioplayernode/stop.md)
+- [func stop()](./stop%28%29.md)
   Clears all of the node’s events you schedule and stops playback.
 
 

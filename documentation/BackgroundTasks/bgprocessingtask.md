@@ -1,7 +1,8 @@
 # BGProcessingTask
 
 **Framework**: Background Tasks  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A time-consuming processing task that runs while the app is in the background.
 
@@ -18,43 +19,48 @@ A time-consuming processing task that runs while the app is in the background.
 class BGProcessingTask
 ```
 
+```objc
+@interface BGProcessingTask : BGTask
+```
+
 ## Mentions
 
-- [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
+- [Choosing Background Strategies for Your App](./choosing-background-strategies-for-your-app.md)
 
 #### Overview
 
-Use processing tasks for long data updates, processing data, and app maintenance. Although processing tasks can run for minutes, the system can interrupt the process. Add an expiration handler by setting [`expirationHandler`](bgtask/expirationhandler.md) for any required cleanup.
+Use processing tasks for long data updates, processing data, and app maintenance. Although processing tasks can run for minutes, the system can interrupt the process. Add an expiration handler by setting [`expirationHandler`](./bgtask/expirationhandler.md) for any required cleanup.
 
-Executing processing tasks requires setting the `processing` [`UIBackgroundModes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uibackgroundmodes) capability. For information on setting this capability, see [`BGTaskScheduler`](bgtaskscheduler.md).
+Executing processing tasks requires setting the `processing` [`UIBackgroundModes`](../BundleResources/information-property-list/uibackgroundmodes.md) capability. For information on setting this capability, see [`BGTaskScheduler`](./bgtaskscheduler.md).
 
 Processing tasks run only when the device is idle. The system terminates any background processing tasks running when the user starts using the device. Background refresh tasks aren’t affected.
 
 ## Relationships
 
 ### Inherits From
-- [BGTask](bgtask.md)
+- [BGTask](./bgtask.md)
 ### Inherited By
-- [BGHealthResearchTask](bghealthresearchtask.md)
+- [BGHealthResearchTask](./bghealthresearchtask.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Using background tasks to update your app](../uikit/using-background-tasks-to-update-your-app.md)
+### Background tasks
+- [Using background tasks to update your app](../UIKit/using-background-tasks-to-update-your-app.md)
   Configure your app to perform tasks in the background to make efficient use of processing time and power.
-- [Refreshing and Maintaining Your App Using Background Tasks](refreshing-and-maintaining-your-app-using-background-tasks.md)
+- [Refreshing and Maintaining Your App Using Background Tasks](./refreshing-and-maintaining-your-app-using-background-tasks.md)
   Use scheduled background tasks for refreshing your app content and for performing maintenance.
-- [Choosing Background Strategies for Your App](choosing-background-strategies-for-your-app.md)
+- [Choosing Background Strategies for Your App](./choosing-background-strategies-for-your-app.md)
   Select the best method of scheduling background runtime for your app.
-- [class BGAppRefreshTask](bgapprefreshtask.md)
+- [class BGAppRefreshTask](./bgapprefreshtask.md)
   An object representing a short task typically used to refresh content that’s run while the app is in the background.
-- [class BGHealthResearchTask](bghealthresearchtask.md)
+- [class BGHealthResearchTask](./bghealthresearchtask.md)
   A time-consuming, necessary processing task that runs while the app is in the background to prepare data essential to a health research study.
 
 

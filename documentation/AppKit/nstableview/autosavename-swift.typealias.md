@@ -1,10 +1,11 @@
 # NSTableView.AutosaveName
 
 **Framework**: AppKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 typealias AutosaveName = String
 ```
 
+```c
+typedef NSString * NSTableViewAutosaveName;
+```
+
 ## See Also
 
-- [var autosaveTableColumns: Bool](nstableview/autosavetablecolumns.md)
+### Table Column State Persistence
+- [var autosaveTableColumns: Bool](./autosavetablecolumns.md)
   A Boolean value indicating whether the order and width of the table view’s columns are automatically saved.
-- [var autosaveName: NSTableView.AutosaveName?](nstableview/autosavename-swift.property.md)
+- [var autosaveName: NSTableView.AutosaveName?](./autosavename-swift.property.md)
   The name under which table information is automatically saved.
 
 

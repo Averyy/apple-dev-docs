@@ -1,7 +1,8 @@
 # InstructionsRepresentable
 
 **Framework**: Foundation Models  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be represented as instructions.
 
@@ -22,25 +23,26 @@ protocol InstructionsRepresentable
 ## Topics
 
 ### Getting the representation
-- [var instructionsRepresentation: Instructions](instructionsrepresentable/instructionsrepresentation.md)
+- [var instructionsRepresentation: Instructions](./instructionsrepresentable/instructionsrepresentation.md)
   An instance that represents the instructions.
 
 ## Relationships
 
 ### Inherited By
-- [ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
-- [Generable](generable.md)
+- [ConvertibleToGeneratedContent](./convertibletogeneratedcontent.md)
+- [Generable](./generable.md)
 ### Conforming Types
-- [Attachment](attachment.md)
-- [GeneratedContent](generatedcontent.md)
-- [ImageReference](imagereference.md)
-- [Instructions](instructions.md)
+- [Attachment](./attachment.md)
+- [GeneratedContent](./generatedcontent.md)
+- [ImageReference](./imagereference.md)
+- [Instructions](./instructions.md)
 
 ## See Also
 
-- [init(_:)](instructions/init(_:).md)
+### Creating instructions
+- [init(_:)](./instructions/init%28_%29.md)
   Creates instructions from the content of a builder closure.
-- [struct InstructionsBuilder](instructionsbuilder.md)
+- [struct InstructionsBuilder](./instructionsbuilder.md)
   A type that represents an instructions builder.
 
 

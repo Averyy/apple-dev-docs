@@ -1,7 +1,8 @@
 # MTLVisibleFunctionTableDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A specification of how to create a visible function table.
 
@@ -19,40 +20,45 @@ A specification of how to create a visible function table.
 class MTLVisibleFunctionTableDescriptor
 ```
 
+```objc
+@interface MTLVisibleFunctionTableDescriptor : NSObject
+```
+
 ## Topics
 
 ### Configuring the function table
-- [var functionCount: Int](mtlvisiblefunctiontabledescriptor/functioncount.md)
+- [var functionCount: Int](./mtlvisiblefunctiontabledescriptor/functioncount.md)
   The number of entries in the function table.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLFunctionDescriptor](mtlfunctiondescriptor.md)
+### Shader functions
+- [class MTLFunctionDescriptor](./mtlfunctiondescriptor.md)
   A description of a function object to create.
-- [protocol MTLFunction](mtlfunction.md)
+- [protocol MTLFunction](./mtlfunction.md)
   A interface that represents a public shader function in a Metal library.
-- [protocol MTLFunctionHandle](mtlfunctionhandle.md)
+- [protocol MTLFunctionHandle](./mtlfunctionhandle.md)
   An object representing a function that you can add to a visible function table.
-- [protocol MTLVisibleFunctionTable](mtlvisiblefunctiontable.md)
+- [protocol MTLVisibleFunctionTable](./mtlvisiblefunctiontable.md)
   A table of shader functions visible to your app that you can pass into compute commands to customize the behavior of a shader.
-- [class MTLIntersectionFunctionDescriptor](mtlintersectionfunctiondescriptor.md)
+- [class MTLIntersectionFunctionDescriptor](./mtlintersectionfunctiondescriptor.md)
   A description of an intersection function that performs an intersection test.
-- [class MTLIntersectionFunctionTableDescriptor](mtlintersectionfunctiontabledescriptor.md)
+- [class MTLIntersectionFunctionTableDescriptor](./mtlintersectionfunctiontabledescriptor.md)
   A specification of how to create an intersection function table.
-- [protocol MTLIntersectionFunctionTable](mtlintersectionfunctiontable.md)
+- [protocol MTLIntersectionFunctionTable](./mtlintersectionfunctiontable.md)
   A table of intersection functions that Metal calls to perform ray-tracing intersection tests.
 
 

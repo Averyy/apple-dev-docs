@@ -1,7 +1,8 @@
 # path(forAuxiliaryExecutable:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the full pathname of the executable with the specified name in the receiver’s bundle.
 
@@ -20,6 +21,10 @@ Returns the full pathname of the executable with the specified name in the recei
 func path(forAuxiliaryExecutable executableName: String) -> String?
 ```
 
+```objc
+- (NSString *) pathForAuxiliaryExecutable:(NSString *) executableName;
+```
+
 #### Return Value
 
 The full pathname of the executable `executableName` in the receiver’s bundle.
@@ -34,33 +39,34 @@ This method returns the appropriate path for modern application and framework bu
 
 ## See Also
 
-- [var resourceURL: URL?](bundle/resourceurl.md)
+### Getting the standard bundle directories
+- [var resourceURL: URL?](./resourceurl.md)
   The file URL of the bundle’s subdirectory containing resource files.
-- [var executableURL: URL?](bundle/executableurl.md)
+- [var executableURL: URL?](./executableurl.md)
   The file URL of the receiver’s executable file.
-- [var privateFrameworksURL: URL?](bundle/privateframeworksurl.md)
+- [var privateFrameworksURL: URL?](./privateframeworksurl.md)
   The file URL of the bundle’s subdirectory containing private frameworks.
-- [var sharedFrameworksURL: URL?](bundle/sharedframeworksurl.md)
+- [var sharedFrameworksURL: URL?](./sharedframeworksurl.md)
   The file URL of the receiver’s subdirectory containing shared frameworks.
-- [var builtInPlugInsURL: URL?](bundle/builtinpluginsurl.md)
+- [var builtInPlugInsURL: URL?](./builtinpluginsurl.md)
   The file URL of the receiver’s subdirectory containing plug-ins.
-- [func url(forAuxiliaryExecutable: String) -> URL?](bundle/url(forauxiliaryexecutable:).md)
+- [func url(forAuxiliaryExecutable: String) -> URL?](./url%28forauxiliaryexecutable%29.md)
   Returns the file URL of the executable with the specified name in the receiver’s bundle.
-- [var sharedSupportURL: URL?](bundle/sharedsupporturl.md)
+- [var sharedSupportURL: URL?](./sharedsupporturl.md)
   The file URL of the bundle’s subdirectory containing shared support files.
-- [var appStoreReceiptURL: URL?](bundle/appstorereceipturl.md)
+- [var appStoreReceiptURL: URL?](./appstorereceipturl.md)
   The file URL for the bundle’s App Store receipt.
-- [var resourcePath: String?](bundle/resourcepath.md)
+- [var resourcePath: String?](./resourcepath.md)
   The full pathname of the bundle’s subdirectory containing resources.
-- [var executablePath: String?](bundle/executablepath.md)
+- [var executablePath: String?](./executablepath.md)
   The full pathname of the receiver’s executable file.
-- [var privateFrameworksPath: String?](bundle/privateframeworkspath.md)
+- [var privateFrameworksPath: String?](./privateframeworkspath.md)
   The full pathname of the bundle’s subdirectory containing private frameworks.
-- [var sharedFrameworksPath: String?](bundle/sharedframeworkspath.md)
+- [var sharedFrameworksPath: String?](./sharedframeworkspath.md)
   The full pathname of the bundle’s subdirectory containing shared frameworks.
-- [var builtInPlugInsPath: String?](bundle/builtinpluginspath.md)
+- [var builtInPlugInsPath: String?](./builtinpluginspath.md)
   The full pathname of the receiver’s subdirectory containing plug-ins.
-- [var sharedSupportPath: String?](bundle/sharedsupportpath.md)
+- [var sharedSupportPath: String?](./sharedsupportpath.md)
   The full pathname of the bundle’s subdirectory containing shared support files.
 
 

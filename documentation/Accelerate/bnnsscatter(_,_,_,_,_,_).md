@@ -1,18 +1,21 @@
 # BNNSScatter(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Scatters the elements of a tensor along a single axis.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
-- watchOS 9.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 9.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,11 +23,15 @@ Scatters the elements of a tensor along a single axis.
 func BNNSScatter(_ axis: Int, _ op: BNNSReduceFunction, _ input: UnsafePointer<BNNSNDArrayDescriptor>, _ indices: UnsafePointer<BNNSNDArrayDescriptor>, _ output: UnsafeMutablePointer<BNNSNDArrayDescriptor>, _ filter_params: UnsafePointer<BNNSFilterParameters>?) -> Int32
 ```
 
+```c
+int BNNSScatter(size_t axis, BNNSReduceFunction op, const BNNSNDArrayDescriptor *input, const BNNSNDArrayDescriptor *indices, BNNSNDArrayDescriptor *output, const BNNSFilterParameters *filter_params);
+```
+
 #### Discussion
 
-Use [`BNNSScatter(_:_:_:_:_:_:)`](bnnsscatter(_:_:_:_:_:_:).md) to scatter elements — that you specify by index — into an output tensor. The operation can set the scattered values or add them to the existing values in the output tensor.
+Use [`BNNSScatter(_:_:_:_:_:_:)`](./bnnsscatter%28_,_,_,_,_,_%29.md) to scatter elements — that you specify by index — into an output tensor. The operation can set the scattered values or add them to the existing values in the output tensor.
 
-In the simplest case, use [`BNNSScatter(_:_:_:_:_:_:)`](bnnsscatter(_:_:_:_:_:_:).md) to gather elements from a 1D vector with indices defined as a 1D vector. The following code scatters the values `[2, 4, 6, 8]` to the output elements at indices `[1, 3, 7, 5]`. The operation sums the scattered values with the existing values:
+In the simplest case, use [`BNNSScatter(_:_:_:_:_:_:)`](./bnnsscatter%28_,_,_,_,_,_%29.md) to gather elements from a 1D vector with indices defined as a 1D vector. The following code scatters the values `[2, 4, 6, 8]` to the output elements at indices `[1, 3, 7, 5]`. The operation sums the scattered values with the existing values:
 
 ```swift
 let values: [Float] = [2, 4, 6, 8]
@@ -52,7 +59,7 @@ let error = BNNSScatter(0,
 
 On return, `outputDescriptor` contains the values `[10.0, 22.0, 30.0, 44.0, 50.0, 68.0, 70.0, 86.0]`. For example, `44.0` is the sum of the original value, `40`, and the scattered value, `4`.
 
-[`BNNSScatter(_:_:_:_:_:_:)`](bnnsscatter(_:_:_:_:_:_:).md) supports scattering values from a tensor with two or more dimensions using indices defined as a 1D vector. In this case, the indices correspond to the values along an entire axis and the input and output shapes must match.
+[`BNNSScatter(_:_:_:_:_:_:)`](./bnnsscatter%28_,_,_,_,_,_%29.md) supports scattering values from a tensor with two or more dimensions using indices defined as a 1D vector. In this case, the indices correspond to the values along an entire axis and the input and output shapes must match.
 
 The following code scatters three rows from the input tensor to rows `[1, 3, 4]` in the output tensor. In this case, the operation sets the destination value:
 
@@ -91,7 +98,7 @@ On return, `outputDescriptor` contains the following values:
   40.0, 41.0, 42.0 ]
 ```
 
-[`BNNSScatter(_:_:_:_:_:_:)`](bnnsscatter(_:_:_:_:_:_:).md) supports scattering from a tensor with two or more dimensions using indices with the same shape.
+[`BNNSScatter(_:_:_:_:_:_:)`](./bnnsscatter%28_,_,_,_,_,_%29.md) supports scattering from a tensor with two or more dimensions using indices with the same shape.
 
 In the following example, the index values specify the destination row and the operation derives the destination column from the input value’s column. For example, the input value `10`, in column `0` of the input tensor, has the corresponding index `4` in the indices tensor.
 
@@ -147,21 +154,22 @@ In particular, if you define the reduction as `BNNSReduceFunctionNone` the funct
 
 ## See Also
 
-- [Calculating the dominant colors in an image](calculating-the-dominant-colors-in-an-image.md)
+### Gather and scatter operations
+- [Calculating the dominant colors in an image](./calculating-the-dominant-colors-in-an-image.md)
   Find the main colors in an image by implementing k-means clustering using the Accelerate framework.
-- [static func gather(input: BNNSNDArrayDescriptor, indices: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int, filterParameters: BNNSFilterParameters?) throws](bnns/gather(input:indices:output:axis:filterparameters:).md)
+- [static func gather(input: BNNSNDArrayDescriptor, indices: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int, filterParameters: BNNSFilterParameters?) throws](./bnns/gather%28input,indices,output,axis,filterparameters%29.md)
   Gathers the elements of a tensor along a single axis.
-- [static func gatherND(input: BNNSNDArrayDescriptor, indices: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, filterParameters: BNNSFilterParameters?) throws](bnns/gathernd(input:indices:output:filterparameters:).md)
+- [static func gatherND(input: BNNSNDArrayDescriptor, indices: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, filterParameters: BNNSFilterParameters?) throws](./bnns/gathernd%28input,indices,output,filterparameters%29.md)
   Gathers the slices of a tensor.
-- [static func scatter(input: BNNSNDArrayDescriptor, indices: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int, reductionFunction: BNNS.ReductionFunction, filterParameters: BNNSFilterParameters?) throws](bnns/scatter(input:indices:output:axis:reductionfunction:filterparameters:).md)
+- [static func scatter(input: BNNSNDArrayDescriptor, indices: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, axis: Int, reductionFunction: BNNS.ReductionFunction, filterParameters: BNNSFilterParameters?) throws](./bnns/scatter%28input,indices,output,axis,reductionfunction,filterparameters%29.md)
   Scatters the elements of a tensor along a single axis.
-- [static func scatterND(input: BNNSNDArrayDescriptor, indices: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, reductionFunction: BNNS.ReductionFunction, filterParameters: BNNSFilterParameters?) throws](bnns/scatternd(input:indices:output:reductionfunction:filterparameters:).md)
+- [static func scatterND(input: BNNSNDArrayDescriptor, indices: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, reductionFunction: BNNS.ReductionFunction, filterParameters: BNNSFilterParameters?) throws](./bnns/scatternd%28input,indices,output,reductionfunction,filterparameters%29.md)
   Scatters the slices of a tensor.
-- [func BNNSGather(Int, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnsgather(_:_:_:_:_:).md)
+- [func BNNSGather(Int, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnsgather%28_,_,_,_,_%29.md)
   Gathers the elements of a tensor along a single axis.
-- [func BNNSGatherND(UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnsgathernd(_:_:_:_:).md)
+- [func BNNSGatherND(UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnsgathernd%28_,_,_,_%29.md)
   Gathers the slices of a tensor.
-- [func BNNSScatterND(BNNSReduceFunction, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](bnnsscatternd(_:_:_:_:_:).md)
+- [func BNNSScatterND(BNNSReduceFunction, UnsafePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSNDArrayDescriptor>, UnsafeMutablePointer<BNNSNDArrayDescriptor>, UnsafePointer<BNNSFilterParameters>?) -> Int32](./bnnsscatternd%28_,_,_,_,_%29.md)
   Scatters the slices of a tensor.
 
 

@@ -1,7 +1,8 @@
 # MTLTensorAuxiliaryPlaneType
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An auxiliary plane that a shader’s tensor argument requires.
 
@@ -19,27 +20,31 @@ An auxiliary plane that a shader’s tensor argument requires.
 class MTLTensorAuxiliaryPlaneType
 ```
 
+```objc
+@interface MTLTensorAuxiliaryPlaneType : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var blockFactors: MTLTensorExtents](mtltensorauxiliaryplanetype/blockfactors.md)
+- [var blockFactors: MTLTensorExtents](./mtltensorauxiliaryplanetype/blockfactors.md)
   The number of data plane elements that correspond to one element in this plane.
-- [var dataType: MTLTensorDataType](mtltensorauxiliaryplanetype/datatype.md)
+- [var dataType: MTLTensorDataType](./mtltensorauxiliaryplanetype/datatype.md)
   The data format of all elements in the plane.
-- [var planeType: MTLTensorPlaneType](mtltensorauxiliaryplanetype/planetype.md)
+- [var planeType: MTLTensorPlaneType](./mtltensorauxiliaryplanetype/planetype.md)
   The type of information this plane stores.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

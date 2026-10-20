@@ -1,7 +1,8 @@
 # random()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a vector mask with `true` or `false` randomly assigned in each lane.
 
@@ -19,6 +20,8 @@ Returns a vector mask with `true` or `false` randomly assigned in each lane.
 ```swift
 static func random() -> SIMDMask<Storage>
 ```
+
+Available when `Storage` conforms to `SIMD`, `Storage.Scalar` conforms to `FixedWidthInteger`, and `Storage.Scalar` conforms to `SignedInteger`.
 
 
 ---

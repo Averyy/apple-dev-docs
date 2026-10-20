@@ -1,7 +1,8 @@
 # notReceiver
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The task in question does not hold receive rights for the port argument.
 

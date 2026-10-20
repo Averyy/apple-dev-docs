@@ -1,7 +1,8 @@
 # BNNSGraph.Builder.ScatterMode.maximum
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The operation writes the maximum of the existing value and the scattered value.
 

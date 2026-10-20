@@ -1,7 +1,8 @@
 # identity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identity variant of glass. When applied, your content remains unaffected as if no glass effect was applied.
 

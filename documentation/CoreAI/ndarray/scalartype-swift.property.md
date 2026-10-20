@@ -1,7 +1,8 @@
 # scalarType
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scalar type of the array.
 
@@ -20,11 +21,12 @@ var scalarType: NDArray.ScalarType { get }
 
 ## See Also
 
-- [var shape: [Int]](ndarray/shape.md)
+### Inspecting an array
+- [var shape: [Int]](./shape.md)
   The length of each dimension of the array.
-- [var strides: [Int]](ndarray/strides.md)
+- [var strides: [Int]](./strides.md)
   The distance, in elements, between consecutive values along each dimension.
-- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/interleavelayout-swift.property.md)
+- [var interleaveLayout: NDArray.InterleaveLayout?](./interleavelayout-swift.property.md)
   Returns the interleaved layout of this ndArray, or `nil` if there is no interleave.
 
 

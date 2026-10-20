@@ -1,7 +1,8 @@
 # kMDItemOriginalFormat
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Original format of the movie. A CFString.
 
@@ -12,6 +13,10 @@ Original format of the movie. A CFString.
 
 ```swift
 let kMDItemOriginalFormat: CFString!
+```
+
+```c
+const CFStringRef kMDItemOriginalFormat;
 ```
 
 

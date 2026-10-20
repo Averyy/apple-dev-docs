@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an empty description.
 
@@ -22,7 +23,8 @@ init()
 
 ## See Also
 
-- [init(mSampleRate: Float64, mFormatID: AudioFormatID, mFormatFlags: AudioFormatFlags, mBytesPerPacket: UInt32, mFramesPerPacket: UInt32, mBytesPerFrame: UInt32, mChannelsPerFrame: UInt32, mBitsPerChannel: UInt32, mReserved: UInt32)](audiostreambasicdescription/init(msamplerate:mformatid:mformatflags:mbytesperpacket:mframesperpacket:mbytesperframe:mchannelsperframe:mbitsperchannel:mreserved:).md)
+### Initializers
+- [init(mSampleRate: Float64, mFormatID: AudioFormatID, mFormatFlags: AudioFormatFlags, mBytesPerPacket: UInt32, mFramesPerPacket: UInt32, mBytesPerFrame: UInt32, mChannelsPerFrame: UInt32, mBitsPerChannel: UInt32, mReserved: UInt32)](./init%28msamplerate,mformatid,mformatflags,mbytesperpacket,mframesperpacket,mbytesperframe,mchannelsperframe,mbitsperchannel,mreserved%29.md)
   Creates a description with the specified values.
 
 

@@ -1,6 +1,7 @@
 # Hearing device support
 
-**Framework**: Accessibility
+**Framework**: Accessibility  
+**Role**: API Collection
 
 Access information about paired hearing aid devices and streaming status.
 
@@ -19,31 +20,32 @@ Use this API to check:
 ## Topics
 
 ### Hearing devices
-- [struct AXMFiHearingDevice](axmfihearingdevice.md)
+- [struct AXMFiHearingDevice](./axmfihearingdevice.md)
   A namespace for hearing device accessibility symbols in Swift.
 ### Streaming status
-- [AXMFiHearingDevice.Ear](axmfihearingdevice/ear.md)
+- [AXMFiHearingDevice.Ear](./axmfihearingdevice/ear.md)
   Constants that represent a hearing device ear.
-- [static func streamingEar() -> AXMFiHearingDevice.Ear](axmfihearingdevice/streamingear.md)
+- [static func streamingEar() -> AXMFiHearingDevice.Ear](./axmfihearingdevice/streamingear%28%29.md)
   Returns which ears enable streaming.
-- [static let streamingEarDidChangeNotification: NSNotification.Name](axmfihearingdevice/streamingeardidchangenotification.md)
+- [static let streamingEarDidChangeNotification: NSNotification.Name](./axmfihearingdevice/streamingeardidchangenotification.md)
   A notification that the system posts when there’s a change to which ears enable streaming.
 ### Streaming type
-- [static func supportsBidirectionalStreaming() -> Bool](axmfihearingdevice/supportsbidirectionalstreaming.md)
+- [static func supportsBidirectionalStreaming() -> Bool](./axmfihearingdevice/supportsbidirectionalstreaming%28%29.md)
   Returns a Boolean value that indicates whether the iOS device supports bidirectional streaming.
 ### Paired hearing devices
-- [static func pairedDeviceIdentifiers() -> [UUID]](axmfihearingdevice/paireddeviceidentifiers.md)
+- [static func pairedDeviceIdentifiers() -> [UUID]](./axmfihearingdevice/paireddeviceidentifiers%28%29.md)
   Returns the UUIDs of the hearing device peripherals.
-- [static let pairedUUIDsDidChangeNotification: NSNotification.Name](axmfihearingdevice/paireduuidsdidchangenotification.md)
+- [static let pairedUUIDsDidChangeNotification: NSNotification.Name](./axmfihearingdevice/paireduuidsdidchangenotification.md)
   A notification that the system posts when there’s a change to the UUIDs of the hearing device peripherals.
 
 ## See Also
 
-- [Customized accessibility content](customized-accessibility-content.md)
+### Features
+- [Customized accessibility content](./customized-accessibility-content.md)
   Customize your apps to deliver accessibility information to your users in measured portions as they need it.
-- [Audio graphs](audio-graphs.md)
+- [Audio graphs](./audio-graphs.md)
   Define an accessible representation of your chart for VoiceOver to generate an audio graph.
-- [func AXNameFromColor(CGColor) -> String](axnamefromcolor(_:).md)
+- [func AXNameFromColor(CGColor) -> String](./axnamefromcolor%28_%29.md)
   Returns a localized description of the color to use in accessibility attributes.
 
 

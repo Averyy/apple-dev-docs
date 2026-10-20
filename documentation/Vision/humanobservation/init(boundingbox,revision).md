@@ -1,7 +1,8 @@
 # init(boundingBox:revision:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -20,7 +21,8 @@ init(boundingBox: NormalizedRect, revision: DetectHumanRectanglesRequest.Revisio
 
 ## See Also
 
-- [init(VNHumanObservation)](humanobservation/init(_:).md)
+### Creating an observation
+- [init(VNHumanObservation)](./init%28_%29.md)
   Creates a human observation.
 
 

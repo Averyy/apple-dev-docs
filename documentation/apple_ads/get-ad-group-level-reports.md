@@ -1,23 +1,26 @@
 # Get Ad Group-Level Reports
 
 **Framework**: Apple Ads  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Fetches reports for ad groups within a campaign.
 
 **Availability**:
-- Search Ads 5.0+
+- Search Ads 5.0+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Mentions
 
-- [Apple Ads Campaign Management API 4](apple-search-ads-campaign-management-api-4.md)
-- [Apple Ads Campaign Management API 5](apple-search-ads-campaign-management-api-5.md)
+- [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
+- [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
 #### Discussion
 
-Use this endpoint to fetch reports for your ad groups in campaigns. See [`ReportingAdGroup`](reportingadgroup.md) for [`Condition`](condition.md) operators and field values to filter results with an object [`Selector`](selector.md). See the `groupBy` parameter description in the [`ReportingRequest`](reportingrequest.md) for supported values per targeting dimension. The `orderBy` [`Selector`](selector.md) specifies fields to sort the records list by `ASCENDING` or `DESCENDING`. All [`ReportingAdGroup`](reportingadgroup.md) fields are available to the `orderBy` [`Selector`](selector.md) except `adGroupServingStateReasons`.
+Use this endpoint to fetch reports for your ad groups in campaigns. See [`ReportingAdGroup`](./reportingadgroup.md) for [`Condition`](./condition.md) operators and field values to filter results with an object [`Selector`](./selector.md). See the `groupBy` parameter description in the [`ReportingRequest`](./reportingrequest.md) for supported values per targeting dimension. The `orderBy` [`Selector`](./selector.md) specifies fields to sort the records list by `ASCENDING` or `DESCENDING`. All [`ReportingAdGroup`](./reportingadgroup.md) fields are available to the `orderBy` [`Selector`](./selector.md) except `adGroupServingStateReasons`.
 
-##### Payload Example Ad Group Level Reports Using Targeting Criteria
+##### Payload example: Ad group-level reports using targeting criteria
 
 **Request**:
 
@@ -223,7 +226,7 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/adgro
 }
 ```
 
-##### Payload Example Ad Group Level Reports with Manual Ad Groups
+##### Payload example: Ad group-level reports with manual ad groups
 
 **Request**:
 
@@ -379,7 +382,7 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/adgro
   }
 ```
 
-##### Payload Example Ad Group Level Reports with a Maximize Campaigns Bid Strategy
+##### Payload example: Ad group-level reports with a Maximize Campaigns bid strategy
 
 In Maximize Conversions bidding strategy in campaigns, you can use `biddingStrategy` and `automatedKeywordsRequired` in a selector for conditions and ordering. The `defaultBidAmount` is `0` and `cpaGoal` is `null`.
 
@@ -468,25 +471,41 @@ POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/adgro
 
 ## Parameters
 
+### Path Parameters
+
 - `campaignId` (int64) *(required)*: The unique identifier for the campaign.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `ReportingRequest`
+
 The report request body consisting of metrics and dimensions to use as filters.
+
+## Responses
+
+- `200` OK (`ReportingResponseBody`, `application/json`): If the call succeeds, the API returns the [`ReportingResponse`](./reportingresponse.md) object in the response payload with an HTTP status code of `200(OK)`. If unsuccessful, the HTTP status code indicates the error with details in the error message.
+- `400` Bad Request (`ApiErrorResponse`, `application/json`): An invalid query or missing required parameters.
+- `401` Unauthorized (`ApiErrorResponse`, `application/json`): An unauthenticated call fails to get the requested response.
+- `403` Forbidden (`ApiErrorResponse`, `application/json`): Insufficient rights to the resource.
+- `404` Not Found (`ApiErrorResponse`, `application/json`): The API can’t locate the resource.
+- `429` (`ApiErrorResponse`, `application/json`): The API calls exceed rate-limit thresholds. See the Rate Limits subsection of [Calling the Apple Ads API](./calling-the-apple-search-ads-api.md).
+- `500` Internal Server Error (`ApiErrorResponse`, `application/json`): The Apple Ads server is temporarily down or unreachable. The request may be valid, but you need to retry it later.
 
 ## See Also
 
-- [Get Campaign-Level Reports](get-campaign-level-reports.md)
+### Reports Endpoints
+- [Get Campaign-Level Reports](./get-campaign-level-reports.md)
   Fetches reports for campaigns.
-- [Get Keyword-Level Reports](get-keyword-level-reports.md)
+- [Get Keyword-Level Reports](./get-keyword-level-reports.md)
   Fetches reports for targeting keywords within a campaign.
-- [Get Keyword-Level within Ad Group Reports](get-keyword-level-within-ad-group-reports.md)
+- [Get Keyword-Level within Ad Group Reports](./get-keyword-level-within-ad-group-reports.md)
   Fetches reports for targeting keywords within an ad group.
-- [Get Search Term-Level Reports](get-search-term-level-reports.md)
+- [Get Search Term-Level Reports](./get-search-term-level-reports.md)
   Fetches reports for search terms within a campaign.
-- [Get Search Term-Level within Ad Group Reports](get-search-term-level-within-ad-group-reports.md)
+- [Get Search Term-Level within Ad Group Reports](./get-search-term-level-within-ad-group-reports.md)
   Fetches reports for search terms within an ad group.
-- [Get Ad-Level Reports](get-ad-level-reports.md)
+- [Get Ad-Level Reports](./get-ad-level-reports.md)
   Fetches ad performance data within a campaign.
 
 

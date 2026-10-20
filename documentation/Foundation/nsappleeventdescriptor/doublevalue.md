@@ -1,7 +1,8 @@
 # doubleValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents of the receiver as a double value, coercing (to `typeIEEE64BitFloatingPoint`) if necessary.
 
@@ -12,6 +13,10 @@ The contents of the receiver as a double value, coercing (to `typeIEEE64BitFloat
 
 ```swift
 var doubleValue: Double { get }
+```
+
+```objc
+@property (readonly) double doubleValue;
 ```
 
 

@@ -1,7 +1,8 @@
 # HMMediaSourceDisplayOrderProfile
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An interface from which to read and, if allowed by the accessory, update the ordering of input sources.
 
@@ -22,51 +23,52 @@ class HMMediaSourceDisplayOrderProfile
 
 #### Overview
 
-This class represents a media source display that orders functionality for the [`HMServiceTypeTelevision`](hmservicetypetelevision.md) service contained in the services array of the profile.
+This class represents a media source display that orders functionality for the [`HMServiceTypeTelevision`](./hmservicetypetelevision.md) service contained in the services array of the profile.
 
 ## Topics
 
 ### Managing input source order
-- [func writeOrder([Int]) async throws](hmmediasourcedisplayorderprofile/writeorder(_:).md)
+- [func writeOrder([Int]) async throws](./hmmediasourcedisplayorderprofile/writeorder%28_%29.md)
   Writes the display order of the media sources to the accessory.
-- [var delegate: (any HMMediaSourceDisplayOrderProfile.Delegate)?](hmmediasourcedisplayorderprofile/delegate-swift.property.md)
+- [var delegate: (any HMMediaSourceDisplayOrderProfile.Delegate)?](./hmmediasourcedisplayorderprofile/delegate-swift.property.md)
   The property that handles updates to the display order.
-- [var order: [Int]](hmmediasourcedisplayorderprofile/order.md)
+- [var order: [Int]](./hmmediasourcedisplayorderprofile/order.md)
   The display order of input media sources.
-- [let canModifyOrder: Bool](hmmediasourcedisplayorderprofile/canmodifyorder.md)
+- [let canModifyOrder: Bool](./hmmediasourcedisplayorderprofile/canmodifyorder.md)
   A Boolean that indicates if the display order of the input media sources can be modified.
-- [HMMediaSourceDisplayOrderProfile.Delegate](hmmediasourcedisplayorderprofile/delegate-swift.protocol.md)
+- [HMMediaSourceDisplayOrderProfile.Delegate](./hmmediasourcedisplayorderprofile/delegate-swift.protocol.md)
   The protocol through which a delegate receives updates on the order of input media sources.
 
 ## Relationships
 
 ### Inherits From
-- [HMAccessoryProfile](hmaccessoryprofile.md)
+- [HMAccessoryProfile](./hmaccessoryprofile.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class HMAccessorySetupManager](hmaccessorysetupmanager.md)
+### Accessories
+- [class HMAccessorySetupManager](./hmaccessorysetupmanager.md)
   An object that setups up new accessories.
-- [class HMAccessorySetupResult](hmaccessorysetupresult.md)
+- [class HMAccessorySetupResult](./hmaccessorysetupresult.md)
   A result object describing information about a successful accessory setup request.
-- [class HMAccessorySetupRequest](hmaccessorysetuprequest.md)
+- [class HMAccessorySetupRequest](./hmaccessorysetuprequest.md)
   An object that describes how to add and setup up new accessories.
-- [Interacting with a home automation network](interacting-with-a-home-automation-network.md)
+- [Interacting with a home automation network](./interacting-with-a-home-automation-network.md)
   Find all the automation accessories in the primary home and control their state.
-- [class HMAccessory](hmaccessory.md)
+- [class HMAccessory](./hmaccessory.md)
   A home automation accessory, like a garage door opener or a thermostat.
-- [class HMService](hmservice.md)
+- [class HMService](./hmservice.md)
   A controllable feature of an accessory, like a light attached to a garage door opener.
-- [class HMCharacteristic](hmcharacteristic.md)
+- [class HMCharacteristic](./hmcharacteristic.md)
   A specific characteristic of a service, like the brightness of a dimmable light or its color temperature.
 
 

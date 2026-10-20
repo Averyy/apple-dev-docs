@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate to be notified.
 
@@ -17,13 +18,18 @@ The delegate to be notified.
 weak var delegate: (any CNContactViewControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<CNContactViewControllerDelegate> delegate;
+```
+
 #### Discussion
 
 The notification is sent when the user selects a property, or when the contact view controller is dismissed by its parent.
 
 ## See Also
 
-- [protocol CNContactViewControllerDelegate](cncontactviewcontrollerdelegate.md)
+### Handling Interactions with the Interface
+- [protocol CNContactViewControllerDelegate](../cncontactviewcontrollerdelegate.md)
   Methods you use to respond to user interactions with a contact view controller.
 
 

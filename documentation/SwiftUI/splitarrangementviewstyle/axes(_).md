@@ -1,7 +1,8 @@
 # axes(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a split arrangement that lays out its views along the axes you provide.
 

@@ -1,7 +1,8 @@
 # spatialPlaybackCapabilitiesChangedNotification
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when its spatial playback capabilities change.
 
@@ -19,31 +20,36 @@ A notification the system posts when its spatial playback capabilities change.
 class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVAudioSessionSpatialPlaybackCapabilitiesChangedNotification;
+```
+
 #### Discussion
 
 The system posts this notification when spatial playback capabilities change due to a change in user preference.
 
-The `userInfo` dictionary of this notification contains the [`AVAudioSessionSpatialAudioEnabledKey`](avaudiosessionspatialaudioenabledkey.md) key, which indicates whether spatial audio is in an enabled state.
+The `userInfo` dictionary of this notification contains the [`AVAudioSessionSpatialAudioEnabledKey`](../avaudiosessionspatialaudioenabledkey.md) key, which indicates whether spatial audio is in an enabled state.
 
-A route change may result in a change in the ability for the system to play spatial audio, so observe [`routeChangeNotification`](avaudiosession/routechangenotification.md) and use the [`isSpatialAudioEnabled`](avaudiosessionportdescription/isspatialaudioenabled.md) property to check if the current route supports spatialized playback.
+A route change may result in a change in the ability for the system to play spatial audio, so observe [`routeChangeNotification`](./routechangenotification.md) and use the [`isSpatialAudioEnabled`](../avaudiosessionportdescription/isspatialaudioenabled.md) property to check if the current route supports spatialized playback.
 
 ## Topics
 
 ### User info keys
-- [let AVAudioSessionSpatialAudioEnabledKey: String](avaudiosessionspatialaudioenabledkey.md)
+- [let AVAudioSessionSpatialAudioEnabledKey: String](../avaudiosessionspatialaudioenabledkey.md)
   A user info key that you use to retrieve the state of spatial playback.
 
 ## See Also
 
-- [var renderingMode: AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.property.md)
+### Inspecting rendering capabilities
+- [var renderingMode: AVAudioSession.RenderingMode](./renderingmode-swift.property.md)
   The current audio session’s rendering mode.
-- [AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.enum.md)
+- [AVAudioSession.RenderingMode](./renderingmode-swift.enum.md)
   Audio session rendering mode identifiers.
-- [class let renderingModeChangeNotification: NSNotification.Name](avaudiosession/renderingmodechangenotification.md)
+- [class let renderingModeChangeNotification: NSNotification.Name](./renderingmodechangenotification.md)
   A notification the system posts when the rendering mode changes.
-- [var supportedOutputChannelLayouts: [AVAudioChannelLayout]](avaudiosession/supportedoutputchannellayouts.md)
+- [var supportedOutputChannelLayouts: [AVAudioChannelLayout]](./supportedoutputchannellayouts.md)
   The array of channel layouts that the current route supports.
-- [class let renderingCapabilitiesChangeNotification: NSNotification.Name](avaudiosession/renderingcapabilitieschangenotification.md)
+- [class let renderingCapabilitiesChangeNotification: NSNotification.Name](./renderingcapabilitieschangenotification.md)
   A notification the system posts when the rendering capabilities change.
 
 

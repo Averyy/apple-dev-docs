@@ -1,7 +1,8 @@
 # strokeLineSegments(between:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Strokes a sequence of line segments.
 
@@ -30,19 +31,20 @@ This function creates a new path, adds the individual line segments to the path,
 
 ## See Also
 
-- [func clear(CGRect)](cgcontext/clear(_:).md)
+### Drawing Shapes
+- [func clear(CGRect)](./clear%28_%29.md)
   Paints a transparent rectangle.
-- [func fill(CGRect)](cgcontext/fill(_:)-7a0rk.md)
+- [func fill(CGRect)](./fill%28_%29-7a0rk.md)
   Paints the area contained within the provided rectangle, using the fill color in the current graphics state.
-- [func fill([CGRect])](cgcontext/fill(_:)-6jc4y.md)
+- [func fill([CGRect])](./fill%28_%29-6jc4y.md)
   Paints the areas contained within the provided rectangles, using the fill color in the current graphics state.
-- [func fillEllipse(in: CGRect)](cgcontext/fillellipse(in:).md)
+- [func fillEllipse(in: CGRect)](./fillellipse%28in%29.md)
   Paints the area of the ellipse that fits inside the provided rectangle, using the fill color in the current graphics state.
-- [func stroke(CGRect)](cgcontext/stroke(_:).md)
+- [func stroke(CGRect)](./stroke%28_%29.md)
   Paints a rectangular path.
-- [func stroke(CGRect, width: CGFloat)](cgcontext/stroke(_:width:).md)
+- [func stroke(CGRect, width: CGFloat)](./stroke%28_,width%29.md)
   Paints a rectangular path, using the specified line width.
-- [func strokeEllipse(in: CGRect)](cgcontext/strokeellipse(in:).md)
+- [func strokeEllipse(in: CGRect)](./strokeellipse%28in%29.md)
   Strokes an ellipse that fits inside the specified rectangle.
 
 

@@ -1,7 +1,8 @@
 # advanced(by:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ func advanced(by n: DispatchQueue.SchedulerTimeType.Stride) -> DispatchQueue.Sch
 
 ## See Also
 
-- [func distance(to: DispatchQueue.SchedulerTimeType) -> DispatchQueue.SchedulerTimeType.Stride](dispatchqueue/schedulertimetype/distance(to:).md)
+### Working with Scheduler Time Intervals
+- [func distance(to: DispatchQueue.SchedulerTimeType) -> DispatchQueue.SchedulerTimeType.Stride](./distance%28to%29.md)
 
 
 ---

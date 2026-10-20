@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale to use for comparison if the comparator is localized, otherwise nil.
 

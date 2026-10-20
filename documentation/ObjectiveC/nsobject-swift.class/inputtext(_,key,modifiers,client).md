@@ -1,12 +1,13 @@
 # inputText(_:key:modifiers:client:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Receives Unicode, the key code that generated it, and any modifier flags.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Receives Unicode, the key code that generated it, and any modifier flags.
 func inputText(_ string: String!, key keyCode: Int, modifiers flags: Int, client sender: Any!) -> Bool
 ```
 
+```objc
+- (BOOL) inputText:(NSString *) string key:(NSInteger) keyCode modifiers:(NSUInteger) flags client:(id) sender;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the input is  accepted; otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the input is  accepted; otherwise [`NO`](../no.md).
 
 ## Parameters
 

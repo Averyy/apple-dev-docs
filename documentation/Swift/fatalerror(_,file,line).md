@@ -1,7 +1,8 @@
 # fatalError(_:file:line:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Unconditionally prints a given message and stops execution.
 
@@ -28,7 +29,8 @@ func fatalError(_ message: @autoclosure () -> String = String(), file: StaticStr
 
 ## See Also
 
-- [enum Never](never.md)
+### Exiting a Program
+- [enum Never](./never.md)
   A type that has no values and can’t be constructed.
 
 

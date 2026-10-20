@@ -1,7 +1,8 @@
 # targetFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame in which to display the new content.
 
@@ -19,17 +20,22 @@ The frame in which to display the new content.
 var targetFrame: WKFrameInfo? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) WKFrameInfo * targetFrame;
+```
+
 #### Discussion
 
 If the target of the navigation is a new window, this property is `nil`.
 
 ## See Also
 
-- [var request: URLRequest](wknavigationaction/request.md)
+### Inspecting navigation information
+- [var request: URLRequest](./request.md)
   The URL request object associated with the navigation action.
-- [var sourceFrame: WKFrameInfo](wknavigationaction/sourceframe.md)
+- [var sourceFrame: WKFrameInfo](./sourceframe.md)
   The frame that requested the navigation.
-- [var shouldPerformDownload: Bool](wknavigationaction/shouldperformdownload.md)
+- [var shouldPerformDownload: Bool](./shouldperformdownload.md)
   A Boolean value that indicates whether the web content provided an attribute that indicates a download.
 
 

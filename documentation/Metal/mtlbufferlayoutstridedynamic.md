@@ -1,7 +1,8 @@
 # MTLBufferLayoutStrideDynamic
 
 **Framework**: Metal  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 17.0+
@@ -17,17 +18,22 @@
 var MTLBufferLayoutStrideDynamic: Int { get }
 ```
 
+```c
+static const NSUInteger MTLBufferLayoutStrideDynamic;
+```
+
 ## See Also
 
-- [class MTLVertexDescriptor](mtlvertexdescriptor.md)
+### Render pass inputs
+- [class MTLVertexDescriptor](./mtlvertexdescriptor.md)
   An instance that describes how to organize and map data to a vertex function.
-- [class MTLVertexAttributeDescriptor](mtlvertexattributedescriptor.md)
+- [class MTLVertexAttributeDescriptor](./mtlvertexattributedescriptor.md)
   An object that determines how to store attribute data in memory and map it to the arguments of a vertex function.
-- [class MTLVertexAttributeDescriptorArray](mtlvertexattributedescriptorarray.md)
+- [class MTLVertexAttributeDescriptorArray](./mtlvertexattributedescriptorarray.md)
   An array of vertex attribute descriptor instances.
-- [class MTLVertexBufferLayoutDescriptor](mtlvertexbufferlayoutdescriptor.md)
+- [class MTLVertexBufferLayoutDescriptor](./mtlvertexbufferlayoutdescriptor.md)
   An object that configures how a render pipeline fetches data to send to the vertex function.
-- [class MTLVertexBufferLayoutDescriptorArray](mtlvertexbufferlayoutdescriptorarray.md)
+- [class MTLVertexBufferLayoutDescriptorArray](./mtlvertexbufferlayoutdescriptorarray.md)
   An array of vertex buffer layout descriptor instances.
 
 

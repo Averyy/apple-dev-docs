@@ -1,7 +1,8 @@
 # accessibilityFocused(_:equals:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies this view by binding its accessibility element’s focus state to the given state value.
 
@@ -32,9 +33,10 @@ The modified view.
 
 ## See Also
 
-- [func accessibilityFocused(AccessibilityFocusState<Bool>.Binding) -> some View](view/accessibilityfocused(_:).md)
+### Controlling focus
+- [func accessibilityFocused(AccessibilityFocusState<Bool>.Binding) -> some View](./accessibilityfocused%28_%29.md)
   Modifies this view by binding its accessibility element’s focus state to the given boolean state value.
-- [struct AccessibilityFocusState](accessibilityfocusstate.md)
+- [struct AccessibilityFocusState](../accessibilityfocusstate.md)
   A property wrapper type that can read and write a value that SwiftUI updates as the focus of any active accessibility technology, such as VoiceOver, changes.
 
 

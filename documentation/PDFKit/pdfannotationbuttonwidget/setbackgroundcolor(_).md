@@ -1,17 +1,22 @@
 # setBackgroundColor(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the control’s background color.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setBackgroundColor(_ color: NSColor!)
+```
+
+```objc
+- (void) setBackgroundColor:(NSColor *) color;
 ```
 
 ## Parameters
@@ -20,7 +25,8 @@ func setBackgroundColor(_ color: NSColor!)
 
 ## See Also
 
-- [func backgroundColor() -> NSColor!](pdfannotationbuttonwidget/backgroundcolor.md)
+### Getting and Setting the Control’s Appearance
+- [func backgroundColor() -> NSColor!](./backgroundcolor%28%29.md)
   Returns the background color of the control.
 
 

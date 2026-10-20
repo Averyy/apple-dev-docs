@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic window toolbar style.
 
@@ -15,18 +16,21 @@ The automatic window toolbar style.
 static var automatic: DefaultWindowToolbarStyle { get }
 ```
 
+Available when `Self` is `DefaultWindowToolbarStyle`.
+
 ## See Also
 
-- [static var expanded: ExpandedWindowToolbarStyle](windowtoolbarstyle/expanded.md)
+### Getting built-in window toolbar styles
+- [static var expanded: ExpandedWindowToolbarStyle](./expanded.md)
   A window toolbar style which displays its title bar area above the toolbar.
-- [static var unified: UnifiedWindowToolbarStyle](windowtoolbarstyle/unified.md)
+- [static var unified: UnifiedWindowToolbarStyle](./unified.md)
   A window toolbar style which displays its toolbar and title bar inline.
-- [static func unified(showsTitle: Bool) -> UnifiedWindowToolbarStyle](windowtoolbarstyle/unified(showstitle:).md)
+- [static func unified(showsTitle: Bool) -> UnifiedWindowToolbarStyle](./unified%28showstitle%29.md)
   A window toolbar style which displays its toolbar and title bar inline.
-- [static var unifiedCompact: UnifiedCompactWindowToolbarStyle](windowtoolbarstyle/unifiedcompact.md)
-  A window toolbar style similar to [`unified`](windowtoolbarstyle/unified.md), but with a more compact vertical sizing.
-- [static func unifiedCompact(showsTitle: Bool) -> UnifiedCompactWindowToolbarStyle](windowtoolbarstyle/unifiedcompact(showstitle:).md)
-  A window toolbar style similar to [`unified`](windowtoolbarstyle/unified.md), but with a more compact vertical sizing.
+- [static var unifiedCompact: UnifiedCompactWindowToolbarStyle](./unifiedcompact.md)
+  A window toolbar style similar to [`unified`](./unified.md), but with a more compact vertical sizing.
+- [static func unifiedCompact(showsTitle: Bool) -> UnifiedCompactWindowToolbarStyle](./unifiedcompact%28showstitle%29.md)
+  A window toolbar style similar to [`unified`](./unified.md), but with a more compact vertical sizing.
 
 
 ---

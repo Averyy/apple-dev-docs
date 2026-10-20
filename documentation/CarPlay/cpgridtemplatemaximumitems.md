@@ -1,7 +1,8 @@
 # CPGridTemplateMaximumItems
 
 **Framework**: CarPlay  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The maximum number of buttons that a grid template displays.
 
@@ -16,9 +17,14 @@ The maximum number of buttons that a grid template displays.
 let CPGridTemplateMaximumItems: Int
 ```
 
+```c
+extern const NSUInteger CPGridTemplateMaximumItems;
+```
+
 ## See Also
 
-- [let CPMaximumListSectionImageSize: CGSize](cpmaximumlistsectionimagesize.md)
+### Constants
+- [let CPMaximumListSectionImageSize: CGSize](./cpmaximumlistsectionimagesize.md)
   The maximum size of an image in a list section.
 
 

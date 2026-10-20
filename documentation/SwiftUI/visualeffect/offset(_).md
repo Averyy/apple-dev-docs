@@ -1,7 +1,8 @@
 # offset(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Offsets the view by the horizontal and vertical amount specified in the offset parameter.
 
@@ -30,9 +31,10 @@ An effect that offsets the view by `offset`.
 
 ## See Also
 
-- [func offset(x: CGFloat, y: CGFloat) -> some VisualEffect](visualeffect/offset(x:y:).md)
+### Translating
+- [func offset(x: CGFloat, y: CGFloat) -> some VisualEffect](./offset%28x,y%29.md)
   Offsets the view by the specified horizontal and vertical distances.
-- [func offset(z: CGFloat) -> some VisualEffect](visualeffect/offset(z:).md)
+- [func offset(z: CGFloat) -> some VisualEffect](./offset%28z%29.md)
   Brings a view forward in Z by the provided distance in points.
 
 

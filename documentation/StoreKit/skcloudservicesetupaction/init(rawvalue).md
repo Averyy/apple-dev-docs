@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a setup action to offer for a cloud service using the specified value.
 

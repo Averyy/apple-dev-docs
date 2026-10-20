@@ -1,7 +1,8 @@
 # SlidingWindows
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A sequence of windows on a time series shaped array.
 
@@ -24,7 +25,7 @@ struct SlidingWindows<Scalar> where Scalar : MLShapedArrayScalar
 
 The shape of each window in the sequence is `[length, featureSize]`. The sequence will return as many windows as fit in the input. For example, an input shaped array of shape `[8, 1]` using `stride` of 1 and `length` of 4 will produce 5 examples:
 
-```None
+```
 [[1], [2], [3], [4]]
 [[2], [3], [4], [5]]
 [[3], [4], [5], [6]]
@@ -35,71 +36,72 @@ The shape of each window in the sequence is `[length, featureSize]`. The sequenc
 ## Topics
 
 ### Creating a sliding window
-- [init(input: MLShapedArray<Scalar>, length: Int, stride: Int) throws](slidingwindows/init(input:length:stride:).md)
+- [init(input: MLShapedArray<Scalar>, length: Int, stride: Int) throws](./slidingwindows/init%28input,length,stride%29.md)
   Creates a sliding windows sequence.
 ### Inspecting the sliding window
-- [var endIndex: Int](slidingwindows/endindex.md)
+- [var endIndex: Int](./slidingwindows/endindex.md)
   The collection’s “past the end” position–that is, the position one greater than the last valid subscript argument.
-- [let input: MLShapedArray<Scalar>](slidingwindows/input.md)
+- [let input: MLShapedArray<Scalar>](./slidingwindows/input.md)
   The input shaped array.
-- [let length: Int](slidingwindows/length.md)
+- [let length: Int](./slidingwindows/length.md)
   The number samples in each window.
-- [var startIndex: Int](slidingwindows/startindex.md)
+- [var startIndex: Int](./slidingwindows/startindex.md)
   The position of the first window.
-- [let stride: Int](slidingwindows/stride.md)
+- [let stride: Int](./slidingwindows/stride.md)
   The number of samples between windows.
 ### Getting the index
-- [func index(Int, offsetBy: Int) -> Int](slidingwindows/index(_:offsetby:).md)
+- [func index(Int, offsetBy: Int) -> Int](./slidingwindows/index%28_,offsetby%29.md)
   Returns an index that is the specified distance from the given index.
-- [func index(after: Int) -> Int](slidingwindows/index(after:).md)
+- [func index(after: Int) -> Int](./slidingwindows/index%28after%29.md)
   Returns the position immediately after the given index.
-- [func index(before: Int) -> Int](slidingwindows/index(before:).md)
+- [func index(before: Int) -> Int](./slidingwindows/index%28before%29.md)
   Returns the position immediately before the given index.
 ### Getting the subscript
-- [subscript(_:)](slidingwindows/subscript(_:).md)
+- [subscript(_:)](./slidingwindows/subscript%28_%29.md)
   Accesses a contiguous range of windows.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [Creating a time-series classifier](creating-a-time-series-classifier.md)
+### Time-based components
+- [Creating a time-series classifier](./creating-a-time-series-classifier.md)
   Train a machine learning model to predict the class label of time-series signals.
-- [Creating a time-series forecaster](creating-a-time-series-forecaster.md)
+- [Creating a time-series forecaster](./creating-a-time-series-forecaster.md)
   Forecast future data points by training a machine learning model using historical data.
-- [struct DateFeatures](datefeatures.md)
+- [struct DateFeatures](./datefeatures.md)
   A set of date and time features.
-- [struct DateFeatureExtractor](datefeatureextractor.md)
+- [struct DateFeatureExtractor](./datefeatureextractor.md)
   A time and date feature extractor.
-- [struct LinearTimeSeriesForecaster](lineartimeseriesforecaster.md)
+- [struct LinearTimeSeriesForecaster](./lineartimeseriesforecaster.md)
   A time-series forecasting estimator.
-- [struct LinearTimeSeriesForecasterConfiguration](lineartimeseriesforecasterconfiguration.md)
+- [struct LinearTimeSeriesForecasterConfiguration](./lineartimeseriesforecasterconfiguration.md)
   The configuration for a linear time-series forecaster.
-- [struct TimeSeriesForecasterBatches](timeseriesforecasterbatches.md)
+- [struct TimeSeriesForecasterBatches](./timeseriesforecasterbatches.md)
   A sequence of forecaster batches on a time series shaped array.
-- [struct TimeSeriesForecasterAnnotatedWindows](timeseriesforecasterannotatedwindows.md)
+- [struct TimeSeriesForecasterAnnotatedWindows](./timeseriesforecasterannotatedwindows.md)
   A sequence of forecasting windows on a time series shaped array.
-- [struct TemporalFeature](temporalfeature.md)
+- [struct TemporalFeature](./temporalfeature.md)
   A temporal feature contains a segment identifier and a feature value.
-- [protocol TemporalSequence](temporalsequence.md)
+- [protocol TemporalSequence](./temporalsequence.md)
   Async sequence for temporal features.
-- [struct TemporalSegmentIdentifier](temporalsegmentidentifier.md)
+- [struct TemporalSegmentIdentifier](./temporalsegmentidentifier.md)
   Uniquely identifiers a segment of a temporal sequence.
-- [struct SlidingWindowTransformer](slidingwindowtransformer.md)
+- [struct SlidingWindowTransformer](./slidingwindowtransformer.md)
   A temporal transformer that groups input elements.
-- [struct Downsampler](downsampler.md)
+- [struct Downsampler](./downsampler.md)
   A temporal transformer that down samples the input stream.
-- [struct VideoReader](videoreader.md)
+- [struct VideoReader](./videoreader.md)
   A video file reader.
-- [struct TemporalFileSegment](temporalfilesegment.md)
+- [struct TemporalFileSegment](./temporalfilesegment.md)
   A URL and a time range identifying a specific segment of a time-based (temporal) file.
 
 

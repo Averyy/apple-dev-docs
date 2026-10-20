@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Translates the entity by the specified vector.
@@ -12,7 +13,7 @@ Translates the entity by the specified vector.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -25,9 +26,17 @@ mutating func translate(by vector: Vector3D)
 
 - `vector`: The vector that defines the translation.
 
+## Default Implementations
+
+### Translatable3D Implementations
+- [func translate(by: Vector3D)](./translate%28by%29-3rlhd.md)
+- [func translate(by: Size3D)](./translate%28by%29-6aq88.md)
+  Translates the entity by the specified size.
+
 ## See Also
 
-- [func translated(by: Vector3D) -> Self](translatable3d/translated(by:)-5h847.md)
+### Instance methods
+- [func translated(by: Vector3D) -> Self](./translated%28by%29-5h847.md)
   Returns the entity that results from translating with the specified vector.
 
 

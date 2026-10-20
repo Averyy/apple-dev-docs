@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sensitivity analyzer.
 
@@ -16,6 +17,10 @@ Creates a sensitivity analyzer.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

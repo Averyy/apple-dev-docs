@@ -10,7 +10,7 @@ A long integer. A byte offset from the start of the load command that contains t
 
 ## Declaration
 
-```swift
+```c
 uint32_t offset;
 ```
 

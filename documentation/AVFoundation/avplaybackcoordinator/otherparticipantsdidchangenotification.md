@@ -1,7 +1,8 @@
 # otherParticipantsDidChangeNotification
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that the coordinator posts when its other participants change.
 
@@ -19,11 +20,16 @@ A notification that the coordinator posts when its other participants change.
 class let otherParticipantsDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVPlaybackCoordinatorOtherParticipantsDidChangeNotification;
+```
+
 ## See Also
 
-- [var otherParticipants: [AVCoordinatedPlaybackParticipant]](avplaybackcoordinator/otherparticipants.md)
+### Observing other participants
+- [var otherParticipants: [AVCoordinatedPlaybackParticipant]](./otherparticipants.md)
   The identifiers of the other participants in a group.
-- [class AVCoordinatedPlaybackParticipant](avcoordinatedplaybackparticipant.md)
+- [class AVCoordinatedPlaybackParticipant](../avcoordinatedplaybackparticipant.md)
   An object that represents a participant in a coordinated playback session.
 
 

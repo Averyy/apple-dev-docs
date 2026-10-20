@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default distance attenuation, which uses a rolloff model that mimics real-world physics.
 
@@ -21,7 +22,7 @@ static let `default`: Audio.DistanceAttenuation
 
 #### Discussion
 
-The [`Audio.DistanceAttenuation.rolloff(factor:)`](audio/distanceattenuation/rolloff(factor:).md) model attenuates spatial audio with a factor of `1.0` as the listener moves away from the source.
+The [`Audio.DistanceAttenuation.rolloff(factor:)`](./rolloff%28factor%29.md) model attenuates spatial audio with a factor of `1.0` as the listener moves away from the source.
 
 
 ---

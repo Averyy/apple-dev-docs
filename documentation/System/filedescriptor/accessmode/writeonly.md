@@ -1,7 +1,8 @@
 # writeOnly
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Opens the file for writing only.
 
@@ -22,7 +23,7 @@ static var writeOnly: FileDescriptor.AccessMode { get }
 
 ## Mentions
 
-- [Adopting Swift File Options](adopting-file-options.md)
+- [Adopting Swift File Options](../../adopting-file-options.md)
 
 #### Discussion
 
@@ -30,9 +31,10 @@ The corresponding C constant is `O_WRONLY`.
 
 ## See Also
 
-- [static var readOnly: FileDescriptor.AccessMode](filedescriptor/accessmode/readonly.md)
+### Creating an Access Mode
+- [static var readOnly: FileDescriptor.AccessMode](./readonly.md)
   Opens the file for reading only.
-- [static var readWrite: FileDescriptor.AccessMode](filedescriptor/accessmode/readwrite.md)
+- [static var readWrite: FileDescriptor.AccessMode](./readwrite.md)
   Opens the file for reading and writing.
 
 

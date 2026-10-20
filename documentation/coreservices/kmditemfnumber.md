@@ -1,7 +1,8 @@
 # kMDItemFNumber
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The diameter of the diaphragm aperture in terms of the effective focal length of the lens.
 
@@ -12,6 +13,10 @@ The diameter of the diaphragm aperture in terms of the effective focal length of
 
 ```swift
 let kMDItemFNumber: CFString!
+```
+
+```c
+const CFStringRef kMDItemFNumber;
 ```
 
 

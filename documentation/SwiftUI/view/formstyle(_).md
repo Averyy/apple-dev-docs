@@ -1,7 +1,8 @@
 # formStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for forms in a view hierarchy.
 
@@ -31,11 +32,12 @@ A view that uses the specified form style for itself and its child views.
 
 ## See Also
 
-- [struct Form](form.md)
+### Grouping inputs
+- [struct Form](../form.md)
   A container for grouping controls used for data entry, such as in settings or inspectors.
-- [struct LabeledContent](labeledcontent.md)
+- [struct LabeledContent](../labeledcontent.md)
   A container for attaching a label to a value-bearing view.
-- [func labeledContentStyle<S>(S) -> some View](view/labeledcontentstyle(_:).md)
+- [func labeledContentStyle<S>(S) -> some View](./labeledcontentstyle%28_%29.md)
   Sets a style for labeled content.
 
 

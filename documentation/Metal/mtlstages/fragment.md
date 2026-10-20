@@ -1,7 +1,8 @@
 # fragment
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Represents all fragment shader stage work in a render pass.
 
@@ -19,19 +20,24 @@ Represents all fragment shader stage work in a render pass.
 static var fragment: MTLStages { get }
 ```
 
+```c
+MTLStageFragment
+```
+
 ## Mentions
 
-- [Synchronizing stages within a pass](synchronizing-stages-within-a-pass.md)
+- [Synchronizing stages within a pass](../synchronizing-stages-within-a-pass.md)
 
 ## See Also
 
-- [static var vertex: MTLStages](mtlstages/vertex.md)
+### Render pass stages
+- [static var vertex: MTLStages](./vertex.md)
   Represents all vertex shader stage work in a render pass.
-- [static var tile: MTLStages](mtlstages/tile.md)
+- [static var tile: MTLStages](./tile.md)
   Represents all tile shading stage work in a render pass.
-- [static var object: MTLStages](mtlstages/object.md)
+- [static var object: MTLStages](./object.md)
   Represents all object shader stage work in a render pass.
-- [static var mesh: MTLStages](mtlstages/mesh.md)
+- [static var mesh: MTLStages](./mesh.md)
   Represents all mesh shader stage work work in a render pass.
 
 

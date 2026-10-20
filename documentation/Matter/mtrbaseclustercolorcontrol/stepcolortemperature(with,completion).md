@@ -1,7 +1,8 @@
 # stepColorTemperature(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func stepColorTemperature(with params: MTRColorControlClusterStepColorTemperatureParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func stepColorTemperature(with params: MTRColorControlClusterStepColorTemperatureParams) async throws
+```
+
+```objc
+- (void) stepColorTemperatureWithParams:(MTRColorControlClusterStepColorTemperatureParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(addressString:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new geocoder request object with the provided address string.
 
@@ -18,6 +19,10 @@ Initializes a new geocoder request object with the provided address string.
 
 ```swift
 init?(addressString: String)
+```
+
+```objc
+- (instancetype) initWithAddressString:(NSString *) addressString;
 ```
 
 #### Return Value

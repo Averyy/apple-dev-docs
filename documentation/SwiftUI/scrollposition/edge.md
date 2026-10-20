@@ -1,7 +1,8 @@
 # edge
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The positioned edge of the scroll view if configured to be in that position.
 

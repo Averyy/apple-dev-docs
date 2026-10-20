@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the column is valid.
 
@@ -21,11 +22,12 @@ var isValid: Bool { get }
 
 #### Discussion
 
-Check [`isValid`](mluntypedcolumn/isvalid.md) after you create or mutate an untyped column to ensure it’s valid. If the value is [`false`](https://developer.apple.com/documentation/swift/false), the untyped column encountered an error and you can’t use it for subsequent operations. For example, comparing two columns of different sizes creates an invalid column.
+Check [`isValid`](./isvalid.md) after you create or mutate an untyped column to ensure it’s valid. If the value is [`false`](../../Swift/false.md), the untyped column encountered an error and you can’t use it for subsequent operations. For example, comparing two columns of different sizes creates an invalid column.
 
 ## See Also
 
-- [var error: (any Error)?](mluntypedcolumn/error.md)
+### Handling untyped column errors
+- [var error: (any Error)?](./error.md)
   The underlying error present when the column is invalid.
 
 

@@ -1,7 +1,8 @@
 # remove(_:within:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the range that contains only the specified index from the range set.
 
@@ -20,9 +21,11 @@ Removes the range that contains only the specified index from the range set.
 mutating func remove<C>(_ index: Bound, within collection: C) where Bound == C.Index, C : Collection
 ```
 
+Available when `Bound` conforms to `Comparable`.
+
 #### Discussion
 
-> **Note**: O(*n*), where *n* is the number of ranges in the range set.
+> **Complexity**: O(*n*), where *n* is the number of ranges in the range set.
 
 ## Parameters
 

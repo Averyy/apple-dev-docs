@@ -1,14 +1,15 @@
 # bzero_phys_with_options
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 void bzero_phys_with_options(addr64_t src, vm_size_t bytes, int options);
 ```
 

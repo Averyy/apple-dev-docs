@@ -1,7 +1,8 @@
 # Sample data
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An array of one or more byte pairs for data channel 1/field 1 (“CC1”) of a CEA-608 data stream, each byte pair corresponding to a video frame.
 
@@ -15,9 +16,10 @@ For a CEA-708 track, the data should be formatted according to the ANSI CEA-708-
 
 ## See Also
 
-- [Size](closed_captioning_sample_data/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this closed captioning media data atom.
-- [Type](closed_captioning_sample_data/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
 
 

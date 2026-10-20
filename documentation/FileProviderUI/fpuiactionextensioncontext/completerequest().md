@@ -1,7 +1,8 @@
 # completeRequest()
 
 **Framework**: File Provider UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Marks the action as complete.
 
@@ -18,9 +19,13 @@ Marks the action as complete.
 func completeRequest()
 ```
 
+```objc
+- (void) completeRequest;
+```
+
 ## Mentions
 
-- [Adding Actions to the Context Menu](adding-actions-to-the-context-menu.md)
+- [Adding Actions to the Context Menu](../adding-actions-to-the-context-menu.md)
 
 #### Discussion
 
@@ -28,7 +33,8 @@ Call this method when the action completes successfully.
 
 ## See Also
 
-- [func cancelRequest(withError: any Error)](fpuiactionextensioncontext/cancelrequest(witherror:).md)
+### Completing the Action
+- [func cancelRequest(withError: any Error)](./cancelrequest%28witherror%29.md)
   Cancels the action and returns the provided error.
 
 

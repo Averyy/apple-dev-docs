@@ -1,7 +1,8 @@
 # increaseSize(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Increases the size of the current object by one unit.
 
@@ -9,13 +10,17 @@ Increases the size of the current object by one unit.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func increaseSize(_ sender: Any?)
+```
+
+```objc
+- (void) increaseSize:(id) sender;
 ```
 
 #### Discussion
@@ -28,7 +33,8 @@ Use this method to increase the size of the selected text or other content. You 
 
 ## See Also
 
-- [func decreaseSize(Any?)](uiresponderstandardeditactions/decreasesize(_:).md)
+### Handling size changes
+- [func decreaseSize(Any?)](./decreasesize%28_%29.md)
   Decreases the size of the current object by one unit.
 
 

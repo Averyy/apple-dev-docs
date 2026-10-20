@@ -1,20 +1,22 @@
 # kIOUSBDeviceRequestDirectionValueOut
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestDirectionValueOut
 ```
 
 ## See Also
 
-- [kIOUSBDeviceRequestDirectionValueIn](tiousbdevicerequestdirectionvalue/kiousbdevicerequestdirectionvaluein.md)
+### Getting the Request Direction
+- [kIOUSBDeviceRequestDirectionValueIn](./kiousbdevicerequestdirectionvaluein.md)
 
 
 ---

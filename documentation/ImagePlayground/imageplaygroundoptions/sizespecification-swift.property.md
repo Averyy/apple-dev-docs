@@ -1,7 +1,8 @@
 # sizeSpecification
 
 **Framework**: Image Playground  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The requested size for any generated images.
 

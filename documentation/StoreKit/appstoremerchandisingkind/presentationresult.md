@@ -1,7 +1,8 @@
 # AppStoreMerchandisingKind.PresentationResult
 
 **Framework**: StoreKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -19,14 +20,14 @@ enum PresentationResult
 ## Topics
 
 ### Enumeration cases
-- [AppStoreMerchandisingKind.PresentationResult.dismissed](appstoremerchandisingkind/presentationresult/dismissed.md)
-- [AppStoreMerchandisingKind.PresentationResult.purchaseCompleted(_:)](appstoremerchandisingkind/presentationresult/purchasecompleted(_:).md)
+- [AppStoreMerchandisingKind.PresentationResult.dismissed](./presentationresult/dismissed.md)
+- [AppStoreMerchandisingKind.PresentationResult.purchaseCompleted(_:)](./presentationresult/purchasecompleted%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # tokensDidExpire
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.5+
@@ -13,6 +14,8 @@
 ```swift
 static var tokensDidExpire: NotificationCenter.BaseMessageIdentifier<ManagedSettingsStore.TokenExpiryMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<ManagedSettingsStore.TokenExpiryMessage>`.
 
 
 ---

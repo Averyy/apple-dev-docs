@@ -1,7 +1,8 @@
 # prefersActionSliderAlternativeDidChangeNotification
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.1+
@@ -16,6 +17,10 @@
 
 ```swift
 static let prefersActionSliderAlternativeDidChangeNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName const AXPrefersActionSliderAlternativeDidChangeNotification;
 ```
 
 

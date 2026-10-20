@@ -1,7 +1,8 @@
 # assistantAction
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action that Siri performs when the user selects the assistant cell.
 
@@ -16,13 +17,18 @@ The action that Siri performs when the user selects the assistant cell.
 var assistantAction: CPAssistantCellActionType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CPAssistantCellActionType assistantAction;
+```
+
 ## See Also
 
-- [var position: CPListItem.AssistantCellPosition](cpassistantcellconfiguration/position.md)
+### Getting the Configuration Attributes
+- [var position: CPListItem.AssistantCellPosition](./position.md)
   The position of the assistant cell in the list template.
-- [var visibility: CPListItem.AssistantCellVisibility](cpassistantcellconfiguration/visibility.md)
+- [var visibility: CPListItem.AssistantCellVisibility](./visibility.md)
   The visibility of the assistant cell in the list template.
-- [enum CPAssistantCellActionType](cpassistantcellactiontype.md)
+- [enum CPAssistantCellActionType](../cpassistantcellactiontype.md)
   The supported Siri actions of the assistant cell.
 
 

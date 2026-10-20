@@ -1,7 +1,8 @@
 # limit
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A limit for the number of items to return in the library response.
 

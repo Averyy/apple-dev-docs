@@ -9,15 +9,16 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short CLOSING;
 ```
 
 ## See Also
 
-- [CLOSED](websocket/1630255-closed.md)
-- [CONNECTING](websocket/1629286-connecting.md)
-- [OPEN](websocket/1631722-open.md)
+### Miscellaneous
+- [CLOSED](./api-1630255-closed.md)
+- [CONNECTING](./api-1629286-connecting.md)
+- [OPEN](./api-1631722-open.md)
 
 
 ---

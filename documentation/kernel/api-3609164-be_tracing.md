@@ -1,14 +1,15 @@
 # be_tracing
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int be_tracing(void);
 ```
 

@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified raw value.
 
@@ -16,7 +17,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [let rawValue: String](rcshandle/uri/rawvalue.md)
+### Working with raw values
+- [let rawValue: String](./rawvalue.md)
   The raw value of the handle
 
 

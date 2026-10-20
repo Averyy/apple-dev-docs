@@ -1,7 +1,8 @@
 # tokenString
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reader token generated from the merchant server.
 

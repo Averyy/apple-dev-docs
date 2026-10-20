@@ -1,7 +1,8 @@
 # includeInactive
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that includes inactive reserved regions in the results.
 

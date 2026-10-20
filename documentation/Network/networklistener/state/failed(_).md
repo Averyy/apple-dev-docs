@@ -1,7 +1,8 @@
 # NetworkListener.State.failed(_:)
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Failed listeners are no longer able to receive incoming connections
 

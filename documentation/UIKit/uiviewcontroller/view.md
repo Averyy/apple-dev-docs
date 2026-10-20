@@ -1,7 +1,8 @@
 # view
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view that the controller manages.
 
@@ -9,7 +10,7 @@ The view that the controller manages.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,39 +19,44 @@ The view that the controller manages.
 var view: UIView! { get set }
 ```
 
+```objc
+@property (nonatomic, strong, null_resettable) UIView * view;
+```
+
 ## Mentions
 
-- [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
+- [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 
 #### Discussion
 
 This property represents the root view of the view controller’s view hierarchy. The default value of this property is `nil`.
 
-If you access this property when its value is `nil`, the view controller automatically calls the [`loadView()`](uiviewcontroller/loadview().md) method and returns the resulting view.
+If you access this property when its value is `nil`, the view controller automatically calls the [`loadView()`](./loadview%28%29.md) method and returns the resulting view.
 
-Each view controller is the sole owner of its view object. Don’t associate the same view object with multiple view controllers. The only exception is that a container view controller implementation may add another view controller’s view object to its own view hierarchy. Before adding the subview, the container must first call its [`addChild(_:)`](uiviewcontroller/addchild(_:).md) method to create a parent-child relationship between the two view controller objects.
+Each view controller is the sole owner of its view object. Don’t associate the same view object with multiple view controllers. The only exception is that a container view controller implementation may add another view controller’s view object to its own view hierarchy. Before adding the subview, the container must first call its [`addChild(_:)`](./addchild%28_%29.md) method to create a parent-child relationship between the two view controller objects.
 
-Because accessing this property can cause the view to be loaded automatically, you can use [`isViewLoaded`](uiviewcontroller/isviewloaded.md) to determine if the view is currently in memory. Unlike this property, [`isViewLoaded`](uiviewcontroller/isviewloaded.md) doesn’t force the loading of the view if it’s not currently in memory.
+Because accessing this property can cause the view to be loaded automatically, you can use [`isViewLoaded`](./isviewloaded.md) to determine if the view is currently in memory. Unlike this property, [`isViewLoaded`](./isviewloaded.md) doesn’t force the loading of the view if it’s not currently in memory.
 
-For more information about how a view controller loads and unloads its view, see [`Managing your app’s life cycle`](managing-your-app-s-life-cycle.md).
+For more information about how a view controller loads and unloads its view, see [Managing your app’s life cycle](../managing-your-app-s-life-cycle.md).
 
 ## See Also
 
-- [var viewIfLoaded: UIView?](uiviewcontroller/viewifloaded.md)
+### Managing the view
+- [var viewIfLoaded: UIView?](./viewifloaded.md)
   The view controller’s view, or `nil` if the view isn’t yet loaded.
-- [var isViewLoaded: Bool](uiviewcontroller/isviewloaded.md)
+- [var isViewLoaded: Bool](./isviewloaded.md)
   A Boolean value indicating whether the view is currently loaded into memory.
-- [func loadView()](uiviewcontroller/loadview.md)
+- [func loadView()](./loadview%28%29.md)
   Creates the view that the controller manages.
-- [func viewDidLoad()](uiviewcontroller/viewdidload.md)
+- [func viewDidLoad()](./viewdidload%28%29.md)
   Called after the controller’s view is loaded into memory.
-- [func loadViewIfNeeded()](uiviewcontroller/loadviewifneeded.md)
+- [func loadViewIfNeeded()](./loadviewifneeded%28%29.md)
   Loads the view controller’s view if it’s not loaded yet.
-- [var title: String?](uiviewcontroller/title.md)
+- [var title: String?](./title.md)
   A localized string that represents the view this controller manages.
-- [var preferredContentSize: CGSize](uiviewcontroller/preferredcontentsize.md)
+- [var preferredContentSize: CGSize](./preferredcontentsize.md)
   The preferred size for the view controller’s view.
-- [var ornaments: [UIOrnament]](uiviewcontroller/ornaments.md)
+- [var ornaments: [UIOrnament]](./ornaments.md)
   SwiftUI ornaments to display adjacent to the view controller.
 
 

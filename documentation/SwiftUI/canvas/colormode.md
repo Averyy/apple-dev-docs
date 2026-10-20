@@ -1,7 +1,8 @@
 # colorMode
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The working color space and storage format of the canvas.
 
@@ -23,7 +24,8 @@ var colorMode: ColorRenderingMode { get set }
 
 ## See Also
 
-- [var isOpaque: Bool](canvas/isopaque.md)
+### Managing opacity and color
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean that indicates whether the canvas is fully opaque.
 
 

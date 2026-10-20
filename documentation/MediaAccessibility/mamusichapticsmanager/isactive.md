@@ -1,7 +1,8 @@
 # isActive
 
 **Framework**: Media Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system setting for Music Haptics is on.
 
@@ -19,9 +20,14 @@ A Boolean value that indicates whether the system setting for Music Haptics is o
 var isActive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL isActive;
+```
+
 ## See Also
 
-- [class let activeStatusDidChangeNotification: NSNotification.Name](mamusichapticsmanager/activestatusdidchangenotification.md)
+### Checking if Music Haptics is on
+- [class let activeStatusDidChangeNotification: NSNotification.Name](./activestatusdidchangenotification.md)
   A notification that posts when the value of the Music Haptics system setting changes.
 
 

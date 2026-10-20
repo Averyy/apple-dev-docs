@@ -1,7 +1,8 @@
 # StatusAccountListLDAP
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The status item that lists the devices’s Lightweight Directory Access Protocol (LDAP) accounts.
 
@@ -14,13 +15,13 @@ The status item that lists the devices’s Lightweight Directory Access Protocol
 
 ## Declaration
 
-```swift
+```
 object StatusAccountListLDAP
 ```
 
 #### Discussion
 
-##### Status Item Availability
+##### Status item availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +32,7 @@ object StatusAccountListLDAP
 | Allowed in system scope | iOS, visionOS |
 | Allowed in user scope | macOS, Shared iPad |
 
-##### Status Item Example
+##### Status item example
 
 **New or updated account**:
 
@@ -79,7 +80,7 @@ Reports a removed account.
 ## Topics
 
 ### Objects
-- [object StatusAccountListLDAPAccountObject](statusaccountlistldapaccountobject.md)
+- [object StatusAccountListLDAPAccountObject](./statusaccountlistldapaccountobject.md)
   An LDAP account.
 
 ## Properties
@@ -88,19 +89,20 @@ Reports a removed account.
 
 ## See Also
 
-- [object StatusAccountListCalDAV](statusaccountlistcaldav.md)
+### Account list items
+- [object StatusAccountListCalDAV](./statusaccountlistcaldav.md)
   The status item that lists the devices’s Calendar accounts.
-- [object StatusAccountListCardDAV](statusaccountlistcarddav.md)
+- [object StatusAccountListCardDAV](./statusaccountlistcarddav.md)
   The status item that lists the devices’s Contacts accounts.
-- [object StatusAccountListExchange](statusaccountlistexchange.md)
+- [object StatusAccountListExchange](./statusaccountlistexchange.md)
   The status item that lists the devices’s Exchange accounts.
-- [object StatusAccountListGoogle](statusaccountlistgoogle.md)
+- [object StatusAccountListGoogle](./statusaccountlistgoogle.md)
   The status item that lists the client’s Google accounts.
-- [object StatusAccountListMailIncoming](statusaccountlistmailincoming.md)
+- [object StatusAccountListMailIncoming](./statusaccountlistmailincoming.md)
   The status item that lists the devices’s incoming Mail accounts.
-- [object StatusAccountListMailOutgoing](statusaccountlistmailoutgoing.md)
+- [object StatusAccountListMailOutgoing](./statusaccountlistmailoutgoing.md)
   The status item that lists the devices’s outgoing Mail accounts.
-- [object StatusAccountListSubscribedCalendar](statusaccountlistsubscribedcalendar.md)
+- [object StatusAccountListSubscribedCalendar](./statusaccountlistsubscribedcalendar.md)
   The status item that lists the devices’s subscribed calendars.
 
 

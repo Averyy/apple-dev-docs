@@ -1,7 +1,8 @@
 # HMServiceTypeSmokeSensor
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A smoke sensor service.
 
@@ -19,15 +20,20 @@ A smoke sensor service.
 let HMServiceTypeSmokeSensor: String
 ```
 
+```c
+extern NSString * const HMServiceTypeSmokeSensor;
+```
+
 ## See Also
 
-- [let HMServiceTypeAirPurifier: String](hmservicetypeairpurifier.md)
+### Air Quality and Smoke Detection
+- [let HMServiceTypeAirPurifier: String](./hmservicetypeairpurifier.md)
   An air purifier service.
-- [let HMServiceTypeAirQualitySensor: String](hmservicetypeairqualitysensor.md)
+- [let HMServiceTypeAirQualitySensor: String](./hmservicetypeairqualitysensor.md)
   An air quality sensor service.
-- [let HMServiceTypeCarbonDioxideSensor: String](hmservicetypecarbondioxidesensor.md)
+- [let HMServiceTypeCarbonDioxideSensor: String](./hmservicetypecarbondioxidesensor.md)
   A carbon dioxide sensor service.
-- [let HMServiceTypeCarbonMonoxideSensor: String](hmservicetypecarbonmonoxidesensor.md)
+- [let HMServiceTypeCarbonMonoxideSensor: String](./hmservicetypecarbonmonoxidesensor.md)
   A carbon monoxide sensor service.
 
 

@@ -1,12 +1,13 @@
 # upToNextMinor(from:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A source control requirement bounded to the given version’s minor version number.
 
 **Availability**:
-- SwiftPM ?+
+- SwiftPM - Deprecated in 5.6
 
 ## Declaration
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sembuf {
     ...
 };
@@ -17,9 +17,9 @@ struct sembuf {
 ## Topics
 
 ### Instance Properties
-- [sem_flg](sembuf/1574532-sem_flg.md)
-- [sem_num](sembuf/1574564-sem_num.md)
-- [sem_op](sembuf/1574556-sem_op.md)
+- [sem_flg](./sembuf/api-1574532-sem_flg.md)
+- [sem_num](./sembuf/api-1574564-sem_num.md)
+- [sem_op](./sembuf/api-1574556-sem_op.md)
 
 
 ---

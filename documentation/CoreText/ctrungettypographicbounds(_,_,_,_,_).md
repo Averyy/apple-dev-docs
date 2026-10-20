@@ -1,7 +1,8 @@
 # CTRunGetTypographicBounds(_:_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets the typographic bounds of the run.
 
@@ -20,6 +21,10 @@ Gets the typographic bounds of the run.
 func CTRunGetTypographicBounds(_ run: CTRun, _ range: CFRange, _ ascent: UnsafeMutablePointer<CGFloat>?, _ descent: UnsafeMutablePointer<CGFloat>?, _ leading: UnsafeMutablePointer<CGFloat>?) -> Double
 ```
 
+```c
+extern double CTRunGetTypographicBounds(CTRunRef run, CFRange range, CGFloat *ascent, CGFloat *descent, CGFloat *leading);
+```
+
 #### Return Value
 
 The typographic width of the run, or if `run` or `range` is invalid, `0`.
@@ -34,11 +39,12 @@ The typographic width of the run, or if `run` or `range` is invalid, `0`.
 
 ## See Also
 
-- [func CTLineGetBoundsWithOptions(CTLine, CTLineBoundsOptions) -> CGRect](ctlinegetboundswithoptions(_:_:).md)
+### Measuring the Glyph Run
+- [func CTLineGetBoundsWithOptions(CTLine, CTLineBoundsOptions) -> CGRect](./ctlinegetboundswithoptions%28_,_%29.md)
   Calculates the bounds for a line.
-- [func CTRunGetImageBounds(CTRun, CGContext?, CFRange) -> CGRect](ctrungetimagebounds(_:_:_:).md)
+- [func CTRunGetImageBounds(CTRun, CGContext?, CFRange) -> CGRect](./ctrungetimagebounds%28_,_,_%29.md)
   Calculates the image bounds for a glyph range.
-- [func CTRunGetBaseAdvancesAndOrigins(CTRun, CFRange, UnsafeMutablePointer<CGSize>?, UnsafeMutablePointer<CGPoint>?)](ctrungetbaseadvancesandorigins(_:_:_:_:).md)
+- [func CTRunGetBaseAdvancesAndOrigins(CTRun, CFRange, UnsafeMutablePointer<CGSize>?, UnsafeMutablePointer<CGPoint>?)](./ctrungetbaseadvancesandorigins%28_,_,_,_%29.md)
   Copies a range of base advances and origins into user-provided buffers.
 
 

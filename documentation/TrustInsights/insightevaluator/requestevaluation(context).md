@@ -1,7 +1,8 @@
 # requestEvaluation(context:)
 
 **Framework**: Trust Insights  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the evaluation of insights.
 
@@ -17,29 +18,30 @@ final nonisolated(nonsending) func requestEvaluation<each I>(context: InsightEva
 
 #### Return Value
 
-The [`InsightEvaluation`](insightevaluation.md) that contains the results of the evaluation.
+The [`InsightEvaluation`](../insightevaluation.md) that contains the results of the evaluation.
 
 #### Discussion
 
-> **Note**: An [`InsightEvaluator.EvaluationError`](insightevaluator/evaluationerror.md) if the framework fails to produce an evaluation.
+> **Throws**: An [`InsightEvaluator.EvaluationError`](./evaluationerror.md) if the framework fails to produce an evaluation.
 
 #### Discussion
 
 > **Note**: The evaluation process includes processing both on device and on Apple’s servers and can take several seconds to perform an evaluation.
 
-To use the Trust Insights framework in your app, add the `com.apple.developer.trustinsights.base` entitlement to your apps capabilities in Xcode. For more information, see  [`Trust Insights`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.trustinsights.base).
+To use the Trust Insights framework in your app, add the `com.apple.developer.trustinsights.base` entitlement to your apps capabilities in Xcode. For more information, see  [`Trust Insights`](../../BundleResources/entitlements/com.apple.developer.trustinsights.base.md).
 
 ## Parameters
 
-- `context`: An [`InsightEvaluator.InsightContext`](insightevaluator/insightcontext.md) object that describes details evaluation request.
+- `context`: An [`InsightEvaluator.InsightContext`](./insightcontext.md) object that describes details evaluation request.
 
 ## See Also
 
-- [class InsightEvaluator](insightevaluator.md)
+### Requesting an evaluation
+- [class InsightEvaluator](../insightevaluator.md)
   A class that defines data and methods the framework uses to perform evaluations.
-- [class InsightEvaluation](insightevaluation.md)
+- [class InsightEvaluation](../insightevaluation.md)
   The insight result that an evaluation request returns.
-- [protocol TrustInsight](trustinsight.md)
+- [protocol TrustInsight](../trustinsight.md)
   A protocol that describes the trust insight model and the associated evaluation properties.
 
 

@@ -1,14 +1,15 @@
 # kBluetoothRoleBecomeMaster
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+ - Deprecated in 12.0
 
 ## Declaration
 
-```swift
+```c
 kBluetoothRoleBecomeMaster = kBluetoothRoleBecomeCentral
 ```
 

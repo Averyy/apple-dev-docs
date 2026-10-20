@@ -1,24 +1,25 @@
 # adopt_memory_t
 
 **Framework**: DriverKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 struct adopt_memory_t;
 ```
 
 ## Topics
 
 ### Instance Methods
-- [adopt_memory_t](libkern/adopt_memory_t/adopt_memory_t.md)
+- [adopt_memory_t](./adopt_memory_t/adopt_memory_t.md)
 
 
 ---

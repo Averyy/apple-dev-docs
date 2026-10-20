@@ -1,15 +1,20 @@
 # reserved
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var reserved: mach_vm_address_t
+```
+
+```c
+mach_vm_address_t reserved;
 ```
 
 

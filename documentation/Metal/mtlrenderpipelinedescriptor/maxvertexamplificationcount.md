@@ -1,7 +1,8 @@
 # maxVertexAmplificationCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum vertex amplification count you can set when encoding render commands.
 
@@ -19,19 +20,24 @@ The maximum vertex amplification count you can set when encoding render commands
 var maxVertexAmplificationCount: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger maxVertexAmplificationCount;
+```
+
 ## Mentions
 
-- [Improving rendering performance with vertex amplification](improving-rendering-performance-with-vertex-amplification.md)
+- [Improving rendering performance with vertex amplification](../improving-rendering-performance-with-vertex-amplification.md)
 
 #### Discussion
 
-Before setting this property, call the [`supportsVertexAmplificationCount(_:)`](mtldevice/supportsvertexamplificationcount(_:).md) method on the device object to determine whether that amplification count is supported.
+Before setting this property, call the [`supportsVertexAmplificationCount(_:)`](../mtldevice/supportsvertexamplificationcount%28_%29.md) method on the device object to determine whether that amplification count is supported.
 
 ## See Also
 
-- [func setVertexAmplificationCount(Int, viewMappings: UnsafePointer<MTLVertexAmplificationViewMapping>?)](mtlrendercommandencoder/setvertexamplificationcount(_:viewmappings:).md)
+### Related Documentation
+- [func setVertexAmplificationCount(Int, viewMappings: UnsafePointer<MTLVertexAmplificationViewMapping>?)](../mtlrendercommandencoder/setvertexamplificationcount%28_,viewmappings%29.md)
   Configures the number of output vertices the render pipeline produces for each input vertex, optionally with render target and viewport offsets.
-- [func supportsVertexAmplificationCount(Int) -> Bool](mtldevice/supportsvertexamplificationcount(_:).md)
+- [func supportsVertexAmplificationCount(Int) -> Bool](../mtldevice/supportsvertexamplificationcount%28_%29.md)
   Returns a Boolean value that indicates whether the GPU supports an amplification factor.
 
 

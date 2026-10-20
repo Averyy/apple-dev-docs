@@ -1,7 +1,8 @@
 # dataServiceIdentifierDidChange(_:)
 
 **Framework**: Core Telephony  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate when the identifier changes for the service that’s currently providing data.
 
@@ -16,9 +17,13 @@ Informs the delegate when the identifier changes for the service that’s curren
 optional func dataServiceIdentifierDidChange(_ identifier: String)
 ```
 
+```objc
+- (void) dataServiceIdentifierDidChange:(NSString *) identifier;
+```
+
 ## Parameters
 
-- `identifier`: The identifier of the service that’s currently providing data. Use this identifier as the key in [`serviceCurrentRadioAccessTechnology`](cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md) to get the value of the new radio access technology for the service.
+- `identifier`: The identifier of the service that’s currently providing data. Use this identifier as the key in [`serviceCurrentRadioAccessTechnology`](../cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md) to get the value of the new radio access technology for the service.
 
 
 ---

@@ -1,7 +1,8 @@
 # products
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of available products if the task was successful.
 

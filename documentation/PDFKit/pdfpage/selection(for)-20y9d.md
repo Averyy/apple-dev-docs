@@ -1,7 +1,8 @@
 # selection(for:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the text contained within the specified range.
 
@@ -19,19 +20,24 @@ Returns the text contained within the specified range.
 func selection(for range: NSRange) -> PDFSelection?
 ```
 
+```objc
+- (PDFSelection *) selectionForRange:(NSRange) range;
+```
+
 #### Discussion
 
 This method raises an exception if the range length is `0` or if either end of the range is outside the range of characters on the page.
 
 ## See Also
 
-- [func selection(for: CGRect) -> PDFSelection?](pdfpage/selection(for:)-2ckpi.md)
+### Working with Selections
+- [func selection(for: CGRect) -> PDFSelection?](./selection%28for%29-2ckpi.md)
   Returns the text enclosed within the specified rectangle, expressed in page (user) coordinates.
-- [func selectionForWord(at: CGPoint) -> PDFSelection?](pdfpage/selectionforword(at:).md)
+- [func selectionForWord(at: CGPoint) -> PDFSelection?](./selectionforword%28at%29.md)
   Returns the whole word that includes the specified point.
-- [func selectionForLine(at: CGPoint) -> PDFSelection?](pdfpage/selectionforline(at:).md)
+- [func selectionForLine(at: CGPoint) -> PDFSelection?](./selectionforline%28at%29.md)
   Returns the whole line of text that includes the specified point.
-- [func selection(from: CGPoint, to: CGPoint) -> PDFSelection?](pdfpage/selection(from:to:).md)
+- [func selection(from: CGPoint, to: CGPoint) -> PDFSelection?](./selection%28from,to%29.md)
   Returns the text between the two specified points in page space.
 
 

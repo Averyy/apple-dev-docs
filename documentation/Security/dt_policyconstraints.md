@@ -1,7 +1,8 @@
 # DT_PolicyConstraints
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var DT_PolicyConstraints: __CE_DataType { get }
+```
+
+```c
+DT_PolicyConstraints
 ```
 
 

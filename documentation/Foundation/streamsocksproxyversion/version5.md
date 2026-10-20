@@ -1,7 +1,8 @@
 # version5
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Possible value for `NSStreamSOCKSProxyVersionKey`.
 
@@ -20,9 +21,14 @@ Possible value for `NSStreamSOCKSProxyVersionKey`.
 static let version5: StreamSOCKSProxyVersion
 ```
 
+```c
+extern NSStreamSOCKSProxyVersion const NSStreamSOCKSProxyVersion5;
+```
+
 ## See Also
 
-- [static let version4: StreamSOCKSProxyVersion](streamsocksproxyversion/version4.md)
+### Type Properties
+- [static let version4: StreamSOCKSProxyVersion](./version4.md)
   Possible value for `NSStreamSOCKSProxyVersionKey`.
 
 

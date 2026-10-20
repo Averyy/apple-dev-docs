@@ -1,7 +1,8 @@
 # ManagedApplicationListResponse.ErrorChainItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes an error chain item.
 
@@ -16,7 +17,7 @@ A dictionary that describes an error chain item.
 
 ## Declaration
 
-```swift
+```
 object ManagedApplicationListResponse.ErrorChainItem
 ```
 
@@ -29,7 +30,8 @@ object ManagedApplicationListResponse.ErrorChainItem
 
 ## See Also
 
-- [object ManagedApplicationListResponse.ManagedApplicationList](managedapplicationlistresponse/managedapplicationlist-data.dictionary.md)
+### Objects
+- [object ManagedApplicationListResponse.ManagedApplicationList](./managedapplicationlist-data.dictionary.md)
   A dictionary that contains status information about managed apps.
 
 

@@ -1,7 +1,8 @@
 # captureScreenshot(contentFilter:configuration:completionHandler:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - Mac Catalyst 26.0+
@@ -10,7 +11,15 @@
 ## Declaration
 
 ```swift
+class func captureScreenshot(contentFilter: SCContentFilter, configuration config: SCScreenshotConfiguration, completionHandler: (@Sendable (SCScreenshotOutput?, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 class func captureScreenshot(contentFilter: SCContentFilter, configuration config: SCScreenshotConfiguration) async throws -> SCScreenshotOutput
+```
+
+```objc
++ (void) captureScreenshotWithFilter:(SCContentFilter *) contentFilter configuration:(SCScreenshotConfiguration *) config completionHandler:(void (^)(SCScreenshotOutput *output, NSError *error)) completionHandler;
 ```
 
 #### Discussion

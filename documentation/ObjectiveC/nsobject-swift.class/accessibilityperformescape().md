@@ -1,7 +1,8 @@
 # accessibilityPerformEscape()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses a modal view and returns the success or failure of the action.
 
@@ -9,7 +10,7 @@ Dismisses a modal view and returns the success or failure of the action.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Dismisses a modal view and returns the success or failure of the action.
 func accessibilityPerformEscape() -> Bool
 ```
 
+```objc
+- (BOOL) accessibilityPerformEscape;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the modal view is successfully dismissed; otherwise, [`NO`](no.md). By default, this method returns [`NO`](no.md).
+[`YES`](../yes.md) if the modal view is successfully dismissed; otherwise, [`NO`](../no.md). By default, this method returns [`NO`](../no.md).
 
 #### Discussion
 
@@ -29,15 +34,16 @@ Implement this method on an element or containing view that can be revealed moda
 
 ## See Also
 
-- [func accessibilityActivate() -> Bool](nsobject-swift.class/accessibilityactivate.md)
+### Performing an action
+- [func accessibilityActivate() -> Bool](./accessibilityactivate%28%29.md)
   Tells the element to activate itself and report the success or failure of the operation.
-- [func accessibilityIncrement()](nsobject-swift.class/accessibilityincrement.md)
+- [func accessibilityIncrement()](./accessibilityincrement%28%29.md)
   Tells the accessibility element to increment the value of its content.
-- [func accessibilityDecrement()](nsobject-swift.class/accessibilitydecrement.md)
+- [func accessibilityDecrement()](./accessibilitydecrement%28%29.md)
   Tells the accessibility element to decrement the value of its content.
-- [func accessibilityScroll(UIAccessibilityScrollDirection) -> Bool](nsobject-swift.class/accessibilityscroll(_:).md)
+- [func accessibilityScroll(UIAccessibilityScrollDirection) -> Bool](./accessibilityscroll%28_%29.md)
   Scrolls screen content in an application-specific way and returns the success or failure of the action.
-- [func accessibilityPerformMagicTap() -> Bool](nsobject-swift.class/accessibilityperformmagictap.md)
+- [func accessibilityPerformMagicTap() -> Bool](./accessibilityperformmagictap%28%29.md)
   Performs a salient action.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Apple Archive  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Closes the stream and releases associated resources.
@@ -12,7 +13,7 @@ Closes the stream and releases associated resources.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -23,15 +24,16 @@ func close() throws
 
 #### Discussion
 
-After calling [`close()`](archivebytestreamprotocol/close().md), expect that subsequent function calls on the stream to trigger a runtime error.
+After calling [`close()`](./close%28%29.md), expect that subsequent function calls on the stream to trigger a runtime error.
 
 You must close all opened streams, otherwise deinitialization causes a runtime error.
 
 ## See Also
 
-- [func seek(toOffset: Int64, relativeTo: FileDescriptor.SeekOrigin) throws -> Int64](archivebytestreamprotocol/seek(tooffset:relativeto:).md)
+### Using Archive Byte Streams
+- [func seek(toOffset: Int64, relativeTo: FileDescriptor.SeekOrigin) throws -> Int64](./seek%28tooffset,relativeto%29.md)
   Updates the internal stream position to the specified offset relative to the specified origin.
-- [func cancel()](archivebytestreamprotocol/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels stream operations.
 
 

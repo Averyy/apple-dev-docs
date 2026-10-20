@@ -1,7 +1,8 @@
 # unsafeBitCast(_:to:)
 
 **Framework**: Swift  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the bits of the given instance, interpreted as having the specified type.
 
@@ -44,7 +45,8 @@ Parameters:
 
 ## See Also
 
-- [func unsafeDowncast<T>(AnyObject, to: T.Type) -> T](unsafedowncast(_:to:).md)
+### Instance Casting
+- [func unsafeDowncast<T>(AnyObject, to: T.Type) -> T](./unsafedowncast%28_,to%29.md)
   Returns the given instance cast unconditionally to the specified type.
 
 

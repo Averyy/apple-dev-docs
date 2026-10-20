@@ -1,7 +1,8 @@
 # init(named:inputs:outputs:nodeLibrary:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shader graph with the given name, inputs, and outputs.
 

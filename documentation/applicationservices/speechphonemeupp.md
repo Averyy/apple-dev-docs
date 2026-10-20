@@ -1,7 +1,8 @@
 # SpeechPhonemeUPP
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a universal procedure pointer (UPP) to a phoneme callback function.
 
@@ -14,9 +15,13 @@ Defines a universal procedure pointer (UPP) to a phoneme callback function.
 typealias SpeechPhonemeUPP = SpeechPhonemeProcPtr
 ```
 
+```c
+typedef SpeechPhonemeProcPtr SpeechPhonemeUPP;
+```
+
 #### Discussion
 
-For more information, see the description of the [`SpeechPhonemeProcPtr`](speechphonemeprocptr.md) callback function.
+For more information, see the description of the [`SpeechPhonemeProcPtr`](./speechphonemeprocptr.md) callback function.
 
 
 ---

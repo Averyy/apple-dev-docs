@@ -1,7 +1,8 @@
 # addPointer(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a given pointer to the receiver.
 
@@ -20,9 +21,13 @@ Adds a given pointer to the receiver.
 func addPointer(_ pointer: UnsafeMutableRawPointer?)
 ```
 
+```objc
+- (void) addPointer:(void *) pointer;
+```
+
 #### Discussion
 
-`pointer` is added at index [`count`](nspointerarray/count.md).
+`pointer` is added at index [`count`](./count.md).
 
 ## Parameters
 
@@ -30,19 +35,20 @@ func addPointer(_ pointer: UnsafeMutableRawPointer?)
 
 ## See Also
 
-- [var count: Int](nspointerarray/count.md)
+### Managing the Collection
+- [var count: Int](./count.md)
   The number of elements in the receiver.
-- [var allObjects: [Any]](nspointerarray/allobjects.md)
+- [var allObjects: [Any]](./allobjects.md)
   All the objects in the receiver.
-- [func pointer(at: Int) -> UnsafeMutableRawPointer?](nspointerarray/pointer(at:).md)
+- [func pointer(at: Int) -> UnsafeMutableRawPointer?](./pointer%28at%29.md)
   Returns the pointer at a given index.
-- [func removePointer(at: Int)](nspointerarray/removepointer(at:).md)
+- [func removePointer(at: Int)](./removepointer%28at%29.md)
   Removes the pointer at a given index.
-- [func insertPointer(UnsafeMutableRawPointer?, at: Int)](nspointerarray/insertpointer(_:at:).md)
+- [func insertPointer(UnsafeMutableRawPointer?, at: Int)](./insertpointer%28_,at%29.md)
   Inserts a pointer at a given index.
-- [func replacePointer(at: Int, withPointer: UnsafeMutableRawPointer?)](nspointerarray/replacepointer(at:withpointer:).md)
+- [func replacePointer(at: Int, withPointer: UnsafeMutableRawPointer?)](./replacepointer%28at,withpointer%29.md)
   Replaces the pointer at a given index.
-- [func compact()](nspointerarray/compact.md)
+- [func compact()](./compact%28%29.md)
   Removes `NULL` values from the receiver.
 
 

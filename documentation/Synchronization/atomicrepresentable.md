@@ -1,7 +1,8 @@
 # AtomicRepresentable
 
 **Framework**: Synchronization  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that supports atomic operations through a separate atomic storage representation.
 
@@ -24,7 +25,7 @@ protocol AtomicRepresentable
 
 Types that conform to the `AtomicRepresentable` protocol can be used as the `Value` type parameter with the `Atomic` type. Conformances that utilize existing atomic storage representations as their own representation will get the primitive atomic operations available on `Atomic` for free. Such operations include `load`, `store`, `exchange`, `compareExchange`, and `weakCompareExchange`.
 
-#### Conforming to the Atomicrepresentable Protocol
+#### Conforming to the AtomicRepresentable protocol
 
 Conforming your own custom types allow them to be used in the `Atomic` type and get access to all of the primitive atomic operations explained above. There are two main ways to conform your type to `AtomicRepresentable`:
 
@@ -135,60 +136,61 @@ When defining your own `AtomicRepresentable` conformance, it is critical that yo
 ## Topics
 
 ### Associated Types
-- [associatedtype AtomicRepresentation : BitwiseCopyable](atomicrepresentable/atomicrepresentation.md)
+- [associatedtype AtomicRepresentation : BitwiseCopyable](./atomicrepresentable/atomicrepresentation.md)
   The storage representation type that `Self` encodes to and decodes from which is a suitable type when used in atomic operations.
 ### Type Methods
-- [static func decodeAtomicRepresentation(consuming Self.AtomicRepresentation) -> Self](atomicrepresentable/decodeatomicrepresentation(_:).md)
+- [static func decodeAtomicRepresentation(consuming Self.AtomicRepresentation) -> Self](./atomicrepresentable/decodeatomicrepresentation%28_%29.md)
   Recovers the logical atomic type `Self` by destroying some `AtomicRepresentation` storage instance returned from an atomic operation.
-- [static func encodeAtomicRepresentation(consuming Self) -> Self.AtomicRepresentation](atomicrepresentable/encodeatomicrepresentation(_:).md)
+- [static func encodeAtomicRepresentation(consuming Self) -> Self.AtomicRepresentation](./atomicrepresentable/encodeatomicrepresentation%28_%29.md)
   Destroys a value of `Self` and prepares an `AtomicRepresentation` storage type to be used for atomic operations.
 
 ## Relationships
 
 ### Inherited By
-- [AtomicOptionalRepresentable](atomicoptionalrepresentable.md)
+- [AtomicOptionalRepresentable](./atomicoptionalrepresentable.md)
 ### Conforming Types
-- [Bool](../swift/bool.md)
-- [Double](../swift/double.md)
-- [Duration](../swift/duration.md)
-- [Float](../swift/float.md)
-- [Float16](../swift/float16.md)
-- [Int](../swift/int.md)
-- [Int128](../swift/int128.md)
-- [Int16](../swift/int16.md)
-- [Int32](../swift/int32.md)
-- [Int64](../swift/int64.md)
-- [Int8](../swift/int8.md)
-- [Never](../swift/never.md)
-- [ObjectIdentifier](../swift/objectidentifier.md)
-- [OpaquePointer](../swift/opaquepointer.md)
-- [Optional](../swift/optional.md)
-- [UInt](../swift/uint.md)
-- [UInt128](../swift/uint128.md)
-- [UInt16](../swift/uint16.md)
-- [UInt32](../swift/uint32.md)
-- [UInt64](../swift/uint64.md)
-- [UInt8](../swift/uint8.md)
-- [Unmanaged](../swift/unmanaged.md)
-- [UnsafeBufferPointer](../swift/unsafebufferpointer.md)
-- [UnsafeMutableBufferPointer](../swift/unsafemutablebufferpointer.md)
-- [UnsafeMutablePointer](../swift/unsafemutablepointer.md)
-- [UnsafeMutableRawBufferPointer](../swift/unsafemutablerawbufferpointer.md)
-- [UnsafeMutableRawPointer](../swift/unsafemutablerawpointer.md)
-- [UnsafePointer](../swift/unsafepointer.md)
-- [UnsafeRawBufferPointer](../swift/unsaferawbufferpointer.md)
-- [UnsafeRawPointer](../swift/unsaferawpointer.md)
-- [WordPair](wordpair.md)
+- [Bool](../Swift/bool.md)
+- [Double](../Swift/double.md)
+- [Duration](../Swift/duration.md)
+- [Float](../Swift/float.md)
+- [Float16](../Swift/float16.md)
+- [Int](../Swift/int.md)
+- [Int128](../Swift/int128.md)
+- [Int16](../Swift/int16.md)
+- [Int32](../Swift/int32.md)
+- [Int64](../Swift/int64.md)
+- [Int8](../Swift/int8.md)
+- [Never](../Swift/never.md)
+- [ObjectIdentifier](../Swift/objectidentifier.md)
+- [OpaquePointer](../Swift/opaquepointer.md)
+- [Optional](../Swift/optional.md)
+- [UInt](../Swift/uint.md)
+- [UInt128](../Swift/uint128.md)
+- [UInt16](../Swift/uint16.md)
+- [UInt32](../Swift/uint32.md)
+- [UInt64](../Swift/uint64.md)
+- [UInt8](../Swift/uint8.md)
+- [Unmanaged](../Swift/unmanaged.md)
+- [UnsafeBufferPointer](../Swift/unsafebufferpointer.md)
+- [UnsafeMutableBufferPointer](../Swift/unsafemutablebufferpointer.md)
+- [UnsafeMutablePointer](../Swift/unsafemutablepointer.md)
+- [UnsafeMutableRawBufferPointer](../Swift/unsafemutablerawbufferpointer.md)
+- [UnsafeMutableRawPointer](../Swift/unsafemutablerawpointer.md)
+- [UnsafePointer](../Swift/unsafepointer.md)
+- [UnsafeRawBufferPointer](../Swift/unsaferawbufferpointer.md)
+- [UnsafeRawPointer](../Swift/unsaferawpointer.md)
+- [WordPair](./wordpair.md)
 
 ## See Also
 
-- [struct Atomic](atomic.md)
+### Atomic Values
+- [struct Atomic](./atomic.md)
   An atomic value.
-- [struct AtomicLazyReference](atomiclazyreference.md)
+- [struct AtomicLazyReference](./atomiclazyreference.md)
   A lazily initializable atomic strong reference.
-- [struct WordPair](wordpair.md)
+- [struct WordPair](./wordpair.md)
   A pair of two word sized `UInt`s.
-- [protocol AtomicOptionalRepresentable](atomicoptionalrepresentable.md)
+- [protocol AtomicOptionalRepresentable](./atomicoptionalrepresentable.md)
   An atomic value that also supports atomic operations when wrapped in an `Optional`. Atomic optional representable types come with a standalone atomic representation for their optional-wrapped variants.
 
 

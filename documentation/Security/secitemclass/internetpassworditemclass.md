@@ -1,7 +1,8 @@
 # SecItemClass.internetPasswordItemClass
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the item is an Internet password.
 
@@ -13,6 +14,10 @@ Indicates that the item is an Internet password.
 
 ```swift
 case internetPasswordItemClass
+```
+
+```c
+kSecInternetPasswordItemClass
 ```
 
 

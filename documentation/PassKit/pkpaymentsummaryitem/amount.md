@@ -1,7 +1,8 @@
 # amount
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The summary item’s amount.
 
@@ -20,17 +21,22 @@ The summary item’s amount.
 var amount: NSDecimalNumber { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSDecimalNumber * amount;
+```
+
 #### Discussion
 
-The amount’s currency is specified at the payment level by setting a value for the [`currencyCode`](pkpaymentrequest/currencycode.md) property on [`PKPaymentRequest`](pkpaymentrequest.md).
+The amount’s currency is specified at the payment level by setting a value for the [`currencyCode`](../pkpaymentrequest/currencycode.md) property on [`PKPaymentRequest`](../pkpaymentrequest.md).
 
 ## See Also
 
-- [var label: String](pkpaymentsummaryitem/label.md)
+### Describing summary items
+- [var label: String](./label.md)
   A short, localized description of the item.
-- [var type: PKPaymentSummaryItemType](pkpaymentsummaryitem/type.md)
+- [var type: PKPaymentSummaryItemType](./type.md)
   The summary item’s type that indicates whether the amount is final.
-- [enum PKPaymentSummaryItemType](pkpaymentsummaryitemtype.md)
+- [enum PKPaymentSummaryItemType](../pkpaymentsummaryitemtype.md)
   Constants that describe the type of the payment summary item, such as final or pending.
 
 

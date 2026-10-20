@@ -1,21 +1,26 @@
 # ICReturnObjectError.Code.codeObjectDataOffsetInvalid
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The object data offset is invalid.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
 ```swift
 case codeObjectDataOffsetInvalid
+```
+
+```c
+ICReturnCodeObjectDataOffsetInvalid
 ```
 
 

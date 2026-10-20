@@ -1,7 +1,8 @@
 # hostKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Value is an `NSString` object that represents the SOCKS proxy host.
 
@@ -20,15 +21,20 @@ Value is an `NSString` object that represents the SOCKS proxy host.
 static let hostKey: StreamSOCKSProxyConfiguration
 ```
 
+```c
+extern NSStreamSOCKSProxyConfiguration const NSStreamSOCKSProxyHostKey;
+```
+
 ## See Also
 
-- [static let passwordKey: StreamSOCKSProxyConfiguration](streamsocksproxyconfiguration/passwordkey.md)
+### Type Properties
+- [static let passwordKey: StreamSOCKSProxyConfiguration](./passwordkey.md)
   Value is an `NSString` object containing the user’s password.
-- [static let portKey: StreamSOCKSProxyConfiguration](streamsocksproxyconfiguration/portkey.md)
+- [static let portKey: StreamSOCKSProxyConfiguration](./portkey.md)
   Value is an `NSNumber` object containing an integer that represents the port on which the proxy listens.
-- [static let userKey: StreamSOCKSProxyConfiguration](streamsocksproxyconfiguration/userkey.md)
+- [static let userKey: StreamSOCKSProxyConfiguration](./userkey.md)
   Value is an `NSString` object containing the user’s name.
-- [static let versionKey: StreamSOCKSProxyConfiguration](streamsocksproxyconfiguration/versionkey.md)
+- [static let versionKey: StreamSOCKSProxyConfiguration](./versionkey.md)
   Value is either `NSStreamSOCKSProxyVersion4` or `NSStreamSOCKSProxyVersion5`.
 
 

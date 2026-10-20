@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Return the next text position at a boundary of a text unit of the given granularity in a given direction.
@@ -10,13 +11,17 @@ Return the next text position at a boundary of a text unit of the given granular
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func position(from position: UITextPosition, toBoundary granularity: UITextGranularity, inDirection direction: UITextDirection) -> UITextPosition?
+```
+
+```objc
+- (UITextPosition *) positionFromPosition:(UITextPosition *) position toBoundary:(UITextGranularity) granularity inDirection:(UITextDirection) direction;
 ```
 
 #### Return Value

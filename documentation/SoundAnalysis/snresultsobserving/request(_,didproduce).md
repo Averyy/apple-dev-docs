@@ -2,6 +2,7 @@
 
 **Framework**: Sound Analysis  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides a new analysis result to your app with the specified time range.
@@ -21,6 +22,10 @@ Provides a new analysis result to your app with the specified time range.
 func request(_ request: any SNRequest, didProduce result: any SNResult)
 ```
 
+```objc
+- (void) request:(id<SNRequest>) request didProduceResult:(id<SNResult>) result;
+```
+
 #### Discussion
 
 The analyzer calls this function each time a new analysis result is available. Different types of analyses may produce results at different rates, spanning different time ranges.
@@ -32,11 +37,12 @@ The analyzer calls this function each time a new analysis result is available. D
 
 ## See Also
 
-- [protocol SNResult](snresult.md)
+### Handling Requests
+- [protocol SNResult](../snresult.md)
   A protocol that represents sound analysis results.
-- [func request(any SNRequest, didFailWithError: any Error)](snresultsobserving/request(_:didfailwitherror:).md)
+- [func request(any SNRequest, didFailWithError: any Error)](./request%28_,didfailwitherror%29.md)
   Provides any errors that occur during processing of the request.
-- [func requestDidComplete(any SNRequest)](snresultsobserving/requestdidcomplete(_:).md)
+- [func requestDidComplete(any SNRequest)](./requestdidcomplete%28_%29.md)
   Notifies your app when the analysis request completes normally.
 
 

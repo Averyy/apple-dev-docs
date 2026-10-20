@@ -1,7 +1,8 @@
 # kSecHonorRoot
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The access control list should treat the root user as a typical user for ownership purposes.
 
@@ -13,6 +14,10 @@ The access control list should treat the root user as a typical user for ownersh
 
 ```swift
 var kSecHonorRoot: Int { get }
+```
+
+```c
+kSecHonorRoot
 ```
 
 

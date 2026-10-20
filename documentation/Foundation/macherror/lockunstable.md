@@ -1,7 +1,8 @@
 # lockUnstable
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The thread holding the lock terminated before releasing the lock.
 

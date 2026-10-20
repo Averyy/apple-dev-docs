@@ -1,17 +1,18 @@
 # IOEventLink
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class IOEventLink;
 ```
 
@@ -30,25 +31,25 @@ Once the remote eventlink port has been sent to the driver, the driver should be
 ## Topics
 
 ### Instance Methods
-- [Activate](ioeventlink/activate.md)
-- [Associate](ioeventlink/associate.md)
-- [Cancel](ioeventlink/cancel.md)
-- [Disassociate](ioeventlink/disassociate.md)
-- [Invalidate](ioeventlink/invalidate.md)
-- [Signal](ioeventlink/signal.md)
-- [SignalAndWait](ioeventlink/signalandwait.md)
-- [SignalAndWaitUntil](ioeventlink/signalandwaituntil.md)
-- [Wait](ioeventlink/wait.md)
-- [WaitUntil](ioeventlink/waituntil.md)
-- [free](ioeventlink/free.md)
-- [init](ioeventlink/init.md)
+- [Activate](./ioeventlink/activate.md)
+- [Associate](./ioeventlink/associate.md)
+- [Cancel](./ioeventlink/cancel.md)
+- [Disassociate](./ioeventlink/disassociate.md)
+- [Invalidate](./ioeventlink/invalidate.md)
+- [Signal](./ioeventlink/signal.md)
+- [SignalAndWait](./ioeventlink/signalandwait.md)
+- [SignalAndWaitUntil](./ioeventlink/signalandwaituntil.md)
+- [Wait](./ioeventlink/wait.md)
+- [WaitUntil](./ioeventlink/waituntil.md)
+- [free](./ioeventlink/free.md)
+- [init](./ioeventlink/init.md)
 ### Type Methods
-- [Create](ioeventlink/create.md)
+- [Create](./ioeventlink/create.md)
 
 ## Relationships
 
 ### Inherits From
-- [OSObject](osobject.md)
+- [OSObject](./osobject.md)
 
 
 ---

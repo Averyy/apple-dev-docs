@@ -1,7 +1,8 @@
 # kDNSServiceErr_BadState
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceErr_BadState: Int { get }
+```
+
+```c
+kDNSServiceErr_BadState
 ```
 
 

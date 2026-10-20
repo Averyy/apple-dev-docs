@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kConfigSBP2LUN](1645957-anonymous/kconfigsbp2lun.md)
-- [kConfigSBP2MAO](1645957-anonymous/kconfigsbp2mao.md)
-- [kConfigSBP2Revision](1645957-anonymous/kconfigsbp2revision.md)
+- [kConfigSBP2LUN](./api-1645957-anonymous/kconfigsbp2lun.md)
+- [kConfigSBP2MAO](./api-1645957-anonymous/kconfigsbp2mao.md)
+- [kConfigSBP2Revision](./api-1645957-anonymous/kconfigsbp2revision.md)
 
 
 ---

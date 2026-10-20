@@ -1,7 +1,8 @@
 # init(pose:context:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the state of a seat using the specified pose and optional, game-specific data.
 

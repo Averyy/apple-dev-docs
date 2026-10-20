@@ -1,7 +1,8 @@
 # getSmartCard()
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func getSmartCard() throws -> TKSmartCard
+```
+
+```objc
+- (TKSmartCard *) getSmartCardWithError:(NSError **) error;
 ```
 
 #### Discussion

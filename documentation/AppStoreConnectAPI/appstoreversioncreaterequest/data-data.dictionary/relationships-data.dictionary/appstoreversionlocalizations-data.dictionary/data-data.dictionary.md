@@ -1,7 +1,8 @@
 # AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an App Store version.
 
@@ -10,22 +11,23 @@ The request body you use to create an App Store version.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionLocalizations`
 
 ## See Also
 
-- [object AppStoreVersionCreateRequest.Data.Relationships.App](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
+### Objects
+- [object AppStoreVersionCreateRequest.Data.Relationships.App](../app-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object AppStoreVersionCreateRequest.Data.Relationships.Build](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.Build](../build-data.dictionary.md)
   The relationships to other resources that you can set with this request.
-- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary.md)
+- [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations](../appstoreversionlocalizations-data.dictionary.md)
 
 
 ---

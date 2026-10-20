@@ -1,7 +1,8 @@
 # components
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the values of the color components (including alpha) associated with a color.
 
@@ -22,17 +23,18 @@ var components: [CGFloat]? { get }
 
 #### Discussion
 
-An array of intensity values for the color components (including alpha) associated with the specified color. The size of the array is equal to the color’s [`numberOfComponents`](cgcolor/numberofcomponents.md) value.
+An array of intensity values for the color components (including alpha) associated with the specified color. The size of the array is equal to the color’s [`numberOfComponents`](./numberofcomponents.md) value.
 
 ## See Also
 
-- [var alpha: CGFloat](cgcolor/alpha.md)
+### Examining a Color
+- [var alpha: CGFloat](./alpha.md)
   Returns the value of the alpha component associated with a color.
-- [var colorSpace: CGColorSpace?](cgcolor/colorspace.md)
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   Returns the color space associated with a color.
-- [var numberOfComponents: Int](cgcolor/numberofcomponents.md)
+- [var numberOfComponents: Int](./numberofcomponents.md)
   Returns the number of color components (including alpha) associated with a color.
-- [var pattern: CGPattern?](cgcolor/pattern.md)
+- [var pattern: CGPattern?](./pattern.md)
   Returns the pattern associated with a color in a pattern color space.
 
 

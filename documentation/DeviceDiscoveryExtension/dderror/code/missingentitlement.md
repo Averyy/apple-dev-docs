@@ -1,7 +1,8 @@
 # DDError.Code.missingEntitlement
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the app extension lacks a required entitlement.
 
@@ -9,7 +10,7 @@ An error that indicates that the app extension lacks a required entitlement.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,23 +19,28 @@ An error that indicates that the app extension lacks a required entitlement.
 case missingEntitlement
 ```
 
+```c
+DDErrorCodeMissingEntitlement
+```
+
 ## See Also
 
-- [DDError.Code.success](dderror/code/success.md)
+### Errors
+- [DDError.Code.success](./success.md)
   An error that indicates an operation succeeds.
-- [DDError.Code.unknown](dderror/code/unknown.md)
+- [DDError.Code.unknown](./unknown.md)
   An error that indicates an uncategorized problem.
-- [DDError.Code.badParameter](dderror/code/badparameter.md)
+- [DDError.Code.badParameter](./badparameter.md)
   An error that indicates the framework doesn’t support a parameter that the extension provides.
-- [DDError.Code.unsupported](dderror/code/unsupported.md)
+- [DDError.Code.unsupported](./unsupported.md)
   An error that indicates an unsupported configuration.
-- [DDError.Code.timeout](dderror/code/timeout.md)
+- [DDError.Code.timeout](./timeout.md)
   An error that indicates a timeout occurs.
-- [DDError.Code.internal](dderror/code/internal.md)
+- [DDError.Code.internal](./internal.md)
   An error that indicates a problem of internal origin.
-- [DDError.Code.permission](dderror/code/permission.md)
+- [DDError.Code.permission](./permission.md)
   An error that indicates the app extension lacks necessary permissions.
-- [DDError.Code.next](dderror/code/next.md)
+- [DDError.Code.next](./next.md)
   An error the framework reserves for future use.
 
 

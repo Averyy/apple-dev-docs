@@ -1,17 +1,22 @@
 # action
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default action-message selector associated with the control.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var action: Selector? { get set }
+```
+
+```objc
+@property (nullable) SEL action;
 ```
 
 #### Discussion
@@ -22,13 +27,14 @@ If you want the action-message selector for a control that has multiple cells, i
 
 ## See Also
 
-- [var target: AnyObject?](nscontrol/target.md)
+### Implementing the Target-Action Mechanism
+- [var target: AnyObject?](./target.md)
   The target object that receives action messages from the cell.
-- [var isContinuous: Bool](nscontrol/iscontinuous.md)
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value indicating whether the receiver’s cell sends its action message continuously to its target during mouse tracking.
-- [func sendAction(Selector?, to: Any?) -> Bool](nscontrol/sendaction(_:to:).md)
+- [func sendAction(Selector?, to: Any?) -> Bool](./sendaction%28_,to%29.md)
   Causes the specified action to be sent to the target.
-- [func sendAction(on: NSEvent.EventTypeMask) -> Int](nscontrol/sendaction(on:).md)
+- [func sendAction(on: NSEvent.EventTypeMask) -> Int](./sendaction%28on%29.md)
   Sets the conditions on which the receiver sends action messages to its target.
 
 

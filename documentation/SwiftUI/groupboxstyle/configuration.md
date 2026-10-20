@@ -1,7 +1,8 @@
 # GroupBoxStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The properties of a group box instance.
 
@@ -20,9 +21,10 @@ typealias Configuration = GroupBoxStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](groupboxstyle/makebody(configuration:).md)
+### Creating custom group box styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view representing the body of a group box.
-- [associatedtype Body : View](groupboxstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view that represents the body of a group box.
 
 

@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kATSFontContextGlobal: Int](katsfontcontextglobal.md)
-- [var kATSFontContextLocal: Int](katsfontcontextlocal.md)
-- [var kATSFontContextUnspecified: Int](katsfontcontextunspecified.md)
+- [var kATSFontContextGlobal: Int](../katsfontcontextglobal.md)
+- [var kATSFontContextLocal: Int](../katsfontcontextlocal.md)
+- [var kATSFontContextUnspecified: Int](../katsfontcontextunspecified.md)
 
 
 ---

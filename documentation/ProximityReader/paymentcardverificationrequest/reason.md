@@ -1,7 +1,8 @@
 # PaymentCardVerificationRequest.Reason
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The reason for the verification request.
 
@@ -19,28 +20,29 @@ enum Reason
 ## Topics
 
 ### Getting the verification reason
-- [PaymentCardVerificationRequest.Reason.lookUp](paymentcardverificationrequest/reason/lookup.md)
+- [PaymentCardVerificationRequest.Reason.lookUp](./reason/lookup.md)
   Verify the payment card to look up a past transaction.
-- [PaymentCardVerificationRequest.Reason.openTab](paymentcardverificationrequest/reason/opentab.md)
+- [PaymentCardVerificationRequest.Reason.openTab](./reason/opentab.md)
   Check if the card is valid.
-- [PaymentCardVerificationRequest.Reason.saveCard](paymentcardverificationrequest/reason/savecard.md)
+- [PaymentCardVerificationRequest.Reason.saveCard](./reason/savecard.md)
   Save the card information for later.
-- [PaymentCardVerificationRequest.Reason.other](paymentcardverificationrequest/reason/other.md)
+- [PaymentCardVerificationRequest.Reason.other](./reason/other.md)
   Verify the card information.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let currencyCode: String](paymentcardverificationrequest/currencycode.md)
+### Getting the request details
+- [let currencyCode: String](./currencycode.md)
   The ISO 4217 code that indicates the currency type.
-- [let verificationReason: PaymentCardVerificationRequest.Reason](paymentcardverificationrequest/verificationreason.md)
+- [let verificationReason: PaymentCardVerificationRequest.Reason](./verificationreason.md)
   The reason you asked to verify someone’s card.
 
 

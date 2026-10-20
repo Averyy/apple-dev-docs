@@ -1,7 +1,8 @@
 # layoutDirectionBehavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the behavior of this view for different layout directions.
 
@@ -29,7 +30,7 @@ A view that conditionally mirrors its contents horizontally in a given layout di
 
 Use `layoutDirectionBehavior(_:)` when you need the system to horizontally mirror the contents of the view when presented in a layout direction.
 
-To override the layout direction for a specific view, use the [`environment(_:_:)`](view/environment(_:_:).md) view modifier to explicitly override the [`layoutDirection`](environmentvalues/layoutdirection.md) environment value for the view.
+To override the layout direction for a specific view, use the [`environment(_:_:)`](./environment%28_,_%29.md) view modifier to explicitly override the [`layoutDirection`](../environmentvalues/layoutdirection.md) environment value for the view.
 
 ## Parameters
 
@@ -37,13 +38,14 @@ To override the layout direction for a specific view, use the [`environment(_:_:
 
 ## See Also
 
-- [enum LayoutDirectionBehavior](layoutdirectionbehavior.md)
+### Setting a layout direction
+- [enum LayoutDirectionBehavior](../layoutdirectionbehavior.md)
   A description of what should happen when the layout direction changes.
-- [var layoutDirection: LayoutDirection](environmentvalues/layoutdirection.md)
+- [var layoutDirection: LayoutDirection](../environmentvalues/layoutdirection.md)
   The layout direction associated with the current environment.
-- [enum LayoutDirection](layoutdirection.md)
+- [enum LayoutDirection](../layoutdirection.md)
   A direction in which SwiftUI can lay out content.
-- [struct LayoutRotationUnaryLayout](layoutrotationunarylayout.md)
+- [struct LayoutRotationUnaryLayout](../layoutrotationunarylayout.md)
   A layout that rotates the space containing a view.
 
 

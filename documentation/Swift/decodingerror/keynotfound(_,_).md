@@ -1,7 +1,8 @@
 # DecodingError.keyNotFound(_:_:)
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An indication that a keyed decoding container was asked for an entry for the given key, but did not contain one.
 

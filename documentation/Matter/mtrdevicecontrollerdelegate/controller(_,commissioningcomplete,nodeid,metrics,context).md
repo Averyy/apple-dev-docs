@@ -1,7 +1,8 @@
 # controller(_:commissioningComplete:nodeID:metrics:context:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notify the delegate when commissioning is completed.
 
@@ -18,6 +19,10 @@ Notify the delegate when commissioning is completed.
 
 ```swift
 optional func controller(_ controller: MTRDeviceController, commissioningComplete error: (any Error)?, nodeID: NSNumber?, metrics: MTRMetrics, context: [String : Any])
+```
+
+```objc
+- (void) controller:(MTRDeviceController *) controller commissioningComplete:(NSError *) error nodeID:(NSNumber *) nodeID metrics:(MTRMetrics *) metrics context:(NSDictionary<NSString *,id> *) context;
 ```
 
 #### Discussion

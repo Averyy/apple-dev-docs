@@ -1,7 +1,8 @@
 # unspecified
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Used as default when no UIScene is specified as a placement.
 
@@ -20,7 +21,8 @@ Experiences will be placed over the UIScene of the original container. If contai
 
 ## See Also
 
-- [static func over(scene: UIScene) -> AVExperienceController.Configuration.Placement](avexperiencecontroller/configuration-swift.struct/placement-swift.struct/over(scene:).md)
+### Placements
+- [static func over(scene: UIScene) -> AVExperienceController.Configuration.Placement](./over%28scene%29.md)
   Place the video over the provided scene.
 
 

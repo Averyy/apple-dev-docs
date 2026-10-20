@@ -1,7 +1,8 @@
 # AAAttributionErrorDomain
 
 **Framework**: AdServices  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The framework attribution error domain.
 
@@ -18,11 +19,16 @@ The framework attribution error domain.
 let AAAttributionErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const AAAttributionErrorDomain;
+```
+
 ## See Also
 
-- [struct AAAttributionError](aaattributionerror.md)
+### Errors
+- [struct AAAttributionError](./aaattributionerror.md)
   The error code that the parent class issues.
-- [AAAttributionError.Code](aaattributionerror/code.md)
+- [AAAttributionError.Code](./aaattributionerror/code.md)
   The error code that the parent class issues.
 
 

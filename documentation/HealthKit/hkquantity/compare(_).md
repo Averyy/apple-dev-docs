@@ -1,7 +1,8 @@
 # compare(_:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares two values after converting them to the same units.
 
@@ -19,9 +20,13 @@ Compares two values after converting them to the same units.
 func compare(_ quantity: HKQuantity) -> ComparisonResult
 ```
 
+```objc
+- (NSComparisonResult) compare:(HKQuantity *) quantity;
+```
+
 #### Return Value
 
-[`ComparisonResult.orderedDescending`](https://developer.apple.com/documentation/foundation/comparisonresult/ordereddescending) if the parameter is less than the receiver. [`ComparisonResult.orderedAscending`](https://developer.apple.com/documentation/foundation/comparisonresult/orderedascending) if the parameter is greater than the receiver. [`ComparisonResult.orderedSame`](https://developer.apple.com/documentation/foundation/comparisonresult/orderedsame) if the quantities are equal.
+[`ComparisonResult.orderedDescending`](../../Foundation/comparisonresult/ordereddescending.md) if the parameter is less than the receiver. [`ComparisonResult.orderedAscending`](../../Foundation/comparisonresult/orderedascending.md) if the parameter is greater than the receiver. [`ComparisonResult.orderedSame`](../../Foundation/comparisonresult/orderedsame.md) if the quantities are equal.
 
 #### Discussion
 
@@ -29,17 +34,18 @@ Returns whether the quantity argument is less than, equal to, or greater than th
 
 > **Note**:  Converting a value to a different unit can introduce floating point errors. Values that should be equal may appear unequal due to these floating point errors.
 
-In most cases, the compatible units are clear from context. To see the unit types associated with different quantity sample types, see the type identifiers in [`HKQuantityTypeIdentifier`](hkquantitytypeidentifier.md).
+In most cases, the compatible units are clear from context. To see the unit types associated with different quantity sample types, see the type identifiers in [`HKQuantityTypeIdentifier`](../hkquantitytypeidentifier.md).
 
-If you need to programmatically check whether a particular unit is compatible with a particular quantity, call the quantity’s [`is(compatibleWith:)`](hkquantity/is(compatiblewith:).md) method.
+If you need to programmatically check whether a particular unit is compatible with a particular quantity, call the quantity’s [`is(compatibleWith:)`](./is%28compatiblewith%29.md) method.
 
 ## Parameters
 
-- `quantity`: The quantity to compare. This method throws an exception if the quantities do not have compatible units ([`invalidArgumentException`](https://developer.apple.com/documentation/foundation/nsexceptionname/invalidargumentexception)).
+- `quantity`: The quantity to compare. This method throws an exception if the quantities do not have compatible units ([`invalidArgumentException`](../../Foundation/nsexceptionname/invalidargumentexception.md)).
 
 ## See Also
 
-- [func `is`(compatibleWith: HKUnit) -> Bool](hkquantity/is(compatiblewith:).md)
+### Related Documentation
+- [func `is`(compatibleWith: HKUnit) -> Bool](./is%28compatiblewith%29.md)
   Returns a boolean value indicating whether the quantity is compatible with the provided unit.
 
 

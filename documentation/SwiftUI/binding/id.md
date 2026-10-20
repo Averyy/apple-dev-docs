@@ -1,7 +1,8 @@
 # id
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stable identity of the entity associated with this instance, corresponding to the `id` of the binding’s wrapped value.
 
@@ -20,13 +21,16 @@ The stable identity of the entity associated with this instance, corresponding t
 var id: Value.ID { get }
 ```
 
+Available when `Value` conforms to `Identifiable`.
+
 ## See Also
 
-- [func animation(Animation?) -> Binding<Value>](binding/animation(_:).md)
+### Managing changes
+- [func animation(Animation?) -> Binding<Value>](./animation%28_%29.md)
   Specifies an animation to perform when the binding value changes.
-- [func transaction(Transaction) -> Binding<Value>](binding/transaction(_:).md)
+- [func transaction(Transaction) -> Binding<Value>](./transaction%28_%29.md)
   Specifies a transaction for the binding.
-- [var transaction: Transaction](binding/transaction.md)
+- [var transaction: Transaction](./transaction.md)
   The binding’s transaction.
 
 

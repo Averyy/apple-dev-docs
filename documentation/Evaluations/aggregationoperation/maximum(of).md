@@ -1,7 +1,8 @@
 # AggregationOperation.maximum(of:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The maximum of the metric’s values.
 

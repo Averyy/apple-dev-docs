@@ -1,7 +1,8 @@
 # paragraphStyle
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 12.0+
@@ -14,8 +15,9 @@ let paragraphStyle: AttributeScopes.AppKitAttributes.ParagraphStyleAttribute
 
 ## See Also
 
-- [let markedClauseSegment: AttributeScopes.AppKitAttributes.MarkedClauseSegmentAttribute](attributescopes/appkitattributes/markedclausesegment.md)
-- [let superscript: AttributeScopes.AppKitAttributes.SuperscriptAttribute](attributescopes/appkitattributes/superscript.md)
+### Using Text Layout and Presentation Attributes
+- [let markedClauseSegment: AttributeScopes.AppKitAttributes.MarkedClauseSegmentAttribute](./markedclausesegment.md)
+- [let superscript: AttributeScopes.AppKitAttributes.SuperscriptAttribute](./superscript.md)
 
 
 ---

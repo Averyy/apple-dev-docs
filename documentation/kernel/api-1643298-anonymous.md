@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kINQUIRY_VERSION_DESCRIPTOR_NVME](1643298-anonymous/kinquiry_version_descriptor_nvme.md)
+- [kINQUIRY_VERSION_DESCRIPTOR_NVME](./api-1643298-anonymous/kinquiry_version_descriptor_nvme.md)
 
 
 ---

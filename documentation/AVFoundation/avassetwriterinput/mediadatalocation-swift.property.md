@@ -1,7 +1,8 @@
 # mediaDataLocation
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies how the input lays out and interleaves media data.
 
@@ -19,23 +20,28 @@ Specifies how the input lays out and interleaves media data.
 var mediaDataLocation: AVAssetWriterInput.MediaDataLocation { get set }
 ```
 
+```objc
+@property (nonatomic, copy) AVAssetWriterInputMediaDataLocation mediaDataLocation;
+```
+
 #### Discussion
 
-Use this property to optimize tracks that contain a small amount of data that you need all at once, such as chapter tracks. Setting the value to [`beforeMainMediaDataNotInterleaved`](avassetwriterinput/mediadatalocation-swift.struct/beforemainmediadatanotinterleaved.md) causes the asset writer to try to write the media data for this track before interleaved inputs. For file types that support preloading media data, such as QuickTime files, setting this value also writes an indicator to the file to preload its media data.
+Use this property to optimize tracks that contain a small amount of data that you need all at once, such as chapter tracks. Setting the value to [`beforeMainMediaDataNotInterleaved`](./mediadatalocation-swift.struct/beforemainmediadatanotinterleaved.md) causes the asset writer to try to write the media data for this track before interleaved inputs. For file types that support preloading media data, such as QuickTime files, setting this value also writes an indicator to the file to preload its media data.
 
-Set the value to [`interleavedWithMainMediaData`](avassetwriterinput/mediadatalocation-swift.struct/interleavedwithmainmediadata.md) for tracks whose media data you need only as it approaches its presentation time, or when multiple inputs exist that supply media data that plays concurrently.
+Set the value to [`interleavedWithMainMediaData`](./mediadatalocation-swift.struct/interleavedwithmainmediadata.md) for tracks whose media data you need only as it approaches its presentation time, or when multiple inputs exist that supply media data that plays concurrently.
 
 You can’t set this value after writing starts.
 
 ## See Also
 
-- [var preferredMediaChunkAlignment: Int](avassetwriterinput/preferredmediachunkalignment.md)
+### Configuring media data layout
+- [var preferredMediaChunkAlignment: Int](./preferredmediachunkalignment.md)
   The boundary, in bytes, for aligning media chunks.
-- [var preferredMediaChunkDuration: CMTime](avassetwriterinput/preferredmediachunkduration.md)
+- [var preferredMediaChunkDuration: CMTime](./preferredmediachunkduration.md)
   The duration to use for each chunk of sample data in the output file.
-- [var sampleReferenceBaseURL: URL?](avassetwriterinput/samplereferencebaseurl.md)
+- [var sampleReferenceBaseURL: URL?](./samplereferencebaseurl.md)
   The base URL sample references are relative to.
-- [AVAssetWriterInput.MediaDataLocation](avassetwriterinput/mediadatalocation-swift.struct.md)
+- [AVAssetWriterInput.MediaDataLocation](./mediadatalocation-swift.struct.md)
   A structure that indicates how to lay out and interleave media data.
 
 

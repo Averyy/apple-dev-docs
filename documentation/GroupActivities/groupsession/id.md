@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the current session.
 
@@ -25,9 +26,10 @@ The system assigns a globally unique identifier to each session. This identifier
 
 ## See Also
 
-- [var state: GroupSession<ActivityType>.State](groupsession/state-swift.property.md)
+### Getting the session details
+- [var state: GroupSession<ActivityType>.State](./state-swift.property.md)
   The current state of the session.
-- [GroupSession.State](groupsession/state-swift.enum.md)
+- [GroupSession.State](./state-swift.enum.md)
   The possible states of a session.
 
 

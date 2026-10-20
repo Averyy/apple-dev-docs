@@ -1,14 +1,15 @@
 # IOUSBHostCIEndpointSetNextTransferCommandData1Address
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBHostCIEndpointSetNextTransferCommandData1Address = IOUSBBitRange64(0, 63)
 ```
 

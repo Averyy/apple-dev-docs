@@ -1,7 +1,8 @@
 # AssetInventory.Status
 
 **Framework**: Speech  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.0+
@@ -20,25 +21,26 @@ enum Status
 ## Topics
 
 ### Asset status
-- [AssetInventory.Status.downloading](assetinventory/status/downloading.md)
+- [AssetInventory.Status.downloading](./status/downloading.md)
   The system is currently downloading the assets, or waiting for conditions to improve and continue downloading later.
-- [AssetInventory.Status.installed](assetinventory/status/installed.md)
+- [AssetInventory.Status.installed](./status/installed.md)
   The necessary assets have been downloaded and installed on the device, and the module is ready for use.
-- [AssetInventory.Status.supported](assetinventory/status/supported.md)
+- [AssetInventory.Status.supported](./status/supported.md)
   The module can work with its configuration, but the assets will need to be downloaded.
-- [AssetInventory.Status.unsupported](assetinventory/status/unsupported.md)
+- [AssetInventory.Status.unsupported](./status/unsupported.md)
   The module will not work with its configuration.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Comparable](../../Swift/comparable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [static func status(forModules: [any SpeechModule]) async -> AssetInventory.Status](assetinventory/status(formodules:).md)
+### Checking asset status
+- [static func status(forModules: [any SpeechModule]) async -> AssetInventory.Status](./status%28formodules%29.md)
   Returns the status for the list of modules.
 
 

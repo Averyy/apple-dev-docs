@@ -1,7 +1,8 @@
 # enumerateContacts(with:usingBlock:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the enumeration of all contacts matching a contact fetch request executes successfully.
 
@@ -19,17 +20,21 @@ Returns a Boolean value that indicates whether the enumeration of all contacts m
 func enumerateContacts(with fetchRequest: CNContactFetchRequest, usingBlock block: (CNContact, UnsafeMutablePointer<ObjCBool>) -> Void) throws
 ```
 
+```objc
+- (BOOL) enumerateContactsWithFetchRequest:(CNContactFetchRequest *) fetchRequest error:(NSError **) error usingBlock:(void (^)(CNContact *contact, BOOL *stop)) block;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if enumeration of all contacts matching a contact fetch request executes successfully; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if enumeration of all contacts matching a contact fetch request executes successfully; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-This method waits until the enumeration is finished. If there are no results, the block is not called and the method returns [`true`](https://developer.apple.com/documentation/swift/true).
+This method waits until the enumeration is finished. If there are no results, the block is not called and the method returns [`true`](../../Swift/true.md).
 
 This method can fetch all contacts without keeping all of them at once in memory, which is expensive.
 
-> **Note**: In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and [`About Imported Cocoa Error Parameters`](https://developer.apple.com/documentation/swift/about-imported-cocoa-error-parameters).
+> **Handling Errors in Swift**: In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and [About Imported Cocoa Error Parameters](../../Swift/about-imported-cocoa-error-parameters.md).
 
 ## Parameters
 
@@ -38,11 +43,12 @@ This method can fetch all contacts without keeping all of them at once in memory
 
 ## See Also
 
-- [func unifiedMeContactWithKeys(toFetch: [any CNKeyDescriptor]) throws -> CNContact](cncontactstore/unifiedmecontactwithkeys(tofetch:).md)
+### Fetching contacts
+- [func unifiedMeContactWithKeys(toFetch: [any CNKeyDescriptor]) throws -> CNContact](./unifiedmecontactwithkeys%28tofetch%29.md)
   Fetches the unified contact that’s the *me* card.
-- [func unifiedContact(withIdentifier: String, keysToFetch: [any CNKeyDescriptor]) throws -> CNContact](cncontactstore/unifiedcontact(withidentifier:keystofetch:).md)
+- [func unifiedContact(withIdentifier: String, keysToFetch: [any CNKeyDescriptor]) throws -> CNContact](./unifiedcontact%28withidentifier,keystofetch%29.md)
   Fetches a unified contact for the specified contact identifier.
-- [func unifiedContacts(matching: NSPredicate, keysToFetch: [any CNKeyDescriptor]) throws -> [CNContact]](cncontactstore/unifiedcontacts(matching:keystofetch:).md)
+- [func unifiedContacts(matching: NSPredicate, keysToFetch: [any CNKeyDescriptor]) throws -> [CNContact]](./unifiedcontacts%28matching,keystofetch%29.md)
   Fetches all unified contacts matching the specified predicate.
 
 

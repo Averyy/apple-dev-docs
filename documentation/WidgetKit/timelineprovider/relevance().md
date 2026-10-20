@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides an object containing attributes that describe when a specific widget is relevant.
@@ -22,8 +23,8 @@ func relevance() async -> WidgetRelevance<Void>
 
 ## Mentions
 
-- [Keeping a widget up to date](keeping-a-widget-up-to-date.md)
-- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
+- [Keeping a widget up to date](../keeping-a-widget-up-to-date.md)
+- [Increasing the visibility of widgets in Smart Stacks](../widget-suggestions-in-smart-stacks.md)
 
 #### Return Value
 
@@ -35,7 +36,13 @@ The system can use the relevance to show this widget in the Smart Stack when the
 
 By default, this method returns no relevances. Implement this requirement to tell the system that your widget is relevant.
 
-> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [`Increasing the visibility of widgets in Smart Stacks`](widget-suggestions-in-smart-stacks.md).
+> **Note**: Smart Stacks are available in iOS, iPadOS, and watchOS. However, functionality provided by RelevanceKit API is only available in watchOS. Calling its API on other platforms doesn’t have any effect. For more information, refer to [Increasing the visibility of widgets in Smart Stacks](../widget-suggestions-in-smart-stacks.md).
+
+## Default Implementations
+
+### TimelineProvider Implementations
+- [func relevance() async -> WidgetRelevance<Void>](./relevance%28%29-7036j.md)
+  Provides an object containing attributes that describe when a specific widget is relevant.
 
 
 ---

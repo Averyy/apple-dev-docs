@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var options: MPSFColorConversionOptions { get }
+```
+
+```objc
+@property (nonatomic, readonly) MPSFColorConversionOptions options;
 ```
 
 #### Discussion

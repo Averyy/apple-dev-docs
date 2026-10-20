@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Informs the text view of the writing direction for a given range of text.
@@ -18,9 +19,13 @@ Informs the text view of the writing direction for a given range of text.
 func setBaseWritingDirection(_ writingDirection: NSWritingDirection, for range: UITextRange)
 ```
 
+```objc
+- (void) setBaseWritingDirection:(NSWritingDirection) writingDirection forRange:(UITextRange *) range;
+```
+
 ## Mentions
 
-- [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
+- [Integrating custom browser text views with UIKit](../integrating-custom-browser-text-views-with-uikit.md)
 
 #### Discussion
 

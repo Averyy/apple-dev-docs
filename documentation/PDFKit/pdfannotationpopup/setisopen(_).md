@@ -1,12 +1,13 @@
 # setIsOpen(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the open state of the pop-up menu.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -14,13 +15,18 @@ Sets the open state of the pop-up menu.
 func setIsOpen(_ isOpen: Bool)
 ```
 
+```objc
+- (void) setIsOpen:(BOOL) isOpen;
+```
+
 ## Parameters
 
-- `isOpen`: Pass [`true`](https://developer.apple.com/documentation/swift/true) to set the pop-up menu to open; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+- `isOpen`: Pass [`true`](../../Swift/true.md) to set the pop-up menu to open; [`false`](../../Swift/false.md) otherwise.
 
 ## See Also
 
-- [func isOpen() -> Bool](pdfannotationpopup/isopen.md)
+### Accessing and Setting the Open State
+- [func isOpen() -> Bool](./isopen%28%29.md)
   Returns a Boolean value indicating whether the pop-up is open.
 
 

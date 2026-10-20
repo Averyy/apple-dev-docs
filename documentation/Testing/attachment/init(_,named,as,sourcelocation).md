@@ -1,7 +1,8 @@
 # init(_:named:as:sourceLocation:)
 
 **Framework**: Swift Testing  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an instance of this type that encloses the given image.
 
@@ -14,6 +15,8 @@ Initialize an instance of this type that encloses the given image.
 ```swift
 init<T>(_ image: T, named preferredName: String? = nil, as imageFormat: AttachableImageFormat? = nil, sourceLocation: SourceLocation = #_sourceLocation) where AttachableValue : _AttachableImageWrapper<T>, AttachableValue : AttachableWrapper, T : AttachableAsImage
 ```
+
+Available when `AttachableValue` conforms to `Attachable`.
 
 #### Discussion
 
@@ -28,11 +31,12 @@ The testing library uses the image format specified by `imageFormat`. Pass `nil`
 
 ## See Also
 
-- [protocol AttachableAsImage](attachableasimage.md)
-  A protocol describing images that can be converted to instances of [`Attachment`](https://developer.apple.comhttps://developer.apple.com/documentation/testing/attachment).
-- [struct AttachableImageFormat](attachableimageformat.md)
+### Attaching images to tests
+- [protocol AttachableAsImage](../attachableasimage.md)
+  A protocol describing images that can be converted to instances of [Attachment](../attachment.md).
+- [struct AttachableImageFormat](../attachableimageformat.md)
   A type describing image formats supported by the system that can be used when attaching an image to a test.
-- [static func record<T>(T, named: String?, as: AttachableImageFormat?, sourceLocation: SourceLocation)](attachment/record(_:named:as:sourcelocation:).md)
+- [static func record<T>(T, named: String?, as: AttachableImageFormat?, sourceLocation: SourceLocation)](./record%28_,named,as,sourcelocation%29.md)
   Attach an image to the current test.
 
 

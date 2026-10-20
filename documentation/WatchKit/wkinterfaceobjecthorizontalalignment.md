@@ -1,7 +1,8 @@
 # WKInterfaceObjectHorizontalAlignment
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants for horizontally aligning objects in their container.
 
@@ -14,31 +15,36 @@ Constants for horizontally aligning objects in their container.
 enum WKInterfaceObjectHorizontalAlignment
 ```
 
+```c
+enum WKInterfaceObjectHorizontalAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [WKInterfaceObjectHorizontalAlignment.left](wkinterfaceobjecthorizontalalignment/left.md)
+- [WKInterfaceObjectHorizontalAlignment.left](./wkinterfaceobjecthorizontalalignment/left.md)
   Left alignment. The object’s content aligns with the left edge of the container and extends to the right.
-- [WKInterfaceObjectHorizontalAlignment.center](wkinterfaceobjecthorizontalalignment/center.md)
+- [WKInterfaceObjectHorizontalAlignment.center](./wkinterfaceobjecthorizontalalignment/center.md)
   Center alignment. The object’s content is centered horizontally in the container and extends equally to the left and right.
-- [WKInterfaceObjectHorizontalAlignment.right](wkinterfaceobjecthorizontalalignment/right.md)
+- [WKInterfaceObjectHorizontalAlignment.right](./wkinterfaceobjecthorizontalalignment/right.md)
   Right alignment. The object’s content aligns with the right edge of the container and extends to the left.
 ### Initializers
-- [init?(rawValue: Int)](wkinterfaceobjecthorizontalalignment/init(rawvalue:).md)
+- [init?(rawValue: Int)](./wkinterfaceobjecthorizontalalignment/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum WKInterfaceObjectVerticalAlignment](wkinterfaceobjectverticalalignment.md)
+### Constants
+- [enum WKInterfaceObjectVerticalAlignment](./wkinterfaceobjectverticalalignment.md)
   Constants for vertically aligning objects in their container.
 
 

@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mirror that reflects the `Bool` instance.
 
@@ -22,11 +23,12 @@ var customMirror: Mirror { get }
 
 ## See Also
 
-- [var customPlaygroundQuickLook: _PlaygroundQuickLook](bool/customplaygroundquicklook.md)
+### Inspecting a Boolean
+- [var customPlaygroundQuickLook: _PlaygroundQuickLook](./customplaygroundquicklook.md)
   A custom playground Quick Look for the `Bool` instance.
-- [var hashValue: Int](bool/hashvalue.md)
+- [var hashValue: Int](./hashvalue.md)
   The hash value.
-- [func hash(into: inout Hasher)](bool/hash(into:).md)
+- [func hash(into: inout Hasher)](./hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 
 

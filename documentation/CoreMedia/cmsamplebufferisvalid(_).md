@@ -1,7 +1,8 @@
 # CMSampleBufferIsValid(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether a sample buffer is valid.
 
@@ -20,6 +21,10 @@ Returns a Boolean value that indicates whether a sample buffer is valid.
 func CMSampleBufferIsValid(_ sbuf: CMSampleBuffer) -> Bool
 ```
 
+```c
+extern Boolean CMSampleBufferIsValid(CMSampleBufferRef sbuf);
+```
+
 #### Return Value
 
 A Boolean indicating whether the sample buffer is still valid.
@@ -34,11 +39,12 @@ Returns false if `sbuf` is `NULL` or `CMSampleBufferInvalidate` was called, true
 
 ## See Also
 
-- [func CMSampleBufferSetInvalidateHandler(CMSampleBuffer, invalidateHandler: CMSampleBufferInvalidateHandler) -> OSStatus](cmsamplebuffersetinvalidatehandler(_:invalidatehandler:).md)
+### Invalidating Sample Buffers
+- [func CMSampleBufferSetInvalidateHandler(CMSampleBuffer, invalidateHandler: CMSampleBufferInvalidateHandler) -> OSStatus](./cmsamplebuffersetinvalidatehandler%28_,invalidatehandler%29.md)
   Sets the sample buffer’s invalidation handler.
-- [func CMSampleBufferInvalidate(CMSampleBuffer) -> OSStatus](cmsamplebufferinvalidate(_:).md)
+- [func CMSampleBufferInvalidate(CMSampleBuffer) -> OSStatus](./cmsamplebufferinvalidate%28_%29.md)
   Invalidates a sample buffer by calling its invalidation callback.
-- [func CMSampleBufferSetInvalidateCallback(CMSampleBuffer, callback: CMSampleBufferInvalidateCallback, refcon: UInt64) -> OSStatus](cmsamplebuffersetinvalidatecallback(_:callback:refcon:).md)
+- [func CMSampleBufferSetInvalidateCallback(CMSampleBuffer, callback: CMSampleBufferInvalidateCallback, refcon: UInt64) -> OSStatus](./cmsamplebuffersetinvalidatecallback%28_,callback,refcon%29.md)
   Sets the sample buffer’s invalidation callback.
 
 

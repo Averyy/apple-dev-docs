@@ -1,7 +1,8 @@
 # SparseHermitian
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A flag to describe the type of matrix represented.
 
@@ -20,6 +21,10 @@ A flag to describe the type of matrix represented.
 var SparseHermitian: SparseKind_t { get }
 ```
 
+```c
+SparseHermitian
+```
+
 #### Discussion
 
 A `SparseMatrixStructure` object can represent several types of matrices:
@@ -32,13 +37,14 @@ A `SparseMatrixStructure` object can represent several types of matrices:
 
 ## See Also
 
-- [var SparseOrdinary: SparseKind_t](sparseordinary.md)
+### Constants
+- [var SparseOrdinary: SparseKind_t](./sparseordinary.md)
   An unsymmetric sparse matrix without special structure.
-- [var SparseSymmetric: SparseKind_t](sparsesymmetric.md)
+- [var SparseSymmetric: SparseKind_t](./sparsesymmetric.md)
   A symmetric sparse matrix.
-- [var SparseTriangular: SparseKind_t](sparsetriangular.md)
+- [var SparseTriangular: SparseKind_t](./sparsetriangular.md)
   A triangular sparse matrix with a nonunit diagonal.
-- [var SparseUnitTriangular: SparseKind_t](sparseunittriangular.md)
+- [var SparseUnitTriangular: SparseKind_t](./sparseunittriangular.md)
   A triangular sparse matrix with a unit diagonal.
 
 

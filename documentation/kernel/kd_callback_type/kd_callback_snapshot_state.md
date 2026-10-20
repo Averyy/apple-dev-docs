@@ -1,14 +1,15 @@
 # KD_CALLBACK_SNAPSHOT_STATE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 KD_CALLBACK_SNAPSHOT_STATE
 ```
 

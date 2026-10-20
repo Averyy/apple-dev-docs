@@ -1,7 +1,8 @@
 # AVCustomRoutingController
 
 **Framework**: AVRouting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages the connection from a device to a destination.
 
@@ -17,55 +18,60 @@ An object that manages the connection from a device to a destination.
 class AVCustomRoutingController
 ```
 
+```objc
+@interface AVCustomRoutingController : NSObject
+```
+
 #### Overview
 
-A routing controller also informs its [`delegate`](avcustomroutingcontroller/delegate.md) object about which routes the user previously authorized, so it can reconnect, if appropriate.
+A routing controller also informs its [`delegate`](./avcustomroutingcontroller/delegate.md) object about which routes the user previously authorized, so it can reconnect, if appropriate.
 
 ## Topics
 
 ### Managing authorization
-- [var authorizedRoutes: [AVCustomDeviceRoute]](avcustomroutingcontroller/authorizedroutes.md)
+- [var authorizedRoutes: [AVCustomDeviceRoute]](./avcustomroutingcontroller/authorizedroutes.md)
   A list of authorized routes.
-- [class let authorizedRoutesDidChange: NSNotification.Name](avcustomroutingcontroller/authorizedroutesdidchange.md)
+- [class let authorizedRoutesDidChange: NSNotification.Name](./avcustomroutingcontroller/authorizedroutesdidchange.md)
   A notification the system posts when the list of authorized routes changes.
-- [func invalidateAuthorization(for: AVCustomDeviceRoute)](avcustomroutingcontroller/invalidateauthorization(for:).md)
+- [func invalidateAuthorization(for: AVCustomDeviceRoute)](./avcustomroutingcontroller/invalidateauthorization%28for%29.md)
   Revokes an app’s authorization to connect to a route.
 ### Configuring route addresses
-- [var knownRouteIPs: [AVCustomRoutingPartialIP]](avcustomroutingcontroller/knownrouteips.md)
+- [var knownRouteIPs: [AVCustomRoutingPartialIP]](./avcustomroutingcontroller/knownrouteips.md)
   An array of route addresses known to be on the local network.
-- [class AVCustomRoutingPartialIP](avcustomroutingpartialip.md)
+- [class AVCustomRoutingPartialIP](./avcustomroutingpartialip.md)
   An object that represents a full or partial IP address.
 ### Activating a route
-- [func isRouteActive(AVCustomDeviceRoute) -> Bool](avcustomroutingcontroller/isrouteactive(_:).md)
+- [func isRouteActive(AVCustomDeviceRoute) -> Bool](./avcustomroutingcontroller/isrouteactive%28_%29.md)
   Returns a Boolean value that indicates whether a route is active.
-- [func setActive(Bool, for: AVCustomDeviceRoute)](avcustomroutingcontroller/setactive(_:for:).md)
+- [func setActive(Bool, for: AVCustomDeviceRoute)](./avcustomroutingcontroller/setactive%28_,for%29.md)
   Sets the active state of a route.
 ### Accessing the delegate
-- [var delegate: (any AVCustomRoutingControllerDelegate)?](avcustomroutingcontroller/delegate.md)
+- [var delegate: (any AVCustomRoutingControllerDelegate)?](./avcustomroutingcontroller/delegate.md)
   A delegate object for a routing controller.
 ### Customizing the user interface
-- [var customActionItems: [AVCustomRoutingActionItem]](avcustomroutingcontroller/customactionitems.md)
+- [var customActionItems: [AVCustomRoutingActionItem]](./avcustomroutingcontroller/customactionitems.md)
   An array of custom action items to add to a route picker.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol AVCustomRoutingControllerDelegate](avcustomroutingcontrollerdelegate.md)
+### Media routing
+- [protocol AVCustomRoutingControllerDelegate](./avcustomroutingcontrollerdelegate.md)
   A protocol for delegates of a custom routing controller.
-- [class AVCustomRoutingEvent](avcustomroutingevent.md)
+- [class AVCustomRoutingEvent](./avcustomroutingevent.md)
   An object that represents an event that occurs on a route.
-- [class AVCustomRoutingActionItem](avcustomroutingactionitem.md)
+- [class AVCustomRoutingActionItem](./avcustomroutingactionitem.md)
   An object that represents a custom action item to display in a device route picker.
 
 

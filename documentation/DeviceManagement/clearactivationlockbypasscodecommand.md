@@ -1,7 +1,8 @@
 # ClearActivationLockBypassCodeCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to clear the Activation Lock bypass code on a device.
 
@@ -14,18 +15,18 @@ The command to clear the Activation Lock bypass code on a device.
 
 ## Declaration
 
-```swift
+```
 object ClearActivationLockBypassCodeCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object ClearActivationLockBypassCodeCommand.Command](clearactivationlockbypasscodecommand/command-data.dictionary.md)
+- [object ClearActivationLockBypassCodeCommand.Command](./clearactivationlockbypasscodecommand/command-data.dictionary.md)
   The command to clear the Activation Lock bypass code on a device.
 
 ## Properties
@@ -35,7 +36,8 @@ object ClearActivationLockBypassCodeCommand
 
 ## See Also
 
-- [object ClearActivationLockBypassCodeResponse](clearactivationlockbypasscoderesponse.md)
+### Commands and responses
+- [object ClearActivationLockBypassCodeResponse](./clearactivationlockbypasscoderesponse.md)
   A response from the device after it processes the command to clear the Activation Lock bypass code on a device.
 
 

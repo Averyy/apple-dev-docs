@@ -1,7 +1,8 @@
 # onOpenURL(prefersInApp:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an `OpenURLAction` that prefers opening URL with an in-app browser. The `handler` closure takes a URL as input, and returns a `OpenURLAction.Result` that indicates the outcome of the action.
 
@@ -37,9 +38,10 @@ It’s equivalent to calling `.onOpenURL(_:)`
 
 ## See Also
 
-- [func onOpenURL(perform: (URL) -> ()) -> some View](view/onopenurl(perform:).md)
+### URLs
+- [func onOpenURL(perform: (URL) -> ()) -> some View](./onopenurl%28perform%29.md)
   Registers a handler to invoke in response to a URL that your app receives.
-- [func widgetURL(URL?) -> some View](view/widgeturl(_:).md)
+- [func widgetURL(URL?) -> some View](./widgeturl%28_%29.md)
   Sets the URL to open in the containing app when the user clicks the widget.
 
 

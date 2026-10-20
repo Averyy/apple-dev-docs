@@ -1,7 +1,8 @@
 # AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Reasons the receiver suggests the client flush and re-enqueue.
 
@@ -23,22 +24,23 @@ enum SuggestedFlushReason
 ## Topics
 
 ### Flush reasons
-- [AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason.outputConfigurationChanged](avsamplebufferaudiorenderer/receiver/suggestedflushreason/outputconfigurationchanged.md)
+- [AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason.outputConfigurationChanged](./suggestedflushreason/outputconfigurationchanged.md)
   The audio output configuration has changed.
-- [AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason.wasFlushedAutomatically(at:)](avsamplebufferaudiorenderer/receiver/suggestedflushreason/wasflushedautomatically(at:).md)
+- [AVSampleBufferAudioRenderer.Receiver.SuggestedFlushReason.wasFlushedAutomatically(at:)](./suggestedflushreason/wasflushedautomatically%28at%29.md)
   The enqueued media data has been flushed for a reason other than a call to the `flush()` method.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func flush()](avsamplebufferaudiorenderer/receiver/flush.md)
+### Flushing the receiver
+- [func flush()](./flush%28%29.md)
   Instructs the receiver to discard pending enqueued sample buffers.
-- [func flush(fromSourceTime: CMTime) async -> Bool](avsamplebufferaudiorenderer/receiver/flush(fromsourcetime:).md)
+- [func flush(fromSourceTime: CMTime) async -> Bool](./flush%28fromsourcetime%29.md)
   Flushes enqueued sample buffers with presentation time stamps later than or equal to the specified time. This method suspends until the flush is completed.
 
 

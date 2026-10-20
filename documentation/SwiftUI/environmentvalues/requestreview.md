@@ -1,7 +1,8 @@
 # requestReview
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -18,7 +19,8 @@ var requestReview: RequestReviewAction { get }
 
 ## See Also
 
-- [var displayStoreKitMessage: DisplayMessageAction](environmentvalues/displaystorekitmessage.md)
+### StoreKit configuration
+- [var displayStoreKitMessage: DisplayMessageAction](./displaystorekitmessage.md)
 
 
 ---

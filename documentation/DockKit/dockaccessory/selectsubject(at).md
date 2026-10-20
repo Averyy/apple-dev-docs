@@ -1,7 +1,8 @@
 # selectSubject(at:)
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects a subject to track at the supplied coordinates.
 
@@ -25,19 +26,20 @@ If you disable system tracking, this configuration change applies to any custom 
 
 Call this method when implementing your own custom tracking behavior.
 
-> **Note**: [`DockKitError.notConnected`](dockkiterror/notconnected.md) if device isn’t docked, or other errors if no subject is found at the position.
+> **Throws**: [`DockKitError.notConnected`](../dockkiterror/notconnected.md) if device isn’t docked, or other errors if no subject is found at the position.
 
 ## See Also
 
-- [func track([AVMetadataObject], cameraInformation: DockAccessory.CameraInformation) async throws](dockaccessory/track(_:camerainformation:)-4yl9b.md)
+### Selecting and tracking
+- [func track([AVMetadataObject], cameraInformation: DockAccessory.CameraInformation) async throws](./track%28_,camerainformation%29-4yl9b.md)
   Automatically generate and send tracking vectors to the device.
-- [func track([DockAccessory.Observation], cameraInformation: DockAccessory.CameraInformation) async throws](dockaccessory/track(_:camerainformation:)-44mwn.md)
+- [func track([DockAccessory.Observation], cameraInformation: DockAccessory.CameraInformation) async throws](./track%28_,camerainformation%29-44mwn.md)
   Automatically generate and send tracking vectors to the device.
-- [DockAccessory.Observation](dockaccessory/observation.md)
+- [DockAccessory.Observation](./observation.md)
   An observation of the contents of a single video frame.
-- [DockAccessory.CameraInformation](dockaccessory/camerainformation.md)
+- [DockAccessory.CameraInformation](./camerainformation.md)
   A collection of tracking information about the camera currently in use.
-- [DockAccessory.CameraOrientation](dockaccessory/cameraorientation.md)
+- [DockAccessory.CameraOrientation](./cameraorientation.md)
   The set of camera orientations used to extract coordinates.
 
 

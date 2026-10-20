@@ -1,7 +1,8 @@
 # kUSBLowLatencyWriteBuffer
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 A low-latency write buffer.
 
@@ -10,7 +11,7 @@ A low-latency write buffer.
 
 ## Declaration
 
-```swift
+```c
 kUSBLowLatencyWriteBuffer = 0
 ```
 

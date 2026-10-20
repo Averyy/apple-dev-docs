@@ -1,23 +1,30 @@
 # modifyRecordZonesCompletionBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute after CloudKit modifies all of the record zones.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 15.0
+- iPadOS 8.0+ - Deprecated in 15.0
+- Mac Catalyst 13.1+ - Deprecated in 15.0
+- macOS 10.10+ - Deprecated in 12.0
+- tvOS 9.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 8.0
+
+> **Deprecated**: Use modifyRecordZonesResultBlock instead
 
 ## Declaration
 
 ```swift
 var modifyRecordZonesCompletionBlock: (([CKRecordZone]?, [CKRecordZone.ID]?, (any Error)?) -> Void)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) void (^modifyRecordZonesCompletionBlock)(NSArray<CKRecordZone *> *savedRecordZones, NSArray<CKRecordZoneID *> *deletedRecordZoneIDs, NSError *operationError);
 ```
 
 #### Discussion
@@ -30,7 +37,7 @@ This property is a closure that returns no value and has the following parameter
 
 The closure executes once, and represents your only opportunity to process the results.
 
-The closure reports an error of type [`CKError.Code.partialFailure`](ckerror/code/partialfailure.md) when it modifies only some of the record zones successfully. The [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary of the error contains a [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key that has a dictionary as its value. The keys of the dictionary are the IDs of the record zones that the operation can’t modify, and the corresponding values are errors that contain information about the failures.
+The closure reports an error of type [`CKError.Code.partialFailure`](../ckerror/code/partialfailure.md) when it modifies only some of the record zones successfully. The [`userInfo`](../../Foundation/nserror/userinfo.md) dictionary of the error contains a [`CKPartialErrorsByItemIDKey`](../ckpartialerrorsbyitemidkey.md) key that has a dictionary as its value. The keys of the dictionary are the IDs of the record zones that the operation can’t modify, and the corresponding values are errors that contain information about the failures.
 
 If you intend to use this closure to process the results, set it before you execute the operation or submit the operation to a queue.
 

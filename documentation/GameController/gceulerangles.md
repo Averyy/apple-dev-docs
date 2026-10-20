@@ -1,7 +1,8 @@
 # GCEulerAngles
 
 **Framework**: Game Controller  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that specifies the controller’s attitude as a series of rotations around the x, y, and z axes.
 
@@ -19,36 +20,41 @@ A structure that specifies the controller’s attitude as a series of rotations 
 struct GCEulerAngles
 ```
 
+```c
+typedef struct { ... } GCEulerAngles;
+```
+
 ## Topics
 
 ### Getting Euler Angle Values
-- [var pitch: Double](gceulerangles/pitch.md)
+- [var pitch: Double](./gceulerangles/pitch.md)
   The pitch of the controller in radians.
-- [var yaw: Double](gceulerangles/yaw.md)
+- [var yaw: Double](./gceulerangles/yaw.md)
   The yaw of the device in radians.
-- [var roll: Double](gceulerangles/roll.md)
+- [var roll: Double](./gceulerangles/roll.md)
   The roll of the controller in radians.
 ### Initializers
-- [init()](gceulerangles/init.md)
+- [init()](./gceulerangles/init%28%29.md)
   Creates the Euler angles structure.
-- [init(pitch: Double, yaw: Double, roll: Double)](gceulerangles/init(pitch:yaw:roll:).md)
+- [init(pitch: Double, yaw: Double, roll: Double)](./gceulerangles/init%28pitch,yaw,roll%29.md)
   Creates the structure with the specified values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var attitude: GCQuaternion](gcmotion/attitude.md)
+### Accessing Attitude and Rotation Data
+- [var attitude: GCQuaternion](./gcmotion/attitude.md)
   The attitude of the controller.
-- [struct GCQuaternion](gcquaternion.md)
+- [struct GCQuaternion](./gcquaternion.md)
   A quaternion that represents a controller’s measurement of attitude.
-- [var rotationRate: GCRotationRate](gcmotion/rotationrate.md)
+- [var rotationRate: GCRotationRate](./gcmotion/rotationrate.md)
   The rotation rate of the controller.
-- [struct GCRotationRate](gcrotationrate.md)
+- [struct GCRotationRate](./gcrotationrate.md)
   A structure that represents rotation rates around the x, y, and z axes.
 
 

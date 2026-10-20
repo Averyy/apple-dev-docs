@@ -1,7 +1,8 @@
 # MTL4CommandQueueError.Code.notPermitted
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a process doesn’t have access to a GPU device.
 
@@ -17,6 +18,10 @@ Indicates a process doesn’t have access to a GPU device.
 
 ```swift
 case notPermitted
+```
+
+```c
+MTL4CommandQueueErrorNotPermitted
 ```
 
 

@@ -1,7 +1,8 @@
 # init(channel:messageType:value:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event with a channel, control change type, and a value.
 
@@ -17,6 +18,10 @@ Creates an event with a channel, control change type, and a value.
 
 ```swift
 init(channel: UInt32, messageType: AVMIDIControlChangeEvent.MessageType, value: UInt32)
+```
+
+```objc
+- (instancetype) initWithChannel:(UInt32) channel messageType:(AVMIDIControlChangeMessageType) messageType value:(UInt32) value;
 ```
 
 ## Parameters

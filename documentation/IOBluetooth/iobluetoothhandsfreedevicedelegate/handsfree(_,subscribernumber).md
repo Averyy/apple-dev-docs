@@ -1,7 +1,8 @@
 # handsFree(_:subscriberNumber:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the subscriber number of a call.
 
@@ -12,6 +13,10 @@ Tells the delegate the subscriber number of a call.
 
 ```swift
 optional func handsFree(_ device: IOBluetoothHandsFreeDevice!, subscriberNumber: String!)
+```
+
+```objc
+- (void) handsFree:(IOBluetoothHandsFreeDevice *) device subscriberNumber:(NSString *) subscriberNumber;
 ```
 
 #### Discussion
@@ -25,9 +30,10 @@ If multiple subscriber numbers are on the gateway, this function is called once 
 
 ## See Also
 
-- [func handsFree(IOBluetoothHandsFreeDevice!, ringAttempt: NSNumber!)](iobluetoothhandsfreedevicedelegate/handsfree(_:ringattempt:).md)
+### Receiving Other Information
+- [func handsFree(IOBluetoothHandsFreeDevice!, ringAttempt: NSNumber!)](./handsfree%28_,ringattempt%29.md)
   Tells the delegate the phone is ringing.
-- [func handsFree(IOBluetoothHandsFreeDevice!, unhandledResultCode: String!)](iobluetoothhandsfreedevicedelegate/handsfree(_:unhandledresultcode:).md)
+- [func handsFree(IOBluetoothHandsFreeDevice!, unhandledResultCode: String!)](./handsfree%28_,unhandledresultcode%29.md)
   Tells the delegate the phone sent an unknown code.
 
 

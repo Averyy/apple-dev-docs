@@ -1,15 +1,16 @@
 # CIMaximumScaleTransform
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,22 +18,27 @@
 protocol CIMaximumScaleTransform : CIFilterProtocol
 ```
 
+```objc
+@protocol CIMaximumScaleTransform <CIFilter>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var aspectRatio: Float](cimaximumscaletransform/aspectratio.md)
-- [var inputImage: CIImage?](cimaximumscaletransform/inputimage.md)
-- [var scale: Float](cimaximumscaletransform/scale.md)
+- [var aspectRatio: Float](./cimaximumscaletransform/aspectratio.md)
+- [var inputImage: CIImage?](./cimaximumscaletransform/inputimage.md)
+- [var scale: Float](./cimaximumscaletransform/scale.md)
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [protocol CIAreaBoundsRed](ciareaboundsred.md)
-- [protocol CIToneMapHeadroom](citonemapheadroom.md)
+### Protocols
+- [protocol CIAreaBoundsRed](./ciareaboundsred.md)
+- [protocol CIToneMapHeadroom](./citonemapheadroom.md)
 
 
 ---

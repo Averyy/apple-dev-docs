@@ -1,7 +1,8 @@
 # selection
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style used to visually indicate selection following platform conventional colors and behaviors.
 
@@ -18,6 +19,8 @@ A style used to visually indicate selection following platform conventional colo
 @export(implementation)
 static var selection: SelectionShapeStyle { get }
 ```
+
+Available when `Self` is `SelectionShapeStyle`.
 
 #### Discussion
 
@@ -46,25 +49,26 @@ On macOS and iPadOS this automatically reflects window key state and focus state
 
 When applied as a background of another view, it will automatically set the `EnvironmentValues.backgroundProminence` for the environment of that view to match the current prominence of the selection.
 
-For information about how to use shape styles, see [`ShapeStyle`](shapestyle.md).
+For information about how to use shape styles, see [`ShapeStyle`](../shapestyle.md).
 
 ## See Also
 
-- [static var foreground: ForegroundStyle](shapestyle/foreground.md)
+### Semantic styles
+- [static var foreground: ForegroundStyle](./foreground.md)
   The foreground style in the current context.
-- [static var background: BackgroundStyle](shapestyle/background.md)
+- [static var background: BackgroundStyle](./background.md)
   The background style in the current context.
-- [static var separator: SeparatorShapeStyle](shapestyle/separator.md)
+- [static var separator: SeparatorShapeStyle](./separator.md)
   A style appropriate for foreground separator or border lines.
-- [static var tint: TintShapeStyle](shapestyle/tint.md)
+- [static var tint: TintShapeStyle](./tint.md)
   A style that reflects the current tint color.
-- [static var placeholder: PlaceholderTextShapeStyle](shapestyle/placeholder.md)
+- [static var placeholder: PlaceholderTextShapeStyle](./placeholder.md)
   A style appropriate for placeholder text.
-- [static var link: LinkShapeStyle](shapestyle/link.md)
+- [static var link: LinkShapeStyle](./link.md)
   A style appropriate for links.
-- [static var fill: FillShapeStyle](shapestyle/fill.md)
+- [static var fill: FillShapeStyle](./fill.md)
   An overlay fill style for filling shapes.
-- [static var windowBackground: WindowBackgroundShapeStyle](shapestyle/windowbackground.md)
+- [static var windowBackground: WindowBackgroundShapeStyle](./windowbackground.md)
   A style appropriate for elements that should match the background of their containing window.
 
 

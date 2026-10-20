@@ -1,7 +1,8 @@
 # beta
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The “beta” variable of the kernel function.
 
@@ -19,15 +20,20 @@ The “beta” variable of the kernel function.
 var beta: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float beta;
+```
+
 #### Discussion
 
 The default value is `5.0`.
 
 ## See Also
 
-- [var alpha: Float](mpscnnspatialnormalization/alpha.md)
+### Instance Properties
+- [var alpha: Float](./alpha.md)
   The “alpha” variable of the kernel function.
-- [var delta: Float](mpscnnspatialnormalization/delta.md)
+- [var delta: Float](./delta.md)
   The “delta” variable of the kernel function.
 
 

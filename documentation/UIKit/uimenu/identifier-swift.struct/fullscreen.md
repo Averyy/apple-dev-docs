@@ -1,7 +1,8 @@
 # fullscreen
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Full Screen menu.
 
@@ -18,11 +19,16 @@ The Full Screen menu.
 static let fullscreen: UIMenu.Identifier
 ```
 
+```c
+extern UIMenuIdentifier const UIMenuFullscreen;
+```
+
 ## See Also
 
-- [static let toolbar: UIMenu.Identifier](uimenu/identifier-swift.struct/toolbar.md)
+### View menus
+- [static let toolbar: UIMenu.Identifier](./toolbar.md)
   The Toolbar menu group.
-- [static let sidebar: UIMenu.Identifier](uimenu/identifier-swift.struct/sidebar.md)
+- [static let sidebar: UIMenu.Identifier](./sidebar.md)
   The Sidebar menu group.
 
 

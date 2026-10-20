@@ -1,7 +1,8 @@
 # InflectionRule.automatic
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An inflection rule that performs automatic grammar agreement with default transformations.
 
@@ -22,7 +23,8 @@ case automatic
 
 ## See Also
 
-- [InflectionRule.explicit(_:)](inflectionrule/explicit(_:).md)
+### Inflection Rule Behaviors
+- [InflectionRule.explicit(_:)](./explicit%28_%29.md)
   An inflection rule that uses a morphology instance to determine how to inflect attribued strings.
 
 

@@ -1,7 +1,8 @@
 # SecCertificateCopyKey(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Retrieves the public key for a given certificate.
 
@@ -20,9 +21,13 @@ Retrieves the public key for a given certificate.
 func SecCertificateCopyKey(_ certificate: SecCertificate) -> SecKey?
 ```
 
+```c
+SecKeyRefSecCertificateCopyKey(SecCertificateRef certificate);
+```
+
 #### Return Value
 
-The public key. In Objective-C, free this key with a call to the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function when you are done with it.
+The public key. In Objective-C, free this key with a call to the [`CFRelease`](../CoreFoundation/cfrelease.md) function when you are done with it.
 
 #### Discussion
 

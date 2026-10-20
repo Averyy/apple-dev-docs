@@ -1,12 +1,13 @@
 # setSelectionIndexPath(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the tree controller’s current selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Sets the tree controller’s current selection.
 func setSelectionIndexPath(_ indexPath: IndexPath?) -> Bool
 ```
 
+```objc
+- (BOOL) setSelectionIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-Return [`true`](https://developer.apple.com/documentation/swift/true) if the selection has changed, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Return [`true`](../../Swift/true.md) if the selection has changed, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -28,15 +33,16 @@ Attempting to change the selection may cause a `commitEditing` message which fai
 
 ## See Also
 
-- [var selectionIndexPath: IndexPath?](nstreecontroller/selectionindexpath.md)
+### Getting the current selection
+- [var selectionIndexPath: IndexPath?](./selectionindexpath.md)
   The index path of the first selected object.
-- [func setSelectionIndexPaths([IndexPath]) -> Bool](nstreecontroller/setselectionindexpaths(_:).md)
+- [func setSelectionIndexPaths([IndexPath]) -> Bool](./setselectionindexpaths%28_%29.md)
   Sets the tree controller’s current selection to the specified index paths.
-- [var selectionIndexPaths: [IndexPath]](nstreecontroller/selectionindexpaths.md)
+- [var selectionIndexPaths: [IndexPath]](./selectionindexpaths.md)
   An array containing the index paths of the currently selected objects.
-- [var selectedObjects: [Any]](nstreecontroller/selectedobjects.md)
+- [var selectedObjects: [Any]](./selectedobjects.md)
   An array containing the currently selected objects in the tree controller’s content.
-- [var selectedNodes: [NSTreeNode]](nstreecontroller/selectednodes.md)
+- [var selectedNodes: [NSTreeNode]](./selectednodes.md)
   An array containing the tree controller’s selected tree nodes.
 
 

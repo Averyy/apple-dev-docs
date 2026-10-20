@@ -1,18 +1,19 @@
 # init(reportError:maxIterations:atol:rtol:reportStatus:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new CG options structure using the specified parameters.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -34,7 +35,8 @@ A new CG options structure.
 
 ## See Also
 
-- [init()](sparsecgoptions/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Returns a new CG options structure.
 
 

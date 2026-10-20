@@ -1,7 +1,8 @@
 # presentedViewControllers
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controllers, if any, that are currently presented by the view controller.
 
@@ -14,15 +15,20 @@ The view controllers, if any, that are currently presented by the view controlle
 var presentedViewControllers: [NSViewController]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSArray<__kindof NSViewController *> * presentedViewControllers;
+```
+
 #### Discussion
 
-There is a one-to-many relationship between the view controller whose [`presentedViewControllers`](nsviewcontroller/presentedviewcontrollers.md) property you are accessing, and the view controllers it is currently presenting.
+There is a one-to-many relationship between the view controller whose [`presentedViewControllers`](./presentedviewcontrollers.md) property you are accessing, and the view controllers it is currently presenting.
 
 ## See Also
 
-- [var parent: NSViewController?](nsviewcontroller/parent.md)
+### Getting Related View Controllers
+- [var parent: NSViewController?](./parent.md)
   The immediate ancestor view controller of the view controller.
-- [var presentingViewController: NSViewController?](nsviewcontroller/presentingviewcontroller.md)
+- [var presentingViewController: NSViewController?](./presentingviewcontroller.md)
   The view controller that presented the view controller or that presented its farthest ancestor view controller.
 
 

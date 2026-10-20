@@ -1,7 +1,8 @@
 # requested
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The window will be shared if there is an available sharing session and the person using your app confirms the offer to share. The window will be opened regardless of whether sharing succeeds.
 

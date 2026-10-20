@@ -1,7 +1,8 @@
 # RCSService.Business.Feature.reaction
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Reaction feature.
 

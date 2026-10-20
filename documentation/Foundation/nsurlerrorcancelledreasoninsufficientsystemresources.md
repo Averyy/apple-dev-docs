@@ -1,7 +1,8 @@
 # NSURLErrorCancelledReasonInsufficientSystemResources
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A reason that indicates the system canceled the background task because it lacks sufficient resources to perform the task.
 
@@ -20,15 +21,20 @@ A reason that indicates the system canceled the background task because it lacks
 var NSURLErrorCancelledReasonInsufficientSystemResources: Int { get }
 ```
 
+```c
+NSURLErrorCancelledReasonInsufficientSystemResources
+```
+
 #### Discussion
 
 This error results from factors including (but not limited to) battery capacity, thermal condition, network connectivity, and cellular data plan.
 
 ## See Also
 
-- [var NSURLErrorCancelledReasonBackgroundUpdatesDisabled: Int](nsurlerrorcancelledreasonbackgroundupdatesdisabled.md)
+### Cancellation reasons
+- [var NSURLErrorCancelledReasonBackgroundUpdatesDisabled: Int](./nsurlerrorcancelledreasonbackgroundupdatesdisabled.md)
   A reason that indicates the system canceled the background task because background tasks are disabled.
-- [var NSURLErrorCancelledReasonUserForceQuitApplication: Int](nsurlerrorcancelledreasonuserforcequitapplication.md)
+- [var NSURLErrorCancelledReasonUserForceQuitApplication: Int](./nsurlerrorcancelledreasonuserforcequitapplication.md)
   A reason that indicates the system canceled the background task because the user force-quit the application.
 
 

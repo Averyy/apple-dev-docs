@@ -1,7 +1,8 @@
 # AnnotationPosition
 
 **Framework**: Swift Charts  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The position of an annotation.
 
@@ -23,37 +24,38 @@ struct AnnotationPosition
 ## Topics
 
 ### Type Properties
-- [static let automatic: AnnotationPosition](annotationposition/automatic.md)
+- [static let automatic: AnnotationPosition](./annotationposition/automatic.md)
   Place the annotation automatically.
-- [static let bottom: AnnotationPosition](annotationposition/bottom.md)
+- [static let bottom: AnnotationPosition](./annotationposition/bottom.md)
   Place the annotation on the bottom of the item.
-- [static let bottomLeading: AnnotationPosition](annotationposition/bottomleading.md)
+- [static let bottomLeading: AnnotationPosition](./annotationposition/bottomleading.md)
   Place the annotation on the bottom leading corner of the item.
-- [static let bottomTrailing: AnnotationPosition](annotationposition/bottomtrailing.md)
+- [static let bottomTrailing: AnnotationPosition](./annotationposition/bottomtrailing.md)
   Place the annotation on the bottom trailing corner of the item.
-- [static let leading: AnnotationPosition](annotationposition/leading.md)
+- [static let leading: AnnotationPosition](./annotationposition/leading.md)
   Place the annotation on the leading edge of the item.
-- [static let overlay: AnnotationPosition](annotationposition/overlay.md)
+- [static let overlay: AnnotationPosition](./annotationposition/overlay.md)
   Place the annotation as an overlay of the item.
-- [static let top: AnnotationPosition](annotationposition/top.md)
+- [static let top: AnnotationPosition](./annotationposition/top.md)
   Place the annotation on the top of the item.
-- [static let topLeading: AnnotationPosition](annotationposition/topleading.md)
+- [static let topLeading: AnnotationPosition](./annotationposition/topleading.md)
   Place the annotation on the top leading corner of the item.
-- [static let topTrailing: AnnotationPosition](annotationposition/toptrailing.md)
+- [static let topTrailing: AnnotationPosition](./annotationposition/toptrailing.md)
   Place the annotation on the top trailing corner of the item.
-- [static let trailing: AnnotationPosition](annotationposition/trailing.md)
+- [static let trailing: AnnotationPosition](./annotationposition/trailing.md)
   Place the annotation on the trailing edge of the item.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [struct AnnotationContext](annotationcontext.md)
+### Annotations
+- [struct AnnotationContext](./annotationcontext.md)
   Information about an item that you add an annotation to.
-- [struct AnnotationOverflowResolution](annotationoverflowresolution.md)
+- [struct AnnotationOverflowResolution](./annotationoverflowresolution.md)
 
 
 ---

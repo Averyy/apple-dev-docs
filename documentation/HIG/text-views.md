@@ -13,12 +13,15 @@ framework: HIG
 
 A text view displays multiline, styled text content, which can optionally be editable.
 
-![A stylized representation of a field containing text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](/images/com.apple.HIG/components-text-view-intro~dark@2x.png)
+![A stylized representation of a field containing text. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://developer.apple.com/tutorials/images/com.apple.HIG/components-text-view-intro@2x.png)
+
 Text views can be any height and allow scrolling when the content extends outside of the view. By default, content within a text view is aligned to the leading edge and uses the system label color. In iOS, iPadOS, and visionOS, if a text view is editable, a keyboard appears when people select the view.
 
 ## Best practices
-**Use a text view when you need to display text that’s long, editable, or in a special format.** Text views differ from [Text fields](text-fields.md) and [Labels](labels.md) in that they provide the most options for displaying specialized text and receiving text input. If you need to display a small amount of text, it’s simpler to use a label or — if the text is editable — a text field.
+**Use a text view when you need to display text that’s long, editable, or in a special format.** Text views differ from [text fields](text-fields.md) and [labels](labels.md) in that they provide the most options for displaying specialized text and receiving text input. If you need to display a small amount of text, it’s simpler to use a label or — if the text is editable — a text field.
+
 **Keep text legible.** Although you can use multiple fonts, colors, and alignments in creative ways, it’s essential to maintain the readability of your content. It’s a good idea to adopt Dynamic Type so your text still looks good if people change text size on their device. Be sure to test your content with accessibility options turned on, such as bold text. For guidance, see [Accessibility](accessibility.md) and [Typography](typography.md).
+
 **Make useful text selectable.** If a text view contains useful information such as an error message, a serial number, or an IP address, consider letting people select and copy it for pasting elsewhere.
 
 ## Platform considerations
@@ -28,27 +31,28 @@ Text views can be any height and allow scrolling when the content extends outsid
 **Show the appropriate keyboard type.** Several different keyboard types are available, each designed to facilitate a different type of input. To streamline data entry, the keyboard you display when editing a text view needs to be appropriate for the type of content. For guidance, see [Virtual keyboards](virtual-keyboards.md).
 
 ### tvOS
-You can display text in tvOS using a text view. Because text input in tvOS is minimal by design, tvOS uses [Text fields](text-fields.md) for editable text instead.
+You can display text in tvOS using a text view. Because text input in tvOS is minimal by design, tvOS uses [text fields](text-fields.md) for editable text instead.
 
 ## Resources
 
 #### Related
 [Labels](labels.md)
+
 [Text fields](text-fields.md)
+
 [Combo boxes](combo-boxes.md)
 
 #### Developer documentation
-[Text](../swiftui/text.md) — SwiftUI
-[UITextView](../uikit/uitextview.md) — UIKit
-[NSTextView](../appkit/nstextview.md) — AppKit
+[Text](../SwiftUI/text.md) — SwiftUI
+
+[UITextView](../UIKit/uitextview.md) — UIKit
+
+[NSTextView](../AppKit/nstextview.md) — AppKit
 
 ## Change log
 | Date | Changes |
 | --- | --- |
 | June 5, 2023 | Updated guidance to reflect changes in watchOS 10. |
-
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/text-views](https://developer.apple.com/design/human-interface-guidelines/text-views)*

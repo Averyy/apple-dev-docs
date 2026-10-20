@@ -1,7 +1,8 @@
 # featureColumns
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the columns you selected at initialization to train the regressor.
 
@@ -25,9 +26,10 @@ Changing the value of this property doesn’t retrain the model or affect its be
 
 ## See Also
 
-- [init(trainingData:targetColumn:featureColumns:parameters:)](mlboostedtreeregressor/init(trainingdata:targetcolumn:featurecolumns:parameters:).md)
+### Training a boosted tree regressor synchronously
+- [init(trainingData:targetColumn:featureColumns:parameters:)](./init%28trainingdata,targetcolumn,featurecolumns,parameters%29.md)
   Creates a boosted tree regressor.
-- [var targetColumn: String](mlboostedtreeregressor/targetcolumn.md)
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which feature the regressor predicts.
 
 

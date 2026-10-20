@@ -5,15 +5,15 @@
 ## Topics
 
 ### Classes
-- [class QLPreviewView](../quicklookui/qlpreviewview.md)
+- [class QLPreviewView](../QuickLookUI/qlpreviewview.md)
   A Quick Look preview of an item that you can embed into your view hierarchy.
-- [enum QLPreviewViewStyle](../quicklookui/qlpreviewviewstyle.md)
+- [enum QLPreviewViewStyle](../QuickLookUI/qlpreviewviewstyle.md)
   Styles for a Preview View.
 ### Protocols
-- [protocol QLPreviewItem](../quicklook/qlpreviewitem.md)
-- [protocol QLPreviewPanelDataSource](../quicklookui/qlpreviewpaneldatasource.md)
+- [protocol QLPreviewItem](../QuickLook/qlpreviewitem.md)
+- [protocol QLPreviewPanelDataSource](../QuickLookUI/qlpreviewpaneldatasource.md)
   A protocol that the Quick Look preview panel uses to access the contents of its data source object.
-- [protocol QLPreviewPanelDelegate](../quicklookui/qlpreviewpaneldelegate.md)
+- [protocol QLPreviewPanelDelegate](../QuickLookUI/qlpreviewpaneldelegate.md)
   A protocol for the delegate of the Quick Look preview panel.
 
 

@@ -1,7 +1,8 @@
 # ambientNoiseReduction
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var ambientNoiseReduction: Double { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) double ambientNoiseReduction;
 ```
 
 

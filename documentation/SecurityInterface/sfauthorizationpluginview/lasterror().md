@@ -1,7 +1,8 @@
 # lastError()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the last error that occurred during evaluation.
 
@@ -14,6 +15,10 @@ Returns the last error that occurred during evaluation.
 func lastError() -> (any Error)!
 ```
 
+```objc
+- (NSError *) lastError;
+```
+
 #### Discussion
 
 Your authorization plug-in should override this method and return the last error that occurred during evaluation or `nil` if no error occurred.
@@ -22,9 +27,10 @@ A downstream plug-in can set a context value using the `kAuthorizationContextFla
 
 ## See Also
 
-- [func callbacks() -> UnsafePointer<AuthorizationCallbacks>!](sfauthorizationpluginview/callbacks.md)
+### Getting Instance Information
+- [func callbacks() -> UnsafePointer<AuthorizationCallbacks>!](./callbacks%28%29.md)
   Returns the authorization callbacks structure with which this instance was initialized.
-- [func engineRef() -> AuthorizationEngineRef!](sfauthorizationpluginview/engineref.md)
+- [func engineRef() -> AuthorizationEngineRef!](./engineref%28%29.md)
   Returns the authorization engine handle with which this instance was initialized.
 
 

@@ -1,7 +1,8 @@
 # init(ssmlRepresentation:voice:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a request with a voice and a description.
 
@@ -18,6 +19,10 @@ Creates a request with a voice and a description.
 
 ```swift
 init(ssmlRepresentation text: String, voice: AVSpeechSynthesisProviderVoice)
+```
+
+```objc
+- (instancetype) initWithSSMLRepresentation:(NSString *) text voice:(AVSpeechSynthesisProviderVoice *) voice;
 ```
 
 ## Parameters

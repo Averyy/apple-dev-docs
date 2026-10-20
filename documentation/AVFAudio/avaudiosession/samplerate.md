@@ -1,7 +1,8 @@
 # sampleRate
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current audio sample rate, in hertz.
 
@@ -19,11 +20,16 @@ The current audio sample rate, in hertz.
 var sampleRate: Double { get }
 ```
 
+```objc
+@property (readonly) double sampleRate;
+```
+
 ## See Also
 
-- [var preferredSampleRate: Double](avaudiosession/preferredsamplerate.md)
+### Configuring sample rate
+- [var preferredSampleRate: Double](./preferredsamplerate.md)
   The preferred sample rate, in hertz.
-- [func setPreferredSampleRate(Double) throws](avaudiosession/setpreferredsamplerate(_:).md)
+- [func setPreferredSampleRate(Double) throws](./setpreferredsamplerate%28_%29.md)
   Sets the preferred sample rate for audio input and output.
 
 

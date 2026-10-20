@@ -1,6 +1,7 @@
 # Configuring Exposure Notifications
 
-**Framework**: Exposure Notification
+**Framework**: Exposure Notification  
+**Role**: Article
 
 Define how Exposure Notifications work for a region by assigning server-based key-value pairs.
 
@@ -8,7 +9,7 @@ Define how Exposure Notifications work for a region by assigning server-based ke
 
 The configuration fields listed below define the behavior for Exposure Notifications features such as exposure matching, Exposure Risk Value (ERV) calculation, and messaging for regions managed by a Public Health Authority (PHA). These values can be changed by using the server-to-server API or by contacting Apple to request a change. PHAs that only support Exposure Notifications Express can also change these values by logging into Apple Business Register (ABR).
 
-> **Note**:  To learn more about using these keys with the Exposure Notifications server-to-server API, see [`Changing Configuration Values Using the Server‑to‑Server API`](changing-configuration-values-using-the-server-to-server-api.md).
+> **Note**:  To learn more about using these keys with the Exposure Notifications server-to-server API, see [Changing Configuration Values Using the Server‑to‑Server API](./changing-configuration-values-using-the-server-to-server-api.md).
 
 Some keys are relevant to all Exposure Notifications behavior, while some keys are only used by Exposure Notifications Express. Keys used to display information to users, to customize the user interface, to adjust exposure calculations, and to configure test verification servers are only used by Exposure Notifications Express. The other values are used by both Exposure Notifications Express and Exposure Notifications apps.
 
@@ -18,7 +19,7 @@ For keys marked Required, a PHA must configure these values for a region before 
 
 Using keys marked Localizable, you can provide different values for different languages by appending an underscore followed by the ISO two-letter language code, then another underscore, and then the ISO two-letter country code for the region. For example, to provide a localized value of `agencyDisplayName` for French-Canadians, use the key `agencyDisplayName_FR_CA`. When using the server-to-server API, you can provide multiple localized versions of the same key in the same request. In ABR, localizable fields provide a button that allows you to enter additional localized values.
 
-##### Specify Api Version
+##### Specify API Version
 
 Exposure Notifications’ APIs are available in two versions. Version 1 requires a client app to function, while Version 2 — available on iOS 13.7 and later —  works both with a client app or without an app by using Exposure Notifications Express.
 
@@ -294,13 +295,14 @@ An API key, required to talk to the Test Verification server. **Required**.
 
 ## See Also
 
-- [class ENExposureConfiguration](enexposureconfiguration.md)
+### Exposures
+- [class ENExposureConfiguration](./enexposureconfiguration.md)
   The object that contains parameters for configuring exposure notification risk scoring behavior.
-- [class ENExposureWindow](enexposurewindow.md)
+- [class ENExposureWindow](./enexposurewindow.md)
   A set of scan events from observed beacons within a time span.
-- [class ENScanInstance](enscaninstance.md)
+- [class ENScanInstance](./enscaninstance.md)
   The aggregation of attenuations of beacons received during a scan.
-- [Exposure Parameter Limits](exposure-parameter-limits.md)
+- [Exposure Parameter Limits](./exposure-parameter-limits.md)
   The limits for the parameters you use in exposure risk calculations.
 
 

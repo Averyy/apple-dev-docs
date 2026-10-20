@@ -1,7 +1,8 @@
 # ScoringMode
 
 **Framework**: Evaluations  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The scoring constraint mode for a model evaluator.
 
@@ -31,25 +32,26 @@ The mode controls whether the model judge can return any floating-point score, o
 ## Topics
 
 ### Enumeration Cases
-- [ScoringMode.continuous](scoringmode/continuous.md)
+- [ScoringMode.continuous](./scoringmode/continuous.md)
   A mode that allows the model to return any floating-point value. The scale serves as a guide but is not enforced at the generation level.
-- [ScoringMode.discrete](scoringmode/discrete.md)
+- [ScoringMode.discrete](./scoringmode/discrete.md)
   A mode that requires the model to return exactly one of the values defined in the scoring dimension’s scale, enforced using structured generation.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let dimensions: [ScoreDimension]](modeljudgeevaluator/dimensions.md)
+### Inspecting the evaluator
+- [let dimensions: [ScoreDimension]](./modeljudgeevaluator/dimensions.md)
   The dimensions this evaluator scores.
-- [let scoringMode: ScoringMode](modeljudgeevaluator/scoringmode.md)
-  The scoring constraint mode. See [`ScoringMode`](scoringmode.md).
+- [let scoringMode: ScoringMode](./modeljudgeevaluator/scoringmode.md)
+  The scoring constraint mode. See [`ScoringMode`](./scoringmode.md).
 
 
 ---

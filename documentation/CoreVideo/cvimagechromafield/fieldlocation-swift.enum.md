@@ -1,7 +1,8 @@
 # CVImageChromaField.FieldLocation
 
 **Framework**: Core Video  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Indicates chroma sample location for progressive-scan & interlaced image data.
 
@@ -23,15 +24,15 @@ enum FieldLocation
 ## Topics
 
 ### Enumeration Cases
-- [case interlaced(top: CVImageChromaField.SampleLocation, bottom: CVImageChromaField.SampleLocation)](cvimagechromafield/fieldlocation-swift.enum/interlaced(top:bottom:).md)
-- [case progressive(CVImageChromaField.SampleLocation)](cvimagechromafield/fieldlocation-swift.enum/progressive(_:).md)
+- [case interlaced(top: CVImageChromaField.SampleLocation, bottom: CVImageChromaField.SampleLocation)](./fieldlocation-swift.enum/interlaced%28top,bottom%29.md)
+- [case progressive(CVImageChromaField.SampleLocation)](./fieldlocation-swift.enum/progressive%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVAttachmentValueRepresentable](../cvattachmentvaluerepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

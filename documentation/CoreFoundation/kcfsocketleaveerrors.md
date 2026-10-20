@@ -1,7 +1,8 @@
 # kCFSocketLeaveErrors
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -18,6 +19,10 @@
 var kCFSocketLeaveErrors: CFOptionFlags { get }
 ```
 
+```c
+kCFSocketLeaveErrors
+```
+
 #### Discussion
 
 Normally, the CFNetwork stack calls getsockopt(2) macOS Developer Tools Manual Page to read the error code from the socket prior to calling your write callback. This also has the effect of clearing any pending errors on the socket.
@@ -26,12 +31,13 @@ If this flag is set, this call is skipped so that you can check for specific soc
 
 ## See Also
 
-- [var kCFSocketAutomaticallyReenableReadCallBack: CFOptionFlags](kcfsocketautomaticallyreenablereadcallback.md)
-- [var kCFSocketAutomaticallyReenableAcceptCallBack: CFOptionFlags](kcfsocketautomaticallyreenableacceptcallback.md)
-- [var kCFSocketAutomaticallyReenableDataCallBack: CFOptionFlags](kcfsocketautomaticallyreenabledatacallback.md)
-- [var kCFSocketAutomaticallyReenableWriteCallBack: CFOptionFlags](kcfsocketautomaticallyreenablewritecallback.md)
-- [var kCFSocketCloseOnInvalidate: CFOptionFlags](kcfsocketcloseoninvalidate.md)
-  When enabled using [`CFSocketSetSocketFlags(_:_:)`](cfsocketsetsocketflags(_:_:).md), the native socket associated with a CFSocket object is closed when the CFSocket object is invalidated. When disabled, the native socket remains open. This option is enabled by default.
+### Constants
+- [var kCFSocketAutomaticallyReenableReadCallBack: CFOptionFlags](./kcfsocketautomaticallyreenablereadcallback.md)
+- [var kCFSocketAutomaticallyReenableAcceptCallBack: CFOptionFlags](./kcfsocketautomaticallyreenableacceptcallback.md)
+- [var kCFSocketAutomaticallyReenableDataCallBack: CFOptionFlags](./kcfsocketautomaticallyreenabledatacallback.md)
+- [var kCFSocketAutomaticallyReenableWriteCallBack: CFOptionFlags](./kcfsocketautomaticallyreenablewritecallback.md)
+- [var kCFSocketCloseOnInvalidate: CFOptionFlags](./kcfsocketcloseoninvalidate.md)
+  When enabled using [`CFSocketSetSocketFlags(_:_:)`](./cfsocketsetsocketflags%28_,_%29.md), the native socket associated with a CFSocket object is closed when the CFSocket object is invalidated. When disabled, the native socket remains open. This option is enabled by default.
 
 
 ---

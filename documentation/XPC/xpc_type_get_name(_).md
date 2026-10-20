@@ -1,7 +1,8 @@
 # xpc_type_get_name(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a string that describes an XPC object type.
 
@@ -20,6 +21,10 @@ Returns a string that describes an XPC object type.
 func xpc_type_get_name(_ type: xpc_type_t) -> UnsafePointer<CChar>
 ```
 
+```c
+extern const char *xpc_type_get_name(xpc_type_t type);
+```
+
 #### Return Value
 
 A string describing the type of an object, like `"string"` or `"int64"`. This string should not be freed or modified.
@@ -30,9 +35,10 @@ A string describing the type of an object, like `"string"` or `"int64"`. This st
 
 ## See Also
 
-- [func xpc_get_type(xpc_object_t) -> xpc_type_t](xpc_get_type(_:).md)
+### Identity
+- [func xpc_get_type(xpc_object_t) -> xpc_type_t](./xpc_get_type%28_%29.md)
   Returns the type of an object.
-- [func xpc_hash(xpc_object_t) -> Int](xpc_hash(_:).md)
+- [func xpc_hash(xpc_object_t) -> Int](./xpc_hash%28_%29.md)
   Calculates a hash value for the specified object.
 
 

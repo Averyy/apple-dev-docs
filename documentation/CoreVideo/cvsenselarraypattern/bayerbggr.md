@@ -1,7 +1,8 @@
 # CVSenselArrayPattern.bayerBGGR
 
 **Framework**: Core Video  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Top-left sensel of the frame is blue-filtered.
 

@@ -1,7 +1,8 @@
 # CNChangeHistoryFetchRequest
 
 **Framework**: Contacts  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that specifies the criteria for fetching change history.
 
@@ -19,71 +20,76 @@ An object that specifies the criteria for fetching change history.
 class CNChangeHistoryFetchRequest
 ```
 
+```objc
+@interface CNChangeHistoryFetchRequest : CNFetchRequest
+```
+
 #### Overview
 
 The system always returns changes to contacts. The system coalesces changes to remove redundant adds, updates, and deletes.
 
-Create and configure a fetch request, then call [`enumeratorForChangeHistoryFetchRequest:error:`](cncontactstore/enumeratorforchangehistoryfetchrequest:error:.md) to process changes.
+Create and configure a fetch request, then call [`enumeratorForChangeHistoryFetchRequest:error:`](./cncontactstore/enumeratorforchangehistoryfetchrequest_error_.md) to process changes.
 
 ## Topics
 
 ### Configuring the fetch request
-- [var additionalContactKeyDescriptors: [any CNKeyDescriptor]?](cnchangehistoryfetchrequest/additionalcontactkeydescriptors.md)
+- [var additionalContactKeyDescriptors: [any CNKeyDescriptor]?](./cnchangehistoryfetchrequest/additionalcontactkeydescriptors.md)
   An array of contact property keys or key descriptors from contact objects to fetch in the returned contacts.
-- [var excludedTransactionAuthors: [String]?](cnchangehistoryfetchrequest/excludedtransactionauthors.md)
+- [var excludedTransactionAuthors: [String]?](./cnchangehistoryfetchrequest/excludedtransactionauthors.md)
   An array of strings that identify transaction authors to exclude from the fetch results.
-- [var includeGroupChanges: Bool](cnchangehistoryfetchrequest/includegroupchanges.md)
+- [var includeGroupChanges: Bool](./cnchangehistoryfetchrequest/includegroupchanges.md)
   A Boolean value that indicates whether the fetch should also return group changes.
-- [var mutableObjects: Bool](cnchangehistoryfetchrequest/mutableobjects.md)
+- [var mutableObjects: Bool](./cnchangehistoryfetchrequest/mutableobjects.md)
   A Boolean value that indicates whether the fetch should return mutable contacts and groups.
-- [var shouldUnifyResults: Bool](cnchangehistoryfetchrequest/shouldunifyresults.md)
+- [var shouldUnifyResults: Bool](./cnchangehistoryfetchrequest/shouldunifyresults.md)
   A Boolean value that indicates whether the fetch should return contact changes as unified contacts.
-- [var startingToken: Data?](cnchangehistoryfetchrequest/startingtoken.md)
+- [var startingToken: Data?](./cnchangehistoryfetchrequest/startingtoken.md)
   An opaque token that indicates a point in history in the user’s Contacts database.
 ### Initializers
-- [init?(coder: NSCoder)](cnchangehistoryfetchrequest/init(coder:).md)
+- [init?(coder: NSCoder)](./cnchangehistoryfetchrequest/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [CNFetchRequest](cnfetchrequest.md)
+- [CNFetchRequest](./cnfetchrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CNChangeHistoryAddContactEvent](cnchangehistoryaddcontactevent.md)
+### Change history data
+- [class CNChangeHistoryAddContactEvent](./cnchangehistoryaddcontactevent.md)
   An object that represents a user adding a contact.
-- [class CNChangeHistoryAddGroupEvent](cnchangehistoryaddgroupevent.md)
+- [class CNChangeHistoryAddGroupEvent](./cnchangehistoryaddgroupevent.md)
   An object that represents a user adding a group.
-- [class CNChangeHistoryAddMemberToGroupEvent](cnchangehistoryaddmembertogroupevent.md)
+- [class CNChangeHistoryAddMemberToGroupEvent](./cnchangehistoryaddmembertogroupevent.md)
   An object that represents a user adding a contact to a group.
-- [class CNChangeHistoryAddSubgroupToGroupEvent](cnchangehistoryaddsubgrouptogroupevent.md)
+- [class CNChangeHistoryAddSubgroupToGroupEvent](./cnchangehistoryaddsubgrouptogroupevent.md)
   An object that represents a user adding a subgroup to a group.
-- [class CNChangeHistoryDeleteContactEvent](cnchangehistorydeletecontactevent.md)
+- [class CNChangeHistoryDeleteContactEvent](./cnchangehistorydeletecontactevent.md)
   An object that represents a user deleting a contact.
-- [class CNChangeHistoryDeleteGroupEvent](cnchangehistorydeletegroupevent.md)
+- [class CNChangeHistoryDeleteGroupEvent](./cnchangehistorydeletegroupevent.md)
   An object that represents a user deleting a group.
-- [class CNChangeHistoryDropEverythingEvent](cnchangehistorydropeverythingevent.md)
+- [class CNChangeHistoryDropEverythingEvent](./cnchangehistorydropeverythingevent.md)
   An object that indicates the delegate should drop all contacts and groups before handling change events.
-- [class CNChangeHistoryEvent](cnchangehistoryevent.md)
+- [class CNChangeHistoryEvent](./cnchangehistoryevent.md)
   An object that represents the user adding, updating, or deleting a contact or group.
-- [class CNChangeHistoryRemoveMemberFromGroupEvent](cnchangehistoryremovememberfromgroupevent.md)
+- [class CNChangeHistoryRemoveMemberFromGroupEvent](./cnchangehistoryremovememberfromgroupevent.md)
   An object that represents a user removing a contact from a group.
-- [class CNChangeHistoryRemoveSubgroupFromGroupEvent](cnchangehistoryremovesubgroupfromgroupevent.md)
+- [class CNChangeHistoryRemoveSubgroupFromGroupEvent](./cnchangehistoryremovesubgroupfromgroupevent.md)
   An object that represents a user removing a subgroup from a group.
-- [class CNChangeHistoryUpdateContactEvent](cnchangehistoryupdatecontactevent.md)
+- [class CNChangeHistoryUpdateContactEvent](./cnchangehistoryupdatecontactevent.md)
   An object that represents a user updating a contact.
-- [class CNChangeHistoryUpdateGroupEvent](cnchangehistoryupdategroupevent.md)
+- [class CNChangeHistoryUpdateGroupEvent](./cnchangehistoryupdategroupevent.md)
   An object that represents an updated group event.
-- [protocol CNChangeHistoryEventVisitor](cnchangehistoryeventvisitor.md)
+- [protocol CNChangeHistoryEventVisitor](./cnchangehistoryeventvisitor.md)
   An interface for receiving notice of changes to contacts and groups.
 
 

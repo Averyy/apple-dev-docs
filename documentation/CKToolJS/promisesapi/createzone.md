@@ -1,7 +1,8 @@
 # createZone
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new zone.
 
@@ -10,7 +11,7 @@ Creates a new zone.
 
 ## Declaration
 
-```swift
+```
 CancellablePromise createZone(
 	CreateZoneParams params
 );
@@ -59,11 +60,12 @@ If successful, the result contains a `CKDBZoneResponse` object with the created 
 
 ## See Also
 
-- [deleteZone](promisesapi/deletezone.md)
+### Zone Management
+- [deleteZone](./deletezone.md)
   Deletes a zone.
-- [getZone](promisesapi/getzone.md)
+- [getZone](./getzone.md)
   Returns details for a zone.
-- [getZones](promisesapi/getzones.md)
+- [getZones](./getzones.md)
   Returns a collection of zones.
 
 

@@ -1,7 +1,8 @@
 # MTRClusterApplicationLauncher
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,42 +19,46 @@
 class MTRClusterApplicationLauncher
 ```
 
+```objc
+@interface MTRClusterApplicationLauncher : MTRGenericCluster
+```
+
 ## Topics
 
 ### Initializers
-- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](mtrclusterapplicationlauncher/init(device:endpoint:queue:).md)
-- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](mtrclusterapplicationlauncher/init(device:endpointid:queue:).md)
+- [init?(device: MTRDevice, endpoint: UInt16, queue: dispatch_queue_t)](./mtrclusterapplicationlauncher/init%28device,endpoint,queue%29.md)
+- [init?(device: MTRDevice, endpointID: NSNumber, queue: dispatch_queue_t)](./mtrclusterapplicationlauncher/init%28device,endpointid,queue%29.md)
 ### Instance Methods
-- [func hideApp(with: MTRApplicationLauncherClusterHideAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](mtrclusterapplicationlauncher/hideapp(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func hideApp(with: MTRApplicationLauncherClusterHideAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](mtrclusterapplicationlauncher/hideapp(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func hideApp(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](mtrclusterapplicationlauncher/hideapp(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func launchApp(with: MTRApplicationLauncherClusterLaunchAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](mtrclusterapplicationlauncher/launchapp(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func launchApp(with: MTRApplicationLauncherClusterLaunchAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](mtrclusterapplicationlauncher/launchapp(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func launchApp(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](mtrclusterapplicationlauncher/launchapp(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterapplicationlauncher/readattributeacceptedcommandlist(with:).md)
-- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](mtrclusterapplicationlauncher/readattributeattributelist(with:).md)
-- [func readAttributeCatalogList(with: MTRReadParams?) -> [String : Any]?](mtrclusterapplicationlauncher/readattributecataloglist(with:).md)
-- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](mtrclusterapplicationlauncher/readattributeclusterrevision(with:).md)
-- [func readAttributeCurrentApp(with: MTRReadParams?) -> [String : Any]?](mtrclusterapplicationlauncher/readattributecurrentapp(with:).md)
-- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](mtrclusterapplicationlauncher/readattributefeaturemap(with:).md)
-- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](mtrclusterapplicationlauncher/readattributegeneratedcommandlist(with:).md)
-- [func stopApp(with: MTRApplicationLauncherClusterStopAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](mtrclusterapplicationlauncher/stopapp(with:expectedvalues:expectedvalueinterval:completion:).md)
-- [func stopApp(with: MTRApplicationLauncherClusterStopAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](mtrclusterapplicationlauncher/stopapp(with:expectedvalues:expectedvalueinterval:completionhandler:).md)
-- [func stopApp(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](mtrclusterapplicationlauncher/stopapp(withexpectedvalues:expectedvalueinterval:completion:).md)
-- [func writeAttributeCurrentApp(withValue: [String : Any], expectedValueInterval: NSNumber)](mtrclusterapplicationlauncher/writeattributecurrentapp(withvalue:expectedvalueinterval:).md)
-- [func writeAttributeCurrentApp(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](mtrclusterapplicationlauncher/writeattributecurrentapp(withvalue:expectedvalueinterval:params:).md)
+- [func hideApp(with: MTRApplicationLauncherClusterHideAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](./mtrclusterapplicationlauncher/hideapp%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func hideApp(with: MTRApplicationLauncherClusterHideAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](./mtrclusterapplicationlauncher/hideapp%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func hideApp(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](./mtrclusterapplicationlauncher/hideapp%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func launchApp(with: MTRApplicationLauncherClusterLaunchAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](./mtrclusterapplicationlauncher/launchapp%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func launchApp(with: MTRApplicationLauncherClusterLaunchAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](./mtrclusterapplicationlauncher/launchapp%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func launchApp(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](./mtrclusterapplicationlauncher/launchapp%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func readAttributeAcceptedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterapplicationlauncher/readattributeacceptedcommandlist%28with%29.md)
+- [func readAttributeAttributeList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterapplicationlauncher/readattributeattributelist%28with%29.md)
+- [func readAttributeCatalogList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterapplicationlauncher/readattributecataloglist%28with%29.md)
+- [func readAttributeClusterRevision(with: MTRReadParams?) -> [String : Any]?](./mtrclusterapplicationlauncher/readattributeclusterrevision%28with%29.md)
+- [func readAttributeCurrentApp(with: MTRReadParams?) -> [String : Any]?](./mtrclusterapplicationlauncher/readattributecurrentapp%28with%29.md)
+- [func readAttributeFeatureMap(with: MTRReadParams?) -> [String : Any]?](./mtrclusterapplicationlauncher/readattributefeaturemap%28with%29.md)
+- [func readAttributeGeneratedCommandList(with: MTRReadParams?) -> [String : Any]?](./mtrclusterapplicationlauncher/readattributegeneratedcommandlist%28with%29.md)
+- [func stopApp(with: MTRApplicationLauncherClusterStopAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](./mtrclusterapplicationlauncher/stopapp%28with,expectedvalues,expectedvalueinterval,completion%29.md)
+- [func stopApp(with: MTRApplicationLauncherClusterStopAppParams?, expectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completionHandler: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](./mtrclusterapplicationlauncher/stopapp%28with,expectedvalues,expectedvalueinterval,completionhandler%29.md)
+- [func stopApp(withExpectedValues: [[String : Any]]?, expectedValueInterval: NSNumber?, completion: (MTRApplicationLauncherClusterLauncherResponseParams?, (any Error)?) -> Void)](./mtrclusterapplicationlauncher/stopapp%28withexpectedvalues,expectedvalueinterval,completion%29.md)
+- [func writeAttributeCurrentApp(withValue: [String : Any], expectedValueInterval: NSNumber)](./mtrclusterapplicationlauncher/writeattributecurrentapp%28withvalue,expectedvalueinterval%29.md)
+- [func writeAttributeCurrentApp(withValue: [String : Any], expectedValueInterval: NSNumber, params: MTRWriteParams?)](./mtrclusterapplicationlauncher/writeattributecurrentapp%28withvalue,expectedvalueinterval,params%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTRGenericCluster](mtrgenericcluster.md)
+- [MTRGenericCluster](./mtrgenericcluster.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

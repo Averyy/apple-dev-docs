@@ -1,7 +1,8 @@
 # AppAssetLibraryVideoCreateRequest.Data.Relationships.Placements
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The placements to associate with the new app asset library video.
 
@@ -10,14 +11,14 @@ The placements to associate with the new app asset library video.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryVideoCreateRequest.Data.Relationships.Placements
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AppAssetLibraryVideoCreateRequest.Data.Relationships.Placements.Data](appassetlibraryvideocreaterequest/data-data.dictionary/relationships-data.dictionary/placements-data.dictionary/data-data.dictionary.md)
+- [object AppAssetLibraryVideoCreateRequest.Data.Relationships.Placements.Data](./placements-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object AppAssetLibraryVideoCreateRequest.Data.Relationships.Placements
 
 ## See Also
 
-- [object AppAssetLibraryVideoCreateRequest.Data.Relationships.AssetLibrary](appassetlibraryvideocreaterequest/data-data.dictionary/relationships-data.dictionary/assetlibrary-data.dictionary.md)
+### Objects
+- [object AppAssetLibraryVideoCreateRequest.Data.Relationships.AssetLibrary](./assetlibrary-data.dictionary.md)
   The asset library to associate with the new app asset library video.
 
 

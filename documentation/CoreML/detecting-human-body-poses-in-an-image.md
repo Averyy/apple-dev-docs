@@ -1,6 +1,8 @@
 # Detecting human body poses in an image
 
-**Framework**: Core ML
+**Framework**: Core ML  
+**Role**: Sample Code  
+**Download**: [DetectingHumanBodyPosesInAnImage.zip](https://docs-assets.developer.apple.com/published/3e1c865293a0/DetectingHumanBodyPosesInAnImage.zip)
 
 Locate people and the stance of their bodies by analyzing an image with a PoseNet model.
 
@@ -12,17 +14,17 @@ Locate people and the stance of their bodies by analyzing an image with a PoseNe
 
 #### Overview
 
-This sample project provides an illustrative example of using a third-party [`Core ML`](CoreML.md) model, PoseNet, to detect human body poses from frames captured using a camera. PoseNet models detect 17 different body parts or joints: eyes, ears, nose, shoulders, hips, elbows, knees, wrists, and ankles. Collectively these joints form a pose.
+This sample project provides an illustrative example of using a third-party [Core ML](./CoreML.md) model, PoseNet, to detect human body poses from frames captured using a camera. PoseNet models detect 17 different body parts or joints: eyes, ears, nose, shoulders, hips, elbows, knees, wrists, and ankles. Collectively these joints form a pose.
 
-![Flow diagram illustrating the sequence of activities for estimating a pose. The flow begins on the left with an iPhone’s camera, proceeding to a PoseNet model, followed by a generic human figure with the 17 labeled joints, and ends with the same human figure but with the joints connected in a wireframe.](/images/com.apple.coreml/PoseNetPipeline@2x.png)
+![Flow diagram illustrating the sequence of activities for estimating a pose. The flow begins on the left with an iPhone’s camera, proceeding to a PoseNet model, followed by a generic human figure with the 17 labeled joints, and ends with the same human figure but with the joints connected in a wireframe.](https://developer.apple.com/tutorials/images/com.apple.coreml/PoseNetPipeline@2x.png)
 
 The sample finds the locations of the 17 joints for each person in the image and draws a wireframe pose on top of them.
 
-> **Note**: Starting in iOS 14 and macOS 11, [`Vision`](https://developer.apple.com/documentation/vision) adds the ability to detect human body poses. For details, see [`Detecting Human Body Poses in Images`](https://developer.apple.com/documentation/vision/detecting-human-body-poses-in-images).
+> **Note**: Starting in iOS 14 and macOS 11, [Vision](../Vision/Vision.md) adds the ability to detect human body poses. For details, see [Detecting Human Body Poses in Images](../Vision/detecting-human-body-poses-in-images.md).
 
-##### Configure the Capture Session
+##### Configure the capture session
 
-The sample starts by getting an image from the device’s built-in camera using an [`AVCaptureSession`](https://developer.apple.com/documentation/avfoundation/avcapturesession) (see [`Setting up a capture session`](https://developer.apple.com/documentation/avfoundation/setting-up-a-capture-session)).
+The sample starts by getting an image from the device’s built-in camera using an [`AVCaptureSession`](../AVFoundation/avcapturesession.md) (see [Setting Up a Capture Session](../AVFoundation/setting-up-a-capture-session.md)).
 
 ```swift
 if captureSession.isRunning {
@@ -40,7 +42,7 @@ try setCaptureSessionOutput()
 captureSession.commitConfiguration()
 ```
 
-##### Acquire the Captured Image
+##### Acquire the captured image
 
 ```swift
 // Attempt to lock the image buffer to gain access to its memory.
@@ -63,7 +65,7 @@ DispatchQueue.main.sync {
 }
 ```
 
-##### Prepare the Input for the Posenet Model
+##### Prepare the input for the PoseNet model
 
 ```swift
 // Wrap the image in an instance of PoseNetInput to have it resized
@@ -71,9 +73,9 @@ DispatchQueue.main.sync {
 let input = PoseNetInput(image: image, size: self.modelInputSize)
 ```
 
-##### Pass the Input to the Posenet Model
+##### Pass the input to the PoseNet model
 
-The sample app then proceeds to pass the input to the PoseNet’s [`prediction(from:)`](mlmodel/prediction(from:)-9y2aa.md) function to obtain its outputs, which the app uses to detect poses.
+The sample app then proceeds to pass the input to the PoseNet’s [`prediction`](./mlmodel/prediction%28from%29-9y2aa.md) function to obtain its outputs, which the app uses to detect poses.
 
 ```swift
 guard let prediction = try? self.poseNetMLModel.prediction(from: input) else {
@@ -91,7 +93,7 @@ DispatchQueue.main.async {
 }
 ```
 
-##### Analyze the Posenet Output to Locate Joints
+##### Analyze the PoseNet output to locate joints
 
 The sample uses one of two algorithms to locate the joints of either one person or multiple persons. The single-person algorithm, the simplest and fastest, inspects the model’s outputs to locate the most prominent joints in the image and uses these joints to construct a single pose.
 
@@ -163,11 +165,11 @@ detectedPoses.forEach { pose in
 return detectedPoses
 ```
 
-##### Visualize the Detected Poses
+##### Visualize the detected poses
 
 For each detected pose, the sample app draws a wireframe over the input image, connecting the lines between the joints and then drawing circles for the joints themselves.
 
-![Illustration of a wireframe of connected joints drawn over a generic human figure performing a yoga tree pose.](/images/com.apple.coreml/PoseNetVisualization@2x.png)
+![Illustration of a wireframe of connected joints drawn over a generic human figure performing a yoga tree pose.](https://developer.apple.com/tutorials/images/com.apple.coreml/PoseNetVisualization@2x.png)
 
 ```swift
 let dstImageSize = CGSize(width: frame.width, height: frame.height)
@@ -206,11 +208,12 @@ let dstImage = renderer.image { rendererContext in
 
 ## See Also
 
-- [Using Core ML for semantic image segmentation](using-core-ml-for-semantic-image-segmentation.md)
+### Image classification models
+- [Using Core ML for semantic image segmentation](./using-core-ml-for-semantic-image-segmentation.md)
   Identify multiple objects in an image by using the DEtection TRansformer image-segmentation model.
-- [Classifying Images with Vision and Core ML](classifying-images-with-vision-and-core-ml.md)
+- [Classifying Images with Vision and Core ML](./classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
-- [Understanding a Dice Roll with Vision and Object Detection](understanding-a-dice-roll-with-vision-and-object-detection.md)
+- [Understanding a Dice Roll with Vision and Object Detection](./understanding-a-dice-roll-with-vision-and-object-detection.md)
   Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
 
 

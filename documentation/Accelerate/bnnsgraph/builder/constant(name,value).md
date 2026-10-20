@@ -1,7 +1,8 @@
 # constant(name:value:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers and returns a tensor that contains a constant scalar value.
 
@@ -24,7 +25,7 @@ func constant<T>(name: String? = nil, value: T) -> BNNSGraph.Builder.Tensor<T> w
 
 For example, the following code defines the tensor `x` that contains the single-precision scalar value `10.0`:
 
-```None
+```
        let context = try BNNSGraph.makeContext ({
            builder in
 

@@ -1,7 +1,8 @@
 # style
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style to use for the button.
 
@@ -9,7 +10,7 @@ The style to use for the button.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

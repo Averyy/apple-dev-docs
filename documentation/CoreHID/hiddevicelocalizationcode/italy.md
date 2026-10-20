@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.italy
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Italian in the HID specification.
 

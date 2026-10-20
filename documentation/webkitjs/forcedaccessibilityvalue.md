@@ -1,7 +1,8 @@
 # ForcedAccessibilityValue
 
 **Framework**: WebKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - Safari Mobile 10.1+

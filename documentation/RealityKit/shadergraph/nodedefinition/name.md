@@ -1,7 +1,8 @@
 # name
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for this node definition.
 
@@ -21,7 +22,7 @@ var name: String { get }
 
 Names follow the MaterialX convention, encoding the functional operation, input types, and output type. For example, `ND_atan2_float` identifies the two-argument arctangent node whose output is a `float`.
 
-Use this value to look up a specific definition via [`definition(named:)`](shadergraph/nodelibrary/definition(named:).md).
+Use this value to look up a specific definition via [`definition(named:)`](../nodelibrary/definition%28named%29.md).
 
 
 ---

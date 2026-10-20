@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes the given value for the given key.
@@ -23,12 +24,20 @@ mutating func encode(_ value: UInt8, forKey key: Self.Key) throws
 
 #### Discussion
 
-> **Note**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
+> **Throws**: `EncodingError.invalidValue` if the given value is invalid in the current context for this format.
 
 ## Parameters
 
 - `value`: The value to encode.
 - `key`: The key to associate the value with.
+
+## Default Implementations
+
+### KeyedEncodingContainerProtocol Implementations
+- [func encode(Int128, forKey: Self.Key) throws](./encode%28_,forkey%29-5igzg.md)
+  Encodes the given value for the given key.
+- [func encode(UInt128, forKey: Self.Key) throws](./encode%28_,forkey%29-7lntx.md)
+  Encodes the given value for the given key.
 
 
 ---

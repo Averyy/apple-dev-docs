@@ -1,11 +1,12 @@
 # TargetContentProvidingIntent Implementations
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var contentIdentifier: String](uisceneappintent/contentidentifier.md)
+- [var contentIdentifier: String](./contentidentifier.md)
   A custom string your app uses to identify the app intent.
 
 

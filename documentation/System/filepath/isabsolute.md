@@ -1,7 +1,8 @@
 # isAbsolute
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns true if this path uniquely identifies the location of a file without reference to an additional starting location.
 
@@ -30,12 +31,16 @@ NOTE: This does not perform shell expansion or substitute environment variables;
 
 Examples:
 
-- Unix: - `/usr/local/bin`
-- `/tmp/foo.txt`
-- `/`
-- Windows: - `C:\Users\`
-- `\\?\UNC\server\share\bar.exe`
-- `\\server\share\bar.exe`
+- Unix:
+
+  - `/usr/local/bin`
+  - `/tmp/foo.txt`
+  - `/`
+- Windows:
+
+  - `C:\Users\`
+  - `\\?\UNC\server\share\bar.exe`
+  - `\\server\share\bar.exe`
 
 
 ---

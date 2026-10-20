@@ -1,7 +1,8 @@
 # unpremultiply(alpha:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transforms an 8-bit planar pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
 
@@ -11,7 +12,7 @@ Transforms an 8-bit planar pixel buffer in-place from premultiplied alpha format
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Transforms an 8-bit planar pixel buffer in-place from premultiplied alpha format
 ```swift
 func unpremultiply(alpha: vImage.PixelBuffer<Format>)
 ```
+
+Available when `Format` is `vImage.Planar8`.
 
 #### Discussion
 
@@ -45,15 +48,16 @@ print(src.array)
 
 ## See Also
 
-- [func unpremultiply(alpha: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/unpremultiply(alpha:)-i0ri.md)
+### Unpremultiply
+- [func unpremultiply(alpha: vImage.PixelBuffer<Format>)](./unpremultiply%28alpha%29-i0ri.md)
   Transforms a 32-bit planar pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
-- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/unpremultiply(channelordering:)-1pkat.md)
+- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](./unpremultiply%28channelordering%29-1pkat.md)
   Transforms an 8-bit ARGB or RGBA pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
-- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/unpremultiply(channelordering:)-19l0s.md)
+- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](./unpremultiply%28channelordering%29-19l0s.md)
   Transforms an unsigned 16-bit ARGB or RGBA pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
-- [func unpremultiply()](vimage/pixelbuffer/unpremultiply.md)
+- [func unpremultiply()](./unpremultiply%28%29.md)
   Transforms a floating-point 16-bit RGBA pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
-- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](vimage/pixelbuffer/unpremultiply(channelordering:)-82uq3.md)
+- [func unpremultiply(channelOrdering: vImage.ChannelOrdering)](./unpremultiply%28channelordering%29-82uq3.md)
   Transforms a 32-bit ARGB or RGBA pixel buffer in-place from premultiplied alpha format to nonpremultiplied alpha format.
 
 

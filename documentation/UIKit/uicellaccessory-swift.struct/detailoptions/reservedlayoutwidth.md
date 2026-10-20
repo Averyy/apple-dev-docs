@@ -1,7 +1,8 @@
 # reservedLayoutWidth
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout width that the system reserves for the accessory, and then centers the accessory within.
 
@@ -10,7 +11,7 @@ The layout width that the system reserves for the accessory, and then centers th
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - tvOS 15.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,13 +25,14 @@ Use this property to ensure consistent horizontal alignment from both system and
 
 The reserved layout width only affects the amount of space for the accessory, and its positioning within that space. It doesn’t affect the size of the accessory.
 
-![Diagram of three cells, each of which contains one accessory on the leading side. The accessories vary in width, but use the same reserved layout width to achieve consistent alignment. Annotations running the height of the diagram illustrate the static width.](/images/com.apple.uikit/media-4056991@2x.png)
+![Diagram of three cells, each of which contains one accessory on the leading side. The accessories vary in width, but use the same reserved layout width to achieve consistent alignment. Annotations running the height of the diagram illustrate the static width.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-4056991@2x.png)
 
 ## See Also
 
-- [var isHidden: Bool](uicellaccessory-swift.struct/detailoptions/ishidden.md)
+### Accessing configuration options
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/detailoptions/tintcolor.md)
+- [var tintColor: UIColor?](./tintcolor.md)
   The tint color to apply to the accessory.
 
 

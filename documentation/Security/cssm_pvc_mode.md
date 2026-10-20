@@ -1,7 +1,8 @@
 # CSSM_PVC_MODE
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_PVC_MODE = CSSM_BITMASK
+```
+
+```c
+typedef CSSM_BITMASK CSSM_PVC_MODE;
 ```
 
 

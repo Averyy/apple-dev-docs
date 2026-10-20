@@ -1,6 +1,7 @@
 # Testing at all stages of development with Xcode and the sandbox
 
-**Framework**: StoreKit
+**Framework**: StoreKit  
+**Role**: Article
 
 Verify your implementation of Apple In-App Purchases by testing your code throughout its development.
 
@@ -14,15 +15,15 @@ Use the Apple sandbox and Xcode test environments to test your implementation of
 
 The tools you need to test Apple In-App Purchases, non-renewing subscriptions, and auto-renewable subscriptions from early development through beta testing are:
 
-- **StoreKit Testing in Xcode**: For early development, continuous integration, and debugging. For more information, see [`StoreKit Test`](https://developer.apple.com/documentation/storekittest).
-- **Sandbox**: For testing scenarios using Apple In-App Purchase data you set up in App Store Connect. For more information, see [`Testing Apple In-App Purchases with sandbox`](testing-in-app-purchases-with-sandbox.md).
-- **TestFlight**: For managing beta testing with internal and external testers. TestFlight uses a beta build of your app or App Clip that you upload to App Store Connect. For more information, see [`Beta Testing Made Simple with TestFlight`](https://developer.apple.comhttps://developer.apple.com/testflight/).
+- **StoreKit Testing in Xcode**: For early development, continuous integration, and debugging. For more information, see [StoreKit Test](../StoreKitTest/StoreKitTest.md).
+- **Sandbox**: For testing scenarios using Apple In-App Purchase data you set up in App Store Connect. For more information, see [Testing Apple In-App Purchases with sandbox](./testing-in-app-purchases-with-sandbox.md).
+- **TestFlight**: For managing beta testing with internal and external testers. TestFlight uses a beta build of your app or App Clip that you upload to App Store Connect. For more information, see [Beta Testing Made Simple with TestFlight](https://developer.apple.com/testflight/).
 
 Choose the tools that support the test scenarios you need. Make sure you’re able to perform the setup required for the tools you choose.
 
 During the early stages of development, you may not be ready to configure Apple In-App Purchases in App Store Connect. StoreKit Testing in Xcode lets you configure the information locally. You can test StoreKit transactions before you create Sandbox Apple Accounts, without a network connection. You can test your app in Simulator or on real devices.
 
-After you set up Apple In-App Purchases in App Store Connect, start using the sandbox environment to test the product information your app will use in production. Testing in the sandbox lets you test transactions from end-to-end and from your app to your server. You can also test any server-to-server functionalities your app depends on, such as transaction validation and [`App Store Server Notifications`](https://developer.apple.com/documentation/appstoreservernotifications).
+After you set up Apple In-App Purchases in App Store Connect, start using the sandbox environment to test the product information your app will use in production. Testing in the sandbox lets you test transactions from end-to-end and from your app to your server. You can also test any server-to-server functionalities your app depends on, such as transaction validation and [App Store Server Notifications](../AppStoreServerNotifications/AppStoreServerNotifications.md).
 
 TestFlight lets you get feedback from members of your team or from external testers. TestFlight uses the sandbox environment for Apple In-App Purchases. Transactions and purchases that occur in the sandbox don’t incur charges. The following table compares the test environments and features:
 
@@ -34,7 +35,7 @@ TestFlight lets you get feedback from members of your team or from external test
 
 None of the test environments charge users when they test buying a product. The App Store doesn’t send emails for purchases or refunds made in the test environments.
 
-##### Control the Test Environment
+##### Control the test environment
 
 To set up and run test scenarios, you often need to control the test environment. For example, you may want to reset a test account to rerun the same test multiple times, or mimic actions users take outside your app that affect the test conditions. The following table shows the capabilities each tool has to control the test environment:
 
@@ -47,16 +48,16 @@ To set up and run test scenarios, you often need to control the test environment
 | Introduce forced StoreKit errors for testing | No | Yes |
 | Speed up or slow down the rate of time for testing subscription renewals | Yes | Yes |
 
-For more information about speeding up renewal periods for testing, see [`Test Apple In-App Purchases`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases-main/test-in-app-purchases).
+For more information about speeding up renewal periods for testing, see [Test Apple In-App Purchases](https://developer.apple.com/help/app-store-connect/test-in-app-purchases-main/test-in-app-purchases).
 
-##### Test Common Storekit Scenarios
+##### Test common StoreKit scenarios
 
 All apps that offer Apple In-App Purchases need to support restoring purchases, displaying Apple In-App Purchases to the customer, and handling basic transactions. The following table lists common test scenarios and whether they’re testable in the sandbox or Xcode:
 
 | Test scenario | Sandbox | StoreKit Testing in Xcode |
 | --- | --- | --- |
 | Restore purchases | Yes | Yes |
-| Finish a transaction with [`finish()`](transaction/finish().md) or [`finishTransaction(_:)`](skpaymentqueue/finishtransaction(_:).md) | Yes | Yes |
+| Finish a transaction with [`finish()`](./transaction/finish%28%29.md) or [`finishTransaction(_:)`](./skpaymentqueue/finishtransaction%28_%29.md) | Yes | Yes |
 | Buy a consumable or non-consumable Apple In-App Purchase | Yes | Yes |
 | Repurchase a non-consumable purchase for repeated testing | Yes | Yes |
 | Purchase an auto-renewable subscription | Yes | Yes |
@@ -66,10 +67,10 @@ All apps that offer Apple In-App Purchases need to support restoring purchases, 
 | Test an interrupted purchase, where the user must complete actions outside the app | Yes | Yes |
 | Test a failed purchase attempt when payment authorization fails | Yes | Yes |
 | Retrieve configured Apple In-App Purchases from App Store Connect | Yes | Yes (optionally); can also retrieve data from a StoreKit configuration file |
-| Manage subscriptions within your app with [`showManageSubscriptions(in:)`](appstore/showmanagesubscriptions(in:).md) and [`manageSubscriptionsSheet(isPresented:)`](https://developer.apple.com/documentation/swiftui/view/managesubscriptionssheet(ispresented:)) | Yes | Yes |
-| Initiate a refund request. For more information, see [`Testing refund requests`](testing-refund-requests.md). | Yes | Yes |
+| Manage subscriptions within your app with [`showManageSubscriptions(in:)`](./appstore/showmanagesubscriptions%28in%29.md) and [`manageSubscriptionsSheet(isPresented:)`](../SwiftUI/view/managesubscriptionssheet%28ispresented%29.md) | Yes | Yes |
+| Initiate a refund request. For more information, see [Testing refund requests](./testing-refund-requests.md). | Yes | Yes |
 
-##### Test Subscriptions and Ask to Buy
+##### Test subscriptions and Ask to Buy
 
 Depending on the Apple In-App Purchases your app offers, you may need to test scenarios that involve auto-renewing subscriptions, introductory offers, promotional offers, and Ask to Buy. The following table lists test scenarios and whether they’re testable in the sandbox or Xcode:
 
@@ -88,17 +89,18 @@ Depending on the Apple In-App Purchases your app offers, you may need to test sc
 | Test a price increase for an auto-renewable subscription | No | Yes |
 | Test billing retry and billing grace period | Yes | Yes |
 
-For more information, see [`Approve what kids buy with Ask to Buy`](https://developer.apple.comhttps://support.apple.com/en-us/HT201089) and [`Testing introductory offers`](testing-introductory-offers.md).
+For more information, see [Approve what kids buy with Ask to Buy](https://support.apple.com/en-us/HT201089) and [Testing introductory offers](./testing-introductory-offers.md).
 
 ## See Also
 
-- [Testing Apple In-App Purchases with sandbox](testing-in-app-purchases-with-sandbox.md)
+### Apple In-App Purchase Testing
+- [Testing Apple In-App Purchases with sandbox](./testing-in-app-purchases-with-sandbox.md)
   Test your implementation of Apple In-App Purchases using real product information and server-to-server transactions in the sandbox environment.
-- [Testing refund requests](testing-refund-requests.md)
+- [Testing refund requests](./testing-refund-requests.md)
   Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.
-- [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)
+- [Testing win-back offers in Xcode](./testing-win-back-offers-in-xcode.md)
   Validate your app’s handling of win-back offers that you configure for the testing environment.
-- [Testing Ask to Buy in Xcode](testing-ask-to-buy-in-xcode.md)
+- [Testing Ask to Buy in Xcode](./testing-ask-to-buy-in-xcode.md)
   Validate your app’s handling of Ask To Buy in the testing environment.
 
 

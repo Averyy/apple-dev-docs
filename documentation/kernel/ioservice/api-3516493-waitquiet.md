@@ -1,14 +1,15 @@
 # waitQuiet
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15.2+
 
 ## Declaration
 
-```swift
+```c
 IOReturn waitQuiet(uint64_t timeout);
 ```
 

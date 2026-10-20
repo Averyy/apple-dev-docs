@@ -1,11 +1,12 @@
 # HPKEDiffieHellmanPrivateKeyGeneration Implementations
 
-**Framework**: Apple CryptoKit
+**Framework**: Apple CryptoKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init()](p256/keyagreement/privatekey/init.md)
+- [init()](./init%28%29.md)
   Creates a NIST P-256 elliptic curve private key for use with Diffie-Hellman key exchange.
 
 

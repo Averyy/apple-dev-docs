@@ -1,7 +1,8 @@
 # init(root:dependencies:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a schema by providing an array of dynamic schemas.
 
@@ -21,7 +22,7 @@ init(root: DynamicGenerationSchema, dependencies: [DynamicGenerationSchema]) thr
 
 #### Discussion
 
-> **Note**: If there are schemas with naming conflicts or references to undefined types.
+> **Throws**: If there are schemas with naming conflicts or references to undefined types.
 
 ## Parameters
 
@@ -30,13 +31,14 @@ init(root: DynamicGenerationSchema, dependencies: [DynamicGenerationSchema]) thr
 
 ## See Also
 
-- [init(type:description:anyOf:)](generationschema/init(type:description:anyof:).md)
+### Creating a generation schema
+- [init(type:description:anyOf:)](./init%28type,description,anyof%29.md)
   Creates a schema for a string enumeration.
-- [init(type: any Generable.Type, description: String?, properties: [GenerationSchema.Property])](generationschema/init(type:description:properties:).md)
+- [init(type: any Generable.Type, description: String?, properties: [GenerationSchema.Property])](./init%28type,description,properties%29.md)
   Creates a schema by providing an array of properties.
-- [init(type: any Generable.Type, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [GenerationSchema.Property])](generationschema/init(type:description:representnilexplicitlyingeneratedcontent:properties:).md)
+- [init(type: any Generable.Type, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [GenerationSchema.Property])](./init%28type,description,representnilexplicitlyingeneratedcontent,properties%29.md)
   Creates a schema by providing an array of properties.
-- [GenerationSchema.Property](generationschema/property.md)
+- [GenerationSchema.Property](./property.md)
   A named, strongly typed member of an object type with an optional description and guides.
 
 

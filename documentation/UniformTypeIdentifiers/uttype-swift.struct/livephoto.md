@@ -1,7 +1,8 @@
 # livePhoto
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type that represents Live Photos.
 
@@ -24,13 +25,14 @@ static var livePhoto: UTType { get }
 
 The identifier for this type is `com.apple.live-photo`.
 
-This type conforms to [`UTTypeImage`](uttypeimage.md).
+This type conforms to [`UTTypeImage`](../uttypeimage.md).
 
 ## See Also
 
-- [static var heic: UTType](uttype-swift.struct/heic.md)
+### Apple image formats
+- [static var heic: UTType](./heic.md)
   A type that represents High Efficiency Image Coding images.
-- [static var heif: UTType](uttype-swift.struct/heif.md)
+- [static var heif: UTType](./heif.md)
   A type that represents High Efficiency Image File Format images.
 
 

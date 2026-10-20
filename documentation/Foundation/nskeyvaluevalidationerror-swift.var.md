@@ -1,7 +1,8 @@
 # NSKeyValueValidationError
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key-value coding validation error.
 
@@ -22,7 +23,8 @@ var NSKeyValueValidationError: Int { get }
 
 ## See Also
 
-- [var NSFeatureUnsupportedError: Int](nsfeatureunsupportederror-swift.var.md)
+### Miscellaneous Errors
+- [var NSFeatureUnsupportedError: Int](./nsfeatureunsupportederror-swift.var.md)
   The feature isn’t supported, because the file system lacks the feature, or required libraries are missing, or other similar reasons.
 
 

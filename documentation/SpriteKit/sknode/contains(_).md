@@ -1,28 +1,42 @@
 # contains(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a point lies inside the parent’s coordinate system.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+@MainActor
+func contains(_ p: CGPoint) -> Bool
+```
+
+*macOS, watchOS*
 
 ```swift
 func contains(_ p: CGPoint) -> Bool
 ```
 
+```objc
+- (BOOL) containsPoint:(CGPoint) p;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the point lies inside the parent’s coordinate system; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the point lies inside the parent’s coordinate system; otherwise [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -30,11 +44,12 @@ func contains(_ p: CGPoint) -> Bool
 
 ## See Also
 
-- [Understanding Hit-Testing](understanding-hit-testing.md)
+### Hit Testing
+- [Understanding Hit-Testing](../understanding-hit-testing.md)
   Learn how find child nodes at a given point by using hit-testing.
-- [func atPoint(CGPoint) -> SKNode](sknode/atpoint(_:).md)
+- [func atPoint(CGPoint) -> SKNode](./atpoint%28_%29.md)
   Returns the deepest visible descendant that intersects a point.
-- [func nodes(at: CGPoint) -> [SKNode]](sknode/nodes(at:).md)
+- [func nodes(at: CGPoint) -> [SKNode]](./nodes%28at%29.md)
   Returns an array of all visible descendants that intersect a point.
 
 

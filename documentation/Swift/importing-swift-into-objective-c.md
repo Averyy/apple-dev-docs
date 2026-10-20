@@ -1,6 +1,7 @@
 # Importing Swift into Objective-C
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Access Swift types and declarations from within your Objective-C codebase.
 
@@ -10,7 +11,7 @@ You can work with types declared in Swift from within the Objective-C code in yo
 
 The header’s name is generated from your product module name, followed by `"-Swift.h"`. By default, this name is the same as your product name, with any nonalphanumeric characters replaced with an underscore (`_`). If the name begins with a number, the first digit is replaced with an underscore.
 
-![Diagram showing the steps to import Swift declarations into Objective-C code. Use forward declarations to declare Swift classes used in an Objective-C header file, and #import statements to import the Xcode-generated header into Objective-C .m files.](/images/com.apple.Swift/importing-swift-into-objective-c-1@2x.png)
+![Diagram showing the steps to import Swift declarations into Objective-C code. Use forward declarations to declare Swift classes used in an Objective-C header file, and #import statements to import the Xcode-generated header into Objective-C .m files.](https://developer.apple.com/tutorials/images/com.apple.Swift/importing-swift-into-objective-c-1@2x.png)
 
 The process for importing Swift declarations into Objective-C code differs slightly depending on whether you’re writing an app or a framework. Both processes are described below.
 
@@ -43,7 +44,7 @@ Import Swift code into Objective-C within the same framework:
 #import <ProductName/ProductModuleName-Swift.h>
 ```
 
-##### Include Swift Classes in Objective C Headers Using Forward Declarations
+##### Include Swift Classes in Objective-C Headers Using Forward Declarations
 
 When declarations in an Objective-C header file refer to a Swift class or protocol that comes from the same target, importing the generated header creates a cyclical reference. To avoid this, use a forward declaration of the Swift class or protocol to reference it in an Objective-C interface.
 
@@ -63,7 +64,8 @@ Forward declarations of Swift classes and protocols can be used only as types fo
 
 ## See Also
 
-- [Importing Objective-C into Swift](importing-objective-c-into-swift.md)
+### Swift and Objective-C in the Same Project
+- [Importing Objective-C into Swift](./importing-objective-c-into-swift.md)
   Access classes and other declarations from your Objective-C code in Swift.
 
 

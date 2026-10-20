@@ -1,7 +1,8 @@
 # deleted
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the record was deleted. `true` if the record was deleted; otherwise, `false`.
 
@@ -10,7 +11,7 @@ A Boolean value indicating whether the record was deleted. `true` if the record 
 
 ## Declaration
 
-```swift
+```
 attribute Boolean deleted;
 ```
 

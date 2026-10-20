@@ -1,7 +1,8 @@
 # inkType
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tool type that determines the shape of the rendered content.
 
@@ -20,7 +21,8 @@ var inkType: PKInkingTool.InkType { get set }
 
 ## See Also
 
-- [PKInkingTool.InkType](pkinkingtool-swift.struct/inktype-swift.enum.md)
+### Getting the tool type
+- [PKInkingTool.InkType](./inktype-swift.enum.md)
   The type that defines the shape of stroked lines.
 
 

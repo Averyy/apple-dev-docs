@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that stores the given value.
 
@@ -22,7 +23,8 @@ init(_ value: consuming Wrapped)
 
 ## See Also
 
-- [case some(Wrapped)](optional/some(_:).md)
+### Creating an Optional Value
+- [case some(Wrapped)](./some%28_%29.md)
   The presence of a value, stored as `Wrapped`.
 
 

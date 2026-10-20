@@ -1,7 +1,8 @@
 # description
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that describes the merchant category code.
 

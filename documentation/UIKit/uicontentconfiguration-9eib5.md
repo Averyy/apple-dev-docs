@@ -1,7 +1,8 @@
 # UIContentConfiguration
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The requirements for an object that provides the configuration for a content view.
 
@@ -10,7 +11,7 @@ The requirements for an object that provides the configuration for a content vie
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,25 +26,26 @@ This protocol provides a blueprint for a content-configuration object, which enc
 ## Topics
 
 ### Creating a content configuration
-- [func makeContentView() -> any UIView & UIContentView](uicontentconfiguration-9eib5/makecontentview.md)
+- [func makeContentView() -> any UIView & UIContentView](./uicontentconfiguration-9eib5/makecontentview%28%29.md)
   Creates a new instance of the content view using this configuration.
 ### Updating a content configuration
-- [func updated(for: any UIConfigurationState) -> Self](uicontentconfiguration-9eib5/updated(for:).md)
+- [func updated(for: any UIConfigurationState) -> Self](./uicontentconfiguration-9eib5/updated%28for%29.md)
   Generates a configuration for the specified state by applying the configuration’s default values for that state to any properties that you haven’t customized.
 
 ## Relationships
 
 ### Conforming Types
-- [UIContentUnavailableConfiguration](uicontentunavailableconfiguration-swift.struct.md)
-- [UIListContentConfiguration](uilistcontentconfiguration-swift.struct.md)
+- [UIContentUnavailableConfiguration](./uicontentunavailableconfiguration-swift.struct.md)
+- [UIListContentConfiguration](./uilistcontentconfiguration-swift.struct.md)
 
 ## See Also
 
-- [struct UIListContentConfiguration](uilistcontentconfiguration-swift.struct.md)
+### Content configurations
+- [struct UIListContentConfiguration](./uilistcontentconfiguration-swift.struct.md)
   A content configuration for a list-based content view.
-- [class UIListContentView](uilistcontentview.md)
+- [class UIListContentView](./uilistcontentview.md)
   A content view for displaying list-based content.
-- [protocol UIContentView](uicontentview-5fh3z.md)
+- [protocol UIContentView](./uicontentview-5fh3z.md)
   The requirements for a content view that you create using a configuration.
 
 

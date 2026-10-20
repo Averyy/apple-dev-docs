@@ -1,7 +1,8 @@
 # vDSP_biquadm_SetCoefficientsSingle
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Updates single-precision coefficients within a valid single-precision multichannel biquad IIR filter object.
 
@@ -10,7 +11,7 @@ Updates single-precision coefficients within a valid single-precision multichann
 
 ## Declaration
 
-```swift
+```c
 void vDSP_biquadm_SetCoefficientsSingle(vDSP_biquadm_Setup __setup, const float *__coeffs, vDSP_Length __start_sec, vDSP_Length __start_chn, vDSP_Length __nsec, vDSP_Length __nchn);
 ```
 

@@ -1,7 +1,8 @@
 # complete(httpResponse:httpBody:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates the requested authorization succeeded with an HTTP response.
 
@@ -18,6 +19,10 @@ Indicates the requested authorization succeeded with an HTTP response.
 func complete(httpResponse: HTTPURLResponse, httpBody: Data?)
 ```
 
+```objc
+- (void) completeWithHTTPResponse:(NSHTTPURLResponse *) httpResponse httpBody:(NSData *) httpBody;
+```
+
 ## Parameters
 
 - `httpResponse`: The metadata associated with the HTTP response.
@@ -25,12 +30,13 @@ func complete(httpResponse: HTTPURLResponse, httpBody: Data?)
 
 ## See Also
 
-- [func complete(authorizationResult: ASAuthorizationProviderExtensionAuthorizationResult)](asauthorizationproviderextensionauthorizationrequest/complete(authorizationresult:).md)
-- [func complete()](asauthorizationproviderextensionauthorizationrequest/complete.md)
+### Completing a Request
+- [func complete(authorizationResult: ASAuthorizationProviderExtensionAuthorizationResult)](./complete%28authorizationresult%29.md)
+- [func complete()](./complete%28%29.md)
   Indicates the requested authorization completed with no output.
-- [func complete(httpAuthorizationHeaders: [String : String])](asauthorizationproviderextensionauthorizationrequest/complete(httpauthorizationheaders:).md)
+- [func complete(httpAuthorizationHeaders: [String : String])](./complete%28httpauthorizationheaders%29.md)
   Indicates the requested authorization succeeded with tokens in the HTTP headers.
-- [func complete(error: any Error)](asauthorizationproviderextensionauthorizationrequest/complete(error:).md)
+- [func complete(error: any Error)](./complete%28error%29.md)
   Indicates the requested authorization failed.
 
 

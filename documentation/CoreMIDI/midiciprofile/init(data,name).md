@@ -1,7 +1,8 @@
 # init(data:name:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a named MIDI profile for the specified data.
 
@@ -18,6 +19,10 @@ Creates a named MIDI profile for the specified data.
 init(data: Data, name inName: String)
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) data name:(NSString *) inName;
+```
+
 ## Parameters
 
 - `data`: The profile’s unique byte sequence.
@@ -25,7 +30,8 @@ init(data: Data, name inName: String)
 
 ## See Also
 
-- [init(data: Data)](midiciprofile/init(data:).md)
+### Creating a Profile
+- [init(data: Data)](./init%28data%29.md)
   Creates a MIDI profile for the specified data.
 
 

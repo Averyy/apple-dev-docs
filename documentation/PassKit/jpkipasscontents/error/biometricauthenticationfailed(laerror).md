@@ -1,7 +1,8 @@
 # JPKIPassContents.Error.biometricAuthenticationFailed(laError:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Biometric authorization failed
 

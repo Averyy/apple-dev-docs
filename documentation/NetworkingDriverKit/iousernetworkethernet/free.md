@@ -1,28 +1,30 @@
 # free
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the service.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 #### Discussion
 
-Use this method to perform any final cleanup of your service, such as deallocating any memory associated with your service. The system calls this method at some point after it calls your service’s [`Stop`](https://developer.apple.com/documentation/driverkit/ioservice/stop) method.
+Use this method to perform any final cleanup of your service, such as deallocating any memory associated with your service. The system calls this method at some point after it calls your service’s [`Stop`](../../DriverKit/ioservice/stop.md) method.
 
 ## See Also
 
-- [init](iousernetworkethernet/init.md)
+### Configuring the Driver Service
+- [init](./init.md)
   Handles the basic initialization of the service.
-- [RegisterEthernetInterface](iousernetworkethernet/registerethernetinterface-4jqw8.md)
+- [RegisterEthernetInterface](./registerethernetinterface-4jqw8.md)
   Registers your driver with the networking stack.
 
 

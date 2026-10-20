@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a specific reference arc from the prim.
 
@@ -21,7 +22,7 @@ func remove(_ reference: USDPrim.Reference) throws
 
 #### Discussion
 
-> **Note**: An error if the reference cannot be removed.
+> **Throws**: An error if the reference cannot be removed.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # localizedName
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized name for the element or the remapped element.
 
@@ -19,13 +20,18 @@ The localized name for the element or the remapped element.
 var localizedName: String? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) NSString * localizedName;
+```
+
 #### Discussion
 
 If the user remaps this element, this property is the remapped localized name.
 
 ## See Also
 
-- [var unmappedLocalizedName: String?](gccontrollerelement/unmappedlocalizedname.md)
+### Getting a localized name
+- [var unmappedLocalizedName: String?](./unmappedlocalizedname.md)
   The element’s localized name, not the remapped name.
 
 

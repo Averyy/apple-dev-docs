@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator over the animations in the collection.
 
@@ -21,7 +22,8 @@ func makeIterator() -> AnimationLibraryComponent.AnimationCollection.Iterator
 
 ## See Also
 
-- [AnimationLibraryComponent.AnimationCollection.Iterator](animationlibrarycomponent/animationcollection/iterator.md)
+### Iterating over animations
+- [AnimationLibraryComponent.AnimationCollection.Iterator](./iterator.md)
   An object to iterate over all animations in the collection.
 
 

@@ -1,9 +1,10 @@
 # preparedURLRequest()
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Returns an authorized URL request that can be sent using an [`NSURLConnection`](https://developer.apple.com/documentation/foundation/nsurlconnection) object.
+Returns an authorized URL request that can be sent using an [`NSURLConnection`](../../Foundation/nsurlconnection.md) object.
 
 **Availability**:
 - iOS 6.0+
@@ -17,6 +18,10 @@ Returns an authorized URL request that can be sent using an [`NSURLConnection`](
 func preparedURLRequest() -> URLRequest!
 ```
 
+```objc
+- (NSURLRequest *) preparedURLRequest;
+```
+
 #### Return Value
 
 An OAuth-compatible `NSURLRequest` object that allows an app to act on behalf of the user, while keeping the user’s password private. The `NSURLRequest` is signed as OAuth1 by default, or OAuth2 by adding the appropriate token based on the user’s account.
@@ -27,13 +32,14 @@ Use this method to modify your request before sending. By setting the account co
 
 ## See Also
 
-- [var requestMethod: SLRequestMethod](slrequest/requestmethod.md)
+### Getting the Request Details
+- [var requestMethod: SLRequestMethod](./requestmethod.md)
   The method to use for this request.
-- [enum SLRequestMethod](slrequestmethod.md)
+- [enum SLRequestMethod](../slrequestmethod.md)
   Indicates the request method used in the request.
-- [var url: URL!](slrequest/url.md)
+- [var url: URL!](./url.md)
   The destination URL for this request.
-- [var parameters: [AnyHashable : Any]!](slrequest/parameters.md)
+- [var parameters: [AnyHashable : Any]!](./parameters.md)
   The parameters for this request.
 
 

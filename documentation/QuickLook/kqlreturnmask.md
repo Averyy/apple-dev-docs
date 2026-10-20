@@ -1,7 +1,8 @@
 # kQLReturnMask
 
 **Framework**: Quick Look  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Quick Look generator can create a preview.
 
@@ -14,15 +15,20 @@ The Quick Look generator can create a preview.
 var kQLReturnMask: Int32 { get }
 ```
 
+```c
+#define kQLReturnMask
+```
+
 ## See Also
 
-- [var kQLReturnHasMore: Int32](kqlreturnhasmore.md)
+### Constants
+- [var kQLReturnHasMore: Int32](./kqlreturnhasmore.md)
   The Quick Look generator has more content to display as part of the preview.
-- [let kQLThumbnailOptionIconModeKey: CFString!](kqlthumbnailoptioniconmodekey.md)
+- [let kQLThumbnailOptionIconModeKey: CFString!](./kqlthumbnailoptioniconmodekey.md)
   The Quick Look generator produces the thumbnail as an icon with decor.
-- [let kQLThumbnailOptionScaleFactorKey: CFString!](kqlthumbnailoptionscalefactorkey.md)
+- [let kQLThumbnailOptionScaleFactorKey: CFString!](./kqlthumbnailoptionscalefactorkey.md)
   The scale factor for the thumbnail.
-- [var QUICKLOOK_VERSION: Int32](quicklook_version.md)
+- [var QUICKLOOK_VERSION: Int32](./quicklook_version.md)
 
 
 ---

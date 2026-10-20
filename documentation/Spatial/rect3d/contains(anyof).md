@@ -1,7 +1,8 @@
 # contains(anyOf:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the rectangle contains any of the specified points.
 
@@ -11,7 +12,7 @@ Returns a Boolean value that indicates whether the rectangle contains any of the
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -30,9 +31,10 @@ A Boolean value that indicates whether the rectangle contains any of the specifi
 
 ## See Also
 
-- [func intersects(Rect3D) -> Bool](rect3d/intersects(_:).md)
+### Checking characteristics
+- [func intersects(Rect3D) -> Bool](./intersects%28_%29.md)
   Returns a Boolean value that indicates whether two rectangles intersect.
-- [var isEmpty: Bool](rect3d/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether two or three of the dimensions are zero.
 
 

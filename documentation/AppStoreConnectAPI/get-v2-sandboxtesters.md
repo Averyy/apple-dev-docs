@@ -1,7 +1,8 @@
 # List sandbox testers
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of Sandbox Testers for your team.
 
@@ -14,7 +15,7 @@ Get a list of Sandbox Testers for your team.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v2/sandboxTesters
 ```
 
@@ -57,14 +58,25 @@ https://api.appstoreconnect.apple.com/v2/sandboxTesters
 
 ## Parameters
 
-- `fields[sandboxTesters]` ([string])
-- `limit` (integer)
+### Query Parameters
+
+- `fields[sandboxTesters]` ([string]): **Allowed Values**: `firstName`, `lastName`, `acAccountName`, `territory`, `applePayCompatible`, `interruptPurchases`, `subscriptionRenewalRate`
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`SandboxTestersV2Response`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Modify a sandbox tester](patch-v2-sandboxtesters-_id_.md)
+### Sandbox Tester Lookup and Modification
+- [Modify a sandbox tester](./patch-v2-sandboxtesters-_id_.md)
   Change the subscription renewal time rate, set interrupted purchases or change territory of Sandbox Apple Account.
-- [Clear purchase history for a sandbox tester](post-v2-sandboxtestersclearpurchasehistoryrequest.md)
+- [Clear purchase history for a sandbox tester](./post-v2-sandboxtestersclearpurchasehistoryrequest.md)
   Remove purchase history from a Sandbox Apple Account.
 
 

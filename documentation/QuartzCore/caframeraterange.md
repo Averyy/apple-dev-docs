@@ -1,7 +1,8 @@
 # CAFrameRateRange
 
 **Framework**: Core Animation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -17,28 +18,32 @@
 struct CAFrameRateRange
 ```
 
+```c
+struct CAFrameRateRange;
+```
+
 ## Mentions
 
-- [Optimizing iPhone and iPad apps to support ProMotion displays](optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
+- [Optimizing iPhone and iPad apps to support ProMotion displays](./optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
 ## Topics
 
 ### Initializers
-- [init()](caframeraterange/init.md)
-- [init(minimum: Float, maximum: Float, preferred: Float?)](caframeraterange/init(minimum:maximum:preferred:).md)
+- [init()](./caframeraterange/init%28%29.md)
+- [init(minimum: Float, maximum: Float, preferred: Float?)](./caframeraterange/init%28minimum,maximum,preferred%29.md)
 ### Instance Properties
-- [var maximum: Float](caframeraterange/maximum.md)
-- [var minimum: Float](caframeraterange/minimum.md)
-- [var preferred: Float?](caframeraterange/preferred-7l3ki.md)
+- [var maximum: Float](./caframeraterange/maximum.md)
+- [var minimum: Float](./caframeraterange/minimum.md)
+- [var preferred: Float?](./caframeraterange/preferred-7l3ki.md)
 ### Type Properties
-- [static let `default`: CAFrameRateRange](caframeraterange/default.md)
+- [static let `default`: CAFrameRateRange](./caframeraterange/default.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

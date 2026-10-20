@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional information about the failure, keyed by name.
 
@@ -21,9 +22,10 @@ var metadata: [String : any Sendable]
 
 ## See Also
 
-- [var schemaName: String?](languagemodelerror/unsupportedgenerationguide/schemaname.md)
+### Inspecting unsupported generation guide errors
+- [var schemaName: String?](./schemaname.md)
   The name of the schema whose generation guide isn’t supported, if any.
-- [var debugDescription: String](languagemodelerror/unsupportedgenerationguide/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A debug description to help developers diagnose issues during development.
 
 

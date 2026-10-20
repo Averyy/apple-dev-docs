@@ -22,39 +22,40 @@ The `nowPlayingMenuItem` element is used to display information about audio play
 </menuBar>
 ```
 
-##### Subelement of Nowplayingmenuitem
+##### Subelement of nowPlayingMenuItem
 
-- [`title`](title.md)
+- [title](./title.md)
 
-##### Elements That Use Nowplayingmenuitem
+##### Elements that Use nowPlayingMenuItem
 
-- [`menuBar`](menubar.md)
+- [menuBar](./menubar.md)
 
 ## Topics
 
 ### Valid TVML Attributes
-- [binding](binding.md)
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
-- [theme](theme.md)
+- [theme](./theme.md)
   Sets the color scheme for an element.
 
 ## See Also
 
-- [menuBar](menubar.md)
+### Bar Elements
+- [menuBar](./menubar.md)
   Displays menu items along the top of the screen.
-- [menuItem](menuitem.md)
+- [menuItem](./menuitem.md)
   Displays a label for an item.
-- [segmentBar](segmentbar.md)
+- [segmentBar](./segmentbar.md)
   Displays a list of segment bar items.
-- [segmentBarHeader](segmentbarheader.md)
+- [segmentBarHeader](./segmentbarheader.md)
   Displays information above a segment bar.
-- [segmentBarItem](segmentbaritem.md)
+- [segmentBarItem](./segmentbaritem.md)
   Provides titles inside of a segment bar.
-- [tumblerBar](tumblerbar.md)
+- [tumblerBar](./tumblerbar.md)
   Displays a list of `tumblerItem` elements.
-- [tumblerItem](tumbleritem.md)
+- [tumblerItem](./tumbleritem.md)
   Contains title information for a tumbler header.
 
 

@@ -1,7 +1,8 @@
 # placeholderTensors
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Array of all the placeholder tensors.
 
@@ -17,6 +18,10 @@ Array of all the placeholder tensors.
 
 ```swift
 var placeholderTensors: [MPSGraphTensor] { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) NSArray<MPSGraphTensor *> * placeholderTensors;
 ```
 
 

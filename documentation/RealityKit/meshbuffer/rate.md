@@ -1,7 +1,8 @@
 # rate
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Rate of the buffer.
 
@@ -11,7 +12,7 @@ Rate of the buffer.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var rate: MeshBuffers.Rate
 
 ## See Also
 
-- [var elements: [Element]](meshbuffer/elements.md)
+### Inspecting a mesh
+- [var elements: [Element]](./elements.md)
   Access the buffer as an array. This may create a copy if the data are not already an array.
 
 

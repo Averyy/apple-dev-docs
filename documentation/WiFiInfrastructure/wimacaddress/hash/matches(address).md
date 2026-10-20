@@ -1,7 +1,8 @@
 # matches(address:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 `true` if the provided MAC address matches this hash, `false` otherwise.
 

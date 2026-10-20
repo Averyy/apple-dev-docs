@@ -1,18 +1,21 @@
 # function
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Function key.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 15.0
+- iPadOS 13.0+ - Deprecated in 15.0
+- Mac Catalyst 13.0+ - Deprecated in 15.0
+- macOS 10.15+ - Deprecated in 12.0
+- tvOS 13.0+ - Deprecated in 15.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 6.0+ - Deprecated in 8.0
+
+> **Deprecated**: This key modifier is reserved for system applications.
 
 ## Declaration
 
@@ -22,19 +25,20 @@ static let function: EventModifiers
 
 ## See Also
 
-- [static let all: EventModifiers](eventmodifiers/all.md)
+### Getting modifier keys
+- [static let all: EventModifiers](./all.md)
   All possible modifier keys.
-- [static let capsLock: EventModifiers](eventmodifiers/capslock.md)
+- [static let capsLock: EventModifiers](./capslock.md)
   The Caps Lock key.
-- [static let command: EventModifiers](eventmodifiers/command.md)
+- [static let command: EventModifiers](./command.md)
   The Command key.
-- [static let control: EventModifiers](eventmodifiers/control.md)
+- [static let control: EventModifiers](./control.md)
   The Control key.
-- [static let numericPad: EventModifiers](eventmodifiers/numericpad.md)
+- [static let numericPad: EventModifiers](./numericpad.md)
   Any key on the numeric keypad.
-- [static let option: EventModifiers](eventmodifiers/option.md)
+- [static let option: EventModifiers](./option.md)
   The Option key.
-- [static let shift: EventModifiers](eventmodifiers/shift.md)
+- [static let shift: EventModifiers](./shift.md)
   The Shift key.
 
 

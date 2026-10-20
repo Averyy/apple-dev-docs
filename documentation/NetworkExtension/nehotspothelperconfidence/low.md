@@ -1,7 +1,8 @@
 # NEHotspotHelperConfidence.low
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The helper has some confidence in being able to handle the network.
 
@@ -17,11 +18,16 @@ The helper has some confidence in being able to handle the network.
 case low
 ```
 
+```c
+kNEHotspotHelperConfidenceLow
+```
+
 ## See Also
 
-- [NEHotspotHelperConfidence.high](nehotspothelperconfidence/high.md)
+### Confidence Levels
+- [NEHotspotHelperConfidence.high](./high.md)
   The helper has high confidence in being able to handle the network.
-- [NEHotspotHelperConfidence.none](nehotspothelperconfidence/none.md)
+- [NEHotspotHelperConfidence.none](./none.md)
   The helper is unable to handle the network.
 
 

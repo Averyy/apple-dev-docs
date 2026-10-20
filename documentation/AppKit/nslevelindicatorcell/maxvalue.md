@@ -1,17 +1,22 @@
 # maxValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum value of the control.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var maxValue: Double { get set }
+```
+
+```objc
+@property double maxValue;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ The maximum value is dependent on the style of the control. For continuous style
 
 ## See Also
 
-- [var minValue: Double](nslevelindicatorcell/minvalue.md)
+### Configuring the Range of Values
+- [var minValue: Double](./minvalue.md)
   The minimum value of the control.
-- [var levelIndicatorStyle: NSLevelIndicator.Style](nslevelindicatorcell/levelindicatorstyle.md)
+- [var levelIndicatorStyle: NSLevelIndicator.Style](./levelindicatorstyle.md)
   The style of the level indicator control.
-- [var warningValue: Double](nslevelindicatorcell/warningvalue.md)
+- [var warningValue: Double](./warningvalue.md)
   The warning value of the level indicator control.
-- [var criticalValue: Double](nslevelindicatorcell/criticalvalue.md)
+- [var criticalValue: Double](./criticalvalue.md)
   The critical value of the level indicator control.
 
 

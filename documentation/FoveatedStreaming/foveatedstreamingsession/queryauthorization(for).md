@@ -1,7 +1,8 @@
 # queryAuthorization(for:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current authorization status of the given input capabilities without presenting an authorization prompt.
 

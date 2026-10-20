@@ -1,14 +1,15 @@
 # kIOPSFamilyCodeExternal6
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kIOPSFamilyCodeExternal6 = iokit_family_err(sub_iokit_pmu, 6)
 ```
 

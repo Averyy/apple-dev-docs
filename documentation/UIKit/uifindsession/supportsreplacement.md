@@ -1,7 +1,8 @@
 # supportsReplacement
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow replacing find panel results.
 
@@ -17,25 +18,30 @@ A Boolean value that indicates whether to allow replacing find panel results.
 var supportsReplacement: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL supportsReplacement;
+```
+
 #### Discussion
 
 This property determines whether the find panel shows the replacement UI.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var resultCount: Int](uifindsession/resultcount.md)
+### Getting session information
+- [var resultCount: Int](./resultcount.md)
   The total number of results the search matches.
-- [var highlightedResultIndex: Int](uifindsession/highlightedresultindex.md)
+- [var highlightedResultIndex: Int](./highlightedresultindex.md)
   The index of the result the find panel highlights.
-- [var allowsReplacementForCurrentlyHighlightedResult: Bool](uifindsession/allowsreplacementforcurrentlyhighlightedresult.md)
+- [var allowsReplacementForCurrentlyHighlightedResult: Bool](./allowsreplacementforcurrentlyhighlightedresult.md)
   A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
-- [var searchResultDisplayStyle: UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.property.md)
+- [var searchResultDisplayStyle: UIFindSession.SearchResultDisplayStyle](./searchresultdisplaystyle-swift.property.md)
   The information the find panel includes in the summary of found results.
-- [UIFindSession.SearchResultDisplayStyle](uifindsession/searchresultdisplaystyle-swift.enum.md)
+- [UIFindSession.SearchResultDisplayStyle](./searchresultdisplaystyle-swift.enum.md)
   Constants that describe the results summary the find panel UI includes.
-- [var allowsReplacement: Bool](uifindsession/allowsreplacement.md)
+- [var allowsReplacement: Bool](./allowsreplacement.md)
   A Boolean value that indicates whether to allow replacing the result the find panel is highlighting.
 
 

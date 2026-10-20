@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.ImmersivePresentationBehaviors
 
 **Framework**: Foveated Streaming  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The presentation behaviors describing when the immersive space that hosts the streamed content is presented and dismissed.
 
@@ -21,25 +22,25 @@ Use `ImmersivePresentationBehaviors` to automatically present the immersive spac
 ## Topics
 
 ### Initializers
-- [init()](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/init.md)
+- [init()](./immersivepresentationbehaviors-swift.struct/init%28%29.md)
 ### Type Methods
-- [static func automatic(OpenImmersiveSpaceAction, DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/automatic(_:_:).md)
+- [static func automatic(OpenImmersiveSpaceAction, DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](./immersivepresentationbehaviors-swift.struct/automatic%28_,_%29.md)
   Opens the immersive space when the session connects or resumes and dismisses the immersive space when the session pauses or disconnects.
-- [static func dismissOnDisconnect(DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/dismissondisconnect(_:).md)
+- [static func dismissOnDisconnect(DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](./immersivepresentationbehaviors-swift.struct/dismissondisconnect%28_%29.md)
   Dismisses the immersive space when the session disconnects.
-- [static func dismissOnPause(DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/dismissonpause(_:).md)
+- [static func dismissOnPause(DismissImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](./immersivepresentationbehaviors-swift.struct/dismissonpause%28_%29.md)
   Dismisses the immersive space when the session pauses.
-- [static func presentOnConnect(OpenImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/presentonconnect(_:).md)
+- [static func presentOnConnect(OpenImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](./immersivepresentationbehaviors-swift.struct/presentonconnect%28_%29.md)
   Opens the immersive space when the session connects.
-- [static func presentOnResume(OpenImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct/presentonresume(_:).md)
+- [static func presentOnResume(OpenImmersiveSpaceAction) -> FoveatedStreamingSession.ImmersivePresentationBehaviors](./immersivepresentationbehaviors-swift.struct/presentonresume%28_%29.md)
   Opens the immersive space when the session resumes.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
 
 
 ---

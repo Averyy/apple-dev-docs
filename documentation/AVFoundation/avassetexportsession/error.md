@@ -1,17 +1,20 @@
 # error
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional error object.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 13.1+
-- macOS 10.7+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 4.0+ - Deprecated in 18.0
+- iPadOS 4.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.7+ - Deprecated in 15.0
+- tvOS 9.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use `export(to:as:)` instead.
 
 ## Declaration
 
@@ -19,9 +22,13 @@ An optional error object.
 var error: (any Error)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSError * error;
+```
+
 #### Discussion
 
-The default value of this property is `nil`. The export session sets it to an error object if its status changes to [`AVAssetExportSession.Status.failed`](avassetexportsession/status-swift.enum/failed.md) or [`AVAssetExportSession.Status.cancelled`](avassetexportsession/status-swift.enum/cancelled.md).
+The default value of this property is `nil`. The export session sets it to an error object if its status changes to [`AVAssetExportSession.Status.failed`](./status-swift.enum/failed.md) or [`AVAssetExportSession.Status.cancelled`](./status-swift.enum/cancelled.md).
 
 
 ---

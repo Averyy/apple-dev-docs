@@ -1,7 +1,8 @@
 # cullModeOverride
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The light’s culling mode for shadow map rendering.
 
@@ -21,11 +22,12 @@ var cullModeOverride: SpotLightComponent.Shadow.ShadowMapCullMode? { get set }
 
 ## See Also
 
-- [var depthBias: Float](spotlightcomponent/shadow/depthbias.md)
+### Configuring the shadow
+- [var depthBias: Float](./depthbias.md)
   A constant value that RealityKit applies as a bias to its shadow calculations.
-- [var zNear: SpotLightComponent.Shadow.ShadowClippingPlane](spotlightcomponent/shadow/znear.md)
+- [var zNear: SpotLightComponent.Shadow.ShadowClippingPlane](./znear.md)
   The near-plane of a shadow frustum.
-- [var zFar: SpotLightComponent.Shadow.ShadowClippingPlane](spotlightcomponent/shadow/zfar.md)
+- [var zFar: SpotLightComponent.Shadow.ShadowClippingPlane](./zfar.md)
   The orthogonal plane of the shadow frustum that’s furthest from the spotlight.
 
 

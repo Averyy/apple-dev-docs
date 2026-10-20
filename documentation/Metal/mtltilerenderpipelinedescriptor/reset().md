@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies the default rendering pipeline state values for the descriptor.
 
@@ -19,9 +20,14 @@ Specifies the default rendering pipeline state values for the descriptor.
 func reset()
 ```
 
+```objc
+- (void) reset;
+```
+
 ## See Also
 
-- [var colorAttachments: MTLTileRenderPipelineColorAttachmentDescriptorArray](mtltilerenderpipelinedescriptor/colorattachments.md)
+### Specifying rendering pipeline state
+- [var colorAttachments: MTLTileRenderPipelineColorAttachmentDescriptorArray](./colorattachments.md)
   An array of attachments that store color data.
 
 

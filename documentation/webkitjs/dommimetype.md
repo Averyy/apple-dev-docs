@@ -1,7 +1,8 @@
 # DOMMimeType
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMMimeType
 ```
 
 ## Topics
 
 ### Instance Properties
-- [description](dommimetype/1632115-description.md)
-- [enabledPlugin](dommimetype/1633181-enabledplugin.md)
-- [suffixes](dommimetype/1633241-suffixes.md)
-- [type](dommimetype/1628810-type.md)
+- [description](./dommimetype/api-1632115-description.md)
+- [enabledPlugin](./dommimetype/api-1633181-enabledplugin.md)
+- [suffixes](./dommimetype/api-1633241-suffixes.md)
+- [type](./dommimetype/api-1628810-type.md)
 
 
 ---

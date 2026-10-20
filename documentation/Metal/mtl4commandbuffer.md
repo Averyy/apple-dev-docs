@@ -1,7 +1,8 @@
 # MTL4CommandBuffer
 
 **Framework**: Metal  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Records a sequence of GPU commands.
 
@@ -19,77 +20,82 @@ Records a sequence of GPU commands.
 protocol MTL4CommandBuffer : NSObjectProtocol
 ```
 
+```objc
+@protocol MTL4CommandBuffer <NSObject>
+```
+
 ## Mentions
 
-- [Understanding the Metal 4 core API](understanding-the-metal-4-core-api.md)
+- [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
 ## Topics
 
 ### Instance Properties
-- [var device: any MTLDevice](mtl4commandbuffer/device.md)
+- [var device: any MTLDevice](./mtl4commandbuffer/device.md)
   Returns the GPU device that this command buffer belongs to.
-- [var label: String?](mtl4commandbuffer/label.md)
+- [var label: String?](./mtl4commandbuffer/label.md)
   Assigns an optional label with this command buffer.
 ### Instance Methods
-- [func beginCommandBuffer(allocator: any MTL4CommandAllocator)](mtl4commandbuffer/begincommandbuffer(allocator:).md)
+- [func beginCommandBuffer(allocator: any MTL4CommandAllocator)](./mtl4commandbuffer/begincommandbuffer%28allocator%29.md)
   Prepares a command buffer for encoding.
-- [func beginCommandBuffer(allocator: any MTL4CommandAllocator, options: MTL4CommandBufferOptions)](mtl4commandbuffer/begincommandbuffer(allocator:options:).md)
+- [func beginCommandBuffer(allocator: any MTL4CommandAllocator, options: MTL4CommandBufferOptions)](./mtl4commandbuffer/begincommandbuffer%28allocator,options%29.md)
   Prepares a command buffer for encoding with additional options.
-- [func endCommandBuffer()](mtl4commandbuffer/endcommandbuffer.md)
+- [func endCommandBuffer()](./mtl4commandbuffer/endcommandbuffer%28%29.md)
   Finalizes a command buffer which makes it ready for you to submit it to a command queue.
-- [func makeComputeCommandEncoder() -> (any MTL4ComputeCommandEncoder)?](mtl4commandbuffer/makecomputecommandencoder.md)
+- [func makeComputeCommandEncoder() -> (any MTL4ComputeCommandEncoder)?](./mtl4commandbuffer/makecomputecommandencoder%28%29.md)
   Creates a compute command encoder.
-- [func makeMachineLearningCommandEncoder() -> (any MTL4MachineLearningCommandEncoder)?](mtl4commandbuffer/makemachinelearningcommandencoder.md)
+- [func makeMachineLearningCommandEncoder() -> (any MTL4MachineLearningCommandEncoder)?](./mtl4commandbuffer/makemachinelearningcommandencoder%28%29.md)
   Creates a machine learning command encoder.
-- [func makeRenderCommandEncoder(descriptor: MTL4RenderPassDescriptor, options: MTL4RenderEncoderOptions) -> (any MTL4RenderCommandEncoder)?](mtl4commandbuffer/makerendercommandencoder(descriptor:options:).md)
+- [func makeRenderCommandEncoder(descriptor: MTL4RenderPassDescriptor, options: MTL4RenderEncoderOptions) -> (any MTL4RenderCommandEncoder)?](./mtl4commandbuffer/makerendercommandencoder%28descriptor,options%29.md)
   Creates a render command encoder from a render pass descriptor with additional options.
-- [func popDebugGroup()](mtl4commandbuffer/popdebuggroup.md)
+- [func popDebugGroup()](./mtl4commandbuffer/popdebuggroup%28%29.md)
   Pops the latest string from the stack of debug groups for this command buffer.
-- [func pushDebugGroup(String)](mtl4commandbuffer/pushdebuggroup(_:).md)
+- [func pushDebugGroup(String)](./mtl4commandbuffer/pushdebuggroup%28_%29.md)
   Pushes a string onto a stack of debug groups for this command buffer.
-- [func resolveCounterHeap(any MTL4CounterHeap, range: Range<Int>, buffer: MTL4BufferRange, fenceToWait: (any MTLFence)?, fenceToUpdate: (any MTLFence)?)](mtl4commandbuffer/resolvecounterheap(_:range:buffer:fencetowait:fencetoupdate:).md)
+- [func resolveCounterHeap(any MTL4CounterHeap, range: Range<Int>, buffer: MTL4BufferRange, fenceToWait: (any MTLFence)?, fenceToUpdate: (any MTLFence)?)](./mtl4commandbuffer/resolvecounterheap%28_,range,buffer,fencetowait,fencetoupdate%29.md)
   Encodes a command that resolves an opaque counter heap into a buffer.
-- [func useResidencySet(any MTLResidencySet)](mtl4commandbuffer/useresidencyset(_:).md)
+- [func useResidencySet(any MTLResidencySet)](./mtl4commandbuffer/useresidencyset%28_%29.md)
   Applies a residency set to a command buffer.
-- [func useResidencySets([any MTLResidencySet])](mtl4commandbuffer/useresidencysets(_:).md)
+- [func useResidencySets([any MTLResidencySet])](./mtl4commandbuffer/useresidencysets%28_%29.md)
   Applies multiple residency sets to a command buffer.
-- [func writeTimestamp(counterHeap: any MTL4CounterHeap, index: Int)](mtl4commandbuffer/writetimestamp(counterheap:index:).md)
+- [func writeTimestamp(counterHeap: any MTL4CounterHeap, index: Int)](./mtl4commandbuffer/writetimestamp%28counterheap,index%29.md)
   Writes a GPU timestamp into the given counter heap.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol MTL4CommandQueue](mtl4commandqueue.md)
+### Submitting work to a GPU with Metal 4
+- [protocol MTL4CommandQueue](./mtl4commandqueue.md)
   An abstraction representing a command queue that you use commit and synchronize command buffers and to perform other GPU operations.
-- [class MTL4CommandQueueDescriptor](mtl4commandqueuedescriptor.md)
+- [class MTL4CommandQueueDescriptor](./mtl4commandqueuedescriptor.md)
   Groups together parameters for the creation of a new command queue.
-- [struct MTL4CommandQueueError](mtl4commandqueueerror-swift.struct.md)
-- [MTL4CommandQueueError.Code](mtl4commandqueueerror-swift.struct/code.md)
+- [struct MTL4CommandQueueError](./mtl4commandqueueerror-swift.struct.md)
+- [MTL4CommandQueueError.Code](./mtl4commandqueueerror-swift.struct/code.md)
   Enumeration of kinds of errors that committing an array of command buffers instances can produce.
-- [let MTL4CommandQueueErrorDomain: String](mtl4commandqueueerrordomain.md)
-- [class MTL4CommandBufferOptions](mtl4commandbufferoptions.md)
+- [let MTL4CommandQueueErrorDomain: String](./mtl4commandqueueerrordomain.md)
+- [class MTL4CommandBufferOptions](./mtl4commandbufferoptions.md)
   Options to configure a command buffer before encoding work into it.
-- [protocol MTL4CommandEncoder](mtl4commandencoder.md)
+- [protocol MTL4CommandEncoder](./mtl4commandencoder.md)
   An encoder that writes GPU commands into a command buffer.
-- [struct MTL4RenderEncoderOptions](mtl4renderencoderoptions.md)
+- [struct MTL4RenderEncoderOptions](./mtl4renderencoderoptions.md)
   Custom render pass options you specify at encoder creation time.
-- [protocol MTL4ArgumentTable](mtl4argumenttable.md)
+- [protocol MTL4ArgumentTable](./mtl4argumenttable.md)
   Provides a mechanism to manage and provide resource bindings for buffers, textures, sampler states and other Metal resources.
-- [class MTL4ArgumentTableDescriptor](mtl4argumenttabledescriptor.md)
+- [class MTL4ArgumentTableDescriptor](./mtl4argumenttabledescriptor.md)
   Groups parameters for the creation of a Metal argument table.
-- [protocol MTL4CommandAllocator](mtl4commandallocator.md)
+- [protocol MTL4CommandAllocator](./mtl4commandallocator.md)
   Manages the memory backing the encoding of GPU commands into command buffers.
-- [class MTL4CommandAllocatorDescriptor](mtl4commandallocatordescriptor.md)
+- [class MTL4CommandAllocatorDescriptor](./mtl4commandallocatordescriptor.md)
   Groups together parameters for creating a command allocator.
-- [class MTL4CommitOptions](mtl4commitoptions.md)
+- [class MTL4CommitOptions](./mtl4commitoptions.md)
   Represents options to configure a commit operation on a command queue.
-- [protocol MTL4CommitFeedback](mtl4commitfeedback.md)
+- [protocol MTL4CommitFeedback](./mtl4commitfeedback.md)
   Describes an object containing debug information from Metal to your app after completing a workload.
-- [typealias MTL4CommitFeedbackHandler](mtl4commitfeedbackhandler.md)
+- [typealias MTL4CommitFeedbackHandler](./mtl4commitfeedbackhandler.md)
   Defines the block signature for a callback Metal invokes to provide your app feedback after completing a workload.
 
 

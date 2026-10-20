@@ -1,7 +1,8 @@
 # NSScannedOption
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies allocation of scanned memory.
 
@@ -14,10 +15,15 @@ Specifies allocation of scanned memory.
 var NSScannedOption: Int { get }
 ```
 
+```c
+NSScannedOption
+```
+
 ## See Also
 
-- [var NSCollectorDisabledOption: Int](nscollectordisabledoption.md)
-  Specifies that the block is retained, and therefore ineligible for collection. Specifying this option is equivalent to invoking [`disableCollectorForPointer:`](nsgarbagecollector/disablecollectorforpointer:.md) with the returned block as the argument.
+### Constants
+- [var NSCollectorDisabledOption: Int](./nscollectordisabledoption.md)
+  Specifies that the block is retained, and therefore ineligible for collection. Specifying this option is equivalent to invoking [`disableCollectorForPointer:`](./nsgarbagecollector/disablecollectorforpointer_.md) with the returned block as the argument.
 
 
 ---

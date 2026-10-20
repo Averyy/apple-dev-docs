@@ -1,7 +1,8 @@
 # projectedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently focused element.
 
@@ -22,7 +23,8 @@ var projectedValue: AccessibilityFocusState<Value>.Binding { get }
 
 ## See Also
 
-- [var wrappedValue: Value](accessibilityfocusstate/binding/wrappedvalue.md)
+### Getting the state
+- [var wrappedValue: Value](./wrappedvalue.md)
   The underlying value referenced by the bound property.
 
 

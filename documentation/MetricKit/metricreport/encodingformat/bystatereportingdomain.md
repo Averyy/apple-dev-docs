@@ -1,7 +1,8 @@
 # MetricReport.EncodingFormat.byStateReportingDomain
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Format with entries organized by StateReporting domain.
 
@@ -19,7 +20,7 @@ case byStateReportingDomain
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
 
 #### Discussion
 
@@ -27,7 +28,8 @@ State entries are grouped by domain, and interval entries have their states grou
 
 ## See Also
 
-- [MetricReport.EncodingFormat.default](metricreport/encodingformat/default.md)
+### Encoding formats
+- [MetricReport.EncodingFormat.default](./default.md)
   Default format with state entries and interval entries as arrays.
 
 

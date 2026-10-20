@@ -1,21 +1,28 @@
 # topCapHeight
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertical end-cap size.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- visionOS
+- watchOS
+
+> **Deprecated**: Use the [`capInsets`](./capinsets.md) property instead.
 
 ## Declaration
 
 ```swift
 var topCapHeight: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSInteger topCapHeight;
 ```
 
 #### Discussion
@@ -28,13 +35,14 @@ This property specifies the size of the top end cap. The middle (stretchable) po
 bottomCapHeight = image.size.height - (image.topCapHeight + 1);
 ```
 
-By default, this property is set to 0, which indicates that the image does not use end caps and the entire image is subject to stretching. To create a new image with a nonzero value for this property, use the [`stretchableImage(withLeftCapWidth:topCapHeight:)`](uiimage/stretchableimage(withleftcapwidth:topcapheight:).md) method.
+By default, this property is set to 0, which indicates that the image does not use end caps and the entire image is subject to stretching. To create a new image with a nonzero value for this property, use the [`stretchableImage(withLeftCapWidth:topCapHeight:)`](./stretchableimage%28withleftcapwidth,topcapheight%29.md) method.
 
 ## See Also
 
-- [func stretchableImage(withLeftCapWidth: Int, topCapHeight: Int) -> UIImage](uiimage/stretchableimage(withleftcapwidth:topcapheight:).md)
+### Deprecated
+- [func stretchableImage(withLeftCapWidth: Int, topCapHeight: Int) -> UIImage](./stretchableimage%28withleftcapwidth,topcapheight%29.md)
   Creates and returns a new image object with the specified cap values.
-- [var leftCapWidth: Int](uiimage/leftcapwidth.md)
+- [var leftCapWidth: Int](./leftcapwidth.md)
   The horizontal end-cap size.
 
 

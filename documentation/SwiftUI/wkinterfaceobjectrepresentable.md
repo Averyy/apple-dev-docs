@@ -1,7 +1,8 @@
 # WKInterfaceObjectRepresentable
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A view that represents a WatchKit interface object.
 
@@ -17,39 +18,40 @@ A view that represents a WatchKit interface object.
 
 #### Overview
 
-Use a `WKInterfaceObjectRepresentable` instance to create and manage a [`WKInterfaceObject`](https://developer.apple.com/documentation/watchkit/wkinterfaceobject) in your SwiftUI interface. Adopt this protocol in one of your app’s custom instances, and use its methods to create, update, and tear down your interface object. The creation and update processes parallel the behavior of SwiftUI views, and you use them to configure your interface object with your app’s current state information. Use the teardown process to remove your interface object cleanly from your SwiftUI. For example, you might use the teardown process to notify other parts of your app that the interface object is disappearing.
+Use a `WKInterfaceObjectRepresentable` instance to create and manage a [`WKInterfaceObject`](../WatchKit/wkinterfaceobject.md) in your SwiftUI interface. Adopt this protocol in one of your app’s custom instances, and use its methods to create, update, and tear down your interface object. The creation and update processes parallel the behavior of SwiftUI views, and you use them to configure your interface object with your app’s current state information. Use the teardown process to remove your interface object cleanly from your SwiftUI. For example, you might use the teardown process to notify other parts of your app that the interface object is disappearing.
 
 To add your interface object into your SwiftUI interface, create your `WKInterfaceObjectRepresentable` instance and add it to your SwiftUI interface. The system calls the methods of your representable instance at appropriate times to create and update the interface object.
 
-The system doesn’t automatically communicate changes occurring within your interface object to other parts of your SwiftUI interface. When you want your interface object to coordinate with other SwiftUI views, you must provide a [`Coordinator`](wkinterfaceobjectrepresentable/coordinator.md) instance to facilitate those interactions. For example, you use a coordinator to forward target-action and delegate messages from your interface object to any SwiftUI views.
+The system doesn’t automatically communicate changes occurring within your interface object to other parts of your SwiftUI interface. When you want your interface object to coordinate with other SwiftUI views, you must provide a [`Coordinator`](./wkinterfaceobjectrepresentable/coordinator.md) instance to facilitate those interactions. For example, you use a coordinator to forward target-action and delegate messages from your interface object to any SwiftUI views.
 
 ## Topics
 
 ### Creating and updating the interface object
-- [func makeWKInterfaceObject(context: Self.Context) -> Self.WKInterfaceObjectType](wkinterfaceobjectrepresentable/makewkinterfaceobject(context:).md)
+- [func makeWKInterfaceObject(context: Self.Context) -> Self.WKInterfaceObjectType](./wkinterfaceobjectrepresentable/makewkinterfaceobject%28context%29.md)
   Creates a WatchKit interface object and configures its initial state.
-- [func updateWKInterfaceObject(Self.WKInterfaceObjectType, context: Self.Context)](wkinterfaceobjectrepresentable/updatewkinterfaceobject(_:context:).md)
+- [func updateWKInterfaceObject(Self.WKInterfaceObjectType, context: Self.Context)](./wkinterfaceobjectrepresentable/updatewkinterfaceobject%28_,context%29.md)
   Updates the presented WatchKit interface object (and its coordinator) to the latest configuration.
-- [WKInterfaceObjectRepresentable.Context](wkinterfaceobjectrepresentable/context.md)
+- [WKInterfaceObjectRepresentable.Context](./wkinterfaceobjectrepresentable/context.md)
 ### Cleaning up the interface object
-- [static func dismantleWKInterfaceObject(Self.WKInterfaceObjectType, coordinator: Self.Coordinator)](wkinterfaceobjectrepresentable/dismantlewkinterfaceobject(_:coordinator:).md)
+- [static func dismantleWKInterfaceObject(Self.WKInterfaceObjectType, coordinator: Self.Coordinator)](./wkinterfaceobjectrepresentable/dismantlewkinterfaceobject%28_,coordinator%29.md)
   Cleans up the presented WatchKit interface object (and its coordinator) in anticipation of their removal.
 ### Providing a custom coordinator object
-- [func makeCoordinator() -> Self.Coordinator](wkinterfaceobjectrepresentable/makecoordinator.md)
+- [func makeCoordinator() -> Self.Coordinator](./wkinterfaceobjectrepresentable/makecoordinator%28%29.md)
   Creates the custom instance that you use to communicate changes from your interface object to other parts of your SwiftUI interface.
-- [associatedtype Coordinator = Void](wkinterfaceobjectrepresentable/coordinator.md)
+- [associatedtype Coordinator = Void](./wkinterfaceobjectrepresentable/coordinator.md)
   A type to coordinate with the WatchKit interface object.
-- [associatedtype WKInterfaceObjectType : WKInterfaceObject](wkinterfaceobjectrepresentable/wkinterfaceobjecttype.md)
+- [associatedtype WKInterfaceObjectType : WKInterfaceObject](./wkinterfaceobjectrepresentable/wkinterfaceobjecttype.md)
   The type of WatchKit interface object to be presented.
 
 ## Relationships
 
 ### Inherits From
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct WKInterfaceObjectRepresentableContext](wkinterfaceobjectrepresentablecontext.md)
+### Adding WatchKit views to SwiftUI view hierarchies
+- [struct WKInterfaceObjectRepresentableContext](./wkinterfaceobjectrepresentablecontext.md)
   Contextual information about the state of the system that you use to create and update your WatchKit interface object.
 
 

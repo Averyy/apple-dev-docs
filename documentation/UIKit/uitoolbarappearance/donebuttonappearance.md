@@ -1,16 +1,17 @@
 # doneButtonAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance attributes for Done buttons.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- tvOS 13.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 26.0
+- iPadOS 13.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- tvOS 13.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -19,9 +20,13 @@ The appearance attributes for Done buttons.
 var doneButtonAppearance: UIBarButtonItemAppearance { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) UIBarButtonItemAppearance * doneButtonAppearance;
+```
+
 #### Discussion
 
-Use this property to configure the appearance of bar button items that use the [`done`](uibarbuttonitem/style-swift.enum/done.md) style, when appropriate. If the toolbar doesn’t have a done button, setting the value of this property has no effect.
+Use this property to configure the appearance of bar button items that use the [`done`](../uibarbuttonitem/style-swift.enum/done.md) style, when appropriate. If the toolbar doesn’t have a done button, setting the value of this property has no effect.
 
 
 ---

@@ -1,7 +1,8 @@
 # allowMail
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The query allows Mail messages in the search.
 
@@ -12,6 +13,10 @@ The query allows Mail messages in the search.
 
 ```swift
 static var allowMail: CSSearchQueryContext.SourceOptions { get }
+```
+
+```c
+CSSearchQuerySourceOptionAllowMail
 ```
 
 

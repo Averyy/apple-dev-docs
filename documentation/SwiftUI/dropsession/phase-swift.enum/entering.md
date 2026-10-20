@@ -1,7 +1,8 @@
 # DropSession.Phase.entering
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The drop session is entering the drop destination.
 

@@ -1,7 +1,8 @@
 # appRules
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app rules dictating which apps use the current tunneling session.
 
@@ -18,15 +19,20 @@ The app rules dictating which apps use the current tunneling session.
 var appRules: [NEAppRule]? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSArray<NEAppRule *> * appRules;
+```
+
 #### Discussion
 
 This property is only non-`nil` if the current configuration is a Per-App VPN configuration.
 
 ## See Also
 
-- [var protocolConfiguration: NEVPNProtocol](netunnelprovider/protocolconfiguration.md)
+### Getting the tunnel configuration
+- [var protocolConfiguration: NEVPNProtocol](./protocolconfiguration.md)
   The configuration of the current tunneling session.
-- [var routingMethod: NETunnelProviderRoutingMethod](netunnelprovider/routingmethod.md)
+- [var routingMethod: NETunnelProviderRoutingMethod](./routingmethod.md)
   The method by which network traffic is routed to the tunnel.
 
 

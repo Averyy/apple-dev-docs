@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -9,7 +10,7 @@
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,13 +20,14 @@ static var defaultValue: Self.Value { get }
 
 ## Mentions
 
-- [Providing data to the view hierarchy with custom traits](providing-data-to-the-view-hierarchy-with-custom-traits.md)
+- [Providing data to the view hierarchy with custom traits](../providing-data-to-the-view-hierarchy-with-custom-traits.md)
 
 ## See Also
 
-- [static var affectsColorAppearance: Bool](uitraitdefinition-64c15/affectscolorappearance.md)
-- [static var identifier: String](uitraitdefinition-64c15/identifier.md)
-- [static var name: String](uitraitdefinition-64c15/name.md)
+### Type Properties
+- [static var affectsColorAppearance: Bool](./affectscolorappearance.md)
+- [static var identifier: String](./identifier.md)
+- [static var name: String](./name.md)
 
 
 ---

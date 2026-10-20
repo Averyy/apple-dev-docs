@@ -1,7 +1,8 @@
 # JSONType
 
 **Framework**: TabularData  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Represents the value types in a JSON file.
 
@@ -23,36 +24,37 @@ enum JSONType
 ## Topics
 
 ### Enumeration Cases
-- [JSONType.array](jsontype/array.md)
+- [JSONType.array](./jsontype/array.md)
   An array type.
-- [JSONType.boolean](jsontype/boolean.md)
+- [JSONType.boolean](./jsontype/boolean.md)
   A Boolean type.
-- [JSONType.date](jsontype/date.md)
+- [JSONType.date](./jsontype/date.md)
   A date type.
-- [JSONType.double](jsontype/double.md)
+- [JSONType.double](./jsontype/double.md)
   A double-precision floating-point type.
-- [JSONType.integer](jsontype/integer.md)
+- [JSONType.integer](./jsontype/integer.md)
   An integer type.
-- [JSONType.object](jsontype/object.md)
+- [JSONType.object](./jsontype/object.md)
   An object type.
-- [JSONType.string](jsontype/string.md)
+- [JSONType.string](./jsontype/string.md)
   A string type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(contentsOfJSONFile: URL, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](dataframe/init(contentsofjsonfile:columns:types:options:).md)
+### Creating a Data Frame from a JSON File
+- [init(contentsOfJSONFile: URL, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28contentsofjsonfile,columns,types,options%29.md)
   Creates a data frame by reading a JSON file.
-- [init(jsonData: Data, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](dataframe/init(jsondata:columns:types:options:).md)
+- [init(jsonData: Data, columns: [String]?, types: [String : JSONType], options: JSONReadingOptions) throws](./dataframe/init%28jsondata,columns,types,options%29.md)
   Creates a data frame by converting JSON data.
-- [struct JSONReadingOptions](jsonreadingoptions.md)
+- [struct JSONReadingOptions](./jsonreadingoptions.md)
   A set of JSON file-reading options.
 
 

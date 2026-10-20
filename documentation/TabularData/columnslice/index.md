@@ -1,7 +1,8 @@
 # ColumnSlice.Index
 
 **Framework**: TabularData  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that represents a position in the column slice.
 
@@ -22,7 +23,8 @@ typealias Index = Int
 
 ## See Also
 
-- [ColumnSlice.Element](columnslice/element.md)
+### Supporting Types
+- [ColumnSlice.Element](./element.md)
   The type of the column slice’s elements, which is an optional type of the parent column’s type.
 
 

@@ -1,7 +1,8 @@
 # CPInstrumentClusterSetting.disabled
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.4+
@@ -14,11 +15,16 @@
 case disabled
 ```
 
+```c
+CPInstrumentClusterSettingDisabled
+```
+
 ## See Also
 
-- [CPInstrumentClusterSetting.enabled](cpinstrumentclustersetting/enabled.md)
-- [CPInstrumentClusterSetting.unspecified](cpinstrumentclustersetting/unspecified.md)
-- [CPInstrumentClusterSetting.userPreference](cpinstrumentclustersetting/userpreference.md)
+### Enumeration Cases
+- [CPInstrumentClusterSetting.enabled](./enabled.md)
+- [CPInstrumentClusterSetting.unspecified](./unspecified.md)
+- [CPInstrumentClusterSetting.userPreference](./userpreference.md)
 
 
 ---

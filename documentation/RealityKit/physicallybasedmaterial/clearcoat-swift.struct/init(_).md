@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a clearcoat object from a custom material’s clearcoat property.
 
@@ -24,9 +25,10 @@ init(_ value: CustomMaterial.Clearcoat)
 
 ## See Also
 
-- [init(floatLiteral: Float)](physicallybasedmaterial/clearcoat-swift.struct/init(floatliteral:).md)
+### Creating a clearcoat object
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates a clearcoat object using a single value.
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/clearcoat-swift.struct/init(scale:texture:).md)
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./init%28scale,texture%29.md)
   Creates a clearcoat object using a single value or a texture.
 
 

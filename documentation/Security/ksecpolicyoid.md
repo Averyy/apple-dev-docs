@@ -1,7 +1,8 @@
 # kSecPolicyOid
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The object identifier that defines the policy type (`CFStringRef`). All policies have a value for this key.
 
@@ -18,6 +19,10 @@ The object identifier that defines the policy type (`CFStringRef`). All policies
 
 ```swift
 let kSecPolicyOid: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyOid;
 ```
 
 

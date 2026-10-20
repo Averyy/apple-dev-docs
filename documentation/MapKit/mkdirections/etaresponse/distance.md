@@ -1,7 +1,8 @@
 # distance
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected travel distance, in meters.
 
@@ -20,19 +21,24 @@ The expected travel distance, in meters.
 var distance: CLLocationDistance { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLLocationDistance distance;
+```
+
 #### Discussion
 
 This property contains the overall distance traversed by the route.
 
 ## See Also
 
-- [var expectedTravelTime: TimeInterval](mkdirections/etaresponse/expectedtraveltime.md)
+### Getting the travel information
+- [var expectedTravelTime: TimeInterval](./expectedtraveltime.md)
   The expected travel time, in seconds.
-- [var expectedDepartureDate: Date](mkdirections/etaresponse/expecteddeparturedate.md)
+- [var expectedDepartureDate: Date](./expecteddeparturedate.md)
   The expected departure time.
-- [var expectedArrivalDate: Date](mkdirections/etaresponse/expectedarrivaldate.md)
+- [var expectedArrivalDate: Date](./expectedarrivaldate.md)
   The expected arrival time.
-- [var transportType: MKDirectionsTransportType](mkdirections/etaresponse/transporttype.md)
+- [var transportType: MKDirectionsTransportType](./transporttype.md)
   The type of conveyance to use for determining the travel time.
 
 

@@ -1,7 +1,8 @@
 # removeFromPreferences(completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove the filter configuration from the Network Extension preferences.
 
@@ -15,7 +16,15 @@ Remove the filter configuration from the Network Extension preferences.
 ## Declaration
 
 ```swift
+func removeFromPreferences(completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func removeFromPreferences() async throws
+```
+
+```objc
+- (void) removeFromPreferencesWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
@@ -24,15 +33,16 @@ After the configuration is removed from the preferences the `NEFilterManager` ob
 
 ## Parameters
 
-- `completionHandler`: A block that takes an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object. This block will be executed on the caller’s main thread after the removal operation is complete. If the configuration does not exist in the Network Extension preferences or an error occurs while removing it, the error parameter will be set to an `NSError` object containing details about the error. See `NEFilterManagerError` for a list of possible errors. If the configuration is removed successfully the error parameter will be set to nil.
+- `completionHandler`: A block that takes an [`NSError`](../../Foundation/nserror.md) object. This block will be executed on the caller’s main thread after the removal operation is complete. If the configuration does not exist in the Network Extension preferences or an error occurs while removing it, the error parameter will be set to an `NSError` object containing details about the error. See `NEFilterManagerError` for a list of possible errors. If the configuration is removed successfully the error parameter will be set to nil.
 
 ## See Also
 
-- [class func shared() -> NEFilterManager](nefiltermanager/shared.md)
+### Managing the filter configuration
+- [class func shared() -> NEFilterManager](./shared%28%29.md)
   Access the single instance of `NEFilterManager`.
-- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](nefiltermanager/loadfrompreferences(completionhandler:).md)
+- [func loadFromPreferences(completionHandler: ((any Error)?) -> Void)](./loadfrompreferences%28completionhandler%29.md)
   Load the filter configuration from the Network Extension preferences.
-- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](nefiltermanager/savetopreferences(completionhandler:).md)
+- [func saveToPreferences(completionHandler: ((any Error)?) -> Void)](./savetopreferences%28completionhandler%29.md)
   Save the filter configuration in the Network Extension preferences.
 
 

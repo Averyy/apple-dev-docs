@@ -1,7 +1,8 @@
 # appAppleId
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The unique identifier of an app in the App Store.
 
@@ -10,19 +11,20 @@ The unique identifier of an app in the App Store.
 
 ## Declaration
 
-```swift
+```
 int64 appAppleId
 ```
 
 ## See Also
 
-- [type bundleId](bundleid.md)
+### App metadata and environment
+- [type bundleId](./bundleid.md)
   The bundle identifier of an app.
-- [type bundleVersion](bundleversion.md)
+- [type bundleVersion](./bundleversion.md)
   The version of the build that identifies an iteration of the bundle.
-- [type environment](environment.md)
+- [type environment](./environment.md)
   The server environment, either sandbox or production.
-- [type status](status.md)
+- [type status](./status.md)
   The status of an auto-renewable subscription at the time the App Store signs the notification.
 
 

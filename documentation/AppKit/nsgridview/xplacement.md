@@ -1,7 +1,8 @@
 # xPlacement
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The placement of the cell within the grid column.
 
@@ -14,17 +15,22 @@ The placement of the cell within the grid column.
 var xPlacement: NSGridCell.Placement { get set }
 ```
 
+```objc
+@property NSGridCellPlacement xPlacement;
+```
+
 ## See Also
 
-- [class let sizedForContent: CGFloat](nsgridview/sizedforcontent.md)
+### Managing Grid Spacing and Alignment
+- [class let sizedForContent: CGFloat](./sizedforcontent.md)
   The default value for row and column sizes.
-- [var columnSpacing: CGFloat](nsgridview/columnspacing.md)
+- [var columnSpacing: CGFloat](./columnspacing.md)
   The column spacing for the grid view.
-- [var rowSpacing: CGFloat](nsgridview/rowspacing.md)
+- [var rowSpacing: CGFloat](./rowspacing.md)
   The row spacing for the grid view.
-- [var rowAlignment: NSGridRow.Alignment](nsgridview/rowalignment.md)
+- [var rowAlignment: NSGridRow.Alignment](./rowalignment.md)
   The row alignment for the grid view.
-- [var yPlacement: NSGridCell.Placement](nsgridview/yplacement.md)
+- [var yPlacement: NSGridCell.Placement](./yplacement.md)
   The placement of the cell within the grid row.
 
 

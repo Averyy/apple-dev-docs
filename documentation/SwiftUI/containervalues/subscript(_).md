@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the particular container value associated with a custom key.
 
@@ -22,7 +23,7 @@ subscript<Key>(key: Key.Type) -> Key.Value where Key : ContainerValueKey { get s
 
 #### Overview
 
-Create a custom container value by declaring a new property in an extension to the container values structure and applying the [`Entry()`](entry().md) macro to the variable declaration:
+Create a custom container value by declaring a new property in an extension to the container values structure and applying the [`Entry()`](../entry%28%29.md) macro to the variable declaration:
 
 ```swift
 extension ContainerValues {
@@ -30,7 +31,7 @@ extension ContainerValues {
 }
 ```
 
-You use custom container values the same way you use system-provided values, setting a value with the [`containerValue(_:_:)`](view/containervalue(_:_:).md) view modifier, and reading values from a [`Subview`](subview.md) provided by the `subviews` modifier. You can also provide a dedicated view modifier as a convenience for setting the value:
+You use custom container values the same way you use system-provided values, setting a value with the [`containerValue(_:_:)`](../view/containervalue%28_,_%29.md) view modifier, and reading values from a [`Subview`](../subview.md) provided by the `subviews` modifier. You can also provide a dedicated view modifier as a convenience for setting the value:
 
 ```swift
 extension View {

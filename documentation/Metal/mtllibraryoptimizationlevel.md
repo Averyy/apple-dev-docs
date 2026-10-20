@@ -1,7 +1,8 @@
 # MTLLibraryOptimizationLevel
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The optimization options for the Metal compiler.
 
@@ -19,41 +20,46 @@ The optimization options for the Metal compiler.
 enum MTLLibraryOptimizationLevel
 ```
 
+```c
+enum MTLLibraryOptimizationLevel : NSInteger;
+```
+
 ## Topics
 
 ### Optimization options
-- [MTLLibraryOptimizationLevel.default](mtllibraryoptimizationlevel/default.md)
+- [MTLLibraryOptimizationLevel.default](./mtllibraryoptimizationlevel/default.md)
   An optimization option for the Metal compiler that prioritizes runtime performance.
-- [MTLLibraryOptimizationLevel.size](mtllibraryoptimizationlevel/size.md)
+- [MTLLibraryOptimizationLevel.size](./mtllibraryoptimizationlevel/size.md)
   An optimization option for the Metal compiler that prioritizes minimizing the size of its output binaries, which may also reduce compile time.
 ### Initializers
-- [init?(rawValue: Int)](mtllibraryoptimizationlevel/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtllibraryoptimizationlevel/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MTLLibrary](mtllibrary.md)
+### Shader library management
+- [protocol MTLLibrary](./mtllibrary.md)
   A collection of Metal shader functions.
-- [protocol MTLDynamicLibrary](mtldynamiclibrary.md)
+- [protocol MTLDynamicLibrary](./mtldynamiclibrary.md)
   A dynamically linkable representation of compiled shader code for a specific Metal device object.
-- [protocol MTLBinaryArchive](mtlbinaryarchive.md)
+- [protocol MTLBinaryArchive](./mtlbinaryarchive.md)
   A container for pipeline state descriptors and their associated compiled shader code.
-- [class MTLCompileOptions](mtlcompileoptions.md)
+- [class MTLCompileOptions](./mtlcompileoptions.md)
   Compilation settings for a Metal shader library.
-- [enum MTLLibraryType](mtllibrarytype.md)
+- [enum MTLLibraryType](./mtllibrarytype.md)
   A set of options for Metal library types.
-- [enum MTLLanguageVersion](mtllanguageversion.md)
+- [enum MTLLanguageVersion](./mtllanguageversion.md)
   Metal shading language versions.
-- [enum MTLCompileSymbolVisibility](mtlcompilesymbolvisibility.md)
+- [enum MTLCompileSymbolVisibility](./mtlcompilesymbolvisibility.md)
 
 
 ---

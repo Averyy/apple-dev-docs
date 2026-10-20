@@ -1,7 +1,8 @@
 # CTFontGetGlyphsForCharacters(_:_:_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs basic character-to-glyph mapping.
 
@@ -20,13 +21,17 @@ Performs basic character-to-glyph mapping.
 func CTFontGetGlyphsForCharacters(_ font: CTFont, _ characters: UnsafePointer<UniChar>, _ glyphs: UnsafeMutablePointer<CGGlyph>, _ count: CFIndex) -> Bool
 ```
 
+```c
+extern bool CTFontGetGlyphsForCharacters(CTFontRef font, const UniChar characters[], CGGlyph glyphs[], CFIndex count);
+```
+
 #### Return Value
 
 `True` if the font could encode all Unicode characters; otherwise `False`.
 
 #### Discussion
 
-Provides basic Unicode encoding for the given font, returning by reference an array of [`CGGlyph`](https://developer.apple.com/documentation/coregraphics/cgglyph) values corresponding to a given array of Unicode characters for the given font.
+Provides basic Unicode encoding for the given font, returning by reference an array of [`CGGlyph`](../CoreGraphics/cgglyph.md) values corresponding to a given array of Unicode characters for the given font.
 
 If a glyph could not be encoded, a value of `0` is passed back at the corresponding index in the `glyphs` array and the function returns `False`. It is the responsibility of the caller to handle the Unicode properties of the input characters.
 
@@ -39,9 +44,10 @@ If a glyph could not be encoded, a value of `0` is passed back at the correspond
 
 ## See Also
 
-- [func CTFontDrawGlyphs(CTFont, UnsafePointer<CGGlyph>, UnsafePointer<CGPoint>, Int, CGContext)](ctfontdrawglyphs(_:_:_:_:_:).md)
+### Working with Glyphs
+- [func CTFontDrawGlyphs(CTFont, UnsafePointer<CGGlyph>, UnsafePointer<CGPoint>, Int, CGContext)](./ctfontdrawglyphs%28_,_,_,_,_%29.md)
   Renders the given glyphs of a font at the specified positions in the supplied graphics context.
-- [func CTFontGetLigatureCaretPositions(CTFont, CGGlyph, UnsafeMutablePointer<CGFloat>?, CFIndex) -> CFIndex](ctfontgetligaturecaretpositions(_:_:_:_:).md)
+- [func CTFontGetLigatureCaretPositions(CTFont, CGGlyph, UnsafeMutablePointer<CGFloat>?, CFIndex) -> CFIndex](./ctfontgetligaturecaretpositions%28_,_,_,_%29.md)
   Returns caret positions within a glyph.
 
 

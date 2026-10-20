@@ -1,7 +1,8 @@
 # intersect(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes from the receiving set each object that isn’t a member of another given set.
 
@@ -20,21 +21,27 @@ Removes from the receiving set each object that isn’t a member of another give
 func intersect(_ otherSet: Set<AnyHashable>)
 ```
 
+```objc
+- (void) intersectSet:(NSSet<id> *) otherSet;
+```
+
 ## Parameters
 
 - `otherSet`: The set with which to perform the intersection.
 
 ## See Also
 
-- [func remove(Any)](nsmutableset/remove(_:).md)
+### Related Documentation
+- [func remove(Any)](./remove%28_%29.md)
   Removes a given object from the set.
-- [func removeAllObjects()](nsmutableset/removeallobjects.md)
+- [func removeAllObjects()](./removeallobjects%28%29.md)
   Empties the set of all of its members.
-- [func union(Set<AnyHashable>)](nsmutableset/union(_:).md)
+### Combining and recombining sets
+- [func union(Set<AnyHashable>)](./union%28_%29.md)
   Adds each object in another given set to the receiving set, if not present.
-- [func minus(Set<AnyHashable>)](nsmutableset/minus(_:).md)
+- [func minus(Set<AnyHashable>)](./minus%28_%29.md)
   Removes each object in another given set from the receiving set, if present.
-- [func setSet(Set<AnyHashable>)](nsmutableset/setset(_:).md)
+- [func setSet(Set<AnyHashable>)](./setset%28_%29.md)
   Empties the receiving set, then adds each object contained in another given set.
 
 

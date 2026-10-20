@@ -1,7 +1,8 @@
 # init(bundleIdentifier:)
 
 **Framework**: Screen Time  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a web history instance to delete web-usage data associated to the bundle identifier you specify.
 
@@ -15,6 +16,10 @@ Creates a web history instance to delete web-usage data associated to the bundle
 
 ```swift
 init(bundleIdentifier: String) throws
+```
+
+```objc
+- (instancetype) initWithBundleIdentifier:(NSString *) bundleIdentifier error:(NSError **) error;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # kCGImagePropertyGIFDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of key-value pairs for an image that uses Graphics Interchange Format (GIF).
 
@@ -20,9 +21,13 @@ A dictionary of key-value pairs for an image that uses Graphics Interchange Form
 let kCGImagePropertyGIFDictionary: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyGIFDictionary;
+```
+
 #### Discussion
 
-For more information about the available metadata keys, see [`GIF Image Properties`](gif-image-properties.md).
+For more information about the available metadata keys, see [GIF Image Properties](./gif-image-properties.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # kSecAttrProtocolLDAP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 LDAP protocol.
 
@@ -18,6 +19,10 @@ LDAP protocol.
 
 ```swift
 let kSecAttrProtocolLDAP: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolLDAP;
 ```
 
 

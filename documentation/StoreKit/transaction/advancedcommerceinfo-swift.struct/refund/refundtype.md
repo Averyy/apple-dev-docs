@@ -1,7 +1,8 @@
 # Transaction.AdvancedCommerceInfo.Refund.RefundType
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The type of refund.
 
@@ -23,22 +24,23 @@ struct RefundType
 ## Topics
 
 ### Type Properties
-- [static let custom: Transaction.AdvancedCommerceInfo.Refund.RefundType](transaction/advancedcommerceinfo-swift.struct/refund/refundtype/custom.md)
-- [static let full: Transaction.AdvancedCommerceInfo.Refund.RefundType](transaction/advancedcommerceinfo-swift.struct/refund/refundtype/full.md)
-- [static let proRated: Transaction.AdvancedCommerceInfo.Refund.RefundType](transaction/advancedcommerceinfo-swift.struct/refund/refundtype/prorated.md)
+- [static let custom: Transaction.AdvancedCommerceInfo.Refund.RefundType](./refundtype/custom.md)
+- [static let full: Transaction.AdvancedCommerceInfo.Refund.RefundType](./refundtype/full.md)
+- [static let proRated: Transaction.AdvancedCommerceInfo.Refund.RefundType](./refundtype/prorated.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Transaction.AdvancedCommerceInfo.Refund.Reason](transaction/advancedcommerceinfo-swift.struct/refund/reason-swift.struct.md)
+### Structures
+- [Transaction.AdvancedCommerceInfo.Refund.Reason](./reason-swift.struct.md)
   The reason for the refund.
 
 

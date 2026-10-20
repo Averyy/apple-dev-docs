@@ -1,7 +1,8 @@
 # main()
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Initializes and runs the widget bundle.
 
@@ -22,11 +23,12 @@ Initializes and runs the widget bundle.
 
 #### Overview
 
-Because you precede your [`WidgetBundle`](widgetbundle.md) conformer’s declaration with the [`@main`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Attributes.html#ID626) attribute, the system calls your widget bundle’s `main()` method to launch the widget bundle. SwiftUI provides a default implementation of the method that manages the launch process in a platform-appropriate way.
+Because you precede your [`WidgetBundle`](../widgetbundle.md) conformer’s declaration with the [@main](https://docs.swift.org/swift-book/ReferenceManual/Attributes.html#ID626) attribute, the system calls your widget bundle’s `main()` method to launch the widget bundle. SwiftUI provides a default implementation of the method that manages the launch process in a platform-appropriate way.
 
 ## See Also
 
-- [init()](widgetbundle/init.md)
+### Running a widget bundle
+- [init()](./init%28%29.md)
   Creates a widget bundle using the bundle’s body as its content.
 
 

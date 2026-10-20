@@ -1,7 +1,8 @@
 # init(device:action:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a slider to control the exposure bias of the specified capture device with an action to respond to exposure bias changes.
 
@@ -18,20 +19,25 @@ Creates a slider to control the exposure bias of the specified capture device wi
 init(device: AVCaptureDevice, action: @escaping @MainActor @Sendable (Float) -> Void)
 ```
 
+```objc
+- (instancetype) initWithDevice:(AVCaptureDevice *) device action:(void (^)(float)) action;
+```
+
 #### Discussion
 
-The system only calls the specified action when the exposure bias slider changes the device’s [`videoZoomFactor`](avcapturedevice/videozoomfactor.md) property value. If you need to react to other sources of changes to the exposure target bias, use key-value observation instead.
+The system only calls the specified action when the exposure bias slider changes the device’s [`videoZoomFactor`](../avcapturedevice/videozoomfactor.md) property value. If you need to react to other sources of changes to the exposure target bias, use key-value observation instead.
 
 > ❗ **Important**:  Don’t change the capture device’s exposure target bias when the system calls the action.
 
 ## Parameters
 
 - `device`: The capture device to control.
-- `action`: An action the system calls on the main actor to handle changes to the device’s [`exposureTargetBias`](avcapturedevice/exposuretargetbias.md) property.
+- `action`: An action the system calls on the main actor to handle changes to the device’s [`exposureTargetBias`](../avcapturedevice/exposuretargetbias.md) property.
 
 ## See Also
 
-- [init(device: AVCaptureDevice)](avcapturesystemexposurebiasslider/init(device:).md)
+### Creating an exposure bias slider
+- [init(device: AVCaptureDevice)](./init%28device%29.md)
   Creates a slider to control the exposure bias of the specified capture device.
 
 

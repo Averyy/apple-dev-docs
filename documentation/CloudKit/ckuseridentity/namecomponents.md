@@ -1,7 +1,8 @@
 # nameComponents
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user’s name.
 
@@ -20,15 +21,20 @@ The user’s name.
 var nameComponents: PersonNameComponents? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSPersonNameComponents * nameComponents;
+```
+
 #### Discussion
 
-You can use this property to construct the user’s name for display. Use the components with an instance of [`PersonNameComponentsFormatter`](https://developer.apple.com/documentation/foundation/personnamecomponentsformatter) to create a string representation for the current locale.
+You can use this property to construct the user’s name for display. Use the components with an instance of [`PersonNameComponentsFormatter`](../../Foundation/personnamecomponentsformatter.md) to create a string representation for the current locale.
 
 ## See Also
 
-- [var userRecordID: CKRecord.ID?](ckuseridentity/userrecordid.md)
+### Accessing User Information
+- [var userRecordID: CKRecord.ID?](./userrecordid.md)
   The user record ID for the corresponding user record.
-- [var contactIdentifiers: [String]](ckuseridentity/contactidentifiers.md)
+- [var contactIdentifiers: [String]](./contactidentifiers.md)
   Identifiers that match contacts in the local Contacts database.
 
 

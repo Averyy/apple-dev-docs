@@ -1,7 +1,8 @@
 # init(array:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated set with the objects that are contained in a given array.
 
@@ -20,23 +21,28 @@ Initializes a newly allocated set with the objects that are contained in a given
 convenience init(array: [Any])
 ```
 
+```objc
+- (instancetype) initWithArray:(NSArray<id> *) array;
+```
+
 #### Return Value
 
 An initialized set with the contents of `array`. The returned set might be different than the original receiver.
 
 ## Parameters
 
-- `array`: An array of objects to add to the new set. If the same object appears more than once in `array`, it is represented only once in the returned set. Each object receives a [`retain`](https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/retain) message as it is added to the set.
+- `array`: An array of objects to add to the new set. If the same object appears more than once in `array`, it is represented only once in the returned set. Each object receives a [`retain`](../../ObjectiveC/nsobject-c.protocol/retain.md) message as it is added to the set.
 
 ## See Also
 
-- [init(objects: UnsafePointer<AnyObject>?, count: Int)](nsset/init(objects:count:)-7kift.md)
+### Initializing a Set
+- [init(objects: UnsafePointer<AnyObject>?, count: Int)](./init%28objects,count%29-7kift.md)
   Initializes a newly allocated set with a specified number of objects from a given C array of objects.
-- [convenience init(set: Set<AnyHashable>)](nsset/init(set:)-1xovx.md)
+- [convenience init(set: Set<AnyHashable>)](./init%28set%29-1xovx.md)
   Initializes a newly allocated set and adds to it objects from another given set.
-- [convenience init(set: Set<AnyHashable>, copyItems: Bool)](nsset/init(set:copyitems:).md)
+- [convenience init(set: Set<AnyHashable>, copyItems: Bool)](./init%28set,copyitems%29.md)
   Initializes a newly allocated set and adds to it members of another given set.
-- [init()](nsset/init.md)
+- [init()](./init%28%29.md)
   Initializes a newly allocated set.
 
 

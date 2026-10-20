@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The content types this document can open.
@@ -25,15 +26,16 @@ The document browser and open panel use this list to filter which files the pers
 
 ## See Also
 
-- [ReadableDocument.ReadConfiguration](readabledocument/readconfiguration.md)
+### Reading a document
+- [ReadableDocument.ReadConfiguration](./readconfiguration.md)
   The configuration for reading document contents.
-- [associatedtype Reader : DocumentReader](readabledocument/reader.md)
+- [associatedtype Reader : DocumentReader](./reader.md)
   A type that implements reading from disk.
-- [func reader(configuration: sending Self.ReadConfiguration) -> sending Self.Reader](readabledocument/reader(configuration:).md)
+- [func reader(configuration: sending Self.ReadConfiguration) -> sending Self.Reader](./reader%28configuration%29.md)
   Creates a reader to load this document from disk.
-- [func apply(snapshot: sending Self.Reader.Snapshot, previous: sending Self.Reader.Snapshot?) async throws](readabledocument/apply(snapshot:previous:).md)
+- [func apply(snapshot: sending Self.Reader.Snapshot, previous: sending Self.Reader.Snapshot?) async throws](./apply%28snapshot,previous%29.md)
   Applies a loaded snapshot to the document model.
-- [static var writableContentTypes: [UTType]](readabledocument/writablecontenttypes.md)
+- [static var writableContentTypes: [UTType]](./writablecontenttypes.md)
   By default, a document that supports reading also supports writing the same content types.
 
 

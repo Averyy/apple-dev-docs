@@ -1,17 +1,22 @@
 # init(innerTextProvider:outerTextProvider:)
 
 **Framework**: ClockKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a template that has an inner line of text and an outer text element.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
 ```swift
 init(innerTextProvider: CLKTextProvider, outerTextProvider: CLKTextProvider)
+```
+
+```objc
+- (instancetype) initWithInnerTextProvider:(CLKTextProvider *) innerTextProvider outerTextProvider:(CLKTextProvider *) outerTextProvider;
 ```
 
 ## Parameters

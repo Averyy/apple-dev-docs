@@ -1,7 +1,8 @@
 # HKLiveWorkoutDataSource
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A data source that automatically provides live data from an active workout session.
 
@@ -9,7 +10,7 @@ A data source that automatically provides live data from an active workout sessi
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS ?+
+- macOS
 - watchOS 5.0+
 
 ## Declaration
@@ -18,56 +19,61 @@ A data source that automatically provides live data from an active workout sessi
 class HKLiveWorkoutDataSource
 ```
 
+```objc
+@interface HKLiveWorkoutDataSource : NSObject
+```
+
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
+- [Running workout sessions](./running-workout-sessions.md)
 
 ## Topics
 
 ### Creating a live data source
-- [init(healthStore: HKHealthStore, workoutConfiguration: HKWorkoutConfiguration?)](hkliveworkoutdatasource/init(healthstore:workoutconfiguration:).md)
+- [init(healthStore: HKHealthStore, workoutConfiguration: HKWorkoutConfiguration?)](./hkliveworkoutdatasource/init%28healthstore,workoutconfiguration%29.md)
   Creates a new data source based on the provided workout configuration.
-- [var typesToCollect: Set<HKQuantityType>](hkliveworkoutdatasource/typestocollect.md)
+- [var typesToCollect: Set<HKQuantityType>](./hkliveworkoutdatasource/typestocollect.md)
   The quantity type samples that the data source automatically sends to the workout builder.
 ### Calculating statistics
-- [func enableCollection(for: HKQuantityType, predicate: NSPredicate?)](hkliveworkoutdatasource/enablecollection(for:predicate:).md)
+- [func enableCollection(for: HKQuantityType, predicate: NSPredicate?)](./hkliveworkoutdatasource/enablecollection%28for,predicate%29.md)
   Begins automatically calculating statistics for samples that match the quantity type and predicate.
-- [func disableCollection(for: HKQuantityType)](hkliveworkoutdatasource/disablecollection(for:).md)
+- [func disableCollection(for: HKQuantityType)](./hkliveworkoutdatasource/disablecollection%28for%29.md)
   Stops automatically calculating statistics for the quantity type.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Running workout sessions](running-workout-sessions.md)
+### Sessions
+- [Running workout sessions](./running-workout-sessions.md)
   Track a workout on Apple Watch.
-- [Build a workout app for Apple Watch](build-a-workout-app-for-apple-watch.md)
+- [Build a workout app for Apple Watch](./build-a-workout-app-for-apple-watch.md)
   Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
-- [Building a multidevice workout app](building-a-multidevice-workout-app.md)
+- [Building a multidevice workout app](./building-a-multidevice-workout-app.md)
   Mirror a workout from a watchOS app to its companion iOS app, and perform bidirectional communication between them.
-- [Building a workout app for iPhone and iPad](building-a-workout-app-for-iphone-and-ipad.md)
+- [Building a workout app for iPhone and iPad](./building-a-workout-app-for-iphone-and-ipad.md)
   Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
-- [class HKWorkoutSession](hkworkoutsession.md)
+- [class HKWorkoutSession](./hkworkoutsession.md)
   A session that tracks a person’s workout.
-- [class HKWorkoutConfiguration](hkworkoutconfiguration.md)
+- [class HKWorkoutConfiguration](./hkworkoutconfiguration.md)
   An object that contains configuration information about a workout session.
-- [enum HKWorkoutSessionState](hkworkoutsessionstate.md)
+- [enum HKWorkoutSessionState](./hkworkoutsessionstate.md)
   A workout session’s state.
-- [class HKLiveWorkoutBuilder](hkliveworkoutbuilder.md)
+- [class HKLiveWorkoutBuilder](./hkliveworkoutbuilder.md)
   A builder object that constructs a workout incrementally based on live data from an active workout session.
-- [protocol HKLiveWorkoutBuilderDelegate](hkliveworkoutbuilderdelegate.md)
+- [protocol HKLiveWorkoutBuilderDelegate](./hkliveworkoutbuilderdelegate.md)
   A protocol that defines methods for receiving updates from a live workout builder.
 
 

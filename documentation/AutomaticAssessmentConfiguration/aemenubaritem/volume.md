@@ -1,7 +1,8 @@
 # volume
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The Volume system menu bar item.
 
@@ -13,6 +14,10 @@ The Volume system menu bar item.
 
 ```swift
 static let volume: AEMenuBarItem
+```
+
+```c
+extern AEMenuBarItem const AEMenuBarItemVolume;
 ```
 
 

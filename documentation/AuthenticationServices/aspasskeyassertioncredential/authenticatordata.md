@@ -1,7 +1,8 @@
 # authenticatorData
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authenticator data of the application that created this passkey assertion credential.
 
@@ -18,17 +19,22 @@ The authenticator data of the application that created this passkey assertion cr
 var authenticatorData: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * authenticatorData;
+```
+
 ## See Also
 
-- [var clientDataHash: Data](aspasskeyassertioncredential/clientdatahash.md)
+### Accessing credential information
+- [var clientDataHash: Data](./clientdatahash.md)
   A hash of the client data for this credential.
-- [var credentialID: Data](aspasskeyassertioncredential/credentialid.md)
+- [var credentialID: Data](./credentialid.md)
   The identifier for this credential.
-- [var relyingParty: String](aspasskeyassertioncredential/relyingparty.md)
+- [var relyingParty: String](./relyingparty.md)
   The relying party associated with this passkey.
-- [var signature: Data](aspasskeyassertioncredential/signature.md)
+- [var signature: Data](./signature.md)
   The cryptographic signature of this credential.
-- [var userHandle: Data](aspasskeyassertioncredential/userhandle.md)
+- [var userHandle: Data](./userhandle.md)
   The user handle of this passkey.
 
 

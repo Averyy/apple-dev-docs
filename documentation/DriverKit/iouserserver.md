@@ -1,19 +1,20 @@
 # IOUserServer
 
 **Framework**: DriverKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A system-managed service.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 class IOUserServer;
 ```
 
@@ -24,28 +25,29 @@ You do not create or use instances of this class directly. The system creates th
 ## Topics
 
 ### Configuring the User Server
-- [Create](iouserserver/create.md)
-- [init](iouserserver/init.md)
-- [free](iouserserver/free.md)
+- [Create](./iouserserver/create.md)
+- [init](./iouserserver/init.md)
+- [free](./iouserserver/free.md)
 ### Managing the Server Lifecycle
-- [LoadModule](iouserserver/loadmodule.md)
-- [Exit](iouserserver/exit.md)
+- [LoadModule](./iouserserver/loadmodule.md)
+- [Exit](./iouserserver/exit.md)
 ### Instance Methods
-- [RegisterService](iouserserver/registerservice.md)
-- [Panic](iouserserver/panic.md)
+- [RegisterService](./iouserserver/registerservice.md)
+- [Panic](./iouserserver/panic.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOService](ioservice.md)
+- [IOService](./ioservice.md)
 
 ## See Also
 
-- [IOUserClient](iouserclient.md)
+### External drivers
+- [IOUserClient](./iouserclient.md)
   A connection to another service that the system manages.
-- [com.apple.developer.driverkit.userclient-access](../bundleresources/entitlements/com.apple.developer.driverkit.userclient-access.md)
+- [com.apple.developer.driverkit.userclient-access](../BundleResources/entitlements/com.apple.developer.driverkit.userclient-access.md)
   An array of strings that represent macOS driver extensions that may communicate with other DriverKit services.
-- [Communicating between a DriverKit extension and a client app](communicating-between-a-driverkit-extension-and-a-client-app.md)
+- [Communicating between a DriverKit extension and a client app](./communicating-between-a-driverkit-extension-and-a-client-app.md)
   Send and receive different kinds of data securely by validating inputs and asynchronously by storing and using a callback.
 
 

@@ -1,7 +1,8 @@
 # Picker
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control for selecting from a set of mutually exclusive values.
 
@@ -23,16 +24,16 @@ struct Picker<Label, SelectionValue, Content> where Label : View, SelectionValue
 
 ## Mentions
 
-- [Picking container views for your content](picking-container-views-for-your-content.md)
-- [Performing a search operation](performing-a-search-operation.md)
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
-- [Scoping a search operation](scoping-a-search-operation.md)
+- [Picking container views for your content](./picking-container-views-for-your-content.md)
+- [Performing a search operation](./performing-a-search-operation.md)
+- [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
+- [Scoping a search operation](./scoping-a-search-operation.md)
 
 #### Overview
 
 You create a picker by providing a selection binding, a label, and the content for the picker to display. Set the `selection` parameter to a bound property that provides the value to display as the current selection. Set the label to a view that visually describes the purpose of selecting content in the picker, and then provide the content for the picker to display.
 
-For example, consider an enumeration of ice cream flavors and a [`State`](state.md) variable to hold the selected flavor:
+For example, consider an enumeration of ice cream flavors and a [`State`](./state.md) variable to hold the selected flavor:
 
 ```swift
 enum Flavor: String, CaseIterable, Identifiable {
@@ -55,9 +56,9 @@ List {
 }
 ```
 
-If you provide a string label for the picker, as the example above does, the picker uses it to initialize a [`Text`](text.md) view as a label. Alternatively, you can use the [`init(selection:content:label:)`](picker/init(selection:content:label:).md) initializer to compose the label from other views. The exact appearance of the picker depends on the context. If you use a picker in a [`List`](list.md) in iOS, it appears in a row with the label and selected value, and a chevron to indicate that you can tap the row to select a new value:
+If you provide a string label for the picker, as the example above does, the picker uses it to initialize a [`Text`](./text.md) view as a label. Alternatively, you can use the [`init(selection:content:label:)`](./picker/init%28selection,content,label%29.md) initializer to compose the label from other views. The exact appearance of the picker depends on the context. If you use a picker in a [`List`](./list.md) in iOS, it appears in a row with the label and selected value, and a chevron to indicate that you can tap the row to select a new value:
 
-![A screenshot of a list row that has the string Flavor on the left side,](/images/com.apple.SwiftUI/Picker-1-iOS@2x.png)
+![A screenshot of a list row that has the string Flavor on the left side,](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Picker-1-iOS@2x.png)
 
 For cases where adding a subtitle to the label is desired, use a view builder that creates multiple `Text` views where the first text represents the title and the second text represents the subtitle:
 
@@ -74,9 +75,9 @@ List {
 }
 ```
 
-##### Iterating Over a Pickers Options
+##### Iterating over a picker’s options
 
-To provide selection values for the `Picker` without explicitly listing each option, you can create the picker with a [`ForEach`](foreach.md):
+To provide selection values for the `Picker` without explicitly listing each option, you can create the picker with a [`ForEach`](./foreach.md):
 
 ```swift
 Picker("Flavor", selection: $selectedFlavor) {
@@ -86,7 +87,7 @@ Picker("Flavor", selection: $selectedFlavor) {
 }
 ```
 
-[`ForEach`](foreach.md) automatically assigns a tag to the selection views using each option’s `id`. This is possible because `Flavor` conforms to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol.
+[`ForEach`](./foreach.md) automatically assigns a tag to the selection views using each option’s `id`. This is possible because `Flavor` conforms to the [`Identifiable`](../Swift/identifiable.md) protocol.
 
 The example above relies on the fact that `Flavor` defines the type of its `id` parameter to exactly match the selection type. If that’s not the case, you need to override the tag. For example, consider a `Topping` type and a suggested topping for each flavor:
 
@@ -130,13 +131,13 @@ List {
 
 When the user selects chocolate, the picker sets `suggestedTopping` to the value in the associated tag:
 
-![A screenshot of two list rows. The first has the string Flavor on the left](/images/com.apple.SwiftUI/Picker-2-iOS@2x.png)
+![A screenshot of two list rows. The first has the string Flavor on the left](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Picker-2-iOS@2x.png)
 
-Another example of when the views in a picker’s [`ForEach`](foreach.md) need an explicit tag modifier is when you select over the cases of an enumeration that conforms to the [`Identifiable`](https://developer.apple.com/documentation/swift/identifiable) protocol by using anything besides `Self` as the `id` parameter type. For example, a string enumeration might use the case’s `rawValue` string as the `id`. That identifier type doesn’t match the selection type, which is the type of the enumeration itself.
+Another example of when the views in a picker’s [`ForEach`](./foreach.md) need an explicit tag modifier is when you select over the cases of an enumeration that conforms to the [`Identifiable`](../Swift/identifiable.md) protocol by using anything besides `Self` as the `id` parameter type. For example, a string enumeration might use the case’s `rawValue` string as the `id`. That identifier type doesn’t match the selection type, which is the type of the enumeration itself.
 
-##### Styling Pickers
+##### Styling pickers
 
-You can customize the appearance and interaction of pickers using styles that conform to the [`PickerStyle`](pickerstyle.md) protocol, like [`segmented`](pickerstyle/segmented.md) or [`menu`](pickerstyle/menu.md). To set a specific style for all picker instances within a view, use the [`pickerStyle(_:)`](view/pickerstyle(_:).md) modifier. The following example applies the [`segmented`](pickerstyle/segmented.md) style to two pickers that independently select a flavor and a topping:
+You can customize the appearance and interaction of pickers using styles that conform to the [`PickerStyle`](./pickerstyle.md) protocol, like [`segmented`](./pickerstyle/segmented.md) or [`menu`](./pickerstyle/menu.md). To set a specific style for all picker instances within a view, use the [`pickerStyle(_:)`](./view/pickerstyle%28_%29.md) modifier. The following example applies the [`segmented`](./pickerstyle/segmented.md) style to two pickers that independently select a flavor and a topping:
 
 ```swift
 VStack {
@@ -154,67 +155,68 @@ VStack {
 .pickerStyle(.segmented)
 ```
 
-![A screenshot of two segmented controls. The first has segments labeled](/images/com.apple.SwiftUI/Picker-3-iOS@2x.png)
+![A screenshot of two segmented controls. The first has segments labeled](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Picker-3-iOS@2x.png)
 
 ## Topics
 
 ### Creating a picker
-- [init(_:selection:content:)](picker/init(_:selection:content:).md)
+- [init(_:selection:content:)](./picker/init%28_,selection,content%29.md)
   Creates a picker that generates its label from a localized string resource.
-- [init(selection: Binding<SelectionValue>, content: () -> Content, label: () -> Label)](picker/init(selection:content:label:).md)
+- [init(selection: Binding<SelectionValue>, content: () -> Content, label: () -> Label)](./picker/init%28selection,content,label%29.md)
   Creates a picker that displays a custom label.
-- [init(selection: Binding<SelectionValue>, label: Label, content: () -> Content)](picker/init(selection:label:content:).md)
+- [init(selection: Binding<SelectionValue>, label: Label, content: () -> Content)](./picker/init%28selection,label,content%29.md)
   Creates a picker that displays a custom label.
 ### Creating a picker for a collection
-- [init(_:sources:selection:content:)](picker/init(_:sources:selection:content:).md)
+- [init(_:sources:selection:content:)](./picker/init%28_,sources,selection,content%29.md)
   Creates a picker that generates its label from a localized string resource.
-- [init<C>(sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, content: () -> Content, label: () -> Label)](picker/init(sources:selection:content:label:).md)
+- [init<C>(sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, content: () -> Content, label: () -> Label)](./picker/init%28sources,selection,content,label%29.md)
   Creates a picker that displays a custom label.
 ### Creating a picker with an image label
-- [init(_:image:selection:content:)](picker/init(_:image:selection:content:).md)
+- [init(_:image:selection:content:)](./picker/init%28_,image,selection,content%29.md)
   Creates a picker that generates its label from a localized string resource and image resource
-- [init(_:image:sources:selection:content:)](picker/init(_:image:sources:selection:content:).md)
+- [init(_:image:sources:selection:content:)](./picker/init%28_,image,sources,selection,content%29.md)
   Creates a picker that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:selection:content:)](picker/init(_:systemimage:selection:content:).md)
+- [init(_:systemImage:selection:content:)](./picker/init%28_,systemimage,selection,content%29.md)
   Creates a picker that generates its label from a localized string key and system image.
-- [init(_:systemImage:sources:selection:content:)](picker/init(_:systemimage:sources:selection:content:).md)
+- [init(_:systemImage:sources:selection:content:)](./picker/init%28_,systemimage,sources,selection,content%29.md)
   Creates a picker bound to a collection of bindings that generates its label from a string.
 ### Initializers
-- [init(_:image:selection:content:currentValueLabel:)](picker/init(_:image:selection:content:currentvaluelabel:).md)
+- [init(_:image:selection:content:currentValueLabel:)](./picker/init%28_,image,selection,content,currentvaluelabel%29.md)
   Creates a picker that accepts a custom current value label and generates its label from a localized string key and image resource.
-- [init(_:image:sources:selection:content:currentValueLabel:)](picker/init(_:image:sources:selection:content:currentvaluelabel:).md)
+- [init(_:image:sources:selection:content:currentValueLabel:)](./picker/init%28_,image,sources,selection,content,currentvaluelabel%29.md)
   Creates a picker that accepts a custom current value label generates its label from a localized string key and image resource.
-- [init(_:selection:content:currentValueLabel:)](picker/init(_:selection:content:currentvaluelabel:).md)
+- [init(_:selection:content:currentValueLabel:)](./picker/init%28_,selection,content,currentvaluelabel%29.md)
   Creates a picker that generates its label from a localized string resource and accepts a custom current value label.
-- [init(_:sources:selection:content:currentValueLabel:)](picker/init(_:sources:selection:content:currentvaluelabel:).md)
+- [init(_:sources:selection:content:currentValueLabel:)](./picker/init%28_,sources,selection,content,currentvaluelabel%29.md)
   Creates a picker that generates its label from a localized string resource and accepts a custom current value label.
-- [init(_:systemImage:selection:content:currentValueLabel:)](picker/init(_:systemimage:selection:content:currentvaluelabel:).md)
+- [init(_:systemImage:selection:content:currentValueLabel:)](./picker/init%28_,systemimage,selection,content,currentvaluelabel%29.md)
   Creates a picker that accepts a custom current value label and generates its label from a localized string key and system image.
-- [init(_:systemImage:sources:selection:content:currentValueLabel:)](picker/init(_:systemimage:sources:selection:content:currentvaluelabel:).md)
+- [init(_:systemImage:sources:selection:content:currentValueLabel:)](./picker/init%28_,systemimage,sources,selection,content,currentvaluelabel%29.md)
   Creates a picker bound to a collection of bindings that accepts a custom current value label and generates its label from a string.
-- [init(selection: Binding<SelectionValue>, content: () -> Content, label: () -> Label, currentValueLabel: () -> some View)](picker/init(selection:content:label:currentvaluelabel:).md)
+- [init(selection: Binding<SelectionValue>, content: () -> Content, label: () -> Label, currentValueLabel: () -> some View)](./picker/init%28selection,content,label,currentvaluelabel%29.md)
   Creates a picker that displays a custom label and a custom value label where applicable.
-- [init<C>(sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, content: () -> Content, label: () -> Label, currentValueLabel: () -> some View)](picker/init(sources:selection:content:label:currentvaluelabel:).md)
+- [init<C>(sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, content: () -> Content, label: () -> Label, currentValueLabel: () -> some View)](./picker/init%28sources,selection,content,label,currentvaluelabel%29.md)
   Creates a picker that displays a custom label and current value label where applicable.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [func pickerStyle<S>(S) -> some View](view/pickerstyle(_:).md)
+### Choosing from a set of options
+- [func pickerStyle<S>(S) -> some View](./view/pickerstyle%28_%29.md)
   Sets the style for pickers within this view.
-- [func horizontalRadioGroupLayout() -> some View](view/horizontalradiogrouplayout.md)
+- [func horizontalRadioGroupLayout() -> some View](./view/horizontalradiogrouplayout%28%29.md)
   Sets the style for radio group style pickers within this view to be horizontally positioned with the radio buttons inside the layout.
-- [func defaultWheelPickerItemHeight(CGFloat) -> some View](view/defaultwheelpickeritemheight(_:).md)
+- [func defaultWheelPickerItemHeight(CGFloat) -> some View](./view/defaultwheelpickeritemheight%28_%29.md)
   Sets the default wheel-style picker item height.
-- [var defaultWheelPickerItemHeight: CGFloat](environmentvalues/defaultwheelpickeritemheight.md)
+- [var defaultWheelPickerItemHeight: CGFloat](./environmentvalues/defaultwheelpickeritemheight.md)
   The default height of an item in a wheel-style picker, such as a date picker.
-- [func paletteSelectionEffect(PaletteSelectionEffect) -> some View](view/paletteselectioneffect(_:).md)
+- [func paletteSelectionEffect(PaletteSelectionEffect) -> some View](./view/paletteselectioneffect%28_%29.md)
   Specifies the selection effect to apply to a palette item.
-- [struct PaletteSelectionEffect](paletteselectioneffect.md)
+- [struct PaletteSelectionEffect](./paletteselectioneffect.md)
   The selection effect to apply to a palette item.
 
 

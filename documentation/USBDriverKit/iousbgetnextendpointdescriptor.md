@@ -1,7 +1,8 @@
 # IOUSBGetNextEndpointDescriptor
 
 **Framework**: USBDriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Finds the next endpoint descriptor associated with an interface descriptor.
 
@@ -10,7 +11,7 @@ Finds the next endpoint descriptor associated with an interface descriptor.
 
 ## Declaration
 
-```swift
+```c
 const IOUSBEndpointDescriptor *IOUSBGetNextEndpointDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBInterfaceDescriptor *interfaceDescriptor, const IOUSBDescriptorHeader *currentDescriptor);
 ```
 
@@ -30,29 +31,30 @@ This method uses `getNextAssociatedDescriptorWithType` to fetch the next endpoin
 
 ## See Also
 
-- [IOUSBGetEndpointAddress](iousbgetendpointaddress.md)
+### Endpoint Descriptors
+- [IOUSBGetEndpointAddress](./iousbgetendpointaddress.md)
   Extracts the direction and number of an endpoint from an endpoint descriptor.
-- [IOUSBGetEndpointBurstSize](iousbgetendpointburstsize.md)
+- [IOUSBGetEndpointBurstSize](./iousbgetendpointburstsize.md)
   Extracts the burst size from endpoint descriptors.
-- [IOUSBGetEndpointDirection](iousbgetendpointdirection.md)
+- [IOUSBGetEndpointDirection](./iousbgetendpointdirection.md)
   Extracts the direction of an endpoint from an endpoint descriptor.
-- [IOUSBGetEndpointIntervalEncodedMicroframes](iousbgetendpointintervalencodedmicroframes.md)
+- [IOUSBGetEndpointIntervalEncodedMicroframes](./iousbgetendpointintervalencodedmicroframes.md)
   Extracts the interval of an endpoint descriptor.
-- [IOUSBGetEndpointIntervalFrames](iousbgetendpointintervalframes.md)
+- [IOUSBGetEndpointIntervalFrames](./iousbgetendpointintervalframes.md)
   Extracts the interval of an endpoint descriptor.
-- [IOUSBGetEndpointIntervalMicroframes](iousbgetendpointintervalmicroframes.md)
+- [IOUSBGetEndpointIntervalMicroframes](./iousbgetendpointintervalmicroframes.md)
   Extracts the interval of an endpoint descriptor.
-- [IOUSBGetEndpointMaxPacketSize](iousbgetendpointmaxpacketsize.md)
+- [IOUSBGetEndpointMaxPacketSize](./iousbgetendpointmaxpacketsize.md)
   Extracts the maximum packet size from an endpoint descriptor.
-- [IOUSBGetEndpointMaxStreams](iousbgetendpointmaxstreams.md)
+- [IOUSBGetEndpointMaxStreams](./iousbgetendpointmaxstreams.md)
   Extracts the number of streams an endpoint supports.
-- [IOUSBGetEndpointMaxStreamsEncoded](iousbgetendpointmaxstreamsencoded.md)
+- [IOUSBGetEndpointMaxStreamsEncoded](./iousbgetendpointmaxstreamsencoded.md)
   Extracts the number of streams an endpoint supports.
-- [IOUSBGetEndpointMult](iousbgetendpointmult.md)
+- [IOUSBGetEndpointMult](./iousbgetendpointmult.md)
   Extracts the mult count from endpoint descriptors.
-- [IOUSBGetEndpointNumber](iousbgetendpointnumber.md)
+- [IOUSBGetEndpointNumber](./iousbgetendpointnumber.md)
   Extracts the number of an endpoint from an endpoint descriptor.
-- [IOUSBGetEndpointType](iousbgetendpointtype.md)
+- [IOUSBGetEndpointType](./iousbgetendpointtype.md)
   Extracts the type of an endpoint from an endpoint descriptor.
 
 

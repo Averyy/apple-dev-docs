@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an integer from its big-endian representation, changing the byte order if necessary.

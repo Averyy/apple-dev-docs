@@ -1,7 +1,8 @@
 # EmphasizeAction.EmphasisMotionType.float
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Raises up and levitates for a moment before returning to its original position.
 

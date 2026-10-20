@@ -1,7 +1,8 @@
 # -(_:_:)
 
 **Framework**: TabularData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Generates a column by subtracting each element in an optional column from a value.
 
@@ -31,23 +32,24 @@ A new column.
 
 ## See Also
 
-- [static func + (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](optionalcolumnprotocol/+(_:_:)-501gg.md)
+### Generating an Optional Column by Combining a Value
+- [static func + (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](./plus%28_,_%29-501gg.md)
   Generates a column by adding a value to each element in an optional column.
-- [static func + (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](optionalcolumnprotocol/+(_:_:)-6ko8x.md)
+- [static func + (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](./plus%28_,_%29-6ko8x.md)
   Generates a column by adding each element in an optional column to a value.
-- [static func - (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](optionalcolumnprotocol/-(_:_:)-9mejf.md)
+- [static func - (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](./minus%28_,_%29-9mejf.md)
   Generates a column by subtracting a value from each element in an optional column type.
-- [static func * (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](optionalcolumnprotocol/*(_:_:)-orkq.md)
+- [static func * (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](./star%28_,_%29-orkq.md)
   Generates a column by multiplying each element in an optional column by a value.
-- [static func * (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](optionalcolumnprotocol/*(_:_:)-5vorv.md)
+- [static func * (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](./star%28_,_%29-5vorv.md)
   Generates a column by multiplying a value by each element in an optional column type.
-- [static func / (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](optionalcolumnprotocol/_(_:_:)-7tbmq.md)
+- [static func / (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](./op%28_,_%29-7tbmq.md)
   Generates an integer column by dividing each element in an optional column by a value.
-- [static func / (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](optionalcolumnprotocol/_(_:_:)-56h1d.md)
+- [static func / (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](./op%28_,_%29-56h1d.md)
   Generates an integer column by dividing a value by each element in an optional column type.
-- [static func / (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](optionalcolumnprotocol/_(_:_:)-5qhxr.md)
+- [static func / (Self, Self.WrappedElement) -> Column<Self.WrappedElement>](./op%28_,_%29-5qhxr.md)
   Generates a floating-point column by dividing each element in an optional column by a value.
-- [static func / (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](optionalcolumnprotocol/_(_:_:)-2xfqa.md)
+- [static func / (Self.WrappedElement, Self) -> Column<Self.WrappedElement>](./op%28_,_%29-2xfqa.md)
   Generates a floating-point column by dividing a value by each element in an optional column type.
 
 

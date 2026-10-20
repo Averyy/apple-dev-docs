@@ -1,29 +1,30 @@
 # Classifying Sounds in an Audio File
 
-**Framework**: Sound Analysis
+**Framework**: Sound Analysis  
+**Role**: Article
 
 Identify individual sounds in a file, such as a recording, with an audio file analyzer.
 
 #### Overview
 
-Recognize sounds, such as laughter and applause, when they occur in a recording by processing audio files with an [`SNAudioFileAnalyzer`](snaudiofileanalyzer.md). For example, a sound recording app can use an audio file analyzer to assign searchable metadata tags to each sound file in its library. The same app could also use the analyzer to add timestamps to each recording so that the user can jump to a moment with a specific sound.
+Recognize sounds, such as laughter and applause, when they occur in a recording by processing audio files with an [`SNAudioFileAnalyzer`](./snaudiofileanalyzer.md). For example, a sound recording app can use an audio file analyzer to assign searchable metadata tags to each sound file in its library. The same app could also use the analyzer to add timestamps to each recording so that the user can jump to a moment with a specific sound.
 
 ##### Create a Sound Classification Request
 
-Create an [`SNClassifySoundRequest`](snclassifysoundrequest.md) by passing a version identifier to the [`init(classifierIdentifier:)`](snclassifysoundrequest/init(classifieridentifier:).md) initializer.
+Create an [`SNClassifySoundRequest`](./snclassifysoundrequest.md) by passing a version identifier to the [`init(classifierIdentifier:)`](./snclassifysoundrequest/init%28classifieridentifier%29.md) initializer.
 
 ```swift
 let version1 = SNClassifierIdentifier.version1
 let request = try SNClassifySoundRequest(classifierIdentifier: version1)
 ```
 
-Alternatively, you can create a sound request that uses a custom Core ML model. For example, you can train your own sound classifier with Create ML’s [`MLSoundClassifier`](https://developer.apple.com/documentation/createml/mlsoundclassifier).
+Alternatively, you can create a sound request that uses a custom Core ML model. For example, you can train your own sound classifier with Create ML’s [`MLSoundClassifier`](../CreateML/mlsoundclassifier.md).
 
-Create an [`SNClassifySoundRequest`](snclassifysoundrequest.md) with a custom sound classifier model:
+Create an [`SNClassifySoundRequest`](./snclassifysoundrequest.md) with a custom sound classifier model:
 
-1. Add a sound classifier’s [`Core ML`](https://developer.apple.com/documentation/coreml) model file to your project (see [`Integrating a Core ML Model into Your App`](https://developer.apple.com/documentation/coreml/integrating-a-core-ml-model-into-your-app)).
+1. Add a sound classifier’s [Core ML](../CoreML/CoreML.md) model file to your project (see [Integrating a Core ML Model into Your App](../CoreML/integrating-a-core-ml-model-into-your-app.md)).
 2. Create an instance of the model’s wrapper class. Xcode automatically generates a class with the same name (minus the `mlmodel` extension).
-3. Pass the instance’s `model` property to the [`init(mlModel:)`](snclassifysoundrequest/init(mlmodel:)-6rmee.md) initializer.
+3. Pass the instance’s `model` property to the [`init(mlModel:)`](./snclassifysoundrequest/init%28mlmodel%29-6rmee.md) initializer.
 
 ```swift
 // Use a default model configuration.
@@ -38,7 +39,7 @@ let classifySoundRequest = try SNClassifySoundRequest(mlModel: soundClassifier.m
 
 ##### Implement a Results Observer
 
-Implement a type that receives results from an audio analyzer by adopting the [`SNResultsObserving`](snresultsobserving.md) protocol. The protocol defines the methods an analyzer calls as it generates results or errors, or when it completes a task.
+Implement a type that receives results from an audio analyzer by adopting the [`SNResultsObserving`](./snresultsobserving.md) protocol. The protocol defines the methods an analyzer calls as it generates results or errors, or when it completes a task.
 
 ```swift
 let resultsObserver = ResultsObserver()
@@ -87,7 +88,7 @@ The observer in this example prints the prediction’s result — a timestamp, 
 
 ##### Create an Audio File Analyzer
 
-Analyze an audio file by creating an [`SNAudioFileAnalyzer`](snaudiofileanalyzer.md) and passing a URL to an audio file to the [`init(url:)`](snaudiofileanalyzer/init(url:)-336no.md) initializer.
+Analyze an audio file by creating an [`SNAudioFileAnalyzer`](./snaudiofileanalyzer.md) and passing a URL to an audio file to the [`init(url:)`](./snaudiofileanalyzer/init%28url%29-336no.md) initializer.
 
 ```swift
 /// Creates an analyzer for an audio file.
@@ -97,9 +98,9 @@ func createAnalyzer(audioFileURL: URL) -> SNAudioFileAnalyzer? {
 }
 ```
 
-> 💡 **Tip**:  Audio file analyzers work with any compressed or uncompressed audio file format that [`Core Audio`](https://developer.apple.com/documentation/coreaudio) supports.
+> 💡 **Tip**:  Audio file analyzers work with any compressed or uncompressed audio file format that [Core Audio](../CoreAudio/CoreAudio.md) supports.
 
-Add your sound classification request and results observer to the analyzer by calling the [`add(_:withObserver:)`](snaudiofileanalyzer/add(_:withobserver:).md) method.
+Add your sound classification request and results observer to the analyzer by calling the [`add(_:withObserver:)`](./snaudiofileanalyzer/add%28_,withobserver%29.md) method.
 
 ```swift
 // Create a new observer to receive notifications for analysis results.
@@ -109,7 +110,7 @@ resultsObserver = ResultsObserver()
 try audioFileAnalyzer.add(classifySoundRequest, withObserver: resultsObserver)
 ```
 
-Start analyzing the audio file by calling the [`analyze()`](snaudiofileanalyzer/analyze().md) or [`analyze(completionHandler:)`](snaudiofileanalyzer/analyze(completionhandler:).md) methods.
+Start analyzing the audio file by calling the [`analyze()`](./snaudiofileanalyzer/analyze%28%29.md) or [`analyze(completionHandler:)`](./snaudiofileanalyzer/analyze%28completionhandler%29.md) methods.
 
 ```swift
 // Analyze the audio data.
@@ -118,9 +119,9 @@ audioFileAnalyzer.analyze()
 
 ##### Receive the Results
 
-The audio analyzer sends each result to your [`SNResultsObserving`](snresultsobserving.md) instance as it processes the audio data.
+The audio analyzer sends each result to your [`SNResultsObserving`](./snresultsobserving.md) instance as it processes the audio data.
 
-```None
+```
 Analysis result for audio at time: 1.45
 Acoustic Guitar: 92.39% confidence.
 
@@ -142,11 +143,12 @@ Snare Drum: 96.87% confidence.
 
 ## See Also
 
-- [class SNAudioFileAnalyzer](snaudiofileanalyzer.md)
+### Audio analyzers
+- [class SNAudioFileAnalyzer](./snaudiofileanalyzer.md)
   An analyzer that runs sound classification requests on an audio file.
-- [Classifying Sounds in an Audio Stream](classifying-sounds-in-an-audio-stream.md)
+- [Classifying Sounds in an Audio Stream](./classifying-sounds-in-an-audio-stream.md)
   Identify individual sounds in an audio data stream, such as from a microphone, with an audio stream analyzer.
-- [class SNAudioStreamAnalyzer](snaudiostreamanalyzer.md)
+- [class SNAudioStreamAnalyzer](./snaudiostreamanalyzer.md)
   An object you create to analyze a stream of audio data and provide the results to your app.
 
 

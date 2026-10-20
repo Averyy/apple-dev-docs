@@ -1,18 +1,19 @@
 # fresnelExponent
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The reflectivity exponent SceneKit uses when rendering the particle’s image as a cube map. Animatable.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,27 +21,32 @@ The reflectivity exponent SceneKit uses when rendering the particle’s image as
 var fresnelExponent: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat fresnelExponent;
+```
+
 #### Discussion
 
-This property only takes effect when the [`particleImage`](scnparticlesystem/particleimage.md) property is an array of six images defining a cube map. In this case, SceneKit renders each particle as a reflective sphere.
+This property only takes effect when the [`particleImage`](./particleimage.md) property is an array of six images defining a cube map. In this case, SceneKit renders each particle as a reflective sphere.
 
 The *fresnel exponent* modulates the reflectivity of a surface from different view angles. At the default value of `1.0`, reflections have the same intensity across the entire surface of the particle. At higher values, the edges of the particle are more reflective than the center.
 
-You can animate changes to this property’s value. See [`Animating SceneKit Content`](animating-scenekit-content.md).
+You can animate changes to this property’s value. See [Animating SceneKit Content](../animating-scenekit-content.md).
 
 ## See Also
 
-- [var particleSize: CGFloat](scnparticlesystem/particlesize.md)
+### Specifying Particle Appearance
+- [var particleSize: CGFloat](./particlesize.md)
   The rendered size, in units of the scene’s world coordinate space, of the particle image. Animatable.
-- [var particleSizeVariation: CGFloat](scnparticlesystem/particlesizevariation.md)
+- [var particleSizeVariation: CGFloat](./particlesizevariation.md)
   The range of randomized particle sizes. Animatable.
-- [var particleColor: UIColor](scnparticlesystem/particlecolor.md)
+- [var particleColor: UIColor](./particlecolor.md)
   The color of newly spawned particles. Animatable.
-- [var particleColorVariation: SCNVector4](scnparticlesystem/particlecolorvariation.md)
+- [var particleColorVariation: SCNVector4](./particlecolorvariation.md)
   The ranges of randomized particle color components. Animatable.
-- [var particleImage: Any?](scnparticlesystem/particleimage.md)
+- [var particleImage: Any?](./particleimage.md)
   The texture image SceneKit uses to render each particle.
-- [var stretchFactor: CGFloat](scnparticlesystem/stretchfactor.md)
+- [var stretchFactor: CGFloat](./stretchfactor.md)
   A multiplier for stretching particle images along their direction of motion. Animatable.
 
 

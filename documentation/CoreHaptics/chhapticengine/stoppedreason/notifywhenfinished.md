@@ -1,7 +1,8 @@
 # CHHapticEngine.StoppedReason.notifyWhenFinished
 
 **Framework**: Core Haptics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 You’ve asked the system to notify you when it shuts down the engine.
 
@@ -9,7 +10,7 @@ You’ve asked the system to notify you when it shuts down the engine.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -19,23 +20,28 @@ You’ve asked the system to notify you when it shuts down the engine.
 case notifyWhenFinished
 ```
 
+```c
+CHHapticEngineStoppedReasonNotifyWhenFinished
+```
+
 #### Discussion
 
 Restart the engine before starting another pattern player.
 
 ## See Also
 
-- [CHHapticEngine.StoppedReason.audioSessionInterrupt](chhapticengine/stoppedreason/audiosessioninterrupt.md)
+### Stopped Reasons
+- [CHHapticEngine.StoppedReason.audioSessionInterrupt](./audiosessioninterrupt.md)
   The system interrupted the audio session.
-- [CHHapticEngine.StoppedReason.applicationSuspended](chhapticengine/stoppedreason/applicationsuspended.md)
+- [CHHapticEngine.StoppedReason.applicationSuspended](./applicationsuspended.md)
   The system suspended your app.
-- [CHHapticEngine.StoppedReason.engineDestroyed](chhapticengine/stoppedreason/enginedestroyed.md)
+- [CHHapticEngine.StoppedReason.engineDestroyed](./enginedestroyed.md)
   The system destroyed the engine.
-- [CHHapticEngine.StoppedReason.gameControllerDisconnect](chhapticengine/stoppedreason/gamecontrollerdisconnect.md)
+- [CHHapticEngine.StoppedReason.gameControllerDisconnect](./gamecontrollerdisconnect.md)
   The engine stopped because the associated game controller disconnected from the device.
-- [CHHapticEngine.StoppedReason.idleTimeout](chhapticengine/stoppedreason/idletimeout.md)
+- [CHHapticEngine.StoppedReason.idleTimeout](./idletimeout.md)
   The engine shut down because you’ve enabled automatic shutdown, and the engine reached its idle timeout.
-- [CHHapticEngine.StoppedReason.systemError](chhapticengine/stoppedreason/systemerror.md)
+- [CHHapticEngine.StoppedReason.systemError](./systemerror.md)
   A system error stopped the engine.
 
 

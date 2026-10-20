@@ -1,7 +1,8 @@
 # init(transform:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scaled pose with with a position, rotation, and scale that are defined by an affine transform.
 
@@ -26,7 +27,7 @@ A pose with a position, rotation, and scale that are defined by an affine transf
 
 #### Discussion
 
-> **Note**: This function can’t extract rotation from a non-scale-rotate-translate affine transform. In that case, the function returns `nil`. If the specified  [`AffineTransform3DFloat`](affinetransform3dfloat.md) doesn’t have uniform scale, the function returns `nil`.
+> **Note**: This function can’t extract rotation from a non-scale-rotate-translate affine transform. In that case, the function returns `nil`. If the specified  [`AffineTransform3DFloat`](../affinetransform3dfloat.md) doesn’t have uniform scale, the function returns `nil`.
 
 ## Parameters
 

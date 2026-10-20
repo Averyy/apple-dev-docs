@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the name type with the specified string.
 

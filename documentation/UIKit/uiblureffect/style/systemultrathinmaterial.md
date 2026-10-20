@@ -1,7 +1,8 @@
 # UIBlurEffect.Style.systemUltraThinMaterial
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An adaptable blur effect that creates the appearance of an ultra-thin material.
 
@@ -17,15 +18,20 @@ An adaptable blur effect that creates the appearance of an ultra-thin material.
 case systemUltraThinMaterial
 ```
 
+```c
+UIBlurEffectStyleSystemUltraThinMaterial
+```
+
 ## See Also
 
-- [UIBlurEffect.Style.systemThinMaterial](uiblureffect/style/systemthinmaterial.md)
+### Adaptable styles
+- [UIBlurEffect.Style.systemThinMaterial](./systemthinmaterial.md)
   An adaptable blur effect that creates the appearance of a thin material.
-- [UIBlurEffect.Style.systemMaterial](uiblureffect/style/systemmaterial.md)
+- [UIBlurEffect.Style.systemMaterial](./systemmaterial.md)
   An adaptable blur effect that creates the appearance of a material with normal thickness.
-- [UIBlurEffect.Style.systemThickMaterial](uiblureffect/style/systemthickmaterial.md)
+- [UIBlurEffect.Style.systemThickMaterial](./systemthickmaterial.md)
   An adaptable blur effect that creates the appearance of a material that’s thicker than normal.
-- [UIBlurEffect.Style.systemChromeMaterial](uiblureffect/style/systemchromematerial.md)
+- [UIBlurEffect.Style.systemChromeMaterial](./systemchromematerial.md)
   An adaptable blur effect that creates the appearance of the system chrome.
 
 

@@ -1,7 +1,8 @@
 # behavior(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new version of `self` with the given `behavior`.
 

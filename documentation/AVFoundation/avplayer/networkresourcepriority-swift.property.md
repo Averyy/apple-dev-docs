@@ -1,7 +1,8 @@
 # networkResourcePriority
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates the priority of this player for network bandwidth resource distribution.
 
@@ -20,13 +21,18 @@ Indicates the priority of this player for network bandwidth resource distributio
 var networkResourcePriority: AVPlayer.NetworkResourcePriority { get set }
 ```
 
+```objc
+@property (nonatomic) AVPlayerNetworkResourcePriority networkResourcePriority;
+```
+
 #### Discussion
 
 This value determines the priority of the player during network resource allocation among all other players within the same application process. The default value for this is AVPlayerNetworkResourcePriorityDefault.
 
 ## See Also
 
-- [AVPlayer.NetworkResourcePriority](avplayer/networkresourcepriority-swift.enum.md)
+### Configuring the network resource priority
+- [AVPlayer.NetworkResourcePriority](./networkresourcepriority-swift.enum.md)
   This defines the network resource priority for a player.
 
 

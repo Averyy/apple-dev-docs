@@ -1,7 +1,8 @@
 # NEDNSSettings
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The DNS resolver settings of a network tunnel or a system-wide configuration.
 
@@ -19,53 +20,59 @@ The DNS resolver settings of a network tunnel or a system-wide configuration.
 class NEDNSSettings
 ```
 
+```objc
+@interface NEDNSSettings : NSObject
+```
+
 ## Topics
 
 ### Initializing DNS settings
-- [init(servers: [String])](nednssettings/init(servers:).md)
+- [init(servers: [String])](./nednssettings/init%28servers%29.md)
   Initialize the `NEDNSSetting` object.
 ### Accessing DNS properties
-- [var servers: [String]](nednssettings/servers.md)
+- [var servers: [String]](./nednssettings/servers.md)
   The DNS server IP addresses.
-- [var searchDomains: [String]?](nednssettings/searchdomains.md)
+- [var searchDomains: [String]?](./nednssettings/searchdomains.md)
   A list of domain strings used to fully qualify single-label host names.
-- [var domainName: String?](nednssettings/domainname.md)
+- [var domainName: String?](./nednssettings/domainname.md)
   The primary domain of the tunnel.
-- [var matchDomains: [String]?](nednssettings/matchdomains.md)
+- [var matchDomains: [String]?](./nednssettings/matchdomains.md)
   A list of domain strings used to determine which DNS queries will use the DNS resolver settings contained in this object.
-- [var matchDomainsNoSearch: Bool](nednssettings/matchdomainsnosearch.md)
+- [var matchDomainsNoSearch: Bool](./nednssettings/matchdomainsnosearch.md)
   A Boolean that specifies if the domains in the `matchDomains` list should not be appended to the resolver’s list of search domains.
-- [var dnsProtocol: NEDNSProtocol](nednssettings/dnsprotocol.md)
+- [var dnsProtocol: NEDNSProtocol](./nednssettings/dnsprotocol.md)
   The DNS protocol used by the server, such as HTTPS or TLS.
-- [enum NEDNSProtocol](nednsprotocol.md)
+- [enum NEDNSProtocol](./nednsprotocol.md)
 ### Instance Properties
-- [var allowFailover: Bool](nednssettings/allowfailover.md)
+- [var allowFailover: Bool](./nednssettings/allowfailover.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [NEDNSOverHTTPSSettings](nednsoverhttpssettings.md)
-- [NEDNSOverTLSSettings](nednsovertlssettings.md)
+- [NEDNSOverHTTPSSettings](./nednsoverhttpssettings.md)
+- [NEDNSOverTLSSettings](./nednsovertlssettings.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class NEDNSOverHTTPSSettings](nednsoverhttpssettings.md)
+### Related Documentation
+- [class NEDNSOverHTTPSSettings](./nednsoverhttpssettings.md)
   The DNS resolver settings for a DNS-over-HTTPS server.
-- [class NEDNSOverTLSSettings](nednsovertlssettings.md)
+- [class NEDNSOverTLSSettings](./nednsovertlssettings.md)
   The DNS resolver settings for a DNS-over-TLS server.
-- [class NEDNSProxyProvider](nednsproxyprovider.md)
+### Provider
+- [class NEDNSProxyProvider](./nednsproxyprovider.md)
   The principal class for a DNS proxy provider app extension.
 
 

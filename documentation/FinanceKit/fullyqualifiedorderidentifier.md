@@ -1,7 +1,8 @@
 # FullyQualifiedOrderIdentifier
 
 **Framework**: FinanceKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that specifies the characteristics of an order.
 
@@ -19,30 +20,31 @@ struct FullyQualifiedOrderIdentifier
 ## Topics
 
 ### Initializers
-- [init(orderTypeIdentifier: String, orderIdentifier: String)](fullyqualifiedorderidentifier/init(ordertypeidentifier:orderidentifier:).md)
+- [init(orderTypeIdentifier: String, orderIdentifier: String)](./fullyqualifiedorderidentifier/init%28ordertypeidentifier,orderidentifier%29.md)
   Initializes the object with values that uniquely identify an order within an order type.
 ### Instance Properties
-- [var orderIdentifier: String](fullyqualifiedorderidentifier/orderidentifier.md)
+- [var orderIdentifier: String](./fullyqualifiedorderidentifier/orderidentifier.md)
   A string the merchant uses to identify a specific customer order.
-- [var orderTypeIdentifier: String](fullyqualifiedorderidentifier/ordertypeidentifier.md)
+- [var orderTypeIdentifier: String](./fullyqualifiedorderidentifier/ordertypeidentifier.md)
   A string that describes the order type.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func saveOrder(signedArchive: Data) async throws -> FinanceStore.SaveOrderResult](financestore/saveorder(signedarchive:).md)
+### Orders
+- [func saveOrder(signedArchive: Data) async throws -> FinanceStore.SaveOrderResult](./financestore/saveorder%28signedarchive%29.md)
   Adds an order to the store or updates an existing order.
 
 

@@ -1,7 +1,8 @@
 # CHHapticDynamicParameter
 
 **Framework**: Core Haptics  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A value that you send to a haptic pattern player to alter a property value during playback.
 
@@ -19,52 +20,57 @@ A value that you send to a haptic pattern player to alter a property value durin
 class CHHapticDynamicParameter
 ```
 
+```objc
+@interface CHHapticDynamicParameter : NSObject
+```
+
 #### Overview
 
-Dynamic parameters change their associated event parameters at specific times. When you send a dynamic parameter to a haptic pattern player, the value associated with the parameter changes abruptly at the specified time, across all events in the pattern. To precipitate a gradual change, use a [`CHHapticParameterCurve`](chhapticparametercurve.md) object.
+Dynamic parameters change their associated event parameters at specific times. When you send a dynamic parameter to a haptic pattern player, the value associated with the parameter changes abruptly at the specified time, across all events in the pattern. To precipitate a gradual change, use a [`CHHapticParameterCurve`](./chhapticparametercurve.md) object.
 
 For haptic intensity and audio volume, the final property value is equal to the original event parameter value multiplied by the dynamic parameter value. For all other parameters, the final property value is equal to the dynamic parameter value added to the original event parameter value. In both cases, the resulting value is limited to the range with minimum and maximum values corresponding to the specified event parameter.
 
 ## Topics
 
 ### Creating a Dynamic Parameter
-- [init(parameterID: CHHapticDynamicParameter.ID, value: Float, relativeTime: TimeInterval)](chhapticdynamicparameter/init(parameterid:value:relativetime:).md)
+- [init(parameterID: CHHapticDynamicParameter.ID, value: Float, relativeTime: TimeInterval)](./chhapticdynamicparameter/init%28parameterid,value,relativetime%29.md)
   Creates a dynamic parameter from its ID, value, and start time.
-- [CHHapticDynamicParameter.ID](chhapticdynamicparameter/id.md)
+- [CHHapticDynamicParameter.ID](./chhapticdynamicparameter/id.md)
   The identifier that reveals the type of property associated with a dynamic parameter.
 ### Specifying a Dynamic Parameter’s Value
-- [var parameterID: CHHapticDynamicParameter.ID](chhapticdynamicparameter/parameterid.md)
+- [var parameterID: CHHapticDynamicParameter.ID](./chhapticdynamicparameter/parameterid.md)
   The dynamic parameter ID defining the type of parameter being modified.
-- [var relativeTime: TimeInterval](chhapticdynamicparameter/relativetime.md)
+- [var relativeTime: TimeInterval](./chhapticdynamicparameter/relativetime.md)
   The time at which this dynamic parameter is applied, relative to the start time of the pattern.
-- [var value: Float](chhapticdynamicparameter/value.md)
+- [var value: Float](./chhapticdynamicparameter/value.md)
   The value of the dynamic parameter.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Delivering Rich App Experiences with Haptics](delivering-rich-app-experiences-with-haptics.md)
+### Programmatic haptics
+- [Delivering Rich App Experiences with Haptics](./delivering-rich-app-experiences-with-haptics.md)
   Enhance your app’s experience by incorporating haptic and sound feedback into key interactive moments.
-- [Playing Collision-Based Haptic Patterns](playing-collision-based-haptic-patterns.md)
+- [Playing Collision-Based Haptic Patterns](./playing-collision-based-haptic-patterns.md)
   Play a custom haptic pattern whose strength depends on an object’s collision speed.
-- [Updating Continuous and Transient Haptic Parameters in Real Time](updating-continuous-and-transient-haptic-parameters-in-real-time.md)
+- [Updating Continuous and Transient Haptic Parameters in Real Time](./updating-continuous-and-transient-haptic-parameters-in-real-time.md)
   Generate continuous and transient haptic patterns in response to user touch.
-- [class CHHapticEvent](chhapticevent.md)
+- [class CHHapticEvent](./chhapticevent.md)
   An object that describes a single haptic or audio event.
-- [class CHHapticEventParameter](chhapticeventparameter.md)
+- [class CHHapticEventParameter](./chhapticeventparameter.md)
   A static parameter value that represents a single property of the haptic pattern.
-- [class CHHapticParameterCurve](chhapticparametercurve.md)
+- [class CHHapticParameterCurve](./chhapticparametercurve.md)
   A curve that you send to a haptic pattern player to alter a property value gradually during playback.
 
 

@@ -1,6 +1,7 @@
 # Allowing the simultaneous recognition of multiple gestures
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Learn how to use a delegate object to allow detection of more than one gesture at a time.
 
@@ -8,11 +9,11 @@ Learn how to use a delegate object to allow detection of more than one gesture a
 
 There are times when it makes sense to allow the simultaneous recognition of multiple gestures. The following image shows an app that allows people to drag, scale, and rotate three views onscreen. Each view maintains its own unique set of pan, pinch, and rotate gesture recognizers, and it’s possible for all three of a view’s gesture recognizers to perform their actions simultaneously.
 
-![A screenshot of an app that demonstrates how a person can use rotation, pinch and pan gestures simultaneously to control the appearance of a pink square.](/images/com.apple.uikit/media-2880130@2x.png)
+![A screenshot of an app that demonstrates how a person can use rotation, pinch and pan gestures simultaneously to control the appearance of a pink square.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2880130@2x.png)
 
-To allow a gesture recognizer to operate simultaneously with other gestures, assign a delegate object that implements the [`gestureRecognizer(_:shouldRecognizeSimultaneouslyWith:)`](uigesturerecognizerdelegate/gesturerecognizer(_:shouldrecognizesimultaneouslywith:).md) method to it. UIKit calls this method for pairs of gesture recognizers attached to the same view. Returning `true` allows both gestures to process events simultaneously.
+To allow a gesture recognizer to operate simultaneously with other gestures, assign a delegate object that implements the [`gestureRecognizer(_:shouldRecognizeSimultaneouslyWith:)`](./uigesturerecognizerdelegate/gesturerecognizer%28_,shouldrecognizesimultaneouslywith%29.md) method to it. UIKit calls this method for pairs of gesture recognizers attached to the same view. Returning `true` allows both gestures to process events simultaneously.
 
-The following code shows the [`gestureRecognizer(_:shouldRecognizeSimultaneouslyWith:)`](uigesturerecognizerdelegate/gesturerecognizer(_:shouldrecognizesimultaneouslywith:).md) method from the app shown in the previous image. This method returns `true` when the gesture recognizers are attached to the same view. If the gesture recognizers are attached to different views, or if one of the objects is a long press gesture recognizer, this method returns `false`.
+The following code shows the [`gestureRecognizer(_:shouldRecognizeSimultaneouslyWith:)`](./uigesturerecognizerdelegate/gesturerecognizer%28_,shouldrecognizesimultaneouslywith%29.md) method from the app shown in the previous image. This method returns `true` when the gesture recognizers are attached to the same view. If the gesture recognizers are attached to different views, or if one of the objects is a long press gesture recognizer, this method returns `false`.
 
 ```swift
 func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
@@ -43,9 +44,10 @@ func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
 
 ## See Also
 
-- [Preferring one gesture over another](preferring-one-gesture-over-another.md)
+### Simultaneous gestures
+- [Preferring one gesture over another](./preferring-one-gesture-over-another.md)
   Use a gesture recognizer delegate object to determine the order in which gestures are recognized in your views.
-- [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
+- [Attaching gesture recognizers to UIKit controls](./attaching-gesture-recognizers-to-uikit-controls.md)
   Learn how gesture recognizers interact with UIKit controls such as buttons, switches, and sliders.
 
 

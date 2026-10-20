@@ -1,7 +1,8 @@
 # anchored
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Search is limited to start (or end, if searching backwards) of the data object.
 
@@ -20,13 +21,18 @@ Search is limited to start (or end, if searching backwards) of the data object.
 static var anchored: NSData.SearchOptions { get }
 ```
 
+```c
+NSDataSearchAnchored
+```
+
 #### Discussion
 
-This option performs searching only on bytes at the beginning of the range (or the end when using [`backwards`](nsdata/searchoptions/backwards.md)). No match at the beginning or end means nothing is found, even if a matching sequence of bytes occurs elsewhere in the data object.
+This option performs searching only on bytes at the beginning of the range (or the end when using [`backwards`](./backwards.md)). No match at the beginning or end means nothing is found, even if a matching sequence of bytes occurs elsewhere in the data object.
 
 ## See Also
 
-- [static var backwards: NSData.SearchOptions](nsdata/searchoptions/backwards.md)
+### Constants
+- [static var backwards: NSData.SearchOptions](./backwards.md)
   Search from the end of the data object.
 
 

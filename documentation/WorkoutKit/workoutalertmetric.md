@@ -1,7 +1,8 @@
 # WorkoutAlertMetric
 
 **Framework**: WorkoutKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that specifies the type of metric used to measure performance.
 
@@ -21,25 +22,26 @@ enum WorkoutAlertMetric
 ## Topics
 
 ### Determining the metric’s type
-- [WorkoutAlertMetric.average](workoutalertmetric/average.md)
+- [WorkoutAlertMetric.average](./workoutalertmetric/average.md)
   The metric represents an average value.
-- [WorkoutAlertMetric.current](workoutalertmetric/current.md)
+- [WorkoutAlertMetric.current](./workoutalertmetric/current.md)
   The metric represents the current value.
 ### Accessing the metric’s value
-- [static var countPerMinute: UnitFrequency](workoutalertmetric/countperminute.md)
+- [static var countPerMinute: UnitFrequency](./workoutalertmetric/countperminute.md)
   The metric’s counts per minute.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var metric: WorkoutAlertMetric](workoutalert/metric.md)
+### Setting the alert metric
+- [var metric: WorkoutAlertMetric](./workoutalert/metric.md)
   The metric used to measure performance for the alert.
 
 

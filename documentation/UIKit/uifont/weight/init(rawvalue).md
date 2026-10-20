@@ -1,16 +1,17 @@
 # init(rawValue:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a font weight with the specified raw value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 4.0+
 
 ## Declaration
@@ -21,7 +22,8 @@ init(rawValue: CGFloat)
 
 ## See Also
 
-- [init(CGFloat)](uifont/weight/init(_:).md)
+### Initializers
+- [init(CGFloat)](./init%28_%29.md)
   Creates a font weight.
 
 

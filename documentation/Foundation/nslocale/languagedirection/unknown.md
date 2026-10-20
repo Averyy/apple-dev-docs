@@ -1,7 +1,8 @@
 # NSLocale.LanguageDirection.unknown
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The direction of the language is unknown.
 
@@ -20,15 +21,20 @@ The direction of the language is unknown.
 case unknown
 ```
 
+```c
+NSLocaleLanguageDirectionUnknown
+```
+
 ## See Also
 
-- [NSLocale.LanguageDirection.leftToRight](nslocale/languagedirection/lefttoright.md)
+### Constants
+- [NSLocale.LanguageDirection.leftToRight](./lefttoright.md)
   The language direction is from left to right.
-- [NSLocale.LanguageDirection.rightToLeft](nslocale/languagedirection/righttoleft.md)
+- [NSLocale.LanguageDirection.rightToLeft](./righttoleft.md)
   The language direction is from right to left.
-- [NSLocale.LanguageDirection.topToBottom](nslocale/languagedirection/toptobottom.md)
+- [NSLocale.LanguageDirection.topToBottom](./toptobottom.md)
   The language direction is from top to bottom.
-- [NSLocale.LanguageDirection.bottomToTop](nslocale/languagedirection/bottomtotop.md)
+- [NSLocale.LanguageDirection.bottomToTop](./bottomtotop.md)
   The language direction is from bottom to top.
 
 

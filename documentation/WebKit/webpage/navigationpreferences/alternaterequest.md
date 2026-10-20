@@ -1,7 +1,8 @@
 # alternateRequest
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Used to make changes to the network request that will be used for this navigation’s main resource load.
 

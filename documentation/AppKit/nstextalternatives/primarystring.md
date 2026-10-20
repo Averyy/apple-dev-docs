@@ -1,7 +1,8 @@
 # primaryString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text that was initially chosen as the input string.
 
@@ -14,13 +15,18 @@ The text that was initially chosen as the input string.
 var primaryString: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * primaryString;
+```
+
 #### Discussion
 
 The text system uses the `primaryString` property to make sure that the text is still in the same state as when it was entered.
 
 ## See Also
 
-- [var alternativeStrings: [String]](nstextalternatives/alternativestrings.md)
+### Storing Alternative Text Strings
+- [var alternativeStrings: [String]](./alternativestrings.md)
   An array of alternative possible interpretations that the user might select.
 
 

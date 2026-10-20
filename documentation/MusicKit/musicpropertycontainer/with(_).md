@@ -2,6 +2,7 @@
 
 **Framework**: MusicKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Loads a new instance of the music item that includes the specified properties.
@@ -24,6 +25,12 @@ func with(_ properties: [PartialMusicAsyncProperty<Self>]) async throws -> Self
 #### Discussion
 
 This asynchronous method fetches a more complete representation of the receiver from Apple Music API over the network.
+
+## Default Implementations
+
+### MusicPropertyContainer Implementations
+- [func with(PartialMusicAsyncProperty<Self>...) async throws -> Self](./with%28_%29-10vhk.md)
+  Loads a new instance of the music item that includes the specified properties.
 
 
 ---

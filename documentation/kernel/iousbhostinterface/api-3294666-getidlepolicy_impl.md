@@ -1,14 +1,15 @@
 # GetIdlePolicy_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 kern_return_t GetIdlePolicy_Impl(uint32_t *deviceIdleTimeout);
 ```
 

@@ -1,7 +1,8 @@
 # init(verbatim:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a regular expression that matches the given string exactly, as though every metacharacter in it was escaped.
 

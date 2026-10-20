@@ -1,7 +1,8 @@
 # AVCaptureAudioDataOutput
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A capture output that records audio and provides access to audio sample buffers as they are recorded.
 
@@ -18,47 +19,52 @@ A capture output that records audio and provides access to audio sample buffers 
 class AVCaptureAudioDataOutput
 ```
 
+```objc
+@interface AVCaptureAudioDataOutput : AVCaptureOutput
+```
+
 ## Topics
 
 ### Creating an audio capture output
-- [init()](avcaptureaudiodataoutput/init.md)
+- [init()](./avcaptureaudiodataoutput/init%28%29.md)
   Creates an instance of audio data output.
 ### Configuring audio capture
-- [var audioSettings: [String : Any]!](avcaptureaudiodataoutput/audiosettings.md)
+- [var audioSettings: [String : Any]!](./avcaptureaudiodataoutput/audiosettings.md)
   The settings used to decode or re-encode audio before it’s output.
-- [func recommendedAudioSettingsForAssetWriter(writingTo: AVFileType) -> [String : Any]?](avcaptureaudiodataoutput/recommendedaudiosettingsforassetwriter(writingto:).md)
+- [func recommendedAudioSettingsForAssetWriter(writingTo: AVFileType) -> [String : Any]?](./avcaptureaudiodataoutput/recommendedaudiosettingsforassetwriter%28writingto%29.md)
   Specifies the recommended settings for use with an `AVAssetWriterInput`.
-- [var spatialAudioChannelLayoutTag: AudioChannelLayoutTag](avcaptureaudiodataoutput/spatialaudiochannellayouttag.md)
+- [var spatialAudioChannelLayoutTag: AudioChannelLayoutTag](./avcaptureaudiodataoutput/spatialaudiochannellayouttag.md)
   The audio channel layout tag of the audio sample buffers produced by the audio data output.
 ### Receiving captured audio data
-- [func setSampleBufferDelegate((any AVCaptureAudioDataOutputSampleBufferDelegate)?, queue: dispatch_queue_t?)](avcaptureaudiodataoutput/setsamplebufferdelegate(_:queue:).md)
+- [func setSampleBufferDelegate((any AVCaptureAudioDataOutputSampleBufferDelegate)?, queue: dispatch_queue_t?)](./avcaptureaudiodataoutput/setsamplebufferdelegate%28_,queue%29.md)
   Sets the delegate that will accept captured buffers and the dispatch queue on which the delegate will be called.
-- [var sampleBufferDelegate: (any AVCaptureAudioDataOutputSampleBufferDelegate)?](avcaptureaudiodataoutput/samplebufferdelegate.md)
+- [var sampleBufferDelegate: (any AVCaptureAudioDataOutputSampleBufferDelegate)?](./avcaptureaudiodataoutput/samplebufferdelegate.md)
   The capture object’s delegate.
-- [var sampleBufferCallbackQueue: dispatch_queue_t?](avcaptureaudiodataoutput/samplebuffercallbackqueue.md)
+- [var sampleBufferCallbackQueue: dispatch_queue_t?](./avcaptureaudiodataoutput/samplebuffercallbackqueue.md)
   The queue on which delegate callbacks are invoked
-- [protocol AVCaptureAudioDataOutputSampleBufferDelegate](avcaptureaudiodataoutputsamplebufferdelegate.md)
+- [protocol AVCaptureAudioDataOutputSampleBufferDelegate](./avcaptureaudiodataoutputsamplebufferdelegate.md)
   Methods for receiving audio sample data from an audio capture.
 
 ## Relationships
 
 ### Inherits From
-- [AVCaptureOutput](avcaptureoutput.md)
+- [AVCaptureOutput](./avcaptureoutput.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Capturing Spatial Audio in your iOS app](capturing-spatial-audio-in-your-ios-app.md)
+### Stream capture
+- [Capturing Spatial Audio in your iOS app](./capturing-spatial-audio-in-your-ios-app.md)
   Enhance your app’s audio recording capabilities by supporting Spatial Audio capture.
-- [class AVCaptureVideoDataOutput](avcapturevideodataoutput.md)
+- [class AVCaptureVideoDataOutput](./avcapturevideodataoutput.md)
   A capture output that records video and provides access to video frames for processing.
-- [class AVCaptureSpatialAudioMetadataSampleGenerator](avcapturespatialaudiometadatasamplegenerator.md)
+- [class AVCaptureSpatialAudioMetadataSampleGenerator](./avcapturespatialaudiometadatasamplegenerator.md)
   An interface for generating a spatial audio timed metadata sample.
 
 

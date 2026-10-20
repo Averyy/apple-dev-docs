@@ -1,7 +1,8 @@
 # originFromAnchorTransform
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location and orientation of a hand in world space.
 
@@ -20,15 +21,16 @@ The transform of a hand anchor is positioned at the base of the wrist. ARKit pro
 
 ## See Also
 
-- [var handSkeleton: HandSkeleton?](handanchor/handskeleton.md)
+### Getting hand information
+- [var handSkeleton: HandSkeleton?](./handskeleton.md)
   The current position and orientation of joints on a hand.
-- [var chirality: HandAnchor.Chirality](handanchor/chirality-swift.property.md)
+- [var chirality: HandAnchor.Chirality](./chirality-swift.property.md)
   The chirality of this hand.
-- [HandAnchor.Chirality](handanchor/chirality-swift.enum.md)
+- [HandAnchor.Chirality](./chirality-swift.enum.md)
   A value that indicates a left or right hand.
-- [var isTracked: Bool](handanchor/istracked.md)
+- [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is currently tracking this hand.
-- [var description: String](handanchor/description.md)
+- [var description: String](./description.md)
   A textual representation of this anchor.
 
 

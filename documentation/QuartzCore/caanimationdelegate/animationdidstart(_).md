@@ -1,7 +1,8 @@
 # animationDidStart(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate the animation has started.
 
@@ -19,13 +20,18 @@ Tells the delegate the animation has started.
 optional func animationDidStart(_ anim: CAAnimation)
 ```
 
+```objc
+- (void) animationDidStart:(CAAnimation *) anim;
+```
+
 ## Parameters
 
-- `anim`: The [`CAAnimation`](caanimation.md) object that has started.
+- `anim`: The [`CAAnimation`](../caanimation.md) object that has started.
 
 ## See Also
 
-- [func animationDidStop(CAAnimation, finished: Bool)](caanimationdelegate/animationdidstop(_:finished:).md)
+### Customizing Start and Stop Times
+- [func animationDidStop(CAAnimation, finished: Bool)](./animationdidstop%28_,finished%29.md)
   Tells the delegate the animation has ended.
 
 

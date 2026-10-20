@@ -1,7 +1,8 @@
 # -(_:_:)
 
 **Framework**: Core Media  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a new time that represents the difference between two times.
 
@@ -31,7 +32,8 @@ A time value that represents the result of the operation.
 
 ## See Also
 
-- [static func + (CMTime, CMTime) -> CMTime](cmtime/+(_:_:).md)
+### Performing Time Calcualtions
+- [static func + (CMTime, CMTime) -> CMTime](./plus%28_,_%29.md)
   Returns a new time that represents the sum of two times.
 
 

@@ -1,27 +1,29 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs any final cleanup for the memory buffer descriptor object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [Create](iobuffermemorydescriptor/create.md)
+### Creating a Memory Buffer
+- [Create](./create.md)
   Creates a new memory buffer descriptor object in the current process space.
-- [init](iobuffermemorydescriptor/init.md)
+- [init](./init.md)
   Initializes the buffer memory descriptor object.
 
 

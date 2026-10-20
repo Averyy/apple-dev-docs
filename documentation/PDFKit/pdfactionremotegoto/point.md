@@ -1,7 +1,8 @@
 # point
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the point, in page space, on the page referenced by the remote go-to action.
 
@@ -15,8 +16,28 @@ Sets the point, in page space, on the page referenced by the remote go-to action
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var point: CGPoint { get set }
+```
+
+*macOS*
+
 ```swift
 var point: NSPoint { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic) CGPoint point;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic) NSPoint point;
 ```
 
 #### Discussion

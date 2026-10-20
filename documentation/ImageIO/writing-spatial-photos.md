@@ -1,6 +1,8 @@
 # Writing spatial photos
 
-**Framework**: Image I/O
+**Framework**: Image I/O  
+**Role**: Sample Code  
+**Download**: [WritingSpatialPhotos.zip](https://docs-assets.developer.apple.com/published/f576a7476465/WritingSpatialPhotos.zip)
 
 Create spatial photos for visionOS by packaging a pair of left- and right-eye images as a stereo HEIC file with related spatial metadata.
 
@@ -12,13 +14,13 @@ Create spatial photos for visionOS by packaging a pair of left- and right-eye im
 
 Spatial photos are *High-Efficiency Image Codec* (HEIC) files containing a pair of left- and right-eye images, together with a stereo pair group and additional spatial metadata. *Spatial metadata* describes properties of the left- and right-eye cameras that captured the stereo scene. Adding spatial metadata to a stereo HEIC prompts Apple platforms to consider the image as *spatial* instead of just stereo, and opts the image into visual treatments on Apple Vision Pro that help minimize common causes of stereo viewing discomfort.
 
-To learn more about why you might want to package a pair of stereo images as a spatial photo and the metadata values you provide, see [`Creating spatial photos and videos with spatial metadata`](creating-spatial-photos-and-videos-with-spatial-metadata.md).
+To learn more about why you might want to package a pair of stereo images as a spatial photo and the metadata values you provide, see [Creating spatial photos and videos with spatial metadata](./creating-spatial-photos-and-videos-with-spatial-metadata.md).
 
-This sample app demonstrates how to use [`Image I/O`](ImageIO.md) APIs to convert two separate images into a spatial photo, saving the output as a HEIC file. The app’s `SpatialPhotoConverter` class performs this conversion process.
+This sample app demonstrates how to use [Image I/O](./ImageIO.md) APIs to convert two separate images into a spatial photo, saving the output as a HEIC file. The app’s `SpatialPhotoConverter` class performs this conversion process.
 
 > **Note**: This sample app is a macOS command-line application, but you can also perform the spatial photo conversion process on other Apple platforms such as visionOS and iOS.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run the app in Xcode, add the input file locations, output file location, and spatial metadata for your images as arguments to the project’s scheme. Select Product > Scheme > Edit Scheme (Command-<), and add the arguments described below to Arguments Passed On Launch:
 
@@ -33,13 +35,13 @@ By default, the project’s scheme loads a pair of left- and right-eye images fr
 
 For these images, a disparity adjustment of +2% of the image width produces a comfortable depth effect when the spatial photo is presented in a window on Apple Vision Pro. This 2% disparity adjustment value positions the nearest object in the spatial photo — the hummingbird — just behind the front of the window, while still keeping an effective illusion of depth between the hummingbird and the background. The scheme’s arguments express the +2% disparity adjustment with a `--disparityAdjustment` value of `0.02`.
 
-##### Load the Left and Right Eye Images
+##### Load the left- and right-eye images
 
-The app starts by creating a [`CGImageSource`](cgimagesource.md) for each of the left- and right-eye images. An initializer on `StereoPairImage` performs the following steps:
+The app starts by creating a [`CGImageSource`](./cgimagesource.md) for each of the left- and right-eye images. An initializer on `StereoPairImage` performs the following steps:
 
-1. Opens the image as a `CGImageSource` by calling [`CGImageSourceCreateWithURL(_:_:)`](cgimagesourcecreatewithurl(_:_:).md)
-2. Discovers the primary image index for the image source by calling [`CGImageSourceGetPrimaryImageIndex(_:)`](cgimagesourcegetprimaryimageindex(_:).md)
-3. Discovers the pixel width and height of the image by calling [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](cgimagesourcecopypropertiesatindex(_:_:_:).md) for the primary image index, and looking for [`kCGImagePropertyPixelWidth`](kcgimagepropertypixelwidth.md) and [`kCGImagePropertyPixelHeight`](kcgimagepropertypixelheight.md) values in the returned properties dictionary
+1. Opens the image as a `CGImageSource` by calling [`CGImageSourceCreateWithURL(_:_:)`](./cgimagesourcecreatewithurl%28_,_%29.md)
+2. Discovers the primary image index for the image source by calling [`CGImageSourceGetPrimaryImageIndex(_:)`](./cgimagesourcegetprimaryimageindex%28_%29.md)
+3. Discovers the pixel width and height of the image by calling [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](./cgimagesourcecopypropertiesatindex%28_,_,_%29.md) for the primary image index, and looking for [`kCGImagePropertyPixelWidth`](./kcgimagepropertypixelwidth.md) and [`kCGImagePropertyPixelHeight`](./kcgimagepropertypixelheight.md) values in the returned properties dictionary
 4. Stores the results of the above steps as properties on the `StereoPairImage`
 
 ```swift
@@ -75,7 +77,7 @@ guard leftImage.width == rightImage.width, leftImage.height == rightImage.height
 
 > ❗ **Important**: The left- and right-eye images in a spatial photo must have the same pixel size.
 
-##### Define an Extrinsic Position for Each Image
+##### Define an extrinsic position for each image
 
 The app converts the provided baseline distance from millimeters to meters.
 
@@ -93,7 +95,7 @@ let rightPosition: [Double] = [baselineInMeters, 0, 0]
 
 > ❗ **Important**: The distance in 3D space between the left- and right-eye camera extrinsic positions must always represent the baseline in meters between the two cameras that captured the images. The position of the right-eye camera must always be positioned to the right of the left-eye camera in the left-eye camera’s coordinate space.
 
-##### Compute a Camera Intrinsics Matrix
+##### Compute a camera intrinsics matrix
 
 The app uses the provided horizontal field of view, plus the known width and height of each input image, to compute a 3x3 camera intrinsics matrix that describes the characteristics of the left and right cameras.
 
@@ -124,7 +126,7 @@ func intrinsics(horizontalFOV: Double) -> [Double] {
 
 The app already validated the left-eye and right-eye images to confirm that they have the same pixel size. As a result, the app calculates the intrinsics matrix for the left-eye image and uses it as the intrinsics matrix for both images below.
 
-##### Encode the Disparity Adjustment
+##### Encode the disparity adjustment
 
 The app encodes the provided disparity adjustment value as a signed integer, converting it from a signed floating-point value in the range `[-1.0, +1.0]` (as a fraction of image width) to a signed integer value in the range `[-10000, +10000]`.
 
@@ -132,7 +134,7 @@ The app encodes the provided disparity adjustment value as a signed integer, con
 let encodedDisparityAdjustment = Int(disparityAdjustment * 1e4)
 ```
 
-##### Define an Image Properties Dictionary for Each Image
+##### Define an image properties dictionary for each image
 
 Before adding the left-eye and right-eye images to the image destination, the app defines a properties dictionary for each image, which expresses the spatial metadata for that image as expected ImageIO properties.
 
@@ -184,32 +186,32 @@ func propertiesDictionary(
 
 The properties dictionary has two sub-dictionaries for each image:
 
-- A groups dictionary ([`kCGImagePropertyGroups`](kcgimagepropertygroups.md)) that defines the image as part of a stereo pair group, and specifies a disparity adjustment for that group
-- A HEIF dictionary ([`kCGImagePropertyHEIFDictionary`](kcgimagepropertyheifdictionary.md)) that defines the extrinsics and camera model for the camera that created the image
+- A groups dictionary ([`kCGImagePropertyGroups`](./kcgimagepropertygroups.md)) that defines the image as part of a stereo pair group, and specifies a disparity adjustment for that group
+- A HEIF dictionary ([`kCGImagePropertyHEIFDictionary`](./kcgimagepropertyheifdictionary.md)) that defines the extrinsics and camera model for the camera that created the image
 
 For the groups dictionary, the convenience method defines a single stereo pair group with the following properties:
 
-- A [`kCGImagePropertyGroupIndex`](kcgimagepropertygroupindex.md) of `0`, because this is the first and only group in the output file
-- A [`kCGImagePropertyGroupType`](kcgimagepropertygrouptype.md) of [`kCGImagePropertyGroupTypeStereoPair`](kcgimagepropertygrouptypestereopair.md) to indicate that this group defines a stereo pair of images
-- A flag indicating if this image is the left-eye image ([`kCGImagePropertyGroupImageIsLeftImage`](kcgimagepropertygroupimageisleftimage.md)) or the right-eye image ([`kCGImagePropertyGroupImageIsRightImage`](kcgimagepropertygroupimageisrightimage.md)) in the stereo pair group
-- The [`kCGImagePropertyGroupImageDisparityAdjustment`](kcgimagepropertygroupimagedisparityadjustment.md) to use when presenting this stereo pair group
+- A [`kCGImagePropertyGroupIndex`](./kcgimagepropertygroupindex.md) of `0`, because this is the first and only group in the output file
+- A [`kCGImagePropertyGroupType`](./kcgimagepropertygrouptype.md) of [`kCGImagePropertyGroupTypeStereoPair`](./kcgimagepropertygrouptypestereopair.md) to indicate that this group defines a stereo pair of images
+- A flag indicating if this image is the left-eye image ([`kCGImagePropertyGroupImageIsLeftImage`](./kcgimagepropertygroupimageisleftimage.md)) or the right-eye image ([`kCGImagePropertyGroupImageIsRightImage`](./kcgimagepropertygroupimageisrightimage.md)) in the stereo pair group
+- The [`kCGImagePropertyGroupImageDisparityAdjustment`](./kcgimagepropertygroupimagedisparityadjustment.md) to use when presenting this stereo pair group
 
 > ❗ **Important**: The stereo pair group for a spatial photo must always define a disparity adjustment offset. Disparity adjustment and group index are provided as part of the image properties for each image, so the app includes the same index and disparity adjustment value in the groups dictionary for both the left- and right-eye images.
 
 For the HEIF dictionary, the convenience method defines:
 
-- A camera extrinsics ([`kIIOMetadata_CameraExtrinsicsKey`](kiiometadata_cameraextrinsicskey.md)) dictionary that contains the extrinsic position and rotation for the camera
-- A camera model ([`kIIOMetadata_CameraModelKey`](kiiometadata_cameramodelkey.md)) dictionary that contains the camera intrinsics matrix and camera model type for the camera that captured the image
+- A camera extrinsics ([`kIIOMetadata_CameraExtrinsicsKey`](./kiiometadata_cameraextrinsicskey.md)) dictionary that contains the extrinsic position and rotation for the camera
+- A camera model ([`kIIOMetadata_CameraModelKey`](./kiiometadata_cameramodelkey.md)) dictionary that contains the camera intrinsics matrix and camera model type for the camera that captured the image
 
 The camera extrinsics dictionary specifies an identity rotation to indicate that the app defines camera extrinsics with a position offset only.
 
-> ❗ **Important**: The camera model dictionary for the left- and right-eye images in a spatial photo must always define a camera model type of either [`kIIOCameraModelType_SimplifiedPinhole`](kiiocameramodeltype_simplifiedpinhole.md) or [`kIIOCameraModelType_GenericPinhole`](kiiocameramodeltype_genericpinhole.md).
+> ❗ **Important**: The camera model dictionary for the left- and right-eye images in a spatial photo must always define a camera model type of either [`kIIOCameraModelType_SimplifiedPinhole`](./kiiocameramodeltype_simplifiedpinhole.md) or [`kIIOCameraModelType_GenericPinhole`](./kiiocameramodeltype_genericpinhole.md).
 
-The properties dictionary also specifies a [`kCGImagePropertyHasAlpha`](kcgimagepropertyhasalpha.md) value of `false` to indicate that the system should ignore any alpha channel data in the source image when adding that source image to the image destination.
+The properties dictionary also specifies a [`kCGImagePropertyHasAlpha`](./kcgimagepropertyhasalpha.md) value of `false` to indicate that the system should ignore any alpha channel data in the source image when adding that source image to the image destination.
 
-##### Write the Images to an Output Image Destination
+##### Write the images to an output image destination
 
-The app calls [`CGImageDestinationCreateWithURL(_:_:_:_:)`](cgimagedestinationcreatewithurl(_:_:_:_:).md) to create an output [`CGImageDestination`](cgimagedestination.md) at the provided URL for the output spatial photo. The app creates the image destination with the uniform type identifier for a HEIC image and an expected image count of `2` to indicate that the app writes both a left- and right-eye image to a single HEIC file.
+The app calls [`CGImageDestinationCreateWithURL(_:_:_:_:)`](./cgimagedestinationcreatewithurl%28_,_,_,_%29.md) to create an output [`CGImageDestination`](./cgimagedestination.md) at the provided URL for the output spatial photo. The app creates the image destination with the uniform type identifier for a HEIC image and an expected image count of `2` to indicate that the app writes both a left- and right-eye image to a single HEIC file.
 
 ```swift
 let destinationProperties: [CFString: Any] = [kCGImagePropertyPrimaryImage: 0]
@@ -225,7 +227,7 @@ guard let destination = CGImageDestinationCreateWithURL(
 
 The app creates an image destination with a `destinationProperties` dictionary that specifies a primary image index of `0` for the output HEIC file. This primary image index specifies which image in the output HEIC file is preferred for display when an app or system needs a single image to represent the file’s content (for example, on a nonstereo platform such as iOS). However, not all apps and operating systems use the primary image index when displaying a HEIC file, and instead display the first image in the HEIC by default. For this reason, the app sets the primary image index to `0`, so that apps that use the primary image index select the same image as apps that don’t.
 
-Next, the app calls [`CGImageDestinationAddImageFromSource(_:_:_:_:)`](cgimagedestinationaddimagefromsource(_:_:_:_:).md) to copy the left- and right-eye image sources into the image destination, passing in an appropriate properties dictionary for each image. The app adds the left-eye image first, which means the left-eye image is the primary image for the output HEIC file, because it appears at image index `0` in the output file.
+Next, the app calls [`CGImageDestinationAddImageFromSource(_:_:_:_:)`](./cgimagedestinationaddimagefromsource%28_,_,_,_%29.md) to copy the left- and right-eye image sources into the image destination, passing in an appropriate properties dictionary for each image. The app adds the left-eye image first, which means the left-eye image is the primary image for the output HEIC file, because it appears at image index `0` in the output file.
 
 ```swift
 CGImageDestinationAddImageFromSource(
@@ -244,7 +246,7 @@ CGImageDestinationAddImageFromSource(
 
 It’s valid to write either the left- or right-eye image as the first image in a spatial photo. visionOS detects the appropriate images to use for left- and right-eye presentation based on the `kCGImagePropertyGroupImageIsLeftImage` or `kCGImagePropertyGroupImageIsRightImage` properties in the groups dictionary for each image, regardless of the order in which the images are added to the HEIC file. If the system should prefer the right-eye image as the primary image to display when it shows the spatial photo in a nonstereo environment, modify the app to add the right-eye image to the image destination first, so that it appears at index `0` in the output HEIC file.
 
-Finally, the app calls [`CGImageDestinationFinalize(_:)`](cgimagedestinationfinalize(_:).md) to write the image destination to disk as a self-contained spatial photo.
+Finally, the app calls [`CGImageDestinationFinalize(_:)`](./cgimagedestinationfinalize%28_%29.md) to write the image destination to disk as a self-contained spatial photo.
 
 ```swift
 guard CGImageDestinationFinalize(destination) else {
@@ -254,7 +256,8 @@ guard CGImageDestinationFinalize(destination) else {
 
 ## See Also
 
-- [Creating spatial photos and videos with spatial metadata](creating-spatial-photos-and-videos-with-spatial-metadata.md)
+### Spatial Photos
+- [Creating spatial photos and videos with spatial metadata](./creating-spatial-photos-and-videos-with-spatial-metadata.md)
   Add spatial metadata to stereo photos and videos to create spatial media for viewing on Apple Vision Pro.
 
 

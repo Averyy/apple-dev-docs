@@ -1,7 +1,8 @@
 # NEHotspotHelperCommandType
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of hotspot command types.
 
@@ -17,43 +18,48 @@ An enumeration of hotspot command types.
 enum NEHotspotHelperCommandType
 ```
 
+```c
+enum NEHotspotHelperCommandType : NSInteger;
+```
+
 ## Topics
 
 ### Command Types
-- [NEHotspotHelperCommandType.none](nehotspothelpercommandtype/none.md)
+- [NEHotspotHelperCommandType.none](./nehotspothelpercommandtype/none.md)
   Placeholder for the null command.
-- [NEHotspotHelperCommandType.filterScanList](nehotspothelpercommandtype/filterscanlist.md)
+- [NEHotspotHelperCommandType.filterScanList](./nehotspothelpercommandtype/filterscanlist.md)
   Filter the Wi-Fi scan list.
-- [NEHotspotHelperCommandType.evaluate](nehotspothelpercommandtype/evaluate.md)
+- [NEHotspotHelperCommandType.evaluate](./nehotspothelpercommandtype/evaluate.md)
   Evaluate the network.
-- [NEHotspotHelperCommandType.authenticate](nehotspothelpercommandtype/authenticate.md)
+- [NEHotspotHelperCommandType.authenticate](./nehotspothelpercommandtype/authenticate.md)
   Authenticate to the network.
-- [NEHotspotHelperCommandType.presentUI](nehotspothelpercommandtype/presentui.md)
+- [NEHotspotHelperCommandType.presentUI](./nehotspothelpercommandtype/presentui.md)
   Present user interface.
-- [NEHotspotHelperCommandType.maintain](nehotspothelpercommandtype/maintain.md)
+- [NEHotspotHelperCommandType.maintain](./nehotspothelpercommandtype/maintain.md)
   Maintain the connection to the network.
-- [NEHotspotHelperCommandType.logoff](nehotspothelpercommandtype/logoff.md)
+- [NEHotspotHelperCommandType.logoff](./nehotspothelpercommandtype/logoff.md)
   Logoff the network.
 ### Initializers
-- [init?(rawValue: Int)](nehotspothelpercommandtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nehotspothelpercommandtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var commandType: NEHotspotHelperCommandType](nehotspothelpercommand/commandtype.md)
+### Command information
+- [var commandType: NEHotspotHelperCommandType](./nehotspothelpercommand/commandtype.md)
   The type of the command
-- [var network: NEHotspotNetwork?](nehotspothelpercommand/network.md)
+- [var network: NEHotspotNetwork?](./nehotspothelpercommand/network.md)
   The network associated with the command.
-- [var networkList: [NEHotspotNetwork]?](nehotspothelpercommand/networklist.md)
+- [var networkList: [NEHotspotNetwork]?](./nehotspothelpercommand/networklist.md)
   The list of networks associated with the command.
 
 

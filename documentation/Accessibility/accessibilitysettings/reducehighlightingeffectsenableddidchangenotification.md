@@ -1,7 +1,8 @@
 # reduceHighlightingEffectsEnabledDidChangeNotification
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static let reduceHighlightingEffectsEnabledDidChangeNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName const AXReduceHighlightingEffectsEnabledDidChangeNotification;
 ```
 
 

@@ -1,7 +1,8 @@
 # captionAppearance
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.4+
@@ -16,10 +17,15 @@
 static var captionAppearance: AVLegibleMediaOptionsMenuController.MenuContents { get }
 ```
 
+```c
+AVLegibleMediaOptionsMenuContentsCaptionAppearance
+```
+
 ## See Also
 
-- [static var all: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/all.md)
-- [static var legible: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/legible.md)
+### Menu content options
+- [static var all: AVLegibleMediaOptionsMenuController.MenuContents](./all.md)
+- [static var legible: AVLegibleMediaOptionsMenuController.MenuContents](./legible.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # valuePending
 
 **Framework**: Social  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the configuration item’s value is ready for display.
 
@@ -16,15 +17,20 @@ A Boolean value that indicates whether the configuration item’s value is ready
 var valuePending: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL valuePending;
+```
+
 #### Discussion
 
-Set this property to [`true`](https://developer.apple.com/documentation/swift/true) if a progress indicator should be displayed, to show users that a configuration item’s value is about to display. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+Set this property to [`true`](../../Swift/true.md) if a progress indicator should be displayed, to show users that a configuration item’s value is about to display. The default value of this property is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var title: String!](slcomposesheetconfigurationitem/title.md)
+### Specifying Configuration Information
+- [var title: String!](./title.md)
   The name of the configuration item stored as a localized string.
-- [var value: String!](slcomposesheetconfigurationitem/value.md)
+- [var value: String!](./value.md)
   The current value or setting of the configuration item.
 
 

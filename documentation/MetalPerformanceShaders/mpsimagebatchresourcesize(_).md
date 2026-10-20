@@ -1,7 +1,8 @@
 # MPSImageBatchResourceSize(_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the number of bytes used to allocate the specified image batch.
 
@@ -17,6 +18,10 @@ Returns the number of bytes used to allocate the specified image batch.
 
 ```swift
 func MPSImageBatchResourceSize(_ batch: [MPSImage]) -> Int
+```
+
+```c
+NSUInteger MPSImageBatchResourceSize(MPSImageBatch *batch);
 ```
 
 

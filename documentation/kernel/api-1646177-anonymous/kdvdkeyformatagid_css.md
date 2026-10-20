@@ -1,14 +1,15 @@
 # kDVDKeyFormatAGID_CSS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kDVDKeyFormatAGID_CSS = 0x00
 ```
 

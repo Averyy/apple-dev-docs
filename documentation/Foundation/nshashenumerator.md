@@ -1,9 +1,10 @@
 # NSHashEnumerator
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-Allows successive elements of a hash table to be returned each time this structure is passed to [`NSNextHashEnumeratorItem(_:)`](nsnexthashenumeratoritem(_:).md).
+Allows successive elements of a hash table to be returned each time this structure is passed to [`NSNextHashEnumeratorItem(_:)`](./nsnexthashenumeratoritem%28_%29.md).
 
 **Availability**:
 - iOS 2.0+
@@ -20,6 +21,10 @@ Allows successive elements of a hash table to be returned each time this structu
 struct NSHashEnumerator
 ```
 
+```c
+typedef struct { ... } NSHashEnumerator;
+```
+
 #### Overview
 
 The fields of `NSHashEnumerator` are private.
@@ -27,19 +32,20 @@ The fields of `NSHashEnumerator` are private.
 ## Topics
 
 ### Initializers
-- [init()](nshashenumerator/init.md)
+- [init()](./nshashenumerator/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct NSHashTableCallBacks](nshashtablecallbacks.md)
+### Data Types
+- [struct NSHashTableCallBacks](./nshashtablecallbacks.md)
   Defines a structure that contains the function pointers used to configure behavior of `NSHashTable` with respect to elements within a hash table.
-- [typealias NSHashTableOptions](nshashtableoptions.md)
-  Components in a bit-field to specify the behavior of elements in an [`NSHashTable`](nshashtable.md) object.
+- [typealias NSHashTableOptions](./nshashtableoptions.md)
+  Components in a bit-field to specify the behavior of elements in an [`NSHashTable`](./nshashtable.md) object.
 
 
 ---

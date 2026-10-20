@@ -1,7 +1,8 @@
 # UIMessageConversationContext
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a message conversation.
 
@@ -16,49 +17,54 @@ A class that represents a message conversation.
 class UIMessageConversationContext
 ```
 
+```objc
+@interface UIMessageConversationContext : UIConversationContext
+```
+
 ## Mentions
 
-- [Adopting Smart Reply in your messaging or email app](adopting-smart-reply-in-your-messaging-or-email-app.md)
+- [Adopting Smart Reply in your messaging or email app](./adopting-smart-reply-in-your-messaging-or-email-app.md)
 
 ## Topics
 
 ### Categorizing the message conversation
-- [var isJunk: Bool](uimessageconversationcontext/isjunk.md)
+- [var isJunk: Bool](./uimessageconversationcontext/isjunk.md)
   A Boolean value that indicates whether the message thread is “junk”, such as spam.
 
 ## Relationships
 
 ### Inherits From
-- [UIConversationContext](uiconversationcontext.md)
+- [UIConversationContext](./uiconversationcontext.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Adopting Smart Reply in your messaging or email app](adopting-smart-reply-in-your-messaging-or-email-app.md)
+### Smart Reply for messaging
+- [Adopting Smart Reply in your messaging or email app](./adopting-smart-reply-in-your-messaging-or-email-app.md)
   Generate reply suggestions by using Apple Intelligence and put selected text into your text UI.
-- [class UIConversationContext](uiconversationcontext.md)
+- [class UIConversationContext](./uiconversationcontext.md)
   A base class that represents a conversation between participants, such as in an email or messaging app.
-- [UIConversationContext.Entry](uiconversationcontext/entry.md)
+- [UIConversationContext.Entry](./uiconversationcontext/entry.md)
   A base class that represents a message in a conversation.
-- [class UIMailConversationContext](uimailconversationcontext.md)
+- [class UIMailConversationContext](./uimailconversationcontext.md)
   A class that represents an email conversation.
-- [UIMailConversationContext.MailEntry](uimailconversationcontext/mailentry.md)
+- [UIMailConversationContext.MailEntry](./uimailconversationcontext/mailentry.md)
   A class that represents a specific email in an email thread.
-- [UIMessageConversationContext.MessageEntry](uimessageconversationcontext/messageentry.md)
+- [UIMessageConversationContext.MessageEntry](./uimessageconversationcontext/messageentry.md)
   A class that represents a message in a message conversation.
-- [class UIInputSuggestion](uiinputsuggestion.md)
+- [class UIInputSuggestion](./uiinputsuggestion.md)
   A base class you use to handle suggestions from the keyboard or system.
-- [class UIPhotoSearchSuggestion](uiphotosearchsuggestion.md)
+- [class UIPhotoSearchSuggestion](./uiphotosearchsuggestion.md)
   An input suggestion that carries photo search metadata for people, subjects, locations, and time periods.
-- [class UISmartReplySuggestion](uismartreplysuggestion.md)
+- [class UISmartReplySuggestion](./uismartreplysuggestion.md)
   A class you use to handle a Smart Reply suggestion.
 
 

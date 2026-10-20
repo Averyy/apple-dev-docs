@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable debug description for the data.
 
@@ -22,7 +23,8 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](data/description.md)
+### Describing Data
+- [var description: String](./description.md)
   A human-readable description for the data.
 
 

@@ -1,7 +1,8 @@
 # RCSService.Business.Feature.geoPush
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Geo Push feature.
 

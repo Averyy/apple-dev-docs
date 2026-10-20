@@ -1,7 +1,8 @@
 # MarketplaceAppExtension
 
 **Framework**: MarketplaceKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An extension that facilitates authentication, installation, and launch of a marketplace with deep links.
 
@@ -17,8 +18,8 @@ protocol MarketplaceAppExtension : AppExtension, Sendable
 
 ## Mentions
 
-- [Installing apps from an alternative marketplace](installing-apps-from-an-alternative-marketplace.md)
-- [Reauthenticating a person to manage apps](reauthenticating-a-person-to-manage-apps.md)
+- [Installing apps from an alternative marketplace](./installing-apps-from-an-alternative-marketplace.md)
+- [Reauthenticating a person to manage apps](./reauthenticating-a-person-to-manage-apps.md)
 
 #### Overview
 
@@ -29,11 +30,11 @@ You provide this extension to enable the operating system to facilitate some tas
 - Launching your app storefront for a specific app.
 - Handling failures in requests to your marketplace server.
 
-##### Define the Extension Point Identifier
+##### Define the extension point identifier
 
 To set up your marketplace extension in Xcode, use a generic extension template and set the `EXExtensionPointIdentifier` key in the `Info.plist` file to `com.apple.marketplace.extension`:
 
-```None
+```
 <dict>
   <key>EXAppExtensionAttributes</key>
   <dict>
@@ -47,19 +48,19 @@ To set up your marketplace extension in Xcode, use a generic extension template 
 ## Topics
 
 ### Instance Methods
-- [func additionalHeaders(for: URLRequest, account: String) async -> [String : String]](marketplaceappextension/additionalheaders(for:account:).md)
+- [func additionalHeaders(for: URLRequest, account: String) async -> [String : String]](./marketplaceappextension/additionalheaders%28for,account%29.md)
   Adds information to the request header for communications from the operating system to your marketplace endpoints.
-- [func automaticUpdates(for: [AppVersion]) async throws -> [AutomaticUpdate]](marketplaceappextension/automaticupdates(for:).md)
-- [func availableAppVersions(forAppleItemIDs: [AppleItemID]) async -> [AppVersion]](marketplaceappextension/availableappversions(forappleitemids:).md)
-- [func requestFailed(response: HTTPURLResponse) async -> Bool](marketplaceappextension/requestfailed(response:).md)
+- [func automaticUpdates(for: [AppVersion]) async throws -> [AutomaticUpdate]](./marketplaceappextension/automaticupdates%28for%29.md)
+- [func availableAppVersions(forAppleItemIDs: [AppleItemID]) async -> [AppVersion]](./marketplaceappextension/availableappversions%28forappleitemids%29.md)
+- [func requestFailed(response: HTTPURLResponse) async -> Bool](./marketplaceappextension/requestfailed%28response%29.md)
   Handles when the operating system receives an unexpected response from your web server.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

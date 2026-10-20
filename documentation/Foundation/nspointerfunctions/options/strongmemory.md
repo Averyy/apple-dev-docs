@@ -1,7 +1,8 @@
 # strongMemory
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Use strong write-barriers to backing store; use garbage-collected memory on copy-in.
 
@@ -20,28 +21,33 @@ Use strong write-barriers to backing store; use garbage-collected memory on copy
 static var strongMemory: NSPointerFunctions.Options { get }
 ```
 
+```c
+NSPointerFunctionsStrongMemory
+```
+
 #### Discussion
 
 This is the default memory value.
 
-As a special case, if you do not use garbage collection and specify this value in conjunction with [`objectPersonality`](nspointerfunctions/options/objectpersonality.md) or [`objectPointerPersonality`](nspointerfunctions/options/objectpointerpersonality.md) then the `NSPointerFunctions` object uses `retain` and `release`.
+As a special case, if you do not use garbage collection and specify this value in conjunction with [`objectPersonality`](./objectpersonality.md) or [`objectPointerPersonality`](./objectpointerpersonality.md) then the `NSPointerFunctions` object uses `retain` and `release`.
 
-If you do not use garbage collection, and specify this value in conjunction with a valid non-object personality, it is the same as specifying [`mallocMemory`](nspointerfunctions/options/mallocmemory.md).
+If you do not use garbage collection, and specify this value in conjunction with a valid non-object personality, it is the same as specifying [`mallocMemory`](./mallocmemory.md).
 
 ## See Also
 
-- [static var machVirtualMemory: NSPointerFunctions.Options](nspointerfunctions/options/machvirtualmemory.md)
+### Memory Options
+- [static var machVirtualMemory: NSPointerFunctions.Options](./machvirtualmemory.md)
   Use Mach memory.
-- [static var mallocMemory: NSPointerFunctions.Options](nspointerfunctions/options/mallocmemory.md)
+- [static var mallocMemory: NSPointerFunctions.Options](./mallocmemory.md)
   Use `free()` on removal, `calloc()` on copy in.
-- [static var opaqueMemory: NSPointerFunctions.Options](nspointerfunctions/options/opaquememory.md)
+- [static var opaqueMemory: NSPointerFunctions.Options](./opaquememory.md)
   Take no action when pointers are deleted.
-- [static var weakMemory: NSPointerFunctions.Options](nspointerfunctions/options/weakmemory.md)
+- [static var weakMemory: NSPointerFunctions.Options](./weakmemory.md)
   Uses weak read and write barriers appropriate for ARC or GC. Using NSPointerFunctionsWeakMemory object references will turn to `NULL` on last release.
-- [var NSMapTableStrongMemory: NSPointerFunctions.Options](nsmaptablestrongmemory.md)
-  Equivalent to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
-- [var NSMapTableWeakMemory: NSPointerFunctions.Options](nsmaptableweakmemory.md)
-  Equivalent to [`weakMemory`](nspointerfunctions/options/weakmemory.md).
+- [var NSMapTableStrongMemory: NSPointerFunctions.Options](../../nsmaptablestrongmemory.md)
+  Equivalent to [`strongMemory`](./strongmemory.md).
+- [var NSMapTableWeakMemory: NSPointerFunctions.Options](../../nsmaptableweakmemory.md)
+  Equivalent to [`weakMemory`](./weakmemory.md).
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a command that generates mipmaps for a texture from the base mipmap level up to the highest mipmap level.
@@ -11,7 +12,7 @@ Encodes a command that generates mipmaps for a texture from the base mipmap leve
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,20 +21,26 @@ Encodes a command that generates mipmaps for a texture from the base mipmap leve
 func generateMipmaps(for texture: any MTLTexture)
 ```
 
+```objc
+- (void) generateMipmapsForTexture:(id<MTLTexture>) texture;
+```
+
 ## Mentions
 
-- [Generating mipmap data](generating-mipmap-data.md)
+- [Generating mipmap data](../generating-mipmap-data.md)
 
 #### Discussion
 
 The command generates with scaled images for all levels up to the highest mipmap level.
 
-> **Note**:  The image filtering that GPU drivers use to generate the mipmaps may vary by the feature families ([`MTLGPUFamily`](mtlgpufamily.md)) it supports.
+> **Note**:  The image filtering that GPU drivers use to generate the mipmaps may vary by the feature families ([`MTLGPUFamily`](../mtlgpufamily.md)) it supports.
 
 ## Parameters
 
-- `texture`: A texture instance the command generates mipmaps for that has: - A [`mipmapLevelCount`](mtltexture/mipmaplevelcount.md) property that’s greater than `1`
-- A [`pixelFormat`](mtltexture/pixelformat.md) that’s color-renderable and color-filterable
+- `texture`: A texture instance the command generates mipmaps for that has:
+
+  - A [`mipmapLevelCount`](../mtltexture/mipmaplevelcount.md) property that’s greater than `1`
+  - A [`pixelFormat`](../mtltexture/pixelformat.md) that’s color-renderable and color-filterable
 
 
 ---

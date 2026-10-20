@@ -1,19 +1,26 @@
 # ENScanInstance
 
 **Framework**: Exposure Notification  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The aggregation of attenuations of beacons received during a scan.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 class ENScanInstance
+```
+
+```objc
+@interface ENScanInstance : NSObject
 ```
 
 #### Overview
@@ -23,34 +30,35 @@ class ENScanInstance
 ## Topics
 
 ### Getting Scan Instance Properties
-- [var minimumAttenuation: ENAttenuation](enscaninstance/minimumattenuation.md)
+- [var minimumAttenuation: ENAttenuation](./enscaninstance/minimumattenuation.md)
   The minimum attenuation of beacons received during the scan.
-- [var secondsSinceLastScan: Int](enscaninstance/secondssincelastscan.md)
+- [var secondsSinceLastScan: Int](./enscaninstance/secondssincelastscan.md)
   The number of seconds elapsed since the previous scan.
-- [var typicalAttenuation: ENAttenuation](enscaninstance/typicalattenuation.md)
+- [var typicalAttenuation: ENAttenuation](./enscaninstance/typicalattenuation.md)
   The aggregation of the attenuations of beacons received during the scan.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Configuring Exposure Notifications](configuring-exposure-notifications.md)
+### Exposures
+- [Configuring Exposure Notifications](./configuring-exposure-notifications.md)
   Define how Exposure Notifications work for a region by assigning server-based key-value pairs.
-- [class ENExposureConfiguration](enexposureconfiguration.md)
+- [class ENExposureConfiguration](./enexposureconfiguration.md)
   The object that contains parameters for configuring exposure notification risk scoring behavior.
-- [class ENExposureWindow](enexposurewindow.md)
+- [class ENExposureWindow](./enexposurewindow.md)
   A set of scan events from observed beacons within a time span.
-- [Exposure Parameter Limits](exposure-parameter-limits.md)
+- [Exposure Parameter Limits](./exposure-parameter-limits.md)
   The limits for the parameters you use in exposure risk calculations.
 
 

@@ -2,22 +2,27 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The primary angle for the repeating reflected tile.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var acuteAngle: Float { get set }
+```
+
+```objc
+@property (nonatomic) float acuteAngle;
 ```
 
 #### Discussion
@@ -26,13 +31,14 @@ Small values create thin diamond tiles, and higher values create fatter reflecte
 
 ## See Also
 
-- [var angle: Float](cifourfoldreflectedtile/angle.md)
+### Instance Properties
+- [var angle: Float](./angle.md)
   The angle, in radians, of the tiled pattern.
-- [var center: CGPoint](cifourfoldreflectedtile/center.md)
+- [var center: CGPoint](./center.md)
   The x and y position to use as the center of the effect.
-- [var inputImage: CIImage?](cifourfoldreflectedtile/inputimage.md)
+- [var inputImage: CIImage?](./inputimage.md)
   The image to use as an input image.
-- [var width: Float](cifourfoldreflectedtile/width.md)
+- [var width: Float](./width.md)
   The width of a tile.
 
 

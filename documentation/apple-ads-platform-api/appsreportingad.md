@@ -1,7 +1,8 @@
 # AppsReportingAd
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Ad metadata for apps report rows.
 
@@ -10,7 +11,7 @@ Ad metadata for apps report rows.
 
 ## Declaration
 
-```swift
+```
 object AppsReportingAd
 ```
 
@@ -50,9 +51,9 @@ The `creative` field embeds an `AppsReportingCreative` summary capturing the cre
 ## Topics
 
 ### Type Aliases
-- [type AppsReportingAd.Status](appsreportingad/status-data.typealias.md)
+- [type AppsReportingAd.Status](./appsreportingad/status-data.typealias.md)
   Advertiser-configurable serving state of the ad at report time.
-- [type AppsReportingAd.SystemStatus](appsreportingad/systemstatus-data.typealias.md)
+- [type AppsReportingAd.SystemStatus](./appsreportingad/systemstatus-data.typealias.md)
   System-evaluated delivery state of the ad at report time.
 
 ## Properties
@@ -70,41 +71,45 @@ The `creative` field embeds an `AppsReportingCreative` summary capturing the cre
 - `creationTime` (date-time): Timestamp when the ad was created (ISO 8601).
 - `modificationTime` (date-time): Timestamp of the ad’s last modification (ISO 8601).
 - `displayStatus` (string): System-computed, rolled-up delivery state combining ad, ad group, and campaign conditions.
-- `creative` (AppsReportingCreative): See [`AppsReportingCreative`](appsreportingcreative.md) for details.
+
+  **Allowed Values**: `AD_GROUP_ON_HOLD`, `CAMPAIGN_ON_HOLD`, `DELETED`, `LIMITED`, `ON_HOLD`, `PAUSED`, `PROCESSING`, `RUNNING`
+- `creative` (AppsReportingCreative): See [`AppsReportingCreative`](./appsreportingcreative.md) for details.
 - `countryOrRegion` (string): Country or region groupBy dimension value, populated when `countryOrRegion` is specified in the request’s `groupBy`.
 - `deviceClass` (string): Device class groupBy dimension value, populated when `deviceClass` is specified in the request’s `groupBy`.
 
+  **Allowed Values**: `IPHONE`, `IPAD`
+
 ## See Also
 
-- [object AppsReportingRequest](appsreportingrequest.md)
+- [object AppsReportingRequest](./appsreportingrequest.md)
   Request body for apps reporting queries.
-- [object AppsReportingCampaign](appsreportingcampaign.md)
+- [object AppsReportingCampaign](./appsreportingcampaign.md)
   Campaign metadata for apps report rows.
-- [object AppsReportingAdGroup](appsreportingadgroup.md)
+- [object AppsReportingAdGroup](./appsreportingadgroup.md)
   Ad group metadata for apps report rows.
-- [object AppsReportingCreative](appsreportingcreative.md)
+- [object AppsReportingCreative](./appsreportingcreative.md)
   Creative metadata for apps ads.
-- [object AppsCampaignReportResponse](appscampaignreportresponse.md)
+- [object AppsCampaignReportResponse](./appscampaignreportresponse.md)
   The top-level response envelope for apps campaign-level reports.
-- [object AppsCampaignReportRow](appscampaignreportrow.md)
+- [object AppsCampaignReportRow](./appscampaignreportrow.md)
   A single row in an apps campaign report, containing campaign metadata, total metrics, and optional granular time-series metrics.
-- [object AppsCampaignReportSummary](appscampaignreportsummary.md)
+- [object AppsCampaignReportSummary](./appscampaignreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps campaign report.
-- [object AppsCampaignResultContainer](appscampaignresultcontainer.md)
+- [object AppsCampaignResultContainer](./appscampaignresultcontainer.md)
   Wraps the array of Apps campaign report rows along with a grand-total summary.
-- [object AppsAdGroupReportResponse](appsadgroupreportresponse.md)
+- [object AppsAdGroupReportResponse](./appsadgroupreportresponse.md)
   The top-level response envelope for apps ad group reports.
-- [object AppsAdGroupReportRow](appsadgroupreportrow.md)
+- [object AppsAdGroupReportRow](./appsadgroupreportrow.md)
   A single row in an Apps ad group report, containing ad group metadata, total metrics, and optional granular time-series metrics.
-- [object AppsAdGroupReportSummary](appsadgroupreportsummary.md)
+- [object AppsAdGroupReportSummary](./appsadgroupreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps ad group report.
-- [object AppsAdGroupResultContainer](appsadgroupresultcontainer.md)
+- [object AppsAdGroupResultContainer](./appsadgroupresultcontainer.md)
   Wraps the array of Apps ad group report rows along with a grand-total summary.
-- [object AppsAdReportResponse](appsadreportresponse.md)
+- [object AppsAdReportResponse](./appsadreportresponse.md)
   The top-level response envelope for apps ad-level reports.
-- [object AppsAdReportRow](appsadreportrow.md)
+- [object AppsAdReportRow](./appsadreportrow.md)
   A single row in an Apps ad-level report, containing ad metadata, total metrics, and optional granular time-series metrics.
-- [object AppsAdReportSummary](appsadreportsummary.md)
+- [object AppsAdReportSummary](./appsadreportsummary.md)
   The grand-total metrics aggregated across all rows in an Apps ad-level report.
 
 

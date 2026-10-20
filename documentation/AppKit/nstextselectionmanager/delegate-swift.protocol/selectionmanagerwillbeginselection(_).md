@@ -1,7 +1,8 @@
 # selectionManagerWillBeginSelection(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a selection gesture is about to begin.
 
@@ -12,6 +13,10 @@ Tells the delegate that a selection gesture is about to begin.
 
 ```swift
 optional func selectionManagerWillBeginSelection(_ selectionManager: NSTextSelectionManager)
+```
+
+```objc
+- (void) selectionManagerWillBeginSelection:(NSTextSelectionManager *) selectionManager;
 ```
 
 #### Discussion

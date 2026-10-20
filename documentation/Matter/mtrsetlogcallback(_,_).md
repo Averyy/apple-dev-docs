@@ -1,7 +1,8 @@
 # MTRSetLogCallback(_:_:)
 
 **Framework**: Matter  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func MTRSetLogCallback(_ logTypeThreshold: MTRLogType, _ callback: MTRLogCallback?)
+```
+
+```c
+extern void MTRSetLogCallback(MTRLogType logTypeThreshold, MTRLogCallback callback);
 ```
 
 

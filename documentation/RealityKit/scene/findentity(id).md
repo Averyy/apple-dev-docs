@@ -1,7 +1,8 @@
 # findEntity(id:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `Entity` with the given `Entity.ID` in the `Scene`.
 
@@ -34,9 +35,10 @@ Returns `Entity` with the given `Entity.ID` in the `Scene`.
 
 ## See Also
 
-- [func findEntity(named: String) -> Entity?](scene/findentity(named:).md)
+### Finding entities
+- [func findEntity(named: String) -> Entity?](./findentity%28named%29.md)
   Searches the scene’s anchor entity hierarchies for an entity with the given name.
-- [func performQuery(EntityQuery) -> QueryResult<Entity>](scene/performquery(_:).md)
+- [func performQuery(EntityQuery) -> QueryResult<Entity>](./performquery%28_%29.md)
   Returns all entities of the scene which pass the query.
 
 

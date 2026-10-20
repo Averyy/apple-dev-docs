@@ -1,11 +1,12 @@
 # HPKEKEMPublicKey Implementations
 
-**Framework**: Apple CryptoKit
+**Framework**: Apple CryptoKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [XWingMLKEM768X25519.PublicKey.EphemeralPrivateKey](xwingmlkem768x25519/publickey/ephemeralprivatekey.md)
+- [XWingMLKEM768X25519.PublicKey.EphemeralPrivateKey](./ephemeralprivatekey.md)
   The type of the ephemeral private key associated with this public key.
 
 

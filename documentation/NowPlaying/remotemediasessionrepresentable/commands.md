@@ -2,6 +2,7 @@
 
 **Framework**: Now Playing  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The commands supported by this session.
@@ -21,11 +22,11 @@ var commands: [MediaCommand] { get }
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](../publishing-remote-media-sessions.md)
 
 #### Discussion
 
-Compose commands using [`MediaCommand`](mediacommand.md) static factory methods like [`play(_:)`](mediacommand/play(_:).md), [`pause(_:)`](mediacommand/pause(_:).md), [`next(_:)`](mediacommand/next(_:).md), [`previous(_:)`](mediacommand/previous(_:).md), [`seekToPosition(_:)`](mediacommand/seektoposition(_:).md) and other playback and content commands.
+Compose commands using [`MediaCommand`](../mediacommand.md) static factory methods like [`play(_:)`](../mediacommand/play%28_%29.md), [`pause(_:)`](../mediacommand/pause%28_%29.md), [`next(_:)`](../mediacommand/next%28_%29.md), [`previous(_:)`](../mediacommand/previous%28_%29.md), [`seekToPosition(_:)`](../mediacommand/seektoposition%28_%29.md) and other playback and content commands.
 
 
 ---

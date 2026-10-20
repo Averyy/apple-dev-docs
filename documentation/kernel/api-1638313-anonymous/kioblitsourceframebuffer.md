@@ -1,14 +1,15 @@
 # kIOBlitSourceFramebuffer
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOBlitSourceFramebuffer = 0x00001000
 ```
 

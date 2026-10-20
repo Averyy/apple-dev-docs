@@ -1,14 +1,15 @@
 # SecureDTFindNodeWithPhandle
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 int SecureDTFindNodeWithPhandle(const uint32_t phandle, const DeviceTreeNode **const devicetreeNode);
 ```
 

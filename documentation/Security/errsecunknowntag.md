@@ -1,7 +1,8 @@
 # errSecUnknownTag
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An unknown tag was detected.
 
@@ -18,6 +19,10 @@ An unknown tag was detected.
 
 ```swift
 var errSecUnknownTag: OSStatus { get }
+```
+
+```c
+errSecUnknownTag
 ```
 
 

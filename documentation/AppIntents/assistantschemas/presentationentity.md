@@ -1,7 +1,8 @@
 # AssistantSchemas.PresentationEntity
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for app entities that describe presentation data.
 
@@ -23,20 +24,20 @@ protocol PresentationEntity : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var document: some AssistantSchemas.Entity](assistantschemas/presentationentity/document.md)
+- [var document: some AssistantSchemas.Entity](./presentationentity/document.md)
   The app entity describes a presentation.
-- [var slide: some AssistantSchemas.Entity](assistantschemas/presentationentity/slide.md)
+- [var slide: some AssistantSchemas.Entity](./presentationentity/slide.md)
   The app entity describes a slide.
-- [var template: some AssistantSchemas.Entity](assistantschemas/presentationentity/template.md)
+- [var template: some AssistantSchemas.Entity](./presentationentity/template.md)
   The app entity describes a template for a presentation.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
-- [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
+- [AssistantSchema.EntitySchema](../assistantschema/entityschema.md)
+- [AssistantSchemas.EntitySchema](./entityschema.md)
 
 
 ---

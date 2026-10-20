@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kChipSetTypeCore2001](1646267-anonymous/kchipsettypecore2001.md)
-- [kChipSetTypeCore99](1646267-anonymous/kchipsettypecore99.md)
-- [kChipSetTypeGossamer](1646267-anonymous/kchipsettypegossamer.md)
-- [kChipSetTypePowerExpress](1646267-anonymous/kchipsettypepowerexpress.md)
-- [kChipSetTypePowerStar](1646267-anonymous/kchipsettypepowerstar.md)
-- [kChipSetTypePowerSurge](1646267-anonymous/kchipsettypepowersurge.md)
+- [kChipSetTypeCore2001](./api-1646267-anonymous/kchipsettypecore2001.md)
+- [kChipSetTypeCore99](./api-1646267-anonymous/kchipsettypecore99.md)
+- [kChipSetTypeGossamer](./api-1646267-anonymous/kchipsettypegossamer.md)
+- [kChipSetTypePowerExpress](./api-1646267-anonymous/kchipsettypepowerexpress.md)
+- [kChipSetTypePowerStar](./api-1646267-anonymous/kchipsettypepowerstar.md)
+- [kChipSetTypePowerSurge](./api-1646267-anonymous/kchipsettypepowersurge.md)
 
 
 ---

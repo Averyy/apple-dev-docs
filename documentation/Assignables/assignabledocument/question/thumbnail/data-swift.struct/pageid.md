@@ -1,7 +1,8 @@
 # pageID
 
 **Framework**: Assignables  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ID of the page this thumbnail was generated from.
 
@@ -9,7 +10,7 @@ The ID of the page this thumbnail was generated from.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,9 +20,10 @@ var pageID: AssignableDocument.Page.ID
 
 ## See Also
 
-- [var box: AssignableDocument.QuestionBox](assignabledocument/question/thumbnail/data-swift.struct/box.md)
+### Inspecting thumbnail data
+- [var box: AssignableDocument.QuestionBox](./box.md)
   A copy of the box on the page this thumbnail was generated from.
-- [var image: UIImage](assignabledocument/question/thumbnail/data-swift.struct/image.md)
+- [var image: UIImage](./image.md)
   The thumbnail image of the question.
 
 

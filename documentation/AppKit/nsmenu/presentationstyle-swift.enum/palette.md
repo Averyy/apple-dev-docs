@@ -1,7 +1,8 @@
 # NSMenu.PresentationStyle.palette
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A menu presentation style where items to display align horizontally.
 
@@ -14,13 +15,17 @@ A menu presentation style where items to display align horizontally.
 case palette
 ```
 
+```c
+NSMenuPresentationStylePalette
+```
+
 #### Discussion
 
-You can turn any menu into a palette menu by setting the menu’s presentation style to `.palette`. For each menu item, set its image. For template images, AppKit automatically adds the appropriate selection tint. Alternatively you can set the [`offStateImage`](nsmenuitem/offstateimage.md) and the [`onStateImage`](nsmenuitem/onstateimage.md). Use the `onStateImage` to indicate selection.
+You can turn any menu into a palette menu by setting the menu’s presentation style to `.palette`. For each menu item, set its image. For template images, AppKit automatically adds the appropriate selection tint. Alternatively you can set the [`offStateImage`](../../nsmenuitem/offstateimage.md) and the [`onStateImage`](../../nsmenuitem/onstateimage.md). Use the `onStateImage` to indicate selection.
 
 The following example creates a presentation style menu that displays a list of sport images. When a menu item selects, the system automatically tints the image.
 
-![A palette style menu that expands to the right from a selected sports menu item listing a series of sport images horizonally. The second item in the list is tinted indicating selection.](/images/com.apple.appkit/media-4304532@2x.png)
+![A palette style menu that expands to the right from a selected sports menu item listing a series of sport images horizonally. The second item in the list is tinted indicating selection.](https://developer.apple.com/tutorials/images/com.apple.appkit/media-4304532@2x.png)
 
 **Swift**:
 
@@ -94,7 +99,8 @@ menuItem.submenu = menu;
 
 ## See Also
 
-- [NSMenu.PresentationStyle.regular](nsmenu/presentationstyle-swift.enum/regular.md)
+### Defining the menu style
+- [NSMenu.PresentationStyle.regular](./regular.md)
   The default presentation style for a menu.
 
 

@@ -1,19 +1,20 @@
 # merge
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds all members of a dictionary to this dictionary.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 bool merge(const OSDictionary *otherDictionary);
 ```
 
@@ -31,15 +32,16 @@ Adds all members of a dictionary to this dictionary. Any keys in the dictionary 
 
 ## See Also
 
-- [withCapacity](osdictionary/withcapacity.md)
+### Creating a Dictionary
+- [withCapacity](./withcapacity.md)
   Allocates an OSDictionary object with preallocated capacity.
-- [withDictionary](osdictionary/withdictionary.md)
+- [withDictionary](./withdictionary.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [withObjects](osdictionary/withobjects.md)
+- [withObjects](./withobjects.md)
   Allocates an OSDictionary object with given members and preallocated capacity.
-- [OSDictionaryCreate](osdictionarycreate.md)
-- [free](osdictionary/free.md)
-- [flushCollection](osdictionary/flushcollection.md)
+- [OSDictionaryCreate](../osdictionarycreate.md)
+- [free](./free.md)
+- [flushCollection](./flushcollection.md)
   Removes and drops references to all members of dictionary.
 
 

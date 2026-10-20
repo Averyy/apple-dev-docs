@@ -1,7 +1,8 @@
 # StationGenres.Relationships.StationGenresStationsRelationship
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A relationship from the station genre to associated stations.
 
@@ -10,7 +11,7 @@ A relationship from the station genre to associated stations.
 
 ## Declaration
 
-```swift
+```
 object StationGenres.Relationships.StationGenresStationsRelationship
 ```
 

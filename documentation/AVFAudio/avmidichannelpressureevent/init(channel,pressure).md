@@ -1,7 +1,8 @@
 # init(channel:pressure:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pressure event with a channel and pressure value.
 
@@ -17,6 +18,10 @@ Creates a pressure event with a channel and pressure value.
 
 ```swift
 init(channel: UInt32, pressure: UInt32)
+```
+
+```objc
+- (instancetype) initWithChannel:(UInt32) channel pressure:(UInt32) pressure;
 ```
 
 

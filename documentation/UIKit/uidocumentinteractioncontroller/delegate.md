@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate you want to receive document interaction notifications.
 
@@ -17,15 +18,20 @@ The delegate you want to receive document interaction notifications.
 weak var delegate: (any UIDocumentInteractionControllerDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIDocumentInteractionControllerDelegate> delegate;
+```
+
 #### Discussion
 
-You can implement a delegate object to track user interactions with menu items displayed by the document interaction controller. For more information, see [`UIDocumentInteractionControllerDelegate`](uidocumentinteractioncontrollerdelegate.md).
+You can implement a delegate object to track user interactions with menu items displayed by the document interaction controller. For more information, see [`UIDocumentInteractionControllerDelegate`](../uidocumentinteractioncontrollerdelegate.md).
 
 The default value of this property is `nil`.
 
 ## See Also
 
-- [protocol UIDocumentInteractionControllerDelegate](uidocumentinteractioncontrollerdelegate.md)
+### Handling document-related interactions
+- [protocol UIDocumentInteractionControllerDelegate](../uidocumentinteractioncontrollerdelegate.md)
   A set of methods you can implement to respond to messages from a document interaction controller.
 
 

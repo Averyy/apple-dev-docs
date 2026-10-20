@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](cksyncengine-5sie5/recordzonechangebatch/description.md)
+- [var description: String](./description.md)
   The textual description of the batch that’s suitable for logging.
 
 

@@ -1,7 +1,8 @@
 # SystemLanguageModel.Variant
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The variant of an on-device model.
 
@@ -21,25 +22,26 @@ struct Variant
 ## Topics
 
 ### Accessing the core and advanced model variants
-- [static var core3: SystemLanguageModel.Variant](systemlanguagemodel/variant-swift.struct/core3.md)
+- [static var core3: SystemLanguageModel.Variant](./variant-swift.struct/core3.md)
   AFM 3 Core.
-- [static var coreAdvanced3: SystemLanguageModel.Variant](systemlanguagemodel/variant-swift.struct/coreadvanced3.md)
+- [static var coreAdvanced3: SystemLanguageModel.Variant](./variant-swift.struct/coreadvanced3.md)
   AFM 3 Core Advanced.
 ### Getting the model display name
-- [let displayName: String](systemlanguagemodel/variant-swift.struct/displayname.md)
+- [let displayName: String](./variant-swift.struct/displayname.md)
   The user-facing name of the variant.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var variant: SystemLanguageModel.Variant](systemlanguagemodel/variant-swift.property.md)
+### Accessing the model variant
+- [var variant: SystemLanguageModel.Variant](./variant-swift.property.md)
   The variant of the on-device model backing this instance.
 
 

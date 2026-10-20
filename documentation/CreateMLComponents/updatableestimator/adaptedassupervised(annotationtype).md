@@ -1,7 +1,8 @@
 # adaptedAsSupervised(annotationType:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exposes this estimator as a supervised estimator.
 
@@ -22,7 +23,8 @@ func adaptedAsSupervised<Annotation>(annotationType: Annotation.Type = Annotatio
 
 ## See Also
 
-- [func adaptedAsTemporal() -> UpdatableEstimatorToTemporalAdaptor<Self>](updatableestimator/adaptedastemporal.md)
+### Adapting
+- [func adaptedAsTemporal() -> UpdatableEstimatorToTemporalAdaptor<Self>](./adaptedastemporal%28%29.md)
   Exposes this estimator as a temporal estimator.
 
 

@@ -1,18 +1,19 @@
 # shouldEnableLimits
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the sliding joint is restricted so that the objects may only slide a finite distance from the initial anchor point.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the sliding joint is restricted so that t
 var shouldEnableLimits: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL shouldEnableLimits;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). If [`true`](https://developer.apple.com/documentation/swift/true), then the [`lowerDistanceLimit`](skphysicsjointsliding/lowerdistancelimit.md) and [`upperDistanceLimit`](skphysicsjointsliding/upperdistancelimit.md) properties are used to limit the distance of the sliding joint.
+The default value is [`false`](../../Swift/false.md). If [`true`](../../Swift/true.md), then the [`lowerDistanceLimit`](./lowerdistancelimit.md) and [`upperDistanceLimit`](./upperdistancelimit.md) properties are used to limit the distance of the sliding joint.
 
 ## See Also
 
-- [var lowerDistanceLimit: CGFloat](skphysicsjointsliding/lowerdistancelimit.md)
+### Configuring a Sliding Joint
+- [var lowerDistanceLimit: CGFloat](./lowerdistancelimit.md)
   The smallest distance allowed for the sliding joint.
-- [var upperDistanceLimit: CGFloat](skphysicsjointsliding/upperdistancelimit.md)
+- [var upperDistanceLimit: CGFloat](./upperdistancelimit.md)
   The largest distance allowed for the sliding joint.
 
 

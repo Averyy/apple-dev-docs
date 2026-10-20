@@ -1,7 +1,8 @@
 # merchantDomain
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The merchant’s top-level domain that the Apple Pay server associates with the payment token.
 
@@ -18,17 +19,22 @@ The merchant’s top-level domain that the Apple Pay server associates with the 
 var merchantDomain: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * merchantDomain;
+```
+
 #### Discussion
 
 This value is optional; provide the top-level domain for the merchant if it’s available.
 
 ## See Also
 
-- [var merchantIdentifier: String](pkpaymenttokencontext/merchantidentifier.md)
+### Specifying the merchant
+- [var merchantIdentifier: String](./merchantidentifier.md)
   The Apply Pay merchant identifier.
-- [var merchantName: String](pkpaymenttokencontext/merchantname.md)
+- [var merchantName: String](./merchantname.md)
   The merchant’s display name that the Apple Pay server associates with the payment token.
-- [var externalIdentifier: String](pkpaymenttokencontext/externalidentifier.md)
+- [var externalIdentifier: String](./externalidentifier.md)
   An external identifier for the merchant.
 
 

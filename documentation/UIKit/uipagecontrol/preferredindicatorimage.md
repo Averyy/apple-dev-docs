@@ -1,7 +1,8 @@
 # preferredIndicatorImage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred image for indicators.
 
@@ -18,17 +19,22 @@ The preferred image for indicators.
 var preferredIndicatorImage: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * preferredIndicatorImage;
+```
+
 ## See Also
 
-- [func indicatorImage(forPage: Int) -> UIImage?](uipagecontrol/indicatorimage(forpage:).md)
+### Managing the indicator images
+- [func indicatorImage(forPage: Int) -> UIImage?](./indicatorimage%28forpage%29.md)
   Returns the override image for the indicator of the specified page.
-- [func setIndicatorImage(UIImage?, forPage: Int)](uipagecontrol/setindicatorimage(_:forpage:).md)
+- [func setIndicatorImage(UIImage?, forPage: Int)](./setindicatorimage%28_,forpage%29.md)
   Registers an override image for the indicator of the specified page.
-- [var preferredCurrentPageIndicatorImage: UIImage?](uipagecontrol/preferredcurrentpageindicatorimage.md)
+- [var preferredCurrentPageIndicatorImage: UIImage?](./preferredcurrentpageindicatorimage.md)
   The preferred image for the current page indicator.
-- [func currentPageIndicatorImage(forPage: Int) -> UIImage?](uipagecontrol/currentpageindicatorimage(forpage:).md)
+- [func currentPageIndicatorImage(forPage: Int) -> UIImage?](./currentpageindicatorimage%28forpage%29.md)
   Returns the override image for the current page indicator of the specified page.
-- [func setCurrentPageIndicatorImage(UIImage?, forPage: Int)](uipagecontrol/setcurrentpageindicatorimage(_:forpage:).md)
+- [func setCurrentPageIndicatorImage(UIImage?, forPage: Int)](./setcurrentpageindicatorimage%28_,forpage%29.md)
   Registers an override image for the current page indicator of the specified page.
 
 

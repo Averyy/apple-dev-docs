@@ -1,7 +1,8 @@
 # newConnectionLimit(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configure the listener’s new connection limit.
 

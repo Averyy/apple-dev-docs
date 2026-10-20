@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The relevance of a widget’s content to the user.
@@ -20,9 +21,16 @@ The relevance of a widget’s content to the user.
 var relevance: TimelineEntryRelevance? { get }
 ```
 
+## Default Implementations
+
+### TimelineEntry Implementations
+- [var relevance: TimelineEntryRelevance?](./relevance-9msg1.md)
+  The relevance of a widget’s content to the user.
+
 ## See Also
 
-- [var date: Date](timelineentry/date.md)
+### Configuring Timeline Entry Properties
+- [var date: Date](./date.md)
   The date for WidgetKit to render a widget.
 
 

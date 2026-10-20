@@ -1,7 +1,8 @@
 # InsetTableStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The table style that describes the behavior and appearance of a table with its content and selection inset from the table edges.
 
@@ -21,26 +22,27 @@ struct InsetTableStyle
 
 #### Overview
 
-You can also use [`inset`](tablestyle/inset.md) to construct this style.
+You can also use [`inset`](./tablestyle/inset.md) to construct this style.
 
 ## Topics
 
 ### Creating the table style
-- [init()](insettablestyle/init.md)
+- [init()](./insettablestyle/init%28%29.md)
   Creates a default inset table style, with alternating row backgrounds.
-- [init(alternatesRowBackgrounds: Bool)](insettablestyle/init(alternatesrowbackgrounds:).md)
+- [init(alternatesRowBackgrounds: Bool)](./insettablestyle/init%28alternatesrowbackgrounds%29.md)
   Creates an inset table style with optional alternating row backgrounds.
 
 ## Relationships
 
 ### Conforms To
-- [TableStyle](tablestyle.md)
+- [TableStyle](./tablestyle.md)
 
 ## See Also
 
-- [struct AutomaticTableStyle](automatictablestyle.md)
+### Supporting types
+- [struct AutomaticTableStyle](./automatictablestyle.md)
   The default table style in the current context.
-- [struct BorderedTableStyle](borderedtablestyle.md)
+- [struct BorderedTableStyle](./borderedtablestyle.md)
   The table style that describes the behavior and appearance of a table with standard border.
 
 

@@ -1,7 +1,8 @@
 # errSecPVCAlreadyConfigured
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The PVC is already configured.
 
@@ -18,6 +19,10 @@ The PVC is already configured.
 
 ```swift
 var errSecPVCAlreadyConfigured: OSStatus { get }
+```
+
+```c
+errSecPVCAlreadyConfigured
 ```
 
 

@@ -1,7 +1,8 @@
 # CFNetServiceMonitorType.TXT
 
 **Framework**: CFNetwork  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Watch for TXT record changes.
 
@@ -17,6 +18,10 @@ Watch for TXT record changes.
 
 ```swift
 case TXT
+```
+
+```c
+kCFNetServiceMonitorTXT
 ```
 
 

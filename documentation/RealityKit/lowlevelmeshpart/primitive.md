@@ -1,7 +1,8 @@
 # primitive
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The geometric primitive to use when rendering this part.
 
@@ -23,9 +24,10 @@ Corresponds to `MTLPrimitiveType`.
 
 ## See Also
 
-- [var windingOrder: MTLWinding](lowlevelmeshpart/windingorder.md)
+### Configuring the geometry
+- [var windingOrder: MTLWinding](./windingorder.md)
   The winding order of front-facing polygons.
-- [func setIndexRange(indexOffset: Int, indexCount: Int) throws(LowLevelRenderContextError)](lowlevelmeshpart/setindexrange(indexoffset:indexcount:).md)
+- [func setIndexRange(indexOffset: Int, indexCount: Int) throws(LowLevelRenderContextError)](./setindexrange%28indexoffset,indexcount%29.md)
   Updates the first index and index count for this mesh part.
 
 

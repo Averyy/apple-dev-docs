@@ -1,7 +1,8 @@
 # kSecAttrAuthenticationTypeHTMLForm
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 HTML form based authentication.
 
@@ -18,6 +19,10 @@ HTML form based authentication.
 
 ```swift
 let kSecAttrAuthenticationTypeHTMLForm: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrAuthenticationTypeHTMLForm;
 ```
 
 

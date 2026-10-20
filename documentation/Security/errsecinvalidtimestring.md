@@ -1,7 +1,8 @@
 # errSecInvalidTimeString
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The time specified is not valid.
 
@@ -18,6 +19,10 @@ The time specified is not valid.
 
 ```swift
 var errSecInvalidTimeString: OSStatus { get }
+```
+
+```c
+errSecInvalidTimeString
 ```
 
 

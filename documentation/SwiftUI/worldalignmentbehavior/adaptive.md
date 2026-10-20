@@ -1,7 +1,8 @@
 # adaptive
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 When lifted above eye level, the volume will tilt so the front remains fully visible.
 

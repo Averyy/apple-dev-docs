@@ -1,7 +1,8 @@
 # MPNowPlayingInfoLanguageOption
 
 **Framework**: Media Player  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A set of interfaces for setting the language option for the Now Playing item.
 
@@ -20,57 +21,62 @@ A set of interfaces for setting the language option for the Now Playing item.
 class MPNowPlayingInfoLanguageOption
 ```
 
+```objc
+@interface MPNowPlayingInfoLanguageOption : NSObject
+```
+
 #### Overview
 
-The [`MPNowPlayingInfoLanguageOption`](mpnowplayinginfolanguageoption.md) and [`MPNowPlayingInfoLanguageOptionGroup`](mpnowplayinginfolanguageoptiongroup.md) classes provide interfaces for setting information about language options, for example, audio and subtitles, in the Now Playing information area.
+The [`MPNowPlayingInfoLanguageOption`](./mpnowplayinginfolanguageoption.md) and [`MPNowPlayingInfoLanguageOptionGroup`](./mpnowplayinginfolanguageoptiongroup.md) classes provide interfaces for setting information about language options, for example, audio and subtitles, in the Now Playing information area.
 
 ## Topics
 
 ### Creating a new language option
-- [init(type: MPNowPlayingInfoLanguageOptionType, languageTag: String, characteristics: [String]?, displayName: String, identifier: String)](mpnowplayinginfolanguageoption/init(type:languagetag:characteristics:displayname:identifier:).md)
+- [init(type: MPNowPlayingInfoLanguageOptionType, languageTag: String, characteristics: [String]?, displayName: String, identifier: String)](./mpnowplayinginfolanguageoption/init%28type,languagetag,characteristics,displayname,identifier%29.md)
   Creates a single language option.
 ### Retrieving language option properties
-- [var displayName: String?](mpnowplayinginfolanguageoption/displayname.md)
+- [var displayName: String?](./mpnowplayinginfolanguageoption/displayname.md)
   The display name for a language option.
-- [var identifier: String?](mpnowplayinginfolanguageoption/identifier.md)
+- [var identifier: String?](./mpnowplayinginfolanguageoption/identifier.md)
   The unique identifier for the language option.
-- [var languageOptionCharacteristics: [String]?](mpnowplayinginfolanguageoption/languageoptioncharacteristics.md)
+- [var languageOptionCharacteristics: [String]?](./mpnowplayinginfolanguageoption/languageoptioncharacteristics.md)
   The characteristics that describe the content of the language option.
-- [var languageTag: String?](mpnowplayinginfolanguageoption/languagetag.md)
+- [var languageTag: String?](./mpnowplayinginfolanguageoption/languagetag.md)
   The abbreviated language code for the language option.
-- [var languageOptionType: MPNowPlayingInfoLanguageOptionType](mpnowplayinginfolanguageoption/languageoptiontype.md)
+- [var languageOptionType: MPNowPlayingInfoLanguageOptionType](./mpnowplayinginfolanguageoption/languageoptiontype.md)
   The type of language option.
-- [enum MPNowPlayingInfoLanguageOptionType](mpnowplayinginfolanguageoptiontype.md)
+- [enum MPNowPlayingInfoLanguageOptionType](./mpnowplayinginfolanguageoptiontype.md)
   The language option type to use for the Now Playing item.
 ### Retrieving a language option based on system preferences
-- [func isAutomaticAudibleLanguageOption() -> Bool](mpnowplayinginfolanguageoption/isautomaticaudiblelanguageoption.md)
+- [func isAutomaticAudibleLanguageOption() -> Bool](./mpnowplayinginfolanguageoption/isautomaticaudiblelanguageoption%28%29.md)
   Returns a Boolean value that determines whether to use the best audible language option based on the system preferences.
-- [func isAutomaticLegibleLanguageOption() -> Bool](mpnowplayinginfolanguageoption/isautomaticlegiblelanguageoption.md)
+- [func isAutomaticLegibleLanguageOption() -> Bool](./mpnowplayinginfolanguageoption/isautomaticlegiblelanguageoption%28%29.md)
   Returns a Boolean value that determines whether to use the best legible language option based on the system preferences.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Becoming a now playable app](becoming-a-now-playable-app.md)
+### Now Playing information
+- [Becoming a now playable app](./becoming-a-now-playable-app.md)
   Ensure your app is eligible to become the Now Playing app by adopting best practices for providing Now Playing info and registering for remote command center actions.
-- [class MPNowPlayingSession](mpnowplayingsession.md)
+- [class MPNowPlayingSession](./mpnowplayingsession.md)
   An object that manages Now Playing information and remote commands for multiple players.
-- [class MPNowPlayingInfoCenter](mpnowplayinginfocenter.md)
+- [class MPNowPlayingInfoCenter](./mpnowplayinginfocenter.md)
   An object for setting the Now Playing information for media that your app plays.
-- [class MPNowPlayingInfoLanguageOptionGroup](mpnowplayinginfolanguageoptiongroup.md)
+- [class MPNowPlayingInfoLanguageOptionGroup](./mpnowplayinginfolanguageoptiongroup.md)
   A grouped set of language options where only a single language option can be active at a time.
-- [Language option characteristic constants](language-option-characteristic-constants.md)
+- [Language option characteristic constants](./language-option-characteristic-constants.md)
   The constants for defining language characteristics.
 
 

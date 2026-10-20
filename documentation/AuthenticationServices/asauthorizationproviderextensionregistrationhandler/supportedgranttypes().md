@@ -1,7 +1,8 @@
 # supportedGrantTypes()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 14.0+
@@ -12,15 +13,20 @@
 optional func supportedGrantTypes() -> ASAuthorizationProviderExtensionSupportedGrantTypes
 ```
 
+```objc
+- (ASAuthorizationProviderExtensionSupportedGrantTypes) supportedGrantTypes;
+```
+
 ## Mentions
 
-- [Creating extensions that support Platform SSO](creating-extensions-that-support-platform-sso.md)
-- [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
+- [Creating extensions that support Platform SSO](../creating-extensions-that-support-platform-sso.md)
+- [Implementing web-based authentication with Platform Single Sign-on](../implementing-web-based-authentication.md)
 
 ## See Also
 
-- [func protocolVersion() -> ASAuthorizationProviderExtensionPlatformSSOProtocolVersion](asauthorizationproviderextensionregistrationhandler/protocolversion.md)
-- [func registrationDidCancel()](asauthorizationproviderextensionregistrationhandler/registrationdidcancel.md)
+### Instance Methods
+- [func protocolVersion() -> ASAuthorizationProviderExtensionPlatformSSOProtocolVersion](./protocolversion%28%29.md)
+- [func registrationDidCancel()](./registrationdidcancel%28%29.md)
 
 
 ---

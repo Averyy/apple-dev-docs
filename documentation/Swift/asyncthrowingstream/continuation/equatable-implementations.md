@@ -1,13 +1,14 @@
 # Equatable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func != (borrowing Self, borrowing Self) -> Bool](asyncthrowingstream/continuation/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func == (AsyncThrowingStream<Element, Failure>.Continuation, AsyncThrowingStream<Element, Failure>.Continuation) -> Bool](asyncthrowingstream/continuation/==(_:_:).md)
+- [static func == (AsyncThrowingStream<Element, Failure>.Continuation, AsyncThrowingStream<Element, Failure>.Continuation) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 
 

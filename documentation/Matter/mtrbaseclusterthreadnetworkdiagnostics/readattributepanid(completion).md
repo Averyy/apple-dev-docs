@@ -1,7 +1,8 @@
 # readAttributePanId(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePanId(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePanId() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePanIdWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

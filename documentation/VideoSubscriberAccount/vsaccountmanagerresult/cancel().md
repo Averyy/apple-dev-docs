@@ -1,7 +1,8 @@
 # cancel()
 
 **Framework**: Video Subscriber Account  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels an in-progress request for subscriber account information.
 
@@ -9,7 +10,7 @@ Cancels an in-progress request for subscriber account information.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,9 +20,13 @@ Cancels an in-progress request for subscriber account information.
 func cancel()
 ```
 
+```objc
+- (void) cancel;
+```
+
 #### Discussion
 
-Your app uses this method to notify a [`VSAccountManager`](vsaccountmanager.md) instance to cancel the current request for subscriber account information. No guarantees are made that the cancellation request will succeed or finish immediately.
+Your app uses this method to notify a [`VSAccountManager`](../vsaccountmanager.md) instance to cancel the current request for subscriber account information. No guarantees are made that the cancellation request will succeed or finish immediately.
 
 
 ---

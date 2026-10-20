@@ -1,7 +1,8 @@
 # Edge3D.bottom
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 1.0+
@@ -14,11 +15,12 @@ case bottom
 
 ## See Also
 
-- [Edge3D.top](edge3d/top.md)
-- [Edge3D.leading](edge3d/leading.md)
-- [Edge3D.trailing](edge3d/trailing.md)
-- [Edge3D.front](edge3d/front.md)
-- [Edge3D.back](edge3d/back.md)
+### Getting the edges
+- [Edge3D.top](./top.md)
+- [Edge3D.leading](./leading.md)
+- [Edge3D.trailing](./trailing.md)
+- [Edge3D.front](./front.md)
+- [Edge3D.back](./back.md)
 
 
 ---

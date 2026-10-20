@@ -1,7 +1,8 @@
 # setCameraSource(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the HomeKit camera source displayed by this interface object.
 
@@ -12,6 +13,10 @@ Set the HomeKit camera source displayed by this interface object.
 
 ```swift
 func setCameraSource(_ cameraSource: HMCameraSource?)
+```
+
+```objc
+- (void) setCameraSource:(HMCameraSource *) cameraSource;
 ```
 
 #### Discussion

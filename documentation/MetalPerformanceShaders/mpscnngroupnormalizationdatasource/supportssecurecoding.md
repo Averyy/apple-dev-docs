@@ -1,7 +1,8 @@
 # supportsSecureCoding
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 optional static var supportsSecureCoding: Bool { get }
+```
+
+```objc
+@property (class, readonly) BOOL supportsSecureCoding;
 ```
 
 

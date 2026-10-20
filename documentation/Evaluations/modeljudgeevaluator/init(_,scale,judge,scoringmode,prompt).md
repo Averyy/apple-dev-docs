@@ -1,7 +1,8 @@
 # init(_:scale:judge:scoringMode:prompt:)
 
 **Framework**: Evaluations  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a single-metric evaluator with a custom judge prompt.
 
@@ -30,7 +31,8 @@ init(_ name: String, scale: ScoringScale, judge: any LanguageModel, scoringMode:
 
 ## See Also
 
-- [init(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode)](modeljudgeevaluator/init(_:scale:judge:scoringmode:).md)
+### Creating a single-dimension evaluator
+- [init(String, scale: ScoringScale, judge: any LanguageModel, scoringMode: ScoringMode)](./init%28_,scale,judge,scoringmode%29.md)
   Creates a single-metric evaluator with default prompt configuration.
 
 

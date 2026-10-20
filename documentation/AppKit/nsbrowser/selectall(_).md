@@ -1,12 +1,13 @@
 # selectAll(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Selects all cells in the last column of the browser.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,27 @@ Selects all cells in the last column of the browser.
 func selectAll(_ sender: Any?)
 ```
 
+```objc
+- (void) selectAll:(id) sender;
+```
+
 ## See Also
 
-- [var selectedColumn: Int](nsbrowser/selectedcolumn.md)
+### Related Documentation
+- [var selectedColumn: Int](./selectedcolumn.md)
   The index of the last column with a selected item.
-- [func selectedCell(inColumn: Int) -> Any?](nsbrowser/selectedcell(incolumn:).md)
+### Managing Selection
+- [func selectedCell(inColumn: Int) -> Any?](./selectedcell%28incolumn%29.md)
   Returns the last (lowest) cell selected in the given column.
-- [var selectedCells: [NSCell]?](nsbrowser/selectedcells.md)
+- [var selectedCells: [NSCell]?](./selectedcells.md)
   All cells selected in the rightmost column.
-- [func selectedRow(inColumn: Int) -> Int](nsbrowser/selectedrow(incolumn:).md)
+- [func selectedRow(inColumn: Int) -> Int](./selectedrow%28incolumn%29.md)
   Returns the row index of the selected cell in the specified column.
-- [func selectRow(Int, inColumn: Int)](nsbrowser/selectrow(_:incolumn:).md)
+- [func selectRow(Int, inColumn: Int)](./selectrow%28_,incolumn%29.md)
   Selects the cell at the specified row and column index.
-- [var selectionIndexPath: IndexPath?](nsbrowser/selectionindexpath.md)
+- [var selectionIndexPath: IndexPath?](./selectionindexpath.md)
   The index path of the item selected in the browser.
-- [var selectionIndexPaths: [IndexPath]](nsbrowser/selectionindexpaths.md)
+- [var selectionIndexPaths: [IndexPath]](./selectionindexpaths.md)
   An array containing the index paths of all items selected in the browser.
 
 

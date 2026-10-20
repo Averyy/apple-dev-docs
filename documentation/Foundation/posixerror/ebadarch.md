@@ -1,7 +1,8 @@
 # EBADARCH
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Bad CPU type in executable.
 

@@ -1,7 +1,8 @@
 # LayerRenderer.Drawable.View.TextureMap
 
 **Framework**: Compositor Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides details about the textures associated with a view.
 
@@ -22,25 +23,26 @@ A texture map helps you locate the content for a specific view within a texture.
 ## Topics
 
 ### Getting the viewport
-- [var viewport: MTLViewport](layerrenderer/drawable/view/texturemap-swift.struct/viewport.md)
+- [var viewport: MTLViewport](./texturemap-swift.struct/viewport.md)
   The portion of the texture that the view uses to draw its content.
 ### Getting the texture indices
-- [var sliceIndex: Int](layerrenderer/drawable/view/texturemap-swift.struct/sliceindex.md)
+- [var sliceIndex: Int](./texturemap-swift.struct/sliceindex.md)
   The index of the view’s texture in an array-based texture type.
-- [var textureIndex: Int](layerrenderer/drawable/view/texturemap-swift.struct/textureindex.md)
+- [var textureIndex: Int](./texturemap-swift.struct/textureindex.md)
   The index of the view’s textures in the drawable.
 ### Creating a texture map
-- [init()](layerrenderer/drawable/view/texturemap-swift.struct/init.md)
+- [init()](./texturemap-swift.struct/init%28%29.md)
   Creates an uninitialized texture map.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../../../../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [var textureMap: LayerRenderer.Drawable.View.TextureMap](layerrenderer/drawable/view/texturemap-swift.property.md)
+### Getting the view’s texture map
+- [var textureMap: LayerRenderer.Drawable.View.TextureMap](./texturemap-swift.property.md)
   The texture map for a view.
 
 

@@ -1,7 +1,8 @@
 # errSecModuleManagerInitializeFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A module failed to initialize.
 
@@ -18,6 +19,10 @@ A module failed to initialize.
 
 ```swift
 var errSecModuleManagerInitializeFailed: OSStatus { get }
+```
+
+```c
+errSecModuleManagerInitializeFailed
 ```
 
 

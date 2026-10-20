@@ -1,7 +1,8 @@
 # isCurrentUser
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this participant represents the owner of this account.
 
@@ -19,20 +20,26 @@ A Boolean value indicating whether this participant represents the owner of this
 var isCurrentUser: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isCurrentUser) BOOL currentUser;
+```
+
 ## See Also
 
-- [Calendar and Reminders Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
-- [var name: String?](ekparticipant/name.md)
+### Related Documentation
+- [Calendar and Reminders Programming Guide](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/EventKitProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009765)
+### Accessing Participant Properties
+- [var name: String?](./name.md)
   The participant’s name.
-- [var participantRole: EKParticipantRole](ekparticipant/participantrole.md)
+- [var participantRole: EKParticipantRole](./participantrole.md)
   The participant’s role in the event.
-- [var participantStatus: EKParticipantStatus](ekparticipant/participantstatus.md)
+- [var participantStatus: EKParticipantStatus](./participantstatus.md)
   The participant’s attendance status.
-- [var participantType: EKParticipantType](ekparticipant/participanttype.md)
+- [var participantType: EKParticipantType](./participanttype.md)
   The participant’s type.
-- [var url: URL](ekparticipant/url.md)
+- [var url: URL](./url.md)
   The URL representing this participant.
-- [var contactPredicate: NSPredicate](ekparticipant/contactpredicate.md)
+- [var contactPredicate: NSPredicate](./contactpredicate.md)
   A predicate to use with the Contacts framework to retrieve the corresponding contact instance.
 
 

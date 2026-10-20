@@ -1,7 +1,8 @@
 # GKViewController
 
 **Framework**: GameKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The abstract base protocol adopted by GameKit view controller classes.
 
@@ -14,26 +15,31 @@ The abstract base protocol adopted by GameKit view controller classes.
 protocol GKViewController
 ```
 
+```objc
+@protocol GKViewController
+```
+
 ## Relationships
 
 ### Conforming Types
-- [GKAchievementViewController](gkachievementviewcontroller.md)
-- [GKChallengesViewController](gkchallengesviewcontroller.md)
-- [GKFriendRequestComposeViewController](gkfriendrequestcomposeviewcontroller.md)
-- [GKGameCenterViewController](gkgamecenterviewcontroller.md)
-- [GKLeaderboardViewController](gkleaderboardviewcontroller.md)
-- [GKMatchmakerViewController](gkmatchmakerviewcontroller.md)
-- [GKTurnBasedMatchmakerViewController](gkturnbasedmatchmakerviewcontroller.md)
+- [GKAchievementViewController](./gkachievementviewcontroller.md)
+- [GKChallengesViewController](./gkchallengesviewcontroller.md)
+- [GKFriendRequestComposeViewController](./gkfriendrequestcomposeviewcontroller.md)
+- [GKGameCenterViewController](./gkgamecenterviewcontroller.md)
+- [GKLeaderboardViewController](./gkleaderboardviewcontroller.md)
+- [GKMatchmakerViewController](./gkmatchmakerviewcontroller.md)
+- [GKTurnBasedMatchmakerViewController](./gkturnbasedmatchmakerviewcontroller.md)
 
 ## See Also
 
-- [Adding an access point to your game](adding-an-access-point-to-your-game.md)
+### Game Center interfaces
+- [Adding an access point to your game](./adding-an-access-point-to-your-game.md)
   Provide your users a convenient connection to the Game Center dashboard.
-- [Displaying the Game Center dashboard](displaying-the-game-center-dashboard.md)
+- [Displaying the Game Center dashboard](./displaying-the-game-center-dashboard.md)
   Provide an interface for players to navigate to their Game Center data from your game.
-- [class GKAccessPoint](gkaccesspoint.md)
+- [class GKAccessPoint](./gkaccesspoint.md)
   An object that allows players to view and manage their Game Center information from within your game.
-- [class GKDialogController](gkdialogcontroller.md)
+- [class GKDialogController](./gkdialogcontroller.md)
   An object that provides the ability to present the dashboard in macOS games.
 
 

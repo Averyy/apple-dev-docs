@@ -1,7 +1,8 @@
 # UITextDropProposal.ProgressMode.system
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A text drop progress mode indicating that the system will show the progress indicator.
 
@@ -17,13 +18,18 @@ A text drop progress mode indicating that the system will show the progress indi
 case system
 ```
 
+```c
+UITextDropProgressModeSystem
+```
+
 #### Discussion
 
 Use this progress mode to have the system show a modal progress indicator while the dropped items are being loaded.
 
 ## See Also
 
-- [UITextDropProposal.ProgressMode.custom](uitextdropproposal/progressmode/custom.md)
+### Progress modes
+- [UITextDropProposal.ProgressMode.custom](./custom.md)
   A text drop progress mode that indicates that you will provide custom progress indicator during the loading of dropped items.
 
 

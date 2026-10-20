@@ -1,7 +1,8 @@
 # kMDItemSecurityMethod
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The security or encryption method used for the file. A CFNumber.
 
@@ -12,6 +13,10 @@ The security or encryption method used for the file. A CFNumber.
 
 ```swift
 let kMDItemSecurityMethod: CFString!
+```
+
+```c
+const CFStringRef kMDItemSecurityMethod;
 ```
 
 

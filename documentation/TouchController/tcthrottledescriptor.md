@@ -1,7 +1,8 @@
 # TCThrottleDescriptor
 
 **Framework**: Touch Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A descriptor for configuring a throttle.
 
@@ -16,66 +17,71 @@ A descriptor for configuring a throttle.
 class TCThrottleDescriptor
 ```
 
+```objc
+@interface TCThrottleDescriptor : NSObject
+```
+
 ## Topics
 
 ### Creating the descriptor
-- [init()](tcthrottledescriptor/init.md)
+- [init()](./tcthrottledescriptor/init%28%29.md)
   Creates a new throttle descriptor with default values.
 ### Inspecting the descriptor
-- [var backgroundContents: TCControlContents?](tcthrottledescriptor/backgroundcontents.md)
+- [var backgroundContents: TCControlContents?](./tcthrottledescriptor/backgroundcontents.md)
   The contents for the background of the throttle.
-- [var baseValue: CGFloat](tcthrottledescriptor/basevalue.md)
+- [var baseValue: CGFloat](./tcthrottledescriptor/basevalue.md)
   The initial value of this control.
-- [var highlightDuration: TimeInterval](tcthrottledescriptor/highlightduration.md)
+- [var highlightDuration: TimeInterval](./tcthrottledescriptor/highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var indicatorContents: TCControlContents?](tcthrottledescriptor/indicatorcontents.md)
+- [var indicatorContents: TCControlContents?](./tcthrottledescriptor/indicatorcontents.md)
   The contents for the indicator of the throttle.
-- [var indicatorSize: CGSize](tcthrottledescriptor/indicatorsize.md)
+- [var indicatorSize: CGSize](./tcthrottledescriptor/indicatorsize.md)
   The size (width, height) of the indicator itself in points.
-- [var label: TCControlLabel](tcthrottledescriptor/label.md)
+- [var label: TCControlLabel](./tcthrottledescriptor/label.md)
   The label associated with the throttle.
-- [var offset: CGPoint](tcthrottledescriptor/offset.md)
+- [var offset: CGPoint](./tcthrottledescriptor/offset.md)
   The control’s offset from the anchor, which determines its position.
-- [var orientation: TCThrottle.Orientation](tcthrottledescriptor/orientation.md)
+- [var orientation: TCThrottle.Orientation](./tcthrottledescriptor/orientation.md)
   The orientation of the throttle.
-- [var size: CGSize](tcthrottledescriptor/size.md)
+- [var size: CGSize](./tcthrottledescriptor/size.md)
   The size (width, height) of the throttle in points.
-- [var snapsToBaseValue: Bool](tcthrottledescriptor/snapstobasevalue.md)
+- [var snapsToBaseValue: Bool](./tcthrottledescriptor/snapstobasevalue.md)
   A Boolean value that indicates whether the control reverts to it’s base value.
-- [var throttleSize: CGSize](tcthrottledescriptor/throttlesize.md)
+- [var throttleSize: CGSize](./tcthrottledescriptor/throttlesize.md)
   The size (width, height) of the throttle itself, providing boundaries for the indicator, in points.
-- [var zIndex: Int](tcthrottledescriptor/zindex.md)
+- [var zIndex: Int](./tcthrottledescriptor/zindex.md)
   The z-index of the throttle. A lower z-index is drawn first.
 ### Accessing the anchor
-- [var anchor: TCControlLayoutAnchor](tcthrottledescriptor/anchor.md)
+- [var anchor: TCControlLayoutAnchor](./tcthrottledescriptor/anchor.md)
   The anchor point that the throttle’s offset is relative to.
-- [enum TCControlLayoutAnchor](tccontrollayoutanchor.md)
+- [enum TCControlLayoutAnchor](./tccontrollayoutanchor.md)
   Defines the anchor point for a control.
-- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](tcthrottledescriptor/anchorcoordinatesystem.md)
+- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](./tcthrottledescriptor/anchorcoordinatesystem.md)
   The coordinate system for the control’s anchor point.
-- [enum TCControlLayoutAnchorCoordinateSystem](tccontrollayoutanchorcoordinatesystem.md)
+- [enum TCControlLayoutAnchorCoordinateSystem](./tccontrollayoutanchorcoordinatesystem.md)
   Defines the coodinate system for an anchor point.
 ### Getting the collider shape
-- [var colliderShape: TCColliderShape](tcthrottledescriptor/collidershape.md)
+- [var colliderShape: TCColliderShape](./tcthrottledescriptor/collidershape.md)
   The shape of collider to use for the throttle.
-- [enum TCColliderShape](tccollidershape.md)
+- [enum TCColliderShape](./tccollidershape.md)
   Defines the shape of a control collider.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func addThrottle(descriptor: TCThrottleDescriptor) -> TCThrottle](tctouchcontroller/addthrottle(descriptor:).md)
+### Adding a throttle control
+- [func addThrottle(descriptor: TCThrottleDescriptor) -> TCThrottle](./tctouchcontroller/addthrottle%28descriptor%29.md)
   Creates a new throttle control with the provided descriptor, and adds it to the touch controller.
 
 

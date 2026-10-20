@@ -1,7 +1,8 @@
 # compoundPredicateType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The predicate type for the receiver.
 
@@ -20,11 +21,16 @@ The predicate type for the receiver.
 var compoundPredicateType: NSCompoundPredicate.LogicalType { get }
 ```
 
+```objc
+@property (readonly) NSCompoundPredicateType compoundPredicateType;
+```
+
 ## See Also
 
-- [var subpredicates: [Any]](nscompoundpredicate/subpredicates.md)
+### Getting Information About a Compound Predicate
+- [var subpredicates: [Any]](./subpredicates.md)
   The receiver’s subpredicates.
-- [NSCompoundPredicate.LogicalType](nscompoundpredicate/logicaltype.md)
+- [NSCompoundPredicate.LogicalType](./logicaltype.md)
   Constants that describe the possible types of a compound predicate.
 
 

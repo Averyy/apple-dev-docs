@@ -1,7 +1,8 @@
 # webScriptName(forKey:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the scripting environment name for an attribute specified by a key.
 
@@ -14,6 +15,10 @@ Returns the scripting environment name for an attribute specified by a key.
 class func webScriptName(forKey name: UnsafePointer<CChar>!) -> String!
 ```
 
+```objc
++ (NSString *) webScriptNameForKey:(const char *) name;
+```
+
 #### Return Value
 
 The name used to represent the attribute in the scripting environment.
@@ -24,11 +29,12 @@ The name used to represent the attribute in the scripting environment.
 
 ## See Also
 
-- [class func webScriptName(for: Selector!) -> String!](nsobject-swift.class/webscriptname(for:).md)
+### Getting attributes
+- [class func webScriptName(for: Selector!) -> String!](./webscriptname%28for%29.md)
   Returns the scripting environment name for a selector.
-- [class func isSelectorExcluded(fromWebScript: Selector!) -> Bool](nsobject-swift.class/isselectorexcluded(fromwebscript:).md)
+- [class func isSelectorExcluded(fromWebScript: Selector!) -> Bool](./isselectorexcluded%28fromwebscript%29.md)
   Returns whether a selector should be hidden from the scripting environment.
-- [class func isKeyExcluded(fromWebScript: UnsafePointer<CChar>!) -> Bool](nsobject-swift.class/iskeyexcluded(fromwebscript:).md)
+- [class func isKeyExcluded(fromWebScript: UnsafePointer<CChar>!) -> Bool](./iskeyexcluded%28fromwebscript%29.md)
   Returns whether a key should be hidden from the scripting environment.
 
 

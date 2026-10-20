@@ -1,7 +1,8 @@
 # whiteBalanceCCT
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The illuminant correlated color temperature (CCT), in kelvins, selected at the time of capture. If not present, the CCT is considered unknown or unspecified.
 

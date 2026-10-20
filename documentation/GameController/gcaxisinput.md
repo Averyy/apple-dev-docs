@@ -1,7 +1,8 @@
 # GCAxisInput
 
 **Framework**: Game Controller  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The common properties of inputs that provide absolute values along an axis with a fixed origin.
 
@@ -19,36 +20,41 @@ The common properties of inputs that provide absolute values along an axis with 
 protocol GCAxisInput : NSObjectProtocol
 ```
 
+```objc
+@protocol GCAxisInput <NSObject>
+```
+
 ## Topics
 
 ### Getting the characteristics
-- [var canWrap: Bool](gcaxisinput/canwrap.md)
+- [var canWrap: Bool](./gcaxisinput/canwrap.md)
   A Boolean value that indicates whether the value wraps when it reaches the range’s minimum or maximum value.
-- [var isAnalog: Bool](gcaxisinput/isanalog.md)
+- [var isAnalog: Bool](./gcaxisinput/isanalog.md)
   A Boolean value that indicates whether the input provides analog values.
 ### Getting the value
-- [var value: Float](gcaxisinput/value.md)
+- [var value: Float](./gcaxisinput/value.md)
   The value along the axis, in unit coordinates.
-- [var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxisInput, Float) -> Void)?](gcaxisinput/valuedidchangehandler.md)
+- [var valueDidChangeHandler: ((any GCPhysicalInputElement, any GCAxisInput, Float) -> Void)?](./gcaxisinput/valuedidchangehandler.md)
   The block that the input object calls when the value changes.
-- [var lastValueTimestamp: TimeInterval](gcaxisinput/lastvaluetimestamp.md)
+- [var lastValueTimestamp: TimeInterval](./gcaxisinput/lastvaluetimestamp.md)
   The time of the most recent value change.
-- [var lastValueLatency: TimeInterval](gcaxisinput/lastvaluelatency.md)
+- [var lastValueLatency: TimeInterval](./gcaxisinput/lastvaluelatency.md)
   The time in seconds between the last value change and the current time.
 ### Getting user actions
-- [var sources: Set<AnyHashable>](gcaxisinput/sources.md)
+- [var sources: Set<AnyHashable>](./gcaxisinput/sources.md)
   One or more physical actions the user performs to manipulate the input.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GCGearShifterElement](gcgearshifterelement.md)
+### Gear shifter elements
+- [class GCGearShifterElement](./gcgearshifterelement.md)
   An element that represents either a pattern or a sequential gear shift.
-- [protocol GCRelativeInput](gcrelativeinput.md)
+- [protocol GCRelativeInput](./gcrelativeinput.md)
   The common properties of inputs that provide positions along an axis that are relative to the previous position.
 
 

@@ -1,7 +1,8 @@
 # errSecAppleSSLv2Rollback
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A SSLv2 rollback error has occurred.
 
@@ -18,6 +19,10 @@ A SSLv2 rollback error has occurred.
 
 ```swift
 var errSecAppleSSLv2Rollback: OSStatus { get }
+```
+
+```c
+errSecAppleSSLv2Rollback
 ```
 
 

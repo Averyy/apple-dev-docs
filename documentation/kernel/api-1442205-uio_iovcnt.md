@@ -1,14 +1,15 @@
 # uio_iovcnt
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 int uio_iovcnt(uio_t a_uio);
 ```
 

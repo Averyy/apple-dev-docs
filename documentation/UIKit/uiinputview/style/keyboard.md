@@ -1,7 +1,8 @@
 # UIInputView.Style.keyboard
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Apply both blur and tinting effects to the view to mimic the keyboard background.
 
@@ -9,7 +10,7 @@ Apply both blur and tinting effects to the view to mimic the keyboard background
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ Apply both blur and tinting effects to the view to mimic the keyboard background
 case keyboard
 ```
 
+```c
+UIInputViewStyleKeyboard
+```
+
 #### Discussion
 
 This style makes the input view match the keyboard appearance and can be used to replace or extend the keyboard.
 
 ## See Also
 
-- [UIInputView.Style.default](uiinputview/style/default.md)
+### Constants
+- [UIInputView.Style.default](./default.md)
   Apply blur behaviors to the view so that it looks like it belongs with the keyboard.
 
 

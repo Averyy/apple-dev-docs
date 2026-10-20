@@ -1,7 +1,8 @@
 # recurringPaymentStartDate
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date of the first payment.
 
@@ -11,7 +12,7 @@ The date of the first payment.
 
 ## Declaration
 
-```swift
+```
 Date recurringPaymentStartDate;
 ```
 
@@ -21,13 +22,14 @@ To request the first payment as part of the initial transaction, don’t include
 
 ## See Also
 
-- [recurringPaymentEndDate](applepaylineitem/recurringpaymentenddate.md)
+### Configuring recurring payments
+- [recurringPaymentEndDate](./recurringpaymentenddate.md)
   The date of the final payment.
-- [recurringPaymentIntervalUnit](applepaylineitem/recurringpaymentintervalunit.md)
+- [recurringPaymentIntervalUnit](./recurringpaymentintervalunit.md)
   The amount of time — in calendar units, such as day, month, or year — that represents a fraction of the total payment interval.
-- [recurringPaymentIntervalCount](applepaylineitem/recurringpaymentintervalcount.md)
+- [recurringPaymentIntervalCount](./recurringpaymentintervalcount.md)
   The number of interval units that make up the total payment interval.
-- [ApplePayRecurringPaymentDateUnit](applepayrecurringpaymentdateunit.md)
+- [ApplePayRecurringPaymentDateUnit](../applepayrecurringpaymentdateunit.md)
   A type that indicates calendrical units, such as year, month, day, and hour.
 
 

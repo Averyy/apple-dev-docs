@@ -1,7 +1,8 @@
 # voiceOver
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The VoiceOver assistive app.
 
@@ -17,15 +18,20 @@ The VoiceOver assistive app.
 static var voiceOver: UIGuidedAccessAccessibilityFeature { get }
 ```
 
+```c
+UIGuidedAccessAccessibilityFeatureVoiceOver
+```
+
 ## See Also
 
-- [static var assistiveTouch: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/assistivetouch.md)
+### Constants
+- [static var assistiveTouch: UIGuidedAccessAccessibilityFeature](./assistivetouch.md)
   The AssistiveTouch accessibility feature.
-- [static var grayscaleDisplay: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/grayscaledisplay.md)
+- [static var grayscaleDisplay: UIGuidedAccessAccessibilityFeature](./grayscaledisplay.md)
   The Grayscale accessibility feature.
-- [static var invertColors: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/invertcolors.md)
+- [static var invertColors: UIGuidedAccessAccessibilityFeature](./invertcolors.md)
   The Smart Invert accessibility feature.
-- [static var zoom: UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature/zoom.md)
+- [static var zoom: UIGuidedAccessAccessibilityFeature](./zoom.md)
   The Zoom accessibility feature.
 
 

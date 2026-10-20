@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The result’s file name.
@@ -15,11 +16,16 @@ The result’s file name.
 var filename: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * filename;
+```
+
 ## See Also
 
-- [var itemIdentifier: NSFileProviderItemIdentifier](nsfileprovidersearchresult/itemidentifier.md)
+### Identifying the item
+- [var itemIdentifier: NSFileProviderItemIdentifier](./itemidentifier.md)
   The identifier for this search result.
-- [struct NSFileProviderItemIdentifier](nsfileprovideritemidentifier.md)
+- [struct NSFileProviderItemIdentifier](../nsfileprovideritemidentifier.md)
   A unique identifier for an item managed by the File Provider extension.
 
 

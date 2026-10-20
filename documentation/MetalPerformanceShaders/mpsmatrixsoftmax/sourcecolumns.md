@@ -1,7 +1,8 @@
 # sourceColumns
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var sourceColumns: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger sourceColumns;
 ```
 
 

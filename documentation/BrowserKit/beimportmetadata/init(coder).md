@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: BrowserKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes import metadata from a decoder.
 
@@ -21,7 +22,8 @@ init?(coder: NSCoder)
 
 ## See Also
 
-- [init(supportForImportFromFiles: Bool)](beimportmetadata/init(supportforimportfromfiles:).md)
+### Creating import metadata
+- [init(supportForImportFromFiles: Bool)](./init%28supportforimportfromfiles%29.md)
   Initializes import metadata with file support information.
 
 

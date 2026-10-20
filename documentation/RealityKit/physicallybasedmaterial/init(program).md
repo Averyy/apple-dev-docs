@@ -1,7 +1,8 @@
 # init(program:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -19,7 +20,8 @@ init(program: PhysicallyBasedMaterial.Program)
 
 ## See Also
 
-- [init()](physicallybasedmaterial/init.md)
+### Creating a physically based material
+- [init()](./init%28%29.md)
   Creates a physically based material.
 
 

@@ -1,15 +1,18 @@
 # subscript(_:)
 
 **Framework**: Assignables  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Access the question that the identifier denotes, if any.
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
-- Mac Catalyst 17.4+
-- visionOS ?+
+- iOS 17.4+ - Deprecated in 26.0
+- iPadOS 17.4+ - Deprecated in 26.0
+- Mac Catalyst 17.4+ - Deprecated in 26.0
+- visionOS
+
+> **Deprecated**: Access questions using AssignableDocument's questions array instead
 
 ## Declaration
 
@@ -19,9 +22,10 @@ subscript(questionID: AssignableDocument.Question.ID) -> AssignableDocument.Ques
 
 ## See Also
 
-- [subscript(AssignableDocument.Page.ID) -> AssignableDocument.Page?](assignabledocument/subscript(_:)-8ou91.md)
+### Accessing documents
+- [subscript(AssignableDocument.Page.ID) -> AssignableDocument.Page?](./subscript%28_%29-8ou91.md)
   Access the page that the identifier denotes, if any.
-- [subscript(AssignableDocument.QuestionBox.ID) -> AssignableDocument.QuestionBox?](assignabledocument/subscript(_:)-68enn.md)
+- [subscript(AssignableDocument.QuestionBox.ID) -> AssignableDocument.QuestionBox?](./subscript%28_%29-68enn.md)
   Access the question box that the identifier denotes, if any.
 
 

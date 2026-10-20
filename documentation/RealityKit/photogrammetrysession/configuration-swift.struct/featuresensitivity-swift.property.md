@@ -1,7 +1,8 @@
 # featureSensitivity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The precision of landmark detection.
 
@@ -21,11 +22,12 @@ var featureSensitivity: PhotogrammetrySession.Configuration.FeatureSensitivity
 
 The photogrammetry process relies on finding identifiable landmarks in the overlap between images. Landmarks can be hard to identify if the images don’t have enough contrast, aren’t in focus, or if the object is all one color and lacks surface detail.
 
-When [`featureSensitivity`](photogrammetrysession/configuration-swift.struct/featuresensitivity-swift.property.md) is set to [`PhotogrammetrySession.Configuration.FeatureSensitivity.high`](photogrammetrysession/configuration-swift.struct/featuresensitivity-swift.enum/high.md), it instructs RealityKit to search an image for landmarks using an algorithm that analyzes an image closely and in detail. This slower, more sensitive process can produce an accurate 3D object even when landmarks are difficult to discern.
+When [`featureSensitivity`](./featuresensitivity-swift.property.md) is set to [`PhotogrammetrySession.Configuration.FeatureSensitivity.high`](./featuresensitivity-swift.enum/high.md), it instructs RealityKit to search an image for landmarks using an algorithm that analyzes an image closely and in detail. This slower, more sensitive process can produce an accurate 3D object even when landmarks are difficult to discern.
 
 ## See Also
 
-- [PhotogrammetrySession.Configuration.FeatureSensitivity](photogrammetrysession/configuration-swift.struct/featuresensitivity-swift.enum.md)
+### Configuring feature sensitivity
+- [PhotogrammetrySession.Configuration.FeatureSensitivity](./featuresensitivity-swift.enum.md)
   The sensitivity to sample landmarks.
 
 

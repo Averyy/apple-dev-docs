@@ -1,7 +1,8 @@
 # pullStreamNodes
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var pullStreamNodes: [String : PHASEPullStreamNode] { get }
+```
+
+```objc
+@property (copy, readonly) NSDictionary<NSString *,PHASEPullStreamNode *> * pullStreamNodes;
 ```
 
 #### Discussion

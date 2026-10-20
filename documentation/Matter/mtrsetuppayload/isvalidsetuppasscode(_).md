@@ -1,7 +1,8 @@
 # isValidSetupPasscode(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Check whether the provided setup passcode (represented as an unsigned integer) is a valid setup passcode.
 
@@ -18,6 +19,10 @@ Check whether the provided setup passcode (represented as an unsigned integer) i
 
 ```swift
 class func isValidSetupPasscode(_ setupPasscode: NSNumber) -> Bool
+```
+
+```objc
++ (BOOL) isValidSetupPasscode:(NSNumber *) setupPasscode;
 ```
 
 

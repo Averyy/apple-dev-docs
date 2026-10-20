@@ -1,7 +1,8 @@
 # pairedUUIDsDidChangeNotification
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification that the system posts when there’s a change to the UUIDs of the hearing device peripherals.
 
@@ -18,13 +19,18 @@ A notification that the system posts when there’s a change to the UUIDs of the
 static let pairedUUIDsDidChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AXMFiHearingDevicePairedUUIDsDidChangeNotification;
+```
+
 #### Discussion
 
-The system posts this notification when the value of [`pairedDeviceIdentifiers()`](axmfihearingdevice/paireddeviceidentifiers().md) changes.
+The system posts this notification when the value of [`pairedDeviceIdentifiers()`](./paireddeviceidentifiers%28%29.md) changes.
 
 ## See Also
 
-- [static func pairedDeviceIdentifiers() -> [UUID]](axmfihearingdevice/paireddeviceidentifiers.md)
+### Paired hearing devices
+- [static func pairedDeviceIdentifiers() -> [UUID]](./paireddeviceidentifiers%28%29.md)
   Returns the UUIDs of the hearing device peripherals.
 
 

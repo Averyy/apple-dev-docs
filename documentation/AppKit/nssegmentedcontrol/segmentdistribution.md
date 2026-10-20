@@ -1,7 +1,8 @@
 # segmentDistribution
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13+
@@ -12,16 +13,21 @@
 var segmentDistribution: NSSegmentedControl.Distribution { get set }
 ```
 
+```objc
+@property NSSegmentDistribution segmentDistribution;
+```
+
 ## See Also
 
-- [func setWidth(CGFloat, forSegment: Int)](nssegmentedcontrol/setwidth(_:forsegment:).md)
+### Adjusting the segment spacing
+- [func setWidth(CGFloat, forSegment: Int)](./setwidth%28_,forsegment%29.md)
   Sets the width of the specified segment.
-- [func width(forSegment: Int) -> CGFloat](nssegmentedcontrol/width(forsegment:).md)
+- [func width(forSegment: Int) -> CGFloat](./width%28forsegment%29.md)
   Returns the width of the specified segment.
-- [NSSegmentedControl.Distribution](nssegmentedcontrol/distribution.md)
-- [var activeCompressionOptions: NSUserInterfaceCompressionOptions](nssegmentedcontrol/activecompressionoptions.md)
-- [func compress(withPrioritizedCompressionOptions: [NSUserInterfaceCompressionOptions])](nssegmentedcontrol/compress(withprioritizedcompressionoptions:).md)
-- [func minimumSize(withPrioritizedCompressionOptions: [NSUserInterfaceCompressionOptions]) -> NSSize](nssegmentedcontrol/minimumsize(withprioritizedcompressionoptions:).md)
+- [NSSegmentedControl.Distribution](./distribution.md)
+- [var activeCompressionOptions: NSUserInterfaceCompressionOptions](./activecompressionoptions.md)
+- [func compress(withPrioritizedCompressionOptions: [NSUserInterfaceCompressionOptions])](./compress%28withprioritizedcompressionoptions%29.md)
+- [func minimumSize(withPrioritizedCompressionOptions: [NSUserInterfaceCompressionOptions]) -> NSSize](./minimumsize%28withprioritizedcompressionoptions%29.md)
 
 
 ---

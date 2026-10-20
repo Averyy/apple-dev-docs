@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a reference to an acceleration structure into the argument buffer.
@@ -20,10 +21,14 @@ Encodes a reference to an acceleration structure into the argument buffer.
 func setAccelerationStructure(_ accelerationStructure: (any MTLAccelerationStructure)?, index: Int)
 ```
 
+```objc
+- (void) setAccelerationStructure:(id<MTLAccelerationStructure>) accelerationStructure atIndex:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `accelerationStructure`: An acceleration structure the method encodes.
-- `index`: The index of an acceleration structure within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instance.
+- `index`: The index of an acceleration structure within the argument buffer. The value corresponds to either the index ID of a declaration in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of an [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instance.
 
 
 ---

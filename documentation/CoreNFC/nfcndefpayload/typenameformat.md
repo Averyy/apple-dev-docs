@@ -1,7 +1,8 @@
 # typeNameFormat
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Type Name Format field of the payload, as defined by the NDEF specification.
 
@@ -16,19 +17,24 @@ The Type Name Format field of the payload, as defined by the NDEF specification.
 var typeNameFormat: NFCTypeNameFormat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NFCTypeNameFormat typeNameFormat;
+```
+
 ## Mentions
 
-- [Adding Support for Background Tag Reading](adding-support-for-background-tag-reading.md)
+- [Adding Support for Background Tag Reading](../adding-support-for-background-tag-reading.md)
 
 ## See Also
 
-- [var identifier: Data](nfcndefpayload/identifier.md)
+### Getting Information About a Payload Record
+- [var identifier: Data](./identifier.md)
   The identifier of the payload, as defined by the NDEF specification.
-- [var payload: Data](nfcndefpayload/payload.md)
+- [var payload: Data](./payload.md)
   The payload, as defined by the NDEF specification.
-- [var type: Data](nfcndefpayload/type.md)
+- [var type: Data](./type.md)
   The type of the payload, as defined by the NDEF specification.
-- [enum NFCTypeNameFormat](nfctypenameformat.md)
+- [enum NFCTypeNameFormat](../nfctypenameformat.md)
   The Type Name Format values that specify the content type for the payload data in an NFC NDEF message.
 
 

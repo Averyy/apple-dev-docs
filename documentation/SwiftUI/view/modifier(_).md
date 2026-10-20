@@ -1,7 +1,8 @@
 # modifier(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a modifier to a view and returns a new view.
 
@@ -23,11 +24,11 @@ func modifier<T>(_ modifier: T) -> ModifiedContent<Self, T>
 
 ## Mentions
 
-- [Reducing view modifier maintenance](reducing-view-modifier-maintenance.md)
+- [Reducing view modifier maintenance](../reducing-view-modifier-maintenance.md)
 
 #### Discussion
 
-Use this modifier to combine a [`View`](view.md) and a [`ViewModifier`](viewmodifier.md), to create a new view. For example, if you create a view modifier for a new kind of caption with blue text surrounded by a rounded rectangle:
+Use this modifier to combine a [`View`](../view.md) and a [`ViewModifier`](../viewmodifier.md), to create a new view. For example, if you create a view modifier for a new kind of caption with blue text surrounded by a rounded rectangle:
 
 ```swift
 struct BorderedCaption: ViewModifier {
@@ -44,7 +45,7 @@ struct BorderedCaption: ViewModifier {
 }
 ```
 
-You can use [`modifier(_:)`](view/modifier(_:).md) to extend [`View`](view.md) to create new modifier for applying the `BorderedCaption` defined above:
+You can use [`modifier(_:)`](./modifier%28_%29.md) to extend [`View`](../view.md) to create new modifier for applying the `BorderedCaption` defined above:
 
 ```swift
 extension View {
@@ -64,7 +65,7 @@ Text("Downtown Bus")
     .borderedCaption()
 ```
 
-![A screenshot showing the image of a bus with a caption reading](/images/com.apple.SwiftUI/SwiftUI-View-ViewModifier@2x.png)
+![A screenshot showing the image of a bus with a caption reading](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-ViewModifier@2x.png)
 
 ## Parameters
 
@@ -72,31 +73,32 @@ Text("Downtown Bus")
 
 ## See Also
 
-- [Configuring views](configuring-views.md)
+### Modifying a view
+- [Configuring views](../configuring-views.md)
   Adjust the characteristics of a view by applying view modifiers.
-- [Reducing view modifier maintenance](reducing-view-modifier-maintenance.md)
+- [Reducing view modifier maintenance](../reducing-view-modifier-maintenance.md)
   Bundle view modifiers that you regularly reuse into a custom view modifier.
-- [protocol ViewModifier](viewmodifier.md)
+- [protocol ViewModifier](../viewmodifier.md)
   A modifier that you apply to a view or another view modifier, producing a different version of the original value.
-- [struct EmptyModifier](emptymodifier.md)
+- [struct EmptyModifier](../emptymodifier.md)
   An empty, or identity, modifier, used during development to switch modifiers at compile time.
-- [struct ModifiedContent](modifiedcontent.md)
+- [struct ModifiedContent](../modifiedcontent.md)
   A value with a modifier applied to it.
-- [protocol EnvironmentalModifier](environmentalmodifier.md)
+- [protocol EnvironmentalModifier](../environmentalmodifier.md)
   A modifier that must resolve to a concrete modifier in an environment before use.
-- [struct ManipulableModifier](manipulablemodifier.md)
+- [struct ManipulableModifier](../manipulablemodifier.md)
   A view modifier that lets hand gestures move, rotate, and scale a view.
-- [struct ManipulableResponderModifier](manipulablerespondermodifier.md)
+- [struct ManipulableResponderModifier](../manipulablerespondermodifier.md)
   A view modifier that makes a view respond to manipulation hand gestures.
-- [struct ManipulableTransformBindingModifier](manipulabletransformbindingmodifier.md)
+- [struct ManipulableTransformBindingModifier](../manipulabletransformbindingmodifier.md)
   A view modifier that applies a 3D affine transform to a view and lets hand gestures change it.
-- [struct ManipulationGeometryModifier](manipulationgeometrymodifier.md)
+- [struct ManipulationGeometryModifier](../manipulationgeometrymodifier.md)
   A view modifier that tracks the geometry a manipulation gesture acts on.
-- [struct ManipulationGestureModifier](manipulationgesturemodifier.md)
+- [struct ManipulationGestureModifier](../manipulationgesturemodifier.md)
   A view modifier that recognizes manipulation hand gestures and reports their state through a binding.
-- [struct ManipulationUsingGestureStateModifier](manipulationusinggesturestatemodifier.md)
+- [struct ManipulationUsingGestureStateModifier](../manipulationusinggesturestatemodifier.md)
   A view modifier that applies the manipulation state from a gesture on another view.
-- [enum Manipulable](manipulable.md)
+- [enum Manipulable](../manipulable.md)
   A namespace for various manipulable related types.
 
 

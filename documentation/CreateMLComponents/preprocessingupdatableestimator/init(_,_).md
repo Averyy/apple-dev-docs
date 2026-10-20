@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a composed updatable estimator from a preprocessing transformer and an estimator.
 

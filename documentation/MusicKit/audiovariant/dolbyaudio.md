@@ -1,7 +1,8 @@
 # AudioVariant.dolbyAudio
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Dolby Audio is a surround sound format that includes Dolby 5.1 and 7.1.
 

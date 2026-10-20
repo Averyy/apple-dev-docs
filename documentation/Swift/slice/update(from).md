@@ -1,7 +1,8 @@
 # update(from:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the buffer slice’s initialized memory with the given elements.
 
@@ -19,6 +20,8 @@ Updates the buffer slice’s initialized memory with the given elements.
 ```swift
 func update<S>(from source: S) -> (unwritten: S.Iterator, index: Slice<Base>.Index) where Base == UnsafeMutableBufferPointer<S.Element>, S : Sequence
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Return Value
 

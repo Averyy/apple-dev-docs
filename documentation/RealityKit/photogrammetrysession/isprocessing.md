@@ -1,7 +1,8 @@
 # isProcessing
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session is actively processing requests.
 
@@ -19,11 +20,12 @@ var isProcessing: Bool { get }
 
 ## See Also
 
-- [var activeRequests: [PhotogrammetrySession.Request]](photogrammetrysession/activerequests.md)
+### Monitoring the session
+- [var activeRequests: [PhotogrammetrySession.Request]](./activerequests.md)
   The session’s active request objects.
-- [var outputs: PhotogrammetrySession.Outputs](photogrammetrysession/outputs-swift.property.md)
+- [var outputs: PhotogrammetrySession.Outputs](./outputs-swift.property.md)
   Returns the outputs message stream which can be asynchronously iterated on.
-- [PhotogrammetrySession.Output](photogrammetrysession/output.md)
+- [PhotogrammetrySession.Output](./output.md)
   Status updates on the object-creation process.
 
 

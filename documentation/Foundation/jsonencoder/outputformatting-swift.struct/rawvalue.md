@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The format’s default value.
 
@@ -22,9 +23,10 @@ let rawValue: UInt
 
 ## See Also
 
-- [init(rawValue: UInt)](jsonencoder/outputformatting-swift.struct/init(rawvalue:).md)
+### Creating Options
+- [init(rawValue: UInt)](./init%28rawvalue%29.md)
   Creates an OutputFormatting value with the given raw value.
-- [init()](jsonencoder/init.md)
+- [init()](../init%28%29.md)
   Creates a new, reusable JSON encoder with the default formatting settings and encoding strategies.
 
 

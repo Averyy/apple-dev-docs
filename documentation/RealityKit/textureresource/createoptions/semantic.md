@@ -1,7 +1,8 @@
 # semantic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intended use of the texture.
 
@@ -11,7 +12,7 @@ The intended use of the texture.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var semantic: TextureResource.Semantic?
 
 ## See Also
 
-- [var mipmapsMode: TextureResource.MipmapsMode](textureresource/createoptions/mipmapsmode.md)
+### Texture resource creation options
+- [var mipmapsMode: TextureResource.MipmapsMode](./mipmapsmode.md)
   Whether the texture resource automatically generates mipmaps.
 
 

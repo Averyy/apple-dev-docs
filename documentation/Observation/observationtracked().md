@@ -1,7 +1,8 @@
 # ObservationTracked()
 
 **Framework**: Observation  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Synthesizes a property for accessors.
 
@@ -23,7 +24,7 @@ Synthesizes a property for accessors.
 
 #### Overview
 
-The [`Observation`](Observation.md) module uses this macro. Its use outside of the framework isn’t necessary.
+The [Observation](./Observation.md) module uses this macro. Its use outside of the framework isn’t necessary.
 
 
 ---

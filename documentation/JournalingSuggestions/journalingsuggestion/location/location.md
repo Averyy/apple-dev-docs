@@ -1,7 +1,8 @@
 # location
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains the location’s geographic coordinates.
 

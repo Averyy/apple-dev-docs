@@ -1,7 +1,8 @@
 # FoveatedStreamingSession.AuthorizationStatus.authorized
 
 **Framework**: Foveated Streaming  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has authorized this capability.
 

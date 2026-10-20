@@ -1,7 +1,8 @@
 # NSURLRequest.CachePolicy.returnCacheDataDontLoad
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use existing cache data, regardless or age or expiration date, and fail if no cached data is available.
 
@@ -20,9 +21,13 @@ Use existing cache data, regardless or age or expiration date, and fail if no ca
 case returnCacheDataDontLoad
 ```
 
+```c
+NSURLRequestReturnCacheDataDontLoad
+```
+
 ## Mentions
 
-- [Accessing cached data](accessing-cached-data.md)
+- [Accessing cached data](../../accessing-cached-data.md)
 
 #### Discussion
 
@@ -30,17 +35,18 @@ If there is no existing data in the cache corresponding to a URL load request, n
 
 ## See Also
 
-- [NSURLRequest.CachePolicy.useProtocolCachePolicy](nsurlrequest/cachepolicy-swift.enum/useprotocolcachepolicy.md)
+### Policies
+- [NSURLRequest.CachePolicy.useProtocolCachePolicy](./useprotocolcachepolicy.md)
   Use the caching logic defined in the protocol implementation, if any, for a particular URL load request.
-- [NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData](nsurlrequest/cachepolicy-swift.enum/reloadignoringlocalcachedata.md)
+- [NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData](./reloadignoringlocalcachedata.md)
   The URL load should be loaded only from the originating source.
-- [NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData](nsurlrequest/cachepolicy-swift.enum/reloadignoringlocalandremotecachedata.md)
+- [NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData](./reloadignoringlocalandremotecachedata.md)
   Ignore local cache data, and instruct proxies and other intermediates to disregard their caches so far as the protocol allows.
-- [static var reloadIgnoringCacheData: NSURLRequest.CachePolicy](nsurlrequest/cachepolicy-swift.enum/reloadignoringcachedata.md)
-  Replaced by [`NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData`](nsurlrequest/cachepolicy-swift.enum/reloadignoringlocalcachedata.md).
-- [NSURLRequest.CachePolicy.returnCacheDataElseLoad](nsurlrequest/cachepolicy-swift.enum/returncachedataelseload.md)
+- [static var reloadIgnoringCacheData: NSURLRequest.CachePolicy](./reloadignoringcachedata.md)
+  Replaced by [`NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData`](./reloadignoringlocalcachedata.md).
+- [NSURLRequest.CachePolicy.returnCacheDataElseLoad](./returncachedataelseload.md)
   Use existing cache data, regardless or age or expiration date, loading from originating source only if there is no cached data.
-- [NSURLRequest.CachePolicy.reloadRevalidatingCacheData](nsurlrequest/cachepolicy-swift.enum/reloadrevalidatingcachedata.md)
+- [NSURLRequest.CachePolicy.reloadRevalidatingCacheData](./reloadrevalidatingcachedata.md)
   Use cache data if the origin source can validate it; otherwise, load from the origin.
 
 

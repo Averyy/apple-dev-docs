@@ -1,7 +1,8 @@
 # enabled
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether or not the legible options menu is
 
@@ -18,9 +19,14 @@ Whether or not the legible options menu is
 var enabled: ObjCBool
 ```
 
+```c
+BOOL enabled;
+```
+
 ## See Also
 
-- [var reason: AVLegibleMediaOptionsMenuController.StateChangeReason](avlegiblemediaoptionsmenustate/reason.md)
+### Inspecting the state
+- [var reason: AVLegibleMediaOptionsMenuController.StateChangeReason](./reason.md)
   The reason for changing the menu state
 
 

@@ -1,7 +1,8 @@
 # TransitionPhase
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An indication of which the current stage of a transition.
 
@@ -33,49 +34,50 @@ In the `identity` phase, transitions should generally not make any visual change
 ## Topics
 
 ### Getting the phase
-- [TransitionPhase.identity](transitionphase/identity.md)
+- [TransitionPhase.identity](./transitionphase/identity.md)
   The transition is being applied to a view that is in the view hierarchy.
-- [TransitionPhase.willAppear](transitionphase/willappear.md)
+- [TransitionPhase.willAppear](./transitionphase/willappear.md)
   The transition is being applied to a view that is about to be inserted into the view hierarchy.
-- [TransitionPhase.didDisappear](transitionphase/diddisappear.md)
+- [TransitionPhase.didDisappear](./transitionphase/diddisappear.md)
   The transition is being applied to a view that has been requested to be removed from the view hierarchy.
 ### Getting phase characteristics
-- [var isIdentity: Bool](transitionphase/isidentity.md)
+- [var isIdentity: Bool](./transitionphase/isidentity.md)
   A Boolean that indicates whether the transition should have an identity effect, i.e. not change the appearance of its view.
-- [var value: Double](transitionphase/value.md)
+- [var value: Double](./transitionphase/value.md)
   A value that can be used to multiply effects that are applied differently depending on the phase.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func transition(_:)](view/transition(_:).md)
+### Defining transitions
+- [func transition(_:)](./view/transition%28_%29.md)
   Associates a transition with the view.
-- [protocol Transition](transition.md)
+- [protocol Transition](./transition.md)
   A description of view changes to apply when a view is added to and removed from the view hierarchy.
-- [struct TransitionProperties](transitionproperties.md)
+- [struct TransitionProperties](./transitionproperties.md)
   The properties a `Transition` can have.
-- [struct AsymmetricTransition](asymmetrictransition.md)
+- [struct AsymmetricTransition](./asymmetrictransition.md)
   A composite `Transition` that uses a different transition for insertion versus removal.
-- [struct AnyTransition](anytransition.md)
+- [struct AnyTransition](./anytransition.md)
   A type-erased transition.
-- [func contentTransition(ContentTransition) -> some View](view/contenttransition(_:).md)
+- [func contentTransition(ContentTransition) -> some View](./view/contenttransition%28_%29.md)
   Modifies the view to use a given transition as its method of animating changes to the contents of its views.
-- [var contentTransition: ContentTransition](environmentvalues/contenttransition.md)
+- [var contentTransition: ContentTransition](./environmentvalues/contenttransition.md)
   The current method of animating the contents of views.
-- [var contentTransitionAddsDrawingGroup: Bool](environmentvalues/contenttransitionaddsdrawinggroup.md)
+- [var contentTransitionAddsDrawingGroup: Bool](./environmentvalues/contenttransitionaddsdrawinggroup.md)
   A Boolean value that controls whether views that render content transitions use GPU-accelerated rendering.
-- [struct ContentTransition](contenttransition.md)
+- [struct ContentTransition](./contenttransition.md)
   A kind of transition that applies to the content within a single view, rather than to the insertion or removal of a view.
-- [struct PlaceholderContentView](placeholdercontentview.md)
+- [struct PlaceholderContentView](./placeholdercontentview.md)
   A placeholder used to construct an inline modifier, transition, or other helper type.
 
 

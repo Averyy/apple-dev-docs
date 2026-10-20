@@ -1,7 +1,8 @@
 # errSSLUnsupportedExtension
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Unsupported TLS extension.
 
@@ -18,6 +19,10 @@ Unsupported TLS extension.
 
 ```swift
 var errSSLUnsupportedExtension: OSStatus { get }
+```
+
+```c
+errSSLUnsupportedExtension
 ```
 
 

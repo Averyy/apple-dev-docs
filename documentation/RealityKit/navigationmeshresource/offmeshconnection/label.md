@@ -1,7 +1,8 @@
 # label
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label on the connection for other systems to know what type of movement should occur here.
 

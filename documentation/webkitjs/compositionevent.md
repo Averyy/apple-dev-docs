@@ -1,7 +1,8 @@
 # CompositionEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,21 +10,21 @@
 
 ## Declaration
 
-```swift
+```
 interface CompositionEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [data](compositionevent/1633274-data.md)
+- [data](./compositionevent/api-1633274-data.md)
 ### Instance Methods
-- [initCompositionEvent](compositionevent/1634137-initcompositionevent.md)
+- [initCompositionEvent](./compositionevent/api-1634137-initcompositionevent.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIEvent](uievent.md)
+- [UIEvent](./uievent.md)
 
 
 ---

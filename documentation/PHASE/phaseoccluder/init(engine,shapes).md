@@ -1,7 +1,8 @@
 # init(engine:shapes:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an occluder with the given engine and shapes.
 
@@ -17,6 +18,10 @@ Creates an occluder with the given engine and shapes.
 
 ```swift
 init(engine: PHASEEngine, shapes: [PHASEShape])
+```
+
+```objc
+- (instancetype) initWithEngine:(PHASEEngine *) engine shapes:(NSArray<PHASEShape *> *) shapes;
 ```
 
 ## Parameters

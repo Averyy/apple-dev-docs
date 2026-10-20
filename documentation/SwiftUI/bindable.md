@@ -1,7 +1,8 @@
 # Bindable
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A property wrapper type that supports creating bindings to the mutable properties of observable objects.
 
@@ -23,7 +24,7 @@ A property wrapper type that supports creating bindings to the mutable propertie
 
 #### Overview
 
-Use this property wrapper to create bindings to mutable properties of a data model object that conforms to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol. For example, the following code wraps the `book` input with `@Bindable`. Then it uses a [`TextField`](textfield.md) to change the `title` property of a book, and a [`Toggle`](toggle.md) to change the `isAvailable` property, using the `$` syntax to pass a binding for each property to those controls.
+Use this property wrapper to create bindings to mutable properties of a data model object that conforms to the [`Observable`](../Observation/observable.md) protocol. For example, the following code wraps the `book` input with `@Bindable`. Then it uses a [`TextField`](./textfield.md) to change the `title` property of a book, and a [`Toggle`](./toggle.md) to change the `isAvailable` property, using the `$` syntax to pass a binding for each property to those controls.
 
 ```swift
 @Observable
@@ -50,7 +51,7 @@ struct BookEditView: View {
 }
 ```
 
-You can use the `Bindable` property wrapper on properties and variables to an [`Observable`](https://developer.apple.com/documentation/observation/observable) object. This includes global variables, properties that exists outside of SwiftUI types, or even local variables. For example, you can create a `@Bindable` variable within a view’s [`body`](view/body-8kl5o.md):
+You can use the `Bindable` property wrapper on properties and variables to an [`Observable`](../Observation/observable.md) object. This includes global variables, properties that exists outside of SwiftUI types, or even local variables. For example, you can create a `@Bindable` variable within a view’s [`body`](./view/body-8kl5o.md):
 
 ```swift
 struct LibraryView: View {
@@ -65,9 +66,9 @@ struct LibraryView: View {
 }
 ```
 
-The `@Bindable` variable `book` provides a binding that connects [`TextField`](textfield.md) to the `title` property of a book so that a person can make changes directly to the model data.
+The `@Bindable` variable `book` provides a binding that connects [`TextField`](./textfield.md) to the `title` property of a book so that a person can make changes directly to the model data.
 
-Use this same approach when you need a binding to a property of an observable object stored in a view’s environment. For example, the following code uses the [`Environment`](environment.md) property wrapper to retrieve an instance of the observable type `Book`. Then the code creates a `@Bindable` variable `book` and passes a binding for the `title` property to a [`TextField`](textfield.md) using the `$` syntax.
+Use this same approach when you need a binding to a property of an observable object stored in a view’s environment. For example, the following code uses the [`Environment`](./environment.md) property wrapper to retrieve an instance of the observable type `Book`. Then the code creates a `@Bindable` variable `book` and passes a binding for the `title` property to a [`TextField`](./textfield.md) using the `$` syntax.
 
 ```swift
 struct TitleEditView: View {
@@ -83,42 +84,43 @@ struct TitleEditView: View {
 ## Topics
 
 ### Creating a bindable value
-- [init(Value)](bindable/init(_:).md)
+- [init(Value)](./bindable/init%28_%29.md)
   Creates a bindable object from an observable object.
-- [init(wrappedValue: Value)](bindable/init(wrappedvalue:).md)
+- [init(wrappedValue: Value)](./bindable/init%28wrappedvalue%29.md)
   Creates a bindable object from an observable object.
-- [init(projectedValue: Bindable<Value>)](bindable/init(projectedvalue:).md)
+- [init(projectedValue: Bindable<Value>)](./bindable/init%28projectedvalue%29.md)
   Creates a bindable from the value of another bindable.
 ### Getting the value
-- [var wrappedValue: Value](bindable/wrappedvalue.md)
+- [var wrappedValue: Value](./bindable/wrappedvalue.md)
   The wrapped object.
-- [var projectedValue: Bindable<Value>](bindable/projectedvalue.md)
+- [var projectedValue: Bindable<Value>](./bindable/projectedvalue.md)
   The bindable wrapper for the object that creates bindings to its properties using dynamic member lookup.
-- [subscript<Subject>(dynamicMember _: ReferenceWritableKeyPath<Value, Subject>) -> Binding<Subject>](bindable/subscript(dynamicmember:).md)
+- [subscript<Subject>(dynamicMember _: ReferenceWritableKeyPath<Value, Subject>) -> Binding<Subject>](./bindable/subscript%28dynamicmember%29.md)
   Returns a binding to the value of a given key path.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Managing user interface state](managing-user-interface-state.md)
+### Creating and sharing view state
+- [Managing user interface state](./managing-user-interface-state.md)
   Encapsulate view-specific data within your app’s view hierarchy to make your views reusable.
-- [macro State()](state().md)
+- [macro State()](./state%28%29.md)
   Creates a property that can read and write a value managed by SwiftUI.
-- [macro State<Value>(initialValue: Value)](state(initialvalue:).md)
+- [macro State<Value>(initialValue: Value)](./state%28initialvalue%29.md)
   Creates a property with an initial value that can read and write a value managed by SwiftUI.
-- [macro State<Value>(wrappedValue: Value)](state(wrappedvalue:).md)
+- [macro State<Value>(wrappedValue: Value)](./state%28wrappedvalue%29.md)
   Creates a property with a wrapped value that can read and write a value managed by SwiftUI.
-- [struct State](state.md)
+- [struct State](./state.md)
   A property wrapper type that can read and write a value managed by SwiftUI.
-- [struct Binding](binding.md)
+- [struct Binding](./binding.md)
   A property wrapper type that can read and write a value owned by a source of truth.
 
 

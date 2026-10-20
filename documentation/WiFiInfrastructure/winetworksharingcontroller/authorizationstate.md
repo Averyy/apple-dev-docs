@@ -1,7 +1,8 @@
 # WINetworkSharingController.AuthorizationState
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents the authorization state for sharing Wi-Fi networks with a given accessory.
 
@@ -25,27 +26,28 @@ Check the authorization state before attempting to share Wi-Fi credentials with 
 ## Topics
 
 ### Checking authorization state
-- [WINetworkSharingController.AuthorizationState.undetermined](winetworksharingcontroller/authorizationstate/undetermined.md)
+- [WINetworkSharingController.AuthorizationState.undetermined](./authorizationstate/undetermined.md)
   The person has not yet made a choice about sharing Wi-Fi networks with the accessory.
-- [WINetworkSharingController.AuthorizationState.denied](winetworksharingcontroller/authorizationstate/denied.md)
+- [WINetworkSharingController.AuthorizationState.denied](./authorizationstate/denied.md)
   The person has chosen not to share Wi-Fi networks with the accessory.
-- [WINetworkSharingController.AuthorizationState.askToShare](winetworksharingcontroller/authorizationstate/asktoshare.md)
+- [WINetworkSharingController.AuthorizationState.askToShare](./authorizationstate/asktoshare.md)
   The person has granted authorization to share Wi-Fi networks with the accessory, but you must request approval for each network individually.
-- [WINetworkSharingController.AuthorizationState.automatic](winetworksharingcontroller/authorizationstate/automatic.md)
+- [WINetworkSharingController.AuthorizationState.automatic](./authorizationstate/automatic.md)
   The person has granted authorization to share Wi-Fi networks with the accessory automatically, without requiring approval for each network.
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func requestAuthorization() async throws -> WINetworkSharingController.AuthorizationState](winetworksharingcontroller/requestauthorization.md)
+### Authorizing an accessory for network sharing
+- [func requestAuthorization() async throws -> WINetworkSharingController.AuthorizationState](./requestauthorization%28%29.md)
   Requests network-sharing authorization for the specified accessory at initial setup.
 
 

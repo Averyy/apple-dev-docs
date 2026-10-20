@@ -1,7 +1,8 @@
 # label
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the item the object detector found in an image.
 
@@ -16,9 +17,10 @@ var label: String
 
 ## See Also
 
-- [var boundingBox: CGRect](mlobjectdetector/objectannotation/boundingbox.md)
+### Inspecting an annotation
+- [var boundingBox: CGRect](./boundingbox.md)
   A rectangular region that encloses an item the object detector found in the image.
-- [var confidence: Double](mlobjectdetector/objectannotation/confidence.md)
+- [var confidence: Double](./confidence.md)
   The object detector’s confidence score for its prediction’s accuracy.
 
 

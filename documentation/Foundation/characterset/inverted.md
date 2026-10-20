@@ -1,7 +1,8 @@
 # inverted
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an inverted copy of the receiver.
 
@@ -23,7 +24,8 @@ var inverted: CharacterSet { get }
 
 ## See Also
 
-- [func invert()](characterset/invert.md)
+### Inverting a Character Set
+- [func invert()](./invert%28%29.md)
   Invert the contents of the `CharacterSet`.
 
 

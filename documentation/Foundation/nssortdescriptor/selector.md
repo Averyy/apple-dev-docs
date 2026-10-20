@@ -1,7 +1,8 @@
 # selector
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selector for comparing objects.
 
@@ -20,15 +21,20 @@ The selector for comparing objects.
 var selector: Selector? { get }
 ```
 
+```objc
+@property (readonly, nullable) SEL selector;
+```
+
 ## See Also
 
-- [var ascending: Bool](nssortdescriptor/ascending.md)
+### Getting Information About a Sort Descriptor
+- [var ascending: Bool](./ascending.md)
   A Boolean value that indicates whether the receiver specifies sorting in ascending order.
-- [var key: String?](nssortdescriptor/key.md)
+- [var key: String?](./key.md)
   The key that specifies the property to compare during sorting.
-- [var keyPath: AnyKeyPath?](nssortdescriptor/keypath.md)
+- [var keyPath: AnyKeyPath?](./keypath.md)
   The key path that specifies the property to compare during sorting.
-- [var comparator: Comparator](nssortdescriptor/comparator.md)
+- [var comparator: Comparator](./comparator.md)
   The comparator for the sort descriptor.
 
 

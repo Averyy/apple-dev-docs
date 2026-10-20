@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enqueues a solver reset call that executes before the next solve.
 

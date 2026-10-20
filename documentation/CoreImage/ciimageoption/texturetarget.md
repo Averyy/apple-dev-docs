@@ -1,12 +1,15 @@
 # textureTarget
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The key for an OpenGL texture target.
 
 **Availability**:
-- macOS 10.9+
+- macOS 10.9+ - Deprecated in 10.14
+
+> **Deprecated**: Core Image OpenGL API deprecated. (Define CI_SILENCE_GL_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,23 +17,28 @@ The key for an OpenGL texture target.
 static let textureTarget: CIImageOption
 ```
 
+```c
+extern CIImageOption const kCIImageTextureTarget;
+```
+
 #### Discussion
 
-The value for this key must be an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a supported OpenGL texture target constant, either `GL_TEXTURE_2D` or `GL_TEXTURE_RECTANGLE_ARB`. You may only use this key when initializing an image using the [`init(texture:size:flipped:options:)`](ciimage/init(texture:size:flipped:options:).md) method.
+The value for this key must be an [`NSNumber`](../../Foundation/nsnumber.md) object containing a supported OpenGL texture target constant, either `GL_TEXTURE_2D` or `GL_TEXTURE_RECTANGLE_ARB`. You may only use this key when initializing an image using the [`init(texture:size:flipped:options:)`](../ciimage/init%28texture,size,flipped,options%29.md) method.
 
 ## See Also
 
-- [init(cgLayer: CGLayer)](ciimage/init(cglayer:)-2lgo6.md)
+### Deprecated
+- [init(cgLayer: CGLayer)](../ciimage/init%28cglayer%29-2lgo6.md)
   Initializes an image object  from the contents supplied by a CGLayer object.
-- [init(cgLayer: CGLayer, options: [CIImageOption : Any]?)](ciimage/init(cglayer:options:)-3p3l3.md)
+- [init(cgLayer: CGLayer, options: [CIImageOption : Any]?)](../ciimage/init%28cglayer,options%29-3p3l3.md)
   Initializes an image object  from the contents supplied by a CGLayer object, using the  specified options.
-- [init(texture: UInt32, size: CGSize, flipped: Bool, colorSpace: CGColorSpace?)](ciimage/init(texture:size:flipped:colorspace:).md)
+- [init(texture: UInt32, size: CGSize, flipped: Bool, colorSpace: CGColorSpace?)](../ciimage/init%28texture,size,flipped,colorspace%29.md)
   Initializes an image object with data supplied by an OpenGL texture.
-- [init(texture: UInt32, size: CGSize, flipped: Bool, options: [CIImageOption : Any]?)](ciimage/init(texture:size:flipped:options:).md)
+- [init(texture: UInt32, size: CGSize, flipped: Bool, options: [CIImageOption : Any]?)](../ciimage/init%28texture,size,flipped,options%29.md)
   Initializes an image object with data supplied by an OpenGL texture.
-- [init(ioSurface: IOSurfaceRef, plane: Int, format: CIFormat, options: [CIImageOption : Any]?)](ciimage/init(iosurface:plane:format:options:)-93isn.md)
+- [init(ioSurface: IOSurfaceRef, plane: Int, format: CIFormat, options: [CIImageOption : Any]?)](../ciimage/init%28iosurface,plane,format,options%29-93isn.md)
   Initializes, using the specified format and options, an image with the contents of a specific data plane in an IOSurface.
-- [static let textureFormat: CIImageOption](ciimageoption/textureformat.md)
+- [static let textureFormat: CIImageOption](./textureformat.md)
   The key for an OpenGL texture format.
 
 

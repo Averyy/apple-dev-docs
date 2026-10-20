@@ -1,7 +1,8 @@
 # eventType
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of user interaction with the media.
 
@@ -16,9 +17,14 @@ The type of user interaction with the media.
 var eventType: SRMediaEventType { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) SRMediaEventType eventType;
+```
+
 ## See Also
 
-- [enum SRMediaEventType](srmediaeventtype.md)
+### Tracking Media Events
+- [enum SRMediaEventType](../srmediaeventtype.md)
   The types of user interaction with media that the sensor tracks.
 
 

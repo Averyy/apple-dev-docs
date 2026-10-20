@@ -1,7 +1,8 @@
 # DialogSeverity
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The severity of an alert or confirmation dialog.
 
@@ -27,19 +28,19 @@ You can use dialog severity to indicate that people need to take extra care when
 ## Topics
 
 ### Getting severities
-- [static let automatic: DialogSeverity](dialogseverity/automatic.md)
+- [static let automatic: DialogSeverity](./dialogseverity/automatic.md)
   The default dialog severity. Alerts that present an error will use `.critical` and all others will use `.standard`.
-- [static let standard: DialogSeverity](dialogseverity/standard.md)
+- [static let standard: DialogSeverity](./dialogseverity/standard.md)
   A severity that indicates the dialog is being displayed for the purpose of presenting information to the user.
-- [static let critical: DialogSeverity](dialogseverity/critical.md)
+- [static let critical: DialogSeverity](./dialogseverity/critical.md)
   A severity that indicates extra attention should be given to the dialog, for example when unexpected data loss may occur as a result of the action taken.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # DADisk
 
 **Framework**: Disk Arbitration  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Type of a reference to DADisk instances.
 
@@ -15,11 +16,15 @@ Type of a reference to DADisk instances.
 class DADisk
 ```
 
+```c
+typedef struct __DADisk * DADiskRef;
+```
+
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # outputVolume
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mixer’s output volume.
 
@@ -18,6 +19,10 @@ The mixer’s output volume.
 
 ```swift
 var outputVolume: Float { get set }
+```
+
+```objc
+@property (nonatomic) float outputVolume;
 ```
 
 #### Discussion

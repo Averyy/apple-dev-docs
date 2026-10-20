@@ -2,9 +2,10 @@
 
 **Framework**: Distributed  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
-Type of [`DistributedTargetInvocationEncoder`](distributedtargetinvocationencoder.md) that should be used when the Swift runtime needs to encode a distributed target call into an encoder, before passing it off to `remoteCall(...)`.
+Type of [`DistributedTargetInvocationEncoder`](../distributedtargetinvocationencoder.md) that should be used when the Swift runtime needs to encode a distributed target call into an encoder, before passing it off to `remoteCall(...)`.
 
 **Availability**:
 - iOS 16.0+
@@ -12,7 +13,7 @@ Type of [`DistributedTargetInvocationEncoder`](distributedtargetinvocationencode
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

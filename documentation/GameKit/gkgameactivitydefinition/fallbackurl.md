@@ -1,7 +1,8 @@
 # fallbackURL
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A fallback URL that can be used to construct a game-specific URL for players to share or join, if the joining device does not support the default URL.
 
@@ -19,9 +20,13 @@ A fallback URL that can be used to construct a game-specific URL for players to 
 var fallbackURL: URL? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSURL * fallbackURL;
+```
+
 ## Mentions
 
-- [Creating activities for your game](creating-activities-for-your-game.md)
+- [Creating activities for your game](../creating-activities-for-your-game.md)
 
 
 ---

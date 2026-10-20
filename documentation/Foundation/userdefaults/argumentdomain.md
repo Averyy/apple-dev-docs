@@ -1,7 +1,8 @@
 # argumentDomain
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier for the domain that contains command-line settings.
 
@@ -20,6 +21,10 @@ The identifier for the domain that contains command-line settings.
 class let argumentDomain: String
 ```
 
+```c
+extern NSString * const NSArgumentDomain;
+```
+
 #### Discussion
 
 When someone launches your app from Xcode or the command-line, they can override setting values using command-line arguments. The defaults system stores those overrides in this domain, which is volatile and resets with each app launch. Values in this domain override most other domains, including your app-specific settings.
@@ -28,11 +33,12 @@ To specify custom settings from the command line, add the `-default` parameter t
 
 ## See Also
 
-- [class let globalDomain: String](userdefaults/globaldomain.md)
+### Getting the domain names
+- [class let globalDomain: String](./globaldomain.md)
   The identifier for the domain that contains system-specified settings for all apps.
-- [class let registrationDomain: String](userdefaults/registrationdomain.md)
+- [class let registrationDomain: String](./registrationdomain.md)
   The identifier for the domain that contains your app’s registered default values.
-- [var volatileDomainNames: [String]](userdefaults/volatiledomainnames.md)
+- [var volatileDomainNames: [String]](./volatiledomainnames.md)
   An array of identifiers for the volatile domains associated with the current object.
 
 

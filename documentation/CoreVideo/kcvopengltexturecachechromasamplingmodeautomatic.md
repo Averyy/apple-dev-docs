@@ -1,12 +1,15 @@
 # kCVOpenGLTextureCacheChromaSamplingModeAutomatic
 
 **Framework**: Core Video  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The default mode if not otherwise specified.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
+
+> **Deprecated**: OpenGL/OpenGLES is no longer supported. Use Metal APIs instead. (Define COREVIDEO_SILENCE_GL_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,11 +17,16 @@ The default mode if not otherwise specified.
 let kCVOpenGLTextureCacheChromaSamplingModeAutomatic: CFString
 ```
 
+```c
+extern CFStringRef const kCVOpenGLTextureCacheChromaSamplingModeAutomatic;
+```
+
 ## See Also
 
-- [let kCVOpenGLTextureCacheChromaSamplingModeHighestQuality: CFString](kcvopengltexturecachechromasamplingmodehighestquality.md)
+### Values
+- [let kCVOpenGLTextureCacheChromaSamplingModeHighestQuality: CFString](./kcvopengltexturecachechromasamplingmodehighestquality.md)
   Forces the highest quality regardless of performance impact.
-- [let kCVOpenGLTextureCacheChromaSamplingModeBestPerformance: CFString](kcvopengltexturecachechromasamplingmodebestperformance.md)
+- [let kCVOpenGLTextureCacheChromaSamplingModeBestPerformance: CFString](./kcvopengltexturecachechromasamplingmodebestperformance.md)
   Set the chroma sample mode to use the most performant way possible.
 
 

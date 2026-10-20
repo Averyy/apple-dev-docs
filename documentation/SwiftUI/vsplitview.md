@@ -1,7 +1,8 @@
 # VSplitView
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A layout container that arranges its children in a vertical line and allows the user to resize them using dividers placed between them.
 
@@ -18,16 +19,17 @@ struct VSplitView<Content> where Content : View
 ## Topics
 
 ### Creating a vertical split view
-- [init(content: () -> Content)](vsplitview/init(content:).md)
+- [init(content: () -> Content)](./vsplitview/init%28content%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct HSplitView](hsplitview.md)
+### Displaying views in multiple panes
+- [struct HSplitView](./hsplitview.md)
   A layout container that arranges its children in a horizontal line and allows the user to resize them using dividers placed between them.
 
 

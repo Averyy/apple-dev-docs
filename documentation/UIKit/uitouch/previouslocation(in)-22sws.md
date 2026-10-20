@@ -1,7 +1,8 @@
 # previousLocation(in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the previous location of the touch in the coordinate system of the given view.
 
@@ -9,7 +10,7 @@ Returns the previous location of the touch in the coordinate system of the given
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Returns the previous location of the touch in the coordinate system of the given
 func previousLocation(in view: UIView?) -> CGPoint
 ```
 
+```objc
+- (CGPoint) previousLocationInView:(UIView *) view;
+```
+
 #### Return Value
 
-This method returns the previous location of a [`UITouch`](uitouch.md) object in the coordinate system of the specified view. Because the touch object might have been forwarded to a view from another view, this method performs any necessary conversion of the touch location to the coordinate system of the specified view.
+This method returns the previous location of a [`UITouch`](../uitouch.md) object in the coordinate system of the specified view. Because the touch object might have been forwarded to a view from another view, this method performs any necessary conversion of the touch location to the coordinate system of the specified view.
 
 ## Parameters
 
@@ -28,19 +33,20 @@ This method returns the previous location of a [`UITouch`](uitouch.md) object in
 
 ## See Also
 
-- [func location(in: UIView?) -> CGPoint](uitouch/location(in:)-8rd36.md)
+### Getting the location of a touch
+- [func location(in: UIView?) -> CGPoint](./location%28in%29-8rd36.md)
   Returns the current location of the touch in the coordinate system of the given view.
-- [var view: UIView?](uitouch/view.md)
+- [var view: UIView?](./view.md)
   The view to which touches are being delivered, if any.
-- [var window: UIWindow?](uitouch/window.md)
+- [var window: UIWindow?](./window.md)
   The window in which the touch initially occurred.
-- [var majorRadius: CGFloat](uitouch/majorradius.md)
+- [var majorRadius: CGFloat](./majorradius.md)
   The radius (in points) of the touch.
-- [var majorRadiusTolerance: CGFloat](uitouch/majorradiustolerance.md)
+- [var majorRadiusTolerance: CGFloat](./majorradiustolerance.md)
   The tolerance (in points) of the touch’s radius.
-- [func preciseLocation(in: UIView?) -> CGPoint](uitouch/preciselocation(in:).md)
+- [func preciseLocation(in: UIView?) -> CGPoint](./preciselocation%28in%29.md)
   Returns a precise location for the touch, when available.
-- [func precisePreviousLocation(in: UIView?) -> CGPoint](uitouch/precisepreviouslocation(in:).md)
+- [func precisePreviousLocation(in: UIView?) -> CGPoint](./precisepreviouslocation%28in%29.md)
   Returns a precise previous location for the touch, when available.
 
 

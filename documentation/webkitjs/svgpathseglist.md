@@ -1,7 +1,8 @@
 # SVGPathSegList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,22 +10,22 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGPathSegList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [numberOfItems](svgpathseglist/1633795-numberofitems.md)
+- [numberOfItems](./svgpathseglist/api-1633795-numberofitems.md)
 ### Instance Methods
-- [appendItem](svgpathseglist/1633918-appenditem.md)
-- [clear](svgpathseglist/1630981-clear.md)
-- [getItem](svgpathseglist/1630403-getitem.md)
-- [initialize](svgpathseglist/1633782-initialize.md)
-- [insertItemBefore](svgpathseglist/1631940-insertitembefore.md)
-- [removeItem](svgpathseglist/1631131-removeitem.md)
-- [replaceItem](svgpathseglist/1630093-replaceitem.md)
+- [appendItem](./svgpathseglist/api-1633918-appenditem.md)
+- [clear](./svgpathseglist/api-1630981-clear.md)
+- [getItem](./svgpathseglist/api-1630403-getitem.md)
+- [initialize](./svgpathseglist/api-1633782-initialize.md)
+- [insertItemBefore](./svgpathseglist/api-1631940-insertitembefore.md)
+- [removeItem](./svgpathseglist/api-1631131-removeitem.md)
+- [replaceItem](./svgpathseglist/api-1630093-replaceitem.md)
 
 
 ---

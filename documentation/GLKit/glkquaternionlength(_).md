@@ -1,7 +1,8 @@
 # GLKQuaternionLength(_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the length of a quaternion.
 
@@ -17,6 +18,10 @@ Returns the length of a quaternion.
 func GLKQuaternionLength(_ quaternion: GLKQuaternion) -> Float
 ```
 
+```c
+static float GLKQuaternionLength(GLKQuaternion quaternion);
+```
+
 #### Return Value
 
 The length of the quaternion.
@@ -27,9 +32,10 @@ The length of the quaternion.
 
 ## See Also
 
-- [func GLKQuaternionAxis(GLKQuaternion) -> GLKVector3](glkquaternionaxis(_:).md)
+### Retrieving Information About a Quaternion
+- [func GLKQuaternionAxis(GLKQuaternion) -> GLKVector3](./glkquaternionaxis%28_%29.md)
   Returns the axis of rotation of a quaternion.
-- [func GLKQuaternionAngle(GLKQuaternion) -> Float](glkquaternionangle(_:).md)
+- [func GLKQuaternionAngle(GLKQuaternion) -> Float](./glkquaternionangle%28_%29.md)
   Returns the rotation angle of a quaternion.
 
 

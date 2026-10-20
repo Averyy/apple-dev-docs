@@ -1,7 +1,8 @@
 # XCTestError.Code.timeoutWhileWaiting
 
 **Framework**: XCTest  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A code that represents a timeout the test encountered while waiting to fulfill expectations.
 
@@ -11,9 +12,14 @@ A code that represents a timeout the test encountered while waiting to fulfill e
 case timeoutWhileWaiting
 ```
 
+```c
+XCTestErrorCodeTimeoutWhileWaiting
+```
+
 ## See Also
 
-- [XCTestError.Code.failureWhileWaiting](xctesterror/code/failurewhilewaiting.md)
+### Error Codes
+- [XCTestError.Code.failureWhileWaiting](./failurewhilewaiting.md)
   A code that represents a test failure the test encountered while waiting to fulfill expectations.
 
 

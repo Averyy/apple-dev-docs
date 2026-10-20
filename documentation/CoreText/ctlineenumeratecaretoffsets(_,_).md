@@ -1,7 +1,8 @@
 # CTLineEnumerateCaretOffsets(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Enumerates caret offsets for characters in a line.
 
@@ -20,6 +21,10 @@ Enumerates caret offsets for characters in a line.
 func CTLineEnumerateCaretOffsets(_ line: CTLine, _ block: @escaping (Double, CFIndex, Bool, UnsafeMutablePointer<Bool>) -> Void)
 ```
 
+```c
+extern void CTLineEnumerateCaretOffsets(CTLineRef line, void (^block)(double offset, CFIndex charIndex, bool leadingEdge, bool *stop));
+```
+
 ## Parameters
 
 - `line`: The line to enumerate.
@@ -27,9 +32,10 @@ func CTLineEnumerateCaretOffsets(_ line: CTLine, _ block: @escaping (Double, CFI
 
 ## See Also
 
-- [func CTLineGetStringIndexForPosition(CTLine, CGPoint) -> CFIndex](ctlinegetstringindexforposition(_:_:).md)
+### Getting Line Positioning
+- [func CTLineGetStringIndexForPosition(CTLine, CGPoint) -> CFIndex](./ctlinegetstringindexforposition%28_,_%29.md)
   Performs hit testing.
-- [func CTLineGetOffsetForStringIndex(CTLine, CFIndex, UnsafeMutablePointer<CGFloat>?) -> CGFloat](ctlinegetoffsetforstringindex(_:_:_:).md)
+- [func CTLineGetOffsetForStringIndex(CTLine, CFIndex, UnsafeMutablePointer<CGFloat>?) -> CGFloat](./ctlinegetoffsetforstringindex%28_,_,_%29.md)
   Determines the graphical offset or offsets for a string index.
 
 

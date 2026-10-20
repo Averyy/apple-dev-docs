@@ -1,7 +1,8 @@
 # appIdentifier
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The iTunes identifier of the recommended app.
 
@@ -17,13 +18,18 @@ The iTunes identifier of the recommended app.
 var appIdentifier: String { get set }
 ```
 
+```objc
+@property (nonatomic, retain) NSString * appIdentifier;
+```
+
 ## See Also
 
-- [init(appIdentifier: String, position: SKOverlay.Position)](skoverlay/appconfiguration/init(appidentifier:position:).md)
+### Creating an App Configuration
+- [init(appIdentifier: String, position: SKOverlay.Position)](./init%28appidentifier,position%29.md)
   Creates an object that represents the attributes of an overlay you use to recommend another app on the App Store.
-- [var position: SKOverlay.Position](skoverlay/appconfiguration/position.md)
+- [var position: SKOverlay.Position](./position.md)
   The position of the overlay on the screen.
-- [SKOverlay.Position](skoverlay/position.md)
+- [SKOverlay.Position](../position.md)
   Constants that identify the position of an overlay on the screen.
 
 

@@ -1,7 +1,8 @@
 # estimateRender(_:from:to:at:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a task with estimated resource statistics for a render, without executing the render.
 
@@ -19,9 +20,13 @@ Returns a task with estimated resource statistics for a render, without executin
 func estimateRender(_ image: CIImage, from fromRect: CGRect, to destination: CIRenderDestination, at atPoint: CGPoint) throws -> CIRenderTask
 ```
 
+```objc
+- (CIRenderTask *) estimateRender:(CIImage *) image fromRect:(CGRect) fromRect toDestination:(CIRenderDestination *) destination atPoint:(CGPoint) atPoint error:(NSError **) error;
+```
+
 #### Return Value
 
- A [`CIRenderTask`](cirendertask.md) you can query for estimated statistics, or `nil` if `fromRect` doesn’t intersect `image.extent` or if estimation fails.
+ A [`CIRenderTask`](../cirendertask.md) you can query for estimated statistics, or `nil` if `fromRect` doesn’t intersect `image.extent` or if estimation fails.
 
 #### Discussion
 
@@ -31,9 +36,9 @@ The method renders as if the image is cropped to `fromRect` and places the origi
 
 ## Parameters
 
-- `image`: The [`CIImage`](ciimage.md) to estimate the render for.
-- `fromRect`: The region of [`CIImage`](ciimage.md) to render.
-- `destination`: The [`CIRenderDestination`](cirenderdestination.md) to estimate the render to.
+- `image`: The [`CIImage`](../ciimage.md) to estimate the render for.
+- `fromRect`: The region of [`CIImage`](../ciimage.md) to render.
+- `destination`: The [`CIRenderDestination`](../cirenderdestination.md) to estimate the render to.
 - `atPoint`: The point in the destination where the origin of `fromRect` is placed.
 
 

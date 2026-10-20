@@ -1,9 +1,10 @@
 # PaymentCardTransactionRequest.TransactionAmountDescription.preauthorizationAmount(_:)
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Places a temporary hold on the customer’s account for the specified amount. Only allowed for [`PaymentCardTransactionRequest.TransactionType.purchase`](paymentcardtransactionrequest/transactiontype/purchase.md)
+Places a temporary hold on the customer’s account for the specified amount. Only allowed for [`PaymentCardTransactionRequest.TransactionType.purchase`](../transactiontype/purchase.md)
 
 **Availability**:
 - iOS 18.0+

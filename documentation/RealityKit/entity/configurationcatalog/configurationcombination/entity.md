@@ -1,7 +1,8 @@
 # entity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that represents the configuration choices.
 
@@ -21,7 +22,8 @@ let entity: Entity
 
 ## See Also
 
-- [let configurationSpecifications: [String : String]](entity/configurationcatalog/configurationcombination/configurationspecifications.md)
+### Accessing values
+- [let configurationSpecifications: [String : String]](./configurationspecifications.md)
   A dictionary that associates IDs of configuration sets to IDs of configurations.
 
 

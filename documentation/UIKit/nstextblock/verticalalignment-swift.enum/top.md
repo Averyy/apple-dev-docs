@@ -1,7 +1,8 @@
 # NSTextBlock.VerticalAlignment.top
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 6.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case top
+```
+
+```c
+NSTextBlockVerticalAlignmentTop
 ```
 
 

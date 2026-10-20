@@ -1,7 +1,8 @@
 # MEFileInfo.FragmentsStatus.couldNotContainFragments
 
 **Framework**: MediaExtension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The file isn’t extendable by fragments.
 
@@ -14,15 +15,20 @@ The file isn’t extendable by fragments.
 case couldNotContainFragments
 ```
 
+```c
+MEFileInfoCouldNotContainFragments
+```
+
 ## See Also
 
-- [MEFileInfo.FragmentsStatus.containsFragments](mefileinfo/fragmentsstatus-swift.enum/containsfragments.md)
+### File fragment status values
+- [MEFileInfo.FragmentsStatus.containsFragments](./containsfragments.md)
   The file is extendable by fragments and contains at least one fragment.
-- [MEFileInfo.FragmentsStatus.couldContainButDoesNotContainFragments](mefileinfo/fragmentsstatus-swift.enum/couldcontainbutdoesnotcontainfragments.md)
+- [MEFileInfo.FragmentsStatus.couldContainButDoesNotContainFragments](./couldcontainbutdoesnotcontainfragments.md)
   The file is extendable by fragments, but doesn’t contain any fragments.
-- [MEFileInfo.FragmentsStatus.containsFragments](mefileinfo/fragmentsstatus-swift.enum/containsfragments.md)
+- [MEFileInfo.FragmentsStatus.containsFragments](./containsfragments.md)
   The file is extendable by fragments and contains at least one fragment.
-- [MEFileInfo.FragmentsStatus.couldContainButDoesNotContainFragments](mefileinfo/fragmentsstatus-swift.enum/couldcontainbutdoesnotcontainfragments.md)
+- [MEFileInfo.FragmentsStatus.couldContainButDoesNotContainFragments](./couldcontainbutdoesnotcontainfragments.md)
   The file is extendable by fragments, but doesn’t contain any fragments.
 
 

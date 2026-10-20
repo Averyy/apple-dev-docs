@@ -2,6 +2,7 @@
 
 **Framework**: TipKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The tip’s unique identifier.
@@ -23,7 +24,7 @@ var id: String { get }
 
 #### Overview
 
-> **Note**: More information on custom tip identifiers can be found in WWDC24 Session 10070: [`Customize feature discovery with TipKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10070?time=312).
+> **Note**: More information on custom tip identifiers can be found in WWDC24 Session 10070: [Customize feature discovery with TipKit](https://developer.apple.com/videos/play/wwdc2024/10070?time=312).
 
 By default the type name of the `Tip` conforming struct will be used as the tip’s `id`. Specifying a custom `id` allows you to create reusable tips based on their content.
 
@@ -49,11 +50,12 @@ struct TrailList: View {
 
 ## See Also
 
-- [var title: Text](tip/title.md)
+### Setting tip content
+- [var title: Text](./title.md)
   A title that names the tip.
-- [var message: Text?](tip/message.md)
+- [var message: Text?](./message.md)
   A short description of how to use the tip’s feature.
-- [var image: Image?](tip/image.md)
+- [var image: Image?](./image.md)
   The image associated with the tip.
 
 

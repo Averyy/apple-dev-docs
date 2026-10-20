@@ -1,7 +1,8 @@
 # type
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of elements stored in the column the identifier represents.
 

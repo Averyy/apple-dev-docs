@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_ConstantQualityFactor
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 let kVTCompressionPropertyKey_ConstantQualityFactor: CFString
+```
+
+```c
+extern CFStringRef const kVTCompressionPropertyKey_ConstantQualityFactor;
 ```
 
 #### Discussion

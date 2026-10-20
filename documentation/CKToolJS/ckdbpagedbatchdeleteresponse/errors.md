@@ -1,7 +1,8 @@
 # errors
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of errors that occurred during the batch delete operation.
 
@@ -10,7 +11,7 @@ The array of errors that occurred during the batch delete operation.
 
 ## Declaration
 
-```swift
+```
 attribute CKDBBatchDeleteError[] errors;
 ```
 

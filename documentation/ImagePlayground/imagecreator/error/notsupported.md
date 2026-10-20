@@ -1,16 +1,17 @@
 # ImageCreator.Error.notSupported
 
 **Framework**: Image Playground  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the device doesn’t support image generation.
 
 **Availability**:
-- iOS 18.4+
-- iPadOS 18.4+
-- Mac Catalyst 18.4+
-- macOS 15.4+
-- visionOS 2.4+
+- iOS 18.4+ - Deprecated in 27.0
+- iPadOS 18.4+ - Deprecated in 27.0
+- Mac Catalyst 18.4+ - Deprecated in 27.0
+- macOS 15.4+ - Deprecated in 27.0
+- visionOS 2.4+ - Deprecated in 27.0
 
 ## Declaration
 
@@ -24,19 +25,20 @@ Make sure the device has the hardware required to run models.
 
 ## See Also
 
-- [ImageCreator.Error.unavailable](imagecreator/error/unavailable.md)
+### Getting the error codes
+- [ImageCreator.Error.unavailable](./unavailable.md)
   An error that indicates image creation is currently unavailable.
-- [ImageCreator.Error.creationCancelled](imagecreator/error/creationcancelled.md)
+- [ImageCreator.Error.creationCancelled](./creationcancelled.md)
   An error that occurs in response to cancellation of the parent task.
-- [ImageCreator.Error.faceInImageTooSmall](imagecreator/error/faceinimagetoosmall.md)
+- [ImageCreator.Error.faceInImageTooSmall](./faceinimagetoosmall.md)
   An error that indicates the system cannot use one of the source images because the face in it is too small.
-- [ImageCreator.Error.unsupportedLanguage](imagecreator/error/unsupportedlanguage.md)
+- [ImageCreator.Error.unsupportedLanguage](./unsupportedlanguage.md)
   An error that indicates the input text uses an unsupported language.
-- [ImageCreator.Error.unsupportedInputImage](imagecreator/error/unsupportedinputimage.md)
+- [ImageCreator.Error.unsupportedInputImage](./unsupportedinputimage.md)
   An error that indicates the system cannot use one of the specified source images.
-- [ImageCreator.Error.backgroundCreationForbidden](imagecreator/error/backgroundcreationforbidden.md)
+- [ImageCreator.Error.backgroundCreationForbidden](./backgroundcreationforbidden.md)
   An error that indicates the app is hidden or in the background.
-- [ImageCreator.Error.creationFailed](imagecreator/error/creationfailed.md)
+- [ImageCreator.Error.creationFailed](./creationfailed.md)
   An error that indicates a general failure occurred during image creation.
 
 

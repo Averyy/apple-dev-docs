@@ -1,7 +1,8 @@
 # scanForNetworks(withSSID:)
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scans for networks.
 
@@ -14,6 +15,10 @@ Scans for networks.
 func scanForNetworks(withSSID ssid: Data?) throws -> Set<CWNetwork>
 ```
 
+```objc
+- (NSSet<CWNetwork *> *) scanForNetworksWithSSID:(NSData *) ssid error:(NSError **) error;
+```
+
 #### Return Value
 
 A set of CWNetwork objects.
@@ -22,7 +27,9 @@ A set of CWNetwork objects.
 
 If *ssid* parameter is present, a directed scan will be performed by the interface, otherwise a broadcast scan will be performed. This method will block for the duration of the scan.
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -30,7 +37,8 @@ If *ssid* parameter is present, a directed scan will be performed by the interfa
 
 ## See Also
 
-- [func scanForNetworks(withName: String?) throws -> Set<CWNetwork>](cwinterface/scanfornetworks(withname:).md)
+### Scanning for networks
+- [func scanForNetworks(withName: String?) throws -> Set<CWNetwork>](./scanfornetworks%28withname%29.md)
   Scans for networks.
 
 

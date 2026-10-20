@@ -1,7 +1,8 @@
 # pairedTerminalIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the paired terminal.
 
@@ -19,17 +20,22 @@ The unique identifier of the paired terminal.
 var pairedTerminalIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * pairedTerminalIdentifier;
+```
+
 #### Discussion
 
 PassKit can create a Secure Element pass during an exchange with a terminal. For example, when creating a digital car key. You can use this property’s value to identify the terminal.
 
 ## See Also
 
-- [var deviceAccountIdentifier: String](pksecureelementpass/deviceaccountidentifier.md)
+### Getting the hardware attributes
+- [var deviceAccountIdentifier: String](./deviceaccountidentifier.md)
   The unique identifier for the device-specific account number.
-- [var deviceAccountNumberSuffix: String](pksecureelementpass/deviceaccountnumbersuffix.md)
+- [var deviceAccountNumberSuffix: String](./deviceaccountnumbersuffix.md)
   A display-ready version of the device-specific account number.
-- [var devicePassIdentifier: String?](pksecureelementpass/devicepassidentifier.md)
+- [var devicePassIdentifier: String?](./devicepassidentifier.md)
   An opaque value for the pass.
 
 

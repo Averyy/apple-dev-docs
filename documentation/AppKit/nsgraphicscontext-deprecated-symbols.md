@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,14 +12,14 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated methods
-- [init(window: NSWindow)](nsgraphicscontext/init(window:).md)
+- [init(window: NSWindow)](./nsgraphicscontext/init%28window%29.md)
   Creates a new graphics context for drawing into a window.
-- [init(graphicsPort: UnsafeMutableRawPointer, flipped: Bool)](nsgraphicscontext/init(graphicsport:flipped:).md)
+- [init(graphicsPort: UnsafeMutableRawPointer, flipped: Bool)](./nsgraphicscontext/init%28graphicsport,flipped%29.md)
   Creates a new graphics context from the specified graphics port.
-- [class func setGraphicsState(Int)](nsgraphicscontext/setgraphicsstate(_:).md)
+- [class func setGraphicsState(Int)](./nsgraphicscontext/setgraphicsstate%28_%29.md)
   Makes the graphics context of the specified graphics state current, and resets graphics state.
 ### Deprecated properties
-- [var graphicsPort: UnsafeMutableRawPointer](nsgraphicscontext/graphicsport.md)
+- [var graphicsPort: UnsafeMutableRawPointer](./nsgraphicscontext/graphicsport.md)
   The low-level, platform-specific graphics context represented by the graphic port.
 
 

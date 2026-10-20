@@ -1,14 +1,15 @@
 # upl_abort
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.1+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t upl_abort(upl_t upl_object, integer_t abort_cond);
 ```
 

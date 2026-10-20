@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Reclaims an item, releasing any resources allocated for the item.
@@ -12,12 +13,20 @@ Reclaims an item, releasing any resources allocated for the item.
 ## Declaration
 
 ```swift
+func reclaimItem(_ item: FSItem, replyHandler reply: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func reclaimItem(_ item: FSItem) async throws
+```
+
+```objc
+- (void) reclaimItem:(FSItem *) item replyHandler:(void (^)(NSError *error)) reply;
 ```
 
 #### Discussion
 
-FSKit guarantees that for every [`FSItem`](fsitem.md) returned by the volume, a corresponding reclaim operation occurs after the upper layers no longer reference that item. To use this behavior, call [`tryReclaim(_:)`](fsitem/tryreclaim(_:).md) in your implementation of this method.
+FSKit guarantees that for every [`FSItem`](../../fsitem.md) returned by the volume, a corresponding reclaim operation occurs after the upper layers no longer reference that item. To use this behavior, call [`tryReclaim(_:)`](../../fsitem/tryreclaim%28_%29.md) in your implementation of this method.
 
 > **Note**: Block device file systems may assess whether an underlying resource terminates before processing reclaim operations. On unary file systems, for example, the associated volumes unmount when such resources disconnect from the system. The unmount triggers a reclaiming of all items. Some implementations benefit greatly from short-circuiting in such cases. With a terminated resource, all I/O results in an error, making short-circuiting the most efficient response.
 

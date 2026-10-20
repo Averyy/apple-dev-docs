@@ -1,7 +1,8 @@
 # readAttributeActiveHardwareFaults(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActiveHardwareFaults(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActiveHardwareFaults() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeActiveHardwareFaultsWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

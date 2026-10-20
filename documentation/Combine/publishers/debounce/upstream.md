@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,11 +23,12 @@ let upstream: Upstream
 
 ## See Also
 
-- [let dueTime: Context.SchedulerTimeType.Stride](publishers/debounce/duetime.md)
+### Inspecting publisher properties
+- [let dueTime: Context.SchedulerTimeType.Stride](./duetime.md)
   The amount of time the publisher should wait before publishing an element.
-- [let scheduler: Context](publishers/debounce/scheduler.md)
+- [let scheduler: Context](./scheduler.md)
   The scheduler on which this publisher delivers elements.
-- [let options: Context.SchedulerOptions?](publishers/debounce/options.md)
+- [let options: Context.SchedulerOptions?](./options.md)
   Scheduler options that customize this publisher’s delivery of elements.
 
 

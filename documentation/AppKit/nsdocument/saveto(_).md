@@ -1,12 +1,13 @@
 # saveTo(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The action method invoked in the receiver as first responder when the user chooses the Save To menu command.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ The action method invoked in the receiver as first responder when the user choos
 func saveTo(_ sender: Any?)
 ```
 
+```objc
+- (void) saveDocumentTo:(id) sender;
+```
+
 #### Discussion
 
-The default implementation is identical to [`saveAs(_:)`](nsdocument/saveas(_:).md) except that this method doesn’t clear the document’s edited status and doesn’t reset file location and document type if the document is a native type.
+The default implementation is identical to [`saveAs(_:)`](./saveas%28_%29.md) except that this method doesn’t clear the document’s edited status and doesn’t reset file location and document type if the document is a native type.
 
 ## Parameters
 
@@ -25,17 +30,18 @@ The default implementation is identical to [`saveAs(_:)`](nsdocument/saveas(_:).
 
 ## See Also
 
-- [func printDocument(Any?)](nsdocument/printdocument(_:).md)
+### Handling User Actions
+- [func printDocument(Any?)](./printdocument%28_%29.md)
   Prints the receiver in response to the user choosing the Print menu command.
-- [func runPageLayout(Any?)](nsdocument/runpagelayout(_:).md)
+- [func runPageLayout(Any?)](./runpagelayout%28_%29.md)
   The action method invoked in the receiver as first responder when the user chooses the Page Setup menu command.
-- [func revertToSaved(Any?)](nsdocument/reverttosaved(_:).md)
+- [func revertToSaved(Any?)](./reverttosaved%28_%29.md)
   The action of the File menu item Revert in a document-based app.
-- [func save(Any?)](nsdocument/save(_:).md)
+- [func save(Any?)](./save%28_%29.md)
   The action method invoked in the receiver as first responder when the user chooses the Save menu command.
-- [func saveAs(Any?)](nsdocument/saveas(_:).md)
+- [func saveAs(Any?)](./saveas%28_%29.md)
   The action method invoked in the receiver as first responder when the user chooses the Save As menu command.
-- [func save(withDelegate: Any?, didSave: Selector?, contextInfo: UnsafeMutableRawPointer?)](nsdocument/save(withdelegate:didsave:contextinfo:).md)
+- [func save(withDelegate: Any?, didSave: Selector?, contextInfo: UnsafeMutableRawPointer?)](./save%28withdelegate,didsave,contextinfo%29.md)
   Saves the document and delivers the results to the provided delegate object.
 
 

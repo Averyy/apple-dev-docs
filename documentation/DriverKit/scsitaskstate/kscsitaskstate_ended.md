@@ -1,17 +1,18 @@
 # kSCSITaskState_ENDED
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kSCSITaskState_ENDED
 ```
 
@@ -21,10 +22,11 @@ The task is complete.
 
 ## See Also
 
-- [kSCSITaskState_NEW_TASK](scsitaskstate/kscsitaskstate_new_task.md)
-- [kSCSITaskState_ENABLED](scsitaskstate/kscsitaskstate_enabled.md)
-- [kSCSITaskState_BLOCKED](scsitaskstate/kscsitaskstate_blocked.md)
-- [kSCSITaskState_DORMANT](scsitaskstate/kscsitaskstate_dormant.md)
+### Constants
+- [kSCSITaskState_NEW_TASK](./kscsitaskstate_new_task.md)
+- [kSCSITaskState_ENABLED](./kscsitaskstate_enabled.md)
+- [kSCSITaskState_BLOCKED](./kscsitaskstate_blocked.md)
+- [kSCSITaskState_DORMANT](./kscsitaskstate_dormant.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # repeated(count:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Repeats an animation the number of times specified by a whole number.
 
@@ -11,12 +12,18 @@ Repeats an animation the number of times specified by a whole number.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
 ```swift
 func repeated(count: Int) -> Self
+```
+
+**Other overloads**:
+
+```swift
+func repeated(count: TimeInterval) -> Self
 ```
 
 #### Return Value

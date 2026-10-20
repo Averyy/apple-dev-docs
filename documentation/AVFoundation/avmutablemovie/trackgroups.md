@@ -1,7 +1,8 @@
 # trackGroups
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The track groups an asset contains.
 

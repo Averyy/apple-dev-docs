@@ -1,7 +1,8 @@
 # kCGImagePropertyAPNGLoopCount
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of times that an animated PNG should play through its frames before stopping.
 
@@ -20,17 +21,22 @@ The number of times that an animated PNG should play through its frames before s
 let kCGImagePropertyAPNGLoopCount: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyAPNGLoopCount;
+```
+
 #### Discussion
 
 A value of `0` means the PNG repeats forever.
 
 ## See Also
 
-- [let kCGImagePropertyAPNGFrameInfoArray: CFString](kcgimagepropertyapngframeinfoarray.md)
+### Sequence Timing
+- [let kCGImagePropertyAPNGFrameInfoArray: CFString](./kcgimagepropertyapngframeinfoarray.md)
   An array of dictionaries that contain timing information for the image sequence.
-- [let kCGImagePropertyAPNGDelayTime: CFString](kcgimagepropertyapngdelaytime.md)
+- [let kCGImagePropertyAPNGDelayTime: CFString](./kcgimagepropertyapngdelaytime.md)
   The number of seconds to wait before displaying the next image in an animated sequence.
-- [let kCGImagePropertyAPNGUnclampedDelayTime: CFString](kcgimagepropertyapngunclampeddelaytime.md)
+- [let kCGImagePropertyAPNGUnclampedDelayTime: CFString](./kcgimagepropertyapngunclampeddelaytime.md)
   The number of seconds to wait before displaying the next image in an animated sequence.
 
 

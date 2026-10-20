@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object for a routing controller.
 
@@ -15,6 +16,10 @@ A delegate object for a routing controller.
 
 ```swift
 weak var delegate: (any AVCustomRoutingControllerDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) id<AVCustomRoutingControllerDelegate> delegate;
 ```
 
 

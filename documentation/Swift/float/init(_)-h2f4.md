@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance from the given string.
 
@@ -26,39 +27,59 @@ The string passed as `text` can represent a real number in decimal or hexadecima
 
 The `text` string consists of an optional plus or minus sign character (`+` or `-`) followed by one of the following:
 
-- A *decimal string* contains a significand consisting of one or more decimal digits that may include a decimal point: ```swift
-let c = Float("-1.0")
-// c == -1.0
+- A *decimal string* contains a significand consisting of one or more decimal digits that may include a decimal point:
 
-let d = Float("28.375")
-// d == 28.375
-``` A decimal string may also include an exponent following the significand, indicating the power of 10 by which the significand should be multiplied. If included, the exponent is separated by a single character, `e` or `E`, and consists of an optional plus or minus sign character and a sequence of decimal digits. ```swift
-let e = Float("2837.5e-2")
-// e == 28.375
-```
-- A *hexadecimal string* contains a significand consisting of `0X` or `0x` followed by one or more hexadecimal digits that may include a decimal point. ```swift
-let f = Float("0x1c.6")
-// f == 28.375
-``` A hexadecimal string may also include an exponent indicating the power of 2 by which the significand should be multiplied. If included, the exponent is separated by a single character, `p` or `P`, and consists of an optional plus or minus sign character and a sequence of decimal digits. ```swift
-let g = Float("0x1.c6p4")
-// g == 28.375
-```
-- The input strings `"inf"` or `"infinity"` (case insensitive) are converted to an infinite result: ```swift
-let i = Float("inf")
-// i == Float.infinity
+  ```swift
+  let c = Float("-1.0")
+  // c == -1.0
 
-let j = Float("-Infinity")
-// j == -Float.infinity
-```
-- An input string of `"nan"` (case insensitive) is converted into a *NaN* value: ```swift
-let n = Float("-nan")
-// n?.isNaN == true
-// n?.sign == .minus
-``` A NaN string may also include a payload in parentheses following the `"nan"` keyword. The payload consists of a sequence of decimal digits, or the characters `0X` or `0x` followed by a sequence of hexadecimal digits. If the payload contains any other characters, it is ignored. If the value of the payload is larger than can be stored as the payload of a `Float.nan`, the least significant bits are used. ```swift
-let p = Float("nan(0x10)")
-// p?.isNaN == true
-// String(p!) == "nan(0x10)"
-```
+  let d = Float("28.375")
+  // d == 28.375
+  ```
+
+  A decimal string may also include an exponent following the significand, indicating the power of 10 by which the significand should be multiplied. If included, the exponent is separated by a single character, `e` or `E`, and consists of an optional plus or minus sign character and a sequence of decimal digits.
+
+  ```swift
+  let e = Float("2837.5e-2")
+  // e == 28.375
+  ```
+- A *hexadecimal string* contains a significand consisting of `0X` or `0x` followed by one or more hexadecimal digits that may include a decimal point.
+
+  ```swift
+  let f = Float("0x1c.6")
+  // f == 28.375
+  ```
+
+  A hexadecimal string may also include an exponent indicating the power of 2 by which the significand should be multiplied. If included, the exponent is separated by a single character, `p` or `P`, and consists of an optional plus or minus sign character and a sequence of decimal digits.
+
+  ```swift
+  let g = Float("0x1.c6p4")
+  // g == 28.375
+  ```
+- The input strings `"inf"` or `"infinity"` (case insensitive) are converted to an infinite result:
+
+  ```swift
+  let i = Float("inf")
+  // i == Float.infinity
+
+  let j = Float("-Infinity")
+  // j == -Float.infinity
+  ```
+- An input string of `"nan"` (case insensitive) is converted into a *NaN* value:
+
+  ```swift
+  let n = Float("-nan")
+  // n?.isNaN == true
+  // n?.sign == .minus
+  ```
+
+  A NaN string may also include a payload in parentheses following the `"nan"` keyword. The payload consists of a sequence of decimal digits, or the characters `0X` or `0x` followed by a sequence of hexadecimal digits. If the payload contains any other characters, it is ignored. If the value of the payload is larger than can be stored as the payload of a `Float.nan`, the least significant bits are used.
+
+  ```swift
+  let p = Float("nan(0x10)")
+  // p?.isNaN == true
+  // String(p!) == "nan(0x10)"
+  ```
 - An input string of `"snan"` (case insensitive) is converted into a *signaling NaN* value.  This form permits an optional payload in the same format as for a non-signaling NaN.
 
 A string in any other format than those described above or containing additional characters results in a `nil` value. For example, the following conversions result in `nil`:
@@ -95,7 +116,8 @@ A decimal or hexadecimal string is converted to a `Float` instance using the IEE
 
 ## See Also
 
-- [init?(Substring)](float/init(_:)-4xsj6.md)
+### Converting Strings
+- [init?(Substring)](./init%28_%29-4xsj6.md)
 
 
 ---

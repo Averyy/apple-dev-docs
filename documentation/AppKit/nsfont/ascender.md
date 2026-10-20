@@ -1,17 +1,22 @@
 # ascender
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The top y-coordinate, offset from the baseline, of the font’s longest ascender.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var ascender: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat ascender;
 ```
 
 #### Discussion
@@ -20,13 +25,14 @@ The value of this property is the distance of the longest ascender’s top y-coo
 
 ## See Also
 
-- [var descender: CGFloat](nsfont/descender.md)
+### Getting the Font Metrics
+- [var descender: CGFloat](./descender.md)
   The bottom y-coordinate, offset from the baseline, of the font’s longest descender.
-- [var capHeight: CGFloat](nsfont/capheight.md)
+- [var capHeight: CGFloat](./capheight.md)
   The cap height of the font.
-- [var leading: CGFloat](nsfont/leading.md)
+- [var leading: CGFloat](./leading.md)
   The leading value of the font.
-- [var xHeight: CGFloat](nsfont/xheight.md)
+- [var xHeight: CGFloat](./xheight.md)
   The x-height of the font.
 
 

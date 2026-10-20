@@ -1,14 +1,15 @@
 # kHIDPage_PowerReserved
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDPage_PowerReserved = 0x86
 ```
 

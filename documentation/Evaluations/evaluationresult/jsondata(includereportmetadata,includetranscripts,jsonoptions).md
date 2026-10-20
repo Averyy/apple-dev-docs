@@ -1,7 +1,8 @@
 # jsonData(includeReportMetadata:includeTranscripts:jsonOptions:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the evaluation results as JSON data.
 
@@ -36,13 +37,14 @@ The data contains sections for summary, results, metadata, and optionally report
 
 ## See Also
 
-- [func saveJSON(to: URL, includeReportMetadata: Bool, includeTranscripts: Bool) throws -> URL](evaluationresult/savejson(to:includereportmetadata:includetranscripts:).md)
+### Saving and loading results
+- [func saveJSON(to: URL, includeReportMetadata: Bool, includeTranscripts: Bool) throws -> URL](./savejson%28to,includereportmetadata,includetranscripts%29.md)
   Saves evaluation results to a single JSON file.
-- [static func loadJSON(from: URL) throws -> EvaluationResult](evaluationresult/loadjson(from:).md)
+- [static func loadJSON(from: URL) throws -> EvaluationResult](./loadjson%28from%29.md)
   Loads an evaluation result from a JSON file on disk.
-- [static func loadJSONLines(from: URL) async throws -> [EvaluationResult]](evaluationresult/loadjsonlines(from:).md)
+- [static func loadJSONLines(from: URL) async throws -> [EvaluationResult]](./loadjsonlines%28from%29.md)
   Loads an array of evaluation results from a JSONL file on disk.
-- [init(jsonData: Data) throws](evaluationresult/init(jsondata:).md)
+- [init(jsonData: Data) throws](./init%28jsondata%29.md)
   Creates an evaluation result by parsing JSON data.
 
 

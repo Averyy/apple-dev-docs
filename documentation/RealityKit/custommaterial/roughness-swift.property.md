@@ -1,7 +1,8 @@
 # roughness
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount the surface of the 3D object scatters reflected light.
 
@@ -20,11 +21,11 @@ var roughness: CustomMaterial.Roughness { get set }
 
 #### Discussion
 
-In physically based rendering, the `roughness` property represents how much the surface of an entity scatters the light that it reflects. A material with a high roughness has a matte appearance, whereas one with a low roughness has a shiny appearance. With custom materials, RealityKit doesn’t automatically use the values set on this property. To render a custom material using roughness, set [`lightingModel`](custommaterial/lightingmodel-swift.property.md) to [`CustomMaterial.LightingModel.lit`](custommaterial/lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](custommaterial/lightingmodel-swift.enum/clearcoat.md), and specify a roughness value by calling `params.surface().set_roughness()` from the surface shader.
+In physically based rendering, the `roughness` property represents how much the surface of an entity scatters the light that it reflects. A material with a high roughness has a matte appearance, whereas one with a low roughness has a shiny appearance. With custom materials, RealityKit doesn’t automatically use the values set on this property. To render a custom material using roughness, set [`lightingModel`](./lightingmodel-swift.property.md) to [`CustomMaterial.LightingModel.lit`](./lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](./lightingmodel-swift.enum/clearcoat.md), and specify a roughness value by calling `params.surface().set_roughness()` from the surface shader.
 
-![An illustration showing three spheres with different amounts of](/images/com.apple.RealityKit/CustomMaterial-roughness-swift-property-1@2x.png)
+![An illustration showing three spheres with different amounts of](https://developer.apple.com/tutorials/images/com.apple.RealityKit/CustomMaterial-roughness-swift-property-1@2x.png)
 
-With custom materials, the `texture` and `scale` values from the [`roughness`](custommaterial/roughness-swift.property.md) property are available in your surface shader function, but RealityKit doesn’t automatically use them to render your entity. Your surface shader is responsible for calculating or setting the actual roughness value for rendering.
+With custom materials, the `texture` and `scale` values from the [`roughness`](./roughness-swift.property.md) property are available in your surface shader function, but RealityKit doesn’t automatically use them to render your entity. Your surface shader is responsible for calculating or setting the actual roughness value for rendering.
 
 The following example shows how to use an image and a scale value to specify roughness:
 
@@ -35,7 +36,7 @@ if let roughnessResource = try? TextureResource.load(named: "entity_roughness") 
 }
 ```
 
-The following surface shader takes the scale and texture from the [`roughness`](custommaterial/roughness-swift.property.md) property, multiplies them together, and sets the resulting value as the roughness for rendering, which emulates the behavior of [`PhysicallyBasedMaterial`](physicallybasedmaterial.md):
+The following surface shader takes the scale and texture from the [`roughness`](./roughness-swift.property.md) property, multiplies them together, and sets the resulting value as the roughness for rendering, which emulates the behavior of [`PhysicallyBasedMaterial`](../physicallybasedmaterial.md):
 
 ```cpp
 #include <metal_stdlib>
@@ -66,27 +67,28 @@ constexpr sampler textureSampler(address::clamp_to_edge, filter::bicubic);
 }
 ```
 
-For more information on creating custom materials and writing shader functions, see [`Modifying RealityKit rendering using custom materials`](modifying-realitykit-rendering-using-custom-materials.md).
+For more information on creating custom materials and writing shader functions, see [Modifying RealityKit rendering using custom materials](../modifying-realitykit-rendering-using-custom-materials.md).
 
 ## See Also
 
-- [var baseColor: CustomMaterial.BaseColor](custommaterial/basecolor-swift.property.md)
+### Setting the core properties
+- [var baseColor: CustomMaterial.BaseColor](./basecolor-swift.property.md)
   The color of an entity unmodified by lighting.
-- [var metallic: CustomMaterial.Metallic](custommaterial/metallic-swift.property.md)
+- [var metallic: CustomMaterial.Metallic](./metallic-swift.property.md)
   The reflectiveness of an entity.
-- [var normal: CustomMaterial.Normal](custommaterial/normal-swift.property.md)
+- [var normal: CustomMaterial.Normal](./normal-swift.property.md)
   A texture map that stores fine surface details for the entity.
-- [var emissiveColor: CustomMaterial.EmissiveColor](custommaterial/emissivecolor-swift.property.md)
+- [var emissiveColor: CustomMaterial.EmissiveColor](./emissivecolor-swift.property.md)
   The color of light this material emits.
-- [var ambientOcclusion: CustomMaterial.AmbientOcclusion](custommaterial/ambientocclusion-swift.property.md)
+- [var ambientOcclusion: CustomMaterial.AmbientOcclusion](./ambientocclusion-swift.property.md)
   The ambient light exposure for a material.
-- [var specular: CustomMaterial.Specular](custommaterial/specular-swift.property.md)
+- [var specular: CustomMaterial.Specular](./specular-swift.property.md)
   The bright highlights to apply to the entity.
-- [var clearcoat: CustomMaterial.Clearcoat](custommaterial/clearcoat-swift.property.md)
+- [var clearcoat: CustomMaterial.Clearcoat](./clearcoat-swift.property.md)
   The transparent highlights that simulate a clear, shiny coating on an entity.
-- [var clearcoatRoughness: CustomMaterial.ClearcoatRoughness](custommaterial/clearcoatroughness-swift.property.md)
+- [var clearcoatRoughness: CustomMaterial.ClearcoatRoughness](./clearcoatroughness-swift.property.md)
   The degree to which an entity’s clear, shiny coating scatters light to create soft highlights.
-- [var clearcoatNormal: CustomMaterial.ClearcoatNormal](custommaterial/clearcoatnormal-swift.property.md)
+- [var clearcoatNormal: CustomMaterial.ClearcoatNormal](./clearcoatnormal-swift.property.md)
   Waviness and imperfections for the top clearcoat.
 
 

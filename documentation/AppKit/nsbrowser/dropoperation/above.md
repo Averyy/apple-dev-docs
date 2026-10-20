@@ -1,7 +1,8 @@
 # NSBrowser.DropOperation.above
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.5+
@@ -12,13 +13,18 @@
 case above
 ```
 
+```c
+NSBrowserDropAbove
+```
+
 #### Discussion
 
 The drop occurs above the row to which the item was dragged.
 
 ## See Also
 
-- [NSBrowser.DropOperation.on](nsbrowser/dropoperation/on.md)
+### Constants
+- [NSBrowser.DropOperation.on](./on.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # path
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.1+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var path: MTRAttributePath { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) MTRAttributePath * path;
 ```
 
 

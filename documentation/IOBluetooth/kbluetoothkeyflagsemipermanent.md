@@ -1,10 +1,11 @@
 # kBluetoothKeyFlagSemiPermanent
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kBluetoothKeyFlagSemiPermanent: Int { get }
 ```
 
+```c
+kBluetoothKeyFlagSemiPermanent
+```
+
 ## See Also
 
-- [var kBluetoothKeyFlagTemporary: Int](kbluetoothkeyflagtemporary.md)
+### Constants
+- [var kBluetoothKeyFlagTemporary: Int](./kbluetoothkeyflagtemporary.md)
 
 
 ---

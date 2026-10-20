@@ -1,7 +1,8 @@
 # valueAligned(xMatching:yUnit:xMajorAlignment:yMajorAlignment:limitBehavior:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a scroll target behavior that aligns to values spaced at regular intervals along the scrollable axes.
 

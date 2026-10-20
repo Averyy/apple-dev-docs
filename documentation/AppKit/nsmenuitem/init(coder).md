@@ -1,10 +1,11 @@
 # init(coder:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(title: String, action: Selector?, keyEquivalent: String)](nsmenuitem/init(title:action:keyequivalent:).md)
+### Creating a menu item
+- [init(title: String, action: Selector?, keyEquivalent: String)](./init%28title,action,keyequivalent%29.md)
   Returns an initialized instance of `NSMenuItem`.
 
 

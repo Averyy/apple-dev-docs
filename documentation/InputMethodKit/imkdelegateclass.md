@@ -1,7 +1,8 @@
 # IMKDelegateClass
 
 **Framework**: InputMethodKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,16 +13,21 @@
 let IMKDelegateClass: String
 ```
 
+```c
+extern const NSString * IMKDelegateClass;
+```
+
 #### Discussion
 
 The key used to find an input method delegate class name from the input method bundle.
 
 ## See Also
 
-- [let IMKCandidatesOpacityAttributeName: String](imkcandidatesopacityattributename.md)
-- [let IMKCandidatesSendServerKeyEventFirst: String](imkcandidatessendserverkeyeventfirst.md)
-- [let IMKControllerClass: String](imkcontrollerclass.md)
-- [let IMKModeDictionary: String](imkmodedictionary.md)
+### Constants
+- [let IMKCandidatesOpacityAttributeName: String](./imkcandidatesopacityattributename.md)
+- [let IMKCandidatesSendServerKeyEventFirst: String](./imkcandidatessendserverkeyeventfirst.md)
+- [let IMKControllerClass: String](./imkcontrollerclass.md)
+- [let IMKModeDictionary: String](./imkmodedictionary.md)
 
 
 ---

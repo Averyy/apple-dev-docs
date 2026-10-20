@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.BirthLocation.volume
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Particles emit from the internal volume of the shape.
 

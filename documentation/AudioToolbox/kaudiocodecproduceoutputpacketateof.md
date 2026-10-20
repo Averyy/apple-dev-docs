@@ -1,15 +1,16 @@
 # kAudioCodecProduceOutputPacketAtEOF
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@
 var kAudioCodecProduceOutputPacketAtEOF: UInt32 { get }
 ```
 
+```c
+kAudioCodecProduceOutputPacketAtEOF
+```
+
 ## See Also
 
-- [var kAudioCodecProduceOutputPacketFailure: UInt32](kaudiocodecproduceoutputpacketfailure.md)
-- [var kAudioCodecProduceOutputPacketNeedsMoreInputData: UInt32](kaudiocodecproduceoutputpacketneedsmoreinputdata.md)
-- [var kAudioCodecProduceOutputPacketSuccess: UInt32](kaudiocodecproduceoutputpacketsuccess.md)
-- [var kAudioCodecProduceOutputPacketSuccessHasMore: UInt32](kaudiocodecproduceoutputpacketsuccesshasmore.md)
-- [var kAudioCodecProduceOutputPacketSuccessConcealed: UInt32](kaudiocodecproduceoutputpacketsuccessconcealed.md)
+### Constants
+- [var kAudioCodecProduceOutputPacketFailure: UInt32](./kaudiocodecproduceoutputpacketfailure.md)
+- [var kAudioCodecProduceOutputPacketNeedsMoreInputData: UInt32](./kaudiocodecproduceoutputpacketneedsmoreinputdata.md)
+- [var kAudioCodecProduceOutputPacketSuccess: UInt32](./kaudiocodecproduceoutputpacketsuccess.md)
+- [var kAudioCodecProduceOutputPacketSuccessHasMore: UInt32](./kaudiocodecproduceoutputpacketsuccesshasmore.md)
+- [var kAudioCodecProduceOutputPacketSuccessConcealed: UInt32](./kaudiocodecproduceoutputpacketsuccessconcealed.md)
 
 
 ---

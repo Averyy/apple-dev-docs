@@ -1,7 +1,8 @@
 # OptimizationStrategy.fast
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An optimization strategy that minimizes computation time.
 
@@ -26,11 +27,12 @@ Select this strategy for smooth problems that fit in memory.
 
 ## See Also
 
-- [OptimizationStrategy.automatic](optimizationstrategy/automatic.md)
+### Optimization strategies
+- [OptimizationStrategy.automatic](./automatic.md)
   Chooses the best optimization strategy based on the problem size and configuration.
-- [OptimizationStrategy.lowMemory](optimizationstrategy/lowmemory.md)
+- [OptimizationStrategy.lowMemory](./lowmemory.md)
   An optimization strategy that minimizes memory use.
-- [OptimizationStrategy.nonSmooth](optimizationstrategy/nonsmooth.md)
+- [OptimizationStrategy.nonSmooth](./nonsmooth.md)
   An optimization strategy that can handle non-smooth problems.
 
 

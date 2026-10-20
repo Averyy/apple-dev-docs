@@ -1,7 +1,8 @@
 # cullDistance
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance beyond which the framework doesn’t process the sound.
 
@@ -19,9 +20,13 @@ The distance beyond which the framework doesn’t process the sound.
 var cullDistance: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double cullDistance;
+```
+
 #### Discussion
 
-The framework sets the value of this property to the [`init(cullDistance:)`](phasedistancemodelfadeoutparameters/init(culldistance:).md) argument.
+The framework sets the value of this property to the [`init(cullDistance:)`](./init%28culldistance%29.md) argument.
 
 
 ---

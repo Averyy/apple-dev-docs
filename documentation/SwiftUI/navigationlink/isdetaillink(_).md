@@ -1,7 +1,8 @@
 # isDetailLink(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the navigation link to present its destination as the detail component of the containing navigation view.
 
@@ -18,13 +19,15 @@ nonisolated
 func isDetailLink(_ isDetailLink: Bool) -> some View
 ```
 
+Available when `Label` conforms to `View` and `Destination` conforms to `View`.
+
 #### Return Value
 
 A view that applies the specified detail link behavior.
 
 #### Discussion
 
-This method sets the behavior when the navigation link is used in a [`NavigationSplitView`](navigationsplitview.md), or a multi-column navigation view, such as one using [`ColumnNavigationViewStyle`](columnnavigationviewstyle.md).
+This method sets the behavior when the navigation link is used in a [`NavigationSplitView`](../navigationsplitview.md), or a multi-column navigation view, such as one using [`ColumnNavigationViewStyle`](../columnnavigationviewstyle.md).
 
 For example, in a two-column navigation split view, if `isDetailLink` is `true`, triggering the link in the sidebar column sets the contents of the detail column to be the link’s destination view. If `isDetailLink` is `false`, the link navigates to the destination view within the primary column.
 

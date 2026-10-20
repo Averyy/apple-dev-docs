@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Foundation  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the byte at the specified index.
 
@@ -22,7 +23,8 @@ subscript(index: Data.Index) -> UInt8 { get set }
 
 ## See Also
 
-- [subscript(Range<Data.Index>) -> Data](data/subscript(_:)-6lc96.md)
+### Accessing Bytes
+- [subscript(Range<Data.Index>) -> Data](./subscript%28_%29-6lc96.md)
   Accesses the bytes at the specified range of indexes.
 
 

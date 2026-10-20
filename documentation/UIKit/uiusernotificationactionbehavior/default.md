@@ -1,14 +1,17 @@
 # UIUserNotificationActionBehavior.default
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default action behavior. When specified, the action supports no additional behaviors.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
+- iOS 9.0+ - Deprecated in 10.0
+- iPadOS 9.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIUserNotificationAction`](../uiusernotificationaction.md).
 
 ## Declaration
 
@@ -16,9 +19,14 @@ The default action behavior. When specified, the action supports no additional b
 case `default`
 ```
 
+```c
+UIUserNotificationActionBehaviorDefault
+```
+
 ## See Also
 
-- [UIUserNotificationActionBehavior.textInput](uiusernotificationactionbehavior/textinput.md)
+### Constants
+- [UIUserNotificationActionBehavior.textInput](./textinput.md)
   The text input behavior.
 
 

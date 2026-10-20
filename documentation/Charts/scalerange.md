@@ -1,7 +1,8 @@
 # ScaleRange
 
 **Framework**: Swift Charts  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that you can use to configure the range of a chart.
 
@@ -23,26 +24,27 @@ protocol ScaleRange
 ## Topics
 
 ### Associated Types
-- [associatedtype VisualValue](scalerange/visualvalue.md)
+- [associatedtype VisualValue](./scalerange/visualvalue.md)
 
 ## Relationships
 
 ### Inherited By
-- [PositionScaleRange](positionscalerange.md)
+- [PositionScaleRange](./positionscalerange.md)
 ### Conforming Types
-- [PlotDimensionScaleRange](plotdimensionscalerange.md)
+- [PlotDimensionScaleRange](./plotdimensionscalerange.md)
 
 ## See Also
 
-- [protocol PositionScaleRange](positionscalerange.md)
+### Scales
+- [protocol PositionScaleRange](./positionscalerange.md)
   A type that configures the x-axis and y-axis values.
-- [struct PlotDimensionScaleRange](plotdimensionscalerange.md)
+- [struct PlotDimensionScaleRange](./plotdimensionscalerange.md)
   A range that represents the plot area’s width or height.
-- [protocol ScaleDomain](scaledomain.md)
+- [protocol ScaleDomain](./scaledomain.md)
   A type that you can use to configure the domain of a chart.
-- [struct AutomaticScaleDomain](automaticscaledomain.md)
+- [struct AutomaticScaleDomain](./automaticscaledomain.md)
   A domain that the chart infers from its data.
-- [struct ScaleType](scaletype.md)
+- [struct ScaleType](./scaletype.md)
   The ways you can scale the domain or range of a plot.
 
 

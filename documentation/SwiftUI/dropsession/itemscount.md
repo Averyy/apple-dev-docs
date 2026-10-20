@@ -1,7 +1,8 @@
 # itemsCount
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Number of items for the drop.
 
@@ -20,9 +21,10 @@ var itemsCount: Int
 
 ## See Also
 
-- [var location: CGPoint](dropsession/location.md)
+### Getting drop details
+- [var location: CGPoint](./location.md)
   Location of drop in the local coordinate space
-- [var size: CGSize](dropsession/size.md)
+- [var size: CGSize](./size.md)
   Size of the drop destination view.
 
 

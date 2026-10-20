@@ -1,17 +1,22 @@
 # kABAddressCountryKey
 
 **Framework**: Address Book  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Country name.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 let kABAddressCountryKey: String
+```
+
+```c
+extern NSString * const kABAddressCountryKey;
 ```
 
 #### Discussion
@@ -20,16 +25,17 @@ This is the field shown in the Contacts application.
 
 ## See Also
 
-- [let kABAddressStreetKey: String](kabaddressstreetkey.md)
+### Constants
+- [let kABAddressStreetKey: String](./kabaddressstreetkey.md)
   Street.
-- [let kABAddressCityKey: String](kabaddresscitykey.md)
+- [let kABAddressCityKey: String](./kabaddresscitykey.md)
   City.
-- [let kABAddressStateKey: String](kabaddressstatekey.md)
+- [let kABAddressStateKey: String](./kabaddressstatekey.md)
   State.
-- [let kABAddressZIPKey: String](kabaddresszipkey.md)
+- [let kABAddressZIPKey: String](./kabaddresszipkey.md)
   Zip.
-- [let kABAddressCountryCodeKey: String](kabaddresscountrycodekey.md)
-  Country, identified by ISO country code. For a list of these codes, see [`ABPerson`](abperson.md).
+- [let kABAddressCountryCodeKey: String](./kabaddresscountrycodekey.md)
+  Country, identified by ISO country code. For a list of these codes, see [`ABPerson`](./abperson.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # init(fineConversionValue:lockPostback:conversionTag:coarseConversionValue:conversionTypes:)
 
 **Framework**: AdAttributionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.4+

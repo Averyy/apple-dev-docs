@@ -1,7 +1,8 @@
 # AVSpeechSynthesizer
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that produces synthesized speech from text utterances and enables monitoring or controlling of ongoing speech.
 
@@ -10,7 +11,7 @@ An object that produces synthesized speech from text utterances and enables moni
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.14+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,15 +21,19 @@ An object that produces synthesized speech from text utterances and enables moni
 class AVSpeechSynthesizer
 ```
 
+```objc
+@interface AVSpeechSynthesizer : NSObject
+```
+
 #### Overview
 
-To speak some text, create an [`AVSpeechUtterance`](avspeechutterance.md) instance that contains the text and pass it to [`speak(_:)`](avspeechsynthesizer/speak(_:).md) on a speech synthesizer instance. You can optionally also retrieve an [`AVSpeechSynthesisVoice`](avspeechsynthesisvoice.md) and set it on the utterance’s [`voice`](avspeechutterance/voice.md) property to have the speech synthesizer use that voice when speaking the utterance’s text.
+To speak some text, create an [`AVSpeechUtterance`](./avspeechutterance.md) instance that contains the text and pass it to [`speak(_:)`](./avspeechsynthesizer/speak%28_%29.md) on a speech synthesizer instance. You can optionally also retrieve an [`AVSpeechSynthesisVoice`](./avspeechsynthesisvoice.md) and set it on the utterance’s [`voice`](./avspeechutterance/voice.md) property to have the speech synthesizer use that voice when speaking the utterance’s text.
 
-The speech synthesizer maintains a queue of utterances that it speaks. If the synthesizer isn’t speaking, calling [`speak(_:)`](avspeechsynthesizer/speak(_:).md) begins speaking that utterance either immediately or after pausing for its [`preUtteranceDelay`](avspeechutterance/preutterancedelay.md), if necessary. If the synthesizer is speaking, the synthesizer adds utterances to a queue and speaks them in the order it receives them.
+The speech synthesizer maintains a queue of utterances that it speaks. If the synthesizer isn’t speaking, calling [`speak(_:)`](./avspeechsynthesizer/speak%28_%29.md) begins speaking that utterance either immediately or after pausing for its [`preUtteranceDelay`](./avspeechutterance/preutterancedelay.md), if necessary. If the synthesizer is speaking, the synthesizer adds utterances to a queue and speaks them in the order it receives them.
 
 After speech begins, you can use the synthesizer object to pause or stop speech. After pausing, you can resume the speech from its paused point or stop the speech entirely and remove all remaining utterances in the queue.
 
-You can monitor the speech synthesizer by examining its [`isSpeaking`](avspeechsynthesizer/isspeaking.md) and [`isPaused`](avspeechsynthesizer/ispaused.md) properties, or by setting a delegate that conforms to [`AVSpeechSynthesizerDelegate`](avspeechsynthesizerdelegate.md). The delegate receives significant events as they occur during speech synthesis.
+You can monitor the speech synthesizer by examining its [`isSpeaking`](./avspeechsynthesizer/isspeaking.md) and [`isPaused`](./avspeechsynthesizer/ispaused.md) properties, or by setting a delegate that conforms to [`AVSpeechSynthesizerDelegate`](./avspeechsynthesizerdelegate.md). The delegate receives significant events as they occur during speech synthesis.
 
 An `AVSpeechSynthesizer` also controls the route where the speech plays. For more information, see Directing speech output.
 
@@ -37,64 +42,64 @@ An `AVSpeechSynthesizer` also controls the route where the speech plays. For mor
 ## Topics
 
 ### Controlling speech
-- [func speak(AVSpeechUtterance)](avspeechsynthesizer/speak(_:).md)
+- [func speak(AVSpeechUtterance)](./avspeechsynthesizer/speak%28_%29.md)
   Adds the utterance you specify to the speech synthesizer’s queue.
-- [func continueSpeaking() -> Bool](avspeechsynthesizer/continuespeaking.md)
+- [func continueSpeaking() -> Bool](./avspeechsynthesizer/continuespeaking%28%29.md)
   Resumes speech from its paused point.
-- [func pauseSpeaking(at: AVSpeechBoundary) -> Bool](avspeechsynthesizer/pausespeaking(at:).md)
+- [func pauseSpeaking(at: AVSpeechBoundary) -> Bool](./avspeechsynthesizer/pausespeaking%28at%29.md)
   Pauses speech at the boundary you specify.
-- [func stopSpeaking(at: AVSpeechBoundary) -> Bool](avspeechsynthesizer/stopspeaking(at:).md)
+- [func stopSpeaking(at: AVSpeechBoundary) -> Bool](./avspeechsynthesizer/stopspeaking%28at%29.md)
   Stops speech at the boundary you specify.
-- [enum AVSpeechBoundary](avspeechboundary.md)
+- [enum AVSpeechBoundary](./avspeechboundary.md)
   Specifies when to pause or stop speech.
 ### Inspecting a speech synthesizer
-- [var isSpeaking: Bool](avspeechsynthesizer/isspeaking.md)
+- [var isSpeaking: Bool](./avspeechsynthesizer/isspeaking.md)
   A Boolean value that indicates whether the speech synthesizer is speaking or is in a paused state and has utterances to speak.
-- [var isPaused: Bool](avspeechsynthesizer/ispaused.md)
+- [var isPaused: Bool](./avspeechsynthesizer/ispaused.md)
   A Boolean value that indicates whether a speech synthesizer is in a paused state.
 ### Managing the delegate
-- [var delegate: (any AVSpeechSynthesizerDelegate)?](avspeechsynthesizer/delegate.md)
+- [var delegate: (any AVSpeechSynthesizerDelegate)?](./avspeechsynthesizer/delegate.md)
   The delegate object for the speech synthesizer.
-- [protocol AVSpeechSynthesizerDelegate](avspeechsynthesizerdelegate.md)
+- [protocol AVSpeechSynthesizerDelegate](./avspeechsynthesizerdelegate.md)
   A delegate protocol that contains optional methods you can implement to respond to events that occur during speech synthesis.
 ### Directing speech output
-- [var usesApplicationAudioSession: Bool](avspeechsynthesizer/usesapplicationaudiosession.md)
+- [var usesApplicationAudioSession: Bool](./avspeechsynthesizer/usesapplicationaudiosession.md)
   A Boolean value that specifies whether the app manages the audio session.
-- [var mixToTelephonyUplink: Bool](avspeechsynthesizer/mixtotelephonyuplink.md)
+- [var mixToTelephonyUplink: Bool](./avspeechsynthesizer/mixtotelephonyuplink.md)
   A Boolean value that specifies whether to send synthesized speech to an active call.
-- [var outputChannels: [AVAudioSessionChannelDescription]?](avspeechsynthesizer/outputchannels.md)
+- [var outputChannels: [AVAudioSessionChannelDescription]?](./avspeechsynthesizer/outputchannels.md)
   An array of audio session channels to route generated speech.
-- [func write(AVSpeechUtterance, toBufferCallback: AVSpeechSynthesizer.BufferCallback)](avspeechsynthesizer/write(_:tobuffercallback:).md)
+- [func write(AVSpeechUtterance, toBufferCallback: AVSpeechSynthesizer.BufferCallback)](./avspeechsynthesizer/write%28_,tobuffercallback%29.md)
   Generates speech for the utterance and invokes the callback with the audio buffer.
-- [AVSpeechSynthesizer.BufferCallback](avspeechsynthesizer/buffercallback.md)
+- [AVSpeechSynthesizer.BufferCallback](./avspeechsynthesizer/buffercallback.md)
   A type that defines a callback that receives a buffer of generated speech.
-- [func write(AVSpeechUtterance, toBufferCallback: AVSpeechSynthesizer.BufferCallback, toMarkerCallback: AVSpeechSynthesizer.MarkerCallback)](avspeechsynthesizer/write(_:tobuffercallback:tomarkercallback:).md)
+- [func write(AVSpeechUtterance, toBufferCallback: AVSpeechSynthesizer.BufferCallback, toMarkerCallback: AVSpeechSynthesizer.MarkerCallback)](./avspeechsynthesizer/write%28_,tobuffercallback,tomarkercallback%29.md)
   Generates audio buffers and associated metadata for storage or further speech synthesis processing.
-- [AVSpeechSynthesizer.MarkerCallback](avspeechsynthesizer/markercallback.md)
+- [AVSpeechSynthesizer.MarkerCallback](./avspeechsynthesizer/markercallback.md)
   A type that defines a callback that receives speech markers.
-- [class AVSpeechSynthesisMarker](avspeechsynthesismarker.md)
+- [class AVSpeechSynthesisMarker](./avspeechsynthesismarker.md)
   An object that contains information about the synthesized audio.
 ### Enabling personal voices
-- [class var personalVoiceAuthorizationStatus: AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.type.property.md)
+- [class var personalVoiceAuthorizationStatus: AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus](./avspeechsynthesizer/personalvoiceauthorizationstatus-swift.type.property.md)
   Your app’s authorization to use personal voices.
-- [class let availableVoicesDidChangeNotification: NSNotification.Name](avspeechsynthesizer/availablevoicesdidchangenotification.md)
+- [class let availableVoicesDidChangeNotification: NSNotification.Name](./avspeechsynthesizer/availablevoicesdidchangenotification.md)
   A notification that indicates a change in available voices for speech synthesis.
-- [class func requestPersonalVoiceAuthorization(completionHandler: (AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus) -> Void)](avspeechsynthesizer/requestpersonalvoiceauthorization(completionhandler:).md)
+- [class func requestPersonalVoiceAuthorization(completionHandler: (AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus) -> Void)](./avspeechsynthesizer/requestpersonalvoiceauthorization%28completionhandler%29.md)
   Prompts the user to authorize your app to use personal voices.
-- [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus](avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum.md)
+- [AVSpeechSynthesizer.PersonalVoiceAuthorizationStatus](./avspeechsynthesizer/personalvoiceauthorizationstatus-swift.enum.md)
   An enumeration that models the personal voices authorization status.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

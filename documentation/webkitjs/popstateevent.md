@@ -1,7 +1,8 @@
 # PopStateEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,14 +10,14 @@
 
 ## Declaration
 
-```swift
+```
 interface PopStateEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [state](popstateevent/1631902-state.md)
+- [state](./popstateevent/api-1631902-state.md)
 
 ## Relationships
 

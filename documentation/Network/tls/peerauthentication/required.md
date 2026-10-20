@@ -1,7 +1,8 @@
 # TLS.PeerAuthentication.required
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Always authenticate the peer.
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object that a calendar view asks about selectable weeks and informs of changes to the week selection.
 
@@ -17,9 +18,14 @@ A delegate object that a calendar view asks about selectable weeks and informs o
 weak var delegate: (any UICalendarSelectionWeekOfYearDelegate)? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) id<UICalendarSelectionWeekOfYearDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol UICalendarSelectionWeekOfYearDelegate](uicalendarselectionweekofyeardelegate.md)
+### Setting the selection delegate
+- [protocol UICalendarSelectionWeekOfYearDelegate](../uicalendarselectionweekofyeardelegate.md)
   A set of methods you implement to provide selectable weeks and handle changes to the week selection in a calendar view.
 
 

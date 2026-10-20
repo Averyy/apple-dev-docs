@@ -1,6 +1,7 @@
 # Authenticating users on Apple Watch
 
-**Framework**: watchOS apps
+**Framework**: watchOS apps  
+**Role**: Article
 
 Create an account sign-up and sign-in strategy for your app.
 
@@ -11,33 +12,33 @@ Users can launch an independent watchOS app as soon as it downloads, even if the
 You have the following options for syncing or saving user data:
 
 - Create an app that doesn’t require user accounts. Design your app so that it provides a full set of features without user accounts, or use CloudKit to sync and store your user’s data. Apps can access CloudKit data based on the user’s Apple ID without in-app sign-in. watchOS 6 and later also supports CloudKit subscriptions and notifications to let your app respond to changes from other devices.
-- Authenticate users with Sign In with Apple. This feature authenticates users based on their Apple ID. For more information, see [`WKInterfaceAuthorizationAppleIDButton`](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton) and [`Authentication Services`](https://developer.apple.com/documentation/authenticationservices).
+- Authenticate users with Sign In with Apple. This feature authenticates users based on their Apple ID. For more information, see [`WKInterfaceAuthorizationAppleIDButton`](../WatchKit/wkinterfaceauthorizationappleidbutton.md) and [Authentication Services](../AuthenticationServices/AuthenticationServices.md).
 - Create custom sign-in and sign-up forms.
 
 If you choose to create custom forms, watchOS 6 provides tools designed to fit the small screen size and to streamline data entry on Apple Watch.
 
-##### Simplify Account Creation and Sign in
+##### Simplify account creation and sign-in
 
-Create your sign-in and sign-up forms using text fields. In SwiftUI, use the [`TextField`](https://developer.apple.com/documentation/swiftui/textfield) and [`SecureField`](https://developer.apple.com/documentation/swiftui/securefield) structures. In the storyboard, use the [`WKInterfaceTextField`](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield) class.
+Create your sign-in and sign-up forms using text fields. In SwiftUI, use the [`TextField`](../SwiftUI/textfield.md) and [`SecureField`](../SwiftUI/securefield.md) structures. In the storyboard, use the [`WKInterfaceTextField`](../WatchKit/wkinterfacetextfield.md) class.
 
 To streamline data entry, perform the following steps:
 
-1. Set the text field’s content type. The text field’s content type modifies how the text input controller and Apple Continuity Keyboard behave. For SwiftUI, set the content type by calling the text field’s [`textContentType(_:)`](https://developer.apple.com/documentation/swiftui/view/textcontenttype(_:)-4dqqb) method. For the storyboard, set the content type using the Attributes inspector.
+1. Set the text field’s content type. The text field’s content type modifies how the text input controller and Apple Continuity Keyboard behave. For SwiftUI, set the content type by calling the text field’s [`textContentType(_:)`](../SwiftUI/view/textcontenttype%28_%29-4dqqb.md) method. For the storyboard, set the content type using the Attributes inspector.
 2. Provide a placeholder that describes the text field’s expected content. Effective placeholders help you get the most out of Apple Watch’s smaller screen. For SwiftUI, when instantiating the text field, the `title` property sets the placeholder. For the storyboard, set the placeholder using the Attributes inspector. Note that the system truncates placeholders if the text is too long, so keep your placeholders short.
-3. Set up your app’s associated domains. If you have a website where users can sign in with the same username and password, associate the website’s domain with your app. An associated domain tells the Apple Continuity Keyboard to provide autofill suggestions for usernames and passwords from that domain. To learn how to set up your app’s associated domains, see [`Supporting associated domains`](https://developer.apple.com/documentation/xcode/supporting-associated-domains).
+3. Set up your app’s associated domains. If you have a website where users can sign in with the same username and password, associate the website’s domain with your app. An associated domain tells the Apple Continuity Keyboard to provide autofill suggestions for usernames and passwords from that domain. To learn how to set up your app’s associated domains, see [Supporting associated domains](../Xcode/supporting-associated-domains.md).
 
-##### Support Password Autofill
+##### Support password autofill
 
-To support password autofill on Apple Watch, set the following [`WKTextContentType`](https://developer.apple.com/documentation/watchkit/wktextcontenttype) values.
+To support password autofill on Apple Watch, set the following [`WKTextContentType`](../WatchKit/wktextcontenttype.md) values.
 
 | Credential | Content Type |
 | --- | --- |
-| User Name | [`username`](https://developer.apple.com/documentation/watchkit/wktextcontenttype/username) |
-| Password | [`password`](https://developer.apple.com/documentation/watchkit/wktextcontenttype/password) |
-| New Password | [`newPassword`](https://developer.apple.com/documentation/watchkit/wktextcontenttype/newpassword) |
-| One-Time Code | [`oneTimeCode`](https://developer.apple.com/documentation/watchkit/wktextcontenttype/onetimecode) |
+| User Name | [`username`](../WatchKit/wktextcontenttype/username.md) |
+| Password | [`password`](../WatchKit/wktextcontenttype/password.md) |
+| New Password | [`newPassword`](../WatchKit/wktextcontenttype/newpassword.md) |
+| One-Time Code | [`oneTimeCode`](../WatchKit/wktextcontenttype/onetimecode.md) |
 
-For [`TextField`](https://developer.apple.com/documentation/swiftui/textfield) and [`SecureField`](https://developer.apple.com/documentation/swiftui/securefield), set the content type by calling the [`textContentType(_:)`](https://developer.apple.com/documentation/swiftui/view/textcontenttype(_:)-4dqqb) method.
+For [`TextField`](../SwiftUI/textfield.md) and [`SecureField`](../SwiftUI/securefield.md), set the content type by calling the [`textContentType(_:)`](../SwiftUI/view/textcontenttype%28_%29-4dqqb.md) method.
 
 ```swift
 var body: some View {
@@ -54,29 +55,30 @@ var body: some View {
 }
 ```
 
-For [`WKInterfaceTextField`](https://developer.apple.com/documentation/watchkit/wkinterfacetextfield), assign these values in Xcode by setting the Content Type attribute in the Attributes inspector.
+For [`WKInterfaceTextField`](../WatchKit/wkinterfacetextfield.md), assign these values in Xcode by setting the Content Type attribute in the Attributes inspector.
 
-![A screenshot showing the Content Type attribute in the Attributes inspector.](/images/com.apple.watchOS-Apps/authenticating-users-on-apple-watch-1@2x.png)
+![A screenshot showing the Content Type attribute in the Attributes inspector.](https://developer.apple.com/tutorials/images/com.apple.watchOS-Apps/authenticating-users-on-apple-watch-1@2x.png)
 
-watchOS provides an autofill suggestion for [`oneTimeCode`](https://developer.apple.com/documentation/watchkit/wktextcontenttype/onetimecode) fields after receiving an SMS message that contains a one-time code.
+watchOS provides an autofill suggestion for [`oneTimeCode`](../WatchKit/wktextcontenttype/onetimecode.md) fields after receiving an SMS message that contains a one-time code.
 
-If you place a [`username`](https://developer.apple.com/documentation/watchkit/wktextcontenttype/username) or [`emailAddress`](https://developer.apple.com/documentation/watchkit/wktextcontenttype/emailaddress) text field on the same screen as a [`password`](https://developer.apple.com/documentation/watchkit/wktextcontenttype/password) text field, the Apple Continuity Keyboard attempts to fill both fields. Similarly, if you put two [`newPassword`](https://developer.apple.com/documentation/watchkit/wktextcontenttype/newpassword) fields on the same screen, the keyboard automatically fills both when the user selects the suggested password.
+If you place a [`username`](../WatchKit/wktextcontenttype/username.md) or [`emailAddress`](../WatchKit/wktextcontenttype/emailaddress.md) text field on the same screen as a [`password`](../WatchKit/wktextcontenttype/password.md) text field, the Apple Continuity Keyboard attempts to fill both fields. Similarly, if you put two [`newPassword`](../WatchKit/wktextcontenttype/newpassword.md) fields on the same screen, the keyboard automatically fills both when the user selects the suggested password.
 
-For more information, see [`Password AutoFill`](https://developer.apple.com/documentation/security/password-autofill).
+For more information, see [Password AutoFill](../Security/password-autofill.md).
 
 ## See Also
 
-- [Setting up a watchOS project](setting-up-a-watchos-project.md)
+### App experience
+- [Setting up a watchOS project](./setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
-- [Creating independent watchOS apps](creating-independent-watchos-apps.md)
+- [Creating independent watchOS apps](./creating-independent-watchos-apps.md)
   Set up a watchOS app that installs and runs without a companion iOS app.
-- [Keeping your watchOS content up to date](keeping-your-watchos-app-s-content-up-to-date.md)
+- [Keeping your watchOS content up to date](./keeping-your-watchos-app-s-content-up-to-date.md)
   Ensure that your app’s content is relevant and up to date.
-- [Updating watchOS apps with timelines](updating-watchos-apps-with-timelines.md)
+- [Updating watchOS apps with timelines](./updating-watchos-apps-with-timelines.md)
   Seamlessly schedule updates to your user interface, even while it’s inactive.
-- [Responding to the Action button on Apple Watch Ultra](../appintents/actionbuttonarticle.md)
+- [Responding to the Action button on Apple Watch Ultra](../AppIntents/actionbuttonarticle.md)
   Use App Intents to register actions for your app.
-- [Enabling the double-tap gesture on Apple Watch](enabling-double-tap.md)
+- [Enabling the double-tap gesture on Apple Watch](./enabling-double-tap.md)
   Customize your app’s response to the double-tap gesture on Apple Watch.
 
 

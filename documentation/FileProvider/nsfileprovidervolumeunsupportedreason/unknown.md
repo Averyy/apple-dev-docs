@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 15.0+
@@ -12,12 +13,17 @@
 static var unknown: NSFileProviderVolumeUnsupportedReason { get }
 ```
 
+```c
+NSFileProviderVolumeUnsupportedReasonUnknown
+```
+
 ## See Also
 
-- [static var nonEncrypted: NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason/nonencrypted.md)
-- [static var readOnly: NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason/readonly.md)
-- [static var network: NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason/network.md)
-- [static var quarantined: NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason/quarantined.md)
+### Reasons
+- [static var nonEncrypted: NSFileProviderVolumeUnsupportedReason](./nonencrypted.md)
+- [static var readOnly: NSFileProviderVolumeUnsupportedReason](./readonly.md)
+- [static var network: NSFileProviderVolumeUnsupportedReason](./network.md)
+- [static var quarantined: NSFileProviderVolumeUnsupportedReason](./quarantined.md)
 
 
 ---

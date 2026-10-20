@@ -1,7 +1,8 @@
 # bufattr
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Reserved for future use. Set to zero.
 
@@ -10,13 +11,14 @@ Reserved for future use. Set to zero.
 
 ## Declaration
 
-```swift
+```c
 bufattr_t bufattr;
 ```
 
 ## See Also
 
-- [options](iostorageattributes/1574978-options.md)
+### Fields
+- [options](./api-1574978-options.md)
   Options for the request. See IOStorageOptions.
 
 

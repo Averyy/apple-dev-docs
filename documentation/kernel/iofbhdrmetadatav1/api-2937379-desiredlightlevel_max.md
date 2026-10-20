@@ -1,14 +1,15 @@
 # desiredLightLevel_Max
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 uint16_t desiredLightLevel_Max;
 ```
 

@@ -1,7 +1,8 @@
 # HKHeartRateRecoveryTestType.predictionSubMaxExercise
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A test that estimates a person’s heart-rate recovery using lower-intensity exercise.
 
@@ -19,15 +20,20 @@ A test that estimates a person’s heart-rate recovery using lower-intensity exe
 case predictionSubMaxExercise
 ```
 
+```c
+HKHeartRateRecoveryTestTypePredictionSubMaxExercise
+```
+
 #### Discussion
 
 In this test, a person performs lower-intensity exercise, staying below their physical limit. The test then estimates their actual heart rate recovery based on the difference between their exercising heart rate, and the rate of recovery after the exercise ends.
 
 ## See Also
 
-- [HKHeartRateRecoveryTestType.maxExercise](hkheartraterecoverytesttype/maxexercise.md)
+### Heart-rate recovery tests
+- [HKHeartRateRecoveryTestType.maxExercise](./maxexercise.md)
   Measures a person’s actual heart-rate recovery.
-- [HKHeartRateRecoveryTestType.predictionNonExercise](hkheartraterecoverytesttype/predictionnonexercise.md)
+- [HKHeartRateRecoveryTestType.predictionNonExercise](./predictionnonexercise.md)
   A test that estimates a person’s heart-rate recovery without using exercise.
 
 

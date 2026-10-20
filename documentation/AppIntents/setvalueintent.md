@@ -1,7 +1,8 @@
 # SetValueIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An intent that contains a value which can be set.
 
@@ -34,27 +35,28 @@ struct ToggleSilentMode: SetValueIntent {
 ## Topics
 
 ### Associated Types
-- [associatedtype ValueType : _IntentValue](setvalueintent/valuetype.md)
+- [associatedtype ValueType : _IntentValue](./setvalueintent/valuetype.md)
 ### Instance Properties
-- [var value: Self.ValueType](setvalueintent/value.md)
+- [var value: Self.ValueType](./setvalueintent/value.md)
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol OpenIntent](openintent.md)
+### Common actions
+- [protocol OpenIntent](./openintent.md)
   An app intent that opens and displays a specific item in your app’s interface.
-- [struct OpenURLIntent](openurlintent.md)
+- [struct OpenURLIntent](./openurlintent.md)
   An app intent that opens one of your universal links and displays its contents.
-- [protocol DeleteIntent](deleteintent.md)
+- [protocol DeleteIntent](./deleteintent.md)
   Delete the associated entity(s).
-- [protocol DeprecatedAppIntent](deprecatedappintent.md)
+- [protocol DeprecatedAppIntent](./deprecatedappintent.md)
   An app intent that marks an action as deprecated and informs people which action to use instead.
 
 

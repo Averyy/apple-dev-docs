@@ -1,27 +1,29 @@
 # free
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void free();
 ```
 
 ## See Also
 
-- [release](osboolean/release.md)
+### Configuring a Boolean Type
+- [release](./release.md)
   Releases the OSObject instance
-- [retain](osboolean/retain.md)
+- [retain](./retain.md)
   Retains the OSObject instance
-- [OSBooleanPtr](osbooleanptr.md)
+- [OSBooleanPtr](../osbooleanptr.md)
 
 
 ---

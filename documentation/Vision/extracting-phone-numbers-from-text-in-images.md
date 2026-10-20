@@ -1,6 +1,8 @@
 # Extracting phone numbers from text in images
 
-**Framework**: Vision
+**Framework**: Vision  
+**Role**: Sample Code  
+**Download**: [ExtractingPhoneNumbersFromTextInImages.zip](https://docs-assets.developer.apple.com/published/4272b4b6f36d/ExtractingPhoneNumbersFromTextInImages.zip)
 
 Analyze and filter phone numbers from text in live capture by using Vision.
 
@@ -14,7 +16,7 @@ Analyze and filter phone numbers from text in live capture by using Vision.
 
 New in iOS 13, the Vision framework adds improved text-recognition capabilites that enable you to more easily extract text data from images. The sample app shows you how to use these capabilities to detect and display phone numbers scanned by the camera. It highlights the use of the fast recognition level and a reduced scope to provide responsive real-time text recognition.
 
-The [`VNRecognizeTextRequest`](vnrecognizetextrequest.md) encapsulates all the necessary logic to recognize text in an image. There are two recognition levels you can choose from, to prioritize accuracy or speed of recognition. Additional configuration properties enable you to specify the languages to recognize, use language correction during recognition, specify the area of the live video to scan, and more. With all of these capabilities, there are tradeoffs between convenience, accuracy, and performance.
+The [`VNRecognizeTextRequest`](./vnrecognizetextrequest.md) encapsulates all the necessary logic to recognize text in an image. There are two recognition levels you can choose from, to prioritize accuracy or speed of recognition. Additional configuration properties enable you to specify the languages to recognize, use language correction during recognition, specify the area of the live video to scan, and more. With all of these capabilities, there are tradeoffs between convenience, accuracy, and performance.
 
 First the app creates a request to recognize text:
 
@@ -45,7 +47,7 @@ do {
 
 Disabling language correction improves performance but produces less accurate results. The app includes extensions on `Character` and `String` to perform correction optimized for phone-number recognition. See `StringUtils.swift` to review this code.
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 To run this sample app, you need the following:
 
@@ -54,19 +56,20 @@ To run this sample app, you need the following:
 
 Connect the iPhone to the Mac over USB. The first time you run this sample app, the system prompts you to grant the app access to the camera. You must allow the sample app to access the camera for it to function correctly.
 
-> **Note**: This sample code project is associated with WWDC19 session 234: [`Text Recognition in Vision Framework`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/234).
+> **Note**: This sample code project is associated with WWDC19 session 234: [Text Recognition in Vision Framework](https://developer.apple.com/videos/play/wwdc19/234).
 
 ## See Also
 
-- [Recognizing Text in Images](recognizing-text-in-images.md)
+### Text recognition
+- [Recognizing Text in Images](./recognizing-text-in-images.md)
   Add text-recognition features to your app using the Vision framework.
-- [Structuring recognized text on a document](../visionkit/structuring-recognized-text-on-a-document.md)
+- [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md)
   Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
-- [Locating and displaying recognized text](locating-and-displaying-recognized-text.md)
+- [Locating and displaying recognized text](./locating-and-displaying-recognized-text.md)
   Perform text recognition on a photo using the Vision framework’s text-recognition request.
-- [class VNRecognizeTextRequest](vnrecognizetextrequest.md)
+- [class VNRecognizeTextRequest](./vnrecognizetextrequest.md)
   An image-analysis request that finds and recognizes text in an image.
-- [class VNRecognizedTextObservation](vnrecognizedtextobservation.md)
+- [class VNRecognizedTextObservation](./vnrecognizedtextobservation.md)
   A request that detects and recognizes regions of text in an image.
 
 

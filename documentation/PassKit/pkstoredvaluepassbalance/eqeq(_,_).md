@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether two pass balance objects contain the same values.
 
@@ -10,7 +11,7 @@ Returns a Boolean value that indicates whether two pass balance objects contain 
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - macOS 12.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ static func == (lhs: PKStoredValuePassBalance, rhs: PKStoredValuePassBalance) ->
 
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two stored-value pass balance objects are equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false)
+[`true`](../../Swift/true.md) if the two stored-value pass balance objects are equal; otherwise, [`false`](../../Swift/false.md)
 
 ## Parameters
 

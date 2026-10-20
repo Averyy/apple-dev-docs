@@ -1,7 +1,8 @@
 # points
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 One or more arrays of coordinates that define the polygon overlay shape.
 
@@ -10,7 +11,7 @@ One or more arrays of coordinates that define the polygon overlay shape.
 
 ## Declaration
 
-```swift
+```
 get points(): Coordinate[][];
 set points(points: Coordinate[][]);
 ```

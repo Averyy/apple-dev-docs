@@ -1,7 +1,8 @@
 # mean(axes:keepDimensions:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a mean reduction operation along the given axis operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a mean reduction operation along the given axis operation to the current gr
 ```swift
 func mean(axes: [Int], keepDimensions: Bool) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

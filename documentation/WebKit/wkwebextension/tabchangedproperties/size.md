@@ -1,7 +1,8 @@
 # size
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates the size changed.
 
@@ -16,6 +17,10 @@ Indicates the size changed.
 
 ```swift
 static var size: WKWebExtension.TabChangedProperties { get }
+```
+
+```c
+WKWebExtensionTabChangedPropertiesSize
 ```
 
 

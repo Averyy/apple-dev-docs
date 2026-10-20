@@ -1,31 +1,32 @@
 # IOGuardPageMemoryDescriptor
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 class IOGuardPageMemoryDescriptor : IOGeneralMemoryDescriptor
 ```
 
 ## Topics
 
 ### Instance Methods
-- [- doMap](ioguardpagememorydescriptor/3753449-domap.md)
-- [- free](ioguardpagememorydescriptor/3753450-free.md)
-- [- getMetaClass](ioguardpagememorydescriptor/3753451-getmetaclass.md)
-- [- initWithSize](ioguardpagememorydescriptor/3753452-initwithsize.md)
+- [- doMap](./ioguardpagememorydescriptor/api-3753449-domap.md)
+- [- free](./ioguardpagememorydescriptor/api-3753450-free.md)
+- [- getMetaClass](./ioguardpagememorydescriptor/api-3753451-getmetaclass.md)
+- [- initWithSize](./ioguardpagememorydescriptor/api-3753452-initwithsize.md)
 ### Type Methods
-- [+ withSize](ioguardpagememorydescriptor/3753453-withsize.md)
+- [+ withSize](./ioguardpagememorydescriptor/api-3753453-withsize.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOGeneralMemoryDescriptor](iogeneralmemorydescriptor.md)
+- [IOGeneralMemoryDescriptor](./iogeneralmemorydescriptor.md)
 
 
 ---

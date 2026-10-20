@@ -1,7 +1,8 @@
 # allExtensionDataTypes
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns a set of all available extension data types.
 
@@ -16,6 +17,10 @@ Returns a set of all available extension data types.
 
 ```swift
 class var allExtensionDataTypes: Set<WKWebExtension.DataType> { get }
+```
+
+```objc
+@property (class, nonatomic, copy, readonly) NSSet<NSString *> * allExtensionDataTypes;
 ```
 
 

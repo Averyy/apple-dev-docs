@@ -1,7 +1,8 @@
 # mediaType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media type of samples that the output reads.
 
@@ -17,6 +18,10 @@ The media type of samples that the output reads.
 
 ```swift
 var mediaType: AVMediaType { get }
+```
+
+```objc
+@property (nonatomic, readonly) AVMediaType mediaType;
 ```
 
 

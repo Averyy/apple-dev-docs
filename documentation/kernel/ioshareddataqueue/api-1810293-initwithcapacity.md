@@ -7,12 +7,12 @@ Initializes an IOSharedDataQueue instance with the capacity specified in the siz
 
 ## Declaration
 
-```swift
+```cpp
 virtual Boolean initWithCapacity(
  UInt32size);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns true on success and false on failure.
 
@@ -26,15 +26,16 @@ The actual size of the entire data queue memory region (to be shared into a user
 
 ## See Also
 
-- [dequeue](ioshareddataqueue/1810190-dequeue.md)
+### Miscellaneous
+- [dequeue](./api-1810190-dequeue.md)
   Dequeues the next available entry on the queue and copies it into the given data pointer.
-- [getMemoryDescriptor](ioshareddataqueue/1810240-getmemorydescriptor.md)
+- [getMemoryDescriptor](./api-1810240-getmemorydescriptor.md)
   Returns a memory descriptor covering the IODataQueueMemory region.
-- [peek](ioshareddataqueue/1810347-peek.md)
+- [peek](./api-1810347-peek.md)
   Used to peek at the next entry on the queue.
-- [withCapacity](ioshareddataqueue/1810400-withcapacity.md)
+- [withCapacity](./api-1810400-withcapacity.md)
   Static method that creates a new IOSharedDataQueue instance with the capacity specified in the size parameter.
-- [withEntries](ioshareddataqueue/1810447-withentries.md)
+- [withEntries](./api-1810447-withentries.md)
   Static method that creates a new IOSharedDataQueue instance with the specified number of entries of the given size.
 
 

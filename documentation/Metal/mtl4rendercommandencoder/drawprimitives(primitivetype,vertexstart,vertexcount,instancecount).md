@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encodes a draw command that renders multiple instances of a geometric primitive.
@@ -20,6 +21,10 @@ Encodes a draw command that renders multiple instances of a geometric primitive.
 func drawPrimitives(primitiveType: MTLPrimitiveType, vertexStart: Int, vertexCount: Int, instanceCount: Int)
 ```
 
+```objc
+- (void) drawPrimitives:(MTLPrimitiveType) primitiveType vertexStart:(NSUInteger) vertexStart vertexCount:(NSUInteger) vertexCount instanceCount:(NSUInteger) instanceCount;
+```
+
 #### Discussion
 
 The command assigns each vertex a unique `vertex_id` value within its drawing instance that increases from `vertexStart` through `(vertexStart + vertexCount - 1)`.
@@ -30,18 +35,19 @@ Your vertex shader can use the `vertex_id` value to uniquely identify each verte
 
 ## Parameters
 
-- `primitiveType`: A [`MTLPrimitiveType`](mtlprimitivetype.md) represents how the command interprets vertex argument data.
+- `primitiveType`: A [`MTLPrimitiveType`](../mtlprimitivetype.md) represents how the command interprets vertex argument data.
 - `vertexStart`: The lowest value the command passes to your vertex shader function’s parameter with the `vertex_id` attribute.
 - `vertexCount`: An integer that represents the number of vertices of `primitiveType` the command draws.
 - `instanceCount`: An integer that represents the number of times the command draws `primitiveType` primitives with `vertexCount` vertices.
 
 ## See Also
 
-- [func drawPrimitives(primitiveType: MTLPrimitiveType, vertexStart: Int, vertexCount: Int)](mtl4rendercommandencoder/drawprimitives(primitivetype:vertexstart:vertexcount:).md)
+### Drawing with vertices
+- [func drawPrimitives(primitiveType: MTLPrimitiveType, vertexStart: Int, vertexCount: Int)](./drawprimitives%28primitivetype,vertexstart,vertexcount%29.md)
   Encodes a draw command that renders an instance of a geometric primitive.
-- [func drawPrimitives(primitiveType: MTLPrimitiveType, vertexStart: Int, vertexCount: Int, instanceCount: Int, baseInstance: Int)](mtl4rendercommandencoder/drawprimitives(primitivetype:vertexstart:vertexcount:instancecount:baseinstance:).md)
+- [func drawPrimitives(primitiveType: MTLPrimitiveType, vertexStart: Int, vertexCount: Int, instanceCount: Int, baseInstance: Int)](./drawprimitives%28primitivetype,vertexstart,vertexcount,instancecount,baseinstance%29.md)
   Encodes a draw command that renders multiple instances of a geometric primitive, starting with a custom instance identification number.
-- [func drawPrimitives(primitiveType: MTLPrimitiveType, indirectBuffer: MTLGPUAddress)](mtl4rendercommandencoder/drawprimitives(primitivetype:indirectbuffer:).md)
+- [func drawPrimitives(primitiveType: MTLPrimitiveType, indirectBuffer: MTLGPUAddress)](./drawprimitives%28primitivetype,indirectbuffer%29.md)
   Encodes a draw command that renders multiple instances of a geometric primitive with indirect arguments.
 
 

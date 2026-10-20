@@ -1,7 +1,8 @@
 # addTouchpad(descriptor:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new touchpad control with the provided descriptor, and adds it to the touch controller.
 
@@ -16,6 +17,10 @@ Creates a new touchpad control with the provided descriptor, and adds it to the 
 func addTouchpad(descriptor: TCTouchpadDescriptor) -> TCTouchpad
 ```
 
+```objc
+- (TCTouchpad *) addTouchpadWithDescriptor:(TCTouchpadDescriptor *) descriptor;
+```
+
 #### Return Value
 
 A new `TCTouchpad` instance.
@@ -26,7 +31,8 @@ A new `TCTouchpad` instance.
 
 ## See Also
 
-- [class TCTouchpadDescriptor](tctouchpaddescriptor.md)
+### Adding a touchpad control
+- [class TCTouchpadDescriptor](../tctouchpaddescriptor.md)
   A descriptor for configuring a touchpad.
 
 

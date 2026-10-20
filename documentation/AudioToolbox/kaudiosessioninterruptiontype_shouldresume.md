@@ -1,16 +1,19 @@
 # kAudioSessionInterruptionType_ShouldResume
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the interruption that has just ended was one for which it is appropriate to immediately resume playback; for example, an incoming phone call was rejected by the user.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+
+> **Deprecated**: Deprecated in iOS 7.0.
 
 ## Declaration
 
@@ -18,9 +21,14 @@ Indicates that the interruption that has just ended was one for which it is appr
 var kAudioSessionInterruptionType_ShouldResume: Int { get }
 ```
 
+```c
+kAudioSessionInterruptionType_ShouldResume
+```
+
 ## See Also
 
-- [var kAudioSessionInterruptionType_ShouldNotResume: Int](kaudiosessioninterruptiontype_shouldnotresume.md)
+### Constants
+- [var kAudioSessionInterruptionType_ShouldNotResume: Int](./kaudiosessioninterruptiontype_shouldnotresume.md)
   Indicates that the interruption that has just ended was one for which it is not appropriate to resume playback; for example, your app had been interrupted by iPod playback.
 
 

@@ -1,22 +1,27 @@
 # UIAccessibility.AssistiveTechnologyIdentifier
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Identifiers for assistive apps.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 - watchOS 5.0+
 
 ## Declaration
 
 ```swift
 struct AssistiveTechnologyIdentifier
+```
+
+```c
+typedef NSString * UIAccessibilityAssistiveTechnologyIdentifier;
 ```
 
 #### Overview
@@ -26,34 +31,35 @@ Manage pausing and resuming assistive apps with these identifiers.
 ## Topics
 
 ### Identifiers
-- [static let notificationSwitchControl: UIAccessibility.AssistiveTechnologyIdentifier](uiaccessibility/assistivetechnologyidentifier/notificationswitchcontrol.md)
+- [static let notificationSwitchControl: UIAccessibility.AssistiveTechnologyIdentifier](./assistivetechnologyidentifier/notificationswitchcontrol.md)
   The Switch Control accessibility feature.
-- [static let notificationVoiceOver: UIAccessibility.AssistiveTechnologyIdentifier](uiaccessibility/assistivetechnologyidentifier/notificationvoiceover.md)
+- [static let notificationVoiceOver: UIAccessibility.AssistiveTechnologyIdentifier](./assistivetechnologyidentifier/notificationvoiceover.md)
   The VoiceOver assistive app.
 ### Initializer
-- [init(rawValue: String)](uiaccessibility/assistivetechnologyidentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./assistivetechnologyidentifier/init%28rawvalue%29.md)
   Creates an assistive app identifier with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let announcementStringValueUserInfoKey: String](uiaccessibility/announcementstringvalueuserinfokey.md)
+### Notification keys
+- [static let announcementStringValueUserInfoKey: String](./announcementstringvalueuserinfokey.md)
   The text of the announcement.
-- [static let announcementWasSuccessfulUserInfoKey: String](uiaccessibility/announcementwassuccessfuluserinfokey.md)
+- [static let announcementWasSuccessfulUserInfoKey: String](./announcementwassuccessfuluserinfokey.md)
   A Boolean value that indicates whether the announcement is successful.
-- [static let focusedElementUserInfoKey: String](uiaccessibility/focusedelementuserinfokey.md)
+- [static let focusedElementUserInfoKey: String](./focusedelementuserinfokey.md)
   The element currently in focus by the assistive app.
-- [static let unfocusedElementUserInfoKey: String](uiaccessibility/unfocusedelementuserinfokey.md)
+- [static let unfocusedElementUserInfoKey: String](./unfocusedelementuserinfokey.md)
   The element previously in focus by the assistive app.
-- [static let assistiveTechnologyUserInfoKey: String](uiaccessibility/assistivetechnologyuserinfokey.md)
+- [static let assistiveTechnologyUserInfoKey: String](./assistivetechnologyuserinfokey.md)
   The identifier of the assistive app.
 
 

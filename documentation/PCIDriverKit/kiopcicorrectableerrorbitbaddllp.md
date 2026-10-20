@@ -1,35 +1,37 @@
 # kIOPCICorrectableErrorBitBadDLLP
 
 **Framework**: PCIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The bit number for a bad DTLP error.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOPCICorrectableErrorBitBadDLLP
 ```
 
 ## See Also
 
-- [kIOPCICorrectableErrorBitReceiver](kiopcicorrectableerrorbitreceiver.md)
+### Constants
+- [kIOPCICorrectableErrorBitReceiver](./kiopcicorrectableerrorbitreceiver.md)
   The bit number for a receiver error.
-- [kIOPCICorrectableErrorBitBadTLP](kiopcicorrectableerrorbitbadtlp.md)
+- [kIOPCICorrectableErrorBitBadTLP](./kiopcicorrectableerrorbitbadtlp.md)
   The bit number for a bad transaction layer packet error.
-- [kIOPCICorrectableErrorBitReplayNumRollover](kiopcicorrectableerrorbitreplaynumrollover.md)
+- [kIOPCICorrectableErrorBitReplayNumRollover](./kiopcicorrectableerrorbitreplaynumrollover.md)
   The bit number for an error that requires the retransmission of a packet.
-- [kIOPCICorrectableErrorBitReplayTimerTimeout](kiopcicorrectableerrorbitreplaytimertimeout.md)
+- [kIOPCICorrectableErrorBitReplayTimerTimeout](./kiopcicorrectableerrorbitreplaytimertimeout.md)
   The bit number for a timeout error that involves the retransmission of a packet.
-- [kIOPCICorrectableErrorBitAdvisoryNonFatal](kiopcicorrectableerrorbitadvisorynonfatal.md)
+- [kIOPCICorrectableErrorBitAdvisoryNonFatal](./kiopcicorrectableerrorbitadvisorynonfatal.md)
   The bit number for an advisory error that is not fatal.
-- [kIOPCICorrectableErrorBitCorrectedInternal](kiopcicorrectableerrorbitcorrectedinternal.md)
+- [kIOPCICorrectableErrorBitCorrectedInternal](./kiopcicorrectableerrorbitcorrectedinternal.md)
   The bit number for an error that the device corrected internally.
-- [kIOPCICorrectableErrorBitHeaderLogOverflow](kiopcicorrectableerrorbitheaderlogoverflow.md)
+- [kIOPCICorrectableErrorBitHeaderLogOverflow](./kiopcicorrectableerrorbitheaderlogoverflow.md)
   The bit number for a header log overflow error.
 
 

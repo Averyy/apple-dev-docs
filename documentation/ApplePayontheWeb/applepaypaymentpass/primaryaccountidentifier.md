@@ -1,7 +1,8 @@
 # primaryAccountIdentifier
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the primary account number for the payment card.
 
@@ -11,17 +12,18 @@ The unique identifier for the primary account number for the payment card.
 
 ## Declaration
 
-```swift
+```
 required DOMString primaryAccountIdentifier;
 ```
 
 ## See Also
 
-- [primaryAccountNumberSuffix](applepaypaymentpass/primaryaccountnumbersuffix.md)
+### Account Identity
+- [primaryAccountNumberSuffix](./primaryaccountnumbersuffix.md)
   A version of the primary account number suitable for display in your UI.
-- [deviceAccountIdentifier](applepaypaymentpass/deviceaccountidentifier.md)
+- [deviceAccountIdentifier](./deviceaccountidentifier.md)
   The unique identifier for the device-specific account number.
-- [deviceAccountNumberSuffix](applepaypaymentpass/deviceaccountnumbersuffix.md)
+- [deviceAccountNumberSuffix](./deviceaccountnumbersuffix.md)
   A version of the device account number suitable for display in your UI.
 
 

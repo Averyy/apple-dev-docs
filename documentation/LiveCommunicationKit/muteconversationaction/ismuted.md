@@ -1,7 +1,8 @@
 # isMuted
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that specifies whether to mute or unmute the local participant of the conversation.
 

@@ -1,7 +1,8 @@
 # queryStreamingProviders()
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a list of currently-available streaming providers.
 

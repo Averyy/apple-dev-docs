@@ -1,7 +1,8 @@
 # AVPlayerViewControllerSkippingBehavior.default
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The default skipping behavior, which is to skip forward or backward in 10-second intervals.
 
@@ -14,9 +15,14 @@ The default skipping behavior, which is to skip forward or backward in 10-second
 case `default`
 ```
 
+```c
+AVPlayerViewControllerSkippingBehaviorDefault
+```
+
 ## See Also
 
-- [AVPlayerViewControllerSkippingBehavior.skipItem](avplayerviewcontrollerskippingbehavior/skipitem.md)
+### Skipping behaviors
+- [AVPlayerViewControllerSkippingBehavior.skipItem](./skipitem.md)
   Skipping behavior that specifies skipping to the next or previous item in the player’s playlist.
 
 

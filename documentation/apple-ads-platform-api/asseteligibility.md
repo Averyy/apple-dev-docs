@@ -1,7 +1,8 @@
 # AssetEligibility
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Eligibility status and constraint details for an asset.
 
@@ -10,7 +11,7 @@ Eligibility status and constraint details for an asset.
 
 ## Declaration
 
-```swift
+```
 object AssetEligibility
 ```
 
@@ -18,7 +19,7 @@ object AssetEligibility
 
 The `AssetEligibility` object captures the policy evaluation result for an asset. The `Asset` responses always include it (unless excluded via the `fields` parameter), and it describes whether and where the asset can be used for ad serving.
 
-Check `AssetEligibility` before including an asset in a creative. You can’t use assets with `INELIGIBLE` or `PENDING` status in any ad unit. Assets with `LIMITED` status can serve in some placements or markets. See [`AssetEligibilityStatus`](asseteligibilitystatus.md) for the full list of status values.
+Check `AssetEligibility` before including an asset in a creative. You can’t use assets with `INELIGIBLE` or `PENDING` status in any ad unit. Assets with `LIMITED` status can serve in some placements or markets. See [`AssetEligibilityStatus`](./asseteligibilitystatus.md) for the full list of status values.
 
 ##### Example
 
@@ -43,18 +44,18 @@ Check `AssetEligibility` before including an asset in a creative. You can’t us
 ## Properties
 
 - `status` (AssetEligibilityStatus): Overall eligibility status. Read-only.
-- `blockedGroups` ([AssetConstraintGroup]): Constraint groups where the asset is blocked from serving. See [`AssetConstraintGroup`](assetconstraintgroup.md). Read-only.
-- `allowedGroups` ([AssetConstraintGroup]): Constraint groups where the asset is explicitly allowed to serve. See [`AssetConstraintGroup`](assetconstraintgroup.md). Read-only.
+- `blockedGroups` ([AssetConstraintGroup]): Constraint groups where the asset is blocked from serving. See [`AssetConstraintGroup`](./assetconstraintgroup.md). Read-only.
+- `allowedGroups` ([AssetConstraintGroup]): Constraint groups where the asset is explicitly allowed to serve. See [`AssetConstraintGroup`](./assetconstraintgroup.md). Read-only.
 
 ## See Also
 
-- [object Asset](asset.md)
+- [object Asset](./asset.md)
   Unified asset entity containing product-agnostic asset metadata and references.
-- [object AssetResponse](assetresponse.md)
+- [object AssetResponse](./assetresponse.md)
   The Get Asset and Upload Asset endpoints return this response object.
-- [object AssetQueryResponse](assetqueryresponse.md)
+- [object AssetQueryResponse](./assetqueryresponse.md)
   Paginated response object for asset queries.
-- [object AssetConstraintGroup](assetconstraintgroup.md)
+- [object AssetConstraintGroup](./assetconstraintgroup.md)
   A constraint group defining the supply placements and countries or regions where an asset is blocked or allowed to serve.
 
 

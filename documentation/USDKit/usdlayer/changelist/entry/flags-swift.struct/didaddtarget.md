@@ -1,7 +1,8 @@
 # didAddTarget
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether a target was added to a relationship.
 

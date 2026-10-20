@@ -1,7 +1,8 @@
 # signMessageECDSA_RAW(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 optional func signMessageECDSA_RAW(_ message: Data) -> Data
+```
+
+```objc
+- (NSData *) signMessageECDSA_RAW:(NSData *) message;
 ```
 
 

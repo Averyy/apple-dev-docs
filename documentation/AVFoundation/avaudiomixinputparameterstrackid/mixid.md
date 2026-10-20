@@ -1,7 +1,8 @@
 # AVAudioMixInputParametersTrackID.mixID
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the specified input parameters should be applied to the mix of all audio tracks rather than to a single specific audio track. This is particularly useful for setting up volume ramps or an audio tap for streaming playback.
 
@@ -18,6 +19,10 @@ Indicates that the specified input parameters should be applied to the mix of al
 
 ```swift
 case mixID
+```
+
+```c
+AVAudioMixInputParametersTrackMixID
 ```
 
 

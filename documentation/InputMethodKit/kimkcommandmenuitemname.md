@@ -1,7 +1,8 @@
 # kIMKCommandMenuItemName
 
 **Framework**: InputMethodKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,13 +13,18 @@
 let kIMKCommandMenuItemName: String
 ```
 
+```c
+extern const NSString * kIMKCommandMenuItemName;
+```
+
 #### Discussion
 
 Used to look up the `NSMenuItem` object that is passed to menu item actions.
 
 ## See Also
 
-- [let kIMKCommandClientName: String](kimkcommandclientname.md)
+### Constants
+- [let kIMKCommandClientName: String](./kimkcommandclientname.md)
 
 
 ---

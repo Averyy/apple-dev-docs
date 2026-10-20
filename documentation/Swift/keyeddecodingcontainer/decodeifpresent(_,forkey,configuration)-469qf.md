@@ -1,7 +1,8 @@
 # decodeIfPresent(_:forKey:configuration:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.0+
@@ -17,6 +18,8 @@
 ```swift
 func decodeIfPresent<T>(_: T.Type, forKey key: KeyedDecodingContainer<K>.Key, configuration: T.DecodingConfiguration) throws -> T? where T : DecodableWithConfiguration
 ```
+
+Available when `K` conforms to `CodingKey`.
 
 
 ---

@@ -1,7 +1,8 @@
 # MPSCNNGradientKernel
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for gradient layers.
 
@@ -19,60 +20,65 @@ The base class for gradient layers.
 class MPSCNNGradientKernel
 ```
 
+```objc
+@interface MPSCNNGradientKernel : MPSCNNBinaryKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init?(coder: NSCoder, device: any MTLDevice)](mpscnngradientkernel/init(coder:device:).md)
-- [init(device: any MTLDevice)](mpscnngradientkernel/init(device:).md)
+- [init?(coder: NSCoder, device: any MTLDevice)](./mpscnngradientkernel/init%28coder,device%29.md)
+- [init(device: any MTLDevice)](./mpscnngradientkernel/init%28device%29.md)
 ### Instance Properties
-- [var kernelOffsetX: Int](mpscnngradientkernel/kerneloffsetx.md)
-- [var kernelOffsetY: Int](mpscnngradientkernel/kerneloffsety.md)
+- [var kernelOffsetX: Int](./mpscnngradientkernel/kerneloffsetx.md)
+- [var kernelOffsetY: Int](./mpscnngradientkernel/kerneloffsety.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceGradient: MPSImage, sourceImage: MPSImage, gradientState: MPSState) -> MPSImage](mpscnngradientkernel/encode(commandbuffer:sourcegradient:sourceimage:gradientstate:).md)
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceGradient: MPSImage, sourceImage: MPSImage, gradientState: MPSState, destinationGradient: MPSImage)](mpscnngradientkernel/encode(commandbuffer:sourcegradient:sourceimage:gradientstate:destinationgradient:).md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], gradientStates: [MPSState]) -> [MPSImage]](mpscnngradientkernel/encodebatch(commandbuffer:sourcegradients:sourceimages:gradientstates:).md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], gradientStates: [MPSState], destinationGradients: [MPSImage])](mpscnngradientkernel/encodebatch(commandbuffer:sourcegradients:sourceimages:gradientstates:destinationgradients:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceGradient: MPSImage, sourceImage: MPSImage, gradientState: MPSState) -> MPSImage](./mpscnngradientkernel/encode%28commandbuffer,sourcegradient,sourceimage,gradientstate%29.md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceGradient: MPSImage, sourceImage: MPSImage, gradientState: MPSState, destinationGradient: MPSImage)](./mpscnngradientkernel/encode%28commandbuffer,sourcegradient,sourceimage,gradientstate,destinationgradient%29.md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], gradientStates: [MPSState]) -> [MPSImage]](./mpscnngradientkernel/encodebatch%28commandbuffer,sourcegradients,sourceimages,gradientstates%29.md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, sourceGradients: [MPSImage], sourceImages: [MPSImage], gradientStates: [MPSState], destinationGradients: [MPSImage])](./mpscnngradientkernel/encodebatch%28commandbuffer,sourcegradients,sourceimages,gradientstates,destinationgradients%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNBinaryKernel](mpscnnbinarykernel.md)
+- [MPSCNNBinaryKernel](./mpscnnbinarykernel.md)
 ### Inherited By
-- [MPSCNNArithmeticGradient](mpscnnarithmeticgradient.md)
-- [MPSCNNBatchNormalizationGradient](mpscnnbatchnormalizationgradient.md)
-- [MPSCNNBatchNormalizationStatisticsGradient](mpscnnbatchnormalizationstatisticsgradient.md)
-- [MPSCNNConvolutionGradient](mpscnnconvolutiongradient.md)
-- [MPSCNNConvolutionTransposeGradient](mpscnnconvolutiontransposegradient.md)
-- [MPSCNNCrossChannelNormalizationGradient](mpscnncrosschannelnormalizationgradient.md)
-- [MPSCNNDropoutGradient](mpscnndropoutgradient.md)
-- [MPSCNNGroupNormalizationGradient](mpscnngroupnormalizationgradient.md)
-- [MPSCNNInstanceNormalizationGradient](mpscnninstancenormalizationgradient.md)
-- [MPSCNNLocalContrastNormalizationGradient](mpscnnlocalcontrastnormalizationgradient.md)
-- [MPSCNNLogSoftMaxGradient](mpscnnlogsoftmaxgradient.md)
-- [MPSCNNNeuronGradient](mpscnnneurongradient.md)
-- [MPSCNNPoolingGradient](mpscnnpoolinggradient.md)
-- [MPSCNNSoftMaxGradient](mpscnnsoftmaxgradient.md)
-- [MPSCNNSpatialNormalizationGradient](mpscnnspatialnormalizationgradient.md)
-- [MPSCNNUpsamplingGradient](mpscnnupsamplinggradient.md)
-- [MPSNNGramMatrixCalculationGradient](mpsnngrammatrixcalculationgradient.md)
-- [MPSNNPadGradient](mpsnnpadgradient.md)
-- [MPSNNReshapeGradient](mpsnnreshapegradient.md)
+- [MPSCNNArithmeticGradient](./mpscnnarithmeticgradient.md)
+- [MPSCNNBatchNormalizationGradient](./mpscnnbatchnormalizationgradient.md)
+- [MPSCNNBatchNormalizationStatisticsGradient](./mpscnnbatchnormalizationstatisticsgradient.md)
+- [MPSCNNConvolutionGradient](./mpscnnconvolutiongradient.md)
+- [MPSCNNConvolutionTransposeGradient](./mpscnnconvolutiontransposegradient.md)
+- [MPSCNNCrossChannelNormalizationGradient](./mpscnncrosschannelnormalizationgradient.md)
+- [MPSCNNDropoutGradient](./mpscnndropoutgradient.md)
+- [MPSCNNGroupNormalizationGradient](./mpscnngroupnormalizationgradient.md)
+- [MPSCNNInstanceNormalizationGradient](./mpscnninstancenormalizationgradient.md)
+- [MPSCNNLocalContrastNormalizationGradient](./mpscnnlocalcontrastnormalizationgradient.md)
+- [MPSCNNLogSoftMaxGradient](./mpscnnlogsoftmaxgradient.md)
+- [MPSCNNNeuronGradient](./mpscnnneurongradient.md)
+- [MPSCNNPoolingGradient](./mpscnnpoolinggradient.md)
+- [MPSCNNSoftMaxGradient](./mpscnnsoftmaxgradient.md)
+- [MPSCNNSpatialNormalizationGradient](./mpscnnspatialnormalizationgradient.md)
+- [MPSCNNUpsamplingGradient](./mpscnnupsamplinggradient.md)
+- [MPSNNGramMatrixCalculationGradient](./mpsnngrammatrixcalculationgradient.md)
+- [MPSNNPadGradient](./mpsnnpadgradient.md)
+- [MPSNNReshapeGradient](./mpsnnreshapegradient.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNKernel](mpscnnkernel.md)
+### Layer Base Classes
+- [class MPSCNNKernel](./mpscnnkernel.md)
   Base class for neural network layers.
-- [class MPSCNNBinaryKernel](mpscnnbinarykernel.md)
+- [class MPSCNNBinaryKernel](./mpscnnbinarykernel.md)
   A convolution neural network kernel.
 
 

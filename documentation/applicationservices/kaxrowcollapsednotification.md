@@ -1,7 +1,8 @@
 # kAXRowCollapsedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification that a row in an outline has been collapsed.
 
@@ -12,6 +13,10 @@ Notification that a row in an outline has been collapsed.
 
 ```swift
 var kAXRowCollapsedNotification: String { get }
+```
+
+```c
+#define kAXRowCollapsedNotification
 ```
 
 #### Discussion

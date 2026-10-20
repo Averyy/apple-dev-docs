@@ -2,18 +2,23 @@
 
 **Framework**: AppKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the Cloud share object that corresponds to the specified item, if one exists.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 func cloudShare(for item: any NSValidatedUserInterfaceItem) -> CKShare?
+```
+
+```objc
+- (CKShare *) cloudShareForUserInterfaceItem:(id<NSValidatedUserInterfaceItem>) item;
 ```
 
 

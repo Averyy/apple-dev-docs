@@ -1,7 +1,8 @@
 # timeSinceSampleStart
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time of the measurement relative to the sample’s start time.
 
@@ -19,9 +20,14 @@ The time of the measurement relative to the sample’s start time.
 var timeSinceSampleStart: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval timeSinceSampleStart;
+```
+
 ## See Also
 
-- [func quantity(for: HKElectrocardiogram.Lead) -> HKQuantity?](hkelectrocardiogram/voltagemeasurement/quantity(for:).md)
+### Accessing Data
+- [func quantity(for: HKElectrocardiogram.Lead) -> HKQuantity?](./quantity%28for%29.md)
   Returns the voltage for the specified lead.
 
 

@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Dereferences the constant reference allowing for in-place reads to the underlying value.
 

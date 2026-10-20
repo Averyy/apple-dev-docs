@@ -1,7 +1,8 @@
 # segments
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the envelope’s segments.
 
@@ -19,15 +20,20 @@ An array of the envelope’s segments.
 var segments: [PHASEEnvelopeSegment] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<PHASEEnvelopeSegment *> * segments;
+```
+
 #### Discussion
 
-The framework sets the value of this property to the [`init(startPoint:segments:)`](phaseenvelope/init(startpoint:segments:).md) argument.
+The framework sets the value of this property to the [`init(startPoint:segments:)`](./init%28startpoint,segments%29.md) argument.
 
 ## See Also
 
-- [func evaluate(x: Double) -> Double](phaseenvelope/evaluate(x:).md)
+### Inspecting the Envelope
+- [func evaluate(x: Double) -> Double](./evaluate%28x%29.md)
   Provides the height of the envelope for an input value.
-- [var startPoint: simd_double2](phaseenvelope/startpoint.md)
+- [var startPoint: simd_double2](./startpoint.md)
   The starting point along the envelope’s duration.
 
 

@@ -1,7 +1,8 @@
 # imageConfiguration
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display as the adornment.
 
@@ -20,7 +21,8 @@ var imageConfiguration: MarkupAdornment.ImageConfiguration
 
 ## See Also
 
-- [MarkupAdornment.ImageConfiguration](markupadornment/imageconfiguration-swift.struct.md)
+### Configuring the image
+- [MarkupAdornment.ImageConfiguration](./imageconfiguration-swift.struct.md)
   The visual appearance configuration for a markup adornment.
 
 

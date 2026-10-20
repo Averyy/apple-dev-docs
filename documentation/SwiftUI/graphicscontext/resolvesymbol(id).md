@@ -1,7 +1,8 @@
 # resolveSymbol(id:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the identified child view as a resolved symbol, if the view exists.
 
@@ -26,17 +27,18 @@ The resolved symbol, or `nil` if SwiftUI can’t find a child view with the give
 
 ## Parameters
 
-- `id`: The value that you used to tag the view when you define it in the `symbols` parameter of the [`Canvas`](canvas.md) initializer [`init(opaque:colorMode:rendersAsynchronously:renderer:symbols:)`](canvas/init(opaque:colormode:rendersasynchronously:renderer:symbols:).md).
+- `id`: The value that you used to tag the view when you define it in the `symbols` parameter of the [`Canvas`](../canvas.md) initializer [`init(opaque:colorMode:rendersAsynchronously:renderer:symbols:)`](../canvas/init%28opaque,colormode,rendersasynchronously,renderer,symbols%29.md).
 
 ## See Also
 
-- [func resolve(_:)](graphicscontext/resolve(_:).md)
+### Resolving a drawn entity
+- [func resolve(_:)](./resolve%28_%29.md)
   Gets a version of an image that’s fixed with the current values of the graphics context’s environment.
-- [GraphicsContext.ResolvedSymbol](graphicscontext/resolvedsymbol.md)
+- [GraphicsContext.ResolvedSymbol](./resolvedsymbol.md)
   A static sequence of drawing operations that may be drawn multiple times, preserving their resolution independence.
-- [GraphicsContext.ResolvedImage](graphicscontext/resolvedimage.md)
+- [GraphicsContext.ResolvedImage](./resolvedimage.md)
   An image resolved to a particular environment.
-- [GraphicsContext.ResolvedText](graphicscontext/resolvedtext.md)
+- [GraphicsContext.ResolvedText](./resolvedtext.md)
   A text view resolved to a particular environment.
 
 

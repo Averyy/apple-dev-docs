@@ -1,7 +1,8 @@
 # AppStoreReviewDetail.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an App Store Review Details resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an App Store Review Details resource.
 
 ## Declaration
 
-```swift
+```
 object AppStoreReviewDetail.Attributes
 ```
 
@@ -27,7 +28,8 @@ object AppStoreReviewDetail.Attributes
 
 ## See Also
 
-- [object AppStoreReviewDetail.Relationships](appstorereviewdetail/relationships-data.dictionary.md)
+### Objects
+- [object AppStoreReviewDetail.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

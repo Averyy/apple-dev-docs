@@ -1,7 +1,8 @@
 # fileHandle
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A file handle to a block device.
 
@@ -14,11 +15,16 @@ A file handle to a block device.
 var fileHandle: FileHandle { get }
 ```
 
+```objc
+@property (strong, readonly) NSFileHandle * fileHandle;
+```
+
 ## See Also
 
-- [var isReadOnly: Bool](vzdiskblockdevicestoragedeviceattachment/isreadonly.md)
+### Getting the block storage device details
+- [var isReadOnly: Bool](./isreadonly.md)
   A Boolean value that indicates whether this disk attachment is read-only; otherwise, if the file handle allows writes, the device can write data into it.
-- [var synchronizationMode: VZDiskSynchronizationMode](vzdiskblockdevicestoragedeviceattachment/synchronizationmode.md)
+- [var synchronizationMode: VZDiskSynchronizationMode](./synchronizationmode.md)
   The value that defines how the disk synchronizes with the underlying storage when the guest operating system flushes data.
 
 

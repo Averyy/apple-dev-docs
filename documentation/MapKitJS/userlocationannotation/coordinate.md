@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate of the annotation, that represents a person’s location on the map.
 
@@ -10,7 +11,7 @@ The coordinate of the annotation, that represents a person’s location on the m
 
 ## Declaration
 
-```swift
+```
 get coordinate(): Coordinate;
 set coordinate(coordinate: Coordinate);
 ```

@@ -1,7 +1,8 @@
 # ellipticalGradient(_:center:startRadiusFraction:endRadiusFraction:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A radial gradient that draws an ellipse.
 
@@ -21,6 +22,15 @@ A radial gradient that draws an ellipse.
 static func ellipticalGradient(_ gradient: AnyGradient, center: UnitPoint = .center, startRadiusFraction: CGFloat = 0, endRadiusFraction: CGFloat = 0.5) -> some ShapeStyle
 ```
 
+Available when `Self` is `EllipticalGradient`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func ellipticalGradient(_ gradient: Gradient, center: UnitPoint = .center, startRadiusFraction: CGFloat = 0, endRadiusFraction: CGFloat = 0.5) -> EllipticalGradient
+```
+
 #### Discussion
 
 The gradient maps its coordinate space to the unit space square in which its center and radii are defined, then stretches that square to fill its bounding rect, possibly also stretching the circular gradient to have elliptical contours.
@@ -32,13 +42,14 @@ ContentView()
     .background(.ellipticalGradient(.red.gradient))
 ```
 
-For information about how to use shape styles, see [`ShapeStyle`](shapestyle.md).
+For information about how to use shape styles, see [`ShapeStyle`](../shapestyle.md).
 
 ## See Also
 
-- [static func ellipticalGradient(colors: [Color], center: UnitPoint, startRadiusFraction: CGFloat, endRadiusFraction: CGFloat) -> EllipticalGradient](shapestyle/ellipticalgradient(colors:center:startradiusfraction:endradiusfraction:).md)
+### Elliptical gradients
+- [static func ellipticalGradient(colors: [Color], center: UnitPoint, startRadiusFraction: CGFloat, endRadiusFraction: CGFloat) -> EllipticalGradient](./ellipticalgradient%28colors,center,startradiusfraction,endradiusfraction%29.md)
   A radial gradient that draws an ellipse defined by a collection of colors.
-- [static func ellipticalGradient(stops: [Gradient.Stop], center: UnitPoint, startRadiusFraction: CGFloat, endRadiusFraction: CGFloat) -> EllipticalGradient](shapestyle/ellipticalgradient(stops:center:startradiusfraction:endradiusfraction:).md)
+- [static func ellipticalGradient(stops: [Gradient.Stop], center: UnitPoint, startRadiusFraction: CGFloat, endRadiusFraction: CGFloat) -> EllipticalGradient](./ellipticalgradient%28stops,center,startradiusfraction,endradiusfraction%29.md)
   A radial gradient that draws an ellipse defined by a collection of color stops.
 
 

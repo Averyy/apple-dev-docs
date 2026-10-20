@@ -1,7 +1,8 @@
 # deviceCapture
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The option to capture the device and terminate existing drivers.
 
@@ -15,9 +16,13 @@ The option to capture the device and terminate existing drivers.
 static var deviceCapture: IOUSBHostObjectInitOptions { get }
 ```
 
+```c
+IOUSBHostObjectInitOptionsDeviceCapture
+```
+
 #### Discussion
 
-Callers must have either the com.apple.vm.device-access entitlement and the [`IOUSBHostDevice`](iousbhostdevice.md) object from [`IOServiceAuthorize(_:_:)`](https://developer.apple.com/documentation/iokit/1514533-ioserviceauthorize) authorization, or have root privileges. Using this option terminates all clients and drivers of the [`IOUSBHostDevice`](iousbhostdevice.md) and associated [`IOUSBHostInterface`](https://developer.apple.com/documentation/kernel/iousbhostinterface) clients, as well as the caller. Upon [`destroy()`](iousbhostobject/destroy().md) of the [`IOUSBHostDevice`](iousbhostdevice.md), the device resets and [`IOUSBHostInterface`](https://developer.apple.com/documentation/kernel/iousbhostinterface) reregisters for [`IOKit`](https://developer.apple.com/documentation/iokit) matching.
+Callers must have either the com.apple.vm.device-access entitlement and the [`IOUSBHostDevice`](../iousbhostdevice.md) object from [`IOServiceAuthorize(_:_:)`](../../iokit/api-1514533-ioserviceauthorize.md) authorization, or have root privileges. Using this option terminates all clients and drivers of the [`IOUSBHostDevice`](../iousbhostdevice.md) and associated [`IOUSBHostInterface`](../../kernel/iousbhostinterface.md) clients, as well as the caller. Upon [`destroy()`](../iousbhostobject/destroy%28%29.md) of the [`IOUSBHostDevice`](../iousbhostdevice.md), the device resets and [`IOUSBHostInterface`](../../kernel/iousbhostinterface.md) reregisters for [IOKit](../../iokit/iokit.md) matching.
 
 
 ---

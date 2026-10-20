@@ -1,7 +1,8 @@
 # bindMemory(to:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Binds this buffer slice’s memory to the specified type and returns a typed buffer of the bound memory.
 
@@ -20,6 +21,8 @@ Binds this buffer slice’s memory to the specified type and returns a typed buf
 @discardableResult
 func bindMemory<T>(to type: T.Type) -> UnsafeBufferPointer<T> where T : ~Copyable
 ```
+
+Available when `Base` is `UnsafeRawBufferPointer`.
 
 #### Return Value
 

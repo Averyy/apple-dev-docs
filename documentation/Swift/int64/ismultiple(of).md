@@ -1,7 +1,8 @@
 # isMultiple(of:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `true` if this value is a multiple of the given value, and `false` otherwise.
 
@@ -19,6 +20,8 @@ Returns `true` if this value is a multiple of the given value, and `false` other
 ```swift
 func isMultiple(of other: Self) -> Bool
 ```
+
+Available when `Self` conforms to `FixedWidthInteger`.
 
 #### Discussion
 

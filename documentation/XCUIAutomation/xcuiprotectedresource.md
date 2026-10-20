@@ -1,7 +1,8 @@
 # XCUIProtectedResource
 
 **Framework**: XCUIAutomation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A system resource that requires user authorization to access.
 
@@ -21,69 +22,74 @@ A system resource that requires user authorization to access.
 enum XCUIProtectedResource
 ```
 
+```c
+enum XCUIProtectedResource : NSInteger;
+```
+
 ## Topics
 
 ### Protected resources
-- [XCUIProtectedResource.location](xcuiprotectedresource/location.md)
+- [XCUIProtectedResource.location](./xcuiprotectedresource/location.md)
   The protected resource case for Location Services.
-- [XCUIProtectedResource.userTracking](xcuiprotectedresource/usertracking.md)
+- [XCUIProtectedResource.userTracking](./xcuiprotectedresource/usertracking.md)
   The protected resource case for access to tracking data.
-- [XCUIProtectedResource.contacts](xcuiprotectedresource/contacts.md)
+- [XCUIProtectedResource.contacts](./xcuiprotectedresource/contacts.md)
   The protected resource case for access to Contacts.
-- [XCUIProtectedResource.calendar](xcuiprotectedresource/calendar.md)
+- [XCUIProtectedResource.calendar](./xcuiprotectedresource/calendar.md)
   The protected resource case for acces to Calendar data.
-- [XCUIProtectedResource.reminders](xcuiprotectedresource/reminders.md)
+- [XCUIProtectedResource.reminders](./xcuiprotectedresource/reminders.md)
   The protected resource case for access to Reminders data.
-- [XCUIProtectedResource.photos](xcuiprotectedresource/photos.md)
+- [XCUIProtectedResource.photos](./xcuiprotectedresource/photos.md)
   The protected resource case for access to Photos.
-- [XCUIProtectedResource.bluetooth](xcuiprotectedresource/bluetooth.md)
+- [XCUIProtectedResource.bluetooth](./xcuiprotectedresource/bluetooth.md)
   The protected resource case for Bluetooth utilization.
-- [XCUIProtectedResource.localNetwork](xcuiprotectedresource/localnetwork.md)
+- [XCUIProtectedResource.localNetwork](./xcuiprotectedresource/localnetwork.md)
   The protected resource case for finding and communicating with devices on the local network.
-- [XCUIProtectedResource.microphone](xcuiprotectedresource/microphone.md)
+- [XCUIProtectedResource.microphone](./xcuiprotectedresource/microphone.md)
   The protected resource case for access to the microphone.
-- [XCUIProtectedResource.camera](xcuiprotectedresource/camera.md)
+- [XCUIProtectedResource.camera](./xcuiprotectedresource/camera.md)
   The protected resource case for access to the camera.
-- [XCUIProtectedResource.health](xcuiprotectedresource/health.md)
+- [XCUIProtectedResource.health](./xcuiprotectedresource/health.md)
   The protected resource case for access to Health data.
-- [XCUIProtectedResource.homeKit](xcuiprotectedresource/homekit.md)
+- [XCUIProtectedResource.homeKit](./xcuiprotectedresource/homekit.md)
   The protected resource case for access to Home data.
-- [XCUIProtectedResource.mediaLibrary](xcuiprotectedresource/medialibrary.md)
+- [XCUIProtectedResource.mediaLibrary](./xcuiprotectedresource/medialibrary.md)
   The protected resource case for access to the media library.
-- [XCUIProtectedResource.keyboardNetwork](xcuiprotectedresource/keyboardnetwork.md)
+- [XCUIProtectedResource.keyboardNetwork](./xcuiprotectedresource/keyboardnetwork.md)
   The protected resource case for access to the keyboard network.
-- [XCUIProtectedResource.systemRootDirectory](xcuiprotectedresource/systemrootdirectory.md)
+- [XCUIProtectedResource.systemRootDirectory](./xcuiprotectedresource/systemrootdirectory.md)
   The protected resource case for access to the system root directory.
-- [XCUIProtectedResource.userDesktopDirectory](xcuiprotectedresource/userdesktopdirectory.md)
+- [XCUIProtectedResource.userDesktopDirectory](./xcuiprotectedresource/userdesktopdirectory.md)
   The protected resource case for access to the Desktop directory.
-- [XCUIProtectedResource.userDocumentsDirectory](xcuiprotectedresource/userdocumentsdirectory.md)
+- [XCUIProtectedResource.userDocumentsDirectory](./xcuiprotectedresource/userdocumentsdirectory.md)
   The protected resource case for access to the Documents directory.
-- [XCUIProtectedResource.userDownloadsDirectory](xcuiprotectedresource/userdownloadsdirectory.md)
+- [XCUIProtectedResource.userDownloadsDirectory](./xcuiprotectedresource/userdownloadsdirectory.md)
   The protected resource case for access to the Downloads directory.
-- [XCUIProtectedResource.focus](xcuiprotectedresource/focus.md)
+- [XCUIProtectedResource.focus](./xcuiprotectedresource/focus.md)
   The protected resource case to see and share Focus status.
-- [XCUIProtectedResource.removableVolumes](xcuiprotectedresource/removablevolumes.md)
+- [XCUIProtectedResource.removableVolumes](./xcuiprotectedresource/removablevolumes.md)
   The protected resource case for access to removable volumes.
-- [XCUIProtectedResource.networkVolumes](xcuiprotectedresource/networkvolumes.md)
+- [XCUIProtectedResource.networkVolumes](./xcuiprotectedresource/networkvolumes.md)
   The protected resource case for access to network volumes.
-- [XCUIProtectedResource.appleEvents](xcuiprotectedresource/appleevents.md)
+- [XCUIProtectedResource.appleEvents](./xcuiprotectedresource/appleevents.md)
   The protected resource case for the use of Apple Events.
 ### Initializers
-- [init?(rawValue: Int)](xcuiprotectedresource/init(rawvalue:).md)
+- [init?(rawValue: Int)](./xcuiprotectedresource/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func resetAuthorizationStatus(for: XCUIProtectedResource)](xcuiapplication/resetauthorizationstatus(for:).md)
+### Resetting authorization status
+- [func resetAuthorizationStatus(for: XCUIProtectedResource)](./xcuiapplication/resetauthorizationstatus%28for%29.md)
   Resets the authorization status for a protected resource.
 
 

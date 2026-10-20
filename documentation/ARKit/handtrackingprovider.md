@@ -1,7 +1,8 @@
 # HandTrackingProvider
 
 **Framework**: ARKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A source of live data about the position of a person’s hands and hand joints.
 
@@ -17,44 +18,45 @@ final class HandTrackingProvider
 ## Topics
 
 ### Creating a hand-tracking provider
-- [init()](handtrackingprovider/init.md)
+- [init()](./handtrackingprovider/init%28%29.md)
   Creates a hand-tracking provider.
-- [static var isSupported: Bool](handtrackingprovider/issupported.md)
+- [static var isSupported: Bool](./handtrackingprovider/issupported.md)
   A Boolean value that indicates whether the current runtime environment supports hand-tracking providers.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](handtrackingprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./handtrackingprovider/requiredauthorizations.md)
   The types of authorizations necessary for tracking hands.
 ### Observing hand anchor data
-- [var anchorUpdates: AnchorUpdateSequence<HandAnchor>](handtrackingprovider/anchorupdates.md)
+- [var anchorUpdates: AnchorUpdateSequence<HandAnchor>](./handtrackingprovider/anchorupdates.md)
   A sequence of updates for all hands that a provider tracks.
-- [var latestAnchors: (leftHand: HandAnchor?, rightHand: HandAnchor?)](handtrackingprovider/latestanchors.md)
+- [var latestAnchors: (leftHand: HandAnchor?, rightHand: HandAnchor?)](./handtrackingprovider/latestanchors.md)
   The most recent hand anchors for each hand.
 ### Inspecting a hand-tracking provider
-- [var state: DataProviderState](handtrackingprovider/state.md)
+- [var state: DataProviderState](./handtrackingprovider/state.md)
   The current status of data coming from a provider.
-- [var description: String](handtrackingprovider/description.md)
+- [var description: String](./handtrackingprovider/description.md)
   A textual representation of this hand tracking provider.
-- [func handAnchors(at: TimeInterval) -> (leftHand: HandAnchor?, rightHand: HandAnchor?)](handtrackingprovider/handanchors(at:).md)
+- [func handAnchors(at: TimeInterval) -> (leftHand: HandAnchor?, rightHand: HandAnchor?)](./handtrackingprovider/handanchors%28at%29.md)
   Queries for hand anchors at the provided target timestamp.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataProvider](dataprovider.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DataProvider](./dataprovider.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Happy Beam](../visionos/happybeam.md)
+### Hand tracking
+- [Happy Beam](../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Creating a 3D painting space](../visionos/creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](../visionOS/creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Tracking and visualizing hand movement](../visionos/tracking-and-visualizing-hand-movement.md)
+- [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
-- [struct HandAnchor](handanchor.md)
+- [struct HandAnchor](./handanchor.md)
   A hand’s position in a person’s surroundings.
-- [struct HandSkeleton](handskeleton.md)
+- [struct HandSkeleton](./handskeleton.md)
   A collection of joints in a hand.
 
 

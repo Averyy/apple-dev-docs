@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOACPIBusNumberRange](1638134-anonymous/kioacpibusnumberrange.md)
-- [kIOACPIIORange](1638134-anonymous/kioacpiiorange.md)
-- [kIOACPIMemoryRange](1638134-anonymous/kioacpimemoryrange.md)
+- [kIOACPIBusNumberRange](./api-1638134-anonymous/kioacpibusnumberrange.md)
+- [kIOACPIIORange](./api-1638134-anonymous/kioacpiiorange.md)
+- [kIOACPIMemoryRange](./api-1638134-anonymous/kioacpimemoryrange.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Accessibility  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a layout change notification.
 

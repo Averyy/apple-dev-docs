@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Informs your app that the system has received an NFC-related event.
@@ -24,7 +25,8 @@ func windowScene(_ windowScene: UIWindowScene, didReceiveNFCWindowSceneEvent eve
 
 ## See Also
 
-- [enum NFCWindowSceneEvent](nfcwindowsceneevent.md)
+### Handling events
+- [enum NFCWindowSceneEvent](../nfcwindowsceneevent.md)
   An NFC-related event that your app uses to update its user interface.
 
 

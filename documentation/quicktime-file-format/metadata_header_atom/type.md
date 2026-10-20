@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit unsigned integer value.
 
@@ -11,13 +12,14 @@ Set to `'mdhr'`.
 
 ## See Also
 
-- [Size](metadata_header_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Version](metadata_header_atom/version.md)
+- [Version](./version.md)
   One byte.
-- [Flags](metadata_header_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes.
-- [nextItemID](metadata_header_atom/nextitemid.md)
+- [nextItemID](./nextitemid.md)
   A 32-bit unsigned integer indicating the value to use for the item ID of the next item created or assigned an item ID.
 
 

@@ -1,7 +1,8 @@
 # tableView(_:itemsForAddingTo:at:point:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified items to an existing drag session.
 
@@ -17,15 +18,19 @@ Adds the specified items to an existing drag session.
 optional func tableView(_ tableView: UITableView, itemsForAddingTo session: any UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem]
 ```
 
+```objc
+- (NSArray<UIDragItem *> *) tableView:(UITableView *) tableView itemsForAddingToDragSession:(id<UIDragSession>) session atIndexPath:(NSIndexPath *) indexPath point:(CGPoint) point;
+```
+
 #### Return Value
 
-An array of [`UIDragItem`](uidragitem.md) objects representing the contents of the specified row. Return an empty array if you do not want the user to add the row to the drag session.
+An array of [`UIDragItem`](../uidragitem.md) objects representing the contents of the specified row. Return an empty array if you do not want the user to add the row to the drag session.
 
 #### Discussion
 
 Implement this method to allow the user to add items to an active drag session. When a drag session is active and the user taps a row, the table view calls this method. Your implementation should return the drag items to add to the drag operation. If you don’t implement this method, additional touches in the table view are handled as normal table view interactions. For example, additional taps cause rows to be selected or deselected.
 
-In your implementation, create one or more [`UIDragItem`](uidragitem.md) objects representing the contents at the specified index path. Normally, you return only one drag item, but you may return more than one item if the specified row represents a container for other content.
+In your implementation, create one or more [`UIDragItem`](../uidragitem.md) objects representing the contents at the specified index path. Normally, you return only one drag item, but you may return more than one item if the specified row represents a container for other content.
 
 ## Parameters
 
@@ -36,7 +41,8 @@ In your implementation, create one or more [`UIDragItem`](uidragitem.md) objects
 
 ## See Also
 
-- [func tableView(UITableView, itemsForBeginning: any UIDragSession, at: IndexPath) -> [UIDragItem]](uitableviewdragdelegate/tableview(_:itemsforbeginning:at:).md)
+### Providing the items to drag
+- [func tableView(UITableView, itemsForBeginning: any UIDragSession, at: IndexPath) -> [UIDragItem]](./tableview%28_,itemsforbeginning,at%29.md)
   Provides the initial set of items (if any) to drag.
 
 

@@ -1,9 +1,10 @@
 # TabViewCustomization.SectionCustomization
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The customizations a user has made to a [`TabSection`](tabsection.md).
+The customizations a user has made to a [`TabSection`](../tabsection.md).
 
 **Availability**:
 - iOS 18.4+
@@ -21,10 +22,10 @@ struct SectionCustomization
 ## Topics
 
 ### Instance Properties
-- [var tabOrder: [String]?](tabviewcustomization/sectioncustomization/taborder.md)
+- [var tabOrder: [String]?](./sectioncustomization/taborder.md)
   The order customization for the tabs in a section, identified by customization identifier.
 ### Instance Methods
-- [func resetTabOrder()](tabviewcustomization/sectioncustomization/resettaborder.md)
+- [func resetTabOrder()](./sectioncustomization/resettaborder%28%29.md)
   Resets the order of the tabs in the section back to the default.
 
 

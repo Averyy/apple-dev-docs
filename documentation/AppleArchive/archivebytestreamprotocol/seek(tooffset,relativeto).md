@@ -2,6 +2,7 @@
 
 **Framework**: Apple Archive  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Updates the internal stream position to the specified offset relative to the specified origin.
@@ -12,7 +13,7 @@ Updates the internal stream position to the specified offset relative to the spe
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -32,9 +33,10 @@ The new internal stream position that is relative to the beginning of the stream
 
 ## See Also
 
-- [func cancel()](archivebytestreamprotocol/cancel.md)
+### Using Archive Byte Streams
+- [func cancel()](./cancel%28%29.md)
   Cancels stream operations.
-- [func close() throws](archivebytestreamprotocol/close.md)
+- [func close() throws](./close%28%29.md)
   Closes the stream and releases associated resources.
 
 

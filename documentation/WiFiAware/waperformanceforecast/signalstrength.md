@@ -1,7 +1,8 @@
 # signalStrength
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimated signal strength of the remote device.
 

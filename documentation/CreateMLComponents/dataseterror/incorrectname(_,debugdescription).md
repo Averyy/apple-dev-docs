@@ -1,7 +1,8 @@
 # DatasetError.incorrectName(_:debugDescription:)
 
 **Framework**: Create ML Components  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that a resource has incorrect name format.
 
@@ -22,11 +23,12 @@ case incorrectName(URL, debugDescription: String)
 
 ## See Also
 
-- [case incompatibleDataFormat(URL, debugDescription: String)](dataseterror/incompatibledataformat(_:debugdescription:).md)
+### Analyzing the error
+- [case incompatibleDataFormat(URL, debugDescription: String)](./incompatibledataformat%28_,debugdescription%29.md)
   An error that indicates that a resource doesn’t have the expected data format.
-- [DatasetError.missingResource(_:)](dataseterror/missingresource(_:).md)
+- [DatasetError.missingResource(_:)](./missingresource%28_%29.md)
   An error that indicates that a resource is missing.
-- [DatasetError.unreadableResource(_:)](dataseterror/unreadableresource(_:).md)
+- [DatasetError.unreadableResource(_:)](./unreadableresource%28_%29.md)
   An error that indicates that a resource is unreadable.
 
 

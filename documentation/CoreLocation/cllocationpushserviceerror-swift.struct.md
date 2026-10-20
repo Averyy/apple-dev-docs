@@ -1,7 +1,8 @@
 # CLLocationPushServiceError
 
 **Framework**: Core Location  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Error codes the location manager returns if starting to monitor for location push notifications fails.
 
@@ -18,40 +19,41 @@ struct CLLocationPushServiceError
 ## Topics
 
 ### Getting the error code
-- [static var unknown: CLLocationPushServiceError.Code](cllocationpushserviceerror-swift.struct/unknown.md)
+- [static var unknown: CLLocationPushServiceError.Code](./cllocationpushserviceerror-swift.struct/unknown.md)
   An error code that indicates the app was unable to start the location push service for an unknown reason.
-- [static var missingPushExtension: CLLocationPushServiceError.Code](cllocationpushserviceerror-swift.struct/missingpushextension.md)
+- [static var missingPushExtension: CLLocationPushServiceError.Code](./cllocationpushserviceerror-swift.struct/missingpushextension.md)
   An error code that indicates the app is missing a Location Push Service Extension.
-- [static var missingPushServerEnvironment: CLLocationPushServiceError.Code](cllocationpushserviceerror-swift.struct/missingpushserverenvironment.md)
+- [static var missingPushServerEnvironment: CLLocationPushServiceError.Code](./cllocationpushserviceerror-swift.struct/missingpushserverenvironment.md)
   An error code that indicates the app is missing an Apple Push Notification service (APNs) environment entitlement.
-- [static var missingEntitlement: CLLocationPushServiceError.Code](cllocationpushserviceerror-swift.struct/missingentitlement.md)
+- [static var missingEntitlement: CLLocationPushServiceError.Code](./cllocationpushserviceerror-swift.struct/missingentitlement.md)
   An error code that indicates the app is missing the entitlement it needs to use the location push service.
-- [static var unsupportedPlatform: CLLocationPushServiceError.Code](cllocationpushserviceerror-swift.struct/unsupportedplatform.md)
+- [static var unsupportedPlatform: CLLocationPushServiceError.Code](./cllocationpushserviceerror-swift.struct/unsupportedplatform.md)
   An error code that indicates the location push service isn’t available on this platform.
-- [CLLocationPushServiceError.Code](cllocationpushserviceerror-swift.struct/code.md)
+- [CLLocationPushServiceError.Code](./cllocationpushserviceerror-swift.struct/code.md)
   Error codes the location manager returns if starting to monitor for location push notifications fails.
 ### Getting the error details
-- [static var errorDomain: String](cllocationpushserviceerror-swift.struct/errordomain.md)
+- [static var errorDomain: String](./cllocationpushserviceerror-swift.struct/errordomain.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Location Push Service Extension](../bundleresources/entitlements/com.apple.developer.location.push.md)
+### Location push service extension
+- [Location Push Service Extension](../BundleResources/entitlements/com.apple.developer.location.push.md)
   An entitlement to enable a location-sharing app to query someone’s location in response to a push notification.
-- [protocol CLLocationPushServiceExtension](cllocationpushserviceextension.md)
+- [protocol CLLocationPushServiceExtension](./cllocationpushserviceextension.md)
   The interface you adopt in the type that acts as the main entry point for a Location Push Service Extension.
-- [let CLLocationPushServiceErrorDomain: String](cllocationpushserviceerrordomain.md)
+- [let CLLocationPushServiceErrorDomain: String](./cllocationpushserviceerrordomain.md)
   The domain for Location Push Service Extension errors.
-- [CLLocationPushServiceError.Code](cllocationpushserviceerror-swift.struct/code.md)
+- [CLLocationPushServiceError.Code](./cllocationpushserviceerror-swift.struct/code.md)
   Error codes the location manager returns if starting to monitor for location push notifications fails.
 
 

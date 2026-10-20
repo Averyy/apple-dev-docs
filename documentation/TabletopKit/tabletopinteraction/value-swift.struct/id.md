@@ -1,7 +1,8 @@
 # id
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Identifier to recognize different interactions from one another
 
@@ -16,7 +17,8 @@ var id: TabletopInteraction.Value.ID { get }
 
 ## See Also
 
-- [var playerID: PlayerIdentifier](tabletopinteraction/value-swift.struct/playerid.md)
+### Getting identifiers
+- [var playerID: PlayerIdentifier](./playerid.md)
   The player who is performing the interaction
 
 

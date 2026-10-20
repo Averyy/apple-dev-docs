@@ -1,7 +1,8 @@
 # kSecCodeAttributeSubarchitecture
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string indicating a specific processor type, such as `i686` or `core2`.
 
@@ -13,6 +14,10 @@ A key whose value is a string indicating a specific processor type, such as `i68
 
 ```swift
 let kSecCodeAttributeSubarchitecture: CFString
+```
+
+```c
+extern CFStringRef const kSecCodeAttributeSubarchitecture;
 ```
 
 

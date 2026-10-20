@@ -1,7 +1,8 @@
 # numberOfIndexes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of index values the control provides.
 
@@ -18,9 +19,14 @@ The number of index values the control provides.
 var numberOfIndexes: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSInteger numberOfIndexes;
+```
+
 ## See Also
 
-- [var selectedIndex: Int](avcaptureindexpicker/selectedindex.md)
+### Accessing the control value
+- [var selectedIndex: Int](./selectedindex.md)
   The currently selected index.
 
 

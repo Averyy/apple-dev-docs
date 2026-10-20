@@ -1,7 +1,8 @@
 # init(frame:primaryAction:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a control with the specified frame and primary action.
 
@@ -18,11 +19,16 @@ Creates a control with the specified frame and primary action.
 convenience init(frame: CGRect, primaryAction: UIAction?)
 ```
 
+```objc
+- (instancetype) initWithFrame:(CGRect) frame primaryAction:(UIAction *) primaryAction;
+```
+
 ## See Also
 
-- [init(frame: CGRect)](uicontrol/init(frame:).md)
+### Creating a control
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates a control with the specified frame.
-- [init?(coder: NSCoder)](uicontrol/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a control from data in an unarchiver.
 
 

@@ -1,13 +1,14 @@
 # AUAppleCustomViewLoader
 
 **Framework**: CoreAudioKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,25 +20,26 @@ class AUAppleCustomViewLoader
 ## Topics
 
 ### Initializers
-- [init()](auapplecustomviewloader/init.md)
+- [init()](./auapplecustomviewloader/init%28%29.md)
 ### Instance Methods
-- [func customViewController(for: AudioComponentDescription, audioUnit: AudioUnit, v3AU: AUAudioUnit?) -> UIViewController?](auapplecustomviewloader/customviewcontroller(for:audiounit:v3au:).md)
+- [func customViewController(for: AudioComponentDescription, audioUnit: AudioUnit, v3AU: AUAudioUnit?) -> UIViewController?](./auapplecustomviewloader/customviewcontroller%28for,audiounit,v3au%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AUGenericViewController](augenericviewcontroller.md)
+### Classes
+- [class AUGenericViewController](./augenericviewcontroller.md)
 
 
 ---

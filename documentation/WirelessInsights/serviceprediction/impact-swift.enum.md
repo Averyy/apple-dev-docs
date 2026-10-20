@@ -1,7 +1,8 @@
 # ServicePrediction.Impact
 
 **Framework**: WirelessInsights  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of levels of impact for a predicted event.
 
@@ -18,27 +19,28 @@ enum Impact
 ## Topics
 
 ### Working with impact values
-- [ServicePrediction.Impact.high](serviceprediction/impact-swift.enum/high.md)
+- [ServicePrediction.Impact.high](./impact-swift.enum/high.md)
   An impact level for severe interruption, including substantially lowered throughput and the potential to lose data capability.
-- [ServicePrediction.Impact.medium](serviceprediction/impact-swift.enum/medium.md)
+- [ServicePrediction.Impact.medium](./impact-swift.enum/medium.md)
   An impact level for moderately lower throughput and service interruption.
-- [ServicePrediction.Impact.low](serviceprediction/impact-swift.enum/low.md)
+- [ServicePrediction.Impact.low](./impact-swift.enum/low.md)
   An impact level for slightly lower throughput and possibly some service interruption.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../../Swift/comparable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let impact: ServicePrediction.Impact](serviceprediction/impact-swift.property.md)
+### Accessing prediction impact
+- [let impact: ServicePrediction.Impact](./impact-swift.property.md)
   The expected impact of the predicted event.
 
 

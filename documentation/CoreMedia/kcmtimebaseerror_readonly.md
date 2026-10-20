@@ -1,18 +1,19 @@
 # kCMTimebaseError_ReadOnly
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A timebase error that indicates the system attempts to modify a read-only timebase.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A timebase error that indicates the system attempts to modify a read-only timeba
 var kCMTimebaseError_ReadOnly: OSStatus { get }
 ```
 
+```c
+kCMTimebaseError_ReadOnly
+```
+
 ## See Also
 
-- [var kCMTimebaseError_MissingRequiredParameter: OSStatus](kcmtimebaseerror_missingrequiredparameter.md)
+### Timebase Errors
+- [var kCMTimebaseError_MissingRequiredParameter: OSStatus](./kcmtimebaseerror_missingrequiredparameter.md)
   A timebase error that indicates a parameter is missing.
-- [var kCMTimebaseError_InvalidParameter: OSStatus](kcmtimebaseerror_invalidparameter.md)
+- [var kCMTimebaseError_InvalidParameter: OSStatus](./kcmtimebaseerror_invalidparameter.md)
   A timebase error that indicates a parameter isn’t valid.
-- [var kCMTimebaseError_AllocationFailed: OSStatus](kcmtimebaseerror_allocationfailed.md)
+- [var kCMTimebaseError_AllocationFailed: OSStatus](./kcmtimebaseerror_allocationfailed.md)
   A timebase error that indicates the memory allocation fails.
-- [var kCMTimebaseError_TimerIntervalTooShort: OSStatus](kcmtimebaseerror_timerintervaltooshort.md)
+- [var kCMTimebaseError_TimerIntervalTooShort: OSStatus](./kcmtimebaseerror_timerintervaltooshort.md)
   A timebase error that indicates the time interval is too short.
 
 

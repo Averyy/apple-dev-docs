@@ -1,7 +1,8 @@
 # kVTPixelRotationPropertyKey_FlipHorizontalOrientation
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that specifies a horizontal flip.
 
@@ -19,17 +20,22 @@ A key that specifies a horizontal flip.
 let kVTPixelRotationPropertyKey_FlipHorizontalOrientation: CFString
 ```
 
+```c
+extern CFStringRef const kVTPixelRotationPropertyKey_FlipHorizontalOrientation;
+```
+
 #### Discussion
 
-Pass a value of [`true`](https://developer.apple.com/documentation/swift/true) to apply a horizontal flip after rotation.
+Pass a value of [`true`](../Swift/true.md) to apply a horizontal flip after rotation.
 
-The default is [`false`](https://developer.apple.com/documentation/swift/false).
+The default is [`false`](../Swift/false.md).
 
 ## See Also
 
-- [let kVTPixelRotationPropertyKey_Rotation: CFString](kvtpixelrotationpropertykey_rotation.md)
+### Configuration
+- [let kVTPixelRotationPropertyKey_Rotation: CFString](./kvtpixelrotationpropertykey_rotation.md)
   A key that specifies the amount of rotation in degrees.
-- [let kVTPixelRotationPropertyKey_FlipVerticalOrientation: CFString](kvtpixelrotationpropertykey_flipverticalorientation.md)
+- [let kVTPixelRotationPropertyKey_FlipVerticalOrientation: CFString](./kvtpixelrotationpropertykey_flipverticalorientation.md)
   A key that specifies a vertical flip.
 
 

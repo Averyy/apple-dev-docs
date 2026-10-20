@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw data value of the MAC Address.
 
@@ -18,7 +19,8 @@ let data: Data
 
 ## See Also
 
-- [init?(Data)](wimacaddress/init(_:)-6044i.md)
+### Working with MAC Addresses as data
+- [init?(Data)](./init%28_%29-6044i.md)
   Create a MAC Address from the provided data.
 
 

@@ -1,7 +1,8 @@
 # currentLocaleDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about a change in current locale.
 
@@ -20,9 +21,11 @@ An identifier for a message about a change in current locale.
 static var currentLocaleDidChange: NotificationCenter.BaseMessageIdentifier<Locale.CurrentLocaleDidChangeMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<Locale.CurrentLocaleDidChangeMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Locale.CurrentLocaleDidChangeMessage`](locale/currentlocaledidchangemessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Locale.CurrentLocaleDidChangeMessage`](../../locale/currentlocaledidchangemessage.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # AssignedDocumentLabel
 
 **Framework**: ClassKit UI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that displays the status or date information of the assigned document.
 
@@ -39,18 +40,18 @@ VStack(alignment: .leading) {
 ## Topics
 
 ### Structures
-- [AssignedDocumentLabel.Role](assigneddocumentlabel/role.md)
+- [AssignedDocumentLabel.Role](./assigneddocumentlabel/role.md)
   The type of assignment information to display.
 ### Initializers
-- [init(role: AssignedDocumentLabel.Role, documentURL: URL)](assigneddocumentlabel/init(role:documenturl:).md)
+- [init(role: AssignedDocumentLabel.Role, documentURL: URL)](./assigneddocumentlabel/init%28role,documenturl%29.md)
   Creates a label that displays information about the assigned document.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 
 ---

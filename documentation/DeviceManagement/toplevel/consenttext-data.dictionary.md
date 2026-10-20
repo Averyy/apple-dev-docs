@@ -1,7 +1,8 @@
 # TopLevel.ConsentText
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The dictionary of consent agreements per language.
 
@@ -16,14 +17,14 @@ The dictionary of consent agreements per language.
 
 ## Declaration
 
-```swift
+```
 object TopLevel.ConsentText
 ```
 
 ## Topics
 
 ### Objects
-- [object TopLevel.ConsentText.ConsentTextItem](toplevel/consenttext-data.dictionary/consenttextitem-data.dictionary.md)
+- [object TopLevel.ConsentText.ConsentTextItem](./consenttext-data.dictionary/consenttextitem-data.dictionary.md)
   A specific pairing of language code and consent text.
 
 ## Properties
@@ -32,7 +33,8 @@ object TopLevel.ConsentText
 
 ## See Also
 
-- [object TopLevel.PayloadContentItem](toplevel/payloadcontentitem.md)
+### Objects
+- [object TopLevel.PayloadContentItem](./payloadcontentitem.md)
   The payload-specific content for this profile.
 
 

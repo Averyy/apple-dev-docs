@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Virtio graphics device.
 
@@ -12,6 +13,10 @@ Creates a new Virtio graphics device.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

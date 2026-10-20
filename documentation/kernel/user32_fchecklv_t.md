@@ -1,14 +1,15 @@
 # user32_fchecklv_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 typedef struct user32_fchecklv {
     ...
 } user32_fchecklv_t;
@@ -17,9 +18,9 @@ typedef struct user32_fchecklv {
 ## Topics
 
 ### Instance Properties
-- [lv_error_message](user32_fchecklv_t/1690973-lv_error_message.md)
-- [lv_error_message_size](user32_fchecklv_t/1690976-lv_error_message_size.md)
-- [lv_file_start](user32_fchecklv_t/1690972-lv_file_start.md)
+- [lv_error_message](./user32_fchecklv_t/api-1690973-lv_error_message.md)
+- [lv_error_message_size](./user32_fchecklv_t/api-1690976-lv_error_message_size.md)
+- [lv_file_start](./user32_fchecklv_t/api-1690972-lv_file_start.md)
 
 
 ---

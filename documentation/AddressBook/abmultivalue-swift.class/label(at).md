@@ -1,17 +1,22 @@
 # label(at:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the label for the given index.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func label(at index: Int) -> String!
+```
+
+```objc
+- (NSString *) labelAtIndex:(NSUInteger) index;
 ```
 
 #### Discussion
@@ -24,11 +29,12 @@ If the `index` argument is out of bounds, this method raises an exception.
 
 ## See Also
 
-- [func value(at: Int) -> Any!](abmultivalue-swift.class/value(at:).md)
+### Accessing entries
+- [func value(at: Int) -> Any!](./value%28at%29.md)
   Returns the value for the given index.
-- [func value(forIdentifier: String!) -> Any!](abmultivalue-swift.class/value(foridentifier:).md)
+- [func value(forIdentifier: String!) -> Any!](./value%28foridentifier%29.md)
   Returns the value for the given identifier.
-- [func label(forIdentifier: String!) -> Any!](abmultivalue-swift.class/label(foridentifier:).md)
+- [func label(forIdentifier: String!) -> Any!](./label%28foridentifier%29.md)
   Returns the label for the given identifier.
 
 

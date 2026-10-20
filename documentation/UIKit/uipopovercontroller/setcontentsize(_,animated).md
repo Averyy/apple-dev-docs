@@ -1,20 +1,27 @@
 # setContentSize(_:animated:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the size of the popover’s content view.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
+
+> **Deprecated**: For more information, see [`UIPopoverController`](../uipopovercontroller.md).
 
 ## Declaration
 
 ```swift
 func setContentSize(_ size: CGSize, animated: Bool)
+```
+
+```objc
+- (void) setPopoverContentSize:(CGSize) size animated:(BOOL) animated;
 ```
 
 #### Discussion
@@ -24,17 +31,18 @@ When changing the size of the popover’s content, the width value you specify m
 ## Parameters
 
 - `size`: The new size to apply to the content view.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if you want the change in size to be animated or [`false`](https://developer.apple.com/documentation/swift/false) if you want the change to appear immediately.
+- `animated`: Specify [`true`](../../Swift/true.md) if you want the change in size to be animated or [`false`](../../Swift/false.md) if you want the change to appear immediately.
 
 ## See Also
 
-- [var contentViewController: UIViewController](uipopovercontroller/contentviewcontroller.md)
+### Configuring the popover content
+- [var contentViewController: UIViewController](./contentviewcontroller.md)
   The view controller responsible for the content portion of the popover.
-- [func setContentView(UIViewController, animated: Bool)](uipopovercontroller/setcontentview(_:animated:).md)
+- [func setContentView(UIViewController, animated: Bool)](./setcontentview%28_,animated%29.md)
   Sets the view controller responsible for the content portion of the popover.
-- [var contentSize: CGSize](uipopovercontroller/contentsize.md)
+- [var contentSize: CGSize](./contentsize.md)
   The size of the popover’s content view.
-- [var passthroughViews: [UIView]?](uipopovercontroller/passthroughviews.md)
+- [var passthroughViews: [UIView]?](./passthroughviews.md)
   An array of views that the user can interact with while the popover is visible.
 
 

@@ -1,7 +1,8 @@
 # unlock()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Relinquishes a previously acquired transaction lock.
 
@@ -19,9 +20,14 @@ Relinquishes a previously acquired transaction lock.
 class func unlock()
 ```
 
+```objc
++ (void) unlock;
+```
+
 ## See Also
 
-- [class func lock()](catransaction/lock.md)
+### Managing Concurrency
+- [class func lock()](./lock%28%29.md)
   Attempts to acquire a recursive spin-lock lock, ensuring that returned layer values are valid until unlocked.
 
 

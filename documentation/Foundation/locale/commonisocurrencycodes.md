@@ -1,7 +1,8 @@
 # commonISOCurrencyCodes
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A list of common currency codes.
 
@@ -22,13 +23,14 @@ static var commonISOCurrencyCodes: [String] { get }
 
 ## See Also
 
-- [static var availableIdentifiers: [String]](locale/availableidentifiers.md)
+### Getting known identifiers and codes
+- [static var availableIdentifiers: [String]](./availableidentifiers.md)
   A list of available identifiers.
-- [static var isoRegionCodes: [String]](locale/isoregioncodes.md)
+- [static var isoRegionCodes: [String]](./isoregioncodes.md)
   A list of available region codes.
-- [static var isoLanguageCodes: [String]](locale/isolanguagecodes.md)
+- [static var isoLanguageCodes: [String]](./isolanguagecodes.md)
   A list of available language codes.
-- [static var isoCurrencyCodes: [String]](locale/isocurrencycodes.md)
+- [static var isoCurrencyCodes: [String]](./isocurrencycodes.md)
   A list of available currency codes.
 
 

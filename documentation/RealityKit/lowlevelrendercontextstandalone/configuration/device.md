@@ -1,7 +1,8 @@
 # device
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Metal device to use for all rendering operations.
 
@@ -19,7 +20,8 @@ var device: any MTLDevice { get set }
 
 ## See Also
 
-- [var memoryOwner: task_id_token_t?](lowlevelrendercontextstandalone/configuration/memoryowner.md)
+### Configuring the renderer
+- [var memoryOwner: task_id_token_t?](./memoryowner.md)
   An optional task identity token used to associate GPU memory allocations with a specific process for memory accounting purposes.
 
 

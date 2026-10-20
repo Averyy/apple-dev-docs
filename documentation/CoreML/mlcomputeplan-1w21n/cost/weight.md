@@ -1,7 +1,8 @@
 # weight
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The estimated workload of executing the operation over the total model evaluation. The value is between [0.0, 1.0].
 
@@ -22,7 +23,7 @@ let weight: Double
 
 ## Mentions
 
-- [Analyzing a Core ML model’s performance in Xcode](analyzing-a-core-ml-model-s-performance-in-xcode.md)
+- [Analyzing a Core ML model’s performance in Xcode](../../analyzing-a-core-ml-model-s-performance-in-xcode.md)
 
 
 ---

@@ -1,12 +1,15 @@
 # windowScriptObject
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s window object from the scripting environment.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
+
+> **Deprecated**: No longer supported; please adopt WKWebView.
 
 ## Declaration
 
@@ -14,9 +17,14 @@ The receiver’s window object from the scripting environment.
 var windowScriptObject: WebScriptObject! { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) WebScriptObject * windowScriptObject;
+```
+
 ## See Also
 
-- [var objectForWebScript: Any!](../objectivec/nsobject-swift.class/objectforwebscript.md)
+### Related Documentation
+- [var objectForWebScript: Any!](../../ObjectiveC/nsobject-swift.class/objectforwebscript.md)
   Returns an object that exposes the plug-in’s scripting interface.
 
 

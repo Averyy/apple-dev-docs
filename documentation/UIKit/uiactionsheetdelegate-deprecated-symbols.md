@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,17 +12,17 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated methods
-- [func actionSheet(UIActionSheet, clickedButtonAt: Int)](uiactionsheetdelegate/actionsheet(_:clickedbuttonat:).md)
+- [func actionSheet(UIActionSheet, clickedButtonAt: Int)](./uiactionsheetdelegate/actionsheet%28_,clickedbuttonat%29.md)
   Sent to the delegate when the user clicks a button on an action sheet.
-- [func willPresent(UIActionSheet)](uiactionsheetdelegate/willpresent(_:).md)
+- [func willPresent(UIActionSheet)](./uiactionsheetdelegate/willpresent%28_%29.md)
   Sent to the delegate before an action sheet is presented to the user.
-- [func didPresent(UIActionSheet)](uiactionsheetdelegate/didpresent(_:).md)
+- [func didPresent(UIActionSheet)](./uiactionsheetdelegate/didpresent%28_%29.md)
   Sent to the delegate after an action sheet is presented to the user.
-- [func actionSheet(UIActionSheet, willDismissWithButtonIndex: Int)](uiactionsheetdelegate/actionsheet(_:willdismisswithbuttonindex:).md)
+- [func actionSheet(UIActionSheet, willDismissWithButtonIndex: Int)](./uiactionsheetdelegate/actionsheet%28_,willdismisswithbuttonindex%29.md)
   Sent to the delegate before an action sheet is dismissed.
-- [func actionSheet(UIActionSheet, didDismissWithButtonIndex: Int)](uiactionsheetdelegate/actionsheet(_:diddismisswithbuttonindex:).md)
+- [func actionSheet(UIActionSheet, didDismissWithButtonIndex: Int)](./uiactionsheetdelegate/actionsheet%28_,diddismisswithbuttonindex%29.md)
   Sent to the delegate after an action sheet is dismissed from the screen.
-- [func actionSheetCancel(UIActionSheet)](uiactionsheetdelegate/actionsheetcancel(_:).md)
+- [func actionSheetCancel(UIActionSheet)](./uiactionsheetdelegate/actionsheetcancel%28_%29.md)
   Sent to the delegate before an action sheet is canceled.
 
 

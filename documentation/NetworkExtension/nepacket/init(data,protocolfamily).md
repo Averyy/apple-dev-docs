@@ -1,7 +1,8 @@
 # init(data:protocolFamily:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(data: Data, protocolFamily: sa_family_t)
+```
+
+```objc
+- (instancetype) initWithData:(NSData *) data protocolFamily:(sa_family_t) protocolFamily;
 ```
 
 

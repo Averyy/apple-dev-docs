@@ -1,7 +1,8 @@
 # encodingQuality
 
 **Framework**: Swift Testing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encoding quality to use for this image format.
 

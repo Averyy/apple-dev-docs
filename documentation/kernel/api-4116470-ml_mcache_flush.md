@@ -1,14 +1,15 @@
 # ml_mcache_flush
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 13.3+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t ml_mcache_flush(void);
 ```
 

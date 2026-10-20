@@ -1,7 +1,8 @@
 # options
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that customizes how to perform a display request.
 
@@ -18,7 +19,8 @@ var options: MobileDocumentDisplayRequest.Options
 
 ## See Also
 
-- [MobileDocumentDisplayRequest.Options](mobiledocumentdisplayrequest/options-swift.struct.md)
+### Configuring a display request
+- [MobileDocumentDisplayRequest.Options](./options-swift.struct.md)
   An object that customizes how to perform a display request.
 
 

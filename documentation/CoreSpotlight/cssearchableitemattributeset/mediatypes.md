@@ -1,7 +1,8 @@
 # mediaTypes
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The media types present in the content.
 
@@ -18,37 +19,42 @@ The media types present in the content.
 var mediaTypes: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * mediaTypes;
+```
+
 ## See Also
 
-- [var comment: String?](cssearchableitemattributeset/comment.md)
+### Describing media
+- [var comment: String?](./comment.md)
   A comment related to the media file.
-- [var contentCreationDate: Date?](cssearchableitemattributeset/contentcreationdate.md)
+- [var contentCreationDate: Date?](./contentcreationdate.md)
   The creation date of an edited or optimized version of the song or composition.
-- [var contentModificationDate: Date?](cssearchableitemattributeset/contentmodificationdate.md)
+- [var contentModificationDate: Date?](./contentmodificationdate.md)
   The date on which the contents of the file was last modified.
-- [var contentSources: [String]?](cssearchableitemattributeset/contentsources.md)
+- [var contentSources: [String]?](./contentsources.md)
   An array of sources from which the media was obtained.
-- [var copyright: String?](cssearchableitemattributeset/copyright.md)
+- [var copyright: String?](./copyright.md)
   The copyright date of the content.
-- [var downloadedDate: Date?](cssearchableitemattributeset/downloadeddate.md)
+- [var downloadedDate: Date?](./downloadeddate.md)
   The most recent date on which the file was downloaded or received.
-- [var editors: [String]?](cssearchableitemattributeset/editors.md)
+- [var editors: [String]?](./editors.md)
   A list of editors who have worked on the file.
-- [var lastUsedDate: Date?](cssearchableitemattributeset/lastuseddate.md)
+- [var lastUsedDate: Date?](./lastuseddate.md)
   The date on which the file was last used.
-- [var participants: [String]?](cssearchableitemattributeset/participants.md)
+- [var participants: [String]?](./participants.md)
   A list of people who are visible in an image or movie or written about in a document.
-- [var projects: [String]?](cssearchableitemattributeset/projects.md)
+- [var projects: [String]?](./projects.md)
   A list of projects of which this file is a part.
-- [var addedDate: Date?](cssearchableitemattributeset/addeddate.md)
+- [var addedDate: Date?](./addeddate.md)
   The date on which the item was moved into its current location.
-- [var codecs: [String]?](cssearchableitemattributeset/codecs.md)
+- [var codecs: [String]?](./codecs.md)
   The codecs used to encode/decode the media.
-- [var contactKeywords: [String]?](cssearchableitemattributeset/contactkeywords.md)
+- [var contactKeywords: [String]?](./contactkeywords.md)
   A list of contacts who are associated with the content in some way, not including the author.
-- [var deliveryType: NSNumber?](cssearchableitemattributeset/deliverytype.md)
+- [var deliveryType: NSNumber?](./deliverytype.md)
   The delivery type of the file.
-- [var duration: NSNumber?](cssearchableitemattributeset/duration.md)
+- [var duration: NSNumber?](./duration.md)
   The duration (if appropriate) of the content of the file, in seconds.
 
 

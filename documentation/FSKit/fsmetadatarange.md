@@ -1,7 +1,8 @@
 # FSMetadataRange
 
 **Framework**: FSKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A range that describes contiguous metadata segments on disk.
 
@@ -12,6 +13,10 @@ A range that describes contiguous metadata segments on disk.
 
 ```swift
 class FSMetadataRange
+```
+
+```objc
+@interface FSMetadataRange : NSObject
 ```
 
 #### Overview
@@ -31,43 +36,44 @@ Ensure that each metadata segment represents a range that’s already present in
 ## Topics
 
 ### Creating a metadata range
-- [init(offset: off_t, segmentLength: UInt64, segmentCount: UInt64)](fsmetadatarange/init(offset:segmentlength:segmentcount:).md)
+- [init(offset: off_t, segmentLength: UInt64, segmentCount: UInt64)](./fsmetadatarange/init%28offset,segmentlength,segmentcount%29.md)
   Initializes a metadata range with the given properties.
 ### Accessing range properties
-- [var startOffset: off_t](fsmetadatarange/startoffset.md)
+- [var startOffset: off_t](./fsmetadatarange/startoffset.md)
   The start offset of the range in bytes.
-- [var segmentLength: UInt64](fsmetadatarange/segmentlength.md)
+- [var segmentLength: UInt64](./fsmetadatarange/segmentlength.md)
   The segment length in bytes.
-- [var segmentCount: UInt64](fsmetadatarange/segmentcount.md)
+- [var segmentCount: UInt64](./fsmetadatarange/segmentcount.md)
   The number of segments in the range.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct FSBlockmapFlags](fsblockmapflags.md)
+### Supporting types
+- [struct FSBlockmapFlags](./fsblockmapflags.md)
   Flags that describe the behavior of a blockmap operation.
-- [struct FSCompleteIOFlags](fscompleteioflags.md)
+- [struct FSCompleteIOFlags](./fscompleteioflags.md)
   Flags that describe the behavior of an I/O completion operation.
-- [class FSEntityIdentifier](fsentityidentifier.md)
+- [class FSEntityIdentifier](./fsentityidentifier.md)
   A base type that identifies containers and volumes.
-- [class FSExtentPacker](fsextentpacker.md)
+- [class FSExtentPacker](./fsextentpacker.md)
   A type that directs the kernel to map space on disk to a specific file managed by this file system.
-- [enum FSExtentType](fsextenttype.md)
+- [enum FSExtentType](./fsextenttype.md)
   An enumeration of types of extents.
-- [enum FSMatchResult](fsmatchresult.md)
+- [enum FSMatchResult](./fsmatchresult.md)
   A type that represents the recognition and usability of a probed resource.
-- [class FSProbeResult](fsproberesult.md)
+- [class FSProbeResult](./fsproberesult.md)
   An object that represents the results of a specific probe.
 
 

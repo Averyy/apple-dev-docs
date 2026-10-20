@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new unique machine identifier.
 
@@ -14,9 +15,14 @@ Creates a new unique machine identifier.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [init?(dataRepresentation: Data)](vzmacmachineidentifier/init(datarepresentation:).md)
+### Creating a machine identifier
+- [init?(dataRepresentation: Data)](./init%28datarepresentation%29.md)
   Create a machine identifier described by the specified data representation.
 
 

@@ -1,7 +1,8 @@
 # buildOptional(_:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Provides an empty array when an optional evaluator block is absent.
 

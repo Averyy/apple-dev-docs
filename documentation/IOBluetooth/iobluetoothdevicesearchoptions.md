@@ -1,10 +1,11 @@
 # IOBluetoothDeviceSearchOptions
 
 **Framework**: IOBluetooth  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 typealias IOBluetoothDeviceSearchOptions = UInt32
 ```
 
+```c
+typedef UInt32 IOBluetoothDeviceSearchOptions;
+```
+
 ## See Also
 
-- [struct IOBluetoothDeviceSearchAttributes](iobluetoothdevicesearchattributes.md)
+### Data Types
+- [struct IOBluetoothDeviceSearchAttributes](./iobluetoothdevicesearchattributes.md)
   Structure used to search for particular devices.
-- [struct IOBluetoothDeviceSearchDeviceAttributes](iobluetoothdevicesearchdeviceattributes.md)
+- [struct IOBluetoothDeviceSearchDeviceAttributes](./iobluetoothdevicesearchdeviceattributes.md)
   Structure used to search for particular devices.
 
 

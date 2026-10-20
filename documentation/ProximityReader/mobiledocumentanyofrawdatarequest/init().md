@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a composite mobile document raw data request.
 
@@ -18,7 +19,8 @@ init()
 
 ## See Also
 
-- [func addRequest(any MobileDocumentRawDataRequest)](mobiledocumentanyofrawdatarequest/addrequest(_:).md)
+### Initializing a raw data request
+- [func addRequest(any MobileDocumentRawDataRequest)](./addrequest%28_%29.md)
   Adds the request as a candidate of this composite request.
 
 

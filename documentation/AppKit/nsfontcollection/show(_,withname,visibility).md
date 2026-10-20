@@ -1,7 +1,8 @@
 # show(_:withName:visibility:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Make the given font collection visible by giving it a name.
 
@@ -14,11 +15,17 @@ Make the given font collection visible by giving it a name.
 class func show(_ collection: NSFontCollection, withName name: NSFontCollection.Name, visibility: NSFontCollection.Visibility) throws
 ```
 
+```objc
++ (BOOL) showFontCollection:(NSFontCollection *) collection withName:(NSFontCollectionName) name visibility:(NSFontCollectionVisibility) visibility error:(NSError **) error;
+```
+
 #### Discussion
 
 Named collections are shown by user interfaces such as the Font panel. When you change the collection, you must show it again to see the changes reflected on disk or in the Font panel.
 
-> **Note**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -28,15 +35,16 @@ Named collections are shown by user interfaces such as the Font panel. When you 
 
 ## See Also
 
-- [class func rename(fromName: NSFontCollection.Name, visibility: NSFontCollection.Visibility, toName: NSFontCollection.Name) throws](nsfontcollection/rename(fromname:visibility:toname:).md)
+### Naming the Font Collection
+- [class func rename(fromName: NSFontCollection.Name, visibility: NSFontCollection.Visibility, toName: NSFontCollection.Name) throws](./rename%28fromname,visibility,toname%29.md)
   Renames the font collection with the specified name and visibility to the second name specified.
-- [class func hide(withName: NSFontCollection.Name, visibility: NSFontCollection.Visibility) throws](nsfontcollection/hide(withname:visibility:).md)
+- [class func hide(withName: NSFontCollection.Name, visibility: NSFontCollection.Visibility) throws](./hide%28withname,visibility%29.md)
   Remove from view the named font collection with the specified visibility.
-- [class var allFontCollectionNames: [NSFontCollection.Name]](nsfontcollection/allfontcollectionnames.md)
+- [class var allFontCollectionNames: [NSFontCollection.Name]](./allfontcollectionnames.md)
   Returns all named collections visible to this process.
-- [NSFontCollection.Name](nsfontcollection/name.md)
-  The constants represent the standard mutable collection names—these names are included in the list of [`allFontCollectionNames`](nsfontcollection/allfontcollectionnames.md)–they have special meaning to the Cocoa font system and should not be hidden or renamed.
-- [NSFontCollection.Visibility](nsfontcollection/visibility.md)
+- [NSFontCollection.Name](./name.md)
+  The constants represent the standard mutable collection names—these names are included in the list of [`allFontCollectionNames`](./allfontcollectionnames.md)–they have special meaning to the Cocoa font system and should not be hidden or renamed.
+- [NSFontCollection.Visibility](./visibility.md)
   Constants that specify the visibility of font collections.
 
 

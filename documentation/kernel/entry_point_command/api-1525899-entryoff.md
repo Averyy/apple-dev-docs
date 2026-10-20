@@ -1,14 +1,15 @@
 # entryoff
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 uint64_t entryoff;
 ```
 

@@ -1,7 +1,8 @@
 # init(boundingBox:revision:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a face observation from its bounding box.
 
@@ -23,11 +24,12 @@ init(boundingBox: NormalizedRect, revision: DetectFaceRectanglesRequest.Revision
 ## Parameters
 
 - `boundingBox`: The bounding box of the detected face.
-- `revision`: The revision of the [`DetectFaceRectanglesRequest`](detectfacerectanglesrequest.md) that provided the bounding box.
+- `revision`: The revision of the [`DetectFaceRectanglesRequest`](../detectfacerectanglesrequest.md) that provided the bounding box.
 
 ## See Also
 
-- [init(VNFaceObservation)](faceobservation/init(_:).md)
+### Creating an observation
+- [init(VNFaceObservation)](./init%28_%29.md)
   Creates a face observation.
 
 

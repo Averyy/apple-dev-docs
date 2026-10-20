@@ -2,6 +2,7 @@
 
 **Framework**: Accelerate  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A pointer to the first element of the buffer.
@@ -12,7 +13,7 @@ A pointer to the first element of the buffer.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -23,7 +24,8 @@ var baseAddress: UnsafeMutablePointer<Self.Element>? { get }
 
 ## See Also
 
-- [var count: Int](bnnsgraph/pointerargument/count.md)
+### Querying a pointer argument’s properties
+- [var count: Int](./count.md)
   The number of elements in the buffer.
 
 

@@ -1,7 +1,8 @@
 # viewDirection
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction the observer is facing, in world space.
 

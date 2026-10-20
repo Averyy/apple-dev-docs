@@ -1,7 +1,8 @@
 # resource
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The corresponding `EnvironmentResource` used for your Image Based Light.
 

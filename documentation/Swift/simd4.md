@@ -1,7 +1,8 @@
 # SIMD4
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A vector of four scalar values.
 
@@ -24,522 +25,523 @@ struct SIMD4<Scalar> where Scalar : SIMDScalar
 ## Topics
 
 ### Operators
-- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&*(_:_:)-2t3u3.md)
+- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampstar%28_,_%29-2t3u3.md)
   The pointwise wrapping product of two vectors.
-- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&*(_:_:)-4mgas.md)
+- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampstar%28_,_%29-4mgas.md)
   The pointwise wrapping product of two vectors.
-- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&*(_:_:)-58o8b.md)
+- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampstar%28_,_%29-58o8b.md)
   The pointwise wrapping product of two vectors.
-- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&*(_:_:)-58obf.md)
+- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampstar%28_,_%29-58obf.md)
   The pointwise wrapping product of two vectors.
-- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&*(_:_:)-6tcig.md)
+- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampstar%28_,_%29-6tcig.md)
   The pointwise wrapping product of two vectors.
-- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&*(_:_:)-8d18h.md)
+- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampstar%28_,_%29-8d18h.md)
   The pointwise wrapping product of two vectors.
-- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&*(_:_:)-9500.md)
+- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampstar%28_,_%29-9500.md)
   The pointwise wrapping product of two vectors.
-- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&*(_:_:)-95f9r.md)
+- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampstar%28_,_%29-95f9r.md)
   The pointwise wrapping product of two vectors.
-- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&*(_:_:)-9rqgl.md)
+- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampstar%28_,_%29-9rqgl.md)
   The pointwise wrapping product of two vectors.
-- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&*(_:_:)-9w4k9.md)
+- [static func &* (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampstar%28_,_%29-9w4k9.md)
   The pointwise wrapping product of two vectors.
-- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&*=(_:_:)-366ii.md)
+- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampstareq%28_,_%29-366ii.md)
   Updates the left hand side with the pointwise wrapping product of two vectors.
-- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&*=(_:_:)-3rbko.md)
+- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampstareq%28_,_%29-3rbko.md)
   Updates the left hand side with the pointwise wrapping product of two vectors.
-- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&*=(_:_:)-44bys.md)
+- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampstareq%28_,_%29-44bys.md)
   Updates the left hand side with the pointwise wrapping product of two vectors.
-- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&*=(_:_:)-5b0so.md)
+- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampstareq%28_,_%29-5b0so.md)
   Updates the left hand side with the pointwise wrapping product of two vectors.
-- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&*=(_:_:)-6lwed.md)
+- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampstareq%28_,_%29-6lwed.md)
   Updates the left hand side with the pointwise wrapping product of two vectors.
-- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&*=(_:_:)-6q14r.md)
+- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampstareq%28_,_%29-6q14r.md)
   Updates the left hand side with the pointwise wrapping product of two vectors.
-- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&*=(_:_:)-6xqb6.md)
+- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampstareq%28_,_%29-6xqb6.md)
   Updates the left hand side with the pointwise wrapping product of two vectors.
-- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&*=(_:_:)-82jen.md)
+- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampstareq%28_,_%29-82jen.md)
   Updates the left hand side with the pointwise wrapping product of two vectors.
-- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&*=(_:_:)-9ncfh.md)
+- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampstareq%28_,_%29-9ncfh.md)
   Updates the left hand side with the pointwise wrapping product of two vectors.
-- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&*=(_:_:)-gzto.md)
+- [static func &*= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampstareq%28_,_%29-gzto.md)
   Updates the left hand side with the pointwise wrapping product of two vectors.
-- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&+(_:_:)-1te60.md)
+- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampplus%28_,_%29-1te60.md)
   The wrapping sum of two vectors.
-- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&+(_:_:)-242rh.md)
+- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampplus%28_,_%29-242rh.md)
   The wrapping sum of two vectors.
-- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&+(_:_:)-285ia.md)
+- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampplus%28_,_%29-285ia.md)
   The wrapping sum of two vectors.
-- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&+(_:_:)-36osx.md)
+- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampplus%28_,_%29-36osx.md)
   The wrapping sum of two vectors.
-- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&+(_:_:)-5kcci.md)
+- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampplus%28_,_%29-5kcci.md)
   The wrapping sum of two vectors.
-- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&+(_:_:)-7lmra.md)
+- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampplus%28_,_%29-7lmra.md)
   The wrapping sum of two vectors.
-- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&+(_:_:)-882i.md)
+- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampplus%28_,_%29-882i.md)
   The wrapping sum of two vectors.
-- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&+(_:_:)-97dnc.md)
+- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampplus%28_,_%29-97dnc.md)
   The wrapping sum of two vectors.
-- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&+(_:_:)-9ik7g.md)
+- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampplus%28_,_%29-9ik7g.md)
   The wrapping sum of two vectors.
-- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&+(_:_:)-m3ua.md)
+- [static func &+ (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampplus%28_,_%29-m3ua.md)
   The wrapping sum of two vectors.
-- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&+=(_:_:)-149yb.md)
+- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/amppluseq%28_,_%29-149yb.md)
   Updates the left hand side with the wrapping sum of the two vectors.
-- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&+=(_:_:)-1noki.md)
+- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/amppluseq%28_,_%29-1noki.md)
   Updates the left hand side with the wrapping sum of the two vectors.
-- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&+=(_:_:)-2of8k.md)
+- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/amppluseq%28_,_%29-2of8k.md)
   Updates the left hand side with the wrapping sum of the two vectors.
-- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&+=(_:_:)-2tfy3.md)
+- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/amppluseq%28_,_%29-2tfy3.md)
   Updates the left hand side with the wrapping sum of the two vectors.
-- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&+=(_:_:)-39e7m.md)
+- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/amppluseq%28_,_%29-39e7m.md)
   Updates the left hand side with the wrapping sum of the two vectors.
-- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&+=(_:_:)-4prbm.md)
+- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/amppluseq%28_,_%29-4prbm.md)
   Updates the left hand side with the wrapping sum of the two vectors.
-- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&+=(_:_:)-6gj5j.md)
+- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/amppluseq%28_,_%29-6gj5j.md)
   Updates the left hand side with the wrapping sum of the two vectors.
-- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&+=(_:_:)-74v45.md)
+- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/amppluseq%28_,_%29-74v45.md)
   Updates the left hand side with the wrapping sum of the two vectors.
-- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&+=(_:_:)-97jca.md)
+- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/amppluseq%28_,_%29-97jca.md)
   Updates the left hand side with the wrapping sum of the two vectors.
-- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&+=(_:_:)-rjox.md)
+- [static func &+= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/amppluseq%28_,_%29-rjox.md)
   Updates the left hand side with the wrapping sum of the two vectors.
-- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&-(_:_:)-15lhe.md)
+- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampminus%28_,_%29-15lhe.md)
   The wrapping difference of two vectors.
-- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&-(_:_:)-16vdb.md)
+- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampminus%28_,_%29-16vdb.md)
   The wrapping difference of two vectors.
-- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&-(_:_:)-2k023.md)
+- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampminus%28_,_%29-2k023.md)
   The wrapping difference of two vectors.
-- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&-(_:_:)-2zf5s.md)
+- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampminus%28_,_%29-2zf5s.md)
   The wrapping difference of two vectors.
-- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&-(_:_:)-68jav.md)
+- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampminus%28_,_%29-68jav.md)
   The wrapping difference of two vectors.
-- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&-(_:_:)-6c13i.md)
+- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampminus%28_,_%29-6c13i.md)
   The wrapping difference of two vectors.
-- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&-(_:_:)-7lw64.md)
+- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampminus%28_,_%29-7lw64.md)
   The wrapping difference of two vectors.
-- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&-(_:_:)-7mu38.md)
+- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampminus%28_,_%29-7mu38.md)
   The wrapping difference of two vectors.
-- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&-(_:_:)-8dyvm.md)
+- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampminus%28_,_%29-8dyvm.md)
   The wrapping difference of two vectors.
-- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](simd4/&-(_:_:)-8qlsp.md)
+- [static func &- (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMD4<Scalar>](./simd4/ampminus%28_,_%29-8qlsp.md)
   The wrapping difference of two vectors.
-- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&-=(_:_:)-246za.md)
+- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampminuseq%28_,_%29-246za.md)
   Updates the left hand side with the wrapping difference of the two vectors.
-- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&-=(_:_:)-2c8ti.md)
+- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampminuseq%28_,_%29-2c8ti.md)
   Updates the left hand side with the wrapping difference of the two vectors.
-- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&-=(_:_:)-3i9au.md)
+- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampminuseq%28_,_%29-3i9au.md)
   Updates the left hand side with the wrapping difference of the two vectors.
-- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&-=(_:_:)-3sdor.md)
+- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampminuseq%28_,_%29-3sdor.md)
   Updates the left hand side with the wrapping difference of the two vectors.
-- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&-=(_:_:)-4h8d2.md)
+- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampminuseq%28_,_%29-4h8d2.md)
   Updates the left hand side with the wrapping difference of the two vectors.
-- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&-=(_:_:)-4wv73.md)
+- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampminuseq%28_,_%29-4wv73.md)
   Updates the left hand side with the wrapping difference of the two vectors.
-- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&-=(_:_:)-55ra6.md)
+- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampminuseq%28_,_%29-55ra6.md)
   Updates the left hand side with the wrapping difference of the two vectors.
-- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&-=(_:_:)-5lgiw.md)
+- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampminuseq%28_,_%29-5lgiw.md)
   Updates the left hand side with the wrapping difference of the two vectors.
-- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&-=(_:_:)-6o1tt.md)
+- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampminuseq%28_,_%29-6o1tt.md)
   Updates the left hand side with the wrapping difference of the two vectors.
-- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](simd4/&-=(_:_:)-7i51c.md)
+- [static func &-= (inout SIMD4<Scalar>, SIMD4<Scalar>)](./simd4/ampminuseq%28_,_%29-7i51c.md)
   Updates the left hand side with the wrapping difference of the two vectors.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-1dfla.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-1dfla.md)
   A vector mask with the result of a pointwise inequality comparison.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-20ki6.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-20ki6.md)
   Pointwise compare not equal to.
-- [static func .!= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-2zk5p.md)
+- [static func .!= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-2zk5p.md)
   Pointwise compare not equal to.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-3dpb9.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-3dpb9.md)
   A vector mask with the result of a pointwise inequality comparison.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-3za3s.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-3za3s.md)
   A vector mask with the result of a pointwise inequality comparison.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-4nhev.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-4nhev.md)
   A vector mask with the result of a pointwise inequality comparison.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-4rkvj.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-4rkvj.md)
   Pointwise compare not equal to.
-- [static func .!= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-5989r.md)
+- [static func .!= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-5989r.md)
   Pointwise compare not equal to.
-- [static func .!= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-7kjv3.md)
+- [static func .!= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-7kjv3.md)
   Pointwise compare not equal to.
-- [static func .!= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-7qjh3.md)
+- [static func .!= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-7qjh3.md)
   Pointwise compare not equal to.
-- [static func .!= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-80l98.md)
+- [static func .!= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-80l98.md)
   Pointwise compare not equal to.
-- [static func .!= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-8fn4p.md)
+- [static func .!= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-8fn4p.md)
   Pointwise compare not equal to.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-8grg9.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-8grg9.md)
   A vector mask with the result of a pointwise inequality comparison.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-8q623.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-8q623.md)
   Pointwise compare not equal to.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-8vtwt.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-8vtwt.md)
   A vector mask with the result of a pointwise inequality comparison.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-9cb1n.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-9cb1n.md)
   A vector mask with the result of a pointwise inequality comparison.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-9q0rp.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-9q0rp.md)
   A vector mask with the result of a pointwise inequality comparison.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-9yqz5.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-9yqz5.md)
   A vector mask with the result of a pointwise inequality comparison.
-- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.!=(_:_:)-ruxz.md)
+- [static func .!= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotnoteq%28_,_%29-ruxz.md)
   A vector mask with the result of a pointwise inequality comparison.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-1045v.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-1045v.md)
   A vector mask with the result of a pointwise equality comparison.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-1g3vu.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-1g3vu.md)
   A vector mask with the result of a pointwise equality comparison.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-1gpsx.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-1gpsx.md)
   A vector mask with the result of a pointwise equality comparison.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-25zmi.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-25zmi.md)
   A vector mask with the result of a pointwise equality comparison.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-2k4vk.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-2k4vk.md)
   A vector mask with the result of a pointwise equality comparison.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-2nsel.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-2nsel.md)
   A vector mask with the result of a pointwise equality comparison.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-4546s.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-4546s.md)
   A vector mask with the result of a pointwise equality comparison.
-- [static func .== (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-5c0gi.md)
+- [static func .== (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-5c0gi.md)
   Pointwise compare equal to.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-6f4lp.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-6f4lp.md)
   Pointwise compare equal to.
-- [static func .== (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-6kpb9.md)
+- [static func .== (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-6kpb9.md)
   Pointwise compare equal to.
-- [static func .== (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-6ob3q.md)
+- [static func .== (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-6ob3q.md)
   Pointwise compare equal to.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-6stsy.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-6stsy.md)
   A vector mask with the result of a pointwise equality comparison.
-- [static func .== (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-7gbyi.md)
+- [static func .== (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-7gbyi.md)
   Pointwise compare equal to.
-- [static func .== (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-7h40q.md)
+- [static func .== (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-7h40q.md)
   Pointwise compare equal to.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-83hrk.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-83hrk.md)
   A vector mask with the result of a pointwise equality comparison.
-- [static func .== (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-86kdt.md)
+- [static func .== (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-86kdt.md)
   Pointwise compare equal to.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-94etw.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-94etw.md)
   A vector mask with the result of a pointwise equality comparison.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-9e46i.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-9e46i.md)
   Pointwise compare equal to.
-- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'.==(_:_:)-9x68v.md)
+- [static func .== (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/doteqeq%28_,_%29-9x68v.md)
   Pointwise compare equal to.
-- [static func .< (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-11dvk.md)
+- [static func .< (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-11dvk.md)
   Pointwise compare less than.
-- [static func .< (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-14oh6.md)
+- [static func .< (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-14oh6.md)
   Pointwise compare less than.
-- [static func .> (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-1hia8.md)
+- [static func .> (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-1hia8.md)
   Pointwise compare greater than.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-1jqtu.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-1jqtu.md)
   A vector mask with the result of a pointwise less-than comparison.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-1jwzn.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-1jwzn.md)
   Pointwise compare less than.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-1rsvy.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-1rsvy.md)
   A vector mask with the result of a pointwise greater-than comparison.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-1ut8t.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-1ut8t.md)
   A vector mask with the result of a pointwise less-than comparison.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-1z0m8.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-1z0m8.md)
   A vector mask with the result of a pointwise less-than comparison.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-2gccv.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-2gccv.md)
   A vector mask with the result of a pointwise less-than comparison.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-2wgwx.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-2wgwx.md)
   A vector mask with the result of a pointwise less-than comparison.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-3e3jg.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-3e3jg.md)
   A vector mask with the result of a pointwise greater-than comparison.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-3fphg.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-3fphg.md)
   A vector mask with the result of a pointwise greater-than comparison.
-- [static func .> (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-3hybf.md)
+- [static func .> (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-3hybf.md)
   Pointwise compare greater than.
-- [static func .< (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-3nkri.md)
+- [static func .< (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-3nkri.md)
   Pointwise compare less than.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-3wevl.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-3wevl.md)
   A vector mask with the result of a pointwise greater-than comparison.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-4303j.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-4303j.md)
   A vector mask with the result of a pointwise less-than comparison.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-4gap2.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-4gap2.md)
   A vector mask with the result of a pointwise greater-than comparison.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-4ihrd.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-4ihrd.md)
   Pointwise compare greater than.
-- [static func .> (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-4kq3p.md)
+- [static func .> (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-4kq3p.md)
   Pointwise compare greater than.
-- [static func .< (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-4na4r.md)
+- [static func .< (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-4na4r.md)
   Pointwise compare less than.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-4wwop.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-4wwop.md)
   A vector mask with the result of a pointwise less-than comparison.
-- [static func .> (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-5k3cv.md)
+- [static func .> (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-5k3cv.md)
   Pointwise compare greater than.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-5omj.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-5omj.md)
   Pointwise compare less than.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-5ywlq.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-5ywlq.md)
   Pointwise compare less than.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-6lat8.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-6lat8.md)
   Pointwise compare greater than.
-- [static func .< (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-6re1z.md)
+- [static func .< (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-6re1z.md)
   Pointwise compare less than.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-6ugy1.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-6ugy1.md)
   A vector mask with the result of a pointwise less-than comparison.
-- [static func .> (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-7bg6m.md)
+- [static func .> (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-7bg6m.md)
   Pointwise compare greater than.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-7yul1.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-7yul1.md)
   A vector mask with the result of a pointwise greater-than comparison.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-8wq2h.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-8wq2h.md)
   A vector mask with the result of a pointwise greater-than comparison.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-9ba0f.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-9ba0f.md)
   A vector mask with the result of a pointwise greater-than comparison.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-9hciq.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-9hciq.md)
   A vector mask with the result of a pointwise less-than comparison.
-- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-fiw6.md)
+- [static func .< (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-fiw6.md)
   A vector mask with the result of a pointwise less-than comparison.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-ghlz.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-ghlz.md)
   A vector mask with the result of a pointwise greater-than comparison.
-- [static func .< (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-mda6.md)
+- [static func .< (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-mda6.md)
   Pointwise compare less than.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-nwzo.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-nwzo.md)
   Pointwise compare greater than.
-- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-s2dg.md)
+- [static func .> (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-s2dg.md)
   A vector mask with the result of a pointwise greater-than comparison.
-- [static func .> (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._(_:_:)-zqkc.md)
+- [static func .> (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotop%28_,_%29-zqkc.md)
   Pointwise compare greater than.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-11lr3.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-11lr3.md)
   Pointwise compare greater than or equal to.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-14iae.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-14iae.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-15866.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-15866.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-1c6si.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-1c6si.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-1l3xg.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-1l3xg.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-1v1dy.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-1v1dy.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
-- [static func .>= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-1z1op.md)
+- [static func .>= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-1z1op.md)
   Pointwise compare greater than or equal to.
-- [static func .>= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-23qy3.md)
+- [static func .>= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-23qy3.md)
   Pointwise compare greater than or equal to.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-2821y.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-2821y.md)
   Pointwise compare less than or equal to.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-2j03q.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-2j03q.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-2ltkw.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-2ltkw.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
-- [static func .<= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-2p2sm.md)
+- [static func .<= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-2p2sm.md)
   Pointwise compare less than or equal to.
-- [static func .>= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-2uq91.md)
+- [static func .>= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-2uq91.md)
   Pointwise compare greater than or equal to.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-3bs97.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-3bs97.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-3p65t.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-3p65t.md)
   Pointwise compare less than or equal to.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-4koys.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-4koys.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
-- [static func .<= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-4q6oc.md)
+- [static func .<= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-4q6oc.md)
   Pointwise compare less than or equal to.
-- [static func .>= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-4t218.md)
+- [static func .>= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-4t218.md)
   Pointwise compare greater than or equal to.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-59ik5.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-59ik5.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-5llp8.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-5llp8.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
-- [static func .<= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-5qz25.md)
+- [static func .<= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-5qz25.md)
   Pointwise compare less than or equal to.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-5t5al.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-5t5al.md)
   Pointwise compare greater than or equal to.
-- [static func .>= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-66txr.md)
+- [static func .>= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-66txr.md)
   Pointwise compare greater than or equal to.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-6ft8e.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-6ft8e.md)
   Pointwise compare greater than or equal to.
-- [static func .<= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-6izov.md)
+- [static func .<= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-6izov.md)
   Pointwise compare less than or equal to.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-6m8mz.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-6m8mz.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-6nsbw.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-6nsbw.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
-- [static func .<= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-6tt5n.md)
+- [static func .<= (Scalar, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-6tt5n.md)
   Pointwise compare less than or equal to.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-6xt5h.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-6xt5h.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-74im3.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-74im3.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-7n61o.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-7n61o.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-81jth.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-81jth.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-8d4de.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-8d4de.md)
   A vector mask with the result of a pointwise less-than-or-equal-to comparison.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-8qkve.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-8qkve.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
-- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-8r25e.md)
+- [static func .<= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-8r25e.md)
   Pointwise compare less than or equal to.
-- [static func .>= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-8xoj5.md)
+- [static func .>= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-8xoj5.md)
   Pointwise compare greater than or equal to.
-- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-96ya4.md)
+- [static func .>= (SIMD4<Scalar>, SIMD4<Scalar>) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-96ya4.md)
   A vector mask with the result of a pointwise greater-than-or-equal-to comparison.
-- [static func .<= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](simd4/'._=(_:_:)-rt7g.md)
+- [static func .<= (SIMD4<Scalar>, Scalar) -> SIMDMask<SIMD4<Scalar>.MaskStorage>](./simd4/dotopeq%28_,_%29-rt7g.md)
   Pointwise compare less than or equal to.
 ### Initializers
-- [init()](simd4/init.md)
+- [init()](./simd4/init%28%29.md)
   Creates a vector with zero in all lanes.
-- [init<Other>(SIMD4<Other>)](simd4/init(_:)-1dme2.md)
+- [init<Other>(SIMD4<Other>)](./simd4/init%28_%29-1dme2.md)
   Creates a new vector from the given vector of integers.
-- [init(SCNVector4)](simd4/init(_:)-1f9vo.md)
-- [init(Size3DFloat)](simd4/init(_:)-1tyne.md)
+- [init(SCNVector4)](./simd4/init%28_%29-1f9vo.md)
+- [init(Size3DFloat)](./simd4/init%28_%29-1tyne.md)
   Creates a simd packed vector from a Spatial size.
-- [init<Other>(SIMD4<Other>)](simd4/init(_:)-2frw5.md)
+- [init<Other>(SIMD4<Other>)](./simd4/init%28_%29-2frw5.md)
   Creates a new vector from the given vector of floating-point values.
-- [init(Rotation3D)](simd4/init(_:)-2lh73.md)
+- [init(Rotation3D)](./simd4/init%28_%29-2lh73.md)
   Creates a simd packed vector from a Spatial rotation.
-- [init(SphericalCoordinates3DFloat)](simd4/init(_:)-2wwuh.md)
+- [init(SphericalCoordinates3DFloat)](./simd4/init%28_%29-2wwuh.md)
   Creates a simd packed vector from a Spatial spherical coordinates structure .
-- [init(Vector3D)](simd4/init(_:)-30hiv.md)
+- [init(Vector3D)](./simd4/init%28_%29-30hiv.md)
   Creates a simd packed vector from a Spatial vector.
-- [init(Point3D)](simd4/init(_:)-3pxce.md)
+- [init(Point3D)](./simd4/init%28_%29-3pxce.md)
   Creates a simd packed vector from a Spatial point.
-- [init(SCNVector4)](simd4/init(_:)-5dnpp.md)
-- [init(Vector3DFloat)](simd4/init(_:)-5emgw.md)
+- [init(SCNVector4)](./simd4/init%28_%29-5dnpp.md)
+- [init(Vector3DFloat)](./simd4/init%28_%29-5emgw.md)
   Creates a simd packed vector from a Spatial vector.
-- [init(Point3DFloat)](simd4/init(_:)-5sq49.md)
+- [init(Point3DFloat)](./simd4/init%28_%29-5sq49.md)
   Creates a simd packed vector from a Spatial point.
-- [init(Rotation3DFloat)](simd4/init(_:)-6pjsb.md)
+- [init(Rotation3DFloat)](./simd4/init%28_%29-6pjsb.md)
   Creates a simd packed vector from a Spatial rotation.
-- [init(SphericalCoordinates3D)](simd4/init(_:)-8kyv.md)
+- [init(SphericalCoordinates3D)](./simd4/init%28_%29-8kyv.md)
   Creates a simd packed vector from a Spatial spherical coordinates structure .
-- [init(RotationAxis3DFloat)](simd4/init(_:)-97pz3.md)
+- [init(RotationAxis3DFloat)](./simd4/init%28_%29-97pz3.md)
   Creates a simd packed vector from a Spatial rotation axis.
-- [init(RotationAxis3D)](simd4/init(_:)-9rzwt.md)
+- [init(RotationAxis3D)](./simd4/init%28_%29-9rzwt.md)
   Creates a simd packed vector from a Spatial rotation axis.
-- [init(Size3D)](simd4/init(_:)-hfd1.md)
+- [init(Size3D)](./simd4/init%28_%29-hfd1.md)
   Creates a simd packed vector from a Spatial size.
-- [init(SIMD3<Scalar>, Scalar)](simd4/init(_:_:).md)
+- [init(SIMD3<Scalar>, Scalar)](./simd4/init%28_,_%29.md)
   A four-element vector created by appending a scalar to a three-element vector.
-- [init(Scalar, Scalar, Scalar, Scalar)](simd4/init(_:_:_:_:).md)
+- [init(Scalar, Scalar, Scalar, Scalar)](./simd4/init%28_,_,_,_%29.md)
   Creates a new vector from the given elements.
-- [init<Other>(SIMD4<Other>, rounding: FloatingPointRoundingRule)](simd4/init(_:rounding:).md)
+- [init<Other>(SIMD4<Other>, rounding: FloatingPointRoundingRule)](./simd4/init%28_,rounding%29.md)
   Creates a new vector from the given vector, rounding the given vector’s of elements using the specified rounding rule.
-- [init<Other>(clamping: SIMD4<Other>)](simd4/init(clamping:).md)
+- [init<Other>(clamping: SIMD4<Other>)](./simd4/init%28clamping%29.md)
   Creates a new vector from the given vector, clamping the values of the given vector’s elements if necessary.
-- [init(lowHalf: SIMD2<Int16>, highHalf: SIMD2<Int16>)](simd4/init(lowhalf:highhalf:)-17nrt.md)
+- [init(lowHalf: SIMD2<Int16>, highHalf: SIMD2<Int16>)](./simd4/init%28lowhalf,highhalf%29-17nrt.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<Scalar>, highHalf: SIMD2<Scalar>)](simd4/init(lowhalf:highhalf:)-1mfgu.md)
+- [init(lowHalf: SIMD2<Scalar>, highHalf: SIMD2<Scalar>)](./simd4/init%28lowhalf,highhalf%29-1mfgu.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<Int64>, highHalf: SIMD2<Int64>)](simd4/init(lowhalf:highhalf:)-1mnu4.md)
+- [init(lowHalf: SIMD2<Int64>, highHalf: SIMD2<Int64>)](./simd4/init%28lowhalf,highhalf%29-1mnu4.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<Int8>, highHalf: SIMD2<Int8>)](simd4/init(lowhalf:highhalf:)-1vinm.md)
+- [init(lowHalf: SIMD2<Int8>, highHalf: SIMD2<Int8>)](./simd4/init%28lowhalf,highhalf%29-1vinm.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<UInt32>, highHalf: SIMD2<UInt32>)](simd4/init(lowhalf:highhalf:)-2mvkj.md)
+- [init(lowHalf: SIMD2<UInt32>, highHalf: SIMD2<UInt32>)](./simd4/init%28lowhalf,highhalf%29-2mvkj.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<UInt16>, highHalf: SIMD2<UInt16>)](simd4/init(lowhalf:highhalf:)-47i96.md)
+- [init(lowHalf: SIMD2<UInt16>, highHalf: SIMD2<UInt16>)](./simd4/init%28lowhalf,highhalf%29-47i96.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<UInt64>, highHalf: SIMD2<UInt64>)](simd4/init(lowhalf:highhalf:)-5ye5o.md)
+- [init(lowHalf: SIMD2<UInt64>, highHalf: SIMD2<UInt64>)](./simd4/init%28lowhalf,highhalf%29-5ye5o.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<Double>, highHalf: SIMD2<Double>)](simd4/init(lowhalf:highhalf:)-66418.md)
+- [init(lowHalf: SIMD2<Double>, highHalf: SIMD2<Double>)](./simd4/init%28lowhalf,highhalf%29-66418.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<UInt>, highHalf: SIMD2<UInt>)](simd4/init(lowhalf:highhalf:)-7rr1m.md)
+- [init(lowHalf: SIMD2<UInt>, highHalf: SIMD2<UInt>)](./simd4/init%28lowhalf,highhalf%29-7rr1m.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<Float>, highHalf: SIMD2<Float>)](simd4/init(lowhalf:highhalf:)-8crbu.md)
+- [init(lowHalf: SIMD2<Float>, highHalf: SIMD2<Float>)](./simd4/init%28lowhalf,highhalf%29-8crbu.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<Float16>, highHalf: SIMD2<Float16>)](simd4/init(lowhalf:highhalf:)-8ojwi.md)
+- [init(lowHalf: SIMD2<Float16>, highHalf: SIMD2<Float16>)](./simd4/init%28lowhalf,highhalf%29-8ojwi.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<Int>, highHalf: SIMD2<Int>)](simd4/init(lowhalf:highhalf:)-8r3d7.md)
+- [init(lowHalf: SIMD2<Int>, highHalf: SIMD2<Int>)](./simd4/init%28lowhalf,highhalf%29-8r3d7.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<UInt8>, highHalf: SIMD2<UInt8>)](simd4/init(lowhalf:highhalf:)-8w1ua.md)
+- [init(lowHalf: SIMD2<UInt8>, highHalf: SIMD2<UInt8>)](./simd4/init%28lowhalf,highhalf%29-8w1ua.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(lowHalf: SIMD2<Int32>, highHalf: SIMD2<Int32>)](simd4/init(lowhalf:highhalf:)-9uxst.md)
+- [init(lowHalf: SIMD2<Int32>, highHalf: SIMD2<Int32>)](./simd4/init%28lowhalf,highhalf%29-9uxst.md)
   A vector formed by concatenating lowHalf and highHalf.
-- [init(repeating: UInt16)](simd4/init(repeating:)-3b6vk.md)
+- [init(repeating: UInt16)](./simd4/init%28repeating%29-3b6vk.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: UInt8)](simd4/init(repeating:)-3cv3r.md)
+- [init(repeating: UInt8)](./simd4/init%28repeating%29-3cv3r.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: UInt)](simd4/init(repeating:)-3jjxm.md)
+- [init(repeating: UInt)](./simd4/init%28repeating%29-3jjxm.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: Int)](simd4/init(repeating:)-4ghrb.md)
+- [init(repeating: Int)](./simd4/init%28repeating%29-4ghrb.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: Int32)](simd4/init(repeating:)-4vag6.md)
+- [init(repeating: Int32)](./simd4/init%28repeating%29-4vag6.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: Float16)](simd4/init(repeating:)-4xdm7.md)
+- [init(repeating: Float16)](./simd4/init%28repeating%29-4xdm7.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: UInt32)](simd4/init(repeating:)-4ylyi.md)
+- [init(repeating: UInt32)](./simd4/init%28repeating%29-4ylyi.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: UInt64)](simd4/init(repeating:)-6z4nu.md)
+- [init(repeating: UInt64)](./simd4/init%28repeating%29-6z4nu.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: Float)](simd4/init(repeating:)-70muy.md)
+- [init(repeating: Float)](./simd4/init%28repeating%29-70muy.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: Int16)](simd4/init(repeating:)-8z86u.md)
+- [init(repeating: Int16)](./simd4/init%28repeating%29-8z86u.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: Int64)](simd4/init(repeating:)-9qofv.md)
+- [init(repeating: Int64)](./simd4/init%28repeating%29-9qofv.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: Int8)](simd4/init(repeating:)-erxu.md)
+- [init(repeating: Int8)](./simd4/init%28repeating%29-erxu.md)
   A vector with the specified scalar in all lanes.
-- [init(repeating: Double)](simd4/init(repeating:)-gu1y.md)
+- [init(repeating: Double)](./simd4/init%28repeating%29-gu1y.md)
   A vector with the specified scalar in all lanes.
-- [init<Other>(truncatingIfNeeded: SIMD4<Other>)](simd4/init(truncatingifneeded:).md)
+- [init<Other>(truncatingIfNeeded: SIMD4<Other>)](./simd4/init%28truncatingifneeded%29.md)
   Creates a new vector from the given vector, truncating the bit patterns of the given vector’s elements if necessary.
-- [init(x: Scalar, y: Scalar, z: Scalar, w: Scalar)](simd4/init(x:y:z:w:).md)
+- [init(x: Scalar, y: Scalar, z: Scalar, w: Scalar)](./simd4/init%28x,y,z,w%29.md)
   Creates a new vector from the given elements.
 ### Instance Properties
-- [var evenHalf: SIMD2<Scalar>](simd4/evenhalf.md)
+- [var evenHalf: SIMD2<Scalar>](./simd4/evenhalf.md)
   A half-length vector made up of the even elements of the vector.
-- [var hashValue: Int](simd4/hashvalue.md)
+- [var hashValue: Int](./simd4/hashvalue.md)
   The hash value.
-- [var highHalf: SIMD2<Scalar>](simd4/highhalf.md)
+- [var highHalf: SIMD2<Scalar>](./simd4/highhalf.md)
   A half-length vector made up of the high elements of the vector.
-- [var lowHalf: SIMD2<Scalar>](simd4/lowhalf.md)
+- [var lowHalf: SIMD2<Scalar>](./simd4/lowhalf.md)
   A half-length vector made up of the low elements of the vector.
-- [var oddHalf: SIMD2<Scalar>](simd4/oddhalf.md)
+- [var oddHalf: SIMD2<Scalar>](./simd4/oddhalf.md)
   A half-length vector made up of the odd elements of the vector.
-- [var scalarCount: Int](simd4/scalarcount.md)
+- [var scalarCount: Int](./simd4/scalarcount.md)
   The number of scalars in the vector.
-- [var w: Scalar](simd4/w.md)
+- [var w: Scalar](./simd4/w.md)
   The fourth element of the vector.
-- [var x: Scalar](simd4/x.md)
+- [var x: Scalar](./simd4/x.md)
   The first element of the vector.
-- [var y: Scalar](simd4/y.md)
+- [var y: Scalar](./simd4/y.md)
   The second element of the vector.
-- [var z: Scalar](simd4/z.md)
+- [var z: Scalar](./simd4/z.md)
   The third element of the vector.
 ### Subscripts
-- [subscript(Int) -> Scalar](simd4/subscript(_:).md)
+- [subscript(Int) -> Scalar](./simd4/subscript%28_%29.md)
   Accesses the scalar at the specified position.
 ### Type Aliases
-- [typealias ArrayLiteralElement](simd4/arrayliteralelement.md)
+- [typealias ArrayLiteralElement](./simd4/arrayliteralelement.md)
   The type of the elements of an array literal.
-- [typealias MaskStorage](simd4/maskstorage.md)
+- [typealias MaskStorage](./simd4/maskstorage.md)
   The mask type resulting from pointwise comparisons of this vector type.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](simd4/customdebugstringconvertible-implementations.md)
-- [Equatable Implementations](simd4/equatable-implementations.md)
-- [SIMD Implementations](simd4/simd-implementations.md)
+- [CustomDebugStringConvertible Implementations](./simd4/customdebugstringconvertible-implementations.md)
+- [Equatable Implementations](./simd4/equatable-implementations.md)
+- [SIMD Implementations](./simd4/simd-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AnimatableData](../realitykit/animatabledata.md)
-- [BindableData](../realitykit/bindabledata.md)
-- [BitwiseCopyable](bitwisecopyable.md)
-- [ConvertibleFromBytes](convertiblefrombytes.md)
-- [ConvertibleToBytes](convertibletobytes.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
-- [Hashable](hashable.md)
-- [SIMD](simd.md)
-- [SIMDStorage](simdstorage.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [AnimatableData](../RealityKit/animatabledata.md)
+- [BindableData](../RealityKit/bindabledata.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [ConvertibleFromBytes](./convertiblefrombytes.md)
+- [ConvertibleToBytes](./convertibletobytes.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Decodable](./decodable.md)
+- [Encodable](./encodable.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [ExpressibleByArrayLiteral](./expressiblebyarrayliteral.md)
+- [Hashable](./hashable.md)
+- [SIMD](./simd.md)
+- [SIMDStorage](./simdstorage.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [struct SIMD2](simd2.md)
+### SIMD Vectors
+- [struct SIMD2](./simd2.md)
   A vector of two scalar values.
-- [struct SIMD3](simd3.md)
+- [struct SIMD3](./simd3.md)
   A vector of three scalar values.
-- [struct SIMD8](simd8.md)
+- [struct SIMD8](./simd8.md)
   A vector of eight scalar values.
-- [struct SIMD16](simd16.md)
+- [struct SIMD16](./simd16.md)
   A vector of 16 scalar values.
-- [struct SIMD32](simd32.md)
+- [struct SIMD32](./simd32.md)
   A vector of 32 scalar values.
-- [struct SIMD64](simd64.md)
+- [struct SIMD64](./simd64.md)
   A vector of 64 scalar values.
 
 

@@ -1,7 +1,8 @@
 # CBManagerState.unknown
 
 **Framework**: Core Bluetooth  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The manager’s state is unknown.
 
@@ -20,21 +21,26 @@ The manager’s state is unknown.
 case unknown
 ```
 
+```c
+CBManagerStateUnknown
+```
+
 #### Discussion
 
 This is a temporary state. After Core Bluetooth initializes or resets, it updates the state value.
 
 ## See Also
 
-- [CBManagerState.poweredOff](cbmanagerstate/poweredoff.md)
+### Manager States
+- [CBManagerState.poweredOff](./poweredoff.md)
   A state that indicates Bluetooth is currently powered off.
-- [CBManagerState.poweredOn](cbmanagerstate/poweredon.md)
+- [CBManagerState.poweredOn](./poweredon.md)
   A state that indicates Bluetooth is currently powered on and available to use.
-- [CBManagerState.resetting](cbmanagerstate/resetting.md)
+- [CBManagerState.resetting](./resetting.md)
   A state that indicates the connection with the system service was momentarily lost.
-- [CBManagerState.unauthorized](cbmanagerstate/unauthorized.md)
+- [CBManagerState.unauthorized](./unauthorized.md)
   A state that indicates the application isn’t authorized to use the Bluetooth low energy role.
-- [CBManagerState.unsupported](cbmanagerstate/unsupported.md)
+- [CBManagerState.unsupported](./unsupported.md)
   A state that indicates this device doesn’t support the Bluetooth low energy central or client role.
 
 

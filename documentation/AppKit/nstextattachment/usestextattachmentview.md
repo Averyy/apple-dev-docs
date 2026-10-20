@@ -1,7 +1,8 @@
 # usesTextAttachmentView
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the text attachment uses text attachment views.
 
@@ -14,21 +15,26 @@ A Boolean value that indicates whether the text attachment uses text attachment 
 var usesTextAttachmentView: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL usesTextAttachmentView;
+```
+
 ## See Also
 
-- [var bounds: CGRect](nstextattachment/bounds.md)
+### Defining the attachment’s contents
+- [var bounds: CGRect](./bounds.md)
   The layout bounds of the text attachment’s graphical representation in the text coordinate system.
-- [var contents: Data?](nstextattachment/contents.md)
+- [var contents: Data?](./contents.md)
   The contents for the text attachment.
-- [var fileType: String?](nstextattachment/filetype.md)
+- [var fileType: String?](./filetype.md)
   The file type of the contents for the text attachment.
-- [var image: NSImage?](nstextattachment/image.md)
+- [var image: NSImage?](./image.md)
   An instance of the relevant image class that represents the contents of the text attachment object.
-- [var fileWrapper: FileWrapper?](nstextattachment/filewrapper.md)
+- [var fileWrapper: FileWrapper?](./filewrapper.md)
   The text attachment’s file wrapper.
-- [var allowsTextAttachmentView: Bool](nstextattachment/allowstextattachmentview.md)
+- [var allowsTextAttachmentView: Bool](./allowstextattachmentview.md)
   A Boolean value that determines whether the text attachment uses text attachment views.
-- [var lineLayoutPadding: CGFloat](nstextattachment/linelayoutpadding.md)
+- [var lineLayoutPadding: CGFloat](./linelayoutpadding.md)
   The layout padding before and after the text attachment bounds.
 
 

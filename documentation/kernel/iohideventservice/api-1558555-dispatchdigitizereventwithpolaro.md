@@ -1,14 +1,15 @@
 # dispatchDigitizerEventWithPolarOrientation
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12.2+ - Deprecated in 10.15.1
 
 ## Declaration
 
-```swift
+```cpp
 virtual void dispatchDigitizerEventWithPolarOrientation(AbsoluteTime timeStamp, UInt32 transducerID, DigitizerTransducerType type, bool inRange, UInt32 buttonState, IOFixed x, IOFixed y, IOFixed z, IOFixed tipPressure, IOFixed tanPressure, IOFixed twist, IOFixed altitude, IOFixed azimuth, IOOptionBits options);
 ```
 

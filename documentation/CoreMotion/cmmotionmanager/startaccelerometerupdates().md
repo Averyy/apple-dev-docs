@@ -1,7 +1,8 @@
 # startAccelerometerUpdates()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts accelerometer updates without a handler.
 
@@ -18,25 +19,30 @@ Starts accelerometer updates without a handler.
 func startAccelerometerUpdates()
 ```
 
+```objc
+- (void) startAccelerometerUpdates;
+```
+
 ## Mentions
 
-- [Getting raw accelerometer events](getting-raw-accelerometer-events.md)
+- [Getting raw accelerometer events](../getting-raw-accelerometer-events.md)
 
 #### Discussion
 
-You can get the latest accelerometer data through the [`accelerometerData`](cmmotionmanager/accelerometerdata.md) property. You must call [`stopAccelerometerUpdates()`](cmmotionmanager/stopaccelerometerupdates().md) when you no longer want your app to process accelerometer updates.
+You can get the latest accelerometer data through the [`accelerometerData`](./accelerometerdata.md) property. You must call [`stopAccelerometerUpdates()`](./stopaccelerometerupdates%28%29.md) when you no longer want your app to process accelerometer updates.
 
 ## See Also
 
-- [var accelerometerUpdateInterval: TimeInterval](cmmotionmanager/accelerometerupdateinterval.md)
+### Managing Accelerometer Updates
+- [var accelerometerUpdateInterval: TimeInterval](./accelerometerupdateinterval.md)
   The interval, in seconds, for providing accelerometer updates to the block handler.
-- [func startAccelerometerUpdates(to: OperationQueue, withHandler: CMAccelerometerHandler)](cmmotionmanager/startaccelerometerupdates(to:withhandler:).md)
+- [func startAccelerometerUpdates(to: OperationQueue, withHandler: CMAccelerometerHandler)](./startaccelerometerupdates%28to,withhandler%29.md)
   Starts accelerometer updates on an operation queue and with a specified handler.
-- [func stopAccelerometerUpdates()](cmmotionmanager/stopaccelerometerupdates.md)
+- [func stopAccelerometerUpdates()](./stopaccelerometerupdates%28%29.md)
   Stops accelerometer updates.
-- [var accelerometerData: CMAccelerometerData?](cmmotionmanager/accelerometerdata.md)
+- [var accelerometerData: CMAccelerometerData?](./accelerometerdata.md)
   The latest sample of accelerometer data.
-- [typealias CMAccelerometerHandler](cmaccelerometerhandler.md)
+- [typealias CMAccelerometerHandler](../cmaccelerometerhandler.md)
   The type of block callback for handling accelerometer data.
 
 

@@ -1,7 +1,8 @@
 # MLDSA87.PrivateKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The private key for MLDSA87.
 
@@ -23,34 +24,35 @@ struct PrivateKey
 ## Topics
 
 ### Creating a private key
-- [init() throws](mldsa87/privatekey/init.md)
+- [init() throws](./privatekey/init%28%29.md)
   Creates a random MLDSA87 private key.
-- [init<D>(integrityCheckedRepresentation: D) throws](mldsa87/privatekey/init(integritycheckedrepresentation:).md)
+- [init<D>(integrityCheckedRepresentation: D) throws](./privatekey/init%28integritycheckedrepresentation%29.md)
   Initializes a private key from an integrity-checked data representation.
-- [init<D>(seedRepresentation: D, publicKey: MLDSA87.PublicKey?) throws](mldsa87/privatekey/init(seedrepresentation:publickey:).md)
+- [init<D>(seedRepresentation: D, publicKey: MLDSA87.PublicKey?) throws](./privatekey/init%28seedrepresentation,publickey%29.md)
   Initializes a private key from the seed representation.
 ### Inspecting a private key’s properties
-- [var integrityCheckedRepresentation: Data](mldsa87/privatekey/integritycheckedrepresentation.md)
+- [var integrityCheckedRepresentation: Data](./privatekey/integritycheckedrepresentation.md)
   The integrity-checked data representation of the private key.
-- [var publicKey: MLDSA87.PublicKey](mldsa87/privatekey/publickey.md)
+- [var publicKey: MLDSA87.PublicKey](./privatekey/publickey.md)
   The associated public key.
-- [var seedRepresentation: Data](mldsa87/privatekey/seedrepresentation.md)
+- [var seedRepresentation: Data](./privatekey/seedrepresentation.md)
   The seed representation of the private key.
 ### Signing data
-- [func signature<D>(for: D) throws -> Data](mldsa87/privatekey/signature(for:).md)
+- [func signature<D>(for: D) throws -> Data](./privatekey/signature%28for%29.md)
   Generates a MLDSA87 signature.
-- [func signature<D, C>(for: D, context: C) throws -> Data](mldsa87/privatekey/signature(for:context:).md)
+- [func signature<D, C>(for: D, context: C) throws -> Data](./privatekey/signature%28for,context%29.md)
   Generates a MLDSA87 signature, with context.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [MLDSA87.PublicKey](mldsa87/publickey.md)
+### Keys
+- [MLDSA87.PublicKey](./publickey.md)
   The public key for MLDSA87.
 
 

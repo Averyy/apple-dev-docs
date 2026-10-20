@@ -1,7 +1,8 @@
 # KeyResult.Tonic.f
 
 **Framework**: Music Understanding  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the song is in an F key.
 

@@ -1,7 +1,8 @@
 # WebDomain
 
 **Framework**: Managed Settings  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents a website.
 
@@ -19,25 +20,26 @@ struct WebDomain
 ## Topics
 
 ### Creating a web domain
-- [init(domain: String)](webdomain/init(domain:).md)
+- [init(domain: String)](./webdomain/init%28domain%29.md)
   Creates an object that represents the specified web domain.
-- [init(token: WebDomainToken)](webdomain/init(token:).md)
+- [init(token: WebDomainToken)](./webdomain/init%28token%29.md)
   Creates an object that represents the provided domain.
 ### Identifying a web domain
-- [let domain: String?](webdomain/domain.md)
+- [let domain: String?](./webdomain/domain.md)
   A string that identifies a specific web domain.
-- [let token: WebDomainToken?](webdomain/token.md)
+- [let token: WebDomainToken?](./webdomain/token.md)
   An opaque representation of a specific web domain.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [typealias WebDomainToken](webdomaintoken.md)
+### Websites
+- [typealias WebDomainToken](./webdomaintoken.md)
   A representation of a web domain that preserves the user’s privacy.
 
 

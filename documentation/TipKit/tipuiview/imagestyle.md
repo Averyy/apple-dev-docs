@@ -1,7 +1,8 @@
 # imageStyle
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Foreground style for the tip’s image.
 

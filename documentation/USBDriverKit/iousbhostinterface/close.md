@@ -1,7 +1,8 @@
 # Close
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Closes the session to the host interface.
 
@@ -10,17 +11,17 @@ Closes the session to the host interface.
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Close(IOService *forClient, IOOptionBits options);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
-This method closes a session to an interface that you previously opened using the [`Open`](iousbhostinterface/open.md) method. The method acquires the service’s workloop lock, and aborts any I/O for the interface and its endpoints. This method may also call [`commandSleep`](https://developer.apple.com/documentation/kernel/iocommandgate/1573818-commandsleep) to allow for the processing of aborted I/O before returning.
+This method closes a session to an interface that you previously opened using the [`Open`](./open.md) method. The method acquires the service’s workloop lock, and aborts any I/O for the interface and its endpoints. This method may also call [`commandSleep`](../../kernel/iocommandgate/api-1573818-commandsleep.md) to allow for the processing of aborted I/O before returning.
 
 ## Parameters
 
@@ -29,7 +30,8 @@ This method closes a session to an interface that you previously opened using th
 
 ## See Also
 
-- [Open](iousbhostinterface/open.md)
+### Managing the Device Session
+- [Open](./open.md)
   Opens a session to the host interface.
 
 

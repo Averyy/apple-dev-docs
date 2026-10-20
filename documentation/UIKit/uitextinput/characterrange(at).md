@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the character or range of characters that is at a specified point in a document.
@@ -10,13 +11,17 @@ Returns the character or range of characters that is at a specified point in a d
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func characterRange(at point: CGPoint) -> UITextRange?
+```
+
+```objc
+- (UITextRange *) characterRangeAtPoint:(CGPoint) point;
 ```
 
 #### Return Value
@@ -29,13 +34,14 @@ An object representing a range that encloses a character (or characters) at `poi
 
 ## See Also
 
-- [func firstRect(for: UITextRange) -> CGRect](uitextinput/firstrect(for:).md)
+### Working with geometry and hit-testing
+- [func firstRect(for: UITextRange) -> CGRect](./firstrect%28for%29.md)
   Returns the first rectangle that encloses a range of text in a document.
-- [func closestPosition(to: CGPoint) -> UITextPosition?](uitextinput/closestposition(to:).md)
+- [func closestPosition(to: CGPoint) -> UITextPosition?](./closestposition%28to%29.md)
   Returns the position in a document that is closest to a specified point.
-- [func selectionRects(for: UITextRange) -> [UITextSelectionRect]](uitextinput/selectionrects(for:).md)
+- [func selectionRects(for: UITextRange) -> [UITextSelectionRect]](./selectionrects%28for%29.md)
   Returns an array of selection rects corresponding to the range of text.
-- [func closestPosition(to: CGPoint, within: UITextRange) -> UITextPosition?](uitextinput/closestposition(to:within:).md)
+- [func closestPosition(to: CGPoint, within: UITextRange) -> UITextPosition?](./closestposition%28to,within%29.md)
   Returns the position in a document that is closest to a specified point in a specified range.
 
 

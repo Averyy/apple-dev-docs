@@ -1,7 +1,8 @@
 # outstandingIO
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The outstanding input/output value.
 
@@ -10,15 +11,16 @@ The outstanding input/output value.
 
 ## Declaration
 
-```swift
+```c
 UInt32 outstandingIO;
 ```
 
 ## See Also
 
-- [forClient](iousbhostiosourceclientrecord/2882019-forclient.md)
+### Getting the Properties
+- [forClient](./api-2882019-forclient.md)
   The client pointer.
-- [link](iousbhostiosourceclientrecord/2882016-link.md)
+- [link](./api-2882016-link.md)
   The client record link.
 
 

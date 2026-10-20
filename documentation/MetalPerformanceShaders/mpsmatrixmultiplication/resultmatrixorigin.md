@@ -1,7 +1,8 @@
 # resultMatrixOrigin
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The origin of the result matrix.
 
@@ -19,18 +20,23 @@ The origin of the result matrix.
 var resultMatrixOrigin: MTLOrigin { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLOrigin resultMatrixOrigin;
+```
+
 #### Discussion
 
 The origin, relative to `(0,0)`, at which to start reading values. If a different origin is desired, you must modify this property before encoding the matrix multiplication kernel. The default value is `(0,0,0)` (the `z` value must always be 0).
 
 ## See Also
 
-- [var leftMatrixOrigin: MTLOrigin](mpsmatrixmultiplication/leftmatrixorigin.md)
+### Properties
+- [var leftMatrixOrigin: MTLOrigin](./leftmatrixorigin.md)
   The origin of the left input matrix.
-- [var rightMatrixOrigin: MTLOrigin](mpsmatrixmultiplication/rightmatrixorigin.md)
+- [var rightMatrixOrigin: MTLOrigin](./rightmatrixorigin.md)
   The origin of the right input matrix.
-- [var batchSize: Int](mpsmatrixmultiplication/batchsize.md)
-- [var batchStart: Int](mpsmatrixmultiplication/batchstart.md)
+- [var batchSize: Int](./batchsize.md)
+- [var batchStart: Int](./batchstart.md)
 
 
 ---

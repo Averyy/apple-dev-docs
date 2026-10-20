@@ -1,7 +1,8 @@
 # cameraDeviceCanDeleteOneFile
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the camera can delete a file at a time while it is connected.
 
@@ -18,9 +19,14 @@ Indicates that the camera can delete a file at a time while it is connected.
 static let cameraDeviceCanDeleteOneFile: ICDeviceCapability
 ```
 
+```c
+extern ICDeviceCapability const ICCameraDeviceCanDeleteOneFile;
+```
+
 ## See Also
 
-- [static let cameraDeviceCanDeleteAllFiles: ICDeviceCapability](icdevicecapability/cameradevicecandeleteallfiles.md)
+### Deleting Files
+- [static let cameraDeviceCanDeleteAllFiles: ICDeviceCapability](./cameradevicecandeleteallfiles.md)
   Indicates that the camera can delete all files in a single operation while it is connected.
 
 

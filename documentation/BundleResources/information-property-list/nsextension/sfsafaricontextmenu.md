@@ -1,34 +1,37 @@
 # SFSafariContextMenu
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The context menu items for a Safari extension.
 
 **Availability**:
 - macOS 10.11.5+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `SFSafariContextMenu`
+- **Type**: array of dictionary 
 
 ## Topics
 
 ### Menu Item Configuration
-- [Command](information-property-list/nsextension/sfsafaricontextmenu/command.md)
+- [Command](./sfsafaricontextmenu/command.md)
   The command to send to the app extension when the user selects the context menu item.
-- [Text](information-property-list/nsextension/sfsafaricontextmenu/text.md)
+- [Text](./sfsafaricontextmenu/text.md)
   The text to display for the context menu item.
 
 ## See Also
 
-- [SFSafariContentScript](information-property-list/nsextension/sfsafaricontentscript.md)
+### SafariServices
+- [SFSafariContentScript](./sfsafaricontentscript.md)
   The content scripts for a Safari extension.
-- [SFSafariStyleSheet](information-property-list/nsextension/sfsafaristylesheet.md)
+- [SFSafariStyleSheet](./sfsafaristylesheet.md)
   The style sheet for a Safari extension.
-- [SFSafariToolbarItem](information-property-list/nsextension/sfsafaritoolbaritem.md)
+- [SFSafariToolbarItem](./sfsafaritoolbaritem.md)
   The items to add to the toolbar for a Safari extension.
-- [SFSafariWebsiteAccess](information-property-list/nsextension/sfsafariwebsiteaccess.md)
+- [SFSafariWebsiteAccess](./sfsafariwebsiteaccess.md)
   The webpages a Safari extension can access.
 
 

@@ -1,7 +1,8 @@
 # audioUnit
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var audioUnit: AudioUnit { get }
+```
+
+```objc
+@property (nonatomic, readonly) AudioUnit audioUnit;
 ```
 
 

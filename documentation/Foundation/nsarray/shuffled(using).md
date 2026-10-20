@@ -1,7 +1,8 @@
 # shuffled(using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new array that lists this array’s elements in a random order, using the specified random source.
 
@@ -19,15 +20,19 @@ Returns a new array that lists this array’s elements in a random order, using 
 func shuffled(using randomSource: GKRandomSource) -> [Any]
 ```
 
+```objc
+- (NSArray<id> *) shuffledArrayWithRandomSource:(GKRandomSource *) randomSource;
+```
+
 #### Return Value
 
 A new array that lists this array’s elements in a random order.
 
 #### Discussion
 
-Use the `randomSource` parameter to influence the random shuffling. For example, to reproduce a series of shuffles for testing, you can create a [`GKARC4RandomSource`](https://developer.apple.com/documentation/gameplaykit/gkarc4randomsource) object using the [`seed`](https://developer.apple.com/documentation/gameplaykit/gkarc4randomsource/seed) value of a previously used random source.
+Use the `randomSource` parameter to influence the random shuffling. For example, to reproduce a series of shuffles for testing, you can create a [`GKARC4RandomSource`](../../GameplayKit/gkarc4randomsource.md) object using the [`seed`](../../GameplayKit/gkarc4randomsource/seed.md) value of a previously used random source.
 
-This method is equivalent to the [`GKRandomSource`](https://developer.apple.com/documentation/gameplaykit/gkrandomsource) method [`arrayByShufflingObjects(in:)`](https://developer.apple.com/documentation/gameplaykit/gkrandomsource/arraybyshufflingobjects(in:)), but as an [`NSArray`](nsarray.md) method it preserves generic type parameters.
+This method is equivalent to the [`GKRandomSource`](../../GameplayKit/gkrandomsource.md) method [`arrayByShufflingObjects(in:)`](../../GameplayKit/gkrandomsource/arraybyshufflingobjects%28in%29.md), but as an [`NSArray`](../nsarray.md) method it preserves generic type parameters.
 
 ## Parameters
 
@@ -35,7 +40,8 @@ This method is equivalent to the [`GKRandomSource`](https://developer.apple.com/
 
 ## See Also
 
-- [func shuffled() -> [Any]](nsarray/shuffled.md)
+### Randomly Shuffling an Array
+- [func shuffled() -> [Any]](./shuffled%28%29.md)
   Returns a new array that lists this array’s elements in a random order.
 
 

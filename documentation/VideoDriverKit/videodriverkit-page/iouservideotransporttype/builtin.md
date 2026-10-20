@@ -1,7 +1,8 @@
 # BuiltIn
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The transport type identifier for video devices built into the system.
 
@@ -10,13 +11,14 @@ The transport type identifier for video devices built into the system.
 
 ## Declaration
 
-```swift
+```c
 BuiltIn
 ```
 
 ## See Also
 
-- [Unknown](videodriverkit/iouservideotransporttype/unknown.md)
+### Other transport types
+- [Unknown](./unknown.md)
   The transport type identifier returned when a device doesn’t provide a transport type.
 
 

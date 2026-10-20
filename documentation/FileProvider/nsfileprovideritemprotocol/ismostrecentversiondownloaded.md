@@ -1,7 +1,8 @@
 # isMostRecentVersionDownloaded
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the item is the most recent version downloaded from the server.
 
@@ -18,11 +19,16 @@ A Boolean value that indicates whether the item is the most recent version downl
 optional var isMostRecentVersionDownloaded: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isMostRecentVersionDownloaded) BOOL mostRecentVersionDownloaded;
+```
+
 ## See Also
 
-- [var itemVersion: NSFileProviderItemVersion](nsfileprovideritemprotocol/itemversion.md)
+### Tracking Versions
+- [var itemVersion: NSFileProviderItemVersion](./itemversion.md)
   A version object that tracks changes to an item.
-- [var versionIdentifier: Data?](nsfileprovideritemprotocol/versionidentifier.md)
+- [var versionIdentifier: Data?](./versionidentifier.md)
   A data value used to determine when the item changes.
 
 

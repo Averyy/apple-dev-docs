@@ -7,11 +7,11 @@ Returns the keyframe rule for the specified selector.
 
 ## Declaration
 
-```swift
+```
 WebKitCSSKeyframeRule findRule (in DOMString key);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the keyframe rule corresponding to the given selector if it exists.
 
@@ -21,9 +21,10 @@ Returns the keyframe rule corresponding to the given selector if it exists.
 
 ## See Also
 
-- [insertRule](webkitcsskeyframesrule/1807093-insertrule.md)
+### Changing Rules
+- [insertRule](./api-1807093-insertrule.md)
   Adds a keyframe rule to the collection of keyframes.
-- [deleteRule](webkitcsskeyframesrule/1807097-deleterule.md)
+- [deleteRule](./api-1807097-deleterule.md)
   Removes a keyframe rule from the collection of keyframes.
 
 

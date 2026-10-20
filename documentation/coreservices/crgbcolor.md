@@ -1,7 +1,8 @@
 # cRGBColor
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An RGB color value.
 

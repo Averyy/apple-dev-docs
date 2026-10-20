@@ -1,7 +1,8 @@
 # Transcript.HistoryView.SubSequence
 
 **Framework**: Foundation Models  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type that represents a contiguous subrange of the view’s entries.
 

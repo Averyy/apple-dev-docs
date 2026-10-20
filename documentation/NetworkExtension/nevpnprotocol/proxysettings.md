@@ -1,7 +1,8 @@
 # proxySettings
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The proxy settings to use for HTTP and HTTPS connections that route through the VPN.
 
@@ -20,15 +21,20 @@ The proxy settings to use for HTTP and HTTPS connections that route through the 
 var proxySettings: NEProxySettings? { get set }
 ```
 
+```objc
+@property (copy, nullable) NEProxySettings * proxySettings;
+```
+
 #### Discussion
 
 While operating under an established VPN tunnel, HTTP and HTTPS connections inside the tunnel use the given proxy settings.
 
 ## See Also
 
-- [var serverAddress: String?](nevpnprotocol/serveraddress.md)
+### Configuring the VPN
+- [var serverAddress: String?](./serveraddress.md)
   The address of the VPN server.
-- [var disconnectOnSleep: Bool](nevpnprotocol/disconnectonsleep.md)
+- [var disconnectOnSleep: Bool](./disconnectonsleep.md)
   A Boolean value that indicates whether the VPN disconnects when the device sleeps.
 
 

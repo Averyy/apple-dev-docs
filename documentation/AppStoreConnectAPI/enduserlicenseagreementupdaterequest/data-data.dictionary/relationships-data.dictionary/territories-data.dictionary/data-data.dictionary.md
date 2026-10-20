@@ -1,7 +1,8 @@
 # EndUserLicenseAgreementUpdateRequest.Data.Relationships.Territories.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of a resource that you’re relating with the resource you’re updating.
 
@@ -10,14 +11,14 @@ The type and ID of a resource that you’re relating with the resource you’re 
 
 ## Declaration
 
-```swift
+```
 object EndUserLicenseAgreementUpdateRequest.Data.Relationships.Territories.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `territories`
 
 
 ---

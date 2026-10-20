@@ -1,7 +1,8 @@
 # allowsAccessRequests
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Default value is NO. If set, the system sharing UI allows the user to configure whether participants can request access to the share.
 
@@ -16,6 +17,10 @@ Default value is NO. If set, the system sharing UI allows the user to configure 
 
 ```swift
 var allowsAccessRequests: Bool { get set }
+```
+
+```objc
+@property (assign) BOOL allowsAccessRequests;
 ```
 
 

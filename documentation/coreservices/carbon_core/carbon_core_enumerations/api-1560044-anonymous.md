@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var afpAlreadyMounted: Int](afpalreadymounted.md)
-- [var afpBadDirIDType: Int](afpbaddiridtype.md)
-- [var afpCantMountMoreSrvre: Int](afpcantmountmoresrvre.md)
-- [var afpSameNodeErr: Int](afpsamenodeerr.md)
+- [var afpAlreadyMounted: Int](../../afpalreadymounted.md)
+- [var afpBadDirIDType: Int](../../afpbaddiridtype.md)
+- [var afpCantMountMoreSrvre: Int](../../afpcantmountmoresrvre.md)
+- [var afpSameNodeErr: Int](../../afpsamenodeerr.md)
 
 
 ---

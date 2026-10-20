@@ -1,7 +1,8 @@
 # accessibilityLabel
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 Accessibility text for the annotation.
 
@@ -10,7 +11,7 @@ Accessibility text for the annotation.
 
 ## Declaration
 
-```swift
+```
 accessibilityLabel?: string;
 ```
 
@@ -20,11 +21,12 @@ The default value is `null`.
 
 ## See Also
 
-- [data](annotationconstructoroptions/data.md)
+### Creating data and titles
+- [data](./data.md)
   Data that you define and assign to the annotation.
-- [title](annotationconstructoroptions/title.md)
+- [title](./title.md)
   The text to display in the annotation’s callout.
-- [subtitle](annotationconstructoroptions/subtitle.md)
+- [subtitle](./subtitle.md)
   The text to display as a subtitle on the second line of an annotation’s callout.
 
 

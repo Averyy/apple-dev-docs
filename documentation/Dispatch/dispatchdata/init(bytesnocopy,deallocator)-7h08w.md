@@ -1,19 +1,22 @@
 # init(bytesNoCopy:deallocator:)
 
 **Framework**: Dispatch  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a data object without copying the bytes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
-- Swift ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
+- Swift - Deprecated in 4.0
+
+> **Deprecated**: Use init(bytesNoCopy: UnsafeRawBufferPointer, deallocater: Deallocator) instead
 
 ## Declaration
 
@@ -28,11 +31,12 @@ init(bytesNoCopy bytes: UnsafeBufferPointer<UInt8>, deallocator: DispatchData.De
 
 ## See Also
 
-- [init(bytes: UnsafeBufferPointer<UInt8>)](dispatchdata/init(bytes:)-mkbp.md)
+### Deprecated
+- [init(bytes: UnsafeBufferPointer<UInt8>)](./init%28bytes%29-mkbp.md)
   Initialize a data object with copied memory content.
-- [func append(UnsafePointer<UInt8>, count: Int)](dispatchdata/append(_:count:).md)
-- [func copyBytes(to: UnsafeMutablePointer<UInt8>, count: Int)](dispatchdata/copybytes(to:count:)-4ffyj.md)
-- [func copyBytes(to: UnsafeMutablePointer<UInt8>, from: Range<DispatchData.Index>)](dispatchdata/copybytes(to:from:)-6ztcb.md)
+- [func append(UnsafePointer<UInt8>, count: Int)](./append%28_,count%29.md)
+- [func copyBytes(to: UnsafeMutablePointer<UInt8>, count: Int)](./copybytes%28to,count%29-4ffyj.md)
+- [func copyBytes(to: UnsafeMutablePointer<UInt8>, from: Range<DispatchData.Index>)](./copybytes%28to,from%29-6ztcb.md)
 
 
 ---

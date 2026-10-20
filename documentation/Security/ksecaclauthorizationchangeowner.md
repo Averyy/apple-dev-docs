@@ -1,7 +1,8 @@
 # kSecACLAuthorizationChangeOwner
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 For internal system use only. Use the `CSSM_ACL_AUTHORIZATION_CHANGE_ACL` tag for changes to owner ACL entries.
 
@@ -12,6 +13,10 @@ For internal system use only. Use the `CSSM_ACL_AUTHORIZATION_CHANGE_ACL` tag fo
 
 ```swift
 let kSecACLAuthorizationChangeOwner: CFString
+```
+
+```c
+extern CFStringRef const kSecACLAuthorizationChangeOwner;
 ```
 
 

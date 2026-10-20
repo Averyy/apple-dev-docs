@@ -1,7 +1,8 @@
 # BNNSQuantizerFunctionQuantize
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that specifes conversion to a lower precision.
 
@@ -18,6 +19,10 @@ A constant that specifes conversion to a lower precision.
 
 ```swift
 var BNNSQuantizerFunctionQuantize: BNNSQuantizerFunction { get }
+```
+
+```c
+BNNSQuantizerFunctionQuantize
 ```
 
 #### Discussion
@@ -90,13 +95,14 @@ static func quantize() {
 
 ## See Also
 
-- [init(UInt32)](bnnsquantizerfunction/init(_:).md)
+### Quantization Functions
+- [init(UInt32)](./bnnsquantizerfunction/init%28_%29.md)
   Creates a new instance with the specified raw value.
-- [init(rawValue: UInt32)](bnnsquantizerfunction/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./bnnsquantizerfunction/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [var rawValue: UInt32](bnnsquantizerfunction/rawvalue.md)
+- [var rawValue: UInt32](./bnnsquantizerfunction/rawvalue.md)
   The corresponding value of the raw type.
-- [var BNNSQuantizerFunctionDequantize: BNNSQuantizerFunction](bnnsquantizerfunctiondequantize.md)
+- [var BNNSQuantizerFunctionDequantize: BNNSQuantizerFunction](./bnnsquantizerfunctiondequantize.md)
   A constant that specifes conversion to a higher precision.
 
 

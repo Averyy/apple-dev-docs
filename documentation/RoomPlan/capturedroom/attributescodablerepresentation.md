@@ -1,7 +1,8 @@
 # CapturedRoom.AttributesCodableRepresentation
 
 **Framework**: RoomPlan  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A serializable set of details that describe an object in the room.
 
@@ -23,23 +24,24 @@ struct AttributesCodableRepresentation
 ## Topics
 
 ### Creating an attributes codable representation
-- [init(from: any Decoder) throws](capturedroom/attributescodablerepresentation/init(from:).md)
+- [init(from: any Decoder) throws](./attributescodablerepresentation/init%28from%29.md)
   Deserializes an attributes codable representation from the given decoder.
-- [init(attributes: [any CapturedRoomAttribute])](capturedroom/attributescodablerepresentation/init(attributes:).md)
+- [init(attributes: [any CapturedRoomAttribute])](./attributescodablerepresentation/init%28attributes%29.md)
   Creates an attributes codable representation with the given collection of object attributes.
 ### Accessing room attributes
-- [let attributes: [any CapturedRoomAttribute]](capturedroom/attributescodablerepresentation/attributes.md)
+- [let attributes: [any CapturedRoomAttribute]](./attributescodablerepresentation/attributes.md)
   A collection of object attributes.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](capturedroom/encode(to:).md)
+### Serializing a captured room
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Serializes a captured room to the specified encoder.
 
 

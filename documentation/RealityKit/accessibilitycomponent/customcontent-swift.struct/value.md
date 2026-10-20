@@ -1,7 +1,8 @@
 # value
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string key that provides a value for the label.
 
@@ -11,7 +12,7 @@ A localized string key that provides a value for the label.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

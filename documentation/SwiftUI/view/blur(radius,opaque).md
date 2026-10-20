@@ -1,7 +1,8 @@
 # blur(radius:opaque:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a Gaussian blur to this view.
 
@@ -25,7 +26,7 @@ func blur(radius: CGFloat, opaque: Bool = false) -> some View
 
 Use `blur(radius:opaque:)` to apply a gaussian blur effect to the rendering of this view.
 
-The example below shows two [`Text`](text.md) views, the first with no blur effects, the second with `blur(radius:opaque:)` applied with the `radius` set to `2`. The larger the radius, the more diffuse the effect.
+The example below shows two [`Text`](../text.md) views, the first with no blur effects, the second with `blur(radius:opaque:)` applied with the `radius` set to `2`. The larger the radius, the more diffuse the effect.
 
 ```swift
 struct Blur: View {
@@ -40,7 +41,7 @@ struct Blur: View {
 }
 ```
 
-![A screenshot showing the effect of applying gaussian blur effect to](/images/com.apple.SwiftUI/SwiftUI-View-blurRadius@2x.png)
+![A screenshot showing the effect of applying gaussian blur effect to](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-View-blurRadius@2x.png)
 
 ## Parameters
 
@@ -49,9 +50,10 @@ struct Blur: View {
 
 ## See Also
 
-- [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some View](view/shadow(color:radius:x:y:).md)
+### Applying blur and shadows
+- [func shadow(color: Color, radius: CGFloat, x: CGFloat, y: CGFloat) -> some View](./shadow%28color,radius,x,y%29.md)
   Adds a shadow to this view.
-- [struct ColorMatrix](colormatrix.md)
+- [struct ColorMatrix](../colormatrix.md)
   A matrix to use in an RGBA color transformation.
 
 

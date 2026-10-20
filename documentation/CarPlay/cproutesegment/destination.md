@@ -1,7 +1,8 @@
 # destination
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 destination is a CPNavigationWaypoint, describing the destination of the segment.
 
@@ -14,6 +15,10 @@ destination is a CPNavigationWaypoint, describing the destination of the segment
 
 ```swift
 var destination: CPNavigationWaypoint { get }
+```
+
+```objc
+@property (nonatomic, readonly) CPNavigationWaypoint * destination;
 ```
 
 

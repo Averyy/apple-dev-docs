@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Searches the scene for entities at the specified point in the view.
@@ -25,14 +26,14 @@ An array of hit-test results.
 
 #### Discussion
 
-> ❗ **Important**: RealityKit performs hit tests (ray-casts) against collision shapes. Entities without a proper [`CollisionComponent`](collisioncomponent.md) are ignored by hit tests.
+> ❗ **Important**: RealityKit performs hit tests (ray-casts) against collision shapes. Entities without a proper [`CollisionComponent`](../collisioncomponent.md) are ignored by hit tests.
 
 ## Parameters
 
 - `point`: A point in the provided coordinate space.
 - `space`: The 2D coordinate space in which to interpret the `point`.
 - `query`: The query type.
-- `mask`: The collision mask that you can use to prevent hits with certain objects. The default value is [`all`](collisiongroup/all.md), which means the ray can hit all objects. See [`CollisionFilter`](collisionfilter.md) for details.
+- `mask`: The collision mask that you can use to prevent hits with certain objects. The default value is [`all`](../collisiongroup/all.md), which means the ray can hit all objects. See [`CollisionFilter`](../collisionfilter.md) for details.
 
 
 ---

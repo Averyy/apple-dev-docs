@@ -1,9 +1,12 @@
 # kListElementType
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An element that specifies the atom type of the elements in a list tween atom.
+
+> **Deprecated**: Tween media is deprecated in the QuickTime file format. The information that follows documents existing content containing tween media and should not be used for new development.
 
 #### Overview
 

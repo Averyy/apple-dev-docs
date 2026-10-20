@@ -1,7 +1,8 @@
 # defaultUnit
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,12 +19,15 @@
 final var defaultUnit: IntentParameter<Value>.Area? { get }
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitArea>`.
+
 ## See Also
 
-- [var unit: IntentParameter<Value>.Area?](intentparameter/unit-42nhg.md)
-- [IntentParameter.Area](intentparameter/area.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-38cqc.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-8xbaf.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Area?](./unit-42nhg.md)
+- [IntentParameter.Area](./area.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-38cqc.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-8xbaf.md)
 
 
 ---

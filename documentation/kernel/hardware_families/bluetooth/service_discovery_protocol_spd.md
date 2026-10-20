@@ -1,25 +1,27 @@
 # Service Discovery Protocol (SPD)
 
-**Framework**: Kernel
+**Framework**: Kernel  
+**Role**: API Collection
 
 ## Topics
 
 ### Service Discovery Protocol (SPD)
-- [BluetoothSDPDataElementSizeDescriptor](bluetoothsdpdataelementsizedescriptor.md)
-- [BluetoothSDPDataElementTypeDescriptor](bluetoothsdpdataelementtypedescriptor.md)
-- [BluetoothSDPErrorCode](bluetoothsdperrorcode.md)
-- [BluetoothSDPPDUID](bluetoothsdppduid.md)
-- [BluetoothSDPServiceAttributeID](bluetoothsdpserviceattributeid.md)
-- [BluetoothSDPServiceRecordHandle](bluetoothsdpservicerecordhandle.md)
-- [BluetoothSDPTransactionID](bluetoothsdptransactionid.md)
-- [BluetoothSDPUUID16](bluetoothsdpuuid16.md)
-- [BluetoothSDPUUID32](bluetoothsdpuuid32.md)
+- [BluetoothSDPDataElementSizeDescriptor](../../bluetoothsdpdataelementsizedescriptor.md)
+- [BluetoothSDPDataElementTypeDescriptor](../../bluetoothsdpdataelementtypedescriptor.md)
+- [BluetoothSDPErrorCode](../../bluetoothsdperrorcode.md)
+- [BluetoothSDPPDUID](../../bluetoothsdppduid.md)
+- [BluetoothSDPServiceAttributeID](../../bluetoothsdpserviceattributeid.md)
+- [BluetoothSDPServiceRecordHandle](../../bluetoothsdpservicerecordhandle.md)
+- [BluetoothSDPTransactionID](../../bluetoothsdptransactionid.md)
+- [BluetoothSDPUUID16](../../bluetoothsdpuuid16.md)
+- [BluetoothSDPUUID32](../../bluetoothsdpuuid32.md)
 
 ## See Also
 
-- [Low Energy (LE)](hardware_families/bluetooth/low_energy_le.md)
-- [Logical Link Control (L2C)](hardware_families/bluetooth/logical_link_control_l2c.md)
-- [Host Controller Interface (HCI)](hardware_families/bluetooth/host_controller_interface_hci.md)
+### Bluetooth Specifications
+- [Low Energy (LE)](./low_energy_le.md)
+- [Logical Link Control (L2C)](./logical_link_control_l2c.md)
+- [Host Controller Interface (HCI)](./host_controller_interface_hci.md)
 
 
 ---

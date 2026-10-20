@@ -1,7 +1,8 @@
 # unproject(_:to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Unproject a 2D point from the gesture value into 3D world coordinates.
 

@@ -1,7 +1,8 @@
 # detectsDarkOnLight
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the request detects a dark object on a light background to aid in detection.
 
@@ -26,11 +27,12 @@ The default value is `true`.
 
 ## See Also
 
-- [var contrastAdjustment: Float](detectcontoursrequest/contrastadjustment.md)
+### Configuring a request
+- [var contrastAdjustment: Float](./contrastadjustment.md)
   The amount by which to adjust the image contrast.
-- [var contrastPivot: Float?](detectcontoursrequest/contrastpivot.md)
+- [var contrastPivot: Float?](./contrastpivot.md)
   The pixel value to use as a pivot for the contrast.
-- [var maximumImageDimension: Int](detectcontoursrequest/maximumimagedimension.md)
+- [var maximumImageDimension: Int](./maximumimagedimension.md)
   The maximum image dimension to use for contour detection.
 
 

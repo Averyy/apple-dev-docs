@@ -1,7 +1,8 @@
 # PasteboardCopyPasteLocation(_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.3+
@@ -10,6 +11,10 @@
 
 ```swift
 func PasteboardCopyPasteLocation(_ inPasteboard: Pasteboard, _ outPasteLocation: UnsafeMutablePointer<CFURL?>) -> OSStatus
+```
+
+```c
+OSStatus PasteboardCopyPasteLocation(PasteboardRef inPasteboard, CFURLRef  _Nullable *outPasteLocation);
 ```
 
 

@@ -1,7 +1,8 @@
 # clear()
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all specializes arcs from the prim.
 
@@ -21,7 +22,7 @@ func clear() throws
 
 #### Discussion
 
-> **Note**: An error if the specializes cannot be cleared.
+> **Throws**: An error if the specializes cannot be cleared.
 
 
 ---

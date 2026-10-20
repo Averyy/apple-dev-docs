@@ -1,7 +1,8 @@
 # Regex.Match
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The result of matching a regular expression against a string.
 
@@ -28,19 +29,19 @@ A `Match` forwards API to the `Output` generic parameter, providing direct acces
 ## Topics
 
 ### Initializers
-- [init<OtherOutput>(Regex<OtherOutput>.Match)](regex/match/init(_:).md)
+- [init<OtherOutput>(Regex<OtherOutput>.Match)](./match/init%28_%29.md)
   Creates a regular expression match with a dynamic capture list from the given match.
 ### Instance Properties
-- [var output: Output](regex/match/output.md)
+- [var output: Output](./match/output.md)
   The output produced from the match operation.
-- [let range: Range<String.Index>](regex/match/range.md)
+- [let range: Range<String.Index>](./match/range.md)
   The range of the overall match.
 ### Subscripts
-- [subscript(String) -> AnyRegexOutput.Element?](regex/match/subscript(_:)-9bzv4.md)
+- [subscript(String) -> AnyRegexOutput.Element?](./match/subscript%28_%29-9bzv4.md)
   Accesses the capture with the specified name, if a capture with that name exists.
-- [subscript<Capture>(Reference<Capture>) -> Capture](regex/match/subscript(_:)-vbin.md)
+- [subscript<Capture>(Reference<Capture>) -> Capture](./match/subscript%28_%29-vbin.md)
   Accesses this match’s capture by the given reference.
-- [subscript<T>(dynamicMember _: KeyPath<Output, T>) -> T](regex/match/subscript(dynamicmember:).md)
+- [subscript<T>(dynamicMember _: KeyPath<Output, T>) -> T](./match/subscript%28dynamicmember%29.md)
   Accesses a capture by its name or number.
 
 

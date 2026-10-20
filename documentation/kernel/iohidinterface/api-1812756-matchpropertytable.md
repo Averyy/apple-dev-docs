@@ -7,7 +7,7 @@ Called by the provider during a match
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool matchPropertyTable( 
  OSDictionary *table, 
  SInt32 *score);
@@ -23,11 +23,12 @@ Compare the properties in the supplied table to this object's properties.
 
 ## See Also
 
-- [free](iohidinterface/1812725-free.md)
+### Miscellaneous
+- [free](./api-1812725-free.md)
   Free the IOHIDInterface object.
-- [init](iohidinterface/1812739-init.md)
+- [init](./api-1812739-init.md)
   Initialize an IOHIDInterface object.
-- [start](iohidinterface/1812781-start.md)
+- [start](./api-1812781-start.md)
   Start up the driver using the given provider.
 
 

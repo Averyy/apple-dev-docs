@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an appearance object from data in an unarchiver.
 
@@ -18,11 +19,16 @@ Creates an appearance object from data in an unarchiver.
 init(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [init(style: UITabBarItemAppearance.Style)](uitabbaritemappearance/init(style:).md)
+### Creating a tab bar item appearance object
+- [init(style: UITabBarItemAppearance.Style)](./init%28style%29.md)
   Creates an appearance object with appropriate default values for a tab bar, displaying its items with the specified layout style.
-- [convenience init()](uitabbaritemappearance/init.md)
+- [convenience init()](./init%28%29.md)
   Creates an appearance object with default values for a stacked tab bar item.
 
 

@@ -1,7 +1,8 @@
 # send()
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a void value to the subscriber.
 
@@ -20,9 +21,11 @@ Sends a void value to the subscriber.
 func send()
 ```
 
+Available when `Output` is `()`.
+
 ## Mentions
 
-- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
+- [Using Combine for Your App’s Asynchronous Code](../using-combine-for-your-app-s-asynchronous-code.md)
 
 #### Discussion
 
@@ -30,7 +33,8 @@ Use `Void` inputs and outputs when you want to signal that an event has occurred
 
 ## See Also
 
-- [func send(Self.Output)](subject/send(_:).md)
+### Delivering elements to subscribers
+- [func send(Self.Output)](./send%28_%29.md)
   Sends a value to the subscriber.
 
 

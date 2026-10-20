@@ -1,7 +1,8 @@
 # init(integerLiteral:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a scalar parameter from an integer literal.
 
@@ -11,7 +12,7 @@ Creates a scalar parameter from an integer literal.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ init(integerLiteral value: Int)
 
 ## See Also
 
-- [init(floatLiteral: Float)](materialscalarparameter/init(floatliteral:).md)
+### Creating a scalar parameter
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates a scalar parameter from a floating-point literal.
 
 

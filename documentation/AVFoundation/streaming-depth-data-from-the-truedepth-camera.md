@@ -1,6 +1,8 @@
 # Streaming depth data from the TrueDepth camera
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Sample Code  
+**Download**: [StreamingDepthDataFromTheTrueDepthCamera.zip](https://docs-assets.developer.apple.com/published/1bc13e22cdde/StreamingDepthDataFromTheTrueDepthCamera.zip)
 
 Visualize depth data in 2D and 3D from the TrueDepth camera.
 
@@ -18,7 +20,7 @@ The sample shows two different views: a 2D view that distinguishes depth values 
 
 To see this sample app in action, build and run the project in Xcode on an iOS device running iOS 11 or later. Because Xcode doesn’t have access to the TrueDepth camera, this sample will not build or run in the Xcode simulator.
 
-##### Set Up a Capture Session
+##### Set up a capture session
 
 Set up an `AVCaptureSession` on a separate thread via the session queue. Initialize this session queue before configuring the camera for capture, like so:
 
@@ -34,7 +36,7 @@ sessionQueue.async {
 }
 ```
 
-Setting up the camera for video capture follows many of the same steps as normal video capture. See [`Setting up a capture session`](setting-up-a-capture-session.md) for details on configuring streaming setup.
+Setting up the camera for video capture follows many of the same steps as normal video capture. See [Setting up a capture session](./setting-up-a-capture-session.md) for details on configuring streaming setup.
 
 On top of normal setup, request depth data by declaring a separate output:
 
@@ -86,7 +88,7 @@ outputSynchronizer!.setDelegate(self, queue: dataOutputQueue)
 
 The `CameraViewController` implementation creates and manages this session to interface with the camera. It also contains UI to toggle between the two viewing modes, 2D and 3D.
 
-##### Visualize Depth Data in 2d
+##### Visualize depth data in 2D
 
 The sample uses JET color coding to distinguish depth values, ranging from red (close) to blue (far). A slider controls the blending of the color code and the actual color values. Touching a pixel displays its depth value.
 
@@ -102,7 +104,7 @@ guard let cvTexture = cvTextureOut, let texture = CVMetalTextureGetTexture(cvTex
 }
 ```
 
-##### Visualize Depth Data in 3d
+##### Visualize depth data in 3D
 
 The sample’s 3D viewer renders data as a point cloud. Control the camera with the following gestures:
 
@@ -161,7 +163,7 @@ if (kCVReturnSuccess != CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDe
 id<MTLTexture> colorTexture = CVMetalTextureGetTexture(cvColorTexture);
 ```
 
-##### Track Thermal State
+##### Track thermal state
 
 Processing depth data from a live stream may cause the device to heat up. Keep tabs on the thermal state so you can alert the user if it exceeds a dangerous threshold.
 
@@ -196,21 +198,22 @@ func showThermalState(state: ProcessInfo.ThermalState) {
 
 ## See Also
 
-- [Capturing photos with depth](capturing-photos-with-depth.md)
+### Depth data capture
+- [Capturing photos with depth](./capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
+- [Creating auxiliary depth data manually](./creating-auxiliary-depth-data-manually.md)
   Generate a depth image and attach it to your own image.
-- [Capturing depth using the LiDAR camera](capturing-depth-using-the-lidar-camera.md)
+- [Capturing depth using the LiDAR camera](./capturing-depth-using-the-lidar-camera.md)
   Access the LiDAR camera on supporting devices to capture precise depth data.
-- [AVCamFilter: Applying filters to a capture stream](avcamfilter-applying-filters-to-a-capture-stream.md)
+- [AVCamFilter: Applying filters to a capture stream](./avcamfilter-applying-filters-to-a-capture-stream.md)
   Render a capture stream with rose-colored filtering and depth effects.
-- [Enhancing live video by leveraging TrueDepth camera data](enhancing-live-video-by-leveraging-truedepth-camera-data.md)
+- [Enhancing live video by leveraging TrueDepth camera data](./enhancing-live-video-by-leveraging-truedepth-camera-data.md)
   Apply your own background to a live capture feed streamed from the front-facing TrueDepth camera.
-- [class AVCaptureDepthDataOutput](avcapturedepthdataoutput.md)
+- [class AVCaptureDepthDataOutput](./avcapturedepthdataoutput.md)
   A capture output that records scene depth information on compatible camera devices.
-- [class AVDepthData](avdepthdata.md)
+- [class AVDepthData](./avdepthdata.md)
   A container for per-pixel distance or disparity information captured by compatible camera devices.
-- [class AVCameraCalibrationData](avcameracalibrationdata.md)
+- [class AVCameraCalibrationData](./avcameracalibrationdata.md)
   Information about the camera characteristics used to capture images and depth data.
 
 

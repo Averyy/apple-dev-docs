@@ -1,7 +1,8 @@
 # Create
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 Creates a new dispatch queue object.
 
@@ -11,13 +12,21 @@ Creates a new dispatch queue object.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+static kern_return_t Create(const IODispatchQueueName name, uint64_t options, uint64_t priority, IODispatchQueue **queue);
+```
+
+*macOS*
+
+```c
 static kern_return_t Create(const char *name, uint64_t options, uint64_t priority, IODispatchQueue **queue);
 ```
 
-#### Return_value
+#### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md). 
 
 #### Discussion
 
@@ -30,9 +39,10 @@ Creates a new dispatch queue object. All queues are currently serial, executing 
 
 ## See Also
 
-- [- init](iodispatchqueue/3438198-init.md)
+### Creating a Dispatch Queue
+- [- init](./api-3438198-init.md)
   Initializes the dispatch queue object.
-- [- free](iodispatchqueue/3438197-free.md)
+- [- free](./api-3438197-free.md)
   Performs any final cleanup for the dispatch queue object.
 
 

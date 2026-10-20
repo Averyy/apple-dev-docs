@@ -1,7 +1,8 @@
 # ProximityReaderDiscovery.ContentError.unknown
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the framework encountered a problem that the system can’t interpret.
 
@@ -18,15 +19,16 @@ case unknown
 
 ## See Also
 
-- [ProximityReaderDiscovery.ContentError.contentNotFound](proximityreaderdiscovery/contenterror/contentnotfound.md)
+### Getting the errors
+- [ProximityReaderDiscovery.ContentError.contentNotFound](./contentnotfound.md)
   An error that indicates the requested content isn’t available.
-- [ProximityReaderDiscovery.ContentError.contentDisplayFailed](proximityreaderdiscovery/contenterror/contentdisplayfailed.md)
+- [ProximityReaderDiscovery.ContentError.contentDisplayFailed](./contentdisplayfailed.md)
   An error that indicates an issue occurred when trying to display the requested content.
-- [ProximityReaderDiscovery.ContentError.notSupported](proximityreaderdiscovery/contenterror/notsupported.md)
+- [ProximityReaderDiscovery.ContentError.notSupported](./notsupported.md)
   An error that indicates the current device doesn’t support the requested content.
-- [ProximityReaderDiscovery.ContentError.networkUnavailable](proximityreaderdiscovery/contenterror/networkunavailable.md)
+- [ProximityReaderDiscovery.ContentError.networkUnavailable](./networkunavailable.md)
   An error that indicates the system can’t reach the network.
-- [ProximityReaderDiscovery.ContentError.systemBusy](proximityreaderdiscovery/contenterror/systembusy.md)
+- [ProximityReaderDiscovery.ContentError.systemBusy](./systembusy.md)
   An error that indicates the system is busy.
 
 

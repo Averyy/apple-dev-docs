@@ -1,7 +1,8 @@
 # handle(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the system launched your app to resume an extended runtime session.
 
@@ -12,6 +13,10 @@ Tells the delegate that the system launched your app to resume an extended runti
 
 ```swift
 optional func handle(_ extendedRuntimeSession: WKExtendedRuntimeSession)
+```
+
+```objc
+- (void) handleExtendedRuntimeSession:(WKExtendedRuntimeSession *) extendedRuntimeSession;
 ```
 
 #### Discussion

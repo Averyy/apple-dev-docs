@@ -1,7 +1,8 @@
 # PreviewApplication
 
 **Framework**: Quick Look  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class you use to configure and launch the platform Quick Look application.
 
@@ -17,9 +18,9 @@ final class PreviewApplication
 ## Topics
 
 ### Type Methods
-- [class func open(items: [PreviewItem], selectedItem: PreviewItem?) -> PreviewSession](previewapplication/open(items:selecteditem:).md)
+- [class func open(items: [PreviewItem], selectedItem: PreviewItem?) -> PreviewSession](./previewapplication/open%28items,selecteditem%29.md)
   Previews the provided items.
-- [class func open(urls: [URL], selectedURL: URL?) -> PreviewSession](previewapplication/open(urls:selectedurl:).md)
+- [class func open(urls: [URL], selectedURL: URL?) -> PreviewSession](./previewapplication/open%28urls,selectedurl%29.md)
   Previews the provided URLs.
 
 

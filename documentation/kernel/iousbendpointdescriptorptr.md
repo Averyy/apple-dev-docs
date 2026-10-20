@@ -1,7 +1,8 @@
 # IOUSBEndpointDescriptorPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 A pointer to the endpoint descriptor.
 
@@ -10,21 +11,22 @@ A pointer to the endpoint descriptor.
 
 ## Declaration
 
-```swift
+```c
 typedef IOUSBEndpointDescriptor *IOUSBEndpointDescriptorPtr;
 ```
 
 ## See Also
 
-- [IOUSBEndpointDescriptor](iousbendpointdescriptor.md)
+### Endpoint Descriptors
+- [IOUSBEndpointDescriptor](./iousbendpointdescriptor.md)
   The structure for storing an endpoint descriptor.
-- [IOUSBStandardEndpointDescriptors](iousbstandardendpointdescriptors.md)
+- [IOUSBStandardEndpointDescriptors](./iousbstandardendpointdescriptors.md)
   A container for descriptors for a single endpoint.
-- [IOUSBEndpointProperties](iousbendpointproperties.md)
+- [IOUSBEndpointProperties](./iousbendpointproperties.md)
   A structure that holds USB endpoint properties.
-- [IOUSBEndpointPropertiesPtr](iousbendpointpropertiesptr.md)
+- [IOUSBEndpointPropertiesPtr](./iousbendpointpropertiesptr.md)
   A pointer to an endpoint properties object.
-- [IOUSBGetEndpointDescriptorOptions](iousbgetendpointdescriptoroptions.md)
+- [IOUSBGetEndpointDescriptorOptions](./iousbgetendpointdescriptoroptions.md)
   Options for fetching the endpoint descriptors of a pipe.
 
 

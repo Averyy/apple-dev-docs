@@ -1,7 +1,8 @@
 # source
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that identifies the origin of this zone configuration.
 
@@ -21,7 +22,7 @@ let source: HKWorkoutZoneConfiguration.Source
 
 ## Mentions
 
-- [Accessing workout zone data](accessing-workout-zone-data.md)
+- [Accessing workout zone data](../accessing-workout-zone-data.md)
 
 #### Discussion
 
@@ -29,7 +30,8 @@ The source indicates whether the system generated the zones automatically, the p
 
 ## See Also
 
-- [HKWorkoutZoneConfiguration.Source](hkworkoutzoneconfiguration/source-swift.enum.md)
+### Identifying the configuration source
+- [HKWorkoutZoneConfiguration.Source](./source-swift.enum.md)
   An enumeration that identifies the origin of the zone configuration.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,11 +18,11 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothVoiceSettingAirCodingFormatALaw](1640052-anonymous/kbluetoothvoicesettingaircodingformatalaw.md)
-- [kBluetoothVoiceSettingAirCodingFormatCVSD](1640052-anonymous/kbluetoothvoicesettingaircodingformatcvsd.md)
-- [kBluetoothVoiceSettingAirCodingFormatMask](1640052-anonymous/kbluetoothvoicesettingaircodingformatmask.md)
-- [kBluetoothVoiceSettingAirCodingFormatTransparentData](1640052-anonymous/kbluetoothvoicesettingaircodingformattransparentdata.md)
-- [kBluetoothVoiceSettingAirCodingFormatULaw](1640052-anonymous/kbluetoothvoicesettingaircodingformatulaw.md)
+- [kBluetoothVoiceSettingAirCodingFormatALaw](./api-1640052-anonymous/kbluetoothvoicesettingaircodingformatalaw.md)
+- [kBluetoothVoiceSettingAirCodingFormatCVSD](./api-1640052-anonymous/kbluetoothvoicesettingaircodingformatcvsd.md)
+- [kBluetoothVoiceSettingAirCodingFormatMask](./api-1640052-anonymous/kbluetoothvoicesettingaircodingformatmask.md)
+- [kBluetoothVoiceSettingAirCodingFormatTransparentData](./api-1640052-anonymous/kbluetoothvoicesettingaircodingformattransparentdata.md)
+- [kBluetoothVoiceSettingAirCodingFormatULaw](./api-1640052-anonymous/kbluetoothvoicesettingaircodingformatulaw.md)
 
 
 ---

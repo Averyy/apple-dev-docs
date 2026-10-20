@@ -1,16 +1,17 @@
 # SetDataQueue
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns the specified dispatch source to this object.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetDataQueue(IODataQueueDispatchSource *dataQueue);
 ```
 
@@ -28,7 +29,8 @@ Use this method to change the dispatch queue that this object uses to perform ta
 
 ## See Also
 
-- [CopyDataQueue](iousernetworkpacketqueue/copydataqueue.md)
+### Managing the Data Queue
+- [CopyDataQueue](./copydataqueue.md)
   Returns the dispatch queue that this object uses to execute tasks.
 
 

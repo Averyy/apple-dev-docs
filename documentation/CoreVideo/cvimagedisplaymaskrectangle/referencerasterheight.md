@@ -1,7 +1,8 @@
 # referenceRasterHeight
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the height in pixels of the 2D coordinate system to define the rectangle.
 

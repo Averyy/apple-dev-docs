@@ -2,6 +2,7 @@
 
 **Framework**: LockedCameraCapture  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 **Availability**:

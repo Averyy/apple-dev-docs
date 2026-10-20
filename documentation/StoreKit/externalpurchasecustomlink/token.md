@@ -1,7 +1,8 @@
 # ExternalPurchaseCustomLink.Token
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A token you use with the External Purchase custom link API.
 
@@ -22,33 +23,34 @@ struct Token
 
 #### Overview
 
-StoreKit returns an external purchase token of this type when you call the [`token(for:)`](externalpurchasecustomlink/token(for:)-6pixj.md) function. For more information, see [`Receiving and decoding external purchase tokens`](receiving-and-decoding-external-purchase-tokens.md).
+StoreKit returns an external purchase token of this type when you call the [`token(for:)`](./token%28for%29-6pixj.md) function. For more information, see [Receiving and decoding external purchase tokens](../receiving-and-decoding-external-purchase-tokens.md).
 
 ## Topics
 
 ### Getting the token value
-- [let value: String](externalpurchasecustomlink/token/value.md)
+- [let value: String](./token/value.md)
   A Base64URL-encoded JSON string that represents the external purchase token.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum ExternalPurchaseCustomLink](externalpurchasecustomlink.md)
+### Implementing external purchases in the EU
+- [enum ExternalPurchaseCustomLink](../externalpurchasecustomlink.md)
   An enumeration that enables qualifying apps to offer custom links for external purchases and use alternative payment service providers.
-- [StoreKit external purchases or offers entitlement](../bundleresources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
+- [StoreKit external purchases or offers entitlement](../../BundleResources/entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
   An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
-- [com.apple.developer.storekit.external-purchase-link](../bundleresources/entitlements/com.apple.developer.storekit.external-purchase-link.md)
+- [com.apple.developer.storekit.external-purchase-link](../../BundleResources/entitlements/com.apple.developer.storekit.external-purchase-link.md)
   A Boolean value that indicates whether your app can include a link that directs people to a website to make an external purchase.
-- [SKExternalPurchaseCustomLinkRegions](../bundleresources/information-property-list/skexternalpurchasecustomlinkregions.md)
+- [SKExternalPurchaseCustomLinkRegions](../../BundleResources/information-property-list/skexternalpurchasecustomlinkregions.md)
   An array of country code strings that indicate the regions where your app supports custom links for the communication and promotion of offers.
-- [Testing transactions that use custom link tokens](testing-transactions-that-use-custom-link-tokens.md)
+- [Testing transactions that use custom link tokens](../testing-transactions-that-use-custom-link-tokens.md)
   Recognize custom link tokens that your app receives in the sandbox testing environment, and use them to test reporting transactions.
 
 

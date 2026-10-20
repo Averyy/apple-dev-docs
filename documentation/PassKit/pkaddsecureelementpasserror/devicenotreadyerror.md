@@ -1,7 +1,8 @@
 # deviceNotReadyError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The device isn’t ready to add Secure Element passes.
 
@@ -9,7 +10,7 @@ The device isn’t ready to add Secure Element passes.
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 13.4+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 6.2+
 
@@ -21,17 +22,18 @@ static var deviceNotReadyError: PKAddSecureElementPassError.Code { get }
 
 ## See Also
 
-- [static var deviceNotSupportedError: PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/devicenotsupportederror.md)
+### Identifying errors
+- [static var deviceNotSupportedError: PKAddSecureElementPassError.Code](./devicenotsupportederror.md)
   The device doesn’t support adding Secure Element passes.
-- [static var invalidConfigurationError: PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/invalidconfigurationerror.md)
+- [static var invalidConfigurationError: PKAddSecureElementPassError.Code](./invalidconfigurationerror.md)
   An error that occurs when they system attempts to add a Secure Element pass using an invalid configuration.
-- [static var unavailableError: PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/unavailableerror.md)
+- [static var unavailableError: PKAddSecureElementPassError.Code](./unavailableerror.md)
   PassKit is temporarily unable to add Secure Element passes.
-- [static var unknownError: PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/unknownerror.md)
+- [static var unknownError: PKAddSecureElementPassError.Code](./unknownerror.md)
   An error that occurs when PassKit cancels the addition of a Secure Element pass due to an unknown failure.
-- [static var userCanceledError: PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/usercancelederror.md)
+- [static var userCanceledError: PKAddSecureElementPassError.Code](./usercancelederror.md)
   An error that occurs when the user cancels the addition of a Secure Element pass.
-- [PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/code.md)
+- [PKAddSecureElementPassError.Code](./code.md)
   Error codes for problems that occur when you add a secure element passes.
 
 

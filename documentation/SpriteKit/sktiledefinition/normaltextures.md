@@ -1,9 +1,10 @@
 # normalTextures
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-An array of [`SKTexture`](sktexture.md) objects used to generate the normals for the tile to simulate 3D lighting.
+An array of [`SKTexture`](../sktexture.md) objects used to generate the normals for the tile to simulate 3D lighting.
 
 **Availability**:
 - iOS 10.0+
@@ -20,15 +21,20 @@ An array of [`SKTexture`](sktexture.md) objects used to generate the normals for
 var normalTextures: [SKTexture] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<SKTexture *> * normalTextures;
+```
+
 #### Discussion
 
 If the tile is non-animated, this will be an array containing one texture.
 
 ## See Also
 
-- [var textures: [SKTexture]](sktiledefinition/textures.md)
-  An array of [`SKTexture`](sktexture.md) objects that defines the tile definition object’s content.
-- [var timePerFrame: CGFloat](sktiledefinition/timeperframe.md)
+### Configure Animated Tile Properties
+- [var textures: [SKTexture]](./textures.md)
+  An array of [`SKTexture`](../sktexture.md) objects that defines the tile definition object’s content.
+- [var timePerFrame: CGFloat](./timeperframe.md)
   The duration, in seconds, that each texture in the textures array is displayed before switching to the next texture in the sequence.
 
 

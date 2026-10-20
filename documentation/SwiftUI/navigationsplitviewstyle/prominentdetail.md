@@ -1,7 +1,8 @@
 # prominentDetail
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A navigation split style that attempts to maintain the size of the detail content when hiding or showing the leading columns.
 
@@ -21,11 +22,14 @@ A navigation split style that attempts to maintain the size of the detail conten
 @preconcurrency static var prominentDetail: ProminentDetailNavigationSplitViewStyle { get }
 ```
 
+Available when `Self` is `ProminentDetailNavigationSplitViewStyle`.
+
 ## See Also
 
-- [static var automatic: AutomaticNavigationSplitViewStyle](navigationsplitviewstyle/automatic.md)
+### Creating built-in styles
+- [static var automatic: AutomaticNavigationSplitViewStyle](./automatic.md)
   A navigation split style that resolves its appearance automatically based on the current context.
-- [static var balanced: BalancedNavigationSplitViewStyle](navigationsplitviewstyle/balanced.md)
+- [static var balanced: BalancedNavigationSplitViewStyle](./balanced.md)
   A navigation split style that reduces the size of the detail content to make room when showing the leading column or columns.
 
 

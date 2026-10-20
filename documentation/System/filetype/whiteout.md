@@ -1,7 +1,8 @@
 # whiteout
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Whiteout file
 

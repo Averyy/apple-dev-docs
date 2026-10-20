@@ -1,7 +1,8 @@
 # insertRule
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - Safari Desktop 9.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```
 unsigned long insertRule(
     DOMString rule, 
     unsigned long index

@@ -1,7 +1,8 @@
 # clearUserGesture(in:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the app to clear a user gesture in a specific tab.
 
@@ -18,6 +19,10 @@ Called by the app to clear a user gesture in a specific tab.
 func clearUserGesture(in tab: any WKWebExtensionTab)
 ```
 
+```objc
+- (void) clearUserGestureInTab:(id<WKWebExtensionTab>) tab;
+```
+
 #### Discussion
 
 When a user gesture is no longer relevant in a tab, this method should be called to update the extension context.
@@ -30,7 +35,8 @@ This will revoke the extension’s access to features that require active user i
 
 ## See Also
 
-- [func userGesturePerformed(in: any WKWebExtensionTab)](wkwebextensioncontext/usergestureperformed(in:).md)
+### Related Documentation
+- [func userGesturePerformed(in: any WKWebExtensionTab)](./usergestureperformed%28in%29.md)
   Should be called by the app when a user gesture is performed in a specific tab.
 
 

@@ -1,7 +1,8 @@
 # createXPCRepresentation()
 
 **Framework**: BrowserEngineKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an object representing this handle that you send to another process in an XPC message.
 
@@ -15,9 +16,14 @@ Creates an object representing this handle that you send to another process in a
 func createXPCRepresentation() -> xpc_object_t
 ```
 
+```objc
+- (xpc_object_t) createXPCRepresentation;
+```
+
 ## See Also
 
-- [init(xpcRepresentation: xpc_object_t?) throws](layerhierarchyhandle/init(xpcrepresentation:).md)
+### Sharing a layer hierarchy handle using XPC
+- [init(xpcRepresentation: xpc_object_t?) throws](./init%28xpcrepresentation%29.md)
   Creates a handle from a representation received in an XPC message.
 
 

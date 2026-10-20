@@ -1,7 +1,8 @@
 # SpatialTrackingSession.UnavailableCapabilities
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains the unavailable capabilities of the current spatial tracking session.
 
@@ -19,39 +20,40 @@ struct UnavailableCapabilities
 ## Topics
 
 ### Initializers
-- [init()](spatialtrackingsession/unavailablecapabilities/init.md)
+- [init()](./unavailablecapabilities/init%28%29.md)
   Creates an unavailable capabilities instance.
 ### Instance Properties
-- [var anchor: Set<SpatialTrackingSession.Configuration.AnchorCapability>](spatialtrackingsession/unavailablecapabilities/anchor.md)
+- [var anchor: Set<SpatialTrackingSession.Configuration.AnchorCapability>](./unavailablecapabilities/anchor.md)
   A type that contains all unavailable anchor capabilities.
-- [var debugDescription: String](spatialtrackingsession/unavailablecapabilities/debugdescription.md)
-- [var missingAuthorizations: Set<ARKitSession.AuthorizationType>](spatialtrackingsession/unavailablecapabilities/missingauthorizations.md)
+- [var debugDescription: String](./unavailablecapabilities/debugdescription.md)
+- [var missingAuthorizations: Set<ARKitSession.AuthorizationType>](./unavailablecapabilities/missingauthorizations.md)
   The set of requested ARKit authorizations that the user doesn’t approve.
-- [var missingCameraAuthorization: Bool?](spatialtrackingsession/unavailablecapabilities/missingcameraauthorization.md)
+- [var missingCameraAuthorization: Bool?](./unavailablecapabilities/missingcameraauthorization.md)
   Whether the person using the device approves the camera authorization or not.
-- [var sceneUnderstanding: Set<SpatialTrackingSession.Configuration.SceneUnderstandingCapability>](spatialtrackingsession/unavailablecapabilities/sceneunderstanding.md)
+- [var sceneUnderstanding: Set<SpatialTrackingSession.Configuration.SceneUnderstandingCapability>](./unavailablecapabilities/sceneunderstanding.md)
   A type that contains all unavailable scene-understanding capabilities.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Escapable](../../Swift/escapable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SpatialTrackingSession](spatialtrackingsession.md)
+### Spatial tracking
+- [class SpatialTrackingSession](../spatialtrackingsession.md)
   An object that incorporates spatial tracking capabilities into your RealityKit apps.
-- [SpatialTrackingSession.Configuration](spatialtrackingsession/configuration.md)
+- [SpatialTrackingSession.Configuration](./configuration.md)
   A type for configuring the spatial tracking session.
-- [SpatialTrackingSession.Configuration.AnchorCapability](spatialtrackingsession/configuration/anchorcapability.md)
+- [SpatialTrackingSession.Configuration.AnchorCapability](./configuration/anchorcapability.md)
   A type that defines various anchor tracking capabilities.
-- [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](spatialtrackingsession/configuration/sceneunderstandingcapability.md)
+- [SpatialTrackingSession.Configuration.SceneUnderstandingCapability](./configuration/sceneunderstandingcapability.md)
   Defines how system behaviors use scene understanding.
-- [SpatialTrackingSession.Configuration.Camera](spatialtrackingsession/configuration/camera.md)
+- [SpatialTrackingSession.Configuration.Camera](./configuration/camera.md)
   Defines the camera feed the RealityView renders.
 
 

@@ -1,7 +1,8 @@
 # unavailable
 
 **Framework**: Foveated Streaming  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A disconnect reason indicating the foveated streaming service is currently unavailable.
 

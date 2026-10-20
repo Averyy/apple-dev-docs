@@ -1,7 +1,8 @@
 # ExtensibleSSOPlatformSSOObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The dictionary to configure Platform SSO.
 
@@ -10,46 +11,59 @@ The dictionary to configure Platform SSO.
 
 ## Declaration
 
-```swift
+```
 object ExtensibleSSOPlatformSSOObject
 ```
 
 ## Topics
 
 ### Objects
-- [object ExtensibleSSOPlatformSSO_AccessKeyObject](extensiblessoplatformsso_accesskeyobject.md)
+- [object ExtensibleSSOPlatformSSO_AccessKeyObject](./extensiblessoplatformsso_accesskeyobject.md)
   Settings for Access Key authentication.
-- [object ExtensibleSSOPlatformSSO_AccountObject](extensiblessoplatformsso_accountobject.md)
+- [object ExtensibleSSOPlatformSSO_AccountObject](./extensiblessoplatformsso_accountobject.md)
   Account display and profile settings.
-- [object ExtensibleSSOPlatformSSO_AdditionalHTTPHeadersObject](extensiblessoplatformsso_additionalhttpheadersobject.md)
+- [object ExtensibleSSOPlatformSSO_AdditionalHTTPHeadersObject](./extensiblessoplatformsso_additionalhttpheadersobject.md)
   A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.
-- [object ExtensibleSSOPlatformSSO_AuthorizationObject](extensiblessoplatformsso_authorizationobject.md)
+- [object ExtensibleSSOPlatformSSO_AuthorizationObject](./extensiblessoplatformsso_authorizationobject.md)
   Settings for authorization prompts and group management.
-- [object ExtensibleSSOPlatformSSO_PoliciesObject](extensiblessoplatformsso_policiesobject.md)
+- [object ExtensibleSSOPlatformSSO_PoliciesObject](./extensiblessoplatformsso_policiesobject.md)
   Policies for login, unlock, and FileVault behavior.
-- [object ExtensibleSSOPlatformSSO_UserCreationObject](extensiblessoplatformsso_usercreationobject.md)
+- [object ExtensibleSSOPlatformSSO_UserCreationObject](./extensiblessoplatformsso_usercreationobject.md)
   Settings for creating new users via Platform SSO.
-- [object ExtensibleSSOPlatformSSO_WebAuthenticationObject](extensiblessoplatformsso_webauthenticationobject.md)
+- [object ExtensibleSSOPlatformSSO_WebAuthenticationObject](./extensiblessoplatformsso_webauthenticationobject.md)
   Settings for web authentication behavior.
 
 ## Properties
 
 - `AccessKey` (ExtensibleSSOPlatformSSO_AccessKeyObject): Settings for Access Key authentication.
 - `Account` (ExtensibleSSOPlatformSSO_AccountObject): Account display and profile settings.
-- `AdditionalHTTPHeaders` (ExtensibleSSOPlatformSSO_AdditionalHTTPHeadersObject): A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters. Available: macOS 27.2+
+- `AdditionalHTTPHeaders` (ExtensibleSSOPlatformSSO_AdditionalHTTPHeadersObject): A dictionary with keys and values that are strings. The keys are HTTP header names, and the values are HTTP header values. The device adds these headers to nonce, pre-authentication, login, key and key exchange requests for Platform SSO. The device limits the number of headers to 20, the length of the header name to 128 characters, and the length of the header value to 2048 characters.
+
+  Available: macOS 27.2+
 - `AllowDeviceIdentifiersInAttestation` (boolean): If `true`, the system includes the device UDID and serial number in Platform SSO attestations.
+
+  **Default**: `false`
 - `AuthenticationMethod` (string): The Platform SSO authentication method to use with the extension. Requires that the SSO Extension also support the method.
+
+  **Allowed Values**: `Password`, `UserSecureEnclaveKey`, `SmartCard`, `OpenID`
 - `Authorization` (ExtensibleSSOPlatformSSO_AuthorizationObject): Settings for authorization prompts and group management.
 - `LoginFrequency` (integer): The duration, in seconds, until the system requires a full login instead of a refresh. The default value is 64,800 (18 hours). The minimum value is 3600 (1 hour).
+
+  **Default**: `64800`; **Minimum**: `3600`
 - `Policies` (ExtensibleSSOPlatformSSO_PoliciesObject): Policies for login, unlock, and FileVault behavior.
 - `RegistrationToken` (string): The token this device uses for registration with Platform SSO. Use it for silent registration with the Identity Provider. Requires that `AuthenticationMethod` in `PlatformSSO` isn’t empty.
 - `UserCreation` (ExtensibleSSOPlatformSSO_UserCreationObject): Settings for creating new users via Platform SSO.
-- `UseSharedDeviceKeys` (boolean): If `true`, the system uses the same signing and encryption keys for all users. Allowed scopes: system
+- `UseSharedDeviceKeys` (boolean): If `true`, the system uses the same signing and encryption keys for all users.
+
+  Allowed scopes: system
+
+  **Default**: `false`
 - `WebAuthentication` (ExtensibleSSOPlatformSSO_WebAuthenticationObject): Settings for web authentication behavior.
 
 ## See Also
 
-- [object ExtensibleSSOExtensionDataObject](extensiblessoextensiondataobject.md)
+### Objects
+- [object ExtensibleSSOExtensionDataObject](./extensiblessoextensiondataobject.md)
   A dictionary of arbitrary data passed through to the app extension.
 
 

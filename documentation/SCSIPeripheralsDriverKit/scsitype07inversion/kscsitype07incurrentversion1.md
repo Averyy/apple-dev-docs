@@ -1,7 +1,8 @@
 # kScsiType07InCurrentVersion1
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Version 1 of the Type07 inbound interface.
 
@@ -10,7 +11,7 @@ Version 1 of the Type07 inbound interface.
 
 ## Declaration
 
-```swift
+```c
 kScsiType07InCurrentVersion1
 ```
 

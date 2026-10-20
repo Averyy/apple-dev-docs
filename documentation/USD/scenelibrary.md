@@ -1,6 +1,7 @@
 # sceneLibrary
 
-**Framework**: USD
+**Framework**: USD  
+**Role**: Article
 
 Metadata that partitions an asset into scene-based units.
 
@@ -9,7 +10,7 @@ Metadata that partitions an asset into scene-based units.
 Set a prim’s `kind` metadata to `sceneLibrary` to create a *scene.* Partitioning an asset’s contents into multiple scenes offers the following benefits:
 
 - Prims segment content into distinct parts that have differing utilities and lifetimes.
-- Unlike USD [`Variant Sets`](https://developer.apple.comhttps://openusd.org/docs/Authoring-Variants.html), you can mark each scene active or inactive independently.
+- Unlike USD [Variant Sets](https://openusd.org/docs/Authoring-Variants.html), you can mark each scene active or inactive independently.
 - Actions can operate on scenes.
 
 The runtime doesn’t support multiple active scenes in a single file. When a USDZ file loads, the runtime displays the first active scene. The runtime ignores nested scenes. If an asset doesn’t define a scene, the runtime loads the full file contents as a single scene.
@@ -24,7 +25,7 @@ This specification is backward compatible because of the way traditional USD run
 kind = "sceneLibrary"
 ```
 
-##### Partition Content Into Scenes
+##### Partition content into scenes
 
 The following example demonstrates a scene template on which you can base your asset.
 
@@ -56,9 +57,10 @@ Use the `sceneName` property to refer to a scene to load it or transition to it 
 
 ## See Also
 
-- [Specifying a lighting environment in AR Quick Look](../arkit/specifying-a-lighting-environment-in-ar-quick-look.md)
+### Scenes and lighting
+- [Specifying a lighting environment in AR Quick Look](../ARKit/specifying-a-lighting-environment-in-ar-quick-look.md)
   Add metadata to your USDZ file to specify its lighting characteristics.
-- [preferredIblVersion](preferrediblversion.md)
+- [preferredIblVersion](./preferrediblversion.md)
   Metadata that determines the lighting environment of virtual content.
 
 

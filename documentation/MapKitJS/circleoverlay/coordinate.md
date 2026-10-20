@@ -1,7 +1,8 @@
 # coordinate
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The coordinate of the circle overlay’s center.
 
@@ -10,14 +11,15 @@ The coordinate of the circle overlay’s center.
 
 ## Declaration
 
-```swift
+```
 get coordinate(): CoordinateData;
 set coordinate(coordinate: CoordinateData);
 ```
 
 ## See Also
 
-- [radius](circleoverlay/radius.md)
+### Defining the circle
+- [radius](./radius.md)
   The circle overlay’s radius, in meters.
 
 

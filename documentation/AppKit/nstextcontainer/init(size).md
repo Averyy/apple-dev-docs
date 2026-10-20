@@ -1,7 +1,8 @@
 # init(size:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a text container with a specified bounding rectangle.
 
@@ -14,9 +15,13 @@ Initializes a text container with a specified bounding rectangle.
 init(size: CGSize)
 ```
 
+```objc
+- (instancetype) initWithSize:(CGSize) size;
+```
+
 #### Discussion
 
-The new text container must be added to an [`NSLayoutManager`](nslayoutmanager.md) object before it can be used. The text container must also have an associated [`NSTextView`](nstextview.md) object for text to be displayed. This method is the designated initializer for the `NSTextContainer` class.
+The new text container must be added to an [`NSLayoutManager`](../nslayoutmanager.md) object before it can be used. The text container must also have an associated [`NSTextView`](../nstextview.md) object for text to be displayed. This method is the designated initializer for the `NSTextContainer` class.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ The new text container must be added to an [`NSLayoutManager`](nslayoutmanager.m
 
 ## See Also
 
-- [init(coder: NSCoder)](nstextcontainer/init(coder:).md)
+### Creating a text container
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a text container from data in an unarchiver.
 
 

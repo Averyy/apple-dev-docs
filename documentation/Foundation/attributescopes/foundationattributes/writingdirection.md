@@ -1,7 +1,8 @@
 # writingDirection
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The base writing direction of a paragraph.
 

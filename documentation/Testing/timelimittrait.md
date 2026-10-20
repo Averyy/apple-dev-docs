@@ -1,7 +1,8 @@
 # TimeLimitTrait
 
 **Framework**: Swift Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that defines a time limit to apply to a test.
 
@@ -11,7 +12,7 @@ A type that defines a time limit to apply to a test.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 - Swift 6.0+
 - Xcode 16.0+
@@ -24,41 +25,42 @@ struct TimeLimitTrait
 
 #### Overview
 
-To add this trait to a test, use [`timeLimit(_:)`](trait/timelimit(_:).md).
+To add this trait to a test, use [`timeLimit(_:)`](./trait/timelimit%28_%29.md).
 
 ## Topics
 
 ### Structures
-- [TimeLimitTrait.Duration](timelimittrait/duration.md)
+- [TimeLimitTrait.Duration](./timelimittrait/duration.md)
   A type representing the duration of a time limit applied to a test.
 ### Instance Properties
-- [var timeLimit: Duration](timelimittrait/timelimit.md)
+- [var timeLimit: Duration](./timelimittrait/timelimit.md)
   The maximum amount of time a test may run for before timing out.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SuiteTrait](suitetrait.md)
-- [TestTrait](testtrait.md)
-- [Trait](trait.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SuiteTrait](./suitetrait.md)
+- [TestTrait](./testtrait.md)
+- [Trait](./trait.md)
 
 ## See Also
 
-- [struct Bug](bug.md)
+### Supporting types
+- [struct Bug](./bug.md)
   A type that represents a bug report tracked by a test.
-- [struct Comment](comment.md)
+- [struct Comment](./comment.md)
   A type that represents a comment related to a test.
-- [struct ConditionTrait](conditiontrait.md)
+- [struct ConditionTrait](./conditiontrait.md)
   A type that defines a condition which must be satisfied for the testing library to enable a test.
-- [struct IssueHandlingTrait](issuehandlingtrait.md)
+- [struct IssueHandlingTrait](./issuehandlingtrait.md)
   A type that allows transforming or filtering the issues recorded by a test.
-- [struct ParallelizationTrait](parallelizationtrait.md)
+- [struct ParallelizationTrait](./parallelizationtrait.md)
   A type that defines whether the testing library runs this test serially or in parallel.
-- [struct Tag](tag.md)
+- [struct Tag](./tag.md)
   A type representing a tag that can be applied to a test.
-- [struct List](tag/list.md)
+- [struct List](./tag/list.md)
   A type representing one or more tags applied to a test.
 
 

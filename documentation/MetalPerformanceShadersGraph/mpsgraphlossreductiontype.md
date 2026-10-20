@@ -1,7 +1,8 @@
 # MPSGraphLossReductionType
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of the reduction the graph applies in the loss operations.
 
@@ -19,30 +20,34 @@ The type of the reduction the graph applies in the loss operations.
 enum MPSGraphLossReductionType
 ```
 
+```c
+enum MPSGraphLossReductionType : uint64_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MPSGraphLossReductionType.mean](mpsgraphlossreductiontype/mean.md)
+- [MPSGraphLossReductionType.mean](./mpsgraphlossreductiontype/mean.md)
   Reduces the loss down to a scalar with a mean operation.
-- [MPSGraphLossReductionType.none](mpsgraphlossreductiontype/none.md)
+- [MPSGraphLossReductionType.none](./mpsgraphlossreductiontype/none.md)
   Computes the loss without reduction.
-- [MPSGraphLossReductionType.sum](mpsgraphlossreductiontype/sum.md)
+- [MPSGraphLossReductionType.sum](./mpsgraphlossreductiontype/sum.md)
   Reduces the loss down to a scalar with a sum operation.
 ### Initializers
-- [init?(rawValue: UInt64)](mpsgraphlossreductiontype/init(rawvalue:).md)
+- [init?(rawValue: UInt64)](./mpsgraphlossreductiontype/init%28rawvalue%29.md)
 ### Type Properties
-- [static var axis: MPSGraphLossReductionType](mpsgraphlossreductiontype/axis.md)
+- [static var axis: MPSGraphLossReductionType](./mpsgraphlossreductiontype/axis.md)
   Computes the loss without reduction.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

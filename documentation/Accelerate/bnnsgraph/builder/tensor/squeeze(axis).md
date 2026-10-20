@@ -1,7 +1,8 @@
 # squeeze(axis:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a squeeze operation in the graph.
 
@@ -19,6 +20,8 @@ Adds a squeeze operation in the graph.
 ```swift
 func squeeze(axis: Int) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

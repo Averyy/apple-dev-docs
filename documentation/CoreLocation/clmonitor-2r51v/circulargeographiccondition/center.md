@@ -1,7 +1,8 @@
 # center
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The center point of the condition’s area.
 
@@ -19,7 +20,8 @@ let center: CLLocationCoordinate2D
 
 ## See Also
 
-- [let radius: CLLocationDistance](clmonitor-2r51v/circulargeographiccondition/radius.md)
+### Condition characteristics
+- [let radius: CLLocationDistance](./radius.md)
   The radius of the condition’s area, in meters.
 
 

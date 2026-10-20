@@ -1,7 +1,8 @@
 # localIdentity(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the local identity TLS uses during the QUIC handshake.
 

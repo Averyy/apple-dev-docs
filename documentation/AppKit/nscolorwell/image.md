@@ -1,7 +1,8 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display on the button portion of a color well that adopts the expanded style.
 
@@ -14,17 +15,22 @@ The image to display on the button portion of a color well that adopts the expan
 var image: NSImage? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSImage * image;
+```
+
 #### Discussion
 
-The color well applies the image only when the [`colorWellStyle`](nscolorwell/colorwellstyle.md) property is set to [`NSColorWell.Style.expanded`](nscolorwell/style/expanded.md).
+The color well applies the image only when the [`colorWellStyle`](./colorwellstyle.md) property is set to [`NSColorWell.Style.expanded`](./style/expanded.md).
 
 ## See Also
 
-- [var colorWellStyle: NSColorWell.Style](nscolorwell/colorwellstyle.md)
+### Configuring the appearance
+- [var colorWellStyle: NSColorWell.Style](./colorwellstyle.md)
   The appearance and interaction style to apply to the color well.
-- [NSColorWell.Style](nscolorwell/style.md)
+- [NSColorWell.Style](./style.md)
   Constants that specify the appearance and interaction modes for a color well.
-- [var isBordered: Bool](nscolorwell/isbordered.md)
+- [var isBordered: Bool](./isbordered.md)
   A Boolean value that determines whether the color well has a border.
 
 

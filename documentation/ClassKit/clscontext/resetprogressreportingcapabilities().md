@@ -1,7 +1,8 @@
 # resetProgressReportingCapabilities()
 
 **Framework**: ClassKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the set of capabilities for the context.
 
@@ -18,17 +19,22 @@ Resets the set of capabilities for the context.
 func resetProgressReportingCapabilities()
 ```
 
+```objc
+- (void) resetProgressReportingCapabilities;
+```
+
 #### Discussion
 
-Use this method to remove all the capabilities that you previously added with the [`addProgressReportingCapabilities(_:)`](clscontext/addprogressreportingcapabilities(_:).md) method. After calling the reset method, the context reverts to having only the default [`CLSProgressReportingCapability.Kind.duration`](clsprogressreportingcapability/kind-swift.enum/duration.md) capability that it had after initialization.
+Use this method to remove all the capabilities that you previously added with the [`addProgressReportingCapabilities(_:)`](./addprogressreportingcapabilities%28_%29.md) method. After calling the reset method, the context reverts to having only the default [`CLSProgressReportingCapability.Kind.duration`](../clsprogressreportingcapability/kind-swift.enum/duration.md) capability that it had after initialization.
 
 ## See Also
 
-- [var progressReportingCapabilities: Set<CLSProgressReportingCapability>](clscontext/progressreportingcapabilities.md)
+### Indicating progress reporting capabilities
+- [var progressReportingCapabilities: Set<CLSProgressReportingCapability>](./progressreportingcapabilities.md)
   The kinds of progress reporting that the context can perform.
-- [func addProgressReportingCapabilities(Set<CLSProgressReportingCapability>)](clscontext/addprogressreportingcapabilities(_:).md)
+- [func addProgressReportingCapabilities(Set<CLSProgressReportingCapability>)](./addprogressreportingcapabilities%28_%29.md)
   Adds a progress reporting capability to the set of capabilities for the context.
-- [class CLSProgressReportingCapability](clsprogressreportingcapability.md)
+- [class CLSProgressReportingCapability](../clsprogressreportingcapability.md)
   A progress reporting capability supported by a context.
 
 

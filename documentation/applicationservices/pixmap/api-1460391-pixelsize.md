@@ -1,7 +1,8 @@
 # pixelSize
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of bits used to represent a pixel. Indexed pixels can have sizes of 1, 2, 4, and 8 bits; direct pixel sizes are 16 and 32 bits.
 
@@ -12,6 +13,10 @@ The number of bits used to represent a pixel. Indexed pixels can have sizes of 1
 
 ```swift
 var pixelSize: Int16
+```
+
+```c
+short pixelSize;
 ```
 
 

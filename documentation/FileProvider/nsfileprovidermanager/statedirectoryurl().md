@@ -1,7 +1,8 @@
 # stateDirectoryURL()
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a URL for a directory for storing state information for the domain.
 
@@ -14,13 +15,18 @@ Returns a URL for a directory for storing state information for the domain.
 func stateDirectoryURL() throws -> URL
 ```
 
+```objc
+- (NSURL *) stateDirectoryURLWithError:(NSError **) error;
+```
+
 ## See Also
 
-- [class func checkDomainsCanBeStoredOnVolume(at: URL) throws -> NSFileProviderManager.EligibilityResult](nsfileprovidermanager/checkdomainscanbestoredonvolume(at:).md)
+### Working with external volumes
+- [class func checkDomainsCanBeStoredOnVolume(at: URL) throws -> NSFileProviderManager.EligibilityResult](./checkdomainscanbestoredonvolume%28at%29.md)
   Checks whether the specified URL is eligible for storing a domain.
-- [NSFileProviderManager.EligibilityResult](nsfileprovidermanager/eligibilityresult.md)
+- [NSFileProviderManager.EligibilityResult](./eligibilityresult.md)
   Constants that specify whether a URL is eligible for storing a domain.
-- [protocol NSFileProviderExternalVolumeHandling](nsfileproviderexternalvolumehandling.md)
+- [protocol NSFileProviderExternalVolumeHandling](../nsfileproviderexternalvolumehandling.md)
   A protocol that defines the interface for handling external volumes.
 
 

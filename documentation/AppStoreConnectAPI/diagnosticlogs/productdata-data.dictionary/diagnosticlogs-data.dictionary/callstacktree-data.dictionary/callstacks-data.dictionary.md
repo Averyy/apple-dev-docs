@@ -1,7 +1,8 @@
 # diagnosticLogs.ProductData.DiagnosticLogs.CallStackTree.CallStacks
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The root call stack frames of the diagnostic log.
 
@@ -10,7 +11,7 @@ The root call stack frames of the diagnostic log.
 
 ## Declaration
 
-```swift
+```
 object diagnosticLogs.ProductData.DiagnosticLogs.CallStackTree.CallStacks
 ```
 

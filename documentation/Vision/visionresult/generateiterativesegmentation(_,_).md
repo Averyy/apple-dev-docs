@@ -1,7 +1,8 @@
 # VisionResult.generateIterativeSegmentation(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -19,13 +20,14 @@ case generateIterativeSegmentation(GenerateIterativeSegmentationRequest, PixelBu
 
 ## See Also
 
-- [case generatePersonInstanceMask(GeneratePersonInstanceMaskRequest, InstanceMaskObservation?)](visionresult/generatepersoninstancemask(_:_:).md)
+### Getting the image sequence result
+- [case generatePersonInstanceMask(GeneratePersonInstanceMaskRequest, InstanceMaskObservation?)](./generatepersoninstancemask%28_,_%29.md)
   A result from performing a generate person instance mask request.
-- [case generatePersonSegmentation(GeneratePersonSegmentationRequest, PixelBufferObservation)](visionresult/generatepersonsegmentation(_:_:).md)
+- [case generatePersonSegmentation(GeneratePersonSegmentationRequest, PixelBufferObservation)](./generatepersonsegmentation%28_,_%29.md)
   A result from performing a generate person segmentation request.
-- [case detectDocumentSegmentation(DetectDocumentSegmentationRequest, DetectedDocumentObservation?)](visionresult/detectdocumentsegmentation(_:_:).md)
+- [case detectDocumentSegmentation(DetectDocumentSegmentationRequest, DetectedDocumentObservation?)](./detectdocumentsegmentation%28_,_%29.md)
   A result from performing a detect document segmentation request.
-- [case recognizeDocuments(RecognizeDocumentsRequest, [DocumentObservation])](visionresult/recognizedocuments(_:_:).md)
+- [case recognizeDocuments(RecognizeDocumentsRequest, [DocumentObservation])](./recognizedocuments%28_,_%29.md)
 
 
 ---

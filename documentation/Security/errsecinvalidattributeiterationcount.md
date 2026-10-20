@@ -1,7 +1,8 @@
 # errSecInvalidAttributeIterationCount
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An iteration count attribute is not valid.
 
@@ -18,6 +19,10 @@ An iteration count attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeIterationCount: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeIterationCount
 ```
 
 

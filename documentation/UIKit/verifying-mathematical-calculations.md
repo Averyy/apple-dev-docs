@@ -1,6 +1,7 @@
 # Verifying mathematical calculations
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Ensure the accuracy of your math operations in 64-bit architecture.
 
@@ -8,7 +9,7 @@ Ensure the accuracy of your math operations in 64-bit architecture.
 
 Math operations are affected by numbers in the 64-bit runtime. Review the accuracy of the results of any calculations your app performs. Check signed value results to ensure that they’re correct for their operation and operands. Verify that your bit mask code doesn’t make assumptions about type size.
 
-##### Verify the Accuracy of Signed Math Operations
+##### Verify the accuracy of signed math operations
 
 C and similar languages use a set of *sign extension rules* to determine whether to treat the top bit in an integer as a sign bit when the value is assigned to a variable of larger width. The sign extension rules are as follows:
 
@@ -46,7 +47,7 @@ There are two reasons for this result. First, when the left-shift operator `<<` 
 
 The solution is to cast the initial value to a `long` integer before the shift. The `short` integer is promoted only once — this time, to a 64-bit type (when compiled as a 64-bit executable).
 
-##### Check Your Code for Assumptions About Type Size
+##### Check your code for assumptions about type size
 
 When working with bit masks with 64-bit values, follow these tips to avoid inadvertently getting 32-bit values.
 
@@ -72,7 +73,8 @@ Note that in the 64-bit runtime, the upper bits in the bit mask are all ones.
 
 ## See Also
 
-- [Optimizing memory performance](optimizing-memory-performance.md)
+### Performance and accuracy
+- [Optimizing memory performance](./optimizing-memory-performance.md)
   Measure the impact of the 64-bit runtime on your app’s memory usage.
 
 

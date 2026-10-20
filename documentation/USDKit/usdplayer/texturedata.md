@@ -1,7 +1,8 @@
 # USDPlayer.TextureData
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Texture data from a texture asset referenced by a material prim.
 
@@ -22,22 +23,22 @@ struct TextureData
 ## Topics
 
 ### Instance Properties
-- [let assetPath: String](usdplayer/texturedata/assetpath.md)
+- [let assetPath: String](./texturedata/assetpath.md)
   Asset-relative path to the source texture file.
-- [let data: Data](usdplayer/texturedata/data.md)
+- [let data: Data](./texturedata/data.md)
   Packed texture data.
-- [let descriptor: LowLevelTexture.Descriptor](usdplayer/texturedata/descriptor.md)
+- [let descriptor: LowLevelTexture.Descriptor](./texturedata/descriptor.md)
   Texture dimensions, pixel format, and type.
-- [let id: USDPlayer.TextureID](usdplayer/texturedata/id.md)
+- [let id: USDPlayer.TextureID](./texturedata/id.md)
   Unique identifier for this texture resource.
-- [let layout: [USDPlayer.TextureLevelInfo]](usdplayer/texturedata/layout.md)
+- [let layout: [USDPlayer.TextureLevelInfo]](./texturedata/layout.md)
   Per-mip-level byte-layout descriptors.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

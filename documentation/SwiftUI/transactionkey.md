@@ -1,7 +1,8 @@
 # TransactionKey
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A key for accessing values in a transaction.
 
@@ -22,7 +23,7 @@ protocol TransactionKey
 
 #### Overview
 
-You can create custom transaction values by extending the [`Transaction`](transaction.md) structure with new properties. First declare a new transaction key type and specify a value for the required [`defaultValue`](transactionkey/defaultvalue.md) property:
+You can create custom transaction values by extending the [`Transaction`](./transaction.md) structure with new properties. First declare a new transaction key type and specify a value for the required [`defaultValue`](./transactionkey/defaultvalue.md) property:
 
 ```swift
 private struct MyTransactionKey: TransactionKey {
@@ -30,7 +31,7 @@ private struct MyTransactionKey: TransactionKey {
 }
 ```
 
-The Swift compiler automatically infers the associated [`Value`](transactionkey/value.md) type as the type you specify for the default value. Then use the key to define a new transaction value property:
+The Swift compiler automatically infers the associated [`Value`](./transactionkey/value.md) type as the type you specify for the default value. Then use the key to define a new transaction value property:
 
 ```swift
 extension Transaction {
@@ -49,7 +50,7 @@ withTransaction(\.myCustomValue, true) {
 }
 ```
 
-To use the value from inside `MyView` or one of its descendants, use the [`transaction(_:)`](view/transaction(_:).md) view modifier:
+To use the value from inside `MyView` or one of its descendants, use the [`transaction(_:)`](./view/transaction%28_%29.md) view modifier:
 
 ```swift
 MyView()
@@ -63,26 +64,27 @@ MyView()
 ## Topics
 
 ### Setting a default value
-- [static var defaultValue: Self.Value](transactionkey/defaultvalue.md)
+- [static var defaultValue: Self.Value](./transactionkey/defaultvalue.md)
   The default value for the transaction key.
-- [associatedtype Value](transactionkey/value.md)
+- [associatedtype Value](./transactionkey/value.md)
   The associated type representing the type of the transaction key’s value.
 
 ## See Also
 
-- [func withTransaction<Result>(Transaction, () throws -> Result) rethrows -> Result](withtransaction(_:_:).md)
+### Moving an animation to another view
+- [func withTransaction<Result>(Transaction, () throws -> Result) rethrows -> Result](./withtransaction%28_,_%29.md)
   Executes a closure with the specified transaction and returns the result.
-- [func withTransaction<R, V>(WritableKeyPath<Transaction, V>, V, () throws -> R) rethrows -> R](withtransaction(_:_:_:).md)
+- [func withTransaction<R, V>(WritableKeyPath<Transaction, V>, V, () throws -> R) rethrows -> R](./withtransaction%28_,_,_%29.md)
   Executes a closure with the specified transaction key path and value and returns the result.
-- [func transaction((inout Transaction) -> Void) -> some View](view/transaction(_:).md)
+- [func transaction((inout Transaction) -> Void) -> some View](./view/transaction%28_%29.md)
   Applies the given transaction mutation function to all animations used within the view.
-- [func transaction(value: some Equatable, (inout Transaction) -> Void) -> some View](view/transaction(value:_:).md)
+- [func transaction(value: some Equatable, (inout Transaction) -> Void) -> some View](./view/transaction%28value,_%29.md)
   Applies the given transaction mutation function to all animations used within the view.
-- [func transaction<V>((inout Transaction) -> Void, body: (PlaceholderContentView<Self>) -> V) -> some View](view/transaction(_:body:).md)
+- [func transaction<V>((inout Transaction) -> Void, body: (PlaceholderContentView<Self>) -> V) -> some View](./view/transaction%28_,body%29.md)
   Applies the given transaction mutation function to all animations used within the `body` closure.
-- [struct Transaction](transaction.md)
+- [struct Transaction](./transaction.md)
   The context of the current state-processing update.
-- [macro Entry()](entry().md)
+- [macro Entry()](./entry%28%29.md)
   Creates an environment values, transaction, container values, or focused values entry.
 
 

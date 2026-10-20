@@ -1,7 +1,8 @@
 # updateNode(_:forKey:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates an existing node in the graph.
 
@@ -12,7 +13,7 @@ Updates an existing node in the graph.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,7 +23,7 @@ mutating func updateNode(_ node: ComputeNodeGraph.Node, forKey nodeID: ComputeNo
 
 #### Discussion
 
-> **Note**: If the node cannot be updated.
+> **Throws**: If the node cannot be updated.
 
 ## Parameters
 

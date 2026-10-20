@@ -1,7 +1,8 @@
 # mapItemIdentifier
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map item identifer.
 
@@ -20,17 +21,22 @@ The map item identifer.
 var mapItemIdentifier: MKMapItem.Identifier? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) MKMapItemIdentifier * mapItemIdentifier;
+```
+
 ## See Also
 
-- [var mapFeature: MapFeature?](mkmapitemrequest/mapfeature.md)
+### Configuring the item request
+- [var mapFeature: MapFeature?](./mapfeature.md)
   The map feature.
-- [var mapFeatureAnnotation: MKMapFeatureAnnotation?](mkmapitemrequest/mapfeatureannotation.md)
+- [var mapFeatureAnnotation: MKMapFeatureAnnotation?](./mapfeatureannotation.md)
   The feature annotation.
-- [var feature: MapFeature](mkmapitemrequest/feature.md)
+- [var feature: MapFeature](./feature.md)
   The map feature.
-- [var featureAnnotation: MKMapFeatureAnnotation](mkmapitemrequest/featureannotation.md)
+- [var featureAnnotation: MKMapFeatureAnnotation](./featureannotation.md)
   The feature annotation.
-- [var placeDescriptor: PlaceDescriptor?](mkmapitemrequest/placedescriptor.md)
+- [var placeDescriptor: PlaceDescriptor?](./placedescriptor.md)
   The place descriptor that contains information that’s helpful in uniquely identifying this place.
 
 

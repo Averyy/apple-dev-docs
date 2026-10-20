@@ -1,7 +1,8 @@
 # ReportableMetadataIgnored()
 
 **Framework**: StateReporting  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Excludes a property from the generated `metadataDictionary`.
 
@@ -23,11 +24,11 @@ Excludes a property from the generated `metadataDictionary`.
 
 ## Mentions
 
-- [Getting started with StateReporting](getting-started-with-statereporting.md)
+- [Getting started with StateReporting](./getting-started-with-statereporting.md)
 
 #### Overview
 
-Attach `@ReportableMetadataIgnored` to any stored property inside a type annotated with [`ReportableMetadata()`](reportablemetadata().md) to prevent that property from appearing in the generated `metadataDictionary`. Use this for any property you want to omit — for example, properties that hold sensitive data, cached values that derive from other reported metadata, or fields that are unimportant or too verbose to include in metadata reports.
+Attach `@ReportableMetadataIgnored` to any stored property inside a type annotated with [`ReportableMetadata()`](./reportablemetadata%28%29.md) to prevent that property from appearing in the generated `metadataDictionary`. Use this for any property you want to omit — for example, properties that hold sensitive data, cached values that derive from other reported metadata, or fields that are unimportant or too verbose to include in metadata reports.
 
 ```swift
 @ReportableMetadata
@@ -39,9 +40,10 @@ struct PaymentMetadata {
 
 ## See Also
 
-- [macro ReportableMetadata()](reportablemetadata().md)
+### Metadata type macros
+- [macro ReportableMetadata()](./reportablemetadata%28%29.md)
   Automatically generates `ReportableMetadata` conformance for a type.
-- [macro ReportableMetadataKey(String)](reportablemetadatakey(_:).md)
+- [macro ReportableMetadataKey(String)](./reportablemetadatakey%28_%29.md)
   Specifies a custom key name for a property in the generated `metadataDictionary`.
 
 

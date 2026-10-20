@@ -1,7 +1,8 @@
 # VZVirtioGraphicsScanoutConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The configuration for a Virtio graphics device that configures the dimensions of the graphics device for a Linux VM.
 
@@ -14,6 +15,10 @@ The configuration for a Virtio graphics device that configures the dimensions of
 class VZVirtioGraphicsScanoutConfiguration
 ```
 
+```objc
+@interface VZVirtioGraphicsScanoutConfiguration : VZGraphicsDisplayConfiguration
+```
+
 #### Overview
 
 Use a `VZVirtioGraphicsScanoutConfiguration` to configure the width and height of a Virtio graphics device.
@@ -21,30 +26,31 @@ Use a `VZVirtioGraphicsScanoutConfiguration` to configure the width and height o
 ## Topics
 
 ### Creating the configuration object
-- [init(widthInPixels: Int, heightInPixels: Int)](vzvirtiographicsscanoutconfiguration/init(widthinpixels:heightinpixels:).md)
+- [init(widthInPixels: Int, heightInPixels: Int)](./vzvirtiographicsscanoutconfiguration/init%28widthinpixels,heightinpixels%29.md)
   Creates a Virtio graphics device with the specified dimensions.
 ### Instance properties
-- [var heightInPixels: Int](vzvirtiographicsscanoutconfiguration/heightinpixels.md)
+- [var heightInPixels: Int](./vzvirtiographicsscanoutconfiguration/heightinpixels.md)
   An integer value that describes the height of the graphics device in pixels.
-- [var widthInPixels: Int](vzvirtiographicsscanoutconfiguration/widthinpixels.md)
+- [var widthInPixels: Int](./vzvirtiographicsscanoutconfiguration/widthinpixels.md)
   An integer value that describes the width of the graphics device in pixels.
 
 ## Relationships
 
 ### Inherits From
-- [VZGraphicsDisplayConfiguration](vzgraphicsdisplayconfiguration.md)
+- [VZGraphicsDisplayConfiguration](./vzgraphicsdisplayconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var scanouts: [VZVirtioGraphicsScanoutConfiguration]](vzvirtiographicsdeviceconfiguration/scanouts.md)
+### Instance properties
+- [var scanouts: [VZVirtioGraphicsScanoutConfiguration]](./vzvirtiographicsdeviceconfiguration/scanouts.md)
   The array of output devices.
 
 

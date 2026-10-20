@@ -2,6 +2,7 @@
 
 **Framework**: Contacts  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the delegate that the user updated a contact.
@@ -20,6 +21,10 @@ Tells the delegate that the user updated a contact.
 func visit(_ event: CNChangeHistoryUpdateContactEvent)
 ```
 
+```objc
+- (void) visitUpdateContactEvent:(CNChangeHistoryUpdateContactEvent *) event;
+```
+
 #### Discussion
 
 Inspect the contact in the event that the system provides and update your app’s cached data accordingly.
@@ -30,9 +35,10 @@ Inspect the contact in the event that the system provides and update your app’
 
 ## See Also
 
-- [func visit(CNChangeHistoryAddContactEvent)](cnchangehistoryeventvisitor/visit(_:)-9w73y.md)
+### Updating contacts
+- [func visit(CNChangeHistoryAddContactEvent)](./visit%28_%29-9w73y.md)
   Tells the delegate that the user added a contact.
-- [func visit(CNChangeHistoryDeleteContactEvent)](cnchangehistoryeventvisitor/visit(_:)-ci4z.md)
+- [func visit(CNChangeHistoryDeleteContactEvent)](./visit%28_%29-ci4z.md)
   Tells the delegate that the user deleted a contact.
 
 

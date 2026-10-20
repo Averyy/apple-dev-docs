@@ -1,7 +1,8 @@
 # send(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a generation event on the channel.
 
@@ -26,7 +27,8 @@ nonisolated
 
 ## See Also
 
-- [LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event.md)
+### Sending an event
+- [LanguageModelExecutorGenerationChannel.Event](./event.md)
   A generation event sent on a generation channel.
 
 

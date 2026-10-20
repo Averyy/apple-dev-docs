@@ -1,7 +1,8 @@
 # init(systemType:itemSearchBlock:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+

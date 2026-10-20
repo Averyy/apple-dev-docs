@@ -1,7 +1,8 @@
 # onDemandRules
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of rules you use to determine which networks the relay uses.
 
@@ -19,23 +20,28 @@ An array of rules you use to determine which networks the relay uses.
 var onDemandRules: [NEOnDemandRule]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NEOnDemandRule *> * onDemandRules;
+```
+
 #### Discussion
 
 If this value is `nil`, the associated relay always applies. If non-`nil`, the array describes the networks to which the relay applies.
 
 ## See Also
 
-- [var isEnabled: Bool](nerelaymanager/isenabled.md)
+### Accessing relay configuration properties
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean used to toggle the enabled state of the relay configuration.
-- [var relays: [NERelay]?](nerelaymanager/relays.md)
+- [var relays: [NERelay]?](./relays.md)
   An array of one or two relay server configurations. If multiple relays are configured, application traffic routes through both of them in the order they appear in the array.
-- [var matchDomains: [String]?](nerelaymanager/matchdomains.md)
+- [var matchDomains: [String]?](./matchdomains.md)
   A list of domain strings used to determine which connections will use the relay configuration contained in this object.
-- [var excludedDomains: [String]?](nerelaymanager/excludeddomains.md)
+- [var excludedDomains: [String]?](./excludeddomains.md)
   A list of domain strings used to determine which connections won’t use the relay configuration contained in this object.
-- [var localizedDescription: String?](nerelaymanager/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A string that contains the display name of the relay configuration.
-- [class NEOnDemandRule](neondemandrule.md)
+- [class NEOnDemandRule](../neondemandrule.md)
   A base class shared by all VPN On Demand rules.
 
 

@@ -1,7 +1,8 @@
 # UITableViewDiffableDataSourceReference
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The object you use to manage data and provide cells for a table view.
 
@@ -19,11 +20,15 @@ The object you use to manage data and provide cells for a table view.
 class UITableViewDiffableDataSourceReference
 ```
 
+```objc
+@interface UITableViewDiffableDataSource : NSObject
+```
+
 #### Overview
 
-> ❗ **Important**: If you’re working in a Swift codebase, always use [`UITableViewDiffableDataSource`](uitableviewdiffabledatasource-2euir.md) instead.
+> ❗ **Important**: If you’re working in a Swift codebase, always use [`UITableViewDiffableDataSource`](./uitableviewdiffabledatasource-2euir.md) instead.
 
-A *diffable data source* object is a specialized type of data source that works together with your table view object. It provides the behavior you need to manage updates to your table view’s data and UI in a simple, efficient way. It also conforms to the [`UITableViewDataSource`](uitableviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
+A *diffable data source* object is a specialized type of data source that works together with your table view object. It provides the behavior you need to manage updates to your table view’s data and UI in a simple, efficient way. It also conforms to the [`UITableViewDataSource`](./uitableviewdatasource.md) protocol and provides implementations for all of the protocol’s methods.
 
 To fill a table view with data:
 
@@ -32,7 +37,7 @@ To fill a table view with data:
 3. Generate the current state of the data.
 4. Display the data in the UI.
 
-To connect a diffable data source to a table view, you create the diffable data source using its [`init(tableView:cellProvider:)`](uitableviewdiffabledatasourcereference/init(tableview:cellprovider:).md) initializer, passing in the table view you want to associate with that data source. You also pass in a cell provider, where you configure each of your cells to determine how to display your data in the UI.
+To connect a diffable data source to a table view, you create the diffable data source using its [`init(tableView:cellProvider:)`](./uitableviewdiffabledatasourcereference/init%28tableview,cellprovider%29.md) initializer, passing in the table view you want to associate with that data source. You also pass in a cell provider, where you configure each of your cells to determine how to display your data in the UI.
 
 ```swift
 self.dataSource = [[UITableViewDiffableDataSource alloc] initWithTableView:self.tableView cellProvider:^UITableViewCell *(UITableView *tableView, NSIndexPath *indexPath, id itemIdentifier) {
@@ -40,54 +45,54 @@ self.dataSource = [[UITableViewDiffableDataSource alloc] initWithTableView:self.
 }];
 ```
 
-Then, you generate the current state of the data and display the data in the UI by constructing and applying a snapshot. For more information, see [`NSDiffableDataSourceSnapshotReference`](nsdiffabledatasourcesnapshotreference.md).
+Then, you generate the current state of the data and display the data in the UI by constructing and applying a snapshot. For more information, see [`NSDiffableDataSourceSnapshotReference`](./nsdiffabledatasourcesnapshotreference.md).
 
-> ❗ **Important**:  Do not change the [`dataSource`](uitableview/datasource.md) on the table view after you configure it with a diffable data source. If the table view needs a new data source after you configure it initially, create and configure a new table view and diffable data source.
+> ❗ **Important**:  Do not change the [`dataSource`](./uitableview/datasource.md) on the table view after you configure it with a diffable data source. If the table view needs a new data source after you configure it initially, create and configure a new table view and diffable data source.
 
 ## Topics
 
 ### Creating a diffable data source
-- [init(tableView: UITableView, cellProvider: UITableViewDiffableDataSourceReferenceCellProvider)](uitableviewdiffabledatasourcereference/init(tableview:cellprovider:).md)
+- [init(tableView: UITableView, cellProvider: UITableViewDiffableDataSourceReferenceCellProvider)](./uitableviewdiffabledatasourcereference/init%28tableview,cellprovider%29.md)
   Creates a diffable data source with the specified cell provider, and connects it to the specified table view.
-- [typealias UITableViewDiffableDataSourceReferenceCellProvider](uitableviewdiffabledatasourcereferencecellprovider.md)
+- [typealias UITableViewDiffableDataSourceReferenceCellProvider](./uitableviewdiffabledatasourcereferencecellprovider.md)
   A closure that configures and returns a cell for a table view from its diffable data source.
 ### Identifying items
-- [func itemIdentifier(for: IndexPath) -> Any?](uitableviewdiffabledatasourcereference/itemidentifier(for:).md)
+- [func itemIdentifier(for: IndexPath) -> Any?](./uitableviewdiffabledatasourcereference/itemidentifier%28for%29.md)
   Returns an identifier for the item at the specified index path in the table view.
-- [func indexPath(forItemIdentifier: Any) -> IndexPath?](uitableviewdiffabledatasourcereference/indexpath(foritemidentifier:).md)
+- [func indexPath(forItemIdentifier: Any) -> IndexPath?](./uitableviewdiffabledatasourcereference/indexpath%28foritemidentifier%29.md)
   Returns an index path for the item with the specified identifier in the table view.
 ### Identifying sections
-- [func sectionIdentifier(for: Int) -> Any?](uitableviewdiffabledatasourcereference/sectionidentifier(for:).md)
+- [func sectionIdentifier(for: Int) -> Any?](./uitableviewdiffabledatasourcereference/sectionidentifier%28for%29.md)
   Returns an identifier for the section at the index you specify in the table view.
-- [func index(forSectionIdentifier: Any) -> Int](uitableviewdiffabledatasourcereference/index(forsectionidentifier:).md)
+- [func index(forSectionIdentifier: Any) -> Int](./uitableviewdiffabledatasourcereference/index%28forsectionidentifier%29.md)
   Returns an index for the section with the identifier you specify in the table view.
 ### Updating data
-- [func snapshot() -> NSDiffableDataSourceSnapshotReference](uitableviewdiffabledatasourcereference/snapshot.md)
+- [func snapshot() -> NSDiffableDataSourceSnapshotReference](./uitableviewdiffabledatasourcereference/snapshot%28%29.md)
   Returns a representation of the current state of the data in the table view.
-- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](uitableviewdiffabledatasourcereference/applysnapshot(_:animatingdifferences:).md)
+- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool)](./uitableviewdiffabledatasourcereference/applysnapshot%28_,animatingdifferences%29.md)
   Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes.
-- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool, completion: (() -> Void)?)](uitableviewdiffabledatasourcereference/applysnapshot(_:animatingdifferences:completion:).md)
+- [func applySnapshot(NSDiffableDataSourceSnapshotReference, animatingDifferences: Bool, completion: (() -> Void)?)](./uitableviewdiffabledatasourcereference/applysnapshot%28_,animatingdifferences,completion%29.md)
   Updates the UI to reflect the state of the data in the snapshot, optionally animating the UI changes and executing a completion handler.
-- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference)](uitableviewdiffabledatasourcereference/applysnapshot(usingreloaddata:).md)
+- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference)](./uitableviewdiffabledatasourcereference/applysnapshot%28usingreloaddata%29.md)
   Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes.
-- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference, completion: (() -> Void)?)](uitableviewdiffabledatasourcereference/applysnapshot(usingreloaddata:completion:).md)
+- [func applySnapshot(usingReloadData: NSDiffableDataSourceSnapshotReference, completion: (() -> Void)?)](./uitableviewdiffabledatasourcereference/applysnapshot%28usingreloaddata,completion%29.md)
   Resets the UI to reflect the state of the data in the snapshot without computing a diff or animating the changes, optionally executing a completion handler.
-- [var defaultRowAnimation: UITableView.RowAnimation](uitableviewdiffabledatasourcereference/defaultrowanimation.md)
+- [var defaultRowAnimation: UITableView.RowAnimation](./uitableviewdiffabledatasourcereference/defaultrowanimation.md)
   The default type of animation to use when inserting or deleting rows.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UITableViewDataSource](uitableviewdatasource.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UITableViewDataSource](./uitableviewdatasource.md)
 
 
 ---

@@ -1,12 +1,13 @@
 # selectionShouldChange(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the outline view should change its selection.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Returns a Boolean value that indicates whether the outline view should change it
 optional func selectionShouldChange(in outlineView: NSOutlineView) -> Bool
 ```
 
+```objc
+- (BOOL) selectionShouldChangeInOutlineView:(NSOutlineView *) outlineView;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to permit `outlineView` to change its selection (typically a row being edited), [`false`](https://developer.apple.com/documentation/swift/false) to deny permission.
+[`true`](../../Swift/true.md) to permit `outlineView` to change its selection (typically a row being edited), [`false`](../../Swift/false.md) to deny permission.
 
 #### Discussion
 
@@ -29,15 +34,16 @@ For example, if the user is editing a cell and enters an improper value, the del
 
 ## See Also
 
-- [func outlineView(NSOutlineView, shouldSelect: NSTableColumn?) -> Bool](nsoutlineviewdelegate/outlineview(_:shouldselect:).md)
+### Handling Selection
+- [func outlineView(NSOutlineView, shouldSelect: NSTableColumn?) -> Bool](./outlineview%28_,shouldselect%29.md)
   Returns a Boolean value that indicates whether the outline view should select a given table column.
-- [func outlineView(NSOutlineView, shouldSelectItem: Any) -> Bool](nsoutlineviewdelegate/outlineview(_:shouldselectitem:).md)
+- [func outlineView(NSOutlineView, shouldSelectItem: Any) -> Bool](./outlineview%28_,shouldselectitem%29.md)
   Returns a Boolean value that indicates whether the outline view should select a given item.
-- [func outlineView(NSOutlineView, selectionIndexesForProposedSelection: IndexSet) -> IndexSet](nsoutlineviewdelegate/outlineview(_:selectionindexesforproposedselection:).md)
+- [func outlineView(NSOutlineView, selectionIndexesForProposedSelection: IndexSet) -> IndexSet](./outlineview%28_,selectionindexesforproposedselection%29.md)
   Invoked to allow the delegate to modify the proposed selection.
-- [func outlineViewSelectionIsChanging(Notification)](nsoutlineviewdelegate/outlineviewselectionischanging(_:).md)
+- [func outlineViewSelectionIsChanging(Notification)](./outlineviewselectionischanging%28_%29.md)
   Invoked when `notification` is posted—that is, whenever the outline view’s selection changes.
-- [func outlineViewSelectionDidChange(Notification)](nsoutlineviewdelegate/outlineviewselectiondidchange(_:).md)
+- [func outlineViewSelectionDidChange(Notification)](./outlineviewselectiondidchange%28_%29.md)
   Invoked when the selection did change notification is posted—that is, immediately after the outline view’s selection has changed.
 
 

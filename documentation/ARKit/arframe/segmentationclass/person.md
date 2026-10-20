@@ -1,7 +1,8 @@
 # ARFrame.SegmentationClass.person
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A classification of a pixel in the segmentation buffer as part of a person.
 
@@ -15,9 +16,14 @@ A classification of a pixel in the segmentation buffer as part of a person.
 case person
 ```
 
+```c
+ARSegmentationClassPerson
+```
+
 ## See Also
 
-- [ARFrame.SegmentationClass.none](arframe/segmentationclass/none.md)
+### Classifying Pixels
+- [ARFrame.SegmentationClass.none](./none.md)
   A classification of a pixel in the segmentation buffer as unidentified.
 
 

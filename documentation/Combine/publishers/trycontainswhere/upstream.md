@@ -1,7 +1,8 @@
 # upstream
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The publisher from which this publisher receives elements.
 
@@ -22,7 +23,8 @@ let upstream: Upstream
 
 ## See Also
 
-- [let predicate: (Upstream.Output) throws -> Bool](publishers/trycontainswhere/predicate.md)
+### Inspecting publisher properties
+- [let predicate: (Upstream.Output) throws -> Bool](./predicate.md)
   The error-throwing closure that determines whether this publisher should emit a Boolean true element.
 
 

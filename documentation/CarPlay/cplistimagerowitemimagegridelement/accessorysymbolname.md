@@ -1,7 +1,8 @@
 # accessorySymbolName
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the system symbol image to use as accessory.
 
@@ -14,6 +15,10 @@ The name of the system symbol image to use as accessory.
 
 ```swift
 var accessorySymbolName: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * accessorySymbolName;
 ```
 
 

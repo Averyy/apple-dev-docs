@@ -1,7 +1,8 @@
 # AUAudioMixRenderingStyle.audioMixRenderingStyle_InFrameForegroundStem
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case audioMixRenderingStyle_InFrameForegroundStem
+```
+
+```c
+kAudioMixRenderingStyle_InFrameForegroundStem
 ```
 
 

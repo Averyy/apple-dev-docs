@@ -1,7 +1,8 @@
 # NetworkDNSProxy
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to configure DNS proxy settings.
 
@@ -14,7 +15,7 @@ The declaration to configure DNS proxy settings.
 
 ## Declaration
 
-```swift
+```
 object NetworkDNSProxy
 ```
 
@@ -22,7 +23,7 @@ object NetworkDNSProxy
 
 Specify `com.apple.configuration.network.dns-proxy` as the declaration type.
 
-##### Configuration Availability
+##### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ Specify `com.apple.configuration.network.dns-proxy` as the declaration type.
 | Allowed in user scope | N/A |
 | Apply | Only a single configuration is applied |
 
-##### Configuration Example
+##### Configuration example
 
 This configuration sets up a DNS proxy using a Network Extension app.
 
@@ -59,48 +60,55 @@ This configuration sets up a DNS proxy using a Network Extension app.
 ## Topics
 
 ### Objects
-- [object NetworkDNSProxyProviderConfigurationObject](networkdnsproxyproviderconfigurationobject.md)
+- [object NetworkDNSProxyProviderConfigurationObject](./networkdnsproxyproviderconfigurationobject.md)
   The dictionary of vendor-specific configuration items.
 
 ## Properties
 
 - `AppBundleIdentifier` (string) *(required)*: The bundle identifier of the app containing the DNS proxy network extension.
-- `DNSProxyUUID` (string): A globally unique identifier for this DNS proxy configuration. The proxy processes DNS lookups traffic for managed apps with the same `DNSProxyUUID` in their app attributes. This key is required for user enrollment. Available: iOS 27+ | iPadOS 27+ | visionOS 27+
-- `ProviderComposedIdentifier` (string): The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension. In iOS and visionOS, the identifier is a bundle ID, for example, “com.example.app”. In macOS, the identifier is a composed identifier. The format of the composed identifier is either “Bundle-ID” or “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the provider. “Designated-Requirement” is the designated requirement string the device uses to match the code signature of the provider. For example, “com.example.app” for the bundle ID format, or “com.example.app {anchor apple generic}” for the designated requirement format.
+- `DNSProxyUUID` (string): A globally unique identifier for this DNS proxy configuration. The proxy processes DNS lookups traffic for managed apps with the same `DNSProxyUUID` in their app attributes. This key is required for user enrollment.
+
+  Available: iOS 27+ | iPadOS 27+ | visionOS 27+
+- `ProviderComposedIdentifier` (string): The identifier of the provider to use for this configuration. Useful for apps that contain more than one DNS proxy extension.
+
+  In iOS and visionOS, the identifier is a bundle ID, for example, “com.example.app”.
+
+  In macOS, the identifier is a composed identifier. The format of the composed identifier is either “Bundle-ID” or “Bundle-ID {Designated-Requirement}”. “Bundle-ID” is the bundle identifier string of the provider. “Designated-Requirement” is the designated requirement string the device uses to match the code signature of the provider. For example, “com.example.app” for the bundle ID format, or “com.example.app {anchor apple generic}” for the designated requirement format.
 - `ProviderConfiguration` (NetworkDNSProxyProviderConfigurationObject): The dictionary of vendor-specific configuration items.
 - `VisibleName` (string) *(required)*: The name of the DNS proxy configuration that the system displays on the device.
 
 ## See Also
 
-- [object AccessibilitySettings](accessibilitysettings.md)
+### Configurations
+- [object AccessibilitySettings](./accessibilitysettings.md)
   The declaration to configure accessibility settings.
-- [object AccountCalDAV](accountcaldav.md)
+- [object AccountCalDAV](./accountcaldav.md)
   The declaration to configure a Calendar account.
-- [object AccountCardDAV](accountcarddav.md)
+- [object AccountCardDAV](./accountcarddav.md)
   The declaration to configure a Contacts account.
-- [object AccountExchange](accountexchange.md)
+- [object AccountExchange](./accountexchange.md)
   The declaration to configure an Exchange account.
-- [object AccountGoogle](accountgoogle.md)
+- [object AccountGoogle](./accountgoogle.md)
   The declaration to configure a Google account.
-- [object AccountLDAP](accountldap.md)
+- [object AccountLDAP](./accountldap.md)
   The declaration to configure a Lightweight Directory Access Protocol (LDAP) account.
-- [object AccountMail](accountmail.md)
+- [object AccountMail](./accountmail.md)
   The declaration to configure a Mail account.
-- [object AccountSettings](accountsettings.md)
+- [object AccountSettings](./accountsettings.md)
   The declaration to configure account settings.
-- [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
+- [object AccountSubscribedCalendar](./accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
-- [object AppManaged](appmanaged.md)
+- [object AppManaged](./appmanaged.md)
   The declaration to configure a managed app.
-- [object AppSettings](appsettings.md)
+- [object AppSettings](./appsettings.md)
   The declaration to configure app settings.
-- [object AudioAccessorySettings](audioaccessorysettings.md)
+- [object AudioAccessorySettings](./audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCaching](./contentcaching.md)
   The declaration to configure the Content Caching service.
-- [object DiskManagementSettings](diskmanagementsettings.md)
+- [object DiskManagementSettings](./diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
-- [object ExtensibleSSO](extensiblesso.md)
+- [object ExtensibleSSO](./extensiblesso.md)
   The declaration to configure Extensible Single Sign-On.
 
 

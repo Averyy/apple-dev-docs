@@ -1,7 +1,8 @@
 # completionHandler
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that the playback controller executes when it reaches the end of the audio stream.
 
@@ -11,7 +12,7 @@ A closure that the playback controller executes when it reaches the end of the a
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ A closure that the playback controller executes when it reaches the end of the a
 
 #### Discussion
 
-The controller doesn’t call the closure if you manually stop the audio by calling the [`stop()`](audioplaybackcontroller/stop().md) or the [`pause()`](audioplaybackcontroller/pause().md) method.
+The controller doesn’t call the closure if you manually stop the audio by calling the [`stop()`](./stop%28%29.md) or the [`pause()`](./pause%28%29.md) method.
 
 > **Note**: You can only register one handler at a time. If you set a new handler, the controller discards the old one.
 

@@ -1,7 +1,8 @@
 # VTInt32Size
 
 **Framework**: Video Toolbox  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a 32-bit integer size value.
 
@@ -19,6 +20,10 @@ A structure that represents a 32-bit integer size value.
 struct VTInt32Size
 ```
 
+```c
+typedef struct VTInt32Size { ... } VTInt32Size;
+```
+
 #### Overview
 
 Use this structure to represent a size with a particular width and height.
@@ -26,27 +31,28 @@ Use this structure to represent a size with a particular width and height.
 ## Topics
 
 ### Creating a Size
-- [init()](vtint32size/init.md)
+- [init()](./vtint32size/init%28%29.md)
   Creates a size with a width and height of zero.
-- [init(width: Int32, height: Int32)](vtint32size/init(width:height:).md)
+- [init(width: Int32, height: Int32)](./vtint32size/init%28width,height%29.md)
   Creates a size with a width and height.
 ### Accessing the Dimensions
-- [var width: Int32](vtint32size/width.md)
+- [var width: Int32](./vtint32size/width.md)
   The width of the size.
-- [var height: Int32](vtint32size/height.md)
+- [var height: Int32](./vtint32size/height.md)
   The height of the size.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [VTSession](vtsession-api-collection.md)
+### Data Types
+- [VTSession](./vtsession-api-collection.md)
   An abstract object that provides the common interface to configure VideoToolbox session objects.
-- [struct VTInt32Point](vtint32point.md)
+- [struct VTInt32Point](./vtint32point.md)
   A structure that represents a 32-bit integer point value.
 
 

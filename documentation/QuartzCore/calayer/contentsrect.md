@@ -1,7 +1,8 @@
 # contentsRect
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle, in the unit coordinate space, that defines the portion of the layer’s contents that should be used. Animatable.
 
@@ -19,6 +20,10 @@ The rectangle, in the unit coordinate space, that defines the portion of the lay
 var contentsRect: CGRect { get set }
 ```
 
+```objc
+@property CGRect contentsRect;
+```
+
 #### Discussion
 
 Defaults to the unit rectangle (0.0, 0.0, 1.0, 1.0).
@@ -29,13 +34,14 @@ If an empty rectangle is provided, the results are undefined.
 
 ## See Also
 
-- [var contents: Any?](calayer/contents.md)
+### Providing the layer’s content
+- [var contents: Any?](./contents.md)
   An object that provides the contents of the layer. Animatable.
-- [var contentsCenter: CGRect](calayer/contentscenter.md)
+- [var contentsCenter: CGRect](./contentscenter.md)
   The rectangle that defines how the layer contents are scaled if the layer’s contents are resized. Animatable.
-- [func display()](calayer/display.md)
+- [func display()](./display%28%29.md)
   Reloads the content of this layer.
-- [func draw(in: CGContext)](calayer/draw(in:).md)
+- [func draw(in: CGContext)](./draw%28in%29.md)
   Draws the layer’s content using the specified graphics context.
 
 

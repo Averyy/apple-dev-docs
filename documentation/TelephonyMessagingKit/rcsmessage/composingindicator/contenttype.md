@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of message being composed.
 
@@ -16,15 +17,16 @@ var contentType: UTType?
 
 ## See Also
 
-- [var state: RCSMessage.ComposingIndicator.State](rcsmessage/composingindicator/state-swift.property.md)
+### Accessing composing indicator properties
+- [var state: RCSMessage.ComposingIndicator.State](./state-swift.property.md)
   The state of the composer.
-- [RCSMessage.ComposingIndicator.State](rcsmessage/composingindicator/state-swift.enum.md)
+- [RCSMessage.ComposingIndicator.State](./state-swift.enum.md)
   An enumeration that represents the state of the indicator.
-- [var lastActive: Date?](rcsmessage/composingindicator/lastactive.md)
+- [var lastActive: Date?](./lastactive.md)
   The time of last activity.
-- [struct UTType](../uniformtypeidentifiers/uttype-swift.struct.md)
+- [struct UTType](../../../UniformTypeIdentifiers/uttype-swift.struct.md)
   A structure that represents a type of data to load, send, or receive.
-- [var refreshInterval: Duration?](rcsmessage/composingindicator/refreshinterval.md)
+- [var refreshInterval: Duration?](./refreshinterval.md)
   The time interval after which the receiver can expect an update from the composer.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOTimeOptionsContinuous](2870318-anonymous/kiotimeoptionscontinuous.md)
-- [kIOTimeOptionsWithLeeway](2870318-anonymous/kiotimeoptionswithleeway.md)
+- [kIOTimeOptionsContinuous](./api-2870318-anonymous/kiotimeoptionscontinuous.md)
+- [kIOTimeOptionsWithLeeway](./api-2870318-anonymous/kiotimeoptionswithleeway.md)
 
 
 ---

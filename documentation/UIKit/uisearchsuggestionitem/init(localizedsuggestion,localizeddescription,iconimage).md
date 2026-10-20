@@ -1,7 +1,8 @@
 # init(localizedSuggestion:localizedDescription:iconImage:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a search suggestion with the specified text and image attributes.
 
@@ -18,6 +19,10 @@ Creates a search suggestion with the specified text and image attributes.
 init(localizedSuggestion suggestion: String, localizedDescription description: String?, iconImage: UIImage?)
 ```
 
+```objc
+- (instancetype) initWithLocalizedSuggestion:(NSString *) suggestion localizedDescription:(NSString *) description iconImage:(UIImage *) iconImage;
+```
+
 ## Parameters
 
 - `suggestion`: A label for the suggestion, usually the search term the suggestion represents.
@@ -26,15 +31,16 @@ init(localizedSuggestion suggestion: String, localizedDescription description: S
 
 ## See Also
 
-- [init(localizedAttributedSuggestion: NSAttributedString, localizedDescription: String?, iconImage: UIImage?)](uisearchsuggestionitem/init(localizedattributedsuggestion:localizeddescription:iconimage:).md)
+### Creating a search suggestion
+- [init(localizedAttributedSuggestion: NSAttributedString, localizedDescription: String?, iconImage: UIImage?)](./init%28localizedattributedsuggestion,localizeddescription,iconimage%29.md)
   Creates a search suggestion with the specified attributed label, accessibility description, and image.
-- [init(localizedSuggestion: String, localizedDescription: String?)](uisearchsuggestionitem/init(localizedsuggestion:localizeddescription:).md)
+- [init(localizedSuggestion: String, localizedDescription: String?)](./init%28localizedsuggestion,localizeddescription%29.md)
   Creates a search suggestion with the specified label and accessibility description.
-- [init(localizedAttributedSuggestion: NSAttributedString, localizedDescription: String?)](uisearchsuggestionitem/init(localizedattributedsuggestion:localizeddescription:).md)
+- [init(localizedAttributedSuggestion: NSAttributedString, localizedDescription: String?)](./init%28localizedattributedsuggestion,localizeddescription%29.md)
   Creates a search suggestion with the specified attributed label and accessibility description.
-- [init(localizedSuggestion: String)](uisearchsuggestionitem/init(localizedsuggestion:).md)
+- [init(localizedSuggestion: String)](./init%28localizedsuggestion%29.md)
   Creates a search suggestion with the specified label.
-- [init(localizedAttributedSuggestion: NSAttributedString)](uisearchsuggestionitem/init(localizedattributedsuggestion:).md)
+- [init(localizedAttributedSuggestion: NSAttributedString)](./init%28localizedattributedsuggestion%29.md)
   Creates a search suggestion with the specified attributed label.
 
 

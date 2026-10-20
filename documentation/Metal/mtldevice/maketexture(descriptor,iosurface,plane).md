@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a texture instance that uses I/O surface to store its underlying data.
@@ -20,27 +21,32 @@ Creates a texture instance that uses I/O surface to store its underlying data.
 func makeTexture(descriptor: MTLTextureDescriptor, iosurface: IOSurfaceRef, plane: Int) -> (any MTLTexture)?
 ```
 
+```objc
+- (id<MTLTexture>) newTextureWithDescriptor:(MTLTextureDescriptor *) descriptor iosurface:(IOSurfaceRef) iosurface plane:(NSUInteger) plane;
+```
+
 #### Return Value
 
-A new [`MTLTexture`](mtltexture.md) instance if the method completed successfully; otherwise `nil`.
+A new [`MTLTexture`](../mtltexture.md) instance if the method completed successfully; otherwise `nil`.
 
 ## Parameters
 
-- `descriptor`: An [`MTLTextureDescriptor`](mtltexturedescriptor.md) instance.
+- `descriptor`: An [`MTLTextureDescriptor`](../mtltexturedescriptor.md) instance.
 - `iosurface`: An `IOSurfaceRef` instance.
 - `plane`: A plane within i`osurface` the method sets as the texture’s underlying data.
 
 ## See Also
 
-- [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](mtldevice/maketexture(descriptor:).md)
+### Creating textures
+- [func makeTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](./maketexture%28descriptor%29.md)
   Creates a new texture instance.
-- [func makeSharedTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](mtldevice/makesharedtexture(descriptor:).md)
+- [func makeSharedTexture(descriptor: MTLTextureDescriptor) -> (any MTLTexture)?](./makesharedtexture%28descriptor%29.md)
   Creates a texture that you can share across process boundaries.
-- [func makeSharedTexture(handle: MTLSharedTextureHandle) -> (any MTLTexture)?](mtldevice/makesharedtexture(handle:).md)
+- [func makeSharedTexture(handle: MTLSharedTextureHandle) -> (any MTLTexture)?](./makesharedtexture%28handle%29.md)
   Creates a texture that references a shared texture.
-- [func minimumLinearTextureAlignment(for: MTLPixelFormat) -> Int](mtldevice/minimumlineartexturealignment(for:).md)
+- [func minimumLinearTextureAlignment(for: MTLPixelFormat) -> Int](./minimumlineartexturealignment%28for%29.md)
   Returns the minimum alignment the GPU device requires to create a linear texture from a buffer.
-- [func minimumTextureBufferAlignment(for: MTLPixelFormat) -> Int](mtldevice/minimumtexturebufferalignment(for:).md)
+- [func minimumTextureBufferAlignment(for: MTLPixelFormat) -> Int](./minimumtexturebufferalignment%28for%29.md)
   Returns the minimum alignment the GPU device requires to create a texture buffer from a buffer.
 
 

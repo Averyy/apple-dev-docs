@@ -1,7 +1,8 @@
 # GroupActivity.Sessions
 
 **Framework**: Group Activities  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that provides asynchronous, sequential, iterated access to the sessions for the activity.
 
@@ -21,11 +22,12 @@ typealias Sessions = GroupSession<Self>.Sessions
 
 #### Discussion
 
-A `Sessions` type contains a sequence of [`GroupSession`](groupsession.md) objects specific to the current activity. The [`sessions()`](groupactivity/sessions().md) method returns this type, and you use it to retrieve the current session, if any, for that activity. The system creates only one [`GroupSession`](groupsession.md) object for each new activity. To detect changes to the session’s state, activity type, or active participants, subscribe to the corresponding properties.
+A `Sessions` type contains a sequence of [`GroupSession`](../groupsession.md) objects specific to the current activity. The [`sessions()`](./sessions%28%29.md) method returns this type, and you use it to retrieve the current session, if any, for that activity. The system creates only one [`GroupSession`](../groupsession.md) object for each new activity. To detect changes to the session’s state, activity type, or active participants, subscribe to the corresponding properties.
 
 ## See Also
 
-- [static func sessions() -> Self.Sessions](groupactivity/sessions.md)
+### Receiving an activity-related session
+- [static func sessions() -> Self.Sessions](./sessions%28%29.md)
   Returns the sessions for this activity as an asynchronous sequence.
 
 

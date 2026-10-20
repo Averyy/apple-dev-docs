@@ -1,7 +1,8 @@
 # togglePanel(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Toggles the visibility of the Media Library Browser.
 
@@ -15,15 +16,20 @@ Toggles the visibility of the Media Library Browser.
 func togglePanel(_ sender: Any?)
 ```
 
+```objc
+- (void) togglePanel:(id) sender;
+```
+
 ## Parameters
 
 - `sender`: The sender of the message.
 
 ## See Also
 
-- [var frame: NSRect](nsmedialibrarybrowsercontroller/frame.md)
+### Displaying the Media Library Browser Panel
+- [var frame: NSRect](./frame.md)
   The frame, in global coordinates, used to display the Media Library Browser panel.
-- [var isVisible: Bool](nsmedialibrarybrowsercontroller/isvisible.md)
+- [var isVisible: Bool](./isvisible.md)
   A Boolean value that determines whether the Media Library Browser panel is visible.
 
 

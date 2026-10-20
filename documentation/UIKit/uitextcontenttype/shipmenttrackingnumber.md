@@ -1,7 +1,8 @@
 # shipmentTrackingNumber
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as a parcel tracking number.
 
@@ -18,9 +19,14 @@ A property that defines the content in a text input area as a parcel tracking nu
 static let shipmentTrackingNumber: UITextContentType
 ```
 
+```c
+extern UITextContentType const UITextContentTypeShipmentTrackingNumber;
+```
+
 ## See Also
 
-- [static let flightNumber: UITextContentType](uitextcontenttype/flightnumber.md)
+### Tracking events
+- [static let flightNumber: UITextContentType](./flightnumber.md)
   A property that defines the content in a text input area as an airline flight number.
 
 

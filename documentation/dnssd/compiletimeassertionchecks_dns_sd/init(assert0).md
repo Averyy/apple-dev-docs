@@ -1,7 +1,8 @@
 # init(assert0:)
 
 **Framework**: dnssd  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 10.0+

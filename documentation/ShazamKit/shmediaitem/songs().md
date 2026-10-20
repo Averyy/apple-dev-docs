@@ -1,7 +1,8 @@
 # songs()
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 An array of MusicKit song objects that represent the media item.
 
@@ -22,7 +23,7 @@ func songs() async throws -> [Song]
 
 #### Discussion
 
-For more information about the MusicKit song object, see [`Song`](https://developer.apple.com/documentation/musickit/song).
+For more information about the MusicKit song object, see [`Song`](../../MusicKit/song.md).
 
 
 ---

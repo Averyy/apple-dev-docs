@@ -1,7 +1,8 @@
 # bmAttributes
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 A bitmap encoding of supported device-level features.
 
@@ -10,17 +11,18 @@ A bitmap encoding of supported device-level features.
 
 ## Declaration
 
-```swift
+```c
 uint32_t bmAttributes;
 ```
 
 ## See Also
 
-- [bLength](iousbdevicecapabilityusb2extension/1546509-blength.md)
+### Getting the Properties
+- [bLength](./api-1546509-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbdevicecapabilityusb2extension/1546574-bdescriptortype.md)
+- [bDescriptorType](./api-1546574-bdescriptortype.md)
   The type of the descriptor.
-- [bDevCapabilityType](iousbdevicecapabilityusb2extension/1546135-bdevcapabilitytype.md)
+- [bDevCapabilityType](./api-1546135-bdevcapabilitytype.md)
   The capability type.
 
 

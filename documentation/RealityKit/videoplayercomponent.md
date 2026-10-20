@@ -1,7 +1,8 @@
 # VideoPlayerComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that supports general video-playback experience with an AV player.
 
@@ -23,9 +24,11 @@ struct VideoPlayerComponent
 
 To streamline and enhance video playback controls, a video player component empowers an app to support captions, subtitles, light spill, and passthrough tinting (visionOS only). Attach a `VideoPlayerComponent` to an entity to start configuring playback controls.
 
-The example below shows an entity with a [`VideoPlayerComponent`](videoplayercomponent.md) attached:
+The example below shows an entity with a [`VideoPlayerComponent`](./videoplayercomponent.md) attached:
 
-The following code example shows the basic setup for initializing a `VideoPlayerComponent` with an [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer):
+[Video: A screen recording of an entity with a video player component playing in a living room scene.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/videoplayercomponent-videoplaying.mp4)
+
+The following code example shows the basic setup for initializing a `VideoPlayerComponent` with an [`AVPlayer`](../AVFoundation/avplayer.md):
 
 ```swift
 // Create an entity for display.
@@ -52,7 +55,7 @@ videoPlayerComponent.desiredViewingMode = VideoPlaybackController.ViewingMode.st
 videoPlayerComponent.isPassthroughTintingEnabled = true
 ```
 
-Here are a few event subscription examples for [`VideoPlayerEvents`](videoplayerevents.md):
+Here are a few event subscription examples for [`VideoPlayerEvents`](./videoplayerevents.md):
 
 ```swift
 RealityView { content in
@@ -87,91 +90,92 @@ RealityView { content in
 }
 ```
 
-##### Playing Immersive Video
+##### Playing immersive video
 
 On visionOS, you can also use `VideoPlayerComponent` to play immersive media with RealityKit. Watch videos in a window alongside other Shared Space apps, or watch immersive video with a 180-degree field of view in a fully immersive space, or watch immersive video with a progressive view in a progressive immersive space
 
-##### Playing Immersive Video with a 180 Degree Field of View
+##### Playing immersive video with a 180-degree field of view
 
-To play the immersive media with a 180-degree field of view, first set up a fully immersive space, and then set [`desiredImmersiveViewingMode`](videoplayercomponent/desiredimmersiveviewingmode.md) to [`VideoPlayerComponent.ImmersiveViewingMode.full`](videoplayercomponent/immersiveviewingmode-swift.enum/full.md).
+To play the immersive media with a 180-degree field of view, first set up a fully immersive space, and then set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to [`VideoPlayerComponent.ImmersiveViewingMode.full`](./videoplayercomponent/immersiveviewingmode-swift.enum/full.md).
 
-If you want to switch the immersive-viewing mode to `full` while immersive-media playback is in [`VideoPlayerComponent.ImmersiveViewingMode.portal`](videoplayercomponent/immersiveviewingmode-swift.enum/portal.md) mode, wait for the scene event named [`VideoPlayerEvents.ImmersiveViewingModeDidChange`](videoplayerevents/immersiveviewingmodedidchange.md) to trigger after you set [`desiredImmersiveViewingMode`](videoplayercomponent/desiredimmersiveviewingmode.md) to `full`. Then, dismiss the window scene and open up a fully immersive space scene.
+If you want to switch the immersive-viewing mode to `full` while immersive-media playback is in [`VideoPlayerComponent.ImmersiveViewingMode.portal`](./videoplayercomponent/immersiveviewingmode-swift.enum/portal.md) mode, wait for the scene event named [`VideoPlayerEvents.ImmersiveViewingModeDidChange`](./videoplayerevents/immersiveviewingmodedidchange.md) to trigger after you set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to `full`. Then, dismiss the window scene and open up a fully immersive space scene.
 
-##### Playing Immersive Video with a Progressive View
+##### Playing immersive video with a progressive view
 
-To play the immersive media with a progressive view, first set up a progressive immersive space, and then set [`desiredImmersiveViewingMode`](videoplayercomponent/desiredimmersiveviewingmode.md) to [`VideoPlayerComponent.ImmersiveViewingMode.progressive`](videoplayercomponent/immersiveviewingmode-swift.enum/progressive.md).
+To play the immersive media with a progressive view, first set up a progressive immersive space, and then set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to [`VideoPlayerComponent.ImmersiveViewingMode.progressive`](./videoplayercomponent/immersiveviewingmode-swift.enum/progressive.md).
 
-If you want to switch the immersive-viewing mode to `progressive` while immersive-media playback is in [`VideoPlayerComponent.ImmersiveViewingMode.portal`](videoplayercomponent/immersiveviewingmode-swift.enum/portal.md) mode, wait for the scene event named [`VideoPlayerEvents.ImmersiveViewingModeDidChange`](videoplayerevents/immersiveviewingmodedidchange.md) to trigger after you set [`desiredImmersiveViewingMode`](videoplayercomponent/desiredimmersiveviewingmode.md) to `progressive`. Then, dismiss the window scene and open up a progressive immersive space scene.
+If you want to switch the immersive-viewing mode to `progressive` while immersive-media playback is in [`VideoPlayerComponent.ImmersiveViewingMode.portal`](./videoplayercomponent/immersiveviewingmode-swift.enum/portal.md) mode, wait for the scene event named [`VideoPlayerEvents.ImmersiveViewingModeDidChange`](./videoplayerevents/immersiveviewingmodedidchange.md) to trigger after you set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to `progressive`. Then, dismiss the window scene and open up a progressive immersive space scene.
 
-##### Playing Immersive Video in a Portal Window
+##### Playing immersive video in a portal window
 
-To play the immersive video in a portal window, set up a window scene in the Shared Space, and then set [`desiredImmersiveViewingMode`](videoplayercomponent/desiredimmersiveviewingmode.md) to [`VideoPlayerComponent.ImmersiveViewingMode.portal`](videoplayercomponent/immersiveviewingmode-swift.enum/portal.md).
+To play the immersive video in a portal window, set up a window scene in the Shared Space, and then set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to [`VideoPlayerComponent.ImmersiveViewingMode.portal`](./videoplayercomponent/immersiveviewingmode-swift.enum/portal.md).
 
-If you want to switch the immersive-viewing mode to `portal` while immersive-media playback is in `full` or is in `progressive` mode, wait for the scene event named [`VideoPlayerEvents.ImmersiveViewingModeDidChange`](videoplayerevents/immersiveviewingmodedidchange.md) to trigger after you set [`desiredImmersiveViewingMode`](videoplayercomponent/desiredimmersiveviewingmode.md) to `portal`. Then, dismiss the fully/progressive immersive space and open up a window scene.
+If you want to switch the immersive-viewing mode to `portal` while immersive-media playback is in `full` or is in `progressive` mode, wait for the scene event named [`VideoPlayerEvents.ImmersiveViewingModeDidChange`](./videoplayerevents/immersiveviewingmodedidchange.md) to trigger after you set [`desiredImmersiveViewingMode`](./videoplayercomponent/desiredimmersiveviewingmode.md) to `portal`. Then, dismiss the fully/progressive immersive space and open up a window scene.
 
-##### Updating the Ui During Transitions
+##### Updating the UI during transitions
 
-The system triggers scene events named [`VideoPlayerEvents.ImmersiveViewingModeWillTransition`](videoplayerevents/immersiveviewingmodewilltransition.md) and [`VideoPlayerEvents.ImmersiveViewingModeDidTransition`](videoplayerevents/immersiveviewingmodedidtransition.md) at the start and end of the immersive-viewing mode transitions, respectively. Apps can listen to these scene events to turn playback controls or other UI items on or off during transitions.
+The system triggers scene events named [`VideoPlayerEvents.ImmersiveViewingModeWillTransition`](./videoplayerevents/immersiveviewingmodewilltransition.md) and [`VideoPlayerEvents.ImmersiveViewingModeDidTransition`](./videoplayerevents/immersiveviewingmodedidtransition.md) at the start and end of the immersive-viewing mode transitions, respectively. Apps can listen to these scene events to turn playback controls or other UI items on or off during transitions.
 
 ## Topics
 
 ### Creating a video player component
-- [init(avPlayer: AVPlayer)](videoplayercomponent/init(avplayer:).md)
+- [init(avPlayer: AVPlayer)](./videoplayercomponent/init%28avplayer%29.md)
   Creates a video player component from an AV player object.
-- [init(videoRenderer: AVSampleBufferVideoRenderer)](videoplayercomponent/init(videorenderer:).md)
+- [init(videoRenderer: AVSampleBufferVideoRenderer)](./videoplayercomponent/init%28videorenderer%29.md)
   Creates a video player component from a sample buffer video renderer object.
 ### Configuring the video player
-- [var isPassthroughTintingEnabled: Bool](videoplayercomponent/ispassthroughtintingenabled.md)
+- [var isPassthroughTintingEnabled: Bool](./videoplayercomponent/ispassthroughtintingenabled.md)
   A Boolean value that indicates whether the passthrough camera feed is tinted, emphasizing the video content.
-- [var desiredViewingMode: VideoPlaybackController.ViewingMode](videoplayercomponent/desiredviewingmode.md)
+- [var desiredViewingMode: VideoPlaybackController.ViewingMode](./videoplayercomponent/desiredviewingmode.md)
   The viewer’s selected content-viewing mode.
 ### Accessing video player properties
-- [var avPlayer: AVPlayer?](videoplayercomponent/avplayer.md)
+- [var avPlayer: AVPlayer?](./videoplayercomponent/avplayer.md)
   The AV player that the component plays.
-- [var playerScreenSize: SIMD2<Float>](videoplayercomponent/playerscreensize.md)
+- [var playerScreenSize: SIMD2<Float>](./videoplayercomponent/playerscreensize.md)
   The screen entity size of the current video player in meters.
-- [var screenVideoDimension: SIMD2<Float>](videoplayercomponent/screenvideodimension.md)
+- [var screenVideoDimension: SIMD2<Float>](./videoplayercomponent/screenvideodimension.md)
   The video resolution size.
-- [var videoRenderer: AVSampleBufferVideoRenderer?](videoplayercomponent/videorenderer.md)
+- [var videoRenderer: AVSampleBufferVideoRenderer?](./videoplayercomponent/videorenderer.md)
   The component’s video renderer.
-- [var viewingMode: VideoPlaybackController.ViewingMode?](videoplayercomponent/viewingmode.md)
+- [var viewingMode: VideoPlaybackController.ViewingMode?](./videoplayercomponent/viewingmode.md)
   The current content-viewing mode for video playback.
 ### Playing immersive media
-- [var desiredImmersiveViewingMode: VideoPlayerComponent.ImmersiveViewingMode](videoplayercomponent/desiredimmersiveviewingmode.md)
+- [var desiredImmersiveViewingMode: VideoPlayerComponent.ImmersiveViewingMode](./videoplayercomponent/desiredimmersiveviewingmode.md)
   The viewer’s selected immersive-viewing mode.
-- [var immersiveViewingMode: VideoPlayerComponent.ImmersiveViewingMode?](videoplayercomponent/immersiveviewingmode-swift.property.md)
+- [var immersiveViewingMode: VideoPlayerComponent.ImmersiveViewingMode?](./videoplayercomponent/immersiveviewingmode-swift.property.md)
   The current immersive-viewing mode.
 ### Sizing the video portal
-- [var portalSize: SIMD2<Float>](videoplayercomponent/portalsize.md)
+- [var portalSize: SIMD2<Float>](./videoplayercomponent/portalsize.md)
   The size of the portal window for immersive video playback, in meters.
 ### Instance Properties
-- [var currentRenderingStatus: VideoPlayerComponent.RenderingStatus](videoplayercomponent/currentrenderingstatus.md)
-- [var desiredSpatialVideoMode: VideoPlayerComponent.SpatialVideoMode](videoplayercomponent/desiredspatialvideomode.md)
+- [var currentRenderingStatus: VideoPlayerComponent.RenderingStatus](./videoplayercomponent/currentrenderingstatus.md)
+- [var desiredSpatialVideoMode: VideoPlayerComponent.SpatialVideoMode](./videoplayercomponent/desiredspatialvideomode.md)
   The viewer’s selected spatial video rendering mode.
-- [var spatialVideoMode: VideoPlayerComponent.SpatialVideoMode](videoplayercomponent/spatialvideomode-swift.property.md)
+- [var spatialVideoMode: VideoPlayerComponent.SpatialVideoMode](./videoplayercomponent/spatialvideomode-swift.property.md)
   The currently active spatial video rendering mode.
 ### Enumerations
-- [VideoPlayerComponent.ImmersiveViewingMode](videoplayercomponent/immersiveviewingmode-swift.enum.md)
+- [VideoPlayerComponent.ImmersiveViewingMode](./videoplayercomponent/immersiveviewingmode-swift.enum.md)
   Options for viewing the video during immersive-media playback.
-- [VideoPlayerComponent.RenderingStatus](videoplayercomponent/renderingstatus.md)
-- [VideoPlayerComponent.SpatialVideoMode](videoplayercomponent/spatialvideomode-swift.enum.md)
+- [VideoPlayerComponent.RenderingStatus](./videoplayercomponent/renderingstatus.md)
+- [VideoPlayerComponent.SpatialVideoMode](./videoplayercomponent/spatialvideomode-swift.enum.md)
   Spatial Videos’s rendering mode.
-- [VideoPlayerComponent.VideoComfortMitigation](videoplayercomponent/videocomfortmitigation.md)
+- [VideoPlayerComponent.VideoComfortMitigation](./videoplayercomponent/videocomfortmitigation.md)
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [VideoPlayerComponent.ImmersiveViewingMode](videoplayercomponent/immersiveviewingmode-swift.enum.md)
+### Video player configurations
+- [VideoPlayerComponent.ImmersiveViewingMode](./videoplayercomponent/immersiveviewingmode-swift.enum.md)
   Options for viewing the video during immersive-media playback.
-- [struct VideoMaterial](videomaterial.md)
+- [struct VideoMaterial](./videomaterial.md)
   A material that supports animated textures.
-- [class VideoPlaybackController](videoplaybackcontroller.md)
+- [class VideoPlaybackController](./videoplaybackcontroller.md)
   An object that controls the playback of video for a video material.
-- [VideoPlaybackController.ViewingMode](videoplaybackcontroller/viewingmode.md)
+- [VideoPlaybackController.ViewingMode](./videoplaybackcontroller/viewingmode.md)
   Options for viewing video playback.
 
 

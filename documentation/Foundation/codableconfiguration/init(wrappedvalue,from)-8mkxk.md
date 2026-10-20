@@ -1,7 +1,8 @@
 # init(wrappedValue:from:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a codable configuration wrapper for the given value, using given configuration provider type identified by key path.
 
@@ -20,6 +21,8 @@ Creates a codable configuration wrapper for the given value, using given configu
 init(wrappedValue: T, from keyPath: KeyPath<AttributeScopes, ConfigurationProvider.Type>)
 ```
 
+Available when `T` conforms to `DecodableWithConfiguration`, `T` conforms to `EncodableWithConfiguration`, `ConfigurationProvider` conforms to `AttributeScope`, `T.DecodingConfiguration` is `ConfigurationProvider.DecodingConfiguration`, and `T.EncodingConfiguration` is `ConfigurationProvider.EncodingConfiguration`.
+
 ## Parameters
 
 - `wrappedValue`: The underlying value to make codable, using data from the configuration provider.
@@ -27,9 +30,10 @@ init(wrappedValue: T, from keyPath: KeyPath<AttributeScopes, ConfigurationProvid
 
 ## See Also
 
-- [init(wrappedValue: T)](codableconfiguration/init(wrappedvalue:).md)
+### Creating a Codable Configuration
+- [init(wrappedValue: T)](./init%28wrappedvalue%29.md)
   Creates a codable configuration wrapper for the given value.
-- [init(wrappedValue: T, from: ConfigurationProvider.Type)](codableconfiguration/init(wrappedvalue:from:)-46oo6.md)
+- [init(wrappedValue: T, from: ConfigurationProvider.Type)](./init%28wrappedvalue,from%29-46oo6.md)
   Creates a codable configuration wrapper for the given value, using the given configuration provider type.
 
 

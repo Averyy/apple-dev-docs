@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 13.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,13 +18,13 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOHIDKeyboardPhysicalLayoutType101](3943396-anonymous/kiohidkeyboardphysicallayouttype101.md)
-- [kIOHIDKeyboardPhysicalLayoutType102](3943396-anonymous/kiohidkeyboardphysicallayouttype102.md)
-- [kIOHIDKeyboardPhysicalLayoutType103](3943396-anonymous/kiohidkeyboardphysicallayouttype103.md)
-- [kIOHIDKeyboardPhysicalLayoutType104](3943396-anonymous/kiohidkeyboardphysicallayouttype104.md)
-- [kIOHIDKeyboardPhysicalLayoutType106](3943396-anonymous/kiohidkeyboardphysicallayouttype106.md)
-- [kIOHIDKeyboardPhysicalLayoutTypeUnknown](3943396-anonymous/kiohidkeyboardphysicallayouttypeunknown.md)
-- [kIOHIDKeyboardPhysicalLayoutTypeVendor](3943396-anonymous/kiohidkeyboardphysicallayouttypevendor.md)
+- [kIOHIDKeyboardPhysicalLayoutType101](./api-3943396-anonymous/kiohidkeyboardphysicallayouttype101.md)
+- [kIOHIDKeyboardPhysicalLayoutType102](./api-3943396-anonymous/kiohidkeyboardphysicallayouttype102.md)
+- [kIOHIDKeyboardPhysicalLayoutType103](./api-3943396-anonymous/kiohidkeyboardphysicallayouttype103.md)
+- [kIOHIDKeyboardPhysicalLayoutType104](./api-3943396-anonymous/kiohidkeyboardphysicallayouttype104.md)
+- [kIOHIDKeyboardPhysicalLayoutType106](./api-3943396-anonymous/kiohidkeyboardphysicallayouttype106.md)
+- [kIOHIDKeyboardPhysicalLayoutTypeUnknown](./api-3943396-anonymous/kiohidkeyboardphysicallayouttypeunknown.md)
+- [kIOHIDKeyboardPhysicalLayoutTypeVendor](./api-3943396-anonymous/kiohidkeyboardphysicallayouttypevendor.md)
 
 
 ---

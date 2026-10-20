@@ -1,7 +1,8 @@
 # title
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized title of the media query section.
 
@@ -17,9 +18,14 @@ The localized title of the media query section.
 var title: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * title;
+```
+
 ## See Also
 
-- [var range: NSRange](mpmediaquerysection/range.md)
+### Working with media query sections
+- [var range: NSRange](./range.md)
   The range in the media query’s items or collections array that the media query section represents.
 
 

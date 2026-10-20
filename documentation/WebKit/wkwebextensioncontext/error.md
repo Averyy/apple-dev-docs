@@ -1,7 +1,8 @@
 # WKWebExtensionContext.Error
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants used to indicate errors in the web extension context domain.
 
@@ -21,34 +22,35 @@ struct Error
 ## Topics
 
 ### Type Properties
-- [static var alreadyLoaded: WKWebExtensionContext.Error.Code](wkwebextensioncontext/error/alreadyloaded.md)
-  Indicates that the context is already loaded by a [`WKWebExtensionController`](wkwebextensioncontroller.md).
-- [static var backgroundContentFailedToLoad: WKWebExtensionContext.Error.Code](wkwebextensioncontext/error/backgroundcontentfailedtoload.md)
+- [static var alreadyLoaded: WKWebExtensionContext.Error.Code](./error/alreadyloaded.md)
+  Indicates that the context is already loaded by a [`WKWebExtensionController`](../wkwebextensioncontroller.md).
+- [static var backgroundContentFailedToLoad: WKWebExtensionContext.Error.Code](./error/backgroundcontentfailedtoload.md)
   Indicates that an error occurred loading the background content.
-- [static var baseURLAlreadyInUse: WKWebExtensionContext.Error.Code](wkwebextensioncontext/error/baseurlalreadyinuse.md)
+- [static var baseURLAlreadyInUse: WKWebExtensionContext.Error.Code](./error/baseurlalreadyinuse.md)
   Indicates that another context is already using the specified base URL.
-- [static var errorDomain: String](wkwebextensioncontext/error/errordomain.md)
+- [static var errorDomain: String](./error/errordomain.md)
   A string that identifies the error domain.
-- [static var noBackgroundContent: WKWebExtensionContext.Error.Code](wkwebextensioncontext/error/nobackgroundcontent.md)
+- [static var noBackgroundContent: WKWebExtensionContext.Error.Code](./error/nobackgroundcontent.md)
   Indicates that the extension does not have background content.
-- [static var notLoaded: WKWebExtensionContext.Error.Code](wkwebextensioncontext/error/notloaded.md)
-  Indicates that the context is not loaded by a [`WKWebExtensionController`](wkwebextensioncontroller.md).
-- [static var unknown: WKWebExtensionContext.Error.Code](wkwebextensioncontext/error/unknown.md)
+- [static var notLoaded: WKWebExtensionContext.Error.Code](./error/notloaded.md)
+  Indicates that the context is not loaded by a [`WKWebExtensionController`](../wkwebextensioncontroller.md).
+- [static var unknown: WKWebExtensionContext.Error.Code](./error/unknown.md)
   Indicates that an unknown error occurred.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../../Foundation/customnserror.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [WKWebExtensionContext.NotificationUserInfoKey](wkwebextensioncontext/notificationuserinfokey.md)
+### Structures
+- [WKWebExtensionContext.NotificationUserInfoKey](./notificationuserinfokey.md)
   Constants for specifying web extension context information in notifications.
 
 

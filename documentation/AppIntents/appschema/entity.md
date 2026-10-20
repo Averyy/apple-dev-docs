@@ -1,7 +1,8 @@
 # AppSchema.Entity
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -21,29 +22,29 @@ struct Entity
 ## Relationships
 
 ### Conforms To
-- [AppSchema.AudioEntity](appschema/audioentity.md)
-- [AppSchema.BooksEntity](appschema/booksentity.md)
-- [AppSchema.BrowserEntity](appschema/browserentity.md)
-- [AppSchema.CalendarEntity](appschema/calendarentity.md)
-- [AppSchema.ClockEntity](appschema/clockentity.md)
-- [AppSchema.FilesEntity](appschema/filesentity.md)
-- [AppSchema.JournalEntity](appschema/journalentity.md)
-- [AppSchema.Kind](appschema/kind.md)
-- [AppSchema.MailEntity](appschema/mailentity.md)
-- [AppSchema.MapsEntity](appschema/mapsentity.md)
-- [AppSchema.MessagesEntity](appschema/messagesentity.md)
-- [AppSchema.NotesEntity](appschema/notesentity.md)
-- [AppSchema.PhoneEntity](appschema/phoneentity.md)
-- [AppSchema.PhotosEntity](appschema/photosentity.md)
-- [AppSchema.PresentationEntity](appschema/presentationentity.md)
-- [AppSchema.ReaderEntity](appschema/readerentity.md)
-- [AppSchema.RemindersEntity](appschema/remindersentity.md)
-- [AppSchema.SpreadsheetEntity](appschema/spreadsheetentity.md)
-- [AppSchema.WhiteboardEntity](appschema/whiteboardentity.md)
-- [AppSchema.WordProcessorEntity](appschema/wordprocessorentity.md)
-- [AppSchemaEntity](appschemaentity.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
+- [AppSchema.AudioEntity](./audioentity.md)
+- [AppSchema.BooksEntity](./booksentity.md)
+- [AppSchema.BrowserEntity](./browserentity.md)
+- [AppSchema.CalendarEntity](./calendarentity.md)
+- [AppSchema.ClockEntity](./clockentity.md)
+- [AppSchema.FilesEntity](./filesentity.md)
+- [AppSchema.JournalEntity](./journalentity.md)
+- [AppSchema.Kind](./kind.md)
+- [AppSchema.MailEntity](./mailentity.md)
+- [AppSchema.MapsEntity](./mapsentity.md)
+- [AppSchema.MessagesEntity](./messagesentity.md)
+- [AppSchema.NotesEntity](./notesentity.md)
+- [AppSchema.PhoneEntity](./phoneentity.md)
+- [AppSchema.PhotosEntity](./photosentity.md)
+- [AppSchema.PresentationEntity](./presentationentity.md)
+- [AppSchema.ReaderEntity](./readerentity.md)
+- [AppSchema.RemindersEntity](./remindersentity.md)
+- [AppSchema.SpreadsheetEntity](./spreadsheetentity.md)
+- [AppSchema.WhiteboardEntity](./whiteboardentity.md)
+- [AppSchema.WordProcessorEntity](./wordprocessorentity.md)
+- [AppSchemaEntity](../appschemaentity.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
 
 
 ---

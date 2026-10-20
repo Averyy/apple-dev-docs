@@ -1,7 +1,8 @@
 # searchResults
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous stream that delivers the results of a search to your app for processing.
 
@@ -20,11 +21,11 @@ var searchResults: some AsyncSequence<SpotlightSearchTool.SearchReply, Never> { 
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](../making-your-indexed-content-available-to-foundation-models.md)
 
 #### Discussion
 
-Use this property to monitor the search results as the tool generates them. Each time the model calls the Spotlight search tool’s [`call(arguments:)`](https://developer.apple.com/documentation/foundationmodels/tool/call(arguments:)) method, the tool generates one or more [`SpotlightSearchTool.SearchReply`](spotlightsearchtool/searchreply.md) structures with information about the results. Use this information to track the tool’s behavior while responding to the model’s requests.
+Use this property to monitor the search results as the tool generates them. Each time the model calls the Spotlight search tool’s [`call(arguments:)`](../../FoundationModels/tool/call%28arguments%29.md) method, the tool generates one or more [`SpotlightSearchTool.SearchReply`](./searchreply.md) structures with information about the results. Use this information to track the tool’s behavior while responding to the model’s requests.
 
 Monitor the asynchronous stream using a `for await` loop in a separate task, as shown in the following example:
 
@@ -41,11 +42,12 @@ Task {
 let response = try await session.respond(to: "Show me recent emails from Shelly”)
 ```
 
-For more information about how to process search results, see [`Making your indexed content available to Foundation Models`](making-your-indexed-content-available-to-foundation-models.md).
+For more information about how to process search results, see [Making your indexed content available to Foundation Models](../making-your-indexed-content-available-to-foundation-models.md).
 
 ## See Also
 
-- [SpotlightSearchTool.SearchReply](spotlightsearchtool/searchreply.md)
+### Getting the search results
+- [SpotlightSearchTool.SearchReply](./searchreply.md)
   A set of search results with routing metadata for host app consumption.
 
 

@@ -1,13 +1,14 @@
 # ES_PROC_SUSPEND_RESUME_TYPE_SHUTDOWN_SOCKETS
 
 **Framework**: Endpoint Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An event type for process socket shutdown events.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ An event type for process socket shutdown events.
 var ES_PROC_SUSPEND_RESUME_TYPE_SHUTDOWN_SOCKETS: es_proc_suspend_resume_type_t { get }
 ```
 
+```c
+ES_PROC_SUSPEND_RESUME_TYPE_SHUTDOWN_SOCKETS
+```
+
 ## See Also
 
-- [var ES_PROC_SUSPEND_RESUME_TYPE_SUSPEND: es_proc_suspend_resume_type_t](es_proc_suspend_resume_type_suspend.md)
+### Event Types
+- [var ES_PROC_SUSPEND_RESUME_TYPE_SUSPEND: es_proc_suspend_resume_type_t](./es_proc_suspend_resume_type_suspend.md)
   An event type for process suspension events.
-- [var ES_PROC_SUSPEND_RESUME_TYPE_RESUME: es_proc_suspend_resume_type_t](es_proc_suspend_resume_type_resume.md)
+- [var ES_PROC_SUSPEND_RESUME_TYPE_RESUME: es_proc_suspend_resume_type_t](./es_proc_suspend_resume_type_resume.md)
   An event type for process resumption events.
 
 

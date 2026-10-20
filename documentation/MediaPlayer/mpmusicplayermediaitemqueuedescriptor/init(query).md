@@ -1,7 +1,8 @@
 # init(query:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new queue descriptor using the designated query.
 
@@ -15,6 +16,10 @@ Creates a new queue descriptor using the designated query.
 
 ```swift
 init(query: MPMediaQuery)
+```
+
+```objc
+- (instancetype) initWithQuery:(MPMediaQuery *) query;
 ```
 
 #### Return Value
@@ -31,7 +36,8 @@ After creating a new queue descriptor, you can modify when individual media item
 
 ## See Also
 
-- [init(itemCollection: MPMediaItemCollection)](mpmusicplayermediaitemqueuedescriptor/init(itemcollection:).md)
+### Creating a new media item queue descriptor
+- [init(itemCollection: MPMediaItemCollection)](./init%28itemcollection%29.md)
   Creates a new queue descriptor using the designated collection.
 
 

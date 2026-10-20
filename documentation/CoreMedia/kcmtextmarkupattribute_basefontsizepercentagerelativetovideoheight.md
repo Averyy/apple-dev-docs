@@ -1,7 +1,8 @@
 # kCMTextMarkupAttribute_BaseFontSizePercentageRelativeToVideoHeight
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A base font size as a percentage of the video height.
 
@@ -20,17 +21,22 @@ A base font size as a percentage of the video height.
 let kCMTextMarkupAttribute_BaseFontSizePercentageRelativeToVideoHeight: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextMarkupAttribute_BaseFontSizePercentageRelativeToVideoHeight;
+```
+
 #### Discussion
 
 This attribute’s value must be a non-negative `CFNumber`. This is a number holding a percentage of the height of the video frame. For example, a value of `5` indicates that the base font size should be 5% of the height of the video.
 
 ## See Also
 
-- [let kCMTextMarkupAttribute_FontFamilyName: CFString](kcmtextmarkupattribute_fontfamilyname.md)
+### Fonts
+- [let kCMTextMarkupAttribute_FontFamilyName: CFString](./kcmtextmarkupattribute_fontfamilyname.md)
   A name of a font family.
-- [let kCMTextMarkupAttribute_GenericFontFamilyName: CFString](kcmtextmarkupattribute_genericfontfamilyname.md)
+- [let kCMTextMarkupAttribute_GenericFontFamilyName: CFString](./kcmtextmarkupattribute_genericfontfamilyname.md)
   A generic font family name identifier.
-- [let kCMTextMarkupAttribute_RelativeFontSize: CFString](kcmtextmarkupattribute_relativefontsize.md)
+- [let kCMTextMarkupAttribute_RelativeFontSize: CFString](./kcmtextmarkupattribute_relativefontsize.md)
   A font size as a percentage of the current default font size.
 
 

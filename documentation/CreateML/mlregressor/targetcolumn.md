@@ -1,7 +1,8 @@
 # targetColumn
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the column you selected at initialization to define which feature the regressor predicts.
 
@@ -16,9 +17,10 @@ var targetColumn: String { get }
 
 ## See Also
 
-- [init(trainingData:targetColumn:featureColumns:)](mlregressor/init(trainingdata:targetcolumn:featurecolumns:).md)
+### Creating and training a regressor
+- [init(trainingData:targetColumn:featureColumns:)](./init%28trainingdata,targetcolumn,featurecolumns%29.md)
   Creates a regressor.
-- [var featureColumns: [String]](mlregressor/featurecolumns.md)
+- [var featureColumns: [String]](./featurecolumns.md)
   The names of the columns you selected at initialization to train the regressor.
 
 

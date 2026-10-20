@@ -1,7 +1,8 @@
 # init(objectID:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a token keychain item with the specified object ID.
 
@@ -18,6 +19,10 @@ Initializes a token keychain item with the specified object ID.
 
 ```swift
 init(objectID: TKToken.ObjectID)
+```
+
+```objc
+- (instancetype) initWithObjectID:(TKTokenObjectID) objectID;
 ```
 
 #### Return Value

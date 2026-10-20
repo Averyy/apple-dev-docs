@@ -1,7 +1,8 @@
 # appendInterpolation(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Interpolates the given value’s textual representation into the string literal being created.
 

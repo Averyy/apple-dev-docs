@@ -1,7 +1,8 @@
 # maximumTransmissionUnit
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An integer value that indicates the maximum transmission unit (MTU) associated with this attachment.
 
@@ -12,6 +13,10 @@ An integer value that indicates the maximum transmission unit (MTU) associated w
 
 ```swift
 var maximumTransmissionUnit: Int { get set }
+```
+
+```objc
+@property (readwrite) NSInteger maximumTransmissionUnit;
 ```
 
 #### Discussion

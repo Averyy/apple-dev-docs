@@ -1,7 +1,8 @@
 # failureReason
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized message describing the reason for the failure.
 

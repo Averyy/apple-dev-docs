@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides a collection of synchronized capture data to the delegate.
@@ -18,9 +19,13 @@ Provides a collection of synchronized capture data to the delegate.
 func dataOutputSynchronizer(_ synchronizer: AVCaptureDataOutputSynchronizer, didOutput synchronizedDataCollection: AVCaptureSynchronizedDataCollection)
 ```
 
+```objc
+- (void) dataOutputSynchronizer:(AVCaptureDataOutputSynchronizer *) synchronizer didOutputSynchronizedDataCollection:(AVCaptureSynchronizedDataCollection *) synchronizedDataCollection;
+```
+
 #### Discussion
 
-Use the data collection’s [`synchronizedData(for:)`](avcapturesynchronizeddatacollection/synchronizeddata(for:).md) method (or equivalent [`subscript(_:)`](avcapturesynchronizeddatacollection/subscript(_:).md) operator) to retrieve the captured data corresponding to each capture output.
+Use the data collection’s [`synchronizedData(for:)`](../avcapturesynchronizeddatacollection/synchronizeddata%28for%29.md) method (or equivalent [`subscript(_:)`](../avcapturesynchronizeddatacollection/subscript%28_%29.md) operator) to retrieve the captured data corresponding to each capture output.
 
 ## Parameters
 

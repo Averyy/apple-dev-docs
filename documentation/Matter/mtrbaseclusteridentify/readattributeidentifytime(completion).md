@@ -1,7 +1,8 @@
 # readAttributeIdentifyTime(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeIdentifyTime(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeIdentifyTime() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeIdentifyTimeWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

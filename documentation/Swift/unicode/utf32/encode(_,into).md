@@ -1,7 +1,8 @@
 # encode(_:into:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Encodes a Unicode scalar as a UTF-32 code unit by calling the given closure.
 

@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns a tuple containing the high and low parts of the result of multiplying this value by the given value.
@@ -47,6 +48,12 @@ let z = Int16(result.high) << 8 | Int16(result.low)
 ## Parameters
 
 - `other`: The value to multiply this value by.
+
+## Default Implementations
+
+### FixedWidthInteger Implementations
+- [func multipliedFullWidth(by: Self) -> (high: Self, low: Self.Magnitude)](./multipliedfullwidth%28by%29-3n598.md)
+  Returns a tuple containing the high and low parts of the result of multiplying this value by the given value.
 
 
 ---

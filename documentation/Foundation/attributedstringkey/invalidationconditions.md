@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 **Availability**:
@@ -18,6 +19,11 @@
 ```swift
 static var invalidationConditions: Set<AttributedString.AttributeInvalidationCondition>? { get }
 ```
+
+## Default Implementations
+
+### AttributedStringKey Implementations
+- [static var invalidationConditions: Set<AttributedString.AttributeInvalidationCondition>?](./invalidationconditions-31y6a.md)
 
 
 ---

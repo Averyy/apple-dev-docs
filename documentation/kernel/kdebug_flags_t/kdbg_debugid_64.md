@@ -1,14 +1,15 @@
 # KDBG_DEBUGID_64
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 KDBG_DEBUGID_64
 ```
 

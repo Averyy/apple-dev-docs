@@ -1,7 +1,8 @@
 # ColorScheme.light
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The color scheme that corresponds to a light appearance.
 
@@ -22,7 +23,8 @@ case light
 
 ## See Also
 
-- [ColorScheme.dark](colorscheme/dark.md)
+### Getting color schemes
+- [ColorScheme.dark](./dark.md)
   The color scheme that corresponds to a dark appearance.
 
 

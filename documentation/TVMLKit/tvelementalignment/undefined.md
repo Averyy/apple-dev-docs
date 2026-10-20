@@ -1,12 +1,15 @@
 # TVElementAlignment.undefined
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The alignment has not been defined for the item.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,17 +17,22 @@ The alignment has not been defined for the item.
 case undefined
 ```
 
+```c
+TVElementAlignmentUndefined
+```
+
 ## See Also
 
-- [TVElementAlignment.left](tvelementalignment/left.md)
+### Constants
+- [TVElementAlignment.left](./left.md)
   The item is aligned along the left side of the containing element.
-- [TVElementAlignment.center](tvelementalignment/center.md)
+- [TVElementAlignment.center](./center.md)
   The item is aligned in the center of the containing element.
-- [TVElementAlignment.right](tvelementalignment/right.md)
+- [TVElementAlignment.right](./right.md)
   The item is aligned along the right of the containing element.
-- [TVElementAlignment.leading](tvelementalignment/leading.md)
+- [TVElementAlignment.leading](./leading.md)
   The item is aligned along the leading edge of the containing element.
-- [TVElementAlignment.trailing](tvelementalignment/trailing.md)
+- [TVElementAlignment.trailing](./trailing.md)
   The item is aligned along the trailing edge of the containing element.
 
 

@@ -1,7 +1,8 @@
 # errSecInvalidTuple
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The tuple is not valid.
 
@@ -18,6 +19,10 @@ The tuple is not valid.
 
 ```swift
 var errSecInvalidTuple: OSStatus { get }
+```
+
+```c
+errSecInvalidTuple
 ```
 
 

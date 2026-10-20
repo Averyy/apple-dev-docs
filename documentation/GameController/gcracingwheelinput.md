@@ -1,7 +1,8 @@
 # GCRacingWheelInput
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A controller profile that supports a racing wheel.
 
@@ -15,36 +16,41 @@ A controller profile that supports a racing wheel.
 class GCRacingWheelInput
 ```
 
+```objc
+@interface GCRacingWheelInput : GCRacingWheelInputState
+```
+
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
+- [Handling input events](./handling-input-events.md)
 
 ## Topics
 
 ### Creating snapshots
-- [func capture() -> GCRacingWheelInputState](gcracingwheelinput/capture.md)
+- [func capture() -> GCRacingWheelInputState](./gcracingwheelinput/capture%28%29.md)
   Returns a snapshot of the racing wheel inputs.
 ### Polling for input
-- [func nextInputState() -> (any GCRacingWheelInputState & GCDevicePhysicalInputStateDiff)?](gcracingwheelinput/nextinputstate.md)
+- [func nextInputState() -> (any GCRacingWheelInputState & GCDevicePhysicalInputStateDiff)?](./gcracingwheelinput/nextinputstate%28%29.md)
   Returns the next input state of the racing wheel from the queue.
 
 ## Relationships
 
 ### Inherits From
-- [GCRacingWheelInputState](gcracingwheelinputstate.md)
+- [GCRacingWheelInputState](./gcracingwheelinputstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [GCDevicePhysicalInput](gcdevicephysicalinput.md)
-- [GCDevicePhysicalInputState](gcdevicephysicalinputstate.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [GCDevicePhysicalInput](./gcdevicephysicalinput.md)
+- [GCDevicePhysicalInputState](./gcdevicephysicalinputstate.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GCRacingWheelInputState](gcracingwheelinputstate.md)
+### Racing wheel input
+- [class GCRacingWheelInputState](./gcracingwheelinputstate.md)
   The input for the wheel of a racing wheel controller.
 
 

@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,13 +21,14 @@ mutating func next() async throws -> ChildTaskResult?
 
 ## See Also
 
-- [func nextResult() async -> Result<ChildTaskResult, Failure>?](throwingtaskgroup/nextresult.md)
+### Accessing Individual Results
+- [func nextResult() async -> Result<ChildTaskResult, Failure>?](./nextresult%28%29.md)
   Wait for the next child task to complete, and return a result containing either the value that the child task returned or the error that it threw.
-- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](throwingtaskgroup/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](./next%28isolation%29.md)
   Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
-- [var isEmpty: Bool](throwingtaskgroup/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
-- [func waitForAll() async throws](throwingtaskgroup/waitforall.md)
+- [func waitForAll() async throws](./waitforall%28%29.md)
   Wait for all of the group’s remaining tasks to complete.
 
 

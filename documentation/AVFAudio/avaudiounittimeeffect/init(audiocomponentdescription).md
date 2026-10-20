@@ -1,7 +1,8 @@
 # init(audioComponentDescription:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a time effect audio unit with the specified description.
 
@@ -17,6 +18,10 @@ Creates a time effect audio unit with the specified description.
 
 ```swift
 init(audioComponentDescription: AudioComponentDescription)
+```
+
+```objc
+- (instancetype) initWithAudioComponentDescription:(AudioComponentDescription) audioComponentDescription;
 ```
 
 #### Return Value

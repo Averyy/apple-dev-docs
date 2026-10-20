@@ -1,7 +1,8 @@
 # interitemSpacing
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The spacing between full screen browser items.
 
@@ -10,15 +11,16 @@ The spacing between full screen browser items.
 
 ## Declaration
 
-```swift
+```
 attribute double interitemSpacing;
 ```
 
 ## See Also
 
-- [maskInset](browser/3192099-maskinset.md)
+### Modifying a Browser
+- [maskInset](./api-3192099-maskinset.md)
   The insets from the edges of the full screen layout.
-- [cornerRadius](browser/3192097-cornerradius.md)
+- [cornerRadius](./api-3192097-cornerradius.md)
   The corner radius of each full screen browser item.
 
 

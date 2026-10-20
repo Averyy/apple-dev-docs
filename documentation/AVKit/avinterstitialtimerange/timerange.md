@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range identified as interstitial content.
 
@@ -15,6 +16,10 @@ The time range identified as interstitial content.
 
 ```swift
 var timeRange: CMTimeRange { get }
+```
+
+```objc
+@property (readonly) CMTimeRange timeRange;
 ```
 
 

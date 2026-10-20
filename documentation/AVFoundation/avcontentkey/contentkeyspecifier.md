@@ -1,7 +1,8 @@
 # contentKeySpecifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content key’s unique identifier.
 
@@ -18,6 +19,10 @@ The content key’s unique identifier.
 
 ```swift
 var contentKeySpecifier: AVContentKeySpecifier { get }
+```
+
+```objc
+@property (readonly) AVContentKeySpecifier * contentKeySpecifier;
 ```
 
 

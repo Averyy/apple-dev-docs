@@ -1,7 +1,8 @@
 # AXFeatureOverrideSessionError.Code.overrideIsAlreadyActive
 
 **Framework**: Accessibility  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.2+
@@ -11,6 +12,10 @@
 
 ```swift
 case overrideIsAlreadyActive
+```
+
+```c
+AXFeatureOverrideSessionErrorOverrideIsAlreadyActive
 ```
 
 

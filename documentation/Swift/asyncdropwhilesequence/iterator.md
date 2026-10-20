@@ -1,7 +1,8 @@
 # AsyncDropWhileSequence.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The iterator that produces elements of the drop-while sequence.
 
@@ -20,24 +21,26 @@ The iterator that produces elements of the drop-while sequence.
 struct Iterator
 ```
 
+Available when `Base` conforms to `AsyncSequence`.
+
 ## Topics
 
 ### Instance Methods
-- [func next() async rethrows -> Base.Element?](asyncdropwhilesequence/iterator/next.md)
+- [func next() async rethrows -> Base.Element?](./iterator/next%28%29.md)
   Produces the next element in the drop-while sequence.
-- [func next(isolation: isolated (any Actor)?) async throws(AsyncDropWhileSequence<Base>.Failure) -> Base.Element?](asyncdropwhilesequence/iterator/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws(AsyncDropWhileSequence<Base>.Failure) -> Base.Element?](./iterator/next%28isolation%29.md)
   Produces the next element in the drop-while sequence.
 ### Type Aliases
-- [AsyncDropWhileSequence.Iterator.Element](asyncdropwhilesequence/iterator/element.md)
+- [AsyncDropWhileSequence.Iterator.Element](./iterator/element.md)
 ### Default Implementations
-- [AsyncIteratorProtocol Implementations](asyncdropwhilesequence/iterator/asynciteratorprotocol-implementations.md)
+- [AsyncIteratorProtocol Implementations](./iterator/asynciteratorprotocol-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](asynciteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [AsyncIteratorProtocol](../asynciteratorprotocol.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 
 ---

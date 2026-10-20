@@ -1,12 +1,13 @@
 # handle(_:client:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles key down and mouse events.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Handles key down and mouse events.
 func handle(_ event: NSEvent!, client sender: Any!) -> Bool
 ```
 
+```objc
+- (BOOL) handleEvent:(NSEvent *) event client:(id) sender;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the event is handled; otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the event is handled; otherwise [`NO`](../no.md).
 
 ## Parameters
 

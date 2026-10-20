@@ -1,7 +1,8 @@
 # DeviceActivityAuthorizing
 
 **Framework**: Device Activity  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 17.0+
@@ -19,18 +20,19 @@ protocol DeviceActivityAuthorizing
 ## Topics
 
 ### Type Properties
-- [static var isAuthorized: Bool](deviceactivityauthorizing/isauthorized.md)
+- [static var isAuthorized: Bool](./deviceactivityauthorizing/isauthorized.md)
 ### Type Methods
-- [static func isAuthorized(String) -> Bool](deviceactivityauthorizing/isauthorized(_:).md)
+- [static func isAuthorized(String) -> Bool](./deviceactivityauthorizing/isauthorized%28_%29.md)
 
 ## Relationships
 
 ### Conforming Types
-- [DeviceActivityAuthorization](deviceactivityauthorization.md)
+- [DeviceActivityAuthorization](./deviceactivityauthorization.md)
 
 ## See Also
 
-- [class DeviceActivityAuthorization](deviceactivityauthorization.md)
+### Authorize access
+- [class DeviceActivityAuthorization](./deviceactivityauthorization.md)
 
 
 ---

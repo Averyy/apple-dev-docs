@@ -1,10 +1,11 @@
 # IOBluetoothPackDataList(_:_:_:)
 
 **Framework**: IOBluetooth  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 func IOBluetoothPackDataList(_ ioBuffer: UnsafeMutableRawPointer!, _ inFormat: UnsafePointer<CChar>!, _ inArgs: CVaListPointer) -> Int
 ```
 
+```c
+extern long IOBluetoothPackDataList(void *ioBuffer, const char *inFormat, va_list inArgs);
+```
+
 ## See Also
 
-- [func IOBluetoothNSStringFromDeviceAddressColon(UnsafePointer<BluetoothDeviceAddress>!) -> String!](iobluetoothnsstringfromdeviceaddresscolon(_:).md)
-- [func IOBluetoothUnpackDataList(Int, UnsafeRawPointer!, UnsafePointer<CChar>!, CVaListPointer) -> Int](iobluetoothunpackdatalist(_:_:_:_:).md)
+### Functions
+- [func IOBluetoothNSStringFromDeviceAddressColon(UnsafePointer<BluetoothDeviceAddress>!) -> String!](./iobluetoothnsstringfromdeviceaddresscolon%28_%29.md)
+- [func IOBluetoothUnpackDataList(Int, UnsafeRawPointer!, UnsafePointer<CChar>!, CVaListPointer) -> Int](./iobluetoothunpackdatalist%28_,_,_,_%29.md)
 
 
 ---

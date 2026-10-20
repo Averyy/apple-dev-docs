@@ -1,7 +1,8 @@
 # isEmpty
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the text range is empty.
 
@@ -14,11 +15,16 @@ Returns whether the text range is empty.
 var isEmpty: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isEmpty) BOOL empty;
+```
+
 ## See Also
 
-- [var location: any NSTextLocation](nstextrange/location.md)
+### Characteristics of the text range
+- [var location: any NSTextLocation](./location.md)
   The starting location of the text range.
-- [var endLocation: any NSTextLocation](nstextrange/endlocation.md)
+- [var endLocation: any NSTextLocation](./endlocation.md)
   The ending location of the text range.
 
 

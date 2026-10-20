@@ -2,15 +2,20 @@
 
 **Framework**: IOBluetooth  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func remoteNameRequestComplete(_ device: IOBluetoothDevice!, status: IOReturn)
+```
+
+```objc
+- (void) remoteNameRequestComplete:(IOBluetoothDevice *) device status:(IOReturn) status;
 ```
 
 

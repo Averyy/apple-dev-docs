@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: LockedCameraCapture  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The domain for errors that can occur when launching the extension’s containing app.
 

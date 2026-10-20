@@ -1,9 +1,10 @@
 # number(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Returns an [`NSNumber`](nsnumber.md) object created by parsing a given string.
+Returns an [`NSNumber`](../nsnumber.md) object created by parsing a given string.
 
 **Availability**:
 - iOS 2.0+
@@ -20,9 +21,13 @@ Returns an [`NSNumber`](nsnumber.md) object created by parsing a given string.
 func number(from string: String) -> NSNumber?
 ```
 
+```objc
+- (NSNumber *) numberFromString:(NSString *) string;
+```
+
 #### Return Value
 
-An [`NSNumber`](nsnumber.md) object created by parsing `string` using the receiver’s format, or `nil` if no single number could be parsed.
+An [`NSNumber`](../nsnumber.md) object created by parsing `string` using the receiver’s format, or `nil` if no single number could be parsed.
 
 #### Discussion
 
@@ -32,15 +37,16 @@ Any leading or trailing space separator characters in a string are ignored. For 
 
 ## Parameters
 
-- `string`: An [`NSString`](nsstring.md) object that is parsed to generate the returned number object.
+- `string`: An [`NSString`](../nsstring.md) object that is parsed to generate the returned number object.
 
 ## See Also
 
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, range: UnsafeMutablePointer<NSRange>?) throws](numberformatter/getobjectvalue(_:for:range:).md)
+### Converting Between Numbers and Strings
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, range: UnsafeMutablePointer<NSRange>?) throws](./getobjectvalue%28_,for,range%29.md)
   Returns by reference a cell-content object after creating it from a range of characters in a given string.
-- [func string(from: NSNumber) -> String?](numberformatter/string(from:).md)
+- [func string(from: NSNumber) -> String?](./string%28from%29.md)
   Returns a string containing the formatted value of the provided number object.
-- [class func localizedString(from: NSNumber, number: NumberFormatter.Style) -> String](numberformatter/localizedstring(from:number:).md)
+- [class func localizedString(from: NSNumber, number: NumberFormatter.Style) -> String](./localizedstring%28from,number%29.md)
   Returns a localized number string with the specified style.
 
 

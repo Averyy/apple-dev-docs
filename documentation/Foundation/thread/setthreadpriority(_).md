@@ -1,7 +1,8 @@
 # setThreadPriority(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets the current thread’s priority.
 
@@ -20,9 +21,13 @@ Sets the current thread’s priority.
 class func setThreadPriority(_ p: Double) -> Bool
 ```
 
+```objc
++ (BOOL) setThreadPriority:(double) p;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the priority assignment succeeded, [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if the priority assignment succeeded, [`false`](../../Swift/false.md) otherwise.
 
 #### Discussion
 
@@ -34,12 +39,13 @@ The priorities in this range are mapped to the operating system’s priority val
 
 ## See Also
 
-- [var qualityOfService: QualityOfService](thread/qualityofservice.md)
-- [enum QualityOfService](qualityofservice.md)
+### Prioritizing Thread Work
+- [var qualityOfService: QualityOfService](./qualityofservice.md)
+- [enum QualityOfService](../qualityofservice.md)
   Constants that indicate the nature and importance of work to the system.
-- [class func threadPriority() -> Double](thread/threadpriority.md)
+- [class func threadPriority() -> Double](./threadpriority%28%29.md)
   Returns the current thread’s priority.
-- [var threadPriority: Double](thread/threadpriority.md)
+- [var threadPriority: Double](./threadpriority.md)
   The receiver’s priority
 
 

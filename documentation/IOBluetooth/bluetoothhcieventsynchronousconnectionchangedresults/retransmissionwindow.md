@@ -1,15 +1,20 @@
 # retransmissionWindow
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var retransmissionWindow: UInt8
+```
+
+```c
+uint8_t retransmissionWindow;
 ```
 
 

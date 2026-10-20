@@ -1,7 +1,8 @@
 # verySmallRoomBright
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The reverb of a very small room with reflective surfaces.
 

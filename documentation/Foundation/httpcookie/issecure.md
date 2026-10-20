@@ -1,7 +1,8 @@
 # isSecure
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the cookie may only be sent over secure channels.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether the cookie may only be sent over secure c
 var isSecure: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isSecure) BOOL secure;
+```
+
 #### Discussion
 
-This value is [`true`](https://developer.apple.com/documentation/swift/true) if this cookie should only be sent over secure channels, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+This value is [`true`](../../Swift/true.md) if this cookie should only be sent over secure channels, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isHTTPOnly: Bool](httpcookie/ishttponly.md)
+### Securing cookies
+- [var isHTTPOnly: Bool](./ishttponly.md)
   A Boolean value that indicates whether the cookie should only be sent to HTTP servers.
-- [var sameSitePolicy: HTTPCookieStringPolicy?](httpcookie/samesitepolicy.md)
+- [var sameSitePolicy: HTTPCookieStringPolicy?](./samesitepolicy.md)
   A Boolean value that indicates whether to restrict the cookie to requests sent back to the same site that created it.
-- [struct HTTPCookieStringPolicy](httpcookiestringpolicy.md)
+- [struct HTTPCookieStringPolicy](../httpcookiestringpolicy.md)
   Values that indicate whether to restrict the cookie to requests sent back to the same site that created it.
 
 

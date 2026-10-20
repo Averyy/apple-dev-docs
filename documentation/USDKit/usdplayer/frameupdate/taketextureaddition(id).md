@@ -1,9 +1,10 @@
 # takeTextureAddition(id:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Consumes and returns the [`USDPlayer.TextureData`](usdplayer/texturedata.md) for the given texture addition.
+Consumes and returns the [`USDPlayer.TextureData`](../texturedata.md) for the given texture addition.
 
 **Availability**:
 - iOS 27.0+

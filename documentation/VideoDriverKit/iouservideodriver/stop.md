@@ -1,22 +1,24 @@
 # Stop
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t Stop(IOService *provider);
 ```
 
 ## See Also
 
-- [init](iouservideodriver/init.md)
-- [Start](iouservideodriver/start.md)
-- [free](iouservideodriver/free.md)
+### Running the driver service
+- [init](./init.md)
+- [Start](./start.md)
+- [free](./free.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # tabBarController(_:sidebarVisibilityWillChange:animator:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate when the visibility of the sidebar is about to change when `sidebar.isHidden` changes. Add animations to the animator to run alongside the visibility update. Alongside animations and completions will run immediately if the sidebar visibility is changed without animation.
 
@@ -15,6 +16,10 @@ Notifies the delegate when the visibility of the sidebar is about to change when
 
 ```swift
 optional func tabBarController(_ tabBarController: UITabBarController, sidebarVisibilityWillChange sidebar: UITabBarController.Sidebar, animator: any UITabBarController.Sidebar.Animating)
+```
+
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController sidebarVisibilityWillChange:(UITabBarControllerSidebar *) sidebar animator:(id<UITabBarControllerSidebarAnimating>) animator;
 ```
 
 

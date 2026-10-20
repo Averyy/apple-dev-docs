@@ -1,7 +1,8 @@
 # connections
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capture output object’s connections.
 
@@ -18,15 +19,20 @@ The capture output object’s connections.
 var connections: [AVCaptureConnection] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCaptureConnection *> * connections;
+```
+
 #### Discussion
 
 Each connection object in the array describes the mapping between the output and the capture input ports.
 
 ## See Also
 
-- [func connection(with: AVMediaType) -> AVCaptureConnection?](avcaptureoutput/connection(with:).md)
+### Accessing connections
+- [func connection(with: AVMediaType) -> AVCaptureConnection?](./connection%28with%29.md)
   Returns the first connection with an input port of a specified media type.
-- [AVCaptureOutput.DataDroppedReason](avcaptureoutput/datadroppedreason.md)
+- [AVCaptureOutput.DataDroppedReason](./datadroppedreason.md)
   Constants that define reasons for why the system dropped a frame.
 
 

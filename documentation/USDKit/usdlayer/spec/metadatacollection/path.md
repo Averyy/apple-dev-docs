@@ -1,7 +1,8 @@
 # path
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The path identifying this spec within its layer.
 

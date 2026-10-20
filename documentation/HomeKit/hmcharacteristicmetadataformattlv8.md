@@ -1,7 +1,8 @@
 # HMCharacteristicMetadataFormatTLV8
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that the characteristic has TLV8 values.
 
@@ -19,13 +20,18 @@ Indicates that the characteristic has TLV8 values.
 let HMCharacteristicMetadataFormatTLV8: String
 ```
 
+```c
+extern NSString * const HMCharacteristicMetadataFormatTLV8;
+```
+
 #### Discussion
 
-The value is an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object containing a set of one or more TLV8’s, which are packed type-length-value items with an 8-bit type, 8-bit length, and N-byte value.
+The value is an [`NSData`](../Foundation/nsdata.md) object containing a set of one or more TLV8’s, which are packed type-length-value items with an 8-bit type, 8-bit length, and N-byte value.
 
 ## See Also
 
-- [let HMCharacteristicMetadataFormatData: String](hmcharacteristicmetadataformatdata.md)
+### Data
+- [let HMCharacteristicMetadataFormatData: String](./hmcharacteristicmetadataformatdata.md)
   Indicates that the characteristic has data blob values.
 
 

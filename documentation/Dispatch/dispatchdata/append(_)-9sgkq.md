@@ -1,16 +1,17 @@
 # append(_:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,8 +21,9 @@ mutating func append<SourceType>(_ buffer: UnsafeBufferPointer<SourceType>)
 
 ## See Also
 
-- [func append(DispatchData)](dispatchdata/append(_:)-3bvdr.md)
-- [func append(UnsafeRawBufferPointer)](dispatchdata/append(_:)-1m94x.md)
+### Appending Data to the Buffer
+- [func append(DispatchData)](./append%28_%29-3bvdr.md)
+- [func append(UnsafeRawBufferPointer)](./append%28_%29-1m94x.md)
 
 
 ---

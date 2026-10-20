@@ -1,14 +1,15 @@
 # init(cleaner:lessClean:avoid:unknown:)
 
 **Framework**: EnergyKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the collection of grid cleanliness data.
 
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

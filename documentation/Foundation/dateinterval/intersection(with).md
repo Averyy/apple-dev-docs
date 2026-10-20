@@ -1,7 +1,8 @@
 # intersection(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an interval that represents the interval where the given date interval and the current instance intersect.
 
@@ -26,7 +27,8 @@ In the event that there is no intersection, the method returns nil.
 
 ## See Also
 
-- [func intersects(DateInterval) -> Bool](dateinterval/intersects(_:).md)
+### Determining Intersections
+- [func intersects(DateInterval) -> Bool](./intersects%28_%29.md)
   Indicates whether this interval intersects the specified interval.
 
 

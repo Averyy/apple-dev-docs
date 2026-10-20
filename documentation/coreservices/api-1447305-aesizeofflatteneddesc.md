@@ -1,7 +1,8 @@
 # AESizeOfFlattenedDesc(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the amount of buffer space needed to store the descriptor after flattening it.
 
@@ -14,27 +15,32 @@ Returns the amount of buffer space needed to store the descriptor after flatteni
 func AESizeOfFlattenedDesc(_ theAEDesc: UnsafePointer<AEDesc>!) -> Size
 ```
 
-#### Return_value
+```c
+Size AESizeOfFlattenedDesc(const AEDesc *theAEDesc);
+```
+
+#### Return Value
 
 The size, in bytes, required to store the flattened descriptor.
 
 #### Discussion
 
-You call this function before calling [`AEFlattenDesc(_:_:_:_:)`](1441808-aeflattendesc.md) to determine the required size of the buffer for the flatten operation.
+You call this function before calling [`AEFlattenDesc(_:_:_:_:)`](./api-1441808-aeflattendesc.md) to determine the required size of the buffer for the flatten operation.
 
-##### 1770221
+##### Version-Notes
 
 Thread safe starting in OS X v10.2.
 
 ## Parameters
 
-- `theAEDesc`: A pointer to the descriptor to be flattened. See [`AEDesc`](aedesc.md).
+- `theAEDesc`: A pointer to the descriptor to be flattened. See [`AEDesc`](./aedesc.md).
 
 ## See Also
 
-- [func AEFlattenDesc(UnsafePointer<AEDesc>!, Ptr!, Size, UnsafeMutablePointer<Size>!) -> OSStatus](1441808-aeflattendesc.md)
+### Serializing Apple Event Data
+- [func AEFlattenDesc(UnsafePointer<AEDesc>!, Ptr!, Size, UnsafeMutablePointer<Size>!) -> OSStatus](./api-1441808-aeflattendesc.md)
   Flattens the specified descriptor and stores the data in the supplied buffer.
-- [func AEUnflattenDesc(UnsafeRawPointer!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](1448997-aeunflattendesc.md)
+- [func AEUnflattenDesc(UnsafeRawPointer!, UnsafeMutablePointer<AEDesc>!) -> OSStatus](./api-1448997-aeunflattendesc.md)
   Unflattens the data in the passed buffer and creates a descriptor from it.
 
 

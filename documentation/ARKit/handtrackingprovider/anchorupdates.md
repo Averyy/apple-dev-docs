@@ -1,7 +1,8 @@
 # anchorUpdates
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A sequence of updates for all hands that a provider tracks.
 
@@ -16,7 +17,8 @@ final var anchorUpdates: AnchorUpdateSequence<HandAnchor> { get }
 
 ## See Also
 
-- [var latestAnchors: (leftHand: HandAnchor?, rightHand: HandAnchor?)](handtrackingprovider/latestanchors.md)
+### Observing hand anchor data
+- [var latestAnchors: (leftHand: HandAnchor?, rightHand: HandAnchor?)](./latestanchors.md)
   The most recent hand anchors for each hand.
 
 

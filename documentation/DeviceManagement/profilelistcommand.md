@@ -1,7 +1,8 @@
 # ProfileListCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of installed profiles on a device.
 
@@ -16,18 +17,18 @@ The command to get a list of installed profiles on a device.
 
 ## Declaration
 
-```swift
+```
 object ProfileListCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object ProfileListCommand.Command](profilelistcommand/command-data.dictionary.md)
+- [object ProfileListCommand.Command](./profilelistcommand/command-data.dictionary.md)
   The command to get a list of installed profiles on a device.
 
 ## Properties
@@ -37,7 +38,8 @@ object ProfileListCommand
 
 ## See Also
 
-- [object ProfileListResponse](profilelistresponse.md)
+### Commands and responses
+- [object ProfileListResponse](./profilelistresponse.md)
   A response from the device after it processes the command to get a list of installed profiles on a device.
 
 

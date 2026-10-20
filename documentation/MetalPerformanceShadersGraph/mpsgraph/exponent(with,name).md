@@ -1,7 +1,8 @@
 # exponent(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the natural exponent to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the natural exponent to the input tensor elements.
 
 ```swift
 func exponent(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) exponentWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

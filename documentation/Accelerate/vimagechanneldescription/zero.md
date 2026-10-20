@@ -1,18 +1,19 @@
 # zero
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The encoding for the value zero.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The encoding for the value zero.
 var zero: CGFloat
 ```
 
+```c
+CGFloat zero;
+```
+
 ## See Also
 
-- [var min: CGFloat](vimagechanneldescription/min.md)
+### Instance properties
+- [var min: CGFloat](./min.md)
   The minimum encoded value.
-- [var full: CGFloat](vimagechanneldescription/full.md)
+- [var full: CGFloat](./full.md)
   The encoding for the value one.
-- [var max: CGFloat](vimagechanneldescription/max.md)
+- [var max: CGFloat](./max.md)
   The maximum encoded value.
 
 

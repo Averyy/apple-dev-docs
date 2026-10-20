@@ -1,7 +1,8 @@
 # textElement
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent text element.
 
@@ -14,13 +15,18 @@ The parent text element.
 weak var textElement: NSTextElement? { get }
 ```
 
+```objc
+@property (weak, readonly) NSTextElement * textElement;
+```
+
 ## See Also
 
-- [var state: NSTextLayoutFragment.State](nstextlayoutfragment/state-swift.property.md)
+### Getting element information
+- [var state: NSTextLayoutFragment.State](./state-swift.property.md)
   The layout information state.
-- [NSTextLayoutFragment.State](nstextlayoutfragment/state-swift.enum.md)
+- [NSTextLayoutFragment.State](./state-swift.enum.md)
   Values that describe the possible layout states.
-- [var rangeInElement: NSTextRange](nstextlayoutfragment/rangeinelement.md)
+- [var rangeInElement: NSTextRange](./rangeinelement.md)
   The range inside the text element relative to the document origin.
 
 

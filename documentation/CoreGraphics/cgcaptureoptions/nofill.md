@@ -1,18 +1,23 @@
 # noFill
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Disables fill with black.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 static var noFill: CGCaptureOptions { get }
+```
+
+```c
+kCGCaptureNoFill
 ```
 
 

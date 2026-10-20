@@ -1,7 +1,10 @@
 # XCTSelfTestMain()
 
 **Framework**: XCTest  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
+
+> **Deprecated**: [`XCTSelfTestMain()`](./xctselftestmain%28%29.md) is deprecated.
 
 ## Declaration
 
@@ -9,11 +12,16 @@
 func XCTSelfTestMain() -> Int32
 ```
 
+```c
+extern int XCTSelfTestMain();
+```
+
 ## See Also
 
-- [func XCTAssertEqualWithAccuracy<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, accuracy: T, @autoclosure () -> String, file: StaticString, line: UInt)](xctassertequalwithaccuracy(_:_:accuracy:_:file:line:).md)
+### Deprecated Functions
+- [func XCTAssertEqualWithAccuracy<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, accuracy: T, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertequalwithaccuracy%28_,_,accuracy,_,file,line%29.md)
   Asserts that two values are equal within a certain accuracy.
-- [func XCTAssertNotEqualWithAccuracy<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, T, @autoclosure () -> String, file: StaticString, line: UInt)](xctassertnotequalwithaccuracy(_:_:_:_:file:line:).md)
+- [func XCTAssertNotEqualWithAccuracy<T>(@autoclosure () throws -> T, @autoclosure () throws -> T, T, @autoclosure () -> String, file: StaticString, line: UInt)](./xctassertnotequalwithaccuracy%28_,_,_,_,file,line%29.md)
   Asserts that two values are not equal within a certain accuracy.
 
 

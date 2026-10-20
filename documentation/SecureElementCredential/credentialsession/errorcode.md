@@ -1,7 +1,8 @@
 # CredentialSession.ErrorCode
 
 **Framework**: SecureElementCredential  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error encountered by a credential session.
 
@@ -18,75 +19,75 @@ enum ErrorCode
 ## Topics
 
 ### Authorization and permission error codes
-- [CredentialSession.ErrorCode.userNotAuthorized](credentialsession/errorcode/usernotauthorized.md)
+- [CredentialSession.ErrorCode.userNotAuthorized](./errorcode/usernotauthorized.md)
   The person using the app isn’t authorized to perform the operation.
-- [CredentialSession.ErrorCode.accessDenied](credentialsession/errorcode/accessdenied.md)
+- [CredentialSession.ErrorCode.accessDenied](./errorcode/accessdenied.md)
   The person using the app declined to grant permission for the operation.
-- [CredentialSession.ErrorCode.clientNotInForeground](credentialsession/errorcode/clientnotinforeground.md)
+- [CredentialSession.ErrorCode.clientNotInForeground](./errorcode/clientnotinforeground.md)
   Your app isn’t in the foreground, which is required to use the credential session.
-- [CredentialSession.ErrorCode.userCanceledAuthorization](credentialsession/errorcode/usercanceledauthorization.md)
+- [CredentialSession.ErrorCode.userCanceledAuthorization](./errorcode/usercanceledauthorization.md)
   The person using the app dismissed the authorization sheet.
-- [CredentialSession.ErrorCode.userAuthorizationTimedOut](credentialsession/errorcode/userauthorizationtimedout.md)
+- [CredentialSession.ErrorCode.userAuthorizationTimedOut](./errorcode/userauthorizationtimedout.md)
   Authorization timed out while waiting for the person using the app.
-- [CredentialSession.ErrorCode.featureUnavailable](credentialsession/errorcode/featureunavailable.md)
+- [CredentialSession.ErrorCode.featureUnavailable](./errorcode/featureunavailable.md)
   The feature is unavailable.
-- [CredentialSession.ErrorCode.ineligible](credentialsession/errorcode/ineligible.md)
+- [CredentialSession.ErrorCode.ineligible](./errorcode/ineligible.md)
   The current device and user configuation are ineligible to use this service.
-- [CredentialSession.ErrorCode.conditionsNotSatisfied](credentialsession/errorcode/conditionsnotsatisfied.md)
+- [CredentialSession.ErrorCode.conditionsNotSatisfied](./errorcode/conditionsnotsatisfied.md)
   The iCloud account or passcode of the person using the app don’t satisfy the conditions to use this service.
 ### Credential error codes
-- [CredentialSession.ErrorCode.invalidCredentialState](credentialsession/errorcode/invalidcredentialstate.md)
+- [CredentialSession.ErrorCode.invalidCredentialState](./errorcode/invalidcredentialstate.md)
   A credential is in a state that doesn’t permit that function.
-- [CredentialSession.ErrorCode.credentialDoesNotExist](credentialsession/errorcode/credentialdoesnotexist.md)
+- [CredentialSession.ErrorCode.credentialDoesNotExist](./errorcode/credentialdoesnotexist.md)
   The credential doesn’t exist, or you don’t have access to it.
-- [CredentialSession.ErrorCode.instanceDoesNotExist](credentialsession/errorcode/instancedoesnotexist.md)
+- [CredentialSession.ErrorCode.instanceDoesNotExist](./errorcode/instancedoesnotexist.md)
   The instance doesn’t exist in the target credential.
 ### Session error codes
-- [CredentialSession.ErrorCode.invalidSessionState](credentialsession/errorcode/invalidsessionstate.md)
+- [CredentialSession.ErrorCode.invalidSessionState](./errorcode/invalidsessionstate.md)
   The session is in a state that doesn’t permit that function.
-- [CredentialSession.ErrorCode.sessionInvalidated](credentialsession/errorcode/sessioninvalidated.md)
+- [CredentialSession.ErrorCode.sessionInvalidated](./errorcode/sessioninvalidated.md)
   The client requested invalidation of the session.
 ### Command error codes
-- [CredentialSession.ErrorCode.commandNotSupported](credentialsession/errorcode/commandnotsupported.md)
+- [CredentialSession.ErrorCode.commandNotSupported](./errorcode/commandnotsupported.md)
   Your app attempted an unsupported Secure Element command.
 ### Network-related error codes
-- [CredentialSession.ErrorCode.network](credentialsession/errorcode/network.md)
+- [CredentialSession.ErrorCode.network](./errorcode/network.md)
   The device’s internet connection is offline.
 ### Presentment intent assertion error codes
-- [CredentialSession.ErrorCode.presentmentIntentAssertionTimeout](credentialsession/errorcode/presentmentintentassertiontimeout.md)
+- [CredentialSession.ErrorCode.presentmentIntentAssertionTimeout](./errorcode/presentmentintentassertiontimeout.md)
   The presentment intent assertion timed out.
 ### UIKit error codes
-- [CredentialSession.ErrorCode.invalidView](credentialsession/errorcode/invalidview.md)
+- [CredentialSession.ErrorCode.invalidView](./errorcode/invalidview.md)
   The provided UIKit view is invalid.
 ### Hardware error codes
-- [CredentialSession.ErrorCode.insufficientSpace](credentialsession/errorcode/insufficientspace.md)
+- [CredentialSession.ErrorCode.insufficientSpace](./errorcode/insufficientspace.md)
   The hardware storage has insufficient space for the attempted provisioning.
 ### Temporary error codes
-- [CredentialSession.ErrorCode.resourceUnavailable](credentialsession/errorcode/resourceunavailable.md)
+- [CredentialSession.ErrorCode.resourceUnavailable](./errorcode/resourceunavailable.md)
   The requested resource is unavailable.
-- [CredentialSession.ErrorCode.acquiredResourceRelinquished](credentialsession/errorcode/acquiredresourcerelinquished.md)
+- [CredentialSession.ErrorCode.acquiredResourceRelinquished](./errorcode/acquiredresourcerelinquished.md)
   The system relinquished an underlying shared resource, preventing the operation from completing.
 ### Miscellaneous error codes
-- [CredentialSession.ErrorCode.invalidInput](credentialsession/errorcode/invalidinput.md)
+- [CredentialSession.ErrorCode.invalidInput](./errorcode/invalidinput.md)
   One or more parameters is invalid.
-- [CredentialSession.ErrorCode.internalError](credentialsession/errorcode/internalerror.md)
+- [CredentialSession.ErrorCode.internalError](./errorcode/internalerror.md)
   The framework encountered an internal error.
 ### Enumeration Cases
-- [CredentialSession.ErrorCode.invalidProductConfigID](credentialsession/errorcode/invalidproductconfigid.md)
+- [CredentialSession.ErrorCode.invalidProductConfigID](./errorcode/invalidproductconfigid.md)
   The product configuration ID is invalid.
 ### Instance Properties
-- [var failureReason: String?](credentialsession/errorcode/failurereason.md)
+- [var failureReason: String?](./errorcode/failurereason.md)
   A string representation of the error code.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

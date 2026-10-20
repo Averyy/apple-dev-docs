@@ -1,7 +1,8 @@
 # ProvidesDialog
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The result of performing an action that delivers a dialog back to the initiator of the action.
 
@@ -11,7 +12,7 @@ The result of performing an action that delivers a dialog back to the initiator 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,27 +24,28 @@ protocol ProvidesDialog : IntentResult where Self.Dialog == IntentDialog
 ## Relationships
 
 ### Inherits From
-- [IntentResult](intentresult.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [IntentResult](./intentresult.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [IntentResultContainer](intentresultcontainer.md)
+- [IntentResultContainer](./intentresultcontainer.md)
 
 ## See Also
 
-- [protocol IntentResult](intentresult.md)
+### Results
+- [protocol IntentResult](./intentresult.md)
   A type that contains the result of performing an action, and includes optional information to deliver back to the initiator.
-- [struct IntentDialog](intentdialog.md)
+- [struct IntentDialog](./intentdialog.md)
   The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [struct IntentResultContainer](intentresultcontainer.md)
+- [struct IntentResultContainer](./intentresultcontainer.md)
   An object that represents the output of a completed intent.
-- [protocol ReturnsValue](returnsvalue.md)
+- [protocol ReturnsValue](./returnsvalue.md)
   The result of performing an action that delivers a value back to the initiator.
-- [protocol ShowsSnippetView](showssnippetview.md)
+- [protocol ShowsSnippetView](./showssnippetview.md)
   The result of performing an action that delivers a view back to the initiator of the action.
-- [protocol ResultsCollection](resultscollection.md)
+- [protocol ResultsCollection](./resultscollection.md)
   A protocol representing a collection of returned items with support for sectioning.
-- [protocol OpensIntent](opensintent.md)
+- [protocol OpensIntent](./opensintent.md)
   A result type that indicates your app intent returns another app intent.
 
 

@@ -1,7 +1,8 @@
 # CFNumberFormatterStyle.ordinalStyle
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 9.0+
@@ -18,22 +19,27 @@
 case ordinalStyle
 ```
 
+```c
+kCFNumberFormatterOrdinalStyle
+```
+
 ## See Also
 
-- [CFNumberFormatterStyle.currencyAccountingStyle](cfnumberformatterstyle/currencyaccountingstyle.md)
-- [CFNumberFormatterStyle.currencyISOCodeStyle](cfnumberformatterstyle/currencyisocodestyle.md)
-- [CFNumberFormatterStyle.currencyPluralStyle](cfnumberformatterstyle/currencypluralstyle.md)
-- [CFNumberFormatterStyle.currencyStyle](cfnumberformatterstyle/currencystyle.md)
+### Enumeration Cases
+- [CFNumberFormatterStyle.currencyAccountingStyle](./currencyaccountingstyle.md)
+- [CFNumberFormatterStyle.currencyISOCodeStyle](./currencyisocodestyle.md)
+- [CFNumberFormatterStyle.currencyPluralStyle](./currencypluralstyle.md)
+- [CFNumberFormatterStyle.currencyStyle](./currencystyle.md)
   Specifies a currency style format.
-- [CFNumberFormatterStyle.decimalStyle](cfnumberformatterstyle/decimalstyle.md)
+- [CFNumberFormatterStyle.decimalStyle](./decimalstyle.md)
   Specifies a decimal style format.
-- [CFNumberFormatterStyle.noStyle](cfnumberformatterstyle/nostyle.md)
+- [CFNumberFormatterStyle.noStyle](./nostyle.md)
   Specifies no style.
-- [CFNumberFormatterStyle.percentStyle](cfnumberformatterstyle/percentstyle.md)
+- [CFNumberFormatterStyle.percentStyle](./percentstyle.md)
   Specifies a percent style format.
-- [CFNumberFormatterStyle.scientificStyle](cfnumberformatterstyle/scientificstyle.md)
+- [CFNumberFormatterStyle.scientificStyle](./scientificstyle.md)
   Specifies a scientific style format.
-- [CFNumberFormatterStyle.spellOutStyle](cfnumberformatterstyle/spelloutstyle.md)
+- [CFNumberFormatterStyle.spellOutStyle](./spelloutstyle.md)
   Specifies a spelled out format.
 
 

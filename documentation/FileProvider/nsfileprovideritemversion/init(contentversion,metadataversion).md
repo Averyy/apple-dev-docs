@@ -1,7 +1,8 @@
 # init(contentVersion:metadataVersion:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new version object.
 
@@ -16,6 +17,10 @@ Creates a new version object.
 
 ```swift
 init(contentVersion: Data, metadataVersion: Data)
+```
+
+```objc
+- (instancetype) initWithContentVersion:(NSData *) contentVersion metadataVersion:(NSData *) metadataVersion;
 ```
 
 ## Parameters

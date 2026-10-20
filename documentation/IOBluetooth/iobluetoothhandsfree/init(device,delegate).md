@@ -1,7 +1,8 @@
 # init(device:delegate:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new IOBluetoothHandsFree object
 
@@ -12,6 +13,10 @@ Create a new IOBluetoothHandsFree object
 
 ```swift
 init!(device: IOBluetoothDevice!, delegate inDelegate: (any IOBluetoothHandsFreeDelegate)!)
+```
+
+```objc
+- (instancetype) initWithDevice:(IOBluetoothDevice *) device delegate:(id<IOBluetoothHandsFreeDelegate>) inDelegate;
 ```
 
 #### Return Value

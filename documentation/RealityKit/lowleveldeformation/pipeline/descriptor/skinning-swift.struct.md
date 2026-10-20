@@ -1,7 +1,8 @@
 # LowLevelDeformation.Pipeline.Descriptor.Skinning
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The skinning stage configuration for a deformation pipeline.
 
@@ -20,20 +21,21 @@ struct Skinning
 ## Topics
 
 ### Creating a skinning configuration
-- [init(jointIndexType: MTLIndexType)](lowleveldeformation/pipeline/descriptor/skinning-swift.struct/init(jointindextype:).md)
+- [init(jointIndexType: MTLIndexType)](./skinning-swift.struct/init%28jointindextype%29.md)
   Creates a skinning descriptor.
-- [var jointIndexType: MTLIndexType](lowleveldeformation/pipeline/descriptor/skinning-swift.struct/jointindextype.md)
+- [var jointIndexType: MTLIndexType](./skinning-swift.struct/jointindextype.md)
   The data type of the joint index buffer.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var skinning: LowLevelDeformation.Pipeline.Descriptor.Skinning?](lowleveldeformation/pipeline/descriptor/skinning-swift.property.md)
+### Configuring skinning
+- [var skinning: LowLevelDeformation.Pipeline.Descriptor.Skinning?](./skinning-swift.property.md)
   Skinning parameters, or `nil` to omit skinning.
 
 

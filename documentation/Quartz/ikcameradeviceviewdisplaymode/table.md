@@ -1,7 +1,8 @@
 # IKCameraDeviceViewDisplayMode.table
 
 **Framework**: Quartz  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Display the devices in as a table.
 
@@ -14,9 +15,14 @@ Display the devices in as a table.
 case table
 ```
 
+```c
+IKCameraDeviceViewDisplayModeTable
+```
+
 ## See Also
 
-- [IKCameraDeviceViewDisplayMode.icon](ikcameradeviceviewdisplaymode/icon.md)
+### Constants
+- [IKCameraDeviceViewDisplayMode.icon](./icon.md)
   Display the devices as icons.
 
 

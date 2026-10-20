@@ -1,7 +1,8 @@
 # prefixMatch(in:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a match if this regex matches the given string at its start.
 

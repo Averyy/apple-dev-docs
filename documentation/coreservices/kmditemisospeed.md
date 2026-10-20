@@ -1,7 +1,8 @@
 # kMDItemISOSpeed
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The ISO speed used to acquire the document contents. A CFNumber.
 
@@ -12,6 +13,10 @@ The ISO speed used to acquire the document contents. A CFNumber.
 
 ```swift
 let kMDItemISOSpeed: CFString!
+```
+
+```c
+const CFStringRef kMDItemISOSpeed;
 ```
 
 

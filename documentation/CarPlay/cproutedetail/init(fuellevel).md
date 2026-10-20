@@ -1,7 +1,8 @@
 # init(fuelLevel:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates additional route information for a fuel level.
 
@@ -14,6 +15,10 @@ Creates additional route information for a fuel level.
 
 ```swift
 convenience init(fuelLevel: Measurement<UnitVolume>)
+```
+
+```objc
++ (instancetype) routeDetailWithFuelLevel:(NSMeasurement<NSUnitVolume *> *) fuelLevel;
 ```
 
 #### Return Value
@@ -30,9 +35,11 @@ The system automatically converts the measurement to the user’s preferred unit
 
 ## Parameters
 
-- `fuelLevel`: A measurement representing the remaining fuel level using @c NSUnitVolume. Common units: - @c NSUnitVolume.liters for gasoline/diesel (metric regions)
-- @c NSUnitVolume.gallons for gasoline/diesel (US)
-- @c NSUnitVolume.imperialGallons for gasoline/diesel (UK)
+- `fuelLevel`: A measurement representing the remaining fuel level using @c NSUnitVolume. Common units:
+
+  - @c NSUnitVolume.liters for gasoline/diesel (metric regions)
+  - @c NSUnitVolume.gallons for gasoline/diesel (US)
+  - @c NSUnitVolume.imperialGallons for gasoline/diesel (UK)
 
 
 ---

@@ -1,7 +1,8 @@
 # addElement(_:boundingRectMin:boundingRectMax:splitStrategy:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified object to the tree.
 
@@ -19,9 +20,13 @@ Adds the specified object to the tree.
 func addElement(_ element: ElementType, boundingRectMin: vector_float2, boundingRectMax: vector_float2, splitStrategy: GKRTreeSplitStrategy)
 ```
 
+```objc
+- (void) addElement:(ElementType) element boundingRectMin:(vector_float2) boundingRectMin boundingRectMax:(vector_float2) boundingRectMax splitStrategy:(GKRTreeSplitStrategy) splitStrategy;
+```
+
 #### Discussion
 
-The bounding region of each object you add to the tree (specified with the `boundingRectMin` and `boundingRectMax` parameters) defines the location and size of that object in space. When you add an object, depending on the relation of that size and position to those of other objects in the tree, the tree may reorganize its internal structure so that later searches of the tree (with the [`elements(inBoundingRectMin:rectMax:)`](gkrtree/elements(inboundingrectmin:rectmax:).md)) can perform more quickly.
+The bounding region of each object you add to the tree (specified with the `boundingRectMin` and `boundingRectMax` parameters) defines the location and size of that object in space. When you add an object, depending on the relation of that size and position to those of other objects in the tree, the tree may reorganize its internal structure so that later searches of the tree (with the [`elements(inBoundingRectMin:rectMax:)`](./elements%28inboundingrectmin,rectmax%29.md)) can perform more quickly.
 
 The `splitStrategy` parameter controls how the tree reorganizes its internal structure when needed—you can use a different strategy each time you add an object. Which strategy provides the best performance depends on the organization of data in your app or game; for best results, experiment with different strategies and profile your app’s performance with each.
 
@@ -34,7 +39,8 @@ The `splitStrategy` parameter controls how the tree reorganizes its internal str
 
 ## See Also
 
-- [func removeElement(ElementType, boundingRectMin: vector_float2, boundingRectMax: vector_float2)](gkrtree/removeelement(_:boundingrectmin:boundingrectmax:).md)
+### Adding and Removing Elements
+- [func removeElement(ElementType, boundingRectMin: vector_float2, boundingRectMax: vector_float2)](./removeelement%28_,boundingrectmin,boundingrectmax%29.md)
   Removes the specified object from the tree.
 
 

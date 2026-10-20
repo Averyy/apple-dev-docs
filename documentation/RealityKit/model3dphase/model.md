@@ -1,7 +1,8 @@
 # model
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The loaded model, if any.
 
@@ -20,7 +21,8 @@ If this value isn’t `nil`, the model load operation has finished, and you can 
 
 ## See Also
 
-- [var error: (any Error)?](model3dphase/error.md)
+### Accessing the model
+- [var error: (any Error)?](./error.md)
   The error that occurred when attempting to load a model, if any.
 
 

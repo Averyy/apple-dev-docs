@@ -1,11 +1,12 @@
 # Estimator Implementations
 
-**Framework**: Create ML Components
+**Framework**: Create ML Components  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [MinMaxScaler.Transformer](minmaxscaler/transformer.md)
+- [MinMaxScaler.Transformer](./transformer.md)
   A transformer that scales the input values so that they all lie in a closed range.
 
 

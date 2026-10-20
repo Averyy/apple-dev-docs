@@ -1,7 +1,8 @@
 # setDouble4(_:atTime:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setDouble4(_ value: vector_double4, atTime time: TimeInterval)
+```
+
+```objc
+- (void) setDouble4:(vector_double4) value atTime:(NSTimeInterval) time;
 ```
 
 

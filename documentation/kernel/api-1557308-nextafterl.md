@@ -1,21 +1,23 @@
 # nextafterl
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 long double nextafterl(long double, long double);
 ```
 
 ## See Also
 
-- [nextafter](1557351-nextafter.md)
-- [nextafterf](1557315-nextafterf.md)
+### Next After
+- [nextafter](./api-1557351-nextafter.md)
+- [nextafterf](./api-1557315-nextafterf.md)
 
 
 ---

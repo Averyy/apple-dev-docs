@@ -1,7 +1,8 @@
 # recovery
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that represents recovery information.
 
@@ -19,13 +20,18 @@ A value that represents recovery information.
 static let recovery: HKVerifiableClinicalRecordCredentialType
 ```
 
+```c
+extern HKVerifiableClinicalRecordCredentialType const HKVerifiableClinicalRecordCredentialTypeRecovery;
+```
+
 ## See Also
 
-- [static let covid19: HKVerifiableClinicalRecordCredentialType](hkverifiableclinicalrecordcredentialtype/covid19.md)
+### Identifying Record Types
+- [static let covid19: HKVerifiableClinicalRecordCredentialType](./covid19.md)
   A value that represents records about COVID-19.
-- [static let immunization: HKVerifiableClinicalRecordCredentialType](hkverifiableclinicalrecordcredentialtype/immunization.md)
+- [static let immunization: HKVerifiableClinicalRecordCredentialType](./immunization.md)
   A value that represents immunizations.
-- [static let laboratory: HKVerifiableClinicalRecordCredentialType](hkverifiableclinicalrecordcredentialtype/laboratory.md)
+- [static let laboratory: HKVerifiableClinicalRecordCredentialType](./laboratory.md)
   A value that represents laboratory results.
 
 

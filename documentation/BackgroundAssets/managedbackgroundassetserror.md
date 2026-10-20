@@ -1,7 +1,8 @@
 # ManagedBackgroundAssetsError
 
 **Framework**: Background Assets  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An error for a managed asset pack.
 
@@ -22,25 +23,26 @@ enum ManagedBackgroundAssetsError
 ## Topics
 
 ### Errors
-- [ManagedBackgroundAssetsError.assetPackNotFound(withID:)](managedbackgroundassetserror/assetpacknotfound(withid:).md)
+- [ManagedBackgroundAssetsError.assetPackNotFound(withID:)](./managedbackgroundassetserror/assetpacknotfound%28withid%29.md)
   An error that’s thrown when the system can’t find an asset pack with the given ID.
-- [ManagedBackgroundAssetsError.fileNotFound(at:)](managedbackgroundassetserror/filenotfound(at:).md)
+- [ManagedBackgroundAssetsError.fileNotFound(at:)](./managedbackgroundassetserror/filenotfound%28at%29.md)
   An error that’s thrown when the system can’t find a file at the specified path.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Error](../Swift/error.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let BAErrorDomain: String](baerrordomain.md)
-- [enum BAErrorCode](baerrorcode.md)
-- [AssetPackManager.LocalAvailabilityError](assetpackmanager/localavailabilityerror.md)
+### Errors
+- [let BAErrorDomain: String](./baerrordomain.md)
+- [enum BAErrorCode](./baerrorcode.md)
+- [AssetPackManager.LocalAvailabilityError](./assetpackmanager/localavailabilityerror.md)
   An error that provides information about local asset pack availability, distinguishing between successes and failures.
 
 

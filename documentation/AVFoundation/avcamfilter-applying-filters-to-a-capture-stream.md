@@ -1,6 +1,8 @@
 # AVCamFilter: Applying filters to a capture stream
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Sample Code  
+**Download**: [AVCamFilterApplyingFiltersToACaptureStream.zip](https://docs-assets.developer.apple.com/published/282ed3531606/AVCamFilterApplyingFiltersToACaptureStream.zip)
 
 Render a capture stream with rose-colored filtering and depth effects.
 
@@ -14,17 +16,17 @@ Render a capture stream with rose-colored filtering and depth effects.
 
 AVCamFilter is a sample camera app that takes photos with filtered effects. It shows the user a live preview of the scene with the effect rendered on top.
 
-![Screenshots of AVCamFilter with the rose-colored filter applied to the camera preview.](/images/com.apple.avfoundation/RosyFilterSS.png)
+![Screenshots of AVCamFilter with the rose-colored filter applied to the camera preview.](https://developer.apple.com/tutorials/images/com.apple.avfoundation/RosyFilterSS.png)
 
 This sample shows you how to apply a filter with a rose-colored lens using Core Image and Metal. It also shows how to render depth and a smoothened depth effect on top of the capture stream using a grayscale filter. Finally, AVCamFilter allows the user to modulate the frame rate and the effect through sliders.
 
-##### Getting Started
+##### Getting started
 
 Build and run AVCamFilter on a device running iOS 12 or later. This sample won’t work in Simulator. Also, because Metal won’t compile on Simulator, set the build target and schema to a device, or “Generic iOS Device,” before building. The depth effect also won’t show on devices that don’t support depth capture, such as the iPhone 6S and before.
 
-##### Show the Camera Preview in a Metal View
+##### Show the camera preview in a Metal view
 
-AVCamFilter uses `PreviewMetalView`, a custom subclass of [`MTKView`](https://developer.apple.com/documentation/metalkit/mtkview), instead of a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) as its preview view, because the standard [`AVCaptureVideoPreviewLayer`](avcapturevideopreviewlayer.md) gets its frames directly from the [`AVCaptureSession`](avcapturesession.md), with no opportunity for the app to apply effects to those frames. By subclassing `MTKView`, AVCamFilter can apply the rose-colored filter and depth grayscale filter before rendering each frame.
+AVCamFilter uses `PreviewMetalView`, a custom subclass of [`MTKView`](../MetalKit/mtkview.md), instead of a [`UIView`](../UIKit/uiview.md) as its preview view, because the standard [`AVCaptureVideoPreviewLayer`](./avcapturevideopreviewlayer.md) gets its frames directly from the [`AVCaptureSession`](./avcapturesession.md), with no opportunity for the app to apply effects to those frames. By subclassing `MTKView`, AVCamFilter can apply the rose-colored filter and depth grayscale filter before rendering each frame.
 
 The `PreviewMetalView` defines its rendering behavior in `draw`. It creates a Metal texture from the image buffer, so it can transform and render that texture to the image:
 
@@ -47,7 +49,7 @@ CVMetalTextureCacheCreateTextureFromImage(kCFAllocatorDefault,
                                           &cvTextureOut)
 ```
 
-##### Create a Filter Renderer
+##### Create a filter renderer
 
 The custom `FilterRenderer` class serves as the parent for all rendering classes, such as the rose-colored filter and the grayscale converter. `RosyMetalRenderer` and `DepthToGrayscaleConverter` are both subclasses of `FilterRenderer` which provide specific filtering functionality.
 
@@ -86,14 +88,14 @@ var inputFormatDescription: CMFormatDescription? { get }
 func render(pixelBuffer: CVPixelBuffer) -> CVPixelBuffer?
 ```
 
-##### Apply a Rose Colored Filter
+##### Apply a rose-colored filter
 
 AVCamFilter applies a rose-colored filter on top of the camera stream in two ways:
 
-- `RosyCIRenderer` applies a Core Image [`CIColorMatrix`](https://developer.apple.com/documentation/coreimage/cicolormatrix) filter to the input buffer.
+- `RosyCIRenderer` applies a Core Image [`CIColorMatrix`](../CoreImage/cicolormatrix.md) filter to the input buffer.
 - `RosyMetalRenderer` creates a Metal texture from the image buffer and applies the shader in `RosyEffect.metal`.
 
-Both approaches run on the GPU for optimal performance. Because the Core Image approach doesn’t require GPU command queues, `RosyCIRenderer` involves less direct manipulation of the GPU than its Metal counterpart and chains more seamlessly with other Core Image filters. Unlike the Metal function, `RosyCIRenderer` requires the creation and application of a [`CIFilter`](https://developer.apple.com/documentation/coreimage/cifilter-swift.class):
+Both approaches run on the GPU for optimal performance. Because the Core Image approach doesn’t require GPU command queues, `RosyCIRenderer` involves less direct manipulation of the GPU than its Metal counterpart and chains more seamlessly with other Core Image filters. Unlike the Metal function, `RosyCIRenderer` requires the creation and application of a [`CIFilter`](../CoreImage/cifilter-swift.class.md):
 
 ```swift
 ciContext = CIContext()
@@ -138,7 +140,7 @@ commandBuffer.commit()
 
 The function, `RosyEffect.metal`, sets the output color of a pixel to its input color, so most of the image content remains the same, resulting in a transparent effect. However, the kernel excludes the green component, giving the image a rose-colored appearance:
 
-```None
+```
 kernel void rosyEffect(texture2d<half, access::read>  inputTexture  [[ texture(0) ]],
 					   texture2d<half, access::write> outputTexture [[ texture(1) ]],
 					   uint2 gid [[thread_position_in_grid]])
@@ -157,9 +159,9 @@ kernel void rosyEffect(texture2d<half, access::read>  inputTexture  [[ texture(0
 }
 ```
 
-For more information about setting up a Metal compute command encoder, see [`MTLComputeCommandEncoder`](https://developer.apple.com/documentation/metal/mtlcomputecommandencoder).
+For more information about setting up a Metal compute command encoder, see [`MTLComputeCommandEncoder`](../Metal/mtlcomputecommandencoder.md).
 
-##### Vary the Mix Factor
+##### Vary the mix factor
 
 When the user tweaks the “MixFactor” slider, AVCamFilter modulates the intensity of the filter’s mixture:
 
@@ -192,7 +194,7 @@ commandEncoder.endEncoding()
 
 The Metal function, `Mixer.metal`, specifies the mixing operation for each fragment:
 
-```None
+```
 fragment half4 fragmentMixer( VertexIO        inputFragment    [[ stage_in ]],
                               texture2d<half> mixerInput0      [[ texture(0) ]],
                               texture2d<half> mixerInput1      [[ texture(1) ]],
@@ -208,9 +210,9 @@ fragment half4 fragmentMixer( VertexIO        inputFragment    [[ stage_in ]],
 }
 ```
 
-##### Stream Depth Data
+##### Stream depth data
 
-AVCamFilter streams depth data in addition to RGB video by maintaining buffers dedicated to depth information. The `CameraViewController` refreshes these buffers by adhering to the [`AVCaptureDepthDataOutputDelegate`](avcapturedepthdataoutputdelegate.md) protocol and implementing the delegate method [`depthDataOutput(_:didOutput:timestamp:connection:)`](avcapturedepthdataoutputdelegate/depthdataoutput(_:didoutput:timestamp:connection:).md):
+AVCamFilter streams depth data in addition to RGB video by maintaining buffers dedicated to depth information. The `CameraViewController` refreshes these buffers by adhering to the [`AVCaptureDepthDataOutputDelegate`](./avcapturedepthdataoutputdelegate.md) protocol and implementing the delegate method [`depthDataOutput(_:didOutput:timestamp:connection:)`](./avcapturedepthdataoutputdelegate/depthdataoutput%28_,didoutput,timestamp,connection%29.md):
 
 ```swift
 var depthFormatDescription: CMFormatDescription?
@@ -226,7 +228,7 @@ if let unwrappedDepthFormatDescription = depthFormatDescription {
 
 The `DepthToGrayscaleConverter` class converts depth values to grayscale pixels in the preview. Like the rose-colored filter, `DepthToGrayscaleConverter` relies on a Metal function, `DepthToGrayscale.metal`, to perform texture transformations:
 
-```None
+```
 kernel void depthToGrayscale(texture2d<float, access::read> inputTexture   [[ texture(0) ]],
 						                 texture2d<float, access::write> outputTexture [[ texture(1) ]],
                              constant converterParameters& converterParameters [[ buffer(0) ]],
@@ -248,9 +250,9 @@ kernel void depthToGrayscale(texture2d<float, access::read> inputTexture   [[ te
 }
 ```
 
-##### Smooth Depth Data
+##### Smooth depth data
 
-Without smoothing, the depth data in each frame may have gaps or holes. Smoothing the depth data reduces the effect of frame-to-frame discrepancies by interpolating previous and subsequent frames to fill in the holes. To achieve this smoothing in code, set a parameter on [`AVCaptureDepthDataOutput`](avcapturedepthdataoutput.md):
+Without smoothing, the depth data in each frame may have gaps or holes. Smoothing the depth data reduces the effect of frame-to-frame discrepancies by interpolating previous and subsequent frames to fill in the holes. To achieve this smoothing in code, set a parameter on [`AVCaptureDepthDataOutput`](./avcapturedepthdataoutput.md):
 
 ```swift
 sessionQueue.async {
@@ -258,9 +260,9 @@ sessionQueue.async {
 }
 ```
 
-##### Modulate Frame Rate
+##### Modulate frame rate
 
-AVCamFilter also shows how to change the frame rate at which the camera delivers depth data. When the user moves the “FPS” (frames per second) slider, the app converts this user-facing representation of frame rate to its inverse, frame duration, for setting the video device’s  [`activeDepthDataMinFrameDuration`](avcapturedevice/activedepthdataminframeduration.md) accordingly:
+AVCamFilter also shows how to change the frame rate at which the camera delivers depth data. When the user moves the “FPS” (frames per second) slider, the app converts this user-facing representation of frame rate to its inverse, frame duration, for setting the video device’s  [`activeDepthDataMinFrameDuration`](./avcapturedevice/activedepthdataminframeduration.md) accordingly:
 
 ```swift
 try self.videoInput.device.lockForConfiguration()
@@ -272,21 +274,22 @@ Changing the frame rate allows the user to control how fast the app refreshes th
 
 ## See Also
 
-- [Capturing photos with depth](capturing-photos-with-depth.md)
+### Depth data capture
+- [Capturing photos with depth](./capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
+- [Creating auxiliary depth data manually](./creating-auxiliary-depth-data-manually.md)
   Generate a depth image and attach it to your own image.
-- [Capturing depth using the LiDAR camera](capturing-depth-using-the-lidar-camera.md)
+- [Capturing depth using the LiDAR camera](./capturing-depth-using-the-lidar-camera.md)
   Access the LiDAR camera on supporting devices to capture precise depth data.
-- [Streaming depth data from the TrueDepth camera](streaming-depth-data-from-the-truedepth-camera.md)
+- [Streaming depth data from the TrueDepth camera](./streaming-depth-data-from-the-truedepth-camera.md)
   Visualize depth data in 2D and 3D from the TrueDepth camera.
-- [Enhancing live video by leveraging TrueDepth camera data](enhancing-live-video-by-leveraging-truedepth-camera-data.md)
+- [Enhancing live video by leveraging TrueDepth camera data](./enhancing-live-video-by-leveraging-truedepth-camera-data.md)
   Apply your own background to a live capture feed streamed from the front-facing TrueDepth camera.
-- [class AVCaptureDepthDataOutput](avcapturedepthdataoutput.md)
+- [class AVCaptureDepthDataOutput](./avcapturedepthdataoutput.md)
   A capture output that records scene depth information on compatible camera devices.
-- [class AVDepthData](avdepthdata.md)
+- [class AVDepthData](./avdepthdata.md)
   A container for per-pixel distance or disparity information captured by compatible camera devices.
-- [class AVCameraCalibrationData](avcameracalibrationdata.md)
+- [class AVCameraCalibrationData](./avcameracalibrationdata.md)
   Information about the camera characteristics used to capture images and depth data.
 
 

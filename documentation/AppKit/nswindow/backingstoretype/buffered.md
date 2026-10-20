@@ -1,17 +1,22 @@
 # NSWindow.BackingStoreType.buffered
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The window renders all drawing into a display buffer and then flushes it to the screen.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 case buffered
+```
+
+```c
+NSBackingStoreBuffered
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ You should use this mode. It supports hardware acceleration, Quartz drawing, and
 
 ## See Also
 
-- [NSWindow.BackingStoreType.retained](nswindow/backingstoretype/retained.md)
+### Constants
+- [NSWindow.BackingStoreType.retained](./retained.md)
   The window uses a buffer, but draws directly to the screen where possible and to the buffer for obscured portions.
-- [NSWindow.BackingStoreType.nonretained](nswindow/backingstoretype/nonretained.md)
+- [NSWindow.BackingStoreType.nonretained](./nonretained.md)
   The window draws directly to the screen without using any buffer.
 
 

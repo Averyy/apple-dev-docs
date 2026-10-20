@@ -1,14 +1,15 @@
 # init(rawValue:)
 
 **Framework**: Cinematic  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
 
 ## Declaration
 

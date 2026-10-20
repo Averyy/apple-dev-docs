@@ -1,7 +1,8 @@
 # errSSLCertificateRequired
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Certificate required.
 
@@ -18,6 +19,10 @@ Certificate required.
 
 ```swift
 var errSSLCertificateRequired: OSStatus { get }
+```
+
+```c
+errSSLCertificateRequired
 ```
 
 

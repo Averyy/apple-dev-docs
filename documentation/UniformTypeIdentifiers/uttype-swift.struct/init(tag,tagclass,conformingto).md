@@ -1,7 +1,8 @@
 # init(tag:tagClass:conformingTo:)
 
 **Framework**: Uniform Type Identifiers  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a type based on a tag, a tag class, and a supertype that it conforms to.
 
@@ -27,20 +28,21 @@ This initializer returns `nil` if the system doesn’t know the tag.
 ## Parameters
 
 - `tag`: The tag, such as a filename extension.
-- `tagClass`: The tag class, such as [`UTTagClassFilenameExtension`](uttagclassfilenameextension.md).
-- `supertype`: Another type that the resulting type must conform to; for example, [`UTTypeData`](uttypedata.md).
+- `tagClass`: The tag class, such as [`UTTagClassFilenameExtension`](../uttagclassfilenameextension.md).
+- `supertype`: Another type that the resulting type must conform to; for example, [`UTTypeData`](../uttypedata.md).
 
 ## See Also
 
-- [init?(String)](uttype-swift.struct/init(_:).md)
+### Creating a type
+- [init?(String)](./init%28_%29.md)
   Creates a type based on an identifier.
-- [init?(mimeType: String, conformingTo: UTType)](uttype-swift.struct/init(mimetype:conformingto:).md)
+- [init?(mimeType: String, conformingTo: UTType)](./init%28mimetype,conformingto%29.md)
   Creates a type based on a MIME type and a supertype that it conforms to.
-- [init?(filenameExtension: String, conformingTo: UTType)](uttype-swift.struct/init(filenameextension:conformingto:).md)
+- [init?(filenameExtension: String, conformingTo: UTType)](./init%28filenameextension,conformingto%29.md)
   Creates a type based on a filename extension and an existing supertype that it conforms to.
-- [init(exportedAs: String, conformingTo: UTType?)](uttype-swift.struct/init(exportedas:conformingto:).md)
+- [init(exportedAs: String, conformingTo: UTType?)](./init%28exportedas,conformingto%29.md)
   Creates a type your app owns based on an identifier and a supertype that it conforms to.
-- [init(importedAs: String, conformingTo: UTType?)](uttype-swift.struct/init(importedas:conformingto:).md)
+- [init(importedAs: String, conformingTo: UTType?)](./init%28importedas,conformingto%29.md)
   Creates a type your app uses, but doesn’t own, based on an identifier and a supertype that it conforms to.
 
 

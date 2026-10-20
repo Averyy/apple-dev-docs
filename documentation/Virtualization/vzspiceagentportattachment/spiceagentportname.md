@@ -1,7 +1,8 @@
 # spiceAgentPortName
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the Virtio console port for the Spice guest agent.
 
@@ -12,6 +13,10 @@ The name of the Virtio console port for the Spice guest agent.
 
 ```swift
 class var spiceAgentPortName: String { get }
+```
+
+```objc
+@property (class, copy, readonly) NSString * spiceAgentPortName;
 ```
 
 

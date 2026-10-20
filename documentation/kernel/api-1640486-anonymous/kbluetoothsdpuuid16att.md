@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ATT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ATT = 0x0007
 ```
 

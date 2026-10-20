@@ -1,7 +1,8 @@
 # UIPrintError.Code.noContent
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 UIKit hasn’t assigned a print formatter, page renderer, or printing item to print.
 
@@ -17,13 +18,18 @@ UIKit hasn’t assigned a print formatter, page renderer, or printing item to pr
 case noContent
 ```
 
+```c
+UIPrintNoContentError
+```
+
 ## See Also
 
-- [UIPrintError.Code.notAvailable](uiprinterror/code/notavailable.md)
+### Error codes
+- [UIPrintError.Code.notAvailable](./notavailable.md)
   The device doesn’t support printing.
-- [UIPrintError.Code.unknownImageFormat](uiprinterror/code/unknownimageformat.md)
+- [UIPrintError.Code.unknownImageFormat](./unknownimageformat.md)
   An image is in a format that UIKit doesn’t recognize for printing.
-- [UIPrintError.Code.jobFailed](uiprinterror/code/jobfailed.md)
+- [UIPrintError.Code.jobFailed](./jobfailed.md)
   An internal error occurred with the print job.
 
 

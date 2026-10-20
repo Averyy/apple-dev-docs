@@ -1,7 +1,8 @@
 # init(stringInterpolation:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance from an interpolated string literal.
 

@@ -1,7 +1,8 @@
 # ResolvedContact
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contact information to help a search query match references to a person or organization.
 
@@ -20,7 +21,7 @@ struct ResolvedContact
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
 #### Overview
 
@@ -29,29 +30,30 @@ Use this type to specify details about the person or business that uses your app
 ## Topics
 
 ### Creating the contact
-- [init(displayName: String)](resolvedcontact/init(displayname:).md)
+- [init(displayName: String)](./resolvedcontact/init%28displayname%29.md)
 ### Specifying the person’s name
-- [var displayName: String](resolvedcontact/displayname.md)
+- [var displayName: String](./resolvedcontact/displayname.md)
   The name your app displays for the contact.
-- [var nameComponents: [PersonNameComponents]](resolvedcontact/namecomponents.md)
+- [var nameComponents: [PersonNameComponents]](./resolvedcontact/namecomponents.md)
   The contact’s names as a set of structured name components.
-- [var names: [String]](resolvedcontact/names.md)
+- [var names: [String]](./resolvedcontact/names.md)
   Alternate names you use to refer to the contact.
 ### Specifying contact information
-- [var emailAddresses: [String]](resolvedcontact/emailaddresses.md)
+- [var emailAddresses: [String]](./resolvedcontact/emailaddresses.md)
   The email addresses for this contact.
-- [var phoneNumbers: [String]](resolvedcontact/phonenumbers.md)
+- [var phoneNumbers: [String]](./resolvedcontact/phonenumbers.md)
   The phone numbers for this contact.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol ContactResolver](contactresolver.md)
+### Contact resolution
+- [protocol ContactResolver](./contactresolver.md)
   An interface you use to help Foundation models resolve references to the person using the app.
 
 

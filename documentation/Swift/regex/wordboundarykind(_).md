@@ -1,7 +1,8 @@
 # wordBoundaryKind(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a regular expression that uses the specified word boundary algorithm.
 

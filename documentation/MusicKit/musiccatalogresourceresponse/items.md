@@ -1,9 +1,10 @@
 # items
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A collection of items matching the filter used in the originating [`MusicCatalogResourceRequest`](musiccatalogresourcerequest.md).
+A collection of items matching the filter used in the originating [`MusicCatalogResourceRequest`](../musiccatalogresourcerequest.md).
 
 **Availability**:
 - iOS 15.0+

@@ -1,7 +1,8 @@
 # receivesEventsInView
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether events are delivered exclusively through the Game Controller framework.
 
@@ -17,6 +18,10 @@ A Boolean value that determines whether events are delivered exclusively through
 var receivesEventsInView: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) BOOL receivesEventsInView;
+```
+
 #### Discussion
 
 If `YES`, events of the types specified by `handledEventTypes` are delivered both through the Game Controller framework and as UIKit event objects to your app’s views and gesture recognizers.
@@ -27,7 +32,8 @@ The default value of this property is `NO`. This property has no effect if `hand
 
 ## See Also
 
-- [struct GameControllerEventHandlingOptions](gamecontrollereventhandlingoptions.md)
+### Receiving view events
+- [struct GameControllerEventHandlingOptions](../gamecontrollereventhandlingoptions.md)
 
 
 ---

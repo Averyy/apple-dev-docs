@@ -1,7 +1,8 @@
 # iLBC
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The internet Low Bitrate Codec (iLBC) narrowband speech format.
 
@@ -10,7 +11,7 @@ The internet Low Bitrate Codec (iLBC) narrowband speech format.
 
 ## Declaration
 
-```swift
+```c
 iLBC
 ```
 
@@ -20,7 +21,8 @@ This format uses no flags.
 
 ## See Also
 
-- [Opus](audiodriverkit/iouseraudioformatid/opus.md)
+### Open-Source Formats
+- [Opus](./opus.md)
   The Opus codec format.
 
 

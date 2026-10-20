@@ -1,7 +1,8 @@
 # readAttributeVendorName(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeVendorName(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeVendorName() async throws -> String
+```
+
+```objc
+- (void) readAttributeVendorNameWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

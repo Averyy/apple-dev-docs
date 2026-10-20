@@ -1,7 +1,8 @@
 # NSPrintOperation.RenderingQuality.best
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Renders the printing at the best possible quality, regardless of speed.
 
@@ -14,9 +15,14 @@ Renders the printing at the best possible quality, regardless of speed.
 case best
 ```
 
+```c
+NSPrintRenderingQualityBest
+```
+
 ## See Also
 
-- [NSPrintOperation.RenderingQuality.responsive](nsprintoperation/renderingquality/responsive.md)
+### Constants
+- [NSPrintOperation.RenderingQuality.responsive](./responsive.md)
   Sacrifices the least possible amount of rendering quality for speed to maintain a responsive user interface. This option should be used only after establishing that best quality rendering does indeed make the user interface unresponsive.
 
 

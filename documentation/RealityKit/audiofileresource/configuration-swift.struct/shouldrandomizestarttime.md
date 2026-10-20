@@ -1,7 +1,8 @@
 # shouldRandomizeStartTime
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Stores a Boolean indicating whether the playback begins from the start of the file, or from a random position.
 
@@ -21,11 +22,12 @@ var shouldRandomizeStartTime: Bool
 
 #### Discussion
 
-When this property and [`shouldLoop`](audiofileresource/configuration-swift.struct/shouldloop.md) are both true, only the first playback iteration begins from a random position.
+When this property and [`shouldLoop`](./shouldloop.md) are both true, only the first playback iteration begins from a random position.
 
 ## See Also
 
-- [var shouldLoop: Bool](audiofileresource/configuration-swift.struct/shouldloop.md)
+### Customizing the playback
+- [var shouldLoop: Bool](./shouldloop.md)
   Stores a Boolean indicating whether the playback loops infinitely, until manually stopped or paused.
 
 

@@ -15,7 +15,7 @@ If you supply your own idle function (not needed in Mac OS 8, 9, or X), your fun
 ## Topics
 
 ### Constants
-- [var kPMCancel: Int](kpmcancel.md)
+- [var kPMCancel: Int](../kpmcancel.md)
   Specifies that the user clicked the Cancel button in a Print or Page Setup dialog.
 
 

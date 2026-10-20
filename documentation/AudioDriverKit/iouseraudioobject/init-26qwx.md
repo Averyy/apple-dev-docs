@@ -1,7 +1,8 @@
 # init
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initializes an empty object.
 
@@ -10,7 +11,7 @@ Initializes an empty object.
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool init();
 ```
 
@@ -24,7 +25,8 @@ This no-arg initializer always returns `false`.
 
 ## See Also
 
-- [init](iouseraudioobject/init-1ar2z.md)
+### Creating an Audio Object
+- [init](./init-1ar2z.md)
   Initializes an instance of the audio object base class.
 
 

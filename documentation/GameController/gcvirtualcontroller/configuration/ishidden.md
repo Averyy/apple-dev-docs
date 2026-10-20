@@ -1,7 +1,8 @@
 # isHidden
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system or the app presents the virtual interface.
 
@@ -16,11 +17,15 @@ A Boolean value that indicates whether the system or the app presents the virtua
 var isHidden: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isHidden) BOOL hidden;
+```
+
 #### Discussion
 
-To present your own virtual controller interface, set this property to [`true`](https://developer.apple.com/documentation/swift/true). Then when the state of controls in your interface changes, use the [`GCVirtualController`](gcvirtualcontroller.md) [`setValue(_:forButtonElement:)`](gcvirtualcontroller/setvalue(_:forbuttonelement:).md) and [`setPosition(_:forDirectionPadElement:)`](gcvirtualcontroller/setposition(_:fordirectionpadelement:).md) methods to update the corresponding elements.
+To present your own virtual controller interface, set this property to [`true`](../../../Swift/true.md). Then when the state of controls in your interface changes, use the [`GCVirtualController`](../../gcvirtualcontroller.md) [`setValue(_:forButtonElement:)`](../setvalue%28_,forbuttonelement%29.md) and [`setPosition(_:forDirectionPadElement:)`](../setposition%28_,fordirectionpadelement%29.md) methods to update the corresponding elements.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../../Swift/false.md).
 
 
 ---

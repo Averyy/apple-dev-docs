@@ -1,13 +1,14 @@
 # module::setVelocity
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the velocity of an element to the specified value.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -19,7 +20,7 @@ void module::setVelocity(float3 velocity)
 
 Use this function to assign a new velocity vector to an element, replacing its current velocity.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/module__setVelocity.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/module__setVelocity.svg)
 
 ## Parameters
 

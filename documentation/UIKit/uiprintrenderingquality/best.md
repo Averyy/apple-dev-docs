@@ -1,7 +1,8 @@
 # UIPrintRenderingQuality.best
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that renders the printing at the best possible quality, regardless of speed.
 
@@ -18,9 +19,14 @@ A constant that renders the printing at the best possible quality, regardless of
 case best
 ```
 
+```c
+UIPrintRenderingQualityBest
+```
+
 ## See Also
 
-- [UIPrintRenderingQuality.responsive](uiprintrenderingquality/responsive.md)
+### Constants
+- [UIPrintRenderingQuality.responsive](./responsive.md)
   A constant that reduces rendering quality by the smallest possible amount to increase speed and maintain a responsive user interface.
 
 

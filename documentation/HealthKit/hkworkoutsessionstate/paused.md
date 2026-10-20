@@ -1,7 +1,8 @@
 # HKWorkoutSessionState.paused
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The workout session has paused.
 
@@ -9,7 +10,7 @@ The workout session has paused.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -19,19 +20,25 @@ The workout session has paused.
 case paused
 ```
 
+```c
+HKWorkoutSessionStatePaused
+```
+
 ## See Also
 
-- [func pause()](hkworkoutsession/pause.md)
+### Related Documentation
+- [func pause()](../hkworkoutsession/pause%28%29.md)
   Pauses the workout session.
-- [HKWorkoutSessionState.notStarted](hkworkoutsessionstate/notstarted.md)
+### Session states
+- [HKWorkoutSessionState.notStarted](./notstarted.md)
   The workout session has not started.
-- [HKWorkoutSessionState.prepared](hkworkoutsessionstate/prepared.md)
+- [HKWorkoutSessionState.prepared](./prepared.md)
   The session is ready but not yet running.
-- [HKWorkoutSessionState.running](hkworkoutsessionstate/running.md)
+- [HKWorkoutSessionState.running](./running.md)
   The workout session is running.
-- [HKWorkoutSessionState.stopped](hkworkoutsessionstate/stopped.md)
+- [HKWorkoutSessionState.stopped](./stopped.md)
   The session has stopped.
-- [HKWorkoutSessionState.ended](hkworkoutsessionstate/ended.md)
+- [HKWorkoutSessionState.ended](./ended.md)
   The workout session has ended.
 
 

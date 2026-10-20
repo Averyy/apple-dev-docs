@@ -1,7 +1,8 @@
 # TCControlContents.ButtonShape
 
 **Framework**: Touch Controller  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines the visual shape of a button.
 
@@ -16,31 +17,36 @@ Defines the visual shape of a button.
 enum ButtonShape
 ```
 
+```c
+enum TCControlContentsButtonShape : NSInteger;
+```
+
 ## Topics
 
 ### Shapes
-- [TCControlContents.ButtonShape.circle](tccontrolcontents/buttonshape/circle.md)
+- [TCControlContents.ButtonShape.circle](./buttonshape/circle.md)
   A circular button shape.
-- [TCControlContents.ButtonShape.rect](tccontrolcontents/buttonshape/rect.md)
+- [TCControlContents.ButtonShape.rect](./buttonshape/rect.md)
   A rectangular button shape.
 ### Creating a button shape
-- [init?(rawValue: Int)](tccontrolcontents/buttonshape/init(rawvalue:).md)
+- [init?(rawValue: Int)](./buttonshape/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [TCControlContents.DpadDirection](tccontrolcontents/dpaddirection.md)
+### System content
+- [TCControlContents.DpadDirection](./dpaddirection.md)
   Defines the direction of a direction pad visual.
-- [TCControlContents.DpadElementStyle](tccontrolcontents/dpadelementstyle.md)
+- [TCControlContents.DpadElementStyle](./dpadelementstyle.md)
   Defines the visual style of the individual up/down/left/right elements of a direction pad.
 
 

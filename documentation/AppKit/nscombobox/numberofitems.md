@@ -1,12 +1,13 @@
 # numberOfItems
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of items in the pop-up list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,29 @@ The total number of items in the pop-up list.
 var numberOfItems: Int { get }
 ```
 
+```objc
+@property (readonly) NSInteger numberOfItems;
+```
+
 ## See Also
 
-- [var numberOfVisibleItems: Int](nscombobox/numberofvisibleitems.md)
+### Related Documentation
+- [var numberOfVisibleItems: Int](./numberofvisibleitems.md)
   The maximum number of visible items to display in the pop-up list at one time.
-- [func addItems(withObjectValues: [Any])](nscombobox/additems(withobjectvalues:).md)
+### Configuring the Combo Box Items
+- [func addItems(withObjectValues: [Any])](./additems%28withobjectvalues%29.md)
   Adds multiple objects to the end of the receiver’s internal item list.
-- [func addItem(withObjectValue: Any)](nscombobox/additem(withobjectvalue:).md)
+- [func addItem(withObjectValue: Any)](./additem%28withobjectvalue%29.md)
   Adds an object to the end of the receiver’s internal item list.
-- [func insertItem(withObjectValue: Any, at: Int)](nscombobox/insertitem(withobjectvalue:at:).md)
+- [func insertItem(withObjectValue: Any, at: Int)](./insertitem%28withobjectvalue,at%29.md)
   Inserts an object at the specified location in the receiver’s internal item list.
-- [var objectValues: [Any]](nscombobox/objectvalues.md)
+- [var objectValues: [Any]](./objectvalues.md)
   An array of the items from the combo box’s internal list.
-- [func removeAllItems()](nscombobox/removeallitems.md)
+- [func removeAllItems()](./removeallitems%28%29.md)
   Removes all items from the receiver’s internal item list.
-- [func removeItem(at: Int)](nscombobox/removeitem(at:).md)
+- [func removeItem(at: Int)](./removeitem%28at%29.md)
   Removes the object at the specified location from the receiver’s internal item list.
-- [func removeItem(withObjectValue: Any)](nscombobox/removeitem(withobjectvalue:).md)
+- [func removeItem(withObjectValue: Any)](./removeitem%28withobjectvalue%29.md)
   Removes all occurrences of the given object from the receiver’s internal item list.
 
 

@@ -1,7 +1,8 @@
 # cameraProfiles
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of camera profiles implemented by the accessory.
 
@@ -19,17 +20,22 @@ An array of camera profiles implemented by the accessory.
 var cameraProfiles: [HMCameraProfile]? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSArray<HMCameraProfile *> * cameraProfiles;
+```
+
 #### Discussion
 
-An accessory can contain one or more cameras. Each camera is represented as a an [`HMCameraProfile`](hmcameraprofile.md) instance. If the accessory doesn’t contain a camera, this property is `nil`.
+An accessory can contain one or more cameras. Each camera is represented as a an [`HMCameraProfile`](../hmcameraprofile.md) instance. If the accessory doesn’t contain a camera, this property is `nil`.
 
 ## See Also
 
-- [struct CameraView](cameraview.md)
+### Managing camera profiles
+- [struct CameraView](../cameraview.md)
   A SwiftUI view into which a video stream or an image snapshot is rendered.
-- [class HMCameraProfile](hmcameraprofile.md)
+- [class HMCameraProfile](../hmcameraprofile.md)
   A camera profile that interacts with an accessory’s camera.
-- [class HMCameraView](hmcameraview.md)
+- [class HMCameraView](../hmcameraview.md)
   The view into which a video stream or an image snapshot is rendered.
 
 

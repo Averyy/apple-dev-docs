@@ -1,7 +1,8 @@
 # Unauthorized
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An error status that indicates the provided authorization token is invalid.
 
@@ -10,7 +11,7 @@ An error status that indicates the provided authorization token is invalid.
 
 ## Declaration
 
-```swift
+```
 readonly Unauthorized: "Unauthorized";
 ```
 

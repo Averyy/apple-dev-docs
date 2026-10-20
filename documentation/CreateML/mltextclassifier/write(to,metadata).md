@@ -1,7 +1,8 @@
 # write(to:metadata:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the text classifier as a Core ML model file at the specified URL.
 
@@ -20,8 +21,8 @@ func write(to fileURL: URL, metadata: MLModelMetadata? = nil) throws
 
 ## Mentions
 
-- [Creating a text classifier model](creating-a-text-classifier-model.md)
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Creating a text classifier model](../creating-a-text-classifier-model.md)
+- [Creating a word tagger model](../creating-a-word-tagger-model.md)
 
 ## Parameters
 
@@ -30,7 +31,8 @@ func write(to fileURL: URL, metadata: MLModelMetadata? = nil) throws
 
 ## See Also
 
-- [func write(toFile: String, metadata: MLModelMetadata?) throws](mltextclassifier/write(tofile:metadata:).md)
+### Saving a text classifier
+- [func write(toFile: String, metadata: MLModelMetadata?) throws](./write%28tofile,metadata%29.md)
   Exports the text classifier as a Core ML model file at the specified file path.
 
 

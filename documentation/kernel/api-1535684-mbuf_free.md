@@ -1,18 +1,19 @@
 # mbuf_free
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 mbuf_t mbuf_free(mbuf_t mbuf);
 ```
 
-#### Return_value
+#### Return Value
 
 The next mbuf in the chain.
 

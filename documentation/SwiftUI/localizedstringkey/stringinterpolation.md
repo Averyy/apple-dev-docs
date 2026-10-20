@@ -1,7 +1,8 @@
 # LocalizedStringKey.StringInterpolation
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Represents the contents of a string literal with interpolations while it’s being built, for use in creating a localized string key.
 
@@ -23,32 +24,33 @@ struct StringInterpolation
 ## Topics
 
 ### Appending to an interpolation
-- [func appendInterpolation(_:)](localizedstringkey/stringinterpolation/appendinterpolation(_:).md)
+- [func appendInterpolation(_:)](./stringinterpolation/appendinterpolation%28_%29.md)
   Appends an attributed substring to a string interpolation.
-- [func appendInterpolation<T>(T, specifier: String)](localizedstringkey/stringinterpolation/appendinterpolation(_:specifier:).md)
+- [func appendInterpolation<T>(T, specifier: String)](./stringinterpolation/appendinterpolation%28_,specifier%29.md)
   Appends a type, convertible to a string with a format specifier, to a string interpolation.
-- [func appendInterpolation(_:format:)](localizedstringkey/stringinterpolation/appendinterpolation(_:format:).md)
+- [func appendInterpolation(_:format:)](./stringinterpolation/appendinterpolation%28_,format%29.md)
   Appends the formatted representation  of a nonstring type supported by a corresponding format style.
-- [func appendInterpolation(_:formatter:)](localizedstringkey/stringinterpolation/appendinterpolation(_:formatter:).md)
+- [func appendInterpolation(_:formatter:)](./stringinterpolation/appendinterpolation%28_,formatter%29.md)
   Appends an optionally-formatted instance of an Objective-C subclass to a string interpolation.
-- [func appendInterpolation(Date, style: Text.DateStyle)](localizedstringkey/stringinterpolation/appendinterpolation(_:style:).md)
+- [func appendInterpolation(Date, style: Text.DateStyle)](./stringinterpolation/appendinterpolation%28_,style%29.md)
   Appends a formatted date to a string interpolation.
-- [func appendInterpolation(timerInterval: ClosedRange<Date>, pauseTime: Date?, countsDown: Bool, showsHours: Bool)](localizedstringkey/stringinterpolation/appendinterpolation(timerinterval:pausetime:countsdown:showshours:).md)
+- [func appendInterpolation(timerInterval: ClosedRange<Date>, pauseTime: Date?, countsDown: Bool, showsHours: Bool)](./stringinterpolation/appendinterpolation%28timerinterval,pausetime,countsdown,showshours%29.md)
   Appends a timer interval to a string interpolation.
-- [func appendLiteral(String)](localizedstringkey/stringinterpolation/appendliteral(_:).md)
+- [func appendLiteral(String)](./stringinterpolation/appendliteral%28_%29.md)
   Appends a literal string.
 ### Instance Methods
-- [func appendInterpolation(accessibilityName: Color)](localizedstringkey/stringinterpolation/appendinterpolation(accessibilityname:).md)
+- [func appendInterpolation(accessibilityName: Color)](./stringinterpolation/appendinterpolation%28accessibilityname%29.md)
   Appends a localized description of a color for accessibility to a string interpolation.
 
 ## Relationships
 
 ### Conforms To
-- [StringInterpolationProtocol](../swift/stringinterpolationprotocol.md)
+- [StringInterpolationProtocol](../../Swift/stringinterpolationprotocol.md)
 
 ## See Also
 
-- [init(stringInterpolation: LocalizedStringKey.StringInterpolation)](localizedstringkey/init(stringinterpolation:).md)
+### Creating a key from an interpolation
+- [init(stringInterpolation: LocalizedStringKey.StringInterpolation)](./init%28stringinterpolation%29.md)
   Creates a localized string key from the given string interpolation.
 
 

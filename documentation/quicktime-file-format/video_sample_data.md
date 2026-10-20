@@ -1,6 +1,7 @@
 # Video sample data
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Store video sample data in different formats, depending on the type of compression you use.
 
@@ -8,7 +9,7 @@ Store video sample data in different formats, depending on the type of compressi
 
 The format of the data stored in video samples is completely dependent on the type of the compression used, as indicated in the video sample description. The following sections discuss some of the video encoding schemes supported by QuickTime.
 
-#### Uncompressed Rgb
+#### Uncompressed RGB
 
 Uncompressed RGB data is stored in a variety of different formats. The format used depends on the depth field of the video sample description. For all depths, the image data is padded on each scan line to ensure that each scan line begins on an even byte boundary.
 
@@ -19,7 +20,7 @@ Uncompressed RGB data is stored in a variety of different formats. The format us
 
 RGB data can be stored in composite or planar format. Composite format stores the RGB data for each pixel contiguously, while planar format stores the R, G, and B data separately, so the RGB information for a given pixel is found using the same offset into multiple tables. For example, the data for two pixels could be represented in composite format as RGB-RGB or in planar format as RR-GG-BB.
 
-#### Uncompressed Y%c2%b4cbcr Including Yuv2
+#### Uncompressed Y´CbCr (including yuv2)
 
 The Y´CbCr color space is widely used for digital video. In this data format, luminance is stored as a single value (Y), and chrominance information is stored as two color-difference components (Cb and Cr). Cb is the difference between the blue component and a reference value; Cr is the difference between the red component and a reference value.
 
@@ -37,7 +38,7 @@ Uncompressed Y´CbCr video data is typically stored as follows:
 
 The yuv2 stream, for example, is encoded in a series of 4-byte packets. Each packet represents two adjacent pixels on the same scan line. The bytes within each packet are ordered as follows:
 
-```None
+```
 y0 u y1 v
 ```
 
@@ -45,7 +46,7 @@ y0 u y1 v
 
 Accurate conversion between RGB and Y´CbCr color spaces requires a computation for each component of each pixel. An example conversion from yuv2 into RGB is represented by the following equations:
 
-```None
+```
 r = 1.402 * v + y + .5
 
 g = y - .7143 * v - .3437 * u + .5
@@ -57,17 +58,17 @@ The `r`, `g`, and `b` values range from `0` to `255`.
 
 The coefficients in these equations are derived from matrix operations and depend on the reference values used for the primary colors and for white. QuickTime uses canonical values for these reference coefficients based on published standards. The sample description extension for Y´CbCr formats includes a `'colr'` atom, which contains indexes into a table of canonical references. This provides support for multiple video standards without opening the door to data entry errors for stored coefficient values. Refer to the published standards for the formulas and methods used to derive conversion coefficients from the table entries.
 
-#### Jpeg
+#### JPEG
 
 QuickTime stores JPEG images according to the rules described in the ISO JPEG specification, document number DIS 10918-1.
 
-#### Mpeg 4 Video
+#### MPEG-4 Video
 
-MPEG-4 video uses the `'mp4v'` data format. The sample description requires the elementary stream descriptor (‘esds’) extension to the standard video sample description. If non-square pixels are used, the pixel aspect ratio (`'pasp'`) extension is also required. For details on these extensions, see [`Pixel aspect ratio`](pixel_aspect_ratio.md) and [`MPEG-4 elementary stream descriptor atom`](mpeg-4_elementary_stream_descriptor_atom.md).
+MPEG-4 video uses the `'mp4v'` data format. The sample description requires the elementary stream descriptor (‘esds’) extension to the standard video sample description. If non-square pixels are used, the pixel aspect ratio (`'pasp'`) extension is also required. For details on these extensions, see [`Pixel aspect ratio`](./pixel_aspect_ratio.md) and [`MPEG-4 elementary stream descriptor atom`](./mpeg-4_elementary_stream_descriptor_atom.md).
 
 MPEG-4 video conforms to ISO/IEC documents 14496-1/2000(E) and 14496-2:1999/Amd.1:2000(E).
 
-#### Motion Jpeg
+#### Motion-JPEG
 
 Motion-JPEG (M-JPEG) is a variant of the ISO JPEG specification for use with digital video streams. Instead of compressing an entire image into a single bitstream, Motion-JPEG compresses each video field separately, returning the resulting JPEG bitstreams consecutively in a single frame.
 
@@ -109,9 +110,10 @@ Because Motion-JPEG format B does not support markers, the JPEG bitstream does n
 
 ## See Also
 
-- [Video sample description ('stsd')](video_sample_description.md)
+### Storing video data
+- [Video sample description ('stsd')](./video_sample_description.md)
   An atom that contains information that defines how to interpret video media data.
-- [Video sample description extensions](video_sample_description_extensions.md)
+- [Video sample description extensions](./video_sample_description_extensions.md)
   Extend video sample descriptions by appending other atoms.
 
 

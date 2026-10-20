@@ -1,13 +1,14 @@
 # result_type
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the message’s result.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,15 +16,20 @@ The type of the message’s result.
 var result_type: es_result_type_t
 ```
 
+```c
+es_result_type_t result_type;
+```
+
 #### Discussion
 
-Use this value to determine which member of the [`result`](es_result_t/result.md) `union` to use: `auth` or `flags`.
+Use this value to determine which member of the [`result`](./result.md) `union` to use: `auth` or `flags`.
 
 ## See Also
 
-- [var result: es_result_t.__Unnamed_union_result](es_result_t/result.md)
+### Inspecting Result Properties
+- [var result: es_result_t.__Unnamed_union_result](./result.md)
   The message’s result, as either an authorization result or flags.
-- [struct es_result_type_t](es_result_type_t.md)
+- [struct es_result_type_t](../es_result_type_t.md)
   A type that indicates the type of a message’s result.
 
 

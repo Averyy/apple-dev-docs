@@ -1,7 +1,8 @@
 # setOffset(_:at:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func setOffset(_ offset: MPSOffset, at index: Int)
+```
+
+```objc
+- (void) setOffset:(MPSOffset) offset atIndex:(NSUInteger) index;
 ```
 
 

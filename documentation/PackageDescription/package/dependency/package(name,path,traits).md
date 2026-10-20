@@ -1,7 +1,8 @@
 # package(name:path:traits:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Adds a local dependency to a named package located at the path and with an optional set of traits you provide.
 
@@ -30,11 +31,12 @@ Swift Package Manager uses the package dependency as-is and doesn’t perform an
 
 ## See Also
 
-- [static func package(name: String, path: String) -> Package.Dependency](package/dependency/package(name:path:).md)
+### Creating a local dependency
+- [static func package(name: String, path: String) -> Package.Dependency](./package%28name,path%29.md)
   Adds a local dependency to a named package located at the path you provide.
-- [static func package(path: String) -> Package.Dependency](package/dependency/package(path:).md)
+- [static func package(path: String) -> Package.Dependency](./package%28path%29.md)
   Adds a local dependency to a package located at the path you provide.
-- [static func package(path: String, traits: Set<Package.Dependency.Trait>) -> Package.Dependency](package/dependency/package(path:traits:).md)
+- [static func package(path: String, traits: Set<Package.Dependency.Trait>) -> Package.Dependency](./package%28path,traits%29.md)
   Adds a local dependency to a package located at the path and with an optional set of traits you provide.
 
 

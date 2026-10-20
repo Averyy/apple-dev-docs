@@ -1,11 +1,12 @@
 # MutableCollection Implementations
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: API Collection
 
 ## Topics
 
 ### Structures
-- [Transcript.HistoryView.Index](transcript/historyview/index.md)
+- [Transcript.HistoryView.Index](./index.md)
   A position of an entry within a history view.
 
 

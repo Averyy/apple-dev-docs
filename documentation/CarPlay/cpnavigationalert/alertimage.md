@@ -1,7 +1,8 @@
 # alertImage
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -13,6 +14,10 @@
 ```swift
 @NSCopying
 var alertImage: UIImage? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) UIImage * alertImage;
 ```
 
 

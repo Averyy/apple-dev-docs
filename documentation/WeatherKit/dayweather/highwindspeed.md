@@ -1,7 +1,8 @@
 # highWindSpeed
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum sustained wind speed.
 

@@ -1,7 +1,8 @@
 # MTLTextureSparseTier.tierNone
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the texture is not sparse.
 
@@ -17,6 +18,10 @@ Indicates that the texture is not sparse.
 
 ```swift
 case tierNone
+```
+
+```c
+MTLTextureSparseTierNone
 ```
 
 

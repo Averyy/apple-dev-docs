@@ -1,7 +1,8 @@
 # contactResolver
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A custom type you use to identify the owner of your app’s data.
 
@@ -22,7 +23,7 @@ var contactResolver: (any ContactResolver)?
 
 Use this property to provide additional context about the person using your app. The model uses this information to help resolve first-person pronouns in prompts that indicate ownership of a particular data item. Provide any information about the person that makes sense for your app. For example, a communications app might include the person’s name and the phone number or email associated with their account.
 
-For information about how to create a contact resolver, see [`Making your indexed content available to Foundation Models`](making-your-indexed-content-available-to-foundation-models.md).
+For information about how to create a contact resolver, see [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md).
 
 
 ---

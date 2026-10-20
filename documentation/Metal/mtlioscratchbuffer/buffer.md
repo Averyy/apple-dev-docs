@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Metal buffer that serves as scratch memory for an input/output command queue.
@@ -18,6 +19,10 @@ A Metal buffer that serves as scratch memory for an input/output command queue.
 
 ```swift
 var buffer: any MTLBuffer { get }
+```
+
+```objc
+@property (readonly) id<MTLBuffer> buffer;
 ```
 
 

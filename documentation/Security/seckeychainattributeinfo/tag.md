@@ -1,7 +1,8 @@
 # tag
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A pointer to the first attribute tag in the array.
 
@@ -12,6 +13,10 @@ A pointer to the first attribute tag in the array.
 
 ```swift
 var tag: UnsafeMutablePointer<UInt32>
+```
+
+```c
+UInt32 * tag;
 ```
 
 

@@ -1,17 +1,22 @@
 # flushGraphics()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Forces any buffered operations or data to be sent to the graphics context’s destination.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func flushGraphics()
+```
+
+```objc
+- (void) flushGraphics;
 ```
 
 #### Discussion

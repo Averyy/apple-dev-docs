@@ -1,7 +1,8 @@
 # pinBypassed
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the consumer bypassed the PIN entry.
 
@@ -22,7 +23,8 @@ When the framework sets this property to `false`, the consumer didn’t bypass t
 
 ## See Also
 
-- [let isPINFallback: Bool](paymentcardreadresult/ispinfallback.md)
+### Getting the PIN status
+- [let isPINFallback: Bool](./ispinfallback.md)
   A Boolean value that indicates whether the PIN Fallback occurred.
 
 

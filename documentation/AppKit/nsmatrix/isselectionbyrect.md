@@ -1,12 +1,13 @@
 # isSelectionByRect
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean that indicates whether the user can select a rectangle of cells in the receiver by dragging the cursor.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,23 @@ A Boolean that indicates whether the user can select a rectangle of cells in the
 var isSelectionByRect: Bool { get set }
 ```
 
+```objc
+@property (getter=isSelectionByRect) BOOL selectionByRect;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the matrix allows the user to select a rectangle of cells by dragging. When the value of this property is [`false`](https://developer.apple.com/documentation/swift/false), selection in the matrix is on a row-by-row basis. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](../../Swift/true.md), the matrix allows the user to select a rectangle of cells by dragging. When the value of this property is [`false`](../../Swift/false.md), selection in the matrix is on a row-by-row basis. The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func setSelectionFrom(Int, to: Int, anchor: Int, highlight: Bool)](nsmatrix/setselectionfrom(_:to:anchor:highlight:).md)
+### Related Documentation
+- [func setSelectionFrom(Int, to: Int, anchor: Int, highlight: Bool)](./setselectionfrom%28_,to,anchor,highlight%29.md)
   Programmatically selects a range of cells.
-- [var mode: NSMatrix.Mode](nsmatrix/mode-swift.property.md)
+### Configuring the Matrix Object
+- [var mode: NSMatrix.Mode](./mode-swift.property.md)
   The selection mode of the receiver.
-- [var allowsEmptySelection: Bool](nsmatrix/allowsemptyselection.md)
+- [var allowsEmptySelection: Bool](./allowsemptyselection.md)
   A Boolean that indicates whether a radio-mode matrix supports an empty selection.
 
 

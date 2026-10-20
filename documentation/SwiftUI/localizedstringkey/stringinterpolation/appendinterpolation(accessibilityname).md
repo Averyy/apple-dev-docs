@@ -1,7 +1,8 @@
 # appendInterpolation(accessibilityName:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Appends a localized description of a color for accessibility to a string interpolation.
 

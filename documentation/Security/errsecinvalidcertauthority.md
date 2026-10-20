@@ -1,7 +1,8 @@
 # errSecInvalidCertAuthority
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate authority is not valid.
 
@@ -18,6 +19,10 @@ The certificate authority is not valid.
 
 ```swift
 var errSecInvalidCertAuthority: OSStatus { get }
+```
+
+```c
+errSecInvalidCertAuthority
 ```
 
 

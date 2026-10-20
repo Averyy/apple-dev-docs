@@ -1,7 +1,8 @@
 # UIDocumentBrowserViewController.ImportMode.move
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A mode indicating that the file should be moved to its new location (the original file should be deleted).
 
@@ -17,15 +18,20 @@ A mode indicating that the file should be moved to its new location (the origina
 case move
 ```
 
+```c
+UIDocumentBrowserImportModeMove
+```
+
 ## Mentions
 
-- [Customizing the document browser](customizing-the-browser.md)
+- [Customizing the document browser](../../customizing-the-browser.md)
 
 ## See Also
 
-- [UIDocumentBrowserViewController.ImportMode.copy](uidocumentbrowserviewcontroller/importmode/copy.md)
+### Constants
+- [UIDocumentBrowserViewController.ImportMode.copy](./copy.md)
   A mode indicating that the file should be copied into its new location (the original file is left unchanged).
-- [UIDocumentBrowserViewController.ImportMode.none](uidocumentbrowserviewcontroller/importmode/none.md)
+- [UIDocumentBrowserViewController.ImportMode.none](./none.md)
   A mode indicating that the document can’t be imported.
 
 

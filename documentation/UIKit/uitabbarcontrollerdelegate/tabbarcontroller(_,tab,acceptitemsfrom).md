@@ -1,7 +1,8 @@
 # tabBarController(_:tab:acceptItemsFrom:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the delegate to perform a drop into the specified @c tab from the specified session.
 
@@ -17,9 +18,13 @@ Notifies the delegate to perform a drop into the specified @c tab from the speci
 optional func tabBarController(_ tabBarController: UITabBarController, tab: UITab, acceptItemsFrom session: any UIDropSession)
 ```
 
+```objc
+- (void) tabBarController:(UITabBarController *) tabBarController tab:(UITab *) tab acceptItemsFromDropSession:(id<UIDropSession>) session;
+```
+
 ## Mentions
 
-- [Elevating your iPad app with a tab bar and sidebar](elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
+- [Elevating your iPad app with a tab bar and sidebar](../elevating-your-ipad-app-with-a-tab-bar-and-sidebar.md)
 
 #### Discussion
 

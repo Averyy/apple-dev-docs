@@ -1,7 +1,8 @@
 # webView(_:requestDeviceOrientationAndMotionPermissionFor:initiatedByFrame:decisionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether a web resource, which the security origin object describes, can access the device’s orientation and motion.
 
@@ -17,9 +18,13 @@ Determines whether a web resource, which the security origin object describes, c
 optional func webView(_ webView: WKWebView, requestDeviceOrientationAndMotionPermissionFor origin: WKSecurityOrigin, initiatedByFrame frame: WKFrameInfo, decisionHandler: @escaping @MainActor @Sendable (WKPermissionDecision) -> Void)
 ```
 
+```objc
+- (void) webView:(WKWebView *) webView requestDeviceOrientationAndMotionPermissionForOrigin:(WKSecurityOrigin *) origin initiatedByFrame:(WKFrameInfo *) frame decisionHandler:(void (^)(enum WKPermissionDecision)) decisionHandler;
+```
+
 #### Discussion
 
-If you don’t implement this method in your delegate, the system returns [`WKPermissionDecision.prompt`](wkpermissiondecision/prompt.md).
+If you don’t implement this method in your delegate, the system returns [`WKPermissionDecision.prompt`](../wkpermissiondecision/prompt.md).
 
 ## Parameters
 
@@ -30,11 +35,12 @@ If you don’t implement this method in your delegate, the system returns [`WKPe
 
 ## See Also
 
-- [func webView(WKWebView, requestMediaCapturePermissionFor: WKSecurityOrigin, initiatedByFrame: WKFrameInfo, type: WKMediaCaptureType, decisionHandler: (WKPermissionDecision) -> Void)](wkuidelegate/webview(_:requestmediacapturepermissionfor:initiatedbyframe:type:decisionhandler:).md)
+### Requesting permissions
+- [func webView(WKWebView, requestMediaCapturePermissionFor: WKSecurityOrigin, initiatedByFrame: WKFrameInfo, type: WKMediaCaptureType, decisionHandler: (WKPermissionDecision) -> Void)](./webview%28_,requestmediacapturepermissionfor,initiatedbyframe,type,decisionhandler%29.md)
   Determines whether a web resource, which the security origin object describes, can access to the device’s microphone audio and camera video.
-- [enum WKPermissionDecision](wkpermissiondecision.md)
+- [enum WKPermissionDecision](../wkpermissiondecision.md)
   An enumeration of possible permission decisions for device resource access.
-- [enum WKMediaCaptureType](wkmediacapturetype.md)
+- [enum WKMediaCaptureType](../wkmediacapturetype.md)
   An enumeration listing the types of media devices that can capture audio, video, or both.
 
 

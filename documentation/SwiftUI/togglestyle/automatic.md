@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default toggle style.
 
@@ -21,9 +22,11 @@ The default toggle style.
 @export(implementation) @preconcurrency static var automatic: DefaultToggleStyle { get }
 ```
 
+Available when `Self` is `DefaultToggleStyle`.
+
 #### Discussion
 
-Use this [`ToggleStyle`](togglestyle.md) to let SwiftUI pick a suitable style for the current platform and context. Toggles use the `automatic` style by default, but you might need to set it explicitly using the [`toggleStyle(_:)`](view/togglestyle(_:).md) modifier to override another style in the environment. For example, you can request automatic styling for a toggle in an [`HStack`](hstack.md) that’s otherwise configured to use the [`button`](togglestyle/button.md) style:
+Use this [`ToggleStyle`](../togglestyle.md) to let SwiftUI pick a suitable style for the current platform and context. Toggles use the `automatic` style by default, but you might need to set it explicitly using the [`toggleStyle(_:)`](../view/togglestyle%28_%29.md) modifier to override another style in the environment. For example, you can request automatic styling for a toggle in an [`HStack`](../hstack.md) that’s otherwise configured to use the [`button`](./button.md) style:
 
 ```swift
 HStack {
@@ -42,18 +45,18 @@ HStack {
 .toggleStyle(.button) // Use button style for toggles in the stack.
 ```
 
-##### Platform Defaults
+##### Platform defaults
 
 The `automatic` style produces an appearance that varies by platform, using the following styles in most contexts:
 
 | Platform | Default style |
 | --- | --- |
-| iOS, iPadOS | [`switch`](togglestyle/switch.md) |
-| macOS | [`checkbox`](togglestyle/checkbox.md) |
-| tvOS | [`switch`](togglestyle/switch.md) |
-| watchOS | [`switch`](togglestyle/switch.md) |
+| iOS, iPadOS | [`switch`](./switch.md) |
+| macOS | [`checkbox`](./checkbox.md) |
+| tvOS | [`switch`](./switch.md) |
+| watchOS | [`switch`](./switch.md) |
 
-The default style for tvOS behaves like a button. However, unlike the [`switch`](togglestyle/switch.md) style that’s on other platforms, the tvOS toggle takes as much horizontal space as its parent offers, and displays both the toggle’s label and a text field that indicates the toggle’s state. You typically collect tvOS toggles into a [`List`](list.md):
+The default style for tvOS behaves like a button. However, unlike the [`switch`](./switch.md) style that’s on other platforms, the tvOS toggle takes as much horizontal space as its parent offers, and displays both the toggle’s label and a text field that indicates the toggle’s state. You typically collect tvOS toggles into a [`List`](../list.md):
 
 ```swift
 List {
@@ -63,31 +66,38 @@ List {
 }
 ```
 
-![A screenshot of three buttons labeled Show Lyrics, Shuffle, and](/images/com.apple.SwiftUI/ToggleStyle-automatic-2-tvOS@2x.png)
+![A screenshot of three buttons labeled Show Lyrics, Shuffle, and](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ToggleStyle-automatic-2-tvOS@2x.png)
 
-##### Contextual Defaults
+##### Contextual defaults
 
 A toggle’s automatic appearance varies in certain contexts:
 
-- A toggle that appears as part of the content that you provide to one of the toolbar modifiers, like [`toolbar(content:)`](view/toolbar(content:).md), uses the [`button`](togglestyle/button.md) style by default.
-- A toggle in a [`Menu`](menu.md) uses a style that you can’t create explicitly: ```swift
-Menu("Playback") {
-    Toggle("Show Lyrics", isOn: $isShowingLyrics)
-    Toggle("Shuffle", isOn: $isShuffling)
-    Toggle("Repeat", isOn: $isRepeating)
-}
-``` SwiftUI shows the toggle’s label with a checkmark that appears only in the `on` state: | Platform | Appearance |
-| --- | --- |
-| iOS, iPadOS | ![A screenshot of a Playback menu in iOS showing three menu items with the labels Repeat, Shuffle, and Show Lyrics. The shuffle item has a checkmark to its left, while the other two items have a blank space to their left.](/images/com.apple.SwiftUI/ToggleStyle-automatic-1-iOS@2x.png) |
-| macOS | ![A screenshot of a Playback menu in macOS showing three menu items with the labels Repeat, Shuffle, and Show Lyrics. The shuffle item has a checkmark to its left, while the other two items have a blank space to their left.](/images/com.apple.SwiftUI/ToggleStyle-automatic-1-macOS@2x.png) |
+- A toggle that appears as part of the content that you provide to one of the toolbar modifiers, like [`toolbar(content:)`](../view/toolbar%28content%29.md), uses the [`button`](./button.md) style by default.
+- A toggle in a [`Menu`](../menu.md) uses a style that you can’t create explicitly:
+
+  ```swift
+  Menu("Playback") {
+      Toggle("Show Lyrics", isOn: $isShowingLyrics)
+      Toggle("Shuffle", isOn: $isShuffling)
+      Toggle("Repeat", isOn: $isRepeating)
+  }
+  ```
+
+  SwiftUI shows the toggle’s label with a checkmark that appears only in the `on` state:
+
+  | Platform | Appearance |
+  | --- | --- |
+  | iOS, iPadOS | ![A screenshot of a Playback menu in iOS showing three menu items with the labels Repeat, Shuffle, and Show Lyrics. The shuffle item has a checkmark to its left, while the other two items have a blank space to their left.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ToggleStyle-automatic-1-iOS@2x.png) |
+  | macOS | ![A screenshot of a Playback menu in macOS showing three menu items with the labels Repeat, Shuffle, and Show Lyrics. The shuffle item has a checkmark to its left, while the other two items have a blank space to their left.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/ToggleStyle-automatic-1-macOS@2x.png) |
 
 ## See Also
 
-- [static var button: ButtonToggleStyle](togglestyle/button.md)
+### Getting built-in toggle styles
+- [static var button: ButtonToggleStyle](./button.md)
   A toggle style that displays as a button with its label as the title.
-- [static var checkbox: CheckboxToggleStyle](togglestyle/checkbox.md)
+- [static var checkbox: CheckboxToggleStyle](./checkbox.md)
   A toggle style that displays a checkbox followed by its label.
-- [static var `switch`: SwitchToggleStyle](togglestyle/switch.md)
+- [static var `switch`: SwitchToggleStyle](./switch.md)
   A toggle style that displays a leading label and a trailing switch.
 
 

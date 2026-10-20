@@ -1,14 +1,15 @@
 # kFrozen
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 kFrozen = 0x20
 ```
 

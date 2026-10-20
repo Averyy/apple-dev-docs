@@ -1,7 +1,8 @@
 # streamTask(withHostName:port:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a task that establishes a bidirectional TCP/IP connection to a specified hostname and port.
 
@@ -20,13 +21,17 @@ Creates a task that establishes a bidirectional TCP/IP connection to a specified
 func streamTask(withHostName hostname: String, port: Int) -> URLSessionStreamTask
 ```
 
+```objc
+- (NSURLSessionStreamTask *) streamTaskWithHostName:(NSString *) hostname port:(NSInteger) port;
+```
+
 #### Return Value
 
 The new session stream task.
 
 #### Discussion
 
-After you create the task, you must start it by calling its [`resume()`](urlsessiontask/resume().md) method.
+After you create the task, you must start it by calling its [`resume()`](../urlsessiontask/resume%28%29.md) method.
 
 ## Parameters
 
@@ -35,11 +40,12 @@ After you create the task, you must start it by calling its [`resume()`](urlsess
 
 ## See Also
 
-- [func streamTask(with: NetService) -> URLSessionStreamTask](urlsession/streamtask(with:).md)
+### Adding stream tasks to a session
+- [func streamTask(with: NetService) -> URLSessionStreamTask](./streamtask%28with%29.md)
   Creates a task that establishes a bidirectional TCP/IP connection using a specified network service.
-- [class URLSessionStreamTask](urlsessionstreamtask.md)
+- [class URLSessionStreamTask](../urlsessionstreamtask.md)
   A URL session task that is stream-based.
-- [protocol URLSessionStreamDelegate](urlsessionstreamdelegate.md)
+- [protocol URLSessionStreamDelegate](../urlsessionstreamdelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to stream tasks.
 
 

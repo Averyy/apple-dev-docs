@@ -1,7 +1,8 @@
 # trackingState
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Tracking state of this anchor
 
@@ -17,15 +18,16 @@ var trackingState: DeviceAnchor.TrackingState { get }
 
 ## See Also
 
-- [var originFromAnchorTransform: simd_float4x4](deviceanchor/originfromanchortransform.md)
+### Inspecting a device anchor
+- [var originFromAnchorTransform: simd_float4x4](./originfromanchortransform.md)
   The transform from the device to the origin coordinate system.
-- [DeviceAnchor.TrackingState](deviceanchor/trackingstate-swift.enum.md)
+- [DeviceAnchor.TrackingState](./trackingstate-swift.enum.md)
   Values that describe the tracking state of a device anchor.
-- [var isTracked: Bool](deviceanchor/istracked.md)
+- [var isTracked: Bool](./istracked.md)
   A Boolean value that indicates whether ARKit is tracking the device.
-- [var description: String](deviceanchor/description.md)
+- [var description: String](./description.md)
   A textual representation of this anchor.
-- [var id: UUID](deviceanchor/id.md)
+- [var id: UUID](./id.md)
   The unique identifier of this anchor.
 
 

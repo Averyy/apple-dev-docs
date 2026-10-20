@@ -1,7 +1,8 @@
 # fillColor
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fill color to use for the path.
 
@@ -15,26 +16,48 @@ The fill color to use for the path.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```swift
+var fillColor: UIColor? { get set }
+```
+
+*macOS*
+
 ```swift
 var fillColor: NSColor? { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (strong, nullable) UIColor * fillColor;
+```
+
+*macOS*
+
+```objc
+@property (strong, nullable) NSColor * fillColor;
+```
+
 ## See Also
 
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
-- [var strokeColor: UIColor?](mkoverlaypathrenderer/strokecolor.md)
+### Related Documentation
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+### Accessing the drawing attributes
+- [var strokeColor: UIColor?](./strokecolor.md)
   The stroke color to use for the path.
-- [var lineWidth: CGFloat](mkoverlaypathrenderer/linewidth.md)
+- [var lineWidth: CGFloat](./linewidth.md)
   The stroke width to use for the path.
-- [var lineJoin: CGLineJoin](mkoverlaypathrenderer/linejoin.md)
+- [var lineJoin: CGLineJoin](./linejoin.md)
   The line join style to apply to the corners of the path.
-- [var lineCap: CGLineCap](mkoverlaypathrenderer/linecap.md)
+- [var lineCap: CGLineCap](./linecap.md)
   The line cap style to apply to the open ends of the path.
-- [var miterLimit: CGFloat](mkoverlaypathrenderer/miterlimit.md)
+- [var miterLimit: CGFloat](./miterlimit.md)
   The limiting value that helps avoid spikes at junctions between connected line segments.
-- [var lineDashPhase: CGFloat](mkoverlaypathrenderer/linedashphase.md)
+- [var lineDashPhase: CGFloat](./linedashphase.md)
   The offset (in points) at which to start drawing the dash pattern.
-- [var lineDashPattern: [NSNumber]?](mkoverlaypathrenderer/linedashpattern.md)
+- [var lineDashPattern: [NSNumber]?](./linedashpattern.md)
   An array of numbers specifying the dash pattern to use for the path.
 
 

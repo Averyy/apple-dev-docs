@@ -1,7 +1,8 @@
 # unpack(columnNamed:valueTypes:indexSubset:keySubset:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new data table with additional columns that contain the unpacked collections in the given column.
 
@@ -25,11 +26,11 @@ A new data table.
 
 #### Discussion
 
-This function performs the inverse of [`pack(columnsNamed:to:type:filling:)`](mldatatable/pack(columnsnamed:to:type:filling:).md).
+This function performs the inverse of [`pack(columnsNamed:to:type:filling:)`](./pack%28columnsnamed,to,type,filling%29.md).
 
 ## Parameters
 
-- `columnNamed`: The name of the column to unpack. The underlying type of the column must be either [`MLDataValue.SequenceType`](mldatavalue/sequencetype.md) or [`MLDataValue.DictionaryType`](mldatavalue/dictionarytype.md).
+- `columnNamed`: The name of the column to unpack. The underlying type of the column must be either [`MLDataValue.SequenceType`](../mldatavalue/sequencetype.md) or [`MLDataValue.DictionaryType`](../mldatavalue/dictionarytype.md).
 - `valueTypes`: An array of the underlying types for the new, unpacked columns. If `nil`, the method infers the underlying types in the sequence or dictionary.
 - `indexSubset`: The subset of indicies to unpack from a specified sequence-typed column. If `nil`, the method unpacks all indicies.
 - `keySubset`: The subset of keys to unpack from a specified dictionary-typed column. If `nil`, the method unpacks all keys.

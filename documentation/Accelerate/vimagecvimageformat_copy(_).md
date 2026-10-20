@@ -1,7 +1,8 @@
 # vImageCVImageFormat_Copy(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a mutable copy of an immutable Core Video image format.
 
@@ -20,9 +21,13 @@ Returns a mutable copy of an immutable Core Video image format.
 func vImageCVImageFormat_Copy(_ format: vImageConstCVImageFormat) -> Unmanaged<vImageCVImageFormat>!
 ```
 
+```c
+vImageCVImageFormatRefvImageCVImageFormat_Copy(vImageConstCVImageFormatRef format);
+```
+
 #### Return Value
 
-A [`vImageCVImageFormat`](vimagecvimageformat.md) instance.
+A [`vImageCVImageFormat`](./vimagecvimageformat.md) instance.
 
 #### Discussion
 

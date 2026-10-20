@@ -1,7 +1,8 @@
 # PopularityTopChartSongs.Rankings
 
 **Framework**: Apple Music Feed  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A song’s ranking in a popularity chart.
 
@@ -10,7 +11,7 @@ A song’s ranking in a popularity chart.
 
 ## Declaration
 
-```swift
+```
 object PopularityTopChartSongs.Rankings
 ```
 
@@ -21,7 +22,8 @@ object PopularityTopChartSongs.Rankings
 
 ## See Also
 
-- [object PopularityTopChartSongs.Genre](popularitytopchartsongs/genre-data.dictionary.md)
+### Related objects
+- [object PopularityTopChartSongs.Genre](./genre-data.dictionary.md)
   A genre name and its structure.
 
 

@@ -1,7 +1,8 @@
 # enhancedStepHue(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func enhancedStepHue(with params: MTRColorControlClusterEnhancedStepHueParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func enhancedStepHue(with params: MTRColorControlClusterEnhancedStepHueParams) async throws
+```
+
+```objc
+- (void) enhancedStepHueWithParams:(MTRColorControlClusterEnhancedStepHueParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

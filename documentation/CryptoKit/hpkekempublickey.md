@@ -1,7 +1,8 @@
 # HPKEKEMPublicKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the public key in HPKE
 
@@ -24,18 +25,18 @@ protocol HPKEKEMPublicKey : HPKEPublicKeySerialization, KEMPublicKey
 ## Topics
 
 ### Associated Types
-- [associatedtype EphemeralPrivateKey : HPKEKEMPrivateKeyGeneration](hpkekempublickey/ephemeralprivatekey.md)
+- [associatedtype EphemeralPrivateKey : HPKEKEMPrivateKeyGeneration](./hpkekempublickey/ephemeralprivatekey.md)
   The type of the ephemeral private key.
 
 ## Relationships
 
 ### Inherits From
-- [HPKEPublicKeySerialization](hpkepublickeyserialization.md)
-- [KEMPublicKey](kempublickey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [HPKEPublicKeySerialization](./hpkepublickeyserialization.md)
+- [KEMPublicKey](./kempublickey.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [XWingMLKEM768X25519.PublicKey](xwingmlkem768x25519/publickey.md)
+- [XWingMLKEM768X25519.PublicKey](./xwingmlkem768x25519/publickey.md)
 
 
 ---

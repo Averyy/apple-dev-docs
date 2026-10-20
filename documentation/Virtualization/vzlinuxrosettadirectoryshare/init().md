@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Rosetta directory share, or returns an error if Rosetta isn’t installed.
 
@@ -14,9 +15,13 @@ Creates a new Rosetta directory share, or returns an error if Rosetta isn’t in
 init() throws
 ```
 
+```objc
+- (instancetype) initWithError:(NSError **) error;
+```
+
 #### Discussion
 
-Check the status of Rosetta by examining the [`availability`](vzlinuxrosettadirectoryshare/availability.md) class property before creating a new Rosetta directory share to ensure the capability is both supported and available on host Mac. For complete instructions on installing Rosetta see doc:running-intel-binaries-in-linux-vms-with-rosetta.
+Check the status of Rosetta by examining the [`availability`](./availability.md) class property before creating a new Rosetta directory share to ensure the capability is both supported and available on host Mac. For complete instructions on installing Rosetta see doc:running-intel-binaries-in-linux-vms-with-rosetta.
 
 
 ---

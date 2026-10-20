@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kAllPPDDomains: Int](kallppddomains.md)
-- [var kCUPSPPDDomain: Int](kcupsppddomain.md)
-- [var kLocalPPDDomain: Int](klocalppddomain.md)
-- [var kNetworkPPDDomain: Int](knetworkppddomain.md)
-- [var kSystemPPDDomain: Int](ksystemppddomain.md)
-- [var kUserPPDDomain: Int](kuserppddomain.md)
+- [var kAllPPDDomains: Int](../kallppddomains.md)
+- [var kCUPSPPDDomain: Int](../kcupsppddomain.md)
+- [var kLocalPPDDomain: Int](../klocalppddomain.md)
+- [var kNetworkPPDDomain: Int](../knetworkppddomain.md)
+- [var kSystemPPDDomain: Int](../ksystemppddomain.md)
+- [var kUserPPDDomain: Int](../kuserppddomain.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # borderKeyValues
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary that contains a deep copy of all border properties.
 
@@ -19,17 +20,22 @@ A dictionary that contains a deep copy of all border properties.
 var borderKeyValues: [AnyHashable : Any] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDictionary * borderKeyValues;
+```
+
 ## See Also
 
-- [var style: PDFBorderStyle](pdfborder/style.md)
+### Working with Border Styles and Characteristics
+- [var style: PDFBorderStyle](./style.md)
   Sets the border style.
-- [enum PDFBorderStyle](pdfborderstyle.md)
+- [enum PDFBorderStyle](../pdfborderstyle.md)
   PDF Kit annotation borders may have the following styles.
-- [var lineWidth: CGFloat](pdfborder/linewidth.md)
+- [var lineWidth: CGFloat](./linewidth.md)
   Sets the line width (in points) for the border.
-- [var dashPattern: [Any]?](pdfborder/dashpattern.md)
+- [var dashPattern: [Any]?](./dashpattern.md)
   Gets the dash pattern for the border as an array of NSNumber objects.
-- [struct PDFBorderKey](pdfborderkey.md)
+- [struct PDFBorderKey](../pdfborderkey.md)
 
 
 ---

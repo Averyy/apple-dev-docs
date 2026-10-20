@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var name: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * name;
 ```
 
 

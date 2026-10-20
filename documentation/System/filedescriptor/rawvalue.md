@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw C file handle.
 
@@ -22,7 +23,8 @@ let rawValue: CInt
 
 ## See Also
 
-- [init(rawValue: CInt)](filedescriptor/init(rawvalue:).md)
+### Creating a File Descriptor
+- [init(rawValue: CInt)](./init%28rawvalue%29.md)
   Creates a strongly-typed file handle from a raw C file handle.
 
 

@@ -1,7 +1,8 @@
 # subdivision(for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the subdivision representing the given region as a whole.
 
@@ -34,9 +35,10 @@ For example, this method returns a subdivision with the `uszzzz` identifier for 
 
 ## See Also
 
-- [init(String)](locale/subdivision-swift.struct/init(_:).md)
+### Creating a subdivision
+- [init(String)](./init%28_%29.md)
   Creates a sudivision from a Unicode identifier.
-- [init(stringLiteral: String)](locale/subdivision-swift.struct/init(stringliteral:).md)
+- [init(stringLiteral: String)](./init%28stringliteral%29.md)
   Creates a sudivision from a Unicode identifier as a string literal.
 
 

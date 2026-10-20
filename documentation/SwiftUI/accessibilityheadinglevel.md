@@ -1,7 +1,8 @@
 # AccessibilityHeadingLevel
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The hierarchy of a heading in relation to other headings.
 
@@ -25,47 +26,48 @@ enum AccessibilityHeadingLevel
 
 Assistive technologies can use this to improve a user’s navigation through multiple headings. When users navigate through top level headings they expect the content for each heading to be unrelated.
 
-For example, you can categorize a list of available products into sections, like Fruits and Vegetables. With only top level headings, this list requires no heading hierarchy, and you use the [`AccessibilityHeadingLevel.unspecified`](accessibilityheadinglevel/unspecified.md) heading level. On the other hand, if sections contain subsections, like if the Fruits section has subsections for varieties of Apples, Pears, and so on, you apply the [`AccessibilityHeadingLevel.h1`](accessibilityheadinglevel/h1.md) level to Fruits and Vegetables, and the [`AccessibilityHeadingLevel.h2`](accessibilityheadinglevel/h2.md) level to Apples and Pears.
+For example, you can categorize a list of available products into sections, like Fruits and Vegetables. With only top level headings, this list requires no heading hierarchy, and you use the [`AccessibilityHeadingLevel.unspecified`](./accessibilityheadinglevel/unspecified.md) heading level. On the other hand, if sections contain subsections, like if the Fruits section has subsections for varieties of Apples, Pears, and so on, you apply the [`AccessibilityHeadingLevel.h1`](./accessibilityheadinglevel/h1.md) level to Fruits and Vegetables, and the [`AccessibilityHeadingLevel.h2`](./accessibilityheadinglevel/h2.md) level to Apples and Pears.
 
-Except for [`AccessibilityHeadingLevel.h1`](accessibilityheadinglevel/h1.md), be sure to precede all leveled headings by another heading with a level that’s one less.
+Except for [`AccessibilityHeadingLevel.h1`](./accessibilityheadinglevel/h1.md), be sure to precede all leveled headings by another heading with a level that’s one less.
 
 ## Topics
 
 ### Getting the heading level
-- [AccessibilityHeadingLevel.h1](accessibilityheadinglevel/h1.md)
+- [AccessibilityHeadingLevel.h1](./accessibilityheadinglevel/h1.md)
   Level 1 heading.
-- [AccessibilityHeadingLevel.h2](accessibilityheadinglevel/h2.md)
+- [AccessibilityHeadingLevel.h2](./accessibilityheadinglevel/h2.md)
   Level 2 heading.
-- [AccessibilityHeadingLevel.h3](accessibilityheadinglevel/h3.md)
+- [AccessibilityHeadingLevel.h3](./accessibilityheadinglevel/h3.md)
   Level 3 heading.
-- [AccessibilityHeadingLevel.h4](accessibilityheadinglevel/h4.md)
+- [AccessibilityHeadingLevel.h4](./accessibilityheadinglevel/h4.md)
   Level 4 heading.
-- [AccessibilityHeadingLevel.h5](accessibilityheadinglevel/h5.md)
+- [AccessibilityHeadingLevel.h5](./accessibilityheadinglevel/h5.md)
   Level 5 heading.
-- [AccessibilityHeadingLevel.h6](accessibilityheadinglevel/h6.md)
+- [AccessibilityHeadingLevel.h6](./accessibilityheadinglevel/h6.md)
   Level 6 heading.
-- [AccessibilityHeadingLevel.unspecified](accessibilityheadinglevel/unspecified.md)
+- [AccessibilityHeadingLevel.unspecified](./accessibilityheadinglevel/unspecified.md)
   A heading without a hierarchy.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilitytextcontenttype(_:).md)
+### Describing content
+- [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilitytextcontenttype%28_%29.md)
   Sets an accessibility text content type.
-- [func accessibilityHeading(AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityheading(_:).md)
+- [func accessibilityHeading(AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityheading%28_%29.md)
   Sets the accessibility level of this heading.
-- [struct AccessibilityTextContentType](accessibilitytextcontenttype.md)
+- [struct AccessibilityTextContentType](./accessibilitytextcontenttype.md)
   Textual context that assistive technologies can use to improve the presentation of spoken text.
 
 

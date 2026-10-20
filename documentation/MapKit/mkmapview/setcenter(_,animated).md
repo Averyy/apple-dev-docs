@@ -1,7 +1,8 @@
 # setCenter(_:animated:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the center coordinate of the map, and optionally animates the change.
 
@@ -19,30 +20,35 @@ Changes the center coordinate of the map, and optionally animates the change.
 func setCenter(_ coordinate: CLLocationCoordinate2D, animated: Bool)
 ```
 
+```objc
+- (void) setCenterCoordinate:(CLLocationCoordinate2D) coordinate animated:(BOOL) animated;
+```
+
 #### Discussion
 
-Changing the center coordinate centers the map on the new coordinate without changing the current zoom level. It also updates the value in the [`region`](mkmapview/region.md) property to reflect the new center coordinate and the new span values needed to maintain the current zoom level.
+Changing the center coordinate centers the map on the new coordinate without changing the current zoom level. It also updates the value in the [`region`](./region.md) property to reflect the new center coordinate and the new span values needed to maintain the current zoom level.
 
 ## Parameters
 
 - `coordinate`: The new center coordinate for the map.
-- `animated`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if you want the map view to scroll to the new location or [`false`](https://developer.apple.com/documentation/swift/false) if you want the map to display the new location immediately.
+- `animated`: Specify [`true`](../../Swift/true.md) if you want the map view to scroll to the new location or [`false`](../../Swift/false.md) if you want the map to display the new location immediately.
 
 ## See Also
 
-- [var region: MKCoordinateRegion](mkmapview/region.md)
+### Manipulating the visible portion of the map
+- [var region: MKCoordinateRegion](./region.md)
   The area the map view displays.
-- [func setRegion(MKCoordinateRegion, animated: Bool)](mkmapview/setregion(_:animated:).md)
+- [func setRegion(MKCoordinateRegion, animated: Bool)](./setregion%28_,animated%29.md)
   Changes the currently visible region, and optionally animates the change.
-- [var centerCoordinate: CLLocationCoordinate2D](mkmapview/centercoordinate.md)
+- [var centerCoordinate: CLLocationCoordinate2D](./centercoordinate.md)
   The map coordinate at the center of the map view.
-- [func showAnnotations([any MKAnnotation], animated: Bool)](mkmapview/showannotations(_:animated:).md)
+- [func showAnnotations([any MKAnnotation], animated: Bool)](./showannotations%28_,animated%29.md)
   Sets the visible region so that the map displays the specified annotations.
-- [var visibleMapRect: MKMapRect](mkmapview/visiblemaprect.md)
+- [var visibleMapRect: MKMapRect](./visiblemaprect.md)
   The area visible in the map view.
-- [func setVisibleMapRect(MKMapRect, animated: Bool)](mkmapview/setvisiblemaprect(_:animated:).md)
+- [func setVisibleMapRect(MKMapRect, animated: Bool)](./setvisiblemaprect%28_,animated%29.md)
   Changes the currently visible portion of the map, and optionally animates the change.
-- [func setVisibleMapRect(MKMapRect, edgePadding: UIEdgeInsets, animated: Bool)](mkmapview/setvisiblemaprect(_:edgepadding:animated:).md)
+- [func setVisibleMapRect(MKMapRect, edgePadding: UIEdgeInsets, animated: Bool)](./setvisiblemaprect%28_,edgepadding,animated%29.md)
   Changes the currently visible portion of the map, allowing you to specify additional space around the edges.
 
 

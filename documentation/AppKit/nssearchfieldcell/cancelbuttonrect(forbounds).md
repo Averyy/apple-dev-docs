@@ -1,17 +1,22 @@
 # cancelButtonRect(forBounds:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the bounding rectangle for the cancel button cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func cancelButtonRect(forBounds rect: NSRect) -> NSRect
+```
+
+```objc
+- (NSRect) cancelButtonRectForBounds:(NSRect) rect;
 ```
 
 #### Return Value
@@ -28,9 +33,10 @@ Subclasses can override this method to return a new bounding rectangle for the c
 
 ## See Also
 
-- [func searchTextRect(forBounds: NSRect) -> NSRect](nssearchfieldcell/searchtextrect(forbounds:).md)
+### Custom layout
+- [func searchTextRect(forBounds: NSRect) -> NSRect](./searchtextrect%28forbounds%29.md)
   Modifies the bounding rectangle for the search-text field cell.
-- [func searchButtonRect(forBounds: NSRect) -> NSRect](nssearchfieldcell/searchbuttonrect(forbounds:).md)
+- [func searchButtonRect(forBounds: NSRect) -> NSRect](./searchbuttonrect%28forbounds%29.md)
   Modifies the bounding rectangle for the search button cell.
 
 

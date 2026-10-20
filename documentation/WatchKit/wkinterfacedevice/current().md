@@ -1,7 +1,8 @@
 # current()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared device object.
 
@@ -14,13 +15,18 @@ Returns the shared device object.
 class func current() -> WKInterfaceDevice
 ```
 
+```objc
++ (WKInterfaceDevice *) currentDevice;
+```
+
 #### Return Value
 
 The shared device object.
 
 ## See Also
 
-- [App Programming Guide for watchOS](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
+### Related Documentation
+- [App Programming Guide for watchOS](https://developer.apple.com/library/archive/documentation/General/Conceptual/WatchKitProgrammingGuide/index.html#//apple_ref/doc/uid/TP40014969)
 
 
 ---

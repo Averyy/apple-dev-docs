@@ -1,7 +1,8 @@
 # machPort
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Mach port used by the receiver, represented as an integer.
 
@@ -18,6 +19,10 @@ The Mach port used by the receiver, represented as an integer.
 
 ```swift
 var machPort: UInt32 { get }
+```
+
+```objc
+@property (readonly) uint32_t machPort;
 ```
 
 #### Discussion

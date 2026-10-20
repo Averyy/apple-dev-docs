@@ -1,7 +1,8 @@
 # Certificate.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Certificates resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Certificates resource.
 
 ## Declaration
 
-```swift
+```
 object Certificate.Attributes
 ```
 

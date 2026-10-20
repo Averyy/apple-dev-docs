@@ -1,7 +1,8 @@
 # bitsPerComponent
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Number of bits per component in each pixel.
 
@@ -10,7 +11,7 @@ Number of bits per component in each pixel.
 
 ## Declaration
 
-```swift
+```c
 UInt32 bitsPerComponent;
 ```
 

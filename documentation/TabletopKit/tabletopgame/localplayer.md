@@ -1,7 +1,8 @@
 # localPlayer
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The player who runs this tabletop game instance on their device.
 

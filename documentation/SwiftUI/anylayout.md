@@ -1,7 +1,8 @@
 # AnyLayout
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased instance of the layout protocol.
 
@@ -41,31 +42,32 @@ struct DynamicLayoutExample: View {
 }
 ```
 
-The types that you use with `AnyLayout` must conform to the [`Layout`](layout.md) protocol. The above example chooses between the [`HStackLayout`](hstacklayout.md) and [`VStackLayout`](vstacklayout.md) types, which are versions of the built-in [`HStack`](hstack.md) and [`VStack`](vstack.md) containers that conform to the protocol. You can also use custom layout types that you define.
+The types that you use with `AnyLayout` must conform to the [`Layout`](./layout.md) protocol. The above example chooses between the [`HStackLayout`](./hstacklayout.md) and [`VStackLayout`](./vstacklayout.md) types, which are versions of the built-in [`HStack`](./hstack.md) and [`VStack`](./vstack.md) containers that conform to the protocol. You can also use custom layout types that you define.
 
 ## Topics
 
 ### Creating the layout
-- [init<L>(L)](anylayout/init(_:).md)
+- [init<L>(L)](./anylayout/init%28_%29.md)
   Creates a type-erased value that wraps the specified layout.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [Layout](layout.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Animatable](./animatable.md)
+- [Layout](./layout.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HStackLayout](hstacklayout.md)
+### Transitioning between layout types
+- [struct HStackLayout](./hstacklayout.md)
   A horizontal container that you can use in conditional layouts.
-- [struct VStackLayout](vstacklayout.md)
+- [struct VStackLayout](./vstacklayout.md)
   A vertical container that you can use in conditional layouts.
-- [struct ZStackLayout](zstacklayout.md)
+- [struct ZStackLayout](./zstacklayout.md)
   An overlaying container that you can use in conditional layouts.
-- [struct GridLayout](gridlayout.md)
+- [struct GridLayout](./gridlayout.md)
   A grid that you can use in conditional layouts.
 
 

@@ -1,7 +1,8 @@
 # EABluetoothAccessoryPickerErrorDomain
 
 **Framework**: External Accessory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for errors passed to a Bluetooth picker completion block.
 
@@ -19,15 +20,20 @@ The domain for errors passed to a Bluetooth picker completion block.
 let EABluetoothAccessoryPickerErrorDomain: String
 ```
 
+```c
+extern NSString * const EABluetoothAccessoryPickerErrorDomain;
+```
+
 ## See Also
 
-- [func showBluetoothAccessoryPicker(withNameFilter: NSPredicate?, completion: (((any Error)?) -> Void)?)](eaaccessorymanager/showbluetoothaccessorypicker(withnamefilter:completion:).md)
+### Presenting the Bluetooth Picker
+- [func showBluetoothAccessoryPicker(withNameFilter: NSPredicate?, completion: (((any Error)?) -> Void)?)](./eaaccessorymanager/showbluetoothaccessorypicker%28withnamefilter,completion%29.md)
   Displays an alert that allows the user to pair the device with a Bluetooth accessory.
-- [typealias EABluetoothAccessoryPickerCompletion](eabluetoothaccessorypickercompletion.md)
+- [typealias EABluetoothAccessoryPickerCompletion](./eabluetoothaccessorypickercompletion.md)
   The completion block for the Bluetooth picker.
-- [struct EABluetoothAccessoryPickerError](eabluetoothaccessorypickererror.md)
+- [struct EABluetoothAccessoryPickerError](./eabluetoothaccessorypickererror.md)
   Error codes returned by the Bluetooth accessory picker.
-- [EABluetoothAccessoryPickerError.Code](eabluetoothaccessorypickererror/code.md)
+- [EABluetoothAccessoryPickerError.Code](./eabluetoothaccessorypickererror/code.md)
   The error codes that may be passed in an error object for the Bluetooth picker completion block.
 
 

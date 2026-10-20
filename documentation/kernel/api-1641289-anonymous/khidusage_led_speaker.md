@@ -1,14 +1,15 @@
 # kHIDUsage_LED_Speaker
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_LED_Speaker = 0x1E
 ```
 

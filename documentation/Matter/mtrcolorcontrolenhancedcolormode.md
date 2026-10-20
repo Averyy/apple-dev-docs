@@ -1,7 +1,8 @@
 # MTRColorControlEnhancedColorMode
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.2+
@@ -18,25 +19,29 @@
 enum MTRColorControlEnhancedColorMode
 ```
 
+```c
+enum MTRColorControlEnhancedColorMode : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRColorControlEnhancedColorMode.colorTemperatureMireds](mtrcolorcontrolenhancedcolormode/colortemperaturemireds.md)
-- [MTRColorControlEnhancedColorMode.currentHueAndCurrentSaturation](mtrcolorcontrolenhancedcolormode/currenthueandcurrentsaturation.md)
-- [MTRColorControlEnhancedColorMode.currentXAndCurrentY](mtrcolorcontrolenhancedcolormode/currentxandcurrenty.md)
-- [MTRColorControlEnhancedColorMode.enhancedCurrentHueAndCurrentSaturation](mtrcolorcontrolenhancedcolormode/enhancedcurrenthueandcurrentsaturation.md)
+- [MTRColorControlEnhancedColorMode.colorTemperatureMireds](./mtrcolorcontrolenhancedcolormode/colortemperaturemireds.md)
+- [MTRColorControlEnhancedColorMode.currentHueAndCurrentSaturation](./mtrcolorcontrolenhancedcolormode/currenthueandcurrentsaturation.md)
+- [MTRColorControlEnhancedColorMode.currentXAndCurrentY](./mtrcolorcontrolenhancedcolormode/currentxandcurrenty.md)
+- [MTRColorControlEnhancedColorMode.enhancedCurrentHueAndCurrentSaturation](./mtrcolorcontrolenhancedcolormode/enhancedcurrenthueandcurrentsaturation.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrcolorcontrolenhancedcolormode/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrcolorcontrolenhancedcolormode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

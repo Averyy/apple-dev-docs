@@ -1,7 +1,8 @@
 # result(actionButtonIntent:activityIdentifier:dialog:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a result container with a follow-on intent, an identifier, and a dialog.
 
@@ -11,7 +12,7 @@ Creates a result container with a follow-on intent, an identifier, and a dialog.
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 - watchOS 10.2+
 
 ## Declaration

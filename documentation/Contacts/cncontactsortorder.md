@@ -1,7 +1,8 @@
 # CNContactSortOrder
 
 **Framework**: Contacts  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Indicates the sorting order for contacts.
 
@@ -19,41 +20,46 @@ Indicates the sorting order for contacts.
 enum CNContactSortOrder
 ```
 
+```c
+enum CNContactSortOrder : NSInteger;
+```
+
 #### Overview
 
-The value [`CNContactSortOrder.userDefault`](cncontactsortorder/userdefault.md) is the user’s preferred sort order.
+The value [`CNContactSortOrder.userDefault`](./cncontactsortorder/userdefault.md) is the user’s preferred sort order.
 
 ## Topics
 
 ### Sort Orders
-- [CNContactSortOrder.none](cncontactsortorder/none.md)
+- [CNContactSortOrder.none](./cncontactsortorder/none.md)
   No sorting order.
-- [CNContactSortOrder.userDefault](cncontactsortorder/userdefault.md)
+- [CNContactSortOrder.userDefault](./cncontactsortorder/userdefault.md)
   The user’s default sorting order.
-- [CNContactSortOrder.givenName](cncontactsortorder/givenname.md)
+- [CNContactSortOrder.givenName](./cncontactsortorder/givenname.md)
   Sorting contacts by given name.
-- [CNContactSortOrder.familyName](cncontactsortorder/familyname.md)
+- [CNContactSortOrder.familyName](./cncontactsortorder/familyname.md)
   Sorting contacts by family name.
 ### Initializers
-- [init?(rawValue: Int)](cncontactsortorder/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cncontactsortorder/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func descriptorForAllComparatorKeys() -> any CNKeyDescriptor](cncontact/descriptorforallcomparatorkeys.md)
+### Comparing Contacts
+- [class func descriptorForAllComparatorKeys() -> any CNKeyDescriptor](./cncontact/descriptorforallcomparatorkeys%28%29.md)
   Fetches all the keys required for the contact sort comparator.
-- [class func comparator(forNameSortOrder: CNContactSortOrder) -> Comparator](cncontact/comparator(fornamesortorder:).md)
+- [class func comparator(forNameSortOrder: CNContactSortOrder) -> Comparator](./cncontact/comparator%28fornamesortorder%29.md)
   Returns a comparator to sort contacts with the specified order.
-- [func isUnifiedWithContact(withIdentifier: String) -> Bool](cncontact/isunifiedwithcontact(withidentifier:).md)
+- [func isUnifiedWithContact(withIdentifier: String) -> Bool](./cncontact/isunifiedwithcontact%28withidentifier%29.md)
   Returns a Boolean indicating whether the current contact is a unified contact and includes a contact with the specified identifier.
 
 

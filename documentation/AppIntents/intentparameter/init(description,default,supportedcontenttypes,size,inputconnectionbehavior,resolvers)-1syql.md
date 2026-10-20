@@ -1,7 +1,8 @@
 # init(description:default:supportedContentTypes:size:inputConnectionBehavior:resolvers:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an app intent parameter for an array with a specified size.
 
@@ -19,6 +20,8 @@ Creates an app intent parameter for an array with a specified size.
 ```swift
 convenience init<Spec>(description: LocalizedStringResource? = nil, default defaultValue: Value.UnwrappedType? = nil, supportedContentTypes: [UTType]? = nil, size: IntentCollectionSize, inputConnectionBehavior: InputConnectionBehavior = .default, @ResolverSpecificationBuilder<Value.UnwrappedType> resolvers: @escaping () -> Spec) where Spec : ResolverSpecification
 ```
+
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, `Value.UnwrappedType` conforms to `Collection`, and `Value.ValueType` conforms to `FileEntity`.
 
 ## Parameters
 

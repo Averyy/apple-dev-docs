@@ -1,7 +1,8 @@
 # view(forRow:forComponent:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the view used by the picker view for a given row and component.
 
@@ -17,9 +18,13 @@ Returns the view used by the picker view for a given row and component.
 func view(forRow row: Int, forComponent component: Int) -> UIView?
 ```
 
+```objc
+- (UIView *) viewForRow:(NSInteger) row forComponent:(NSInteger) component;
+```
+
 #### Return Value
 
-The view provided by the delegate in the [`pickerView(_:viewForRow:forComponent:reusing:)`](uipickerviewdelegate/pickerview(_:viewforrow:forcomponent:reusing:).md) method. Returns `nil` if the specified row of the component is not visible or if the delegate does not implement p`ickerView:viewForRow:forComponent:reusingView:`.
+The view provided by the delegate in the [`pickerView(_:viewForRow:forComponent:reusing:)`](../uipickerviewdelegate/pickerview%28_,viewforrow,forcomponent,reusing%29.md) method. Returns `nil` if the specified row of the component is not visible or if the delegate does not implement p`ickerView:viewForRow:forComponent:reusingView:`.
 
 ## Parameters
 

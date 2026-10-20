@@ -1,17 +1,20 @@
 # init(domain:type:name:port:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the receiver for publishing a network service of type `type` at the socket location specified by `domain`, `name`, and `port`.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- macOS 10.2+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 2.0+ - Deprecated in 27.2
+- iPadOS 2.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.2
+- macOS 10.2+ - Deprecated in 27.2
+- tvOS 9.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use nw_connection_t or nw_listener_t in Network framework instead
 
 ## Declaration
 
@@ -19,9 +22,13 @@ Initializes the receiver for publishing a network service of type `type` at the 
 init(domain: String, type: String, name: String, port: Int32)
 ```
 
+```objc
+- (instancetype) initWithDomain:(NSString *) domain type:(NSString *) type name:(NSString *) name port:(int) port;
+```
+
 #### Discussion
 
-You use this method to create a service that you wish to publish on the network. Although you can also use this method to create a service you wish to resolve on the network, it is generally more appropriate to use the [`init(domain:type:name:)`](netservice/init(domain:type:name:).md) method instead.
+You use this method to create a service that you wish to publish on the network. Although you can also use this method to create a service you wish to resolve on the network, it is generally more appropriate to use the [`init(domain:type:name:)`](./init%28domain,type,name%29.md) method instead.
 
 When publishing a service, you must provide valid arguments in order to advertise your service correctly. If the host computer has access to multiple registration domains, you must create separate `NSNetService` objects for each domain. If you attempt to publish in a domain for which you do not have registration authority, your request may be denied.
 
@@ -31,14 +38,23 @@ This method is the designated initializer.
 
 ## Parameters
 
-- `domain`: The domain for the service. To use the default registration domains, pass in an empty string (`@""`). To limit registration to the local domain, use `@"local."`. You can also use a `NSNetServiceBrowser` object to obtain a list of possible domains in which you can publish your service.
-- `type`: The network service type. `type` must contain both the service type and transport layer information. To ensure that the mDNS responder searches for services, as opposed to hosts, prefix both the service name and transport layer name with an underscore character (”_”). For example, to search for an HTTP service on TCP, you would use the type string “`_http._tcp.`”. Note that the period character at the end of the string, which indicates that the domain name is an absolute name, is required.
+- `domain`: The domain for the service. To use the default registration domains, pass in an empty string (`@""`). To limit registration to the local domain, use `@"local."`.
+
+  You can also use a `NSNetServiceBrowser` object to obtain a list of possible domains in which you can publish your service.
+- `type`: The network service type.
+
+  `type` must contain both the service type and transport layer information. To ensure that the mDNS responder searches for services, as opposed to hosts, prefix both the service name and transport layer name with an underscore character (”_”). For example, to search for an HTTP service on TCP, you would use the type string “`_http._tcp.`”. Note that the period character at the end of the string, which indicates that the domain name is an absolute name, is required.
 - `name`: The name by which the service is identified to the network. The name must be unique. If you pass the empty string (`@""`), the system automatically advertises your service using the computer name as the service name.
-- `port`: The port on which the service is published. If you specify the `NSNetServiceListenForConnections` flag, you may pass zero (`0`), in which case the service automatically allocates an arbitrary (ephemeral) port for your service. When the delegate’s [`netServiceDidPublish(_:)`](netservicedelegate/netservicedidpublish(_:).md) is called, you can determine the actual port chosen by calling the service object’s [`NetService`](netservice.md) method or accessing the corresponding property. If your app is listening for connections on its own, the value of `port` must be a port number acquired by your application for the service.
+- `port`: The port on which the service is published.
+
+  If you specify the `NSNetServiceListenForConnections` flag, you may pass zero (`0`), in which case the service automatically allocates an arbitrary (ephemeral) port for your service. When the delegate’s [`netServiceDidPublish(_:)`](../netservicedelegate/netservicedidpublish%28_%29.md) is called, you can determine the actual port chosen by calling the service object’s [`NetService`](../netservice.md) method or accessing the corresponding property.
+
+  If your app is listening for connections on its own, the value of `port` must be a port number acquired by your application for the service.
 
 ## See Also
 
-- [convenience init(domain: String, type: String, name: String)](netservice/init(domain:type:name:).md)
+### Creating Network Services
+- [convenience init(domain: String, type: String, name: String)](./init%28domain,type,name%29.md)
   Returns the receiver, initialized as a network service of a given type and sets the initial host information.
 
 

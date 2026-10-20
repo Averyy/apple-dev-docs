@@ -1,7 +1,8 @@
 # errSecMissingAttributePrime
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A prime attribute is missing.
 
@@ -18,6 +19,10 @@ A prime attribute is missing.
 
 ```swift
 var errSecMissingAttributePrime: OSStatus { get }
+```
+
+```c
+errSecMissingAttributePrime
 ```
 
 

@@ -1,14 +1,15 @@
 # KDBG_MATCH_DISABLE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```c
 KDBG_MATCH_DISABLE
 ```
 

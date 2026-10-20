@@ -1,7 +1,8 @@
 # PhysicsJoints
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of physics joints.
 
@@ -22,32 +23,33 @@ struct PhysicsJoints
 ## Topics
 
 ### Initializers
-- [init(any Sequence<any PhysicsJoint>)](physicsjoints/init(_:).md)
+- [init(any Sequence<any PhysicsJoint>)](./physicsjoints/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [MutableCollection](../swift/mutablecollection.md)
-- [RangeReplaceableCollection](../swift/rangereplaceablecollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [MutableCollection](../Swift/mutablecollection.md)
+- [RangeReplaceableCollection](../Swift/rangereplaceablecollection.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [struct PhysicsRevoluteJoint](physicsrevolutejoint.md)
+### Built-in joint types
+- [struct PhysicsRevoluteJoint](./physicsrevolutejoint.md)
   A joint that allows one degree of rotational freedom between two entity pins, similar to a door swinging on its hinges.
-- [struct PhysicsPrismaticJoint](physicsprismaticjoint.md)
+- [struct PhysicsPrismaticJoint](./physicsprismaticjoint.md)
   A joint that allows movement along a straight line, similar to a sliding drawer.
-- [struct PhysicsSphericalJoint](physicssphericaljoint.md)
+- [struct PhysicsSphericalJoint](./physicssphericaljoint.md)
   A spherical joint that allows free rotational movement between two entities’ pins.
-- [struct PhysicsCustomJoint](physicscustomjoint.md)
+- [struct PhysicsCustomJoint](./physicscustomjoint.md)
   A joint with six degrees of freedom that can be individually specified.
-- [struct PhysicsDistanceJoint](physicsdistancejoint.md)
+- [struct PhysicsDistanceJoint](./physicsdistancejoint.md)
   A joint that maintains a minimum and maximum distance between two entity pins.
-- [struct PhysicsFixedJoint](physicsfixedjoint.md)
+- [struct PhysicsFixedJoint](./physicsfixedjoint.md)
   A joint that rigidly connects two entity pins, with zero degrees of freedom.
 
 

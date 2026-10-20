@@ -1,7 +1,8 @@
 # authorizationStatus
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Your app’s authorization status for the external storage device.
 
@@ -18,9 +19,13 @@ Your app’s authorization status for the external storage device.
 class var authorizationStatus: AVAuthorizationStatus { get }
 ```
 
+```objc
+@property (class, readonly) AVAuthorizationStatus authorizationStatus;
+```
+
 #### Discussion
 
-If the value is [`AVAuthorizationStatus.notDetermined`](avauthorizationstatus/notdetermined.md), you can request access by calling the [`requestAccess(completionHandler:)`](avexternalstoragedevice/requestaccess(completionhandler:).md) method.
+If the value is [`AVAuthorizationStatus.notDetermined`](../avauthorizationstatus/notdetermined.md), you can request access by calling the [`requestAccess(completionHandler:)`](./requestaccess%28completionhandler%29.md) method.
 
 
 ---

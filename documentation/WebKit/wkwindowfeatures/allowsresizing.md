@@ -1,7 +1,8 @@
 # allowsResizing
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to make the containing window window resizable.
 
@@ -18,19 +19,24 @@ A Boolean value that indicates whether to make the containing window window resi
 var allowsResizing: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSNumber * allowsResizing;
+```
+
 #### Discussion
 
 If the webpage didn’t request a resizable window, this property is `nil`.
 
 ## See Also
 
-- [var height: NSNumber?](wkwindowfeatures/height.md)
+### Inspecting Window Position and Dimensions
+- [var height: NSNumber?](./height.md)
   The requested height of the containing window.
-- [var width: NSNumber?](wkwindowfeatures/width.md)
+- [var width: NSNumber?](./width.md)
   The requested width of the containing window.
-- [var x: NSNumber?](wkwindowfeatures/x.md)
+- [var x: NSNumber?](./x.md)
   The requested x-coordinate of the containing window.
-- [var y: NSNumber?](wkwindowfeatures/y.md)
+- [var y: NSNumber?](./y.md)
   The requested y-coordinate of the containing window.
 
 

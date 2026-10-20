@@ -1,7 +1,8 @@
 # SAError.Code.invalidArgument
 
 **Framework**: SafetyKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The passed argument is invalid.
 
@@ -18,13 +19,18 @@ The passed argument is invalid.
 case invalidArgument
 ```
 
+```c
+SAErrorInvalidArgument
+```
+
 ## See Also
 
-- [SAError.Code.notAllowed](saerror/code/notallowed.md)
+### Determining the error type
+- [SAError.Code.notAllowed](./notallowed.md)
   The system restricts the feature on this iPhone at the current time.
-- [SAError.Code.notAuthorized](saerror/code/notauthorized.md)
+- [SAError.Code.notAuthorized](./notauthorized.md)
   The app isn’t authorized to perform the requested operation.
-- [SAError.Code.operationFailed](saerror/code/operationfailed.md)
+- [SAError.Code.operationFailed](./operationfailed.md)
   The requested operation failed; retrying may succeed.
 
 

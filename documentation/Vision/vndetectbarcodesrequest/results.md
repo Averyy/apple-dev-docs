@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of a barcode detection request.
 
@@ -19,9 +20,14 @@ The results of a barcode detection request.
 var results: [VNBarcodeObservation]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<VNBarcodeObservation *> * results;
+```
+
 ## See Also
 
-- [class VNBarcodeObservation](vnbarcodeobservation.md)
+### Accessing the Results
+- [class VNBarcodeObservation](../vnbarcodeobservation.md)
   An object that represents barcode information that an image analysis request detects.
 
 

@@ -1,7 +1,8 @@
 # set(_:for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a credential to the credential storage for the specified protection space.
 
@@ -20,11 +21,15 @@ Adds a credential to the credential storage for the specified protection space.
 func set(_ credential: URLCredential, for space: URLProtectionSpace)
 ```
 
+```objc
+- (void) setCredential:(NSURLCredential *) credential forProtectionSpace:(NSURLProtectionSpace *) space;
+```
+
 #### Discussion
 
 If the credential is not yet in the set for the protection space, it will be added to it.
 
-If you override this method, also override [`set(_:for:task:)`](urlcredentialstorage/set(_:for:task:).md).
+If you override this method, also override [`set(_:for:task:)`](./set%28_,for,task%29.md).
 
 ## Parameters
 
@@ -33,15 +38,16 @@ If you override this method, also override [`set(_:for:task:)`](urlcredentialsto
 
 ## See Also
 
-- [func remove(URLCredential, for: URLProtectionSpace)](urlcredentialstorage/remove(_:for:).md)
+### Adding and removing credentials
+- [func remove(URLCredential, for: URLProtectionSpace)](./remove%28_,for%29.md)
   Removes the specified credential from the credential storage for the specified protection space.
-- [func remove(URLCredential, for: URLProtectionSpace, options: [String : Any]?)](urlcredentialstorage/remove(_:for:options:).md)
+- [func remove(URLCredential, for: URLProtectionSpace, options: [String : Any]?)](./remove%28_,for,options%29.md)
   Removes the specified credential from the credential storage for the specified protection space using the given options.
-- [func remove(URLCredential, for: URLProtectionSpace, options: [String : Any]?, task: URLSessionTask)](urlcredentialstorage/remove(_:for:options:task:).md)
+- [func remove(URLCredential, for: URLProtectionSpace, options: [String : Any]?, task: URLSessionTask)](./remove%28_,for,options,task%29.md)
   Removes the specified credential from the credential storage for the specified protection space, on behalf of the given task and using the given options.
-- [Dictionary key for credential removal options](dictionary-key-for-credential-removal-options.md)
-  Key used by the options dictionary passed in [`remove(_:for:options:)`](urlcredentialstorage/remove(_:for:options:).md).
-- [func set(URLCredential, for: URLProtectionSpace, task: URLSessionTask)](urlcredentialstorage/set(_:for:task:).md)
+- [Dictionary key for credential removal options](../dictionary-key-for-credential-removal-options.md)
+  Key used by the options dictionary passed in [`remove(_:for:options:)`](./remove%28_,for,options%29.md).
+- [func set(URLCredential, for: URLProtectionSpace, task: URLSessionTask)](./set%28_,for,task%29.md)
   Adds a credential to the credential storage for the specified protection space, on behalf of the specified task.
 
 

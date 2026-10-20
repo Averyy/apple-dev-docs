@@ -1,7 +1,8 @@
 # Get User ACL
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Return the ad accounts and roles accessible to the authenticated API caller.
 
@@ -18,7 +19,7 @@ To discover which ad accounts an API token can access and what permission level 
 
 ##### Request
 
-```None
+```
 GET https://api.ads.apple.com/v1/acls
 ```
 
@@ -47,11 +48,21 @@ GET https://api.ads.apple.com/v1/acls
 
 `GET https://api.ads.apple.com/v1/acls`
 
+## Responses
+
+- `200` OK (`UserAclListResponse`, `application/json`): Successful operation. Returns [`UserAclListResponse`](./useracllistresponse.md) (`result`: [`UserAccessResult`](./useraccessresult.md)).
+- `400` Bad Request (`Error`, `application/json`): Bad Request. Returns [`ErrorResponse`](./errorresponse.md).
+- `401` Unauthorized (`Error`, `application/json`): Unauthorized.
+- `403` Forbidden (`Error`, `application/json`): Forbidden.
+- `404` Not Found (`Error`, `application/json`): Resource not found. Returns [`ErrorResponse`](./errorresponse.md).
+- `429` Too Many Requests (`Error`, `application/json`): Rate Limit Exceeded. See [Applying Rate Limits](./rate-limits.md).
+- `500` Internal Server Error (`Error`, `application/json`): Internal Server Error. Returns [`ErrorResponse`](./errorresponse.md).
+
 ## See Also
 
-- [Get Me Details](get-current-user-details.md)
+- [Get Me Details](./get-current-user-details.md)
   Return the user ID and organization ID of the authenticated API caller.
-- [Get Org by ID](get-orgs-_id_.md)
+- [Get Org by ID](./get-orgs-_id_.md)
   Retrieve the details of a specific organization by its ID.
 
 

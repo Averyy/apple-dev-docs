@@ -1,7 +1,8 @@
 # mergedModel(from:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a model created by merging all the models found in given bundles.
 
@@ -10,7 +11,7 @@ Returns a model created by merging all the models found in given bundles.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns a model created by merging all the models found in given bundles.
 
 ```swift
 class func mergedModel(from bundles: [Bundle]?) -> NSManagedObjectModel?
+```
+
+```objc
++ (NSManagedObjectModel *) mergedModelFromBundles:(NSArray<NSBundle *> *) bundles;
 ```
 
 #### Return Value
@@ -30,15 +35,16 @@ A model created by merging all the models found in `bundles`.
 
 ## See Also
 
-- [convenience init?(contentsOf: URL)](nsmanagedobjectmodel/init(contentsof:).md)
+### Creating a managed object model
+- [convenience init?(contentsOf: URL)](./init%28contentsof%29.md)
   Initializes the managed object model using the model file at the specified URL.
-- [init()](nsmanagedobjectmodel/init.md)
+- [init()](./init%28%29.md)
   Initializes an empty managed object model.
-- [class func mergedModel(from: [Bundle]?, forStoreMetadata: [String : Any]) -> NSManagedObjectModel?](nsmanagedobjectmodel/mergedmodel(from:forstoremetadata:).md)
+- [class func mergedModel(from: [Bundle]?, forStoreMetadata: [String : Any]) -> NSManagedObjectModel?](./mergedmodel%28from,forstoremetadata%29.md)
   Returns a merged model from a specified array for the version information in provided metadata.
-- [init?(byMerging: [NSManagedObjectModel]?)](nsmanagedobjectmodel/init(bymerging:).md)
+- [init?(byMerging: [NSManagedObjectModel]?)](./init%28bymerging%29.md)
   Creates a single model from an array of existing models.
-- [init?(byMerging: [NSManagedObjectModel], forStoreMetadata: [String : Any])](nsmanagedobjectmodel/init(bymerging:forstoremetadata:).md)
+- [init?(byMerging: [NSManagedObjectModel], forStoreMetadata: [String : Any])](./init%28bymerging,forstoremetadata%29.md)
   Returns, for the version information in given metadata, a model merged from a given array of models.
 
 

@@ -1,14 +1,15 @@
 # coprocessor_type_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13.2+
 
 ## Declaration
 
-```swift
+```c
 typedef enum coprocessor_type_t : unsigned int {
     ...
 } coprocessor_type_t;
@@ -17,9 +18,9 @@ typedef enum coprocessor_type_t : unsigned int {
 ## Topics
 
 ### Constants
-- [kCoprocessorVersion1](coprocessor_type_t/kcoprocessorversion1.md)
-- [kCoprocessorVersion2](coprocessor_type_t/kcoprocessorversion2.md)
-- [kCoprocessorVersionNone](coprocessor_type_t/kcoprocessorversionnone.md)
+- [kCoprocessorVersion1](./coprocessor_type_t/kcoprocessorversion1.md)
+- [kCoprocessorVersion2](./coprocessor_type_t/kcoprocessorversion2.md)
+- [kCoprocessorVersionNone](./coprocessor_type_t/kcoprocessorversionnone.md)
 
 
 ---

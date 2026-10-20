@@ -1,14 +1,16 @@
 # Building a resumable upload server with SwiftNIO
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: Sample Code  
+**Download**: [BuildingAResumableUploadServerWithSwiftNIO.zip](https://docs-assets.developer.apple.com/published/eecdd62f298f/BuildingAResumableUploadServerWithSwiftNIO.zip)
 
 Support HTTP resumable upload protocol in SwiftNIO by translating resumable uploads to regular uploads.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC23 session 10006: [`Build robust and resumable file transfers`](https://developer.apple.comhttps://developer.apple.com/wwdc23/10006/).
+> **Note**: This sample code project is associated with WWDC23 session 10006: [Build robust and resumable file transfers](https://developer.apple.com/wwdc23/10006/).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
 Before you run the sample code project:
 
@@ -19,11 +21,12 @@ Before you run the sample code project:
 
 ## See Also
 
-- [Uploading data to a website](uploading-data-to-a-website.md)
+### Uploading
+- [Uploading data to a website](./uploading-data-to-a-website.md)
   Post data from your app to servers.
-- [Uploading streams of data](uploading-streams-of-data.md)
+- [Uploading streams of data](./uploading-streams-of-data.md)
   Send a stream of data to a server.
-- [Pausing and resuming uploads](pausing-and-resuming-uploads.md)
+- [Pausing and resuming uploads](./pausing-and-resuming-uploads.md)
   Pause and resume an upload without starting over, even when the connection is interrupted.
 
 

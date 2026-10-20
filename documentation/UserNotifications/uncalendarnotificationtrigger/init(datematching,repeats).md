@@ -1,7 +1,8 @@
 # init(dateMatching:repeats:)
 
 **Framework**: User Notifications  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a calendar trigger using the date components parameter.
 
@@ -20,18 +21,22 @@ Creates a calendar trigger using the date components parameter.
 convenience init(dateMatching dateComponents: DateComponents, repeats: Bool)
 ```
 
+```objc
++ (instancetype) triggerWithDateMatchingComponents:(NSDateComponents *) dateComponents repeats:(BOOL) repeats;
+```
+
 #### Return Value
 
 A new calendar trigger based on the specified temporal information.
 
 #### Discussion
 
-If you specify `true` for the `repeats` parameter, you must explicitly remove the notification request to stop the delivery of the associated notification. Use the methods of [`UNUserNotificationCenter`](unusernotificationcenter.md) to remove notification requests that are no longer needed.
+If you specify `true` for the `repeats` parameter, you must explicitly remove the notification request to stop the delivery of the associated notification. Use the methods of [`UNUserNotificationCenter`](../unusernotificationcenter.md) to remove notification requests that are no longer needed.
 
 ## Parameters
 
 - `dateComponents`: The temporal information to use when constructing the trigger. Provide only the date components that are relevant for your trigger.
-- `repeats`: Specify [`false`](https://developer.apple.com/documentation/swift/false) to deliver the notification one time. Specify [`true`](https://developer.apple.com/documentation/swift/true) to reschedule the notification request each time the system delivers the notification.
+- `repeats`: Specify [`false`](../../Swift/false.md) to deliver the notification one time. Specify [`true`](../../Swift/true.md) to reschedule the notification request each time the system delivers the notification.
 
 
 ---

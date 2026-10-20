@@ -1,7 +1,8 @@
 # init(_:within:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an index in the given Unicode scalars view that corresponds exactly to the specified `UTF16View` position.
 

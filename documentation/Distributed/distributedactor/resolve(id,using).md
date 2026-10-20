@@ -2,6 +2,7 @@
 
 **Framework**: Distributed  
 **Kind**: method  
+**Role**: Type Method  
 **Required**: Yes
 
 Resolves the passed in `id` against the `system`, returning either a local or remote actor reference.
@@ -12,7 +13,7 @@ Resolves the passed in `id` against the `system`, returning either a local or re
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,7 +28,7 @@ The system will be asked to `resolve` the identity and return either a local ins
 
 A remote distributed actor reference will forward all invocations through the system, allowing it to take over the remote messaging with the remote actor instance.
 
-> **Note**: Upon successful return, the returned actor’s [`id`](distributedactor/id.md) and [`actorSystem`](distributedactor/actorsystem-swift.property.md) properties will be equal to the values passed as parameters to this method.
+> **Postcondition**: Upon successful return, the returned actor’s [`id`](./id.md) and [`actorSystem`](./actorsystem-swift.property.md) properties will be equal to the values passed as parameters to this method.
 
 ## Parameters
 

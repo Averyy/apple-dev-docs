@@ -1,18 +1,19 @@
 # Deprecated Symbols
 
-**Framework**: CloudKit
+**Framework**: CloudKit  
+**Role**: API Collection
 
 Review unsupported symbols and their replacements.
 
 ## Topics
 
 ### Deprecated Methods
-- [convenience init(recordZoneIDs: [CKRecordZone.ID], optionsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneOptions]?)](ckfetchrecordzonechangesoperation/init(recordzoneids:optionsbyrecordzoneid:).md)
+- [convenience init(recordZoneIDs: [CKRecordZone.ID], optionsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneOptions]?)](./ckfetchrecordzonechangesoperation/init%28recordzoneids,optionsbyrecordzoneid%29.md)
   Creates an operation for fetching record zone changes.
-- [CKFetchRecordZoneChangesOperation.ZoneOptions](ckfetchrecordzonechangesoperation/zoneoptions.md)
+- [CKFetchRecordZoneChangesOperation.ZoneOptions](./ckfetchrecordzonechangesoperation/zoneoptions.md)
   A configuration object that describes the information to fetch from a record zone.
 ### Deprecated Properties
-- [var optionsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneOptions]?](ckfetchrecordzonechangesoperation/optionsbyrecordzoneid.md)
+- [var optionsByRecordZoneID: [CKRecordZone.ID : CKFetchRecordZoneChangesOperation.ZoneOptions]?](./ckfetchrecordzonechangesoperation/optionsbyrecordzoneid.md)
   Configuration options for each record zone that the operation retrieves.
 
 

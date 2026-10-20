@@ -1,7 +1,8 @@
 # tableView(_:cancelPrefetchingForRowsAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels a previously triggered data prefetch request.
 
@@ -18,11 +19,15 @@ Cancels a previously triggered data prefetch request.
 optional func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath])
 ```
 
+```objc
+- (void) tableView:(UITableView *) tableView cancelPrefetchingForRowsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
+```
+
 #### Discussion
 
-The table view calls this method on the main queue to cancel prefetch requests for cells that are no longer needed. Use this method to cancel operations initiated by a previous call to [`tableView(_:prefetchRowsAt:)`](uitableviewdatasourceprefetching/tableview(_:prefetchrowsat:).md).
+The table view calls this method on the main queue to cancel prefetch requests for cells that are no longer needed. Use this method to cancel operations initiated by a previous call to [`tableView(_:prefetchRowsAt:)`](./tableview%28_,prefetchrowsat%29.md).
 
-For information about how to cancel an asynchronous data loading task, see [`Concurrency Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091).
+For information about how to cancel an asynchronous data loading task, see [Concurrency Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/ConcurrencyProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008091).
 
 ## Parameters
 
@@ -31,7 +36,8 @@ For information about how to cancel an asynchronous data loading task, see [`Con
 
 ## See Also
 
-- [func tableView(UITableView, prefetchRowsAt: [IndexPath])](uitableviewdatasourceprefetching/tableview(_:prefetchrowsat:).md)
+### Fetching the row data
+- [func tableView(UITableView, prefetchRowsAt: [IndexPath])](./tableview%28_,prefetchrowsat%29.md)
   Instructs your prefetch data source object to begin preparing data for the cells at the supplied index paths.
 
 

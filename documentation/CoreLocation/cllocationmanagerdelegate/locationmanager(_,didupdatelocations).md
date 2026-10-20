@@ -1,7 +1,8 @@
 # locationManager(_:didUpdateLocations:)
 
 **Framework**: Core Location  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that new location data is available.
 
@@ -20,6 +21,10 @@ Tells the delegate that new location data is available.
 optional func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
 ```
 
+```objc
+- (void) locationManager:(CLLocationManager *) manager didUpdateLocations:(NSArray<CLLocation *> *) locations;
+```
+
 #### Discussion
 
 Implementation of this method is optional but recommended.
@@ -27,21 +32,22 @@ Implementation of this method is optional but recommended.
 ## Parameters
 
 - `manager`: The location manager object that generated the update event.
-- `locations`: An array of [`CLLocation`](cllocation.md) objects containing the location data. This array always contains at least one object representing the current location. If updates were deferred or if multiple locations arrived before they could be delivered, the array may contain additional entries. The objects in the array are organized in the order in which they occurred. Therefore, the most recent location update is at the end of the array.
+- `locations`: An array of [`CLLocation`](../cllocation.md) objects containing the location data. This array always contains at least one object representing the current location. If updates were deferred or if multiple locations arrived before they could be delivered, the array may contain additional entries. The objects in the array are organized in the order in which they occurred. Therefore, the most recent location update is at the end of the array.
 
 ## Topics
 
 ### Related documentation
-- [MapKit](../mapkit/mapkit.md)
+- [MapKit](../../MapKit/MapKit.md)
   Display map or satellite imagery within your app, call out points of interest, and determine placemark information for map coordinates.
-- [MapKit JS](../mapkitjs/mapkitjs.md)
+- [MapKit JS](../../MapKitJS/MapKitJS.md)
   Embed interactive Apple Maps on your website, annotate points of interest, and perform georelated searches.
 
 ## See Also
 
-- [func locationManager(CLLocationManager, didUpdateTo: CLLocation, from: CLLocation)](cllocationmanagerdelegate/locationmanager(_:didupdateto:from:).md)
+### Receiving location updates
+- [func locationManager(CLLocationManager, didUpdateTo: CLLocation, from: CLLocation)](./locationmanager%28_,didupdateto,from%29.md)
   Tells the delegate that a new location value is available.
-- [func locationManager(CLLocationManager, didFinishDeferredUpdatesWithError: (any Error)?)](cllocationmanagerdelegate/locationmanager(_:didfinishdeferredupdateswitherror:).md)
+- [func locationManager(CLLocationManager, didFinishDeferredUpdatesWithError: (any Error)?)](./locationmanager%28_,didfinishdeferredupdateswitherror%29.md)
   Tells the delegate that updates will no longer be deferred.
 
 

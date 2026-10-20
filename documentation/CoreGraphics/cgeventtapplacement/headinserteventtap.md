@@ -1,13 +1,14 @@
 # CGEventTapPlacement.headInsertEventTap
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that a new event tap should be inserted before any pre-existing event taps at the same location.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,14 @@ Specifies that a new event tap should be inserted before any pre-existing event 
 case headInsertEventTap
 ```
 
+```c
+kCGHeadInsertEventTap
+```
+
 ## See Also
 
-- [CGEventTapPlacement.tailAppendEventTap](cgeventtapplacement/tailappendeventtap.md)
+### Constants
+- [CGEventTapPlacement.tailAppendEventTap](./tailappendeventtap.md)
   Specifies that a new event tap should be inserted after any pre-existing event taps at the same location.
 
 

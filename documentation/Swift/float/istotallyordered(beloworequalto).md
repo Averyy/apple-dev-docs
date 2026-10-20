@@ -1,7 +1,8 @@
 # isTotallyOrdered(belowOrEqualTo:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether this instance should precede or tie positions with the given value in an ascending sort.
 
@@ -37,7 +38,7 @@ print(numbers)
 // Prints "[-9.5, 2.5, 3.0, 21.25, nan]"
 ```
 
-The `isTotallyOrdered(belowOrEqualTo:)` method implements the total order relation as defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `isTotallyOrdered(belowOrEqualTo:)` method implements the total order relation as defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 
@@ -45,21 +46,22 @@ The `isTotallyOrdered(belowOrEqualTo:)` method implements the total order relati
 
 ## See Also
 
-- [Floating-Point Operators for Float](floating-point-operators-for-float.md)
+### Comparing Values
+- [Floating-Point Operators for Float](../floating-point-operators-for-float.md)
   Perform arithmetic and bitwise operations or compare values.
-- [func isEqual(to: Float) -> Bool](float/isequal(to:).md)
+- [func isEqual(to: Float) -> Bool](./isequal%28to%29.md)
   Returns a Boolean value indicating whether this instance is equal to the given value.
-- [func isLess(than: Float) -> Bool](float/isless(than:).md)
+- [func isLess(than: Float) -> Bool](./isless%28than%29.md)
   Returns a Boolean value indicating whether this instance is less than the given value.
-- [func isLessThanOrEqualTo(Float) -> Bool](float/islessthanorequalto(_:).md)
+- [func isLessThanOrEqualTo(Float) -> Bool](./islessthanorequalto%28_%29.md)
   Returns a Boolean value indicating whether this instance is less than or equal to the given value.
-- [static func maximum(Self, Self) -> Self](float/maximum(_:_:).md)
+- [static func maximum(Self, Self) -> Self](./maximum%28_,_%29.md)
   Returns the greater of the two given values.
-- [static func maximumMagnitude(Self, Self) -> Self](float/maximummagnitude(_:_:).md)
+- [static func maximumMagnitude(Self, Self) -> Self](./maximummagnitude%28_,_%29.md)
   Returns the value with greater magnitude.
-- [static func minimum(Self, Self) -> Self](float/minimum(_:_:).md)
+- [static func minimum(Self, Self) -> Self](./minimum%28_,_%29.md)
   Returns the lesser of the two given values.
-- [static func minimumMagnitude(Self, Self) -> Self](float/minimummagnitude(_:_:).md)
+- [static func minimumMagnitude(Self, Self) -> Self](./minimummagnitude%28_,_%29.md)
   Returns the value with lesser magnitude.
 
 

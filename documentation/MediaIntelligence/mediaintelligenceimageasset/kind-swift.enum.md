@@ -1,7 +1,8 @@
 # MediaIntelligenceImageAsset.Kind
 
 **Framework**: Media Intelligence  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that describes the source of an image asset’s data.
 
@@ -21,29 +22,30 @@ enum Kind
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
 #### Overview
 
-[`MediaIntelligenceImageAsset.Kind`](mediaintelligenceimageasset/kind-swift.enum.md) describes how the framework reads an image.
+[`MediaIntelligenceImageAsset.Kind`](./kind-swift.enum.md) describes how the framework reads an image.
 
 ## Topics
 
 ### Kinds
-- [MediaIntelligenceImageAsset.Kind.url(_:)](mediaintelligenceimageasset/kind-swift.enum/url(_:).md)
+- [MediaIntelligenceImageAsset.Kind.url(_:)](./kind-swift.enum/url%28_%29.md)
   An image located at the specified URL.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(id: MediaIntelligenceImageAsset.ID, kind: MediaIntelligenceImageAsset.Kind)](mediaintelligenceimageasset/init(id:kind:).md)
+### Creating an asset
+- [init(id: MediaIntelligenceImageAsset.ID, kind: MediaIntelligenceImageAsset.Kind)](./init%28id,kind%29.md)
   Creates an image asset with the specified identifier and kind.
-- [MediaIntelligenceImageAsset.ID](mediaintelligenceimageasset/id-swift.struct.md)
+- [MediaIntelligenceImageAsset.ID](./id-swift.struct.md)
   A unique identifier for an image asset.
 
 

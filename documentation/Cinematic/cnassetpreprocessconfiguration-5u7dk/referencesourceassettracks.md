@@ -1,14 +1,15 @@
 # referenceSourceAssetTracks
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls whether the color and audio tracks in the output asset reference the source asset or embed a copy of its sample data.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 27.0+
 
 ## Declaration

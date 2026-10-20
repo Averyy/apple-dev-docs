@@ -1,7 +1,8 @@
 # append
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Flag to append to an existing .mpsgraphpackage if found at provided url.
 
@@ -17,6 +18,10 @@ Flag to append to an existing .mpsgraphpackage if found at provided url.
 
 ```swift
 var append: Bool { get set }
+```
+
+```objc
+@property (atomic, readwrite) BOOL append;
 ```
 
 #### Discussion

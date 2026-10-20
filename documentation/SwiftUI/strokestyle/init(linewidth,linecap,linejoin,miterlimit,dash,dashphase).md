@@ -1,7 +1,8 @@
 # init(lineWidth:lineCap:lineJoin:miterLimit:dash:dashPhase:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new stroke style from the given components.
 

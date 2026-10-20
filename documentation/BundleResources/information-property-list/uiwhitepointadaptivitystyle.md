@@ -1,7 +1,8 @@
 # UIWhitePointAdaptivityStyle
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The app’s white-point adaptivity style, enabled on devices with True Tone displays.
 
@@ -9,9 +10,20 @@ The app’s white-point adaptivity style, enabled on devices with True Tone disp
 - iOS 9.3+
 - iPadOS 9.3+
 
+## Details
+
+- **Name**: `UIWhitePointAdaptivityStyle` (White Point Adaptivity Style)
+- **Type**: string
+
+## Possible Values
+
+- `UIWhitePointAdaptivityStyleStandard`: The default white-point adaptivity.
+- `UIWhitePointAdaptivityStyleReading`: A stronger adaptivity style designed for reading-focused apps.
+- `UIWhitePointAdaptivityStylePhoto`: A weaker adaptivity style designed for photography-focused apps.
+- `UIWhitePointAdaptivityStyleVideo`: A weaker adaptivity style designed for video-focused apps.
+- `UIWhitePointAdaptivityStyleGame`: A weaker adaptifity style designed for games.
 
 
-**Type**: string
 
 **Default**: `UIWhitePointAdaptivityStyleStandard`
 
@@ -21,25 +33,26 @@ In split view, the system applies the style on the entire screen from the app wi
 
 ## See Also
 
-- [UIDesignRequiresCompatibility](information-property-list/uidesignrequirescompatibility.md)
+### Styling
+- [UIDesignRequiresCompatibility](./uidesignrequirescompatibility.md)
   A Boolean value that indicates whether the system runs the app using a compatibility mode for UI.
-- [UIUserInterfaceStyle](information-property-list/uiuserinterfacestyle.md)
+- [UIUserInterfaceStyle](./uiuserinterfacestyle.md)
   The user interface style for the app.
-- [UIViewEdgeAntialiasing](information-property-list/uiviewedgeantialiasing.md)
+- [UIViewEdgeAntialiasing](./uiviewedgeantialiasing.md)
   A Boolean value that indicates whether Core Animation layers use antialiasing when drawing a layer that isn’t aligned to pixel boundaries.
-- [UIViewGroupOpacity](information-property-list/uiviewgroupopacity.md)
+- [UIViewGroupOpacity](./uiviewgroupopacity.md)
   A Boolean value that indicates whether Core Animation sublayers inherit the opacity of their superlayer.
-- [UIRequiresFullScreenIgnoredStartingWithVersion](information-property-list/uirequiresfullscreenignoredstartingwithversion.md)
+- [UIRequiresFullScreenIgnoredStartingWithVersion](./uirequiresfullscreenignoredstartingwithversion.md)
   A string value that specifies a system version after which the system ignores the requires full screen key.
-- [UISupportsAssistiveAccess](information-property-list/uisupportsassistiveaccess.md)
+- [UISupportsAssistiveAccess](./uisupportsassistiveaccess.md)
   A Boolean value that indicates if an iOS or iPadOS app supports Assistive Access.
-- [UISupportsFullScreenInAssistiveAccess](information-property-list/uisupportsfullscreeninassistiveaccess.md)
+- [UISupportsFullScreenInAssistiveAccess](./uisupportsfullscreeninassistiveaccess.md)
   A Boolean value that indicates if an iOS or iPadOS app appears as full screen in Assistive Access.
-- [NSPrefersDisplaySafeAreaCompatibilityMode](information-property-list/nsprefersdisplaysafeareacompatibilitymode.md)
+- [NSPrefersDisplaySafeAreaCompatibilityMode](./nsprefersdisplaysafeareacompatibilitymode.md)
   A Boolean value that indicates whether the app prefers to run in compatibility mode when necessary.
-- [NSAccentColorName](information-property-list/nsaccentcolorname.md)
+- [NSAccentColorName](./nsaccentcolorname.md)
   The name of a color in an asset catalog to use for a target’s global accent color.
-- [NSWidgetBackgroundColorName](information-property-list/nswidgetbackgroundcolorname.md)
+- [NSWidgetBackgroundColorName](./nswidgetbackgroundcolorname.md)
   The name of a color in an asset catalog to use for a widget’s configuration interface.
 
 

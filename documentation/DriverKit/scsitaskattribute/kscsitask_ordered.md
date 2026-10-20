@@ -1,17 +1,18 @@
 # kSCSITask_ORDERED
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kSCSITask_ORDERED
 ```
 
@@ -21,9 +22,10 @@ The task has an ordered attribute.
 
 ## See Also
 
-- [kSCSITask_SIMPLE](scsitaskattribute/kscsitask_simple.md)
-- [kSCSITask_HEAD_OF_QUEUE](scsitaskattribute/kscsitask_head_of_queue.md)
-- [kSCSITask_ACA](scsitaskattribute/kscsitask_aca.md)
+### Constants
+- [kSCSITask_SIMPLE](./kscsitask_simple.md)
+- [kSCSITask_HEAD_OF_QUEUE](./kscsitask_head_of_queue.md)
+- [kSCSITask_ACA](./kscsitask_aca.md)
 
 
 ---

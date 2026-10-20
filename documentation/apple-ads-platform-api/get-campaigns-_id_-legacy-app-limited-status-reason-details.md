@@ -1,7 +1,8 @@
 # Get Legacy App Limited Status Reason Details
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Return a map of country or region codes to their associated limited-status reason for legacy app campaigns.
 
@@ -20,7 +21,7 @@ Returns limited-status reasons per country or region for legacy app campaigns in
 
 No request body is required. Include the `X-Ap-Context` header with your `adAccountId`.
 
-```None
+```
 GET https://api.ads.apple.com/v1/campaigns/{id}/legacy-app-limited-status-reason-details
 ```
 
@@ -49,19 +50,35 @@ GET https://api.ads.apple.com/v1/campaigns/{id}/legacy-app-limited-status-reason
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`LegacyAppLimitedStatusReasonDetailsResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create a Campaign](post-campaigns.md)
+- [Create a Campaign](./post-campaigns.md)
   Create a new advertising campaign with a promoted object, budget, targeting, and bid strategy configuration.
-- [Query Campaigns](post-campaigns-query.md)
+- [Query Campaigns](./post-campaigns-query.md)
   Query campaigns using filters, sorting, and pagination.
-- [Get a Campaign](get-campaigns-_id_.md)
+- [Get a Campaign](./get-campaigns-_id_.md)
   Retrieve a single campaign by its unique identifier.
-- [Update a Campaign](put-campaigns-_id_.md)
+- [Update a Campaign](./put-campaigns-_id_.md)
   Update a campaign’s name, status, budget, targeting, or bid strategy.
-- [Delete a Campaign](delete-campaigns-_id_.md)
+- [Delete a Campaign](./delete-campaigns-_id_.md)
   Soft-delete a campaign by its unique identifier, cascading to its ad groups, keywords, and ads.
 
 

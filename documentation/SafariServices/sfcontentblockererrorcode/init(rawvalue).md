@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: Safari Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.4+
+- iOS 9.0+ - Deprecated in 10.0 (renamed: SFErrorCode)
+- iPadOS 9.0+ - Deprecated in 10.0 (renamed: SFErrorCode)
+- Mac Catalyst 13.4+ - Deprecated in 13.4 (renamed: SFErrorCode)
 
 ## Declaration
 

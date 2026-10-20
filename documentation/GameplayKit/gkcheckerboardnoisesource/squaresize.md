@@ -1,7 +1,8 @@
 # squareSize
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size (both width and height) of squares in the generated checkerboard pattern.
 
@@ -17,6 +18,10 @@ The size (both width and height) of squares in the generated checkerboard patter
 
 ```swift
 var squareSize: Double { get set }
+```
+
+```objc
+@property (nonatomic) double squareSize;
 ```
 
 #### Discussion

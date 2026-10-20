@@ -1,7 +1,8 @@
 # MTLDataType.r8Snorm
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An ordinary pixel with one component that’s an 8-bit, normalized, signed integer value.
 
@@ -19,9 +20,14 @@ An ordinary pixel with one component that’s an 8-bit, normalized, signed integ
 case r8Snorm
 ```
 
+```c
+MTLDataTypeR8Snorm
+```
+
 ## See Also
 
-- [MTLDataType.r8Unorm](mtldatatype/r8unorm.md)
+### 8-bit color integer types
+- [MTLDataType.r8Unorm](./r8unorm.md)
   An ordinary pixel with one component that’s an 8-bit, normalized, unsigned integer value.
 
 

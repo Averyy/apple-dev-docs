@@ -1,7 +1,8 @@
 # errSecInvalidKeyFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key format is not valid.
 
@@ -18,6 +19,10 @@ The key format is not valid.
 
 ```swift
 var errSecInvalidKeyFormat: OSStatus { get }
+```
+
+```c
+errSecInvalidKeyFormat
 ```
 
 

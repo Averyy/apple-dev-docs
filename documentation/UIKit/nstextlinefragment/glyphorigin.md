@@ -1,7 +1,8 @@
 # glyphOrigin
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Rendering origin for the left-most glyph in the line fragment coordinate system.
 
@@ -18,13 +19,18 @@ Rendering origin for the left-most glyph in the line fragment coordinate system.
 var glyphOrigin: CGPoint { get }
 ```
 
+```objc
+@property (readonly) CGPoint glyphOrigin;
+```
+
 ## See Also
 
-- [var attributedString: NSAttributedString](nstextlinefragment/attributedstring.md)
+### Line fragment characteristics
+- [var attributedString: NSAttributedString](./attributedstring.md)
   The source attributed string.
-- [var characterRange: NSRange](nstextlinefragment/characterrange.md)
+- [var characterRange: NSRange](./characterrange.md)
   The string range for the source attributed string that corresponds to this line fragment.
-- [var typographicBounds: CGRect](nstextlinefragment/typographicbounds.md)
+- [var typographicBounds: CGRect](./typographicbounds.md)
   The typographic bounds that specifies the dimensions of the line fragment for laying out line fragments to each other.
 
 

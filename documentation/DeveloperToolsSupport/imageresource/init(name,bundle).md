@@ -1,7 +1,8 @@
 # init(name:bundle:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image from a resource with the specified name in the given bundle.
 

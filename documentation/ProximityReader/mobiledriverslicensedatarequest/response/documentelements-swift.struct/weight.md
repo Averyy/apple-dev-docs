@@ -1,7 +1,8 @@
 # weight
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mobile identity document holder’s weight on record with the issuer.
 

@@ -1,7 +1,8 @@
 # VNTrackObjectRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An image-analysis request that tracks the movement of a previously identified object across multiple images or video frames.
 
@@ -19,6 +20,10 @@ An image-analysis request that tracks the movement of a previously identified ob
 class VNTrackObjectRequest
 ```
 
+```objc
+@interface VNTrackObjectRequest : VNTrackingRequest
+```
+
 #### Overview
 
 Use this type of request to track the bounding boxes around objects previously identified in an image. Vision attempts to locate the same object from the input observation throughout the sequence.
@@ -26,40 +31,41 @@ Use this type of request to track the bounding boxes around objects previously i
 ## Topics
 
 ### Initializing an Object Tracking Request
-- [init(detectedObjectObservation: VNDetectedObjectObservation)](vntrackobjectrequest/init(detectedobjectobservation:).md)
+- [init(detectedObjectObservation: VNDetectedObjectObservation)](./vntrackobjectrequest/init%28detectedobjectobservation%29.md)
   Creates a new object tracking request with a detected object observation.
-- [init(detectedObjectObservation: VNDetectedObjectObservation, completionHandler: VNRequestCompletionHandler?)](vntrackobjectrequest/init(detectedobjectobservation:completionhandler:).md)
+- [init(detectedObjectObservation: VNDetectedObjectObservation, completionHandler: VNRequestCompletionHandler?)](./vntrackobjectrequest/init%28detectedobjectobservation,completionhandler%29.md)
   Creates a new object tracking request with a detected object observation.
 ### Identifying Request Revisions
-- [var VNTrackObjectRequestRevision2: Int](vntrackobjectrequestrevision2.md)
+- [var VNTrackObjectRequestRevision2: Int](./vntrackobjectrequestrevision2.md)
   A constant for specifying revision 2 of the object tracking request.
-- [var VNTrackObjectRequestRevision1: Int](vntrackobjectrequestrevision1.md)
+- [var VNTrackObjectRequestRevision1: Int](./vntrackobjectrequestrevision1.md)
   A constant for specifying revision 1 of the object tracking request.
 
 ## Relationships
 
 ### Inherits From
-- [VNTrackingRequest](vntrackingrequest.md)
+- [VNTrackingRequest](./vntrackingrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Tracking the User’s Face in Real Time](tracking-the-user-s-face-in-real-time.md)
+### Object tracking
+- [Tracking the User’s Face in Real Time](./tracking-the-user-s-face-in-real-time.md)
   Detect and track faces from the selfie cam feed in real time.
-- [Tracking Multiple Objects or Rectangles in Video](tracking-multiple-objects-or-rectangles-in-video.md)
+- [Tracking Multiple Objects or Rectangles in Video](./tracking-multiple-objects-or-rectangles-in-video.md)
   Apply Vision algorithms to track objects or rectangles throughout a video.
-- [class VNTrackingRequest](vntrackingrequest.md)
+- [class VNTrackingRequest](./vntrackingrequest.md)
   The abstract superclass for image-analysis requests that track unique features across multiple images or video frames.
-- [class VNTrackRectangleRequest](vntrackrectanglerequest.md)
+- [class VNTrackRectangleRequest](./vntrackrectanglerequest.md)
   An image-analysis request that tracks movement of a previously identified rectangular object across multiple images or video frames.
-- [class VNDetectedObjectObservation](vndetectedobjectobservation.md)
+- [class VNDetectedObjectObservation](./vndetectedobjectobservation.md)
   An observation that provides the position and extent of an image feature that an image- analysis request detects.
 
 

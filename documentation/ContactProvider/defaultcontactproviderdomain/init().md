@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ContactProvider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of the default domain.
 

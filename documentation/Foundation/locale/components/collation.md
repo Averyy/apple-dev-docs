@@ -1,7 +1,8 @@
 # collation
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string sort order of the locale.
 
@@ -22,13 +23,14 @@ var collation: Locale.Collation?
 
 #### Discussion
 
-Set this property to override the locale’s default string sort order. To request the collation used by the locale, use the [`Locale`](locale.md) property [`collation`](locale/collation-swift.property.md).
+Set this property to override the locale’s default string sort order. To request the collation used by the locale, use the [`Locale`](../../locale.md) property [`collation`](../collation-swift.property.md).
 
 This property corresponds to the `co` key of the Unicode BCP 47 extension.
 
 ## See Also
 
-- [Locale.Collation](locale/collation-swift.struct.md)
+### Specifying ordering components
+- [Locale.Collation](../collation-swift.struct.md)
   A type that represents the string sort order used by the locale.
 
 

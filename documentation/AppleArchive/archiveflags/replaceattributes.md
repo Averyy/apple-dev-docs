@@ -1,7 +1,8 @@
 # replaceAttributes
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 14.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -20,10 +21,11 @@ static let replaceAttributes: ArchiveFlags
 
 ## See Also
 
-- [static let archiveDeduplicateData: ArchiveFlags](archiveflags/archivededuplicatedata.md)
-- [static let extractNoAutoDeduplicate: ArchiveFlags](archiveflags/extractnoautodeduplicate.md)
-- [static let extractNoAutoSparse: ArchiveFlags](archiveflags/extractnoautosparse.md)
-- [static let ignoreOperationNotPermitted: ArchiveFlags](archiveflags/ignoreoperationnotpermitted.md)
+### Type Properties
+- [static let archiveDeduplicateData: ArchiveFlags](./archivededuplicatedata.md)
+- [static let extractNoAutoDeduplicate: ArchiveFlags](./extractnoautodeduplicate.md)
+- [static let extractNoAutoSparse: ArchiveFlags](./extractnoautosparse.md)
+- [static let ignoreOperationNotPermitted: ArchiveFlags](./ignoreoperationnotpermitted.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # SparseFactorizationCholeskyAtA
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents *QR* factorization without storing *Q*.
 
@@ -20,13 +21,18 @@ A constant that represents *QR* factorization without storing *Q*.
 var SparseFactorizationCholeskyAtA: SparseFactorization_t { get }
 ```
 
+```c
+SparseFactorizationCholeskyAtA
+```
+
 #### Discussion
 
-[`SparseFactorizationCholeskyAtA`](sparsefactorizationcholeskyata.md) provides an equivalent to *AᵀA = RᵀR.*
+[`SparseFactorizationCholeskyAtA`](./sparsefactorizationcholeskyata.md) provides an equivalent to *AᵀA = RᵀR.*
 
 ## See Also
 
-- [var SparseFactorizationQR: SparseFactorization_t](sparsefactorizationqr.md)
+### Factorization types for overdetermined and underdetermined systems
+- [var SparseFactorizationQR: SparseFactorization_t](./sparsefactorizationqr.md)
   A constant that represents QR factorization.
 
 

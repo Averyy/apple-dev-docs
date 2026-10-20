@@ -1,7 +1,8 @@
 # UISceneConfigurationName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The app-specific name you use to identify the scene.
 
@@ -9,13 +10,14 @@ The app-specific name you use to identify the scene.
 - iOS 13.4+
 - iPadOS 13.4+
 
+## Details
 
-
-**Type**: string
+- **Name**: `UISceneConfigurationName` (Configuration Name)
+- **Type**: string
 
 #### Discussion
 
-Assign all scene configurations a unique name to distinguish them in your app. Use this name in the [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:)) method of your app delegate to identify the requested configuration.
+Assign all scene configurations a unique name to distinguish them in your app. Use this name in the [`application(_:configurationForConnecting:options:)`](../../../../../UIKit/uiapplicationdelegate/application%28_,configurationforconnecting,options%29.md) method of your app delegate to identify the requested configuration.
 
 
 ---

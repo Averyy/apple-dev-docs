@@ -1,7 +1,8 @@
 # init(predicate:limit:resultsHandler:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(predicate: NSPredicate?, limit: Int, resultsHandler: @escaping (HKUserAnnotatedMedicationQuery, HKUserAnnotatedMedication?, Bool, (any Error)?) -> Void)
+```
+
+```objc
+- (instancetype) initWithPredicate:(NSPredicate *) predicate limit:(NSUInteger) limit resultsHandler:(void (^)(HKUserAnnotatedMedicationQuery *query, HKUserAnnotatedMedication *userAnnotatedMedication, BOOL done, NSError *error)) resultsHandler;
 ```
 
 #### Discussion

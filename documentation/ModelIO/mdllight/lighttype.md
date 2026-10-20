@@ -1,7 +1,8 @@
 # lightType
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the light.
 
@@ -19,17 +20,22 @@ The type of the light.
 var lightType: MDLLightType { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MDLLightType lightType;
+```
+
 #### Discussion
 
 Light types determine both the shape and the style of illumination provided by a light.
 
 ## See Also
 
-- [func irradiance(atPoint: vector_float3) -> Unmanaged<CGColor>](mdllight/irradiance(atpoint:).md)
+### Working with Lights
+- [func irradiance(atPoint: vector_float3) -> Unmanaged<CGColor>](./irradiance%28atpoint%29.md)
   Returns the radiance of the light as received at a specific point in the same scene.
-- [func irradiance(atPoint: vector_float3, colorSpace: CGColorSpace) -> Unmanaged<CGColor>](mdllight/irradiance(atpoint:colorspace:).md)
+- [func irradiance(atPoint: vector_float3, colorSpace: CGColorSpace) -> Unmanaged<CGColor>](./irradiance%28atpoint,colorspace%29.md)
   Returns the radiance of the light as received at a specific point in the same scene, expressed using the specified color space.
-- [var colorSpace: String](mdllight/colorspace.md)
+- [var colorSpace: String](./colorspace.md)
   The name of the Core Graphics color space to be used for interpreting the light’s color information.
 
 

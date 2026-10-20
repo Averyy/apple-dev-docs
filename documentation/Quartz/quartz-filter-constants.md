@@ -1,13 +1,14 @@
 # Quartz Filter Constants
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [let kQuartzFilterApplicationDomain: String](kquartzfilterapplicationdomain.md)
-- [let kQuartzFilterPDFWorkflowDomain: String](kquartzfilterpdfworkflowdomain.md)
-- [let kQuartzFilterPrintingDomain: String](kquartzfilterprintingdomain.md)
+- [let kQuartzFilterApplicationDomain: String](./kquartzfilterapplicationdomain.md)
+- [let kQuartzFilterPDFWorkflowDomain: String](./kquartzfilterpdfworkflowdomain.md)
+- [let kQuartzFilterPrintingDomain: String](./kquartzfilterprintingdomain.md)
 
 
 ---

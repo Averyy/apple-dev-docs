@@ -1,7 +1,8 @@
 # Attribution
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A list of image asset URLs for attribution.
 
@@ -10,7 +11,7 @@ A list of image asset URLs for attribution.
 
 ## Declaration
 
-```swift
+```
 object Attribution
 ```
 
@@ -33,7 +34,8 @@ Attribution URLs of image assets are partial. Append the partial URL to `https:/
 
 ## See Also
 
-- [GET /attribution/{language}](get-attribution-_language_.md)
+### Performing attribution
+- [GET /attribution/{language}](./get-attribution-_language_.md)
   Receive attribution information.
 
 

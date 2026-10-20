@@ -1,7 +1,8 @@
 # HKQueryDescriptor
 
 **Framework**: HealthKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A descriptor that specifies a set of samples based on the data type and a predicate.
 
@@ -19,49 +20,54 @@ A descriptor that specifies a set of samples based on the data type and a predic
 class HKQueryDescriptor
 ```
 
+```objc
+@interface HKQueryDescriptor : NSObject
+```
+
 #### Overview
 
-Use descriptors to create queries that return multiple data types. You can use descriptors when creating [`HKSampleQuery`](hksamplequery.md), [`HKAnchoredObjectQuery`](hkanchoredobjectquery.md), or [`HKObserverQuery`](hkobserverquery.md) instances.
+Use descriptors to create queries that return multiple data types. You can use descriptors when creating [`HKSampleQuery`](./hksamplequery.md), [`HKAnchoredObjectQuery`](./hkanchoredobjectquery.md), or [`HKObserverQuery`](./hkobserverquery.md) instances.
 
 ## Topics
 
 ### Creating Query Descriptors
-- [init(sampleType: HKSampleType, predicate: NSPredicate?)](hkquerydescriptor/init(sampletype:predicate:).md)
+- [init(sampleType: HKSampleType, predicate: NSPredicate?)](./hkquerydescriptor/init%28sampletype,predicate%29.md)
   Creates a new descriptor for the data type and predicate you provided.
 ### Accessing Descriptor Data
-- [var predicate: NSPredicate?](hkquerydescriptor/predicate.md)
+- [var predicate: NSPredicate?](./hkquerydescriptor/predicate.md)
   The predicate that filters samples matching this descriptor.
-- [var sampleType: HKSampleType](hkquerydescriptor/sampletype.md)
+- [var sampleType: HKSampleType](./hkquerydescriptor/sampletype.md)
   The data type of samples that match this descriptor.
 ### Initializers
-- [init?(coder: NSCoder)](hkquerydescriptor/init(coder:).md)
+- [init?(coder: NSCoder)](./hkquerydescriptor/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKSampleQueryDescriptor](hksamplequerydescriptor.md)
+### Basic queries
+- [struct HKSampleQueryDescriptor](./hksamplequerydescriptor.md)
   A query interface that reads samples using Swift concurrency.
-- [class HKSampleQuery](hksamplequery.md)
+- [class HKSampleQuery](./hksamplequery.md)
   A general query that returns a snapshot of all the matching samples currently saved in the HealthKit store.
-- [class HKCorrelationQuery](hkcorrelationquery.md)
+- [class HKCorrelationQuery](./hkcorrelationquery.md)
   A query that performs complex searches based on the correlation’s contents, and returns a snapshot of all matching samples.
-- [class HKQuery](hkquery.md)
+- [class HKQuery](./hkquery.md)
   An abstract class for all the query classes in HealthKit.
 
 

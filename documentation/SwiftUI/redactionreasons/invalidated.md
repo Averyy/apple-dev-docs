@@ -1,7 +1,8 @@
 # invalidated
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displayed data should appear as invalidated and pending a new update.
 
@@ -22,13 +23,14 @@ static let invalidated: RedactionReasons
 
 #### Discussion
 
-Views marked with [`invalidatableContent(_:)`](view/invalidatablecontent(_:).md) will be automatically redacted with a standard styling indicating the content is invalidated and new content will be available soon.
+Views marked with [`invalidatableContent(_:)`](../view/invalidatablecontent%28_%29.md) will be automatically redacted with a standard styling indicating the content is invalidated and new content will be available soon.
 
 ## See Also
 
-- [static let placeholder: RedactionReasons](redactionreasons/placeholder.md)
+### Getting redaction reasons
+- [static let placeholder: RedactionReasons](./placeholder.md)
   Displayed data should appear as generic placeholders.
-- [static let privacy: RedactionReasons](redactionreasons/privacy.md)
+- [static let privacy: RedactionReasons](./privacy.md)
   Displayed data should be obscured to protect private information.
 
 

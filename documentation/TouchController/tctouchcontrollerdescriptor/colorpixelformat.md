@@ -1,7 +1,8 @@
 # colorPixelFormat
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format for the drawable texture.
 
@@ -16,19 +17,24 @@ The pixel format for the drawable texture.
 var colorPixelFormat: MTLPixelFormat { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) MTLPixelFormat colorPixelFormat;
+```
+
 ## See Also
 
-- [var depthAttachmentPixelFormat: MTLPixelFormat](tctouchcontrollerdescriptor/depthattachmentpixelformat.md)
+### Inspecting the controller descriptor
+- [var depthAttachmentPixelFormat: MTLPixelFormat](./depthattachmentpixelformat.md)
   The pixel format for the depth attachment.
-- [var device: any MTLDevice](tctouchcontrollerdescriptor/device.md)
+- [var device: any MTLDevice](./device.md)
   The Metal device to use for rendering.
-- [var drawableSize: CGSize](tctouchcontrollerdescriptor/drawablesize.md)
+- [var drawableSize: CGSize](./drawablesize.md)
   The size of the drawable to which the touch controller’s contents be drawn, in native pixels.
-- [var sampleCount: Int](tctouchcontrollerdescriptor/samplecount.md)
+- [var sampleCount: Int](./samplecount.md)
   The number of samples per pixel for multisampling.
-- [var size: CGSize](tctouchcontrollerdescriptor/size.md)
+- [var size: CGSize](./size.md)
   The size of the view the touch controller’s drawable is embedded in, in points.
-- [var stencilAttachmentPixelFormat: MTLPixelFormat](tctouchcontrollerdescriptor/stencilattachmentpixelformat.md)
+- [var stencilAttachmentPixelFormat: MTLPixelFormat](./stencilattachmentpixelformat.md)
   The pixel format for the stencil attachment.
 
 

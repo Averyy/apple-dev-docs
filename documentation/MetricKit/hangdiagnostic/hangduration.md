@@ -1,7 +1,8 @@
 # hangDuration
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Total hang duration for this diagnostic.
 

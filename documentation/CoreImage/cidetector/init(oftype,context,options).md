@@ -1,7 +1,8 @@
 # init(ofType:context:options:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a configured detector.
 
@@ -10,7 +11,7 @@ Creates and returns a configured detector.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,19 +20,23 @@ Creates and returns a configured detector.
 init?(ofType type: String, context: CIContext?, options: [String : Any]? = nil)
 ```
 
+```objc
++ (CIDetector *) detectorOfType:(NSString *) type context:(CIContext *) context options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Return Value
 
 A configured detector.
 
 #### Discussion
 
-A [`CIDetector`](cidetector.md) object can potentially create and hold a significant amount of resources. Where possible, reuse the same [`CIDetector`](cidetector.md) instance. Also, when processing images with a detector object, your application performs better if the [`CIContext`](cicontext.md) used to initialize the detector is the same context used to process the [`ciImage`](https://developer.apple.com/documentation/uikit/uiimage/ciimage) objects.
+A [`CIDetector`](../cidetector.md) object can potentially create and hold a significant amount of resources. Where possible, reuse the same [`CIDetector`](../cidetector.md) instance. Also, when processing images with a detector object, your application performs better if the [`CIContext`](../cicontext.md) used to initialize the detector is the same context used to process the [`ciImage`](../../UIKit/uiimage/ciimage.md) objects.
 
 ## Parameters
 
-- `type`: A string indicating the kind of detector you are interested in. See [`Detector Types`](detector-types.md).
+- `type`: A string indicating the kind of detector you are interested in. See [Detector Types](../detector-types.md).
 - `context`: A Core Image context that the detector can use when analyzing an image.
-- `options`: A dictionary containing details on how you want the detector to be configured. See [`Detector Configuration Keys`](detector-configuration-keys.md).
+- `options`: A dictionary containing details on how you want the detector to be configured. See [Detector Configuration Keys](../detector-configuration-keys.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # setAttributedText(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the styled text displayed by the text field.
 
@@ -14,15 +15,20 @@ Sets the styled text displayed by the text field.
 func setAttributedText(_ attributedText: NSAttributedString?)
 ```
 
+```objc
+- (void) setAttributedText:(NSAttributedString *) attributedText;
+```
+
 ## Parameters
 
 - `attributedText`: The styled text displayed in the text field. Specifying `nil` clears the current text.
 
 ## See Also
 
-- [func setText(String?)](wkinterfacetextfield/settext(_:).md)
+### Setting the Text
+- [func setText(String?)](./settext%28_%29.md)
   Sets the text displayed by the text field.
-- [func setTextColor(UIColor?)](wkinterfacetextfield/settextcolor(_:).md)
+- [func setTextColor(UIColor?)](./settextcolor%28_%29.md)
   Sets the text’s color.
 
 

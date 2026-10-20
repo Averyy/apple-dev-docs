@@ -1,15 +1,18 @@
 # SSLSetMaxDatagramRecordSize(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the maximum datagram record size allowed by the application for a given context.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
+- iOS 5.0+ - Deprecated in 13.0
+- iPadOS 5.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- macOS 10.8+ - Deprecated in 10.15
+
+> **Deprecated**: No longer supported. Use Network.framework.
 
 ## Declaration
 
@@ -17,9 +20,13 @@ Sets the maximum datagram record size allowed by the application for a given con
 func SSLSetMaxDatagramRecordSize(_ dtlsContext: SSLContext, _ maxSize: Int) -> OSStatus
 ```
 
+```c
+OSStatus SSLSetMaxDatagramRecordSize(SSLContextRef dtlsContext, size_t maxSize);
+```
+
 #### Return Value
 
-A result code. See [`Secure Transport Result Codes`](secure-transport-result-codes.md).
+A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
 #### Discussion
 

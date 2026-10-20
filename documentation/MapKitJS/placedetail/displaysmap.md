@@ -1,7 +1,8 @@
 # displaysMap
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to display the map in the place detail.
 
@@ -10,20 +11,21 @@ A Boolean value that indicates whether to display the map in the place detail.
 
 ## Declaration
 
-```swift
+```
 get displaysMap(): boolean;
 set displaysMap(displaysMap: boolean);
 ```
 
 ## See Also
 
-- [colorScheme](placedetail/colorscheme.md)
+### Working with place detail settings
+- [colorScheme](./colorscheme.md)
   The color scheme when displaying a place detail.
-- [element](placedetail/element.md)
+- [element](./element.md)
   The place detail’s DOM element.
-- [place](placedetail/place.md)
+- [place](./place.md)
   The place that the place detail displays.
-- [ColorSchemes](placedetail/colorschemes.md)
+- [ColorSchemes](./colorschemes.md)
   A static property that allows you to access the Look Around color scheme enumeration.
 
 

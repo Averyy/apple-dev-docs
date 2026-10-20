@@ -1,6 +1,7 @@
 # Pushing background updates to your App
 
-**Framework**: User Notifications
+**Framework**: User Notifications  
+**Role**: Article
 
 Deliver notifications that wake your app and update it in the background.
 
@@ -10,15 +11,15 @@ If your app’s server-based content changes infrequently or at irregular interv
 
 > ❗ **Important**:  The system treats background notifications as low priority: you can use them to refresh your app’s content, but the system doesn’t guarantee their delivery. In addition, the system may throttle the delivery of background notifications if the total number becomes excessive. The number of background notifications allowed by the system depends on current conditions, but don’t try to send more than two or three per hour.
 
-##### Enable the Remote Notifications Capability
+##### Enable the remote notifications capability
 
 To receive background notifications, you must add the remote notifications background mode to your app. In the Signing and Capability tab, add the Background Modes capability, then select the Remote notification checkbox. The figure below shows what you must select to recieve background notifications.
 
-![Enabling the remote notification background mode in your project’s Capabilities tab.](/images/com.apple.usernotifications/media-4285757@2x.png)
+![Enabling the remote notification background mode in your project’s Capabilities tab.](https://developer.apple.com/tutorials/images/com.apple.usernotifications/media-4285757@2x.png)
 
 For watchOS, add this capability to your WatchKit Extension.
 
-##### Create a Background Notification
+##### Create a background notification
 
 To send a background notification, create a remote notification with an `aps` dictionary that includes only the `content-available` key, as shown in the sample code below. You may include custom keys in the payload, but the `aps` dictionary must not contain any keys that would trigger user interactions.
 
@@ -33,9 +34,9 @@ To send a background notification, create a remote notification with an `aps` di
 
 ```
 
-Additionally, the notification’s POST request should contain the `apns-push-type` header field with a value of `background`, and the `apns-priority` field with a value of `5`. The APNs server requires the `apns-push-type` field when sending push notifications to Apple Watch, and recommends it for all platforms. For more information, see Create a POST request to APNs in [`Sending notification requests to APNs`](sending-notification-requests-to-apns.md).
+Additionally, the notification’s POST request should contain the `apns-push-type` header field with a value of `background`, and the `apns-priority` field with a value of `5`. The APNs server requires the `apns-push-type` field when sending push notifications to Apple Watch, and recommends it for all platforms. For more information, see Create a POST request to APNs in [Sending notification requests to APNs](./sending-notification-requests-to-apns.md).
 
-##### Receive Background Notifications
+##### Receive background notifications
 
 When a device receives a background notification, the system may hold and delay the delivery of the notification, which can have the following side effects:
 
@@ -43,15 +44,16 @@ When a device receives a background notification, the system may hold and delay 
 - If something force quits or kills the app, the system discards the held notification.
 - If the user launches the app, the system immediately delivers the held notification.
 
-To deliver a background notification, the system wakes your app in the background. On iOS it then calls your app delegate’s [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:didreceiveremotenotification:fetchcompletionhandler:)) method. On watchOS, it calls your extension delegate’s [`didReceiveRemoteNotification(_:fetchCompletionHandler:)`](https://developer.apple.com/documentation/watchkit/wkextensiondelegate/didreceiveremotenotification(_:fetchcompletionhandler:)) method. Your app has 30 seconds to perform any tasks and call the provided completion handler. For more information, see [`Handling notifications and notification-related actions`](handling-notifications-and-notification-related-actions.md).
+To deliver a background notification, the system wakes your app in the background. On iOS it then calls your app delegate’s [`application(_:didReceiveRemoteNotification:fetchCompletionHandler:)`](../UIKit/uiapplicationdelegate/application%28_,didreceiveremotenotification,fetchcompletionhandler%29.md) method. On watchOS, it calls your extension delegate’s [`didReceiveRemoteNotification(_:fetchCompletionHandler:)`](../WatchKit/wkextensiondelegate/didreceiveremotenotification%28_,fetchcompletionhandler%29.md) method. Your app has 30 seconds to perform any tasks and call the provided completion handler. For more information, see [Handling notifications and notification-related actions](./handling-notifications-and-notification-related-actions.md).
 
 ## See Also
 
-- [Registering your app with APNs](registering-your-app-with-apns.md)
+### Server tasks
+- [Registering your app with APNs](./registering-your-app-with-apns.md)
   Communicate with Apple Push Notification service (APNs) and receive a unique device token that identifies your app.
-- [Generating a remote notification](generating-a-remote-notification.md)
+- [Generating a remote notification](./generating-a-remote-notification.md)
   Send notifications to the user’s device with a JSON payload.
-- [Establishing a connection to Apple Push Notification service (APNs)](establishing-a-connection-to-apns.md)
+- [Establishing a connection to Apple Push Notification service (APNs)](./establishing-a-connection-to-apns.md)
   Secure your communications with APNs to send API requests.
 
 

@@ -1,7 +1,8 @@
 # reader
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for types you use to describe documents.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for types you use to describe documents.
 ```swift
 static var reader: some AssistantSchemas.ReaderEnum { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EnumSchema`.
 
 
 ---

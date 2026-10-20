@@ -1,7 +1,8 @@
 # init(request:cachedResponse:client:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a URL protocol instance to handle the request.
 
@@ -20,6 +21,10 @@ Creates a URL protocol instance to handle the request.
 init(request: URLRequest, cachedResponse: CachedURLResponse?, client: (any URLProtocolClient)?)
 ```
 
+```objc
+- (instancetype) initWithRequest:(NSURLRequest *) request cachedResponse:(NSCachedURLResponse *) cachedResponse client:(id<NSURLProtocolClient>) client;
+```
+
 #### Return Value
 
 The initialized protocol object.
@@ -28,17 +33,18 @@ The initialized protocol object.
 
 Subclasses should override this method to do any custom initialization. Don’t call this method explicitly. When you register your custom protocol class, the system will initialize instances of your protocol as needed.
 
-This is the designated initializer for [`URLProtocol`](urlprotocol.md).
+This is the designated initializer for [`URLProtocol`](../urlprotocol.md).
 
 ## Parameters
 
 - `request`: The URL request for the URL protocol object. This request is retained.
 - `cachedResponse`: A cached response for the request; it may be `nil` if there is no existing cached response for the request.
-- `client`: An object that provides an implementation of the [`URLProtocolClient`](urlprotocolclient.md) protocol that this instance uses to communicate with the URL Loading System. This client object is retained.
+- `client`: An object that provides an implementation of the [`URLProtocolClient`](../urlprotocolclient.md) protocol that this instance uses to communicate with the URL Loading System. This client object is retained.
 
 ## See Also
 
-- [convenience init(task: URLSessionTask, cachedResponse: CachedURLResponse?, client: (any URLProtocolClient)?)](urlprotocol/init(task:cachedresponse:client:).md)
+### Creating protocol objects
+- [convenience init(task: URLSessionTask, cachedResponse: CachedURLResponse?, client: (any URLProtocolClient)?)](./init%28task,cachedresponse,client%29.md)
   Creates a URL protocol instance to handle the task.
 
 

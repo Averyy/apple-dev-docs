@@ -1,7 +1,8 @@
 # fulfill(dateEnded:)
 
 **Framework**: LiveCommunicationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that conversation was successfully ended for the local member.
 

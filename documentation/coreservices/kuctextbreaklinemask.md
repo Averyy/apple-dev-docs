@@ -1,7 +1,8 @@
 # kUCTextBreakLineMask
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 If the bit specified by this mask is set, potential line breaks may be located.
 

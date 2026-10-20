@@ -1,7 +1,8 @@
 # SKCameraNode
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A node that determines which parts of the scene are visible within a view.
 
@@ -20,61 +21,66 @@ A node that determines which parts of the scene are visible within a view.
 class SKCameraNode
 ```
 
+```objc
+@interface SKCameraNode : SKNode
+```
+
 ## Mentions
 
-- [Positioning a Scene’s Origin Within its View](positioning-a-scene-s-origin-within-its-view.md)
-- [Using Base Nodes to Lay Out SpriteKit Content](using-base-nodes-to-lay-out-spritekit-content.md)
+- [Positioning a Scene’s Origin Within its View](./positioning-a-scene-s-origin-within-its-view.md)
+- [Using Base Nodes to Lay Out SpriteKit Content](./using-base-nodes-to-lay-out-spritekit-content.md)
 
 #### Overview
 
-If you don’t use a camera in your scene, you control the visible portion of a scene using its [`anchorPoint`](skscene/anchorpoint.md) property.
+If you don’t use a camera in your scene, you control the visible portion of a scene using its [`anchorPoint`](./skscene/anchorpoint.md) property.
 
 ## Topics
 
 ### First Steps
-- [Getting Started with a Camera](getting-started-with-a-camera.md)
+- [Getting Started with a Camera](./getting-started-with-a-camera.md)
   Learn the semantics of using a camera in your scene.
 ### Node Visibility
-- [func containedNodeSet() -> Set<SKNode>](skcameranode/containednodeset.md)
+- [func containedNodeSet() -> Set<SKNode>](./skcameranode/containednodeset%28%29.md)
   Finds nodes that are visible in the camera’s viewport.
-- [func contains(SKNode) -> Bool](skcameranode/contains(_:).md)
+- [func contains(SKNode) -> Bool](./skcameranode/contains%28_%29.md)
   Checks to see if a node is visible in the camera’s viewport.
 
 ## Relationships
 
 ### Inherits From
-- [SKNode](sknode.md)
+- [SKNode](./sknode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Using Base Nodes to Lay Out SpriteKit Content](using-base-nodes-to-lay-out-spritekit-content.md)
+### Base Nodes
+- [Using Base Nodes to Lay Out SpriteKit Content](./using-base-nodes-to-lay-out-spritekit-content.md)
   Use nonvisual nodes to define the layout of a scene.
-- [class SKNode](sknode.md)
+- [class SKNode](./sknode.md)
   The base class of all SpriteKit nodes.
-- [class SKReferenceNode](skreferencenode.md)
+- [class SKReferenceNode](./skreferencenode.md)
   A node that’s defined in an archived `.sks` file.
 
 

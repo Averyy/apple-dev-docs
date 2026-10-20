@@ -1,11 +1,12 @@
 # CustomDebugStringConvertible Implementations
 
-**Framework**: Swift Testing
+**Framework**: Swift Testing  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](attachableimageformat/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
 
 
 ---

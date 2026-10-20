@@ -1,7 +1,8 @@
 # replacingChildren(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new menu with the same configuration as the current menu, but with a new set of child elements.
 
@@ -18,6 +19,10 @@ Creates a new menu with the same configuration as the current menu, but with a n
 func replacingChildren(_ newChildren: [UIMenuElement]) -> UIMenu
 ```
 
+```objc
+- (UIMenu *) menuByReplacingChildren:(NSArray<UIMenuElement *> *) newChildren;
+```
+
 #### Return Value
 
 A new menu object containing the specified children.
@@ -32,7 +37,8 @@ The new menu contains the same title, image, identifier, and options as the curr
 
 ## See Also
 
-- [var children: [UIMenuElement]](uimenu/children.md)
+### Accessing child elements
+- [var children: [UIMenuElement]](./children.md)
   The contents of the menu.
 
 

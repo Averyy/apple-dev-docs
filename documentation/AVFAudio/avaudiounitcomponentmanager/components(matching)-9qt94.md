@@ -1,7 +1,8 @@
 # components(matching:)
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets an array of audio component objects that match the description.
 
@@ -19,19 +20,24 @@ Gets an array of audio component objects that match the description.
 func components(matching desc: AudioComponentDescription) -> [AVAudioUnitComponent]
 ```
 
+```objc
+- (NSArray<AVAudioUnitComponent *> *) componentsMatchingDescription:(AudioComponentDescription) desc;
+```
+
 #### Return Value
 
 An array of `AVAudioComponent` objects that match the `description`.
 
 #### Discussion
 
-- desc: The [`AudioComponentDescription`](https://developer.apple.com/documentation/audiotoolbox/audiocomponentdescription) structure to match. The method uses the `type`, `subtype` and `manufacturer` fields to search for matching audio units. A value of `0` for any of these fields is a wildcard and returns the first match the method finds.
+- desc: The [`AudioComponentDescription`](../../AudioToolbox/audiocomponentdescription.md) structure to match. The method uses the `type`, `subtype` and `manufacturer` fields to search for matching audio units. A value of `0` for any of these fields is a wildcard and returns the first match the method finds.
 
 ## See Also
 
-- [func components(matching: NSPredicate) -> [AVAudioUnitComponent]](avaudiounitcomponentmanager/components(matching:)-96l2c.md)
+### Getting matching audio components
+- [func components(matching: NSPredicate) -> [AVAudioUnitComponent]](./components%28matching%29-96l2c.md)
   Gets an array of audio component objects that match the search predicate.
-- [func components(passingTest: (AVAudioUnitComponent, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [AVAudioUnitComponent]](avaudiounitcomponentmanager/components(passingtest:).md)
+- [func components(passingTest: (AVAudioUnitComponent, UnsafeMutablePointer<ObjCBool>) -> Bool) -> [AVAudioUnitComponent]](./components%28passingtest%29.md)
   Gets an array of audio components that pass the block method.
 
 

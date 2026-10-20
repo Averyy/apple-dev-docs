@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date of the first payment.
 
@@ -19,13 +20,18 @@ The date of the first payment.
 var startDate: Date? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDate * startDate;
+```
+
 #### Discussion
 
 The default value is `nil` which requests the first payment as part of the initial transaction.
 
 ## See Also
 
-- [var endDate: Date?](pkrecurringpaymentsummaryitem/enddate.md)
+### Setting the payment period
+- [var endDate: Date?](./enddate.md)
   The date of the final payment.
 
 

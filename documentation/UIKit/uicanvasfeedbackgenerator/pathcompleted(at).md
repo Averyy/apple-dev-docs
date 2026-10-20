@@ -1,7 +1,8 @@
 # pathCompleted(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Triggers feedback to indicate path completion or shape recognition.
 
@@ -16,9 +17,14 @@ Triggers feedback to indicate path completion or shape recognition.
 func pathCompleted(at location: CGPoint)
 ```
 
+```objc
+- (void) pathCompletedAtLocation:(CGPoint) location;
+```
+
 ## See Also
 
-- [func alignmentOccurred(at: CGPoint)](uicanvasfeedbackgenerator/alignmentoccurred(at:).md)
+### Reporting canvas events
+- [func alignmentOccurred(at: CGPoint)](./alignmentoccurred%28at%29.md)
   Triggers feedback to indicate when an alignment occurs, such as snapping an object to a guide or ruler.
 
 

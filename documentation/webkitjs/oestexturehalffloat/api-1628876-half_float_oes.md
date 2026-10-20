@@ -9,7 +9,7 @@
 
 ## Declaration
 
-```swift
+```
 const GLenum HALF_FLOAT_OES;
 ```
 

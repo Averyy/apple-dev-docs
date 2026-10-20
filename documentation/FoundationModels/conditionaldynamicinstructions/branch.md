@@ -1,7 +1,8 @@
 # ConditionalDynamicInstructions.Branch
 
 **Framework**: Foundation Models  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that represents a condition to evaluate.
 
@@ -19,17 +20,20 @@ An enumeration that represents a condition to evaluate.
 enum Branch
 ```
 
+Available when `TrueContent` conforms to `DynamicInstructions` and `FalseContent` conforms to `DynamicInstructions`.
+
 ## Topics
 
 ### Branch cases
-- [ConditionalDynamicInstructions.Branch.falseContent(_:)](conditionaldynamicinstructions/branch/falsecontent(_:).md)
+- [ConditionalDynamicInstructions.Branch.falseContent(_:)](./branch/falsecontent%28_%29.md)
   A branch that represents false.
-- [ConditionalDynamicInstructions.Branch.trueContent(_:)](conditionaldynamicinstructions/branch/truecontent(_:).md)
+- [ConditionalDynamicInstructions.Branch.trueContent(_:)](./branch/truecontent%28_%29.md)
   A branch that represents true.
 
 ## See Also
 
-- [init(ConditionalDynamicInstructions<TrueContent, FalseContent>.Branch)](conditionaldynamicinstructions/init(_:).md)
+### Creating an instance
+- [init(ConditionalDynamicInstructions<TrueContent, FalseContent>.Branch)](./init%28_%29.md)
   Creates a dynamic instructions instance that selects between two conditions.
 
 

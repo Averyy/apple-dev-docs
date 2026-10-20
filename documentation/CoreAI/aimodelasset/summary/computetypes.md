@@ -1,7 +1,8 @@
 # computeTypes
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique compute type names the model uses.
 
@@ -20,7 +21,8 @@ var computeTypes: [String] { get }
 
 ## See Also
 
-- [var storageTypes: [AIModelAsset.Summary.StorageType]](aimodelasset/summary/storagetypes.md)
+### Inspecting precision information
+- [var storageTypes: [AIModelAsset.Summary.StorageType]](./storagetypes.md)
   The unique scalar storage types and their element counts.
 
 

@@ -1,7 +1,8 @@
 # AVAssetExportSession.ResumptionState.notResumable(failureReason:)
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The export session could not be configured for resumption.
 
@@ -25,7 +26,8 @@ case notResumable(failureReason: AVAssetExportSession.ResumptionFailureReason)
 
 ## See Also
 
-- [AVAssetExportSession.ResumptionState.resumable(isResumingFromPreviousState:)](avassetexportsession/resumptionstate/resumable(isresumingfrompreviousstate:).md)
+### Resumption states
+- [AVAssetExportSession.ResumptionState.resumable(isResumingFromPreviousState:)](./resumable%28isresumingfrompreviousstate%29.md)
   The export session is successfully configured for resumption.
 
 

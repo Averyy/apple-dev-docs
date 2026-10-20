@@ -1,7 +1,8 @@
 # members
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All participants of the conversation, including invited, but inactive remote participants.
 
@@ -20,11 +21,12 @@ var members: Set<Handle>? { get set }
 
 ## See Also
 
-- [var activeRemoteMembers: Set<Handle>?](conversation/update/activeremotemembers.md)
+### Attributes
+- [var activeRemoteMembers: Set<Handle>?](./activeremotemembers.md)
   All active remote participants.
-- [var capabilities: Conversation.Capabilities?](conversation/update/capabilities.md)
+- [var capabilities: Conversation.Capabilities?](./capabilities.md)
   Functionality that the conversation supports after the system applies the update.
-- [var localMember: Handle?](conversation/update/localmember.md)
+- [var localMember: Handle?](./localmember.md)
   The local participant in the conversation.
 
 

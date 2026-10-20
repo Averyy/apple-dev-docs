@@ -1,7 +1,8 @@
 # addFeedbackHandler(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a commit feedback handler that Metal calls with feedback data when available.
 
@@ -19,9 +20,13 @@ Registers a commit feedback handler that Metal calls with feedback data when ava
 func addFeedbackHandler(_ block: @escaping MTL4CommitFeedbackHandler)
 ```
 
+```objc
+- (void) addFeedbackHandler:(MTL4CommitFeedbackHandler) block;
+```
+
 ## Parameters
 
-- `block`: [`MTL4CommitFeedbackHandler`](mtl4commitfeedbackhandler.md) that Metal invokes.
+- `block`: [`MTL4CommitFeedbackHandler`](../mtl4commitfeedbackhandler.md) that Metal invokes.
 
 
 ---

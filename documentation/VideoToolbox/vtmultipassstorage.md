@@ -1,7 +1,8 @@
 # VTMultiPassStorage
 
 **Framework**: Video Toolbox  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for storing information for each frame of a multipass compression session.
 
@@ -19,6 +20,10 @@ An object for storing information for each frame of a multipass compression sess
 class VTMultiPassStorage
 ```
 
+```c
+typedef struct OpaqueVTMultiPassStorage * VTMultiPassStorageRef;
+```
+
 #### Overview
 
 The multipass storage object is a reference-counted CoreFoundation (CF) type. The data stored in the multipass storage object is private to the video encoder.
@@ -26,8 +31,8 @@ The multipass storage object is a reference-counted CoreFoundation (CF) type. Th
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 
 ---

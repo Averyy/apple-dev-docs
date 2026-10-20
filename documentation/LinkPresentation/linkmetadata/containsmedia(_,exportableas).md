@@ -1,7 +1,8 @@
 # containsMedia(_:exportableAs:)
 
 **Framework**: Link Presentation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines if a specific `Transferable` type can be loaded for an attachment in the metadata.
 

@@ -1,7 +1,8 @@
 # appendItem(at:pathInArchive:)
 
 **Framework**: AppMigrationKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a file to the archiver for export.
 

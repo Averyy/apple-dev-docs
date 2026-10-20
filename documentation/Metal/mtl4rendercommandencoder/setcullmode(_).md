@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Controls whether Metal culls front facing primitives, back facing primitives, or culls no primitives at all.
@@ -20,15 +21,20 @@ Controls whether Metal culls front facing primitives, back facing primitives, or
 func setCullMode(_ cullMode: MTLCullMode)
 ```
 
+```objc
+- (void) setCullMode:(MTLCullMode) cullMode;
+```
+
 ## Parameters
 
-- `cullMode`: [`MTLCullMode`](mtlcullmode.md) to set.
+- `cullMode`: [`MTLCullMode`](../mtlcullmode.md) to set.
 
 ## See Also
 
-- [func setTriangleFillMode(MTLTriangleFillMode)](mtl4rendercommandencoder/settrianglefillmode(_:).md)
+### Configuring rendering behavior
+- [func setTriangleFillMode(MTLTriangleFillMode)](./settrianglefillmode%28_%29.md)
   Configures how subsequent draw commands rasterize triangle and triangle strip primitives.
-- [func setFrontFacing(MTLWinding)](mtl4rendercommandencoder/setfrontfacing(_:).md)
+- [func setFrontFacing(MTLWinding)](./setfrontfacing%28_%29.md)
   Configures the vertex winding order that determines which face of a geometric primitive is the front one.
 
 

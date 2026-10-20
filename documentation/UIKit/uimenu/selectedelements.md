@@ -1,7 +1,8 @@
 # selectedElements
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The elements in the menu and its sub-menus that are in the on state.
 
@@ -16,6 +17,10 @@ The elements in the menu and its sub-menus that are in the on state.
 
 ```swift
 var selectedElements: [UIMenuElement] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<UIMenuElement *> * selectedElements;
 ```
 
 

@@ -1,16 +1,17 @@
 # toString
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Returns a string representation of this [`CloudKit.Container`](cloudkit.container.md) object.
+Returns a string representation of this [`CloudKit.Container`](../cloudkit.container.md) object.
 
 **Availability**:
 - CloudKit JS 1.0+
 
 ## Declaration
 
-```swift
+```
 String toString();
 ```
 

@@ -1,7 +1,8 @@
 # annotationSelected(_:forCandidate:)
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends the selected candidate string and annotation string to the input controller.
 
@@ -12,6 +13,10 @@ Sends the selected candidate string and annotation string to the input controlle
 
 ```swift
 func annotationSelected(_ annotationString: NSAttributedString!, forCandidate candidateString: NSAttributedString!)
+```
+
+```objc
+- (void) annotationSelected:(NSAttributedString *) annotationString forCandidate:(NSAttributedString *) candidateString;
 ```
 
 #### Discussion
@@ -25,9 +30,10 @@ This method is called when the user moves to a candidate.
 
 ## See Also
 
-- [func candidateSelectionChanged(NSAttributedString!)](imkinputcontroller/candidateselectionchanged(_:).md)
+### Tracking Selections
+- [func candidateSelectionChanged(NSAttributedString!)](./candidateselectionchanged%28_%29.md)
   Informs an input controller that the current candidate selection in the candidate window has changed.
-- [func candidateSelected(NSAttributedString!)](imkinputcontroller/candidateselected(_:).md)
+- [func candidateSelected(NSAttributedString!)](./candidateselected%28_%29.md)
   Informs an input controller that a new candidate is selected.
 
 

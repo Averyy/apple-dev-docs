@@ -1,7 +1,8 @@
 # cornerRadius
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radius, in points, for the rounded corners on the button.
 
@@ -18,6 +19,10 @@ The radius, in points, for the rounded corners on the button.
 var cornerRadius: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CGFloat cornerRadius;
+```
+
 #### Discussion
 
 To remove the rounded corners, set this value to 0.0.
@@ -26,9 +31,10 @@ The default value is `4.0`.
 
 ## See Also
 
-- [enum PKPaymentButtonType](pkpaymentbuttontype.md)
+### Configuring the appearance
+- [enum PKPaymentButtonType](../pkpaymentbuttontype.md)
   The Apple Pay button types you can display to initiate Apple Pay transactions.
-- [enum PKPaymentButtonStyle](pkpaymentbuttonstyle.md)
+- [enum PKPaymentButtonStyle](../pkpaymentbuttonstyle.md)
   A type that indicates the available appearances for an Apple Pay button.
 
 

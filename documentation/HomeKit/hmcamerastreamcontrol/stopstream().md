@@ -1,7 +1,8 @@
 # stopStream()
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the camera stream.
 
@@ -19,17 +20,22 @@ Stops the camera stream.
 func stopStream()
 ```
 
+```objc
+- (void) stopStream;
+```
+
 ## See Also
 
-- [func startStream()](hmcamerastreamcontrol/startstream.md)
+### Controlling the stream
+- [func startStream()](./startstream%28%29.md)
   Starts the camera stream.
-- [var cameraStream: HMCameraStream?](hmcamerastreamcontrol/camerastream.md)
+- [var cameraStream: HMCameraStream?](./camerastream.md)
   The current camera stream.
-- [class HMCameraStream](hmcamerastream.md)
+- [class HMCameraStream](../hmcamerastream.md)
   An object that represents a camera’s audiovisual stream.
-- [var streamState: HMCameraStreamState](hmcamerastreamcontrol/streamstate.md)
+- [var streamState: HMCameraStreamState](./streamstate.md)
   The current state of the camera stream.
-- [enum HMCameraStreamState](hmcamerastreamstate.md)
+- [enum HMCameraStreamState](../hmcamerastreamstate.md)
   The states associated with a camera stream.
 
 

@@ -1,7 +1,8 @@
 # draw(in:forPageAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the portion of a print formatter’s content for the specified area of the specified page.
 
@@ -17,9 +18,13 @@ Draws the portion of a print formatter’s content for the specified area of the
 func draw(in rect: CGRect, forPageAt pageIndex: Int)
 ```
 
+```objc
+- (void) drawInRect:(CGRect) rect forPageAtIndex:(NSInteger) pageIndex;
+```
+
 #### Discussion
 
-This method is called by the default implementation of `drawPrintFormatter:forPageAtIndex:` of the [`UIPrintPageRenderer`](uiprintpagerenderer.md) class for each print formatter associated with a page.
+This method is called by the default implementation of `drawPrintFormatter:forPageAtIndex:` of the [`UIPrintPageRenderer`](../uiprintpagerenderer.md) class for each print formatter associated with a page.
 
 ## Parameters
 
@@ -28,7 +33,8 @@ This method is called by the default implementation of `drawPrintFormatter:forPa
 
 ## See Also
 
-- [func rectForPage(at: Int) -> CGRect](uiprintformatter/rectforpage(at:).md)
+### Drawing the content
+- [func rectForPage(at: Int) -> CGRect](./rectforpage%28at%29.md)
   Returns the area that encloses a specified page of content.
 
 

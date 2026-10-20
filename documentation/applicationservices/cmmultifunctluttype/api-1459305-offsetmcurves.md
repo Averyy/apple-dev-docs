@@ -1,7 +1,8 @@
 # offsetMcurves
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.6+
@@ -10,6 +11,10 @@
 
 ```swift
 var offsetMcurves: UInt32
+```
+
+```c
+UInt32 offsetMcurves;
 ```
 
 

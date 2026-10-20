@@ -1,7 +1,8 @@
 # captions
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of captions that the system validates.
 
@@ -17,9 +18,14 @@ The array of captions that the system validates.
 var captions: [AVCaption] { get }
 ```
 
+```objc
+@property (readonly) NSArray<AVCaption *> * captions;
+```
+
 ## See Also
 
-- [var timeRange: CMTimeRange](avcaptionconversionvalidator/timerange.md)
+### Inspecting the validator
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range of the media timeline in which the captions must exist.
 
 

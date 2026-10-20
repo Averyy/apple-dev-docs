@@ -1,7 +1,8 @@
 # Tips.InvalidationReason.displayDurationExceeded
 
 **Framework**: TipKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The tip exceeded its max display duration.
 

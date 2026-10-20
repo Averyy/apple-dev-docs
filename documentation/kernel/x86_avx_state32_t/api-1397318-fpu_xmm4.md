@@ -1,14 +1,15 @@
 # fpu_xmm4
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 struct xmm_reg fpu_xmm4;
 ```
 

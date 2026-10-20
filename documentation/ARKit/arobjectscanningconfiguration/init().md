@@ -1,13 +1,14 @@
 # init()
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new object scanning configuration.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS
+- iPadOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Initializes a new object scanning configuration.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
-To use the configuration in an AR session, pass it to the [`ARSession`](arsession.md) [`run(_:options:)`](arsession/run(_:options:).md) method.
+To use the configuration in an AR session, pass it to the [`ARSession`](../arsession.md) [`run(_:options:)`](../arsession/run%28_,options%29.md) method.
 
 
 ---

@@ -1,7 +1,8 @@
 # artist
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The song’s musician.
 
@@ -16,11 +17,12 @@ var artist: String?
 
 ## See Also
 
-- [var song: String?](journalingsuggestion/song/song.md)
+### Identifying the song
+- [var song: String?](./song.md)
   The name of the song.
-- [var album: String?](journalingsuggestion/song/album.md)
+- [var album: String?](./album.md)
   The album that contains the song.
-- [var artwork: URL?](journalingsuggestion/song/artwork.md)
+- [var artwork: URL?](./artwork.md)
   The URL to an image on disk for the song artwork.
 
 

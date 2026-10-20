@@ -1,7 +1,8 @@
 # skip(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func skip(with params: MTRChannelClusterSkipChannelParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func skip(with params: MTRChannelClusterSkipChannelParams) async throws
+```
+
+```objc
+- (void) skipChannelWithParams:(MTRChannelClusterSkipChannelParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,14 +1,15 @@
 # ctl_connect_func
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef errno_t (*ctl_connect_func)(kern_ctl_ref kctlref, struct sockaddr_ctl *sac, void **unitinfo);
 ```
 

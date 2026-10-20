@@ -2,6 +2,7 @@
 
 **Framework**: Device Activity  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new configuration that represents the provided data.

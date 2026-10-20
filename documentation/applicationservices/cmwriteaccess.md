@@ -1,7 +1,8 @@
 # cmWriteAccess
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Write the number of bytes specified by the `size` parameter.
 

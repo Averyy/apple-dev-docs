@@ -1,7 +1,8 @@
 # webView(_:navigationAction:didBecome:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a navigation action became a download.
 
@@ -18,6 +19,10 @@ Tells the delegate that a navigation action became a download.
 optional func webView(_ webView: WKWebView, navigationAction: WKNavigationAction, didBecome download: WKDownload)
 ```
 
+```objc
+- (void) webView:(WKWebView *) webView navigationAction:(WKNavigationAction *) navigationAction didBecomeDownload:(WKDownload *) download;
+```
+
 #### Discussion
 
 Implement this method to begin tracking download progress.
@@ -30,7 +35,8 @@ Implement this method to begin tracking download progress.
 
 ## See Also
 
-- [func webView(WKWebView, navigationResponse: WKNavigationResponse, didBecome: WKDownload)](wknavigationdelegate/webview(_:navigationresponse:didbecome:).md)
+### Handling download progress
+- [func webView(WKWebView, navigationResponse: WKNavigationResponse, didBecome: WKDownload)](./webview%28_,navigationresponse,didbecome%29.md)
   Tells the delegate that a navigation response became a download.
 
 

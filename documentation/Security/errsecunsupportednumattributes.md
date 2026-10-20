@@ -1,7 +1,8 @@
 # errSecUnsupportedNumAttributes
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of attributes is not supported.
 
@@ -18,6 +19,10 @@ The number of attributes is not supported.
 
 ```swift
 var errSecUnsupportedNumAttributes: OSStatus { get }
+```
+
+```c
+errSecUnsupportedNumAttributes
 ```
 
 

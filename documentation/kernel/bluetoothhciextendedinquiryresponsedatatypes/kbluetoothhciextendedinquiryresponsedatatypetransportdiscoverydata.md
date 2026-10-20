@@ -1,14 +1,15 @@
 # kBluetoothHCIExtendedInquiryResponseDataTypeTransportDiscoveryData
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12.1+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCIExtendedInquiryResponseDataTypeTransportDiscoveryData = 0x26
 ```
 

@@ -1,7 +1,8 @@
 # init(parts:recipients:subject:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an MMS content instance with the provided values.
 
@@ -22,7 +23,8 @@ init(parts: [MMSPartContent], recipients: [MMSHandle], subject: String? = nil)
 
 ## See Also
 
-- [init()](mmscontent/init.md)
+### Creating an MMS content instance
+- [init()](./init%28%29.md)
   Creates an empty MMS content instance.
 
 

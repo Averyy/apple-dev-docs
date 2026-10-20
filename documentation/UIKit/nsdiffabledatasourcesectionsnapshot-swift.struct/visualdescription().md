@@ -1,7 +1,8 @@
 # visualDescription()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string with an ASCII representation of the section snapshot.
 
@@ -10,7 +11,7 @@ Returns a string with an ASCII representation of the section snapshot.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

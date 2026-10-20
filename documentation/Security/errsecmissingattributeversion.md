@@ -1,7 +1,8 @@
 # errSecMissingAttributeVersion
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A version attribute is missing.
 
@@ -18,6 +19,10 @@ A version attribute is missing.
 
 ```swift
 var errSecMissingAttributeVersion: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeVersion
 ```
 
 

@@ -1,7 +1,8 @@
 # init(constant:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an imputer with a constant value to use when replacing missing values.
 
@@ -22,7 +23,8 @@ init(constant: Element)
 
 ## See Also
 
-- [init(CategoricalImputer<Element>.Strategy)](categoricalimputer/init(_:).md)
+### Creating an estimator
+- [init(CategoricalImputer<Element>.Strategy)](./init%28_%29.md)
   Creates an imputer with a strategy.
 
 

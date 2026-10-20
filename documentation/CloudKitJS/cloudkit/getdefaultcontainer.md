@@ -1,7 +1,8 @@
 # getDefaultContainer
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the default container.
 
@@ -10,7 +11,7 @@ Returns the default container.
 
 ## Declaration
 
-```swift
+```
 CloudKit.Container getDefaultContainer();
 ```
 
@@ -20,9 +21,10 @@ The default container (the first container that appears in the configuration lis
 
 ## See Also
 
-- [getContainer](cloudkit/getcontainer.md)
+### Accessing Containers
+- [getContainer](./getcontainer.md)
   Returns the container with the specified container ID.
-- [getAllContainers](cloudkit/getallcontainers.md)
+- [getAllContainers](./getallcontainers.md)
   Returns all the containers that were configured.
 
 

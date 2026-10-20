@@ -1,7 +1,8 @@
 # title
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that displays in a window’s title bar.
 
@@ -15,13 +16,18 @@ The string that displays in a window’s title bar.
 var title: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * title;
+```
+
 ## See Also
 
-- [var windowID: CGWindowID](scwindow/windowid.md)
+### Identifying windows
+- [var windowID: CGWindowID](./windowid.md)
   The Core Graphics window identifier.
-- [var owningApplication: SCRunningApplication?](scwindow/owningapplication.md)
+- [var owningApplication: SCRunningApplication?](./owningapplication.md)
   The app that owns the window.
-- [var windowLayer: Int](scwindow/windowlayer.md)
+- [var windowLayer: Int](./windowlayer.md)
   The layer of the window relative to other windows.
 
 

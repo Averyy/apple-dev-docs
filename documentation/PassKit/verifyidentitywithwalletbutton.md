@@ -1,7 +1,8 @@
 # VerifyIdentityWithWalletButton
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that displays a button to present the identity verification flow.
 
@@ -9,7 +10,7 @@ A type that displays a button to present the identity verification flow.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -20,9 +21,9 @@ A type that displays a button to present the identity verification flow.
 
 #### Overview
 
-Use this structure as the SwiftUI equivalent to [`PKIdentityButton`](pkidentitybutton.md). The system allows one in-progress identity request at a time. Otherwise, it returns a [`PKIdentityError.Code.requestAlreadyInProgress`](pkidentityerror-swift.struct/code/requestalreadyinprogress.md) error.
+Use this structure as the SwiftUI equivalent to [`PKIdentityButton`](./pkidentitybutton.md). The system allows one in-progress identity request at a time. Otherwise, it returns a [`PKIdentityError.Code.requestAlreadyInProgress`](./pkidentityerror-swift.struct/code/requestalreadyinprogress.md) error.
 
-This example shows an implementation of the Verify Identity with Wallet button. For more information, see [`Requesting identity data from a Wallet pass`](requesting-identity-data-from-a-wallet-pass.md).
+This example shows an implementation of the Verify Identity with Wallet button. For more information, see [Requesting identity data from a Wallet pass](./requesting-identity-data-from-a-wallet-pass.md).
 
 ```swift
 // Create an identity request.
@@ -69,35 +70,36 @@ func createRequest() -> PKIdentityRequest {
 ## Topics
 
 ### Creating the button
-- [init(VerifyIdentityWithWalletButtonLabel, action: () -> Void)](verifyidentitywithwalletbutton/init(_:action:).md)
+- [init(VerifyIdentityWithWalletButtonLabel, action: () -> Void)](./verifyidentitywithwalletbutton/init%28_,action%29.md)
   Creates a verify identity button that starts the identity authorization flow.
-- [init(VerifyIdentityWithWalletButtonLabel, request: PKIdentityRequest, onCompletion: (Result<PKIdentityDocument, any Error>) -> Void)](verifyidentitywithwalletbutton/init(_:request:oncompletion:).md)
+- [init(VerifyIdentityWithWalletButtonLabel, request: PKIdentityRequest, onCompletion: (Result<PKIdentityDocument, any Error>) -> Void)](./verifyidentitywithwalletbutton/init%28_,request,oncompletion%29.md)
   Creates a verify identity button that starts the identity authorization flow, with a completion handler.
-- [init(VerifyIdentityWithWalletButtonLabel, request: PKIdentityRequest, onCompletion: (Result<PKIdentityDocument, any Error>) -> Void, fallback: () -> Fallback)](verifyidentitywithwalletbutton/init(_:request:oncompletion:fallback:).md)
+- [init(VerifyIdentityWithWalletButtonLabel, request: PKIdentityRequest, onCompletion: (Result<PKIdentityDocument, any Error>) -> Void, fallback: () -> Fallback)](./verifyidentitywithwalletbutton/init%28_,request,oncompletion,fallback%29.md)
   Creates a verify identity button that starts the identity authorization flow, with a fallback view to use if the app can’t start the flow.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [class PKIdentityAuthorizationController](pkidentityauthorizationcontroller.md)
+### Identity sheet interactions and authorization
+- [class PKIdentityAuthorizationController](./pkidentityauthorizationcontroller.md)
   An object that presents a sheet that prompts the user to allow a request for identity information.
-- [class PKIdentityRequest](pkidentityrequest.md)
+- [class PKIdentityRequest](./pkidentityrequest.md)
   An object that represents a request for identity information from a Wallet pass.
-- [class PKIdentityDocument](pkidentitydocument.md)
+- [class PKIdentityDocument](./pkidentitydocument.md)
   An object that represents the response to a request.
-- [class PKIdentityElement](pkidentityelement.md)
+- [class PKIdentityElement](./pkidentityelement.md)
   An object that represents the elements an app requests from identity documents.
-- [class PKIdentityButton](pkidentitybutton.md)
+- [class PKIdentityButton](./pkidentitybutton.md)
   An object that displays a button to trigger the identity verification flow.
-- [struct VerifyIdentityWithWalletButtonLabel](verifyidentitywithwalletbuttonlabel.md)
+- [struct VerifyIdentityWithWalletButtonLabel](./verifyidentitywithwalletbuttonlabel.md)
   A type that represents the label you use with a verify identity button.
-- [struct VerifyIdentityWithWalletButtonStyle](verifyidentitywithwalletbuttonstyle.md)
+- [struct VerifyIdentityWithWalletButtonStyle](./verifyidentitywithwalletbuttonstyle.md)
   A type that represents the style you use with a verify identity button.
 
 

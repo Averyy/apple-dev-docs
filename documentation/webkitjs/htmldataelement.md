@@ -1,7 +1,8 @@
 # HTMLDataElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLDataElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [value](htmldataelement/1777790-value.md)
+- [value](./htmldataelement/api-1777790-value.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

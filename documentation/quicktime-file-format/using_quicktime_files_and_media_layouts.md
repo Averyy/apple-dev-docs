@@ -1,6 +1,7 @@
 # Using QuickTime files and media layouts
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 #### Overview
 

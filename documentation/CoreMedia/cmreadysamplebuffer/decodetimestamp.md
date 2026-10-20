@@ -1,7 +1,8 @@
 # decodeTimeStamp
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Numerically earliest sample decode timestamp in the sample buffer.
 
@@ -24,7 +25,7 @@ var decodeTimeStamp: CMTime { get }
 
 Return the decode timestamp of the first sample in the buffer, since even out-of-presentation-order samples are expected to be in decode order in the buffer.
 
-Returns [`invalid`](cmtime/invalid.md) if `sampleTimings` is empty or contains invalid [`decodeTimeStamp`](cmsampletiminginfo/decodetimestamp.md).
+Returns [`invalid`](../cmtime/invalid.md) if `sampleTimings` is empty or contains invalid [`decodeTimeStamp`](../cmsampletiminginfo/decodetimestamp.md).
 
 
 ---

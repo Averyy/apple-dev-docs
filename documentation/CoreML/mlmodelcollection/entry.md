@@ -1,15 +1,18 @@
 # MLModelCollection.Entry
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A model and its identifier within a model collection.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- visionOS 1.0+ - Deprecated in 1.1
+
+> **Deprecated**: Use [Background Assets](../../BackgroundAssets/BackgroundAssets.md) or [`URLSession`](../../Foundation/urlsession.md) instead.
 
 ## Declaration
 
@@ -17,33 +20,38 @@ A model and its identifier within a model collection.
 class Entry
 ```
 
+```objc
+@interface MLModelCollectionEntry : NSObject
+```
+
 ## Topics
 
 ### Identifying a model
-- [var modelIdentifier: String](mlmodelcollection/entry/modelidentifier.md)
+- [var modelIdentifier: String](./entry/modelidentifier.md)
   The name of the model, which is unique to the collection.
 ### Locating a compiled model file
-- [var modelURL: URL](mlmodelcollection/entry/modelurl.md)
+- [var modelURL: URL](./entry/modelurl.md)
   The compiled model’s location on the device’s file system.
 ### Comparing model collection entries
-- [func isEqual(to: MLModelCollection.Entry) -> Bool](mlmodelcollection/entry/isequal(to:).md)
+- [func isEqual(to: MLModelCollection.Entry) -> Bool](./entry/isequal%28to%29.md)
   Returns a Boolean value that indicates whether the two entries are equal.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var entries: [String : MLModelCollection.Entry]](mlmodelcollection/entries.md)
+### Retreiving models from a collection
+- [var entries: [String : MLModelCollection.Entry]](./entries.md)
   A dictionary of model entries keyed to the models’ identifiers.
 
 

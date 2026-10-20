@@ -1,7 +1,8 @@
 # init(string:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a Core Image color object in the sRGB color space using a string containing the RGBA color component values.
 
@@ -10,7 +11,7 @@ Create a Core Image color object in the sRGB color space using a string containi
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,9 +20,13 @@ Create a Core Image color object in the sRGB color space using a string containi
 convenience init(string representation: String)
 ```
 
+```objc
++ (instancetype) colorWithString:(NSString *) representation;
+```
+
 #### Return Value
 
- An autoreleased [`CIColor`](cicolor.md) instance.
+ An autoreleased [`CIColor`](../cicolor.md) instance.
 
 #### Discussion
 
@@ -33,11 +38,12 @@ On macOS before 10.10, the CIColor’s color space will be Generic RGB.
 
 ## See Also
 
-- [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat)](cicolor/init(red:green:blue:).md)
+### Creating Color Objects
+- [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat)](./init%28red,green,blue%29.md)
   Create a Core Image color object in the sRGB color space with the specified red, green, and blue component values.
-- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](cicolor/init(red:green:blue:colorspace:)-2og6y.md)
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](./init%28red,green,blue,colorspace%29-2og6y.md)
   Create a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
-- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)](cicolor/init(red:green:blue:alpha:colorspace:)-5mvff.md)
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)](./init%28red,green,blue,alpha,colorspace%29-5mvff.md)
   Create a Core Image color object with the specified red, green, blue, and alpha component values as measured in the specified color space.
 
 

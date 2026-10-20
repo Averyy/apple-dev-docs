@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOHIDAccelerationAlgorithmTypeDefault](4160772-anonymous/kiohidaccelerationalgorithmtypedefault.md)
-- [kIOHIDAccelerationAlgorithmTypeParametric](4160772-anonymous/kiohidaccelerationalgorithmtypeparametric.md)
-- [kIOHIDAccelerationAlgorithmTypeTable](4160772-anonymous/kiohidaccelerationalgorithmtypetable.md)
+- [kIOHIDAccelerationAlgorithmTypeDefault](./api-4160772-anonymous/kiohidaccelerationalgorithmtypedefault.md)
+- [kIOHIDAccelerationAlgorithmTypeParametric](./api-4160772-anonymous/kiohidaccelerationalgorithmtypeparametric.md)
+- [kIOHIDAccelerationAlgorithmTypeTable](./api-4160772-anonymous/kiohidaccelerationalgorithmtypetable.md)
 
 
 ---

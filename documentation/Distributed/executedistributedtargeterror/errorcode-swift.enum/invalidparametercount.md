@@ -1,7 +1,8 @@
 # ExecuteDistributedTargetError.ErrorCode.invalidParameterCount
 
 **Framework**: Distributed  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Call target has different number of parameters than arguments provided by the invocation decoder.
 
@@ -11,7 +12,7 @@ Call target has different number of parameters than arguments provided by the in
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

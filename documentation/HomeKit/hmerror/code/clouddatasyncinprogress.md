@@ -1,7 +1,8 @@
 # HMError.Code.cloudDataSyncInProgress
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating a data synchronization operation is in progress.
 
@@ -19,9 +20,14 @@ An error indicating a data synchronization operation is in progress.
 case cloudDataSyncInProgress
 ```
 
+```c
+HMErrorCodeCloudDataSyncInProgress
+```
+
 ## See Also
 
-- [HMError.Code.keychainSyncNotEnabled](hmerror/code/keychainsyncnotenabled.md)
+### Synchronization errors
+- [HMError.Code.keychainSyncNotEnabled](./keychainsyncnotenabled.md)
   An error indicating Keychain syncing is not enabled for the user.
 
 

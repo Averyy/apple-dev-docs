@@ -1,7 +1,8 @@
 # init(commandBuffer:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(commandBuffer: any MTLCommandBuffer)
+```
+
+```objc
+- (instancetype) initWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer;
 ```
 
 

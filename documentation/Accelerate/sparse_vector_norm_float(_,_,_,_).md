@@ -1,7 +1,8 @@
 # sparse_vector_norm_float(_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Computes the specified norm of the single-precision sparse vector *x*.
 
@@ -20,6 +21,10 @@ Computes the specified norm of the single-precision sparse vector *x*.
 func sparse_vector_norm_float(_ nz: sparse_dimension, _ x: UnsafePointer<Float>!, _ indx: UnsafePointer<sparse_index>!, _ norm: sparse_norm) -> Float
 ```
 
+```c
+float sparse_vector_norm_float(sparse_dimension nz, const float * restrictx, const sparse_index * restrictindx, sparse_norm norm);
+```
+
 #### Return Value
 
 The requested norm.
@@ -28,9 +33,9 @@ The requested norm.
 
 Compute the specified norm of the sparse vector *x*.  Specify one of:
 
-| [`SPARSE_NORM_ONE`](sparse_norm_one.md) | *sumᵢ ( | x[i] | )* | |—|—| | [`SPARSE_NORM_TWO`](sparse_norm_two.md) | *sqrt* *( sumᵢ (x[i])² )*__ | | [`SPARSE_NORM_INF`](sparse_norm_inf.md) | *maxᵢ( | x[i] | )*__ | | [`SPARSE_NORM_R1`](sparse_norm_r1.md) | Not supported, undefined. |
+| [`SPARSE_NORM_ONE`](./sparse_norm_one.md) | *sumᵢ ( | x[i] | )* | |—|—| | [`SPARSE_NORM_TWO`](./sparse_norm_two.md) | *sqrt* *( sumᵢ (x[i])² )*__ | | [`SPARSE_NORM_INF`](./sparse_norm_inf.md) | *maxᵢ( | x[i] | )*__ | | [`SPARSE_NORM_R1`](./sparse_norm_r1.md) | Not supported, undefined. |
 
-If `norm` is not one of the enumerated norm types, the default value is [`SPARSE_NORM_INF`](sparse_norm_inf.md).
+If `norm` is not one of the enumerated norm types, the default value is [`SPARSE_NORM_INF`](./sparse_norm_inf.md).
 
 Indices in `indx` are always assumed to be stored in ascending order. Additionally, indices are assumed to be unique.  The behavior of this function is undefined if either of these assumptions are not met.
 
@@ -43,23 +48,24 @@ All indices are 0 based (the first element of a pointer is `ptr[0]`).
 - `nz`: The number of nonzero values in the sparse vector *x*.
 - `x`: Pointer to the dense storage for the values of the sparse vector *x*. The corresponding entry in indx holds the index of the value. Contains `nz` values.
 - `indx`: Pointer to the dense storage for the index values of the sparse vector *x*. The corresponding entry in *x* holds the values of the vector. Contains `nz` values.
-- `norm`: The norm to be computed. Must be one of [`SPARSE_NORM_ONE`](sparse_norm_one.md), [`SPARSE_NORM_TWO`](sparse_norm_two.md), or [`SPARSE_NORM_INF`](sparse_norm_inf.md). See discussion for further details.
+- `norm`: The norm to be computed. Must be one of [`SPARSE_NORM_ONE`](./sparse_norm_one.md), [`SPARSE_NORM_TWO`](./sparse_norm_two.md), or [`SPARSE_NORM_INF`](./sparse_norm_inf.md). See discussion for further details.
 
 ## See Also
 
-- [func sparse_inner_product_dense_double(sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafePointer<Double>!, sparse_stride) -> Double](sparse_inner_product_dense_double(_:_:_:_:_:).md)
+### Vector-Vector Operations
+- [func sparse_inner_product_dense_double(sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafePointer<Double>!, sparse_stride) -> Double](./sparse_inner_product_dense_double%28_,_,_,_,_%29.md)
   Computes the inner product of sparse vector *x* with double-precision *y*, with both vectors containing double-precision values.
-- [func sparse_inner_product_dense_float(sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafePointer<Float>!, sparse_stride) -> Float](sparse_inner_product_dense_float(_:_:_:_:_:).md)
+- [func sparse_inner_product_dense_float(sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafePointer<Float>!, sparse_stride) -> Float](./sparse_inner_product_dense_float%28_,_,_,_,_%29.md)
   Computes the inner product of sparse vector *x* with dense vector *y,* with both vectors containing single-precision values.
-- [func sparse_inner_product_sparse_double(sparse_dimension, sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafePointer<Double>!, UnsafePointer<sparse_index>!) -> Double](sparse_inner_product_sparse_double(_:_:_:_:_:_:).md)
+- [func sparse_inner_product_sparse_double(sparse_dimension, sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafePointer<Double>!, UnsafePointer<sparse_index>!) -> Double](./sparse_inner_product_sparse_double%28_,_,_,_,_,_%29.md)
   Computes the inner product of sparse vector *x* with sparse vector *y,* with both vectors containing double-precision values.
-- [func sparse_inner_product_sparse_float(sparse_dimension, sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafePointer<Float>!, UnsafePointer<sparse_index>!) -> Float](sparse_inner_product_sparse_float(_:_:_:_:_:_:).md)
+- [func sparse_inner_product_sparse_float(sparse_dimension, sparse_dimension, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafePointer<Float>!, UnsafePointer<sparse_index>!) -> Float](./sparse_inner_product_sparse_float%28_,_,_,_,_,_%29.md)
   Computes the inner product of sparse vector *x* with sparse vector *y,* with both vectors containing single-precision values.
-- [func sparse_vector_add_with_scale_dense_double(sparse_dimension, Double, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Double>!, sparse_stride)](sparse_vector_add_with_scale_dense_double(_:_:_:_:_:_:).md)
+- [func sparse_vector_add_with_scale_dense_double(sparse_dimension, Double, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Double>!, sparse_stride)](./sparse_vector_add_with_scale_dense_double%28_,_,_,_,_,_%29.md)
   Scales the sparse vector *x* by *alpha* and adds the result to the dense vector *y,* with both vectors containing double-precision values.
-- [func sparse_vector_add_with_scale_dense_float(sparse_dimension, Float, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Float>!, sparse_stride)](sparse_vector_add_with_scale_dense_float(_:_:_:_:_:_:).md)
+- [func sparse_vector_add_with_scale_dense_float(sparse_dimension, Float, UnsafePointer<Float>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<Float>!, sparse_stride)](./sparse_vector_add_with_scale_dense_float%28_,_,_,_,_,_%29.md)
   Scales the sparse vector *x* by *alpha* and adds the result to the dense vector *y,* with both vectors containing single-precision values.
-- [func sparse_vector_norm_double(sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, sparse_norm) -> Double](sparse_vector_norm_double(_:_:_:_:).md)
+- [func sparse_vector_norm_double(sparse_dimension, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, sparse_norm) -> Double](./sparse_vector_norm_double%28_,_,_,_%29.md)
   Computes the specified norm of the double-precision sparse vector *x*.
 
 

@@ -1,7 +1,8 @@
 # errSecCSHelperFailed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The codesign_allocate helper tool can’t be found or used.
 
@@ -13,6 +14,10 @@ The codesign_allocate helper tool can’t be found or used.
 
 ```swift
 var errSecCSHelperFailed: OSStatus { get }
+```
+
+```c
+errSecCSHelperFailed
 ```
 
 

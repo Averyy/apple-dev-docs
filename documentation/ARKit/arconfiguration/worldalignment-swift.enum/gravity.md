@@ -1,7 +1,8 @@
 # ARConfiguration.WorldAlignment.gravity
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The coordinate system’s y-axis is parallel to gravity, and its origin is the initial position of the device.
 
@@ -15,19 +16,24 @@ The coordinate system’s y-axis is parallel to gravity, and its origin is the i
 case gravity
 ```
 
+```c
+ARWorldAlignmentGravity
+```
+
 #### Discussion
 
 The y-axis matches the direction of gravity as detected by the device’s motion sensing hardware; that is, the vector `(0,-1,0)` points downward.
 
 The position and orientation of the device as of when the session configuration is first run determine the rest of the coordinate system: For the z-axis, ARKit chooses a basis vector `(0,0,-1)` pointing in the direction the device camera faces and perpendicular to the gravity axis. ARKit chooses a x-axis based on the z- and y-axes using the right hand rule—that is, the basis vector `(1,0,0)` is orthogonal to the other two axes, and (for a viewer looking in the negative-z direction) points toward the right.
 
-![None](/images/com.apple.arkit/media-2891463@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.arkit/media-2891463@2x.png)
 
 ## See Also
 
-- [ARConfiguration.WorldAlignment.gravityAndHeading](arconfiguration/worldalignment-swift.enum/gravityandheading.md)
+### Alignments
+- [ARConfiguration.WorldAlignment.gravityAndHeading](./gravityandheading.md)
   The coordinate system’s y-axis is parallel to gravity, its x- and z-axes are oriented to compass heading, and its origin is the initial position of the device.
-- [ARConfiguration.WorldAlignment.camera](arconfiguration/worldalignment-swift.enum/camera.md)
+- [ARConfiguration.WorldAlignment.camera](./camera.md)
   The scene coordinate system is locked to match the orientation of the camera.
 
 

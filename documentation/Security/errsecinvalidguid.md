@@ -1,7 +1,8 @@
 # errSecInvalidGUID
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid GUID was detected.
 
@@ -18,6 +19,10 @@ An invalid GUID was detected.
 
 ```swift
 var errSecInvalidGUID: OSStatus { get }
+```
+
+```c
+errSecInvalidGUID
 ```
 
 

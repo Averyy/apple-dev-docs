@@ -1,18 +1,19 @@
 # CGPDFInteger
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A PDF integer value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ A PDF integer value.
 typealias CGPDFInteger = Int
 ```
 
+```c
+typedef long CGPDFInteger;
+```
+
 ## See Also
 
-- [struct CGPDFObjectRef](cgpdfobjectref.md)
+### Data Types
+- [struct CGPDFObjectRef](./cgpdfobjectref.md)
   A type that contains information about a PDF object.
-- [typealias CGPDFBoolean](cgpdfboolean.md)
+- [typealias CGPDFBoolean](./cgpdfboolean.md)
   A PDF Boolean value.
-- [typealias CGPDFReal](cgpdfreal.md)
+- [typealias CGPDFReal](./cgpdfreal.md)
   A PDF real value.
 
 

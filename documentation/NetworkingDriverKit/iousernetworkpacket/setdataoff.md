@@ -1,14 +1,15 @@
 # setDataOff
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 23.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setDataOff(size_t offset);
 ```
 

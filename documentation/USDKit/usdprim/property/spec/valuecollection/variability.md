@@ -1,7 +1,8 @@
 # variability
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property’s variability (varying, uniform, or config).
 

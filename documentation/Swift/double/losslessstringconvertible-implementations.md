@@ -1,11 +1,12 @@
 # LosslessStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?<S>(S)](double/init(_:)-5wmm8.md)
+- [init?<S>(S)](./init%28_%29-5wmm8.md)
   Creates a new instance from the given string.
 
 

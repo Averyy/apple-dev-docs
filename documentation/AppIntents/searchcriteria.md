@@ -1,7 +1,8 @@
 # SearchCriteria
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface for defining the criteria to use when searching your app’s content.
 
@@ -11,7 +12,7 @@ An interface for defining the criteria to use when searching your app’s conten
 - Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
-- visionOS ?+
+- visionOS
 - watchOS 10.2+
 
 ## Declaration
@@ -27,23 +28,24 @@ The system uses this protocol to define the search criteria it supports. Use onl
 ## Topics
 
 ### Associated Types
-- [associatedtype SearchScopes = Void](searchcriteria/searchscopes.md)
+- [associatedtype SearchScopes = Void](./searchcriteria/searchscopes.md)
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [StringSearchCriteria](stringsearchcriteria.md)
+- [StringSearchCriteria](./stringsearchcriteria.md)
 
 ## See Also
 
-- [var criteria: Self.Criteria](showinappsearchresultsintent/criteria-swift.property.md)
+### Providing the search criteria
+- [var criteria: Self.Criteria](./showinappsearchresultsintent/criteria-swift.property.md)
   The information to use when performing the search.
-- [associatedtype Criteria : SearchCriteria](showinappsearchresultsintent/criteria-swift.associatedtype.md)
+- [associatedtype Criteria : SearchCriteria](./showinappsearchresultsintent/criteria-swift.associatedtype.md)
 
 
 ---

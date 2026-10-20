@@ -1,25 +1,26 @@
 # Setting Up a Key Server
 
-**Framework**: Exposure Notification
+**Framework**: Exposure Notification  
+**Role**: Article
 
 Ensure that your server meets the requirements for supporting Exposure Notifications.
 
 #### Overview
 
-Apps that use the [`Exposure Notification`](ExposureNotification.md) framework rely on a key server to identify potential exposure to individuals diagnosed with COVID-19, the disease caused by the SARS-CoV-2 virus. The key server is responsible for collecting and distributing exposure keys to allow on-device exposure detection. This article describes how to provide the data that allows exposure notification to work, and details the data format the [`Exposure Notification`](ExposureNotification.md) framework requires.
+Apps that use the [Exposure Notification](./ExposureNotification.md) framework rely on a key server to identify potential exposure to individuals diagnosed with COVID-19, the disease caused by the SARS-CoV-2 virus. The key server is responsible for collecting and distributing exposure keys to allow on-device exposure detection. This article describes how to provide the data that allows exposure notification to work, and details the data format the [Exposure Notification](./ExposureNotification.md) framework requires.
 
 A key server, at a minimum, must allow exposure notification clients to:
 
 - Retrieve diagnosis keys so they can check for potential exposures
 - Submit temporary exposure keys
 
-If providing a client app, a Health Authority can choose how to implement these capabilities as long as the data that passes to and from the exposure notification client conforms to the data formats this article describes. To support Exposure Notifications Express, which allows exposure notifications without an app in iOS 13.7 and above, a key server’s functionality must conform to specific requirements. For more information on how to support Exposure Notifications Express with your key server, see [`Configuring a Key Server for Exposure Notifications Express`](configuring-a-key-server-for-exposure-notifications-express.md).
+If providing a client app, a Health Authority can choose how to implement these capabilities as long as the data that passes to and from the exposure notification client conforms to the data formats this article describes. To support Exposure Notifications Express, which allows exposure notifications without an app in iOS 13.7 and above, a key server’s functionality must conform to specific requirements. For more information on how to support Exposure Notifications Express with your key server, see [Configuring a Key Server for Exposure Notifications Express](./configuring-a-key-server-for-exposure-notifications-express.md).
 
-Google has created an [`implementation of a key server `](https://developer.apple.comhttps://github.com/google/exposure-notifications-server/)that you can use as a reference, or as a starting point for creating your own key server.
+Google has created an [implementation of a key server ](https://github.com/google/exposure-notifications-server/)that you can use as a reference, or as a starting point for creating your own key server.
 
 > **Note**:  Diagnosis keys are temporary exposure keys for individuals who have had a positive diagnosis of COVID-19.
 
-Before you begin setting up your key server, [`request an Exposure Notification Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/exposure-notification-entitlement). Once your request is accepted, you’ll be asked to provide information that clients will use to authenticate the data they receive from your server, such as its public key.
+Before you begin setting up your key server, [request an Exposure Notification Entitlement](https://developer.apple.com/contact/request/exposure-notification-entitlement). Once your request is accepted, you’ll be asked to provide information that clients will use to authenticate the data they receive from your server, such as its public key.
 
 ##### Reject Invalid Temporary Exposure Keys
 
@@ -30,7 +31,7 @@ A key server must reject invalid key files uploaded from a client app. Uploaded 
 
 If `TEKRollingPeriod` is not included, use a default value of 144. You may optionally want to validate the clock time the device submits.
 
-For detailed information on implementing key validity checks, see [`Exposure Notification Cryptography Specification`](https://developer.apple.comhttps://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ExposureNotification-CryptographySpecificationv1.2.pdf).
+For detailed information on implementing key validity checks, see [Exposure Notification Cryptography Specification](https://covid19-static.cdn-apple.com/applications/covid19/current/static/contact-tracing/pdf/ExposureNotification-CryptographySpecificationv1.2.pdf).
 
 ##### Take Precautions with Temporary Exposure Keys
 
@@ -166,21 +167,22 @@ To calculate the `signature` data inside a `TEKSignature` message, start by gene
 
 ## See Also
 
-- [Supporting Exposure Notifications Express](supporting-exposure-notifications-express.md)
+### Essentials
+- [Supporting Exposure Notifications Express](./supporting-exposure-notifications-express.md)
   Configure servers to notify users of potential exposures to COVID-19 without an app.
-- [Building an App to Notify Users of COVID-19 Exposure](building-an-app-to-notify-users-of-covid-19-exposure.md)
+- [Building an App to Notify Users of COVID-19 Exposure](./building-an-app-to-notify-users-of-covid-19-exposure.md)
   Inform people when they may have been exposed to COVID-19.
-- [class ENManager](enmanager.md)
+- [class ENManager](./enmanager.md)
   A class that manages exposure notifications.
-- [ENDeveloperRegion](../bundleresources/information-property-list/endeveloperregion.md)
+- [ENDeveloperRegion](../BundleResources/information-property-list/endeveloperregion.md)
   A string that specifies the region that the app supports.
-- [ENAPIVersion](../bundleresources/information-property-list/enapiversion.md)
+- [ENAPIVersion](../BundleResources/information-property-list/enapiversion.md)
   A number that specifies the version of the API to use.
-- [Changing Configuration Values Using the Server‑to‑Server API](changing-configuration-values-using-the-server-to-server-api.md)
+- [Changing Configuration Values Using the Server‑to‑Server API](./changing-configuration-values-using-the-server-to-server-api.md)
   Update Exposure Notifications configuration values from a Public Health Authority’s server.
-- [Testing Exposure Notifications Apps in iOS 13.7 and Later](testing-exposure-notifications-apps-in-ios-13-7-and-later.md)
+- [Testing Exposure Notifications Apps in iOS 13.7 and Later](./testing-exposure-notifications-apps-in-ios-13-7-and-later.md)
   Perform end-to-end validation of Exposure Notifications apps on a device by manually loading configuration files.
-- [Supporting Exposure Notifications in iOS 12.5](supporting-exposure-notifications-in-ios-12-5.md)
+- [Supporting Exposure Notifications in iOS 12.5](./supporting-exposure-notifications-in-ios-12-5.md)
   Prepare your Exposure Notifications app to run on a previous version of iOS.
 
 

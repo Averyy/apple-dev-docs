@@ -1,7 +1,8 @@
 # init(propertiesOf:valueLoadingHandler:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(propertiesOf metadataItem: AVMetadataItem, valueLoadingHandler handler: @escaping @Sendable (AVMetadataItemValueRequest) -> Void)
+```
+
+```objc
++ (AVMetadataItem *) metadataItemWithPropertiesOfMetadataItem:(AVMetadataItem *) metadataItem valueLoadingHandler:(void (^)(AVMetadataItemValueRequest *valueRequest)) handler;
 ```
 
 #### Return Value

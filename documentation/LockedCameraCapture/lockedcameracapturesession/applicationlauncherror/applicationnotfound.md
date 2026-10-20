@@ -1,7 +1,8 @@
 # LockedCameraCaptureSession.ApplicationLaunchError.applicationNotFound
 
 **Framework**: LockedCameraCapture  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that the launch failed because the system didn’t find the application.
 

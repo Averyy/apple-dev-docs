@@ -1,6 +1,7 @@
 # Improving app responsiveness
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Create a user experience that feels responsive by removing hangs and hitches from your app.
 
@@ -19,15 +20,15 @@ For fluid, uninterrupted motion, a new frame needs to be ready whenever the scre
 
 Similarly, avoid scheduling work that does not have to execute on the main thread on the main thread, not even asynchronously, e.g.  via `dispatch_async` or `await`ing the result of a function call on the main actor. As you have no control over when exactly the main thread processes your work or what the user might be doing at the time, it might come in in the middle of a continuous user interaction and cause a hitch.
 
-> **Note**:  The thresholds above are very rough guidelines to give you an understanding what execution times to aim for. There are more nuances about various interaction scenarios and sometimes you have more leeway. To learn more about these cases, the difference between hitches and hangs, how the rendering loop works, and how Apple’s developer tools detect each type of unresponsiveness, see [`Understanding user interface responsiveness`](understanding-user-interface-responsiveness.md).
+> **Note**:  The thresholds above are very rough guidelines to give you an understanding what execution times to aim for. There are more nuances about various interaction scenarios and sometimes you have more leeway. To learn more about these cases, the difference between hitches and hangs, how the rendering loop works, and how Apple’s developer tools detect each type of unresponsiveness, see [Understanding user interface responsiveness](./understanding-user-interface-responsiveness.md).
 
 This article describes several best practices to help you avoid introducing hangs and hitches in your app, as well as multiple tools to help you detect and analyze these types of responsiveness issues.
 
-##### Avoid Hangs By Keeping the Main Thread Free From Non Ui Work
+##### Avoid hangs by keeping the main thread free from non-UI work
 
-Make sure your app uses the main thread only to interact with the user interface (UIKit, AppKit, or SwiftUI). Direct all other operations to a background thread, operation queue, or Grand Central Dispatch queue. To learn more about hangs and why it’s essential to keep the main thread free from non-UI work, see [`Understanding hangs in your app`](understanding-hangs-in-your-app.md).
+Make sure your app uses the main thread only to interact with the user interface (UIKit, AppKit, or SwiftUI). Direct all other operations to a background thread, operation queue, or Grand Central Dispatch queue. To learn more about hangs and why it’s essential to keep the main thread free from non-UI work, see [Understanding hangs in your app](./understanding-hangs-in-your-app.md).
 
-With [`Swift concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html), make sure not to accidentally execute work on the [`MainActor`](https://developer.apple.com/documentation/swift/mainactor). The correct approach to get work off of the main actor depends on whether you can refactor the heavy work into a non-actor-isolated asynchronous function. If you can wrap the long-running work in such a way to make it `async` and `nonisolated`, it’s easy to execute it off of the main actor with a `Task` and `await`. If this isn’t possible, execute the synchronous function inside a call to the [`detached(name:priority:operation:)`](https://developer.apple.com/documentation/swift/task/detached(name:priority:operation:)-795w1) function.
+With [Swift concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html), make sure not to accidentally execute work on the [`MainActor`](../Swift/mainactor.md). The correct approach to get work off of the main actor depends on whether you can refactor the heavy work into a non-actor-isolated asynchronous function. If you can wrap the long-running work in such a way to make it `async` and `nonisolated`, it’s easy to execute it off of the main actor with a `Task` and `await`. If this isn’t possible, execute the synchronous function inside a call to the [`detached(name:priority:operation:)`](../Swift/task/detached%28name,priority,operation%29-795w1.md) function.
 
 Below there are three almost identical code examples. The first one shows how to correctly get off of the main actor if you can wrap the long-running work in a `nonisolated` `async` function. The second example shows a common mistake where the code looks as if it avoids the hang, but doesn’t. This example just causes a hang a little later due to a `Task` implicitly inheriting the actor-constraint from its surrounding context. The last example shows how to break this implicit actor-constraint inheritance by using a detached `Task` instead. The subtle differences in these examples cause completely different execution behavior. Be aware of these in your own Swift concurrency code.
 
@@ -52,7 +53,7 @@ private func doLongRunningWork() async { /* a lot of work */ } // Implicitly non
 
 Creating a `Task` in the above example allows the button action to return immediately, before the new task finishes executing. Specifically, the `Task` itself inherits the actor from its enclosing context and *does* execute on the main actor. Beginning with Swift 5.7, Swift executes nonisolated, asynchronous functions, like `doLongRunningWork()` in the example above, on the concurrency thread pool, off of any actors. Then execution of the `updateUI()` function returns to the main actor because it’s part of a `Task` constrained to the main actor. This is exactly what we want to happen.
 
-> **Note**:  For more information about how actors and tasks interact, and the circumstances under which isolated/nonisolated, synchronous/asynchronous functions execute on and off of an actor, see [`Eliminate data races using Swift concurrency`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110351/).
+> **Note**:  For more information about how actors and tasks interact, and the circumstances under which isolated/nonisolated, synchronous/asynchronous functions execute on and off of an actor, see [Eliminate data races using Swift concurrency](https://developer.apple.com/videos/play/wwdc2022/110351/).
 
 Both the `nonisolated` aspect of the function and the `async` nature of it are essential for enabling this behavior. When the long-running work only executes synchronously, it is *not enough* to wrap it in a `Task`. For example, the following code produces a hang:
 
@@ -100,116 +101,120 @@ This is also often appropriate for background work that can execute at a lower p
 
 Be aware of the default priority propagation rules. A detached task doesn’t inherit any priority from its creation context and executes only with `.medium` priority, by default. Consider choosing a more appropriate priority using `.detached(priority: .background)` or a similar quality-of-service level.
 
-> **Note**:  See [`Visualize and optimize Swift concurrency`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/110350/) to learn how to use Instruments to detect when your Swift concurrency tasks execute on the main actor.
+> **Note**:  See [Visualize and optimize Swift concurrency](https://developer.apple.com/videos/play/wwdc2022/110350/) to learn how to use Instruments to detect when your Swift concurrency tasks execute on the main actor.
 
 When using dispatch queues or manual thread management, dispatch the work to a background queue or thread asynchronously, and have it asynchronously signal the main thread or queue to update the UI when its background work finishes. Don’t synchronize the main thread with a background thread, or make the main thread join a background thread. Both of these actions block the main thread until the work in the background completes, which denies your app the benefit of concurrent operation.
 
-##### Analyze Which Parts of Your App Need to Execute on the Main Thread and Which Dont
+##### Analyze which parts of your app need to execute on the main thread and which don’t
 
 Generally, separate your UI updates into preparing data for display, and updating view objects to display that data when the view redraws. Your app can do the preparation in the background, and only needs to use the main thread to update its views. Indicate to the user that this preparation is underway, giving them the opportunity to cancel or perform other tasks as appropriate.
 
-For example, a particular app uses a [`UIRefreshControl`](https://developer.apple.com/documentation/uikit/uirefreshcontrol) to allow the user to pull a table view down to refresh its content from the network. The `valueChanged` event on the `UIRefreshControl` triggers an action method on the app’s `UIViewController` subclass. When UIKit invokes this action method, the app makes a request to the server using [`URLSession`](https://developer.apple.com/documentation/foundation/urlsession) and `NSURLDataTask`. On completion of the network task, the app checks whether the download succeeds. If it does, the app deserializes a JSON object from the downloaded data, updates properties on its model objects based on the fields in the JSON object, and reconfigures its view to reflect the updated model.
+For example, a particular app uses a [`UIRefreshControl`](../UIKit/uirefreshcontrol.md) to allow the user to pull a table view down to refresh its content from the network. The `valueChanged` event on the `UIRefreshControl` triggers an action method on the app’s `UIViewController` subclass. When UIKit invokes this action method, the app makes a request to the server using [`URLSession`](../Foundation/urlsession.md) and `NSURLDataTask`. On completion of the network task, the app checks whether the download succeeds. If it does, the app deserializes a JSON object from the downloaded data, updates properties on its model objects based on the fields in the JSON object, and reconfigures its view to reflect the updated model.
 
 Of all of these tasks, only the action method invocation from UIKit and the reconfiguration of the app’s views need to use the main thread. The app can dispatch all other tasks asynchronously to the background, as the image below shows:
 
-![An illustration that depicts how an app uses an asynchronous dispatch queue to increase the responsiveness of its main thread.](/images/com.apple.Xcode/improving-app-responsiveness-4@2x.png)
+![An illustration that depicts how an app uses an asynchronous dispatch queue to increase the responsiveness of its main thread.](https://developer.apple.com/tutorials/images/com.apple.Xcode/improving-app-responsiveness-4@2x.png)
 
-##### Use High Level Concurrency Constructs to Avoid Having Too Many Threads
+##### Use high-level concurrency constructs to avoid having too many threads
 
 As the number of threads running on the device increases, the operating system schedules each thread less often on a CPU core. Any individual thread, including your app’s main thread, runs on a core for less time. So, it’s important to avoid creating too many threads to keep the system performant.
 
-Swift concurrency, [`Dispatch`](https://developer.apple.com/documentation/dispatch), and [`OperationQueue`](https://developer.apple.com/documentation/foundation/operationqueue) all maintain an internal pool of worker threads that’s tuned to the device capacity and load. Use these technologies, instead of creating your own background threads, to ensure balance between scheduling as much work as possible and allowing the operating system to run other threads, including the main thread and operating system tasks.
+Swift concurrency, [Dispatch](../Dispatch/Dispatch.md), and [`OperationQueue`](../Foundation/operationqueue.md) all maintain an internal pool of worker threads that’s tuned to the device capacity and load. Use these technologies, instead of creating your own background threads, to ensure balance between scheduling as much work as possible and allowing the operating system to run other threads, including the main thread and operating system tasks.
 
-##### Avoid Hitches By Minimizing View Update Time
+##### Avoid hitches by minimizing view update time
 
 To provide smooth animations that look like continual motion, Apple devices update the screen up to 120 times per second. When your app is in the foreground, the drawing code on the main thread needs to complete before the next frame is needed to avoid dropping frames and appearing jerky. Taking a long time to draw a frame can cause a hitch.
 
-Use standard views wherever possible to ensure efficient view drawing. Where you need a custom view or control to provide functionality unavailable from standard components, ensure that its [`draw(_:)`](https://developer.apple.com/documentation/uikit/uiview/draw(_:)) method draws only into the specified rectangle. Rely on previously prepared data in `draw(_:)`, don’t perform I/O or complex calculations in this method. Draw only into the rectangle that passes as an argument to `draw(_:)` to avoid expensive computations on view components that don’t draw to the screen.
+Use standard views wherever possible to ensure efficient view drawing. Where you need a custom view or control to provide functionality unavailable from standard components, ensure that its [`draw(_:)`](../UIKit/uiview/draw%28_%29.md) method draws only into the specified rectangle. Rely on previously prepared data in `draw(_:)`, don’t perform I/O or complex calculations in this method. Draw only into the rectangle that passes as an argument to `draw(_:)` to avoid expensive computations on view components that don’t draw to the screen.
 
-UIKit and AppKit only invoke a view’s `draw(_:)` method to update the view for a frame if there’s a call to its [`setNeedsDisplay()`](https://developer.apple.com/documentation/uikit/uiview/setneedsdisplay()) method after the most recent call to `draw(_:)`. Only call `setNeedsDisplay()` when the view’s representation needs updating.
+UIKit and AppKit only invoke a view’s `draw(_:)` method to update the view for a frame if there’s a call to its [`setNeedsDisplay()`](../UIKit/uiview/setneedsdisplay%28%29.md) method after the most recent call to `draw(_:)`. Only call `setNeedsDisplay()` when the view’s representation needs updating.
 
-To learn more about different types of hitches and the stages of the render loop, see [`Understanding hitches in your app`](understanding-hitches-in-your-app.md).
+To learn more about different types of hitches and the stages of the render loop, see [Understanding hitches in your app](./understanding-hitches-in-your-app.md).
 
-##### Optimize Your App for Variable Refresh Rates
+##### Optimize your app for variable refresh rates
 
 If your app interacts with the graphics system directly, such as when you do your own rendering, be aware of variable refresh rate displays. If you’re only using high-level UI APIs like SwiftUI, UIKit, and AppKit, those frameworks take care of adapting animations, and similar rendering work, to the display’s refresh rate. If you can’t ensure that the work necessary to prepare the next frame completes within ~5 ms, or your app can adapt its rendering performance and detail based on system conditions, consider adapting your app for variable refresh rates.
 
-In general, it’s better to aim for a slightly lower refresh rate that your app can consistently achieve than attempt to meet a higher refresh rate that sometimes misses the frame deadline, because each missed deadline results in a hitch. Use [`CADisplayLink`](https://developer.apple.com/documentation/quartzcore/cadisplaylink) or [`CVDisplayLink`](https://developer.apple.com/documentation/corevideo/cvdisplaylink) to ensure you maximize the time for rendering by starting work on the next frame right when a vsync occurs instead of potentially starting in the middle of a vsync interval.
+In general, it’s better to aim for a slightly lower refresh rate that your app can consistently achieve than attempt to meet a higher refresh rate that sometimes misses the frame deadline, because each missed deadline results in a hitch. Use [`CADisplayLink`](../QuartzCore/cadisplaylink.md) or [`CVDisplayLink`](../CoreVideo/cvdisplaylink.md) to ensure you maximize the time for rendering by starting work on the next frame right when a vsync occurs instead of potentially starting in the middle of a vsync interval.
 
-> **Note**: - See [`Optimizing iPhone and iPad apps to support ProMotion displays`](https://developer.apple.com/documentation/quartzcore/optimizing-iphone-and-ipad-apps-to-support-promotion-displays) to learn more about working with variable refresh rates.
-- See [`Optimize for variable refresh rate displays`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10147/) to learn about the difference between fixed-rate and adaptive-sync displays, and how to make the most of variable refresh rate displays.
+> **Note**:
+>
+> - See [Optimizing iPhone and iPad apps to support ProMotion displays](../QuartzCore/optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md) to learn more about working with variable refresh rates.
+> - See [Optimize for variable refresh rate displays](https://developer.apple.com/videos/play/wwdc2021/10147/) to learn about the difference between fixed-rate and adaptive-sync displays, and how to make the most of variable refresh rate displays.
 
-##### Write Performance Tests to Ensure Main Thread Bound Code Completes Fast
+##### Write performance tests to ensure main-thread-bound code completes fast
 
-For code that must execute on the main thread, create an XCTest performance test to measure the time your app spends running the code. Execute the relevant code in a [`measure(_:)`](https://developer.apple.com/documentation/xctest/xctestcase/measure(_:)) block. You can either accept the average runtime of your code block as the baseline, or edit the baseline and set it to 100 ms. The performance test fails if the code requires significantly longer than the baseline time to execute.
+For code that must execute on the main thread, create an XCTest performance test to measure the time your app spends running the code. Execute the relevant code in a [`measure(_:)`](../XCTest/xctestcase/measure%28_%29.md) block. You can either accept the average runtime of your code block as the baseline, or edit the baseline and set it to 100 ms. The performance test fails if the code requires significantly longer than the baseline time to execute.
 
 100 ms is the maximum delay for discrete user interaction before a delay becomes noticeable. However, be aware that some users are more sensitive to delays, so consider using a lower threshold. Also, remember that code the system runs during continuous user interaction, like table and collection view data source methods, must finish much more quickly. Consider using a limit of 5 ms for such code.
 
-> **Note**:  See [`Eliminate animation hitches with XCTest`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10077/) to learn how to use the [`XCTOSSignpostMetric`](https://developer.apple.com/documentation/xctest/xctossignpostmetric) to write performance tests measuring the hitch ratio, number of hitches, and similar metrics for a piece of code.
+> **Note**:  See [Eliminate animation hitches with XCTest](https://developer.apple.com/videos/play/wwdc2020/10077/) to learn how to use the [`XCTOSSignpostMetric`](../XCTest/xctossignpostmetric.md) to write performance tests measuring the hitch ratio, number of hitches, and similar metrics for a piece of code.
 
-##### Detect Hangs and Hang Risks
+##### Detect hangs and hang risks
 
 There are various tools you can use to detect hangs proactively during development, both when you implement a new feature or make a change to an existing part of your app. These tools are also useful to track down a reported issue for a released version of your app.
 
-- Turn on the Thread Performance Checker in your app’s scheme to receive notifications of priority inversions when you run your app from Xcode. Learn more at [`Diagnosing performance issues early`](diagnosing-performance-issues-early.md).
+- Turn on the Thread Performance Checker in your app’s scheme to receive notifications of priority inversions when you run your app from Xcode. Learn more at [Diagnosing performance issues early](./diagnosing-performance-issues-early.md).
 - Enable on-device hang detection by opening the Settings app and navigating to Developer > Hang Detection. This notifies you of hangs that occur in apps on your device while you’re using it. Your iOS device captures a hang report that you can then analyze on your Mac. On-device hang detection works for development-signed builds and TestFlight builds on your iOS device.
 - Use the Time Profiler, CPU Profiler, or Hitches templates in Instruments to profile your app proactively (for visionOS, use the RealityKit Trace template instead). All these templates include the Hangs instruments, which displays any hangs it encounters during the recording and allows you to analyze them further. Hang detection in Instruments was introduced in Instruments 14, and requires macOS 13, iOS 16, tvOS 16, or watchOS 9, or later.
 
-##### Find the Cause of a Hang
+##### Find the cause of a hang
 
 Apps hang because the main thread isn’t available when it’s time for the app to react to an event that requires a screen update. This can happen for two reasons: either the main thread is busy executing code, or it’s blocked waiting for a resource to become available or for a system call to complete.
 
-![An illustration with two histogram charts side by side as they also appear in Instruments in the Time Profiler instruments CPU Usage track. The overall illustration has the title, Unresponsive Main Threads. The left chart shows a graph where the bars reach to the top, or close to the top, for most of the width of the chart. It has the caption, busy main thread. In the chart on the right, the first portion looks similar, but there is a large gap where no bars appear for the majority of the width of the chart. Toward the end, the bars show up again. This chart has the caption, blocked main thread.](/images/com.apple.Xcode/improving-app-responsiveness-busy-vs-blocked-main-thread@2x.png)
+![An illustration with two histogram charts side by side as they also appear in Instruments in the Time Profiler instruments CPU Usage track. The overall illustration has the title, Unresponsive Main Threads. The left chart shows a graph where the bars reach to the top, or close to the top, for most of the width of the chart. It has the caption, busy main thread. In the chart on the right, the first portion looks similar, but there is a large gap where no bars appear for the majority of the width of the chart. Toward the end, the bars show up again. This chart has the caption, blocked main thread.](https://developer.apple.com/tutorials/images/com.apple.Xcode/improving-app-responsiveness-busy-vs-blocked-main-thread@2x.png)
 
-After you detect a specific hang with one of the tools above and can reproduce it, attach your device to your Mac and profile your app with Instruments while reproducing the issue. You can then add additional instruments to your trace document to track down the issue and precisely analyze what causes your hang. You can also import the tailspin files from on-device hang detection into Instruments and perform the same kind of analysis. To learn how to use Instruments to track down and fix hangs, see [`Getting started with hang analysis`](https://developer.apple.com/tutorials/instruments/getting-started-with-hang-analysis), or watch [`Analyze hangs with Instruments`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10248/).
+After you detect a specific hang with one of the tools above and can reproduce it, attach your device to your Mac and profile your app with Instruments while reproducing the issue. You can then add additional instruments to your trace document to track down the issue and precisely analyze what causes your hang. You can also import the tailspin files from on-device hang detection into Instruments and perform the same kind of analysis. To learn how to use Instruments to track down and fix hangs, see [Getting started with hang analysis](https://developer.apple.com/tutorials/instruments/getting-started-with-hang-analysis), or watch [Analyze hangs with Instruments](https://developer.apple.com/videos/play/wwdc2023/10248/).
 
-##### Detect and Analyze Hitches Using Instruments
+##### Detect and analyze hitches using Instruments
 
 To proactively look for hitches, or to investigate a specific hitch you’re trying to fix, use the Animation Hitches template in Instruments. Start Instruments, select your app and the Animation Hitches template, and click the Record button. Then use the feature in your app that you want to investigate, and Instruments highlights any hitches that occur.
 
-![A screenshot of Instruments showing a recorded trace from the Hitches template. Under the track for the Hitches instrument, there are tracks for User Events, Commits, Renders, GPU, and Frame Lifetimes. There is also an additional track showing how long individual frames are on the display and when the vsyncs happen. The tracks show the components of a single hitch in the current time interval, and there are six hitches overall in the list below the track area.](/images/com.apple.Xcode/improving-app-responsiveness-6@2x.png)
+![A screenshot of Instruments showing a recorded trace from the Hitches template. Under the track for the Hitches instrument, there are tracks for User Events, Commits, Renders, GPU, and Frame Lifetimes. There is also an additional track showing how long individual frames are on the display and when the vsyncs happen. The tracks show the components of a single hitch in the current time interval, and there are six hitches overall in the list below the track area.](https://developer.apple.com/tutorials/images/com.apple.Xcode/improving-app-responsiveness-6@2x.png)
 
 Get into a habit of profiling your code using the Animation Hitches template whenever you make a change that may affect scrolling or animation behavior. Just a few milliseconds of delay can cause a hitch, so small performance differences can have a big impact. To make sure you get realistic measurements, it’s best to run your app on a real device when looking for hitches with Instruments. Also, consider using older devices that your app supports to make it easier to find issues.
 
-> **Note**:  The Animation Hitches template isn’t available for visionOS. To analyze rendering performance and dropped frames in visionOS apps, use the RealityKit Trace template in Instruments, which includes the RealityKit Frames and RealityKit Metrics instruments. For more information, see [`Analyzing the performance of your visionOS app`](https://developer.apple.com/documentation/visionos/analyzing-the-performance-of-your-visionos-app).
+> **Note**:  The Animation Hitches template isn’t available for visionOS. To analyze rendering performance and dropped frames in visionOS apps, use the RealityKit Trace template in Instruments, which includes the RealityKit Frames and RealityKit Metrics instruments. For more information, see [Analyzing the performance of your visionOS app](../visionOS/analyzing-the-performance-of-your-visionos-app.md).
 
-To learn more about how to analyze and fix different types of hitches using Instruments, see [`Find and fix hitches in the commit phase`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/10856) and [`Demystify and eliminate hitches in the render phase`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/10857). To better understand the individual aspects of the render loop the Hitches instrument exposes, see [`Understand the display refresh interval and associated deadlines`](understanding-hitches-in-your-app#Understand-the-display-refresh-interval-and-associated-deadlines.md).
+To learn more about how to analyze and fix different types of hitches using Instruments, see [Find and fix hitches in the commit phase](https://developer.apple.com/videos/play/tech-talks/10856) and [Demystify and eliminate hitches in the render phase](https://developer.apple.com/videos/play/tech-talks/10857). To better understand the individual aspects of the render loop the Hitches instrument exposes, see [Understand the display refresh interval and associated deadlines](./understanding-hitches-in-your-app.md#Understand-the-display-refresh-interval-and-associated-deadlines).
 
-##### Get Reports and Metrics From the Field
+##### Get reports and metrics from the field
 
 Prerelease testing doesn’t always capture all possible issues a user may encounter. In some cases, hangs and hitches in your app escape prerelease testing and make it into the released app. Xcode Organizer bridges the gap between prerelease and postrelease by providing diagnostics for issues users are most frequently experiencing when using your app.
 
-To get a better understanding of how your released app performs, and how many hangs and hitches your users experience, view aggregated data in Xcode Organizer or collect reports using your own infrastructure and [`MetricKit`](https://developer.apple.com/documentation/metrickit).
+To get a better understanding of how your released app performs, and how many hangs and hitches your users experience, view aggregated data in Xcode Organizer or collect reports using your own infrastructure and [MetricKit](../MetricKit/MetricKit.md).
 
-The operating systems on Apple devices monitor for hangs and hitches for running apps, and employ population subsampling to periodically collect reports for these issues. For more information about analyzing the hangs and hitches your users are experiencing, see [`Analyzing responsiveness issues in your shipping app`](analyzing-responsiveness-issues-in-your-shipping-app.md).
+The operating systems on Apple devices monitor for hangs and hitches for running apps, and employ population subsampling to periodically collect reports for these issues. For more information about analyzing the hangs and hitches your users are experiencing, see [Analyzing responsiveness issues in your shipping app](./analyzing-responsiveness-issues-in-your-shipping-app.md).
 
 ## See Also
 
-- [Analyzing the performance of your shipping app](analyzing-the-performance-of-your-shipping-app.md)
+### Related Documentation
+- [Analyzing the performance of your shipping app](./analyzing-the-performance-of-your-shipping-app.md)
   View power and performance metrics for apps you distribute through the App Store.
 - [Getting started with hang analysis](https://developer.apple.com/tutorials/instruments/getting-started-with-hang-analysis)
   Learn how to analyze hangs with Instruments.
-- [Analyze hangs with Instruments](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10248/)
-- [Track down hangs with Xcode and on-device detection](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10082)
-- [Explore UI animation hitches and the render loop](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/10855)
-- [Find and fix hitches in the commit phase](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/10856)
-- [Demystify and eliminate hitches in the render phase](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/10857)
-- [Eliminate animation hitches with XCTest](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10077/)
-- [Analyzing responsiveness issues in your shipping app](analyzing-responsiveness-issues-in-your-shipping-app.md)
+- [Analyze hangs with Instruments](https://developer.apple.com/videos/play/wwdc2023/10248/)
+- [Track down hangs with Xcode and on-device detection](https://developer.apple.com/videos/play/wwdc2022/10082)
+- [Explore UI animation hitches and the render loop](https://developer.apple.com/videos/play/tech-talks/10855)
+- [Find and fix hitches in the commit phase](https://developer.apple.com/videos/play/tech-talks/10856)
+- [Demystify and eliminate hitches in the render phase](https://developer.apple.com/videos/play/tech-talks/10857)
+- [Eliminate animation hitches with XCTest](https://developer.apple.com/videos/play/wwdc2020/10077/)
+### Responsiveness
+- [Analyzing responsiveness issues in your shipping app](./analyzing-responsiveness-issues-in-your-shipping-app.md)
   Identify responsiveness issues your users encounter, and use the hang and hitch data in Xcode Organizer to determine which issues are most important to fix.
-- [Understanding user interface responsiveness](understanding-user-interface-responsiveness.md)
+- [Understanding user interface responsiveness](./understanding-user-interface-responsiveness.md)
   Make your app more responsive by examining the event-handling and rendering loop.
-- [Understanding and improving SwiftUI performance](understanding-and-improving-swiftui-performance.md)
+- [Understanding and improving SwiftUI performance](./understanding-and-improving-swiftui-performance.md)
   Identify and address long-running view updates, and reduce the frequency of updates.
-- [Understanding hangs in your app](understanding-hangs-in-your-app.md)
+- [Understanding hangs in your app](./understanding-hangs-in-your-app.md)
   Determine the cause for delays in user interactions by examining the main thread and the main run loop.
-- [Understanding hitches in your app](understanding-hitches-in-your-app.md)
+- [Understanding hitches in your app](./understanding-hitches-in-your-app.md)
   Determine the cause of interruptions in motion by examining the render loop.
-- [Diagnosing performance issues early](diagnosing-performance-issues-early.md)
+- [Diagnosing performance issues early](./diagnosing-performance-issues-early.md)
   Diagnose potential performance issues in your app during development and testing with the Thread Performance Checker tool in Xcode.
-- [Reducing your app’s launch time](reducing-your-app-s-launch-time.md)
+- [Reducing your app’s launch time](./reducing-your-app-s-launch-time.md)
   Create a more responsive experience with your app by minimizing time spent in startup.
-- [Reducing terminations in your app](reduce-terminations-in-your-app.md)
+- [Reducing terminations in your app](./reduce-terminations-in-your-app.md)
   Minimize how frequently the system stops your app by addressing common termination reasons.
 
 

@@ -1,7 +1,8 @@
 # importStatus
 
 **Framework**: AppMigrationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property to indicate the status of import from another device into the app.
 
@@ -23,7 +24,8 @@ You can use this value to show a notification about the completed migration to t
 
 ## See Also
 
-- [static func clearImportStatus()](migrationstatus/clearimportstatus.md)
+### Accessing the import status
+- [static func clearImportStatus()](./clearimportstatus%28%29.md)
   Sets the import status to a nil value to prevent further notification.
 
 

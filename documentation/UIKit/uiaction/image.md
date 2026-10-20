@@ -1,7 +1,8 @@
 # image
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action’s image.
 
@@ -19,23 +20,28 @@ The action’s image.
 var image: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIImage * image;
+```
+
 #### Discussion
 
-The image appears next to the action’s [`title`](uiaction/title.md). Only the [`context`](uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
+The image appears next to the action’s [`title`](./title.md). Only the [`context`](../uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
 
 ## See Also
 
-- [var title: String](uiaction/title.md)
+### Getting information about the action
+- [var title: String](./title.md)
   The action’s title.
-- [var identifier: UIAction.Identifier](uiaction/identifier-swift.property.md)
+- [var identifier: UIAction.Identifier](./identifier-swift.property.md)
   The unique identifier for the action.
-- [var discoverabilityTitle: String?](uiaction/discoverabilitytitle.md)
+- [var discoverabilityTitle: String?](./discoverabilitytitle.md)
   An elaborated title that explains the purpose of the action.
-- [var attributes: UIMenuElement.Attributes](uiaction/attributes.md)
+- [var attributes: UIMenuElement.Attributes](./attributes.md)
   The attributes indicating the style of the action.
-- [var state: UIMenuElement.State](uiaction/state.md)
+- [var state: UIMenuElement.State](./state.md)
   The state of the action.
-- [var sender: Any?](uiaction/sender.md)
+- [var sender: Any?](./sender.md)
   The object responsible for the action handler.
 
 

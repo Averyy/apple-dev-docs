@@ -1,7 +1,8 @@
 # StaticPixelFormat
 
 **Framework**: Accelerate  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A pixel format that’s known at compile time.
 
@@ -11,7 +12,7 @@ A pixel format that’s known at compile time.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,41 +24,42 @@ protocol StaticPixelFormat : SinglePlanePixelFormat
 ## Topics
 
 ### Type Properties
-- [static var bitCountPerPixel: Int](staticpixelformat/bitcountperpixel.md)
+- [static var bitCountPerPixel: Int](./staticpixelformat/bitcountperpixel.md)
   The number of bits allocated for a single pixel.
-- [static var channelCount: Int](staticpixelformat/channelcount.md)
+- [static var channelCount: Int](./staticpixelformat/channelcount.md)
   The number of channels in a pixel buffer.
 
 ## Relationships
 
 ### Inherits From
-- [PixelFormat](pixelformat.md)
-- [SinglePlanePixelFormat](singleplanepixelformat.md)
+- [PixelFormat](./pixelformat.md)
+- [SinglePlanePixelFormat](./singleplanepixelformat.md)
 ### Conforming Types
-- [vImage.Interleaved16Fx2](vimage/interleaved16fx2.md)
-- [vImage.Interleaved16Fx4](vimage/interleaved16fx4.md)
-- [vImage.Interleaved16Ux2](vimage/interleaved16ux2.md)
-- [vImage.Interleaved16Ux4](vimage/interleaved16ux4.md)
-- [vImage.Interleaved8x2](vimage/interleaved8x2.md)
-- [vImage.Interleaved8x3](vimage/interleaved8x3.md)
-- [vImage.Interleaved8x4](vimage/interleaved8x4.md)
-- [vImage.InterleavedFx2](vimage/interleavedfx2.md)
-- [vImage.InterleavedFx3](vimage/interleavedfx3.md)
-- [vImage.InterleavedFx4](vimage/interleavedfx4.md)
-- [vImage.Planar16F](vimage/planar16f.md)
-- [vImage.Planar16U](vimage/planar16u.md)
-- [vImage.Planar8](vimage/planar8.md)
-- [vImage.PlanarF](vimage/planarf.md)
+- [vImage.Interleaved16Fx2](./vimage/interleaved16fx2.md)
+- [vImage.Interleaved16Fx4](./vimage/interleaved16fx4.md)
+- [vImage.Interleaved16Ux2](./vimage/interleaved16ux2.md)
+- [vImage.Interleaved16Ux4](./vimage/interleaved16ux4.md)
+- [vImage.Interleaved8x2](./vimage/interleaved8x2.md)
+- [vImage.Interleaved8x3](./vimage/interleaved8x3.md)
+- [vImage.Interleaved8x4](./vimage/interleaved8x4.md)
+- [vImage.InterleavedFx2](./vimage/interleavedfx2.md)
+- [vImage.InterleavedFx3](./vimage/interleavedfx3.md)
+- [vImage.InterleavedFx4](./vimage/interleavedfx4.md)
+- [vImage.Planar16F](./vimage/planar16f.md)
+- [vImage.Planar16U](./vimage/planar16u.md)
+- [vImage.Planar8](./vimage/planar8.md)
+- [vImage.PlanarF](./vimage/planarf.md)
 
 ## See Also
 
-- [protocol InitializableFromCGImage](initializablefromcgimage.md)
+### Protocols
+- [protocol InitializableFromCGImage](./initializablefromcgimage.md)
   A pixel format that supports initialization from a Core Graphics image.
-- [protocol MultiplePlanePixelFormat](multipleplanepixelformat.md)
+- [protocol MultiplePlanePixelFormat](./multipleplanepixelformat.md)
   A pixel format that contains multiple homogeneous planes represented by multiple underlying vImage buffers.
-- [protocol PixelFormat](pixelformat.md)
+- [protocol PixelFormat](./pixelformat.md)
   A pixel buffer pixel format.
-- [protocol SinglePlanePixelFormat](singleplanepixelformat.md)
+- [protocol SinglePlanePixelFormat](./singleplanepixelformat.md)
   A pixel format that contains a single underlying vImage buffer.
 
 

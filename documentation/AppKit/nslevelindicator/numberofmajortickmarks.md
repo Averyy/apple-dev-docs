@@ -1,12 +1,13 @@
 # numberOfMajorTickMarks
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of major tick marks associated with the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,25 +15,30 @@ The number of major tick marks associated with the receiver.
 var numberOfMajorTickMarks: Int { get set }
 ```
 
+```objc
+@property NSInteger numberOfMajorTickMarks;
+```
+
 #### Discussion
 
-The number of major tick marks must be less than or equal to the number of tick marks returned by [`numberOfTickMarks`](nslevelindicator/numberoftickmarks.md). For example, if the number of tick marks is 11 and you specify 3 major tick marks, the resulting level indicator will display 3 major tick marks alternating with 8 minor tick marks, as in the example shown in [`NSLevelIndicator`](nslevelindicator.md).
+The number of major tick marks must be less than or equal to the number of tick marks returned by [`numberOfTickMarks`](./numberoftickmarks.md). For example, if the number of tick marks is 11 and you specify 3 major tick marks, the resulting level indicator will display 3 major tick marks alternating with 8 minor tick marks, as in the example shown in [`NSLevelIndicator`](../nslevelindicator.md).
 
-![Major and minor tick marks in a level indicator](/images/com.apple.appkit/media-1965752.gif)
+![Major and minor tick marks in a level indicator](https://developer.apple.com/tutorials/images/com.apple.appkit/media-1965752.gif)
 
 ## See Also
 
-- [var tickMarkPosition: NSSlider.TickMarkPosition](nslevelindicator/tickmarkposition.md)
+### Managing Tick Marks and Style
+- [var tickMarkPosition: NSSlider.TickMarkPosition](./tickmarkposition.md)
   Determines how the receiver’s tick marks are aligned with it.
-- [var numberOfTickMarks: Int](nslevelindicator/numberoftickmarks.md)
+- [var numberOfTickMarks: Int](./numberoftickmarks.md)
   The number of tick marks associated with the receiver.
-- [func tickMarkValue(at: Int) -> Double](nslevelindicator/tickmarkvalue(at:).md)
+- [func tickMarkValue(at: Int) -> Double](./tickmarkvalue%28at%29.md)
   Returns the receiver’s value represented by the tick mark at the specified index (the minimum-value tick mark has an index of 0).
-- [func rectOfTickMark(at: Int) -> NSRect](nslevelindicator/rectoftickmark(at:).md)
+- [func rectOfTickMark(at: Int) -> NSRect](./rectoftickmark%28at%29.md)
   Returns the bounding rectangle of the tick mark identified by the specified index (the minimum-value tick mark is at index 0).
-- [var levelIndicatorStyle: NSLevelIndicator.Style](nslevelindicator/levelindicatorstyle.md)
+- [var levelIndicatorStyle: NSLevelIndicator.Style](./levelindicatorstyle.md)
   The appearance of the indicator.
-- [NSLevelIndicator.Style](nslevelindicator/style.md)
+- [NSLevelIndicator.Style](./style.md)
   Constants that specify a level indicator’s appearance.
 
 

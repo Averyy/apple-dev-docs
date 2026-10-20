@@ -1,7 +1,8 @@
 # validateAddingNode(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates that a node can be added to the graph without adding it, throwing a descriptive error if not.
 
@@ -19,7 +20,7 @@ final func validateAddingNode(_ node: ShaderGraph.Node) throws
 
 #### Discussion
 
-Use [`canAddNode(_:)`](shadergraph/canaddnode(_:).md) instead when only a yes/no answer is needed.
+Use [`canAddNode(_:)`](./canaddnode%28_%29.md) instead when only a yes/no answer is needed.
 
 
 ---

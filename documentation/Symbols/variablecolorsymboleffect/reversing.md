@@ -1,7 +1,8 @@
 # reversing
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that reverses each time it repeats.
 
@@ -22,7 +23,8 @@ var reversing: VariableColorSymbolEffect { get }
 
 ## See Also
 
-- [var nonReversing: VariableColorSymbolEffect](variablecolorsymboleffect/nonreversing.md)
+### Changing playback style
+- [var nonReversing: VariableColorSymbolEffect](./nonreversing.md)
   An effect that doesn’t reverse each time it repeats.
 
 

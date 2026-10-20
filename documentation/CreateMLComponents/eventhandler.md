@@ -1,7 +1,8 @@
 # EventHandler
 
 **Framework**: Create ML Components  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closure to handle processing events.
 
@@ -22,9 +23,10 @@ typealias EventHandler = @Sendable (Event) -> Void
 
 ## See Also
 
-- [struct Event](event.md)
+### Event handling
+- [struct Event](./event.md)
   Maintains the status of the pipeline.
-- [struct MetricsKey](metricskey.md)
+- [struct MetricsKey](./metricskey.md)
   A key that uniquely identifies a metric.
 
 

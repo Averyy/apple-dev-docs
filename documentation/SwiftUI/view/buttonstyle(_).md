@@ -1,7 +1,8 @@
 # buttonStyle(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
 
@@ -21,6 +22,13 @@ nonisolated
 func buttonStyle<S>(_ style: S) -> some View where S : ButtonStyle
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func buttonStyle<S>(_ style: S) -> some View where S : PrimitiveButtonStyle
+```
+
 #### Discussion
 
 Use this modifier to set a specific style for all button instances within a view:
@@ -33,7 +41,7 @@ HStack {
 .buttonStyle(.bordered)
 ```
 
-You can also use this modifier to set the style for controls that acquire a button style through composition, like the [`Menu`](menu.md) and [`Toggle`](toggle.md) views in the following example:
+You can also use this modifier to set the style for controls that acquire a button style through composition, like the [`Menu`](../menu.md) and [`Toggle`](../toggle.md) views in the following example:
 
 ```swift
 VStack {
@@ -50,27 +58,28 @@ VStack {
 .buttonStyle(.bordered)
 ```
 
-The [`menuStyle(_:)`](view/menustyle(_:).md) modifier causes the Terms and Conditions menu to render as a button. Similarly, the [`toggleStyle(_:)`](view/togglestyle(_:).md) modifier causes the two toggles to render as buttons. The button style modifier then causes not only the explicit Sign In [`Button`](button.md), but also the menu and toggles with button styling, to render with the bordered button style.
+The [`menuStyle(_:)`](./menustyle%28_%29.md) modifier causes the Terms and Conditions menu to render as a button. Similarly, the [`toggleStyle(_:)`](./togglestyle%28_%29.md) modifier causes the two toggles to render as buttons. The button style modifier then causes not only the explicit Sign In [`Button`](../button.md), but also the menu and toggles with button styling, to render with the bordered button style.
 
 ## See Also
 
-- [struct Button](button.md)
+### Creating buttons
+- [struct Button](../button.md)
   A control that initiates an action.
-- [func buttonBorderShape(ButtonBorderShape) -> some View](view/buttonbordershape(_:).md)
+- [func buttonBorderShape(ButtonBorderShape) -> some View](./buttonbordershape%28_%29.md)
   Sets the border shape for buttons in this view.
-- [struct ButtonBorderShape](buttonbordershape.md)
+- [struct ButtonBorderShape](../buttonbordershape.md)
   A shape used to draw a button’s border.
-- [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](view/buttonrepeatbehavior(_:).md)
+- [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](./buttonrepeatbehavior%28_%29.md)
   Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
-- [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
+- [struct ButtonRepeatBehavior](../buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
-- [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
+- [var buttonRepeatBehavior: ButtonRepeatBehavior](../environmentvalues/buttonrepeatbehavior.md)
   Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
-- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+- [func buttonSizing(ButtonSizing) -> some View](./buttonsizing%28_%29.md)
   The preferred sizing behavior of buttons in the view hierarchy.
-- [struct ButtonSizing](buttonsizing.md)
+- [struct ButtonSizing](../buttonsizing.md)
   The sizing behavior of `Button`s and other button-like controls.
-- [struct ButtonRole](buttonrole.md)
+- [struct ButtonRole](../buttonrole.md)
   A value that describes the purpose of a button.
 
 

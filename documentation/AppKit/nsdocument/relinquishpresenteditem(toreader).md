@@ -1,7 +1,8 @@
 # relinquishPresentedItem(toReader:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.7+
@@ -13,17 +14,22 @@ nonisolated
 func relinquishPresentedItem(toReader reader: @escaping @Sendable ((@Sendable () -> Void)?) -> Void)
 ```
 
+```objc
+- (void) relinquishPresentedItemToReader:(void (^)(void (^reacquirer)())) reader;
+```
+
 ## See Also
 
-- [func accommodatePresentedItemDeletion(completionHandler: ((any Error)?) -> Void)](nsdocument/accommodatepresenteditemdeletion(completionhandler:).md)
-- [func presentedItemDidChange()](nsdocument/presenteditemdidchange.md)
-- [func presentedItemDidChangeUbiquityAttributes(Set<URLResourceKey>)](nsdocument/presenteditemdidchangeubiquityattributes(_:).md)
-- [func presentedItemDidGain(NSFileVersion)](nsdocument/presenteditemdidgain(_:).md)
-- [func presentedItemDidLose(NSFileVersion)](nsdocument/presenteditemdidlose(_:).md)
-- [func presentedItemDidMove(to: URL)](nsdocument/presenteditemdidmove(to:).md)
-- [func presentedItemDidResolveConflict(NSFileVersion)](nsdocument/presenteditemdidresolveconflict(_:).md)
-- [func relinquishPresentedItem(toWriter: ((() -> Void)?) -> Void)](nsdocument/relinquishpresenteditem(towriter:).md)
-- [func savePresentedItemChanges(completionHandler: ((any Error)?) -> Void)](nsdocument/savepresenteditemchanges(completionhandler:).md)
+### Instance Methods
+- [func accommodatePresentedItemDeletion(completionHandler: ((any Error)?) -> Void)](./accommodatepresenteditemdeletion%28completionhandler%29.md)
+- [func presentedItemDidChange()](./presenteditemdidchange%28%29.md)
+- [func presentedItemDidChangeUbiquityAttributes(Set<URLResourceKey>)](./presenteditemdidchangeubiquityattributes%28_%29.md)
+- [func presentedItemDidGain(NSFileVersion)](./presenteditemdidgain%28_%29.md)
+- [func presentedItemDidLose(NSFileVersion)](./presenteditemdidlose%28_%29.md)
+- [func presentedItemDidMove(to: URL)](./presenteditemdidmove%28to%29.md)
+- [func presentedItemDidResolveConflict(NSFileVersion)](./presenteditemdidresolveconflict%28_%29.md)
+- [func relinquishPresentedItem(toWriter: ((() -> Void)?) -> Void)](./relinquishpresenteditem%28towriter%29.md)
+- [func savePresentedItemChanges(completionHandler: ((any Error)?) -> Void)](./savepresenteditemchanges%28completionhandler%29.md)
 
 
 ---

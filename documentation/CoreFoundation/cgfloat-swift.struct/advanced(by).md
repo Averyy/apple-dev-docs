@@ -1,7 +1,8 @@
 # advanced(by:)
 
 **Framework**: Core Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a `Self` `x` such that `self.distance(to: x)` approximates `n`.
 
@@ -11,7 +12,7 @@ Returns a `Self` `x` such that `self.distance(to: x)` approximates `n`.
 - Mac Catalyst 13.0+
 - macOS 10.0+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 1.0+
 
 ## Declaration

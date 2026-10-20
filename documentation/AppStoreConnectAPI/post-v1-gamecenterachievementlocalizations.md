@@ -1,12 +1,15 @@
 # Create an Achievement Localization
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Add Game Center achievement localized information for a new locale.
 
 **Availability**:
-- App Store Connect API 3.0+
+- App Store Connect API 3.0+ - Deprecated in 4.3
+
+> **Deprecated**: This endpoint is deprecated. Use [`Create a Game Center Achievement Localization`](./post-v2-gamecenterachievementlocalizations.md) instead.
 
 #### Discussion
 
@@ -14,7 +17,7 @@ Add Game Center achievement localized information for a new locale.
 
 **Request**:
 
-```None
+```
 POST https://api.appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations -d {
     “data”: {
         “type”: “gameCenterAchievementLocalizations”,
@@ -77,17 +80,33 @@ POST https://api.appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations
 
 `POST https://api.appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `GameCenterAchievementLocalizationCreateRequest`
+
+## Responses
+
+- `201` Created (`GameCenterAchievementLocalizationResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Create a Game Center Achievement Localization](post-v2-gamecenterachievementlocalizations.md)
+### Creating, modifying, and deleting achievements localizations
+- [Create a Game Center Achievement Localization](./post-v2-gamecenterachievementlocalizations.md)
   Create a Game Center achievement localization.
-- [Modify a Game Center Achievement Localization](patch-v2-gamecenterachievementlocalizations-_id_.md)
+- [Modify a Game Center Achievement Localization](./patch-v2-gamecenterachievementlocalizations-_id_.md)
   Update a specific Game Center achievement localization.
-- [Delete a Game Center Achievement Localization](delete-v2-gamecenterachievementlocalizations-_id_.md)
+- [Delete a Game Center Achievement Localization](./delete-v2-gamecenterachievementlocalizations-_id_.md)
   Delete a specific Game Center achievement localization.
-- [Edit an Achievement Localization](patch-v1-gamecenterachievementlocalizations-_id_.md)
+- [Edit an Achievement Localization](./patch-v1-gamecenterachievementlocalizations-_id_.md)
   Modify localized Game Center achievement information for a particular language.
-- [Delete an Achievement Localization](delete-v1-gamecenterachievementlocalizations-_id_.md)
+- [Delete an Achievement Localization](./delete-v1-gamecenterachievementlocalizations-_id_.md)
   Delete localization metadata that’s associated with an achievement.
 
 

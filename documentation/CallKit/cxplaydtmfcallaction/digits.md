@@ -1,7 +1,8 @@
 # digits
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The digits tapped by the user into the in-call keypad or included in the dial string.
 
@@ -18,9 +19,14 @@ The digits tapped by the user into the in-call keypad or included in the dial st
 var digits: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * digits;
+```
+
 ## See Also
 
-- [var type: CXPlayDTMFCallAction.ActionType](cxplaydtmfcallaction/type.md)
+### Accessing Action Information
+- [var type: CXPlayDTMFCallAction.ActionType](./type.md)
   The type of the call action.
 
 

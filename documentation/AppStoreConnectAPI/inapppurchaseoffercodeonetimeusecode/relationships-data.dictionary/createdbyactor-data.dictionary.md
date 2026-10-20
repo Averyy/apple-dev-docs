@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data that describes the created by actor of the In-App Purchase offer code one-time use code.
 
@@ -10,14 +11,14 @@ The data that describes the created by actor of the In-App Purchase offer code o
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor.Data](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/createdbyactor-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor.Data](./createdbyactor-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties
@@ -26,9 +27,10 @@ object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.CreatedByActor
 
 ## See Also
 
-- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.DeactivatedByActor](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/deactivatedbyactor-data.dictionary.md)
+### Dictionaries
+- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.DeactivatedByActor](./deactivatedbyactor-data.dictionary.md)
   The data that describes the deactivated by actor of the In-App Purchase offer code one-time use code.
-- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.Values](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/values-data.dictionary.md)
+- [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.Values](./values-data.dictionary.md)
   Information about the values of the In-App Purchase offer code one-time use code.
 
 

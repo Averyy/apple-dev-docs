@@ -1,7 +1,8 @@
 # init(origin:direction:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a ray from Spatial primitives that describe the origin and direction.
 
@@ -11,7 +12,7 @@ Creates a ray from Spatial primitives that describe the origin and direction.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

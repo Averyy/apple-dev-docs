@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The distance provided in meters or the longest distance derived from the center point to the region’s bounding box.
 
@@ -10,13 +11,13 @@ The distance provided in meters or the longest distance derived from the center 
 
 ## Declaration
 
-```swift
+```
 get radius(): number;
 ```
 
 #### Discussion
 
-When fetching points of interest with a region, you may compare this value with [`MaxRadius`](pointsofinterestsearch/maxradius.md) to determine if this region is larger than the maximum available radius for a points-of-interest search.
+When fetching points of interest with a region, you may compare this value with [`MaxRadius`](../pointsofinterestsearch/maxradius.md) to determine if this region is larger than the maximum available radius for a points-of-interest search.
 
 
 ---

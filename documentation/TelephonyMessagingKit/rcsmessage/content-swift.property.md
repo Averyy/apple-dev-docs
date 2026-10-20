@@ -1,7 +1,8 @@
 # content
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content of the message.
 
@@ -16,7 +17,8 @@ let content: RCSMessage.Content
 
 ## See Also
 
-- [RCSMessage.Content](rcsmessage/content-swift.enum.md)
+### Accessing message content
+- [RCSMessage.Content](./content-swift.enum.md)
   An enumeration of the RCS message content types supported by the system.
 
 

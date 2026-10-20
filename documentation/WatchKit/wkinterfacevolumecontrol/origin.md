@@ -1,7 +1,8 @@
 # WKInterfaceVolumeControl.Origin
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The source of the audio managed by the volume control.
 
@@ -14,33 +15,38 @@ The source of the audio managed by the volume control.
 enum Origin
 ```
 
+```c
+enum WKInterfaceVolumeControlOrigin : NSInteger;
+```
+
 ## Topics
 
 ### Audio Sources
-- [WKInterfaceVolumeControl.Origin.companion](wkinterfacevolumecontrol/origin/companion.md)
+- [WKInterfaceVolumeControl.Origin.companion](./origin/companion.md)
   Audio playing on iPhone.
-- [WKInterfaceVolumeControl.Origin.local](wkinterfacevolumecontrol/origin/local.md)
+- [WKInterfaceVolumeControl.Origin.local](./origin/local.md)
   Audio playing on Apple Watch.
-- [WKInterfaceVolumeControl.Origin.companion](wkinterfacevolumecontrol/origin/companion.md)
+- [WKInterfaceVolumeControl.Origin.companion](./origin/companion.md)
   Audio playing on iPhone.
-- [WKInterfaceVolumeControl.Origin.local](wkinterfacevolumecontrol/origin/local.md)
+- [WKInterfaceVolumeControl.Origin.local](./origin/local.md)
   Audio playing on Apple Watch.
 ### Initializers
-- [init?(rawValue: Int)](wkinterfacevolumecontrol/origin/init(rawvalue:).md)
+- [init?(rawValue: Int)](./origin/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(origin: WKInterfaceVolumeControl.Origin)](wkinterfacevolumecontrol/init(origin:).md)
+### SwiftUI
+- [init(origin: WKInterfaceVolumeControl.Origin)](./init%28origin%29.md)
   Creates a volume control for use in SwiftUI.
 
 

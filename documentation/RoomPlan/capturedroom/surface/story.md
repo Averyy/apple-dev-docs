@@ -1,7 +1,8 @@
 # story
 
 **Framework**: RoomPlan  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 indicator for which story, level, or floor
 
@@ -18,9 +19,10 @@ var story: Int { get }
 
 ## See Also
 
-- [var transform: simd_float4x4](capturedroom/surface/transform.md)
+### Positioning and sizing a surface
+- [var transform: simd_float4x4](./transform.md)
   A matrix that defines the surface’s position and orientation in the scene.
-- [var dimensions: simd_float3](capturedroom/surface/dimensions.md)
+- [var dimensions: simd_float3](./dimensions.md)
   A bounding box that contains the surface.
 
 

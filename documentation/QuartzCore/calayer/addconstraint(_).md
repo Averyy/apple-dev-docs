@@ -1,13 +1,14 @@
 # addConstraint(_:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified constraint to the layer.
 
 **Availability**:
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Adds the specified constraint to the layer.
 func addConstraint(_ c: CAConstraint)
 ```
 
+```objc
+- (void) addConstraint:(CAConstraint *) c;
+```
+
 #### Discussion
 
-In macOS, you typically add constraints to a layer to manage the size and position of that layer’s sublayers. Before constraints can be applied, you must also assign a [`CAConstraintLayoutManager`](caconstraintlayoutmanager.md) object to the [`layoutManager`](calayer/layoutmanager.md) property of the layer. For more information about managing layer-based constraints, see [`Core Animation Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514).
+In macOS, you typically add constraints to a layer to manage the size and position of that layer’s sublayers. Before constraints can be applied, you must also assign a [`CAConstraintLayoutManager`](../caconstraintlayoutmanager.md) object to the [`layoutManager`](./layoutmanager.md) property of the layer. For more information about managing layer-based constraints, see [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514).
 
 iOS apps do not support layer-based constraints.
 
@@ -27,7 +32,8 @@ iOS apps do not support layer-based constraints.
 
 ## See Also
 
-- [var constraints: [CAConstraint]?](calayer/constraints.md)
+### Managing layer constraints
+- [var constraints: [CAConstraint]?](./constraints.md)
   The constraints used to position current layer’s sublayers.
 
 

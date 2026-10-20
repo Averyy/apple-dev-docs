@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kUSBHostHubClass](1645794-anonymous/kusbhosthubclass.md)
-- [kUSBHostMaxCountFullSpeedIsochronous](1645794-anonymous/kusbhostmaxcountfullspeedisochronous.md)
-- [kUSBHostMaxDevices](1645794-anonymous/kusbhostmaxdevices.md)
-- [kUSBHostMaxPipes](1645794-anonymous/kusbhostmaxpipes.md)
-- [kUSBHostVendorIDAppleComputer](1645794-anonymous/kusbhostvendoridapplecomputer.md)
-- [kUSBHostVendorSpecificClass](1645794-anonymous/kusbhostvendorspecificclass.md)
+- [kUSBHostHubClass](./api-1645794-anonymous/kusbhosthubclass.md)
+- [kUSBHostMaxCountFullSpeedIsochronous](./api-1645794-anonymous/kusbhostmaxcountfullspeedisochronous.md)
+- [kUSBHostMaxDevices](./api-1645794-anonymous/kusbhostmaxdevices.md)
+- [kUSBHostMaxPipes](./api-1645794-anonymous/kusbhostmaxpipes.md)
+- [kUSBHostVendorIDAppleComputer](./api-1645794-anonymous/kusbhostvendoridapplecomputer.md)
+- [kUSBHostVendorSpecificClass](./api-1645794-anonymous/kusbhostvendorspecificclass.md)
 
 
 ---

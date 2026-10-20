@@ -1,7 +1,8 @@
 # CreativeCreate.CreativeSpec
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The ad creative spec object matching the ad creative type being created.
 
@@ -10,18 +11,20 @@ The ad creative spec object matching the ad creative type being created.
 
 ## Declaration
 
-```swift
+```
 object CreativeCreate.CreativeSpec
 ```
 
 #### Discussion
 
 - For `CUSTOM_PRODUCT_PAGE` and `DEFAULT_PRODUCT_PAGE`, pass an empty object (`{}`). Pre-tap content isn’t customizable for these types.
-- For `LOCAL_ADS_SEARCH_CREATIVE`, `creativeSpec` is required and must carry the Apple Maps ad creative spec: - `brandId`: The brand this ad creative belongs to.
-- `creativeSubtype`: Asset format, either `BUSINESS_LOGO` or `BUSINESS_ASSET`.
-- `creativeAssets`: Array of asset references, each identified by `assetId`, pointing to the image or video content to display.
-- `localizedText`: Promotional copy keyed by locale, for example `"en-US": {"promoText": "Visit us today for special offers!"}`.
-- `defaultLocale`: The locale whose promo text is used as the fallback when a viewer’s locale isn’t present in `localizedText`.
+- For `LOCAL_ADS_SEARCH_CREATIVE`, `creativeSpec` is required and must carry the Apple Maps ad creative spec:
+
+  - `brandId`: The brand this ad creative belongs to.
+  - `creativeSubtype`: Asset format, either `BUSINESS_LOGO` or `BUSINESS_ASSET`.
+  - `creativeAssets`: Array of asset references, each identified by `assetId`, pointing to the image or video content to display.
+  - `localizedText`: Promotional copy keyed by locale, for example `"en-US": {"promoText": "Visit us today for special offers!"}`.
+  - `defaultLocale`: The locale whose promo text is used as the fallback when a viewer’s locale isn’t present in `localizedText`.
 
 ##### Example
 
@@ -54,7 +57,7 @@ This example shows a `LOCAL_ADS_SEARCH_CREATIVE` creativeSpec using the `BUSINES
 }
 ```
 
-See [`CreativeCreate.CreativeType`](creativecreate/creativetype-data.typealias.md) for the values that determine which shape applies.
+See [`CreativeCreate.CreativeType`](./creativetype-data.typealias.md) for the values that determine which shape applies.
 
 
 ---

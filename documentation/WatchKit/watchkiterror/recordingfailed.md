@@ -1,12 +1,13 @@
 # recordingFailed
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An audio recording error.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,16 @@ WatchKit reports this error when it’s unable to record audio using the audio r
 
 ## See Also
 
-- [static var downloadFailed: WatchKitError.Code](watchkiterror/downloadfailed.md)
+### Accessing Error Codes
+- [static var downloadFailed: WatchKitError.Code](./downloadfailed.md)
   A download error.
-- [static var invalidArgument: WatchKitError.Code](watchkiterror/invalidargument.md)
+- [static var invalidArgument: WatchKitError.Code](./invalidargument.md)
   An invalid argument error.
-- [static var mediaPlayerFailed: WatchKitError.Code](watchkiterror/mediaplayerfailed.md)
+- [static var mediaPlayerFailed: WatchKitError.Code](./mediaplayerfailed.md)
   A media player error.
-- [static var unknown: WatchKitError.Code](watchkiterror/unknown.md)
+- [static var unknown: WatchKitError.Code](./unknown.md)
   An unknown error.
-- [static var applicationDelegateWatchKitRequestReplyNotCalled: WatchKitError.Code](watchkiterror/applicationdelegatewatchkitrequestreplynotcalled.md)
+- [static var applicationDelegateWatchKitRequestReplyNotCalled: WatchKitError.Code](./applicationdelegatewatchkitrequestreplynotcalled.md)
   An unresponsive delegate error.
 
 

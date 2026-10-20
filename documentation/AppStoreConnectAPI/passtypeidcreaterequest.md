@@ -1,7 +1,8 @@
 # PassTypeIdCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body for registering a new pass type identifier for Wallet pass signing.
 
@@ -10,14 +11,14 @@ The request body for registering a new pass type identifier for Wallet pass sign
 
 ## Declaration
 
-```swift
+```
 object PassTypeIdCreateRequest
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object PassTypeIdCreateRequest.Data](passtypeidcreaterequest/data-data.dictionary.md)
+- [object PassTypeIdCreateRequest.Data](./passtypeidcreaterequest/data-data.dictionary.md)
   The data wrapper for a pass type ID create request, containing the resource type and identifier attributes.
 
 ## Properties
@@ -26,17 +27,18 @@ object PassTypeIdCreateRequest
 
 ## See Also
 
-- [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)
+### Object and data types
+- [object CertificatePassTypeIdLinkageResponse](./certificatepasstypeidlinkageresponse.md)
   A response body that contains the ID of a single related resource.
-- [object PassTypeId](passtypeid.md)
+- [object PassTypeId](./passtypeid.md)
   A pass type identifier used to create and manage Wallet passes such as boarding passes, coupons, or loyalty cards.
-- [object PassTypeIdCertificatesLinkagesResponse](passtypeidcertificateslinkagesresponse.md)
+- [object PassTypeIdCertificatesLinkagesResponse](./passtypeidcertificateslinkagesresponse.md)
   A response containing the resource identifiers of signing certificates associated with a pass type identifier.
-- [object PassTypeIdResponse](passtypeidresponse.md)
+- [object PassTypeIdResponse](./passtypeidresponse.md)
   A response containing a single Wallet pass type identifier.
-- [object PassTypeIdUpdateRequest](passtypeidupdaterequest.md)
+- [object PassTypeIdUpdateRequest](./passtypeidupdaterequest.md)
   The request body you use to update a pass type id update request.
-- [object PassTypeIdsResponse](passtypeidsresponse.md)
+- [object PassTypeIdsResponse](./passtypeidsresponse.md)
   A response containing a list of Wallet pass type identifiers registered in your account.
 
 

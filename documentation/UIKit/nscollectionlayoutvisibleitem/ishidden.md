@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Boolean value that determines whether the item is hidden.
@@ -19,9 +20,14 @@ A Boolean value that determines whether the item is hidden.
 var isHidden: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isHidden) BOOL hidden;
+```
+
 ## See Also
 
-- [var alpha: CGFloat](nscollectionlayoutvisibleitem/alpha.md)
+### Configuring appearance
+- [var alpha: CGFloat](./alpha.md)
   The transparency of the item.
 
 

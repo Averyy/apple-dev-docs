@@ -1,7 +1,8 @@
 # MenuStyle
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that applies standard interaction behavior and a custom appearance to all menus within a view hierarchy.
 
@@ -22,7 +23,7 @@ A type that applies standard interaction behavior and a custom appearance to all
 
 #### Overview
 
-To configure the current menu style for a view hierarchy, use the [`menuStyle(_:)`](view/menustyle(_:).md) modifier.
+To configure the current menu style for a view hierarchy, use the [`menuStyle(_:)`](./view/menustyle%28_%29.md) modifier.
 
 A type conforming to this protocol inherits `@preconcurrency @MainActor` isolation from the protocol if the conformance is included in the type’s base declaration:
 
@@ -43,45 +44,46 @@ extension MyCustomType: Transition {
 ## Topics
 
 ### Getting built-in menu styles
-- [static var automatic: DefaultMenuStyle](menustyle/automatic.md)
+- [static var automatic: DefaultMenuStyle](./menustyle/automatic.md)
   The default menu style, based on the menu’s context.
-- [static var button: ButtonMenuStyle](menustyle/button.md)
+- [static var button: ButtonMenuStyle](./menustyle/button.md)
   A menu style that displays a button that toggles the display of the menu’s contents when pressed.
 ### Creating custom menu styles
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](menustyle/makebody(configuration:).md)
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./menustyle/makebody%28configuration%29.md)
   Creates a view that represents the body of a menu.
-- [MenuStyle.Configuration](menustyle/configuration.md)
+- [MenuStyle.Configuration](./menustyle/configuration.md)
   The properties of a menu.
-- [associatedtype Body : View](menustyle/body.md)
+- [associatedtype Body : View](./menustyle/body.md)
   A view that represents the body of a menu.
 ### Supporting types
-- [struct DefaultMenuStyle](defaultmenustyle.md)
+- [struct DefaultMenuStyle](./defaultmenustyle.md)
   The default menu style, based on the menu’s context.
-- [struct ButtonMenuStyle](buttonmenustyle.md)
+- [struct ButtonMenuStyle](./buttonmenustyle.md)
   A menu style that displays a button that toggles the display of the menu’s contents when pressed.
 ### Deprecated
-- [static var borderedButton: BorderedButtonMenuStyle](menustyle/borderedbutton.md)
+- [static var borderedButton: BorderedButtonMenuStyle](./menustyle/borderedbutton.md)
   A menu style that displays a bordered button that toggles the display of the menu’s contents when pressed.
-- [static var borderlessButton: BorderlessButtonMenuStyle](menustyle/borderlessbutton.md)
+- [static var borderlessButton: BorderlessButtonMenuStyle](./menustyle/borderlessbutton.md)
   A menu style that displays a borderless button that toggles the display of the menu’s contents when pressed.
-- [struct BorderlessButtonMenuStyle](borderlessbuttonmenustyle.md)
+- [struct BorderlessButtonMenuStyle](./borderlessbuttonmenustyle.md)
   A menu style that displays a borderless button that toggles the display of the menu’s contents when pressed.
-- [struct BorderedButtonMenuStyle](borderedbuttonmenustyle.md)
+- [struct BorderedButtonMenuStyle](./borderedbuttonmenustyle.md)
   A menu style that displays a bordered button that toggles the display of the menu’s contents when pressed.
 
 ## Relationships
 
 ### Conforming Types
-- [BorderedButtonMenuStyle](borderedbuttonmenustyle.md)
-- [BorderlessButtonMenuStyle](borderlessbuttonmenustyle.md)
-- [ButtonMenuStyle](buttonmenustyle.md)
-- [DefaultMenuStyle](defaultmenustyle.md)
+- [BorderedButtonMenuStyle](./borderedbuttonmenustyle.md)
+- [BorderlessButtonMenuStyle](./borderlessbuttonmenustyle.md)
+- [ButtonMenuStyle](./buttonmenustyle.md)
+- [DefaultMenuStyle](./defaultmenustyle.md)
 
 ## See Also
 
-- [func menuStyle<S>(S) -> some View](view/menustyle(_:).md)
+### Styling menus
+- [func menuStyle<S>(S) -> some View](./view/menustyle%28_%29.md)
   Sets the style for menus within this view.
-- [struct MenuStyleConfiguration](menustyleconfiguration.md)
+- [struct MenuStyleConfiguration](./menustyleconfiguration.md)
   A configuration of a menu.
 
 

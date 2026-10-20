@@ -1,7 +1,8 @@
 # velocity
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The velocity of the rotation gesture in radians per second.
 
@@ -17,9 +18,14 @@ The velocity of the rotation gesture in radians per second.
 var velocity: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat velocity;
+```
+
 ## See Also
 
-- [var rotation: CGFloat](uirotationgesturerecognizer/rotation.md)
+### Interpreting the gesture
+- [var rotation: CGFloat](./rotation.md)
   The rotation of the gesture in radians.
 
 

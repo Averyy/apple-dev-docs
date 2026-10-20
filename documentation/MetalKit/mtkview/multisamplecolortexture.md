@@ -1,7 +1,8 @@
 # multisampleColorTexture
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The multisample color sample texture to render into.
 
@@ -19,21 +20,26 @@ The multisample color sample texture to render into.
 var multisampleColorTexture: (any MTLTexture)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<MTLTexture> multisampleColorTexture;
+```
+
 #### Discussion
 
-The format of this texture is determined by the value of the [`colorPixelFormat`](mtkview/colorpixelformat.md) and [`sampleCount`](mtkview/samplecount.md) properties.
+The format of this texture is determined by the value of the [`colorPixelFormat`](./colorpixelformat.md) and [`sampleCount`](./samplecount.md) properties.
 
-The default value is `nil`. This value is also `nil` if the specified pixel format is [`MTLPixelFormat.invalid`](https://developer.apple.com/documentation/metal/mtlpixelformat/invalid), or if [`sampleCount`](mtkview/samplecount.md) is less than or equal to 1.
+The default value is `nil`. This value is also `nil` if the specified pixel format is [`MTLPixelFormat.invalid`](../../Metal/mtlpixelformat/invalid.md), or if [`sampleCount`](./samplecount.md) is less than or equal to 1.
 
 ## See Also
 
-- [var currentRenderPassDescriptor: MTLRenderPassDescriptor?](mtkview/currentrenderpassdescriptor.md)
+### Retrieving Render Target Information
+- [var currentRenderPassDescriptor: MTLRenderPassDescriptor?](./currentrenderpassdescriptor.md)
   A render pass descriptor to draw into the current drawable.
-- [var currentDrawable: (any CAMetalDrawable)?](mtkview/currentdrawable.md)
+- [var currentDrawable: (any CAMetalDrawable)?](./currentdrawable.md)
   The drawable to use for the current frame.
-- [var depthStencilTexture: (any MTLTexture)?](mtkview/depthstenciltexture.md)
+- [var depthStencilTexture: (any MTLTexture)?](./depthstenciltexture.md)
   A packed depth and stencil texture associated with the current drawable object’s texture.
-- [var depthStencilStorageMode: MTLStorageMode](mtkview/depthstencilstoragemode.md)
+- [var depthStencilStorageMode: MTLStorageMode](./depthstencilstoragemode.md)
   The storage mode that the packed depth and stencil texture use.
 
 

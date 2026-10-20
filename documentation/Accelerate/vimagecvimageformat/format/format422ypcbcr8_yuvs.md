@@ -1,7 +1,8 @@
 # vImageCVImageFormat.Format.format422YpCbCr8_yuvs
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A component YpCbCr 4:2:2 pixel format with 8 bits per channel and ordered Yp₀CbYp₁Cr.
 
@@ -11,7 +12,7 @@ A component YpCbCr 4:2:2 pixel format with 8 bits per channel and ordered Yp₀C
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,17 +23,18 @@ case format422YpCbCr8_yuvs
 
 ## See Also
 
-- [vImageCVImageFormat.Format.format422YpCbCr8](vimagecvimageformat/format/format422ypcbcr8.md)
+### 4:2:2 YpCbCr format constants
+- [vImageCVImageFormat.Format.format422YpCbCr8](./format422ypcbcr8.md)
   A component YpCbCr 4:2:2 pixel format with 8 bits per channel and ordered CbYp₀CrYp₁.
-- [vImageCVImageFormat.Format.format422YpCbCr8FullRange](vimagecvimageformat/format/format422ypcbcr8fullrange.md)
+- [vImageCVImageFormat.Format.format422YpCbCr8FullRange](./format422ypcbcr8fullrange.md)
   A full-range, component YpCbCr 4:2:2 pixel format with 8 bits per channel.
-- [vImageCVImageFormat.Format.format422YpCbCr10](vimagecvimageformat/format/format422ypcbcr10.md)
+- [vImageCVImageFormat.Format.format422YpCbCr10](./format422ypcbcr10.md)
   A component YpCbCr 4:2:2 pixel format with 10 bits per channel.
-- [vImageCVImageFormat.Format.format422YpCbCr10BiPlanarFullRange](vimagecvimageformat/format/format422ypcbcr10biplanarfullrange.md)
+- [vImageCVImageFormat.Format.format422YpCbCr10BiPlanarFullRange](./format422ypcbcr10biplanarfullrange.md)
   A full-range, two-plane YpCbCr 4:2:2 pixel format with 10 bits per channel.
-- [vImageCVImageFormat.Format.format422YpCbCr10BiPlanarVideoRange](vimagecvimageformat/format/format422ypcbcr10biplanarvideorange.md)
+- [vImageCVImageFormat.Format.format422YpCbCr10BiPlanarVideoRange](./format422ypcbcr10biplanarvideorange.md)
   A video-range, two-plane YpCbCr 4:2:2 pixel format with 10 bits per channel.
-- [vImageCVImageFormat.Format.format422YpCbCr16](vimagecvimageformat/format/format422ypcbcr16.md)
+- [vImageCVImageFormat.Format.format422YpCbCr16](./format422ypcbcr16.md)
   A video-range, two-plane YpCbCr 4:2:2 pixel format with 16 bits per channel.
 
 

@@ -1,7 +1,8 @@
 # OSIncrementAtomic64
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 64-bit increment.
 
@@ -10,7 +11,7 @@
 
 ## Declaration
 
-```swift
+```c
 SInt64 OSIncrementAtomic64(volatile SInt64 *address);
 ```
 
@@ -20,11 +21,12 @@ See OSIncrementAtomic.
 
 ## See Also
 
-- [OSIncrementAtomic](1576460-osincrementatomic.md)
+### Increment
+- [OSIncrementAtomic](./api-1576460-osincrementatomic.md)
   32-bit increment operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSIncrementAtomic8](1576477-osincrementatomic8.md)
+- [OSIncrementAtomic8](./api-1576477-osincrementatomic8.md)
   8-bit increment operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSIncrementAtomic16](1576484-osincrementatomic16.md)
+- [OSIncrementAtomic16](./api-1576484-osincrementatomic16.md)
   16-bit increment operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
 
 

@@ -1,7 +1,8 @@
 # isUniqueReference()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns `true` if `self` holds the only strong reference to its buffer; otherwise, returns `false`.
 
@@ -26,11 +27,12 @@ See `isKnownUniquelyReferenced` for details.
 
 ## See Also
 
-- [var capacity: Int](managedbufferpointer/capacity.md)
+### Inspecting a Buffer
+- [var capacity: Int](./capacity.md)
   The actual number of elements that can be stored in this object.
-- [var header: Header](managedbufferpointer/header.md)
+- [var header: Header](./header.md)
   The stored `Header` instance.
-- [var buffer: AnyObject](managedbufferpointer/buffer.md)
+- [var buffer: AnyObject](./buffer.md)
   Returns the object instance being used for storage.
 
 

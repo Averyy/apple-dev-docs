@@ -1,7 +1,8 @@
 # index
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the value of the receiver’s `index` property.
 
@@ -13,6 +14,10 @@ Sets the value of the receiver’s `index` property.
 
 ```swift
 var index: Int { get set }
+```
+
+```objc
+@property NSInteger index;
 ```
 
 ## Parameters

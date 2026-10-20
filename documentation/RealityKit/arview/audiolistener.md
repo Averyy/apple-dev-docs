@@ -1,7 +1,8 @@
 # audioListener
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that defines the listener position and orientation for spatial audio.
 
@@ -21,15 +22,16 @@ The entity that defines the listener position and orientation for spatial audio.
 
 #### Discussion
 
-Set the [`audioListener`](arview/audiolistener.md) to the entity in the scene from whose point of view RealityKit should render spatial audio.
+Set the [`audioListener`](./audiolistener.md) to the entity in the scene from whose point of view RealityKit should render spatial audio.
 
 By default, the property is set to `nil`, in which case the active camera acts as the audio listener. This is usually what you want, because the camera typically mirrors the user’s point of view.
 
 ## See Also
 
-- [var environment: ARView.Environment](arview/environment-swift.property.md)
+### Providing environmental context
+- [var environment: ARView.Environment](./environment-swift.property.md)
   The view’s background, lighting, and acoustic properties.
-- [var physicsOrigin: Entity?](arview/physicsorigin.md)
+- [var physicsOrigin: Entity?](./physicsorigin.md)
   The entity that defines the origin of the scene’s physics simulation.
 
 

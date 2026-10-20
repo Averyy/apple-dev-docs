@@ -1,7 +1,8 @@
 # hasCommonParent(with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates if the given language shares a common parent with this language.
 
@@ -30,9 +31,10 @@ func hasCommonParent(with language: Locale.Language) -> Bool
 
 ## See Also
 
-- [var parent: Locale.Language?](locale/language-swift.struct/parent.md)
+### Examining language relationships
+- [var parent: Locale.Language?](./parent.md)
   The parent language of this language, if available.
-- [func isEquivalent(to: Locale.Language) -> Bool](locale/language-swift.struct/isequivalent(to:).md)
+- [func isEquivalent(to: Locale.Language) -> Bool](./isequivalent%28to%29.md)
   Returns a Boolean value that indicates whether this language and another language are equivalent after expanding missing components.
 
 

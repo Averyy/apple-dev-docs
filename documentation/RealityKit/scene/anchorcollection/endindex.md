@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position one greater than the last valid subscript argument.
 
@@ -11,7 +12,7 @@ The position one greater than the last valid subscript argument.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,17 +23,18 @@ The position one greater than the last valid subscript argument.
 
 #### Discussion
 
-When you need a range that includes the last element of an array, use the half-open range operator (`..<`) with [`endIndex`](scene/anchorcollection/endindex.md). The `..<` operator creates a range that doesn’t include the upper bound, so it’s safe to use with [`endIndex`](scene/anchorcollection/endindex.md).
+When you need a range that includes the last element of an array, use the half-open range operator (`..<`) with [`endIndex`](./endindex.md). The `..<` operator creates a range that doesn’t include the upper bound, so it’s safe to use with [`endIndex`](./endindex.md).
 
-If the array is empty, [`endIndex`](scene/anchorcollection/endindex.md) is equal to [`startIndex`](scene/anchorcollection/startindex.md).
+If the array is empty, [`endIndex`](./endindex.md) is equal to [`startIndex`](./startindex.md).
 
 ## See Also
 
-- [Scene.AnchorCollection.Index](scene/anchorcollection/index.md)
+### Manipulating indices
+- [Scene.AnchorCollection.Index](./index.md)
   A type that represents a position in the collection.
-- [var startIndex: Int](scene/anchorcollection/startindex.md)
+- [var startIndex: Int](./startindex.md)
   The position of the first element in a nonempty collection.
-- [func index(after: Int) -> Int](scene/anchorcollection/index(after:).md)
+- [func index(after: Int) -> Int](./index%28after%29.md)
   Returns the position immediately after the given index.
 
 

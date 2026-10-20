@@ -1,7 +1,8 @@
 # new PlaceAnnotation(coordinate, options)
 
 **Framework**: MapKit JS  
-**Kind**: init
+**Kind**: init  
+**Role**: Constructor
 
 Creates a new place annotation.
 
@@ -10,7 +11,7 @@ Creates a new place annotation.
 
 ## Declaration
 
-```swift
+```
 constructor(
     coordinate: CoordinateData | Place | SearchAutocompleteResult,
     options?: MarkerAnnotationConstructorOptions,
@@ -19,7 +20,7 @@ constructor(
 
 #### Discussion
 
-You’re required to provide a [`Place`](place.md) object, either by passing it as the first argument or setting [`place`](annotationconstructoroptions/place.md). If you don’t provide the required object, the call throws an error.
+You’re required to provide a [`Place`](../place.md) object, either by passing it as the first argument or setting [`place`](../annotationconstructoroptions/place.md). If you don’t provide the required object, the call throws an error.
 
 
 ---

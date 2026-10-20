@@ -1,7 +1,8 @@
 # PromptBuilder
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents a prompt builder.
 
@@ -23,26 +24,27 @@ struct PromptBuilder
 ## Topics
 
 ### Building a prompt
-- [static func buildArray([some PromptRepresentable]) -> Prompt](promptbuilder/buildarray(_:).md)
+- [static func buildArray([some PromptRepresentable]) -> Prompt](./promptbuilder/buildarray%28_%29.md)
   Creates a builder with an array of prompts.
-- [static func buildBlock<each P>(repeat each P) -> Prompt](promptbuilder/buildblock(_:).md)
+- [static func buildBlock<each P>(repeat each P) -> Prompt](./promptbuilder/buildblock%28_%29.md)
   Creates a builder with a block.
-- [static func buildEither(first: some PromptRepresentable) -> Prompt](promptbuilder/buildeither(first:).md)
+- [static func buildEither(first: some PromptRepresentable) -> Prompt](./promptbuilder/buildeither%28first%29.md)
   Creates a builder with the first component.
-- [static func buildEither(second: some PromptRepresentable) -> Prompt](promptbuilder/buildeither(second:).md)
+- [static func buildEither(second: some PromptRepresentable) -> Prompt](./promptbuilder/buildeither%28second%29.md)
   Creates a builder with the second component.
-- [static buildExpression(_:)](promptbuilder/buildexpression(_:).md)
+- [static buildExpression(_:)](./promptbuilder/buildexpression%28_%29.md)
   Creates a builder with a prompt expression.
-- [static func buildLimitedAvailability(some PromptRepresentable) -> Prompt](promptbuilder/buildlimitedavailability(_:).md)
+- [static func buildLimitedAvailability(some PromptRepresentable) -> Prompt](./promptbuilder/buildlimitedavailability%28_%29.md)
   Creates a builder with a limited availability prompt.
-- [static func buildOptional(Prompt?) -> Prompt](promptbuilder/buildoptional(_:).md)
+- [static func buildOptional(Prompt?) -> Prompt](./promptbuilder/buildoptional%28_%29.md)
   Creates a builder with an optional component.
 
 ## See Also
 
-- [init(_:)](prompt/init(_:).md)
+### Creating a prompt
+- [init(_:)](./prompt/init%28_%29.md)
   Creates a prompt from the content of a builder closure.
-- [protocol PromptRepresentable](promptrepresentable.md)
+- [protocol PromptRepresentable](./promptrepresentable.md)
   A type whose value can represent a prompt.
 
 

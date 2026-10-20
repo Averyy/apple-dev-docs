@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: ClassKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the key with a value.
 
@@ -20,7 +21,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](clserroruserinfokey/init(_:).md)
+### Initializers
+- [init(String)](./init%28_%29.md)
   Initializes the key.
 
 

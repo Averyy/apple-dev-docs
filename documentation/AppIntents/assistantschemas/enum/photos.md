@@ -1,7 +1,8 @@
 # photos
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Assistant schema conformance for types you use to describe photos and videos.
 
@@ -19,6 +20,8 @@ Assistant schema conformance for types you use to describe photos and videos.
 ```swift
 static var photos: some AssistantSchemas.PhotosEnum { get }
 ```
+
+Available when `Self` is `AssistantSchemas.EnumSchema`.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(plistObject:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an attachment from an object that can be represented in an XML property list.
 
@@ -11,11 +12,15 @@ Creates an attachment from an object that can be represented in an XML property 
 convenience init(plistObject object: Any)
 ```
 
+```objc
++ (instancetype) attachmentWithPlistObject:(id) object;
+```
+
 #### Discussion
 
-The content of the attachment is an XML property list representation of the provided object with a [`uniformTypeIdentifier`](xctattachment/uniformtypeidentifier.md) value of `"com.apple.xml-property-list"`.
+The content of the attachment is an XML property list representation of the provided object with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) value of `"com.apple.xml-property-list"`.
 
-> **Note**:  Creating an attachment with a non-property-list-compatible object will trigger an exception at the point that the attachment is added to an [`XCTActivity`](xctactivity.md).
+> **Note**:  Creating an attachment with a non-property-list-compatible object will trigger an exception at the point that the attachment is added to an [`XCTActivity`](../xctactivity.md).
 
 ## Parameters
 
@@ -23,9 +28,10 @@ The content of the attachment is an XML property list representation of the prov
 
 ## See Also
 
-- [convenience init(archivableObject: any NSSecureCoding)](xctattachment/init(archivableobject:).md)
+### Creating Attachments from Objects
+- [convenience init(archivableObject: any NSSecureCoding)](./init%28archivableobject%29.md)
   Creates an attachment from an object that conforms to `NSSecureCoding`.
-- [convenience init(archivableObject: any NSSecureCoding, uniformTypeIdentifier: String)](xctattachment/init(archivableobject:uniformtypeidentifier:).md)
+- [convenience init(archivableObject: any NSSecureCoding, uniformTypeIdentifier: String)](./init%28archivableobject,uniformtypeidentifier%29.md)
   Creates an attachment from an object that conforms to `NSSecureCoding`, with a custom UTI.
 
 

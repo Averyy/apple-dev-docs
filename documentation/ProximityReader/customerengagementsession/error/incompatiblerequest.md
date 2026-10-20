@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Error.incompatibleRequest
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the request is not compatible with the connected client type or version.
 

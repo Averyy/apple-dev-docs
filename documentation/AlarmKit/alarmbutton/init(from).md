@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: AlarmKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an alarm button from a decoder.
 
@@ -22,7 +23,8 @@ init(from decoder: any Decoder) throws
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](alarmbutton/encode(to:).md)
+### Encoding and decoding
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Performs encoding to a given encoder.
 
 

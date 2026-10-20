@@ -1,13 +1,14 @@
 # ServiceConfigResponse
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The service configuration for the Asset Management API.
 
 ## Declaration
 
-```swift
+```
 object ServiceConfigResponse
 ```
 
@@ -18,11 +19,11 @@ The values in `limits` and `urls` are dynamic and can change without notice. Syn
 ## Topics
 
 ### Objects and Data Types
-- [object ServiceConfigResponse.Limits](serviceconfigresponse/limits-data.dictionary.md)
+- [object ServiceConfigResponse.Limits](./serviceconfigresponse/limits-data.dictionary.md)
   The set of current request limits.
-- [object ServiceConfigResponse.Urls](serviceconfigresponse/urls-data.dictionary.md)
+- [object ServiceConfigResponse.Urls](./serviceconfigresponse/urls-data.dictionary.md)
   The set of current service URLs.
-- [object ResponseErrorCode](responseerrorcode.md)
+- [object ResponseErrorCode](./responseerrorcode.md)
   An error code.
 
 ## Properties
@@ -30,11 +31,14 @@ The values in `limits` and `urls` are dynamic and can change without notice. Syn
 - `errorCodes` ([ResponseErrorCode]): The set of possible error numbers and their human-readable explanations.
 - `limits` (ServiceConfigResponse.Limits): The set of current request limits.
 - `notificationTypes` ([string]): The set of supported notification types.
+
+  **Allowed Values**: `ASSET_COUNT`, `ASSET_MANAGEMENT`, `USER_MANAGEMENT`, `USER_ASSOCIATED`, `SUBSCRIPTION_MANAGEMENT`, `SUBSCRIPTION_COUNT`, `UNLIMITED_ASSET`
 - `urls` (ServiceConfigResponse.Urls): The set of current service URLs.
 
 ## See Also
 
-- [object ErrorResponse](errorresponse.md)
+### Response
+- [object ErrorResponse](./errorresponse.md)
   The response that contains the error that occurs.
 
 

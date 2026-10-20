@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a texture resource from the given descriptor.
@@ -20,11 +21,11 @@ func makeTextureResource(descriptor: LowLevelTextureResource.Descriptor) throws 
 
 #### Return Value
 
-A newly created [`LowLevelTextureResource`](lowleveltextureresource.md).
+A newly created [`LowLevelTextureResource`](../lowleveltextureresource.md).
 
 #### Discussion
 
-> **Note**: An error if the descriptor is invalid or if the underlying GPU allocation fails.
+> **Throws**: An error if the descriptor is invalid or if the underlying GPU allocation fails.
 
 ## Parameters
 
@@ -32,11 +33,12 @@ A newly created [`LowLevelTextureResource`](lowleveltextureresource.md).
 
 ## See Also
 
-- [func makeBufferResource(descriptor: LowLevelBufferResource.Descriptor) throws -> LowLevelBufferResource](lowlevelrendercontext/makebufferresource(descriptor:).md)
+### Creating resources
+- [func makeBufferResource(descriptor: LowLevelBufferResource.Descriptor) throws -> LowLevelBufferResource](./makebufferresource%28descriptor%29.md)
   Creates a GPU-managed buffer resource from the given descriptor.
-- [func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) throws -> sending LowLevelMaterialResource](lowlevelrendercontext/makematerialresource(descriptor:)-8hizx.md)
-  Synchronous variant of [`makeMaterialResource(descriptor:)`](lowlevelrendercontext/makematerialresource(descriptor:)-8hizx.md). Blocks the current thread until compilation completes.
-- [func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) async throws -> sending LowLevelMaterialResource](lowlevelrendercontext/makematerialresource(descriptor:)-9nufj.md)
+- [func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) throws -> sending LowLevelMaterialResource](./makematerialresource%28descriptor%29-8hizx.md)
+  Synchronous variant of [`makeMaterialResource(descriptor:)`](./makematerialresource%28descriptor%29-8hizx.md). Blocks the current thread until compilation completes.
+- [func makeMaterialResource(descriptor: LowLevelMaterialResource.Descriptor) async throws -> sending LowLevelMaterialResource](./makematerialresource%28descriptor%29-9nufj.md)
   Asynchronously compiles a material resource from a geometry modifier, surface shader, and lighting function.
 
 

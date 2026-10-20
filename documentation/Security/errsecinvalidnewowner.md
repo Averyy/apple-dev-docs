@@ -1,7 +1,8 @@
 # errSecInvalidNewOwner
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The new owner is not valid.
 
@@ -18,6 +19,10 @@ The new owner is not valid.
 
 ```swift
 var errSecInvalidNewOwner: OSStatus { get }
+```
+
+```c
+errSecInvalidNewOwner
 ```
 
 

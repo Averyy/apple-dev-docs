@@ -1,7 +1,8 @@
 # cellularServiceID
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Cellular service identifier associated with this event.
 
@@ -16,11 +17,12 @@ let cellularServiceID: CellularServiceID
 
 ## See Also
 
-- [let groupHandle: RCSHandle.Group](rcsservice/groupchatparticipantsaddedevent/grouphandle.md)
+### Accessing event properties
+- [let groupHandle: RCSHandle.Group](./grouphandle.md)
   The group handle to which participants were added.
-- [let addedParticipants: [RCSHandle.URI]](rcsservice/groupchatparticipantsaddedevent/addedparticipants.md)
+- [let addedParticipants: [RCSHandle.URI]](./addedparticipants.md)
   Array of handles indicating the participants that were added.
-- [let addedBy: RCSHandle.URI](rcsservice/groupchatparticipantsaddedevent/addedby.md)
+- [let addedBy: RCSHandle.URI](./addedby.md)
   Handle of device that performed the operation.
 
 

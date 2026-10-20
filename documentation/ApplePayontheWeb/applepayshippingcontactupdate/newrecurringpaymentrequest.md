@@ -1,7 +1,8 @@
 # newRecurringPaymentRequest
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An updated request for a recurring payment.
 
@@ -11,17 +12,18 @@ An updated request for a recurring payment.
 
 ## Declaration
 
-```swift
+```
 ApplePayRecurringPaymentRequest newRecurringPaymentRequest;
 ```
 
 #### Discussion
 
-Provide this object to update the [`recurringPaymentRequest`](applepaypaymentrequest/recurringpaymentrequest.md) value in the original [`ApplePayPaymentRequest`](applepaypaymentrequest.md), if necessary, after the user updated their shipping contact information.
+Provide this object to update the [`recurringPaymentRequest`](../applepaypaymentrequest/recurringpaymentrequest.md) value in the original [`ApplePayPaymentRequest`](../applepaypaymentrequest.md), if necessary, after the user updated their shipping contact information.
 
 ## See Also
 
-- [ApplePayRecurringPaymentRequest](applepayrecurringpaymentrequest.md)
+### Updating recurrring payments
+- [ApplePayRecurringPaymentRequest](../applepayrecurringpaymentrequest.md)
   A dictionary that represents a request to set up a recurring payment, typically a subscription.
 
 

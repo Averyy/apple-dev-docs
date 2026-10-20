@@ -2,6 +2,7 @@
 
 **Framework**: Authentication Services  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An identifier that the authenticator generates during registration to uniquely identify a specific credential.
@@ -20,9 +21,14 @@ An identifier that the authenticator generates during registration to uniquely i
 var credentialID: Data { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSData * credentialID;
+```
+
 ## See Also
 
-- [var rawClientDataJSON: Data](aspublickeycredential/rawclientdatajson.md)
+### Getting the properties
+- [var rawClientDataJSON: Data](./rawclientdatajson.md)
   Raw data that contains a JSON-compatible encoding of the client data.
 
 

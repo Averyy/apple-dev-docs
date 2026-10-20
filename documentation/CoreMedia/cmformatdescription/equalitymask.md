@@ -1,7 +1,8 @@
 # CMFormatDescription.EqualityMask
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that describes format description equality masks.
 
@@ -23,38 +24,39 @@ struct EqualityMask
 ## Topics
 
 ### Equality Masks
-- [static let all: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/all.md)
-- [static let channelLayout: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/channellayout.md)
-- [static let extensions: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/extensions.md)
-- [static let magicCookie: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/magiccookie.md)
-- [static let streamBasicDescription: CMFormatDescription.EqualityMask](cmformatdescription/equalitymask/streambasicdescription.md)
+- [static let all: CMFormatDescription.EqualityMask](./equalitymask/all.md)
+- [static let channelLayout: CMFormatDescription.EqualityMask](./equalitymask/channellayout.md)
+- [static let extensions: CMFormatDescription.EqualityMask](./equalitymask/extensions.md)
+- [static let magicCookie: CMFormatDescription.EqualityMask](./equalitymask/magiccookie.md)
+- [static let streamBasicDescription: CMFormatDescription.EqualityMask](./equalitymask/streambasicdescription.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [static var extensionKeysCommonWithImageBuffers: [CMFormatDescription.Extensions.Key]](cmformatdescription/extensionkeyscommonwithimagebuffers.md)
+### Constants
+- [static var extensionKeysCommonWithImageBuffers: [CMFormatDescription.Extensions.Key]](./extensionkeyscommonwithimagebuffers.md)
   A constant that represents keys you use with video format description extensions and image buffers.
-- [static var typeID: CFTypeID](cmformatdescription/typeid.md)
+- [static var typeID: CFTypeID](./typeid.md)
   A type identifier that corresponds to a description object.
-- [CMFormatDescription.MediaType](cmformatdescription/mediatype-swift.struct.md)
+- [CMFormatDescription.MediaType](./mediatype-swift.struct.md)
   A type that describes format description media.
-- [CMFormatDescription.MediaSubType](cmformatdescription/mediasubtype-swift.struct.md)
+- [CMFormatDescription.MediaSubType](./mediasubtype-swift.struct.md)
   A type that describes format description media subtypes.
-- [CMFormatDescription.TimeCode](cmformatdescription/timecode.md)
+- [CMFormatDescription.TimeCode](./timecode.md)
   A type that describes format description time codes.
-- [CMFormatDescription.Extensions](cmformatdescription/extensions-swift.struct.md)
+- [CMFormatDescription.Extensions](./extensions-swift.struct.md)
   A type that describes format description extensions.
-- [CMFormatDescription.ParameterSetCollection](cmformatdescription/parametersetcollection.md)
+- [CMFormatDescription.ParameterSetCollection](./parametersetcollection.md)
   Collection of parameter sets in a video format description.
 
 

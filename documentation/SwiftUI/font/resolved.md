@@ -1,7 +1,8 @@
 # Font.Resolved
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A concrete font value.
 
@@ -24,41 +25,41 @@ struct Resolved
 
 `Font.Resolved` is a concrete representation of a Font that can be shown, with a specific set of `EnvironmentValues`. A `Resolved` font will always map to the same CTFont on a given platform.
 
-> **Note**: [`Font`](font.md).
+> **See Also**: [`Font`](../font.md).
 
 ## Topics
 
 ### Instance Properties
-- [var ctFont: CTFont](font/resolved/ctfont.md)
+- [var ctFont: CTFont](./resolved/ctfont.md)
   Returns the CTFont opaque type that represents a CoreText font object.
-- [var isBold: Bool](font/resolved/isbold.md)
+- [var isBold: Bool](./resolved/isbold.md)
   Returns `true` if the resolved font has a bold trait according to CoreText or the font’s weight is semi-bold or greater.
-- [var isItalic: Bool](font/resolved/isitalic.md)
+- [var isItalic: Bool](./resolved/isitalic.md)
   Returns `true` if the resolved font is italic.
-- [var isLowercaseSmallCaps: Bool](font/resolved/islowercasesmallcaps.md)
+- [var isLowercaseSmallCaps: Bool](./resolved/islowercasesmallcaps.md)
   Returns `true` if the resolved font’s lowercased characters use small caps.
-- [var isMonospaced: Bool](font/resolved/ismonospaced.md)
+- [var isMonospaced: Bool](./resolved/ismonospaced.md)
   Returns `true` if a resolved font is monospaced, false otherwise.
-- [var isSmallCaps: Bool](font/resolved/issmallcaps.md)
+- [var isSmallCaps: Bool](./resolved/issmallcaps.md)
   Returns `true` if all of the resolved font’s characters use small caps.
-- [var isUppercaseSmallCaps: Bool](font/resolved/isuppercasesmallcaps.md)
+- [var isUppercaseSmallCaps: Bool](./resolved/isuppercasesmallcaps.md)
   Returns `true` if the resolved font’s uppercased characters use small caps.
-- [var leading: Font.Leading](font/resolved/leading.md)
+- [var leading: Font.Leading](./resolved/leading.md)
   The leading of a resolved font.
-- [var pointSize: CGFloat](font/resolved/pointsize.md)
+- [var pointSize: CGFloat](./resolved/pointsize.md)
   The point size of a resolved font.
-- [var weight: Font.Weight](font/resolved/weight.md)
+- [var weight: Font.Weight](./resolved/weight.md)
   The weight of a resolved font.
-- [var width: Font.Width](font/resolved/width.md)
+- [var width: Font.Width](./resolved/width.md)
   The width of a resolved font.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

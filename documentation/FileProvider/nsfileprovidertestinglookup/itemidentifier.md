@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The unique identifier for the item.
@@ -19,9 +20,14 @@ The unique identifier for the item.
 var itemIdentifier: NSFileProviderItemIdentifier { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSFileProviderItemIdentifier itemIdentifier;
+```
+
 ## See Also
 
-- [var side: NSFileProviderTestingOperationSide](nsfileprovidertestinglookup/side.md)
+### Accessing the Operation’s Data
+- [var side: NSFileProviderTestingOperationSide](./side.md)
   The location where the lookup occurs.
 
 

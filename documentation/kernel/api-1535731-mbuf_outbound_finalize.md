@@ -1,14 +1,15 @@
 # mbuf_outbound_finalize
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 void mbuf_outbound_finalize(mbuf_t mbuf, u_int32_t protocol_family, size_t protocol_offset);
 ```
 

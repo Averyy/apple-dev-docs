@@ -1,7 +1,8 @@
 # vImageCVImageFormat_GetUserData(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the user data of a Core Video image format.
 
@@ -20,13 +21,17 @@ Returns the user data of a Core Video image format.
 func vImageCVImageFormat_GetUserData(_ format: vImageConstCVImageFormat) -> UnsafeMutableRawPointer!
 ```
 
+```c
+void *vImageCVImageFormat_GetUserData(vImageConstCVImageFormatRef format);
+```
+
 #### Return Value
 
 The address of `userData;` `NULL` if `userData` isn’t set.
 
 #### Discussion
 
-The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](vimagecvimageformat_createwithcvpixelbuffer(_:).md), return a [`vImageCVImageFormat`](vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetUserData(_:)`](vimagecvimageformat_getuserdata(_:).md):
+The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md), return a [`vImageCVImageFormat`](./vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetUserData(_:)`](./vimagecvimageformat_getuserdata%28_%29.md):
 
 **Swift**:
 
@@ -64,7 +69,8 @@ vImageCVImageFormat_Release(cvImageFormat);
 
 ## See Also
 
-- [func vImageCVImageFormat_SetUserData(vImageCVImageFormat, UnsafeMutableRawPointer!, ((vImageCVImageFormat?, UnsafeMutableRawPointer?) -> Void)!) -> vImage_Error](vimagecvimageformat_setuserdata(_:_:_:).md)
+### Querying and setting the user data
+- [func vImageCVImageFormat_SetUserData(vImageCVImageFormat, UnsafeMutableRawPointer!, ((vImageCVImageFormat?, UnsafeMutableRawPointer?) -> Void)!) -> vImage_Error](./vimagecvimageformat_setuserdata%28_,_,_%29.md)
   Sets the user data of a Core Video image format.
 
 

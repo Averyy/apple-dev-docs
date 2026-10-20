@@ -1,7 +1,8 @@
 # abDatabaseChangedExternally
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when a process other than the current one has changed the Address Book database.
 
@@ -22,15 +23,16 @@ Depending on the operation performed on the address book, one or more of the fol
 
 ## See Also
 
-- [static let abDatabaseChanged: NSNotification.Name](nsnotification/name-swift.struct/abdatabasechanged.md)
+### AddressBook
+- [static let abDatabaseChanged: NSNotification.Name](./abdatabasechanged.md)
   Posted when this process has changed the Address Book database.
-- [static let ABPeoplePickerDisplayedPropertyDidChange: NSNotification.Name](nsnotification/name-swift.struct/abpeoplepickerdisplayedpropertydidchange.md)
+- [static let ABPeoplePickerDisplayedPropertyDidChange: NSNotification.Name](./abpeoplepickerdisplayedpropertydidchange.md)
   Posted when the displayed property in the record list is changed.
-- [static let ABPeoplePickerGroupSelectionDidChange: NSNotification.Name](nsnotification/name-swift.struct/abpeoplepickergroupselectiondidchange.md)
+- [static let ABPeoplePickerGroupSelectionDidChange: NSNotification.Name](./abpeoplepickergroupselectiondidchange.md)
   Posted when the selection in the group list is changed.
-- [static let ABPeoplePickerNameSelectionDidChange: NSNotification.Name](nsnotification/name-swift.struct/abpeoplepickernameselectiondidchange.md)
+- [static let ABPeoplePickerNameSelectionDidChange: NSNotification.Name](./abpeoplepickernameselectiondidchange.md)
   Posted when the selection in the name list is changed.
-- [static let ABPeoplePickerValueSelectionDidChange: NSNotification.Name](nsnotification/name-swift.struct/abpeoplepickervalueselectiondidchange.md)
+- [static let ABPeoplePickerValueSelectionDidChange: NSNotification.Name](./abpeoplepickervalueselectiondidchange.md)
   Posted when the selection in a multivalue property is changed.
 
 

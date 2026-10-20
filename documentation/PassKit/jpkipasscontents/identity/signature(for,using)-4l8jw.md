@@ -2,6 +2,7 @@
 
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Signs the supplied data with the identity’s private key
@@ -18,10 +19,12 @@ func signature(for data: Data, using request: JPKIPassContents.AuthenticationReq
 
 #### Discussion
 
-- Properties: - data: Data to be signed with the specified identity
-- authentication: User authentication request to perform identity signature with
+- Properties:
 
-> **Note**: See Error type defined below
+  - data: Data to be signed with the specified identity
+  - authentication: User authentication request to perform identity signature with
+
+> **Throws**: See Error type defined below
 
 
 ---

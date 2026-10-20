@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance.
 
@@ -11,7 +12,7 @@ A textual representation of this instance.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

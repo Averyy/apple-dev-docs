@@ -1,7 +1,8 @@
 # vfs_getnewfsid
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Generate a unique filesystem ID for a mount and store it in the mount structure.
 
@@ -10,11 +11,11 @@ Generate a unique filesystem ID for a mount and store it in the mount structure.
 
 ## Declaration
 
-```swift
+```c
 void vfs_getnewfsid(struct mount *mp);
 ```
 
-#### Return_value
+#### Return Value
 
 void.
 

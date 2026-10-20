@@ -1,7 +1,8 @@
 # init(frameCount:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an AudioReader Configuration
 
@@ -25,7 +26,8 @@ init(frameCount: Int)
 
 ## See Also
 
-- [init()](audioreader/configuration-swift.struct/init.md)
+### Creating a configuration
+- [init()](./init%28%29.md)
   Creates an AudioReader Configuration
 
 

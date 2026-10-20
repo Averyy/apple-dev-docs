@@ -1,7 +1,8 @@
 # range(of:options:in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds and returns the range of the first occurrence of the given data, within the given range, subject to given options.
 
@@ -20,21 +21,26 @@ Finds and returns the range of the first occurrence of the given data, within th
 func range(of dataToFind: Data, options mask: NSData.SearchOptions = [], in searchRange: NSRange) -> NSRange
 ```
 
+```objc
+- (NSRange) rangeOfData:(NSData *) dataToFind options:(NSDataSearchOptions) mask range:(NSRange) searchRange;
+```
+
 #### Return Value
 
-An [`NSRange`](nsrange-c.struct.md) structure giving the location and length of `dataToFind` within `searchRange`, modulo the options in `mask`. The range returned is relative to the start of the searched data, not the passed-in search range. Returns `{``NSNotFound``, 0}` if `dataToFind` is not found or is empty.
+An [`NSRange`](../nsrange-c.struct.md) structure giving the location and length of `dataToFind` within `searchRange`, modulo the options in `mask`. The range returned is relative to the start of the searched data, not the passed-in search range. Returns `{``NSNotFound``, 0}` if `dataToFind` is not found or is empty.
 
 ## Parameters
 
 - `dataToFind`: The data for which to search.
-- `mask`: A mask specifying search options. The [`NSData.SearchOptions`](nsdata/searchoptions.md) options may be specified singly or by combining them with the C bitwise `OR` operator.
-- `searchRange`: The range within the receiver in which to search for `dataToFind`. If this range is not within the data object’s range of bytes, [`rangeException`](nsexceptionname/rangeexception.md) is raised.
+- `mask`: A mask specifying search options. The [`NSData.SearchOptions`](./searchoptions.md) options may be specified singly or by combining them with the C bitwise `OR` operator.
+- `searchRange`: The range within the receiver in which to search for `dataToFind`. If this range is not within the data object’s range of bytes, [`rangeException`](../nsexceptionname/rangeexception.md) is raised.
 
 ## See Also
 
-- [func subdata(with: NSRange) -> Data](nsdata/subdata(with:).md)
+### Finding Data
+- [func subdata(with: NSRange) -> Data](./subdata%28with%29.md)
   Returns a new data object containing the data object’s bytes that fall within the limits specified by a given range.
-- [NSData.SearchOptions](nsdata/searchoptions.md)
+- [NSData.SearchOptions](./searchoptions.md)
   Options for method used to search data objects.
 
 

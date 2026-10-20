@@ -1,7 +1,8 @@
 # reader
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The collection of entity schemas in the reader domain.
 
@@ -17,6 +18,8 @@ The collection of entity schemas in the reader domain.
 ```swift
 static var reader: some AppSchema.ReaderEntity { get }
 ```
+
+Available when `Self` is `AppSchema.Entity`.
 
 
 ---

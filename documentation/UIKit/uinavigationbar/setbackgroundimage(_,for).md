@@ -1,7 +1,8 @@
 # setBackgroundImage(_:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the background image for given bar metrics.
 
@@ -9,7 +10,7 @@ Sets the background image for given bar metrics.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ Sets the background image for given bar metrics.
 func setBackgroundImage(_ backgroundImage: UIImage?, for barMetrics: UIBarMetrics)
 ```
 
+```objc
+- (void) setBackgroundImage:(UIImage *) backgroundImage forBarMetrics:(UIBarMetrics) barMetrics;
+```
+
 #### Discussion
 
-Equivalent to using [`setBackgroundImage(_:for:barMetrics:)`](uinavigationbar/setbackgroundimage(_:for:barmetrics:).md) with a position of [`UIBarPosition.any`](uibarposition/any.md).
+Equivalent to using [`setBackgroundImage(_:for:barMetrics:)`](./setbackgroundimage%28_,for,barmetrics%29.md) with a position of [`UIBarPosition.any`](../uibarposition/any.md).
 
 ## Parameters
 
@@ -29,13 +34,14 @@ Equivalent to using [`setBackgroundImage(_:for:barMetrics:)`](uinavigationbar/se
 
 ## See Also
 
-- [var barTintColor: UIColor?](uinavigationbar/bartintcolor.md)
+### Changing the background
+- [var barTintColor: UIColor?](./bartintcolor.md)
   The tint color to apply to the navigation bar background.
-- [func backgroundImage(for: UIBarMetrics) -> UIImage?](uinavigationbar/backgroundimage(for:).md)
+- [func backgroundImage(for: UIBarMetrics) -> UIImage?](./backgroundimage%28for%29.md)
   Returns the background image for given bar metrics.
-- [func backgroundImage(for: UIBarPosition, barMetrics: UIBarMetrics) -> UIImage?](uinavigationbar/backgroundimage(for:barmetrics:).md)
+- [func backgroundImage(for: UIBarPosition, barMetrics: UIBarMetrics) -> UIImage?](./backgroundimage%28for,barmetrics%29.md)
   Returns the background image to use for a given bar position and set of metrics.
-- [func setBackgroundImage(UIImage?, for: UIBarPosition, barMetrics: UIBarMetrics)](uinavigationbar/setbackgroundimage(_:for:barmetrics:).md)
+- [func setBackgroundImage(UIImage?, for: UIBarPosition, barMetrics: UIBarMetrics)](./setbackgroundimage%28_,for,barmetrics%29.md)
   Sets the background image to use for a given bar position and set of metrics.
 
 

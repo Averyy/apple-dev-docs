@@ -1,7 +1,8 @@
 # nw_interface_type_wired
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The network interface type used for communication over wired Ethernet networks.
 
@@ -20,15 +21,20 @@ The network interface type used for communication over wired Ethernet networks.
 var nw_interface_type_wired: nw_interface_type_t { get }
 ```
 
+```c
+nw_interface_type_wired
+```
+
 ## See Also
 
-- [var nw_interface_type_wifi: nw_interface_type_t](nw_interface_type_wifi.md)
+### Interface types
+- [var nw_interface_type_wifi: nw_interface_type_t](./nw_interface_type_wifi.md)
   The network interface type used for communication over Wi-Fi networks.
-- [var nw_interface_type_cellular: nw_interface_type_t](nw_interface_type_cellular.md)
+- [var nw_interface_type_cellular: nw_interface_type_t](./nw_interface_type_cellular.md)
   The network interface type used for communication over cellular networks.
-- [var nw_interface_type_loopback: nw_interface_type_t](nw_interface_type_loopback.md)
+- [var nw_interface_type_loopback: nw_interface_type_t](./nw_interface_type_loopback.md)
   The network interface type used for communication over local loopback networks.
-- [var nw_interface_type_other: nw_interface_type_t](nw_interface_type_other.md)
+- [var nw_interface_type_other: nw_interface_type_t](./nw_interface_type_other.md)
   The network interface type used for communication over virtual networks or networks of unknown types.
 
 

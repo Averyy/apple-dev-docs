@@ -1,7 +1,8 @@
 # playingIndicatorLocation
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location where the list item displays its Now Playing indicator.
 
@@ -16,19 +17,24 @@ The location where the list item displays its Now Playing indicator.
 var playingIndicatorLocation: CPListItemPlayingIndicatorLocation { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CPListItemPlayingIndicatorLocation playingIndicatorLocation;
+```
+
 #### Discussion
 
-If the list item’s [`isPlaying`](cplistitem/isplaying.md) property is set to [`true`](https://developer.apple.com/documentation/swift/true), it uses the value of this property to position its Now Playing indicator. The default value is [`CPListItemPlayingIndicatorLocation.leading`](cplistitemplayingindicatorlocation/leading.md).
+If the list item’s [`isPlaying`](./isplaying.md) property is set to [`true`](../../Swift/true.md), it uses the value of this property to position its Now Playing indicator. The default value is [`CPListItemPlayingIndicatorLocation.leading`](../cplistitemplayingindicatorlocation/leading.md).
 
 ## See Also
 
-- [var isExplicitContent: Bool](cplistitem/isexplicitcontent.md)
+### Managing Playback Information
+- [var isExplicitContent: Bool](./isexplicitcontent.md)
   A Boolean value that determines whether the list item displays its explicit content indicator.
-- [var isPlaying: Bool](cplistitem/isplaying.md)
+- [var isPlaying: Bool](./isplaying.md)
   A Boolean value that determines whether the list item displays its Now Playing indicator.
-- [enum CPListItemPlayingIndicatorLocation](cplistitemplayingindicatorlocation.md)
+- [enum CPListItemPlayingIndicatorLocation](../cplistitemplayingindicatorlocation.md)
   The locations where a list item can display the Now Playing indicator.
-- [var playbackProgress: CGFloat](cplistitem/playbackprogress.md)
+- [var playbackProgress: CGFloat](./playbackprogress.md)
   The playback progress status for the content that the list item represents.
 
 

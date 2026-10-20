@@ -1,7 +1,8 @@
 # inverseBindPoses
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Changed inverse bind poses.
 

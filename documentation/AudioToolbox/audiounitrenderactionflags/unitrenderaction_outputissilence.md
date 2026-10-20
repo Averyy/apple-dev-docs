@@ -1,17 +1,18 @@
 # unitRenderAction_OutputIsSilence
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 This flag can be set in a render input callback (or in the audio unit’s render operation itself) and is used to indicate that the render buffer contains only silence. It can then be used by the caller as a hint to whether the buffer needs to be processed or not.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,21 +20,26 @@ This flag can be set in a render input callback (or in the audio unit’s render
 static var unitRenderAction_OutputIsSilence: AudioUnitRenderActionFlags { get }
 ```
 
+```c
+kAudioUnitRenderAction_OutputIsSilence
+```
+
 ## See Also
 
-- [static var unitRenderAction_PreRender: AudioUnitRenderActionFlags](audiounitrenderactionflags/unitrenderaction_prerender.md)
+### Constants
+- [static var unitRenderAction_PreRender: AudioUnitRenderActionFlags](./unitrenderaction_prerender.md)
   Called on a render notification Proc - which is called either before or after the render operation of the audio unit. If this flag is set, the proc is being called before the render operation is performed.
-- [static var unitRenderAction_PostRender: AudioUnitRenderActionFlags](audiounitrenderactionflags/unitrenderaction_postrender.md)
+- [static var unitRenderAction_PostRender: AudioUnitRenderActionFlags](./unitrenderaction_postrender.md)
   Called on a render notification Proc - which is called either before or after the render operation of the audio unit. If this flag is set, the proc is being called after the render operation is completed.
-- [static var offlineUnitRenderAction_Preflight: AudioUnitRenderActionFlags](audiounitrenderactionflags/offlineunitrenderaction_preflight.md)
+- [static var offlineUnitRenderAction_Preflight: AudioUnitRenderActionFlags](./offlineunitrenderaction_preflight.md)
   This is used with offline audio units (of type `'auol'`). It is used when an offline unit is being preflighted, which is performed prior to the actual offline rendering actions are performed. It is used for those cases where the offline process needs it (for example, with an offline unit that normalizes an audio file, it needs to see all of the audio data first before it can perform its normalization).
-- [static var offlineUnitRenderAction_Render: AudioUnitRenderActionFlags](audiounitrenderactionflags/offlineunitrenderaction_render.md)
+- [static var offlineUnitRenderAction_Render: AudioUnitRenderActionFlags](./offlineunitrenderaction_render.md)
   Once an offline unit has been successfully preflighted, it is then put into its render mode. So this flag is set to indicate to the audio unit that it is now in that state and that it should perform its processing on the input data.
-- [static var offlineUnitRenderAction_Complete: AudioUnitRenderActionFlags](audiounitrenderactionflags/offlineunitrenderaction_complete.md)
+- [static var offlineUnitRenderAction_Complete: AudioUnitRenderActionFlags](./offlineunitrenderaction_complete.md)
   This flag is set when an offline unit has completed either its preflight or performed render operation.
-- [static var unitRenderAction_PostRenderError: AudioUnitRenderActionFlags](audiounitrenderactionflags/unitrenderaction_postrendererror.md)
+- [static var unitRenderAction_PostRenderError: AudioUnitRenderActionFlags](./unitrenderaction_postrendererror.md)
   If this flag is set on the post-render call an error was returned by the audio unit’s render operation. In this case, the error can be retrieved through the lastRenderError property and the audio data in `ioData` handed to the post-render notification will be invalid.
-- [static var unitRenderAction_DoNotCheckRenderArgs: AudioUnitRenderActionFlags](audiounitrenderactionflags/unitrenderaction_donotcheckrenderargs.md)
+- [static var unitRenderAction_DoNotCheckRenderArgs: AudioUnitRenderActionFlags](./unitrenderaction_donotcheckrenderargs.md)
   If this flag is set, then checks that are done on the arguments provided to render are not performed. This can be useful to use to save computation time in situations where you are sure you are providing the correct arguments and structures to the various render calls.
 
 

@@ -1,7 +1,8 @@
 # directoryURLs
 
 **Framework**: Finder Sync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The directories managed by this extension.
 
@@ -14,23 +15,28 @@ The directories managed by this extension.
 var directoryURLs: Set<URL>! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSSet<NSURL *> * directoryURLs;
+```
+
 #### Discussion
 
-The extension receives [`beginObservingDirectory(at:)`](fifindersyncprotocol/beginobservingdirectory(at:).md) and [`endObservingDirectory(at:)`](fifindersyncprotocol/endobservingdirectory(at:).md) messages for every directory in this set and for all of their subdirectories.
+The extension receives [`beginObservingDirectory(at:)`](../fifindersyncprotocol/beginobservingdirectory%28at%29.md) and [`endObservingDirectory(at:)`](../fifindersyncprotocol/endobservingdirectory%28at%29.md) messages for every directory in this set and for all of their subdirectories.
 
 Always set `directoryURLs` when the extension starts. If there are no directories to watch, set `directoryURLs` to an empty set.
 
 ## See Also
 
-- [class func `default`() -> Self](fifindersynccontroller/default.md)
+### Managing the Finder Sync Controller
+- [class func `default`() -> Self](./default%28%29.md)
   Returns the shared Finder Sync controller object.
-- [func selectedItemURLs() -> [URL]?](fifindersynccontroller/selecteditemurls.md)
+- [func selectedItemURLs() -> [URL]?](./selecteditemurls%28%29.md)
   Returns an array of selected items.
-- [func setBadgeIdentifier(String, for: URL)](fifindersynccontroller/setbadgeidentifier(_:for:).md)
+- [func setBadgeIdentifier(String, for: URL)](./setbadgeidentifier%28_,for%29.md)
   Sets the badge for a file or directory.
-- [func setBadgeImage(NSImage, label: String?, forBadgeIdentifier: String)](fifindersynccontroller/setbadgeimage(_:label:forbadgeidentifier:).md)
+- [func setBadgeImage(NSImage, label: String?, forBadgeIdentifier: String)](./setbadgeimage%28_,label,forbadgeidentifier%29.md)
   Sets the badge image and label for the given ID.
-- [func targetedURL() -> URL?](fifindersynccontroller/targetedurl.md)
+- [func targetedURL() -> URL?](./targetedurl%28%29.md)
   Returns the URL of the Finder’s current target.
 
 

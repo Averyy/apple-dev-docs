@@ -1,7 +1,8 @@
 # toggleGrammarChecking(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Changes the state of grammar checking from enabled to disabled and vice versa.
 
@@ -14,21 +15,26 @@ Changes the state of grammar checking from enabled to disabled and vice versa.
 func toggleGrammarChecking(_ sender: Any?)
 ```
 
+```objc
+- (void) toggleGrammarChecking:(id) sender;
+```
+
 ## Parameters
 
 - `sender`: The control sending the message; may be `nil`.
 
 ## See Also
 
-- [var isContinuousSpellCheckingEnabled: Bool](nstextview/iscontinuousspellcheckingenabled.md)
+### Working with the spelling checker
+- [var isContinuousSpellCheckingEnabled: Bool](./iscontinuousspellcheckingenabled.md)
   A Boolean value that indicates whether the receiver has continuous spell checking enabled.
-- [var spellCheckerDocumentTag: Int](nstextview/spellcheckerdocumenttag.md)
+- [var spellCheckerDocumentTag: Int](./spellcheckerdocumenttag.md)
   A tag identifying the text view’s text as a document for the spell checker server.
-- [func toggleContinuousSpellChecking(Any?)](nstextview/togglecontinuousspellchecking(_:).md)
+- [func toggleContinuousSpellChecking(Any?)](./togglecontinuousspellchecking%28_%29.md)
   Toggles whether continuous spell checking is enabled for the receiver.
-- [var isGrammarCheckingEnabled: Bool](nstextview/isgrammarcheckingenabled.md)
+- [var isGrammarCheckingEnabled: Bool](./isgrammarcheckingenabled.md)
   Enables and disables grammar checking.
-- [func setSpellingState(Int, range: NSRange)](nstextview/setspellingstate(_:range:).md)
+- [func setSpellingState(Int, range: NSRange)](./setspellingstate%28_,range%29.md)
   Sets the spelling state, which controls the display of the spelling and grammar indicators on the given text range.
 
 

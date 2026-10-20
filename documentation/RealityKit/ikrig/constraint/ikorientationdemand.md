@@ -1,7 +1,8 @@
 # IKRig.Constraint.IKOrientationDemand
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A definition of an orientational demand.
 
@@ -22,17 +23,17 @@ struct IKOrientationDemand
 ## Topics
 
 ### Initializers
-- [init()](ikrig/constraint/ikorientationdemand/init.md)
+- [init()](./ikorientationdemand/init%28%29.md)
   Creates an orientational demand with default settings.
 ### Instance Properties
-- [var influenceDepthMaxJointCount: Int](ikrig/constraint/ikorientationdemand/influencedepthmaxjointcount.md)
+- [var influenceDepthMaxJointCount: Int](./ikorientationdemand/influencedepthmaxjointcount.md)
   The number of joints to be influenced by this demand.
-- [var mode: IKRig.Constraint.IKOrientationDemand.Mode](ikrig/constraint/ikorientationdemand/mode-swift.property.md)
+- [var mode: IKRig.Constraint.IKOrientationDemand.Mode](./ikorientationdemand/mode-swift.property.md)
   The mode of the orientational demand.
-- [var weight: SIMD3<Float>](ikrig/constraint/ikorientationdemand/weight.md)
+- [var weight: SIMD3<Float>](./ikorientationdemand/weight.md)
   The per-axis weight this demand has on the pose.
 ### Enumerations
-- [IKRig.Constraint.IKOrientationDemand.Mode](ikrig/constraint/ikorientationdemand/mode-swift.enum.md)
+- [IKRig.Constraint.IKOrientationDemand.Mode](./ikorientationdemand/mode-swift.enum.md)
   Describes the acting modes of an orientation demand.
 
 

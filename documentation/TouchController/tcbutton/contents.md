@@ -1,7 +1,8 @@
 # contents
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents for the button in its normal state.
 
@@ -16,13 +17,18 @@ The contents for the button in its normal state.
 var contents: TCControlContents? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) TCControlContents * contents;
+```
+
 #### Discussion
 
 This value can be `nil`.
 
 ## See Also
 
-- [var highlightDuration: TimeInterval](tcbutton/highlightduration.md)
+### Inspecting a button
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
 
 

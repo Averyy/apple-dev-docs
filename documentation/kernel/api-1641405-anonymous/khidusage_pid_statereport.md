@@ -1,14 +1,15 @@
 # kHIDUsage_PID_StateReport
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_PID_StateReport = 0x92
 ```
 

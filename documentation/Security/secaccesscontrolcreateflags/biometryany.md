@@ -1,7 +1,8 @@
 # biometryAny
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Constraint to access an item with Touch ID for any enrolled fingers, or Face ID.
 
@@ -20,9 +21,13 @@ Constraint to access an item with Touch ID for any enrolled fingers, or Face ID.
 static var biometryAny: SecAccessControlCreateFlags { get }
 ```
 
+```c
+kSecAccessControlBiometryAny
+```
+
 ## Mentions
 
-- [Protecting keys with the Secure Enclave](protecting-keys-with-the-secure-enclave.md)
+- [Protecting keys with the Secure Enclave](../protecting-keys-with-the-secure-enclave.md)
 
 #### Discussion
 

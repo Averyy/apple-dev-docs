@@ -1,7 +1,8 @@
 # isolation()
 
 **Framework**: Swift  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Produce a reference to the actor to which the enclosing code is isolated, or `nil` if the code is nonisolated.
 
@@ -27,15 +28,16 @@ If the type annotation provided for `#isolation` is not `(any Actor)?`, the type
 
 ## See Also
 
-- [protocol Sendable](sendable.md)
+### Actors
+- [protocol Sendable](./sendable.md)
   A thread-safe type whose values can be shared across arbitrary concurrent contexts without introducing a risk of data races.
-- [protocol Actor](actor.md)
+- [protocol Actor](./actor.md)
   Common protocol to which all actors conform.
-- [actor MainActor](mainactor.md)
+- [actor MainActor](./mainactor.md)
   A singleton actor whose executor is equivalent to the main dispatch queue.
-- [protocol GlobalActor](globalactor.md)
+- [protocol GlobalActor](./globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
-- [protocol SendableMetatype](sendablemetatype.md)
+- [protocol SendableMetatype](./sendablemetatype.md)
   A type whose metatype can be shared across arbitrary isolation domains without introducing a risk of data races.
 
 

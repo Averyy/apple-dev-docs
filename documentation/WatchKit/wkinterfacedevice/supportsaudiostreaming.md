@@ -1,7 +1,8 @@
 # supportsAudioStreaming
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device supports audio streaming.
 
@@ -12,6 +13,10 @@ A Boolean value that indicates whether the device supports audio streaming.
 
 ```swift
 var supportsAudioStreaming: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL supportsAudioStreaming;
 ```
 
 #### Discussion

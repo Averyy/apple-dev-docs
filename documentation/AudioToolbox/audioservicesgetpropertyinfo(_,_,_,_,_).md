@@ -1,7 +1,8 @@
 # AudioServicesGetPropertyInfo(_:_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gets information about a System Sound Services property.
 
@@ -19,13 +20,17 @@ Gets information about a System Sound Services property.
 func AudioServicesGetPropertyInfo(_ inPropertyID: AudioServicesPropertyID, _ inSpecifierSize: UInt32, _ inSpecifier: UnsafeRawPointer?, _ outPropertyDataSize: UnsafeMutablePointer<UInt32>?, _ outWritable: UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioServicesGetPropertyInfo(AudioServicesPropertyID inPropertyID, UInt32 inSpecifierSize, const void *inSpecifier, UInt32 *outPropertyDataSize, Boolean *outWritable);
+```
+
 #### Return Value
 
 A result code.
 
 #### Discussion
 
-System Sound Services properties are listed and described in [`System Sound Services Property Identifiers`](1405268-system-sound-services-property-i.md).
+System Sound Services properties are listed and described in [System Sound Services Property Identifiers](./api-1405268-system-sound-services-property-i.md).
 
 ## Parameters
 
@@ -37,15 +42,16 @@ System Sound Services properties are listed and described in [`System Sound Serv
 
 ## See Also
 
-- [func AudioServicesGetProperty(AudioServicesPropertyID, UInt32, UnsafeRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer?) -> OSStatus](audioservicesgetproperty(_:_:_:_:_:).md)
+### Managing System Sound Services Properties
+- [func AudioServicesGetProperty(AudioServicesPropertyID, UInt32, UnsafeRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer?) -> OSStatus](./audioservicesgetproperty%28_,_,_,_,_%29.md)
   Gets a specified System Sound Services property value.
-- [func AudioServicesSetProperty(AudioServicesPropertyID, UInt32, UnsafeRawPointer?, UInt32, UnsafeRawPointer) -> OSStatus](audioservicessetproperty(_:_:_:_:_:).md)
+- [func AudioServicesSetProperty(AudioServicesPropertyID, UInt32, UnsafeRawPointer?, UInt32, UnsafeRawPointer) -> OSStatus](./audioservicessetproperty%28_,_,_,_,_%29.md)
   Sets the value for a specified System Sound Services property.
-- [typealias AudioServicesPropertyID](audioservicespropertyid.md)
+- [typealias AudioServicesPropertyID](./audioservicespropertyid.md)
   The data type for a system sound property identifier.
-- [System Sound Services Property Identifiers](1405268-system-sound-services-property-i.md)
+- [System Sound Services Property Identifiers](./api-1405268-system-sound-services-property-i.md)
   Property identifiers used when playing alerts with System Sound Services.
-- [Audio Hardware Services Properties](1405208-audio-hardware-services-properti.md)
+- [Audio Hardware Services Properties](./api-1405208-audio-hardware-services-properti.md)
   Property identifiers that apply to HAL audio objects only when accessed via the Audio Hardware Services.
 
 

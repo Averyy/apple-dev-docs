@@ -1,7 +1,8 @@
 # result(for:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
 
@@ -10,7 +11,7 @@ Runs a one-shot query and asynchronously returns a snapshot of the current match
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -19,9 +20,11 @@ Runs a one-shot query and asynchronously returns a snapshot of the current match
 func result(for healthStore: HKHealthStore) async throws -> [Sample]
 ```
 
+Available when `Sample` inherits `HKSample`.
+
 #### Discussion
 
-The adopting type’s [`Output`](hkasyncquery/output.md) associated type specifies the values that this method returns. For example, [`HKSampleQueryDescriptor`](hksamplequerydescriptor.md) returns an array of [`HKQuantitySample`](hkquantitysample.md) objects.
+The adopting type’s [`Output`](../hkasyncquery/output.md) associated type specifies the values that this method returns. For example, [`HKSampleQueryDescriptor`](../hksamplequerydescriptor.md) returns an array of [`HKQuantitySample`](../hkquantitysample.md) objects.
 
 ```swift
 let stepType = HKQuantityType(.stepCount)

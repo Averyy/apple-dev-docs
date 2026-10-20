@@ -1,7 +1,8 @@
 # blendedRotation
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 After rendering, the blended rotation applied to the part
 

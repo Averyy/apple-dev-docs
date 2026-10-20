@@ -1,7 +1,8 @@
 # nanowatts
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The nanowatts unit of power.
 
@@ -21,27 +22,32 @@ The nanowatts unit of power.
 class var nanowatts: UnitPower { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitPower * nanowatts;
+```
+
 ## See Also
 
-- [class var terawatts: UnitPower](unitpower/terawatts.md)
+### Accessing Predefined Units
+- [class var terawatts: UnitPower](./terawatts.md)
   The terawatts unit of power.
-- [class var gigawatts: UnitPower](unitpower/gigawatts.md)
+- [class var gigawatts: UnitPower](./gigawatts.md)
   The gigawatts unit of power.
-- [class var megawatts: UnitPower](unitpower/megawatts.md)
+- [class var megawatts: UnitPower](./megawatts.md)
   The megawatts unit of power.
-- [class var kilowatts: UnitPower](unitpower/kilowatts.md)
+- [class var kilowatts: UnitPower](./kilowatts.md)
   The kilowatts unit of power.
-- [class var watts: UnitPower](unitpower/watts.md)
+- [class var watts: UnitPower](./watts.md)
   The watts unit of power.
-- [class var milliwatts: UnitPower](unitpower/milliwatts.md)
+- [class var milliwatts: UnitPower](./milliwatts.md)
   The milliwatts unit of power.
-- [class var microwatts: UnitPower](unitpower/microwatts.md)
+- [class var microwatts: UnitPower](./microwatts.md)
   The microwatts unit of power.
-- [class var picowatts: UnitPower](unitpower/picowatts.md)
+- [class var picowatts: UnitPower](./picowatts.md)
   The picowatts unit of power.
-- [class var femtowatts: UnitPower](unitpower/femtowatts.md)
+- [class var femtowatts: UnitPower](./femtowatts.md)
   The femtowatts unit of power.
-- [class var horsepower: UnitPower](unitpower/horsepower.md)
+- [class var horsepower: UnitPower](./horsepower.md)
   The horsepower unit of power.
 
 

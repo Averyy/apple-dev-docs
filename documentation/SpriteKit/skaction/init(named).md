@@ -1,7 +1,8 @@
 # init(named:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an action of the given name from an action file.
 
@@ -20,6 +21,10 @@ Creates an action of the given name from an action file.
 init?(named name: String)
 ```
 
+```objc
++ (SKAction *) actionNamed:(NSString *) name;
+```
+
 #### Return Value
 
 A new action object.
@@ -30,19 +35,20 @@ A new action object.
 
 ## See Also
 
-- [init?(named: String, duration: TimeInterval)](skaction/init(named:duration:).md)
+### Creating Custom Actions
+- [init?(named: String, duration: TimeInterval)](./init%28named,duration%29.md)
   Creates an action of the given name from an action file with a new duration.
-- [init?(named: String, fromURL: URL)](skaction/init(named:fromurl:).md)
+- [init?(named: String, fromURL: URL)](./init%28named,fromurl%29.md)
   Creates an action of the given name from an action file.
-- [init?(named: String, fromURL: URL, duration: TimeInterval)](skaction/init(named:fromurl:duration:).md)
+- [init?(named: String, fromURL: URL, duration: TimeInterval)](./init%28named,fromurl,duration%29.md)
   Creates an action of the given name from an action file with a new duration.
-- [class func customAction(withDuration: TimeInterval, actionBlock: (SKNode, CGFloat) -> Void) -> SKAction](skaction/customaction(withduration:actionblock:).md)
+- [class func customAction(withDuration: TimeInterval, actionBlock: (SKNode, CGFloat) -> Void) -> SKAction](./customaction%28withduration,actionblock%29.md)
   Creates an action that executes a block over a duration.
-- [class func perform(Selector, onTarget: Any) -> SKAction](skaction/perform(_:ontarget:).md)
+- [class func perform(Selector, onTarget: Any) -> SKAction](./perform%28_,ontarget%29.md)
   Creates an action that calls a method on an object.
-- [class func run(() -> Void) -> SKAction](skaction/run(_:).md)
+- [class func run(() -> Void) -> SKAction](./run%28_%29.md)
   Creates an action that executes a block.
-- [class func run(() -> Void, queue: dispatch_queue_t) -> SKAction](skaction/run(_:queue:).md)
+- [class func run(() -> Void, queue: dispatch_queue_t) -> SKAction](./run%28_,queue%29.md)
   Creates an action that executes a block on a specific dispatch queue.
 
 

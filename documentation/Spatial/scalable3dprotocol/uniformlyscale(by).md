@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Uniformly scales the entity by the specified scalar value.
@@ -24,6 +25,12 @@ mutating func uniformlyScale(by scale: Self.Scalar)
 ## Parameters
 
 - `scale`: The value that defines that scale.
+
+## Default Implementations
+
+### Scalable3DProtocol Implementations
+- [func uniformlyScale(by: Self.Scalar)](./uniformlyscale%28by%29-7tg3l.md)
+  Uniformly scales the entity by the specified scalar value.
 
 
 ---

@@ -1,7 +1,8 @@
 # RCSFileTransferMetadata.Disposition.render
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The render disposition, directing the receiving app to render the file automatically.
 
@@ -16,7 +17,8 @@ case render
 
 ## See Also
 
-- [RCSFileTransferMetadata.Disposition.attachment](rcsfiletransfermetadata/disposition-swift.enum/attachment.md)
+### Working with dispositions
+- [RCSFileTransferMetadata.Disposition.attachment](./attachment.md)
   The attachment disposition, directing the receiving app to not automatically render the file.
 
 

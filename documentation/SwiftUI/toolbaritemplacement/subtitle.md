@@ -1,7 +1,8 @@
 # subtitle
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A placement for items in the navigation bar’s inline subtitle area.
 

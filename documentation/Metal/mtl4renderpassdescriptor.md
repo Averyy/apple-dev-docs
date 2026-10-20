@@ -1,7 +1,8 @@
 # MTL4RenderPassDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Describes a render pass.
 
@@ -19,92 +20,97 @@ Describes a render pass.
 class MTL4RenderPassDescriptor
 ```
 
+```objc
+@interface MTL4RenderPassDescriptor : NSObject
+```
+
 #### Overview
 
-You use render pass descriptors to create instances of [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md) and encode draw commands into instances of [`MTL4CommandBuffer`](mtl4commandbuffer.md).
+You use render pass descriptors to create instances of [`MTL4RenderCommandEncoder`](./mtl4rendercommandencoder.md) and encode draw commands into instances of [`MTL4CommandBuffer`](./mtl4commandbuffer.md).
 
-To create render command encoders, you typically call [`renderCommandEncoderWithDescriptor:`](mtl4commandbuffer/rendercommandencoderwithdescriptor:.md). The [`makeRenderCommandEncoder(descriptor:options:)`](mtl4commandbuffer/makerendercommandencoder(descriptor:options:).md) variant of this method allows you to specify additional options to encode a render pass in parallel from multiple CPU cores by creating *suspending* and *resuming* render passes.
+To create render command encoders, you typically call [`renderCommandEncoderWithDescriptor:`](./mtl4commandbuffer/rendercommandencoderwithdescriptor_.md). The [`makeRenderCommandEncoder(descriptor:options:)`](./mtl4commandbuffer/makerendercommandencoder%28descriptor,options%29.md) variant of this method allows you to specify additional options to encode a render pass in parallel from multiple CPU cores by creating *suspending* and *resuming* render passes.
 
 ## Topics
 
 ### Instance Properties
-- [var colorAttachments: MTLRenderPassColorAttachmentDescriptorArray](mtl4renderpassdescriptor/colorattachments.md)
+- [var colorAttachments: MTLRenderPassColorAttachmentDescriptorArray](./mtl4renderpassdescriptor/colorattachments.md)
   Accesses the array of state information for render attachments that store color data.
-- [var defaultRasterSampleCount: Int](mtl4renderpassdescriptor/defaultrastersamplecount.md)
+- [var defaultRasterSampleCount: Int](./mtl4renderpassdescriptor/defaultrastersamplecount.md)
   Sets the default raster sample count for the render pass when it references no attachments.
-- [var depthAttachment: MTLRenderPassDepthAttachmentDescriptor!](mtl4renderpassdescriptor/depthattachment.md)
+- [var depthAttachment: MTLRenderPassDepthAttachmentDescriptor!](./mtl4renderpassdescriptor/depthattachment.md)
   Accesses state information for a render attachment that stores depth data.
-- [var imageblockSampleLength: Int](mtl4renderpassdescriptor/imageblocksamplelength.md)
+- [var imageblockSampleLength: Int](./mtl4renderpassdescriptor/imageblocksamplelength.md)
   Assigns the per-sample size, in bytes, of the largest explicit imageblock layout in the render pass.
-- [var rasterizationRateMap: (any MTLRasterizationRateMap)?](mtl4renderpassdescriptor/rasterizationratemap.md)
+- [var rasterizationRateMap: (any MTLRasterizationRateMap)?](./mtl4renderpassdescriptor/rasterizationratemap.md)
   Assigns an optional variable rasterization rate map that Metal uses in the render pass.
-- [var renderTargetArrayLength: Int](mtl4renderpassdescriptor/rendertargetarraylength.md)
+- [var renderTargetArrayLength: Int](./mtl4renderpassdescriptor/rendertargetarraylength.md)
   Assigns the number of layers that all attachments this descriptor references have.
-- [var renderTargetHeight: Int](mtl4renderpassdescriptor/rendertargetheight.md)
+- [var renderTargetHeight: Int](./mtl4renderpassdescriptor/rendertargetheight.md)
   Sets the height, in pixels, to which Metal constrains the render target.
-- [var renderTargetWidth: Int](mtl4renderpassdescriptor/rendertargetwidth.md)
+- [var renderTargetWidth: Int](./mtl4renderpassdescriptor/rendertargetwidth.md)
   Sets the width, in pixels, to which Metal constrains the render target.
-- [var samplePositions: [MTLSamplePosition]](mtl4renderpassdescriptor/samplepositions.md)
+- [var samplePositions: [MTLSamplePosition]](./mtl4renderpassdescriptor/samplepositions.md)
   Configures the custom sample positions to use in MSAA rendering.
-- [var stencilAttachment: MTLRenderPassStencilAttachmentDescriptor!](mtl4renderpassdescriptor/stencilattachment.md)
+- [var stencilAttachment: MTLRenderPassStencilAttachmentDescriptor!](./mtl4renderpassdescriptor/stencilattachment.md)
   Accesses state information for a render attachment that stores stencil data.
-- [var supportColorAttachmentMapping: Bool](mtl4renderpassdescriptor/supportcolorattachmentmapping.md)
+- [var supportColorAttachmentMapping: Bool](./mtl4renderpassdescriptor/supportcolorattachmentmapping.md)
   Controls if the render pass supports color attachment mapping.
-- [var threadgroupMemoryLength: Int](mtl4renderpassdescriptor/threadgroupmemorylength.md)
+- [var threadgroupMemoryLength: Int](./mtl4renderpassdescriptor/threadgroupmemorylength.md)
   Assigns the per-tile size, in bytes, of the persistent threadgroup memory allocation of this render pass.
-- [var tileHeight: Int](mtl4renderpassdescriptor/tileheight.md)
+- [var tileHeight: Int](./mtl4renderpassdescriptor/tileheight.md)
   The height of the tiles, in pixels, a render pass you create with this descriptor applies to its attachments.
-- [var tileWidth: Int](mtl4renderpassdescriptor/tilewidth.md)
+- [var tileWidth: Int](./mtl4renderpassdescriptor/tilewidth.md)
   The width of the tiles, in pixels, a render pass you create with this descriptor applies to its attachments.
-- [var visibilityResultBuffer: (any MTLBuffer)?](mtl4renderpassdescriptor/visibilityresultbuffer.md)
+- [var visibilityResultBuffer: (any MTLBuffer)?](./mtl4renderpassdescriptor/visibilityresultbuffer.md)
   Configures a buffer into which Metal writes counts of fragments (pixels) passing the depth and stencil tests.
-- [var visibilityResultType: MTLVisibilityResultType](mtl4renderpassdescriptor/visibilityresulttype.md)
+- [var visibilityResultType: MTLVisibilityResultType](./mtl4renderpassdescriptor/visibilityresulttype.md)
   Determines if Metal accumulates visibility results between render encoders or resets them.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLRenderPassDescriptor](mtlrenderpassdescriptor.md)
+### Configuring a render command encoder
+- [class MTLRenderPassDescriptor](./mtlrenderpassdescriptor.md)
   A group of render targets that hold the results of a render pass.
-- [class MTLRenderPassAttachmentDescriptor](mtlrenderpassattachmentdescriptor.md)
+- [class MTLRenderPassAttachmentDescriptor](./mtlrenderpassattachmentdescriptor.md)
   A render target that serves as the output destination for pixels generated by a render pass.
-- [class MTLRenderPassColorAttachmentDescriptorArray](mtlrenderpasscolorattachmentdescriptorarray.md)
+- [class MTLRenderPassColorAttachmentDescriptorArray](./mtlrenderpasscolorattachmentdescriptorarray.md)
   An array of render pass color attachment descriptor objects.
-- [class MTLRenderPassColorAttachmentDescriptor](mtlrenderpasscolorattachmentdescriptor.md)
+- [class MTLRenderPassColorAttachmentDescriptor](./mtlrenderpasscolorattachmentdescriptor.md)
   A color render target that serves as the output destination for color pixels generated by a render pass.
-- [struct MTLClearColor](mtlclearcolor.md)
+- [struct MTLClearColor](./mtlclearcolor.md)
   An RGBA value used for a color pixel.
-- [class MTLRenderPassDepthAttachmentDescriptor](mtlrenderpassdepthattachmentdescriptor.md)
+- [class MTLRenderPassDepthAttachmentDescriptor](./mtlrenderpassdepthattachmentdescriptor.md)
   A depth render target that serves as the output destination for depth pixels generated by a render pass.
-- [enum MTLMultisampleDepthResolveFilter](mtlmultisampledepthresolvefilter.md)
+- [enum MTLMultisampleDepthResolveFilter](./mtlmultisampledepthresolvefilter.md)
   Filtering options for controlling an MSAA depth resolve operation.
-- [class MTL4RenderPipelineColorAttachmentDescriptorArray](mtl4renderpipelinecolorattachmentdescriptorarray.md)
+- [class MTL4RenderPipelineColorAttachmentDescriptorArray](./mtl4renderpipelinecolorattachmentdescriptorarray.md)
   An array of color attachment descriptions for a render pipeline.
-- [class MTLTileRenderPipelineColorAttachmentDescriptorArray](mtltilerenderpipelinecolorattachmentdescriptorarray.md)
+- [class MTLTileRenderPipelineColorAttachmentDescriptorArray](./mtltilerenderpipelinecolorattachmentdescriptorarray.md)
   An array of color attachment descriptors for the tile render pipeline.
-- [class MTLRenderPassStencilAttachmentDescriptor](mtlrenderpassstencilattachmentdescriptor.md)
+- [class MTLRenderPassStencilAttachmentDescriptor](./mtlrenderpassstencilattachmentdescriptor.md)
   A stencil render target that serves as the output destination for stencil pixels generated by a render pass.
-- [enum MTLMultisampleStencilResolveFilter](mtlmultisamplestencilresolvefilter.md)
+- [enum MTLMultisampleStencilResolveFilter](./mtlmultisamplestencilresolvefilter.md)
   Constants used to control the multisample stencil resolve operation.
-- [class MTLRenderPassSampleBufferAttachmentDescriptorArray](mtlrenderpasssamplebufferattachmentdescriptorarray.md)
+- [class MTLRenderPassSampleBufferAttachmentDescriptorArray](./mtlrenderpasssamplebufferattachmentdescriptorarray.md)
   An array of sample buffer attachments for a render pass.
-- [class MTLRenderPassSampleBufferAttachmentDescriptor](mtlrenderpasssamplebufferattachmentdescriptor.md)
+- [class MTLRenderPassSampleBufferAttachmentDescriptor](./mtlrenderpasssamplebufferattachmentdescriptor.md)
   A description of where to store GPU counter information at the start and end of a render pass.
-- [class MTLLogicalToPhysicalColorAttachmentMap](mtllogicaltophysicalcolorattachmentmap.md)
+- [class MTLLogicalToPhysicalColorAttachmentMap](./mtllogicaltophysicalcolorattachmentmap.md)
   Allows you to easily specify color attachment remapping from logical to physical indices.
-- [struct MTLDispatchThreadsIndirectArguments](mtldispatchthreadsindirectarguments.md)
+- [struct MTLDispatchThreadsIndirectArguments](./mtldispatchthreadsindirectarguments.md)
 
 
 ---

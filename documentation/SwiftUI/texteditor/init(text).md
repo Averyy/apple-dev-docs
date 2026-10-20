@@ -1,7 +1,8 @@
 # init(text:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a plain text editor.
 
@@ -21,7 +22,7 @@ init(text: Binding<String>)
 
 #### Discussion
 
-Use a [`TextEditor`](texteditor.md) instance to create a view in which users can enter and edit long-form text.
+Use a [`TextEditor`](../texteditor.md) instance to create a view in which users can enter and edit long-form text.
 
 In this example, the text editor renders gray text using the 13 point Helvetica Neue font with 5 points of spacing between each line:
 
@@ -44,7 +45,7 @@ The default text editor doesn’t support rich text, such as styling of individu
 
 ## Parameters
 
-- `text`: A [`Binding`](binding.md) to the variable containing the text to edit.
+- `text`: A [`Binding`](../binding.md) to the variable containing the text to edit.
 
 
 ---

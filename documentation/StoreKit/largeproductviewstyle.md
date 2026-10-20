@@ -1,7 +1,8 @@
 # LargeProductViewStyle
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A style for a product view that’s suitable for layouts where the Apple In-App Purchase content is prominent.
 
@@ -22,24 +23,25 @@ A style for a product view that’s suitable for layouts where the Apple In-App 
 ## Topics
 
 ### Getting the large product view style
-- [static var large: LargeProductViewStyle](productviewstyle/large.md)
+- [static var large: LargeProductViewStyle](./productviewstyle/large.md)
   A product view style suitable for layouts where the Apple In-App Purchase content is prominent.
 ### Creating the style
-- [init()](largeproductviewstyle/init.md)
+- [init()](./largeproductviewstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [ProductViewStyle](productviewstyle.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ProductViewStyle](./productviewstyle.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AutomaticProductViewStyle](automaticproductviewstyle.md)
-- [struct CompactProductViewStyle](compactproductviewstyle.md)
+### Supporting types
+- [struct AutomaticProductViewStyle](./automaticproductviewstyle.md)
+- [struct CompactProductViewStyle](./compactproductviewstyle.md)
   A style for a product view that’s suitable for layouts with less available space, or for displaying more items in a small amount of space.
-- [struct RegularProductViewStyle](regularproductviewstyle.md)
+- [struct RegularProductViewStyle](./regularproductviewstyle.md)
   A style for a product view that uses a standard, platform-appropriate layout.
 
 

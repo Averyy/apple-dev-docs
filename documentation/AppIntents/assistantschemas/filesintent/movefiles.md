@@ -1,7 +1,8 @@
 # moveFiles
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app intent conforms to the schema for moving a file.
 
@@ -39,7 +40,7 @@ struct MoveFilesIntent: AppIntent {
 }
 ```
 
-For more information about the `.files` app intent domain, see [`Files`](app-schema-domain-files.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about the `.files` app intent domain, see [Files](../../app-schema-domain-files.md). For general information about app intent domains, see [Making actions and content discoverable by Apple Intelligence](../../making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

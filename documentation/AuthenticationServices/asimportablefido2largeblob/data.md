@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The contents of the large blob value which has been DEFLATE compressed.
 

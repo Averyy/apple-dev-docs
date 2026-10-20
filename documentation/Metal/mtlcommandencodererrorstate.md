@@ -1,7 +1,8 @@
 # MTLCommandEncoderErrorState
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Possible error conditions for the command encoder’s commands.
 
@@ -19,39 +20,44 @@ Possible error conditions for the command encoder’s commands.
 enum MTLCommandEncoderErrorState
 ```
 
+```c
+enum MTLCommandEncoderErrorState : NSInteger;
+```
+
 ## Topics
 
 ### Getting the error state
-- [MTLCommandEncoderErrorState.completed](mtlcommandencodererrorstate/completed.md)
+- [MTLCommandEncoderErrorState.completed](./mtlcommandencodererrorstate/completed.md)
   A state that indicates the GPU successfully executed the commands without any errors.
-- [MTLCommandEncoderErrorState.pending](mtlcommandencodererrorstate/pending.md)
+- [MTLCommandEncoderErrorState.pending](./mtlcommandencodererrorstate/pending.md)
   An error state that indicates the GPU didn’t execute the commands.
-- [MTLCommandEncoderErrorState.affected](mtlcommandencodererrorstate/affected.md)
+- [MTLCommandEncoderErrorState.affected](./mtlcommandencodererrorstate/affected.md)
   An error state that indicates the GPU failed to fully execute the commands because of an error.
-- [MTLCommandEncoderErrorState.faulted](mtlcommandencodererrorstate/faulted.md)
+- [MTLCommandEncoderErrorState.faulted](./mtlcommandencodererrorstate/faulted.md)
   An error state that indicates the commands in the command buffer are the cause of an error.
-- [MTLCommandEncoderErrorState.unknown](mtlcommandencodererrorstate/unknown.md)
+- [MTLCommandEncoderErrorState.unknown](./mtlcommandencodererrorstate/unknown.md)
   An error state that indicates the command buffer doesn’t know the state of its commands on the GPU.
 ### Initializers
-- [init?(rawValue: Int)](mtlcommandencodererrorstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mtlcommandencodererrorstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var label: String](mtlcommandbufferencoderinfo/label.md)
+### Inspecting execution information
+- [var label: String](./mtlcommandbufferencoderinfo/label.md)
   The name of the encoder that generates the error information.
-- [var debugSignposts: [String]](mtlcommandbufferencoderinfo/debugsignposts.md)
+- [var debugSignposts: [String]](./mtlcommandbufferencoderinfo/debugsignposts.md)
   An array of debug signposts that Metal records as the GPU executes the commands of the encoder’s pass.
-- [var errorState: MTLCommandEncoderErrorState](mtlcommandbufferencoderinfo/errorstate.md)
+- [var errorState: MTLCommandEncoderErrorState](./mtlcommandbufferencoderinfo/errorstate.md)
   The execution status of the command encoder.
 
 

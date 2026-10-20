@@ -1,7 +1,8 @@
 # CWSecurity
 
 **Framework**: Core WLAN  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 CoreWLAN security types.
 
@@ -14,73 +15,78 @@ CoreWLAN security types.
 enum CWSecurity
 ```
 
+```c
+enum CWSecurity : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [CWSecurity.none](cwsecurity/none.md)
+- [CWSecurity.none](./cwsecurity/none.md)
   Open System authentication.
-- [CWSecurity.WEP](cwsecurity/wep.md)
+- [CWSecurity.WEP](./cwsecurity/wep.md)
   WEP security.
-- [CWSecurity.wpaPersonal](cwsecurity/wpapersonal.md)
+- [CWSecurity.wpaPersonal](./cwsecurity/wpapersonal.md)
   WPA Personal authentication.
-- [CWSecurity.wpaPersonalMixed](cwsecurity/wpapersonalmixed.md)
+- [CWSecurity.wpaPersonalMixed](./cwsecurity/wpapersonalmixed.md)
   WPA/WPA2 Personal authentication.
-- [CWSecurity.wpa2Personal](cwsecurity/wpa2personal.md)
+- [CWSecurity.wpa2Personal](./cwsecurity/wpa2personal.md)
   WPA2 Personal authentication.
-- [CWSecurity.personal](cwsecurity/personal.md)
+- [CWSecurity.personal](./cwsecurity/personal.md)
   Personal authentication.
-- [CWSecurity.dynamicWEP](cwsecurity/dynamicwep.md)
+- [CWSecurity.dynamicWEP](./cwsecurity/dynamicwep.md)
   Dynamic WEP security.
-- [CWSecurity.wpaEnterprise](cwsecurity/wpaenterprise.md)
+- [CWSecurity.wpaEnterprise](./cwsecurity/wpaenterprise.md)
   WPA Enterprise authentication.
-- [CWSecurity.wpaEnterpriseMixed](cwsecurity/wpaenterprisemixed.md)
+- [CWSecurity.wpaEnterpriseMixed](./cwsecurity/wpaenterprisemixed.md)
   WPA/WPA2 Enterprise authentication.
-- [CWSecurity.wpa2Enterprise](cwsecurity/wpa2enterprise.md)
+- [CWSecurity.wpa2Enterprise](./cwsecurity/wpa2enterprise.md)
   WPA2 Enterprise authentication.
-- [CWSecurity.enterprise](cwsecurity/enterprise.md)
+- [CWSecurity.enterprise](./cwsecurity/enterprise.md)
   Enterprise authentication.
-- [CWSecurity.wpa3Personal](cwsecurity/wpa3personal.md)
+- [CWSecurity.wpa3Personal](./cwsecurity/wpa3personal.md)
   WPA3 Personal authentication.
-- [CWSecurity.wpa3Enterprise](cwsecurity/wpa3enterprise.md)
+- [CWSecurity.wpa3Enterprise](./cwsecurity/wpa3enterprise.md)
   WPA3 Enterprise authentication.
-- [CWSecurity.wpa3Transition](cwsecurity/wpa3transition.md)
+- [CWSecurity.wpa3Transition](./cwsecurity/wpa3transition.md)
   WPA3 Transition (WPA3/WPA2 Personal) authentication.
-- [CWSecurity.unknown](cwsecurity/unknown.md)
+- [CWSecurity.unknown](./cwsecurity/unknown.md)
   Unknown security type.
 ### Enumeration Cases
-- [CWSecurity.OWE](cwsecurity/owe.md)
-- [CWSecurity.oweTransition](cwsecurity/owetransition.md)
+- [CWSecurity.OWE](./cwsecurity/owe.md)
+- [CWSecurity.oweTransition](./cwsecurity/owetransition.md)
 ### Initializers
-- [init?(rawValue: Int)](cwsecurity/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cwsecurity/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CWChannelBand](cwchannelband.md)
+### Enumerations
+- [enum CWChannelBand](./cwchannelband.md)
   CoreWLAN channel bands.
-- [enum CWChannelWidth](cwchannelwidth.md)
+- [enum CWChannelWidth](./cwchannelwidth.md)
   CoreWLAN channel widths.
-- [struct CWCipherKeyFlags](cwcipherkeyflags.md)
+- [struct CWCipherKeyFlags](./cwcipherkeyflags.md)
   Cipher key flags.
-- [enum CWErr](cwerr.md)
-- [enum CWEventType](cweventtype.md)
+- [enum CWErr](./cwerr.md)
+- [enum CWEventType](./cweventtype.md)
   Wi-Fi event types.
-- [enum CWIBSSModeSecurity](cwibssmodesecurity.md)
+- [enum CWIBSSModeSecurity](./cwibssmodesecurity.md)
   IBSS mode security types.
-- [enum CWInterfaceMode](cwinterfacemode.md)
+- [enum CWInterfaceMode](./cwinterfacemode.md)
   Wi-Fi interface operating modes.
-- [enum CWKeychainDomain](cwkeychaindomain.md)
+- [enum CWKeychainDomain](./cwkeychaindomain.md)
   Keychain domain types that CoreWLAN keychain methods use.
-- [enum CWPHYMode](cwphymode.md)
+- [enum CWPHYMode](./cwphymode.md)
   CoreWLAN physical layer modes.
 
 

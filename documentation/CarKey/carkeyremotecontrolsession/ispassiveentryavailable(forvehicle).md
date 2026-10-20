@@ -1,7 +1,8 @@
 # isPassiveEntryAvailable(forVehicle:)
 
 **Framework**: CarKey  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether passive entry is currently available for the specified vehicle.
 
@@ -24,11 +25,12 @@ func isPassiveEntryAvailable(forVehicle vehicleID: String) throws -> Bool
 
 ## Parameters
 
-- `vehicleID`: The target vehicle for the request. Choose the vehicle from one of the session’s vehicle reports. Specify the string in the [`identifier`](vehiclereport/identifier.md) property of the corresponding report.
+- `vehicleID`: The target vehicle for the request. Choose the vehicle from one of the session’s vehicle reports. Specify the string in the [`identifier`](../vehiclereport/identifier.md) property of the corresponding report.
 
 ## See Also
 
-- [var vehicleReports: [VehicleReport]](carkeyremotecontrolsession/vehiclereports.md)
+### Getting Vehicle Information
+- [var vehicleReports: [VehicleReport]](./vehiclereports.md)
   The configuration details of the provisioned vehicles that match your company’s make.
 
 

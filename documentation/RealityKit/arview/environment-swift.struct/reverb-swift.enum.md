@@ -1,7 +1,8 @@
 # ARView.Environment.Reverb
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Reverb characteristics of an environment.
 
@@ -21,25 +22,26 @@ enum Reverb
 ## Topics
 
 ### Available reverb settings
-- [ARView.Environment.Reverb.noReverb](arview/environment-swift.struct/reverb-swift.enum/noreverb.md)
+- [ARView.Environment.Reverb.noReverb](./reverb-swift.enum/noreverb.md)
   Omit reverb from the scene.
-- [case preset(ARView.Environment.Reverb.Preset)](arview/environment-swift.struct/reverb-swift.enum/preset(_:).md)
+- [case preset(ARView.Environment.Reverb.Preset)](./reverb-swift.enum/preset%28_%29.md)
   Generate reverb from a preset.
 ### Reverb presets
-- [static var automatic: ARView.Environment.Reverb](arview/environment-swift.struct/reverb-swift.enum/automatic.md)
+- [static var automatic: ARView.Environment.Reverb](./reverb-swift.enum/automatic.md)
   The default reverb preset.
-- [ARView.Environment.Reverb.Preset](arview/environment-swift.struct/reverb-swift.enum/preset.md)
+- [ARView.Environment.Reverb.Preset](./reverb-swift.enum/preset.md)
   Available reverb preset values.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var reverb: ARView.Environment.Reverb](arview/environment-swift.struct/reverb-swift.property.md)
+### Defining acoustic properties
+- [var reverb: ARView.Environment.Reverb](./reverb-swift.property.md)
   The amount of reverb in the scene.
 
 

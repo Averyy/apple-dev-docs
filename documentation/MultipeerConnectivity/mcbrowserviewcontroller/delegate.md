@@ -1,22 +1,37 @@
 # delegate
 
 **Framework**: Multipeer Connectivity  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The delegate object that handles browser-view-controller-related events.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- macOS 10.10+
-- tvOS 10.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 27.0
+- iPadOS 7.0+ - Deprecated in 27.0
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.10+ - Deprecated in 27.0
+- tvOS 10.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use Network Framework instead
 
 ## Declaration
 
 ```swift
 weak var delegate: (any MCBrowserViewControllerDelegate)? { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, weak, nullable) id<MCBrowserViewControllerDelegate> delegate;
+```
+
+*macOS*
+
+```objc
+@property (atomic, weak, nullable) id<MCBrowserViewControllerDelegate> delegate;
 ```
 
 #### Discussion
@@ -30,13 +45,14 @@ Also, as new peers are discovered, the delegate can choose whether to present th
 
 ## See Also
 
-- [convenience init(serviceType: String, session: MCSession)](mcbrowserviewcontroller/init(servicetype:session:).md)
+### Initializing a Browser View Controller
+- [convenience init(serviceType: String, session: MCSession)](./init%28servicetype,session%29.md)
   Initializes a browser view controller using the provided service type and session.
-- [init(browser: MCNearbyServiceBrowser, session: MCSession)](mcbrowserviewcontroller/init(browser:session:).md)
+- [init(browser: MCNearbyServiceBrowser, session: MCSession)](./init%28browser,session%29.md)
   Initializes a browser view controller with the provided browser and session.
-- [var browser: MCNearbyServiceBrowser?](mcbrowserviewcontroller/browser.md)
+- [var browser: MCNearbyServiceBrowser?](./browser.md)
   The browser object that is used for discovering peers.
-- [var session: MCSession](mcbrowserviewcontroller/session.md)
+- [var session: MCSession](./session.md)
   The multipeer session to which the invited peers are connected.
 
 

@@ -1,7 +1,8 @@
 # setOverlay(_:forType:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets an overlay type for a Core Animation layer.
 
@@ -14,14 +15,19 @@ Sets an overlay type for a Core Animation layer.
 func setOverlay(_ layer: CALayer!, forType layerType: String!)
 ```
 
+```objc
+- (void) setOverlay:(CALayer *) layer forType:(NSString *) layerType;
+```
+
 ## Parameters
 
 - `layer`: A Core Animation layer object.
-- `layerType`: A layer type. See [`Overlay Types`](overlay-types.md).
+- `layerType`: A layer type. See [Overlay Types](../overlay-types.md).
 
 ## See Also
 
-- [func overlay(forType: String!) -> CALayer!](ikimageview/overlay(fortype:).md)
+### Working With Core Animation
+- [func overlay(forType: String!) -> CALayer!](./overlay%28fortype%29.md)
   Returns the Core Animation layer associated with a layer type.
 
 

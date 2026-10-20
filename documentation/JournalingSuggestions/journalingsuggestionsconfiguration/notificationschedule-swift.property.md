@@ -1,7 +1,8 @@
 # notificationSchedule
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The schedule for Journaling Suggestion notifications, as it resides in Settings.
 
@@ -16,11 +17,12 @@ var notificationSchedule: JournalingSuggestionsConfiguration.NotificationSchedul
 
 ## Mentions
 
-- [Receiving journaling suggestions system notifications](receiving-journaling-suggestions-from-system-notifications.md)
+- [Receiving journaling suggestions system notifications](../receiving-journaling-suggestions-from-system-notifications.md)
 
 ## See Also
 
-- [JournalingSuggestionsConfiguration.NotificationSchedule](journalingsuggestionsconfiguration/notificationschedule-swift.enum.md)
+### Inspecting the notification schedule
+- [JournalingSuggestionsConfiguration.NotificationSchedule](./notificationschedule-swift.enum.md)
   Possible values for the Journaling Suggestions notifications setting.
 
 

@@ -1,15 +1,18 @@
 # endpointAvailable
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean that indicates whether the content server is available.
 
 **Availability**:
-- iOS 8.4+
-- iPadOS 8.4+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 8.4+ - Deprecated in 14.0
+- iPadOS 8.4+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use CarPlay framework
 
 ## Declaration
 
@@ -17,19 +20,24 @@ Returns a Boolean that indicates whether the content server is available.
 var endpointAvailable: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL endpointAvailable;
+```
+
 #### Discussion
 
-When set to [`true`](https://developer.apple.com/documentation/swift/true), the content server is available.
+When set to [`true`](../../Swift/true.md), the content server is available.
 
 ## See Also
 
-- [var contentLimitsEnforced: Bool](mpplayablecontentmanagercontext/contentlimitsenforced.md)
+### Inspecting content manager properties
+- [var contentLimitsEnforced: Bool](./contentlimitsenforced.md)
   A Boolean value that indicates whether the content server enforces content limits.
-- [var enforcedContentItemsCount: Int](mpplayablecontentmanagercontext/enforcedcontentitemscount.md)
+- [var enforcedContentItemsCount: Int](./enforcedcontentitemscount.md)
   Returns the number of content items to display during content limiting.
-- [var enforcedContentTreeDepth: Int](mpplayablecontentmanagercontext/enforcedcontenttreedepth.md)
+- [var enforcedContentTreeDepth: Int](./enforcedcontenttreedepth.md)
   The maximum depth of the navigation hierarchy allowed by the content server.
-- [var contentLimitsEnabled: Bool](mpplayablecontentmanagercontext/contentlimitsenabled.md)
+- [var contentLimitsEnabled: Bool](./contentlimitsenabled.md)
   A Boolean value that indicates whether the content server enables content limits.
 
 

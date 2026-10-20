@@ -1,7 +1,8 @@
 # TVMonogramContentConfiguration.TextProperties.TextTransform.none
 
 **Framework**: TVUIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option with no transform.
 
@@ -16,11 +17,12 @@ case none
 
 ## See Also
 
-- [TVMonogramContentConfiguration.TextProperties.TextTransform.capitalized](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/capitalized.md)
+### Text Transforms
+- [TVMonogramContentConfiguration.TextProperties.TextTransform.capitalized](./capitalized.md)
   A transform for displaying the text with the first character capitalized.
-- [TVMonogramContentConfiguration.TextProperties.TextTransform.lowercase](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/lowercase.md)
+- [TVMonogramContentConfiguration.TextProperties.TextTransform.lowercase](./lowercase.md)
   A transform for displaying the text in all lowercase characters.
-- [TVMonogramContentConfiguration.TextProperties.TextTransform.uppercase](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/uppercase.md)
+- [TVMonogramContentConfiguration.TextProperties.TextTransform.uppercase](./uppercase.md)
   A transform for displaying the text in all uppercase characters.
 
 

@@ -1,7 +1,8 @@
 # tag(for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The tag value for the given type if the container values contains one.
 

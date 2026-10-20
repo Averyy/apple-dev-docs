@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns true if the specified pending record zone change is included in this scope.
 
@@ -11,7 +12,7 @@ Returns true if the specified pending record zone change is included in this sco
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

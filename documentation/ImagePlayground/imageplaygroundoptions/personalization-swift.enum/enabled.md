@@ -1,7 +1,8 @@
 # ImagePlaygroundOptions.Personalization.enabled
 
 **Framework**: Image Playground  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to enable personalization features during image generation.
 

@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Combine  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a Boolean value that indicates whether two publishers are equivalent.
 
@@ -19,6 +20,8 @@ Returns a Boolean value that indicates whether two publishers are equivalent.
 ```swift
 static func == (lhs: Fail<Output, Failure>, rhs: Fail<Output, Failure>) -> Bool
 ```
+
+Available when `Failure` conforms to `Equatable` and `Error`.
 
 #### Return Value
 

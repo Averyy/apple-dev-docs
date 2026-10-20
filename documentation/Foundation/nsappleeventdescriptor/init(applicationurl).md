@@ -1,7 +1,8 @@
 # init(applicationURL:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an application address descriptor using the specified application URL.
 
@@ -12,6 +13,10 @@ Creates and returns an application address descriptor using the specified applic
 
 ```swift
 init(applicationURL: URL)
+```
+
+```objc
++ (NSAppleEventDescriptor *) descriptorWithApplicationURL:(NSURL *) applicationURL;
 ```
 
 #### Discussion

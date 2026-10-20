@@ -1,7 +1,8 @@
 # AECoerceDescUPP
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Defines a data type for the universal procedure pointer for the `AECoerceDescProcPtr` callback function pointer.
 
@@ -15,9 +16,13 @@ Defines a data type for the universal procedure pointer for the `AECoerceDescPro
 typealias AECoerceDescUPP = AECoerceDescProcPtr
 ```
 
+```c
+typedef AECoerceDescProcPtr AECoerceDescUPP;
+```
+
 #### Discussion
 
-For a description of a coerce descriptor callback function, see [`AECoerceDescProcPtr`](aecoercedescprocptr.md). 
+For a description of a coerce descriptor callback function, see [`AECoerceDescProcPtr`](./aecoercedescprocptr.md). 
 
 
 ---

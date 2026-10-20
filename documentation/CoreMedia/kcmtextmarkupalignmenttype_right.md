@@ -1,7 +1,8 @@
 # kCMTextMarkupAlignmentType_Right
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An alignment type that visually aligns text from right-to-left.
 
@@ -20,19 +21,24 @@ An alignment type that visually aligns text from right-to-left.
 let kCMTextMarkupAlignmentType_Right: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextMarkupAlignmentType_Right;
+```
+
 #### Discussion
 
-For horizontally written text, the text alignment is always visually right-aligned (the system uniformly treats left-to-right and right-to-left). For vertical text, [`kCMTextMarkupAlignmentType_Right`](kcmtextmarkupalignmenttype_right.md) is equivalent to [`kCMTextMarkupAlignmentType_End`](kcmtextmarkupalignmenttype_end.md).
+For horizontally written text, the text alignment is always visually right-aligned (the system uniformly treats left-to-right and right-to-left). For vertical text, [`kCMTextMarkupAlignmentType_Right`](./kcmtextmarkupalignmenttype_right.md) is equivalent to [`kCMTextMarkupAlignmentType_End`](./kcmtextmarkupalignmenttype_end.md).
 
 ## See Also
 
-- [let kCMTextMarkupAlignmentType_Start: CFString](kcmtextmarkupalignmenttype_start.md)
+### Alignment Types
+- [let kCMTextMarkupAlignmentType_Start: CFString](./kcmtextmarkupalignmenttype_start.md)
   An alignment type that visually aligns the text at its starting side.
-- [let kCMTextMarkupAlignmentType_Middle: CFString](kcmtextmarkupalignmenttype_middle.md)
+- [let kCMTextMarkupAlignmentType_Middle: CFString](./kcmtextmarkupalignmenttype_middle.md)
   An alignment type that visually aligns text in the center between its starting and ending sides.
-- [let kCMTextMarkupAlignmentType_End: CFString](kcmtextmarkupalignmenttype_end.md)
+- [let kCMTextMarkupAlignmentType_End: CFString](./kcmtextmarkupalignmenttype_end.md)
   An alignment type that visually aligns the text at its ending side.
-- [let kCMTextMarkupAlignmentType_Left: CFString](kcmtextmarkupalignmenttype_left.md)
+- [let kCMTextMarkupAlignmentType_Left: CFString](./kcmtextmarkupalignmenttype_left.md)
   An alignment type that visually aligns text from left-to-right.
 
 

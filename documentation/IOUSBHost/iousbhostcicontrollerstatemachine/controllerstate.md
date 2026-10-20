@@ -1,7 +1,8 @@
 # controllerState
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,9 +14,14 @@
 var controllerState: IOUSBHostCIControllerState { get }
 ```
 
+```objc
+@property (nonatomic, readonly) IOUSBHostCIControllerState controllerState;
+```
+
 ## See Also
 
-- [var controllerInterface: IOUSBHostControllerInterface](iousbhostcicontrollerstatemachine/controllerinterface.md)
+### Instance Properties
+- [var controllerInterface: IOUSBHostControllerInterface](./controllerinterface.md)
 
 
 ---

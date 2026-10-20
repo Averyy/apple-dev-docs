@@ -1,7 +1,8 @@
 # shared()
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the shared object you use to access the system’s remote command objects.
 
@@ -18,6 +19,10 @@ Returns the shared object you use to access the system’s remote command object
 
 ```swift
 class func shared() -> MPRemoteCommandCenter
+```
+
+```objc
++ (MPRemoteCommandCenter *) sharedCommandCenter;
 ```
 
 #### Return Value

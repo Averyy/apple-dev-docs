@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the credential identity store is enabled.
 
@@ -18,13 +19,18 @@ A Boolean value indicating whether the credential identity store is enabled.
 var isEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
 You can only modify a credential identity store that’s enabled.
 
 ## See Also
 
-- [var supportsIncrementalUpdates: Bool](ascredentialidentitystorestate/supportsincrementalupdates.md)
+### Checking the state
+- [var supportsIncrementalUpdates: Bool](./supportsincrementalupdates.md)
   A Boolean value indicating whether the credential identity store supports incremental updates.
 
 

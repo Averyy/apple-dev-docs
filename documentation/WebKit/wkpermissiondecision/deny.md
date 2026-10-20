@@ -1,7 +1,8 @@
 # WKPermissionDecision.deny
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Deny permission for the requested resource.
 
@@ -18,11 +19,16 @@ Deny permission for the requested resource.
 case deny
 ```
 
+```c
+WKPermissionDecisionDeny
+```
+
 ## See Also
 
-- [WKPermissionDecision.grant](wkpermissiondecision/grant.md)
+### Constants
+- [WKPermissionDecision.grant](./grant.md)
   Grant permission for the requested resource.
-- [WKPermissionDecision.prompt](wkpermissiondecision/prompt.md)
+- [WKPermissionDecision.prompt](./prompt.md)
   Prompt the user for permission for the requested resource.
 
 

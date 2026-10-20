@@ -1,7 +1,8 @@
 # stopMotion(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func stopMotion(with params: MTRWindowCoveringClusterStopMotionParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func stopMotion(with params: MTRWindowCoveringClusterStopMotionParams?) async throws
+```
+
+```objc
+- (void) stopMotionWithParams:(MTRWindowCoveringClusterStopMotionParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

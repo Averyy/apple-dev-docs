@@ -1,7 +1,8 @@
 # callAsFunction(to:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the transformation on a sequence of inputs.
 
@@ -31,9 +32,10 @@ The outputs produced by applying the transformer to the inputs.
 
 ## See Also
 
-- [func callAsFunction<S>(S, eventHandler: EventHandler?) async throws -> Self.OutputSequence](temporaltransformer/callasfunction(_:eventhandler:).md)
+### Transforming and predicting
+- [func callAsFunction<S>(S, eventHandler: EventHandler?) async throws -> Self.OutputSequence](./callasfunction%28_,eventhandler%29.md)
   Performs the transformation on an input sequence.
-- [func prediction<S, Label>(from: S) async throws -> Self.OutputSequence](temporaltransformer/prediction(from:).md)
+- [func prediction<S, Label>(from: S) async throws -> Self.OutputSequence](./prediction%28from%29.md)
   Performs a prediction on a single input.
 
 

@@ -1,7 +1,8 @@
 # isPinned(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the pinned state of the tab is needed.
 
@@ -18,6 +19,10 @@ Called when the pinned state of the tab is needed.
 optional func isPinned(for context: WKWebExtensionContext) -> Bool
 ```
 
+```objc
+- (BOOL) isPinnedForWebExtensionContext:(WKWebExtensionContext *) context;
+```
+
 #### Discussion
 
 Defaults to `NO` if not implemented.
@@ -28,7 +33,8 @@ Defaults to `NO` if not implemented.
 
 ## See Also
 
-- [func setPinned(Bool, for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](wkwebextensiontab/setpinned(_:for:completionhandler:).md)
+### Related Documentation
+- [func setPinned(Bool, for: WKWebExtensionContext, completionHandler: ((any Error)?) -> Void)](./setpinned%28_,for,completionhandler%29.md)
   Called to set the pinned state of the tab.
 
 

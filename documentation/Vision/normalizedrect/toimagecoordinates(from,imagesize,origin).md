@@ -1,7 +1,8 @@
 # toImageCoordinates(from:imageSize:origin:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a rectangle normalized to a region within an image into full image coordinates.
 
@@ -28,7 +29,8 @@ func toImageCoordinates(from regionOfInterest: NormalizedRect, imageSize: CGSize
 
 ## See Also
 
-- [func toImageCoordinates(CGSize, origin: CoordinateOrigin) -> CGRect](normalizedrect/toimagecoordinates(_:origin:).md)
+### Converting rectangles
+- [func toImageCoordinates(CGSize, origin: CoordinateOrigin) -> CGRect](./toimagecoordinates%28_,origin%29.md)
   Converts a rectangle in normalized coordinates into image coordinates.
 
 

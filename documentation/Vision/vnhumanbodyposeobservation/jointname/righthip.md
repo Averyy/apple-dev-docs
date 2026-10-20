@@ -1,7 +1,8 @@
 # rightHip
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The right hip.
 
@@ -19,17 +20,22 @@ The right hip.
 static let rightHip: VNHumanBodyPoseObservation.JointName
 ```
 
+```c
+extern VNHumanBodyPoseObservationJointName const VNHumanBodyPoseObservationJointNameRightHip;
+```
+
 ## See Also
 
-- [static let leftHip: VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname/lefthip.md)
+### Legs
+- [static let leftHip: VNHumanBodyPoseObservation.JointName](./lefthip.md)
   The left hip.
-- [static let leftKnee: VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname/leftknee.md)
+- [static let leftKnee: VNHumanBodyPoseObservation.JointName](./leftknee.md)
   The left knee.
-- [static let leftAnkle: VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname/leftankle.md)
+- [static let leftAnkle: VNHumanBodyPoseObservation.JointName](./leftankle.md)
   The left ankle.
-- [static let rightKnee: VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname/rightknee.md)
+- [static let rightKnee: VNHumanBodyPoseObservation.JointName](./rightknee.md)
   The right knee.
-- [static let rightAnkle: VNHumanBodyPoseObservation.JointName](vnhumanbodyposeobservation/jointname/rightankle.md)
+- [static let rightAnkle: VNHumanBodyPoseObservation.JointName](./rightankle.md)
   The right ankle.
 
 

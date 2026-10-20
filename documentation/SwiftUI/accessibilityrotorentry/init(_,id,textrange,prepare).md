@@ -1,7 +1,8 @@
 # init(_:id:textRange:prepare:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a Rotor entry with a specific label and identifier, with an optional range.
 
@@ -21,6 +22,20 @@ Create a Rotor entry with a specific label and identifier, with an optional rang
 init(_ label: LocalizedStringResource, id: ID, textRange: Range<String.Index>? = nil, prepare: @escaping () -> Void = {})
 ```
 
+**Other overloads**:
+
+```swift
+init(_ label: Text, id: ID, textRange: Range<String.Index>? = nil, prepare: @escaping () -> Void = {})
+```
+
+```swift
+init(_ labelKey: LocalizedStringKey, id: ID, textRange: Range<String.Index>? = nil, prepare: @escaping () -> Void = {})
+```
+
+```swift
+init<L>(_ label: L, id: ID, textRange: Range<String.Index>? = nil, prepare: @escaping () -> Void = {}) where L : StringProtocol
+```
+
 ## Parameters
 
 - `label`: Localized string used to show this Rotor entry to users.
@@ -30,7 +45,8 @@ init(_ label: LocalizedStringResource, id: ID, textRange: Range<String.Index>? =
 
 ## See Also
 
-- [init(_:textRange:prepare:)](accessibilityrotorentry/init(_:textrange:prepare:).md)
+### Creating a rotor entry
+- [init(_:textRange:prepare:)](./init%28_,textrange,prepare%29.md)
   Create a Rotor entry with a specific label and range. This Rotor entry will be associated with the Accessibility element that owns the Rotor.
 
 

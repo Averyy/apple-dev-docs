@@ -1,18 +1,19 @@
 # makeMemoryPressureSource(eventMask:queue:)
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new dispatch source object that monitors the system for changes in the memory pressure condition.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,22 +23,23 @@ class func makeMemoryPressureSource(eventMask: DispatchSource.MemoryPressureEven
 
 #### Return Value
 
-A dispatch source object that conforms to the [`DispatchSourceMemoryPressure`](dispatchsourcememorypressure.md) protocol.
+A dispatch source object that conforms to the [`DispatchSourceMemoryPressure`](../dispatchsourcememorypressure.md) protocol.
 
 #### Discussion
 
-After creating the dispatch source, use the methods of the [`DispatchSourceProtocol`](dispatchsourceprotocol.md) protocol to install the event handlers you need. The returned dispatch source is in the inactive state initially. When you are ready to begin processing events, call its [`activate()`](dispatchobject/activate().md) method.
+After creating the dispatch source, use the methods of the [`DispatchSourceProtocol`](../dispatchsourceprotocol.md) protocol to install the event handlers you need. The returned dispatch source is in the inactive state initially. When you are ready to begin processing events, call its [`activate()`](../dispatchobject/activate%28%29.md) method.
 
 ## Parameters
 
-- `eventMask`: The set of events you want to monitor. For a list of possible values, see [`DispatchSource.MemoryPressureEvent`](dispatchsource/memorypressureevent.md).
+- `eventMask`: The set of events you want to monitor. For a list of possible values, see [`DispatchSource.MemoryPressureEvent`](./memorypressureevent.md).
 - `queue`: The dispatch queue to use when executing the installed handlers.
 
 ## See Also
 
-- [protocol DispatchSourceMemoryPressure](dispatchsourcememorypressure.md)
+### Creating a Memory Pressure Source
+- [protocol DispatchSourceMemoryPressure](../dispatchsourcememorypressure.md)
   A dispatch source that monitors the system for changes in the memory pressure condition.
-- [DispatchSource.MemoryPressureEvent](dispatchsource/memorypressureevent.md)
+- [DispatchSource.MemoryPressureEvent](./memorypressureevent.md)
   Memory pressure events.
 
 

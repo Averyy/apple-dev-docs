@@ -1,7 +1,8 @@
 # reloadData()
 
 **Framework**: iTunes Library  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Refreshes the data that the framework uses.
 
@@ -15,13 +16,18 @@ Refreshes the data that the framework uses.
 func reloadData() -> Bool
 ```
 
+```objc
+- (BOOL) reloadData;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the data reloads, or [`false`](https://developer.apple.com/documentation/swift/false) if an error occurs.
+Returns [`true`](../../Swift/true.md) if the data reloads, or [`false`](../../Swift/false.md) if an error occurs.
 
 ## See Also
 
-- [func unloadData()](itlibrary/unloaddata.md)
+### Loading and Unloading Data
+- [func unloadData()](./unloaddata%28%29.md)
   Unloads the data that the framework uses.
 
 

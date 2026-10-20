@@ -1,7 +1,8 @@
 # executeCommands(buffer:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a command that runs a range of commands from an indirect command buffer.
 
@@ -21,12 +22,13 @@ func executeCommands(buffer: any MTLIndirectCommandBuffer, range: Range<Int>)
 
 ## Parameters
 
-- `buffer`: An [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance that contains other commands the current command runs.
+- `buffer`: An [`MTLIndirectCommandBuffer`](../mtlindirectcommandbuffer.md) instance that contains other commands the current command runs.
 - `range`: A span of integers that represent the command entries in buffer the current command runs.
 
 ## See Also
 
-- [func executeCommands(buffer: any MTLIndirectCommandBuffer, indirectBuffer: MTLGPUAddress)](mtl4rendercommandencoder/executecommands(buffer:indirectbuffer:).md)
+### Running commands from indirect command buffers
+- [func executeCommands(buffer: any MTLIndirectCommandBuffer, indirectBuffer: MTLGPUAddress)](./executecommands%28buffer,indirectbuffer%29.md)
   Encodes a command that runs an indirect range of commands from an indirect command buffer.
 
 

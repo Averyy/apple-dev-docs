@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared access point object.
 
@@ -19,9 +20,13 @@ The shared access point object.
 class var shared: GKAccessPoint { get }
 ```
 
+```objc
+@property (class, nonatomic, readonly) GKAccessPoint * shared;
+```
+
 ## Mentions
 
-- [Adding an access point to your game](adding-an-access-point-to-your-game.md)
+- [Adding an access point to your game](../adding-an-access-point-to-your-game.md)
 
 
 ---

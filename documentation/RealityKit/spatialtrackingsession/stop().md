@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the current spatial tracking session.
 

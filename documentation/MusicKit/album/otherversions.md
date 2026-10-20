@@ -1,7 +1,8 @@
 # otherVersions
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of other versions of the album.
 

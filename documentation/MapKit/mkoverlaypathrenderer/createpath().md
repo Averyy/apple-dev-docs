@@ -1,7 +1,8 @@
 # createPath()
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the path for the overlay.
 
@@ -19,15 +20,20 @@ Creates the path for the overlay.
 func createPath()
 ```
 
+```objc
+- (void) createPath;
+```
+
 #### Discussion
 
-The default implementation of this method does nothing. Subclasses can override it and use it to create the [`CGPath`](https://developer.apple.com/documentation/coregraphics/cgpath) data type the subclass uses for drawing. After creating the path, your implementation needs to assign it to the [`path`](mkoverlaypathrenderer/path.md) property.
+The default implementation of this method does nothing. Subclasses can override it and use it to create the [`CGPath`](../../CoreGraphics/cgpath.md) data type the subclass uses for drawing. After creating the path, your implementation needs to assign it to the [`path`](./path.md) property.
 
 ## See Also
 
-- [var path: CGPath!](mkoverlaypathrenderer/path.md)
+### Creating and managing the path
+- [var path: CGPath!](./path.md)
   The path representing the overlay’s shape.
-- [func invalidatePath()](mkoverlaypathrenderer/invalidatepath.md)
+- [func invalidatePath()](./invalidatepath%28%29.md)
   Updates the path associated with the overlay renderer.
 
 

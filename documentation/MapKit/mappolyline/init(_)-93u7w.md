@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a polyline from polyline you provide.
 
@@ -11,7 +12,7 @@ Creates a polyline from polyline you provide.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,15 +23,16 @@ init(_ polyline: MKPolyline)
 
 ## Parameters
 
-- `polyline`: The [`MKPolyline`](mkpolyline.md) to convert.
+- `polyline`: The [`MKPolyline`](../mkpolyline.md) to convert.
 
 ## See Also
 
-- [init(MKRoute)](mappolyline/init(_:)-5p2kx.md)
+### Creating a polyline
+- [init(MKRoute)](./init%28_%29-5p2kx.md)
   Creates a polyline that traces the route you provide.
-- [init(coordinates: [CLLocationCoordinate2D], contourStyle: MapPolyline.ContourStyle)](mappolyline/init(coordinates:contourstyle:).md)
+- [init(coordinates: [CLLocationCoordinate2D], contourStyle: MapPolyline.ContourStyle)](./init%28coordinates,contourstyle%29.md)
   Creates a polyline that traces a path between the given coordinates using the specifed contour style.
-- [init(points: [MKMapPoint], contourStyle: MapPolyline.ContourStyle)](mappolyline/init(points:contourstyle:).md)
+- [init(points: [MKMapPoint], contourStyle: MapPolyline.ContourStyle)](./init%28points,contourstyle%29.md)
   Creates a new polyline that traces a path between the provided points using the specifed contour style.
 
 

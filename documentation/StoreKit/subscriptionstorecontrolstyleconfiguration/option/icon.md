@@ -1,7 +1,8 @@
 # icon
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The subscription option’s icon.
 
@@ -22,7 +23,7 @@ var icon: SubscriptionStoreControlStyleConfiguration.Icon? { get }
 
 #### Discussion
 
-Use this property to access the icon you configure for a subscription option using the [`subscriptionStoreControlIcon(icon:)`](https://developer.apple.com/documentation/swiftui/view/subscriptionstorecontrolicon(icon:)) view modifier.
+Use this property to access the icon you configure for a subscription option using the [`subscriptionStoreControlIcon(icon:)`](../../../SwiftUI/view/subscriptionstorecontrolicon%28icon%29.md) view modifier.
 
 
 ---

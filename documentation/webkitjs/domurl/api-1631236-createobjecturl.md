@@ -1,7 +1,8 @@
 # createObjectURL
 
 **Framework**: WebKit JS  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - Safari Desktop 5.1+
@@ -9,7 +10,17 @@
 
 ## Declaration
 
-```swift
+*Safari Desktop*
+
+```
+static DOMString createObjectURL(
+    MediaSource source
+);
+```
+
+*Safari Mobile*
+
+```
 static DOMString createObjectURL(
     Blob blob
 );

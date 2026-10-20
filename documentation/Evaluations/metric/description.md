@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable string representation of the metric, including its name, value, and optional rationale.
 

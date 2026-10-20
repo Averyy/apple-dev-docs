@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL that refers to the NBD server to which the NBD client will connect.
 
@@ -14,13 +15,18 @@ The URL that refers to the NBD server to which the NBD client will connect.
 var url: URL { get }
 ```
 
+```objc
+@property (copy, readonly) NSURL * URL;
+```
+
 ## See Also
 
-- [var isForcedReadOnly: Bool](vznetworkblockdevicestoragedeviceattachment/isforcedreadonly.md)
+### Getting information about the attachment point
+- [var isForcedReadOnly: Bool](./isforcedreadonly.md)
   Returns a Boolean value that indicates whether the underlying disk attachment network is in a read-only state.
-- [var synchronizationMode: VZDiskSynchronizationMode](vznetworkblockdevicestoragedeviceattachment/synchronizationmode.md)
+- [var synchronizationMode: VZDiskSynchronizationMode](./synchronizationmode.md)
   The mode in which the NBD client synchronizes data with the NBD server.
-- [var timeout: TimeInterval](vznetworkblockdevicestoragedeviceattachment/timeout.md)
+- [var timeout: TimeInterval](./timeout.md)
   The timeout value in seconds for the connection between the client and server.
 
 

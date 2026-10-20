@@ -1,7 +1,8 @@
 # maxAbsSlope
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum absolute slope at the location toward all directions, measured in degrees.
 
@@ -21,13 +22,14 @@ var maxAbsSlope: Double? { get }
 
 #### Discussion
 
-If the maximum absolute slope is invalid due to low GPS accuracy, this property is [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0).
+If the maximum absolute slope is invalid due to low GPS accuracy, this property is [`nil`](../../ObjectiveC/nil-227m0.md).
 
 ## See Also
 
-- [var speed: CLLocationSpeed](cmodometerdata/speed.md)
+### Getting speed and slope
+- [var speed: CLLocationSpeed](./speed.md)
   The instantaneous velocity of the device, measured in meters per second.
-- [var slope: Double?](cmodometerdata/slope-9h3m4.md)
+- [var slope: Double?](./slope-9h3m4.md)
   The slope at the location toward the direction of travel, measured in degrees.
 
 

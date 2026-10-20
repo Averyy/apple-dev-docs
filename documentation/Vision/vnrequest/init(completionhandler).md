@@ -1,7 +1,8 @@
 # init(completionHandler:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Vision request with an optional completion handler.
 
@@ -19,9 +20,13 @@ Creates a new Vision request with an optional completion handler.
 init(completionHandler: VNRequestCompletionHandler? = nil)
 ```
 
+```objc
+- (instancetype) initWithCompletionHandler:(VNRequestCompletionHandler) completionHandler;
+```
+
 #### Discussion
 
-Vision executes the completion handler on the same queue that it executes the request; however, this queue differs from the one where you called [`perform(_:)`](vnimagerequesthandler/perform(_:).md).
+Vision executes the completion handler on the same queue that it executes the request; however, this queue differs from the one where you called [`perform(_:)`](../vnimagerequesthandler/perform%28_%29.md).
 
 ## Parameters
 
@@ -29,7 +34,8 @@ Vision executes the completion handler on the same queue that it executes the re
 
 ## See Also
 
-- [convenience init()](vnrequest/init.md)
+### Initializing a Request
+- [convenience init()](./init%28%29.md)
   Creates a new Vision request with no completion handler.
 
 

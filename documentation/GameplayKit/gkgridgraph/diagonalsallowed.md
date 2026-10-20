@@ -1,7 +1,8 @@
 # diagonalsAllowed
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether nodes in the grid are connected to their diagonal neighbors.
 
@@ -19,19 +20,24 @@ A Boolean value that indicates whether nodes in the grid are connected to their 
 var diagonalsAllowed: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL diagonalsAllowed;
+```
+
 #### Discussion
 
-If this property’s value is [`true`](https://developer.apple.com/documentation/swift/true), nodes in the grid are connected to their diagonal neighbors. If the value is [`false`](https://developer.apple.com/documentation/swift/false), nodes are connected only to their horizontal and vertical neighbors.
+If this property’s value is [`true`](../../Swift/true.md), nodes in the grid are connected to their diagonal neighbors. If the value is [`false`](../../Swift/false.md), nodes are connected only to their horizontal and vertical neighbors.
 
-You specify this option when creating a grid graph with the [`init(fromGridStartingAt:width:height:diagonalsAllowed:)`](gkgridgraph/init(fromgridstartingat:width:height:diagonalsallowed:).md) initializer. After initialization, you can use this property to examine the parameters the graph was created with—for example, to draw the grid as a debugging overlay in your game UI.
+You specify this option when creating a grid graph with the [`init(fromGridStartingAt:width:height:diagonalsAllowed:)`](./init%28fromgridstartingat,width,height,diagonalsallowed%29.md) initializer. After initialization, you can use this property to examine the parameters the graph was created with—for example, to draw the grid as a debugging overlay in your game UI.
 
 ## See Also
 
-- [var gridOrigin: vector_int2](gkgridgraph/gridorigin.md)
+### Inspecting a Graph
+- [var gridOrigin: vector_int2](./gridorigin.md)
   The lowest x- and y-coordinates that appear in the grid.
-- [var gridWidth: Int](gkgridgraph/gridwidth.md)
+- [var gridWidth: Int](./gridwidth.md)
   The number of possible x-coordinates in the grid.
-- [var gridHeight: Int](gkgridgraph/gridheight.md)
+- [var gridHeight: Int](./gridheight.md)
   The number of possible y-coordinates in the grid.
 
 

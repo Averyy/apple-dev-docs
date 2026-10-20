@@ -1,7 +1,8 @@
 # accessibilityCustomActions
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of custom actions to display along with the built-in actions.
 
@@ -9,7 +10,7 @@ An array of custom actions to display along with the built-in actions.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -17,6 +18,10 @@ An array of custom actions to display along with the built-in actions.
 ```swift
 @MainActor
 var accessibilityCustomActions: [UIAccessibilityCustomAction]? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) NSArray<UIAccessibilityCustomAction *> * accessibilityCustomActions;
 ```
 
 #### Discussion

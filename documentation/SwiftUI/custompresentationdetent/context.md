@@ -1,7 +1,8 @@
 # CustomPresentationDetent.Context
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Information that you can use to calculate the height of a custom detent.
 
@@ -22,7 +23,8 @@ typealias Context = PresentationDetent.Context
 
 ## See Also
 
-- [static func height(in: Self.Context) -> CGFloat?](custompresentationdetent/height(in:).md)
+### Getting the height
+- [static func height(in: Self.Context) -> CGFloat?](./height%28in%29.md)
   Calculates and returns a height based on the context.
 
 

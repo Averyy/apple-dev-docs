@@ -1,7 +1,8 @@
 # exponentBitCount
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The number of bits used to represent the type’s exponent.
 
@@ -43,27 +44,28 @@ print(Float.leastNormalMagnitude.exponent)
 
 ## See Also
 
-- [var bitPattern: UInt32](float/bitpattern.md)
+### Working with Binary Representation
+- [var bitPattern: UInt32](./bitpattern.md)
   The bit pattern of the value’s encoding.
-- [var significandBitPattern: UInt32](float/significandbitpattern.md)
+- [var significandBitPattern: UInt32](./significandbitpattern.md)
   The raw encoding of the value’s significand field.
-- [var significandWidth: Int](float/significandwidth.md)
+- [var significandWidth: Int](./significandwidth.md)
   The number of bits required to represent the value’s significand.
-- [var exponentBitPattern: UInt](float/exponentbitpattern.md)
+- [var exponentBitPattern: UInt](./exponentbitpattern.md)
   The raw encoding of the value’s exponent field.
-- [static var significandBitCount: Int](float/significandbitcount.md)
+- [static var significandBitCount: Int](./significandbitcount.md)
   The available number of fractional significand bits.
-- [static var radix: Int](float/radix.md)
+- [static var radix: Int](./radix.md)
   The radix, or base of exponentiation, for a floating-point type.
-- [init(bitPattern: UInt32)](float/init(bitpattern:).md)
+- [init(bitPattern: UInt32)](./init%28bitpattern%29.md)
   Creates a new value with the given bit pattern.
-- [init(sign: FloatingPointSign, exponentBitPattern: UInt, significandBitPattern: UInt32)](float/init(sign:exponentbitpattern:significandbitpattern:).md)
+- [init(sign: FloatingPointSign, exponentBitPattern: UInt, significandBitPattern: UInt32)](./init%28sign,exponentbitpattern,significandbitpattern%29.md)
   Creates a new instance from the specified sign and bit patterns.
-- [init(nan: Float.RawSignificand, signaling: Bool)](float/init(nan:signaling:).md)
+- [init(nan: Float.RawSignificand, signaling: Bool)](./init%28nan,signaling%29.md)
   Creates a NaN (“not a number”) value with the specified payload.
-- [typealias Exponent](float/exponent-swift.typealias.md)
+- [typealias Exponent](./exponent-swift.typealias.md)
   A type that can represent any written exponent.
-- [typealias RawSignificand](float/rawsignificand.md)
+- [typealias RawSignificand](./rawsignificand.md)
   A type that represents the encoded significand of a value.
 
 

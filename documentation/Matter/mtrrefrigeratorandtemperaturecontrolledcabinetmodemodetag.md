@@ -1,7 +1,8 @@
 # MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,33 +19,37 @@
 enum MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag
 ```
 
+```c
+enum MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag : uint16_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.auto](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/auto.md)
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.day](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/day.md)
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.lowEnergy](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/lowenergy.md)
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.lowNoise](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/lownoise.md)
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.max](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/max.md)
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.min](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/min.md)
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.night](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/night.md)
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.quick](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/quick.md)
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.quiet](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/quiet.md)
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.rapidCool](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/rapidcool.md)
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.rapidFreeze](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/rapidfreeze.md)
-- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.vacation](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/vacation.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.auto](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/auto.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.day](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/day.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.lowEnergy](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/lowenergy.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.lowNoise](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/lownoise.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.max](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/max.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.min](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/min.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.night](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/night.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.quick](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/quick.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.quiet](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/quiet.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.rapidCool](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/rapidcool.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.rapidFreeze](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/rapidfreeze.md)
+- [MTRRefrigeratorAndTemperatureControlledCabinetModeModeTag.vacation](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/vacation.md)
 ### Initializers
-- [init?(rawValue: UInt16)](mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./mtrrefrigeratorandtemperaturecontrolledcabinetmodemodetag/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

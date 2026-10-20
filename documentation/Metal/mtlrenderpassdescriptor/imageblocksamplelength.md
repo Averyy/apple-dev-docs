@@ -1,7 +1,8 @@
 # imageblockSampleLength
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The per-sample size, in bytes, of the largest explicit imageblock layout in the render pass.
 
@@ -19,17 +20,22 @@ The per-sample size, in bytes, of the largest explicit imageblock layout in the 
 var imageblockSampleLength: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger imageblockSampleLength;
+```
+
 #### Discussion
 
 If `imageBlockSampleLength` isn’t specified, Metal determines the imageblock sample length from the render pass attachment formats.  If any render pipelines bound to the encoder reference imageblocks with explicit layout, you need to set this property.
 
 ## See Also
 
-- [var threadgroupMemoryLength: Int](mtlrenderpassdescriptor/threadgroupmemorylength.md)
+### Specifying tile shading parameters
+- [var threadgroupMemoryLength: Int](./threadgroupmemorylength.md)
   The per-tile size, in bytes, of the persistent threadgroup memory allocation.
-- [var tileWidth: Int](mtlrenderpassdescriptor/tilewidth.md)
+- [var tileWidth: Int](./tilewidth.md)
   The tile width, in pixels.
-- [var tileHeight: Int](mtlrenderpassdescriptor/tileheight.md)
+- [var tileHeight: Int](./tileheight.md)
   The tile height, in pixels.
 
 

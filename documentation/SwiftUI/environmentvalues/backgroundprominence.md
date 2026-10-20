@@ -1,7 +1,8 @@
 # backgroundProminence
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The prominence of the background underneath views associated with this environment.
 
@@ -106,13 +107,14 @@ Views like `List` and `Table` as well as standard shape styles like `ShapeStyle.
 
 ## See Also
 
-- [func listRowBackground<V>(V?) -> some View](view/listrowbackground(_:).md)
+### Configuring backgrounds
+- [func listRowBackground<V>(V?) -> some View](../view/listrowbackground%28_%29.md)
   Places a custom background view behind a list row item.
-- [func alternatingRowBackgrounds(AlternatingRowBackgroundBehavior) -> some View](view/alternatingrowbackgrounds(_:).md)
+- [func alternatingRowBackgrounds(AlternatingRowBackgroundBehavior) -> some View](../view/alternatingrowbackgrounds%28_%29.md)
   Overrides whether lists and tables in this view have alternating row backgrounds.
-- [struct AlternatingRowBackgroundBehavior](alternatingrowbackgroundbehavior.md)
+- [struct AlternatingRowBackgroundBehavior](../alternatingrowbackgroundbehavior.md)
   The styling of views with respect to alternating row backgrounds.
-- [struct BackgroundProminence](backgroundprominence.md)
+- [struct BackgroundProminence](../backgroundprominence.md)
   The prominence of backgrounds underneath other views.
 
 

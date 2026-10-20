@@ -1,7 +1,8 @@
 # isUserInterfaceEnabled
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if user interface is available for the current request.
 
@@ -18,13 +19,18 @@ Determines if user interface is available for the current request.
 var isUserInterfaceEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isUserInterfaceEnabled) BOOL userInterfaceEnabled;
+```
+
 #### Discussion
 
-If this value is `false`, then calls to [`presentAuthorizationViewController(completion:)`](asauthorizationproviderextensionauthorizationrequest/presentauthorizationviewcontroller(completion:).md) fail and the system cancels the request.
+If this value is `false`, then calls to [`presentAuthorizationViewController(completion:)`](./presentauthorizationviewcontroller%28completion%29.md) fail and the system cancels the request.
 
 ## See Also
 
-- [func presentAuthorizationViewController(completion: (Bool, (any Error)?) -> Void)](asauthorizationproviderextensionauthorizationrequest/presentauthorizationviewcontroller(completion:).md)
+### Interacting with the User
+- [func presentAuthorizationViewController(completion: (Bool, (any Error)?) -> Void)](./presentauthorizationviewcontroller%28completion%29.md)
   Asks the authorization service to show the extension’s view controller to the user.
 
 

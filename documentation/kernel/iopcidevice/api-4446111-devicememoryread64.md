@@ -1,14 +1,15 @@
 # deviceMemoryRead64
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 15.0+ - Deprecated in 15.0
 
 ## Declaration
 
-```swift
+```c
 IOReturn deviceMemoryRead64(uint8_t memoryIndex, uint64_t offset, uint64_t *readData, IOOptionBits options);
 ```
 

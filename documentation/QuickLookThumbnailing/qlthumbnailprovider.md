@@ -1,7 +1,8 @@
 # QLThumbnailProvider
 
 **Framework**: Quick Look Thumbnailing  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class for creating thumbnails of custom file types.
 
@@ -18,35 +19,40 @@ An abstract base class for creating thumbnails of custom file types.
 class QLThumbnailProvider
 ```
 
+```objc
+@interface QLThumbnailProvider : NSObject
+```
+
 ## Mentions
 
-- [Providing Thumbnails of Your Custom File Types](providing-thumbnails-of-your-custom-file-types.md)
+- [Providing Thumbnails of Your Custom File Types](./providing-thumbnails-of-your-custom-file-types.md)
 
 ## Topics
 
 ### Essentials
-- [func provideThumbnail(for: QLFileThumbnailRequest, (QLThumbnailReply?, (any Error)?) -> Void)](qlthumbnailprovider/providethumbnail(for:_:).md)
+- [func provideThumbnail(for: QLFileThumbnailRequest, (QLThumbnailReply?, (any Error)?) -> Void)](./qlthumbnailprovider/providethumbnail%28for,_%29.md)
   Creates a thumbnail of a custom file type for a specific request.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Providing Thumbnails of Your Custom File Types](providing-thumbnails-of-your-custom-file-types.md)
+### Thumbnails for Custom File Types
+- [Providing Thumbnails of Your Custom File Types](./providing-thumbnails-of-your-custom-file-types.md)
   Implement a Thumbnail Extension to allow the operating system and other apps to display thumbnails of your custom files.
-- [class QLFileThumbnailRequest](qlfilethumbnailrequest.md)
+- [class QLFileThumbnailRequest](./qlfilethumbnailrequest.md)
   A request to generate a thumbnail for a custom file type.
-- [class QLThumbnailReply](qlthumbnailreply.md)
+- [class QLThumbnailReply](./qlthumbnailreply.md)
   The object that provides a thumbnail for a custom file type.
 
 

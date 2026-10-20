@@ -1,7 +1,8 @@
 # kMDItemRecipients
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Recipients of this item. A CFArray of CFStrings.
 
@@ -12,6 +13,10 @@ Recipients of this item. A CFArray of CFStrings.
 
 ```swift
 let kMDItemRecipients: CFString!
+```
+
+```c
+const CFStringRef kMDItemRecipients;
 ```
 
 

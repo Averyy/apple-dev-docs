@@ -1,7 +1,8 @@
 # hours
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An ordered collection of hour weather statistics data of type `T`, for each requested hour.
 

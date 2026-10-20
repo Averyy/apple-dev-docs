@@ -1,7 +1,8 @@
 # errAuthorizationBadAddress
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The requested socket address is invalid.
 
@@ -13,6 +14,10 @@ The requested socket address is invalid.
 
 ```swift
 var errAuthorizationBadAddress: OSStatus { get }
+```
+
+```c
+errAuthorizationBadAddress
 ```
 
 #### Discussion

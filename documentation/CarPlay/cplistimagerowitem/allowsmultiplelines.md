@@ -1,7 +1,8 @@
 # allowsMultipleLines
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the elements should be visible in more than a single line.
 
@@ -14,6 +15,10 @@ A Boolean value indicating whether the elements should be visible in more than a
 
 ```swift
 var allowsMultipleLines: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL allowsMultipleLines;
 ```
 
 #### Discussion

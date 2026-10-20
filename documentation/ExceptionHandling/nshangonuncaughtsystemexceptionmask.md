@@ -1,7 +1,8 @@
 # NSHangOnUncaughtSystemExceptionMask
 
 **Framework**: Exception Handling  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The exception handler suspends execution when it detects an uncaught system exception.
 
@@ -15,15 +16,20 @@ The exception handler suspends execution when it detects an uncaught system exce
 var NSHangOnUncaughtSystemExceptionMask: Int { get }
 ```
 
+```c
+NSHangOnUncaughtSystemExceptionMask
+```
+
 ## See Also
 
-- [var NSHangOnUncaughtExceptionMask: Int](nshangonuncaughtexceptionmask.md)
+### Constants
+- [var NSHangOnUncaughtExceptionMask: Int](./nshangonuncaughtexceptionmask.md)
   The exception handler suspends execution when it detects an uncaught exception (other than a system exception or runtime error).
-- [var NSHangOnUncaughtRuntimeErrorMask: Int](nshangonuncaughtruntimeerrormask.md)
+- [var NSHangOnUncaughtRuntimeErrorMask: Int](./nshangonuncaughtruntimeerrormask.md)
   The exception handler suspends execution when it detects an uncaught runtime error.
-- [var NSHangOnTopLevelExceptionMask: Int](nshangontoplevelexceptionmask.md)
+- [var NSHangOnTopLevelExceptionMask: Int](./nshangontoplevelexceptionmask.md)
   The exception handler suspends execution when it detects an exception that would be handled by the top-level handler.
-- [var NSHangOnOtherExceptionMask: Int](nshangonotherexceptionmask.md)
+- [var NSHangOnOtherExceptionMask: Int](./nshangonotherexceptionmask.md)
   The exception handler suspends execution when it detects an exception that would be handled by an object other than the top-level handler.
 
 

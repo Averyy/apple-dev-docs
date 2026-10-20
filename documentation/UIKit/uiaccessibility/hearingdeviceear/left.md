@@ -1,7 +1,8 @@
 # left
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that represents the left ear.
 
@@ -17,11 +18,16 @@ A constant that represents the left ear.
 static var left: UIAccessibility.HearingDeviceEar { get }
 ```
 
+```c
+UIAccessibilityHearingDeviceEarLeft
+```
+
 ## See Also
 
-- [static var right: UIAccessibility.HearingDeviceEar](uiaccessibility/hearingdeviceear/right.md)
+### Constants
+- [static var right: UIAccessibility.HearingDeviceEar](./right.md)
   A constant that represents the right ear.
-- [static var both: UIAccessibility.HearingDeviceEar](uiaccessibility/hearingdeviceear/both.md)
+- [static var both: UIAccessibility.HearingDeviceEar](./both.md)
   A constant that represents both ears.
 
 

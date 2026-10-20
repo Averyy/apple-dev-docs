@@ -1,7 +1,8 @@
 # MergeableDocumentPage.Thumbnail
 
 **Framework**: Assignables  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The thumbnail type for this page.
 
@@ -9,7 +10,7 @@ The thumbnail type for this page.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ typealias Thumbnail = DocumentThumbnail<Self.Document>
 
 ## See Also
 
-- [associatedtype Document : MergeableDocument](mergeabledocumentpage/document.md)
+### Implementing a mergeable page
+- [associatedtype Document : MergeableDocument](./document.md)
   The document type this page is for.
 
 

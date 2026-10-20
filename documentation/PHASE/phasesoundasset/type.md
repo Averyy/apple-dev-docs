@@ -1,7 +1,8 @@
 # type
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of sound asset.
 
@@ -19,9 +20,13 @@ The type of sound asset.
 var type: PHASEAsset.AssetType { get }
 ```
 
+```objc
+@property (readonly) PHASEAssetType type;
+```
+
 #### Discussion
 
-The framework sets the value of this property to the type you pass into [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](phaseassetregistry/registersoundasset(url:identifier:assettype:channellayout:normalizationmode:).md).
+The framework sets the value of this property to the type you pass into [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](../phaseassetregistry/registersoundasset%28url,identifier,assettype,channellayout,normalizationmode%29.md).
 
 
 ---

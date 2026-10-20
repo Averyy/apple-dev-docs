@@ -1,7 +1,8 @@
 # activated()
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the action to synchronize its information with settings in another app.
 
@@ -15,6 +16,10 @@ Allows the action to synchronize its information with settings in another app.
 func activated()
 ```
 
+```objc
+- (void) activated;
+```
+
 #### Discussion
 
 The system invokes this method when the window of the Automator workflow to which the action belongs becomes the main window.
@@ -23,7 +28,8 @@ Be sure to invoke the superclass implementation of this method as the last thing
 
 ## See Also
 
-- [func opened()](amaction/opened.md)
+### Initializing and Synchronizing the Action User Interface
+- [func opened()](./opened%28%29.md)
   Allows the action to initialize its user interface.
 
 

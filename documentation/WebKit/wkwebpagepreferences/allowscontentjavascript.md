@@ -1,7 +1,8 @@
 # allowsContentJavaScript
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether JavaScript from web content is allowed to run.
 
@@ -18,9 +19,13 @@ A Boolean value that indicates whether JavaScript from web content is allowed to
 var allowsContentJavaScript: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL allowsContentJavaScript;
+```
+
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true). If you change the value to false, the web view doesn’t execute JavaScript code referenced by the web content. That includes JavaScript code found in inline `<script>` elements, `javascript:` URLs, and all other referenced JavaScript content.
+The default value of this property is [`true`](../../Swift/true.md). If you change the value to false, the web view doesn’t execute JavaScript code referenced by the web content. That includes JavaScript code found in inline `<script>` elements, `javascript:` URLs, and all other referenced JavaScript content.
 
 
 ---

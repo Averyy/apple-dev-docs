@@ -1,7 +1,8 @@
 # heading
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The heading angle (measured in degrees) relative to the current reference frame.
 
@@ -18,9 +19,13 @@ The heading angle (measured in degrees) relative to the current reference frame.
 var heading: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double heading;
+```
+
 #### Discussion
 
-This property contains a value in the range of `0.0` to `360.0` degrees. This value is available only when the frame of reference is [`xMagneticNorthZVertical`](cmattitudereferenceframe/xmagneticnorthzvertical.md) or [`xTrueNorthZVertical`](cmattitudereferenceframe/xtruenorthzvertical.md). If the reference frame is [`xArbitraryZVertical`](cmattitudereferenceframe/xarbitraryzvertical.md) or [`xArbitraryCorrectedZVertical`](cmattitudereferenceframe/xarbitrarycorrectedzvertical.md), this property contains a negative number to indicate the heading is invalid.
+This property contains a value in the range of `0.0` to `360.0` degrees. This value is available only when the frame of reference is [`xMagneticNorthZVertical`](../cmattitudereferenceframe/xmagneticnorthzvertical.md) or [`xTrueNorthZVertical`](../cmattitudereferenceframe/xtruenorthzvertical.md). If the reference frame is [`xArbitraryZVertical`](../cmattitudereferenceframe/xarbitraryzvertical.md) or [`xArbitraryCorrectedZVertical`](../cmattitudereferenceframe/xarbitrarycorrectedzvertical.md), this property contains a negative number to indicate the heading is invalid.
 
 
 ---

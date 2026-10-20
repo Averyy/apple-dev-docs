@@ -1,7 +1,8 @@
 # TerritoryAvailabilityUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a territory availability update request resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a territory availability update request resource.
 
 ## Declaration
 
-```swift
+```
 object TerritoryAvailabilityUpdateRequest.Data.Attributes
 ```
 

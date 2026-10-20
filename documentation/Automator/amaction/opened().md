@@ -1,7 +1,8 @@
 # opened()
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows the action to initialize its user interface.
 
@@ -15,6 +16,10 @@ Allows the action to initialize its user interface.
 func opened()
 ```
 
+```objc
+- (void) opened;
+```
+
 #### Discussion
 
 The system invokes this method when the action is first added to a workflow.
@@ -23,7 +28,8 @@ You should perform all initializations of an action’s user interface in this m
 
 ## See Also
 
-- [func activated()](amaction/activated.md)
+### Initializing and Synchronizing the Action User Interface
+- [func activated()](./activated%28%29.md)
   Allows the action to synchronize its information with settings in another app.
 
 

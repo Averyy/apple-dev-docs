@@ -1,22 +1,24 @@
 # Host Endian Bitmap Formats
 
-**Framework**: Core Graphics
+**Framework**: Core Graphics  
+**Role**: API Collection
 
 Bit-depth constants for image bitmaps in host-endian byte order.
 
 ## Topics
 
 ### Constants
-- [var kCGBitmapByteOrder16Host: CGBitmapInfo](kcgbitmapbyteorder16host.md)
+- [var kCGBitmapByteOrder16Host: CGBitmapInfo](./kcgbitmapbyteorder16host.md)
   16-bit, host endian format.
-- [var kCGBitmapByteOrder32Host: CGBitmapInfo](kcgbitmapbyteorder32host.md)
+- [var kCGBitmapByteOrder32Host: CGBitmapInfo](./kcgbitmapbyteorder32host.md)
   32-bit, host endian format.
 
 ## See Also
 
-- [enum CGImageAlphaInfo](cgimagealphainfo.md)
+### Constants
+- [enum CGImageAlphaInfo](./cgimagealphainfo.md)
   Storage options for alpha component data.
-- [struct CGBitmapInfo](cgbitmapinfo.md)
+- [struct CGBitmapInfo](./cgbitmapinfo.md)
   Component information for a bitmap image.
 
 

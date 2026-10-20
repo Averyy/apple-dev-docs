@@ -1,14 +1,15 @@
 # kmod_reference_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct kmod_reference {
     ...
 } kmod_reference_t;
@@ -17,8 +18,8 @@ typedef struct kmod_reference {
 ## Topics
 
 ### Instance Properties
-- [info](kmod_reference_t/1580127-info.md)
-- [next](kmod_reference_t/1580111-next.md)
+- [info](./kmod_reference_t/api-1580127-info.md)
+- [next](./kmod_reference_t/api-1580111-next.md)
 
 
 ---

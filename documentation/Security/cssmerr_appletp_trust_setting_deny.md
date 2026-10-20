@@ -1,7 +1,8 @@
 # CSSMERR_APPLETP_TRUST_SETTING_DENY
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_APPLETP_TRUST_SETTING_DENY: Int { get }
+```
+
+```c
+CSSMERR_APPLETP_TRUST_SETTING_DENY
 ```
 
 

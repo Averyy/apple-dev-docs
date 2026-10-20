@@ -1,7 +1,8 @@
 # Read the Selected Base Territory for an In-App Purchase Price Schedule
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about the selected base territory for an In-App Purchase price schedule.
 
@@ -14,21 +15,37 @@ Get information about the selected base territory for an In-App Purchase price s
 
 ## Parameters
 
-- `fields[territories]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*
+
+### Query Parameters
+
+- `fields[territories]` ([string]): **Allowed Values**: `currency`
+
+## Responses
+
+- `200` OK (`TerritoryResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read In-App Purchase Price Schedule Information](get-v1-inapppurchasepriceschedules-_id_.md)
+### Endpoints
+- [Read In-App Purchase Price Schedule Information](./get-v1-inapppurchasepriceschedules-_id_.md)
   Get information about a specific scheduled price change for an In-App Purchase.
-- [Read Price Information for an In-App Purchase Price Schedule](get-v1-inapppurchasepriceschedules-_id_-manualprices.md)
+- [Read Price Information for an In-App Purchase Price Schedule](./get-v1-inapppurchasepriceschedules-_id_-manualprices.md)
   Get information about a set price or prices for an In-App Purchase price schedule.
-- [List manual price IDs for an In-App Purchase price schedule](get-v1-inapppurchasepriceschedules-_id_-relationships-manualprices.md)
-- [Add a Scheduled Price Change to an In-App Purchase](post-v1-inapppurchasepriceschedules.md)
+- [List manual price IDs for an In-App Purchase price schedule](./get-v1-inapppurchasepriceschedules-_id_-relationships-manualprices.md)
+- [Add a Scheduled Price Change to an In-App Purchase](./post-v1-inapppurchasepriceschedules.md)
   Create a scheduled price change for an In-App Purchase.
-- [List Automatically Generated Prices for an In-App Purchase Price](get-v1-inapppurchasepriceschedules-_id_-automaticprices.md)
+- [List Automatically Generated Prices for an In-App Purchase Price](./get-v1-inapppurchasepriceschedules-_id_-automaticprices.md)
   Get information about a price or prices automatically set based on a base territory for an In-App Purchase price schedule.
-- [List automatic price IDs for an In-App Purchase price schedule](get-v1-inapppurchasepriceschedules-_id_-relationships-automaticprices.md)
-- [Get the base territory ID for an In-App Purchase price schedule](get-v1-inapppurchasepriceschedules-_id_-relationships-baseterritory.md)
+- [List automatic price IDs for an In-App Purchase price schedule](./get-v1-inapppurchasepriceschedules-_id_-relationships-automaticprices.md)
+- [Get the base territory ID for an In-App Purchase price schedule](./get-v1-inapppurchasepriceschedules-_id_-relationships-baseterritory.md)
 
 
 ---

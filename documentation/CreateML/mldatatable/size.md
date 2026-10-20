@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of rows and columns in the data table.
 

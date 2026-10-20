@@ -1,7 +1,8 @@
 # AirPrint.AirPrintItem
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 A dictionary of AirPrint printer details.
 
@@ -14,19 +15,29 @@ A dictionary of AirPrint printer details.
 
 ## Declaration
 
-```swift
+```
 object AirPrint.AirPrintItem
 ```
 
 ## Properties
 
-- `ForceTLS` (boolean): If `true`, Transport Layer Security (TLS) secures AirPrint connections. Available only in iOS 11 and later. Available: iOS 11+ | iPadOS 11+ | visionOS 2+
+- `ForceTLS` (boolean): If `true`, Transport Layer Security (TLS) secures AirPrint connections. Available only in iOS 11 and later.
+
+  Available: iOS 11+ | iPadOS 11+ | visionOS 2+
+
+  **Default**: `false`
 - `IPAddress` (string) *(required)*: The IP address or hostname of the AirPrint destination.
-- `Port` (integer): The listening port of the AirPrint destination. Available only in iOS 11 and later. Available: iOS 11+ | iPadOS 11+ | visionOS 2+
-- `ResourcePath` (string) *(required)*: The resource path associated with the printer. This path corresponds to the `rp` parameter of the `_ipps.tcp` Bonjour record. For example: - `printers/Canon_MG5300_series`
-- `printers/Xerox_Phaser_7600`
-- `ipp/print`
-- `Epson_IPP_Printer`
+- `Port` (integer): The listening port of the AirPrint destination. Available only in iOS 11 and later.
+
+  Available: iOS 11+ | iPadOS 11+ | visionOS 2+
+
+  **Minimum**: `0`; **Maximum**: `65535`
+- `ResourcePath` (string) *(required)*: The resource path associated with the printer. This path corresponds to the `rp` parameter of the `_ipps.tcp` Bonjour record. For example:
+
+  - `printers/Canon_MG5300_series`
+  - `printers/Xerox_Phaser_7600`
+  - `ipp/print`
+  - `Epson_IPP_Printer`
 
 
 ---

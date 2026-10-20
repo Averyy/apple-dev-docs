@@ -1,7 +1,8 @@
 # HIDUsage.BarcodeScannerUsage.clearAllEAN2Of3LabelDefinitions
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 15.0+

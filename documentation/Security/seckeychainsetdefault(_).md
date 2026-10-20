@@ -1,12 +1,15 @@
 # SecKeychainSetDefault(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the default keychain.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.10
+
+> **Deprecated**: SecKeychain is deprecated
 
 ## Declaration
 
@@ -14,9 +17,13 @@ Sets the default keychain.
 func SecKeychainSetDefault(_ keychain: SecKeychain?) -> OSStatus
 ```
 
+```c
+OSStatus SecKeychainSetDefault(SecKeychainRef keychain);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md). The result code [`errSecNoSuchKeychain`](errsecnosuchkeychain.md) indicates that the specified keychain could not be found. The result code [`errSecInvalidKeychain`](errsecinvalidkeychain.md) indicates that the specified keychain is invalid.
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md). The result code [`errSecNoSuchKeychain`](./errsecnosuchkeychain.md) indicates that the specified keychain could not be found. The result code [`errSecInvalidKeychain`](./errsecinvalidkeychain.md) indicates that the specified keychain is invalid.
 
 #### Discussion
 

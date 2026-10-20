@@ -1,7 +1,8 @@
 # AsyncThrowingStream.AsyncIterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -19,6 +20,8 @@ The type of asynchronous iterator that produces elements of this asynchronous se
 ```swift
 typealias AsyncIterator = AsyncThrowingStream<Element, Failure>.Iterator
 ```
+
+Available when `Failure` conforms to `Error`.
 
 
 ---

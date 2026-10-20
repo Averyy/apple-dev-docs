@@ -1,7 +1,8 @@
 # SecPolicyCreateSSL(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a policy object for evaluating SSL certificate chains.
 
@@ -20,13 +21,17 @@ Returns a policy object for evaluating SSL certificate chains.
 func SecPolicyCreateSSL(_ server: Bool, _ hostname: CFString?) -> SecPolicy
 ```
 
+```c
+SecPolicyRefSecPolicyCreateSSL(Boolean server, CFStringRef hostname);
+```
+
 ## Mentions
 
-- [Creating a Trust Object](creating-a-trust-object.md)
+- [Creating a Trust Object](./creating-a-trust-object.md)
 
 #### Return Value
 
-The policy object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release the object when you are finished with it.
+The policy object. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release the object when you are finished with it.
 
 ## Parameters
 

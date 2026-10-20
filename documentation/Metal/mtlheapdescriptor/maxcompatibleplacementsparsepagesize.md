@@ -1,7 +1,8 @@
 # maxCompatiblePlacementSparsePageSize
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the largest sparse page size that the Metal heap supports.
 
@@ -19,9 +20,13 @@ Specifies the largest sparse page size that the Metal heap supports.
 var maxCompatiblePlacementSparsePageSize: MTLSparsePageSize { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLSparsePageSize maxCompatiblePlacementSparsePageSize;
+```
+
 #### Discussion
 
-This parameter only affects the heap if you set the [`type`](mtlheapdescriptor/type.md) property of this descriptor to [`MTLHeapType.placement`](mtlheaptype/placement.md).
+This parameter only affects the heap if you set the [`type`](./type.md) property of this descriptor to [`MTLHeapType.placement`](../mtlheaptype/placement.md).
 
 The value you assign to this property determines the compatibility of the Metal heap with with placement sparse resources, because placement sparse resources require that their sparse page size be less than or equal to the placement sparse page of the Metal heap that this property controls.
 

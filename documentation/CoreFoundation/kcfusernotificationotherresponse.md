@@ -1,7 +1,8 @@
 # kCFUserNotificationOtherResponse
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The third button was pressed.
 
@@ -14,13 +15,18 @@ The third button was pressed.
 var kCFUserNotificationOtherResponse: CFOptionFlags { get }
 ```
 
+```c
+kCFUserNotificationOtherResponse
+```
+
 ## See Also
 
-- [var kCFUserNotificationDefaultResponse: CFOptionFlags](kcfusernotificationdefaultresponse.md)
+### Constants
+- [var kCFUserNotificationDefaultResponse: CFOptionFlags](./kcfusernotificationdefaultresponse.md)
   The default button was pressed.
-- [var kCFUserNotificationAlternateResponse: CFOptionFlags](kcfusernotificationalternateresponse.md)
+- [var kCFUserNotificationAlternateResponse: CFOptionFlags](./kcfusernotificationalternateresponse.md)
   The alternate button was pressed.
-- [var kCFUserNotificationCancelResponse: CFOptionFlags](kcfusernotificationcancelresponse.md)
+- [var kCFUserNotificationCancelResponse: CFOptionFlags](./kcfusernotificationcancelresponse.md)
   No button was pressed and the notification timed out.
 
 

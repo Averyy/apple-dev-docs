@@ -1,15 +1,16 @@
 # tableView(_:shouldShowMenuForRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate if the editing menu should be shown for a certain row.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 5.0+ - Deprecated in 13.0
+- iPadOS 5.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 13.0
 
 ## Declaration
 
@@ -17,13 +18,17 @@ Asks the delegate if the editing menu should be shown for a certain row.
 optional func tableView(_ tableView: UITableView, shouldShowMenuForRowAt indexPath: IndexPath) -> Bool
 ```
 
+```objc
+- (BOOL) tableView:(UITableView *) tableView shouldShowMenuForRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the editing menu should be shown positioned near the row and pointing to it, otherwise [`false`](https://developer.apple.com/documentation/swift/false). The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the editing menu should be shown positioned near the row and pointing to it, otherwise [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If the user tap-holds a certain row in the table view, this method (if implemented) is invoked first. Return [`false`](https://developer.apple.com/documentation/swift/false) if the editing menu shouldn’t be shown—for example, the cell corresponding to the row contains content that shouldn’t be copied or pasted over.
+If the user tap-holds a certain row in the table view, this method (if implemented) is invoked first. Return [`false`](../../Swift/false.md) if the editing menu shouldn’t be shown—for example, the cell corresponding to the row contains content that shouldn’t be copied or pasted over.
 
 ## Parameters
 
@@ -32,11 +37,12 @@ If the user tap-holds a certain row in the table view, this method (if implement
 
 ## See Also
 
-- [func tableView(UITableView, canPerformAction: Selector, forRowAt: IndexPath, withSender: Any?) -> Bool](uitableviewdelegate/tableview(_:canperformaction:forrowat:withsender:).md)
+### Deprecated
+- [func tableView(UITableView, canPerformAction: Selector, forRowAt: IndexPath, withSender: Any?) -> Bool](./tableview%28_,canperformaction,forrowat,withsender%29.md)
   Asks the delegate if the editing menu should omit the Copy or Paste command for a given row.
-- [func tableView(UITableView, performAction: Selector, forRowAt: IndexPath, withSender: Any?)](uitableviewdelegate/tableview(_:performaction:forrowat:withsender:).md)
+- [func tableView(UITableView, performAction: Selector, forRowAt: IndexPath, withSender: Any?)](./tableview%28_,performaction,forrowat,withsender%29.md)
   Tells the delegate to perform a copy or paste operation on the content of a given row.
-- [func tableView(UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]?](uitableviewdelegate/tableview(_:editactionsforrowat:).md)
+- [func tableView(UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]?](./tableview%28_,editactionsforrowat%29.md)
   Asks the delegate for the actions to display in response to a swipe in the specified row.
 
 

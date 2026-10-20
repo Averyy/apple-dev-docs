@@ -1,19 +1,20 @@
 # Session ID Values
 
-**Framework**: Security
+**Framework**: Security  
+**Role**: API Collection
 
 Use these values as placeholders for specific sessions.
 
 #### Discussion
 
-You can use these values as the `session` input to the [`SessionGetInfo(_:_:_:)`](sessiongetinfo(_:_:_:).md) function as a stand-in for specific sessions when you don’t already know the ID for that session. They are *not* returned in the `sessionId` output of that function. Instead, you receive the actual session ID.
+You can use these values as the `session` input to the [`SessionGetInfo(_:_:_:)`](./sessiongetinfo%28_,_,_%29.md) function as a stand-in for specific sessions when you don’t already know the ID for that session. They are *not* returned in the `sessionId` output of that function. Instead, you receive the actual session ID.
 
 ## Topics
 
 ### Constants
-- [var callerSecuritySession: SecuritySessionId](callersecuritysession.md)
+- [var callerSecuritySession: SecuritySessionId](./callersecuritysession.md)
   A value that is a placeholder for the caller’s session.
-- [var noSecuritySession: SecuritySessionId](nosecuritysession.md)
+- [var noSecuritySession: SecuritySessionId](./nosecuritysession.md)
   Not a valid session.
 
 

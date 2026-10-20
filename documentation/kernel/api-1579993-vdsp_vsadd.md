@@ -1,7 +1,8 @@
 # vDSP_vsadd
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a single-precision scalar value to a single-precision vector.
 
@@ -10,7 +11,7 @@ Adds a single-precision scalar value to a single-precision vector.
 
 ## Declaration
 
-```swift
+```c
 void vDSP_vsadd(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
@@ -27,7 +28,7 @@ The operation is:
     C[n] = A[n] + B[0];
 ```
 
-The following code shows an example of using [`vDSP_vsadd`](https://developer.apple.com/documentation/accelerate/vdsp_vsadd):
+The following code shows an example of using [`vDSP_vsadd`](../Accelerate/vdsp_vsadd.md):
 
 ```swift
 let a: [Float] = [1, 2, 4, 5]

@@ -1,7 +1,8 @@
 # customMirror
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom mirror for this instance.
 
@@ -20,15 +21,18 @@ The custom mirror for this instance.
 var customMirror: Mirror { get }
 ```
 
+Available when `Bound` conforms to `Comparable`.
+
 #### Discussion
 
 If this type has value semantics, the mirror should be unaffected by subsequent mutations of the instance.
 
 ## See Also
 
-- [var description: String](range/description.md)
+### Describing a Range
+- [var description: String](./description.md)
   A textual representation of the range.
-- [var debugDescription: String](range/debugdescription.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual representation of the range, suitable for debugging.
 
 

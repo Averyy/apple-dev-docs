@@ -1,7 +1,8 @@
 # scrollingAndDecelerationMetric
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A metric that records scroll-dragging and deceleration animations.
 
@@ -18,6 +19,10 @@ A metric that records scroll-dragging and deceleration animations.
 
 ```swift
 class var scrollingAndDecelerationMetric: any XCTMetric { get }
+```
+
+```objc
+@property (class, readonly) id<XCTMetric> scrollingAndDecelerationMetric;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # rawView
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an immutable raw view over the same backing data.
 

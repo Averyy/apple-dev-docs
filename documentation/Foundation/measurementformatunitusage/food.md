@@ -1,7 +1,8 @@
 # food
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A usage of an energy measurement related to food.
 
@@ -20,9 +21,12 @@ A usage of an energy measurement related to food.
 static var food: MeasurementFormatUnitUsage<UnitEnergy> { get }
 ```
 
+Available when `UnitType` is `UnitEnergy`.
+
 ## See Also
 
-- [static var workout: MeasurementFormatUnitUsage<UnitEnergy>](measurementformatunitusage/workout.md)
+### Selecting a Format for an Energy Measurement
+- [static var workout: MeasurementFormatUnitUsage<UnitEnergy>](./workout.md)
   A usage of a energy measurement related to a workout.
 
 

@@ -1,7 +1,8 @@
 # windForce
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The wind force applied to particles inside the volume.
 
@@ -22,7 +23,8 @@ This force depends on the angle between the force direction and the face normals
 
 ## See Also
 
-- [var constantForce: SIMD3<Float>](clothforcevolumecomponent/constantforce.md)
+### Applying forces
+- [var constantForce: SIMD3<Float>](./constantforce.md)
   The constant force applied to particles inside the volume.
 
 

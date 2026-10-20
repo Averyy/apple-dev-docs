@@ -1,13 +1,16 @@
 # MPMoviePlayerThumbnailImageKey
 
 **Framework**: Media Player  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 9.0
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
@@ -15,14 +18,19 @@
 let MPMoviePlayerThumbnailImageKey: String
 ```
 
+```c
+extern NSString * const MPMoviePlayerThumbnailImageKey;
+```
+
 #### Discussion
 
-The value of this key is a [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object containing the image that was obtained for the desired frame.
+The value of this key is a [`UIImage`](../UIKit/uiimage.md) object containing the image that was obtained for the desired frame.
 
 ## See Also
 
-- [let MPMoviePlayerThumbnailTimeKey: String](mpmovieplayerthumbnailtimekey.md)
-- [let MPMoviePlayerThumbnailErrorKey: String](mpmovieplayerthumbnailerrorkey.md)
+### Constants
+- [let MPMoviePlayerThumbnailTimeKey: String](./mpmovieplayerthumbnailtimekey.md)
+- [let MPMoviePlayerThumbnailErrorKey: String](./mpmovieplayerthumbnailerrorkey.md)
 
 
 ---

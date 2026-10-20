@@ -1,7 +1,8 @@
 # AndroidToIosAppMappingDetailUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure that represents an Android to iOS app mapping detail update request resource.
 
@@ -10,21 +11,21 @@ The data structure that represents an Android to iOS app mapping detail update r
 
 ## Declaration
 
-```swift
+```
 object AndroidToIosAppMappingDetailUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object AndroidToIosAppMappingDetailUpdateRequest.Data.Attributes](androidtoiosappmappingdetailupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AndroidToIosAppMappingDetailUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an Android to iOS app mapping detail update request resource.
 
 ## Properties
 
 - `attributes` (AndroidToIosAppMappingDetailUpdateRequest.Data.Attributes)
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `androidToIosAppMappingDetails`
 
 
 ---

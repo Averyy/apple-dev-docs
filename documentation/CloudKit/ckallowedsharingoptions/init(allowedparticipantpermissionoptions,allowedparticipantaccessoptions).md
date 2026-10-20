@@ -1,7 +1,8 @@
 # init(allowedParticipantPermissionOptions:allowedParticipantAccessOptions:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and initializes an allowed sharing options object.
 
@@ -18,10 +19,14 @@ Creates and initializes an allowed sharing options object.
 init(allowedParticipantPermissionOptions: CKSharingParticipantPermissionOption, allowedParticipantAccessOptions: CKSharingParticipantAccessOption)
 ```
 
+```objc
+- (instancetype) initWithAllowedParticipantPermissionOptions:(CKSharingParticipantPermissionOption) allowedParticipantPermissionOptions allowedParticipantAccessOptions:(CKSharingParticipantAccessOption) allowedParticipantAccessOptions;
+```
+
 ## Parameters
 
-- `allowedParticipantPermissionOptions`: The [`CKSharingParticipantPermissionOption`](cksharingparticipantpermissionoption.md) setting.
-- `allowedParticipantAccessOptions`: The [`CKSharingParticipantAccessOption`](cksharingparticipantaccessoption.md) setting.
+- `allowedParticipantPermissionOptions`: The [`CKSharingParticipantPermissionOption`](../cksharingparticipantpermissionoption.md) setting.
+- `allowedParticipantAccessOptions`: The [`CKSharingParticipantAccessOption`](../cksharingparticipantaccessoption.md) setting.
 
 
 ---

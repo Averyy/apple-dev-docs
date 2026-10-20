@@ -1,7 +1,8 @@
 # title
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of the toolbar item.
 
@@ -17,21 +18,26 @@ The title of the toolbar item.
 var title: String { get set }
 ```
 
+```objc
+@property (copy) NSString * title;
+```
+
 #### Discussion
 
-If you assign a custom view to the toolbar item, modifying this property updates the [`title`](nstoolbaritem/title.md) property of the view if one exists. If the toolbar item contains a button, modifying this property updates the button title. If the item doesn’t contain a custom view, the toolbar item manages the content directly.
+If you assign a custom view to the toolbar item, modifying this property updates the [`title`](./title.md) property of the view if one exists. If the toolbar item contains a button, modifying this property updates the button title. If the item doesn’t contain a custom view, the toolbar item manages the content directly.
 
-> **Note**:  In macOS 12 and earlier, [`NSToolbarItem`](nstoolbaritem.md) doesn’t support custom views in Mac apps built with Mac Catalyst.
+> **Note**:  In macOS 12 and earlier, [`NSToolbarItem`](../nstoolbaritem.md) doesn’t support custom views in Mac apps built with Mac Catalyst.
 
 ## See Also
 
-- [var possibleLabels: Set<String>](nstoolbaritem/possiblelabels.md)
+### Describing the item
+- [var possibleLabels: Set<String>](./possiblelabels.md)
   The set of labels that the item might display.
-- [var label: String](nstoolbaritem/label.md)
+- [var label: String](./label.md)
   The label that appears for this item in the toolbar.
-- [var paletteLabel: String](nstoolbaritem/palettelabel.md)
+- [var paletteLabel: String](./palettelabel.md)
   The label that appears when the toolbar item is in the customization palette.
-- [var toolTip: String?](nstoolbaritem/tooltip.md)
+- [var toolTip: String?](./tooltip.md)
   The tooltip to display when someone hovers over the item in the toolbar.
 
 

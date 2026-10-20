@@ -1,7 +1,8 @@
 # init(_:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that animates the property of the root value at the given key path.
 
@@ -27,7 +28,8 @@ init(_ keyPath: WritableKeyPath<Root, Value>, @KeyframeTrackContentBuilder<Value
 
 ## See Also
 
-- [init(content: () -> Content)](keyframetrack/init(content:).md)
+### Creating a keyframe track
+- [init(content: () -> Content)](./init%28content%29.md)
   Creates an instance that animates the entire value from the root of the key path.
 
 

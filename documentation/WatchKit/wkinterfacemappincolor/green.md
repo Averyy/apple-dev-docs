@@ -1,12 +1,13 @@
 # WKInterfaceMapPinColor.green
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A green pin.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ A green pin.
 case green
 ```
 
+```c
+WKInterfaceMapPinColorGreen
+```
+
 ## See Also
 
-- [WKInterfaceMapPinColor.red](wkinterfacemappincolor/red.md)
+### Constants
+- [WKInterfaceMapPinColor.red](./red.md)
   A red pin.
-- [WKInterfaceMapPinColor.purple](wkinterfacemappincolor/purple.md)
+- [WKInterfaceMapPinColor.purple](./purple.md)
   A purple pin.
 
 

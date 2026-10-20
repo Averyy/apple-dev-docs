@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An offset for the request.
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an ISO 8601 date formatter with default format, time zone, and options.
 
@@ -20,9 +21,13 @@ Initializes an ISO 8601 date formatter with default format, time zone, and optio
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Discussion
 
-By default, a formatter is initialized to use the GMT time zone, the [`RFC 3339`](https://developer.apple.comhttps://www.ietf.org/rfc/rfc3339) standard format (`"yyyy-MM-dd'T'HH:mm:ssZZZZZ"`), and the following options: [`withInternetDateTime`](iso8601dateformatter/options/withinternetdatetime.md), [`withDashSeparatorInDate`](iso8601dateformatter/options/withdashseparatorindate.md), [`withColonSeparatorInTime`](iso8601dateformatter/options/withcolonseparatorintime.md), and [`withTimeZone`](iso8601dateformatter/options/withtimezone.md).
+By default, a formatter is initialized to use the GMT time zone, the [RFC 3339](https://www.ietf.org/rfc/rfc3339) standard format (`"yyyy-MM-dd'T'HH:mm:ssZZZZZ"`), and the following options: [`withInternetDateTime`](./options/withinternetdatetime.md), [`withDashSeparatorInDate`](./options/withdashseparatorindate.md), [`withColonSeparatorInTime`](./options/withcolonseparatorintime.md), and [`withTimeZone`](./options/withtimezone.md).
 
 This is the designated initializer.
 

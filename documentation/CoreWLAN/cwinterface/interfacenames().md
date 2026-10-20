@@ -1,17 +1,24 @@
 # interfaceNames()
 
 **Framework**: Core WLAN  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the list of BSD names for WLAN interfaces available on the current system.
 
 **Availability**:
-- macOS 10.6+
+- macOS 10.6+ - Deprecated in 10.10
+
+> **Deprecated**: Use the [`CWWiFiClient`](../cwwificlient.md) method [`interfaceNames()`](../cwwificlient/interfacenames%28%29-swift.type.method.md) instead.
 
 ## Declaration
 
 ```swift
 class func interfaceNames() -> Set<String>?
+```
+
+```objc
++ (NSSet<NSString *> *) interfaceNames;
 ```
 
 #### Return Value

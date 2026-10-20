@@ -1,7 +1,8 @@
 # AppSchema.ClockIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the clock domain.
 
@@ -21,63 +22,64 @@ protocol ClockIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var cancelTimer: some AppSchemaIntent](appschema/clockintent/canceltimer.md)
+- [var cancelTimer: some AppSchemaIntent](./clockintent/canceltimer.md)
   An intent schema that cancels timers.
-- [var createAlarm: some AppSchemaIntent](appschema/clockintent/createalarm.md)
+- [var createAlarm: some AppSchemaIntent](./clockintent/createalarm.md)
   An intent schema that creates an alarm.
-- [var createTimer: some AppSchemaIntent](appschema/clockintent/createtimer.md)
+- [var createTimer: some AppSchemaIntent](./clockintent/createtimer.md)
   An intent schema that creates a timer.
-- [var deleteAlarm: some AppSchemaIntent](appschema/clockintent/deletealarm.md)
+- [var deleteAlarm: some AppSchemaIntent](./clockintent/deletealarm.md)
   An intent schema that deletes the alarms.
-- [var dismissAlarm: some AppSchemaIntent](appschema/clockintent/dismissalarm.md)
+- [var dismissAlarm: some AppSchemaIntent](./clockintent/dismissalarm.md)
   An intent schema that dismisses a firing or snoozed alarm.
-- [var lapStopwatch: some AppSchemaIntent](appschema/clockintent/lapstopwatch.md)
+- [var lapStopwatch: some AppSchemaIntent](./clockintent/lapstopwatch.md)
   An intent schema that laps the stopwatch.
-- [var pauseTimer: some AppSchemaIntent](appschema/clockintent/pausetimer.md)
+- [var pauseTimer: some AppSchemaIntent](./clockintent/pausetimer.md)
   An intent schema that pauses a timer.
-- [var resetStopwatch: some AppSchemaIntent](appschema/clockintent/resetstopwatch.md)
+- [var resetStopwatch: some AppSchemaIntent](./clockintent/resetstopwatch.md)
   An intent schema that resets the stopwatch.
-- [var resumeTimer: some AppSchemaIntent](appschema/clockintent/resumetimer.md)
+- [var resumeTimer: some AppSchemaIntent](./clockintent/resumetimer.md)
   An intent schema that resumes a timer.
-- [var snoozeAlarm: some AppSchemaIntent](appschema/clockintent/snoozealarm.md)
+- [var snoozeAlarm: some AppSchemaIntent](./clockintent/snoozealarm.md)
   An intent schema that snoozes the firing alarm.
-- [var startStopwatch: some AppSchemaIntent](appschema/clockintent/startstopwatch.md)
+- [var startStopwatch: some AppSchemaIntent](./clockintent/startstopwatch.md)
   An intent schema that starts the stopwatch.
-- [var stopStopwatch: some AppSchemaIntent](appschema/clockintent/stopstopwatch.md)
+- [var stopStopwatch: some AppSchemaIntent](./clockintent/stopstopwatch.md)
   An intent schema that stops the stopwatch.
-- [var updateAlarm: some AppSchemaIntent](appschema/clockintent/updatealarm.md)
+- [var updateAlarm: some AppSchemaIntent](./clockintent/updatealarm.md)
   An intent schema that updates the alarm, for example, turn on / off the alarm, change the label, time, or repeating schedule.
-- [var updateTimer: some AppSchemaIntent](appschema/clockintent/updatetimer.md)
+- [var updateTimer: some AppSchemaIntent](./clockintent/updatetimer.md)
   An intent schema that updates the timer’s attributes.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var cancelTimer: some AppSchemaIntent](appschema/clockintent/canceltimer.md)
+### Actions
+- [var cancelTimer: some AppSchemaIntent](./clockintent/canceltimer.md)
   An intent schema that cancels timers.
-- [var createAlarm: some AppSchemaIntent](appschema/clockintent/createalarm.md)
+- [var createAlarm: some AppSchemaIntent](./clockintent/createalarm.md)
   An intent schema that creates an alarm.
-- [var createTimer: some AppSchemaIntent](appschema/clockintent/createtimer.md)
+- [var createTimer: some AppSchemaIntent](./clockintent/createtimer.md)
   An intent schema that creates a timer.
-- [var deleteAlarm: some AppSchemaIntent](appschema/clockintent/deletealarm.md)
+- [var deleteAlarm: some AppSchemaIntent](./clockintent/deletealarm.md)
   An intent schema that deletes the alarms.
-- [var dismissAlarm: some AppSchemaIntent](appschema/clockintent/dismissalarm.md)
+- [var dismissAlarm: some AppSchemaIntent](./clockintent/dismissalarm.md)
   An intent schema that dismisses a firing or snoozed alarm.
-- [var pauseTimer: some AppSchemaIntent](appschema/clockintent/pausetimer.md)
+- [var pauseTimer: some AppSchemaIntent](./clockintent/pausetimer.md)
   An intent schema that pauses a timer.
-- [var resumeTimer: some AppSchemaIntent](appschema/clockintent/resumetimer.md)
+- [var resumeTimer: some AppSchemaIntent](./clockintent/resumetimer.md)
   An intent schema that resumes a timer.
-- [var snoozeAlarm: some AppSchemaIntent](appschema/clockintent/snoozealarm.md)
+- [var snoozeAlarm: some AppSchemaIntent](./clockintent/snoozealarm.md)
   An intent schema that snoozes the firing alarm.
-- [var updateAlarm: some AppSchemaIntent](appschema/clockintent/updatealarm.md)
+- [var updateAlarm: some AppSchemaIntent](./clockintent/updatealarm.md)
   An intent schema that updates the alarm, for example, turn on / off the alarm, change the label, time, or repeating schedule.
-- [var updateTimer: some AppSchemaIntent](appschema/clockintent/updatetimer.md)
+- [var updateTimer: some AppSchemaIntent](./clockintent/updatetimer.md)
   An intent schema that updates the timer’s attributes.
 
 

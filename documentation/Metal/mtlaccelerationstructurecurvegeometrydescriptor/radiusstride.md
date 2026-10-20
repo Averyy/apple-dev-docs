@@ -1,7 +1,8 @@
 # radiusStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride, in bytes, between the radius elements in the radius buffer.
 
@@ -19,9 +20,13 @@ The stride, in bytes, between the radius elements in the radius buffer.
 var radiusStride: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger radiusStride;
+```
+
 #### Discussion
 
-The stride needs to be a multiple of the radius format size you configure with the [`radiusFormat`](mtlaccelerationstructurecurvegeometrydescriptor/radiusformat.md) property. The default value is `0`, which indicates that the radius elements in the buffer have zero bytes of padding between them.
+The stride needs to be a multiple of the radius format size you configure with the [`radiusFormat`](./radiusformat.md) property. The default value is `0`, which indicates that the radius elements in the buffer have zero bytes of padding between them.
 
 
 ---

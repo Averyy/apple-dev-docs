@@ -1,7 +1,8 @@
 # completionWithItemsHandler
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The completion handler to execute after the activity view controller is dismissed.
 
@@ -17,15 +18,20 @@ The completion handler to execute after the activity view controller is dismisse
 var completionWithItemsHandler: UIActivityViewController.CompletionWithItemsHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIActivityViewControllerCompletionWithItemsHandler completionWithItemsHandler;
+```
+
 #### Discussion
 
 When the user-selected service finishes operating on the data, or when the user dismisses the view controller, the view controller executes this completion handler to let your app know the final result of the operation.
 
 ## See Also
 
-- [UIActivityViewController.CompletionWithItemsHandler](uiactivityviewcontroller/completionwithitemshandler-swift.typealias.md)
+### Accessing the completion handler
+- [UIActivityViewController.CompletionWithItemsHandler](./completionwithitemshandler-swift.typealias.md)
   A completion handler to execute after the activity view controller is dismissed.
-- [var completionHandler: UIActivityViewController.CompletionHandler?](uiactivityviewcontroller/completionhandler-swift.property.md)
+- [var completionHandler: UIActivityViewController.CompletionHandler?](./completionhandler-swift.property.md)
   The completion handler to execute after the activity view controller is dismissed.
 
 

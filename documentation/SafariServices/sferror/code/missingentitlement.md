@@ -1,7 +1,8 @@
 # SFError.Code.missingEntitlement
 
 **Framework**: Safari Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -13,6 +14,10 @@
 
 ```swift
 case missingEntitlement
+```
+
+```c
+SFErrorMissingEntitlement
 ```
 
 

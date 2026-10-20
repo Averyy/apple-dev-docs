@@ -1,7 +1,8 @@
 # kSecKeyKeySizeInBits
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Type uint32; value is the number of bits in this key.
 
@@ -12,6 +13,10 @@ Type uint32; value is the number of bits in this key.
 
 ```swift
 var kSecKeyKeySizeInBits: Int32 { get }
+```
+
+```c
+kSecKeyKeySizeInBits
 ```
 
 

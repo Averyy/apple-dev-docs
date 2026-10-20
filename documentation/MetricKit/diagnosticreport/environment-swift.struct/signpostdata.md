@@ -1,7 +1,8 @@
 # signpostData
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Signpost data associated with the diagnostic.
 
@@ -19,7 +20,7 @@ let signpostData: [SignpostRecord]
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
 
 
 ---

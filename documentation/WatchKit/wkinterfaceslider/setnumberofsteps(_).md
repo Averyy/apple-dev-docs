@@ -1,7 +1,8 @@
 # setNumberOfSteps(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the number of steps for the slider.
 
@@ -14,6 +15,10 @@ Sets the number of steps for the slider.
 func setNumberOfSteps(_ numberOfSteps: Int)
 ```
 
+```objc
+- (void) setNumberOfSteps:(NSInteger) numberOfSteps;
+```
+
 #### Discussion
 
 Each tap on the slider’s increment or decrement areas changes the slider value by one step. The value of each step is equal to the difference between the minimum and maximum values divided by the number of steps. For example, if the minimum value is `0`, the maximum value is `1`, and the number of steps is `10`, each step increments or decrements the value by `0.1`.
@@ -24,9 +29,10 @@ Each tap on the slider’s increment or decrement areas changes the slider value
 
 ## See Also
 
-- [func setValue(Float)](wkinterfaceslider/setvalue(_:).md)
+### Setting the Slider Value
+- [func setValue(Float)](./setvalue%28_%29.md)
   Changes the value of the slider.
-- [func setColor(UIColor?)](wkinterfaceslider/setcolor(_:).md)
+- [func setColor(UIColor?)](./setcolor%28_%29.md)
   Sets the color of the slider bar.
 
 

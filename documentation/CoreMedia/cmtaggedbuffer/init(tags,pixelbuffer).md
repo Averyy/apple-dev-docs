@@ -1,7 +1,8 @@
 # init(tags:pixelBuffer:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tagged buffer from tags and an existing pixel buffer.
 
@@ -27,9 +28,10 @@ init(tags: [CMTag], pixelBuffer: CVPixelBuffer)
 
 ## See Also
 
-- [init(tags: [CMTag], buffer: CMTaggedBuffer.Buffer)](cmtaggedbuffer/init(tags:buffer:).md)
+### Creating Tagged Buffers
+- [init(tags: [CMTag], buffer: CMTaggedBuffer.Buffer)](./init%28tags,buffer%29.md)
   Creates a new tagged buffer from tags and an existing media buffer.
-- [init(tags: [CMTag], sampleBuffer: CMSampleBuffer)](cmtaggedbuffer/init(tags:samplebuffer:).md)
+- [init(tags: [CMTag], sampleBuffer: CMSampleBuffer)](./init%28tags,samplebuffer%29.md)
   Creates a new tagged buffer from tags and an existing sample buffer.
 
 

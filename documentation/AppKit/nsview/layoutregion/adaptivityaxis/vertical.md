@@ -1,7 +1,8 @@
 # NSView.LayoutRegion.AdaptivityAxis.vertical
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 26.0+

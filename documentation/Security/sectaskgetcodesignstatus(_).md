@@ -1,7 +1,8 @@
 # SecTaskGetCodeSignStatus(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 10.0+
@@ -12,6 +13,10 @@
 
 ```swift
 func SecTaskGetCodeSignStatus(_ task: SecTask) -> UInt32
+```
+
+```c
+uint32_t SecTaskGetCodeSignStatus(SecTaskRef task);
 ```
 
 

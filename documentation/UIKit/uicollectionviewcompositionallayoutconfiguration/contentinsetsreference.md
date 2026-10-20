@@ -1,7 +1,8 @@
 # contentInsetsReference
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The boundary to reference when defining content insets.
 
@@ -18,15 +19,20 @@ The boundary to reference when defining content insets.
 var contentInsetsReference: UIContentInsetsReference { get set }
 ```
 
+```objc
+@property (nonatomic) UIContentInsetsReference contentInsetsReference;
+```
+
 #### Discussion
 
-The default value of this property is [`UIContentInsetsReference.safeArea`](uicontentinsetsreference/safearea.md).
+The default value of this property is [`UIContentInsetsReference.safeArea`](../uicontentinsetsreference/safearea.md).
 
 ## See Also
 
-- [var interSectionSpacing: CGFloat](uicollectionviewcompositionallayoutconfiguration/intersectionspacing.md)
+### Configuring spacing
+- [var interSectionSpacing: CGFloat](./intersectionspacing.md)
   The amount of space between the sections in the layout.
-- [enum UIContentInsetsReference](uicontentinsetsreference.md)
+- [enum UIContentInsetsReference](../uicontentinsetsreference.md)
   Constants that describe the reference point of the content insets.
 
 

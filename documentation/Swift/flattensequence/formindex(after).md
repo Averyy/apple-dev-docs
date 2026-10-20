@@ -1,7 +1,8 @@
 # formIndex(after:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the given index with its successor.
 
@@ -19,6 +20,8 @@ Replaces the given index with its successor.
 ```swift
 func formIndex(after i: inout FlattenSequence<Base>.Index)
 ```
+
+Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
 ## Parameters
 

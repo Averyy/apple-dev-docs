@@ -1,7 +1,8 @@
 # subscriptionGroupID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the subscription group that the subscription belongs to.
 
@@ -22,11 +23,12 @@ let subscriptionGroupID: String?
 
 ## See Also
 
-- [let appBundleID: String](transaction/appbundleid.md)
+### Identifying the app and product
+- [let appBundleID: String](./appbundleid.md)
   The bundle identifier for the app.
-- [let productID: String](transaction/productid.md)
+- [let productID: String](./productid.md)
   The product identifier of the Apple In-App Purchase.
-- [let productType: Product.ProductType](transaction/producttype.md)
+- [let productType: Product.ProductType](./producttype.md)
   The type of the Apple In-App Purchase.
 
 

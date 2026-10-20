@@ -1,7 +1,8 @@
 # DockAccessory.Animation.kapow
 
 **Framework**: DockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The dock accessory performs a quick tilt and snaps back with some oscillation.
 

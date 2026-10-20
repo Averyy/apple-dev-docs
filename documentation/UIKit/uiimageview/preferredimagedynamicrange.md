@@ -1,7 +1,8 @@
 # preferredImageDynamicRange
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred treatment to use for HDR images. By default the image view will defer to the value from its traitCollection.
 
@@ -18,11 +19,16 @@ The preferred treatment to use for HDR images. By default the image view will de
 var preferredImageDynamicRange: UIImage.DynamicRange { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) UIImageDynamicRange preferredImageDynamicRange;
+```
+
 ## See Also
 
-- [var imageDynamicRange: UIImage.DynamicRange](uiimageview/imagedynamicrange.md)
+### Specifying the dynamic range
+- [var imageDynamicRange: UIImage.DynamicRange](./imagedynamicrange.md)
   The resolved treatment to use for HDR images.
-- [UIImage.DynamicRange](uiimage/dynamicrange.md)
+- [UIImage.DynamicRange](../uiimage/dynamicrange.md)
 
 
 ---

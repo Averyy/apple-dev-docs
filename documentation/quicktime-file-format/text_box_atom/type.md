@@ -1,7 +1,8 @@
 # Type
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An unsigned 32-bit field.
 
@@ -11,9 +12,10 @@ Contains the four-character code `'tbox'`.
 
 ## See Also
 
-- [Size](text_box_atom/size.md)
+### Data fields
+- [Size](./size.md)
   An unsigned 32-bit integer holding the size of the subtitle style atom.
-- [Text box](text_box_atom/text_box.md)
+- [Text box](./text_box.md)
   A 64-bit rectangle that specifies an area to receive text (each 16 bits indicate top, left, bottom, and right, respectively) within the subtitle track.
 
 

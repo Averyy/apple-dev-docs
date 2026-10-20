@@ -1,7 +1,8 @@
 # advanced(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value that is offset the specified distance from this value.
 
@@ -43,19 +44,20 @@ let y = addOne(to: 3.5)
 
 If this type’s `Stride` type conforms to `BinaryInteger`, then for a value `x`, a distance `n`, and a value `y = x.advanced(by: n)`, `x.distance(to: y) == n`. Using this method with types that have a noninteger `Stride` may result in an approximation. If the result of advancing by `n` is not representable as a value of this type, then a runtime error may occur.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## See Also
 
-- [init()](float/init.md)
-- [init(integerLiteral: Int64)](float/init(integerliteral:).md)
+### Infrequently Used Functionality
+- [init()](./init%28%29.md)
+- [init(integerLiteral: Int64)](./init%28integerliteral%29.md)
   Creates an instance initialized to the specified integer value.
-- [init(floatLiteral: Float)](float/init(floatliteral:).md)
+- [init(floatLiteral: Float)](./init%28floatliteral%29.md)
   Creates an instance initialized to the specified floating-point value.
-- [init(integerLiteral: Self)](float/init(integerliteral:)-6hc7h.md)
-- [func distance(to: Float) -> Float](float/distance(to:).md)
+- [init(integerLiteral: Self)](./init%28integerliteral%29-6hc7h.md)
+- [func distance(to: Float) -> Float](./distance%28to%29.md)
   Returns the distance from this value to the given value, expressed as a stride.
-- [func write<Target>(to: inout Target)](float/write(to:).md)
+- [func write<Target>(to: inout Target)](./write%28to%29.md)
   Writes a textual representation of this instance into the given output stream.
 
 

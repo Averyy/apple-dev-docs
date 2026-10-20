@@ -1,19 +1,20 @@
 # Aborted
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Calls the abort handler of the action object.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```cpp
 virtual void Aborted();
 ```
 
@@ -23,11 +24,12 @@ Don’t call this method directly. The system calls it when no other objects ref
 
 ## See Also
 
-- [Cancel](osaction/cancel.md)
+### Ending the Action Early
+- [Cancel](./cancel.md)
   Cancels the execution of the action’s callbacks.
-- [OSActionAbortedHandler](osactionabortedhandler.md)
+- [OSActionAbortedHandler](../osactionabortedhandler.md)
   The block to call before aborting an action object.
-- [OSActionCancelHandler](osactioncancelhandler.md)
+- [OSActionCancelHandler](../osactioncancelhandler.md)
   The block to call after the successful cancellation of the action.
 
 

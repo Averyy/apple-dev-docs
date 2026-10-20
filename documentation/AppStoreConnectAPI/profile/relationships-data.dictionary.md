@@ -1,7 +1,8 @@
 # Profile.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,18 +11,18 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object Profile.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object Profile.Relationships.BundleId](profile/relationships-data.dictionary/bundleid-data.dictionary.md)
+- [object Profile.Relationships.BundleId](./relationships-data.dictionary/bundleid-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Profile.Relationships.Certificates](profile/relationships-data.dictionary/certificates-data.dictionary.md)
+- [object Profile.Relationships.Certificates](./relationships-data.dictionary/certificates-data.dictionary.md)
   The data and links that describe the relationship between the resources.
-- [object Profile.Relationships.Devices](profile/relationships-data.dictionary/devices-data.dictionary.md)
+- [object Profile.Relationships.Devices](./relationships-data.dictionary/devices-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -32,7 +33,8 @@ object Profile.Relationships
 
 ## See Also
 
-- [object Profile.Attributes](profile/attributes-data.dictionary.md)
+### Objects
+- [object Profile.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a Profiles resource.
 
 

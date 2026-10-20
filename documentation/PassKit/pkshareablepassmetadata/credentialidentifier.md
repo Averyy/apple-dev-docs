@@ -1,7 +1,8 @@
 # credentialIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A developer-defined value that represents the user credentials of a pass.
 
@@ -9,13 +10,17 @@ A developer-defined value that represents the user credentials of a pass.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var credentialIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSString * credentialIdentifier;
 ```
 
 

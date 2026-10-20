@@ -1,7 +1,8 @@
 # custom(title:)
 
 **Framework**: ManagedAppDistribution  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A state with a custom title.
 
@@ -23,7 +24,8 @@ static func custom(title: String) -> ManagedContentOfferState
 
 ## See Also
 
-- [static func installing(progress: Double?) -> ManagedContentOfferState](managedcontentofferstate/installing(progress:).md)
+### Creating states
+- [static func installing(progress: Double?) -> ManagedContentOfferState](./installing%28progress%29.md)
   A state indicating install progress.
 
 

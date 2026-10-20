@@ -1,7 +1,8 @@
 # init(request:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a search object for fetching points of interest.
 
@@ -20,17 +21,22 @@ Creates and returns a search object for fetching points of interest.
 init(request: MKLocalPointsOfInterestRequest)
 ```
 
+```objc
+- (instancetype) initWithPointsOfInterestRequest:(MKLocalPointsOfInterestRequest *) request;
+```
+
 ## Parameters
 
 - `request`: The search parameters to fetch points of interest.
 
 ## See Also
 
-- [init(request: MKLocalSearch.Request)](mklocalsearch/init(request:)-12tf0.md)
+### Creating a search request
+- [init(request: MKLocalSearch.Request)](./init%28request%29-12tf0.md)
   Creates and returns a search object with the specified parameters.
-- [MKLocalSearch.Request](mklocalsearch/request.md)
+- [MKLocalSearch.Request](./request.md)
   The parameters to use when searching for points of interest on the map.
-- [MKLocalSearch.ResultType](mklocalsearch/resulttype.md)
+- [MKLocalSearch.ResultType](./resulttype.md)
   Options that indicate types of search results.
 
 

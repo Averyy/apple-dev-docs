@@ -1,7 +1,8 @@
 # value(_:_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a parameter value with label and value.
 
@@ -19,6 +20,8 @@ Creates a parameter value with label and value.
 ```swift
 static func value<S>(_ label: S, _ value: Value) -> PlottableValue<Value> where S : StringProtocol
 ```
+
+Available when `Value` conforms to `Plottable`.
 
 ## Parameters
 

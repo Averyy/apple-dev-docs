@@ -1,7 +1,8 @@
 # UIVibrancyEffect
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that amplifies and adjusts the color of the content layered behind a visual effect view.
 
@@ -19,62 +20,67 @@ An object that amplifies and adjusts the color of the content layered behind a v
 class UIVibrancyEffect
 ```
 
+```objc
+@interface UIVibrancyEffect : UIVisualEffect
+```
+
 #### Overview
 
-A vibrancy effect is intended to be used as a subview of or layered on top of a [`UIVisualEffectView`](uivisualeffectview.md) that has been configured with a [`UIBlurEffect`](uiblureffect.md). The use of a vibrancy effect can help the content placed inside the [`contentView`](uivisualeffectview/contentview.md) become more vivid.
+A vibrancy effect is intended to be used as a subview of or layered on top of a [`UIVisualEffectView`](./uivisualeffectview.md) that has been configured with a [`UIBlurEffect`](./uiblureffect.md). The use of a vibrancy effect can help the content placed inside the [`contentView`](./uivisualeffectview/contentview.md) become more vivid.
 
-The vibrancy effect is color-dependent. Any subviews that you add to the [`contentView`](uivisualeffectview/contentview.md) must implement the [`tintColorDidChange()`](uiview/tintcolordidchange().md) method and update themselves accordingly. [`UIImageView`](uiimageview.md) objects with images that have a rendering mode of [`UIImage.RenderingMode.alwaysTemplate`](uiimage/renderingmode-swift.enum/alwaystemplate.md) as well as [`UILabel`](uilabel.md) objects update automatically.
+The vibrancy effect is color-dependent. Any subviews that you add to the [`contentView`](./uivisualeffectview/contentview.md) must implement the [`tintColorDidChange()`](./uiview/tintcolordidchange%28%29.md) method and update themselves accordingly. [`UIImageView`](./uiimageview.md) objects with images that have a rendering mode of [`UIImage.RenderingMode.alwaysTemplate`](./uiimage/renderingmode-swift.enum/alwaystemplate.md) as well as [`UILabel`](./uilabel.md) objects update automatically.
 
 ## Topics
 
 ### Creating a vibrancy effect
-- [init(forBlurEffect: UIBlurEffect, style: UIVibrancyEffectStyle)](uivibrancyeffect/init(forblureffect:style:).md)
+- [init(forBlurEffect: UIBlurEffect, style: UIVibrancyEffectStyle)](./uivibrancyeffect/init%28forblureffect,style%29.md)
   Creates a vibrancy effect with the specified blur and style values.
-- [init(blurEffect: UIBlurEffect)](uivibrancyeffect/init(blureffect:).md)
+- [init(blurEffect: UIBlurEffect)](./uivibrancyeffect/init%28blureffect%29.md)
   Creates a vibrancy effect for a specific blur effect.
-- [enum UIVibrancyEffectStyle](uivibrancyeffectstyle.md)
+- [enum UIVibrancyEffectStyle](./uivibrancyeffectstyle.md)
   Constants for the vibrancy styles.
 ### Deprecated
-- [class func widgetPrimary() -> UIVibrancyEffect](uivibrancyeffect/widgetprimary.md)
+- [class func widgetPrimary() -> UIVibrancyEffect](./uivibrancyeffect/widgetprimary%28%29.md)
   Creates a vibrancy effect suitable for use with certain supporting text and template images within a widget.
-- [class func widgetSecondary() -> UIVibrancyEffect](uivibrancyeffect/widgetsecondary.md)
+- [class func widgetSecondary() -> UIVibrancyEffect](./uivibrancyeffect/widgetsecondary%28%29.md)
   Creates a vibrancy effect suitable for indicating the secondary importance or relevance of supporting text and template images within a widget.
-- [class func widgetEffect(forVibrancyStyle: UIVibrancyEffectStyle) -> UIVibrancyEffect](uivibrancyeffect/widgeteffect(forvibrancystyle:).md)
+- [class func widgetEffect(forVibrancyStyle: UIVibrancyEffectStyle) -> UIVibrancyEffect](./uivibrancyeffect/widgeteffect%28forvibrancystyle%29.md)
   Creates a vibrancy effect for the specified style.
-- [class func notificationCenter() -> UIVibrancyEffect](uivibrancyeffect/notificationcenter.md)
+- [class func notificationCenter() -> UIVibrancyEffect](./uivibrancyeffect/notificationcenter%28%29.md)
   Creates a vibrancy effect for use in Notification Center.
 ### Initializers
-- [init(blurEffect: UIBlurEffect, style: UIVibrancyEffectStyle)](uivibrancyeffect/init(blureffect:style:).md)
-- [init(forBlurEffect: UIBlurEffect)](uivibrancyeffect/init(forblureffect:).md)
+- [init(blurEffect: UIBlurEffect, style: UIVibrancyEffectStyle)](./uivibrancyeffect/init%28blureffect,style%29.md)
+- [init(forBlurEffect: UIBlurEffect)](./uivibrancyeffect/init%28forblureffect%29.md)
 ### Default Implementations
-- [UIVibrancyEffect Implementations](uivibrancyeffect/uivibrancyeffect-implementations.md)
+- [UIVibrancyEffect Implementations](./uivibrancyeffect/uivibrancyeffect-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [UIVisualEffect](uivisualeffect.md)
+- [UIVisualEffect](./uivisualeffect.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIVisualEffect](uivisualeffect.md)
+### Visual effects
+- [class UIVisualEffect](./uivisualeffect.md)
   An initializer for visual effect views and blur and vibrancy effect objects.
-- [class UIVisualEffectView](uivisualeffectview.md)
+- [class UIVisualEffectView](./uivisualeffectview.md)
   An object that implements some complex visual effects.
-- [class UIBlurEffect](uiblureffect.md)
+- [class UIBlurEffect](./uiblureffect.md)
   An object that applies a blurring effect to the content layered behind a visual effect view.
-- [class UIColorEffect](uicoloreffect.md)
+- [class UIColorEffect](./uicoloreffect.md)
   A visual effect that applies a solid color background.
 
 

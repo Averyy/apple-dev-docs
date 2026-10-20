@@ -1,7 +1,8 @@
 # Locale string
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A string holding a language tag.
 
@@ -13,9 +14,10 @@ Examples include `'en-US'`, `'fr-FR'`, or `'zh-CN'`.
 
 ## See Also
 
-- [Size](metadata_locale_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](metadata_locale_atom/type.md)
+- [Type](./type.md)
   A 32-bit unsigned integer value.
 
 

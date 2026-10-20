@@ -6,21 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/common_datasets.htm
 
 # Common Datasets
 
-**
-
-- [.rst](../_sources/python/common_datasets.rst)
-- **
-
-.pdf
-
-**
-
-# Common Datasets
-
- Table of contents 
-
-# Common Datasets
-
 Although MLX data is designed to make it easy to implement your own data
 pipeline directly in your own scripts, we provide some utility functions that
 make it easy to access some commonly used datasets.
@@ -75,14 +60,14 @@ wiki_iterator = (
 # The above can be iterated at approximately 2.5M tok/s on an M2 Macbook Air.
 ```
 
-| load_mnist([root, train]) | Load a buffer with the MNIST dataset. |
+| [load_mnist](_autosummary/mlx.data.datasets.load_mnist.md#mlx.data.datasets.load_mnist)([root, train]) | Load a buffer with the MNIST dataset. |
 | --- | --- |
-| load_fashion_mnist([root, train]) | Load a buffer with the Fashion-MNIST dataset. |
-| load_cifar10([root, train, quiet, ...]) | Load a buffer with the CIFAR-10 dataset. |
-| load_cifar100([root, train, quiet, ...]) | Load a buffer with the CIFAR-100 dataset. |
-| load_imagenet([root, split, quiet, ...]) | Load the ImageNet dataset from the downloaded archives. |
-| load_images_from_folder(image_folder) | Load images from a folder. |
-| load_librispeech([root, split, quiet, ...]) | Load the librispeech dataset directly from the TAR archive. |
-| load_libritts_r([root, split, quiet, ...]) | Load the LibriTTS-R dataset directly from the TAR archive. |
-| load_wikitext_lines([root, split, subset, ...]) | Fetch the WikiText dataset and load it as a stream of lines. |
-| load_speechcommands([root, split, quiet, ...]) | Load the Speech Commands (v0.0.2) [1] dataset directly from the TAR archive. |
+| [load_fashion_mnist](_autosummary/mlx.data.datasets.load_fashion_mnist.md#mlx.data.datasets.load_fashion_mnist)([root, train]) | Load a buffer with the Fashion-MNIST dataset. |
+| [load_cifar10](_autosummary/mlx.data.datasets.load_cifar10.md#mlx.data.datasets.load_cifar10)([root, train, quiet, ...]) | Load a buffer with the CIFAR-10 dataset. |
+| [load_cifar100](_autosummary/mlx.data.datasets.load_cifar100.md#mlx.data.datasets.load_cifar100)([root, train, quiet, ...]) | Load a buffer with the CIFAR-100 dataset. |
+| [load_imagenet](_autosummary/mlx.data.datasets.load_imagenet.md#mlx.data.datasets.load_imagenet)([root, split, quiet, ...]) | Load the ImageNet dataset from the downloaded archives. |
+| [load_images_from_folder](_autosummary/mlx.data.datasets.load_images_from_folder.md#mlx.data.datasets.load_images_from_folder)(image_folder) | Load images from a folder. |
+| [load_librispeech](_autosummary/mlx.data.datasets.load_librispeech.md#mlx.data.datasets.load_librispeech)([root, split, quiet, ...]) | Load the librispeech dataset directly from the TAR archive. |
+| [load_libritts_r](_autosummary/mlx.data.datasets.load_libritts_r.md#mlx.data.datasets.load_libritts_r)([root, split, quiet, ...]) | Load the LibriTTS-R dataset directly from the TAR archive. |
+| [load_wikitext_lines](_autosummary/mlx.data.datasets.load_wikitext_lines.md#mlx.data.datasets.load_wikitext_lines)([root, split, subset, ...]) | Fetch the WikiText dataset and load it as a stream of lines. |
+| [load_speechcommands](_autosummary/mlx.data.datasets.load_speechcommands.md#mlx.data.datasets.load_speechcommands)([root, split, quiet, ...]) | Load the Speech Commands (v0.0.2) [1] dataset directly from the TAR archive. |

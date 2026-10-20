@@ -1,7 +1,8 @@
 # libraryAddedDate
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date when the user added the song to the library.
 

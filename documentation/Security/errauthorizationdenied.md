@@ -1,7 +1,8 @@
 # errAuthorizationDenied
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Security Server denied authorization for one or more requested rights.
 
@@ -13,6 +14,10 @@ The Security Server denied authorization for one or more requested rights.
 
 ```swift
 var errAuthorizationDenied: OSStatus { get }
+```
+
+```c
+errAuthorizationDenied
 ```
 
 #### Discussion

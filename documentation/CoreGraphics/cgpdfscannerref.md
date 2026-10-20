@@ -1,23 +1,28 @@
 # CGPDFScannerRef
 
 **Framework**: Core Graphics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type used to parse a PDF content stream.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 typealias CGPDFScannerRef = OpaquePointer
+```
+
+```c
+typedef struct CGPDFScanner * CGPDFScannerRef;
 ```
 
 

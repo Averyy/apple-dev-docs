@@ -1,7 +1,8 @@
 # kAXDecrementArrowSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The down arrow of a scroll bar.
 
@@ -12,6 +13,10 @@ The down arrow of a scroll bar.
 
 ```swift
 var kAXDecrementArrowSubrole: String { get }
+```
+
+```c
+#define kAXDecrementArrowSubrole
 ```
 
 

@@ -1,23 +1,28 @@
 # normal
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The semantic for surface normal data.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 static let normal: SCNGeometrySource.Semantic
+```
+
+```c
+extern SCNGeometrySourceSemantic const SCNGeometrySourceSemanticNormal;
 ```
 
 #### Discussion
@@ -30,9 +35,10 @@ Vertex normal data is typically an array of three- or four-component vectors.
 
 ## See Also
 
-- [static let vertex: SCNGeometrySource.Semantic](scngeometrysource/semantic-swift.struct/vertex.md)
+### Basic Geometry Semantics
+- [static let vertex: SCNGeometrySource.Semantic](./vertex.md)
   The semantic for vertex position data.
-- [static let texcoord: SCNGeometrySource.Semantic](scngeometrysource/semantic-swift.struct/texcoord.md)
+- [static let texcoord: SCNGeometrySource.Semantic](./texcoord.md)
   The semantic for texture coordinate data.
 
 

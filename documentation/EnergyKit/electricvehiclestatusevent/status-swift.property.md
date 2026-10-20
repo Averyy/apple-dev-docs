@@ -1,14 +1,15 @@
 # status
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current status of the vehicle relative to charger connection.
 
 **Availability**:
 - iOS 27.0+
 - iPadOS 27.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -18,13 +19,14 @@ let status: ElectricVehicleStatusEvent.Status
 
 ## See Also
 
-- [ElectricVehicleStatusEvent.Status](electricvehiclestatusevent/status-swift.enum.md)
+### Getting status information
+- [ElectricVehicleStatusEvent.Status](./status-swift.enum.md)
   The status of an electric vehicle’s charger connection.
-- [let stateOfCharge: Int](electricvehiclestatusevent/stateofcharge.md)
+- [let stateOfCharge: Int](./stateofcharge.md)
   A state of charge as a percentage at the time of the status event.
-- [let energy: Measurement<UnitEnergy>](electricvehiclestatusevent/energy.md)
+- [let energy: Measurement<UnitEnergy>](./energy.md)
   A state of charge in milliwatt-hours at the time of the status event.
-- [let estimatedRange: Measurement<UnitLength>?](electricvehiclestatusevent/estimatedrange.md)
+- [let estimatedRange: Measurement<UnitLength>?](./estimatedrange.md)
   An estimated range of driving distance based on the current energy state.
 
 

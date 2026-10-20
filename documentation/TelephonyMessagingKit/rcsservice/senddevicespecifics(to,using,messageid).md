@@ -1,7 +1,8 @@
 # sendDeviceSpecifics(to:using:messageID:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends device specifics in response to a suggested action to send device specifics.
 
@@ -16,9 +17,9 @@ final func sendDeviceSpecifics(to destination: RCSHandle.URI, using cellularServ
 
 #### Discussion
 
-Call this method after the person using the app selects a [`RCSService.Business.Suggestion`](rcsservice/business/suggestion.md) of type [`RCSService.Business.Suggestion.action(_:)`](rcsservice/business/suggestion/action(_:).md), whose action type is [`RCSService.Business.SuggestedAction.Action.sendDeviceSpecifics`](rcsservice/business/suggestedaction/action-swift.enum/senddevicespecifics.md) .
+Call this method after the person using the app selects a [`RCSService.Business.Suggestion`](./business/suggestion.md) of type [`RCSService.Business.Suggestion.action(_:)`](./business/suggestion/action%28_%29.md), whose action type is [`RCSService.Business.SuggestedAction.Action.sendDeviceSpecifics`](./business/suggestedaction/action-swift.enum/senddevicespecifics.md) .
 
-> **Note**:  If the session is no longer valid, this method throws [`TelephonyMessagingSession.Error.invalidSession`](telephonymessagingsession/error/invalidsession.md). If the method can’t process the request for other reasons it throws [`RCSService.Error.internalError`](rcsservice/error/internalerror.md).
+> **Throws**:  If the session is no longer valid, this method throws [`TelephonyMessagingSession.Error.invalidSession`](../telephonymessagingsession/error/invalidsession.md). If the method can’t process the request for other reasons it throws [`RCSService.Error.internalError`](./error/internalerror.md).
 
 ## Parameters
 
@@ -28,9 +29,10 @@ Call this method after the person using the app selects a [`RCSService.Business.
 
 ## See Also
 
-- [func sendSuggestionResponse(RCSService.SuggestionResponse) async throws](rcsservice/sendsuggestionresponse(_:).md)
+### Responding to business suggestions
+- [func sendSuggestionResponse(RCSService.SuggestionResponse) async throws](./sendsuggestionresponse%28_%29.md)
   Sends a response for a business suggestion.
-- [RCSService.SuggestionResponse](rcsservice/suggestionresponse.md)
+- [RCSService.SuggestionResponse](./suggestionresponse.md)
   Structure representing a response to a business suggestion.
 
 

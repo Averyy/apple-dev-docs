@@ -1,18 +1,21 @@
 # NSEndpointSecurityRebootRequired
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - macOS 10.15+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSEndpointSecurityRebootRequired`
+- **Type**: boolean
 
 ## See Also
 
-- [NSEndpointSecurityEarlyBoot](information-property-list/nsendpointsecurityearlyboot.md)
+### Endpoint security
+- [NSEndpointSecurityEarlyBoot](./nsendpointsecurityearlyboot.md)
 
 
 ---

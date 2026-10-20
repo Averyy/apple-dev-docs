@@ -1,7 +1,8 @@
 # init(domainName:roamingEnabled:)
 
 **Framework**: Network Extension  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new hotspot configuration of a legacy Hotspot or HS 2.0 Wi-Fi network. with optional roaming enabled.
 
@@ -17,9 +18,13 @@ Creates a new hotspot configuration of a legacy Hotspot or HS 2.0 Wi-Fi network.
 init(domainName: String, roamingEnabled: Bool)
 ```
 
+```objc
+- (instancetype) initWithDomainName:(NSString *) domainName roamingEnabled:(BOOL) roamingEnabled;
+```
+
 ## Parameters
 
-- `domainName`: The domain name of a Hotspot 2.0 Wi-Fi network. See [`domainName`](nehotspoths20settings/domainname.md).
+- `domainName`: The domain name of a Hotspot 2.0 Wi-Fi network. See [`domainName`](./domainname.md).
 - `roamingEnabled`: A Boolean value indicating whether roaming is enabled on the network (`true`) or not (`false`).
 
 

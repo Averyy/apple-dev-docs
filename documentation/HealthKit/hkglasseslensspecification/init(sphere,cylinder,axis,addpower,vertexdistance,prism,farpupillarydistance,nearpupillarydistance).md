@@ -1,7 +1,8 @@
 # init(sphere:cylinder:axis:addPower:vertexDistance:prism:farPupillaryDistance:nearPupillaryDistance:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new glasses lens specification, containing the prescription data for one eye.
 
@@ -19,14 +20,18 @@ Creates a new glasses lens specification, containing the prescription data for o
 init(sphere: HKQuantity, cylinder: HKQuantity?, axis: HKQuantity?, addPower: HKQuantity?, vertexDistance: HKQuantity?, prism: HKVisionPrism?, farPupillaryDistance: HKQuantity?, nearPupillaryDistance: HKQuantity?)
 ```
 
+```objc
+- (instancetype) initWithSphere:(HKQuantity *) sphere cylinder:(HKQuantity *) cylinder axis:(HKQuantity *) axis addPower:(HKQuantity *) addPower vertexDistance:(HKQuantity *) vertexDistance prism:(HKVisionPrism *) prism farPupillaryDistance:(HKQuantity *) farPupillaryDistance nearPupillaryDistance:(HKQuantity *) nearPupillaryDistance;
+```
+
 ## Parameters
 
-- `sphere`: The correction for farsightedness, measured in [`diopter()`](hkunit/diopter().md) units. The range is -10.5 to +6.5.
-- `cylinder`: Part of the correction for astigmatism. This property measures the strength of the correction in [`diopter()`](hkunit/diopter().md) units. The range is -3.0 to 3.0.
-- `axis`: Part of the correction for astigmatism. This property measures the orientation of the correction in [`degreeAngle()`](hkunit/degreeangle().md) units.
-- `addPower`: The correction for nearsightedness, measured in [`diopter()`](hkunit/diopter().md) units. The range is from 0.25 to 2.5. The right and left eyes should have the same value.
+- `sphere`: The correction for farsightedness, measured in [`diopter()`](../hkunit/diopter%28%29.md) units. The range is -10.5 to +6.5.
+- `cylinder`: Part of the correction for astigmatism. This property measures the strength of the correction in [`diopter()`](../hkunit/diopter%28%29.md) units. The range is -3.0 to 3.0.
+- `axis`: Part of the correction for astigmatism. This property measures the orientation of the correction in [`degreeAngle()`](../hkunit/degreeangle%28%29.md) units.
+- `addPower`: The correction for nearsightedness, measured in [`diopter()`](../hkunit/diopter%28%29.md) units. The range is from 0.25 to 2.5. The right and left eyes should have the same value.
 - `vertexDistance`: The distance between the back of the lens and the eye, measured in mm. The range is 12 to 14 mm.
-- `prism`: An object that contains information about the correction for eye alignment. For more information, see [`HKVisionPrism`](hkvisionprism.md).
+- `prism`: An object that contains information about the correction for eye alignment. For more information, see [`HKVisionPrism`](../hkvisionprism.md).
 - `farPupillaryDistance`: The distance between the pupil and the center of the nose when looking at an object far away, measured in mm.
 - `nearPupillaryDistance`: The distance between the pupil and the center of the nose when looking at a nearby object, measured in mm.
 

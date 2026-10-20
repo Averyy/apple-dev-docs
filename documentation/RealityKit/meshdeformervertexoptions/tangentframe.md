@@ -1,7 +1,8 @@
 # tangentFrame
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies all of the normalizable vertex types.
 
@@ -21,13 +22,14 @@ static var tangentFrame: MeshDeformerVertexOptions { get }
 
 ## See Also
 
-- [static var positions: MeshDeformerVertexOptions](meshdeformervertexoptions/positions.md)
+### Specifying geometric attributes
+- [static var positions: MeshDeformerVertexOptions](./positions.md)
   Specifies positions only.
-- [static var normals: MeshDeformerVertexOptions](meshdeformervertexoptions/normals.md)
+- [static var normals: MeshDeformerVertexOptions](./normals.md)
   Specifies normals only.
-- [static var tangents: MeshDeformerVertexOptions](meshdeformervertexoptions/tangents.md)
+- [static var tangents: MeshDeformerVertexOptions](./tangents.md)
   Specifies tangents only.
-- [static var bitangents: MeshDeformerVertexOptions](meshdeformervertexoptions/bitangents.md)
+- [static var bitangents: MeshDeformerVertexOptions](./bitangents.md)
   Specifies bitangents only.
 
 

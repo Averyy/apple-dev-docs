@@ -1,7 +1,8 @@
 # CLAccuracyAuthorization.fullAccuracy
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user authorized the app to access location data with full accuracy.
 
@@ -20,15 +21,20 @@ The user authorized the app to access location data with full accuracy.
 case fullAccuracy
 ```
 
+```c
+CLAccuracyAuthorizationFullAccuracy
+```
+
 ## Topics
 
 ### Related documentation
-- [var accuracyAuthorization: CLAccuracyAuthorization](cllocationmanager/accuracyauthorization.md)
+- [var accuracyAuthorization: CLAccuracyAuthorization](../cllocationmanager/accuracyauthorization.md)
   A value that indicates the level of location accuracy the app has permission to use.
 
 ## See Also
 
-- [CLAccuracyAuthorization.reducedAccuracy](claccuracyauthorization/reducedaccuracy.md)
+### Getting the location accuracy
+- [CLAccuracyAuthorization.reducedAccuracy](./reducedaccuracy.md)
   The user authorized the app to access location data with reduced accuracy.
 
 

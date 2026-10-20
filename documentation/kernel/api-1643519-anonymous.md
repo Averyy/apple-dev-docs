@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHIDRtFeatureReport](1643519-anonymous/khidrtfeaturereport.md)
-- [kHIDRtInputReport](1643519-anonymous/khidrtinputreport.md)
-- [kHIDRtOutputReport](1643519-anonymous/khidrtoutputreport.md)
+- [kHIDRtFeatureReport](./api-1643519-anonymous/khidrtfeaturereport.md)
+- [kHIDRtInputReport](./api-1643519-anonymous/khidrtinputreport.md)
+- [kHIDRtOutputReport](./api-1643519-anonymous/khidrtoutputreport.md)
 
 
 ---

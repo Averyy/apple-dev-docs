@@ -1,7 +1,8 @@
 # sec_trust_copy_ref(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 12.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func sec_trust_copy_ref(_ trust: sec_trust_t) -> Unmanaged<SecTrust>
+```
+
+```c
+SecTrustRefsec_trust_copy_ref(sec_trust_t trust);
 ```
 
 #### Return Value

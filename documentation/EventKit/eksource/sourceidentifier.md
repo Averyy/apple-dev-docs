@@ -1,7 +1,8 @@
 # sourceIdentifier
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the source object.
 
@@ -19,13 +20,18 @@ A unique identifier for the source object.
 var sourceIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * sourceIdentifier;
+```
+
 ## See Also
 
-- [enum EKSourceType](eksourcetype.md)
+### Accessing Source Properties
+- [enum EKSourceType](../eksourcetype.md)
   The type of source object.
-- [var sourceType: EKSourceType](eksource/sourcetype.md)
+- [var sourceType: EKSourceType](./sourcetype.md)
   The type of this source object.
-- [var title: String](eksource/title.md)
+- [var title: String](./title.md)
   The name of this source object.
 
 

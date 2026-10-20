@@ -1,7 +1,8 @@
 # ScmRepository
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A source code repository connected to Xcode Cloud, used as the source for workflow builds.
 
@@ -10,16 +11,16 @@ A source code repository connected to Xcode Cloud, used as the source for workfl
 
 ## Declaration
 
-```swift
+```
 object ScmRepository
 ```
 
 ## Topics
 
 ### Objects
-- [object ScmRepository.Attributes](scmrepository/attributes-data.dictionary.md)
+- [object ScmRepository.Attributes](./scmrepository/attributes-data.dictionary.md)
   The attributes that describe a Repositories resource.
-- [object ScmRepository.Relationships](scmrepository/relationships-data.dictionary.md)
+- [object ScmRepository.Relationships](./scmrepository/relationships-data.dictionary.md)
   The relationships of the Repositories resource you included in the request and those on which you can operate.
 
 ## Properties
@@ -30,14 +31,17 @@ object ScmRepository
 - `relationships` (ScmRepository.Relationships): The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
 
+  **Allowed Values**: `scmRepositories`
+
 ## See Also
 
-- [object ScmRepositoryResponse](scmrepositoryresponse.md)
+### Objects
+- [object ScmRepositoryResponse](./scmrepositoryresponse.md)
   The response body for endpoints that read a single SCM repository connected to Xcode Cloud.
-- [object ScmRepositoriesResponse](scmrepositoriesresponse.md)
+- [object ScmRepositoriesResponse](./scmrepositoriesresponse.md)
   The response body for endpoints that list SCM repositories connected to Xcode Cloud.
-- [object ScmRepositoryGitReferencesLinkagesResponse](scmrepositorygitreferenceslinkagesresponse.md)
-- [object ScmRepositoryPullRequestsLinkagesResponse](scmrepositorypullrequestslinkagesresponse.md)
+- [object ScmRepositoryGitReferencesLinkagesResponse](./scmrepositorygitreferenceslinkagesresponse.md)
+- [object ScmRepositoryPullRequestsLinkagesResponse](./scmrepositorypullrequestslinkagesresponse.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # allowsAccessibilityHoverText
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to allow Hover Text during an assessment.
 
@@ -15,9 +16,13 @@ A Boolean value that indicates whether to allow Hover Text during an assessment.
 var allowsAccessibilityHoverText: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign) BOOL allowsAccessibilityHoverText;
+```
+
 #### Discussion
 
-Users can enable Hover Text in the Settings app (Accessibility > Zoom > Hover Text) to magnify text under the pointer. An assessment session **does not** disable Hover Text by default, but you can disable it by setting [`allowsAccessibilityHoverText`](aeassessmentconfiguration/allowsaccessibilityhovertext.md) to `NO` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
+Users can enable Hover Text in the Settings app (Accessibility > Zoom > Hover Text) to magnify text under the pointer. An assessment session **does not** disable Hover Text by default, but you can disable it by setting [`allowsAccessibilityHoverText`](./allowsaccessibilityhovertext.md) to `NO` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 
 This property governs Hover Typing as well as Hover Text.
 

@@ -1,7 +1,8 @@
 # vDSP.Biquad
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A single- or double-precision biquadratic filter.
 
@@ -11,7 +12,7 @@ A single- or double-precision biquadratic filter.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -27,17 +28,18 @@ struct Biquad<T> where T : vDSP_FloatingPointBiquadFilterable
 ## Topics
 
 ### Initializers
-- [init?(coefficients: [Double], channelCount: vDSP_Length, sectionCount: vDSP_Length, ofType: T.Type)](vdsp/biquad/init(coefficients:channelcount:sectioncount:oftype:).md)
+- [init?(coefficients: [Double], channelCount: vDSP_Length, sectionCount: vDSP_Length, ofType: T.Type)](./biquad/init%28coefficients,channelcount,sectioncount,oftype%29.md)
   Creates a new single-channel or multichannel cascaded biquad IIR structure.
 ### Instance methods
-- [func apply<U>(input: U) -> [T]](vdsp/biquad/apply(input:).md)
+- [func apply<U>(input: U) -> [T]](./biquad/apply%28input%29.md)
   Applies a single- or double-precision single-channel or multichannel biquad IIR filter, returning the filtered signal.
-- [func apply<U, V>(input: U, output: inout V)](vdsp/biquad/apply(input:output:).md)
+- [func apply<U, V>(input: U, output: inout V)](./biquad/apply%28input,output%29.md)
   Applies a single- or double-precision single-channel or multichannel biquad IIR filter, overwriting the supplied output vector.
 
 ## See Also
 
-- [Equalizing audio with discrete cosine transforms (DCTs)](equalizing-audio-with-discrete-cosine-transforms-dcts.md)
+### Biquadratic IIR Filters
+- [Equalizing audio with discrete cosine transforms (DCTs)](../equalizing-audio-with-discrete-cosine-transforms-dcts.md)
   Change the frequency response of an audio signal by manipulating frequency-domain data.
 
 

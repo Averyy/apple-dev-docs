@@ -1,7 +1,8 @@
 # BNNSArithmeticAcosh
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An operation that calculates the element-wise inverse hyperbolic cosine of its input.
 
@@ -20,29 +21,34 @@ An operation that calculates the element-wise inverse hyperbolic cosine of its i
 var BNNSArithmeticAcosh: BNNSArithmeticFunction { get }
 ```
 
+```c
+BNNSArithmeticAcosh
+```
+
 ## See Also
 
-- [var BNNSArithmeticAcos: BNNSArithmeticFunction](bnnsarithmeticacos.md)
+### Trigonometric Functions
+- [var BNNSArithmeticAcos: BNNSArithmeticFunction](./bnnsarithmeticacos.md)
   An operation that calculates the element-wise inverse cosine of its input.
-- [var BNNSArithmeticAsin: BNNSArithmeticFunction](bnnsarithmeticasin.md)
+- [var BNNSArithmeticAsin: BNNSArithmeticFunction](./bnnsarithmeticasin.md)
   An operation that calculates the element-wise inverse sine of its input.
-- [var BNNSArithmeticAsinh: BNNSArithmeticFunction](bnnsarithmeticasinh.md)
+- [var BNNSArithmeticAsinh: BNNSArithmeticFunction](./bnnsarithmeticasinh.md)
   An operation that calculates the element-wise inverse hyperbolic sine of its input.
-- [var BNNSArithmeticAtan: BNNSArithmeticFunction](bnnsarithmeticatan.md)
+- [var BNNSArithmeticAtan: BNNSArithmeticFunction](./bnnsarithmeticatan.md)
   An operation that calculates the element-wise inverse tangent of its input.
-- [var BNNSArithmeticAtanh: BNNSArithmeticFunction](bnnsarithmeticatanh.md)
+- [var BNNSArithmeticAtanh: BNNSArithmeticFunction](./bnnsarithmeticatanh.md)
   An operation that calculates the element-wise inverse hyperbolic tangent of its input.
-- [var BNNSArithmeticCos: BNNSArithmeticFunction](bnnsarithmeticcos.md)
+- [var BNNSArithmeticCos: BNNSArithmeticFunction](./bnnsarithmeticcos.md)
   An operation that calculates the element-wise cosine of its input.
-- [var BNNSArithmeticCosh: BNNSArithmeticFunction](bnnsarithmeticcosh.md)
+- [var BNNSArithmeticCosh: BNNSArithmeticFunction](./bnnsarithmeticcosh.md)
   An operation that calculates the element-wise hyperbolic cosine of its input.
-- [var BNNSArithmeticSin: BNNSArithmeticFunction](bnnsarithmeticsin.md)
+- [var BNNSArithmeticSin: BNNSArithmeticFunction](./bnnsarithmeticsin.md)
   An operation that calculates the element-wise sine of its input.
-- [var BNNSArithmeticSinh: BNNSArithmeticFunction](bnnsarithmeticsinh.md)
+- [var BNNSArithmeticSinh: BNNSArithmeticFunction](./bnnsarithmeticsinh.md)
   An operation that calculates the element-wise hyperbolic sine of its input.
-- [var BNNSArithmeticTan: BNNSArithmeticFunction](bnnsarithmetictan.md)
+- [var BNNSArithmeticTan: BNNSArithmeticFunction](./bnnsarithmetictan.md)
   An operation that calculates the element-wise tangent of its input.
-- [var BNNSArithmeticTanh: BNNSArithmeticFunction](bnnsarithmetictanh.md)
+- [var BNNSArithmeticTanh: BNNSArithmeticFunction](./bnnsarithmetictanh.md)
   An operation that calculates the element-wise hyperbolic tangent of its input.
 
 

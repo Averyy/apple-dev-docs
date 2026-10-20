@@ -1,7 +1,8 @@
 # init(_:_:_:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that applies the zip function to three upstream publishers.
 

@@ -1,7 +1,8 @@
 # CNImageRenderingSession
 
 **Framework**: Cinematic  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A session for rendering a shallow depth-of-field (SDoF) effect onto still images using Metal.
 
@@ -18,6 +19,10 @@ A session for rendering a shallow depth-of-field (SDoF) effect onto still images
 class CNImageRenderingSession
 ```
 
+```objc
+@interface CNImageRenderingSession : NSObject
+```
+
 #### Overview
 
 Use CNImageRenderingSession to apply a cinematic, lens-simulated bokeh effect to an image given a disparity map. For large images, prefer the tiled API to avoid excessive GPU memory usage.
@@ -27,29 +32,29 @@ A single session may be reused across multiple render calls. It is not thread-sa
 ## Topics
 
 ### Initializers
-- [init(configuration: CNImageRenderingSessionConfiguration)](cnimagerenderingsession/init(configuration:).md)
+- [init(configuration: CNImageRenderingSessionConfiguration)](./cnimagerenderingsession/init%28configuration%29.md)
 ### Instance Properties
-- [var configuration: CNImageRenderingSessionConfiguration](cnimagerenderingsession/configuration.md)
+- [var configuration: CNImageRenderingSessionConfiguration](./cnimagerenderingsession/configuration.md)
 ### Instance Methods
-- [func encodeRender(to: any MTLCommandBuffer, sourceRGBA: any MTLTexture, sourceDisparity: any MTLTexture, destinationRGBA: any MTLTexture, fNumber: Float, focusDisparity: Float) -> Bool](cnimagerenderingsession/encoderender(to:sourcergba:sourcedisparity:destinationrgba:fnumber:focusdisparity:).md)
+- [func encodeRender(to: any MTLCommandBuffer, sourceRGBA: any MTLTexture, sourceDisparity: any MTLTexture, destinationRGBA: any MTLTexture, fNumber: Float, focusDisparity: Float) -> Bool](./cnimagerenderingsession/encoderender%28to,sourcergba,sourcedisparity,destinationrgba,fnumber,focusdisparity%29.md)
   Encode a command to render a shallow depth of field (SDoF) image to a metal texture
-- [func encodeTileRender(to: any MTLCommandBuffer, sourceTileRGBA: any MTLTexture, sourceDisparity: any MTLTexture, destinationTileRGBA: any MTLTexture, fNumber: Float, focusDisparity: Float, sourceRGBASize: CGSize, tileOffset: CGPoint, tileExtendOffset: CGPoint) -> Bool](cnimagerenderingsession/encodetilerender(to:sourcetilergba:sourcedisparity:destinationtilergba:fnumber:focusdisparity:sourcergbasize:tileoffset:tileextendoffset:).md)
+- [func encodeTileRender(to: any MTLCommandBuffer, sourceTileRGBA: any MTLTexture, sourceDisparity: any MTLTexture, destinationTileRGBA: any MTLTexture, fNumber: Float, focusDisparity: Float, sourceRGBASize: CGSize, tileOffset: CGPoint, tileExtendOffset: CGPoint) -> Bool](./cnimagerenderingsession/encodetilerender%28to,sourcetilergba,sourcedisparity,destinationtilergba,fnumber,focusdisparity,sourcergbasize,tileoffset,tileextendoffset%29.md)
   Encode a command to render a shallow depth of field (SDoF) image to a metal texture
 ### Type Methods
-- [class func minimumTileExtendRect(forTileRect: CGRect, sourceRGBASize: CGSize) -> CGRect](cnimagerenderingsession/minimumtileextendrect(fortilerect:sourcergbasize:).md)
+- [class func minimumTileExtendRect(forTileRect: CGRect, sourceRGBASize: CGSize) -> CGRect](./cnimagerenderingsession/minimumtileextendrect%28fortilerect,sourcergbasize%29.md)
   Returns the minimum source rect that must be sampled to render tileRect without edge artifacts.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

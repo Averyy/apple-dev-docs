@@ -1,7 +1,8 @@
 # layoutFragmentFrame
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rectangle the framework uses for tiling the layout fragment inside the target layout coordinate system.
 
@@ -14,17 +15,22 @@ The rectangle the framework uses for tiling the layout fragment inside the targe
 var layoutFragmentFrame: CGRect { get }
 ```
 
+```objc
+@property (readonly) CGRect layoutFragmentFrame;
+```
+
 ## See Also
 
-- [var renderingSurfaceBounds: CGRect](nstextlayoutfragment/renderingsurfacebounds.md)
+### Drawing the fragment and attachments
+- [var renderingSurfaceBounds: CGRect](./renderingsurfacebounds.md)
   The bounds defining the area required for rendering the contents.
-- [func draw(at: CGPoint, in: CGContext)](nstextlayoutfragment/draw(at:in:).md)
+- [func draw(at: CGPoint, in: CGContext)](./draw%28at,in%29.md)
   Renders the visual representation of this element in the specified graphics context.
-- [func invalidateLayout()](nstextlayoutfragment/invalidatelayout.md)
+- [func invalidateLayout()](./invalidatelayout%28%29.md)
   Invalidates any layout information associated with the text layout fragment.
-- [var textAttachmentViewProviders: [NSTextAttachmentViewProvider]](nstextlayoutfragment/textattachmentviewproviders.md)
+- [var textAttachmentViewProviders: [NSTextAttachmentViewProvider]](./textattachmentviewproviders.md)
   The attachment view provider associated with the text layout fragment.
-- [func frameForTextAttachment(at: any NSTextLocation) -> CGRect](nstextlayoutfragment/framefortextattachment(at:).md)
+- [func frameForTextAttachment(at: any NSTextLocation) -> CGRect](./framefortextattachment%28at%29.md)
   Returns the frame in the text layout fragment coordinate system for the attachment at the location you specify.
 
 

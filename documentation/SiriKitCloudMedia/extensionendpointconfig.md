@@ -1,7 +1,8 @@
 # ExtensionEndpointConfig
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Instructions for accessing an intent endpoint.
 
@@ -10,31 +11,34 @@ Instructions for accessing an intent endpoint.
 
 ## Declaration
 
-```swift
+```
 object ExtensionEndpointConfig
 ```
 
 ## Topics
 
 ### Requiring Headers for All Endpoints
-- [object ExtensionEndpointConfig.Hdr](extensionendpointconfig/hdr-data.dictionary.md)
+- [object ExtensionEndpointConfig.Hdr](./extensionendpointconfig/hdr-data.dictionary.md)
   Headers to include with requests to intent endpoints.
 
 ## Properties
 
 - `hdr` (ExtensionEndpointConfig.Hdr): Headers the client must include in requests to this endpoint.
-- `url` (string): The path to access this endpoint. The path may be an absolute URL, or relative to the resolved [`Configure Your Service Endpoints`](configuration-resource.md) URL. Provide an empty string if your service doesn’t support this endpoint.
+- `url` (string): The path to access this endpoint. The path may be an absolute URL, or relative to the resolved [`Configure Your Service Endpoints`](./configuration-resource.md) URL. Provide an empty string if your service doesn’t support this endpoint.
+
+  **Minimum Length**: `0`; **Maximum Length**: `2000`
 
 ## Relationships
 
 ### Inherited By
-- [ExtensionConfig.Intent.AddMedia](extensionconfig/intent-data.dictionary/addmedia-data.dictionary.md)
-- [ExtensionConfig.Intent.PlayMedia](extensionconfig/intent-data.dictionary/playmedia-data.dictionary.md)
-- [ExtensionConfig.Intent.UpdateMediaAffinity](extensionconfig/intent-data.dictionary/updatemediaaffinity-data.dictionary.md)
+- [ExtensionConfig.Intent.AddMedia](./extensionconfig/intent-data.dictionary/addmedia-data.dictionary.md)
+- [ExtensionConfig.Intent.PlayMedia](./extensionconfig/intent-data.dictionary/playmedia-data.dictionary.md)
+- [ExtensionConfig.Intent.UpdateMediaAffinity](./extensionconfig/intent-data.dictionary/updatemediaaffinity-data.dictionary.md)
 
 ## See Also
 
-- [object ExtensionConfig.Intent](extensionconfig/intent-data.dictionary.md)
+### Describing Supported Intent Endpoints
+- [object ExtensionConfig.Intent](./extensionconfig/intent-data.dictionary.md)
   Instructions for accessing your media service’s intent endpoints.
 
 

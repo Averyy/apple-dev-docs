@@ -1,7 +1,8 @@
 # MediaSessionError.internalFailure
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An internal system error occurred.
 

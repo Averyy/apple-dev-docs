@@ -1,7 +1,8 @@
 # presentEditMenu(with:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents an edit menu using the object you provide for configuration.
 
@@ -17,9 +18,13 @@ Presents an edit menu using the object you provide for configuration.
 func presentEditMenu(with configuration: UIEditMenuConfiguration)
 ```
 
+```objc
+- (void) presentEditMenuWithConfiguration:(UIEditMenuConfiguration *) configuration;
+```
+
 #### Discussion
 
-You use this method to display the edit menu. The method calls [`editMenuInteraction(_:menuFor:suggestedActions:)`](uieditmenuinteractiondelegate/editmenuinteraction(_:menufor:suggestedactions:).md) on the interaction object’s delegate and updates the UI with the menu the delegate returns. This method dismisses any active menus before presenting the new menu.
+You use this method to display the edit menu. The method calls [`editMenuInteraction(_:menuFor:suggestedActions:)`](../uieditmenuinteractiondelegate/editmenuinteraction%28_,menufor,suggestedactions%29.md) on the interaction object’s delegate and updates the UI with the menu the delegate returns. This method dismisses any active menus before presenting the new menu.
 
 The following example presents the menu from a gesture recognizer and provides the location of the gesture as the location for this interaction.
 
@@ -41,15 +46,16 @@ The following example presents the menu from a gesture recognizer and provides t
 
 ## See Also
 
-- [var delegate: (any UIEditMenuInteractionDelegate)?](uieditmenuinteraction/delegate.md)
+### Managing edit menu interactions
+- [var delegate: (any UIEditMenuInteractionDelegate)?](./delegate.md)
   An object that customizes presentation of the menu and actions to display for an edit menu interaction.
-- [func reloadVisibleMenu()](uieditmenuinteraction/reloadvisiblemenu.md)
+- [func reloadVisibleMenu()](./reloadvisiblemenu%28%29.md)
   Updates the actions an edit menu displays.
-- [func updateVisibleMenuPosition(animated: Bool)](uieditmenuinteraction/updatevisiblemenuposition(animated:).md)
+- [func updateVisibleMenuPosition(animated: Bool)](./updatevisiblemenuposition%28animated%29.md)
   Updates the position of the currently visible menu with an option to animate the action.
-- [func dismissMenu()](uieditmenuinteraction/dismissmenu.md)
+- [func dismissMenu()](./dismissmenu%28%29.md)
   Dismiss the edit menu if present.
-- [func location(in: UIView?) -> CGPoint](uieditmenuinteraction/location(in:).md)
+- [func location(in: UIView?) -> CGPoint](./location%28in%29.md)
   Returns the location of the user interaction in the specified view’s coordinate system.
 
 

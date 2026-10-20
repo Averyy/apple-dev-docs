@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a flag with an integer value.
 

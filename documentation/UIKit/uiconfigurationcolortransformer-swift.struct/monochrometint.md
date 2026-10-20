@@ -1,7 +1,8 @@
 # monochromeTint
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A color transformer that returns the color with a monochrome tint.
 
@@ -10,7 +11,7 @@ A color transformer that returns the color with a monochrome tint.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,11 +25,12 @@ Use this color transformer to deemphasize a tinted item. The tinted item remains
 
 ## See Also
 
-- [init((UIColor) -> UIColor)](uiconfigurationcolortransformer-swift.struct/init(_:).md)
+### Creating a color transformer
+- [init((UIColor) -> UIColor)](./init%28_%29.md)
   Creates a color transformer with the specified closure.
-- [static let grayscale: UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct/grayscale.md)
+- [static let grayscale: UIConfigurationColorTransformer](./grayscale.md)
   Creates a color transformer that generates a grayscale version of the color.
-- [static let preferredTint: UIConfigurationColorTransformer](uiconfigurationcolortransformer-swift.struct/preferredtint.md)
+- [static let preferredTint: UIConfigurationColorTransformer](./preferredtint.md)
   A color transformer that returns the preferred system accent color.
 
 

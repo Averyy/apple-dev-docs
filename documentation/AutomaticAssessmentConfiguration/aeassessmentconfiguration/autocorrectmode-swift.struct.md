@@ -1,7 +1,8 @@
 # AEAssessmentConfiguration.AutocorrectMode
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The set of autocorrect features that you can enable during an assessment.
 
@@ -17,9 +18,13 @@ The set of autocorrect features that you can enable during an assessment.
 struct AutocorrectMode
 ```
 
+```c
+enum AEAutocorrectMode : NSUInteger;
+```
+
 #### Overview
 
-Use one or more of the autocorrect modes to set the [`autocorrectMode`](aeassessmentconfiguration/autocorrectmode-swift.property.md) property of an [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance. For example, you can enable both spelling and punctuation corrections by combining [`spelling`](aeassessmentconfiguration/autocorrectmode-swift.struct/spelling.md) and [`punctuation`](aeassessmentconfiguration/autocorrectmode-swift.struct/punctuation.md):
+Use one or more of the autocorrect modes to set the [`autocorrectMode`](./autocorrectmode-swift.property.md) property of an [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance. For example, you can enable both spelling and punctuation corrections by combining [`spelling`](./autocorrectmode-swift.struct/spelling.md) and [`punctuation`](./autocorrectmode-swift.struct/punctuation.md):
 
 **Swift**:
 
@@ -48,31 +53,32 @@ AEAssessmentSession *session = [[AEAssessmentSession alloc] initWithConfiguratio
 ## Topics
 
 ### Creating a mode
-- [init(rawValue: UInt)](aeassessmentconfiguration/autocorrectmode-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./autocorrectmode-swift.struct/init%28rawvalue%29.md)
   Creates a new mode instance.
 ### Modes
-- [static var punctuation: AEAssessmentConfiguration.AutocorrectMode](aeassessmentconfiguration/autocorrectmode-swift.struct/punctuation.md)
+- [static var punctuation: AEAssessmentConfiguration.AutocorrectMode](./autocorrectmode-swift.struct/punctuation.md)
   A mode in which autocorrect checks punctuation as the user types.
-- [static var spelling: AEAssessmentConfiguration.AutocorrectMode](aeassessmentconfiguration/autocorrectmode-swift.struct/spelling.md)
+- [static var spelling: AEAssessmentConfiguration.AutocorrectMode](./autocorrectmode-swift.struct/spelling.md)
   A mode in which autocorrect checks for spelling as the user types.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var allowsSpellCheck: Bool](aeassessmentconfiguration/allowsspellcheck.md)
+### Allowing corrections
+- [var allowsSpellCheck: Bool](./allowsspellcheck.md)
   A Boolean value that indicates whether to allow spell check during an assessment.
-- [var autocorrectMode: AEAssessmentConfiguration.AutocorrectMode](aeassessmentconfiguration/autocorrectmode-swift.property.md)
+- [var autocorrectMode: AEAssessmentConfiguration.AutocorrectMode](./autocorrectmode-swift.property.md)
   A Boolean value that indicates whether to allow Autocorrect during an assessment.
 
 

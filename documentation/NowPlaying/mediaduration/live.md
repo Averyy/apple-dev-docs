@@ -1,7 +1,8 @@
 # MediaDuration.live
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Live or streaming content without a defined duration.
 

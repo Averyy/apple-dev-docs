@@ -1,7 +1,8 @@
 # AVAudio3DMixingPointSourceInHeadMode.mono
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The point source remains a single mono source inside the head of the listener regardless of the channels it consists of.
 
@@ -19,9 +20,14 @@ The point source remains a single mono source inside the head of the listener re
 case mono
 ```
 
+```c
+AVAudio3DMixingPointSourceInHeadModeMono
+```
+
 ## See Also
 
-- [AVAudio3DMixingPointSourceInHeadMode.bypass](avaudio3dmixingpointsourceinheadmode/bypass.md)
+### Choosing an in-head mode
+- [AVAudio3DMixingPointSourceInHeadMode.bypass](./bypass.md)
   The point source distributes into each output channel inside the head of the listener.
 
 

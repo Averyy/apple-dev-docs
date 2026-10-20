@@ -1,7 +1,8 @@
 # GlassEffectContainer
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that combines multiple Liquid Glass shapes into a single shape that can morph individual shapes into one another.
 
@@ -22,50 +23,51 @@ A view that combines multiple Liquid Glass shapes into a single shape that can m
 
 ## Mentions
 
-- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+- [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
 
 #### Overview
 
-Use a container with the [`glassEffect(_:in:)`](view/glasseffect(_:in:).md) modifier. Each view with a Liquid Glass effect contributes a shape rendered with the effect to a set of shapes. SwiftUI renders the effects together, improving rendering performance and allowing the effects to interact with and morph into one another.
+Use a container with the [`glassEffect(_:in:)`](./view/glasseffect%28_,in%29.md) modifier. Each view with a Liquid Glass effect contributes a shape rendered with the effect to a set of shapes. SwiftUI renders the effects together, improving rendering performance and allowing the effects to interact with and morph into one another.
 
 Configure how shapes interact with one another by customizing the default spacing value of the container. As shapes near one another, their paths start to blend into one another. The higher the spacing, the sooner blending begins as the shapes approach each other.
 
 ## Topics
 
 ### Initializers
-- [init(spacing: CGFloat?, content: () -> Content)](glasseffectcontainer/init(spacing:content:).md)
+- [init(spacing: CGFloat?, content: () -> Content)](./glasseffectcontainer/init%28spacing,content%29.md)
   Creates a glass effect container with the provided spacing, extracting glass shapes from the provided content.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](./view.md)
 
 ## See Also
 
-- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+### Styling views with Liquid Glass
+- [Applying Liquid Glass to custom views](./applying-liquid-glass-to-custom-views.md)
   Configure, combine, and morph views using Liquid Glass effects.
-- [Landmarks: Building an app with Liquid Glass](landmarks-building-an-app-with-liquid-glass.md)
+- [Landmarks: Building an app with Liquid Glass](./landmarks-building-an-app-with-liquid-glass.md)
   Enhance your app experience with system-provided and custom Liquid Glass.
-- [func glassEffect(Glass, in: some Shape) -> some View](view/glasseffect(_:in:).md)
+- [func glassEffect(Glass, in: some Shape) -> some View](./view/glasseffect%28_,in%29.md)
   Applies the Liquid Glass effect to a view.
-- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](view/glasseffectid(_:in:).md)
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](./view/glasseffectid%28_,in%29.md)
   Associates an identity value to Liquid Glass effects defined within this view.
-- [func glassEffectTransition(GlassEffectTransition) -> some View](view/glasseffecttransition(_:).md)
+- [func glassEffectTransition(GlassEffectTransition) -> some View](./view/glasseffecttransition%28_%29.md)
   Associates a glass effect transition with any glass effects defined within this view.
-- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](view/glasseffectunion(id:namespace:).md)
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](./view/glasseffectunion%28id,namespace%29.md)
   Associates any Liquid Glass effects defined within this view to a union with the provided identifier.
-- [func interactive(Bool) -> Glass](glass/interactive(_:).md)
+- [func interactive(Bool) -> Glass](./glass/interactive%28_%29.md)
   Returns a copy of the structure configured to be interactive.
-- [struct GlassEffectTransition](glasseffecttransition.md)
+- [struct GlassEffectTransition](./glasseffecttransition.md)
   A structure that describes changes to apply when a glass effect is added or removed from the view hierarchy.
-- [struct GlassButtonStyle](glassbuttonstyle.md)
+- [struct GlassButtonStyle](./glassbuttonstyle.md)
   A button style that applies glass border artwork based on the button’s context.
-- [struct GlassProminentButtonStyle](glassprominentbuttonstyle.md)
+- [struct GlassProminentButtonStyle](./glassprominentbuttonstyle.md)
   A button style that applies prominent glass border artwork based on the button’s context.
-- [struct DefaultGlassEffectShape](defaultglasseffectshape.md)
+- [struct DefaultGlassEffectShape](./defaultglasseffectshape.md)
   The default shape applied by glass effects, a capsule.
 
 

@@ -1,7 +1,8 @@
 # strengthScale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A multiplier that scales the strength of the effect.
 

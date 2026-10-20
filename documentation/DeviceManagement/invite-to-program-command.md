@@ -1,7 +1,8 @@
 # Invite To Program
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Invite a user to join the Volume Purchase Program (VPP).
 
@@ -19,7 +20,7 @@ The command doesn’t work with Account Driven enrollments.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -29,7 +30,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowAppInstallation |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -75,9 +76,9 @@ Refer to the following sections to determine supported channels and requirements
 ## Topics
 
 ### Commands and responses
-- [object InviteToProgramCommand](invitetoprogramcommand.md)
+- [object InviteToProgramCommand](./invitetoprogramcommand.md)
   The command to invite a user to join the Volume Purchase Program (VPP).
-- [object InviteToProgramResponse](invitetoprogramresponse.md)
+- [object InviteToProgramResponse](./invitetoprogramresponse.md)
   A response from the device after it processes the command to invite a user to join the Volume Purchase Program (VPP).
 
 ## Endpoint
@@ -86,11 +87,19 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `InviteToProgramCommand`
+
 The request object the server returns for the Invite To Program Command.
+
+## Responses
+
+- `200` OK (`InviteToProgramResponse`, `application/xml`): The response object the system returns for the Invite To Program Command.
 
 ## See Also
 
-- [Account Configuration](account-configuration-command.md)
+### Accounts
+- [Account Configuration](./account-configuration-command.md)
   Create and configure a local administrator account on a device.
 
 

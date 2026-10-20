@@ -1,47 +1,49 @@
 # kIOPCIStatusCapabilities
 
 **Framework**: PCIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The bit that indicates the presence of an extended capability list item.
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOPCIStatusCapabilities
 ```
 
 ## See Also
 
-- [kIOPCIStatusInterrupt](kiopcistatusinterrupt.md)
+### Registers
+- [kIOPCIStatusInterrupt](./kiopcistatusinterrupt.md)
   The bit that contains the interrupt status.
-- [kIOPCIStatusPCI66](kiopcistatuspci66.md)
+- [kIOPCIStatusPCI66](./kiopcistatuspci66.md)
   The bit that indicates the device is capable of 66 MHz operation.
-- [kIOPCIStatusUDF](kiopcistatusudf.md)
+- [kIOPCIStatusUDF](./kiopcistatusudf.md)
   The bit that indicates the status of UDF support.
-- [kIOPCIStatusFastBack2Back](kiopcistatusfastback2back.md)
+- [kIOPCIStatusFastBack2Back](./kiopcistatusfastback2back.md)
   The bit that indicates whether the device is capable of fast back-to-back transactions.
-- [kIOPCIStatusTargetAbortCapable](kiopcistatustargetabortcapable.md)
+- [kIOPCIStatusTargetAbortCapable](./kiopcistatustargetabortcapable.md)
   The bit that indicates whether a function completed a posted or non-posted request as a completer abort error.
-- [kIOPCIStatusTargetAbortActive](kiopcistatustargetabortactive.md)
+- [kIOPCIStatusTargetAbortActive](./kiopcistatustargetabortactive.md)
   The bit that indicates whether a requester received a completion with a completer abort completion status.
-- [kIOPCIStatusMasterAbortActive](kiopcistatusmasterabortactive.md)
+- [kIOPCIStatusMasterAbortActive](./kiopcistatusmasterabortactive.md)
   The bit that indicates whether a requester received a completion with an unsupported request completion status
-- [kIOPCIStatusSERRActive](kiopcistatusserractive.md)
+- [kIOPCIStatusSERRActive](./kiopcistatusserractive.md)
   The bit that indicates whether a function sent a fatal or nonfatal error message and set the SERR enable bit in the command register.
-- [kIOPCIStatusParityErrActive](kiopcistatusparityerractive.md)
+- [kIOPCIStatusParityErrActive](./kiopcistatusparityerractive.md)
   The bit that indicates whether a function received a poisoned transaction-layer packet.
-- [kIOPCIStatusDevSel0](kiopcistatusdevsel0.md)
+- [kIOPCIStatusDevSel0](./kiopcistatusdevsel0.md)
   The DEVSEL timing status is set to 0.
-- [kIOPCIStatusDevSel1](kiopcistatusdevsel1.md)
+- [kIOPCIStatusDevSel1](./kiopcistatusdevsel1.md)
   The DEVSEL timing status is set to 1.
-- [kIOPCIStatusDevSel2](kiopcistatusdevsel2.md)
+- [kIOPCIStatusDevSel2](./kiopcistatusdevsel2.md)
   The DEVSEL timing status is set to 2.
-- [kIOPCIStatusDevSel3](kiopcistatusdevsel3.md)
+- [kIOPCIStatusDevSel3](./kiopcistatusdevsel3.md)
   The DEVSEL timing status is set to 3.
 
 

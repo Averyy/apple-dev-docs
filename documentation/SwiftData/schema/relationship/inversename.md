@@ -1,7 +1,8 @@
 # inverseName
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.0+
@@ -21,13 +22,14 @@ final var inverseName: String?
 
 ## See Also
 
-- [var keypath: AnyKeyPath?](schema/relationship/keypath.md)
-- [var destination: String](schema/relationship/destination.md)
-- [var inverseKeyPath: AnyKeyPath?](schema/relationship/inversekeypath.md)
-- [var deleteRule: Schema.Relationship.DeleteRule](schema/relationship/deleterule-swift.property.md)
-- [Schema.Relationship.DeleteRule](schema/relationship/deleterule-swift.enum.md)
+### Managing the configuration
+- [var keypath: AnyKeyPath?](./keypath.md)
+- [var destination: String](./destination.md)
+- [var inverseKeyPath: AnyKeyPath?](./inversekeypath.md)
+- [var deleteRule: Schema.Relationship.DeleteRule](./deleterule-swift.property.md)
+- [Schema.Relationship.DeleteRule](./deleterule-swift.enum.md)
   Describes the rule to apply when deleting a model containing references to other models.
-- [var isToOneRelationship: Bool](schema/relationship/istoonerelationship.md)
+- [var isToOneRelationship: Bool](./istoonerelationship.md)
 
 
 ---

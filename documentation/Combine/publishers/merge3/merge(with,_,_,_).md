@@ -1,0 +1,33 @@
+# merge(with:_:_:_:)
+
+**Framework**: Combine  
+**Kind**: method  
+**Role**: Instance Method
+
+**Availability**:
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS 1.0+
+- watchOS 6.0+
+
+## Declaration
+
+```swift
+func merge<Z, Y, X, W>(with z: Z, _ y: Y, _ x: X, _ w: W) -> Publishers.Merge7<A, B, C, Z, Y, X, W> where Z : Publisher, Y : Publisher, X : Publisher, W : Publisher, C.Failure == Z.Failure, C.Output == Z.Output, Z.Failure == Y.Failure, Z.Output == Y.Output, Y.Failure == X.Failure, Y.Output == X.Output, X.Failure == W.Failure, X.Output == W.Output
+```
+
+## See Also
+
+### Merging elements
+- [func merge<P>(with: P) -> Publishers.Merge4<A, B, C, P>](./merge%28with%29.md)
+- [func merge<Z, Y>(with: Z, Y) -> Publishers.Merge5<A, B, C, Z, Y>](./merge%28with,_%29.md)
+- [func merge<Z, Y, X>(with: Z, Y, X) -> Publishers.Merge6<A, B, C, Z, Y, X>](./merge%28with,_,_%29.md)
+- [func merge<Z, Y, X, W, V>(with: Z, Y, X, W, V) -> Publishers.Merge8<A, B, C, Z, Y, X, W, V>](./merge%28with,_,_,_,_%29.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/combine/publishers/merge3/merge(with:_:_:_:))*

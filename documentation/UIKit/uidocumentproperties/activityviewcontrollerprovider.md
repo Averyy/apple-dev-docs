@@ -1,7 +1,8 @@
 # activityViewControllerProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that provides an activity view controller for sharing the document.
 
@@ -17,9 +18,13 @@ A closure that provides an activity view controller for sharing the document.
 var activityViewControllerProvider: (() -> UIActivityViewController)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIActivityViewController * (^activityViewControllerProvider)();
+```
+
 #### Discussion
 
-To support sharing, assign a closure that returns a [`UIActivityViewController`](uiactivityviewcontroller.md) that you configure to share the document. When you set this property, a person can share the document by tapping the share button in the navigation item’s title menu.
+To support sharing, assign a closure that returns a [`UIActivityViewController`](../uiactivityviewcontroller.md) that you configure to share the document. When you set this property, a person can share the document by tapping the share button in the navigation item’s title menu.
 
 
 ---

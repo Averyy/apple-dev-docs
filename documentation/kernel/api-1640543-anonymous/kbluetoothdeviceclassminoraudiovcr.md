@@ -1,14 +1,15 @@
 # kBluetoothDeviceClassMinorAudioVCR
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothDeviceClassMinorAudioVCR = 0x0b
 ```
 

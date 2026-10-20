@@ -1,7 +1,8 @@
 # isRangeContiguous(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns true if the given range refers to a contiguous block of memory.
 

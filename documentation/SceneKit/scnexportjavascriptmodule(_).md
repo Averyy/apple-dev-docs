@@ -1,18 +1,19 @@
 # SCNExportJavaScriptModule(_:)
 
 **Framework**: SceneKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Makes SceneKit classes and global constants available to the specified JavaScript context.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,11 +21,15 @@ Makes SceneKit classes and global constants available to the specified JavaScrip
 func SCNExportJavaScriptModule(_ context: JSContext)
 ```
 
+```c
+extern void SCNExportJavaScriptModule(JSContext *context);
+```
+
 #### Discussion
 
 By controlling SceneKit using JavaScript code supplied at run time, you can enable rapid development for parts of your game or app. For example, a designer can easily experiment with visual effects or game-character behaviors without needing to compile and deploy your complete Xcode project.
 
-This function exports all SceneKit classes and global constants, and all methods and properties on those classes, to JavaScript using the rules defined in the [`JSExport`](https://developer.apple.com/documentation/javascriptcore/jsexport) protocol. For example, the JavaScript code below performs various operations on a SceneKit node:
+This function exports all SceneKit classes and global constants, and all methods and properties on those classes, to JavaScript using the rules defined in the [`JSExport`](../JavaScriptCore/jsexport.md) protocol. For example, the JavaScript code below performs various operations on a SceneKit node:
 
 ```javascript
 var aNode = SCNNode.node();
@@ -48,13 +53,13 @@ SceneKit also exports the following special JavaScript objects and functions:
 
 | Objective-C / Swift class | JavaScript constructor |
 | --- | --- |
-| [`NSColor`](https://developer.apple.com/documentation/appkit/nscolor) / [`UIColor`](https://developer.apple.com/documentation/uikit/uicolor) | `SCNColor.color(r,g,b,a)` |
-| [`NSImage`](https://developer.apple.com/documentation/appkit/nsimage) / [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) | `SCNImage.imageWithURL(aURL)` |
+| [`NSColor`](../AppKit/nscolor.md) / [`UIColor`](../UIKit/uicolor.md) | `SCNColor.color(r,g,b,a)` |
+| [`NSImage`](../AppKit/nsimage.md) / [`UIImage`](../UIKit/uiimage.md) | `SCNImage.imageWithURL(aURL)` |
 |  | `SCNImage.imageWithPath(aPath)` |
-| [`CABasicAnimation`](https://developer.apple.com/documentation/quartzcore/cabasicanimation) | `CABasicAnimation.animationWithKeyPath(aPath)` |
-| [`CAKeyframeAnimation`](https://developer.apple.com/documentation/quartzcore/cakeyframeanimation) | `CAKeyframeAnimation.animationWithKeyPath(aPath)` |
-| [`CAAnimationGroup`](https://developer.apple.com/documentation/quartzcore/caanimationgroup) | `new CAAnimationGroup()` |
-| [`CAMediaTimingFunction`](https://developer.apple.com/documentation/quartzcore/camediatimingfunction) | `CAMediaTimingFunction.functionWithName(name)` |
+| [`CABasicAnimation`](../QuartzCore/cabasicanimation.md) | `CABasicAnimation.animationWithKeyPath(aPath)` |
+| [`CAKeyframeAnimation`](../QuartzCore/cakeyframeanimation.md) | `CAKeyframeAnimation.animationWithKeyPath(aPath)` |
+| [`CAAnimationGroup`](../QuartzCore/caanimationgroup.md) | `new CAAnimationGroup()` |
+| [`CAMediaTimingFunction`](../QuartzCore/camediatimingfunction.md) | `CAMediaTimingFunction.functionWithName(name)` |
 
 
 ---

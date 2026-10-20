@@ -1,7 +1,8 @@
 # tls_protocol_version_t.TLSv13
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The TLS 1.3 protocol.
 
@@ -18,6 +19,10 @@ The TLS 1.3 protocol.
 
 ```swift
 case TLSv13
+```
+
+```c
+tls_protocol_version_TLSv13
 ```
 
 

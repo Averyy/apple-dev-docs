@@ -1,7 +1,8 @@
 # errSecInvalidKeyUsageForPolicy
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key usage is not valid for the specified policy.
 
@@ -18,6 +19,10 @@ The key usage is not valid for the specified policy.
 
 ```swift
 var errSecInvalidKeyUsageForPolicy: OSStatus { get }
+```
+
+```c
+errSecInvalidKeyUsageForPolicy
 ```
 
 

@@ -1,7 +1,8 @@
 # encodePresent(commandBuffer:)
 
 **Framework**: Compositor Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes a notification event to the specified command buffer to present the drawable’s content onscreen.
 
@@ -15,13 +16,17 @@ Encodes a notification event to the specified command buffer to present the draw
 func encodePresent(commandBuffer command_buffer: any MTLCommandBuffer)
 ```
 
+```c
+void cp_drawable_encode_present(cp_drawable_t drawable, id<MTLCommandBuffer>command_buffer);
+```
+
 ## Mentions
 
-- [Drawing fully immersive content using Metal](drawing-fully-immersive-content-using-metal.md)
+- [Drawing fully immersive content using Metal](../../drawing-fully-immersive-content-using-metal.md)
 
 #### Discussion
 
-Call this function as the last step before committing the specified command buffer. Specifically, call it after you finish encoding all the work required to render the frame, and immediately before you call the command buffer’s [`commit()`](https://developer.apple.com/documentation/metal/mtlcommandbuffer/commit()) method. The function adds a presentation event to the buffer that causes the compositor to display your frame.
+Call this function as the last step before committing the specified command buffer. Specifically, call it after you finish encoding all the work required to render the frame, and immediately before you call the command buffer’s [`commit()`](../../../Metal/mtlcommandbuffer/commit%28%29.md) method. The function adds a presentation event to the buffer that causes the compositor to display your frame.
 
 ## Parameters
 

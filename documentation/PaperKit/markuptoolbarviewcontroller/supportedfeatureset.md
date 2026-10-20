@@ -1,7 +1,8 @@
 # supportedFeatureSet
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The supported features of this toolbar.
 
@@ -18,7 +19,8 @@ The supported features of this toolbar.
 
 ## See Also
 
-- [var delegate: (any MarkupToolbarViewController.Delegate)?](markuptoolbarviewcontroller/delegate-swift.property.md)
+### Configuring the toolbar
+- [var delegate: (any MarkupToolbarViewController.Delegate)?](./delegate-swift.property.md)
   The delegate for responding to user actions.
 
 

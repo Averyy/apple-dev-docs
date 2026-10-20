@@ -1,7 +1,8 @@
 # Certainty
 
 **Framework**: WeatherKit REST API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 How likely the event is to occur.
 
@@ -10,9 +11,17 @@ How likely the event is to occur.
 
 ## Declaration
 
-```swift
+```
 string Certainty
 ```
+
+## Possible Values
+
+- `observed`
+- `likely`
+- `possible`
+- `unlikely`
+- `unknown`
 
 #### Possible Values
 
@@ -24,7 +33,8 @@ string Certainty
 
 ## See Also
 
-- [object EventText](eventtext.md)
+### Obtaining event information
+- [object EventText](./eventtext.md)
   The official text describing a severe weather event from the agency.
 
 

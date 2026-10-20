@@ -1,7 +1,8 @@
 # focalLength
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -18,21 +19,22 @@ static let focalLength: SearchableItemAttribute
 
 ## See Also
 
-- [static let isoSpeed: SearchableItemAttribute](searchableitemattribute/isospeed.md)
-- [static let acquisitionMake: SearchableItemAttribute](searchableitemattribute/acquisitionmake.md)
-- [static let acquisitionModel: SearchableItemAttribute](searchableitemattribute/acquisitionmodel.md)
-- [static let aperture: SearchableItemAttribute](searchableitemattribute/aperture.md)
-- [static let bitsPerSample: SearchableItemAttribute](searchableitemattribute/bitspersample.md)
-- [static let cameraOwner: SearchableItemAttribute](searchableitemattribute/cameraowner.md)
-- [static let colorSpace: SearchableItemAttribute](searchableitemattribute/colorspace.md)
-- [static let flashOn: SearchableItemAttribute](searchableitemattribute/flashon.md)
-- [static let focalLength35mmEquivalent: SearchableItemAttribute](searchableitemattribute/focallength35mmequivalent.md)
-- [static let layerNames: SearchableItemAttribute](searchableitemattribute/layernames.md)
-- [static let lensModel: SearchableItemAttribute](searchableitemattribute/lensmodel.md)
-- [static let orientation: SearchableItemAttribute](searchableitemattribute/orientation.md)
-- [static let pixelCount: SearchableItemAttribute](searchableitemattribute/pixelcount.md)
-- [static let pixelHeight: SearchableItemAttribute](searchableitemattribute/pixelheight.md)
-- [static let pixelWidth: SearchableItemAttribute](searchableitemattribute/pixelwidth.md)
+### Describing images
+- [static let isoSpeed: SearchableItemAttribute](./isospeed.md)
+- [static let acquisitionMake: SearchableItemAttribute](./acquisitionmake.md)
+- [static let acquisitionModel: SearchableItemAttribute](./acquisitionmodel.md)
+- [static let aperture: SearchableItemAttribute](./aperture.md)
+- [static let bitsPerSample: SearchableItemAttribute](./bitspersample.md)
+- [static let cameraOwner: SearchableItemAttribute](./cameraowner.md)
+- [static let colorSpace: SearchableItemAttribute](./colorspace.md)
+- [static let flashOn: SearchableItemAttribute](./flashon.md)
+- [static let focalLength35mmEquivalent: SearchableItemAttribute](./focallength35mmequivalent.md)
+- [static let layerNames: SearchableItemAttribute](./layernames.md)
+- [static let lensModel: SearchableItemAttribute](./lensmodel.md)
+- [static let orientation: SearchableItemAttribute](./orientation.md)
+- [static let pixelCount: SearchableItemAttribute](./pixelcount.md)
+- [static let pixelHeight: SearchableItemAttribute](./pixelheight.md)
+- [static let pixelWidth: SearchableItemAttribute](./pixelwidth.md)
 
 
 ---

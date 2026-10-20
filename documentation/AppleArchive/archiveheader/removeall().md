@@ -1,7 +1,8 @@
 # removeAll()
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -20,8 +21,9 @@ func removeAll()
 
 ## See Also
 
-- [func append(ArchiveHeader.Field)](archiveheader/append(_:).md)
-- [func remove(at: Int) -> ArchiveHeader.Field](archiveheader/remove(at:).md)
+### Collection Requirements
+- [func append(ArchiveHeader.Field)](./append%28_%29.md)
+- [func remove(at: Int) -> ArchiveHeader.Field](./remove%28at%29.md)
 
 
 ---

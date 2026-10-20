@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Starts formatting the file system with the given options.
@@ -15,9 +16,13 @@ Starts formatting the file system with the given options.
 func startFormat(task: FSTask, options: FSTaskOptions) throws -> Progress
 ```
 
+```objc
+- (NSProgress *) startFormatWithTask:(FSTask *) task options:(FSTaskOptions *) options error:(NSError **) error;
+```
+
 #### Return Value
 
-An [`Progress`](https://developer.apple.com/documentation/foundation/progress) object that you use to update progress as the format operation progresses. Return `nil` if starting to format the file system encountered an error.
+An [`Progress`](../../Foundation/progress.md) object that you use to update progress as the format operation progresses. Return `nil` if starting to format the file system encountered an error.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # specular
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional specular texture for the decal.
 

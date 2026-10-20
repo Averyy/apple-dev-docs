@@ -1,7 +1,8 @@
 # greedy(priority:minimumSpacing:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Use a greedy algorithm. Display a label if it’s not overlapping with other labels.
 

@@ -1,7 +1,8 @@
 # max()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The greatest element in the vector.
 
@@ -19,6 +20,8 @@ The greatest element in the vector.
 ```swift
 func max() -> Self.Scalar
 ```
+
+Available when `Scalar` conforms to `Comparable`.
 
 
 ---

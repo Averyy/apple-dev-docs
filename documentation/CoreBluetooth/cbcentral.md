@@ -1,7 +1,8 @@
 # CBCentral
 
 **Framework**: Core Bluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A remote device connected to a local app, which is acting as a peripheral.
 
@@ -20,34 +21,39 @@ A remote device connected to a local app, which is acting as a peripheral.
 class CBCentral
 ```
 
+```objc
+@interface CBCentral : CBPeer
+```
+
 #### Overview
 
-The [`CBCentral`](cbcentral.md) class represents remote central devices (or *centrals*) that have connected to an app implementing the peripheral role on a local device. Remote centrals use universally unique identifiers (UUIDs), represented by [`NSUUID`](https://developer.apple.com/documentation/foundation/nsuuid) objects, to identify themselves.
+The [`CBCentral`](./cbcentral.md) class represents remote central devices (or *centrals*) that have connected to an app implementing the peripheral role on a local device. Remote centrals use universally unique identifiers (UUIDs), represented by [`NSUUID`](../Foundation/nsuuid.md) objects, to identify themselves.
 
 ## Topics
 
 ### Identifying a Remote Central
-- [var maximumUpdateValueLength: Int](cbcentral/maximumupdatevaluelength.md)
+- [var maximumUpdateValueLength: Int](./cbcentral/maximumupdatevaluelength.md)
   The maximum amount of data, in bytes, that the central can receive in a single notification or indication.
 
 ## Relationships
 
 ### Inherits From
-- [CBPeer](cbpeer.md)
+- [CBPeer](./cbpeer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CBCentralManager](cbcentralmanager.md)
+### Centrals
+- [class CBCentralManager](./cbcentralmanager.md)
   An object that scans for, discovers, connects to, and manages peripherals.
-- [protocol CBCentralManagerDelegate](cbcentralmanagerdelegate.md)
+- [protocol CBCentralManagerDelegate](./cbcentralmanagerdelegate.md)
   A protocol that provides updates for the discovery and management of peripheral devices.
 
 

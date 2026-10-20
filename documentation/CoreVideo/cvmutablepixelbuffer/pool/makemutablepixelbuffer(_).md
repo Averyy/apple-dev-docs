@@ -1,7 +1,8 @@
 # makeMutablePixelBuffer(_:)
 
 **Framework**: Core Video  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This function creates a new CVMutablePixelBuffer using the pixel buffer attributes specified during pool creation.
 
@@ -22,7 +23,7 @@ final func makeMutablePixelBuffer(_ attributes: CVMutablePixelBuffer.Pool.Alloca
 
 #### Discussion
 
-- Returns A new mutable pixel buffer created with creationAttributes passed to [`init(pixelBufferAttributes:configuration:)`](cvmutablepixelbuffer/pool/init(pixelbufferattributes:configuration:).md)
+- Returns A new mutable pixel buffer created with creationAttributes passed to [`init(pixelBufferAttributes:configuration:)`](./init%28pixelbufferattributes,configuration%29.md)
 
 ## Parameters
 

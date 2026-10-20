@@ -1,7 +1,8 @@
 # standard
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Notes that appear when the content displays prominently.
 

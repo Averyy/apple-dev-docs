@@ -1,7 +1,8 @@
 # UINavigationItem.TitleAlignment.leading
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The title is leading-aligned.
 
@@ -16,6 +17,10 @@ The title is leading-aligned.
 
 ```swift
 case leading
+```
+
+```c
+UINavigationItemTitleAlignmentLeading
 ```
 
 

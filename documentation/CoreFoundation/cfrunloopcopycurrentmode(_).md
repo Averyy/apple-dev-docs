@@ -1,18 +1,19 @@
 # CFRunLoopCopyCurrentMode(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the name of the mode in which a given run loop is currently running.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns the name of the mode in which a given run loop is currently running.
 func CFRunLoopCopyCurrentMode(_ rl: CFRunLoop!) -> CFRunLoopMode!
 ```
 
+```c
+extern CFRunLoopModeCFRunLoopCopyCurrentMode(CFRunLoopRef rl);
+```
+
 #### Return Value
 
-The mode in which `rl` is currently running; `NULL` if `rl` is not running. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The mode in which `rl` is currently running; `NULL` if `rl` is not running. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
@@ -34,9 +39,10 @@ When run on the current thread’s run loop, the returned value identifies the r
 
 ## See Also
 
-- [func CFRunLoopAddCommonMode(CFRunLoop!, CFRunLoopMode!)](cfrunloopaddcommonmode(_:_:).md)
+### Managing Run Loop Modes
+- [func CFRunLoopAddCommonMode(CFRunLoop!, CFRunLoopMode!)](./cfrunloopaddcommonmode%28_,_%29.md)
   Adds a mode to the set of run loop common modes.
-- [func CFRunLoopCopyAllModes(CFRunLoop!) -> CFArray!](cfrunloopcopyallmodes(_:).md)
+- [func CFRunLoopCopyAllModes(CFRunLoop!) -> CFArray!](./cfrunloopcopyallmodes%28_%29.md)
   Returns an array that contains all the defined modes for a CFRunLoop object.
 
 

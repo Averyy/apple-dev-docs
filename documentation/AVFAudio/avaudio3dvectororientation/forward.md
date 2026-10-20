@@ -1,18 +1,19 @@
 # forward
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The forward vector points in the direction that the listener faces.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,14 @@ The forward vector points in the direction that the listener faces.
 var forward: AVAudio3DVector
 ```
 
+```c
+AVAudio3DVector forward;
+```
+
 ## See Also
 
-- [var up: AVAudio3DVector](avaudio3dvectororientation/up.md)
+### Getting vector orientation properties
+- [var up: AVAudio3DVector](./up.md)
   The up vector is orthogonal to the forward vector and points upward from the listener’s head.
 
 

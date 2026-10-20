@@ -1,7 +1,8 @@
 # stopProxy(with:completionHandler:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stop the network proxy.
 
@@ -15,7 +16,15 @@ Stop the network proxy.
 ## Declaration
 
 ```swift
+func stopProxy(with reason: NEProviderStopReason, completionHandler: @escaping @Sendable () -> Void)
+```
+
+```swift
 func stopProxy(with reason: NEProviderStopReason) async
+```
+
+```objc
+- (void) stopProxyWithReason:(NEProviderStopReason) reason completionHandler:(void (^)()) completionHandler;
 ```
 
 #### Discussion
@@ -28,14 +37,15 @@ Do not use this method to stop the proxy from the App Proxy Provider. Use `cance
 
 ## Parameters
 
-- `reason`: A `NEProviderStopReason` code indicating why the proxy is being stopped. For a list of possible codes, see [`NEProvider`](neprovider.md).
+- `reason`: A `NEProviderStopReason` code indicating why the proxy is being stopped. For a list of possible codes, see [`NEProvider`](../neprovider.md).
 - `completionHandler`: A block that must be executed when the proxy is fully stopped.
 
 ## See Also
 
-- [func startProxy(options: [String : Any]?, completionHandler: ((any Error)?) -> Void)](neappproxyprovider/startproxy(options:completionhandler:).md)
+### Managing the app proxy life cycle
+- [func startProxy(options: [String : Any]?, completionHandler: ((any Error)?) -> Void)](./startproxy%28options,completionhandler%29.md)
   Start the network proxy.
-- [func cancelProxyWithError((any Error)?)](neappproxyprovider/cancelproxywitherror(_:).md)
+- [func cancelProxyWithError((any Error)?)](./cancelproxywitherror%28_%29.md)
   Stop the network proxy from the App Proxy Provider.
 
 

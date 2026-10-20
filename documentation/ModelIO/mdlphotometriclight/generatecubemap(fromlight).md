@@ -1,7 +1,8 @@
 # generateCubemap(fromLight:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a cube map texture from the light’s photometry data.
 
@@ -19,9 +20,13 @@ Generates a cube map texture from the light’s photometry data.
 func generateCubemap(fromLight textureSize: Int)
 ```
 
+```objc
+- (void) generateCubemapFromLight:(NSUInteger) textureSize;
+```
+
 #### Discussion
 
-After generating a texture, use the [`lightCubeMap`](mdlphotometriclight/lightcubemap.md) property to access it. In this texture, each texel represents the light’s intensity in the direction from the cube’s center to the texel’s position on the cube.
+After generating a texture, use the [`lightCubeMap`](./lightcubemap.md) property to access it. In this texture, each texel represents the light’s intensity in the direction from the cube’s center to the texel’s position on the cube.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ After generating a texture, use the [`lightCubeMap`](mdlphotometriclight/lightcu
 
 ## See Also
 
-- [var lightCubeMap: MDLTexture?](mdlphotometriclight/lightcubemap.md)
+### Interpreting the Light Web as a Cube Texture
+- [var lightCubeMap: MDLTexture?](./lightcubemap.md)
   A cube map texture describing the light’s intensity in all directions.
 
 

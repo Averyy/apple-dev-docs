@@ -1,34 +1,38 @@
 # GameCenterActivityVersionReleaseResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a single release record for a Game Center activity version.
 
 **Availability**:
-- App Store Connect API 4.0+
+- App Store Connect API 4.0+ - Deprecated in 4.3
+
+> **Deprecated**: This object is deprecated.
 
 ## Declaration
 
-```swift
+```
 object GameCenterActivityVersionReleaseResponse
 ```
 
 ## Properties
 
-- `data` (GameCenterActivityVersionRelease) *(required)*
+- `data` (GameCenterActivityVersionRelease) *(required)* *(deprecated)*
 - `included` ([GameCenterActivityVersion])
 - `links` (DocumentLinks) *(required)*
 
 ## See Also
 
-- [object GameCenterActivityVersionRelease](gamecenteractivityversionrelease.md)
+### Objects
+- [object GameCenterActivityVersionRelease](./gamecenteractivityversionrelease.md)
   A record indicating that a version of a Game Center activity has been released to players.
-- [object GameCenterActivityVersionReleaseCreateRequest](gamecenteractivityversionreleasecreaterequest.md)
+- [object GameCenterActivityVersionReleaseCreateRequest](./gamecenteractivityversionreleasecreaterequest.md)
   The request body for releasing a Game Center activity version to players.
-- [object GameCenterActivityVersionReleasesResponse](gamecenteractivityversionreleasesresponse.md)
+- [object GameCenterActivityVersionReleasesResponse](./gamecenteractivityversionreleasesresponse.md)
   A response containing a list of release records for a Game Center activity version.
-- [object GameCenterActivityVersionResponse](gamecenteractivityversionresponse.md)
+- [object GameCenterActivityVersionResponse](./gamecenteractivityversionresponse.md)
   A response containing a single version of a Game Center activity.
 
 

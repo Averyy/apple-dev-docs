@@ -1,7 +1,8 @@
 # UIConfigurationTextAttributesTransformer
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines a text transformation that can affect the visual appearance of a string.
 
@@ -10,7 +11,7 @@ Defines a text transformation that can affect the visual appearance of a string.
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -34,13 +35,13 @@ let transformer = UIConfigurationTextAttributesTransformer { incoming in
 ## Topics
 
 ### Creating a text attributes transformer
-- [init((AttributeContainer) -> AttributeContainer)](uiconfigurationtextattributestransformer-swift.struct/init(_:).md)
+- [init((AttributeContainer) -> AttributeContainer)](./uiconfigurationtextattributestransformer-swift.struct/init%28_%29.md)
   Creates a new text attributes transformer.
 ### Defining a text transformation
-- [let transform: (AttributeContainer) -> AttributeContainer](uiconfigurationtextattributestransformer-swift.struct/transform.md)
+- [let transform: (AttributeContainer) -> AttributeContainer](./uiconfigurationtextattributestransformer-swift.struct/transform.md)
   A closure that defines the text transformation.
 ### Calling a text transformer
-- [func callAsFunction(AttributeContainer) -> AttributeContainer](uiconfigurationtextattributestransformer-swift.struct/callasfunction(_:).md)
+- [func callAsFunction(AttributeContainer) -> AttributeContainer](./uiconfigurationtextattributestransformer-swift.struct/callasfunction%28_%29.md)
   Calls the transform closure of the text attributes transformer.
 
 

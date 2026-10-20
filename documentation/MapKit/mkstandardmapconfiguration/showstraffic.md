@@ -1,7 +1,8 @@
 # showsTraffic
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether the map displays traffic conditions.
 
@@ -20,13 +21,18 @@ A Boolean value that controls whether the map displays traffic conditions.
 var showsTraffic: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL showsTraffic;
+```
+
 ## See Also
 
-- [var emphasisStyle: MKStandardMapConfiguration.EmphasisStyle](mkstandardmapconfiguration/emphasisstyle-swift.property.md)
+### Customizing the map display
+- [var emphasisStyle: MKStandardMapConfiguration.EmphasisStyle](./emphasisstyle-swift.property.md)
   The value that indicates how the framework emphasizes map features.
-- [MKStandardMapConfiguration.EmphasisStyle](mkstandardmapconfiguration/emphasisstyle-swift.enum.md)
+- [MKStandardMapConfiguration.EmphasisStyle](./emphasisstyle-swift.enum.md)
   Values that control how the framework emphasizes map features.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mkstandardmapconfiguration/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./pointofinterestfilter.md)
   The filter used to determine the points of interest shown on the map.
 
 

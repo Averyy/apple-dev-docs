@@ -1,7 +1,8 @@
 # SecCreateSharedWebCredentialPassword()
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a randomly generated password.
 
@@ -16,6 +17,10 @@ Returns a randomly generated password.
 
 ```swift
 func SecCreateSharedWebCredentialPassword() -> CFString?
+```
+
+```c
+CFStringRefSecCreateSharedWebCredentialPassword();
 ```
 
 #### Return Value

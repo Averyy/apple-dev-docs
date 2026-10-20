@@ -1,7 +1,8 @@
 # MPSGraphPoolingReturnIndicesMode.globalFlatten1D
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returns indices flattened in inner most (last) dimension.
 
@@ -17,6 +18,10 @@ Returns indices flattened in inner most (last) dimension.
 
 ```swift
 case globalFlatten1D
+```
+
+```c
+MPSGraphPoolingReturnIndicesGlobalFlatten1D
 ```
 
 

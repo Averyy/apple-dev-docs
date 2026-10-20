@@ -1,7 +1,8 @@
 # SecItemAttr.scriptCodeItemAttr
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Identifies the script code attribute.
 
@@ -13,6 +14,10 @@ Identifies the script code attribute.
 
 ```swift
 case scriptCodeItemAttr
+```
+
+```c
+kSecScriptCodeItemAttr
 ```
 
 #### Discussion

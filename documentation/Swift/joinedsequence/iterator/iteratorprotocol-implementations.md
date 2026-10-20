@@ -1,14 +1,15 @@
 # IteratorProtocol Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func next() -> JoinedSequence<Base>.Iterator.Element?](joinedsequence/iterator/next.md)
+- [func next() -> JoinedSequence<Base>.Iterator.Element?](./next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 ### Type Aliases
-- [JoinedSequence.Iterator.Element](joinedsequence/iterator/element.md)
+- [JoinedSequence.Iterator.Element](./element.md)
   The type of element traversed by the iterator.
 
 

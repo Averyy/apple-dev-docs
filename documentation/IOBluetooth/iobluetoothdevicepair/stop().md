@@ -1,17 +1,22 @@
 # stop()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the current pairing. Removes the delegate and disconnects if device was connected.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func stop()
+```
+
+```objc
+- (void) stop;
 ```
 
 

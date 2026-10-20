@@ -1,7 +1,8 @@
 # UITextFormattingCoordinator
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that coordinates text formatting using the standard Mac font panel.
 
@@ -19,46 +20,51 @@ An object that coordinates text formatting using the standard Mac font panel.
 class UITextFormattingCoordinator
 ```
 
+```objc
+@interface UITextFormattingCoordinator : NSObject
+```
+
 ## Topics
 
 ### Creating a Text-Formatting Coordinator
-- [convenience init(for: UIWindowScene)](uitextformattingcoordinator/init(for:).md)
+- [convenience init(for: UIWindowScene)](./uitextformattingcoordinator/init%28for%29.md)
   Creates a text-formatting coordinator for the specified window scene.
-- [init(windowScene: UIWindowScene)](uitextformattingcoordinator/init(windowscene:).md)
+- [init(windowScene: UIWindowScene)](./uitextformattingcoordinator/init%28windowscene%29.md)
   Initializes and returns a new text-formatting coordinator for the specified window scene.
 ### Showing the Font Panel
-- [class var isFontPanelVisible: Bool](uitextformattingcoordinator/isfontpanelvisible.md)
+- [class var isFontPanelVisible: Bool](./uitextformattingcoordinator/isfontpanelvisible.md)
   A Boolean value that indicates whether the font panel is visible.
-- [class func toggleFontPanel(Any)](uitextformattingcoordinator/togglefontpanel(_:).md)
+- [class func toggleFontPanel(Any)](./uitextformattingcoordinator/togglefontpanel%28_%29.md)
   Toggles the visibility of the font panel.
 ### Configuring the Font Panel
-- [func setSelectedAttributes([NSAttributedString.Key : Any], isMultiple: Bool)](uitextformattingcoordinator/setselectedattributes(_:ismultiple:).md)
+- [func setSelectedAttributes([NSAttributedString.Key : Any], isMultiple: Bool)](./uitextformattingcoordinator/setselectedattributes%28_,ismultiple%29.md)
   Configures the initial display state of the font panel with the attributes of the selected text.
 ### Applying Updated Text Attributes
-- [var delegate: (any UITextFormattingCoordinatorDelegate)?](uitextformattingcoordinator/delegate.md)
+- [var delegate: (any UITextFormattingCoordinatorDelegate)?](./uitextformattingcoordinator/delegate.md)
   The delegate of the text-formatting coordinator.
-- [protocol UITextFormattingCoordinatorDelegate](uitextformattingcoordinatordelegate.md)
+- [protocol UITextFormattingCoordinatorDelegate](./uitextformattingcoordinatordelegate.md)
   The methods that delegates of text-formatting coordinators implement to apply font panel settings to the currently selected text.
 ### Initializers
-- [convenience init(forWindowScene: UIWindowScene)](uitextformattingcoordinator/init(forwindowscene:).md)
+- [convenience init(forWindowScene: UIWindowScene)](./uitextformattingcoordinator/init%28forwindowscene%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [UIFontPickerViewControllerDelegate](uifontpickerviewcontrollerdelegate.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [UIFontPickerViewControllerDelegate](./uifontpickerviewcontrollerdelegate.md)
 
 ## See Also
 
-- [typealias UITextAttributesConversionHandler](uitextattributesconversionhandler.md)
+### Text formatting
+- [typealias UITextAttributesConversionHandler](./uitextattributesconversionhandler.md)
   A handler for updating text with current font panel settings.
 
 

@@ -1,7 +1,8 @@
 # Invocation.Params
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The parameters of a client’s request.
 
@@ -10,13 +11,13 @@ The parameters of a client’s request.
 
 ## Declaration
 
-```swift
+```
 object Invocation.Params
 ```
 
 #### Discussion
 
-Objects that inherit from [`Invocation`](invocation.md) define their own parameters.
+Objects that inherit from [`Invocation`](../invocation.md) define their own parameters.
 
 
 ---

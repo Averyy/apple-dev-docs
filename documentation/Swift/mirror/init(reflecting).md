@@ -1,7 +1,8 @@
 # init(reflecting:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mirror that reflects on the given instance.
 

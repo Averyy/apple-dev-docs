@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateSSInactiveQuietTimeout
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The SuperSpeed inactive quiet timeout.
 
@@ -10,7 +11,7 @@ The SuperSpeed inactive quiet timeout.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateSSInactiveQuietTimeout = 12
 ```
 

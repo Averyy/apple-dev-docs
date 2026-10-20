@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The annotation type.
@@ -23,13 +24,14 @@ associatedtype Annotation
 
 ## See Also
 
-- [func read(from: URL) throws -> Self.Transformer](supervisedtabularestimator/read(from:).md)
+### Reading and writing
+- [func read(from: URL) throws -> Self.Transformer](./read%28from%29.md)
   Reads the encoded transformer from a file.
-- [func write(Self.Transformer, to: URL, overwrite: Bool) throws](supervisedtabularestimator/write(_:to:overwrite:).md)
+- [func write(Self.Transformer, to: URL, overwrite: Bool) throws](./write%28_,to,overwrite%29.md)
   Writes the encoded transformer to a file.
-- [var annotationColumnID: ColumnID<Self.Annotation>](supervisedtabularestimator/annotationcolumnid.md)
+- [var annotationColumnID: ColumnID<Self.Annotation>](./annotationcolumnid.md)
   The annotation column identifier.
-- [associatedtype Transformer : TabularTransformer](supervisedtabularestimator/transformer.md)
+- [associatedtype Transformer : TabularTransformer](./transformer.md)
   The transformer type created by this estimator.
 
 

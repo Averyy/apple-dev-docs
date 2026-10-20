@@ -1,7 +1,8 @@
 # Playlists
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A resource object that represents a playlist.
 
@@ -10,24 +11,26 @@ A resource object that represents a playlist.
 
 ## Declaration
 
-```swift
+```
 object Playlists
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Playlists.Attributes](playlists/attributes-data.dictionary.md)
+- [object Playlists.Attributes](./playlists/attributes-data.dictionary.md)
   The attributes for a playlist resource.
-- [object Playlists.Relationships](playlists/relationships-data.dictionary.md)
+- [object Playlists.Relationships](./playlists/relationships-data.dictionary.md)
   The relationships for a playlist resource.
-- [object Playlists.Views](playlists/views-data.dictionary.md)
+- [object Playlists.Views](./playlists/views-data.dictionary.md)
   The views for a music video resource.
 
 ## Properties
 
 - `id` (string) *(required)*: The identifier for the playlist.
 - `type` (string) *(required)*: This value is always `playlists`.
+
+  **Allowed Values**: `playlists`
 - `href` (string) *(required)*: The relative location for the playlist resource.
 - `attributes` (Playlists.Attributes): The attributes for the playlist.
 - `relationships` (Playlists.Relationships): The relationships for the playlist.
@@ -35,17 +38,18 @@ object Playlists
 
 ## See Also
 
-- [object PlaylistsResponse](playlistsresponse.md)
+### Handling the Response
+- [object PlaylistsResponse](./playlistsresponse.md)
   The response to a playlists request.
-- [object LibraryPlaylists](libraryplaylists.md)
+- [object LibraryPlaylists](./libraryplaylists.md)
   A resource object that represents a library playlist.
-- [object LibraryPlaylistsResponse](libraryplaylistsresponse.md)
+- [object LibraryPlaylistsResponse](./libraryplaylistsresponse.md)
   The response to a library playlists request.
-- [object LibraryPlaylistsTracksRelationshipResponse](libraryplayliststracksrelationshipresponse.md)
+- [object LibraryPlaylistsTracksRelationshipResponse](./libraryplayliststracksrelationshipresponse.md)
   The response to a library playlists tracks relationship request.
-- [object LibraryPlaylistFolders](libraryplaylistfolders.md)
+- [object LibraryPlaylistFolders](./libraryplaylistfolders.md)
   A resource object that represents a library playlist folder.
-- [object LibraryPlaylistFoldersResponse](libraryplaylistfoldersresponse.md)
+- [object LibraryPlaylistFoldersResponse](./libraryplaylistfoldersresponse.md)
   The response to a library playlist folders request.
 
 

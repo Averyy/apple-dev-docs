@@ -1,7 +1,8 @@
 # certPublicKey
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var certPublicKey: UnsafePointer<cssm_key>!
+```
+
+```c
+const CSSM_KEY * certPublicKey;
 ```
 
 

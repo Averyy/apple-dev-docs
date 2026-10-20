@@ -1,7 +1,8 @@
 # popupViewController
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A view controller that presents a web view loaded with the pop-up page for this action, or `nil` if no popup is specified.
 
@@ -17,17 +18,22 @@ A view controller that presents a web view loaded with the pop-up page for this 
 var popupViewController: UIViewController? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIViewController * popupViewController;
+```
+
 #### Discussion
 
 The view controller adaptively adjusts its presentation style based on where it is presented from, preferring popover.
 
-It contains a web view preloaded with the pop-up page and automatically adjusts its `preferredContentSize` to fit the web view’s content size. The [`presentsPopup`](wkwebextension/action/presentspopup.md) property should be checked to determine the availability of a pop-up before using this property.
+It contains a web view preloaded with the pop-up page and automatically adjusts its `preferredContentSize` to fit the web view’s content size. The [`presentsPopup`](./presentspopup.md) property should be checked to determine the availability of a pop-up before using this property.
 
 Dismissing the view controller will close the pop-up and unload the web view.
 
 ## See Also
 
-- [var presentsPopup: Bool](wkwebextension/action/presentspopup.md)
+### Related Documentation
+- [var presentsPopup: Bool](./presentspopup.md)
   A Boolean value indicating whether the action has a pop-up.
 
 

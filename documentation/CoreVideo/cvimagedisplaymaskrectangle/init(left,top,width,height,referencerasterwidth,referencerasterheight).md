@@ -1,7 +1,8 @@
 # init(left:top:width:height:referenceRasterWidth:referenceRasterHeight:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 27.0+

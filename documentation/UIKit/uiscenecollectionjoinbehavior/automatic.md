@@ -1,7 +1,8 @@
 # UISceneCollectionJoinBehavior.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A behavior that uses the system preferences for joining collections.
 
@@ -14,13 +15,18 @@ A behavior that uses the system preferences for joining collections.
 case automatic
 ```
 
+```c
+UISceneCollectionJoinBehaviorAutomatic
+```
+
 ## See Also
 
-- [UISceneCollectionJoinBehavior.preferred](uiscenecollectionjoinbehavior/preferred.md)
+### Constants
+- [UISceneCollectionJoinBehavior.preferred](./preferred.md)
   A behavior that adds the new scene to the requesting scene’s collection and activate it, or attempts to join a compatible collection.
-- [UISceneCollectionJoinBehavior.preferredWithoutActivating](uiscenecollectionjoinbehavior/preferredwithoutactivating.md)
+- [UISceneCollectionJoinBehavior.preferredWithoutActivating](./preferredwithoutactivating.md)
   A behavior that adds the new scene to the requesting scene’s collection without activating it, or attempts to join a compatible collection.
-- [UISceneCollectionJoinBehavior.disallowed](uiscenecollectionjoinbehavior/disallowed.md)
+- [UISceneCollectionJoinBehavior.disallowed](./disallowed.md)
   A behavior that creates a new collection for the new scene, ignoring system preferences.
 
 

@@ -1,7 +1,8 @@
 # effectiveLabel
 
 **Framework**: Distributed  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The effective label of this argument. This reflects the semantics of call sites of function declarations without explicit label definitions in Swift.
 
@@ -11,7 +12,7 @@ The effective label of this argument. This reflects the semantics of call sites 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

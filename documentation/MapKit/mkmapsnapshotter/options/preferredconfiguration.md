@@ -1,7 +1,8 @@
 # preferredConfiguration
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map configuration style to use for snapshots.
 
@@ -21,19 +22,24 @@ The map configuration style to use for snapshots.
 var preferredConfiguration: MKMapConfiguration { get set }
 ```
 
+```objc
+@property (nonatomic, copy) MKMapConfiguration * preferredConfiguration;
+```
+
 #### Discussion
 
-Set this property to one of the [`MKMapConfiguration`](mkmapconfiguration.md) subclasses to configure the map style to use when making map snapshots.
+Set this property to one of the [`MKMapConfiguration`](../../mkmapconfiguration.md) subclasses to configure the map style to use when making map snapshots.
 
 ## See Also
 
-- [var mapType: MKMapType](mkmapsnapshotter/options/maptype.md)
+### Configuring the map data
+- [var mapType: MKMapType](./maptype.md)
   The map’s visual style.
-- [var showsBuildings: Bool](mkmapsnapshotter/options/showsbuildings.md)
+- [var showsBuildings: Bool](./showsbuildings.md)
   A Boolean that indicates whether the map displays extruded building information.
-- [var pointOfInterestFilter: MKPointOfInterestFilter?](mkmapsnapshotter/options/pointofinterestfilter.md)
+- [var pointOfInterestFilter: MKPointOfInterestFilter?](./pointofinterestfilter.md)
   The filter to use for determining the points of interest that appear in the snapshot.
-- [var showsPointsOfInterest: Bool](mkmapsnapshotter/options/showspointsofinterest.md)
+- [var showsPointsOfInterest: Bool](./showspointsofinterest.md)
   A Boolean value that indicates whether the map displays point-of-interest information.
 
 

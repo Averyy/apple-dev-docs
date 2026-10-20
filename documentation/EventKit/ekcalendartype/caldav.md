@@ -1,17 +1,18 @@
 # EKCalendarType.calDAV
 
 **Framework**: EventKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A CalDAV or iCloud calendar.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -19,15 +20,20 @@ A CalDAV or iCloud calendar.
 case calDAV
 ```
 
+```c
+EKCalendarTypeCalDAV
+```
+
 ## See Also
 
-- [EKCalendarType.local](ekcalendartype/local.md)
+### Constants
+- [EKCalendarType.local](./local.md)
   A local calendar.
-- [EKCalendarType.exchange](ekcalendartype/exchange.md)
+- [EKCalendarType.exchange](./exchange.md)
   An Exchange calendar.
-- [EKCalendarType.subscription](ekcalendartype/subscription.md)
+- [EKCalendarType.subscription](./subscription.md)
   A locally subscribed calendar.
-- [EKCalendarType.birthday](ekcalendartype/birthday.md)
+- [EKCalendarType.birthday](./birthday.md)
   A birthday calendar.
 
 

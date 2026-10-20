@@ -1,7 +1,8 @@
 # timeSamples
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The composed set of time codes for which this attribute has authored time samples.
 

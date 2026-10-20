@@ -1,7 +1,8 @@
 # attributeToHostApp(_:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attributes an IOSurface’s memory to the host app instead of the extension.
 

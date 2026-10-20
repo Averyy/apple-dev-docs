@@ -1,7 +1,8 @@
 # NotificationQueue.NotificationCoalescing
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The constants that specify how notifications are coalesced.
 
@@ -20,37 +21,42 @@ The constants that specify how notifications are coalesced.
 struct NotificationCoalescing
 ```
 
+```c
+enum NSNotificationCoalescing : NSUInteger;
+```
+
 #### Overview
 
-These constants are used by the [`enqueue(_:postingStyle:coalesceMask:forModes:)`](notificationqueue/enqueue(_:postingstyle:coalescemask:formodes:).md) method.
+These constants are used by the [`enqueue(_:postingStyle:coalesceMask:forModes:)`](./enqueue%28_,postingstyle,coalescemask,formodes%29.md) method.
 
 ## Topics
 
 ### Constants
-- [static var none: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/none.md)
+- [static var none: NotificationQueue.NotificationCoalescing](./notificationcoalescing/none.md)
   Do not coalesce notifications in the queue.
-- [static var onName: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/onname.md)
+- [static var onName: NotificationQueue.NotificationCoalescing](./notificationcoalescing/onname.md)
   Coalesce notifications with the same name.
-- [static var onSender: NotificationQueue.NotificationCoalescing](notificationqueue/notificationcoalescing/onsender.md)
+- [static var onSender: NotificationQueue.NotificationCoalescing](./notificationcoalescing/onsender.md)
   Coalesce notifications with the same object.
 ### Initializers
-- [init(rawValue: UInt)](notificationqueue/notificationcoalescing/init(rawvalue:).md)
+- [init(rawValue: UInt)](./notificationcoalescing/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [NotificationQueue.PostingStyle](notificationqueue/postingstyle.md)
+### Constants
+- [NotificationQueue.PostingStyle](./postingstyle.md)
   The constants that specify when notifications are posted.
 
 

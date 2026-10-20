@@ -1,7 +1,8 @@
 # init(pivotEntity:revolutions:orbitalAxis:isOrientedToPath:isAdditive:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new orbit entity action.
 

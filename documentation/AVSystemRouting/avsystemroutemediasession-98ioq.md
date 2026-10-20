@@ -1,7 +1,8 @@
 # AVSystemRouteMediaSession
 
 **Framework**: AVSystemRouting  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides playback controls and a data channel for a session running on a remote device.
 
@@ -18,32 +19,33 @@ final class AVSystemRouteMediaSession
 
 ## Mentions
 
-- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
-- [Routing media to third-party devices](routing-media-to-third-party-devices.md)
+- [Routing and streaming media to remote devices](./routing-and-streaming-media-to-remote-devices.md)
+- [Routing media to third-party devices](./routing-media-to-third-party-devices.md)
 
 #### Overview
 
-Use this object to access playback controls and a data channel for communicating with the remote application. Call [`start()`](avsystemroutesession-gp78/start().md) to get this object after adding a session to an [`AVSystemRoute`](avsystemroute-5s2um.md).
+Use this object to access playback controls and a data channel for communicating with the remote application. Call [`start()`](./avsystemroutesession-gp78/start%28%29.md) to get this object after adding a session to an [`AVSystemRoute`](./avsystemroute-5s2um.md).
 
 ## Topics
 
 ### Instance Properties
-- [var dataChannel: AVSystemRoute.DataChannel?](avsystemroutemediasession-98ioq/datachannel.md)
+- [var dataChannel: AVSystemRoute.DataChannel?](./avsystemroutemediasession-98ioq/datachannel.md)
   The data channel for sending and receiving data with the remote app.
-- [var playbackControl: (any AVPlaybackUserInterfaceControllable)?](avsystemroutemediasession-98ioq/playbackcontrol.md)
+- [var playbackControl: (any AVPlaybackUserInterfaceControllable)?](./avsystemroutemediasession-98ioq/playbackcontrol.md)
   The playback control interface for the remote session.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [AVSystemRoute.DataChannel](avsystemroute-5s2um/datachannel.md)
+### Playback and communication
+- [AVSystemRoute.DataChannel](./avsystemroute-5s2um/datachannel.md)
   An object that manages bidirectional data communication with a remote application.
-- [protocol AVSystemRouteDataDelegate](avsystemroutedatadelegate-7vt4b.md)
+- [protocol AVSystemRouteDataDelegate](./avsystemroutedatadelegate-7vt4b.md)
   A protocol for handling data from a remote application.
 
 

@@ -1,7 +1,8 @@
 # domain
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that identifies a specific web domain.
 
@@ -18,11 +19,12 @@ let domain: String?
 
 #### Discussion
 
-In an extension that provides shield configurations, this property provides the web domain. When you access this property outside that extension, the value is `nil`. See [`ShieldConfigurationDataSource`](https://developer.apple.com/documentation/managedsettingsui/shieldconfigurationdatasource) for more information.
+In an extension that provides shield configurations, this property provides the web domain. When you access this property outside that extension, the value is `nil`. See [`ShieldConfigurationDataSource`](../../ManagedSettingsUI/shieldconfigurationdatasource.md) for more information.
 
 ## See Also
 
-- [let token: WebDomainToken?](webdomain/token.md)
+### Identifying a web domain
+- [let token: WebDomainToken?](./token.md)
   An opaque representation of a specific web domain.
 
 

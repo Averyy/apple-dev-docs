@@ -1,7 +1,8 @@
 # CPTimeRemainingColor.default
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system default color.
 
@@ -16,17 +17,22 @@ The system default color.
 case `default`
 ```
 
+```c
+CPTimeRemainingColorDefault
+```
+
 #### Discussion
 
-The color is white when the map template’s [`tripEstimateStyle`](cpmaptemplate/tripestimatestyle.md) is [`CPTripEstimateStyle.dark`](cptripestimatestyle/dark.md), and black when the style is [`CPTripEstimateStyle.light`](cptripestimatestyle/light.md).
+The color is white when the map template’s [`tripEstimateStyle`](../cpmaptemplate/tripestimatestyle.md) is [`CPTripEstimateStyle.dark`](../cptripestimatestyle/dark.md), and black when the style is [`CPTripEstimateStyle.light`](../cptripestimatestyle/light.md).
 
 ## See Also
 
-- [CPTimeRemainingColor.green](cptimeremainingcolor/green.md)
+### Colors
+- [CPTimeRemainingColor.green](./green.md)
   A shade of green.
-- [CPTimeRemainingColor.orange](cptimeremainingcolor/orange.md)
+- [CPTimeRemainingColor.orange](./orange.md)
   A shade of orange.
-- [CPTimeRemainingColor.red](cptimeremainingcolor/red.md)
+- [CPTimeRemainingColor.red](./red.md)
   A shade of red.
 
 

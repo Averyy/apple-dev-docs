@@ -1,7 +1,8 @@
 # buffer
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer of source text upon which the command can operate.
 
@@ -14,9 +15,14 @@ The buffer of source text upon which the command can operate.
 var buffer: XCSourceTextBuffer { get }
 ```
 
+```objc
+@property (strong, readonly) XCSourceTextBuffer * buffer;
+```
+
 ## See Also
 
-- [var commandIdentifier: String](xcsourceeditorcommandinvocation/commandidentifier.md)
+### Responding to Commands
+- [var commandIdentifier: String](./commandidentifier.md)
   The identifier of the command that the user invoked.
 
 

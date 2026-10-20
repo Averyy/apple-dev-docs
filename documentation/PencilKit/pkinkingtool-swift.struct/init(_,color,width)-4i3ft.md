@@ -1,7 +1,8 @@
 # init(_:color:width:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an ink tool object with the specified color and line width values.
 
@@ -16,15 +17,16 @@ init(_ inkType: PKInkingTool.InkType, color: NSColor = NSColor.black, width: CGF
 
 ## Parameters
 
-- `inkType`: The shape of the tool, which can be [`PKInkingTool.InkType.marker`](pkinkingtool-swift.struct/inktype-swift.enum/marker.md), [`PKInkingTool.InkType.pen`](pkinkingtool-swift.struct/inktype-swift.enum/pen.md), or [`PKInkingTool.InkType.pencil`](pkinkingtool-swift.struct/inktype-swift.enum/pencil.md).
+- `inkType`: The shape of the tool, which can be [`PKInkingTool.InkType.marker`](./inktype-swift.enum/marker.md), [`PKInkingTool.InkType.pen`](./inktype-swift.enum/pen.md), or [`PKInkingTool.InkType.pencil`](./inktype-swift.enum/pencil.md).
 - `color`: The color to apply to drawn lines.
 - `width`: The base width to apply to any drawn lines. The value in the `inkType` parameter and input from Apple Pencil affects the final width.
 
 ## See Also
 
-- [init(PKInkingTool.InkType, color: UIColor, width: CGFloat?)](pkinkingtool-swift.struct/init(_:color:width:)-2l7v.md)
+### Creating an inking tool
+- [init(PKInkingTool.InkType, color: UIColor, width: CGFloat?)](./init%28_,color,width%29-2l7v.md)
   Creates an ink tool object with the specified color and line width values.
-- [init(ink: PKInk, width: CGFloat)](pkinkingtool-swift.struct/init(ink:width:).md)
+- [init(ink: PKInk, width: CGFloat)](./init%28ink,width%29.md)
   Create an inking tool with the specified ink and width.
 
 

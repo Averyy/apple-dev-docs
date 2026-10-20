@@ -1,7 +1,8 @@
 # com.apple.developer.coremotion.head-pose
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An entitlement that enables someone’s head movement to determine the orientation of spatialized sound output.
 
@@ -11,29 +12,31 @@ An entitlement that enables someone’s head movement to determine the orientati
 - macOS 15.0+
 - tvOS 18.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.coremotion.head-pose`
+- **Type**: boolean
 
 #### Discussion
 
 This entitlement changes the orientation of spatial audio output to match the person’s head pose via compatible AirPods for the following APIs:
 
-- [`AVAudioEnvironmentNode`](https://developer.apple.com/documentation/avfaudio/avaudioenvironmentnode), when you set the [`isListenerHeadTrackingEnabled`](https://developer.apple.com/documentation/avfaudio/avaudioenvironmentnode/islistenerheadtrackingenabled) property to `true`
-- [`Audio Toolbox`](https://developer.apple.com/documentation/audiotoolbox) (see [`AUSpatialMixer Parameters`](https://developer.apple.com/documentation/audiotoolbox/1390073-auspatialmixer-parameters)), when you set the [`kAudioUnitProperty_SpatialMixerEnableHeadTracking`](https://developer.apple.com/documentation/audiotoolbox/kaudiounitproperty_spatialmixerenableheadtracking) property to `true`
-- [`PHASEListener`](https://developer.apple.com/documentation/phase/phaselistener), when you set the new [`automaticHeadTrackingFlags`](https://developer.apple.com/documentation/phase/phaselistener/automaticheadtrackingflags) property to orientation
+- [`AVAudioEnvironmentNode`](../../AVFAudio/avaudioenvironmentnode.md), when you set the [`isListenerHeadTrackingEnabled`](../../AVFAudio/avaudioenvironmentnode/islistenerheadtrackingenabled.md) property to `true`
+- [Audio Toolbox](../../AudioToolbox/AudioToolbox.md) (see [AUSpatialMixer Parameters](../../AudioToolbox/api-1390073-auspatialmixer-parameters.md)), when you set the [`kAudioUnitProperty_SpatialMixerEnableHeadTracking`](../../AudioToolbox/kaudiounitproperty_spatialmixerenableheadtracking.md) property to `true`
+- [`PHASEListener`](../../PHASE/phaselistener.md), when you set the new [`automaticHeadTrackingFlags`](../../PHASE/phaselistener/automaticheadtrackingflags.md) property to orientation
 
 Add this entitlement to your app by enabling the Head Pose capability in Xcode.
 
 ## See Also
 
-- [com.apple.developer.media-device-extension](entitlements/com.apple.developer.media-device-extension.md)
+### Media
+- [com.apple.developer.media-device-extension](./com.apple.developer.media-device-extension.md)
   An array of media sharing protocol identifiers that an extension supports.
-- [com.apple.developer.spatial-audio.profile-access](entitlements/com.apple.developer.spatial-audio.profile-access.md)
+- [com.apple.developer.spatial-audio.profile-access](./com.apple.developer.spatial-audio.profile-access.md)
   An entitlement that enables your app to use the personalized spatial audio profile.
-- [com.apple.developer.avfoundation.multitasking-camera-access](entitlements/com.apple.developer.avfoundation.multitasking-camera-access.md)
+- [com.apple.developer.avfoundation.multitasking-camera-access](./com.apple.developer.avfoundation.multitasking-camera-access.md)
   A Boolean value that indicates whether an app may continue using the camera at the same time as another foreground app.
-- [Media Device Discovery Extension](entitlements/com.apple.developer.media-device-discovery-extension.md)
+- [Media Device Discovery Extension](./com.apple.developer.media-device-discovery-extension.md)
   An entitlement for an app extension that adds a specific third-party media receiver to a system device-picker UI.
 
 

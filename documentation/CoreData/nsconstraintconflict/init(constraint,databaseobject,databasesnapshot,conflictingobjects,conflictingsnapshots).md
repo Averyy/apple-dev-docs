@@ -1,7 +1,8 @@
 # init(constraint:databaseObject:databaseSnapshot:conflictingObjects:conflictingSnapshots:)
 
 **Framework**: Core Data  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+

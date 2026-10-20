@@ -1,7 +1,8 @@
 # kSKSearchOptionSpaceMeansOR
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 This option alters query behavior so that spaces are interpreted as Boolean `OR` operators.
 

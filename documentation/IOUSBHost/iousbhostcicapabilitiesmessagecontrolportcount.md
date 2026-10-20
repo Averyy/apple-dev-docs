@@ -1,7 +1,8 @@
 # IOUSBHostCICapabilitiesMessageControlPortCount
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,13 +14,18 @@
 var IOUSBHostCICapabilitiesMessageControlPortCount: Int { get }
 ```
 
+```c
+IOUSBHostCICapabilitiesMessageControlPortCount
+```
+
 ## See Also
 
-- [var IOUSBHostCICapabilitiesMessageControlPortCountPhase: Int](iousbhostcicapabilitiesmessagecontrolportcountphase.md)
-- [var IOUSBHostCICapabilitiesMessageData0CommandTimeoutThreshold: Int](iousbhostcicapabilitiesmessagedata0commandtimeoutthreshold.md)
-- [var IOUSBHostCICapabilitiesMessageData0CommandTimeoutThresholdPhase: Int](iousbhostcicapabilitiesmessagedata0commandtimeoutthresholdphase.md)
-- [var IOUSBHostCICapabilitiesMessageData0ConnectionLatency: Int](iousbhostcicapabilitiesmessagedata0connectionlatency.md)
-- [var IOUSBHostCICapabilitiesMessageData0ConnectionLatencyPhase: Int](iousbhostcicapabilitiesmessagedata0connectionlatencyphase.md)
+### Constants
+- [var IOUSBHostCICapabilitiesMessageControlPortCountPhase: Int](./iousbhostcicapabilitiesmessagecontrolportcountphase.md)
+- [var IOUSBHostCICapabilitiesMessageData0CommandTimeoutThreshold: Int](./iousbhostcicapabilitiesmessagedata0commandtimeoutthreshold.md)
+- [var IOUSBHostCICapabilitiesMessageData0CommandTimeoutThresholdPhase: Int](./iousbhostcicapabilitiesmessagedata0commandtimeoutthresholdphase.md)
+- [var IOUSBHostCICapabilitiesMessageData0ConnectionLatency: Int](./iousbhostcicapabilitiesmessagedata0connectionlatency.md)
+- [var IOUSBHostCICapabilitiesMessageData0ConnectionLatencyPhase: Int](./iousbhostcicapabilitiesmessagedata0connectionlatencyphase.md)
 
 
 ---

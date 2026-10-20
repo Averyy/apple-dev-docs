@@ -1,7 +1,8 @@
 # restrict
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Restrict dyld loading.
 
@@ -13,6 +14,10 @@ Restrict dyld loading.
 
 ```swift
 static var restrict: SecCodeSignatureFlags { get }
+```
+
+```c
+kSecCodeSignatureRestrict
 ```
 
 

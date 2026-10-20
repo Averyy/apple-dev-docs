@@ -1,7 +1,8 @@
 # allow(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.0+
@@ -20,9 +21,10 @@ mutating func allow(_ other: PredicateCodableConfiguration)
 
 ## See Also
 
-- [func allowKeyPathsForPropertiesProvided<T>(by: T.Type, recursive: Bool)](predicatecodableconfiguration/allowkeypathsforpropertiesprovided(by:recursive:).md)
-- [func allowPartialType(any Any.Type, identifier: String)](predicatecodableconfiguration/allowpartialtype(_:identifier:).md)
-- [func allowType(any Any.Type, identifier: String?)](predicatecodableconfiguration/allowtype(_:identifier:).md)
+### Allowing types and key paths
+- [func allowKeyPathsForPropertiesProvided<T>(by: T.Type, recursive: Bool)](./allowkeypathsforpropertiesprovided%28by,recursive%29.md)
+- [func allowPartialType(any Any.Type, identifier: String)](./allowpartialtype%28_,identifier%29.md)
+- [func allowType(any Any.Type, identifier: String?)](./allowtype%28_,identifier%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # isAlphaToCoverageEnabled
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to read and use the alpha channel fragment output for color attachments to compute a sample coverage mask.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether to read and use the alpha channel fragmen
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,23 +20,28 @@ A Boolean value that indicates whether to read and use the alpha channel fragmen
 var isAlphaToCoverageEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite, getter=isAlphaToCoverageEnabled) BOOL alphaToCoverageEnabled;
+```
+
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var isAlphaToOneEnabled: Bool](mtlrenderpipelinedescriptor/isalphatooneenabled.md)
+### Specifying rasterization and visibility state
+- [var isAlphaToOneEnabled: Bool](./isalphatooneenabled.md)
   A Boolean value that indicates whether to force alpha channel values for color attachments to the largest representable value.
-- [var isRasterizationEnabled: Bool](mtlrenderpipelinedescriptor/israsterizationenabled.md)
+- [var isRasterizationEnabled: Bool](./israsterizationenabled.md)
   A Boolean value that determines whether the pipeline rasterizes primitives.
-- [var inputPrimitiveTopology: MTLPrimitiveTopologyClass](mtlrenderpipelinedescriptor/inputprimitivetopology.md)
+- [var inputPrimitiveTopology: MTLPrimitiveTopologyClass](./inputprimitivetopology.md)
   The type of primitive topology the pipeline renders.
-- [var rasterSampleCount: Int](mtlrenderpipelinedescriptor/rastersamplecount.md)
+- [var rasterSampleCount: Int](./rastersamplecount.md)
   The number of samples the pipeline applies for each fragment.
-- [enum MTLPrimitiveTopologyClass](mtlprimitivetopologyclass.md)
+- [enum MTLPrimitiveTopologyClass](../mtlprimitivetopologyclass.md)
   The primitive topologies available for rendering.
-- [var sampleCount: Int](mtlrenderpipelinedescriptor/samplecount.md)
+- [var sampleCount: Int](./samplecount.md)
   The number of samples the pipeline applies for each fragment.
 
 

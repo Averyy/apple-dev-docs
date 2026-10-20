@@ -1,7 +1,8 @@
 # WebhookCreateRequest.Data.Relationships.App.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create a webhook.
 
@@ -10,14 +11,14 @@ The request body you use to create a webhook.
 
 ## Declaration
 
-```swift
+```
 object WebhookCreateRequest.Data.Relationships.App.Data
 ```
 
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `apps`
 
 
 ---

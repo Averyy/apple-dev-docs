@@ -1,7 +1,8 @@
 # gain
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overall level for all sounds emitted from an entity.
 

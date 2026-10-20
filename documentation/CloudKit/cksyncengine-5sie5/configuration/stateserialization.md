@@ -1,7 +1,8 @@
 # stateSerialization
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sync engine’s serialized state.
 
@@ -11,7 +12,7 @@ The sync engine’s serialized state.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -22,17 +23,18 @@ var stateSerialization: CKSyncEngine.State.Serialization?
 
 #### Discussion
 
-This property returns the value you specify for the initializer’s `stateSerialization` parameter. If you choose to set this property after initialization, assign the state from the most recent [`CKSyncEngine.Event.stateUpdate(_:)`](cksyncengine-5sie5/event/stateupdate(_:).md) event handled by your delegate. However, if this is the first initialization of the associated sync engine, specify `nil` instead.
+This property returns the value you specify for the initializer’s `stateSerialization` parameter. If you choose to set this property after initialization, assign the state from the most recent [`CKSyncEngine.Event.stateUpdate(_:)`](../event/stateupdate%28_%29.md) event handled by your delegate. However, if this is the first initialization of the associated sync engine, specify `nil` instead.
 
 The default value is `nil`.
 
 ## See Also
 
-- [var automaticallySync: Bool](cksyncengine-5sie5/configuration/automaticallysync.md)
+### Managing attributes
+- [var automaticallySync: Bool](./automaticallysync.md)
   A Boolean value that determines whether the engine syncs automatically.
-- [var database: CKDatabase](cksyncengine-5sie5/configuration/database.md)
+- [var database: CKDatabase](./database.md)
   The associated database.
-- [var subscriptionID: CKSubscription.ID?](cksyncengine-5sie5/configuration/subscriptionid.md)
+- [var subscriptionID: CKSubscription.ID?](./subscriptionid.md)
   The subscription identifier for the associated database.
 
 

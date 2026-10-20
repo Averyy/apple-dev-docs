@@ -1,16 +1,17 @@
 # MLCPaddingType
 
 **Framework**: ML Compute  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A padding type that you specify for a padding layer.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,31 +19,36 @@ A padding type that you specify for a padding layer.
 enum MLCPaddingType
 ```
 
+```c
+enum MLCPaddingType : int32_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MLCPaddingType.zero](mlcpaddingtype/zero.md)
-- [MLCPaddingType.reflect](mlcpaddingtype/reflect.md)
-- [MLCPaddingType.symmetric](mlcpaddingtype/symmetric.md)
-- [MLCPaddingType.constant](mlcpaddingtype/constant.md)
-- [var debugDescription: String](mlcpaddingtype/debugdescription.md)
+- [MLCPaddingType.zero](./mlcpaddingtype/zero.md)
+- [MLCPaddingType.reflect](./mlcpaddingtype/reflect.md)
+- [MLCPaddingType.symmetric](./mlcpaddingtype/symmetric.md)
+- [MLCPaddingType.constant](./mlcpaddingtype/constant.md)
+- [var debugDescription: String](./mlcpaddingtype/debugdescription.md)
   A textual description of the padding type, suitable for debugging.
 ### Initializers
-- [init?(rawValue: Int32)](mlcpaddingtype/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./mlcpaddingtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MLCPaddingPolicy](mlcpaddingpolicy-3hic8.md)
+### Supporting Types
+- [enum MLCPaddingPolicy](./mlcpaddingpolicy-3hic8.md)
   A padding policy that you specify for a convolution or pooling layer.
 
 

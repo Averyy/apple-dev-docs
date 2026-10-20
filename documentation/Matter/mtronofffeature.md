@@ -1,7 +1,8 @@
 # MTROnOffFeature
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.1+
@@ -18,27 +19,31 @@
 struct MTROnOffFeature
 ```
 
+```c
+enum MTROnOffFeature : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtronofffeature/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtronofffeature/init%28rawvalue%29.md)
 ### Type Properties
-- [static var deadFront: MTROnOffFeature](mtronofffeature/deadfront.md)
-- [static var deadFrontBehavior: MTROnOffFeature](mtronofffeature/deadfrontbehavior.md)
-- [static var lighting: MTROnOffFeature](mtronofffeature/lighting.md)
-- [static var offOnly: MTROnOffFeature](mtronofffeature/offonly.md)
+- [static var deadFront: MTROnOffFeature](./mtronofffeature/deadfront.md)
+- [static var deadFrontBehavior: MTROnOffFeature](./mtronofffeature/deadfrontbehavior.md)
+- [static var lighting: MTROnOffFeature](./mtronofffeature/lighting.md)
+- [static var offOnly: MTROnOffFeature](./mtronofffeature/offonly.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

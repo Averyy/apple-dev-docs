@@ -1,7 +1,8 @@
 # WIChannel.Band.band24GHz
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The 2.4 GHz Wi-Fi band.
 

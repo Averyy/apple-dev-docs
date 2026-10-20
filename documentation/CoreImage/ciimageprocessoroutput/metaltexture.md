@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A Metal texture object that can be bound for output using Metal.
@@ -20,13 +21,18 @@ A Metal texture object that can be bound for output using Metal.
 var metalTexture: (any MTLTexture)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<MTLTexture> metalTexture;
+```
+
 ## See Also
 
-- [var baseAddress: UnsafeMutableRawPointer](ciimageprocessoroutput/baseaddress.md)
+### Providing Output Image Data
+- [var baseAddress: UnsafeMutableRawPointer](./baseaddress.md)
   The base address of CPU memory that your Core Image Processor Kernel can write pixels to.
-- [var pixelBuffer: CVPixelBuffer?](ciimageprocessoroutput/pixelbuffer.md)
+- [var pixelBuffer: CVPixelBuffer?](./pixelbuffer.md)
   An output pixelBuffer object that your Core Image Processor Kernel can write to.
-- [var surface: IOSurfaceRef](ciimageprocessoroutput/surface.md)
+- [var surface: IOSurfaceRef](./surface.md)
   An output surface object that your Core Image Processor Kernel can write to.
 
 

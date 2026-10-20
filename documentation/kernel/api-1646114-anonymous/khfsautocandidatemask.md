@@ -1,14 +1,15 @@
 # kHFSAutoCandidateMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHFSAutoCandidateMask = 0x0800
 ```
 

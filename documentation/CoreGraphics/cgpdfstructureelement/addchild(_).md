@@ -1,7 +1,8 @@
 # addChild(_:)
 
 **Framework**: Core Graphics  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 func addChild(_ childStructureElement: CGPDFStructureElement) -> OSStatus
+```
+
+```c
+extern OSStatus CGPDFStructureElementAddStructureElement(CGPDFStructureElementRef structureElement, CGPDFStructureElementRef childStructureElement);
 ```
 
 

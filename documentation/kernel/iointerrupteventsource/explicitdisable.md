@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 bool explicitDisable;
 ```
 
@@ -15,12 +15,13 @@ Has the user expicitly disabled this event source, if so then do not overide the
 
 ## See Also
 
-- [reserved](iointerrupteventsource/reserved.md)
-- [provider](iointerrupteventsource/provider.md)
-- [producerCount](iointerrupteventsource/producercount.md)
-- [intIndex](iointerrupteventsource/intindex.md)
-- [consumerCount](iointerrupteventsource/consumercount.md)
-- [autoDisable](iointerrupteventsource/autodisable.md)
+### Instance Variables
+- [reserved](./reserved.md)
+- [provider](./provider.md)
+- [producerCount](./producercount.md)
+- [intIndex](./intindex.md)
+- [consumerCount](./consumercount.md)
+- [autoDisable](./autodisable.md)
 
 
 ---

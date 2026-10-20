@@ -1,7 +1,8 @@
 # SetFocusFilterIntentError
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors that can occur when you try to retrieve the current Focus configuration settings.
 
@@ -11,7 +12,7 @@ Errors that can occur when you try to retrieve the current Focus configuration s
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,19 +24,19 @@ enum SetFocusFilterIntentError
 ## Topics
 
 ### Getting the error codes
-- [SetFocusFilterIntentError.missingParameterValue](setfocusfilterintenterror/missingparametervalue.md)
+- [SetFocusFilterIntentError.missingParameterValue](./setfocusfilterintenterror/missingparametervalue.md)
   An error indicating that the intent has an invalid parameter value.
-- [SetFocusFilterIntentError.notFound](setfocusfilterintenterror/notfound.md)
+- [SetFocusFilterIntentError.notFound](./setfocusfilterintenterror/notfound.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

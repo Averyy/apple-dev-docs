@@ -1,15 +1,16 @@
 # kMatrixMixerParam_Volume
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,17 +18,22 @@
 var kMatrixMixerParam_Volume: AudioUnitParameterID { get }
 ```
 
+```c
+kMatrixMixerParam_Volume
+```
+
 ## See Also
 
-- [var kMatrixMixerParam_Enable: AudioUnitParameterID](kmatrixmixerparam_enable.md)
-- [var kMatrixMixerParam_PostAveragePower: AudioUnitParameterID](kmatrixmixerparam_postaveragepower.md)
-- [var kMatrixMixerParam_PostAveragePowerLinear: AudioUnitParameterID](kmatrixmixerparam_postaveragepowerlinear.md)
-- [var kMatrixMixerParam_PostPeakHoldLevel: AudioUnitParameterID](kmatrixmixerparam_postpeakholdlevel.md)
-- [var kMatrixMixerParam_PostPeakHoldLevelLinear: AudioUnitParameterID](kmatrixmixerparam_postpeakholdlevellinear.md)
-- [var kMatrixMixerParam_PreAveragePower: AudioUnitParameterID](kmatrixmixerparam_preaveragepower.md)
-- [var kMatrixMixerParam_PreAveragePowerLinear: AudioUnitParameterID](kmatrixmixerparam_preaveragepowerlinear.md)
-- [var kMatrixMixerParam_PrePeakHoldLevel: AudioUnitParameterID](kmatrixmixerparam_prepeakholdlevel.md)
-- [var kMatrixMixerParam_PrePeakHoldLevelLinear: AudioUnitParameterID](kmatrixmixerparam_prepeakholdlevellinear.md)
+### Constants
+- [var kMatrixMixerParam_Enable: AudioUnitParameterID](./kmatrixmixerparam_enable.md)
+- [var kMatrixMixerParam_PostAveragePower: AudioUnitParameterID](./kmatrixmixerparam_postaveragepower.md)
+- [var kMatrixMixerParam_PostAveragePowerLinear: AudioUnitParameterID](./kmatrixmixerparam_postaveragepowerlinear.md)
+- [var kMatrixMixerParam_PostPeakHoldLevel: AudioUnitParameterID](./kmatrixmixerparam_postpeakholdlevel.md)
+- [var kMatrixMixerParam_PostPeakHoldLevelLinear: AudioUnitParameterID](./kmatrixmixerparam_postpeakholdlevellinear.md)
+- [var kMatrixMixerParam_PreAveragePower: AudioUnitParameterID](./kmatrixmixerparam_preaveragepower.md)
+- [var kMatrixMixerParam_PreAveragePowerLinear: AudioUnitParameterID](./kmatrixmixerparam_preaveragepowerlinear.md)
+- [var kMatrixMixerParam_PrePeakHoldLevel: AudioUnitParameterID](./kmatrixmixerparam_prepeakholdlevel.md)
+- [var kMatrixMixerParam_PrePeakHoldLevelLinear: AudioUnitParameterID](./kmatrixmixerparam_prepeakholdlevellinear.md)
 
 
 ---

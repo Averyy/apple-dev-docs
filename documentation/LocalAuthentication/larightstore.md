@@ -1,7 +1,8 @@
 # LARightStore
 
 **Framework**: Local Authentication  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for data protected by a right.
 
@@ -18,9 +19,13 @@ A container for data protected by a right.
 class LARightStore
 ```
 
+```objc
+@interface LARightStore : NSObject
+```
+
 #### Overview
 
-Use an [`LARightStore`](larightstore.md) along with an [`LARight`](laright.md) to make secrets accessible only after certain conditions, including authentication, are met. Storing secrets this way lets you tie the availability of sensitive resources to the authorization status of the user.
+Use an [`LARightStore`](./larightstore.md) along with an [`LARight`](./laright.md) to make secrets accessible only after certain conditions, including authentication, are met. Storing secrets this way lets you tie the availability of sensitive resources to the authorization status of the user.
 
 The following stores a named access token behind the default authorization requirements:
 
@@ -48,40 +53,41 @@ func fetchBackendAccessToken() async throws -> Data {
 ## Topics
 
 ### Accessing rights
-- [class var shared: LARightStore](larightstore/shared.md)
+- [class var shared: LARightStore](./larightstore/shared.md)
   A shared object that stores rights.
-- [func right(forIdentifier: String, completion: (LAPersistedRight?, (any Error)?) -> Void)](larightstore/right(foridentifier:completion:).md)
+- [func right(forIdentifier: String, completion: (LAPersistedRight?, (any Error)?) -> Void)](./larightstore/right%28foridentifier,completion%29.md)
   Fetches a previously stored right from the shared right store.
 ### Storing rights
-- [func saveRight(LARight, identifier: String, completion: (LAPersistedRight?, (any Error)?) -> Void)](larightstore/saveright(_:identifier:completion:).md)
+- [func saveRight(LARight, identifier: String, completion: (LAPersistedRight?, (any Error)?) -> Void)](./larightstore/saveright%28_,identifier,completion%29.md)
   Saves a right to a persistent right store.
-- [func saveRight(LARight, identifier: String, secret: Data, completion: (LAPersistedRight?, (any Error)?) -> Void)](larightstore/saveright(_:identifier:secret:completion:).md)
+- [func saveRight(LARight, identifier: String, secret: Data, completion: (LAPersistedRight?, (any Error)?) -> Void)](./larightstore/saveright%28_,identifier,secret,completion%29.md)
   Saves a right to a persistent store along with secret data you supply.
 ### Removing stored rights
-- [func removeRight(LAPersistedRight, completion: ((any Error)?) -> Void)](larightstore/removeright(_:completion:).md)
+- [func removeRight(LAPersistedRight, completion: ((any Error)?) -> Void)](./larightstore/removeright%28_,completion%29.md)
   Removes a right from the right store given an instance of that right.
-- [func removeRight(forIdentifier: String, completion: ((any Error)?) -> Void)](larightstore/removeright(foridentifier:completion:).md)
+- [func removeRight(forIdentifier: String, completion: ((any Error)?) -> Void)](./larightstore/removeright%28foridentifier,completion%29.md)
   Removes a right from the right store given its unique identifier.
-- [func removeAllRights(completion: ((any Error)?) -> Void)](larightstore/removeallrights(completion:).md)
+- [func removeAllRights(completion: ((any Error)?) -> Void)](./larightstore/removeallrights%28completion%29.md)
   Removes all rights associated with this client from the right store.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class LAPersistedRight](lapersistedright.md)
+### Persistence
+- [class LAPersistedRight](./lapersistedright.md)
   A right that gates access to a key and a secret.
-- [class LASecret](lasecret.md)
+- [class LASecret](./lasecret.md)
   Data that’s protected by a persisted right.
 
 

@@ -1,7 +1,8 @@
 # default
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A texture you can create and export with lossy compression.
 
@@ -25,13 +26,14 @@ The selected compression preserves perceptual texture details (no aggressive com
 
 ## See Also
 
-- [static var none: TextureResource.Compression](textureresource/compression/none.md)
+### Specifying the compression settings
+- [static var none: TextureResource.Compression](./none.md)
   A texture you can create with no compression.
-- [static func astc(blockSize: TextureResource.Compression.ASTCBlockSize, quality: TextureResource.Compression.ASTCQuality) -> TextureResource.Compression](textureresource/compression/astc(blocksize:quality:).md)
+- [static func astc(blockSize: TextureResource.Compression.ASTCBlockSize, quality: TextureResource.Compression.ASTCQuality) -> TextureResource.Compression](./astc%28blocksize,quality%29.md)
   Compresses the imported image with ASTC.
-- [TextureResource.Compression.ASTCBlockSize](textureresource/compression/astcblocksize.md)
+- [TextureResource.Compression.ASTCBlockSize](./astcblocksize.md)
   The compressed block size.
-- [TextureResource.Compression.ASTCQuality](textureresource/compression/astcquality.md)
+- [TextureResource.Compression.ASTCQuality](./astcquality.md)
   Selects the level of processing time allocated to achieve compression.
 
 

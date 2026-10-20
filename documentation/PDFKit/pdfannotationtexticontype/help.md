@@ -1,7 +1,8 @@
 # help
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An icon that indicates help information is available.
 
@@ -19,19 +20,24 @@ An icon that indicates help information is available.
 static let help: PDFAnnotationTextIconType
 ```
 
+```c
+extern PDFAnnotationTextIconType PDFAnnotationTextIconTypeHelp;
+```
+
 ## See Also
 
-- [static let comment: PDFAnnotationTextIconType](pdfannotationtexticontype/comment.md)
+### Choosing a Text Icon Type
+- [static let comment: PDFAnnotationTextIconType](./comment.md)
   An icon that represents a comment.
-- [static let key: PDFAnnotationTextIconType](pdfannotationtexticontype/key.md)
+- [static let key: PDFAnnotationTextIconType](./key.md)
   An icon that represents a key.
-- [static let note: PDFAnnotationTextIconType](pdfannotationtexticontype/note.md)
+- [static let note: PDFAnnotationTextIconType](./note.md)
   An icon that represents a note.
-- [static let newParagraph: PDFAnnotationTextIconType](pdfannotationtexticontype/newparagraph.md)
+- [static let newParagraph: PDFAnnotationTextIconType](./newparagraph.md)
   An icon that represents a new paragraph.
-- [static let paragraph: PDFAnnotationTextIconType](pdfannotationtexticontype/paragraph.md)
+- [static let paragraph: PDFAnnotationTextIconType](./paragraph.md)
   An icon that represents a paragraph.
-- [static let insert: PDFAnnotationTextIconType](pdfannotationtexticontype/insert.md)
+- [static let insert: PDFAnnotationTextIconType](./insert.md)
   An icon that represents an insertion command.
 
 

@@ -1,6 +1,8 @@
 # Halftone descreening with 2D fast Fourier transform
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Sample Code  
+**Download**: [HalftoneDescreeningWith2DFastFourierTransform.zip](https://docs-assets.developer.apple.com/published/aec39161b171/HalftoneDescreeningWith2DFastFourierTransform.zip)
 
 Reduce or remove periodic artifacts from images.
 
@@ -12,17 +14,17 @@ Reduce or remove periodic artifacts from images.
 
 Accelerate’s vDSP module provides functions to perform 2D fast Fourier transforms (FFTs) on matrices of data, such as images. You can exploit the amplitude peaks in the frequency domain of periodic patterns, such as halftone screens, to reduce or remove such artifacts from images. The example below shows an image with halftone artifacts (left) and the same image with the halftone artifacts reduced (right):
 
-![A comparison of the original image of a flower with its descreened counterpart. A zoomed-in segment of the original image shows pronounced diagonal halftone lines. In the descreened image, the same close-up segment appears smoother, with more continuous tones.](/images/com.apple.accelerate/halftone_descreen_2x.png)
+![A comparison of the original image of a flower with its descreened counterpart. A zoomed-in segment of the original image shows pronounced diagonal halftone lines. In the descreened image, the same close-up segment appears smoother, with more continuous tones.](https://developer.apple.com/tutorials/images/com.apple.accelerate/halftone_descreen_2x.png)
 
-The sample app reduces halftone artifacts from a source image by first performing forward FFTs on the image and a halftone screen sample. The following image shows the positive frequencies of the halftone sample’s frequency-domain representation. For more information on performing Fourier transforms on 2D data, see [`Understanding data packing for Fourier transforms`](understanding-data-packing-for-fourier-transforms.md).
+The sample app reduces halftone artifacts from a source image by first performing forward FFTs on the image and a halftone screen sample. The following image shows the positive frequencies of the halftone sample’s frequency-domain representation. For more information on performing Fourier transforms on 2D data, see [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md).
 
-![An image of the frequency-domain representation of the halftone screen containing a series of bright star shapes. The stars follow a diagonal path from the top-left to the middle-right of the image and decrease in size from left to right.](/images/com.apple.accelerate/halftone_frequency_domain_2x.png)
+![An image of the frequency-domain representation of the halftone screen containing a series of bright star shapes. The stars follow a diagonal path from the top-left to the middle-right of the image and decrease in size from left to right.](https://developer.apple.com/tutorials/images/com.apple.accelerate/halftone_frequency_domain_2x.png)
 
 The descreening operation zeroes frequency-domain values in the source image that correspond to the bright peaks in the halftone sample’s frequency-domain values.
 
-##### Convert the Image Data to a Split Complex Vector
+##### Convert the image data to a split-complex vector
 
-The vImage [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](vimagebuffer_initwithcgimage(_:_:_:_:_:).md) function converts the source Core Graphics image to an array of single-precision values. The sample app creates its own backing storage, `pixelsStorage`, rather than using [`vImageBuffer_Init(_:_:_:_:_:)`](vimagebuffer_init(_:_:_:_:_:).md) to ensure that the vImage buffer doesn’t contain any additional padding bytes.
+The vImage [`vImageBuffer_InitWithCGImage(_:_:_:_:_:)`](./vimagebuffer_initwithcgimage%28_,_,_,_,_%29.md) function converts the source Core Graphics image to an array of single-precision values. The sample app creates its own backing storage, `pixelsStorage`, rather than using [`vImageBuffer_Init(_:_:_:_:_:)`](./vimagebuffer_init%28_,_,_,_,_%29.md) to ensure that the vImage buffer doesn’t contain any additional padding bytes.
 
 ```swift
 let pixelsStorage = UnsafeMutableBufferPointer<Float>.allocate(capacity: pixelCount)
@@ -44,7 +46,7 @@ vImageBuffer_InitWithCGImage(
     vImage_Flags(kvImageNoAllocate))
 ```
 
-The [`vDSP_ctoz`](vdsp_ctoz.md) function converts the interleaved pixel values to split-complex format. The function copies odd-numbered pixels to the real parts and the even-numbered pixels to the imaginary parts of each complex value.
+The [`vDSP_ctoz`](./vdsp_ctoz.md) function converts the interleaved pixel values to split-complex format. The function copies odd-numbered pixels to the real parts and the even-numbered pixels to the imaginary parts of each complex value.
 
 ```swift
 pixelsStorage.withMemoryRebound(to: DSPComplex.self) {
@@ -55,7 +57,7 @@ pixelsStorage.withMemoryRebound(to: DSPComplex.self) {
 }
 ```
 
-##### Create the Fft Setup Object
+##### Create the FFT setup object
 
 The sample app creates an FFT setup object that contains all the information required to perform the forward and inverse 2D FFT operations. Creating this setup object can be expensive, so the sample only performs this initialization once.
 
@@ -67,7 +69,7 @@ static let fftSetUp = vDSP.FFT2D(width: imageWidth,
                                  ofType: DSPSplitComplex.self)!
 ```
 
-##### Prepare Arrays for Transformed Image Data
+##### Prepare arrays for transformed image data
 
 Rather than allocating and deallocating memory with each call to the descreening code, the sample app declares several `SplitComplex` structures and an array that the descreening operation uses.
 
@@ -83,11 +85,11 @@ var halftoneSampleAmplitudes = [Float](repeating: 0,
                                        count: HalftoneDescreener.complexValuesCount)
 ```
 
-##### Perform Forward 2d Ffts on the Image Data
+##### Perform forward 2D FFTs on the image data
 
-The [`transform(input:output:direction:)`](vdsp/fft/transform(input:output:direction:).md) function performs a forward 2D FFT on the image data, and creates the frequency-domain representation of the image.
+The [`transform(input:output:direction:)`](./vdsp/fft/transform%28input,output,direction%29.md) function performs a forward 2D FFT on the image data, and creates the frequency-domain representation of the image.
 
-The following code performs the FFT on the source image and the halftone sample data. After the code completes the forward FFT of the halftone sample, the [`squareMagnitudes(_:result:)`](vdsp/squaremagnitudes(_:result:)-22k5h.md) function computes the magnitudes of the complex values representing the halftone sample:
+The following code performs the FFT on the source image and the halftone sample data. After the code completes the forward FFT of the halftone sample, the [`squareMagnitudes(_:result:)`](./vdsp/squaremagnitudes%28_,result%29-22k5h.md) function computes the magnitudes of the complex values representing the halftone sample:
 
 ```swift
 fftSetUp.transform(input: imagePixels.dspSplitComplex,
@@ -102,11 +104,11 @@ vDSP.squareMagnitudes(halftoneFrequencyDomainPixels.dspSplitComplex,
                       result: &halftoneSampleAmplitudes)
 ```
 
-##### Zero the Peaks in the Halftone Sample Magnitude
+##### Zero the peaks in the halftone sample magnitude
 
 The sample app reduces the halftone screen artifacts by manipulating the magnitude of the frequency-domain data for the halftone sample.
 
-The [`threshold(_:to:with:)`](vdsp/threshold(_:to:with:)-77g7l.md) function sets all magnitude values that are over the threshold to -1, and all magnitude values that are less than or equal to the threshold to 1:
+The [`threshold(_:to:with:)`](./vdsp/threshold%28_,to,with%29-77g7l.md) function sets all magnitude values that are over the threshold to -1, and all magnitude values that are less than or equal to the threshold to 1:
 
 ```swift
 let outputConstant: Float = -1
@@ -117,7 +119,7 @@ vDSP.threshold(halftoneSampleAmplitudes,
                result: &halftoneSampleAmplitudes)
 ```
 
-The [`clip(_:to:result:)`](vdsp/clip(_:to:result:)-3lbii.md) function clips the values in the `halftoneSampleAmplitude`, setting all of the high-magnitude values to `0.0`, and all of the low-magnitude values to `1.0`.
+The [`clip(_:to:result:)`](./vdsp/clip%28_,to,result%29-3lbii.md) function clips the values in the `halftoneSampleAmplitude`, setting all of the high-magnitude values to `0.0`, and all of the low-magnitude values to `1.0`.
 
 ```swift
 vDSP.clip(halftoneSampleAmplitudes,
@@ -125,7 +127,7 @@ vDSP.clip(halftoneSampleAmplitudes,
           result: &halftoneSampleAmplitudes)
 ```
 
-##### Descreen the Source Image
+##### Descreen the source image
 
 The app multiplies the frequency-domain data of the source image by the values in `halftoneSampleAmplitude`, thus removing or reducing the halftone screen.
 
@@ -135,9 +137,9 @@ vDSP.multiply(imageFrequencyDomainPixels.dspSplitComplex,
               result: &imageFrequencyDomainPixels.dspSplitComplex)
 ```
 
-##### Perform an Inverse 2d Fft on the Frequency Domain Data
+##### Perform an inverse 2D FFT on the frequency domain data
 
-The [`transform(input:output:direction:)`](vdsp/fft/transform(input:output:direction:).md) function performs an inverse FFT on the frequency-domain image data to generate the descreened spatial-domain image.
+The [`transform(input:output:direction:)`](./vdsp/fft/transform%28input,output,direction%29.md) function performs an inverse FFT on the frequency-domain image data to generate the descreened spatial-domain image.
 
 ```swift
 fftSetUp.transform(input: imageFrequencyDomainPixels.dspSplitComplex,
@@ -145,7 +147,7 @@ fftSetUp.transform(input: imageFrequencyDomainPixels.dspSplitComplex,
                    direction: .inverse)
 ```
 
-##### Generate an Image From the Split Complex Vector
+##### Generate an image from the split-complex vector
 
 Finally, the app creates a displayable image from the spatial-domain representation of the treated source image.
 
@@ -167,23 +169,24 @@ return floatPixels.withUnsafeMutableBytes {
 
 ## See Also
 
-- [Understanding data packing for Fourier transforms](understanding-data-packing-for-fourier-transforms.md)
+### Fourier and Cosine Transforms
+- [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md)
   Format source data for the vDSP Fourier functions, and interpret the results.
-- [Finding the component frequencies in a composite sine wave](finding-the-component-frequencies-in-a-composite-sine-wave.md)
+- [Finding the component frequencies in a composite sine wave](./finding-the-component-frequencies-in-a-composite-sine-wave.md)
   Use 1D fast Fourier transform to compute the frequency components of a signal.
-- [Performing Fourier transforms on interleaved-complex data](performing-fourier-transforms-on-interleaved-complex-data.md)
+- [Performing Fourier transforms on interleaved-complex data](./performing-fourier-transforms-on-interleaved-complex-data.md)
   Optimize discrete Fourier transform (DFT) performance with the vDSP interleaved DFT routines.
-- [Reducing spectral leakage with windowing](reducing-spectral-leakage-with-windowing.md)
+- [Reducing spectral leakage with windowing](./reducing-spectral-leakage-with-windowing.md)
   Multiply signal data by window sequence values when performing transforms with noninteger period signals.
-- [Signal extraction from noise](signal-extraction-from-noise.md)
+- [Signal extraction from noise](./signal-extraction-from-noise.md)
   Use Accelerate’s discrete cosine transform to remove noise from a signal.
-- [Performing Fourier Transforms on Multiple Signals](performing-fourier-transforms-on-multiple-signals.md)
+- [Performing Fourier Transforms on Multiple Signals](./performing-fourier-transforms-on-multiple-signals.md)
   Use Accelerate’s multiple-signal fast Fourier transform (FFT) functions to transform multiple signals with a single function call.
-- [Fast Fourier transforms](fast-fourier-transforms.md)
+- [Fast Fourier transforms](./fast-fourier-transforms.md)
   Transform vectors and matrices of temporal and spatial domain complex values to the frequency domain, and vice versa.
-- [Discrete Fourier transforms](discrete-fourier-transforms.md)
+- [Discrete Fourier transforms](./discrete-fourier-transforms.md)
   Transform vectors of temporal and spatial domain complex values to the frequency domain, and vice versa.
-- [Discrete Cosine transforms](discrete-cosine-transforms.md)
+- [Discrete Cosine transforms](./discrete-cosine-transforms.md)
   Transform vectors of temporal and spatial domain real values to the frequency domain, and vice versa.
 
 

@@ -1,16 +1,17 @@
 # SFNTLookupTrimmedArrayHeader
 
 **Framework**: Core Text  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,39 +19,44 @@
 struct SFNTLookupTrimmedArrayHeader
 ```
 
+```c
+struct SFNTLookupTrimmedArrayHeader;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](sfntlookuptrimmedarrayheader/init.md)
-- [init(firstGlyph: UInt16, count: UInt16, valueArray: SFNTLookupValue)](sfntlookuptrimmedarrayheader/init(firstglyph:count:valuearray:).md)
+- [init()](./sfntlookuptrimmedarrayheader/init%28%29.md)
+- [init(firstGlyph: UInt16, count: UInt16, valueArray: SFNTLookupValue)](./sfntlookuptrimmedarrayheader/init%28firstglyph,count,valuearray%29.md)
 ### Instance Properties
-- [var count: UInt16](sfntlookuptrimmedarrayheader/count.md)
-- [var firstGlyph: UInt16](sfntlookuptrimmedarrayheader/firstglyph.md)
-- [var valueArray: SFNTLookupValue](sfntlookuptrimmedarrayheader/valuearray.md)
+- [var count: UInt16](./sfntlookuptrimmedarrayheader/count.md)
+- [var firstGlyph: UInt16](./sfntlookuptrimmedarrayheader/firstglyph.md)
+- [var valueArray: SFNTLookupValue](./sfntlookuptrimmedarrayheader/valuearray.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AnchorPoint](anchorpoint.md)
-- [struct AnchorPointTable](anchorpointtable.md)
-- [struct AnkrTable](ankrtable.md)
-- [struct BslnFormat0Part](bslnformat0part.md)
-- [struct BslnFormat1Part](bslnformat1part.md)
-- [struct BslnFormat2Part](bslnformat2part.md)
-- [struct BslnFormat3Part](bslnformat3part.md)
-- [struct BslnFormatUnion](bslnformatunion.md)
-- [struct BslnTable](bslntable.md)
-- [struct FontVariation](fontvariation.md)
-- [struct JustDirectionTable](justdirectiontable.md)
-- [struct JustPCAction](justpcaction.md)
-- [struct JustPCActionSubrecord](justpcactionsubrecord.md)
-- [struct JustPCConditionalAddAction](justpcconditionaladdaction.md)
-- [struct JustPCDecompositionAction](justpcdecompositionaction.md)
+### Structures
+- [struct AnchorPoint](./anchorpoint.md)
+- [struct AnchorPointTable](./anchorpointtable.md)
+- [struct AnkrTable](./ankrtable.md)
+- [struct BslnFormat0Part](./bslnformat0part.md)
+- [struct BslnFormat1Part](./bslnformat1part.md)
+- [struct BslnFormat2Part](./bslnformat2part.md)
+- [struct BslnFormat3Part](./bslnformat3part.md)
+- [struct BslnFormatUnion](./bslnformatunion.md)
+- [struct BslnTable](./bslntable.md)
+- [struct FontVariation](./fontvariation.md)
+- [struct JustDirectionTable](./justdirectiontable.md)
+- [struct JustPCAction](./justpcaction.md)
+- [struct JustPCActionSubrecord](./justpcactionsubrecord.md)
+- [struct JustPCConditionalAddAction](./justpcconditionaladdaction.md)
+- [struct JustPCDecompositionAction](./justpcdecompositionaction.md)
 
 
 ---

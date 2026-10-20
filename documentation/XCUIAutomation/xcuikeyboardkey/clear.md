@@ -1,18 +1,19 @@
 # clear
 
 **Framework**: XCUIAutomation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that represents the Clear key.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
@@ -21,13 +22,18 @@ A constant that represents the Clear key.
 static let clear: XCUIKeyboardKey
 ```
 
+```c
+extern XCUIKeyboardKey const XCUIKeyboardKeyClear;
+```
+
 ## See Also
 
-- [static let enter: XCUIKeyboardKey](xcuikeyboardkey/enter.md)
+### Other keys
+- [static let enter: XCUIKeyboardKey](./enter.md)
   A constant that represents the Enter key.
-- [static let escape: XCUIKeyboardKey](xcuikeyboardkey/escape.md)
+- [static let escape: XCUIKeyboardKey](./escape.md)
   A constant that represents the Escape key.
-- [static let `return`: XCUIKeyboardKey](xcuikeyboardkey/return.md)
+- [static let `return`: XCUIKeyboardKey](./return.md)
   A constant that represents the Return key.
 
 

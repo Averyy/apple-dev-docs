@@ -1,7 +1,8 @@
 # perRecordDeleteBlock
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The closure to execute when CloudKit deletes a record.
 
@@ -11,7 +12,7 @@ The closure to execute when CloudKit deletes a record.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -25,10 +26,12 @@ var perRecordDeleteBlock: ((CKRecord.ID, Result<Void, any Error>) -> Void)? { ge
 This property is a closure that returns no value and has the following parameters:
 
 - The ID of the record that CloudKit deletes.
-- A [`Result`](https://developer.apple.com/documentation/swift/result) that contains either - A successful `Result`
-- An error that provides information about a failure deleting the record.
+- A [`Result`](../../Swift/result.md) that contains either
 
-The closure executes once for each record in the [`recordIDsToDelete`](ckmodifyrecordsoperation/recordidstodelete.md) property. Each time the closure executes, it executes serially with respect to the other record completion blocks of the operation.
+  - A successful `Result`
+  - An error that provides information about a failure deleting the record.
+
+The closure executes once for each record in the [`recordIDsToDelete`](./recordidstodelete.md) property. Each time the closure executes, it executes serially with respect to the other record completion blocks of the operation.
 
 If you intend to use this closure to process results, set it before you execute the operation or submit the operation to a queue.
 

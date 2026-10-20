@@ -1,7 +1,8 @@
 # vfmodf(_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 For each vector element, calculates `X` modulo `Y`.
 
@@ -10,7 +11,7 @@ For each vector element, calculates `X` modulo `Y`.
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
 - macOS 10.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,11 +21,16 @@ For each vector element, calculates `X` modulo `Y`.
 func vfmodf(_: vFloat, _: vFloat) -> vFloat
 ```
 
+```c
+extern vFloat vfmodf(vFloat , vFloat );
+```
+
 ## See Also
 
-- [func vremainderf(vFloat, vFloat) -> vFloat](vremainderf(_:_:).md)
+### Remainder Functions (from vfp.h)
+- [func vremainderf(vFloat, vFloat) -> vFloat](./vremainderf%28_,_%29.md)
   For each vector element, calculates the remainder of `X`/`Y`, according to the IEEE 754 floating-point standard.
-- [func vremquof(vFloat, vFloat, UnsafeMutablePointer<vUInt32>) -> vFloat](vremquof(_:_:_:).md)
+- [func vremquof(vFloat, vFloat, UnsafeMutablePointer<vUInt32>) -> vFloat](./vremquof%28_,_,_%29.md)
   For each vector element, calculates the remainder of `X`/`Y`, according to the SANE standard. It stores into `QUO` the 7 low-order bits of the integer quotient, such that -127 <= `QUO` <= 127.
 
 

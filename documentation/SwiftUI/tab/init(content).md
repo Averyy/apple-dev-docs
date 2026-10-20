@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tab that you can use in a tab view, with an empty label.
 
@@ -20,17 +21,20 @@ Creates a new tab that you can use in a tab view, with an empty label.
 init(@ContentBuilder content: () -> Content) where Label == EmptyView
 ```
 
+Available when `Value` is `Never`, `Content` conforms to `View`, and `Label` conforms to `View`.
+
 ## Parameters
 
 - `content`: The view content of the tab.
 
 ## See Also
 
-- [init(value:content:)](tab/init(value:content:).md)
+### Creating a tab
+- [init(value:content:)](./init%28value,content%29.md)
   Creates a new tab that you can use in a tab view, with an empty label.
-- [init(role: TabRole?, content: () -> Content)](tab/init(role:content:).md)
+- [init(role: TabRole?, content: () -> Content)](./init%28role,content%29.md)
   Creates a new tab that you can use in a tab view, with an empty label.
-- [init(value:role:content:)](tab/init(value:role:content:).md)
+- [init(value:role:content:)](./init%28value,role,content%29.md)
   Creates a new tab with a label inferred from the role.
 
 

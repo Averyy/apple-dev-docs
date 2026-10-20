@@ -1,11 +1,12 @@
 # Decodable Implementations
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(from: any Decoder) throws](fromtobyaction/init(from:).md)
+- [init(from: any Decoder) throws](./init%28from%29.md)
   Creates a new instance from a decoder.
 
 

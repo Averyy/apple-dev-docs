@@ -1,7 +1,8 @@
 # HIDDeviceClient.Notification.inputReport(id:data:timestamp:)
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A notification that an input report was received from the device.
 

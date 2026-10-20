@@ -1,7 +1,8 @@
 # init(algorithm:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the object with an algorithm.
 
@@ -18,13 +19,18 @@ Creates the object with an algorithm.
 init(algorithm: ASCOSEAlgorithmIdentifier)
 ```
 
+```objc
+- (instancetype) initWithAlgorithm:(ASCOSEAlgorithmIdentifier) algorithm;
+```
+
 ## Parameters
 
 - `algorithm`: The algorithm to use for negitation between the authenticator and the relying party.
 
 ## See Also
 
-- [var algorithm: ASCOSEAlgorithmIdentifier](asauthorizationpublickeycredentialparameters/algorithm.md)
+### Getting the parameters
+- [var algorithm: ASCOSEAlgorithmIdentifier](./algorithm.md)
   The algorithm to use for negitation between the authenticator and the relying party.
 
 

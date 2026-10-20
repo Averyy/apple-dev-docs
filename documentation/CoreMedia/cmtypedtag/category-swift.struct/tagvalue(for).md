@@ -1,7 +1,8 @@
 # tagValue(for:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Convert a typed value to a raw tag value for this category.
 
@@ -30,7 +31,8 @@ The typed value as a wrapped tag value.
 
 ## See Also
 
-- [func value(for: CMTag.Value) -> TypedValue?](cmtypedtag/category-swift.struct/value(for:).md)
+### Transforming Tag Values
+- [func value(for: CMTag.Value) -> TypedValue?](./value%28for%29.md)
   Convert a tag value into a typed value valid for this category, if possible.
 
 

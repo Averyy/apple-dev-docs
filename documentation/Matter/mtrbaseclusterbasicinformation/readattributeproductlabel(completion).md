@@ -1,7 +1,8 @@
 # readAttributeProductLabel(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeProductLabel(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeProductLabel() async throws -> String
+```
+
+```objc
+- (void) readAttributeProductLabelWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

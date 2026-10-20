@@ -1,7 +1,8 @@
 # errorState
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var errorState: MTRRVCOperationalStateClusterErrorStateStruct { get set }
+```
+
+```objc
+@property (nonatomic, copy) MTRRVCOperationalStateClusterErrorStateStruct * errorState;
 ```
 
 

@@ -1,7 +1,8 @@
 # mayRequireContentKeysForMediaDataProcessing
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you can add this asset as a content key recipient to a content key session.
 
@@ -20,9 +21,14 @@ A Boolean value that indicates whether you can add this asset as a content key r
 var mayRequireContentKeysForMediaDataProcessing: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL mayRequireContentKeysForMediaDataProcessing;
+```
+
 ## See Also
 
-- [var resourceLoader: AVAssetResourceLoader](avurlasset/resourceloader.md)
+### Assisting with resource loading
+- [var resourceLoader: AVAssetResourceLoader](./resourceloader.md)
   The resource loader for the asset.
 
 

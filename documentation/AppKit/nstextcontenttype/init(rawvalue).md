@@ -1,12 +1,13 @@
 # init(rawValue:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new content type with the raw value you provide.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

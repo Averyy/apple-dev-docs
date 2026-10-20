@@ -1,7 +1,8 @@
 # init(name:deviceInfo:productInstanceID:MIDIProtocol:destinationCallback:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+

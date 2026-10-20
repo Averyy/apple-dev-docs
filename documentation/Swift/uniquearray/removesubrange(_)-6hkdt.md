@@ -1,7 +1,8 @@
 # removeSubrange(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified subrange of elements from the array.
 
@@ -22,7 +23,7 @@ mutating func removeSubrange(_ bounds: some RangeExpression<Int>)
 
 #### Discussion
 
-> **Note**: O(`self.count`)
+> **Complexity**: O(`self.count`)
 
 ## Parameters
 

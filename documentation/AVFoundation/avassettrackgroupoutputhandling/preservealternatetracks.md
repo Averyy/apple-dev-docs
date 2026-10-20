@@ -1,7 +1,8 @@
 # preserveAlternateTracks
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A policy that passes through alternate audio tracks from the source asset during export.
 
@@ -17,6 +18,10 @@ A policy that passes through alternate audio tracks from the source asset during
 
 ```swift
 static var preserveAlternateTracks: AVAssetTrackGroupOutputHandling { get }
+```
+
+```c
+AVAssetTrackGroupOutputHandlingPreserveAlternateTracks
 ```
 
 #### Discussion

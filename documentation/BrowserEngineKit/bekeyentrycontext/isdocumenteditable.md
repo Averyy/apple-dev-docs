@@ -1,7 +1,8 @@
 # isDocumentEditable
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Represents whether the web document is editable
 
@@ -15,6 +16,10 @@ Represents whether the web document is editable
 
 ```swift
 var isDocumentEditable: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite, getter=isDocumentEditable) BOOL documentEditable;
 ```
 
 

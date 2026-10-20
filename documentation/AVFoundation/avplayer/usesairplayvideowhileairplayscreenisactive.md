@@ -1,12 +1,15 @@
 # usesAirPlayVideoWhileAirPlayScreenIsActive
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the player automatically switches to AirPlay Video while AirPlay Screen is active.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 9.0
+
+> **Deprecated**: Use [`usesExternalPlaybackWhileExternalScreenIsActive`](./usesexternalplaybackwhileexternalscreenisactive.md) instead.
 
 ## Declaration
 
@@ -14,11 +17,16 @@ A Boolean value that indicates whether the player automatically switches to AirP
 var usesAirPlayVideoWhileAirPlayScreenIsActive: Bool { get set }
 ```
 
+```objc
+@property BOOL usesAirPlayVideoWhileAirPlayScreenIsActive;
+```
+
 ## See Also
 
-- [var allowsAirPlayVideo: Bool](avplayer/allowsairplayvideo.md)
+### Configuring AirPlay behavior
+- [var allowsAirPlayVideo: Bool](./allowsairplayvideo.md)
   A Boolean value that indicates whether the player allows AirPlay video playback.
-- [var isAirPlayVideoActive: Bool](avplayer/isairplayvideoactive.md)
+- [var isAirPlayVideoActive: Bool](./isairplayvideoactive.md)
   A Boolean value that indicates whether the player is playing video through AirPlay.
 
 

@@ -1,6 +1,8 @@
 # Managing groups of resources with argument buffers
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Sample Code  
+**Download**: [ManagingGroupsOfResourcesWithArgumentBuffers.zip](https://docs-assets.developer.apple.com/published/16dcfbb48cec/ManagingGroupsOfResourcesWithArgumentBuffers.zip)
 
 Create argument buffers to organize related resources.
 
@@ -19,7 +21,7 @@ This sample code project shows how to specify, encode, set, and access resources
 
 The Xcode project contains schemes for running the sample in macOS and iOS.  For each, it specifies targets for a Metal 2 and a Metal 3 version of the app.
 
-##### Reduce Cpu Overhead
+##### Reduce CPU overhead
 
 Metal commands are efficient, and incur minimal CPU overhead when apps access the GPU. However, each command does incur some overhead, so the sample app uses the following strategies to further reduce that amount:
 
@@ -28,23 +30,23 @@ Metal commands are efficient, and incur minimal CPU overhead when apps access th
 
 The Metal argument buffer feature reduces the number and performance cost of CPU commands in the sample app’s critical path, such as in the render loop. An argument buffer groups and encodes multiple resources within a single buffer instead of encoding each resource individually. By using argument buffers, the sample shifts a significant amount of CPU overhead from its critical path to its initial setup.
 
-##### Pack Resources Into Argument Buffers
+##### Pack resources into argument buffers
 
 Metal apps, particularly games, typically contain multiple 3D objects, each associated with a set of resources, such as textures, samplers, buffers, and constants. To render each object, the Metal apps encode commands that set these resources as arguments to a graphics function before issuing a draw call.
 
-Metal apps set individual resources as arguments by calling [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) methods, such as [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md) or [`setFragmentTexture(_:index:)`](mtlrendercommandencoder/setfragmenttexture(_:index:).md) for each resource.
+Metal apps set individual resources as arguments by calling [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) methods, such as [`setVertexBuffer(_:offset:index:)`](./mtlrendercommandencoder/setvertexbuffer%28_,offset,index%29.md) or [`setFragmentTexture(_:index:)`](./mtlrendercommandencoder/setfragmenttexture%28_,index%29.md) for each resource.
 
-![A layout diagram entitled “Encoded Comments” that depicts textures, samplers, buffers, and constants as individual arguments for different draw calls.](/images/com.apple.metal/argument-buffers-1-IndividualArguments@2x.png)
+![A layout diagram entitled “Encoded Comments” that depicts textures, samplers, buffers, and constants as individual arguments for different draw calls.](https://developer.apple.com/tutorials/images/com.apple.metal/argument-buffers-1-IndividualArguments@2x.png)
 
 Commands that set individual resources can become numerous and expensive, especially for large apps or games. Instead, the sample app groups related resources into an argument buffer and then sets that entire buffer as a single argument to a graphics function. This approach greatly reduces CPU overhead and still provides individual GPU access to the resources.
 
-`MTLBuffer` objects represent the argument buffers in the sample code. The sample code sets the objects as arguments by calling [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) methods, such as [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md) or [`setFragmentBuffer(_:offset:index:)`](mtlrendercommandencoder/setfragmentbuffer(_:offset:index:).md) for each argument buffer.
+`MTLBuffer` objects represent the argument buffers in the sample code. The sample code sets the objects as arguments by calling [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) methods, such as [`setVertexBuffer(_:offset:index:)`](./mtlrendercommandencoder/setvertexbuffer%28_,offset,index%29.md) or [`setFragmentBuffer(_:offset:index:)`](./mtlrendercommandencoder/setfragmentbuffer%28_,offset,index%29.md) for each argument buffer.
 
-![A layout diagram entitled “Encoded commands” that depicts encoded textures, samplers, buffers, and constants encoded as grouped arguments within an argument buffer, which is set as an individual argument for different draw calls.](/images/com.apple.metal/argument-buffers-2-ArgumentBuffers@2x.png)
+![A layout diagram entitled “Encoded commands” that depicts encoded textures, samplers, buffers, and constants encoded as grouped arguments within an argument buffer, which is set as an individual argument for different draw calls.](https://developer.apple.com/tutorials/images/com.apple.metal/argument-buffers-2-ArgumentBuffers@2x.png)
 
 > **Note**: To access individual resources in an argument buffer, the sample code calls the `useResource:usage:` method for each resource that it uses. Additional information is available in the “Enable the GPU memory of resources in the argument buffer” section below.
 
-##### Define Argument Buffers
+##### Define argument buffers
 
 The Metal Shading Language defines argument buffers as custom structures. Each structure element represents an individual resource that the shader code declares as a texture, sampler, buffer, or constant data type.
 
@@ -89,7 +91,7 @@ fragmentShader(       RasterizerData            in                 [[ stage_in ]
 
 The `fragmentShaderArgs` parameter is a buffer of type `FragmentShaderArguments`. When the sample code sets a `MTLBuffer` as an argument to the fragment function, the function interprets the data in the `fragmentShaderArgs` parameter as an argument buffer with a texture, sampler, buffer, and constant (as the `FragmentShaderArguments` structure defines).
 
-##### Encode Resources Into an Argument Buffer with Metal 2
+##### Encode resources into an argument buffer with Metal 2
 
 With Metal 2, the renderer encodes individual resources into an argument buffer before a buffer accesses it. It accomplishes this by creating a `MTLArgumentBufferEncoder` from a `MTLFunction` that uses an argument buffer.
 
@@ -110,7 +112,7 @@ NSUInteger argumentBufferLength = argumentEncoder.encodedLength;
 _fragmentShaderArgumentBuffer = [_device newBufferWithLength:argumentBufferLength options:0];
 ```
 
-The following example calls the [`setArgumentBuffer(_:offset:)`](mtlargumentencoder/setargumentbuffer(_:offset:).md) method to specify that `_fragmentShaderArgumentBuffer` is an argument buffer that the renderer can encode resources into:
+The following example calls the [`setArgumentBuffer(_:offset:)`](./mtlargumentencoder/setargumentbuffer%28_,offset%29.md) method to specify that `_fragmentShaderArgumentBuffer` is an argument buffer that the renderer can encode resources into:
 
 ```objective-c
 [argumentEncoder setArgumentBuffer:_fragmentShaderArgumentBuffer offset:0];
@@ -127,7 +129,7 @@ The example below encodes individual resources into the argument buffer by:
 [argumentEncoder setBuffer:_indirectBuffer offset:0 atIndex:AAPLArgumentBufferIDExampleBuffer];
 ```
 
-The renderer encodes constants a bit differently.  It embeds constant data directly into the argument buffer, instead of storing the data in another object that the argument buffer points to. The renderer calls the [`constantData(at:)`](mtlargumentencoder/constantdata(at:).md) method to retrieve the address in the argument buffer where the constant resides. Then, it sets the actual value of the constant, `bufferElements`, at the retrieved address.
+The renderer encodes constants a bit differently.  It embeds constant data directly into the argument buffer, instead of storing the data in another object that the argument buffer points to. The renderer calls the [`constantData(at:)`](./mtlargumentencoder/constantdata%28at%29.md) method to retrieve the address in the argument buffer where the constant resides. Then, it sets the actual value of the constant, `bufferElements`, at the retrieved address.
 
 ```objective-c
 uint32_t *numElementsAddress =  (uint32_t *)[argumentEncoder constantDataAtIndex:AAPLArgumentBufferIDExampleConstant];
@@ -135,7 +137,7 @@ uint32_t *numElementsAddress =  (uint32_t *)[argumentEncoder constantDataAtIndex
 *numElementsAddress = bufferElements;
 ```
 
-##### Set Resource Handles in an Argument Buffer with Metal 3
+##### Set resource handles in an argument buffer with Metal 3
 
 With Metal 3, the renderer writes GPU resource handles directly into a buffer’s contents.
 
@@ -158,24 +160,24 @@ argumentStructure->exampleSampler = _sampler.gpuResourceID;
 argumentStructure->exampleConstant = bufferElements;
 ```
 
-##### Enable the Gpu Memory of Resources in the Argument Buffer
+##### Enable the GPU memory of resources in the argument buffer
 
-Metal efficiently manages memory accessed by the GPU. However, before the GPU uses any resource, Metal needs to ensure that the GPU has access to the resource’s memory. Setting resources individually by calling [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) methods, such as [`setVertexBuffer(_:offset:index:)`](mtlrendercommandencoder/setvertexbuffer(_:offset:index:).md) or [`setFragmentTexture(_:index:)`](mtlrendercommandencoder/setfragmenttexture(_:index:).md), ensures that the resource’s memory is accessible to the GPU.
+Metal efficiently manages memory accessed by the GPU. However, before the GPU uses any resource, Metal needs to ensure that the GPU has access to the resource’s memory. Setting resources individually by calling [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md) methods, such as [`setVertexBuffer(_:offset:index:)`](./mtlrendercommandencoder/setvertexbuffer%28_,offset,index%29.md) or [`setFragmentTexture(_:index:)`](./mtlrendercommandencoder/setfragmenttexture%28_,index%29.md), ensures that the resource’s memory is accessible to the GPU.
 
-However, when the renderer encodes resources into an argument buffer, setting the argument buffer doesn’t set each of its resources individually. Metal doesn’t determine what resource’s memory to make accessible to the GPU by inspecting the argument buffer. Instead, the renderer calls the [`useResource(_:usage:stages:)`](mtlrendercommandencoder/useresource(_:usage:stages:).md) method to explicitly make a specific resource’s memory accessible to the GPU.
+However, when the renderer encodes resources into an argument buffer, setting the argument buffer doesn’t set each of its resources individually. Metal doesn’t determine what resource’s memory to make accessible to the GPU by inspecting the argument buffer. Instead, the renderer calls the [`useResource(_:usage:stages:)`](./mtlrendercommandencoder/useresource%28_,usage,stages%29.md) method to explicitly make a specific resource’s memory accessible to the GPU.
 
-> **Note**: Best practice is to call the [`useResource(_:usage:stages:)`](mtlrendercommandencoder/useresource(_:usage:stages:).md) method once for each resource during the lifetime of an [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md), even when using the resource in multiple draw calls. The [`useResource(_:usage:stages:)`](mtlrendercommandencoder/useresource(_:usage:stages:).md) method is specific to argument buffers, but calling it is far less expensive than setting each resource individually.
+> **Note**: Best practice is to call the [`useResource(_:usage:stages:)`](./mtlrendercommandencoder/useresource%28_,usage,stages%29.md) method once for each resource during the lifetime of an [`MTLRenderCommandEncoder`](./mtlrendercommandencoder.md), even when using the resource in multiple draw calls. The [`useResource(_:usage:stages:)`](./mtlrendercommandencoder/useresource%28_,usage,stages%29.md) method is specific to argument buffers, but calling it is far less expensive than setting each resource individually.
 
-##### Set Argument Buffers
+##### Set argument buffers
 
-The following example calls the [`useResource(_:usage:stages:)`](mtlrendercommandencoder/useresource(_:usage:stages:).md) method for the `_texture` and `_indirectBuffer` encoded resources in the argument buffer. These calls specify `MTLResourceUsage` values that further indicate which GPU operations to perform on each resource (the GPU samples the texture and reads the buffer):
+The following example calls the [`useResource(_:usage:stages:)`](./mtlrendercommandencoder/useresource%28_,usage,stages%29.md) method for the `_texture` and `_indirectBuffer` encoded resources in the argument buffer. These calls specify `MTLResourceUsage` values that further indicate which GPU operations to perform on each resource (the GPU samples the texture and reads the buffer):
 
 ```objective-c
 [renderEncoder useResource:_texture usage:MTLResourceUsageRead stages:MTLRenderStageFragment];
 [renderEncoder useResource:_indirectBuffer usage:MTLResourceUsageRead stages:MTLRenderStageFragment];
 ```
 
-> **Note**: The [`useResource(_:usage:stages:)`](mtlrendercommandencoder/useresource(_:usage:stages:).md) method doesn’t apply to samplers or constants because they’re not [`MTLResource`](mtlresource.md) instances.
+> **Note**: The [`useResource(_:usage:stages:)`](./mtlrendercommandencoder/useresource%28_,usage,stages%29.md) method doesn’t apply to samplers or constants because they’re not [`MTLResource`](./mtlresource.md) instances.
 
 The following example sets only `_fragmentShaderArgumentBuffer` as an argument to the fragment function. It doesn’t set the `_texture`, `_indirectBuffer`, `_sampler`, or `bufferElements` resources individually. This command allows the fragment function to access the argument buffer and its encoded resources:
 
@@ -185,7 +187,7 @@ The following example sets only `_fragmentShaderArgumentBuffer` as an argument t
                          atIndex:AAPLFragmentBufferIndexArguments];
 ```
 
-##### Access the Resources in an Argument Buffer
+##### Access the resources in an argument buffer
 
 Within a function, accessing encoded resources in an argument buffer is similar to accessing individual resources directly. The main difference is that the function accesses the resources as elements of the argument buffer structure.
 
@@ -207,29 +209,30 @@ float colorScale = fragmentShaderArgs.exampleBuffer[index];
 
 The example uses all four resources in the argument buffer to produce the final color for each fragment.
 
-##### Combine Argument Buffers with a Resource Heap
+##### Combine argument buffers with a resource heap
 
-The [`Using argument buffers with resource heaps`](using-argument-buffers-with-resource-heaps.md) sample code project demonstrates how to combine argument buffers with arrays of resources and resource heaps. This further reduces CPU overhead.
+The [Using argument buffers with resource heaps](./using-argument-buffers-with-resource-heaps.md) sample code project demonstrates how to combine argument buffers with arrays of resources and resource heaps. This further reduces CPU overhead.
 
 ## See Also
 
-- [Improving CPU performance by using argument buffers](improving-cpu-performance-by-using-argument-buffers.md)
+### Argument buffers
+- [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md)
   Optimize your app’s performance by grouping your resources into argument buffers.
-- [Tracking the resource residency of argument buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Tracking the resource residency of argument buffers](./tracking-the-resource-residency-of-argument-buffers.md)
   Optimize resource performance within an argument buffer.
-- [Indexing argument buffers](indexing-argument-buffers.md)
+- [Indexing argument buffers](./indexing-argument-buffers.md)
   Assign resource indices within an argument buffer.
-- [Rendering terrain dynamically with argument buffers](rendering-terrain-dynamically-with-argument-buffers.md)
+- [Rendering terrain dynamically with argument buffers](./rendering-terrain-dynamically-with-argument-buffers.md)
   Use argument buffers to render terrain in real time with a GPU-driven pipeline.
-- [Encoding argument buffers on the GPU](encoding-argument-buffers-on-the-gpu.md)
+- [Encoding argument buffers on the GPU](./encoding-argument-buffers-on-the-gpu.md)
   Use a compute pass to encode an argument buffer and access its arguments in a subsequent render pass.
-- [Using argument buffers with resource heaps](using-argument-buffers-with-resource-heaps.md)
+- [Using argument buffers with resource heaps](./using-argument-buffers-with-resource-heaps.md)
   Reduce CPU overhead by using arrays inside argument buffers and combining them with resource heaps.
-- [class MTLArgumentDescriptor](mtlargumentdescriptor.md)
+- [class MTLArgumentDescriptor](./mtlargumentdescriptor.md)
   A representation of an argument within an argument buffer.
-- [protocol MTLArgumentEncoder](mtlargumentencoder.md)
+- [protocol MTLArgumentEncoder](./mtlargumentencoder.md)
   An interface you can use to encode argument data into an argument buffer.
-- [var MTLAttributeStrideStatic: Int](mtlattributestridestatic.md)
+- [var MTLAttributeStrideStatic: Int](./mtlattributestridestatic.md)
 
 
 ---

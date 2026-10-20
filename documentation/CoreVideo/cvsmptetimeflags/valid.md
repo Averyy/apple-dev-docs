@@ -1,7 +1,8 @@
 # valid
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The full time is valid.
 
@@ -20,9 +21,14 @@ The full time is valid.
 static var valid: CVSMPTETimeFlags { get }
 ```
 
+```c
+kCVSMPTETimeValid
+```
+
 ## See Also
 
-- [static var running: CVSMPTETimeFlags](cvsmptetimeflags/running.md)
+### Constants
+- [static var running: CVSMPTETimeFlags](./running.md)
   Time is running.
 
 

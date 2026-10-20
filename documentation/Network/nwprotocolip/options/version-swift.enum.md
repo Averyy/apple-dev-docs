@@ -1,7 +1,8 @@
 # NWProtocolIP.Options.Version
 
 **Framework**: Network  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 IP versions to require on connections and listeners.
 
@@ -23,22 +24,23 @@ enum Version
 ## Topics
 
 ### Versions
-- [NWProtocolIP.Options.Version.any](nwprotocolip/options/version-swift.enum/any.md)
+- [NWProtocolIP.Options.Version.any](./version-swift.enum/any.md)
   Allow any IP version.
-- [NWProtocolIP.Options.Version.v4](nwprotocolip/options/version-swift.enum/v4.md)
+- [NWProtocolIP.Options.Version.v4](./version-swift.enum/v4.md)
   Require IP version 4.
-- [NWProtocolIP.Options.Version.v6](nwprotocolip/options/version-swift.enum/v6.md)
+- [NWProtocolIP.Options.Version.v6](./version-swift.enum/v6.md)
   Require IP version 6.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
 
 ## See Also
 
-- [var version: NWProtocolIP.Options.Version](nwprotocolip/options/version-swift.property.md)
+### Selecting an IP Version
+- [var version: NWProtocolIP.Options.Version](./version-swift.property.md)
   A required IP version that disables all other versions for a connection.
 
 

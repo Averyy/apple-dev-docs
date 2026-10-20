@@ -1,7 +1,8 @@
 # CFHTTPAuthenticationAppliesToRequest(_:_:)
 
 **Framework**: CFNetwork  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether a CFHTTPAuthentication object is associated with a CFHTTPMessage object.
 
@@ -19,6 +20,10 @@ Returns a Boolean value that indicates whether a CFHTTPAuthentication object is 
 func CFHTTPAuthenticationAppliesToRequest(_ auth: CFHTTPAuthentication, _ request: CFHTTPMessage) -> Bool
 ```
 
+```c
+extern Boolean CFHTTPAuthenticationAppliesToRequest(CFHTTPAuthenticationRef auth, CFHTTPMessageRef request);
+```
+
 #### Return Value
 
 `TRUE` if `auth` is associated with `request`, otherwise `FALSE`.
@@ -34,35 +39,36 @@ If this function returns `TRUE`, you can use `auth` to provide authentication in
 
 ## See Also
 
-- [class CFHTTPAuthentication](cfhttpauthentication.md)
+### HTTP Authentication
+- [class CFHTTPAuthentication](./cfhttpauthentication.md)
   An opaque reference representing HTTP authentication information.
-- [func CFHTTPAuthenticationCopyDomains(CFHTTPAuthentication) -> Unmanaged<CFArray>](cfhttpauthenticationcopydomains(_:).md)
+- [func CFHTTPAuthenticationCopyDomains(CFHTTPAuthentication) -> Unmanaged<CFArray>](./cfhttpauthenticationcopydomains%28_%29.md)
   Returns an array of domain URLs to which a given CFHTTPAuthentication object can be applied.
-- [func CFHTTPAuthenticationCopyMethod(CFHTTPAuthentication) -> Unmanaged<CFString>](cfhttpauthenticationcopymethod(_:).md)
+- [func CFHTTPAuthenticationCopyMethod(CFHTTPAuthentication) -> Unmanaged<CFString>](./cfhttpauthenticationcopymethod%28_%29.md)
   Gets the strongest authentication method that will be used when a CFHTTPAuthentication object is applied to a request.
-- [func CFHTTPAuthenticationCopyRealm(CFHTTPAuthentication) -> Unmanaged<CFString>](cfhttpauthenticationcopyrealm(_:).md)
+- [func CFHTTPAuthenticationCopyRealm(CFHTTPAuthentication) -> Unmanaged<CFString>](./cfhttpauthenticationcopyrealm%28_%29.md)
   Gets an authentication information’s namespace.
-- [func CFHTTPAuthenticationCreateFromResponse(CFAllocator?, CFHTTPMessage) -> Unmanaged<CFHTTPAuthentication>](cfhttpauthenticationcreatefromresponse(_:_:).md)
+- [func CFHTTPAuthenticationCreateFromResponse(CFAllocator?, CFHTTPMessage) -> Unmanaged<CFHTTPAuthentication>](./cfhttpauthenticationcreatefromresponse%28_,_%29.md)
   Uses an authentication failure response to create a CFHTTPAuthentication object.
-- [func CFHTTPAuthenticationGetTypeID() -> CFTypeID](cfhttpauthenticationgettypeid().md)
+- [func CFHTTPAuthenticationGetTypeID() -> CFTypeID](./cfhttpauthenticationgettypeid%28%29.md)
   Gets the Core Foundation type identifier for the CFHTTPAuthentication opaque type.
-- [func CFHTTPAuthenticationIsValid(CFHTTPAuthentication, UnsafeMutablePointer<CFStreamError>?) -> Bool](cfhttpauthenticationisvalid(_:_:).md)
+- [func CFHTTPAuthenticationIsValid(CFHTTPAuthentication, UnsafeMutablePointer<CFStreamError>?) -> Bool](./cfhttpauthenticationisvalid%28_,_%29.md)
   Returns a Boolean value that indicates whether a CFHTTPAuthentication object is valid.
-- [func CFHTTPAuthenticationRequiresAccountDomain(CFHTTPAuthentication) -> Bool](cfhttpauthenticationrequiresaccountdomain(_:).md)
+- [func CFHTTPAuthenticationRequiresAccountDomain(CFHTTPAuthentication) -> Bool](./cfhttpauthenticationrequiresaccountdomain%28_%29.md)
   Returns a Boolean value that indicates whether a CFHTTPAuthentication object uses an authentication method that requires an account domain.
-- [func CFHTTPAuthenticationRequiresOrderedRequests(CFHTTPAuthentication) -> Bool](cfhttpauthenticationrequiresorderedrequests(_:).md)
+- [func CFHTTPAuthenticationRequiresOrderedRequests(CFHTTPAuthentication) -> Bool](./cfhttpauthenticationrequiresorderedrequests%28_%29.md)
   Returns a Boolean value that indicates whether authentication requests should be made one at a time.
-- [func CFHTTPAuthenticationRequiresUserNameAndPassword(CFHTTPAuthentication) -> Bool](cfhttpauthenticationrequiresusernameandpassword(_:).md)
+- [func CFHTTPAuthenticationRequiresUserNameAndPassword(CFHTTPAuthentication) -> Bool](./cfhttpauthenticationrequiresusernameandpassword%28_%29.md)
   Returns a Boolean value that indicates whether a CFHTTPAuthentication object uses an authentication method that requires a username and a password.
-- [let kCFHTTPAuthenticationAccountDomain: CFString](kcfhttpauthenticationaccountdomain.md)
+- [let kCFHTTPAuthenticationAccountDomain: CFString](./kcfhttpauthenticationaccountdomain.md)
   Account domain to use for authentication.
-- [let kCFHTTPAuthenticationPassword: CFString](kcfhttpauthenticationpassword.md)
+- [let kCFHTTPAuthenticationPassword: CFString](./kcfhttpauthenticationpassword.md)
   Password to use for authentication.
-- [let kCFHTTPAuthenticationSchemeBasic: CFString](kcfhttpauthenticationschemebasic.md)
+- [let kCFHTTPAuthenticationSchemeBasic: CFString](./kcfhttpauthenticationschemebasic.md)
   Request the HTTP basic authentication scheme.
-- [let kCFHTTPAuthenticationSchemeDigest: CFString](kcfhttpauthenticationschemedigest.md)
+- [let kCFHTTPAuthenticationSchemeDigest: CFString](./kcfhttpauthenticationschemedigest.md)
   Request the HTTP digest authentication scheme.
-- [let kCFHTTPAuthenticationSchemeKerberos: CFString](kcfhttpauthenticationschemekerberos.md)
+- [let kCFHTTPAuthenticationSchemeKerberos: CFString](./kcfhttpauthenticationschemekerberos.md)
   Request the HTTP Kerberos authentication scheme.
 
 

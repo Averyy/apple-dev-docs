@@ -1,7 +1,8 @@
 # recipients
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the user handles of the desired recipients.
 
@@ -14,15 +15,20 @@ An array containing the user handles of the desired recipients.
 var recipients: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * recipients;
+```
+
 #### Discussion
 
 Each object in the array is an `NSString` object that contains the handle of a single recipient. The specific format of these handle varies from service to service. For example, some services use email addresses as handles.
 
 ## See Also
 
-- [var menuItemTitle: String](nssharingservice/menuitemtitle.md)
+### Configuring the Service
+- [var menuItemTitle: String](./menuitemtitle.md)
   The title of the service in the Share menu.
-- [var subject: String?](nssharingservice/subject.md)
+- [var subject: String?](./subject.md)
   The subject of the post.
 
 

@@ -1,7 +1,8 @@
 # chunkStorageRange
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset location and length of the sample’s chunk within the byte source.
 
@@ -14,13 +15,18 @@ The offset location and length of the sample’s chunk within the byte source.
 var chunkStorageRange: AVSampleCursorStorageRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVSampleCursorStorageRange chunkStorageRange;
+```
+
 ## See Also
 
-- [var byteSource: MEByteSource](mesamplecursorchunk/bytesource.md)
+### Inspecting a chunk
+- [var byteSource: MEByteSource](./bytesource.md)
   The byte source to use to read the data for the sample.
-- [var chunkInfo: AVSampleCursorChunkInfo](mesamplecursorchunk/chunkinfo.md)
+- [var chunkInfo: AVSampleCursorChunkInfo](./chunkinfo.md)
   An object that provides details about the chunk in the media.
-- [var sampleIndexWithinChunk: CFIndex](mesamplecursorchunk/sampleindexwithinchunk.md)
+- [var sampleIndexWithinChunk: CFIndex](./sampleindexwithinchunk.md)
   The offset index of the sample within the chunk, in samples.
 
 

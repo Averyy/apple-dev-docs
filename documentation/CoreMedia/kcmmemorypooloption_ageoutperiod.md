@@ -1,7 +1,8 @@
 # kCMMemoryPoolOption_AgeOutPeriod
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The period of time before the pool recycles its memory.
 
@@ -20,9 +21,13 @@ The period of time before the pool recycles its memory.
 let kCMMemoryPoolOption_AgeOutPeriod: CFString
 ```
 
+```c
+extern CFStringRef const kCMMemoryPoolOption_AgeOutPeriod;
+```
+
 #### Discussion
 
-Pass a value for this option to the [`CMMemoryPoolCreate(options:)`](cmmemorypoolcreate(options:).md) function.
+Pass a value for this option to the [`CMMemoryPoolCreate(options:)`](./cmmemorypoolcreate%28options%29.md) function.
 
 
 ---

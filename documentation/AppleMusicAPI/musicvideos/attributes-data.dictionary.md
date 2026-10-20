@@ -1,7 +1,8 @@
 # MusicVideos.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a music video resource.
 
@@ -10,7 +11,7 @@ The attributes for a music video resource.
 
 ## Declaration
 
-```swift
+```
 object MusicVideos.Attributes
 ```
 
@@ -21,6 +22,8 @@ object MusicVideos.Attributes
 - `artistUrl` (string): **(Extended)** The URL of the artist for this content.
 - `artwork` (Artwork) *(required)*: The artwork for the music video’s associated album.
 - `contentRating` (string): The Recording Industry Association of America (RIAA) rating of the content. No value means no rating.
+
+  **Allowed Values**: `clean`, `explicit`
 - `durationInMillis` (integer) *(required)*: The duration of the music video in milliseconds.
 - `editorialNotes` (EditorialNotes): The editorial notes for the music video.
 - `genreNames` ([string]) *(required)*: The music video’s associated genres.
@@ -35,14 +38,17 @@ object MusicVideos.Attributes
 - `trackNumber` (integer): The number of the music video in the album’s track list, when associated with an album.
 - `url` (string) *(required)*: The URL for sharing the music video in Apple Music.
 - `videoSubType` (string): The video subtype associated with the content.
+
+  **Allowed Values**: `preview`
 - `workId` (string): (Classical music only) A unique identifier for the associated work.
 - `workName` (string): (Classical music only) The name of the associated work.
 
 ## See Also
 
-- [object MusicVideos.Relationships](musicvideos/relationships-data.dictionary.md)
+### Related Objects
+- [object MusicVideos.Relationships](./relationships-data.dictionary.md)
   The relationships for a music video resource.
-- [object MusicVideos.Views](musicvideos/views-data.dictionary.md)
+- [object MusicVideos.Views](./views-data.dictionary.md)
   The views for a music video resource.
 
 

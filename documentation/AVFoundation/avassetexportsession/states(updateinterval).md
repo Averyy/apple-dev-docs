@@ -1,7 +1,8 @@
 # states(updateInterval:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Monitors the progress state of an export operation.
 
@@ -29,9 +30,10 @@ An asynchronous sequence of states.
 
 ## See Also
 
-- [AVAssetExportSession.State](avassetexportsession/state.md)
+### Monitoring export progress
+- [AVAssetExportSession.State](./state.md)
   Constants that indicate the state of an export operation.
-- [AVAssetExportSession.Status](avassetexportsession/status-swift.enum.md)
+- [AVAssetExportSession.Status](./status-swift.enum.md)
   Values that indicate the state of an export session.
 
 

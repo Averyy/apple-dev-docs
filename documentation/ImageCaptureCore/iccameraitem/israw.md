@@ -1,7 +1,8 @@
 # isRaw
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the item is a raw image file.
 
@@ -18,13 +19,18 @@ A Boolean value indicating whether the item is a raw image file.
 var isRaw: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isRaw) BOOL raw;
+```
+
 ## See Also
 
-- [var uti: String?](iccameraitem/uti.md)
+### Inspecting an Item’s Name and Type
+- [var uti: String?](./uti.md)
   The item’s uniform type identifier (UTI) string.
-- [var name: String?](iccameraitem/name.md)
+- [var name: String?](./name.md)
   The item’s name.
-- [var ptpObjectHandle: UInt32](iccameraitem/ptpobjecthandle.md)
+- [var ptpObjectHandle: UInt32](./ptpobjecthandle.md)
   The item’s `PTP` object handle value, if the camera uses the `PTP` protocol.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells a new device object to load a previously saved device’s suspend state.
@@ -16,6 +17,10 @@ Tells a new device object to load a previously saved device’s suspend state.
 func willResume(withSuspendState suspendState: Data, error: NSErrorPointer) -> Bool
 ```
 
+```objc
+- (bool) willResumeWithSuspendState:(NSData *) suspendState error:(NSError **) error;
+```
+
 #### Return Value
 
 A Boolean value that indicates whether the framework was able to start restoring the graphics data.
@@ -26,7 +31,7 @@ This method sets up the device to appear in the same state it was in before the 
 
 When resuming from an earlier suspended device, this must be the first method that you call on the newly created device object. When you call this method, ensure that the guest CPUs aren’t running.
 
-After you call this method, reattach any suspended displays before calling [`didResume()`](pgdevice/didresume().md).
+After you call this method, reattach any suspended displays before calling [`didResume()`](./didresume%28%29.md).
 
 ## Parameters
 
@@ -34,15 +39,16 @@ After you call this method, reattach any suspended displays before calling [`did
 
 ## See Also
 
-- [func willSuspend()](pgdevice/willsuspend.md)
+### Suspending and Resuming Graphics Processing
+- [func willSuspend()](./willsuspend%28%29.md)
   Notifies the virtual graphics device to start suspending graphics activities.
-- [func finishSuspend() -> Data?](pgdevice/finishsuspend.md)
+- [func finishSuspend() -> Data?](./finishsuspend%28%29.md)
   Notifies the virtualized graphics device to finish suspending graphics activities.
-- [func didResume()](pgdevice/didresume.md)
+- [func didResume()](./didresume%28%29.md)
   Tells the device object to finish any remaining work to resume processing of a previously saved device’s suspend state.
-- [let PGResumeErrorDomain: String](pgresumeerrordomain.md)
+- [let PGResumeErrorDomain: String](../pgresumeerrordomain.md)
   The error domain for suspend-resume actions.
-- [enum PGResumeErrorCode](pgresumeerrorcode.md)
+- [enum PGResumeErrorCode](../pgresumeerrorcode.md)
   Error codes for suspend-resume actions.
 
 

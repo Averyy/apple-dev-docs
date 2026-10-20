@@ -1,7 +1,8 @@
 # ASAutoFillURLScope.Scheme
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 26.2+
@@ -19,21 +20,21 @@ enum Scheme
 ## Topics
 
 ### Enumeration Cases
-- [ASAutoFillURLScope.Scheme.http](asautofillurlscope/scheme-swift.enum/http.md)
-- [ASAutoFillURLScope.Scheme.https](asautofillurlscope/scheme-swift.enum/https.md)
+- [ASAutoFillURLScope.Scheme.http](./scheme-swift.enum/http.md)
+- [ASAutoFillURLScope.Scheme.https](./scheme-swift.enum/https.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # version
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of this structure.
 
@@ -14,9 +15,13 @@ The version of this structure.
 var version: UInt32
 ```
 
+```c
+uint32_t version;
+```
+
 #### Discussion
 
-Set this to [`SEC_KEY_IMPORT_EXPORT_PARAMS_VERSION`](sec_key_import_export_params_version.md).
+Set this to [`SEC_KEY_IMPORT_EXPORT_PARAMS_VERSION`](../sec_key_import_export_params_version.md).
 
 
 ---

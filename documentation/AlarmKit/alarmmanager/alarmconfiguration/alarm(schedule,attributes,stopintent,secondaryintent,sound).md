@@ -1,7 +1,8 @@
 # alarm(schedule:attributes:stopIntent:secondaryIntent:sound:)
 
 **Framework**: AlarmKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a configuration that behaves like a traditional alarm.
 

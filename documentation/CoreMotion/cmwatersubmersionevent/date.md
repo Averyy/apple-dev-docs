@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time and date of the event.
 
@@ -18,11 +19,16 @@ The time and date of the event.
 var date: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * date;
+```
+
 ## See Also
 
-- [var state: CMWaterSubmersionEvent.State](cmwatersubmersionevent/state-swift.property.md)
+### Accessing event data
+- [var state: CMWaterSubmersionEvent.State](./state-swift.property.md)
   The new submersion state.
-- [CMWaterSubmersionEvent.State](cmwatersubmersionevent/state-swift.enum.md)
+- [CMWaterSubmersionEvent.State](./state-swift.enum.md)
   The device’s submersion state.
 
 

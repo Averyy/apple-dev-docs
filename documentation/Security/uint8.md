@@ -1,7 +1,8 @@
 # uint8
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias uint8 = UInt8
+```
+
+```c
+typedef uint8_t uint8;
 ```
 
 

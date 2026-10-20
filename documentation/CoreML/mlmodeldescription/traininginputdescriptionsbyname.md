@@ -1,7 +1,8 @@
 # trainingInputDescriptionsByName
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of the training input feature descriptions, which the model keys by the input’s name.
 
@@ -20,13 +21,18 @@ A dictionary of the training input feature descriptions, which the model keys by
 var trainingInputDescriptionsByName: [String : MLFeatureDescription] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDictionary<NSString *,MLFeatureDescription *> * trainingInputDescriptionsByName;
+```
+
 ## See Also
 
-- [var isUpdatable: Bool](mlmodeldescription/isupdatable.md)
+### Accessing update descriptions
+- [var isUpdatable: Bool](./isupdatable.md)
   A Boolean value that indicates whether you can update the model with additional training.
-- [var parameterDescriptionsByKey: [MLParameterKey : MLParameterDescription]](mlmodeldescription/parameterdescriptionsbykey.md)
+- [var parameterDescriptionsByKey: [MLParameterKey : MLParameterDescription]](./parameterdescriptionsbykey.md)
   A dictionary of the descriptions for the model’s parameters.
-- [class MLParameterDescription](mlparameterdescription.md)
+- [class MLParameterDescription](../mlparameterdescription.md)
   A description of a model parameter that includes a default value and a constraint, if applicable.
 
 

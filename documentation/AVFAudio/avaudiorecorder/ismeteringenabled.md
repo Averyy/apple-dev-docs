@@ -1,7 +1,8 @@
 # isMeteringEnabled
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether you’ve enabled the recorder to generate audio-level metering data.
 
@@ -20,17 +21,22 @@ A Boolean value that indicates whether you’ve enabled the recorder to generate
 var isMeteringEnabled: Bool { get set }
 ```
 
+```objc
+@property (getter=isMeteringEnabled) BOOL meteringEnabled;
+```
+
 #### Discussion
 
 By default, the recorder doesn’t generate audio-level metering data. Because metering uses computing resources, enable it only if you intend to use it.
 
 ## See Also
 
-- [func updateMeters()](avaudiorecorder/updatemeters.md)
+### Managing audio-level metering
+- [func updateMeters()](./updatemeters%28%29.md)
   Refreshes the average and peak power values for all channels of an audio recorder.
-- [func averagePower(forChannel: Int) -> Float](avaudiorecorder/averagepower(forchannel:).md)
+- [func averagePower(forChannel: Int) -> Float](./averagepower%28forchannel%29.md)
   Returns the average power, in decibels full-scale (dBFS), for an audio channel.
-- [func peakPower(forChannel: Int) -> Float](avaudiorecorder/peakpower(forchannel:).md)
+- [func peakPower(forChannel: Int) -> Float](./peakpower%28forchannel%29.md)
   Returns the peak power, in decibels full-scale (dBFS), for an audio channel.
 
 

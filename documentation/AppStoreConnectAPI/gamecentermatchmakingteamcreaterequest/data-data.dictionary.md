@@ -1,7 +1,8 @@
 # GameCenterMatchmakingTeamCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data structure of the request body you use to create a team.
 
@@ -10,23 +11,23 @@ The data structure of the request body you use to create a team.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingTeamCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingTeamCreateRequest.Data.Attributes](gamecentermatchmakingteamcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object GameCenterMatchmakingTeamCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes for a team that you create.
-- [object GameCenterMatchmakingTeamCreateRequest.Data.Relationships](gamecentermatchmakingteamcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object GameCenterMatchmakingTeamCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships from the team to other objects.
 
 ## Properties
 
 - `attributes` (GameCenterMatchmakingTeamCreateRequest.Data.Attributes) *(required)*
 - `relationships` (GameCenterMatchmakingTeamCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `gameCenterMatchmakingTeams`
 
 
 ---

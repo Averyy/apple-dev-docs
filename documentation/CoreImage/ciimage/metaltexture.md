@@ -1,7 +1,8 @@
 # metalTexture
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -17,11 +18,16 @@
 var metalTexture: (any MTLTexture)? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id<MTLTexture> metalTexture;
+```
+
 ## See Also
 
-- [var contentHeadroom: Float](ciimage/contentheadroom.md)
+### Instance Properties
+- [var contentHeadroom: Float](./contentheadroom.md)
   Returns the content headroom of the image.
-- [var isOpaque: Bool](ciimage/isopaque.md)
+- [var isOpaque: Bool](./isopaque.md)
   Returns YES if the image is known to have and alpha value of `1.0` over the entire image extent.
 
 

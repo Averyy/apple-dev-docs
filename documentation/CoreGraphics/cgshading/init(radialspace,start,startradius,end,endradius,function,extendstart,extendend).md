@@ -1,7 +1,8 @@
 # init(radialSpace:start:startRadius:end:endRadius:function:extendStart:extendEnd:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shading object to use for radial shading.
 
@@ -10,7 +11,7 @@ Creates a shading object to use for radial shading.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.2+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,17 @@ Creates a shading object to use for radial shading.
 init?(radialSpace space: CGColorSpace, start: CGPoint, startRadius: CGFloat, end: CGPoint, endRadius: CGFloat, function: CGFunction, extendStart: Bool, extendEnd: Bool)
 ```
 
+```c
+extern CGShadingRefCGShadingCreateRadial(CGColorSpaceRef space, CGPoint start, CGFloat startRadius, CGPoint end, CGFloat endRadius, CGFunctionRef function, bool extendStart, bool extendEnd);
+```
+
 #### Return Value
 
-A new Core Graphics radial shading. In Objective-C, you’re responsible for releasing this object using [`CGShadingRelease`](cgshadingrelease.md).
+A new Core Graphics radial shading. In Objective-C, you’re responsible for releasing this object using [`CGShadingRelease`](../cgshadingrelease.md).
 
 #### Discussion
 
-A radial shading is a color blend that varies between two circles. To draw the shading, call the function [`drawShading(_:)`](cgcontext/drawshading(_:).md).
+A radial shading is a color blend that varies between two circles. To draw the shading, call the function [`drawShading(_:)`](../cgcontext/drawshading%28_%29.md).
 
 ## Parameters
 
@@ -35,13 +40,14 @@ A radial shading is a color blend that varies between two circles. To draw the s
 - `startRadius`: The radius of the starting circle, in the shading’s target coordinate space.
 - `end`: The center of the ending circle, in the shading’s target coordinate space.
 - `endRadius`: The radius of the ending circle, in the shading’s target coordinate space.
-- `function`: A CGFunction object created by the function [`init(info:domainDimension:domain:rangeDimension:range:callbacks:)`](cgfunction/init(info:domaindimension:domain:rangedimension:range:callbacks:).md). This object refers to your function for creating a radial shading. Core Graphics retains this object; upon return, you may safely release it.
+- `function`: A CGFunction object created by the function [`init(info:domainDimension:domain:rangeDimension:range:callbacks:)`](../cgfunction/init%28info,domaindimension,domain,rangedimension,range,callbacks%29.md). This object refers to your function for creating a radial shading. Core Graphics retains this object; upon return, you may safely release it.
 - `extendStart`: A Boolean value that specifies whether to extend the shading beyond the starting circle.
 - `extendEnd`: A Boolean value that specifies whether to extend the shading beyond the ending circle.
 
 ## See Also
 
-- [init?(axialSpace: CGColorSpace, start: CGPoint, end: CGPoint, function: CGFunction, extendStart: Bool, extendEnd: Bool)](cgshading/init(axialspace:start:end:function:extendstart:extendend:).md)
+### Creating Shading Objects
+- [init?(axialSpace: CGColorSpace, start: CGPoint, end: CGPoint, function: CGFunction, extendStart: Bool, extendEnd: Bool)](./init%28axialspace,start,end,function,extendstart,extendend%29.md)
   Creates a shading object to use for axial shading.
 
 

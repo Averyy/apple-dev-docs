@@ -1,7 +1,8 @@
 # fastestEncoding
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fastest encoding to which the string can be converted without loss of information.
 

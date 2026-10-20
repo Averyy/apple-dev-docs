@@ -1,7 +1,8 @@
 # CSVType.integer
 
 **Framework**: TabularData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An integer type.
 

@@ -1,16 +1,17 @@
 # challengeComposeController(withPlayers:message:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a challenge compose view controller with pre-selected player identifiers and a preformatted, player-editable message.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 7.0+ - Deprecated in 8.0
+- iPadOS 7.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS 9.0+ - Deprecated in 17.0
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -18,9 +19,21 @@ Provides a challenge compose view controller with pre-selected player identifier
 func challengeComposeController(withPlayers playerIDs: [String]?, message: String?, completionHandler: GKChallengeComposeCompletionBlock? = nil) -> UIViewController?
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+- (UIViewController *) challengeComposeControllerWithPlayers:(NSArray<NSString *> *) playerIDs message:(NSString *) message completionHandler:(GKChallengeComposeCompletionBlock) completionHandler;
+```
+
+*macOS*
+
+```objc
+- (NSViewController *) challengeComposeControllerWithPlayers:(NSArray<NSString *> *) playerIDs message:(NSString *) message completionHandler:(GKChallengeComposeCompletionBlock) completionHandler;
+```
+
 #### Return Value
 
-A [`UIViewController`](https://developer.apple.com/documentation/uikit/uiviewcontroller) view containing the player identifiers and a player-editable message.
+A [`UIViewController`](../../UIKit/uiviewcontroller.md) view containing the player identifiers and a player-editable message.
 
 #### Discussion
 
@@ -30,17 +43,18 @@ When this method is called, it creates a new background task to handle the reque
 
 ## Parameters
 
-- `playerIDs`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects that contains the player identifiers that the challenge is to be sent to.
+- `playerIDs`: An array of [`NSString`](../../Foundation/nsstring.md) objects that contains the player identifiers that the challenge is to be sent to.
 - `message`: The preformatted, player-editable message that is being sent to other players.
 - `completionHandler`: A block to be called after the view controller has been displayed. Contains the reason the handler was called and all player identifiers that the challenge was sent to.
 
 ## See Also
 
-- [func challengeComposeController(withMessage: String?, players: [GKPlayer]?, completion: GKChallengeComposeHandler?) -> UIViewController](gkscore/challengecomposecontroller(withmessage:players:completion:).md)
+### Issuing a Score Challenge
+- [func challengeComposeController(withMessage: String?, players: [GKPlayer]?, completion: GKChallengeComposeHandler?) -> UIViewController](./challengecomposecontroller%28withmessage,players,completion%29.md)
   Provides a challenge compose view controller with preselected player identifiers and a preformatted, player-editable message.
-- [typealias GKChallengeComposeHandler](gkchallengecomposehandler.md)
+- [typealias GKChallengeComposeHandler](../gkchallengecomposehandler.md)
   A completion block that provides information about the player who issues a challenge and the players who receive it.
-- [func challengeComposeController(withMessage: String?, players: [GKPlayer]?, completionHandler: GKChallengeComposeCompletionBlock?) -> UIViewController](gkscore/challengecomposecontroller(withmessage:players:completionhandler:).md)
+- [func challengeComposeController(withMessage: String?, players: [GKPlayer]?, completionHandler: GKChallengeComposeCompletionBlock?) -> UIViewController](./challengecomposecontroller%28withmessage,players,completionhandler%29.md)
   Provides a challenge compose view controller with pre-selected player identifiers and a preformatted, player-editable message.
 
 

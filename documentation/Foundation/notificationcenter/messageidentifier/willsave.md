@@ -1,7 +1,8 @@
 # willSave
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -17,6 +18,8 @@
 ```swift
 static var willSave: NotificationCenter.BaseMessageIdentifier<NSManagedObjectContext.WillSaveMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSManagedObjectContext.WillSaveMessage>`.
 
 
 ---

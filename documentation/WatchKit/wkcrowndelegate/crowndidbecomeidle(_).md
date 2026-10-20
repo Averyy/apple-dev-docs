@@ -1,7 +1,8 @@
 # crownDidBecomeIdle(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the user stops rotating the crown.
 
@@ -14,9 +15,13 @@ Called when the user stops rotating the crown.
 optional func crownDidBecomeIdle(_ crownSequencer: WKCrownSequencer?)
 ```
 
+```objc
+- (void) crownDidBecomeIdle:(WKCrownSequencer *) crownSequencer;
+```
+
 #### Discussion
 
-The crown sequencer calls this method when the crown finally comes to rest. The sequencer calls this method only after one or more calls to the [`crownDidRotate(_:rotationalDelta:)`](wkcrowndelegate/crowndidrotate(_:rotationaldelta:).md) method.
+The crown sequencer calls this method when the crown finally comes to rest. The sequencer calls this method only after one or more calls to the [`crownDidRotate(_:rotationalDelta:)`](./crowndidrotate%28_,rotationaldelta%29.md) method.
 
 ## Parameters
 
@@ -24,9 +29,11 @@ The crown sequencer calls this method when the crown finally comes to rest. The 
 
 ## See Also
 
-- [var isIdle: Bool](wkcrownsequencer/isidle.md)
+### Related Documentation
+- [var isIdle: Bool](../wkcrownsequencer/isidle.md)
   A Boolean value indicating whether the crown is at rest.
-- [func crownDidRotate(WKCrownSequencer?, rotationalDelta: Double)](wkcrowndelegate/crowndidrotate(_:rotationaldelta:).md)
+### Receiving Crown Events
+- [func crownDidRotate(WKCrownSequencer?, rotationalDelta: Double)](./crowndidrotate%28_,rotationaldelta%29.md)
   Called when the user rotates the crown.
 
 

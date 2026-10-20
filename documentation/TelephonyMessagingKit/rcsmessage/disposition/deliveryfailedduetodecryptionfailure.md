@@ -1,7 +1,8 @@
 # RCSMessage.Disposition.deliveryFailedDueToDecryptionFailure
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The recipient device was unable to decrypt the encrypted message.
 
@@ -16,15 +17,16 @@ case deliveryFailedDueToDecryptionFailure
 
 ## See Also
 
-- [RCSMessage.Disposition.delivered](rcsmessage/disposition/delivered.md)
+### Accessing disposition values
+- [RCSMessage.Disposition.delivered](./delivered.md)
   The carrier delivered the message.
-- [RCSMessage.Disposition.deliveryFailed](rcsmessage/disposition/deliveryfailed.md)
+- [RCSMessage.Disposition.deliveryFailed](./deliveryfailed.md)
   The carrier failed to deliver the message.
-- [RCSMessage.Disposition.displayed](rcsmessage/disposition/displayed.md)
+- [RCSMessage.Disposition.displayed](./displayed.md)
   The recipient device displayed the message.
-- [RCSMessage.Disposition.interworkingDelivered](rcsmessage/disposition/interworkingdelivered.md)
+- [RCSMessage.Disposition.interworkingDelivered](./interworkingdelivered.md)
   The carrier used a non-CPM technology to deliver the message.
-- [RCSMessage.Disposition.interworkingFailed](rcsmessage/disposition/interworkingfailed.md)
+- [RCSMessage.Disposition.interworkingFailed](./interworkingfailed.md)
   The carrier attempted to use a non-CPM technology to deliver the message, but failed.
 
 

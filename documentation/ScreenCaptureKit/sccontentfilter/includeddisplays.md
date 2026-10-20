@@ -1,7 +1,8 @@
 # includedDisplays
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 18.2+
@@ -11,6 +12,10 @@
 
 ```swift
 var includedDisplays: [SCDisplay] { get }
+```
+
+```objc
+@property (nonatomic, readonly, nonnull) NSArray<SCDisplay *> * includedDisplays;
 ```
 
 #### Discussion

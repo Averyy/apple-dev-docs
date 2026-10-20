@@ -1,7 +1,8 @@
 # vImageCVImageFormat.Format.format16LE565
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A little-endian 16-bit, RGB pixel format with 5 bits for red and blue, and 6 bits for green.
 
@@ -11,7 +12,7 @@ A little-endian 16-bit, RGB pixel format with 5 bits for red and blue, and 6 bit
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,21 +23,22 @@ case format16LE565
 
 ## See Also
 
-- [vImageCVImageFormat.Format.format16LE555](vimagecvimageformat/format/format16le555.md)
+### RGB format constants
+- [vImageCVImageFormat.Format.format16LE555](./format16le555.md)
   A little-endian 16-bit, RGB pixel format with 5 bits per channel.
-- [vImageCVImageFormat.Format.format16BE555](vimagecvimageformat/format/format16be555.md)
+- [vImageCVImageFormat.Format.format16BE555](./format16be555.md)
   A big-endian 16-bit, RGB pixel format with 5 bits per channel.
-- [vImageCVImageFormat.Format.format16BE565](vimagecvimageformat/format/format16be565.md)
+- [vImageCVImageFormat.Format.format16BE565](./format16be565.md)
   A big-endian 16-bit, RGB pixel format with 5 bits for red and blue, and 6 bits for green.
-- [vImageCVImageFormat.Format.format24RGB](vimagecvimageformat/format/format24rgb.md)
+- [vImageCVImageFormat.Format.format24RGB](./format24rgb.md)
   A 24-bit, RGB pixel format with 8 bits per channel.
-- [vImageCVImageFormat.Format.format24BGR](vimagecvimageformat/format/format24bgr.md)
+- [vImageCVImageFormat.Format.format24BGR](./format24bgr.md)
   A 24-bit, BGR pixel format with 8 bits per channel.
-- [vImageCVImageFormat.Format.format30RGB](vimagecvimageformat/format/format30rgb.md)
+- [vImageCVImageFormat.Format.format30RGB](./format30rgb.md)
   A big-endian 30-bit, RGB pixel format with 10 bits per channel.
-- [vImageCVImageFormat.Format.format30RGBLEPackedWideGamut](vimagecvimageformat/format/format30rgblepackedwidegamut.md)
+- [vImageCVImageFormat.Format.format30RGBLEPackedWideGamut](./format30rgblepackedwidegamut.md)
   A little-endian 30-bit, wide-gamut RGB pixel format with 10 bits per channel.
-- [vImageCVImageFormat.Format.format48RGB](vimagecvimageformat/format/format48rgb.md)
+- [vImageCVImageFormat.Format.format48RGB](./format48rgb.md)
   A big-endian 48-bit, RGB pixel format with 16 bits per channel.
 
 

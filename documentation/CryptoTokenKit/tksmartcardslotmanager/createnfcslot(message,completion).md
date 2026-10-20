@@ -1,7 +1,8 @@
 # createNFCSlot(message:completion:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates an NFC smart card slot using the device’s hardware and presents a system UI.
 
@@ -13,7 +14,15 @@ Creates an NFC smart card slot using the device’s hardware and presents a syst
 ## Declaration
 
 ```swift
+func createNFCSlot(message: String?, completion: @escaping @Sendable (TKSmartCardSlotNFCSession?, (any Error)?) -> Void)
+```
+
+```swift
 func createNFCSlot(message: String?) async throws -> TKSmartCardSlotNFCSession
+```
+
+```objc
+- (void) createNFCSlotWithMessage:(NSString *) message completion:(void (^)(TKSmartCardSlotNFCSession *session, NSError *error)) completion;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # CLError.Code.deferredAccuracyTooLow
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that indicates deferred mode isn’t supported for the requested accuracy.
 
@@ -20,19 +21,24 @@ A constant that indicates deferred mode isn’t supported for the requested accu
 case deferredAccuracyTooLow
 ```
 
+```c
+kCLErrorDeferredAccuracyTooLow
+```
+
 #### Discussion
 
-The accuracy must be set to [`kCLLocationAccuracyBest`](kcllocationaccuracybest.md) or [`kCLLocationAccuracyBestForNavigation`](kcllocationaccuracybestfornavigation.md).
+The accuracy must be set to [`kCLLocationAccuracyBest`](../../kcllocationaccuracybest.md) or [`kCLLocationAccuracyBestForNavigation`](../../kcllocationaccuracybestfornavigation.md).
 
 ## See Also
 
-- [CLError.Code.deferredFailed](clerror-swift.struct/code/deferredfailed.md)
+### Getting deferred location update errors
+- [CLError.Code.deferredFailed](./deferredfailed.md)
   A constant that indicates the location manager didn’t enter deferred mode for an unknown reason.
-- [CLError.Code.deferredCanceled](clerror-swift.struct/code/deferredcanceled.md)
+- [CLError.Code.deferredCanceled](./deferredcanceled.md)
   A constant that indicates your app or the location manager canceled the request for deferred updates.
-- [CLError.Code.deferredDistanceFiltered](clerror-swift.struct/code/deferreddistancefiltered.md)
+- [CLError.Code.deferredDistanceFiltered](./deferreddistancefiltered.md)
   A constant that indicates deferred mode doesn’t support distance filters.
-- [CLError.Code.deferredNotUpdatingLocation](clerror-swift.struct/code/deferrednotupdatinglocation.md)
+- [CLError.Code.deferredNotUpdatingLocation](./deferrednotupdatinglocation.md)
   A constant that indicates the location manager didn’t enter deferred mode because location updates were already disabled or paused.
 
 

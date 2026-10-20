@@ -1,7 +1,8 @@
 # VNDetectAnimalBodyPoseRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request that detects an animal body pose.
 
@@ -19,35 +20,40 @@ A request that detects an animal body pose.
 class VNDetectAnimalBodyPoseRequest
 ```
 
+```objc
+@interface VNDetectAnimalBodyPoseRequest : VNImageBasedRequest
+```
+
 ## Topics
 
 ### Determining Supported Joints
-- [var supportedJointNames: [VNAnimalBodyPoseObservation.JointName]](vndetectanimalbodyposerequest/supportedjointnames.md)
+- [var supportedJointNames: [VNAnimalBodyPoseObservation.JointName]](./vndetectanimalbodyposerequest/supportedjointnames.md)
   Retrieves the joint names the request supports.
-- [var supportedJointsGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName]](vndetectanimalbodyposerequest/supportedjointsgroupnames.md)
+- [var supportedJointsGroupNames: [VNAnimalBodyPoseObservation.JointsGroupName]](./vndetectanimalbodyposerequest/supportedjointsgroupnames.md)
   Retrieves the joint group names the request supports.
 ### Accessing the Results
-- [var results: [VNAnimalBodyPoseObservation]?](vndetectanimalbodyposerequest/results.md)
+- [var results: [VNAnimalBodyPoseObservation]?](./vndetectanimalbodyposerequest/results.md)
   The animal body pose the request observes.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Detecting animal body poses with Vision](detecting-animal-body-poses-with-vision.md)
+### Animal body pose detection
+- [Detecting animal body poses with Vision](./detecting-animal-body-poses-with-vision.md)
   Draw the skeleton of an animal by using Vision’s capability to detect animal body poses.
-- [class VNAnimalBodyPoseObservation](vnanimalbodyposeobservation.md)
+- [class VNAnimalBodyPoseObservation](./vnanimalbodyposeobservation.md)
   An observation that provides the animal body points the analysis recognizes.
 
 

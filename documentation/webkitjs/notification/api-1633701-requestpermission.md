@@ -1,14 +1,15 @@
 # requestPermission
 
 **Framework**: WebKit JS  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - Safari Desktop 9.0+
 
 ## Declaration
 
-```swift
+```
 static void requestPermission(
     optional NotificationPermissionCallback? callback
 );

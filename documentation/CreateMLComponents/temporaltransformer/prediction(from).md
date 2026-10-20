@@ -1,7 +1,8 @@
 # prediction(from:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a prediction on a single input.
 
@@ -30,9 +31,10 @@ A classification array.
 
 ## See Also
 
-- [func callAsFunction<S>(S, eventHandler: EventHandler?) async throws -> Self.OutputSequence](temporaltransformer/callasfunction(_:eventhandler:).md)
+### Transforming and predicting
+- [func callAsFunction<S>(S, eventHandler: EventHandler?) async throws -> Self.OutputSequence](./callasfunction%28_,eventhandler%29.md)
   Performs the transformation on an input sequence.
-- [func callAsFunction<S>(to: S, eventHandler: EventHandler?) async throws -> [Self.OutputSequence]](temporaltransformer/callasfunction(to:eventhandler:).md)
+- [func callAsFunction<S>(to: S, eventHandler: EventHandler?) async throws -> [Self.OutputSequence]](./callasfunction%28to,eventhandler%29.md)
   Performs the transformation on a sequence of inputs.
 
 

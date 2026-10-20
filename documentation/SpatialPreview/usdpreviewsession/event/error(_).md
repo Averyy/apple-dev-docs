@@ -1,13 +1,14 @@
 # USDPreviewSession.Event.error(_:)
 
 **Framework**: Spatial Preview  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Session error (editing read-only stage, etc.)
 
 **Availability**:
 - macOS 27.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

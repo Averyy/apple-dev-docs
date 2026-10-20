@@ -1,7 +1,8 @@
 # MaterialParameterTypes.BlendMode
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Modes that describe how materials should be blended with content behind them.
 
@@ -22,18 +23,18 @@ enum BlendMode
 ## Topics
 
 ### Enumeration Cases
-- [MaterialParameterTypes.BlendMode.add](materialparametertypes/blendmode/add.md)
+- [MaterialParameterTypes.BlendMode.add](./blendmode/add.md)
   Blend by adding the material’s color to the background color, ignoring alpha.
-- [MaterialParameterTypes.BlendMode.alpha](materialparametertypes/blendmode/alpha.md)
+- [MaterialParameterTypes.BlendMode.alpha](./blendmode/alpha.md)
   Blend by multiplying the material’s color value by its alpha value
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

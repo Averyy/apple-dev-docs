@@ -1,12 +1,13 @@
 # Adding the Virtualization Entitlement to Your Project
 
-**Framework**: Virtualization
+**Framework**: Virtualization  
+**Role**: Article
 
 Configure your project to use the Virtualization framework.
 
 #### Overview
 
-To use the Virtualization APIs, a process must have the [`com.apple.security.virtualization`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.security.virtualization) entitlement.
+To use the Virtualization APIs, a process must have the [`com.apple.security.virtualization`](../BundleResources/entitlements/com.apple.security.virtualization.md) entitlement.
 
 Do the following to add this entitlement to your app:
 
@@ -19,13 +20,14 @@ Do the following to add this entitlement to your app:
 
 The entitlements file resembles the example settings shown below:
 
-![A screenshot that shows an entitlements file with the settings that allow the use of Virtualization framework.](/images/com.apple.virtualization/media-4056508@2x.png)
+![A screenshot that shows an entitlements file with the settings that allow the use of Virtualization framework.](https://developer.apple.com/tutorials/images/com.apple.virtualization/media-4056508@2x.png)
 
 ## See Also
 
-- [com.apple.security.virtualization](../bundleresources/entitlements/com.apple.security.virtualization.md)
+### Essentials
+- [com.apple.security.virtualization](../BundleResources/entitlements/com.apple.security.virtualization.md)
   A Boolean value that indicates whether your app can use the Virtualization framework.
-- [Using iCloud with macOS virtual machines](using-icloud-with-macos-virtual-machines.md)
+- [Using iCloud with macOS virtual machines](./using-icloud-with-macos-virtual-machines.md)
   Access iCloud from macOS guest virtual machines.
 
 

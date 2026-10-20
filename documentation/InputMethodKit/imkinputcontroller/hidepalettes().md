@@ -1,7 +1,8 @@
 # hidePalettes()
 
 **Framework**: InputMethodKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs an input method that it should  close any visible user interface.
 
@@ -12,6 +13,10 @@ Informs an input method that it should  close any visible user interface.
 
 ```swift
 func hidePalettes()
+```
+
+```objc
+- (void) hidePalettes;
 ```
 
 

@@ -1,7 +1,8 @@
 # PlaceDescriptor.PlaceRepresentation.address(_:)
 
 **Framework**: GeoToolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Full address, as you’d use in postal or administrative scenarios.
 
@@ -22,9 +23,10 @@ case address(String)
 
 ## See Also
 
-- [PlaceDescriptor.PlaceRepresentation.coordinate(_:)](placedescriptor/placerepresentation/coordinate(_:).md)
+### Enumeration cases
+- [PlaceDescriptor.PlaceRepresentation.coordinate(_:)](./coordinate%28_%29.md)
   A physical location described by its latitude and longitude.
-- [PlaceDescriptor.PlaceRepresentation.deviceLocation(_:)](placedescriptor/placerepresentation/devicelocation(_:).md)
+- [PlaceDescriptor.PlaceRepresentation.deviceLocation(_:)](./devicelocation%28_%29.md)
   Physical location in a coordinate system that a device would collect.
 
 

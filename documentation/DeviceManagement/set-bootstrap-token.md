@@ -1,7 +1,8 @@
 # Set Bootstrap Token
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Sends the bootstrap token to the server.
 
@@ -14,8 +15,8 @@ Sends the bootstrap token to the server.
 
 ## Mentions
 
-- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
-- [Returning a managed device to service](returning-a-managed-device-to-service.md)
+- [Deploying software updates using declarative management](./deploying-software-updates-using-declarative-management.md)
+- [Returning a managed device to service](./returning-a-managed-device-to-service.md)
 
 #### Discussion
 
@@ -25,7 +26,7 @@ This request changes or clears a device’s bootstrap token data that the server
 
 Requires a device enrolled using Automated Device Enrollment.
 
-##### Check in Availability
+##### Check-in availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +38,7 @@ Requires a device enrolled using Automated Device Enrollment.
 ## Topics
 
 ### Requests
-- [object SetBootstrapTokenRequest](setbootstraptokenrequest.md)
+- [object SetBootstrapTokenRequest](./setbootstraptokenrequest.md)
   The set bootstrap token request details.
 
 ## Endpoint
@@ -46,23 +47,31 @@ Requires a device enrolled using Automated Device Enrollment.
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm-checkin`  
+**Type**: `SetBootstrapTokenRequest`
+
 The request object the system sends for the `SetBootstrapToken` request.
+
+## Responses
+
+- `200` OK
 
 ## See Also
 
-- [Authenticate](authenticate.md)
+### Commands
+- [Authenticate](./authenticate.md)
   Authenticates a user during MDM payload installation.
-- [User Authenticate](user-authenticate.md)
+- [User Authenticate](./user-authenticate.md)
   Authenticates a user with a two-step authentication protocol.
-- [Check Out](check-out.md)
+- [Check Out](./check-out.md)
   Responds to the removal of the MDM enrollment profile from a device.
-- [Get Token](get-token.md)
+- [Get Token](./get-token.md)
   Gets a token from the server.
-- [Token Update](token-update.md)
+- [Token Update](./token-update.md)
   Updates the token for a device on the server.
-- [Get Bootstrap Token](get-bootstrap-token.md)
+- [Get Bootstrap Token](./get-bootstrap-token.md)
   Gets the bootstrap token from the server.
-- [Return To Service](return-to-service.md)
+- [Return To Service](./return-to-service.md)
   Gets the return-to-service configuration from the server.
 
 

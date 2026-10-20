@@ -1,7 +1,8 @@
 # Package.Dependency.SourceControlRequirement.branch(_:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A branch based requirement.
 

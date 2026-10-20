@@ -1,7 +1,8 @@
 # writeAttributeKeypadLockout(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeKeypadLockout(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeKeypadLockout(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeKeypadLockoutWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # browserViewController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The document browser view controller.
 
@@ -17,9 +18,13 @@ The document browser view controller.
 var browserViewController: UIDocumentBrowserViewController { get set }
 ```
 
+```objc
+@property (nonatomic, strong) UIDocumentBrowserViewController * browserViewController;
+```
+
 ## Mentions
 
-- [Customizing a document-based app’s launch experience](customizing-a-document-based-app-s-launch-experience.md)
+- [Customizing a document-based app’s launch experience](../../customizing-a-document-based-app-s-launch-experience.md)
 
 #### Discussion
 
@@ -27,11 +32,12 @@ Use this property to configure the launch scene’s document browser.
 
 ## See Also
 
-- [var title: String](uidocumentviewcontroller/launchoptions-swift.class/title.md)
+### Configuring the appearance
+- [var title: String](./title.md)
   The title that appears in the title view.
-- [var background: UIBackgroundConfiguration](uidocumentviewcontroller/launchoptions-swift.class/background.md)
+- [var background: UIBackgroundConfiguration](./background.md)
   A configuration that describes the launch scene’s background.
-- [var documentTargetView: UIView?](uidocumentviewcontroller/launchoptions-swift.class/documenttargetview.md)
+- [var documentTargetView: UIView?](./documenttargetview.md)
   The document target view.
 
 

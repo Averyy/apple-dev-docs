@@ -1,7 +1,8 @@
 # AVCaptureDevice.SystemPressureState.Level
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that defines system pressure state levels.
 
@@ -18,35 +19,40 @@ A structure that defines system pressure state levels.
 struct Level
 ```
 
+```c
+typedef NSString * AVCaptureSystemPressureLevel;
+```
+
 ## Topics
 
 ### System pressure levels
-- [static let nominal: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct/nominal.md)
+- [static let nominal: AVCaptureDevice.SystemPressureState.Level](./level-swift.struct/nominal.md)
   A level that indicates the system pressure is normal and not under pressure.
-- [static let fair: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct/fair.md)
+- [static let fair: AVCaptureDevice.SystemPressureState.Level](./level-swift.struct/fair.md)
   A level that indicates that system pressure is slightly elevated.
-- [static let serious: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct/serious.md)
+- [static let serious: AVCaptureDevice.SystemPressureState.Level](./level-swift.struct/serious.md)
   A level that indicates that system pressure is highly elevated.
-- [static let critical: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct/critical.md)
+- [static let critical: AVCaptureDevice.SystemPressureState.Level](./level-swift.struct/critical.md)
   System pressure is critically elevated.
-- [static let shutdown: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.struct/shutdown.md)
+- [static let shutdown: AVCaptureDevice.SystemPressureState.Level](./level-swift.struct/shutdown.md)
   System pressure is beyond critical, so the capture system has shut down.
 ### Initializers
-- [init(rawValue: String)](avcapturedevice/systempressurestate-swift.class/level-swift.struct/init(rawvalue:).md)
+- [init(rawValue: String)](./level-swift.struct/init%28rawvalue%29.md)
   Creates a system pressure level from its raw string value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var level: AVCaptureDevice.SystemPressureState.Level](avcapturedevice/systempressurestate-swift.class/level-swift.property.md)
+### Overall level
+- [var level: AVCaptureDevice.SystemPressureState.Level](./level-swift.property.md)
   The overall level of performance constraints on the capture system.
 
 

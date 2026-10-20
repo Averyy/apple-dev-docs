@@ -1,7 +1,8 @@
 # AVKitMetadataIdentifierPlaybackProgress
 
 **Framework**: AVKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The playback progress published through the Now Playing Info Center.
 
@@ -14,13 +15,18 @@ The playback progress published through the Now Playing Info Center.
 let AVKitMetadataIdentifierPlaybackProgress: String
 ```
 
+```c
+extern NSString * const AVKitMetadataIdentifierPlaybackProgress;
+```
+
 ## See Also
 
-- [let AVKitMetadataIdentifierExternalContentIdentifier: String](avkitmetadataidentifierexternalcontentidentifier.md)
+### Nondisplayed metadata
+- [let AVKitMetadataIdentifierExternalContentIdentifier: String](./avkitmetadataidentifierexternalcontentidentifier.md)
   The identifier for external content published through the Now Playing Info Center.
-- [let AVKitMetadataIdentifierExternalUserProfileIdentifier: String](avkitmetadataidentifierexternaluserprofileidentifier.md)
+- [let AVKitMetadataIdentifierExternalUserProfileIdentifier: String](./avkitmetadataidentifierexternaluserprofileidentifier.md)
   The identifier for an external user profile published through the Now Playing Info Center.
-- [let AVKitMetadataIdentifierServiceIdentifier: String](avkitmetadataidentifierserviceidentifier.md)
+- [let AVKitMetadataIdentifierServiceIdentifier: String](./avkitmetadataidentifierserviceidentifier.md)
   The service identifier published through the Now Playing Info Center.
 
 

@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an image object with the supplied image data.
 
@@ -10,13 +11,17 @@ Initializes an image object with the supplied image data.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 init?(data: Data)
+```
+
+```objc
+- (instancetype) initWithData:(NSData *) data;
 ```
 
 #### Return Value
@@ -29,32 +34,33 @@ The initialized image object, or `nil` if the object could not be initialized.
 
 ## See Also
 
-- [class func empty() -> CIImage](ciimage/empty.md)
+### Creating an Image
+- [class func empty() -> CIImage](./empty%28%29.md)
   Creates and returns an empty image object.
-- [init?(image: UIImage)](ciimage/init(image:).md)
+- [init?(image: UIImage)](./init%28image%29.md)
   Initializes an image object with the specified UIKit image object.
-- [init?(image: UIImage, options: [CIImageOption : Any]?)](ciimage/init(image:options:).md)
+- [init?(image: UIImage, options: [CIImageOption : Any]?)](./init%28image,options%29.md)
   Initializes an image object with the specified UIKit image object, using the specified options.
-- [init?(contentsOf: URL)](ciimage/init(contentsof:).md)
+- [init?(contentsOf: URL)](./init%28contentsof%29.md)
   Initializes an image object by reading an image from a URL.
-- [init?(contentsOf: URL, options: [CIImageOption : Any]?)](ciimage/init(contentsof:options:).md)
+- [init?(contentsOf: URL, options: [CIImageOption : Any]?)](./init%28contentsof,options%29.md)
   Initializes an image object by reading an image from a URL, using the specified options.
-- [init(cgImage: CGImage)](ciimage/init(cgimage:)-2kvvb.md)
+- [init(cgImage: CGImage)](./init%28cgimage%29-2kvvb.md)
   Initializes an image object with a Quartz 2D image.
-- [init(cgImage: CGImage, options: [CIImageOption : Any]?)](ciimage/init(cgimage:options:)-8663h.md)
+- [init(cgImage: CGImage, options: [CIImageOption : Any]?)](./init%28cgimage,options%29-8663h.md)
   Initializes an image object with a Quartz 2D image, using the specified options.
-- [init(cgImageSource: CGImageSource, index: Int, options: [CIImageOption : Any]?)](ciimage/init(cgimagesource:index:options:)-e2bz.md)
-- [init?(data: Data, options: [CIImageOption : Any]?)](ciimage/init(data:options:).md)
+- [init(cgImageSource: CGImageSource, index: Int, options: [CIImageOption : Any]?)](./init%28cgimagesource,index,options%29-e2bz.md)
+- [init?(data: Data, options: [CIImageOption : Any]?)](./init%28data,options%29.md)
   Initializes an image object with the supplied image data, using the specified options.
-- [init(bitmapData: Data, bytesPerRow: Int, size: CGSize, format: CIFormat, colorSpace: CGColorSpace?)](ciimage/init(bitmapdata:bytesperrow:size:format:colorspace:).md)
+- [init(bitmapData: Data, bytesPerRow: Int, size: CGSize, format: CIFormat, colorSpace: CGColorSpace?)](./init%28bitmapdata,bytesperrow,size,format,colorspace%29.md)
   Initializes an image object with bitmap data.
-- [init?(bitmapImageRep: NSBitmapImageRep)](ciimage/init(bitmapimagerep:).md)
+- [init?(bitmapImageRep: NSBitmapImageRep)](./init%28bitmapimagerep%29.md)
   Initializes an image object with the specified bitmap image representation.
-- [init(imageProvider: Any, size: Int, Int, format: CIFormat, colorSpace: CGColorSpace?, options: [CIImageOption : Any]?)](ciimage/init(imageprovider:size:_:format:colorspace:options:).md)
+- [init(imageProvider: Any, size: Int, Int, format: CIFormat, colorSpace: CGColorSpace?, options: [CIImageOption : Any]?)](./init%28imageprovider,size,_,format,colorspace,options%29.md)
   Initializes an image object based on pixels from an image provider object.
-- [init?(depthData: AVDepthData)](ciimage/init(depthdata:).md)
-- [init?(depthData: AVDepthData, options: [String : Any]?)](ciimage/init(depthdata:options:).md)
-- [init?(portaitEffectsMatte: AVPortraitEffectsMatte)](ciimage/init(portaiteffectsmatte:).md)
+- [init?(depthData: AVDepthData)](./init%28depthdata%29.md)
+- [init?(depthData: AVDepthData, options: [String : Any]?)](./init%28depthdata,options%29.md)
+- [init?(portaitEffectsMatte: AVPortraitEffectsMatte)](./init%28portaiteffectsmatte%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: WidgetKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance of an accessory widget background.
 

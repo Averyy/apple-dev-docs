@@ -1,7 +1,8 @@
 # metadata
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An image’s EXIF metadata.
 
@@ -39,13 +40,14 @@ You can provide EXIF metadata captured by your digital camera to assist in the o
 
 ## See Also
 
-- [let image: CVPixelBuffer](photogrammetrysample/image.md)
+### Describing the sample
+- [let image: CVPixelBuffer](./image.md)
   The image data for this sample.
-- [var depthDataMap: CVPixelBuffer?](photogrammetrysample/depthdatamap.md)
+- [var depthDataMap: CVPixelBuffer?](./depthdatamap.md)
   The image’s depth data.
-- [var gravity: CMAcceleration?](photogrammetrysample/gravity.md)
+- [var gravity: CMAcceleration?](./gravity.md)
   An image’s gravity vector.
-- [var objectMask: CVPixelBuffer?](photogrammetrysample/objectmask.md)
+- [var objectMask: CVPixelBuffer?](./objectmask.md)
   The image’s object mask.
 
 

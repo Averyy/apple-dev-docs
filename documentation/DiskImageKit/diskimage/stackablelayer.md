@@ -1,7 +1,8 @@
 # DiskImage.StackableLayer
 
 **Framework**: DiskImageKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A marker protocol that stackable disk image layer configuration objects conform to.
 
@@ -16,16 +17,17 @@ protocol StackableLayer
 
 #### Overview
 
-The [`appending(_:)`](diskimage/appending(_:)-3pfqg.md) method accepts objects that conform to this protocol.  For more information about image layering, see [`StackedImage`](stackedimage.md).
+The [`appending(_:)`](./appending%28_%29-3pfqg.md) method accepts objects that conform to this protocol.  For more information about image layering, see [`StackedImage`](../stackedimage.md).
 
 ## Relationships
 
 ### Conforming Types
-- [ASIFLayerCreationConfiguration](asiflayercreationconfiguration.md)
+- [ASIFLayerCreationConfiguration](../asiflayercreationconfiguration.md)
 
 ## See Also
 
-- [func appending(consuming DiskImage) throws -> any StackedImage](diskimage/appending(_:)-4wifj.md)
+### Appending layers and resizing existing images
+- [func appending(consuming DiskImage) throws -> any StackedImage](./appending%28_%29-4wifj.md)
   Appends a layer to this disk image, creating or extending a stack.
 
 

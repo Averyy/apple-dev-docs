@@ -1,7 +1,8 @@
 # VideoAnalyzer.Result
 
 **Framework**: Media Intelligence  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the output of a video analysis operation.
 
@@ -21,24 +22,25 @@ protocol Result : Sendable
 
 #### Overview
 
-This type is the base protocol for analysis result types. You receive a typed value conforming to this protocol when [`analyze(_:for:)`](videoanalyzer/analyze(_:for:).md) succeeds for a particular request. The framework uses the request’s associated [`Result`](videoanalyzer/request/result.md) type to determine the concrete type returned for each element in the tuple.
+This type is the base protocol for analysis result types. You receive a typed value conforming to this protocol when [`analyze(_:for:)`](./analyze%28_,for%29.md) succeeds for a particular request. The framework uses the request’s associated [`Result`](./request/result.md) type to determine the concrete type returned for each element in the tuple.
 
 ## Relationships
 
 ### Inherits From
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 ### Conforming Types
-- [HighlightAnalysisRequest.Result](highlightanalysisrequest/result.md)
-- [KeyFrameAnalysisRequest.Result](keyframeanalysisrequest/result.md)
+- [HighlightAnalysisRequest.Result](../highlightanalysisrequest/result.md)
+- [KeyFrameAnalysisRequest.Result](../keyframeanalysisrequest/result.md)
 
 ## See Also
 
-- [static let shared: VideoAnalyzer](videoanalyzer/shared.md)
+### Analyzing a video asset
+- [static let shared: VideoAnalyzer](./shared.md)
   The shared video analyzer.
-- [VideoAnalyzer.Request](videoanalyzer/request.md)
+- [VideoAnalyzer.Request](./request.md)
   A type that describes a video analysis operation.
-- [func analyze<each T>(MediaIntelligenceVideoAsset, for: repeat each T) async throws -> (repeat Result<(each T).Result, any Error>)](videoanalyzer/analyze(_:for:).md)
+- [func analyze<each T>(MediaIntelligenceVideoAsset, for: repeat each T) async throws -> (repeat Result<(each T).Result, any Error>)](./analyze%28_,for%29.md)
   Analyzes a video asset using the specified requests.
 
 

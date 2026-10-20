@@ -1,7 +1,8 @@
 # nw_browser_state_cancelled
 
 **Framework**: Network  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The browser has been canceled.
 
@@ -20,13 +21,18 @@ The browser has been canceled.
 var nw_browser_state_cancelled: nw_browser_state_t { get }
 ```
 
+```c
+nw_browser_state_cancelled
+```
+
 ## See Also
 
-- [var nw_browser_state_invalid: nw_browser_state_t](nw_browser_state_invalid.md)
+### States
+- [var nw_browser_state_invalid: nw_browser_state_t](./nw_browser_state_invalid.md)
   The browser is not valid.
-- [var nw_browser_state_ready: nw_browser_state_t](nw_browser_state_ready.md)
+- [var nw_browser_state_ready: nw_browser_state_t](./nw_browser_state_ready.md)
   The browser is registered for discovering services.
-- [var nw_browser_state_failed: nw_browser_state_t](nw_browser_state_failed.md)
+- [var nw_browser_state_failed: nw_browser_state_t](./nw_browser_state_failed.md)
   The browser has encountered a fatal error.
 
 

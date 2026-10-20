@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct PhysicalSegment {
    IOPhysicalAddress location;
    IOPhysicalLength length;

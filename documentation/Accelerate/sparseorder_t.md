@@ -1,23 +1,28 @@
 # SparseOrder_t
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that define which ordering algorithm to use.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct SparseOrder_t
+```
+
+```c
+typedef enum { ... } SparseOrder_t;
 ```
 
 #### Overview
@@ -31,49 +36,50 @@ AMD and METIS provide good orderings for symmetric matrices. You can use them fo
 ## Topics
 
 ### Constants
-- [var SparseOrderDefault: SparseOrder_t](sparseorderdefault.md)
+- [var SparseOrderDefault: SparseOrder_t](./sparseorderdefault.md)
   The default ordering.
-- [var SparseOrderUser: SparseOrder_t](sparseorderuser.md)
+- [var SparseOrderUser: SparseOrder_t](./sparseorderuser.md)
   The user-supplied ordering, or identity if the order parameter is null.
-- [var SparseOrderAMD: SparseOrder_t](sparseorderamd.md)
+- [var SparseOrderAMD: SparseOrder_t](./sparseorderamd.md)
   Approximate minimum degree (AMD) ordering.
-- [var SparseOrderMetis: SparseOrder_t](sparseordermetis.md)
+- [var SparseOrderMetis: SparseOrder_t](./sparseordermetis.md)
   METIS nested dissection ordering.
-- [var SparseOrderMTMetis: SparseOrder_t](sparseordermtmetis.md)
+- [var SparseOrderMTMetis: SparseOrder_t](./sparseordermtmetis.md)
   Specifies type of fill-reducing ordering.
-- [var SparseOrderCOLAMD: SparseOrder_t](sparseordercolamd.md)
+- [var SparseOrderCOLAMD: SparseOrder_t](./sparseordercolamd.md)
   The column AMD ordering for *AᵀA*.
 ### Raw Values
-- [init(UInt8)](sparseorder_t/init(_:).md)
-- [init(rawValue: UInt8)](sparseorder_t/init(rawvalue:).md)
-- [var rawValue: UInt8](sparseorder_t/rawvalue.md)
+- [init(UInt8)](./sparseorder_t/init%28_%29.md)
+- [init(rawValue: UInt8)](./sparseorder_t/init%28rawvalue%29.md)
+- [var rawValue: UInt8](./sparseorder_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var control: SparseControl_t](sparsesymbolicfactoroptions/control.md)
+### Inspecting Symbolic Factor Options
+- [var control: SparseControl_t](./sparsesymbolicfactoroptions/control.md)
   The flags that control the computation.
-- [struct SparseControl_t](sparsecontrol_t.md)
+- [struct SparseControl_t](./sparsecontrol_t.md)
   Options that control the computation.
-- [var orderMethod: SparseOrder_t](sparsesymbolicfactoroptions/ordermethod.md)
+- [var orderMethod: SparseOrder_t](./sparsesymbolicfactoroptions/ordermethod.md)
   The ordering algorithm.
-- [var order: UnsafeMutablePointer<Int32>?](sparsesymbolicfactoroptions/order.md)
+- [var order: UnsafeMutablePointer<Int32>?](./sparsesymbolicfactoroptions/order.md)
   The user-supplied array for ordering.
-- [var ignoreRowsAndColumns: UnsafeMutablePointer<Int32>?](sparsesymbolicfactoroptions/ignorerowsandcolumns.md)
+- [var ignoreRowsAndColumns: UnsafeMutablePointer<Int32>?](./sparsesymbolicfactoroptions/ignorerowsandcolumns.md)
   An array that contains row and column indices to ignore.
-- [var malloc: (Int) -> UnsafeMutableRawPointer?](sparsesymbolicfactoroptions/malloc.md)
+- [var malloc: (Int) -> UnsafeMutableRawPointer?](./sparsesymbolicfactoroptions/malloc.md)
   The function for allocating any necessary storage.
-- [var free: (UnsafeMutableRawPointer?) -> Void](sparsesymbolicfactoroptions/free.md)
+- [var free: (UnsafeMutableRawPointer?) -> Void](./sparsesymbolicfactoroptions/free.md)
   The function for freeing allocated storage.
-- [var reportError: ((UnsafePointer<CChar>) -> Void)?](sparsesymbolicfactoroptions/reporterror.md)
+- [var reportError: ((UnsafePointer<CChar>) -> Void)?](./sparsesymbolicfactoroptions/reporterror.md)
   The function for reporting parameter errors.
 
 

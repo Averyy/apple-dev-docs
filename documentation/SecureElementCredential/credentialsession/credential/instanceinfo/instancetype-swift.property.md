@@ -1,7 +1,8 @@
 # instanceType
 
 **Framework**: SecureElementCredential  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The instance type of this instance.
 
@@ -17,7 +18,8 @@ let instanceType: CredentialSession.Credential.InstanceInfo.InstanceType
 
 ## See Also
 
-- [CredentialSession.Credential.InstanceInfo.InstanceType](credentialsession/credential/instanceinfo/instancetype-swift.enum.md)
+### Inspecting the instance type
+- [CredentialSession.Credential.InstanceInfo.InstanceType](./instancetype-swift.enum.md)
   An enumeration of Secure Element applet instance types.
 
 

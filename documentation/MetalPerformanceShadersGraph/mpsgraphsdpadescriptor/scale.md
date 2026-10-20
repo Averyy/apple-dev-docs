@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale applied to the result of the query–key matrix multiply before softmax. Typically set to `1/sqrt(headDimension)`.
 
@@ -17,6 +18,10 @@ The scale applied to the result of the query–key matrix multiply before softma
 
 ```swift
 var scale: Float { get set }
+```
+
+```objc
+@property (nonatomic) float scale;
 ```
 
 

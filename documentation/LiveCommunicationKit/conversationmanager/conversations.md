@@ -1,7 +1,8 @@
 # conversations
 
 **Framework**: LiveCommunicationKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Currently active conversations.
 
@@ -20,9 +21,10 @@ final var conversations: [Conversation] { get }
 
 ## See Also
 
-- [var pendingActions: [ConversationAction]](conversationmanager/pendingactions.md)
+### Configuring the manager
+- [var pendingActions: [ConversationAction]](./pendingactions.md)
   All unfinished conversation actions.
-- [var delegate: (any ConversationManagerDelegate)?](conversationmanager/delegate.md)
+- [var delegate: (any ConversationManagerDelegate)?](./delegate.md)
   The object that acts as the delegate of the conversation manager.
 
 

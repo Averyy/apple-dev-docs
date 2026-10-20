@@ -1,7 +1,8 @@
 # MTKModelIOVertexDescriptorFromMetal(_:)
 
 **Framework**: MetalKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a partially converted Model I/O vertex descriptor.
 
@@ -19,13 +20,17 @@ Returns a partially converted Model I/O vertex descriptor.
 func MTKModelIOVertexDescriptorFromMetal(_ metalDescriptor: MTLVertexDescriptor) -> MDLVertexDescriptor
 ```
 
+```c
+extern MDLVertexDescriptor *MTKModelIOVertexDescriptorFromMetal(MTLVertexDescriptor *metalDescriptor);
+```
+
 #### Return Value
 
 A Model I/O vertex descriptor object.
 
 #### Discussion
 
-This function is equivalent to the [`MTKModelIOVertexDescriptorFromMetalWithError`](mtkmodeliovertexdescriptorfrommetalwitherror.md) function, but does not report errors.
+This function is equivalent to the [`MTKModelIOVertexDescriptorFromMetalWithError`](./mtkmodeliovertexdescriptorfrommetalwitherror.md) function, but does not report errors.
 
 ## Parameters
 
@@ -33,7 +38,8 @@ This function is equivalent to the [`MTKModelIOVertexDescriptorFromMetalWithErro
 
 ## See Also
 
-- [func MTKMetalVertexDescriptorFromModelIO(MDLVertexDescriptor) -> MTLVertexDescriptor?](mtkmetalvertexdescriptorfrommodelio(_:).md)
+### Converting Between Model I/O and Metal Vertex Descriptors
+- [func MTKMetalVertexDescriptorFromModelIO(MDLVertexDescriptor) -> MTLVertexDescriptor?](./mtkmetalvertexdescriptorfrommodelio%28_%29.md)
   Returns a partially converted Metal vertex descriptor.
 
 

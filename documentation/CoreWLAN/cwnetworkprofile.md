@@ -1,7 +1,8 @@
 # CWNetworkProfile
 
 **Framework**: Core WLAN  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Encapsulates an immutable network profile entry.
 
@@ -14,59 +15,64 @@ Encapsulates an immutable network profile entry.
 class CWNetworkProfile
 ```
 
+```objc
+@interface CWNetworkProfile : NSObject
+```
+
 ## Topics
 
 ### Getting a network profile
-- [init()](cwnetworkprofile/init.md)
+- [init()](./cwnetworkprofile/init%28%29.md)
   Creates and returns a CWNetworkProfile object.
-- [init(networkProfile: CWNetworkProfile)](cwnetworkprofile/init(networkprofile:).md)
+- [init(networkProfile: CWNetworkProfile)](./cwnetworkprofile/init%28networkprofile%29.md)
   Creates and returns a CWNetworkProfile object initialized with the given CWNetworkProfile object.
 ### Comparing network profiles
-- [func isEqual(to: CWNetworkProfile) -> Bool](cwnetworkprofile/isequal(to:).md)
+- [func isEqual(to: CWNetworkProfile) -> Bool](./cwnetworkprofile/isequal%28to%29.md)
   Determine CWNetworkProfile object equality.
 ### Instance Properties
-- [var security: CWSecurity](cwnetworkprofile/security.md)
+- [var security: CWSecurity](./cwnetworkprofile/security.md)
   The security mode for the network profile.
-- [var ssid: String?](cwnetworkprofile/ssid.md)
+- [var ssid: String?](./cwnetworkprofile/ssid.md)
   The service set identifier (SSID) for the network profile, encoded as a string.
-- [var ssidData: Data?](cwnetworkprofile/ssiddata.md)
+- [var ssidData: Data?](./cwnetworkprofile/ssiddata.md)
   The service set identifier (SSID) for the network profile, returned as data.
 ### Initializers
-- [init?(coder: NSCoder)](cwnetworkprofile/init(coder:).md)
+- [init?(coder: NSCoder)](./cwnetworkprofile/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CWMutableNetworkProfile](cwmutablenetworkprofile.md)
+- [CWMutableNetworkProfile](./cwmutablenetworkprofile.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CWChannel](cwchannel.md)
+### Classes
+- [class CWChannel](./cwchannel.md)
   Encapsulates an IEEE 802.11 channel.
-- [class CWConfiguration](cwconfiguration.md)
+- [class CWConfiguration](./cwconfiguration.md)
   Encapsulates an immutable configuration for an AirPort WLAN interface.
-- [class CWInterface](cwinterface.md)
+- [class CWInterface](./cwinterface.md)
   Encapsulates an IEEE 802.11 interface.
-- [class CWMutableConfiguration](cwmutableconfiguration.md)
+- [class CWMutableConfiguration](./cwmutableconfiguration.md)
   Encapsulates a mutable configuration for an AirPort WLAN interface.
-- [class CWMutableNetworkProfile](cwmutablenetworkprofile.md)
+- [class CWMutableNetworkProfile](./cwmutablenetworkprofile.md)
   Encapsulates a mutable network profile entry.
-- [class CWNetwork](cwnetwork.md)
+- [class CWNetwork](./cwnetwork.md)
   Encapsulates an IEEE 802.11 network, providing read-only accessors to various properties of the network.
-- [class CWWiFiClient](cwwificlient.md)
+- [class CWWiFiClient](./cwwificlient.md)
   A wrapper around the entire Wi-Fi subsystem that you use to access interfaces and set up event notifications.
 
 

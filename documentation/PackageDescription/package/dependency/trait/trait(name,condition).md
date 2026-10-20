@@ -1,7 +1,8 @@
 # trait(name:condition:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new enabled trait.
 

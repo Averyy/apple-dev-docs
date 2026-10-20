@@ -1,7 +1,8 @@
 # init(transform:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a pose with with a position and rotation that are defined by a projective transform.
 

@@ -1,7 +1,8 @@
 # kCMFormatDescriptionColorPrimaries_ITU_R_2020
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A format that describes the ITU R 2020 color primary.
 
@@ -20,19 +21,24 @@ A format that describes the ITU R 2020 color primary.
 let kCMFormatDescriptionColorPrimaries_ITU_R_2020: CFString
 ```
 
+```c
+extern CFStringRef const kCMFormatDescriptionColorPrimaries_ITU_R_2020;
+```
+
 ## See Also
 
-- [let kCMFormatDescriptionColorPrimaries_DCI_P3: CFString](kcmformatdescriptioncolorprimaries_dci_p3.md)
+### Constants
+- [let kCMFormatDescriptionColorPrimaries_DCI_P3: CFString](./kcmformatdescriptioncolorprimaries_dci_p3.md)
   A format that describes the DCI P3 color primary.
-- [let kCMFormatDescriptionColorPrimaries_EBU_3213: CFString](kcmformatdescriptioncolorprimaries_ebu_3213-swift.var.md)
+- [let kCMFormatDescriptionColorPrimaries_EBU_3213: CFString](./kcmformatdescriptioncolorprimaries_ebu_3213-swift.var.md)
   A format that describes the EBU 3213 color primary.
-- [let kCMFormatDescriptionColorPrimaries_ITU_R_709_2: CFString](kcmformatdescriptioncolorprimaries_itu_r_709_2-swift.var.md)
+- [let kCMFormatDescriptionColorPrimaries_ITU_R_709_2: CFString](./kcmformatdescriptioncolorprimaries_itu_r_709_2-swift.var.md)
   A format that describes the ITU R 709 2 color primary.
-- [let kCMFormatDescriptionColorPrimaries_P22: CFString](kcmformatdescriptioncolorprimaries_p22.md)
+- [let kCMFormatDescriptionColorPrimaries_P22: CFString](./kcmformatdescriptioncolorprimaries_p22.md)
   A format that describes the P22 color primary.
-- [let kCMFormatDescriptionColorPrimaries_P3_D65: CFString](kcmformatdescriptioncolorprimaries_p3_d65.md)
+- [let kCMFormatDescriptionColorPrimaries_P3_D65: CFString](./kcmformatdescriptioncolorprimaries_p3_d65.md)
   A format that describes the P3 D65 color primary.
-- [let kCMFormatDescriptionColorPrimaries_SMPTE_C: CFString](kcmformatdescriptioncolorprimaries_smpte_c-swift.var.md)
+- [let kCMFormatDescriptionColorPrimaries_SMPTE_C: CFString](./kcmformatdescriptioncolorprimaries_smpte_c-swift.var.md)
   A format that describes the SMPTE C color primary.
 
 

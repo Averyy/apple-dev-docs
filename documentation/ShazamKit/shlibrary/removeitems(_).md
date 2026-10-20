@@ -1,7 +1,8 @@
 # removeItems(_:)
 
 **Framework**: ShazamKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an array of media items from the user’s Shazam library.
 
@@ -22,21 +23,22 @@ final func removeItems(_ items: [SHMediaItem]) async throws
 
 #### Discussion
 
-Apps can only remove media items that it added to the library with [`addItems(_:)`](shlibrary/additems(_:).md).
+Apps can only remove media items that it added to the library with [`addItems(_:)`](./additems%28_%29.md).
 
-This throws [`SHError.Code.mediaLibrarySyncFailed`](sherror/code/medialibrarysyncfailed.md) if the system can’t remove at least one [`SHMediaItem`](shmediaitem.md) or if an error occurred during the removal. In that case, the system doesn’t remove any items from the library.
+This throws [`SHError.Code.mediaLibrarySyncFailed`](../sherror/code/medialibrarysyncfailed.md) if the system can’t remove at least one [`SHMediaItem`](../shmediaitem.md) or if an error occurred during the removal. In that case, the system doesn’t remove any items from the library.
 
 ## Parameters
 
-- `items`: An array containing the [`SHMediaItem`](shmediaitem.md) objects to remove from the library.
+- `items`: An array containing the [`SHMediaItem`](../shmediaitem.md) objects to remove from the library.
 
 ## See Also
 
-- [static let `default`: SHLibrary](shlibrary/default.md)
+### Managing the items in the library
+- [static let `default`: SHLibrary](./default.md)
   An instance of the default Shazam library.
-- [func addItems([SHMediaItem]) async throws](shlibrary/additems(_:).md)
+- [func addItems([SHMediaItem]) async throws](./additems%28_%29.md)
   Adds an array of media items to the user’s Shazam library.
-- [var items: [SHMediaItem]](shlibrary/items.md)
+- [var items: [SHMediaItem]](./items.md)
   The list of synced items in the Media Library.
 
 

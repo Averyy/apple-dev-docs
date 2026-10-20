@@ -1,7 +1,8 @@
 # init(stringValue:)
 
 **Framework**: Contacts  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new phone number object initialized with the specified phone number string.
 
@@ -17,6 +18,10 @@ Returns a new phone number object initialized with the specified phone number st
 
 ```swift
 init(stringValue string: String)
+```
+
+```objc
+- (instancetype) initWithStringValue:(NSString *) string;
 ```
 
 #### Return Value

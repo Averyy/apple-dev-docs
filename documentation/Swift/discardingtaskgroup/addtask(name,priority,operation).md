@@ -1,7 +1,8 @@
 # addTask(name:priority:operation:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a child task to the group.
 

@@ -2,6 +2,7 @@
 
 **Framework**: Playground Support  
 **Kind**: intfp  
+**Role**: Instance Property  
 **Required**: Yes
 
 A layout guide you use to position content so that it's unobstructed by the Swift Playgrounds user interface.
@@ -15,6 +16,14 @@ A layout guide you use to position content so that it's unobstructed by the Swif
 ```swift
 var liveViewSafeAreaGuide: UILayoutGuide { get }
 ```
+
+## Default Implementations
+
+### PlaygroundLiveViewSafeAreaContainer Implementations
+- [var liveViewSafeAreaGuide: UILayoutGuide](./api-3029547-liveviewsafeareaguide.md)
+  A layout guide you use to position content so that it's unobstructed by the Swift Playgrounds user interface.
+- [var liveViewSafeAreaGuide: UILayoutGuide](./api-3029548-liveviewsafeareaguide.md)
+  A layout guide you use to position content so that it's unobstructed by the Swift Playgrounds user interface.
 
 
 ---

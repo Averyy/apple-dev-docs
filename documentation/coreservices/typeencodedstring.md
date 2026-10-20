@@ -1,7 +1,8 @@
 # typeEncodedString
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Styled Unicode text. Not implemented.
 

@@ -1,13 +1,16 @@
 # update(using:alertConfiguration:)
 
 **Framework**: ActivityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the dynamic content of a Live Activity and alerts a person about the Live Activity update.
 
 **Availability**:
-- iOS 16.1+
-- iPadOS 16.1+
+- iOS 16.1+ - Deprecated in 16.2
+- iPadOS 16.1+ - Deprecated in 16.2
+
+> **Deprecated**: Use update(_:alertConfiguration:) instead
 
 ## Declaration
 
@@ -17,7 +20,7 @@ func update(using contentState: Activity<Attributes>.ContentState, alertConfigur
 
 #### Discussion
 
-The system ignores updates to a Live Activity that’s in the [`ActivityState.ended`](activitystate/ended.md) state.
+The system ignores updates to a Live Activity that’s in the [`ActivityState.ended`](../activitystate/ended.md) state.
 
 ## Parameters
 
@@ -26,17 +29,18 @@ The system ignores updates to a Live Activity that’s in the [`ActivityState.en
 
 ## See Also
 
-- [static func request(attributes: Attributes, contentState: Activity<Attributes>.ContentState, pushType: PushType?) throws -> Activity<Attributes>](activity/request(attributes:contentstate:pushtype:).md)
+### Deprecated
+- [static func request(attributes: Attributes, contentState: Activity<Attributes>.ContentState, pushType: PushType?) throws -> Activity<Attributes>](./request%28attributes,contentstate,pushtype%29.md)
   Requests and starts a Live Activity.
-- [func update(using: Activity<Attributes>.ContentState) async](activity/update(using:).md)
+- [func update(using: Activity<Attributes>.ContentState) async](./update%28using%29.md)
   Updates the dynamic content of the Live Activity.
-- [func end(using: Activity<Attributes>.ContentState?, dismissalPolicy: ActivityUIDismissalPolicy) async](activity/end(using:dismissalpolicy:).md)
+- [func end(using: Activity<Attributes>.ContentState?, dismissalPolicy: ActivityUIDismissalPolicy) async](./end%28using,dismissalpolicy%29.md)
   Ends an active Live Activity.
-- [var contentState: Activity<Attributes>.ContentState](activity/contentstate-swift.property.md)
+- [var contentState: Activity<Attributes>.ContentState](./contentstate-swift.property.md)
   The dynamic content of a Live Activity.
-- [var contentStateUpdates: Activity<Attributes>.ContentStateUpdates](activity/contentstateupdates-swift.property.md)
+- [var contentStateUpdates: Activity<Attributes>.ContentStateUpdates](./contentstateupdates-swift.property.md)
   An asynchronous sequence you use to observe changes to the dynamic content of a Live Activity.
-- [Activity.ContentStateUpdates](activity/contentstateupdates-swift.struct.md)
+- [Activity.ContentStateUpdates](./contentstateupdates-swift.struct.md)
   A structure that offers functionality to observe changes to the dynamic content of a Live Activity.
 
 

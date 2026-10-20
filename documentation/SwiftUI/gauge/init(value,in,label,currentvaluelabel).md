@@ -1,7 +1,8 @@
 # init(value:in:label:currentValueLabel:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a gauge showing a value within a range and that describes the gauge’s purpose and current value.
 
@@ -22,7 +23,7 @@ init<V>(value: V, in bounds: ClosedRange<V> = 0...1, @ContentBuilder label: () -
 
 #### Discussion
 
-Use this method to create a gauge that displays a value within a range you supply with labels that describe the purpose of the gauge and its current value. In the example below, a gauge using the [`circular`](gaugestyle/circular.md) style shows its current value of `67` along with a label describing the (BPM) for the gauge:
+Use this method to create a gauge that displays a value within a range you supply with labels that describe the purpose of the gauge and its current value. In the example below, a gauge using the [`circular`](../gaugestyle/circular.md) style shows its current value of `67` along with a label describing the (BPM) for the gauge:
 
 ```swift
 struct SimpleGauge: View {
@@ -39,7 +40,7 @@ struct SimpleGauge: View {
 }
 ```
 
-![A screenshot showing a circular gauge describing heart rate in beats](/images/com.apple.SwiftUI/SwiftUI-Gauge-LabelCurrentValueCircular@2x.png)
+![A screenshot showing a circular gauge describing heart rate in beats](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Gauge-LabelCurrentValueCircular@2x.png)
 
 ## Parameters
 
@@ -50,13 +51,14 @@ struct SimpleGauge: View {
 
 ## See Also
 
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label)](gauge/init(value:in:label:).md)
+### Creating a gauge
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label)](./init%28value,in,label%29.md)
   Creates a gauge showing a value within a range and describes the gauge’s purpose and current value.
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, markedValueLabels: () -> MarkedValueLabels)](gauge/init(value:in:label:currentvaluelabel:markedvaluelabels:).md)
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, markedValueLabels: () -> MarkedValueLabels)](./init%28value,in,label,currentvaluelabel,markedvaluelabels%29.md)
   Creates a gauge representing a value within a range.
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, minimumValueLabel: () -> BoundsLabel, maximumValueLabel: () -> BoundsLabel)](gauge/init(value:in:label:currentvaluelabel:minimumvaluelabel:maximumvaluelabel:).md)
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, minimumValueLabel: () -> BoundsLabel, maximumValueLabel: () -> BoundsLabel)](./init%28value,in,label,currentvaluelabel,minimumvaluelabel,maximumvaluelabel%29.md)
   Creates a gauge showing a value within a range and describes the gauge’s current, minimum, and maximum values.
-- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, minimumValueLabel: () -> BoundsLabel, maximumValueLabel: () -> BoundsLabel, markedValueLabels: () -> MarkedValueLabels)](gauge/init(value:in:label:currentvaluelabel:minimumvaluelabel:maximumvaluelabel:markedvaluelabels:).md)
+- [init<V>(value: V, in: ClosedRange<V>, label: () -> Label, currentValueLabel: () -> CurrentValueLabel, minimumValueLabel: () -> BoundsLabel, maximumValueLabel: () -> BoundsLabel, markedValueLabels: () -> MarkedValueLabels)](./init%28value,in,label,currentvaluelabel,minimumvaluelabel,maximumvaluelabel,markedvaluelabels%29.md)
   Creates a gauge representing a value within a range.
 
 

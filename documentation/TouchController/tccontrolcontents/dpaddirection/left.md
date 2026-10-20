@@ -1,7 +1,8 @@
 # TCControlContents.DpadDirection.left
 
 **Framework**: Touch Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The left direction.
 
@@ -16,13 +17,18 @@ The left direction.
 case left
 ```
 
+```c
+TCControlContentsDpadDirectionLeft
+```
+
 ## See Also
 
-- [TCControlContents.DpadDirection.down](tccontrolcontents/dpaddirection/down.md)
+### Directions
+- [TCControlContents.DpadDirection.down](./down.md)
   The down direction.
-- [TCControlContents.DpadDirection.right](tccontrolcontents/dpaddirection/right.md)
+- [TCControlContents.DpadDirection.right](./right.md)
   The right direction.
-- [TCControlContents.DpadDirection.up](tccontrolcontents/dpaddirection/up.md)
+- [TCControlContents.DpadDirection.up](./up.md)
   The up direction.
 
 

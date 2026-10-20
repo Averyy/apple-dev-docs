@@ -1,12 +1,13 @@
 # reloadComplicationDescriptors()
 
 **Framework**: ClockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reloads the complication descriptors from the complication data source.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Reloads the complication descriptors from the complication data source.
 func reloadComplicationDescriptors()
 ```
 
+```objc
+- (void) reloadComplicationDescriptors;
+```
+
 ## Mentions
 
-- [Declaring complications for your app](declaring-complications-for-your-app.md)
+- [Declaring complications for your app](../declaring-complications-for-your-app.md)
 
 #### Discussion
 
-Call this method to reload the complication descriptors from your data source. ClockKit then calls your data source’s [`getComplicationDescriptors(handler:)`](clkcomplicationdatasource/getcomplicationdescriptors(handler:).md) method to update the list of available complications.
+Call this method to reload the complication descriptors from your data source. ClockKit then calls your data source’s [`getComplicationDescriptors(handler:)`](../clkcomplicationdatasource/getcomplicationdescriptors%28handler%29.md) method to update the list of available complications.
 
 If your data source removes a complication that’s already present on a watch face, ClockKit continues to display the complication and to request new timeline entries for that complication. However, the user won’t be able to add the complication to new watch faces.
 

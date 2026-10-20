@@ -1,18 +1,19 @@
 # kCMMuxedStreamType_MPEG2Transport
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 MPEG-2 Transport stream.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,20 @@ MPEG-2 Transport stream.
 var kCMMuxedStreamType_MPEG2Transport: CMMuxedStreamType { get }
 ```
 
+```c
+kCMMuxedStreamType_MPEG2Transport
+```
+
 ## See Also
 
-- [var kCMMuxedStreamType_DV: CMMuxedStreamType](kcmmuxedstreamtype_dv.md)
+### Constants
+- [var kCMMuxedStreamType_DV: CMMuxedStreamType](./kcmmuxedstreamtype_dv.md)
   DV stream.
-- [var kCMMuxedStreamType_MPEG1System: CMMuxedStreamType](kcmmuxedstreamtype_mpeg1system.md)
+- [var kCMMuxedStreamType_MPEG1System: CMMuxedStreamType](./kcmmuxedstreamtype_mpeg1system.md)
   MPEG-1 System stream.
-- [var kCMMuxedStreamType_MPEG2Program: CMMuxedStreamType](kcmmuxedstreamtype_mpeg2program.md)
+- [var kCMMuxedStreamType_MPEG2Program: CMMuxedStreamType](./kcmmuxedstreamtype_mpeg2program.md)
   MPEG-2 Program stream.
-- [var kCMMuxedStreamType_EmbeddedDeviceScreenRecording: CMMuxedStreamType](kcmmuxedstreamtype_embeddeddevicescreenrecording.md)
+- [var kCMMuxedStreamType_EmbeddedDeviceScreenRecording: CMMuxedStreamType](./kcmmuxedstreamtype_embeddeddevicescreenrecording.md)
 
 
 ---

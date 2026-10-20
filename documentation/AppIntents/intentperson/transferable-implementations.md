@@ -1,11 +1,12 @@
 # Transferable Implementations
 
-**Framework**: App Intents
+**Framework**: App Intents  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Properties
-- [static var transferRepresentation: some TransferRepresentation](intentperson/transferrepresentation.md)
+- [static var transferRepresentation: some TransferRepresentation](./transferrepresentation.md)
   The transfer representation for an `IntentPerson`.
 
 

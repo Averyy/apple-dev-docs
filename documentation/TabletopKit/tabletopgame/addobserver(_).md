@@ -1,7 +1,8 @@
 # addObserver(_:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - visionOS 2.0+
@@ -14,10 +15,11 @@ func addObserver(_ observer: some TabletopGame.Observer)
 
 ## See Also
 
-- [TabletopGame.Observer](tabletopgame/observer.md)
+### Observing actions
+- [TabletopGame.Observer](./observer.md)
   A protocol for objects that progress gameplay when players take actions.
-- [func removeObserver(some TabletopGame.Observer)](tabletopgame/removeobserver(_:).md)
-- [TabletopGame.ActionCancellationReason](tabletopgame/actioncancellationreason.md)
+- [func removeObserver(some TabletopGame.Observer)](./removeobserver%28_%29.md)
+- [TabletopGame.ActionCancellationReason](./actioncancellationreason.md)
   The possible reasons for cancelling an action or an interaction.
 
 

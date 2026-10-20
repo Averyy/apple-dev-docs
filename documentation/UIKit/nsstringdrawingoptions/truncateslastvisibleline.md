@@ -1,7 +1,8 @@
 # truncatesLastVisibleLine
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Truncates and adds the ellipsis character to the last visible line if the text doesn’t fit into the specified bounds.
 
@@ -19,17 +20,22 @@ Truncates and adds the ellipsis character to the last visible line if the text d
 static var truncatesLastVisibleLine: NSStringDrawingOptions { get }
 ```
 
+```c
+NSStringDrawingTruncatesLastVisibleLine
+```
+
 #### Discussion
 
 This option is ignored if `NSStringDrawingUsesLineFragmentOrigin` is not also set. In addition, the line break mode must be either `NSLineBreakByWordWrapping` or `NSLineBreakByCharWrapping` for this option to take effect. The line break mode can be specified in a paragraph style passed in the attributes dictionary argument of the drawing methods.
 
 ## See Also
 
-- [static var usesLineFragmentOrigin: NSStringDrawingOptions](nsstringdrawingoptions/useslinefragmentorigin.md)
+### Constants
+- [static var usesLineFragmentOrigin: NSStringDrawingOptions](./useslinefragmentorigin.md)
   Uses the line fragment origin instead of the baseline origin.
-- [static var usesFontLeading: NSStringDrawingOptions](nsstringdrawingoptions/usesfontleading.md)
+- [static var usesFontLeading: NSStringDrawingOptions](./usesfontleading.md)
   Uses the font leading for calculating line heights.
-- [static var usesDeviceMetrics: NSStringDrawingOptions](nsstringdrawingoptions/usesdevicemetrics.md)
+- [static var usesDeviceMetrics: NSStringDrawingOptions](./usesdevicemetrics.md)
   Uses image glyph bounds instead of typographic bounds.
 
 

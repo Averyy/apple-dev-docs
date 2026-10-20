@@ -1,7 +1,8 @@
 # QLPreviewPanel
 
 **Framework**: Quick Look UI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that implements the Quick Look preview panel to display a preview of a list of items.
 
@@ -14,13 +15,17 @@ A class that implements the Quick Look preview panel to display a preview of a l
 class QLPreviewPanel
 ```
 
+```objc
+@interface QLPreviewPanel : NSPanel
+```
+
 #### Overview
 
-Every application has a single shared instance of [`QLPreviewPanel`](qlpreviewpanel.md) accessible through [`shared()`](qlpreviewpanel/shared().md). The preview panel follows the responder chain and adapts to the first responder willing to control it. A preview panel controller provides the content through methods defined in the [`QLPreviewPanelDataSource`](qlpreviewpaneldatasource.md) protocol.
+Every application has a single shared instance of [`QLPreviewPanel`](./qlpreviewpanel.md) accessible through [`shared()`](./qlpreviewpanel/shared%28%29.md). The preview panel follows the responder chain and adapts to the first responder willing to control it. A preview panel controller provides the content through methods defined in the [`QLPreviewPanelDataSource`](./qlpreviewpaneldatasource.md) protocol.
 
-You can’t subclass [`QLPreviewPanel`](qlpreviewpanel.md); you can, however, customize its behavior using a [`delegate`](qlpreviewpanel/delegate.md). See the [`QLPreviewPanelDelegate`](qlpreviewpaneldelegate.md) protocol for the methods to customize a preview panel’s behavior.
+You can’t subclass [`QLPreviewPanel`](./qlpreviewpanel.md); you can, however, customize its behavior using a [`delegate`](./qlpreviewpanel/delegate.md). See the [`QLPreviewPanelDelegate`](./qlpreviewpaneldelegate.md) protocol for the methods to customize a preview panel’s behavior.
 
-##### Take Control of the Preview Panel
+##### Take control of the preview panel
 
 A preview panel has no controller until an object in the responder chain accepts control of it. The panel sends `acceptsPreviewPanelControl(_:)` to each object in the responder chain, and the first object to return `true` becomes the panel’s controller. Implement these methods in your window controller or delegate.
 
@@ -31,73 +36,74 @@ A controlling object also implements `beginPreviewPanelControl(_:)` and `endPrev
 ## Topics
 
 ### Accessing the Shared Panel
-- [class func shared() -> QLPreviewPanel!](qlpreviewpanel/shared.md)
+- [class func shared() -> QLPreviewPanel!](./qlpreviewpanel/shared%28%29.md)
   Returns the shared Quick Look preview panel instance.
-- [class func sharedPreviewPanelExists() -> Bool](qlpreviewpanel/sharedpreviewpanelexists.md)
+- [class func sharedPreviewPanelExists() -> Bool](./qlpreviewpanel/sharedpreviewpanelexists%28%29.md)
   Returns a Boolean value that indicates whether the system has created a shared Quick Look preview panel.
 ### Accessing the Preview Panel Controller
-- [var currentController: Any!](qlpreviewpanel/currentcontroller.md)
+- [var currentController: Any!](./qlpreviewpanel/currentcontroller.md)
   The current first responder accepting to control the preview panel.
-- [func updateController()](qlpreviewpanel/updatecontroller.md)
+- [func updateController()](./qlpreviewpanel/updatecontroller%28%29.md)
   Asks the preview panel to update its current controller.
 ### Managing the Preview Items
-- [var dataSource: (any QLPreviewPanelDataSource)!](qlpreviewpanel/datasource.md)
+- [var dataSource: (any QLPreviewPanelDataSource)!](./qlpreviewpanel/datasource.md)
   The preview panel data source.
-- [func reloadData()](qlpreviewpanel/reloaddata.md)
+- [func reloadData()](./qlpreviewpanel/reloaddata%28%29.md)
   Asks the preview panel to reload its data from its data source.
-- [func refreshCurrentPreviewItem()](qlpreviewpanel/refreshcurrentpreviewitem.md)
+- [func refreshCurrentPreviewItem()](./qlpreviewpanel/refreshcurrentpreviewitem%28%29.md)
   Asks the preview panel to recompute the preview of the current preview item.
-- [var currentPreviewItemIndex: Int](qlpreviewpanel/currentpreviewitemindex.md)
+- [var currentPreviewItemIndex: Int](./qlpreviewpanel/currentpreviewitemindex.md)
   The index of the current preview item.
-- [var currentPreviewItem: (any QLPreviewItem)!](qlpreviewpanel/currentpreviewitem.md)
+- [var currentPreviewItem: (any QLPreviewItem)!](./qlpreviewpanel/currentpreviewitem.md)
   The currently previewed item.
-- [var displayState: Any!](qlpreviewpanel/displaystate.md)
+- [var displayState: Any!](./qlpreviewpanel/displaystate.md)
   The preview panel’s display state.
 ### The Panel’s Delegate
-- [var delegate: AnyObject!](qlpreviewpanel/delegate.md)
+- [var delegate: AnyObject!](./qlpreviewpanel/delegate.md)
   The delegate object that controls the preview panel’s behavior.
 ### Managing Full Screen Mode
-- [func enterFullScreenMode(NSScreen!, withOptions: [AnyHashable : Any]!) -> Bool](qlpreviewpanel/enterfullscreenmode(_:withoptions:).md)
+- [func enterFullScreenMode(NSScreen!, withOptions: [AnyHashable : Any]!) -> Bool](./qlpreviewpanel/enterfullscreenmode%28_,withoptions%29.md)
   Instructs the panel to enter full screen mode.
-- [func exitFullScreenMode(options: [AnyHashable : Any]!)](qlpreviewpanel/exitfullscreenmode(options:).md)
+- [func exitFullScreenMode(options: [AnyHashable : Any]!)](./qlpreviewpanel/exitfullscreenmode%28options%29.md)
   Instructs the panel to exit full screen mode.
-- [var isInFullScreenMode: Bool](qlpreviewpanel/isinfullscreenmode.md)
+- [var isInFullScreenMode: Bool](./qlpreviewpanel/isinfullscreenmode.md)
   The property that indicates whether the panel is in full screen mode.
 
 ## Relationships
 
 ### Inherits From
-- [NSPanel](../appkit/nspanel.md)
+- [NSPanel](../AppKit/nspanel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSMenuItemValidation](../appkit/nsmenuitemvalidation.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [NSUserInterfaceValidations](../appkit/nsuserinterfacevalidations.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSMenuItemValidation](../AppKit/nsmenuitemvalidation.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [NSUserInterfaceValidations](../AppKit/nsuserinterfacevalidations.md)
 
 ## See Also
 
-- [class QLPreviewView](qlpreviewview.md)
+### Previews
+- [class QLPreviewView](./qlpreviewview.md)
   A Quick Look preview of an item that you can embed into your view hierarchy.
-- [protocol QLPreviewItem](qlpreviewitem.md)
+- [protocol QLPreviewItem](./qlpreviewitem.md)
   A protocol that defines a set of properties you implement to make a preview of your app’s content.
-- [protocol QLPreviewPanelDataSource](qlpreviewpaneldatasource.md)
+- [protocol QLPreviewPanelDataSource](./qlpreviewpaneldatasource.md)
   A protocol that the Quick Look preview panel uses to access the contents of its data source object.
-- [protocol QLPreviewPanelDelegate](qlpreviewpaneldelegate.md)
+- [protocol QLPreviewPanelDelegate](./qlpreviewpaneldelegate.md)
   A protocol for the delegate of the Quick Look preview panel.
-- [typealias QLPreviewItemLoadingBlock](qlpreviewitemloadingblock.md)
+- [typealias QLPreviewItemLoadingBlock](./qlpreviewitemloadingblock.md)
   A type that defines a block used to load a Quick Look preview item.
 
 

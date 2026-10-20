@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOStorageProvisionTypeAnchored](1644744-anonymous/kiostorageprovisiontypeanchored.md)
-- [kIOStorageProvisionTypeDeallocated](1644744-anonymous/kiostorageprovisiontypedeallocated.md)
-- [kIOStorageProvisionTypeMapped](1644744-anonymous/kiostorageprovisiontypemapped.md)
+- [kIOStorageProvisionTypeAnchored](./api-1644744-anonymous/kiostorageprovisiontypeanchored.md)
+- [kIOStorageProvisionTypeDeallocated](./api-1644744-anonymous/kiostorageprovisiontypedeallocated.md)
+- [kIOStorageProvisionTypeMapped](./api-1644744-anonymous/kiostorageprovisiontypemapped.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # perform(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a framework request on the handler’s image.
 
@@ -22,14 +23,15 @@ final func perform<T>(_ request: T) async throws -> T.Result where T : VisionReq
 
 ## Mentions
 
-- [Isolating an object from a tap, box, or scribble](segmenting-objects-with-iterative-refinement.md)
+- [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
 ## See Also
 
-- [func perform<each T>(repeat each T) async throws -> (repeat (each T).Result)](imagerequesthandler/perform(_:)-l6er.md)
+### Performing the request
+- [func perform<each T>(repeat each T) async throws -> (repeat (each T).Result)](./perform%28_%29-l6er.md)
   Performs one or more framework requests on the handler’s image.
 - [func performAll(some Collection<any VisionRequest>) -> some AsyncSequence<VisionResult, Never>
-](imagerequesthandler/performall(_:).md)
+](./performall%28_%29.md)
   Schedules a collection of framework requests to perform on the handler’s image.
 
 

@@ -1,7 +1,8 @@
 # MDLSkeleton
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -17,28 +18,32 @@
 class MDLSkeleton
 ```
 
+```objc
+@interface MDLSkeleton : MDLObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(name: String, jointPaths: [String])](mdlskeleton/init(name:jointpaths:).md)
+- [init(name: String, jointPaths: [String])](./mdlskeleton/init%28name,jointpaths%29.md)
 ### Instance Properties
-- [var jointBindTransforms: MDLMatrix4x4Array](mdlskeleton/jointbindtransforms.md)
-- [var jointPaths: [String]](mdlskeleton/jointpaths.md)
-- [var jointRestTransforms: MDLMatrix4x4Array](mdlskeleton/jointresttransforms.md)
+- [var jointBindTransforms: MDLMatrix4x4Array](./mdlskeleton/jointbindtransforms.md)
+- [var jointPaths: [String]](./mdlskeleton/jointpaths.md)
+- [var jointRestTransforms: MDLMatrix4x4Array](./mdlskeleton/jointresttransforms.md)
 
 ## Relationships
 
 ### Inherits From
-- [MDLObject](mdlobject.md)
+- [MDLObject](./mdlobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLNamed](mdlnamed.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLNamed](./mdlnamed.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

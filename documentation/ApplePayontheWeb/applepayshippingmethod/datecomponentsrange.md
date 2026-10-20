@@ -1,7 +1,8 @@
 # dateComponentsRange
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected range of dates for shipping or picking up an item.
 
@@ -11,13 +12,13 @@ The expected range of dates for shipping or picking up an item.
 
 ## Declaration
 
-```swift
+```
 ApplePayDateComponentsRange dateComponentsRange;
 ```
 
 ## Mentions
 
-- [Apple Pay on the Web Version 12 Release Notes](apple-pay-on-the-web-version-12-release-notes.md)
+- [Apple Pay on the Web Version 12 Release Notes](../apple-pay-on-the-web-version-12-release-notes.md)
 
 #### Discussion
 
@@ -55,15 +56,16 @@ let applePayShippingMethod = {
 
 ## See Also
 
-- [label](applepayshippingmethod/label.md)
+### Working with shipping method properties
+- [label](./label.md)
   A short description of the shipping method.
-- [detail](applepayshippingmethod/detail.md)
+- [detail](./detail.md)
   Additional description of the shipping method.
-- [identifier](applepayshippingmethod/identifier.md)
+- [identifier](./identifier.md)
   A client-defined value used to identify this shipping method.
-- [amount](applepayshippingmethod/amount.md)
+- [amount](./amount.md)
   The nonnegative cost associated with this shipping method.
-- [ApplePayDateComponentsRange](applepaydatecomponentsrange.md)
+- [ApplePayDateComponentsRange](../applepaydatecomponentsrange.md)
   A dictionary that specifies the start and end dates for a range of time.
 
 

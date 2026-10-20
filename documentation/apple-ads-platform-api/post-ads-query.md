@@ -1,7 +1,8 @@
 # Query Ads
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Searches and filters ads using structured query criteria including field filters, sorting, and pagination.
 
@@ -14,7 +15,7 @@ This endpoint queries ads using a standard `QueryRequest` body. Filter by `adGro
 
 The system excludes deleted ads from results by default. To retrieve deleted ads, include a `deleted EQUALS true` filter.
 
-See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supported comparison operators.
+See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
 ##### Filterable Fields
 
@@ -24,10 +25,10 @@ See [`QueryFilterOperator`](queryfilteroperator.md) for the full set of supporte
 | `campaignId` | integer | `EQUALS` | Yes | The campaign this ad belongs to. |
 | `adGroupId` | integer | `EQUALS` | Yes | The ad group this ad belongs to. |
 | `creativeId` | integer | `EQUALS` | Yes | The ad creative this ad was created from. |
-| `status` | string (enum) | `EQUALS`, `IN` | Yes | Advertiser-configured status. See [`AdStatus`](adstatus.md). |
+| `status` | string (enum) | `EQUALS`, `IN` | Yes | Advertiser-configured status. See [`AdStatus`](./adstatus.md). |
 | `deleted` | boolean | `EQUALS` | Yes | Whether the ad has been deleted. |
 
-The request body is a [`QueryRequest`](queryrequest.md) composed of [`QueryFilter`](queryfilter.md) conditions and [`QuerySort`](querysort.md) directives ([`QuerySortOrder`](querysortorder.md)), controlled by [`QueryPagination`](querypagination.md).
+The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
 #### Payload Examples
 
@@ -173,17 +174,34 @@ POST /v1/ads/query
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `QueryRequest`
+
+## Responses
+
+- `200` OK (`AdQueryResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Create an Ad](post-ads.md)
+- [Create an Ad](./post-ads.md)
   Creates a new ad that links an ad creative to an ad group for delivery.
-- [Get an Ad](get-ads-_id_.md)
+- [Get an Ad](./get-ads-_id_.md)
   Retrieves a single ad by its unique identifier.
-- [Update an Ad](put-ads-_id_.md)
+- [Update an Ad](./put-ads-_id_.md)
   Updates the name or status of an existing ad by its unique identifier.
-- [Delete an Ad](delete-ads-_id_.md)
+- [Delete an Ad](./delete-ads-_id_.md)
   Soft-deletes an ad by its unique identifier, stopping delivery and removing it from active results.
 
 

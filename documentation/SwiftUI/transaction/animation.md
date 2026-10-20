@@ -1,7 +1,8 @@
 # animation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The animation, if any, associated with the current state change.
 
@@ -22,9 +23,10 @@ var animation: Animation? { get set }
 
 ## See Also
 
-- [var disablesAnimations: Bool](transaction/disablesanimations.md)
+### Managing animations
+- [var disablesAnimations: Bool](./disablesanimations.md)
   A Boolean value that indicates whether views should disable animations.
-- [func addAnimationCompletion(criteria: AnimationCompletionCriteria, () -> Void)](transaction/addanimationcompletion(criteria:_:).md)
+- [func addAnimationCompletion(criteria: AnimationCompletionCriteria, () -> Void)](./addanimationcompletion%28criteria,_%29.md)
   Adds a completion to run when the animations created with this transaction are all complete.
 
 

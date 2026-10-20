@@ -1,7 +1,8 @@
 # appendInterpolation(_:format:privacy:)
 
 **Framework**: os  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a Boolean argument to the message.
 
@@ -11,7 +12,7 @@ Adds a Boolean argument to the message.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -27,7 +28,7 @@ Don’t call this function directly. The system calls it automatically when inte
 ## Parameters
 
 - `boolean`: The Boolean value to add to the message.
-- `format`: The format to apply to the Boolean value. You format Boolean values as either true/false or yes/no strings. If you don’t specify this parameter, the default format uses true/false strings. For more information, see [`OSLogBoolFormat`](oslogboolformat.md).
+- `format`: The format to apply to the Boolean value. You format Boolean values as either true/false or yes/no strings. If you don’t specify this parameter, the default format uses true/false strings. For more information, see [`OSLogBoolFormat`](../oslogboolformat.md).
 - `privacy`: The privacy level of the information. If you don’t specify this parameter, the system uses the default rules to determine whether to show the information.
 
 

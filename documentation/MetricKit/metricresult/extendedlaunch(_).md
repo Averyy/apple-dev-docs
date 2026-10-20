@@ -1,7 +1,8 @@
 # MetricResult.extendedLaunch(_:)
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,13 +18,14 @@ case extendedLaunch(ExtendedLaunchMetric)
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [case timeToFirstDraw(TimeToFirstDrawMetric)](metricresult/timetofirstdraw(_:).md)
-- [case applicationResumeTime(ApplicationResumeTimeMetric)](metricresult/applicationresumetime(_:).md)
-- [case optimizedTimeToFirstDraw(OptimizedTimeToFirstDrawMetric)](metricresult/optimizedtimetofirstdraw(_:).md)
+### App launch
+- [case timeToFirstDraw(TimeToFirstDrawMetric)](./timetofirstdraw%28_%29.md)
+- [case applicationResumeTime(ApplicationResumeTimeMetric)](./applicationresumetime%28_%29.md)
+- [case optimizedTimeToFirstDraw(OptimizedTimeToFirstDrawMetric)](./optimizedtimetofirstdraw%28_%29.md)
 
 
 ---

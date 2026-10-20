@@ -1,7 +1,8 @@
 # entryPath
 
 **Framework**: Apple Archive  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entry from the path field, or nil if missing or invalid.
 
@@ -11,7 +12,7 @@ The entry from the path field, or nil if missing or invalid.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration

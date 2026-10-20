@@ -1,17 +1,22 @@
 # icon(forFile:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an image containing the icon for the specified file.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func icon(forFile fullPath: String) -> NSImage
+```
+
+```objc
+- (NSImage *) iconForFile:(NSString *) fullPath;
 ```
 
 #### Return Value
@@ -30,17 +35,19 @@ You can safely call this method from any thread of your app.
 
 ## See Also
 
-- [func icon(forFileType: String) -> NSImage](nsworkspace/icon(forfiletype:).md)
+### Related Documentation
+- [func icon(forFileType: String) -> NSImage](./icon%28forfiletype%29.md)
   Returns an image containing the icon for files of the specified type.
-- [func getInfoForFile(String, application: AutoreleasingUnsafeMutablePointer<NSString?>?, type: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](nsworkspace/getinfoforfile(_:application:type:).md)
+- [func getInfoForFile(String, application: AutoreleasingUnsafeMutablePointer<NSString?>?, type: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./getinfoforfile%28_,application,type%29.md)
   Retrieves information about the specified file.
-- [func icon(forFiles: [String]) -> NSImage?](nsworkspace/icon(forfiles:).md)
+### Managing Icons
+- [func icon(forFiles: [String]) -> NSImage?](./icon%28forfiles%29.md)
   Returns an image containing the icon for the specified files.
-- [func icon(for: UTType) -> NSImage](nsworkspace/icon(for:).md)
+- [func icon(for: UTType) -> NSImage](./icon%28for%29.md)
   Returns an image containing the icon for the specified content type.
-- [func setIcon(NSImage?, forFile: String, options: NSWorkspace.IconCreationOptions) -> Bool](nsworkspace/seticon(_:forfile:options:).md)
+- [func setIcon(NSImage?, forFile: String, options: NSWorkspace.IconCreationOptions) -> Bool](./seticon%28_,forfile,options%29.md)
   Sets the icon for the file or directory at the specified path.
-- [NSWorkspace.IconCreationOptions](nsworkspace/iconcreationoptions.md)
+- [NSWorkspace.IconCreationOptions](./iconcreationoptions.md)
   Constants that describe options for creating icons.
 
 

@@ -1,7 +1,8 @@
 # second
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Identifier for the second unit.
 
@@ -20,17 +21,22 @@ Identifier for the second unit.
 static var second: NSCalendar.Unit { get }
 ```
 
+```c
+NSCalendarUnitSecond
+```
+
 #### Discussion
 
 The corresponding value is a `double`. Equal to `kCFCalendarUnitSecond`.
 
 ## See Also
 
-- [static var hour: NSCalendar.Unit](nscalendar/unit/hour.md)
+### Specifying Hours, Minutes, and Seconds
+- [static var hour: NSCalendar.Unit](./hour.md)
   Identifier for the hour unit.
-- [static var minute: NSCalendar.Unit](nscalendar/unit/minute.md)
+- [static var minute: NSCalendar.Unit](./minute.md)
   Identifier for the minute unit.
-- [static var nanosecond: NSCalendar.Unit](nscalendar/unit/nanosecond.md)
+- [static var nanosecond: NSCalendar.Unit](./nanosecond.md)
   Identifier for the nanosecond unit.
 
 

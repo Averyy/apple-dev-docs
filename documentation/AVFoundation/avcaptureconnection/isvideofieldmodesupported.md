@@ -1,7 +1,8 @@
 # isVideoFieldModeSupported
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the connection supports setting a video field mode.
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether the connection supports setting a video f
 var isVideoFieldModeSupported: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isVideoFieldModeSupported) BOOL supportsVideoFieldMode;
+```
+
 #### Discussion
 
-The property only applies to a video connection’s [`videoFieldMode`](avcaptureconnection/videofieldmode.md) property.
+The property only applies to a video connection’s [`videoFieldMode`](./videofieldmode.md) property.
 
 ## See Also
 
-- [var videoFieldMode: AVVideoFieldMode](avcaptureconnection/videofieldmode.md)
+### Interlacing video
+- [var videoFieldMode: AVVideoFieldMode](./videofieldmode.md)
   A setting that tells the connection how to interlace video flowing through it.
-- [enum AVVideoFieldMode](avvideofieldmode.md)
+- [enum AVVideoFieldMode](../avvideofieldmode.md)
   Constants that indicate which interlacing modes the connection applies to video flowing through it.
 
 

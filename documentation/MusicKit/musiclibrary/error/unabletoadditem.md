@@ -1,7 +1,8 @@
 # MusicLibrary.Error.unableToAddItem
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that the item attempting to be added to the user’s music library cannot be added.
 

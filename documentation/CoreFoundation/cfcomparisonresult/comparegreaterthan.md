@@ -1,18 +1,19 @@
 # CFComparisonResult.compareGreaterThan
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Returned by a comparison function if the first value is greater than the second value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ Returned by a comparison function if the first value is greater than the second 
 case compareGreaterThan
 ```
 
+```c
+kCFCompareGreaterThan
+```
+
 ## See Also
 
-- [CFComparisonResult.compareLessThan](cfcomparisonresult/comparelessthan.md)
+### Constants
+- [CFComparisonResult.compareLessThan](./comparelessthan.md)
   Returned by a comparison function if the first value is less than the second value.
-- [CFComparisonResult.compareEqualTo](cfcomparisonresult/compareequalto.md)
+- [CFComparisonResult.compareEqualTo](./compareequalto.md)
   Returned by a comparison function if the first value is equal to the second value.
 
 

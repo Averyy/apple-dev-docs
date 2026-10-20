@@ -1,7 +1,8 @@
 # vn_rdwr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Read from or write to a file.
 
@@ -10,11 +11,11 @@ Read from or write to a file.
 
 ## Declaration
 
-```swift
+```c
 int vn_rdwr(enum uio_rw rw, struct vnode *vp, caddr_t base, int len, off_t offset, enum uio_seg segflg, int ioflg, kauth_cred_t cred, int *aresid, proc_t p);
 ```
 
-#### Return_value
+#### Return Value
 
 0 for success; errors from filesystem, and EIO if did not perform all requested I/O and the "aresid" parameter is NULL.
 

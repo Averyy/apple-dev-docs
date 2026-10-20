@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default dialog severity. Alerts that present an error will use `.critical` and all others will use `.standard`.
 
@@ -22,9 +23,10 @@ static let automatic: DialogSeverity
 
 ## See Also
 
-- [static let standard: DialogSeverity](dialogseverity/standard.md)
+### Getting severities
+- [static let standard: DialogSeverity](./standard.md)
   A severity that indicates the dialog is being displayed for the purpose of presenting information to the user.
-- [static let critical: DialogSeverity](dialogseverity/critical.md)
+- [static let critical: DialogSeverity](./critical.md)
   A severity that indicates extra attention should be given to the dialog, for example when unexpected data loss may occur as a result of the action taken.
 
 

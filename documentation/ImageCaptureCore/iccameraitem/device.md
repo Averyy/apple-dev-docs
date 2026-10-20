@@ -1,7 +1,8 @@
 # device
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item’s parent device.
 
@@ -18,13 +19,18 @@ The item’s parent device.
 var device: ICCameraDevice? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) ICCameraDevice * device;
+```
+
 ## See Also
 
-- [var fileSystemPath: String?](iccameraitem/filesystempath.md)
+### Locating an Item
+- [var fileSystemPath: String?](./filesystempath.md)
   The item’s file system path on a camera using the mass storage transport type.
-- [var parentFolder: ICCameraFolder?](iccameraitem/parentfolder.md)
+- [var parentFolder: ICCameraFolder?](./parentfolder.md)
   This item’s parent folder.
-- [var isInTemporaryStore: Bool](iccameraitem/isintemporarystore.md)
+- [var isInTemporaryStore: Bool](./isintemporarystore.md)
   A Boolean value that indicates whether this item is in a temporary store.
 
 

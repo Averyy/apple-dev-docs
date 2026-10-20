@@ -1,7 +1,8 @@
 # signedDate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date that the App Store signed the JWS app transaction.
 
@@ -22,13 +23,14 @@ let signedDate: Date
 
 #### Discussion
 
-Use the [`signedDate`](apptransaction/signeddate.md) to verify whether the certificate used to sign the app transaction was valid when the App Store signed the transaction.
+Use the [`signedDate`](./signeddate.md) to verify whether the certificate used to sign the app transaction was valid when the App Store signed the transaction.
 
 ## See Also
 
-- [let deviceVerification: Data](apptransaction/deviceverification.md)
+### Verifying the app transaction
+- [let deviceVerification: Data](./deviceverification.md)
   The device verification value to use to verify whether the app transaction belongs to the device.
-- [let deviceVerificationNonce: UUID](apptransaction/deviceverificationnonce.md)
+- [let deviceVerificationNonce: UUID](./deviceverificationnonce.md)
   The UUID used to compute the device verification value.
 
 

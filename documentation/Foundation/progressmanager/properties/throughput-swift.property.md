@@ -1,7 +1,8 @@
 # throughput
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The throughput, in bytes per second.
 

@@ -1,23 +1,28 @@
 # data
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The data for the geometry source.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 var data: Data { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSData * data;
 ```
 
 #### Discussion
@@ -26,19 +31,20 @@ A geometry source’s data is an array of vectors, each of which represents a pa
 
 ## See Also
 
-- [var semantic: SCNGeometrySource.Semantic](scngeometrysource/semantic-swift.property.md)
+### Inspecting a Geometry Source
+- [var semantic: SCNGeometrySource.Semantic](./semantic-swift.property.md)
   The semantic value (or attribute) the geometry source describes for each vertex.
-- [var vectorCount: Int](scngeometrysource/vectorcount.md)
+- [var vectorCount: Int](./vectorcount.md)
   The number of vectors in the data.
-- [var usesFloatComponents: Bool](scngeometrysource/usesfloatcomponents.md)
+- [var usesFloatComponents: Bool](./usesfloatcomponents.md)
   A Boolean value that indicates whether vector components are floating-point values.
-- [var componentsPerVector: Int](scngeometrysource/componentspervector.md)
+- [var componentsPerVector: Int](./componentspervector.md)
   The number of scalar components in each vector.
-- [var bytesPerComponent: Int](scngeometrysource/bytespercomponent.md)
+- [var bytesPerComponent: Int](./bytespercomponent.md)
   The size, in bytes, of each vector component.
-- [var dataOffset: Int](scngeometrysource/dataoffset.md)
+- [var dataOffset: Int](./dataoffset.md)
   The offset, in bytes, from the beginning of the data to the first vector component to be used in the geometry source.
-- [var dataStride: Int](scngeometrysource/datastride.md)
+- [var dataStride: Int](./datastride.md)
   The number of bytes from a vector to the next one in the data.
 
 

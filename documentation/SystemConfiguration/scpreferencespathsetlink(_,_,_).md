@@ -1,7 +1,8 @@
 # SCPreferencesPathSetLink(_:_:_:)
 
 **Framework**: System Configuration  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Associates a link to a second dictionary at the specified path.
 
@@ -12,6 +13,10 @@ Associates a link to a second dictionary at the specified path.
 
 ```swift
 func SCPreferencesPathSetLink(_ prefs: SCPreferences, _ path: CFString, _ link: CFString) -> Bool
+```
+
+```c
+Boolean SCPreferencesPathSetLink(SCPreferencesRef prefs, CFStringRef path, CFStringRef link);
 ```
 
 #### Return Value
@@ -26,7 +31,8 @@ func SCPreferencesPathSetLink(_ prefs: SCPreferences, _ path: CFString, _ link: 
 
 ## See Also
 
-- [func SCPreferencesPathSetValue(SCPreferences, CFString, CFDictionary) -> Bool](scpreferencespathsetvalue(_:_:_:).md)
+### Associating Information with a Path
+- [func SCPreferencesPathSetValue(SCPreferences, CFString, CFDictionary) -> Bool](./scpreferencespathsetvalue%28_,_,_%29.md)
   Associates the specified dictionary with the specified path.
 
 

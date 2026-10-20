@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Configures a rectangle for the fragment scissor test.
@@ -11,7 +12,7 @@ Configures a rectangle for the fragment scissor test.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,25 +21,30 @@ Configures a rectangle for the fragment scissor test.
 func setScissorRect(_ rect: MTLScissorRect)
 ```
 
+```objc
+- (void) setScissorRect:(MTLScissorRect) rect;
+```
+
 #### Discussion
 
 The rendering pipeline discards any fragments that lie outside the scissor rectangle.
 
 The default scissor rectangle is the same size as the current render attachment, with its origin coordinates in the upper-left corner at `(0, 0)`.
 
-> **Note**:  You can change the render pass’s scissor rectangle configuration by calling this method again or by calling the [`setScissorRects(_:)`](mtlrendercommandencoder/setscissorrects(_:).md) method.
+> **Note**:  You can change the render pass’s scissor rectangle configuration by calling this method again or by calling the [`setScissorRects(_:)`](./setscissorrects%28_%29.md) method.
 
 ## Parameters
 
-- `rect`: An [`MTLScissorRect`](mtlscissorrect.md) instance that represents a rectangle that needs to lie completely within the current render attachment.
+- `rect`: An [`MTLScissorRect`](../mtlscissorrect.md) instance that represents a rectangle that needs to lie completely within the current render attachment.
 
 ## See Also
 
-- [func setViewport(MTLViewport)](mtlrendercommandencoder/setviewport(_:).md)
+### Configuring viewport and scissor behavior
+- [func setViewport(MTLViewport)](./setviewport%28_%29.md)
   Configures the render pipeline with a viewport that applies a transformation and a clipping rectangle.
-- [func setViewports([MTLViewport])](mtlrendercommandencoder/setviewports(_:).md)
+- [func setViewports([MTLViewport])](./setviewports%28_%29.md)
   Configures the render pipeline with multiple viewports that apply transformations and clipping rectangles.
-- [func setScissorRects([MTLScissorRect])](mtlrendercommandencoder/setscissorrects(_:).md)
+- [func setScissorRects([MTLScissorRect])](./setscissorrects%28_%29.md)
   Configures multiple rectangles for the fragment scissor test.
 
 

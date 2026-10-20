@@ -1,7 +1,8 @@
 # BindTarget.rootMotion
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A target that drives an entity’s root motion.
 

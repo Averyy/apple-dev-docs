@@ -1,7 +1,8 @@
 # HKMetadataKeyAppleFitnessPlusCatalogIdentifier
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.2+
@@ -17,6 +18,10 @@
 let HKMetadataKeyAppleFitnessPlusCatalogIdentifier: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyAppleFitnessPlusCatalogIdentifier;
+```
+
 #### Discussion
 
 Contains the catalog identifier of the Fitness+ workout.
@@ -25,10 +30,11 @@ This key only exists if the workout was completed in Fitness+. The expected valu
 
 ## See Also
 
-- [let HKDataTypeIdentifierStateOfMind: String](hkdatatypeidentifierstateofmind.md)
-- [let HKMetadataKeyMaximumLightIntensity: String](hkmetadatakeymaximumlightintensity.md)
+### Constants
+- [let HKDataTypeIdentifierStateOfMind: String](./hkdatatypeidentifierstateofmind.md)
+- [let HKMetadataKeyMaximumLightIntensity: String](./hkmetadatakeymaximumlightintensity.md)
   A key that indicates the maximum intensity of light for an outdoor time sample.
-- [let HKPredicateKeyPathWorkoutEffortRelationship: String](hkpredicatekeypathworkouteffortrelationship.md)
+- [let HKPredicateKeyPathWorkoutEffortRelationship: String](./hkpredicatekeypathworkouteffortrelationship.md)
 
 
 ---

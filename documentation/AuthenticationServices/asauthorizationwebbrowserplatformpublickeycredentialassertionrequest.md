@@ -1,7 +1,8 @@
 # ASAuthorizationWebBrowserPlatformPublicKeyCredentialAssertionRequest
 
 **Framework**: Authentication Services  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface you use to respond to authentication challenges in a web browser.
 
@@ -17,24 +18,29 @@ An interface you use to respond to authentication challenges in a web browser.
 protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialAssertionRequest
 ```
 
+```objc
+@protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialAssertionRequest
+```
+
 ## Topics
 
 ### Information about the assertion
-- [var clientData: ASPublicKeyCredentialClientData?](asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-655pi.md)
+- [var clientData: ASPublicKeyCredentialClientData?](./asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/clientdata-655pi.md)
   The client data to supply to the relying party.
-- [var shouldShowHybridTransport: Bool](asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/shouldshowhybridtransport.md)
+- [var shouldShowHybridTransport: Bool](./asauthorizationwebbrowserplatformpublickeycredentialassertionrequest/shouldshowhybridtransport.md)
   Whether a remote authenticator that communicates with the operating system using Bluetooth can resolve the challenge.
 
 ## Relationships
 
 ### Conforming Types
-- [ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](asauthorizationplatformpublickeycredentialassertionrequest.md)
+- [ASAuthorizationPlatformPublicKeyCredentialAssertionRequest](./asauthorizationplatformpublickeycredentialassertionrequest.md)
 
 ## See Also
 
-- [protocol ASAuthorizationWebBrowserExternallyAuthenticatableRequest](asauthorizationwebbrowserexternallyauthenticatablerequest.md)
+### Website authentication requests
+- [protocol ASAuthorizationWebBrowserExternallyAuthenticatableRequest](./asauthorizationwebbrowserexternallyauthenticatablerequest.md)
   An authorization request for which a web browser can retrieve credentials.
-- [protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialRegistrationRequest](asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest.md)
+- [protocol ASAuthorizationWebBrowserPlatformPublicKeyCredentialRegistrationRequest](./asauthorizationwebbrowserplatformpublickeycredentialregistrationrequest.md)
   An interface you use to respond to passkey-creation challenges in a web browser.
 
 

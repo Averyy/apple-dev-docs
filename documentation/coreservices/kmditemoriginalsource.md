@@ -1,7 +1,8 @@
 # kMDItemOriginalSource
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Original source of the movie. A CFString.
 
@@ -12,6 +13,10 @@ Original source of the movie. A CFString.
 
 ```swift
 let kMDItemOriginalSource: CFString!
+```
+
+```c
+const CFStringRef kMDItemOriginalSource;
 ```
 
 

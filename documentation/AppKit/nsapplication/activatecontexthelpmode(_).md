@@ -1,17 +1,22 @@
 # activateContextHelpMode(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Places the receiver in context-sensitive help mode.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func activateContextHelpMode(_ sender: Any?)
+```
+
+```objc
+- (void) activateContextHelpMode:(id) sender;
 ```
 
 #### Discussion
@@ -26,15 +31,16 @@ Most apps don’t use this method. Instead, apps enter context-sensitive mode wh
 
 ## See Also
 
-- [func registerUserInterfaceItemSearchHandler(any NSUserInterfaceItemSearching)](nsapplication/registeruserinterfaceitemsearchhandler(_:).md)
+### Providing help information
+- [func registerUserInterfaceItemSearchHandler(any NSUserInterfaceItemSearching)](./registeruserinterfaceitemsearchhandler%28_%29.md)
   Register an object that provides help data to your app.
-- [func searchString(String, inUserInterfaceItemString: String, range: NSRange, found: UnsafeMutablePointer<NSRange>?) -> Bool](nsapplication/searchstring(_:inuserinterfaceitemstring:range:found:).md)
+- [func searchString(String, inUserInterfaceItemString: String, range: NSRange, found: UnsafeMutablePointer<NSRange>?) -> Bool](./searchstring%28_,inuserinterfaceitemstring,range,found%29.md)
   Searches for the string in the user interface.
-- [func unregisterUserInterfaceItemSearchHandler(any NSUserInterfaceItemSearching)](nsapplication/unregisteruserinterfaceitemsearchhandler(_:).md)
+- [func unregisterUserInterfaceItemSearchHandler(any NSUserInterfaceItemSearching)](./unregisteruserinterfaceitemsearchhandler%28_%29.md)
   Unregister an object that provides help data to your app.
-- [func showHelp(Any?)](nsapplication/showhelp(_:).md)
+- [func showHelp(Any?)](./showhelp%28_%29.md)
   If your project is properly registered, and the necessary keys have been set in the property list, this method launches Help Viewer and displays the first page of your app’s help book.
-- [var helpMenu: NSMenu?](nsapplication/helpmenu.md)
+- [var helpMenu: NSMenu?](./helpmenu.md)
   The help menu used by the app.
 
 

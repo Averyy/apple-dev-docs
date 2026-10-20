@@ -1,7 +1,8 @@
 # init(envelope:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the distance model parameters with an envelope.
 
@@ -17,6 +18,10 @@ Creates the distance model parameters with an envelope.
 
 ```swift
 init(envelope: PHASEEnvelope)
+```
+
+```objc
+- (instancetype) initWithEnvelope:(PHASEEnvelope *) envelope;
 ```
 
 ## Parameters

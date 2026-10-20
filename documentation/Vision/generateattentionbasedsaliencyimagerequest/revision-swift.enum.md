@@ -1,7 +1,8 @@
 # GenerateAttentionBasedSaliencyImageRequest.Revision
 
 **Framework**: Vision  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that describes the algorithm or implementation that the request performs.
 
@@ -23,25 +24,26 @@ enum Revision
 ## Topics
 
 ### Getting the revision
-- [GenerateAttentionBasedSaliencyImageRequest.Revision.revision2](generateattentionbasedsaliencyimagerequest/revision-swift.enum/revision2.md)
+- [GenerateAttentionBasedSaliencyImageRequest.Revision.revision2](./revision-swift.enum/revision2.md)
   An algorithm or implementation that represents the second revision.
 
 ## Relationships
 
 ### Conforms To
-- [Comparable](../swift/comparable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Comparable](../../Swift/comparable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let revision: GenerateAttentionBasedSaliencyImageRequest.Revision](generateattentionbasedsaliencyimagerequest/revision-swift.property.md)
+### Getting the revision
+- [let revision: GenerateAttentionBasedSaliencyImageRequest.Revision](./revision-swift.property.md)
   The algorithm or implementation the request uses.
-- [static let supportedRevisions: [GenerateAttentionBasedSaliencyImageRequest.Revision]](generateattentionbasedsaliencyimagerequest/supportedrevisions.md)
+- [static let supportedRevisions: [GenerateAttentionBasedSaliencyImageRequest.Revision]](./supportedrevisions.md)
   The collection of revisions the request supports.
 
 

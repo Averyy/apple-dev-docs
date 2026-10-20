@@ -1,7 +1,8 @@
 # cfBookmarkResolutionWithoutMountingMask
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that no volume should be mounted during resolution of the bookmark data.
 
@@ -20,11 +21,16 @@ Specifies that no volume should be mounted during resolution of the bookmark dat
 static var cfBookmarkResolutionWithoutMountingMask: CFURLBookmarkResolutionOptions { get }
 ```
 
+```c
+kCFBookmarkResolutionWithoutMountingMask
+```
+
 ## See Also
 
-- [static var cfBookmarkResolutionWithoutUIMask: CFURLBookmarkResolutionOptions](cfurlbookmarkresolutionoptions/cfbookmarkresolutionwithoutuimask.md)
+### Constants
+- [static var cfBookmarkResolutionWithoutUIMask: CFURLBookmarkResolutionOptions](./cfbookmarkresolutionwithoutuimask.md)
   Specifies that no UI feedback accompany resolution of the bookmark data.
-- [static var cfurlBookmarkResolutionWithSecurityScope: CFURLBookmarkResolutionOptions](cfurlbookmarkresolutionoptions/cfurlbookmarkresolutionwithsecurityscope.md)
+- [static var cfurlBookmarkResolutionWithSecurityScope: CFURLBookmarkResolutionOptions](./cfurlbookmarkresolutionwithsecurityscope.md)
   Specifies that the security scope, applied to the bookmark when it was created, should be used during resolution of the bookmark data.
 
 

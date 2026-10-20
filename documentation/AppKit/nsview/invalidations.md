@@ -1,7 +1,8 @@
 # NSView.Invalidations
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Changes that cause aspects of a view to be invalid and require an update.
 
@@ -18,17 +19,17 @@ enum Invalidations
 ## Topics
 
 ### Types of Invalidations
-- [NSView.Invalidations.Constraints](nsview/invalidations/constraints.md)
+- [NSView.Invalidations.Constraints](./invalidations/constraints.md)
   A change that invalidates a view’s constraints.
-- [NSView.Invalidations.Display](nsview/invalidations/display.md)
+- [NSView.Invalidations.Display](./invalidations/display.md)
   A change that requires the system to redraw a view’s content.
-- [NSView.Invalidations.IntrinsicContentSize](nsview/invalidations/intrinsiccontentsize.md)
+- [NSView.Invalidations.IntrinsicContentSize](./invalidations/intrinsiccontentsize.md)
   A change that invalidates a view’s intrinsic size.
-- [NSView.Invalidations.Layout](nsview/invalidations/layout.md)
+- [NSView.Invalidations.Layout](./invalidations/layout.md)
   A change that invalidates the layout of the containing view’s subviews.
-- [NSView.Invalidations.RestorableState](nsview/invalidations/restorablestate.md)
+- [NSView.Invalidations.RestorableState](./invalidations/restorablestate.md)
   A change that invalidates the restorable state of the view.
-- [NSView.Invalidations.Tuple](nsview/invalidations/tuple.md)
+- [NSView.Invalidations.Tuple](./invalidations/tuple.md)
   A change that invalidates a combination of factors covered by the other invalidation types.
 
 

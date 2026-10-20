@@ -1,7 +1,8 @@
 # MusicPlayer.Queue.Entry.Item
 
 **Framework**: MusicKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An item that corresponds to an entry in the playback queue.
 
@@ -22,33 +23,33 @@ enum Item
 ## Topics
 
 ### Enumeration Cases
-- [MusicPlayer.Queue.Entry.Item.musicVideo(_:)](musicplayer/queue/entry/item-swift.enum/musicvideo(_:).md)
+- [MusicPlayer.Queue.Entry.Item.musicVideo(_:)](./item-swift.enum/musicvideo%28_%29.md)
   An item that corresponds to a music video.
-- [MusicPlayer.Queue.Entry.Item.song(_:)](musicplayer/queue/entry/item-swift.enum/song(_:).md)
+- [MusicPlayer.Queue.Entry.Item.song(_:)](./item-swift.enum/song%28_%29.md)
   An item that corresponds to a song.
 ### Instance Properties
-- [var id: MusicItemID](musicplayer/queue/entry/item-swift.enum/id.md)
+- [var id: MusicItemID](./item-swift.enum/id.md)
   The unique identifier for the music player item.
-- [var playParameters: PlayParameters?](musicplayer/queue/entry/item-swift.enum/playparameters.md)
+- [var playParameters: PlayParameters?](./item-swift.enum/playparameters.md)
   The parameters to use to play the item.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [MusicItem](musicitem.md)
-- [MusicPropertyContainer](musicpropertycontainer.md)
-- [PlayableMusicItem](playablemusicitem.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../../../Swift/customstringconvertible.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Escapable](../../../../Swift/escapable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Identifiable](../../../../Swift/identifiable.md)
+- [MusicItem](../../../musicitem.md)
+- [MusicPropertyContainer](../../../musicpropertycontainer.md)
+- [PlayableMusicItem](../../../playablemusicitem.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

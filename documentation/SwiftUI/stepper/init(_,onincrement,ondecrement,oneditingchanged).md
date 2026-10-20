@@ -1,7 +1,8 @@
 # init(_:onIncrement:onDecrement:onEditingChanged:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stepper that uses a title key and executes the closures you provide when the user clicks or taps the stepper’s increment and decrement buttons.
 
@@ -20,11 +21,25 @@ Creates a stepper that uses a title key and executes the closures you provide wh
 nonisolated init(_ titleResource: LocalizedStringResource, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: @escaping (Bool) -> Void = { _ in })
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: @escaping (Bool) -> Void = { _ in })
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where S : StringProtocol
+```
+
 #### Discussion
 
-Use this initializer to create a stepper with a custom title that executes closures you provide when either of the stepper’s increment or decrement buttons are pressed. This version of [`Stepper`](stepper.md) doesn’t take a binding to a value, nor does it allow you to specify a range of acceptable values, or a step value – it simply calls the closures you provide when the control’s buttons are pressed.
+Use this initializer to create a stepper with a custom title that executes closures you provide when either of the stepper’s increment or decrement buttons are pressed. This version of [`Stepper`](../stepper.md) doesn’t take a binding to a value, nor does it allow you to specify a range of acceptable values, or a step value – it simply calls the closures you provide when the control’s buttons are pressed.
 
-The example below uses an array that holds a number of [`Color`](color.md) values, a local state variable, `value`, to set the control’s background color, and title label. When the user clicks or taps on the stepper’s increment or decrement buttons SwiftUI executes the relevant closure that updates `value`, wrapping the `value` to prevent overflow. SwiftUI then re-renders the view, updating the text and background color to match the current index:
+The example below uses an array that holds a number of [`Color`](../color.md) values, a local state variable, `value`, to set the control’s background color, and title label. When the user clicks or taps on the stepper’s increment or decrement buttons SwiftUI executes the relevant closure that updates `value`, wrapping the `value` to prevent overflow. SwiftUI then re-renders the view, updating the text and background color to match the current index:
 
 ```swift
 struct StepperView: View {
@@ -52,7 +67,7 @@ struct StepperView: View {
 }
 ```
 
-![A view displaying a stepper that uses a title resource for the](/images/com.apple.SwiftUI/SwiftUI-Stepper-increment-decrement-closures@2x.png)
+![A view displaying a stepper that uses a title resource for the](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-Stepper-increment-decrement-closures@2x.png)
 
 ## Parameters
 
@@ -63,7 +78,8 @@ struct StepperView: View {
 
 ## See Also
 
-- [init(label: () -> Label, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: (Bool) -> Void)](stepper/init(label:onincrement:ondecrement:oneditingchanged:).md)
+### Creating a stepper with change behavior
+- [init(label: () -> Label, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: (Bool) -> Void)](./init%28label,onincrement,ondecrement,oneditingchanged%29.md)
   Creates a stepper instance that performs the closures you provide when the user increments or decrements the stepper.
 
 

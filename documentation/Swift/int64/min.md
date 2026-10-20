@@ -1,7 +1,8 @@
 # min
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The minimum representable integer in this type.
 
@@ -19,6 +20,8 @@ The minimum representable integer in this type.
 ```swift
 static var min: Self { get }
 ```
+
+Available when `Self` conforms to `FixedWidthInteger`.
 
 #### Discussion
 

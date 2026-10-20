@@ -1,18 +1,19 @@
 # SCNSkinner
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages the relationship between skeletal animations and the nodes and geometries they animate.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,21 +21,25 @@ An object that manages the relationship between skeletal animations and the node
 class SCNSkinner
 ```
 
+```objc
+@interface SCNSkinner : NSObject
+```
+
 #### Overview
 
 Skeletal animation is a technique for simplifying the animation of complex geometries, such as humanoid characters in a game. An animation skeleton is a simple hierarchy of control nodes, which themselves have no visible geometry. Associating the skeleton with a geometry (also called “skinning” the skeleton or creating a skinned model) allows SceneKit to automatically deform the geometry when you move the skeleton’s control nodes, as shown below.
 
-![None](/images/com.apple.scenekit/media-2929790@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929790@2x.png)
 
 ##### Working with an Animation Skeleton
 
 Typically, an artist creates a skinned model using external 3D authoring tools and saves it, along with animations that use the skeleton, in a scene file. You load the model from the scene file and pose or animate it in your app, either by using animation objects also loaded from the scene file or by directly manipulating the nodes in the skeleton.
 
-You can also create a skinned model from separately defined geometry and skeleton data using the [`init(baseGeometry:bones:boneInverseBindTransforms:boneWeights:boneIndices:)`](scnskinner/init(basegeometry:bones:boneinversebindtransforms:boneweights:boneindices:).md) method.
+You can also create a skinned model from separately defined geometry and skeleton data using the [`init(baseGeometry:bones:boneInverseBindTransforms:boneWeights:boneIndices:)`](./scnskinner/init%28basegeometry,bones,boneinversebindtransforms,boneweights,boneindices%29.md) method.
 
 ##### Sharing a Skinner Object
 
-To work with a skinned model’s skeleton, use the [`skinner`](scnnode/skinner.md) property of the model’s root node. For example, one file might contain an animated game character, and other files might contain accessories (such as hats or backpacks) for the character to wear. An artist using 3D authoring tools can specify that the character and the accessories be animated using identical skeletons. To attach a hat to the character so that they animate together, you link the skinner object responsible for animating the hat to the skeleton associated with the animated character, as in the following example:
+To work with a skinned model’s skeleton, use the [`skinner`](./scnnode/skinner.md) property of the model’s root node. For example, one file might contain an animated game character, and other files might contain accessories (such as hats or backpacks) for the character to wear. An artist using 3D authoring tools can specify that the character and the accessories be animated using identical skeletons. To attach a hat to the character so that they animate together, you link the skinner object responsible for animating the hat to the skeleton associated with the animated character, as in the following example:
 
 ```objc
 SCNNode *hero = [SCNScene sceneNamed:@"Hero"].rootNode;
@@ -45,48 +50,49 @@ hat.skinner.skeleton = hero.skinner.skeleton;
 ## Topics
 
 ### Creating a Skinner Object
-- [convenience init(baseGeometry: SCNGeometry?, bones: [SCNNode], boneInverseBindTransforms: [NSValue]?, boneWeights: SCNGeometrySource, boneIndices: SCNGeometrySource)](scnskinner/init(basegeometry:bones:boneinversebindtransforms:boneweights:boneindices:).md)
+- [convenience init(baseGeometry: SCNGeometry?, bones: [SCNNode], boneInverseBindTransforms: [NSValue]?, boneWeights: SCNGeometrySource, boneIndices: SCNGeometrySource)](./scnskinner/init%28basegeometry,bones,boneinversebindtransforms,boneweights,boneindices%29.md)
   Creates a skinner object with the specified visible geometry and skeleton information.
 ### Working with a Skinned Geometry
-- [var baseGeometry: SCNGeometry?](scnskinner/basegeometry.md)
+- [var baseGeometry: SCNGeometry?](./scnskinner/basegeometry.md)
   The geometry whose surface the skinner’s animation skeleton deforms.
-- [var baseGeometryBindTransform: SCNMatrix4](scnskinner/basegeometrybindtransform.md)
+- [var baseGeometryBindTransform: SCNMatrix4](./scnskinner/basegeometrybindtransform.md)
   The coordinate transformation for the skinner’s geometry in its default state.
 ### Working with an Animation Skeleton
-- [var skeleton: SCNNode?](scnskinner/skeleton.md)
+- [var skeleton: SCNNode?](./scnskinner/skeleton.md)
   The root node of the skinner object’s animation skeleton.
-- [var bones: [SCNNode]](scnskinner/bones.md)
+- [var bones: [SCNNode]](./scnskinner/bones.md)
   The control nodes of the animation skeleton.
-- [var boneInverseBindTransforms: [NSValue]?](scnskinner/boneinversebindtransforms.md)
+- [var boneInverseBindTransforms: [NSValue]?](./scnskinner/boneinversebindtransforms.md)
   The default transforms for the animation skeleton’s bone nodes.
-- [var boneWeights: SCNGeometrySource](scnskinner/boneweights.md)
+- [var boneWeights: SCNGeometrySource](./scnskinner/boneweights.md)
   The geometry source that defines the influence of each bone on the positions the geometry’s vertices.
-- [var boneIndices: SCNGeometrySource](scnskinner/boneindices.md)
+- [var boneIndices: SCNGeometrySource](./scnskinner/boneindices.md)
   The geometry source defining the mapping from bone indices in skeleton data to the skinner’s bones array.
 ### Initializers
-- [init?(coder: NSCoder)](scnskinner/init(coder:).md)
+- [init?(coder: NSCoder)](./scnskinner/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Animation](animation.md)
+### Animation and Constraints
+- [Animation](./animation.md)
   Create declarative animations that move elements of a scene in predetermined ways, or manage animations imported with external authoring tools.
-- [Constraints](constraints.md)
+- [Constraints](./constraints.md)
   Automatically adjust the position or orientation of a node based on specified rules.
-- [class SCNMorpher](scnmorpher.md)
+- [class SCNMorpher](./scnmorpher.md)
   An object that manages smooth transitions between a node’s base geometry and one or more target geometries.
 
 

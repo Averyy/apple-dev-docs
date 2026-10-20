@@ -1,7 +1,8 @@
 # SCContentSharingPickerObserver
 
 **Framework**: ScreenCaptureKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An observer protocol your app implements to receive messages from the operating system’s content picker.
 
@@ -19,29 +20,34 @@ An observer protocol your app implements to receive messages from the operating 
 protocol SCContentSharingPickerObserver : NSObjectProtocol
 ```
 
+```objc
+@protocol SCContentSharingPickerObserver <NSObject>
+```
+
 ## Topics
 
 ### Observing events
-- [func contentSharingPicker(SCContentSharingPicker, didCancelFor: SCStream?)](sccontentsharingpickerobserver/contentsharingpicker(_:didcancelfor:).md)
+- [func contentSharingPicker(SCContentSharingPicker, didCancelFor: SCStream?)](./sccontentsharingpickerobserver/contentsharingpicker%28_,didcancelfor%29.md)
   Tells the observer that a sharing picker canceled selection for a stream.
-- [func contentSharingPicker(SCContentSharingPicker, didUpdateWith: SCContentFilter, for: SCStream?)](sccontentsharingpickerobserver/contentsharingpicker(_:didupdatewith:for:).md)
+- [func contentSharingPicker(SCContentSharingPicker, didUpdateWith: SCContentFilter, for: SCStream?)](./sccontentsharingpickerobserver/contentsharingpicker%28_,didupdatewith,for%29.md)
   Tells the observer that a sharing picker updated the content filter for a stream.
 ### Observing errors
-- [func contentSharingPickerStartDidFailWithError(any Error)](sccontentsharingpickerobserver/contentsharingpickerstartdidfailwitherror(_:).md)
+- [func contentSharingPickerStartDidFailWithError(any Error)](./sccontentsharingpickerobserver/contentsharingpickerstartdidfailwitherror%28_%29.md)
   Tells the observer that a sharing picker was unable to start.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SCContentSharingPicker](sccontentsharingpicker.md)
+### System content-sharing picker
+- [class SCContentSharingPicker](./sccontentsharingpicker.md)
   An instance of a picker presented by the operating system for managing frame-capture streams.
-- [struct SCContentSharingPickerConfiguration](sccontentsharingpickerconfiguration-swift.struct.md)
+- [struct SCContentSharingPickerConfiguration](./sccontentsharingpickerconfiguration-swift.struct.md)
   An instance for configuring the system content-sharing picker.
-- [struct SCContentSharingPickerMode](sccontentsharingpickermode.md)
+- [struct SCContentSharingPickerMode](./sccontentsharingpickermode.md)
   Available modes for selecting streaming content from a picker presented by the operating system.
 
 

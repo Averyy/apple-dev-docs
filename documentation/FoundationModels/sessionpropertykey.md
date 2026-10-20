@@ -1,7 +1,8 @@
 # SessionPropertyKey
 
 **Framework**: Foundation Models  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for defining a custom session property key.
 
@@ -22,23 +23,24 @@ protocol SessionPropertyKey : SendableMetatype
 ## Topics
 
 ### Inspecting a property key
-- [static var defaultValue: Self.Value](sessionpropertykey/defaultvalue.md)
+- [static var defaultValue: Self.Value](./sessionpropertykey/defaultvalue.md)
   The default value of the property key.
-- [associatedtype Value](sessionpropertykey/value.md)
+- [associatedtype Value](./sessionpropertykey/value.md)
   The type of value that represent this property key.
 
 ## Relationships
 
 ### Inherits From
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [LanguageModelSession.SessionProperty](languagemodelsession/sessionproperty.md)
+### Custom session properties
+- [LanguageModelSession.SessionProperty](./languagemodelsession/sessionproperty.md)
   A property wrapper that provides access to properties from within profiles, dynamic instructions, and tools.
-- [class SessionPropertyValues](sessionpropertyvalues.md)
+- [class SessionPropertyValues](./sessionpropertyvalues.md)
   A container for property values.
-- [macro SessionPropertyEntry()](sessionpropertyentry().md)
+- [macro SessionPropertyEntry()](./sessionpropertyentry%28%29.md)
 
 
 ---

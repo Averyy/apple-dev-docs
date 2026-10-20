@@ -1,7 +1,8 @@
 # setLanguage(_:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the language of the text to be tokenized.
 
@@ -20,13 +21,18 @@ Sets the language of the text to be tokenized.
 func setLanguage(_ language: NLLanguage)
 ```
 
+```objc
+- (void) setLanguage:(NLLanguage) language;
+```
+
 ## See Also
 
-- [var string: String?](nltokenizer/string.md)
+### Configuring a tokenizer
+- [var string: String?](./string.md)
   The text to be tokenized.
-- [var unit: NLTokenUnit](nltokenizer/unit.md)
+- [var unit: NLTokenUnit](./unit.md)
   The linguistic unit that this tokenizer uses.
-- [NLTokenizer.Attributes](nltokenizer/attributes.md)
+- [NLTokenizer.Attributes](./attributes.md)
   Hints about the contents of the string for the tokenizer.
 
 

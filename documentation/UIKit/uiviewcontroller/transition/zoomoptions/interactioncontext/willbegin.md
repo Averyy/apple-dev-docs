@@ -1,7 +1,8 @@
 # willBegin
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the transition is beginning.
 
@@ -18,11 +19,16 @@ A Boolean value that indicates whether the transition is beginning.
 var willBegin: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL willBegin;
+```
+
 ## See Also
 
-- [var location: CGPoint](uiviewcontroller/transition/zoomoptions/interactioncontext/location.md)
+### Accessing the context
+- [var location: CGPoint](./location.md)
   The touch’s location.
-- [var velocity: CGVector](uiviewcontroller/transition/zoomoptions/interactioncontext/velocity.md)
+- [var velocity: CGVector](./velocity.md)
   The touch’s velocity.
 
 

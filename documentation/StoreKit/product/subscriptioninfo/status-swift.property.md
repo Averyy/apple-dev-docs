@@ -1,7 +1,8 @@
 # status
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains status information for a subscription group, including renewal and transaction information.
 
@@ -24,15 +25,16 @@ var status: [Product.SubscriptionInfo.Status] { get async throws }
 
 This array is empty if the customer was never subscribed to a product in this subscription group.
 
-The array can have more than one subscription status if your subscription supports Family Sharing. Provide the customer with service for the subscription based on the highest level of service where the state is [`subscribed`](product/subscriptioninfo/renewalstate/subscribed.md).
+The array can have more than one subscription status if your subscription supports Family Sharing. Provide the customer with service for the subscription based on the highest level of service where the state is [`subscribed`](./renewalstate/subscribed.md).
 
 ## See Also
 
-- [static func status(for: String) async throws -> [Product.SubscriptionInfo.Status]](product/subscriptioninfo/status(for:).md)
+### Determining the subscription status
+- [static func status(for: String) async throws -> [Product.SubscriptionInfo.Status]](./status%28for%29.md)
   Gets the subscription status for a subscription group identifier.
-- [static func status(transactionID: UInt64) async throws -> SubscriptionStatus?](product/subscriptioninfo/status(transactionid:).md)
+- [static func status(transactionID: UInt64) async throws -> SubscriptionStatus?](./status%28transactionid%29.md)
   Gets the subscription status for a transaction ID.
-- [Product.SubscriptionInfo.Status](product/subscriptioninfo/status-swift.struct.md)
+- [Product.SubscriptionInfo.Status](./status-swift.struct.md)
   The renewal status information for an auto-renewable subscription.
 
 

@@ -1,7 +1,8 @@
 # Ambisonic_Z
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The ambisonic Z channel.
 
@@ -10,17 +11,18 @@ The ambisonic Z channel.
 
 ## Declaration
 
-```swift
+```c
 Ambisonic_Z
 ```
 
 ## See Also
 
-- [Ambisonic_W](audiodriverkit/iouseraudiochannellabel/ambisonic_w.md)
+### First-Order Ambisonic Channels
+- [Ambisonic_W](./ambisonic_w.md)
   The ambisonic W channel.
-- [Ambisonic_X](audiodriverkit/iouseraudiochannellabel/ambisonic_x.md)
+- [Ambisonic_X](./ambisonic_x.md)
   The ambisonic X channel.
-- [Ambisonic_Y](audiodriverkit/iouseraudiochannellabel/ambisonic_y.md)
+- [Ambisonic_Y](./ambisonic_y.md)
   The ambisonic Y channel.
 
 

@@ -1,7 +1,8 @@
 # speechRecognitionTask(_:didHypothesizeTranscription:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a hypothesized transcription is available.
 
@@ -18,14 +19,18 @@ Tells the delegate that a hypothesized transcription is available.
 optional func speechRecognitionTask(_ task: SFSpeechRecognitionTask, didHypothesizeTranscription transcription: SFTranscription)
 ```
 
+```objc
+- (void) speechRecognitionTask:(SFSpeechRecognitionTask *) task didHypothesizeTranscription:(SFTranscription *) transcription;
+```
+
 #### Discussion
 
 This method is called for all recognitions, including partial recognitions.
 
 ## Parameters
 
-- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](sfspeechrecognitiontask.md) object) that represents the request.
-- `transcription`: The hypothesized transcription in an [`SFTranscription`](sftranscription.md) object.
+- `task`: The speech recognition task (an [`SFSpeechRecognitionTask`](../sfspeechrecognitiontask.md) object) that represents the request.
+- `transcription`: The hypothesized transcription in an [`SFTranscription`](../sftranscription.md) object.
 
 
 ---

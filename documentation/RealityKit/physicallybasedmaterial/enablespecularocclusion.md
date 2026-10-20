@@ -1,7 +1,8 @@
 # enableSpecularOcclusion
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Enables specular occlusion computations.
 
@@ -21,7 +22,7 @@ var enableSpecularOcclusion: Bool { get set }
 
 ## Mentions
 
-- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+- [Rendering high-fidelity characters](../rendering-high-fidelity-characters.md)
 
 #### Discussion
 
@@ -29,7 +30,7 @@ When enabled, this property reduces specular highlights in areas that are occlud
 
 Specular occlusion is particularly useful for character rendering and complex surfaces where traditional ambient occlusion alone may not provide sufficient detail for realistic specular lighting.
 
-> **Note**: This feature requires bent normal maps. Enable bent normals using [`bentNormal`](physicallybasedmaterial/bentnormal-swift.property.md).
+> **Note**: This feature requires bent normal maps. Enable bent normals using [`bentNormal`](./bentnormal-swift.property.md).
 
 ```swift
 material.enableSpecularOcclusion = boolean_value
@@ -37,9 +38,10 @@ material.enableSpecularOcclusion = boolean_value
 
 ## See Also
 
-- [var bentNormal: PhysicallyBasedMaterial.BentNormal](physicallybasedmaterial/bentnormal-swift.property.md)
+### Configuring occlusion shading
+- [var bentNormal: PhysicallyBasedMaterial.BentNormal](./bentnormal-swift.property.md)
   The bent normal map for the entity.
-- [PhysicallyBasedMaterial.BentNormal](physicallybasedmaterial/bentnormal-swift.struct.md)
+- [PhysicallyBasedMaterial.BentNormal](./bentnormal-swift.struct.md)
   The bent normal map for the entity.
 
 

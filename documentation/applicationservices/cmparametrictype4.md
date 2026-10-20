@@ -1,7 +1,8 @@
 # cmParametricType4
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Y = (aX+b)^gamma + e [X>=d],     Y = cX+f [X<d]
 

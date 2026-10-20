@@ -1,7 +1,8 @@
 # currentSegmentChanged
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The snapshot is out of sync due to a change of the current segment.
 
@@ -20,11 +21,16 @@ The snapshot is out of sync due to a change of the current segment.
 static let currentSegmentChanged: AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason
 ```
 
+```c
+extern AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason const AVPlayerIntegratedTimelineSnapshotsOutOfSyncReasonCurrentSegmentChanged;
+```
+
 ## See Also
 
-- [static let segmentsChanged: AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](avplayerintegratedtimelinesnapshotsoutofsyncreason/segmentschanged.md)
+### Getting the reasons
+- [static let segmentsChanged: AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](./segmentschanged.md)
   The snapshot is out of sync due to a change of segments.
-- [static let loadedTimeRangesChanged: AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](avplayerintegratedtimelinesnapshotsoutofsyncreason/loadedtimerangeschanged.md)
+- [static let loadedTimeRangesChanged: AVPlayerIntegratedTimelineSnapshotsOutOfSyncReason](./loadedtimerangeschanged.md)
   The snapshot is out of sync due to a change of the loaded time ranges.
 
 

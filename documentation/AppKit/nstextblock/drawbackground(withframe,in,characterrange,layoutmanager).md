@@ -1,7 +1,8 @@
 # drawBackground(withFrame:in:characterRange:layoutManager:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the layout manager to draw any colors and other decorations before the text is drawn.
 
@@ -14,11 +15,15 @@ Called by the layout manager to draw any colors and other decorations before the
 func drawBackground(withFrame frameRect: NSRect, in controlView: NSView?, characterRange charRange: NSRange, layoutManager: NSLayoutManager)
 ```
 
+```objc
+- (void) drawBackgroundWithFrame:(NSRect) frameRect inView:(NSView *) controlView characterRange:(NSRange) charRange layoutManager:(NSLayoutManager *) layoutManager;
+```
+
 ## Parameters
 
 - `frameRect`: The bounds rectangle in view coordinates.
 - `controlView`: The view in which drawing occurs.
-- `charRange`: The range of the characters in the [`NSTextStorage`](nstextstorage.md) object whose glyphs are to be drawn.
+- `charRange`: The range of the characters in the [`NSTextStorage`](../nstextstorage.md) object whose glyphs are to be drawn.
 - `layoutManager`: The layout manager controlling the typesetting.
 
 

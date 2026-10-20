@@ -1,7 +1,8 @@
 # topKGradient(_:source:axisTensor:kTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a TopKGradient operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a TopKGradient operation and returns the result tensor.
 
 ```swift
 func topKGradient(_ gradient: MPSGraphTensor, source: MPSGraphTensor, axisTensor: MPSGraphTensor, kTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) topKWithGradientTensor:(MPSGraphTensor *) gradient source:(MPSGraphTensor *) source axisTensor:(MPSGraphTensor *) axisTensor kTensor:(MPSGraphTensor *) kTensor name:(NSString *) name;
 ```
 
 #### Return Value

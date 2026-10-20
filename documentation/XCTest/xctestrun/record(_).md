@@ -1,14 +1,27 @@
 # record(_:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Records an issue during test execution for the test run.
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```swift
+func record(_ issue: XCTIssue)
+```
+
+*macOS*
+
 ```swift
 func record(_ issue: XCTIssueReference)
+```
+
+```objc
+- (void) recordIssue:(XCTIssue *) issue;
 ```
 
 #### Discussion
@@ -21,9 +34,10 @@ The test run records a failure or other issue during test execution with this me
 
 ## See Also
 
-- [func start()](xctestrun/start.md)
+### Performing Test Runs
+- [func start()](./start%28%29.md)
   Starts a test run.
-- [func stop()](xctestrun/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops a test run.
 
 

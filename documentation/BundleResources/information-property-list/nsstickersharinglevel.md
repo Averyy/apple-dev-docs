@@ -1,19 +1,22 @@
 # NSStickerSharingLevel
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `NSStickerSharingLevel` (Sticker Sharing Level)
+- **Type**: string
 
 ## See Also
 
-- [NSCriticalMessagingUsageDescription](information-property-list/nscriticalmessagingusagedescription.md)
+### Messages
+- [NSCriticalMessagingUsageDescription](./nscriticalmessagingusagedescription.md)
   A message that tells people why the app needs to send SMS messages.
 
 

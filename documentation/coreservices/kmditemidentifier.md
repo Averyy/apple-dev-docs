@@ -1,7 +1,8 @@
 # kMDItemIdentifier
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A formal identifier used to reference the resource within a given context. A CFString.
 
@@ -12,6 +13,10 @@ A formal identifier used to reference the resource within a given context. A CFS
 
 ```swift
 let kMDItemIdentifier: CFString!
+```
+
+```c
+const CFStringRef kMDItemIdentifier;
 ```
 
 

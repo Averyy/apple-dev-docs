@@ -1,7 +1,8 @@
 # Ad.SystemStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 System-computed delivery status of an ad.
 
@@ -10,13 +11,18 @@ System-computed delivery status of an ad.
 
 ## Declaration
 
-```swift
+```
 string Ad.SystemStatus
 ```
 
+## Possible Values
+
+- `RUNNING`: The ad is active and eligible to serve.
+- `NOT_RUNNING`: The system has identified a condition preventing the ad from delivering.
+
 #### Discussion
 
-The `SystemStatus` reports whether the platform currently allows the ad to serve, distinct from the advertiser-set [`Ad.Status`](ad/status-data.typealias.md).
+The `SystemStatus` reports whether the platform currently allows the ad to serve, distinct from the advertiser-set [`Ad.Status`](./status-data.typealias.md).
 
 ##### Example
 
@@ -26,7 +32,7 @@ The `SystemStatus` reports whether the platform currently allows the ad to serve
 }
 ```
 
-See [`AdSystemStatus`](adsystemstatus.md) for additional context.
+See [`AdSystemStatus`](../adsystemstatus.md) for additional context.
 
 
 ---

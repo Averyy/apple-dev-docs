@@ -1,7 +1,8 @@
 # null
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A schema that represents a null value.
 
@@ -23,7 +24,7 @@ static var null: DynamicGenerationSchema { get }
 
 You can use null schemas as a way to express types that cannot be absent, but may have an empty value.
 
-```None
+```
 let person = DynamicGenerationSchema(
     name: "Person",
     properties: []

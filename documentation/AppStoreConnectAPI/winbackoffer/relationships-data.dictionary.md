@@ -1,7 +1,8 @@
 # WinBackOffer.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object WinBackOffer.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object WinBackOffer.Relationships.Prices](winbackoffer/relationships-data.dictionary/prices-data.dictionary.md)
+- [object WinBackOffer.Relationships.Prices](./relationships-data.dictionary/prices-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object WinBackOffer.Relationships
 
 ## See Also
 
-- [object WinBackOffer.Attributes](winbackoffer/attributes-data.dictionary.md)
+### Objects
+- [object WinBackOffer.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a winback offer resource.
 
 

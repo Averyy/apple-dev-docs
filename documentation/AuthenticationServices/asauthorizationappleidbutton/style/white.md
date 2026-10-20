@@ -1,7 +1,8 @@
 # ASAuthorizationAppleIDButton.Style.white
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A white button.
 
@@ -19,11 +20,16 @@ A white button.
 case white
 ```
 
+```c
+ASAuthorizationAppleIDButtonStyleWhite
+```
+
 ## See Also
 
-- [ASAuthorizationAppleIDButton.Style.black](asauthorizationappleidbutton/style/black.md)
+### Choosing a Button Style
+- [ASAuthorizationAppleIDButton.Style.black](./black.md)
   A black button.
-- [ASAuthorizationAppleIDButton.Style.whiteOutline](asauthorizationappleidbutton/style/whiteoutline.md)
+- [ASAuthorizationAppleIDButton.Style.whiteOutline](./whiteoutline.md)
   A button with a white outline.
 
 

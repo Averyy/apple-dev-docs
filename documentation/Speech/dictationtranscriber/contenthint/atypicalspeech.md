@@ -1,7 +1,8 @@
 # atypicalSpeech
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A processing hint indicating that the audio is from a speaker with a heavy accent, lisp, or other confounding factor.
 
@@ -20,11 +21,12 @@ static let atypicalSpeech: DictationTranscriber.ContentHint
 
 ## See Also
 
-- [static let shortForm: DictationTranscriber.ContentHint](dictationtranscriber/contenthint/shortform.md)
+### Content hints
+- [static let shortForm: DictationTranscriber.ContentHint](./shortform.md)
   A processing hint indicating that the audio is only expected to be a minute or so long.
-- [static let farField: DictationTranscriber.ContentHint](dictationtranscriber/contenthint/farfield.md)
+- [static let farField: DictationTranscriber.ContentHint](./farfield.md)
   A processing hint indicating that the audio should be processed as if it were from a speaker far from the microphone.
-- [static func customizedLanguage(modelConfiguration: SFSpeechLanguageModel.Configuration) -> DictationTranscriber.ContentHint](dictationtranscriber/contenthint/customizedlanguage(modelconfiguration:).md)
+- [static func customizedLanguage(modelConfiguration: SFSpeechLanguageModel.Configuration) -> DictationTranscriber.ContentHint](./customizedlanguage%28modelconfiguration%29.md)
   A hint specifying a custom language model applicable to the expected spoken audio content.
 
 

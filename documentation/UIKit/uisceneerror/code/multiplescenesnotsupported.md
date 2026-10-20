@@ -1,7 +1,8 @@
 # UISceneError.Code.multipleScenesNotSupported
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates multiple scenes aren’t supported.
 
@@ -18,17 +19,22 @@ An error that indicates multiple scenes aren’t supported.
 case multipleScenesNotSupported
 ```
 
+```c
+UISceneErrorCodeMultipleScenesNotSupported
+```
+
 #### Discussion
 
 This error code indicates that the app doesn’t support multiple scenes, or the system was unable to display multiple scenes for your app.
 
 ## See Also
 
-- [UISceneError.Code.requestDenied](uisceneerror/code/requestdenied.md)
+### Error codes
+- [UISceneError.Code.requestDenied](./requestdenied.md)
   An error that indicates the request was denied.
-- [UISceneError.Code.geometryRequestUnsupported](uisceneerror/code/geometryrequestunsupported.md)
+- [UISceneError.Code.geometryRequestUnsupported](./geometryrequestunsupported.md)
   An error that indicates the geometry request is invalid or unsupported.
-- [UISceneError.Code.geometryRequestDenied](uisceneerror/code/geometryrequestdenied.md)
+- [UISceneError.Code.geometryRequestDenied](./geometryrequestdenied.md)
   An error that indicates the geometry request is valid but the system denied the request.
 
 

@@ -1,12 +1,13 @@
 # depth
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current bit depth and colorspace information of the screen.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,28 +15,33 @@ The current bit depth and colorspace information of the screen.
 var depth: NSWindow.Depth { get }
 ```
 
+```objc
+@property (readonly) NSWindowDepth depth;
+```
+
 #### Discussion
 
-This value cannot be used directly. You must pass it to a function such as [`bitsPerPixel`](nswindow/depth/bitsperpixel.md) or [`colorSpaceName`](nswindow/depth/colorspacename.md) to obtain a concrete value for the desired information.
+This value cannot be used directly. You must pass it to a function such as [`bitsPerPixel`](../nswindow/depth/bitsperpixel.md) or [`colorSpaceName`](../nswindow/depth/colorspacename.md) to obtain a concrete value for the desired information.
 
 ## See Also
 
-- [var frame: NSRect](nsscreen/frame.md)
+### Getting Screen Information
+- [var frame: NSRect](./frame.md)
   The dimensions and location of the screen.
-- [var supportedWindowDepths: UnsafePointer<NSWindow.Depth>](nsscreen/supportedwindowdepths.md)
+- [var supportedWindowDepths: UnsafePointer<NSWindow.Depth>](./supportedwindowdepths.md)
   A zero-terminated array of the window depths supported by the screen.
-- [var deviceDescription: [NSDeviceDescriptionKey : Any]](nsscreen/devicedescription.md)
+- [var deviceDescription: [NSDeviceDescriptionKey : Any]](./devicedescription.md)
   The device dictionary for the screen.
-- [struct NSDeviceDescriptionKey](nsdevicedescriptionkey.md)
+- [struct NSDeviceDescriptionKey](../nsdevicedescriptionkey.md)
   These constants are the keys for device description dictionaries.
-- [var colorSpace: NSColorSpace?](nsscreen/colorspace.md)
+- [var colorSpace: NSColorSpace?](./colorspace.md)
   The color space of the screen.
-- [var localizedName: String](nsscreen/localizedname.md)
+- [var localizedName: String](./localizedname.md)
   The localized name of the display.
-- [func canRepresent(NSDisplayGamut) -> Bool](nsscreen/canrepresent(_:).md)
+- [func canRepresent(NSDisplayGamut) -> Bool](./canrepresent%28_%29.md)
   A Boolean value indicating whether the color space of the screen is capable of representing the specified display gamut.
-- [enum NSDisplayGamut](nsdisplaygamut.md)
-- [class var screensHaveSeparateSpaces: Bool](nsscreen/screenshaveseparatespaces.md)
+- [enum NSDisplayGamut](../nsdisplaygamut.md)
+- [class var screensHaveSeparateSpaces: Bool](./screenshaveseparatespaces.md)
   Returns a Boolean value indicating whether each screen can have its own set of spaces.
 
 

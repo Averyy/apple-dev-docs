@@ -1,7 +1,8 @@
 # columnTerminators(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the column terminators for the specified locale.
 
@@ -14,23 +15,28 @@ Returns the column terminators for the specified locale.
 class func columnTerminators(for aLocale: Locale?) -> CharacterSet
 ```
 
+```objc
++ (NSCharacterSet *) columnTerminatorsForLocale:(NSLocale *) aLocale;
+```
+
 #### Return Value
 
 The characters for the column terminators.
 
 #### Discussion
 
-The returned value can be used as the value for [`columnTerminators`](nstexttab/optionkey/columnterminators.md) to make a decimal tab stop.
+The returned value can be used as the value for [`columnTerminators`](./optionkey/columnterminators.md) to make a decimal tab stop.
 
 ## Parameters
 
-- `aLocale`: The locale to use when determining the terminators. Specify `nil` to use the system’s current locale. You can get the user’s locale using the [`current`](https://developer.apple.com/documentation/foundation/nslocale/current) method of [`NSLocale`](https://developer.apple.com/documentation/foundation/nslocale).
+- `aLocale`: The locale to use when determining the terminators. Specify `nil` to use the system’s current locale. You can get the user’s locale using the [`current`](../../Foundation/nslocale/current.md) method of [`NSLocale`](../../Foundation/nslocale.md).
 
 ## See Also
 
-- [var alignment: NSTextAlignment](nstexttab/alignment.md)
+### Getting text tab information
+- [var alignment: NSTextAlignment](./alignment.md)
   The text alignment of the text tab.
-- [var options: [NSTextTab.OptionKey : Any]](nstexttab/options.md)
+- [var options: [NSTextTab.OptionKey : Any]](./options.md)
   The dictionary of attributes for the text tab.
 
 

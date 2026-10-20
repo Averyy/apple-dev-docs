@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes the elements of the given set from this set.
@@ -36,6 +37,12 @@ print(employees)
 ## Parameters
 
 - `other`: A set of the same type as the current set.
+
+## Default Implementations
+
+### SetAlgebra Implementations
+- [func subtract(Self)](./subtract%28_%29-7l337.md)
+  Removes the elements of the given set from this set.
 
 
 ---

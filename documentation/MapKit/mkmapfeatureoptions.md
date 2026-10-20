@@ -1,7 +1,8 @@
 # MKMapFeatureOptions
 
 **Framework**: MapKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure you use to tell the map which kinds of features users can interact with.
 
@@ -17,44 +18,49 @@ A structure you use to tell the map which kinds of features users can interact w
 struct MKMapFeatureOptions
 ```
 
+```c
+enum MKMapFeatureOptions : NSInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: Int)](mkmapfeatureoptions/init(rawvalue:).md)
+- [init(rawValue: Int)](./mkmapfeatureoptions/init%28rawvalue%29.md)
   Creates a new feature option structure with the specified value.
 ### Selecting interactive map features
-- [static var physicalFeatures: MKMapFeatureOptions](mkmapfeatureoptions/physicalfeatures.md)
+- [static var physicalFeatures: MKMapFeatureOptions](./mkmapfeatureoptions/physicalfeatures.md)
   The option that represents physical map features such as mountain ranges, rivers, and ocean basins.
-- [static var pointsOfInterest: MKMapFeatureOptions](mkmapfeatureoptions/pointsofinterest.md)
+- [static var pointsOfInterest: MKMapFeatureOptions](./mkmapfeatureoptions/pointsofinterest.md)
   The option that represents points of interest such as museums, cafes, parks, or schools.
-- [static var territories: MKMapFeatureOptions](mkmapfeatureoptions/territories.md)
+- [static var territories: MKMapFeatureOptions](./mkmapfeatureoptions/territories.md)
   The option that represents territorial boundaries such as a national border, a state boundary, or a neighborhood.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Identifying unique locations with Place IDs](identifying-unique-locations-with-place-ids.md)
+### Points of interest
+- [Identifying unique locations with Place IDs](./identifying-unique-locations-with-place-ids.md)
   Obtain information about a point of interest that persists over its lifetime.
-- [class MKMapFeatureAnnotation](mkmapfeatureannotation.md)
+- [class MKMapFeatureAnnotation](./mkmapfeatureannotation.md)
   A class that describes an annotation element on the map’s display such as a point of interest, territorial boundary, or physical feature.
-- [class MKMapItemRequest](mkmapitemrequest.md)
+- [class MKMapItemRequest](./mkmapitemrequest.md)
   A utility class you use to request additional information about a map feature.
-- [class MKIconStyle](mkiconstyle.md)
+- [class MKIconStyle](./mkiconstyle.md)
   A class you use to customize the annotation view icon of a point of interest (POI) on the map.
-- [class MKPointOfInterestFilter](mkpointofinterestfilter.md)
+- [class MKPointOfInterestFilter](./mkpointofinterestfilter.md)
   A filter that includes or excludes point of interest categories from a map view, local search, or local search completer.
-- [struct MKPointOfInterestCategory](mkpointofinterestcategory.md)
+- [struct MKPointOfInterestCategory](./mkpointofinterestcategory.md)
   A point of interest category.
 
 

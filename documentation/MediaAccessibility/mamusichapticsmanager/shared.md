@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Media Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared Music Haptics manager object.
 
@@ -17,6 +18,10 @@ The shared Music Haptics manager object.
 
 ```swift
 class var shared: MAMusicHapticsManager { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) MAMusicHapticsManager * sharedManager;
 ```
 
 

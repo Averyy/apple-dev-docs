@@ -1,7 +1,8 @@
 # invalidateFoundResults()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the found ranges and updates the system find panel.
 
@@ -17,19 +18,24 @@ Invalidates the found ranges and updates the system find panel.
 func invalidateFoundResults()
 ```
 
+```objc
+- (void) invalidateFoundResults;
+```
+
 #### Discussion
 
-If the [`searchText`](uifindinteraction/searchtext.md) for the find interaction is non-empty, a call to this method this triggers a call to [`performSearch(query:options:)`](uifindsession/performsearch(query:options:).md) immediately after to begin a new search.
+If the [`searchText`](../uifindinteraction/searchtext.md) for the find interaction is non-empty, a call to this method this triggers a call to [`performSearch(query:options:)`](./performsearch%28query,options%29.md) immediately after to begin a new search.
 
 ## See Also
 
-- [func performSearch(query: String, options: UITextSearchOptions?)](uifindsession/performsearch(query:options:).md)
+### Managing session interactions
+- [func performSearch(query: String, options: UITextSearchOptions?)](./performsearch%28query,options%29.md)
   Initiates a search for the query string you provide.
-- [func performSingleReplacement(query: String, replacementString: String, options: UITextSearchOptions?)](uifindsession/performsinglereplacement(query:replacementstring:options:).md)
+- [func performSingleReplacement(query: String, replacementString: String, options: UITextSearchOptions?)](./performsinglereplacement%28query,replacementstring,options%29.md)
   Replaces a single instance of the query string with the replacement string you provide.
-- [func replaceAll(searchQuery: String, replacementString: String, options: UITextSearchOptions?)](uifindsession/replaceall(searchquery:replacementstring:options:).md)
+- [func replaceAll(searchQuery: String, replacementString: String, options: UITextSearchOptions?)](./replaceall%28searchquery,replacementstring,options%29.md)
   Replaces all matching instances of the query string with the replacement string you provide.
-- [func highlightNextResult(in: UITextStorageDirection)](uifindsession/highlightnextresult(in:).md)
+- [func highlightNextResult(in: UITextStorageDirection)](./highlightnextresult%28in%29.md)
   Updates the highlighted result to the next or previous match.
 
 

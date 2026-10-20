@@ -1,7 +1,8 @@
 # AVLegibleMediaOptionsMenuController.StateChangeReason.languageMismatch
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.4+
@@ -16,9 +17,14 @@
 case languageMismatch
 ```
 
+```c
+AVLegibleMediaOptionsMenuStateChangeReasonLanguageMismatch
+```
+
 ## See Also
 
-- [AVLegibleMediaOptionsMenuController.StateChangeReason.none](avlegiblemediaoptionsmenucontroller/statechangereason/none.md)
+### Reasons
+- [AVLegibleMediaOptionsMenuController.StateChangeReason.none](./none.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MPSMatrixSolveCholesky
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A kernel for computing the solution of a linear system of equations using a Cholesky factorization.
 
@@ -19,6 +20,10 @@ A kernel for computing the solution of a linear system of equations using a Chol
 class MPSMatrixSolveCholesky
 ```
 
+```objc
+@interface MPSMatrixSolveCholesky : MPSMatrixBinaryKernel
+```
+
 #### Overview
 
 This kernel finds the solution matrix to the system *AX=B*, where:
@@ -30,40 +35,41 @@ This kernel finds the solution matrix to the system *AX=B*, where:
 ## Topics
 
 ### Initializers
-- [init(device: any MTLDevice, upper: Bool, order: Int, numberOfRightHandSides: Int)](mpsmatrixsolvecholesky/init(device:upper:order:numberofrighthandsides:).md)
+- [init(device: any MTLDevice, upper: Bool, order: Int, numberOfRightHandSides: Int)](./mpsmatrixsolvecholesky/init%28device,upper,order,numberofrighthandsides%29.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, rightHandSideMatrix: MPSMatrix, solutionMatrix: MPSMatrix)](mpsmatrixsolvecholesky/encode(commandbuffer:sourcematrix:righthandsidematrix:solutionmatrix:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, sourceMatrix: MPSMatrix, rightHandSideMatrix: MPSMatrix, solutionMatrix: MPSMatrix)](./mpsmatrixsolvecholesky/encode%28commandbuffer,sourcematrix,righthandsidematrix,solutionmatrix%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
+- [MPSMatrixBinaryKernel](./mpsmatrixbinarykernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSMatrixDecompositionCholesky](mpsmatrixdecompositioncholesky.md)
+### Classes for Decomposition and Solving
+- [class MPSMatrixDecompositionCholesky](./mpsmatrixdecompositioncholesky.md)
   A kernel for computing the Cholesky factorization of a matrix.
-- [class MPSMatrixDecompositionLU](mpsmatrixdecompositionlu.md)
+- [class MPSMatrixDecompositionLU](./mpsmatrixdecompositionlu.md)
   A kernel for computing the LU factorization of a matrix using partial pivoting with row interchanges.
-- [class MPSMatrixSolveLU](mpsmatrixsolvelu.md)
+- [class MPSMatrixSolveLU](./mpsmatrixsolvelu.md)
   A kernel for computing the solution of a linear system of equations using an LU factorization.
-- [class MPSMatrixSolveTriangular](mpsmatrixsolvetriangular.md)
+- [class MPSMatrixSolveTriangular](./mpsmatrixsolvetriangular.md)
   A kernel for computing the solution of a linear system of equations using a triangular coefficient matrix.
-- [class MPSMatrixUnaryKernel](mpsmatrixunarykernel.md)
+- [class MPSMatrixUnaryKernel](./mpsmatrixunarykernel.md)
   A kernel that consumes one matrix and produces one matrix.
-- [class MPSMatrixBinaryKernel](mpsmatrixbinarykernel.md)
+- [class MPSMatrixBinaryKernel](./mpsmatrixbinarykernel.md)
   A kernel that consumes two matrices and produces one matrix.
-- [enum MPSMatrixDecompositionStatus](mpsmatrixdecompositionstatus.md)
+- [enum MPSMatrixDecompositionStatus](./mpsmatrixdecompositionstatus.md)
 
 
 ---

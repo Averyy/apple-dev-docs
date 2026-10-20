@@ -1,7 +1,8 @@
 # errSecUnsupportedKeySize
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key size is not supported.
 
@@ -18,6 +19,10 @@ The key size is not supported.
 
 ```swift
 var errSecUnsupportedKeySize: OSStatus { get }
+```
+
+```c
+errSecUnsupportedKeySize
 ```
 
 

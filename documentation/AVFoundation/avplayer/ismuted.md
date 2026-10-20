@@ -1,7 +1,8 @@
 # isMuted
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the audio output of the player is muted.
 
@@ -21,17 +22,22 @@ nonisolated
 var isMuted: Bool { get set }
 ```
 
+```objc
+@property (getter=isMuted) BOOL muted;
+```
+
 ## See Also
 
-- [var volume: Float](avplayer/volume.md)
+### Configuring audio behavior
+- [var volume: Float](./volume.md)
   The audio playback volume for the player.
-- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](avplayeritem/allowedaudiospatializationformats.md)
+- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](../avplayeritem/allowedaudiospatializationformats.md)
   The source audio channel layouts the player item supports for spatialization.
-- [var isAudioSpatializationAllowed: Bool](avplayeritem/isaudiospatializationallowed.md)
+- [var isAudioSpatializationAllowed: Bool](../avplayeritem/isaudiospatializationallowed.md)
   A Boolean value that indicates whether the player item allows spatialized audio playback.
-- [var audioOutputSuppressedDueToNonMixableAudioRoute: Bool](avplayer/audiooutputsuppressedduetononmixableaudioroute.md)
+- [var audioOutputSuppressedDueToNonMixableAudioRoute: Bool](./audiooutputsuppressedduetononmixableaudioroute.md)
   Whether the player’s audio output is suppressed due to being on a non-mixable audio route.
-- [var intendedSpatialAudioExperience: any SpatialAudioExperience](avplayer/intendedspatialaudioexperience-1bd87.md)
+- [var intendedSpatialAudioExperience: any SpatialAudioExperience](./intendedspatialaudioexperience-1bd87.md)
   The player’s intended Spatial Audio experience.
 
 

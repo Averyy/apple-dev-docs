@@ -1,7 +1,8 @@
 # PoiCategory
 
 **Framework**: Apple Maps Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A string that describes a specific point of interest (POI) category.
 
@@ -10,9 +11,89 @@ A string that describes a specific point of interest (POI) category.
 
 ## Declaration
 
-```swift
+```
 string PoiCategory
 ```
+
+## Possible Values
+
+- `Airport`
+- `AirportGate`
+- `AirportTerminal`
+- `AmusementPark`
+- `AnimalService`
+- `Aquarium`
+- `ATM`
+- `AutomotiveRepair`
+- `Bakery`
+- `Bank`
+- `Baseball`
+- `Basketball`
+- `Beach`
+- `Beauty`
+- `Bowling`
+- `Brewery`
+- `Cafe`
+- `Campground`
+- `CarRental`
+- `Castle`
+- `ConventionCenter`
+- `Distillery`
+- `EVCharger`
+- `Fairground`
+- `FireStation`
+- `Fishing`
+- `FitnessCenter`
+- `FoodMarket`
+- `Fortress`
+- `GasStation`
+- `GoKart`
+- `Golf`
+- `Hiking`
+- `Hospital`
+- `Hotel`
+- `Kayaking`
+- `Landmark`
+- `Laundry`
+- `Library`
+- `Mailbox`
+- `Marina`
+- `MiniGolf`
+- `MovieTheater`
+- `Museum`
+- `MusicVenue`
+- `NationalMonument`
+- `NationalPark`
+- `Nightlife`
+- `Park`
+- `Parking`
+- `Pharmacy`
+- `Planetarium`
+- `Playground`
+- `Police`
+- `PostOffice`
+- `PublicTransport`
+- `ReligiousSite`
+- `Restaurant`
+- `Restroom`
+- `RockClimbing`
+- `RVPark`
+- `School`
+- `SkatePark`
+- `Skating`
+- `Skiing`
+- `Soccer`
+- `Spa`
+- `Stadium`
+- `Store`
+- `Surfing`
+- `Swimming`
+- `Tennis`
+- `Theater`
+- `University`
+- `Volleyball`
+- `Winery`
+- `Zoo`
 
 #### Discussion
 
@@ -95,17 +176,18 @@ string PoiCategory
 
 ## See Also
 
-- [type CountryCode](countrycode.md)
+### Getting common type information
+- [type CountryCode](./countrycode.md)
   A string that represents a two-letter country code.
-- [type DirectionsAvoid](directionsavoid.md)
+- [type DirectionsAvoid](./directionsavoid.md)
   A list of the features you can request to avoid when calculating directions.
-- [type Lang](lang.md)
+- [type Lang](./lang.md)
   A string that represents a standard tag for identifying languages.
-- [type SearchLocation](searchlocation.md)
+- [type SearchLocation](./searchlocation.md)
   A string that describes a geographic location in the form of longitude and latitude.
-- [type SearchRegion](searchregion.md)
+- [type SearchRegion](./searchregion.md)
   A string that describes a region to search in terms of its upper-right and lower-left corners as a pair of geographic points.
-- [type UserLocation](userlocation.md)
+- [type UserLocation](./userlocation.md)
   A string that describes the user’s location in terms of longitude and latitude.
 
 

@@ -1,7 +1,8 @@
 # speechStartTimestamp
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start timestamp of speech in the audio.
 
@@ -18,13 +19,18 @@ The start timestamp of speech in the audio.
 var speechStartTimestamp: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSTimeInterval speechStartTimestamp;
+```
+
 ## See Also
 
-- [var averagePauseDuration: TimeInterval](sfspeechrecognitionmetadata/averagepauseduration.md)
+### Getting audio timing information
+- [var averagePauseDuration: TimeInterval](./averagepauseduration.md)
   The average pause duration between words, measured in seconds.
-- [var speakingRate: Double](sfspeechrecognitionmetadata/speakingrate.md)
+- [var speakingRate: Double](./speakingrate.md)
   The number of words spoken per minute.
-- [var speechDuration: TimeInterval](sfspeechrecognitionmetadata/speechduration.md)
+- [var speechDuration: TimeInterval](./speechduration.md)
   The duration in seconds of speech in the audio.
 
 

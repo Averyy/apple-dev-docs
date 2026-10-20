@@ -1,7 +1,8 @@
 # DNSServiceSleepKeepaliveReply
 
 **Framework**: dnssd  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 10.0+
@@ -18,13 +19,18 @@
 typealias DNSServiceSleepKeepaliveReply = (DNSServiceRef?, DNSServiceErrorType, UnsafeMutableRawPointer?) -> Void
 ```
 
+```c
+typedef void (*)(struct _DNSServiceRef_t *, int, void *) DNSServiceSleepKeepaliveReply;
+```
+
 ## See Also
 
-- [struct CompileTimeAssertionChecks_DNS_SD](compiletimeassertionchecks_dns_sd.md)
-- [typealias DNSRecordRef](dnsrecordref.md)
-- [typealias DNSServiceRef](dnsserviceref.md)
-- [typealias dnssd_sock_t](dnssd_sock_t.md)
-- [typealias DNSServiceAttributeRef](dnsserviceattributeref.md)
+### Data Types
+- [struct CompileTimeAssertionChecks_DNS_SD](./compiletimeassertionchecks_dns_sd.md)
+- [typealias DNSRecordRef](./dnsrecordref.md)
+- [typealias DNSServiceRef](./dnsserviceref.md)
+- [typealias dnssd_sock_t](./dnssd_sock_t.md)
+- [typealias DNSServiceAttributeRef](./dnsserviceattributeref.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # requiresSecureCoding
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the archiver requires all archived classes to resist object substitution attacks.
 
@@ -20,17 +21,23 @@ Indicates whether the archiver requires all archived classes to resist object su
 var requiresSecureCoding: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL requiresSecureCoding;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if this coder requires secure coding; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if this coder requires secure coding; [`false`](../../Swift/false.md) otherwise.
 
-Secure coders check a set of allowed classes before decoding objects, and all objects must implement the [`NSSecureCoding`](nssecurecoding.md) protocol.
+Secure coders check a set of allowed classes before decoding objects, and all objects must implement the [`NSSecureCoding`](../nssecurecoding.md) protocol.
 
 ## See Also
 
-- [var allowsKeyedCoding: Bool](nscoder/allowskeyedcoding.md)
+### Related Documentation
+- [var allowsKeyedCoding: Bool](./allowskeyedcoding.md)
   A Boolean value that indicates whether the receiver supports keyed coding of objects.
-- [var allowedClasses: Set<AnyHashable>?](nscoder/allowedclasses.md)
+### Secure Coding
+- [var allowedClasses: Set<AnyHashable>?](./allowedclasses.md)
   The set of coded classes allowed for secure coding.
 
 

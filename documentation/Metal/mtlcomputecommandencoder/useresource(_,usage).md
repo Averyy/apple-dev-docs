@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Ensures kernel calls that the system encodes in subsequent commands have access to a resource.
@@ -20,10 +21,14 @@ Ensures kernel calls that the system encodes in subsequent commands have access 
 func useResource(_ resource: any MTLResource, usage: MTLResourceUsage)
 ```
 
+```objc
+- (void) useResource:(id<MTLResource>) resource usage:(MTLResourceUsage) usage;
+```
+
 ## Mentions
 
-- [Simplifying GPU resource management with residency sets](simplifying-gpu-resource-management-with-residency-sets.md)
-- [Tracking the resource residency of argument buffers](tracking-the-resource-residency-of-argument-buffers.md)
+- [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
+- [Tracking the resource residency of argument buffers](../tracking-the-resource-residency-of-argument-buffers.md)
 
 #### Discussion
 
@@ -31,24 +36,27 @@ You can make a resource *resident* (available in GPU memory) for the remaining d
 
 > **Note**:  You don’t need to call this method if you bind a resource for compute kernels to access.
 
-The method also informs Metal when to apply hazard tracking for a resource you create with [`MTLHazardTrackingMode.tracked`](mtlhazardtrackingmode/tracked.md). For a resource you create with [`MTLHazardTrackingMode.untracked`](mtlhazardtrackingmode/untracked.md), you need to apply an [`MTLFence`](mtlfence.md) or an [`MTLEvent`](mtlevent.md) to account for potential reading and writing hazards.
+The method also informs Metal when to apply hazard tracking for a resource you create with [`MTLHazardTrackingMode.tracked`](../mtlhazardtrackingmode/tracked.md). For a resource you create with [`MTLHazardTrackingMode.untracked`](../mtlhazardtrackingmode/untracked.md), you need to apply an [`MTLFence`](../mtlfence.md) or an [`MTLEvent`](../mtlevent.md) to account for potential reading and writing hazards.
 
 You can reconfigure an individual resource’s `usage` options for subsequent draw calls in the same render pass by calling this method again.
 
-Apps typically call this method for a resource in an argument buffer as a part of their *bindless* implementation. For more information about argument buffers and bindless implementations, see [`Improving CPU performance by using argument buffers`](improving-cpu-performance-by-using-argument-buffers.md) and [`Go bindless with Metal 3`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
+Apps typically call this method for a resource in an argument buffer as a part of their *bindless* implementation. For more information about argument buffers and bindless implementations, see [Improving CPU performance by using argument buffers](../improving-cpu-performance-by-using-argument-buffers.md) and [Go bindless with Metal 3](https://developer.apple.com/videos/play/wwdc2022/10101/), respectively.
 
 ## Parameters
 
-- `resource`: An [`MTLResource`](mtlresource.md) instance used in an argument buffer.
-- `usage`: How the compute pass can access data, including [`read`](mtlresourceusage/read.md) and [`write`](mtlresourceusage/write.md) permission. For applicable resources, you may be able to prevent the GPU from unnecessarily decompressing color attachments on some devices by setting `usage` to [`read`](mtlresourceusage/read.md).
+- `resource`: An [`MTLResource`](../mtlresource.md) instance used in an argument buffer.
+- `usage`: How the compute pass can access data, including [`read`](../mtlresourceusage/read.md) and [`write`](../mtlresourceusage/write.md) permission.
+
+  For applicable resources, you may be able to prevent the GPU from unnecessarily decompressing color attachments on some devices by setting `usage` to [`read`](../mtlresourceusage/read.md).
 
 ## See Also
 
-- [func useResources([any MTLResource], usage: MTLResourceUsage)](mtlcomputecommandencoder/useresources(_:usage:).md)
+### Making indirect resources resident
+- [func useResources([any MTLResource], usage: MTLResourceUsage)](./useresources%28_,usage%29.md)
   Ensures kernel calls that the system encodes in subsequent commands have access to multiple resources.
-- [func useHeap(any MTLHeap)](mtlcomputecommandencoder/useheap(_:).md)
+- [func useHeap(any MTLHeap)](./useheap%28_%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to all of the resources you allocate from a heap.
-- [func useHeaps([any MTLHeap])](mtlcomputecommandencoder/useheaps(_:).md)
+- [func useHeaps([any MTLHeap])](./useheaps%28_%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to all of the resources you allocate from multiple heaps.
 
 

@@ -1,7 +1,8 @@
 # ActivationSimple
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The declaration to activate a set of configurations.
 
@@ -16,7 +17,7 @@ The declaration to activate a set of configurations.
 
 ## Declaration
 
-```swift
+```
 object ActivationSimple
 ```
 
@@ -24,7 +25,7 @@ object ActivationSimple
 
 Specify `com.apple.activation.simple` as the declaration type.
 
-##### Activation Examples
+##### Activation examples
 
 **One configuration**:
 
@@ -64,7 +65,7 @@ This activation applies two configurations and uses a predicate to limit those t
 
 ## Properties
 
-- `Predicate` (string): A predicate format string as [`Apple’s Predicate Programming`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html) describes. The activation only installs when the predicate evaluates to `true` or isn’t present.
+- `Predicate` (string): A predicate format string as [Apple’s Predicate Programming](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html) describes. The activation only installs when the predicate evaluates to `true` or isn’t present.
 - `StandardConfigurations` ([string]) *(required)*: An array of strings that specify the identifiers of configurations to install. A failure to install one of the configurations doesn’t prevent other configurations from installing.
 
 

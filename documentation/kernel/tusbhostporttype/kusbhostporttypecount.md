@@ -1,7 +1,8 @@
 # kUSBHostPortTypeCount
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The port type count.
 
@@ -10,7 +11,7 @@ The port type count.
 
 ## Declaration
 
-```swift
+```c
 kUSBHostPortTypeCount = kIOUSBHostPortTypeCount
 ```
 

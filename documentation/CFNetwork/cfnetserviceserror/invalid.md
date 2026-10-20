@@ -1,7 +1,8 @@
 # CFNetServicesError.invalid
 
 **Framework**: CFNetwork  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Invalid data was passed to a CFNetServices function.
 
@@ -19,21 +20,26 @@ Invalid data was passed to a CFNetServices function.
 case invalid
 ```
 
+```c
+kCFNetServicesErrorInvalid
+```
+
 ## See Also
 
-- [CFNetServicesError.unknown](cfnetserviceserror/unknown.md)
+### Constants
+- [CFNetServicesError.unknown](./unknown.md)
   An unknown CFNetService error occurred.
-- [CFNetServicesError.collision](cfnetserviceserror/collision.md)
+- [CFNetServicesError.collision](./collision.md)
   An attempt was made to use a name that is already in use.
-- [CFNetServicesError.notFound](cfnetserviceserror/notfound.md)
+- [CFNetServicesError.notFound](./notfound.md)
   Not used.
-- [CFNetServicesError.inProgress](cfnetserviceserror/inprogress.md)
+- [CFNetServicesError.inProgress](./inprogress.md)
   A search is already in progress.
-- [CFNetServicesError.badArgument](cfnetserviceserror/badargument.md)
+- [CFNetServicesError.badArgument](./badargument.md)
   A required argument was not provided.
-- [CFNetServicesError.cancel](cfnetserviceserror/cancel.md)
+- [CFNetServicesError.cancel](./cancel.md)
   The search or service was canceled.
-- [CFNetServicesError.timeout](cfnetserviceserror/timeout.md)
+- [CFNetServicesError.timeout](./timeout.md)
   Resolution failed because the timeout was reached.
 
 

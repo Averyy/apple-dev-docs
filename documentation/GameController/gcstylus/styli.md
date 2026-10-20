@@ -1,12 +1,13 @@
 # styli
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Get the collection of stylus accessories currently connected to the device.
 
 **Availability**:
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Get the collection of stylus accessories currently connected to the device.
 class var styli: [GCStylus] { get }
 ```
 
+```objc
+@property (class, readonly) NSArray<GCStylus *> * styli;
+```
+
 ## Mentions
 
-- [Discovering and tracking spatial game controllers and styli](discovering-and-tracking-spatial-game-controllers-and-styli.md)
+- [Discovering and tracking spatial game controllers and styli](../discovering-and-tracking-spatial-game-controllers-and-styli.md)
 
 #### Discussion
 

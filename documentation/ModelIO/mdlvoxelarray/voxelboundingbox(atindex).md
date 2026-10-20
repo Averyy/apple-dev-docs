@@ -1,7 +1,8 @@
 # voxelBoundingBox(atIndex:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the extent of the specified voxel’s volume in the world coordinate space of the asset from which the voxel array was created.
 
@@ -19,13 +20,17 @@ Returns the extent of the specified voxel’s volume in the world coordinate spa
 func voxelBoundingBox(atIndex index: MDLVoxelIndex) -> MDLAxisAlignedBoundingBox
 ```
 
+```objc
+- (MDLAxisAlignedBoundingBox) voxelBoundingBoxAtIndex:(MDLVoxelIndex) index;
+```
+
 #### Return Value
 
 The bounding box for the single voxel at the specified index, in the world coordinate space of the asset from which the voxel array was created.
 
 #### Discussion
 
-The coordinate space for spatial locations of voxels is the world space of the asset from which the voxel array was created, or for voxel arrays created with the [`init(data:boundingBox:voxelExtent:)`](mdlvoxelarray/init(data:boundingbox:voxelextent:).md) initializer, the bounding box specified at initialization.
+The coordinate space for spatial locations of voxels is the world space of the asset from which the voxel array was created, or for voxel arrays created with the [`init(data:boundingBox:voxelExtent:)`](./init%28data,boundingbox,voxelextent%29.md) initializer, the bounding box specified at initialization.
 
 ## Parameters
 
@@ -33,11 +38,12 @@ The coordinate space for spatial locations of voxels is the world space of the a
 
 ## See Also
 
-- [var boundingBox: MDLAxisAlignedBoundingBox](mdlvoxelarray/boundingbox.md)
+### Relating Voxels to Scene Space
+- [var boundingBox: MDLAxisAlignedBoundingBox](./boundingbox.md)
   The extent of the voxel array’s volume in world coordinate space.
-- [func index(ofSpatialLocation: vector_float3) -> MDLVoxelIndex](mdlvoxelarray/index(ofspatiallocation:).md)
+- [func index(ofSpatialLocation: vector_float3) -> MDLVoxelIndex](./index%28ofspatiallocation%29.md)
   Returns voxel information corresponding to the specified point in the world coordinate space of the asset from which the voxel array was created.
-- [func spatialLocation(ofIndex: MDLVoxelIndex) -> vector_float3](mdlvoxelarray/spatiallocation(ofindex:).md)
+- [func spatialLocation(ofIndex: MDLVoxelIndex) -> vector_float3](./spatiallocation%28ofindex%29.md)
   Returns the location of the specified voxel in world coordinate space.
 
 

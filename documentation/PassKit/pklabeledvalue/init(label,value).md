@@ -1,7 +1,8 @@
 # init(label:value:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Instantiates a new labeled value object with the specified label and value strings.
 
@@ -9,7 +10,7 @@ Instantiates a new labeled value object with the specified label and value strin
 - iOS 10.1+
 - iPadOS 10.1+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 3.1+
 
@@ -17,6 +18,10 @@ Instantiates a new labeled value object with the specified label and value strin
 
 ```swift
 init(label: String, value: String)
+```
+
+```objc
+- (instancetype) initWithLabel:(NSString *) label value:(NSString *) value;
 ```
 
 

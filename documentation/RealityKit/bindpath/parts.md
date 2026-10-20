@@ -1,7 +1,8 @@
 # parts
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the individual components of a complete bind path.
 
@@ -11,7 +12,7 @@ An array of the individual components of a complete bind path.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var parts: [BindPath.Part] { get }
 
 ## See Also
 
-- [BindPath.Part](bindpath/part.md)
+### Composing a property identifier
+- [BindPath.Part](./part.md)
   An individual piece of a larger path that refers to the target of an animation.
 
 

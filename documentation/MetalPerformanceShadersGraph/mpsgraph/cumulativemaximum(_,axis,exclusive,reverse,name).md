@@ -1,7 +1,8 @@
 # cumulativeMaximum(_:axis:exclusive:reverse:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Computes the cumulative maximum of the input tensor along the specified axis.
 
@@ -17,6 +18,10 @@ Computes the cumulative maximum of the input tensor along the specified axis.
 
 ```swift
 func cumulativeMaximum(_ tensor: MPSGraphTensor, axis: Int, exclusive: Bool, reverse: Bool, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) cumulativeMaximumWithTensor:(MPSGraphTensor *) tensor axis:(NSInteger) axis exclusive:(BOOL) exclusive reverse:(BOOL) reverse name:(NSString *) name;
 ```
 
 #### Return Value

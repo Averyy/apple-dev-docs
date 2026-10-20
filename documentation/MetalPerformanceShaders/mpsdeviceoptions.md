@@ -1,15 +1,16 @@
 # MPSDeviceOptions
 
 **Framework**: Metal Performance Shaders  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,26 +18,30 @@
 struct MPSDeviceOptions
 ```
 
+```c
+enum MPSDeviceOptions : NSUInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt)](mpsdeviceoptions/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mpsdeviceoptions/init%28rawvalue%29.md)
 ### Type Properties
-- [static var Default: MPSDeviceOptions](mpsdeviceoptions/default.md)
-- [static var lowPower: MPSDeviceOptions](mpsdeviceoptions/lowpower.md)
-- [static var skipRemovable: MPSDeviceOptions](mpsdeviceoptions/skipremovable.md)
+- [static var Default: MPSDeviceOptions](./mpsdeviceoptions/default.md)
+- [static var lowPower: MPSDeviceOptions](./mpsdeviceoptions/lowpower.md)
+- [static var skipRemovable: MPSDeviceOptions](./mpsdeviceoptions/skipremovable.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

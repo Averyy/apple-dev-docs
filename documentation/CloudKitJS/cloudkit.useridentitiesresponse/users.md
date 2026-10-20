@@ -1,7 +1,8 @@
 # users
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fetched user identities.
 
@@ -10,7 +11,7 @@ The fetched user identities.
 
 ## Declaration
 
-```swift
+```
 readonly attribute CloudKit.UserIdentity[] users;
 ```
 

@@ -1,18 +1,20 @@
 # Anonymous
 
-**Framework**: InputMethodKit
+**Framework**: InputMethodKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [var kIMKAnnotation: Int](kimkannotation.md)
-- [var kIMKMain: Int](kimkmain.md)
-- [var kIMKSubList: Int](kimksublist.md)
+- [var kIMKAnnotation: Int](./kimkannotation.md)
+- [var kIMKMain: Int](./kimkmain.md)
+- [var kIMKSubList: Int](./kimksublist.md)
 
 ## See Also
 
-- [Anonymous](inputmethodkit-enumerations-1448298-anonymous.md)
-- [Anonymous](inputmethodkit-enumerations-1448307-anonymous.md)
+### Enumerations
+- [Anonymous](./inputmethodkit-enumerations-1448298-anonymous.md)
+- [Anonymous](./inputmethodkit-enumerations-1448307-anonymous.md)
 
 
 ---

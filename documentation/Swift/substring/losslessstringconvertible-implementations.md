@@ -1,11 +1,12 @@
 # LosslessStringConvertible Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(String)](substring/init(_:)-95va8.md)
+- [init(String)](./init%28_%29-95va8.md)
   Instantiates an instance of the conforming type from a string representation.
 
 

@@ -1,7 +1,8 @@
 # MTRDoorLockUserType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,35 +19,39 @@
 enum MTRDoorLockUserType
 ```
 
+```c
+enum MTRDoorLockUserType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRDoorLockUserType.disposableUser](mtrdoorlockusertype/disposableuser.md)
-- [MTRDoorLockUserType.expiringUser](mtrdoorlockusertype/expiringuser.md)
-- [MTRDoorLockUserType.forcedUser](mtrdoorlockusertype/forceduser.md)
-- [MTRDoorLockUserType.nonAccessUser](mtrdoorlockusertype/nonaccessuser.md)
-- [MTRDoorLockUserType.notSupported](mtrdoorlockusertype/notsupported.md)
-- [MTRDoorLockUserType.programmingUser](mtrdoorlockusertype/programminguser.md)
-- [MTRDoorLockUserType.remoteOnlyUser](mtrdoorlockusertype/remoteonlyuser.md)
-- [MTRDoorLockUserType.scheduleRestrictedUser](mtrdoorlockusertype/schedulerestricteduser.md)
-- [MTRDoorLockUserType.unrestrictedUser](mtrdoorlockusertype/unrestricteduser.md)
-- [MTRDoorLockUserType.weekDayScheduleUser](mtrdoorlockusertype/weekdayscheduleuser.md)
-- [MTRDoorLockUserType.yearDayScheduleUser](mtrdoorlockusertype/yeardayscheduleuser.md)
+- [MTRDoorLockUserType.disposableUser](./mtrdoorlockusertype/disposableuser.md)
+- [MTRDoorLockUserType.expiringUser](./mtrdoorlockusertype/expiringuser.md)
+- [MTRDoorLockUserType.forcedUser](./mtrdoorlockusertype/forceduser.md)
+- [MTRDoorLockUserType.nonAccessUser](./mtrdoorlockusertype/nonaccessuser.md)
+- [MTRDoorLockUserType.notSupported](./mtrdoorlockusertype/notsupported.md)
+- [MTRDoorLockUserType.programmingUser](./mtrdoorlockusertype/programminguser.md)
+- [MTRDoorLockUserType.remoteOnlyUser](./mtrdoorlockusertype/remoteonlyuser.md)
+- [MTRDoorLockUserType.scheduleRestrictedUser](./mtrdoorlockusertype/schedulerestricteduser.md)
+- [MTRDoorLockUserType.unrestrictedUser](./mtrdoorlockusertype/unrestricteduser.md)
+- [MTRDoorLockUserType.weekDayScheduleUser](./mtrdoorlockusertype/weekdayscheduleuser.md)
+- [MTRDoorLockUserType.yearDayScheduleUser](./mtrdoorlockusertype/yeardayscheduleuser.md)
 ### Type Properties
-- [static var masterUser: MTRDoorLockUserType](mtrdoorlockusertype/masteruser.md)
-- [static var unrestricted: MTRDoorLockUserType](mtrdoorlockusertype/unrestricted.md)
+- [static var masterUser: MTRDoorLockUserType](./mtrdoorlockusertype/masteruser.md)
+- [static var unrestricted: MTRDoorLockUserType](./mtrdoorlockusertype/unrestricted.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrdoorlockusertype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrdoorlockusertype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

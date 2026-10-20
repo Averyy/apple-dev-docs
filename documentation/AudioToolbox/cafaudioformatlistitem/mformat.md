@@ -1,15 +1,16 @@
 # mFormat
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var mFormat: CAFAudioDescription
 ```
 
+```c
+CAFAudioDescription mFormat;
+```
+
 ## See Also
 
-- [var mChannelLayoutTag: UInt32](cafaudioformatlistitem/mchannellayouttag.md)
+### Instance Properties
+- [var mChannelLayoutTag: UInt32](./mchannellayouttag.md)
 
 
 ---

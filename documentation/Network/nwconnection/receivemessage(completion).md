@@ -1,7 +1,8 @@
 # receiveMessage(completion:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules a single receive completion handler for a complete message, as opposed to a range of bytes.
 
@@ -29,27 +30,30 @@ If you are using UDP, receiving a message will deliver a single datagram.
 
 If you request to receive a message on a protocol that is otherwise an unbounded bytestream, like TCP or TLS, note that this will not deliver any data until the stream is closed by the peer.
 
-In order to use messages on top of a bytestream protocol, add a protocol such as [`NWProtocolWebSocket`](nwprotocolwebsocket.md) or a custom [`NWProtocolFramer`](nwprotocolframer.md) to your protocol stack.
+In order to use messages on top of a bytestream protocol, add a protocol such as [`NWProtocolWebSocket`](../nwprotocolwebsocket.md) or a custom [`NWProtocolFramer`](../nwprotocolframer.md) to your protocol stack.
 
 ## Parameters
 
-- `completion`: A receive completion is invoked exactly once for a call to receive. The completion indicates that the requested content has been received (in which case the content is delivered), or that an error has occurred. The completion delivers the received content, which may be nil if the message is complete or an error occurred, the message context, a flag indicating if the message is complete, and any associated error.
+- `completion`: A receive completion is invoked exactly once for a call to receive. The completion indicates that the requested content has been received (in which case the content is delivered), or that an error has occurred.
+
+  The completion delivers the received content, which may be nil if the message is complete or an error occurred, the message context, a flag indicating if the message is complete, and any associated error.
 
 ## See Also
 
-- [func send(content: Data?, contentContext: NWConnection.ContentContext, isComplete: Bool, completion: NWConnection.SendCompletion)](nwconnection/send(content:contentcontext:iscomplete:completion:)-5ecuz.md)
+### Sending and Receiving Data
+- [func send(content: Data?, contentContext: NWConnection.ContentContext, isComplete: Bool, completion: NWConnection.SendCompletion)](./send%28content,contentcontext,iscomplete,completion%29-5ecuz.md)
   Sends data on a connection.
-- [func send<Content>(content: Content?, contentContext: NWConnection.ContentContext, isComplete: Bool, completion: NWConnection.SendCompletion)](nwconnection/send(content:contentcontext:iscomplete:completion:)-3mfmt.md)
+- [func send<Content>(content: Content?, contentContext: NWConnection.ContentContext, isComplete: Bool, completion: NWConnection.SendCompletion)](./send%28content,contentcontext,iscomplete,completion%29-3mfmt.md)
   Sends data on a connection using a custom Data type.
-- [NWConnection.SendCompletion](nwconnection/sendcompletion.md)
+- [NWConnection.SendCompletion](./sendcompletion.md)
   A completion handler that indicates when the connection has finished processing sent content.
-- [func receive(minimumIncompleteLength: Int, maximumLength: Int, completion: (Data?, NWConnection.ContentContext?, Bool, NWError?) -> Void)](nwconnection/receive(minimumincompletelength:maximumlength:completion:).md)
+- [func receive(minimumIncompleteLength: Int, maximumLength: Int, completion: (Data?, NWConnection.ContentContext?, Bool, NWError?) -> Void)](./receive%28minimumincompletelength,maximumlength,completion%29.md)
   Schedules a single receive completion handler, with a range indicating how many bytes the handler can receive at one time.
-- [func batch(() -> Void)](nwconnection/batch(_:).md)
+- [func batch(() -> Void)](./batch%28_%29.md)
   Defines a block in which calls to send and receive are processed as a batch to improve performance.
-- [NWConnection.ContentContext](nwconnection/contentcontext.md)
+- [NWConnection.ContentContext](./contentcontext.md)
   An object that represents a message to send or receive, containing protocol metadata and send properties.
-- [var maximumDatagramSize: Int](nwconnection/maximumdatagramsize.md)
+- [var maximumDatagramSize: Int](./maximumdatagramsize.md)
   The maximum size of a datagram message that can be sent on a connection.
 
 

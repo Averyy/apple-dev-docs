@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(data: Data)
+```
+
+```objc
+- (instancetype) initWithData:(NSData *) data;
 ```
 
 

@@ -1,9 +1,10 @@
 # NSTextBlock.Layer
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The following constants specify values used by the properties and methods [`contentWidthValueType`](nstextblock/contentwidthvaluetype.md), [`setWidth(_:type:for:edge:)`](nstextblock/setwidth(_:type:for:edge:).md), [`setWidth(_:type:for:)`](nstextblock/setwidth(_:type:for:).md), [`width(for:edge:)`](nstextblock/width(for:edge:).md), and [`widthValueType(for:edge:)`](nstextblock/widthvaluetype(for:edge:).md) to specify text block layer values.
+The following constants specify values used by the properties and methods [`contentWidthValueType`](./contentwidthvaluetype.md), [`setWidth(_:type:for:edge:)`](./setwidth%28_,type,for,edge%29.md), [`setWidth(_:type:for:)`](./setwidth%28_,type,for%29.md), [`width(for:edge:)`](./width%28for,edge%29.md), and [`widthValueType(for:edge:)`](./widthvaluetype%28for,edge%29.md) to specify text block layer values.
 
 **Availability**:
 - macOS 10.0+
@@ -14,35 +15,40 @@ The following constants specify values used by the properties and methods [`cont
 enum Layer
 ```
 
+```c
+enum NSTextBlockLayer : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSTextBlock.Layer.padding](nstextblock/layer/padding.md)
+- [NSTextBlock.Layer.padding](./layer/padding.md)
   Padding of the text block: space surrounding the content area extending to the border.
-- [NSTextBlock.Layer.border](nstextblock/layer/border.md)
+- [NSTextBlock.Layer.border](./layer/border.md)
   The border of the text block.
-- [NSTextBlock.Layer.margin](nstextblock/layer/margin.md)
+- [NSTextBlock.Layer.margin](./layer/margin.md)
   Margin of the text block: space surrounding the border.
 ### Initializers
-- [init?(rawValue: Int)](nstextblock/layer/init(rawvalue:).md)
+- [init?(rawValue: Int)](./layer/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](nstextblock/setwidth(_:type:for:).md)
+### Getting and setting margins, borders, and padding
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](./setwidth%28_,type,for%29.md)
   Sets the width of all edges of a specified layer of the text block.
-- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, rectEdge: CGRectEdge)](nstextblock/setwidth(_:type:for:rectedge:).md)
-- [func width(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> CGFloat](nstextblock/width(for:rectedge:).md)
-- [func widthValueType(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> NSTextBlock.ValueType](nstextblock/widthvaluetype(for:rectedge:).md)
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, rectEdge: CGRectEdge)](./setwidth%28_,type,for,rectedge%29.md)
+- [func width(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> CGFloat](./width%28for,rectedge%29.md)
+- [func widthValueType(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> NSTextBlock.ValueType](./widthvaluetype%28for,rectedge%29.md)
 
 
 ---

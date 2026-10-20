@@ -1,7 +1,8 @@
 # perform(_:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs one or more framework requests on the handler’s image.
 
@@ -26,10 +27,11 @@ The function returns after all requests complete.
 
 ## See Also
 
-- [func perform<T>(T) async throws -> T.Result](imagerequesthandler/perform(_:)-7b6g5.md)
+### Performing the request
+- [func perform<T>(T) async throws -> T.Result](./perform%28_%29-7b6g5.md)
   Performs a framework request on the handler’s image.
 - [func performAll(some Collection<any VisionRequest>) -> some AsyncSequence<VisionResult, Never>
-](imagerequesthandler/performall(_:).md)
+](./performall%28_%29.md)
   Schedules a collection of framework requests to perform on the handler’s image.
 
 

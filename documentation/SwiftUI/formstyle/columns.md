@@ -1,7 +1,8 @@
 # columns
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A non-scrolling form style with a trailing aligned column of labels next to a leading aligned column of values.
 
@@ -21,11 +22,14 @@ A non-scrolling form style with a trailing aligned column of labels next to a le
 @preconcurrency static var columns: ColumnsFormStyle { get }
 ```
 
+Available when `Self` is `ColumnsFormStyle`.
+
 ## See Also
 
-- [static var automatic: AutomaticFormStyle](formstyle/automatic.md)
+### Getting built-in form styles
+- [static var automatic: AutomaticFormStyle](./automatic.md)
   The default form style.
-- [static var grouped: GroupedFormStyle](formstyle/grouped.md)
+- [static var grouped: GroupedFormStyle](./grouped.md)
   A form style with grouped rows.
 
 

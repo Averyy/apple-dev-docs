@@ -1,7 +1,8 @@
 # CMBufferQueue.TriggerCondition.whenEndOfDataReached
 
 **Framework**: Core Media  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -20,16 +21,17 @@ case whenEndOfDataReached
 
 ## See Also
 
-- [CMBufferQueue.TriggerCondition.whenBufferCountBecomesGreaterThan(_:)](cmbufferqueue/triggercondition/whenbuffercountbecomesgreaterthan(_:).md)
-- [CMBufferQueue.TriggerCondition.whenBufferCountBecomesLessThan(_:)](cmbufferqueue/triggercondition/whenbuffercountbecomeslessthan(_:).md)
-- [CMBufferQueue.TriggerCondition.whenDataBecomesReady](cmbufferqueue/triggercondition/whendatabecomesready.md)
-- [CMBufferQueue.TriggerCondition.whenDurationBecomesGreaterThan(_:)](cmbufferqueue/triggercondition/whendurationbecomesgreaterthan(_:).md)
-- [CMBufferQueue.TriggerCondition.whenDurationBecomesGreaterThanOrEqualTo(_:)](cmbufferqueue/triggercondition/whendurationbecomesgreaterthanorequalto(_:).md)
-- [CMBufferQueue.TriggerCondition.whenDurationBecomesLessThan(_:)](cmbufferqueue/triggercondition/whendurationbecomeslessthan(_:).md)
-- [CMBufferQueue.TriggerCondition.whenDurationBecomesLessThanOrEqualTo(_:)](cmbufferqueue/triggercondition/whendurationbecomeslessthanorequalto(_:).md)
-- [CMBufferQueue.TriggerCondition.whenMaxPresentationTimeStampChanges](cmbufferqueue/triggercondition/whenmaxpresentationtimestampchanges.md)
-- [CMBufferQueue.TriggerCondition.whenMinPresentationTimeStampChanges](cmbufferqueue/triggercondition/whenminpresentationtimestampchanges.md)
-- [CMBufferQueue.TriggerCondition.whenReset](cmbufferqueue/triggercondition/whenreset.md)
+### Conditions
+- [CMBufferQueue.TriggerCondition.whenBufferCountBecomesGreaterThan(_:)](./whenbuffercountbecomesgreaterthan%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenBufferCountBecomesLessThan(_:)](./whenbuffercountbecomeslessthan%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenDataBecomesReady](./whendatabecomesready.md)
+- [CMBufferQueue.TriggerCondition.whenDurationBecomesGreaterThan(_:)](./whendurationbecomesgreaterthan%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenDurationBecomesGreaterThanOrEqualTo(_:)](./whendurationbecomesgreaterthanorequalto%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenDurationBecomesLessThan(_:)](./whendurationbecomeslessthan%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenDurationBecomesLessThanOrEqualTo(_:)](./whendurationbecomeslessthanorequalto%28_%29.md)
+- [CMBufferQueue.TriggerCondition.whenMaxPresentationTimeStampChanges](./whenmaxpresentationtimestampchanges.md)
+- [CMBufferQueue.TriggerCondition.whenMinPresentationTimeStampChanges](./whenminpresentationtimestampchanges.md)
+- [CMBufferQueue.TriggerCondition.whenReset](./whenreset.md)
 
 
 ---

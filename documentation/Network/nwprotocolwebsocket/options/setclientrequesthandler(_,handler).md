@@ -1,7 +1,8 @@
 # setClientRequestHandler(_:handler:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets a handler to react to as a server to inbound WebSocket client handshakes.
 
@@ -23,7 +24,8 @@ func setClientRequestHandler(_ queue: DispatchQueue, handler: @escaping @Sendabl
 
 ## See Also
 
-- [NWProtocolWebSocket.Response](nwprotocolwebsocket/response.md)
+### Handling Server Handshakes
+- [NWProtocolWebSocket.Response](../response.md)
   A WebSocket handshake reponse sent from a server to a client.
 
 

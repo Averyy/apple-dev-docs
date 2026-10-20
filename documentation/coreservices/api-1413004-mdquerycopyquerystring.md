@@ -1,7 +1,8 @@
 # MDQueryCopyQueryString(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the query string of the query.
 
@@ -14,7 +15,11 @@ Returns the query string of the query.
 func MDQueryCopyQueryString(_ query: MDQuery!) -> CFString!
 ```
 
-#### Return_value
+```c
+CFStringRef MDQueryCopyQueryString(MDQueryRef query);
+```
+
+#### Return Value
 
 A CFStringRef containing the query string.
 
@@ -24,15 +29,16 @@ A CFStringRef containing the query string.
 
 ## See Also
 
-- [func MDQuerySetMaxCount(MDQuery!, CFIndex)](1413085-mdquerysetmaxcount.md)
+### Getting and Setting Query Parameters
+- [func MDQuerySetMaxCount(MDQuery!, CFIndex)](./api-1413085-mdquerysetmaxcount.md)
   Sets the maximum number of results returned.
-- [func MDQueryGetBatchingParameters(MDQuery!) -> MDQueryBatchingParams](1413006-mdquerygetbatchingparameters.md)
+- [func MDQueryGetBatchingParameters(MDQuery!) -> MDQueryBatchingParams](./api-1413006-mdquerygetbatchingparameters.md)
   Returns the current parameters that control the batching of progress notifications.
-- [func MDQuerySetBatchingParameters(MDQuery!, MDQueryBatchingParams)](1413103-mdquerysetbatchingparameters.md)
+- [func MDQuerySetBatchingParameters(MDQuery!, MDQueryBatchingParams)](./api-1413103-mdquerysetbatchingparameters.md)
   Set the query batching parameters.
-- [func MDQueryCopyValueListAttributes(MDQuery!) -> CFArray!](1413071-mdquerycopyvaluelistattributes.md)
+- [func MDQueryCopyValueListAttributes(MDQuery!) -> CFArray!](./api-1413071-mdquerycopyvaluelistattributes.md)
   Returns the list of attribute names for which values are being collected by the query.
-- [func MDQueryCopySortingAttributes(MDQuery!) -> CFArray!](1413059-mdquerycopysortingattributes.md)
+- [func MDQueryCopySortingAttributes(MDQuery!) -> CFArray!](./api-1413059-mdquerycopysortingattributes.md)
   Returns the list of attribute names used to sort the results.
 
 

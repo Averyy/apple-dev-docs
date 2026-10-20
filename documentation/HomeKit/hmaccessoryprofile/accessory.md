@@ -1,7 +1,8 @@
 # accessory
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The accessory that implements this profile.
 
@@ -19,11 +20,16 @@ The accessory that implements this profile.
 weak var accessory: HMAccessory? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) HMAccessory * accessory;
+```
+
 ## See Also
 
-- [var services: [HMService]](hmaccessoryprofile/services.md)
+### Getting information about a profile
+- [var services: [HMService]](./services.md)
   An array of services that represents this profile.
-- [var uniqueIdentifier: UUID](hmaccessoryprofile/uniqueidentifier.md)
+- [var uniqueIdentifier: UUID](./uniqueidentifier.md)
   A unique identifier for the profile.
 
 

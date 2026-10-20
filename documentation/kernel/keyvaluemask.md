@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct KeyValueMask {
     ...
 };
@@ -17,8 +17,8 @@ struct KeyValueMask {
 ## Topics
 
 ### Instance Properties
-- [key](keyvaluemask/2765600-key.md)
-- [mask](keyvaluemask/2765604-mask.md)
+- [key](./keyvaluemask/api-2765600-key.md)
+- [mask](./keyvaluemask/api-2765604-mask.md)
 
 
 ---

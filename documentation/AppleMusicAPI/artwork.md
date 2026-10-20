@@ -1,7 +1,8 @@
 # Artwork
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that represents artwork.
 
@@ -10,7 +11,7 @@ An object that represents artwork.
 
 ## Declaration
 
-```swift
+```
 object Artwork
 ```
 

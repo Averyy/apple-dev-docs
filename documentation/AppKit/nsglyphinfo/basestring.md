@@ -1,7 +1,8 @@
 # baseString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string containing the character represented by the glyph.
 
@@ -14,9 +15,14 @@ The string containing the character represented by the glyph.
 var baseString: String { get }
 ```
 
+```objc
+@property (copy, readonly) NSString * baseString;
+```
+
 ## See Also
 
-- [var glyphID: CGGlyph](nsglyphinfo/glyphid.md)
+### Getting information about a glyph info object
+- [var glyphID: CGGlyph](./glyphid.md)
   The glyph identifier, specified as the index into the internal glyph table of the font.
 
 

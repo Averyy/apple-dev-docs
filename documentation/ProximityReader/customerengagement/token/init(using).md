@@ -1,7 +1,8 @@
 # init(using:)
 
 **Framework**: ProximityReader  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a customer engagement token.
 
@@ -18,7 +19,7 @@ init(using token: PaymentCardReader.Token)
 
 #### Discussion
 
-This creates a token using the [`PaymentCardReader.Token`](paymentcardreader/token.md) from your payment service provider.
+This creates a token using the [`PaymentCardReader.Token`](../../paymentcardreader/token.md) from your payment service provider.
 
 ## Parameters
 

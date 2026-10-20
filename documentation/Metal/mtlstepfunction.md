@@ -1,7 +1,8 @@
 # MTLStepFunction
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The frequency and locations at which a function fetches attribute data.
 
@@ -19,47 +20,52 @@ The frequency and locations at which a function fetches attribute data.
 enum MTLStepFunction
 ```
 
+```c
+enum MTLStepFunction : NSUInteger;
+```
+
 ## Topics
 
 ### Step options
-- [MTLStepFunction.constant](mtlstepfunction/constant.md)
+- [MTLStepFunction.constant](./mtlstepfunction/constant.md)
   The function fetches attribute data once.
-- [MTLStepFunction.perInstance](mtlstepfunction/perinstance.md)
+- [MTLStepFunction.perInstance](./mtlstepfunction/perinstance.md)
   The function fetches data based on the instance index.
-- [MTLStepFunction.perPatch](mtlstepfunction/perpatch.md)
+- [MTLStepFunction.perPatch](./mtlstepfunction/perpatch.md)
   The post-tessellation function fetches data based on the patch index of the patch.
-- [MTLStepFunction.perPatchControlPoint](mtlstepfunction/perpatchcontrolpoint.md)
+- [MTLStepFunction.perPatchControlPoint](./mtlstepfunction/perpatchcontrolpoint.md)
   The post-tessellation function fetches data based on the control-point indices associated with the patch.
-- [MTLStepFunction.perVertex](mtlstepfunction/pervertex.md)
+- [MTLStepFunction.perVertex](./mtlstepfunction/pervertex.md)
   The vertex function fetches data for every vertex.
-- [MTLStepFunction.threadPositionInGridX](mtlstepfunction/threadpositioningridx.md)
+- [MTLStepFunction.threadPositionInGridX](./mtlstepfunction/threadpositioningridx.md)
   The compute function fetches data based on the thread’s `x` coordinate.
-- [MTLStepFunction.threadPositionInGridY](mtlstepfunction/threadpositioningridy.md)
+- [MTLStepFunction.threadPositionInGridY](./mtlstepfunction/threadpositioningridy.md)
   The compute function fetches data based on the thread’s `y` coordinate.
-- [MTLStepFunction.threadPositionInGridXIndexed](mtlstepfunction/threadpositioningridxindexed.md)
+- [MTLStepFunction.threadPositionInGridXIndexed](./mtlstepfunction/threadpositioningridxindexed.md)
   The compute function fetches data by using the thread’s `x` coordinate to look up a value in the index buffer.
-- [MTLStepFunction.threadPositionInGridYIndexed](mtlstepfunction/threadpositioningridyindexed.md)
+- [MTLStepFunction.threadPositionInGridYIndexed](./mtlstepfunction/threadpositioningridyindexed.md)
   The compute function fetches data by using the thread’s `y` coordinate to look up a value in the index buffer.
 ### Initializers
-- [init?(rawValue: UInt)](mtlstepfunction/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlstepfunction/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var stride: Int](mtlbufferlayoutdescriptor/stride.md)
+### Describing fetch behavior
+- [var stride: Int](./mtlbufferlayoutdescriptor/stride.md)
   The number of bytes from one buffer entry to the next.
-- [var stepFunction: MTLStepFunction](mtlbufferlayoutdescriptor/stepfunction.md)
+- [var stepFunction: MTLStepFunction](./mtlbufferlayoutdescriptor/stepfunction.md)
   Determines how and when compute functions fetch data.
-- [var stepRate: Int](mtlbufferlayoutdescriptor/steprate.md)
+- [var stepRate: Int](./mtlbufferlayoutdescriptor/steprate.md)
   How frequently the step function should load data.
 
 

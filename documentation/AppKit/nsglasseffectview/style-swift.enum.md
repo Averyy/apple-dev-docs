@@ -1,7 +1,8 @@
 # NSGlassEffectView.Style
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 26.0+
@@ -12,31 +13,36 @@
 enum Style
 ```
 
+```c
+enum NSGlassEffectViewStyle : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NSGlassEffectView.Style.clear](nsglasseffectview/style-swift.enum/clear.md)
+- [NSGlassEffectView.Style.clear](./style-swift.enum/clear.md)
   Clear glass effect style.
-- [NSGlassEffectView.Style.regular](nsglasseffectview/style-swift.enum/regular.md)
+- [NSGlassEffectView.Style.regular](./style-swift.enum/regular.md)
   Standard glass effect style.
 ### Initializers
-- [init?(rawValue: Int)](nsglasseffectview/style-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./style-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSGlassEffectView](nsglasseffectview.md)
+### Liquid Glass effects
+- [class NSGlassEffectView](../nsglasseffectview.md)
   A view that embeds its content view in a dynamic glass effect.
-- [class NSGlassEffectContainerView](nsglasseffectcontainerview.md)
+- [class NSGlassEffectContainerView](../nsglasseffectcontainerview.md)
   A view that efficiently merges descendant glass effect views together when they are within a specified proximity to each other.
 
 

@@ -1,7 +1,8 @@
 # string(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Formats the value of the given measurement using the receiver’s `countStyle`.
 
@@ -18,6 +19,10 @@ Formats the value of the given measurement using the receiver’s `countStyle`.
 
 ```swift
 func string(from measurement: Measurement<UnitInformationStorage>) -> String
+```
+
+```objc
+- (NSString *) stringFromMeasurement:(NSMeasurement<NSUnitInformationStorage *> *) measurement;
 ```
 
 #### Discussion

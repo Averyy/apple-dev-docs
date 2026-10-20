@@ -1,7 +1,8 @@
 # size(for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the size of the tab is needed.
 
@@ -16,6 +17,10 @@ Called when the size of the tab is needed.
 
 ```swift
 optional func size(for context: WKWebExtensionContext) -> CGSize
+```
+
+```objc
+- (CGSize) sizeForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
 #### Discussion

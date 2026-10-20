@@ -1,7 +1,8 @@
 # chartZAxisLabel(_:position:alignment:spacing:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds z axis label for charts in the view. It effects 3D charts only.
 
@@ -19,6 +20,18 @@ nonisolated
 func chartZAxisLabel(_ label: some StringProtocol, position: AnnotationPosition = .automatic, alignment: Alignment? = nil, spacing: CGFloat? = nil) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func chartZAxisLabel(_ labelKey: LocalizedStringKey, position: AnnotationPosition = .automatic, alignment: Alignment? = nil, spacing: CGFloat? = nil) -> some View
+```
+
+```swift
+nonisolated
+func chartZAxisLabel(_ labelResource: LocalizedStringResource, position: AnnotationPosition = .automatic, alignment: Alignment? = nil, spacing: CGFloat? = nil) -> some View
+```
+
 ## Parameters
 
 - `label`: The label string.
@@ -28,13 +41,14 @@ func chartZAxisLabel(_ label: some StringProtocol, position: AnnotationPosition 
 
 ## See Also
 
-- [func chartXAxisLabel(_:position:alignment:spacing:)](view/chartxaxislabel(_:position:alignment:spacing:).md)
+### Axis Labels
+- [func chartXAxisLabel(_:position:alignment:spacing:)](./chartxaxislabel%28_,position,alignment,spacing%29.md)
   Adds x axis label for charts in the view.
-- [func chartXAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View](view/chartxaxislabel(position:alignment:spacing:content:).md)
+- [func chartXAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View](./chartxaxislabel%28position,alignment,spacing,content%29.md)
   Adds x axis label for charts in the view.
-- [func chartYAxisLabel(_:position:alignment:spacing:)](view/chartyaxislabel(_:position:alignment:spacing:).md)
+- [func chartYAxisLabel(_:position:alignment:spacing:)](./chartyaxislabel%28_,position,alignment,spacing%29.md)
   Adds y axis label for charts in the view.
-- [func chartYAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View](view/chartyaxislabel(position:alignment:spacing:content:).md)
+- [func chartYAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View](./chartyaxislabel%28position,alignment,spacing,content%29.md)
   Adds y axis label for charts in the view.
 
 

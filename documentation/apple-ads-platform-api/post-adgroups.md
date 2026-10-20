@@ -1,7 +1,8 @@
 # Create an Ad Group
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a new ad group within a campaign, defining targeting, bid strategy, and scheduling for a set of ads.
 
@@ -529,17 +530,34 @@ POST /v1/adgroups
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `AdGroupCreate`
+
+## Responses
+
+- `200` OK (`AdGroupResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Query Ad Groups](post-adgroups-query.md)
+- [Query Ad Groups](./post-adgroups-query.md)
   Query ad groups using filters, sorting, and pagination.
-- [Get an Ad Group](get-adgroups-_id_.md)
+- [Get an Ad Group](./get-adgroups-_id_.md)
   Retrieve a single ad group by its unique identifier.
-- [Update an Ad Group](put-adgroups-_id_.md)
+- [Update an Ad Group](./put-adgroups-_id_.md)
   Update an existing ad group’s name, status, bid strategy, targeting, or scheduling.
-- [Delete an Ad Group](delete-adgroups-_id_.md)
+- [Delete an Ad Group](./delete-adgroups-_id_.md)
   Soft-delete an ad group by its unique identifier, along with all ads and keywords associated with it.
 
 

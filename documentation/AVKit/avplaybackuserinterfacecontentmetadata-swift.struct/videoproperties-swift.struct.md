@@ -1,7 +1,8 @@
 # AVPlaybackUserInterfaceContentMetadata.VideoProperties
 
 **Framework**: AVKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Properties specific to video content.
 
@@ -18,24 +19,24 @@ struct VideoProperties
 
 #### Overview
 
-The presence of a `VideoProperties` instance indicates the content contains video. Use [`AVPlaybackUserInterfaceContentMetadata.VideoProperties`](avplaybackuserinterfacecontentmetadata-swift.struct/videoproperties-swift.struct.md) to provide the natural presentation size for video content.
+The presence of a `VideoProperties` instance indicates the content contains video. Use [`AVPlaybackUserInterfaceContentMetadata.VideoProperties`](./videoproperties-swift.struct.md) to provide the natural presentation size for video content.
 
 ## Topics
 
 ### Initializers
-- [init(presentationSize: CGSize)](avplaybackuserinterfacecontentmetadata-swift.struct/videoproperties-swift.struct/init(presentationsize:).md)
+- [init(presentationSize: CGSize)](./videoproperties-swift.struct/init%28presentationsize%29.md)
   Creates a new video properties instance.
 ### Instance Properties
-- [var presentationSize: CGSize](avplaybackuserinterfacecontentmetadata-swift.struct/videoproperties-swift.struct/presentationsize.md)
+- [var presentationSize: CGSize](./videoproperties-swift.struct/presentationsize.md)
   The natural pixel dimensions of the video content, used for aspect ratio calculations and layout.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

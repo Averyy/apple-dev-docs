@@ -1,6 +1,7 @@
 # Xcode 27 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -8,21 +9,23 @@ Update your apps to use new features, and test your apps against API changes.
 
 Xcode 27 includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, watchOS 27, macOS 27, and visionOS 27. Xcode 27 supports on-device debugging in iOS 17 and later, tvOS 17 and later, watchOS 10 and later, and visionOS. Xcode 27 requires a Mac running macOS Tahoe 26.6 or later.
 
-See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/support/xcode/) to learn more about compatible platforms and deployment targets.
+See [Xcode Support](https://developer.apple.com/support/xcode/) to learn more about compatible platforms and deployment targets.
 
 ##### General
 
 ###### Resolved Issues
 
 - Fixed: The scheme action toolbar button now treats ‘without building’ variants, obtained by holding the Control key, as a one-shot operation and reverts to the normal build-then-perform action when no modifiers are used. (12239704)
-- Fixed: If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality, follow the [`How to reinstall macOS guide`](https://developer.apple.comhttps://support.apple.com/en-us/102655). (179068335)
+- Fixed: If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality, follow the [How to reinstall macOS guide](https://support.apple.com/en-us/102655). (179068335)
 - Fixed: Devices used for development on a Mac without Xcode 27 installed remain compatible for development on Macs which have not upgraded to Xcode 27 without needing to reboot. (179359489) (FB23066098)
 
 ##### Address Sanitizer
 
 ###### Known Issues
 
-- Address Sanitizer might fail to launch on iOS 27.0, tvOS 27.0, watchOS 27.0, and visionOS 27.0 when building with Xcode 26.4 or older. (178072780) **Workaround:** Use Xcode 26.5 or later when testing applications with Address Sanitizer.
+- Address Sanitizer might fail to launch on iOS 27.0, tvOS 27.0, watchOS 27.0, and visionOS 27.0 when building with Xcode 26.4 or older. (178072780)
+
+  **Workaround:** Use Xcode 26.5 or later when testing applications with Address Sanitizer.
 
 ##### App Intents
 
@@ -34,13 +37,17 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### New Features
 
-- You can now annotate C++ operators declared within classes using API Notes. For example: ```None
- Tags:
- - Name: MyTag
-   Methods:
-   - Name: operator+
-     Availability: none
-``` (148534260)
+- You can now annotate C++ operators declared within classes using API Notes. For example:
+
+  ```
+   Tags:
+   - Name: MyTag
+     Methods:
+     - Name: operator+
+       Availability: none
+  ```
+
+  (148534260)
 
 ##### Background Assets
 
@@ -59,41 +66,61 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### New Features
 
-- The following C++ papers have been implemented: - Hashing support for `std::chrono` value classes ([`P2592R3`](https://developer.apple.comhttps://wg21.link/P2592R3))
-- `zip` ([`P2321R2`](https://developer.apple.comhttps://wg21.link/P2321R2))
-- `std::optional<T&>` ([`P2988R12`](https://developer.apple.comhttps://wg21.link/P2988R12))
-- sub-`string_view` from `string` ([`P3044R2`](https://developer.apple.comhttps://wg21.link/P3044R2))
-- Making `std::istream::ignore` less surprising ([`P3223R2`](https://developer.apple.comhttps://wg21.link/P3223R2))
-- Add `std::views::indices(n)` ([`P3060R3`](https://developer.apple.comhttps://wg21.link/P3060R3))
-- Move-only types for `equality_comparable_with`, `totally_ordered_with`, and `three_way_comparable_with` ([`P2404R3`](https://developer.apple.comhttps://wg21.link/P2404R3))
-- Checking if a `union` alternative is active ([`P2641R4`](https://developer.apple.comhttps://wg21.link/P2641R4)(`std::is_within_lifetime`))
-- Expose `std::atomic_ref`’s object address ([`P2835R7`](https://developer.apple.comhttps://wg21.link/P2835R7))
-- Comparisons for `reference_wrapper` ([`P2944R3`](https://developer.apple.comhttps://wg21.link/P2944R3))
-- Give `std::optional` Range Support (guarded by `-fexperimental-library`) ([`P3168R2`](https://developer.apple.comhttps://wg21.link/P3168R2))
-- Fixes to `flat_map` and `flat_set` ([`P3567R2`](https://developer.apple.comhttps://wg21.link/P3567R2))
-- Make `optional<T&>` trivially copyable ([`P3836R2`](https://developer.apple.comhttps://wg21.link/P3836R2))
-- Library Support for Expansion Statements ([`P1789R3`](https://developer.apple.comhttps://wg21.link/P1789R3)) Performance improvements: - The performance of associative and unordered containers has been significantly improved, with some functions showing improvement of up to 11x.
-- The performance of many algorithms has been improved (including `std::find`, `std::for_each`|`ranges::for_each` for associative containers, `std::rotate`), resulting in a performance improvement of up to 3x.
-- `{std,ranges}::{generate, generate_n}`, `{std,ranges}::{fill, fill_n}` and `{std,ranges}::distance` have been specifically optimized for segmented iterators, resulting in a performance improvement of up to 10x (and even up to 1600x for `distance` on non-random-access iterators).
-- `std::search_n` for random access iterators now tries to skip elements, resulting in a significant performance improvement (up to 70,000x in contrived cases).
-- The `vector<bool>::reserve()` algorithm has been optimized, resulting in a performance improvement of up to 2x.
-- `num_get::do_get` integral overloads have been optimized, resulting in a performance improvement of up to 2.8x.
-- Some reallocations are now avoided in `std::filesystem::path::lexically_relative`, resulting in a performance improvement of up to 1.7x.
-- `ofstream::write` now passes large strings to system calls directly instead of copying them in chunks into a buffer. Miscellaneous improvements: - Multiple internal types have been refactored to use `[[no_unique_address]]`, resulting in faster compile times and reduced debug information.
-- `std::align` is now an inline function, which allows the compiler to better optimize calls to it.
-- `std::atomic::wait` has been refactored to accept more types to use platform native wait functions directly. This is guarded behind the ABI Macro `_LIBCPP_ABI_ATOMIC_WAIT_NATIVE_BY_SIZE`. (178191000)
+- The following C++ papers have been implemented:
+
+  - Hashing support for `std::chrono` value classes ([P2592R3](https://wg21.link/P2592R3))
+  - `zip` ([P2321R2](https://wg21.link/P2321R2))
+  - `std::optional<T&>` ([P2988R12](https://wg21.link/P2988R12))
+  - sub-`string_view` from `string` ([P3044R2](https://wg21.link/P3044R2))
+  - Making `std::istream::ignore` less surprising ([P3223R2](https://wg21.link/P3223R2))
+  - Add `std::views::indices(n)` ([P3060R3](https://wg21.link/P3060R3))
+  - Move-only types for `equality_comparable_with`, `totally_ordered_with`, and `three_way_comparable_with` ([P2404R3](https://wg21.link/P2404R3))
+  - Checking if a `union` alternative is active ([P2641R4](https://wg21.link/P2641R4)(`std::is_within_lifetime`))
+  - Expose `std::atomic_ref`’s object address ([P2835R7](https://wg21.link/P2835R7))
+  - Comparisons for `reference_wrapper` ([P2944R3](https://wg21.link/P2944R3))
+  - Give `std::optional` Range Support (guarded by `-fexperimental-library`) ([P3168R2](https://wg21.link/P3168R2))
+  - Fixes to `flat_map` and `flat_set` ([P3567R2](https://wg21.link/P3567R2))
+  - Make `optional<T&>` trivially copyable ([P3836R2](https://wg21.link/P3836R2))
+  - Library Support for Expansion Statements ([P1789R3](https://wg21.link/P1789R3))
+
+  Performance improvements:
+
+  - The performance of associative and unordered containers has been significantly improved, with some functions showing improvement of up to 11x.
+  - The performance of many algorithms has been improved (including `std::find`, `std::for_each`|`ranges::for_each` for associative containers, `std::rotate`), resulting in a performance improvement of up to 3x.
+  - `{std,ranges}::{generate, generate_n}`, `{std,ranges}::{fill, fill_n}` and `{std,ranges}::distance` have been specifically optimized for segmented iterators, resulting in a performance improvement of up to 10x (and even up to 1600x for `distance` on non-random-access iterators).
+  - `std::search_n` for random access iterators now tries to skip elements, resulting in a significant performance improvement (up to 70,000x in contrived cases).
+  - The `vector<bool>::reserve()` algorithm has been optimized, resulting in a performance improvement of up to 2x.
+  - `num_get::do_get` integral overloads have been optimized, resulting in a performance improvement of up to 2.8x.
+  - Some reallocations are now avoided in `std::filesystem::path::lexically_relative`, resulting in a performance improvement of up to 1.7x.
+  - `ofstream::write` now passes large strings to system calls directly instead of copying them in chunks into a buffer.
+
+  Miscellaneous improvements:
+
+  - Multiple internal types have been refactored to use `[[no_unique_address]]`, resulting in faster compile times and reduced debug information.
+  - `std::align` is now an inline function, which allows the compiler to better optimize calls to it.
+  - `std::atomic::wait` has been refactored to accept more types to use platform native wait functions directly. This is guarded behind the ABI Macro `_LIBCPP_ABI_ATOMIC_WAIT_NATIVE_BY_SIZE`. (178191000)
 
 ###### Deprecations
 
-- The following items have been deprecated or removed: - The minimum supported deployment target on macOS for the C++ standard library has been increased to 11.0. Potentially breaking changes: - The algorithm for `multi{map,set}::find` has been modified so that it doesn’t necessarily return an iterator to the first equal element in the container. This was never guaranteed by the Standard, but libc++ previously happened to always return the first equal element. Starting with this release, code relying on the first element being returned from `find` will be broken, and `lower_bound` or `equal_range` should be used instead.
-- The algorithms for `std::{map,set}` `lower_bound` and `upper_bound` operations were modified so that their result changed for comparators that are not a strict weak order. Being a strict weak order was always a requirement of the Standard and still is, however in this release libc++ changes the behavior of `std::{map,set}` for such comparators. Since this may be tricky to work around in some cases, an escape hatch is provided in this release: defining `_LIBCPP_ENABLE_LEGACY_TREE_LOWER_UPPER_BOUND` will revert to the historical implementation of these operations. That escape hatch will be removed in an upcoming release (likely in the next release).
-- The ABI flag `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` has been split off from `_LIBCPP_ABI_NO_ITERATOR_BASES`. If you are using this flag and require ABI stability, you should set `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` as well. ABI-affecting changes: - The ABI flag `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` has been split off from `_LIBCPP_ABI_NO_ITERATOR_BASES`. If you are using this flag and require ABI stability, you should set `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` as well.
-- The internal types `__map_value_compare`, `__unordered_map_hasher`, `__unordered_map_equal`, `__hash_map_hasher` and `__hash_map_equal` have been refactored to use `_LIBCPP_COMPRESSED_ELEMENT` instead of potentially inheriting from the types they wrap. At this point in time we are not aware of any ABI changes caused by this.
-- `ranges::iota_view` is now aware of `__int128`. This causes `iota_view::difference_type` to change from `long long` to `__int128` in some cases.
-- `std::allocator` is now trivially default-constructible. The behavior can be reverted by defining `_LIBCPP_DEPRECATED_ABI_NON_TRIVIAL_ALLOCATOR`. This compatibility macro is going to be removed in an upcoming release.
-- `bitset::operator[]` now returns `bool`, making libc++ conform to the Standard. The behavior can be reverted by defining `_LIBCPP_DEPRECATED_ABI_BITSET_CONST_SUBSCRIPT_RETURN_REF`. This compatibility macro is going to be removed in an upcoming release. (178191050)
+- The following items have been deprecated or removed:
 
-##### Carplay Simulator
+  - The minimum supported deployment target on macOS for the C++ standard library has been increased to 11.0.
+
+  Potentially breaking changes:
+
+  - The algorithm for `multi{map,set}::find` has been modified so that it doesn’t necessarily return an iterator to the first equal element in the container. This was never guaranteed by the Standard, but libc++ previously happened to always return the first equal element. Starting with this release, code relying on the first element being returned from `find` will be broken, and `lower_bound` or `equal_range` should be used instead.
+  - The algorithms for `std::{map,set}` `lower_bound` and `upper_bound` operations were modified so that their result changed for comparators that are not a strict weak order. Being a strict weak order was always a requirement of the Standard and still is, however in this release libc++ changes the behavior of `std::{map,set}` for such comparators. Since this may be tricky to work around in some cases, an escape hatch is provided in this release: defining `_LIBCPP_ENABLE_LEGACY_TREE_LOWER_UPPER_BOUND` will revert to the historical implementation of these operations. That escape hatch will be removed in an upcoming release (likely in the next release).
+  - The ABI flag `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` has been split off from `_LIBCPP_ABI_NO_ITERATOR_BASES`. If you are using this flag and require ABI stability, you should set `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` as well.
+
+  ABI-affecting changes:
+
+  - The ABI flag `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` has been split off from `_LIBCPP_ABI_NO_ITERATOR_BASES`. If you are using this flag and require ABI stability, you should set `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` as well.
+  - The internal types `__map_value_compare`, `__unordered_map_hasher`, `__unordered_map_equal`, `__hash_map_hasher` and `__hash_map_equal` have been refactored to use `_LIBCPP_COMPRESSED_ELEMENT` instead of potentially inheriting from the types they wrap. At this point in time we are not aware of any ABI changes caused by this.
+  - `ranges::iota_view` is now aware of `__int128`. This causes `iota_view::difference_type` to change from `long long` to `__int128` in some cases.
+  - `std::allocator` is now trivially default-constructible. The behavior can be reverted by defining `_LIBCPP_DEPRECATED_ABI_NON_TRIVIAL_ALLOCATOR`. This compatibility macro is going to be removed in an upcoming release.
+  - `bitset::operator[]` now returns `bool`, making libc++ conform to the Standard. The behavior can be reverted by defining `_LIBCPP_DEPRECATED_ABI_BITSET_CONST_SUBSCRIPT_RETURN_REF`. This compatibility macro is going to be removed in an upcoming release. (178191050)
+
+##### CarPlay Simulator
 
 ###### Resolved Issues
 
@@ -118,33 +145,43 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - Agents in Xcode can now be extended with plugins that contain skills, MCP servers, and ACP agent configurations. Skills are invokable as slash commands with completion support. (178289210)
 - Coding Intelligence now includes a new security layer that monitors and controls filesystem access by coding agents and any processes they spawn. This can be enabled in Coding Intelligence settings. (178289431)
 - Xcode adds support for the Agent Client protocol. (178294840)
-- Agent Plug-ins can show custom icons and tool names for MCP servers they define by adding additional _meta fields to their JSON definitions. ```None
- {
-   "name": "MyGreatPlugin",
-   "description": "An awesome MCP server configuration.",
-   "version": "1.0.0",
-   "mcpServers": {
-     "MyGreatMCP": {
-       "type": "http",
-       "url": "...",
-       "tools": [
-         "*"
-       ],
-       "_meta": {
-         "ideToolIconPath": "./icon.svg",
-         "ideToolIconRendersAsTemplate": true,
-         "ideToolTitles": {
-           "whoami": "Who Am I",
-                 "get-current-email": "Get Current Email Message" 
+- Agent Plug-ins can show custom icons and tool names for MCP servers they define by adding additional _meta fields to their JSON definitions.
+
+  ```
+   {
+     "name": "MyGreatPlugin",
+     "description": "An awesome MCP server configuration.",
+     "version": "1.0.0",
+     "mcpServers": {
+       "MyGreatMCP": {
+         "type": "http",
+         "url": "...",
+         "tools": [
+           "*"
+         ],
+         "_meta": {
+           "ideToolIconPath": "./icon.svg",
+           "ideToolIconRendersAsTemplate": true,
+           "ideToolTitles": {
+             "whoami": "Who Am I",
+                   "get-current-email": "Get Current Email Message" 
+           }
          }
        }
      }
    }
- }
-``` (178470032)
+  ```
+
+  (178470032)
 - Xcode build and test MCP tools now send dynamic activity status instead of static text to external MCP clients. (181078347)
 - Coding Intelligence agents can now verify watchOS apps, including rotating and pressing the Digital Crown, and pressing the side and Action buttons (Apple Watch Ultra). (181147968)
-- Xcode 27 Beta 5 adds a preview of a new MCP server experience that runs without requiring an open Xcode workspace. This new experience also allows you to grant code-signed agents permission to use projects within a directory tree for extended periods of time without being asked for additional permissions. You can turn this experience on by using `sudo xcrun mcp-server enable`. Check its state afterward with `xcrun mcp-server status`. Developers running agents in unattended environments can approve all permissions upfront with `sudo xcrun mcp-server enable --unsafe-always-allow-all-agents`. This is not a recommended configuration for at-desk use. In this early preview, some aspects of the `xcrun mcp-server` command line utility may not work in all configurations, and some settings or permissions may occasionally require relaunching Xcode or rebooting your machine to apply. (181836944)
+- Xcode 27 Beta 5 adds a preview of a new MCP server experience that runs without requiring an open Xcode workspace. This new experience also allows you to grant code-signed agents permission to use projects within a directory tree for extended periods of time without being asked for additional permissions.
+
+  You can turn this experience on by using `sudo xcrun mcp-server enable`. Check its state afterward with `xcrun mcp-server status`.
+
+  Developers running agents in unattended environments can approve all permissions upfront with `sudo xcrun mcp-server enable --unsafe-always-allow-all-agents`. This is not a recommended configuration for at-desk use.
+
+  In this early preview, some aspects of the `xcrun mcp-server` command line utility may not work in all configurations, and some settings or permissions may occasionally require relaunching Xcode or rebooting your machine to apply. (181836944)
 - Google Antigravity is now available in the coding assistant. (183074664)
 - Coding Intelligence agents can now verify tvOS apps, navigating with the Siri Remote to move focus, select, and go Home, and entering text into focused fields. (183317784)
 
@@ -169,7 +206,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 - When streaming `stdout` and `stderr` from multiple processes at the same time (for example: in parallel testing scenarios), the results may be significantly delayed. (165098287)
 
-##### Core Ai
+##### Core AI
 
 ###### Resolved Issues
 
@@ -177,7 +214,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - Fixed: The number of parameters displayed in the Core AI model view in Xcode is inaccurate for models with multiple functions that share parameters. (177784390)
 - Fixed: When Metal API Validation is enabled, CoreAI models might fail to execute. (177991751)
 
-##### Core Ml
+##### Core ML
 
 ###### Resolved Issues
 
@@ -190,7 +227,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - In projects using bridging headers, LLDB can now directly import explicitly built Swift modules and PCH from DerivedData. This can dramatically speed up the first expression or `po` in a debug session involving a bridging header. (168272248)
 - LLDB now provides a `language swift task tree` command, which prints a tree of all the Swift Tasks the debugger knows about. For more information, see the output of `help language swift task tree`. (169471480)
 - LLDB can now inspect data types with ~Copyable fields in the standard library and other system frameworks. (176282041)
-- LLDB now ships with an MCP server (lldb-mcp). See [`Model Context Protocol`](https://developer.apple.comhttps://lldb.llvm.org/use/mcp.html) for examples. (176901842)
+- LLDB now ships with an MCP server (lldb-mcp). See [Model Context Protocol](https://lldb.llvm.org/use/mcp.html) for examples. (176901842)
 
 ##### Developer Documentation
 
@@ -203,7 +240,11 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 ###### New Features
 
 - Common Mac mouse and trackpad gestures such as scrolling, pinching, and rotating now work with standard UIKit components on iOS devices, either physical or simulated. When scrolling with a pointing device, `UIEvent.EventType.scroll` is emitted. When pinching or rotating with a trackpad, `UIEvent.EventType.transform` is emitted. As a result of these pointer-based events being emitted, you may see `UIPointerInteraction` effects applied based on where the pointer is located in your app. Additionally, clicking with a mouse or trackpad produces a simulated finger touch of type `UITouch.TouchType.direct` rather than `UITouch.TouchType.indirectPointer`. This hybrid behavior has been added for ease of use for Device Hub, and does not reflect functionality available on physical devices. To validate your app’s full pointer behavior, select “Simulate Trackpad or Mouse” from the Device menu, test on a physical iPad with a paired pointing device, or use iPhone Mirroring. (48372360) (FB5341466)
-- Device Hub adds a new way to pair iPhone, iPad and Apple Watch running iOS 27/iPadOS 27/watchOS 27 and later over a network. This allows you to pair iPhones and iPads without requiring a cable, and provides a more reliable experience for pairing watches. To get started, click the + button in Device Hub’s sidebar then select “Pair Nearby Device…”, or refer to the documentation at [`Managing your simulated and physical devices in Device Hub`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/managing-your-simulated-and-physical-devices-in-device-hub). (179418483)
+- Device Hub adds a new way to pair iPhone, iPad and Apple Watch running iOS 27/iPadOS 27/watchOS 27 and later over a network.
+
+  This allows you to pair iPhones and iPads without requiring a cable, and provides a more reliable experience for pairing watches.
+
+  To get started, click the + button in Device Hub’s sidebar then select “Pair Nearby Device…”, or refer to the documentation at [Managing your simulated and physical devices in Device Hub](../Xcode/managing-your-simulated-and-physical-devices-in-device-hub.md). (179418483)
 - A device’s UUID is now shown by default in the Info Inspector under ‘Hardware Properties’. (183547490)
 - To reduce confusion with other unique identifiers, the CoreDevice ID is no longer shown by default in the Info Inspector. You can use the ‘Edit Visibility’ button at the bottom of the Info inspector to make the CoreDevice ID visible. (183763393)
 
@@ -217,16 +258,30 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - Fixed: After switching to Device Hub’s compact view, a visionOS simulator may show a black screen until Device Hub is relaunched. (178567811)
 - Fixed: In some circumstances, when using “Simulate Mouse or Trackpad” with an iPad, physical or simulated, the mouse pointer can appear at a different place on the screen than the Mac pointer. (178575823)
 - Fixed: The ‘Color Filter’ option in the appearance settings inspector works for simulators. (178854926)
-- Fixed: Added a preference to control whether key combos are sent to Device Hub or to the remote device. ```None
- defaults -container com.apple.dt.Devices write com.apple.dt.Devices hostKeybindingPolicy -int <value>
-``` Use these values to define a specific behavior: - 0 - Device Hub uses rich key combo shortcuts.
-- 1 - Minimized when interacting with device.
-- 2 - Device Hub uses minimal key combo shortcuts. (178920247)
+- Fixed: Added a preference to control whether key combos are sent to Device Hub or to the remote device.
+
+  ```
+   defaults -container com.apple.dt.Devices write com.apple.dt.Devices hostKeybindingPolicy -int <value>
+  ```
+
+  Use these values to define a specific behavior:
+
+  - 0 - Device Hub uses rich key combo shortcuts.
+  - 1 - Minimized when interacting with device.
+  - 2 - Device Hub uses minimal key combo shortcuts. (178920247)
 - Fixed: Due to a timing issue with the installation package, Simulator devices may not appear in Device Hub. (179040327) (FB22978070)
 - Fixed: When pasteboard data takes longer than 5s to transfer (e.g., misbehaving apps serving data, data taking a long time to process, or large data taking a long time to transfer), resolution will now only block apps attempting to paste for up to 5s.  After the 5s timeout, the paste will fail but data will continue to be transferred in the background such that the paste can be retried and will succeed after the data has been transferred. (179132581)
 - Fixed: Improved reliability of pasteboard synchronization. (179200521)
 - Fixed: Device Hub synchronization no longer attempts to synchronize pasteboard data provided by Universal Clipboard. (179287395)
-- Fixed: If the user specified a location to save screenshots from Simulator, Device Hub will honor that location before falling back to the global default screenshot location. Preference order: `com.apple.dt.devices` screenCaptureLocation `com.apple.iphonesimulator` ScreenShotSaveLocation `com.apple.screencapture` location (179402694)
+- Fixed: If the user specified a location to save screenshots from Simulator, Device Hub will honor that location before falling back to the global default screenshot location.
+
+  Preference order:
+
+  `com.apple.dt.devices` screenCaptureLocation
+
+  `com.apple.iphonesimulator` ScreenShotSaveLocation
+
+  `com.apple.screencapture` location (179402694)
 - Fixed: Device Hub allows you to enter resize mode with an app linked against an iOS 26 or earlier SDK, which is unsupported and may result in Device Hub showing a black screen for the device. (179416769)
 - Fixed: If you exit Device Hub’s resize mode through means other than the toolbar button or menu item (e.g. if your resized app crashes or is backgrounded) the device’s screen content will be incorrectly sized until it is rebooted. (179991750)
 - Fixed: visionOS simulator takes longer to boot than expected and may stall when deploying an app. (180078336)
@@ -235,43 +290,63 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 ###### Known Issues
 
 - Connecting a game controller to a simulator or device is only supported for the visionOS simulator. (109362811)
-- Viewing the video from, or sending inputs to, a physical Apple Vision Pro is not supported in Device Hub 27. All other Device Hub features, like changing settings, DeviceFS, and so forth, are supported. (142582218) **Workaround:** Use AirPlay from the Apple Vision Pro to view the video remotely.
+- Viewing the video from, or sending inputs to, a physical Apple Vision Pro is not supported in Device Hub 27. All other Device Hub features, like changing settings, DeviceFS, and so forth, are supported. (142582218)
+
+  **Workaround:** Use AirPlay from the Apple Vision Pro to view the video remotely.
 - Device Hub doesn’t currently support sending a two-finger touch to a device or simulator. (169537162)
 - The Controls->Shake menu item does not work. (171282777)
 - Sound Output and Input for simulators cannot be set to None. (175714711)
-- Device Hub.app downloads app data containers to a folder named with the bundle identifier of the app instead of .xcappdata. (176313137) **Workaround:** To make a .xcappdata bundle for use in Xcode’s Run scheme action do the following. Add `.xcappdata` to the folder created by Device Hub when downloading app data containers. Inside that folder make a new folder named AppData. Move the other content in that folder into AppData. For example, ```None
- com.example.MyApp/{Documents,Library,tmp}
-``` becomes: ```None
- com.example.MyApp.xcappdata/AppData/{Documents,Library,tmp}
-```
+- Device Hub.app downloads app data containers to a folder named with the bundle identifier of the app instead of .xcappdata. (176313137)
+
+  **Workaround:** To make a .xcappdata bundle for use in Xcode’s Run scheme action do the following. Add `.xcappdata` to the folder created by Device Hub when downloading app data containers. Inside that folder make a new folder named AppData. Move the other content in that folder into AppData. For example,
+
+  ```
+   com.example.MyApp/{Documents,Library,tmp}
+  ```
+
+  becomes:
+
+  ```
+   com.example.MyApp.xcappdata/AppData/{Documents,Library,tmp}
+  ```
 - When the tab bar is visible, controls at the very top of the inspector might not respond to clicks. (176507876)
-- When running parallel testing in simulators, devices may not be visible in Device Hub but are still actively running tests. (176809181) **Workaround:** Disable parallelized test runs if you want to watch UI tests executing in simulators.
+- When running parallel testing in simulators, devices may not be visible in Device Hub but are still actively running tests. (176809181)
+
+  **Workaround:** Disable parallelized test runs if you want to watch UI tests executing in simulators.
 - When a color filter is set on a physical device, the filter is not visible in Device Hub. (178121876)
 - With iPad Simulators running iOS 27.0, the “Toggle Software Keyboard” menu item does not work. (178432770)
-- With Apple Watch - simulator or physical - scrolling with the mouse pointer over the watch face does not emulate rotating the digital crown. (179079031) (FB22992052) **Workaround:** Move the pointer over the crown in the device bezel.
+- With Apple Watch - simulator or physical - scrolling with the mouse pointer over the watch face does not emulate rotating the digital crown. (179079031) (FB22992052)
+
+  **Workaround:** Move the pointer over the crown in the device bezel.
 - Keyboard and mouse inputs to simulators for OS versions before iOS 18.0, tvOS 18.0, watchOS 11.0, and visionOS 2.0 are not accepted. (181945323)
-- After disconnecting a physical device from Device Hub when “Simulate Hardware Keyboard” was in use, the device may remain in “hardware keyboard” mode for up to 2 minutes. This will cause the software keyboard to not appear when selecting a text field. (182553164) **Workaround:** Wait 2 minutes for the condition to clear.
+- After disconnecting a physical device from Device Hub when “Simulate Hardware Keyboard” was in use, the device may remain in “hardware keyboard” mode for up to 2 minutes. This will cause the software keyboard to not appear when selecting a text field. (182553164)
+
+  **Workaround:** Wait 2 minutes for the condition to clear.
 
 ###### Deprecations
 
 - Input interactions such as keyboard or pointer are only supported on the following OS versions and newer: macOS 15.0, iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0. (160482487)
 
-##### Devicectl
+##### devicectl
 
 ###### New Features
 
 - –json-output now fully supports passing JSON output to stdout. See devicectl –help for more details. (63583278)
-- As of JSON version 5, devicectl now adds a ‘_deprecationNotice’ field to any JSON result that contains deprecated properties. Here is the deprecation notice shown for the JSON for device details: ```None
- "_deprecationNotice" : { 
-     "deprecatedFields" : [ 
-         "hardwareProperties", 
-         "deviceProperties", 
-         "connectionProperties" 
-     ], 
-     "message" : "The 'hardwareProperties', 'deviceProperties', 'connectionProperties' fields are deprecated and will be removed in a future release. Use the 'properties' dictionary instead.", 
-     "replacement" : "properties" 
- },
-``` (170812159)
+- As of JSON version 5, devicectl now adds a ‘_deprecationNotice’ field to any JSON result that contains deprecated properties. Here is the deprecation notice shown for the JSON for device details:
+
+  ```
+   "_deprecationNotice" : { 
+       "deprecatedFields" : [ 
+           "hardwareProperties", 
+           "deviceProperties", 
+           "connectionProperties" 
+       ], 
+       "message" : "The 'hardwareProperties', 'deviceProperties', 'connectionProperties' fields are deprecated and will be removed in a future release. Use the 'properties' dictionary instead.", 
+       "replacement" : "properties" 
+   },
+  ```
+
+  (170812159)
 - ‘devicectl list devices’ now shows a unique identifier for devices. If a UDID is available, that is presented, otherwise, if available, the ECID is presented, otherwise the CoreDevice identifier is shown. The JSON returned by the command is unaffected. (183766625)
 
 ###### Resolved Issues
@@ -293,7 +368,9 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### Known Issues
 
-- Apps with Hardware-Checked Pointer Arithmetic Slice feature enabled cannot be uploaded to the App Store on macOS Tahoe 26.6 with Xcode automatic signing enabled. (187057599) **Workaround:** Distribute with macOS 27 and Xcode 27 or use manual signing.
+- Apps with Hardware-Checked Pointer Arithmetic Slice feature enabled cannot be uploaded to the App Store on macOS Tahoe 26.6 with Xcode automatic signing enabled. (187057599)
+
+  **Workaround:** Distribute with macOS 27 and Xcode 27 or use manual signing.
 
 ##### Foundation
 
@@ -305,7 +382,11 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### New Features
 
-- Icon Composer 2.0 supports a new sharper rendering mode for upcoming 2027 operating systems with support for refractivity, outside specular, and deeper shadows. Use the group inspector to edit the new properties, and the toolbar to preview in either the new or original design generation. When your icon looks great in both design generations, add it to your Xcode project to use it with all OS versions. (172404678)
+- Icon Composer 2.0 supports a new sharper rendering mode for upcoming 2027 operating systems with support for refractivity, outside specular, and deeper shadows.
+
+  Use the group inspector to edit the new properties, and the toolbar to preview in either the new or original design generation.
+
+  When your icon looks great in both design generations, add it to your Xcode project to use it with all OS versions. (172404678)
 
 ##### Instruments
 
@@ -414,7 +495,9 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 ###### New Features
 
 - Exporting localizations now extracts `NSLocalizedString` and similar macros from header files in addition to implementation files. (19191207) (FB5500560)
-- Agents in Xcode can now be used to translate strings in String Catalogs. You can ask an agent to translate strings ranging from a single feature to an entire project, into one or more languages. Xcode adds languages to your project settings, creates missing String Catalogs, and provides guidance and context to agents as they translate. (111514130) (FB12479690)
+- Agents in Xcode can now be used to translate strings in String Catalogs. You can ask an agent to translate strings ranging from a single feature to an entire project, into one or more languages.
+
+  Xcode adds languages to your project settings, creates missing String Catalogs, and provides guidance and context to agents as they translate. (111514130) (FB12479690)
 - Strings in code with a localization comment of “do not translate” are automatically marked as “Don’t Translate” in String Catalogs and `translate="no"` in exported XLIFFs. (111715368)
 - Exported XLIFFs use `state-qualifier="leveraged-mt"` to indicate strings that were translated using machine translation. (161775544)
 - The String Catalog editor now includes a Generate Translations button as a shortcut to ask an agent to translate strings. You can also use the context menu to translate specific strings. (169559347)
@@ -446,7 +529,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - Fixed: The Queue Debugging setting to Enable Backtrace Recording is off by default. To view the process grouped by dispatch queues in the debug navigator, or to get recorded backtraces indicating the originating dispatch operation when viewing the process grouped by thread, please enable the setting in the scheme editor under Run > Options > Queue Debugging > Enable Backtrace Recording. (164183224)
 - Fixed: An app may crash when run from Xcode with both Hardware Memory Tagging and GPU Frame Capture enabled. (178488388)
 
-##### Musickit
+##### MusicKit
 
 ###### Resolved Issues
 
@@ -506,7 +589,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 - `PreviewProvider` and its family of preview modifiers. (144168701)
 
-##### Previews Playgrounds
+##### Previews & Playgrounds
 
 ###### New Features
 
@@ -533,14 +616,16 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### Known Issues
 
-- Standalone Swift files opened by double-clicking in Finder may fail to run #Playground or #Preview blocks. (177587795) **Workaround:** Open Swift files using File>Open… or drag them directly onto the Dock icon.
+- Standalone Swift files opened by double-clicking in Finder may fail to run #Playground or #Preview blocks. (177587795)
+
+  **Workaround:** Open Swift files using File>Open… or drag them directly onto the Dock icon.
 
 ##### Security
 
 ###### New Features
 
-- The new “adopt-c-bounds-safety” Code Intelligence skill can help you adopt the bounds safety extension for C (-fbounds-safety) with a file-by-file adoption workflow. For more information about the C bounds safety extension, see [`Adopt bounds checking in C`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app#Adopt-bounds-checking-in-C). (177739344)
-- The new “audit-xcode-security-settings” Code Intelligence skill can help you audit your app to suggest enabling additional security-oriented build settings and entitlements. For more information on these settings, see [`Enabling enhanced security for your app`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app). (181104536)
+- The new “adopt-c-bounds-safety” Code Intelligence skill can help you adopt the bounds safety extension for C (-fbounds-safety) with a file-by-file adoption workflow. For more information about the C bounds safety extension, see [Adopt bounds checking in C](../Xcode/enabling-enhanced-security-for-your-app.md#Adopt-bounds-checking-in-C). (177739344)
+- The new “audit-xcode-security-settings” Code Intelligence skill can help you audit your app to suggest enabling additional security-oriented build settings and entitlements. For more information on these settings, see [Enabling enhanced security for your app](../Xcode/enabling-enhanced-security-for-your-app.md). (181104536)
 
 ##### Simulator
 
@@ -572,7 +657,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - Fixed: Use Selection for Find (Cmd-E) did not function for text selections in the “old” side of an inline diff display. (52361137)
 - Fixed an issue in macOS 27 where clicking the close button in an expanded macro added a breakpoint rather than closing the expansion. You can use Editor > Hide Macro Expansion to close the expansion. (174376098)
 
-##### Storekit Testing in Xcode
+##### StoreKit Testing in Xcode
 
 ###### New Features
 
@@ -591,20 +676,30 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### New Features
 
-- The Swift dependency scanner has been optimized to avoid redundant setup work and header searches when looking up Clang modules during a single dependency-scan action, substantially improving scanning performance. As a consequence of this change, every Clang module reachable from a single Swift dependency-scan action must have a unique module name. If two module maps visible to the same scan declare a Clang module with the same name, the scan may report an error. Previously, the scanner may have tolerated duplicating names. The most common cases are projects or SDKs that vend the same Clang module name from more than one location on the header search path, and vendored third-party sources that ship a module.modulemap redeclaring an SDK module. (136303612)
+- The Swift dependency scanner has been optimized to avoid redundant setup work and header searches when looking up Clang modules during a single dependency-scan action, substantially improving scanning performance.
+
+  As a consequence of this change, every Clang module reachable from a single Swift dependency-scan action must have a unique module name. If two module maps visible to the same scan declare a Clang module with the same name, the scan may report an error. Previously, the scanner may have tolerated duplicating names.
+
+  The most common cases are projects or SDKs that vend the same Clang module name from more than one location on the header search path, and vendored third-party sources that ship a module.modulemap redeclaring an SDK module. (136303612)
 
 ###### Known Issues
 
-- A computed property with both an `init` accessor and an array/dictionary literal initial value will no longer compile if the getter is declared before the `init` accessor. ```None
- struct S {
-   var _strings: [String]
-   var strings: [String] = ["hello"] {
-     get { _strings }
-     @storageRestrictions(initializes: _strings)
-     init { _strings = newValue }
+- A computed property with both an `init` accessor and an array/dictionary literal initial value will no longer compile if the getter is declared before the `init` accessor.
+
+  ```
+   struct S {
+     var _strings: [String]
+     var strings: [String] = ["hello"] {
+       get { _strings }
+       @storageRestrictions(initializes: _strings)
+       init { _strings = newValue }
+     }
    }
- }
-``` This is a known source break from SE-0508. (180969028) **Workaround:** Swap the `init` accessor and the getter such that the `init` accessor is declared first.
+  ```
+
+  This is a known source break from SE-0508. (180969028)
+
+  **Workaround:** Swap the `init` accessor and the getter such that the `init` accessor is declared first.
 
 ##### Swift Package Manager
 
@@ -613,56 +708,82 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - When one or more test targets in a package experience a test failure, `swift test` summarizes them at the end. (168311253)
 - `swift test` now supports repeating test cases until a condition is met. Pass `--maximum-repetitions` and `--repeat-until [pass|fail]` to `swift test` to repeat your tests until they pass or fail. Only those test cases that match the repeat condition will be repeated. (177561078)
 
-##### Swiftc++ Interoperability
+##### Swift/C++ Interoperability
 
 ###### New Features
 
 - When calling a C++ constructor that has parameters with default expressions, you no longer have to pass all arguments explicitly in Swift. (118987713)
-- You can now convert Swift closures to instances of `std::function`. For example: ```None
- // C++
- void processNumbers(const std::vector<int> &numbers, std::function<void(int)> op);
-``` ```None
- // Swift
- processNumbers([1, 2, 3], .init { print($0) })
-``` (133777029)
+- You can now convert Swift closures to instances of `std::function`. For example:
+
+  ```
+   // C++
+   void processNumbers(const std::vector<int> &numbers, std::function<void(int)> op);
+  ```
+
+  ```
+   // Swift
+   processNumbers([1, 2, 3], .init { print($0) })
+  ```
+
+  (133777029)
 - You can now annotate constructors of foreign reference types as SWIFT_RETURNS_RETAINED or SWIFT_RETURNS_UNRETAINED. (135368369)
-- Mapping `__counted_by` and `std::span` parameters annotated with `__noescape` to Swift Span no longer requires the SafeInteropWrappers experimental feature flag. Mapping return values to Span using `__lifetimebound` is still guarded by the experimental feature flag. For more information, see [`Safe Overloads for Annotated Spans and Pointers`](https://developer.apple.comhttps://www.swift.org/documentation/cxx-interop/safe-interop/#safe-overloads-for-annotated-spans-and-pointers). (148994016)
-- Raw pointers to intrusively reference counted types (annotated with `SWIFT_SHARED_REFERENCE`) are imported as Swift classes. Starting with this release you can now annotate smart pointer types pointing to such reference counted types with `SWIFT_REFCOUNTED_PTR` macro to bridge their instances to Swift classes. For example: ```None
- struct SWIFT_SHARED_REFERENCE(...) SharedObj {};
- 
- template <class T>
- struct SWIFT_REFCOUNTED_PTR(.getPtr) Ptr {
-     Ptr(T* ptr);
-     T *_Nullable getPtr() const { return ptr; }
- };
- 
- using ObjPtr = Ptr<SharedObj>;
- 
- void takesSmartPtr(ObjPtr p);
-``` The function `takesSmartPtr` is imported to Swift as: ```None
- func takesSmartPtr(_ p: SharedObj?)
-``` (156521316)
-- Previously, safe wrappers could not be generated for functions where the signature contained template instantiations. Any template instantiation would have to be referred to using a typedef instead. Safe wrappers can now be generated for functions without wrapping `std::span` parameter types in typedefs, if they are annotated with `__noescape`. Any other template instantiation in the signature still prevents generating a safe wrapper, unless hidden behind a typedef. Example: ```c++
- // Already supported:
- using IntSpan = std::span<int>;
- void foo(IntSpan x __noescape);
- 
- // Now this also works:
- void bar(std::span<int> y __noescape);
- 
- // The return type template instantiation here still prevents generating a safe wrapper:
- std::span<int> baz(std::span<int> z __noescape);
-``` (167712240)
+- Mapping `__counted_by` and `std::span` parameters annotated with `__noescape` to Swift Span no longer requires the SafeInteropWrappers experimental feature flag.
+
+  Mapping return values to Span using `__lifetimebound` is still guarded by the experimental feature flag.
+
+  For more information, see [Safe Overloads for Annotated Spans and Pointers](https://www.swift.org/documentation/cxx-interop/safe-interop/#safe-overloads-for-annotated-spans-and-pointers). (148994016)
+- Raw pointers to intrusively reference counted types (annotated with `SWIFT_SHARED_REFERENCE`) are imported as Swift classes. Starting with this release you can now annotate smart pointer types pointing to such reference counted types with `SWIFT_REFCOUNTED_PTR` macro to bridge their instances to Swift classes. For example:
+
+  ```
+   struct SWIFT_SHARED_REFERENCE(...) SharedObj {};
+   
+   template <class T>
+   struct SWIFT_REFCOUNTED_PTR(.getPtr) Ptr {
+       Ptr(T* ptr);
+       T *_Nullable getPtr() const { return ptr; }
+   };
+   
+   using ObjPtr = Ptr<SharedObj>;
+   
+   void takesSmartPtr(ObjPtr p);
+  ```
+
+  The function `takesSmartPtr` is imported to Swift as:
+
+  ```
+   func takesSmartPtr(_ p: SharedObj?)
+  ```
+
+  (156521316)
+- Previously, safe wrappers could not be generated for functions where the signature contained template instantiations. Any template instantiation would have to be referred to using a typedef instead.
+
+  Safe wrappers can now be generated for functions without wrapping `std::span` parameter types in typedefs, if they are annotated with `__noescape`. Any other template instantiation in the signature still prevents generating a safe wrapper, unless hidden behind a typedef.
+
+  Example:
+
+  ```c++
+   // Already supported:
+   using IntSpan = std::span<int>;
+   void foo(IntSpan x __noescape);
+   
+   // Now this also works:
+   void bar(std::span<int> y __noescape);
+   
+   // The return type template instantiation here still prevents generating a safe wrapper:
+   std::span<int> baz(std::span<int> z __noescape);
+  ```
+
+  (167712240)
 
 ##### System
 
 ###### New Features
 
-- System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
+- System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
 
 ###### Resolved Issues
 
-- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
+- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [SYS-0008](https://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
 
 ##### Testing
 
@@ -694,13 +815,13 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 - Customized and imported themes are now stored on disk alongside legacy theme files. (177747192)
 
-##### Usdkit
+##### USDKit
 
 ###### Deprecations
 
 - Meshes compressed using the USDKit export API or `usdcrush tool` in Beta 1 cannot be decoded by Beta 2, and  meshes from Beta 2 cannot be decoded by Beta 1. (177417812)
 
-##### Wi Fi Aware
+##### Wi-Fi Aware
 
 ###### Resolved Issues
 
@@ -708,9 +829,10 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ## See Also
 
-- [Xcode 27.2 RC Release Notes](xcode-27_2-release-notes.md)
+### Xcode 27
+- [Xcode 27.2 RC Release Notes](./xcode-27_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 27.1 Release Notes](xcode-27_1-release-notes.md)
+- [Xcode 27.1 Release Notes](./xcode-27_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

@@ -1,7 +1,8 @@
 # moveToLevelWithOnOff(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func moveToLevelWithOnOff(with params: MTRLevelControlClusterMoveToLevelWithOnOffParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func moveToLevelWithOnOff(with params: MTRLevelControlClusterMoveToLevelWithOnOffParams) async throws
+```
+
+```objc
+- (void) moveToLevelWithOnOffWithParams:(MTRLevelControlClusterMoveToLevelWithOnOffParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

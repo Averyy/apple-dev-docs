@@ -1,7 +1,8 @@
 # init(style:allowedUnits:spellsOutZero:includesActualByteCount:locale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an attributed byte count format style.
 

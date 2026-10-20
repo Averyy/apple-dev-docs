@@ -1,17 +1,24 @@
 # accessibilityLabel
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized string that describes the gague.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
 ```swift
 var accessibilityLabel: String? { get set }
+```
+
+```objc
+@property (nonatomic, retain, nullable) NSString * accessibilityLabel;
 ```
 
 #### Discussion

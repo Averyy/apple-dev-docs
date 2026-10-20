@@ -1,7 +1,8 @@
 # VNDetectTrajectoriesRequestRevision1
 
 **Framework**: Vision  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant for specifying revision 1 of the trajectories detection request.
 
@@ -17,6 +18,10 @@ A constant for specifying revision 1 of the trajectories detection request.
 
 ```swift
 var VNDetectTrajectoriesRequestRevision1: Int { get }
+```
+
+```c
+static const NSUInteger VNDetectTrajectoriesRequestRevision1;
 ```
 
 

@@ -1,7 +1,8 @@
 # evaluationProviderBundleIdentifier
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bundle identifier of the hotspot evaluation provider.
 
@@ -19,9 +20,10 @@ final var evaluationProviderBundleIdentifier: String? { get set }
 
 ## See Also
 
-- [var isEnabled: Bool](nehotspotmanager/isenabled.md)
+### Accessing provider properties
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the configuration is enabled.
-- [var authenticationProviderBundleIdentifier: String?](nehotspotmanager/authenticationproviderbundleidentifier.md)
+- [var authenticationProviderBundleIdentifier: String?](./authenticationproviderbundleidentifier.md)
   The bundle identifier of the hotspot authentication provider.
 
 

@@ -1,7 +1,8 @@
 # expiresDate
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cookie’s expiration date.
 
@@ -20,13 +21,18 @@ The cookie’s expiration date.
 var expiresDate: Date? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSDate * expiresDate;
+```
+
 #### Discussion
 
 This value is `nil` if there is no specific expiration date, as with session-only cookies. The expiration date is the date when the cookie should be deleted.
 
 ## See Also
 
-- [var isSessionOnly: Bool](httpcookie/issessiononly.md)
+### Determining cookie lifespan
+- [var isSessionOnly: Bool](./issessiononly.md)
   A Boolean value that indicates whether the cookie should be discarded at the end of the session (regardless of expiration date).
 
 

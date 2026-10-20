@@ -1,7 +1,8 @@
 # CKShare.Participant
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that describes a user’s participation in a share.
 
@@ -20,83 +21,88 @@ An object that describes a user’s participation in a share.
 class Participant
 ```
 
+```objc
+@interface CKShareParticipant : NSObject
+```
+
 #### Overview
 
 Participants are a key element of sharing in CloudKit. A participant provides information about an iCloud user and their participation in a share, including their identity, acceptance status, permissions, and role.
 
-The acceptance status determines the participant’s visibility of the shared records. Statuses are: `pending`, `accepted`, `removed`, and `unknown`. If the status is `pending`, use [`CKAcceptSharesOperation`](ckacceptsharesoperation.md) to accept the share. Upon acceptance, CloudKit makes the shared records available in the participant’s shared database. The records remain accessible for as long as the participant’s status is `accepted`.
+The acceptance status determines the participant’s visibility of the shared records. Statuses are: `pending`, `accepted`, `removed`, and `unknown`. If the status is `pending`, use [`CKAcceptSharesOperation`](../ckacceptsharesoperation.md) to accept the share. Upon acceptance, CloudKit makes the shared records available in the participant’s shared database. The records remain accessible for as long as the participant’s status is `accepted`.
 
-You don’t create participants. Use the share’s [`participants`](ckshare/participants.md) property to access its existing participants. Use [`UICloudSharingController`](https://developer.apple.com/documentation/uikit/uicloudsharingcontroller) to manage the share’s participants and their permissions. Alternatively, you can generate participants using [`CKFetchShareParticipantsOperation`](ckfetchshareparticipantsoperation.md). Participants must have an active iCloud account.
+You don’t create participants. Use the share’s [`participants`](./participants.md) property to access its existing participants. Use [`UICloudSharingController`](../../UIKit/uicloudsharingcontroller.md) to manage the share’s participants and their permissions. Alternatively, you can generate participants using [`CKFetchShareParticipantsOperation`](../ckfetchshareparticipantsoperation.md). Participants must have an active iCloud account.
 
-Anyone with the URL of a public share can become a participant in that share. Participants of a public share assume the `publicUser` role. For private shares, the owner manages the participants. An owner is any participant with the `owner` role. A participant of a private share can’t accept the share unless the owner adds them first. Private share participants assume the `privateUser` role. CloudKit removes any pending participants if the owner changes the share’s [`publicPermission`](ckshare/publicpermission.md). CloudKit removes all participants if the new permission is `none`.
+Anyone with the URL of a public share can become a participant in that share. Participants of a public share assume the `publicUser` role. For private shares, the owner manages the participants. An owner is any participant with the `owner` role. A participant of a private share can’t accept the share unless the owner adds them first. Private share participants assume the `privateUser` role. CloudKit removes any pending participants if the owner changes the share’s [`publicPermission`](./publicpermission.md). CloudKit removes all participants if the new permission is `none`.
 
 Participants with write permissions can modify or delete any record that you include in the share. However, only the owner can delete a shared hierarchy’s root record. If a participant attempts to delete the share, CloudKit removes the participant. The share remains active for all other participants.
 
 ## Topics
 
 ### Accessing the Participant’s Status
-- [var acceptanceStatus: CKShare.ParticipantAcceptanceStatus](ckshare/participant/acceptancestatus-swift.property.md)
+- [var acceptanceStatus: CKShare.ParticipantAcceptanceStatus](./participant/acceptancestatus-swift.property.md)
   The current state of the user’s acceptance of the share.
-- [CKShare.Participant.AcceptanceStatus](ckshare/participant/acceptancestatus-swift.typealias.md)
+- [CKShare.Participant.AcceptanceStatus](./participant/acceptancestatus-swift.typealias.md)
   A type that represents the acceptance status of the participant.
-- [CKShare.ParticipantAcceptanceStatus](ckshare/participantacceptancestatus.md)
+- [CKShare.ParticipantAcceptanceStatus](./participantacceptancestatus.md)
   Constants that represent the status of a participant.
 ### Accessing the Participant’s Identity
-- [var userIdentity: CKUserIdentity](ckshare/participant/useridentity.md)
+- [var userIdentity: CKUserIdentity](./participant/useridentity.md)
   The identity of the participant.
 ### Managing the Participant’s Capabilites
-- [var permission: CKShare.ParticipantPermission](ckshare/participant/permission-swift.property.md)
+- [var permission: CKShare.ParticipantPermission](./participant/permission-swift.property.md)
   The participant’s permission level for the share.
-- [CKShare.Participant.Permission](ckshare/participant/permission-swift.typealias.md)
+- [CKShare.Participant.Permission](./participant/permission-swift.typealias.md)
   A type that represents the permissions for a participant.
-- [CKShare.ParticipantPermission](ckshare/participantpermission.md)
+- [CKShare.ParticipantPermission](./participantpermission.md)
   Constants that represent the permissions to grant to a share participant.
-- [var role: CKShare.ParticipantRole](ckshare/participant/role-swift.property.md)
+- [var role: CKShare.ParticipantRole](./participant/role-swift.property.md)
   The participant’s role for the share.
-- [CKShare.Participant.Role](ckshare/participant/role-swift.typealias.md)
+- [CKShare.Participant.Role](./participant/role-swift.typealias.md)
   A type that represents the role for a participant.
-- [CKShare.ParticipantRole](ckshare/participantrole.md)
+- [CKShare.ParticipantRole](./participantrole.md)
   Constants that represent the role of a share’s participant.
 ### Deprecated
-- [Deprecated Symbols](participant-deprecated-symbols.md)
+- [Deprecated Symbols](../participant-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Initializers
-- [init?(coder: NSCoder)](ckshare/participant/init(coder:).md)
+- [init?(coder: NSCoder)](./participant/init%28coder%29.md)
 ### Instance Properties
-- [var dateAddedToShare: Date?](ckshare/participant/dateaddedtoshare.md)
+- [var dateAddedToShare: Date?](./participant/dateaddedtoshare.md)
   The date and time when an originator or administrator added this participant to the share.
-- [var isApprovedRequester: Bool](ckshare/participant/isapprovedrequester.md)
+- [var isApprovedRequester: Bool](./participant/isapprovedrequester.md)
   Indicates whether the participant was originally a requester that an originator or administrator approved to join the share.
-- [var participantID: CKShare.Participant.ID](ckshare/participant/participantid.md)
+- [var participantID: CKShare.Participant.ID](./participant/participantid.md)
 ### Instance Methods
-- [func isEqual(Any) -> Bool](ckshare/participant/isequal(_:).md)
+- [func isEqual(Any) -> Bool](./participant/isequal%28_%29.md)
   Compares two `CKShareParticipant` objects for person identity equality.
 ### Type Aliases
-- [CKShare.Participant.ID](ckshare/participant/id.md)
+- [CKShare.Participant.ID](./participant/id.md)
 ### Type Methods
-- [class func oneTimeURLParticipant() -> Self](ckshare/participant/onetimeurlparticipant.md)
+- [class func oneTimeURLParticipant() -> Self](./participant/onetimeurlparticipant%28%29.md)
   Generate a unique URL for inviting a participant without knowing their handle
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSCoding](../../Foundation/nscoding.md)
+- [NSCopying](../../Foundation/nscopying.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../../Foundation/nssecurecoding.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CKFetchShareParticipantsOperation](ckfetchshareparticipantsoperation.md)
+### Participants
+- [class CKFetchShareParticipantsOperation](../ckfetchshareparticipantsoperation.md)
   An operation that converts user identities into share participants.
 
 

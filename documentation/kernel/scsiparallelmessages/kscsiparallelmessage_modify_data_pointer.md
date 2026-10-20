@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_MODIFY_DATA_POINTER
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_MODIFY_DATA_POINTER = 0x00
 ```
 

@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies your protocol about a new outbound message.
@@ -23,7 +24,7 @@ func handleOutput(framer: NWProtocolFramer.Instance, message: NWProtocolFramer.M
 
 #### Discussion
 
-The output handler is your opportunity to encapsulate or encode a signle application message. You should write any output using [`writeOutput(data:)`](nwprotocolframer/instance/writeoutput(data:)-ydvk.md) or [`writeOutputNoCopy(length:)`](nwprotocolframer/instance/writeoutputnocopy(length:).md) before returning from the output handler. If you do not write a message, the application message will be discarded.
+The output handler is your opportunity to encapsulate or encode a signle application message. You should write any output using [`writeOutput(data:)`](../nwprotocolframer/instance/writeoutput%28data%29-ydvk.md) or [`writeOutputNoCopy(length:)`](../nwprotocolframer/instance/writeoutputnocopy%28length%29.md) before returning from the output handler. If you do not write a message, the application message will be discarded.
 
 ## Parameters
 
@@ -34,7 +35,8 @@ The output handler is your opportunity to encapsulate or encode a signle applica
 
 ## See Also
 
-- [func handleInput(framer: NWProtocolFramer.Instance) -> Int](nwprotocolframerimplementation/handleinput(framer:).md)
+### Handling Data
+- [func handleInput(framer: NWProtocolFramer.Instance) -> Int](./handleinput%28framer%29.md)
   Notifies your protocol that new inbound data is available to parse.
 
 

@@ -1,7 +1,8 @@
 # playbackLength
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Playback length of RCS Recorded Audio Message (RRAM).
 
@@ -16,15 +17,16 @@ var playbackLength: Duration?
 
 ## See Also
 
-- [let url: URL](rcsfiletransfermetadata/url.md)
+### Accessing file metadata
+- [let url: URL](./url.md)
   The URL for the file.
-- [let fileName: String?](rcsfiletransfermetadata/filename.md)
+- [let fileName: String?](./filename.md)
   The original name of file.
-- [let fileSize: Int](rcsfiletransfermetadata/filesize.md)
+- [let fileSize: Int](./filesize.md)
   The size of the file in bytes.
-- [let contentType: UTType?](rcsfiletransfermetadata/contenttype.md)
+- [let contentType: UTType?](./contenttype.md)
   The content type of the file.
-- [let expirationDate: Date](rcsfiletransfermetadata/expirationdate.md)
+- [let expirationDate: Date](./expirationdate.md)
   The expiration date of the file.
 
 

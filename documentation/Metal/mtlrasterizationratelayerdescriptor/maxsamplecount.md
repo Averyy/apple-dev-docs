@@ -1,7 +1,8 @@
 # maxSampleCount
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum number of rows and columns in the layer map.
 
@@ -19,19 +20,24 @@ The maximum number of rows and columns in the layer map.
 var maxSampleCount: MTLSize { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MTLSize maxSampleCount;
+```
+
 #### Discussion
 
-Its [`depth`](mtlsize/depth.md) value is always `0`.
+Its [`depth`](../mtlsize/depth.md) value is always `0`.
 
 ## See Also
 
-- [var sampleCount: MTLSize](mtlrasterizationratelayerdescriptor/samplecount.md)
+### Inspecting the layer rate function parameters
+- [var sampleCount: MTLSize](./samplecount.md)
   The number of rows and columns in the layer map.
-- [var horizontal: MTLRasterizationRateSampleArray](mtlrasterizationratelayerdescriptor/horizontal.md)
+- [var horizontal: MTLRasterizationRateSampleArray](./horizontal.md)
   The horizontal rasterization rates for the layer map’s rows.
-- [var vertical: MTLRasterizationRateSampleArray](mtlrasterizationratelayerdescriptor/vertical.md)
+- [var vertical: MTLRasterizationRateSampleArray](./vertical.md)
   The vertical rasterization rates for the layer map’s rows.
-- [class MTLRasterizationRateSampleArray](mtlrasterizationratesamplearray.md)
+- [class MTLRasterizationRateSampleArray](../mtlrasterizationratesamplearray.md)
   An array instance that contains rasterization rates.
 
 

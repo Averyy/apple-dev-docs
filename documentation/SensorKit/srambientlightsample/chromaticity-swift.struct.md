@@ -1,7 +1,8 @@
 # SRAmbientLightSample.Chromaticity
 
 **Framework**: SensorKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A coordinate pair that describes light brightness and tint.
 
@@ -16,38 +17,43 @@ A coordinate pair that describes light brightness and tint.
 struct Chromaticity
 ```
 
+```c
+typedef struct { ... } SRAmbientLightChromaticity;
+```
+
 #### Overview
 
-The [`SRAmbientLightSample`](srambientlightsample.md) class provides read-only access to an instance of this structure through its [`chromaticity`](srambientlightsample/chromaticity-swift.property.md) property.
+The [`SRAmbientLightSample`](../srambientlightsample.md) class provides read-only access to an instance of this structure through its [`chromaticity`](./chromaticity-swift.property.md) property.
 
 ## Topics
 
 ### Creating a Chromaticity
-- [init()](srambientlightsample/chromaticity-swift.struct/init.md)
+- [init()](./chromaticity-swift.struct/init%28%29.md)
   Creates a chromaticity instance.
-- [init(x: Float32, y: Float32)](srambientlightsample/chromaticity-swift.struct/init(x:y:).md)
+- [init(x: Float32, y: Float32)](./chromaticity-swift.struct/init%28x,y%29.md)
   Creates a chromaticity instance from the argument coordinate pair.
 ### Setting chromaticity
-- [var x: Float32](srambientlightsample/chromaticity-swift.struct/x.md)
+- [var x: Float32](./chromaticity-swift.struct/x.md)
   The chromaticity x-value.
-- [var y: Float32](srambientlightsample/chromaticity-swift.struct/y.md)
+- [var y: Float32](./chromaticity-swift.struct/y.md)
   The chromaticity y-value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Sendable](../../Swift/sendable.md)
 
 ## See Also
 
-- [var chromaticity: SRAmbientLightSample.Chromaticity](srambientlightsample/chromaticity-swift.property.md)
+### Measuring light level
+- [var chromaticity: SRAmbientLightSample.Chromaticity](./chromaticity-swift.property.md)
   A coordinate pair that describes the sample’s light brightness and tint.
-- [var lux: Measurement<UnitIlluminance>](srambientlightsample/lux.md)
+- [var lux: Measurement<UnitIlluminance>](./lux.md)
   An object that describes the sample’s luminous flux.
-- [var placement: SRAmbientLightSample.SensorPlacement](srambientlightsample/placement.md)
+- [var placement: SRAmbientLightSample.SensorPlacement](./placement.md)
   The light’s location relative to the sensor.
-- [SRAmbientLightSample.SensorPlacement](srambientlightsample/sensorplacement.md)
+- [SRAmbientLightSample.SensorPlacement](./sensorplacement.md)
   Directional values that describe light-source location with respect to the sensor.
 
 

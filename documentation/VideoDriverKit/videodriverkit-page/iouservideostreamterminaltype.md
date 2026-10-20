@@ -1,7 +1,8 @@
 # IOUserVideoStreamTerminalType
 
 **Framework**: VideoDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The terminal type of video stream.
 
@@ -10,45 +11,46 @@ The terminal type of video stream.
 
 ## Declaration
 
-```swift
+```c
 enum IOUserVideoStreamTerminalType : uint32_t;
 ```
 
 ## Topics
 
 ### Terminal types
-- [Line](videodriverkit/iouservideostreamterminaltype/line.md)
+- [Line](./iouservideostreamterminaltype/line.md)
   The identifier for a terminal type of a line level stream.
-- [DigitalVideoInterface](videodriverkit/iouservideostreamterminaltype/digitalvideointerface.md)
+- [DigitalVideoInterface](./iouservideostreamterminaltype/digitalvideointerface.md)
   The ID for a terminal type of stream from/to a digital audio interface as defined by ISO 60958 (aka SPDIF or AES/EBU).
-- [Speaker](videodriverkit/iouservideostreamterminaltype/speaker.md)
+- [Speaker](./iouservideostreamterminaltype/speaker.md)
   The identifier for a terminal type of a speaker.
-- [Headphones](videodriverkit/iouservideostreamterminaltype/headphones.md)
+- [Headphones](./iouservideostreamterminaltype/headphones.md)
   The identifier for a terminal type of headphones.
-- [LFESpeaker](videodriverkit/iouservideostreamterminaltype/lfespeaker.md)
+- [LFESpeaker](./iouservideostreamterminaltype/lfespeaker.md)
   The identifier for a terminal type of a speaker for low frequency effects.
-- [ReceiverSpeaker](videodriverkit/iouservideostreamterminaltype/receiverspeaker.md)
+- [ReceiverSpeaker](./iouservideostreamterminaltype/receiverspeaker.md)
   The identifier for a terminal type of a speaker on a telephone handset receiver.
-- [Microphone](videodriverkit/iouservideostreamterminaltype/microphone.md)
+- [Microphone](./iouservideostreamterminaltype/microphone.md)
   The identifier for a terminal type of a microphone.
-- [HeadsetMicrophone](videodriverkit/iouservideostreamterminaltype/headsetmicrophone.md)
+- [HeadsetMicrophone](./iouservideostreamterminaltype/headsetmicrophone.md)
   The identifier for a terminal type of a microphone attached to an headset.
-- [ReceiverMicrophone](videodriverkit/iouservideostreamterminaltype/receivermicrophone.md)
+- [ReceiverMicrophone](./iouservideostreamterminaltype/receivermicrophone.md)
   The identifier for a terminal type of a microphone on a telephone handset receiver.
-- [TTY](videodriverkit/iouservideostreamterminaltype/tty.md)
+- [TTY](./iouservideostreamterminaltype/tty.md)
   The identifier for a terminal type of a device providing a TTY signal.
-- [HDMI](videodriverkit/iouservideostreamterminaltype/hdmi.md)
+- [HDMI](./iouservideostreamterminaltype/hdmi.md)
   The identifier for a terminal type of a stream from/to an HDMI port.
-- [DisplayPort](videodriverkit/iouservideostreamterminaltype/displayport.md)
+- [DisplayPort](./iouservideostreamterminaltype/displayport.md)
   The identifier for a terminal type of a stream from/to an DisplayPort port.
-- [Unknown](videodriverkit/iouservideostreamterminaltype/unknown.md)
+- [Unknown](./iouservideostreamterminaltype/unknown.md)
   The identifier used when the terminal type for the stream is not known.
 
 ## See Also
 
-- [SetTerminalType](iouservideostream/setterminaltype.md)
+### Working with stream terminals
+- [SetTerminalType](../iouservideostream/setterminaltype.md)
   Sets the terminal type of the stream.
-- [GetTerminalType](iouservideostream/getterminaltype.md)
+- [GetTerminalType](../iouservideostream/getterminaltype.md)
   Gets the terminal type of the stream.
 
 

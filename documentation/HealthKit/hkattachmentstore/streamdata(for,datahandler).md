@@ -1,7 +1,8 @@
 # streamData(for:dataHandler:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asynchronously returns the attachment’s data.
 
@@ -17,6 +18,10 @@ Asynchronously returns the attachment’s data.
 
 ```swift
 func streamData(for attachment: HKAttachment, dataHandler: @escaping (Data?, (any Error)?, Bool) -> Void) -> Progress
+```
+
+```objc
+- (NSProgress *) streamDataForAttachment:(HKAttachment *) attachment dataHandler:(void (^)(NSData *dataChunk, NSError *error, BOOL done)) dataHandler;
 ```
 
 #### Discussion
@@ -46,17 +51,20 @@ attachmentStore.streamData(for: myAttachment) { dataChunk, error, done in
 ## Parameters
 
 - `attachment`: An attachment associated with an object in the HealthKit store.
-- `dataHandler`: A closure that the system calls repeatedly to return the attachment’s contents. This closure takes the following parameters: - **dataChunk**: A data object that contains the next chunk of the attachment’s contents. If an error occurred, the system sets this property to `nil`.
-- **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
-- **done**: A Boolean value that indicates whether the transfer is complete. If this is the last `dataChunk`, the system sets this property to [`true`](https://developer.apple.com/documentation/swift/true).
+- `dataHandler`: A closure that the system calls repeatedly to return the attachment’s contents. This closure takes the following parameters:
+
+  - **dataChunk**: A data object that contains the next chunk of the attachment’s contents. If an error occurred, the system sets this property to `nil`.
+  - **error**: If an error occurred, this parameter contains information about the error. Otherwise, it’s `nil`.
+  - **done**: A Boolean value that indicates whether the transfer is complete. If this is the last `dataChunk`, the system sets this property to [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [func getAttachments(for: HKObject, completion: ([HKAttachment]?, (any Error)?) -> Void)](hkattachmentstore/getattachments(for:completion:).md)
+### Accessing attachments
+- [func getAttachments(for: HKObject, completion: ([HKAttachment]?, (any Error)?) -> Void)](./getattachments%28for,completion%29.md)
   Returns all the attachments for the specified object.
-- [func dataReader(for: HKAttachment) -> HKAttachmentDataReader](hkattachmentstore/datareader(for:).md)
+- [func dataReader(for: HKAttachment) -> HKAttachmentDataReader](./datareader%28for%29.md)
   Returns a data reader for the attachment.
-- [func getData(for: HKAttachment, completion: (Data?, (any Error)?) -> Void) -> Progress](hkattachmentstore/getdata(for:completion:).md)
+- [func getData(for: HKAttachment, completion: (Data?, (any Error)?) -> Void) -> Progress](./getdata%28for,completion%29.md)
   Returns an attachment’s data.
 
 

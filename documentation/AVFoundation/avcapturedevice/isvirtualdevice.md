@@ -1,7 +1,8 @@
 # isVirtualDevice
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device consists of two or more physical devices.
 
@@ -17,6 +18,10 @@ A Boolean value that indicates whether the device consists of two or more physic
 var isVirtualDevice: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isVirtualDevice) BOOL virtualDevice;
+```
+
 #### Discussion
 
 Examples of virtual devices are:
@@ -26,13 +31,14 @@ Examples of virtual devices are:
 
 ## See Also
 
-- [var constituentDevices: [AVCaptureDevice]](avcapturedevice/constituentdevices.md)
+### Inspecting device characteristics
+- [var constituentDevices: [AVCaptureDevice]](./constituentdevices.md)
   An array of physical devices that make up a virtual device.
-- [func hasMediaType(AVMediaType) -> Bool](avcapturedevice/hasmediatype(_:).md)
+- [func hasMediaType(AVMediaType) -> Bool](./hasmediatype%28_%29.md)
   Returns a Boolean value that indicates whether the device captures media of a particular type.
-- [var transportType: Int32](avcapturedevice/transporttype.md)
+- [var transportType: Int32](./transporttype.md)
   The transport type of the device.
-- [func supportsSessionPreset(AVCaptureSession.Preset) -> Bool](avcapturedevice/supportssessionpreset(_:).md)
+- [func supportsSessionPreset(AVCaptureSession.Preset) -> Bool](./supportssessionpreset%28_%29.md)
   Returns a Boolean value that indicates whether you can use the device with capture session configured with the specified preset.
 
 

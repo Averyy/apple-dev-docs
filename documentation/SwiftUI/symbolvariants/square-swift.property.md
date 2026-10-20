@@ -1,7 +1,8 @@
 # square
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A version of the variant that’s encapsulated in a square.
 
@@ -22,24 +23,25 @@ var square: SymbolVariants { get }
 
 #### Discussion
 
-Use this property to modify a variant like [`fill`](symbolvariants/fill-swift.property.md) so that it’s also contained in a square:
+Use this property to modify a variant like [`fill`](./fill-swift.property.md) so that it’s also contained in a square:
 
 ```swift
 Label("Fill Square", systemImage: "star")
     .symbolVariant(.fill.square)
 ```
 
-![A screenshot of a label that shows a star in a filled square](/images/com.apple.SwiftUI/SymbolVariants-square-2@2x.png)
+![A screenshot of a label that shows a star in a filled square](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SymbolVariants-square-2@2x.png)
 
 ## See Also
 
-- [var circle: SymbolVariants](symbolvariants/circle-swift.property.md)
+### Modifying a variant
+- [var circle: SymbolVariants](./circle-swift.property.md)
   A version of the variant that’s encapsulated in a circle.
-- [var rectangle: SymbolVariants](symbolvariants/rectangle-swift.property.md)
+- [var rectangle: SymbolVariants](./rectangle-swift.property.md)
   A version of the variant that’s encapsulated in a rectangle.
-- [var fill: SymbolVariants](symbolvariants/fill-swift.property.md)
+- [var fill: SymbolVariants](./fill-swift.property.md)
   A filled version of the variant.
-- [var slash: SymbolVariants](symbolvariants/slash-swift.property.md)
+- [var slash: SymbolVariants](./slash-swift.property.md)
   A slashed version of the variant.
 
 

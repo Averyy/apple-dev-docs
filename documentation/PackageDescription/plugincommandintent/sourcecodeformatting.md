@@ -1,7 +1,8 @@
 # PluginCommandIntent.sourceCodeFormatting
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The plug-in formats source code.
 

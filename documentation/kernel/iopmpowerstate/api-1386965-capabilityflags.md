@@ -1,7 +1,8 @@
 # capabilityFlags
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Describes the capability of the device in this state.
 
@@ -10,7 +11,7 @@ Describes the capability of the device in this state.
 
 ## Declaration
 
-```swift
+```c
 IOPMPowerFlags capabilityFlags;
 ```
 

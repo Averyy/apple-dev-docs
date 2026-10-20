@@ -1,7 +1,8 @@
 # GetTerminalType
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the terminal type of the stream.
 
@@ -10,7 +11,7 @@ Gets the terminal type of the stream.
 
 ## Declaration
 
-```swift
+```c
 IOUserAudioStreamTerminalType GetTerminalType();
 ```
 
@@ -24,9 +25,10 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [SetTerminalType](iouseraudiostream/setterminaltype.md)
+### Working with Stream Terminals
+- [SetTerminalType](./setterminaltype.md)
   Sets the terminal type of the stream.
-- [IOUserAudioStreamTerminalType](audiodriverkit/iouseraudiostreamterminaltype.md)
+- [IOUserAudioStreamTerminalType](../audiodriverkit-page/iouseraudiostreamterminaltype.md)
   Constants that describe the terminal type of an audio stream.
 
 

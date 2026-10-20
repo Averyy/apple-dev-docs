@@ -1,7 +1,8 @@
 # SecTrustResultType.proceed
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user granted permission to trust the certificate for the purposes designated in the specified policies.
 
@@ -18,6 +19,10 @@ The user granted permission to trust the certificate for the purposes designated
 
 ```swift
 case proceed
+```
+
+```c
+kSecTrustResultProceed
 ```
 
 #### Discussion

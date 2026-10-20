@@ -1,12 +1,13 @@
 # numberOfRows(in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of records managed for `aTableView` by the data source object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,17 @@ Returns the number of records managed for `aTableView` by the data source object
 optional func numberOfRows(in tableView: NSTableView) -> Int
 ```
 
+```objc
+- (NSInteger) numberOfRowsInTableView:(NSTableView *) tableView;
+```
+
 #### Return Value
 
 The number of rows in `aTableView`.
 
 #### Discussion
 
-An instance of [`NSTableView`](nstableview.md) uses this method to determine how many rows it should create and display. Your [`numberOfRows(in:)`](nstableviewdatasource/numberofrows(in:).md) implementation is called very frequently, so it must be efficient.
+An instance of [`NSTableView`](../nstableview.md) uses this method to determine how many rows it should create and display. Your [`numberOfRows(in:)`](./numberofrows%28in%29.md) implementation is called very frequently, so it must be efficient.
 
 Both view-based table views and cell-based table views must implement this method.
 
@@ -33,9 +38,11 @@ Both view-based table views and cell-based table views must implement this metho
 
 ## See Also
 
-- [class NSTableView](nstableview.md)
+### Related Documentation
+- [class NSTableView](../nstableview.md)
   A set of related records, displayed in rows that represent individual records and columns that represent the attributes of those records.
-- [func tableView(NSTableView, objectValueFor: NSTableColumn?, row: Int) -> Any?](nstableviewdatasource/tableview(_:objectvaluefor:row:).md)
+### Getting Values
+- [func tableView(NSTableView, objectValueFor: NSTableColumn?, row: Int) -> Any?](./tableview%28_,objectvaluefor,row%29.md)
   Called by the table view to return the data object associated with the specified row and column.
 
 

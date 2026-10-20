@@ -2,6 +2,7 @@
 
 **Framework**: Core Animation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Specifies the begin time of the receiver in relation to its parent object, if applicable.
@@ -20,14 +21,20 @@ Specifies the begin time of the receiver in relation to its parent object, if ap
 var beginTime: CFTimeInterval { get set }
 ```
 
+```objc
+@property CFTimeInterval beginTime;
+```
+
 #### Discussion
 
 Defaults to 0.
 
 ## See Also
 
-- [Core Animation Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
-- [var timeOffset: CFTimeInterval](camediatiming/timeoffset.md)
+### Related Documentation
+- [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514)
+### Animation Start Time
+- [var timeOffset: CFTimeInterval](./timeoffset.md)
   Specifies an additional time offset in active local time.
 
 

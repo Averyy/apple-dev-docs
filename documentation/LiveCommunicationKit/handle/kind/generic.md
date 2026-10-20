@@ -1,7 +1,8 @@
 # Handle.Kind.generic
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An unspecified handle type.
 
@@ -20,9 +21,10 @@ case generic
 
 ## See Also
 
-- [Handle.Kind.emailAddress](handle/kind/emailaddress.md)
+### Types
+- [Handle.Kind.emailAddress](./emailaddress.md)
   An email address.
-- [Handle.Kind.phoneNumber](handle/kind/phonenumber.md)
+- [Handle.Kind.phoneNumber](./phonenumber.md)
   A phone number.
 
 

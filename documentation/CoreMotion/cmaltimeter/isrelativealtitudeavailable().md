@@ -1,7 +1,8 @@
 # isRelativeAltitudeAvailable()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value indicating whether the current device supports generating data for relative altitude changes.
 
@@ -17,21 +18,26 @@ Returns a Boolean value indicating whether the current device supports generatin
 class func isRelativeAltitudeAvailable() -> Bool
 ```
 
+```objc
++ (BOOL) isRelativeAltitudeAvailable;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the device supports relative altitude changes or [`false`](https://developer.apple.com/documentation/swift/false) if it does not.
+[`true`](../../Swift/true.md) if the device supports relative altitude changes or [`false`](../../Swift/false.md) if it does not.
 
 #### Discussion
 
-Use this method to determine if altitude updates are available before calling the [`startRelativeAltitudeUpdates(to:withHandler:)`](cmaltimeter/startrelativealtitudeupdates(to:withhandler:).md) method.
+Use this method to determine if altitude updates are available before calling the [`startRelativeAltitudeUpdates(to:withHandler:)`](./startrelativealtitudeupdates%28to,withhandler%29.md) method.
 
 ## See Also
 
-- [class func isAbsoluteAltitudeAvailable() -> Bool](cmaltimeter/isabsolutealtitudeavailable.md)
+### Determining Altitude Availability
+- [class func isAbsoluteAltitudeAvailable() -> Bool](./isabsolutealtitudeavailable%28%29.md)
   Returns a Boolean value indicating whether the current device reports changes in the absolute altitude.
-- [class func authorizationStatus() -> CMAuthorizationStatus](cmaltimeter/authorizationstatus.md)
+- [class func authorizationStatus() -> CMAuthorizationStatus](./authorizationstatus%28%29.md)
   Returns a value indicating whether the app is authorized to retrieve altimeter data.
-- [enum CMAuthorizationStatus](cmauthorizationstatus.md)
+- [enum CMAuthorizationStatus](../cmauthorizationstatus.md)
   The authorization status for motion-related features.
 
 

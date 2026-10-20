@@ -1,7 +1,8 @@
 # init(containerClassDescription:containerSpecifier:key:test:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns an `NSWhoseSpecifier` object initialized with the given attributes.
 
@@ -15,13 +16,17 @@ Returns an `NSWhoseSpecifier` object initialized with the given attributes.
 init(containerClassDescription classDesc: NSScriptClassDescription, containerSpecifier container: NSScriptObjectSpecifier?, key property: String, test: NSScriptWhoseTest)
 ```
 
+```objc
+- (instancetype) initWithContainerClassDescription:(NSScriptClassDescription *) classDesc containerSpecifier:(NSScriptObjectSpecifier *) container key:(NSString *) property test:(NSScriptWhoseTest *) test;
+```
+
 #### Return Value
 
 An `NSWhoseSpecifier` object initialized with the given attributes.
 
 #### Discussion
 
-Invokes the super class’s [`init(containerClassDescription:containerSpecifier:key:)`](nsscriptobjectspecifier/init(containerclassdescription:containerspecifier:key:).md) and sets the whose test condition to `test`.
+Invokes the super class’s [`init(containerClassDescription:containerSpecifier:key:)`](../nsscriptobjectspecifier/init%28containerclassdescription,containerspecifier,key%29.md) and sets the whose test condition to `test`.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ Invokes the super class’s [`init(containerClassDescription:containerSpecifier:
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
 
 
 ---

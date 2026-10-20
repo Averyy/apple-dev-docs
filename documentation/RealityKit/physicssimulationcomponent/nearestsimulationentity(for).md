@@ -1,7 +1,8 @@
 # nearestSimulationEntity(for:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Obtains the entity containing the physics simulation origin.
 
@@ -25,7 +26,7 @@ The entity containing the physics simulation origin or `nil` if the entity doesn
 
 #### Discussion
 
-The simulation origin is the nearest parent object where a [`PhysicsSimulationComponent`](physicssimulationcomponent.md) exists, or the root entity (normally the anchor) where the default simulation is embedded.
+The simulation origin is the nearest parent object where a [`PhysicsSimulationComponent`](../physicssimulationcomponent.md) exists, or the root entity (normally the anchor) where the default simulation is embedded.
 
 ## Parameters
 

@@ -1,20 +1,33 @@
 # Open
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 var Open: (UnsafeMutableRawPointer, AudioComponentInstance) -> OSStatus
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```c
+int (*)(void *, struct OpaqueAudioComponentInstance *) Open;
+```
+
+*macOS*
+
+```c
+int (*)(void *, struct ComponentInstanceRecord *) Open;
 ```
 
 

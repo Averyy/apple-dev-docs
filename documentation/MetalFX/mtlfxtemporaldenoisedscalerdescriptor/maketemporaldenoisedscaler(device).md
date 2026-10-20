@@ -1,7 +1,8 @@
 # makeTemporalDenoisedScaler(device:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a denoiser scaler instance for a Metal device.
 
@@ -16,6 +17,10 @@ Creates a denoiser scaler instance for a Metal device.
 
 ```swift
 func makeTemporalDenoisedScaler(device: any MTLDevice) -> (any MTLFXTemporalDenoisedScaler)?
+```
+
+```objc
+- (id<MTLFXTemporalDenoisedScaler>) newTemporalDenoisedScalerWithDevice:(id<MTLDevice>) device;
 ```
 
 #### Return Value

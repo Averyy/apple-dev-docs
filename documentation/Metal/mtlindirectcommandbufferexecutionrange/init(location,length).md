@@ -1,7 +1,8 @@
 # init(location:length:)
 
 **Framework**: Metal  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an command execution range.
 
@@ -26,9 +27,10 @@ init(location: UInt32, length: UInt32)
 
 ## See Also
 
-- [init()](mtlindirectcommandbufferexecutionrange/init.md)
+### Creating a command execution range
+- [init()](./init%28%29.md)
   Initializes an empty command execution range.
-- [func MTLIndirectCommandBufferExecutionRangeMake(UInt32, UInt32) -> MTLIndirectCommandBufferExecutionRange](mtlindirectcommandbufferexecutionrangemake(_:_:).md)
+- [func MTLIndirectCommandBufferExecutionRangeMake(UInt32, UInt32) -> MTLIndirectCommandBufferExecutionRange](../mtlindirectcommandbufferexecutionrangemake%28_,_%29.md)
   Creates a command execution range.
 
 

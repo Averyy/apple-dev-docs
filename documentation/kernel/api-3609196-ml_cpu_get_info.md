@@ -1,14 +1,15 @@
 # ml_cpu_get_info
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_cpu_get_info(ml_cpu_info_t *ml_cpu_info);
 ```
 

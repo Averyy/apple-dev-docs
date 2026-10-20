@@ -1,12 +1,13 @@
 # replaceLabel(at:withLabel:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the label at the given index.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Replaces the label at the given index.
 func replaceLabel(at index: Int, withLabel label: String!) -> Bool
 ```
 
+```objc
+- (BOOL) replaceLabelAtIndex:(NSUInteger) index withLabel:(NSString *) label;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -29,7 +34,8 @@ If the label is `nil` or if the index is out of bounds, this method raises an ex
 
 ## See Also
 
-- [func replace(at: Int, withValue: Any!) -> Bool](abmutablemultivalue-swift.class/replace(at:withvalue:).md)
+### Replacing values and labels
+- [func replace(at: Int, withValue: Any!) -> Bool](./replace%28at,withvalue%29.md)
   Replaces the value at the given index.
 
 

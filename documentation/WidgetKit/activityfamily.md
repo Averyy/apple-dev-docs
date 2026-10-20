@@ -1,7 +1,8 @@
 # ActivityFamily
 
 **Framework**: WidgetKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A family that defines the Live Activity’s size.
 
@@ -19,11 +20,11 @@ enum ActivityFamily
 
 Live Activities support one or more sizes, giving you the flexibility to configure them for different devices. A Live Activity renders for a specific family, depending on both the device and the location in which it’s displayed.
 
-A Live Activity initiated on one device can be sent to a remote device that renders the Live Activity at a different family size. For example, if your Live Activity is running on an iOS or iPadOS device, it natively renders with an [`ActivityFamily.medium`](activityfamily/medium.md) family. If you want to opt in to customize the rendering for a Live Activity for the watchOS Smart Stack, use the [`ActivityFamily.small`](activityfamily/small.md) family modifier.
+A Live Activity initiated on one device can be sent to a remote device that renders the Live Activity at a different family size. For example, if your Live Activity is running on an iOS or iPadOS device, it natively renders with an [`ActivityFamily.medium`](./activityfamily/medium.md) family. If you want to opt in to customize the rendering for a Live Activity for the watchOS Smart Stack, use the [`ActivityFamily.small`](./activityfamily/small.md) family modifier.
 
-When you define your Live Activity’s configuration, specify the sizes your Live Activity supports using the [`supplementalActivityFamilies(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/supplementalactivityfamilies(_:)) property modifier.
+When you define your Live Activity’s configuration, specify the sizes your Live Activity supports using the [`supplementalActivityFamilies(_:)`](../SwiftUI/widgetconfiguration/supplementalactivityfamilies%28_%29.md) property modifier.
 
-When you render the content of the Live Activity, use [`activityFamily`](https://developer.apple.com/documentation/swiftui/environmentvalues/activityfamily) to read the current family and lay out your content appropriately. The code below uses [`supplementalActivityFamilies(_:)`](https://developer.apple.com/documentation/swiftui/widgetconfiguration/supplementalactivityfamilies(_:)) to specify the size of the Live Activity for devices on iOS and watchOS.
+When you render the content of the Live Activity, use [`activityFamily`](../SwiftUI/environmentvalues/activityfamily.md) to read the current family and lay out your content appropriately. The code below uses [`supplementalActivityFamilies(_:)`](../SwiftUI/widgetconfiguration/supplementalactivityfamilies%28_%29.md) to specify the size of the Live Activity for devices on iOS and watchOS.
 
 ```swift
 // A RideSharingActivity that supports the watchOS Smart Stack and the iOS Lock Screen.
@@ -52,43 +53,44 @@ struct RideSharingActivity: Widget {
 ## Topics
 
 ### Accessing system families
-- [ActivityFamily.small](activityfamily/small.md)
+- [ActivityFamily.small](./activityfamily/small.md)
   A size family of a Live Activity on watchOS.
-- [ActivityFamily.medium](activityfamily/medium.md)
+- [ActivityFamily.medium](./activityfamily/medium.md)
   A size family of a Live Activity on iOS and macOS.
 ### Environment keys
-- [struct SupportedActivityFamiliesEnvironmentKey](supportedactivityfamiliesenvironmentkey.md)
+- [struct SupportedActivityFamiliesEnvironmentKey](./supportedactivityfamiliesenvironmentkey.md)
   An environment key for the size of a rendered Live Activity.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [Displaying live data with Live Activities](../activitykit/displaying-live-data-with-live-activities.md)
+### Live Activity setup
+- [Displaying live data with Live Activities](../ActivityKit/displaying-live-data-with-live-activities.md)
   Display up-to-date data and offer quick interactions in the Dynamic Island, on the Lock Screen, in CarPlay, and on a paired Mac or Apple Watch.
-- [ActivityKit](../activitykit/activitykit.md)
+- [ActivityKit](../ActivityKit/ActivityKit.md)
   Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch, and the Mac.
-- [Creating a widget extension](creating-a-widget-extension.md)
+- [Creating a widget extension](./creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
-- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
+- [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
-- [struct ActivityConfiguration](activityconfiguration.md)
+- [struct ActivityConfiguration](./activityconfiguration.md)
   An object that describes the content of a Live Activity.
-- [struct DynamicIsland](dynamicisland.md)
+- [struct DynamicIsland](./dynamicisland.md)
   The layout and configuration for a Live Activity that appears in the Dynamic Island.
-- [let NSUserActivityTypeLiveActivity: String](nsuseractivitytypeliveactivity.md)
+- [let NSUserActivityTypeLiveActivity: String](./nsuseractivitytypeliveactivity.md)
   A string that the system passes to the app on launch from a Live Activity that doesn’t provide a URL.
-- [enum ActivityPreviewViewKind](activitypreviewviewkind.md)
+- [enum ActivityPreviewViewKind](./activitypreviewviewkind.md)
   Values that represent Live Activity presentations for use in Xcode previews.
 
 

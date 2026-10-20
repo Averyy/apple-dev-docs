@@ -1,7 +1,8 @@
 # nodeType
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 The node type.
 
@@ -11,19 +12,20 @@ This field should contain either `kQTVRPanoramaType` or `kQTVRObjectType`.
 
 ## See Also
 
-- [majorVersion](node_header_atom/majorversion.md)
+### Data fields
+- [majorVersion](./majorversion.md)
   The major version number of the file format.
-- [minorVersion](node_header_atom/minorversion.md)
+- [minorVersion](./minorversion.md)
   The minor version number of the file format.
-- [nodeID](node_header_atom/nodeid.md)
+- [nodeID](./nodeid.md)
   The node ID.
-- [nameAtomID](node_header_atom/nameatomid.md)
+- [nameAtomID](./nameatomid.md)
   The ID of the string atom that contains the name of the node.
-- [commentAtomID](node_header_atom/commentatomid.md)
+- [commentAtomID](./commentatomid.md)
   The ID of the string atom that contains a comment for the node.
-- [reserved1](node_header_atom/reserved1.md)
+- [reserved1](./reserved1.md)
   Reserved.
-- [reserved2](node_header_atom/reserved2.md)
+- [reserved2](./reserved2.md)
   Reserved.
 
 

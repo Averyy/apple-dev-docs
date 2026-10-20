@@ -1,7 +1,8 @@
 # inputValues
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Initial values for the inputs declared in `shaderNodeGraph`.
 
@@ -21,9 +22,10 @@ var inputValues: [String : MaterialParameters.Value]
 
 ## See Also
 
-- [var shaderGraph: ShaderGraph](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/shadergraph.md)
+### Specifying the shader graph
+- [var shaderGraph: ShaderGraph](./shadergraph.md)
   The shader graph that describes the shading logic for this program.
-- [var constantValues: MTLFunctionConstantValues](shadergraphmaterial/program-swift.struct/descriptor-swift.struct/constantvalues.md)
+- [var constantValues: MTLFunctionConstantValues](./constantvalues.md)
   Values for the function constant inputs declared in `shaderNodeGraph`.
 
 

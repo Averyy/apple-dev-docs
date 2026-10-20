@@ -1,7 +1,8 @@
 # HistoryChange.delete(_:)
 
 **Framework**: SwiftData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates a delete operation.
 
@@ -23,9 +24,10 @@ case delete(any HistoryDelete)
 
 ## See Also
 
-- [case insert(any HistoryInsert)](historychange/insert(_:).md)
+### Operations
+- [case insert(any HistoryInsert)](./insert%28_%29.md)
   A value that indicates an insertion operation.
-- [case update(any HistoryUpdate)](historychange/update(_:).md)
+- [case update(any HistoryUpdate)](./update%28_%29.md)
   A value that indicates an update operation.
 
 

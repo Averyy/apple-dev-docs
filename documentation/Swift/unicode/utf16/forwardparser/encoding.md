@@ -1,7 +1,8 @@
 # Unicode.UTF16.ForwardParser.Encoding
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The encoding with which this parser is associated
 

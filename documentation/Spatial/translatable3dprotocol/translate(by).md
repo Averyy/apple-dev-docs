@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Translates the entity by the specified vector.
@@ -24,6 +25,12 @@ mutating func translate(by vector: Self.Vector)
 ## Parameters
 
 - `vector`: The vector that defines that translation.
+
+## Default Implementations
+
+### Translatable3DProtocol Implementations
+- [func translate(by: Self.Vector)](./translate%28by%29-6jnsq.md)
+  Translates the entity by the specified vector.
 
 
 ---

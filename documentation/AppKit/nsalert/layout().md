@@ -1,7 +1,8 @@
 # layout()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies that the alert must do immediate layout instead of lazily just before display.
 
@@ -14,6 +15,10 @@ Specifies that the alert must do immediate layout instead of lazily just before 
 func layout()
 ```
 
+```objc
+- (void) layout;
+```
+
 #### Discussion
 
 You need to call this method only when you need to customize the alert’s layout. Call this method after all the alert’s attributes have been customized, including the suppression checkbox and the accessory layout. After the method returns, you can make the necessary layout changes; for example, adjusting the frame of the accessory view.
@@ -22,17 +27,18 @@ You need to call this method only when you need to customize the alert’s layou
 
 ## See Also
 
-- [var alertStyle: NSAlert.Style](nsalert/alertstyle.md)
+### Configuring alerts
+- [var alertStyle: NSAlert.Style](./alertstyle.md)
   Indicates the alert’s severity level.
-- [NSAlert.Style](nsalert/style.md)
+- [NSAlert.Style](./style.md)
   The set of alert styles to style alerts in your app.
-- [var accessoryView: NSView?](nsalert/accessoryview.md)
+- [var accessoryView: NSView?](./accessoryview.md)
   The alert’s accessory view.
-- [var showsHelp: Bool](nsalert/showshelp.md)
+- [var showsHelp: Bool](./showshelp.md)
   Specifies whether the alert has a help button.
-- [var helpAnchor: NSHelpManager.AnchorName?](nsalert/helpanchor.md)
+- [var helpAnchor: NSHelpManager.AnchorName?](./helpanchor.md)
   The alert’s HTML help anchor.
-- [var delegate: (any NSAlertDelegate)?](nsalert/delegate.md)
+- [var delegate: (any NSAlertDelegate)?](./delegate.md)
   The alert’s delegate.
 
 

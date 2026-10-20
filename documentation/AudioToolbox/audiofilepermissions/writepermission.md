@@ -1,17 +1,18 @@
 # AudioFilePermissions.writePermission
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 File is write-only.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ File is write-only.
 case writePermission
 ```
 
+```c
+kAudioFileWritePermission
+```
+
 ## See Also
 
-- [AudioFilePermissions.readPermission](audiofilepermissions/readpermission.md)
+### Constants
+- [AudioFilePermissions.readPermission](./readpermission.md)
   File is read-only.
-- [AudioFilePermissions.readWritePermission](audiofilepermissions/readwritepermission.md)
+- [AudioFilePermissions.readWritePermission](./readwritepermission.md)
   File has read-write permission.
 
 

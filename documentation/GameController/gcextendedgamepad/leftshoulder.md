@@ -1,7 +1,8 @@
 # leftShoulder
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s left shoulder button element.
 
@@ -19,13 +20,18 @@ The controller’s left shoulder button element.
 var leftShoulder: GCControllerButtonInput { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCControllerButtonInput * leftShoulder;
+```
+
 #### Discussion
 
 The shoulder buttons in the extended gamepad profile are analog buttons.
 
 ## See Also
 
-- [var rightShoulder: GCControllerButtonInput](gcextendedgamepad/rightshoulder.md)
+### Getting shoulder button inputs
+- [var rightShoulder: GCControllerButtonInput](./rightshoulder.md)
   The controller’s right shoulder button element.
 
 

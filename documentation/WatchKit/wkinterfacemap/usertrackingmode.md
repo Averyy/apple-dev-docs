@@ -1,7 +1,8 @@
 # WKInterfaceMap.UserTrackingMode
 
 **Framework**: WatchKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Modes for tracking the user’s location on the map.
 
@@ -14,37 +15,42 @@ Modes for tracking the user’s location on the map.
 enum UserTrackingMode
 ```
 
+```c
+enum WKInterfaceMapUserTrackingMode : NSInteger;
+```
+
 ## Topics
 
 ### Tracking Modes
-- [WKInterfaceMap.UserTrackingMode.follow](wkinterfacemap/usertrackingmode/follow.md)
+- [WKInterfaceMap.UserTrackingMode.follow](./usertrackingmode/follow.md)
   The map scrolls to follow the user as they move.
-- [WKInterfaceMap.UserTrackingMode.none](wkinterfacemap/usertrackingmode/none.md)
+- [WKInterfaceMap.UserTrackingMode.none](./usertrackingmode/none.md)
   The map remains stationary, even if the user moves off the map.
-- [WKInterfaceMap.UserTrackingMode.follow](wkinterfacemap/usertrackingmode/follow.md)
+- [WKInterfaceMap.UserTrackingMode.follow](./usertrackingmode/follow.md)
   The map scrolls to follow the user as they move.
-- [WKInterfaceMap.UserTrackingMode.none](wkinterfacemap/usertrackingmode/none.md)
+- [WKInterfaceMap.UserTrackingMode.none](./usertrackingmode/none.md)
   The map remains stationary, even if the user moves off the map.
 ### Initializers
-- [init?(rawValue: Int)](wkinterfacemap/usertrackingmode/init(rawvalue:).md)
+- [init?(rawValue: Int)](./usertrackingmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setShowsUserLocation(Bool)](wkinterfacemap/setshowsuserlocation(_:).md)
+### Displaying the User’s Location
+- [func setShowsUserLocation(Bool)](./setshowsuserlocation%28_%29.md)
   Sets whether the map shows the user’s current location.
-- [func setShowsUserHeading(Bool)](wkinterfacemap/setshowsuserheading(_:).md)
+- [func setShowsUserHeading(Bool)](./setshowsuserheading%28_%29.md)
   Sets whether the map shows the user heading.
-- [func setUserTrackingMode(WKInterfaceMap.UserTrackingMode, animated: Bool)](wkinterfacemap/setusertrackingmode(_:animated:).md)
+- [func setUserTrackingMode(WKInterfaceMap.UserTrackingMode, animated: Bool)](./setusertrackingmode%28_,animated%29.md)
   Sets the map’s tracking mode.
 
 

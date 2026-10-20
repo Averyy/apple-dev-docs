@@ -1,7 +1,8 @@
 # UICellAccessory.MultiselectOptions
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Configuration options for a multiselect accessory.
 
@@ -10,7 +11,7 @@ Configuration options for a multiselect accessory.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,21 +22,22 @@ struct MultiselectOptions
 ## Topics
 
 ### Creating configuration options
-- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?, backgroundColor: UIColor?)](uicellaccessory-swift.struct/multiselectoptions/init(ishidden:reservedlayoutwidth:tintcolor:backgroundcolor:).md)
+- [init(isHidden: Bool?, reservedLayoutWidth: UICellAccessory.LayoutDimension?, tintColor: UIColor?, backgroundColor: UIColor?)](./multiselectoptions/init%28ishidden,reservedlayoutwidth,tintcolor,backgroundcolor%29.md)
   Creates a multiselect accessory options structure.
 ### Accessing configuration options
-- [var isHidden: Bool](uicellaccessory-swift.struct/multiselectoptions/ishidden.md)
+- [var isHidden: Bool](./multiselectoptions/ishidden.md)
   A Boolean value that determines whether the cell hides the accessory.
-- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](uicellaccessory-swift.struct/multiselectoptions/reservedlayoutwidth.md)
+- [var reservedLayoutWidth: UICellAccessory.LayoutDimension](./multiselectoptions/reservedlayoutwidth.md)
   The layout width that the system reserves for the accessory, and then centers the accessory within.
-- [var tintColor: UIColor?](uicellaccessory-swift.struct/multiselectoptions/tintcolor.md)
+- [var tintColor: UIColor?](./multiselectoptions/tintcolor.md)
   The tint color to apply to the accessory.
-- [var backgroundColor: UIColor?](uicellaccessory-swift.struct/multiselectoptions/backgroundcolor.md)
+- [var backgroundColor: UIColor?](./multiselectoptions/backgroundcolor.md)
   The background color to apply to the accessory.
 
 ## See Also
 
-- [static func multiselect(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.MultiselectOptions) -> UICellAccessory](uicellaccessory-swift.struct/multiselect(displayed:options:).md)
+### Creating a multiselect accessory
+- [static func multiselect(displayed: UICellAccessory.DisplayedState, options: UICellAccessory.MultiselectOptions) -> UICellAccessory](./multiselect%28displayed,options%29.md)
   Creates a multiselect system accessory with the specified display state and configuration options.
 
 

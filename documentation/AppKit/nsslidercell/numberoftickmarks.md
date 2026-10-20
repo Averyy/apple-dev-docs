@@ -1,17 +1,22 @@
 # numberOfTickMarks
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of tick marks associated with the slider, including the tick marks assigned to the minimum and maximum values.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var numberOfTickMarks: Int { get set }
+```
+
+```objc
+@property NSInteger numberOfTickMarks;
 ```
 
 #### Discussion
@@ -20,17 +25,18 @@ By default, this value is 0, and no tick marks appear. The number of tick marks 
 
 ## See Also
 
-- [var allowsTickMarkValuesOnly: Bool](nsslidercell/allowstickmarkvaluesonly.md)
+### Managing Tick Marks
+- [var allowsTickMarkValuesOnly: Bool](./allowstickmarkvaluesonly.md)
   A Boolean value indicating whether the receiver fixes its values to those values represented by its tick marks.
-- [func closestTickMarkValue(toValue: Double) -> Double](nsslidercell/closesttickmarkvalue(tovalue:).md)
+- [func closestTickMarkValue(toValue: Double) -> Double](./closesttickmarkvalue%28tovalue%29.md)
   Returns the value of the tick mark closest to the specified value.
-- [func indexOfTickMark(at: NSPoint) -> Int](nsslidercell/indexoftickmark(at:).md)
+- [func indexOfTickMark(at: NSPoint) -> Int](./indexoftickmark%28at%29.md)
   Returns the index of the tick mark closest to the location of the slider represented by the specified point.
-- [func rectOfTickMark(at: Int) -> NSRect](nsslidercell/rectoftickmark(at:).md)
+- [func rectOfTickMark(at: Int) -> NSRect](./rectoftickmark%28at%29.md)
   Returns the bounding rectangle of the tick mark at the specified index.
-- [var tickMarkPosition: NSSlider.TickMarkPosition](nsslidercell/tickmarkposition.md)
+- [var tickMarkPosition: NSSlider.TickMarkPosition](./tickmarkposition.md)
   The position of the tick marks relative to the receiver.
-- [func tickMarkValue(at: Int) -> Double](nsslidercell/tickmarkvalue(at:).md)
+- [func tickMarkValue(at: Int) -> Double](./tickmarkvalue%28at%29.md)
   Returns the receiver’s value represented by the tick mark at the specified index.
 
 

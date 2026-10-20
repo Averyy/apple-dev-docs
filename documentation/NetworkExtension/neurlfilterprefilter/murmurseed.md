@@ -1,7 +1,8 @@
 # murmurSeed
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The seed used for the hashing function.
 
@@ -23,15 +24,16 @@ The prefilter uses the MurmurHash3 function.
 
 ## See Also
 
-- [let data: NEURLFilterPrefilter.PrefilterData](neurlfilterprefilter/data.md)
+### Working with prefilter properties
+- [let data: NEURLFilterPrefilter.PrefilterData](./data.md)
   The Bloom filter data.
-- [NEURLFilterPrefilter.PrefilterData](neurlfilterprefilter/prefilterdata.md)
+- [NEURLFilterPrefilter.PrefilterData](./prefilterdata.md)
   An enumeration that represents Bloom filter data, as used by a prefilter.
-- [let tag: String](neurlfilterprefilter/tag.md)
+- [let tag: String](./tag.md)
   The tag of the Bloom filter data, such as the SHA-256 hash of the Bloom filter data.
-- [let bitCount: Int](neurlfilterprefilter/bitcount.md)
+- [let bitCount: Int](./bitcount.md)
   The number of bits in the Bloom filter.
-- [let hashCount: Int](neurlfilterprefilter/hashcount.md)
+- [let hashCount: Int](./hashcount.md)
   The number of hashes for the Bloom filter.
 
 

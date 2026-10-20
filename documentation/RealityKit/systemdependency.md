@@ -1,7 +1,8 @@
 # SystemDependency
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Defines update order relative to other systems. An object that specifies the update order between multiple systems.
 
@@ -11,7 +12,7 @@ Defines update order relative to other systems. An object that specifies the upd
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,29 +22,30 @@ enum SystemDependency
 
 #### Overview
 
-Add instances of `SystemDependency` to your system’s [`dependencies`](system/dependencies.md) array to indicate whether RealityKit updates another specified system before or after this system.
+Add instances of `SystemDependency` to your system’s [`dependencies`](./system/dependencies.md) array to indicate whether RealityKit updates another specified system before or after this system.
 
 ## Topics
 
 ### Update order
-- [case before(any System.Type)](systemdependency/before(_:).md)
+- [case before(any System.Type)](./systemdependency/before%28_%29.md)
   An update order that requests RealityKit update this system before it updates another specified system.
-- [case after(any System.Type)](systemdependency/after(_:).md)
+- [case after(any System.Type)](./systemdependency/after%28_%29.md)
   An update order that requests RealityKit update this system after it updates another specified system.
 ### Operators
-- [static func == (SystemDependency, SystemDependency) -> Bool](systemdependency/==(_:_:).md)
+- [static func == (SystemDependency, SystemDependency) -> Bool](./systemdependency/eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two dependencies are equal.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var dependencies: [SystemDependency]](system/dependencies.md)
+### Specifying dependencies
+- [static var dependencies: [SystemDependency]](./system/dependencies.md)
   An array of dependencies for this system.
 
 

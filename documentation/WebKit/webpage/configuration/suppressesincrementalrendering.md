@@ -1,7 +1,8 @@
 # suppressesIncrementalRendering
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether the web view suppresses content rendering until the content is fully loaded into memory.
 

@@ -1,7 +1,8 @@
 # SwiftDataError
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that describes a SwiftData error.
 
@@ -24,44 +25,45 @@ struct SwiftDataError
 ## Topics
 
 ### Fetch errors
-- [static let includePendingChangesWithBatchSize: SwiftDataError](swiftdataerror/includependingchangeswithbatchsize.md)
-- [static let sortingPendingChangesWithIdentifiers: SwiftDataError](swiftdataerror/sortingpendingchangeswithidentifiers.md)
-- [static let unsupportedKeyPath: SwiftDataError](swiftdataerror/unsupportedkeypath.md)
-- [static let unsupportedPredicate: SwiftDataError](swiftdataerror/unsupportedpredicate.md)
-- [static let unsupportedSortDescriptor: SwiftDataError](swiftdataerror/unsupportedsortdescriptor.md)
-- [static let historyTokenExpired: SwiftDataError](swiftdataerror/historytokenexpired.md)
-- [static let invalidTransactionFetchRequest: SwiftDataError](swiftdataerror/invalidtransactionfetchrequest.md)
+- [static let includePendingChangesWithBatchSize: SwiftDataError](./swiftdataerror/includependingchangeswithbatchsize.md)
+- [static let sortingPendingChangesWithIdentifiers: SwiftDataError](./swiftdataerror/sortingpendingchangeswithidentifiers.md)
+- [static let unsupportedKeyPath: SwiftDataError](./swiftdataerror/unsupportedkeypath.md)
+- [static let unsupportedPredicate: SwiftDataError](./swiftdataerror/unsupportedpredicate.md)
+- [static let unsupportedSortDescriptor: SwiftDataError](./swiftdataerror/unsupportedsortdescriptor.md)
+- [static let historyTokenExpired: SwiftDataError](./swiftdataerror/historytokenexpired.md)
+- [static let invalidTransactionFetchRequest: SwiftDataError](./swiftdataerror/invalidtransactionfetchrequest.md)
 ### Configuration errors
-- [static let configurationFileNameContainsInvalidCharacters: SwiftDataError](swiftdataerror/configurationfilenamecontainsinvalidcharacters.md)
-- [static let configurationFileNameTooLong: SwiftDataError](swiftdataerror/configurationfilenametoolong.md)
-- [static let configurationSchemaNotFoundInContainerSchema: SwiftDataError](swiftdataerror/configurationschemanotfoundincontainerschema.md)
-- [static let duplicateConfiguration: SwiftDataError](swiftdataerror/duplicateconfiguration.md)
+- [static let configurationFileNameContainsInvalidCharacters: SwiftDataError](./swiftdataerror/configurationfilenamecontainsinvalidcharacters.md)
+- [static let configurationFileNameTooLong: SwiftDataError](./swiftdataerror/configurationfilenametoolong.md)
+- [static let configurationSchemaNotFoundInContainerSchema: SwiftDataError](./swiftdataerror/configurationschemanotfoundincontainerschema.md)
+- [static let duplicateConfiguration: SwiftDataError](./swiftdataerror/duplicateconfiguration.md)
 ### Container errors
-- [static let loadIssueModelContainer: SwiftDataError](swiftdataerror/loadissuemodelcontainer.md)
+- [static let loadIssueModelContainer: SwiftDataError](./swiftdataerror/loadissuemodelcontainer.md)
 ### Context errors
-- [static let modelValidationFailure: SwiftDataError](swiftdataerror/modelvalidationfailure.md)
-- [static let missingModelContext: SwiftDataError](swiftdataerror/missingmodelcontext.md)
+- [static let modelValidationFailure: SwiftDataError](./swiftdataerror/modelvalidationfailure.md)
+- [static let missingModelContext: SwiftDataError](./swiftdataerror/missingmodelcontext.md)
 ### Migration errors
-- [static let backwardMigration: SwiftDataError](swiftdataerror/backwardmigration.md)
-- [static let unknownSchema: SwiftDataError](swiftdataerror/unknownschema.md)
+- [static let backwardMigration: SwiftDataError](./swiftdataerror/backwardmigration.md)
+- [static let unknownSchema: SwiftDataError](./swiftdataerror/unknownschema.md)
 ### Schema errors
-- [static let unknownDataStoreSchema: SwiftDataError](swiftdataerror/unknowndatastoreschema.md)
+- [static let unknownDataStoreSchema: SwiftDataError](./swiftdataerror/unknowndatastoreschema.md)
   An error that indicates the data store’s schema is not recognized.
 ### Operators
-- [static func ~= (SwiftDataError, any Error) -> Bool](swiftdataerror/~=(_:_:).md)
+- [static func ~= (SwiftDataError, any Error) -> Bool](./swiftdataerror/tildeeq%28_,_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum DataStoreError](datastoreerror.md)
+### Errors
+- [enum DataStoreError](./datastoreerror.md)
   A type that describes a data store error.
 
 

@@ -1,7 +1,8 @@
 # CKDBRecordFieldValue
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object with the value of the field in a record.
 
@@ -10,7 +11,7 @@ An object with the value of the field in a record.
 
 ## Declaration
 
-```swift
+```
 dictionary CKDBRecordFieldValue {
 	string type;
 };
@@ -29,7 +30,7 @@ import type { CKDBRecordFieldValue } from "@apple/cktool.database";
 ## Topics
 
 ### Instance Properties
-- [type](ckdbrecordfieldvalue/type.md)
+- [type](./ckdbrecordfieldvalue/type.md)
   A string used to identify the field type.
 
 

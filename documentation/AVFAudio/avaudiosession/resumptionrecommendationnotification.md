@@ -1,7 +1,8 @@
 # resumptionRecommendationNotification
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Notification sent when the system provides a resumption recommendation.
 
@@ -19,24 +20,29 @@ Notification sent when the system provides a resumption recommendation.
 class let resumptionRecommendationNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVAudioSessionResumptionRecommendationNotification;
+```
+
 ## Mentions
 
-- [Handling audio interruptions](handling-audio-interruptions.md)
+- [Handling audio interruptions](../handling-audio-interruptions.md)
 
 #### Discussion
 
-The userInfo dictionary contains an [`AVAudioSession.ResumptionContext`](avaudiosession/resumptioncontext.md) object accessible via [`resumptionContextKey`](avaudiosession/resumptioncontextkey.md).
+The userInfo dictionary contains an [`AVAudioSession.ResumptionContext`](./resumptioncontext.md) object accessible via [`resumptionContextKey`](./resumptioncontextkey.md).
 
 ## See Also
 
-- [class let didBecomeActiveNotification: NSNotification.Name](avaudiosession/didbecomeactivenotification.md)
+### Observing activation lifecycle
+- [class let didBecomeActiveNotification: NSNotification.Name](./didbecomeactivenotification.md)
   Notification sent when the audio session becomes active.
-- [class let didBecomeInactiveNotification: NSNotification.Name](avaudiosession/didbecomeinactivenotification.md)
+- [class let didBecomeInactiveNotification: NSNotification.Name](./didbecomeinactivenotification.md)
   Notification sent when the audio session becomes inactive.
-- [class let deactivationContextKey: String](avaudiosession/deactivationcontextkey.md)
-  Keys for [`didBecomeInactiveNotification`](avaudiosession/didbecomeinactivenotification.md) Value is an [`AVAudioSession.DeactivationContext`](avaudiosession/deactivationcontext.md) object describing the deactivation.
-- [class let resumptionContextKey: String](avaudiosession/resumptioncontextkey.md)
-  Keys for [`resumptionRecommendationNotification`](avaudiosession/resumptionrecommendationnotification.md) Value is an [`AVAudioSession.ResumptionContext`](avaudiosession/resumptioncontext.md) describing the resumption recommendation.
+- [class let deactivationContextKey: String](./deactivationcontextkey.md)
+  Keys for [`didBecomeInactiveNotification`](./didbecomeinactivenotification.md) Value is an [`AVAudioSession.DeactivationContext`](./deactivationcontext.md) object describing the deactivation.
+- [class let resumptionContextKey: String](./resumptioncontextkey.md)
+  Keys for [`resumptionRecommendationNotification`](./resumptionrecommendationnotification.md) Value is an [`AVAudioSession.ResumptionContext`](./resumptioncontext.md) describing the resumption recommendation.
 
 
 ---

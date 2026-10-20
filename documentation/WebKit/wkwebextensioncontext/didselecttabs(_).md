@@ -1,7 +1,8 @@
 # didSelectTabs(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called by the app when tabs are selected to fire appropriate events with only this extension.
 
@@ -16,6 +17,10 @@ Called by the app when tabs are selected to fire appropriate events with only th
 
 ```swift
 func didSelectTabs(_ selectedTabs: [any WKWebExtensionTab])
+```
+
+```objc
+- (void) didSelectTabs:(NSArray<id<WKWebExtensionTab>> *) selectedTabs;
 ```
 
 #### Discussion

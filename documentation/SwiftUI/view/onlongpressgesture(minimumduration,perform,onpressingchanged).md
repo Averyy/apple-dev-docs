@@ -1,7 +1,8 @@
 # onLongPressGesture(minimumDuration:perform:onPressingChanged:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when this view recognizes a long press gesture.
 
@@ -23,13 +24,14 @@ nonisolated func onLongPressGesture(minimumDuration: Double = 0.5, perform actio
 
 ## See Also
 
-- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:perform:onpressingchanged:).md)
+### Recognizing long-press gestures
+- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](./onlongpressgesture%28minimumduration,maximumdistance,perform,onpressingchanged%29.md)
   Adds an action to perform when this view recognizes a long press gesture.
-- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:inputkinds:perform:onpressingchanged:).md)
+- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](./onlongpressgesture%28minimumduration,maximumdistance,inputkinds,perform,onpressingchanged%29.md)
   Adds an action to perform when this view recognizes a long press gesture.
-- [func onLongTouchGesture(minimumDuration: Double, perform: () -> Void, onTouchingChanged: ((Bool) -> Void)?) -> some View](view/onlongtouchgesture(minimumduration:perform:ontouchingchanged:).md)
+- [func onLongTouchGesture(minimumDuration: Double, perform: () -> Void, onTouchingChanged: ((Bool) -> Void)?) -> some View](./onlongtouchgesture%28minimumduration,perform,ontouchingchanged%29.md)
   Adds an action to perform when this view recognizes a remote long touch gesture. A long touch gesture is when the finger is on the remote touch surface without actually pressing.
-- [struct LongPressGesture](longpressgesture.md)
+- [struct LongPressGesture](../longpressgesture.md)
   A gesture that succeeds when the user performs a long press.
 
 

@@ -1,7 +1,8 @@
 # errSecTimestampUnacceptedPolicy
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The requested policy is not supported by the timestamp authority.
 
@@ -18,6 +19,10 @@ The requested policy is not supported by the timestamp authority.
 
 ```swift
 var errSecTimestampUnacceptedPolicy: OSStatus { get }
+```
+
+```c
+errSecTimestampUnacceptedPolicy
 ```
 
 

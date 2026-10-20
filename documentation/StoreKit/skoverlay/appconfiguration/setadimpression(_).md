@@ -1,7 +1,8 @@
 # setAdImpression(_:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.0+
@@ -12,6 +13,10 @@
 
 ```swift
 func setAdImpression(_ impression: SKAdImpression)
+```
+
+```objc
+- (void) setAdImpression:(SKAdImpression *) impression;
 ```
 
 

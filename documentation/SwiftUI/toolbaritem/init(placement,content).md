@@ -1,7 +1,8 @@
 # init(placement:content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toolbar item with the specified placement and content.
 
@@ -21,6 +22,8 @@ nonisolated
 init(placement: ToolbarItemPlacement = .automatic, @ContentBuilder content: () -> Content)
 ```
 
+Available when `ID` is `()` and `Content` conforms to `View`.
+
 ## Parameters
 
 - `placement`: Which section of the toolbar the item should be placed in.
@@ -28,9 +31,10 @@ init(placement: ToolbarItemPlacement = .automatic, @ContentBuilder content: () -
 
 ## See Also
 
-- [init(id: String, placement: ToolbarItemPlacement, content: () -> Content)](toolbaritem/init(id:placement:content:).md)
+### Creating a toolbar item
+- [init(id: String, placement: ToolbarItemPlacement, content: () -> Content)](./init%28id,placement,content%29.md)
   Creates a toolbar item with the specified placement and content, which allows for user customization.
-- [init(id: String, placement: ToolbarItemPlacement, showsByDefault: Bool, content: () -> Content)](toolbaritem/init(id:placement:showsbydefault:content:).md)
+- [init(id: String, placement: ToolbarItemPlacement, showsByDefault: Bool, content: () -> Content)](./init%28id,placement,showsbydefault,content%29.md)
   Creates a toolbar item with the specified placement and content, which allows for user customization.
 
 

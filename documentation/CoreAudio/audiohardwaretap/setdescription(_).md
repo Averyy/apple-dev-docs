@@ -1,7 +1,8 @@
 # setDescription(_:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Set the description property.
 

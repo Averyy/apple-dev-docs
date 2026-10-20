@@ -1,7 +1,8 @@
 # AVDepthData.Quality.low
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The depth map is a poor candidate for rendering high-quality depth effects or reconstructing a 3D scene.
 
@@ -19,13 +20,18 @@ The depth map is a poor candidate for rendering high-quality depth effects or re
 case low
 ```
 
+```c
+AVDepthDataQualityLow
+```
+
 #### Discussion
 
 Low quality occurs when the process generating the depth map (such as inference of depth from disparity on a device with dual cameras) cannot find enough distinct key points in the input images, resulting in a large number of invalid depth values in the (pre-filtered) map.
 
 ## See Also
 
-- [AVDepthData.Quality.high](avdepthdata/quality/high.md)
+### Depth quality values
+- [AVDepthData.Quality.high](./high.md)
   The depth map is a good candidate for rendering high-quality depth effects or reconstructing a 3D scene.
 
 

@@ -1,7 +1,8 @@
 # progress
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that defines the progress of the page control. Default is nil.
 
@@ -18,12 +19,17 @@ An object that defines the progress of the page control. Default is nil.
 var progress: UIPageControlProgress? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIPageControlProgress * progress;
+```
+
 ## See Also
 
-- [class UIPageControlProgress](uipagecontrolprogress.md)
-- [class UIPageControlTimerProgress](uipagecontroltimerprogress.md)
-- [protocol UIPageControlProgressDelegate](uipagecontrolprogressdelegate.md)
-- [protocol UIPageControlTimerProgressDelegate](uipagecontroltimerprogressdelegate.md)
+### Configuring page progress
+- [class UIPageControlProgress](../uipagecontrolprogress.md)
+- [class UIPageControlTimerProgress](../uipagecontroltimerprogress.md)
+- [protocol UIPageControlProgressDelegate](../uipagecontrolprogressdelegate.md)
+- [protocol UIPageControlTimerProgressDelegate](../uipagecontroltimerprogressdelegate.md)
 
 
 ---

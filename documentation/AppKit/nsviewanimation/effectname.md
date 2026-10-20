@@ -1,12 +1,13 @@
 # NSViewAnimation.EffectName
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The following constants specify the animation effect to apply and are used as values for the animation effect property of the animation view. See the description of [`effect`](nsviewanimation/key/effect.md) for usage details.
+The following constants specify the animation effect to apply and are used as values for the animation effect property of the animation view. See the description of [`effect`](./key/effect.md) for usage details.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,31 +15,36 @@ The following constants specify the animation effect to apply and are used as va
 struct EffectName
 ```
 
+```c
+typedef NSString * NSViewAnimationEffectName;
+```
+
 ## Topics
 
 ### Effect Names
-- [static let fadeIn: NSViewAnimation.EffectName](nsviewanimation/effectname/fadein.md)
+- [static let fadeIn: NSViewAnimation.EffectName](./effectname/fadein.md)
   Specifies a fade-in type of effect.
-- [static let fadeOut: NSViewAnimation.EffectName](nsviewanimation/effectname/fadeout.md)
+- [static let fadeOut: NSViewAnimation.EffectName](./effectname/fadeout.md)
   Specifies a fade-out type of effect.
 ### Initializers
-- [init(rawValue: String)](nsviewanimation/effectname/init(rawvalue:).md)
+- [init(rawValue: String)](./effectname/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var viewAnimations: [[NSViewAnimation.Key : Any]]](nsviewanimation/viewanimations.md)
+### Getting and setting view-animation dictionaries
+- [var viewAnimations: [[NSViewAnimation.Key : Any]]](./viewanimations.md)
   The dictionaries defining the objects to animate.
-- [NSViewAnimation.Key](nsviewanimation/key.md)
-  The following string constants are keys for the dictionaries in the array passed into [`init(viewAnimations:)`](nsviewanimation/init(viewanimations:).md) and [`viewAnimations`](nsviewanimation/viewanimations.md).
+- [NSViewAnimation.Key](./key.md)
+  The following string constants are keys for the dictionaries in the array passed into [`init(viewAnimations:)`](./init%28viewanimations%29.md) and [`viewAnimations`](./viewanimations.md).
 
 
 ---

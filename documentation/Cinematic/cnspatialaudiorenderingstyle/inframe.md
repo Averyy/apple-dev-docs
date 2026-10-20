@@ -1,7 +1,8 @@
 # CNSpatialAudioRenderingStyle.inFrame
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Isolates background from foreground sounds in the camera field of view and places them in separate stems.
 
@@ -16,6 +17,10 @@ Isolates background from foreground sounds in the camera field of view and place
 
 ```swift
 case inFrame
+```
+
+```c
+CNSpatialAudioRenderingStyleInFrame
 ```
 
 

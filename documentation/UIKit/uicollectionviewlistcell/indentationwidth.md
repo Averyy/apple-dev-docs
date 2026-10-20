@@ -1,7 +1,8 @@
 # indentationWidth
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of an indentation level.
 
@@ -18,17 +19,22 @@ The width of an indentation level.
 var indentationWidth: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat indentationWidth;
+```
+
 #### Discussion
 
-The overall indentation is the product of [`indentationWidth`](uicollectionviewlistcell/indentationwidth.md) and [`indentationLevel`](uicollectionviewlistcell/indentationlevel.md).
+The overall indentation is the product of [`indentationWidth`](./indentationwidth.md) and [`indentationLevel`](./indentationlevel.md).
 
 ## See Also
 
-- [var indentationLevel: Int](uicollectionviewlistcell/indentationlevel.md)
+### Customizing layout
+- [var indentationLevel: Int](./indentationlevel.md)
   The level of indentation for the cell.
-- [var indentsAccessories: Bool](uicollectionviewlistcell/indentsaccessories.md)
+- [var indentsAccessories: Bool](./indentsaccessories.md)
   A Boolean value that detemines whether the cell indents accessories on the leading side.
-- [var separatorLayoutGuide: UILayoutGuide](uicollectionviewlistcell/separatorlayoutguide.md)
+- [var separatorLayoutGuide: UILayoutGuide](./separatorlayoutguide.md)
   A guide for laying out separators in relation to the primary content in the cell.
 
 

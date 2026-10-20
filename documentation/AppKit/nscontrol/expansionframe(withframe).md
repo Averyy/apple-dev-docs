@@ -1,7 +1,8 @@
 # expansionFrame(withFrame:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 The frame in which a tool tip can be displayed, if needed.
 
@@ -14,13 +15,17 @@ The frame in which a tool tip can be displayed, if needed.
 func expansionFrame(withFrame contentFrame: NSRect) -> NSRect
 ```
 
+```objc
+- (NSRect) expansionFrameWithFrame:(NSRect) contentFrame;
+```
+
 #### Return Value
 
-The frame in which the tool tip should be displayed, or [`NSZeroRect`](https://developer.apple.com/documentation/foundation/nszerorect) by default.
+The frame in which the tool tip should be displayed, or [`NSZeroRect`](../../Foundation/nszerorect.md) by default.
 
 #### Discussion
 
-This method lets the control  return an expansion tool tip frame if `contentFrame` is too small for the entire contents in the view. When the pointer hovers over the text in certain controls, the full contents will be shown in a special floating tool tip view. If the frame is big enough to display the contents, return an empty rect from this method and no expansion tool tip view will be shown. Note that some subclasses, such as [`NSTextField`](nstextfield.md), return the proper frame when required.
+This method lets the control  return an expansion tool tip frame if `contentFrame` is too small for the entire contents in the view. When the pointer hovers over the text in certain controls, the full contents will be shown in a special floating tool tip view. If the frame is big enough to display the contents, return an empty rect from this method and no expansion tool tip view will be shown. Note that some subclasses, such as [`NSTextField`](../nstextfield.md), return the proper frame when required.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ This method lets the control  return an expansion tool tip frame if `contentFram
 
 ## See Also
 
-- [func draw(withExpansionFrame: NSRect, in: NSView)](nscontrol/draw(withexpansionframe:in:).md)
+### Managing Expansion Tool Tips
+- [func draw(withExpansionFrame: NSRect, in: NSView)](./draw%28withexpansionframe,in%29.md)
   Performs custom expansion tool tip drawing.
-- [var allowsExpansionToolTips: Bool](nscontrol/allowsexpansiontooltips.md)
+- [var allowsExpansionToolTips: Bool](./allowsexpansiontooltips.md)
   A Boolean value that indicates whether expansion tool tips are shown when the control is hovered over.
 
 

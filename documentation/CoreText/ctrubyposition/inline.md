@@ -1,7 +1,8 @@
 # CTRubyPosition.inline
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The ruby text follows the base text with no special styling.
 
@@ -20,15 +21,20 @@ The ruby text follows the base text with no special styling.
 case inline
 ```
 
+```c
+kCTRubyPositionInline
+```
+
 ## See Also
 
-- [CTRubyPosition.before](ctrubyposition/before.md)
+### Constants
+- [CTRubyPosition.before](./before.md)
   The ruby text is positioned before the base text, appearing above horizontal text and to the right of vertical text.
-- [CTRubyPosition.after](ctrubyposition/after.md)
+- [CTRubyPosition.after](./after.md)
   The ruby text is positioned after the base text, appearing below horizontal text and to the left of vertical text.
-- [CTRubyPosition.interCharacter](ctrubyposition/intercharacter.md)
+- [CTRubyPosition.interCharacter](./intercharacter.md)
   The ruby text is positioned to the right of the base text, regardless of whether it’s horizontal or vertical.
-- [CTRubyPosition.count](ctrubyposition/count.md)
+- [CTRubyPosition.count](./count.md)
   A constant that accounts for all ruby positions during ruby annotation creation.
 
 

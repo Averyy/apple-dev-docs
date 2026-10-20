@@ -1,7 +1,8 @@
 # enableCharging(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Command EnableCharging
 
@@ -17,7 +18,15 @@ Command EnableCharging
 ## Declaration
 
 ```swift
+func enableCharging(with params: MTREnergyEVSEClusterEnableChargingParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func enableCharging(with params: MTREnergyEVSEClusterEnableChargingParams) async throws
+```
+
+```objc
+- (void) enableChargingWithParams:(MTREnergyEVSEClusterEnableChargingParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 #### Discussion

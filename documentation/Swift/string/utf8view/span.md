@@ -1,7 +1,8 @@
 # span
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A span over the UTF-8 code units that make up this string.
 
@@ -28,7 +29,7 @@ A `Span` over the UTF-8 code units of this `String`.
 
 > **Note**: On Apple platforms, this property transcodes the code units of bridged UTF-16 `String` instances on first access and caches the result. Subsequent calls can reuse the cached buffer.
 
-> **Note**: O(1) for native UTF-8 strings, amortized O(1) for bridged UTF-16 strings.
+> **Complexity**: O(1) for native UTF-8 strings, amortized O(1) for bridged UTF-16 strings.
 
 
 ---

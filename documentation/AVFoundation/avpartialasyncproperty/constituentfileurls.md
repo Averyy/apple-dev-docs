@@ -1,7 +1,8 @@
 # constituentFileURLs
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The list of file URLs used by the MediaExtension that constitute the asset. The list of file URLs that constitute the asset are returned only for QuickTime reference movies, or if the MediaExtension format reader implements this property [MEFileInfo setConstituentFileNames:].
 
@@ -13,6 +14,8 @@ The list of file URLs used by the MediaExtension that constitute the asset. The 
 ```swift
 static var constituentFileURLs: AVAsyncProperty<Root, [URL]> { get }
 ```
+
+Available when `Root` inherits `AVAsset`.
 
 
 ---

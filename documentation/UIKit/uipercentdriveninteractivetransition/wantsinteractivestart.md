@@ -1,7 +1,8 @@
 # wantsInteractiveStart
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the animations are interactive initially.
 
@@ -18,21 +19,26 @@ A Boolean value indicating whether the animations are interactive initially.
 var wantsInteractiveStart: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL wantsInteractiveStart;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), interactive animations start as paused, allowing you to drive the animations yourself from the start. You might set this property to [`false`](https://developer.apple.com/documentation/swift/false) when you want to start your animations without interactivity. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](../../Swift/true.md), interactive animations start as paused, allowing you to drive the animations yourself from the start. You might set this property to [`false`](../../Swift/false.md) when you want to start your animations without interactivity. The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var timingCurve: (any UITimingCurveProvider)?](uipercentdriveninteractivetransition/timingcurve.md)
+### Accessing transition attributes
+- [var timingCurve: (any UITimingCurveProvider)?](./timingcurve.md)
   The timing curve to use when driving the animations.
-- [var completionCurve: UIView.AnimationCurve](uipercentdriveninteractivetransition/completioncurve.md)
+- [var completionCurve: UIView.AnimationCurve](./completioncurve.md)
   Indicates the animation completion curve for an interactive transition.
-- [var duration: CGFloat](uipercentdriveninteractivetransition/duration.md)
+- [var duration: CGFloat](./duration.md)
   The overall duration (in seconds) of the transition animation.
-- [var percentComplete: CGFloat](uipercentdriveninteractivetransition/percentcomplete.md)
+- [var percentComplete: CGFloat](./percentcomplete.md)
   The amount of the transition (specified as a percentage of the overall duration) that’s complete.
-- [var completionSpeed: CGFloat](uipercentdriveninteractivetransition/completionspeed.md)
+- [var completionSpeed: CGFloat](./completionspeed.md)
   The speed of the transition animation.
 
 

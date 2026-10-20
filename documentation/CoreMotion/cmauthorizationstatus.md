@@ -1,7 +1,8 @@
 # CMAuthorizationStatus
 
 **Framework**: Core Motion  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The authorization status for motion-related features.
 
@@ -19,37 +20,42 @@ The authorization status for motion-related features.
 enum CMAuthorizationStatus
 ```
 
+```c
+enum CMAuthorizationStatus : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [CMAuthorizationStatus.notDetermined](cmauthorizationstatus/notdetermined.md)
+- [CMAuthorizationStatus.notDetermined](./cmauthorizationstatus/notdetermined.md)
   The status has not yet been determined.
-- [CMAuthorizationStatus.restricted](cmauthorizationstatus/restricted.md)
+- [CMAuthorizationStatus.restricted](./cmauthorizationstatus/restricted.md)
   Access is denied due to system-wide restrictions.
-- [CMAuthorizationStatus.denied](cmauthorizationstatus/denied.md)
+- [CMAuthorizationStatus.denied](./cmauthorizationstatus/denied.md)
   Access was denied by the user.
-- [CMAuthorizationStatus.authorized](cmauthorizationstatus/authorized.md)
+- [CMAuthorizationStatus.authorized](./cmauthorizationstatus/authorized.md)
   Access was granted by the user.
 ### Initializers
-- [init?(rawValue: Int)](cmauthorizationstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cmauthorizationstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func isAbsoluteAltitudeAvailable() -> Bool](cmaltimeter/isabsolutealtitudeavailable.md)
+### Determining Altitude Availability
+- [class func isAbsoluteAltitudeAvailable() -> Bool](./cmaltimeter/isabsolutealtitudeavailable%28%29.md)
   Returns a Boolean value indicating whether the current device reports changes in the absolute altitude.
-- [class func isRelativeAltitudeAvailable() -> Bool](cmaltimeter/isrelativealtitudeavailable.md)
+- [class func isRelativeAltitudeAvailable() -> Bool](./cmaltimeter/isrelativealtitudeavailable%28%29.md)
   Returns a Boolean value indicating whether the current device supports generating data for relative altitude changes.
-- [class func authorizationStatus() -> CMAuthorizationStatus](cmaltimeter/authorizationstatus.md)
+- [class func authorizationStatus() -> CMAuthorizationStatus](./cmaltimeter/authorizationstatus%28%29.md)
   Returns a value indicating whether the app is authorized to retrieve altimeter data.
 
 

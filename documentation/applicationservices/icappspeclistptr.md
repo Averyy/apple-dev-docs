@@ -1,7 +1,8 @@
 # ICAppSpecListPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ICAppSpecListPtr = UnsafeMutablePointer<ICAppSpecList>
+```
+
+```c
+typedef ICAppSpecList *ICAppSpecListPtr;
 ```
 
 

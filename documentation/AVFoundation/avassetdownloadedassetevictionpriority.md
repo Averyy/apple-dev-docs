@@ -1,7 +1,8 @@
 # AVAssetDownloadedAssetEvictionPriority
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that define eviction priorities for a storage management policy.
 
@@ -18,31 +19,36 @@ Constants that define eviction priorities for a storage management policy.
 struct AVAssetDownloadedAssetEvictionPriority
 ```
 
+```c
+typedef NSString * AVAssetDownloadedAssetEvictionPriority;
+```
+
 ## Topics
 
 ### Eviction priorities
-- [static let `default`: AVAssetDownloadedAssetEvictionPriority](avassetdownloadedassetevictionpriority/default.md)
+- [static let `default`: AVAssetDownloadedAssetEvictionPriority](./avassetdownloadedassetevictionpriority/default.md)
   The default eviction priority.
-- [static let important: AVAssetDownloadedAssetEvictionPriority](avassetdownloadedassetevictionpriority/important.md)
+- [static let important: AVAssetDownloadedAssetEvictionPriority](./avassetdownloadedassetevictionpriority/important.md)
   An eviction priority that indicates that this asset is important and the system should evict lower-priority assets first.
 ### Initializers
-- [init(rawValue: String)](avassetdownloadedassetevictionpriority/init(rawvalue:).md)
+- [init(rawValue: String)](./avassetdownloadedassetevictionpriority/init%28rawvalue%29.md)
   Creates an eviction priority with a string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var expirationDate: Date](avmutableassetdownloadstoragemanagementpolicy/expirationdate.md)
+### Managing storage
+- [var expirationDate: Date](./avmutableassetdownloadstoragemanagementpolicy/expirationdate.md)
   The expiration date for an asset.
-- [var priority: AVAssetDownloadedAssetEvictionPriority](avmutableassetdownloadstoragemanagementpolicy/priority.md)
+- [var priority: AVAssetDownloadedAssetEvictionPriority](./avmutableassetdownloadstoragemanagementpolicy/priority.md)
   The eviction priority for a downloaded asset.
 
 

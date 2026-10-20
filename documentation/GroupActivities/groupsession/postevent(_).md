@@ -1,7 +1,8 @@
 # postEvent(_:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Posts an event to the system, which displays the information in the system UI.
 
@@ -13,11 +14,15 @@ Posts an event to the system, which displays the information in the system UI.
 - tvOS 15.0+
 - visionOS 1.0+
 
+> **Deprecated**: Use GroupSessionEvent
+
 ## Declaration
 
 ```swift
 final func postEvent(_ event: GroupSession<ActivityType>.Event)
 ```
+
+Available when `ActivityType` conforms to `GroupActivity`.
 
 #### Discussion
 

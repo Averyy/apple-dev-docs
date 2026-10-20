@@ -1,12 +1,13 @@
 # NSTabViewItem.State.backgroundTab
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A tab that’s not being displayed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ A tab that’s not being displayed.
 case backgroundTab
 ```
 
+```c
+NSBackgroundTab
+```
+
 ## See Also
 
-- [NSTabViewItem.State.pressedTab](nstabviewitem/state/pressedtab.md)
+### Constants
+- [NSTabViewItem.State.pressedTab](./pressedtab.md)
   A tab that the user is in the process of clicking. That is, the user has pressed the mouse button while the cursor is over the tab but has not released the mouse button.
-- [NSTabViewItem.State.selectedTab](nstabviewitem/state/selectedtab.md)
+- [NSTabViewItem.State.selectedTab](./selectedtab.md)
   The tab that’s being displayed.
 
 

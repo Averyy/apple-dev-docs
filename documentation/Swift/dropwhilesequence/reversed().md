@@ -1,7 +1,8 @@
 # reversed()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the elements of this sequence in reverse order.
 
@@ -28,7 +29,7 @@ An array containing the elements of this sequence in reverse order.
 
 The sequence must be finite.
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 
 ---

@@ -1,23 +1,25 @@
 # withType
 
 **Framework**: HIDDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
 - DriverKit 19.0+
-- macOS ?+
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static IOHIDDigitizerCollection * withType(IOHIDDigitizerCollectionType type, IOHIDElement *parentCollection);
 ```
 
 ## See Also
 
-- [initWithType](iohiddigitizercollection/initwithtype.md)
-- [free](iohiddigitizercollection/free.md)
-- [IOHIDDigitizerCollectionType](iohiddigitizercollectiontype.md)
+### Creating a Digitizer Collection
+- [initWithType](./initwithtype.md)
+- [free](./free.md)
+- [IOHIDDigitizerCollectionType](../iohiddigitizercollectiontype.md)
 
 
 ---

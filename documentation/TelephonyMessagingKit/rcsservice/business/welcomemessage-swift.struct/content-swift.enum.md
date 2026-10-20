@@ -1,7 +1,8 @@
 # RCSService.Business.WelcomeMessage.Content
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.0+
@@ -15,21 +16,21 @@ enum Content
 ## Topics
 
 ### Enumeration Cases
-- [RCSService.Business.WelcomeMessage.Content.card(_:)](rcsservice/business/welcomemessage-swift.struct/content-swift.enum/card(_:).md)
+- [RCSService.Business.WelcomeMessage.Content.card(_:)](./content-swift.enum/card%28_%29.md)
   Card content.
-- [RCSService.Business.WelcomeMessage.Content.cardCarousel(_:)](rcsservice/business/welcomemessage-swift.struct/content-swift.enum/cardcarousel(_:).md)
+- [RCSService.Business.WelcomeMessage.Content.cardCarousel(_:)](./content-swift.enum/cardcarousel%28_%29.md)
   Card carousel content.
-- [RCSService.Business.WelcomeMessage.Content.prefilledText(_:)](rcsservice/business/welcomemessage-swift.struct/content-swift.enum/prefilledtext(_:).md)
+- [RCSService.Business.WelcomeMessage.Content.prefilledText(_:)](./content-swift.enum/prefilledtext%28_%29.md)
   Prefilled text content.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../../Swift/decodable.md)
+- [Encodable](../../../../Swift/encodable.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

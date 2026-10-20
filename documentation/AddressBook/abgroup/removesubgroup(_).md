@@ -1,12 +1,13 @@
 # removeSubgroup(_:)
 
 **Framework**: Address Book  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a subgroup from a group.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Removes a subgroup from a group.
 func removeSubgroup(_ group: ABGroup!) -> Bool
 ```
 
+```objc
+- (BOOL) removeSubgroup:(ABGroup *) group;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-If the `group` argument is not a subgroup, this method does nothing and returns [`false`](https://developer.apple.com/documentation/swift/false). If `group` is `nil`, this method raises an exception.
+If the `group` argument is not a subgroup, this method does nothing and returns [`false`](../../Swift/false.md). If `group` is `nil`, this method raises an exception.
 
 ## Parameters
 
@@ -28,11 +33,12 @@ If the `group` argument is not a subgroup, this method does nothing and returns 
 
 ## See Also
 
-- [func addSubgroup(ABGroup!) -> Bool](abgroup/addsubgroup(_:).md)
+### Managing subgroups
+- [func addSubgroup(ABGroup!) -> Bool](./addsubgroup%28_%29.md)
   Adds a subgroup to another group.
-- [func parentGroups() -> [Any]!](abgroup/parentgroups.md)
+- [func parentGroups() -> [Any]!](./parentgroups%28%29.md)
   Returns an array containing a group’s parents—that is, the groups that a group belongs to.
-- [func subgroups() -> [Any]!](abgroup/subgroups.md)
+- [func subgroups() -> [Any]!](./subgroups%28%29.md)
   Returns an array containing a group’s subgroups.
 
 

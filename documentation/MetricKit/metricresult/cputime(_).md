@@ -1,7 +1,8 @@
 # MetricResult.cpuTime(_:)
 
 **Framework**: MetricKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -17,9 +18,10 @@ case cpuTime(CPUTimeMetric)
 
 ## See Also
 
-- [case cpuInstructionsCount(CPUInstructionsCountMetric)](metricresult/cpuinstructionscount(_:).md)
-- [case peakMemory(PeakMemoryMetric)](metricresult/peakmemory(_:).md)
-- [case suspendedMemory(SuspendedMemoryMetric)](metricresult/suspendedmemory(_:).md)
+### CPU and memory
+- [case cpuInstructionsCount(CPUInstructionsCountMetric)](./cpuinstructionscount%28_%29.md)
+- [case peakMemory(PeakMemoryMetric)](./peakmemory%28_%29.md)
+- [case suspendedMemory(SuspendedMemoryMetric)](./suspendedmemory%28_%29.md)
 
 
 ---

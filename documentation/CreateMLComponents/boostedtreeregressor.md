@@ -1,7 +1,8 @@
 # BoostedTreeRegressor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A gradient boosted decision tree regressor.
 
@@ -23,59 +24,60 @@ struct BoostedTreeRegressor<Annotation>
 ## Topics
 
 ### Creating a regressor
-- [init(annotationColumnName: String, featureColumnNames: [String], configuration: BoostedTreeConfiguration)](boostedtreeregressor/init(annotationcolumnname:featurecolumnnames:configuration:).md)
+- [init(annotationColumnName: String, featureColumnNames: [String], configuration: BoostedTreeConfiguration)](./boostedtreeregressor/init%28annotationcolumnname,featurecolumnnames,configuration%29.md)
   Creates a boosted tree regressor.
 ### Getting the properties
-- [var annotationColumnID: ColumnID<Annotation>](boostedtreeregressor/annotationcolumnid.md)
+- [var annotationColumnID: ColumnID<Annotation>](./boostedtreeregressor/annotationcolumnid.md)
   The annotation column identifier.
-- [var configuration: BoostedTreeConfiguration](boostedtreeregressor/configuration.md)
+- [var configuration: BoostedTreeConfiguration](./boostedtreeregressor/configuration.md)
   Boosted tree configuration.
-- [var featureColumnNames: [String]](boostedtreeregressor/featurecolumnnames.md)
+- [var featureColumnNames: [String]](./boostedtreeregressor/featurecolumnnames.md)
   The names of the columns containing feature values.
 ### Fitting a regressor model
-- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> TreeRegressorModel](boostedtreeregressor/fitted(to:validateon:eventhandler:).md)
+- [func fitted(to: DataFrame, validateOn: DataFrame?, eventHandler: EventHandler?) async throws -> TreeRegressorModel](./boostedtreeregressor/fitted%28to,validateon,eventhandler%29.md)
   Fits a boosted tree regressor model to a collection of examples.
-- [BoostedTreeRegressor.Transformer](boostedtreeregressor/transformer.md)
+- [BoostedTreeRegressor.Transformer](./boostedtreeregressor/transformer.md)
   The transformer type created by this estimator.
 ### Encoding and decoding a regressor
-- [func encodeWithOptimizer(TreeRegressorModel, to: inout any EstimatorEncoder) throws](boostedtreeregressor/encodewithoptimizer(_:to:).md)
+- [func encodeWithOptimizer(TreeRegressorModel, to: inout any EstimatorEncoder) throws](./boostedtreeregressor/encodewithoptimizer%28_,to%29.md)
   Encodes the transformer and optimizer to an encoder.
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> TreeRegressorModel](boostedtreeregressor/decodewithoptimizer(from:).md)
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> TreeRegressorModel](./boostedtreeregressor/decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer with a decoder.
 ### Default Implementations
-- [UpdatableSupervisedTabularEstimator Implementations](boostedtreeregressor/updatablesupervisedtabularestimator-implementations.md)
+- [UpdatableSupervisedTabularEstimator Implementations](./boostedtreeregressor/updatablesupervisedtabularestimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedTabularEstimator](supervisedtabularestimator.md)
-- [UpdatableSupervisedTabularEstimator](updatablesupervisedtabularestimator.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedTabularEstimator](./supervisedtabularestimator.md)
+- [UpdatableSupervisedTabularEstimator](./updatablesupervisedtabularestimator.md)
 
 ## See Also
 
-- [protocol Regressor](regressor.md)
+### Regressors
+- [protocol Regressor](./regressor.md)
   A transformer that predicts a float value.
-- [struct LinearRegressor](linearregressor.md)
+- [struct LinearRegressor](./linearregressor.md)
   A linear regressor.
-- [struct LinearRegressorModel](linearregressormodel.md)
+- [struct LinearRegressorModel](./linearregressormodel.md)
   A trained linear regressor model.
-- [struct MultivariateLinearRegressor](multivariatelinearregressor.md)
+- [struct MultivariateLinearRegressor](./multivariatelinearregressor.md)
   A multivariate linear regressor.
-- [struct MultivariateLinearRegressorConfiguration](multivariatelinearregressorconfiguration.md)
+- [struct MultivariateLinearRegressorConfiguration](./multivariatelinearregressorconfiguration.md)
   A linear regressor configuration.
-- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+- [MultivariateLinearRegressor.Model](./multivariatelinearregressor/model.md)
   A trained multivariate linear regressor model.
-- [struct FullyConnectedNetworkRegressor](fullyconnectednetworkregressor.md)
+- [struct FullyConnectedNetworkRegressor](./fullyconnectednetworkregressor.md)
   A regressor that uses a fully connected network.
-- [struct FullyConnectedNetworkRegressorModel](fullyconnectednetworkregressormodel.md)
+- [struct FullyConnectedNetworkRegressorModel](./fullyconnectednetworkregressormodel.md)
   A regressor model that uses a fully connected network.
-- [struct TreeRegressorModel](treeregressormodel.md)
+- [struct TreeRegressorModel](./treeregressormodel.md)
   A trained tree regressor model.
-- [enum OptimizationStrategy](optimizationstrategy.md)
+- [enum OptimizationStrategy](./optimizationstrategy.md)
   A linear optimization strategy.
 
 

@@ -1,7 +1,8 @@
 # cameraDistance
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The altitude of the camera relative to the elevation of the center of the map.
 
@@ -10,7 +11,7 @@ The altitude of the camera relative to the elevation of the center of the map.
 
 ## Declaration
 
-```swift
+```
 cameraDistance?: number;
 ```
 

@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,7 +16,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [let ASErrorDomain: String](aserrordomain.md)
+### Accessing the error domain
+- [let ASErrorDomain: String](../aserrordomain.md)
   NSError domain for AccessorySetupKit errors.
 
 

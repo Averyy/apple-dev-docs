@@ -1,7 +1,8 @@
 # algorithm
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The algorithm used by the generator.
 
@@ -20,19 +21,20 @@ var algorithm: ASImportableCredential.TOTP.Algorithm
 
 #### Discussion
 
-This value must be one of [`ASImportableCredential.TOTP.Algorithm.sha1`](asimportablecredential/totp/algorithm-swift.enum/sha1.md), [`ASImportableCredential.TOTP.Algorithm.sha256`](asimportablecredential/totp/algorithm-swift.enum/sha256.md), or [`ASImportableCredential.TOTP.Algorithm.sha512`](asimportablecredential/totp/algorithm-swift.enum/sha512.md).
+This value must be one of [`ASImportableCredential.TOTP.Algorithm.sha1`](./algorithm-swift.enum/sha1.md), [`ASImportableCredential.TOTP.Algorithm.sha256`](./algorithm-swift.enum/sha256.md), or [`ASImportableCredential.TOTP.Algorithm.sha512`](./algorithm-swift.enum/sha512.md).
 
 ## See Also
 
-- [var secret: Data](asimportablecredential/totp/secret.md)
+### Accessing TOTP properties
+- [var secret: Data](./secret.md)
   The secret associated with this generator.
-- [var period: UInt16](asimportablecredential/totp/period.md)
+- [var period: UInt16](./period.md)
   The period, in seconds, used by the generator to refresh codes.
-- [var digits: UInt16](asimportablecredential/totp/digits.md)
+- [var digits: UInt16](./digits.md)
   The number of digits in the code used by the generator.
-- [ASImportableCredential.TOTP.Algorithm](asimportablecredential/totp/algorithm-swift.enum.md)
+- [ASImportableCredential.TOTP.Algorithm](./algorithm-swift.enum.md)
   An enumeration of algorithm types that all importers are expected to support.
-- [var issuer: String?](asimportablecredential/totp/issuer.md)
+- [var issuer: String?](./issuer.md)
   The issuer of the generator, if any.
 
 

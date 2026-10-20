@@ -1,7 +1,8 @@
 # init(location:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new reverse geocoder request object with the provided location.
 
@@ -18,6 +19,10 @@ Initializes a new reverse geocoder request object with the provided location.
 
 ```swift
 init?(location: CLLocation)
+```
+
+```objc
+- (instancetype) initWithLocation:(CLLocation *) location;
 ```
 
 

@@ -1,7 +1,8 @@
 # WebKitPoint
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 `WebKitPoint` objects represent a point in two-dimensional space used by CSS transitions specified using the -webkit-transition property.
 
@@ -11,16 +12,16 @@
 
 ## Declaration
 
-```swift
+```
 interface WebKitPoint
 ```
 
 ## Topics
 
 ### Accessing Properties
-- [x](webkitpoint/1634113-x.md)
+- [x](./webkitpoint/api-1634113-x.md)
   The x coordinate for the point.
-- [y](webkitpoint/1631459-y.md)
+- [y](./webkitpoint/api-1631459-y.md)
   The y coordinate for the point.
 
 

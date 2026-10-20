@@ -1,7 +1,8 @@
 # isFinite
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether this instance is finite.
 

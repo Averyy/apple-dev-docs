@@ -1,7 +1,8 @@
 # SKTestFailures.Purchase.generic(_:)
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -20,7 +21,8 @@ case generic(StoreKitError)
 
 ## See Also
 
-- [SKTestFailures.Purchase.purchase(_:)](sktestfailures/purchase/purchase(_:).md)
+### Enumeration Cases
+- [SKTestFailures.Purchase.purchase(_:)](./purchase%28_%29.md)
 
 
 ---

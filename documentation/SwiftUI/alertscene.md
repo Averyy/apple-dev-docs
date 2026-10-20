@@ -1,7 +1,8 @@
 # AlertScene
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scene that renders itself as a standalone alert dialog.
 
@@ -40,50 +41,51 @@ struct MyApp: App {
 }
 ```
 
-All the actions you provide in the [`ContentBuilder`](contentbuilder.md) dismiss the alert when someone invokes them. Like the alert modifier, specify the role of the buttons with [`cancel`](buttonrole/cancel.md) or [`destructive`](buttonrole/destructive.md). If you don’t provide any actions, the system automatically includes a button with the title “OK” that dismisses the alert scene.
+All the actions you provide in the [`ContentBuilder`](./contentbuilder.md) dismiss the alert when someone invokes them. Like the alert modifier, specify the role of the buttons with [`cancel`](./buttonrole/cancel.md) or [`destructive`](./buttonrole/destructive.md). If you don’t provide any actions, the system automatically includes a button with the title “OK” that dismisses the alert scene.
 
 ## Topics
 
 ### Initializers
-- [init(_:isPresented:actions:)](alertscene/init(_:ispresented:actions:).md)
+- [init(_:isPresented:actions:)](./alertscene/init%28_,ispresented,actions%29.md)
   Creates an alert scene with a title and a set of actions. Note that this creates a text view on your behalf.
-- [init(_:isPresented:actions:message:)](alertscene/init(_:ispresented:actions:message:).md)
+- [init(_:isPresented:actions:message:)](./alertscene/init%28_,ispresented,actions,message%29.md)
   Creates an alert scene with a title, a set of actions, and a message. Note that this creates a text view on your behalf.
-- [init(_:isPresented:presenting:actions:)](alertscene/init(_:ispresented:presenting:actions:).md)
+- [init(_:isPresented:presenting:actions:)](./alertscene/init%28_,ispresented,presenting,actions%29.md)
   Creates an alert scene, using the given data to produce the alert’s content with a title, and a set of actions. Note that this creates a text view on your behalf.
-- [init(_:isPresented:presenting:actions:message:)](alertscene/init(_:ispresented:presenting:actions:message:).md)
+- [init(_:isPresented:presenting:actions:message:)](./alertscene/init%28_,ispresented,presenting,actions,message%29.md)
   Creates an alert scene, using the given data to produce the alert’s content with a title, a set of actions, and a message. Note that this creates a text view on your behalf.
-- [init(_:item:actions:)](alertscene/init(_:item:actions:).md)
+- [init(_:item:actions:)](./alertscene/init%28_,item,actions%29.md)
   Creates an alert scene, using the given data to produce the alert’s content with a title, and a set of actions. Note that this creates a text view on your behalf.
-- [init(_:item:actions:message:)](alertscene/init(_:item:actions:message:).md)
+- [init(_:item:actions:message:)](./alertscene/init%28_,item,actions,message%29.md)
   Creates an alert scene, using the given data to produce the alert’s content with a title, a set of actions, and a message. Note that this creates a text view on your behalf.
 
 ## Relationships
 
 ### Conforms To
-- [Scene](scene.md)
+- [Scene](./scene.md)
 
 ## See Also
 
-- [func alert(_:isPresented:actions:)](view/alert(_:ispresented:actions:).md)
+### Presenting an alert
+- [func alert(_:isPresented:actions:)](./view/alert%28_,ispresented,actions%29.md)
   Presents an alert when a given condition is true, using a localized string resource for the title.
-- [func alert(_:isPresented:presenting:actions:)](view/alert(_:ispresented:presenting:actions:).md)
+- [func alert(_:isPresented:presenting:actions:)](./view/alert%28_,ispresented,presenting,actions%29.md)
   Presents an alert using the given data to produce the alert’s content and a localized string resource for a title.
-- [func alert(_:item:actions:)](view/alert(_:item:actions:).md)
+- [func alert(_:item:actions:)](./view/alert%28_,item,actions%29.md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
-- [func alert(error:actions:)](view/alert(error:actions:).md)
+- [func alert(error:actions:)](./view/alert%28error,actions%29.md)
   Presents an alert when an error is present.
-- [func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View](view/alert(ispresented:error:actions:).md)
+- [func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View](./view/alert%28ispresented,error,actions%29.md)
   Presents an alert when an error is present.
-- [func alert(_:isPresented:actions:message:)](view/alert(_:ispresented:actions:message:).md)
+- [func alert(_:isPresented:actions:message:)](./view/alert%28_,ispresented,actions,message%29.md)
   Presents an alert with a message when a given condition is true, using a localized string resource for a title.
-- [func alert(_:isPresented:presenting:actions:message:)](view/alert(_:ispresented:presenting:actions:message:).md)
+- [func alert(_:isPresented:presenting:actions:message:)](./view/alert%28_,ispresented,presenting,actions,message%29.md)
   Presents an alert with a message using the given data to produce the alert’s content and a localized string resource for a title.
-- [func alert(_:item:actions:message:)](view/alert(_:item:actions:message:).md)
+- [func alert(_:item:actions:message:)](./view/alert%28_,item,actions,message%29.md)
   Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
-- [func alert(error:actions:message:)](view/alert(error:actions:message:).md)
+- [func alert(error:actions:message:)](./view/alert%28error,actions,message%29.md)
   Presents an alert with a message when an error is present.
-- [func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(ispresented:error:actions:message:).md)
+- [func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, actions: (E) -> A, message: (E) -> M) -> some View](./view/alert%28ispresented,error,actions,message%29.md)
   Presents an alert with a message when an error is present.
 
 

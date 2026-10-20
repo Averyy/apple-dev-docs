@@ -1,7 +1,8 @@
 # stopSearchingForNewAccessories()
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops searching for new accessories.
 
@@ -17,15 +18,20 @@ Stops searching for new accessories.
 func stopSearchingForNewAccessories()
 ```
 
+```objc
+- (void) stopSearchingForNewAccessories;
+```
+
 #### Discussion
 
-After you call this method, HomeKit stops sending updates to your browser delegate. Scanning may continue for system reasons or if other delegates are still active, but the [`discoveredAccessories`](hmaccessorybrowser/discoveredaccessories.md) array remains unchanged after you stop the search until your app calls the [`startSearchingForNewAccessories()`](hmaccessorybrowser/startsearchingfornewaccessories().md) method again.
+After you call this method, HomeKit stops sending updates to your browser delegate. Scanning may continue for system reasons or if other delegates are still active, but the [`discoveredAccessories`](./discoveredaccessories.md) array remains unchanged after you stop the search until your app calls the [`startSearchingForNewAccessories()`](./startsearchingfornewaccessories%28%29.md) method again.
 
 ## See Also
 
-- [var discoveredAccessories: [HMAccessory]](hmaccessorybrowser/discoveredaccessories.md)
+### Discovering accessories
+- [var discoveredAccessories: [HMAccessory]](./discoveredaccessories.md)
   An array of accessories discovered during a search.
-- [func startSearchingForNewAccessories()](hmaccessorybrowser/startsearchingfornewaccessories.md)
+- [func startSearchingForNewAccessories()](./startsearchingfornewaccessories%28%29.md)
   Starts searching for accessories not yet associated with a home.
 
 

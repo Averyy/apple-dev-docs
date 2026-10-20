@@ -1,7 +1,8 @@
 # kAXValueChangedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The value of an accessibility object’s value attribute was changed.
 
@@ -12,6 +13,10 @@ The value of an accessibility object’s value attribute was changed.
 
 ```swift
 var kAXValueChangedNotification: String { get }
+```
+
+```c
+#define kAXValueChangedNotification
 ```
 
 

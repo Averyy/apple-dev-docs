@@ -1,7 +1,8 @@
 # isCoalescingUndo
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether undo coalescing is in progress.
 
@@ -14,13 +15,18 @@ A Boolean value that indicates whether undo coalescing is in progress.
 var isCoalescingUndo: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isCoalescingUndo) BOOL coalescingUndo;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if undo coalescing is in progress, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if undo coalescing is in progress, otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func breakUndoCoalescing()](nstextview/breakundocoalescing.md)
+### Supporting undo
+- [func breakUndoCoalescing()](./breakundocoalescing%28%29.md)
   Informs the receiver that it should begin coalescing successive typing operations in a new undo grouping.
 
 

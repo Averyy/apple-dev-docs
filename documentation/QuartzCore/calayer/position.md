@@ -1,7 +1,8 @@
 # position
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer’s position in its superlayer’s coordinate space. Animatable.
 
@@ -19,25 +20,30 @@ The layer’s position in its superlayer’s coordinate space. Animatable.
 var position: CGPoint { get set }
 ```
 
+```objc
+@property CGPoint position;
+```
+
 #### Discussion
 
-The value of this property is specified in points and is always specified relative to the value in the [`anchorPoint`](calayer/anchorpoint.md) property. For new standalone layers, the default position is set to (0.0, 0.0). Changing the [`frame`](calayer/frame.md) property also updates the value in this property.
+The value of this property is specified in points and is always specified relative to the value in the [`anchorPoint`](./anchorpoint.md) property. For new standalone layers, the default position is set to (0.0, 0.0). Changing the [`frame`](./frame.md) property also updates the value in this property.
 
-For more information about the relationship between the [`frame`](calayer/frame.md), [`bounds`](calayer/bounds.md), [`anchorPoint`](calayer/anchorpoint.md) and [`position`](calayer/position.md) properties, see [`Core Animation Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514).
+For more information about the relationship between the [`frame`](./frame.md), [`bounds`](./bounds.md), [`anchorPoint`](./anchorpoint.md) and [`position`](./position.md) properties, see [Core Animation Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreAnimation_guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004514).
 
 ## See Also
 
-- [var frame: CGRect](calayer/frame.md)
+### Modifying the layer geometry
+- [var frame: CGRect](./frame.md)
   The layer’s frame rectangle.
-- [var bounds: CGRect](calayer/bounds.md)
+- [var bounds: CGRect](./bounds.md)
   The layer’s bounds rectangle. Animatable.
-- [var zPosition: CGFloat](calayer/zposition.md)
+- [var zPosition: CGFloat](./zposition.md)
   The layer’s position on the z axis. Animatable.
-- [var anchorPointZ: CGFloat](calayer/anchorpointz.md)
+- [var anchorPointZ: CGFloat](./anchorpointz.md)
   The anchor point for the layer’s position along the z axis. Animatable.
-- [var anchorPoint: CGPoint](calayer/anchorpoint.md)
+- [var anchorPoint: CGPoint](./anchorpoint.md)
   Defines the anchor point of the layer’s bounds rectangle. Animatable.
-- [var contentsScale: CGFloat](calayer/contentsscale.md)
+- [var contentsScale: CGFloat](./contentsscale.md)
   The scale factor applied to the layer.
 
 

@@ -1,7 +1,8 @@
 # applying(_:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new drawing object by applying the specified transform to a copy of the current object’s contents.
 
@@ -18,6 +19,10 @@ Returns a new drawing object by applying the specified transform to a copy of th
 func applying(_ transform: CGAffineTransform) -> PKDrawing
 ```
 
+```objc
+- (PKDrawing *) drawingByApplyingTransform:(CGAffineTransform) transform;
+```
+
 #### Return Value
 
 A new drawing created by applying the specified `transform` to the current object.
@@ -28,9 +33,10 @@ A new drawing created by applying the specified `transform` to the current objec
 
 ## See Also
 
-- [func appendingStrokes([PKStroke]) -> PKDrawing](pkdrawingreference/appendingstrokes(_:).md)
+### Modifying the drawing
+- [func appendingStrokes([PKStroke]) -> PKDrawing](./appendingstrokes%28_%29.md)
   Returns a copy of the current drawing with the strokes you provide appended.
-- [func appending(PKDrawing) -> PKDrawing](pkdrawingreference/appending(_:).md)
+- [func appending(PKDrawing) -> PKDrawing](./appending%28_%29.md)
   Returns a new drawing created by appending the current drawing with another drawing you provide.
 
 

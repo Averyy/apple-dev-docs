@@ -1,15 +1,20 @@
 # secondary
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.15 (renamed: NSBox.BoxType.primary)
 
 ## Declaration
 
 ```swift
 static var secondary: NSBox.BoxType { get }
+```
+
+```c
+static const NSBoxType NSBoxSecondary;
 ```
 
 #### Discussion
@@ -18,10 +23,11 @@ Specifies the secondary box appearance.
 
 ## See Also
 
-- [NSBox.BoxType.primary](nsbox/boxtype-swift.enum/primary.md)
-- [NSBox.BoxType.separator](nsbox/boxtype-swift.enum/separator.md)
-- [NSBox.BoxType.custom](nsbox/boxtype-swift.enum/custom.md)
-- [static var oldStyle: NSBox.BoxType](nsbox/boxtype-swift.enum/oldstyle.md)
+### Constants
+- [NSBox.BoxType.primary](./primary.md)
+- [NSBox.BoxType.separator](./separator.md)
+- [NSBox.BoxType.custom](./custom.md)
+- [static var oldStyle: NSBox.BoxType](./oldstyle.md)
 
 
 ---

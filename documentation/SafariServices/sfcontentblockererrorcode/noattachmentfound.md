@@ -1,12 +1,13 @@
 # SFContentBlockerErrorCode.noAttachmentFound
 
 **Framework**: Safari Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.4+
+- iOS 9.0+ - Deprecated in 10.0 (renamed: SFError.noAttachmentFound)
+- iPadOS 9.0+ - Deprecated in 10.0 (renamed: SFError.noAttachmentFound)
+- Mac Catalyst 13.4+ - Deprecated in 13.4 (renamed: SFErrorCode.noAttachmentFound)
 
 ## Declaration
 
@@ -14,14 +15,19 @@
 case noAttachmentFound
 ```
 
+```c
+SFContentBlockerNoAttachmentFound
+```
+
 #### Discussion
 
-The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/foundation/nsextensionitem) that did not include an attachment.
+The Content Blocker extension returned an [`NSExtensionItem`](../../Foundation/nsextensionitem.md) that did not include an attachment.
 
 ## See Also
 
-- [SFContentBlockerErrorCode.noExtensionFound](sfcontentblockererrorcode/noextensionfound.md)
-- [SFContentBlockerErrorCode.loadingInterrupted](sfcontentblockererrorcode/loadinginterrupted.md)
+### Constants
+- [SFContentBlockerErrorCode.noExtensionFound](./noextensionfound.md)
+- [SFContentBlockerErrorCode.loadingInterrupted](./loadinginterrupted.md)
 
 
 ---

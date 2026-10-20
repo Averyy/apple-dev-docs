@@ -1,7 +1,8 @@
 # wrappedValue
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The underlying value referenced by the environment object.
 
@@ -23,15 +24,16 @@ The underlying value referenced by the environment object.
 
 #### Discussion
 
-This property provides primary access to the value’s data. However, you don’t access `wrappedValue` directly. Instead, you use the property variable created with the [`EnvironmentObject`](environmentobject.md) attribute.
+This property provides primary access to the value’s data. However, you don’t access `wrappedValue` directly. Instead, you use the property variable created with the [`EnvironmentObject`](../environmentobject.md) attribute.
 
 When a mutable value changes, the new value is immediately available. However, a view displaying the value is updated asynchronously and may not show the new value immediately.
 
 ## See Also
 
-- [var projectedValue: EnvironmentObject<ObjectType>.Wrapper](environmentobject/projectedvalue.md)
+### Getting the value
+- [var projectedValue: EnvironmentObject<ObjectType>.Wrapper](./projectedvalue.md)
   A projection of the environment object that creates bindings to its properties using dynamic member lookup.
-- [EnvironmentObject.Wrapper](environmentobject/wrapper.md)
+- [EnvironmentObject.Wrapper](./wrapper.md)
   A wrapper of the underlying environment object that can create bindings to its properties using dynamic member lookup.
 
 

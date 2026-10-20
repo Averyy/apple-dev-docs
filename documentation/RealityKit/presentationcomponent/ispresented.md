@@ -1,7 +1,8 @@
 # isPresented
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A boolean value that indicates whether the content is presented.
 

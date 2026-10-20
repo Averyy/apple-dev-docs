@@ -1,15 +1,20 @@
 # fileTransferServicesSendFileProgress(_:transferProgress:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func fileTransferServicesSendFileProgress(_ inServices: OBEXFileTransferServices!, transferProgress inProgressDescription: [AnyHashable : Any]!)
+```
+
+```objc
+- (void) fileTransferServicesSendFileProgress:(OBEXFileTransferServices *) inServices transferProgress:(NSDictionary *) inProgressDescription;
 ```
 
 

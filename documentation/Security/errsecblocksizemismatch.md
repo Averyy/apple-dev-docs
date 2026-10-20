@@ -1,7 +1,8 @@
 # errSecBlockSizeMismatch
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A block size mismatch occurred.
 
@@ -18,6 +19,10 @@ A block size mismatch occurred.
 
 ```swift
 var errSecBlockSizeMismatch: OSStatus { get }
+```
+
+```c
+errSecBlockSizeMismatch
 ```
 
 

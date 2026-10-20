@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of the tensor’s auxiliary planes.
@@ -18,6 +19,10 @@ An array of the tensor’s auxiliary planes.
 
 ```swift
 var auxiliaryPlanes: [MTLTensorAuxiliaryPlaneType] { get }
+```
+
+```objc
+@property (readonly) NSArray<MTLTensorAuxiliaryPlaneType *> * auxiliaryPlanes;
 ```
 
 

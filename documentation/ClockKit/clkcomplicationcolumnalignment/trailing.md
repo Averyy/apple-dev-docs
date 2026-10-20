@@ -1,12 +1,15 @@
 # CLKComplicationColumnAlignment.trailing
 
 **Framework**: ClockKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Trailing alignment for the designated column.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -14,13 +17,18 @@ Trailing alignment for the designated column.
 case trailing
 ```
 
+```c
+CLKComplicationColumnAlignmentTrailing
+```
+
 ## See Also
 
-- [CLKComplicationColumnAlignment.leading](clkcomplicationcolumnalignment/leading.md)
+### Constants
+- [CLKComplicationColumnAlignment.leading](./leading.md)
   Leading alignment for the designated column.
-- [static var left: CLKComplicationColumnAlignment](clkcomplicationcolumnalignment/left.md)
+- [static var left: CLKComplicationColumnAlignment](./left.md)
   Left alignment for the designated column.
-- [static var right: CLKComplicationColumnAlignment](clkcomplicationcolumnalignment/right.md)
+- [static var right: CLKComplicationColumnAlignment](./right.md)
   Right alignment for the designated column.
 
 

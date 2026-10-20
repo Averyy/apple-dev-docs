@@ -1,7 +1,8 @@
 # showPanel(_:completion:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Shows an overlay with the specified panel.
 
@@ -13,7 +14,15 @@ Shows an overlay with the specified panel.
 ## Declaration
 
 ```swift
+func showPanel(_ panel: CPMapPanel, completion: ((Bool, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func showPanel(_ panel: CPMapPanel) async throws -> Bool
+```
+
+```objc
+- (void) showPanel:(CPMapPanel *) panel completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
 ## Parameters

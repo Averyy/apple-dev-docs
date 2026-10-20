@@ -1,7 +1,8 @@
 # VZStorageDevice
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a storage device in a VM.
 
@@ -14,23 +15,27 @@ A class that represents a storage device in a VM.
 class VZStorageDevice
 ```
 
+```objc
+@interface VZStorageDevice : NSObject
+```
+
 #### Overview
 
-Don’t create a `VZStorageDevice` directly. Use one of its subclasses, such as [`VZUSBMassStorageDevice`](vzusbmassstoragedevice.md), instead.
+Don’t create a `VZStorageDevice` directly. Use one of its subclasses, such as [`VZUSBMassStorageDevice`](./vzusbmassstoragedevice.md), instead.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZUSBMassStorageDevice](vzusbmassstoragedevice.md)
+- [VZUSBMassStorageDevice](./vzusbmassstoragedevice.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # selectedViewController
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller associated with the selected object..
 
@@ -14,11 +15,15 @@ The view controller associated with the selected object..
 var selectedViewController: NSViewController? { get }
 ```
 
+```objc
+@property (strong, readonly, nullable) NSViewController * selectedViewController;
+```
+
 #### Discussion
 
 May be `nil` if not using view controllers.
 
-This property is only relevant in book mode. See [`Book Mode (View Controller Mode)`](nspagecontroller#Book-Mode-View-Controller-Mode.md) for details.
+This property is only relevant in book mode. See [Book Mode (View Controller Mode)](../nspagecontroller.md#Book-Mode-View-Controller-Mode) for details.
 
 
 ---

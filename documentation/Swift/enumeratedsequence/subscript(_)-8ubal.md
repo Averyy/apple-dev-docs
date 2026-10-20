@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Swift  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 
@@ -51,7 +52,7 @@ print(streetsSlice[0])
 // error: Index out of bounds
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

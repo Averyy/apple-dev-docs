@@ -1,7 +1,8 @@
 # location
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of this point.
 
@@ -18,9 +19,14 @@ The location of this point.
 var location: CGPoint { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGPoint location;
+```
+
 ## See Also
 
-- [var timeOffset: TimeInterval](pkstrokepointreference/timeoffset.md)
+### Getting the point’s location
+- [var timeOffset: TimeInterval](./timeoffset.md)
   The time offset since the start of the stroke path in seconds.
 
 

@@ -1,12 +1,13 @@
 # textView(_:willDisplayToolTip:forCharacterAt:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the actual tooltip to display.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,17 @@ Returns the actual tooltip to display.
 optional func textView(_ textView: NSTextView, willDisplayToolTip tooltip: String, forCharacterAt characterIndex: Int) -> String?
 ```
 
+```objc
+- (NSString *) textView:(NSTextView *) textView willDisplayToolTip:(NSString *) tooltip forCharacterAtIndex:(NSUInteger) characterIndex;
+```
+
 #### Return Value
 
 The actual tooltip to display, or `nil` to suppress display of the tooltip.
 
 #### Discussion
 
-The tooltip string is the value of the [`toolTip`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/tooltip) attribute at `characterIndex`.
+The tooltip string is the value of the [`toolTip`](../../Foundation/nsattributedstring/key/tooltip.md) attribute at `characterIndex`.
 
 ## Parameters
 

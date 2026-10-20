@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The size of the acceleration structure’s memory allocation, in bytes.
@@ -18,6 +19,10 @@ The size of the acceleration structure’s memory allocation, in bytes.
 
 ```swift
 var size: Int { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSUInteger size;
 ```
 
 

@@ -1,7 +1,8 @@
 # AppStoreVersionPhasedReleaseCreateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,23 +11,23 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionPhasedReleaseCreateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppStoreVersionPhasedReleaseCreateRequest.Data.Attributes](appstoreversionphasedreleasecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppStoreVersionPhasedReleaseCreateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
-- [object AppStoreVersionPhasedReleaseCreateRequest.Data.Relationships](appstoreversionphasedreleasecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppStoreVersionPhasedReleaseCreateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
 
 - `attributes` (AppStoreVersionPhasedReleaseCreateRequest.Data.Attributes)
 - `relationships` (AppStoreVersionPhasedReleaseCreateRequest.Data.Relationships) *(required)*
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appStoreVersionPhasedReleases`
 
 
 ---

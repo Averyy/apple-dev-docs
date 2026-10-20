@@ -1,7 +1,8 @@
 # toggleFontPanel(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Toggles the visibility of the font panel.
 
@@ -18,9 +19,14 @@ Toggles the visibility of the font panel.
 class func toggleFontPanel(_ sender: Any)
 ```
 
+```objc
++ (void) toggleFontPanel:(id) sender;
+```
+
 ## See Also
 
-- [class var isFontPanelVisible: Bool](uitextformattingcoordinator/isfontpanelvisible.md)
+### Showing the Font Panel
+- [class var isFontPanelVisible: Bool](./isfontpanelvisible.md)
   A Boolean value that indicates whether the font panel is visible.
 
 

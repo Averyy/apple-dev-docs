@@ -1,7 +1,8 @@
 # kAXRadioGroupRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A set of radio buttons.
 
@@ -12,6 +13,10 @@ A set of radio buttons.
 
 ```swift
 var kAXRadioGroupRole: String { get }
+```
+
+```c
+#define kAXRadioGroupRole
 ```
 
 

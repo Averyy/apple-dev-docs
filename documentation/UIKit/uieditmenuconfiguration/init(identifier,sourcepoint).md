@@ -1,7 +1,8 @@
 # init(identifier:sourcePoint:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new configuration with the source location you specify.
 
@@ -9,7 +10,7 @@ Initializes a new configuration with the source location you specify.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

@@ -1,14 +1,15 @@
 # StandardUSB::getPlatformCapabilityDescriptorWithUUID
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```cpp
 const PlatformCapabilityDescriptor * StandardUSB::getPlatformCapabilityDescriptorWithUUID(const BOSDescriptor *bosDescriptor, uuid_t uuid);
 ```
 

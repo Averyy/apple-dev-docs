@@ -1,7 +1,8 @@
 # dequantize(_:scale:zeroPoint:dataType:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates Dequantize operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates Dequantize operation and returns the result tensor.
 
 ```swift
 func dequantize(_ tensor: MPSGraphTensor, scale: Double, zeroPoint: Double, dataType: MPSDataType, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) dequantizeTensor:(MPSGraphTensor *) tensor scale:(double) scale zeroPoint:(double) zeroPoint dataType:(MPSDataType) dataType name:(NSString *) name;
 ```
 
 #### Return Value

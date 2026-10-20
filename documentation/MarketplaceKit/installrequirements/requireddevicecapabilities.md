@@ -1,7 +1,8 @@
 # requiredDeviceCapabilities
 
 **Framework**: MarketplaceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The capabilities that a device requires to install an app.
 
@@ -17,7 +18,7 @@ var requiredDeviceCapabilities: Set<String>?
 
 #### Discussion
 
-This set contains one or more [`UIRequiredDeviceCapabilities`](https://developer.apple.com/documentation/bundleresources/information-property-list/uirequireddevicecapabilities).
+This set contains one or more [`UIRequiredDeviceCapabilities`](../../BundleResources/information-property-list/uirequireddevicecapabilities.md).
 
 
 ---

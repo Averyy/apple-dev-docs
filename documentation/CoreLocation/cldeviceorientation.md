@@ -1,7 +1,8 @@
 # CLDeviceOrientation
 
 **Framework**: Core Location  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the physical orientation of the device.
 
@@ -20,53 +21,58 @@ Constants indicating the physical orientation of the device.
 enum CLDeviceOrientation
 ```
 
+```c
+enum CLDeviceOrientation : int;
+```
+
 ## Topics
 
 ### Device Orientations
-- [CLDeviceOrientation.unknown](cldeviceorientation/unknown.md)
+- [CLDeviceOrientation.unknown](./cldeviceorientation/unknown.md)
   The orientation is currently not known.
-- [CLDeviceOrientation.portrait](cldeviceorientation/portrait.md)
+- [CLDeviceOrientation.portrait](./cldeviceorientation/portrait.md)
   The device is in portrait mode, with the device held upright and the home button at the bottom.
-- [CLDeviceOrientation.portraitUpsideDown](cldeviceorientation/portraitupsidedown.md)
+- [CLDeviceOrientation.portraitUpsideDown](./cldeviceorientation/portraitupsidedown.md)
   The device is in portrait mode but upside down, with the device held upright and the home button at the top.
-- [CLDeviceOrientation.landscapeLeft](cldeviceorientation/landscapeleft.md)
+- [CLDeviceOrientation.landscapeLeft](./cldeviceorientation/landscapeleft.md)
   The device is in landscape mode, with the device held upright and the home button on the right side.
-- [CLDeviceOrientation.landscapeRight](cldeviceorientation/landscaperight.md)
+- [CLDeviceOrientation.landscapeRight](./cldeviceorientation/landscaperight.md)
   The device is in landscape mode, with the device held upright and the home button on the left side.
-- [CLDeviceOrientation.faceUp](cldeviceorientation/faceup.md)
+- [CLDeviceOrientation.faceUp](./cldeviceorientation/faceup.md)
   The device is held parallel to the ground with the screen facing upwards.
-- [CLDeviceOrientation.faceDown](cldeviceorientation/facedown.md)
+- [CLDeviceOrientation.faceDown](./cldeviceorientation/facedown.md)
   The device is held parallel to the ground with the screen facing downwards.
 ### Initializers
-- [init?(rawValue: Int32)](cldeviceorientation/init(rawvalue:).md)
+- [init?(rawValue: Int32)](./cldeviceorientation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func startUpdatingHeading()](cllocationmanager/startupdatingheading.md)
+### Running the heading service
+- [func startUpdatingHeading()](./cllocationmanager/startupdatingheading%28%29.md)
   Starts the generation of updates that report the user’s current heading.
-- [func stopUpdatingHeading()](cllocationmanager/stopupdatingheading.md)
+- [func stopUpdatingHeading()](./cllocationmanager/stopupdatingheading%28%29.md)
   Stops the generation of heading updates.
-- [func dismissHeadingCalibrationDisplay()](cllocationmanager/dismissheadingcalibrationdisplay.md)
+- [func dismissHeadingCalibrationDisplay()](./cllocationmanager/dismissheadingcalibrationdisplay%28%29.md)
   Dismisses the heading calibration view from the screen immediately.
-- [var headingFilter: CLLocationDegrees](cllocationmanager/headingfilter.md)
+- [var headingFilter: CLLocationDegrees](./cllocationmanager/headingfilter.md)
   The minimum angular change in degrees required to generate new heading events.
-- [let kCLHeadingFilterNone: CLLocationDegrees](kclheadingfilternone.md)
+- [let kCLHeadingFilterNone: CLLocationDegrees](./kclheadingfilternone.md)
   A constant indicating that all header values should be reported.
-- [typealias CLLocationDegrees](cllocationdegrees.md)
+- [typealias CLLocationDegrees](./cllocationdegrees.md)
   A latitude or longitude value specified in degrees.
-- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
+- [var headingBody: (any CLBodyIdentifiable)?](./cllocationmanager/headingbody.md)
   A physical body or view that defines the reference orientation for heading calculations.
-- [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
+- [var headingOrientation: CLDeviceOrientation](./cllocationmanager/headingorientation.md)
   The device orientation to use when computing heading values.
 
 

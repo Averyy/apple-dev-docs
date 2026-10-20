@@ -1,7 +1,8 @@
 # resumeTime
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 The number of seconds from the beginning of the item at which the item begins playing.
 
@@ -10,7 +11,7 @@ The number of seconds from the beginning of the item at which the item begins pl
 
 ## Declaration
 
-```swift
+```
 attribute int resumeTime;
 ```
 
@@ -20,9 +21,10 @@ Use this property to begin playing a media item at a time other than at the begi
 
 ## See Also
 
-- [highlightGroups](mediaitem/1627413-highlightgroups.md)
+### Setting Timing Options
+- [highlightGroups](./api-1627413-highlightgroups.md)
   An array of highlight groups, with each group containing a list of highlights.
-- [interstitials](mediaitem/1627341-interstitials.md)
+- [interstitials](./api-1627341-interstitials.md)
   An array of `interstitial` objects.
 
 

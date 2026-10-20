@@ -1,7 +1,8 @@
 # handle
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The handle to identify and communicate with the person.
 
@@ -24,9 +25,10 @@ A handle can be an email address, phone number, username, or any other person id
 
 ## See Also
 
-- [var avatarImage: CGImage?](communicationtopic/personinformation-swift.struct/avatarimage.md)
+### Accessing properties
+- [var avatarImage: CGImage?](./avatarimage.md)
   An image that represents the person.
-- [var nameComponents: PersonNameComponents?](communicationtopic/personinformation-swift.struct/namecomponents.md)
+- [var nameComponents: PersonNameComponents?](./namecomponents.md)
   The components that make up the person’s name.
 
 

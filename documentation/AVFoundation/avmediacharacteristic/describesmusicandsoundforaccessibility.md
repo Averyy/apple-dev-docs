@@ -1,7 +1,8 @@
 # describesMusicAndSoundForAccessibility
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A media characteristic that indicates that a track or media selection option includes legible content in the language of its specified locale.
 
@@ -20,6 +21,10 @@ A media characteristic that indicates that a track or media selection option inc
 static let describesMusicAndSoundForAccessibility: AVMediaCharacteristic
 ```
 
+```c
+extern AVMediaCharacteristic const AVMediaCharacteristicDescribesMusicAndSoundForAccessibility;
+```
+
 #### Discussion
 
 Legible media options may include transcriptions of spoken dialog and descriptions of music and sound effects.
@@ -30,15 +35,16 @@ For QuickTime movies and `.m4v` files, a media option has this characteristic on
 
 ## See Also
 
-- [static let audible: AVMediaCharacteristic](avmediacharacteristic/audible.md)
+### Audible
+- [static let audible: AVMediaCharacteristic](./audible.md)
   A media characteristic that indicates that a track or media selection option includes audible content.
-- [static let dubbedTranslation: AVMediaCharacteristic](avmediacharacteristic/dubbedtranslation.md)
+- [static let dubbedTranslation: AVMediaCharacteristic](./dubbedtranslation.md)
   A media characteristic that indicates that a track or media selection option contains audio language or dialect translation of the original content.
-- [static let voiceOverTranslation: AVMediaCharacteristic](avmediacharacteristic/voiceovertranslation.md)
+- [static let voiceOverTranslation: AVMediaCharacteristic](./voiceovertranslation.md)
   A media characteristic that indicates that a track or media selection option contains a language translation and verbal interpretation of spoken dialog.
-- [static let enhancesSpeechIntelligibility: AVMediaCharacteristic](avmediacharacteristic/enhancesspeechintelligibility.md)
+- [static let enhancesSpeechIntelligibility: AVMediaCharacteristic](./enhancesspeechintelligibility.md)
   A media characteristic that indicates a track or media selection option includes audio processed to enhance the intelligibility of speech.
-- [static let tactileMinimal: AVMediaCharacteristic](avmediacharacteristic/tactileminimal.md)
+- [static let tactileMinimal: AVMediaCharacteristic](./tactileminimal.md)
   A media characteristic that indicates that a track or media selection option includes haptic content.
 
 

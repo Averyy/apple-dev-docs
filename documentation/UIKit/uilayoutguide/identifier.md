@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string used to identify the layout guide.
 
@@ -18,6 +19,10 @@ A string used to identify the layout guide.
 var identifier: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * identifier;
+```
+
 #### Discussion
 
 By default, the `identifier` property is an empty string. Assign a nonempty string to identify this layout guide. This string appears as part of the guide’s description when the guide is printed to the console. You can also use the identifier to find a particular layout guide from among the guides owned by a view.
@@ -26,9 +31,10 @@ Identifiers starting with “NS” or “UI” are reserved by the system. The s
 
 ## See Also
 
-- [var layoutFrame: CGRect](uilayoutguide/layoutframe.md)
+### Working with layout guides
+- [var layoutFrame: CGRect](./layoutframe.md)
   The layout guide’s frame in its owning view’s coordinate system.
-- [var owningView: UIView?](uilayoutguide/owningview.md)
+- [var owningView: UIView?](./owningview.md)
   The view that owns this layout guide.
 
 

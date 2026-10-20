@@ -1,7 +1,8 @@
 # Float32
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A 32-bit floating point type.
 
@@ -22,7 +23,8 @@ typealias Float32 = Float
 
 ## See Also
 
-- [typealias Float64](float64.md)
+### Floating-Point Type Aliases
+- [typealias Float64](./float64.md)
   A 64-bit floating point type.
 
 

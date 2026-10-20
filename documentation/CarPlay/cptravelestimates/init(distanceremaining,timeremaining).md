@@ -1,7 +1,8 @@
 # init(distanceRemaining:timeRemaining:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates travel estimates with the remaining distance and time.
 
@@ -16,6 +17,10 @@ Creates travel estimates with the remaining distance and time.
 init(distanceRemaining distance: Measurement<UnitLength>, timeRemaining time: TimeInterval)
 ```
 
+```objc
+- (instancetype) initWithDistanceRemaining:(NSMeasurement<NSUnitLength *> *) distance timeRemaining:(NSTimeInterval) time;
+```
+
 #### Return Value
 
 A newly initialized travel estimates object.
@@ -27,7 +32,8 @@ A newly initialized travel estimates object.
 
 ## See Also
 
-- [init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining: TimeInterval)](cptravelestimates/init(distanceremaining:distanceremainingtodisplay:timeremaining:).md)
+### Creating a Travel Estimates Object
+- [init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining: TimeInterval)](./init%28distanceremaining,distanceremainingtodisplay,timeremaining%29.md)
   Creates a travel estimates instance with the distance remaining that the framework displays to a person.
 
 

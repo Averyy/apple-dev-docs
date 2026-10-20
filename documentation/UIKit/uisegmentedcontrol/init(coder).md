@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a segmented control with data from an unarchiver.
 
@@ -9,7 +10,7 @@ Creates a segmented control with data from an unarchiver.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,17 +19,22 @@ Creates a segmented control with data from an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
 - `coder`: The unarchiver to read data from.
 
 ## See Also
 
-- [init(items: [Any]?)](uisegmentedcontrol/init(items:).md)
+### Creating a segmented control
+- [init(items: [Any]?)](./init%28items%29.md)
   Creates a segmented control with segments having the given titles or images.
-- [convenience init(frame: CGRect, actions: [UIAction])](uisegmentedcontrol/init(frame:actions:).md)
+- [convenience init(frame: CGRect, actions: [UIAction])](./init%28frame,actions%29.md)
   Creates a segmented control with the given frame and adds segments for the actions you specify.
-- [init(frame: CGRect)](uisegmentedcontrol/init(frame:).md)
+- [init(frame: CGRect)](./init%28frame%29.md)
   Creates an empty segmented control with the frame you specify.
 
 

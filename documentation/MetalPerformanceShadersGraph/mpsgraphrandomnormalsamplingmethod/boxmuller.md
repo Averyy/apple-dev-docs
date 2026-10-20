@@ -1,7 +1,8 @@
 # MPSGraphRandomNormalSamplingMethod.boxMuller
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Use Box Muller transform to convert uniform values to values in the normal distribution. For bounded distributions this is a rejection sampling method.
 
@@ -17,6 +18,10 @@ Use Box Muller transform to convert uniform values to values in the normal distr
 
 ```swift
 case boxMuller
+```
+
+```c
+MPSGraphRandomNormalSamplingBoxMuller
 ```
 
 

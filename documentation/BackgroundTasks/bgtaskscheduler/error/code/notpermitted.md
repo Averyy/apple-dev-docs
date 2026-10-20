@@ -1,7 +1,8 @@
 # BGTaskScheduler.Error.Code.notPermitted
 
 **Framework**: Background Tasks  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A task scheduling error that indicates the app isn’t permitted to launch the task.
 
@@ -18,20 +19,25 @@ A task scheduling error that indicates the app isn’t permitted to launch the t
 case notPermitted
 ```
 
+```c
+BGTaskSchedulerErrorCodeNotPermitted
+```
+
 #### Discussion
 
 There are two causes for this error:
 
-- The app didn’t set the appropriate mode in the [`UIBackgroundModes`](https://developer.apple.com/documentation/bundleresources/information-property-list/uibackgroundmodes) array.
-- The task identifier of the submitted task wasn’t in the [`BGTaskSchedulerPermittedIdentifiers`](https://developer.apple.com/documentation/bundleresources/information-property-list/bgtaskschedulerpermittedidentifiers) array in [`The Info.plist File`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html#//apple_ref/doc/uid/TP30000903-CH206-SW22).
+- The app didn’t set the appropriate mode in the [`UIBackgroundModes`](../../../../BundleResources/information-property-list/uibackgroundmodes.md) array.
+- The task identifier of the submitted task wasn’t in the [`BGTaskSchedulerPermittedIdentifiers`](../../../../BundleResources/information-property-list/bgtaskschedulerpermittedidentifiers.md) array in [The Info.plist File](https://developer.apple.com/library/archive/documentation/Carbon/Conceptual/ProvidingUserAssitAppleHelp/authoring_help/authoring_help_book.html#//apple_ref/doc/uid/TP30000903-CH206-SW22).
 
 ## See Also
 
-- [BGTaskScheduler.Error.Code.tooManyPendingTaskRequests](bgtaskscheduler/error/code/toomanypendingtaskrequests.md)
+### Identifying an error
+- [BGTaskScheduler.Error.Code.tooManyPendingTaskRequests](./toomanypendingtaskrequests.md)
   A task scheduling error that indicates there are too many pending tasks of the type requested.
-- [BGTaskScheduler.Error.Code.unavailable](bgtaskscheduler/error/code/unavailable.md)
+- [BGTaskScheduler.Error.Code.unavailable](./unavailable.md)
   A task scheduling error that indicates the app or extension can’t schedule background work.
-- [BGTaskScheduler.Error.Code.immediateRunIneligible](bgtaskscheduler/error/code/immediaterunineligible.md)
+- [BGTaskScheduler.Error.Code.immediateRunIneligible](./immediaterunineligible.md)
   A task scheduling error that indicates a task request didn’t run immediately due to system conditions.
 
 

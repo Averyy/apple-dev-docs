@@ -1,7 +1,8 @@
 # imagery
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A map style that represents a satellite image of the area the map displays.
 
@@ -11,7 +12,7 @@ A map style that represents a satellite image of the area the map displays.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,9 +27,10 @@ static var imagery: MapStyle { get }
 
 ## See Also
 
-- [static var hybrid: MapStyle](mapstyle/hybrid.md)
+### Map styles
+- [static var hybrid: MapStyle](./hybrid.md)
   A map style that represents a satellite image of the area, including the paths of roads with their names layered on top.
-- [static var standard: MapStyle](mapstyle/standard.md)
+- [static var standard: MapStyle](./standard.md)
   A map style that represents the default map presentation, which is a street map that shows the position of all roads and some road names, depending upon the zoom level of the map.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 enum : int {
     ...
 };
@@ -17,8 +18,8 @@ enum : int {
 ## Topics
 
 ### Constants
-- [FFT_FORWARD](1645050-anonymous/fft_forward.md)
-- [FFT_INVERSE](1645050-anonymous/fft_inverse.md)
+- [FFT_FORWARD](./api-1645050-anonymous/fft_forward.md)
+- [FFT_INVERSE](./api-1645050-anonymous/fft_inverse.md)
 
 
 ---

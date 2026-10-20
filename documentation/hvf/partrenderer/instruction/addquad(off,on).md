@@ -1,7 +1,8 @@
 # PartRenderer.Instruction.addQuad(off:on:)
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.4+

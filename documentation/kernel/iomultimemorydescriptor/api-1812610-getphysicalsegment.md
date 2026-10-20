@@ -7,14 +7,14 @@ Break a memory descriptor into its physically contiguous segments.
 
 ## Declaration
 
-```swift
+```cpp
 virtual addr64_t getPhysicalSegment(
  IOByteCountoffset, 
  IOByteCount *length, 
  IOOptionBits options = 0 );
 ```
 
-#### Return_value
+#### Return Value
 
 A physical address, or zero if the offset is beyond the length of the memory.
 
@@ -29,15 +29,16 @@ This method returns the physical address of the byte at the given offset into th
 
 ## See Also
 
-- [complete](iomultimemorydescriptor/1812588-complete.md)
+### Miscellaneous
+- [complete](./api-1812588-complete.md)
   Complete processing of the memory after an I/O transfer finishes.
-- [initWithDescriptors](iomultimemorydescriptor/1812635-initwithdescriptors.md)
+- [initWithDescriptors](./api-1812635-initwithdescriptors.md)
   Initialize an IOMultiMemoryDescriptor to describe a memory area made up of several other IOMemoryDescriptors.
-- [prepare](iomultimemorydescriptor/1812660-prepare.md)
+- [prepare](./api-1812660-prepare.md)
   Prepare the memory for an I/O transfer.
-- [withDescriptors(IOMemoryDescriptor **, UInt32, IODirection, bool)](iomultimemorydescriptor/1812685-withdescriptors.md)
+- [withDescriptors(IOMemoryDescriptor **, UInt32, IODirection, bool)](./api-1812685-withdescriptors.md)
   Create an IOMultiMemoryDescriptor to describe a memory area made up of several other IOMemoryDescriptors.
-- [withDescriptors(IOMemoryDescriptor **, UInt32, IODirection, bool)](iomultimemorydescriptor/1812714-withdescriptors.md)
+- [withDescriptors(IOMemoryDescriptor **, UInt32, IODirection, bool)](./api-1812714-withdescriptors.md)
   Initialize an IOMultiMemoryDescriptor to describe a memory area made up of several other IOMemoryDescriptors.
 
 

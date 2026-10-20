@@ -1,7 +1,8 @@
 # UpdateMediaAffinityIntentHandlingHandleInvocationResponse.Result
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The result of handling an intent to update media affinity.
 
@@ -10,7 +11,7 @@ The result of handling an intent to update media affinity.
 
 ## Declaration
 
-```swift
+```
 object UpdateMediaAffinityIntentHandlingHandleInvocationResponse.Result
 ```
 

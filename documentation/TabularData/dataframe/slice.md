@@ -1,7 +1,8 @@
 # DataFrame.Slice
 
 **Framework**: TabularData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of a data frame’s rows you create by using a method from a data frame instance or another data frame slice.
 
@@ -28,99 +29,100 @@ A slice is an arbitrary set of rows from a data frame. For example, a slice migh
 ## Topics
 
 ### Inspecting a Slice
-- [var shape: (rows: Int, columns: Int)](dataframe/slice/shape.md)
+- [var shape: (rows: Int, columns: Int)](./slice/shape.md)
   The number of rows and columns in the slice.
-- [var columns: [AnyColumnSlice]](dataframe/slice/columns.md)
+- [var columns: [AnyColumnSlice]](./slice/columns.md)
   The entire slice as a collection of columns.
-- [var rows: DataFrame.Rows](dataframe/slice/rows.md)
+- [var rows: DataFrame.Rows](./slice/rows.md)
   The entire slice as a collection of rows.
-- [var base: DataFrame](dataframe/slice/base.md)
+- [var base: DataFrame](./slice/base.md)
   The underlying data frame.
 ### Creating a Slice by Selecting a Column
-- [subscript<T>(ColumnID<T>) -> DiscontiguousColumnSlice<T>](dataframe/slice/subscript(_:)-32h9z.md)
+- [subscript<T>(ColumnID<T>) -> DiscontiguousColumnSlice<T>](./slice/subscript%28_%29-32h9z.md)
   Returns a column you select by its column identifier.
-- [subscript<T>(column _: Int, T.Type) -> DiscontiguousColumnSlice<T>](dataframe/slice/subscript(column:_:).md)
+- [subscript<T>(column _: Int, T.Type) -> DiscontiguousColumnSlice<T>](./slice/subscript%28column,_%29.md)
   Returns a column you select by its index.
-- [subscript<T>(String, T.Type) -> DiscontiguousColumnSlice<T>](dataframe/slice/subscript(_:_:).md)
+- [subscript<T>(String, T.Type) -> DiscontiguousColumnSlice<T>](./slice/subscript%28_,_%29.md)
   Returns a column you select by its name and type.
-- [subscript(String) -> AnyColumnSlice](dataframe/slice/subscript(_:)-18kdy.md)
+- [subscript(String) -> AnyColumnSlice](./slice/subscript%28_%29-18kdy.md)
   Returns a column you select by its name.
-- [subscript(dynamicMember _: String) -> AnyColumnSlice](dataframe/slice/subscript(dynamicmember:).md)
+- [subscript(dynamicMember _: String) -> AnyColumnSlice](./slice/subscript%28dynamicmember%29.md)
   Returns a column you select by its name to support dynamic-member lookup.
 ### Creating a Slice by Selecting Multiple Columns
-- [subscript<S>(S) -> DataFrame.Slice](dataframe/slice/subscript(_:)-5y42o.md)
+- [subscript<S>(S) -> DataFrame.Slice](./slice/subscript%28_%29-5y42o.md)
   Generates a data frame slice that includes the columns in a sequence of column names.
-- [func selecting<S>(columnNames: S) -> DataFrame.Slice](dataframe/slice/selecting(columnnames:)-9l8oe.md)
+- [func selecting<S>(columnNames: S) -> DataFrame.Slice](./slice/selecting%28columnnames%29-9l8oe.md)
   Generates a data frame slice that includes the columns you select with a sequence of names.
-- [func selecting(columnNames: String...) -> DataFrame.Slice](dataframe/slice/selecting(columnnames:)-48kji.md)
+- [func selecting(columnNames: String...) -> DataFrame.Slice](./slice/selecting%28columnnames%29-48kji.md)
   Generates a data frame slice that includes the columns you select with a list of names.
 ### Creating a Slice by Selecting Rows
-- [func prefix(Int) -> DataFrame.Slice](dataframe/slice/prefix(_:).md)
+- [func prefix(Int) -> DataFrame.Slice](./slice/prefix%28_%29.md)
   Returns a new slice that contains the initial elements of the original slice.
-- [func prefix(upTo: Int) -> DataFrame.Slice](dataframe/slice/prefix(upto:).md)
+- [func prefix(upTo: Int) -> DataFrame.Slice](./slice/prefix%28upto%29.md)
   Returns a new slice that contains the initial elements of the original slice up to, but not including, the element at a position.
-- [func prefix(through: Int) -> DataFrame.Slice](dataframe/slice/prefix(through:).md)
+- [func prefix(through: Int) -> DataFrame.Slice](./slice/prefix%28through%29.md)
   Returns a new slice that contains the initial elements of the original slice up to and including the element at a position.
-- [func suffix(Int) -> DataFrame.Slice](dataframe/slice/suffix(_:).md)
+- [func suffix(Int) -> DataFrame.Slice](./slice/suffix%28_%29.md)
   Returns a new slice that contains the final elements of the original slice.
-- [func suffix(from: Int) -> DataFrame.Slice](dataframe/slice/suffix(from:).md)
+- [func suffix(from: Int) -> DataFrame.Slice](./slice/suffix%28from%29.md)
   Returns a new slice that contains the final elements of the original slice beginning with the element at a position.
 ### Creating a Slice by Filtering Rows
-- [func filter<T>(on: ColumnID<T>, (T?) throws -> Bool) rethrows -> DataFrame.Slice](dataframe/slice/filter(on:_:).md)
+- [func filter<T>(on: ColumnID<T>, (T?) throws -> Bool) rethrows -> DataFrame.Slice](./slice/filter%28on,_%29.md)
   Returns a selection of rows that satisfy a predicate in the columns you select by column identifier.
-- [func filter<T>(on: String, T.Type, (T?) throws -> Bool) rethrows -> DataFrame.Slice](dataframe/slice/filter(on:_:_:).md)
+- [func filter<T>(on: String, T.Type, (T?) throws -> Bool) rethrows -> DataFrame.Slice](./slice/filter%28on,_,_%29.md)
   Returns a selection of rows that satisfy a predicate in the columns you select by name.
 ### Grouping Rows
-- [struct RowGrouping](rowgrouping.md)
+- [struct RowGrouping](../rowgrouping.md)
   A collection of row selections that have the same value in a column.
-- [func grouped(by: String) -> any RowGroupingProtocol](dataframe/slice/grouped(by:).md)
+- [func grouped(by: String) -> any RowGroupingProtocol](./slice/grouped%28by%29.md)
   Creates a grouping of rows that the method selects by choosing unique values in a column.
-- [protocol RowGroupingProtocol](rowgroupingprotocol.md)
+- [protocol RowGroupingProtocol](../rowgroupingprotocol.md)
   A type that represents a collection of row selections that have the same value in a column.
 ### Summarizing a Slice
-- [func summary() -> DataFrame](dataframe/slice/summary.md)
+- [func summary() -> DataFrame](./slice/summary%28%29.md)
   Generates a data frame that summarizes the columns of the data frame slice.
-- [func summary(of: String...) -> DataFrame](dataframe/slice/summary(of:).md)
+- [func summary(of: String...) -> DataFrame](./slice/summary%28of%29.md)
   Generates a data frame that summarizes the columns you select by name.
-- [func summary(ofColumns: Int...) -> DataFrame](dataframe/slice/summary(ofcolumns:).md)
+- [func summary(ofColumns: Int...) -> DataFrame](./slice/summary%28ofcolumns%29.md)
   Generates a data frame that summarizes the columns you select by index.
-- [enum SummaryColumnIDs](summarycolumnids.md)
+- [enum SummaryColumnIDs](../summarycolumnids.md)
   The summary data frame column identifiers.
 ### Comparing Slices
-- [static func == (DataFrame.Slice, DataFrame.Slice) -> Bool](dataframe/slice/==(_:_:).md)
+- [static func == (DataFrame.Slice, DataFrame.Slice) -> Bool](./slice/eqeq%28_,_%29.md)
   Returns a Boolean that indicates whether the slices are equal.
 ### Describing a Slice
-- [var description: String](dataframe/slice/description.md)
+- [var description: String](./slice/description.md)
   A text representation of the data frame slice.
-- [var debugDescription: String](dataframe/slice/debugdescription.md)
+- [var debugDescription: String](./slice/debugdescription.md)
   A text representation of the data frame slice suitable for debugging.
-- [var customMirror: Mirror](dataframe/slice/custommirror.md)
+- [var customMirror: Mirror](./slice/custommirror.md)
   A mirror that reflects the data frame slice.
 ### Hashing a Slice
-- [func hash(into: inout Hasher)](dataframe/slice/hash(into:).md)
+- [func hash(into: inout Hasher)](./slice/hash%28into%29.md)
   Hashes the essential components of the data frame slice by feeding them into a hasher.
 ### Default Implementations
-- [CustomDebugStringConvertible Implementations](dataframe/slice/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](dataframe/slice/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](dataframe/slice/customstringconvertible-implementations.md)
-- [Equatable Implementations](dataframe/slice/equatable-implementations.md)
-- [Hashable Implementations](dataframe/slice/hashable-implementations.md)
+- [CustomDebugStringConvertible Implementations](./slice/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./slice/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./slice/customstringconvertible-implementations.md)
+- [Equatable Implementations](./slice/equatable-implementations.md)
+- [Hashable Implementations](./slice/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DataFrameProtocol](dataframeprotocol.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomReflectable](../../Swift/customreflectable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [DataFrameProtocol](../dataframeprotocol.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [init(DataFrame.Slice)](dataframe/init(_:).md)
+### Creating a Data Frame from Other Data Frames
+- [init(DataFrame.Slice)](./init%28_%29.md)
   Creates a new data frame with a slice of rows from another data frame.
 
 

@@ -1,7 +1,8 @@
 # NSTextLayoutManager.SegmentType.selection
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The segment behavior suitable for selection rendering.
 
@@ -14,15 +15,20 @@ The segment behavior suitable for selection rendering.
 case selection
 ```
 
+```c
+NSTextLayoutManagerSegmentTypeSelection
+```
+
 #### Discussion
 
 This segment type extends the last segment in a line fragment to the trailing edge if continuing to the next line.
 
 ## See Also
 
-- [NSTextLayoutManager.SegmentType.highlight](nstextlayoutmanager/segmenttype/highlight.md)
+### Kinds of text selection segments
+- [NSTextLayoutManager.SegmentType.highlight](./highlight.md)
   The segment behavior suitable for highlighting.
-- [NSTextLayoutManager.SegmentType.standard](nstextlayoutmanager/segmenttype/standard.md)
+- [NSTextLayoutManager.SegmentType.standard](./standard.md)
   The standard segment, matching the typographic bounds of the range.
 
 

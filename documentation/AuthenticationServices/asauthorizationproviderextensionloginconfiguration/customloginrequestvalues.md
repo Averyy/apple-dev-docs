@@ -1,7 +1,8 @@
 # customLoginRequestValues
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Provider-supplied values to add to the login POST request body.
 
@@ -14,23 +15,28 @@ Provider-supplied values to add to the login POST request body.
 var customLoginRequestValues: [URLQueryItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSURLQueryItem *> * customLoginRequestValues;
+```
+
 ## Mentions
 
-- [Creating and validating a login request](creating-and-validating-a-login-request.md)
+- [Creating and validating a login request](../creating-and-validating-a-login-request.md)
 
 ## See Also
 
-- [func setCustomAssertionRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomassertionrequestbodyclaims(_:).md)
+### Customizing the authentication request
+- [func setCustomAssertionRequestBodyClaims([String : Any]) throws](./setcustomassertionrequestbodyclaims%28_%29.md)
   Adds the custom claims to the embedded assertion request body.
-- [func setCustomAssertionRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomassertionrequestheaderclaims(_:).md)
+- [func setCustomAssertionRequestHeaderClaims([String : Any]) throws](./setcustomassertionrequestheaderclaims%28_%29.md)
   Adds the custom claims to the embedded assertion request header.
-- [func setCustomLoginRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomloginrequestbodyclaims(_:).md)
+- [func setCustomLoginRequestBodyClaims([String : Any]) throws](./setcustomloginrequestbodyclaims%28_%29.md)
   Adds the custom claims to the login request body.
-- [func setCustomLoginRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionloginconfiguration/setcustomloginrequestheaderclaims(_:).md)
+- [func setCustomLoginRequestHeaderClaims([String : Any]) throws](./setcustomloginrequestheaderclaims%28_%29.md)
   Adds the custom claims to the login request header.
-- [var additionalScopes: String](asauthorizationproviderextensionloginconfiguration/additionalscopes.md)
+- [var additionalScopes: String](./additionalscopes.md)
   A set of extra scopes to add to the base for the authentication request.
-- [var kerberosTicketMappings: [ASAuthorizationProviderExtensionKerberosMapping]](asauthorizationproviderextensionloginconfiguration/kerberosticketmappings.md)
+- [var kerberosTicketMappings: [ASAuthorizationProviderExtensionKerberosMapping]](./kerberosticketmappings.md)
   The set of ticket mappings the system uses to import Kerberos tickets from the single sign-on token.
 
 

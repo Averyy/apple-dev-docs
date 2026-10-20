@@ -1,7 +1,8 @@
 # subscriptionBillingCycleEndDate
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A date that indicates when the billing cycle ends for a paid account.
 
@@ -10,7 +11,7 @@ A date that indicates when the billing cycle ends for a paid account.
 - iPadOS 16.4+
 - macOS 13.3+
 - tvOS 16.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,29 +25,30 @@ The system uses this date as a heuristic to determine when to refresh billing st
 
 ## See Also
 
-- [var accountProviderIdentifier: String?](vsuseraccount-swift.struct/accountprovideridentifier.md)
+### User account information
+- [var accountProviderIdentifier: String?](./accountprovideridentifier.md)
   A string that uniquely identifies a provider known to Apple that provides the user account.
-- [var accountType: VSUserAccount.AccountType](vsuseraccount-swift.struct/accounttype-swift.property.md)
+- [var accountType: VSUserAccount.AccountType](./accounttype-swift.property.md)
   A constant that represents whether a user has access to paid content.
-- [var authenticationData: String?](vsuseraccount-swift.struct/authenticationdata.md)
+- [var authenticationData: String?](./authenticationdata.md)
   A string that represents an authentication token for the user account to authenticate with a provider.
-- [var billingIdentifier: String?](vsuseraccount-swift.struct/billingidentifier.md)
+- [var billingIdentifier: String?](./billingidentifier.md)
   A string that Identifies the billing group associated with the user account’s subscription.
-- [var deviceCategory: VSUserAccount.OriginatingDeviceCategory](vsuseraccount-swift.struct/devicecategory.md)
+- [var deviceCategory: VSUserAccount.OriginatingDeviceCategory](./devicecategory.md)
   A constant that indicates whether the device from which the user registered is mobile.
-- [VSUserAccount.OriginatingDeviceCategory](vsuseraccount-swift.struct/originatingdevicecategory.md)
+- [VSUserAccount.OriginatingDeviceCategory](./originatingdevicecategory.md)
   Constants that represent whether the device from which the user originally registered is mobile.
-- [var identifier: String?](vsuseraccount-swift.struct/identifier.md)
+- [var identifier: String?](./identifier.md)
   A string you provide that uniquely identifies the account.
-- [var isFromCurrentDevice: Bool](vsuseraccount-swift.struct/isfromcurrentdevice.md)
+- [var isFromCurrentDevice: Bool](./isfromcurrentdevice.md)
   A Boolean value that indicates whether the user originated their account on the current device.
-- [var isSignedOut: Bool](vsuseraccount-swift.struct/issignedout.md)
+- [var isSignedOut: Bool](./issignedout.md)
   A Boolean value that indicates whether the user has signed out of their account.
-- [var requiresSystemTrust: Bool](vsuseraccount-swift.struct/requiressystemtrust.md)
+- [var requiresSystemTrust: Bool](./requiressystemtrust.md)
   A Boolean value that indicates whether the update URL must have a system-trusted certificate.
-- [var tierIdentifiers: [String]?](vsuseraccount-swift.struct/tieridentifiers.md)
+- [var tierIdentifiers: [String]?](./tieridentifiers.md)
   An array of strings that identify a subset of content from your catalog that the subscriber can play.
-- [var updateURL: URL?](vsuseraccount-swift.struct/updateurl.md)
+- [var updateURL: URL?](./updateurl.md)
   A URL that points to the application’s JavaScript endpoint for update requests.
 
 

@@ -1,7 +1,8 @@
 # generateSphere(radius:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new sphere mesh with the specified radius.
 
@@ -11,7 +12,7 @@ Creates a new sphere mesh with the specified radius.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -34,9 +35,10 @@ The sphere is centered at the entity’s origin.
 
 ## See Also
 
-- [static func generateCone(height: Float, radius: Float) -> MeshResource](meshresource/generatecone(height:radius:).md)
+### Creating a primitive shape
+- [static func generateCone(height: Float, radius: Float) -> MeshResource](./generatecone%28height,radius%29.md)
   Creates a new cone mesh with the specified dimensions.
-- [static func generateCylinder(height: Float, radius: Float) -> MeshResource](meshresource/generatecylinder(height:radius:).md)
+- [static func generateCylinder(height: Float, radius: Float) -> MeshResource](./generatecylinder%28height,radius%29.md)
   Creates a new cylinder mesh with the specified dimensions.
 
 

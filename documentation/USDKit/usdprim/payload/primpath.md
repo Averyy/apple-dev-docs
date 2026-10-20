@@ -1,7 +1,8 @@
 # primPath
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The target prim path within the referenced asset, or `nil` to use the asset’s default prim.
 

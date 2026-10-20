@@ -1,7 +1,8 @@
 # init(items:subject:message:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that presents the share interface.
 
@@ -20,6 +21,15 @@ nonisolated
 init(items: Data, subject: Text? = nil, message: Text? = nil, @ContentBuilder label: () -> Label)
 ```
 
+Available when `Data` conforms to `RandomAccessCollection`, `PreviewImage` is `Never`, `PreviewIcon` is `Never`, `Label` conforms to `View`, and `Data.Element` is `URL`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(items: Data, subject: Text? = nil, message: Text? = nil, @ContentBuilder label: () -> Label)
+```
+
 ## Parameters
 
 - `items`: The items to share.
@@ -29,9 +39,10 @@ init(items: Data, subject: Text? = nil, message: Text? = nil, @ContentBuilder la
 
 ## See Also
 
-- [init(items:subject:message:)](sharelink/init(items:subject:message:).md)
+### Sharing items
+- [init(items:subject:message:)](./init%28items,subject,message%29.md)
   Creates an instance that presents the share interface.
-- [init(_:items:subject:message:)](sharelink/init(_:items:subject:message:).md)
+- [init(_:items:subject:message:)](./init%28_,items,subject,message%29.md)
   Creates an instance, with a custom label, that presents the share interface.
 
 

@@ -1,7 +1,8 @@
 # init(name:values:)
 
 **Framework**: TV Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new named attribute object with the specified values.
 
@@ -12,6 +13,10 @@ Creates a new named attribute object with the specified values.
 
 ```swift
 init(name: String, values: [String])
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name values:(NSArray<NSString *> *) values;
 ```
 
 #### Return Value

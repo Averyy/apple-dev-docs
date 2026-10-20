@@ -2,6 +2,7 @@
 
 **Framework**: RealityKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -18,11 +19,17 @@
 mutating func actionStartedWithResult(event: Self.EventType) -> ActionResult?
 ```
 
+## Default Implementations
+
+### BehaviorTreeActionHandler Implementations
+- [func actionStartedWithResult(event: Self.EventType) -> ActionResult?](./actionstartedwithresult%28event%29-6p3bc.md)
+
 ## See Also
 
-- [func actionUpdatedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionupdatedwithresult(event:).md)
-- [func actionPausedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionpausedwithresult(event:).md)
-- [func actionResumedWithResult(event: Self.EventType) -> ActionResult?](behaviortreeactionhandler/actionresumedwithresult(event:).md)
+### Responding to action progress
+- [func actionUpdatedWithResult(event: Self.EventType) -> ActionResult?](./actionupdatedwithresult%28event%29.md)
+- [func actionPausedWithResult(event: Self.EventType) -> ActionResult?](./actionpausedwithresult%28event%29.md)
+- [func actionResumedWithResult(event: Self.EventType) -> ActionResult?](./actionresumedwithresult%28event%29.md)
 
 
 ---

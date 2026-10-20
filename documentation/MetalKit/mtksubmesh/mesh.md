@@ -1,7 +1,8 @@
 # mesh
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parent mesh containing the vertex data of this submesh.
 
@@ -19,9 +20,13 @@ The parent mesh containing the vertex data of this submesh.
 weak var mesh: MTKMesh? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) MTKMesh * mesh;
+```
+
 #### Discussion
 
-The buffer of this parent mesh should be set in the encoder before a call to [`drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)`](https://developer.apple.com/documentation/metal/mtlrendercommandencoder/drawindexedprimitives(type:indexcount:indextype:indexbuffer:indexbufferoffset:)) is made.
+The buffer of this parent mesh should be set in the encoder before a call to [`drawIndexedPrimitives(type:indexCount:indexType:indexBuffer:indexBufferOffset:)`](../../Metal/mtlrendercommandencoder/drawindexedprimitives%28type,indexcount,indextype,indexbuffer,indexbufferoffset%29.md) is made.
 
 
 ---

@@ -1,7 +1,8 @@
 # addEntries(from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds to the receiving dictionary the entries from another dictionary.
 
@@ -20,9 +21,13 @@ Adds to the receiving dictionary the entries from another dictionary.
 func addEntries(from otherDictionary: [AnyHashable : Any])
 ```
 
+```objc
+- (void) addEntriesFromDictionary:(NSDictionary<id,id> *) otherDictionary;
+```
+
 #### Discussion
 
-Each value object from `otherDictionary` is sent a [`retain`](https://developer.apple.com/documentation/objectivec/nsobject-c.protocol/retain) message before being added to the receiving dictionary. In contrast, each key object is copied (using [`copy(with:)`](nscopying/copy(with:).md)—keys must conform to the `NSCopying` protocol), and the copy is added to the receiving dictionary.
+Each value object from `otherDictionary` is sent a [`retain`](../../ObjectiveC/nsobject-c.protocol/retain.md) message before being added to the receiving dictionary. In contrast, each key object is copied (using [`copy(with:)`](../nscopying/copy%28with%29.md)—keys must conform to the `NSCopying` protocol), and the copy is added to the receiving dictionary.
 
 If both dictionaries contain the same key, the receiving dictionary’s previous value object for that key is sent a `release` message, and the new value object takes its place.
 
@@ -32,11 +37,12 @@ If both dictionaries contain the same key, the receiving dictionary’s previous
 
 ## See Also
 
-- [func setObject(Any, forKey: any NSCopying)](nsmutabledictionary/setobject(_:forkey:).md)
+### Adding Entries to a Mutable Dictionary
+- [func setObject(Any, forKey: any NSCopying)](./setobject%28_,forkey%29.md)
   Adds a given key-value pair to the dictionary.
-- [func setValue(Any?, forKey: String)](nsmutabledictionary/setvalue(_:forkey:).md)
+- [func setValue(Any?, forKey: String)](./setvalue%28_,forkey%29.md)
   Adds a given key-value pair to the dictionary.
-- [func setDictionary([AnyHashable : Any])](nsmutabledictionary/setdictionary(_:).md)
+- [func setDictionary([AnyHashable : Any])](./setdictionary%28_%29.md)
   Sets the contents of the receiving dictionary to entries in a given dictionary.
 
 

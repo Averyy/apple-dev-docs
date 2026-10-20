@@ -1,7 +1,8 @@
 # videoCompositionInstruction
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A video composition instruction that indicates how to compose the frame.
 
@@ -19,11 +20,16 @@ A video composition instruction that indicates how to compose the frame.
 var videoCompositionInstruction: any AVVideoCompositionInstructionProtocol { get }
 ```
 
+```objc
+@property (nonatomic, readonly) id<AVVideoCompositionInstruction> videoCompositionInstruction;
+```
+
 ## See Also
 
-- [var compositionTime: CMTime](avasynchronousvideocompositionrequest/compositiontime.md)
+### Inspecting the request
+- [var compositionTime: CMTime](./compositiontime.md)
   A time for which to compose the frame.
-- [var renderContext: AVVideoCompositionRenderContext](avasynchronousvideocompositionrequest/rendercontext.md)
+- [var renderContext: AVVideoCompositionRenderContext](./rendercontext.md)
   The rendering context of the video composition.
 
 

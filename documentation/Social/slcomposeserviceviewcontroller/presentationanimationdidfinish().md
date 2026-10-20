@@ -1,7 +1,8 @@
 # presentationAnimationDidFinish()
 
 **Framework**: Social  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the compose view controller that the presentation animation is finished.
 
@@ -17,15 +18,20 @@ Tells the compose view controller that the presentation animation is finished.
 func presentationAnimationDidFinish()
 ```
 
+```objc
+- (void) presentationAnimationDidFinish;
+```
+
 #### Discussion
 
-Implement this method to avoid performing lengthy work during initialization or the iOS view controller methods [`viewWillAppear(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewwillappear(_:)) and [`viewDidAppear(_:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/viewdidappear(_:)).
+Implement this method to avoid performing lengthy work during initialization or the iOS view controller methods [`viewWillAppear(_:)`](../../UIKit/uiviewcontroller/viewwillappear%28_%29.md) and [`viewDidAppear(_:)`](../../UIKit/uiviewcontroller/viewdidappear%28_%29.md).
 
 ## See Also
 
-- [func didSelectCancel()](slcomposeserviceviewcontroller/didselectcancel.md)
+### Responding to Lifecycle Events
+- [func didSelectCancel()](./didselectcancel%28%29.md)
   Sent to the compose view after the cancel animation finishes.
-- [func didSelectPost()](slcomposeserviceviewcontroller/didselectpost.md)
+- [func didSelectPost()](./didselectpost%28%29.md)
   Sent to the compose view after the post animation finishes.
 
 

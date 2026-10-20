@@ -1,7 +1,8 @@
 # MTLPrimitiveTopologyClass.point
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A point primitive.
 
@@ -19,13 +20,18 @@ A point primitive.
 case point
 ```
 
+```c
+MTLPrimitiveTopologyClassPoint
+```
+
 ## See Also
 
-- [MTLPrimitiveTopologyClass.unspecified](mtlprimitivetopologyclass/unspecified.md)
+### Topology classes
+- [MTLPrimitiveTopologyClass.unspecified](./unspecified.md)
   An unspecified primitive.
-- [MTLPrimitiveTopologyClass.line](mtlprimitivetopologyclass/line.md)
+- [MTLPrimitiveTopologyClass.line](./line.md)
   A line primitive.
-- [MTLPrimitiveTopologyClass.triangle](mtlprimitivetopologyclass/triangle.md)
+- [MTLPrimitiveTopologyClass.triangle](./triangle.md)
   A triangle primitive.
 
 

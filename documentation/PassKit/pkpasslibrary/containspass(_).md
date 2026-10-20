@@ -1,7 +1,8 @@
 # containsPass(_:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the user’s pass library contains the specified pass.
 
@@ -19,9 +20,13 @@ Returns a Boolean value that indicates whether the user’s pass library contain
 func containsPass(_ pass: PKPass) -> Bool
 ```
 
+```objc
+- (BOOL) containsPass:(PKPass *) pass;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the user’s pass library contains the pass; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the user’s pass library contains the pass; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -35,17 +40,18 @@ Your app can use this method to provide a UI that indicates whether a pass is al
 
 ## See Also
 
-- [class func isPassLibraryAvailable() -> Bool](pkpasslibrary/ispasslibraryavailable.md)
+### Accessing passes
+- [class func isPassLibraryAvailable() -> Bool](./ispasslibraryavailable%28%29.md)
   Returns a Boolean value that indicates whether the pass library is available.
-- [func passes() -> [PKPass]](pkpasslibrary/passes.md)
+- [func passes() -> [PKPass]](./passes%28%29.md)
   Returns the passes in the user’s pass library that the app can access.
-- [func passes(of: PKPassType) -> [PKPass]](pkpasslibrary/passes(of:).md)
+- [func passes(of: PKPassType) -> [PKPass]](./passes%28of%29.md)
   Returns the passes of the specified pass type.
-- [func pass(withPassTypeIdentifier: String, serialNumber: String) -> PKPass?](pkpasslibrary/pass(withpasstypeidentifier:serialnumber:).md)
+- [func pass(withPassTypeIdentifier: String, serialNumber: String) -> PKPass?](./pass%28withpasstypeidentifier,serialnumber%29.md)
   Returns the pass with the specified pass type identifier and serial number.
-- [func serviceProviderData(for: PKSecureElementPass, completion: (Data?, (any Error)?) -> Void)](pkpasslibrary/serviceproviderdata(for:completion:).md)
+- [func serviceProviderData(for: PKSecureElementPass, completion: (Data?, (any Error)?) -> Void)](./serviceproviderdata%28for,completion%29.md)
   Calls a completion handler that returns the custom data for a Secure Element pass.
-- [var remoteSecureElementPasses: [PKSecureElementPass]](pkpasslibrary/remotesecureelementpasses.md)
+- [var remoteSecureElementPasses: [PKSecureElementPass]](./remotesecureelementpasses.md)
   The Secure Element passes that PassKit stores on paired devices.
 
 

@@ -1,7 +1,8 @@
 # AVFormatIDKey
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An integer value that represents the format of the audio data.
 
@@ -20,15 +21,20 @@ An integer value that represents the format of the audio data.
 let AVFormatIDKey: String
 ```
 
+```c
+extern NSString * const AVFormatIDKey;
+```
+
 #### Discussion
 
-For information about the possible values for this key, see [`Audio Format Identifiers`](https://developer.apple.com/documentation/coreaudiotypes/audio-format-identifiers).
+For information about the possible values for this key, see [Audio Format Identifiers](../CoreAudioTypes/audio-format-identifiers.md).
 
 ## See Also
 
-- [let AVSampleRateKey: String](avsampleratekey.md)
+### General format keys
+- [let AVSampleRateKey: String](./avsampleratekey.md)
   A floating point value that represents the sample rate, in hertz.
-- [let AVNumberOfChannelsKey: String](avnumberofchannelskey.md)
+- [let AVNumberOfChannelsKey: String](./avnumberofchannelskey.md)
   An integer value that represents the number of channels.
 
 

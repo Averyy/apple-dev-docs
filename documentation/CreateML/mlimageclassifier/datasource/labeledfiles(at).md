@@ -1,7 +1,8 @@
 # MLImageClassifier.DataSource.labeledFiles(at:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An image classifier data source that uses file names to label images.
 
@@ -24,13 +25,14 @@ Use this case to create a data source based on a files on disk that contain your
 
 For example, you can initialize a data source with a file URL that indicates a directory called `Training Data` that contains the files `buffalo.1.jpg`, `buffalo.2.jpg`, `cheetah.1.jpg`, and `cheetah.2.jpg`. The first two images receive the label `buffalo`, while the second two images receive the label `cheetah`. The part of the name after the first period can be any arbitrary string.
 
-![Diagram showing a directory called “Training Data” containing images with names that use the label in the](/images/com.apple.createml/MLImageClassifier-DataSource-labeledFiles(at:)-1@2x.png)
+![Diagram showing a directory called “Training Data” containing images with names that use the label in the](https://developer.apple.com/tutorials/images/com.apple.createml/MLImageClassifier-DataSource-labeledFiles(at:)-1@2x.png)
 
-If you want to create a data source with labels based on how you sort your images into directories, use [`MLImageClassifier.DataSource.labeledDirectories(at:)`](mlimageclassifier/datasource/labeleddirectories(at:).md) instead.
+If you want to create a data source with labels based on how you sort your images into directories, use [`MLImageClassifier.DataSource.labeledDirectories(at:)`](./labeleddirectories%28at%29.md) instead.
 
 ## See Also
 
-- [MLImageClassifier.DataSource.labeledDirectories(at:)](mlimageclassifier/datasource/labeleddirectories(at:).md)
+### Creating a data source
+- [MLImageClassifier.DataSource.labeledDirectories(at:)](./labeleddirectories%28at%29.md)
   An image classifier data source that uses the directory structure to label images.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The type of timing information to use.
@@ -19,15 +20,20 @@ The type of timing information to use.
 var timingCurveType: UITimingCurveType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITimingCurveType timingCurveType;
+```
+
 #### Discussion
 
-Use this property to specify the type of timing information your timing curve object supplies. The value of this property determines whether the view property animator uses the object in the [`cubicTimingParameters`](uitimingcurveprovider/cubictimingparameters.md) or [`springTimingParameters`](uitimingcurveprovider/springtimingparameters.md) property for timing information.
+Use this property to specify the type of timing information your timing curve object supplies. The value of this property determines whether the view property animator uses the object in the [`cubicTimingParameters`](./cubictimingparameters.md) or [`springTimingParameters`](./springtimingparameters.md) property for timing information.
 
 ## See Also
 
-- [var cubicTimingParameters: UICubicTimingParameters?](uitimingcurveprovider/cubictimingparameters.md)
+### Getting the timing information
+- [var cubicTimingParameters: UICubicTimingParameters?](./cubictimingparameters.md)
   The cubic timing parameters to use.
-- [var springTimingParameters: UISpringTimingParameters?](uitimingcurveprovider/springtimingparameters.md)
+- [var springTimingParameters: UISpringTimingParameters?](./springtimingparameters.md)
   The spring-based timing parameters to use.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Allow connection to use interfaces considered ultra-constrained by the system
@@ -24,6 +25,12 @@ func ultraConstrainedPathsAllowed(_ allowed: Bool) -> Self
 ## Parameters
 
 - `allowed`: True if ultra constrained paths should be allowed, false otherwise.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func ultraConstrainedPathsAllowed(Bool) -> Self](./ultraconstrainedpathsallowed%28_%29-34tzk.md)
+  Allow connection to use interfaces considered to be ultra-constrained by the system.
 
 
 ---

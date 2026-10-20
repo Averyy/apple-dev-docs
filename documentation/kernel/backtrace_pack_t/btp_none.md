@@ -1,14 +1,15 @@
 # BTP_NONE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```c
 BTP_NONE
 ```
 

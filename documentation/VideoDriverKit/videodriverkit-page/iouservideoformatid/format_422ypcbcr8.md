@@ -1,20 +1,22 @@
 # Format_422YpCbCr8
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 Format_422YpCbCr8
 ```
 
 ## See Also
 
-- [Format_422YpCbCr10](videodriverkit/iouservideoformatid/format_422ypcbcr10.md)
+### Y’CbCr formats
+- [Format_422YpCbCr10](./format_422ypcbcr10.md)
 
 
 ---

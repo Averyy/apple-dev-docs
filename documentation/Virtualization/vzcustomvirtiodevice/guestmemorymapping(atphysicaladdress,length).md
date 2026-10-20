@@ -1,7 +1,8 @@
 # guestMemoryMapping(atPhysicalAddress:length:)
 
 **Framework**: Virtualization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns guest memory mapping referred to by physicalAddress and length.
 
@@ -14,9 +15,13 @@ Returns guest memory mapping referred to by physicalAddress and length.
 func guestMemoryMapping(atPhysicalAddress physicalAddress: UInt64, length: Int) -> VZGuestMemoryMapping?
 ```
 
+```objc
+- (VZGuestMemoryMapping *) guestMemoryMappingAtPhysicalAddress:(uint64_t) physicalAddress length:(size_t) length;
+```
+
 #### Return Value
 
-A [`VZGuestMemoryMapping`](vzguestmemorymapping.md) object that contains the guest memory in the host address space, or `nil` if `physicalAddress` and `length` do not reference a valid guest RAM region.
+A [`VZGuestMemoryMapping`](../vzguestmemorymapping.md) object that contains the guest memory in the host address space, or `nil` if `physicalAddress` and `length` do not reference a valid guest RAM region.
 
 ## Parameters
 

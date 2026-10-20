@@ -1,7 +1,8 @@
 # readAttributeActivePower(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeActivePower(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeActivePower() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeActivePowerWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

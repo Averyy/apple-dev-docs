@@ -1,12 +1,13 @@
 # MeshAnchor.MeshClassification.table
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A table.
 
 **Availability**:
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 26.0 (renamed: SurfaceClassification)
 
 ## Declaration
 
@@ -16,13 +17,14 @@ case table
 
 ## See Also
 
-- [MeshAnchor.MeshClassification.bed](meshanchor/meshclassification/bed.md)
+### Getting furniture classifications
+- [MeshAnchor.MeshClassification.bed](./bed.md)
   A bed.
-- [MeshAnchor.MeshClassification.cabinet](meshanchor/meshclassification/cabinet.md)
+- [MeshAnchor.MeshClassification.cabinet](./cabinet.md)
   A cabinet.
-- [MeshAnchor.MeshClassification.homeAppliance](meshanchor/meshclassification/homeappliance.md)
+- [MeshAnchor.MeshClassification.homeAppliance](./homeappliance.md)
   A home appliance.
-- [MeshAnchor.MeshClassification.seat](meshanchor/meshclassification/seat.md)
+- [MeshAnchor.MeshClassification.seat](./seat.md)
   A seat.
 
 

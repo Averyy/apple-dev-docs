@@ -1,23 +1,28 @@
 # speed
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rate at which the simulation executes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var speed: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat speed;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The default value is `1.0`, which means the simulation runs at normal speed. A v
 
 ## See Also
 
-- [var gravity: CGVector](skphysicsworld/gravity.md)
+### Configuring the Physics World
+- [var gravity: CGVector](./gravity.md)
   A vector that specifies the gravitational acceleration applied to physics bodies in the physics world.
 
 

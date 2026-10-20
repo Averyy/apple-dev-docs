@@ -1,7 +1,8 @@
 # SecurityMessage.CipherSuite.xWing
 
 **Framework**: Accessory Transport Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A cipher suite that provides xWing hybrid post-quantum key encapsulation.
 
@@ -16,16 +17,17 @@ case xWing
 
 ## Mentions
 
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-- [Forwarding notifications to your accessory using the internet transport type](forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
+- [Receiving iOS notifications on an accessory](../../receiving-ios-notifications-on-an-accessory.md)
+- [Forwarding notifications to your accessory using the internet transport type](../../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
 #### Discussion
 
-Implement this cipher suite for post-quantum security. The [`AccessoryTransport.internet`](accessorytransport/internet.md) and [`AccessoryTransport.localNetwork`](accessorytransport/localnetwork.md) transport types require this cipher suite. Bluetooth transport supports this cipher suite, but you can alternatively use [`SecurityMessage.CipherSuite.p256`](securitymessage/ciphersuite-swift.enum/p256.md) as a fallback.
+Implement this cipher suite for post-quantum security. The [`AccessoryTransport.internet`](../../accessorytransport/internet.md) and [`AccessoryTransport.localNetwork`](../../accessorytransport/localnetwork.md) transport types require this cipher suite. Bluetooth transport supports this cipher suite, but you can alternatively use [`SecurityMessage.CipherSuite.p256`](./p256.md) as a fallback.
 
 ## See Also
 
-- [SecurityMessage.CipherSuite.p256](securitymessage/ciphersuite-swift.enum/p256.md)
+### Identifying cipher suite types
+- [SecurityMessage.CipherSuite.p256](./p256.md)
   A cipher suite that uses NIST P-256 elliptic curve cryptography.
 
 

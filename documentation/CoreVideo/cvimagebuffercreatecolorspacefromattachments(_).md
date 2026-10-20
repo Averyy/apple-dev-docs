@@ -1,7 +1,8 @@
 # CVImageBufferCreateColorSpaceFromAttachments(_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Attempts to create a Core Graphics color space from the image buffer’s attachments that you specify.
 
@@ -20,22 +21,26 @@ Attempts to create a Core Graphics color space from the image buffer’s attachm
 func CVImageBufferCreateColorSpaceFromAttachments(_ attachments: CFDictionary) -> Unmanaged<CGColorSpace>?
 ```
 
+```c
+extern CGColorSpaceRefCVImageBufferCreateColorSpaceFromAttachments(CFDictionaryRef attachments);
+```
+
 #### Return Value
 
-A [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) object that represents the color space of the image buffer, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if the dictionary doesn’t contain the information required to create a [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) instance.
+A [`CGColorSpace`](../CoreGraphics/cgcolorspace.md) object that represents the color space of the image buffer, or [`nil`](../ObjectiveC/nil-227m0.md) if the dictionary doesn’t contain the information required to create a [`CGColorSpace`](../CoreGraphics/cgcolorspace.md) instance.
 
 #### Discussion
 
-To generate a [`CGColorSpace`](https://developer.apple.com/documentation/coregraphics/cgcolorspace) instance, the attachments dictionary needs to include values for either:
+To generate a [`CGColorSpace`](../CoreGraphics/cgcolorspace.md) instance, the attachments dictionary needs to include values for either:
 
-1. [`kCVImageBufferICCProfileKey`](kcvimagebuffericcprofilekey.md)
-2. [`kCVImageBufferColorPrimariesKey`](kcvimagebuffercolorprimarieskey.md), [`kCVImageBufferTransferFunctionKey`](kcvimagebuffertransferfunctionkey.md), [`kCVImageBufferYCbCrMatrixKey`](kcvimagebufferycbcrmatrixkey.md), and possibly [`kCVImageBufferGammaLevelKey`](kcvimagebuffergammalevelkey.md)
+1. [`kCVImageBufferICCProfileKey`](./kcvimagebuffericcprofilekey.md)
+2. [`kCVImageBufferColorPrimariesKey`](./kcvimagebuffercolorprimarieskey.md), [`kCVImageBufferTransferFunctionKey`](./kcvimagebuffertransferfunctionkey.md), [`kCVImageBufferYCbCrMatrixKey`](./kcvimagebufferycbcrmatrixkey.md), and possibly [`kCVImageBufferGammaLevelKey`](./kcvimagebuffergammalevelkey.md)
 
-Use [`CGColorSpaceRelease`](https://developer.apple.com/documentation/coregraphics/cgcolorspacerelease) to release the color space when you’re done with it.
+Use [`CGColorSpaceRelease`](../CoreGraphics/cgcolorspacerelease.md) to release the color space when you’re done with it.
 
 ## Parameters
 
-- `attachments`: The dictionary of attachments for an image buffer, which you can obtain by calling [`CVBufferCopyAttachments(_:_:)`](cvbuffercopyattachments(_:_:).md) on the image buffer.
+- `attachments`: The dictionary of attachments for an image buffer, which you can obtain by calling [`CVBufferCopyAttachments(_:_:)`](./cvbuffercopyattachments%28_,_%29.md) on the image buffer.
 
 
 ---

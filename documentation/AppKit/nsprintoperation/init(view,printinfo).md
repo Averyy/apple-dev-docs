@@ -1,17 +1,22 @@
 # init(view:printInfo:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns an print operation object ready to control the printing of the specified view using custom print settings.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 init(view: NSView, printInfo: NSPrintInfo)
+```
+
+```objc
++ (NSPrintOperation *) printOperationWithView:(NSView *) view printInfo:(NSPrintInfo *) printInfo;
 ```
 
 #### Return Value
@@ -29,21 +34,23 @@ This method raises an `NSPrintOperationExistsException` if there is already a pr
 
 ## See Also
 
-- [func run() -> Bool](nsprintoperation/run.md)
+### Related Documentation
+- [func run() -> Bool](./run%28%29.md)
   Runs the print operation on the current thread.
-- [class func epsOperation(with: NSView, inside: NSRect, to: NSMutableData?) -> NSPrintOperation](nsprintoperation/epsoperation(with:inside:to:).md)
+### Creating the Printing Operation Object
+- [class func epsOperation(with: NSView, inside: NSRect, to: NSMutableData?) -> NSPrintOperation](./epsoperation%28with,inside,to%29.md)
   Creates and returns a new print operation object ready to control the copying of EPS graphics from the specified view.
-- [class func epsOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/epsoperation(with:inside:to:printinfo:).md)
+- [class func epsOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](./epsoperation%28with,inside,to,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of EPS graphics from the specified view using the specified print settings.
-- [class func epsOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/epsoperation(with:inside:topath:printinfo:).md)
+- [class func epsOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](./epsoperation%28with,inside,topath,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of EPS graphics from the specified view and write the resulting data to the specified file.
-- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData) -> NSPrintOperation](nsprintoperation/pdfoperation(with:inside:to:).md)
+- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData) -> NSPrintOperation](./pdfoperation%28with,inside,to%29.md)
   Creates and returns a new print operation object ready to control the copying of PDF graphics from the specified view.
-- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/pdfoperation(with:inside:to:printinfo:).md)
+- [class func pdfOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](./pdfoperation%28with,inside,to,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of PDF graphics from the specified view using the specified print settings.
-- [class func pdfOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/pdfoperation(with:inside:topath:printinfo:).md)
+- [class func pdfOperation(with: NSView, inside: NSRect, toPath: String, printInfo: NSPrintInfo) -> NSPrintOperation](./pdfoperation%28with,inside,topath,printinfo%29.md)
   Creates and returns a new print operation object ready to control the copying of PDF graphics from the specified view and write the resulting data to the specified file.
-- [init(view: NSView)](nsprintoperation/init(view:).md)
+- [init(view: NSView)](./init%28view%29.md)
   Creates and returns an print operation object ready to control the printing of the specified view.
 
 

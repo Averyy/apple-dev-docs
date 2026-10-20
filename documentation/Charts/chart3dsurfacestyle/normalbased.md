@@ -1,7 +1,8 @@
 # normalBased
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Surface normal based style.
 
@@ -17,6 +18,8 @@ Surface normal based style.
 ```swift
 static var normalBased: BasicChart3DSurfaceStyle { get }
 ```
+
+Available when `Self` is `BasicChart3DSurfaceStyle`.
 
 
 ---

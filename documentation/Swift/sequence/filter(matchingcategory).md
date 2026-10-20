@@ -1,7 +1,8 @@
 # filter(matchingCategory:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Filters a sequence of tags based on matching the specified category.  Returns the tags that match the specified category.
 
@@ -19,6 +20,8 @@ Filters a sequence of tags based on matching the specified category.  Returns th
 ```swift
 func filter<T>(matchingCategory category: CMTypedTag<T>.Category) -> [CMTypedTag<T>] where T : Sendable
 ```
+
+Available when `Element` inherits `CMTag`.
 
 #### Discussion
 

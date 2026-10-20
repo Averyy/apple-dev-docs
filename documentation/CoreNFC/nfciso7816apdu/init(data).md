@@ -1,7 +1,8 @@
 # init(data:)
 
 **Framework**: Core NFC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an APDU object with the data buffer containing the full APDU.
 
@@ -16,6 +17,10 @@ Creates an APDU object with the data buffer containing the full APDU.
 init?(data: Data)
 ```
 
+```objc
+- (instancetype) initWithData:(NSData *) data;
+```
+
 #### Return Value
 
 A newly initialized APDU object.
@@ -26,7 +31,8 @@ A newly initialized APDU object.
 
 ## See Also
 
-- [init(instructionClass: UInt8, instructionCode: UInt8, p1Parameter: UInt8, p2Parameter: UInt8, data: Data, expectedResponseLength: Int)](nfciso7816apdu/init(instructionclass:instructioncode:p1parameter:p2parameter:data:expectedresponselength:).md)
+### Creating an APDU Object
+- [init(instructionClass: UInt8, instructionCode: UInt8, p1Parameter: UInt8, p2Parameter: UInt8, data: Data, expectedResponseLength: Int)](./init%28instructionclass,instructioncode,p1parameter,p2parameter,data,expectedresponselength%29.md)
   Creates an APDU object with the instruction class and code, parameter bytes, and expected response length.
 
 

@@ -1,6 +1,8 @@
 # Rotating a cube by transforming its vertices
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Sample Code  
+**Download**: [RotatingACubeByTransformingItsVertices.zip](https://docs-assets.developer.apple.com/published/27ac5ce9cc0b/RotatingACubeByTransformingItsVertices.zip)
 
 Rotate a cube through a series of keyframes using quaternion interpolation to transition between them.
 
@@ -10,11 +12,11 @@ Rotate a cube through a series of keyframes using quaternion interpolation to tr
 
 #### Overview
 
-Quaternions are fundamental to graphics programming and are often used as a compact representation of the rotation of an object in three dimensions. You can rotate a 3D object in space by applying unit quaternion actions to each of its vertices. The [`simd`](simd-library.md) module includes functions to interpolate between a series of rotational keyframes — defined by unit quaternions — with either the [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db) (for linear interpolation) or the [`simd_spline(_:_:_:_:_:)`](https://developer.apple.com/documentation/simd/simd_spline(_:_:_:_:_:)-1ok51) (for smooth, spline-based interpolation) functions.
+Quaternions are fundamental to graphics programming and are often used as a compact representation of the rotation of an object in three dimensions. You can rotate a 3D object in space by applying unit quaternion actions to each of its vertices. The [simd](./simd-library.md) module includes functions to interpolate between a series of rotational keyframes — defined by unit quaternions — with either the [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db) (for linear interpolation) or the [`simd_spline(_:_:_:_:_:)`](https://developer.apple.com/documentation/simd/simd_spline(_:_:_:_:_:)-1ok51) (for smooth, spline-based interpolation) functions.
 
-This sample code project defines a cube using eight vertices and transforms it through a series of rotations. The sample app provides a SwiftUI [`Toggle`](https://developer.apple.com/documentation/swiftui/toggle) control that switches between a series of discrete spherical linear interpolations (that is, a series of separate arcs between each keyframe) and a continuous spline (that is, a single, smooth path between each keyframe).
+This sample code project defines a cube using eight vertices and transforms it through a series of rotations. The sample app provides a SwiftUI [`Toggle`](../SwiftUI/toggle.md) control that switches between a series of discrete spherical linear interpolations (that is, a series of separate arcs between each keyframe) and a continuous spline (that is, a single, smooth path between each keyframe).
 
-##### Define a Cube By Its Vertices
+##### Define a cube by its vertices
 
 The sample code defines a cube with eight [`simd_double3`](https://developer.apple.com/documentation/simd/simd_double3) vectors. Each vector specifies the 3D position of one of the cube’s corners.
 
@@ -37,13 +39,13 @@ The quaternion keyframes act upon the vertex origins and mutate `cubeVertices` t
 lazy var cubeVertices = cubeVertexOrigins
 ```
 
-This sample uses [`SceneKit`](https://developer.apple.comhttps://developer.apple.com/scenekit/) to render the cube that vertices in the `cubeVertices` array define. You can also use the technique that the sample code uses to rotate geometry in other technologies such as [`Metal`](https://developer.apple.comhttps://developer.apple.com/metal/). The following image shows the cube, defined by the vertices above, rendered in SceneKit:
+This sample uses [SceneKit](https://developer.apple.com/scenekit/) to render the cube that vertices in the `cubeVertices` array define. You can also use the technique that the sample code uses to rotate geometry in other technologies such as [Metal](https://developer.apple.com/metal/). The following image shows the cube, defined by the vertices above, rendered in SceneKit:
 
-![An image of a cube.](/images/com.apple.accelerate/cube_2x.jpg)
+![An image of a cube.](https://developer.apple.com/tutorials/images/com.apple.accelerate/cube_2x.jpg)
 
-##### Define the Quaternion Rotation Keyframes
+##### Define the quaternion rotation keyframes
 
-As discussed in [`Working with Quaternions`](working-with-quaternions.md), spline interpolation requires a quaternion before the current value and a quaternion after the next value to compute the interpolated value. To support this, the following code defines the series of rotations with additional values at the beginning and end. The following declaration duplicates the first and last elements.
+As discussed in [Working with Quaternions](./working-with-quaternions.md), spline interpolation requires a quaternion before the current value and a quaternion after the next value to compute the interpolated value. To support this, the following code defines the series of rotations with additional values at the beginning and end. The following declaration duplicates the first and last elements.
 
 ```swift
 let vertexRotations: [simd_quatd] = [
@@ -72,9 +74,9 @@ let vertexRotations: [simd_quatd] = [
 ]
 ```
 
-##### Animate Between Keyframes with Spherical Interpolation
+##### Animate between keyframes with spherical interpolation
 
-This sample uses a [`CVDisplayLink`](https://developer.apple.com/documentation/corevideo/cvdisplaylink-k0k) instance to schedule updates to the cube’s vertices and calls the  `vertexRotationStep()` function every frame.
+This sample uses a [`CVDisplayLink`](../CoreVideo/cvdisplaylink-k0k.md) instance to schedule updates to the cube’s vertices and calls the  `vertexRotationStep()` function every frame.
 
 ```swift
 CVDisplayLinkCreateWithCGDisplay(CGMainDisplayID(), &displayLink)
@@ -146,9 +148,9 @@ if vertexRotationTime >= 1 {
 
 Over time, the cube animates through the series of keyframes. The following image shows the sharp change in direction as the cube rotates between the keyframes:
 
-![An image of a cube with the path of one of its vertices rendered as a line after a series of spherical interpolated rotations.](/images/com.apple.accelerate/spherical_interpolation_2x.png)
+![An image of a cube with the path of one of its vertices rendered as a line after a series of spherical interpolated rotations.](https://developer.apple.com/tutorials/images/com.apple.accelerate/spherical_interpolation_2x.png)
 
-##### Animate Between Keyframes with Spline Interpolation
+##### Animate between keyframes with spline interpolation
 
 The sample code uses the identical code to the spherical interpolation sample for spline interpolation, apart from one difference: rather than generating the quaternion that acts upon the vertices with [`simd_slerp(_:_:_:)`](https://developer.apple.com/documentation/simd/simd_slerp(_:_:_:)-u2db), it uses the  [`simd_spline(_:_:_:_:_:)`](https://developer.apple.com/documentation/simd/simd_spline(_:_:_:_:_:)-1ok51) function.
 
@@ -163,19 +165,20 @@ quaternion = simd_spline(
 
 The image below shows that the spline interpolation creates transitions between the quaternion keyframes that are smoother than the linear spherical interpolation.
 
-![An image of a cube with the path of one of its vertices rendered as a line after a series of spline interpolated rotations.](/images/com.apple.accelerate/spline_interpolation_2x.png)
+![An image of a cube with the path of one of its vertices rendered as a line after a series of spline interpolated rotations.](https://developer.apple.com/tutorials/images/com.apple.accelerate/spline_interpolation_2x.png)
 
 ## See Also
 
-- [Working with Vectors](working-with-vectors.md)
+### Vectors, Matrices, and Quaternions
+- [Working with Vectors](./working-with-vectors.md)
   Use vectors to calculate geometric values, calculate dot products and cross products, and interpolate between values.
-- [Working with Matrices](working-with-matrices.md)
+- [Working with Matrices](./working-with-matrices.md)
   Solve simultaneous equations and transform points in space.
-- [Working with Quaternions](working-with-quaternions.md)
+- [Working with Quaternions](./working-with-quaternions.md)
   Rotate points around the surface of a sphere, and interpolate between them.
-- [simd](simd-library.md)
+- [simd](./simd-library.md)
   Perform computations on small vectors and matrices.
-- [vForce](vforce-library.md)
+- [vForce](./vforce-library.md)
   Perform transcendental and trigonometric functions on vectors of any length.
 
 

@@ -1,7 +1,8 @@
 # ColorSyncProfileGetMD5(_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the MD5 digest for a profile.
 
@@ -20,6 +21,10 @@ Returns the MD5 digest for a profile.
 func ColorSyncProfileGetMD5(_ prof: ColorSyncProfile!) -> ColorSyncMD5
 ```
 
+```c
+extern ColorSyncMD5 ColorSyncProfileGetMD5(ColorSyncProfileRef prof);
+```
+
 #### Return Value
 
 The MD5 digest for the profile, calculated as defined by the ICC specification, or a “zero” signature (filled with zeros) in case of failure.
@@ -30,10 +35,11 @@ The MD5 digest for the profile, calculated as defined by the ICC specification, 
 
 ## See Also
 
-- [struct ColorSyncMD5](colorsyncmd5.md)
+### Computing profile digests
+- [struct ColorSyncMD5](./colorsyncmd5.md)
   An MD5 digest that uniquely identifies a profile, as defined by the ICC specification.
-- [var COLORSYNC_MD5_LENGTH: Int32](colorsync_md5_length.md)
-- [var kColorSyncProfileMD5Digest: Unmanaged<CFString>!](kcolorsyncprofilemd5digest.md)
+- [var COLORSYNC_MD5_LENGTH: Int32](./colorsync_md5_length.md)
+- [var kColorSyncProfileMD5Digest: Unmanaged<CFString>!](./kcolorsyncprofilemd5digest.md)
   A key for the profile’s MD5 digest.
 
 

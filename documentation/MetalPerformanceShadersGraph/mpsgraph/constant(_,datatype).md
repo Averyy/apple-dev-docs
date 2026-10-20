@@ -1,7 +1,8 @@
 # constant(_:dataType:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a constant operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a constant operation and returns the result tensor.
 
 ```swift
 func constant(_ scalar: Double, dataType: MPSDataType) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) constantWithScalar:(double) scalar dataType:(MPSDataType) dataType;
 ```
 
 #### Return Value

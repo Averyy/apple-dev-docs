@@ -1,7 +1,8 @@
 # MTKSubmesh
 
 **Framework**: MetalKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A container for the index data of a Model I/O submesh, suitable for use in a Metal app.
 
@@ -19,51 +20,56 @@ A container for the index data of a Model I/O submesh, suitable for use in a Met
 class MTKSubmesh
 ```
 
+```objc
+@interface MTKSubmesh : NSObject
+```
+
 #### Overview
 
-The [`MTKSubmesh`](mtksubmesh.md) class provides a container for a segment of mesh data that can be rendered in a single draw call. A submesh can only be initialized as part of a [`MTKMesh`](mtkmesh.md) object. Each submesh contains an index buffer with which the parent’s mesh data can be rendered. Actual submesh vertex data resides in the submesh’s parent mesh. For more information on Model I/O submeshes, see [`MDLSubmesh`](https://developer.apple.com/documentation/modelio/mdlsubmesh).
+The [`MTKSubmesh`](./mtksubmesh.md) class provides a container for a segment of mesh data that can be rendered in a single draw call. A submesh can only be initialized as part of a [`MTKMesh`](./mtkmesh.md) object. Each submesh contains an index buffer with which the parent’s mesh data can be rendered. Actual submesh vertex data resides in the submesh’s parent mesh. For more information on Model I/O submeshes, see [`MDLSubmesh`](../ModelIO/mdlsubmesh.md).
 
 ## Topics
 
 ### Parent Mesh
-- [var mesh: MTKMesh?](mtksubmesh/mesh.md)
+- [var mesh: MTKMesh?](./mtksubmesh/mesh.md)
   The parent mesh containing the vertex data of this submesh.
 ### Properties used to Draw Indexed Primitives
-- [var indexBuffer: MTKMeshBuffer](mtksubmesh/indexbuffer.md)
+- [var indexBuffer: MTKMeshBuffer](./mtksubmesh/indexbuffer.md)
   The index buffer used to render the submesh object.
-- [var indexCount: Int](mtksubmesh/indexcount.md)
+- [var indexCount: Int](./mtksubmesh/indexcount.md)
   The number of indices in the index buffer.
-- [var indexType: MTLIndexType](mtksubmesh/indextype.md)
+- [var indexType: MTLIndexType](./mtksubmesh/indextype.md)
   The type of index data in the index buffer.
-- [var primitiveType: MTLPrimitiveType](mtksubmesh/primitivetype.md)
+- [var primitiveType: MTLPrimitiveType](./mtksubmesh/primitivetype.md)
   The primitive type with which to draw the submesh object.
 ### Identifying Properties
-- [var name: String](mtksubmesh/name.md)
+- [var name: String](./mtksubmesh/name.md)
   The name of the submesh.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTKMesh](mtkmesh.md)
+### Model Handling
+- [class MTKMesh](./mtkmesh.md)
   A container for the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKMeshBuffer](mtkmeshbuffer.md)
+- [class MTKMeshBuffer](./mtkmeshbuffer.md)
   A buffer that backs the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [class MTKMeshBufferAllocator](mtkmeshbufferallocator.md)
+- [class MTKMeshBufferAllocator](./mtkmeshbufferallocator.md)
   An interface for allocating a MetalKit buffer that backs the vertex data of a Model I/O mesh, suitable for use in a Metal app.
-- [Conversion Functions](conversion-functions.md)
+- [Conversion Functions](./conversion-functions.md)
   Convert between Metal and Model I/O vertex representations.
-- [Model Errors](model-errors.md)
+- [Model Errors](./model-errors.md)
   Learn about errors thrown by model handling methods.
 
 

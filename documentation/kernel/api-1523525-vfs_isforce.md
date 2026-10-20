@@ -1,7 +1,8 @@
 # vfs_isforce
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determine if a forced unmount is in progress.
 
@@ -10,11 +11,11 @@ Determine if a forced unmount is in progress.
 
 ## Declaration
 
-```swift
+```c
 int vfs_isforce(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if a request has been made to forcibly unmount, else 0.
 

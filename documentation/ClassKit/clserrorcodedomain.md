@@ -1,7 +1,8 @@
 # CLSErrorCodeDomain
 
 **Framework**: ClassKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain that ClassKit uses when issuing errors.
 
@@ -18,13 +19,18 @@ The error domain that ClassKit uses when issuing errors.
 let CLSErrorCodeDomain: String
 ```
 
+```c
+extern NSString * const CLSErrorCodeDomain;
+```
+
 ## See Also
 
-- [struct CLSError](clserror.md)
+### Errors
+- [struct CLSError](./clserror.md)
   Errors issued by ClassKit.
-- [CLSError.Code](clserror/code.md)
+- [CLSError.Code](./clserror/code.md)
   Error codes that ClassKit issues.
-- [struct CLSErrorUserInfoKey](clserroruserinfokey.md)
+- [struct CLSErrorUserInfoKey](./clserroruserinfokey.md)
   Keys that appear in the user info dictionary in errors that ClassKit creates.
 
 

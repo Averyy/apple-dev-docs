@@ -1,6 +1,7 @@
 # Getting the user’s attention with alerts and action sheets
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Present important information to a person or prompt them about an important choice.
 
@@ -8,17 +9,17 @@ Present important information to a person or prompt them about an important choi
 
 Display an alert or action sheet when your app requires additional information or acknowledgment from a person. Alerts and action sheets interrupt your app’s normal flow to display a message to the person. The following image shows an alert, which the person dismisses by selecting one of the listed options.
 
-![An alert with a title that says 'A Short Title is Best', a message that says 'A message needs to be a short, complete sentence.', and has buttons for OK and Cancel.](/images/com.apple.uikit/getting-the-user-s-attention-with-alerts-and-action-sheets-1@2x.png)
+![An alert with a title that says 'A Short Title is Best', a message that says 'A message needs to be a short, complete sentence.', and has buttons for OK and Cancel.](https://developer.apple.com/tutorials/images/com.apple.uikit/getting-the-user-s-attention-with-alerts-and-action-sheets-1@2x.png)
 
 The following image shows an action sheet. A person dismisses an action sheet by selecting one of the listed options, or by tapping outside an action sheet.
 
-![An action sheet shows with a message that says 'A message needs to be a short, complete sentence.', and has a button for Confirm.](/images/com.apple.uikit/getting-the-user-s-attention-with-alerts-and-action-sheets-2@2x.png)
+![An action sheet shows with a message that says 'A message needs to be a short, complete sentence.', and has a button for Confirm.](https://developer.apple.com/tutorials/images/com.apple.uikit/getting-the-user-s-attention-with-alerts-and-action-sheets-2@2x.png)
 
-> ❗ **Important**:  Alerts and action sheets are interruptions to someone’s current task, so use them sparingly and only when absolutely needed. For detailed guidance on when to use them, see “Action sheets” and “Alerts” in [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/presentation).
+> ❗ **Important**:  Alerts and action sheets are interruptions to someone’s current task, so use them sparingly and only when absolutely needed. For detailed guidance on when to use them, see “Action sheets” and “Alerts” in [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/presentation).
 
-##### Present an Alert
+##### Present an alert
 
-To display an alert, create a [`UIAlertController`](uialertcontroller.md) object, configure it, and then call [`present(_:animated:completion:)`](uiviewcontroller/present(_:animated:completion:).md) with the object as a parameter, as shown in the following code. Configuring the alert controller includes specifying the title and message that you want the person to see and the actions they can select. Add at least one action — represented by a [`UIAlertAction`](uialertaction.md) object — to an alert controller before you present it.
+To display an alert, create a [`UIAlertController`](./uialertcontroller.md) object, configure it, and then call [`present(_:animated:completion:)`](./uiviewcontroller/present%28_,animated,completion%29.md) with the object as a parameter, as shown in the following code. Configuring the alert controller includes specifying the title and message that you want the person to see and the actions they can select. Add at least one action — represented by a [`UIAlertAction`](./uialertaction.md) object — to an alert controller before you present it.
 
 ```swift
 @IBAction func agreeToTerms() {
@@ -45,9 +46,9 @@ To display an alert, create a [`UIAlertController`](uialertcontroller.md) object
 }
 ```
 
-##### Present an Action Sheet
+##### Present an action sheet
 
-Display an action sheet inside a popover on both iPhone and iPad. To display your action sheet in a popover, specify your popover’s anchor point using the [`popoverPresentationController`](uiviewcontroller/popoverpresentationcontroller.md) property of your alert controller.
+Display an action sheet inside a popover on both iPhone and iPad. To display your action sheet in a popover, specify your popover’s anchor point using the [`popoverPresentationController`](./uiviewcontroller/popoverpresentationcontroller.md) property of your alert controller.
 
 ```swift
 @IBAction func deleteItem() {
@@ -75,17 +76,18 @@ Display an action sheet inside a popover on both iPhone and iPad. To display you
 }
 ```
 
-Configure the popover presentation controller’s [`sourceItem`](uipopoverpresentationcontroller/sourceitem.md) to anchor the popover to a [`UIBarButtonItem`](uibarbuttonitem.md) or [`NSToolbarItem`](https://developer.apple.com/documentation/appkit/nstoolbaritem). When a person taps the button, the popover animates from and replaces the specified item until they select an action item or dismiss the popover.
+Configure the popover presentation controller’s [`sourceItem`](./uipopoverpresentationcontroller/sourceitem.md) to anchor the popover to a [`UIBarButtonItem`](./uibarbuttonitem.md) or [`NSToolbarItem`](../AppKit/nstoolbaritem.md). When a person taps the button, the popover animates from and replaces the specified item until they select an action item or dismiss the popover.
 
-Alternatively, specify the anchor location for the popover using the [`sourceView`](uipopoverpresentationcontroller/sourceview.md) and [`sourceRect`](uipopoverpresentationcontroller/sourcerect.md) properties.
+Alternatively, specify the anchor location for the popover using the [`sourceView`](./uipopoverpresentationcontroller/sourceview.md) and [`sourceRect`](./uipopoverpresentationcontroller/sourcerect.md) properties.
 
-> **Note**:  If your set of actions includes a button configured with the [`UIAlertAction.Style.cancel`](uialertaction/style-swift.enum/cancel.md) style, UIKit removes that button when displaying your action sheet in a popover. Tapping anywhere outside of the popover has the same effect as tapping the Cancel button, including calling your action handler.
+> **Note**:  If your set of actions includes a button configured with the [`UIAlertAction.Style.cancel`](./uialertaction/style-swift.enum/cancel.md) style, UIKit removes that button when displaying your action sheet in a popover. Tapping anywhere outside of the popover has the same effect as tapping the Cancel button, including calling your action handler.
 
 ## See Also
 
-- [class UIAlertController](uialertcontroller.md)
+### Alerts
+- [class UIAlertController](./uialertcontroller.md)
   An object that displays an alert message.
-- [class UIAlertAction](uialertaction.md)
+- [class UIAlertAction](./uialertaction.md)
   An action that can be taken when the user taps a button in an alert.
 
 

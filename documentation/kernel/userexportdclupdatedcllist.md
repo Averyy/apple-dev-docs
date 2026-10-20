@@ -1,26 +1,27 @@
 # UserExportDCLUpdateDCLList
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 typedef struct UserExportDCLUpdateDCLListStruct UserExportDCLUpdateDCLList;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [compilerData](userexportdclupdatedcllist/1560995-compilerdata.md)
-- [dclCommandList](userexportdclupdatedcllist/1561065-dclcommandlist.md)
-- [numDCLCommands](userexportdclupdatedcllist/1561010-numdclcommands.md)
-- [opcode](userexportdclupdatedcllist/1560977-opcode.md)
-- [pClientDCLStruct](userexportdclupdatedcllist/1561188-pclientdclstruct.md)
-- [pNextDCLCommand](userexportdclupdatedcllist/1561088-pnextdclcommand.md)
+- [compilerData](./userexportdclupdatedcllist/api-1560995-compilerdata.md)
+- [dclCommandList](./userexportdclupdatedcllist/api-1561065-dclcommandlist.md)
+- [numDCLCommands](./userexportdclupdatedcllist/api-1561010-numdclcommands.md)
+- [opcode](./userexportdclupdatedcllist/api-1560977-opcode.md)
+- [pClientDCLStruct](./userexportdclupdatedcllist/api-1561188-pclientdclstruct.md)
+- [pNextDCLCommand](./userexportdclupdatedcllist/api-1561088-pnextdclcommand.md)
 
 
 ---

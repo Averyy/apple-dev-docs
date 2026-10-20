@@ -1,7 +1,8 @@
 # windowScene
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The window scene that contains the windows to capture in your PDF data.
 
@@ -15,6 +16,10 @@ The window scene that contains the windows to capture in your PDF data.
 
 ```swift
 weak var windowScene: UIWindowScene? { get }
+```
+
+```objc
+@property (nonatomic, weak, readonly, nullable) UIWindowScene * windowScene;
 ```
 
 #### Discussion

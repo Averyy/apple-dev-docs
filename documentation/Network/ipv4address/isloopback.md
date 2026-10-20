@@ -1,7 +1,8 @@
 # isLoopback
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether this address is a loopback address for the local device.
 
@@ -22,13 +23,14 @@ var isLoopback: Bool { get }
 
 ## See Also
 
-- [var rawValue: Data](ipv4address/rawvalue.md)
+### Inspecting Address Properties
+- [var rawValue: Data](./rawvalue.md)
   The raw data of an IPv4 address.
-- [let interface: NWInterface?](ipv4address/interface.md)
+- [let interface: NWInterface?](./interface.md)
   The interface associated with this address.
-- [var isLinkLocal: Bool](ipv4address/islinklocal.md)
+- [var isLinkLocal: Bool](./islinklocal.md)
   A Boolean indicating whether this address is in a link-local range.
-- [var isMulticast: Bool](ipv4address/ismulticast.md)
+- [var isMulticast: Bool](./ismulticast.md)
   A Boolean indicating whether this address is a multicast address.
 
 

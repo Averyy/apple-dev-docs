@@ -1,7 +1,8 @@
 # setBatchNormalizationParametersForInferenceWithMean(_:variance:gamma:beta:epsilon:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -17,11 +18,16 @@
 func setBatchNormalizationParametersForInferenceWithMean(_ mean: UnsafePointer<Float>?, variance: UnsafePointer<Float>?, gamma: UnsafePointer<Float>?, beta: UnsafePointer<Float>?, epsilon: Float)
 ```
 
+```objc
+- (void) setBatchNormalizationParametersForInferenceWithMean:(const float *) mean variance:(const float *) variance gamma:(const float *) gamma beta:(const float *) beta epsilon:(const float) epsilon;
+```
+
 ## See Also
 
-- [func encode(with: NSCoder)](mpscnnconvolutiondescriptor/encode(with:).md)
-- [func setNeuronToPReLUWithParametersA(Data)](mpscnnconvolutiondescriptor/setneurontopreluwithparametersa(_:).md)
-- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float)](mpscnnconvolutiondescriptor/setneurontype(_:parametera:parameterb:).md)
+### Instance Methods
+- [func encode(with: NSCoder)](./encode%28with%29.md)
+- [func setNeuronToPReLUWithParametersA(Data)](./setneurontopreluwithparametersa%28_%29.md)
+- [func setNeuronType(MPSCNNNeuronType, parameterA: Float, parameterB: Float)](./setneurontype%28_,parametera,parameterb%29.md)
 
 
 ---

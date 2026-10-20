@@ -1,7 +1,8 @@
 # webExtensionController(_:connectUsing:for:completionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when an extension context wants to establish a persistent connection to an application.
 
@@ -15,14 +16,22 @@ Called when an extension context wants to establish a persistent connection to a
 ## Declaration
 
 ```swift
+optional func webExtensionController(_ controller: WKWebExtensionController, connectUsing port: WKWebExtension.MessagePort, for extensionContext: WKWebExtensionContext, completionHandler: @escaping ((any Error)?) -> Void)
+```
+
+```swift
 optional func webExtensionController(_ controller: WKWebExtensionController, connectUsing port: WKWebExtension.MessagePort, for extensionContext: WKWebExtensionContext) async throws
+```
+
+```objc
+- (void) webExtensionController:(WKWebExtensionController *) controller connectUsingMessagePort:(WKWebExtensionMessagePort *) port forExtensionContext:(WKWebExtensionContext *) extensionContext completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
 This method should be implemented by the app to handle establishing connections to applications.
 
-The provided [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) object can be used to handle message sending, receiving, and disconnection.
+The provided [`WKWebExtension.MessagePort`](../wkwebextension/messageport.md) object can be used to handle message sending, receiving, and disconnection.
 
 You should retain the port object for as long as the connection remains active. Releasing the port will disconnect it.
 

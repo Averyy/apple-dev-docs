@@ -1,7 +1,8 @@
 # init(fovY:aspectRatio:nearZ:farZ:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 init(fovY: Angle2DFloat, aspectRatio: Float, nearZ: Float, farZ: Float)
+```
+
+```c
+static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatMakeWithRightHandPerspective(SPAngleFloat fovY, float aspectRatio, float nearZ, float farZ);
 ```
 
 #### Return Value

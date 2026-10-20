@@ -1,7 +1,8 @@
 # Metric.Value.ignore
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The metric doesn’t apply to this sample and aggregators skip it.
 

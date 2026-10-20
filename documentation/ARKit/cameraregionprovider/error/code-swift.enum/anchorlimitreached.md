@@ -1,7 +1,8 @@
 # CameraRegionProvider.Error.Code.anchorLimitReached
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Adding a camera region anchor failed - an upper limit was reached for this specific camera enhancement type.
 

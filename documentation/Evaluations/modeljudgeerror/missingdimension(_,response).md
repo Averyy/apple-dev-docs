@@ -1,7 +1,8 @@
 # ModelJudgeError.missingDimension(_:response:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The model judge’s response is missing a required scoring dimension. The first associated value is the name of the missing dimension.
 

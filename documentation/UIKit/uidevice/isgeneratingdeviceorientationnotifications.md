@@ -1,7 +1,8 @@
 # isGeneratingDeviceOrientationNotifications
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the device generates orientation notifications.
 
@@ -16,19 +17,24 @@ A Boolean value that indicates whether the device generates orientation notifica
 var isGeneratingDeviceOrientationNotifications: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isGeneratingDeviceOrientationNotifications) BOOL generatesDeviceOrientationNotifications;
+```
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the shared [`UIDevice`](uidevice.md) object posts a [`orientationDidChangeNotification`](uidevice/orientationdidchangenotification.md) notification when the device changes orientation. If the value is [`false`](https://developer.apple.com/documentation/swift/false), it generates no orientation notifications. Device orientation notifications can only be generated between calls to the [`beginGeneratingDeviceOrientationNotifications()`](uidevice/begingeneratingdeviceorientationnotifications().md) and [`endGeneratingDeviceOrientationNotifications()`](uidevice/endgeneratingdeviceorientationnotifications().md) methods.
+If the value of this property is [`true`](../../Swift/true.md), the shared [`UIDevice`](../uidevice.md) object posts a [`orientationDidChangeNotification`](./orientationdidchangenotification.md) notification when the device changes orientation. If the value is [`false`](../../Swift/false.md), it generates no orientation notifications. Device orientation notifications can only be generated between calls to the [`beginGeneratingDeviceOrientationNotifications()`](./begingeneratingdeviceorientationnotifications%28%29.md) and [`endGeneratingDeviceOrientationNotifications()`](./endgeneratingdeviceorientationnotifications%28%29.md) methods.
 
 ## See Also
 
-- [var orientation: UIDeviceOrientation](uidevice/orientation.md)
+### Tracking the device orientation
+- [var orientation: UIDeviceOrientation](./orientation.md)
   The physical orientation of the device.
-- [enum UIDeviceOrientation](uideviceorientation.md)
+- [enum UIDeviceOrientation](../uideviceorientation.md)
   Constants that describe the physical orientation of the device.
-- [func beginGeneratingDeviceOrientationNotifications()](uidevice/begingeneratingdeviceorientationnotifications.md)
+- [func beginGeneratingDeviceOrientationNotifications()](./begingeneratingdeviceorientationnotifications%28%29.md)
   Begins the generation of notifications of device orientation changes.
-- [func endGeneratingDeviceOrientationNotifications()](uidevice/endgeneratingdeviceorientationnotifications.md)
+- [func endGeneratingDeviceOrientationNotifications()](./endgeneratingdeviceorientationnotifications%28%29.md)
   Ends the generation of notifications of device orientation changes.
 
 

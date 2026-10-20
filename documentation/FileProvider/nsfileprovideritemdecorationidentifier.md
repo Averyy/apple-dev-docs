@@ -1,7 +1,8 @@
 # NSFileProviderItemDecorationIdentifier
 
 **Framework**: File Provider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A decoration identifier defined in the File Provider extension’s information property list.
 
@@ -18,32 +19,37 @@ A decoration identifier defined in the File Provider extension’s information p
 struct NSFileProviderItemDecorationIdentifier
 ```
 
+```c
+typedef NSString * NSFileProviderItemDecorationIdentifier;
+```
+
 ## Topics
 
 ### Creating Decoration Identifiers
-- [init(String)](nsfileprovideritemdecorationidentifier/init(_:).md)
+- [init(String)](./nsfileprovideritemdecorationidentifier/init%28_%29.md)
   Returns a new decoration identifier matching the provided String.
-- [init(rawValue: String)](nsfileprovideritemdecorationidentifier/init(rawvalue:).md)
+- [init(rawValue: String)](./nsfileprovideritemdecorationidentifier/init%28rawvalue%29.md)
   Returns a new decoration identifier matching the provided value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct NSFileProviderItemFields](nsfileprovideritemfields.md)
+### Items and metadata
+- [struct NSFileProviderItemFields](./nsfileprovideritemfields.md)
   Fields that specify which of the item’s properties have changed.
-- [class NSFileProviderItemVersion](nsfileprovideritemversion.md)
+- [class NSFileProviderItemVersion](./nsfileprovideritemversion.md)
   The version of the item’s content and its metadata.
-- [class NSFileProviderRequest](nsfileproviderrequest.md)
+- [class NSFileProviderRequest](./nsfileproviderrequest.md)
   An object that provides information about the application requesting data from the File Provider extension.
-- [protocol NSFileProviderItemDecorating](nsfileprovideritemdecorating.md)
+- [protocol NSFileProviderItemDecorating](./nsfileprovideritemdecorating.md)
   Support for decorating items.
 
 

@@ -1,7 +1,8 @@
 # AppInfoLocalizationCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships to other resources that you can set with this request.
 
@@ -10,14 +11,14 @@ The relationships to other resources that you can set with this request.
 
 ## Declaration
 
-```swift
+```
 object AppInfoLocalizationCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppInfoLocalizationCreateRequest.Data.Relationships.AppInfo](appinfolocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appinfo-data.dictionary.md)
+- [object AppInfoLocalizationCreateRequest.Data.Relationships.AppInfo](./relationships-data.dictionary/appinfo-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -26,7 +27,8 @@ object AppInfoLocalizationCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppInfoLocalizationCreateRequest.Data.Attributes](appinfolocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppInfoLocalizationCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
 
 

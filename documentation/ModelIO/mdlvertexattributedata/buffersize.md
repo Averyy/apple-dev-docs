@@ -1,7 +1,8 @@
 # bufferSize
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var bufferSize: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger bufferSize;
 ```
 
 

@@ -1,14 +1,15 @@
 # IsochIO_Impl
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.15+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 kern_return_t IsochIO_Impl(IOMemoryDescriptor *dataBuffer, IOMemoryDescriptor *frameList, uint64_t firstFrameNumber, OSAction *completion);
 ```
 

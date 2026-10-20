@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The algorithm or implementation the request uses.
 
@@ -22,9 +23,10 @@ let revision: CoreMLRequest.Revision
 
 ## See Also
 
-- [static let supportedRevisions: [CoreMLRequest.Revision]](coremlrequest/supportedrevisions.md)
+### Getting the revision
+- [static let supportedRevisions: [CoreMLRequest.Revision]](./supportedrevisions.md)
   The collection of revisions the request supports.
-- [CoreMLRequest.Revision](coremlrequest/revision-swift.enum.md)
+- [CoreMLRequest.Revision](./revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
 
 

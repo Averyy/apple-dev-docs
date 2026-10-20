@@ -1,7 +1,8 @@
 # copyBytes(to:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Copy all bytes to the destination buffer.
 

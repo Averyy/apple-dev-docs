@@ -1,7 +1,8 @@
 # MTLBlendOperation
 
 **Framework**: Metal  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 For every pixel, `MTLBlendOperation` determines how to combine and weight the source fragment values with the destination values. Some blend operations multiply the source values by a source blend factor (SBF), multiply the destination values by a destination blend factor (DBF), and then combine the results using addition or subtraction. Other blend operations use either a minimum or maximum function to determine the result.
 
@@ -10,7 +11,7 @@ For every pixel, `MTLBlendOperation` determines how to combine and weight the so
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,42 +20,47 @@ For every pixel, `MTLBlendOperation` determines how to combine and weight the so
 enum MTLBlendOperation
 ```
 
+```c
+enum MTLBlendOperation : NSUInteger;
+```
+
 ## Topics
 
 ### Blend operations
-- [MTLBlendOperation.add](mtlblendoperation/add.md)
+- [MTLBlendOperation.add](./mtlblendoperation/add.md)
   Add portions of both source and destination pixel values.
-- [MTLBlendOperation.subtract](mtlblendoperation/subtract.md)
+- [MTLBlendOperation.subtract](./mtlblendoperation/subtract.md)
   Subtract a portion of the destination pixel values from a portion of the source.
-- [MTLBlendOperation.reverseSubtract](mtlblendoperation/reversesubtract.md)
+- [MTLBlendOperation.reverseSubtract](./mtlblendoperation/reversesubtract.md)
   Subtract a portion of the source values from a portion of the destination pixel values.
-- [MTLBlendOperation.min](mtlblendoperation/min.md)
+- [MTLBlendOperation.min](./mtlblendoperation/min.md)
   Minimum of the source and destination pixel values.
-- [MTLBlendOperation.max](mtlblendoperation/max.md)
+- [MTLBlendOperation.max](./mtlblendoperation/max.md)
   Maximum of the source and destination pixel values.
 ### Enumeration Cases
-- [MTLBlendOperation.unspecialized](mtlblendoperation/unspecialized.md)
+- [MTLBlendOperation.unspecialized](./mtlblendoperation/unspecialized.md)
   Defers assigning the blend operation.
 ### Initializers
-- [init?(rawValue: UInt)](mtlblendoperation/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./mtlblendoperation/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isBlendingEnabled: Bool](mtlrenderpipelinecolorattachmentdescriptor/isblendingenabled.md)
+### Controlling blend operations
+- [var isBlendingEnabled: Bool](./mtlrenderpipelinecolorattachmentdescriptor/isblendingenabled.md)
   A Boolean value that determines whether blending is enabled.
-- [var alphaBlendOperation: MTLBlendOperation](mtlrenderpipelinecolorattachmentdescriptor/alphablendoperation.md)
+- [var alphaBlendOperation: MTLBlendOperation](./mtlrenderpipelinecolorattachmentdescriptor/alphablendoperation.md)
   The blend operation assigned for the alpha data.
-- [var rgbBlendOperation: MTLBlendOperation](mtlrenderpipelinecolorattachmentdescriptor/rgbblendoperation.md)
+- [var rgbBlendOperation: MTLBlendOperation](./mtlrenderpipelinecolorattachmentdescriptor/rgbblendoperation.md)
   The blend operation assigned for the RGB data.
 
 

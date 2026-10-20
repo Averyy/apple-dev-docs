@@ -1,7 +1,8 @@
 # HKMetricPrefix
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Prefixes that can be added to SI units to change the order of magnitude.
 
@@ -19,57 +20,62 @@ Prefixes that can be added to SI units to change the order of magnitude.
 enum HKMetricPrefix
 ```
 
+```c
+enum HKMetricPrefix : NSInteger;
+```
+
 ## Topics
 
 ### Prefixes
-- [HKMetricPrefix.none](hkmetricprefix/none.md)
+- [HKMetricPrefix.none](./hkmetricprefix/none.md)
   A prefix that does not modify the base unit.
-- [HKMetricPrefix.femto](hkmetricprefix/femto.md)
+- [HKMetricPrefix.femto](./hkmetricprefix/femto.md)
   A prefix that multiplies the base unit by 1e-15.
-- [HKMetricPrefix.pico](hkmetricprefix/pico.md)
+- [HKMetricPrefix.pico](./hkmetricprefix/pico.md)
   A prefix that multiplies the base unit by 1e-12.
-- [HKMetricPrefix.nano](hkmetricprefix/nano.md)
+- [HKMetricPrefix.nano](./hkmetricprefix/nano.md)
   A prefix that multiplies the base unit by 1e-9.
-- [HKMetricPrefix.micro](hkmetricprefix/micro.md)
+- [HKMetricPrefix.micro](./hkmetricprefix/micro.md)
   A prefix that multiplies the base unit by 1e-6.
-- [HKMetricPrefix.milli](hkmetricprefix/milli.md)
+- [HKMetricPrefix.milli](./hkmetricprefix/milli.md)
   A prefix that multiplies the base unit by 0.001.
-- [HKMetricPrefix.centi](hkmetricprefix/centi.md)
+- [HKMetricPrefix.centi](./hkmetricprefix/centi.md)
   A prefix that multiplies the base unit by 0.01.
-- [HKMetricPrefix.deci](hkmetricprefix/deci.md)
+- [HKMetricPrefix.deci](./hkmetricprefix/deci.md)
   A prefix that multiplies the base unit by 0.1.
-- [HKMetricPrefix.deca](hkmetricprefix/deca.md)
+- [HKMetricPrefix.deca](./hkmetricprefix/deca.md)
   A prefix that multiplies the base unit by 10.
-- [HKMetricPrefix.hecto](hkmetricprefix/hecto.md)
+- [HKMetricPrefix.hecto](./hkmetricprefix/hecto.md)
   A prefix that multiplies the base unit by 100.
-- [HKMetricPrefix.kilo](hkmetricprefix/kilo.md)
+- [HKMetricPrefix.kilo](./hkmetricprefix/kilo.md)
   A prefix that multiplies the base unit by 1000.
-- [HKMetricPrefix.mega](hkmetricprefix/mega.md)
+- [HKMetricPrefix.mega](./hkmetricprefix/mega.md)
   A prefix that multiplies the base unit by 1e6.
-- [HKMetricPrefix.giga](hkmetricprefix/giga.md)
+- [HKMetricPrefix.giga](./hkmetricprefix/giga.md)
   A prefix that multiplies the base unit by 1e9.
-- [HKMetricPrefix.tera](hkmetricprefix/tera.md)
+- [HKMetricPrefix.tera](./hkmetricprefix/tera.md)
   A prefix that multiplies the base unit by 1e12.
 ### Initializers
-- [init?(rawValue: Int)](hkmetricprefix/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkmetricprefix/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Defining and converting units and quantities](defining-and-converting-units-and-quantities.md)
+### Units and quantities
+- [Defining and converting units and quantities](./defining-and-converting-units-and-quantities.md)
   Create and convert units and quantities.
-- [class HKQuantity](hkquantity.md)
+- [class HKQuantity](./hkquantity.md)
   An object that stores a value for a given unit.
-- [class HKUnit](hkunit.md)
+- [class HKUnit](./hkunit.md)
   A class for managing the units of measure within HealthKit.
 
 

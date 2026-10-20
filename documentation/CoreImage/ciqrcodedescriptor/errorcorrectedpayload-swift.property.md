@@ -1,7 +1,8 @@
 # errorCorrectedPayload
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error-corrected codeword payload that comprises the QR code symbol.
 
@@ -19,6 +20,10 @@ The error-corrected codeword payload that comprises the QR code symbol.
 var errorCorrectedPayload: Data { get }
 ```
 
+```objc
+@property (readonly) NSData * errorCorrectedPayload;
+```
+
 #### Discussion
 
 QR Codes are formally specified in ISO/IEC 18004:2006(E). Section 6.4.10 “Bitstream to codeword conversion” specifies the set of 8-bit codewords in the symbol immediately prior to splitting the message into blocks and applying error correction.
@@ -29,11 +34,12 @@ The `errorCorrectedPayload` corresponds to this sequence of 8-bit codewords.
 
 ## See Also
 
-- [var symbolVersion: Int](ciqrcodedescriptor/symbolversion-swift.property.md)
+### Examining a Descriptor
+- [var symbolVersion: Int](./symbolversion-swift.property.md)
   The version of the QR code which corresponds to the size of the QR code symbol.
-- [var maskPattern: UInt8](ciqrcodedescriptor/maskpattern-swift.property.md)
+- [var maskPattern: UInt8](./maskpattern-swift.property.md)
   The data mask pattern for the QR code symbol.
-- [var errorCorrectionLevel: CIQRCodeDescriptor.ErrorCorrectionLevel](ciqrcodedescriptor/errorcorrectionlevel-swift.property.md)
+- [var errorCorrectionLevel: CIQRCodeDescriptor.ErrorCorrectionLevel](./errorcorrectionlevel-swift.property.md)
   The error correction level of the QR code symbol.
 
 

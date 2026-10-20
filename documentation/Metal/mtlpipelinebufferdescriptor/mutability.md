@@ -1,7 +1,8 @@
 # mutability
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mutability option that determines whether you can update a buffer’s contents before related commands use the buffer.
 
@@ -19,18 +20,23 @@ A mutability option that determines whether you can update a buffer’s contents
 var mutability: MTLMutability { get set }
 ```
 
+```objc
+@property (nonatomic) MTLMutability mutability;
+```
+
 #### Discussion
 
-The default value is [`MTLMutability.default`](mtlmutability/default.md).
+The default value is [`MTLMutability.default`](../mtlmutability/default.md).
 
 If you don’t explicitly declare mutability, Metal uses the following default behaviors:
 
-- Regular buffers are mutable by default, and Metal treats [`MTLMutability.default`](mtlmutability/default.md) as if it were [`MTLMutability.mutable`](mtlmutability/mutable.md).
-- Argument buffers are immutable by default, and Metal treats [`MTLMutability.default`](mtlmutability/default.md) as if it were [`MTLMutability.immutable`](mtlmutability/immutable.md).
+- Regular buffers are mutable by default, and Metal treats [`MTLMutability.default`](../mtlmutability/default.md) as if it were [`MTLMutability.mutable`](../mtlmutability/mutable.md).
+- Argument buffers are immutable by default, and Metal treats [`MTLMutability.default`](../mtlmutability/default.md) as if it were [`MTLMutability.immutable`](../mtlmutability/immutable.md).
 
 ## See Also
 
-- [enum MTLMutability](mtlmutability.md)
+### Setting buffer mutability
+- [enum MTLMutability](../mtlmutability.md)
   The options that determine the mutability of a buffer’s contents.
 
 

@@ -1,7 +1,8 @@
 # directivity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The radiation pattern for sound that an entity emits.
 

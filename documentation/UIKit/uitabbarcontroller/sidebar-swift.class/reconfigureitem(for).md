@@ -1,7 +1,8 @@
 # reconfigureItem(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the sidebar reconfigure the item representing the specified tab. This method has no effect if the `tab` is not currently displayed in the sidebar.
 
@@ -17,13 +18,18 @@ Requests the sidebar reconfigure the item representing the specified tab. This m
 func reconfigureItem(for tab: UITab)
 ```
 
+```objc
+- (void) reconfigureItemForTab:(UITab *) tab;
+```
+
 ## See Also
 
-- [var isHidden: Bool](uitabbarcontroller/sidebar-swift.class/ishidden.md)
+### Managing customization
+- [var isHidden: Bool](./ishidden.md)
   Determines if the sidebar is currently hidden.
-- [var preferredLayout: UITabBarController.Sidebar.Layout](uitabbarcontroller/sidebar-swift.class/preferredlayout.md)
+- [var preferredLayout: UITabBarController.Sidebar.Layout](./preferredlayout.md)
   The preferred layout for how the sidebar lays out with the tab bar controller’s content. Default is `.automatic`
-- [UITabBarController.Sidebar.Layout](uitabbarcontroller/sidebar-swift.class/layout.md)
+- [UITabBarController.Sidebar.Layout](./layout.md)
 
 
 ---

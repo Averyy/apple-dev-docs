@@ -1,18 +1,19 @@
 # CFReadStreamScheduleWithRunLoop(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Schedules a stream into a run loop.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Schedules a stream into a run loop.
 func CFReadStreamScheduleWithRunLoop(_ stream: CFReadStream!, _ runLoop: CFRunLoop!, _ runLoopMode: CFRunLoopMode!)
 ```
 
+```c
+extern void CFReadStreamScheduleWithRunLoop(CFReadStreamRef stream, CFRunLoopRef runLoop, CFRunLoopMode runLoopMode);
+```
+
 #### Discussion
 
-After scheduling `stream` with a run loop, its client (set with [`CFReadStreamSetClient(_:_:_:_:)`](cfreadstreamsetclient(_:_:_:_:).md)) is notified when various events happen with the stream, such as when it finishes opening, when it has bytes available, and when an error occurs. A stream can be scheduled with multiple run loops and run loop modes. Use [`CFReadStreamUnscheduleFromRunLoop(_:_:_:)`](cfreadstreamunschedulefromrunloop(_:_:_:).md) to later remove `stream` from the run loop.
+After scheduling `stream` with a run loop, its client (set with [`CFReadStreamSetClient(_:_:_:_:)`](./cfreadstreamsetclient%28_,_,_,_%29.md)) is notified when various events happen with the stream, such as when it finishes opening, when it has bytes available, and when an error occurs. A stream can be scheduled with multiple run loops and run loop modes. Use [`CFReadStreamUnscheduleFromRunLoop(_:_:_:)`](./cfreadstreamunschedulefromrunloop%28_,_,_%29.md) to later remove `stream` from the run loop.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ After scheduling `stream` with a run loop, its client (set with [`CFReadStreamSe
 
 ## See Also
 
-- [func CFReadStreamUnscheduleFromRunLoop(CFReadStream!, CFRunLoop!, CFRunLoopMode!)](cfreadstreamunschedulefromrunloop(_:_:_:).md)
+### Scheduling a Read Stream
+- [func CFReadStreamUnscheduleFromRunLoop(CFReadStream!, CFRunLoop!, CFRunLoopMode!)](./cfreadstreamunschedulefromrunloop%28_,_,_%29.md)
   Removes a read stream from a given run loop.
 
 

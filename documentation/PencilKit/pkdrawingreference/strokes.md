@@ -1,7 +1,8 @@
 # strokes
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of strokes used to represent the drawing.
 
@@ -18,11 +19,16 @@ An array of strokes used to represent the drawing.
 var strokes: [PKStroke] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<PKStroke *> * strokes;
+```
+
 ## See Also
 
-- [func dataRepresentation() -> Data](pkdrawingreference/datarepresentation.md)
+### Getting the drawing data
+- [func dataRepresentation() -> Data](./datarepresentation%28%29.md)
   Returns a representation of the rendered content as data.
-- [let PKAppleDrawingTypeIdentifier: CFString](pkappledrawingtypeidentifier.md)
+- [let PKAppleDrawingTypeIdentifier: CFString](../pkappledrawingtypeidentifier.md)
   The uniform type identifier for data associated with a drawing object.
 
 

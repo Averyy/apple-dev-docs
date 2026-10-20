@@ -1,7 +1,8 @@
 # add(_:metadata:)
 
 **Framework**: Group Activities  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the specified item and metadata to the journal and begins transferring the data to the other participants’ devices so they can access it.
 
@@ -21,7 +22,7 @@ final func add<ItemType, MetadataType>(_ item: ItemType, metadata: MetadataType)
 
 #### Return Value
 
-An attachment object you can remove by passing it to the [`remove(attachment:)`](groupsessionjournal/remove(attachment:).md) function.
+An attachment object you can remove by passing it to the [`remove(attachment:)`](./remove%28attachment%29.md) function.
 
 #### Discussion
 
@@ -29,12 +30,13 @@ Call this method when you want to send a file or codable data type to the other 
 
 ## Parameters
 
-- `item`: The item to send to other session participants. The type you specify must conform to the [`Transferable`](https://developer.apple.com/documentation/coretransferable/transferable) protocol. For more information about creating transferable types, see [`Core Transferable`](https://developer.apple.com/documentation/coretransferable).
-- `metadata`: Custom metadata to include with the item. Specify a [`Codable`](https://developer.apple.com/documentation/swift/codable) type that contains information to help your app interpret or process the item on other devices. For example, you might include app-specific details that aren’t part of the item’s intrinsic data format.
+- `item`: The item to send to other session participants. The type you specify must conform to the [`Transferable`](../../CoreTransferable/transferable.md) protocol. For more information about creating transferable types, see [Core Transferable](../../CoreTransferable/CoreTransferable.md).
+- `metadata`: Custom metadata to include with the item. Specify a [`Codable`](../../Swift/codable.md) type that contains information to help your app interpret or process the item on other devices. For example, you might include app-specific details that aren’t part of the item’s intrinsic data format.
 
 ## See Also
 
-- [func add<ItemType>(ItemType) async throws -> GroupSessionJournal.Attachment](groupsessionjournal/add(_:).md)
+### Uploading content to the session
+- [func add<ItemType>(ItemType) async throws -> GroupSessionJournal.Attachment](./add%28_%29.md)
   Adds the specified item to the journal and begins transferring the item’s data to the other participants’ devices so they can access it.
 
 

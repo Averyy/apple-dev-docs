@@ -1,19 +1,24 @@
 # ABExternalChangeCallback
 
 **Framework**: Address Book  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Prototype for a function callback invoked on an address book when the Address Book database is modified by another address book instance.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
 
 ## Declaration
 
 ```swift
 typealias ABExternalChangeCallback = (ABAddressBook?, CFDictionary?, UnsafeMutableRawPointer?) -> Void
+```
+
+```c
+typedef void (*)(const void *, const struct __CFDictionary *, void *) ABExternalChangeCallback;
 ```
 
 #### Discussion
@@ -22,11 +27,11 @@ If you name your callback function `MyAddressBookExternalChangeCallback`, you de
 
 ##### Discussion
 
-Use [`ABAddressBookRegisterExternalChangeCallback(_:_:_:)`](abaddressbookregisterexternalchangecallback(_:_:_:).md) to register and [`ABAddressBookUnregisterExternalChangeCallback(_:_:_:)`](abaddressbookunregisterexternalchangecallback(_:_:_:).md) to unregister the callback function.
+Use [`ABAddressBookRegisterExternalChangeCallback(_:_:_:)`](./abaddressbookregisterexternalchangecallback%28_,_,_%29.md) to register and [`ABAddressBookUnregisterExternalChangeCallback(_:_:_:)`](./abaddressbookunregisterexternalchangecallback%28_,_,_%29.md) to unregister the callback function.
 
 You can register for a callback with different contexts or callback functions. The run loop on the thread that registered the callback invokes the callback.
 
-The `addressBook` object does not take any action to flush or synchronize cached state with the Address Book database. If you want to ensure that `addressBook` doesn’t contain stale values, use [`ABAddressBookRevert(_:)`](abaddressbookrevert(_:).md).
+The `addressBook` object does not take any action to flush or synchronize cached state with the Address Book database. If you want to ensure that `addressBook` doesn’t contain stale values, use [`ABAddressBookRevert(_:)`](./abaddressbookrevert%28_%29.md).
 
 ## Parameters
 
@@ -36,23 +41,24 @@ The `addressBook` object does not take any action to flush or synchronize cached
 
 ## See Also
 
-- [typealias ABRecord](abrecord-swift.typealias.md)
+### Deprecated
+- [typealias ABRecord](./abrecord-swift.typealias.md)
   A reference to an ABRecord object or any of its derivedopaque types.
-- [typealias ABAddressBookRequestAccessCompletionHandler](abaddressbookrequestaccesscompletionhandler.md)
+- [typealias ABAddressBookRequestAccessCompletionHandler](./abaddressbookrequestaccesscompletionhandler.md)
   Definition for a block callback invoked when an access request has completed.
-- [typealias ABMultiValueIdentifier](abmultivalueidentifier.md)
+- [typealias ABMultiValueIdentifier](./abmultivalueidentifier.md)
   Identifies multivalue properties.
-- [typealias ABPersonCompositeNameFormat](abpersoncompositenameformat.md)
+- [typealias ABPersonCompositeNameFormat](./abpersoncompositenameformat.md)
   Indicates a person-name display format.
-- [typealias ABPersonSortOrdering](abpersonsortordering.md)
+- [typealias ABPersonSortOrdering](./abpersonsortordering.md)
   Indicates a person sort ordering.
-- [typealias ABPropertyID](abpropertyid.md)
+- [typealias ABPropertyID](./abpropertyid.md)
   Integer that identifies a record property.
-- [typealias ABRecordID](abrecordid.md)
+- [typealias ABRecordID](./abrecordid.md)
   Integer that identifies a record.
-- [typealias ABRecordType](abrecordtype.md)
+- [typealias ABRecordType](./abrecordtype.md)
   Integer that identifies a record type.
-- [typealias ABSourceType](absourcetype.md)
+- [typealias ABSourceType](./absourcetype.md)
   Indicates a source type. See `Source Properties`.
 
 

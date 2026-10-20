@@ -1,7 +1,8 @@
 # buttonSizing
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred sizing behavior of buttons in the view hierarchy.
 
@@ -24,7 +25,7 @@ var buttonSizing: ButtonSizing { get }
 
 Views may use the specified button sizing when determining the size they choose to be in their primary axis within their parent view’s proposed size.
 
-Use [`buttonSizing(_:)`](view/buttonsizing(_:).md) to set the preferred sizing behavior in the environment. Many built-in controls that display as a button adapt to this environment value. You can read the environment value in your own views and styles as well to adapt to the preferred sizing.
+Use [`buttonSizing(_:)`](../view/buttonsizing%28_%29.md) to set the preferred sizing behavior in the environment. Many built-in controls that display as a button adapt to this environment value. You can read the environment value in your own views and styles as well to adapt to the preferred sizing.
 
 ```swift
 struct CustomButtonStyle: ButtonStyle {

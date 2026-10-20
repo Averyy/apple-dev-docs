@@ -1,7 +1,8 @@
 # ENOTSOCK
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 ipc/network software – argument errors. Socket operation on non-socket.
 

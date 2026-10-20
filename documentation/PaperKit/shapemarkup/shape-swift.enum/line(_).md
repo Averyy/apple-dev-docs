@@ -1,7 +1,8 @@
 # ShapeMarkup.Shape.line(_:)
 
 **Framework**: PaperKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A quadratic Bézier curve line.
 

@@ -1,7 +1,8 @@
 # yaw
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The yaw of the device, in radians.
 
@@ -19,9 +20,13 @@ The yaw of the device, in radians.
 var yaw: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double yaw;
+```
+
 ## Mentions
 
-- [Getting processed device-motion data](getting-processed-device-motion-data.md)
+- [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
 #### Discussion
 
@@ -29,9 +34,10 @@ A yaw is a rotation around an axis that runs vertically through the device. It i
 
 ## See Also
 
-- [var roll: Double](cmattitude/roll.md)
+### Getting a Mathematical Representation of Attitude as Euler Angles
+- [var roll: Double](./roll.md)
   The roll of the device, in radians.
-- [var pitch: Double](cmattitude/pitch.md)
+- [var pitch: Double](./pitch.md)
   The pitch of the device, in radians.
 
 

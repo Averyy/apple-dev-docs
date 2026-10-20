@@ -1,7 +1,8 @@
 # clipRectSource
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source rectangle to use when reading data.
 
@@ -19,19 +20,24 @@ The source rectangle to use when reading data.
 var clipRectSource: MTLRegion { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) MTLRegion clipRectSource;
+```
+
 #### Discussion
 
-This value indicates which part of the source image to read from. If the value of `clipRectSource` does not lie completely within the source image, then the intersection of the image bounds and the value of `clipRectSource` will be used. The value of `clipRectSource` replaces the [`offset`](mpsunaryimagekernel/offset.md) value for this filter, which is ignored.
+This value indicates which part of the source image to read from. If the value of `clipRectSource` does not lie completely within the source image, then the intersection of the image bounds and the value of `clipRectSource` will be used. The value of `clipRectSource` replaces the [`offset`](../mpsunaryimagekernel/offset.md) value for this filter, which is ignored.
 
-The default value is [`MPSRectNoClip`](mpsrectnoclip.md), indicating that the entire source texture is used.
+The default value is [`MPSRectNoClip`](../mpsrectnoclip.md), indicating that the entire source texture is used.
 
 ## See Also
 
-- [var zeroHistogram: Bool](mpsimagehistogram/zerohistogram.md)
+### Properties
+- [var zeroHistogram: Bool](./zerohistogram.md)
   Determines whether to zero-initialize the histogram results.
-- [var histogramInfo: MPSImageHistogramInfo](mpsimagehistogram/histograminfo.md)
+- [var histogramInfo: MPSImageHistogramInfo](./histograminfo.md)
   A structure describing the histogram content.
-- [var minPixelThresholdValue: vector_float4](mpsimagehistogram/minpixelthresholdvalue.md)
+- [var minPixelThresholdValue: vector_float4](./minpixelthresholdvalue.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # HIDDeviceClient.Notification.deviceUnseized
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A notification that the device is no longer seized.
 

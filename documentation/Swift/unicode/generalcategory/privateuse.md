@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.privateUse
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A private-use character.
 
@@ -22,7 +23,7 @@ case privateUse
 
 #### Discussion
 
-This value corresponds to the category `Private_Use` (abbreviated `Co`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Private_Use` (abbreviated `Co`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

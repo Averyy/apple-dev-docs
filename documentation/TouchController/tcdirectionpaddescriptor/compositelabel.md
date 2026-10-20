@@ -1,7 +1,8 @@
 # compositeLabel
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A composite control label.
 
@@ -16,41 +17,46 @@ A composite control label.
 var compositeLabel: TCControlLabel? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) TCControlLabel * compositeLabel;
+```
+
 #### Discussion
 
 If set, the control will behave as a `GCControllerDirectionPad`. Otherwise, it will behave as separate buttons.
 
 ## See Also
 
-- [var downContents: TCControlContents?](tcdirectionpaddescriptor/downcontents.md)
+### Inspecting the descriptor
+- [var downContents: TCControlContents?](./downcontents.md)
   The contents for the down button.
-- [var downLabel: TCControlLabel?](tcdirectionpaddescriptor/downlabel.md)
+- [var downLabel: TCControlLabel?](./downlabel.md)
   The label for the down button, if the control is not a composite direction pad.
-- [var highlightDuration: TimeInterval](tcdirectionpaddescriptor/highlightduration.md)
+- [var highlightDuration: TimeInterval](./highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var inputIsMutuallyExclusive: Bool](tcdirectionpaddescriptor/inputismutuallyexclusive.md)
+- [var inputIsMutuallyExclusive: Bool](./inputismutuallyexclusive.md)
   A Boolean value that indicates whether the control has mutally exclusive input.
-- [var isDigital: Bool](tcdirectionpaddescriptor/isdigital.md)
+- [var isDigital: Bool](./isdigital.md)
   A Boolean value that indicates whether the control behaves as a digital button.
-- [var isRadial: Bool](tcdirectionpaddescriptor/isradial.md)
+- [var isRadial: Bool](./isradial.md)
   A Boolean value that indicates whether the control behaves as a swipeable radial button.
-- [var leftContents: TCControlContents?](tcdirectionpaddescriptor/leftcontents.md)
+- [var leftContents: TCControlContents?](./leftcontents.md)
   The contents for the left button.
-- [var leftLabel: TCControlLabel?](tcdirectionpaddescriptor/leftlabel.md)
+- [var leftLabel: TCControlLabel?](./leftlabel.md)
   The label for the left button, if the control is not a composite direction pad.
-- [var offset: CGPoint](tcdirectionpaddescriptor/offset.md)
+- [var offset: CGPoint](./offset.md)
   The control’s offset from the anchor, which determines its position.
-- [var rightContents: TCControlContents?](tcdirectionpaddescriptor/rightcontents.md)
+- [var rightContents: TCControlContents?](./rightcontents.md)
   The contents for the right button.
-- [var rightLabel: TCControlLabel?](tcdirectionpaddescriptor/rightlabel.md)
+- [var rightLabel: TCControlLabel?](./rightlabel.md)
   The label for the right button, if the control is not a composite direction pad.
-- [var size: CGSize](tcdirectionpaddescriptor/size.md)
+- [var size: CGSize](./size.md)
   The size (width, height) of the direction pad in points.
-- [var upContents: TCControlContents?](tcdirectionpaddescriptor/upcontents.md)
+- [var upContents: TCControlContents?](./upcontents.md)
   The contents for the up button.
-- [var upLabel: TCControlLabel?](tcdirectionpaddescriptor/uplabel.md)
+- [var upLabel: TCControlLabel?](./uplabel.md)
   The label for the up button, if the control isn’t a composite direction pad.
-- [var zIndex: Int](tcdirectionpaddescriptor/zindex.md)
+- [var zIndex: Int](./zindex.md)
   The z-index of the direction pad. A lower z-index is drawn first.
 
 

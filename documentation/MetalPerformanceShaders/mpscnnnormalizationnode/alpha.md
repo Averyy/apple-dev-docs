@@ -1,7 +1,8 @@
 # alpha
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 var alpha: Float { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) float alpha;
+```
+
 ## See Also
 
-- [var beta: Float](mpscnnnormalizationnode/beta.md)
-- [var delta: Float](mpscnnnormalizationnode/delta.md)
+### Instance Properties
+- [var beta: Float](./beta.md)
+- [var delta: Float](./delta.md)
 
 
 ---

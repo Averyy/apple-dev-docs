@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Initializes the receiver from data in a given unarchiver.
@@ -19,6 +20,10 @@ Initializes the receiver from data in a given unarchiver.
 
 ```swift
 init?(coder: NSCoder)
+```
+
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(layer:primPath:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a prim spec at the given path in the layer, authoring intermediate ancestor prim specs as `over`s where needed.
 

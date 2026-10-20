@@ -1,7 +1,8 @@
 # init(networkParameters:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview sender using the specified network parameters, if any.
 
@@ -16,7 +17,7 @@ init(networkParameters: NWParameters? = nil) async throws
 
 #### Discussion
 
-> **Note**: This function throws if anything fails during initialization.
+> **Throws**: This function throws if anything fails during initialization.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # descriptorFor1DTexture1()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func descriptorFor1DTexture1() -> MTLTextureDescriptor?
+```
+
+```objc
+- (MTLTextureDescriptor *) descriptorFor1DTexture1;
 ```
 
 #### Discussion

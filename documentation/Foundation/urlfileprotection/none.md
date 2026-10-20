@@ -1,7 +1,8 @@
 # none
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that indicates the file has no special protections associated with it.
 
@@ -20,19 +21,24 @@ An option that indicates the file has no special protections associated with it.
 static let none: URLFileProtection
 ```
 
+```c
+extern NSURLFileProtectionType const NSURLFileProtectionNone;
+```
+
 #### Discussion
 
 A file with this type of protection can be read from or written to at any time.
 
 ## See Also
 
-- [static let complete: URLFileProtection](urlfileprotection/complete.md)
+### Protection levels
+- [static let complete: URLFileProtection](./complete.md)
   An option that instructs the system to store the file in an encrypted format on-disk that your app can’t access for reading or writing to while the device is locked or booting.
-- [static let completeUnlessOpen: URLFileProtection](urlfileprotection/completeunlessopen.md)
+- [static let completeUnlessOpen: URLFileProtection](./completeunlessopen.md)
   An option that instructs the system to store the file in an encrypted format on-disk after it closes.
-- [static let completeUntilFirstUserAuthentication: URLFileProtection](urlfileprotection/completeuntilfirstuserauthentication.md)
+- [static let completeUntilFirstUserAuthentication: URLFileProtection](./completeuntilfirstuserauthentication.md)
   An option that instructs the system to store the file in an encrypted format on-disk that your app can’t access until after the device boots.
-- [static let completeWhenUserInactive: URLFileProtection](urlfileprotection/completewhenuserinactive.md)
+- [static let completeWhenUserInactive: URLFileProtection](./completewhenuserinactive.md)
   An option that instructs the system to store the file in an encrypted format on-disk that your app can access only after device unlock and before expiration.
 
 

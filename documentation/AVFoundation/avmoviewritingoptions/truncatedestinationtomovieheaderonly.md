@@ -1,7 +1,8 @@
 # truncateDestinationToMovieHeaderOnly
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The movie header overwrites all existing data and creates a pure reference movie file.
 
@@ -19,13 +20,18 @@ The movie header overwrites all existing data and creates a pure reference movie
 static var truncateDestinationToMovieHeaderOnly: AVMovieWritingOptions { get }
 ```
 
+```c
+AVMovieWritingTruncateDestinationToMovieHeaderOnly
+```
+
 #### Discussion
 
 Creates a file type box at the beginning of the destination file.
 
 ## See Also
 
-- [static var addMovieHeaderToDestination: AVMovieWritingOptions](avmoviewritingoptions/addmovieheadertodestination.md)
+### Writing options
+- [static var addMovieHeaderToDestination: AVMovieWritingOptions](./addmovieheadertodestination.md)
   The new movie header overwrites any existing movie header.
 
 

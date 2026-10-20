@@ -1,7 +1,8 @@
 # isIdentity
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the rotation is the identity rotation.
 
@@ -18,6 +19,10 @@ A Boolean value that indicates whether the rotation is the identity rotation.
 
 ```swift
 var isIdentity: Bool { get }
+```
+
+```c
+static bool SPRotation3DIsIdentity(SPRotation3D rotation);
 ```
 
 

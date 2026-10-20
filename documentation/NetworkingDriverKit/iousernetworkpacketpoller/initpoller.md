@@ -1,14 +1,15 @@
 # initPoller
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 bool initPoller(OSObject *target, IODispatchQueue *queue, PollAction pollAction, EventAction eventAction, IOOptionBits pollerOptions, void *refCon);
 ```
 

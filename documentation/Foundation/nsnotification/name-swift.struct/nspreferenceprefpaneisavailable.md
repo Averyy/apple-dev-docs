@@ -1,7 +1,8 @@
 # NSPreferencePrefPaneIsAvailable
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Notifies observers that the system preferences app is available to display your preferences.
 
@@ -16,13 +17,14 @@ static let NSPreferencePrefPaneIsAvailable: NSNotification.Name
 
 ## See Also
 
-- [static let NSPreferencePaneCancelUnselect: NSNotification.Name](nsnotification/name-swift.struct/nspreferencepanecancelunselect.md)
+### PreferencePanes
+- [static let NSPreferencePaneCancelUnselect: NSNotification.Name](./nspreferencepanecancelunselect.md)
   Notifies observers that the preference pane should not be deselected.
-- [static let NSPreferencePaneDoUnselect: NSNotification.Name](nsnotification/name-swift.struct/nspreferencepanedounselect.md)
+- [static let NSPreferencePaneDoUnselect: NSNotification.Name](./nspreferencepanedounselect.md)
   Notifies observers that the preference pane may be deselected.
-- [static let NSPreferencePaneSwitchToPane: NSNotification.Name](nsnotification/name-swift.struct/nspreferencepaneswitchtopane.md)
+- [static let NSPreferencePaneSwitchToPane: NSNotification.Name](./nspreferencepaneswitchtopane.md)
   Notifies observers that the user selected a new preference pane.
-- [static let NSPreferencePaneUpdateHelpMenu: NSNotification.Name](nsnotification/name-swift.struct/nspreferencepaneupdatehelpmenu.md)
+- [static let NSPreferencePaneUpdateHelpMenu: NSNotification.Name](./nspreferencepaneupdatehelpmenu.md)
   Notifies observers that your help menu content changed.
 
 

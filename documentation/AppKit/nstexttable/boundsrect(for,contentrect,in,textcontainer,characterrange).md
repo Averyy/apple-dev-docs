@@ -1,7 +1,8 @@
 # boundsRect(for:contentRect:in:textContainer:characterRange:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the rectangle the text table block actually occupies, including padding, borders, and margins.
 
@@ -12,6 +13,10 @@ Returns the rectangle the text table block actually occupies, including padding,
 
 ```swift
 func boundsRect(for block: NSTextTableBlock, contentRect: NSRect, in rect: NSRect, textContainer: NSTextContainer, characterRange charRange: NSRange) -> NSRect
+```
+
+```objc
+- (NSRect) boundsRectForBlock:(NSTextTableBlock *) block contentRect:(NSRect) contentRect inRect:(NSRect) rect textContainer:(NSTextContainer *) textContainer characterRange:(NSRange) charRange;
 ```
 
 #### Return Value
@@ -25,14 +30,15 @@ This method is called by the text table block `block` after it is laid out to de
 ## Parameters
 
 - `block`: The text table block that wants to determine where to layout its glyphs.
-- `contentRect`: The actual rectangle in which the text was laid out, as determined by [`rectForLayout(at:in:textContainer:characterRange:)`](nstextblock/rectforlayout(at:in:textcontainer:characterrange:).md).
+- `contentRect`: The actual rectangle in which the text was laid out, as determined by [`rectForLayout(at:in:textContainer:characterRange:)`](../nstextblock/rectforlayout%28at,in,textcontainer,characterrange%29.md).
 - `rect`: The initial rectangle in `textContainer` proposed by the typesetter.
 - `textContainer`: The text container being used for the layout.
 - `charRange`: The range of the characters whose glyphs are to be drawn.
 
 ## See Also
 
-- [func rect(for: NSTextTableBlock, layoutAt: NSPoint, in: NSRect, textContainer: NSTextContainer, characterRange: NSRange) -> NSRect](nstexttable/rect(for:layoutat:in:textcontainer:characterrange:).md)
+### Determining layout rectangles
+- [func rect(for: NSTextTableBlock, layoutAt: NSPoint, in: NSRect, textContainer: NSTextContainer, characterRange: NSRange) -> NSRect](./rect%28for,layoutat,in,textcontainer,characterrange%29.md)
   Returns the rectangle within which glyphs should be laid out for a text table block.
 
 

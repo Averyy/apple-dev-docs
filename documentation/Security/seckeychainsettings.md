@@ -1,7 +1,8 @@
 # SecKeychainSettings
 
 **Framework**: Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains information about keychain settings.
 
@@ -15,32 +16,36 @@ A structure that contains information about keychain settings.
 struct SecKeychainSettings
 ```
 
+```c
+struct SecKeychainSettings;
+```
+
 #### Overview
 
-This structure contains information about a keychain’s settings such as locking on sleep and the lock time interval. Use the [`SecKeychainSetSettings(_:_:)`](seckeychainsetsettings(_:_:).md) and [`SecKeychainCopySettings(_:_:)`](seckeychaincopysettings(_:_:).md) functions to set and copy a keychain’s settings.
+This structure contains information about a keychain’s settings such as locking on sleep and the lock time interval. Use the [`SecKeychainSetSettings(_:_:)`](./seckeychainsetsettings%28_,_%29.md) and [`SecKeychainCopySettings(_:_:)`](./seckeychaincopysettings%28_,_%29.md) functions to set and copy a keychain’s settings.
 
 ## Topics
 
 ### Initializers
-- [init()](seckeychainsettings/init.md)
+- [init()](./seckeychainsettings/init%28%29.md)
   Initializes a keychain settings structure with default values.
-- [init(version: UInt32, lockOnSleep: DarwinBoolean, useLockInterval: DarwinBoolean, lockInterval: UInt32)](seckeychainsettings/init(version:lockonsleep:uselockinterval:lockinterval:).md)
+- [init(version: UInt32, lockOnSleep: DarwinBoolean, useLockInterval: DarwinBoolean, lockInterval: UInt32)](./seckeychainsettings/init%28version,lockonsleep,uselockinterval,lockinterval%29.md)
   Initializes a keychain settings structures with the given values.
 ### Instance Properties
-- [var lockInterval: UInt32](seckeychainsettings/lockinterval.md)
+- [var lockInterval: UInt32](./seckeychainsettings/lockinterval.md)
   The number of seconds to wait before the keychain locks.
-- [var lockOnSleep: DarwinBoolean](seckeychainsettings/lockonsleep.md)
+- [var lockOnSleep: DarwinBoolean](./seckeychainsettings/lockonsleep.md)
   A Boolean value indicating whether the keychain locks when the system sleeps.
-- [var useLockInterval: DarwinBoolean](seckeychainsettings/uselockinterval.md)
+- [var useLockInterval: DarwinBoolean](./seckeychainsettings/uselockinterval.md)
   A Boolean value indicating whether the keychain automatically locks after a certain period of time.
-- [var version: UInt32](seckeychainsettings/version.md)
+- [var version: UInt32](./seckeychainsettings/version.md)
   The keychain version.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

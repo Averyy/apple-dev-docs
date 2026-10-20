@@ -1,7 +1,8 @@
 # CATransform3DMakeRotation(_:_:_:_:)
 
 **Framework**: Core Animation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a transform that rotates by `angle` radians about the vector `(x, y, z)`.
 
@@ -19,15 +20,20 @@ Returns a transform that rotates by `angle` radians about the vector `(x, y, z)`
 func CATransform3DMakeRotation(_ angle: CGFloat, _ x: CGFloat, _ y: CGFloat, _ z: CGFloat) -> CATransform3D
 ```
 
+```c
+extern CATransform3D CATransform3DMakeRotation(CGFloat angle, CGFloat x, CGFloat y, CGFloat z);
+```
+
 #### Discussion
 
 If the vector has length zero, this function returns the identity transform.
 
 ## See Also
 
-- [func CATransform3DMakeTranslation(CGFloat, CGFloat, CGFloat) -> CATransform3D](catransform3dmaketranslation(_:_:_:).md)
+### Creating Transforms
+- [func CATransform3DMakeTranslation(CGFloat, CGFloat, CGFloat) -> CATransform3D](./catransform3dmaketranslation%28_,_,_%29.md)
   Returns a transform that translates by `(tx, ty, tz)`.
-- [func CATransform3DMakeScale(CGFloat, CGFloat, CGFloat) -> CATransform3D](catransform3dmakescale(_:_:_:).md)
+- [func CATransform3DMakeScale(CGFloat, CGFloat, CGFloat) -> CATransform3D](./catransform3dmakescale%28_,_,_%29.md)
   Returns a transform that scales by `(sx, sy, sz)`.
 
 

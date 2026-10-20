@@ -1,7 +1,8 @@
 # CMPedometer
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object for fetching the system-generated live walking data.
 
@@ -18,73 +19,78 @@ An object for fetching the system-generated live walking data.
 class CMPedometer
 ```
 
+```objc
+@interface CMPedometer : NSObject
+```
+
 #### Overview
 
 You use a pedometer object to retrieve step counts and other information about the distance traveled and the number of floors ascended or descended. The pedometer object manages a cache of historic data that you can query or you can ask for live updates as the data is processed.
 
-To use a pedometer object, create an instance of this class and call the appropriate methods. Use the [`queryPedometerData(from:to:withHandler:)`](cmpedometer/querypedometerdata(from:to:withhandler:).md) method to retrieve data that has already been gathered. To get live updates, use the [`startUpdates(from:withHandler:)`](cmpedometer/startupdates(from:withhandler:).md) method to start the delivery of events to the handler you provide.
+To use a pedometer object, create an instance of this class and call the appropriate methods. Use the [`queryPedometerData(from:to:withHandler:)`](./cmpedometer/querypedometerdata%28from,to,withhandler%29.md) method to retrieve data that has already been gathered. To get live updates, use the [`startUpdates(from:withHandler:)`](./cmpedometer/startupdates%28from,withhandler%29.md) method to start the delivery of events to the handler you provide.
 
-> ❗ **Important**:  To use this API, you must include the [`NSMotionUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsmotionusagedescription) key in your app’s `Info.plist` file and provide a usage description string for this key. The usage description appears in the prompt that the user must accept the first time the system asks the user to access motion data for your app. If you don’t include a usage description string, your app crashes when you call this API.
+> ❗ **Important**:  To use this API, you must include the [`NSMotionUsageDescription`](../BundleResources/information-property-list/nsmotionusagedescription.md) key in your app’s `Info.plist` file and provide a usage description string for this key. The usage description appears in the prompt that the user must accept the first time the system asks the user to access motion data for your app. If you don’t include a usage description string, your app crashes when you call this API.
 
 ## Topics
 
 ### Determining Pedometer Availability
-- [class func isStepCountingAvailable() -> Bool](cmpedometer/isstepcountingavailable.md)
+- [class func isStepCountingAvailable() -> Bool](./cmpedometer/isstepcountingavailable%28%29.md)
   Returns a Boolean value indicating whether step counting is available on the current device.
-- [class func isDistanceAvailable() -> Bool](cmpedometer/isdistanceavailable.md)
+- [class func isDistanceAvailable() -> Bool](./cmpedometer/isdistanceavailable%28%29.md)
   Returns a Boolean value indicating whether distance estimation is available on the current device.
-- [class func isFloorCountingAvailable() -> Bool](cmpedometer/isfloorcountingavailable.md)
+- [class func isFloorCountingAvailable() -> Bool](./cmpedometer/isfloorcountingavailable%28%29.md)
   Returns a Boolean value indicating whether floor counting is available on the current device.
-- [class func isPaceAvailable() -> Bool](cmpedometer/ispaceavailable.md)
+- [class func isPaceAvailable() -> Bool](./cmpedometer/ispaceavailable%28%29.md)
   Returns a Boolean value indicating whether pace information is available on the current device.
-- [class func isCadenceAvailable() -> Bool](cmpedometer/iscadenceavailable.md)
+- [class func isCadenceAvailable() -> Bool](./cmpedometer/iscadenceavailable%28%29.md)
   Returns a Boolean value indicating whether cadence information is available on the current device.
-- [class func isPedometerEventTrackingAvailable() -> Bool](cmpedometer/ispedometereventtrackingavailable.md)
+- [class func isPedometerEventTrackingAvailable() -> Bool](./cmpedometer/ispedometereventtrackingavailable%28%29.md)
   Returns a Boolean value indicating whether pedometer events are available on the current device.
-- [class func authorizationStatus() -> CMAuthorizationStatus](cmpedometer/authorizationstatus.md)
+- [class func authorizationStatus() -> CMAuthorizationStatus](./cmpedometer/authorizationstatus%28%29.md)
   Returns a value indicating whether the app is authorized to gather pedometer data.
-- [enum CMAuthorizationStatus](cmauthorizationstatus.md)
+- [enum CMAuthorizationStatus](./cmauthorizationstatus.md)
   The authorization status for motion-related features.
 ### Gathering Live Pedometer Data
-- [func startUpdates(from: Date, withHandler: CMPedometerHandler)](cmpedometer/startupdates(from:withhandler:).md)
+- [func startUpdates(from: Date, withHandler: CMPedometerHandler)](./cmpedometer/startupdates%28from,withhandler%29.md)
   Starts the delivery of recent pedestrian-related data to your app.
-- [func stopUpdates()](cmpedometer/stopupdates.md)
+- [func stopUpdates()](./cmpedometer/stopupdates%28%29.md)
   Stops the delivery of recent pedestrian data updates to your app.
-- [func startEventUpdates(handler: CMPedometerEventHandler)](cmpedometer/starteventupdates(handler:).md)
+- [func startEventUpdates(handler: CMPedometerEventHandler)](./cmpedometer/starteventupdates%28handler%29.md)
   Starts the delivery of pedometer events to your app.
-- [func stopEventUpdates()](cmpedometer/stopeventupdates.md)
+- [func stopEventUpdates()](./cmpedometer/stopeventupdates%28%29.md)
   Stops the delivery of pedometer events to your app.
-- [typealias CMPedometerHandler](cmpedometerhandler.md)
+- [typealias CMPedometerHandler](./cmpedometerhandler.md)
   A block for processing pedometer-related data.
-- [typealias CMPedometerEventHandler](cmpedometereventhandler.md)
+- [typealias CMPedometerEventHandler](./cmpedometereventhandler.md)
   A block for processing pedometer events.
 ### Fetching Historical Pedometer Data
-- [func queryPedometerData(from: Date, to: Date, withHandler: CMPedometerHandler)](cmpedometer/querypedometerdata(from:to:withhandler:).md)
+- [func queryPedometerData(from: Date, to: Date, withHandler: CMPedometerHandler)](./cmpedometer/querypedometerdata%28from,to,withhandler%29.md)
   Retrieves the data between the specified start and end dates.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CMPedometerData](cmpedometerdata.md)
+### Pedometer and fitness
+- [class CMPedometerData](./cmpedometerdata.md)
   Information about the distance traveled by a user on foot.
-- [class CMPedometerEvent](cmpedometerevent.md)
+- [class CMPedometerEvent](./cmpedometerevent.md)
   A change in the user’s pedestrian activity.
-- [class CMStepCounter](cmstepcounter.md)
+- [class CMStepCounter](./cmstepcounter.md)
   The number of steps the user has taken with the device.
-- [class CMOdometerData](cmodometerdata.md)
+- [class CMOdometerData](./cmodometerdata.md)
   A class that represents odometer data for workouts.
-- [class CMHighFrequencyHeartRateData](cmhighfrequencyheartratedata.md)
+- [class CMHighFrequencyHeartRateData](./cmhighfrequencyheartratedata.md)
   A class that represents heart rate data collected at 1 Hz.
 
 

@@ -1,7 +1,8 @@
 # NSComparisonPredicate.Operator.customSelector
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A predicate that uses a custom selector that takes a single argument and returns a `BOOL` value.
 
@@ -20,37 +21,42 @@ A predicate that uses a custom selector that takes a single argument and returns
 case customSelector
 ```
 
+```c
+NSCustomSelectorPredicateOperatorType
+```
+
 #### Discussion
 
 The selector is invoked on the left hand side with the right hand side as the argument.
 
 ## See Also
 
-- [NSComparisonPredicate.Operator.lessThan](nscomparisonpredicate/operator/lessthan.md)
+### Constants
+- [NSComparisonPredicate.Operator.lessThan](./lessthan.md)
   A less-than predicate.
-- [NSComparisonPredicate.Operator.lessThanOrEqualTo](nscomparisonpredicate/operator/lessthanorequalto.md)
+- [NSComparisonPredicate.Operator.lessThanOrEqualTo](./lessthanorequalto.md)
   A less-than-or-equal-to predicate.
-- [NSComparisonPredicate.Operator.greaterThan](nscomparisonpredicate/operator/greaterthan.md)
+- [NSComparisonPredicate.Operator.greaterThan](./greaterthan.md)
   A greater-than predicate.
-- [NSComparisonPredicate.Operator.greaterThanOrEqualTo](nscomparisonpredicate/operator/greaterthanorequalto.md)
+- [NSComparisonPredicate.Operator.greaterThanOrEqualTo](./greaterthanorequalto.md)
   A greater-than-or-equal-to predicate.
-- [NSComparisonPredicate.Operator.equalTo](nscomparisonpredicate/operator/equalto.md)
+- [NSComparisonPredicate.Operator.equalTo](./equalto.md)
   An equal-to predicate.
-- [NSComparisonPredicate.Operator.notEqualTo](nscomparisonpredicate/operator/notequalto.md)
+- [NSComparisonPredicate.Operator.notEqualTo](./notequalto.md)
   A not-equal-to predicate.
-- [NSComparisonPredicate.Operator.matches](nscomparisonpredicate/operator/matches.md)
+- [NSComparisonPredicate.Operator.matches](./matches.md)
   A full regular expression matching predicate.
-- [NSComparisonPredicate.Operator.like](nscomparisonpredicate/operator/like.md)
+- [NSComparisonPredicate.Operator.like](./like.md)
   A simple subset of the MATCHES predicate, similar in behavior to SQL `LIKE`.
-- [NSComparisonPredicate.Operator.beginsWith](nscomparisonpredicate/operator/beginswith.md)
+- [NSComparisonPredicate.Operator.beginsWith](./beginswith.md)
   A begins-with predicate.
-- [NSComparisonPredicate.Operator.endsWith](nscomparisonpredicate/operator/endswith.md)
+- [NSComparisonPredicate.Operator.endsWith](./endswith.md)
   An ends-with predicate.
-- [NSComparisonPredicate.Operator.in](nscomparisonpredicate/operator/in.md)
+- [NSComparisonPredicate.Operator.in](./in.md)
   A predicate to determine if the left hand side is in the right hand side.
-- [NSComparisonPredicate.Operator.contains](nscomparisonpredicate/operator/contains.md)
+- [NSComparisonPredicate.Operator.contains](./contains.md)
   A predicate to determine if the left hand side contains the right hand side.
-- [NSComparisonPredicate.Operator.between](nscomparisonpredicate/operator/between.md)
+- [NSComparisonPredicate.Operator.between](./between.md)
   A predicate to determine if the left hand side lies at or between bounds specified by the right hand side.
 
 

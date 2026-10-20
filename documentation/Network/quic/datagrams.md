@@ -1,7 +1,8 @@
 # QUIC.Datagrams
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 26.0+
@@ -21,19 +22,19 @@ final class Datagrams<ApplicationProtocol> where ApplicationProtocol : NetworkPr
 ## Topics
 
 ### Instance Properties
-- [let parent: NetworkConnection<QUIC>](quic/datagrams/parent.md)
+- [let parent: NetworkConnection<QUIC>](./datagrams/parent.md)
 
 ## Relationships
 
 ### Inherits From
-- [NetworkChannel](networkchannel.md)
+- [NetworkChannel](../networkchannel.md)
 ### Conforms To
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

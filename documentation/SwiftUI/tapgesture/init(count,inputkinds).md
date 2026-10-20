@@ -1,7 +1,8 @@
 # init(count:inputKinds:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tap gesture with the number of required taps and the input kinds the gesture recognizes.
 
@@ -28,9 +29,10 @@ init(count: Int = 1, inputKinds: GestureInputKinds = .all)
 
 ## See Also
 
-- [init(count: Int)](tapgesture/init(count:).md)
+### Creating a tap gesture
+- [init(count: Int)](./init%28count%29.md)
   Creates a tap gesture with the number of required taps.
-- [var count: Int](tapgesture/count.md)
+- [var count: Int](./count.md)
   The required number of tap events.
 
 

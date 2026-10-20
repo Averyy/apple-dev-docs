@@ -1,7 +1,8 @@
 # Desktop
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the desktop wallpaper.
 
@@ -10,7 +11,7 @@ The payload that configures the desktop wallpaper.
 
 ## Declaration
 
-```swift
+```
 object Desktop
 ```
 
@@ -18,7 +19,7 @@ object Desktop
 
 Specify `com.apple.desktop` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.desktop` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -70,28 +71,33 @@ Specify `com.apple.desktop` as the payload type.
 
 ## Properties
 
-- `locked` (boolean): If `true`, locks the desktop picture. Replaced with allowWallpaperModification in macOS 10.13. Deprecated: macOS 10.13+
+- `locked` (boolean) *(deprecated)*: If `true`, locks the desktop picture. Replaced with allowWallpaperModification in macOS 10.13.
+
+  Deprecated: macOS 10.13+
+
+  **Default**: `false`
 - `override-picture-path` (string): The path to the desktop picture. If set, this picture is always locked.
 
 ## See Also
 
-- [object Accessibility](accessibility.md)
+### User experience
+- [object Accessibility](./accessibility.md)
   The payload that configures the accessibility features of the device.
-- [object Dock](dock.md)
+- [object Dock](./dock.md)
   The payload that configures the Dock.
-- [object Finder](finder.md)
+- [object Finder](./finder.md)
   The payload that configures Finder settings.
-- [object HomeScreenLayout](homescreenlayout.md)
+- [object HomeScreenLayout](./homescreenlayout.md)
   The payload that configures the Home Screen layout.
-- [object ManagedMenuExtras](managedmenuextras.md)
+- [object ManagedMenuExtras](./managedmenuextras.md)
   The payload that configures menu extras.
-- [object Notifications](notifications.md)
+- [object Notifications](./notifications.md)
   The payload that configures notifications.
-- [object ScreensaverUser](screensaveruser.md)
+- [object ScreensaverUser](./screensaveruser.md)
   The payload that configures a user’s screen saver settings.
-- [object SetupAssistant](setupassistant.md)
+- [object SetupAssistant](./setupassistant.md)
   The payload that configures Setup Assistant settings.
-- [object TimeMachine](timemachine.md)
+- [object TimeMachine](./timemachine.md)
   The payload that configures Time Machine.
 
 

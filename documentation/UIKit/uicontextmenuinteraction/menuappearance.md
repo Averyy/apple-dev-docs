@@ -1,7 +1,8 @@
 # menuAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance of the context menu.
 
@@ -18,9 +19,14 @@ The appearance of the context menu.
 var menuAppearance: UIContextMenuInteraction.appearance { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIContextMenuInteractionAppearance menuAppearance;
+```
+
 ## See Also
 
-- [UIContextMenuInteraction.appearance](uicontextmenuinteraction/appearance.md)
+### Getting the menu appearance
+- [UIContextMenuInteraction.appearance](./appearance.md)
   Constants that describe the appearance of the menu.
 
 

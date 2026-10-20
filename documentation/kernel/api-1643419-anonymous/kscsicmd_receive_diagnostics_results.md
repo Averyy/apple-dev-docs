@@ -1,7 +1,8 @@
 # kSCSICmd_RECEIVE_DIAGNOSTICS_RESULTS
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSCSICmd_RECEIVE_DIAGNOSTICS_RESULTS = 0x1C
 ```
 

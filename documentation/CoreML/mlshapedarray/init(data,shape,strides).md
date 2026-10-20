@@ -1,7 +1,8 @@
 # init(data:shape:strides:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shaped array from a block of data, a shape, and strides.
 
@@ -28,7 +29,8 @@ init(data: Data, shape: [Int], strides: [Int])
 
 ## See Also
 
-- [init(data: Data, shape: [Int])](mlshapedarray/init(data:shape:).md)
+### Creating a shaped array from data
+- [init(data: Data, shape: [Int])](./init%28data,shape%29.md)
   Creates a shaped array from a block of data and a shape.
 
 

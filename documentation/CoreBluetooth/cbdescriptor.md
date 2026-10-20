@@ -1,7 +1,8 @@
 # CBDescriptor
 
 **Framework**: Core Bluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides further information about a remote peripheral’s characteristic.
 
@@ -20,55 +21,60 @@ An object that provides further information about a remote peripheral’s charac
 class CBDescriptor
 ```
 
+```objc
+@interface CBDescriptor : CBAttribute
+```
+
 #### Overview
 
-[`CBDescriptor`](cbdescriptor.md) and its subclass [`CBMutableDescriptor`](cbmutabledescriptor.md) represent a descriptor of a peripheral’s characteristic. In partcular, [`CBDescriptor`](cbdescriptor.md) objects represent the descriptors of a remote peripheral’s characteristic. Descriptors provide further information about a characteristic’s value. For example, they may describe the value in human-readable form and describe how to format the value for presentation purposes. Characteristic descriptors also indicate whether a characteristic’s value indicates or notifies a client (a central) when the value of the characteristic changes.
+[`CBDescriptor`](./cbdescriptor.md) and its subclass [`CBMutableDescriptor`](./cbmutabledescriptor.md) represent a descriptor of a peripheral’s characteristic. In partcular, [`CBDescriptor`](./cbdescriptor.md) objects represent the descriptors of a remote peripheral’s characteristic. Descriptors provide further information about a characteristic’s value. For example, they may describe the value in human-readable form and describe how to format the value for presentation purposes. Characteristic descriptors also indicate whether a characteristic’s value indicates or notifies a client (a central) when the value of the characteristic changes.
 
-[`CBUUID`](cbuuid.md) details six predefined descriptors and their corresponding value types. [`CBDescriptor`](cbdescriptor.md) lists the predefined descriptors and the [`CBUUID`](cbuuid.md) constants that represent them.
+[`CBUUID`](./cbuuid.md) details six predefined descriptors and their corresponding value types. [`CBDescriptor`](./cbdescriptor.md) lists the predefined descriptors and the [`CBUUID`](./cbuuid.md) constants that represent them.
 
 | Descriptor type | Descriptor constant |
 | --- | --- |
-| Characteristic extended properties | [`CBUUIDCharacteristicExtendedPropertiesString`](cbuuidcharacteristicextendedpropertiesstring.md) |
-| Characteristic user description | [`CBUUIDCharacteristicUserDescriptionString`](cbuuidcharacteristicuserdescriptionstring.md) |
-| Client characteristic configuration | [`CBUUIDClientCharacteristicConfigurationString`](cbuuidclientcharacteristicconfigurationstring.md) |
-| Server characteristic configuration | [`CBUUIDServerCharacteristicConfigurationString`](cbuuidservercharacteristicconfigurationstring.md) |
-| Characteristic format | [`CBUUIDCharacteristicFormatString`](cbuuidcharacteristicformatstring.md) |
-| Characteristic aggregate format | [`CBUUIDCharacteristicAggregateFormatString`](cbuuidcharacteristicaggregateformatstring.md) |
+| Characteristic extended properties | [`CBUUIDCharacteristicExtendedPropertiesString`](./cbuuidcharacteristicextendedpropertiesstring.md) |
+| Characteristic user description | [`CBUUIDCharacteristicUserDescriptionString`](./cbuuidcharacteristicuserdescriptionstring.md) |
+| Client characteristic configuration | [`CBUUIDClientCharacteristicConfigurationString`](./cbuuidclientcharacteristicconfigurationstring.md) |
+| Server characteristic configuration | [`CBUUIDServerCharacteristicConfigurationString`](./cbuuidservercharacteristicconfigurationstring.md) |
+| Characteristic format | [`CBUUIDCharacteristicFormatString`](./cbuuidcharacteristicformatstring.md) |
+| Characteristic aggregate format | [`CBUUIDCharacteristicAggregateFormatString`](./cbuuidcharacteristicaggregateformatstring.md) |
 
 ## Topics
 
 ### Identifying a Descriptor
-- [var characteristic: CBCharacteristic?](cbdescriptor/characteristic.md)
+- [var characteristic: CBCharacteristic?](./cbdescriptor/characteristic.md)
   The characteristic to which this descriptor belongs.
 ### Accessing Descriptor Data
-- [var value: Any?](cbdescriptor/value.md)
+- [var value: Any?](./cbdescriptor/value.md)
   The value of the descriptor.
 
 ## Relationships
 
 ### Inherits From
-- [CBAttribute](cbattribute.md)
+- [CBAttribute](./cbattribute.md)
 ### Inherited By
-- [CBMutableDescriptor](cbmutabledescriptor.md)
+- [CBMutableDescriptor](./cbmutabledescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CBService](cbservice.md)
+### Services
+- [class CBService](./cbservice.md)
   A collection of data and associated behaviors that accomplish a function or feature of a device.
-- [class CBMutableService](cbmutableservice.md)
+- [class CBMutableService](./cbmutableservice.md)
   A service with writeable property values.
-- [class CBCharacteristic](cbcharacteristic.md)
+- [class CBCharacteristic](./cbcharacteristic.md)
   A characteristic of a remote peripheral’s service.
-- [class CBMutableCharacteristic](cbmutablecharacteristic.md)
+- [class CBMutableCharacteristic](./cbmutablecharacteristic.md)
   A characteristic of a local peripheral’s service.
-- [class CBMutableDescriptor](cbmutabledescriptor.md)
+- [class CBMutableDescriptor](./cbmutabledescriptor.md)
   An object that provides additional information about a local peripheral’s characteristic.
 
 

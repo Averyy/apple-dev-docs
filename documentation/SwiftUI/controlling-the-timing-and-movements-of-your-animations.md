@@ -1,6 +1,8 @@
 # Controlling the timing and movements of your animations
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: Sample Code  
+**Download**: [PhaseAndKeyframeAnimationSample.zip](https://docs-assets.developer.apple.com/published/354a9f65c3b5/PhaseAndKeyframeAnimationSample.zip)
 
 Build sophisticated animations that you control using phase and keyframe animators.
 
@@ -13,13 +15,13 @@ Build sophisticated animations that you control using phase and keyframe animato
 
 #### Overview
 
-SwiftUI provides a collection of useful animations that you can use in your app. These animations help enhance the user experience of your app by providing visual transitions of views and user interface elements. While these standard animations provide a great way to enhancement the user interaction of your app, there are times when you need to have more control over the timing and movement of a visual element. [`PhaseAnimator`](phaseanimator.md) and [`KeyframeAnimator`](keyframeanimator.md) help give you that control.
+SwiftUI provides a collection of useful animations that you can use in your app. These animations help enhance the user experience of your app by providing visual transitions of views and user interface elements. While these standard animations provide a great way to enhancement the user interaction of your app, there are times when you need to have more control over the timing and movement of a visual element. [`PhaseAnimator`](./phaseanimator.md) and [`KeyframeAnimator`](./keyframeanimator.md) help give you that control.
 
 A phase animator allows you to define an animation as a collection of discrete steps called phases. The animator cycles through these phases to create a visual transition. With keyframe animator, you create keyframes that define animation values at specific times during the visual transition.
 
-#### Create a Simple Bounce Animation
+#### Create a simple bounce animation
 
-To better understand how to create animations using a [`PhaseAnimator`](phaseanimator.md) or [`KeyframeAnimator`](keyframeanimator.md), start with a simple example that uses standard SwiftUI animations. The following code moves an emoji upwards by setting its offset to `-40.0`. To provide a smooth transition of the movement, the code uses the [`withAnimation(_:_:)`](withanimation(_:_:).md) function to apply a [`bouncy`](animation/bouncy.md) animation after someone taps the emoji.
+To better understand how to create animations using a [`PhaseAnimator`](./phaseanimator.md) or [`KeyframeAnimator`](./keyframeanimator.md), start with a simple example that uses standard SwiftUI animations. The following code moves an emoji upwards by setting its offset to `-40.0`. To provide a smooth transition of the movement, the code uses the [`withAnimation(_:_:)`](./withanimation%28_,_%29.md) function to apply a [`bouncy`](./animation/bouncy.md) animation after someone taps the emoji.
 
 ```swift
 struct SimpleAnimationView: View {
@@ -61,15 +63,17 @@ struct SimpleAnimationView: View {
 }
 ```
 
-This code uses the [`withAnimation(_:completionCriteria:_:completion:)`](withanimation(_:completioncriteria:_:completion:).md) function to animate the two steps of the visual transition. The first step occurs in the `body` closure of the function, setting the offset to `-40.0`. The second step occurs in the `completion` closure, setting the offset to `0.0`.
+This code uses the [`withAnimation(_:completionCriteria:_:completion:)`](./withanimation%28_,completioncriteria,_,completion%29.md) function to animate the two steps of the visual transition. The first step occurs in the `body` closure of the function, setting the offset to `-40.0`. The second step occurs in the `completion` closure, setting the offset to `0.0`.
+
+[Video: A video that shows a heart-shaped emoji that moves up to its peak position, then returns to its original position.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/phase-keyframe-animation-01.mp4)
 
 However, `EmojiView` actually goes through three steps. The first step happens when the view appears for the first time. The offset of the `EmojiView` view is `0.0`. When someone taps the view, the offset changes to `-40.0`; this is the second step. When that animation completes, the third step changes the offset back to `0.0`. However, there are only two discrete steps, based on the offset values (`0.0` and `-40.0`).
 
-While this implementation certainly works as expected, using a [`PhaseAnimator`](phaseanimator.md) is a more convenient way to define discrete steps as phases of an animation.
+While this implementation certainly works as expected, using a [`PhaseAnimator`](./phaseanimator.md) is a more convenient way to define discrete steps as phases of an animation.
 
-#### Bounce with a Phase Animator
+#### Bounce with a phase animator
 
-A [`PhaseAnimator`](phaseanimator.md) automatically advances through a set of given phases to create an animated transition. Use the [`phaseAnimator(_:content:animation:)`](view/phaseanimator(_:content:animation:).md) modifier to provide the animator the phases for changing the animation value. For example, the emoji bounce animation shown earlier has two phases: move up and move back. You can represent these phases using the Boolean values, `true` and `false`. When the phase is `true`, the emoji moves up to `-40.0`. When the phase is `false`, the emoji moves back to the original position by setting the offset to `0.0`.
+A [`PhaseAnimator`](./phaseanimator.md) automatically advances through a set of given phases to create an animated transition. Use the [`phaseAnimator(_:content:animation:)`](./view/phaseanimator%28_,content,animation%29.md) modifier to provide the animator the phases for changing the animation value. For example, the emoji bounce animation shown earlier has two phases: move up and move back. You can represent these phases using the Boolean values, `true` and `false`. When the phase is `true`, the emoji moves up to `-40.0`. When the phase is `false`, the emoji moves back to the original position by setting the offset to `0.0`.
 
 ```swift
 struct TwoPhaseAnimationView: View {
@@ -84,11 +88,11 @@ struct TwoPhaseAnimationView: View {
 }
 ```
 
-The phase animator cycles through the list of phases in the order that you provide to the [`phaseAnimator(_:content:animation:)`](view/phaseanimator(_:content:animation:).md) modifier. When the view first appears, the phase animator invokes the `content` closure passing in the first phase. Then the animator calls the closure with the value of the second phase. The animator continues to call the `content` closure for each additional phase. After reaching the last phase, the animator calls `content` one more time with the value of the first phase.
+The phase animator cycles through the list of phases in the order that you provide to the [`phaseAnimator(_:content:animation:)`](./view/phaseanimator%28_,content,animation%29.md) modifier. When the view first appears, the phase animator invokes the `content` closure passing in the first phase. Then the animator calls the closure with the value of the second phase. The animator continues to call the `content` closure for each additional phase. After reaching the last phase, the animator calls `content` one more time with the value of the first phase.
 
 This means that in the previous code, the phase animator calls `content` with the phase value of `false` when the view first appears. This sets the emoji’s offset to `0.0`. The phase animator then calls `content` with the `true` phase. This phase sets the offset to `-40.0`, causing the emoji to move upwards. After reaching that offset position, the animator calls `content` with the phase of `false`. This causes the emoji to move back to its original position by setting its offset to `0.0`.
 
-This animation starts when the view appears. To start the animation based on an event, use the [`phaseAnimator(_:trigger:content:animation:)`](view/phaseanimator(_:trigger:content:animation:).md) modifier and provide a `trigger` value that animator observes for changes. The animator starts the animation when the value changes. For example, the following code increments the state variable `likeCount` each time a person taps the emoji. The code uses `likeCount` as the value that the phase animator observes for changes. Now whenever someone taps the emoji, it moves up and returns to its original position.
+This animation starts when the view appears. To start the animation based on an event, use the [`phaseAnimator(_:trigger:content:animation:)`](./view/phaseanimator%28_,trigger,content,animation%29.md) modifier and provide a `trigger` value that animator observes for changes. The animator starts the animation when the value changes. For example, the following code increments the state variable `likeCount` each time a person taps the emoji. The code uses `likeCount` as the value that the phase animator observes for changes. Now whenever someone taps the emoji, it moves up and returns to its original position.
 
 ```swift
 struct TwoPhaseAnimationView: View {
@@ -107,7 +111,9 @@ struct TwoPhaseAnimationView: View {
 }
 ```
 
-So far, the phase animator uses the [`default`](animation/default.md) animation to move the emoji. You can change that behavior by providing the `phaseAnimator` modifier an animation closure. In this closure, specify the type of animation to apply for each phase. For instance, the following code applies a [`bouncy`](animation/bouncy.md) animation when the phase is `true`; otherwise, it applies the [`default`](animation/default.md) animation:
+[Video: A video that shows a heart-shaped emoji that moves up to its peak position, then returns to its original position.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/phase-keyframe-animation-02.mp4)
+
+So far, the phase animator uses the [`default`](./animation/default.md) animation to move the emoji. You can change that behavior by providing the `phaseAnimator` modifier an animation closure. In this closure, specify the type of animation to apply for each phase. For instance, the following code applies a [`bouncy`](./animation/bouncy.md) animation when the phase is `true`; otherwise, it applies the [`default`](./animation/default.md) animation:
 
 ```swift
 struct TwoPhaseAnimationView: View {
@@ -128,7 +134,9 @@ struct TwoPhaseAnimationView: View {
 }
 ```
 
-#### Add More Phases to the Animation
+[Video: A video that shows a heart-shaped emoji that bounces slightly downward before moving up. After the emoji reaches its peak position, it moves downward, returning to its original position.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/phase-keyframe-animation-03.mp4)
+
+#### Add more phases to the animation
 
 While this bounce effect is nice, you can add more pizzazz to it. For instance, you could make the emoji increase in size as it moves upward, and then shrink back to normal size. To do this, you’ll add a third phase to the animation: scale.
 
@@ -185,7 +193,7 @@ private enum AnimationPhase: CaseIterable {
 }
 ```
 
-To animate an emoji, apply the [`phaseAnimator(_:trigger:content:animation:)`](view/phaseanimator(_:trigger:content:animation:).md) modifier to the `EmojiView`. Provide the animator all cases from the custom `AnimationPhase` type. Then change the content based on the phase by applying the [`scaleEffect(_:anchor:)`](view/scaleeffect(_:anchor:).md) and [`offset(x:y:)`](view/offset(x:y:).md) modifiers. The values passed into these modifiers come from the computed properties, which helps keep the view code more readable.
+To animate an emoji, apply the [`phaseAnimator(_:trigger:content:animation:)`](./view/phaseanimator%28_,trigger,content,animation%29.md) modifier to the `EmojiView`. Provide the animator all cases from the custom `AnimationPhase` type. Then change the content based on the phase by applying the [`scaleEffect(_:anchor:)`](./view/scaleeffect%28_,anchor%29.md) and [`offset(x:y:)`](./view/offset%28x,y%29.md) modifiers. The values passed into these modifiers come from the computed properties, which helps keep the view code more readable.
 
 ```swift
 struct ThreePhaseAnimationView: View {
@@ -214,13 +222,15 @@ struct ThreePhaseAnimationView: View {
 
 The code also applies different animation types based on the phase in the `animation` closure to give the full animation that pizzazz you were looking for.
 
+[Video: A video that shows a heart-shaped emoji that moves up. As the emoji moves upwards, it grows larger in size. When the emoji reaches its peak position, it moves back down to its original position while returning to its original size.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/phase-keyframe-animation-04.mp4)
+
 > **Note**: Use the canvas preview in Xcode to help determine the animation types and values to apply for the phase animations. Make changes to the code and see those changes reflected in the canvas preview.
 
-A [`PhaseAnimator`](phaseanimator.md) gives you control of an animation based on discrete phases, which helps you add extra polish to an animation. But if you find that you need even more control over the timing and movement of an animation, use a [`KeyframeAnimator`](keyframeanimator.md).
+A [`PhaseAnimator`](./phaseanimator.md) gives you control of an animation based on discrete phases, which helps you add extra polish to an animation. But if you find that you need even more control over the timing and movement of an animation, use a [`KeyframeAnimator`](./keyframeanimator.md).
 
-#### Gain More Control with a Keyframe Animator
+#### Gain more control with a keyframe animator
 
-You can define complex, coordinated animations with complete control over timing and movement using a [`KeyframeAnimator`](keyframeanimator.md). This animator allows you to create keyframes that define values at specific times during an animation. The animator use these values to generate interpolated values in between each frame of the animation.
+You can define complex, coordinated animations with complete control over timing and movement using a [`KeyframeAnimator`](./keyframeanimator.md). This animator allows you to create keyframes that define values at specific times during an animation. The animator use these values to generate interpolated values in between each frame of the animation.
 
 Unlike a phase animator, in which you model separate, discrete states, a keyframe animator generates interpolated values of the type that you specify. While an animation is in progress, the animator provides you with a value of this type on every frame so you can update the animating view by applying modifiers to it.
 
@@ -235,9 +245,9 @@ private struct AnimationValues {
 }
 ```
 
-> **Note**: [`KeyframeAnimator`](keyframeanimator.md) can animate any value that conforms to the [`Animatable`](animatable.md) protocol.
+> **Note**: [`KeyframeAnimator`](./keyframeanimator.md) can animate any value that conforms to the [`Animatable`](./animatable.md) protocol.
 
-To create a animation using a keyframe animator, apply either the [`keyframeAnimator(initialValue:repeating:content:keyframes:)`](view/keyframeanimator(initialvalue:repeating:content:keyframes:).md) or [`keyframeAnimator(initialValue:trigger:content:keyframes:)`](view/keyframeanimator(initialvalue:trigger:content:keyframes:).md) modifier to the view that you want to animate. For instance, the following code applies the second modifier to `EmojiView`. The initial value for the animation is a new instance of `AnimationValues`, and the state variable `likeCount` is the value that the animator observes for changes as it did in the previous phase animation example.
+To create a animation using a keyframe animator, apply either the [`keyframeAnimator(initialValue:repeating:content:keyframes:)`](./view/keyframeanimator%28initialvalue,repeating,content,keyframes%29.md) or [`keyframeAnimator(initialValue:trigger:content:keyframes:)`](./view/keyframeanimator%28initialvalue,trigger,content,keyframes%29.md) modifier to the view that you want to animate. For instance, the following code applies the second modifier to `EmojiView`. The initial value for the animation is a new instance of `AnimationValues`, and the state variable `likeCount` is the value that the animator observes for changes as it did in the previous phase animation example.
 
 ```swift
 struct KeyframeAnimationView: View {
@@ -296,7 +306,7 @@ struct KeyframeAnimationView: View {
 
 > ❗ **Important**: SwiftUI calls the keyframe animator’s `content` closure on every frame of the animation, so avoid performing any expensive operations directly within it.
 
-Next, define the keyframes. Keyframes let you build sophisticated animations with different keyframe for different properties. To make this possible, you organize the keyframes into tracks. Each track controls a different property of the type that you are animating. You associate a property to a track by providing the key path to the property when creating the track. For example, the following code adds a [`KeyframeTrack`](keyframetrack.md) for the `scale` property:
+Next, define the keyframes. Keyframes let you build sophisticated animations with different keyframe for different properties. To make this possible, you organize the keyframes into tracks. Each track controls a different property of the type that you are animating. You associate a property to a track by providing the key path to the property when creating the track. For example, the following code adds a [`KeyframeTrack`](./keyframetrack.md) for the `scale` property:
 
 ```swift
 struct KeyframeAnimationView: View {
@@ -326,7 +336,7 @@ struct KeyframeAnimationView: View {
 }
 ```
 
-When creating a track, you use the declarative syntax in SwiftUI to add keyframes to the track. There are different kinds of keyframes, such as [`CubicKeyframe`](cubickeyframe.md), [`LinearKeyframe`](linearkeyframe.md), and [`SpringKeyframe`](springkeyframe.md). You can mix and match the different kinds of keyframes within a track. For example, the following code adds a track for the `scale` property that performs a combination of linear and spring animations:
+When creating a track, you use the declarative syntax in SwiftUI to add keyframes to the track. There are different kinds of keyframes, such as [`CubicKeyframe`](./cubickeyframe.md), [`LinearKeyframe`](./linearkeyframe.md), and [`SpringKeyframe`](./springkeyframe.md). You can mix and match the different kinds of keyframes within a track. For example, the following code adds a track for the `scale` property that performs a combination of linear and spring animations:
 
 ```swift
 struct KeyframeAnimationView: View {
@@ -430,15 +440,18 @@ struct KeyframeAnimationView: View {
 
 The combination of these keyframe tracks creates an animation that squishes and stretches the emoji, before bouncing it upwards. As the emoji moves towards its peak, it grows larger. When the emoji reaches its peak, it gives a little wiggle. Then the emoji returns to its original location with a slight bounce as it settles back into its original position.
 
+[Video: A video that shows a heart-shaped emoji that squishes and stretches, then bounces upwards. As the emoji moves towards its peak position, it grows larger. When the emoji reaches its peak, it wiggles with a slight clockwise to counter clockwise rotation. The emoji then moves down towards its original position while shrinking back to its original size. Then the emoji bounces slightly as it settles back into its original position.](https://developer.apple.com/tutorials/videos/com.apple.SwiftUI/phase-keyframe-animation-05.mp4)
+
 > **Note**: As with phase animations, use the canvas preview in Xcode to help determine the animation types and values to apply for the keyframe animations. Make changes to the code and see those changes reflected in the canvas preview.
 
 ## See Also
 
-- [func phaseAnimator<Phase>(some Sequence, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](view/phaseanimator(_:content:animation:).md)
+### Creating phase-based animation
+- [func phaseAnimator<Phase>(some Sequence, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](./view/phaseanimator%28_,content,animation%29.md)
   Animates effects that you apply to a view over a sequence of phases that change continuously.
-- [func phaseAnimator<Phase>(some Sequence, trigger: some Equatable, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](view/phaseanimator(_:trigger:content:animation:).md)
+- [func phaseAnimator<Phase>(some Sequence, trigger: some Equatable, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](./view/phaseanimator%28_,trigger,content,animation%29.md)
   Animates effects that you apply to a view over a sequence of phases that change based on a trigger.
-- [struct PhaseAnimator](phaseanimator.md)
+- [struct PhaseAnimator](./phaseanimator.md)
   A container that animates its content by automatically cycling through a collection of phases that you provide, each defining a discrete step within an animation.
 
 

@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: DockKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provide the next tracking session state in the list.
 

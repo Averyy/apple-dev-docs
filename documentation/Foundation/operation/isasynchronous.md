@@ -1,7 +1,8 @@
 # isAsynchronous
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the operation executes its task asynchronously.
 
@@ -20,25 +21,30 @@ A Boolean value indicating whether the operation executes its task asynchronousl
 var isAsynchronous: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isAsynchronous) BOOL asynchronous;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) for operations that run asynchronously with respect to the current thread or [`false`](https://developer.apple.com/documentation/swift/false) for operations that run synchronously on the current thread. The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false).
+The value of this property is [`true`](../../Swift/true.md) for operations that run asynchronously with respect to the current thread or [`false`](../../Swift/false.md) for operations that run synchronously on the current thread. The default value of this property is [`false`](../../Swift/false.md).
 
-When implementing an asynchronous operation object, you must implement this property and return [`true`](https://developer.apple.com/documentation/swift/true). For more information about how to implement an asynchronous operation, see [`Asynchronous Versus Synchronous Operations`](operation#Asynchronous-Versus-Synchronous-Operations.md).
+When implementing an asynchronous operation object, you must implement this property and return [`true`](../../Swift/true.md). For more information about how to implement an asynchronous operation, see [Asynchronous Versus Synchronous Operations](../operation.md#Asynchronous-Versus-Synchronous-Operations).
 
 ## See Also
 
-- [var isCancelled: Bool](operation/iscancelled.md)
+### Getting the Operation Status
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value indicating whether the operation has been cancelled
-- [var isExecuting: Bool](operation/isexecuting.md)
+- [var isExecuting: Bool](./isexecuting.md)
   A Boolean value indicating whether the operation is currently executing.
-- [var isFinished: Bool](operation/isfinished.md)
+- [var isFinished: Bool](./isfinished.md)
   A Boolean value indicating whether the operation has finished executing its task.
-- [var isConcurrent: Bool](operation/isconcurrent.md)
+- [var isConcurrent: Bool](./isconcurrent.md)
   A Boolean value indicating whether the operation executes its task asynchronously.
-- [var isReady: Bool](operation/isready.md)
+- [var isReady: Bool](./isready.md)
   A Boolean value indicating whether the operation can be performed now.
-- [var name: String?](operation/name.md)
+- [var name: String?](./name.md)
   The name of the operation.
 
 

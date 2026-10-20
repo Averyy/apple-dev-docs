@@ -1,7 +1,8 @@
 # GLKMatrix3InvertAndTranspose(_:_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the inverse transpose of a matrix.
 
@@ -17,44 +18,49 @@ Returns the inverse transpose of a matrix.
 func GLKMatrix3InvertAndTranspose(_ matrix: GLKMatrix3, _ isInvertible: UnsafeMutablePointer<Bool>!) -> GLKMatrix3
 ```
 
+```c
+GLKMatrix3 GLKMatrix3InvertAndTranspose(GLKMatrix3 matrix, bool *isInvertible);
+```
+
 #### Return Value
 
-If `isInvertible` was set to [`true`](https://developer.apple.com/documentation/swift/true), this holds an inverted and transposed matrix. Otherwise, the identity matrix is returned.
+If `isInvertible` was set to [`true`](../Swift/true.md), this holds an inverted and transposed matrix. Otherwise, the identity matrix is returned.
 
 ## Parameters
 
 - `matrix`: A matrix.
-- `isInvertible`: On return, this holds [`true`](https://developer.apple.com/documentation/swift/true) if the matrix was inverted or [`false`](https://developer.apple.com/documentation/swift/false) if the matrix is not invertible.
+- `isInvertible`: On return, this holds [`true`](../Swift/true.md) if the matrix was inverted or [`false`](../Swift/false.md) if the matrix is not invertible.
 
 ## See Also
 
-- [func GLKMatrix3Invert(GLKMatrix3, UnsafeMutablePointer<Bool>!) -> GLKMatrix3](glkmatrix3invert(_:_:).md)
+### Performing Mathematical Operations on Matrices
+- [func GLKMatrix3Invert(GLKMatrix3, UnsafeMutablePointer<Bool>!) -> GLKMatrix3](./glkmatrix3invert%28_,_%29.md)
   Returns the inverse of a matrix.
-- [func GLKMatrix3Transpose(GLKMatrix3) -> GLKMatrix3](glkmatrix3transpose(_:).md)
+- [func GLKMatrix3Transpose(GLKMatrix3) -> GLKMatrix3](./glkmatrix3transpose%28_%29.md)
   Returns the transpose of a matrix.
-- [func GLKMatrix3Multiply(GLKMatrix3, GLKMatrix3) -> GLKMatrix3](glkmatrix3multiply(_:_:).md)
+- [func GLKMatrix3Multiply(GLKMatrix3, GLKMatrix3) -> GLKMatrix3](./glkmatrix3multiply%28_,_%29.md)
   Returns the product of two matrices.
-- [func GLKMatrix3Rotate(GLKMatrix3, Float, Float, Float, Float) -> GLKMatrix3](glkmatrix3rotate(_:_:_:_:_:).md)
+- [func GLKMatrix3Rotate(GLKMatrix3, Float, Float, Float, Float) -> GLKMatrix3](./glkmatrix3rotate%28_,_,_,_,_%29.md)
   Returns a new `3x3` matrix created by concatenating a matrix with a rotation around a vector.
-- [func GLKMatrix3RotateWithVector3(GLKMatrix3, Float, GLKVector3) -> GLKMatrix3](glkmatrix3rotatewithvector3(_:_:_:).md)
+- [func GLKMatrix3RotateWithVector3(GLKMatrix3, Float, GLKVector3) -> GLKMatrix3](./glkmatrix3rotatewithvector3%28_,_,_%29.md)
   Returns a new `3x3` matrix created by concatenating a matrix with a rotation around a vector.
-- [func GLKMatrix3RotateWithVector4(GLKMatrix3, Float, GLKVector4) -> GLKMatrix3](glkmatrix3rotatewithvector4(_:_:_:).md)
+- [func GLKMatrix3RotateWithVector4(GLKMatrix3, Float, GLKVector4) -> GLKMatrix3](./glkmatrix3rotatewithvector4%28_,_,_%29.md)
   Returns a new `3x3` matrix created by concatenating a matrix with a rotation around a vector.
-- [func GLKMatrix3RotateX(GLKMatrix3, Float) -> GLKMatrix3](glkmatrix3rotatex(_:_:).md)
+- [func GLKMatrix3RotateX(GLKMatrix3, Float) -> GLKMatrix3](./glkmatrix3rotatex%28_,_%29.md)
   Returns a new `3x3` matrix created by concatenating a matrix with a rotation around the x-axis.
-- [func GLKMatrix3RotateY(GLKMatrix3, Float) -> GLKMatrix3](glkmatrix3rotatey(_:_:).md)
+- [func GLKMatrix3RotateY(GLKMatrix3, Float) -> GLKMatrix3](./glkmatrix3rotatey%28_,_%29.md)
   Returns a new `3x3` matrix created by concatenating a matrix with a rotation around the y-axis.
-- [func GLKMatrix3RotateZ(GLKMatrix3, Float) -> GLKMatrix3](glkmatrix3rotatez(_:_:).md)
+- [func GLKMatrix3RotateZ(GLKMatrix3, Float) -> GLKMatrix3](./glkmatrix3rotatez%28_,_%29.md)
   Returns a new `3x3` matrix created by concatenating a matrix with a rotation around the z-axis.
-- [func GLKMatrix3Scale(GLKMatrix3, Float, Float, Float) -> GLKMatrix3](glkmatrix3scale(_:_:_:_:).md)
+- [func GLKMatrix3Scale(GLKMatrix3, Float, Float, Float) -> GLKMatrix3](./glkmatrix3scale%28_,_,_,_%29.md)
   Returns a new `3x3` matrix created by concatenating a matrix with a scaling transform.
-- [func GLKMatrix3ScaleWithVector3(GLKMatrix3, GLKVector3) -> GLKMatrix3](glkmatrix3scalewithvector3(_:_:).md)
+- [func GLKMatrix3ScaleWithVector3(GLKMatrix3, GLKVector3) -> GLKMatrix3](./glkmatrix3scalewithvector3%28_,_%29.md)
   Returns a new `3x3` matrix created by concatenating a matrix with a scaling transform defined by a vector.
-- [func GLKMatrix3ScaleWithVector4(GLKMatrix3, GLKVector4) -> GLKMatrix3](glkmatrix3scalewithvector4(_:_:).md)
+- [func GLKMatrix3ScaleWithVector4(GLKMatrix3, GLKVector4) -> GLKMatrix3](./glkmatrix3scalewithvector4%28_,_%29.md)
   Returns a new `3x3` matrix created by concatenating a matrix with a scaling transform defined by a vector.
-- [func GLKMatrix3Add(GLKMatrix3, GLKMatrix3) -> GLKMatrix3](glkmatrix3add(_:_:).md)
+- [func GLKMatrix3Add(GLKMatrix3, GLKMatrix3) -> GLKMatrix3](./glkmatrix3add%28_,_%29.md)
   Returns a new `3x3` matrix created by performing a component-wise addition of two matrices.
-- [func GLKMatrix3Subtract(GLKMatrix3, GLKMatrix3) -> GLKMatrix3](glkmatrix3subtract(_:_:).md)
+- [func GLKMatrix3Subtract(GLKMatrix3, GLKMatrix3) -> GLKMatrix3](./glkmatrix3subtract%28_,_%29.md)
   Returns a new `3x3` matrix created by performing a component-wise subtraction of two matrices.
 
 

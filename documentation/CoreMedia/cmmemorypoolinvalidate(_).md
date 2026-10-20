@@ -1,7 +1,8 @@
 # CMMemoryPoolInvalidate(_:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Invalidates the memory pool, which causes its allocator to stop recycling memory.
 
@@ -20,15 +21,20 @@ Invalidates the memory pool, which causes its allocator to stop recycling memory
 func CMMemoryPoolInvalidate(_ pool: CMMemoryPool)
 ```
 
+```c
+extern void CMMemoryPoolInvalidate(CMMemoryPoolRef pool);
+```
+
 ## Parameters
 
 - `pool`: The memory pool to invalidate.
 
 ## See Also
 
-- [func CMMemoryPoolGetAllocator(CMMemoryPool) -> CFAllocator](cmmemorypoolgetallocator(_:).md)
+### Managing a Memory Pool
+- [func CMMemoryPoolGetAllocator(CMMemoryPool) -> CFAllocator](./cmmemorypoolgetallocator%28_%29.md)
   Returns the allocator for the memory pool.
-- [func CMMemoryPoolFlush(CMMemoryPool)](cmmemorypoolflush(_:).md)
+- [func CMMemoryPoolFlush(CMMemoryPool)](./cmmemorypoolflush%28_%29.md)
   Deallocates all memory the pool holds.
 
 

@@ -183,7 +183,7 @@ let identity = MLXArray.identity(5)
 as ``DType/complex64``.
 MLX uses [swift-numerics](https://github.com/apple/swift-numerics/tree/main)
 to represent the `Complex` type, though there are a few functions for manipulating
-the individual pieces, see <doc:conversion>.
+the individual pieces, see [Conversion](conversion.md).
 
 To create a complex scalar there are a few approaches:
 

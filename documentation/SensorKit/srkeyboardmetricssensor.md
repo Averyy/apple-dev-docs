@@ -1,7 +1,8 @@
 # SRKeyboardMetricsSensor
 
 **Framework**: SensorKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 27.0+
@@ -17,16 +18,16 @@ struct SRKeyboardMetricsSensor
 ## Topics
 
 ### Initializers
-- [init()](srkeyboardmetricssensor/init.md)
+- [init()](./srkeyboardmetricssensor/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [SRDataSensor](srdatasensor.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [SRDataSensor](./srdatasensor.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

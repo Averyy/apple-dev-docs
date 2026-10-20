@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: Declared Age Range  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The singleton app instance for accessing age range services.
 
@@ -19,7 +20,7 @@ static let shared: AgeRangeService
 
 #### Discussion
 
-Use `shared` to access the [`AgeRangeService`](agerangeservice.md) instance in your app.
+Use `shared` to access the [`AgeRangeService`](../agerangeservice.md) instance in your app.
 
 
 ---

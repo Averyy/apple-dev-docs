@@ -1,7 +1,8 @@
 # discoveredCIDevices
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var discoveredCIDevices: [MIDICIDevice] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<MIDICIDevice *> * discoveredCIDevices;
 ```
 
 

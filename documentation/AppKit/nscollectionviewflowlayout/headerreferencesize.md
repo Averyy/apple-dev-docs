@@ -1,7 +1,8 @@
 # headerReferenceSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The default size to use for section headers.
 
@@ -14,17 +15,22 @@ The default size to use for section headers.
 var headerReferenceSize: NSSize { get set }
 ```
 
+```objc
+@property NSSize headerReferenceSize;
+```
+
 #### Discussion
 
-If the delegate does not implement the [`collectionView(_:layout:referenceSizeForHeaderInSection:)`](nscollectionviewdelegateflowlayout/collectionview(_:layout:referencesizeforheaderinsection:).md) method, the flow layout object uses the value of this property as the header size.
+If the delegate does not implement the [`collectionView(_:layout:referenceSizeForHeaderInSection:)`](../nscollectionviewdelegateflowlayout/collectionview%28_,layout,referencesizeforheaderinsection%29.md) method, the flow layout object uses the value of this property as the header size.
 
 The layout object uses only the value that is appropriate for the current scrolling direction. In other words, the layout object uses only the height value when the content scrolls vertically, setting the width of the header to the width of the collection view. Similarly, the layout object uses only the width value when the content scrolls horizontally, setting the header’s height to the height of the collection view. If the size value for the appropriate dimension is `0`, the layout object omits the header entirely.
 
-The default value of this property is [`NSZeroSize`](https://developer.apple.com/documentation/foundation/nszerosize).
+The default value of this property is [`NSZeroSize`](../../Foundation/nszerosize.md).
 
 ## See Also
 
-- [var footerReferenceSize: NSSize](nscollectionviewflowlayout/footerreferencesize.md)
+### Configuring the Supplementary Views
+- [var footerReferenceSize: NSSize](./footerreferencesize.md)
   The default size to use for section footers.
 
 

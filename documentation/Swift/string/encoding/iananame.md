@@ -1,7 +1,8 @@
 # ianaName
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this encoding that is compatible with the one of the IANA registry “charset”.
 

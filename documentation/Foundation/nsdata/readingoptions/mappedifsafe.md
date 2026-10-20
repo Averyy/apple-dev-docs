@@ -1,7 +1,8 @@
 # mappedIfSafe
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A hint indicating the file should be mapped into virtual memory, if possible and safe.
 
@@ -20,11 +21,16 @@ A hint indicating the file should be mapped into virtual memory, if possible and
 static var mappedIfSafe: NSData.ReadingOptions { get }
 ```
 
+```c
+NSDataReadingMappedIfSafe
+```
+
 ## See Also
 
-- [static var uncached: NSData.ReadingOptions](nsdata/readingoptions/uncached.md)
+### Constants
+- [static var uncached: NSData.ReadingOptions](./uncached.md)
   A hint indicating the file should not be stored in the file-system caches.
-- [static var alwaysMapped: NSData.ReadingOptions](nsdata/readingoptions/alwaysmapped.md)
+- [static var alwaysMapped: NSData.ReadingOptions](./alwaysmapped.md)
   Hint to map the file in if possible.
 
 

@@ -1,7 +1,8 @@
 # targetRange
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A range that specifies the area of interest for text-based elements.
 
@@ -14,13 +15,18 @@ A range that specifies the area of interest for text-based elements.
 var targetRange: NSRange { get set }
 ```
 
+```objc
+@property NSRange targetRange;
+```
+
 ## See Also
 
-- [var targetElement: (any NSAccessibilityElementProtocol)?](nsaccessibilitycustomrotor/itemresult/targetelement.md)
+### Identifying an Item Result
+- [var targetElement: (any NSAccessibilityElementProtocol)?](./targetelement.md)
   A target element that references an element to message for accessibility properties.
-- [var itemLoadingToken: NSAccessibilityLoadingToken?](nsaccessibilitycustomrotor/itemresult/itemloadingtoken.md)
+- [var itemLoadingToken: NSAccessibilityLoadingToken?](./itemloadingtoken.md)
   A token to determine which item to return.
-- [var customLabel: String?](nsaccessibilitycustomrotor/itemresult/customlabel.md)
+- [var customLabel: String?](./customlabel.md)
   A localized label to use instead of the default item label to describe the item result.
 
 

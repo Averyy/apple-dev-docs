@@ -1,7 +1,8 @@
 # description
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Description for business.
 
@@ -16,13 +17,14 @@ let description: String?
 
 ## See Also
 
-- [let providerName: String?](rcsservice/business/providername.md)
+### Accessing business identity information
+- [let providerName: String?](./providername.md)
   Name of business provider.
-- [let organizationNames: [RCSService.Business.OrganizationName]](rcsservice/business/organizationnames.md)
+- [let organizationNames: [RCSService.Business.OrganizationName]](./organizationnames.md)
   Array of names specified by business.
-- [RCSService.Business.OrganizationName](rcsservice/business/organizationname.md)
+- [RCSService.Business.OrganizationName](./organizationname.md)
   Structure containing details about a business’ name.
-- [let categoryNames: [String]](rcsservice/business/categorynames.md)
+- [let categoryNames: [String]](./categorynames.md)
   Array of category names which can be used to filter a list of businesses.
 
 

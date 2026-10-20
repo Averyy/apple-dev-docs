@@ -1,18 +1,19 @@
 # AVAudioApplication.MicrophoneInjectionPermission.serviceDisabled
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A person disables this service for all apps.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ A person disables this service for all apps.
 case serviceDisabled
 ```
 
+```c
+AVAudioApplicationMicrophoneInjectionPermissionServiceDisabled
+```
+
 ## See Also
 
-- [AVAudioApplication.MicrophoneInjectionPermission.undetermined](avaudioapplication/microphoneinjectionpermission-swift.enum/undetermined.md)
+### Checking permission states
+- [AVAudioApplication.MicrophoneInjectionPermission.undetermined](./undetermined.md)
   The app hasn’t requested a person’s permission to add audio to calls.
-- [AVAudioApplication.MicrophoneInjectionPermission.granted](avaudioapplication/microphoneinjectionpermission-swift.enum/granted.md)
+- [AVAudioApplication.MicrophoneInjectionPermission.granted](./granted.md)
   A person grants the app permission to add audio to calls.
-- [AVAudioApplication.MicrophoneInjectionPermission.denied](avaudioapplication/microphoneinjectionpermission-swift.enum/denied.md)
+- [AVAudioApplication.MicrophoneInjectionPermission.denied](./denied.md)
   A person denies the app permission to add audio to calls.
 
 

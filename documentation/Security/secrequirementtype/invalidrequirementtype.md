@@ -1,7 +1,8 @@
 # SecRequirementType.invalidRequirementType
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Invalid type of requirement.
 
@@ -13,6 +14,10 @@ Invalid type of requirement.
 
 ```swift
 case invalidRequirementType
+```
+
+```c
+kSecInvalidRequirementType
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # MTLCaptureDestination.gpuTraceDocument
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option specifying that the captured command data should be saved to a GPU trace document.
 
@@ -19,9 +20,14 @@ An option specifying that the captured command data should be saved to a GPU tra
 case gpuTraceDocument
 ```
 
+```c
+MTLCaptureDestinationGPUTraceDocument
+```
+
 ## See Also
 
-- [MTLCaptureDestination.developerTools](mtlcapturedestination/developertools.md)
+### Choosing a destination
+- [MTLCaptureDestination.developerTools](./developertools.md)
   An option specifying that data should be captured to Xcode and that execution should stop in Xcode after the data is captured.
 
 

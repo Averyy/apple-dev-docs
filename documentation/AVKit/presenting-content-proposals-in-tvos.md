@@ -1,6 +1,7 @@
 # Presenting content proposals in tvOS
 
-**Framework**: AVKit
+**Framework**: AVKit  
+**Role**: Article
 
 Display a preview of an upcoming media item at the conclusion of the currently playing media item.
 
@@ -8,9 +9,9 @@ Display a preview of an upcoming media item at the conclusion of the currently p
 
 Media apps presenting serialized content, such as a TV show, often display a preview of the next episode in the series when you finish watching the current one. The user interface for this preview usually contains artwork and information about the proposed content. It also includes options for the user to either watch the next episode or return to the main menu. You add this functionality to your app using AVKit’s content proposals.
 
-#### Create a Content Proposal
+#### Create a content proposal
 
-You create a content proposal using the [`AVContentProposal`](avcontentproposal.md) class. This type models the data about the proposed content, such as its title, preview image, metadata, and content URL, and the time at which to present the proposal. You create and configure a content proposal instance as shown in the following code:
+You create a content proposal using the [`AVContentProposal`](./avcontentproposal.md) class. This type models the data about the proposed content, such as its title, preview image, metadata, and content URL, and the time at which to present the proposal. You create and configure a content proposal instance as shown in the following code:
 
 ```swift
 func makeProposal() -> AVContentProposal {
@@ -44,11 +45,11 @@ private func makeMetadataItem(_ identifier: AVMetadataIdentifier, value: Any) ->
 }
 ```
 
-#### Create the Content Proposals User Interface
+#### Create the content proposal’s user interface
 
-In addition to defining your content proposal’s data, you also need to create an interface to present this data to the user. You create this interface by subclassing the AVKit framework’s [`AVContentProposalViewController`](avcontentproposalviewcontroller.md) class. At runtime, the system passes your subclass a reference to the current [`AVContentProposal`](avcontentproposal.md), providing you the data to present. Your user interface should provide visual and descriptive information about the proposed content, and should also include options for the user to accept or reject the proposal.
+In addition to defining your content proposal’s data, you also need to create an interface to present this data to the user. You create this interface by subclassing the AVKit framework’s [`AVContentProposalViewController`](./avcontentproposalviewcontroller.md) class. At runtime, the system passes your subclass a reference to the current [`AVContentProposal`](./avcontentproposal.md), providing you the data to present. Your user interface should provide visual and descriptive information about the proposed content, and should also include options for the user to accept or reject the proposal.
 
-When the system presents your proposal, it displays it over the currently playing full-screen video. You may want to scale this video to a smaller size so you can make more room to display the details of the proposed content. To do this, you override the view controller’s [`preferredPlayerViewFrame`](avcontentproposalviewcontroller/preferredplayerviewframe.md) property and return the desired video frame.
+When the system presents your proposal, it displays it over the currently playing full-screen video. You may want to scale this video to a smaller size so you can make more room to display the details of the proposed content. To do this, you override the view controller’s [`preferredPlayerViewFrame`](./avcontentproposalviewcontroller/preferredplayerviewframe.md) property and return the desired video frame.
 
 ```swift
 override var preferredPlayerViewFrame: CGRect {
@@ -60,11 +61,11 @@ override var preferredPlayerViewFrame: CGRect {
 
 When the system presents the proposal, the player’s view automatically animates to the specified frame.
 
-> **Note**:  To lay out your content relative to the newly sized and positioned video frame, you use the [`UILayoutGuide`](https://developer.apple.com/documentation/uikit/uilayoutguide) provided by the view controller’s [`playerLayoutGuide`](avcontentproposalviewcontroller/playerlayoutguide.md) property.
+> **Note**:  To lay out your content relative to the newly sized and positioned video frame, you use the [`UILayoutGuide`](../UIKit/uilayoutguide.md) provided by the view controller’s [`playerLayoutGuide`](./avcontentproposalviewcontroller/playerlayoutguide.md) property.
 
-#### Add Controls to the Content Proposal
+#### Add controls to the content proposal
 
-Your presented user interface should also provide controls so the user can accept or reject the proposal. The event handlers for these actions should call the controller’s [`dismissContentProposal(for:animated:completion:)`](avcontentproposalviewcontroller/dismisscontentproposal(for:animated:completion:).md) method, indicating the user’s choice.
+Your presented user interface should also provide controls so the user can accept or reject the proposal. The event handlers for these actions should call the controller’s [`dismissContentProposal(for:animated:completion:)`](./avcontentproposalviewcontroller/dismisscontentproposal%28for,animated,completion%29.md) method, indicating the user’s choice.
 
 ```swift
 // Handle acceptance
@@ -78,9 +79,9 @@ Your presented user interface should also provide controls so the user can accep
 }
 ```
 
-#### Make the Content Proposal Eligible to Be Presented
+#### Make the content proposal eligible to be presented
 
-To make your content proposal eligible for the system to present, set it as the [`nextContentProposal`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nextcontentproposal) property value of the current [`AVPlayerItem`](https://developer.apple.com/documentation/avfoundation/avplayeritem). The following example shows how to configure this property value in a playback app that manages a queue of `Video` objects, which is a custom value type that models the data of an individual video in the queue. The example code creates the required playback objects, creates a new [`AVContentProposal`](avcontentproposal.md) for the next video in the queue, and sets the video as the player item’s [`nextContentProposal`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nextcontentproposal).
+To make your content proposal eligible for the system to present, set it as the [`nextContentProposal`](../AVFoundation/avplayeritem/nextcontentproposal.md) property value of the current [`AVPlayerItem`](../AVFoundation/avplayeritem.md). The following example shows how to configure this property value in a playback app that manages a queue of `Video` objects, which is a custom value type that models the data of an individual video in the queue. The example code creates the required playback objects, creates a new [`AVContentProposal`](./avcontentproposal.md) for the next video in the queue, and sets the video as the player item’s [`nextContentProposal`](../AVFoundation/avplayeritem/nextcontentproposal.md).
 
 ```swift
 func prepareToPlay() {
@@ -117,11 +118,11 @@ func makeContentProposal(for video: Video?) -> AVContentProposal? {
 }
 ```
 
-#### Present the Content Proposal
+#### Present the content proposal
 
-With the content proposal set as the player item’s [`nextContentProposal`](https://developer.apple.com/documentation/avfoundation/avplayeritem/nextcontentproposal), the next step is to implement the methods of the [`AVPlayerViewControllerDelegate`](avplayerviewcontrollerdelegate.md) protocol. You use these methods to define how the system presents the content proposal, as well as to handle the acceptance or rejection of the proposed content.
+With the content proposal set as the player item’s [`nextContentProposal`](../AVFoundation/avplayeritem/nextcontentproposal.md), the next step is to implement the methods of the [`AVPlayerViewControllerDelegate`](./avplayerviewcontrollerdelegate.md) protocol. You use these methods to define how the system presents the content proposal, as well as to handle the acceptance or rejection of the proposed content.
 
-To present your custom view controller in response to a request to present the next content proposal, implement the [`playerViewController(_:shouldPresent:)`](avplayerviewcontrollerdelegate/playerviewcontroller(_:shouldpresent:).md) method. In this method, you set an instance of your custom [`AVContentProposalViewController`](avcontentproposalviewcontroller.md) as the player view controller’s [`contentProposalViewController`](avplayerviewcontroller/contentproposalviewcontroller.md) property.
+To present your custom view controller in response to a request to present the next content proposal, implement the [`playerViewController(_:shouldPresent:)`](./avplayerviewcontrollerdelegate/playerviewcontroller%28_,shouldpresent%29.md) method. In this method, you set an instance of your custom [`AVContentProposalViewController`](./avcontentproposalviewcontroller.md) as the player view controller’s [`contentProposalViewController`](./avplayerviewcontroller/contentproposalviewcontroller.md) property.
 
 ```swift
 func playerViewController(_ playerViewController: AVPlayerViewController, shouldPresent proposal: AVContentProposal) -> Bool {
@@ -131,7 +132,7 @@ func playerViewController(_ playerViewController: AVPlayerViewController, should
 }
 ```
 
-If the presented [`AVContentProposal`](avcontentproposal.md) provides a valid content URL, the player view controller can automatically handle its acceptance or rejection. However, if you need more control over the handling of these actions, implement the [`playerViewController(_:didAccept:)`](avplayerviewcontrollerdelegate/playerviewcontroller(_:didaccept:).md) and [`playerViewController(_:didReject:)`](avplayerviewcontrollerdelegate/playerviewcontroller(_:didreject:).md) methods. For example, the following code implements the [`playerViewController(_:didAccept:)`](avplayerviewcontrollerdelegate/playerviewcontroller(_:didaccept:).md)method to play the proposed video and create a new content proposal for the next video in the queue.
+If the presented [`AVContentProposal`](./avcontentproposal.md) provides a valid content URL, the player view controller can automatically handle its acceptance or rejection. However, if you need more control over the handling of these actions, implement the [`playerViewController(_:didAccept:)`](./avplayerviewcontrollerdelegate/playerviewcontroller%28_,didaccept%29.md) and [`playerViewController(_:didReject:)`](./avplayerviewcontrollerdelegate/playerviewcontroller%28_,didreject%29.md) methods. For example, the following code implements the [`playerViewController(_:didAccept:)`](./avplayerviewcontrollerdelegate/playerviewcontroller%28_,didaccept%29.md)method to play the proposed video and create a new content proposal for the next video in the queue.
 
 ```swift
 func playerViewController(_ playerViewController: AVPlayerViewController, didAccept proposal: AVContentProposal) {
@@ -151,13 +152,14 @@ func playerViewController(_ playerViewController: AVPlayerViewController, didAcc
 
 ## See Also
 
-- [Working with overlays and parental controls in tvOS](working-with-overlays-and-parental-controls-in-tvos.md)
+### Content proposals and parental controls
+- [Working with overlays and parental controls in tvOS](./working-with-overlays-and-parental-controls-in-tvos.md)
   Add interactive overlays, parental controls, and livestream channel flipping using a player view controller.
-- [class AVContentProposal](avcontentproposal.md)
+- [class AVContentProposal](./avcontentproposal.md)
   An object that describes the content to propose playing after the current item finishes.
-- [enum AVContentProposalAction](avcontentproposalaction.md)
+- [enum AVContentProposalAction](./avcontentproposalaction.md)
   Constant that indicate the action a user takes when dismissing a content proposal.
-- [class AVContentProposalViewController](avcontentproposalviewcontroller.md)
+- [class AVContentProposalViewController](./avcontentproposalviewcontroller.md)
   A view controller that proposes content to watch next.
 
 

@@ -1,9 +1,10 @@
 # kSpeechModePhoneme
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Used with [`kSpeechInputModeProperty`](kspeechinputmodeproperty.md) to indicate that the speech channel is in phoneme-processing mode. When in phoneme-processing mode, a text buffer is interpreted to be a series of characters representing various phonemes and prosodic controls.
+Used with [`kSpeechInputModeProperty`](./kspeechinputmodeproperty.md) to indicate that the speech channel is in phoneme-processing mode. When in phoneme-processing mode, a text buffer is interpreted to be a series of characters representing various phonemes and prosodic controls.
 
 **Availability**:
 - macOS 10.5+
@@ -12,6 +13,10 @@ Used with [`kSpeechInputModeProperty`](kspeechinputmodeproperty.md) to indicate 
 
 ```swift
 let kSpeechModePhoneme: CFString
+```
+
+```c
+const CFStringRef kSpeechModePhoneme;
 ```
 
 

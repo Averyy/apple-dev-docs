@@ -1,7 +1,8 @@
 # valueChangedHandler
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The block that this profile calls when an element’s value changes.
 
@@ -19,13 +20,18 @@ The block that this profile calls when an element’s value changes.
 var valueChangedHandler: GCMicroGamepadValueChangedHandler? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) GCMicroGamepadValueChangedHandler valueChangedHandler;
+```
+
 #### Discussion
 
 If multiple elements change values at the same time, the profile calls this block once for each element that changed. If the value of a child element changes, the profile only calls the block for the containing element.
 
 ## See Also
 
-- [typealias GCMicroGamepadValueChangedHandler](gcmicrogamepadvaluechangedhandler.md)
+### Receiving a callback when input values change
+- [typealias GCMicroGamepadValueChangedHandler](../gcmicrogamepadvaluechangedhandler.md)
   Signature for the block that this profile calls when an element’s value changes.
 
 

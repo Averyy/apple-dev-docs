@@ -1,21 +1,23 @@
 # vmnet Data Types
 
-**Framework**: vmnet
+**Framework**: vmnet  
+**Role**: API Collection
 
 ## Topics
 
 ### Data types
-- [typealias vmnet_interface_completion_handler_t](vmnet_interface_completion_handler_t.md)
-- [typealias vmnet_interface_event_callback_t](vmnet_interface_event_callback_t.md)
-- [typealias vmnet_interface_get_ip_port_forwarding_rules_handler_t](vmnet_interface_get_ip_port_forwarding_rules_handler_t.md)
-- [typealias vmnet_interface_get_port_forwarding_rules_handler_t](vmnet_interface_get_port_forwarding_rules_handler_t.md)
-- [typealias vmnet_start_interface_completion_handler_t](vmnet_start_interface_completion_handler_t.md)
+- [typealias vmnet_interface_completion_handler_t](./vmnet_interface_completion_handler_t.md)
+- [typealias vmnet_interface_event_callback_t](./vmnet_interface_event_callback_t.md)
+- [typealias vmnet_interface_get_ip_port_forwarding_rules_handler_t](./vmnet_interface_get_ip_port_forwarding_rules_handler_t.md)
+- [typealias vmnet_interface_get_port_forwarding_rules_handler_t](./vmnet_interface_get_port_forwarding_rules_handler_t.md)
+- [typealias vmnet_start_interface_completion_handler_t](./vmnet_start_interface_completion_handler_t.md)
   The type of the block provided in the call to vmnet_start_interface
 
 ## See Also
 
-- [vmnet Constants](vmnet_constants.md)
-- [vmnet Functions](vmnet_functions.md)
+### Reference
+- [vmnet Constants](./vmnet_constants.md)
+- [vmnet Functions](./vmnet_functions.md)
 
 
 ---

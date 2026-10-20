@@ -1,7 +1,8 @@
 # PDFLineStyle.closedArrow
 
 **Framework**: PDFKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A closed arrowhead line ending, consisting of a triangle with the acute vertex at the line end and filled with the annotation’s interior color, if any.
 
@@ -10,7 +11,7 @@ A closed arrowhead line ending, consisting of a triangle with the acute vertex a
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ A closed arrowhead line ending, consisting of a triangle with the acute vertex a
 case closedArrow
 ```
 
+```c
+kPDFLineStyleClosedArrow
+```
+
 ## See Also
 
-- [PDFLineStyle.none](pdflinestyle/none.md)
+### Constants
+- [PDFLineStyle.none](./none.md)
   No line ending.
-- [PDFLineStyle.square](pdflinestyle/square.md)
+- [PDFLineStyle.square](./square.md)
   A square line ending filled with the annotation’s interior color, if any.
-- [PDFLineStyle.circle](pdflinestyle/circle.md)
+- [PDFLineStyle.circle](./circle.md)
   A circular line ending filled with the annotation’s interior color, if any.
-- [PDFLineStyle.diamond](pdflinestyle/diamond.md)
+- [PDFLineStyle.diamond](./diamond.md)
   A diamond-shaped line ending filled with the annotation’s interior color, if any.
-- [PDFLineStyle.openArrow](pdflinestyle/openarrow.md)
+- [PDFLineStyle.openArrow](./openarrow.md)
   An open arrowhead line ending, composed from two short lines meeting in an acute angle at the line end.
 
 

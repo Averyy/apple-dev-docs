@@ -1,7 +1,8 @@
 # empty
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An empty bounding box.
 
@@ -11,7 +12,7 @@ An empty bounding box.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,9 @@ static let empty: BoundingBox
 
 #### Discussion
 
-An empty bounding box is defined with [`min`](boundingbox/min.md) set to positive infinity and [`max`](boundingbox/max.md) set to negative infinity.
+An empty bounding box is defined with [`min`](./min.md) set to positive infinity and [`max`](./max.md) set to negative infinity.
 
-> **Note**: An empty bounding box where [`min`](boundingbox/min.md) is greater than [`max`](boundingbox/max.md) is different from a bounding box of size 0, where [`min`](boundingbox/min.md)  is equal to [`max`](boundingbox/max.md). The former defines empty space without a position. The latter describes an object of size 0 at a certain position in space.
+> **Note**: An empty bounding box where [`min`](./min.md) is greater than [`max`](./max.md) is different from a bounding box of size 0, where [`min`](./min.md)  is equal to [`max`](./max.md). The former defines empty space without a position. The latter describes an object of size 0 at a certain position in space.
 
 
 ---

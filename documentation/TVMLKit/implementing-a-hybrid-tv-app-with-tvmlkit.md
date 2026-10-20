@@ -1,6 +1,8 @@
 # Implementing a Hybrid TV App with TVMLKit
 
-**Framework**: TVMLKit
+**Framework**: TVMLKit  
+**Role**: Sample Code  
+**Download**: [ImplementingAHybridTVAppWithTVMLKit.zip](https://docs-assets.developer.apple.com/published/5ea6a203c148/ImplementingAHybridTVAppWithTVMLKit.zip)
 
 Display content options with document view controllers and fetch and populate content with TVMLKit JS.
 
@@ -28,7 +30,7 @@ The sample relies on a running server containing JavaScript files, image assets,
 
 ##### Create and Display a Document View Controller
 
-XML files provide the structure of a TVMLKit app. The files contain TVML elements such as [`button`](https://developer.apple.com/documentation/tvml/button) and [`lockup`](https://developer.apple.com/documentation/tvml/lockup), and lay out the elements on screen. In this app, the templates folder in the server directory contains two XML files: Index.xml, and ProductSingle.xml. These files contain the structure of the two primary views used in this app. Index.xml is responsible for providing the structure of the initial page, which consists of a grid of items to select. When the user selects an item from the main page, the ProductSingle.xml file displays the content for the selected item.
+XML files provide the structure of a TVMLKit app. The files contain TVML elements such as [buttons](../TVML/button.md) and [lockups](../TVML/lockup.md), and lay out the elements on screen. In this app, the templates folder in the server directory contains two XML files: Index.xml, and ProductSingle.xml. These files contain the structure of the two primary views used in this app. Index.xml is responsible for providing the structure of the initial page, which consists of a grid of items to select. When the user selects an item from the main page, the ProductSingle.xml file displays the content for the selected item.
 
 At launch time, create a `TVApplicationController` object in the `application(_:didFinishLaunching:)` method. That object provides the infrastructure your app needs to display content. You then use the app controller’s delegate method to specify the initial page’s content by creating a new `TVDocumentViewController` object.
 
@@ -46,9 +48,9 @@ func appController(_ appController: TVApplicationController, didFinishLaunching 
 }
 ```
 
-For more information about how to build the structure of your app, see [`TVML`](https://developer.apple.com/documentation/tvml).
+For more information about how to build the structure of your app, see [TVML](../TVML/TVML.md).
 
-##### Fetch and Populate Tv Content
+##### Fetch and Populate TV Content
 
 The structure of the interface is empty until the TVMLKit JS provides the data for the TV content. When you create a `TVDocumentViewController` object in  `appController(_:didFinishLaunching:)`, TVMLKit determines that it needs data, which causes TVMLKit JS to trigger the `onDocumentRequest` event in `application.js`. This event creates a new `DocumentLoader` object, which grabs data from a `documentProcessor` based on the URL of the request. The URL of the request used is the context used to construct the `TVDocumentViewController` object (templates/Index.xml).
 
@@ -143,13 +145,14 @@ if event == .select {
 
 When TVMLKit determines that there are unpopulated views that need data, TVMLKit triggers the `onDocumentRequest` event to request data for that document. The app references a `documentProcessor` again, except this time it presents data that corresponds to the ProductSingle.xml template instead of the Index.xml template. This is because the URL from the lockup points to templates/ProductSingle.xml. The new data populated into the ProductSingle template presents a full screen view with the selected image.
 
-To learn more about the different `TVDocumentViewController` events, see [`TVDocumentViewController.Event`](tvdocumentviewcontroller/event.md).
+To learn more about the different `TVDocumentViewController` events, see [TVDocumentViewController.Event](./tvdocumentviewcontroller/event.md).
 
 ## See Also
 
-- [class TVApplicationController](tvapplicationcontroller.md)
+### JavaScript Environment
+- [class TVApplicationController](./tvapplicationcontroller.md)
   An object that bridges the UI, navigation stack, storage, and event handling from JavaScript.
-- [class TVApplicationControllerContext](tvapplicationcontrollercontext.md)
+- [class TVApplicationControllerContext](./tvapplicationcontrollercontext.md)
   Launch information provided to the TV application controller.
 
 

@@ -1,7 +1,8 @@
 # seek(to:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the playback position to the specified time.
 
@@ -26,7 +27,8 @@ Sets the playback position to the specified time.
 
 ## See Also
 
-- [func play(at: AVAudioTime) throws](audioplaybackgroupcontroller/play(at:).md)
+### Controlling playback
+- [func play(at: AVAudioTime) throws](./play%28at%29.md)
   Plays all audio resources in the group asynchronously at a specified time.
 
 

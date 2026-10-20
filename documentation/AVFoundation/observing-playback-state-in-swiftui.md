@@ -1,27 +1,28 @@
 # Observing playback state in SwiftUI
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Keep your user interface in sync with state changes from playback objects.
 
 #### Overview
 
-An essential task when building custom media players is observing the state of playback objects to determine their readiness for playback and track other important lifecycle events. The way you typically do this is using key-value observing, but starting in iOS 26, tvOS 26, macOS 26, and visionOS 26, AVFoundation provides a new way to monitor playback state based on the [`Observation`](https://developer.apple.com/documentation/observation) framework. AVFoundation supports this framework by making its core playback types conform to the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol. This means you can use [`AVPlayer`](avplayer.md) or [`AVQueuePlayer`](avqueueplayer.md), along with their associated [`AVPlayerItem`](avplayeritem.md) and [`AVPlayerItemTrack`](avplayeritemtrack.md) objects to drive state changes directly within your SwiftUI views.
+An essential task when building custom media players is observing the state of playback objects to determine their readiness for playback and track other important lifecycle events. The way you typically do this is using key-value observing, but starting in iOS 26, tvOS 26, macOS 26, and visionOS 26, AVFoundation provides a new way to monitor playback state based on the [Observation](../Observation/Observation.md) framework. AVFoundation supports this framework by making its core playback types conform to the [`Observable`](../Observation/observable.md) protocol. This means you can use [`AVPlayer`](./avplayer.md) or [`AVQueuePlayer`](./avqueueplayer.md), along with their associated [`AVPlayerItem`](./avplayeritem.md) and [`AVPlayerItemTrack`](./avplayeritemtrack.md) objects to drive state changes directly within your SwiftUI views.
 
-#### Opt in to Playback Observation
+#### Opt-in to playback observation
 
-AVFoundation supports monitoring playback state with Observation, but it doesn’t enable this feature by default. Instead, you opt-in to this behavior by setting a `true` value for the  `isObservationEnabled` property of the [`AVPlayer`](avplayer.md) class.
+AVFoundation supports monitoring playback state with Observation, but it doesn’t enable this feature by default. Instead, you opt-in to this behavior by setting a `true` value for the  `isObservationEnabled` property of the [`AVPlayer`](./avplayer.md) class.
 
 ```swift
 // Opt-in to observing with the Observation framework.
 AVPlayer.isObservationEnabled = true
 ```
 
-Perform this opt-in early in your app lifecycle, such as in your main [`App`](https://developer.apple.com/documentation/swiftui/app) structure or [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) (in a mixed UIKit and SwiftUI app). This setting is global to your app and must be set *before* creating playback objects. Attempting to change its value after creating these objects results in AVFoundation throwing an exception.
+Perform this opt-in early in your app lifecycle, such as in your main [`App`](../SwiftUI/app.md) structure or [`UIApplicationDelegate`](../UIKit/uiapplicationdelegate.md) (in a mixed UIKit and SwiftUI app). This setting is global to your app and must be set *before* creating playback objects. Attempting to change its value after creating these objects results in AVFoundation throwing an exception.
 
-#### Store Playback State
+#### Store playback state
 
-You define a single source of truth in your app using a SwiftUI [`State`](https://developer.apple.com/documentation/swiftui/state) variable. This property wrapper always instantiates its default value when SwiftUI creates a view. When using it to store playback objects, either directly or as part of a custom `@Observable` model object, avoid performance issues or other potential side effects by deferring the creation of these objects by using the [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/swiftui/view/task(name:priority:file:line:_:)) modifier. For example, in a simple playback case you could define a state variable to hold a player object and initialize it like shown below:
+You define a single source of truth in your app using a SwiftUI [`State`](../SwiftUI/state.md) variable. This property wrapper always instantiates its default value when SwiftUI creates a view. When using it to store playback objects, either directly or as part of a custom `@Observable` model object, avoid performance issues or other potential side effects by deferring the creation of these objects by using the [`task(name:priority:file:line:_:)`](../SwiftUI/view/task%28name,priority,file,line,_%29.md) modifier. For example, in a simple playback case you could define a state variable to hold a player object and initialize it like shown below:
 
 ```swift
 struct PlayerView: View {
@@ -49,9 +50,9 @@ struct PlayerView: View {
 
 Using the task modifier ensures that SwiftUI initializes the player object only once when it first presents the view.
 
-#### Observe State Changes
+#### Observe state changes
 
-Because the playback objects adopt the [`Observable`](https://developer.apple.com/documentation/observation/observable) protocol, you can use them directly within SwiftUI views like any other `@Observable` object. For example, you can pass a player instance to a view and have the view automatically redraw itself as playback state changes.
+Because the playback objects adopt the [`Observable`](../Observation/observable.md) protocol, you can use them directly within SwiftUI views like any other `@Observable` object. For example, you can pass a player instance to a view and have the view automatically redraw itself as playback state changes.
 
 ```swift
 struct TransportView: View {
@@ -81,25 +82,26 @@ struct TransportView: View {
 }
 ```
 
-The transport view defines an `isPlaying` property that uses the player object’s [`timeControlStatus`](avplayer/timecontrolstatus-swift.property.md) property to determine whether it’s actively playing media. It uses this property to drive changes to the button’s presentation and behavior. The view also observes the current player item and enables the button only after the item’s [`status`](avplayeritem/status-swift.property.md) indicates it’s ready to play.
+The transport view defines an `isPlaying` property that uses the player object’s [`timeControlStatus`](./avplayer/timecontrolstatus-swift.property.md) property to determine whether it’s actively playing media. It uses this property to drive changes to the button’s presentation and behavior. The view also observes the current player item and enables the button only after the item’s [`status`](./avplayeritem/status-swift.property.md) indicates it’s ready to play.
 
-> **Note**: You can use Observation to monitor general state properties like a player’s [`currentItem`](avplayer/currentitem.md) or [`rate`](avplayer/rate.md), but it isn’t suitable for observing continuous state changes like the current playback time. Instead, use the dedicated periodic and boundary time observation methods for this purpose. For more information, see [`Monitoring playback progress in your app`](monitoring-playback-progress-in-your-app.md).
+> **Note**: You can use Observation to monitor general state properties like a player’s [`currentItem`](./avplayer/currentitem.md) or [`rate`](./avplayer/rate.md), but it isn’t suitable for observing continuous state changes like the current playback time. Instead, use the dedicated periodic and boundary time observation methods for this purpose. For more information, see [Monitoring playback progress in your app](./monitoring-playback-progress-in-your-app.md).
 
 ## See Also
 
-- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
+### Playback control
+- [Controlling the transport behavior of a player](./controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
-- [Creating a seamless multiview playback experience](creating-a-seamless-multiview-playback-experience.md)
+- [Creating a seamless multiview playback experience](./creating-a-seamless-multiview-playback-experience.md)
   Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
-- [class AVPlayer](avplayer.md)
+- [class AVPlayer](./avplayer.md)
   An object that provides the interface to control the player’s transport behavior.
-- [class AVPlayerItem](avplayeritem.md)
+- [class AVPlayerItem](./avplayeritem.md)
   An object that models the timing and presentation state of an asset during playback.
-- [class AVPlayerItemTrack](avplayeritemtrack.md)
+- [class AVPlayerItemTrack](./avplayeritemtrack.md)
   An object that represents the presentation state of an asset track during playback.
-- [class AVQueuePlayer](avqueueplayer.md)
+- [class AVQueuePlayer](./avqueueplayer.md)
   An object that plays a sequence of player items.
-- [class AVPlayerLooper](avplayerlooper.md)
+- [class AVPlayerLooper](./avplayerlooper.md)
   An object that loops media content using a queue player.
 
 

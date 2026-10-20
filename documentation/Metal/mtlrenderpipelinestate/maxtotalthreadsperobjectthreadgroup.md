@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The largest number of threads the pipeline state can have in a single object shader threadgroup.
@@ -20,9 +21,14 @@ The largest number of threads the pipeline state can have in a single object sha
 var maxTotalThreadsPerObjectThreadgroup: Int { get }
 ```
 
+```objc
+@property (readonly) NSUInteger maxTotalThreadsPerObjectThreadgroup;
+```
+
 ## See Also
 
-- [var objectThreadExecutionWidth: Int](mtlrenderpipelinestate/objectthreadexecutionwidth.md)
+### Checking object shader memory requirements
+- [var objectThreadExecutionWidth: Int](./objectthreadexecutionwidth.md)
   The number of threads the render pass applies to a SIMD group for an object shader.
 
 

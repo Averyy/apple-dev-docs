@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Port.Kind.context
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Carries an ambient runtime context handle injected by the graph at execution time. Destination reads the handle; no ordering effect.
 
@@ -12,7 +13,7 @@ Carries an ambient runtime context handle injected by the graph at execution tim
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

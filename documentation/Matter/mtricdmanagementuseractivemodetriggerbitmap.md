@@ -1,7 +1,8 @@
 # MTRICDManagementUserActiveModeTriggerBitmap
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.4+
@@ -18,40 +19,44 @@
 struct MTRICDManagementUserActiveModeTriggerBitmap
 ```
 
+```c
+enum MTRICDManagementUserActiveModeTriggerBitmap : uint32_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](mtricdmanagementuseractivemodetriggerbitmap/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./mtricdmanagementuseractivemodetriggerbitmap/init%28rawvalue%29.md)
 ### Type Properties
-- [static var actuateSensor: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/actuatesensor.md)
-- [static var actuateSensorLightsBlink: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/actuatesensorlightsblink.md)
-- [static var actuateSensorSeconds: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/actuatesensorseconds.md)
-- [static var actuateSensorTimes: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/actuatesensortimes.md)
-- [static var appDefinedButton: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/appdefinedbutton.md)
-- [static var customInstruction: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/custominstruction.md)
-- [static var deviceManual: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/devicemanual.md)
-- [static var powerCycle: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/powercycle.md)
-- [static var resetButton: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/resetbutton.md)
-- [static var resetButtonLightsBlink: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/resetbuttonlightsblink.md)
-- [static var resetButtonSeconds: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/resetbuttonseconds.md)
-- [static var resetButtonTimes: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/resetbuttontimes.md)
-- [static var settingsMenu: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/settingsmenu.md)
-- [static var setupButton: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/setupbutton.md)
-- [static var setupButtonLightsBlink: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/setupbuttonlightsblink.md)
-- [static var setupButtonSeconds: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/setupbuttonseconds.md)
-- [static var setupButtonTimes: MTRICDManagementUserActiveModeTriggerBitmap](mtricdmanagementuseractivemodetriggerbitmap/setupbuttontimes.md)
+- [static var actuateSensor: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/actuatesensor.md)
+- [static var actuateSensorLightsBlink: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/actuatesensorlightsblink.md)
+- [static var actuateSensorSeconds: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/actuatesensorseconds.md)
+- [static var actuateSensorTimes: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/actuatesensortimes.md)
+- [static var appDefinedButton: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/appdefinedbutton.md)
+- [static var customInstruction: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/custominstruction.md)
+- [static var deviceManual: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/devicemanual.md)
+- [static var powerCycle: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/powercycle.md)
+- [static var resetButton: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/resetbutton.md)
+- [static var resetButtonLightsBlink: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/resetbuttonlightsblink.md)
+- [static var resetButtonSeconds: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/resetbuttonseconds.md)
+- [static var resetButtonTimes: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/resetbuttontimes.md)
+- [static var settingsMenu: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/settingsmenu.md)
+- [static var setupButton: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/setupbutton.md)
+- [static var setupButtonLightsBlink: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/setupbuttonlightsblink.md)
+- [static var setupButtonSeconds: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/setupbuttonseconds.md)
+- [static var setupButtonTimes: MTRICDManagementUserActiveModeTriggerBitmap](./mtricdmanagementuseractivemodetriggerbitmap/setupbuttontimes.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

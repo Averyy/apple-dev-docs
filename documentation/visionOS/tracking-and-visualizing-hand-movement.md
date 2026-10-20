@@ -1,6 +1,8 @@
 # Tracking and visualizing hand movement
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [TrackingAndVisualizingHandMovement.zip](https://docs-assets.developer.apple.com/published/86a01473ccc4/TrackingAndVisualizingHandMovement.zip)
 
 Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
 
@@ -10,7 +12,9 @@ Use hand-tracking anchors to display a visual representation of hand transforms 
 
 #### Overview
 
-This sample demonstrates tracking hand transforms in visionOS with the [`HandTrackingProvider`](https://developer.apple.com/documentation/arkit/handtrackingprovider) class, a type within [`ARKit`](https://developer.apple.com/documentation/arkit). As the following video shows, the app displays a series of white spheres that affix themselves to each anchor point on a person’s hands and remain attached as the hands move:
+This sample demonstrates tracking hand transforms in visionOS with the [`HandTrackingProvider`](../ARKit/handtrackingprovider.md) class, a type within [ARKit](../ARKit/ARKit.md). As the following video shows, the app displays a series of white spheres that affix themselves to each anchor point on a person’s hands and remain attached as the hands move:
+
+[Video: A video of a visionOS app with a translucent window with the label \"Hand Tracking Example\", displaying two hands with spheres that appear affixed to the person's hands, following the motion of the hands.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-visualize-hand-tracking-in-visionos-with-arkit.mov)
 
 The app achieves this effect by:
 
@@ -18,9 +22,9 @@ The app achieves this effect by:
 2. Placing white spheres on each hand-tracking anchor
 3. Tracking the person’s hand to update the hand entity’s position and orientation
 
-##### Define the Hand Tracking Anchors
+##### Define the hand-tracking anchors
 
-[`HandSkeleton.JointName`](https://developer.apple.com/documentation/arkit/handskeleton/jointname) contains a total of 26 hand-tracking anchors for each hand. To identify these anchors, the sample creates a series of `Finger` and `Bone` enumerations:
+[`HandSkeleton.JointName`](../ARKit/handskeleton/jointname.md) contains a total of 26 hand-tracking anchors for each hand. To identify these anchors, the sample creates a series of `Finger` and `Bone` enumerations:
 
 ```swift
 enum Finger: Int, CaseIterable {
@@ -64,7 +68,7 @@ struct Hand {
 }
 ```
 
-##### Set Up the Hand Tracker
+##### Set up the hand tracker
 
 The sample creates the `HandTrackingComponent` to track the entities of the left and right hand. It differentiates the left- and right-hand entities by configuring the component with a `chirality` value and registering it with the app’s `HandTrackingSystem` singleton instance:
 
@@ -84,7 +88,7 @@ struct HandTrackingComponent: Component {
 }
 ```
 
-The sample implements a custom system that tracks a person’s hands with a [`HandTrackingProvider`](https://developer.apple.com/documentation/arkit/handtrackingprovider) and stores them in the `latestLeftHand` and `latestRightHand` instances:
+The sample implements a custom system that tracks a person’s hands with a [`HandTrackingProvider`](../ARKit/handtrackingprovider.md) and stores them in the `latestLeftHand` and `latestRightHand` instances:
 
 ```swift
 struct HandTrackingSystem: System {
@@ -112,7 +116,7 @@ On initialization, the `HandTrackingSystem` starts a task that calls the `runSes
 
 > 💡 **Tip**: If you want to later cancel `runSession()`, keep a reference to the `Task` that encapsulates it.
 
-The `runSession()` method starts an [`ARKitSession`](https://developer.apple.com/documentation/arkit/arkitsession) with the [`HandTrackingProvider`](https://developer.apple.com/documentation/arkit/handtrackingprovider):
+The `runSession()` method starts an [`ARKitSession`](../ARKit/arkitsession.md) with the [`HandTrackingProvider`](../ARKit/handtrackingprovider.md):
 
 ```swift
 func runSession() {
@@ -142,7 +146,7 @@ func runSession() {
 
 When the `handTracking.anchorUpdates` stream yields new hand data from ARKit, this async method updates the `latestLeftHand` and `latestRightHand` anchors accordingly.
 
-#### Visualize the Joints of a Hand Entity
+#### Visualize the joints of a hand entity
 
 The system also has an `addJoints(to:handComponent:)` method that adds a sphere entity to each anchor of a hand entity. The method starts by creating the sphere entity with the `radius` and `material` properties, then it adds the sphere entity to the hand entity and updates the `fingers` collection for each anchor in the `Hand` structure:
 
@@ -172,11 +176,11 @@ func addJoints(to handEntity: Entity, handComponent: inout HandTrackingComponent
 }
 ```
 
-The [`System`](https://developer.apple.com/documentation/realitykit/system) protocol has an [`update(context:)`](https://developer.apple.com/documentation/realitykit/system/update(context:)) method that the app calls for each scene update, to update its hand entities.
+The [`System`](../RealityKit/system.md) protocol has an [`update(context:)`](../RealityKit/system/update%28context%29.md) method that the app calls for each scene update, to update its hand entities.
 
-> **Note**: The [`update(context:)`](https://developer.apple.com/documentation/realitykit/system/update(context:)) instance method is required to create a custom system.
+> **Note**: The [`update(context:)`](../RealityKit/system/update%28context%29.md) instance method is required to create a custom system.
 
-The app finds the hand entities for each scene update with an [`EntityQuery`](https://developer.apple.com/documentation/realitykit/entityquery) instance that retrieves entities with a hand-tracking component.
+The app finds the hand entities for each scene update with an [`EntityQuery`](../RealityKit/entityquery.md) instance that retrieves entities with a hand-tracking component.
 
 ```swift
 struct HandTrackingSystem: System {
@@ -229,7 +233,7 @@ for entity in handEntities {
 }
 ```
 
-##### Create the Left and Right Hand Entities
+##### Create the left- and right-hand entities
 
 The app adds hand-tracking entities to the content of the RealityKit view by calling `makeHandEntities(in:)`:
 
@@ -261,15 +265,16 @@ The `makeHandEntities(in:)` method creates the left- and right-hand entities, an
 
 ## See Also
 
-- [Animating hand models in visionOS](animating-hand-models-in-visionos.md)
+### Integrating ARKit
+- [Animating hand models in visionOS](./animating-hand-models-in-visionos.md)
   Substitute a person’s hands with custom models in a fully immersive space.
-- [Creating a 3D painting space](creating-a-painting-space-in-visionos.md)
+- [Creating a 3D painting space](./creating-a-painting-space-in-visionos.md)
   Implement a painting canvas entity, and update its mesh to represent a stroke.
-- [Displaying an entity that follows a person’s view](displaying-a-3d-object-that-moves-to-stay-in-a-person's-view.md)
+- [Displaying an entity that follows a person’s view](./displaying-a-3d-object-that-moves-to-stay-in-a-persons-view.md)
   Create an entity that tracks and follows head movement in an immersive scene.
-- [Applying mesh to real-world surroundings](applying-mesh-to-real-world-surroundings.md)
+- [Applying mesh to real-world surroundings](./applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
-- [Obscuring virtual items in a scene behind real-world items](obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
+- [Obscuring virtual items in a scene behind real-world items](./obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
 
 

@@ -1,7 +1,8 @@
 # resume(withParameters:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes a model update with updated parameter values.
 
@@ -20,9 +21,13 @@ Resumes a model update with updated parameter values.
 func resume(withParameters updateParameters: [MLParameterKey : Any])
 ```
 
+```objc
+- (void) resumeWithParameters:(NSDictionary<MLParameterKey *,id> *) updateParameters;
+```
+
 #### Discussion
 
-Use this method to resume the model update task with newer parameter values. You use this method within the closures you provide in an [`MLUpdateProgressHandlers`](mlupdateprogresshandlers.md) instance to resume the [`MLUpdateTask`](mlupdatetask.md).
+Use this method to resume the model update task with newer parameter values. You use this method within the closures you provide in an [`MLUpdateProgressHandlers`](../mlupdateprogresshandlers.md) instance to resume the [`MLUpdateTask`](../mlupdatetask.md).
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Use this method to resume the model update task with newer parameter values. You
 
 ## See Also
 
-- [class MLParameterKey](mlparameterkey.md)
+### Starting and Resuming an Update
+- [class MLParameterKey](../mlparameterkey.md)
   The keys for the parameter dictionary in a model configuration or a model update context.
 
 

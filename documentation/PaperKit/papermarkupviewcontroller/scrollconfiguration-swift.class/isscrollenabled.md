@@ -1,7 +1,8 @@
 # isScrollEnabled
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether scrolling is enabled.
 
@@ -24,9 +25,10 @@ When `false`, the scroll view disables dragging temporarily. Default is `true`.
 
 ## See Also
 
-- [var isDirectionalLockEnabled: Bool](papermarkupviewcontroller/scrollconfiguration-swift.class/isdirectionallockenabled.md)
+### Configuring scroll state
+- [var isDirectionalLockEnabled: Bool](./isdirectionallockenabled.md)
   A Boolean value that determines whether scrolling is disabled in a particular direction.
-- [var scrollsToTop: Bool](papermarkupviewcontroller/scrollconfiguration-swift.class/scrollstotop.md)
+- [var scrollsToTop: Bool](./scrollstotop.md)
   A Boolean value that controls whether the scroll-to-top gesture is enabled.
 
 

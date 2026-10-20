@@ -1,7 +1,8 @@
 # onEnded(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an action to perform when the gesture ends.
 
@@ -23,7 +24,7 @@ func onEnded(_ action: @escaping (Self.Value) -> Void) -> _EndedGesture<Self>
 
 ## Mentions
 
-- [Adding interactivity with gestures](adding-interactivity-with-gestures.md)
+- [Adding interactivity with gestures](../adding-interactivity-with-gestures.md)
 
 #### Return Value
 
@@ -39,11 +40,12 @@ A gesture that triggers `action` when the gesture ends.
 
 ## See Also
 
-- [func updating<State>(GestureState<State>, body: (Self.Value, inout State, inout Transaction) -> Void) -> GestureStateGesture<Self, State>](gesture/updating(_:body:).md)
+### Performing the gesture
+- [func updating<State>(GestureState<State>, body: (Self.Value, inout State, inout Transaction) -> Void) -> GestureStateGesture<Self, State>](./updating%28_,body%29.md)
   Updates the provided gesture state property as the gesture’s value changes.
-- [func onChanged((Self.Value) -> Void) -> _ChangedGesture<Self>](gesture/onchanged(_:).md)
+- [func onChanged((Self.Value) -> Void) -> _ChangedGesture<Self>](./onchanged%28_%29.md)
   Adds an action to perform when the gesture’s value changes.
-- [associatedtype Value](gesture/value.md)
+- [associatedtype Value](./value.md)
   The type representing the gesture’s value.
 
 

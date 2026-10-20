@@ -1,7 +1,8 @@
 # fromRight
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The transition begins at the right side of the layer.
 
@@ -19,13 +20,18 @@ The transition begins at the right side of the layer.
 static let fromRight: CATransitionSubtype
 ```
 
+```c
+extern CATransitionSubtype const kCATransitionFromRight;
+```
+
 ## See Also
 
-- [static let fromLeft: CATransitionSubtype](catransitionsubtype/fromleft.md)
+### Constants
+- [static let fromLeft: CATransitionSubtype](./fromleft.md)
   The transition begins at the left side of the layer.
-- [static let fromTop: CATransitionSubtype](catransitionsubtype/fromtop.md)
+- [static let fromTop: CATransitionSubtype](./fromtop.md)
   The transition begins at the top of the layer.
-- [static let fromBottom: CATransitionSubtype](catransitionsubtype/frombottom.md)
+- [static let fromBottom: CATransitionSubtype](./frombottom.md)
   The transition begins at the bottom of the layer.
 
 

@@ -1,7 +1,8 @@
 # entityNotFound
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No app entity matched the search criteria.
 

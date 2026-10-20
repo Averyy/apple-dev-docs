@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The most general classification of a Unicode scalar.
 
@@ -27,91 +28,92 @@ The general category of a scalar is its “first-order, most usual categorizatio
 ## Topics
 
 ### Operators
-- [static func == (Unicode.GeneralCategory, Unicode.GeneralCategory) -> Bool](unicode/generalcategory/==(_:_:).md)
+- [static func == (Unicode.GeneralCategory, Unicode.GeneralCategory) -> Bool](./generalcategory/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
-- [Unicode.GeneralCategory.closePunctuation](unicode/generalcategory/closepunctuation.md)
+- [Unicode.GeneralCategory.closePunctuation](./generalcategory/closepunctuation.md)
   A closing punctuation mark of a pair.
-- [Unicode.GeneralCategory.connectorPunctuation](unicode/generalcategory/connectorpunctuation.md)
+- [Unicode.GeneralCategory.connectorPunctuation](./generalcategory/connectorpunctuation.md)
   A connecting punctuation mark, like a tie.
-- [Unicode.GeneralCategory.control](unicode/generalcategory/control.md)
+- [Unicode.GeneralCategory.control](./generalcategory/control.md)
   A C0 or C1 control code.
-- [Unicode.GeneralCategory.currencySymbol](unicode/generalcategory/currencysymbol.md)
+- [Unicode.GeneralCategory.currencySymbol](./generalcategory/currencysymbol.md)
   A currency sign.
-- [Unicode.GeneralCategory.dashPunctuation](unicode/generalcategory/dashpunctuation.md)
+- [Unicode.GeneralCategory.dashPunctuation](./generalcategory/dashpunctuation.md)
   A dash or hyphen punctuation mark.
-- [Unicode.GeneralCategory.decimalNumber](unicode/generalcategory/decimalnumber.md)
+- [Unicode.GeneralCategory.decimalNumber](./generalcategory/decimalnumber.md)
   A decimal digit.
-- [Unicode.GeneralCategory.enclosingMark](unicode/generalcategory/enclosingmark.md)
+- [Unicode.GeneralCategory.enclosingMark](./generalcategory/enclosingmark.md)
   An enclosing combining mark.
-- [Unicode.GeneralCategory.finalPunctuation](unicode/generalcategory/finalpunctuation.md)
+- [Unicode.GeneralCategory.finalPunctuation](./generalcategory/finalpunctuation.md)
   A final quotation mark.
-- [Unicode.GeneralCategory.format](unicode/generalcategory/format.md)
+- [Unicode.GeneralCategory.format](./generalcategory/format.md)
   A format control character.
-- [Unicode.GeneralCategory.initialPunctuation](unicode/generalcategory/initialpunctuation.md)
+- [Unicode.GeneralCategory.initialPunctuation](./generalcategory/initialpunctuation.md)
   An initial quotation mark.
-- [Unicode.GeneralCategory.letterNumber](unicode/generalcategory/letternumber.md)
+- [Unicode.GeneralCategory.letterNumber](./generalcategory/letternumber.md)
   A letter-like numeric character.
-- [Unicode.GeneralCategory.lineSeparator](unicode/generalcategory/lineseparator.md)
+- [Unicode.GeneralCategory.lineSeparator](./generalcategory/lineseparator.md)
   A line separator, which is specifically (and only) U+2028 LINE SEPARATOR.
-- [Unicode.GeneralCategory.lowercaseLetter](unicode/generalcategory/lowercaseletter.md)
+- [Unicode.GeneralCategory.lowercaseLetter](./generalcategory/lowercaseletter.md)
   A lowercase letter.
-- [Unicode.GeneralCategory.mathSymbol](unicode/generalcategory/mathsymbol.md)
+- [Unicode.GeneralCategory.mathSymbol](./generalcategory/mathsymbol.md)
   A symbol of mathematical use.
-- [Unicode.GeneralCategory.modifierLetter](unicode/generalcategory/modifierletter.md)
+- [Unicode.GeneralCategory.modifierLetter](./generalcategory/modifierletter.md)
   A modifier letter.
-- [Unicode.GeneralCategory.modifierSymbol](unicode/generalcategory/modifiersymbol.md)
+- [Unicode.GeneralCategory.modifierSymbol](./generalcategory/modifiersymbol.md)
   A non-letterlike modifier symbol.
-- [Unicode.GeneralCategory.nonspacingMark](unicode/generalcategory/nonspacingmark.md)
+- [Unicode.GeneralCategory.nonspacingMark](./generalcategory/nonspacingmark.md)
   A non-spacing combining mark with zero advance width (abbreviated Mn).
-- [Unicode.GeneralCategory.openPunctuation](unicode/generalcategory/openpunctuation.md)
+- [Unicode.GeneralCategory.openPunctuation](./generalcategory/openpunctuation.md)
   An opening punctuation mark of a pair.
-- [Unicode.GeneralCategory.otherLetter](unicode/generalcategory/otherletter.md)
+- [Unicode.GeneralCategory.otherLetter](./generalcategory/otherletter.md)
   Other letters, including syllables and ideographs.
-- [Unicode.GeneralCategory.otherNumber](unicode/generalcategory/othernumber.md)
+- [Unicode.GeneralCategory.otherNumber](./generalcategory/othernumber.md)
   A numeric character of another type.
-- [Unicode.GeneralCategory.otherPunctuation](unicode/generalcategory/otherpunctuation.md)
+- [Unicode.GeneralCategory.otherPunctuation](./generalcategory/otherpunctuation.md)
   A punctuation mark of another type.
-- [Unicode.GeneralCategory.otherSymbol](unicode/generalcategory/othersymbol.md)
+- [Unicode.GeneralCategory.otherSymbol](./generalcategory/othersymbol.md)
   A symbol of another type.
-- [Unicode.GeneralCategory.paragraphSeparator](unicode/generalcategory/paragraphseparator.md)
+- [Unicode.GeneralCategory.paragraphSeparator](./generalcategory/paragraphseparator.md)
   A paragraph separator, which is specifically (and only) U+2029 PARAGRAPH SEPARATOR.
-- [Unicode.GeneralCategory.privateUse](unicode/generalcategory/privateuse.md)
+- [Unicode.GeneralCategory.privateUse](./generalcategory/privateuse.md)
   A private-use character.
-- [Unicode.GeneralCategory.spaceSeparator](unicode/generalcategory/spaceseparator.md)
+- [Unicode.GeneralCategory.spaceSeparator](./generalcategory/spaceseparator.md)
   A space character of non-zero width.
-- [Unicode.GeneralCategory.spacingMark](unicode/generalcategory/spacingmark.md)
+- [Unicode.GeneralCategory.spacingMark](./generalcategory/spacingmark.md)
   A spacing combining mark with positive advance width.
-- [Unicode.GeneralCategory.surrogate](unicode/generalcategory/surrogate.md)
+- [Unicode.GeneralCategory.surrogate](./generalcategory/surrogate.md)
   A surrogate code point.
-- [Unicode.GeneralCategory.titlecaseLetter](unicode/generalcategory/titlecaseletter.md)
+- [Unicode.GeneralCategory.titlecaseLetter](./generalcategory/titlecaseletter.md)
   A digraph character whose first part is uppercase.
-- [Unicode.GeneralCategory.unassigned](unicode/generalcategory/unassigned.md)
+- [Unicode.GeneralCategory.unassigned](./generalcategory/unassigned.md)
   A reserved unassigned code point or a non-character.
-- [Unicode.GeneralCategory.uppercaseLetter](unicode/generalcategory/uppercaseletter.md)
+- [Unicode.GeneralCategory.uppercaseLetter](./generalcategory/uppercaseletter.md)
   An uppercase letter.
 ### Instance Properties
-- [var hashValue: Int](unicode/generalcategory/hashvalue.md)
+- [var hashValue: Int](./generalcategory/hashvalue.md)
   The hash value.
 ### Instance Methods
-- [func hash(into: inout Hasher)](unicode/generalcategory/hash(into:).md)
+- [func hash(into: inout Hasher)](./generalcategory/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
 ### Default Implementations
-- [Equatable Implementations](unicode/generalcategory/equatable-implementations.md)
+- [Equatable Implementations](./generalcategory/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Equatable](../equatable.md)
+- [Hashable](../hashable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 ## See Also
 
-- [Unicode.CanonicalCombiningClass](unicode/canonicalcombiningclass.md)
+### Unicode Scalar Classifications
+- [Unicode.CanonicalCombiningClass](./canonicalcombiningclass.md)
   The classification of a scalar used in the Canonical Ordering Algorithm defined by the Unicode Standard.
-- [Unicode.NumericType](unicode/numerictype.md)
+- [Unicode.NumericType](./numerictype.md)
   The numeric type of a scalar.
 
 

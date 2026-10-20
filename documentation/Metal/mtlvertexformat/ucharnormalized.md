@@ -1,7 +1,8 @@
 # MTLVertexFormat.ucharNormalized
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An 8-bit, normalized, unsigned integer value.
 
@@ -19,21 +20,26 @@ An 8-bit, normalized, unsigned integer value.
 case ucharNormalized
 ```
 
+```c
+MTLVertexFormatUCharNormalized
+```
+
 ## See Also
 
-- [MTLVertexFormat.charNormalized](mtlvertexformat/charnormalized.md)
+### 8-bit normalized integer formats
+- [MTLVertexFormat.charNormalized](./charnormalized.md)
   An 8-bit, normalized, signed integer value.
-- [MTLVertexFormat.char2Normalized](mtlvertexformat/char2normalized.md)
+- [MTLVertexFormat.char2Normalized](./char2normalized.md)
   A two-component vector with 8-bit, normalized, signed integer values.
-- [MTLVertexFormat.char3Normalized](mtlvertexformat/char3normalized.md)
+- [MTLVertexFormat.char3Normalized](./char3normalized.md)
   A three-component vector with 8-bit, normalized, signed integer values.
-- [MTLVertexFormat.char4Normalized](mtlvertexformat/char4normalized.md)
+- [MTLVertexFormat.char4Normalized](./char4normalized.md)
   A four-component vector with 8-bit, normalized, signed integer values.
-- [MTLVertexFormat.uchar2Normalized](mtlvertexformat/uchar2normalized.md)
+- [MTLVertexFormat.uchar2Normalized](./uchar2normalized.md)
   A two-component vector with 8-bit, normalized, unsigned integer values.
-- [MTLVertexFormat.uchar3Normalized](mtlvertexformat/uchar3normalized.md)
+- [MTLVertexFormat.uchar3Normalized](./uchar3normalized.md)
   A three-component vector with 8-bit, normalized, unsigned integer values.
-- [MTLVertexFormat.uchar4Normalized](mtlvertexformat/uchar4normalized.md)
+- [MTLVertexFormat.uchar4Normalized](./uchar4normalized.md)
   A four-component vector with 8-bit, normalized, unsigned integer values.
 
 

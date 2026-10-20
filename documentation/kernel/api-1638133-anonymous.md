@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOACPIAddressSpaceOpRead](1638133-anonymous/kioacpiaddressspaceopread.md)
-- [kIOACPIAddressSpaceOpWrite](1638133-anonymous/kioacpiaddressspaceopwrite.md)
+- [kIOACPIAddressSpaceOpRead](./api-1638133-anonymous/kioacpiaddressspaceopread.md)
+- [kIOACPIAddressSpaceOpWrite](./api-1638133-anonymous/kioacpiaddressspaceopwrite.md)
 
 
 ---

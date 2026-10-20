@@ -1,15 +1,20 @@
 # devicePairingStarted(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func devicePairingStarted(_ sender: Any!)
+```
+
+```objc
+- (void) devicePairingStarted:(id) sender;
 ```
 
 

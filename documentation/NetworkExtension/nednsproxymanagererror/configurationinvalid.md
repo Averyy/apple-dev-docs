@@ -1,7 +1,8 @@
 # NEDNSProxyManagerError.configurationInvalid
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Invalid DNS proxy configuration that cannot be stored.
 
@@ -18,13 +19,18 @@ Invalid DNS proxy configuration that cannot be stored.
 case configurationInvalid
 ```
 
+```c
+NEDNSProxyManagerErrorConfigurationInvalid
+```
+
 ## See Also
 
-- [NEDNSProxyManagerError.configurationDisabled](nednsproxymanagererror/configurationdisabled.md)
+### Enumeration Cases
+- [NEDNSProxyManagerError.configurationDisabled](./configurationdisabled.md)
   Disabled DNS proxy configuration.
-- [NEDNSProxyManagerError.configurationStale](nednsproxymanagererror/configurationstale.md)
+- [NEDNSProxyManagerError.configurationStale](./configurationstale.md)
   Outdated DNS proxy configuration that needs to be loaded.
-- [NEDNSProxyManagerError.configurationCannotBeRemoved](nednsproxymanagererror/configurationcannotberemoved.md)
+- [NEDNSProxyManagerError.configurationCannotBeRemoved](./configurationcannotberemoved.md)
   Unremovable DNS proxy configuration.
 
 

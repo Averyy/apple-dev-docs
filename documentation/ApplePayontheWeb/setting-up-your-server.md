@@ -1,6 +1,7 @@
 # Setting Up Your Server
 
-**Framework**: Apple Pay on the Web
+**Framework**: Apple Pay on the Web  
+**Role**: Article
 
 Set up your server for secure communications with Apple Pay.
 
@@ -21,7 +22,7 @@ These are the requirements for incorporating Apple Pay on your website:
 | 0xC0,0x2C | ECDHE-ECDSA-AES256-GCM-SHA384 |
 | 0xC0,0x30 | ECDHE-RSA-AES256-GCM-SHA384 |
 
-##### Allow Apple Pay Ip Addresses
+##### Allow Apple Pay IP Addresses
 
 To successfully connect with Apple Pay IP addresses and domains, your server needs to allow access over HTTPS (TCP over port 443)  and include the TLS Server Name Indication (SNI) extension. Apple Pay requires SNI on all connections. Your server needs to connect to the Apple Pay IP addresses and domains provided listed in Listing 1, below.
 
@@ -71,9 +72,9 @@ This name resolves to the IP addresses / CIDR block below:
 101.230.204.235/32
 ```
 
-For more information about merchant validation, see [`Providing Merchant Validation`](providing-merchant-validation.md).
+For more information about merchant validation, see [Providing Merchant Validation](./providing-merchant-validation.md).
 
-##### Allow Apple Ip Addresses for Domain Verification
+##### Allow Apple IP Addresses for Domain Verification
 
 Apple uses the following IP addresses when you register or verify your merchant domain. If you protect your domain from public access and you wish to complete domain verification, you need to allow the following IP address ranges.
 
@@ -91,13 +92,14 @@ Apple uses the following IP addresses when you register or verify your merchant 
 17.253.0.0/16
 ```
 
-See [`Register and Verify Your Domain`](configuring-your-environment#Register-and-Verify-Your-Domain.md) for more information.
+See [Register and Verify Your Domain](./configuring-your-environment.md#Register-and-Verify-Your-Domain) for more information.
 
 ## See Also
 
-- [Configuring Your Environment](configuring-your-environment.md)
+### Apple Pay setup
+- [Configuring Your Environment](./configuring-your-environment.md)
   Create your Apple Pay merchant ID and certificates, and verify your domain.
-- [Maintaining Your Environment](maintaining-your-environment.md)
+- [Maintaining Your Environment](./maintaining-your-environment.md)
   Prevent interruptions in your Apple Pay service by keeping certificates and domain verification current.
 
 

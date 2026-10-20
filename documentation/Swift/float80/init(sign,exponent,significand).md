@@ -1,7 +1,8 @@
 # init(sign:exponent:significand:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value from the given sign, exponent, and significand.
 
@@ -44,7 +45,7 @@ For any floating-point value `x` of type `F`, the result of the following is equ
 let x0 = F(sign: x.sign, exponent: x.exponent, significand: x.significand)
 ```
 
-This initializer implements the `scaleB` operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+This initializer implements the `scaleB` operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 

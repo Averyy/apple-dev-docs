@@ -1,7 +1,8 @@
 # Date.AnchoredRelativeFormatStyle.Presentation
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.0+

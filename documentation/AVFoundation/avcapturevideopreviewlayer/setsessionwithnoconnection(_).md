@@ -1,7 +1,8 @@
 # setSessionWithNoConnection(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Associates a session with the layer without automatically forming a connection to an eligible input port.
 
@@ -18,9 +19,13 @@ Associates a session with the layer without automatically forming a connection t
 func setSessionWithNoConnection(_ session: AVCaptureSession)
 ```
 
+```objc
+- (void) setSessionWithNoConnection:(AVCaptureSession *) session;
+```
+
 #### Discussion
 
-Only use this method if you intend to manually create a connection between the layer and a particular [`AVCaptureInput.Port`](avcaptureinput/port.md), and add it to the session using its [`addConnection(_:)`](avcapturesession/addconnection(_:).md) method.
+Only use this method if you intend to manually create a connection between the layer and a particular [`AVCaptureInput.Port`](../avcaptureinput/port.md), and add it to the session using its [`addConnection(_:)`](../avcapturesession/addconnection%28_%29.md) method.
 
 ## Parameters
 
@@ -28,9 +33,10 @@ Only use this method if you intend to manually create a connection between the l
 
 ## See Also
 
-- [var session: AVCaptureSession?](avcapturevideopreviewlayer/session.md)
+### Session configuration
+- [var session: AVCaptureSession?](./session.md)
   A capture session with visual output to preview.
-- [var connection: AVCaptureConnection?](avcapturevideopreviewlayer/connection.md)
+- [var connection: AVCaptureConnection?](./connection.md)
   An object that describes the connection from the layer to a particular input port.
 
 

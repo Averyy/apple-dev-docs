@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The local player’s properties that matchmaking rules uses to find the players, with some additions.
 
@@ -19,9 +20,13 @@ The local player’s properties that matchmaking rules uses to find the players,
 var properties: [String : Any]? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) GKMatchProperties * properties;
+```
+
 #### Discussion
 
-This property is similar to the [`GKMatchRequest`](gkmatchrequest.md).[`properties`](gkmatchrequest/properties.md) property but with some additions that Game Center may add. For example, if you add team rules to your rule set, use the `gc` and `team` keys to get the name of the player’s team.
+This property is similar to the [`GKMatchRequest`](../gkmatchrequest.md).[`properties`](../gkmatchrequest/properties.md) property but with some additions that Game Center may add. For example, if you add team rules to your rule set, use the `gc` and `team` keys to get the name of the player’s team.
 
 ```swift
 // Get the local player's team assignment.
@@ -31,7 +36,8 @@ team = properties["gc"]["team"]
 
 ## See Also
 
-- [var playerProperties: [GKPlayer : [String : Any]]?](gkmatchedplayers/playerproperties.md)
+### Matchmaking using rules
+- [var playerProperties: [GKPlayer : [String : Any]]?](./playerproperties.md)
   The properties for other players that matchmaking rules uses to find players, with some additions.
 
 

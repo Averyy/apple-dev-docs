@@ -1,7 +1,8 @@
 # NSImageRep.RegistryDidChangeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,15 +16,15 @@ struct RegistryDidChangeMessage
 ## Topics
 
 ### Initializers
-- [init(imageRep: NSImageRep)](nsimagerep/registrydidchangemessage/init(imagerep:).md)
+- [init(imageRep: NSImageRep)](./registrydidchangemessage/init%28imagerep%29.md)
 ### Instance Properties
-- [var imageRep: NSImageRep](nsimagerep/registrydidchangemessage/imagerep.md)
+- [var imageRep: NSImageRep](./registrydidchangemessage/imagerep.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

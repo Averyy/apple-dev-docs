@@ -1,7 +1,8 @@
 # NSPopover.DidShowMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct DidShowMessage
 ## Topics
 
 ### Initializers
-- [init(popover: NSPopover)](nspopover/didshowmessage/init(popover:).md)
+- [init(popover: NSPopover)](./didshowmessage/init%28popover%29.md)
 ### Instance Properties
-- [var popover: NSPopover](nspopover/didshowmessage/popover.md)
+- [var popover: NSPopover](./didshowmessage/popover.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

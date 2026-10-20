@@ -1,27 +1,28 @@
 # watchOS 26.5 Release Notes
 
-**Framework**: watchOS Release Notes
+**Framework**: watchOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 26.5 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26.5. The SDK comes bundled with Xcode 26.5. For information on the compatibility requirements for Xcode 26.5, see [`Xcode 26.5 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_5-release-notes).
+The watchOS 26.5 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26.5. The SDK comes bundled with Xcode 26.5. For information on the compatibility requirements for Xcode 26.5, see [Xcode 26.5 Release Notes](../Xcode-Release-Notes/xcode-26_5-release-notes.md).
 
-##### Storekit
+##### StoreKit
 
 ###### Resolved Issues
 
 - Fixed: The App Version field in the ASN.1 app receipt might contain the string “null” instead of the expected version number.  (171614522) (FB22114908)
 - Fixed: `Transaction.currentEntitlements` might be empty if a customer has an active subscription when the device’s system calendar is set to a non-Gregorian format.  (173415174)
 
-##### Storekit Testing in Xcode
+##### StoreKit Testing in Xcode
 
 ###### Known Issues
 
 - An issue prevents StoreKit Testing in Xcode from observing changes made to subscription prices.  (175848494) (FB22647785)
 
-##### Storekittest
+##### StoreKitTest
 
 ###### Resolved Issues
 
@@ -29,17 +30,18 @@ The watchOS 26.5 SDK provides support to develop watchOS apps for Apple Watch de
 
 ## See Also
 
-- [watchOS 26.6 Release Notes](watchos-26_6-release-notes.md)
+### watchOS 26
+- [watchOS 26.6 Release Notes](./watchos-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 26.4 Release Notes](watchos-26_4-release-notes.md)
+- [watchOS 26.4 Release Notes](./watchos-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 26.3 Release Notes](watchos-26_3-release-notes.md)
+- [watchOS 26.3 Release Notes](./watchos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 26.2 Release Notes](watchos-26_2-release-notes.md)
+- [watchOS 26.2 Release Notes](./watchos-26_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 26.1 Release Notes](watchos-26_1-release-notes.md)
+- [watchOS 26.1 Release Notes](./watchos-26_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [watchOS 26 Release Notes](watchos-26-release-notes.md)
+- [watchOS 26 Release Notes](./watchos-26-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

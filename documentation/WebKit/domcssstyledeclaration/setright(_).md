@@ -1,7 +1,8 @@
 # setRight(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 func setRight(_ right: String!)
+```
+
+```objc
+- (void) setRight:(NSString *) right;
 ```
 
 

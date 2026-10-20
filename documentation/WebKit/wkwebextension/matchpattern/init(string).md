@@ -1,7 +1,8 @@
 # init(string:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a pattern object for the specified pattern string.
 
@@ -16,6 +17,10 @@ Returns a pattern object for the specified pattern string.
 
 ```swift
 init(string: String) throws
+```
+
+```objc
+- (instancetype) initWithString:(NSString *) string error:(NSError **) error;
 ```
 
 #### Return Value

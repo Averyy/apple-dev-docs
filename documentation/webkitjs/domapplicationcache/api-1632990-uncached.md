@@ -11,7 +11,7 @@ The object isn’t associated with an application cache. This can occur if the u
 
 ## Declaration
 
-```swift
+```
 const unsigned short UNCACHED;
 ```
 

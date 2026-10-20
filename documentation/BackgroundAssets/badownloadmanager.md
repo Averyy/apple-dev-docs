@@ -1,7 +1,8 @@
 # BADownloadManager
 
 **Framework**: Background Assets  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that manages the queue of scheduled asset downloads.
 
@@ -19,9 +20,13 @@ An object that manages the queue of scheduled asset downloads.
 class BADownloadManager
 ```
 
+```objc
+@interface BADownloadManager : NSObject
+```
+
 #### Overview
 
-Use [`BADownloadManager`](badownloadmanager.md) to schedule and cancel asset downloads, monitor their progress, and access the queue of pending downloads. You don’t create instances of this class directly; instead, use the [`shared`](badownloadmanager/shared.md) property to access the framework’s singleton that it shares between your app and the app’s extension. Because the download manager is a shared resource, prevent race conditions by using the `withExclusiveControl(_:)` and [`withExclusiveControl(beforeDate:perform:)`](badownloadmanager/withexclusivecontrol(beforedate:perform:).md) methods to assume absolute control of the manager before you schedule asset downloads or manipulate those already in the manager’s queue. To respond to asset download events and process concluded downloads, create a type that conforms to the [`BADownloadManagerDelegate`](badownloadmanagerdelegate.md) protocol and assign an instance of it to the download manager’s [`delegate`](badownloadmanager/delegate.md) property.
+Use [`BADownloadManager`](./badownloadmanager.md) to schedule and cancel asset downloads, monitor their progress, and access the queue of pending downloads. You don’t create instances of this class directly; instead, use the [`shared`](./badownloadmanager/shared.md) property to access the framework’s singleton that it shares between your app and the app’s extension. Because the download manager is a shared resource, prevent race conditions by using the `withExclusiveControl(_:)` and [`withExclusiveControl(beforeDate:perform:)`](./badownloadmanager/withexclusivecontrol%28beforedate,perform%29.md) methods to assume absolute control of the manager before you schedule asset downloads or manipulate those already in the manager’s queue. To respond to asset download events and process concluded downloads, create a type that conforms to the [`BADownloadManagerDelegate`](./badownloadmanagerdelegate.md) protocol and assign an instance of it to the download manager’s [`delegate`](./badownloadmanager/delegate.md) property.
 
 The following example shows how to create an asset download, acquire exclusive control of the shared download manager, and then use the manager to schedule the download:
 
@@ -64,65 +69,66 @@ do {
 ## Topics
 
 ### Accessing the download manager
-- [class var shared: BADownloadManager](badownloadmanager/shared.md)
+- [class var shared: BADownloadManager](./badownloadmanager/shared.md)
   The download manager that both the app and the extension share.
 ### Managing downloads
-- [func scheduleDownload(BADownload) throws](badownloadmanager/scheduledownload(_:).md)
+- [func scheduleDownload(BADownload) throws](./badownloadmanager/scheduledownload%28_%29.md)
   Schedules an asset download to execute in the background at a nonspecific time in the future.
-- [func startForegroundDownload(BADownload) throws](badownloadmanager/startforegrounddownload(_:).md)
+- [func startForegroundDownload(BADownload) throws](./badownloadmanager/startforegrounddownload%28_%29.md)
   Schedules an asset download that executes immediately in the foreground.
-- [func cancel(BADownload) throws](badownloadmanager/cancel(_:).md)
+- [func cancel(BADownload) throws](./badownloadmanager/cancel%28_%29.md)
   Cancels an asset download.
 ### Monitoring downloads
-- [var delegate: (any BADownloadManagerDelegate)?](badownloadmanager/delegate.md)
+- [var delegate: (any BADownloadManagerDelegate)?](./badownloadmanager/delegate.md)
   The download manager’s delegate.
-- [protocol BADownloadManagerDelegate](badownloadmanagerdelegate.md)
+- [protocol BADownloadManagerDelegate](./badownloadmanagerdelegate.md)
   An interface for reacting to asset download events and processing concluded downloads.
 ### Fetching in-progress downloads
-- [func fetchCurrentDownloads() throws -> [BADownload]](badownloadmanager/fetchcurrentdownloads.md)
-- [func fetchCurrentDownloads(completionHandler: ([BADownload], (any Error)?) -> Void)](badownloadmanager/fetchcurrentdownloads(completionhandler:).md)
+- [func fetchCurrentDownloads() throws -> [BADownload]](./badownloadmanager/fetchcurrentdownloads%28%29.md)
+- [func fetchCurrentDownloads(completionHandler: ([BADownload], (any Error)?) -> Void)](./badownloadmanager/fetchcurrentdownloads%28completionhandler%29.md)
   Fetches the contents of the manager’s download queue.
 ### Synchronizing manager access
-- [func withExclusiveControl(beforeDate: Date, perform: (Bool, (any Error)?) -> Void)](badownloadmanager/withexclusivecontrol(beforedate:perform:).md)
+- [func withExclusiveControl(beforeDate: Date, perform: (Bool, (any Error)?) -> Void)](./badownloadmanager/withexclusivecontrol%28beforedate,perform%29.md)
 ### Instance Methods
-- [func withExclusiveControl<ReturnType>(() throws -> sending ReturnType) async throws -> sending ReturnType](badownloadmanager/withexclusivecontrol(_:)-1rf9w.md)
+- [func withExclusiveControl<ReturnType>(() throws -> sending ReturnType) async throws -> sending ReturnType](./badownloadmanager/withexclusivecontrol%28_%29-1rf9w.md)
   Attempts to acquire immediate, exclusive control over the download manager.
-- [func withExclusiveControl((Bool, (any Error)?) -> Void)](badownloadmanager/withexclusivecontrol(_:)-2ang9.md)
-- [func withExclusiveControl<ReturnType>(before: Date, () throws -> sending ReturnType) async throws -> sending ReturnType](badownloadmanager/withexclusivecontrol(before:_:).md)
+- [func withExclusiveControl((Bool, (any Error)?) -> Void)](./badownloadmanager/withexclusivecontrol%28_%29-2ang9.md)
+- [func withExclusiveControl<ReturnType>(before: Date, () throws -> sending ReturnType) async throws -> sending ReturnType](./badownloadmanager/withexclusivecontrol%28before,_%29.md)
   Attempts to acquire immediate, exclusive control over the download manager before the specified date.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Configuring an unmanaged Background Assets project](configuring-an-unmanaged-background-assets-project.md)
+### Unmanaged asset downloads
+- [Configuring an unmanaged Background Assets project](./configuring-an-unmanaged-background-assets-project.md)
   Manage and download individual assets yourself by configuring your app and extension targets.
-- [Downloading essential assets in the background](downloading-essential-assets-in-the-background.md)
+- [Downloading essential assets in the background](./downloading-essential-assets-in-the-background.md)
   Fetch the assets your app requires before its first launch using an app extension and the Background Assets framework.
-- [BAManifestURL](../bundleresources/information-property-list/bamanifesturl.md)
+- [BAManifestURL](../BundleResources/information-property-list/bamanifesturl.md)
   The location URL of the app’s manifest file that contains the names and sizes of assets.
-- [BAInitialDownloadRestrictions](../bundleresources/information-property-list/bainitialdownloadrestrictions.md)
+- [BAInitialDownloadRestrictions](../BundleResources/information-property-list/bainitialdownloadrestrictions.md)
   The restrictions that apply to the set of assets that download immediately after app installation.
-- [BAEssentialMaxInstallSize](../bundleresources/information-property-list/baessentialmaxinstallsize.md)
+- [BAEssentialMaxInstallSize](../BundleResources/information-property-list/baessentialmaxinstallsize.md)
   The combined, maximum size of the essential assets that the system downloads before it launches your app in bytes.
-- [BAMaxInstallSize](../bundleresources/information-property-list/bamaxinstallsize.md)
+- [BAMaxInstallSize](../BundleResources/information-property-list/bamaxinstallsize.md)
   The combined, maximum size, in bytes, of the non-essential assets that download immediately after app installation.
-- [protocol BADownloaderExtension](badownloaderextension-qwaw.md)
+- [protocol BADownloaderExtension](./badownloaderextension-qwaw.md)
   An interface for reacting to app life-cycle events and processing concluded asset downloads while your app isn’t running.
-- [protocol BADownloaderExtensionConfiguration](badownloaderextensionconfiguration.md)
-- [class BAURLDownload](baurldownload.md)
+- [protocol BADownloaderExtensionConfiguration](./badownloaderextensionconfiguration.md)
+- [class BAURLDownload](./baurldownload.md)
   An object that represents a remote asset to download.
-- [class BADownload](badownload.md)
+- [class BADownload](./badownload.md)
   An object that represents an in-progress or concluded asset download.
 
 

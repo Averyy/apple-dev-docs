@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: CarKey  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw value that corresponds to the specific feature of your vehicle.
 

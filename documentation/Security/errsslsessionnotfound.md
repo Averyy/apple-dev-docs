@@ -1,7 +1,8 @@
 # errSSLSessionNotFound
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An attempt to restore an unknown session failed.
 
@@ -18,6 +19,10 @@ An attempt to restore an unknown session failed.
 
 ```swift
 var errSSLSessionNotFound: OSStatus { get }
+```
+
+```c
+errSSLSessionNotFound
 ```
 
 

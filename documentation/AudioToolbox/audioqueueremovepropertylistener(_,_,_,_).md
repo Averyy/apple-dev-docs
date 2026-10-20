@@ -1,7 +1,8 @@
 # AudioQueueRemovePropertyListener(_:_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Removes a property listener callback from an audio queue.
 
@@ -19,6 +20,10 @@ Removes a property listener callback from an audio queue.
 func AudioQueueRemovePropertyListener(_ inAQ: AudioQueueRef, _ inID: AudioQueuePropertyID, _ inProc: AudioQueuePropertyListenerProc, _ inUserData: UnsafeMutableRawPointer?) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioQueueRemovePropertyListener(AudioQueueRef inAQ, AudioQueuePropertyID inID, AudioQueuePropertyListenerProc inProc, void *inUserData);
+```
+
 #### Return Value
 
 A result code. See Result Codes.
@@ -26,19 +31,20 @@ A result code. See Result Codes.
 ## Parameters
 
 - `inAQ`: The audio queue that you want to remove a property listener callback from.
-- `inID`: The ID of the property whose changes you no longer want to respond to. See [`AudioQueuePropertyID`](audioqueuepropertyid.md).
+- `inID`: The ID of the property whose changes you no longer want to respond to. See [`AudioQueuePropertyID`](./audioqueuepropertyid.md).
 - `inProc`: The callback to be removed.
-- `inUserData`: The same custom data for the property listener callback that you passed when calling [`AudioQueueAddPropertyListener(_:_:_:_:)`](audioqueueaddpropertylistener(_:_:_:_:).md).
+- `inUserData`: The same custom data for the property listener callback that you passed when calling [`AudioQueueAddPropertyListener(_:_:_:_:)`](./audioqueueaddpropertylistener%28_,_,_,_%29.md).
 
 ## See Also
 
-- [func AudioQueueGetProperty(AudioQueueRef, AudioQueuePropertyID, UnsafeMutableRawPointer, UnsafeMutablePointer<UInt32>) -> OSStatus](audioqueuegetproperty(_:_:_:_:).md)
+### Manipulating Audio Queue Properties
+- [func AudioQueueGetProperty(AudioQueueRef, AudioQueuePropertyID, UnsafeMutableRawPointer, UnsafeMutablePointer<UInt32>) -> OSStatus](./audioqueuegetproperty%28_,_,_,_%29.md)
   Gets an audio queue property value.
-- [func AudioQueueSetProperty(AudioQueueRef, AudioQueuePropertyID, UnsafeRawPointer, UInt32) -> OSStatus](audioqueuesetproperty(_:_:_:_:).md)
+- [func AudioQueueSetProperty(AudioQueueRef, AudioQueuePropertyID, UnsafeRawPointer, UInt32) -> OSStatus](./audioqueuesetproperty%28_,_,_,_%29.md)
   Sets an audio queue property value.
-- [func AudioQueueGetPropertySize(AudioQueueRef, AudioQueuePropertyID, UnsafeMutablePointer<UInt32>) -> OSStatus](audioqueuegetpropertysize(_:_:_:).md)
+- [func AudioQueueGetPropertySize(AudioQueueRef, AudioQueuePropertyID, UnsafeMutablePointer<UInt32>) -> OSStatus](./audioqueuegetpropertysize%28_,_,_%29.md)
   Gets the size of the value of an audio queue property.
-- [func AudioQueueAddPropertyListener(AudioQueueRef, AudioQueuePropertyID, AudioQueuePropertyListenerProc, UnsafeMutableRawPointer?) -> OSStatus](audioqueueaddpropertylistener(_:_:_:_:).md)
+- [func AudioQueueAddPropertyListener(AudioQueueRef, AudioQueuePropertyID, AudioQueuePropertyListenerProc, UnsafeMutableRawPointer?) -> OSStatus](./audioqueueaddpropertylistener%28_,_,_,_%29.md)
   Adds a property listener callback to an audio queue.
 
 

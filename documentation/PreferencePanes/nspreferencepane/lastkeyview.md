@@ -1,7 +1,8 @@
 # lastKeyView
 
 **Framework**: Preference Panes  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The last view in the keyboard focus chain.
 
@@ -15,17 +16,22 @@ The last view in the keyboard focus chain.
 var lastKeyView: NSView? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSView * lastKeyView;
+```
+
 #### Discussion
 
 The last view can be set in the nib file by connecting a view to the receiver’s `_lastKeyView` outlet.
 
 ## See Also
 
-- [var firstKeyView: NSView?](nspreferencepane/firstkeyview.md)
+### Handling keyboard focus
+- [var firstKeyView: NSView?](./firstkeyview.md)
   The first view in the keyboard focus chain.
-- [var initialKeyView: NSView?](nspreferencepane/initialkeyview.md)
+- [var initialKeyView: NSView?](./initialkeyview.md)
   The view that should have keyboard focus when the pane is selected.
-- [var autoSaveTextFields: Bool](nspreferencepane/autosavetextfields.md)
+- [var autoSaveTextFields: Bool](./autosavetextfields.md)
   A Boolean value that indicates whether text fields save their values before changing preference panes.
 
 

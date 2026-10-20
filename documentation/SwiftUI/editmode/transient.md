@@ -1,7 +1,8 @@
 # EditMode.transient
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The view is in a temporary edit mode.
 
@@ -22,13 +23,14 @@ case transient
 
 The use of this state varies by platform and for different controls. As an example, SwiftUI might engage temporary edit mode over the duration of a swipe gesture.
 
-The [`isEditing`](editmode/isediting.md) property is `true` in this state.
+The [`isEditing`](./isediting.md) property is `true` in this state.
 
 ## See Also
 
-- [EditMode.active](editmode/active.md)
+### Getting edit modes
+- [EditMode.active](./active.md)
   The user can edit the view content.
-- [EditMode.inactive](editmode/inactive.md)
+- [EditMode.inactive](./inactive.md)
   The user can’t edit the view content.
 
 

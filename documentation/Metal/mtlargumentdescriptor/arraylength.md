@@ -1,7 +1,8 @@
 # arrayLength
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The length of an array argument.
 
@@ -19,21 +20,26 @@ The length of an array argument.
 var arrayLength: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger arrayLength;
+```
+
 #### Discussion
 
 For a nonarray argument, this value needs to be `0`.
 
 ## See Also
 
-- [var dataType: MTLDataType](mtlargumentdescriptor/datatype.md)
+### Setting the descriptor’s properties
+- [var dataType: MTLDataType](./datatype.md)
   The data type of the argument.
-- [var index: Int](mtlargumentdescriptor/index.md)
+- [var index: Int](./index.md)
   The index ID of the argument.
-- [var access: MTLBindingAccess](mtlargumentdescriptor/access.md)
+- [var access: MTLBindingAccess](./access.md)
   The access permissions of the argument.
-- [var constantBlockAlignment: Int](mtlargumentdescriptor/constantblockalignment.md)
+- [var constantBlockAlignment: Int](./constantblockalignment.md)
   The alignment of the constant block.
-- [var textureType: MTLTextureType](mtlargumentdescriptor/texturetype.md)
+- [var textureType: MTLTextureType](./texturetype.md)
   The texture type of a texture argument.
 
 

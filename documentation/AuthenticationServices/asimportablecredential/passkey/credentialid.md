@@ -1,7 +1,8 @@
 # credentialID
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The credential ID associated with this passkey.
 
@@ -20,15 +21,16 @@ var credentialID: Data
 
 ## See Also
 
-- [var relyingPartyIdentifier: String](asimportablecredential/passkey/relyingpartyidentifier.md)
+### Accessing passkey properties
+- [var relyingPartyIdentifier: String](./relyingpartyidentifier.md)
   The relying party identifier associated with the passkey.
-- [var userName: String](asimportablecredential/passkey/username.md)
+- [var userName: String](./username.md)
   The username associated with the passkey.
-- [var userDisplayName: String](asimportablecredential/passkey/userdisplayname.md)
+- [var userDisplayName: String](./userdisplayname.md)
   The human-readable name associated with the passkey.
-- [var userHandle: Data](asimportablecredential/passkey/userhandle.md)
+- [var userHandle: Data](./userhandle.md)
   The user handle associated with the passkey.
-- [var key: Data](asimportablecredential/passkey/key.md)
+- [var key: Data](./key.md)
   The private key associated with this passkey.
 
 

@@ -1,7 +1,8 @@
 # expirationHandler
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A block that the system calls when the available runtime for a background task is about to expire.
 
@@ -14,9 +15,13 @@ A block that the system calls when the available runtime for a background task i
 var expirationHandler: (() -> Void)? { get set }
 ```
 
+```objc
+@property (strong, nullable) void (^expirationHandler)();
+```
+
 ## Mentions
 
-- [Using background tasks](using-background-tasks.md)
+- [Using background tasks](../using-background-tasks.md)
 
 #### Discussion
 
@@ -24,9 +29,10 @@ To respond when your background task is about to expire, assign a block to this 
 
 ## See Also
 
-- [func setTaskCompletedWithSnapshot(Bool)](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md)
+### Completing the background task
+- [func setTaskCompletedWithSnapshot(Bool)](./settaskcompletedwithsnapshot%28_%29.md)
   Marks the task as complete and indicates whether the system should take a new snapshot of the app.
-- [func setTaskCompleted()](wkrefreshbackgroundtask/settaskcompleted.md)
+- [func setTaskCompleted()](./settaskcompleted%28%29.md)
   Marks the task as complete.
 
 

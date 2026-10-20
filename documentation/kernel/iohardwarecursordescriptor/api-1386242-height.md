@@ -1,7 +1,8 @@
 # height
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Maximum size of the cursor.
 
@@ -10,7 +11,7 @@ Maximum size of the cursor.
 
 ## Declaration
 
-```swift
+```c
 UInt32 height;
 ```
 

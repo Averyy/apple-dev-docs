@@ -1,7 +1,8 @@
 # numOfBlocks
 
 **Framework**: BlockStorageDeviceDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of blocks in this range.
 
@@ -10,13 +11,14 @@ The number of blocks in this range.
 
 ## Declaration
 
-```swift
+```c
 uint64_t numOfBlocks;
 ```
 
 ## See Also
 
-- [startBlock](blockrange/startblock.md)
+### Accessing Block Range Properties
+- [startBlock](./startblock.md)
   The address of the first block in this range.
 
 

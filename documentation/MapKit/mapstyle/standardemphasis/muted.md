@@ -1,7 +1,8 @@
 # muted
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A muted emphasis style, that deemphasizes the map’s imagery.
 
@@ -11,7 +12,7 @@ A muted emphasis style, that deemphasizes the map’s imagery.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -26,7 +27,8 @@ Use this style to highlight content you place on the map.
 
 ## See Also
 
-- [static var automatic: MapStyle.StandardEmphasis](mapstyle/standardemphasis/automatic.md)
+### Controlling the map’s emphasis
+- [static var automatic: MapStyle.StandardEmphasis](./automatic.md)
   The default level of emphasis.
 
 

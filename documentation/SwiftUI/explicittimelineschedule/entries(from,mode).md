@@ -1,7 +1,8 @@
 # entries(from:mode:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides the sequence of dates with which you initialized the schedule.
 
@@ -26,7 +27,7 @@ The sequence of dates that you provided at initialization.
 
 #### Discussion
 
-A [`TimelineView`](timelineview.md) that you create with a schedule calls this [`TimelineSchedule`](timelineschedule.md) method to ask the schedule when to update its content. The explicit timeline schedule implementation of this method returns the unmodified sequence of dates that you provided when you created the schedule with [`explicit(_:)`](timelineschedule/explicit(_:).md). As a result, this particular implementation ignores the `startDate` and `mode` parameters.
+A [`TimelineView`](../timelineview.md) that you create with a schedule calls this [`TimelineSchedule`](../timelineschedule.md) method to ask the schedule when to update its content. The explicit timeline schedule implementation of this method returns the unmodified sequence of dates that you provided when you created the schedule with [`explicit(_:)`](../timelineschedule/explicit%28_%29.md). As a result, this particular implementation ignores the `startDate` and `mode` parameters.
 
 ## Parameters
 

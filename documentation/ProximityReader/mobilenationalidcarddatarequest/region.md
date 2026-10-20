@@ -1,7 +1,8 @@
 # region
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The region of the document you’re requesting.
 
@@ -18,11 +19,12 @@ var region: Locale.Region
 
 ## See Also
 
-- [var retainedElements: [MobileNationalIDCardDataRequest.Element]](mobilenationalidcarddatarequest/retainedelements.md)
+### Configuring the request details
+- [var retainedElements: [MobileNationalIDCardDataRequest.Element]](./retainedelements.md)
   The document elements you’re requesting and intend to retain for an indefinite period of time.
-- [var nonRetainedElements: [MobileNationalIDCardDataRequest.Element]](mobilenationalidcarddatarequest/nonretainedelements.md)
+- [var nonRetainedElements: [MobileNationalIDCardDataRequest.Element]](./nonretainedelements.md)
   The document elements you’re requesting and intend to retain no longer than necessary to process the result in realtime.
-- [MobileNationalIDCardDataRequest.Element](mobilenationalidcarddatarequest/element.md)
+- [MobileNationalIDCardDataRequest.Element](./element.md)
   A type that represents an element you can request from a mobile national ID card.
 
 

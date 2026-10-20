@@ -1,10 +1,11 @@
 # init(connectionHandle:role:peerAddressType:peerAddress:connInterval:connLatency:supervisionTimeout:masterClockAccuracy:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

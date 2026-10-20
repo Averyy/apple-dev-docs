@@ -1,6 +1,7 @@
 # Providing metadata for xHE-AAC video soundtracks
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Ensure volume normalization by including metadata for loudness and dynamic range control.
 
@@ -10,7 +11,7 @@ Soundtracks that use xHE-AAC (Extended High-Efficiency Advanced Audio Codec) enc
 
 > **Note**: Refer to ISO/IEC 23003-4 for additional information about these metadata specifications.
 
-##### Configure Metadata for Content Generation
+##### Configure metadata for content generation
 
 The loudness and DRC metadata that you include in video content needs to fulfill the MPEG-D DRC requirements for the Basic DRC Metadata Profile, and always include the following values:
 
@@ -23,7 +24,7 @@ The loudness and DRC metadata that you include in video content needs to fulfill
 
 Measure anchor loudness of the dialog stem using the ITU-R BS.1770 standard because `methodValue` must reflect the actual anchor loudness of the content. Apply speech-gating to the full mix to obtain the anchor loudness value when only the full mix is available for measurement.
 
-Anchor loudness can be inaccurate when the speech detector can’t find much speech in the full mix. Monitor this situation by computing the speech activity, which is the duration of detected speech divided by the duration of the content. When speech activity is low, ignore this measurement because it can be inaccurate. Instead, derive the anchor loudness value from the program loudness value and other applicable measurements to model the value from statistics of a variety of content. See [`Adjusting anchor loudness`](adjusting-anchor-loudness.md) for additional information.
+Anchor loudness can be inaccurate when the speech detector can’t find much speech in the full mix. Monitor this situation by computing the speech activity, which is the duration of detected speech divided by the duration of the content. When speech activity is low, ignore this measurement because it can be inaccurate. Instead, derive the anchor loudness value from the program loudness value and other applicable measurements to model the value from statistics of a variety of content. See [Adjusting anchor loudness](./adjusting-anchor-loudness.md) for additional information.
 
 **DRC Metadata**
 
@@ -40,7 +41,7 @@ The DRC for `General Compression` can have several instances to accommodate vari
 
 > **Note**: Refer to ISO/IEC 23003-4:2020 Table 12 for additional information about these metadata specifications.
 
-##### Configure Metadata for Playback
+##### Configure metadata for playback
 
 Configure the MPEG-D DRC decoder for playback according to the specifications below. The configuration occurs completely or partially at the system level and those settings don’t appear at the API level.
 
@@ -93,23 +94,24 @@ User preferences can override DRC settings. The following table provides example
 
 ## See Also
 
-- [HTTP Live Streaming (HLS) authoring specification for Apple devices](hls-authoring-specification-for-apple-devices.md)
+### Specifications and other documents
+- [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md)
   Learn the requirements for live and on-demand audio and video content delivery using HLS.
-- [HLS for Apple Podcasts](hls-for-podcasts.md)
+- [HLS for Apple Podcasts](./hls-for-podcasts.md)
   Deliver HTTP Live Streaming (HLS) video-on-demand content to Apple Podcasts.
-- [Using content protection systems with HLS](using-content-protection-systems-with-hls.md)
+- [Using content protection systems with HLS](./using-content-protection-systems-with-hls.md)
   Adding encryption keys to media playlists
-- [About the Common Media Application Format with HTTP Live Streaming (HLS)](about-the-common-media-application-format-with-http-live-streaming-hls.md)
+- [About the Common Media Application Format with HTTP Live Streaming (HLS)](./about-the-common-media-application-format-with-http-live-streaming-hls.md)
   Learn the Common Media Application Format as it applies to HLS.
-- [Enabling Low-Latency HTTP Live Streaming (HLS)](enabling-low-latency-http-live-streaming-hls.md)
+- [Enabling Low-Latency HTTP Live Streaming (HLS)](./enabling-low-latency-http-live-streaming-hls.md)
   Add Low-Latency HLS to your content streams to maintain scalability.
-- [Links to additional specifications and videos](links-to-additional-specifications-and-videos.md)
+- [Links to additional specifications and videos](./links-to-additional-specifications-and-videos.md)
   Review additional specifications and documents.
-- [Videos about HLS](videos-about-hls.md)
+- [Videos about HLS](./videos-about-hls.md)
   Review informational videos about HTTP Live Streaming.
-- [Adjusting anchor loudness](adjusting-anchor-loudness.md)
+- [Adjusting anchor loudness](./adjusting-anchor-loudness.md)
   Adjust anchor loudness when measurements of speech-gated loudness for a full mix may be inaccurate, such as when speech activity is low.
-- [Providing JavaScript Object Notation (JSON) chapters](providing-javascript-object-notation-json-chapters.md)
+- [Providing JavaScript Object Notation (JSON) chapters](./providing-javascript-object-notation-json-chapters.md)
   Prepare JSON chapters for HTTP Live Streaming.
 
 

@@ -1,7 +1,8 @@
 # TabletopInteraction.AllowedDestinations.restricted(_:)
 
 **Framework**: TabletopKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Restricts the proposed destination to the given identifiers
 
@@ -16,7 +17,8 @@ case restricted([EquipmentIdentifier])
 
 ## See Also
 
-- [TabletopInteraction.AllowedDestinations.any](tabletopinteraction/alloweddestinations/any.md)
+### Destinations
+- [TabletopInteraction.AllowedDestinations.any](./any.md)
   Any equipment is allowed to be the proposed destination
 
 

@@ -1,7 +1,8 @@
 # AddressCategory
 
 **Framework**: MapKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The categories of address components that users can search for with an address filter.
 
@@ -10,7 +11,7 @@ The categories of address components that users can search for with an address f
 
 ## Declaration
 
-```swift
+```
 const AddressCategory: Readonly<{
     readonly Country: "Country";
     readonly AdministrativeArea: "AdministrativeArea";
@@ -26,42 +27,43 @@ type AddressCategory =
 ## Topics
 
 ### Category values
-- [AdministrativeArea](addresscategory/administrativearea.md)
+- [AdministrativeArea](./addresscategory/administrativearea.md)
   The primary administrative divisions of countries or regions.
-- [Country](addresscategory/country.md)
+- [Country](./addresscategory/country.md)
   Countries and regions.
-- [Locality](addresscategory/locality.md)
+- [Locality](./addresscategory/locality.md)
   Local administrative divisions, postal cities, and populated places.
-- [PostalCode](addresscategory/postalcode.md)
+- [PostalCode](./addresscategory/postalcode.md)
   An address code for mail sorting and delivery.
-- [SubAdministrativeArea](addresscategory/subadministrativearea.md)
+- [SubAdministrativeArea](./addresscategory/subadministrativearea.md)
   The secondary administrative divisions of countries or regions.
-- [SubLocality](addresscategory/sublocality.md)
+- [SubLocality](./addresscategory/sublocality.md)
   Local administrative subdivisions, postal city subdistricts, and neighborhoods.
 
 ## See Also
 
-- [const AnnotationCollisionMode](annotationcollisionmode.md)
+### Enumerations
+- [const AnnotationCollisionMode](./annotationcollisionmode.md)
   Constants that indicate the collision mode for an annotation.
-- [const AnnotationDisplayPriority](annotationdisplaypriority.md)
+- [const AnnotationDisplayPriority](./annotationdisplaypriority.md)
   Constants that indicate the priority for displaying annotations on the map.
-- [const ColorScheme](colorscheme.md)
+- [const ColorScheme](./colorscheme.md)
   Constants that indicate the color scheme of the map or a place detail.
-- [const DistanceUnitSystem](distanceunitsystem.md)
+- [const DistanceUnitSystem](./distanceunitsystem.md)
   Constants that indicate the system of measurement that displays on the map.
-- [const FeatureVisibility](featurevisibility.md)
+- [const FeatureVisibility](./featurevisibility.md)
   Constants indicating the visibility of different adaptive map features.
-- [const MapFeatureType](mapfeaturetype.md)
+- [const MapFeatureType](./mapfeaturetype.md)
   Values that describe the feature type of a point of interest.
-- [const MapLoadPriority](maploadpriority.md)
+- [const MapLoadPriority](./maploadpriority.md)
   Constants that prioritize the visibility of specific map features during map loading.
-- [const MapType](maptype.md)
+- [const MapType](./maptype.md)
   Constants representing the type of map to display.
-- [const PointOfInterestCategory](pointofinterestcategory.md)
+- [const PointOfInterestCategory](./pointofinterestcategory.md)
   Point-of-interest categories.
-- [const RegionPriority](regionpriority.md)
+- [const RegionPriority](./regionpriority.md)
   A value that indicates the importance of the configured region.
-- [const TransportType](transporttype.md)
+- [const TransportType](./transporttype.md)
   The modes of transportation.
 
 

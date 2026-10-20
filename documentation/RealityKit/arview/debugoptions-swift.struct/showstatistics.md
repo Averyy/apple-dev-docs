@@ -1,7 +1,8 @@
 # showStatistics
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Collect performance statistics and display them in the view.
 
@@ -20,17 +21,17 @@ static let showStatistics: ARView.DebugOptions
 
 ## Mentions
 
-- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+- [Rendering high-fidelity characters](../../rendering-high-fidelity-characters.md)
 
 #### Discussion
 
-Add this debug option to a view’s [`debugOptions`](arview/debugoptions-swift.property.md) option set to display a variety of resource utilization metrics, overlaid on the view. The statistics update in real time so you can examine how your app performs and what resources it consumes under different usage conditions.
+Add this debug option to a view’s [`debugOptions`](../debugoptions-swift.property.md) option set to display a variety of resource utilization metrics, overlaid on the view. The statistics update in real time so you can examine how your app performs and what resources it consumes under different usage conditions.
 
-![A screenshot of a RealityKit app running on an iPad, showing statistics in](/images/com.apple.RealityKit/ARView-DebugOptions-swift-struct-showStatistics-1@2x.png)
+![A screenshot of a RealityKit app running on an iPad, showing statistics in](https://developer.apple.com/tutorials/images/com.apple.RealityKit/ARView-DebugOptions-swift-struct-showStatistics-1@2x.png)
 
-For more information about how to use the data shown above and described below, see [`Improving the Performance of a RealityKit App`](improving-the-performance-of-a-realitykit-app.md).
+For more information about how to use the data shown above and described below, see [Improving the Performance of a RealityKit App](../../improving-the-performance-of-a-realitykit-app.md).
 
-##### Measure Time
+##### Measure time
 
 Items listed under the Frame CPU Time heading show how your app makes use of CPU time. The first item indicates frame rate, which directly impacts the quality of the user’s experience. The remaining items indicate average time in milliseconds per frame that the CPU spends performing certain tasks, as described below.
 
@@ -42,7 +43,7 @@ Items listed under the Frame CPU Time heading show how your app makes use of CPU
 - **Network**: Time spent sending and receiving data. The creation and processing of network data is part of the ECS time.
 - **Animation**: Time spent managing animations. Some animation tasks occur during component updates, so they contribute to the ECS time instead.
 
-##### Measure Geometry
+##### Measure geometry
 
 Items under the Scene Mesh Stats heading help you optimize your content. These statistics help you to estimate the complexity of your scene.
 
@@ -51,7 +52,7 @@ Items under the Scene Mesh Stats heading help you optimize your content. These s
 - **Triangles Submitted**: The number of triangles submitted to the GPU on each frame.
 - **Vertices Submitted**: The number of vertices submitted to the GPU on each frame.
 
-##### Measure Memory
+##### Measure memory
 
 The items under the App Memory Usage heading help you understand how much memory your app uses.
 
@@ -60,19 +61,20 @@ The items under the App Memory Usage heading help you understand how much memory
 
 ## See Also
 
-- [static let none: ARView.DebugOptions](arview/debugoptions-swift.struct/none.md)
+### Configuring debug options
+- [static let none: ARView.DebugOptions](./none.md)
   Disable all debugging overlays.
-- [static let showPhysics: ARView.DebugOptions](arview/debugoptions-swift.struct/showphysics.md)
+- [static let showPhysics: ARView.DebugOptions](./showphysics.md)
   Draw visualizations for collision objects and rigid bodies.
-- [static let showAnchorOrigins: ARView.DebugOptions](arview/debugoptions-swift.struct/showanchororigins.md)
+- [static let showAnchorOrigins: ARView.DebugOptions](./showanchororigins.md)
   Display anchor origins.
-- [static let showAnchorGeometry: ARView.DebugOptions](arview/debugoptions-swift.struct/showanchorgeometry.md)
+- [static let showAnchorGeometry: ARView.DebugOptions](./showanchorgeometry.md)
   Display anchor geometry.
-- [static let showWorldOrigin: ARView.DebugOptions](arview/debugoptions-swift.struct/showworldorigin.md)
+- [static let showWorldOrigin: ARView.DebugOptions](./showworldorigin.md)
   Display a coordinate axis indicating the position and orientation of the AR world coordinate system.
-- [static let showFeaturePoints: ARView.DebugOptions](arview/debugoptions-swift.struct/showfeaturepoints.md)
+- [static let showFeaturePoints: ARView.DebugOptions](./showfeaturepoints.md)
   Display a point cloud showing intermediate results of the scene analysis used to track device position.
-- [static let showSceneUnderstanding: ARView.DebugOptions](arview/debugoptions-swift.struct/showsceneunderstanding.md)
+- [static let showSceneUnderstanding: ARView.DebugOptions](./showsceneunderstanding.md)
   Display the depth-colored wireframe for scene-understanding meshes.
 
 

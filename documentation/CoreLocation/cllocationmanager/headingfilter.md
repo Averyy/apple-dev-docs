@@ -1,7 +1,8 @@
 # headingFilter
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum angular change in degrees required to generate new heading events.
 
@@ -18,27 +19,32 @@ The minimum angular change in degrees required to generate new heading events.
 var headingFilter: CLLocationDegrees { get set }
 ```
 
+```objc
+@property (nonatomic, assign) CLLocationDegrees headingFilter;
+```
+
 #### Discussion
 
-The angular distance is measured relative to the last delivered heading event. Use the value [`kCLHeadingFilterNone`](kclheadingfilternone.md) to be notified of all movements. The default value of this property is `1` degree.
+The angular distance is measured relative to the last delivered heading event. Use the value [`kCLHeadingFilterNone`](../kclheadingfilternone.md) to be notified of all movements. The default value of this property is `1` degree.
 
 ## See Also
 
-- [func startUpdatingHeading()](cllocationmanager/startupdatingheading.md)
+### Running the heading service
+- [func startUpdatingHeading()](./startupdatingheading%28%29.md)
   Starts the generation of updates that report the user’s current heading.
-- [func stopUpdatingHeading()](cllocationmanager/stopupdatingheading.md)
+- [func stopUpdatingHeading()](./stopupdatingheading%28%29.md)
   Stops the generation of heading updates.
-- [func dismissHeadingCalibrationDisplay()](cllocationmanager/dismissheadingcalibrationdisplay.md)
+- [func dismissHeadingCalibrationDisplay()](./dismissheadingcalibrationdisplay%28%29.md)
   Dismisses the heading calibration view from the screen immediately.
-- [let kCLHeadingFilterNone: CLLocationDegrees](kclheadingfilternone.md)
+- [let kCLHeadingFilterNone: CLLocationDegrees](../kclheadingfilternone.md)
   A constant indicating that all header values should be reported.
-- [typealias CLLocationDegrees](cllocationdegrees.md)
+- [typealias CLLocationDegrees](../cllocationdegrees.md)
   A latitude or longitude value specified in degrees.
-- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
+- [var headingBody: (any CLBodyIdentifiable)?](./headingbody.md)
   A physical body or view that defines the reference orientation for heading calculations.
-- [var headingOrientation: CLDeviceOrientation](cllocationmanager/headingorientation.md)
+- [var headingOrientation: CLDeviceOrientation](./headingorientation.md)
   The device orientation to use when computing heading values.
-- [enum CLDeviceOrientation](cldeviceorientation.md)
+- [enum CLDeviceOrientation](../cldeviceorientation.md)
   Constants indicating the physical orientation of the device.
 
 

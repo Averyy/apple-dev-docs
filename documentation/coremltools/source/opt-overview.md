@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/opt-overview.html
 
 # Overview
 
-**
-
-- [.md](../_sources/source/opt-overview.md)
-- **
-
-.pdf
-
-**
-
-# Overview
-
- Table of contents 
-
-## Contents
-
-# Overview
-
 This section covers optimization techniques that help you get a smaller model by compressing
 its weights and activations.
 In particular, it will go over APIs for taking a model from
@@ -143,5 +126,3 @@ for an introduction to the optimizations, and the presentation
 in [WWDC 2024](https://developer.apple.com/videos/play/wwdc2024/10159/) for an overview
 of new features available from `iOS18`/`macOS15` and optimizations for
 large transformer models.
-
-** Contents

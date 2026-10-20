@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: SwiftUI  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Access the value of the attribute to constrain.
 
@@ -20,9 +21,19 @@ Access the value of the attribute to constrain.
 subscript(key: Attribute.Type) -> Attribute.Value? { get set }
 ```
 
+**Other overloads**:
+
+```swift
+subscript<K>(key: K.Type) -> K.Value? where K : AttributedStringKey, K.Value : Sendable { mutating get }
+```
+
+```swift
+subscript<S>(scope: S.Type) -> AttributedTextFormatting.AttributeContainerProxy<Scope, Attribute>.Scoped<S> where S : AttributeScope { get set }
+```
+
 #### Overview
 
-For details on how attribute value constraining works, refer to [`constrain(_:)`](attributedtextvalueconstraint/constrain(_:).md).
+For details on how attribute value constraining works, refer to [`constrain(_:)`](../../attributedtextvalueconstraint/constrain%28_%29.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # bar(onEdge:extent:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 27.1+
@@ -18,11 +19,12 @@ static func bar(onEdge edge: NSDirectionalRectEdge, extent: CGFloat) -> UIView.L
 
 ## See Also
 
-- [UIView.LayoutRegion](uiview/layoutregion.md)
-- [static func bar(onEdge: UIRectEdge, extent: CGFloat) -> UIView.LayoutRegion](uiview/layoutregion/bar(onedge:extent:)-8rmhq.md)
-- [func directionalEdgeInsets(for: UIView.LayoutRegion) -> NSDirectionalEdgeInsets](uiview/directionaledgeinsets(for:).md)
-- [func edgeInsets(for: UIView.LayoutRegion) -> UIEdgeInsets](uiview/edgeinsets(for:).md)
-- [func layoutGuide(for: UIView.LayoutRegion) -> UILayoutGuide](uiview/layoutguide(for:).md)
+### Accessing insets and layout guides
+- [UIView.LayoutRegion](../layoutregion.md)
+- [static func bar(onEdge: UIRectEdge, extent: CGFloat) -> UIView.LayoutRegion](./bar%28onedge,extent%29-8rmhq.md)
+- [func directionalEdgeInsets(for: UIView.LayoutRegion) -> NSDirectionalEdgeInsets](../directionaledgeinsets%28for%29.md)
+- [func edgeInsets(for: UIView.LayoutRegion) -> UIEdgeInsets](../edgeinsets%28for%29.md)
+- [func layoutGuide(for: UIView.LayoutRegion) -> UILayoutGuide](../layoutguide%28for%29.md)
 
 
 ---

@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The scale at which to render the text.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The scale at which to render the text.
 var scaleFactor: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float scaleFactor;
+```
+
 ## See Also
 
-- [var text: NSAttributedString](ciattributedtextimagegenerator/text.md)
+### Instance Properties
+- [var text: NSAttributedString](./text.md)
   The text to render.
-- [var padding: Float](ciattributedtextimagegenerator/padding.md)
+- [var padding: Float](./padding.md)
 
 
 ---

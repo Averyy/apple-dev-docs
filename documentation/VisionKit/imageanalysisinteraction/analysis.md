@@ -1,7 +1,8 @@
 # analysis
 
 **Framework**: VisionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of analyzing an image for items that people can interact with.
 
@@ -20,19 +21,20 @@ final var analysis: ImageAnalysis? { get set }
 
 ## Mentions
 
-- [Enabling Live Text interactions with images](enabling-live-text-interactions-with-images.md)
+- [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
 ## See Also
 
-- [var delegate: (any ImageAnalysisInteractionDelegate)?](imageanalysisinteraction/delegate.md)
+### Configuring an image interaction
+- [var delegate: (any ImageAnalysisInteractionDelegate)?](./delegate.md)
   The delegate that handles the interaction callbacks.
-- [var view: UIView?](imageanalysisinteraction/view.md)
+- [var view: UIView?](./view.md)
   The view that uses this interaction.
-- [var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/preferredinteractiontypes.md)
+- [var preferredInteractionTypes: ImageAnalysisInteraction.InteractionTypes](./preferredinteractiontypes.md)
   The types of interactions that people can perform with the image.
-- [ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/interactiontypes.md)
+- [ImageAnalysisInteraction.InteractionTypes](./interactiontypes.md)
   The types of interactions that people can perform with an image.
-- [var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes](imageanalysisinteraction/activeinteractiontypes.md)
+- [var activeInteractionTypes: ImageAnalysisInteraction.InteractionTypes](./activeinteractiontypes.md)
   The types of interactions that a person actively performs.
 
 

@@ -6,35 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn.html
 
 # Neural Networks
 
-**
-
-- [.rst](../_sources/python/nn.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Neural Networks
-
- Table of contents 
-
-## Contents
-
-# Neural Networks
-
 Writing arbitrarily complex neural networks in MLX can be done using only
-[mlx.core.array](_autosummary/mlx.core.array.html#mlx.core.array) and [mlx.core.value_and_grad()](_autosummary/mlx.core.value_and_grad.html#mlx.core.value_and_grad). However, this requires the
+[mlx.core.array](_autosummary/mlx.core.array.md#mlx.core.array) and [mlx.core.value_and_grad()](_autosummary/mlx.core.value_and_grad.md#mlx.core.value_and_grad). However, this requires the
 user to write again and again the same simple neural network operations as well
 as handle all the parameter state and initialization manually and explicitly.
 
@@ -93,30 +66,30 @@ loss_and_grad = nn.value_and_grad(mlp, l2_loss)
 
 ## The Module Class
 
-The workhorse of any neural network library is the [Module](nn/module.html#mlx.nn.Module) class. In
-MLX the [Module](nn/module.html#mlx.nn.Module) class is a container of [mlx.core.array](_autosummary/mlx.core.array.html#mlx.core.array) or
-[Module](nn/module.html#mlx.nn.Module) instances. Its main function is to provide a way to
+The workhorse of any neural network library is the [Module](nn/module.md#mlx.nn.Module) class. In
+MLX the [Module](nn/module.md#mlx.nn.Module) class is a container of [mlx.core.array](_autosummary/mlx.core.array.md#mlx.core.array) or
+[Module](nn/module.md#mlx.nn.Module) instances. Its main function is to provide a way to
 recursively **access** and **update** its parameters and those of its
 submodules.
 
 ### Parameters
 
-A parameter of a module is any public member of type [mlx.core.array](_autosummary/mlx.core.array.html#mlx.core.array) (its
+A parameter of a module is any public member of type [mlx.core.array](_autosummary/mlx.core.array.md#mlx.core.array) (its
 name should not start with `_`). It can be arbitrarily nested in other
-[Module](nn/module.html#mlx.nn.Module) instances or lists and dictionaries.
+[Module](nn/module.md#mlx.nn.Module) instances or lists and dictionaries.
 
-[Module.parameters()](nn/_autosummary/mlx.nn.Module.parameters.html#mlx.nn.Module.parameters) can be used to extract a nested dictionary with all
+[Module.parameters()](nn/_autosummary/mlx.nn.Module.parameters.md#mlx.nn.Module.parameters) can be used to extract a nested dictionary with all
 the parameters of a module and its submodules.
 
-A [Module](nn/module.html#mlx.nn.Module) can also keep track of “frozen” parameters. See the
-[Module.freeze()](nn/_autosummary/mlx.nn.Module.freeze.html#mlx.nn.Module.freeze) method for more details. [mlx.nn.value_and_grad()](_autosummary/mlx.nn.value_and_grad.html#mlx.nn.value_and_grad)
+A [Module](nn/module.md#mlx.nn.Module) can also keep track of “frozen” parameters. See the
+[Module.freeze()](nn/_autosummary/mlx.nn.Module.freeze.md#mlx.nn.Module.freeze) method for more details. [mlx.nn.value_and_grad()](_autosummary/mlx.nn.value_and_grad.md#mlx.nn.value_and_grad)
 the gradients returned will be with respect to these trainable parameters.
 
 ### Updating the Parameters
 
 MLX modules allow accessing and updating individual parameters. However, most
 times we need to update large subsets of a module’s parameters. This action is
-performed by [Module.update()](nn/_autosummary/mlx.nn.Module.update.html#mlx.nn.Module.update).
+performed by [Module.update()](nn/_autosummary/mlx.nn.Module.update.md#mlx.nn.Module.update).
 
 ### Inspecting Modules
 
@@ -137,16 +110,16 @@ MLP(
 )
 ```
 
-To get more detailed information on the arrays in a [Module](nn/module.html#mlx.nn.Module) you can use
-[mlx.utils.tree_map()](_autosummary/mlx.utils.tree_map.html#mlx.utils.tree_map) on the parameters. For example, to see the shapes of
-all the parameters in a [Module](nn/module.html#mlx.nn.Module) do:
+To get more detailed information on the arrays in a [Module](nn/module.md#mlx.nn.Module) you can use
+[mlx.utils.tree_map()](_autosummary/mlx.utils.tree_map.md#mlx.utils.tree_map) on the parameters. For example, to see the shapes of
+all the parameters in a [Module](nn/module.md#mlx.nn.Module) do:
 
 ```
 from mlx.utils import tree_map
 shapes = tree_map(lambda p: p.shape, mlp.parameters())
 ```
 
-As another example, you can count the number of parameters in a [Module](nn/module.html#mlx.nn.Module)
+As another example, you can count the number of parameters in a [Module](nn/module.md#mlx.nn.Module)
 with:
 
 ```
@@ -156,8 +129,8 @@ num_params = sum(v.size for _, v in tree_flatten(mlp.parameters()))
 
 ## Value and Grad
 
-Using a [Module](nn/module.html#mlx.nn.Module) does not preclude using MLX’s high order function
-transformations ([mlx.core.value_and_grad()](_autosummary/mlx.core.value_and_grad.html#mlx.core.value_and_grad), [mlx.core.grad()](_autosummary/mlx.core.grad.html#mlx.core.grad), etc.). However,
+Using a [Module](nn/module.md#mlx.nn.Module) does not preclude using MLX’s high order function
+transformations ([mlx.core.value_and_grad()](_autosummary/mlx.core.value_and_grad.md#mlx.core.value_and_grad), [mlx.core.grad()](_autosummary/mlx.core.grad.md#mlx.core.grad), etc.). However,
 these function transformations assume pure functions, namely the parameters
 should be passed as an argument to the function being transformed.
 
@@ -173,22 +146,20 @@ def f(params, other_inputs):
 f(model.trainable_parameters(), mx.zeros((10,)))
 ```
 
-However, [mlx.nn.value_and_grad()](_autosummary/mlx.nn.value_and_grad.html#mlx.nn.value_and_grad) provides precisely this pattern and only
+However, [mlx.nn.value_and_grad()](_autosummary/mlx.nn.value_and_grad.md#mlx.nn.value_and_grad) provides precisely this pattern and only
 computes the gradients with respect to the trainable parameters of the model.
 
 In detail:
 
-- it wraps the passed function with a function that calls [Module.update()](nn/_autosummary/mlx.nn.Module.update.html#mlx.nn.Module.update)
+- it wraps the passed function with a function that calls [Module.update()](nn/_autosummary/mlx.nn.Module.update.md#mlx.nn.Module.update)
 to make sure the model is using the provided parameters.
-- it calls [mlx.core.value_and_grad()](_autosummary/mlx.core.value_and_grad.html#mlx.core.value_and_grad) to transform the function into a function
+- it calls [mlx.core.value_and_grad()](_autosummary/mlx.core.value_and_grad.md#mlx.core.value_and_grad) to transform the function into a function
 that also computes the gradients with respect to the passed parameters.
 - it wraps the returned function with a function that passes the trainable
 parameters as the first argument to the function returned by
-[mlx.core.value_and_grad()](_autosummary/mlx.core.value_and_grad.html#mlx.core.value_and_grad)
+[mlx.core.value_and_grad()](_autosummary/mlx.core.value_and_grad.md#mlx.core.value_and_grad)
 
-| value_and_grad(model, fn) | Transform the passed functionfnto a function that computes the gradients offnwrt the model's trainable parameters and also its value. |
+| [value_and_grad](_autosummary/mlx.nn.value_and_grad.md#mlx.nn.value_and_grad)(model, fn) | Transform the passed function `fn` to a function that computes the gradients of `fn` wrt the model's trainable parameters and also its value. |
 | --- | --- |
-| quantize(model[, group_size, bits, mode, ...]) | Quantize the sub-modules of a module according to a predicate. |
-| average_gradients(gradients[, group, ...]) | Average the gradients across the distributed processes in the passed group. |
-
-** Contents
+| [quantize](_autosummary/mlx.nn.quantize.md#mlx.nn.quantize)(model[, group_size, bits, mode, ...]) | Quantize the sub-modules of a module according to a predicate. |
+| [average_gradients](_autosummary/mlx.nn.average_gradients.md#mlx.nn.average_gradients)(gradients[, group, ...]) | Average the gradients across the distributed processes in the passed group. |

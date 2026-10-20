@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 2.0+
@@ -20,9 +21,10 @@ init(rawValue: UInt)
 
 ## See Also
 
-- [static var reverse: NSAttributedString.EnumerationOptions](nsattributedstring/enumerationoptions/reverse.md)
+### Creating an enumeration option
+- [static var reverse: NSAttributedString.EnumerationOptions](./reverse.md)
   Causes the enumeration to occur in reverse.
-- [static var longestEffectiveRangeNotRequired: NSAttributedString.EnumerationOptions](nsattributedstring/enumerationoptions/longesteffectiverangenotrequired.md)
+- [static var longestEffectiveRangeNotRequired: NSAttributedString.EnumerationOptions](./longesteffectiverangenotrequired.md)
   If `NSAttributedStringEnumerationLongestEffectiveRangeNotRequired` option is supplied, then the longest effective range computation is not performed; the blocks may be invoked with consecutive attribute runs that have the same value.
 
 

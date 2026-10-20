@@ -1,7 +1,8 @@
 # WindowPlacement
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type which represents a preferred size and position for a window.
 
@@ -17,7 +18,7 @@ struct WindowPlacement
 
 #### Overview
 
-When using the [`defaultWindowPlacement(_:)`](scene/defaultwindowplacement(_:).md) modifier, you return an instance of a `WindowPlacement` in the closure you provide.
+When using the [`defaultWindowPlacement(_:)`](./scene/defaultwindowplacement%28_%29.md) modifier, you return an instance of a `WindowPlacement` in the closure you provide.
 
 When constructing a window placement, many initial parameters are optional. Any value not specified will fall back to the scene’s default behavior and configuration for sizing and positioning it’s windows.
 
@@ -41,46 +42,47 @@ Window("Status", id: "status") {
 ## Topics
 
 ### Structures
-- [WindowPlacement.Position](windowplacement/position.md)
+- [WindowPlacement.Position](./windowplacement/position.md)
   A semantic or positional value for the location of a window.
 ### Initializers
-- [init(WindowPlacement.Position?)](windowplacement/init(_:).md)
+- [init(WindowPlacement.Position?)](./windowplacement/init%28_%29.md)
   Creates a new window placement with an optional position.
-- [init(WindowPlacement.Position?, size3D: Size3D?)](windowplacement/init(_:size3d:).md)
+- [init(WindowPlacement.Position?, size3D: Size3D?)](./windowplacement/init%28_,size3d%29.md)
   Creates a new window placement with an optional position and 3D size. Depth is ignored on scenes that don’t support it.
-- [init(_:size:)](windowplacement/init(_:size:).md)
+- [init(_:size:)](./windowplacement/init%28_,size%29.md)
   Creates a new window placement with an absolute position and optional size.
-- [init(UnitPoint, width: CGFloat?, height: CGFloat?)](windowplacement/init(_:width:height:).md)
+- [init(UnitPoint, width: CGFloat?, height: CGFloat?)](./windowplacement/init%28_,width,height%29.md)
   Creates a new window placement with a display-relative position, with an optional width and height.
-- [init(WindowPlacement.Position?, width: CGFloat?, height: CGFloat?, depth: CGFloat?)](windowplacement/init(_:width:height:depth:).md)
+- [init(WindowPlacement.Position?, width: CGFloat?, height: CGFloat?, depth: CGFloat?)](./windowplacement/init%28_,width,height,depth%29.md)
   Creates a new window placement with an optional position and 3D size. Depth is ignored on scenes or platforms that don’t support it.
-- [init(x: CGFloat?, y: CGFloat?, width: CGFloat?, height: CGFloat?)](windowplacement/init(x:y:width:height:).md)
+- [init(x: CGFloat?, y: CGFloat?, width: CGFloat?, height: CGFloat?)](./windowplacement/init%28x,y,width,height%29.md)
   Creates a new window placement with an optional position and size.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [func defaultPosition(UnitPoint) -> some Scene](scene/defaultposition(_:).md)
+### Positioning a window
+- [func defaultPosition(UnitPoint) -> some Scene](./scene/defaultposition%28_%29.md)
   Sets a default position for a window.
-- [struct WindowLevel](windowlevel.md)
+- [struct WindowLevel](./windowlevel.md)
   The level of a window.
-- [func windowLevel(WindowLevel) -> some Scene](scene/windowlevel(_:).md)
+- [func windowLevel(WindowLevel) -> some Scene](./scene/windowlevel%28_%29.md)
   Sets the window level of this scene.
-- [struct WindowLayoutRoot](windowlayoutroot.md)
+- [struct WindowLayoutRoot](./windowlayoutroot.md)
   A proxy which represents the root contents of a window.
-- [func defaultWindowPlacement((WindowLayoutRoot, WindowPlacementContext) -> WindowPlacement) -> some Scene](scene/defaultwindowplacement(_:).md)
+- [func defaultWindowPlacement((WindowLayoutRoot, WindowPlacementContext) -> WindowPlacement) -> some Scene](./scene/defaultwindowplacement%28_%29.md)
   Defines a function used for determining the default placement of windows.
-- [func windowIdealPlacement((WindowLayoutRoot, WindowPlacementContext) -> WindowPlacement) -> some Scene](scene/windowidealplacement(_:).md)
+- [func windowIdealPlacement((WindowLayoutRoot, WindowPlacementContext) -> WindowPlacement) -> some Scene](./scene/windowidealplacement%28_%29.md)
   Provides a function which determines a placement to use when windows of a scene zoom.
-- [struct WindowPlacementContext](windowplacementcontext.md)
+- [struct WindowPlacementContext](./windowplacementcontext.md)
   A type which represents contextual information used for sizing and positioning windows.
-- [struct WindowProxy](windowproxy.md)
+- [struct WindowProxy](./windowproxy.md)
   The proxy for an open window in the app.
-- [struct DisplayProxy](displayproxy.md)
+- [struct DisplayProxy](./displayproxy.md)
   A type which provides information about display hardware.
 
 

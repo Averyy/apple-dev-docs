@@ -1,7 +1,8 @@
 # contact
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A displayable CNContact representing the blocked user.
 
@@ -18,6 +19,10 @@ A displayable CNContact representing the blocked user.
 ```swift
 @NSCopying
 var contact: CNContact { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) CNContact * contact;
 ```
 
 #### Discussion

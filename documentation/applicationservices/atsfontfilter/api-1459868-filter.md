@@ -1,7 +1,8 @@
 # filter
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var filter: ATSFontFilter.__Unnamed_union_filter
+```
+
+```c
+union filter;
 ```
 
 

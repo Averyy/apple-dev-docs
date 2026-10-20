@@ -1,7 +1,8 @@
 # beatsPerMinute
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tempo of the song in beats per minute.
 
@@ -26,9 +27,10 @@ This value may be nil until enough audio has been analyzed.
 
 ## See Also
 
-- [let bars: [CMTime]](rhythmresult/bars.md)
+### Types of rhythm results
+- [let bars: [CMTime]](./bars.md)
   The start time of each bar. A bar is a musical unit typically containing several beats.
-- [let beats: [CMTime]](rhythmresult/beats.md)
+- [let beats: [CMTime]](./beats.md)
   The timestamp of each detected beat.
 
 

@@ -1,7 +1,8 @@
 # makeRenderPipelineState(descriptor:dynamicLinkingDescriptor:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a render pipeline state from the archive with a render descriptor and a dynamic linking descriptor.
 

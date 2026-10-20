@@ -1,7 +1,8 @@
 # MTLAttributeFormat.ushort2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A two-component vector with 16-bit, unsigned integer values.
 
@@ -19,21 +20,26 @@ A two-component vector with 16-bit, unsigned integer values.
 case ushort2
 ```
 
+```c
+MTLAttributeFormatUShort2
+```
+
 ## See Also
 
-- [MTLAttributeFormat.short](mtlattributeformat/short.md)
+### 16-bit integer formats
+- [MTLAttributeFormat.short](./short.md)
   A 16-bit, signed integer value.
-- [MTLAttributeFormat.short2](mtlattributeformat/short2.md)
+- [MTLAttributeFormat.short2](./short2.md)
   A two-component vector with 16-bit, signed integer values.
-- [MTLAttributeFormat.short3](mtlattributeformat/short3.md)
+- [MTLAttributeFormat.short3](./short3.md)
   A three-component vector with 16-bit, signed integer values.
-- [MTLAttributeFormat.short4](mtlattributeformat/short4.md)
+- [MTLAttributeFormat.short4](./short4.md)
   A four-component vector with 16-bit, signed integer values.
-- [MTLAttributeFormat.ushort](mtlattributeformat/ushort.md)
+- [MTLAttributeFormat.ushort](./ushort.md)
   A 16-bit, unsigned integer value.
-- [MTLAttributeFormat.ushort3](mtlattributeformat/ushort3.md)
+- [MTLAttributeFormat.ushort3](./ushort3.md)
   A three-component vector with 16-bit, unsigned integer values.
-- [MTLAttributeFormat.ushort4](mtlattributeformat/ushort4.md)
+- [MTLAttributeFormat.ushort4](./ushort4.md)
   A four-component vector with 16-bit, unsigned integer values.
 
 

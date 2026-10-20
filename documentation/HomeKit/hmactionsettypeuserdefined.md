@@ -1,7 +1,8 @@
 # HMActionSetTypeUserDefined
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies a user-defined action set.
 
@@ -17,6 +18,10 @@ Specifies a user-defined action set.
 
 ```swift
 let HMActionSetTypeUserDefined: String
+```
+
+```c
+extern NSString * const HMActionSetTypeUserDefined;
 ```
 
 

@@ -1,7 +1,8 @@
 # isReadyToSendData
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this preview sender is ready to send data.
 

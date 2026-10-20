@@ -1,7 +1,8 @@
 # init(rawString:)
 
 **Framework**: MailKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 init(rawString: String)
+```
+
+```objc
+- (instancetype) initWithRawString:(NSString *) rawString;
 ```
 
 

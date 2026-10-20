@@ -2,6 +2,7 @@
 
 **Framework**: ContactProvider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Marks a sync anchor of changed contact items as completed.
@@ -23,13 +24,14 @@ A change enumeration can resume in the future, continuing from this sync anchor.
 ## Parameters
 
 - `syncAnchor`: The `ContactItemSyncAnchor` where the next change enumeration should start from.
-- `moreComing`: If `true`, the enumerator receives another call to [`enumerateChanges(startingAt:for:)`](contactitemenumerator/enumeratechanges(startingat:for:).md).
+- `moreComing`: If `true`, the enumerator receives another call to [`enumerateChanges(startingAt:for:)`](../contactitemenumerator/enumeratechanges%28startingat,for%29.md).
 
 ## See Also
 
-- [struct ContactItemSyncAnchor](contactitemsyncanchor.md)
+### Ending enumeration
+- [struct ContactItemSyncAnchor](../contactitemsyncanchor.md)
   A snapshot point into enumerating changed contact items.
-- [func didFinishEnumeratingChangesWithError(any Error)](contactitemchangeobserver/didfinishenumeratingchangeswitherror(_:).md)
+- [func didFinishEnumeratingChangesWithError(any Error)](./didfinishenumeratingchangeswitherror%28_%29.md)
   Finishes the change enumeration with an error, indicating failure, to the observer.
 
 

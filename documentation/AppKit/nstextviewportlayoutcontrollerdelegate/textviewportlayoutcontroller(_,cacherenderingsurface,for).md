@@ -1,7 +1,8 @@
 # textViewportLayoutController(_:cacheRenderingSurface:for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to cache a rendering surface for later retrieval.
 
@@ -12,6 +13,10 @@ Asks the delegate to cache a rendering surface for later retrieval.
 
 ```swift
 optional func textViewportLayoutController(_ textViewportLayoutController: NSTextViewportLayoutController, cacheRenderingSurface renderingSurface: any NSTextViewportRenderingSurface, for renderingSurfaceKey: any NSTextViewportRenderingSurfaceKey)
+```
+
+```objc
+- (void) textViewportLayoutController:(NSTextViewportLayoutController *) textViewportLayoutController cacheRenderingSurface:(id<NSTextViewportRenderingSurface>) renderingSurface forKey:(id<NSTextViewportRenderingSurfaceKey>) renderingSurfaceKey;
 ```
 
 ## Parameters

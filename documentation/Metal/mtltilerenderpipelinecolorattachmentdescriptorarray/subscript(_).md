@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: Metal  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Returns the render pipeline state for the specified color attachment.
 
@@ -19,9 +20,13 @@ Returns the render pipeline state for the specified color attachment.
 subscript(attachmentIndex: Int) -> MTLTileRenderPipelineColorAttachmentDescriptor { get set }
 ```
 
+```objc
+- (MTLTileRenderPipelineColorAttachmentDescriptor *) objectAtIndexedSubscript:(NSUInteger) attachmentIndex;
+```
+
 #### Return Value
 
-An [`MTLTileRenderPipelineColorAttachmentDescriptor`](mtltilerenderpipelinecolorattachmentdescriptor.md) that describes the render pipeline information for a color attachment.
+An [`MTLTileRenderPipelineColorAttachmentDescriptor`](../mtltilerenderpipelinecolorattachmentdescriptor.md) that describes the render pipeline information for a color attachment.
 
 ## Parameters
 

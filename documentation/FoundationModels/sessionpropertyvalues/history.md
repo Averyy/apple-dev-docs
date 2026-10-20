@@ -1,7 +1,8 @@
 # history
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The history portion of the session’s transcript.
 

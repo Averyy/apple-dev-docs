@@ -2,6 +2,7 @@
 
 **Framework**: Touch Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The anchor point of the control.
@@ -17,17 +18,22 @@ The anchor point of the control.
 var anchor: TCControlLayoutAnchor { get set }
 ```
 
+```objc
+@property (nonatomic, assign) TCControlLayoutAnchor anchor;
+```
+
 ## See Also
 
-- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](tccontrollayout/anchorcoordinatesystem.md)
+### Inspecting the control layout
+- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](./anchorcoordinatesystem.md)
   The coordinate system for the control’s anchor point.
-- [var offset: CGPoint](tccontrollayout/offset.md)
+- [var offset: CGPoint](./offset.md)
   The offset from the anchor point.
-- [var position: CGPoint](tccontrollayout/position.md)
+- [var position: CGPoint](./position.md)
   The calculated position of the control.
-- [var size: CGSize](tccontrollayout/size.md)
+- [var size: CGSize](./size.md)
   The size of the control in points.
-- [var zIndex: Int](tccontrollayout/zindex.md)
+- [var zIndex: Int](./zindex.md)
   The z-index of the controlLayout, used for z-ordering.
 
 

@@ -1,12 +1,15 @@
 # IKImageBrowserView
 
 **Framework**: Quartz  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A view for displaying and browsing a large collection of images and movies.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.14
+
+> **Deprecated**: Deprecated - Please use NSCollectionView instead
 
 ## Declaration
 
@@ -14,174 +17,178 @@ A view for displaying and browsing a large collection of images and movies.
 class IKImageBrowserView
 ```
 
+```objc
+@interface IKImageBrowserView : NSView
+```
+
 #### Overview
 
-The [`IKImageBrowserView`](ikimagebrowserview.md) class is a view for displaying and browsing a large amount of images and movies efficiently. This class will be deprecated in a future release. Please switch to [`NSCollectionView`](https://developer.apple.com/documentation/appkit/nscollectionview) instead.
+The [`IKImageBrowserView`](./ikimagebrowserview.md) class is a view for displaying and browsing a large amount of images and movies efficiently. This class will be deprecated in a future release. Please switch to [`NSCollectionView`](../AppKit/nscollectionview.md) instead.
 
-You must set a datasource for the view and implement, at a minimum, the [`numberOfItems(inImageBrowser:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/numberofitems(inimagebrowser:)) and [`imageBrowser(_:itemAt:)`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/imagebrowser(_:itemat:)) described in [`IKImageBrowserDataSource Protocol`](ikimagebrowserdatasource-protocol.md). The items must conform to the IKImageBrowserItem Protocol protocol.
+You must set a datasource for the view and implement, at a minimum, the [`numberOfItems(inImageBrowser:)`](../ObjectiveC/nsobject-swift.class/numberofitems%28inimagebrowser%29.md) and [`imageBrowser(_:itemAt:)`](../ObjectiveC/nsobject-swift.class/imagebrowser%28_,itemat%29.md) described in [IKImageBrowserDataSource Protocol](./ikimagebrowserdatasource-protocol.md). The items must conform to the IKImageBrowserItem Protocol protocol.
 
 The class’s delegate object must conform to IKImageBrowserDelegate Protocol protocol. It receives notification of changes in selection, as well as mouse events in the cells.
 
-> **Note**:  The image browser supports either being hosted in a layer-backed view or using custom layers for its own appearance. Custom layers on the image browser are not supported when the image browser is itself backed by a layer.
+> **Core Animation Integration**:  The image browser supports either being hosted in a layer-backed view or using custom layers for its own appearance. Custom layers on the image browser are not supported when the image browser is itself backed by a layer.
 
 ## Topics
 
 ### Updating the Display of the Content
-- [func reloadData()](ikimagebrowserview/reloaddata.md)
+- [func reloadData()](./ikimagebrowserview/reloaddata%28%29.md)
   Marks the receiver as needing its data reloaded.
 ### Getting and Setting the Delegate
-- [var delegate: AnyObject!](ikimagebrowserview/delegate.md)
+- [var delegate: AnyObject!](./ikimagebrowserview/delegate.md)
   Returns the delegate of the receiver.
 ### Getting and Setting the Data Source
-- [var dataSource: AnyObject!](ikimagebrowserview/datasource.md)
+- [var dataSource: AnyObject!](./ikimagebrowserview/datasource.md)
   Returns the data source of the receiver.
 ### Setting the Appearance
-- [func setCellsStyleMask(Int)](ikimagebrowserview/setcellsstylemask(_:).md)
+- [func setCellsStyleMask(Int)](./ikimagebrowserview/setcellsstylemask%28_%29.md)
   Defines the appearance style of the cells.
-- [func cellsStyleMask() -> Int](ikimagebrowserview/cellsstylemask.md)
+- [func cellsStyleMask() -> Int](./ikimagebrowserview/cellsstylemask%28%29.md)
   Returns the appearance style mask for the cell.
-- [func setConstrainsToOriginalSize(Bool)](ikimagebrowserview/setconstrainstooriginalsize(_:).md)
+- [func setConstrainsToOriginalSize(Bool)](./ikimagebrowserview/setconstrainstooriginalsize%28_%29.md)
   Sets whether the receiver constrains the cell’s image to its original size.
-- [func constrainsToOriginalSize() -> Bool](ikimagebrowserview/constrainstooriginalsize.md)
+- [func constrainsToOriginalSize() -> Bool](./ikimagebrowserview/constrainstooriginalsize%28%29.md)
   Returns whether the receiver constrains the cell’s image to its original size.
-- [func setIntercellSpacing(NSSize)](ikimagebrowserview/setintercellspacing(_:).md)
+- [func setIntercellSpacing(NSSize)](./ikimagebrowserview/setintercellspacing%28_%29.md)
   Sets the spacing between cells in the view.
-- [func intercellSpacing() -> NSSize](ikimagebrowserview/intercellspacing.md)
+- [func intercellSpacing() -> NSSize](./ikimagebrowserview/intercellspacing%28%29.md)
   Returns the spacing between cells in the view.
 ### Creating a Custom Cell for an Item
-- [func newCell(forRepresentedItem: Any!) -> IKImageBrowserCell!](ikimagebrowserview/newcell(forrepresenteditem:).md)
+- [func newCell(forRepresentedItem: Any!) -> IKImageBrowserCell!](./ikimagebrowserview/newcell%28forrepresenteditem%29.md)
   Returns the cell to use for the specified item.
 ### Zooming and Resizing
-- [func setZoomValue(Float)](ikimagebrowserview/setzoomvalue(_:).md)
+- [func setZoomValue(Float)](./ikimagebrowserview/setzoomvalue%28_%29.md)
   Sets the zoom value.
-- [func zoomValue() -> Float](ikimagebrowserview/zoomvalue.md)
+- [func zoomValue() -> Float](./ikimagebrowserview/zoomvalue%28%29.md)
   Returns the current zoom value.
-- [func setContentResizingMask(Int)](ikimagebrowserview/setcontentresizingmask(_:).md)
+- [func setContentResizingMask(Int)](./ikimagebrowserview/setcontentresizingmask%28_%29.md)
   Determines how the receiver resizes its content when zooming.
-- [func contentResizingMask() -> Int](ikimagebrowserview/contentresizingmask.md)
+- [func contentResizingMask() -> Int](./ikimagebrowserview/contentresizingmask%28%29.md)
   Returns the receiver’s content resizing mask, which determines how its content is resized while zooming.
 ### Scrolling
-- [func scrollIndexToVisible(Int)](ikimagebrowserview/scrollindextovisible(_:).md)
+- [func scrollIndexToVisible(Int)](./ikimagebrowserview/scrollindextovisible%28_%29.md)
   Scrolls the receiver to the item at the specified index.
 ### Setting and Getting Cell Size
-- [func setCellSize(NSSize)](ikimagebrowserview/setcellsize(_:).md)
+- [func setCellSize(NSSize)](./ikimagebrowserview/setcellsize%28_%29.md)
   Sets the cell  size.
-- [func cellSize() -> NSSize](ikimagebrowserview/cellsize.md)
+- [func cellSize() -> NSSize](./ikimagebrowserview/cellsize%28%29.md)
   Returns the cell size.
 ### Getting Item Information
-- [func indexOfItem(at: NSPoint) -> Int](ikimagebrowserview/indexofitem(at:).md)
+- [func indexOfItem(at: NSPoint) -> Int](./ikimagebrowserview/indexofitem%28at%29.md)
   Returns the index of the item at the specified location.
-- [func itemFrame(at: Int) -> NSRect](ikimagebrowserview/itemframe(at:).md)
+- [func itemFrame(at: Int) -> NSRect](./ikimagebrowserview/itemframe%28at%29.md)
   Returns the frame rectangle for the item located at the specified index.
-- [func visibleItemIndexes() -> IndexSet!](ikimagebrowserview/visibleitemindexes.md)
+- [func visibleItemIndexes() -> IndexSet!](./ikimagebrowserview/visibleitemindexes%28%29.md)
   Returns the indexes of the view’s currently visible items.
-- [func cellForItem(at: Int) -> IKImageBrowserCell!](ikimagebrowserview/cellforitem(at:).md)
+- [func cellForItem(at: Int) -> IKImageBrowserCell!](./ikimagebrowserview/cellforitem%28at%29.md)
   Returns the browser cell for the item at the specified index.
 ### Reordering and Groups Items
-- [func selectionIndexes() -> IndexSet!](ikimagebrowserview/selectionindexes.md)
+- [func selectionIndexes() -> IndexSet!](./ikimagebrowserview/selectionindexes%28%29.md)
   Returns the indexes of the selected cells.
-- [func setSelectionIndexes(IndexSet!, byExtendingSelection: Bool)](ikimagebrowserview/setselectionindexes(_:byextendingselection:).md)
+- [func setSelectionIndexes(IndexSet!, byExtendingSelection: Bool)](./ikimagebrowserview/setselectionindexes%28_,byextendingselection%29.md)
   Selects cells at the specified indexes.
-- [func setAllowsMultipleSelection(Bool)](ikimagebrowserview/setallowsmultipleselection(_:).md)
+- [func setAllowsMultipleSelection(Bool)](./ikimagebrowserview/setallowsmultipleselection%28_%29.md)
   Controls whether the user can select more than one cell at a time.
-- [func allowsMultipleSelection() -> Bool](ikimagebrowserview/allowsmultipleselection.md)
+- [func allowsMultipleSelection() -> Bool](./ikimagebrowserview/allowsmultipleselection%28%29.md)
   Returns whether multiple selections are allowed.
-- [func setAllowsEmptySelection(Bool)](ikimagebrowserview/setallowsemptyselection(_:).md)
+- [func setAllowsEmptySelection(Bool)](./ikimagebrowserview/setallowsemptyselection%28_%29.md)
   Controls whether an empty selection is allowed.
-- [func allowsEmptySelection() -> Bool](ikimagebrowserview/allowsemptyselection.md)
+- [func allowsEmptySelection() -> Bool](./ikimagebrowserview/allowsemptyselection%28%29.md)
   Returns whether an empty selection is allowed.
-- [func setAllowsReordering(Bool)](ikimagebrowserview/setallowsreordering(_:).md)
+- [func setAllowsReordering(Bool)](./ikimagebrowserview/setallowsreordering%28_%29.md)
   Controls whether the user can reorder items.
-- [func allowsReordering() -> Bool](ikimagebrowserview/allowsreordering.md)
+- [func allowsReordering() -> Bool](./ikimagebrowserview/allowsreordering%28%29.md)
   Returns whether the user can reorder items.
-- [func setAnimates(Bool)](ikimagebrowserview/setanimates(_:).md)
+- [func setAnimates(Bool)](./ikimagebrowserview/setanimates%28_%29.md)
   Controls whether the receiver animates reordering and changes of the data source.
-- [func animates() -> Bool](ikimagebrowserview/animates.md)
+- [func animates() -> Bool](./ikimagebrowserview/animates%28%29.md)
   Returns whether the receiver animates reordering and changes of the data source.
-- [func expandGroup(at: Int)](ikimagebrowserview/expandgroup(at:).md)
+- [func expandGroup(at: Int)](./ikimagebrowserview/expandgroup%28at%29.md)
   Expands a group at the specified index.
-- [func collapseGroup(at: Int)](ikimagebrowserview/collapsegroup(at:).md)
+- [func collapseGroup(at: Int)](./ikimagebrowserview/collapsegroup%28at%29.md)
   Collapses a group at the specified index.
-- [func isGroupExpanded(at: Int) -> Bool](ikimagebrowserview/isgroupexpanded(at:).md)
+- [func isGroupExpanded(at: Int) -> Bool](./ikimagebrowserview/isgroupexpanded%28at%29.md)
   Returns whether the group at the provided index is expanded.
 ### Supporting Drag and Drop
-- [func setDraggingDestinationDelegate(Any!)](ikimagebrowserview/setdraggingdestinationdelegate(_:).md)
+- [func setDraggingDestinationDelegate(Any!)](./ikimagebrowserview/setdraggingdestinationdelegate%28_%29.md)
   Sets the dragging destination delegate of the receiver.
-- [func draggingDestinationDelegate() -> Any!](ikimagebrowserview/draggingdestinationdelegate.md)
+- [func draggingDestinationDelegate() -> Any!](./ikimagebrowserview/draggingdestinationdelegate%28%29.md)
   Returns the dragging destination delegate of the receiver.
-- [func setDrop(Int, dropOperation: IKImageBrowserDropOperation)](ikimagebrowserview/setdrop(_:dropoperation:).md)
+- [func setDrop(Int, dropOperation: IKImageBrowserDropOperation)](./ikimagebrowserview/setdrop%28_,dropoperation%29.md)
   Allows the class to retarget the drop action.
-- [func indexAtLocationOfDroppedItem() -> Int](ikimagebrowserview/indexatlocationofdroppeditem.md)
+- [func indexAtLocationOfDroppedItem() -> Int](./ikimagebrowserview/indexatlocationofdroppeditem%28%29.md)
   Returns the index of the cell where the drop operation occurred.
-- [func setAllowsDroppingOnItems(Bool)](ikimagebrowserview/setallowsdroppingonitems(_:).md)
+- [func setAllowsDroppingOnItems(Bool)](./ikimagebrowserview/setallowsdroppingonitems%28_%29.md)
   Specifies whether the user can drop on items.
-- [func allowsDroppingOnItems() -> Bool](ikimagebrowserview/allowsdroppingonitems.md)
+- [func allowsDroppingOnItems() -> Bool](./ikimagebrowserview/allowsdroppingonitems%28%29.md)
   Returns whether the user can drop on items.
-- [func dropOperation() -> IKImageBrowserDropOperation](ikimagebrowserview/dropoperation.md)
+- [func dropOperation() -> IKImageBrowserDropOperation](./ikimagebrowserview/dropoperation%28%29.md)
   Returns the current drop operation.
 ### Core Animation Layer Integration
-- [func setForegroundLayer(CALayer!)](ikimagebrowserview/setforegroundlayer(_:).md)
+- [func setForegroundLayer(CALayer!)](./ikimagebrowserview/setforegroundlayer%28_%29.md)
   The Core Animation layer used as the foreground overlay.
-- [func foregroundLayer() -> CALayer!](ikimagebrowserview/foregroundlayer.md)
+- [func foregroundLayer() -> CALayer!](./ikimagebrowserview/foregroundlayer%28%29.md)
   Returns the foreground Core Animation layer
-- [func setBackgroundLayer(CALayer!)](ikimagebrowserview/setbackgroundlayer(_:).md)
+- [func setBackgroundLayer(CALayer!)](./ikimagebrowserview/setbackgroundlayer%28_%29.md)
   The Core Animation layer used as the view’s background.
-- [func backgroundLayer() -> CALayer!](ikimagebrowserview/backgroundlayer.md)
+- [func backgroundLayer() -> CALayer!](./ikimagebrowserview/backgroundlayer%28%29.md)
   Returns the foreground Core Animation layer
 ### QuickLook Support
-- [func setCanControlQuickLookPanel(Bool)](ikimagebrowserview/setcancontrolquicklookpanel(_:).md)
+- [func setCanControlQuickLookPanel(Bool)](./ikimagebrowserview/setcancontrolquicklookpanel%28_%29.md)
   Specifies whether the view can automatically take control of the QuickLook panel.
-- [func canControlQuickLookPanel() -> Bool](ikimagebrowserview/cancontrolquicklookpanel.md)
+- [func canControlQuickLookPanel() -> Bool](./ikimagebrowserview/cancontrolquicklookpanel%28%29.md)
   Returns whether the view can automatically take control of the QuickLook panel.
 ### Getting Columns and Rows Information
-- [func numberOfColumns() -> Int](ikimagebrowserview/numberofcolumns.md)
+- [func numberOfColumns() -> Int](./ikimagebrowserview/numberofcolumns%28%29.md)
   Returns the current number of columns.
-- [func numberOfRows() -> Int](ikimagebrowserview/numberofrows.md)
+- [func numberOfRows() -> Int](./ikimagebrowserview/numberofrows%28%29.md)
   Returns the current number of rows.
-- [func rect(ofColumn: Int) -> NSRect](ikimagebrowserview/rect(ofcolumn:).md)
+- [func rect(ofColumn: Int) -> NSRect](./ikimagebrowserview/rect%28ofcolumn%29.md)
   Returns the rectangle containing the specified column.
-- [func columnIndexes(in: NSRect) -> IndexSet!](ikimagebrowserview/columnindexes(in:).md)
+- [func columnIndexes(in: NSRect) -> IndexSet!](./ikimagebrowserview/columnindexes%28in%29.md)
   Returns the column indexes in the specified rectangle.
-- [func rect(ofRow: Int) -> NSRect](ikimagebrowserview/rect(ofrow:).md)
+- [func rect(ofRow: Int) -> NSRect](./ikimagebrowserview/rect%28ofrow%29.md)
   Returns the rectangle containing the specified row.
-- [func rowIndexes(in: NSRect) -> IndexSet!](ikimagebrowserview/rowindexes(in:).md)
+- [func rowIndexes(in: NSRect) -> IndexSet!](./ikimagebrowserview/rowindexes%28in%29.md)
   Returns the row indexes in the specified rectangle.
 ### Constants
-- [Cell Appearance Style Masks](1564248-cell-appearance-style-masks.md)
+- [Cell Appearance Style Masks](./api-1564248-cell-appearance-style-masks.md)
   Masks for the appearance style bit field.
-- [Group Style Attributes](1564247-group-style-attributes.md)
+- [Group Style Attributes](./api-1564247-group-style-attributes.md)
   Attributes for the group style. Used by the
-- [View Options Keys](view-options-keys.md)
+- [View Options Keys](./view-options-keys.md)
   Keys for image browser view options. You set and retrieve values for these keys by sending the view `setValue:forKey` and `valueForKey:` messages.
-- [Group Keys](group-keys.md)
+- [Group Keys](./group-keys.md)
   Keys for group attributes.
-- [struct IKImageBrowserDropOperation](ikimagebrowserdropoperation.md)
-  These constants specify the locations for dropping items onto the browser view. Used by the method [`setDrop(_:dropOperation:)`](ikimagebrowserview/setdrop(_:dropoperation:).md).
+- [struct IKImageBrowserDropOperation](./ikimagebrowserdropoperation.md)
+  These constants specify the locations for dropping items onto the browser view. Used by the method [`setDrop(_:dropOperation:)`](./ikimagebrowserview/setdrop%28_,dropoperation%29.md).
 
 ## Relationships
 
 ### Inherits From
-- [NSView](../appkit/nsview.md)
+- [NSView](../AppKit/nsview.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSAccessibilityElementProtocol](../appkit/nsaccessibilityelementprotocol.md)
-- [NSAccessibilityProtocol](../appkit/nsaccessibilityprotocol.md)
-- [NSAnimatablePropertyContainer](../appkit/nsanimatablepropertycontainer.md)
-- [NSAppearanceCustomization](../appkit/nsappearancecustomization.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSDraggingDestination](../appkit/nsdraggingdestination.md)
-- [NSDraggingSource](../appkit/nsdraggingsource.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [NSUserInterfaceItemIdentification](../appkit/nsuserinterfaceitemidentification.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSAccessibilityElementProtocol](../AppKit/nsaccessibilityelementprotocol.md)
+- [NSAccessibilityProtocol](../AppKit/nsaccessibilityprotocol.md)
+- [NSAnimatablePropertyContainer](../AppKit/nsanimatablepropertycontainer.md)
+- [NSAppearanceCustomization](../AppKit/nsappearancecustomization.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSDraggingDestination](../AppKit/nsdraggingdestination.md)
+- [NSDraggingSource](../AppKit/nsdraggingsource.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [NSUserInterfaceItemIdentification](../AppKit/nsuserinterfaceitemidentification.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

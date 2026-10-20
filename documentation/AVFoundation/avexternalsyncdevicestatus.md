@@ -1,7 +1,8 @@
 # AVExternalSyncDeviceStatus
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Connection state of an external sync device
 
@@ -18,39 +19,44 @@ Connection state of an external sync device
 enum AVExternalSyncDeviceStatus
 ```
 
+```c
+enum AVExternalSyncDeviceStatus : NSInteger;
+```
+
 ## Topics
 
 ### Status values
-- [AVExternalSyncDeviceStatus.activeSync](avexternalsyncdevicestatus/activesync.md)
-  Indicates that the [`AVExternalSyncDevice`](avexternalsyncdevice.md) object is running and that the clock property on [`AVExternalSyncDevice`](avexternalsyncdevice.md) is calibrated to the external sync signal.
-- [AVExternalSyncDeviceStatus.calibrating](avexternalsyncdevicestatus/calibrating.md)
+- [AVExternalSyncDeviceStatus.activeSync](./avexternalsyncdevicestatus/activesync.md)
+  Indicates that the [`AVExternalSyncDevice`](./avexternalsyncdevice.md) object is running and that the clock property on [`AVExternalSyncDevice`](./avexternalsyncdevice.md) is calibrated to the external sync signal.
+- [AVExternalSyncDeviceStatus.calibrating](./avexternalsyncdevicestatus/calibrating.md)
   Indicates that the external sync signal is connected and that the AVExternalSyncDevice object is calibrating to follow.
-- [AVExternalSyncDeviceStatus.freeRunSync](avexternalsyncdevicestatus/freerunsync.md)
+- [AVExternalSyncDeviceStatus.freeRunSync](./avexternalsyncdevicestatus/freerunsync.md)
   Indicates that the AVExternalSyncDevice was calibrated to follow the external sync, but the sync signal has been lost. The camera will continue to match the last signal it received, but sync is not guaranteed.
-- [AVExternalSyncDeviceStatus.ready](avexternalsyncdevicestatus/ready.md)
+- [AVExternalSyncDeviceStatus.ready](./avexternalsyncdevicestatus/ready.md)
   Indicates that a device supporting external sync is connected, but calibration has not started.
-- [AVExternalSyncDeviceStatus.unavailable](avexternalsyncdevicestatus/unavailable.md)
+- [AVExternalSyncDeviceStatus.unavailable](./avexternalsyncdevicestatus/unavailable.md)
   Indicates that external sync signal is not connected, or has transitioned to a state that is not recoverable.
 ### Initializers
-- [init?(rawValue: Int)](avexternalsyncdevicestatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avexternalsyncdevicestatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class AVExternalSyncDevice](avexternalsyncdevice.md)
+### External synchronization
+- [class AVExternalSyncDevice](./avexternalsyncdevice.md)
   An external sync device connected to a host device that can be used to drive the timing of an internal component, such as a camera sensor.
-- [protocol AVExternalSyncDeviceDelegate](avexternalsyncdevicedelegate.md)
-  Defines an interface for delegates of [`AVCaptureDeviceInput`](avcapturedeviceinput.md) to respond to events that occur when connecting, calibrating, and disconnecting external sync devices.
-- [AVExternalSyncDevice.DiscoverySession](avexternalsyncdevice/discoverysession.md)
+- [protocol AVExternalSyncDeviceDelegate](./avexternalsyncdevicedelegate.md)
+  Defines an interface for delegates of [`AVCaptureDeviceInput`](./avcapturedeviceinput.md) to respond to events that occur when connecting, calibrating, and disconnecting external sync devices.
+- [AVExternalSyncDevice.DiscoverySession](./avexternalsyncdevice/discoverysession.md)
   A means of discovering and monitoring connection / disconnection of external sync devices to the host.
 
 

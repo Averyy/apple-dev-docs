@@ -1,7 +1,8 @@
 # dwSize
 
 **Framework**: Force Feedback  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Size, in bytes, of this structure. This member must be initialized before the structure is used.
 
@@ -15,17 +16,22 @@ Size, in bytes, of this structure. This member must be initialized before the st
 var dwSize: DWORD
 ```
 
+```c
+DWORD dwSize;
+```
+
 ## See Also
 
-- [var cbInBuffer: DWORD](ffeffescape/cbinbuffer.md)
+### Instance Properties
+- [var cbInBuffer: DWORD](./cbinbuffer.md)
   Specifies the size, in bytes, of the **lpvInBuffer** buffer.
-- [var cbOutBuffer: DWORD](ffeffescape/cboutbuffer.md)
+- [var cbOutBuffer: DWORD](./cboutbuffer.md)
   On entry, specifies the size, in bytes, of the **lpvOutBuffer** buffer. On exit, specifies the number of bytes actually produced by the command.
-- [var dwCommand: DWORD](ffeffescape/dwcommand.md)
+- [var dwCommand: DWORD](./dwcommand.md)
   Specifies a plugIn specific command number. Contact the hardware vendor for a list of valid commands and their parameters.
-- [var lpvInBuffer: UnsafeMutableRawPointer!](ffeffescape/lpvinbuffer.md)
+- [var lpvInBuffer: UnsafeMutableRawPointer!](./lpvinbuffer.md)
   Buffer containing the data required to perform the operation.
-- [var lpvOutBuffer: UnsafeMutableRawPointer!](ffeffescape/lpvoutbuffer.md)
+- [var lpvOutBuffer: UnsafeMutableRawPointer!](./lpvoutbuffer.md)
   Buffer in which the operation’s output data is returned.
 
 

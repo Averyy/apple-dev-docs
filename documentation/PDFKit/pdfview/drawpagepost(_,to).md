@@ -1,7 +1,8 @@
 # drawPagePost(_:to:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform post-page rendering for a page rendered to a context.
 
@@ -19,9 +20,14 @@ Perform post-page rendering for a page rendered to a context.
 func drawPagePost(_ page: PDFPage, to context: CGContext)
 ```
 
+```objc
+- (void) drawPagePost:(PDFPage *) page toContext:(CGContextRef) context;
+```
+
 ## See Also
 
-- [func draw(PDFPage, to: CGContext)](pdfview/draw(_:to:).md)
+### Drawing in a PDF Page
+- [func draw(PDFPage, to: CGContext)](./draw%28_,to%29.md)
   Draw and render a visible page to a context.
 
 

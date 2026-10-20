@@ -1,7 +1,8 @@
 # StoreKitError.notEntitled
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The app doesn’t have the appropriate entitlements to use the functionality.
 
@@ -22,17 +23,18 @@ case notEntitled
 
 ## See Also
 
-- [StoreKitError.networkError(_:)](storekiterror/networkerror(_:).md)
+### StoreKit Error Codes
+- [StoreKitError.networkError(_:)](./networkerror%28_%29.md)
   A network error occurred.
-- [StoreKitError.systemError(_:)](storekiterror/systemerror(_:).md)
+- [StoreKitError.systemError(_:)](./systemerror%28_%29.md)
   A system error occurred.
-- [StoreKitError.userCancelled](storekiterror/usercancelled.md)
+- [StoreKitError.userCancelled](./usercancelled.md)
   The user canceled.
-- [StoreKitError.notAvailableInStorefront](storekiterror/notavailableinstorefront.md)
+- [StoreKitError.notAvailableInStorefront](./notavailableinstorefront.md)
   The function isn’t available on devices configured for this storefront.
-- [StoreKitError.unknown](storekiterror/unknown.md)
+- [StoreKitError.unknown](./unknown.md)
   An unknown error occurred.
-- [StoreKitError.unsupported](storekiterror/unsupported.md)
+- [StoreKitError.unsupported](./unsupported.md)
   The operation doesn’t support this product.
 
 

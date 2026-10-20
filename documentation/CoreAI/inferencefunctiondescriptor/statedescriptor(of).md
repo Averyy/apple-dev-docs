@@ -1,7 +1,8 @@
 # stateDescriptor(of:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the descriptor for the specified state.
 
@@ -28,7 +29,8 @@ The descriptor for the state, or `nil` if the function doesn’t have a state wi
 
 ## See Also
 
-- [var stateNames: [String]](inferencefunctiondescriptor/statenames.md)
+### Describing state
+- [var stateNames: [String]](./statenames.md)
   The names of the function’s states.
 
 

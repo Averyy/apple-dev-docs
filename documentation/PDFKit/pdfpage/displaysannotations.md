@@ -1,7 +1,8 @@
 # displaysAnnotations
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value indicating whether annotations are displayed for the page.
 
@@ -19,21 +20,27 @@ Returns a Boolean value indicating whether annotations are displayed for the pag
 var displaysAnnotations: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL displaysAnnotations;
+```
+
 #### Discussion
 
-If [`true`](https://developer.apple.com/documentation/swift/true), the page will draw annotations when a drawing method is called.
+If [`true`](../../Swift/true.md), the page will draw annotations when a drawing method is called.
 
 ## See Also
 
-- [func draw(with: PDFDisplayBox)](pdfpage/draw(with:).md)
+### Related Documentation
+- [func draw(with: PDFDisplayBox)](./draw%28with%29.md)
   Draws the page within the specified box.
-- [var annotations: [PDFAnnotation]](pdfpage/annotations.md)
+### Working with Annotations
+- [var annotations: [PDFAnnotation]](./annotations.md)
   Returns an array containing the page’s annotations.
-- [func addAnnotation(PDFAnnotation)](pdfpage/addannotation(_:).md)
+- [func addAnnotation(PDFAnnotation)](./addannotation%28_%29.md)
   Adds the specified annotation object to the page.
-- [func removeAnnotation(PDFAnnotation)](pdfpage/removeannotation(_:).md)
+- [func removeAnnotation(PDFAnnotation)](./removeannotation%28_%29.md)
   Removes the specified annotation from the page.
-- [func annotation(at: CGPoint) -> PDFAnnotation?](pdfpage/annotation(at:).md)
+- [func annotation(at: CGPoint) -> PDFAnnotation?](./annotation%28at%29.md)
   Returns the annotation, if there is one, at the specified point.
 
 

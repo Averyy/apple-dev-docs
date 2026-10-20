@@ -1,7 +1,8 @@
 # pixelFormatType
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format type for this object’s internal matting image.
 
@@ -20,17 +21,22 @@ The pixel format type for this object’s internal matting image.
 var pixelFormatType: OSType { get }
 ```
 
+```objc
+@property (readonly) OSType pixelFormatType;
+```
+
 #### Discussion
 
-Currently, the only supported pixel format type for the matting image is [`kCVPixelFormatType_OneComponent8`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_onecomponent8).
+Currently, the only supported pixel format type for the matting image is [`kCVPixelFormatType_OneComponent8`](../../CoreVideo/kcvpixelformattype_onecomponent8.md).
 
 ## See Also
 
-- [var matteType: AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.property.md)
+### Inspecting a segmentation matte
+- [var matteType: AVSemanticSegmentationMatte.MatteType](./mattetype-swift.property.md)
   The semantic segmentation matte image type.
-- [AVSemanticSegmentationMatte.MatteType](avsemanticsegmentationmatte/mattetype-swift.struct.md)
+- [AVSemanticSegmentationMatte.MatteType](./mattetype-swift.struct.md)
   A structure that defines the types of segmentation matte images that you can capture along with the primary image.
-- [var mattingImage: CVPixelBuffer](avsemanticsegmentationmatte/mattingimage.md)
+- [var mattingImage: CVPixelBuffer](./mattingimage.md)
   The semantic segmentation matte’s internal image.
 
 

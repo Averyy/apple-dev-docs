@@ -1,7 +1,8 @@
 # VideoPlayerEvents.ViewingModeDidChange
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -20,15 +21,15 @@ struct ViewingModeDidChange
 ## Topics
 
 ### Instance Properties
-- [let currentViewingMode: VideoPlaybackController.ViewingMode?](videoplayerevents/viewingmodedidchange/currentviewingmode.md)
-- [let previousViewingMode: VideoPlaybackController.ViewingMode?](videoplayerevents/viewingmodedidchange/previousviewingmode.md)
+- [let currentViewingMode: VideoPlaybackController.ViewingMode?](./viewingmodedidchange/currentviewingmode.md)
+- [let previousViewingMode: VideoPlaybackController.ViewingMode?](./viewingmodedidchange/previousviewingmode.md)
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

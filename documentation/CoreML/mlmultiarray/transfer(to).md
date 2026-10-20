@@ -1,7 +1,8 @@
 # transfer(to:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Transfer the contents to the destination multi-array.
 
@@ -18,6 +19,10 @@ Transfer the contents to the destination multi-array.
 
 ```swift
 func transfer(to destinationMultiArray: MLMultiArray)
+```
+
+```objc
+- (void) transferToMultiArray:(MLMultiArray *) destinationMultiArray;
 ```
 
 #### Discussion

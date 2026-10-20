@@ -1,7 +1,8 @@
 # AttributeScopes.SwiftUIAttributes.BaselineOffsetAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A key for the distance a run of attributed text shifts from its baseline.
 
@@ -25,7 +26,7 @@ enum BaselineOffsetAttribute
 
 A positive value raises the run and a negative value lowers it, which lets you set a unit or a footnote marker above the surrounding text:
 
-```None
+```
 var measure = AttributedString("12 m")
 if let unit = measure.range(of: "m") {
     measure[unit].baselineOffset = 6
@@ -39,13 +40,13 @@ Shifting a run does not change the height of the line, so a large offset can pus
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

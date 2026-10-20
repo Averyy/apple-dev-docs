@@ -1,7 +1,8 @@
 # rotation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The orientation of the camera, expressed as a unit quaternion.
 

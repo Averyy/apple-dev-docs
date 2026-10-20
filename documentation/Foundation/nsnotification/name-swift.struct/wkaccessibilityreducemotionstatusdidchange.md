@@ -1,7 +1,8 @@
 # WKAccessibilityReduceMotionStatusDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Tells the interface controller that the reduce motion status has changed.
 
@@ -16,17 +17,18 @@ static let WKAccessibilityReduceMotionStatusDidChange: NSNotification.Name
 
 #### Discussion
 
-Use this notification to customize your application’s user interface for when reduced motion is enabled. You can also use the [`WKAccessibilityIsReduceMotionEnabled()`](https://developer.apple.com/documentation/watchkit/wkaccessibilityisreducemotionenabled()) function to determine whether reduced motion is enabled.
+Use this notification to customize your application’s user interface for when reduced motion is enabled. You can also use the [`WKAccessibilityIsReduceMotionEnabled()`](../../../WatchKit/wkaccessibilityisreducemotionenabled%28%29.md) function to determine whether reduced motion is enabled.
 
 Observe this notification using the default notification center. This notification doesn’t include a parameter.
 
 ## See Also
 
-- [static let WKAudioFilePlayerItemDidPlayToEndTime: NSNotification.Name](nsnotification/name-swift.struct/wkaudiofileplayeritemdidplaytoendtime.md)
+### WatchKit
+- [static let WKAudioFilePlayerItemDidPlayToEndTime: NSNotification.Name](./wkaudiofileplayeritemdidplaytoendtime.md)
   A notification that the item has played successfully to its end.
-- [static let WKAudioFilePlayerItemFailedToPlayToEndTime: NSNotification.Name](nsnotification/name-swift.struct/wkaudiofileplayeritemfailedtoplaytoendtime.md)
+- [static let WKAudioFilePlayerItemFailedToPlayToEndTime: NSNotification.Name](./wkaudiofileplayeritemfailedtoplaytoendtime.md)
   A notification that the item failed to play to its end.
-- [static let WKAudioFilePlayerItemTimeJumped: NSNotification.Name](nsnotification/name-swift.struct/wkaudiofileplayeritemtimejumped.md)
+- [static let WKAudioFilePlayerItemTimeJumped: NSNotification.Name](./wkaudiofileplayeritemtimejumped.md)
   A notification that the item’s current time has changed discontinuously.
 
 

@@ -1,17 +1,24 @@
 # didCloseNotification
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted whenever the drawer is closed.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Drawers are deprecated; consider using NSSplitViewController
 
 ## Declaration
 
 ```swift
 class let didCloseNotification: NSNotification.Name
+```
+
+```c
+extern NSNotificationName NSDrawerDidCloseNotification;
 ```
 
 #### Discussion
@@ -20,11 +27,12 @@ The notification object is the `NSDrawer` object that closed. This notification 
 
 ## See Also
 
-- [class let didOpenNotification: NSNotification.Name](nsdrawer/didopennotification.md)
+### Notifications
+- [class let didOpenNotification: NSNotification.Name](./didopennotification.md)
   Posted whenever the drawer is opened.
-- [class let willCloseNotification: NSNotification.Name](nsdrawer/willclosenotification.md)
+- [class let willCloseNotification: NSNotification.Name](./willclosenotification.md)
   Posted whenever the drawer is about to close.
-- [class let willOpenNotification: NSNotification.Name](nsdrawer/willopennotification.md)
+- [class let willOpenNotification: NSNotification.Name](./willopennotification.md)
   Posted whenever the drawer is about to open.
 
 

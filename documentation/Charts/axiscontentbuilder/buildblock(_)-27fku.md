@@ -1,7 +1,8 @@
 # buildBlock(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Builds a result from a single component.
 

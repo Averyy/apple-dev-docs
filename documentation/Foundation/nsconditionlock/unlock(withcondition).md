@@ -1,7 +1,8 @@
 # unlock(withCondition:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Relinquishes the lock and sets the receiver’s condition.
 
@@ -20,21 +21,26 @@ Relinquishes the lock and sets the receiver’s condition.
 func unlock(withCondition condition: Int)
 ```
 
+```objc
+- (void) unlockWithCondition:(NSInteger) condition;
+```
+
 ## Parameters
 
 - `condition`: The user-defined condition for the lock. The value of `condition` is user-defined; see the class description for more information.
 
 ## See Also
 
-- [func lock(before: Date) -> Bool](nsconditionlock/lock(before:).md)
+### Acquiring and Releasing a Lock
+- [func lock(before: Date) -> Bool](./lock%28before%29.md)
   Attempts to acquire a lock before a specified moment in time.
-- [func lock(whenCondition: Int)](nsconditionlock/lock(whencondition:).md)
+- [func lock(whenCondition: Int)](./lock%28whencondition%29.md)
   Attempts to acquire a lock.
-- [func lock(whenCondition: Int, before: Date) -> Bool](nsconditionlock/lock(whencondition:before:).md)
+- [func lock(whenCondition: Int, before: Date) -> Bool](./lock%28whencondition,before%29.md)
   Attempts to acquire a lock before a specified moment in time.
-- [func `try`() -> Bool](nsconditionlock/try.md)
+- [func `try`() -> Bool](./try%28%29.md)
   Attempts to acquire a lock without regard to the receiver’s condition.
-- [func tryLock(whenCondition: Int) -> Bool](nsconditionlock/trylock(whencondition:).md)
+- [func tryLock(whenCondition: Int) -> Bool](./trylock%28whencondition%29.md)
   Attempts to acquire a lock if the receiver’s condition is equal to the specified condition.
 
 

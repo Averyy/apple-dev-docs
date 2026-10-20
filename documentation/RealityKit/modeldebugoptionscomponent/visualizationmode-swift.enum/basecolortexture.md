@@ -1,7 +1,8 @@
 # ModelDebugOptionsComponent.VisualizationMode.baseColorTexture
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Displays the entity’s base color texture for standard materials.
 
@@ -11,7 +12,9 @@ Displays the entity’s base color texture for standard materials.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
+
+> **Deprecated**: Use .baseColor instead, which works for all material types.
 
 ## Declaration
 

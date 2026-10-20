@@ -1,7 +1,8 @@
 # validationDateTooSoonError
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 3.0+

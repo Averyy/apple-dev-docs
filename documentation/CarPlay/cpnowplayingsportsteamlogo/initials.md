@@ -1,7 +1,8 @@
 # initials
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An abbreviation or initialism for this team, used only if no logo image is available for this team.
 
@@ -14,6 +15,10 @@ An abbreviation or initialism for this team, used only if no logo image is avail
 
 ```swift
 var initials: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * initials;
 ```
 
 

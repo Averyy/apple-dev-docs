@@ -1,17 +1,22 @@
 # setSelectedAttributes(_:isMultiple:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the Font panel that the specified font attributes changed for the selected text.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setSelectedAttributes(_ attributes: [String : Any], isMultiple flag: Bool)
+```
+
+```objc
+- (void) setSelectedAttributes:(NSDictionary<NSString *,id> *) attributes isMultiple:(BOOL) flag;
 ```
 
 #### Discussion
@@ -21,11 +26,12 @@ This method is used primarily by `NSTextView`.
 ## Parameters
 
 - `attributes`: The new attributes.
-- `flag`: If [`true`](https://developer.apple.com/documentation/swift/true), informs the panel that multiple fonts or attributes are enclosed within the selection.
+- `flag`: If [`true`](../../Swift/true.md), informs the panel that multiple fonts or attributes are enclosed within the selection.
 
 ## See Also
 
-- [func convertAttributes([String : Any]) -> [String : Any]](nsfontmanager/convertattributes(_:).md)
+### Setting Attributes
+- [func convertAttributes([String : Any]) -> [String : Any]](./convertattributes%28_%29.md)
   Converts attributes in response to an object initiating an attribute change, typically the Font panel or Font menu.
 
 

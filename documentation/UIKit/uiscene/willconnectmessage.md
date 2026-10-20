@@ -1,7 +1,8 @@
 # UIScene.WillConnectMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,15 +20,15 @@ struct WillConnectMessage
 ## Topics
 
 ### Initializers
-- [init(scene: UIScene)](uiscene/willconnectmessage/init(scene:).md)
+- [init(scene: UIScene)](./willconnectmessage/init%28scene%29.md)
 ### Instance Properties
-- [var scene: UIScene](uiscene/willconnectmessage/scene.md)
+- [var scene: UIScene](./willconnectmessage/scene.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

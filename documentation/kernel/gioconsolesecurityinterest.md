@@ -1,14 +1,15 @@
 # gIOConsoleSecurityInterest
 
 **Framework**: Kernel  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 const OSSymbol *gIOConsoleSecurityInterest;
 ```
 

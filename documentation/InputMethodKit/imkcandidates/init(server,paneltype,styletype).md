@@ -1,7 +1,8 @@
 # init(server:panelType:styleType:)
 
 **Framework**: InputMethodKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 init!(server: IMKServer!, panelType: IMKCandidatePanelType, styleType style: IMKStyleType)
+```
+
+```objc
+- (id) initWithServer:(IMKServer *) server panelType:(IMKCandidatePanelType) panelType styleType:(IMKStyleType) style;
 ```
 
 

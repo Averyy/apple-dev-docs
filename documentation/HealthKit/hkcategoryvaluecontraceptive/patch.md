@@ -1,7 +1,8 @@
 # HKCategoryValueContraceptive.patch
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A contraceptive patch.
 
@@ -19,19 +20,24 @@ A contraceptive patch.
 case patch
 ```
 
+```c
+HKCategoryValueContraceptivePatch
+```
+
 ## See Also
 
-- [HKCategoryValueContraceptive.unspecified](hkcategoryvaluecontraceptive/unspecified.md)
+### Contraceptive Types
+- [HKCategoryValueContraceptive.unspecified](./unspecified.md)
   An unspecified type of contraceptive.
-- [HKCategoryValueContraceptive.implant](hkcategoryvaluecontraceptive/implant.md)
+- [HKCategoryValueContraceptive.implant](./implant.md)
   A contraceptive implant.
-- [HKCategoryValueContraceptive.injection](hkcategoryvaluecontraceptive/injection.md)
+- [HKCategoryValueContraceptive.injection](./injection.md)
   An injectable contraceptive.
-- [HKCategoryValueContraceptive.intrauterineDevice](hkcategoryvaluecontraceptive/intrauterinedevice.md)
+- [HKCategoryValueContraceptive.intrauterineDevice](./intrauterinedevice.md)
   An intrauterine device (IUD).
-- [HKCategoryValueContraceptive.intravaginalRing](hkcategoryvaluecontraceptive/intravaginalring.md)
+- [HKCategoryValueContraceptive.intravaginalRing](./intravaginalring.md)
   A contraceptive intravaginal ring.
-- [HKCategoryValueContraceptive.oral](hkcategoryvaluecontraceptive/oral.md)
+- [HKCategoryValueContraceptive.oral](./oral.md)
   An oral contraceptive.
 
 

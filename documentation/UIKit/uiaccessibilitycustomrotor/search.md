@@ -1,16 +1,17 @@
 # UIAccessibilityCustomRotor.Search
 
 **Framework**: UIKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The block type for retrieving the next or previous rotor.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ The block type for retrieving the next or previous rotor.
 typealias Search = (UIAccessibilityCustomRotorSearchPredicate) -> UIAccessibilityCustomRotorItemResult?
 ```
 
+```c
+typedef UIAccessibilityCustomRotorItemResult *(^)(UIAccessibilityCustomRotorSearchPredicate *) UIAccessibilityCustomRotorSearch;
+```
+
 ## See Also
 
-- [var itemSearchBlock: UIAccessibilityCustomRotor.Search](uiaccessibilitycustomrotor/itemsearchblock.md)
+### Navigating to the next item
+- [var itemSearchBlock: UIAccessibilityCustomRotor.Search](./itemsearchblock.md)
   The block for retrieving the next or previous rotor.
-- [UIAccessibilityCustomRotor.Direction](uiaccessibilitycustomrotor/direction.md)
+- [UIAccessibilityCustomRotor.Direction](./direction.md)
   Constants that indicate the search direction.
 
 

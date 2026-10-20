@@ -1,7 +1,8 @@
 # explicitPadding
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that defines padding values for spatial dimensions.
 
@@ -17,6 +18,10 @@ The property that defines padding values for spatial dimensions.
 
 ```swift
 var explicitPadding: [NSNumber] { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite) MPSShape * explicitPadding;
 ```
 
 #### Discussion

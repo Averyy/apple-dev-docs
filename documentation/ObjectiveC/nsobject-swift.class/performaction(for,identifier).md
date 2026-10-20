@@ -1,12 +1,13 @@
 # performAction(for:identifier:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate to perform the action.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Sent to the delegate to perform the action.
 func performAction(for person: ABPerson!, identifier: String!)
 ```
 
+```objc
+- (void) performActionForPerson:(ABPerson *) person identifier:(NSString *) identifier;
+```
+
 #### Discussion
 
-If the property returned by [`actionProperty()`](nsobject-swift.class/actionproperty().md) is a multivalue property, `identifier` contains the unique identifier of the value selected. The person being displayed in the Address Book application’s card view when the rollover menu is accesses is passed as `person`.
+If the property returned by [`actionProperty()`](./actionproperty%28%29.md) is a multivalue property, `identifier` contains the unique identifier of the value selected. The person being displayed in the Address Book application’s card view when the rollover menu is accesses is passed as `person`.
 
 ## Parameters
 

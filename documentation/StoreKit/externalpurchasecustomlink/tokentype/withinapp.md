@@ -1,7 +1,8 @@
 # withinApp
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A token type for workflows that use an alternative payment provider inside the app.
 
@@ -22,7 +23,8 @@ static let withinApp: ExternalPurchaseCustomLink.TokenType
 
 ## See Also
 
-- [static let outOfApp: ExternalPurchaseCustomLink.TokenType](externalpurchasecustomlink/tokentype/outofapp.md)
+### Token types
+- [static let outOfApp: ExternalPurchaseCustomLink.TokenType](./outofapp.md)
   A token type for workflows in which customers complete transactions outside of the app.
 
 

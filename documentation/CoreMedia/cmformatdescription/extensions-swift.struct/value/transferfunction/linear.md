@@ -1,7 +1,8 @@
 # linear
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,14 +21,15 @@ static let linear: CMFormatDescription.Extensions.Value.TransferFunction
 
 ## See Also
 
-- [static let itu_R_2020: CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction/itu_r_2020.md)
-- [static let itu_R_2100_HLG: CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction/itu_r_2100_hlg.md)
-- [static let itu_R_709_2: CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction/itu_r_709_2.md)
-- [static let sRGB: CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction/srgb.md)
-- [static let smpte_240M_1995: CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction/smpte_240m_1995.md)
-- [static let smpte_ST_2084_PQ: CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction/smpte_st_2084_pq.md)
-- [static let smpte_ST_428_1: CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction/smpte_st_428_1.md)
-- [static let useGamma: CMFormatDescription.Extensions.Value.TransferFunction](cmformatdescription/extensions-swift.struct/value/transferfunction/usegamma.md)
+### Transfer Functions
+- [static let itu_R_2020: CMFormatDescription.Extensions.Value.TransferFunction](./itu_r_2020.md)
+- [static let itu_R_2100_HLG: CMFormatDescription.Extensions.Value.TransferFunction](./itu_r_2100_hlg.md)
+- [static let itu_R_709_2: CMFormatDescription.Extensions.Value.TransferFunction](./itu_r_709_2.md)
+- [static let sRGB: CMFormatDescription.Extensions.Value.TransferFunction](./srgb.md)
+- [static let smpte_240M_1995: CMFormatDescription.Extensions.Value.TransferFunction](./smpte_240m_1995.md)
+- [static let smpte_ST_2084_PQ: CMFormatDescription.Extensions.Value.TransferFunction](./smpte_st_2084_pq.md)
+- [static let smpte_ST_428_1: CMFormatDescription.Extensions.Value.TransferFunction](./smpte_st_428_1.md)
+- [static let useGamma: CMFormatDescription.Extensions.Value.TransferFunction](./usegamma.md)
 
 
 ---

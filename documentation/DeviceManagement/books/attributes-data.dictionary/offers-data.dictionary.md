@@ -1,23 +1,24 @@
 # Books.Attributes.Offers
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - VPP License Management 2.1+
 
 ## Declaration
 
-```swift
+```
 object Books.Attributes.Offers
 ```
 
 ## Topics
 
 ### Related Objects
-- [object Books.Attributes.Offers.Assets](books/attributes-data.dictionary/offers-data.dictionary/assets-data.dictionary.md)
-- [object Books.Attributes.Offers.Discounts](books/attributes-data.dictionary/offers-data.dictionary/discounts-data.dictionary.md)
-- [object Books.Attributes.Offers.Download](books/attributes-data.dictionary/offers-data.dictionary/download-data.dictionary.md)
+- [object Books.Attributes.Offers.Assets](./offers-data.dictionary/assets-data.dictionary.md)
+- [object Books.Attributes.Offers.Discounts](./offers-data.dictionary/discounts-data.dictionary.md)
+- [object Books.Attributes.Offers.Download](./offers-data.dictionary/download-data.dictionary.md)
 
 ## Properties
 
@@ -34,13 +35,14 @@ object Books.Attributes.Offers
 - `pricePerUnitFormatted` (string)
 - `quantity` (integer)
 - `recurringSubscriptionPeriod` (string)
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `anonymousDownload`, `buy`, `complete`, `get`, `preorder`, `preordered`, `purchased`, `radio`, `redownload`, `rent`, `subscribe`, `subscription`, `update`
 
 ## See Also
 
-- [object Books.Attributes.SeriesInfo](books/attributes-data.dictionary/seriesinfo-data.dictionary.md)
-- [object Books.Attributes.TaxExclusivePrices](books/attributes-data.dictionary/taxexclusiveprices-data.dictionary.md)
-- [object Books.Attributes.UserRating](books/attributes-data.dictionary/userrating-data.dictionary.md)
+### Related Objects
+- [object Books.Attributes.SeriesInfo](./seriesinfo-data.dictionary.md)
+- [object Books.Attributes.TaxExclusivePrices](./taxexclusiveprices-data.dictionary.md)
+- [object Books.Attributes.UserRating](./userrating-data.dictionary.md)
 
 
 ---

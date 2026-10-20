@@ -1,7 +1,8 @@
 # uniqueID
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for the photo capture this settings object corresponds to.
 
@@ -18,17 +19,22 @@ The unique identifier for the photo capture this settings object corresponds to.
 var uniqueID: Int64 { get }
 ```
 
+```objc
+@property (readonly) int64_t uniqueID;
+```
+
 ## Mentions
 
-- [Tracking photo capture progress](tracking-photo-capture-progress.md)
+- [Tracking photo capture progress](../tracking-photo-capture-progress.md)
 
 #### Discussion
 
-The value of this property matches the matches the [`uniqueID`](avcapturephotosettings/uniqueid.md) value of the [`AVCapturePhotoSettings`](avcapturephotosettings.md) object you passed when initiating a photo capture with the [`capturePhoto(with:delegate:)`](avcapturephotooutput/capturephoto(with:delegate:).md) method. Use this value to determine which delegate method calls correspond to which capture requests.
+The value of this property matches the matches the [`uniqueID`](../avcapturephotosettings/uniqueid.md) value of the [`AVCapturePhotoSettings`](../avcapturephotosettings.md) object you passed when initiating a photo capture with the [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) method. Use this value to determine which delegate method calls correspond to which capture requests.
 
 ## See Also
 
-- [var expectedPhotoCount: Int](avcaptureresolvedphotosettings/expectedphotocount.md)
+### Resolving photo capture requests
+- [var expectedPhotoCount: Int](./expectedphotocount.md)
   The number of photo capture results in the capture request.
 
 

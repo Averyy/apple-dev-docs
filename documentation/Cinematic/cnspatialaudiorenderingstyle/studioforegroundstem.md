@@ -1,7 +1,8 @@
 # CNSpatialAudioRenderingStyle.studioForegroundStem
 
 **Framework**: Cinematic  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Isolates foreground sounds in a stem, and adds a proximity effect.
 
@@ -16,6 +17,10 @@ Isolates foreground sounds in a stem, and adds a proximity effect.
 
 ```swift
 case studioForegroundStem
+```
+
+```c
+CNSpatialAudioRenderingStyleStudioForegroundStem
 ```
 
 

@@ -1,7 +1,8 @@
 # NSNotFound
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A value indicating that a requested item couldn’t be found or doesn’t exist.
 
@@ -20,6 +21,10 @@ A value indicating that a requested item couldn’t be found or doesn’t exist.
 var NSNotFound: Int { get }
 ```
 
+```c
+static const NSInteger NSNotFound;
+```
+
 #### Discussion
 
 `NSNotFound` is typically used by various methods and functions that search for items in serial data and return indices, such as characters in a string object or `id` objects in an `NSArray` object.
@@ -30,9 +35,10 @@ Prior to OS X v10.5, `NSNotFound` was defined as `0x7fffffff`. For 32-bit syste
 
 ## See Also
 
-- [class NSNull](nsnull.md)
+### Special Semantic Values
+- [class NSNull](./nsnull.md)
   A singleton object used to represent null values in collection objects that don’t allow `nil` values.
-- [let NSNotFound: Int](nsnotfound-9t5v2.md)
+- [let NSNotFound: Int](./nsnotfound-9t5v2.md)
 
 
 ---

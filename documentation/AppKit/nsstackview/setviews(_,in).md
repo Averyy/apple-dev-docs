@@ -1,12 +1,13 @@
 # setViews(_:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies an array of views for a specified gravity area in the stack view, replacing any previous views in that area.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,26 +15,31 @@ Specifies an array of views for a specified gravity area in the stack view, repl
 func setViews(_ views: [NSView], in gravity: NSStackView.Gravity)
 ```
 
+```objc
+- (void) setViews:(NSArray<NSView *> *) views inGravity:(NSStackViewGravity) gravity;
+```
+
 #### Discussion
 
 Calling this method updates the stack view’s layout, which can change the stack view size. As a result, views could detach or clip according to the clipping resistance of the stack view and the visibility priorities of its views.
 
-A view in a detached state is not present in the stack view’s view hierarchy, but it still consumes memory. To respond to detachment and reattachment of views, implement an [`NSStackViewDelegate`](nsstackviewdelegate.md) object and assign it to the [`delegate`](nsstackview/delegate.md) property.
+A view in a detached state is not present in the stack view’s view hierarchy, but it still consumes memory. To respond to detachment and reattachment of views, implement an [`NSStackViewDelegate`](../nsstackviewdelegate.md) object and assign it to the [`delegate`](./delegate.md) property.
 
 ## Parameters
 
 - `views`: The array of views you are specifying for the gravity area.
-- `gravity`: The gravity area that you’re specifying the array of views for.  Valid values are those in the [`NSStackView.Gravity`](nsstackview/gravity.md) enumeration, according to the stack view’s layout direction.
+- `gravity`: The gravity area that you’re specifying the array of views for.  Valid values are those in the [`NSStackView.Gravity`](./gravity.md) enumeration, according to the stack view’s layout direction.
 
 ## See Also
 
-- [func addView(NSView, in: NSStackView.Gravity)](nsstackview/addview(_:in:).md)
+### Managing Views in Gravity Areas
+- [func addView(NSView, in: NSStackView.Gravity)](./addview%28_,in%29.md)
   Adds a view to the end of the stack view gravity area.
-- [func insertView(NSView, at: Int, in: NSStackView.Gravity)](nsstackview/insertview(_:at:in:).md)
+- [func insertView(NSView, at: Int, in: NSStackView.Gravity)](./insertview%28_,at,in%29.md)
   Adds a view to a stack view gravity area at a specified index position.
-- [func removeView(NSView)](nsstackview/removeview(_:).md)
+- [func removeView(NSView)](./removeview%28_%29.md)
   Removes a specified view from the stack view.
-- [NSStackView.Gravity](nsstackview/gravity.md)
+- [NSStackView.Gravity](./gravity.md)
   The gravity areas available in a stack view.
 
 

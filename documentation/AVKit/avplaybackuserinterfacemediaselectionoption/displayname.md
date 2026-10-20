@@ -1,7 +1,8 @@
 # displayName
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Human-readable name for this media option displayed in user interfaces (e.g., “English”, “Spanish (Latin America)”, “Director’s Commentary”).
 
@@ -14,6 +15,10 @@ Human-readable name for this media option displayed in user interfaces (e.g., �
 
 ```swift
 var displayName: String { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSString * displayName;
 ```
 
 

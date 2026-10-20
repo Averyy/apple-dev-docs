@@ -1,7 +1,8 @@
 # standard()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a placement that indicates the system should present the window using the default style of the system in the space.
 
@@ -10,7 +11,7 @@ Creates a placement that indicates the system should present the window using th
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -18,13 +19,16 @@ Creates a placement that indicates the system should present the window using th
 static func standard() -> Self
 ```
 
+Available when `Self` is `UIWindowSceneStandardPlacement`.
+
 #### Return Value
 
 A placement that indicates the system should present the window using the default style of the system in the space.
 
 ## See Also
 
-- [static func prominent() -> Self](uiwindowsceneplacement-swift.protocol/prominent.md)
+### Positioning windows
+- [static func prominent() -> Self](./prominent%28%29.md)
   Creates a placement that indicates the system should present the window more prominently than others in the space.
 
 

@@ -1,7 +1,8 @@
 # init(id:assetIDs:segments:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a response that contains the segments you provide.
 
@@ -27,7 +28,8 @@ init(id: String = UUID().uuidString, assetIDs: [String], segments: [Transcript.S
 
 ## See Also
 
-- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment])](transcript/response/init(id:metadata:segments:).md)
+### Creating a response
+- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment])](./init%28id,metadata,segments%29.md)
   Creates a response that contains the metadata and segments you provide.
 
 

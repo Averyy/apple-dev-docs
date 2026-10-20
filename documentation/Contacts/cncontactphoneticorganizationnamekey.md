@@ -1,7 +1,8 @@
 # CNContactPhoneticOrganizationNameKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The phonetic spelling of the contact’s organization name.
 
@@ -19,13 +20,18 @@ The phonetic spelling of the contact’s organization name.
 let CNContactPhoneticOrganizationNameKey: String
 ```
 
+```c
+extern NSString * const CNContactPhoneticOrganizationNameKey;
+```
+
 ## See Also
 
-- [let CNContactJobTitleKey: String](cncontactjobtitlekey.md)
+### Work
+- [let CNContactJobTitleKey: String](./cncontactjobtitlekey.md)
   The contact’s job title.
-- [let CNContactDepartmentNameKey: String](cncontactdepartmentnamekey.md)
+- [let CNContactDepartmentNameKey: String](./cncontactdepartmentnamekey.md)
   The contact’s department name.
-- [let CNContactOrganizationNameKey: String](cncontactorganizationnamekey.md)
+- [let CNContactOrganizationNameKey: String](./cncontactorganizationnamekey.md)
   The contact’s organization name.
 
 

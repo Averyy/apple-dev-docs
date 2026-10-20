@@ -1,7 +1,8 @@
 # assetPath
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The asset path the reference targets, or `nil` for an internal reference.
 

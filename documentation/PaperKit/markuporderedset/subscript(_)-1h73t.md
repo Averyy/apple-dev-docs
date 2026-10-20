@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: PaperKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the stroke for the given id.
 
@@ -20,15 +21,16 @@ subscript(id: UUID) -> PKStroke? { get set }
 
 ## See Also
 
-- [subscript<T>(MarkupID<T>) -> T?](markuporderedset/subscript(_:)-6e2ez.md)
+### Accessing elements
+- [subscript<T>(MarkupID<T>) -> T?](./subscript%28_%29-6e2ez.md)
   Accesses the element for the given id.
-- [subscript(MarkupOrderedSet.ElementID) -> MarkupOrderedSet.Element?](markuporderedset/subscript(_:)-79x8r.md)
+- [subscript(MarkupOrderedSet.ElementID) -> MarkupOrderedSet.Element?](./subscript%28_%29-79x8r.md)
   Accesses the element for the given id.
-- [var ids: MarkupOrderedSet.ElementIDs](markuporderedset/ids.md)
+- [var ids: MarkupOrderedSet.ElementIDs](./ids.md)
   A view of the set’s element ids.
-- [var strokes: [PKStroke]](markuporderedset/strokes.md)
+- [var strokes: [PKStroke]](./strokes.md)
   The strokes in the set.
-- [var count: Int](markuporderedset/count.md)
+- [var count: Int](./count.md)
   The number of elements in the set.
 
 

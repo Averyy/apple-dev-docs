@@ -1,7 +1,8 @@
 # NSHapticFeedbackManager.PerformanceTime.default
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows the system to choose the most appropriate time for feedback to be provided. Currently, this is the next time the screen is updated.
 
@@ -14,11 +15,16 @@ Allows the system to choose the most appropriate time for feedback to be provide
 case `default`
 ```
 
+```c
+NSHapticFeedbackPerformanceTimeDefault
+```
+
 ## See Also
 
-- [NSHapticFeedbackManager.PerformanceTime.now](nshapticfeedbackmanager/performancetime/now.md)
+### Constants
+- [NSHapticFeedbackManager.PerformanceTime.now](./now.md)
   Instructs the system to provide immediate haptic feedback to the user, rather than waiting for synchronization to occur with something visual occurring on screen.
-- [NSHapticFeedbackManager.PerformanceTime.drawCompleted](nshapticfeedbackmanager/performancetime/drawcompleted.md)
+- [NSHapticFeedbackManager.PerformanceTime.drawCompleted](./drawcompleted.md)
   Instructs the system to provide haptic feedback to the user the next time the screen is updated.
 
 

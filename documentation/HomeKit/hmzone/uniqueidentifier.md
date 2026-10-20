@@ -1,7 +1,8 @@
 # uniqueIdentifier
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for a zone.
 
@@ -19,11 +20,16 @@ The unique identifier for a zone.
 var uniqueIdentifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * uniqueIdentifier;
+```
+
 ## See Also
 
-- [var name: String](hmzone/name.md)
+### Identifying a Zone
+- [var name: String](./name.md)
   The name of the zone.
-- [func updateName(String, completionHandler: ((any Error)?) -> Void)](hmzone/updatename(_:completionhandler:).md)
+- [func updateName(String, completionHandler: ((any Error)?) -> Void)](./updatename%28_,completionhandler%29.md)
   Updates the name of the zone.
 
 

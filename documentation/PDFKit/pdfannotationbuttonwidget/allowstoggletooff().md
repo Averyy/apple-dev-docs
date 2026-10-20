@@ -1,12 +1,13 @@
 # allowsToggleToOff()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value indicating whether a radio button behaves in a toggling manner.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns a Boolean value indicating whether a radio button behaves in a toggling 
 func allowsToggleToOff() -> Bool
 ```
 
+```objc
+- (BOOL) allowsToggleToOff;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if clicking a radio button control that is already in the on state toggles it to the off state; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if clicking a radio button control that is already in the on state toggles it to the off state; otherwise [`false`](../../Swift/false.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # underlyingAccessory
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to the root accessory object.
 
@@ -16,7 +17,7 @@ var underlyingAccessory: Accessory? { get }
 
 #### Discussion
 
-Provides access to the abstracted ARKit [`Accessory`](https://developer.apple.com/documentation/arkit/accessory) object.
+Provides access to the abstracted ARKit [`Accessory`](../../../ARKit/accessory.md) object.
 
 
 ---

@@ -1,31 +1,33 @@
 # UIKit macros
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 Macros that UIKit defines.
 
 ## Topics
 
 ### Macros
-- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIView)](preview(_:traits:body:)-c7kr.md)
-- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIViewController)](preview(_:traits:body:)-en9c.md)
-- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIView)](preview(_:traits:arguments:body:)-6gm4c.md)
-- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIViewController)](preview(_:traits:arguments:body:)-7cbjv.md)
-- [var UIKIT_HAS_UIFOUNDATION_SYMBOLS: Int32](uikit_has_uifoundation_symbols.md)
+- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIView)](./preview%28_,traits,body%29-c7kr.md)
+- [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIViewController)](./preview%28_,traits,body%29-en9c.md)
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIView)](./preview%28_,traits,arguments,body%29-6gm4c.md)
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIViewController)](./preview%28_,traits,arguments,body%29-7cbjv.md)
+- [var UIKIT_HAS_UIFOUNDATION_SYMBOLS: Int32](./uikit_has_uifoundation_symbols.md)
 
 ## See Also
 
-- [struct UIOffset](uioffset.md)
+### Related types
+- [struct UIOffset](./uioffset.md)
   A structure that specifies an amount to offset a position.
-- [struct UIAxis](uiaxis.md)
+- [struct UIAxis](./uiaxis.md)
   A structure that specifies the layout axes.
-- [struct UIEdgeInsets](uiedgeinsets.md)
+- [struct UIEdgeInsets](./uiedgeinsets.md)
   The inset distances for views.
-- [struct NSDirectionalEdgeInsets](nsdirectionaledgeinsets.md)
+- [struct NSDirectionalEdgeInsets](./nsdirectionaledgeinsets.md)
   The inset distances for views, taking the user interface layout direction into account.
-- [struct NSDirectionalRectEdge](nsdirectionalrectedge.md)
+- [struct NSDirectionalRectEdge](./nsdirectionalrectedge.md)
   Constants that specify an edge or a set of edges, taking the user interface layout direction into account.
-- [enum NSRectAlignment](nsrectalignment.md)
+- [enum NSRectAlignment](./nsrectalignment.md)
   Constants that specify alignment to an edge or a set of edges depending on the user interface layout direction.
 
 

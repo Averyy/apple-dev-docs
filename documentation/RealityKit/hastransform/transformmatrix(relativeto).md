@@ -1,7 +1,8 @@
 # transformMatrix(relativeTo:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the 4 x 4 transform matrix of an entity relative to the given entity.
 
@@ -11,7 +12,7 @@ Gets the 4 x 4 transform matrix of an entity relative to the given entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -30,7 +31,8 @@ The transform of the entity relative to `referenceEntity`.
 
 ## See Also
 
-- [Transforming entities between RealityKit coordinate spaces](transforming-entities-between-realitykit-coordinate-spaces.md)
+### Using a matrix
+- [Transforming entities between RealityKit coordinate spaces](../transforming-entities-between-realitykit-coordinate-spaces.md)
   Move an entity between a volumetric window and an immersive space using coordinate space transformations.
 
 

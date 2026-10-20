@@ -1,23 +1,28 @@
 # CFRunLoopSourceCreate(_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a CFRunLoopSource object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFRunLoopSourceCreate(_ allocator: CFAllocator!, _ order: CFIndex, _ context: UnsafeMutablePointer<CFRunLoopSourceContext>!) -> CFRunLoopSource!
+```
+
+```c
+extern CFRunLoopSourceRefCFRunLoopSourceCreate(CFAllocatorRef allocator, CFIndex order, CFRunLoopSourceContext *context);
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ The new CFRunLoopSource object. You are responsible for releasing this object.
 
 #### Discussion
 
-The run loop source is not automatically added to a run loop. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The run loop source is not automatically added to a run loop. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
@@ -36,17 +41,18 @@ The run loop source is not automatically added to a run loop. Ownership follows 
 
 ## See Also
 
-- [func CFRunLoopSourceGetContext(CFRunLoopSource!, UnsafeMutablePointer<CFRunLoopSourceContext>!)](cfrunloopsourcegetcontext(_:_:).md)
+### CFRunLoopSource Miscellaneous Functions
+- [func CFRunLoopSourceGetContext(CFRunLoopSource!, UnsafeMutablePointer<CFRunLoopSourceContext>!)](./cfrunloopsourcegetcontext%28_,_%29.md)
   Returns the context information for a CFRunLoopSource object.
-- [func CFRunLoopSourceGetOrder(CFRunLoopSource!) -> CFIndex](cfrunloopsourcegetorder(_:).md)
+- [func CFRunLoopSourceGetOrder(CFRunLoopSource!) -> CFIndex](./cfrunloopsourcegetorder%28_%29.md)
   Returns the ordering parameter for a CFRunLoopSource object.
-- [func CFRunLoopSourceGetTypeID() -> CFTypeID](cfrunloopsourcegettypeid().md)
+- [func CFRunLoopSourceGetTypeID() -> CFTypeID](./cfrunloopsourcegettypeid%28%29.md)
   Returns the type identifier of the CFRunLoopSource opaque type.
-- [func CFRunLoopSourceInvalidate(CFRunLoopSource!)](cfrunloopsourceinvalidate(_:).md)
+- [func CFRunLoopSourceInvalidate(CFRunLoopSource!)](./cfrunloopsourceinvalidate%28_%29.md)
   Invalidates a CFRunLoopSource object, stopping it from ever firing again.
-- [func CFRunLoopSourceIsValid(CFRunLoopSource!) -> Bool](cfrunloopsourceisvalid(_:).md)
+- [func CFRunLoopSourceIsValid(CFRunLoopSource!) -> Bool](./cfrunloopsourceisvalid%28_%29.md)
   Returns a Boolean value that indicates whether a CFRunLoopSource object is valid and able to fire.
-- [func CFRunLoopSourceSignal(CFRunLoopSource!)](cfrunloopsourcesignal(_:).md)
+- [func CFRunLoopSourceSignal(CFRunLoopSource!)](./cfrunloopsourcesignal%28_%29.md)
   Signals a CFRunLoopSource object, marking it as ready to fire.
 
 

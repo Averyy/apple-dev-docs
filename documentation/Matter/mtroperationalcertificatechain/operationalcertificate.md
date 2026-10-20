@@ -1,7 +1,8 @@
 # operationalCertificate
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var operationalCertificate: Data { get set }
+```
+
+```objc
+@property (nonatomic, copy) MTRCertificateDERBytes operationalCertificate;
 ```
 
 

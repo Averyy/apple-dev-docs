@@ -1,7 +1,8 @@
 # unlockDoor(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func unlockDoor(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func unlockDoor() async throws
+```
+
+```objc
+- (void) unlockDoorWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

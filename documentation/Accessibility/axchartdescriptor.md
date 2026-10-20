@@ -1,7 +1,8 @@
 # AXChartDescriptor
 
 **Framework**: Accessibility  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains all the semantic information about an accessible chart.
 
@@ -20,63 +21,68 @@ An object that contains all the semantic information about an accessible chart.
 class AXChartDescriptor
 ```
 
+```objc
+@interface AXChartDescriptor : NSObject
+```
+
 ## Mentions
 
-- [Representing chart data as an audio graph](representing-chart-data-as-an-audio-graph.md)
+- [Representing chart data as an audio graph](./representing-chart-data-as-an-audio-graph.md)
 
 ## Topics
 
 ### Creating a chart
-- [convenience init(title: String?, summary: String?, xAxis: any AXDataAxisDescriptor, yAxis: AXNumericDataAxisDescriptor?, additionalAxes: [any AXDataAxisDescriptor], series: [AXDataSeriesDescriptor])](axchartdescriptor/init(title:summary:xaxis:yaxis:additionalaxes:series:).md)
+- [convenience init(title: String?, summary: String?, xAxis: any AXDataAxisDescriptor, yAxis: AXNumericDataAxisDescriptor?, additionalAxes: [any AXDataAxisDescriptor], series: [AXDataSeriesDescriptor])](./axchartdescriptor/init%28title,summary,xaxis,yaxis,additionalaxes,series%29.md)
   Creates a chart descriptor with the specified title, summary, x-axis descriptor, y-axis descriptor, descriptors for additional axes, and array of data series.
-- [convenience init(attributedTitle: NSAttributedString?, summary: String?, xAxis: any AXDataAxisDescriptor, yAxis: AXNumericDataAxisDescriptor?, additionalAxes: [any AXDataAxisDescriptor], series: [AXDataSeriesDescriptor])](axchartdescriptor/init(attributedtitle:summary:xaxis:yaxis:additionalaxes:series:).md)
+- [convenience init(attributedTitle: NSAttributedString?, summary: String?, xAxis: any AXDataAxisDescriptor, yAxis: AXNumericDataAxisDescriptor?, additionalAxes: [any AXDataAxisDescriptor], series: [AXDataSeriesDescriptor])](./axchartdescriptor/init%28attributedtitle,summary,xaxis,yaxis,additionalaxes,series%29.md)
   Creates a chart descriptor with the specified attributed title, summary, x-axis descriptor, y-axis descriptor, descriptors for additional axes, and array of data series.
 ### Specifying the chart title
-- [var title: String?](axchartdescriptor/title.md)
+- [var title: String?](./axchartdescriptor/title.md)
   The title of the chart.
-- [var attributedTitle: NSAttributedString?](axchartdescriptor/attributedtitle.md)
+- [var attributedTitle: NSAttributedString?](./axchartdescriptor/attributedtitle.md)
   An attributed version of the chart title.
 ### Specifying the chart summary
-- [var summary: String?](axchartdescriptor/summary.md)
+- [var summary: String?](./axchartdescriptor/summary.md)
   A description of the key takeaways or features of the chart.
 ### Specifying the axes
-- [var xAxis: any AXDataAxisDescriptor](axchartdescriptor/xaxis-7sb9a.md)
+- [var xAxis: any AXDataAxisDescriptor](./axchartdescriptor/xaxis-7sb9a.md)
   The axis descriptor for the chart’s x-axis.
-- [var yAxis: AXNumericDataAxisDescriptor?](axchartdescriptor/yaxis.md)
+- [var yAxis: AXNumericDataAxisDescriptor?](./axchartdescriptor/yaxis.md)
   The axis descriptor for the chart’s y-axis.
-- [var additionalAxes: [any AXDataAxisDescriptor]](axchartdescriptor/additionalaxes-2adwh.md)
+- [var additionalAxes: [any AXDataAxisDescriptor]](./axchartdescriptor/additionalaxes-2adwh.md)
   The descriptors for additional categorical or numerical axes beyond the x-axis and y-axis.
-- [protocol AXDataAxisDescriptor](axdataaxisdescriptor.md)
+- [protocol AXDataAxisDescriptor](./axdataaxisdescriptor.md)
   The basic interface for a data axis in a chart.
 ### Specifying a series of data points
-- [var series: [AXDataSeriesDescriptor]](axchartdescriptor/series.md)
+- [var series: [AXDataSeriesDescriptor]](./axchartdescriptor/series.md)
   The descriptors for each data series in the chart.
-- [class AXDataSeriesDescriptor](axdataseriesdescriptor.md)
+- [class AXDataSeriesDescriptor](./axdataseriesdescriptor.md)
   An object that represents a series of data points.
 ### Specifying the content layout
-- [var contentFrame: CGRect](axchartdescriptor/contentframe.md)
+- [var contentFrame: CGRect](./axchartdescriptor/contentframe.md)
   The bounds of the view, in screen coordinates, for visually rendering data values.
-- [var contentDirection: AXChartDescriptor.ContentDirection](axchartdescriptor/contentdirection-swift.property.md)
+- [var contentDirection: AXChartDescriptor.ContentDirection](./axchartdescriptor/contentdirection-swift.property.md)
   The direction of the content in the chart.
-- [AXChartDescriptor.ContentDirection](axchartdescriptor/contentdirection-swift.enum.md)
+- [AXChartDescriptor.ContentDirection](./axchartdescriptor/contentdirection-swift.enum.md)
   A constant that describes the content direction of the chart.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol AXChart](axchart.md)
+### Chart representation
+- [protocol AXChart](./axchart.md)
   A protocol that declares the minimum interface necessary for an accessibility element to act as a chart.
 
 

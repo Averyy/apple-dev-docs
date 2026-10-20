@@ -1,7 +1,8 @@
 # addMusic
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for the message that invites the user to add music to their library by subscribing to Apple Music.
 

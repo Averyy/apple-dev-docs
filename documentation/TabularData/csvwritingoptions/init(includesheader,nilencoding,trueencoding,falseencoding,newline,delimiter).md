@@ -1,7 +1,8 @@
 # init(includesHeader:nilEncoding:trueEncoding:falseEncoding:newline:delimiter:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set of options for writing a CSV file.
 

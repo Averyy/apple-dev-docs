@@ -1,7 +1,8 @@
 # MTLAccelerationStructureMotionCurveGeometryDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.0+
@@ -17,55 +18,60 @@
 class MTLAccelerationStructureMotionCurveGeometryDescriptor
 ```
 
+```objc
+@interface MTLAccelerationStructureMotionCurveGeometryDescriptor : MTLAccelerationStructureGeometryDescriptor
+```
+
 ## Mentions
 
-- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+- [Improving ray-tracing data access using per-primitive data](./improving-ray-tracing-data-access-using-per-primitive-data.md)
 
 ## Topics
 
 ### Instance Properties
-- [var controlPointBuffers: [MTLMotionKeyframeData]](mtlaccelerationstructuremotioncurvegeometrydescriptor/controlpointbuffers.md)
-- [var controlPointCount: Int](mtlaccelerationstructuremotioncurvegeometrydescriptor/controlpointcount.md)
-- [var controlPointFormat: MTLAttributeFormat](mtlaccelerationstructuremotioncurvegeometrydescriptor/controlpointformat.md)
-- [var controlPointStride: Int](mtlaccelerationstructuremotioncurvegeometrydescriptor/controlpointstride.md)
-- [var curveBasis: MTLCurveBasis](mtlaccelerationstructuremotioncurvegeometrydescriptor/curvebasis.md)
-- [var curveEndCaps: MTLCurveEndCaps](mtlaccelerationstructuremotioncurvegeometrydescriptor/curveendcaps.md)
-- [var curveType: MTLCurveType](mtlaccelerationstructuremotioncurvegeometrydescriptor/curvetype.md)
-- [var indexBuffer: (any MTLBuffer)?](mtlaccelerationstructuremotioncurvegeometrydescriptor/indexbuffer.md)
-- [var indexBufferOffset: Int](mtlaccelerationstructuremotioncurvegeometrydescriptor/indexbufferoffset.md)
-- [var indexType: MTLIndexType](mtlaccelerationstructuremotioncurvegeometrydescriptor/indextype.md)
-- [var radiusBuffers: [MTLMotionKeyframeData]](mtlaccelerationstructuremotioncurvegeometrydescriptor/radiusbuffers.md)
-- [var radiusFormat: MTLAttributeFormat](mtlaccelerationstructuremotioncurvegeometrydescriptor/radiusformat.md)
-- [var radiusStride: Int](mtlaccelerationstructuremotioncurvegeometrydescriptor/radiusstride.md)
-- [var segmentControlPointCount: Int](mtlaccelerationstructuremotioncurvegeometrydescriptor/segmentcontrolpointcount.md)
-- [var segmentCount: Int](mtlaccelerationstructuremotioncurvegeometrydescriptor/segmentcount.md)
+- [var controlPointBuffers: [MTLMotionKeyframeData]](./mtlaccelerationstructuremotioncurvegeometrydescriptor/controlpointbuffers.md)
+- [var controlPointCount: Int](./mtlaccelerationstructuremotioncurvegeometrydescriptor/controlpointcount.md)
+- [var controlPointFormat: MTLAttributeFormat](./mtlaccelerationstructuremotioncurvegeometrydescriptor/controlpointformat.md)
+- [var controlPointStride: Int](./mtlaccelerationstructuremotioncurvegeometrydescriptor/controlpointstride.md)
+- [var curveBasis: MTLCurveBasis](./mtlaccelerationstructuremotioncurvegeometrydescriptor/curvebasis.md)
+- [var curveEndCaps: MTLCurveEndCaps](./mtlaccelerationstructuremotioncurvegeometrydescriptor/curveendcaps.md)
+- [var curveType: MTLCurveType](./mtlaccelerationstructuremotioncurvegeometrydescriptor/curvetype.md)
+- [var indexBuffer: (any MTLBuffer)?](./mtlaccelerationstructuremotioncurvegeometrydescriptor/indexbuffer.md)
+- [var indexBufferOffset: Int](./mtlaccelerationstructuremotioncurvegeometrydescriptor/indexbufferoffset.md)
+- [var indexType: MTLIndexType](./mtlaccelerationstructuremotioncurvegeometrydescriptor/indextype.md)
+- [var radiusBuffers: [MTLMotionKeyframeData]](./mtlaccelerationstructuremotioncurvegeometrydescriptor/radiusbuffers.md)
+- [var radiusFormat: MTLAttributeFormat](./mtlaccelerationstructuremotioncurvegeometrydescriptor/radiusformat.md)
+- [var radiusStride: Int](./mtlaccelerationstructuremotioncurvegeometrydescriptor/radiusstride.md)
+- [var segmentControlPointCount: Int](./mtlaccelerationstructuremotioncurvegeometrydescriptor/segmentcontrolpointcount.md)
+- [var segmentCount: Int](./mtlaccelerationstructuremotioncurvegeometrydescriptor/segmentcount.md)
 
 ## Relationships
 
 ### Inherits From
-- [MTLAccelerationStructureGeometryDescriptor](mtlaccelerationstructuregeometrydescriptor.md)
+- [MTLAccelerationStructureGeometryDescriptor](./mtlaccelerationstructuregeometrydescriptor.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTL4AccelerationStructureMotionTriangleGeometryDescriptor](mtl4accelerationstructuremotiontrianglegeometrydescriptor.md)
+### Motion geometry descriptors
+- [class MTL4AccelerationStructureMotionTriangleGeometryDescriptor](./mtl4accelerationstructuremotiontrianglegeometrydescriptor.md)
   Describes motion triangle geometry, suitable for motion ray tracing.
-- [class MTLAccelerationStructureMotionTriangleGeometryDescriptor](mtlaccelerationstructuremotiontrianglegeometrydescriptor.md)
+- [class MTLAccelerationStructureMotionTriangleGeometryDescriptor](./mtlaccelerationstructuremotiontrianglegeometrydescriptor.md)
   A description of a list of triangle primitives, as motion keyframe data, to turn into an acceleration structure.
-- [class MTL4AccelerationStructureMotionCurveGeometryDescriptor](mtl4accelerationstructuremotioncurvegeometrydescriptor.md)
+- [class MTL4AccelerationStructureMotionCurveGeometryDescriptor](./mtl4accelerationstructuremotioncurvegeometrydescriptor.md)
   Describes motion curve geometry, suitable for motion ray tracing.
-- [class MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor](mtl4accelerationstructuremotionboundingboxgeometrydescriptor.md)
+- [class MTL4AccelerationStructureMotionBoundingBoxGeometryDescriptor](./mtl4accelerationstructuremotionboundingboxgeometrydescriptor.md)
   Describes motion bounding box geometry, suitable for motion ray tracing.
-- [class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor](mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md)
+- [class MTLAccelerationStructureMotionBoundingBoxGeometryDescriptor](./mtlaccelerationstructuremotionboundingboxgeometrydescriptor.md)
   A description of a list of bounding boxes, as motion keyframe data, to turn into an acceleration structure.
-- [class MTLMotionKeyframeData](mtlmotionkeyframedata.md)
+- [class MTLMotionKeyframeData](./mtlmotionkeyframedata.md)
   Geometry data for a specific keyframe to use in a moving instance.
 
 

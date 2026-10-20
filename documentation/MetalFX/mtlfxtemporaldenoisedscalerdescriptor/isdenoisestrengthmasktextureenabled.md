@@ -1,7 +1,8 @@
 # isDenoiseStrengthMaskTextureEnabled
 
 **Framework**: MetalFX  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scaler evaluates a denoise strength mask texture as part of its operation.
 
@@ -16,6 +17,10 @@ A Boolean value indicating whether the scaler evaluates a denoise strength mask 
 
 ```swift
 var isDenoiseStrengthMaskTextureEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, readwrite, getter=isDenoiseStrengthMaskTextureEnabled) BOOL denoiseStrengthMaskTextureEnabled;
 ```
 
 

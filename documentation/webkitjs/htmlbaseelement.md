@@ -1,7 +1,8 @@
 # HTMLBaseElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLBaseElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [href](htmlbaseelement/1630778-href.md)
-- [target](htmlbaseelement/1631788-target.md)
+- [href](./htmlbaseelement/api-1630778-href.md)
+- [target](./htmlbaseelement/api-1631788-target.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

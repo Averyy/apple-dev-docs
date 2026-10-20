@@ -1,7 +1,8 @@
 # HIShapeCreateMutableCopy(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.2+
@@ -10,6 +11,10 @@
 
 ```swift
 func HIShapeCreateMutableCopy(_ inOrig: HIShape!) -> Unmanaged<HIMutableShape>!
+```
+
+```c
+HIMutableShapeRef HIShapeCreateMutableCopy(HIShapeRef inOrig);
 ```
 
 

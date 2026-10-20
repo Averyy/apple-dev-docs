@@ -1,7 +1,8 @@
 # init(rawValue:parentID:seatControl:pose:entity:)
 
 **Framework**: TabletopKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - visionOS 2.0+
@@ -15,7 +16,8 @@
 
 ## See Also
 
-- [init(rawValue: UInt64, parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, boundingBox: Rect3D)](rawvaluestate/init(rawvalue:parentid:seatcontrol:pose:boundingbox:).md)
+### Creating a die state
+- [init(rawValue: UInt64, parentID: EquipmentIdentifier, seatControl: ControllingSeats, pose: TableVisualState.Pose2D, boundingBox: Rect3D)](./init%28rawvalue,parentid,seatcontrol,pose,boundingbox%29.md)
   Creates a state for equipment using the specified raw value, location, and player interactions.
 
 

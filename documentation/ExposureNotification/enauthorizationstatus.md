@@ -1,19 +1,26 @@
 # ENAuthorizationStatus
 
 **Framework**: Exposure Notification  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A set of cases that indicates the authorization status for the app.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 enum ENAuthorizationStatus
+```
+
+```c
+enum ENAuthorizationStatus : NSInteger;
 ```
 
 #### Overview
@@ -23,30 +30,31 @@ enum ENAuthorizationStatus
 ## Topics
 
 ### Authorization States
-- [ENAuthorizationStatus.authorized](enauthorizationstatus/authorized.md)
+- [ENAuthorizationStatus.authorized](./enauthorizationstatus/authorized.md)
   Authorization is granted.
-- [ENAuthorizationStatus.notAuthorized](enauthorizationstatus/notauthorized.md)
+- [ENAuthorizationStatus.notAuthorized](./enauthorizationstatus/notauthorized.md)
   Authorization is denied.
-- [ENAuthorizationStatus.restricted](enauthorizationstatus/restricted.md)
+- [ENAuthorizationStatus.restricted](./enauthorizationstatus/restricted.md)
   Authorization is restricted.
-- [ENAuthorizationStatus.unknown](enauthorizationstatus/unknown.md)
+- [ENAuthorizationStatus.unknown](./enauthorizationstatus/unknown.md)
   Authorization is not determined.
 ### Initializers
-- [init?(rawValue: Int)](enauthorizationstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./enauthorizationstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum ENStatus](enstatus.md)
+### Status
+- [enum ENStatus](./enstatus.md)
   A set of cases that represents the overall status of exposure notification on the system.
 
 

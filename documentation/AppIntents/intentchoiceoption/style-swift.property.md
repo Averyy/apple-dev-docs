@@ -1,7 +1,8 @@
 # style
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The style applied to the option, affecting its visual appearance in the system UI.
 

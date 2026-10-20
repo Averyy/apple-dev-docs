@@ -1,7 +1,8 @@
 # init(anchor:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view aligned scroll behavior with the provided anchor.
 

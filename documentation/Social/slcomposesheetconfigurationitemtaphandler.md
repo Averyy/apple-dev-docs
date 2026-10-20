@@ -1,7 +1,8 @@
 # SLComposeSheetConfigurationItemTapHandler
 
 **Framework**: Social  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The method signature for a configuration item’s tap handler block.
 
@@ -16,9 +17,14 @@ The method signature for a configuration item’s tap handler block.
 typealias SLComposeSheetConfigurationItemTapHandler = () -> Void
 ```
 
+```c
+typedef void (^)(void) SLComposeSheetConfigurationItemTapHandler;
+```
+
 ## See Also
 
-- [var tapHandler: SLComposeSheetConfigurationItemTapHandler!](slcomposesheetconfigurationitem/taphandler.md)
+### Responding to User Interaction
+- [var tapHandler: SLComposeSheetConfigurationItemTapHandler!](./slcomposesheetconfigurationitem/taphandler.md)
   A custom tap handler block that handles user interaction with a configuration item.
 
 

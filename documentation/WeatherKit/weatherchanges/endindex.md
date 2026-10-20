@@ -1,7 +1,8 @@
 # endIndex
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end index for the weather changes.
 

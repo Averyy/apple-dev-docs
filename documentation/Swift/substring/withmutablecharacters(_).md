@@ -1,7 +1,8 @@
 # withMutableCharacters(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the given closure to a mutable view of the string’s characters.
 

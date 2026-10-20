@@ -1,7 +1,8 @@
 # kSecCodeAttributeBundleVersion
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value indicates the bundle version.
 
@@ -13,6 +14,10 @@ A key whose value indicates the bundle version.
 
 ```swift
 let kSecCodeAttributeBundleVersion: CFString
+```
+
+```c
+extern CFStringRef const kSecCodeAttributeBundleVersion;
 ```
 
 

@@ -1,7 +1,8 @@
 # WeatherCondition.hot
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 High temperatures.
 
@@ -22,9 +23,10 @@ case hot
 
 ## See Also
 
-- [WeatherCondition.frigid](weathercondition/frigid.md)
+### Getting hazardous properties
+- [WeatherCondition.frigid](./frigid.md)
   Frigid conditions, low temperatures, or ice crystals.
-- [WeatherCondition.hail](weathercondition/hail.md)
+- [WeatherCondition.hail](./hail.md)
   Hail.
 
 

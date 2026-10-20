@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 Returns a scoped attribute container that a key path indicates.
@@ -23,21 +24,22 @@ subscript<S>(dynamicMember keyPath: KeyPath<AttributeScopes, S.Type>) -> ScopedA
 
 #### Discussion
 
-Use this subscript when you need to work with an explicit attribute scope. For example, the SwiftUI [`foregroundColor`](attributescopes/swiftuiattributes/foregroundcolor.md) attribute overrides the attribute in the AppKit and UIKit scopes with the same name. If you work with both the SwiftUI and UIKit scopes, you can use the syntax `myAttributedString.uiKit.foregroundColor` to disambiguate and explicitly use the UIKit attribute.
+Use this subscript when you need to work with an explicit attribute scope. For example, the SwiftUI [`foregroundColor`](../attributescopes/swiftuiattributes/foregroundcolor.md) attribute overrides the attribute in the AppKit and UIKit scopes with the same name. If you work with both the SwiftUI and UIKit scopes, you can use the syntax `myAttributedString.uiKit.foregroundColor` to disambiguate and explicitly use the UIKit attribute.
 
-The attribute container that this method returns contains only attributes that exist, and are present and identical for the entire attributed string. To find portions of the string with consistent attributes, use the [`runs`](attributedstringprotocol/runs.md) property.
+The attribute container that this method returns contains only attributes that exist, and are present and identical for the entire attributed string. To find portions of the string with consistent attributes, use the [`runs`](./runs.md) property.
 
 Getting or setting stringwide attributes with this subscript has `O(n)` behavior in the worst case, where `n` is the number of runs.
 
 ## See Also
 
-- [subscript<K>(K.Type) -> K.Value?](attributedstringprotocol/subscript(_:)-4thnp.md)
+### Accessing Whole-String Attributes
+- [subscript<K>(K.Type) -> K.Value?](./subscript%28_%29-4thnp.md)
   Returns an attribute value that corresponds to an attributed string key.
-- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](attributedstringprotocol/subscript(dynamicmember:)-2wake.md)
+- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](./subscript%28dynamicmember%29-2wake.md)
   Returns an attribute value that a key path indicates.
-- [enum AttributeDynamicLookup](attributedynamiclookup.md)
+- [enum AttributeDynamicLookup](../attributedynamiclookup.md)
   A type to support dynamic member lookup of attributes and containers.
-- [struct ScopedAttributeContainer](scopedattributecontainer.md)
+- [struct ScopedAttributeContainer](../scopedattributecontainer.md)
   An attribute container that allows dynamic member lookup of its contents within the specified attribute scope.
 
 

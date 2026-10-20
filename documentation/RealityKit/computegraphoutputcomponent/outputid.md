@@ -1,7 +1,8 @@
 # outputID
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the output node in the compute graph that this entity represents.
 

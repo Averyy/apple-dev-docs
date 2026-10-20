@@ -1,7 +1,8 @@
 # init(language:revision:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates model parameters.
 

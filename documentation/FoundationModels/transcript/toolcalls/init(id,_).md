@@ -1,7 +1,8 @@
 # init(id:_:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a collection that contains the tool calls you provide.
 

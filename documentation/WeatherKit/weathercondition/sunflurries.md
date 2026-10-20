@@ -1,7 +1,8 @@
 # WeatherCondition.sunFlurries
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Snow flurries with visible sun.
 
@@ -22,13 +23,14 @@ case sunFlurries
 
 ## See Also
 
-- [WeatherCondition.flurries](weathercondition/flurries.md)
+### Getting winter precipitation properties
+- [WeatherCondition.flurries](./flurries.md)
   Flurries or light snow.
-- [WeatherCondition.sleet](weathercondition/sleet.md)
+- [WeatherCondition.sleet](./sleet.md)
   Sleet.
-- [WeatherCondition.snow](weathercondition/snow.md)
+- [WeatherCondition.snow](./snow.md)
   Snow.
-- [WeatherCondition.wintryMix](weathercondition/wintrymix.md)
+- [WeatherCondition.wintryMix](./wintrymix.md)
   Wintry mix.
 
 

@@ -1,7 +1,8 @@
 # script
 
 **Framework**: Automator  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An `OSAScript` object representing the receiver’s script containing the `on run` command handler.
 
@@ -14,6 +15,10 @@ An `OSAScript` object representing the receiver’s script containing the `on ru
 ```swift
 @NSCopying
 var script: OSAScript? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) OSAScript * script;
 ```
 
 #### Discussion

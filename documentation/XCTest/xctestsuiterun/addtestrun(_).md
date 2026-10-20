@@ -1,7 +1,8 @@
 # addTestRun(_:)
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a test run to the test suite.
 
@@ -11,13 +12,18 @@ Adds a test run to the test suite.
 func addTestRun(_ testRun: XCTestRun)
 ```
 
+```objc
+- (void) addTestRun:(XCTestRun *) testRun;
+```
+
 ## Parameters
 
 - `testRun`: A test run for the test suite to manage.
 
 ## See Also
 
-- [var testRuns: [XCTestRun]](xctestsuiterun/testruns.md)
+### Managing Test Runs
+- [var testRuns: [XCTestRun]](./testruns.md)
   An array of test runs that the test suite manages.
 
 

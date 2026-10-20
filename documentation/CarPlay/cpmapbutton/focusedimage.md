@@ -1,7 +1,8 @@
 # focusedImage
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display when focus is on the button.
 
@@ -16,13 +17,18 @@ The image to display when focus is on the button.
 var focusedImage: UIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIImage * focusedImage;
+```
+
 #### Discussion
 
-If `focusedImage` is nil, the button uses [`image`](cpmapbutton/image.md) as the default, creating a focused image using the alpha values from the image.
+If `focusedImage` is nil, the button uses [`image`](./image.md) as the default, creating a focused image using the alpha values from the image.
 
 ## See Also
 
-- [var image: UIImage?](cpmapbutton/image.md)
+### Providing Button Images
+- [var image: UIImage?](./image.md)
   The image to display on the button.
 
 

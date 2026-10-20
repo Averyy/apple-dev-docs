@@ -1,7 +1,8 @@
 # cgColor
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Core Graphics color object corresponding to the color.
 
@@ -12,6 +13,10 @@ The Core Graphics color object corresponding to the color.
 
 ```swift
 var cgColor: CGColor { get }
+```
+
+```objc
+@property (readonly) CGColorRef CGColor;
 ```
 
 #### Discussion

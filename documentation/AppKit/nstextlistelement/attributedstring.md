@@ -1,7 +1,8 @@
 # attributedString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attributed string that represents the string the framework displays for this element taking into account markers and the indentation level of the list element.
 
@@ -14,9 +15,14 @@ An attributed string that represents the string the framework displays for this 
 var attributedString: NSAttributedString { get }
 ```
 
+```objc
+@property (strong, readonly) NSAttributedString * attributedString;
+```
+
 ## See Also
 
-- [var contents: NSAttributedString?](nstextlistelement/contents.md)
+### Accessing the formatted string data
+- [var contents: NSAttributedString?](./contents.md)
   The text list element contents without markers and formatting.
 
 

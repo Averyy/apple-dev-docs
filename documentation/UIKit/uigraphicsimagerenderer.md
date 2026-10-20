@@ -1,7 +1,8 @@
 # UIGraphicsImageRenderer
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A graphics renderer for creating Core Graphics-backed images.
 
@@ -18,9 +19,13 @@ A graphics renderer for creating Core Graphics-backed images.
 class UIGraphicsImageRenderer
 ```
 
+```objc
+@interface UIGraphicsImageRenderer : UIGraphicsRenderer
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](./adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Overview
 
@@ -28,15 +33,15 @@ You can use image renderers to accomplish drawing tasks, without having to handl
 
 To render an image:
 
-1. Optionally, create a [`UIGraphicsImageRendererFormat`](uigraphicsimagerendererformat.md) object to specify nondefault parameters the renderer should use to create its context.
-2. Instantiate a [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md) object, providing the dimensions of the output image and a format object. The renderer uses default values for the current device if you don’t provide format object, as demonstrated in [`Creating a graphics image renderer`](uigraphicsimagerenderer#Creating-a-graphics-image-renderer.md).
-3. Choose one of the rendering methods depending on the output you desire: [`image(actions:)`](uigraphicsimagerenderer/image(actions:).md) returns a [`UIImage`](uiimage.md) object; [`jpegData(withCompressionQuality:actions:)`](uigraphicsimagerenderer/jpegdata(withcompressionquality:actions:).md) returns a JPEG-encoded [`Data`](https://developer.apple.com/documentation/foundation/data) object; and [`pngData(actions:)`](uigraphicsimagerenderer/pngdata(actions:).md) returns a PNG-encoded [`Data`](https://developer.apple.com/documentation/foundation/data) object.
-4. Execute your chosen method, providing Core Graphics drawing instructions as the closure argument, as shown in [`Creating an image with an image renderer`](uigraphicsimagerenderer#Creating-an-image-with-an-image-renderer.md). [`Using blend mode`](uigraphicsimagerenderer#Using-blend-mode.md) demonstrates some of the more advanced rendering features you can use in your drawing instructions.
-5. Optionally, you can use Core Graphics drawing code within the drawing instructions you provide to the rendering method, as shown in [`Using Core Graphics rendering functions`](uigraphicsimagerenderer#Using-Core-Graphics-rendering-functions.md).
+1. Optionally, create a [`UIGraphicsImageRendererFormat`](./uigraphicsimagerendererformat.md) object to specify nondefault parameters the renderer should use to create its context.
+2. Instantiate a [`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md) object, providing the dimensions of the output image and a format object. The renderer uses default values for the current device if you don’t provide format object, as demonstrated in [Creating a graphics image renderer](./uigraphicsimagerenderer.md#Creating-a-graphics-image-renderer).
+3. Choose one of the rendering methods depending on the output you desire: [`image(actions:)`](./uigraphicsimagerenderer/image%28actions%29.md) returns a [`UIImage`](./uiimage.md) object; [`jpegData(withCompressionQuality:actions:)`](./uigraphicsimagerenderer/jpegdata%28withcompressionquality,actions%29.md) returns a JPEG-encoded [`Data`](../Foundation/data.md) object; and [`pngData(actions:)`](./uigraphicsimagerenderer/pngdata%28actions%29.md) returns a PNG-encoded [`Data`](../Foundation/data.md) object.
+4. Execute your chosen method, providing Core Graphics drawing instructions as the closure argument, as shown in [Creating an image with an image renderer](./uigraphicsimagerenderer.md#Creating-an-image-with-an-image-renderer). [Using blend mode](./uigraphicsimagerenderer.md#Using-blend-mode) demonstrates some of the more advanced rendering features you can use in your drawing instructions.
+5. Optionally, you can use Core Graphics drawing code within the drawing instructions you provide to the rendering method, as shown in [Using Core Graphics rendering functions](./uigraphicsimagerenderer.md#Using-Core-Graphics-rendering-functions).
 
 After initializing an image renderer, you can use it to draw multiple images with the same configuration. An image renderer keeps a cache of Core Graphics contexts, so reusing the same renderer can be more efficient than creating new renderers.
 
-##### Creating a Graphics Image Renderer
+##### Creating a graphics image renderer
 
 Create an image renderer, providing the size of the output image:
 
@@ -52,13 +57,13 @@ let renderer = UIGraphicsImageRenderer(size: CGSize(width: 200, height: 200))
 UIGraphicsImageRenderer *renderer = [[UIGraphicsImageRenderer alloc] initWithSize:CGSizeMake(200, 200)];
 ```
 
-You can instead use one of the other [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md) initializers to specify a renderer format ([`UIGraphicsImageRendererFormat`](uigraphicsimagerendererformat.md)) in addition to the size. This allows you to configure the underlying Core Graphics context for wide color and retina images.
+You can instead use one of the other [`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md) initializers to specify a renderer format ([`UIGraphicsImageRendererFormat`](./uigraphicsimagerendererformat.md)) in addition to the size. This allows you to configure the underlying Core Graphics context for wide color and retina images.
 
-If you don’t provide a format, the renderer uses the [`default()`](uigraphicsrendererformat/default().md) format, which creates a context best suited for the current device.
+If you don’t provide a format, the renderer uses the [`default()`](./uigraphicsrendererformat/default%28%29.md) format, which creates a context best suited for the current device.
 
-##### Creating an Image with an Image Renderer
+##### Creating an image with an image renderer
 
-Use the [`image(actions:)`](uigraphicsimagerenderer/image(actions:).md) method to create an image ([`UIImage`](uiimage.md) object) with an image renderer. This method takes a closure that represents the drawing actions. Within this closure, the renderer creates a Core Graphics context using the parameters provided during renderer initialization, and sets this Core Graphics context to be the current context.
+Use the [`image(actions:)`](./uigraphicsimagerenderer/image%28actions%29.md) method to create an image ([`UIImage`](./uiimage.md) object) with an image renderer. This method takes a closure that represents the drawing actions. Within this closure, the renderer creates a Core Graphics context using the parameters provided during renderer initialization, and sets this Core Graphics context to be the current context.
 
 **Swift**:
 
@@ -82,17 +87,17 @@ let image = renderer.image { (context) in
   }];
 ```
 
-The drawing actions closure takes a single argument of type [`UIGraphicsImageRendererContext`](uigraphicsimagerenderercontext.md). This provides access to some high-level drawing functions, such as [`fill(_:)`](uigraphicsrenderercontext/fill(_:).md), through the [`UIGraphicsRendererContext`](uigraphicsrenderercontext.md) superclass.
+The drawing actions closure takes a single argument of type [`UIGraphicsImageRendererContext`](./uigraphicsimagerenderercontext.md). This provides access to some high-level drawing functions, such as [`fill(_:)`](./uigraphicsrenderercontext/fill%28_%29.md), through the [`UIGraphicsRendererContext`](./uigraphicsrenderercontext.md) superclass.
 
 The above code creates the following image:
 
-![Image showing a blue square in the top left of a larger white squares](/images/com.apple.uikit/media-2874999@2x.png)
+![Image showing a blue square in the top left of a larger white squares](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2874999@2x.png)
 
-In addition to the [`image(actions:)`](uigraphicsimagerenderer/image(actions:).md) method that creates an [`UIImage`](uiimage.md) object, [`UIGraphicsImageRenderer`](uigraphicsimagerenderer.md) also has [`jpegData(withCompressionQuality:actions:)`](uigraphicsimagerenderer/jpegdata(withcompressionquality:actions:).md) and [`pngData(actions:)`](uigraphicsimagerenderer/pngdata(actions:).md) methods that create [`Data`](https://developer.apple.com/documentation/foundation/data) objects containing the image encoded as a JPEG or a PNG respectively. All three methods take the same approach as detailed here, accepting a block that represents the drawing actions.
+In addition to the [`image(actions:)`](./uigraphicsimagerenderer/image%28actions%29.md) method that creates an [`UIImage`](./uiimage.md) object, [`UIGraphicsImageRenderer`](./uigraphicsimagerenderer.md) also has [`jpegData(withCompressionQuality:actions:)`](./uigraphicsimagerenderer/jpegdata%28withcompressionquality,actions%29.md) and [`pngData(actions:)`](./uigraphicsimagerenderer/pngdata%28actions%29.md) methods that create [`Data`](../Foundation/data.md) objects containing the image encoded as a JPEG or a PNG respectively. All three methods take the same approach as detailed here, accepting a block that represents the drawing actions.
 
-##### Using Blend Mode
+##### Using blend mode
 
-The utility methods on [`UIGraphicsImageRendererContext`](uigraphicsimagerenderercontext.md) also offer a variant that accepts a [`CGBlendMode`](https://developer.apple.com/documentation/coregraphics/cgblendmode) value. This value determines how to combine the pixel values when painting.
+The utility methods on [`UIGraphicsImageRendererContext`](./uigraphicsimagerenderercontext.md) also offer a variant that accepts a [`CGBlendMode`](../CoreGraphics/cgblendmode.md) value. This value determines how to combine the pixel values when painting.
 
 **Swift**:
 
@@ -122,11 +127,11 @@ let image = renderer.image { (context) in
 
 This code draws a second square, using a blend mode of multiply. The following image shows the result.
 
-![Image showing two overlapping squares, one blue, the other turquoise, in the top-left and bottom-right of a white background square respectively.](/images/com.apple.uikit/media-2875000@2x.png)
+![Image showing two overlapping squares, one blue, the other turquoise, in the top-left and bottom-right of a white background square respectively.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2875000@2x.png)
 
-##### Using Core Graphics Rendering Functions
+##### Using Core Graphics rendering functions
 
-The [`UIGraphicsImageRendererContext`](uigraphicsimagerenderercontext.md) available in the image closure has a [`cgContext`](uigraphicsrenderercontext/cgcontext.md) property, which allows you to use Core Graphics rendering functions directly. For example, the following code demonstrates how to add a circle to the image:
+The [`UIGraphicsImageRendererContext`](./uigraphicsimagerenderercontext.md) available in the image closure has a [`cgContext`](./uigraphicsrenderercontext/cgcontext.md) property, which allows you to use Core Graphics rendering functions directly. For example, the following code demonstrates how to add a circle to the image:
 
 **Swift**:
 
@@ -160,60 +165,61 @@ let image = renderer.image { (context) in
   }];
 ```
 
-This code uses the [`fillEllipse(in:)`](https://developer.apple.com/documentation/coregraphics/cgcontext/fillellipse(in:)) method on [`CGContext`](https://developer.apple.com/documentation/coregraphics/cgcontext) to draw a green circle on the blue and turquoise squares image; the following image shows the result.
+This code uses the [`fillEllipse(in:)`](../CoreGraphics/cgcontext/fillellipse%28in%29.md) method on [`CGContext`](../CoreGraphics/cgcontext.md) to draw a green circle on the blue and turquoise squares image; the following image shows the result.
 
-![An image showing two overlapping squares and an overlaid green circle.](/images/com.apple.uikit/media-2875001@2x.png)
+![An image showing two overlapping squares and an overlaid green circle.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2875001@2x.png)
 
 ## Topics
 
 ### Initializing an image renderer
-- [init(bounds: CGRect, format: UIGraphicsImageRendererFormat)](uigraphicsimagerenderer/init(bounds:format:).md)
+- [init(bounds: CGRect, format: UIGraphicsImageRendererFormat)](./uigraphicsimagerenderer/init%28bounds,format%29.md)
   Creates an image renderer with the specified bounds and format.
-- [convenience init(size: CGSize)](uigraphicsimagerenderer/init(size:).md)
+- [convenience init(size: CGSize)](./uigraphicsimagerenderer/init%28size%29.md)
   Creates an image renderer for drawing images of the specified size.
-- [init(size: CGSize, format: UIGraphicsImageRendererFormat)](uigraphicsimagerenderer/init(size:format:).md)
+- [init(size: CGSize, format: UIGraphicsImageRendererFormat)](./uigraphicsimagerenderer/init%28size,format%29.md)
   Creates an image renderer with the specified size and format.
 ### Creating images
-- [func image(actions: (UIGraphicsImageRendererContext) -> Void) -> UIImage](uigraphicsimagerenderer/image(actions:).md)
+- [func image(actions: (UIGraphicsImageRendererContext) -> Void) -> UIImage](./uigraphicsimagerenderer/image%28actions%29.md)
   Creates an image from a set of drawing instructions.
-- [func jpegData(withCompressionQuality: CGFloat, actions: (UIGraphicsImageRendererContext) -> Void) -> Data](uigraphicsimagerenderer/jpegdata(withcompressionquality:actions:).md)
+- [func jpegData(withCompressionQuality: CGFloat, actions: (UIGraphicsImageRendererContext) -> Void) -> Data](./uigraphicsimagerenderer/jpegdata%28withcompressionquality,actions%29.md)
   Creates a JPEG-encoded image from a set of drawing instructions.
-- [func pngData(actions: (UIGraphicsImageRendererContext) -> Void) -> Data](uigraphicsimagerenderer/pngdata(actions:).md)
+- [func pngData(actions: (UIGraphicsImageRendererContext) -> Void) -> Data](./uigraphicsimagerenderer/pngdata%28actions%29.md)
   Creates a PNG-encoded image from a set of drawing instructions.
-- [UIGraphicsImageRenderer.DrawingActions](uigraphicsimagerenderer/drawingactions.md)
+- [UIGraphicsImageRenderer.DrawingActions](./uigraphicsimagerenderer/drawingactions.md)
   A closure for drawing an image.
 
 ## Relationships
 
 ### Inherits From
-- [UIGraphicsRenderer](uigraphicsrenderer.md)
+- [UIGraphicsRenderer](./uigraphicsrenderer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class UIGraphicsRenderer](uigraphicsrenderer.md)
+### Graphics contexts
+- [class UIGraphicsRenderer](./uigraphicsrenderer.md)
   An abstract base class for creating graphics renderers.
-- [class UIGraphicsRendererContext](uigraphicsrenderercontext.md)
+- [class UIGraphicsRendererContext](./uigraphicsrenderercontext.md)
   The base class for the drawing environments for graphics renderers.
-- [class UIGraphicsRendererFormat](uigraphicsrendererformat.md)
+- [class UIGraphicsRendererFormat](./uigraphicsrendererformat.md)
   A set of drawing attributes that represents the configuration of a graphics renderer context.
-- [class UIGraphicsImageRendererContext](uigraphicsimagerenderercontext.md)
+- [class UIGraphicsImageRendererContext](./uigraphicsimagerenderercontext.md)
   The drawing environment for an image renderer.
-- [class UIGraphicsImageRendererFormat](uigraphicsimagerendererformat.md)
+- [class UIGraphicsImageRendererFormat](./uigraphicsimagerendererformat.md)
   A set of drawing attributes that represents the configuration of an image renderer context.
-- [class UIGraphicsPDFRenderer](uigraphicspdfrenderer.md)
+- [class UIGraphicsPDFRenderer](./uigraphicspdfrenderer.md)
   A graphics renderer for creating PDFs.
-- [class UIGraphicsPDFRendererContext](uigraphicspdfrenderercontext.md)
+- [class UIGraphicsPDFRendererContext](./uigraphicspdfrenderercontext.md)
   The drawing environment for a PDF renderer.
-- [class UIGraphicsPDFRendererFormat](uigraphicspdfrendererformat.md)
+- [class UIGraphicsPDFRendererFormat](./uigraphicspdfrendererformat.md)
   A set of drawing attributes that represents the configuration of a PDF renderer context.
 
 

@@ -1,7 +1,8 @@
 # low
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A low-intensity workout such as yoga, stretching, or walking.
 

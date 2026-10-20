@@ -6,44 +6,15 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ex
 
 # mlx.core.expm1
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.expm1.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.expm1
-
- Table of contents 
-
-## Contents
-
-# mlx.core.expm1
-
-**expm1(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**expm1(*a: array*, */*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
 : Element-wise exponential minus 1.
 Computes `exp(x) - 1` with greater precision for small `x`.
 
 Parameters:
-**a** ([array](mlx.core.array.html#mlx.core.array)) – Input array.
+**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
 
 Returns:
 The expm1 of `a`.
 
 Return type:
-[array](mlx.core.array.html#mlx.core.array)
-
-** Contents
+[array](mlx.core.array.md#mlx.core.array)

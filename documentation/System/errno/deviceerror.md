@@ -1,7 +1,8 @@
 # deviceError
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Device error.
 
@@ -22,7 +23,7 @@ static var deviceError: Errno { get }
 
 ## Mentions
 
-- [Adopting Swift Error Constants](adopting-errno.md)
+- [Adopting Swift Error Constants](../adopting-errno.md)
 
 #### Discussion
 
@@ -32,17 +33,18 @@ The corresponding C error is `EDEVERR`.
 
 ## See Also
 
-- [static var devicePowerIsOff: Errno](errno/devicepowerisoff.md)
+### Device Errors
+- [static var devicePowerIsOff: Errno](./devicepowerisoff.md)
   Device power is off.
-- [static var inappropriateIOCTLForDevice: Errno](errno/inappropriateioctlfordevice.md)
+- [static var inappropriateIOCTLForDevice: Errno](./inappropriateioctlfordevice.md)
   Inappropriate control function.
-- [static var ioError: Errno](errno/ioerror.md)
+- [static var ioError: Errno](./ioerror.md)
   Input/output error.
-- [static var noSuchAddressOrDevice: Errno](errno/nosuchaddressordevice.md)
+- [static var noSuchAddressOrDevice: Errno](./nosuchaddressordevice.md)
   No such device or address.
-- [static var notBlockDevice: Errno](errno/notblockdevice.md)
+- [static var notBlockDevice: Errno](./notblockdevice.md)
   Not a block device.
-- [static var operationNotSupportedByDevice: Errno](errno/operationnotsupportedbydevice.md)
+- [static var operationNotSupportedByDevice: Errno](./operationnotsupportedbydevice.md)
   Operation not supported by device.
 
 

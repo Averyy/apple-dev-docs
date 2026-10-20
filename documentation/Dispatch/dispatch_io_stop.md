@@ -1,23 +1,28 @@
 # DISPATCH_IO_STOP
 
 **Framework**: Dispatch  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Stop any in-progress read and write operations when closed.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var DISPATCH_IO_STOP: Int32 { get }
+```
+
+```c
+#define DISPATCH_IO_STOP
 ```
 
 

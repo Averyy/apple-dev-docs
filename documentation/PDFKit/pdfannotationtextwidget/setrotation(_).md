@@ -1,17 +1,22 @@
 # setRotation(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the rotation angle of the annotation text field in degrees.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setRotation(_ rotation: Int32)
+```
+
+```objc
+- (void) setRotation:(int) rotation;
 ```
 
 ## Parameters
@@ -20,17 +25,19 @@ func setRotation(_ rotation: Int32)
 
 ## See Also
 
-- [class PDFAnnotationTextWidget](pdfannotationtextwidget.md)
+### Related Documentation
+- [class PDFAnnotationTextWidget](../pdfannotationtextwidget.md)
   A `PDFAnnotationTextWidget` object allows you to manage the appearance and content of text fields.
-- [func backgroundColor() -> NSColor!](pdfannotationtextwidget/backgroundcolor.md)
+### Managing Background Color, Alignment, and Rotation
+- [func backgroundColor() -> NSColor!](./backgroundcolor%28%29.md)
   Returns the background color of the annotation text field.
-- [func setBackgroundColor(NSColor!)](pdfannotationtextwidget/setbackgroundcolor(_:).md)
+- [func setBackgroundColor(NSColor!)](./setbackgroundcolor%28_%29.md)
   Sets the background color of the annotation text field.
-- [func alignment() -> NSTextAlignment](pdfannotationtextwidget/alignment.md)
+- [func alignment() -> NSTextAlignment](./alignment%28%29.md)
   Returns the text alignment setting for the annotation.
-- [func setAlignment(NSTextAlignment)](pdfannotationtextwidget/setalignment(_:).md)
+- [func setAlignment(NSTextAlignment)](./setalignment%28_%29.md)
   Sets the text alignment for the annotation.
-- [func rotation() -> Int](pdfannotationtextwidget/rotation.md)
+- [func rotation() -> Int](./rotation%28%29.md)
   Returns the rotation angle of the annotation text field in degrees.
 
 

@@ -1,7 +1,8 @@
 # ObjectDetectionAnnotation.CodingKeys
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Coding keys for object detection annotations
 
@@ -22,23 +23,23 @@ enum CodingKeys
 ## Topics
 
 ### Coding keys
-- [ObjectDetectionAnnotation.CodingKeys.imageFileName](objectdetectionannotation/codingkeys/imagefilename.md)
-- [ObjectDetectionAnnotation.CodingKeys.objects](objectdetectionannotation/codingkeys/objects.md)
-- [ObjectDetectionAnnotation.CodingKeys.prominentObject](objectdetectionannotation/codingkeys/prominentobject.md)
+- [ObjectDetectionAnnotation.CodingKeys.imageFileName](./codingkeys/imagefilename.md)
+- [ObjectDetectionAnnotation.CodingKeys.objects](./codingkeys/objects.md)
+- [ObjectDetectionAnnotation.CodingKeys.prominentObject](./codingkeys/prominentobject.md)
 
 ## Relationships
 
 ### Conforms To
-- [CodingKey](../swift/codingkey.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CodingKey](../../Swift/codingkey.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

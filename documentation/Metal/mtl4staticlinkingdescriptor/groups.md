@@ -1,7 +1,8 @@
 # groups
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Assigns groups of functions to match call-site attributes in shader code.
 
@@ -17,6 +18,10 @@ Assigns groups of functions to match call-site attributes in shader code.
 
 ```swift
 var groups: [String : [MTL4FunctionDescriptor]]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSDictionary<NSString *,NSArray<MTL4FunctionDescriptor *> *> * groups;
 ```
 
 #### Discussion

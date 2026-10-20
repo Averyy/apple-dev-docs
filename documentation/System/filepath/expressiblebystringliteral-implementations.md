@@ -1,11 +1,12 @@
 # ExpressibleByStringLiteral Implementations
 
-**Framework**: System
+**Framework**: System  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(stringLiteral: String)](filepath/init(stringliteral:).md)
+- [init(stringLiteral: String)](./init%28stringliteral%29.md)
   Creates a file path from a string literal.
 
 

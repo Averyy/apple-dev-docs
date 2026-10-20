@@ -1,7 +1,8 @@
 # vertical
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that represents the vertical axis.
 
@@ -18,11 +19,16 @@ A value that represents the vertical axis.
 static var vertical: UIAxis { get }
 ```
 
+```c
+UIAxisVertical
+```
+
 ## See Also
 
-- [static var horizontal: UIAxis](uiaxis/horizontal.md)
+### Constants
+- [static var horizontal: UIAxis](./horizontal.md)
   A value that represents the horizontal axis.
-- [static var both: UIAxis](uiaxis/both.md)
+- [static var both: UIAxis](./both.md)
   A value that represents both axes.
 
 

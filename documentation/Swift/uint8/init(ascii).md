@@ -1,7 +1,8 @@
 # init(ascii:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Construct with value `v.value`.
 
@@ -22,7 +23,7 @@ init(ascii v: Unicode.Scalar)
 
 #### Discussion
 
-> **Note**: `v.value` can be represented as ASCII (0..<128).
+> **Precondition**: `v.value` can be represented as ASCII (0..<128).
 
 
 ---

@@ -1,7 +1,8 @@
 # HMAccessoryCategory
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A category for a HomeKit accessory.
 
@@ -19,6 +20,10 @@ A category for a HomeKit accessory.
 class HMAccessoryCategory
 ```
 
+```objc
+@interface HMAccessoryCategory : NSObject
+```
+
 #### Overview
 
 A category represents a class of devices, like light bulbs or outlets. You can use a category to help users identify the types of accessories they’re browsing. For example, when adding a lamp and a fan to a home, users might not be able to distinguish these accessories if you display only the manufacturer name and model number for each accessory. To improve the user experience, you can use the category information associated with each accessory to help the user understand which accessory is the lamp and which is the fan.
@@ -26,31 +31,32 @@ A category represents a class of devices, like light bulbs or outlets. You can u
 ## Topics
 
 ### Reading the category type
-- [var categoryType: String](hmaccessorycategory/categorytype.md)
+- [var categoryType: String](./hmaccessorycategory/categorytype.md)
   The category to which this accessory belongs.
-- [Accessory Category Types](accessory-category-types.md)
+- [Accessory Category Types](./accessory-category-types.md)
   The accessory category types supported by HomeKit.
 ### Describing the category
-- [var localizedDescription: String](hmaccessorycategory/localizeddescription.md)
+- [var localizedDescription: String](./hmaccessorycategory/localizeddescription.md)
   A localized description of the category.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var category: HMAccessoryCategory](hmaccessory/category.md)
+### Categorizing an accessory
+- [var category: HMAccessoryCategory](./hmaccessory/category.md)
   The category to which the accessory belongs.
 
 

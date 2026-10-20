@@ -1,12 +1,13 @@
 # NSFontPanelUnderlineEffectModeMask
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Display the underline popup menu.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,27 +15,32 @@ Display the underline popup menu.
 var NSFontPanelUnderlineEffectModeMask: UInt32 { get }
 ```
 
+```c
+NSFontPanelUnderlineEffectModeMask
+```
+
 ## See Also
 
-- [var NSFontPanelFaceModeMask: UInt32](nsfontpanelfacemodemask.md)
+### Constants
+- [var NSFontPanelFaceModeMask: UInt32](./nsfontpanelfacemodemask.md)
   Display the typeface column.
-- [var NSFontPanelSizeModeMask: UInt32](nsfontpanelsizemodemask.md)
+- [var NSFontPanelSizeModeMask: UInt32](./nsfontpanelsizemodemask.md)
   Display the font size column.
-- [var NSFontPanelCollectionModeMask: UInt32](nsfontpanelcollectionmodemask.md)
+- [var NSFontPanelCollectionModeMask: UInt32](./nsfontpanelcollectionmodemask.md)
   Display the font collections column.
-- [var NSFontPanelStrikethroughEffectModeMask: UInt32](nsfontpanelstrikethrougheffectmodemask.md)
+- [var NSFontPanelStrikethroughEffectModeMask: UInt32](./nsfontpanelstrikethrougheffectmodemask.md)
   Display the strike-through popup menu.
-- [var NSFontPanelTextColorEffectModeMask: UInt32](nsfontpaneltextcoloreffectmodemask.md)
+- [var NSFontPanelTextColorEffectModeMask: UInt32](./nsfontpaneltextcoloreffectmodemask.md)
   Display the text color button.
-- [var NSFontPanelDocumentColorEffectModeMask: UInt32](nsfontpaneldocumentcoloreffectmodemask.md)
+- [var NSFontPanelDocumentColorEffectModeMask: UInt32](./nsfontpaneldocumentcoloreffectmodemask.md)
   Display the document color button.
-- [var NSFontPanelShadowEffectModeMask: UInt32](nsfontpanelshadoweffectmodemask.md)
+- [var NSFontPanelShadowEffectModeMask: UInt32](./nsfontpanelshadoweffectmodemask.md)
   Display the shadow effects button.
-- [var NSFontPanelAllEffectsModeMask: UInt32](nsfontpanelalleffectsmodemask.md)
+- [var NSFontPanelAllEffectsModeMask: UInt32](./nsfontpanelalleffectsmodemask.md)
   Display all the effects user interface items.
-- [var NSFontPanelStandardModesMask: UInt32](nsfontpanelstandardmodesmask.md)
+- [var NSFontPanelStandardModesMask: UInt32](./nsfontpanelstandardmodesmask.md)
   Display the standard default font panel—that is, including the collections, typeface, and size columns.
-- [var NSFontPanelAllModesMask: UInt32](nsfontpanelallmodesmask.md)
+- [var NSFontPanelAllModesMask: UInt32](./nsfontpanelallmodesmask.md)
   Display all the available adornments.
 
 

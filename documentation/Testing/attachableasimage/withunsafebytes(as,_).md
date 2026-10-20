@@ -2,6 +2,7 @@
 
 **Framework**: Swift Testing  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Encode a representation of this image in a given image format.
@@ -22,7 +23,7 @@ Whatever is returned by `body`.
 
 #### Discussion
 
-> **Note**: Whatever is thrown by `body`, or any error that prevented the creation of the buffer.
+> **Throws**: Whatever is thrown by `body`, or any error that prevented the creation of the buffer.
 
 The testing library uses this function when saving an image as an attachment. The implementation should use `imageFormat` to determine what encoder to use.
 

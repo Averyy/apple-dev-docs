@@ -1,7 +1,8 @@
 # didChangeAutomaticDashSubstitution
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var didChangeAutomaticDashSubstitution: NotificationCenter.BaseMessageIdentifier<NSSpellChecker.DidChangeAutomaticDashSubstitutionMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSSpellChecker.DidChangeAutomaticDashSubstitutionMessage>`.
 
 
 ---

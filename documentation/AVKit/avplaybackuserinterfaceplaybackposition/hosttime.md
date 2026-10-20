@@ -1,7 +1,8 @@
 # hostTime
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mach host time at which `position` was accurate.
 
@@ -14,6 +15,10 @@ The mach host time at which `position` was accurate.
 
 ```swift
 var hostTime: CMTime { get }
+```
+
+```objc
+@property (nonatomic, readonly) CMTime hostTime;
 ```
 
 

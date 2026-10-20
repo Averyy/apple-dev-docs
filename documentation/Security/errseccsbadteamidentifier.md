@@ -1,7 +1,8 @@
 # errSecCSBadTeamIdentifier
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Team Identifier is wrong or inappropriate.
 
@@ -13,6 +14,10 @@ A Team Identifier is wrong or inappropriate.
 
 ```swift
 var errSecCSBadTeamIdentifier: OSStatus { get }
+```
+
+```c
+errSecCSBadTeamIdentifier
 ```
 
 

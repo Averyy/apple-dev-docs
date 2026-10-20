@@ -1,12 +1,13 @@
 # kODSessionDefault
 
 **Framework**: Open Directory  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The default session. Used if there is no need to create a specific reference.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 10.6+
 
 ## Declaration
@@ -15,15 +16,20 @@ The default session. Used if there is no need to create a specific reference.
 var kODSessionDefault: Unmanaged<ODSessionRef>!
 ```
 
+```c
+extern ODSessionRef kODSessionDefault;
+```
+
 ## See Also
 
-- [let kODSessionProxyAddress: CFString!](kodsessionproxyaddress.md)
+### Constants
+- [let kODSessionProxyAddress: CFString!](./kodsessionproxyaddress.md)
   The address to connect to via proxy. The value is of type `CFString`.
-- [let kODSessionProxyPort: CFString!](kodsessionproxyport.md)
+- [let kODSessionProxyPort: CFString!](./kodsessionproxyport.md)
   The port to connect to via proxy. The value is of type `CFNumber`.
-- [let kODSessionProxyUsername: CFString!](kodsessionproxyusername.md)
+- [let kODSessionProxyUsername: CFString!](./kodsessionproxyusername.md)
   The username to connect with via proxy. The value is of type `CFString`.
-- [let kODSessionProxyPassword: CFString!](kodsessionproxypassword.md)
+- [let kODSessionProxyPassword: CFString!](./kodsessionproxypassword.md)
   The password to connect with via proxy. The value is of type `CFString`.
 
 

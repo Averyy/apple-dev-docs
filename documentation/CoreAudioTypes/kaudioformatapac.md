@@ -1,7 +1,8 @@
 # kAudioFormatAPAC
 
 **Framework**: Core Audio Types  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 13.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kAudioFormatAPAC: AudioFormatID { get }
+```
+
+```c
+kAudioFormatAPAC
 ```
 
 

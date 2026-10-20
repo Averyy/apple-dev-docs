@@ -1,13 +1,14 @@
 # DefaultProductPageCreative
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The default product page object.
 
 ## Declaration
 
-```swift
+```
 object DefaultProductPageCreative
 ```
 
@@ -18,7 +19,9 @@ object DefaultProductPageCreative
 - `id` (int64): The unique identifier for a creative.
 - `modificationTime` (date-time): The date and time of the most recent modification of the object.
 - `name` (string) *(required)*: The unique name of the creative.
-- `orgId` (int64): The identifier of the organization that owns the campaign. Your `orgId` is the same as your account in the [`Apple Ads UI`](https://developer.apple.comhttps://ads.apple.com/advanced).
+
+  **Minimum Length**: `1`; **Maximum Length**: `200`
+- `orgId` (int64): The identifier of the organization that owns the campaign. Your `orgId` is the same as your account in the [Apple Ads UI](https://ads.apple.com/advanced).
 - `productPageId` (string): The product page identifier.
 - `state` (string): The system state of the process.
 - `stateReasons` ([string]): A list of reasons that displays when an ad isn’t running.
@@ -26,23 +29,24 @@ object DefaultProductPageCreative
 
 ## See Also
 
-- [object AppPreviewDevicesMappingResponse](apppreviewdevicesmappingresponse.md)
+### Creative Request and Response Objects
+- [object AppPreviewDevicesMappingResponse](./apppreviewdevicesmappingresponse.md)
   The app preview device mapping response to display name and size mapping requests.
-- [object Creative](creative.md)
+- [object Creative](./creative.md)
   The creative object.
-- [object CreativeLocalization](creativelocalization.md)
+- [object CreativeLocalization](./creativelocalization.md)
   The localized creative metadata.
-- [object CreativeLocalizationWithAssets](creativelocalizationwithassets.md)
+- [object CreativeLocalizationWithAssets](./creativelocalizationwithassets.md)
   The localized creative metadata with app preview.
-- [object CustomProductPageCreative](customproductpagecreative.md)
+- [object CustomProductPageCreative](./customproductpagecreative.md)
   The creative details of a product page.
-- [object CreativeResponse](creativeresponse.md)
+- [object CreativeResponse](./creativeresponse.md)
   The response details of a creative request.
-- [object CreativeListResponse](creativelistresponse.md)
+- [object CreativeListResponse](./creativelistresponse.md)
   A container for response details of a creative request.
-- [object MediaAppAsset](mediaappasset.md)
+- [object MediaAppAsset](./mediaappasset.md)
   The asset details of app preview or app screenshots.
-- [object MediaAppAssetsDetail](mediaappassetsdetail.md)
+- [object MediaAppAssetsDetail](./mediaappassetsdetail.md)
   The app asset details of a device.
 
 

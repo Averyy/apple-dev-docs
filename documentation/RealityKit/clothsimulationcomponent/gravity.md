@@ -1,7 +1,8 @@
 # gravity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The gravitational acceleration for the bodies in the simulation, in m/s².
 
@@ -24,9 +25,10 @@ The default value is 9.81 m/s² in the negative Y axis direction.
 
 ## See Also
 
-- [var wind: SIMD3<Float>](clothsimulationcomponent/wind.md)
+### Applying forces
+- [var wind: SIMD3<Float>](./wind.md)
   The wind force affecting all the cloth bodies in the simulation, in Newtons.
-- [var dampingFactor: Float](clothsimulationcomponent/dampingfactor.md)
+- [var dampingFactor: Float](./dampingfactor.md)
   The damping factor affecting all the cloth bodies in the simulation. The expected range is between 0 and 1 (included).
 
 

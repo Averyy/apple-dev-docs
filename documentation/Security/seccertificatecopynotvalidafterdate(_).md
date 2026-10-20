@@ -1,7 +1,8 @@
 # SecCertificateCopyNotValidAfterDate(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func SecCertificateCopyNotValidAfterDate(_ certificate: SecCertificate) -> CFDate?
+```
+
+```c
+CFDateRefSecCertificateCopyNotValidAfterDate(SecCertificateRef certificate);
 ```
 
 

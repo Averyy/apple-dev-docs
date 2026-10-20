@@ -1,7 +1,8 @@
 # Text.Scale
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Defines text scales
 
@@ -27,24 +28,25 @@ Text scale provides a way to pick a logical text scale relative to the base font
 ## Topics
 
 ### Getting built-in text scales
-- [static let `default`: Text.Scale](text/scale/default.md)
+- [static let `default`: Text.Scale](./scale/default.md)
   Defines default text scale
-- [static let secondary: Text.Scale](text/scale/secondary.md)
+- [static let secondary: Text.Scale](./scale/secondary.md)
   Defines secondary text scale
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func textScale(Text.Scale, isEnabled: Bool) -> Text](text/textscale(_:isenabled:).md)
+### Fitting text into available space
+- [func textScale(Text.Scale, isEnabled: Bool) -> Text](./textscale%28_,isenabled%29.md)
   Applies a text scale to the text.
-- [Text.TruncationMode](text/truncationmode.md)
+- [Text.TruncationMode](./truncationmode.md)
   The type of truncation to apply to a line of text when it’s too long to fit in the available space.
 
 

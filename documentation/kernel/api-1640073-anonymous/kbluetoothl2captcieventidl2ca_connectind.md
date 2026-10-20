@@ -1,14 +1,15 @@
 # kBluetoothL2CAPTCIEventIDL2CA_ConnectInd
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPTCIEventIDL2CA_ConnectInd = 0x01
 ```
 

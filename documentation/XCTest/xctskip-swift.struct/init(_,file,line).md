@@ -1,7 +1,8 @@
 # init(_:file:line:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Intitializes an error to skip a test.
 

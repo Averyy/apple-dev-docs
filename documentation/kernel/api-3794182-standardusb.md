@@ -1,14 +1,15 @@
 # StandardUSB::stringDescriptorToUTF8
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 IOReturn StandardUSB::stringDescriptorToUTF8(const StringDescriptor *stringDescriptor, char *stringBuffer, size_t & length);
 ```
 

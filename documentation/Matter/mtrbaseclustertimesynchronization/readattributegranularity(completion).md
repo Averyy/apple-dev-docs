@@ -1,7 +1,8 @@
 # readAttributeGranularity(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeGranularity(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeGranularity() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeGranularityWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

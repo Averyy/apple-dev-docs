@@ -1,7 +1,8 @@
 # colorVolumeTransform
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color volume transform to apply, if any.
 

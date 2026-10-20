@@ -1,7 +1,8 @@
 # compressed
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 File is compressed at the file system level.
 

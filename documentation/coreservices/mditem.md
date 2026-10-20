@@ -1,7 +1,8 @@
 # MDItem
 
 **Framework**: Core Services  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 A reference to a MDItem object.
 

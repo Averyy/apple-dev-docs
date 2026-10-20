@@ -1,7 +1,8 @@
 # GLKTextureTarget
 
 **Framework**: GLKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The kind of texture pointed to by the property.
 
@@ -17,31 +18,36 @@ The kind of texture pointed to by the property.
 enum GLKTextureTarget
 ```
 
+```c
+enum GLKTextureTarget : GLenum;
+```
+
 ## Topics
 
 ### Constants
-- [GLKTextureTarget.target2D](glktexturetarget/target2d.md)
+- [GLKTextureTarget.target2D](./glktexturetarget/target2d.md)
   The texture is a 2D texture.
-- [GLKTextureTarget.targetCubeMap](glktexturetarget/targetcubemap.md)
+- [GLKTextureTarget.targetCubeMap](./glktexturetarget/targetcubemap.md)
   The texture is a set of six textures that make up a cube map.
-- [GLKTextureTarget.targetCt](glktexturetarget/targetct.md)
+- [GLKTextureTarget.targetCt](./glktexturetarget/targetct.md)
   The number of items in the enumeration.
 ### Initializers
-- [init?(rawValue: GLenum)](glktexturetarget/init(rawvalue:).md)
+- [init?(rawValue: GLenum)](./glktexturetarget/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum GLKTextureEnvMode](glktextureenvmode.md)
+### Constants
+- [enum GLKTextureEnvMode](./glktextureenvmode.md)
   The mode used to combine the texture with other color components.
 
 

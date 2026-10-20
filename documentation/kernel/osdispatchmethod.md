@@ -1,26 +1,28 @@
 # OSDispatchMethod
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.15+
 
 ## Declaration
 
-```swift
+```c
 typedef kern_return_t (*OSDispatchMethod)(OSMetaClassBase *self, const IORPC rpc);
 ```
 
 ## See Also
 
-- [OSActionAbortedHandler](osactionabortedhandler.md)
-- [OSActionCancelHandler](osactioncancelhandler.md)
-- [OSKextRequestResourceCallback](oskextrequestresourcecallback.md)
+### Callback Methods
+- [OSActionAbortedHandler](./osactionabortedhandler.md)
+- [OSActionCancelHandler](./osactioncancelhandler.md)
+- [OSKextRequestResourceCallback](./oskextrequestresourcecallback.md)
   Invoked to provide results for a kext resource request.
-- [OSObjectApplierFunction](osobjectapplierfunction.md)
-- [OSSerializerBlock](osserializerblock.md)
-- [OSSerializerCallback](osserializercallback.md)
+- [OSObjectApplierFunction](./osobjectapplierfunction.md)
+- [OSSerializerBlock](./osserializerblock.md)
+- [OSSerializerCallback](./osserializercallback.md)
 
 
 ---

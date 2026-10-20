@@ -1,7 +1,8 @@
 # UIStatusBarHidden
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the system initially hides the status bar when the app launches.
 
@@ -9,9 +10,10 @@ A Boolean value that indicates whether the system initially hides the status bar
 - iOS 2.0+
 - iPadOS 2.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `UIStatusBarHidden` (Status bar is initially hidden)
+- **Type**: boolean
 
 #### Discussion
 
@@ -19,11 +21,12 @@ If `YES`, the system hides the status bar. If `NO`, it displays the status bar.
 
 ## See Also
 
-- [UIStatusBarStyle](information-property-list/uistatusbarstyle.md)
+### Status bar
+- [UIStatusBarStyle](./uistatusbarstyle.md)
   The style of the status bar as the app launches.
-- [UIStatusBarTintParameters](information-property-list/uistatusbartintparameters.md)
+- [UIStatusBarTintParameters](./uistatusbartintparameters.md)
   The status bar tint.
-- [UIViewControllerBasedStatusBarAppearance](information-property-list/uiviewcontrollerbasedstatusbarappearance.md)
+- [UIViewControllerBasedStatusBarAppearance](./uiviewcontrollerbasedstatusbarappearance.md)
   A Boolean value that indicates whether the system bases the appearance of the status bar on the style preferred by the current view controller.
 
 

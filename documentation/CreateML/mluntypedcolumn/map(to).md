@@ -1,7 +1,8 @@
 # map(to:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new column of typed values by converting this untyped column to the given type.
 
@@ -25,7 +26,7 @@ A new data column if the column’s underlying type is convertible to given type
 
 #### Discussion
 
-Use this method to convert the elements of the column to a data column of the given type via [`MLDataValueConvertible`](mldatavalueconvertible.md). Unlike [`column(type:)`](mluntypedcolumn/column(type:).md), which doesn’t alter its elements, [`map(to:)`](mluntypedcolumn/map(to:).md) converts the elements to the destination type. For example, you can use [`map(to:)`](mluntypedcolumn/map(to:).md) to convert an untyped column of integers to a data column of strings.
+Use this method to convert the elements of the column to a data column of the given type via [`MLDataValueConvertible`](../mldatavalueconvertible.md). Unlike [`column(type:)`](./column%28type%29.md), which doesn’t alter its elements, [`map(to:)`](./map%28to%29.md) converts the elements to the destination type. For example, you can use [`map(to:)`](./map%28to%29.md) to convert an untyped column of integers to a data column of strings.
 
 ## Parameters
 

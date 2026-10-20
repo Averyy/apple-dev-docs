@@ -1,7 +1,8 @@
 # page
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The content world for the current webpage’s content.
 
@@ -16,6 +17,10 @@ The content world for the current webpage’s content.
 
 ```swift
 class var page: WKContentWorld { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) WKContentWorld * pageWorld;
 ```
 
 #### Discussion

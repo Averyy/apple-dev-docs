@@ -1,7 +1,8 @@
 # HistoryTombstone
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -22,30 +23,31 @@ struct HistoryTombstone<Model> where Model : PersistentModel
 ## Topics
 
 ### Subscripts
-- [subscript(PartialKeyPath<Model>) -> (any Sendable)?](historytombstone/subscript(_:).md)
+- [subscript(PartialKeyPath<Model>) -> (any Sendable)?](./historytombstone/subscript%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 ## See Also
 
-- [enum HistoryChange](historychange.md)
+### History life cycle
+- [enum HistoryChange](./historychange.md)
   Values that describe data history transactions.
-- [protocol HistoryDelete](historydelete.md)
+- [protocol HistoryDelete](./historydelete.md)
   An interface that enables a custom data store to delete items from the history of changes to its persisted models.
-- [protocol HistoryInsert](historyinsert.md)
-- [protocol HistoryToken](historytoken.md)
-- [protocol HistoryTransaction](historytransaction.md)
-- [protocol HistoryUpdate](historyupdate.md)
-- [struct DefaultHistoryInsert](defaulthistoryinsert.md)
-- [struct DefaultHistoryUpdate](defaulthistoryupdate.md)
-- [struct DefaultHistoryDelete](defaulthistorydelete.md)
-- [struct DefaultHistoryToken](defaulthistorytoken.md)
-- [struct DefaultHistoryTransaction](defaulthistorytransaction.md)
+- [protocol HistoryInsert](./historyinsert.md)
+- [protocol HistoryToken](./historytoken.md)
+- [protocol HistoryTransaction](./historytransaction.md)
+- [protocol HistoryUpdate](./historyupdate.md)
+- [struct DefaultHistoryInsert](./defaulthistoryinsert.md)
+- [struct DefaultHistoryUpdate](./defaulthistoryupdate.md)
+- [struct DefaultHistoryDelete](./defaulthistorydelete.md)
+- [struct DefaultHistoryToken](./defaulthistorytoken.md)
+- [struct DefaultHistoryTransaction](./defaulthistorytransaction.md)
 
 
 ---

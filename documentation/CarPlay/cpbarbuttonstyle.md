@@ -1,7 +1,8 @@
 # CPBarButtonStyle
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The display style of a bar button.
 
@@ -16,31 +17,36 @@ The display style of a bar button.
 enum CPBarButtonStyle
 ```
 
+```c
+enum CPBarButtonStyle : NSInteger;
+```
+
 ## Topics
 
 ### Button Styles
-- [CPBarButtonStyle.none](cpbarbuttonstyle/none.md)
+- [CPBarButtonStyle.none](./cpbarbuttonstyle/none.md)
   A style that provides no additional styling.
-- [CPBarButtonStyle.rounded](cpbarbuttonstyle/rounded.md)
+- [CPBarButtonStyle.rounded](./cpbarbuttonstyle/rounded.md)
   A style that provides a rounded background.
 ### Initializers
-- [init?(rawValue: Int)](cpbarbuttonstyle/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cpbarbuttonstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var buttonType: CPBarButton.Type](cpbarbutton/buttontype.md)
+### Getting the Button Style
+- [var buttonType: CPBarButton.Type](./cpbarbutton/buttontype.md)
   The display type for the bar button.
-- [var buttonStyle: CPBarButtonStyle](cpbarbutton/buttonstyle.md)
+- [var buttonStyle: CPBarButtonStyle](./cpbarbutton/buttonstyle.md)
   The style to use when displaying the button.
 
 

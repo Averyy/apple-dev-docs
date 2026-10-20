@@ -1,7 +1,8 @@
 # VSUserAccountManager.AutoSignInAuthorization.denied
 
 **Framework**: Video Subscriber Account  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates denied authorization.
 
@@ -20,9 +21,10 @@ case denied
 
 ## See Also
 
-- [VSUserAccountManager.AutoSignInAuthorization.notDetermined](vsuseraccountmanager/autosigninauthorization/notdetermined.md)
+### Possible states
+- [VSUserAccountManager.AutoSignInAuthorization.notDetermined](./notdetermined.md)
   A state that indicates the framework needs to reauthorize Automatic Sign-In.
-- [VSUserAccountManager.AutoSignInAuthorization.granted](vsuseraccountmanager/autosigninauthorization/granted.md)
+- [VSUserAccountManager.AutoSignInAuthorization.granted](./granted.md)
   A state that indicates the person opts in to Automatic Sign-In.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Core Spotlight  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The data types this stage accepts as input.
@@ -27,11 +28,12 @@ The model considers your stage’s input types, output type, and other factors w
 
 ## See Also
 
-- [static var name: String](customstage/name.md)
+### Getting the stage metadata
+- [static var name: String](./name.md)
   The name of the stage as you want it to appear in the pipeline.
-- [static var description: String](customstage/description.md)
+- [static var description: String](./description.md)
   A human-readable description of what this stage does.
-- [static var outputType: SearchPipelineDataType](customstage/outputtype.md)
+- [static var outputType: SearchPipelineDataType](./outputtype.md)
   The data type this stage produces as output.
 
 

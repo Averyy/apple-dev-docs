@@ -1,7 +1,8 @@
 # errSecInvalidKeyBlob
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The specified database has an invalid key blob.
 
@@ -18,6 +19,10 @@ The specified database has an invalid key blob.
 
 ```swift
 var errSecInvalidKeyBlob: OSStatus { get }
+```
+
+```c
+errSecInvalidKeyBlob
 ```
 
 

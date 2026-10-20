@@ -1,21 +1,26 @@
 # CTFontManagerAutoActivationSetting.disabled
 
 **Framework**: Core Text  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 case disabled
+```
+
+```c
+kCTFontManagerAutoActivationDisabled
 ```
 
 #### Discussion
@@ -24,9 +29,10 @@ Disables auto-activation.
 
 ## See Also
 
-- [CTFontManagerAutoActivationSetting.default](ctfontmanagerautoactivationsetting/default.md)
-- [CTFontManagerAutoActivationSetting.enabled](ctfontmanagerautoactivationsetting/enabled.md)
-- [CTFontManagerAutoActivationSetting.promptUser](ctfontmanagerautoactivationsetting/promptuser.md)
+### Constants
+- [CTFontManagerAutoActivationSetting.default](./default.md)
+- [CTFontManagerAutoActivationSetting.enabled](./enabled.md)
+- [CTFontManagerAutoActivationSetting.promptUser](./promptuser.md)
 
 
 ---

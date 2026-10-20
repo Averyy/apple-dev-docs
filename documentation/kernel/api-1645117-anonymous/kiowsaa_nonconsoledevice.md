@@ -1,14 +1,15 @@
 # kIOWSAA_NonConsoleDevice
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13.2+
 
 ## Declaration
 
-```swift
+```c
 kIOWSAA_NonConsoleDevice = 0x400
 ```
 

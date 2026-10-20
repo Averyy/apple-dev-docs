@@ -1,14 +1,15 @@
 # kauth_cred_guid2ntsid
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 int kauth_cred_guid2ntsid(guid_t *_guid, ntsid_t *_sidp);
 ```
 

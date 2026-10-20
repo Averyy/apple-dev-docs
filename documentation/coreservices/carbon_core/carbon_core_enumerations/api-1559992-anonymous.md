@@ -5,13 +5,13 @@
 ## Topics
 
 ### Constants
-- [var kATSUBadStreamErr: Int](katsubadstreamerr.md)
-- [var kATSUInvalidCallInsideCallbackErr: Int](katsuinvalidcallinsidecallbackerr.md)
-- [var kATSUInvalidFontFallbacksErr: Int](katsuinvalidfontfallbackserr.md)
-- [var kATSULastErr: Int](katsulasterr.md)
-- [var kATSUNoFontNameErr: Int](katsunofontnameerr.md)
-- [var kATSUOutputBufferTooSmallErr: Int](katsuoutputbuffertoosmallerr.md)
-- [var kATSUUnsupportedStreamFormatErr: Int](katsuunsupportedstreamformaterr.md)
+- [var kATSUBadStreamErr: Int](../../katsubadstreamerr.md)
+- [var kATSUInvalidCallInsideCallbackErr: Int](../../katsuinvalidcallinsidecallbackerr.md)
+- [var kATSUInvalidFontFallbacksErr: Int](../../katsuinvalidfontfallbackserr.md)
+- [var kATSULastErr: Int](../../katsulasterr.md)
+- [var kATSUNoFontNameErr: Int](../../katsunofontnameerr.md)
+- [var kATSUOutputBufferTooSmallErr: Int](../../katsuoutputbuffertoosmallerr.md)
+- [var kATSUUnsupportedStreamFormatErr: Int](../../katsuunsupportedstreamformaterr.md)
 
 
 ---

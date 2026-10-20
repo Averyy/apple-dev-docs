@@ -1,7 +1,8 @@
 # Transcript.Attachment.image(_:)
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An attached image.
 

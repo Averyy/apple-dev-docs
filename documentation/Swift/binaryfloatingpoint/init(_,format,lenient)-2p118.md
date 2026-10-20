@@ -1,7 +1,8 @@
 # init(_:format:lenient:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an instance by parsing `value` with a `ParseStrategy` created with the given `format` and the `lenient` argument.
 

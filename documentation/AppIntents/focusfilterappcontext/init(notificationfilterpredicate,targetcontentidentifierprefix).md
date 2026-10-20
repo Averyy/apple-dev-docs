@@ -1,7 +1,8 @@
 # init(notificationFilterPredicate:targetContentIdentifierPrefix:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a focus filter context with a specified predicate and identifier prefix.
 
@@ -11,7 +12,7 @@ Creates a focus filter context with a specified predicate and identifier prefix.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration

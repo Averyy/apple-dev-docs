@@ -1,7 +1,8 @@
 # preventsAutocorrection(before:language:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.12+
@@ -12,12 +13,17 @@
 func preventsAutocorrection(before string: String, language: String?) -> Bool
 ```
 
+```objc
+- (BOOL) preventsAutocorrectionBeforeString:(NSString *) string language:(NSString *) language;
+```
+
 ## See Also
 
-- [func deletesAutospaceBetweenString(String, andString: String, language: String?) -> Bool](nsspellchecker/deletesautospacebetweenstring(_:andstring:language:).md)
-- [func language(forWordRange: NSRange, in: String, orthography: NSOrthography?) -> String?](nsspellchecker/language(forwordrange:in:orthography:).md)
-- [func requestCandidates(forSelectedRange: NSRange, in: String, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any]?, inSpellDocumentWithTag: Int, completionHandler: ((Int, [NSTextCheckingResult]) -> Void)?) -> Int](nsspellchecker/requestcandidates(forselectedrange:in:types:options:inspelldocumentwithtag:completionhandler:).md)
-- [func showInlinePrediction(forCandidates: [NSTextCheckingResult], client: any NSTextInputClient)](nsspellchecker/showinlineprediction(forcandidates:client:).md)
+### Instance Methods
+- [func deletesAutospaceBetweenString(String, andString: String, language: String?) -> Bool](./deletesautospacebetweenstring%28_,andstring,language%29.md)
+- [func language(forWordRange: NSRange, in: String, orthography: NSOrthography?) -> String?](./language%28forwordrange,in,orthography%29.md)
+- [func requestCandidates(forSelectedRange: NSRange, in: String, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any]?, inSpellDocumentWithTag: Int, completionHandler: ((Int, [NSTextCheckingResult]) -> Void)?) -> Int](./requestcandidates%28forselectedrange,in,types,options,inspelldocumentwithtag,completionhandler%29.md)
+- [func showInlinePrediction(forCandidates: [NSTextCheckingResult], client: any NSTextInputClient)](./showinlineprediction%28forcandidates,client%29.md)
 
 
 ---

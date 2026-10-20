@@ -1,14 +1,15 @@
 # kBluetoothL2CAPPSMDynamicStart
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothL2CAPPSMDynamicStart = 0x1001
 ```
 

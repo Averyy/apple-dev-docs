@@ -1,14 +1,15 @@
 # uio_curriovbase
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 user_addr_t uio_curriovbase(uio_t a_uio);
 ```
 

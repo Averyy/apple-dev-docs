@@ -1,7 +1,8 @@
 # zeroPadsFractionDigits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines whether to zero pad fraction digits so a consistent number of characters is displayed in a representation.
 
@@ -20,29 +21,34 @@ Determines whether to zero pad fraction digits so a consistent number of charact
 var zeroPadsFractionDigits: Bool { get set }
 ```
 
+```objc
+@property BOOL zeroPadsFractionDigits;
+```
+
 #### Discussion
 
-Displaying values using  zero pad fraction digits causes a consistent number of fraction digits are displayed, causing updating displays to remain more stable. For instance, if the [`isAdaptive`](bytecountformatter/isadaptive.md) algorithm is used, this option formats 1.19 and 1.2 GB as `1.19 GB` and `1.20 GB`, respectively, while without the option the latter would be displayed as `1.2 GB`.
+Displaying values using  zero pad fraction digits causes a consistent number of fraction digits are displayed, causing updating displays to remain more stable. For instance, if the [`isAdaptive`](./isadaptive.md) algorithm is used, this option formats 1.19 and 1.2 GB as `1.19 GB` and `1.20 GB`, respectively, while without the option the latter would be displayed as `1.2 GB`.
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var formattingContext: Formatter.Context](bytecountformatter/formattingcontext.md)
+### Setting Formatting Styles
+- [var formattingContext: Formatter.Context](./formattingcontext.md)
   Specify the formatting context for the formatted string.
-- [var countStyle: ByteCountFormatter.CountStyle](bytecountformatter/countstyle-swift.property.md)
+- [var countStyle: ByteCountFormatter.CountStyle](./countstyle-swift.property.md)
   Specify the number of bytes to be used for kilobytes.
-- [var allowsNonnumericFormatting: Bool](bytecountformatter/allowsnonnumericformatting.md)
+- [var allowsNonnumericFormatting: Bool](./allowsnonnumericformatting.md)
   Determines whether to allow more natural display of some values.
-- [var includesActualByteCount: Bool](bytecountformatter/includesactualbytecount.md)
+- [var includesActualByteCount: Bool](./includesactualbytecount.md)
   Determines whether to include the number of bytes after the formatted string.
-- [var isAdaptive: Bool](bytecountformatter/isadaptive.md)
+- [var isAdaptive: Bool](./isadaptive.md)
   Determines the display style of the size representation.
-- [var allowedUnits: ByteCountFormatter.Units](bytecountformatter/allowedunits.md)
+- [var allowedUnits: ByteCountFormatter.Units](./allowedunits.md)
   Specify the units that can be used in the output.
-- [var includesCount: Bool](bytecountformatter/includescount.md)
+- [var includesCount: Bool](./includescount.md)
   Determines whether to include the count in the resulting formatted string.
-- [var includesUnit: Bool](bytecountformatter/includesunit.md)
+- [var includesUnit: Bool](./includesunit.md)
   Determines whether to include the units in the resulting formatted string.
 
 

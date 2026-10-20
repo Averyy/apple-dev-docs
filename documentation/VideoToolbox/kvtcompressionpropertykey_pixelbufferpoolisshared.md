@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_PixelBufferPoolIsShared
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A Boolean value indicating whether the common pixel buffer pool is shared between the video encoder and the session client.
 
@@ -19,15 +20,20 @@ A Boolean value indicating whether the common pixel buffer pool is shared betwee
 let kVTCompressionPropertyKey_PixelBufferPoolIsShared: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_PixelBufferPoolIsShared;
+```
+
 #### Discussion
 
 This value is `false` if separate pools are used because the video encoder’s and the client’s pixel buffer attributes were incompatible.
 
 ## See Also
 
-- [let kVTCompressionPropertyKey_NumberOfPendingFrames: CFString](kvtcompressionpropertykey_numberofpendingframes.md)
+### Buffers
+- [let kVTCompressionPropertyKey_NumberOfPendingFrames: CFString](./kvtcompressionpropertykey_numberofpendingframes.md)
   The number of pending frames in the compression session.
-- [let kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes: CFString](kvtcompressionpropertykey_videoencoderpixelbufferattributes.md)
+- [let kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes: CFString](./kvtcompressionpropertykey_videoencoderpixelbufferattributes.md)
   The video encoder’s pixel buffer attributes for the compression session.
 
 

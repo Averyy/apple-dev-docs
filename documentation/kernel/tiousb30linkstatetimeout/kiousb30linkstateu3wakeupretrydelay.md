@@ -1,7 +1,8 @@
 # kIOUSB30LinkStateU3WakeupRetryDelay
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The U3 wakeup retry delay.
 
@@ -10,7 +11,7 @@ The U3 wakeup retry delay.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30LinkStateU3WakeupRetryDelay = 100
 ```
 

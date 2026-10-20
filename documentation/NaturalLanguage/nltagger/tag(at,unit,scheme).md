@@ -1,7 +1,8 @@
 # tag(at:unit:scheme:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Finds a tag for a given linguistic unit, for a single scheme, at the specified character position.
 
@@ -33,9 +34,10 @@ The tag for the requested tag scheme and linguistic unit, or `nil`. If a tag is 
 
 ## See Also
 
-- [func tags(in: Range<String.Index>, unit: NLTokenUnit, scheme: NLTagScheme, options: NLTagger.Options) -> [(NLTag?, Range<String.Index>)]](nltagger/tags(in:unit:scheme:options:).md)
+### Getting linguistic tags
+- [func tags(in: Range<String.Index>, unit: NLTokenUnit, scheme: NLTagScheme, options: NLTagger.Options) -> [(NLTag?, Range<String.Index>)]](./tags%28in,unit,scheme,options%29.md)
   Finds an array of linguistic tags and token ranges for a given string range and linguistic unit.
-- [func tagHypotheses(at: String.Index, unit: NLTokenUnit, scheme: NLTagScheme, maximumCount: Int) -> ([String : Double], Range<String.Index>)](nltagger/taghypotheses(at:unit:scheme:maximumcount:).md)
+- [func tagHypotheses(at: String.Index, unit: NLTokenUnit, scheme: NLTagScheme, maximumCount: Int) -> ([String : Double], Range<String.Index>)](./taghypotheses%28at,unit,scheme,maximumcount%29.md)
   Finds multiple possible tags for a given linguistic unit, for a single scheme, at the specified character position.
 
 

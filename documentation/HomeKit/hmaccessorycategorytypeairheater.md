@@ -1,7 +1,8 @@
 # HMAccessoryCategoryTypeAirHeater
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An air heater accessory.
 
@@ -19,15 +20,20 @@ An air heater accessory.
 let HMAccessoryCategoryTypeAirHeater: String
 ```
 
+```c
+extern NSString * const HMAccessoryCategoryTypeAirHeater;
+```
+
 ## See Also
 
-- [let HMAccessoryCategoryTypeThermostat: String](hmaccessorycategorytypethermostat.md)
+### Temperature and humidity
+- [let HMAccessoryCategoryTypeThermostat: String](./hmaccessorycategorytypethermostat.md)
   A thermostat accessory.
-- [let HMAccessoryCategoryTypeAirConditioner: String](hmaccessorycategorytypeairconditioner.md)
+- [let HMAccessoryCategoryTypeAirConditioner: String](./hmaccessorycategorytypeairconditioner.md)
   An air conditioner accessory.
-- [let HMAccessoryCategoryTypeAirDehumidifier: String](hmaccessorycategorytypeairdehumidifier.md)
+- [let HMAccessoryCategoryTypeAirDehumidifier: String](./hmaccessorycategorytypeairdehumidifier.md)
   A dehumidifier accessory.
-- [let HMAccessoryCategoryTypeAirHumidifier: String](hmaccessorycategorytypeairhumidifier.md)
+- [let HMAccessoryCategoryTypeAirHumidifier: String](./hmaccessorycategorytypeairhumidifier.md)
   A humidifier accessory.
 
 

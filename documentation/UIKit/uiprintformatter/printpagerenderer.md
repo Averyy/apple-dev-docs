@@ -1,7 +1,8 @@
 # printPageRenderer
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the page renderer for the print formatter.
 
@@ -17,13 +18,18 @@ Returns the page renderer for the print formatter.
 weak var printPageRenderer: UIPrintPageRenderer? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly, nullable) UIPrintPageRenderer * printPageRenderer;
+```
+
 #### Discussion
 
-If the receiving print formatter was not added to a page renderer—that is, it was assigned to the [`printFormatter`](uiprintinteractioncontroller/printformatter.md) property of the [`UIPrintInteractionController`](uiprintinteractioncontroller.md) class—the value returned is `nil`.
+If the receiving print formatter was not added to a page renderer—that is, it was assigned to the [`printFormatter`](../uiprintinteractioncontroller/printformatter.md) property of the [`UIPrintInteractionController`](../uiprintinteractioncontroller.md) class—the value returned is `nil`.
 
 ## See Also
 
-- [func removeFromPrintPageRenderer()](uiprintformatter/removefromprintpagerenderer.md)
+### Communicating with the page renderer
+- [func removeFromPrintPageRenderer()](./removefromprintpagerenderer%28%29.md)
   Removes the print formatter from the page renderer.
 
 

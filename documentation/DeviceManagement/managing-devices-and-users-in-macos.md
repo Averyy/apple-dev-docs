@@ -1,6 +1,7 @@
 # Managing devices and users in macOS
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: Article
 
 Manage devices and users as separate entities in macOS.
 
@@ -12,7 +13,7 @@ The `mdmclient` daemon sends device requests, and the `mdmclient` agent sends us
 
 Devices and users have separate push tokens. The device management service uses these tokens to determine whether the device or a specific user contacts the server with an `Idle` request.
 
-To indicate that a device management service supports both device and user connections, its device management (MDM) enrollment profile contains the string `com.apple.mdm.per-user-connections`; see [`MDM`](mdm.md) for additional information. The system promotes a device management (MDM) enrollment profile to become a device profile after installation, which has these effects:
+To indicate that a device management service supports both device and user connections, its device management (MDM) enrollment profile contains the string `com.apple.mdm.per-user-connections`; see [`MDM`](./mdm.md) for additional information. The system promotes a device management (MDM) enrollment profile to become a device profile after installation, which has these effects:
 
 - The device becomes a managed device.
 - The local user who installs the profile becomes a managed user, and the device management service only receives requests from this user. Other local users don’t become managed users.
@@ -43,9 +44,9 @@ The `UserConfiguration` key is optional. If present and `true`, the device is tr
 
 > **Note**:  A device can block login momentarily while it contacts the device management service for its latest settings.
 
-Extensions to the MDM protocol also enable multiple network users to log in to a device bound to an Open Directory. For more information, see [`Enabling network and mobile user logins`](enabling-network-and-mobile-user-logins.md).
+Extensions to the MDM protocol also enable multiple network users to log in to a device bound to an Open Directory. For more information, see [Enabling network and mobile user logins](./enabling-network-and-mobile-user-logins.md).
 
-#### Create a Separate Managed Profile for Each Account
+#### Create a separate managed profile for each account
 
 Don’t group multiple accounts together into a single profile. Create a separate profile for each account. This enables you to manage each account individually, such as to change an accountʼs settings or to remove an account when access requirements change.
 
@@ -55,7 +56,8 @@ If the password of an account has changed, your device management service can se
 
 ## See Also
 
-- [Enabling network and mobile user logins](enabling-network-and-mobile-user-logins.md)
+### Manage users on macOS
+- [Enabling network and mobile user logins](./enabling-network-and-mobile-user-logins.md)
   Manage network users on macOS devices bound to an Open Directory server, and mobile users on Shared iPad.
 
 

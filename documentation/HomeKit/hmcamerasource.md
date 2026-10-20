@@ -1,7 +1,8 @@
 # HMCameraSource
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract class for a camera’s data source.
 
@@ -19,34 +20,39 @@ An abstract class for a camera’s data source.
 class HMCameraSource
 ```
 
+```objc
+@interface HMCameraSource : NSObject
+```
+
 ## Topics
 
 ### Getting the properties
-- [var aspectRatio: Double](hmcamerasource/aspectratio.md)
+- [var aspectRatio: Double](./hmcamerasource/aspectratio.md)
   The aspect ratio of the camera.
 ### Initializers
-- [init()](hmcamerasource/init.md)
+- [init()](./hmcamerasource/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [HMCameraSnapshot](hmcamerasnapshot.md)
-- [HMCameraStream](hmcamerastream.md)
+- [HMCameraSnapshot](./hmcamerasnapshot.md)
+- [HMCameraStream](./hmcamerastream.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(source: HMCameraSource)](cameraview/init(source:).md)
+### Creating a camera view
+- [init(source: HMCameraSource)](./cameraview/init%28source%29.md)
   Creates a new camera view using the given source.
 
 

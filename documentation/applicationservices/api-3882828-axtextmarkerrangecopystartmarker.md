@@ -1,7 +1,8 @@
 # AXTextMarkerRangeCopyStartMarker(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func AXTextMarkerRangeCopyStartMarker(_ textMarkerRange: AXTextMarkerRange) -> AXTextMarker
+```
+
+```c
+AXTextMarkerRef AXTextMarkerRangeCopyStartMarker(AXTextMarkerRangeRef textMarkerRange);
 ```
 
 

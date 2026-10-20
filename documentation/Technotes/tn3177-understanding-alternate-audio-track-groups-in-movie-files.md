@@ -1,6 +1,7 @@
 # TN3177: Understanding alternate audio track groups in movie files
 
-**Framework**: Technotes
+**Framework**: Technotes  
+**Role**: Technote
 
 Learn how alternate groups collect audio tracks, and how to choose which audio track to use in your app.
 
@@ -8,11 +9,11 @@ Learn how alternate groups collect audio tracks, and how to choose which audio t
 
 Movies recorded in QuickTime Movie files and MPEG-4 files by the Camera app on iPhone 16 and iPhone 16 Pro, and by spatial video captures on Apple Vision Pro, may have more than one audio track, containing the same recording in different formats. One track carries Spatial Audio and the other serves as a stereo fallback.
 
-Movie files collect these tracks into [`Preparing sound and subtitle alternate groups for use with Apple devices`](https://developer.apple.com/documentation/quicktime-file-format/preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices), from which at most one track should be used at a time.
+Movie files collect these tracks into [alternate groups](../quicktime-file-format/preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md), from which at most one track should be used at a time.
 
-#### Alternate Groups
+#### Alternate groups
 
-Movies use [`Preparing sound and subtitle alternate groups for use with Apple devices`](https://developer.apple.com/documentation/quicktime-file-format/preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices) to describe multiple language audio tracks and subtitle tracks. Alternate groups can also indicate the relationship between stereo and surround audio tracks when they are recordings of the same audio source: only one should be played at a time.
+Movies use [alternate groups](../quicktime-file-format/preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md) to describe multiple language audio tracks and subtitle tracks. Alternate groups can also indicate the relationship between stereo and surround audio tracks when they are recordings of the same audio source: only one should be played at a time.
 
 A track association (also called a track reference) can indicate that the stereo track is a *fallback track* for the surround track. In general, the older and more compatible formats are fallbacks for the newer and more sophisticated formats.
 
@@ -25,19 +26,19 @@ The stereo track is associated as the fallback track for the Spatial Audio track
 
 > ❗ **Important**: If your app examines or uses audio tracks directly, it should honor the relationship between tracks in an alternate group, and use no more than one track from any alternate group at one time. If you mix audio from different tracks in the same group, your app will produce incorrect audio.
 
-#### Enabled Tracks
+#### Enabled tracks
 
-When you use [`AVAsset`](https://developer.apple.com/documentation/avfoundation/avasset) APIs to access tracks in a movies, each track in the asset reports an `isEnabled` property telling you whether the track is marked in the movie file as enabled or disabled.
+When you use [`AVAsset`](../AVFoundation/avasset.md) APIs to access tracks in a movies, each track in the asset reports an `isEnabled` property telling you whether the track is marked in the movie file as enabled or disabled.
 
 For alternate groups, at most one of the tracks will be marked as enabled, indicating a default or expected track in the group. All other tracks in the group will be marked as disabled.
 
 In the case of alternate groups with a Spatial Audio track, the stereo track is marked enabled, and the Spatial Audio track is marked disabled.
 
-![AVAsset tracks](/images/com.apple.technotes/tn3177-avasset-tracks.png)
+![AVAsset tracks](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3177-avasset-tracks.png)
 
-If your app examines or uses audio tracks directly, and you have no other specific processing requirements, you can simply skip disabled tracks. To test whether a track is enabled or disabled, use [`load(_:isolation:)`](https://developer.apple.com/documentation/avfoundation/avasynchronouskeyvalueloading/load(_:isolation:)):
+If your app examines or uses audio tracks directly, and you have no other specific processing requirements, you can simply skip disabled tracks. To test whether a track is enabled or disabled, use [`load(.isEnabled)`](../AVFoundation/avasynchronouskeyvalueloading/load%28_,isolation%29.md):
 
-```None
+```
 for track in try await asset.loadTracks(withMediaType: .audio) {
     if try await track.load(.isEnabled) {
         //...
@@ -45,33 +46,33 @@ for track in try await asset.loadTracks(withMediaType: .audio) {
 }
 ```
 
-To query alternate track groups, use the [`trackGroups`](https://developer.apple.com/documentation/avfoundation/avpartialasyncproperty/trackgroups) property.
+To query alternate track groups, use the [`trackGroups`](../AVFoundation/avpartialasyncproperty/trackgroups.md) property.
 
 > ❗ **Important**: If your app currently iterates over audio tracks for custom processing without taking notice of whether the tracks are enabled or disabled, you should update it to do so.
 
-> **Note**: [`AVPlayer`](https://developer.apple.com/documentation/avfoundation/avplayer) uses a more sophisticated strategy. It automatically enables the audio track appropriate for the current audio route and disables the others.
+> **Note**: [`AVPlayer`](../AVFoundation/avplayer.md) uses a more sophisticated strategy. It automatically enables the audio track appropriate for the current audio route and disables the others.
 
-#### Enabled State in Movie File Tracks
+#### Enabled state in movie file tracks
 
-When you’re using [`AVFoundation`](https://developer.apple.com/documentation/avfoundation), you can rely on its APIs for parsing and writing movie files.
+When you’re using [AVFoundation](../AVFoundation/AVFoundation.md), you can rely on its APIs for parsing and writing movie files.
 
-If you have reasons to implement parsing and writing yourself, you’ll need to understand where to find the enabled and alternate group state of tracks in the movie file format, whether [`QuickTime File Format`](https://developer.apple.com/documentation/quicktime-file-format) or ISO Base Media File Format (`ISOBMFF`) (ISO/IEC 14496-12:2020).
+If you have reasons to implement parsing and writing yourself, you’ll need to understand where to find the enabled and alternate group state of tracks in the movie file format, whether [QuickTime File Format](../quicktime-file-format/quicktime-file-format.md) or ISO Base Media File Format (`ISOBMFF`) (ISO/IEC 14496-12:2020).
 
 > **Note**: `MP4` files are the best known member of the `ISOBMFF` family.
 
 QuickTime Movie and `ISOBMFF` files both carry audiovisual media. The QuickTime File Format and `ISOBMFF` are very similar, as the latter was based upon the former. The format organization of QuickTime Movie files uses structures called “atoms”. `ISOBMFF` files uses many of the same structures but calls them “boxes”. You can find descriptions of “Track atom” and “TrackBox”, for instance, by reading the respective specifications.
 
-In QuickTime Movie files, the enabled state of a QuickTime Movie track is stored as a single bit flag (`0x000001`) in the 3-byte `Flags` field of the [`Track header atom`](https://developer.apple.com/documentation/quicktime-file-format/track_header_atom). In the QuickTime File Format specification this flag is called [`Flags`](https://developer.apple.com/documentation/quicktime-file-format/track_header_atom/flags). If this bit is set to `1`, the track is enabled. Otherwise, when it is `0`, the track is disabled.
+In QuickTime Movie files, the enabled state of a QuickTime Movie track is stored as a single bit flag (`0x000001`) in the 3-byte `Flags` field of the [Track header atom](../quicktime-file-format/track_header_atom.md). In the QuickTime File Format specification this flag is called [Track enabled](../quicktime-file-format/track_header_atom/flags.md). If this bit is set to `1`, the track is enabled. Otherwise, when it is `0`, the track is disabled.
 
 For MPEG-4 (or more generally `ISOBMFF`) files, the enabled state is carried in the 3-byte `flags` field of the `TrackHeaderBox`. The `track_enabled` flag (`0x000001`) is used to mark the track as enabled. A value of `0` in this position disables the track.
 
-#### Alternate Group State in Movie File Tracks
+#### Alternate group state in movie file tracks
 
 Each movie track can optionally be associated with an alternate group. Typically, only tracks of a particular kind or category will be in the same alternate group. For example, one alternate group might contain only audio tracks. Another alternate group might contain only subtitle or closed caption tracks.
 
 A track’s alternate group is signaled using a 16-bit integer used to associate tracks.
 
-- In QuickTime Movie files, the [`Track header atom`](https://developer.apple.com/documentation/quicktime-file-format/track_header_atom) carries a 16-bit integer [`Alternate group`](https://developer.apple.com/documentation/quicktime-file-format/track_header_atom/alternate_group) field.
+- In QuickTime Movie files, the [Track header atom](../quicktime-file-format/track_header_atom.md) carries a 16-bit integer [Alternate group](../quicktime-file-format/track_header_atom/alternate_group.md) field.
 - In `ISOBMFF`, the `TrackHeaderBox` `ISOBMFF` carries a 16-bit integer `alternate_group` field.
 
 A value of `0` indicates the track is not a member of an alternate group. A non-zero value in one track can be matched to the same value in other tracks to identify alternate group membership.

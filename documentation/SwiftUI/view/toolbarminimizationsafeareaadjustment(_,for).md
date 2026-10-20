@@ -1,7 +1,8 @@
 # toolbarMinimizationSafeAreaAdjustment(_:for:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the safe area adjustment for the specified bars during minimization.
 
@@ -25,9 +26,9 @@ func toolbarMinimizationSafeAreaAdjustment(_ adjustment: ToolbarMinimizationSafe
 
 By default, the safe area adjusts as bars minimize, allowing content to reflow into the space vacated by the bar. Use this modifier to disable that adjustment when content should remain in place – for example, when displaying full-bleed media beneath a minimizing bar.
 
-Currently, only [`navigationBar`](toolbarplacement/navigationbar.md) supports customizing the safe area adjustment.
+Currently, only [`navigationBar`](../toolbarplacement/navigationbar.md) supports customizing the safe area adjustment.
 
-Use this modifier alongside [`toolbarMinimizationBehavior(_:for:)`](view/toolbarminimizationbehavior(_:for:).md):
+Use this modifier alongside [`toolbarMinimizationBehavior(_:for:)`](./toolbarminimizationbehavior%28_,for%29.md):
 
 ```swift
 NavigationStack {
@@ -48,15 +49,16 @@ NavigationStack {
 
 ## See Also
 
-- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizationbehavior(_:for:).md)
+### Minimizing a toolbar
+- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](./toolbarminimizationbehavior%28_,for%29.md)
   Sets the minimize behavior for the specified bars.
-- [struct ToolbarMinimizationBehavior](toolbarminimizationbehavior.md)
+- [struct ToolbarMinimizationBehavior](../toolbarminimizationbehavior.md)
   The minimization behavior of a toolbar.
-- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](view/toolbarminimizationrestoration(_:for:).md)
+- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](./toolbarminimizationrestoration%28_,for%29.md)
   Sets the restoration behavior for the specified bars during minimization.
-- [struct ToolbarMinimizationRestoration](toolbarminimizationrestoration.md)
+- [struct ToolbarMinimizationRestoration](../toolbarminimizationrestoration.md)
   The restoration behavior during toolbar minimization.
-- [struct ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment.md)
+- [struct ToolbarMinimizationSafeAreaAdjustment](../toolbarminimizationsafeareaadjustment.md)
   The safe area adjustment during toolbar minimization.
 
 

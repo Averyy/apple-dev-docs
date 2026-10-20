@@ -1,7 +1,8 @@
 # USDTransformOperation.Kind.transform
 
 **Framework**: USDKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A full 4x4 transformation matrix.
 

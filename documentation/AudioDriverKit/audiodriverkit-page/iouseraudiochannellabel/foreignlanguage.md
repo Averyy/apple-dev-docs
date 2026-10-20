@@ -1,7 +1,8 @@
 # ForeignLanguage
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The foreign language channel.
 
@@ -10,21 +11,22 @@ The foreign language channel.
 
 ## Declaration
 
-```swift
+```c
 ForeignLanguage
 ```
 
 ## See Also
 
-- [ClickTrack](audiodriverkit/iouseraudiochannellabel/clicktrack.md)
+### Alternate Content Channels
+- [ClickTrack](./clicktrack.md)
   The click track channel.
-- [DialogCentricMix](audiodriverkit/iouseraudiochannellabel/dialogcentricmix.md)
+- [DialogCentricMix](./dialogcentricmix.md)
   The dialog-centric mix channel.
-- [HearingImpaired](audiodriverkit/iouseraudiochannellabel/hearingimpaired.md)
+- [HearingImpaired](./hearingimpaired.md)
   The audio for the hearing-impaired channel.
-- [Haptic](audiodriverkit/iouseraudiochannellabel/haptic.md)
+- [Haptic](./haptic.md)
   The haptic effects channel.
-- [Narration](audiodriverkit/iouseraudiochannellabel/narration.md)
+- [Narration](./narration.md)
   The narration channel.
 
 

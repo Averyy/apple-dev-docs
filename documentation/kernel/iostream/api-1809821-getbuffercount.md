@@ -5,28 +5,29 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOItemCount getBufferCount(
  void );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns kIOReturnSuccess if all the buffers were successfully removed. Buffers cannot be removed while the stream is open, as this will change the buffer IDs of existing buffers.
 
 ## See Also
 
-- [addBuffer](iostream/1809807-addbuffer.md)
+### Managing buffers in an IOStream
+- [addBuffer](./api-1809807-addbuffer.md)
   Add a buffer to an IOStream.
-- [addBuffers](iostream/1809814-addbuffers.md)
-- [getBuffers](iostream/1809828-getbuffers.md)
+- [addBuffers](./api-1809814-addbuffers.md)
+- [getBuffers](./api-1809828-getbuffers.md)
   Get an array containing all the buffers in the stream.
-- [getBufferWithID](iostream/1809834-getbufferwithid.md)
-- [removeAllBuffers()](iostream/1809839-removeallbuffers.md)
-- [removeAllBuffers()](iostream/1809846-removeallbuffers.md)
-- [removeBuffer(IOStreamBuffer *)](iostream/1809852-removebuffer.md)
+- [getBufferWithID](./api-1809834-getbufferwithid.md)
+- [removeAllBuffers()](./api-1809839-removeallbuffers.md)
+- [removeAllBuffers()](./api-1809846-removeallbuffers.md)
+- [removeBuffer(IOStreamBuffer *)](./api-1809852-removebuffer.md)
   Removes a buffer from the stream. Buffers cannot be removed while the stream is open, as this will change the buffer IDs of existing buffers.
-- [removeBuffer(IOStreamBufferID)](iostream/1809860-removebuffer.md)
+- [removeBuffer(IOStreamBufferID)](./api-1809860-removebuffer.md)
   Removes a buffer from the stream. Buffers cannot be removed while the stream is open, as this will change the buffer IDs of existing buffers.
 
 

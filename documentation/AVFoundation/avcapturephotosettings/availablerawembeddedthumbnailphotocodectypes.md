@@ -1,7 +1,8 @@
 # availableRawEmbeddedThumbnailPhotoCodecTypes
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of video codec types compatible with the photo settings for embedding raw thumbnail images in photo file output.
 
@@ -17,17 +18,22 @@ An array of video codec types compatible with the photo settings for embedding r
 var availableRawEmbeddedThumbnailPhotoCodecTypes: [AVVideoCodecType] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<NSString *> * availableRawEmbeddedThumbnailPhotoCodecTypes;
+```
+
 ## See Also
 
-- [var previewPhotoFormat: [String : Any]?](avcapturephotosettings/previewphotoformat.md)
+### Enabling preview and thumbnail delivery
+- [var previewPhotoFormat: [String : Any]?](./previewphotoformat.md)
   A dictionary describing the format for delivery of preview-sized images alongside the main photo.
-- [var availablePreviewPhotoPixelFormatTypes: [OSType]](avcapturephotosettings/availablepreviewphotopixelformattypes-30d9.md)
+- [var availablePreviewPhotoPixelFormatTypes: [OSType]](./availablepreviewphotopixelformattypes-30d9.md)
   An array of available of pixel format types available to specify a preview photo format.
-- [var embeddedThumbnailPhotoFormat: [String : Any]?](avcapturephotosettings/embeddedthumbnailphotoformat.md)
+- [var embeddedThumbnailPhotoFormat: [String : Any]?](./embeddedthumbnailphotoformat.md)
   A dictionary describing the format for delivery of thumbnail images embedded in photo file output.
-- [var rawEmbeddedThumbnailPhotoFormat: [String : Any]?](avcapturephotosettings/rawembeddedthumbnailphotoformat.md)
+- [var rawEmbeddedThumbnailPhotoFormat: [String : Any]?](./rawembeddedthumbnailphotoformat.md)
   A dictionary describing the format for delivery of raw thumbnail images embedded in photo file output.
-- [var availableEmbeddedThumbnailPhotoCodecTypes: [AVVideoCodecType]](avcapturephotosettings/availableembeddedthumbnailphotocodectypes.md)
+- [var availableEmbeddedThumbnailPhotoCodecTypes: [AVVideoCodecType]](./availableembeddedthumbnailphotocodectypes.md)
   An array of video codec types compatible with the photo settings for embedding thumbnail images in photo file output.
 
 

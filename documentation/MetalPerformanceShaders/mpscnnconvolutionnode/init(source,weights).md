@@ -1,7 +1,8 @@
 # init(source:weights:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 init(source sourceNode: MPSNNImageNode, weights: any MPSCNNConvolutionDataSource)
 ```
 
+```objc
+- (instancetype) initWithSource:(MPSNNImageNode *) sourceNode weights:(id<MPSCNNConvolutionDataSource>) weights;
+```
+
 ## See Also
 
-- [protocol MPSCNNConvolutionDataSource](mpscnnconvolutiondatasource.md)
+### Initializers
+- [protocol MPSCNNConvolutionDataSource](../mpscnnconvolutiondatasource.md)
   The protocol that provides convolution filter weights and bias terms.
 
 

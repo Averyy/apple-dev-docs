@@ -1,18 +1,19 @@
 # stringValue
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value of the metadata item as a string.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -26,17 +27,18 @@ This value is `nil` if the system can’t represent the value as a string.
 
 ## See Also
 
-- [var value: (any NSCopying & NSObjectProtocol)?](avmutablemetadataitem/value.md)
+### Accessing values
+- [var value: (any NSCopying & NSObjectProtocol)?](./value.md)
   The value for the mutable metadata item.
-- [var extraAttributes: [AVMetadataExtraAttributeKey : Any]?](avmutablemetadataitem/extraattributes.md)
+- [var extraAttributes: [AVMetadataExtraAttributeKey : Any]?](./extraattributes.md)
   A dictionary of additional attributes for a metadata item.
-- [var dataType: String?](avmutablemetadataitem/datatype.md)
+- [var dataType: String?](./datatype.md)
   The data type of the metadata item’s value.
-- [var numberValue: NSNumber?](avmutablemetadataitem/numbervalue.md)
+- [var numberValue: NSNumber?](./numbervalue.md)
   The value of the metadata item as a number.
-- [var dateValue: Date?](avmutablemetadataitem/datevalue.md)
+- [var dateValue: Date?](./datevalue.md)
   The value of the metadata item as a date.
-- [var dataValue: Data?](avmutablemetadataitem/datavalue.md)
+- [var dataValue: Data?](./datavalue.md)
   The value of the metadata item as a data value.
 
 

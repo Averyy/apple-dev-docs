@@ -1,7 +1,8 @@
 # ExtensibleSSOPlatformSSO_Authorization_AuthorizationGroupsObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The pairing of Authorization Rights to group names. When using this, the system updates the Authorization Right to use the group.
 
@@ -10,7 +11,7 @@ The pairing of Authorization Rights to group names. When using this, the system 
 
 ## Declaration
 
-```swift
+```
 object ExtensibleSSOPlatformSSO_Authorization_AuthorizationGroupsObject
 ```
 

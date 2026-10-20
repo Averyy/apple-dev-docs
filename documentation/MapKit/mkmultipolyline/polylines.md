@@ -1,7 +1,8 @@
 # polylines
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the polyline objects that make up the multipolyline object.
 
@@ -18,6 +19,10 @@ An array containing the polyline objects that make up the multipolyline object.
 
 ```swift
 var polylines: [MKPolyline] { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSArray<MKPolyline *> * polylines;
 ```
 
 

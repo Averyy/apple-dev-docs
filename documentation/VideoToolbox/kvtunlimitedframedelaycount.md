@@ -1,7 +1,8 @@
 # kVTUnlimitedFrameDelayCount
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Indicates that no limit should be set on the compression window.
 
@@ -17,6 +18,10 @@ Indicates that no limit should be set on the compression window.
 
 ```swift
 var kVTUnlimitedFrameDelayCount: Int { get }
+```
+
+```c
+kVTUnlimitedFrameDelayCount
 ```
 
 

@@ -1,7 +1,8 @@
 # GKGameActivity
 
 **Framework**: GameKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a single instance of a game activity for the current game.
 
@@ -19,117 +20,122 @@ An object that represents a single instance of a game activity for the current g
 class GKGameActivity
 ```
 
+```objc
+@interface GKGameActivity : NSObject
+```
+
 ## Mentions
 
-- [Creating activities for your game](creating-activities-for-your-game.md)
+- [Creating activities for your game](./creating-activities-for-your-game.md)
 
 ## Topics
 
 ### Creating an activity
-- [init(definition: GKGameActivityDefinition)](gkgameactivity/init(definition:).md)
+- [init(definition: GKGameActivityDefinition)](./gkgameactivity/init%28definition%29.md)
   Creates a game activity with definition.
-- [class func start(definition: GKGameActivityDefinition) throws -> GKGameActivity](gkgameactivity/start(definition:).md)
+- [class func start(definition: GKGameActivityDefinition) throws -> GKGameActivity](./gkgameactivity/start%28definition%29.md)
   Creates and starts a game activity with a definition.
-- [class func start(definition: GKGameActivityDefinition, partyCode: String) throws -> GKGameActivity](gkgameactivity/start(definition:partycode:).md)
+- [class func start(definition: GKGameActivityDefinition, partyCode: String) throws -> GKGameActivity](./gkgameactivity/start%28definition,partycode%29.md)
   Creates and starts a new game activity with a custom party code.
 ### Getting the activity definition
-- [var activityDefinition: GKGameActivityDefinition](gkgameactivity/activitydefinition.md)
+- [var activityDefinition: GKGameActivityDefinition](./gkgameactivity/activitydefinition.md)
   The activity definition that this activity instance is based on.
 ### Getting the activity state
-- [var state: GKGameActivity.State](gkgameactivity/state-swift.property.md)
+- [var state: GKGameActivity.State](./gkgameactivity/state-swift.property.md)
   The state of the game activity.
-- [GKGameActivity.State](gkgameactivity/state-swift.enum.md)
+- [GKGameActivity.State](./gkgameactivity/state-swift.enum.md)
   The state of a game activity.
 ### Updating the activity state
-- [func start()](gkgameactivity/start.md)
+- [func start()](./gkgameactivity/start%28%29.md)
   Starts the game activity if it’s not already started.
-- [func pause()](gkgameactivity/pause.md)
+- [func pause()](./gkgameactivity/pause%28%29.md)
   Pauses the game activity if it’s not already paused.
-- [func resume()](gkgameactivity/resume.md)
+- [func resume()](./gkgameactivity/resume%28%29.md)
   Resumes the game activity if it was paused.
-- [func end()](gkgameactivity/end.md)
+- [func end()](./gkgameactivity/end%28%29.md)
   Ends the game activity if it’s not already ended.
 ### Getting and removing achievements
-- [var achievements: Set<GKAchievement>](gkgameactivity/achievements.md)
+- [var achievements: Set<GKAchievement>](./gkgameactivity/achievements.md)
   All achievements that have been associated with this activity.
-- [func removeAchievements([GKAchievement])](gkgameactivity/removeachievements(_:).md)
+- [func removeAchievements([GKAchievement])](./gkgameactivity/removeachievements%28_%29.md)
   Removes all achievements if they exist.
-- [func progress(on: GKAchievement) -> Double](gkgameactivity/progress(on:).md)
+- [func progress(on: GKAchievement) -> Double](./gkgameactivity/progress%28on%29.md)
   Get the achievement progress from a specific achievement of the local player if previously set.
-- [func setProgress(on: GKAchievement, to: Double)](gkgameactivity/setprogress(on:to:).md)
+- [func setProgress(on: GKAchievement, to: Double)](./gkgameactivity/setprogress%28on,to%29.md)
   Set a progress for an achievement for a player.
-- [func setAchievementCompleted(GKAchievement)](gkgameactivity/setachievementcompleted(_:).md)
+- [func setAchievementCompleted(GKAchievement)](./gkgameactivity/setachievementcompleted%28_%29.md)
   Set progress to 100% for an achievement for a player.
 ### Getting and removing leaderboard scores
-- [var leaderboardScores: Set<GKLeaderboardScore>](gkgameactivity/leaderboardscores.md)
+- [var leaderboardScores: Set<GKLeaderboardScore>](./gkgameactivity/leaderboardscores.md)
   All leaderboard scores that have been associated with this activity.
-- [func score(on: GKLeaderboard) -> GKLeaderboardScore?](gkgameactivity/score(on:).md)
+- [func score(on: GKLeaderboard) -> GKLeaderboardScore?](./gkgameactivity/score%28on%29.md)
   Get the leaderboard score from a specific leaderboard of the local player if previously set.
-- [func setScore(on: GKLeaderboard, to: Int)](gkgameactivity/setscore(on:to:).md)
+- [func setScore(on: GKLeaderboard, to: Int)](./gkgameactivity/setscore%28on,to%29.md)
   Set a score of a leaderboard for a player.
-- [func setScore(on: GKLeaderboard, to: Int, context: Int)](gkgameactivity/setscore(on:to:context:).md)
+- [func setScore(on: GKLeaderboard, to: Int, context: Int)](./gkgameactivity/setscore%28on,to,context%29.md)
   Set a score of a leaderboard with a context for a player.
-- [func removeScores(from: [GKLeaderboard])](gkgameactivity/removescores(from:).md)
+- [func removeScores(from: [GKLeaderboard])](./gkgameactivity/removescores%28from%29.md)
   Removes all scores from leaderboards for a player if exist.
 ### Getting and verifying the party code
-- [var partyCode: String?](gkgameactivity/partycode.md)
+- [var partyCode: String?](./gkgameactivity/partycode.md)
   If the game supports party code, this is the party code that can be shared among players to join the party.
-- [var partyURL: URL?](gkgameactivity/partyurl.md)
+- [var partyURL: URL?](./gkgameactivity/partyurl.md)
   If the game supports party code, this is the URL that can be shared among players to join the party.
-- [class var validPartyCodeAlphabet: [String]](gkgameactivity/validpartycodealphabet.md)
+- [class var validPartyCodeAlphabet: [String]](./gkgameactivity/validpartycodealphabet.md)
   Allowed characters for the party code to be used to share this activity.
-- [class func isValidPartyCode(String) -> Bool](gkgameactivity/isvalidpartycode(_:).md)
+- [class func isValidPartyCode(String) -> Bool](./gkgameactivity/isvalidpartycode%28_%29.md)
   Checks whether a party code is in valid format.
 ### Getting the activity properties
-- [var duration: TimeInterval](gkgameactivity/duration.md)
+- [var duration: TimeInterval](./gkgameactivity/duration.md)
   The total time elapsed while in active state.
-- [var startDate: Date?](gkgameactivity/startdate.md)
+- [var startDate: Date?](./gkgameactivity/startdate.md)
   The date when the activity was initially started.
-- [var endDate: Date?](gkgameactivity/enddate.md)
+- [var endDate: Date?](./gkgameactivity/enddate.md)
   The date when the activity was officially ended.
-- [var creationDate: Date](gkgameactivity/creationdate.md)
+- [var creationDate: Date](./gkgameactivity/creationdate.md)
   The date when the activity was created.
-- [var lastResumeDate: Date?](gkgameactivity/lastresumedate.md)
+- [var lastResumeDate: Date?](./gkgameactivity/lastresumedate.md)
   The date when the activity was last resumed.
 ### Getting the custom user data
-- [var properties: [String : String]](gkgameactivity/properties.md)
+- [var properties: [String : String]](./gkgameactivity/properties.md)
   Properties that contain additional information about the activity.
 ### Getting the activity identifiers
-- [var identifier: String](gkgameactivity/identifier.md)
+- [var identifier: String](./gkgameactivity/identifier.md)
   The identifier of this activity instance.
 ### Checking for an activity
-- [class func checkPendingGameActivityExistence(completionHandler: (Bool) -> Void)](gkgameactivity/checkpendinggameactivityexistence(completionhandler:).md)
+- [class func checkPendingGameActivityExistence(completionHandler: (Bool) -> Void)](./gkgameactivity/checkpendinggameactivityexistence%28completionhandler%29.md)
   Checks whether there is a pending activity to handle for the current game.
 ### Creating a matchmaking request
-- [func makeMatchRequest() -> GKMatchRequest?](gkgameactivity/makematchrequest.md)
+- [func makeMatchRequest() -> GKMatchRequest?](./gkgameactivity/makematchrequest%28%29.md)
   Makes a match request object with information from the activity, which you can use to find matches for the local player.
 ### Performing a matchmaking request
-- [func findMatch(completionHandler: (GKMatch?, (any Error)?) -> Void)](gkgameactivity/findmatch(completionhandler:).md)
+- [func findMatch(completionHandler: (GKMatch?, (any Error)?) -> Void)](./gkgameactivity/findmatch%28completionhandler%29.md)
   Use information from the activity to find matches for the local player.
-- [func findPlayersForHostedMatch(completionHandler: ([GKPlayer]?, (any Error)?) -> Void)](gkgameactivity/findplayersforhostedmatch(completionhandler:).md)
+- [func findPlayersForHostedMatch(completionHandler: ([GKPlayer]?, (any Error)?) -> Void)](./gkgameactivity/findplayersforhostedmatch%28completionhandler%29.md)
   Use information from the activity to find server hosted players for the local player.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Creating activities for your game](creating-activities-for-your-game.md)
+### Activities
+- [Creating activities for your game](./creating-activities-for-your-game.md)
   Use activities to surface game content to players and encourage them to connect with each other.
-- [class GKGameActivityDefinition](gkgameactivitydefinition.md)
+- [class GKGameActivityDefinition](./gkgameactivitydefinition.md)
   An object that represents the static metadata you define for the activity.
-- [protocol GKGameActivityListener](gkgameactivitylistener.md)
+- [protocol GKGameActivityListener](./gkgameactivitylistener.md)
   An object that responds to activity events.
 
 

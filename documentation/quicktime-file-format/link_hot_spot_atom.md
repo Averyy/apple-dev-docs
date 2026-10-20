@@ -1,9 +1,12 @@
 # Link hot spot atom ('link')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that specifies information for a link hot spot.
+
+> **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
 #### Overview
 
@@ -38,50 +41,51 @@ Certain fields in the link hot spot atom are not used by QuickTime VR. The `from
 ## Topics
 
 ### Data fields
-- [majorVersion](link_hot_spot_atom/majorversion.md)
+- [majorVersion](./link_hot_spot_atom/majorversion.md)
   The major version number of the file format.
-- [minorVersion](link_hot_spot_atom/minorversion.md)
+- [minorVersion](./link_hot_spot_atom/minorversion.md)
   The minor version number of the file format.
-- [toNodeID](link_hot_spot_atom/tonodeid.md)
+- [toNodeID](./link_hot_spot_atom/tonodeid.md)
   The ID of the destination node.
-- [fromValidFlags](link_hot_spot_atom/fromvalidflags.md)
+- [fromValidFlags](./link_hot_spot_atom/fromvalidflags.md)
   A set of flags that indicate which source node view settings are valid.
-- [fromPan](link_hot_spot_atom/frompan.md)
+- [fromPan](./link_hot_spot_atom/frompan.md)
   The preferred from-pan angle at the source node.
-- [fromTilt](link_hot_spot_atom/fromtilt.md)
+- [fromTilt](./link_hot_spot_atom/fromtilt.md)
   The preferred from-tilt angle at the source node.
-- [fromFOV](link_hot_spot_atom/fromfov.md)
+- [fromFOV](./link_hot_spot_atom/fromfov.md)
   The preferred from-field of view at the source node.
-- [fromViewCenter](link_hot_spot_atom/fromviewcenter.md)
+- [fromViewCenter](./link_hot_spot_atom/fromviewcenter.md)
   The preferred from-view center at the source node.
-- [toValidFlags](link_hot_spot_atom/tovalidflags.md)
+- [toValidFlags](./link_hot_spot_atom/tovalidflags.md)
   A set of flags that indicate which destination node view settings are valid.
-- [toPan](link_hot_spot_atom/topan.md)
+- [toPan](./link_hot_spot_atom/topan.md)
   The pan angle to use when displaying the destination node.
-- [toTilt](link_hot_spot_atom/totilt.md)
+- [toTilt](./link_hot_spot_atom/totilt.md)
   The tilt angle to use when displaying the destination node.
-- [toFOV](link_hot_spot_atom/tofov.md)
+- [toFOV](./link_hot_spot_atom/tofov.md)
   The field of view to use when displaying the destination node.
-- [toViewCenter](link_hot_spot_atom/toviewcenter.md)
+- [toViewCenter](./link_hot_spot_atom/toviewcenter.md)
   The view center to use when displaying the destination node.
-- [distance](link_hot_spot_atom/distance.md)
+- [distance](./link_hot_spot_atom/distance.md)
   The distance between the source node and the destination node.
-- [flags](link_hot_spot_atom/flags.md)
+- [flags](./link_hot_spot_atom/flags.md)
   A set of link hot spot flags.
-- [reserved1](link_hot_spot_atom/reserved1.md)
+- [reserved1](./link_hot_spot_atom/reserved1.md)
   Reserved.
-- [reserved2](link_hot_spot_atom/reserved2.md)
+- [reserved2](./link_hot_spot_atom/reserved2.md)
   Reserved.
 
 ## See Also
 
-- [Node header atom ('ndhd')](node_header_atom.md)
+### Specifying node information
+- [Node header atom ('ndhd')](./node_header_atom.md)
   An atom that describes the type and ID of a node, as well as other information about the node.
-- [Hot spot parent atom ('hspa')](hot_spot_parent_atom.md)
+- [Hot spot parent atom ('hspa')](./hot_spot_parent_atom.md)
   An atom that is the parent for all hot spot atoms for the node.
-- [Hot spot information atom ('hsin')](hot_spot_information_atom.md)
+- [Hot spot information atom ('hsin')](./hot_spot_information_atom.md)
   An atom that contains general information about a hot spot.
-- [Specific information atom](specific_information_atom.md)
+- [Specific information atom](./specific_information_atom.md)
   An atom that identified the hot spot type.
 
 

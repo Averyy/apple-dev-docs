@@ -1,7 +1,8 @@
 # PluginCommandIntent.documentationGeneration
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The plug-in generates documentation.
 

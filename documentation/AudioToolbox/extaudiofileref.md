@@ -1,17 +1,18 @@
 # ExtAudioFileRef
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An opaque structure representing an extended audio file object.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,10 +20,15 @@ An opaque structure representing an extended audio file object.
 typealias ExtAudioFileRef = OpaquePointer
 ```
 
+```c
+typedef struct OpaqueExtAudioFile * ExtAudioFileRef;
+```
+
 ## See Also
 
-- [typealias ExtAudioFilePacketTableInfoOverride](extaudiofilepackettableinfooverride.md)
-- [typealias ExtAudioFilePropertyID](extaudiofilepropertyid.md)
+### Data Types
+- [typealias ExtAudioFilePacketTableInfoOverride](./extaudiofilepackettableinfooverride.md)
+- [typealias ExtAudioFilePropertyID](./extaudiofilepropertyid.md)
   An audio file object property identifier.
 
 

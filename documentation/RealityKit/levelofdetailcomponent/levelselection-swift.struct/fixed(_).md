@@ -1,7 +1,8 @@
 # fixed(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Override automatic selection and always display the specified level index.
 

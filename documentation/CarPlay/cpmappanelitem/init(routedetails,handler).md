@@ -1,7 +1,8 @@
 # init(routeDetails:handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a map panel item with route details.
 
@@ -14,6 +15,10 @@ Creates a map panel item with route details.
 
 ```swift
 init(routeDetails: [CPRouteDetail], handler: ((CPMapPanelItem, @escaping () -> Void) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithRouteDetails:(NSArray<CPRouteDetail *> *) routeDetails handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
 #### Return Value

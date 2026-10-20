@@ -1,14 +1,15 @@
 # CTRadioAccessTechnologyDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the notification indicating that the radio access technology changed for one of the services.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 13.1+
+- iOS 7.0+ - Deprecated in 12.0 (renamed: NSNotification.Name.CTServiceRadioAccessTechnologyDidChange)
+- iPadOS 7.0+ - Deprecated in 12.0 (renamed: NSNotification.Name.CTServiceRadioAccessTechnologyDidChange)
+- Mac Catalyst 13.1+ - Deprecated in 13.1 (renamed: NSNotification.Name.CTServiceRadioAccessTechnologyDidChange)
 
 ## Declaration
 
@@ -18,11 +19,12 @@ static let CTRadioAccessTechnologyDidChange: NSNotification.Name
 
 #### Discussion
 
-The notification’s [`object`](nsnotification/object.md) is an [`NSString`](nsstring.md) that represents the service identifier of the service whose radio access technology has changed. Use this string as the key in [`serviceCurrentRadioAccessTechnology`](https://developer.apple.com/documentation/coretelephony/cttelephonynetworkinfo/servicecurrentradioaccesstechnology) to get the value of the new radio access technology for the service.
+The notification’s [`object`](../object.md) is an [`NSString`](../../nsstring.md) that represents the service identifier of the service whose radio access technology has changed. Use this string as the key in [`serviceCurrentRadioAccessTechnology`](../../../CoreTelephony/cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md) to get the value of the new radio access technology for the service.
 
 ## See Also
 
-- [static let CTServiceRadioAccessTechnologyDidChange: NSNotification.Name](nsnotification/name-swift.struct/ctserviceradioaccesstechnologydidchange.md)
+### Core Telephony
+- [static let CTServiceRadioAccessTechnologyDidChange: NSNotification.Name](./ctserviceradioaccesstechnologydidchange.md)
   A notification that posts when radio access technology changes.
 
 

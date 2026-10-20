@@ -1,7 +1,8 @@
 # TVBrowserViewControllerDataSource
 
 **Framework**: TVMLKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods adopted by the object you use to represent the browser view.
 
@@ -14,6 +15,10 @@ Methods adopted by the object you use to represent the browser view.
 protocol TVBrowserViewControllerDataSource : NSObjectProtocol
 ```
 
+```objc
+@protocol TVBrowserViewControllerDataSource <NSObject>
+```
+
 #### Overview
 
 Use the data source to provide a document to the browser.
@@ -21,17 +26,18 @@ Use the data source to provide a document to the browser.
 ## Topics
 
 ### Providing Data
-- [func browserViewController(TVBrowserViewController, documentViewControllerFor: TVViewElement) -> TVDocumentViewController?](tvbrowserviewcontrollerdatasource/browserviewcontroller(_:documentviewcontrollerfor:).md)
+- [func browserViewController(TVBrowserViewController, documentViewControllerFor: TVViewElement) -> TVDocumentViewController?](./tvbrowserviewcontrollerdatasource/browserviewcontroller%28_,documentviewcontrollerfor%29.md)
   Provides the document view controller to be used for a particular child of the full-screen browser.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var dataSource: (any TVBrowserViewControllerDataSource)?](tvbrowserviewcontroller/datasource.md)
+### Providing the Browser’s Data
+- [var dataSource: (any TVBrowserViewControllerDataSource)?](./tvbrowserviewcontroller/datasource.md)
   The object that provides data to the full-screen browser.
 
 

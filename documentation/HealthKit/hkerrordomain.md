@@ -1,7 +1,8 @@
 # HKErrorDomain
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for all HealthKit errors.
 
@@ -19,11 +20,16 @@ The domain for all HealthKit errors.
 let HKErrorDomain: String
 ```
 
+```c
+extern NSString * const HKErrorDomain;
+```
+
 ## See Also
 
-- [struct HKError](hkerror.md)
+### Errors
+- [struct HKError](./hkerror.md)
   An error returned from a HealthKit method.
-- [HKError.Code](hkerror/code.md)
+- [HKError.Code](./hkerror/code.md)
   Error codes returned by HealthKit.
 
 

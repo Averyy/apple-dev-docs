@@ -1,6 +1,7 @@
 # Hardware Codec Capabilities
 
-**Framework**: Audio Toolbox
+**Framework**: Audio Toolbox  
+**Role**: API Collection
 
 A constant to determine which hardware codecs can be used.
 
@@ -12,7 +13,7 @@ Hardware-based codecs can be used only when playing or recording using Audio Que
 
 When describing the presence of a hardware codec, the system does not consider the current audio session category. Some categories disallow the use of hardware codecs. A set of hardware codecs is considered available, by this constant, based only on whether the hardware supports the specified combination of codecs.
 
-Some codecs may be available in both hardware and software implementations. Use the [`kAudioFormatProperty_Encoders`](kaudioformatproperty_encoders.md) and [`kAudioFormatProperty_Decoders`](kaudioformatproperty_decoders.md) constants to determine whether a given codec is present, and whether it is hardware or software-based.
+Some codecs may be available in both hardware and software implementations. Use the [`kAudioFormatProperty_Encoders`](./kaudioformatproperty_encoders.md) and [`kAudioFormatProperty_Decoders`](./kaudioformatproperty_decoders.md) constants to determine whether a given codec is present, and whether it is hardware or software-based.
 
 Software-based codecs can always be instantiated, so there is no need to use this constant when using software encoding or decoding.
 
@@ -53,31 +54,32 @@ switch (successfulCodecs) {
 }
 ```
 
-See also [`Audio Codec Component Constants`](1494086-audio-codec-component-constants.md) and [`Audio Codec Manufacturer and Implementation Types`](1620448-audio-codec-manufacturer-and-imp.md).
+See also [Audio Codec Component Constants](./api-1494086-audio-codec-component-constants.md) and [Audio Codec Manufacturer and Implementation Types](./api-1620448-audio-codec-manufacturer-and-imp.md).
 
 ## Topics
 
 ### Constants
-- [var kAudioFormatProperty_HardwareCodecCapabilities: AudioFormatPropertyID](kaudioformatproperty_hardwarecodeccapabilities.md)
+- [var kAudioFormatProperty_HardwareCodecCapabilities: AudioFormatPropertyID](./kaudioformatproperty_hardwarecodeccapabilities.md)
   A `UInt32` value indicating the number of codecs from the specified list that can be used, if the application were to begin using them in the specified order. Set the `inSpecifier` parameter to an array of `AudioClassDescription` structures that describes a set of one or more audio codecs. If the property value is the same as the size of the array in the `inSpecifier` parameter, all of the specified codecs can be used.
 
 ## See Also
 
-- [Audio Unit Attenuation Properties](1534112-audio-unit-attenuation-propertie.md)
-- [Audio Unit Instrument Errors](1584141-audio-unit-instrument-errors.md)
-- [Anonymous](1534019-anonymous.md)
-- [Anonymous](1534074-anonymous.md)
-- [Audio Graph Errors](1537630-audio-graph-errors.md)
-- [Audio Converter Property ID](1624333-audio-converter-property-id.md)
-- [Anonymous](1621044-anonymous.md)
-- [Anonymous](1618426-anonymous.md)
-- [Anonymous](1618742-anonymous.md)
-- [Anonymous](1619479-anonymous.md)
-- [Anonymous](1619504-anonymous.md)
-- [Anonymous](1533960-anonymous.md)
-- [Anonymous](1534225-anonymous.md)
-- [Music Device Properties](1534089-music-device-properties.md)
-- [3D Mixer Audio Unit Properties](1534063-3d_mixer_audio_unit_properties.md)
+### Constants
+- [Audio Unit Attenuation Properties](./api-1534112-audio-unit-attenuation-propertie.md)
+- [Audio Unit Instrument Errors](./api-1584141-audio-unit-instrument-errors.md)
+- [Anonymous](./api-1534019-anonymous.md)
+- [Anonymous](./api-1534074-anonymous.md)
+- [Audio Graph Errors](./api-1537630-audio-graph-errors.md)
+- [Audio Converter Property ID](./api-1624333-audio-converter-property-id.md)
+- [Anonymous](./api-1621044-anonymous.md)
+- [Anonymous](./api-1618426-anonymous.md)
+- [Anonymous](./api-1618742-anonymous.md)
+- [Anonymous](./api-1619479-anonymous.md)
+- [Anonymous](./api-1619504-anonymous.md)
+- [Anonymous](./api-1533960-anonymous.md)
+- [Anonymous](./api-1534225-anonymous.md)
+- [Music Device Properties](./api-1534089-music-device-properties.md)
+- [3D Mixer Audio Unit Properties](./api-1534063-3d_mixer_audio_unit_properties.md)
   Properties for the Apple 3D Mixer audio unit.
 
 

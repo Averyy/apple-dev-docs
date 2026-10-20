@@ -1,7 +1,8 @@
 # curator
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The playlist’s associated curator.
 

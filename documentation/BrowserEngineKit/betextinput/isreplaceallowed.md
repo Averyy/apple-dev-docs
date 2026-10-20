@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns whether replacement should be allowed for an editable element.
@@ -16,6 +17,10 @@ Returns whether replacement should be allowed for an editable element.
 
 ```swift
 var isReplaceAllowed: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isReplaceAllowed) BOOL replaceAllowed;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # random(in:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a random value within the specified range.
 

@@ -1,6 +1,7 @@
 # Analyzing the runtime performance of your Foundation Models app
 
-**Framework**: Foundation Models
+**Framework**: Foundation Models  
+**Role**: Article
 
 Measure how prompts, responses, and tool calls affect token consumption and response times in Instruments.
 
@@ -16,7 +17,7 @@ Use the breakdown of token usage to make informed decisions about cached tokens 
 
 Together, these insights show how your app interacts with the model and help you identify where to apply optimizations.
 
-#### Launch and Configure Instruments for Recording
+#### Launch and configure Instruments for recording
 
 Instruments includes a default template you use when analyzing your app’s interactions with the Foundation Models framework. Start by opening Instruments from your Xcode project:
 
@@ -24,21 +25,21 @@ Instruments includes a default template you use when analyzing your app’s inte
 2. In the Template Selection window, select the Foundation Models template.
 3. Click Choose.
 
-![A screenshot that shows the Template Selection window with the Foundation Models](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-template-selector@2x.png)
+![A screenshot that shows the Template Selection window with the Foundation Models](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-template-selector@2x.png)
 
-#### Record App Interactions to Gather Data
+#### Record app interactions to gather data
 
 Before reviewing your app’s performance, check that your development device isn’t under thermal pressure or busy with other work. This helps you ensure that the device is in a good performance state, which can influence your analysis. When you record a run, use your app as normal and focus on interactions that perform requests to the model. Begin gathering data by clicking the Record Trace button in the upper-left corner or by choosing File > Record Trace:
 
-![A screenshot of Instruments that shows the record button in the upper-left](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-record@2x.png)
+![A screenshot of Instruments that shows the record button in the upper-left](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-record@2x.png)
 
-Because a recording captures and stores all Foundation Models prompts and responses in an unencrypted form, Instruments presents an alert when you begin recording. The captured data can include sensitive information, so handle trace files accordingly, and use this feature in a manner consistent with the [`Apple Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/support/terms/apple-developer-program-license-agreement/). After starting the recording, perform actions that interact with the model, wait for the responses to complete, then click Stop to end recording.
+Because a recording captures and stores all Foundation Models prompts and responses in an unencrypted form, Instruments presents an alert when you begin recording. The captured data can include sensitive information, so handle trace files accordingly, and use this feature in a manner consistent with the [Apple Developer Program License Agreement](https://developer.apple.com/support/terms/apple-developer-program-license-agreement/). After starting the recording, perform actions that interact with the model, wait for the responses to complete, then click Stop to end recording.
 
-#### Get to Know the Instrument
+#### Get to know the instrument
 
 The primary timeline shows events the instrument measures. The width of each component on the timeline indicates latency.
 
-![A screenshot of Instruments displaying the Foundation Models instrument track](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-record-analysis@2x.png)
+![A screenshot of Instruments displaying the Foundation Models instrument track](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-record-analysis@2x.png)
 
 The Foundation Models track appears in your timeline, with several lanes that provide insight into your recording:
 
@@ -58,7 +59,7 @@ The Inspector shows several details for the request, like the instructions, prom
 3. Select the Model Inference you want to analyze.
 4. If the inspector isn’t visible, choose View > Show Inspector.
 
-![A screenshot of Instruments displaying the Inspector. The inspector displays](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-token-duration@2x.png)
+![A screenshot of Instruments displaying the Inspector. The inspector displays](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-token-duration@2x.png)
 
 The Inspector shows a breakdown of duration details:
 
@@ -66,9 +67,9 @@ The Inspector shows a breakdown of duration details:
 - ****Response Duration****: The time spent generating the response, which excludes any input processing.
 - ****Time to First Token****: The wait time before the model starts streaming its response.
 
-#### Monitor Token Usage
+#### Monitor token usage
 
-When you prompt a language model, the model breaks down the input text into small fragments called *tokens*. Each token is typically a word or a piece of a word. The token count includes instructions, prompts, and outputs for a session instance. If your session processes a large number of tokens that exceed the context window, the framework throws the error [`LanguageModelError.contextSizeExceeded(_:)`](languagemodelerror/contextsizeexceeded(_:).md). For more information on managing the context window size, see [`Managing the context window`](managing-the-context-window.md).
+When you prompt a language model, the model breaks down the input text into small fragments called *tokens*. Each token is typically a word or a piece of a word. The token count includes instructions, prompts, and outputs for a session instance. If your session processes a large number of tokens that exceed the context window, the framework throws the error [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md). For more information on managing the context window size, see [Managing the context window](./managing-the-context-window.md).
 
 More output tokens generally require more processing time. Additionally, processing time depends on the task you perform. For example, summarizing a document requires much less processing time than generating a new article, because it’s mostly a reading task for the model.
 
@@ -76,7 +77,7 @@ The cost of text varies between characters and symbols versus discrete words. Fo
 
 High token counts affect both initial processing time and memory usage. Use the inspector to view a detailed breakdown of token metrics for the request:
 
-![A screenshot of Instruments displaying the Inspector. The inspector displays](/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-token-metrics@2x.png)
+![A screenshot of Instruments displaying the Inspector. The inspector displays](https://developer.apple.com/tutorials/images/com.apple.foundationmodels/analyzing-the-runtime-performance-of-your-foundation-models-app-token-metrics@2x.png)
 
 The Inspector shows a variety of token metrics:
 
@@ -85,13 +86,13 @@ The Inspector shows a variety of token metrics:
 - ****Generated Tokens****: The output tokens the model generates in its response.
 - ****Cached Tokens****: The input tokens the system reuses from a previous model request, which avoids reprocessing them to speed up the time to first token.
 
-The cache hit rate is the percentage of input tokens the system serves from the prefix cache, and depends on the model provider you use. For more information about caching, see [`Optimizing key-value caching in language model sessions`](optimizing-key-value-caching-in-language-model-sessions.md).
+The cache hit rate is the percentage of input tokens the system serves from the prefix cache, and depends on the model provider you use. For more information about caching, see [Optimizing key-value caching in language model sessions](./optimizing-key-value-caching-in-language-model-sessions.md).
 
-#### Reduce Token Consumption
+#### Reduce token consumption
 
 A lower token count improves performance and helps you stay within context limits.
 
-The `includeSchemaInPrompt` parameter in [`streamResponse(generating:includeSchemaInPrompt:options:prompt:)`](languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt:).md) tells the framework to include information about [`Generable`](generable.md) types in your prompts before processing the request. Doing so improves the output quality, but requires that the model consumes more input tokens. If you’ve already made a similar request or provided examples in your instructions, you can exclude the schema in subsequent requests. Excluding the schema removes redundant schema information and can save hundreds of tokens per request. To further optimize token usage, consider whether you need nested [`Generable`](generable.md) types in a parent type. The model needs more context to handle nested [`Generable`](generable.md) schema details.
+The `includeSchemaInPrompt` parameter in [`streamResponse(generating:includeSchemaInPrompt:options:prompt:)`](./languagemodelsession/streamresponse%28generating,includeschemainprompt,options,prompt%29.md) tells the framework to include information about [`Generable`](./generable.md) types in your prompts before processing the request. Doing so improves the output quality, but requires that the model consumes more input tokens. If you’ve already made a similar request or provided examples in your instructions, you can exclude the schema in subsequent requests. Excluding the schema removes redundant schema information and can save hundreds of tokens per request. To further optimize token usage, consider whether you need nested [`Generable`](./generable.md) types in a parent type. The model needs more context to handle nested [`Generable`](./generable.md) schema details.
 
 When you no longer need the schema data for your session, set `includeSchemaInPrompt` to `false`:
 
@@ -109,13 +110,14 @@ do {
 }
 ```
 
-After you make this change, record a new trace and use the Inspector panel to check that the token counts remain within your intended budget. A lower total token count translates to faster initial processing. For more context window management techniques, see [`Managing the context window`](managing-the-context-window.md).
+After you make this change, record a new trace and use the Inspector panel to check that the token counts remain within your intended budget. A lower total token count translates to faster initial processing. For more context window management techniques, see [Managing the context window](./managing-the-context-window.md).
 
 ## See Also
 
-- [Evaluating prompts to measure performance and improve model responses](evaluating-prompts-to-measure-performance-and-improve-model-responses.md)
+### Performance and evaluation
+- [Evaluating prompts to measure performance and improve model responses](./evaluating-prompts-to-measure-performance-and-improve-model-responses.md)
   Systematically measure and improve the quality of your prompts by using structured evaluation.
-- [Evaluating language model responses](../evaluations/evaluating-language-model-responses.md)
+- [Evaluating language model responses](../Evaluations/evaluating-language-model-responses.md)
   Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
 
 

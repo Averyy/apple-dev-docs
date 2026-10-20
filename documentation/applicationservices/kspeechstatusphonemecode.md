@@ -1,7 +1,8 @@
 # kSpeechStatusPhonemeCode
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The opcode for the phoneme that the speech channel is currently processing.
 
@@ -12,6 +13,10 @@ The opcode for the phoneme that the speech channel is currently processing.
 
 ```swift
 let kSpeechStatusPhonemeCode: CFString
+```
+
+```c
+const CFStringRef kSpeechStatusPhonemeCode;
 ```
 
 

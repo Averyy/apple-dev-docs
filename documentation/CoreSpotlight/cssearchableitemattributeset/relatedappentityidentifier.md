@@ -1,7 +1,8 @@
 # relatedAppEntityIdentifier
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier of the related indexed entity for this searchable item’s attribute set.
 

@@ -1,7 +1,8 @@
 # SecProtocolType.rtspProxy
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates RTSP proxy.
 
@@ -13,6 +14,10 @@ Indicates RTSP proxy.
 
 ```swift
 case rtspProxy
+```
+
+```c
+kSecProtocolTypeRTSPProxy
 ```
 
 

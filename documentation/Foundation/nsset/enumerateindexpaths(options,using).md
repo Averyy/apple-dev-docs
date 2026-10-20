@@ -1,7 +1,8 @@
 # enumerateIndexPaths(options:using:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11+
@@ -10,6 +11,10 @@
 
 ```swift
 func enumerateIndexPaths(options opts: NSEnumerationOptions = [], using block: (IndexPath, UnsafeMutablePointer<ObjCBool>) -> Void)
+```
+
+```objc
+- (void) enumerateIndexPathsWithOptions:(NSEnumerationOptions) opts usingBlock:(void (^)(NSIndexPath *indexPath, BOOL *stop)) block;
 ```
 
 

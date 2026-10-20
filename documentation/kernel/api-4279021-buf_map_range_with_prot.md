@@ -1,14 +1,15 @@
 # buf_map_range_with_prot
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 errno_t buf_map_range_with_prot(buf_t bp, caddr_t *io_addr, vm_prot_t prot);
 ```
 

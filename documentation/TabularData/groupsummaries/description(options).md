@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Generates a text representation of the group summaries.
@@ -27,7 +28,7 @@ See `DataFrame/description(options:)` for more information.
 
 ## Parameters
 
-- `options`: A [`FormattingOptions`](formattingoptions.md) instance.
+- `options`: A [`FormattingOptions`](../formattingoptions.md) instance.
 
 
 ---

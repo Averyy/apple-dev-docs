@@ -1,7 +1,8 @@
 # ManifestURL.ItemsItem.Metadata
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The metadata for an application or package manifest item.
 
@@ -16,7 +17,7 @@ The metadata for an application or package manifest item.
 
 ## Declaration
 
-```swift
+```
 object ManifestURL.ItemsItem.Metadata
 ```
 
@@ -25,12 +26,15 @@ object ManifestURL.ItemsItem.Metadata
 - `bundle-identifier` (string) *(required)*: The bundle identifier of the app or package manifest item.
 - `bundle-version` (string): The bundle version of the app or package manifest item.
 - `kind` (string) *(required)*: The type of manifest item. For an app or package, this needs to be `software`.
+
+  **Allowed Values**: `software`
 - `subtitle` (string): The name of the app or package developer.
 - `title` (string) *(required)*: The title of the app or package being installed.
 
 ## See Also
 
-- [object ManifestURL.ItemsItem.AssetsItem](manifesturl/itemsitem/assetsitem.md)
+### Objects
+- [object ManifestURL.ItemsItem.AssetsItem](./assetsitem.md)
   An array of dictionaries that describe an item to install.
 
 

@@ -1,7 +1,8 @@
 # IOServiceAuthorize(_:_:)
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func IOServiceAuthorize(_ service: io_service_t, _ options: UInt32) -> kern_return_t
+```
+
+```c
+kern_return_t IOServiceAuthorize(io_service_t service, uint32_t options);
 ```
 
 

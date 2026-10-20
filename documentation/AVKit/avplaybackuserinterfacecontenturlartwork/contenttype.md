@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: AVKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The uniform type identifier for the artwork image data.
 
@@ -14,6 +15,10 @@ The uniform type identifier for the artwork image data.
 
 ```swift
 var contentType: UTType { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) UTType * contentType;
 ```
 
 

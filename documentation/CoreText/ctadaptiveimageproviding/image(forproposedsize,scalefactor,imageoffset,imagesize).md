@@ -2,6 +2,7 @@
 
 **Framework**: Core Text  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -17,6 +18,10 @@
 
 ```swift
 func image(forProposedSize proposedSize: CGSize, scaleFactor: CGFloat, imageOffset outImageOffset: UnsafeMutablePointer<CGPoint>, imageSize outImageSize: UnsafeMutablePointer<CGSize>) -> CGImage?
+```
+
+```objc
+- (CGImageRef) imageForProposedSize:(CGSize) proposedSize scaleFactor:(CGFloat) scaleFactor imageOffset:(CGPoint *) outImageOffset imageSize:(CGSize *) outImageSize;
 ```
 
 

@@ -1,18 +1,19 @@
 # protocol
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The MIDI protocol variant of the events in the list.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The MIDI protocol variant of the events in the list.
 var `protocol`: MIDIProtocolID
 ```
 
+```c
+MIDIProtocolID protocol;
+```
+
 ## See Also
 
-- [var numPackets: UInt32](midieventlist/numpackets.md)
+### Configuring an Event List
+- [var numPackets: UInt32](./numpackets.md)
   The number of MIDI event packet structures in the list.
-- [var packet: MIDIEventPacket](midieventlist/packet.md)
+- [var packet: MIDIEventPacket](./packet.md)
   An array of variable-length MIDI event packet structures.
 
 

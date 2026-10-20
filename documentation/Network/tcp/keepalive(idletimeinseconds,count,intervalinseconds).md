@@ -1,7 +1,8 @@
 # keepalive(idleTimeInSeconds:count:intervalInSeconds:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enable TCP keepalives.
 

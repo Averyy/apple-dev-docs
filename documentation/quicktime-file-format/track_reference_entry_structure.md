@@ -1,6 +1,7 @@
 # Track reference entry structure
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 A data structure you use to specify information about any low-resolution image tracks contained in a movie.
 
@@ -30,7 +31,8 @@ The number of entries in the track reference array atom is determined by dividin
 
 ## See Also
 
-- [Low-resolution image tracks](low-resolution_image_tracks.md)
+### Hot spot image tracks
+- [Low-resolution image tracks](./low-resolution_image_tracks.md)
   Create low resolution image tracks for low memory conditions.
 
 

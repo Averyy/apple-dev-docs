@@ -1,7 +1,8 @@
 # errSecCertificatePolicyNotAllowed
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The requested policy isn’t allowed for this certificate.
 
@@ -18,6 +19,10 @@ The requested policy isn’t allowed for this certificate.
 
 ```swift
 var errSecCertificatePolicyNotAllowed: OSStatus { get }
+```
+
+```c
+errSecCertificatePolicyNotAllowed
 ```
 
 

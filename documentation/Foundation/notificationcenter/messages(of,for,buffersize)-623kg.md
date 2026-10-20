@@ -1,7 +1,8 @@
 # messages(of:for:bufferSize:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an asynchronous sequence of messages produced by this center for a given subject and message type.
 
@@ -32,11 +33,12 @@ An asynchronous sequence of messages produced by this center.
 
 ## See Also
 
+### Receiving notifications as asynchronous sequences
 - [func messages<Identifier, Message>(of: Message.Subject, for: Identifier, bufferSize: Int) -> some Sendable & AsyncSequence<Message, Never>
-](notificationcenter/messages(of:for:buffersize:)-4tof0.md)
+](./messages%28of,for,buffersize%29-4tof0.md)
   Returns an asynchronous sequence of messages produced by this center for a given subject and identifier.
 - [func messages<Identifier, Message>(of: Message.Subject.Type, for: Identifier, bufferSize: Int) -> some Sendable & AsyncSequence<Message, Never>
-](notificationcenter/messages(of:for:buffersize:)-1ub69.md)
+](./messages%28of,for,buffersize%29-1ub69.md)
   Returns an asynchronous sequence of messages produced by this center for a given subject type and identifier.
 
 

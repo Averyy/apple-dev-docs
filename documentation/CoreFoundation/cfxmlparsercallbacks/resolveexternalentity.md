@@ -1,17 +1,22 @@
 # resolveExternalEntity
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Called when an external entity needs to be resolved.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var resolveExternalEntity: CFXMLParserResolveExternalEntityCallBack!
+```
+
+```c
+CFXMLParserResolveExternalEntityCallBack resolveExternalEntity;
 ```
 
 

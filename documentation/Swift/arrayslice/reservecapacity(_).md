@@ -1,7 +1,8 @@
 # reserveCapacity(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reserves enough space to store the specified number of elements.
 
@@ -28,7 +29,7 @@ Calling the `reserveCapacity(_:)` method on an array with bridged storage trigge
 
 For performance reasons, the size of the newly allocated storage might be greater than the requested capacity. Use the array’s `capacity` property to determine the size of the new storage.
 
-### Preserving an Arrays Geometric Growth Strategy
+### Preserving an Array’s Geometric Growth Strategy
 
 If you implement a custom data structure backed by an array that grows dynamically, naively calling the `reserveCapacity(_:)` method can lead to worse than expected performance. Arrays need to follow a geometric allocation pattern for appending elements to achieve amortized constant-time performance. The `Array` type’s `append(_:)` and `append(contentsOf:)` methods take care of this detail for you, but `reserveCapacity(_:)` allocates only as much space as you tell it to (padded to a round value), and no more. This avoids over-allocation, but can result in insertion not having amortized constant-time performance.
 
@@ -62,7 +63,7 @@ In cases like this, the simplest fix is often to simply remove the call to `rese
 
 If you need more control over the capacity of your array, implement your own geometric growth strategy, passing the size you compute to `reserveCapacity(_:)`.
 
-> **Note**: O(*n*), where *n* is the number of elements in the array.
+> **Complexity**: O(*n*), where *n* is the number of elements in the array.
 
 ## Parameters
 

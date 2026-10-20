@@ -1,7 +1,8 @@
 # Get the Device Status
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 The request for getting the status of a device.
 
@@ -11,15 +12,23 @@ The request for getting the status of a device.
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `StatusReport`
+
 A status report of the device’s current state.
+
+## Responses
+
+- `204` No Content
 
 ## See Also
 
-- [Declarative Management](declarative-management.md)
+### Declarative management
+- [Declarative Management](./declarative-management.md)
   Sends declarative management requests to the server.
-- [Get Server Supported Declarations](declaration-items.md)
+- [Get Server Supported Declarations](./declaration-items.md)
   Get a list of the declarations available on the server.
-- [Get the Device Token](tokens.md)
+- [Get the Device Token](./tokens.md)
   The request for sending the device token details.
 
 

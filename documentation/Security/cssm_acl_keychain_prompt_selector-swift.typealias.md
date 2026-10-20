@@ -1,7 +1,8 @@
 # CSSM_ACL_KEYCHAIN_PROMPT_SELECTOR
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias CSSM_ACL_KEYCHAIN_PROMPT_SELECTOR = cssm_acl_keychain_prompt_selector
+```
+
+```c
+typedef struct cssm_acl_keychain_prompt_selector CSSM_ACL_KEYCHAIN_PROMPT_SELECTOR;
 ```
 
 

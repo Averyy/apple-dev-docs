@@ -1,7 +1,8 @@
 # compact
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.2+
@@ -17,9 +18,10 @@ static var compact: ManagedContentStyle { get }
 
 ## See Also
 
-- [static var automatic: ManagedContentStyle](managedcontentstyle/automatic.md)
-- [static var header: ManagedContentStyle](managedcontentstyle/header.md)
-- [static var vertical: ManagedContentStyle](managedcontentstyle/vertical.md)
+### Determining styles
+- [static var automatic: ManagedContentStyle](./automatic.md)
+- [static var header: ManagedContentStyle](./header.md)
+- [static var vertical: ManagedContentStyle](./vertical.md)
 
 
 ---

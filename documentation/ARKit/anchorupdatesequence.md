@@ -1,7 +1,8 @@
 # AnchorUpdateSequence
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous sequence of updates to anchors.
 
@@ -17,19 +18,20 @@ struct AnchorUpdateSequence<AnchorType> where AnchorType : Anchor
 ## Topics
 
 ### Performing sequence operations
-- [AnchorUpdateSequence.Iterator](anchorupdatesequence/iterator.md)
+- [AnchorUpdateSequence.Iterator](./anchorupdatesequence/iterator.md)
 ### Instance Methods
-- [func makeAsyncIterator() -> AnchorUpdateSequence<AnchorType>.Iterator<AnchorType>](anchorupdatesequence/makeasynciterator.md)
+- [func makeAsyncIterator() -> AnchorUpdateSequence<AnchorType>.Iterator<AnchorType>](./anchorupdatesequence/makeasynciterator%28%29.md)
   Creates an asynchronous iterator that produces anchor update elements on this asynchronous sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
 
 ## See Also
 
-- [struct AnchorUpdate](anchorupdate.md)
+### Tracking anchors over time
+- [struct AnchorUpdate](./anchorupdate.md)
   Information about the event that updated an anchor.
 
 

@@ -1,7 +1,8 @@
 # init(height:radius:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a capsule shape with the given height and radius.
 

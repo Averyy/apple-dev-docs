@@ -1,7 +1,8 @@
 # item
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The searchable item from the app’s index.
 
@@ -20,7 +21,8 @@ let item: SearchableItem
 
 ## See Also
 
-- [let score: Double](scoredsearchableitem/score.md)
+### Getting the item details
+- [let score: Double](./score.md)
   The relevance score for the item.
 
 

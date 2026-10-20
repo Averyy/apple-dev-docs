@@ -1,7 +1,8 @@
 # errorDomain
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The error domain.
 
@@ -22,7 +23,8 @@ static var errorDomain: String { get }
 
 ## See Also
 
-- [var localizedDescription: String](../swift/error/localizeddescription.md)
+### Accessing error properties
+- [var localizedDescription: String](../../Swift/error/localizeddescription.md)
   Retrieve the localized description for this error.
 
 

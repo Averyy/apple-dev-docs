@@ -1,7 +1,8 @@
 # UIScene.ActivationState.unattached
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A state that indicates that the scene is not currently connected to your app.
 
@@ -18,17 +19,22 @@ A state that indicates that the scene is not currently connected to your app.
 case unattached
 ```
 
+```c
+UISceneActivationStateUnattached
+```
+
 #### Discussion
 
 A scene starts in the unattached state and remains in that state until the system sends a connection notification to it. A scene reenters the attached state when the user dismisses the interface from the app switcher or to reclaim its resources.
 
 ## See Also
 
-- [UIScene.ActivationState.foregroundInactive](uiscene/activationstate-swift.enum/foregroundinactive.md)
+### Scene States
+- [UIScene.ActivationState.foregroundInactive](./foregroundinactive.md)
   A state that indicates that the scene is running in the foreground but is not receiving events.
-- [UIScene.ActivationState.foregroundActive](uiscene/activationstate-swift.enum/foregroundactive.md)
+- [UIScene.ActivationState.foregroundActive](./foregroundactive.md)
   A state that indicates that the scene is running in the foreground and is currently receiving events.
-- [UIScene.ActivationState.background](uiscene/activationstate-swift.enum/background.md)
+- [UIScene.ActivationState.background](./background.md)
   A state that indicates that the scene is running in the background and is not onscreen.
 
 

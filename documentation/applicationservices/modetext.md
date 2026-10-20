@@ -1,9 +1,10 @@
 # modeText
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Used with [`soInputMode`](soinputmode.md) to indicate that the speech channel is in text-processing mode.
+Used with [`soInputMode`](./soinputmode.md) to indicate that the speech channel is in text-processing mode.
 
 **Availability**:
 - macOS 10.0+

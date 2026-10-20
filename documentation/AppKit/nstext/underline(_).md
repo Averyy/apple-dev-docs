@@ -1,17 +1,22 @@
 # underline(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the underline attribute to the selected text attributes if absent; removes the attribute if present.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func underline(_ sender: Any?)
+```
+
+```objc
+- (void) underline:(id) sender;
 ```
 
 #### Discussion

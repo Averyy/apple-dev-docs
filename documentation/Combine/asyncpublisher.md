@@ -1,7 +1,8 @@
 # AsyncPublisher
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that exposes its elements as an asynchronous sequence.
 
@@ -22,32 +23,33 @@ struct AsyncPublisher<P> where P : Publisher, P.Failure == Never
 
 #### Overview
 
-`AsyncPublisher` conforms to [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence), which allows callers to receive values with the `for`-`await`-`in` syntax, rather than attaching a [`Subscriber`](subscriber.md).
+`AsyncPublisher` conforms to [`AsyncSequence`](../Swift/asyncsequence.md), which allows callers to receive values with the `for`-`await`-`in` syntax, rather than attaching a [`Subscriber`](./subscriber.md).
 
-Use the [`values`](publisher/values-1dm9r.md) property of the [`Publisher`](publisher.md) protocol to wrap an existing publisher with an instance of this type.
+Use the [`values`](./publisher/values-1dm9r.md) property of the [`Publisher`](./publisher.md) protocol to wrap an existing publisher with an instance of this type.
 
 ## Topics
 
 ### Creating an asynchronous publisher
-- [init(_:)](asyncpublisher/init(_:).md)
+- [init(_:)](./asyncpublisher/init%28_%29.md)
   Creates a publisher that exposes elements received from an upstream publisher as an asynchronous sequence.
 ### Creating an iterator
-- [func makeAsyncIterator() -> AsyncPublisher<P>.Iterator](asyncpublisher/makeasynciterator.md)
+- [func makeAsyncIterator() -> AsyncPublisher<P>.Iterator](./asyncpublisher/makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
-- [AsyncPublisher.Iterator](asyncpublisher/iterator.md)
+- [AsyncPublisher.Iterator](./asyncpublisher/iterator.md)
   The iterator that produces elements of the asynchronous publisher sequence.
 ### Supporting types
-- [AsyncPublisher.Element](asyncpublisher/element.md)
+- [AsyncPublisher.Element](./asyncpublisher/element.md)
   The type of element produced by this asynchronous sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
 
 ## See Also
 
-- [struct AsyncThrowingPublisher](asyncthrowingpublisher.md)
+### Asynchronous Publishers
+- [struct AsyncThrowingPublisher](./asyncthrowingpublisher.md)
   A publisher that exposes its elements as a throwing asynchronous sequence.
 
 

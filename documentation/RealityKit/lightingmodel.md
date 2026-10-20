@@ -1,9 +1,10 @@
 # LightingModel
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The lighting model used by a [`ShaderGraphMaterial.Program`](shadergraphmaterial/program-swift.struct.md).
+The lighting model used by a [`ShaderGraphMaterial.Program`](./shadergraphmaterial/program-swift.struct.md).
 
 **Availability**:
 - iOS 27.0+
@@ -21,35 +22,36 @@ enum LightingModel
 
 #### Overview
 
-This must match the type of the surface output node in the [`ShaderGraph`](shadergraph.md). For example, a graph whose surface node is a PBR surface shader requires `.lit`.
+This must match the type of the surface output node in the [`ShaderGraph`](./shadergraph.md). For example, a graph whose surface node is a PBR surface shader requires `.lit`.
 
 ## Topics
 
 ### Creating a lit model
-- [static func lit(diffuseModel: LitLightingModel.DiffuseModel, specularModel: LitLightingModel.SpecularModel, isSubsurfaceScatteringEnabled: Bool, isMultiscatteringEnabled: Bool, isBentNormalEnabled: Bool, isClearcoatEnabled: Bool) -> LightingModel](lightingmodel/lit(diffusemodel:specularmodel:issubsurfacescatteringenabled:ismultiscatteringenabled:isbentnormalenabled:isclearcoatenabled:).md)
-- [case lit(LitLightingModel)](lightingmodel/lit(_:).md)
+- [static func lit(diffuseModel: LitLightingModel.DiffuseModel, specularModel: LitLightingModel.SpecularModel, isSubsurfaceScatteringEnabled: Bool, isMultiscatteringEnabled: Bool, isBentNormalEnabled: Bool, isClearcoatEnabled: Bool) -> LightingModel](./lightingmodel/lit%28diffusemodel,specularmodel,issubsurfacescatteringenabled,ismultiscatteringenabled,isbentnormalenabled,isclearcoatenabled%29.md)
+- [case lit(LitLightingModel)](./lightingmodel/lit%28_%29.md)
 ### Creating an unlit model
-- [static func unlit(isTonemappingEnabled: Bool) -> LightingModel](lightingmodel/unlit(istonemappingenabled:).md)
-- [case unlit(UnlitLightingModel)](lightingmodel/unlit(_:).md)
+- [static func unlit(isTonemappingEnabled: Bool) -> LightingModel](./lightingmodel/unlit%28istonemappingenabled%29.md)
+- [case unlit(UnlitLightingModel)](./lightingmodel/unlit%28_%29.md)
 ### Creating a hair model
-- [static func hair() -> LightingModel](lightingmodel/hair.md)
-- [case hair(HairLightingModel)](lightingmodel/hair(_:).md)
+- [static func hair() -> LightingModel](./lightingmodel/hair%28%29.md)
+- [case hair(HairLightingModel)](./lightingmodel/hair%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct LitLightingModel](litlightingmodel.md)
+### Lighting models
+- [struct LitLightingModel](./litlightingmodel.md)
   Configuration for RealityKit’s physically based lighting model.
-- [struct UnlitLightingModel](unlitlightingmodel.md)
+- [struct UnlitLightingModel](./unlitlightingmodel.md)
   Configuration for an unlit lighting model, which renders without any light interaction.
-- [struct HairLightingModel](hairlightingmodel.md)
+- [struct HairLightingModel](./hairlightingmodel.md)
   Configuration for RealityKit’s hair lighting model.
 
 

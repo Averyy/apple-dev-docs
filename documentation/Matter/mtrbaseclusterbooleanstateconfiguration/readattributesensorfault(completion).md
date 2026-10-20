@@ -1,7 +1,8 @@
 # readAttributeSensorFault(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSensorFault(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSensorFault() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeSensorFaultWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

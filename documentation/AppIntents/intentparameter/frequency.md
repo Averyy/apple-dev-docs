@@ -1,7 +1,8 @@
 # IntentParameter.Frequency
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -18,34 +19,37 @@
 enum Frequency
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitFrequency>`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.Frequency.framesPerSecond](intentparameter/frequency/framespersecond.md)
-- [IntentParameter.Frequency.gigahertz](intentparameter/frequency/gigahertz.md)
-- [IntentParameter.Frequency.hertz](intentparameter/frequency/hertz.md)
-- [IntentParameter.Frequency.kilohertz](intentparameter/frequency/kilohertz.md)
-- [IntentParameter.Frequency.megahertz](intentparameter/frequency/megahertz.md)
-- [IntentParameter.Frequency.microhertz](intentparameter/frequency/microhertz.md)
-- [IntentParameter.Frequency.millihertz](intentparameter/frequency/millihertz.md)
-- [IntentParameter.Frequency.nanohertz](intentparameter/frequency/nanohertz.md)
-- [IntentParameter.Frequency.terahertz](intentparameter/frequency/terahertz.md)
+- [IntentParameter.Frequency.framesPerSecond](./frequency/framespersecond.md)
+- [IntentParameter.Frequency.gigahertz](./frequency/gigahertz.md)
+- [IntentParameter.Frequency.hertz](./frequency/hertz.md)
+- [IntentParameter.Frequency.kilohertz](./frequency/kilohertz.md)
+- [IntentParameter.Frequency.megahertz](./frequency/megahertz.md)
+- [IntentParameter.Frequency.microhertz](./frequency/microhertz.md)
+- [IntentParameter.Frequency.millihertz](./frequency/millihertz.md)
+- [IntentParameter.Frequency.nanohertz](./frequency/nanohertz.md)
+- [IntentParameter.Frequency.terahertz](./frequency/terahertz.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var unit: IntentParameter<Value>.Frequency?](intentparameter/unit-69agf.md)
-- [var defaultUnit: IntentParameter<Value>.Frequency?](intentparameter/defaultunit-61co5.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-8i8i1.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-52v1p.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Frequency?](./unit-69agf.md)
+- [var defaultUnit: IntentParameter<Value>.Frequency?](./defaultunit-61co5.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-8i8i1.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-52v1p.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MKMapItem
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A point of interest on the map.
 
@@ -20,9 +21,13 @@ A point of interest on the map.
 class MKMapItem
 ```
 
+```objc
+@interface MKMapItem : NSObject
+```
+
 ## Mentions
 
-- [Identifying unique locations with Place IDs](identifying-unique-locations-with-place-ids.md)
+- [Identifying unique locations with Place IDs](./identifying-unique-locations-with-place-ids.md)
 
 #### Overview
 
@@ -33,97 +38,98 @@ Use this class to do the following:
 - Share map-related data with the Maps app.
 - Handle requests for directions that originate from the Maps app.
 
-To display information in the Maps app, create an `MKMapItem` object with the information you want to display and call the [`openMaps(with:launchOptions:)`](mkmapitem/openmaps(with:launchoptions:).md) method. The Maps app displays that location on the map and shows the information you provide.
+To display information in the Maps app, create an `MKMapItem` object with the information you want to display and call the [`openMaps(with:launchOptions:)`](./mkmapitem/openmaps%28with,launchoptions%29.md) method. The Maps app displays that location on the map and shows the information you provide.
 
 If you implement a routing app, the Maps app provides two `MKMapItem` objects representing the start and end points. Use the information in those two objects to plot the route and generate directions.
 
 ## Topics
 
 ### Creating map items
-- [init(placemark: MKPlacemark)](mkmapitem/init(placemark:).md)
+- [init(placemark: MKPlacemark)](./mkmapitem/init%28placemark%29.md)
   Creates and returns a map item object using the specified placemark object.
-- [class func forCurrentLocation() -> MKMapItem](mkmapitem/forcurrentlocation.md)
+- [class func forCurrentLocation() -> MKMapItem](./mkmapitem/forcurrentlocation%28%29.md)
   Creates and returns a singleton map item object representing the user’s location.
 ### Accessing the map item attributes
-- [MKMapItem.Identifier](mkmapitem/identifier-swift.class.md)
+- [MKMapItem.Identifier](./mkmapitem/identifier-swift.class.md)
   A unique identifier for a place.
-- [var alternateIdentifiers: Set<MKMapItem.Identifier>](mkmapitem/alternateidentifiers.md)
+- [var alternateIdentifiers: Set<MKMapItem.Identifier>](./mkmapitem/alternateidentifiers.md)
   A set of alternative identifiers for a place.
-- [var identifier: MKMapItem.Identifier?](mkmapitem/identifier-swift.property.md)
+- [var identifier: MKMapItem.Identifier?](./mkmapitem/identifier-swift.property.md)
   A unique identifier for a place.
-- [var isCurrentLocation: Bool](mkmapitem/iscurrentlocation.md)
+- [var isCurrentLocation: Bool](./mkmapitem/iscurrentlocation.md)
   A Boolean value that indicates whether the map item represents the user’s location.
-- [var name: String?](mkmapitem/name.md)
+- [var name: String?](./mkmapitem/name.md)
   The descriptive name associated with the map item.
-- [var placemark: MKPlacemark](mkmapitem/placemark.md)
+- [var placemark: MKPlacemark](./mkmapitem/placemark.md)
   The placemark object containing the location information.
-- [var pointOfInterestCategory: MKPointOfInterestCategory?](mkmapitem/pointofinterestcategory.md)
+- [var pointOfInterestCategory: MKPointOfInterestCategory?](./mkmapitem/pointofinterestcategory.md)
   The point-of-interest category for the map item.
-- [var phoneNumber: String?](mkmapitem/phonenumber.md)
+- [var phoneNumber: String?](./mkmapitem/phonenumber.md)
   The phone number associated with a business at the specified location.
-- [var timeZone: TimeZone?](mkmapitem/timezone.md)
+- [var timeZone: TimeZone?](./mkmapitem/timezone.md)
   The time zone of the specified location.
-- [var url: URL?](mkmapitem/url.md)
+- [var url: URL?](./mkmapitem/url.md)
   The URL associated with the specified location.
 ### Launching the Maps app
-- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?) -> Bool](mkmapitem/openmaps(with:launchoptions:).md)
+- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?) -> Bool](./mkmapitem/openmaps%28with,launchoptions%29.md)
   Opens the Maps app and displays the specified map items.
-- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?, completionHandler: ((Bool) -> Void)?)](mkmapitem/openmaps(with:launchoptions:completionhandler:).md)
+- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?, completionHandler: ((Bool) -> Void)?)](./mkmapitem/openmaps%28with,launchoptions,completionhandler%29.md)
   Opens the Maps app using the specified map items and options.
-- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?, from: UIScene?, completionHandler: ((Bool) -> Void)?)](mkmapitem/openmaps(with:launchoptions:from:completionhandler:).md)
+- [class func openMaps(with: [MKMapItem], launchOptions: [String : Any]?, from: UIScene?, completionHandler: ((Bool) -> Void)?)](./mkmapitem/openmaps%28with,launchoptions,from,completionhandler%29.md)
   Opens the Maps app from a particular scene using the specified map items and options.
-- [func openInMaps(launchOptions: [String : Any]?) -> Bool](mkmapitem/openinmaps(launchoptions:).md)
+- [func openInMaps(launchOptions: [String : Any]?) -> Bool](./mkmapitem/openinmaps%28launchoptions%29.md)
   Opens the Maps app and displays the map item.
-- [func openInMaps(launchOptions: [String : Any]?, completionHandler: ((Bool) -> Void)?)](mkmapitem/openinmaps(launchoptions:completionhandler:).md)
+- [func openInMaps(launchOptions: [String : Any]?, completionHandler: ((Bool) -> Void)?)](./mkmapitem/openinmaps%28launchoptions,completionhandler%29.md)
   Opens the Maps app and displays the map item.
-- [func openInMaps(launchOptions: [String : Any]?, from: UIScene?, completionHandler: ((Bool) -> Void)?)](mkmapitem/openinmaps(launchoptions:from:completionhandler:).md)
+- [func openInMaps(launchOptions: [String : Any]?, from: UIScene?, completionHandler: ((Bool) -> Void)?)](./mkmapitem/openinmaps%28launchoptions,from,completionhandler%29.md)
   Opens the Maps app from a particular scene using the specified options.
 ### Serializing a map item
-- [let MKMapItemTypeIdentifier: String](mkmapitemtypeidentifier.md)
+- [let MKMapItemTypeIdentifier: String](./mkmapitemtypeidentifier.md)
   A constant that indicates the type of a serialized map item.
 ### Opening items at launch time
-- [Launch options dictionary keys](launch-options-dictionary-keys.md)
+- [Launch options dictionary keys](./launch-options-dictionary-keys.md)
   Launch options to specify when opening map items in the Maps app.
-- [Directions mode values](directions-mode-values.md)
+- [Directions mode values](./directions-mode-values.md)
   Strings that represent the possible values of the launch options direction mode key.
 ### Initializers
-- [init(location: CLLocation, address: MKAddress?)](mkmapitem/init(location:address:).md)
+- [init(location: CLLocation, address: MKAddress?)](./mkmapitem/init%28location,address%29.md)
   Creates and returns a map item object using the specified location and address objects.
 ### Instance Properties
-- [var address: MKAddress?](mkmapitem/address.md)
+- [var address: MKAddress?](./mkmapitem/address.md)
   The address object.
-- [var addressRepresentations: MKAddressRepresentations?](mkmapitem/addressrepresentations.md)
+- [var addressRepresentations: MKAddressRepresentations?](./mkmapitem/addressrepresentations.md)
   The address representations object that contains various address representations useful for display purposes.
-- [var location: CLLocation](mkmapitem/location.md)
+- [var location: CLLocation](./mkmapitem/location.md)
   The location object.
 ### Default Implementations
-- [MKMapItem Implementations](mkmapitem/mkmapitem-implementations.md)
+- [MKMapItem Implementations](./mkmapitem/mkmapitem-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSItemProviderReading](../foundation/nsitemproviderreading.md)
-- [NSItemProviderWriting](../foundation/nsitemproviderwriting.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSItemProviderReading](../Foundation/nsitemproviderreading.md)
+- [NSItemProviderWriting](../Foundation/nsitemproviderwriting.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [Enabling Maps capability in Xcode](enabling-maps-capability-in-xcode.md)
+### Essentials
+- [Enabling Maps capability in Xcode](./enabling-maps-capability-in-xcode.md)
   Configure your routing app to support providing directions.
-- [Identifying unique locations with Place IDs](identifying-unique-locations-with-place-ids.md)
+- [Identifying unique locations with Place IDs](./identifying-unique-locations-with-place-ids.md)
   Obtain information about a point of interest that persists over its lifetime.
-- [class MKMapView](mkmapview.md)
+- [class MKMapView](./mkmapview.md)
   An embeddable map interface, similar to the one that the Maps app provides.
 
 

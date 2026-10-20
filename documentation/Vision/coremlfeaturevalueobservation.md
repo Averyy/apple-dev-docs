@@ -1,7 +1,8 @@
 # CoreMLFeatureValueObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents a collection of key-value information that a Core ML image-analysis request produces.
 
@@ -22,45 +23,46 @@ struct CoreMLFeatureValueObservation
 
 #### Overview
 
-This type of observation results from performing a [`CoreMLRequest`](coremlrequest.md) image analysis with a [`Core ML`](https://developer.apple.com/documentation/coreml) model whose role is prediction rather than classification or image-to-image processing.
+This type of observation results from performing a [`CoreMLRequest`](./coremlrequest.md) image analysis with a [Core ML](../CoreML/CoreML.md) model whose role is prediction rather than classification or image-to-image processing.
 
-The framework infers that an [`MLModel`](https://developer.apple.com/documentation/coreml/mlmodel) object is a predictor model if that model predicts multiple features. You can tell that a model predicts multiple features when its [`modelDescription`](https://developer.apple.com/documentation/coreml/mlmodel/modeldescription) object has a `nil` value for its [`predictedFeatureName`](https://developer.apple.com/documentation/coreml/mlmodeldescription/predictedfeaturename) property, or when it inserts its output in an [`outputDescriptionsByName`](https://developer.apple.com/documentation/coreml/mlmodeldescription/outputdescriptionsbyname) dictionary.
+The framework infers that an [`MLModel`](../CoreML/mlmodel.md) object is a predictor model if that model predicts multiple features. You can tell that a model predicts multiple features when its [`modelDescription`](../CoreML/mlmodel/modeldescription.md) object has a `nil` value for its [`predictedFeatureName`](../CoreML/mlmodeldescription/predictedfeaturename.md) property, or when it inserts its output in an [`outputDescriptionsByName`](../CoreML/mlmodeldescription/outputdescriptionsbyname.md) dictionary.
 
 The confidence for these observations is always `1.0`.
 
 ## Topics
 
 ### Creating an observation
-- [init?(VNCoreMLFeatureValueObservation)](coremlfeaturevalueobservation/init(_:).md)
+- [init?(VNCoreMLFeatureValueObservation)](./coremlfeaturevalueobservation/init%28_%29.md)
   Creates a feature value observation.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
 ### Getting the feature name and value
-- [let featureName: String](coremlfeaturevalueobservation/featurename.md)
+- [let featureName: String](./coremlfeaturevalueobservation/featurename.md)
   The name in the model description of the model that produces this observation.
-- [let featureValue: MLSendableFeatureValue](coremlfeaturevalueobservation/featurevalue.md)
+- [let featureValue: MLSendableFeatureValue](./coremlfeaturevalueobservation/featurevalue.md)
   The feature result of a request that outputs neither a classification nor an image.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 ## See Also
 
-- [struct PixelBufferObservation](pixelbufferobservation.md)
+### Understanding the result
+- [struct PixelBufferObservation](./pixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
-- [struct ClassificationObservation](classificationobservation.md)
+- [struct ClassificationObservation](./classificationobservation.md)
   An object that represents classification information that an image-analysis request produces.
 
 

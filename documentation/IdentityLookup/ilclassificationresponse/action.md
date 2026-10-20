@@ -1,7 +1,8 @@
 # action
 
 **Framework**: SMS and Call Reporting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A classification that determines what action the system takes.
 
@@ -17,11 +18,16 @@ A classification that determines what action the system takes.
 var action: ILClassificationAction { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) ILClassificationAction action;
+```
+
 ## See Also
 
-- [var userInfo: [String : Any]?](ilclassificationresponse/userinfo.md)
+### Accessing Data
+- [var userInfo: [String : Any]?](./userinfo.md)
   JSON data included in a response sent over the network.
-- [var userString: String?](ilclassificationresponse/userstring.md)
+- [var userString: String?](./userstring.md)
   Text included in a response sent over SMS.
 
 

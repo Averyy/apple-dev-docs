@@ -1,7 +1,8 @@
 # moveIn
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The layer’s content slides into place over any existing content.
 
@@ -19,17 +20,22 @@ The layer’s content slides into place over any existing content.
 static let moveIn: CATransitionType
 ```
 
+```c
+extern CATransitionType const kCATransitionMoveIn;
+```
+
 #### Discussion
 
-The [`Common Transition Subtypes`](common-transition-subtypes.md) are used with this transition.
+The [Common Transition Subtypes](../common-transition-subtypes.md) are used with this transition.
 
 ## See Also
 
-- [static let fade: CATransitionType](catransitiontype/fade.md)
+### Constants
+- [static let fade: CATransitionType](./fade.md)
   The layer’s content fades as it becomes visible or hidden.
-- [static let push: CATransitionType](catransitiontype/push.md)
+- [static let push: CATransitionType](./push.md)
   The layer’s content pushes any existing content as it slides into place.
-- [static let reveal: CATransitionType](catransitiontype/reveal.md)
+- [static let reveal: CATransitionType](./reveal.md)
   The layer’s content is revealed gradually in the direction specified by the transition subtype.
 
 

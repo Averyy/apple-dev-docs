@@ -1,7 +1,8 @@
 # vectorFloat3Value
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The receiver’s value as a vector of three floating point numbers.
 
@@ -20,17 +21,22 @@ The receiver’s value as a vector of three floating point numbers.
 var vectorFloat3Value: vector_float3 { get set }
 ```
 
+```objc
+@property (nonatomic) vector_float3 vectorFloat3Value;
+```
+
 #### Discussion
 
 If the receiver’s original value is a floating-point number or a [`vector_float2`](https://developer.apple.com/documentation/simd/vector_float2), the empty items in the vector are set to 0. If the receiver’s original value is a [`vector_float4`](https://developer.apple.com/documentation/simd/vector_float4), the last item is truncated.
 
 ## See Also
 
-- [var floatValue: Float](skattributevalue/floatvalue.md)
+### Instance Properties
+- [var floatValue: Float](./floatvalue.md)
   The receiver’s floating point value.
-- [var vectorFloat2Value: vector_float2](skattributevalue/vectorfloat2value.md)
+- [var vectorFloat2Value: vector_float2](./vectorfloat2value.md)
   The receiver’s value as a vector of two floating-point numbers.
-- [var vectorFloat4Value: vector_float4](skattributevalue/vectorfloat4value.md)
+- [var vectorFloat4Value: vector_float4](./vectorfloat4value.md)
   The receiver’s value as a vector of four floating point numbers.
 
 

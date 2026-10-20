@@ -1,7 +1,8 @@
 # init(mSampleRate:mFormatID:mFormatFlags:mBytesPerPacket:mFramesPerPacket:mBytesPerFrame:mChannelsPerFrame:mBitsPerChannel:mReserved:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a description with the specified values.
 
@@ -22,7 +23,8 @@ init(mSampleRate: Float64, mFormatID: AudioFormatID, mFormatFlags: AudioFormatFl
 
 ## See Also
 
-- [init()](audiostreambasicdescription/init.md)
+### Initializers
+- [init()](./init%28%29.md)
   Creates an empty description.
 
 

@@ -1,7 +1,8 @@
 # supportsAdaptiveImageGlyph
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether insertion of adaptive image glyphs is allowed.
 

@@ -1,7 +1,8 @@
 # init(including:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an address filter with options for including results in a search.
 
@@ -20,13 +21,18 @@ Creates an address filter with options for including results in a search.
 init(including options: MKAddressFilter.Options)
 ```
 
+```objc
+- (instancetype) initIncludingOptions:(MKAddressFilterOption) options;
+```
+
 ## Parameters
 
 - `options`: A set of filter options that includes results.
 
 ## See Also
 
-- [init(excluding: MKAddressFilter.Options)](mkaddressfilter/init(excluding:).md)
+### Creating a filter
+- [init(excluding: MKAddressFilter.Options)](./init%28excluding%29.md)
   Creates an address filter with options for excluding results in a search.
 
 

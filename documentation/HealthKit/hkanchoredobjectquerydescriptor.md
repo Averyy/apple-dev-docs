@@ -1,7 +1,8 @@
 # HKAnchoredObjectQueryDescriptor
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A query interface that runs anchored object queries using Swift concurrency.
 
@@ -10,7 +11,7 @@ A query interface that runs anchored object queries using Swift concurrency.
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration
@@ -21,21 +22,21 @@ struct HKAnchoredObjectQueryDescriptor<Sample> where Sample : HKSample
 
 ## Mentions
 
-- [Running Queries with Swift Concurrency](running-queries-with-swift-concurrency.md)
-- [Reading data from HealthKit](reading-data-from-healthkit.md)
+- [Running Queries with Swift Concurrency](./running-queries-with-swift-concurrency.md)
+- [Reading data from HealthKit](./reading-data-from-healthkit.md)
 
 #### Overview
 
-Use  [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) to read any changes to the HealthKit store that occurred after the provided anchor. When creating a new query descriptor, if you pass `nil` as the `anchor` parameter, the query reads all matching data from the store.
+Use  [`HKAnchoredObjectQueryDescriptor`](./hkanchoredobjectquerydescriptor.md) to read any changes to the HealthKit store that occurred after the provided anchor. When creating a new query descriptor, if you pass `nil` as the `anchor` parameter, the query reads all matching data from the store.
 
 There are two common use cases for anchored object queries:
 
-- Batch-read all the matching data from the HealthKit store using a series of [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) instances.
-- Monitor the HealthKit store for any changes to the matching data using a long-running [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) instance.
+- Batch-read all the matching data from the HealthKit store using a series of [`HKAnchoredObjectQueryDescriptor`](./hkanchoredobjectquerydescriptor.md) instances.
+- Monitor the HealthKit store for any changes to the matching data using a long-running [`HKAnchoredObjectQueryDescriptor`](./hkanchoredobjectquerydescriptor.md) instance.
 
 ##### Batch Read Existing Data
 
-Users may have large quantities of data saved to the HealthKit store; therefore, reading all data for a given data type might become very expensive, both in terms of memory usage and processing time. To avoid performance issues, you can use [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) queries to read the data in batches.
+Users may have large quantities of data saved to the HealthKit store; therefore, reading all data for a given data type might become very expensive, both in terms of memory usage and processing time. To avoid performance issues, you can use [`HKAnchoredObjectQueryDescriptor`](./hkanchoredobjectquerydescriptor.md) queries to read the data in batches.
 
 Start with a `nil`-valued anchor, and create a one-shot query descriptor that reads a batch of data. After you process the results from one query, start a new one-shot query for the next batch. Continue reading batches until there’s no new data.
 
@@ -65,13 +66,13 @@ repeat {
 } while (results.addedSamples != []) && (results.deletedObjects != [])
 ```
 
-> 💡 **Tip**:  Because [`HKQueryAnchor`](hkqueryanchor.md) instances adopt the [`NSSecureCoding`](https://developer.apple.com/documentation/foundation/nssecurecoding) protocol, you can save the most recent anchor and use it the next time your app launches.
+> 💡 **Tip**:  Because [`HKQueryAnchor`](./hkqueryanchor.md) instances adopt the [`NSSecureCoding`](../Foundation/nssecurecoding.md) protocol, you can save the most recent anchor and use it the next time your app launches.
 
 ##### Monitor for Changes
 
-To monitor the HealthKit store for changes, start by creating an [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) instance that matches the data you want to monitor. Pass in the anchor from the last time you read data from the HealthKit store.
+To monitor the HealthKit store for changes, start by creating an [`HKAnchoredObjectQueryDescriptor`](./hkanchoredobjectquerydescriptor.md) instance that matches the data you want to monitor. Pass in the anchor from the last time you read data from the HealthKit store.
 
-Next, call the query descriptor’s [`results(for:)`](hkanchoredobjectquerydescriptor/results(for:).md) method to start your long-running query. This method returns an [`AsyncSequence`](https://developer.apple.com/documentation/swift/asyncsequence) instance which HealthKit uses to return `Element` instances. The first result represents any changes currently in the HealthKit store, and additional results represent changes as they occur.
+Next, call the query descriptor’s [`results(for:)`](./hkanchoredobjectquerydescriptor/results%28for%29.md) method to start your long-running query. This method returns an [`AsyncSequence`](../Swift/asyncsequence.md) instance which HealthKit uses to return `Element` instances. The first result represents any changes currently in the HealthKit store, and additional results represent changes as they occur.
 
 ```swift
 let stepType = HKQuantityType(.stepCount)
@@ -96,47 +97,48 @@ updateTask = Task {
 ## Topics
 
 ### Creating Query Descriptors
-- [init(predicates: [HKSamplePredicate<Sample>], anchor: HKQueryAnchor?, limit: Int?)](hkanchoredobjectquerydescriptor/init(predicates:anchor:limit:).md)
+- [init(predicates: [HKSamplePredicate<Sample>], anchor: HKQueryAnchor?, limit: Int?)](./hkanchoredobjectquerydescriptor/init%28predicates,anchor,limit%29.md)
   Creates an anchored object query descriptor.
 ### Running Queries
-- [func result(for: HKHealthStore) async throws -> HKAnchoredObjectQueryDescriptor<Sample>.Result](hkanchoredobjectquerydescriptor/result(for:).md)
+- [func result(for: HKHealthStore) async throws -> HKAnchoredObjectQueryDescriptor<Sample>.Result](./hkanchoredobjectquerydescriptor/result%28for%29.md)
   Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
-- [func results(for: HKHealthStore) -> HKAnchoredObjectQueryDescriptor<Sample>.Results](hkanchoredobjectquerydescriptor/results(for:).md)
+- [func results(for: HKHealthStore) -> HKAnchoredObjectQueryDescriptor<Sample>.Results](./hkanchoredobjectquerydescriptor/results%28for%29.md)
   Initiates a long-running query that returns its results using an asynchronous sequence.
-- [HKAnchoredObjectQueryDescriptor.Result](hkanchoredobjectquerydescriptor/result.md)
+- [HKAnchoredObjectQueryDescriptor.Result](./hkanchoredobjectquerydescriptor/result.md)
   A set of results from an anchored object query.
-- [HKAnchoredObjectQueryDescriptor.Results](hkanchoredobjectquerydescriptor/results.md)
+- [HKAnchoredObjectQueryDescriptor.Results](./hkanchoredobjectquerydescriptor/results.md)
   An asynchronous sequence that emits updates from an anchored object query.
 ### Accessing Query Properties
-- [var predicates: [HKSamplePredicate<Sample>]](hkanchoredobjectquerydescriptor/predicates.md)
+- [var predicates: [HKSamplePredicate<Sample>]](./hkanchoredobjectquerydescriptor/predicates.md)
   A predicate that limits the results that the query returns.
-- [var anchor: HKQueryAnchor?](hkanchoredobjectquerydescriptor/anchor.md)
+- [var anchor: HKQueryAnchor?](./hkanchoredobjectquerydescriptor/anchor.md)
   An anchor that a previous anchored object query returned.
-- [var limit: Int?](hkanchoredobjectquerydescriptor/limit.md)
+- [var limit: Int?](./hkanchoredobjectquerydescriptor/limit.md)
   The maximum number of samples that the query returns.
 ### Default Implementations
-- [HKAsyncQuery Implementations](hkanchoredobjectquerydescriptor/hkasyncquery-implementations.md)
-- [HKAsyncSequenceQuery Implementations](hkanchoredobjectquerydescriptor/hkasyncsequencequery-implementations.md)
+- [HKAsyncQuery Implementations](./hkanchoredobjectquerydescriptor/hkasyncquery-implementations.md)
+- [HKAsyncSequenceQuery Implementations](./hkanchoredobjectquerydescriptor/hkasyncsequencequery-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [HKAsyncQuery](hkasyncquery.md)
-- [HKAsyncSequenceQuery](hkasyncsequencequery.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [HKAsyncQuery](./hkasyncquery.md)
+- [HKAsyncSequenceQuery](./hkasyncsequencequery.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct HKActivitySummaryQueryDescriptor](hkactivitysummaryquerydescriptor.md)
+### Long-running queries
+- [struct HKActivitySummaryQueryDescriptor](./hkactivitysummaryquerydescriptor.md)
   A query interface that reads activity summaries using Swift concurrency.
-- [class HKActivitySummaryQuery](hkactivitysummaryquery.md)
+- [class HKActivitySummaryQuery](./hkactivitysummaryquery.md)
   A query for reading activity summary objects from the HealthKit store.
-- [class HKAnchoredObjectQuery](hkanchoredobjectquery.md)
+- [class HKAnchoredObjectQuery](./hkanchoredobjectquery.md)
   A query that returns changes to the HealthKit store, including a snapshot of new changes and continuous monitoring as a long-running query.
-- [class HKObserverQuery](hkobserverquery.md)
+- [class HKObserverQuery](./hkobserverquery.md)
   A long-running query that monitors the HealthKit store and updates your app when the HealthKit store saves or deletes a matching sample.
 
 

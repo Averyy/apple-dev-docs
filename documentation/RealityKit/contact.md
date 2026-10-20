@@ -1,7 +1,8 @@
 # Contact
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Events associated with collisions.
 
@@ -21,7 +22,7 @@ struct Contact
 
 #### Overview
 
-To subscribe to a collision event, import Combine, create a property of type [`Cancellable`](https://developer.apple.com/documentation/combine/cancellable) so that you maintain a reference to the subscription, then call [`subscribe(to:on:_:)`](scene/subscribe(to:on:_:).md) or [`subscribe(to:on:componentType:_:)`](scene/subscribe(to:on:componenttype:_:).md) and provide a closure.
+To subscribe to a collision event, import Combine, create a property of type [`Cancellable`](../Combine/cancellable.md) so that you maintain a reference to the subscription, then call [`subscribe(to:on:_:)`](./scene/subscribe%28to,on,_%29.md) or [`subscribe(to:on:componentType:_:)`](./scene/subscribe%28to,on,componenttype,_%29.md) and provide a closure.
 
 The closure is passed an `RealityKit/Scene/Event` object that contains information relevant to the type of event you subscribed to.
 
@@ -54,7 +55,7 @@ Here’s an example of subscribing to the collision begain event and retrieving 
  }
 ```
 
-You can also create a function to respond to the event rather than a closure by using [`sink(receiveCompletion:receiveValue:)`](https://developer.apple.com/documentation/combine/publisher/sink(receivecompletion:receivevalue:)). Here’s an example of using a function to respond to a collision event:
+You can also create a function to respond to the event rather than a closure by using [`sink(receiveCompletion:receiveValue:)`](../Combine/publisher/sink%28receivecompletion,receivevalue%29.md). Here’s an example of using a function to respond to a collision event:
 
 ```swift
 import AppKit
@@ -87,26 +88,27 @@ class GameViewController: NSViewController {
 ## Topics
 
 ### Instance Properties
-- [let impulse: Float](contact/impulse.md)
+- [let impulse: Float](./contact/impulse.md)
   Impulse, the force over time of the collision, in newton-seconds
-- [let impulseDirection: SIMD3<Float>](contact/impulsedirection.md)
+- [let impulseDirection: SIMD3<Float>](./contact/impulsedirection.md)
   Impulse direction in scene coordinate space.
-- [let normal: SIMD3<Float>](contact/normal.md)
+- [let normal: SIMD3<Float>](./contact/normal.md)
   The normal of the contacting surfaces at the contact point. The normal direction points from the second shape to the first shape in scene coordinate space.
-- [let penetrationDistance: Float](contact/penetrationdistance.md)
+- [let penetrationDistance: Float](./contact/penetrationdistance.md)
   The distance of overlap between the contact pair.
-- [let point: SIMD3<Float>](contact/point.md)
+- [let point: SIMD3<Float>](./contact/point.md)
   Point of contact in scene coordinate space.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CollisionEvents](collisionevents.md)
+### Collision-related notifications
+- [enum CollisionEvents](./collisionevents.md)
 
 
 ---

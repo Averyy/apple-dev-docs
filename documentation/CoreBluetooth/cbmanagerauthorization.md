@@ -1,7 +1,8 @@
 # CBManagerAuthorization
 
 **Framework**: Core Bluetooth  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The current authorization state of a Core Bluetooth manager.
 
@@ -20,33 +21,38 @@ The current authorization state of a Core Bluetooth manager.
 enum CBManagerAuthorization
 ```
 
+```c
+enum CBManagerAuthorization : NSInteger;
+```
+
 ## Topics
 
 ### Authorization States
-- [CBManagerAuthorization.allowedAlways](cbmanagerauthorization/allowedalways.md)
+- [CBManagerAuthorization.allowedAlways](./cbmanagerauthorization/allowedalways.md)
   A state that indicates the user has authorized Bluetooth at any time.
-- [CBManagerAuthorization.denied](cbmanagerauthorization/denied.md)
+- [CBManagerAuthorization.denied](./cbmanagerauthorization/denied.md)
   A state that indicates the user explicitly denied Bluetooth access for this app.
-- [CBManagerAuthorization.notDetermined](cbmanagerauthorization/notdetermined.md)
+- [CBManagerAuthorization.notDetermined](./cbmanagerauthorization/notdetermined.md)
   A state that indicates the user has yet to authorize Bluetooth for this app.
-- [CBManagerAuthorization.restricted](cbmanagerauthorization/restricted.md)
+- [CBManagerAuthorization.restricted](./cbmanagerauthorization/restricted.md)
   A state that indicates this app isn’t authorized to use Bluetooth.
 ### Initializers
-- [init?(rawValue: Int)](cbmanagerauthorization/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cbmanagerauthorization/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class var authorization: CBManagerAuthorization](cbmanager/authorization-swift.type.property.md)
+### Determining Authorization State
+- [class var authorization: CBManagerAuthorization](./cbmanager/authorization-swift.type.property.md)
   The current authorization status for using Bluetooth.
 
 

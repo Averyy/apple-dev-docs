@@ -1,7 +1,8 @@
 # dashboardWindow
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The window that belongs to the dashboard scene.
 
@@ -14,6 +15,10 @@ The window that belongs to the dashboard scene.
 
 ```swift
 var dashboardWindow: UIWindow { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nonnull) UIWindow * dashboardWindow;
 ```
 
 #### Discussion

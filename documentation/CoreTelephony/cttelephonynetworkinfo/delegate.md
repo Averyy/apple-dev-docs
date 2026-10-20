@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that the system notifies when the data service identifier changes.
 
@@ -16,15 +17,20 @@ An object that the system notifies when the data service identifier changes.
 weak var delegate: (any CTTelephonyNetworkInfoDelegate)? { get set }
 ```
 
+```objc
+@property (weak, readwrite, nullable) id<CTTelephonyNetworkInfoDelegate> delegate;
+```
+
 ## See Also
 
-- [var dataServiceIdentifier: String?](cttelephonynetworkinfo/dataserviceidentifier.md)
+### Getting Information About the Cellular Service Provider
+- [var dataServiceIdentifier: String?](./dataserviceidentifier.md)
   The identifier of the service that’s currently providing data.
-- [protocol CTTelephonyNetworkInfoDelegate](cttelephonynetworkinfodelegate.md)
+- [protocol CTTelephonyNetworkInfoDelegate](../cttelephonynetworkinfodelegate.md)
   The methods that the system invokes when data service changes occur.
-- [var serviceCurrentRadioAccessTechnology: [String : String]?](cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md)
+- [var serviceCurrentRadioAccessTechnology: [String : String]?](./servicecurrentradioaccesstechnology.md)
   A dictionary containing the current radio access technology registered to each service.
-- [Radio Access Technology Constants](radio-access-technology-constants.md)
+- [Radio Access Technology Constants](../radio-access-technology-constants.md)
   Constants that describe the current radio access technology.
 
 

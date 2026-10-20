@@ -1,7 +1,8 @@
 # init(_:text:axis:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a text field with a preferred axis and a text label generated from a localized title string resource.
 
@@ -21,11 +22,25 @@ Creates a text field with a preferred axis and a text label generated from a loc
 nonisolated init(_ titleResource: LocalizedStringResource, text: Binding<String>, axis: Axis)
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, text: Binding<String>, axis: Axis)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, text: Binding<String>, axis: Axis) where S : StringProtocol
+```
+
 #### Discussion
 
 Specify a preferred axis in which the text field should scroll its content when it does not fit in the available space. Depending on the style of the field, this axis may not be respected.
 
-Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an action whenever the user submits this text field.
+Use the [`onSubmit(of:_:)`](../view/onsubmit%28of,_%29.md) modifier to invoke an action whenever the user submits this text field.
 
 ## Parameters
 
@@ -35,9 +50,10 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 
 ## See Also
 
-- [init(_:text:prompt:axis:)](textfield/init(_:text:prompt:axis:).md)
+### Creating a scrollable text field
+- [init(_:text:prompt:axis:)](./init%28_,text,prompt,axis%29.md)
   Creates a text field with a preferred axis and a text label generated from a localized title string resource.
-- [init(text: Binding<String>, prompt: Text?, axis: Axis, label: () -> Label)](textfield/init(text:prompt:axis:label:).md)
+- [init(text: Binding<String>, prompt: Text?, axis: Axis, label: () -> Label)](./init%28text,prompt,axis,label%29.md)
   Creates a text field with a preferred axis and a prompt generated from a `Text`.
 
 

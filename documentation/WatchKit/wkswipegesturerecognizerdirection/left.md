@@ -1,7 +1,8 @@
 # left
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The touch moves from right to left.
 
@@ -14,13 +15,18 @@ The touch moves from right to left.
 static var left: WKSwipeGestureRecognizerDirection { get }
 ```
 
+```c
+WKSwipeGestureRecognizerDirectionLeft
+```
+
 ## See Also
 
-- [static var right: WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection/right.md)
+### Constants
+- [static var right: WKSwipeGestureRecognizerDirection](./right.md)
   The touch moves from left to right. This direction is the default.
-- [static var up: WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection/up.md)
+- [static var up: WKSwipeGestureRecognizerDirection](./up.md)
   The touch moves upward.
-- [static var down: WKSwipeGestureRecognizerDirection](wkswipegesturerecognizerdirection/down.md)
+- [static var down: WKSwipeGestureRecognizerDirection](./down.md)
   The touch moves downward.
 
 

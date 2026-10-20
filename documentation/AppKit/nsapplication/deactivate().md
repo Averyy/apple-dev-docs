@@ -1,12 +1,13 @@
 # deactivate()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deactivates the receiver.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Deactivates the receiver.
 func deactivate()
 ```
 
+```objc
+- (void) deactivate;
+```
+
 ## Mentions
 
-- [Passing control from one app to another with cooperative activation](passing-control-from-one-app-to-another-with-cooperative-activation.md)
+- [Passing control from one app to another with cooperative activation](../passing-control-from-one-app-to-another-with-cooperative-activation.md)
 
 #### Discussion
 
@@ -24,20 +29,22 @@ Normally, you shouldn’t invoke this method—AppKit is responsible for proper 
 
 ## See Also
 
-- [func activate(ignoringOtherApps: Bool)](nsapplication/activate(ignoringotherapps:).md)
+### Related Documentation
+- [func activate(ignoringOtherApps: Bool)](./activate%28ignoringotherapps%29.md)
   Makes the receiver the active app.
-- [Passing control from one app to another with cooperative activation](passing-control-from-one-app-to-another-with-cooperative-activation.md)
+### Activating and deactivating the app
+- [Passing control from one app to another with cooperative activation](../passing-control-from-one-app-to-another-with-cooperative-activation.md)
   Request focus for your app, and coordinate passing control from one app to another.
-- [func activate()](nsapplication/activate.md)
+- [func activate()](./activate%28%29.md)
   Activates the receiver app, if appropriate.
-- [var isActive: Bool](nsapplication/isactive.md)
+- [var isActive: Bool](./isactive.md)
   A Boolean value indicating whether this is the active app.
-- [func yieldActivation(to: NSRunningApplication)](nsapplication/yieldactivation(to:).md)
+- [func yieldActivation(to: NSRunningApplication)](./yieldactivation%28to%29.md)
   Explicitly allows another app to make itself active.
-- [func yieldActivation(toApplicationWithBundleIdentifier: String)](nsapplication/yieldactivation(toapplicationwithbundleidentifier:).md)
+- [func yieldActivation(toApplicationWithBundleIdentifier: String)](./yieldactivation%28toapplicationwithbundleidentifier%29.md)
   Explicitly allows another app to make itself active.
-- [NSApplication.ActivationOptions](nsapplication/activationoptions.md)
-  The following flags are for [`activate(options:)`](nsrunningapplication/activate(options:).md).
+- [NSApplication.ActivationOptions](./activationoptions.md)
+  The following flags are for [`activate(options:)`](../nsrunningapplication/activate%28options%29.md).
 
 
 ---

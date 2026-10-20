@@ -1,7 +1,8 @@
 # HumanHandPoseObservation.JointName.thumbTip
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A joint name that represents the tip of the thumb.
 
@@ -21,11 +22,12 @@ case thumbTip
 
 ## See Also
 
-- [HumanHandPoseObservation.JointName.thumbCMC](humanhandposeobservation/jointname/thumbcmc.md)
+### Getting the thumb finger joint name
+- [HumanHandPoseObservation.JointName.thumbCMC](./thumbcmc.md)
   A joint name that represents the thumb’s carpometacarpal (CMC) joint.
-- [HumanHandPoseObservation.JointName.thumbIP](humanhandposeobservation/jointname/thumbip.md)
+- [HumanHandPoseObservation.JointName.thumbIP](./thumbip.md)
   A joint name that represents the thumb’s interphalangeal (IP) joint.
-- [HumanHandPoseObservation.JointName.thumbMP](humanhandposeobservation/jointname/thumbmp.md)
+- [HumanHandPoseObservation.JointName.thumbMP](./thumbmp.md)
   A joint name that represents the thumb’s metacarpophalangeal (MP) joint.
 
 

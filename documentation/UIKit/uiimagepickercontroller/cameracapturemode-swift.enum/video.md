@@ -1,14 +1,15 @@
 # UIImagePickerController.CameraCaptureMode.video
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies that the camera captures movies.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,9 +17,14 @@ Specifies that the camera captures movies.
 case video
 ```
 
+```c
+UIImagePickerControllerCameraCaptureModeVideo
+```
+
 ## See Also
 
-- [UIImagePickerController.CameraCaptureMode.photo](uiimagepickercontroller/cameracapturemode-swift.enum/photo.md)
+### Constants
+- [UIImagePickerController.CameraCaptureMode.photo](./photo.md)
   Specifies that the camera captures still images.
 
 

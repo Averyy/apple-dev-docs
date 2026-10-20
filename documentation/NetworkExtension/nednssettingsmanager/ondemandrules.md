@@ -1,7 +1,8 @@
 # onDemandRules
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A list of ordered rules that defines the networks on which the DNS settings will apply.
 
@@ -18,17 +19,22 @@ A list of ordered rules that defines the networks on which the DNS settings will
 var onDemandRules: [NEOnDemandRule]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NEOnDemandRule *> * onDemandRules;
+```
+
 #### Discussion
 
-An On Demand rule with the action [`NEOnDemandRuleAction.connect`](neondemandruleaction/connect.md) defines a network on which the DNS settings apply. An On Demand rule with the action [`NEOnDemandRuleAction.disconnect`](neondemandruleaction/disconnect.md) causes DNS settings to not apply. An On Demand rule with the action of [`NEOnDemandRuleAction.evaluateConnection`](neondemandruleaction/evaluateconnection.md) can be used to enable the DNS settings on a network with excluded domains, as specified using a [`NEEvaluateConnectionRuleAction.neverConnect`](neevaluateconnectionruleaction/neverconnect.md) rule.
+An On Demand rule with the action [`NEOnDemandRuleAction.connect`](../neondemandruleaction/connect.md) defines a network on which the DNS settings apply. An On Demand rule with the action [`NEOnDemandRuleAction.disconnect`](../neondemandruleaction/disconnect.md) causes DNS settings to not apply. An On Demand rule with the action of [`NEOnDemandRuleAction.evaluateConnection`](../neondemandruleaction/evaluateconnection.md) can be used to enable the DNS settings on a network with excluded domains, as specified using a [`NEEvaluateConnectionRuleAction.neverConnect`](../neevaluateconnectionruleaction/neverconnect.md) rule.
 
 ## See Also
 
-- [var isEnabled: Bool](nednssettingsmanager/isenabled.md)
+### Accessing DNS configuration properties
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean you use to query the enabled state of the DNS settings configuration.
-- [var dnsSettings: NEDNSSettings?](nednssettingsmanager/dnssettings.md)
+- [var dnsSettings: NEDNSSettings?](./dnssettings.md)
   An object that contains the configuration settings for a DNS server.
-- [var localizedDescription: String?](nednssettingsmanager/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A string that contains the display name of the DNS settings configuration.
 
 

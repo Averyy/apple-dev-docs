@@ -2,6 +2,7 @@
 
 **Framework**: Vision  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The minimum number of frames that the request has to process before reporting any observations.
@@ -25,11 +26,17 @@ var minimumLatencyFrameCount: Int { get }
 
 The request provides this information after it’s initialized with its required parameters.
 
-Video-based requests often need a minimum number of frames before they can report any observations. For example, for movement detection that requires at least `5` frames, the [`minimumLatencyFrameCount`](statefulrequest/minimumlatencyframecount.md) for the request reports `5`, and after the request processes `5` frames, an observation returns the results.
+Video-based requests often need a minimum number of frames before they can report any observations. For example, for movement detection that requires at least `5` frames, the [`minimumLatencyFrameCount`](./minimumlatencyframecount.md) for the request reports `5`, and after the request processes `5` frames, an observation returns the results.
+
+## Default Implementations
+
+### StatefulRequest Implementations
+- [var minimumLatencyFrameCount: Int](./minimumlatencyframecount-2h8se.md)
 
 ## See Also
 
-- [var frameAnalysisSpacing: CMTime](statefulrequest/frameanalysisspacing.md)
+### Inspecting the request
+- [var frameAnalysisSpacing: CMTime](./frameanalysisspacing.md)
   The reciprocal of the maximum rate to process buffers.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOStreamOptionOpenExclusive](1646476-anonymous/kiostreamoptionopenexclusive.md)
-- [kIOStreamOptionOpenShared](1646476-anonymous/kiostreamoptionopenshared.md)
+- [kIOStreamOptionOpenExclusive](./api-1646476-anonymous/kiostreamoptionopenexclusive.md)
+- [kIOStreamOptionOpenShared](./api-1646476-anonymous/kiostreamoptionopenshared.md)
 
 
 ---

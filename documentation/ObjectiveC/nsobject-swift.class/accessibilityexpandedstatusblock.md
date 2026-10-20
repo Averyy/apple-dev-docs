@@ -1,7 +1,8 @@
 # accessibilityExpandedStatusBlock
 
 **Framework**: Objective-C Runtime  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 ```swift
 @MainActor
 var accessibilityExpandedStatusBlock: (@MainActor @Sendable () -> UIAccessibility.ExpandedStatus)? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) enum UIAccessibilityExpandedStatus (^)(void) accessibilityExpandedStatusBlock;
 ```
 
 

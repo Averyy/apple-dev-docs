@@ -5,13 +5,13 @@
 ## Topics
 
 ### Constants
-- [var formWhose: Int](formwhose.md)
-- [var keyAEIndex: Int](keyaeindex.md)
-- [var keyAETest: Int](keyaetest.md)
-- [var keyAEWhoseRangeStart: Int](keyaewhoserangestart.md)
-- [var keyAEWhoseRangeStop: Int](keyaewhoserangestop.md)
-- [var typeWhoseDescriptor: Int](typewhosedescriptor.md)
-- [var typeWhoseRange: Int](typewhoserange.md)
+- [var formWhose: Int](../../formwhose.md)
+- [var keyAEIndex: Int](../../keyaeindex.md)
+- [var keyAETest: Int](../../keyaetest.md)
+- [var keyAEWhoseRangeStart: Int](../../keyaewhoserangestart.md)
+- [var keyAEWhoseRangeStop: Int](../../keyaewhoserangestop.md)
+- [var typeWhoseDescriptor: Int](../../typewhosedescriptor.md)
+- [var typeWhoseRange: Int](../../typewhoserange.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(minCenterCoordinateDistance:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a camera zoom range by specifying the minimum distance from your map view’s center coordinate, measured in meters.
 
@@ -19,9 +20,13 @@ Create a camera zoom range by specifying the minimum distance from your map view
 convenience init?(minCenterCoordinateDistance minDistance: CLLocationDistance)
 ```
 
+```objc
+- (instancetype) initWithMinCenterCoordinateDistance:(CLLocationDistance) minDistance;
+```
+
 #### Discussion
 
-To specify MapKit’s default minimum distance from the center coordinate, use the [`MKMapCameraZoomDefault`](mkmapcamerazoomdefault.md) constant, that allows the user to zoom to any level that MapKit supports.
+To specify MapKit’s default minimum distance from the center coordinate, use the [`MKMapCameraZoomDefault`](../../mkmapcamerazoomdefault.md) constant, that allows the user to zoom to any level that MapKit supports.
 
 The following example prevents the user from zooming closer than 1000 meters from the map’s center coordinate:
 
@@ -33,15 +38,18 @@ MKMapView.CameraZoomRange(
 
 ## Parameters
 
-- `minDistance`: The minimum distance the user can zoom in on a map based on its center point, measured in meters. To increase how far in the user can zoom, use a shorter distance value. To decrease how far in the user can zoom, use a larger distance value.
+- `minDistance`: The minimum distance the user can zoom in on a map based on its center point, measured in meters.
+
+  To increase how far in the user can zoom, use a shorter distance value. To decrease how far in the user can zoom, use a larger distance value.
 
 ## See Also
 
-- [init?(minCenterCoordinateDistance: CLLocationDistance, maxCenterCoordinateDistance: CLLocationDistance)](mkmapview/camerazoomrange-swift.class/init(mincentercoordinatedistance:maxcentercoordinatedistance:).md)
+### Creating a camera zoom range
+- [init?(minCenterCoordinateDistance: CLLocationDistance, maxCenterCoordinateDistance: CLLocationDistance)](./init%28mincentercoordinatedistance,maxcentercoordinatedistance%29.md)
   Create a camera zoom range by specifying a minimum and maximum distance from your map view’s center coordinates, measured in meters.
-- [convenience init?(maxCenterCoordinateDistance: CLLocationDistance)](mkmapview/camerazoomrange-swift.class/init(maxcentercoordinatedistance:).md)
+- [convenience init?(maxCenterCoordinateDistance: CLLocationDistance)](./init%28maxcentercoordinatedistance%29.md)
   Create a camera zoom range by specifying the maximum distance from your map view’s center coordinate, measured in meters.
-- [let MKMapCameraZoomDefault: CLLocationDistance](mkmapcamerazoomdefault.md)
+- [let MKMapCameraZoomDefault: CLLocationDistance](../../mkmapcamerazoomdefault.md)
   A constant value used to represent the default value for zooming in or out on a map.
 
 

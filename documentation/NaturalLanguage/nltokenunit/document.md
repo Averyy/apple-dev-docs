@@ -1,7 +1,8 @@
 # NLTokenUnit.document
 
 **Framework**: Natural Language  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The document in its entirety.
 
@@ -20,13 +21,18 @@ The document in its entirety.
 case document
 ```
 
+```c
+NLTokenUnitDocument
+```
+
 ## See Also
 
-- [NLTokenUnit.word](nltokenunit/word.md)
+### Constants
+- [NLTokenUnit.word](./word.md)
   An individual word.
-- [NLTokenUnit.sentence](nltokenunit/sentence.md)
+- [NLTokenUnit.sentence](./sentence.md)
   An individual sentence.
-- [NLTokenUnit.paragraph](nltokenunit/paragraph.md)
+- [NLTokenUnit.paragraph](./paragraph.md)
   An individual paragraph.
 
 

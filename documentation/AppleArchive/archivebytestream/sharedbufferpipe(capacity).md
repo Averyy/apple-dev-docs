@@ -1,7 +1,8 @@
 # sharedBufferPipe(capacity:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a pair of streams and links them by a shared buffer.
 
@@ -11,7 +12,7 @@ Creates a pair of streams and links them by a shared buffer.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,13 +23,13 @@ static func sharedBufferPipe(capacity: Int) -> (output: ArchiveByteStream, input
 
 #### Return Value
 
-A new pair of [`ArchiveByteStream`](archivebytestream.md) instances on success; `nil` otherwise.
+A new pair of [`ArchiveByteStream`](../archivebytestream.md) instances on success; `nil` otherwise.
 
 #### Discussion
 
-This function creates two [`ArchiveByteStream`](archivebytestream.md) instances that provide one-way communication between two threads. One thread calls the sequential output stream `output`, and the other thread calls the sequential input stream `input`. The function blocks writing to `output` when the buffer is full, and blocks reading from `input` when the buffer is empty.
+This function creates two [`ArchiveByteStream`](../archivebytestream.md) instances that provide one-way communication between two threads. One thread calls the sequential output stream `output`, and the other thread calls the sequential input stream `input`. The function blocks writing to `output` when the buffer is full, and blocks reading from `input` when the buffer is empty.
 
-If either thread calls [`cancel`](archiveheader/entrymessagestatus/cancel.md), the operation aborts both streams, and immediately calls return (without blocking) with an error.
+If either thread calls [`cancel`](../archiveheader/entrymessagestatus/cancel.md), the operation aborts both streams, and immediately calls return (without blocking) with an error.
 
 Closing `output`, indicates end-of-file (EOF) and writing additional bytes fails. After the operation reaches EOF and has read all data, the read function on `input` returns `0` to signal EOF.
 
@@ -40,9 +41,10 @@ The operation destroys the underlying buffer after it closes both streams.
 
 ## See Also
 
-- [static func customStream<C>(instance: C) -> ArchiveByteStream?](archivebytestream/customstream(instance:).md)
+### Streaming with Custom Streams
+- [static func customStream<C>(instance: C) -> ArchiveByteStream?](./customstream%28instance%29.md)
   Returns a new archive byte stream instance mapped to an object that conforms to the archive byte stream protocol.
-- [static func withStream<C, E>(wrapping: C, (ArchiveByteStream) throws -> E) throws -> E](archivebytestream/withstream(wrapping:_:).md)
+- [static func withStream<C, E>(wrapping: C, (ArchiveByteStream) throws -> E) throws -> E](./withstream%28wrapping,_%29.md)
   Calls the given closure with an archive byte stream instance mapped to an object that conforms to the archive byte stream protocol.
 
 

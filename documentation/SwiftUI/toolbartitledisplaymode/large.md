@@ -1,7 +1,8 @@
 # large
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The large mode.
 
@@ -24,11 +25,12 @@ In iOS, and watchOS, this displays the toolbar title below the content of the na
 
 ## See Also
 
-- [static var automatic: ToolbarTitleDisplayMode](toolbartitledisplaymode/automatic.md)
+### Getting display modes
+- [static var automatic: ToolbarTitleDisplayMode](./automatic.md)
   The automatic mode.
-- [static var inline: ToolbarTitleDisplayMode](toolbartitledisplaymode/inline.md)
+- [static var inline: ToolbarTitleDisplayMode](./inline.md)
   The inline mode.
-- [static var inlineLarge: ToolbarTitleDisplayMode](toolbartitledisplaymode/inlinelarge.md)
+- [static var inlineLarge: ToolbarTitleDisplayMode](./inlinelarge.md)
   The inline large mode.
 
 

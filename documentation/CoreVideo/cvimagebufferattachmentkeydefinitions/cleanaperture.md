@@ -1,7 +1,8 @@
 # cleanAperture
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Clean aperture of the image buffer.
 

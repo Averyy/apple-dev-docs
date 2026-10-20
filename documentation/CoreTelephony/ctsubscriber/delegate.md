@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core Telephony  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that receives updates on the subscriber information.
 
@@ -14,6 +15,10 @@ A delegate that receives updates on the subscriber information.
 
 ```swift
 weak var delegate: (any CTSubscriberDelegate)? { get set }
+```
+
+```objc
+@property (nonatomic, weak) id<CTSubscriberDelegate> delegate;
 ```
 
 

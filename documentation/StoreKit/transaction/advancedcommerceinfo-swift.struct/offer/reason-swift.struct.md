@@ -1,7 +1,8 @@
 # Transaction.AdvancedCommerceInfo.Offer.Reason
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The reasons why subscription offers are applied to the purchase of auto-renewable subscriptions.
 
@@ -23,18 +24,18 @@ struct Reason
 ## Topics
 
 ### Type Properties
-- [static let acquisition: Transaction.AdvancedCommerceInfo.Offer.Reason](transaction/advancedcommerceinfo-swift.struct/offer/reason-swift.struct/acquisition.md)
-- [static let retention: Transaction.AdvancedCommerceInfo.Offer.Reason](transaction/advancedcommerceinfo-swift.struct/offer/reason-swift.struct/retention.md)
-- [static let winBack: Transaction.AdvancedCommerceInfo.Offer.Reason](transaction/advancedcommerceinfo-swift.struct/offer/reason-swift.struct/winback.md)
+- [static let acquisition: Transaction.AdvancedCommerceInfo.Offer.Reason](./reason-swift.struct/acquisition.md)
+- [static let retention: Transaction.AdvancedCommerceInfo.Offer.Reason](./reason-swift.struct/retention.md)
+- [static let winBack: Transaction.AdvancedCommerceInfo.Offer.Reason](./reason-swift.struct/winback.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [RawRepresentable](../../../../Swift/rawrepresentable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

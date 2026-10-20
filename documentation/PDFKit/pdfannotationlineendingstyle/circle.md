@@ -1,7 +1,8 @@
 # circle
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style that displays a circle line ending and fills it with the annotation’s interior color.
 
@@ -19,15 +20,20 @@ A style that displays a circle line ending and fills it with the annotation’s 
 static let circle: PDFAnnotationLineEndingStyle
 ```
 
+```c
+extern PDFAnnotationLineEndingStyle PDFAnnotationLineEndingStyleCircle;
+```
+
 ## See Also
 
-- [static let closedArrow: PDFAnnotationLineEndingStyle](pdfannotationlineendingstyle/closedarrow.md)
+### Choosing a Line-Ending Style
+- [static let closedArrow: PDFAnnotationLineEndingStyle](./closedarrow.md)
   A style that displays a closed arrowhead line ending and fills it with the annotation’s interior color.
-- [static let diamond: PDFAnnotationLineEndingStyle](pdfannotationlineendingstyle/diamond.md)
-- [static let none: PDFAnnotationLineEndingStyle](pdfannotationlineendingstyle/none.md)
-- [static let openArrow: PDFAnnotationLineEndingStyle](pdfannotationlineendingstyle/openarrow.md)
+- [static let diamond: PDFAnnotationLineEndingStyle](./diamond.md)
+- [static let none: PDFAnnotationLineEndingStyle](./none.md)
+- [static let openArrow: PDFAnnotationLineEndingStyle](./openarrow.md)
   A style that displays an open arrowhead line ending.
-- [static let square: PDFAnnotationLineEndingStyle](pdfannotationlineendingstyle/square.md)
+- [static let square: PDFAnnotationLineEndingStyle](./square.md)
   A style that displays a square line ending and fills it with the annotation’s interior color.
 
 

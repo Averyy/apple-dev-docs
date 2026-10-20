@@ -1,7 +1,8 @@
 # errSecCSDBDenied
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Access to signature database denied.
 
@@ -13,6 +14,10 @@ Access to signature database denied.
 
 ```swift
 var errSecCSDBDenied: OSStatus { get }
+```
+
+```c
+errSecCSDBDenied
 ```
 
 #### Database

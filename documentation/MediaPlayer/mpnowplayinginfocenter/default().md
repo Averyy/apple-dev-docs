@@ -1,7 +1,8 @@
 # default()
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the singleton Now Playing info center.
 
@@ -20,21 +21,26 @@ Returns the singleton Now Playing info center.
 class func `default`() -> MPNowPlayingInfoCenter
 ```
 
+```objc
++ (MPNowPlayingInfoCenter *) defaultCenter;
+```
+
 #### Return Value
 
 The now playing info center singleton.
 
 #### Discussion
 
-The default now playing info center holds Now Playing information for the app that’s designated to receive remote control events. For information on how to configure your app to receive remote control events, see [`Handling external player events notifications`](handling-external-player-events-notifications.md).
+The default now playing info center holds Now Playing information for the app that’s designated to receive remote control events. For information on how to configure your app to receive remote control events, see [Handling external player events notifications](../handling-external-player-events-notifications.md).
 
 ## See Also
 
-- [var nowPlayingInfo: [String : Any]?](mpnowplayinginfocenter/nowplayinginfo.md)
+### Working with the default Now Playing info center
+- [var nowPlayingInfo: [String : Any]?](./nowplayinginfo.md)
   The current Now Playing information for the default Now Playing info center.
-- [enum MPNowPlayingInfoMediaType](mpnowplayinginfomediatype.md)
+- [enum MPNowPlayingInfoMediaType](../mpnowplayinginfomediatype.md)
   The type of media currently playing.
-- [class var supportedAnimatedArtworkKeys: [String]](mpnowplayinginfocenter/supportedanimatedartworkkeys.md)
+- [class var supportedAnimatedArtworkKeys: [String]](./supportedanimatedartworkkeys.md)
   Keys related to animated artwork that are supported by the current platform.
 
 

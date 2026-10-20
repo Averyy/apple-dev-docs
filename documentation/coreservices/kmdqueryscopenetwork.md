@@ -1,7 +1,8 @@
 # kMDQueryScopeNetwork
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies that the query should include all user mounted remote volumes.
 
@@ -12,6 +13,10 @@ Specifies that the query should include all user mounted remote volumes.
 
 ```swift
 let kMDQueryScopeNetwork: CFString!
+```
+
+```c
+const CFStringRef kMDQueryScopeNetwork;
 ```
 
 

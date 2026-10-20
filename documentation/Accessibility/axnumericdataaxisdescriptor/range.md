@@ -1,7 +1,8 @@
 # range
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A range that defines the minimum and maximum displayable values for the axis.
 

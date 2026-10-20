@@ -1,7 +1,8 @@
 # ParametricImmersiveAssetInfo.Error.ErrorType.unconvertibleAsset
 
 **Framework**: Immersive Media Support  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the asset can’t be converted because it’s missing the required metadata.
 

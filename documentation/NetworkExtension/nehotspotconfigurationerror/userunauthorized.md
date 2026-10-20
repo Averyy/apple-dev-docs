@@ -1,7 +1,8 @@
 # NEHotspotConfigurationError.userUnauthorized
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -14,6 +15,10 @@
 
 ```swift
 case userUnauthorized
+```
+
+```c
+NEHotspotConfigurationErrorUserUnauthorized
 ```
 
 

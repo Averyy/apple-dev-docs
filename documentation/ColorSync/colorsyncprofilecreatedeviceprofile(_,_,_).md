@@ -1,7 +1,8 @@
 # ColorSyncProfileCreateDeviceProfile(_:_:_:)
 
 **Framework**: ColorSync  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a profile for a device registered with ColorSync.
 
@@ -13,6 +14,10 @@ Creates a profile for a device registered with ColorSync.
 
 ```swift
 func ColorSyncProfileCreateDeviceProfile(_ deviceClass: CFString!, _ deviceID: CFUUID!, _ profileID: CFTypeRef!) -> Unmanaged<ColorSyncProfile>?
+```
+
+```c
+extern ColorSyncProfileRefColorSyncProfileCreateDeviceProfile(CFStringRef deviceClass, CFUUIDRef deviceID, CFTypeRef profileID);
 ```
 
 #### Return Value
@@ -27,21 +32,22 @@ See `ColorSyncDevice.h` for more information on `deviceClass`, `deviceID`, and `
 
 - `deviceClass`: The ColorSync device class.
 - `deviceID`: The device ID registered with ColorSync.
-- `profileID`: The profile ID registered with ColorSync; pass [`kColorSyncDeviceDefaultProfileID`](kcolorsyncdevicedefaultprofileid.md) to get the default profile.
+- `profileID`: The profile ID registered with ColorSync; pass [`kColorSyncDeviceDefaultProfileID`](./kcolorsyncdevicedefaultprofileid.md) to get the default profile.
 
 ## See Also
 
-- [func ColorSyncDeviceCopyDeviceInfo(CFString!, CFUUID!) -> Unmanaged<CFDictionary>?](colorsyncdevicecopydeviceinfo(_:_:).md)
+### Registering and enumerating devices
+- [func ColorSyncDeviceCopyDeviceInfo(CFString!, CFUUID!) -> Unmanaged<CFDictionary>?](./colorsyncdevicecopydeviceinfo%28_,_%29.md)
   Copies information about a device, resolved for the current host and current user.
-- [typealias ColorSyncDeviceProfileIterateCallback](colorsyncdeviceprofileiteratecallback.md)
+- [typealias ColorSyncDeviceProfileIterateCallback](./colorsyncdeviceprofileiteratecallback.md)
   A callback that ColorSync invokes for each device profile during iteration.
-- [func ColorSyncDeviceSetCustomProfiles(CFString!, CFUUID!, CFDictionary!) -> Bool](colorsyncdevicesetcustomprofiles(_:_:_:).md)
+- [func ColorSyncDeviceSetCustomProfiles(CFString!, CFUUID!, CFDictionary!) -> Bool](./colorsyncdevicesetcustomprofiles%28_,_,_%29.md)
   Sets custom profiles for a device in lieu of its factory profiles.
-- [func ColorSyncIterateDeviceProfiles(ColorSyncDeviceProfileIterateCallback!, UnsafeMutableRawPointer?)](colorsynciteratedeviceprofiles(_:_:).md)
+- [func ColorSyncIterateDeviceProfiles(ColorSyncDeviceProfileIterateCallback!, UnsafeMutableRawPointer?)](./colorsynciteratedeviceprofiles%28_,_%29.md)
   Iterates over the profiles registered for all devices, invoking a callback for each.
-- [func ColorSyncRegisterDevice(CFString!, CFUUID!, CFDictionary!) -> Bool](colorsyncregisterdevice(_:_:_:).md)
+- [func ColorSyncRegisterDevice(CFString!, CFUUID!, CFDictionary!) -> Bool](./colorsyncregisterdevice%28_,_,_%29.md)
   Registers a device of the given class with ColorSync.
-- [func ColorSyncUnregisterDevice(CFString!, CFUUID!) -> Bool](colorsyncunregisterdevice(_:_:).md)
+- [func ColorSyncUnregisterDevice(CFString!, CFUUID!) -> Bool](./colorsyncunregisterdevice%28_,_%29.md)
   Unregisters a device of the given class and identifier.
 
 

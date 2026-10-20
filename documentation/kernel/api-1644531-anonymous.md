@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,19 +18,19 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSyncAnalogBipolarMask](1644531-anonymous/ksyncanalogbipolarmask.md)
-- [kSyncAnalogBipolarSRGBSyncMask](1644531-anonymous/ksyncanalogbipolarsrgbsyncmask.md)
-- [kSyncAnalogBipolarSerrateMask](1644531-anonymous/ksyncanalogbipolarserratemask.md)
-- [kSyncAnalogCompositeMask](1644531-anonymous/ksyncanalogcompositemask.md)
-- [kSyncAnalogCompositeRGBSyncMask](1644531-anonymous/ksyncanalogcompositergbsyncmask.md)
-- [kSyncAnalogCompositeSerrateMask](1644531-anonymous/ksyncanalogcompositeserratemask.md)
-- [kSyncDigitalCompositeMask](1644531-anonymous/ksyncdigitalcompositemask.md)
-- [kSyncDigitalCompositeMatchHSyncMask](1644531-anonymous/ksyncdigitalcompositematchhsyncmask.md)
-- [kSyncDigitalCompositeSerrateMask](1644531-anonymous/ksyncdigitalcompositeserratemask.md)
-- [kSyncDigitalHSyncPositiveMask](1644531-anonymous/ksyncdigitalhsyncpositivemask.md)
-- [kSyncDigitalSeperateMask](1644531-anonymous/ksyncdigitalseperatemask.md)
-- [kSyncDigitalVSyncPositiveMask](1644531-anonymous/ksyncdigitalvsyncpositivemask.md)
-- [kSyncInterlaceMask](1644531-anonymous/ksyncinterlacemask.md)
+- [kSyncAnalogBipolarMask](./api-1644531-anonymous/ksyncanalogbipolarmask.md)
+- [kSyncAnalogBipolarSRGBSyncMask](./api-1644531-anonymous/ksyncanalogbipolarsrgbsyncmask.md)
+- [kSyncAnalogBipolarSerrateMask](./api-1644531-anonymous/ksyncanalogbipolarserratemask.md)
+- [kSyncAnalogCompositeMask](./api-1644531-anonymous/ksyncanalogcompositemask.md)
+- [kSyncAnalogCompositeRGBSyncMask](./api-1644531-anonymous/ksyncanalogcompositergbsyncmask.md)
+- [kSyncAnalogCompositeSerrateMask](./api-1644531-anonymous/ksyncanalogcompositeserratemask.md)
+- [kSyncDigitalCompositeMask](./api-1644531-anonymous/ksyncdigitalcompositemask.md)
+- [kSyncDigitalCompositeMatchHSyncMask](./api-1644531-anonymous/ksyncdigitalcompositematchhsyncmask.md)
+- [kSyncDigitalCompositeSerrateMask](./api-1644531-anonymous/ksyncdigitalcompositeserratemask.md)
+- [kSyncDigitalHSyncPositiveMask](./api-1644531-anonymous/ksyncdigitalhsyncpositivemask.md)
+- [kSyncDigitalSeperateMask](./api-1644531-anonymous/ksyncdigitalseperatemask.md)
+- [kSyncDigitalVSyncPositiveMask](./api-1644531-anonymous/ksyncdigitalvsyncpositivemask.md)
+- [kSyncInterlaceMask](./api-1644531-anonymous/ksyncinterlacemask.md)
 
 
 ---

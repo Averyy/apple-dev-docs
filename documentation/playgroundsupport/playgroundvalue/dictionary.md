@@ -1,9 +1,10 @@
 # PlaygroundValue.dictionary(_:)
 
 **Framework**: Playground Support  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
-A value that represents a mapping from strings to [`PlaygroundValue`](playgroundvalue.md) instances.
+A value that represents a mapping from strings to [`PlaygroundValue`](../playgroundvalue.md) instances.
 
 **Availability**:
 - Xcode 10.2+
@@ -17,8 +18,9 @@ case dictionary([String : PlaygroundValue])
 
 ## See Also
 
-- [case array([PlaygroundValue])](playgroundvalue/array.md)
-  A value that represents an array that contains [`PlaygroundValue`](playgroundvalue.md) instances.
+### Representing Data Collections
+- [case array([PlaygroundValue])](./array.md)
+  A value that represents an array that contains [`PlaygroundValue`](../playgroundvalue.md) instances.
 
 
 ---

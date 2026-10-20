@@ -1,7 +1,8 @@
 # AVCaptureDevice.Format.AutoFocusSystem.phaseDetection
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A faster autofoscus system based on differences in light phase.
 
@@ -18,15 +19,20 @@ A faster autofoscus system based on differences in light phase.
 case phaseDetection
 ```
 
+```c
+AVCaptureAutoFocusSystemPhaseDetection
+```
+
 #### Discussion
 
 Phase detection has the ability to achieve focus in many cases without a focus scan. Phase detection autofocus is typically less visually intrusive than contrast detection autofocus.
 
 ## See Also
 
-- [AVCaptureDevice.Format.AutoFocusSystem.none](avcapturedevice/format/autofocussystem-swift.enum/none.md)
+### Systems
+- [AVCaptureDevice.Format.AutoFocusSystem.none](./none.md)
   Autofocus isn’t available.
-- [AVCaptureDevice.Format.AutoFocusSystem.contrastDetection](avcapturedevice/format/autofocussystem-swift.enum/contrastdetection.md)
+- [AVCaptureDevice.Format.AutoFocusSystem.contrastDetection](./contrastdetection.md)
   A slower autofocus system based on differences in contrast.
 
 

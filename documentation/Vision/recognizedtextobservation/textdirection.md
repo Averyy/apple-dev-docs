@@ -1,7 +1,8 @@
 # textDirection
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -19,17 +20,18 @@ let textDirection: RecognizedTextObservation.Direction?
 
 ## See Also
 
-- [var boundingRegion: NormalizedRegion](recognizedtextobservation/boundingregion.md)
+### Inspecting an observation
+- [var boundingRegion: NormalizedRegion](./boundingregion.md)
   The bounding region of the text.
-- [let isTitle: Bool](recognizedtextobservation/istitle.md)
+- [let isTitle: Bool](./istitle.md)
   Whether this text is the title of the document.
-- [let recognitionLanguages: [Locale.Language]](recognizedtextobservation/recognitionlanguages.md)
+- [let recognitionLanguages: [Locale.Language]](./recognitionlanguages.md)
   The languages in which the recognized text was written.
-- [let shouldWrapToNextLine: Bool?](recognizedtextobservation/shouldwraptonextline.md)
+- [let shouldWrapToNextLine: Bool?](./shouldwraptonextline.md)
   Whether the text continues on the next line.
-- [RecognizedTextObservation.Direction](recognizedtextobservation/direction.md)
+- [RecognizedTextObservation.Direction](./direction.md)
   An enum representing which direction the text is read.
-- [var transcript: String](recognizedtextobservation/transcript.md)
+- [var transcript: String](./transcript.md)
   The top text candidate as a string.
 
 

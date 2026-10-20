@@ -1,7 +1,8 @@
 # IntentPerson.Name.displayName(_:)
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user-visible display name of this `IntentPerson`.
 
@@ -11,7 +12,7 @@ The user-visible display name of this `IntentPerson`.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

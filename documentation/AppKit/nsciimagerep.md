@@ -1,12 +1,13 @@
 # NSCIImageRep
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that can render an image from a Core Image object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,39 +15,44 @@ An object that can render an image from a Core Image object.
 class NSCIImageRep
 ```
 
+```objc
+@interface NSCIImageRep : NSImageRep
+```
+
 ## Topics
 
 ### Creating Representations of Core Image Objects
-- [init(ciImage: CIImage)](nsciimagerep/init(ciimage:)-60ghw.md)
+- [init(ciImage: CIImage)](./nsciimagerep/init%28ciimage%29-60ghw.md)
   Returns a representation of an image initialized to the specified Core Image instance.
 ### Getting Data
-- [var ciImage: CIImage](nsciimagerep/ciimage.md)
+- [var ciImage: CIImage](./nsciimagerep/ciimage.md)
   The Core Image instance.
 ### Initializers
-- [init(CIImage: CIImage)](nsciimagerep/init(ciimage:)-4wx5x.md)
-- [convenience init(CIImage: CIImage)](nsciimagerep/init(ciimage:)-73fvp.md)
+- [init(CIImage: CIImage)](./nsciimagerep/init%28ciimage%29-4wx5x.md)
+- [convenience init(CIImage: CIImage)](./nsciimagerep/init%28ciimage%29-73fvp.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSImageRep](nsimagerep.md)
+- [NSImageRep](./nsimagerep.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NSBitmapImageRep](nsbitmapimagerep.md)
+### Bitmap Formats
+- [class NSBitmapImageRep](./nsbitmapimagerep.md)
   An object that renders an image from bitmap data.
-- [class NSPICTImageRep](nspictimagerep.md)
+- [class NSPICTImageRep](./nspictimagerep.md)
   An object that renders an image from a PICT format data stream of version 1, version 2, and extended version 2.
 
 

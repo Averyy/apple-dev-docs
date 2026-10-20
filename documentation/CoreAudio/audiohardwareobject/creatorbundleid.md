@@ -1,12 +1,13 @@
 # creatorBundleID
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A String that contains the bundle ID of the plug-in that instantiated the object.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

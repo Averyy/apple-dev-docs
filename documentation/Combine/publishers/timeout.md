@@ -1,7 +1,8 @@
 # Publishers.Timeout
 
 **Framework**: Combine  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A publisher that terminates publishing if the upstream publisher exceeds a specified time interval without producing an element.
 
@@ -23,39 +24,40 @@ struct Timeout<Upstream, Context> where Upstream : Publisher, Context : Schedule
 ## Topics
 
 ### Creating a timeout publisher
-- [init(upstream: Upstream, interval: Context.SchedulerTimeType.Stride, scheduler: Context, options: Context.SchedulerOptions?, customError: (() -> Publishers.Timeout<Upstream, Context>.Failure)?)](publishers/timeout/init(upstream:interval:scheduler:options:customerror:).md)
+- [init(upstream: Upstream, interval: Context.SchedulerTimeType.Stride, scheduler: Context, options: Context.SchedulerOptions?, customError: (() -> Publishers.Timeout<Upstream, Context>.Failure)?)](./timeout/init%28upstream,interval,scheduler,options,customerror%29.md)
   Creates a publisher that terminates publishing if the upstream publisher exceeds the specified time interval without producing an element.
 ### Declaring supporting types
-- [Publishers.Timeout.Output](publishers/timeout/output.md)
+- [Publishers.Timeout.Output](./timeout/output.md)
   The kind of values published by this publisher.
-- [Publishers.Timeout.Failure](publishers/timeout/failure.md)
+- [Publishers.Timeout.Failure](./timeout/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/timeout/upstream.md)
+- [let upstream: Upstream](./timeout/upstream.md)
   The publisher from which this publisher receives elements.
-- [let interval: Context.SchedulerTimeType.Stride](publishers/timeout/interval.md)
+- [let interval: Context.SchedulerTimeType.Stride](./timeout/interval.md)
   The maximum time interval the publisher can go without emitting an element, expressed in the time system of the scheduler.
-- [let scheduler: Context](publishers/timeout/scheduler.md)
+- [let scheduler: Context](./timeout/scheduler.md)
   The scheduler on which to deliver events.
-- [let options: Context.SchedulerOptions?](publishers/timeout/options.md)
+- [let options: Context.SchedulerOptions?](./timeout/options.md)
   Scheduler options that customize the delivery of elements.
-- [let customError: (() -> Publishers.Timeout<Upstream, Context>.Failure)?](publishers/timeout/customerror.md)
+- [let customError: (() -> Publishers.Timeout<Upstream, Context>.Failure)?](./timeout/customerror.md)
   A closure that executes if the publisher times out. The publisher sends the failure returned by this closure to the subscriber as the reason for termination.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.MeasureInterval](publishers/measureinterval.md)
+### Controlling timing
+- [Publishers.MeasureInterval](./measureinterval.md)
   A publisher that measures and emits the time interval between events received from an upstream publisher.
-- [Publishers.Debounce](publishers/debounce.md)
+- [Publishers.Debounce](./debounce.md)
   A publisher that publishes elements only after a specified time interval elapses between events.
-- [Publishers.Delay](publishers/delay.md)
+- [Publishers.Delay](./delay.md)
   A publisher that delays delivery of elements and completion to the downstream receiver.
-- [Publishers.Throttle](publishers/throttle.md)
+- [Publishers.Throttle](./throttle.md)
   A publisher that publishes either the most-recent or first element published by the upstream publisher in a specified time interval.
 
 

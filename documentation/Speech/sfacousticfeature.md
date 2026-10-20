@@ -1,7 +1,8 @@
 # SFAcousticFeature
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The value of a voice analysis metric.
 
@@ -18,34 +19,39 @@ The value of a voice analysis metric.
 class SFAcousticFeature
 ```
 
+```objc
+@interface SFAcousticFeature : NSObject
+```
+
 ## Topics
 
 ### Inspecting a feature
-- [var frameDuration: TimeInterval](sfacousticfeature/frameduration.md)
+- [var frameDuration: TimeInterval](./sfacousticfeature/frameduration.md)
   The duration of the audio frame.
-- [var acousticFeatureValuePerFrame: [Double]](sfacousticfeature/acousticfeaturevalueperframe-5krkk.md)
+- [var acousticFeatureValuePerFrame: [Double]](./sfacousticfeature/acousticfeaturevalueperframe-5krkk.md)
   An array of feature values, one value per audio frame, corresponding to a transcript segment of recorded audio.
 ### Initializers
-- [init?(coder: NSCoder)](sfacousticfeature/init(coder:).md)
+- [init?(coder: NSCoder)](./sfacousticfeature/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class SFVoiceAnalytics](sfvoiceanalytics.md)
+### Voice analytics
+- [class SFVoiceAnalytics](./sfvoiceanalytics.md)
   A collection of vocal analysis metrics.
 
 

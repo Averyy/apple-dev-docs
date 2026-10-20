@@ -1,6 +1,7 @@
 # Sending SMS messages from an app
 
-**Framework**: Messages
+**Framework**: Messages  
+**Role**: Article
 
 Send critical messages from inside your app using the Critical Messaging API.
 
@@ -8,26 +9,26 @@ Send critical messages from inside your app using the Critical Messaging API.
 
 The Critical Messaging API provides a way for apps to deliver critical messages to a set of phone numbers. This can serve a number of purposes. For example, if an enterprise wants to receive check-ins from employees working in hazardous or rural environments, being able to automatically message a corporate check-in point may help check the safety of those employees without disrupting their work, or if the employee is unable to access or unlock their iPhone.
 
-##### Enable Your App to Use the Critical Messaging Api
+##### Enable your app to use the Critical Messaging API
 
-Add the `com.apple.developer.messages.critical-messaging` entitlement to your app’s entitlement file in Xcode. For instructions on how to add this entitlement, see [`Critical Messaging`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.messages.critical-messaging).
+Add the `com.apple.developer.messages.critical-messaging` entitlement to your app’s entitlement file in Xcode. For instructions on how to add this entitlement, see [`Critical Messaging`](../BundleResources/entitlements/com.apple.developer.messages.critical-messaging.md).
 
-In addition, add the [`NSCriticalMessagingUsageDescription`](https://developer.apple.com/documentation/bundleresources/information-property-list/nscriticalmessagingusagedescription) key
+In addition, add the [`NSCriticalMessagingUsageDescription`](../BundleResources/information-property-list/nscriticalmessagingusagedescription.md) key
 to your app’s `Info.plist` file and provide a usage description for the operating system to display when the framework requests a person’s authorization to use this capability.
 
 > ❗ **Important**: Critical messages sent via this API may not transmit in scenarios where SMS service is unavailable.
 
-##### Understand Api Restrictions and Usage Limitations
+##### Understand API restrictions and usage limitations
 
-You app’s use of this API must follow the [`Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/support/terms/apple-developer-program-license-agreement#other-tech); additionally the following API limitations and restrictions apply:
+You app’s use of this API must follow the [Developer Program License Agreement](https://developer.apple.com/support/terms/apple-developer-program-license-agreement#other-tech); additionally the following API limitations and restrictions apply:
 
-1. The [`send(_:to:)`](mscriticalsmsmessenger/send(_:to:).md) method only works if the app is backgrounded, if it’s called from foreground the framework returns a [`MSCriticalMessagingError.notSupported`](mscriticalmessagingerror/notsupported.md) error.
-2. The system may impose a rate limit on frequency of messages sent, if usage exceeds this limit the framework returns a  [`MSCriticalMessagingError.sendFailed`](mscriticalmessagingerror/sendfailed.md) error.
-3. When providing phone numbers through [`requestAuthorization(for:)`](mscriticalsmsmessenger/requestauthorization(for:).md), the Messages framework checks if the phone numbers are part of the user’s contacts and populates the users name in the authorization alert as well as in the Settings page.
+1. The [`send(_:to:)`](./mscriticalsmsmessenger/send%28_,to%29.md) method only works if the app is backgrounded, if it’s called from foreground the framework returns a [`MSCriticalMessagingError.notSupported`](./mscriticalmessagingerror/notsupported.md) error.
+2. The system may impose a rate limit on frequency of messages sent, if usage exceeds this limit the framework returns a  [`MSCriticalMessagingError.sendFailed`](./mscriticalmessagingerror/sendfailed.md) error.
+3. When providing phone numbers through [`requestAuthorization(for:)`](./mscriticalsmsmessenger/requestauthorization%28for%29.md), the Messages framework checks if the phone numbers are part of the user’s contacts and populates the users name in the authorization alert as well as in the Settings page.
 
-A person can change the authorization to send critical messages in Settings, under Privacy & Security > Critical Messaging. Check authorization using [`checkAuthorizationStatus(for:)`](mscriticalsmsmessenger/checkauthorizationstatus(for:).md) before using this capability.
+A person can change the authorization to send critical messages in Settings, under Privacy & Security > Critical Messaging. Check authorization using [`checkAuthorizationStatus(for:)`](./mscriticalsmsmessenger/checkauthorizationstatus%28for%29.md) before using this capability.
 
-##### Send Critical Sms Messages From Your App
+##### Send critical SMS messages from your app
 
 To send messages from your app, create an instance of the background messaging manager and recipients, request authorization, then send your message. For example:
 
@@ -46,13 +47,14 @@ let status = manager.send(to recipient: recipient1, message: MSCriticalMessage("
 
 ## See Also
 
-- [class MSCriticalSMSMessenger](mscriticalsmsmessenger.md)
+### Critical messages
+- [class MSCriticalSMSMessenger](./mscriticalsmsmessenger.md)
   The user interface for the Critical Messaging API.
-- [struct MSRecipient](msrecipient.md)
+- [struct MSRecipient](./msrecipient.md)
   A structure that describes the recipient of a critical message.
-- [struct MSCriticalMessage](mscriticalmessage.md)
+- [struct MSCriticalMessage](./mscriticalmessage.md)
   A message for critical communications.
-- [enum MSCriticalMessagingAuthorizationStatus](mscriticalmessagingauthorizationstatus.md)
+- [enum MSCriticalMessagingAuthorizationStatus](./mscriticalmessagingauthorizationstatus.md)
   Values that describe the authorization status for the Critical Messaging API.
 
 

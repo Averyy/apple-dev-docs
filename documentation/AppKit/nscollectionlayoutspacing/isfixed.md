@@ -1,7 +1,8 @@
 # isFixed
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the space is fixed to a specific number of points.
 
@@ -14,9 +15,14 @@ A Boolean value that indicates whether the space is fixed to a specific number o
 var isFixed: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isFixedSpacing;
+```
+
 ## See Also
 
-- [var isFlexible: Bool](nscollectionlayoutspacing/isflexible.md)
+### Getting the spacing type
+- [var isFlexible: Bool](./isflexible.md)
   A Boolean value that indicates whether the space is flexible.
 
 

@@ -1,7 +1,8 @@
 # textureCoordinates(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ static func textureCoordinates(_ index: Int) -> MeshBuffers.Semantic<SIMD2<Float
 
 ## See Also
 
-- [MeshBuffers.UVs](meshbuffers/uvs.md)
+### Creating texture coordinate buffers
+- [MeshBuffers.UVs](./uvs.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # AssignedWorkDocument.Error.exportFailed(partIDs:)
 
 **Framework**: Assignables  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Export of data from the document failed.
 
@@ -9,7 +10,7 @@ Export of data from the document failed.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

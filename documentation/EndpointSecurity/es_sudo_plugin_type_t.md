@@ -1,11 +1,12 @@
 # es_sudo_plugin_type_t
 
 **Framework**: Endpoint Security  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,40 +14,45 @@
 struct es_sudo_plugin_type_t
 ```
 
+```c
+typedef enum { ... } es_sudo_plugin_type_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](es_sudo_plugin_type_t/init(_:).md)
-- [init(rawValue: UInt32)](es_sudo_plugin_type_t/init(rawvalue:).md)
+- [init(UInt32)](./es_sudo_plugin_type_t/init%28_%29.md)
+- [init(rawValue: UInt32)](./es_sudo_plugin_type_t/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](es_sudo_plugin_type_t/rawvalue.md)
+- [var rawValue: UInt32](./es_sudo_plugin_type_t/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct es_address_type_t](es_address_type_t.md)
-- [struct es_authentication_type_t](es_authentication_type_t.md)
-- [struct es_authorization_rule_class_t](es_authorization_rule_class_t.md)
-- [struct es_auto_unlock_type_t](es_auto_unlock_type_t.md)
-- [struct es_btm_item_type_t](es_btm_item_type_t.md)
-- [struct es_gatekeeper_user_override_file_type_t](es_gatekeeper_user_override_file_type_t.md)
-- [struct es_get_task_type_t](es_get_task_type_t.md)
-- [struct es_mount_disposition_t](es_mount_disposition_t.md)
-- [struct es_mute_inversion_type_t](es_mute_inversion_type_t.md)
-- [struct es_mute_inverted_return_t](es_mute_inverted_return_t.md)
-- [struct es_od_account_type_t](es_od_account_type_t.md)
-- [struct es_od_member_type_t](es_od_member_type_t.md)
-- [struct es_od_record_type_t](es_od_record_type_t.md)
-- [struct es_openssh_login_result_type_t](es_openssh_login_result_type_t.md)
-- [struct es_profile_source_t](es_profile_source_t.md)
+### Enumerations
+- [struct es_address_type_t](./es_address_type_t.md)
+- [struct es_authentication_type_t](./es_authentication_type_t.md)
+- [struct es_authorization_rule_class_t](./es_authorization_rule_class_t.md)
+- [struct es_auto_unlock_type_t](./es_auto_unlock_type_t.md)
+- [struct es_btm_item_type_t](./es_btm_item_type_t.md)
+- [struct es_gatekeeper_user_override_file_type_t](./es_gatekeeper_user_override_file_type_t.md)
+- [struct es_get_task_type_t](./es_get_task_type_t.md)
+- [struct es_mount_disposition_t](./es_mount_disposition_t.md)
+- [struct es_mute_inversion_type_t](./es_mute_inversion_type_t.md)
+- [struct es_mute_inverted_return_t](./es_mute_inverted_return_t.md)
+- [struct es_od_account_type_t](./es_od_account_type_t.md)
+- [struct es_od_member_type_t](./es_od_member_type_t.md)
+- [struct es_od_record_type_t](./es_od_record_type_t.md)
+- [struct es_openssh_login_result_type_t](./es_openssh_login_result_type_t.md)
+- [struct es_profile_source_t](./es_profile_source_t.md)
 
 
 ---

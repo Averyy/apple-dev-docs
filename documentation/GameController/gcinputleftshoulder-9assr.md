@@ -1,7 +1,8 @@
 # GCInputLeftShoulder
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the left shoulder button.
 
@@ -11,7 +12,7 @@ The name of the left shoulder button.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,11 @@ var GCInputLeftShoulder: String { get }
 
 ## See Also
 
-- [var leftShoulder: GCControllerButtonInput](gcextendedgamepad/leftshoulder.md)
+### Related Documentation
+- [var leftShoulder: GCControllerButtonInput](./gcextendedgamepad/leftshoulder.md)
   The controller’s left shoulder button element.
-- [var GCInputRightShoulder: String](gcinputrightshoulder-5lcq1.md)
+### Shoulder button names
+- [var GCInputRightShoulder: String](./gcinputrightshoulder-5lcq1.md)
   The name of the right shoulder button.
 
 

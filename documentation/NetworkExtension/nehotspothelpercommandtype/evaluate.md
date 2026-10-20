@@ -1,7 +1,8 @@
 # NEHotspotHelperCommandType.evaluate
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Evaluate the network.
 
@@ -17,19 +18,24 @@ Evaluate the network.
 case evaluate
 ```
 
+```c
+kNEHotspotHelperCommandTypeEvaluate
+```
+
 ## See Also
 
-- [NEHotspotHelperCommandType.none](nehotspothelpercommandtype/none.md)
+### Command Types
+- [NEHotspotHelperCommandType.none](./none.md)
   Placeholder for the null command.
-- [NEHotspotHelperCommandType.filterScanList](nehotspothelpercommandtype/filterscanlist.md)
+- [NEHotspotHelperCommandType.filterScanList](./filterscanlist.md)
   Filter the Wi-Fi scan list.
-- [NEHotspotHelperCommandType.authenticate](nehotspothelpercommandtype/authenticate.md)
+- [NEHotspotHelperCommandType.authenticate](./authenticate.md)
   Authenticate to the network.
-- [NEHotspotHelperCommandType.presentUI](nehotspothelpercommandtype/presentui.md)
+- [NEHotspotHelperCommandType.presentUI](./presentui.md)
   Present user interface.
-- [NEHotspotHelperCommandType.maintain](nehotspothelpercommandtype/maintain.md)
+- [NEHotspotHelperCommandType.maintain](./maintain.md)
   Maintain the connection to the network.
-- [NEHotspotHelperCommandType.logoff](nehotspothelpercommandtype/logoff.md)
+- [NEHotspotHelperCommandType.logoff](./logoff.md)
   Logoff the network.
 
 

@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether the object is ready to detect interactions.
 
@@ -17,17 +18,22 @@ A Boolean value that specifies whether the object is ready to detect interaction
 var isEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
+```
+
 #### Discussion
 
-If the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the [`UIBandSelectionInteraction`](uibandselectioninteraction.md) object is ready to detect pointer-based events in its owning view and initiate interactions. If the value is [`false`](https://developer.apple.com/documentation/swift/false), the object ignores events and doesn’t start interactions. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+If the value of this property is [`true`](../../Swift/true.md), the [`UIBandSelectionInteraction`](../uibandselectioninteraction.md) object is ready to detect pointer-based events in its owning view and initiate interactions. If the value is [`false`](../../Swift/false.md), the object ignores events and doesn’t start interactions. The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var initialModifierFlags: UIKeyModifierFlags](uibandselectioninteraction/initialmodifierflags.md)
+### Getting the interaction state
+- [var initialModifierFlags: UIKeyModifierFlags](./initialmodifierflags.md)
   The pressed modifier keys at the start of the interaction.
-- [var state: UIBandSelectionInteraction.State](uibandselectioninteraction/state-swift.property.md)
+- [var state: UIBandSelectionInteraction.State](./state-swift.property.md)
   The current state of the interaction object.
-- [UIBandSelectionInteraction.State](uibandselectioninteraction/state-swift.enum.md)
+- [UIBandSelectionInteraction.State](./state-swift.enum.md)
   Constants that indicate whether a band selection interaction object is inactive or currently tracking an interaction.
 
 

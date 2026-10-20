@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a random node.
 
@@ -19,9 +20,14 @@ Creates a random node.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(identifier: String)](phaserandomnodedefinition/init(identifier:).md)
+### Creating a Node
+- [convenience init(identifier: String)](./init%28identifier%29.md)
   Creates a random node with the name you specify.
 
 

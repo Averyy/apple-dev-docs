@@ -1,7 +1,8 @@
 # TargetContentProvidingIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 An interface that provides a custom content identifier for an app intent.
 
@@ -20,38 +21,39 @@ protocol TargetContentProvidingIntent : AppIntent
 
 ## Mentions
 
-- [Directing app intents to your app’s scenes](directing-app-intents-to-your-apps-scenes.md)
-- [Configuring the runtime behavior of your app intents](configuring-the-runtime-behavior-of-your-app-intents.md)
+- [Directing app intents to your app’s scenes](./directing-app-intents-to-your-apps-scenes.md)
+- [Configuring the runtime behavior of your app intents](./configuring-the-runtime-behavior-of-your-app-intents.md)
 
 #### Overview
 
-In a SwiftUI app, adopt this protocol in an app intent that affects the contents of your app’s interface. The protocol provides an identifier string that you use to describe the app intent to your app. When the system launches your app, it looks for a scene that indicates it handles the specified identifier. If you’re implementing a UIKit app, use the [`UISceneAppIntent`](uisceneappintent.md) protocol to achieve the same behavior.
+In a SwiftUI app, adopt this protocol in an app intent that affects the contents of your app’s interface. The protocol provides an identifier string that you use to describe the app intent to your app. When the system launches your app, it looks for a scene that indicates it handles the specified identifier. If you’re implementing a UIKit app, use the [`UISceneAppIntent`](./uisceneappintent.md) protocol to achieve the same behavior.
 
-For more information about how to use app intents to configure your app’s interface, see [`Directing app intents to your app’s scenes`](directing-app-intents-to-your-apps-scenes.md).
+For more information about how to use app intents to configure your app’s interface, see [Directing app intents to your app’s scenes](./directing-app-intents-to-your-apps-scenes.md).
 
 ## Topics
 
 ### Getting the target content identifier
-- [var contentIdentifier: String](targetcontentprovidingintent/contentidentifier.md)
+- [var contentIdentifier: String](./targetcontentprovidingintent/contentidentifier.md)
   A custom string your app uses to identify the app intent.
 
 ## Relationships
 
 ### Inherits From
-- [AppIntent](appintent.md)
-- [PersistentlyIdentifiable](persistentlyidentifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppIntent](./appintent.md)
+- [PersistentlyIdentifiable](./persistentlyidentifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Inherited By
-- [UISceneAppIntent](uisceneappintent.md)
+- [UISceneAppIntent](./uisceneappintent.md)
 
 ## See Also
 
-- [Directing app intents to your app’s scenes](directing-app-intents-to-your-apps-scenes.md)
+### Scene support
+- [Directing app intents to your app’s scenes](./directing-app-intents-to-your-apps-scenes.md)
   Direct app intents to a specific SwiftUI or UIKit scene and use the app intent to configure the content of the scene.
-- [protocol UISceneAppIntent](uisceneappintent.md)
+- [protocol UISceneAppIntent](./uisceneappintent.md)
   An interface you use to direct an app intent to a specific scene in your UIKit app.
-- [protocol AppIntentSceneDelegate](appintentscenedelegate.md)
+- [protocol AppIntentSceneDelegate](./appintentscenedelegate.md)
   The interface a UIKit scene delegate uses to receive an app intent and configure the scene’s views.
 
 

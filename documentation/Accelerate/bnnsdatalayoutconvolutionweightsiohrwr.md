@@ -1,7 +1,8 @@
 # BNNSDataLayoutConvolutionWeightsIOHrWr
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents a 4D array of rotated convolution weights.
 
@@ -20,6 +21,10 @@ A constant that represents a 4D array of rotated convolution weights.
 var BNNSDataLayoutConvolutionWeightsIOHrWr: BNNSDataLayout { get }
 ```
 
+```c
+BNNSDataLayoutConvolutionWeightsIOHrWr
+```
+
 #### Discussion
 
 The value `(kx, ky, InChannel, OutChannel)` is at index:
@@ -35,15 +40,16 @@ The value `(kx, ky, InChannel, OutChannel)` is at index:
 
 ## See Also
 
-- [var BNNSDataLayoutConvolutionWeightsOIHW: BNNSDataLayout](bnnsdatalayoutconvolutionweightsoihw.md)
+### 4D Data Layouts
+- [var BNNSDataLayoutConvolutionWeightsOIHW: BNNSDataLayout](./bnnsdatalayoutconvolutionweightsoihw.md)
   A constant that represents a 4D array of convolution weights.
-- [var BNNSDataLayoutConvolutionWeightsOIHrWr: BNNSDataLayout](bnnsdatalayoutconvolutionweightsoihrwr.md)
+- [var BNNSDataLayoutConvolutionWeightsOIHrWr: BNNSDataLayout](./bnnsdatalayoutconvolutionweightsoihrwr.md)
   A constant that represents a 4D array of rotated convolution weights.
-- [var BNNSDataLayoutConvolutionWeightsOIHW_Pack32: BNNSDataLayout](bnnsdatalayoutconvolutionweightsoihw_pack32.md)
+- [var BNNSDataLayoutConvolutionWeightsOIHW_Pack32: BNNSDataLayout](./bnnsdatalayoutconvolutionweightsoihw_pack32.md)
   A constant that represents a 4D array of packed convolution weights with 32-output channel packing and 128-byte array address alignment.
-- [var BNNSDataLayout4DFirstMajor: BNNSDataLayout](bnnsdatalayout4dfirstmajor.md)
+- [var BNNSDataLayout4DFirstMajor: BNNSDataLayout](./bnnsdatalayout4dfirstmajor.md)
   A constant that represents a 4D first-major tensor.
-- [var BNNSDataLayout4DLastMajor: BNNSDataLayout](bnnsdatalayout4dlastmajor.md)
+- [var BNNSDataLayout4DLastMajor: BNNSDataLayout](./bnnsdatalayout4dlastmajor.md)
   A constant that represents a 4D last-major tensor.
 
 

@@ -1,7 +1,8 @@
 # cvMetalTextureCache
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Core Video Metal texture cache object to improve the performance of Core Image context renders that use Core Video pixel buffers.
 
@@ -17,6 +18,10 @@ A Core Video Metal texture cache object to improve the performance of Core Image
 
 ```swift
 static let cvMetalTextureCache: CIContextOption
+```
+
+```c
+extern CIContextOption const kCIContextCVMetalTextureCache;
 ```
 
 #### Discussion

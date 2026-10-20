@@ -1,7 +1,8 @@
 # confidence
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A confidence score that indicates the detected point’s accuracy.
 
@@ -19,9 +20,13 @@ A confidence score that indicates the detected point’s accuracy.
 var confidence: VNConfidence { get }
 ```
 
+```objc
+@property (readonly) VNConfidence confidence;
+```
+
 ## Mentions
 
-- [Detecting Human Body Poses in Images](detecting-human-body-poses-in-images.md)
+- [Detecting Human Body Poses in Images](../detecting-human-body-poses-in-images.md)
 
 
 ---

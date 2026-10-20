@@ -1,16 +1,19 @@
 # isVoIPAllowed()
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns whether voice chat is allowed to be used on the device.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
+
+> **Deprecated**: Use SharePlay instead
 
 ## Declaration
 
@@ -18,9 +21,13 @@ Returns whether voice chat is allowed to be used on the device.
 class func isVoIPAllowed() -> Bool
 ```
 
+```objc
++ (BOOL) isVoIPAllowed;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if voice chat is available to the application.
+[`true`](../../Swift/true.md) if voice chat is available to the application.
 
 #### Discussion
 

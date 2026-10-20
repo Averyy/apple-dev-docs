@@ -1,7 +1,8 @@
 # delete(withSubscriptionID:completionHandler:)
 
 **Framework**: CloudKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes a specific subscription and delivers the deleted subscription’s identifier to a completion handler.
 
@@ -11,7 +12,7 @@ Deletes a specific subscription and delivers the deleted subscription’s identi
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 - Swift 4.2+
 
@@ -29,7 +30,7 @@ The completion handler takes the following parameters:
 - The identifier of the deleted subscription, or `nil` if there’s an error.
 - An error if a problem occurs, or `nil` if CloudKit successfully deletes the subscription.
 
-For information on a more convenient way to delete subscriptions, see [`modifySubscriptions(saving:deleting:)`](ckdatabase/modifysubscriptions(saving:deleting:).md).
+For information on a more convenient way to delete subscriptions, see [`modifySubscriptions(saving:deleting:)`](./modifysubscriptions%28saving,deleting%29.md).
 
 ## Parameters
 
@@ -38,13 +39,14 @@ For information on a more convenient way to delete subscriptions, see [`modifySu
 
 ## See Also
 
-- [func modifySubscriptions(saving: [CKSubscription], deleting: [CKSubscription.ID]) async throws -> (saveResults: [CKSubscription.ID : Result<CKSubscription, any Error>], deleteResults: [CKSubscription.ID : Result<Void, any Error>])](ckdatabase/modifysubscriptions(saving:deleting:).md)
+### Modifying Subscriptions
+- [func modifySubscriptions(saving: [CKSubscription], deleting: [CKSubscription.ID]) async throws -> (saveResults: [CKSubscription.ID : Result<CKSubscription, any Error>], deleteResults: [CKSubscription.ID : Result<Void, any Error>])](./modifysubscriptions%28saving,deleting%29.md)
   Modifies the specified subscriptions and returns the results to an awaiting caller.
-- [func modifySubscriptions(saving: [CKSubscription], deleting: [CKSubscription.ID], completionHandler: (Result<(saveResults: [CKSubscription.ID : Result<CKSubscription, any Error>], deleteResults: [CKSubscription.ID : Result<Void, any Error>]), any Error>) -> Void)](ckdatabase/modifysubscriptions(saving:deleting:completionhandler:).md)
+- [func modifySubscriptions(saving: [CKSubscription], deleting: [CKSubscription.ID], completionHandler: (Result<(saveResults: [CKSubscription.ID : Result<CKSubscription, any Error>], deleteResults: [CKSubscription.ID : Result<Void, any Error>]), any Error>) -> Void)](./modifysubscriptions%28saving,deleting,completionhandler%29.md)
   Modifies the specified subscriptions and delivers the results to a completion handler.
-- [func save(CKSubscription, completionHandler: (CKSubscription?, (any Error)?) -> Void)](ckdatabase/save(_:completionhandler:)-9pona.md)
+- [func save(CKSubscription, completionHandler: (CKSubscription?, (any Error)?) -> Void)](./save%28_,completionhandler%29-9pona.md)
   Saves a specific subscription.
-- [func deleteSubscription(withID: CKSubscription.ID) async throws -> CKSubscription.ID](ckdatabase/deletesubscription(withid:).md)
+- [func deleteSubscription(withID: CKSubscription.ID) async throws -> CKSubscription.ID](./deletesubscription%28withid%29.md)
   Deletes a specific subscription and returns the deleted subscription’s identifier to an awaiting caller.
 
 

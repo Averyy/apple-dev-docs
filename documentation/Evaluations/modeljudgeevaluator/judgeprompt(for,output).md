@@ -1,7 +1,8 @@
 # judgePrompt(for:output:)
 
 **Framework**: Evaluations  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Builds and returns the full judge prompt for inspection, debugging, or logging.
 
@@ -36,7 +37,8 @@ Use this to inspect exactly what the model judge receives for a given input and 
 
 ## See Also
 
-- [static var defaultInstructions: String](modeljudgeevaluator/defaultinstructions.md)
+### Configuring the judge prompt
+- [static var defaultInstructions: String](./defaultinstructions.md)
   The default system instructions the model uses when no custom instructions are provided.
 
 

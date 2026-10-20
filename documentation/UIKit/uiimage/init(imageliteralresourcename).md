@@ -1,7 +1,8 @@
 # init(imageLiteralResourceName:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns the image object for the specified resource.
 
@@ -9,9 +10,9 @@ Returns the image object for the specified resource.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 2.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -29,30 +30,31 @@ The image object.
 
 ## See Also
 
-- [Providing images for different appearances](providing-images-for-different-appearances.md)
+### Loading and caching images
+- [Providing images for different appearances](../providing-images-for-different-appearances.md)
   Supply image resources appropriate for light and dark appearances and for high-contrast environments.
-- [Configuring and displaying symbol images in your UI](configuring-and-displaying-symbol-images-in-your-ui.md)
+- [Configuring and displaying symbol images in your UI](../configuring-and-displaying-symbol-images-in-your-ui.md)
   Create scalable images that integrate with your app’s text, and adjust the appearance of those images dynamically.
-- [Creating custom symbols](../technologyoverviews/custom-sf-symbols.md)
+- [Creating custom symbols](../../TechnologyOverviews/custom-sf-symbols.md)
   Design a symbol image with the same behavior as system-provided symbols.
-- [init?(named: String, in: Bundle?, compatibleWith: UITraitCollection?)](uiimage/init(named:in:compatiblewith:).md)
+- [init?(named: String, in: Bundle?, compatibleWith: UITraitCollection?)](./init%28named,in,compatiblewith%29.md)
   Creates an image object using the named image asset that’s compatible with the specified trait collection.
-- [init?(named: String, in: Bundle?, with: UIImage.Configuration?)](uiimage/init(named:in:with:).md)
+- [init?(named: String, in: Bundle?, with: UIImage.Configuration?)](./init%28named,in,with%29.md)
   Creates an image by using the named image asset that’s compatible with the configuration you specify.
-- [convenience init?(named: String, in: Bundle?, variableValue: Double, configuration: UIImage.Configuration?)](uiimage/init(named:in:variablevalue:configuration:).md)
+- [convenience init?(named: String, in: Bundle?, variableValue: Double, configuration: UIImage.Configuration?)](./init%28named,in,variablevalue,configuration%29.md)
   Creates an image by using the name, configuration, and variable value you specify.
-- [init?(named: String)](uiimage/init(named:).md)
+- [init?(named: String)](./init%28named%29.md)
   Creates an image object from the specified named asset.
-- [init?(systemName: String, withConfiguration: UIImage.Configuration?)](uiimage/init(systemname:withconfiguration:).md)
+- [init?(systemName: String, withConfiguration: UIImage.Configuration?)](./init%28systemname,withconfiguration%29.md)
   Creates an image object that contains a system symbol image with the specified configuration.
-- [convenience init?(systemName: String, variableValue: Double, configuration: UIImage.Configuration?)](uiimage/init(systemname:variablevalue:configuration:).md)
+- [convenience init?(systemName: String, variableValue: Double, configuration: UIImage.Configuration?)](./init%28systemname,variablevalue,configuration%29.md)
   Creates an image object that contains a system symbol image with the configuration and variable value you specify.
-- [init?(systemName: String, compatibleWith: UITraitCollection?)](uiimage/init(systemname:compatiblewith:).md)
+- [init?(systemName: String, compatibleWith: UITraitCollection?)](./init%28systemname,compatiblewith%29.md)
   Creates an image object that contains a system symbol image appropriate for the specified traits.
-- [init?(systemName: String)](uiimage/init(systemname:).md)
+- [init?(systemName: String)](./init%28systemname%29.md)
   Creates an image object that contains a system symbol image.
-- [convenience init(resource: ImageResource)](uiimage/init(resource:).md)
-- [Building high-performance lists and collection views](building-high-performance-lists-and-collection-views.md)
+- [convenience init(resource: ImageResource)](./init%28resource%29.md)
+- [Building high-performance lists and collection views](../building-high-performance-lists-and-collection-views.md)
   Improve the performance of lists and collections in your app with prefetching and image preparation.
 
 

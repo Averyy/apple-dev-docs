@@ -1,7 +1,8 @@
 # EventText
 
 **Framework**: WeatherKit REST API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The official text describing a severe weather event from the agency.
 
@@ -10,7 +11,7 @@ The official text describing a severe weather event from the agency.
 
 ## Declaration
 
-```swift
+```
 object EventText
 ```
 
@@ -21,7 +22,8 @@ object EventText
 
 ## See Also
 
-- [type Certainty](certainty.md)
+### Obtaining event information
+- [type Certainty](./certainty.md)
   How likely the event is to occur.
 
 

@@ -1,7 +1,8 @@
 # init(bundle:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(bundle path: String)
+```
+
+```objc
+- (instancetype) initWithBundle:(NSString *) path;
 ```
 
 

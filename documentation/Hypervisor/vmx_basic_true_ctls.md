@@ -1,17 +1,22 @@
 # VMX_BASIC_TRUE_CTLS
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 This bit field, in the value returned by the IA32_VMX_BASIC model specific register, determines if it’s possible to disable any VMX controls.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var VMX_BASIC_TRUE_CTLS: UInt { get }
+```
+
+```c
+VMX_BASIC_TRUE_CTLS
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: HealthKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a query descriptor that reads locations from the provided workout route sample.
 
@@ -10,7 +11,7 @@ Creates a query descriptor that reads locations from the provided workout route 
 - iPadOS 15.4+
 - Mac Catalyst 15.4+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.5+
 
 ## Declaration

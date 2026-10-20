@@ -1,7 +1,8 @@
 # MTLFunctionType.intersection
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A function you can use in an intersection function table.
 
@@ -19,17 +20,23 @@ A function you can use in an intersection function table.
 case intersection
 ```
 
+```c
+MTLFunctionTypeIntersection
+```
+
 ## See Also
 
-- [protocol MTLIntersectionFunctionTable](mtlintersectionfunctiontable.md)
+### Related Documentation
+- [protocol MTLIntersectionFunctionTable](../mtlintersectionfunctiontable.md)
   A table of intersection functions that Metal calls to perform ray-tracing intersection tests.
-- [MTLFunctionType.vertex](mtlfunctiontype/vertex.md)
+### Function types
+- [MTLFunctionType.vertex](./vertex.md)
   A vertex function you can use in a render pipeline state object.
-- [MTLFunctionType.fragment](mtlfunctiontype/fragment.md)
+- [MTLFunctionType.fragment](./fragment.md)
   A fragment function you can use in a render pipeline state object.
-- [MTLFunctionType.kernel](mtlfunctiontype/kernel.md)
+- [MTLFunctionType.kernel](./kernel.md)
   A kernel you can use in a compute pipeline state object.
-- [MTLFunctionType.visible](mtlfunctiontype/visible.md)
+- [MTLFunctionType.visible](./visible.md)
   A function you can use in a visible function table.
 
 

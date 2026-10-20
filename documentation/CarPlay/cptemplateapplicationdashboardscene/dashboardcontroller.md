@@ -1,7 +1,8 @@
 # dashboardController
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller that manages the dashboard scene’s shortcut buttons.
 
@@ -16,13 +17,18 @@ The controller that manages the dashboard scene’s shortcut buttons.
 var dashboardController: CPDashboardController { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nonnull) CPDashboardController * dashboardController;
+```
+
 #### Discussion
 
 Use this property to access the controller CarPlay creates when it connects your navigation app’s dashboard scene. You use this controller to manage the shortcut buttons CarPlay displays in the dashboard when there’s no active navigation session.
 
 ## See Also
 
-- [class CPDashboardController](cpdashboardcontroller.md)
+### Accessing the Dashboard Controller
+- [class CPDashboardController](../cpdashboardcontroller.md)
   A controller that provides shortcut buttons for the CarPlay Dashboard.
 
 

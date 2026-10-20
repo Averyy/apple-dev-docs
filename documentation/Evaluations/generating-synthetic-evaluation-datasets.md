@@ -1,6 +1,7 @@
 # Generating synthetic datasets
 
-**Framework**: Evaluations
+**Framework**: Evaluations  
+**Role**: Article
 
 Expand a small set of manually written evaluation samples into a larger dataset.
 
@@ -8,15 +9,15 @@ Expand a small set of manually written evaluation samples into a larger dataset.
 
 When you create evaluation samples manually, you get tight control over quality, but the process is time-consuming. Use a model to synthetically produce a much larger dataset from a small initial set, which gives you broader coverage for testing consistency and quality across inputs.
 
-Each [`ModelSample`](modelsample.md) pairs a prompt the model receives with an optional expected output you evaluate against.
+Each [`ModelSample`](./modelsample.md) pairs a prompt the model receives with an optional expected output you evaluate against.
 
 The framework adds a `makeSamples(_:targetCount:sessionProvider:validator:)` method to any array of `ModelSample` values. Call this method with a prompt that describes what to generate, and it returns new samples as an asynchronous stream.
 
-To see a command-line generator that expands a curated dataset for a real feature, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
+To see a command-line generator that expands a curated dataset for a real feature, see [Book Tracker: Using Evaluations to evaluate an intelligent feature](./book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
 
-#### Create Your Initial Dataset
+#### Create your initial dataset
 
-Start by creating your initial dataset of samples. For guidance on dataset design principles, including golden sets, user profiles, and challenge cases, see [`Designing datasets to test your feature`](designing-evaluation-datasets.md). Include an optional *expected* value as a benchmark if your evaluation compares model output against a known answer. For evaluations that score output without a reference answer, such as model-judge assessments of tone or fluency, omit the expected value and generate prompt-only samples.
+Start by creating your initial dataset of samples. For guidance on dataset design principles, including golden sets, user profiles, and challenge cases, see [Designing datasets to test your feature](./designing-evaluation-datasets.md). Include an optional *expected* value as a benchmark if your evaluation compares model output against a known answer. For evaluations that score output without a reference answer, such as model-judge assessments of tone or fluency, omit the expected value and generate prompt-only samples.
 
 This example builds an initial dataset for an intelligence-powered feature that converts natural-language requests into structured task items, extracting a title, due date, category, and urgency level from each free text input:
 
@@ -77,7 +78,7 @@ let dataset: [ModelSample<TaskItem>] = [
 
 This initial dataset covers all five `TaskCategory` cases, includes both urgent and non-urgent tasks, and mixes items with and without due dates.
 
-#### Generate Synthetic Samples
+#### Generate synthetic samples
 
 Create additional samples by calling `makeSamples(_:targetCount:sessionProvider:validator:)` with a prompt that describes the data you want to generate. For example:
 
@@ -92,7 +93,7 @@ let syntheticGenerationPrompt = Prompt("""
     """)
 ```
 
-The method returns an [`AsyncThrowingStream`](https://developer.apple.com/documentation/swift/asyncthrowingstream) that yields each new sample as the model generates it:
+The method returns an [`AsyncThrowingStream`](../Swift/asyncthrowingstream.md) that yields each new sample as the model generates it:
 
 ```swift
 var expanded: [ModelSample<TaskItem>] = []
@@ -109,7 +110,7 @@ The `targetCount` parameter sets the total size of the resulting dataset, includ
 
 > ❗ **Important**: If you generate samples from a non-test target, such as a command-line tool that writes the dataset to disk, set “Enable Testing Search Paths” (`ENABLE_TESTING_SEARCH_PATHS`) to `YES` and add `$(DEVELOPER_DIR)/..` to “Runpath Search Paths” (`LD_RUNPATH_SEARCH_PATHS`).
 
-#### Validate the Synthetic Samples
+#### Validate the synthetic samples
 
 Use a combination of programmatic validation and manual review to catch errors, duplicates, or distribution mismatches in synthetic data before relying on it for evaluation.
 
@@ -152,7 +153,7 @@ When you manually review the output, look for:
 - **Category imbalance**: Watch for the model representing one category more than the others.
 - **Semantic duplicates**: The generator removes identical prompts automatically, but keeps semantically similar prompts with different wording for example, “Schedule a dentist visit” and “Book a dental appointment”. Decide whether these near-duplicates help or hurt your evaluation: varied phrasings test robustness, but they can also skew your distribution if many cluster under the same category.
 
-#### Customize the Generation Process
+#### Customize the generation process
 
 The `makeSamples(_:targetCount:sessionProvider:validator:)` method handles prompt construction, deduplication, and batch grouping for you. Pass a `sessionProvider` closure to control which model and instructions the generator uses:
 
@@ -181,9 +182,9 @@ for try await sample in dataset.makeSamples(
 
 The generator produces samples in batches of up to ten per model call. Before each batch, the generator selects a subset of your existing samples as examples in the prompt. The *sampling strategy* controls which examples appear in each model call.
 
-The `makeSamples(_:targetCount:sessionProvider:validator:)` method always uses the default [`SampleGenerator.SamplingStrategy.random(retries:)`](samplegenerator/samplingstrategy-swift.enum/random(retries:).md) strategy, which shuffles and selects a random subset of existing samples as examples for each batch. Change the sampling strategy by creating a [`SampleGenerator`](samplegenerator.md) and set the strategy to [`SampleGenerator.SamplingStrategy.slidingWindow`](samplegenerator/samplingstrategy-swift.enum/slidingwindow.md), which steps through your samples in order so every sample gets a turn as an example. Try both and compare the output to see which works better for your data.
+The `makeSamples(_:targetCount:sessionProvider:validator:)` method always uses the default [`SampleGenerator.SamplingStrategy.random(retries:)`](./samplegenerator/samplingstrategy-swift.enum/random%28retries%29.md) strategy, which shuffles and selects a random subset of existing samples as examples for each batch. Change the sampling strategy by creating a [`SampleGenerator`](./samplegenerator.md) and set the strategy to [`SampleGenerator.SamplingStrategy.slidingWindow`](./samplegenerator/samplingstrategy-swift.enum/slidingwindow.md), which steps through your samples in order so every sample gets a turn as an example. Try both and compare the output to see which works better for your data.
 
-When you pass a validator to `makeSamples(_:targetCount:sessionProvider:validator:)`, the method silently discards any samples your validator closure rejects. Create a [`SampleGenerator`](samplegenerator.md) directly to access [`invalidSamples`](samplegenerator/invalidsamples.md) after generation completes:
+When you pass a validator to `makeSamples(_:targetCount:sessionProvider:validator:)`, the method silently discards any samples your validator closure rejects. Create a [`SampleGenerator`](./samplegenerator.md) directly to access [`invalidSamples`](./samplegenerator/invalidsamples.md) after generation completes:
 
 ```swift
 let generator = SampleGenerator(
@@ -209,19 +210,20 @@ for try await sample in generator.run() {
 let rejected = await generator.invalidSamples
 ```
 
-#### Improve Your Synthetic Generation Results
+#### Improve your synthetic generation results
 
-The quality of your generated samples depends on the seeds you start with, the prompts you use to expand them, and how you validate the output. For deeper guidance on each of these factors, see [`Designing datasets to test your feature`](designing-evaluation-datasets.md).
+The quality of your generated samples depends on the seeds you start with, the prompts you use to expand them, and how you validate the output. For deeper guidance on each of these factors, see [Designing datasets to test your feature](./designing-evaluation-datasets.md).
 
 ## See Also
 
-- [Designing datasets to test your feature](designing-evaluation-datasets.md)
+### Datasets
+- [Designing datasets to test your feature](./designing-evaluation-datasets.md)
   Build categorized test datasets that reflect the full range of real-world use of your feature.
-- [struct ModelSample](modelsample.md)
+- [struct ModelSample](./modelsample.md)
   A general-purpose language model evaluation sample.
-- [protocol Loader](loader.md)
+- [protocol Loader](./loader.md)
   A protocol for types that supply a dataset for evaluation.
-- [actor SampleGenerator](samplegenerator.md)
+- [actor SampleGenerator](./samplegenerator.md)
   An actor that generates evaluation samples using a language model.
 
 

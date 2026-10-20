@@ -1,7 +1,8 @@
 # AVAudioUnitDistortionPreset
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that represent preset audio distortions.
 
@@ -10,7 +11,7 @@ Constants that represent preset audio distortions.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,71 +21,76 @@ Constants that represent preset audio distortions.
 enum AVAudioUnitDistortionPreset
 ```
 
+```c
+enum AVAudioUnitDistortionPreset : NSInteger;
+```
+
 ## Topics
 
 ### Creating a distortion preset
-- [init?(rawValue: Int)](avaudiounitdistortionpreset/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avaudiounitdistortionpreset/init%28rawvalue%29.md)
 ### Choosing a drum preset
-- [AVAudioUnitDistortionPreset.drumsBitBrush](avaudiounitdistortionpreset/drumsbitbrush.md)
+- [AVAudioUnitDistortionPreset.drumsBitBrush](./avaudiounitdistortionpreset/drumsbitbrush.md)
   A preset that represents a bit brush drums distortion.
-- [AVAudioUnitDistortionPreset.drumsBufferBeats](avaudiounitdistortionpreset/drumsbufferbeats.md)
+- [AVAudioUnitDistortionPreset.drumsBufferBeats](./avaudiounitdistortionpreset/drumsbufferbeats.md)
   A preset that represents a buffer beat drums distortion.
-- [AVAudioUnitDistortionPreset.drumsLoFi](avaudiounitdistortionpreset/drumslofi.md)
+- [AVAudioUnitDistortionPreset.drumsLoFi](./avaudiounitdistortionpreset/drumslofi.md)
   A preset that represents a low fidelity drums distortion.
 ### Choosing a multi-effect preset
-- [AVAudioUnitDistortionPreset.multiBrokenSpeaker](avaudiounitdistortionpreset/multibrokenspeaker.md)
+- [AVAudioUnitDistortionPreset.multiBrokenSpeaker](./avaudiounitdistortionpreset/multibrokenspeaker.md)
   A preset that represents a broken speaker distortion.
-- [AVAudioUnitDistortionPreset.multiCellphoneConcert](avaudiounitdistortionpreset/multicellphoneconcert.md)
+- [AVAudioUnitDistortionPreset.multiCellphoneConcert](./avaudiounitdistortionpreset/multicellphoneconcert.md)
   A preset that represents a cellphone concert distortion.
-- [AVAudioUnitDistortionPreset.multiDecimated1](avaudiounitdistortionpreset/multidecimated1.md)
+- [AVAudioUnitDistortionPreset.multiDecimated1](./avaudiounitdistortionpreset/multidecimated1.md)
   A preset that represents a variant of the decimated distortion.
-- [AVAudioUnitDistortionPreset.multiDecimated2](avaudiounitdistortionpreset/multidecimated2.md)
+- [AVAudioUnitDistortionPreset.multiDecimated2](./avaudiounitdistortionpreset/multidecimated2.md)
   A preset that represents a variant of the decimated distortion.
-- [AVAudioUnitDistortionPreset.multiDecimated3](avaudiounitdistortionpreset/multidecimated3.md)
+- [AVAudioUnitDistortionPreset.multiDecimated3](./avaudiounitdistortionpreset/multidecimated3.md)
   A preset that represents a variant of the decimated distortion.
-- [AVAudioUnitDistortionPreset.multiDecimated4](avaudiounitdistortionpreset/multidecimated4.md)
+- [AVAudioUnitDistortionPreset.multiDecimated4](./avaudiounitdistortionpreset/multidecimated4.md)
   A preset that represents a variant of the decimated distortion.
-- [AVAudioUnitDistortionPreset.multiDistortedFunk](avaudiounitdistortionpreset/multidistortedfunk.md)
+- [AVAudioUnitDistortionPreset.multiDistortedFunk](./avaudiounitdistortionpreset/multidistortedfunk.md)
   A preset that represents a distorted funk distortion.
-- [AVAudioUnitDistortionPreset.multiDistortedCubed](avaudiounitdistortionpreset/multidistortedcubed.md)
+- [AVAudioUnitDistortionPreset.multiDistortedCubed](./avaudiounitdistortionpreset/multidistortedcubed.md)
   A preset that represents a distorted cubed distortion.
-- [AVAudioUnitDistortionPreset.multiDistortedSquared](avaudiounitdistortionpreset/multidistortedsquared.md)
+- [AVAudioUnitDistortionPreset.multiDistortedSquared](./avaudiounitdistortionpreset/multidistortedsquared.md)
   A preset that represents a distorted squared distortion.
-- [AVAudioUnitDistortionPreset.multiEcho1](avaudiounitdistortionpreset/multiecho1.md)
+- [AVAudioUnitDistortionPreset.multiEcho1](./avaudiounitdistortionpreset/multiecho1.md)
   A preset that represents a variant of an echo distortion.
-- [AVAudioUnitDistortionPreset.multiEcho2](avaudiounitdistortionpreset/multiecho2.md)
+- [AVAudioUnitDistortionPreset.multiEcho2](./avaudiounitdistortionpreset/multiecho2.md)
   A preset that represents a variant of an echo distortion.
-- [AVAudioUnitDistortionPreset.multiEchoTight1](avaudiounitdistortionpreset/multiechotight1.md)
+- [AVAudioUnitDistortionPreset.multiEchoTight1](./avaudiounitdistortionpreset/multiechotight1.md)
   A preset that represents a variant of a tight echo distortion.
-- [AVAudioUnitDistortionPreset.multiEchoTight2](avaudiounitdistortionpreset/multiechotight2.md)
+- [AVAudioUnitDistortionPreset.multiEchoTight2](./avaudiounitdistortionpreset/multiechotight2.md)
   A preset that represents a variant of a tight echo distortion.
-- [AVAudioUnitDistortionPreset.multiEverythingIsBroken](avaudiounitdistortionpreset/multieverythingisbroken.md)
+- [AVAudioUnitDistortionPreset.multiEverythingIsBroken](./avaudiounitdistortionpreset/multieverythingisbroken.md)
   A preset that represents an everything-is-broken distortion.
 ### Choosing a speech preset
-- [AVAudioUnitDistortionPreset.speechAlienChatter](avaudiounitdistortionpreset/speechalienchatter.md)
+- [AVAudioUnitDistortionPreset.speechAlienChatter](./avaudiounitdistortionpreset/speechalienchatter.md)
   A preset that represents an alien chatter distortion.
-- [AVAudioUnitDistortionPreset.speechCosmicInterference](avaudiounitdistortionpreset/speechcosmicinterference.md)
+- [AVAudioUnitDistortionPreset.speechCosmicInterference](./avaudiounitdistortionpreset/speechcosmicinterference.md)
   A preset that represents a cosmic interference distortion.
-- [AVAudioUnitDistortionPreset.speechGoldenPi](avaudiounitdistortionpreset/speechgoldenpi.md)
+- [AVAudioUnitDistortionPreset.speechGoldenPi](./avaudiounitdistortionpreset/speechgoldenpi.md)
   A preset that represents a golden pi distortion.
-- [AVAudioUnitDistortionPreset.speechRadioTower](avaudiounitdistortionpreset/speechradiotower.md)
+- [AVAudioUnitDistortionPreset.speechRadioTower](./avaudiounitdistortionpreset/speechradiotower.md)
   A preset that represents a radio tower distortion.
-- [AVAudioUnitDistortionPreset.speechWaves](avaudiounitdistortionpreset/speechwaves.md)
+- [AVAudioUnitDistortionPreset.speechWaves](./avaudiounitdistortionpreset/speechwaves.md)
   A preset that represents a speech wave distortion.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func loadFactoryPreset(AVAudioUnitDistortionPreset)](avaudiounitdistortion/loadfactorypreset(_:).md)
+### Configuring the distortion
+- [func loadFactoryPreset(AVAudioUnitDistortionPreset)](./avaudiounitdistortion/loadfactorypreset%28_%29.md)
   Configures the audio distortion unit by loading a distortion preset.
 
 

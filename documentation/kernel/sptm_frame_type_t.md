@@ -1,14 +1,15 @@
 # sptm_frame_type_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 typedef uint8_t sptm_frame_type_t;
 ```
 

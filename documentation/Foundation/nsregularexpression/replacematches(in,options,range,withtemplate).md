@@ -1,7 +1,8 @@
 # replaceMatches(in:options:range:withTemplate:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces regular expression matches within the mutable string using the template string.
 
@@ -20,24 +21,29 @@ Replaces regular expression matches within the mutable string using the template
 func replaceMatches(in string: NSMutableString, options: NSRegularExpression.MatchingOptions = [], range: NSRange, withTemplate templ: String) -> Int
 ```
 
+```objc
+- (NSUInteger) replaceMatchesInString:(NSMutableString *) string options:(NSMatchingOptions) options range:(NSRange) range withTemplate:(NSString *) templ;
+```
+
 #### Return Value
 
 The number of matches.
 
 #### Discussion
 
-See [`Flag Options`](nsregularexpression#Flag-Options.md) for the format of `templ`.
+See [Flag Options](../nsregularexpression.md#Flag-Options) for the format of `templ`.
 
 ## Parameters
 
 - `string`: The mutable string to search and replace values within.
-- `options`: The matching options to use. See [`NSRegularExpression.MatchingOptions`](nsregularexpression/matchingoptions.md) for possible values.
+- `options`: The matching options to use. See [`NSRegularExpression.MatchingOptions`](./matchingoptions.md) for possible values.
 - `range`: The range of the string to search.
 - `templ`: The substitution template used when replacing matching instances.
 
 ## See Also
 
-- [func stringByReplacingMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange, withTemplate: String) -> String](nsregularexpression/stringbyreplacingmatches(in:options:range:withtemplate:).md)
+### Replacing Strings Using Regular Expressions
+- [func stringByReplacingMatches(in: String, options: NSRegularExpression.MatchingOptions, range: NSRange, withTemplate: String) -> String](./stringbyreplacingmatches%28in,options,range,withtemplate%29.md)
   Returns a new string containing matching regular expressions replaced with the template string.
 
 

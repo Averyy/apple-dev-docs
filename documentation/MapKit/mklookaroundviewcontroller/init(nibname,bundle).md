@@ -1,7 +1,8 @@
 # init(nibName:bundle:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new LookAround view controller from the specified nib and bundle.
 
@@ -18,16 +19,21 @@ Creates a new LookAround view controller from the specified nib and bundle.
 init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
 ```
 
+```objc
+- (instancetype) initWithNibName:(NSString *) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil;
+```
+
 ## Parameters
 
 - `nibNameOrNil`: The name of the nib file.
-- `nibBundleOrNil`: The [`Bundle`](https://developer.apple.com/documentation/foundation/bundle) file.
+- `nibBundleOrNil`: The [`Bundle`](../../Foundation/bundle.md) file.
 
 ## See Also
 
-- [init?(coder: NSCoder)](mklookaroundviewcontroller/init(coder:).md)
+### Creating a LookAround controller
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a new LookAround view controller object from a coder object provided by a storyboard or nib file.
-- [init(scene: MKLookAroundScene)](mklookaroundviewcontroller/init(scene:).md)
+- [init(scene: MKLookAroundScene)](./init%28scene%29.md)
   Creates a new LookAround view controller with the specified scene.
 
 

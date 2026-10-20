@@ -1,7 +1,8 @@
 # init(titleVariants:subtitleVariants:image:primaryAction:secondaryAction:duration:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a navigation alert.
 
@@ -16,9 +17,13 @@ Creates a navigation alert.
 init(titleVariants: [String], subtitleVariants: [String]?, image: UIImage?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)
 ```
 
+```objc
+- (instancetype) initWithTitleVariants:(NSArray<NSString *> *) titleVariants subtitleVariants:(NSArray<NSString *> *) subtitleVariants image:(UIImage *) image primaryAction:(CPAlertAction *) primaryAction secondaryAction:(CPAlertAction *) secondaryAction duration:(NSTimeInterval) duration;
+```
+
 #### Discussion
 
-Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](https://developer.apple.com/documentation/uikit/uiimageasset) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md) property.
+Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property.
 
 CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
 
@@ -33,7 +38,8 @@ CarPlay doesn’t support animated images. If you provide an animated image, Car
 
 ## See Also
 
-- [init(titleVariants: [String], subtitleVariants: [String]?, imageSet: CPImageSet?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)](cpnavigationalert/init(titlevariants:subtitlevariants:imageset:primaryaction:secondaryaction:duration:).md)
+### Creating a Navigation Alert
+- [init(titleVariants: [String], subtitleVariants: [String]?, imageSet: CPImageSet?, primaryAction: CPAlertAction, secondaryAction: CPAlertAction?, duration: TimeInterval)](./init%28titlevariants,subtitlevariants,imageset,primaryaction,secondaryaction,duration%29.md)
   Creates a navigation alert.
 
 

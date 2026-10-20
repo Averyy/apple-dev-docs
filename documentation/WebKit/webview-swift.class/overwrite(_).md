@@ -1,15 +1,20 @@
 # overWrite(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func overWrite(_ sender: Any?)
+```
+
+```objc
+- (void) overWrite:(id) sender;
 ```
 
 

@@ -1,7 +1,8 @@
 # aeBuildSyntaxNoKey
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A keyword was missing from a descriptor.
 

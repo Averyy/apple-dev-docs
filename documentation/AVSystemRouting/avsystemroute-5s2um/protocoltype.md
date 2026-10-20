@@ -1,7 +1,8 @@
 # protocolType
 
 **Framework**: AVSystemRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The communication protocol the active route uses.
 

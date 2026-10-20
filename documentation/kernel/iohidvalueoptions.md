@@ -1,7 +1,8 @@
 # IOHIDValueOptions
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Describes options for gathering element values.
 
@@ -10,7 +11,7 @@ Describes options for gathering element values.
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOHIDValueOptions;
 ```
 
@@ -21,14 +22,16 @@ typedef uint32_t IOHIDValueOptions;
 
 ## See Also
 
-- [IOHIDElementCollectionType](iohidelementcollectiontype.md)
+### HID Elements
+- [IOHIDElementCollectionType](./iohidelementcollectiontype.md)
   Describes different types of HID collections.
-- [IOHIDElementCommitDirection](iohidelementcommitdirection.md)
-- [IOHIDElementCookie](iohidelementcookie.md)
+- [IOHIDElementCommitDirection](./iohidelementcommitdirection.md)
+- [IOHIDElementCookie](./iohidelementcookie.md)
   Abstract data type used as a unique identifier for an element.
-- [IOHIDElementFlags](iohidelementflags.md)
-- [IOHIDElementType](iohidelementtype.md)
+- [IOHIDElementFlags](./iohidelementflags.md)
+- [IOHIDElementType](./iohidelementtype.md)
   Describes different types of HID elements.
+### Related Documentation
 - [IOHIDValueOptions](../iokit/iohidvalueoptions.md)
   Describes options for gathering element values.
 

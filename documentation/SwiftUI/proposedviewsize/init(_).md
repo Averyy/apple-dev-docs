@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new proposed size from a specified size.
 
@@ -26,7 +27,8 @@ init(_ size: CGSize)
 
 ## See Also
 
-- [init(width: CGFloat?, height: CGFloat?)](proposedviewsize/init(width:height:).md)
+### Creating a custom size proposal
+- [init(width: CGFloat?, height: CGFloat?)](./init%28width,height%29.md)
   Creates a new proposed size using the specified width and height.
 
 

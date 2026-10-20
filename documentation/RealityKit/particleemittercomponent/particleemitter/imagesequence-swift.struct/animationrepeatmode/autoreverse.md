@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.ParticleEmitter.ImageSequence.AnimationRepeatMode.autoReverse
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The image sequence plays through and then plays in reverse order and then repeats.
 

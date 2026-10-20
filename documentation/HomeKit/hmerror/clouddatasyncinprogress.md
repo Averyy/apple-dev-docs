@@ -1,7 +1,8 @@
 # cloudDataSyncInProgress
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An error indicating a data synchronization operation is in progress.
 
@@ -21,7 +22,8 @@ static var cloudDataSyncInProgress: HMError.Code { get }
 
 ## See Also
 
-- [static var keychainSyncNotEnabled: HMError.Code](hmerror/keychainsyncnotenabled.md)
+### Detecting synchronization errors
+- [static var keychainSyncNotEnabled: HMError.Code](./keychainsyncnotenabled.md)
   An error indicating Keychain syncing is not enabled for the user.
 
 

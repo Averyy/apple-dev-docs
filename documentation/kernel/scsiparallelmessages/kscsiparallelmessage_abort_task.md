@@ -1,14 +1,15 @@
 # kSCSIParallelMessage_ABORT_TASK
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kSCSIParallelMessage_ABORT_TASK = 0x0D
 ```
 

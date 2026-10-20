@@ -1,7 +1,8 @@
 # UNNotificationContentExtensionResponseOption
 
 **Framework**: User Notifications UI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating the preferred response to a notification.
 
@@ -18,31 +19,36 @@ Constants indicating the preferred response to a notification.
 enum UNNotificationContentExtensionResponseOption
 ```
 
+```c
+enum UNNotificationContentExtensionResponseOption : NSUInteger;
+```
+
 ## Topics
 
 ### Response Options
-- [UNNotificationContentExtensionResponseOption.doNotDismiss](unnotificationcontentextensionresponseoption/donotdismiss.md)
+- [UNNotificationContentExtensionResponseOption.doNotDismiss](./unnotificationcontentextensionresponseoption/donotdismiss.md)
   Don’t dismiss the notification interface.
-- [UNNotificationContentExtensionResponseOption.dismiss](unnotificationcontentextensionresponseoption/dismiss.md)
+- [UNNotificationContentExtensionResponseOption.dismiss](./unnotificationcontentextensionresponseoption/dismiss.md)
   Dismiss the notification interface.
-- [UNNotificationContentExtensionResponseOption.dismissAndForwardAction](unnotificationcontentextensionresponseoption/dismissandforwardaction.md)
+- [UNNotificationContentExtensionResponseOption.dismissAndForwardAction](./unnotificationcontentextensionresponseoption/dismissandforwardaction.md)
   Dismiss the notification interface and forward the notification to the app.
 ### Initializers
-- [init?(rawValue: UInt)](unnotificationcontentextensionresponseoption/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./unnotificationcontentextensionresponseoption/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func didReceive(UNNotificationResponse, completionHandler: (UNNotificationContentExtensionResponseOption) -> Void)](unnotificationcontentextension/didreceive(_:completionhandler:).md)
+### Handling Custom Actions
+- [func didReceive(UNNotificationResponse, completionHandler: (UNNotificationContentExtensionResponseOption) -> Void)](./unnotificationcontentextension/didreceive%28_,completionhandler%29.md)
   Handles a notification action selected by the user.
 
 

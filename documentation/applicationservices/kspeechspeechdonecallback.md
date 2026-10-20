@@ -1,7 +1,8 @@
 # kSpeechSpeechDoneCallBack
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Set the callback function to be called when the Speech Synthesis Manager has finished generating speech on the speech channel.
 
@@ -14,11 +15,15 @@ Set the callback function to be called when the Speech Synthesis Manager has fin
 let kSpeechSpeechDoneCallBack: CFString
 ```
 
+```c
+const CFStringRef kSpeechSpeechDoneCallBack;
+```
+
 #### Discussion
 
-The value associated with this property is `CFNumber` object whose value is a pointer to an application-defined speech-done callback function, whose syntax is described in [`SpeechDoneProcPtr`](speechdoneprocptr.md). Passing `NULL` for the value of this property disables the speech-done callback function.
+The value associated with this property is `CFNumber` object whose value is a pointer to an application-defined speech-done callback function, whose syntax is described in [`SpeechDoneProcPtr`](./speechdoneprocptr.md). Passing `NULL` for the value of this property disables the speech-done callback function.
 
-This property works with the [`SetSpeechProperty(_:_:_:)`](1459256-setspeechproperty.md) function.
+This property works with the [`SetSpeechProperty(_:_:_:)`](./api-1459256-setspeechproperty.md) function.
 
 
 ---

@@ -1,7 +1,8 @@
 # GameCenterLeaderboardVersionV2.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those you can operate on.
 
@@ -10,7 +11,7 @@ The relationships you include in the request and those you can operate on.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardVersionV2.Relationships
 ```
 
@@ -22,9 +23,9 @@ object GameCenterLeaderboardVersionV2.Relationships
 ## Topics
 
 ### Dictionaries
-- [object GameCenterLeaderboardVersionV2.Relationships.Leaderboard](gamecenterleaderboardversionv2/relationships-data.dictionary/leaderboard-data.dictionary.md)
+- [object GameCenterLeaderboardVersionV2.Relationships.Leaderboard](./relationships-data.dictionary/leaderboard-data.dictionary.md)
   The data that describes the leaderboard of the Game Center leaderboard version v2.
-- [object GameCenterLeaderboardVersionV2.Relationships.Localizations](gamecenterleaderboardversionv2/relationships-data.dictionary/localizations-data.dictionary.md)
+- [object GameCenterLeaderboardVersionV2.Relationships.Localizations](./relationships-data.dictionary/localizations-data.dictionary.md)
   The data and links that describe the localizations of the Game Center leaderboard version v2.
 
 ## Properties
@@ -34,7 +35,8 @@ object GameCenterLeaderboardVersionV2.Relationships
 
 ## See Also
 
-- [object GameCenterLeaderboardVersionV2.Attributes](gamecenterleaderboardversionv2/attributes-data.dictionary.md)
+### Dictionaries
+- [object GameCenterLeaderboardVersionV2.Attributes](./attributes-data.dictionary.md)
 
 
 ---

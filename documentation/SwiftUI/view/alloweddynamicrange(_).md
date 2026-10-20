@@ -1,7 +1,8 @@
 # allowedDynamicRange(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new view configured with the specified allowed dynamic range.
 
@@ -38,13 +39,14 @@ MyView().allowedDynamicRange(.high)
 
 ## See Also
 
-- [func backgroundStyle<S>(S) -> some View](view/backgroundstyle(_:).md)
+### Colors and patterns
+- [func backgroundStyle<S>(S) -> some View](./backgroundstyle%28_%29.md)
   Sets the specified style to render backgrounds within the view.
-- [func foregroundStyle<S>(S) -> some View](view/foregroundstyle(_:).md)
+- [func foregroundStyle<S>(S) -> some View](./foregroundstyle%28_%29.md)
   Sets a view’s foreground elements to use a given style.
-- [func foregroundStyle<S1, S2>(S1, S2) -> some View](view/foregroundstyle(_:_:).md)
+- [func foregroundStyle<S1, S2>(S1, S2) -> some View](./foregroundstyle%28_,_%29.md)
   Sets the primary and secondary levels of the foreground style in the child view.
-- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](view/foregroundstyle(_:_:_:).md)
+- [func foregroundStyle<S1, S2, S3>(S1, S2, S3) -> some View](./foregroundstyle%28_,_,_%29.md)
   Sets the primary, secondary, and tertiary levels of the foreground style.
 
 

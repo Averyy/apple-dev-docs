@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPMPowerStateVersion1](1646617-anonymous/kiopmpowerstateversion1.md)
-- [kIOPMPowerStateVersion2](1646617-anonymous/kiopmpowerstateversion2.md)
+- [kIOPMPowerStateVersion1](./api-1646617-anonymous/kiopmpowerstateversion1.md)
+- [kIOPMPowerStateVersion2](./api-1646617-anonymous/kiopmpowerstateversion2.md)
 
 
 ---

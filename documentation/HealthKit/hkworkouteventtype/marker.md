@@ -1,7 +1,8 @@
 # HKWorkoutEventType.marker
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant indicating a point of interest during a workout session.
 
@@ -19,25 +20,30 @@ A constant indicating a point of interest during a workout session.
 case marker
 ```
 
+```c
+HKWorkoutEventTypeMarker
+```
+
 #### Discussion
 
 Use markers to indicate arbitrary points during a workout (for example, when the user reaches the top of a hill during a run).
 
 ## See Also
 
-- [HKWorkoutEventType.pause](hkworkouteventtype/pause.md)
+### Events
+- [HKWorkoutEventType.pause](./pause.md)
   A constant indicating that the workout has paused.
-- [HKWorkoutEventType.resume](hkworkouteventtype/resume.md)
+- [HKWorkoutEventType.resume](./resume.md)
   A constant indicating that the workout has resumed.
-- [HKWorkoutEventType.motionPaused](hkworkouteventtype/motionpaused.md)
+- [HKWorkoutEventType.motionPaused](./motionpaused.md)
   A constant indicating that the system has automatically paused a workout session.
-- [HKWorkoutEventType.motionResumed](hkworkouteventtype/motionresumed.md)
+- [HKWorkoutEventType.motionResumed](./motionresumed.md)
   A constant indicating that the system has automatically resumed a workout session.
-- [HKWorkoutEventType.pauseOrResumeRequest](hkworkouteventtype/pauseorresumerequest.md)
+- [HKWorkoutEventType.pauseOrResumeRequest](./pauseorresumerequest.md)
   A constant indicating that the user has requested a pause or resume.
-- [HKWorkoutEventType.lap](hkworkouteventtype/lap.md)
+- [HKWorkoutEventType.lap](./lap.md)
   A constant indicating a lap.
-- [HKWorkoutEventType.segment](hkworkouteventtype/segment.md)
+- [HKWorkoutEventType.segment](./segment.md)
   A constant indicating a period of time of interest during a workout.
 
 

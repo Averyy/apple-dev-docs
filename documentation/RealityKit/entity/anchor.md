@@ -1,7 +1,8 @@
 # anchor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The nearest ancestor entity that can act as an anchor.
 
@@ -11,7 +12,7 @@ The nearest ancestor entity that can act as an anchor.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ The nearest ancestor entity that can act as an anchor.
 
 #### Discussion
 
-This property returns `nil` if no ancestor can act as an anchor. An entity can act as an anchor if it adopts the [`HasAnchoring`](hasanchoring.md) protocol. Just because an ancestor can be anchored doesn’t mean that it is. Inspect the [`isAnchored`](entity/isanchored.md) property to see if an entity (or one of its ancestors) is anchored.
+This property returns `nil` if no ancestor can act as an anchor. An entity can act as an anchor if it adopts the [`HasAnchoring`](../hasanchoring.md) protocol. Just because an ancestor can be anchored doesn’t mean that it is. Inspect the [`isAnchored`](./isanchored.md) property to see if an entity (or one of its ancestors) is anchored.
 
 
 ---

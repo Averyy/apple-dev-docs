@@ -1,7 +1,8 @@
 # zPosition
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer’s position on the z axis. Animatable.
 
@@ -19,25 +20,30 @@ The layer’s position on the z axis. Animatable.
 var zPosition: CGFloat { get set }
 ```
 
+```objc
+@property CGFloat zPosition;
+```
+
 #### Discussion
 
 The default value of this property is `0`. Changing the value of this property changes the front-to-back ordering of layers onscreen. Higher values place this layer visually closer to the viewer than layers with lower values. This can affect the visibility of layers whose frame rectangles overlap.
 
-The value of this property is measured in points. The range of this property is single-precision, floating-point `-`[`greatestFiniteMagnitude`](https://developer.apple.com/documentation/swift/float/greatestfinitemagnitude) to [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/swift/float/greatestfinitemagnitude).
+The value of this property is measured in points. The range of this property is single-precision, floating-point `-`[`greatestFiniteMagnitude`](../../Swift/float/greatestfinitemagnitude.md) to [`greatestFiniteMagnitude`](../../Swift/float/greatestfinitemagnitude.md).
 
 ## See Also
 
-- [var frame: CGRect](calayer/frame.md)
+### Modifying the layer geometry
+- [var frame: CGRect](./frame.md)
   The layer’s frame rectangle.
-- [var bounds: CGRect](calayer/bounds.md)
+- [var bounds: CGRect](./bounds.md)
   The layer’s bounds rectangle. Animatable.
-- [var position: CGPoint](calayer/position.md)
+- [var position: CGPoint](./position.md)
   The layer’s position in its superlayer’s coordinate space. Animatable.
-- [var anchorPointZ: CGFloat](calayer/anchorpointz.md)
+- [var anchorPointZ: CGFloat](./anchorpointz.md)
   The anchor point for the layer’s position along the z axis. Animatable.
-- [var anchorPoint: CGPoint](calayer/anchorpoint.md)
+- [var anchorPoint: CGPoint](./anchorpoint.md)
   Defines the anchor point of the layer’s bounds rectangle. Animatable.
-- [var contentsScale: CGFloat](calayer/contentsscale.md)
+- [var contentsScale: CGFloat](./contentsscale.md)
   The scale factor applied to the layer.
 
 

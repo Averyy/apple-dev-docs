@@ -1,7 +1,8 @@
 # MTRContentLauncherClusterLauncherResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.4+
@@ -18,29 +19,33 @@
 class MTRContentLauncherClusterLauncherResponseParams
 ```
 
+```objc
+@interface MTRContentLauncherClusterLauncherResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrcontentlauncherclusterlauncherresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrcontentlauncherclusterlauncherresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var data: String?](mtrcontentlauncherclusterlauncherresponseparams/data.md)
-- [var status: NSNumber](mtrcontentlauncherclusterlauncherresponseparams/status.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrcontentlauncherclusterlauncherresponseparams/timedinvoketimeoutms.md)
+- [var data: String?](./mtrcontentlauncherclusterlauncherresponseparams/data.md)
+- [var status: NSNumber](./mtrcontentlauncherclusterlauncherresponseparams/status.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrcontentlauncherclusterlauncherresponseparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [MTRContentLauncherClusterLaunchResponseParams](mtrcontentlauncherclusterlaunchresponseparams.md)
+- [MTRContentLauncherClusterLaunchResponseParams](./mtrcontentlauncherclusterlaunchresponseparams.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

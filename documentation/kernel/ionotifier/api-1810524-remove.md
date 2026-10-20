@@ -7,7 +7,7 @@ Removes the notification request and releases it.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void remove() = 0;
 ```
 
@@ -17,9 +17,10 @@ Removes the notification request and release it. Since creating an IONotifier in
 
 ## See Also
 
-- [disable](ionotifier/1810461-disable.md)
+### Miscellaneous
+- [disable](./api-1810461-disable.md)
   Disables the notification request.
-- [enable](ionotifier/1810483-enable.md)
+- [enable](./api-1810483-enable.md)
   Sets the enable state of the notification request.
 
 

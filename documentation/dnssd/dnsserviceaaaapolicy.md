@@ -1,7 +1,8 @@
 # DNSServiceAAAAPolicy
 
 **Framework**: dnssd  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 15.0+
@@ -18,22 +19,26 @@
 struct DNSServiceAAAAPolicy
 ```
 
+```c
+typedef enum { ... } DNSServiceAAAAPolicy;
+```
+
 ## Topics
 
 ### Initializers
-- [init(UInt32)](dnsserviceaaaapolicy/init(_:).md)
-- [init(rawValue: UInt32)](dnsserviceaaaapolicy/init(rawvalue:).md)
+- [init(UInt32)](./dnsserviceaaaapolicy/init%28_%29.md)
+- [init(rawValue: UInt32)](./dnsserviceaaaapolicy/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](dnsserviceaaaapolicy/rawvalue.md)
+- [var rawValue: UInt32](./dnsserviceaaaapolicy/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

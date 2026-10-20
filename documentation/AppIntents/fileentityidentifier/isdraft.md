@@ -1,7 +1,8 @@
 # isDraft
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether this identifier represents a document draft.
 

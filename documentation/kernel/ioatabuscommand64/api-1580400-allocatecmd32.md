@@ -1,14 +1,15 @@
 # allocateCmd32
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 static IOATABusCommand64 * allocateCmd32(void);
 ```
 

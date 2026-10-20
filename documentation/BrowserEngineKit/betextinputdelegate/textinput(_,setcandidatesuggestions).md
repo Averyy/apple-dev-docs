@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Provides text suggestions to the system.
@@ -9,7 +10,7 @@ Provides text suggestions to the system.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS ?+
+- macOS
 - tvOS 17.4+
 - visionOS 1.1+
 
@@ -17,6 +18,10 @@ Provides text suggestions to the system.
 
 ```swift
 func textInput(_ textInput: any BETextInput, setCandidateSuggestions suggestions: [BETextSuggestion]?)
+```
+
+```objc
+- (void) textInput:(id<BETextInput>) textInput setCandidateSuggestions:(NSArray<BETextSuggestion *> *) suggestions;
 ```
 
 #### Discussion

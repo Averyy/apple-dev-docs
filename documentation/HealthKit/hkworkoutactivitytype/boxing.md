@@ -1,7 +1,8 @@
 # HKWorkoutActivityType.boxing
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The constant for boxing.
 
@@ -19,15 +20,20 @@ The constant for boxing.
 case boxing
 ```
 
+```c
+HKWorkoutActivityTypeBoxing
+```
+
 ## See Also
 
-- [HKWorkoutActivityType.kickboxing](hkworkoutactivitytype/kickboxing.md)
+### Martial arts
+- [HKWorkoutActivityType.kickboxing](./kickboxing.md)
   The constant for kickboxing.
-- [HKWorkoutActivityType.martialArts](hkworkoutactivitytype/martialarts.md)
+- [HKWorkoutActivityType.martialArts](./martialarts.md)
   The constant for practicing martial arts.
-- [HKWorkoutActivityType.taiChi](hkworkoutactivitytype/taichi.md)
+- [HKWorkoutActivityType.taiChi](./taichi.md)
   The constant for tai chi.
-- [HKWorkoutActivityType.wrestling](hkworkoutactivitytype/wrestling.md)
+- [HKWorkoutActivityType.wrestling](./wrestling.md)
   The constant for wrestling.
 
 

@@ -1,7 +1,8 @@
 # AXCustomContentReturnBlock
 
 **Framework**: Accessibility  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 14.0+
@@ -18,11 +19,16 @@
 typealias AXCustomContentReturnBlock = () -> [AXCustomContent]?
 ```
 
+```c
+typedef NSArray<AXCustomContent *> *(^)(void) AXCustomContentReturnBlock;
+```
+
 ## See Also
 
-- [class AXCustomContent](axcustomcontent.md)
+### Custom accessibility content
+- [class AXCustomContent](./axcustomcontent.md)
   Objects that define custom content and the timing of its output.
-- [protocol AXCustomContentProvider](axcustomcontentprovider.md)
+- [protocol AXCustomContentProvider](./axcustomcontentprovider.md)
   The interface for customizing the accessibility content.
 
 

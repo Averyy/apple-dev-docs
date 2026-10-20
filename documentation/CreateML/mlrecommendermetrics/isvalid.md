@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the recommender model was able to calculate metrics.
 
@@ -16,7 +17,8 @@ var isValid: Bool { get }
 
 ## See Also
 
-- [let error: (any Error)?](mlrecommendermetrics/error.md)
+### Handling errors
+- [let error: (any Error)?](./error.md)
   The underlying error present when the metrics are invalid.
 
 

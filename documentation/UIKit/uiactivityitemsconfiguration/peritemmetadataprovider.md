@@ -1,7 +1,8 @@
 # perItemMetadataProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that provides metadata for each activity item.
 
@@ -17,19 +18,24 @@ A closure that provides metadata for each activity item.
 var perItemMetadataProvider: ((Int, UIActivityItemsConfigurationMetadataKey) -> Any?)? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) id (^perItemMetadataProvider)(NSInteger index, UIActivityItemsConfigurationMetadataKey key);
+```
+
 ## Mentions
 
-- [Collaborating and sharing copies of your data](collaborating-and-sharing-copies-of-your-data.md)
+- [Collaborating and sharing copies of your data](../collaborating-and-sharing-copies-of-your-data.md)
 
 ## See Also
 
-- [var localObject: Any?](uiactivityitemsconfiguration/localobject.md)
+### Managing the configuration
+- [var localObject: Any?](./localobject.md)
   A local object that represents the configuration.
-- [var metadataProvider: ((UIActivityItemsConfigurationMetadataKey) -> Any?)?](uiactivityitemsconfiguration/metadataprovider.md)
+- [var metadataProvider: ((UIActivityItemsConfigurationMetadataKey) -> Any?)?](./metadataprovider.md)
   A closure that provides metadata for the activity items.
-- [var applicationActivitiesProvider: (() -> [UIActivity])?](uiactivityitemsconfiguration/applicationactivitiesprovider.md)
+- [var applicationActivitiesProvider: (() -> [UIActivity])?](./applicationactivitiesprovider.md)
   A closure that provides application acitivites for the activity items.
-- [struct UIActivityItemsConfigurationMetadataKey](uiactivityitemsconfigurationmetadatakey.md)
+- [struct UIActivityItemsConfigurationMetadataKey](../uiactivityitemsconfigurationmetadatakey.md)
   A structure that defines keys for the metadata associated with an activity items configuration.
 
 

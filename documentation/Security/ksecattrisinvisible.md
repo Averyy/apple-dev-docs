@@ -1,7 +1,8 @@
 # kSecAttrIsInvisible
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key with a value that’s a Boolean indicating the item’s visibility.
 
@@ -20,9 +21,13 @@ A key with a value that’s a Boolean indicating the item’s visibility.
 let kSecAttrIsInvisible: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrIsInvisible;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFBoolean`](https://developer.apple.com/documentation/corefoundation/cfboolean) and is [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue) if the item is invisible (that is, should not be displayed).
+The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md) and is [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) if the item is invisible (that is, should not be displayed).
 
 
 ---

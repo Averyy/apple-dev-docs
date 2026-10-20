@@ -1,7 +1,8 @@
 # invalidateLayout(of:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invalidates the layout of a layer so it knows to refresh its content on the next frame.
 
@@ -15,11 +16,16 @@ Invalidates the layout of a layer so it knows to refresh its content on the next
 optional func invalidateLayout(of layer: CALayer)
 ```
 
+```objc
+- (void) invalidateLayoutOfLayer:(CALayer *) layer;
+```
+
 ## See Also
 
-- [func layoutSublayers(of: CALayer)](calayoutmanager/layoutsublayers(of:).md)
+### Managing Layout
+- [func layoutSublayers(of: CALayer)](./layoutsublayers%28of%29.md)
   Override to customize layout of sublayers whenever the layer needs redrawing.
-- [func preferredSize(of: CALayer) -> CGSize](calayoutmanager/preferredsize(of:).md)
+- [func preferredSize(of: CALayer) -> CGSize](./preferredsize%28of%29.md)
   Override to customize layer size.
 
 

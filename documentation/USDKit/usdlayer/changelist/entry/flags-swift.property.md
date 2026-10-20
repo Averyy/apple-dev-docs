@@ -1,7 +1,8 @@
 # flags
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Structural change flags for this entry.
 

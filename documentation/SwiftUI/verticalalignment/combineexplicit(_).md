@@ -1,7 +1,8 @@
 # combineExplicit(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Merges a sequence of explicit alignment values produced by this instance.
 
@@ -22,11 +23,12 @@ func combineExplicit<S>(_ values: S) -> CGFloat? where S : Sequence, S.Element =
 
 #### Discussion
 
-For most alignment types, this method returns the mean of all non-`nil` values. However, some types use other rules. For example, [`firstTextBaseline`](verticalalignment/firsttextbaseline.md) returns the minimum value, while [`lastTextBaseline`](verticalalignment/lasttextbaseline.md) returns the maximum value.
+For most alignment types, this method returns the mean of all non-`nil` values. However, some types use other rules. For example, [`firstTextBaseline`](./firsttextbaseline.md) returns the minimum value, while [`lastTextBaseline`](./lasttextbaseline.md) returns the maximum value.
 
 ## See Also
 
-- [init(any AlignmentID.Type)](verticalalignment/init(_:).md)
+### Creating a custom alignment
+- [init(any AlignmentID.Type)](./init%28_%29.md)
   Creates a custom vertical alignment of the specified type.
 
 

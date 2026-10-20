@@ -1,7 +1,8 @@
 # classForGenericArgument(at:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func classForGenericArgument(at index: Int) -> AnyClass
+```
+
+```objc
+- (Class) classForGenericArgumentAtIndex:(NSUInteger) index;
 ```
 
 

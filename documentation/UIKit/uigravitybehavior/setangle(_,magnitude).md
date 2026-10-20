@@ -1,7 +1,8 @@
 # setAngle(_:magnitude:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the angle and magnitude of the gravity vector for the behavior.
 
@@ -9,13 +10,17 @@ Sets the angle and magnitude of the gravity vector for the behavior.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func setAngle(_ angle: CGFloat, magnitude: CGFloat)
+```
+
+```objc
+- (void) setAngle:(CGFloat) angle magnitude:(CGFloat) magnitude;
 ```
 
 ## Parameters
@@ -25,11 +30,12 @@ func setAngle(_ angle: CGFloat, magnitude: CGFloat)
 
 ## See Also
 
-- [var gravityDirection: CGVector](uigravitybehavior/gravitydirection.md)
+### Configuring a gravity behavior
+- [var gravityDirection: CGVector](./gravitydirection.md)
   The direction and magnitude of the gravitational force, expressed as a vector.
-- [var angle: CGFloat](uigravitybehavior/angle.md)
+- [var angle: CGFloat](./angle.md)
   The direction of the gravity vector, expressed in radians in the reference coordinate system.
-- [var magnitude: CGFloat](uigravitybehavior/magnitude.md)
+- [var magnitude: CGFloat](./magnitude.md)
   The magnitude of the gravity vector.
 
 

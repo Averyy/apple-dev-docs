@@ -1,7 +1,8 @@
 # xpcConnectionBlock
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.2+
@@ -16,6 +17,10 @@
 
 ```swift
 var xpcConnectionBlock: () -> NSXPCConnection { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSXPCConnection * (^xpcConnectionBlock)();
 ```
 
 

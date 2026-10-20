@@ -1,7 +1,8 @@
 # series
 
 **Framework**: Accessibility  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptors for each data series in the chart.
 
@@ -20,9 +21,14 @@ The descriptors for each data series in the chart.
 var series: [AXDataSeriesDescriptor] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<AXDataSeriesDescriptor *> * series;
+```
+
 ## See Also
 
-- [class AXDataSeriesDescriptor](axdataseriesdescriptor.md)
+### Specifying a series of data points
+- [class AXDataSeriesDescriptor](../axdataseriesdescriptor.md)
   An object that represents a series of data points.
 
 

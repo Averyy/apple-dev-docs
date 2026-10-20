@@ -1,7 +1,8 @@
 # configuration
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The configuration of the custom tool item.
 
@@ -19,11 +20,12 @@ var configuration: PKToolPickerCustomItem.Configuration { get }
 
 ## See Also
 
-- [var color: UIColor](pktoolpickercustomitem/color.md)
+### Configuring the custom item
+- [var color: UIColor](./color.md)
   The current color of the custom tool item.
-- [var width: CGFloat](pktoolpickercustomitem/width.md)
+- [var width: CGFloat](./width.md)
   The current width of the custom tool item.
-- [PKToolPickerCustomItem.Configuration](pktoolpickercustomitem/configuration-swift.struct.md)
+- [PKToolPickerCustomItem.Configuration](./configuration-swift.struct.md)
   A configuration that specifies the appearance and behavior of a custom tool item and its contents.
 
 

@@ -1,7 +1,8 @@
 # positions
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The positions of all rigid bodies under the influence of the effect, or nil if positional information was not requested.
 

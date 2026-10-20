@@ -1,7 +1,8 @@
 # AVAsyncProperty.Status.loaded(_:)
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A property value is ready to use.
 
@@ -26,11 +27,12 @@ case loaded(Value)
 
 ## See Also
 
-- [AVAsyncProperty.Status.notYetLoaded](avasyncproperty/status/notyetloaded.md)
+### Status values
+- [AVAsyncProperty.Status.notYetLoaded](./notyetloaded.md)
   The system hasn’t loaded a property value.
-- [AVAsyncProperty.Status.loading](avasyncproperty/status/loading.md)
+- [AVAsyncProperty.Status.loading](./loading.md)
   The system is loading the property.
-- [AVAsyncProperty.Status.failed(_:)](avasyncproperty/status/failed(_:).md)
+- [AVAsyncProperty.Status.failed(_:)](./failed%28_%29.md)
   A property value fails to load.
 
 

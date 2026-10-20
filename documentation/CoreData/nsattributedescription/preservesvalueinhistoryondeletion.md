@@ -1,7 +1,8 @@
 # preservesValueInHistoryOnDeletion
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the attribute records its value in the persistent history transaction for a managed object’s deletion.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the attribute records its value in the pe
 var preservesValueInHistoryOnDeletion: Bool { get set }
 ```
 
+```objc
+@property BOOL preservesValueInHistoryOnDeletion;
+```
+
 ## See Also
 
-- [var allowsCloudEncryption: Bool](nsattributedescription/allowscloudencryption.md)
+### Configuring the behavior
+- [var allowsCloudEncryption: Bool](./allowscloudencryption.md)
   A Boolean value that determines whether to encrypt the attribute’s value.
-- [var allowsExternalBinaryDataStorage: Bool](nsattributedescription/allowsexternalbinarydatastorage.md)
+- [var allowsExternalBinaryDataStorage: Bool](./allowsexternalbinarydatastorage.md)
   A Boolean value that indicates whether the attribute allows external binary storage.
-- [var defaultValue: Any?](nsattributedescription/defaultvalue.md)
+- [var defaultValue: Any?](./defaultvalue.md)
   The default value of the attribute.
-- [var valueTransformerName: String?](nsattributedescription/valuetransformername.md)
+- [var valueTransformerName: String?](./valuetransformername.md)
   The name of the transformer to use for the attribute value.
 
 

@@ -1,12 +1,13 @@
 # viewAnimations
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dictionaries defining the objects to animate.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,12 +15,17 @@ The dictionaries defining the objects to animate.
 var viewAnimations: [[NSViewAnimation.Key : Any]] { get set }
 ```
 
+```objc
+@property (copy) NSArray<NSDictionary<NSString *,id> *> * viewAnimations;
+```
+
 ## See Also
 
-- [NSViewAnimation.Key](nsviewanimation/key.md)
-  The following string constants are keys for the dictionaries in the array passed into [`init(viewAnimations:)`](nsviewanimation/init(viewanimations:).md) and [`viewAnimations`](nsviewanimation/viewanimations.md).
-- [NSViewAnimation.EffectName](nsviewanimation/effectname.md)
-  The following constants specify the animation effect to apply and are used as values for the animation effect property of the animation view. See the description of [`effect`](nsviewanimation/key/effect.md) for usage details.
+### Getting and setting view-animation dictionaries
+- [NSViewAnimation.Key](./key.md)
+  The following string constants are keys for the dictionaries in the array passed into [`init(viewAnimations:)`](./init%28viewanimations%29.md) and [`viewAnimations`](./viewanimations.md).
+- [NSViewAnimation.EffectName](./effectname.md)
+  The following constants specify the animation effect to apply and are used as values for the animation effect property of the animation view. See the description of [`effect`](./key/effect.md) for usage details.
 
 
 ---

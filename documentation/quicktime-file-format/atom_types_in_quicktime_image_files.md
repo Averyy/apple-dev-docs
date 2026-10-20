@@ -1,6 +1,7 @@
 # Atom types in QuickTime image files
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Build QuickTime image files with atoms.
 
@@ -44,7 +45,8 @@ The following table shows an example QuickTime image file containing a JPEG-comp
 
 ## See Also
 
-- [Recommended file type and suffix](recommended_file_type_and_suffix.md)
+### Storing image data
+- [Recommended file type and suffix](./recommended_file_type_and_suffix.md)
   Identify your image file with a file type and suffix.
 
 

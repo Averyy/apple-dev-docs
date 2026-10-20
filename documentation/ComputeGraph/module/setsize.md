@@ -1,13 +1,14 @@
 # module::setSize
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Sets the size of an element to the specified dimensions. Size is in meters.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -17,7 +18,7 @@ void module::setSize(float2 size)
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/module__setSize.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/module__setSize.svg)
 
 ## Parameters
 

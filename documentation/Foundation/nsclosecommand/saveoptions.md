@@ -1,7 +1,8 @@
 # saveOptions
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a constant indicating how to deal with closing any modified documents.
 
@@ -15,13 +16,18 @@ Returns a constant indicating how to deal with closing any modified documents.
 var saveOptions: NSSaveOptions { get }
 ```
 
+```objc
+@property (readonly) NSSaveOptions saveOptions;
+```
+
 #### Return Value
 
 A constant indicating how to deal with closing any modified documents. The default value returned is `NSSaveOptionsAsk`. See Constants for a list of possible return values.
 
 ## See Also
 
-- [Cocoa Scripting Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
+### Related Documentation
+- [Cocoa Scripting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_intro/SAppsIntro.html#//apple_ref/doc/uid/TP40002164)
 
 
 ---

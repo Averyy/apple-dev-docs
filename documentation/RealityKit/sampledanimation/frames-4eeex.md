@@ -1,7 +1,8 @@
 # frames
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of joint transforms in which each element represents a discrete state of the target entity at a given point in the animation’s timeline.
 
@@ -11,7 +12,7 @@ An array of joint transforms in which each element represents a discrete state o
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,25 +20,28 @@ An array of joint transforms in which each element represents a discrete state o
 var frames: [JointTransforms] { get set }
 ```
 
+Available when `Value` is `JointTransforms`.
+
 #### Discussion
 
-This array contains sequential values for the animated property when [`bindTarget`](animationdefinition/bindtarget.md) is an array of joint transforms.
+This array contains sequential values for the animated property when [`bindTarget`](../animationdefinition/bindtarget.md) is an array of joint transforms.
 
 ## See Also
 
-- [var frames: [Transform]](sampledanimation/frames-4qotl.md)
+### Defining frames data
+- [var frames: [Transform]](./frames-4qotl.md)
   An array of transforms in which each element represents a discrete state of the target entity at a given point in the animation’s timeline.
-- [var frames: [Double]](sampledanimation/frames-2hobp.md)
+- [var frames: [Double]](./frames-2hobp.md)
   An array of double-precision values in which each element represents a discrete state of the animated property at a given point in the animation’s timeline.
-- [var frames: [Float]](sampledanimation/frames-2j4nj.md)
+- [var frames: [Float]](./frames-2j4nj.md)
   An array of floating-point values in which each element represents a discrete state of the animated property at a given point in the animation’s timeline.
-- [var frames: [simd_quatf]](sampledanimation/frames-2h6tu.md)
+- [var frames: [simd_quatf]](./frames-2h6tu.md)
   An array of quaternions in which each element represents a discrete state of the animated property at a given point in the animation’s timeline.
-- [var frames: [SIMD2<Float>]](sampledanimation/frames-9luwf.md)
+- [var frames: [SIMD2<Float>]](./frames-9luwf.md)
   An array of floating-point pairs in which each element represents a discrete state of the animated property at a given point in the animation’s timeline.
-- [var frames: [SIMD3<Float>]](sampledanimation/frames-1zxo.md)
+- [var frames: [SIMD3<Float>]](./frames-1zxo.md)
   An array of floating-point triplets in which each element represents a discrete state of the animated property at a given point in the animation’s timeline.
-- [var frames: [SIMD4<Float>]](sampledanimation/frames-2ywfx.md)
+- [var frames: [SIMD4<Float>]](./frames-2ywfx.md)
   An array of floating-point quadruples in which each element represents a discrete state of the animated property at a given point in the animation’s timeline.
 
 

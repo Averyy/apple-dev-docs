@@ -1,6 +1,8 @@
 # Enhancing live video by leveraging TrueDepth camera data
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Sample Code  
+**Download**: [EnhancingLiveVideoByLeveragingTrueDepthCameraData.zip](https://docs-assets.developer.apple.com/published/3cc4556ec9ec/EnhancingLiveVideoByLeveragingTrueDepthCameraData.zip)
 
 Apply your own background to a live capture feed streamed from the front-facing TrueDepth camera.
 
@@ -16,22 +18,22 @@ The TrueDepth camera provides real-time depth data that allows you to segment fo
 
 This sample app leverages depth data to dynamically replace the entire background with a custom image. It then performs Gaussian filtering and other image processing operations to remove holes and smooth the effect.
 
-##### Preview the Sample App
+##### Preview the sample app
 
 To see this sample app in action, build and run the project in Xcode on a device running iOS 11 or later. Because Xcode doesn’t have access to the TrueDepth camera, this sample won’t work in the Xcode simulator.
 
 The sample app begins by removing the background, replacing it with black. Apply your own image from the camera roll by swiping down anywhere on the video feed.
 
-##### Set Up Live Capture From the Truedepth Camera
+##### Set up live capture from the TrueDepth camera
 
-Set up an [`AVCaptureSession`](avcapturesession.md) on a separate thread via the session queue. Initialize this session queue before configuring the camera for capture.
+Set up an [`AVCaptureSession`](./avcapturesession.md) on a separate thread via the session queue. Initialize this session queue before configuring the camera for capture.
 
 ```swift
 // Communicate with the session and other session objects on this queue.
 private let sessionQueue = DispatchQueue(label: "session queue", attributes: [], autoreleaseFrequency: .workItem)
 ```
 
-The [`startRunning()`](avcapturesession/startrunning().md) method is a blocking call which can take a long time. Dispatch session setup to the sessionQueue so the main queue isn’t blocked, allowing the app’s UI to stay responsive.
+The [`startRunning()`](./avcapturesession/startrunning%28%29.md) method is a blocking call which can take a long time. Dispatch session setup to the sessionQueue so the main queue isn’t blocked, allowing the app’s UI to stay responsive.
 
 ```swift
 sessionQueue.async {
@@ -39,7 +41,7 @@ sessionQueue.async {
 }
 ```
 
-Setting up the camera for video capture follows many of the same steps as normal video capture. See [`Setting up a capture session`](setting-up-a-capture-session.md) for details on configuring streaming setup.
+Setting up the camera for video capture follows many of the same steps as normal video capture. See [Setting up a capture session](./setting-up-a-capture-session.md) for details on configuring streaming setup.
 
 On top of normal setup, request depth data by declaring a separate output:
 
@@ -92,9 +94,9 @@ outputSynchronizer = AVCaptureDataOutputSynchronizer(dataOutputs: [videoDataOutp
 outputSynchronizer!.setDelegate(self, queue: dataOutputQueue)
 ```
 
-##### Create a Binary Foreground Mask
+##### Create a binary foreground mask
 
-Assume the foreground to be a human face. You can accomplish face detection through the Vision framework’s [`VNDetectFaceRectanglesRequest`](https://developer.apple.com/documentation/vision/vndetectfacerectanglesrequest), but this sample doesn’t need anything else from Vision, so it’s simpler to consult the [`AVMetadataObject`](avmetadataobject.md) for [`face`](avmetadataobject/objecttype/face.md).
+Assume the foreground to be a human face. You can accomplish face detection through the Vision framework’s [`VNDetectFaceRectanglesRequest`](../Vision/vndetectfacerectanglesrequest.md), but this sample doesn’t need anything else from Vision, so it’s simpler to consult the [`AVMetadataObject`](./avmetadataobject.md) for [`face`](./avmetadataobject/objecttype/face.md).
 
 ```swift
 self.session.addOutput(metadataOutput)
@@ -103,7 +105,7 @@ if metadataOutput.availableMetadataObjectTypes.contains(.face) {
 }
 ```
 
-Using the [`AVMetadataObject`](avmetadataobject.md), locate the face’s bounding box and center. Assume there is only one face and take the first one in the metadata object.
+Using the [`AVMetadataObject`](./avmetadataobject.md), locate the face’s bounding box and center. Assume there is only one face and take the first one in the metadata object.
 
 ```swift
 if let syncedMetaData: AVCaptureSynchronizedMetadataObjectData =
@@ -143,7 +145,7 @@ for yMap in 0 ..< depthHeight {
 }
 ```
 
-##### Smooth the Depth Mask with Core Image Filters
+##### Smooth the depth mask with Core Image filters
 
 The depth map doesn’t share the RGB image’s sharp resolution, so the mask may contain holes along the interface between foreground and background. Once you have a downsampled mask image, use a Gaussian filter to smooth out the holes, so the interface doesn’t look jagged or pixelated. Clamp your image before filtering it, and crop it afterward, so it retains the proper size when applied with the original image.
 
@@ -161,13 +163,13 @@ let alphaMatte = depthMaskImage.clampedToExtent()
 
 The parameters of your `CIGaussianBlur` and `CIGammaAdjust` filters directly affect the smoothness of the edge pixels. You can tune the blur and smoothness by adjusting the Gaussian blur filter’s input radius, as well as the gamma adjustment filter’s input power.
 
-![Graph showing the effect of fine-tuning Gaussian blur and Gamma adjustment](/images/com.apple.avfoundation/graph.png)
+![Graph showing the effect of fine-tuning Gaussian blur and Gamma adjustment](https://developer.apple.com/tutorials/images/com.apple.avfoundation/graph.png)
 
-##### Blend Foreground and Background with the Alpha Matte
+##### Blend foreground and background with the alpha matte
 
 The final step is applying your filtered smooth binary mask to the input video frame.
 
-Because you’ve performed image processing in Core Image using the `CIGaussianBlur` and `CIGammaAdjust` filters, it’s most computationally efficient to apply the resulting mask in Core Image, as well. That means converting your video from [`CVPixelBuffer`](https://developer.apple.com/documentation/corevideo/cvpixelbuffer-q2e) format to [`CIImage`](https://developer.apple.com/documentation/coreimage/ciimage) format, allowing you to apply the alpha matte to the original image, and blend in your custom background image with the `CIBlendWithMask` filter.
+Because you’ve performed image processing in Core Image using the `CIGaussianBlur` and `CIGammaAdjust` filters, it’s most computationally efficient to apply the resulting mask in Core Image, as well. That means converting your video from [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) format to [`CIImage`](../CoreImage/ciimage.md) format, allowing you to apply the alpha matte to the original image, and blend in your custom background image with the `CIBlendWithMask` filter.
 
 ```swift
 let image = CIImage(cvPixelBuffer: videoPixelBuffer)
@@ -189,21 +191,22 @@ previewView.image = output
 
 ## See Also
 
-- [Capturing photos with depth](capturing-photos-with-depth.md)
+### Depth data capture
+- [Capturing photos with depth](./capturing-photos-with-depth.md)
   Get a depth map with a photo to create effects like the system camera’s Portrait mode (on compatible devices).
-- [Creating auxiliary depth data manually](creating-auxiliary-depth-data-manually.md)
+- [Creating auxiliary depth data manually](./creating-auxiliary-depth-data-manually.md)
   Generate a depth image and attach it to your own image.
-- [Capturing depth using the LiDAR camera](capturing-depth-using-the-lidar-camera.md)
+- [Capturing depth using the LiDAR camera](./capturing-depth-using-the-lidar-camera.md)
   Access the LiDAR camera on supporting devices to capture precise depth data.
-- [AVCamFilter: Applying filters to a capture stream](avcamfilter-applying-filters-to-a-capture-stream.md)
+- [AVCamFilter: Applying filters to a capture stream](./avcamfilter-applying-filters-to-a-capture-stream.md)
   Render a capture stream with rose-colored filtering and depth effects.
-- [Streaming depth data from the TrueDepth camera](streaming-depth-data-from-the-truedepth-camera.md)
+- [Streaming depth data from the TrueDepth camera](./streaming-depth-data-from-the-truedepth-camera.md)
   Visualize depth data in 2D and 3D from the TrueDepth camera.
-- [class AVCaptureDepthDataOutput](avcapturedepthdataoutput.md)
+- [class AVCaptureDepthDataOutput](./avcapturedepthdataoutput.md)
   A capture output that records scene depth information on compatible camera devices.
-- [class AVDepthData](avdepthdata.md)
+- [class AVDepthData](./avdepthdata.md)
   A container for per-pixel distance or disparity information captured by compatible camera devices.
-- [class AVCameraCalibrationData](avcameracalibrationdata.md)
+- [class AVCameraCalibrationData](./avcameracalibrationdata.md)
   Information about the camera characteristics used to capture images and depth data.
 
 

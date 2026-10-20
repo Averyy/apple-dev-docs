@@ -1,7 +1,8 @@
 # lit(diffuseModel:specularModel:isSubsurfaceScatteringEnabled:isMultiscatteringEnabled:isBentNormalEnabled:isClearcoatEnabled:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ static func lit(diffuseModel: LitLightingModel.DiffuseModel = .hammon, specularM
 
 ## See Also
 
-- [case lit(LitLightingModel)](lightingmodel/lit(_:).md)
+### Creating a lit model
+- [case lit(LitLightingModel)](./lit%28_%29.md)
 
 
 ---

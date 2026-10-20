@@ -1,7 +1,8 @@
 # WebPage.NavigationPreferences.ContentMode.desktop
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The content mode that represents a desktop experience.
 

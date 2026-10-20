@@ -1,13 +1,14 @@
 # element::position
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the current position of the element, in the graph’s coordinate space.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -21,7 +22,7 @@ The position as a 3D vector (x, y, z)
 
 #### Discussion
 
-> **Note**: ![Graph](/images/com.apple.computegraph/element__position.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/element__position.svg)
 
 
 ---

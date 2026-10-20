@@ -1,6 +1,7 @@
 # Consuming relevant store changes
 
-**Framework**: Core Data
+**Framework**: Core Data  
+**Role**: Article
 
 Filter store transactions for changes relevant to the current view.
 
@@ -8,13 +9,13 @@ Filter store transactions for changes relevant to the current view.
 
 Use persistent history tracking to determine what changes have occurred in the store, and to update your view context only as needed.
 
-For example, consider an app that sometimes shows a list of shopping items, and sometimes shows a list of stores. As the user views the `ShoppingItem` objects from the view context, a background context may download additional `Store` data from a remote source. If the import happens through a batch operation, the save to the store doesn’t generate an [`NSManagedObjectContextDidSave`](https://developer.apple.com/documentation/foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave) notification, and the view misses these relevant updates. Alternatively, the background context may save changes to the store that don’t affect the current view—for example, inserting, modifying, or deleting `Store` objects. These changes *do* generate context save events, so your view context processes them even though it doesn’t need to.
+For example, consider an app that sometimes shows a list of shopping items, and sometimes shows a list of stores. As the user views the `ShoppingItem` objects from the view context, a background context may download additional `Store` data from a remote source. If the import happens through a batch operation, the save to the store doesn’t generate an [`NSManagedObjectContextDidSave`](../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md) notification, and the view misses these relevant updates. Alternatively, the background context may save changes to the store that don’t affect the current view—for example, inserting, modifying, or deleting `Store` objects. These changes *do* generate context save events, so your view context processes them even though it doesn’t need to.
 
 Persistent history solves the problem by keeping track of every transaction on the store. You can filter this history for relevant changes and decide how or whether to update a view.
 
-##### Enable History Tracking for Your Local Store
+##### Enable history tracking for your local store
 
-When you create a persistent container, set the [`NSPersistentHistoryTrackingKey`](nspersistenthistorytrackingkey.md) option on the store description to [`true`](https://developer.apple.com/documentation/swift/true) to enable history tracking.
+When you create a persistent container, set the [`NSPersistentHistoryTrackingKey`](./nspersistenthistorytrackingkey.md) option on the store description to [`true`](../Swift/true.md) to enable history tracking.
 
 ```swift
 // Pass the data model filename to the container’s initializer.
@@ -29,9 +30,9 @@ description?.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
 
 Core Data tracks all changes to your local store.
 
-##### Listen for Remote Changes
+##### Listen for remote changes
 
-In the persistent container, set the [`NSPersistentStoreRemoteChangeNotificationPostOptionKey`](nspersistentstoreremotechangenotificationpostoptionkey.md) option to [`true`](https://developer.apple.com/documentation/swift/true) to enable listening for remote change notifications.
+In the persistent container, set the [`NSPersistentStoreRemoteChangeNotificationPostOptionKey`](./nspersistentstoreremotechangenotificationpostoptionkey.md) option to [`true`](../Swift/true.md) to enable listening for remote change notifications.
 
 ```swift
 description?.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
@@ -54,11 +55,11 @@ In your view, add an observer to listen for remote change notifications.
     }
 ```
 
-##### Provide Details About a Transactions Source
+##### Provide details about a transaction’s source
 
-Each history transaction automatically includes the originating [`storeID`](nspersistenthistorytransaction/storeid.md), [`bundleID`](nspersistenthistorytransaction/bundleid.md) and [`processID`](nspersistenthistorytransaction/processid.md). You can supply additional information about the source of a change by setting each managed object context’s [`name`](nsmanagedobjectcontext/name.md) and [`transactionAuthor`](nsmanagedobjectcontext/transactionauthor.md).
+Each history transaction automatically includes the originating [`storeID`](./nspersistenthistorytransaction/storeid.md), [`bundleID`](./nspersistenthistorytransaction/bundleid.md) and [`processID`](./nspersistenthistorytransaction/processid.md). You can supply additional information about the source of a change by setting each managed object context’s [`name`](./nsmanagedobjectcontext/name.md) and [`transactionAuthor`](./nsmanagedobjectcontext/transactionauthor.md).
 
-Provide a unique [`name`](nsmanagedobjectcontext/name.md) for each context to identify it in the persistent history. The context’s [`name`](nsmanagedobjectcontext/name.md) becomes the persistent history transaction’s [`contextName`](nspersistenthistorytransaction/contextname.md). You only need to set this once per context.
+Provide a unique [`name`](./nsmanagedobjectcontext/name.md) for each context to identify it in the persistent history. The context’s [`name`](./nsmanagedobjectcontext/name.md) becomes the persistent history transaction’s [`contextName`](./nspersistenthistorytransaction/contextname.md). You only need to set this once per context.
 
 ```swift
 class PersistentContainer: NSPersistentContainer {
@@ -71,7 +72,7 @@ class PersistentContainer: NSPersistentContainer {
 }
 ```
 
-You can also set a [`transactionAuthor`](nsmanagedobjectcontext/transactionauthor.md) before each context save to differentiate among multiple call sites that modify the same context. The context’s [`transactionAuthor`](nsmanagedobjectcontext/transactionauthor.md) becomes the [`author`](nspersistenthistorytransaction/author.md) of subsequent persistent history transactions.
+You can also set a [`transactionAuthor`](./nsmanagedobjectcontext/transactionauthor.md) before each context save to differentiate among multiple call sites that modify the same context. The context’s [`transactionAuthor`](./nsmanagedobjectcontext/transactionauthor.md) becomes the [`author`](./nspersistenthistorytransaction/author.md) of subsequent persistent history transactions.
 
 ```swift
 let newItem = ShoppingItem(context: viewContext)
@@ -95,11 +96,11 @@ viewContext.perform {
 }
 ```
 
-Reset the context’s [`transactionAuthor`](nsmanagedobjectcontext/transactionauthor.md) to `nil` after saving the context to prevent misattribution of future transactions.
+Reset the context’s [`transactionAuthor`](./nsmanagedobjectcontext/transactionauthor.md) to `nil` after saving the context to prevent misattribution of future transactions.
 
-##### Keep Track of the Most Recent History
+##### Keep track of the most recent history
 
-Create an instance of [`NSPersistentHistoryToken`](nspersistenthistorytoken.md) to keep track of the most recent history.
+Create an instance of [`NSPersistentHistoryToken`](./nspersistenthistorytoken.md) to keep track of the most recent history.
 
 ```swift
 var lastToken: NSPersistentHistoryToken?
@@ -146,13 +147,13 @@ lazy var tokenFileURL: URL = {
 }()
 ```
 
-##### Request History
+##### Request history
 
-To request history, use the [`fetchHistory(after:)`](nspersistenthistorychangerequest/fetchhistory(after:)-3rmfm.md) type method on [`NSPersistentHistoryChangeRequest`](nspersistenthistorychangerequest.md).
+To request history, use the [`fetchHistory(after:)`](./nspersistenthistorychangerequest/fetchhistory%28after%29-3rmfm.md) type method on [`NSPersistentHistoryChangeRequest`](./nspersistenthistorychangerequest.md).
 
 > ❗ **Important**:  Execute the fetch request on a background context to avoid blocking the main thread.
 
-The following example shows a request to fetch new history since the last time you fetched history and convert the [`NSPersistentHistoryResult`](nspersistenthistoryresult.md) to an array of [`NSPersistentHistoryTransaction`](nspersistenthistorytransaction.md):
+The following example shows a request to fetch new history since the last time you fetched history and convert the [`NSPersistentHistoryResult`](./nspersistenthistoryresult.md) to an array of [`NSPersistentHistoryTransaction`](./nspersistenthistorytransaction.md):
 
 ```swift
 // Create a fetch history request with the last token.
@@ -175,9 +176,9 @@ guard let historyTransactions = historyResult as? [NSPersistentHistoryTransactio
 }
 ```
 
-Alternatively you can use [`fetchHistory(after:)`](nspersistenthistorychangerequest/fetchhistory(after:)-qi5b.md) to get history after a particular date, or after a particular a transaction.
+Alternatively you can use [`fetchHistory(after:)`](./nspersistenthistorychangerequest/fetchhistory%28after%29-qi5b.md) to get history after a particular date, or after a particular a transaction.
 
-##### Read History Transactions
+##### Read history transactions
 
 Each transaction represents a set of changes. Iterate through the array of transactions to learn their details. The following code loops through the results of the `fetchHistoryRequest` to inspect the properties of each transaction.
 
@@ -200,11 +201,11 @@ for transaction in history.reversed() {
 }
 ```
 
-A transaction’s [`changes`](nspersistenthistorytransaction/changes.md) array includes information about multiple changes. A single [`NSPersistentHistoryChange`](nspersistenthistorychange.md) represents the insertion, update, or deletion of an object.
+A transaction’s [`changes`](./nspersistenthistorytransaction/changes.md) array includes information about multiple changes. A single [`NSPersistentHistoryChange`](./nspersistenthistorychange.md) represents the insertion, update, or deletion of an object.
 
 Iterate through a transaction’s changes to identify each object that changed, the type of change that occurred, and any details about the change.
 
-In the case of an update, the [`updatedProperties`](nspersistenthistorychange/updatedproperties.md) set includes any updated attributes and relationships. In the case of a deletion, the [`tombstone`](nspersistenthistorychange/tombstone.md) dictionary includes key-value pairs for any attributes marked for preservation after deletion.
+In the case of an update, the [`updatedProperties`](./nspersistenthistorychange/updatedproperties.md) set includes any updated attributes and relationships. In the case of a deletion, the [`tombstone`](./nspersistenthistorychange/tombstone.md) dictionary includes key-value pairs for any attributes marked for preservation after deletion.
 
 ```swift
 for change in changes {
@@ -230,7 +231,7 @@ for change in changes {
 }
 ```
 
-##### Filter for Relevant Transactions
+##### Filter for relevant transactions
 
 Filter the history to narrow it to changes that affect the current view. The following code filters for changes to `ShoppingItem` instances, and it updates the last transaction token as it goes.
 
@@ -253,9 +254,9 @@ for transaction in transactions {
 
 Relevant changes may include all changes to a given entity, or more selectively, only changes to those properties that are visible on the screen.
 
-##### Merge Relevant Transactions
+##### Merge relevant transactions
 
-To merge the relevant changes into your view context, first obtain a notification by calling [`objectIDNotification()`](nspersistenthistorytransaction/objectidnotification().md) on the transaction. Then, pass the notification to [`mergeChanges(fromContextDidSave:)`](nsmanagedobjectcontext/mergechanges(fromcontextdidsave:).md).
+To merge the relevant changes into your view context, first obtain a notification by calling [`objectIDNotification()`](./nspersistenthistorytransaction/objectidnotification%28%29.md) on the transaction. Then, pass the notification to [`mergeChanges(fromContextDidSave:)`](./nsmanagedobjectcontext/mergechanges%28fromcontextdidsave%29.md).
 
 ```swift
 if filteredTransactions.isEmpty == false {
@@ -271,15 +272,15 @@ if filteredTransactions.isEmpty == false {
 }
 ```
 
-##### Access Attributes of Deleted Objects
+##### Access attributes of deleted objects
 
-After you delete an object from the store, its [`objectID`](nsmanagedobject/objectid.md) is no longer relevant. Identify a deleted object by recording select properties in its tombstone.
+After you delete an object from the store, its [`objectID`](./nsmanagedobject/objectid.md) is no longer relevant. Identify a deleted object by recording select properties in its tombstone.
 
 In the Core Data model editor, select an attribute. In the data model editor, select the Preserve After Deletion checkbox.
 
-![Screenshot showing the data model inspector, with the Preserve After Deletion checkbox selected under Advanced. ](/images/com.apple.coredata/media-3233383@2x.png)
+![Screenshot showing the data model inspector, with the Preserve After Deletion checkbox selected under Advanced. ](https://developer.apple.com/tutorials/images/com.apple.coredata/media-3233383@2x.png)
 
-In the persistent history, [`NSPersistentHistoryChangeType.delete`](nspersistenthistorychangetype/delete.md) changes include a [`tombstone`](nspersistenthistorychange/tombstone.md) dictionary with key-value pairs for any attributes marked for preservation after deletion.
+In the persistent history, [`NSPersistentHistoryChangeType.delete`](./nspersistenthistorychangetype/delete.md) changes include a [`tombstone`](./nspersistenthistorychange/tombstone.md) dictionary with key-value pairs for any attributes marked for preservation after deletion.
 
 ```swift
 var deletedAttributes = [String]()
@@ -299,7 +300,7 @@ for transaction in history.reversed() {
 
 Because persistent history tracking transactions take up space on disk, determine a clean-up strategy to remove them when you no longer need them. Before you purge history, ensure that your app and its clients have consumed the history they need.
 
-Similar to fetching history, you can use [`deleteHistory(before:)`](nspersistenthistorychangerequest/deletehistory(before:)-5kghb.md) to delete history older than a token, a transaction, or a date. For example, you can delete all transactions older than seven days:
+Similar to fetching history, you can use [`deleteHistory(before:)`](./nspersistenthistorychangerequest/deletehistory%28before%29-5kghb.md) to delete history older than a token, a transaction, or a date. For example, you can delete all transactions older than seven days:
 
 ```swift
 // Get the point in time seven days ago.
@@ -327,9 +328,10 @@ await backgroundContext.perform {
 
 ## See Also
 
-- [Accessing data when the store changes](accessing-data-when-the-store-changes.md)
+### Change processing
+- [Accessing data when the store changes](./accessing-data-when-the-store-changes.md)
   Guarantee that a context won’t see store changes until you tell it to look.
-- [Persistent history](persistent-history.md)
+- [Persistent history](./persistent-history.md)
   Use persistent history tracking to determine what changes have occurred in the store since the enabling of persistent history tracking.
 
 

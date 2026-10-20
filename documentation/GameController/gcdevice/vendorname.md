@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The manufacturer-provided name for the device, or the user’s name for the device.
@@ -20,15 +21,20 @@ The manufacturer-provided name for the device, or the user’s name for the devi
 var vendorName: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * vendorName;
+```
+
 #### Discussion
 
 The value of this property may be `nil` and may not be unique. Use this property to present information about the device to the user.
 
 ## See Also
 
-- [var productCategory: String](gcdevice/productcategory.md)
+### Getting device information
+- [var productCategory: String](./productcategory.md)
   The product category that identifies the type of controller.
-- [Product category constants](product-category-constants.md)
+- [Product category constants](../product-category-constants.md)
 
 
 ---

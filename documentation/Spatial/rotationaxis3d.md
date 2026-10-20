@@ -1,7 +1,8 @@
 # RotationAxis3D
 
 **Framework**: Spatial  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 3D rotation axis.
 
@@ -20,111 +21,116 @@ A 3D rotation axis.
 struct RotationAxis3D
 ```
 
+```c
+typedef union { ... } SPRotationAxis3D;
+```
+
 ## Topics
 
 ### Creating a 3D rotation axis structure
-- [init()](rotationaxis3d/init.md)
+- [init()](./rotationaxis3d/init%28%29.md)
   Creates a rotation axis.
-- [init(simd_float3)](rotationaxis3d/init(_:)-96si4.md)
+- [init(simd_float3)](./rotationaxis3d/init%28_%29-96si4.md)
   Creates a rotation axis from the specified single-precision vector.
-- [init(simd_double3)](rotationaxis3d/init(_:)-804sx.md)
+- [init(simd_double3)](./rotationaxis3d/init%28_%29-804sx.md)
   Creates a rotation axis from the specified double-precision vector.
-- [init(vector: simd_double3)](rotationaxis3d/init(vector:).md)
+- [init(vector: simd_double3)](./rotationaxis3d/init%28vector%29.md)
   Creates a rotation axis from a three-element double-precision vector.
-- [init(Vector3D)](rotationaxis3d/init(_:)-2zdal.md)
+- [init(Vector3D)](./rotationaxis3d/init%28_%29-2zdal.md)
   Creates a rotation axis from a Spatial vector.
-- [init(x: Double, y: Double, z: Double)](rotationaxis3d/init(x:y:z:)-3z5nm.md)
+- [init(x: Double, y: Double, z: Double)](./rotationaxis3d/init%28x,y,z%29-3z5nm.md)
   Creates a rotation axis from the specified double-precision values.
-- [init<T>(x: T, y: T, z: T)](rotationaxis3d/init(x:y:z:)-1x93q.md)
+- [init<T>(x: T, y: T, z: T)](./rotationaxis3d/init%28x,y,z%29-1x93q.md)
   Creates a rotation axis from the specified floating-point values.
 ### Checking characteristics
-- [var x: Double](rotationaxis3d/x-swift.property.md)
+- [var x: Double](./rotationaxis3d/x-swift.property.md)
   The x-coordinate value.
-- [var y: Double](rotationaxis3d/y-swift.property.md)
+- [var y: Double](./rotationaxis3d/y-swift.property.md)
   The y-coordinate value.
-- [var z: Double](rotationaxis3d/z-swift.property.md)
+- [var z: Double](./rotationaxis3d/z-swift.property.md)
   The z-coordinate value.
-- [var vector: simd_double3](rotationaxis3d/vector.md)
+- [var vector: simd_double3](./rotationaxis3d/vector.md)
   A simd three-element vector that contains the x-, y-, and z-coordinate values.
-- [var isZero: Bool](rotationaxis3d/iszero.md)
+- [var isZero: Bool](./rotationaxis3d/iszero.md)
   A Boolean value that indicates whether the rotation axis is zero.
 ### Constants
-- [static let x: RotationAxis3D](rotationaxis3d/x-swift.type.property.md)
+- [static let x: RotationAxis3D](./rotationaxis3d/x-swift.type.property.md)
   The x-axis, expressed in unit coordinates.
-- [static let y: RotationAxis3D](rotationaxis3d/y-swift.type.property.md)
+- [static let y: RotationAxis3D](./rotationaxis3d/y-swift.type.property.md)
   The y-axis, expressed in unit coordinates.
-- [static let z: RotationAxis3D](rotationaxis3d/z-swift.type.property.md)
+- [static let z: RotationAxis3D](./rotationaxis3d/z-swift.type.property.md)
   The z-axis, expressed in unit coordinates.
-- [static let xy: RotationAxis3D](rotationaxis3d/xy.md)
+- [static let xy: RotationAxis3D](./rotationaxis3d/xy.md)
   The xy-axis, expressed in unit coordinates.
-- [static let yz: RotationAxis3D](rotationaxis3d/yz.md)
+- [static let yz: RotationAxis3D](./rotationaxis3d/yz.md)
   The yz-axis, expressed in unit coordinates.
-- [static let xz: RotationAxis3D](rotationaxis3d/xz.md)
+- [static let xz: RotationAxis3D](./rotationaxis3d/xz.md)
   The xz-axis, expressed in unit coordinates.
-- [static let xyz: RotationAxis3D](rotationaxis3d/xyz.md)
+- [static let xyz: RotationAxis3D](./rotationaxis3d/xyz.md)
   The xyz-axis, expressed in unit coordinates.
-- [static let zero: RotationAxis3D](rotationaxis3d/zero.md)
+- [static let zero: RotationAxis3D](./rotationaxis3d/zero.md)
   The rotation axis with the zero value.
 ### Deprecated symbols
-- [var simd: simd_double3](rotationaxis3d/simd.md)
+- [var simd: simd_double3](./rotationaxis3d/simd.md)
   A simd three-element vector that contains the x-, y-, and z-coordinate values.
 ### Initializers
-- [init(simd_packed_double4)](rotationaxis3d/init(_:)-ctks.md)
+- [init(simd_packed_double4)](./rotationaxis3d/init%28_%29-ctks.md)
   Creates a Spatial rotation axis from a simd packed vector.
-- [init(RotationAxis3DFloat)](rotationaxis3d/init(_:)-lvvq.md)
+- [init(RotationAxis3DFloat)](./rotationaxis3d/init%28_%29-lvvq.md)
   Returns a double-precision rotation axis from a single-precision rotation axis.
 ### Default Implementations
-- [CustomReflectable Implementations](rotationaxis3d/customreflectable-implementations.md)
-- [Decodable Implementations](rotationaxis3d/decodable-implementations.md)
-- [Encodable Implementations](rotationaxis3d/encodable-implementations.md)
-- [Equatable Implementations](rotationaxis3d/equatable-implementations.md)
-- [Hashable Implementations](rotationaxis3d/hashable-implementations.md)
+- [CustomReflectable Implementations](./rotationaxis3d/customreflectable-implementations.md)
+- [Decodable Implementations](./rotationaxis3d/decodable-implementations.md)
+- [Encodable Implementations](./rotationaxis3d/encodable-implementations.md)
+- [Equatable Implementations](./rotationaxis3d/equatable-implementations.md)
+- [Hashable Implementations](./rotationaxis3d/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomReflectable](../swift/customreflectable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomReflectable](../Swift/customreflectable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Point3D](point3d.md)
+### 3D primitives
+- [struct Point3D](./point3d.md)
   A point in a 3D coordinate system.
-- [struct Point3DFloat](point3dfloat.md)
+- [struct Point3DFloat](./point3dfloat.md)
   A single-precision structure that contains a point in a three-dimensional coordinate system.
-- [struct Size3D](size3d.md)
+- [struct Size3D](./size3d.md)
   A size that describes width, height, and depth in a 3D coordinate system.
-- [struct Size3DFloat](size3dfloat.md)
+- [struct Size3DFloat](./size3dfloat.md)
   A single-precision structure that contains width, height, and depth values.
-- [struct Rect3D](rect3d.md)
+- [struct Rect3D](./rect3d.md)
   A rectangle in a 3D coordinate system.
-- [struct Rect3DFloat](rect3dfloat.md)
+- [struct Rect3DFloat](./rect3dfloat.md)
   A single-precision structure that contains the location and dimensions of a 3D rectangle.
-- [struct Rotation3D](rotation3d.md)
+- [struct Rotation3D](./rotation3d.md)
   A rotation in three dimensions.
-- [struct Rotation3DFloat](rotation3dfloat.md)
+- [struct Rotation3DFloat](./rotation3dfloat.md)
   A single-precision structure that represents a rotation in three dimensions.
-- [struct RotationAxis3DFloat](rotationaxis3dfloat.md)
+- [struct RotationAxis3DFloat](./rotationaxis3dfloat.md)
   A 3D axis.
-- [struct Pose3D](pose3d.md)
+- [struct Pose3D](./pose3d.md)
   A structure that contains a 3D position and a 3D rotation.
-- [struct Pose3DFloat](pose3dfloat.md)
+- [struct Pose3DFloat](./pose3dfloat.md)
   A single-precision structure that contains a position and rotation.
-- [struct ScaledPose3D](scaledpose3d.md)
+- [struct ScaledPose3D](./scaledpose3d.md)
   A structure that contains a position, rotation, and scale.
-- [struct ScaledPose3DFloat](scaledpose3dfloat.md)
+- [struct ScaledPose3DFloat](./scaledpose3dfloat.md)
   A structure that contains a position, rotation, and scale.
-- [struct SphericalCoordinates3D](sphericalcoordinates3d.md)
+- [struct SphericalCoordinates3D](./sphericalcoordinates3d.md)
   A structure that defines spherical coordinates in radial, inclination, azimuthal order.
-- [struct SphericalCoordinates3DFloat](sphericalcoordinates3dfloat.md)
+- [struct SphericalCoordinates3DFloat](./sphericalcoordinates3dfloat.md)
   A single-precision structure that defines spherical coordinates in radial, inclination, azimuthal order.
 
 

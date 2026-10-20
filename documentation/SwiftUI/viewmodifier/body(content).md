@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Gets the current body of the caller.
@@ -26,11 +27,18 @@ Gets the current body of the caller.
 
 `content` is a proxy for the view that will have the modifier represented by `Self` applied to it.
 
+## Default Implementations
+
+### ViewModifier Implementations
+- [func body(content: Self.Content) -> Self.Body](./body%28content%29-70h6f.md)
+  Gets the current body of the caller.
+
 ## See Also
 
-- [associatedtype Body : View](viewmodifier/body.md)
+### Creating a view modifier
+- [associatedtype Body : View](./body.md)
   The type of view representing the body.
-- [ViewModifier.Content](viewmodifier/content.md)
+- [ViewModifier.Content](./content.md)
   The content view type passed to `body()`.
 
 

@@ -1,15 +1,16 @@
 # Callback Identifiers
 
-**Framework**: Core Foundation
+**Framework**: Core Foundation  
+**Role**: API Collection
 
 Constants that identify the read and write callbacks.
 
 ## Topics
 
 ### Constants
-- [var kCFFileDescriptorReadCallBack: CFOptionFlags](kcffiledescriptorreadcallback.md)
+- [var kCFFileDescriptorReadCallBack: CFOptionFlags](./kcffiledescriptorreadcallback.md)
   Identifies the read callback.
-- [var kCFFileDescriptorWriteCallBack: CFOptionFlags](kcffiledescriptorwritecallback.md)
+- [var kCFFileDescriptorWriteCallBack: CFOptionFlags](./kcffiledescriptorwritecallback.md)
   Identifies the write callback.
 
 

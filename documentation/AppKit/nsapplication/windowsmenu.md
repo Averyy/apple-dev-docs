@@ -1,17 +1,22 @@
 # windowsMenu
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The Window menu of the app.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var windowsMenu: NSMenu? { get set }
+```
+
+```objc
+@property (strong, nullable) NSMenu * windowsMenu;
 ```
 
 #### Return Value
@@ -24,13 +29,14 @@ This property contains the app’s Window menu or `nil` if such a menu does not 
 
 ## See Also
 
-- [func addWindowsItem(NSWindow, title: String, filename: Bool)](nsapplication/addwindowsitem(_:title:filename:).md)
+### Managing the Window Menu
+- [func addWindowsItem(NSWindow, title: String, filename: Bool)](./addwindowsitem%28_,title,filename%29.md)
   Adds an item to the Window menu for a given window.
-- [func changeWindowsItem(NSWindow, title: String, filename: Bool)](nsapplication/changewindowsitem(_:title:filename:).md)
+- [func changeWindowsItem(NSWindow, title: String, filename: Bool)](./changewindowsitem%28_,title,filename%29.md)
   Changes the item for a given window in the Window menu to a given string.
-- [func removeWindowsItem(NSWindow)](nsapplication/removewindowsitem(_:).md)
+- [func removeWindowsItem(NSWindow)](./removewindowsitem%28_%29.md)
   Removes the Window menu item for a given window.
-- [func updateWindowsItem(NSWindow)](nsapplication/updatewindowsitem(_:).md)
+- [func updateWindowsItem(NSWindow)](./updatewindowsitem%28_%29.md)
   Updates the Window menu item for a given window to reflect the edited status of that window.
 
 

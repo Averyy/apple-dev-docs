@@ -1,7 +1,8 @@
 # method
 
 **Framework**: ColorSync  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The method used to tone map content above reference white.
 

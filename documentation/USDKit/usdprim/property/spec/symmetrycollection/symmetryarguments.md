@@ -1,7 +1,8 @@
 # symmetryArguments
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symmetry arguments dictionary authored on this property.
 

@@ -1,7 +1,8 @@
 # insertCollaborationItemProvider(_:completionHandler:)
 
 **Framework**: Message UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -12,7 +13,15 @@
 ## Declaration
 
 ```swift
+func insertCollaborationItemProvider(_ itemProvider: NSItemProvider, completionHandler: @escaping (Bool) -> Void)
+```
+
+```swift
 func insertCollaborationItemProvider(_ itemProvider: NSItemProvider) async -> Bool
+```
+
+```objc
+- (void) insertCollaborationItemProvider:(NSItemProvider *) itemProvider completionHandler:(void (^)(BOOL )) completionHandler;
 ```
 
 #### Discussion

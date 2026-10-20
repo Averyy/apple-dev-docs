@@ -1,7 +1,8 @@
 # accessoryItem
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional button that appears at the trailing edge of the tool picker.
 
@@ -15,6 +16,10 @@ An optional button that appears at the trailing edge of the tool picker.
 
 ```swift
 var accessoryItem: UIBarButtonItem? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) UIBarButtonItem * accessoryItem;
 ```
 
 #### Discussion

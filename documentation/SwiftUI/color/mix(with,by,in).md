@@ -1,7 +1,8 @@
 # mix(with:by:in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a version of self mixed with `rhs` by the amount specified by `fraction`.
 
@@ -32,13 +33,14 @@ A new `Color` based on `self` and `rhs`.
 
 ## See Also
 
-- [func opacity(Double) -> Color](color/opacity(_:).md)
+### Modifying a color
+- [func opacity(Double) -> Color](./opacity%28_%29.md)
   Multiplies the opacity of the color by the given amount.
-- [var gradient: AnyGradient](color/gradient.md)
+- [var gradient: AnyGradient](./gradient.md)
   Returns the standard gradient for the color `self`.
-- [func exposureAdjust(Double) -> Color](color/exposureadjust(_:).md)
+- [func exposureAdjust(Double) -> Color](./exposureadjust%28_%29.md)
   Returns a new color with an exposure adjustment applied.
-- [func headroom(Double?) -> Color](color/headroom(_:).md)
+- [func headroom(Double?) -> Color](./headroom%28_%29.md)
   Creates a new color with specified HDR content headroom.
 
 

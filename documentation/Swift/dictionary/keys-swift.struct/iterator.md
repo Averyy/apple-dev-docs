@@ -1,7 +1,8 @@
 # Dictionary.Keys.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides the collection’s iteration interface and encapsulates its iteration state.
 
@@ -21,6 +22,8 @@ A type that provides the collection’s iteration interface and encapsulates its
 struct Iterator
 ```
 
+Available when `Key` conforms to `Hashable`.
+
 #### Overview
 
 By default, a collection conforms to the `Sequence` protocol by supplying `IndexingIterator` as its associated `Iterator` type.
@@ -28,18 +31,18 @@ By default, a collection conforms to the `Sequence` protocol by supplying `Index
 ## Topics
 
 ### Instance Methods
-- [func next() -> Key?](dictionary/keys-swift.struct/iterator/next.md)
+- [func next() -> Key?](./iterator/next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 ### Type Aliases
-- [Dictionary.Keys.Iterator.Element](dictionary/keys-swift.struct/iterator/element.md)
+- [Dictionary.Keys.Iterator.Element](./iterator/element.md)
   The type of element traversed by the iterator.
 
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [IteratorProtocol](../../iteratorprotocol.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
 
 
 ---

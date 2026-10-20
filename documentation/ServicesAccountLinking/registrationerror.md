@@ -1,7 +1,8 @@
 # RegistrationError
 
 **Framework**: ServicesAccountLinking  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Registration error codes.
 
@@ -19,29 +20,30 @@ struct RegistrationError
 ## Topics
 
 ### Type Properties
-- [static var errorDomain: String](registrationerror/errordomain.md)
-- [static var failed: RegistrationError.Code](registrationerror/failed.md)
+- [static var errorDomain: String](./registrationerror/errordomain.md)
+- [static var failed: RegistrationError.Code](./registrationerror/failed.md)
   Registration failed.
-- [static var notEligible: RegistrationError.Code](registrationerror/noteligible.md)
+- [static var notEligible: RegistrationError.Code](./registrationerror/noteligible.md)
   The application is not registered as an authorized partner.
-- [static var rateLimited: RegistrationError.Code](registrationerror/ratelimited.md)
+- [static var rateLimited: RegistrationError.Code](./registrationerror/ratelimited.md)
 ### Enumerations
-- [RegistrationError.Code](registrationerror/code.md)
+- [RegistrationError.Code](./registrationerror/code.md)
   Registration error codes.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let RegistrationErrorDomain: String](registrationerrordomain.md)
+### Error handling
+- [let RegistrationErrorDomain: String](./registrationerrordomain.md)
   Error domain for account registration failures.
 
 

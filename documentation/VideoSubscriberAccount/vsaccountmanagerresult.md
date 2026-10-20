@@ -1,7 +1,8 @@
 # VSAccountManagerResult
 
 **Framework**: Video Subscriber Account  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a request made for subscriber account information.
 
@@ -9,7 +10,7 @@ An object that represents a request made for subscriber account information.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
-- macOS ?+
+- macOS
 - tvOS 10.0+
 - visionOS 1.0+
 
@@ -19,39 +20,44 @@ An object that represents a request made for subscriber account information.
 class VSAccountManagerResult
 ```
 
+```objc
+@interface VSAccountManagerResult : NSObject
+```
+
 #### Overview
 
-The system returns this object to your app when you app calls [`enqueue(_:completionHandler:)`](vsaccountmanager/enqueue(_:completionhandler:).md). Use this object to cancel the request with [`cancel()`](vsaccountmanagerresult/cancel().md) while the request is in progress.
+The system returns this object to your app when you app calls [`enqueue(_:completionHandler:)`](./vsaccountmanager/enqueue%28_,completionhandler%29.md). Use this object to cancel the request with [`cancel()`](./vsaccountmanagerresult/cancel%28%29.md) while the request is in progress.
 
 ## Topics
 
 ### Cancelling a Request
-- [func cancel()](vsaccountmanagerresult/cancel.md)
+- [func cancel()](./vsaccountmanagerresult/cancel%28%29.md)
   Cancels an in-progress request for subscriber account information.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func enqueue(VSAccountMetadataRequest, completionHandler: (VSAccountMetadata?, (any Error)?) -> Void) -> VSAccountManagerResult](vsaccountmanager/enqueue(_:completionhandler:).md)
+### Enqueuing requests
+- [func enqueue(VSAccountMetadataRequest, completionHandler: (VSAccountMetadata?, (any Error)?) -> Void) -> VSAccountManagerResult](./vsaccountmanager/enqueue%28_,completionhandler%29.md)
   Submits a request for subscriber account information.
-- [class VSAccountMetadataRequest](vsaccountmetadatarequest.md)
+- [class VSAccountMetadataRequest](./vsaccountmetadatarequest.md)
   An object that specifies what subscriber account information your app retrieves.
-- [class VSAccountMetadata](vsaccountmetadata.md)
+- [class VSAccountMetadata](./vsaccountmetadata.md)
   A collection of information for a subscriber’s account.
-- [class VSAccountProviderResponse](vsaccountproviderresponse.md)
+- [class VSAccountProviderResponse](./vsaccountproviderresponse.md)
   An object that contains the response from the account provider.
-- [struct VSAccountProviderAuthenticationScheme](vsaccountproviderauthenticationscheme.md)
+- [struct VSAccountProviderAuthenticationScheme](./vsaccountproviderauthenticationscheme.md)
   Authentication schemes for account provider requests and responses.
 
 

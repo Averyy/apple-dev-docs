@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Core Haptics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an event type from a raw string value.
 
@@ -9,7 +10,7 @@ Initializes an event type from a raw string value.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 

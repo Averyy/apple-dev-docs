@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type for using a markdown source position as an attribute.
 
@@ -24,27 +25,28 @@ enum MarkdownSourcePositionAttribute
 ## Topics
 
 ### Encoding and Decoding
-- [static let name: String](attributescopes/foundationattributes/markdownsourcepositionattribute/name.md)
+- [static let name: String](./markdownsourcepositionattribute/name.md)
   The name of the attribute, for use in encoding and decoding.
-- [AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute.Value](attributescopes/foundationattributes/markdownsourcepositionattribute/value.md)
+- [AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute.Value](./markdownsourcepositionattribute/value.md)
   The value type of a Markdown source position attribute.
 ### Supporting Types
-- [AttributedString.MarkdownSourcePosition](attributedstring/markdownsourceposition.md)
+- [AttributedString.MarkdownSourcePosition](../../attributedstring/markdownsourceposition.md)
   The position of attributed string text in its original Markdown source string.
 
 ## Relationships
 
 ### Conforms To
-- [AttributedStringKey](attributedstringkey.md)
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [DecodableAttributedStringKey](decodableattributedstringkey.md)
-- [EncodableAttributedStringKey](encodableattributedstringkey.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AttributedStringKey](../../attributedstringkey.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Copyable](../../../Swift/copyable.md)
+- [DecodableAttributedStringKey](../../decodableattributedstringkey.md)
+- [EncodableAttributedStringKey](../../encodableattributedstringkey.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let markdownSourcePosition: AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute](attributescopes/foundationattributes/markdownsourceposition.md)
+### Using Markdown source position attributes
+- [let markdownSourcePosition: AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute](./markdownsourceposition.md)
   A property for accessing a Markdown source position attribute.
 
 

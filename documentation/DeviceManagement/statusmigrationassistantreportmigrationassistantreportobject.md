@@ -1,7 +1,8 @@
 # StatusMigrationAssistantReportMigrationAssistantReportObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The Migration Assistant migration status.
 
@@ -10,7 +11,7 @@ The Migration Assistant migration status.
 
 ## Declaration
 
-```swift
+```
 object StatusMigrationAssistantReportMigrationAssistantReportObject
 ```
 

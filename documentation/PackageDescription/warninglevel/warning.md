@@ -1,7 +1,8 @@
 # WarningLevel.warning
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Treat as a warning.
 

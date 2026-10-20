@@ -1,7 +1,8 @@
 # willSendAction
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var willSendAction: NotificationCenter.BaseMessageIdentifier<NSMenu.WillSendActionMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSMenu.WillSendActionMessage>`.
 
 
 ---

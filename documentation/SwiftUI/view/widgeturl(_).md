@@ -1,7 +1,8 @@
 # widgetURL(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the URL to open in the containing app when the user clicks the widget.
 
@@ -34,9 +35,10 @@ Widgets support one `widgetURL` modifier in their view hierarchy. If multiple vi
 
 ## See Also
 
-- [func onOpenURL(perform: (URL) -> ()) -> some View](view/onopenurl(perform:).md)
+### URLs
+- [func onOpenURL(perform: (URL) -> ()) -> some View](./onopenurl%28perform%29.md)
   Registers a handler to invoke in response to a URL that your app receives.
-- [func onOpenURL(prefersInApp: Bool) -> some View](view/onopenurl(prefersinapp:).md)
+- [func onOpenURL(prefersInApp: Bool) -> some View](./onopenurl%28prefersinapp%29.md)
   Sets an `OpenURLAction` that prefers opening URL with an in-app browser. The `handler` closure takes a URL as input, and returns a `OpenURLAction.Result` that indicates the outcome of the action.
 
 

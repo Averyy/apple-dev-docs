@@ -1,7 +1,8 @@
 # IgnoresDisplayFrequency
 
 **Framework**: TipKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Controls whether a tip obeys the preconfigured display frequency interval.
 
@@ -22,7 +23,7 @@ typealias IgnoresDisplayFrequency = Tips.IgnoresDisplayFrequency
 
 #### Overview
 
-Use this option to allow a tip to appear even if the [`displayFrequency(_:)`](tips/configurationoption/displayfrequency(_:).md) has not been satisfied.
+Use this option to allow a tip to appear even if the [`displayFrequency(_:)`](../tips/configurationoption/displayfrequency%28_%29.md) has not been satisfied.
 
 The default value of this option is false.
 
@@ -36,13 +37,14 @@ struct FavoriteBackyardTip: Tip {
 
 ## See Also
 
-- [var options: [any TipOption]](tip/options.md)
+### Customizing tip behavior
+- [var options: [any TipOption]](./options.md)
   Customizations for a tip.
-- [typealias Option](tip/option.md)
+- [typealias Option](./option.md)
   A type that represents the various customizations that you can make to a tip’s behavior.
-- [typealias MaxDisplayCount](tip/maxdisplaycount.md)
+- [typealias MaxDisplayCount](./maxdisplaycount.md)
   Specifies the maximum number of times a tip displays before the system automatically invalidates it.
-- [typealias MaxDisplayDuration](tip/maxdisplayduration.md)
+- [typealias MaxDisplayDuration](./maxdisplayduration.md)
   Specifies the maximum amount of time a tip is displayed before it is invalidated.
 
 

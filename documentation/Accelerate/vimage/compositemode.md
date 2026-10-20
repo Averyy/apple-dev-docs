@@ -1,7 +1,8 @@
 # vImage.CompositeMode
 
 **Framework**: Accelerate  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify whether the format of layers is premultiplied or nonpremultiplied.
 
@@ -11,7 +12,7 @@ Constants that specify whether the format of layers is premultiplied or nonpremu
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,39 +24,41 @@ enum CompositeMode<ComponentType>
 ## Topics
 
 ### Enumeration Cases
-- [vImage.CompositeMode.nonpremultiplied](vimage/compositemode/nonpremultiplied.md)
+- [vImage.CompositeMode.nonpremultiplied](./compositemode/nonpremultiplied.md)
   Composite two non-premultiplied images, to produce a non-premultiplied result.
-- [vImage.CompositeMode.nonpremultipliedToPremultiplied](vimage/compositemode/nonpremultipliedtopremultiplied.md)
+- [vImage.CompositeMode.nonpremultipliedToPremultiplied](./compositemode/nonpremultipliedtopremultiplied.md)
   Blends a nonpremultiplied top image into a premultiplied bottom image and returns a premultiplied result.
-- [vImage.CompositeMode.premultiplied](vimage/compositemode/premultiplied.md)
+- [vImage.CompositeMode.premultiplied](./compositemode/premultiplied.md)
   Blends two premultiplied images to produce a premultiplied result.
-- [vImage.CompositeMode.premultipliedWithConstantAlpha(_:)](vimage/compositemode/premultipliedwithconstantalpha(_:).md)
+- [vImage.CompositeMode.premultipliedWithConstantAlpha(_:)](./compositemode/premultipliedwithconstantalpha%28_%29.md)
   Performs premultiplied alpha compositing of two images, using a single alpha value for the entire image.
 
 ## See Also
 
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+### Related Documentation
+- [Compositing images with alpha blending](../compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [vImage.BlendMode](vimage/blendmode.md)
+### Enumerations
+- [vImage.BlendMode](./blendmode.md)
   Constants that specify an alpha blending mode.
-- [vImage.BufferType](vimage/buffertype.md)
+- [vImage.BufferType](./buffertype.md)
   Codes that represent vImage buffer types.
-- [vImage.ChannelOrdering](vimage/channelordering.md)
+- [vImage.ChannelOrdering](./channelordering.md)
   Constants that specify the channel ordering of a pixel buffer.
-- [vImage.EdgeMode](vimage/edgemode.md)
+- [vImage.EdgeMode](./edgemode.md)
   Constants that specify edge modes for convolution operations.
-- [vImage.Error](vimage/error.md)
+- [vImage.Error](./error.md)
   An error that occurs during a vImage operation.
-- [vImage.FloodFillConnectivity](vimage/floodfillconnectivity.md)
-- [vImage.Gamma](vimage/gamma.md)
+- [vImage.FloodFillConnectivity](./floodfillconnectivity.md)
+- [vImage.Gamma](./gamma.md)
   Describes either a used-defined or constant gamma.
-- [vImage.MorphologyOperation](vimage/morphologyoperation.md)
+- [vImage.MorphologyOperation](./morphologyoperation.md)
   Describes which morphology operation to perform.
-- [vImage.ReflectionAxis](vimage/reflectionaxis.md)
+- [vImage.ReflectionAxis](./reflectionaxis.md)
   The axis to reflect an image.
-- [vImage.Rotation](vimage/rotation.md)
+- [vImage.Rotation](./rotation.md)
   The angle to rotate an image.
-- [vImage.ShearDirection](vimage/sheardirection.md)
+- [vImage.ShearDirection](./sheardirection.md)
   The shear direction.
 
 

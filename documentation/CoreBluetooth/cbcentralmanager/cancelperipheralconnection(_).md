@@ -1,7 +1,8 @@
 # cancelPeripheralConnection(_:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Cancels an active or pending local connection to a peripheral.
 
@@ -20,9 +21,13 @@ Cancels an active or pending local connection to a peripheral.
 func cancelPeripheralConnection(_ peripheral: CBPeripheral)
 ```
 
+```objc
+- (void) cancelPeripheralConnection:(CBPeripheral *) peripheral;
+```
+
 #### Discussion
 
-This method is nonblocking, and any [`CBPeripheral`](cbperipheral.md) class commands that are still pending to `peripheral` may not complete. Because other apps may still have a connection to the peripheral, canceling a local connection doesn’t guarantee that the underlying physical link is immediately disconnected. From the app’s perspective, however, the peripheral is effectively disconnected, and the central manager object calls the [`centralManager(_:didDisconnectPeripheral:error:)`](cbcentralmanagerdelegate/centralmanager(_:diddisconnectperipheral:error:).md) method of its delegate object.
+This method is nonblocking, and any [`CBPeripheral`](../cbperipheral.md) class commands that are still pending to `peripheral` may not complete. Because other apps may still have a connection to the peripheral, canceling a local connection doesn’t guarantee that the underlying physical link is immediately disconnected. From the app’s perspective, however, the peripheral is effectively disconnected, and the central manager object calls the [`centralManager(_:didDisconnectPeripheral:error:)`](../cbcentralmanagerdelegate/centralmanager%28_,diddisconnectperipheral,error%29.md) method of its delegate object.
 
 ## Parameters
 
@@ -30,9 +35,10 @@ This method is nonblocking, and any [`CBPeripheral`](cbperipheral.md) class comm
 
 ## See Also
 
-- [func connect(CBPeripheral, options: [String : Any]?)](cbcentralmanager/connect(_:options:).md)
+### Establishing or Canceling Connections with Peripherals
+- [func connect(CBPeripheral, options: [String : Any]?)](./connect%28_,options%29.md)
   Establishes a local connection to a peripheral.
-- [Peripheral Connection Options](peripheral-connection-options.md)
+- [Peripheral Connection Options](../peripheral-connection-options.md)
   Keys used to pass options when connecting to a peripheral.
 
 

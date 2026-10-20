@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Calculates the value of the animation at the specified time.
@@ -30,13 +31,13 @@ The current value of the animation, or `nil` if the animation has finished.
 
 Implement this method to calculate and return the value of the animation at a given point in time. If the animation has finished, return `nil` as the value. This signals to the system that it can remove the animation.
 
-If your custom animation needs to maintain state between calls to the `animate(value:time:context:)` method, store the state data in `context`. This makes the data available to the method next time the system calls it. To learn more about managing state data in a custom animation, see [`AnimationContext`](animationcontext.md).
+If your custom animation needs to maintain state between calls to the `animate(value:time:context:)` method, store the state data in `context`. This makes the data available to the method next time the system calls it. To learn more about managing state data in a custom animation, see [`AnimationContext`](../animationcontext.md).
 
 ## Parameters
 
 - `value`: The vector to animate towards.
 - `time`: The elapsed time since the start of the animation.
-- `context`: An instance of [`AnimationContext`](animationcontext.md) that provides access to state and the animation environment.
+- `context`: An instance of [`AnimationContext`](../animationcontext.md) that provides access to state and the animation environment.
 
 
 ---

@@ -1,7 +1,8 @@
 # es_delete_client(_:)
 
 **Framework**: Endpoint Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Destroys and disconnects a client instance from the Endpoint Security system.
 
@@ -14,9 +15,13 @@ Destroys and disconnects a client instance from the Endpoint Security system.
 func es_delete_client(_ client: OpaquePointer?) -> es_return_t
 ```
 
+```c
+extern es_return_t es_delete_client(es_client_t *client);
+```
+
 #### Return Value
 
-A value indicating whether deletion succeeded. [`ES_RETURN_ERROR`](es_return_error.md) indicates that shutdown encountered an error, which results in a resource leak.
+A value indicating whether deletion succeeded. [`ES_RETURN_ERROR`](./es_return_error.md) indicates that shutdown encountered an error, which results in a resource leak.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # DynamicInstructions.SessionProperty
 
 **Framework**: Foundation Models  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A property wrapper that provides access to a session property within dynamic instructions.
 
@@ -21,11 +22,12 @@ typealias SessionProperty = LanguageModelSession.SessionProperty
 
 ## See Also
 
-- [var body: Self.Body](dynamicinstructions/body-swift.property.md)
+### Implementing dynamic instructions
+- [var body: Self.Body](./body-swift.property.md)
   The content of the dynamic instructions.
-- [associatedtype Body : DynamicInstructions](dynamicinstructions/body-swift.associatedtype.md)
+- [associatedtype Body : DynamicInstructions](./body-swift.associatedtype.md)
   The type of dynamic instructions that represent these instructions.
-- [DynamicInstructions.ForEach](dynamicinstructions/foreach.md)
+- [DynamicInstructions.ForEach](./foreach.md)
   A shorthand for producing content for each element of a collection.
 
 

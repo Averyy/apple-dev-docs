@@ -1,7 +1,8 @@
 # localeIdentifier
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The language of the voice.  An `NSString`
 
@@ -14,25 +15,30 @@ The language of the voice.  An `NSString`
 static let localeIdentifier: NSSpeechSynthesizer.VoiceAttributeKey
 ```
 
+```c
+extern NSVoiceAttributeKey const NSVoiceLocaleIdentifier;
+```
+
 #### Discussion
 
-The canonical locale identifier string describing the voice’s locale. A locale is generally composed of three pieces of ordered information: a language code, a region code, and a variant code. For more information, see [`NSLocale`](https://developer.apple.com/documentation/foundation/nslocale).
+The canonical locale identifier string describing the voice’s locale. A locale is generally composed of three pieces of ordered information: a language code, a region code, and a variant code. For more information, see [`NSLocale`](../../../Foundation/nslocale.md).
 
 ## See Also
 
-- [static let identifier: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/identifier.md)
+### Voice Attribute Keys
+- [static let identifier: NSSpeechSynthesizer.VoiceAttributeKey](./identifier.md)
   A unique string identifying the voice. The identifiers of the system voices are listed in `Listing 1`.
-- [static let name: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/name.md)
+- [static let name: NSSpeechSynthesizer.VoiceAttributeKey](./name.md)
   The name of the voice suitable for display. An `NSString`.
-- [static let age: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/age.md)
+- [static let age: NSSpeechSynthesizer.VoiceAttributeKey](./age.md)
   The perceived age (in years) of the voice. An `NSString`
-- [static let gender: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/gender.md)
+- [static let gender: NSSpeechSynthesizer.VoiceAttributeKey](./gender.md)
   The perceived gender of the voice. The supported values are listed in `Voice Gender Keys`.  An `NSString`
-- [static let demoText: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/demotext.md)
+- [static let demoText: NSSpeechSynthesizer.VoiceAttributeKey](./demotext.md)
   A demonstration string to speak. An `NSString`
-- [static let supportedCharacters: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/supportedcharacters.md)
+- [static let supportedCharacters: NSSpeechSynthesizer.VoiceAttributeKey](./supportedcharacters.md)
   A list of Unicode character id ranges that define the Unicode characters supported by this voice.
-- [static let individuallySpokenCharacters: NSSpeechSynthesizer.VoiceAttributeKey](nsspeechsynthesizer/voiceattributekey/individuallyspokencharacters.md)
+- [static let individuallySpokenCharacters: NSSpeechSynthesizer.VoiceAttributeKey](./individuallyspokencharacters.md)
   A list of Unicode character id ranges that define the Unicode characters that can be spoken in character-by-character mode by this voice.
 
 

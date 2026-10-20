@@ -1,7 +1,8 @@
 # getDecodeTimeStamp(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,11 +21,12 @@ mutating func getDecodeTimeStamp(_ body: @escaping CMBufferGetTimeHandler)
 
 ## See Also
 
-- [func compare(CMBufferCompareHandler)](cmbufferqueue/handlers/builder/compare(_:).md)
-- [func getDuration(CMBufferGetTimeHandler)](cmbufferqueue/handlers/builder/getduration(_:).md)
-- [func getPresentationTimeStamp(CMBufferGetTimeHandler)](cmbufferqueue/handlers/builder/getpresentationtimestamp(_:).md)
-- [func getSize(CMBufferGetSizeHandler)](cmbufferqueue/handlers/builder/getsize(_:).md)
-- [func isDataReady(CMBufferGetBooleanHandler)](cmbufferqueue/handlers/builder/isdataready(_:).md)
+### Instance Methods
+- [func compare(CMBufferCompareHandler)](./compare%28_%29.md)
+- [func getDuration(CMBufferGetTimeHandler)](./getduration%28_%29.md)
+- [func getPresentationTimeStamp(CMBufferGetTimeHandler)](./getpresentationtimestamp%28_%29.md)
+- [func getSize(CMBufferGetSizeHandler)](./getsize%28_%29.md)
+- [func isDataReady(CMBufferGetBooleanHandler)](./isdataready%28_%29.md)
 
 
 ---

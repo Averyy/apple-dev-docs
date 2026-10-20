@@ -1,7 +1,8 @@
 # CMSampleBufferHasDataFailed(_:statusOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether the sample buffer’s data loading request failed.
 
@@ -20,6 +21,10 @@ Returns a Boolean value that indicates whether the sample buffer’s data loadin
 func CMSampleBufferHasDataFailed(_ sbuf: CMSampleBuffer, statusOut: UnsafeMutablePointer<OSStatus>?) -> Bool
 ```
 
+```c
+extern Boolean CMSampleBufferHasDataFailed(CMSampleBufferRef sbuf, OSStatus *statusOut);
+```
+
 ## Parameters
 
 - `sbuf`: The `CMSampleBuffer` being interrogated.
@@ -27,15 +32,16 @@ func CMSampleBufferHasDataFailed(_ sbuf: CMSampleBuffer, statusOut: UnsafeMutabl
 
 ## See Also
 
-- [func CMSampleBufferDataIsReady(CMSampleBuffer) -> Bool](cmsamplebufferdataisready(_:).md)
+### Determining Readiness
+- [func CMSampleBufferDataIsReady(CMSampleBuffer) -> Bool](./cmsamplebufferdataisready%28_%29.md)
   Returns a Boolean value that indicates whether the sample buffer’s data is ready for use.
-- [func CMSampleBufferSetDataReady(CMSampleBuffer) -> OSStatus](cmsamplebuffersetdataready(_:).md)
+- [func CMSampleBufferSetDataReady(CMSampleBuffer) -> OSStatus](./cmsamplebuffersetdataready%28_%29.md)
   Marks a sample buffer’s data as ready for use.
-- [func CMSampleBufferSetDataFailed(CMSampleBuffer, status: OSStatus) -> OSStatus](cmsamplebuffersetdatafailed(_:status:).md)
+- [func CMSampleBufferSetDataFailed(CMSampleBuffer, status: OSStatus) -> OSStatus](./cmsamplebuffersetdatafailed%28_,status%29.md)
   Marks the sample buffer’s data as failed to indicate that it won’t become ready.
-- [func CMSampleBufferMakeDataReady(CMSampleBuffer) -> OSStatus](cmsamplebuffermakedataready(_:).md)
+- [func CMSampleBufferMakeDataReady(CMSampleBuffer) -> OSStatus](./cmsamplebuffermakedataready%28_%29.md)
   Makes the sample buffer’s data ready for use by invoking its callback to load the data.
-- [func CMSampleBufferTrackDataReadiness(CMSampleBuffer, sampleBufferToTrack: CMSampleBuffer) -> OSStatus](cmsamplebuffertrackdatareadiness(_:samplebuffertotrack:).md)
+- [func CMSampleBufferTrackDataReadiness(CMSampleBuffer, sampleBufferToTrack: CMSampleBuffer) -> OSStatus](./cmsamplebuffertrackdatareadiness%28_,samplebuffertotrack%29.md)
   Associates a sample buffer’s data readiness with that of another sample buffer.
 
 

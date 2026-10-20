@@ -1,18 +1,21 @@
 # colorScheme(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets this view’s color scheme.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
+- iPadOS 13.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
+- Mac Catalyst 13.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
+- macOS 10.15+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
+- tvOS 13.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
+- visionOS 1.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
+- watchOS 6.0+ - Deprecated in 27.2 (renamed: preferredColorScheme(_:))
+
+> **Deprecated**: Use [`preferredColorScheme(_:)`](./preferredcolorscheme%28_%29.md) instead.
 
 ## Declaration
 
@@ -35,15 +38,16 @@ Use `colorScheme(_:)` to set the color scheme for the view to which you apply it
 
 ## See Also
 
-- [func listRowPlatterColor(Color?) -> some View](view/listrowplattercolor(_:).md)
+### Appearance modifiers
+- [func listRowPlatterColor(Color?) -> some View](./listrowplattercolor%28_%29.md)
   Sets the color that the system applies to the row background when this view is placed in a list.
-- [func background<Background>(Background, alignment: Alignment) -> some View](view/background(_:alignment:).md)
+- [func background<Background>(Background, alignment: Alignment) -> some View](./background%28_,alignment%29.md)
   Layers the given view behind this view.
-- [func overlay<Overlay>(Overlay, alignment: Alignment) -> some View](view/overlay(_:alignment:).md)
+- [func overlay<Overlay>(Overlay, alignment: Alignment) -> some View](./overlay%28_,alignment%29.md)
   Layers a secondary view in front of this view.
-- [func foregroundColor(Color?) -> some View](view/foregroundcolor(_:).md)
+- [func foregroundColor(Color?) -> some View](./foregroundcolor%28_%29.md)
   Sets the color of the foreground elements displayed by this view.
-- [func complicationForeground() -> some View](view/complicationforeground.md)
+- [func complicationForeground() -> some View](./complicationforeground%28%29.md)
   Promotes this view to the foreground in a complication.
 
 

@@ -4,7 +4,8 @@
 
 ## See Also
 
-- [SerialDriverKit Data Types](serialdriverkit-data-types.md)
+### Reference
+- [SerialDriverKit Data Types](./serialdriverkit-data-types.md)
 
 
 ---

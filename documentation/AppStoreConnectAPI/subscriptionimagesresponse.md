@@ -1,16 +1,19 @@
 # SubscriptionImagesResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A response containing a list of images for a subscription product.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 3.6+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`SubscriptionImagesV2Response`](./subscriptionimagesv2response.md) instead.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionImagesResponse
 ```
 
@@ -23,15 +26,16 @@ object SubscriptionImagesResponse
 
 ## See Also
 
-- [object SubscriptionImage](subscriptionimage.md)
+### Objects
+- [object SubscriptionImage](./subscriptionimage.md)
   An image used to represent a subscription product on the App Store product page.
-- [object SubscriptionImageCreateRequest](subscriptionimagecreaterequest.md)
+- [object SubscriptionImageCreateRequest](./subscriptionimagecreaterequest.md)
   The request body you use to create a subscription purchase image reservation.
-- [object SubscriptionImageResponse](subscriptionimageresponse.md)
+- [object SubscriptionImageResponse](./subscriptionimageresponse.md)
   A response containing a single subscription product image.
-- [object SubscriptionImageUpdateRequest](subscriptionimageupdaterequest.md)
+- [object SubscriptionImageUpdateRequest](./subscriptionimageupdaterequest.md)
   The request body for updating the upload status or content of a subscription product image.
-- [object SubscriptionImagesLinkagesResponse](subscriptionimageslinkagesresponse.md)
+- [object SubscriptionImagesLinkagesResponse](./subscriptionimageslinkagesresponse.md)
 
 
 ---

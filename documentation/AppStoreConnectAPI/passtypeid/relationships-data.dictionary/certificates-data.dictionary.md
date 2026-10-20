@@ -1,7 +1,8 @@
 # PassTypeId.Relationships.Certificates
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The certificates relationship for a pass type identifier, linking to the signing certificates that can sign passes.
 
@@ -10,14 +11,14 @@ The certificates relationship for a pass type identifier, linking to the signing
 
 ## Declaration
 
-```swift
+```
 object PassTypeId.Relationships.Certificates
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object PassTypeId.Relationships.Certificates.Data](passtypeid/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md)
+- [object PassTypeId.Relationships.Certificates.Data](./certificates-data.dictionary/data-data.dictionary.md)
   The resource linkage data identifying a certificate associated with a pass type identifier.
 
 ## Properties

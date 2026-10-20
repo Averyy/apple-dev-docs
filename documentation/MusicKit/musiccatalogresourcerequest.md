@@ -1,7 +1,8 @@
 # MusicCatalogResourceRequest
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request that your app uses to fetch items from the Apple Music catalog using a filter.
 
@@ -23,54 +24,55 @@ struct MusicCatalogResourceRequest<MusicItemType> where MusicItemType : MusicIte
 ## Topics
 
 ### Initializers
-- [init()](musiccatalogresourcerequest/init.md)
+- [init()](./musiccatalogresourcerequest/init%28%29.md)
   Creates a request to fetch top-level items in the Apple Music catalog.
-- [init<Value>(matching: KeyPath<MusicItemType.FilterType, Value>, equalTo: Value)](musiccatalogresourcerequest/init(matching:equalto:).md)
+- [init<Value>(matching: KeyPath<MusicItemType.FilterType, Value>, equalTo: Value)](./musiccatalogresourcerequest/init%28matching,equalto%29.md)
   Creates a request to fetch items using a filter that matches a specific value.
-- [init<Value>(matching: KeyPath<MusicItemType.FilterType, Value>, memberOf: [Value])](musiccatalogresourcerequest/init(matching:memberof:).md)
+- [init<Value>(matching: KeyPath<MusicItemType.FilterType, Value>, memberOf: [Value])](./musiccatalogresourcerequest/init%28matching,memberof%29.md)
   Creates a request to fetch items using a filter that matches any value from an array of possible values.
 ### Instance Properties
-- [var limit: Int?](musiccatalogresourcerequest/limit.md)
+- [var limit: Int?](./musiccatalogresourcerequest/limit.md)
   A limit for the number of items to return in the catalog resource response.
-- [var options: [MusicCatalogResourceRequestOption]](musiccatalogresourcerequest/options.md)
+- [var options: [MusicCatalogResourceRequestOption]](./musiccatalogresourcerequest/options.md)
   Additional options to use for this request.
-- [var properties: [PartialMusicAsyncProperty<MusicItemType>]](musiccatalogresourcerequest/properties.md)
+- [var properties: [PartialMusicAsyncProperty<MusicItemType>]](./musiccatalogresourcerequest/properties.md)
   A list of properties which the resource request will fetch for each music item in the response.
 ### Instance Methods
-- [func response() async throws -> MusicCatalogResourceResponse<MusicItemType>](musiccatalogresourcerequest/response.md)
+- [func response() async throws -> MusicCatalogResourceResponse<MusicItemType>](./musiccatalogresourcerequest/response%28%29.md)
   Fetches items from the Apple Music catalog that match a specific filter.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct MusicCatalogResourceResponse](musiccatalogresourceresponse.md)
+### Resource Loading Using Filters
+- [struct MusicCatalogResourceResponse](./musiccatalogresourceresponse.md)
   An object that contains results for a catalog resource request.
-- [protocol AlbumFilter](albumfilter.md)
+- [protocol AlbumFilter](./albumfilter.md)
   Album properties your app uses as a filter for a catalog resource request.
-- [protocol ArtistFilter](artistfilter.md)
+- [protocol ArtistFilter](./artistfilter.md)
   Artist properties your app uses as a filter for a catalog resource request.
-- [protocol CuratorFilter](curatorfilter.md)
+- [protocol CuratorFilter](./curatorfilter.md)
   Curator properties your app uses as a filter for a catalog resource request.
-- [protocol GenreFilter](genrefilter.md)
+- [protocol GenreFilter](./genrefilter.md)
   Genre properties your app uses as a filter for a catalog resource request.
-- [protocol MusicVideoFilter](musicvideofilter.md)
+- [protocol MusicVideoFilter](./musicvideofilter.md)
   Music video properties your app uses as a filter for a catalog resource request.
-- [protocol PlaylistFilter](playlistfilter.md)
+- [protocol PlaylistFilter](./playlistfilter.md)
   Playlist properties your app uses as a filter for a catalog resource request.
-- [protocol RadioShowFilter](radioshowfilter.md)
+- [protocol RadioShowFilter](./radioshowfilter.md)
   Radio Show properties your app uses as a filter for a catalog resource request.
-- [protocol RecordLabelFilter](recordlabelfilter.md)
+- [protocol RecordLabelFilter](./recordlabelfilter.md)
   The set of record label properties your app uses as a filter for a catalog resource request.
-- [protocol SongFilter](songfilter.md)
+- [protocol SongFilter](./songfilter.md)
   Song properties your app uses as a filter for a catalog resource request.
-- [protocol StationFilter](stationfilter.md)
+- [protocol StationFilter](./stationfilter.md)
   The set of station properties your app uses as a filter for a catalog resource request.
-- [protocol FilterableMusicItem](filterablemusicitem.md)
+- [protocol FilterableMusicItem](./filterablemusicitem.md)
   A declaration of the associated type that contains the set of music item properties your app uses as a filter for a catalog resource request.
 
 

@@ -1,7 +1,8 @@
 # transportType
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overall route transport type.
 
@@ -20,23 +21,28 @@ The overall route transport type.
 var transportType: MKDirectionsTransportType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MKDirectionsTransportType transportType;
+```
+
 #### Discussion
 
 This property reflects the primary transport type used for the route. Individual steps of the route might use different transport types.
 
 ## See Also
 
-- [var name: String](mkroute/name.md)
+### Getting additional route details
+- [var name: String](./name.md)
   The assigned name for the route.
-- [var hasHighways: Bool](mkroute/hashighways.md)
+- [var hasHighways: Bool](./hashighways.md)
   A Boolean value that indicates whether the route contains highways.
-- [var hasTolls: Bool](mkroute/hastolls.md)
+- [var hasTolls: Bool](./hastolls.md)
   A Boolean value that indicates whether the route has tolls.
-- [var advisoryNotices: [String]](mkroute/advisorynotices.md)
+- [var advisoryNotices: [String]](./advisorynotices.md)
   An array of advisory notice strings for the route.
-- [var distance: CLLocationDistance](mkroute/distance.md)
+- [var distance: CLLocationDistance](./distance.md)
   The route distance, in meters.
-- [var expectedTravelTime: TimeInterval](mkroute/expectedtraveltime.md)
+- [var expectedTravelTime: TimeInterval](./expectedtraveltime.md)
   The expected travel time, in seconds.
 
 

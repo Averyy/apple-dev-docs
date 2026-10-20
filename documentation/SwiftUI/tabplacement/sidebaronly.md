@@ -1,7 +1,8 @@
 # sidebarOnly
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The sidebar tab placement location.
 
@@ -22,7 +23,7 @@ static let sidebarOnly: TabPlacement
 
 #### Discussion
 
-On visionOS in the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) style, the ornament tab bar is considered part of the sidebar.
+On visionOS in the [`sidebarAdaptable`](../tabviewstyle/sidebaradaptable.md) style, the ornament tab bar is considered part of the sidebar.
 
 
 ---

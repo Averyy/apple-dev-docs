@@ -1,7 +1,8 @@
 # brand
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the prescribed brand, based on the contact lens fitting.
 
@@ -19,11 +20,16 @@ The name of the prescribed brand, based on the contact lens fitting.
 var brand: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * brand;
+```
+
 ## See Also
 
-- [var leftEye: HKContactsLensSpecification?](hkcontactsprescription/lefteye.md)
+### Accessing the contacts prescription data
+- [var leftEye: HKContactsLensSpecification?](./lefteye.md)
   The lens specification for the left eye.
-- [var rightEye: HKContactsLensSpecification?](hkcontactsprescription/righteye.md)
+- [var rightEye: HKContactsLensSpecification?](./righteye.md)
   The lens specification for the right eye.
 
 

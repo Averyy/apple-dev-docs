@@ -1,7 +1,8 @@
 # invalidName
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name doesn’t denote a right in the task.
 

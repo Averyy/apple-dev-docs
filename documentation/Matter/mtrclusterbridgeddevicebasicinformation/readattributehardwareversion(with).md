@@ -1,7 +1,8 @@
 # readAttributeHardwareVersion(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeHardwareVersion(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeHardwareVersionWithParams:(MTRReadParams *) params;
 ```
 
 

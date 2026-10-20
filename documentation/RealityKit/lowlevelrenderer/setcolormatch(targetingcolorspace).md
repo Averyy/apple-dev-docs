@@ -1,7 +1,8 @@
 # setColorMatch(targetingColorSpace:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the color match by computing a gamut conversion matrix from the renderer’s working color space to the given target display color space.
 
@@ -19,7 +20,7 @@ final func setColorMatch(targetingColorSpace targetColorSpace: CGColorSpace) thr
 
 #### Discussion
 
-> **Note**: [`LowLevelRendererError`](lowlevelrenderererror.md) if the target color space is not a supported linear gamut.
+> **Throws**: [`LowLevelRendererError`](../lowlevelrenderererror.md) if the target color space is not a supported linear gamut.
 
 ## Parameters
 
@@ -27,11 +28,12 @@ final func setColorMatch(targetingColorSpace targetColorSpace: CGColorSpace) thr
 
 ## See Also
 
-- [var colorMatch: LowLevelRenderer.ColorMatch](lowlevelrenderer/colormatch-swift.property.md)
+### Managing color matching
+- [var colorMatch: LowLevelRenderer.ColorMatch](./colormatch-swift.property.md)
   The active color gamut conversion. The renderer applies this value only when `enableColorMatch` is `true` in `Configuration`.
-- [LowLevelRenderer.ColorMatch](lowlevelrenderer/colormatch-swift.struct.md)
+- [LowLevelRenderer.ColorMatch](./colormatch-swift.struct.md)
   A color gamut conversion applied during resolve.
-- [var workingColorSpace: CGColorSpace](lowlevelrenderer/workingcolorspace.md)
+- [var workingColorSpace: CGColorSpace](./workingcolorspace.md)
   The color space in which the renderer performs all shading calculations.
 
 

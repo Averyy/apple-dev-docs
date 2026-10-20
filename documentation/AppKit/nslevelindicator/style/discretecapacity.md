@@ -1,12 +1,13 @@
 # NSLevelIndicator.Style.discreteCapacity
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style that displays discrete segments that indicate the capacity of something, such as an audio level.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ A style that displays discrete segments that indicate the capacity of something,
 case discreteCapacity
 ```
 
+```c
+NSLevelIndicatorStyleDiscreteCapacity
+```
+
 ## See Also
 
-- [NSLevelIndicator.Style.relevancy](nslevelindicator/style/relevancy.md)
+### Level Indicator Styles
+- [NSLevelIndicator.Style.relevancy](./relevancy.md)
   A style that indicates the relevancy of an item, such as a search result.
-- [NSLevelIndicator.Style.continuousCapacity](nslevelindicator/style/continuouscapacity.md)
+- [NSLevelIndicator.Style.continuousCapacity](./continuouscapacity.md)
   A style that indicates the capacity of something, such as how much data is on a hard disk.
-- [NSLevelIndicator.Style.rating](nslevelindicator/style/rating.md)
+- [NSLevelIndicator.Style.rating](./rating.md)
   A style that indicates a rank, such as a star ranking display.
 
 

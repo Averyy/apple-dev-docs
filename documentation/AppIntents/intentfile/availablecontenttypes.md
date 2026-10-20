@@ -1,7 +1,8 @@
 # availableContentTypes
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Valid content types the `IntentFile` can possibly be converted to.
 

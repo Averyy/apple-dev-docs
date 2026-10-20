@@ -1,7 +1,8 @@
 # UITabBarController.MinimizeBehavior.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Resolves to the system default minimize behavior.
 
@@ -16,6 +17,10 @@ Resolves to the system default minimize behavior.
 
 ```swift
 case automatic
+```
+
+```c
+UITabBarMinimizeBehaviorAutomatic
 ```
 
 

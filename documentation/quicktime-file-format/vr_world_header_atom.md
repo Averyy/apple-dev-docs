@@ -1,9 +1,12 @@
 # VR world header atom
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom contains the name of the scene and the default node ID to be used when the file is first opened.
+
+> **Deprecated**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 
 #### Overview
 
@@ -28,30 +31,31 @@ QT
 ## Topics
 
 ### Data fields
-- [majorVersion](vr_world_header_atom/majorversion.md)
+- [majorVersion](./vr_world_header_atom/majorversion.md)
   The major version number of the file format.
-- [minorVersion](vr_world_header_atom/minorversion.md)
+- [minorVersion](./vr_world_header_atom/minorversion.md)
   The minor version number of the file format.
-- [nameAtomID](vr_world_header_atom/nameatomid.md)
+- [nameAtomID](./vr_world_header_atom/nameatomid.md)
   The ID of the string atom that contains the name of the scene.
-- [defaultNodeID](vr_world_header_atom/defaultnodeid.md)
+- [defaultNodeID](./vr_world_header_atom/defaultnodeid.md)
   The ID of the default node.
-- [vrWorldFlags](vr_world_header_atom/vrworldflags.md)
+- [vrWorldFlags](./vr_world_header_atom/vrworldflags.md)
   A set of flags for the VR world.
-- [reserved1](vr_world_header_atom/reserved1.md)
+- [reserved1](./vr_world_header_atom/reserved1.md)
   Reserved.
-- [reserved2](vr_world_header_atom/reserved2.md)
+- [reserved2](./vr_world_header_atom/reserved2.md)
   Reserved.
 
 ## See Also
 
-- [QTVR string atom](qtvr_string_atom.md)
+### Describing VR worlds
+- [QTVR string atom](./qtvr_string_atom.md)
   An atom that contains a string for QuickTime VR.
-- [VR world atom container](vr_world_atom_container.md)
+- [VR world atom container](./vr_world_atom_container.md)
   An atom that contains name for the entire scene, the default node ID, and default imaging properties, as well as a list of the nodes contained in the QTVR track.
-- [Imaging parent atom](imaging_parent_atom.md)
+- [Imaging parent atom](./imaging_parent_atom.md)
   An atom that is the parent atom of one or more node-specific imaging atoms.
-- [Panorama imaging atom](panorama_imaging_atom.md)
+- [Panorama imaging atom](./panorama_imaging_atom.md)
   An atom describes the default imaging characteristics for all the panoramic nodes in a scene.
 
 

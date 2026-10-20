@@ -1,7 +1,8 @@
 # networkEndpoint
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A local or remote endpoint to connect to.
 
@@ -17,9 +18,14 @@ A local or remote endpoint to connect to.
 var networkEndpoint: nw_endpoint_t? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) nw_endpoint_t networkEndpoint;
+```
+
 ## See Also
 
-- [var bluetoothIdentifier: UUID?](avcustomdeviceroute/bluetoothidentifier.md)
+### Identifying routes
+- [var bluetoothIdentifier: UUID?](./bluetoothidentifier.md)
   An identifier to use to establish a connection to a Bluetooth device.
 
 

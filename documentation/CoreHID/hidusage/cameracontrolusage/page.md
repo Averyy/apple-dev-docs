@@ -1,7 +1,8 @@
 # page
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 15.0+

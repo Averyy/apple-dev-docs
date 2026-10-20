@@ -1,7 +1,8 @@
 # MusicSubscription.Error.privacyAcknowledgementRequired
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that the user needs to acknowledge the most-recent privacy policy for Apple Music.
 

@@ -1,7 +1,8 @@
 # UIStackView.Alignment
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The layout of arranged views perpendicular to the stack view’s axis.
 
@@ -18,41 +19,46 @@ The layout of arranged views perpendicular to the stack view’s axis.
 enum Alignment
 ```
 
+```c
+enum UIStackViewAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UIStackView.Alignment.fill](uistackview/alignment-swift.enum/fill.md)
+- [UIStackView.Alignment.fill](./alignment-swift.enum/fill.md)
   A layout where the stack view resizes its arranged views so that they fill the available space perpendicular to the stack view’s axis.
-- [UIStackView.Alignment.center](uistackview/alignment-swift.enum/center.md)
+- [UIStackView.Alignment.center](./alignment-swift.enum/center.md)
   A layout where the stack view aligns the center of its arranged views with its center along its axis.
-- [UIStackView.Alignment.leading](uistackview/alignment-swift.enum/leading.md)
+- [UIStackView.Alignment.leading](./alignment-swift.enum/leading.md)
   A layout for vertical stacks where the stack view aligns the leading edge of its arranged views along its leading edge.
-- [UIStackView.Alignment.trailing](uistackview/alignment-swift.enum/trailing.md)
+- [UIStackView.Alignment.trailing](./alignment-swift.enum/trailing.md)
   A layout for vertical stacks where the stack view aligns the trailing edge of its arranged views along its trailing edge.
-- [static var top: UIStackView.Alignment](uistackview/alignment-swift.enum/top.md)
+- [static var top: UIStackView.Alignment](./alignment-swift.enum/top.md)
   A layout for horizontal stacks where the stack view aligns the top edge of its arranged views along its top edge.
-- [static var bottom: UIStackView.Alignment](uistackview/alignment-swift.enum/bottom.md)
+- [static var bottom: UIStackView.Alignment](./alignment-swift.enum/bottom.md)
   A layout for horizontal stacks where the stack view aligns the bottom edge of its arranged views along its bottom edge.
-- [UIStackView.Alignment.firstBaseline](uistackview/alignment-swift.enum/firstbaseline.md)
+- [UIStackView.Alignment.firstBaseline](./alignment-swift.enum/firstbaseline.md)
   A layout for horizontal stacks where the stack view aligns its arranged views based on their first baseline.
-- [UIStackView.Alignment.lastBaseline](uistackview/alignment-swift.enum/lastbaseline.md)
+- [UIStackView.Alignment.lastBaseline](./alignment-swift.enum/lastbaseline.md)
   A layout for horizontal stacks where the stack view aligns its arranged views based on their last baseline.
 ### Initializers
-- [init?(rawValue: Int)](uistackview/alignment-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./alignment-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIStackView.Distribution](uistackview/distribution-swift.enum.md)
+### Constants
+- [UIStackView.Distribution](./distribution-swift.enum.md)
   The layout that defines the size and position of the arranged views along the stack view’s axis.
 
 

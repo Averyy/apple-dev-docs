@@ -1,7 +1,8 @@
 # init(initiallySelectedPrinter:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a printer picker with an initially selected printer object.
 
@@ -15,6 +16,10 @@ Creates and returns a printer picker with an initially selected printer object.
 
 ```swift
 init(initiallySelectedPrinter printer: UIPrinter?)
+```
+
+```objc
++ (UIPrinterPickerController *) printerPickerControllerWithInitiallySelectedPrinter:(UIPrinter *) printer;
 ```
 
 #### Return Value

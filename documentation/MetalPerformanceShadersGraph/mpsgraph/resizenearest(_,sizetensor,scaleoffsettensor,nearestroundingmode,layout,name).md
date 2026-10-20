@@ -1,7 +1,8 @@
 # resizeNearest(_:sizeTensor:scaleOffsetTensor:nearestRoundingMode:layout:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resamples input images to given size using the provided scale and offset and nearest neighbor sampling See above discussion for more details.
 
@@ -17,6 +18,10 @@ Resamples input images to given size using the provided scale and offset and nea
 
 ```swift
 func resizeNearest(_ imagesTensor: MPSGraphTensor, sizeTensor size: MPSGraphTensor, scaleOffsetTensor scaleOffset: MPSGraphTensor, nearestRoundingMode: MPSGraphResizeNearestRoundingMode, layout: MPSGraphTensorNamedDataLayout, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) resizeNearestWithTensor:(MPSGraphTensor *) imagesTensor sizeTensor:(MPSGraphTensor *) size scaleOffsetTensor:(MPSGraphTensor *) scaleOffset nearestRoundingMode:(MPSGraphResizeNearestRoundingMode) nearestRoundingMode layout:(MPSGraphTensorNamedDataLayout) layout name:(NSString *) name;
 ```
 
 #### Return Value

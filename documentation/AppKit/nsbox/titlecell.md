@@ -1,12 +1,13 @@
 # titleCell
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cell used to display the receiver’s title.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,23 +15,28 @@ The cell used to display the receiver’s title.
 var titleCell: Any { get }
 ```
 
+```objc
+@property (strong, readonly) id titleCell;
+```
+
 ## See Also
 
-- [var borderRect: NSRect](nsbox/borderrect.md)
+### Configuring Boxes
+- [var borderRect: NSRect](./borderrect.md)
   The rectangle in which the receiver’s border is drawn.
-- [var boxType: NSBox.BoxType](nsbox/boxtype-swift.property.md)
+- [var boxType: NSBox.BoxType](./boxtype-swift.property.md)
   The receiver’s box type.
-- [var isTransparent: Bool](nsbox/istransparent.md)
+- [var isTransparent: Bool](./istransparent.md)
   A Boolean value that indicates whether the receiver is transparent.
-- [var title: String](nsbox/title.md)
+- [var title: String](./title.md)
   The receiver’s title.
-- [var titleFont: NSFont](nsbox/titlefont.md)
+- [var titleFont: NSFont](./titlefont.md)
   The font object used to draw the receiver’s title.
-- [var titlePosition: NSBox.TitlePosition](nsbox/titleposition-swift.property.md)
+- [var titlePosition: NSBox.TitlePosition](./titleposition-swift.property.md)
   A constant representing the title position.
-- [var titleRect: NSRect](nsbox/titlerect.md)
+- [var titleRect: NSRect](./titlerect.md)
   The rectangle in which the receiver’s title is drawn.
-- [var borderType: NSBorderType](nsbox/bordertype.md)
+- [var borderType: NSBorderType](./bordertype.md)
   The receiver’s border type.
 
 

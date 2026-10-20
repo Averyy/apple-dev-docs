@@ -1,16 +1,17 @@
 # SetPacketDirection
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies whether packets flow into or out of the queue.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetPacketDirection(IOUserNetworkPacketDirection direction);
 ```
 
@@ -28,7 +29,8 @@ Typically, you do not call this method yourself. The concrete subclasses set the
 
 ## See Also
 
-- [SetPacketBufferPool](iousernetworkpacketqueue/setpacketbufferpool.md)
+### Configuring the Queue Attributes
+- [SetPacketBufferPool](./setpacketbufferpool.md)
   Assigns the specified buffer pool with this queue.
 
 

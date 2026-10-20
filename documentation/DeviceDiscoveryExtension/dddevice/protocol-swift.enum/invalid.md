@@ -1,16 +1,17 @@
 # DDDevice.Protocol.invalid
 
 **Framework**: DeviceDiscoveryExtension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A default value for a device protocol.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ A default value for a device protocol.
 case invalid
 ```
 
+```c
+DDDeviceProtocolInvalid
+```
+
 ## See Also
 
-- [DDDevice.Protocol.dial](dddevice/protocol-swift.enum/dial.md)
+### Indicating a device protocol
+- [DDDevice.Protocol.dial](./dial.md)
   A protocol for client devices that stream media to a TV or set-top box.
 
 

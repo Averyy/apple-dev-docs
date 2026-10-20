@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: Collaboration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a Boolean value indicating whether the identity is allowed to authenticate.
 
@@ -14,6 +15,10 @@ Returns a Boolean value indicating whether the identity is allowed to authentica
 var isEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isEnabled) BOOL enabled;
+```
+
 #### Return Value
 
 `TRUE` if the identity can authenticate; otherwise, `FALSE`.
@@ -24,9 +29,10 @@ If the identity does not have authentication credentials (a password or certific
 
 ## See Also
 
-- [func authenticate(withPassword: String) -> Bool](cbuseridentity/authenticate(withpassword:).md)
+### Password Authentication
+- [func authenticate(withPassword: String) -> Bool](./authenticate%28withpassword%29.md)
   Returns a Boolean value indicating whether the given password is correct for the identity.
-- [var certificate: SecCertificate?](cbuseridentity/certificate.md)
+- [var certificate: SecCertificate?](./certificate.md)
   Returns the public authentication certificate associated with a user identity.
 
 

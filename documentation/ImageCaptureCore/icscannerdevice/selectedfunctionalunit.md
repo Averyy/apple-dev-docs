@@ -1,7 +1,8 @@
 # selectedFunctionalUnit
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently selected functional unit on the scanner.
 
@@ -14,15 +15,20 @@ The currently selected functional unit on the scanner.
 var selectedFunctionalUnit: ICScannerFunctionalUnit { get }
 ```
 
+```objc
+@property (readonly) ICScannerFunctionalUnit * selectedFunctionalUnit;
+```
+
 ## See Also
 
-- [var availableFunctionalUnitTypes: [NSNumber]](icscannerdevice/availablefunctionalunittypes.md)
+### Selecting a Functional Unit
+- [var availableFunctionalUnitTypes: [NSNumber]](./availablefunctionalunittypes.md)
   An array of functional unit types available on this scanner.
-- [func requestSelect(ICScannerFunctionalUnitType)](icscannerdevice/requestselect(_:).md)
+- [func requestSelect(ICScannerFunctionalUnitType)](./requestselect%28_%29.md)
   Requests to select a functional unit on the scanner.
-- [enum ICScannerFunctionalUnitType](icscannerfunctionalunittype.md)
+- [enum ICScannerFunctionalUnitType](../icscannerfunctionalunittype.md)
   The types of scanner functional units.
-- [enum ICScannerFunctionalUnitState](icscannerfunctionalunitstate.md)
+- [enum ICScannerFunctionalUnitState](../icscannerfunctionalunitstate.md)
   Flags to indicate the state of the scanner functional unit.
 
 

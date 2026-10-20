@@ -1,14 +1,15 @@
 # DeviceTreeNodeProperty
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct DeviceTreeNodeProperty {
     ...
 } DeviceTreeNodeProperty;
@@ -17,8 +18,8 @@ typedef struct DeviceTreeNodeProperty {
 ## Topics
 
 ### Instance Properties
-- [length](devicetreenodeproperty/1541473-length.md)
-- [name](devicetreenodeproperty/1541460-name.md)
+- [length](./devicetreenodeproperty/api-1541473-length.md)
+- [name](./devicetreenodeproperty/api-1541460-name.md)
 
 
 ---

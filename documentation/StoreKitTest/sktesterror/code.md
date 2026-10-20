@@ -1,7 +1,8 @@
 # SKTestError.Code
 
 **Framework**: StoreKit Test  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Error codes in the testing environment.
 
@@ -20,53 +21,57 @@ Error codes in the testing environment.
 enum Code
 ```
 
+```c
+enum SKTestErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Error Codes
-- [SKTestError.Code.fileNotFound](sktesterror/code/filenotfound.md)
+- [SKTestError.Code.fileNotFound](./code/filenotfound.md)
   The initializer can’t find the file.
-- [SKTestError.Code.invalidAction](sktesterror/code/invalidaction.md)
+- [SKTestError.Code.invalidAction](./code/invalidaction.md)
   The action is invalid.
-- [SKTestError.Code.invalidProductIdentifier](sktesterror/code/invalidproductidentifier.md)
+- [SKTestError.Code.invalidProductIdentifier](./code/invalidproductidentifier.md)
   The product identifier is invalid.
-- [SKTestError.Code.invalidProductType](sktesterror/code/invalidproducttype.md)
+- [SKTestError.Code.invalidProductType](./code/invalidproducttype.md)
   The product type is invalid.
-- [SKTestError.Code.invalidURL](sktesterror/code/invalidurl.md)
+- [SKTestError.Code.invalidURL](./code/invalidurl.md)
   The URL is invalid.
-- [SKTestError.Code.noSubscriptionFound](sktesterror/code/nosubscriptionfound.md)
+- [SKTestError.Code.noSubscriptionFound](./code/nosubscriptionfound.md)
   The test environment didn’t find a subscription.
-- [SKTestError.Code.noTransactionFound](sktesterror/code/notransactionfound.md)
+- [SKTestError.Code.noTransactionFound](./code/notransactionfound.md)
   The test environment didn’t find a transaction.
-- [SKTestError.Code.serviceUnavailable](sktesterror/code/serviceunavailable.md)
+- [SKTestError.Code.serviceUnavailable](./code/serviceunavailable.md)
   The service isn’t available.
-- [SKTestError.Code.fileNotFound](sktesterror/code/filenotfound.md)
+- [SKTestError.Code.fileNotFound](./code/filenotfound.md)
   The initializer can’t find the file.
-- [SKTestError.Code.invalidAction](sktesterror/code/invalidaction.md)
+- [SKTestError.Code.invalidAction](./code/invalidaction.md)
   The action is invalid.
-- [SKTestError.Code.invalidProductIdentifier](sktesterror/code/invalidproductidentifier.md)
+- [SKTestError.Code.invalidProductIdentifier](./code/invalidproductidentifier.md)
   The product identifier is invalid.
-- [SKTestError.Code.invalidProductType](sktesterror/code/invalidproducttype.md)
+- [SKTestError.Code.invalidProductType](./code/invalidproducttype.md)
   The product type is invalid.
-- [SKTestError.Code.invalidURL](sktesterror/code/invalidurl.md)
+- [SKTestError.Code.invalidURL](./code/invalidurl.md)
   The URL is invalid.
-- [SKTestError.Code.noSubscriptionFound](sktesterror/code/nosubscriptionfound.md)
+- [SKTestError.Code.noSubscriptionFound](./code/nosubscriptionfound.md)
   The test environment didn’t find a subscription.
-- [SKTestError.Code.noTransactionFound](sktesterror/code/notransactionfound.md)
+- [SKTestError.Code.noTransactionFound](./code/notransactionfound.md)
   The test environment didn’t find a transaction.
-- [SKTestError.Code.serviceUnavailable](sktesterror/code/serviceunavailable.md)
+- [SKTestError.Code.serviceUnavailable](./code/serviceunavailable.md)
   The service isn’t available.
 ### Initializers
-- [init?(rawValue: Int)](sktesterror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # extentrecord
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct diskextent {
     ...
 } extentrecord;
@@ -17,8 +18,8 @@ typedef struct diskextent {
 ## Topics
 
 ### Instance Properties
-- [blockcount](extentrecord/1555211-blockcount.md)
-- [startblock](extentrecord/1555293-startblock.md)
+- [blockcount](./extentrecord/api-1555211-blockcount.md)
+- [startblock](./extentrecord/api-1555293-startblock.md)
 
 
 ---

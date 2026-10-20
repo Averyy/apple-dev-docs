@@ -1,7 +1,8 @@
 # tls_ciphersuite_group_t
 
 **Framework**: Security  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Groups that collect ciphersuites of comparable security properties.
 
@@ -20,28 +21,32 @@ Groups that collect ciphersuites of comparable security properties.
 enum tls_ciphersuite_group_t
 ```
 
+```c
+enum tls_ciphersuite_group_t : uint16_t;
+```
+
 ## Topics
 
 ### Ciphersuite Groups
-- [tls_ciphersuite_group_t.ats](tls_ciphersuite_group_t/ats.md)
-- [tls_ciphersuite_group_t.ats_compatibility](tls_ciphersuite_group_t/ats_compatibility.md)
-- [tls_ciphersuite_group_t.compatibility](tls_ciphersuite_group_t/compatibility.md)
-- [tls_ciphersuite_group_t.default](tls_ciphersuite_group_t/default.md)
-- [tls_ciphersuite_group_t.legacy](tls_ciphersuite_group_t/legacy.md)
+- [tls_ciphersuite_group_t.ats](./tls_ciphersuite_group_t/ats.md)
+- [tls_ciphersuite_group_t.ats_compatibility](./tls_ciphersuite_group_t/ats_compatibility.md)
+- [tls_ciphersuite_group_t.compatibility](./tls_ciphersuite_group_t/compatibility.md)
+- [tls_ciphersuite_group_t.default](./tls_ciphersuite_group_t/default.md)
+- [tls_ciphersuite_group_t.legacy](./tls_ciphersuite_group_t/legacy.md)
 ### Enumeration Cases
-- [tls_ciphersuite_group_t.ats_fcp_v2_1](tls_ciphersuite_group_t/ats_fcp_v2_1.md)
+- [tls_ciphersuite_group_t.ats_fcp_v2_1](./tls_ciphersuite_group_t/ats_fcp_v2_1.md)
 ### Initializers
-- [init?(rawValue: UInt16)](tls_ciphersuite_group_t/init(rawvalue:).md)
+- [init?(rawValue: UInt16)](./tls_ciphersuite_group_t/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

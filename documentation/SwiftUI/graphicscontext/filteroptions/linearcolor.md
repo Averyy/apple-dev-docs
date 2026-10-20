@@ -1,7 +1,8 @@
 # linearColor
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that causes the filter to perform calculations in a linear color space.
 

@@ -1,18 +1,23 @@
 # LSMMapGetTypeID()
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the Core Foundation type identifier for Latent Semantic Mapping maps.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 func LSMMapGetTypeID() -> CFTypeID
+```
+
+```c
+CFTypeID LSMMapGetTypeID();
 ```
 
 

@@ -1,7 +1,8 @@
 # createAndAppendTrack()
 
 **Framework**: AVFAudio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new music track and appends it to the sequencer’s list.
 
@@ -19,19 +20,24 @@ Creates a new music track and appends it to the sequencer’s list.
 func createAndAppendTrack() -> AVMusicTrack
 ```
 
+```objc
+- (AVMusicTrack *) createAndAppendTrack;
+```
+
 #### Return Value
 
 A new music track appended to the sequencer.
 
 ## See Also
 
-- [class AVMusicTrack](avmusictrack.md)
+### Handling music tracks
+- [class AVMusicTrack](../avmusictrack.md)
   A collection of music events that you can offset, set to a muted state, modify independently from other track events, and send to a specified destination.
-- [func reverseEvents()](avaudiosequencer/reverseevents.md)
+- [func reverseEvents()](./reverseevents%28%29.md)
   Reverses the order of all events in all music tracks, including the tempo track.
-- [func removeTrack(AVMusicTrack) -> Bool](avaudiosequencer/removetrack(_:).md)
+- [func removeTrack(AVMusicTrack) -> Bool](./removetrack%28_%29.md)
   Removes the music track from the sequencer.
-- [enum AVMusicTrackLoopCount](avmusictrackloopcount.md)
+- [enum AVMusicTrackLoopCount](../avmusictrackloopcount.md)
   Options that define the number of times a track loops.
 
 

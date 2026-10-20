@@ -1,7 +1,8 @@
 # take(_:)
 
 **Framework**: Core AI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Takes the mutable view for the specified value.
 

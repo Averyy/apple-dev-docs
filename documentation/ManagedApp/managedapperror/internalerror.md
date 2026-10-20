@@ -1,7 +1,8 @@
 # ManagedAppError.internalError
 
 **Framework**: ManagedApp  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates a failure at the system level.
 

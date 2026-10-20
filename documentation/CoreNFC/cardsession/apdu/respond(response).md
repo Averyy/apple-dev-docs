@@ -1,7 +1,8 @@
 # respond(response:)
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Respond to the session after receiving and processing an APDU.
 
@@ -20,7 +21,7 @@ final func respond(response: Data) async throws
 
 Your client must respond to each APDU it receives. Failing to respond throws an error. If your client disposes an APDU object without responding, the card emulation ends.
 
-> ⚠️ **Warning**:  Only respond to a given APDU once. Calling this method more than once raises [`fatalError(_:file:line:)`](https://developer.apple.com/documentation/swift/fatalerror(_:file:line:)). The exception to this is if the call throws [`CardSession.Error.transmissionError`](cardsession/error/transmissionerror.md). In this case, you can retry the response by calling [`respond(response:)`](cardsession/apdu/respond(response:).md) again.
+> ⚠️ **Warning**:  Only respond to a given APDU once. Calling this method more than once raises [`fatalError(_:file:line:)`](../../../Swift/fatalerror%28_,file,line%29.md). The exception to this is if the call throws [`CardSession.Error.transmissionError`](../error/transmissionerror.md). In this case, you can retry the response by calling [`respond(response:)`](./respond%28response%29.md) again.
 
 ## Parameters
 

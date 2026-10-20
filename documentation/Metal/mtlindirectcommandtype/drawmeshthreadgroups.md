@@ -1,7 +1,8 @@
 # drawMeshThreadgroups
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var drawMeshThreadgroups: MTLIndirectCommandType { get }
+```
+
+```c
+MTLIndirectCommandTypeDrawMeshThreadgroups
 ```
 
 

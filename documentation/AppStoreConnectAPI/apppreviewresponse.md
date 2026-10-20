@@ -1,16 +1,19 @@
 # AppPreviewResponse
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for endpoints that create, read, or modify an app preview video.
 
 **Availability**:
-- App Store Connect API 1.2+
+- App Store Connect API 1.2+ - Deprecated in 4.5
+
+> **Deprecated**: This object is deprecated. Use [`AppAssetLibraryVideoResponse`](./appassetlibraryvideoresponse.md) instead.
 
 ## Declaration
 
-```swift
+```
 object AppPreviewResponse
 ```
 
@@ -22,23 +25,24 @@ object AppPreviewResponse
 
 ## See Also
 
-- [object AppPreview](apppreview.md)
+### Objects and Data Types
+- [object AppPreview](./apppreview.md)
   The data structure that represent an App Previews resource.
-- [object AppPreviewCreateRequest](apppreviewcreaterequest.md)
+- [object AppPreviewCreateRequest](./apppreviewcreaterequest.md)
   The request body you use to create an App Preview.
-- [object AppPreviewUpdateRequest](apppreviewupdaterequest.md)
+- [object AppPreviewUpdateRequest](./apppreviewupdaterequest.md)
   The request body you use to update an App Preview.
-- [object AppPreviewsResponse](apppreviewsresponse.md)
+- [object AppPreviewsResponse](./apppreviewsresponse.md)
   The response body for endpoints that list app preview videos in a preview set.
-- [object UploadOperation](uploadoperation.md)
+- [object UploadOperation](./uploadoperation.md)
   Upload instructions for assets such as app previews and app screenshots.
-- [type PreviewType](previewtype.md)
+- [type PreviewType](./previewtype.md)
   String that represents the display type of an app preview.
-- [object PreviewFrameImage](previewframeimage.md)
+- [object PreviewFrameImage](./previewframeimage.md)
   The properties that describe a preview frame image for an app preview or app event video.
-- [object AppMediaVideoState](appmediavideostate.md)
+- [object AppMediaVideoState](./appmediavideostate.md)
   The properties that describe the state of an app preview or app event video.
-- [object AppMediaPreviewFrameImageState](appmediapreviewframeimagestate.md)
+- [object AppMediaPreviewFrameImageState](./appmediapreviewframeimagestate.md)
   The properties that describe the state of a preview frame image for an app preveiew or app event video.
 
 

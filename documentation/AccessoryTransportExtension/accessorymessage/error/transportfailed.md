@@ -1,7 +1,8 @@
 # AccessoryMessage.Error.transportFailed
 
 **Framework**: Accessory Transport Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating the transport failed but may recover.
 
@@ -20,7 +21,8 @@ The system retries message delivery when you return this error.
 
 ## See Also
 
-- [AccessoryMessage.Error.transportUnavailable](accessorymessage/error/transportunavailable.md)
+### Identifying error types
+- [AccessoryMessage.Error.transportUnavailable](./transportunavailable.md)
   An error indicating the transport is unavailable.
 
 

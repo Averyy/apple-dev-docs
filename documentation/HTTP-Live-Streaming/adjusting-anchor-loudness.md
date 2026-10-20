@@ -1,6 +1,7 @@
 # Adjusting anchor loudness
 
-**Framework**: HTTP Live Streaming
+**Framework**: HTTP Live Streaming  
+**Role**: Article
 
 Adjust anchor loudness when measurements of speech-gated loudness for a full mix may be inaccurate, such as when speech activity is low.
 
@@ -17,17 +18,17 @@ For low speech activity, the model ignores the speech-gated loudness value and c
 
 The following examples and source code show how to calculate anchor loudness using program loudness and speech-gated loudness.
 
-##### Determine Anchor Loudness Using Different Program Loudness Values
+##### Determine anchor loudness using different program loudness values
 
 The following figure shows a visual representation of anchor loudness for an example with a speech-gated loudness of -27 LKFS (loudness, K-weighted, relative to full scale) and different program loudness values.
 
-![Graph depicting calculated anchor loudness values for an example with a speech-gated loudness of -27 LKFS and various program loudness values. The y axis represents anchor loudness in LKFS, from -30 at the bottom to -20 at the top. The x axis represents the speech activity level, from 0 on the left to 1 on the right. Five lines correspond to various program loudness values in LKFS. The top value of LRA is 3 loudness units higher than the program loudness value.](/images/com.apple.HTTP-Live-Streaming/adjusting-anchor-loudness-1@2x.png)
+![Graph depicting calculated anchor loudness values for an example with a speech-gated loudness of -27 LKFS and various program loudness values. The y axis represents anchor loudness in LKFS, from -30 at the bottom to -20 at the top. The x axis represents the speech activity level, from 0 on the left to 1 on the right. Five lines correspond to various program loudness values in LKFS. The top value of LRA is 3 loudness units higher than the program loudness value.](https://developer.apple.com/tutorials/images/com.apple.HTTP-Live-Streaming/adjusting-anchor-loudness-1@2x.png)
 
 The lines on the left correspond to the calculated anchor loudness as a result of the adjustment method. The labels for each line indicate the program loudness values. For low speech activity, anchor loudness increases with program loudness. For increasing speech activity, there’s a transition to the speech-gated loudness measurement.
 
 The next figure displays anchor loudness for an example with speech-gated loudness of -27 LKFS and program loudness of -24 LKFS. The difference between top value of LRA and program loudness characterizes how dynamic the content is. The lines on the left correspond to the calculated anchor loudness as a result of the adjustment method. The labels for each line indicate the value of the loudness difference in loudness units (LU). The loudness difference correlates with anchor loudness, and the modeling results in lower anchor loudness for more dynamic content at low speech activity. As the speech activity increases, anchor loudness transitions to the measured speech-gated loudness.
 
-![Graph depicting calculated anchor loudness values for an example with a speech-gated loudness of -27 LKFS and a program loudness of -24 LKFS. The y axis represents anchor loudness in LKFS, from -30 at the bottom to -20 at the top. The x axis represents the speech activity level, from 0 on the left to 1 on the right. Five lines correspond to various values between top value of LRA and program loudness.](/images/com.apple.HTTP-Live-Streaming/adjusting-anchor-loudness-2@2x.png)
+![Graph depicting calculated anchor loudness values for an example with a speech-gated loudness of -27 LKFS and a program loudness of -24 LKFS. The y axis represents anchor loudness in LKFS, from -30 at the bottom to -20 at the top. The x axis represents the speech activity level, from 0 on the left to 1 on the right. Five lines correspond to various values between top value of LRA and program loudness.](https://developer.apple.com/tutorials/images/com.apple.HTTP-Live-Streaming/adjusting-anchor-loudness-2@2x.png)
 
 The following source code includes a function to compute the adjusted anchor loudness value from the parameters in the preceding examples, which is applicable to long-form content.
 
@@ -119,23 +120,24 @@ func adjustedAnchorLoudnessFor(programLoudness: Double,
 
 ## See Also
 
-- [HTTP Live Streaming (HLS) authoring specification for Apple devices](hls-authoring-specification-for-apple-devices.md)
+### Specifications and other documents
+- [HTTP Live Streaming (HLS) authoring specification for Apple devices](./hls-authoring-specification-for-apple-devices.md)
   Learn the requirements for live and on-demand audio and video content delivery using HLS.
-- [HLS for Apple Podcasts](hls-for-podcasts.md)
+- [HLS for Apple Podcasts](./hls-for-podcasts.md)
   Deliver HTTP Live Streaming (HLS) video-on-demand content to Apple Podcasts.
-- [Using content protection systems with HLS](using-content-protection-systems-with-hls.md)
+- [Using content protection systems with HLS](./using-content-protection-systems-with-hls.md)
   Adding encryption keys to media playlists
-- [About the Common Media Application Format with HTTP Live Streaming (HLS)](about-the-common-media-application-format-with-http-live-streaming-hls.md)
+- [About the Common Media Application Format with HTTP Live Streaming (HLS)](./about-the-common-media-application-format-with-http-live-streaming-hls.md)
   Learn the Common Media Application Format as it applies to HLS.
-- [Enabling Low-Latency HTTP Live Streaming (HLS)](enabling-low-latency-http-live-streaming-hls.md)
+- [Enabling Low-Latency HTTP Live Streaming (HLS)](./enabling-low-latency-http-live-streaming-hls.md)
   Add Low-Latency HLS to your content streams to maintain scalability.
-- [Links to additional specifications and videos](links-to-additional-specifications-and-videos.md)
+- [Links to additional specifications and videos](./links-to-additional-specifications-and-videos.md)
   Review additional specifications and documents.
-- [Videos about HLS](videos-about-hls.md)
+- [Videos about HLS](./videos-about-hls.md)
   Review informational videos about HTTP Live Streaming.
-- [Providing metadata for xHE-AAC video soundtracks](providing-metadata-for-xhe-aac-video-soundtracks.md)
+- [Providing metadata for xHE-AAC video soundtracks](./providing-metadata-for-xhe-aac-video-soundtracks.md)
   Ensure volume normalization by including metadata for loudness and dynamic range control.
-- [Providing JavaScript Object Notation (JSON) chapters](providing-javascript-object-notation-json-chapters.md)
+- [Providing JavaScript Object Notation (JSON) chapters](./providing-javascript-object-notation-json-chapters.md)
   Prepare JSON chapters for HTTP Live Streaming.
 
 

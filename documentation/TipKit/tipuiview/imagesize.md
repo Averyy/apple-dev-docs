@@ -1,7 +1,8 @@
 # imageSize
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Size of the image displayed in the tip view.
 

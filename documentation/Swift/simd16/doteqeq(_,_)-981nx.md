@@ -1,7 +1,8 @@
 # .==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 A vector mask with the result of a pointwise equality comparison.
 
@@ -19,6 +20,8 @@ A vector mask with the result of a pointwise equality comparison.
 ```swift
 static func .== (a: SIMD16<Scalar>, b: SIMD16<Scalar>) -> SIMDMask<SIMD16<Scalar>.MaskStorage>
 ```
+
+Available when `Scalar` is `UInt64`.
 
 
 ---

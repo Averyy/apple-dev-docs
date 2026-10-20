@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a view configuration state with the specified trait collection.
@@ -11,7 +12,7 @@ Creates a view configuration state with the specified trait collection.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ init(traitCollection: UITraitCollection)
 
 #### Discussion
 
-Typically, you don’t create a configuration state yourself. To obtain a configuration state, override the [`updateConfiguration(using:)`](uicollectionviewcell/updateconfiguration(using:).md) method in your view subclass and use the state parameter. Outside of this method, you can get a view’s configuration state by using its [`configurationState`](uicollectionviewcell/configurationstate-4u37h.md) property.
+Typically, you don’t create a configuration state yourself. To obtain a configuration state, override the [`updateConfiguration(using:)`](../uicollectionviewcell/updateconfiguration%28using%29.md) method in your view subclass and use the state parameter. Outside of this method, you can get a view’s configuration state by using its [`configurationState`](../uicollectionviewcell/configurationstate-4u37h.md) property.
 
 
 ---

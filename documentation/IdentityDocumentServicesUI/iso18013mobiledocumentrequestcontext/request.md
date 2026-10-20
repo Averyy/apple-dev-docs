@@ -1,14 +1,15 @@
 # request
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The incoming ISO 18013 mobile document request.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

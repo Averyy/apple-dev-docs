@@ -1,7 +1,8 @@
 # one
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A size with a width, height, and depth of `1`.
 

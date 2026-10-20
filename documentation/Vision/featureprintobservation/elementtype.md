@@ -1,7 +1,8 @@
 # elementType
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of each element in the data.
 
@@ -22,11 +23,12 @@ let elementType: ElementType
 
 ## See Also
 
-- [let data: Data](featureprintobservation/data.md)
+### Inspecting an observation
+- [let data: Data](./data.md)
   The feature print data.
-- [let elementCount: Int](featureprintobservation/elementcount.md)
+- [let elementCount: Int](./elementcount.md)
   The total number of elements in the data.
-- [enum ElementType](elementtype.md)
+- [enum ElementType](../elementtype.md)
   The type of element in feature print data.
 
 

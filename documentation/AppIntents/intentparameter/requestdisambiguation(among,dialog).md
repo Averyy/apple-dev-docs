@@ -1,7 +1,8 @@
 # requestDisambiguation(among:dialog:)
 
 **Framework**: App Intents  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Request that the user disambiguate amongst an array of values for this parameter.
 
@@ -11,7 +12,7 @@ Request that the user disambiguate amongst an array of values for this parameter
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Request that the user disambiguate amongst an array of values for this parameter
 ```swift
 final func requestDisambiguation(among itemsToDisambiguate: [Value.ValueType], dialog: IntentDialog? = nil) async throws -> Value.ValueType
 ```
+
+Available when `Value` conforms to `_IntentValue` and `Sendable`.
 
 #### Return Value
 
@@ -31,7 +34,8 @@ The value supplied by the user
 
 ## See Also
 
-- [func needsDisambiguationError(among: [Value.ValueType], dialog: IntentDialog?) -> AppIntentError](intentparameter/needsdisambiguationerror(among:dialog:).md)
+### Requesting disambiguation
+- [func needsDisambiguationError(among: [Value.ValueType], dialog: IntentDialog?) -> AppIntentError](./needsdisambiguationerror%28among,dialog%29.md)
   Returns a `restartPerform` error with context for the user to disambiguate amongst an array of values from for this parameter and re-perform the intent with the new value.
 
 

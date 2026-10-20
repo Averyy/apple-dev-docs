@@ -1,7 +1,8 @@
 # NSOutlineView.ItemWillCollapseMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,18 +16,18 @@ struct ItemWillCollapseMessage
 ## Topics
 
 ### Initializers
-- [init(outlineView: NSOutlineView, item: Any)](nsoutlineview/itemwillcollapsemessage/init(outlineview:item:).md)
+- [init(outlineView: NSOutlineView, item: Any)](./itemwillcollapsemessage/init%28outlineview,item%29.md)
 ### Instance Properties
-- [var item: Any](nsoutlineview/itemwillcollapsemessage/item.md)
-- [var outlineView: NSOutlineView](nsoutlineview/itemwillcollapsemessage/outlineview.md)
+- [var item: Any](./itemwillcollapsemessage/item.md)
+- [var outlineView: NSOutlineView](./itemwillcollapsemessage/outlineview.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

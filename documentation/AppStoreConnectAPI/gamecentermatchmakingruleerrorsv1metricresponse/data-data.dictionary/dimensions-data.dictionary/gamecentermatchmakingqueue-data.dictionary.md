@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The links to the details of the rule errors.
 
@@ -10,14 +11,14 @@ The links to the details of the rule errors.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue.Links](gamecentermatchmakingruleerrorsv1metricresponse/data-data.dictionary/dimensions-data.dictionary/gamecentermatchmakingqueue-data.dictionary/links-data.dictionary.md)
+- [object GameCenterMatchmakingRuleErrorsV1MetricResponse.Data.Dimensions.GameCenterMatchmakingQueue.Links](./gamecentermatchmakingqueue-data.dictionary/links-data.dictionary.md)
   The link representation of the results.
 
 ## Properties

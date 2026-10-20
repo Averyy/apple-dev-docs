@@ -1,14 +1,15 @@
 # setControlValue
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setControlValue(UInt32 controlID, UInt32 value, UInt32 *newValue);
 ```
 

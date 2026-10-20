@@ -1,7 +1,8 @@
 # includesActualByteCount
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the format style should include the exact byte count, in addition to expressing it in terms of units.
 
@@ -26,11 +27,12 @@ When this value is `true`, a format style produces output like `1 kB (1,024 byte
 
 ## See Also
 
-- [var allowedUnits: ByteCountFormatStyle.Units](bytecountformatstyle/attributed-swift.struct/allowedunits.md)
+### Accessing style properties
+- [var allowedUnits: ByteCountFormatStyle.Units](./allowedunits.md)
   The units the format style can use to express the byte count.
-- [var spellsOutZero: Bool](bytecountformatstyle/attributed-swift.struct/spellsoutzero.md)
+- [var spellsOutZero: Bool](./spellsoutzero.md)
   A Boolean value that indicates whether the format style should spell out zero-byte values as text.
-- [var locale: Locale](bytecountformatstyle/attributed-swift.struct/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use to format the numeric part of the byte count.
 
 

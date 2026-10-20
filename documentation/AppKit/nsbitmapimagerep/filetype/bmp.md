@@ -1,12 +1,13 @@
 # NSBitmapImageRep.FileType.bmp
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Windows bitmap image (BMP) format.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,22 @@ Windows bitmap image (BMP) format.
 case bmp
 ```
 
+```c
+NSBitmapImageFileTypeBMP
+```
+
 ## See Also
 
-- [NSBitmapImageRep.FileType.tiff](nsbitmapimagerep/filetype/tiff.md)
+### Constants
+- [NSBitmapImageRep.FileType.tiff](./tiff.md)
   Tagged Image File Format (TIFF).
-- [NSBitmapImageRep.FileType.gif](nsbitmapimagerep/filetype/gif.md)
+- [NSBitmapImageRep.FileType.gif](./gif.md)
   Graphics Image Format (GIF), originally created by CompuServe for online downloads.
-- [NSBitmapImageRep.FileType.jpeg](nsbitmapimagerep/filetype/jpeg.md)
+- [NSBitmapImageRep.FileType.jpeg](./jpeg.md)
   JPEG format.
-- [NSBitmapImageRep.FileType.png](nsbitmapimagerep/filetype/png.md)
+- [NSBitmapImageRep.FileType.png](./png.md)
   Portable Network Graphics (PNG) format.
-- [NSBitmapImageRep.FileType.jpeg2000](nsbitmapimagerep/filetype/jpeg2000.md)
+- [NSBitmapImageRep.FileType.jpeg2000](./jpeg2000.md)
   JPEG 2000 file format.
 
 

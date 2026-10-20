@@ -1,7 +1,8 @@
 # link
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An annotation that provides a hyperlink to a location in the document, or an action to perform when the user clicks or taps it.
 
@@ -19,31 +20,36 @@ An annotation that provides a hyperlink to a location in the document, or an act
 static let link: PDFAnnotationSubtype
 ```
 
+```c
+extern PDFAnnotationSubtype PDFAnnotationSubtypeLink;
+```
+
 ## See Also
 
-- [static let circle: PDFAnnotationSubtype](pdfannotationsubtype/circle.md)
+### Choosing an Annotation Subtype
+- [static let circle: PDFAnnotationSubtype](./circle.md)
   An annotation that renders a circle shape.
-- [static let freeText: PDFAnnotationSubtype](pdfannotationsubtype/freetext.md)
+- [static let freeText: PDFAnnotationSubtype](./freetext.md)
   An annotation that displays an editable text field.
-- [static let highlight: PDFAnnotationSubtype](pdfannotationsubtype/highlight.md)
+- [static let highlight: PDFAnnotationSubtype](./highlight.md)
   An annotation that highlights text.
-- [static let ink: PDFAnnotationSubtype](pdfannotationsubtype/ink.md)
+- [static let ink: PDFAnnotationSubtype](./ink.md)
   An annotation that represents a freehand scribble.
-- [static let line: PDFAnnotationSubtype](pdfannotationsubtype/line.md)
+- [static let line: PDFAnnotationSubtype](./line.md)
   An annotation that displays a single straight line.
-- [static let popup: PDFAnnotationSubtype](pdfannotationsubtype/popup.md)
+- [static let popup: PDFAnnotationSubtype](./popup.md)
   An annotation that displays text in a pop-up window for entry and editing.
-- [static let square: PDFAnnotationSubtype](pdfannotationsubtype/square.md)
+- [static let square: PDFAnnotationSubtype](./square.md)
   An annotation that displays a square shape.
-- [static let stamp: PDFAnnotationSubtype](pdfannotationsubtype/stamp.md)
+- [static let stamp: PDFAnnotationSubtype](./stamp.md)
   An annotation that displays text or a graphic as if a rubber stamp imprints it on the page.
-- [static let strikeOut: PDFAnnotationSubtype](pdfannotationsubtype/strikeout.md)
+- [static let strikeOut: PDFAnnotationSubtype](./strikeout.md)
   An annotation that strikes out text.
-- [static let text: PDFAnnotationSubtype](pdfannotationsubtype/text.md)
+- [static let text: PDFAnnotationSubtype](./text.md)
   An annotation that displays a collapsible note that contains text.
-- [static let underline: PDFAnnotationSubtype](pdfannotationsubtype/underline.md)
+- [static let underline: PDFAnnotationSubtype](./underline.md)
   An annotation that underlines text.
-- [static let widget: PDFAnnotationSubtype](pdfannotationsubtype/widget.md)
+- [static let widget: PDFAnnotationSubtype](./widget.md)
   An annotation that displays interactive form elements, including text or signature fields, radio buttons, checkboxes, push buttons, pop-ups, and tables.
 
 

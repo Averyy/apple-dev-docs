@@ -1,7 +1,8 @@
 # init(texture:alphaThreshold:size:)
 
 **Framework**: SpriteKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a physics body from the contents of a texture, capturing only the texels that exceed a specified transparency value.
 
@@ -20,6 +21,10 @@ Creates a physics body from the contents of a texture, capturing only the texels
 init(texture: SKTexture, alphaThreshold: Float, size: CGSize)
 ```
 
+```objc
++ (SKPhysicsBody *) bodyWithTexture:(SKTexture *) texture alphaThreshold:(float) alphaThreshold size:(CGSize) size;
+```
+
 #### Return Value
 
 A new volume-based physics body.
@@ -36,9 +41,10 @@ Use this method when your sprite has a shape that you want replicated in its phy
 
 ## See Also
 
-- [Shaping a Physics Body to Match a Node’s Graphics](shaping-a-physics-body-to-match-a-node-s-graphics.md)
+### Creating a Body from a Texture
+- [Shaping a Physics Body to Match a Node’s Graphics](../shaping-a-physics-body-to-match-a-node-s-graphics.md)
   Shape a physics body to your graphics for the right blend of collision accuracy and performance.
-- [init(texture: SKTexture, size: CGSize)](skphysicsbody/init(texture:size:).md)
+- [init(texture: SKTexture, size: CGSize)](./init%28texture,size%29.md)
   Creates a physics body from the contents of a texture.
 
 

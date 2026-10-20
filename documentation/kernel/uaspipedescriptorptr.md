@@ -1,14 +1,15 @@
 # UASPipeDescriptorPtr
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 typedef UASPipeDescriptor *UASPipeDescriptorPtr;
 ```
 

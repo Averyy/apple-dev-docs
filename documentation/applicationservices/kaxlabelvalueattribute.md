@@ -1,7 +1,8 @@
 # kAXLabelValueAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The value of the label represented by this accessibility object. This attribute is required for all accessibility objects that represent labels.
 
@@ -12,6 +13,10 @@ The value of the label represented by this accessibility object. This attribute 
 
 ```swift
 var kAXLabelValueAttribute: String { get }
+```
+
+```c
+#define kAXLabelValueAttribute
 ```
 
 

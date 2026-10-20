@@ -1,7 +1,8 @@
 # isSharedWithNearbyParticipants
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Check if a world anchor is shared with nearby participants.
 

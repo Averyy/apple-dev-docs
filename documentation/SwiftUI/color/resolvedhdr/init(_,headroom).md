@@ -1,7 +1,8 @@
 # init(_:headroom:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new resolved color value.
 

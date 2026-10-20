@@ -1,7 +1,8 @@
 # ToolExpectation.PartiallyGenerated
 
 **Framework**: Evaluations  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A partially generated form of a tool expectation.
 
@@ -24,19 +25,19 @@ enum PartiallyGenerated
 ## Topics
 
 ### Enumeration Cases
-- [case anyOrder(expectations: Array<ToolExpectation>.PartiallyGenerated?)](toolexpectation/partiallygenerated/anyorder(expectations:).md)
+- [case anyOrder(expectations: Array<ToolExpectation>.PartiallyGenerated?)](./partiallygenerated/anyorder%28expectations%29.md)
   A partially generated group of tool expectations that can match in any order.
-- [case expectation(name: String.PartiallyGenerated?, arguments: Array<ArgumentMatcher>.PartiallyGenerated?)](toolexpectation/partiallygenerated/expectation(name:arguments:).md)
+- [case expectation(name: String.PartiallyGenerated?, arguments: Array<ArgumentMatcher>.PartiallyGenerated?)](./partiallygenerated/expectation%28name,arguments%29.md)
   A partially generated single tool expectation with an optional name and arguments.
 ### Initializers
-- [init(GeneratedContent) throws](toolexpectation/partiallygenerated/init(_:).md)
+- [init(GeneratedContent) throws](./partiallygenerated/init%28_%29.md)
   Creates a partial tool expectation from the given generated content.
 
 ## Relationships
 
 ### Conforms To
-- [ConvertibleFromGeneratedContent](../foundationmodels/convertiblefromgeneratedcontent.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ConvertibleFromGeneratedContent](../../FoundationModels/convertiblefromgeneratedcontent.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

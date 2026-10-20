@@ -1,7 +1,8 @@
 # AVAssetWriterDelegate
 
 **Framework**: AVFoundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A delegate protocol that defines the methods to implement to respond to asset-writing events.
 
@@ -19,34 +20,39 @@ A delegate protocol that defines the methods to implement to respond to asset-wr
 protocol AVAssetWriterDelegate : NSObjectProtocol, Sendable
 ```
 
+```objc
+@protocol AVAssetWriterDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to segment output
-- [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType)](avassetwriterdelegate/assetwriter(_:didoutputsegmentdata:segmenttype:).md)
+- [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType)](./avassetwriterdelegate/assetwriter%28_,didoutputsegmentdata,segmenttype%29.md)
   Tells the delegate that the asset writer output segment data.
-- [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType, segmentReport: AVAssetSegmentReport?)](avassetwriterdelegate/assetwriter(_:didoutputsegmentdata:segmenttype:segmentreport:).md)
+- [func assetWriter(AVAssetWriter, didOutputSegmentData: Data, segmentType: AVAssetSegmentType, segmentReport: AVAssetSegmentReport?)](./avassetwriterdelegate/assetwriter%28_,didoutputsegmentdata,segmenttype,segmentreport%29.md)
   Tells the delegate that the asset writer output segment data and a report.
-- [class AVAssetSegmentReport](avassetsegmentreport.md)
+- [class AVAssetSegmentReport](./avassetsegmentreport.md)
   An object that provides information about segment data.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var delegate: (any AVAssetWriterDelegate)?](avassetwriter/delegate.md)
+### Configuring segment writing
+- [var delegate: (any AVAssetWriterDelegate)?](./avassetwriter/delegate.md)
   A delegate object that responds to asset-writing events.
-- [var preferredOutputSegmentInterval: CMTime](avassetwriter/preferredoutputsegmentinterval.md)
+- [var preferredOutputSegmentInterval: CMTime](./avassetwriter/preferredoutputsegmentinterval.md)
   The interval of output segments that you prefer.
-- [var initialSegmentStartTime: CMTime](avassetwriter/initialsegmentstarttime.md)
+- [var initialSegmentStartTime: CMTime](./avassetwriter/initialsegmentstarttime.md)
   The start time of the initial segment.
-- [var outputFileTypeProfile: AVFileTypeProfile?](avassetwriter/outputfiletypeprofile.md)
+- [var outputFileTypeProfile: AVFileTypeProfile?](./avassetwriter/outputfiletypeprofile.md)
   A profile for the output file type.
-- [func flushSegment()](avassetwriter/flushsegment.md)
+- [func flushSegment()](./avassetwriter/flushsegment%28%29.md)
   Closes the current segment and outputs it to a delegate method.
 
 

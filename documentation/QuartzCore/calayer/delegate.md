@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layer’s delegate object.
 
@@ -19,11 +20,15 @@ The layer’s delegate object.
 weak var delegate: (any CALayerDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<CALayerDelegate> delegate;
+```
+
 #### Discussion
 
-You can use a delegate object to provide the layer’s contents, handle the layout of any sublayers, and provide custom actions in response to layer-related changes. The object you assign to this property should implement one or more of the methods of the [`CALayerDelegate`](calayerdelegate.md) informal protocol. For more information about that protocol, see `CALayerDelegate`
+You can use a delegate object to provide the layer’s contents, handle the layout of any sublayers, and provide custom actions in response to layer-related changes. The object you assign to this property should implement one or more of the methods of the [`CALayerDelegate`](../calayerdelegate.md) informal protocol. For more information about that protocol, see `CALayerDelegate`
 
-In iOS, if the layer is associated with a [`UIView`](https://developer.apple.com/documentation/uikit/uiview) object, this property *must* be set to the view that owns the layer.
+In iOS, if the layer is associated with a [`UIView`](../../UIKit/uiview.md) object, this property *must* be set to the view that owns the layer.
 
 
 ---

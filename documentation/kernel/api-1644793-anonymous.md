@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,12 +18,12 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kRBCNumPowerStates](1644793-anonymous/krbcnumpowerstates.md)
-- [kRBCPowerStateActive](1644793-anonymous/krbcpowerstateactive.md)
-- [kRBCPowerStateIdle](1644793-anonymous/krbcpowerstateidle.md)
-- [kRBCPowerStateSleep](1644793-anonymous/krbcpowerstatesleep.md)
-- [kRBCPowerStateStandby](1644793-anonymous/krbcpowerstatestandby.md)
-- [kRBCPowerStateSystemSleep](1644793-anonymous/krbcpowerstatesystemsleep.md)
+- [kRBCNumPowerStates](./api-1644793-anonymous/krbcnumpowerstates.md)
+- [kRBCPowerStateActive](./api-1644793-anonymous/krbcpowerstateactive.md)
+- [kRBCPowerStateIdle](./api-1644793-anonymous/krbcpowerstateidle.md)
+- [kRBCPowerStateSleep](./api-1644793-anonymous/krbcpowerstatesleep.md)
+- [kRBCPowerStateStandby](./api-1644793-anonymous/krbcpowerstatestandby.md)
+- [kRBCPowerStateSystemSleep](./api-1644793-anonymous/krbcpowerstatesystemsleep.md)
 
 
 ---

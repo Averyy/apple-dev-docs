@@ -2,6 +2,7 @@
 
 **Framework**: Push to Talk  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells your observer the system restored the channel.
@@ -17,9 +18,13 @@ Tells your observer the system restored the channel.
 func channelDescriptor(restoredChannelUUID channelUUID: UUID) -> PTChannelDescriptor
 ```
 
+```objc
+- (PTChannelDescriptor *) channelDescriptorForRestoredChannelUUID:(NSUUID *) channelUUID;
+```
+
 ## Mentions
 
-- [Creating a Push to Talk app](creating-a-push-to-talk-app.md)
+- [Creating a Push to Talk app](../creating-a-push-to-talk-app.md)
 
 #### Return Value
 

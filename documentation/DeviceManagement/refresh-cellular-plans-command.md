@@ -1,7 +1,8 @@
 # Refresh Cellular Plans
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Query a carrier URL for active eSIM cellular-plan profiles on a device.
 
@@ -12,7 +13,7 @@ Query a carrier URL for active eSIM cellular-plan profiles on a device.
 
 #### Discussion
 
-##### Error Codes
+##### Error codes
 
 An error response uses one of the following error codes:
 
@@ -20,7 +21,7 @@ An error response uses one of the following error codes:
 - `36002`: The hardware doesn’t support this command.
 - `36003`: The cellular stack was unable to perform the request. This error can also occur if the cellular stack is busy, in which case, retrying the command later may resolve the issue.
 
-##### Command Availability
+##### Command availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ An error response uses one of the following error codes:
 | Allowed in user enrollment | N/A |
 | Required access right | N/A |
 
-##### Example Request and Response
+##### Example request and response
 
 **Request**:
 
@@ -72,9 +73,9 @@ An error response uses one of the following error codes:
 ## Topics
 
 ### Commands and responses
-- [object RefreshCellularPlansCommand](refreshcellularplanscommand.md)
+- [object RefreshCellularPlansCommand](./refreshcellularplanscommand.md)
   The command to query a carrier URL for active eSIM cellular-plan profiles on a device.
-- [object RefreshCellularPlansResponse](refreshcellularplansresponse.md)
+- [object RefreshCellularPlansResponse](./refreshcellularplansresponse.md)
   A response from the device after it processes the command to query a carrier URL for active eSIM cellular-plan profiles on a device.
 
 ## Endpoint
@@ -83,7 +84,14 @@ An error response uses one of the following error codes:
 
 ## Request Body
 
+**Content-Type**: `application/x-apple-aspen-mdm`  
+**Type**: `RefreshCellularPlansCommand`
+
 The request object the server returns for the Refresh Cellular Plans Command.
+
+## Responses
+
+- `200` OK (`RefreshCellularPlansResponse`, `application/xml`): The response object the system returns for the Refresh Cellular Plans Command.
 
 
 ---

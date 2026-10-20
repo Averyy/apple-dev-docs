@@ -1,7 +1,8 @@
 # reportConnectionInterrupted(_:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports that a previously-established connection was unexpectedly lost.
 
@@ -17,9 +18,9 @@ final func reportConnectionInterrupted(_ error: any Error)
 
 #### Discussion
 
-This may only be called while the provider is in the [`FoveatedStreamingProviderStatus.connected`](foveatedstreamingproviderstatus/connected.md) state. Calling this transitions the session to `FoveatedStreamingProviderStatus/error(_:)`.
+This may only be called while the provider is in the [`FoveatedStreamingProviderStatus.connected`](../foveatedstreamingproviderstatus/connected.md) state. Calling this transitions the session to `FoveatedStreamingProviderStatus/error(_:)`.
 
-After calling this method, the provider should consider the session terminated. [`disconnect()`](foveatedstreamingextension/disconnect().md) will **not** be called.
+After calling this method, the provider should consider the session terminated. [`disconnect()`](../foveatedstreamingextension/disconnect%28%29.md) will **not** be called.
 
 
 ---

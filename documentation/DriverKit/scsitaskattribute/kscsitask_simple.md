@@ -1,17 +1,18 @@
 # kSCSITask_SIMPLE
 
 **Framework**: DriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kSCSITask_SIMPLE
 ```
 
@@ -21,9 +22,10 @@ The task has a simple attribute.
 
 ## See Also
 
-- [kSCSITask_ORDERED](scsitaskattribute/kscsitask_ordered.md)
-- [kSCSITask_HEAD_OF_QUEUE](scsitaskattribute/kscsitask_head_of_queue.md)
-- [kSCSITask_ACA](scsitaskattribute/kscsitask_aca.md)
+### Constants
+- [kSCSITask_ORDERED](./kscsitask_ordered.md)
+- [kSCSITask_HEAD_OF_QUEUE](./kscsitask_head_of_queue.md)
+- [kSCSITask_ACA](./kscsitask_aca.md)
 
 
 ---

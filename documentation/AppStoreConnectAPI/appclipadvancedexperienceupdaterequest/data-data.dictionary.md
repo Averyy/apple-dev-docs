@@ -1,7 +1,8 @@
 # AppClipAdvancedExperienceUpdateRequest.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data element of the request body.
 
@@ -10,16 +11,16 @@ The data element of the request body.
 
 ## Declaration
 
-```swift
+```
 object AppClipAdvancedExperienceUpdateRequest.Data
 ```
 
 ## Topics
 
 ### Objects
-- [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes](appclipadvancedexperienceupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+- [object AppClipAdvancedExperienceUpdateRequest.Data.Attributes](./data-data.dictionary/attributes-data.dictionary.md)
   The attributes you set that describe the Advanced App Clip Experiences resource.
-- [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships](appclipadvancedexperienceupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+- [object AppClipAdvancedExperienceUpdateRequest.Data.Relationships](./data-data.dictionary/relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 ## Properties
@@ -28,6 +29,8 @@ object AppClipAdvancedExperienceUpdateRequest.Data
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the request.
 - `relationships` (AppClipAdvancedExperienceUpdateRequest.Data.Relationships): The navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `appClipAdvancedExperiences`
 
 
 ---

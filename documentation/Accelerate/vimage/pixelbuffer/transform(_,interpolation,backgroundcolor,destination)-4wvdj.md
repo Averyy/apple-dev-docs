@@ -1,7 +1,8 @@
 # transform(_:interpolation:backgroundColor:destination:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies a perspective warp to an interleaved 4-channel, unsigned 16-bit planar image.
 
@@ -11,7 +12,7 @@ Applies a perspective warp to an interleaved 4-channel, unsigned 16-bit planar i
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Applies a perspective warp to an interleaved 4-channel, unsigned 16-bit planar i
 ```swift
 func transform(_ transform: vImage_PerpsectiveTransform, interpolation: vImage_PerpsectiveTransform.Interpolation, backgroundColor: Pixel_ARGB_16U, destination: vImage.PixelBuffer<Format>)
 ```
+
+Available when `Format` is `vImage.Interleaved16Ux4`.
 
 #### Discussion
 
@@ -55,7 +58,7 @@ sourceBuffer.transform(warp,
 
 The illustration below shows the original image on the left and the warped image on the right:
 
-![Two versions of a grid divided by dotted lines into a 4 by 4 partition. The version on the left is a square grid and appears as a straight-on view. The version on the right is a square containing a grid warped so that the left edge of the square grid appears to be receding into the distance.](/images/com.apple.accelerate/media-4165214@2x.png)
+![Two versions of a grid divided by dotted lines into a 4 by 4 partition. The version on the left is a square grid and appears as a straight-on view. The version on the right is a square containing a grid warped so that the left edge of the square grid appears to be receding into the distance.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4165214@2x.png)
 
 > ❗ **Important**:  This function doesn’t work in place — that is, the source and destination buffers need to point to different memory.
 
@@ -68,17 +71,19 @@ The illustration below shows the original image on the left and the warped image
 
 ## See Also
 
-- [Transforming an image in three dimensions](transforming-an-image-in-three-dimensions.md)
+### Related Documentation
+- [Transforming an image in three dimensions](../../transforming-an-image-in-three-dimensions.md)
   Create and use a projective transformation to apply a perspective warp to an image.
-- [func transform(vImage_PerpsectiveTransform, interpolation: vImage_PerpsectiveTransform.Interpolation, backgroundColor: Pixel_8, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/transform(_:interpolation:backgroundcolor:destination:)-94t75.md)
+### Applying projective transformations to images
+- [func transform(vImage_PerpsectiveTransform, interpolation: vImage_PerpsectiveTransform.Interpolation, backgroundColor: Pixel_8, destination: vImage.PixelBuffer<Format>)](./transform%28_,interpolation,backgroundcolor,destination%29-94t75.md)
   Applies a perspective warp to an 8-bit planar image.
-- [func transform(vImage_PerpsectiveTransform, interpolation: vImage_PerpsectiveTransform.Interpolation, backgroundColor: Pixel_8888, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/transform(_:interpolation:backgroundcolor:destination:)-902c9.md)
+- [func transform(vImage_PerpsectiveTransform, interpolation: vImage_PerpsectiveTransform.Interpolation, backgroundColor: Pixel_8888, destination: vImage.PixelBuffer<Format>)](./transform%28_,interpolation,backgroundcolor,destination%29-902c9.md)
   Applies a perspective warp to an interleaved 4-channel, 8-bit planar image.
-- [func transform(vImage_PerpsectiveTransform, interpolation: vImage_PerpsectiveTransform.Interpolation, backgroundColor: Pixel_16U, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/transform(_:interpolation:backgroundcolor:destination:)-9pv8u.md)
+- [func transform(vImage_PerpsectiveTransform, interpolation: vImage_PerpsectiveTransform.Interpolation, backgroundColor: Pixel_16U, destination: vImage.PixelBuffer<Format>)](./transform%28_,interpolation,backgroundcolor,destination%29-9pv8u.md)
   Applies a perspective warp to an unsigned-integer 16-bit planar image.
-- [func transform(vImage_PerpsectiveTransform, interpolation: vImage_PerpsectiveTransform.Interpolation, backgroundColor: Pixel_16F, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/transform(_:interpolation:backgroundcolor:destination:)-79mov.md)
+- [func transform(vImage_PerpsectiveTransform, interpolation: vImage_PerpsectiveTransform.Interpolation, backgroundColor: Pixel_16F, destination: vImage.PixelBuffer<Format>)](./transform%28_,interpolation,backgroundcolor,destination%29-79mov.md)
   Applies a perspective warp to a floating-point 16-bit planar image.
-- [func transform(vImage_PerpsectiveTransform, interpolation: vImage_PerpsectiveTransform.Interpolation, backgroundColor: Pixel_ARGB_16F, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/transform(_:interpolation:backgroundcolor:destination:)-7qnl8.md)
+- [func transform(vImage_PerpsectiveTransform, interpolation: vImage_PerpsectiveTransform.Interpolation, backgroundColor: Pixel_ARGB_16F, destination: vImage.PixelBuffer<Format>)](./transform%28_,interpolation,backgroundcolor,destination%29-7qnl8.md)
   Applies a perspective warp to an interleaved 4-channel, floating-point 16-bit planar image.
 
 

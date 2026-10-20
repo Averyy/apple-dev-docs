@@ -1,22 +1,25 @@
 # CFBundleHelpBookName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the help file that will be opened in Help Viewer.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CFBundleHelpBookName` (Help Book identifier)
+- **Type**: string
 
 ## See Also
 
-- [CFAppleHelpAnchor](information-property-list/cfapplehelpanchor.md)
+### Help
+- [CFAppleHelpAnchor](./cfapplehelpanchor.md)
   The name of the bundle’s HTML help file.
-- [CFBundleHelpBookFolder](information-property-list/cfbundlehelpbookfolder.md)
+- [CFBundleHelpBookFolder](./cfbundlehelpbookfolder.md)
   The name of the folder containing the bundle’s help files.
 
 

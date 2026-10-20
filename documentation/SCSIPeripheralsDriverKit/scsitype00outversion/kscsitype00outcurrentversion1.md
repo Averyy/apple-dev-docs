@@ -1,7 +1,8 @@
 # kScsiType00OutCurrentVersion1
 
 **Framework**: SCSIPeripheralsDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 Version 1 of the Type00 outbound interface.
 
@@ -10,7 +11,7 @@ Version 1 of the Type00 outbound interface.
 
 ## Declaration
 
-```swift
+```c
 kScsiType00OutCurrentVersion1
 ```
 

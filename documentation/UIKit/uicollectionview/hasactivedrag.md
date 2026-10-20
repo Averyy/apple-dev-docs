@@ -1,7 +1,8 @@
 # hasActiveDrag
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether items were lifted from the collection view and have not yet been dropped.
 
@@ -17,13 +18,18 @@ A Boolean value that indicates whether items were lifted from the collection vie
 var hasActiveDrag: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasActiveDrag;
+```
+
 ## See Also
 
-- [var dragDelegate: (any UICollectionViewDragDelegate)?](uicollectionview/dragdelegate.md)
+### Managing drag interactions
+- [var dragDelegate: (any UICollectionViewDragDelegate)?](./dragdelegate.md)
   The delegate object that manages the dragging of items from the collection view.
-- [protocol UICollectionViewDragDelegate](uicollectionviewdragdelegate.md)
+- [protocol UICollectionViewDragDelegate](../uicollectionviewdragdelegate.md)
   The interface for initiating drags from a collection view.
-- [var dragInteractionEnabled: Bool](uicollectionview/draginteractionenabled.md)
+- [var dragInteractionEnabled: Bool](./draginteractionenabled.md)
   A Boolean value that indicates whether the collection view supports dragging content.
 
 

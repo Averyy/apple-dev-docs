@@ -1,7 +1,8 @@
 # DayWeather
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents the weather conditions for the day.
 
@@ -23,86 +24,87 @@ struct DayWeather
 ## Topics
 
 ### Getting temperature
-- [var highTemperature: Measurement<UnitTemperature>](dayweather/hightemperature.md)
+- [var highTemperature: Measurement<UnitTemperature>](./dayweather/hightemperature.md)
   The daytime high temperature.
-- [var lowTemperature: Measurement<UnitTemperature>](dayweather/lowtemperature.md)
+- [var lowTemperature: Measurement<UnitTemperature>](./dayweather/lowtemperature.md)
   The overnight low temperature.
 ### Getting precipitation
-- [var precipitation: Precipitation](dayweather/precipitation.md)
+- [var precipitation: Precipitation](./dayweather/precipitation.md)
   The description of precipitation for this day.
-- [var precipitationChance: Double](dayweather/precipitationchance.md)
+- [var precipitationChance: Double](./dayweather/precipitationchance.md)
   The probability of precipitation during the day.
-- [var rainfallAmount: Measurement<UnitLength>](dayweather/rainfallamount.md)
+- [var rainfallAmount: Measurement<UnitLength>](./dayweather/rainfallamount.md)
   The amount of liquid precipitation for the day.
-- [var snowfallAmount: Measurement<UnitLength>](dayweather/snowfallamount.md)
+- [var snowfallAmount: Measurement<UnitLength>](./dayweather/snowfallamount.md)
   The amount of snowfall for the day.
 ### Getting celestial information
-- [var moon: MoonEvents](dayweather/moon.md)
+- [var moon: MoonEvents](./dayweather/moon.md)
   The lunar events for the day.
-- [var sun: SunEvents](dayweather/sun.md)
+- [var sun: SunEvents](./dayweather/sun.md)
   The solar events for the day.
 ### Getting the wind
-- [var wind: Wind](dayweather/wind.md)
+- [var wind: Wind](./dayweather/wind.md)
   The wind speed, direction, and gust.
 ### Getting the date
-- [var date: Date](dayweather/date.md)
+- [var date: Date](./dayweather/date.md)
   The start time of the day weather.
 ### Getting condition and UV index
-- [var condition: WeatherCondition](dayweather/condition.md)
+- [var condition: WeatherCondition](./dayweather/condition.md)
   A description of the weather condition on this day.
-- [var uvIndex: UVIndex](dayweather/uvindex.md)
+- [var uvIndex: UVIndex](./dayweather/uvindex.md)
   The expected intensity of ultraviolet radiation from the sun.
 ### Getting the weather symbol
-- [var symbolName: String](dayweather/symbolname.md)
+- [var symbolName: String](./dayweather/symbolname.md)
   The SF Symbol icon that represents the day weather condition.
 ### Instance Properties
-- [var daytimeForecast: DayPartForecast](dayweather/daytimeforecast.md)
+- [var daytimeForecast: DayPartForecast](./dayweather/daytimeforecast.md)
   The weather forecast from 7AM - 7PM on this day.
-- [var highTemperatureTime: Date?](dayweather/hightemperaturetime.md)
+- [var highTemperatureTime: Date?](./dayweather/hightemperaturetime.md)
   The time at which the high temperature occurs on this day.
-- [var highWindSpeed: Measurement<UnitSpeed>?](dayweather/highwindspeed.md)
+- [var highWindSpeed: Measurement<UnitSpeed>?](./dayweather/highwindspeed.md)
   The maximum sustained wind speed.
-- [var lowTemperatureTime: Date?](dayweather/lowtemperaturetime.md)
+- [var lowTemperatureTime: Date?](./dayweather/lowtemperaturetime.md)
   The time at which the low temperature occurs on this day.
-- [var maximumHumidity: Double](dayweather/maximumhumidity.md)
+- [var maximumHumidity: Double](./dayweather/maximumhumidity.md)
   The maximum amount of water vapor in the air for the day.
-- [var maximumVisibility: Double](dayweather/maximumvisibility.md)
+- [var maximumVisibility: Double](./dayweather/maximumvisibility.md)
   The maximum distance, in meters, at which terrain is visible for the day.
-- [var minimumHumidity: Double](dayweather/minimumhumidity.md)
+- [var minimumHumidity: Double](./dayweather/minimumhumidity.md)
   The minimum amount of water vapor in the air for the day.
-- [var minimumVisibility: Double](dayweather/minimumvisibility.md)
+- [var minimumVisibility: Double](./dayweather/minimumvisibility.md)
   The minimum distance, in meters, at which terrain is visible for the day.
-- [var overnightForecast: DayPartForecast](dayweather/overnightforecast.md)
+- [var overnightForecast: DayPartForecast](./dayweather/overnightforecast.md)
   The weather forecast for 7PM on this day until 7AM the following day.
-- [var precipitationAmount: Measurement<UnitLength>](dayweather/precipitationamount.md)
+- [var precipitationAmount: Measurement<UnitLength>](./dayweather/precipitationamount.md)
   The amount of liquid precipitation for the day.
-- [var precipitationAmountByType: PrecipitationAmountByType](dayweather/precipitationamountbytype.md)
+- [var precipitationAmountByType: PrecipitationAmountByType](./dayweather/precipitationamountbytype.md)
   A breakdown of amounts of all forms of precipitation forecasted for the day.
-- [var restOfDayForecast: DayPartForecast?](dayweather/restofdayforecast.md)
+- [var restOfDayForecast: DayPartForecast?](./dayweather/restofdayforecast.md)
   The forecast from now until midnight local time.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct WeatherAlert](weatheralert.md)
+### Alerts and forecasts
+- [struct WeatherAlert](./weatheralert.md)
   A weather alert issued for the requested  location by a governmental authority.
-- [struct WeatherAvailability](weatheravailability.md)
+- [struct WeatherAvailability](./weatheravailability.md)
   A structure that indicates the availability of data at the requested location.
-- [struct Forecast](forecast.md)
+- [struct Forecast](./forecast.md)
   A forecast collection for minute, hourly, and daily forecasts.
-- [struct MinuteWeather](minuteweather.md)
+- [struct MinuteWeather](./minuteweather.md)
   A structure that represents the next hour minute forecasts.
-- [struct HourWeather](hourweather.md)
+- [struct HourWeather](./hourweather.md)
   A structure that represents the weather conditions for the hour.
 
 

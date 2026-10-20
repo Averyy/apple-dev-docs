@@ -1,7 +1,8 @@
 # predicateForEnablingContact
 
 **Framework**: Contacts UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A predicate to determine the contact selectability in the list of contacts.
 
@@ -18,15 +19,20 @@ A predicate to determine the contact selectability in the list of contacts.
 var predicateForEnablingContact: NSPredicate? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSPredicate * predicateForEnablingContact;
+```
+
 #### Discussion
 
-You can set a value for this property to determine which contact should become selectable, such as `emailAddresses.@count > 0` to enable all the contacts that have an email address to become selectable. If no predicate is set for this property, all contacts become selectable. To learn about predicate syntax, see [`NSPredicate`](https://developer.apple.com/documentation/foundation/nspredicate).
+You can set a value for this property to determine which contact should become selectable, such as `emailAddresses.@count > 0` to enable all the contacts that have an email address to become selectable. If no predicate is set for this property, all contacts become selectable. To learn about predicate syntax, see [`NSPredicate`](../../Foundation/nspredicate.md).
 
 ## See Also
 
-- [var predicateForSelectionOfContact: NSPredicate?](cncontactpickerviewcontroller/predicateforselectionofcontact.md)
+### Predicates For Selecting Contacts
+- [var predicateForSelectionOfContact: NSPredicate?](./predicateforselectionofcontact.md)
   A predicate to control the return of the selected contact.
-- [var predicateForSelectionOfProperty: NSPredicate?](cncontactpickerviewcontroller/predicateforselectionofproperty.md)
+- [var predicateForSelectionOfProperty: NSPredicate?](./predicateforselectionofproperty.md)
   A predicate to control the properties of the selected contact.
 
 

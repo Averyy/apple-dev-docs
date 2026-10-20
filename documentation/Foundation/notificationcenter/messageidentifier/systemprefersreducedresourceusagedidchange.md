@@ -1,7 +1,8 @@
 # systemPrefersReducedResourceUsageDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,8 @@
 ```swift
 static var systemPrefersReducedResourceUsageDidChange: NotificationCenter.BaseMessageIdentifier<UIApplication.SystemPrefersReducedResourceUsageDidChangeMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIApplication.SystemPrefersReducedResourceUsageDidChangeMessage>`.
 
 
 ---

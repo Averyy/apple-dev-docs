@@ -1,7 +1,8 @@
 # PMCreateSession(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates and initializes a printing session object and creates a context for printing operations.
 
@@ -14,9 +15,13 @@ Creates and initializes a printing session object and creates a context for prin
 func PMCreateSession(_ printSession: UnsafeMutablePointer<PMPrintSession?>) -> OSStatus
 ```
 
-#### Return_value
+```c
+OSStatus PMCreateSession(PMPrintSession  _Nullable *printSession);
+```
 
-A result code. See [`Result Codes`](core_printing#1670007.md).
+#### Return Value
+
+A result code. See [Result Codes](./core_printing.md#1670007).
 
 #### Discussion
 
@@ -24,7 +29,7 @@ This function allocates memory for a new printing session object in your applica
 
 ## Parameters
 
-- `printSession`: A pointer to your [`PMPrintSession`](pmprintsession.md) variable. On return, the variable refers to a new printing session object. You are responsible for releasing the printing session object with the function [`PMRelease(_:)`](1461402-pmrelease.md).
+- `printSession`: A pointer to your [`PMPrintSession`](./pmprintsession.md) variable. On return, the variable refers to a new printing session object. You are responsible for releasing the printing session object with the function [`PMRelease(_:)`](./api-1461402-pmrelease.md).
 
 
 ---

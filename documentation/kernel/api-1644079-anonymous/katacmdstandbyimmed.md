@@ -1,14 +1,15 @@
 # kATAcmdStandbyImmed
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kATAcmdStandbyImmed = 0x00E0
 ```
 

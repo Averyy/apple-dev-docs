@@ -1,7 +1,8 @@
 # ModelJudgeError.noScaleValues(dimension:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The scoring dimension has no scale values defined.
 

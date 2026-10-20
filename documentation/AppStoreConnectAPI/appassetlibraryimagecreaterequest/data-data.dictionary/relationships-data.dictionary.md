@@ -1,7 +1,8 @@
 # AppAssetLibraryImageCreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,16 +11,16 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryImageCreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AppAssetLibraryImageCreateRequest.Data.Relationships.AssetLibrary](appassetlibraryimagecreaterequest/data-data.dictionary/relationships-data.dictionary/assetlibrary-data.dictionary.md)
+- [object AppAssetLibraryImageCreateRequest.Data.Relationships.AssetLibrary](./relationships-data.dictionary/assetlibrary-data.dictionary.md)
   The asset library to associate with the new app asset library image.
-- [object AppAssetLibraryImageCreateRequest.Data.Relationships.Placements](appassetlibraryimagecreaterequest/data-data.dictionary/relationships-data.dictionary/placements-data.dictionary.md)
+- [object AppAssetLibraryImageCreateRequest.Data.Relationships.Placements](./relationships-data.dictionary/placements-data.dictionary.md)
   The placements to associate with the new app asset library image.
 
 ## Properties
@@ -29,7 +30,8 @@ object AppAssetLibraryImageCreateRequest.Data.Relationships
 
 ## See Also
 
-- [object AppAssetLibraryImageCreateRequest.Data.Attributes](appassetlibraryimagecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object AppAssetLibraryImageCreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The attributes you set that describe the new app asset library image resource.
 
 

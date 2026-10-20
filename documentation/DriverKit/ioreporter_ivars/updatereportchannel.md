@@ -1,25 +1,26 @@
 # updateReportChannel
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Internal method to extract channel data to a destination.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 IOReturn updateReportChannel(int channel_index, uint32_t & elementCount, uint8_t * & buffer, size_t & capacity);
 ```
 
 #### Return Value
 
-Appropriate [`IOReturn`](ioreturn.md) code
+Appropriate [`IOReturn`](../ioreturn.md) code
 
 #### Discussion
 

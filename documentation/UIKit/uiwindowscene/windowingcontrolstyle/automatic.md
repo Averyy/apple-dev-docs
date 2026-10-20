@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Windowing controls will use the default system style
 
@@ -16,6 +17,10 @@ Windowing controls will use the default system style
 
 ```swift
 class var automatic: UIWindowScene.WindowingControlStyle { get }
+```
+
+```objc
+@property (class, nonatomic, readonly) UISceneWindowingControlStyle * automaticStyle;
 ```
 
 

@@ -1,7 +1,8 @@
 # CKOperation
 
 **Framework**: CloudKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract base class for all operations that execute in a database.
 
@@ -10,7 +11,7 @@ The abstract base class for all operations that execute in a database.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 3.0+
 
@@ -20,10 +21,14 @@ The abstract base class for all operations that execute in a database.
 class CKOperation
 ```
 
+```objc
+@interface CKOperation : NSOperation
+```
+
 ## Mentions
 
-- [Encrypting User Data](encrypting-user-data.md)
-- [Deciding whether CloudKit is right for your app](deciding-whether-cloudkit-is-right-for-your-app.md)
+- [Encrypting User Data](./encrypting-user-data.md)
+- [Deciding whether CloudKit is right for your app](./deciding-whether-cloudkit-is-right-for-your-app.md)
 
 #### Overview
 
@@ -31,11 +36,11 @@ All CloudKit operations descend from `CKOperation`, which provides the infrastru
 
 Use the properties of this class to configure the behavior of the operation before submitting it to a queue or executing it directly. CloudKit operations involve communicating with the iCloud servers to send and receive data. You can use the properties of this class to configure the behavior of those network requests to ensure the best performance for your app.
 
-> ❗ **Important**: `CKOperation` objects have a default quality of service level of [`QualityOfService.default`](https://developer.apple.com/documentation/foundation/qualityofservice/default) (see [`qualityOfService`](https://developer.apple.com/documentation/foundation/operation/qualityofservice)). Operations with this service level are discretionary, and the system schedules them for an optimal time according to battery level and other factors. On iPhone, discretionary activities pause when the device is in Low Power Mode. For information about quality of service levels, see [`Prioritize Work with Quality of Service Classes`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [`Energy Efficiency Guide for iOS Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [`Prioritize Work at the Task Level`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [`Energy Efficiency Guide for Mac Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
+> ❗ **Important**: `CKOperation` objects have a default quality of service level of [`QualityOfService.default`](../Foundation/qualityofservice/default.md) (see [`qualityOfService`](../Foundation/operation/qualityofservice.md)). Operations with this service level are discretionary, and the system schedules them for an optimal time according to battery level and other factors. On iPhone, discretionary activities pause when the device is in Low Power Mode. For information about quality of service levels, see [Prioritize Work with Quality of Service Classes](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/PrioritizeWorkWithQoS.html#//apple_ref/doc/uid/TP40015243-CH39) in [Energy Efficiency Guide for iOS Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243) and [Prioritize Work at the Task Level](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/PrioritizeWorkAtTheTaskLevel.html#//apple_ref/doc/uid/TP40013929-CH35) in [Energy Efficiency Guide for Mac Apps](https://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929).
 
-##### Long Lived Operations
+##### Long-Lived Operations
 
-A *long-lived operation* is an operation that continues to run after the user closes the app. To specify a long-lived operation, set [`isLongLived`](ckoperation/islonglived.md) to [`true`](https://developer.apple.com/documentation/swift/true), provide a completion handler, and execute the operation. To get the identifiers of all running long-lived operations, use the [`allLongLivedOperationIDs()`](ckcontainer/alllonglivedoperationids().md) method that [`CKContainer`](ckcontainer.md) provides. To get a specific long-lived operation, use the [`longLivedOperation(for:)`](ckcontainer/longlivedoperation(for:).md) method. Make sure you set the completion handler of a long-lived operation before you execute it so that the system can notify you when it completes and you can process the results. Do not execute an operation, change it to long-lived, and execute it again as a long-lived operation.
+A *long-lived operation* is an operation that continues to run after the user closes the app. To specify a long-lived operation, set [`isLongLived`](./ckoperation/islonglived.md) to [`true`](../Swift/true.md), provide a completion handler, and execute the operation. To get the identifiers of all running long-lived operations, use the [`allLongLivedOperationIDs()`](./ckcontainer/alllonglivedoperationids%28%29.md) method that [`CKContainer`](./ckcontainer.md) provides. To get a specific long-lived operation, use the [`longLivedOperation(for:)`](./ckcontainer/longlivedoperation%28for%29.md) method. Make sure you set the completion handler of a long-lived operation before you execute it so that the system can notify you when it completes and you can process the results. Do not execute an operation, change it to long-lived, and execute it again as a long-lived operation.
 
 **Swift**:
 
@@ -94,47 +99,47 @@ The following is the typical life cycle of a long-lived operation:
 ## Topics
 
 ### Creating an Operation
-- [init()](ckoperation/init.md)
+- [init()](./ckoperation/init%28%29.md)
   Creates an operation.
 ### Identifying the Operation
-- [var operationID: CKOperation.ID](ckoperation/operationid-8auuc.md)
+- [var operationID: CKOperation.ID](./ckoperation/operationid-8auuc.md)
   A unique identifier for a long-lived operation.
-- [CKOperation.ID](ckoperation/id.md)
+- [CKOperation.ID](./ckoperation/id.md)
   A type that represents the ID of an operation.
 ### Managing the Operation’s Configuration
-- [var configuration: CKOperation.Configuration!](ckoperation/configuration-swift.property.md)
+- [var configuration: CKOperation.Configuration!](./ckoperation/configuration-swift.property.md)
   The operation’s configuration.
-- [CKOperation.Configuration](ckoperation/configuration-swift.class.md)
+- [CKOperation.Configuration](./ckoperation/configuration-swift.class.md)
   An object that describes how a CloudKit operation behaves.
-- [var group: CKOperationGroup?](ckoperation/group.md)
+- [var group: CKOperationGroup?](./ckoperation/group.md)
   The operation’s group.
-- [var longLivedOperationWasPersistedBlock: (() -> Void)?](ckoperation/longlivedoperationwaspersistedblock.md)
+- [var longLivedOperationWasPersistedBlock: (() -> Void)?](./ckoperation/longlivedoperationwaspersistedblock.md)
   The closure to execute when the server begins to store callbacks for the long-lived operation.
 ### Deprecated
-- [Deprecated Symbols](ckoperation-deprecated-symbols.md)
+- [Deprecated Symbols](./ckoperation-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 
 ## Relationships
 
 ### Inherits From
-- [Operation](../foundation/operation.md)
+- [Operation](../Foundation/operation.md)
 ### Inherited By
-- [CKAcceptSharesOperation](ckacceptsharesoperation.md)
-- [CKDatabaseOperation](ckdatabaseoperation.md)
-- [CKDiscoverAllUserIdentitiesOperation](ckdiscoveralluseridentitiesoperation.md)
-- [CKDiscoverUserIdentitiesOperation](ckdiscoveruseridentitiesoperation.md)
-- [CKFetchShareMetadataOperation](ckfetchsharemetadataoperation.md)
-- [CKFetchShareParticipantsOperation](ckfetchshareparticipantsoperation.md)
-- [CKShareRequestAccessOperation](cksharerequestaccessoperation.md)
+- [CKAcceptSharesOperation](./ckacceptsharesoperation.md)
+- [CKDatabaseOperation](./ckdatabaseoperation.md)
+- [CKDiscoverAllUserIdentitiesOperation](./ckdiscoveralluseridentitiesoperation.md)
+- [CKDiscoverUserIdentitiesOperation](./ckdiscoveruseridentitiesoperation.md)
+- [CKFetchShareMetadataOperation](./ckfetchsharemetadataoperation.md)
+- [CKFetchShareParticipantsOperation](./ckfetchshareparticipantsoperation.md)
+- [CKShareRequestAccessOperation](./cksharerequestaccessoperation.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

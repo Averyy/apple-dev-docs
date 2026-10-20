@@ -1,20 +1,23 @@
 # PHProjectExtensionDefinesProjectTypes
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value indicating whether the Photos app gets a list of supported project types from an extension.
 
 **Availability**:
 - macOS 10.14+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `PHProjectExtensionDefinesProjectTypes` (Extension defines custom project types)
+- **Type**: boolean
 
 ## See Also
 
-- [PHSupportedMediaTypes](information-property-list/nsextension/nsextensionattributes/phsupportedmediatypes.md)
+### Photos
+- [PHSupportedMediaTypes](./phsupportedmediatypes.md)
   The types of assets a Photo Editing extension can edit.
 
 

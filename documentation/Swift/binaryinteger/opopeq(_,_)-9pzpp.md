@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Stores the result of shifting a value’s binary representation the specified number of digits to the left in the left-hand-side variable.
@@ -61,6 +62,12 @@ b >>= 3
 
 - `lhs`: The value to shift.
 - `rhs`: The number of bits to shift `lhs` to the left.
+
+## Default Implementations
+
+### BinaryInteger Implementations
+- [static func <<= <Other>(inout Self, Other)](./opopeq%28_,_%29-6b58i.md)
+  Stores the result of shifting a value’s binary representation the specified number of digits to the left in the left-hand-side variable.
 
 
 ---

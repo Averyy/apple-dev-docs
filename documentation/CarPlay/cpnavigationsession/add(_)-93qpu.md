@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds one or more lane guidance instances to the navigation session.
 
@@ -16,23 +17,28 @@ Adds one or more lane guidance instances to the navigation session.
 func add(_ laneGuidances: [CPLaneGuidance])
 ```
 
+```objc
+- (void) addLaneGuidances:(NSArray<CPLaneGuidance *> *) laneGuidances;
+```
+
 #### Discussion
 
-Use this method to add [`CPLaneGuidance`](cplaneguidance.md) elements in chronological order to the navigation session. Add [`CPLaneGuidance`](cplaneguidance.md) objects as soon as they are available.
+Use this method to add [`CPLaneGuidance`](../cplaneguidance.md) elements in chronological order to the navigation session. Add [`CPLaneGuidance`](../cplaneguidance.md) objects as soon as they are available.
 
 ## See Also
 
-- [var upcomingManeuvers: [CPManeuver]](cpnavigationsession/upcomingmaneuvers.md)
+### Managing Upcoming Maneuvers
+- [var upcomingManeuvers: [CPManeuver]](./upcomingmaneuvers.md)
   The next set of maneuvers the user should perform while following the current route.
-- [var maneuverState: CPManeuverState](cpnavigationsession/maneuverstate.md)
+- [var maneuverState: CPManeuverState](./maneuverstate.md)
   The current maneuver state.
-- [var currentRoadNameVariants: [String]](cpnavigationsession/currentroadnamevariants.md)
+- [var currentRoadNameVariants: [String]](./currentroadnamevariants.md)
   An array of strings that describe variants of the current road name.
-- [var currentLaneGuidance: CPLaneGuidance?](cpnavigationsession/currentlaneguidance.md)
+- [var currentLaneGuidance: CPLaneGuidance?](./currentlaneguidance.md)
   The current lane guidance to use for navigation metadata.
-- [func add([CPManeuver])](cpnavigationsession/add(_:)-17l62.md)
+- [func add([CPManeuver])](./add%28_%29-17l62.md)
   Adds one or more maneuvers, in chronological order, to the navigation session.
-- [class CPManeuver](cpmaneuver.md)
+- [class CPManeuver](../cpmaneuver.md)
   An object that describes a single navigation instruction.
 
 

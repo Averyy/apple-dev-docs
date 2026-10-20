@@ -1,7 +1,8 @@
 # init(handler:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Now Playing button that invokes a handler.
 
@@ -14,6 +15,10 @@ Creates a Now Playing button that invokes a handler.
 
 ```swift
 init(handler: ((CPNowPlayingButton) -> Void)? = nil)
+```
+
+```objc
+- (instancetype) initWithHandler:(void (^)(CPNowPlayingButton *)) handler;
 ```
 
 ## Parameters

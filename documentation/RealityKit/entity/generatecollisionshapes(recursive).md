@@ -1,7 +1,8 @@
 # generateCollisionShapes(recursive:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the shape used to detect collisions between two entities that have collision components.
 
@@ -11,7 +12,7 @@ Creates the shape used to detect collisions between two entities that have colli
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,11 @@ Creates the shape used to detect collisions between two entities that have colli
 
 ## Mentions
 
-- [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
+- [Reducing CPU Utilization in Your RealityKit App](../reducing-cpu-utilization-in-your-realitykit-app.md)
 
 #### Discussion
 
-Call this method on entities that have a mesh to prepare a shape used for collision detection. The method stores the shape in the entity’s [`CollisionComponent`](collisioncomponent.md) instance.
+Call this method on entities that have a mesh to prepare a shape used for collision detection. The method stores the shape in the entity’s [`CollisionComponent`](../collisioncomponent.md) instance.
 
 This method has no effect for entities without a mesh. Nevertheless, the method is defined for all entities so that you can call it on any entity, and have the calculation propagate recursively to all that entity’s descendants.
 
@@ -36,7 +37,8 @@ This method has no effect for entities without a mesh. Nevertheless, the method 
 
 ## See Also
 
-- [func generateCollisionShapes(recursive: Bool, static: Bool)](entity/generatecollisionshapes(recursive:static:).md)
+### Creating a collision shape
+- [func generateCollisionShapes(recursive: Bool, static: Bool)](./generatecollisionshapes%28recursive,static%29.md)
   Creates the shape used to detect collisions between two entities that have collision components.
 
 

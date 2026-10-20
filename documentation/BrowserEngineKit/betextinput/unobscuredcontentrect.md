@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A rectangle that frames a user interface, such as text-selection handles, in an unobscured location.
@@ -18,17 +19,22 @@ A rectangle that frames a user interface, such as text-selection handles, in an 
 var unobscuredContentRect: CGRect { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGRect unobscuredContentRect;
+```
+
 #### Discussion
 
-Return a [`CGRect`](https://developer.apple.com/documentation/corefoundation/cgrect) instance configured in the coordinate space of [`textInputView`](betextinput/textinputview.md).
+Return a [`CGRect`](../../CoreFoundation/cgrect.md) instance configured in the coordinate space of [`textInputView`](./textinputview.md).
 
 ## See Also
 
-- [var textInputView: UIView](betextinput/textinputview.md)
+### Managing the text input view
+- [var textInputView: UIView](./textinputview.md)
   An affiliated view that provides a coordinate system for all geometric values in this protocol.
-- [var unscaledView: UIView](betextinput/unscaledview.md)
+- [var unscaledView: UIView](./unscaledview.md)
   A view that represents the web content that’s agnostic of zoom state.
-- [var selectionClipRect: CGRect](betextinput/selectioncliprect.md)
+- [var selectionClipRect: CGRect](./selectioncliprect.md)
   A rectangle that represents the bounds of editable elements.
 
 

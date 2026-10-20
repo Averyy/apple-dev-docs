@@ -1,7 +1,8 @@
 # textureStorageMode
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key used to specify the storage mode for the texture.
 
@@ -19,17 +20,22 @@ A key used to specify the storage mode for the texture.
 static let textureStorageMode: MTKTextureLoader.Option
 ```
 
+```c
+extern MTKTextureLoaderOption const MTKTextureLoaderOptionTextureStorageMode;
+```
+
 #### Discussion
 
-The value for this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object containing a [`MTLStorageMode`](https://developer.apple.com/documentation/metal/mtlstoragemode) value.
+The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a [`MTLStorageMode`](../../../Metal/mtlstoragemode.md) value.
 
-If this option is omitted, the texture is created with the default storage mode for Metal textures: [`MTLStorageMode.shared`](https://developer.apple.com/documentation/metal/mtlstoragemode/shared) on iOS and tvOS, and [`MTLStorageMode.managed`](https://developer.apple.com/documentation/metal/mtlstoragemode/managed) in macOS. Specifying the [`MTLStorageMode.private`](https://developer.apple.com/documentation/metal/mtlstoragemode/private) option causes the [`MTKTextureLoader`](mtktextureloader.md) object to submit work to the GPU on your behalf.
+If this option is omitted, the texture is created with the default storage mode for Metal textures: [`MTLStorageMode.shared`](../../../Metal/mtlstoragemode/shared.md) on iOS and tvOS, and [`MTLStorageMode.managed`](../../../Metal/mtlstoragemode/managed.md) in macOS. Specifying the [`MTLStorageMode.private`](../../../Metal/mtlstoragemode/private.md) option causes the [`MTKTextureLoader`](../../mtktextureloader.md) object to submit work to the GPU on your behalf.
 
 ## See Also
 
-- [static let textureCPUCacheMode: MTKTextureLoader.Option](mtktextureloader/option/texturecpucachemode.md)
+### Specifying Resource Options
+- [static let textureCPUCacheMode: MTKTextureLoader.Option](./texturecpucachemode.md)
   A key used to specify the CPU cache mode for the texture.
-- [static let textureUsage: MTKTextureLoader.Option](mtktextureloader/option/textureusage.md)
+- [static let textureUsage: MTKTextureLoader.Option](./textureusage.md)
   A key used to specify the intended usage of the texture.
 
 

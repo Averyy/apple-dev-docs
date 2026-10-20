@@ -1,9 +1,10 @@
 # NSHashTableOptions
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
-Components in a bit-field to specify the behavior of elements in an [`NSHashTable`](nshashtable.md) object.
+Components in a bit-field to specify the behavior of elements in an [`NSHashTable`](./nshashtable.md) object.
 
 **Availability**:
 - iOS 2.0+
@@ -20,17 +21,21 @@ Components in a bit-field to specify the behavior of elements in an [`NSHashTabl
 typealias NSHashTableOptions = Int
 ```
 
+```c
+typedef NSUInteger NSHashTableOptions;
+```
+
 ## Topics
 
 ### Constants
-- [var NSHashTableStrongMemory: NSPointerFunctions.Options](nshashtablestrongmemory.md)
-  Equal to [`strongMemory`](nspointerfunctions/options/strongmemory.md).
-- [var NSHashTableCopyIn: NSPointerFunctions.Options](nshashtablecopyin.md)
-  Equal to [`copyIn`](nspointerfunctions/options/copyin.md).
-- [var NSHashTableObjectPointerPersonality: NSPointerFunctions.Options](nshashtableobjectpointerpersonality.md)
-  Equal to [`objectPointerPersonality`](nspointerfunctions/options/objectpointerpersonality.md).
-- [var NSHashTableWeakMemory: NSPointerFunctions.Options](nshashtableweakmemory.md)
-  Equal to [`weakMemory`](nspointerfunctions/options/weakmemory.md). Uses weak read and write barriers appropriate for ARC or GC. Using [`weakMemory`](nspointerfunctions/options/weakmemory.md) object references will turn to `NULL` on last release.
+- [var NSHashTableStrongMemory: NSPointerFunctions.Options](./nshashtablestrongmemory.md)
+  Equal to [`strongMemory`](./nspointerfunctions/options/strongmemory.md).
+- [var NSHashTableCopyIn: NSPointerFunctions.Options](./nshashtablecopyin.md)
+  Equal to [`copyIn`](./nspointerfunctions/options/copyin.md).
+- [var NSHashTableObjectPointerPersonality: NSPointerFunctions.Options](./nshashtableobjectpointerpersonality.md)
+  Equal to [`objectPointerPersonality`](./nspointerfunctions/options/objectpointerpersonality.md).
+- [var NSHashTableWeakMemory: NSPointerFunctions.Options](./nshashtableweakmemory.md)
+  Equal to [`weakMemory`](./nspointerfunctions/options/weakmemory.md). Uses weak read and write barriers appropriate for ARC or GC. Using [`weakMemory`](./nspointerfunctions/options/weakmemory.md) object references will turn to `NULL` on last release.
 
 
 ---

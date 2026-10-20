@@ -1,7 +1,8 @@
 # reportTransition(to:stableMetadata:volatileMetadata:)
 
 **Framework**: StateReporting  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reports a transition to a new state.
 
@@ -22,7 +23,7 @@ final func reportTransition(to stateLabel: String?, stableMetadata: StableMetada
 
 ## Mentions
 
-- [Getting started with StateReporting](getting-started-with-statereporting.md)
+- [Getting started with StateReporting](../getting-started-with-statereporting.md)
 
 #### Discussion
 

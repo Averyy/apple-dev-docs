@@ -1,7 +1,8 @@
 # errSecMissingAttributeEffectiveBits
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An effective bits attribute is missing.
 
@@ -18,6 +19,10 @@ An effective bits attribute is missing.
 
 ```swift
 var errSecMissingAttributeEffectiveBits: OSStatus { get }
+```
+
+```c
+errSecMissingAttributeEffectiveBits
 ```
 
 

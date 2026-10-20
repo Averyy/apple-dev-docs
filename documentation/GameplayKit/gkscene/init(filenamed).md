@@ -1,9 +1,10 @@
 # init(fileNamed:)
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Loads the specified SpriteKit scene file, creating a [`GKScene`](gkscene.md) object containing the SpriteKit scene and associated GameplayKit objects.
+Loads the specified SpriteKit scene file, creating a [`GKScene`](../gkscene.md) object containing the SpriteKit scene and associated GameplayKit objects.
 
 **Availability**:
 - iOS 10.0+
@@ -19,6 +20,10 @@ Loads the specified SpriteKit scene file, creating a [`GKScene`](gkscene.md) obj
 convenience init?(fileNamed filename: String)
 ```
 
+```objc
++ (instancetype) sceneWithFileNamed:(NSString *) filename;
+```
+
 #### Return Value
 
 A new GameplayKit scene.
@@ -27,7 +32,7 @@ A new GameplayKit scene.
 
 Use this initializer to load SpriteKit scenes (`.sks` files) created in the Xcode SpriteKit scene editor that contain associated GameplayKit entities, components, and pathfinding graphs.
 
-For more information, see [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information, see [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 

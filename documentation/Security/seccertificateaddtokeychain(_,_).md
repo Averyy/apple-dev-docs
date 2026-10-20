@@ -1,7 +1,8 @@
 # SecCertificateAddToKeychain(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a certificate to a keychain.
 
@@ -14,15 +15,19 @@ Adds a certificate to a keychain.
 func SecCertificateAddToKeychain(_ certificate: SecCertificate, _ keychain: SecKeychain?) -> OSStatus
 ```
 
+```c
+OSStatus SecCertificateAddToKeychain(SecCertificateRef certificate, SecKeychainRef keychain);
+```
+
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-> ❗ **Important**:  To add a certificate to the login keychain, use [`SecItemAdd(_:_:)`](secitemadd(_:_:).md) instead.
+> ❗ **Important**:  To add a certificate to the login keychain, use [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) instead.
 
-This function requires a certificate object, which can, for example, be created with the [`SecCertificateCreateFromData`](seccertificatecreatefromdata.md) function or obtained over a network (see [`Secure Transport`](secure-transport.md)). If the certificate has already been added to the specified keychain, the function returns [`errSecDuplicateItem`](errsecduplicateitem.md) and does not add another copy to the keychain. The function looks at the certificate data, not at the certificate object, to determine whether the certificate is a duplicate. It considers two certificates to be duplicates if they have the same primary key attributes.
+This function requires a certificate object, which can, for example, be created with the [`SecCertificateCreateFromData`](./seccertificatecreatefromdata.md) function or obtained over a network (see [Secure Transport](./secure-transport.md)). If the certificate has already been added to the specified keychain, the function returns [`errSecDuplicateItem`](./errsecduplicateitem.md) and does not add another copy to the keychain. The function looks at the certificate data, not at the certificate object, to determine whether the certificate is a duplicate. It considers two certificates to be duplicates if they have the same primary key attributes.
 
 ##### Special Considerations
 

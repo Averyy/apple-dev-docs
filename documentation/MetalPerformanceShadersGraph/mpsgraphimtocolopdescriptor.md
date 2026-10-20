@@ -1,7 +1,8 @@
 # MPSGraphImToColOpDescriptor
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The class that defines the parameters for an image to column or column to image operation.
 
@@ -19,91 +20,96 @@ The class that defines the parameters for an image to column or column to image 
 class MPSGraphImToColOpDescriptor
 ```
 
+```objc
+@interface MPSGraphImToColOpDescriptor : MPSGraphObject
+```
+
 #### Overview
 
-Use this descriptor with the following [`MPSGraph`](mpsgraph.md) methods:
+Use this descriptor with the following [`MPSGraph`](./mpsgraph.md) methods:
 
-- [`imToCol(_:descriptor:name:)`](mpsgraph/imtocol(_:descriptor:name:).md)
-- [`colToIm(_:outputShape:descriptor:name:)`](mpsgraph/coltoim(_:outputshape:descriptor:name:).md)
+- [`imToCol(_:descriptor:name:)`](./mpsgraph/imtocol%28_,descriptor,name%29.md)
+- [`colToIm(_:outputShape:descriptor:name:)`](./mpsgraph/coltoim%28_,outputshape,descriptor,name%29.md)
 
 ## Topics
 
 ### Initializers
-- [convenience init?(kernelWidth: Int, kernelHeight: Int, strideInX: Int, strideInY: Int, dilationRateInX: Int, dilationRateInY: Int, dataLayout: MPSGraphTensorNamedDataLayout)](mpsgraphimtocolopdescriptor/init(kernelwidth:kernelheight:strideinx:strideiny:dilationrateinx:dilationrateiny:datalayout:).md)
+- [convenience init?(kernelWidth: Int, kernelHeight: Int, strideInX: Int, strideInY: Int, dilationRateInX: Int, dilationRateInY: Int, dataLayout: MPSGraphTensorNamedDataLayout)](./mpsgraphimtocolopdescriptor/init%28kernelwidth,kernelheight,strideinx,strideiny,dilationrateinx,dilationrateiny,datalayout%29.md)
   Creates column to image descriptor with given values for parameters.
-- [convenience init?(kernelWidth: Int, kernelHeight: Int, strideInX: Int, strideInY: Int, dilationRateInX: Int, dilationRateInY: Int, paddingLeft: Int, paddingRight: Int, paddingTop: Int, paddingBottom: Int, dataLayout: MPSGraphTensorNamedDataLayout)](mpsgraphimtocolopdescriptor/init(kernelwidth:kernelheight:strideinx:strideiny:dilationrateinx:dilationrateiny:paddingleft:paddingright:paddingtop:paddingbottom:datalayout:).md)
+- [convenience init?(kernelWidth: Int, kernelHeight: Int, strideInX: Int, strideInY: Int, dilationRateInX: Int, dilationRateInY: Int, paddingLeft: Int, paddingRight: Int, paddingTop: Int, paddingBottom: Int, dataLayout: MPSGraphTensorNamedDataLayout)](./mpsgraphimtocolopdescriptor/init%28kernelwidth,kernelheight,strideinx,strideiny,dilationrateinx,dilationrateiny,paddingleft,paddingright,paddingtop,paddingbottom,datalayout%29.md)
   Creates an image to column descriptor with given values for parameters.
 ### Instance Properties
-- [var dataLayout: MPSGraphTensorNamedDataLayout](mpsgraphimtocolopdescriptor/datalayout.md)
+- [var dataLayout: MPSGraphTensorNamedDataLayout](./mpsgraphimtocolopdescriptor/datalayout.md)
   The property that defines the layout of source or output  tensor. e.g. `batch x channels x width x height` for `NCHW` layout
-- [var dilationRateInX: Int](mpsgraphimtocolopdescriptor/dilationrateinx.md)
+- [var dilationRateInX: Int](./mpsgraphimtocolopdescriptor/dilationrateinx.md)
   The property that defines the dilation in width dimension.
-- [var dilationRateInY: Int](mpsgraphimtocolopdescriptor/dilationrateiny.md)
+- [var dilationRateInY: Int](./mpsgraphimtocolopdescriptor/dilationrateiny.md)
   The property that defines the dilation in height dimension.
-- [var kernelHeight: Int](mpsgraphimtocolopdescriptor/kernelheight.md)
+- [var kernelHeight: Int](./mpsgraphimtocolopdescriptor/kernelheight.md)
   The property that defines the kernel size  in height dimension.
-- [var kernelWidth: Int](mpsgraphimtocolopdescriptor/kernelwidth.md)
+- [var kernelWidth: Int](./mpsgraphimtocolopdescriptor/kernelwidth.md)
   The property that defines the kernel size in width dimension.
-- [var paddingBottom: Int](mpsgraphimtocolopdescriptor/paddingbottom.md)
+- [var paddingBottom: Int](./mpsgraphimtocolopdescriptor/paddingbottom.md)
   The property that defines the padding in height dimension at the bottom.
-- [var paddingLeft: Int](mpsgraphimtocolopdescriptor/paddingleft.md)
+- [var paddingLeft: Int](./mpsgraphimtocolopdescriptor/paddingleft.md)
   The property that defines the padding in width dimension on the left side.
-- [var paddingRight: Int](mpsgraphimtocolopdescriptor/paddingright.md)
+- [var paddingRight: Int](./mpsgraphimtocolopdescriptor/paddingright.md)
   The property that defines the padding in width dimension on the right side.
-- [var paddingTop: Int](mpsgraphimtocolopdescriptor/paddingtop.md)
+- [var paddingTop: Int](./mpsgraphimtocolopdescriptor/paddingtop.md)
   The property that defines the padding in height dimension at the top.
-- [var strideInX: Int](mpsgraphimtocolopdescriptor/strideinx.md)
+- [var strideInX: Int](./mpsgraphimtocolopdescriptor/strideinx.md)
   The property that defines the stride in width dimension.
-- [var strideInY: Int](mpsgraphimtocolopdescriptor/strideiny.md)
+- [var strideInY: Int](./mpsgraphimtocolopdescriptor/strideiny.md)
   The property that defines the stride in height dimension.
 ### Instance Methods
-- [func setExplicitPaddingWithPaddingLeft(Int, paddingRight: Int, paddingTop: Int, paddingBottom: Int)](mpsgraphimtocolopdescriptor/setexplicitpaddingwithpaddingleft(_:paddingright:paddingtop:paddingbottom:).md)
+- [func setExplicitPaddingWithPaddingLeft(Int, paddingRight: Int, paddingTop: Int, paddingBottom: Int)](./mpsgraphimtocolopdescriptor/setexplicitpaddingwithpaddingleft%28_,paddingright,paddingtop,paddingbottom%29.md)
   Sets the descriptor’s padding to the given values.
 
 ## Relationships
 
 ### Inherits From
-- [MPSGraphObject](mpsgraphobject.md)
+- [MPSGraphObject](./mpsgraphobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MPSGraph](mpsgraph.md)
+### Classes
+- [class MPSGraph](./mpsgraph.md)
   The optimized representation of a compute graph of operations and tensors.
-- [class MPSGraphCompilationDescriptor](mpsgraphcompilationdescriptor.md)
+- [class MPSGraphCompilationDescriptor](./mpsgraphcompilationdescriptor.md)
   A class that consists of all the levers for compiling graphs.
-- [class MPSGraphConvolution2DOpDescriptor](mpsgraphconvolution2dopdescriptor.md)
+- [class MPSGraphConvolution2DOpDescriptor](./mpsgraphconvolution2dopdescriptor.md)
   A class that describes the properties of a 2D-convolution operator.
-- [class MPSGraphConvolution3DOpDescriptor](mpsgraphconvolution3dopdescriptor.md)
+- [class MPSGraphConvolution3DOpDescriptor](./mpsgraphconvolution3dopdescriptor.md)
   A class that describes the properties of a 3D-convolution operator.
-- [class MPSGraphCreateSparseOpDescriptor](mpsgraphcreatesparseopdescriptor.md)
+- [class MPSGraphCreateSparseOpDescriptor](./mpsgraphcreatesparseopdescriptor.md)
   A class that describes the properties of a create sparse operation.
-- [class MPSGraphDepthwiseConvolution2DOpDescriptor](mpsgraphdepthwiseconvolution2dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution2DOpDescriptor](./mpsgraphdepthwiseconvolution2dopdescriptor.md)
   A class that defines the parameters for  a 2D-depthwise convolution operation.
-- [class MPSGraphDepthwiseConvolution3DOpDescriptor](mpsgraphdepthwiseconvolution3dopdescriptor.md)
+- [class MPSGraphDepthwiseConvolution3DOpDescriptor](./mpsgraphdepthwiseconvolution3dopdescriptor.md)
   The class that defines the parameters for a 3D-depthwise convolution operation.
-- [class MPSGraphDevice](mpsgraphdevice.md)
+- [class MPSGraphDevice](./mpsgraphdevice.md)
   A class that describes the compute device.
-- [class MPSGraphExecutable](mpsgraphexecutable.md)
+- [class MPSGraphExecutable](./mpsgraphexecutable.md)
   The compiled representation of a compute graph executable.
-- [class MPSGraphExecutableExecutionDescriptor](mpsgraphexecutableexecutiondescriptor.md)
+- [class MPSGraphExecutableExecutionDescriptor](./mpsgraphexecutableexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule executable execution.
-- [class MPSGraphExecutableSerializationDescriptor](mpsgraphexecutableserializationdescriptor.md)
+- [class MPSGraphExecutableSerializationDescriptor](./mpsgraphexecutableserializationdescriptor.md)
   A class that consists of all the levers  to serialize an executable.
-- [class MPSGraphExecutionDescriptor](mpsgraphexecutiondescriptor.md)
+- [class MPSGraphExecutionDescriptor](./mpsgraphexecutiondescriptor.md)
   A class that consists of all the levers  to synchronize and schedule graph execution.
-- [class MPSGraphFFTDescriptor](mpsgraphfftdescriptor.md)
+- [class MPSGraphFFTDescriptor](./mpsgraphfftdescriptor.md)
   The class that defines the parameters for a fast Fourier transform (FFT) operation.
-- [class MPSGraphGRUDescriptor](mpsgraphgrudescriptor.md)
+- [class MPSGraphGRUDescriptor](./mpsgraphgrudescriptor.md)
   The class that defines the parameters for a gated recurrent unit (GRU) operation.
-- [class MPSGraphLSTMDescriptor](mpsgraphlstmdescriptor.md)
+- [class MPSGraphLSTMDescriptor](./mpsgraphlstmdescriptor.md)
   The class that defines the parameters for a long short-term memory (LSTM) operation.
 
 

@@ -1,7 +1,8 @@
 # init(playbackControlDelegate:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a playback coordinator for a custom playback object.
 
@@ -19,9 +20,13 @@ Creates a playback coordinator for a custom playback object.
 init(playbackControlDelegate: any AVPlaybackCoordinatorPlaybackControlDelegate)
 ```
 
+```objc
+- (instancetype) initWithPlaybackControlDelegate:(id<AVPlaybackCoordinatorPlaybackControlDelegate>) playbackControlDelegate;
+```
+
 #### Discussion
 
-If your app doesn’t use [`AVPlayer`](avplayer.md) for playback, create an instance of this class to coordinate playback of your customer player.
+If your app doesn’t use [`AVPlayer`](../avplayer.md) for playback, create an instance of this class to coordinate playback of your customer player.
 
 ## Parameters
 
@@ -29,7 +34,8 @@ If your app doesn’t use [`AVPlayer`](avplayer.md) for playback, create an inst
 
 ## See Also
 
-- [protocol AVPlaybackCoordinatorPlaybackControlDelegate](avplaybackcoordinatorplaybackcontroldelegate.md)
+### Creating a coordinator
+- [protocol AVPlaybackCoordinatorPlaybackControlDelegate](../avplaybackcoordinatorplaybackcontroldelegate.md)
   A protocol that defines the method to implement to respond to playback commands from the playback coordinator.
 
 

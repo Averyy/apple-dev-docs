@@ -1,7 +1,8 @@
 # DeviceActivityName
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The unique name of an activity.
 
@@ -23,25 +24,26 @@ Use `DeviceActivityName` to associate an activity with some of your application�
 ## Topics
 
 ### Creating an Instance
-- [init(rawValue: String)](deviceactivityname/init(rawvalue:).md)
+- [init(rawValue: String)](./deviceactivityname/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [init(String)](deviceactivityname/init(_:).md)
+- [init(String)](./deviceactivityname/init%28_%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [struct DeviceActivityEvent](deviceactivityevent.md)
+### Manage activities
+- [struct DeviceActivityEvent](./deviceactivityevent.md)
   An event that represents an application, category, or website activity.
-- [struct DeviceActivitySchedule](deviceactivityschedule.md)
+- [struct DeviceActivitySchedule](./deviceactivityschedule.md)
   A calendar-based schedule for when to monitor a device’s activity.
-- [struct DeviceActivityCenter](deviceactivitycenter.md)
+- [struct DeviceActivityCenter](./deviceactivitycenter.md)
   A class that enables an application’s extension to start monitoring scheduled device activity.
 
 

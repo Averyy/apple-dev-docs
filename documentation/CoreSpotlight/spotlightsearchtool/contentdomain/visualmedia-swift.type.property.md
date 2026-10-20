@@ -1,7 +1,8 @@
 # visualMedia
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Photos, videos, and other visual content.
 
@@ -20,9 +21,10 @@ static var visualMedia: SpotlightSearchTool.ContentDomain { get }
 
 ## See Also
 
-- [static func visualMedia(SpotlightSearchTool.ContentDomain.VisualMedia) -> SpotlightSearchTool.ContentDomain](spotlightsearchtool/contentdomain/visualmedia(_:).md)
+### Getting the visual media domain
+- [static func visualMedia(SpotlightSearchTool.ContentDomain.VisualMedia) -> SpotlightSearchTool.ContentDomain](./visualmedia%28_%29.md)
   Photos, videos, and other visual content with custom attribute mapping.
-- [SpotlightSearchTool.ContentDomain.VisualMedia](spotlightsearchtool/contentdomain/visualmedia-swift.struct.md)
+- [SpotlightSearchTool.ContentDomain.VisualMedia](./visualmedia-swift.struct.md)
   Attribute mapping for the visual media domain.
 
 

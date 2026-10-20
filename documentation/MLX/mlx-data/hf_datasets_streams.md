@@ -6,23 +6,6 @@ url: https://ml-explore.github.io/mlx-data/build/html/hf_datasets_streams.html
 
 # HuggingFace Datasets and MLX Streams
 
-**
-
-- [.rst](_sources/hf_datasets_streams.rst)
-- **
-
-.pdf
-
-**
-
-# HuggingFace Datasets and MLX Streams
-
- Table of contents 
-
-## Contents
-
-# HuggingFace Datasets and MLX Streams
-
 You can load any data using MLX `Buffer`, as detailed in [Buffers and Streams](buffers_streams_samples).
 
 In this tutorial, we will explore how to leverage the popular [Hugging Face Datasets](https://huggingface.co/docs/datasets/index) library
@@ -93,7 +76,7 @@ assert type(dicts[0]['image']) == np.ndarray
 # but it depends on your use case
 ```
 
-We can then convert the list of dictionaries to a `Buffer` using [buffer_from_vector()](python/_autosummary/mlx.data.buffer_from_vector.html#mlx.data.buffer_from_vector):
+We can then convert the list of dictionaries to a `Buffer` using [buffer_from_vector()](python/_autosummary/mlx.data.buffer_from_vector.md#mlx.data.buffer_from_vector):
 
 ```
 import mlx.data as dx
@@ -175,5 +158,3 @@ for batch in train_stream:
 ```
 
 Don’t forget to `reset()` the stream after iterating over it.
-
-** Contents

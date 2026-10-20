@@ -1,7 +1,8 @@
 # kIOUSB30HubExtStatusRxSublinkSpeedID
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The receive sublink speed identifier.
 
@@ -10,7 +11,7 @@ The receive sublink speed identifier.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30HubExtStatusRxSublinkSpeedID = IOUSBBitRange(0, 3)
 ```
 

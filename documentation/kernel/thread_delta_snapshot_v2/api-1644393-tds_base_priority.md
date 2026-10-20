@@ -1,14 +1,15 @@
 # tds_base_priority
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 int16_t tds_base_priority;
 ```
 

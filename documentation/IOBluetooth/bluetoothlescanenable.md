@@ -1,10 +1,11 @@
 # BluetoothLEScanEnable
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var BluetoothLEScanEnable: BluetoothLEScan { get }
 ```
 
+```c
+BluetoothLEScanEnable
+```
+
 ## See Also
 
-- [var BluetoothLEScanDisable: BluetoothLEScan](bluetoothlescandisable.md)
+### Constants
+- [var BluetoothLEScanDisable: BluetoothLEScan](./bluetoothlescandisable.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MusicTokenRequestError.userNotSignedIn
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that occurs when the user isn’t signed in with an Apple Music account.
 

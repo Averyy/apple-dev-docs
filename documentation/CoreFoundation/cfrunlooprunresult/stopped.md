@@ -1,18 +1,19 @@
 # CFRunLoopRunResult.stopped
 
 **Framework**: Core Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-[`CFRunLoopStop(_:)`](cfrunloopstop(_:).md) was called on the run loop.
+[`CFRunLoopStop(_:)`](../cfrunloopstop%28_%29.md) was called on the run loop.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@
 case stopped
 ```
 
+```c
+kCFRunLoopRunStopped
+```
+
 ## See Also
 
-- [CFRunLoopRunResult.finished](cfrunlooprunresult/finished.md)
+### Constants
+- [CFRunLoopRunResult.finished](./finished.md)
   The running run loop mode has no sources or timers to process.
-- [CFRunLoopRunResult.timedOut](cfrunlooprunresult/timedout.md)
+- [CFRunLoopRunResult.timedOut](./timedout.md)
   The specified time interval for running the run loop has passed.
-- [CFRunLoopRunResult.handledSource](cfrunlooprunresult/handledsource.md)
+- [CFRunLoopRunResult.handledSource](./handledsource.md)
   A source has been processed. This value is returned only if the run loop was told to run only until a source was processed.
 
 

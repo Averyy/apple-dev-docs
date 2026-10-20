@@ -1,7 +1,8 @@
 # AnalyticsReportRequest.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object AnalyticsReportRequest.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object AnalyticsReportRequest.Relationships.Reports](analyticsreportrequest/relationships-data.dictionary/reports-data.dictionary.md)
+- [object AnalyticsReportRequest.Relationships.Reports](./relationships-data.dictionary/reports-data.dictionary.md)
 
 ## Properties
 
@@ -25,7 +26,8 @@ object AnalyticsReportRequest.Relationships
 
 ## See Also
 
-- [object AnalyticsReportRequest.Attributes](analyticsreportrequest/attributes-data.dictionary.md)
+### Objects
+- [object AnalyticsReportRequest.Attributes](./attributes-data.dictionary.md)
   Attributes that describe an analytics report request resource.
 
 

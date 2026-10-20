@@ -1,7 +1,8 @@
 # LAEnvironment.MechanismBiometry
 
 **Framework**: Local Authentication  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.0+
@@ -17,28 +18,32 @@
 class MechanismBiometry
 ```
 
+```objc
+@interface LAEnvironmentMechanismBiometry : LAEnvironmentMechanism
+```
+
 ## Topics
 
 ### Instance Properties
-- [var biometryType: LABiometryType](laenvironment/mechanismbiometry/biometrytype.md)
-- [var builtInSensorInaccessible: Bool](laenvironment/mechanismbiometry/builtinsensorinaccessible.md)
-- [var isEnrolled: Bool](laenvironment/mechanismbiometry/isenrolled.md)
-- [var isLockedOut: Bool](laenvironment/mechanismbiometry/islockedout.md)
-- [var stateHash: Data](laenvironment/mechanismbiometry/statehash.md)
+- [var biometryType: LABiometryType](./mechanismbiometry/biometrytype.md)
+- [var builtInSensorInaccessible: Bool](./mechanismbiometry/builtinsensorinaccessible.md)
+- [var isEnrolled: Bool](./mechanismbiometry/isenrolled.md)
+- [var isLockedOut: Bool](./mechanismbiometry/islockedout.md)
+- [var stateHash: Data](./mechanismbiometry/statehash.md)
 
 ## Relationships
 
 ### Inherits From
-- [LAEnvironment.Mechanism](laenvironment/mechanism.md)
+- [LAEnvironment.Mechanism](./mechanism.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [NSObjectProtocol](../../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

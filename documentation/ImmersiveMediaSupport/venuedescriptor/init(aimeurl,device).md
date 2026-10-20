@@ -1,7 +1,8 @@
 # init(aimeURL:device:)
 
 **Framework**: Immersive Media Support  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a venue descriptor instance from an AIME file.
 
@@ -20,7 +21,7 @@ convenience init(aimeURL: URL, device: (any MTLDevice)? = nil) async throws
 
 #### Discussion
 
-> **Note**: This function throws exceptions if the input file doesn’t exist, or contains invalid information.
+> **Throws**: This function throws exceptions if the input file doesn’t exist, or contains invalid information.
 
 ## Parameters
 
@@ -29,7 +30,8 @@ convenience init(aimeURL: URL, device: (any MTLDevice)? = nil) async throws
 
 ## See Also
 
-- [init(device: (any MTLDevice)?)](venuedescriptor/init(device:).md)
+### Creating a venue descriptor
+- [init(device: (any MTLDevice)?)](./init%28device%29.md)
   Creates an empty venue descriptor instance.
 
 

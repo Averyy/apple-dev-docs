@@ -1,7 +1,8 @@
 # isMultiline
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the text widget annotation displays multiple lines.
 
@@ -10,7 +11,7 @@ A Boolean value that indicates whether the text widget annotation displays multi
 - iPadOS 11.0+
 - Mac Catalyst 11.0+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,13 +20,18 @@ A Boolean value that indicates whether the text widget annotation displays multi
 var isMultiline: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isMultiline) BOOL multiline;
+```
+
 ## See Also
 
-- [var isPasswordField: Bool](pdfannotation/ispasswordfield.md)
+### Configuring Text Widget Annotations
+- [var isPasswordField: Bool](./ispasswordfield.md)
   A Boolean value that indicates whether the text widget annotation displays a password field using bullet characters.
-- [var maximumLength: Int](pdfannotation/maximumlength.md)
+- [var maximumLength: Int](./maximumlength.md)
   The maximum number of characters the text widget annotation allows.
-- [var hasComb: Bool](pdfannotation/hascomb.md)
+- [var hasComb: Bool](./hascomb.md)
   A Boolean value that indicates whether the annotation divides the text widget’s bounds into equally spaced segments, such as in a form entry field.
 
 

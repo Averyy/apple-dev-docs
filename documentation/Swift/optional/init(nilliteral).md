@@ -1,7 +1,8 @@
 # init(nilLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance initialized with `nil`.
 
@@ -32,7 +33,8 @@ In this example, the assignment to the `i` variable calls this initializer behin
 
 ## See Also
 
-- [Optional.none](optional/none.md)
+### Creating a Nil Value
+- [Optional.none](./none.md)
   The absence of a value.
 
 

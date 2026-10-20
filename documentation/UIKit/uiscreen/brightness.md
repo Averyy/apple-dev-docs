@@ -1,7 +1,8 @@
 # brightness
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The brightness level of the screen.
 
@@ -16,6 +17,10 @@ The brightness level of the screen.
 var brightness: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat brightness;
+```
+
 #### Discussion
 
 This property is only supported on the main screen. The value of this property is a number between `0.0` and `1.0`, inclusive, where `0.0` is the minimum brightness and `1.0` is the maximum brightness.
@@ -26,7 +31,8 @@ In visionOS, setting this property has no effect.
 
 ## See Also
 
-- [var wantsSoftwareDimming: Bool](uiscreen/wantssoftwaredimming.md)
+### Managing brightness
+- [var wantsSoftwareDimming: Bool](./wantssoftwaredimming.md)
   A Boolean value that indicates whether the screen may be dimmed lower than the hardware is normally capable of by emulating it in software.
 
 

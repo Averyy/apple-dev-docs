@@ -1,7 +1,8 @@
 # propertyList
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that contains data to associate with the command.
 
@@ -18,21 +19,26 @@ An object that contains data to associate with the command.
 var propertyList: Any? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) id propertyList;
+```
+
 #### Discussion
 
-Use [`propertyList`](uicommand/propertylist.md) to associate a small amount of data to the command.
+Use [`propertyList`](./propertylist.md) to associate a small amount of data to the command.
 
 **Swift**:
 
-In Swift, the property list should contain only standard library types such as [`Array`](https://developer.apple.com/documentation/swift/array), [`Dictionary`](https://developer.apple.com/documentation/swift/dictionary), [`String`](https://developer.apple.com/documentation/swift/string), [`Int`](https://developer.apple.com/documentation/swift/int), and [`Double`](https://developer.apple.com/documentation/swift/double), and Foundation types such as [`Date`](https://developer.apple.com/documentation/foundation/date) and [`Data`](https://developer.apple.com/documentation/foundation/data).
+In Swift, the property list should contain only standard library types such as [`Array`](../../Swift/array.md), [`Dictionary`](../../Swift/dictionary.md), [`String`](../../Swift/string.md), [`Int`](../../Swift/int.md), and [`Double`](../../Swift/double.md), and Foundation types such as [`Date`](../../Foundation/date.md) and [`Data`](../../Foundation/data.md).
 
 **Objective-C**:
 
-In Objective-C, the property list should contain only [`NSArray`](https://developer.apple.com/documentation/foundation/nsarray), [`NSDictionary`](https://developer.apple.com/documentation/foundation/nsdictionary), [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber), [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate), and [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) objects.
+In Objective-C, the property list should contain only [`NSArray`](../../Foundation/nsarray.md), [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSString`](../../Foundation/nsstring.md), [`NSNumber`](../../Foundation/nsnumber.md), [`NSDate`](../../Foundation/nsdate.md), and [`NSData`](../../Foundation/nsdata.md) objects.
 
 ## See Also
 
-- [let UICommandTagShare: String](uicommandtagshare.md)
+### Associating data
+- [let UICommandTagShare: String](../uicommandtagshare.md)
   A value that identifies a command as a Share menu.
 
 

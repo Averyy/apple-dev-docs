@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a bordered button style.
 
@@ -23,7 +24,8 @@ init()
 
 ## See Also
 
-- [init(tint: Color)](borderedbuttonstyle/init(tint:).md)
+### Creating the button style
+- [init(tint: Color)](./init%28tint%29.md)
   Creates a bordered button style with a tint color.
 
 

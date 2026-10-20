@@ -1,7 +1,8 @@
 # SecCertificateCreateWithData(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a certificate object from a DER representation of a certificate.
 
@@ -20,13 +21,17 @@ Creates a certificate object from a DER representation of a certificate.
 func SecCertificateCreateWithData(_ allocator: CFAllocator?, _ data: CFData) -> SecCertificate?
 ```
 
+```c
+SecCertificateRefSecCertificateCreateWithData(CFAllocatorRef allocator, CFDataRef data);
+```
+
 ## Mentions
 
-- [Storing a DER-Encoded X.509 Certificate](storing-a-der-encoded-x-509-certificate.md)
+- [Storing a DER-Encoded X.509 Certificate](./storing-a-der-encoded-x-509-certificate.md)
 
 #### Return Value
 
-The newly created certificate object. In Objective-C, call the [`CFRelease`](https://developer.apple.com/documentation/corefoundation/cfrelease) function to release this object when you are finished with it. Returns `nil` if the data passed in the `data` parameter is not a valid DER-encoded X.509 certificate.
+The newly created certificate object. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to release this object when you are finished with it. Returns `nil` if the data passed in the `data` parameter is not a valid DER-encoded X.509 certificate.
 
 #### Discussion
 

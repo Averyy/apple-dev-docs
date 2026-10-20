@@ -1,6 +1,7 @@
 # Check-in
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: API Collection
 
 Authenticate devices and maintain push tokens.
 
@@ -15,35 +16,36 @@ If the MDM payload includes a check-in URL, the check-in protocol communicates w
 ## Topics
 
 ### Commands
-- [Authenticate](authenticate.md)
+- [Authenticate](./authenticate.md)
   Authenticates a user during MDM payload installation.
-- [User Authenticate](user-authenticate.md)
+- [User Authenticate](./user-authenticate.md)
   Authenticates a user with a two-step authentication protocol.
-- [Check Out](check-out.md)
+- [Check Out](./check-out.md)
   Responds to the removal of the MDM enrollment profile from a device.
-- [Get Token](get-token.md)
+- [Get Token](./get-token.md)
   Gets a token from the server.
-- [Token Update](token-update.md)
+- [Token Update](./token-update.md)
   Updates the token for a device on the server.
-- [Get Bootstrap Token](get-bootstrap-token.md)
+- [Get Bootstrap Token](./get-bootstrap-token.md)
   Gets the bootstrap token from the server.
-- [Set Bootstrap Token](set-bootstrap-token.md)
+- [Set Bootstrap Token](./set-bootstrap-token.md)
   Sends the bootstrap token to the server.
-- [Return To Service](return-to-service.md)
+- [Return To Service](./return-to-service.md)
   Gets the return-to-service configuration from the server.
 ### Declarative management
-- [Declarative Management](declarative-management.md)
+- [Declarative Management](./declarative-management.md)
   Sends declarative management requests to the server.
-- [Get Server Supported Declarations](declaration-items.md)
+- [Get Server Supported Declarations](./declaration-items.md)
   Get a list of the declarations available on the server.
-- [Get the Device Status](status.md)
+- [Get the Device Status](./status.md)
   The request for getting the status of a device.
-- [Get the Device Token](tokens.md)
+- [Get the Device Token](./tokens.md)
   The request for sending the device token details.
 
 ## See Also
 
-- [Commands and queries](commands-and-queries.md)
+### MDM protocol
+- [Commands and queries](./commands-and-queries.md)
   Remotely execute management commands and queries on managed devices.
 
 

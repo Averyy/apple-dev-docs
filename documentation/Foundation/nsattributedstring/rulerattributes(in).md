@@ -1,7 +1,8 @@
 # rulerAttributes(in:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the ruler (paragraph) attributes in effect for the characters within the specified range.
 
@@ -14,15 +15,19 @@ Returns the ruler (paragraph) attributes in effect for the characters within the
 func rulerAttributes(in range: NSRange) -> [NSAttributedString.Key : Any]
 ```
 
+```objc
+- (NSDictionary<NSString *,id> *) rulerAttributesInRange:(NSRange) range;
+```
+
 #### Return Value
 
 A dictionary containing the ruler attributes in the range.
 
 #### Discussion
 
-The only ruler attribute currently defined is that named by [`paragraphStyle`](nsattributedstring/key/paragraphstyle.md). Use this method to obtain attributes that are to be copied or pasted with “copy ruler” operations.
+The only ruler attribute currently defined is that named by [`paragraphStyle`](./key/paragraphstyle.md). Use this method to obtain attributes that are to be copied or pasted with “copy ruler” operations.
 
-Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `aRange` lies beyond the end of the receiver’s characters.
+Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `aRange` lies beyond the end of the receiver’s characters.
 
 ## Parameters
 
@@ -30,7 +35,8 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `
 
 ## See Also
 
-- [func fontAttributes(in: NSRange) -> [NSAttributedString.Key : Any]](nsattributedstring/fontattributes(in:).md)
+### Getting font attribute information
+- [func fontAttributes(in: NSRange) -> [NSAttributedString.Key : Any]](./fontattributes%28in%29.md)
   Returns the font attributes in effect for the character at the specified location.
 
 

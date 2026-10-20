@@ -1,7 +1,8 @@
 # UINavigationItem.TitleAlignment
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 27.2+
@@ -16,27 +17,31 @@
 enum TitleAlignment
 ```
 
+```c
+enum UINavigationItemTitleAlignment : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UINavigationItem.TitleAlignment.automatic](uinavigationitem/titlealignment-swift.enum/automatic.md)
+- [UINavigationItem.TitleAlignment.automatic](./titlealignment-swift.enum/automatic.md)
   The system determines the alignment.
-- [UINavigationItem.TitleAlignment.center](uinavigationitem/titlealignment-swift.enum/center.md)
+- [UINavigationItem.TitleAlignment.center](./titlealignment-swift.enum/center.md)
   The title is center-aligned.
-- [UINavigationItem.TitleAlignment.leading](uinavigationitem/titlealignment-swift.enum/leading.md)
+- [UINavigationItem.TitleAlignment.leading](./titlealignment-swift.enum/leading.md)
   The title is leading-aligned.
 ### Initializers
-- [init?(rawValue: Int)](uinavigationitem/titlealignment-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./titlealignment-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

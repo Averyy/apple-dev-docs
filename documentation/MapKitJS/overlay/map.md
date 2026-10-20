@@ -1,7 +1,8 @@
 # map
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map you add the overlay to.
 
@@ -10,7 +11,7 @@ The map you add the overlay to.
 
 ## Declaration
 
-```swift
+```
 get map(): Map | null;
 set map(_: Map | null);
 ```
@@ -21,15 +22,16 @@ This property is `null` if you don’t add the overlay to a map, or if you remov
 
 ## See Also
 
-- [data](overlay/data.md)
+### Setting overlay options
+- [data](./data.md)
   Custom data to associate with the overlay.
-- [visible](overlay/visible.md)
+- [visible](./visible.md)
   A Boolean value that determines whether an overlay is visible.
-- [enabled](overlay/enabled.md)
+- [enabled](./enabled.md)
   A Boolean value that determines whether the overlay responds to user interaction.
-- [selected](overlay/selected.md)
+- [selected](./selected.md)
   A Boolean value that indicates whether the user selects the overlay.
-- [style](overlay/style.md)
+- [style](./style.md)
   Style properties to apply to the overlay.
 
 

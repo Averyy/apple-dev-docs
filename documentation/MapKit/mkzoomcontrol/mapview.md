@@ -1,7 +1,8 @@
 # mapView
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map view associated with this control.
 
@@ -13,6 +14,10 @@ The map view associated with this control.
 
 ```swift
 weak var mapView: MKMapView? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) MKMapView * mapView;
 ```
 
 

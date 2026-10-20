@@ -1,7 +1,8 @@
 # subscript(_:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Accesses the blend shape weights data at the specified index.
 
@@ -17,6 +18,12 @@ Accesses the blend shape weights data at the specified index.
 
 ```swift
 subscript(index: BlendShapeWeightsSet.Index) -> BlendShapeWeightsSet.Element { get set }
+```
+
+**Other overloads**:
+
+```swift
+subscript(blendShapeName: String) -> BlendShapeWeightsSet.Element? { get }
 ```
 
 

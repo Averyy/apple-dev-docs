@@ -1,7 +1,8 @@
 # SecKeyOperationType.sign
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 case sign
+```
+
+```c
+kSecKeyOperationTypeSign
 ```
 
 

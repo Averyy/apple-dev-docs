@@ -1,7 +1,8 @@
 # EmptyMatchedTransitionSourceConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An unstyled matched transition source configuration.
 
@@ -23,17 +24,18 @@ struct EmptyMatchedTransitionSourceConfiguration
 ## Relationships
 
 ### Conforms To
-- [MatchedTransitionSourceConfiguration](matchedtransitionsourceconfiguration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [MatchedTransitionSourceConfiguration](./matchedtransitionsourceconfiguration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some View](view/matchedtransitionsource(id:in:).md)
+### Defining matched transitions
+- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some View](./view/matchedtransitionsource%28id,in%29.md)
   Identifies this view as the source of a navigation transition, such as a zoom transition.
-- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID, configuration: (EmptyMatchedTransitionSourceConfiguration) -> some MatchedTransitionSourceConfiguration) -> some View](view/matchedtransitionsource(id:in:configuration:).md)
+- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID, configuration: (EmptyMatchedTransitionSourceConfiguration) -> some MatchedTransitionSourceConfiguration) -> some View](./view/matchedtransitionsource%28id,in,configuration%29.md)
   Identifies this view as the source of a navigation transition, such as a zoom transition.
-- [protocol MatchedTransitionSourceConfiguration](matchedtransitionsourceconfiguration.md)
+- [protocol MatchedTransitionSourceConfiguration](./matchedtransitionsourceconfiguration.md)
   A configuration that defines the appearance of a matched transition source.
 
 

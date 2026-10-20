@@ -1,7 +1,8 @@
 # canPlayCatalogContent
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A capability that allows your app to play subscription content using a music player.
 

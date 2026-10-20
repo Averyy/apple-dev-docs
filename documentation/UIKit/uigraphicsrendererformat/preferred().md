@@ -1,7 +1,8 @@
 # preferred()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the most suitable format for the main screen’s current configuration.
 
@@ -18,9 +19,14 @@ Returns the most suitable format for the main screen’s current configuration.
 class func preferred() -> Self
 ```
 
+```objc
++ (instancetype) preferredFormat;
+```
+
 ## See Also
 
-- [class func `default`() -> Self](uigraphicsrendererformat/default.md)
+### Creating a format
+- [class func `default`() -> Self](./default%28%29.md)
   Returns a format that represents the highest fidelity that the current device supports.
 
 

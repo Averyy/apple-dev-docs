@@ -1,16 +1,17 @@
 # gpuDevices
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array that contains the specific Metal devices you use to execute neural networks.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,11 +19,16 @@ An array that contains the specific Metal devices you use to execute neural netw
 var gpuDevices: [any MTLDevice] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<id<MTLDevice>> * gpuDevices;
+```
+
 ## See Also
 
-- [var type: MLCDeviceType](mlcdevice/type.md)
+### Inspecting Devices
+- [var type: MLCDeviceType](./type.md)
   The type you specify when creating the device.
-- [var actualDeviceType: MLCDeviceType](mlcdevice/actualdevicetype.md)
+- [var actualDeviceType: MLCDeviceType](./actualdevicetype.md)
   The active device.
 
 

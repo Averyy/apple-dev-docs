@@ -1,7 +1,8 @@
 # MPError
 
 **Framework**: Media Player  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a framework error.
 
@@ -23,23 +24,23 @@ struct MPError
 ## Topics
 
 ### Inspecting an error
-- [static var errorDomain: String](mperror/errordomain.md)
-- [let MPErrorDomain: String](mperrordomain.md)
+- [static var errorDomain: String](./mperror/errordomain.md)
+- [let MPErrorDomain: String](./mperrordomain.md)
   The Media Player framework error domain.
-- [MPError.Code](mperror/code.md)
+- [MPError.Code](./mperror/code.md)
   An enumeration that represents error codes for framework operations.
-- [Error constants](error-constants.md)
+- [Error constants](./error-constants.md)
   Error code constants for framework operations.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

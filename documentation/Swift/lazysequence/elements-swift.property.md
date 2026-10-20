@@ -1,7 +1,8 @@
 # elements
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The `Base` (presumably non-lazy) sequence from which `self` was created.
 
@@ -19,6 +20,8 @@ The `Base` (presumably non-lazy) sequence from which `self` was created.
 ```swift
 var elements: LazySequence<Base>.Elements { get }
 ```
+
+Available when `Base` conforms to `Sequence`.
 
 
 ---

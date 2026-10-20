@@ -1,14 +1,15 @@
 # ARSCNViewDelegate
 
 **Framework**: ARKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods you can implement to mediate the automatic synchronization of SceneKit content with an AR session.
 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- visionOS 1.0+
+- visionOS 1.0+ - Deprecated in 1.0
 
 ## Declaration
 
@@ -16,40 +17,45 @@ Methods you can implement to mediate the automatic synchronization of SceneKit c
 protocol ARSCNViewDelegate : ARSessionObserver, SCNSceneRendererDelegate
 ```
 
+```objc
+@protocol ARSCNViewDelegate <SCNSceneRendererDelegate, ARSessionObserver>
+```
+
 ## Mentions
 
-- [Providing 3D Virtual Content with SceneKit](providing-3d-virtual-content-with-scenekit.md)
+- [Providing 3D Virtual Content with SceneKit](./providing-3d-virtual-content-with-scenekit.md)
 
 #### Overview
 
-Implement this protocol to provide SceneKit content corresponding to [`ARAnchor`](aranchor.md) objects tracked by the view’s AR session, or to manage the view’s automatic updating of such content.
+Implement this protocol to provide SceneKit content corresponding to [`ARAnchor`](./aranchor.md) objects tracked by the view’s AR session, or to manage the view’s automatic updating of such content.
 
-This protocol extends the [`ARSessionObserver`](arsessionobserver.md) protocol, so your session delegate can also implement those methods to respond to changes in session status.
+This protocol extends the [`ARSessionObserver`](./arsessionobserver.md) protocol, so your session delegate can also implement those methods to respond to changes in session status.
 
 ## Topics
 
 ### Handling Content Updates
-- [func renderer(any SCNSceneRenderer, nodeFor: ARAnchor) -> SCNNode?](arscnviewdelegate/renderer(_:nodefor:).md)
+- [func renderer(any SCNSceneRenderer, nodeFor: ARAnchor) -> SCNNode?](./arscnviewdelegate/renderer%28_,nodefor%29.md)
   Asks the delegate to provide a SceneKit node corresponding to a newly added anchor.
-- [func renderer(any SCNSceneRenderer, didAdd: SCNNode, for: ARAnchor)](arscnviewdelegate/renderer(_:didadd:for:).md)
+- [func renderer(any SCNSceneRenderer, didAdd: SCNNode, for: ARAnchor)](./arscnviewdelegate/renderer%28_,didadd,for%29.md)
   Tells the delegate that a SceneKit node corresponding to a new AR anchor has been added to the scene.
-- [func renderer(any SCNSceneRenderer, willUpdate: SCNNode, for: ARAnchor)](arscnviewdelegate/renderer(_:willupdate:for:).md)
+- [func renderer(any SCNSceneRenderer, willUpdate: SCNNode, for: ARAnchor)](./arscnviewdelegate/renderer%28_,willupdate,for%29.md)
   Tells the delegate that a SceneKit node’s properties will be updated to match the current state of its corresponding anchor.
-- [func renderer(any SCNSceneRenderer, didUpdate: SCNNode, for: ARAnchor)](arscnviewdelegate/renderer(_:didupdate:for:).md)
+- [func renderer(any SCNSceneRenderer, didUpdate: SCNNode, for: ARAnchor)](./arscnviewdelegate/renderer%28_,didupdate,for%29.md)
   Tells the delegate that a SceneKit node’s properties have been updated to match the current state of its corresponding anchor.
-- [func renderer(any SCNSceneRenderer, didRemove: SCNNode, for: ARAnchor)](arscnviewdelegate/renderer(_:didremove:for:).md)
+- [func renderer(any SCNSceneRenderer, didRemove: SCNNode, for: ARAnchor)](./arscnviewdelegate/renderer%28_,didremove,for%29.md)
   Tells the delegate that the SceneKit node corresponding to a removed AR anchor has been removed from the scene.
 
 ## Relationships
 
 ### Inherits From
-- [ARSessionObserver](arsessionobserver.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [SCNSceneRendererDelegate](../scenekit/scnscenerendererdelegate.md)
+- [ARSessionObserver](./arsessionobserver.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [SCNSceneRendererDelegate](../SceneKit/scnscenerendererdelegate.md)
 
 ## See Also
 
-- [var delegate: (any ARSCNViewDelegate)?](arscnview/delegate.md)
+### Responding to AR Updates
+- [var delegate: (any ARSCNViewDelegate)?](./arscnview/delegate.md)
   An object you provide to mediate synchronization of the view’s AR scene information with SceneKit content.
 
 

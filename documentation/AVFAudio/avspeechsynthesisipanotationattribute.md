@@ -1,7 +1,8 @@
 # AVSpeechSynthesisIPANotationAttribute
 
 **Framework**: AVFAudio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A string that contains International Phonetic Alphabet (IPA) symbols the speech synthesizer uses to control pronunciation of certain words or phrases.
 
@@ -20,17 +21,22 @@ A string that contains International Phonetic Alphabet (IPA) symbols the speech 
 let AVSpeechSynthesisIPANotationAttribute: String
 ```
 
+```c
+extern NSString * const AVSpeechSynthesisIPANotationAttribute;
+```
+
 #### Discussion
 
 For example, the speech synthesizer uses an `AVSpeechSynthesisIPANotationAttribute` instance to control pronunciation of a proper name.
 
 ## See Also
 
-- [init(string: String)](avspeechutterance/init(string:).md)
+### Creating an utterance
+- [init(string: String)](./avspeechutterance/init%28string%29.md)
   Creates an utterance with the text string that you specify for the speech synthesizer to speak.
-- [init(attributedString: NSAttributedString)](avspeechutterance/init(attributedstring:).md)
+- [init(attributedString: NSAttributedString)](./avspeechutterance/init%28attributedstring%29.md)
   Creates an utterance with the attributed text string that you specify for the speech synthesizer to speak.
-- [init?(ssmlRepresentation: String)](avspeechutterance/init(ssmlrepresentation:)-8zam9.md)
+- [init?(ssmlRepresentation: String)](./avspeechutterance/init%28ssmlrepresentation%29-8zam9.md)
   Creates a speech utterance with an Speech Synthesis Markup Language (SSML) string.
 
 

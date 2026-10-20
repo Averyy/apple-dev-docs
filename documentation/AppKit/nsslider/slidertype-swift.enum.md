@@ -1,12 +1,13 @@
 # NSSlider.SliderType
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
-The types of sliders, used by [`sliderType`](nsslidercell/slidertype.md).
+The types of sliders, used by [`sliderType`](../nsslidercell/slidertype.md).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,41 +15,46 @@ The types of sliders, used by [`sliderType`](nsslidercell/slidertype.md).
 enum SliderType
 ```
 
+```c
+enum NSSliderType : NSUInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [NSSlider.SliderType.circular](nsslider/slidertype-swift.enum/circular.md)
+- [NSSlider.SliderType.circular](./slidertype-swift.enum/circular.md)
   A dial representing an angular range.
-- [NSSlider.SliderType.linear](nsslider/slidertype-swift.enum/linear.md)
+- [NSSlider.SliderType.linear](./slidertype-swift.enum/linear.md)
   A bar representing a range, and a knob indicating the currently selected value.
 ### Initializers
-- [init?(rawValue: UInt)](nsslider/slidertype-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./slidertype-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var sliderType: NSSlider.SliderType](nsslider/slidertype-swift.property.md)
+### Managing the slider’s appearance
+- [var sliderType: NSSlider.SliderType](./slidertype-swift.property.md)
   The type of the slider, such as vertical or circular.
-- [var altIncrementValue: Double](nsslider/altincrementvalue.md)
+- [var altIncrementValue: Double](./altincrementvalue.md)
   The amount by which the slider changes its value when the user Option-drags the slider knob.
-- [var knobThickness: CGFloat](nsslider/knobthickness.md)
+- [var knobThickness: CGFloat](./knobthickness.md)
   The knob’s thickness, in pixels.
-- [var isVertical: Bool](nsslider/isvertical.md)
+- [var isVertical: Bool](./isvertical.md)
   An integer indicating the orientation (horizontal or vertical) of the slider.
-- [var trackFillColor: NSColor?](nsslider/trackfillcolor.md)
+- [var trackFillColor: NSColor?](./trackfillcolor.md)
   The color of the filled portion of the slider track, in appearances that support it.
-- [var tintProminence: NSTintProminence](nsslider/tintprominence.md)
-  The tint prominence of the slider. The automatic behavior for a regular slider tints its track fill, while a slider with tick marks is untinted. Setting the tint prominence will override this default behavior and choose an explicit track fill tint behavior. See [`NSTintProminence`](nstintprominence.md) for a list of possible values.
-- [enum NSTintProminence](nstintprominence.md)
+- [var tintProminence: NSTintProminence](./tintprominence.md)
+  The tint prominence of the slider. The automatic behavior for a regular slider tints its track fill, while a slider with tick marks is untinted. Setting the tint prominence will override this default behavior and choose an explicit track fill tint behavior. See [`NSTintProminence`](../nstintprominence.md) for a list of possible values.
+- [enum NSTintProminence](../nstintprominence.md)
   Controls how strongly the tint color applies in a view.
 
 

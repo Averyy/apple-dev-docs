@@ -1,7 +1,8 @@
 # measurement(width:usage:hidesScaleName:numberFormatStyle:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a format style to format temperature units.
 
@@ -26,9 +27,9 @@ A format style that formats measurements according to the given parameters.
 
 #### Discussion
 
-Use this static method when the call point allows the use of [`Measurement.FormatStyle`](measurement/formatstyle.md) and the value type is `Measurement<UnitTemperature>`. You typically do this when calling the [`formatted(_:)`](measurement/formatted(_:).md) method of [`Measurement`](measurement.md).
+Use this static method when the call point allows the use of [`Measurement.FormatStyle`](../measurement/formatstyle.md) and the value type is `Measurement<UnitTemperature>`. You typically do this when calling the [`formatted(_:)`](../measurement/formatted%28_%29.md) method of [`Measurement`](../measurement.md).
 
-The following example creates an array of [`Measurement`](measurement.md) values that represent body temperatures from a human patient. It then uses [`formatted(_:)`](measurement/formatted(_:).md) and the format style provided by this method to format the distances. The style specifies the [`person`](measurementformatunitusage/person-4ifk7.md) usage to clarify that the temperatures refer to a person’s body temperature, as opposed to other uses like weather.
+The following example creates an array of [`Measurement`](../measurement.md) values that represent body temperatures from a human patient. It then uses [`formatted(_:)`](../measurement/formatted%28_%29.md) and the format style provided by this method to format the distances. The style specifies the [`person`](../measurementformatunitusage/person-4ifk7.md) usage to clarify that the temperatures refer to a person’s body temperature, as opposed to other uses like weather.
 
 ```swift
 let rawTemparatures: [Double] = [36.4, 36.6, 37.0, 36.9, 36.7]
@@ -49,7 +50,8 @@ let formattedTemperatures = temperatures.map { $0.formatted(
 
 ## See Also
 
-- [static func measurement<UnitType>(width: Measurement<UnitType>.FormatStyle.UnitWidth, usage: MeasurementFormatUnitUsage<UnitType>, numberFormatStyle: FloatingPointFormatStyle<Double>?) -> Self](formatstyle/measurement(width:usage:numberformatstyle:).md)
+### Applying measurement styles
+- [static func measurement<UnitType>(width: Measurement<UnitType>.FormatStyle.UnitWidth, usage: MeasurementFormatUnitUsage<UnitType>, numberFormatStyle: FloatingPointFormatStyle<Double>?) -> Self](./measurement%28width,usage,numberformatstyle%29.md)
   Returns a format style to format measurement units.
 
 

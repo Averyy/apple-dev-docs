@@ -1,12 +1,15 @@
 # line2TextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display on the bottom line of the complication.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,13 +18,18 @@ The text to display on the bottom line of the complication.
 var line2TextProvider: CLKTextProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKTextProvider * line2TextProvider;
+```
+
 #### Discussion
 
 Space for text is limited in this particular template so keep strings as short as possible.
 
 ## See Also
 
-- [var line1TextProvider: CLKTextProvider](clkcomplicationtemplatecircularsmallstacktext/line1textprovider.md)
+### Setting the Complication Data
+- [var line1TextProvider: CLKTextProvider](./line1textprovider.md)
   The text to display on the top line of the complication.
 
 

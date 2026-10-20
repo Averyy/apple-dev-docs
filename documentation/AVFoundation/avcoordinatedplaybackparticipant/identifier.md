@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the participant.
 
@@ -19,11 +20,16 @@ A unique identifier for the participant.
 var identifier: UUID { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUUID * identifier;
+```
+
 ## See Also
 
-- [var isReadyToPlay: Bool](avcoordinatedplaybackparticipant/isreadytoplay.md)
+### Accessing participant status
+- [var isReadyToPlay: Bool](./isreadytoplay.md)
   A Boolean value that indicates whether the participant is ready to start coordinated playback.
-- [var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason]](avcoordinatedplaybackparticipant/suspensionreasons.md)
+- [var suspensionReasons: [AVCoordinatedPlaybackSuspension.Reason]](./suspensionreasons.md)
   The reasons a participant isn’t currently participating in coordinated playback.
 
 

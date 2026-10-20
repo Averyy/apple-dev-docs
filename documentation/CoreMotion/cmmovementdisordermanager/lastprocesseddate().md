@@ -1,7 +1,8 @@
 # lastProcessedDate()
 
 **Framework**: Core Motion  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the date of the most recently calculated results.
 
@@ -12,6 +13,10 @@ Returns the date of the most recently calculated results.
 
 ```swift
 func lastProcessedDate() -> Date?
+```
+
+```objc
+- (NSDate *) lastProcessedDate;
 ```
 
 #### Return Value
@@ -26,13 +31,14 @@ This method returns `nil` if you have not yet begun monitoring the user, or if t
 
 ## See Also
 
-- [func queryTremor(from: Date, to: Date, withHandler: CMTremorResultHandler)](cmmovementdisordermanager/querytremor(from:to:withhandler:).md)
+### Querying for Movement Disorders
+- [func queryTremor(from: Date, to: Date, withHandler: CMTremorResultHandler)](./querytremor%28from,to,withhandler%29.md)
   Query for tremor results from the provided time interval.
-- [typealias CMTremorResultHandler](cmtremorresulthandler.md)
+- [typealias CMTremorResultHandler](../cmtremorresulthandler.md)
   A completion handler for accessing and processing tremor results.
-- [func queryDyskineticSymptom(from: Date, to: Date, withHandler: CMDyskineticSymptomResultHandler)](cmmovementdisordermanager/querydyskineticsymptom(from:to:withhandler:).md)
+- [func queryDyskineticSymptom(from: Date, to: Date, withHandler: CMDyskineticSymptomResultHandler)](./querydyskineticsymptom%28from,to,withhandler%29.md)
   Query for dyskinetic symptoms from the provided time interval.
-- [typealias CMDyskineticSymptomResultHandler](cmdyskineticsymptomresulthandler.md)
+- [typealias CMDyskineticSymptomResultHandler](../cmdyskineticsymptomresulthandler.md)
   A completion handler for processing dyskinetic symptom results.
 
 

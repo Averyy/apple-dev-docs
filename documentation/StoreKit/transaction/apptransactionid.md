@@ -1,7 +1,8 @@
 # appTransactionID
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the app download transaction.
 
@@ -23,11 +24,12 @@ var appTransactionID: String { get }
 
 #### Discussion
 
-The App Store server APIs and StoreKit provide this value in several APIs. For more information, see [`appTransactionID`](apptransaction/apptransactionid.md) in [`AppTransaction`](apptransaction.md).
+The App Store server APIs and StoreKit provide this value in several APIs. For more information, see [`appTransactionID`](../apptransaction/apptransactionid.md) in [`AppTransaction`](../apptransaction.md).
 
 ## See Also
 
-- [Transaction properties](transaction-properties.md)
+### Transaction properties
+- [Transaction properties](../transaction-properties.md)
   The properties of a transaction, including identifiers, purchase and revocation dates and details, status, and offer details.
 
 

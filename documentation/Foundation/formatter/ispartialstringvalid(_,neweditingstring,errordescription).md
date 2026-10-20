@@ -1,7 +1,8 @@
 # isPartialStringValid(_:newEditingString:errorDescription:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether a partial string is valid.
 
@@ -20,17 +21,21 @@ Returns a Boolean value that indicates whether a partial string is valid.
 func isPartialStringValid(_ partialString: String, newEditingString newString: AutoreleasingUnsafeMutablePointer<NSString?>?, errorDescription error: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool
 ```
 
+```objc
+- (BOOL) isPartialStringValid:(NSString *) partialString newEditingString:(NSString **) newString errorDescription:(NSString **) error;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `partialString` is an acceptable value, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if `partialString` is an acceptable value, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
 This method is invoked each time the user presses a key while the cell has the keyboard focus—it lets you verify and edit the cell text as the user types it.
 
-In a subclass implementation, evaluate `partialString` according to the context, edit the text if necessary, and return by reference any edited string in `newString`. Return [`true`](https://developer.apple.com/documentation/swift/true) if `partialString` is acceptable and [`false`](https://developer.apple.com/documentation/swift/false) if `partialString` is unacceptable. If you return [`false`](https://developer.apple.com/documentation/swift/false) and `newString` is `nil`, the cell displays `partialString` minus the last character typed. If you return [`false`](https://developer.apple.com/documentation/swift/false), you can also return by indirection an `NSString` object (in `error`) that explains the reason why the validation failed; the delegate (if any) of the `NSControl` object managing the cell can then respond to the failure in control:didFailToValidatePartialString:errorDescription:. The selection range will always be set to the end of the text if replacement occurs.
+In a subclass implementation, evaluate `partialString` according to the context, edit the text if necessary, and return by reference any edited string in `newString`. Return [`true`](../../Swift/true.md) if `partialString` is acceptable and [`false`](../../Swift/false.md) if `partialString` is unacceptable. If you return [`false`](../../Swift/false.md) and `newString` is `nil`, the cell displays `partialString` minus the last character typed. If you return [`false`](../../Swift/false.md), you can also return by indirection an `NSString` object (in `error`) that explains the reason why the validation failed; the delegate (if any) of the `NSControl` object managing the cell can then respond to the failure in control:didFailToValidatePartialString:errorDescription:. The selection range will always be set to the end of the text if replacement occurs.
 
-This method is a compatibility method. If a subclass overrides this method and does not override [`isPartialStringValid(_:proposedSelectedRange:originalString:originalSelectedRange:errorDescription:)`](formatter/ispartialstringvalid(_:proposedselectedrange:originalstring:originalselectedrange:errordescription:).md), this method will be called as before ([`isPartialStringValid(_:proposedSelectedRange:originalString:originalSelectedRange:errorDescription:)`](formatter/ispartialstringvalid(_:proposedselectedrange:originalstring:originalselectedrange:errordescription:).md) just calls this one by default).
+This method is a compatibility method. If a subclass overrides this method and does not override [`isPartialStringValid(_:proposedSelectedRange:originalString:originalSelectedRange:errorDescription:)`](./ispartialstringvalid%28_,proposedselectedrange,originalstring,originalselectedrange,errordescription%29.md), this method will be called as before ([`isPartialStringValid(_:proposedSelectedRange:originalString:originalSelectedRange:errorDescription:)`](./ispartialstringvalid%28_,proposedselectedrange,originalstring,originalselectedrange,errordescription%29.md) just calls this one by default).
 
 ## Parameters
 
@@ -40,7 +45,8 @@ This method is a compatibility method. If a subclass overrides this method and d
 
 ## See Also
 
-- [func isPartialStringValid(AutoreleasingUnsafeMutablePointer<NSString>, proposedSelectedRange: NSRangePointer?, originalString: String, originalSelectedRange: NSRange, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](formatter/ispartialstringvalid(_:proposedselectedrange:originalstring:originalselectedrange:errordescription:).md)
+### Validating Partial Strings
+- [func isPartialStringValid(AutoreleasingUnsafeMutablePointer<NSString>, proposedSelectedRange: NSRangePointer?, originalString: String, originalSelectedRange: NSRange, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./ispartialstringvalid%28_,proposedselectedrange,originalstring,originalselectedrange,errordescription%29.md)
   This method should be implemented in subclasses that want to validate user changes to a string in a field, where the user changes are not necessarily at the end of the string, and preserve the selection (or set a different one, such as selecting the erroneous part of the string the user has typed).
 
 

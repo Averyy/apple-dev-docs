@@ -1,7 +1,8 @@
 # getActiveDatasetRequest(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func getActiveDatasetRequest(completion: @escaping @Sendable (MTRThreadBorderRouterManagementClusterDatasetResponseParams?, (any Error)?) -> Void)
+```
+
+```swift
 func activeDatasetRequest() async throws -> MTRThreadBorderRouterManagementClusterDatasetResponseParams
+```
+
+```objc
+- (void) getActiveDatasetRequestWithCompletion:(void (^)(MTRThreadBorderRouterManagementClusterDatasetResponseParams *data, NSError *error)) completion;
 ```
 
 

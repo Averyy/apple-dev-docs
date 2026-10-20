@@ -1,7 +1,8 @@
 # previewRepresentableActivityItems(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A collection of Preview-representable activity items, used for sharing and collaboration.
 
@@ -13,6 +14,10 @@ A collection of Preview-representable activity items, used for sharing and colla
 ```swift
 @MainActor
 optional func previewRepresentableActivityItems(for window: NSWindow) -> [any NSPreviewRepresentableActivityItem]?
+```
+
+```objc
+- (NSArray<id<NSPreviewRepresentableActivityItem>> *) previewRepresentableActivityItemsForWindow:(NSWindow *) window;
 ```
 
 

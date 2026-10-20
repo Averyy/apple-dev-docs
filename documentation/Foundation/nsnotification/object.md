@@ -1,7 +1,8 @@
 # object
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The object associated with the notification.
 
@@ -18,6 +19,10 @@ The object associated with the notification.
 
 ```swift
 var object: Any? { get }
+```
+
+```objc
+@property (retain, readonly, nullable) id object;
 ```
 
 #### Discussion
@@ -41,9 +46,10 @@ Example of accessing notification object in Objective-C:
 
 ## See Also
 
-- [var name: NSNotification.Name](nsnotification/name-swift.property.md)
+### Getting Notification Information
+- [var name: NSNotification.Name](./name-swift.property.md)
   The name of the notification.
-- [var userInfo: [AnyHashable : Any]?](nsnotification/userinfo.md)
+- [var userInfo: [AnyHashable : Any]?](./userinfo.md)
   The user information dictionary associated with the notification.
 
 

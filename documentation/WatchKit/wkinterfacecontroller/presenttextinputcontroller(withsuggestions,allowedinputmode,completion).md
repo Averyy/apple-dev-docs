@@ -1,7 +1,8 @@
 # presentTextInputController(withSuggestions:allowedInputMode:completion:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays a modal interface for gathering text input from the user.
 
@@ -11,12 +12,20 @@ Displays a modal interface for gathering text input from the user.
 ## Declaration
 
 ```swift
+func presentTextInputController(withSuggestions suggestions: [String]?, allowedInputMode inputMode: WKTextInputMode, completion: @escaping ([Any]?) -> Void)
+```
+
+```swift
 func presentTextInputController(withSuggestions suggestions: [String]?, allowedInputMode inputMode: WKTextInputMode) async -> [Any]?
+```
+
+```objc
+- (void) presentTextInputControllerWithSuggestions:(NSArray<NSString *> *) suggestions allowedInputMode:(WKTextInputMode) inputMode completion:(void (^)(NSArray *results)) completion;
 ```
 
 ## Mentions
 
-- [Navigating Between Scenes](navigating-between-scenes.md)
+- [Navigating Between Scenes](../navigating-between-scenes.md)
 
 #### Discussion
 
@@ -28,17 +37,20 @@ Always call this method from your WatchKit extension’s main thread.
 
 ## Parameters
 
-- `suggestions`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which contains a suggested phrase for input. The user can either select one of the phrases you suggest or input a new text phrase.
-- `inputMode`: The type of input to allow. For a list of possible values, see [`WKTextInputMode`](wktextinputmode.md).
-- `completion`: The block to execute after the user dismisses the modal interface. This block has no return value and takes the following parameter: - **results**: An array containing the input from the user, or `nil` if the user canceled the operation. When an array is provided, the value in the array is usually an [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) object representing the text input. The array can also contain an emoji image, packaged as an [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) object. You can use the data object to create a corresponding [`UIImage`](https://developer.apple.com/documentation/uikit/uiimage) object.
+- `suggestions`: An array of [`NSString`](../../Foundation/nsstring.md) objects, each of which contains a suggested phrase for input. The user can either select one of the phrases you suggest or input a new text phrase.
+- `inputMode`: The type of input to allow. For a list of possible values, see [`WKTextInputMode`](../wktextinputmode.md).
+- `completion`: The block to execute after the user dismisses the modal interface. This block has no return value and takes the following parameter:
+
+  - **results**: An array containing the input from the user, or `nil` if the user canceled the operation. When an array is provided, the value in the array is usually an [`NSString`](../../Foundation/nsstring.md) object representing the text input. The array can also contain an emoji image, packaged as an [`NSData`](../../Foundation/nsdata.md) object. You can use the data object to create a corresponding [`UIImage`](../../UIKit/uiimage.md) object.
 
 ## See Also
 
-- [func presentTextInputControllerWithSuggestions(forLanguage: ((String) -> [Any]?)?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](wkinterfacecontroller/presenttextinputcontrollerwithsuggestions(forlanguage:allowedinputmode:completion:).md)
+### Handling text input
+- [func presentTextInputControllerWithSuggestions(forLanguage: ((String) -> [Any]?)?, allowedInputMode: WKTextInputMode, completion: ([Any]?) -> Void)](./presenttextinputcontrollerwithsuggestions%28forlanguage,allowedinputmode,completion%29.md)
   Displays a modal interface for gathering language-specific text input from the user.
-- [func dismissTextInputController()](wkinterfacecontroller/dismisstextinputcontroller.md)
+- [func dismissTextInputController()](./dismisstextinputcontroller%28%29.md)
   Dismisses the text input controller without returning any text.
-- [enum WKTextInputMode](wktextinputmode.md)
+- [enum WKTextInputMode](../wktextinputmode.md)
   The input modes supported by the text input controller.
 
 

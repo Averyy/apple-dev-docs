@@ -2,6 +2,7 @@
 
 **Framework**: Metal Performance Shaders  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,6 +17,10 @@
 
 ```swift
 func array(for cmdBuf: any MTLCommandBuffer, arrayDescriptor descriptor: MPSNDArrayDescriptor, kernel: MPSKernel) -> MPSNDArray
+```
+
+```objc
+- (MPSNDArray *) arrayForCommandBuffer:(id<MTLCommandBuffer>) cmdBuf arrayDescriptor:(MPSNDArrayDescriptor *) descriptor kernel:(MPSKernel *) kernel;
 ```
 
 

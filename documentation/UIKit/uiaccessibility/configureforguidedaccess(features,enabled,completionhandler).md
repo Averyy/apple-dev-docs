@@ -1,7 +1,8 @@
 # configureForGuidedAccess(features:enabled:completionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Enables or disables the specified accessibility features while using Guided Access.
 
@@ -18,11 +19,16 @@ Enables or disables the specified accessibility features while using Guided Acce
 static func configureForGuidedAccess(features: UIGuidedAccessAccessibilityFeature, enabled: Bool, completionHandler completion: @escaping (Bool, (any Error)?) -> Void)
 ```
 
+```c
+extern void UIGuidedAccessConfigureAccessibilityFeatures(UIGuidedAccessAccessibilityFeature features, BOOL enabled, void (^completion)(BOOL success, NSError *error));
+```
+
 ## See Also
 
-- [struct UIGuidedAccessAccessibilityFeature](uiguidedaccessaccessibilityfeature.md)
+### Guided Access
+- [struct UIGuidedAccessAccessibilityFeature](../uiguidedaccessaccessibilityfeature.md)
   Constants that describe accessibility features for Guided Access.
-- [UIAccessibility.GuidedAccessError.Code](uiaccessibility/guidedaccesserror/code.md)
+- [UIAccessibility.GuidedAccessError.Code](./guidedaccesserror/code.md)
   Error codes for Guided Access.
 
 

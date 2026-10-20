@@ -1,7 +1,8 @@
 # MaxAbsScaler.Transformer
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An transformer that scales the input values so that the maximum absolute value is 1.0.
 
@@ -20,31 +21,33 @@ An transformer that scales the input values so that the maximum absolute value i
 struct Transformer
 ```
 
+Available when `Element` conforms to `BinaryFloatingPoint`, `Decodable`, and `Encodable`.
+
 ## Topics
 
 ### Creating a transformer
-- [init(maximumAbsoluteValue: Element)](maxabsscaler/transformer/init(maximumabsolutevalue:).md)
+- [init(maximumAbsoluteValue: Element)](./transformer/init%28maximumabsolutevalue%29.md)
   Creates a max abs scaling transformer.
 ### Getting the absolute value
-- [var maximumAbsoluteValue: Element](maxabsscaler/transformer/maximumabsolutevalue.md)
+- [var maximumAbsoluteValue: Element](./transformer/maximumabsolutevalue.md)
   The fitted maximum absolute value.
 ### Performing the transformation
-- [func applied(to: Element, eventHandler: EventHandler?) -> Element](maxabsscaler/transformer/applied(to:eventhandler:).md)
+- [func applied(to: Element, eventHandler: EventHandler?) -> Element](./transformer/applied%28to,eventhandler%29.md)
   Scales the input values by `1 / maximumAbsoluteValue`.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Transformer](../transformer.md)
 
 
 ---

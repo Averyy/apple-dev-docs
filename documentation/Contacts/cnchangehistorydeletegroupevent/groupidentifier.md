@@ -1,7 +1,8 @@
 # groupIdentifier
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string that uniquely identifies the group that the user deleted.
 
@@ -17,6 +18,10 @@ A string that uniquely identifies the group that the user deleted.
 
 ```swift
 var groupIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSString * groupIdentifier;
 ```
 
 

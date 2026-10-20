@@ -1,14 +1,15 @@
 # IOPMPowerSource
 
 **Framework**: Kernel  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```cpp
 class IOPMPowerSource : IOService
 ```
 
@@ -137,87 +138,88 @@ Settings:
 ## Topics
 
 ### Miscellaneous
-- [powerSource](iopmpowersource/1809904-powersource.md)
+- [powerSource](./iopmpowersource/api-1809904-powersource.md)
   Creates a new IOPMPowerSource nub. Must be attached to IORegistry, and registered by provider.
-- [setPSProperty](iopmpowersource/1809917-setpsproperty.md)
-- [updateStatus](iopmpowersource/1809926-updatestatus.md)
+- [setPSProperty](./iopmpowersource/api-1809917-setpsproperty.md)
+- [updateStatus](./iopmpowersource/api-1809926-updatestatus.md)
   Must be called by physical battery controller when battery state has changed significantly.
 ### Instance Variables
-- [settingsChangedSinceUpdate](iopmpowersource/settingschangedsinceupdate.md)
-- [properties](iopmpowersource/properties.md)
+- [settingsChangedSinceUpdate](./iopmpowersource/settingschangedsinceupdate.md)
+- [properties](./iopmpowersource/properties.md)
 ### Instance Methods
-- [- adapterInfo](iopmpowersource/1543712-adapterinfo.md)
-- [- amperage](iopmpowersource/1543726-amperage.md)
-- [- atCriticalLevel](iopmpowersource/1543768-atcriticallevel.md)
-- [- atWarnLevel](iopmpowersource/1543776-atwarnlevel.md)
-- [- batteryInstalled](iopmpowersource/1543775-batteryinstalled.md)
-- [- capacityPercentRemaining](iopmpowersource/1543736-capacitypercentremaining.md)
-- [- currentCapacity](iopmpowersource/1543777-currentcapacity.md)
-- [- cycleCount](iopmpowersource/1543711-cyclecount.md)
-- [- errorCondition](iopmpowersource/1543760-errorcondition.md)
-- [- externalChargeCapable](iopmpowersource/1543708-externalchargecapable.md)
-- [- externalConnected](iopmpowersource/1543749-externalconnected.md)
-- [- free](iopmpowersource/1543728-free.md)
-- [- getMetaClass](iopmpowersource/1543720-getmetaclass.md)
-- [- getPSProperty](iopmpowersource/1543772-getpsproperty.md)
-- [- init](iopmpowersource/1543771-init.md)
-- [- isCharging](iopmpowersource/1543769-ischarging.md)
-- [- legacyIOBatteryInfo](iopmpowersource/1543735-legacyiobatteryinfo.md)
-- [- location](iopmpowersource/1543759-location.md)
-- [- manufacturer](iopmpowersource/1543716-manufacturer.md)
-- [- maxCapacity](iopmpowersource/1543724-maxcapacity.md)
-- [- model](iopmpowersource/1543766-model.md)
-- [- serial](iopmpowersource/1543709-serial.md)
-- [- setAdapterInfo](iopmpowersource/1543733-setadapterinfo.md)
-- [- setAmperage](iopmpowersource/1543739-setamperage.md)
-- [- setAtCriticalLevel](iopmpowersource/1543731-setatcriticallevel.md)
-- [- setAtWarnLevel](iopmpowersource/1543755-setatwarnlevel.md)
-- [- setBatteryInstalled](iopmpowersource/1543762-setbatteryinstalled.md)
-- [- setCurrentCapacity](iopmpowersource/1543706-setcurrentcapacity.md)
-- [- setCycleCount](iopmpowersource/1543758-setcyclecount.md)
-- [- setErrorCondition](iopmpowersource/1543748-seterrorcondition.md)
-- [- setExternalChargeCapable](iopmpowersource/1543743-setexternalchargecapable.md)
-- [- setExternalConnected](iopmpowersource/1543764-setexternalconnected.md)
-- [- setIsCharging](iopmpowersource/1543734-setischarging.md)
-- [- setLegacyIOBatteryInfo](iopmpowersource/1543714-setlegacyiobatteryinfo.md)
-- [- setLocation](iopmpowersource/1543722-setlocation.md)
-- [- setManufacturer](iopmpowersource/1543729-setmanufacturer.md)
-- [- setMaxCapacity](iopmpowersource/1543719-setmaxcapacity.md)
-- [- setModel](iopmpowersource/1543773-setmodel.md)
-- [- setPSProperty](iopmpowersource/1543767-setpsproperty.md)
-- [- setSerial](iopmpowersource/1543747-setserial.md)
-- [- setTimeRemaining](iopmpowersource/1543753-settimeremaining.md)
-- [- setVoltage](iopmpowersource/1543751-setvoltage.md)
-- [- timeRemaining](iopmpowersource/1543738-timeremaining.md)
-- [- updateStatus](iopmpowersource/1543745-updatestatus.md)
-- [- voltage](iopmpowersource/1543763-voltage.md)
+- [- adapterInfo](./iopmpowersource/api-1543712-adapterinfo.md)
+- [- amperage](./iopmpowersource/api-1543726-amperage.md)
+- [- atCriticalLevel](./iopmpowersource/api-1543768-atcriticallevel.md)
+- [- atWarnLevel](./iopmpowersource/api-1543776-atwarnlevel.md)
+- [- batteryInstalled](./iopmpowersource/api-1543775-batteryinstalled.md)
+- [- capacityPercentRemaining](./iopmpowersource/api-1543736-capacitypercentremaining.md)
+- [- currentCapacity](./iopmpowersource/api-1543777-currentcapacity.md)
+- [- cycleCount](./iopmpowersource/api-1543711-cyclecount.md)
+- [- errorCondition](./iopmpowersource/api-1543760-errorcondition.md)
+- [- externalChargeCapable](./iopmpowersource/api-1543708-externalchargecapable.md)
+- [- externalConnected](./iopmpowersource/api-1543749-externalconnected.md)
+- [- free](./iopmpowersource/api-1543728-free.md)
+- [- getMetaClass](./iopmpowersource/api-1543720-getmetaclass.md)
+- [- getPSProperty](./iopmpowersource/api-1543772-getpsproperty.md)
+- [- init](./iopmpowersource/api-1543771-init.md)
+- [- isCharging](./iopmpowersource/api-1543769-ischarging.md)
+- [- legacyIOBatteryInfo](./iopmpowersource/api-1543735-legacyiobatteryinfo.md)
+- [- location](./iopmpowersource/api-1543759-location.md)
+- [- manufacturer](./iopmpowersource/api-1543716-manufacturer.md)
+- [- maxCapacity](./iopmpowersource/api-1543724-maxcapacity.md)
+- [- model](./iopmpowersource/api-1543766-model.md)
+- [- serial](./iopmpowersource/api-1543709-serial.md)
+- [- setAdapterInfo](./iopmpowersource/api-1543733-setadapterinfo.md)
+- [- setAmperage](./iopmpowersource/api-1543739-setamperage.md)
+- [- setAtCriticalLevel](./iopmpowersource/api-1543731-setatcriticallevel.md)
+- [- setAtWarnLevel](./iopmpowersource/api-1543755-setatwarnlevel.md)
+- [- setBatteryInstalled](./iopmpowersource/api-1543762-setbatteryinstalled.md)
+- [- setCurrentCapacity](./iopmpowersource/api-1543706-setcurrentcapacity.md)
+- [- setCycleCount](./iopmpowersource/api-1543758-setcyclecount.md)
+- [- setErrorCondition](./iopmpowersource/api-1543748-seterrorcondition.md)
+- [- setExternalChargeCapable](./iopmpowersource/api-1543743-setexternalchargecapable.md)
+- [- setExternalConnected](./iopmpowersource/api-1543764-setexternalconnected.md)
+- [- setIsCharging](./iopmpowersource/api-1543734-setischarging.md)
+- [- setLegacyIOBatteryInfo](./iopmpowersource/api-1543714-setlegacyiobatteryinfo.md)
+- [- setLocation](./iopmpowersource/api-1543722-setlocation.md)
+- [- setManufacturer](./iopmpowersource/api-1543729-setmanufacturer.md)
+- [- setMaxCapacity](./iopmpowersource/api-1543719-setmaxcapacity.md)
+- [- setModel](./iopmpowersource/api-1543773-setmodel.md)
+- [- setPSProperty](./iopmpowersource/api-1543767-setpsproperty.md)
+- [- setSerial](./iopmpowersource/api-1543747-setserial.md)
+- [- setTimeRemaining](./iopmpowersource/api-1543753-settimeremaining.md)
+- [- setVoltage](./iopmpowersource/api-1543751-setvoltage.md)
+- [- timeRemaining](./iopmpowersource/api-1543738-timeremaining.md)
+- [- updateStatus](./iopmpowersource/api-1543745-updatestatus.md)
+- [- voltage](./iopmpowersource/api-1543763-voltage.md)
 ### Type Methods
-- [+ powerSource](iopmpowersource/1543765-powersource.md)
+- [+ powerSource](./iopmpowersource/api-1543765-powersource.md)
 
 ## Relationships
 
 ### Inherits From
-- [IOService](ioservice.md)
+- [IOService](./ioservice.md)
 
 ## See Also
 
-- [IOACPIPlatformDevice](ioacpiplatformdevice.md)
-- [IOACPIPlatformExpert](ioacpiplatformexpert.md)
-- [IOPMPowerSourceList](iopmpowersourcelist.md)
-- [IOPMrootDomain](iopmrootdomain.md)
-- [IOPowerConnection](iopowerconnection.md)
-- [IOPwrController](iopwrcontroller.md)
-- [IOACPIAddress](ioacpiaddress.md)
-- [IOACPIAddressSpaceDescriptor](ioacpiaddressspacedescriptor.md)
-- [IOACPIAddressSpaceHandler](ioacpiaddressspacehandler.md)
-- [IOACPIAddressSpaceID](ioacpiaddressspaceid.md)
-- [IOPMPowerState](iopmpowerstate.md)
-- [acknowledgeSleepWakeNotification](1579170-acknowledgesleepwakenotification.md)
-- [gIOACPIAddressKey](gioacpiaddresskey.md)
-- [gIOACPIDeviceStatusKey](gioacpidevicestatuskey.md)
-- [gIOACPIHardwareIDKey](gioacpihardwareidkey.md)
-- [gIOACPIPlane](gioacpiplane.md)
-- [gIOACPIUniqueIDKey](gioacpiuniqueidkey.md)
+### Power Management
+- [IOACPIPlatformDevice](./ioacpiplatformdevice.md)
+- [IOACPIPlatformExpert](./ioacpiplatformexpert.md)
+- [IOPMPowerSourceList](./iopmpowersourcelist.md)
+- [IOPMrootDomain](./iopmrootdomain.md)
+- [IOPowerConnection](./iopowerconnection.md)
+- [IOPwrController](./iopwrcontroller.md)
+- [IOACPIAddress](./ioacpiaddress.md)
+- [IOACPIAddressSpaceDescriptor](./ioacpiaddressspacedescriptor.md)
+- [IOACPIAddressSpaceHandler](./ioacpiaddressspacehandler.md)
+- [IOACPIAddressSpaceID](./ioacpiaddressspaceid.md)
+- [IOPMPowerState](./iopmpowerstate.md)
+- [acknowledgeSleepWakeNotification](./api-1579170-acknowledgesleepwakenotification.md)
+- [gIOACPIAddressKey](./gioacpiaddresskey.md)
+- [gIOACPIDeviceStatusKey](./gioacpidevicestatuskey.md)
+- [gIOACPIHardwareIDKey](./gioacpihardwareidkey.md)
+- [gIOACPIPlane](./gioacpiplane.md)
+- [gIOACPIUniqueIDKey](./gioacpiuniqueidkey.md)
 
 
 ---

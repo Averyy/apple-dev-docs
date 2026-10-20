@@ -1,7 +1,8 @@
 # placeholder
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Displayed data should appear as generic placeholders.
 
@@ -26,9 +27,10 @@ Text and images will be automatically masked to appear as generic placeholders, 
 
 ## See Also
 
-- [static let invalidated: RedactionReasons](redactionreasons/invalidated.md)
+### Getting redaction reasons
+- [static let invalidated: RedactionReasons](./invalidated.md)
   Displayed data should appear as invalidated and pending a new update.
-- [static let privacy: RedactionReasons](redactionreasons/privacy.md)
+- [static let privacy: RedactionReasons](./privacy.md)
   Displayed data should be obscured to protect private information.
 
 

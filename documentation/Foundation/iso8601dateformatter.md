@@ -1,7 +1,8 @@
 # ISO8601DateFormatter
 
 **Framework**: Foundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A formatter that converts between dates and their ISO 8601 string representations.
 
@@ -20,57 +21,62 @@ A formatter that converts between dates and their ISO 8601 string representation
 class ISO8601DateFormatter
 ```
 
+```objc
+@interface NSISO8601DateFormatter : NSFormatter
+```
+
 #### Overview
 
-The [`ISO8601DateFormatter`](iso8601dateformatter.md) class generates and parses string representations of dates following the [`ISO 8601`](https://developer.apple.comhttp://www.iso.org/iso/home/standards/iso8601) standard. Use this class to create ISO 8601 representations of dates and create dates from text strings in ISO 8601 format.
+The [`ISO8601DateFormatter`](./iso8601dateformatter.md) class generates and parses string representations of dates following the [ISO 8601](http://www.iso.org/iso/home/standards/iso8601) standard. Use this class to create ISO 8601 representations of dates and create dates from text strings in ISO 8601 format.
 
-> 💡 **Tip**:  In Swift, you can use [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md) rather than [`ISO8601DateFormatter`](iso8601dateformatter.md). The [`FormatStyle`](formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
+> 💡 **Tip**:  In Swift, you can use [`Date.ISO8601FormatStyle`](./date/iso8601formatstyle.md) rather than [`ISO8601DateFormatter`](./iso8601dateformatter.md). The [`FormatStyle`](./formatstyle.md) API offers a declarative idiom for customizing the formatting of various types. Also, Foundation caches identical [`FormatStyle`](./formatstyle.md) instances, so you don’t need to pass them around your app, or risk wasting memory with duplicate formatters.
 
 ## Topics
 
 ### Configuring the Formatter
-- [var formatOptions: ISO8601DateFormatter.Options](iso8601dateformatter/formatoptions.md)
-  Options for generating and parsing ISO 8601 date representations. See [`ISO8601DateFormatter.Options`](iso8601dateformatter/options.md) for possible values.
-- [var timeZone: TimeZone!](iso8601dateformatter/timezone.md)
+- [var formatOptions: ISO8601DateFormatter.Options](./iso8601dateformatter/formatoptions.md)
+  Options for generating and parsing ISO 8601 date representations. See [`ISO8601DateFormatter.Options`](./iso8601dateformatter/options.md) for possible values.
+- [var timeZone: TimeZone!](./iso8601dateformatter/timezone.md)
   The time zone used to create and parse date representations. When unspecified, GMT is used.
 ### Creating ISO 8601 Date Formatters
-- [init()](iso8601dateformatter/init.md)
+- [init()](./iso8601dateformatter/init%28%29.md)
   Initializes an ISO 8601 date formatter with default format, time zone, and options.
 ### Converting ISO 8601 Dates
-- [func string(from: Date) -> String](iso8601dateformatter/string(from:).md)
+- [func string(from: Date) -> String](./iso8601dateformatter/string%28from%29.md)
   Creates and returns an ISO 8601 formatted string representation of the specified date.
-- [func date(from: String) -> Date?](iso8601dateformatter/date(from:).md)
+- [func date(from: String) -> Date?](./iso8601dateformatter/date%28from%29.md)
   Creates and returns a date object from the specified ISO 8601 formatted string representation.
-- [class func string(from: Date, timeZone: TimeZone, formatOptions: ISO8601DateFormatter.Options) -> String](iso8601dateformatter/string(from:timezone:formatoptions:).md)
+- [class func string(from: Date, timeZone: TimeZone, formatOptions: ISO8601DateFormatter.Options) -> String](./iso8601dateformatter/string%28from,timezone,formatoptions%29.md)
   Creates a representation of the specified date with a given time zone and format options.
 ### Constants
-- [ISO8601DateFormatter.Options](iso8601dateformatter/options.md)
+- [ISO8601DateFormatter.Options](./iso8601dateformatter/options.md)
   Options used to generate and parse ISO 8601 date representations.
 
 ## Relationships
 
 ### Inherits From
-- [Formatter](formatter.md)
+- [Formatter](./formatter.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](nscoding.md)
-- [NSCopying](nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](./nscoding.md)
+- [NSCopying](./nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](./nssecurecoding.md)
 
 ## See Also
 
-- [class DateFormatter](dateformatter.md)
+### Dates and times
+- [class DateFormatter](./dateformatter.md)
   A formatter that converts between dates and their textual representations.
-- [class DateComponentsFormatter](datecomponentsformatter.md)
+- [class DateComponentsFormatter](./datecomponentsformatter.md)
   A formatter that creates string representations of quantities of time.
-- [class RelativeDateTimeFormatter](relativedatetimeformatter.md)
+- [class RelativeDateTimeFormatter](./relativedatetimeformatter.md)
   A formatter that creates locale-aware string representations of a relative date or time.
-- [class DateIntervalFormatter](dateintervalformatter.md)
+- [class DateIntervalFormatter](./dateintervalformatter.md)
   A formatter that creates string representations of time intervals.
 
 

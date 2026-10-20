@@ -1,7 +1,8 @@
 # bufferOffset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The byte offset into the buffer for the first byte of this layout.
 
@@ -21,9 +22,10 @@ var bufferOffset: Int
 
 ## See Also
 
-- [var bufferIndex: Int](lowlevelmesh/layout/bufferindex.md)
+### Describing a low-level mesh layout
+- [var bufferIndex: Int](./bufferindex.md)
   The index of the buffer to use for this layout.
-- [var bufferStride: Int](lowlevelmesh/layout/bufferstride.md)
+- [var bufferStride: Int](./bufferstride.md)
   The distance, in bytes, between consecutive vertices for attributes using this layout.
 
 

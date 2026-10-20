@@ -1,7 +1,8 @@
 # NSAppleEventTimeOutDefault
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies that an event-processing operation should continue until a timeout occurs based on a value determined by the Apple Event Manager (about 1 minute). Not currently used by applications.
 
@@ -15,9 +16,14 @@ Specifies that an event-processing operation should continue until a timeout occ
 let NSAppleEventTimeOutDefault: Double
 ```
 
+```c
+extern const double NSAppleEventTimeOutDefault;
+```
+
 ## See Also
 
-- [let NSAppleEventTimeOutNone: Double](nsappleeventtimeoutnone.md)
+### Constants
+- [let NSAppleEventTimeOutNone: Double](./nsappleeventtimeoutnone.md)
   Specifies that the application is willing to wait indefinitely for the current operation to complete. Not currently used by applications.
 
 

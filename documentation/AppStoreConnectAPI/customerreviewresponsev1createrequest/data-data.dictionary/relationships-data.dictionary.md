@@ -1,7 +1,8 @@
 # CustomerReviewResponseV1CreateRequest.Data.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object CustomerReviewResponseV1CreateRequest.Data.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object CustomerReviewResponseV1CreateRequest.Data.Relationships.Review](customerreviewresponsev1createrequest/data-data.dictionary/relationships-data.dictionary/review-data.dictionary.md)
+- [object CustomerReviewResponseV1CreateRequest.Data.Relationships.Review](./relationships-data.dictionary/review-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object CustomerReviewResponseV1CreateRequest.Data.Relationships
 
 ## See Also
 
-- [object CustomerReviewResponseV1CreateRequest.Data.Attributes](customerreviewresponsev1createrequest/data-data.dictionary/attributes-data.dictionary.md)
+### Objects
+- [object CustomerReviewResponseV1CreateRequest.Data.Attributes](./attributes-data.dictionary.md)
   The attributes of the customer review response, including its text content.
 
 

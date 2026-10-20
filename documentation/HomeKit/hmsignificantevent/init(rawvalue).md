@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -19,7 +20,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](hmsignificantevent/init(_:).md)
+### Creating a significant event
+- [init(String)](./init%28_%29.md)
 
 
 ---

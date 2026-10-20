@@ -1,7 +1,8 @@
 # completeBuffer
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The complete buffer’s string representation.
 
@@ -14,13 +15,18 @@ The complete buffer’s string representation.
 var completeBuffer: String { get set }
 ```
 
+```objc
+@property (copy) NSString * completeBuffer;
+```
+
 #### Discussion
 
 Changes to the `lines` property are immediately reflected in this property, and vice versa.
 
 ## See Also
 
-- [var contentUTI: String](xcsourcetextbuffer/contentuti.md)
+### Accessing Source Text
+- [var contentUTI: String](./contentuti.md)
   The Uniform Type Identifier (UTI) of the content in the buffer.
 
 

@@ -1,7 +1,8 @@
 # readAttributeBatIECDesignation(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeBatIECDesignation(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeBatIECDesignation() async throws -> String
+```
+
+```objc
+- (void) readAttributeBatIECDesignationWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

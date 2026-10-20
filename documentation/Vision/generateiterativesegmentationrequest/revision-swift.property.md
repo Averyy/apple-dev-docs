@@ -1,7 +1,8 @@
 # revision
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s configured revision.
 
@@ -21,9 +22,10 @@ final let revision: GenerateIterativeSegmentationRequest.Revision
 
 ## See Also
 
-- [GenerateIterativeSegmentationRequest.Revision](generateiterativesegmentationrequest/revision-swift.enum.md)
-- [static let supportedRevisions: [GenerateIterativeSegmentationRequest.Revision]](generateiterativesegmentationrequest/supportedrevisions.md)
-  The revisions supported by [`GenerateIterativeSegmentationRequest`](generateiterativesegmentationrequest.md).
+### Getting the revision
+- [GenerateIterativeSegmentationRequest.Revision](./revision-swift.enum.md)
+- [static let supportedRevisions: [GenerateIterativeSegmentationRequest.Revision]](./supportedrevisions.md)
+  The revisions supported by [`GenerateIterativeSegmentationRequest`](../generateiterativesegmentationrequest.md).
 
 
 ---

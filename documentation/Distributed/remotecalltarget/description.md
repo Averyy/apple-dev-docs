@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Distributed  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Attempts to pretty format the underlying target identifier. If unable to, returns the raw underlying identifier.
 
@@ -11,7 +12,7 @@ Attempts to pretty format the underlying target identifier. If unable to, return
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

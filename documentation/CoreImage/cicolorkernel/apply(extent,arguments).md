@@ -1,7 +1,8 @@
 # apply(extent:arguments:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new image using the kernel and specified arguments.
 
@@ -10,7 +11,7 @@ Creates a new image using the kernel and specified arguments.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,18 +20,22 @@ Creates a new image using the kernel and specified arguments.
 func apply(extent: CGRect, arguments args: [Any]) -> CIImage?
 ```
 
+```objc
+- (CIImage *) applyWithExtent:(CGRect) extent arguments:(NSArray<id> *) args;
+```
+
 #### Return Value
 
 A new image object describing the result of applying the kernel.
 
 #### Discussion
 
-This method is analogous to the [`CIFilter`](cifilter-swift.class.md) method [`apply(_:arguments:options:)`](cifilter-swift.class/apply(_:arguments:options:).md), but it does not require construction of a [`CIFilter`](cifilter-swift.class.md) object, and it allows you to specify a callback for determining the kernel’s region of interest as a block or closure. As with the similar [`CIFilter`](cifilter-swift.class.md) method, calling this method does not execute the kernel code—filters and their kernel code are evaluated only when rendering a final output image.
+This method is analogous to the [`CIFilter`](../cifilter-swift.class.md) method [`apply(_:arguments:options:)`](../cifilter-swift.class/apply%28_,arguments,options%29.md), but it does not require construction of a [`CIFilter`](../cifilter-swift.class.md) object, and it allows you to specify a callback for determining the kernel’s region of interest as a block or closure. As with the similar [`CIFilter`](../cifilter-swift.class.md) method, calling this method does not execute the kernel code—filters and their kernel code are evaluated only when rendering a final output image.
 
 ## Parameters
 
 - `extent`: The extent of the output image.
-- `args`: An array of arguments to pass to the kernel routine. The type of each object in the array must be compatible with the corresponding parameter declared in the kernel routine source code. For details, see [`Core Image Kernel Language Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CIKernelLangRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004397).
+- `args`: An array of arguments to pass to the kernel routine. The type of each object in the array must be compatible with the corresponding parameter declared in the kernel routine source code. For details, see [Core Image Kernel Language Reference](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CIKernelLangRef/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004397).
 
 
 ---

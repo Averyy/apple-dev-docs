@@ -1,7 +1,8 @@
 # id
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value that all entities in the section share for a specified key path.
 
@@ -23,7 +24,7 @@ The value that all entities in the section share for a specified key path.
 
 #### Discussion
 
-Specify the key path that the entities share this value with by setting the [`SectionedFetchRequest`](sectionedfetchrequest.md) instance’s `sectionIdentifier` parameter during initialization, or by modifying the corresponding [`SectionedFetchResults`](sectionedfetchresults.md) instance’s [`sectionIdentifier`](sectionedfetchresults/sectionidentifier.md) property.
+Specify the key path that the entities share this value with by setting the [`SectionedFetchRequest`](../../sectionedfetchrequest.md) instance’s `sectionIdentifier` parameter during initialization, or by modifying the corresponding [`SectionedFetchResults`](../../sectionedfetchresults.md) instance’s [`sectionIdentifier`](../sectionidentifier.md) property.
 
 
 ---

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom vertical alignment of the specified type.
 
@@ -22,7 +23,7 @@ init(_ id: any AlignmentID.Type)
 
 #### Discussion
 
-Use this initializer to create a custom vertical alignment. Define an [`AlignmentID`](alignmentid.md) type, and then use that type to create a new static property on [`VerticalAlignment`](verticalalignment.md):
+Use this initializer to create a custom vertical alignment. Define an [`AlignmentID`](../alignmentid.md) type, and then use that type to create a new static property on [`VerticalAlignment`](../verticalalignment.md):
 
 ```swift
 private struct FirstThirdAlignment: AlignmentID {
@@ -36,7 +37,7 @@ extension VerticalAlignment {
 }
 ```
 
-Every vertical alignment instance that you create needs a unique identifier. For more information, see [`AlignmentID`](alignmentid.md).
+Every vertical alignment instance that you create needs a unique identifier. For more information, see [`AlignmentID`](../alignmentid.md).
 
 ## Parameters
 
@@ -44,7 +45,8 @@ Every vertical alignment instance that you create needs a unique identifier. For
 
 ## See Also
 
-- [func combineExplicit<S>(S) -> CGFloat?](verticalalignment/combineexplicit(_:).md)
+### Creating a custom alignment
+- [func combineExplicit<S>(S) -> CGFloat?](./combineexplicit%28_%29.md)
   Merges a sequence of explicit alignment values produced by this instance.
 
 

@@ -1,7 +1,8 @@
 # requestingExecutable
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL of the requesting executable.
 
@@ -14,17 +15,22 @@ The URL of the requesting executable.
 var requestingExecutable: URL? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSURL * requestingExecutable;
+```
+
 #### Discussion
 
 This property is `nil` unless the device has a Mobile Device Management (MDM) profile, and the profile’s administrator installed the file provider’s app using the MDM profile.
 
 ## See Also
 
-- [var domainVersion: NSFileProviderDomainVersion?](nsfileproviderrequest/domainversion.md)
+### Accessing Application Information
+- [var domainVersion: NSFileProviderDomainVersion?](./domainversion.md)
   The version of the domain for the request.
-- [var isFileViewerRequest: Bool](nsfileproviderrequest/isfileviewerrequest.md)
+- [var isFileViewerRequest: Bool](./isfileviewerrequest.md)
   A Boolean value that indicates whether the request came from Finder or related system file browsers.
-- [var isSystemRequest: Bool](nsfileproviderrequest/issystemrequest.md)
+- [var isSystemRequest: Bool](./issystemrequest.md)
   A Boolean value that indicates whether the request came from a system process.
 
 

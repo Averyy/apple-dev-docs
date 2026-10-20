@@ -1,7 +1,8 @@
 # actions
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The communication actions the child wants to perform.
 
@@ -20,9 +21,10 @@ var actions: Set<CommunicationTopic.Action>
 
 ## See Also
 
-- [var personInformation: [CommunicationTopic.PersonInformation]](communicationtopic/personinformation-swift.property.md)
+### Accessing properties
+- [var personInformation: [CommunicationTopic.PersonInformation]](./personinformation-swift.property.md)
   Information about the people the child wants to communicate with.
-- [static let id: String](communicationtopic/id.md)
+- [static let id: String](./id.md)
   The topic’s unique identifier.
 
 

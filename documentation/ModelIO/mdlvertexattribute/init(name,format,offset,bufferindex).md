@@ -1,7 +1,8 @@
 # init(name:format:offset:bufferIndex:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a vertex attribute object with the specified property values.
 
@@ -19,20 +20,24 @@ Initializes a vertex attribute object with the specified property values.
 init(name: String, format: MDLVertexFormat, offset: Int, bufferIndex: Int)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name format:(MDLVertexFormat) format offset:(NSUInteger) offset bufferIndex:(NSUInteger) bufferIndex;
+```
+
 #### Return Value
 
 A new vertex attribute object.
 
 #### Discussion
 
-Use this initializer when constructing a new mesh from custom data, or when building a new [`MDLVertexDescriptor`](mdlvertexdescriptor.md) object to change the vertex buffer formatting of an existing mesh. When you load a mesh from a [`MDLAsset`](mdlasset.md) object, Model I/O  automatically creates vertex descriptor and vertex attribute objects describing the mesh’s vertex data.
+Use this initializer when constructing a new mesh from custom data, or when building a new [`MDLVertexDescriptor`](../mdlvertexdescriptor.md) object to change the vertex buffer formatting of an existing mesh. When you load a mesh from a [`MDLAsset`](../mdlasset.md) object, Model I/O  automatically creates vertex descriptor and vertex attribute objects describing the mesh’s vertex data.
 
 ## Parameters
 
 - `name`: An identifier for the semantic use of the vertex attribute.
 - `format`: The format of per-vertex data for the attribute.
 - `offset`: The offset, in bytes, of vertex data for the attribute in a vertex buffer, relative to the start of data for each vertex.
-- `bufferIndex`: The index of the vertex buffer containing data for this attribute in a mesh’s [`vertexBuffers`](mdlmesh/vertexbuffers.md) array.
+- `bufferIndex`: The index of the vertex buffer containing data for this attribute in a mesh’s [`vertexBuffers`](../mdlmesh/vertexbuffers.md) array.
 
 
 ---

@@ -1,7 +1,8 @@
 # isConcatenated
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether this object represents a concatenated QR Code payload consisting of two or more underlying payloads. If YES, then:
 
@@ -18,6 +19,10 @@ Whether this object represents a concatenated QR Code payload consisting of two 
 
 ```swift
 var isConcatenated: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly, getter=isConcatenated) BOOL concatenated;
 ```
 
 #### Discussion

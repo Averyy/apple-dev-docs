@@ -1,7 +1,8 @@
 # setAlpha(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the opacity of the interface object.
 
@@ -12,6 +13,10 @@ Sets the opacity of the interface object.
 
 ```swift
 func setAlpha(_ alpha: CGFloat)
+```
+
+```objc
+- (void) setAlpha:(CGFloat) alpha;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ Changes to the alpha value of an object are animatable.
 
 ## See Also
 
-- [func setHidden(Bool)](wkinterfaceobject/sethidden(_:).md)
+### Hiding and Showing an Object
+- [func setHidden(Bool)](./sethidden%28_%29.md)
   Hides or shows the interface object in your user interface.
 
 

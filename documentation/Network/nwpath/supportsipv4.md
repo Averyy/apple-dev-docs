@@ -1,7 +1,8 @@
 # supportsIPv4
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the path can route IPv4 traffic.
 
@@ -22,13 +23,14 @@ let supportsIPv4: Bool
 
 ## See Also
 
-- [let supportsIPv6: Bool](nwpath/supportsipv6.md)
+### Checking Path Capabilities
+- [let supportsIPv6: Bool](./supportsipv6.md)
   A Boolean indicating whether the path can route IPv6 traffic.
-- [let supportsDNS: Bool](nwpath/supportsdns.md)
+- [let supportsDNS: Bool](./supportsdns.md)
   A Boolean indicating whether the path has a DNS server configured.
-- [var isConstrained: Bool](nwpath/isconstrained.md)
+- [var isConstrained: Bool](./isconstrained.md)
   A Boolean indicating whether the path uses an interface in Low Data Mode.
-- [let isExpensive: Bool](nwpath/isexpensive.md)
+- [let isExpensive: Bool](./isexpensive.md)
   A Boolean indicating whether the path uses an interface that is considered expensive, such as Cellular or a Personal Hotspot.
 
 

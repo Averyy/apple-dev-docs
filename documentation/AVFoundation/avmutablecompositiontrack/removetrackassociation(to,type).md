@@ -1,7 +1,8 @@
 # removeTrackAssociation(to:type:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an association from a composition track.
 
@@ -20,6 +21,10 @@ Removes an association from a composition track.
 func removeTrackAssociation(to compositionTrack: AVCompositionTrack, type trackAssociationType: AVAssetTrack.AssociationType)
 ```
 
+```objc
+- (void) removeTrackAssociationToTrack:(AVCompositionTrack *) compositionTrack type:(AVTrackAssociationType) trackAssociationType;
+```
+
 ## Parameters
 
 - `compositionTrack`: A composition track to remove the association from.
@@ -27,7 +32,8 @@ func removeTrackAssociation(to compositionTrack: AVCompositionTrack, type trackA
 
 ## See Also
 
-- [func addTrackAssociation(to: AVCompositionTrack, type: AVAssetTrack.AssociationType)](avmutablecompositiontrack/addtrackassociation(to:type:).md)
+### Associating tracks
+- [func addTrackAssociation(to: AVCompositionTrack, type: AVAssetTrack.AssociationType)](./addtrackassociation%28to,type%29.md)
   Establishes a track association of a specific type between two tracks.
 
 

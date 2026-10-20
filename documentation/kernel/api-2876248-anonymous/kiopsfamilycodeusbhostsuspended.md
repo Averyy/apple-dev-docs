@@ -1,14 +1,15 @@
 # kIOPSFamilyCodeUSBHostSuspended
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 kIOPSFamilyCodeUSBHostSuspended = iokit_family_err(sub_iokit_usb, 1)
 ```
 

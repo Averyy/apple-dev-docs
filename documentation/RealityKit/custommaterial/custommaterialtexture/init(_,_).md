@@ -1,7 +1,8 @@
 # init(_:_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom texture from a texture resource.
 

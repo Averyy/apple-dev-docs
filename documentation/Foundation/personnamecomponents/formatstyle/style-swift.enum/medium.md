@@ -1,7 +1,8 @@
 # PersonNameComponents.FormatStyle.Style.medium
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Specifies a medium person name components style.
 
@@ -26,11 +27,12 @@ The rawValue of `medium` is 2.
 
 ## See Also
 
-- [PersonNameComponents.FormatStyle.Style.abbreviated](personnamecomponents/formatstyle/style-swift.enum/abbreviated.md)
+### Enumeration Cases
+- [PersonNameComponents.FormatStyle.Style.abbreviated](./abbreviated.md)
   Specifies an abbreviated person name components style.
-- [PersonNameComponents.FormatStyle.Style.long](personnamecomponents/formatstyle/style-swift.enum/long.md)
+- [PersonNameComponents.FormatStyle.Style.long](./long.md)
   Specifies a long person name components style.
-- [PersonNameComponents.FormatStyle.Style.short](personnamecomponents/formatstyle/style-swift.enum/short.md)
+- [PersonNameComponents.FormatStyle.Style.short](./short.md)
   Specifies a short person name components style.
 
 

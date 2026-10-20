@@ -1,7 +1,8 @@
 # kAXSortButtonSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A column heading button in a list or column view.
 
@@ -12,6 +13,10 @@ A column heading button in a list or column view.
 
 ```swift
 var kAXSortButtonSubrole: String { get }
+```
+
+```c
+#define kAXSortButtonSubrole
 ```
 
 

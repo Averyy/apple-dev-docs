@@ -1,7 +1,8 @@
 # AVCapturePhotoOutput.QualityPrioritization.balanced
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Priority is balanced between photo quality and speed of delivery.
 
@@ -18,11 +19,16 @@ Priority is balanced between photo quality and speed of delivery.
 case balanced
 ```
 
+```c
+AVCapturePhotoQualityPrioritizationBalanced
+```
+
 ## See Also
 
-- [AVCapturePhotoOutput.QualityPrioritization.speed](avcapturephotooutput/qualityprioritization/speed.md)
+### Specifying priority
+- [AVCapturePhotoOutput.QualityPrioritization.speed](./speed.md)
   Speed of photo delivery is most important, even at the expense of quality.
-- [AVCapturePhotoOutput.QualityPrioritization.quality](avcapturephotooutput/qualityprioritization/quality.md)
+- [AVCapturePhotoOutput.QualityPrioritization.quality](./quality.md)
   Photo quality is most important, even at the expense of shot-to-shot time.
 
 

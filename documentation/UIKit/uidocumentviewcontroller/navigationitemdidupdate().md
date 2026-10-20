@@ -1,7 +1,8 @@
 # navigationItemDidUpdate()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides an opportunity to customize the navigation items after the navigation bar updates.
 
@@ -15,6 +16,10 @@ Provides an opportunity to customize the navigation items after the navigation b
 
 ```swift
 func navigationItemDidUpdate()
+```
+
+```objc
+- (void) navigationItemDidUpdate;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # titleMenuProvider
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that generates the navigation item’s title menu.
 
@@ -17,9 +18,13 @@ A closure that generates the navigation item’s title menu.
 var titleMenuProvider: (([UIMenuElement]) -> UIMenu?)? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) UIMenu *(^)(NSArray<UIMenuElement *> *) titleMenuProvider;
+```
+
 ## Mentions
 
-- [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
 #### Discussion
 
@@ -41,15 +46,16 @@ navigationItem.titleMenuProvider = { suggestions in
 }
 ```
 
-Before displaying the title menu, UIKit validates each element in the menu you return by traversing the responder chain, starting with the navigation controller’s [`topViewController`](uinavigationcontroller/topviewcontroller.md). For selector-based menu elements, implement your methods on [`topViewController`](uinavigationcontroller/topviewcontroller.md) or farther up in the responder chain if you want those elements to appear in the title menu. For more information, see [`canPerformAction(_:withSender:)`](uiresponder/canperformaction(_:withsender:).md).
+Before displaying the title menu, UIKit validates each element in the menu you return by traversing the responder chain, starting with the navigation controller’s [`topViewController`](../uinavigationcontroller/topviewcontroller.md). For selector-based menu elements, implement your methods on [`topViewController`](../uinavigationcontroller/topviewcontroller.md) or farther up in the responder chain if you want those elements to appear in the title menu. For more information, see [`canPerformAction(_:withSender:)`](../uiresponder/canperformaction%28_,withsender%29.md).
 
-> 💡 **Tip**:  You don’t need to assign a [`titleMenuProvider`](uinavigationitem/titlemenuprovider.md) if you only want to show Rename in your title menu. If you assign a `renameDelegate` without setting a [`titleMenuProvider`](uinavigationitem/titlemenuprovider.md), UIKit automatically generates a title menu containing the Rename menu element only.
+> 💡 **Tip**:  You don’t need to assign a [`titleMenuProvider`](./titlemenuprovider.md) if you only want to show Rename in your title menu. If you assign a `renameDelegate` without setting a [`titleMenuProvider`](./titlemenuprovider.md), UIKit automatically generates a title menu containing the Rename menu element only.
 
 ## See Also
 
-- [var documentProperties: UIDocumentProperties?](uinavigationitem/documentproperties.md)
+### Customizing the title menu
+- [var documentProperties: UIDocumentProperties?](./documentproperties.md)
   An object that provides the document header for the title menu.
-- [class UIDocumentProperties](uidocumentproperties.md)
+- [class UIDocumentProperties](../uidocumentproperties.md)
   Information that UIKit uses to generate a document header for a navigation item’s title menu.
 
 

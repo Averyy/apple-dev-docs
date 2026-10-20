@@ -1,7 +1,8 @@
 # namespace(forPrefix:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the namespace node with a specified prefix.
 
@@ -15,9 +16,13 @@ Returns the namespace node with a specified prefix.
 func namespace(forPrefix name: String) -> XMLNode?
 ```
 
+```objc
+- (NSXMLNode *) namespaceForPrefix:(NSString *) name;
+```
+
 #### Return Value
 
-An [`XMLNode`](xmlnode.md) object of kind [`XMLNode.Kind.namespace`](xmlnode/kind-swift.enum/namespace.md) or `nil` if there is no namespace node with that prefix.
+An [`XMLNode`](../xmlnode.md) object of kind [`XMLNode.Kind.namespace`](../xmlnode/kind-swift.enum/namespace.md) or `nil` if there is no namespace node with that prefix.
 
 ## Parameters
 
@@ -25,15 +30,16 @@ An [`XMLNode`](xmlnode.md) object of kind [`XMLNode.Kind.namespace`](xmlnode/kin
 
 ## See Also
 
-- [func addNamespace(XMLNode)](xmlelement/addnamespace(_:).md)
+### Handling Namespaces
+- [func addNamespace(XMLNode)](./addnamespace%28_%29.md)
   Adds a namespace node to the receiver.
-- [var namespaces: [XMLNode]?](xmlelement/namespaces.md)
+- [var namespaces: [XMLNode]?](./namespaces.md)
   Sets all of the namespace nodes of the receiver at once, replacing any existing namespace nodes.
-- [func removeNamespace(forPrefix: String)](xmlelement/removenamespace(forprefix:).md)
+- [func removeNamespace(forPrefix: String)](./removenamespace%28forprefix%29.md)
   Removes a namespace node that is identified by a given prefix.
-- [func resolveNamespace(forName: String) -> XMLNode?](xmlelement/resolvenamespace(forname:).md)
+- [func resolveNamespace(forName: String) -> XMLNode?](./resolvenamespace%28forname%29.md)
   Returns the namespace node with the prefix matching the given qualified name.
-- [func resolvePrefix(forNamespaceURI: String) -> String?](xmlelement/resolveprefix(fornamespaceuri:).md)
+- [func resolvePrefix(forNamespaceURI: String) -> String?](./resolveprefix%28fornamespaceuri%29.md)
   Returns the prefix associated with the specified URI.
 
 

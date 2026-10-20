@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.A
 
 # mlx.nn.AvgPool1d
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.AvgPool1d.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.AvgPool1d
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.AvgPool1d
-
 **class AvgPool1d(*kernel_size: int | Tuple[int]*, *stride: int | Tuple[int] | None = None*, *padding: int | Tuple[int] = 0*)**
 : Applies 1-dimensional average pooling.
 Spatially downsamples the input by taking the average of a sliding window
@@ -48,12 +21,13 @@ the input. The padding amount is applied to both sides of the spatial
 axis. Default: `0`.
 
 Examples
->>> import mlx.core as mx
->>> import mlx.nn.layers as nn
->>> x = mx.random.normal(shape=(4, 16, 5))
->>> pool = nn.AvgPool1d(kernel_size=2, stride=2)
->>> pool(x)
+
+  ```
+  >>> import mlx.core as mx
+  >>> import mlx.nn.layers as nn
+  >>> x = mx.random.normal(shape=(4, 16, 5))
+  >>> pool = nn.AvgPool1d(kernel_size=2, stride=2)
+  >>> pool(x)
+  ```
 
 Methods
-
-** Contents

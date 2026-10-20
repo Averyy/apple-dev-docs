@@ -2,6 +2,7 @@
 
 **Framework**: TabularData  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 Retrieves an element at a position in the column type.
@@ -27,7 +28,8 @@ subscript(position: Int) -> Any? { get }
 
 ## See Also
 
-- [subscript(Range<Int>) -> AnyColumnSlice](anycolumnprotocol/subscript(_:)-81v4q.md)
+### Retrieving Elements
+- [subscript(Range<Int>) -> AnyColumnSlice](./subscript%28_%29-81v4q.md)
   Retrieves a contiguous subrange of the column type’s elements.
 
 

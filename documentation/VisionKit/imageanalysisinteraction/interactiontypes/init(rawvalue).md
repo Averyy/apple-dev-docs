@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: VisionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance from a raw type.
 
@@ -23,7 +24,8 @@ init(rawValue: UInt)
 
 ## See Also
 
-- [var rawValue: UInt](imageanalysisinteraction/interactiontypes/rawvalue.md)
+### Creating an interaction
+- [var rawValue: UInt](./rawvalue.md)
   The corresponding value of the raw type.
 
 

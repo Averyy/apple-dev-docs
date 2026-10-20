@@ -1,7 +1,8 @@
 # errSSLDecodeError
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Decode failed.
 
@@ -18,6 +19,10 @@ Decode failed.
 
 ```swift
 var errSSLDecodeError: OSStatus { get }
+```
+
+```c
+errSSLDecodeError
 ```
 
 

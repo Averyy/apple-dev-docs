@@ -1,7 +1,8 @@
 # IntentPerson.Handle.Label
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A location description that applies to the handle’s content, for example a work or home phone number.
 
@@ -11,7 +12,7 @@ A location description that applies to the handle’s content, for example a wor
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,33 +24,34 @@ enum Label
 ## Topics
 
 ### Getting the handle labels
-- [IntentPerson.Handle.Label.home](intentperson/handle-swift.struct/label-swift.enum/home.md)
-- [IntentPerson.Handle.Label.homeFax](intentperson/handle-swift.struct/label-swift.enum/homefax.md)
-- [IntentPerson.Handle.Label.iPhone](intentperson/handle-swift.struct/label-swift.enum/iphone.md)
-- [IntentPerson.Handle.Label.main](intentperson/handle-swift.struct/label-swift.enum/main.md)
-- [IntentPerson.Handle.Label.mobile](intentperson/handle-swift.struct/label-swift.enum/mobile.md)
-- [IntentPerson.Handle.Label.other](intentperson/handle-swift.struct/label-swift.enum/other.md)
-- [IntentPerson.Handle.Label.pager](intentperson/handle-swift.struct/label-swift.enum/pager.md)
-- [IntentPerson.Handle.Label.school](intentperson/handle-swift.struct/label-swift.enum/school.md)
-- [IntentPerson.Handle.Label.work](intentperson/handle-swift.struct/label-swift.enum/work.md)
-- [IntentPerson.Handle.Label.workFax](intentperson/handle-swift.struct/label-swift.enum/workfax.md)
-- [IntentPerson.Handle.Label.custom(_:)](intentperson/handle-swift.struct/label-swift.enum/custom(_:).md)
+- [IntentPerson.Handle.Label.home](./label-swift.enum/home.md)
+- [IntentPerson.Handle.Label.homeFax](./label-swift.enum/homefax.md)
+- [IntentPerson.Handle.Label.iPhone](./label-swift.enum/iphone.md)
+- [IntentPerson.Handle.Label.main](./label-swift.enum/main.md)
+- [IntentPerson.Handle.Label.mobile](./label-swift.enum/mobile.md)
+- [IntentPerson.Handle.Label.other](./label-swift.enum/other.md)
+- [IntentPerson.Handle.Label.pager](./label-swift.enum/pager.md)
+- [IntentPerson.Handle.Label.school](./label-swift.enum/school.md)
+- [IntentPerson.Handle.Label.work](./label-swift.enum/work.md)
+- [IntentPerson.Handle.Label.workFax](./label-swift.enum/workfax.md)
+- [IntentPerson.Handle.Label.custom(_:)](./label-swift.enum/custom%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var label: IntentPerson.Handle.Label](intentperson/handle-swift.struct/label-swift.property.md)
+### Getting the handle’s label
+- [var label: IntentPerson.Handle.Label](./label-swift.property.md)
 
 
 ---

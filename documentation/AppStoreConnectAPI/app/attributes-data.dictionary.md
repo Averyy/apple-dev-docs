@@ -1,7 +1,8 @@
 # App.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an Apps resource.
 
@@ -10,15 +11,15 @@ Attributes that describe an Apps resource.
 
 ## Declaration
 
-```swift
+```
 object App.Attributes
 ```
 
 ## Mentions
 
-- [App Store Connect API 1.6 release notes](app-store-connect-api-1-6-release-notes.md)
-- [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
-- [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+- [App Store Connect API 1.6 release notes](../app-store-connect-api-1-6-release-notes.md)
+- [App Store Connect API 4.0 release notes](../app-store-connect-api-4-0-release-notes.md)
+- [App Store Connect API 4.1 release notes](../app-store-connect-api-4-1-release-notes.md)
 
 ## Properties
 
@@ -26,7 +27,7 @@ object App.Attributes
 - `name` (string): The name of your app as it will appear in the App Store. The maximum length is 30 characters.
 - `primaryLocale` (string): The primary locale for your app. If localized app information isn’t available in an App Store territory, the information from your primary language is used instead.
 - `sku` (string): A unique ID for your app that is not visible on the App Store.
-- `contentRightsDeclaration` (string)
+- `contentRightsDeclaration` (string): **Allowed Values**: `DOES_NOT_USE_THIRD_PARTY_CONTENT`, `USES_THIRD_PARTY_CONTENT`
 - `isOrEverWasMadeForKids` (boolean)
 - `subscriptionStatusUrl` (uri)
 - `subscriptionStatusUrlForSandbox` (uri)
@@ -37,9 +38,11 @@ object App.Attributes
 
 ## See Also
 
-- [Apps](apps.md)
+### Related Documentation
+- [Apps](../apps.md)
   Manage your apps in App Store Connect.
-- [object App.Relationships](app/relationships-data.dictionary.md)
+### Objects
+- [object App.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

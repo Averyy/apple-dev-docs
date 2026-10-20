@@ -7,7 +7,7 @@ Adds a keyframe rule to the collection of keyframes.
 
 ## Declaration
 
-```swift
+```
 void insertRule (in DOMString rule);
 ```
 
@@ -17,9 +17,10 @@ void insertRule (in DOMString rule);
 
 ## See Also
 
-- [deleteRule](webkitcsskeyframesrule/1807097-deleterule.md)
+### Changing Rules
+- [deleteRule](./api-1807097-deleterule.md)
   Removes a keyframe rule from the collection of keyframes.
-- [findRule](webkitcsskeyframesrule/1807100-findrule.md)
+- [findRule](./api-1807100-findrule.md)
   Returns the keyframe rule for the specified selector.
 
 

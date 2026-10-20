@@ -1,7 +1,8 @@
 # dequeueConfiguredReusableSupplementary(using:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dequeues a configured reusable supplementary view object.
 
@@ -10,7 +11,7 @@ Dequeues a configured reusable supplementary view object.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,18 +26,19 @@ A configured reusable supplementary view object.
 
 ## Parameters
 
-- `registration`: The supplementary registration for configuring the supplementary view object. See [`UICollectionView.SupplementaryRegistration`](uicollectionview/supplementaryregistration.md).
+- `registration`: The supplementary registration for configuring the supplementary view object. See [`UICollectionView.SupplementaryRegistration`](./supplementaryregistration.md).
 - `indexPath`: The index path that specifies the location of the supplementary view in the collection view.
 
 ## See Also
 
-- [UICollectionView.SupplementaryRegistration](uicollectionview/supplementaryregistration.md)
+### Creating headers and footers
+- [UICollectionView.SupplementaryRegistration](./supplementaryregistration.md)
   A registration for the collection view’s supplementary views.
-- [func register(AnyClass?, forSupplementaryViewOfKind: String, withReuseIdentifier: String)](uicollectionview/register(_:forsupplementaryviewofkind:withreuseidentifier:)-661io.md)
+- [func register(AnyClass?, forSupplementaryViewOfKind: String, withReuseIdentifier: String)](./register%28_,forsupplementaryviewofkind,withreuseidentifier%29-661io.md)
   Registers a class for use in creating supplementary views for the collection view.
-- [func register(UINib?, forSupplementaryViewOfKind: String, withReuseIdentifier: String)](uicollectionview/register(_:forsupplementaryviewofkind:withreuseidentifier:)-9hn73.md)
+- [func register(UINib?, forSupplementaryViewOfKind: String, withReuseIdentifier: String)](./register%28_,forsupplementaryviewofkind,withreuseidentifier%29-9hn73.md)
   Registers a nib file for use in creating supplementary views for the collection view.
-- [func dequeueReusableSupplementaryView(ofKind: String, withReuseIdentifier: String, for: IndexPath) -> UICollectionReusableView](uicollectionview/dequeuereusablesupplementaryview(ofkind:withreuseidentifier:for:).md)
+- [func dequeueReusableSupplementaryView(ofKind: String, withReuseIdentifier: String, for: IndexPath) -> UICollectionReusableView](./dequeuereusablesupplementaryview%28ofkind,withreuseidentifier,for%29.md)
   Dequeues a reusable supplementary view located by its identifier and kind.
 
 

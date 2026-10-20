@@ -1,7 +1,8 @@
 # showStatus(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func showStatus(with params: MTRMediaInputClusterShowInputStatusParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func showStatus(with params: MTRMediaInputClusterShowInputStatusParams?) async throws
+```
+
+```objc
+- (void) showInputStatusWithParams:(MTRMediaInputClusterShowInputStatusParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

@@ -1,7 +1,8 @@
 # dateRange(endingAt:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A time data source that produces `min(date, Date.now)..<date`.
 

@@ -1,7 +1,8 @@
 # withArray
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - DriverKit 21.0+
@@ -9,7 +10,15 @@
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```c
+static OSSetPtr withArray(const OSArray *array, uint32_t capacity);
+```
+
+*macOS*
+
+```c
 static OSPtr<OSSet> withArray(const OSArray *array, unsigned int capacity);
 ```
 

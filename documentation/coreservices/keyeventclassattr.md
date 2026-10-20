@@ -1,9 +1,10 @@
 # keyEventClassAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Event class of an Apple event. See [`AEAddressDesc`](aeaddressdesc.md).
+Event class of an Apple event. See [`AEAddressDesc`](./aeaddressdesc.md).
 
 **Availability**:
 - Mac Catalyst 13.0+

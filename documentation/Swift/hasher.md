@@ -1,7 +1,8 @@
 # Hasher
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The universal hash function used by `Set` and `Dictionary`.
 
@@ -39,28 +40,29 @@ Within the execution of a Swift program, `Hasher` guarantees that finalizing it 
 ## Topics
 
 ### Creating a Hasher
-- [init()](hasher/init.md)
+- [init()](./hasher/init%28%29.md)
   Creates a new hasher.
 ### Adding Values
-- [func combine<H>(borrowing H)](hasher/combine(_:).md)
+- [func combine<H>(borrowing H)](./hasher/combine%28_%29.md)
   Adds the given value to this hasher, mixing its essential parts into the hasher state.
-- [func combine(bytes: UnsafeRawBufferPointer)](hasher/combine(bytes:).md)
+- [func combine(bytes: UnsafeRawBufferPointer)](./hasher/combine%28bytes%29.md)
   Adds the contents of the given buffer to this hasher, mixing it into the hasher state.
 ### Finalizing a Hasher
-- [func finalize() -> Int](hasher/finalize.md)
+- [func finalize() -> Int](./hasher/finalize%28%29.md)
   Finalizes the hasher state and returns the hash value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Copyable](./copyable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol Hashable](hashable.md)
+### Sets and Dictionaries
+- [protocol Hashable](./hashable.md)
   A type that can be hashed into a `Hasher` to produce an integer hash value.
 
 

@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a document interaction controller with the specified URL.
 
@@ -17,13 +18,17 @@ Creates a document interaction controller with the specified URL.
 init(url: URL)
 ```
 
+```objc
++ (UIDocumentInteractionController *) interactionControllerWithURL:(NSURL *) url;
+```
+
 #### Return Value
 
 A new document interaction controller object.
 
 ## Parameters
 
-- `url`: A URL that specifies the location of the desired document. This parameter is retained. It can be changed later by modifying the [`url`](uidocumentinteractioncontroller/url.md) property.
+- `url`: A URL that specifies the location of the desired document. This parameter is retained. It can be changed later by modifying the [`url`](./url.md) property.
 
 
 ---

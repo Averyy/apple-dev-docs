@@ -1,7 +1,8 @@
 # scaleFactor
 
 **Framework**: PDFKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current scale factor for the view.
 
@@ -19,19 +20,24 @@ The current scale factor for the view.
 var scaleFactor: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat scaleFactor;
+```
+
 ## See Also
 
-- [var scaleFactorForSizeToFit: CGFloat](pdfview/scalefactorforsizetofit.md)
+### Scaling the View
+- [var scaleFactorForSizeToFit: CGFloat](./scalefactorforsizetofit.md)
   The “size to fit” scale factor that `autoScales` would use for scaling the current document and layout.
-- [var maxScaleFactor: CGFloat](pdfview/maxscalefactor.md)
+- [var maxScaleFactor: CGFloat](./maxscalefactor.md)
   The maximum scaling factor for the PDF document.
-- [var minScaleFactor: CGFloat](pdfview/minscalefactor.md)
+- [var minScaleFactor: CGFloat](./minscalefactor.md)
   The minimum scaling factor for the PDF document.
-- [var autoScales: Bool](pdfview/autoscales.md)
+- [var autoScales: Bool](./autoscales.md)
   A Boolean value indicating whether autoscaling is set.
-- [func rowSize(for: PDFPage) -> CGSize](pdfview/rowsize(for:).md)
+- [func rowSize(for: PDFPage) -> CGSize](./rowsize%28for%29.md)
   Returns the size needed to display a row of the current document page.
-- [Zoom Operations](zoom-operations.md)
+- [Zoom Operations](../zoom-operations.md)
   Zoom operations for a PDF View.
 
 

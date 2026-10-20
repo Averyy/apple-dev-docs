@@ -1,7 +1,8 @@
 # range
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range of a random number to use as input to the transformer.
 

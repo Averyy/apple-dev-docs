@@ -1,12 +1,15 @@
 # circularTemplate
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The circular template to display.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) to create complications. For more information, see Migrating to WidgetKit.
 
 ## Declaration
 
@@ -15,9 +18,14 @@ The circular template to display.
 var circularTemplate: CLKComplicationTemplateGraphicCircular { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKComplicationTemplateGraphicCircular * circularTemplate;
+```
+
 ## See Also
 
-- [var textProvider: CLKTextProvider?](clkcomplicationtemplategraphicbezelcirculartext/textprovider.md)
+### Setting the Complication Data
+- [var textProvider: CLKTextProvider?](./textprovider.md)
   The text to display along the bezel.
 
 

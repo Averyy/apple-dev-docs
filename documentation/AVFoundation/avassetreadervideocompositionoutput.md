@@ -1,7 +1,8 @@
 # AVAssetReaderVideoCompositionOutput
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that reads composited video frames from one or more tracks of an asset.
 
@@ -19,51 +20,56 @@ An object that reads composited video frames from one or more tracks of an asset
 class AVAssetReaderVideoCompositionOutput
 ```
 
+```objc
+@interface AVAssetReaderVideoCompositionOutput : AVAssetReaderOutput
+```
+
 ## Topics
 
 ### Creating a video composition output
-- [init(videoTracks: [AVAssetTrack], videoSettings: [String : Any]?)](avassetreadervideocompositionoutput/init(videotracks:videosettings:).md)
+- [init(videoTracks: [AVAssetTrack], videoSettings: [String : Any]?)](./avassetreadervideocompositionoutput/init%28videotracks,videosettings%29.md)
   Creates an object that reads composited video frames from the specified video tracks.
 ### Configuring video settings
-- [var videoComposition: AVVideoComposition?](avassetreadervideocompositionoutput/videocomposition.md)
+- [var videoComposition: AVVideoComposition?](./avassetreadervideocompositionoutput/videocomposition.md)
   The video composition to use for the output.
-- [var customVideoCompositor: (any AVVideoCompositing)?](avassetreadervideocompositionoutput/customvideocompositor.md)
+- [var customVideoCompositor: (any AVVideoCompositing)?](./avassetreadervideocompositionoutput/customvideocompositor.md)
   A custom video compositor for the output.
 ### Inspecting an output
-- [var videoTracks: [AVAssetTrack]](avassetreadervideocompositionoutput/videotracks.md)
+- [var videoTracks: [AVAssetTrack]](./avassetreadervideocompositionoutput/videotracks.md)
   The tracks from which the output reads the composited video.
-- [var videoSettings: [String : Any]?](avassetreadervideocompositionoutput/videosettings.md)
+- [var videoSettings: [String : Any]?](./avassetreadervideocompositionoutput/videosettings.md)
   The video settings that the output uses.
 
 ## Relationships
 
 ### Inherits From
-- [AVAssetReaderOutput](avassetreaderoutput.md)
+- [AVAssetReaderOutput](./avassetreaderoutput.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Reading multiview 3D video files](reading-multiview-3d-video-files.md)
+### Media reading
+- [Reading multiview 3D video files](./reading-multiview-3d-video-files.md)
   Render single images for the left eye and right eye from a multiview High Efficiency Video Coding format file by reading individual video frames.
-- [class AVAssetReader](avassetreader.md)
+- [class AVAssetReader](./avassetreader.md)
   An object that reads media data from an asset.
-- [class AVAssetReaderOutput](avassetreaderoutput.md)
+- [class AVAssetReaderOutput](./avassetreaderoutput.md)
   An abstract class that defines the interface to read media samples from an asset reader.
-- [class AVAssetReaderTrackOutput](avassetreadertrackoutput.md)
+- [class AVAssetReaderTrackOutput](./avassetreadertrackoutput.md)
   An object that reads media data from a single track of an asset.
-- [class AVAssetReaderAudioMixOutput](avassetreaderaudiomixoutput.md)
+- [class AVAssetReaderAudioMixOutput](./avassetreaderaudiomixoutput.md)
   An object that reads audio samples that result from mixing audio from one or more tracks.
-- [class AVAssetReaderSampleReferenceOutput](avassetreadersamplereferenceoutput.md)
+- [class AVAssetReaderSampleReferenceOutput](./avassetreadersamplereferenceoutput.md)
   An object that reads sample references from an asset track.
-- [class AVAssetReaderOutputMetadataAdaptor](avassetreaderoutputmetadataadaptor.md)
+- [class AVAssetReaderOutputMetadataAdaptor](./avassetreaderoutputmetadataadaptor.md)
   An object that creates timed metadata group objects for an asset track.
 
 

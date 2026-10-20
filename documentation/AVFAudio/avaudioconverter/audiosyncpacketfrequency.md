@@ -1,7 +1,8 @@
 # audioSyncPacketFrequency
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -18,6 +19,10 @@
 var audioSyncPacketFrequency: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSInteger audioSyncPacketFrequency;
+```
+
 #### Discussion
 
 Number of packets between consecutive sync packets.
@@ -26,10 +31,11 @@ A sync packet is an independently-decodable packet that completely refreshes the
 
 ## See Also
 
-- [var contentSource: AVAudioContentSource](avaudioconverter/contentsource.md)
-- [enum AVAudioContentSource](avaudiocontentsource.md)
-- [var dynamicRangeControlConfiguration: AVAudioDynamicRangeControlConfiguration](avaudioconverter/dynamicrangecontrolconfiguration.md)
-- [enum AVAudioDynamicRangeControlConfiguration](avaudiodynamicrangecontrolconfiguration.md)
+### Managing packet dependencies
+- [var contentSource: AVAudioContentSource](./contentsource.md)
+- [enum AVAudioContentSource](../avaudiocontentsource.md)
+- [var dynamicRangeControlConfiguration: AVAudioDynamicRangeControlConfiguration](./dynamicrangecontrolconfiguration.md)
+- [enum AVAudioDynamicRangeControlConfiguration](../avaudiodynamicrangecontrolconfiguration.md)
 
 
 ---

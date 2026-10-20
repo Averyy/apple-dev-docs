@@ -1,7 +1,8 @@
 # fillOpacity
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The opacity of the fill color.
 
@@ -10,7 +11,7 @@ The opacity of the fill color.
 
 ## Declaration
 
-```swift
+```
 fillOpacity?: number;
 ```
 
@@ -20,9 +21,10 @@ The value of this property can be in the range of `0` (fully transparent) to `1`
 
 ## See Also
 
-- [fillColor](styleconstructoroptions/fillcolor.md)
+### Setting fill styles
+- [fillColor](./fillcolor.md)
   The fill color of a shape.
-- [fillRule](styleconstructoroptions/fillrule.md)
+- [fillRule](./fillrule.md)
   A rule for determining whether a point is inside or outside a polygon.
 
 

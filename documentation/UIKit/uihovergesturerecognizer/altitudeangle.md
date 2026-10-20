@@ -1,7 +1,8 @@
 # altitudeAngle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that represents the altitude angle of the hovering pointing device.
 
@@ -17,19 +18,24 @@ A value that represents the altitude angle of the hovering pointing device.
 var altitudeAngle: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat altitudeAngle;
+```
+
 #### Discussion
 
 This value is `0` for devices that don’t support altitude.
 
 ## See Also
 
-- [func azimuthAngle(in: UIView?) -> CGFloat](uihovergesturerecognizer/azimuthangle(in:).md)
+### Supporting Apple Pencil hover
+- [func azimuthAngle(in: UIView?) -> CGFloat](./azimuthangle%28in%29.md)
   A value that represents the azimuth angle of the hovering pointing device in the specified view.
-- [func azimuthUnitVector(in: UIView?) -> CGVector](uihovergesturerecognizer/azimuthunitvector(in:).md)
+- [func azimuthUnitVector(in: UIView?) -> CGVector](./azimuthunitvector%28in%29.md)
   A value that represents the azimuth unit vector of the hovering pointing device in the specified view.
-- [var rollAngle: CGFloat](uihovergesturerecognizer/rollangle.md)
+- [var rollAngle: CGFloat](./rollangle.md)
   A value that represents the current barrel-roll angle of Apple Pencil.
-- [var zOffset: CGFloat](uihovergesturerecognizer/zoffset.md)
+- [var zOffset: CGFloat](./zoffset.md)
   A value that represents the normalized distance between the screen and a hovering pointing device, such as Apple Pencil.
 
 

@@ -1,7 +1,8 @@
 # SurfaceSnappingInfo.AuthorizationStatus.authorized
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user has authorized sharing information about their surroundings.
 

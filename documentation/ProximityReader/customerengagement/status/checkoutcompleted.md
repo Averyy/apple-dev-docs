@@ -1,7 +1,8 @@
 # CustomerEngagement.Status.checkoutCompleted
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A screen indicating the checkout is complete.
 

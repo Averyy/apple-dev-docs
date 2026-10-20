@@ -1,7 +1,8 @@
 # NSLogUncaughtSystemExceptionMask
 
 **Framework**: Exception Handling  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The exception handler logs uncaught system exceptions.
 
@@ -15,26 +16,31 @@ The exception handler logs uncaught system exceptions.
 var NSLogUncaughtSystemExceptionMask: Int { get }
 ```
 
+```c
+NSLogUncaughtSystemExceptionMask
+```
+
 ## See Also
 
-- [var NSLogUncaughtExceptionMask: Int](nsloguncaughtexceptionmask.md)
+### Constants
+- [var NSLogUncaughtExceptionMask: Int](./nsloguncaughtexceptionmask.md)
   The exception handler logs uncaught exceptions.
-- [var NSHandleUncaughtExceptionMask: Int](nshandleuncaughtexceptionmask.md)
+- [var NSHandleUncaughtExceptionMask: Int](./nshandleuncaughtexceptionmask.md)
   The exception handler handles uncaught exceptions by terminating the thread in which they occur.
-- [var NSHandleUncaughtSystemExceptionMask: Int](nshandleuncaughtsystemexceptionmask.md)
-  The exception handler handles uncaught system exceptions by converting them to [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) objects containing a stack trace.
-- [var NSLogUncaughtRuntimeErrorMask: Int](nsloguncaughtruntimeerrormask.md)
+- [var NSHandleUncaughtSystemExceptionMask: Int](./nshandleuncaughtsystemexceptionmask.md)
+  The exception handler handles uncaught system exceptions by converting them to [`NSException`](../Foundation/nsexception.md) objects containing a stack trace.
+- [var NSLogUncaughtRuntimeErrorMask: Int](./nsloguncaughtruntimeerrormask.md)
   The exception handler logs uncaught runtime errors.
-- [var NSHandleUncaughtRuntimeErrorMask: Int](nshandleuncaughtruntimeerrormask.md)
-  The exception handler handles uncaught runtime errors by converting them to [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) objects containing a stack trace.
-- [var NSLogTopLevelExceptionMask: Int](nslogtoplevelexceptionmask.md)
+- [var NSHandleUncaughtRuntimeErrorMask: Int](./nshandleuncaughtruntimeerrormask.md)
+  The exception handler handles uncaught runtime errors by converting them to [`NSException`](../Foundation/nsexception.md) objects containing a stack trace.
+- [var NSLogTopLevelExceptionMask: Int](./nslogtoplevelexceptionmask.md)
   The exception handler logs exceptions that would be caught by the top-level handler.
-- [var NSHandleTopLevelExceptionMask: Int](nshandletoplevelexceptionmask.md)
-  The exception handler handles exceptions caught by the top-level handler by converting them to [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) objects containing a stack trace.
-- [var NSLogOtherExceptionMask: Int](nslogotherexceptionmask.md)
+- [var NSHandleTopLevelExceptionMask: Int](./nshandletoplevelexceptionmask.md)
+  The exception handler handles exceptions caught by the top-level handler by converting them to [`NSException`](../Foundation/nsexception.md) objects containing a stack trace.
+- [var NSLogOtherExceptionMask: Int](./nslogotherexceptionmask.md)
   The exception handler logs exceptions caught by handlers lower than the top-level handler.
-- [var NSHandleOtherExceptionMask: Int](nshandleotherexceptionmask.md)
-  The exception handler handles exceptions caught by handlers lower than the top-level handler by converting them to [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) objects containing a stack trace.
+- [var NSHandleOtherExceptionMask: Int](./nshandleotherexceptionmask.md)
+  The exception handler handles exceptions caught by handlers lower than the top-level handler by converting them to [`NSException`](../Foundation/nsexception.md) objects containing a stack trace.
 
 
 ---

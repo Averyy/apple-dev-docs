@@ -1,14 +1,15 @@
 # RelativePointerEventCallback
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 typedef void (*RelativePointerEventCallback)(OSObject *target, int buttons, int dx, int dy, AbsoluteTime ts, OSObject *sender, void *refcon);
 ```
 

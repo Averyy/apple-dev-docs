@@ -1,7 +1,8 @@
 # profileIdentifier
 
 **Framework**: Screen Time  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional identifier for the current browsing profile.
 
@@ -15,6 +16,10 @@ An optional identifier for the current browsing profile.
 
 ```swift
 var profileIdentifier: STWebHistory.ProfileIdentifier? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) STWebHistoryProfileIdentifier profileIdentifier;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(bundleIdentifier:)
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a representation of an app using its bundle identifier.
 
@@ -17,6 +18,10 @@ Creates a representation of an app using its bundle identifier.
 init(bundleIdentifier: String)
 ```
 
+```objc
+- (instancetype) initWithBundleIdentifier:(NSString *) bundleIdentifier;
+```
+
 #### Discussion
 
 You can get the bundle identifier for an app using the `codesign` command line utility:
@@ -25,7 +30,7 @@ You can get the bundle identifier for an app using the `codesign` command line u
 % codesign -v -d /Applications/MyApp.app
 ```
 
-However, it’s typically more secure to specify both the bundle and team identifiers when creating an app representation using [`init(bundleIdentifier:teamIdentifier:)`](aeassessmentapplication/init(bundleidentifier:teamidentifier:).md).
+However, it’s typically more secure to specify both the bundle and team identifiers when creating an app representation using [`init(bundleIdentifier:teamIdentifier:)`](./init%28bundleidentifier,teamidentifier%29.md).
 
 ## Parameters
 
@@ -33,11 +38,12 @@ However, it’s typically more secure to specify both the bundle and team identi
 
 ## See Also
 
-- [init(bundleIdentifier: String, teamIdentifier: String?)](aeassessmentapplication/init(bundleidentifier:teamidentifier:).md)
+### Creating an assessment application
+- [init(bundleIdentifier: String, teamIdentifier: String?)](./init%28bundleidentifier,teamidentifier%29.md)
   Creates a representation of an app using its bundle and team identifiers.
-- [var bundleIdentifier: String](aeassessmentapplication/bundleidentifier.md)
+- [var bundleIdentifier: String](./bundleidentifier.md)
   The bundle identifier of the app.
-- [var teamIdentifier: String?](aeassessmentapplication/teamidentifier.md)
+- [var teamIdentifier: String?](./teamidentifier.md)
   The team identifier of the app.
 
 

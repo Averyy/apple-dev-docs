@@ -1,12 +1,15 @@
 # widgetList(_:shouldReorderRow:)
 
 **Framework**: Notification Center  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to allow or prohibit the specified row to be moved to a new location in the list.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
@@ -14,13 +17,17 @@ Asks the delegate to allow or prohibit the specified row to be moved to a new lo
 optional func widgetList(_ list: NCWidgetListViewController, shouldReorderRow row: Int) -> Bool
 ```
 
+```objc
+- (BOOL) widgetList:(NCWidgetListViewController *) list shouldReorderRow:(NSUInteger) row;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if specified row can be moved, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if specified row can be moved, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-List item reordering is not enabled unless the delegate implements this method and [`widgetList(_:didReorderRow:toRow:)`](ncwidgetlistviewdelegate/widgetlist(_:didreorderrow:torow:).md). Returning [`false`](https://developer.apple.com/documentation/swift/false) prohibits `row` from being moved. Returning YES allows `row` to be moved, and the delegate will be called again when the item that `row` represents is relocated in the list view controller’s [`contents`](ncwidgetlistviewcontroller/contents.md) array.
+List item reordering is not enabled unless the delegate implements this method and [`widgetList(_:didReorderRow:toRow:)`](./widgetlist%28_,didreorderrow,torow%29.md). Returning [`false`](../../Swift/false.md) prohibits `row` from being moved. Returning YES allows `row` to be moved, and the delegate will be called again when the item that `row` represents is relocated in the list view controller’s [`contents`](../ncwidgetlistviewcontroller/contents.md) array.
 
 ## Parameters
 
@@ -29,7 +36,8 @@ List item reordering is not enabled unless the delegate implements this method a
 
 ## See Also
 
-- [func widgetList(NCWidgetListViewController, didReorderRow: Int, toRow: Int)](ncwidgetlistviewdelegate/widgetlist(_:didreorderrow:torow:).md)
+### Reordering List Rows
+- [func widgetList(NCWidgetListViewController, didReorderRow: Int, toRow: Int)](./widgetlist%28_,didreorderrow,torow%29.md)
   Tells the delegate that the specified row was moved to a new location.
 
 

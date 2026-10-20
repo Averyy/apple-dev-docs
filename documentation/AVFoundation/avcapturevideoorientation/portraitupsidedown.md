@@ -1,15 +1,18 @@
 # AVCaptureVideoOrientation.portraitUpsideDown
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that video should be oriented vertically, top at the bottom.
 
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 14.0+
-- macOS 10.7+
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 10.7+ - Deprecated in 14.0
+
+> **Deprecated**: Use AVCaptureDeviceRotationCoordinator instead
 
 ## Declaration
 
@@ -17,13 +20,18 @@ Indicates that video should be oriented vertically, top at the bottom.
 case portraitUpsideDown
 ```
 
+```c
+AVCaptureVideoOrientationPortraitUpsideDown
+```
+
 ## See Also
 
-- [AVCaptureVideoOrientation.portrait](avcapturevideoorientation/portrait.md)
+### Constants
+- [AVCaptureVideoOrientation.portrait](./portrait.md)
   Indicates that video should be oriented vertically, top at the top.
-- [AVCaptureVideoOrientation.landscapeRight](avcapturevideoorientation/landscaperight.md)
+- [AVCaptureVideoOrientation.landscapeRight](./landscaperight.md)
   Indicates that video should be oriented horizontally, top on the left.
-- [AVCaptureVideoOrientation.landscapeLeft](avcapturevideoorientation/landscapeleft.md)
+- [AVCaptureVideoOrientation.landscapeLeft](./landscapeleft.md)
   Indicates that video should be oriented horizontally, top on the right.
 
 

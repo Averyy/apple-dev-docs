@@ -1,7 +1,8 @@
 # title
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this source object.
 
@@ -19,13 +20,18 @@ The name of this source object.
 var title: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * title;
+```
+
 ## See Also
 
-- [enum EKSourceType](eksourcetype.md)
+### Accessing Source Properties
+- [enum EKSourceType](../eksourcetype.md)
   The type of source object.
-- [var sourceIdentifier: String](eksource/sourceidentifier.md)
+- [var sourceIdentifier: String](./sourceidentifier.md)
   A unique identifier for the source object.
-- [var sourceType: EKSourceType](eksource/sourcetype.md)
+- [var sourceType: EKSourceType](./sourcetype.md)
   The type of this source object.
 
 

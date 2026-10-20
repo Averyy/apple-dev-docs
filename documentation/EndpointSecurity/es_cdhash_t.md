@@ -1,11 +1,12 @@
 # es_cdhash_t
 
 **Framework**: Endpoint Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 typealias es_cdhash_t = (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8)
 ```
 
+```c
+typedef uint8_t[20] es_cdhash_t;
+```
+
 ## See Also
 
-- [typealias es_graphical_session_id_t](es_graphical_session_id_t.md)
-- [typealias es_sha256_t](es_sha256_t.md)
+### Data Types
+- [typealias es_graphical_session_id_t](./es_graphical_session_id_t.md)
+- [typealias es_sha256_t](./es_sha256_t.md)
 
 
 ---

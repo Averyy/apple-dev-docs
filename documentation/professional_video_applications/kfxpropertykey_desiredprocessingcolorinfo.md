@@ -1,7 +1,8 @@
 # kFxPropertyKey_DesiredProcessingColorInfo
 
 **Framework**: Professional Video Applications  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that determines whether your plug-in renders in linear or gamma-corrected color space.
 
@@ -14,21 +15,26 @@ A key that determines whether your plug-in renders in linear or gamma-corrected 
 var kFxPropertyKey_DesiredProcessingColorInfo: String { get }
 ```
 
+```c
+#define kFxPropertyKey_DesiredProcessingColorInfo
+```
+
 ## Mentions
 
-- [Managing color space and gamut in plug-ins](../professional-video-applications/managing-color-space-and-gamut-in-plug-ins.md)
+- [Managing color space and gamut in plug-ins](https://developer.apple.com/documentation/professional-video-applications/managing-color-space-and-gamut-in-plug-ins)
 
 #### Discussion
 
-The value for this key is an `NSUInteger` indicating the color space that the plug-in will process in. This color space is expressed as an [`FxImageColorInfo`](fximagecolorinfo.md) constant. If a plug-in includes this property, all inputs are in the specified color space, and the output must also be in this color space.
+The value for this key is an `NSUInteger` indicating the color space that the plug-in will process in. This color space is expressed as an [`FxImageColorInfo`](./fximagecolorinfo.md) constant. If a plug-in includes this property, all inputs are in the specified color space, and the output must also be in this color space.
 
 ## See Also
 
-- [var kFxPropertyKey_NeedsFullBuffer: String](kfxpropertykey_needsfullbuffer.md)
+### Property Keys
+- [var kFxPropertyKey_NeedsFullBuffer: String](./kfxpropertykey_needsfullbuffer.md)
   A key that determines whether the plug-in needs the entire image to do its processing, and can’t tile its rendering.
-- [var kFxPropertyKey_VariesWhenParamsAreStatic: String](kfxpropertykey_varieswhenparamsarestatic.md)
+- [var kFxPropertyKey_VariesWhenParamsAreStatic: String](./kfxpropertykey_varieswhenparamsarestatic.md)
   A key that determines whether your rendering varies even when the parameters remain the same.
-- [var kFxPropertyKey_ChangesOutputSize: String](kfxpropertykey_changesoutputsize.md)
+- [var kFxPropertyKey_ChangesOutputSize: String](./kfxpropertykey_changesoutputsize.md)
   A key that determines whether your filter has the ability to change the size of its output to be different than the size of its input.
 
 

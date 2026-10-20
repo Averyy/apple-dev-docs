@@ -1,7 +1,8 @@
 # activityViewController(_:dataTypeIdentifierForActivityType:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 For items that are provided as data, returns the UTI for the item.
 
@@ -9,7 +10,7 @@ For items that are provided as data, returns the UTI for the item.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,19 @@ For items that are provided as data, returns the UTI for the item.
 optional func activityViewController(_ activityViewController: UIActivityViewController, dataTypeIdentifierForActivityType activityType: UIActivity.ActivityType?) -> String
 ```
 
+```objc
+- (NSString *) activityViewController:(UIActivityViewController *) activityViewController dataTypeIdentifierForActivityType:(UIActivityType) activityType;
+```
+
 #### Return Value
 
 The UTI for the item.
 
 #### Discussion
 
-Providing the UTI allows services to handle specific data types in appropriate ways, such as an email service formatting an image to display in-line. If you provide items as [`NSData`](https://developer.apple.com/documentation/foundation/nsdata) objects, implement this method to allow those services to better handle your data.
+Providing the UTI allows services to handle specific data types in appropriate ways, such as an email service formatting an image to display in-line. If you provide items as [`NSData`](../../Foundation/nsdata.md) objects, implement this method to allow those services to better handle your data.
 
-To ensure that Mail can handle an attachment that uses your exported UTI, include the [`UTExportedTypeDeclarations`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/UTExportedTypeDeclarations) key in your app’s `Info.plist` file, describing the UTI and providing the MIME type for it. The following example shows how `public.jpeg` might be defined as an exported type (only the required keys are shown):
+To ensure that Mail can handle an attachment that uses your exported UTI, include the [UTExportedTypeDeclarations](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/UTExportedTypeDeclarations) key in your app’s `Info.plist` file, describing the UTI and providing the MIME type for it. The following example shows how `public.jpeg` might be defined as an exported type (only the required keys are shown):
 
 ```objc
 <key>UTExportedTypeDeclarations</key>
@@ -62,9 +67,10 @@ To ensure that Mail can handle an attachment that uses your exported UTI, includ
 
 ## See Also
 
-- [func activityViewController(UIActivityViewController, subjectForActivityType: UIActivity.ActivityType?) -> String](uiactivityitemsource/activityviewcontroller(_:subjectforactivitytype:).md)
+### Providing information about the data items
+- [func activityViewController(UIActivityViewController, subjectForActivityType: UIActivity.ActivityType?) -> String](./activityviewcontroller%28_,subjectforactivitytype%29.md)
   For activities that support a subject field, returns the subject for the item.
-- [func activityViewController(UIActivityViewController, thumbnailImageForActivityType: UIActivity.ActivityType?, suggestedSize: CGSize) -> UIImage?](uiactivityitemsource/activityviewcontroller(_:thumbnailimageforactivitytype:suggestedsize:).md)
+- [func activityViewController(UIActivityViewController, thumbnailImageForActivityType: UIActivity.ActivityType?, suggestedSize: CGSize) -> UIImage?](./activityviewcontroller%28_,thumbnailimageforactivitytype,suggestedsize%29.md)
   For activities that support a preview image, returns a thumbnail preview image for the item.
 
 

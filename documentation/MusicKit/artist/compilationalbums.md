@@ -1,7 +1,8 @@
 # compilationAlbums
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of compilation albums that include tracks by the artist.
 

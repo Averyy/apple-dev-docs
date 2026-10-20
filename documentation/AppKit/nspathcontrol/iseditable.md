@@ -1,7 +1,8 @@
 # isEditable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.10+
@@ -12,13 +13,18 @@
 var isEditable: Bool { get set }
 ```
 
+```objc
+@property (getter=isEditable) BOOL editable;
+```
+
 ## See Also
 
-- [var allowedTypes: [String]?](nspathcontrol/allowedtypes.md)
-- [var clickedPathItem: NSPathControlItem?](nspathcontrol/clickedpathitem.md)
-- [var pathItems: [NSPathControlItem]](nspathcontrol/pathitems.md)
-- [var placeholderAttributedString: NSAttributedString?](nspathcontrol/placeholderattributedstring.md)
-- [var placeholderString: String?](nspathcontrol/placeholderstring.md)
+### Instance Properties
+- [var allowedTypes: [String]?](./allowedtypes.md)
+- [var clickedPathItem: NSPathControlItem?](./clickedpathitem.md)
+- [var pathItems: [NSPathControlItem]](./pathitems.md)
+- [var placeholderAttributedString: NSAttributedString?](./placeholderattributedstring.md)
+- [var placeholderString: String?](./placeholderstring.md)
 
 
 ---

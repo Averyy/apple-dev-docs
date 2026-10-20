@@ -1,14 +1,15 @@
 # hubHdrDecLat
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 UInt8 hubHdrDecLat;
 ```
 

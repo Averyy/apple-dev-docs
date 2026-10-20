@@ -1,7 +1,8 @@
 # removeAppExtensionPoint(_:)
 
 **Framework**: ExtensionFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified extension point and stops tracking the associated app extensions.
 
@@ -22,7 +23,7 @@ final func removeAppExtensionPoint(_ appExtensionPoint: AppExtensionPoint) async
 
 #### Discussion
 
-This method updates the state of the monitor, removing the specified extension point from the list of those it’s tracking. Removing an extension point causes the monitor to update the [`identities`](appextensionpoint/monitor/identities.md) property as needed.
+This method updates the state of the monitor, removing the specified extension point from the list of those it’s tracking. Removing an extension point causes the monitor to update the [`identities`](./identities.md) property as needed.
 
 ## Parameters
 
@@ -30,7 +31,8 @@ This method updates the state of the monitor, removing the specified extension p
 
 ## See Also
 
-- [func addAppExtensionPoint(AppExtensionPoint) async throws](appextensionpoint/monitor/addappextensionpoint(_:).md)
+### Adding and removing extension points
+- [func addAppExtensionPoint(AppExtensionPoint) async throws](./addappextensionpoint%28_%29.md)
   Begins the tracking of app extensions that support the specified extension point.
 
 

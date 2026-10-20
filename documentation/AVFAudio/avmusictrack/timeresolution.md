@@ -1,7 +1,8 @@
 # timeResolution
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time resolution value for the sequence, in ticks (pulses) per quarter note.
 
@@ -19,6 +20,10 @@ The time resolution value for the sequence, in ticks (pulses) per quarter note.
 var timeResolution: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger timeResolution;
+```
+
 #### Discussion
 
 If you use a MIDI file to construct the containing sequence, the resolution is the contents of the file. If you want to keep a time resolution when writing a new file, retrieve this value and then specify it when writing to an audio sequencer. It doesn’t affect the rendering or notion of time of the sequence — only it’s MIDI file representation.
@@ -29,13 +34,14 @@ You can only retrieve this value from the tempo track.
 
 ## See Also
 
-- [var isMuted: Bool](avmusictrack/ismuted.md)
+### Configuring music track properties
+- [var isMuted: Bool](./ismuted.md)
   A Boolean value that indicates whether the track is in a muted state.
-- [var isSoloed: Bool](avmusictrack/issoloed.md)
+- [var isSoloed: Bool](./issoloed.md)
   A Boolean value that indicates whether the track is in a soloed state.
-- [var offsetTime: AVMusicTimeStamp](avmusictrack/offsettime.md)
+- [var offsetTime: AVMusicTimeStamp](./offsettime.md)
   The offset of the track’s start time, in beats.
-- [var usesAutomatedParameters: Bool](avmusictrack/usesautomatedparameters.md)
+- [var usesAutomatedParameters: Bool](./usesautomatedparameters.md)
   A Boolean value that indicates whether the track is an automation track.
 
 

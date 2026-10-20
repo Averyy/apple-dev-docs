@@ -1,7 +1,8 @@
 # emitterMode
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the emitter mode.
 
@@ -19,25 +20,30 @@ Specifies the emitter mode.
 var emitterMode: CAEmitterLayerEmitterMode { get set }
 ```
 
+```objc
+@property (copy) CAEmitterLayerEmitterMode emitterMode;
+```
+
 #### Discussion
 
-The possible values for emitterMode are shown in [`Emitter Modes`](emitter-modes.md). The default value is [`volume`](caemitterlayeremittermode/volume.md).
+The possible values for emitterMode are shown in [Emitter Modes](../emitter-modes.md). The default value is [`volume`](../caemitterlayeremittermode/volume.md).
 
 ## See Also
 
-- [var scale: Float](caemitterlayer/scale.md)
+### Emitter Cell Attribute Multipliers
+- [var scale: Float](./scale.md)
   Defines a multiplier applied to the cell-defined particle scale.
-- [var seed: UInt32](caemitterlayer/seed.md)
+- [var seed: UInt32](./seed.md)
   Specifies the seed used to initialize the random number generator.
-- [var spin: Float](caemitterlayer/spin.md)
+- [var spin: Float](./spin.md)
   Defines a multiplier applied to the cell-defined particle spin. Animatable.
-- [var velocity: Float](caemitterlayer/velocity.md)
+- [var velocity: Float](./velocity.md)
   Defines a multiplier applied to the cell-defined particle velocity. Animatable.
-- [var birthRate: Float](caemitterlayer/birthrate.md)
+- [var birthRate: Float](./birthrate.md)
   Defines a multiplier that is applied to the cell-defined birth rate. Animatable
-- [var lifetime: Float](caemitterlayer/lifetime.md)
+- [var lifetime: Float](./lifetime.md)
   Defines a multiplier applied to the cell-defined lifetime range when particles are created. Animatable.
-- [var preservesDepth: Bool](caemitterlayer/preservesdepth.md)
+- [var preservesDepth: Bool](./preservesdepth.md)
   Defines whether the layer flattens the particles into its plane.
 
 

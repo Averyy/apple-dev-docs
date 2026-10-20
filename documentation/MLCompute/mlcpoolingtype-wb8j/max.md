@@ -1,14 +1,17 @@
 # MLCPoolingType.max
 
 **Framework**: ML Compute  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.0
+- iPadOS 14.0+ - Deprecated in 17.0
+- Mac Catalyst 14.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 14.0+ - Deprecated in 17.0
+
+> **Deprecated**: Use Metal Performance Shaders Graph or BNNS instead.
 
 ## Declaration
 
@@ -18,9 +21,10 @@ case max
 
 ## See Also
 
-- [MLCPoolingType.average(countIncludesPadding:)](mlcpoolingtype-wb8j/average(countincludespadding:).md)
-- [MLCPoolingType.l2Norm](mlcpoolingtype-wb8j/l2norm.md)
-- [var debugDescription: String](mlcpoolingtype-wb8j/debugdescription.md)
+### Enumeration Cases
+- [MLCPoolingType.average(countIncludesPadding:)](./average%28countincludespadding%29.md)
+- [MLCPoolingType.l2Norm](./l2norm.md)
+- [var debugDescription: String](./debugdescription.md)
   A textual description of the pooling type, suitable for debugging.
 
 

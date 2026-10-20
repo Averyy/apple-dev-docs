@@ -1,7 +1,8 @@
 # MPSMatrixDecompositionStatus.success
 
 **Framework**: Metal Performance Shaders  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status indicating the decomposition was performed successfully.
 
@@ -19,13 +20,18 @@ A status indicating the decomposition was performed successfully.
 case success
 ```
 
+```c
+MPSMatrixDecompositionStatusSuccess
+```
+
 ## See Also
 
-- [MPSMatrixDecompositionStatus.failure](mpsmatrixdecompositionstatus/failure.md)
+### Enumeration Cases
+- [MPSMatrixDecompositionStatus.failure](./failure.md)
   A status indicating the decomposition was not able to be completed.
-- [MPSMatrixDecompositionStatus.nonPositiveDefinite](mpsmatrixdecompositionstatus/nonpositivedefinite.md)
+- [MPSMatrixDecompositionStatus.nonPositiveDefinite](./nonpositivedefinite.md)
   A status indicating a non-positive-definite pivot value was calculated.
-- [MPSMatrixDecompositionStatus.singular](mpsmatrixdecompositionstatus/singular.md)
+- [MPSMatrixDecompositionStatus.singular](./singular.md)
   A status indicating the resulting decomposition is not suitable for use in a subsequent system solve.
 
 

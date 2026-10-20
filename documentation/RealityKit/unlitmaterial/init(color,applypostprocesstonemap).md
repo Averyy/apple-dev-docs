@@ -1,7 +1,8 @@
 # init(color:applyPostProcessToneMap:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an UnlitMaterial with the given color and tone mapping setting
 
@@ -12,6 +13,12 @@ Creates an UnlitMaterial with the given color and tone mapping setting
 
 ```swift
 init(color: NSColor, applyPostProcessToneMap: Bool)
+```
+
+**Other overloads**:
+
+```swift
+init(color: UIColor, applyPostProcessToneMap: Bool)
 ```
 
 

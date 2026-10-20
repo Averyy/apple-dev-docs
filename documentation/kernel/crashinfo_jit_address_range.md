@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct crashinfo_jit_address_range {
     ...
 };
@@ -17,8 +17,8 @@ struct crashinfo_jit_address_range {
 ## Topics
 
 ### Instance Properties
-- [end_address](crashinfo_jit_address_range/4359975-end_address.md)
-- [start_address](crashinfo_jit_address_range/4359976-start_address.md)
+- [end_address](./crashinfo_jit_address_range/api-4359975-end_address.md)
+- [start_address](./crashinfo_jit_address_range/api-4359976-start_address.md)
 
 
 ---

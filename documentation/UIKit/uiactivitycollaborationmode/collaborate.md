@@ -1,7 +1,8 @@
 # UIActivityCollaborationMode.collaborate
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system allows collaboration on a shared item.
 
@@ -15,6 +16,10 @@ The system allows collaboration on a shared item.
 
 ```swift
 case collaborate
+```
+
+```c
+UIActivityCollaborationModeCollaborate
 ```
 
 

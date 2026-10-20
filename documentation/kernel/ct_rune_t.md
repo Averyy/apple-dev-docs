@@ -1,14 +1,15 @@
 # ct_rune_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 typedef __darwin_ct_rune_t ct_rune_t;
 ```
 

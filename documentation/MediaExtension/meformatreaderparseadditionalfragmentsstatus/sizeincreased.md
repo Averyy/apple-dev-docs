@@ -1,7 +1,8 @@
 # sizeIncreased
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the format reader file size increased.
 
@@ -14,11 +15,16 @@ Indicates that the format reader file size increased.
 static var sizeIncreased: MEFormatReaderParseAdditionalFragmentsStatus { get }
 ```
 
+```c
+MEFormatReaderParseAdditionalFragmentsStatusSizeIncreased
+```
+
 ## See Also
 
-- [static var fragmentAdded: MEFormatReaderParseAdditionalFragmentsStatus](meformatreaderparseadditionalfragmentsstatus/fragmentadded.md)
+### Evaluating a fragment parsing operation
+- [static var fragmentAdded: MEFormatReaderParseAdditionalFragmentsStatus](./fragmentadded.md)
   Indicates that the format reader received one or more fragments.
-- [static var fragmentsComplete: MEFormatReaderParseAdditionalFragmentsStatus](meformatreaderparseadditionalfragmentsstatus/fragmentscomplete.md)
+- [static var fragmentsComplete: MEFormatReaderParseAdditionalFragmentsStatus](./fragmentscomplete.md)
   Indicates that the format reader can’t receive any more fragments.
 
 

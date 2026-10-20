@@ -1,7 +1,8 @@
 # sizes
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Access sample sizes.
 
@@ -22,7 +23,7 @@ var sizes: CMSampleBuffer.SizePerSample? { get set }
 
 #### Discussion
 
-When setting distinct sizes, the number of entries must match [`count`](cmsamplebuffer/samplepropertiescollection/count.md).
+When setting distinct sizes, the number of entries must match [`count`](./count.md).
 
 
 ---

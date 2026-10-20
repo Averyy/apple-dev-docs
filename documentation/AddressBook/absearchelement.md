@@ -1,17 +1,22 @@
 # ABSearchElement
 
 **Framework**: Address Book  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object you use to specify a search query for records in the Address Book database.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class ABSearchElement
+```
+
+```objc
+@interface ABSearchElement : NSObject
 ```
 
 #### Overview
@@ -21,32 +26,33 @@ The `ABSearchElement` class is “toll-free bridged” with its procedural C opa
 ## Topics
 
 ### Searching
-- [init!(forConjunction: ABSearchConjunction, children: [Any]!)](absearchelement/init(forconjunction:children:).md)
+- [init!(forConjunction: ABSearchConjunction, children: [Any]!)](./absearchelement/init%28forconjunction,children%29.md)
   Returns a compound search element, created by combining the search elements in an array with the given conjunction.
 ### Matching
-- [func matchesRecord(ABRecord!) -> Bool](absearchelement/matchesrecord(_:).md)
+- [func matchesRecord(ABRecord!) -> Bool](./absearchelement/matchesrecord%28_%29.md)
   Tests whether or not a record matches a search element.
 ### Constants
-- [typealias ABSearchConjunction](absearchconjunction.md)
+- [typealias ABSearchConjunction](./absearchconjunction.md)
   Constants used to create compound search elements.
-- [typealias ABSearchComparison](absearchcomparison.md)
+- [typealias ABSearchComparison](./absearchcomparison.md)
   Constants used to specify the type of comparison beingmade.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class ABSearchElementRef](absearchelementref.md)
+### Search Elements
+- [class ABSearchElementRef](./absearchelementref.md)
   A reference to an ABSearchElement object.
 
 

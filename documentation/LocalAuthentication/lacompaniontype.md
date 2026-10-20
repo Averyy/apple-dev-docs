@@ -1,7 +1,8 @@
 # LACompanionType
 
 **Framework**: Local Authentication  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -17,27 +18,31 @@
 enum LACompanionType
 ```
 
+```c
+enum LACompanionType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [LACompanionType.mac](lacompaniontype/mac.md)
+- [LACompanionType.mac](./lacompaniontype/mac.md)
   Paired Mac
-- [LACompanionType.vision](lacompaniontype/vision.md)
+- [LACompanionType.vision](./lacompaniontype/vision.md)
   Paired Vision Pro
-- [LACompanionType.watch](lacompaniontype/watch.md)
+- [LACompanionType.watch](./lacompaniontype/watch.md)
   Paired Apple Watch
 ### Initializers
-- [init?(rawValue: Int)](lacompaniontype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./lacompaniontype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

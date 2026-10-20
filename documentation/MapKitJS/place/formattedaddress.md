@@ -1,7 +1,8 @@
 # formattedAddress
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The address of the place, formatted using its conventions of its country or region.
 
@@ -10,17 +11,18 @@ The address of the place, formatted using its conventions of its country or regi
 
 ## Declaration
 
-```swift
+```
 formattedAddress: string | null;
 ```
 
 ## See Also
 
-- [name](place/name.md)
+### Place name and category
+- [name](./name.md)
   The name of the place.
-- [areasOfInterest](place/areasofinterest.md)
+- [areasOfInterest](./areasofinterest.md)
   Common names of the area in which the place resides.
-- [pointOfInterestCategory](place/pointofinterestcategory.md)
+- [pointOfInterestCategory](./pointofinterestcategory.md)
   The category of the place.
 
 

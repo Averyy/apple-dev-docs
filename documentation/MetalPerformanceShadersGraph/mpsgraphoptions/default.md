@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The framework uses these options as default if not overriden.
 
@@ -17,6 +18,10 @@ The framework uses these options as default if not overriden.
 
 ```swift
 static var `default`: MPSGraphOptions { get }
+```
+
+```c
+MPSGraphOptionsDefault
 ```
 
 

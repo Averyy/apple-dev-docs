@@ -1,7 +1,8 @@
 # stepCenter
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Interpolate data points with a step, or piece-wise constant function, where the data point is at the center of the step.
 

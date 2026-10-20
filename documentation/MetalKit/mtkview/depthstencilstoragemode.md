@@ -1,7 +1,8 @@
 # depthStencilStorageMode
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The storage mode that the packed depth and stencil texture use.
 
@@ -19,19 +20,24 @@ The storage mode that the packed depth and stencil texture use.
 var depthStencilStorageMode: MTLStorageMode { get set }
 ```
 
+```objc
+@property (nonatomic) MTLStorageMode depthStencilStorageMode;
+```
+
 #### Discussion
 
-The default value is [`MTLStorageMode.private`](https://developer.apple.com/documentation/metal/mtlstoragemode/private).
+The default value is [`MTLStorageMode.private`](../../Metal/mtlstoragemode/private.md).
 
 ## See Also
 
-- [var currentRenderPassDescriptor: MTLRenderPassDescriptor?](mtkview/currentrenderpassdescriptor.md)
+### Retrieving Render Target Information
+- [var currentRenderPassDescriptor: MTLRenderPassDescriptor?](./currentrenderpassdescriptor.md)
   A render pass descriptor to draw into the current drawable.
-- [var currentDrawable: (any CAMetalDrawable)?](mtkview/currentdrawable.md)
+- [var currentDrawable: (any CAMetalDrawable)?](./currentdrawable.md)
   The drawable to use for the current frame.
-- [var depthStencilTexture: (any MTLTexture)?](mtkview/depthstenciltexture.md)
+- [var depthStencilTexture: (any MTLTexture)?](./depthstenciltexture.md)
   A packed depth and stencil texture associated with the current drawable object’s texture.
-- [var multisampleColorTexture: (any MTLTexture)?](mtkview/multisamplecolortexture.md)
+- [var multisampleColorTexture: (any MTLTexture)?](./multisamplecolortexture.md)
   The multisample color sample texture to render into.
 
 

@@ -1,7 +1,8 @@
 # phoneNumber
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The phone number for the handle.
 

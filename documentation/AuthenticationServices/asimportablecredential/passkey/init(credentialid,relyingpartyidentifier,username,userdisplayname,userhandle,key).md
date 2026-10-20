@@ -1,7 +1,8 @@
 # init(credentialID:relyingPartyIdentifier:userName:userDisplayName:userHandle:key:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a passkey instance.
 

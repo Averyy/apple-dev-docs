@@ -1,7 +1,8 @@
 # popUp(positioning:at:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pops up the menu at the specified location.
 
@@ -14,9 +15,13 @@ Pops up the menu at the specified location.
 func popUp(positioning item: NSMenuItem?, at location: NSPoint, in view: NSView?) -> Bool
 ```
 
+```objc
+- (BOOL) popUpMenuPositioningItem:(NSMenuItem *) item atLocation:(NSPoint) location inView:(NSView *) view;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if menu tracking ended because an item was selected, and [`false`](https://developer.apple.com/documentation/swift/false) if menu tracking was cancelled for any reason.
+[`true`](../../Swift/true.md) if menu tracking ended because an item was selected, and [`false`](../../Swift/false.md) if menu tracking was cancelled for any reason.
 
 #### Discussion
 
@@ -34,9 +39,10 @@ If `view` is `nil`, the location is interpreted in the screen coordinate system.
 
 ## See Also
 
-- [class func popUpContextMenu(NSMenu, with: NSEvent, for: NSView)](nsmenu/popupcontextmenu(_:with:for:).md)
+### Displaying Context-Sensitive Help
+- [class func popUpContextMenu(NSMenu, with: NSEvent, for: NSView)](./popupcontextmenu%28_,with,for%29.md)
   Displays a contextual menu over a view for an event.
-- [class func popUpContextMenu(NSMenu, with: NSEvent, for: NSView, with: NSFont?)](nsmenu/popupcontextmenu(_:with:for:with:).md)
+- [class func popUpContextMenu(NSMenu, with: NSEvent, for: NSView, with: NSFont?)](./popupcontextmenu%28_,with,for,with%29.md)
   Displays a contextual menu over a view for an event using a specified font.
 
 

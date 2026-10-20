@@ -1,14 +1,15 @@
 # posix_cred_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.7+
 
 ## Declaration
 
-```swift
+```c
 typedef struct posix_cred *posix_cred_t;
 ```
 

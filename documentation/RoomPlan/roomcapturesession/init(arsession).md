@@ -1,7 +1,8 @@
 # init(arSession:)
 
 **Framework**: RoomPlan  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -16,7 +17,7 @@ init(arSession: ARSession? = nil)
 
 ## Mentions
 
-- [Scanning the rooms of a single structure](scanning-the-rooms-of-a-single-structure.md)
+- [Scanning the rooms of a single structure](../scanning-the-rooms-of-a-single-structure.md)
 
 
 ---

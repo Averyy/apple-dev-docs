@@ -1,7 +1,8 @@
 # metersPerSecondSquared
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the meter per second squared unit of acceleration.
 
@@ -21,9 +22,14 @@ Returns the meter per second squared unit of acceleration.
 class var metersPerSecondSquared: UnitAcceleration { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitAcceleration * metersPerSecondSquared;
+```
+
 ## See Also
 
-- [class var gravity: UnitAcceleration](unitacceleration/gravity.md)
+### Accessing Predefined Units
+- [class var gravity: UnitAcceleration](./gravity.md)
   Returns the gravity unit of acceleration.
 
 

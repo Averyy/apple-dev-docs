@@ -1,7 +1,8 @@
 # FoveatedStreamingExtension.Context
 
 **Framework**: Foveated Streaming  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The context object provided to the extension when it connects.
 

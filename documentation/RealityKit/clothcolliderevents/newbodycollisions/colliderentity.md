@@ -1,7 +1,8 @@
 # colliderEntity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity that has the collider component that this event originates from.
 
@@ -18,7 +19,8 @@ let colliderEntity: Entity
 
 ## See Also
 
-- [let updateCount: UInt64](clothcolliderevents/newbodycollisions/updatecount.md)
+### Identifying the event
+- [let updateCount: UInt64](./updatecount.md)
   The simulation update that this event originates from.
 
 

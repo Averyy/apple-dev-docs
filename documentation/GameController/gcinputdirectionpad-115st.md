@@ -1,7 +1,8 @@
 # GCInputDirectionPad
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the directional pad element.
 
@@ -11,7 +12,7 @@ The name of the directional pad element.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,8 @@ var GCInputDirectionPad: String { get }
 
 ## See Also
 
-- [var dpad: GCControllerDirectionPad](gcextendedgamepad/dpad.md)
+### Related Documentation
+- [var dpad: GCControllerDirectionPad](./gcextendedgamepad/dpad.md)
   The controller’s directional pad element.
 
 

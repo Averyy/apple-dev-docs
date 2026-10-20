@@ -1,7 +1,8 @@
 # payloads
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The authored payloads on this prim, or `nil` if none authored.
 

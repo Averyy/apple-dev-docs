@@ -1,7 +1,8 @@
 # MusicLibrary.Error.playlistNotInLibrary
 
 **Framework**: MusicKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error indicating that the playlist attempting to be added to is not in the user’s library.
 

@@ -1,17 +1,22 @@
 # isOpen()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the state of the channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func isOpen() -> Bool
+```
+
+```objc
+- (BOOL) isOpen;
 ```
 
 #### Return Value

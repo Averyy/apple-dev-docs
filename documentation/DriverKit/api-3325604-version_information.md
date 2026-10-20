@@ -1,17 +1,19 @@
 # Version Information
 
-**Framework**: DriverKit
+**Framework**: DriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Getting the Version
-- [kIOUserClientMethodArgumentsCurrentVersion](kiouserclientmethodargumentscurrentversion.md)
+- [kIOUserClientMethodArgumentsCurrentVersion](./kiouserclientmethodargumentscurrentversion.md)
 
 ## See Also
 
-- [IOUserClientScalarArray](iouserclientscalararray.md)
-- [Scalar Array Sizes](3325605-scalar_array_sizes.md)
-- [Output Maximum Size](3325606-output_maximum_size.md)
+### Getting Type Information
+- [IOUserClientScalarArray](./iouserclientscalararray.md)
+- [Scalar Array Sizes](./api-3325605-scalar_array_sizes.md)
+- [Output Maximum Size](./api-3325606-output_maximum_size.md)
   Constant to denote a variable length structure argument to IOUserClient.
 
 

@@ -1,7 +1,8 @@
 # SpotlightSearchTool.SearchReply.Content.items(_:)
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Ssearch result items (emails, files, etc.) — display as a list.
 

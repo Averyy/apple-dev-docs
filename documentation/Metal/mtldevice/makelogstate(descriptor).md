@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a shader log state with the provided configuration.
@@ -20,9 +21,13 @@ Creates a shader log state with the provided configuration.
 func makeLogState(descriptor: MTLLogStateDescriptor) throws -> any MTLLogState
 ```
 
+```objc
+- (id<MTLLogState>) newLogStateWithDescriptor:(MTLLogStateDescriptor *) descriptor error:(NSError **) error;
+```
+
 #### Return Value
 
-A new [`MTLLogState`](mtllogstate.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
+A new [`MTLLogState`](../mtllogstate.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
 ## Parameters
 

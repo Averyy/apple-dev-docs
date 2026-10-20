@@ -1,7 +1,8 @@
 # scatterWithData(_:updates:indices:axis:mode:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a Scatter operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a Scatter operation and returns the result tensor.
 
 ```swift
 func scatterWithData(_ dataTensor: MPSGraphTensor, updates updatesTensor: MPSGraphTensor, indices indicesTensor: MPSGraphTensor, axis: Int, mode: MPSGraphScatterMode, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) scatterWithDataTensor:(MPSGraphTensor *) dataTensor updatesTensor:(MPSGraphTensor *) updatesTensor indicesTensor:(MPSGraphTensor *) indicesTensor axis:(NSInteger) axis mode:(MPSGraphScatterMode) mode name:(NSString *) name;
 ```
 
 #### Return Value

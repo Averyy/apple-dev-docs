@@ -1,7 +1,8 @@
 # kJSClassAttributeNone
 
 **Framework**: JavaScriptCore  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An attribute that specifies that a class has no special attributes.
 
@@ -19,9 +20,14 @@ An attribute that specifies that a class has no special attributes.
 var kJSClassAttributeNone: Int { get }
 ```
 
+```c
+kJSClassAttributeNone
+```
+
 ## See Also
 
-- [var kJSClassAttributeNoAutomaticPrototype: Int](kjsclassattributenoautomaticprototype.md)
+### Constants
+- [var kJSClassAttributeNoAutomaticPrototype: Int](./kjsclassattributenoautomaticprototype.md)
   An attribute that specifies that a class doesn’t automatically generate a shared prototype for its instance objects.
 
 

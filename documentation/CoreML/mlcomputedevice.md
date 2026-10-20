@@ -1,7 +1,8 @@
 # MLComputeDevice
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Compute devices for framework operations.
 
@@ -23,34 +24,35 @@ enum MLComputeDevice
 ## Topics
 
 ### Device types
-- [case cpu(MLCPUComputeDevice)](mlcomputedevice/cpu(_:).md)
+- [case cpu(MLCPUComputeDevice)](./mlcomputedevice/cpu%28_%29.md)
   A device that represents a CPU compute device.
-- [case gpu(MLGPUComputeDevice)](mlcomputedevice/gpu(_:).md)
+- [case gpu(MLGPUComputeDevice)](./mlcomputedevice/gpu%28_%29.md)
   A device that represents a GPU compute device.
-- [case neuralEngine(MLNeuralEngineComputeDevice)](mlcomputedevice/neuralengine(_:).md)
+- [case neuralEngine(MLNeuralEngineComputeDevice)](./mlcomputedevice/neuralengine%28_%29.md)
   A device that represents a Neural Engine compute device.
 ### Getting all devices
-- [static var allComputeDevices: [MLComputeDevice]](mlcomputedevice/allcomputedevices.md)
+- [static var allComputeDevices: [MLComputeDevice]](./mlcomputedevice/allcomputedevices.md)
   Returns an array that contains all of the compute devices that are accessible.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class MLCPUComputeDevice](mlcpucomputedevice.md)
+### Compute devices
+- [class MLCPUComputeDevice](./mlcpucomputedevice.md)
   An object that represents a CPU compute device.
-- [class MLGPUComputeDevice](mlgpucomputedevice.md)
+- [class MLGPUComputeDevice](./mlgpucomputedevice.md)
   An object that represents a GPU compute device.
-- [class MLNeuralEngineComputeDevice](mlneuralenginecomputedevice.md)
+- [class MLNeuralEngineComputeDevice](./mlneuralenginecomputedevice.md)
   An object that represents a Neural Engine compute device.
-- [protocol MLComputeDeviceProtocol](mlcomputedeviceprotocol.md)
+- [protocol MLComputeDeviceProtocol](./mlcomputedeviceprotocol.md)
   An interface that represents a compute device type.
 
 

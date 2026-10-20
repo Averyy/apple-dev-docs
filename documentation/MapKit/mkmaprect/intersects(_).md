@@ -1,7 +1,8 @@
 # intersects(_:)
 
 **Framework**: MapKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether two rectangles intersect each other.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether two rectangles intersect each oth
 func intersects(_ rect2: MKMapRect) -> Bool
 ```
 
+```c
+extern BOOL MKMapRectIntersectsRect(MKMapRect rect1, MKMapRect rect2);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if `rect1` and `rect2` intersect each other, or [`false`](https://developer.apple.com/documentation/swift/false) if they don’t intersect or either rectangle is `null`.
+[`true`](../../Swift/true.md) if `rect1` and `rect2` intersect each other, or [`false`](../../Swift/false.md) if they don’t intersect or either rectangle is `null`.
 
 #### Discussion
 
@@ -34,9 +39,10 @@ The rectangles aren’t intersecting if the only intersection occurs along an ed
 
 ## See Also
 
-- [func contains(MKMapPoint) -> Bool](mkmaprect/contains(_:)-79tjt.md)
+### Intersecting the rectangle
+- [func contains(MKMapPoint) -> Bool](./contains%28_%29-79tjt.md)
   Returns a Boolean value that indicates whether the specified map point lies within the rectangle.
-- [func contains(MKMapRect) -> Bool](mkmaprect/contains(_:)-1z5oa.md)
+- [func contains(MKMapRect) -> Bool](./contains%28_%29-1z5oa.md)
   Returns a Boolean value that indicates whether one rectangle contains another.
 
 

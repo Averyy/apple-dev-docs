@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,15 +18,15 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBluetoothHCICommandPacketHeaderSize](1640192-anonymous/kbluetoothhcicommandpacketheadersize.md)
-- [kBluetoothHCICommandPacketMaxDataSize](1640192-anonymous/kbluetoothhcicommandpacketmaxdatasize.md)
-- [kBluetoothHCIDataPacketHeaderSize](1640192-anonymous/kbluetoothhcidatapacketheadersize.md)
-- [kBluetoothHCIDataPacketMaxDataSize](1640192-anonymous/kbluetoothhcidatapacketmaxdatasize.md)
-- [kBluetoothHCIEventPacketHeaderSize](1640192-anonymous/kbluetoothhcieventpacketheadersize.md)
-- [kBluetoothHCIEventPacketMaxDataSize](1640192-anonymous/kbluetoothhcieventpacketmaxdatasize.md)
-- [kBluetoothHCIMaxCommandPacketSize](1640192-anonymous/kbluetoothhcimaxcommandpacketsize.md)
-- [kBluetoothHCIMaxDataPacketSize](1640192-anonymous/kbluetoothhcimaxdatapacketsize.md)
-- [kBluetoothHCIMaxEventPacketSize](1640192-anonymous/kbluetoothhcimaxeventpacketsize.md)
+- [kBluetoothHCICommandPacketHeaderSize](./api-1640192-anonymous/kbluetoothhcicommandpacketheadersize.md)
+- [kBluetoothHCICommandPacketMaxDataSize](./api-1640192-anonymous/kbluetoothhcicommandpacketmaxdatasize.md)
+- [kBluetoothHCIDataPacketHeaderSize](./api-1640192-anonymous/kbluetoothhcidatapacketheadersize.md)
+- [kBluetoothHCIDataPacketMaxDataSize](./api-1640192-anonymous/kbluetoothhcidatapacketmaxdatasize.md)
+- [kBluetoothHCIEventPacketHeaderSize](./api-1640192-anonymous/kbluetoothhcieventpacketheadersize.md)
+- [kBluetoothHCIEventPacketMaxDataSize](./api-1640192-anonymous/kbluetoothhcieventpacketmaxdatasize.md)
+- [kBluetoothHCIMaxCommandPacketSize](./api-1640192-anonymous/kbluetoothhcimaxcommandpacketsize.md)
+- [kBluetoothHCIMaxDataPacketSize](./api-1640192-anonymous/kbluetoothhcimaxdatapacketsize.md)
+- [kBluetoothHCIMaxEventPacketSize](./api-1640192-anonymous/kbluetoothhcimaxeventpacketsize.md)
 
 
 ---

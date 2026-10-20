@@ -1,7 +1,8 @@
 # joinOnce
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Restricts the lifetime of a configuration to the operating status of the app that created it.
 
@@ -18,6 +19,10 @@ Restricts the lifetime of a configuration to the operating status of the app tha
 var joinOnce: Bool { get set }
 ```
 
+```objc
+@property BOOL joinOnce;
+```
+
 #### Discussion
 
 Optional. When `joinOnce` is set to `true,` the hotspot remains configured and connected only as long as the app that configured it is running in the foreground. The hotspot is disconnected and its configuration is removed when any of the following events occurs:
@@ -28,17 +33,18 @@ Optional. When `joinOnce` is set to `true,` the hotspot remains configured and c
 - The app connects the device to a different Wi-Fi network.
 - The user connects the device to a different Wi-Fi network.
 
-To disconnect the device from a hotspot configured with `joinOnce` set to `true`, call [`removeConfiguration(forSSID:)`](nehotspotconfigurationmanager/removeconfiguration(forssid:).md).
+To disconnect the device from a hotspot configured with `joinOnce` set to `true`, call [`removeConfiguration(forSSID:)`](../nehotspotconfigurationmanager/removeconfiguration%28forssid%29.md).
 
 ## See Also
 
-- [var ssid: String](nehotspotconfiguration/ssid.md)
+### Accessing configuration properties
+- [var ssid: String](./ssid.md)
   The SSID of an open, WEP, WPA/WPA2 personal, or WPA/WPA2 enterprise Wi-Fi network.
-- [var ssidPrefix: String](nehotspotconfiguration/ssidprefix.md)
+- [var ssidPrefix: String](./ssidprefix.md)
   The string used to match networks against a known SSID prefix.
-- [var lifeTimeInDays: NSNumber](nehotspotconfiguration/lifetimeindays.md)
+- [var lifeTimeInDays: NSNumber](./lifetimeindays.md)
   The number of days the network retains the associated configuration.
-- [var hidden: Bool](nehotspotconfiguration/hidden.md)
+- [var hidden: Bool](./hidden.md)
   A Boolean value that indicates the visibility of the SSID.
 
 

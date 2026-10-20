@@ -1,14 +1,15 @@
 # kIOTimingIDAppleNTSC_FFconv
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOTimingIDAppleNTSC_FFconv = 236
 ```
 

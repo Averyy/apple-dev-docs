@@ -1,7 +1,8 @@
 # prefix(upTo:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence from the start of the collection up to, but not including, the specified position.
 
@@ -52,7 +53,7 @@ if let i = numbers.firstIndex(of: 40) {
 // Prints "[10, 20, 30]"
 ```
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 
@@ -60,15 +61,16 @@ if let i = numbers.firstIndex(of: 40) {
 
 ## See Also
 
-- [func prefix(Int) -> Self.SubSequence](array/prefix(_:).md)
+### Selecting Elements
+- [func prefix(Int) -> Self.SubSequence](./prefix%28_%29.md)
   Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
-- [func prefix(through: Self.Index) -> Self.SubSequence](array/prefix(through:).md)
+- [func prefix(through: Self.Index) -> Self.SubSequence](./prefix%28through%29.md)
   Returns a subsequence from the start of the collection through the specified position.
-- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](array/prefix(while:).md)
+- [func prefix(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./prefix%28while%29.md)
   Returns a subsequence containing the initial elements until `predicate` returns `false` and skipping the remaining elements.
-- [func suffix(Int) -> Self.SubSequence](array/suffix(_:).md)
+- [func suffix(Int) -> Self.SubSequence](./suffix%28_%29.md)
   Returns a subsequence, up to the given maximum length, containing the final elements of the collection.
-- [func suffix(from: Self.Index) -> Self.SubSequence](array/suffix(from:).md)
+- [func suffix(from: Self.Index) -> Self.SubSequence](./suffix%28from%29.md)
   Returns a subsequence from the specified position to the end of the collection.
 
 

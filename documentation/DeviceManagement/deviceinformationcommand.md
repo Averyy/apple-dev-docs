@@ -1,7 +1,8 @@
 # DeviceInformationCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get detailed information about a device.
 
@@ -16,19 +17,19 @@ The command to get detailed information about a device.
 
 ## Declaration
 
-```swift
+```
 object DeviceInformationCommand
 ```
 
 ## Mentions
 
-- [Creating and using bypass codes](creating-and-using-bypass-codes.md)
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Creating and using bypass codes](./creating-and-using-bypass-codes.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object DeviceInformationCommand.Command](deviceinformationcommand/command-data.dictionary.md)
+- [object DeviceInformationCommand.Command](./deviceinformationcommand/command-data.dictionary.md)
   The command to get detailed information about a device.
 
 ## Properties
@@ -38,7 +39,8 @@ object DeviceInformationCommand
 
 ## See Also
 
-- [object DeviceInformationResponse](deviceinformationresponse.md)
+### Commands and responses
+- [object DeviceInformationResponse](./deviceinformationresponse.md)
   A response from the device after it processes the command to get detailed information about a device.
 
 

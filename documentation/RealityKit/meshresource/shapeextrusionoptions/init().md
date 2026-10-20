@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the shape extrusion options with default values.
 
@@ -21,7 +22,7 @@ init()
 
 #### Discussion
 
-By default, the extrusion method is [`MeshResource.ShapeExtrusionOptions.ExtrusionMethod.linear(depth:)`](meshresource/shapeextrusionoptions/extrusionmethod-swift.enum/linear(depth:).md), with a depth of 0.25m, and all sides are assigned the first material.
+By default, the extrusion method is [`MeshResource.ShapeExtrusionOptions.ExtrusionMethod.linear(depth:)`](./extrusionmethod-swift.enum/linear%28depth%29.md), with a depth of 0.25m, and all sides are assigned the first material.
 
 
 ---

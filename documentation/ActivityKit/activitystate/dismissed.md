@@ -1,7 +1,8 @@
 # ActivityState.dismissed
 
 **Framework**: ActivityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Live Activity ended and is no longer visible because a person or the system removed it.
 
@@ -17,17 +18,18 @@ case dismissed
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
 ## See Also
 
-- [ActivityState.active](activitystate/active.md)
+### Live Activity states
+- [ActivityState.active](./active.md)
   The Live Activity is active, visible, and can receive content updates.
-- [ActivityState.pending](activitystate/pending.md)
+- [ActivityState.pending](./pending.md)
   The Live Activity is scheduled to start at a specified date but hasn’t started yet.
-- [ActivityState.stale](activitystate/stale.md)
+- [ActivityState.stale](./stale.md)
   The Live Activity content is out of date and needs an update.
-- [ActivityState.ended](activitystate/ended.md)
+- [ActivityState.ended](./ended.md)
   The Live Activity is visible, but a person, the app, or the system ended it, and it won’t update its content anymore.
 
 

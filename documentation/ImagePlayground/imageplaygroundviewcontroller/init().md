@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Image Playground  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new image-generation view controller for you to present.
 

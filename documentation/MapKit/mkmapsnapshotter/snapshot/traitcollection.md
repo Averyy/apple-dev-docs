@@ -1,7 +1,8 @@
 # traitCollection
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Traits to use when creating the snapshot.
 
@@ -18,9 +19,13 @@ Traits to use when creating the snapshot.
 var traitCollection: UITraitCollection { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITraitCollection * traitCollection;
+```
+
 #### Discussion
 
-You configure the traits when you create snapshotter options. See [`traitCollection`](mkmapsnapshotter/options/traitcollection.md).
+You configure the traits when you create snapshotter options. See [`traitCollection`](../options/traitcollection.md).
 
 
 ---

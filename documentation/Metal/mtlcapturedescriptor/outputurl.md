@@ -1,7 +1,8 @@
 # outputURL
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A URL for a file to write the capture data into.
 
@@ -19,15 +20,20 @@ A URL for a file to write the capture data into.
 var outputURL: URL? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSURL * outputURL;
+```
+
 #### Discussion
 
-The default value is `nil`. If you set [`destination`](mtlcapturedescriptor/destination.md) to [`MTLCaptureDestination.gpuTraceDocument`](mtlcapturedestination/gputracedocument.md), you need to set this property to where you want the file to be written to.
+The default value is `nil`. If you set [`destination`](./destination.md) to [`MTLCaptureDestination.gpuTraceDocument`](../mtlcapturedestination/gputracedocument.md), you need to set this property to where you want the file to be written to.
 
 ## See Also
 
-- [var captureObject: Any?](mtlcapturedescriptor/captureobject.md)
+### Setting capture parameters
+- [var captureObject: Any?](./captureobject.md)
   The instance whose contents should be captured.
-- [var destination: MTLCaptureDestination](mtlcapturedescriptor/destination.md)
+- [var destination: MTLCaptureDestination](./destination.md)
   The destination for any captured command data.
 
 

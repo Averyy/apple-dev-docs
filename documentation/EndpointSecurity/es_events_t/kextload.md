@@ -1,13 +1,14 @@
 # kextload
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties of an event that indicates the loading of a Kernel Extension (KEXT).
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ Properties of an event that indicates the loading of a Kernel Extension (KEXT).
 var kextload: es_event_kextload_t { get set }
 ```
 
+```c
+es_event_kextload_t kextload;
+```
+
 ## See Also
 
-- [var iokit_open: es_event_iokit_open_t](es_events_t/iokit_open.md)
+### Kernel Events
+- [var iokit_open: es_event_iokit_open_t](./iokit_open.md)
   Properties of an event that indicates the opening of an IOKit device.
-- [var kextunload: es_event_kextunload_t](es_events_t/kextunload.md)
+- [var kextunload: es_event_kextunload_t](./kextunload.md)
   Properties of an event that indicates the unloading of a Kernel Extension (KEXT).
 
 

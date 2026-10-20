@@ -1,7 +1,8 @@
 # sceneUserInfoKey
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that reflects the new locked state.
 
@@ -18,13 +19,18 @@ nonisolated
 class let sceneUserInfoKey: String
 ```
 
+```c
+extern NSString * const UIPointerLockStateSceneUserInfoKey;
+```
+
 #### Discussion
 
-The `userInfo` dictionary of the notification contains the [`sceneUserInfoKey`](uipointerlockstate/sceneuserinfokey.md) key, which reflects the new value of the [`isLocked`](uipointerlockstate/islocked.md) property.
+The `userInfo` dictionary of the notification contains the [`sceneUserInfoKey`](./sceneuserinfokey.md) key, which reflects the new value of the [`isLocked`](./islocked.md) property.
 
 ## See Also
 
-- [class let didChangeNotification: NSNotification.Name](uipointerlockstate/didchangenotification.md)
+### Updating the Lock State
+- [class let didChangeNotification: NSNotification.Name](./didchangenotification.md)
   A notification that posts when the value of the locked state for a scene changes.
 
 

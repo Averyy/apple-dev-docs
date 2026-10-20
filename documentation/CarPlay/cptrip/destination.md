@@ -1,14 +1,15 @@
 # destination
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The trip’s destination.
 
 **Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.1+
+- iOS 12.0+ - Deprecated in 26.4
+- iPadOS 12.0+ - Deprecated in 26.4
+- Mac Catalyst 13.1+ - Deprecated in 26.4
 
 ## Declaration
 
@@ -16,9 +17,14 @@ The trip’s destination.
 var destination: MKMapItem { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly) MKMapItem * destination;
+```
+
 ## See Also
 
-- [var origin: MKMapItem](cptrip/origin.md)
+### Getting the Trip’s Origin and Destination
+- [var origin: MKMapItem](./origin.md)
   The trip’s origin.
 
 

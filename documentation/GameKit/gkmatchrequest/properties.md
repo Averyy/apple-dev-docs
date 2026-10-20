@@ -1,7 +1,8 @@
 # properties
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The criteria for the local player that Game Center uses to find other players when using matchmaking rules.
 
@@ -20,24 +21,28 @@ The criteria for the local player that Game Center uses to find other players wh
 var properties: [String : Any]? { get set }
 ```
 
+```objc
+@property (copy, nullable) GKMatchProperties * properties;
+```
+
 ## Mentions
 
-- [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
-- [Finding players with similar skill levels](finding-players-with-similar-skill-levels.md)
-- [Assigning players to teams using rules](assigning-players-to-teams-using-rules.md)
-- [Creating matchmaking rules for backward compatibility](creating-matchmaking-rules-for-backward-compatibility.md)
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
-- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
-- [Letting players join matches using party codes](letting-players-join-matches-using-party-codes.md)
-- [Troubleshooting matchmaking rules using metrics](troubleshooting-matchmaking-rules-using-metrics.md)
+- [Finding players using matchmaking rules](../finding-players-using-matchmaking-rules.md)
+- [Finding players with similar skill levels](../finding-players-with-similar-skill-levels.md)
+- [Assigning players to teams using rules](../assigning-players-to-teams-using-rules.md)
+- [Creating matchmaking rules for backward compatibility](../creating-matchmaking-rules-for-backward-compatibility.md)
+- [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
+- [Finding players for custom server-based games](../finding-players-for-custom-server-based-games.md)
+- [Letting players join matches using party codes](../letting-players-join-matches-using-party-codes.md)
+- [Troubleshooting matchmaking rules using metrics](../troubleshooting-matchmaking-rules-using-metrics.md)
 
 #### Discussion
 
 Matchmaking rules may use one or more of these properties to improve matchmaking results and reduce wait times. You set rules in App Store Connect to find players that best match these properties in a reasonable amount of time by loosening the criteria over time.
 
-This property contains key-value pairs where keys are strings with game-specific meanings, such as the skill level, game mode, play style, and other preferences. The keys can be any string, except `gc`, which GameKit reserves. The values need to be types that the [`JSONSerialization`](https://developer.apple.com/documentation/foundation/jsonserialization) class can convert to JSON data.
+This property contains key-value pairs where keys are strings with game-specific meanings, such as the skill level, game mode, play style, and other preferences. The keys can be any string, except `gc`, which GameKit reserves. The values need to be types that the [`JSONSerialization`](../../Foundation/jsonserialization.md) class can convert to JSON data.
 
-Set this property before you submit the match request to Game Center. For peer-to-peer matches, use the [`findMatch(for:withCompletionHandler:)`](gkmatchmaker/findmatch(for:withcompletionhandler:).md) method or present the [`GKMatchmakerViewController`](gkmatchmakerviewcontroller.md) interface to submit a match request. For hosted matches, use the [`findMatchedPlayers(_:withCompletionHandler:)`](gkmatchmaker/findmatchedplayers(_:withcompletionhandler:).md) method to include other player properties in the result.
+Set this property before you submit the match request to Game Center. For peer-to-peer matches, use the [`findMatch(for:withCompletionHandler:)`](../gkmatchmaker/findmatch%28for,withcompletionhandler%29.md) method or present the [`GKMatchmakerViewController`](../gkmatchmakerviewcontroller.md) interface to submit a match request. For hosted matches, use the [`findMatchedPlayers(_:withCompletionHandler:)`](../gkmatchmaker/findmatchedplayers%28_,withcompletionhandler%29.md) method to include other player properties in the result.
 
 ```swift
 // Create a match request.
@@ -50,15 +55,16 @@ request.queueName = "com.example.mygame.PartyCodeQueue"
 request.properties = [ "partyCode": partyCode ]
 ```
 
-If the [`queueName`](gkmatchrequest/queuename.md) property is `nil`, Game Center doesn’t use matchmaking rules and ignores the [`properties`](gkmatchrequest/properties.md) property.
+If the [`queueName`](./queuename.md) property is `nil`, Game Center doesn’t use matchmaking rules and ignores the [`properties`](./properties.md) property.
 
-For more information, see [`Matchmaking rules`](matchmaking-rules.md).
+For more information, see [Matchmaking rules](../matchmaking-rules.md).
 
 ## See Also
 
-- [var queueName: String?](gkmatchrequest/queuename.md)
+### Matching players using rules
+- [var queueName: String?](./queuename.md)
   The name of the queue that Game Center places the match request in.
-- [var recipientProperties: [GKPlayer : [String : Any]]?](gkmatchrequest/recipientproperties.md)
+- [var recipientProperties: [GKPlayer : [String : Any]]?](./recipientproperties.md)
   The criteria for recipients of the match request that Game Center uses to find other players when using matchmaking rules.
 
 

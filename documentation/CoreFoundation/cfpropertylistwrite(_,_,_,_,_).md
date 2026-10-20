@@ -1,7 +1,8 @@
 # CFPropertyListWrite(_:_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Write the bytes of a serialized property list out to a stream.
 
@@ -20,6 +21,10 @@ Write the bytes of a serialized property list out to a stream.
 func CFPropertyListWrite(_ propertyList: CFPropertyList!, _ stream: CFWriteStream!, _ format: CFPropertyListFormat, _ options: CFOptionFlags, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> CFIndex
 ```
 
+```c
+extern CFIndex CFPropertyListWrite(CFPropertyListRef propertyList, CFWriteStreamRef stream, CFPropertyListFormat format, CFOptionFlags options, CFErrorRef*error);
+```
+
 #### Return Value
 
 The number of bytes written to `stream`. If an error occurs, returns `0`.
@@ -28,17 +33,18 @@ The number of bytes written to `stream`. If an error occurs, returns `0`.
 
 - `propertyList`: The property list to write out.
 - `stream`: The CFWriteStream to which to write the data. The stream must be opened and configured.
-- `format`: A CFPropertyListFormat constant to specify the data format. See [`CFPropertyListFormat`](cfpropertylistformat.md) for possible values.
+- `format`: A CFPropertyListFormat constant to specify the data format. See [`CFPropertyListFormat`](./cfpropertylistformat.md) for possible values.
 - `options`: This parameter is currently unused and should be set to `0`.
-- `error`: If this parameter is non-NULL, if an error occurs, on return this will contain a CFError error describing the problem. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `error`: If this parameter is non-NULL, if an error occurs, on return this will contain a CFError error describing the problem. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 
-- [func CFPropertyListCreateData(CFAllocator!, CFPropertyList!, CFPropertyListFormat, CFOptionFlags, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFData>!](cfpropertylistcreatedata(_:_:_:_:_:).md)
+### Exporting a Property List
+- [func CFPropertyListCreateData(CFAllocator!, CFPropertyList!, CFPropertyListFormat, CFOptionFlags, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFData>!](./cfpropertylistcreatedata%28_,_,_,_,_%29.md)
   Returns a CFData object containing a serialized representation of a given property list in a specified format.
-- [func CFPropertyListCreateXMLData(CFAllocator!, CFPropertyList!) -> Unmanaged<CFData>!](cfpropertylistcreatexmldata(_:_:).md)
+- [func CFPropertyListCreateXMLData(CFAllocator!, CFPropertyList!) -> Unmanaged<CFData>!](./cfpropertylistcreatexmldata%28_,_%29.md)
   Creates an XML representation of the specified property list.
-- [func CFPropertyListWriteToStream(CFPropertyList!, CFWriteStream!, CFPropertyListFormat, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> CFIndex](cfpropertylistwritetostream(_:_:_:_:).md)
+- [func CFPropertyListWriteToStream(CFPropertyList!, CFWriteStream!, CFPropertyListFormat, UnsafeMutablePointer<Unmanaged<CFString>?>!) -> CFIndex](./cfpropertylistwritetostream%28_,_,_,_%29.md)
   Writes the bytes of a property list serialization out to a stream.
 
 

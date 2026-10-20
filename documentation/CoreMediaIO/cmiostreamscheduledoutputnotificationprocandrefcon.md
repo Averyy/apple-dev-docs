@@ -1,7 +1,8 @@
 # CMIOStreamScheduledOutputNotificationProcAndRefCon
 
 **Framework**: Core Media I/O  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,28 +14,33 @@
 struct CMIOStreamScheduledOutputNotificationProcAndRefCon
 ```
 
+```c
+struct CMIOStreamScheduledOutputNotificationProcAndRefCon;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](cmiostreamscheduledoutputnotificationprocandrefcon/init.md)
-- [init(scheduledOutputNotificationProc: CMIOStreamScheduledOutputNotificationProc!, scheduledOutputNotificationRefCon: UnsafeMutableRawPointer!)](cmiostreamscheduledoutputnotificationprocandrefcon/init(scheduledoutputnotificationproc:scheduledoutputnotificationrefcon:).md)
+- [init()](./cmiostreamscheduledoutputnotificationprocandrefcon/init%28%29.md)
+- [init(scheduledOutputNotificationProc: CMIOStreamScheduledOutputNotificationProc!, scheduledOutputNotificationRefCon: UnsafeMutableRawPointer!)](./cmiostreamscheduledoutputnotificationprocandrefcon/init%28scheduledoutputnotificationproc,scheduledoutputnotificationrefcon%29.md)
 ### Instance Properties
-- [var scheduledOutputNotificationProc: CMIOStreamScheduledOutputNotificationProc!](cmiostreamscheduledoutputnotificationprocandrefcon/scheduledoutputnotificationproc.md)
-- [var scheduledOutputNotificationRefCon: UnsafeMutableRawPointer!](cmiostreamscheduledoutputnotificationprocandrefcon/scheduledoutputnotificationrefcon.md)
+- [var scheduledOutputNotificationProc: CMIOStreamScheduledOutputNotificationProc!](./cmiostreamscheduledoutputnotificationprocandrefcon/scheduledoutputnotificationproc.md)
+- [var scheduledOutputNotificationRefCon: UnsafeMutableRawPointer!](./cmiostreamscheduledoutputnotificationprocandrefcon/scheduledoutputnotificationrefcon.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct CMIODeviceAVCCommand](cmiodeviceavccommand.md)
-- [struct CMIODeviceRS422Command](cmiodevicers422command.md)
-- [struct CMIODeviceSMPTETimeCallback](cmiodevicesmptetimecallback.md)
-- [struct CMIODeviceStreamConfiguration](cmiodevicestreamconfiguration.md)
-- [struct CMIOObjectPropertyAddress](cmioobjectpropertyaddress.md)
-- [struct CMIOStreamDeck](cmiostreamdeck.md)
+### Structures
+- [struct CMIODeviceAVCCommand](./cmiodeviceavccommand.md)
+- [struct CMIODeviceRS422Command](./cmiodevicers422command.md)
+- [struct CMIODeviceSMPTETimeCallback](./cmiodevicesmptetimecallback.md)
+- [struct CMIODeviceStreamConfiguration](./cmiodevicestreamconfiguration.md)
+- [struct CMIOObjectPropertyAddress](./cmioobjectpropertyaddress.md)
+- [struct CMIOStreamDeck](./cmiostreamdeck.md)
 
 
 ---

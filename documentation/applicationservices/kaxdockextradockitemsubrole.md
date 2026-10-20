@@ -1,7 +1,8 @@
 # kAXDockExtraDockItemSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An icon in the Dock that represents a Dock Extra.
 
@@ -12,6 +13,10 @@ An icon in the Dock that represents a Dock Extra.
 
 ```swift
 var kAXDockExtraDockItemSubrole: String { get }
+```
+
+```c
+#define kAXDockExtraDockItemSubrole
 ```
 
 

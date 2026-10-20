@@ -1,7 +1,8 @@
 # owner
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The owning variant set spec.
 

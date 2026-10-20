@@ -1,7 +1,8 @@
 # start()
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Initiate some action to open the connection on the network like making a handshake, initiating a multiplexing session, etc. Starts the connection, which will cause the connection to evaluate its path, do resolution, and try to become ready (connected). `NetworkConnection` establishment is asynchronous. `onStateUpdate` will be called when the state changes. If the connection cannot be established, the state will transition to `waiting` with an associated error describing the reason. If an unrecoverable error is encountered, the state will transition to `failed` with an associated error value. If the connection is established, the state will transition to `ready`.
 
@@ -19,6 +20,8 @@ Initiate some action to open the connection on the network like making a handsha
 ```swift
 final func start() -> Self
 ```
+
+Available when `ApplicationProtocol` conforms to `MultiplexProtocol`.
 
 #### Discussion
 

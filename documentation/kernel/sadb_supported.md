@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sadb_supported {
     ...
 };
@@ -17,9 +17,9 @@ struct sadb_supported {
 ## Topics
 
 ### Instance Properties
-- [sadb_supported_exttype](sadb_supported/1588212-sadb_supported_exttype.md)
-- [sadb_supported_len](sadb_supported/1588327-sadb_supported_len.md)
-- [sadb_supported_reserved](sadb_supported/1588330-sadb_supported_reserved.md)
+- [sadb_supported_exttype](./sadb_supported/api-1588212-sadb_supported_exttype.md)
+- [sadb_supported_len](./sadb_supported/api-1588327-sadb_supported_len.md)
+- [sadb_supported_reserved](./sadb_supported/api-1588330-sadb_supported_reserved.md)
 
 
 ---

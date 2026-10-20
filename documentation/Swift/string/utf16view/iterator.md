@@ -1,7 +1,8 @@
 # String.UTF16View.Iterator
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that provides the collection’s iteration interface and encapsulates its iteration state.
 
@@ -28,18 +29,18 @@ By default, a collection conforms to the `Sequence` protocol by supplying `Index
 ## Topics
 
 ### Instance Methods
-- [func next() -> UInt16?](string/utf16view/iterator/next.md)
+- [func next() -> UInt16?](./iterator/next%28%29.md)
   Advances to the next element and returns it, or `nil` if no next element exists.
 ### Type Aliases
-- [String.UTF16View.Iterator.Element](string/utf16view/iterator/element.md)
+- [String.UTF16View.Iterator.Element](./iterator/element.md)
   The type of element traversed by the iterator.
 
 ## Relationships
 
 ### Conforms To
-- [IteratorProtocol](iteratorprotocol.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [IteratorProtocol](../../iteratorprotocol.md)
+- [Sendable](../../sendable.md)
+- [SendableMetatype](../../sendablemetatype.md)
 
 
 ---

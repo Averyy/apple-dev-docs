@@ -1,7 +1,8 @@
 # scheduleBuffer(buffer:time:options:)
 
 **Framework**: PHASE  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Schedules audio data playback at a specific time.
 
@@ -19,6 +20,10 @@ Schedules audio data playback at a specific time.
 func scheduleBuffer(buffer: AVAudioPCMBuffer, time when: AVAudioTime?, options: PHASEPushStreamBufferOptions = [])
 ```
 
+```objc
+- (void) scheduleBuffer:(AVAudioPCMBuffer *) buffer atTime:(AVAudioTime *) when options:(PHASEPushStreamBufferOptions) options;
+```
+
 ## Parameters
 
 - `buffer`: Data that represents one portion of a contiguous audio stream.
@@ -27,13 +32,14 @@ func scheduleBuffer(buffer: AVAudioPCMBuffer, time when: AVAudioTime?, options: 
 
 ## See Also
 
-- [func scheduleBuffer(buffer: AVAudioPCMBuffer)](phasepushstreamnode/schedulebuffer(buffer:).md)
+### Providing Audio Data
+- [func scheduleBuffer(buffer: AVAudioPCMBuffer)](./schedulebuffer%28buffer%29.md)
   Schedules audio data for playback.
-- [func scheduleBuffer(buffer: AVAudioPCMBuffer, time: AVAudioTime?, options: PHASEPushStreamBufferOptions, completionCallbackType: PHASEPushStreamCompletionCallbackCondition, completionHandler: (PHASEPushStreamCompletionCallbackCondition) -> Void)](phasepushstreamnode/schedulebuffer(buffer:time:options:completioncallbacktype:completionhandler:).md)
+- [func scheduleBuffer(buffer: AVAudioPCMBuffer, time: AVAudioTime?, options: PHASEPushStreamBufferOptions, completionCallbackType: PHASEPushStreamCompletionCallbackCondition, completionHandler: (PHASEPushStreamCompletionCallbackCondition) -> Void)](./schedulebuffer%28buffer,time,options,completioncallbacktype,completionhandler%29.md)
   Schedules audio data playback at a specific time with a completion handler.
-- [func scheduleBuffer(buffer: AVAudioPCMBuffer, completionCallbackType: PHASEPushStreamCompletionCallbackCondition, completionHandler: (PHASEPushStreamCompletionCallbackCondition) -> Void)](phasepushstreamnode/schedulebuffer(buffer:completioncallbacktype:completionhandler:).md)
+- [func scheduleBuffer(buffer: AVAudioPCMBuffer, completionCallbackType: PHASEPushStreamCompletionCallbackCondition, completionHandler: (PHASEPushStreamCompletionCallbackCondition) -> Void)](./schedulebuffer%28buffer,completioncallbacktype,completionhandler%29.md)
   Schedules audio data playback with a completion handler.
-- [enum PHASEPushStreamCompletionCallbackCondition](phasepushstreamcompletioncallbackcondition.md)
+- [enum PHASEPushStreamCompletionCallbackCondition](../phasepushstreamcompletioncallbackcondition.md)
   A status that describes the results after the app schedules a push-stream buffer.
 
 

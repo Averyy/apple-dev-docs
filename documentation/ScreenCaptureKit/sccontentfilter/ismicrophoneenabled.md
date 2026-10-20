@@ -1,7 +1,8 @@
 # isMicrophoneEnabled
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var isMicrophoneEnabled: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly, getter=isMicrophoneEnabled) BOOL microphoneEnabled;
 ```
 
 #### Discussion

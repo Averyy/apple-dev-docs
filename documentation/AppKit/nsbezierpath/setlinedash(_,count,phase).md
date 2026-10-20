@@ -1,17 +1,22 @@
 # setLineDash(_:count:phase:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the line-stroking pattern for the path.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setLineDash(_ pattern: UnsafePointer<CGFloat>?, count: Int, phase: CGFloat)
+```
+
+```objc
+- (void) setLineDash:(const CGFloat *) pattern count:(NSInteger) count phase:(CGFloat) phase;
 ```
 
 #### Discussion
@@ -35,19 +40,20 @@ In the above example, if you set `phase` to 6.0, the line dash would begin exact
 
 ## See Also
 
-- [var windingRule: NSBezierPath.WindingRule](nsbezierpath/windingrule-swift.property.md)
+### Accessing a Path’s Attributes
+- [var windingRule: NSBezierPath.WindingRule](./windingrule-swift.property.md)
   The winding rule used to fill the path.
-- [var lineCapStyle: NSBezierPath.LineCapStyle](nsbezierpath/linecapstyle-swift.property.md)
+- [var lineCapStyle: NSBezierPath.LineCapStyle](./linecapstyle-swift.property.md)
   The line cap style for the path.
-- [var lineJoinStyle: NSBezierPath.LineJoinStyle](nsbezierpath/linejoinstyle-swift.property.md)
+- [var lineJoinStyle: NSBezierPath.LineJoinStyle](./linejoinstyle-swift.property.md)
   The line join style for the path.
-- [var lineWidth: CGFloat](nsbezierpath/linewidth.md)
+- [var lineWidth: CGFloat](./linewidth.md)
   The width of stroked path lines.
-- [var miterLimit: CGFloat](nsbezierpath/miterlimit.md)
+- [var miterLimit: CGFloat](./miterlimit.md)
   The limit at which miter joins are converted to bevel joins.
-- [var flatness: CGFloat](nsbezierpath/flatness.md)
+- [var flatness: CGFloat](./flatness.md)
   The accuracy with which curves are rendered.
-- [func getLineDash(UnsafeMutablePointer<CGFloat>?, count: UnsafeMutablePointer<Int>?, phase: UnsafeMutablePointer<CGFloat>?)](nsbezierpath/getlinedash(_:count:phase:).md)
+- [func getLineDash(UnsafeMutablePointer<CGFloat>?, count: UnsafeMutablePointer<Int>?, phase: UnsafeMutablePointer<CGFloat>?)](./getlinedash%28_,count,phase%29.md)
   Returns the line-stroking pattern for the receiver.
 
 

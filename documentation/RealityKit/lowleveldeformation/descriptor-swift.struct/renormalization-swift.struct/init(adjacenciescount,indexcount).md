@@ -1,7 +1,8 @@
 # init(adjacenciesCount:indexCount:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a renormalization descriptor.
 

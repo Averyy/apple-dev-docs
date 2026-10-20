@@ -1,7 +1,8 @@
 # isTypingAdaptationEnabled
 
 **Framework**: BrowserEngineKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that controls whether the system learns new words and corrections.
 
@@ -17,13 +18,18 @@ A Boolean value that controls whether the system learns new words and correction
 optional var isTypingAdaptationEnabled: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isTypingAdaptationEnabled) BOOL typingAdaptationEnabled;
+```
+
 #### Discussion
 
 Setting this property to `false` prevents the system from learning of words or corrections by omitting their addition to the keyboard lexicon.
 
 ## See Also
 
-- [var isSingleLineDocument: Bool](beextendedtextinputtraits/issinglelinedocument.md)
+### Customizing text input behavior
+- [var isSingleLineDocument: Bool](./issinglelinedocument.md)
   A Boolean value that represents whether the active web input field is a single line document.
 
 

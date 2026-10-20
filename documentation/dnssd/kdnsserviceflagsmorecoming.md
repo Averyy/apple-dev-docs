@@ -1,7 +1,8 @@
 # kDNSServiceFlagsMoreComing
 
 **Framework**: dnssd  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var kDNSServiceFlagsMoreComing: UInt32 { get }
+```
+
+```c
+kDNSServiceFlagsMoreComing
 ```
 
 #### Discussion

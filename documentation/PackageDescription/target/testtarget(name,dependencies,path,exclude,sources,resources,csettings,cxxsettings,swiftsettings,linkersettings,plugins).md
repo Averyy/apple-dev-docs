@@ -1,7 +1,8 @@
 # testTarget(name:dependencies:path:exclude:sources:resources:cSettings:cxxSettings:swiftSettings:linkerSettings:plugins:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a test target.
 
@@ -20,7 +21,7 @@ Write test targets using the XCTest testing framework. Test targets generally de
 - `name`: The name of the target.
 - `dependencies`: The dependencies of the target. A dependency can be another target in the package or a product from a package dependency.
 - `path`: The custom path for the target. By default, the Swift Package Manager requires a target’s sources to reside at predefined search paths; for example, `[PackageRoot]/Sources/[TargetName]`. Don’t escape the package root; for example, values like `../Foo` or `/Foo` are invalid.
-- `exclude`: A list of paths to files or directories that the Swift Package Manager shouldn’t consider to be source or resource files. A path is relative to the target’s directory. This parameter has precedence over the [`sources`](target/sources.md) parameter.
+- `exclude`: A list of paths to files or directories that the Swift Package Manager shouldn’t consider to be source or resource files. A path is relative to the target’s directory. This parameter has precedence over the [`sources`](./sources.md) parameter.
 - `sources`: An explicit list of source files. If you provide a path to a directory, the Swift Package Manager searches for valid source files recursively.
 - `resources`: An explicit list of resources files.
 - `cSettings`: The C settings for this target.
@@ -31,13 +32,14 @@ Write test targets using the XCTest testing framework. Test targets generally de
 
 ## See Also
 
-- [static func testTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, resources: [Resource]?, packageAccess: Bool, cSettings: [CSetting]?, cxxSettings: [CXXSetting]?, swiftSettings: [SwiftSetting]?, linkerSettings: [LinkerSetting]?, plugins: [Target.PluginUsage]?) -> Target](target/testtarget(name:dependencies:path:exclude:sources:resources:packageaccess:csettings:cxxsettings:swiftsettings:linkersettings:plugins:).md)
+### Creating a Test Target
+- [static func testTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, resources: [Resource]?, packageAccess: Bool, cSettings: [CSetting]?, cxxSettings: [CXXSetting]?, swiftSettings: [SwiftSetting]?, linkerSettings: [LinkerSetting]?, plugins: [Target.PluginUsage]?) -> Target](./testtarget%28name,dependencies,path,exclude,sources,resources,packageaccess,csettings,cxxsettings,swiftsettings,linkersettings,plugins%29.md)
   Creates a test target.
-- [static func testTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, resources: [Resource]?, cSettings: [CSetting]?, cxxSettings: [CXXSetting]?, swiftSettings: [SwiftSetting]?, linkerSettings: [LinkerSetting]?) -> Target](target/testtarget(name:dependencies:path:exclude:sources:resources:csettings:cxxsettings:swiftsettings:linkersettings:).md)
+- [static func testTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, resources: [Resource]?, cSettings: [CSetting]?, cxxSettings: [CXXSetting]?, swiftSettings: [SwiftSetting]?, linkerSettings: [LinkerSetting]?) -> Target](./testtarget%28name,dependencies,path,exclude,sources,resources,csettings,cxxsettings,swiftsettings,linkersettings%29.md)
   Creates a test target.
-- [static func testTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, cSettings: [CSetting]?, cxxSettings: [CXXSetting]?, swiftSettings: [SwiftSetting]?, linkerSettings: [LinkerSetting]?) -> Target](target/testtarget(name:dependencies:path:exclude:sources:csettings:cxxsettings:swiftsettings:linkersettings:).md)
+- [static func testTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?, cSettings: [CSetting]?, cxxSettings: [CXXSetting]?, swiftSettings: [SwiftSetting]?, linkerSettings: [LinkerSetting]?) -> Target](./testtarget%28name,dependencies,path,exclude,sources,csettings,cxxsettings,swiftsettings,linkersettings%29.md)
   Creates a test target.
-- [static func testTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?) -> Target](target/testtarget(name:dependencies:path:exclude:sources:).md)
+- [static func testTarget(name: String, dependencies: [Target.Dependency], path: String?, exclude: [String], sources: [String]?) -> Target](./testtarget%28name,dependencies,path,exclude,sources%29.md)
   Creates a test target.
 
 

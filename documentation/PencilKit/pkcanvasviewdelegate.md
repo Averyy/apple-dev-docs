@@ -1,7 +1,8 @@
 # PKCanvasViewDelegate
 
 **Framework**: PencilKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods for monitoring drawing related changes in a canvas view.
 
@@ -18,35 +19,40 @@ Methods for monitoring drawing related changes in a canvas view.
 protocol PKCanvasViewDelegate : UIScrollViewDelegate
 ```
 
+```objc
+@protocol PKCanvasViewDelegate <NSObject, UIScrollViewDelegate>
+```
+
 #### Overview
 
-Implement the methods of the [`PKCanvasViewDelegate`](pkcanvasviewdelegate.md) protocol to monitor drawing events in a [`PKCanvasView`](pkcanvasview.md) object. Specifically, determine the start- and end-of-event sequences using the currently selected tool, and determine when those events affect the drawn content.
+Implement the methods of the [`PKCanvasViewDelegate`](./pkcanvasviewdelegate.md) protocol to monitor drawing events in a [`PKCanvasView`](./pkcanvasview.md) object. Specifically, determine the start- and end-of-event sequences using the currently selected tool, and determine when those events affect the drawn content.
 
 ## Topics
 
 ### Responding to drawing-related changes
-- [func canvasViewDrawingDidChange(PKCanvasView)](pkcanvasviewdelegate/canvasviewdrawingdidchange(_:).md)
+- [func canvasViewDrawingDidChange(PKCanvasView)](./pkcanvasviewdelegate/canvasviewdrawingdidchange%28_%29.md)
   Tells the delegate that the contents of the current drawing changed.
-- [func canvasViewDidFinishRendering(PKCanvasView)](pkcanvasviewdelegate/canvasviewdidfinishrendering(_:).md)
+- [func canvasViewDidFinishRendering(PKCanvasView)](./pkcanvasviewdelegate/canvasviewdidfinishrendering%28_%29.md)
   Tells the delegate that the previously drawn content is ready to display.
 ### Responding to selection changes
-- [func canvasViewSelectionDidChange(PKCanvasView)](pkcanvasviewdelegate/canvasviewselectiondidchange(_:).md)
+- [func canvasViewSelectionDidChange(PKCanvasView)](./pkcanvasviewdelegate/canvasviewselectiondidchange%28_%29.md)
   Tells the delegate that the selection changes.
 ### Responding to new event sequences
-- [func canvasViewDidBeginUsingTool(PKCanvasView)](pkcanvasviewdelegate/canvasviewdidbeginusingtool(_:).md)
+- [func canvasViewDidBeginUsingTool(PKCanvasView)](./pkcanvasviewdelegate/canvasviewdidbeginusingtool%28_%29.md)
   Tells the delegate that the user started a new drawing sequence with the currently selected tool.
-- [func canvasViewDidEndUsingTool(PKCanvasView)](pkcanvasviewdelegate/canvasviewdidendusingtool(_:).md)
+- [func canvasViewDidEndUsingTool(PKCanvasView)](./pkcanvasviewdelegate/canvasviewdidendusingtool%28_%29.md)
   Tells the delegate that the user ended a drawing sequence with the tool they were using.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIScrollViewDelegate](../uikit/uiscrollviewdelegate.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIScrollViewDelegate](../UIKit/uiscrollviewdelegate.md)
 
 ## See Also
 
-- [var delegate: (any PKCanvasViewDelegate)?](pkcanvasview/delegate.md)
+### Responding to drawing-related changes
+- [var delegate: (any PKCanvasViewDelegate)?](./pkcanvasview/delegate.md)
   The object you use to respond to changes in the drawn content or with the selected tool.
 
 

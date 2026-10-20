@@ -1,7 +1,8 @@
 # CXErrorCodeIncomingCallError.Code
 
 **Framework**: CallKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Codes for errors that occur during incoming calls.
 
@@ -18,51 +19,56 @@ Codes for errors that occur during incoming calls.
 enum Code
 ```
 
+```c
+enum CXErrorCodeIncomingCallError : NSInteger;
+```
+
 ## Topics
 
 ### Errors
-- [CXErrorCodeIncomingCallError.Code.unknown](cxerrorcodeincomingcallerror-swift.struct/code/unknown.md)
+- [CXErrorCodeIncomingCallError.Code.unknown](./code/unknown.md)
   An unknown error occurred.
-- [CXErrorCodeIncomingCallError.Code.unentitled](cxerrorcodeincomingcallerror-swift.struct/code/unentitled.md)
+- [CXErrorCodeIncomingCallError.Code.unentitled](./code/unentitled.md)
   The app isn’t entitled to receive incoming calls.
-- [CXErrorCodeIncomingCallError.Code.callUUIDAlreadyExists](cxerrorcodeincomingcallerror-swift.struct/code/calluuidalreadyexists.md)
+- [CXErrorCodeIncomingCallError.Code.callUUIDAlreadyExists](./code/calluuidalreadyexists.md)
   The incoming call UUID already exists.
-- [CXErrorCodeIncomingCallError.Code.filteredByDoNotDisturb](cxerrorcodeincomingcallerror-swift.struct/code/filteredbydonotdisturb.md)
+- [CXErrorCodeIncomingCallError.Code.filteredByDoNotDisturb](./code/filteredbydonotdisturb.md)
   The incoming call is filtered because Do Not Disturb is active and the incoming caller is not a VIP.
-- [CXErrorCodeIncomingCallError.Code.filteredByBlockList](cxerrorcodeincomingcallerror-swift.struct/code/filteredbyblocklist.md)
+- [CXErrorCodeIncomingCallError.Code.filteredByBlockList](./code/filteredbyblocklist.md)
   The incoming call is filtered because the incoming caller has been blocked by the user.
 ### Enumeration Cases
-- [CXErrorCodeIncomingCallError.Code.filteredDuringRestrictedSharingMode](cxerrorcodeincomingcallerror-swift.struct/code/filteredduringrestrictedsharingmode.md)
-- [CXErrorCodeIncomingCallError.Code.callIsProtected](cxerrorcodeincomingcallerror-swift.struct/code/callisprotected.md)
-- [CXErrorCodeIncomingCallError.Code.filteredBySensitiveParticipants](cxerrorcodeincomingcallerror-swift.struct/code/filteredbysensitiveparticipants.md)
+- [CXErrorCodeIncomingCallError.Code.filteredDuringRestrictedSharingMode](./code/filteredduringrestrictedsharingmode.md)
+- [CXErrorCodeIncomingCallError.Code.callIsProtected](./code/callisprotected.md)
+- [CXErrorCodeIncomingCallError.Code.filteredBySensitiveParticipants](./code/filteredbysensitiveparticipants.md)
 ### Initializers
-- [init?(rawValue: Int)](cxerrorcodeincomingcallerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CXCallEndedReason](cxcallendedreason.md)
+### Handling Errors
+- [enum CXCallEndedReason](../cxcallendedreason.md)
   The reason that a call ended.
-- [struct CXError](cxerror.md)
+- [struct CXError](../cxerror.md)
   Error codes for the CallKit errors.
-- [CXError.Code](cxerror/code.md)
+- [CXError.Code](../cxerror/code.md)
   Error codes for the CallKit errors.
-- [struct CXErrorCodeIncomingCallError](cxerrorcodeincomingcallerror-swift.struct.md)
+- [struct CXErrorCodeIncomingCallError](../cxerrorcodeincomingcallerror-swift.struct.md)
   Codes for errors that occur during incoming calls.
-- [struct CXErrorCodeNotificationServiceExtensionError](cxerrorcodenotificationserviceextensionerror-swift.struct.md)
+- [struct CXErrorCodeNotificationServiceExtensionError](../cxerrorcodenotificationserviceextensionerror-swift.struct.md)
   Errors that can occur when reporting new, incoming VoIP calls.
-- [let CXErrorDomain: String](cxerrordomain.md)
+- [let CXErrorDomain: String](../cxerrordomain.md)
   The domain for CallKit errors.
-- [let CXErrorDomainIncomingCall: String](cxerrordomainincomingcall.md)
+- [let CXErrorDomainIncomingCall: String](../cxerrordomainincomingcall.md)
   The domain for errors that occur during incoming calls.
 
 

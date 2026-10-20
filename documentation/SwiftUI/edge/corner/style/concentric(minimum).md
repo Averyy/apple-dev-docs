@@ -1,7 +1,8 @@
 # concentric(minimum:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A rounded corner style where the corner’s radius shares a center point with the container shape’s corner radius, with an optional minimum radius.
 

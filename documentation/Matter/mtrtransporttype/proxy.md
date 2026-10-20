@@ -1,7 +1,8 @@
 # MTRTransportType.proxy
 
 **Framework**: Matter  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.2+
@@ -16,6 +17,10 @@
 
 ```swift
 case proxy
+```
+
+```c
+MTRTransportTypeProxy
 ```
 
 

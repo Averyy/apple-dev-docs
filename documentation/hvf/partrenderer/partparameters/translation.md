@@ -1,7 +1,8 @@
 # translation
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The translation applied to the part
 

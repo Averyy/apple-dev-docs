@@ -1,7 +1,8 @@
 # CLActivityType.airborne
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that indicates activities in the air.
 
@@ -20,21 +21,26 @@ The value that indicates activities in the air.
 case airborne
 ```
 
+```c
+CLActivityTypeAirborne
+```
+
 #### Discussion
 
 Use this activity type for activities such as flying in an airplane or helicopter, paragliding, flying on a drone, skydiving, and so on. This activity also includes runway taxiing.
 
 ## See Also
 
-- [CLActivityType.automotiveNavigation](clactivitytype/automotivenavigation.md)
+### Activity types
+- [CLActivityType.automotiveNavigation](./automotivenavigation.md)
   The value that indicates positioning in an automobile following a road network.
-- [CLActivityType.fitness](clactivitytype/fitness.md)
+- [CLActivityType.fitness](./fitness.md)
   The value that indicates positioning during dedicated fitness sessions, such as walking workouts, running workouts, cycling workouts, and so on.
-- [CLActivityType.maritime](clactivitytype/maritime.md)
+- [CLActivityType.maritime](./maritime.md)
   The value that indicates positioning for activities in vessels on water, including while anchored.
-- [CLActivityType.other](clactivitytype/other.md)
+- [CLActivityType.other](./other.md)
   The value that indicates the app is using location manager for an unspecified activity.
-- [CLActivityType.otherNavigation](clactivitytype/othernavigation.md)
+- [CLActivityType.otherNavigation](./othernavigation.md)
   The value that indicates positioning for activities that don’t or may not adhere to roads such as cycling, scooters, trains, boats and off-road vehicles.
 
 

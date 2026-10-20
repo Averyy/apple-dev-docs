@@ -1,7 +1,8 @@
 # destinationMatrixBatchIndex
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 11.0+
@@ -17,10 +18,15 @@
 var destinationMatrixBatchIndex: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger destinationMatrixBatchIndex;
+```
+
 ## See Also
 
-- [var dataLayout: MPSDataLayout](mpsimagecopytomatrix/datalayout.md)
-- [var destinationMatrixOrigin: MTLOrigin](mpsimagecopytomatrix/destinationmatrixorigin.md)
+### Instance Properties
+- [var dataLayout: MPSDataLayout](./datalayout.md)
+- [var destinationMatrixOrigin: MTLOrigin](./destinationmatrixorigin.md)
 
 
 ---

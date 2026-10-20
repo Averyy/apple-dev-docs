@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A file URL to a directory on the host system to expose to the guest.
 
@@ -14,13 +15,18 @@ A file URL to a directory on the host system to expose to the guest.
 var url: URL { get }
 ```
 
+```objc
+@property (copy, readonly) NSURL * URL;
+```
+
 #### Discussion
 
 The URL must point to an existing directory path in the host file system.
 
 ## See Also
 
-- [var isReadOnly: Bool](vzshareddirectory/isreadonly.md)
+### Accessing Directory Properties
+- [var isReadOnly: Bool](./isreadonly.md)
   A Boolean value that indicates whether the directory is read-only to the guest.
 
 

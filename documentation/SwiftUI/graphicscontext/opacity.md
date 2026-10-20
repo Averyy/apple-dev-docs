@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The opacity of drawing operations in the context.
 
@@ -26,9 +27,10 @@ Set this value to affect the opacity of content that you subsequently draw into 
 
 ## See Also
 
-- [var blendMode: GraphicsContext.BlendMode](graphicscontext/blendmode-swift.property.md)
+### Setting opacity and the blend mode
+- [var blendMode: GraphicsContext.BlendMode](./blendmode-swift.property.md)
   The blend mode used by drawing operations in the context.
-- [GraphicsContext.BlendMode](graphicscontext/blendmode-swift.struct.md)
+- [GraphicsContext.BlendMode](./blendmode-swift.struct.md)
   The ways that a graphics context combines new content with background content.
 
 

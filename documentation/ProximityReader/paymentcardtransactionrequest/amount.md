@@ -1,7 +1,8 @@
 # amount
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of the purchase or refund in the specified currency.
 
@@ -22,15 +23,16 @@ The value in this property must be greater than 0.
 
 ## See Also
 
-- [let currencyCode: String](paymentcardtransactionrequest/currencycode.md)
+### Getting the transaction details
+- [let currencyCode: String](./currencycode.md)
   The ISO 4217 code that indicates the currency type.
-- [let type: PaymentCardTransactionRequest.TransactionType](paymentcardtransactionrequest/type.md)
+- [let type: PaymentCardTransactionRequest.TransactionType](./type.md)
   The type of transaction, either a purchase or a refund.
-- [PaymentCardTransactionRequest.TransactionType](paymentcardtransactionrequest/transactiontype.md)
+- [PaymentCardTransactionRequest.TransactionType](./transactiontype.md)
   The type of transaction to perform.
-- [var transactionDescription: PaymentCardTransactionRequest.TransactionAmountDescription?](paymentcardtransactionrequest/transactiondescription.md)
+- [var transactionDescription: PaymentCardTransactionRequest.TransactionAmountDescription?](./transactiondescription.md)
   An optional description of the current transaction meant to provide more context, such as a recurring payment being setup or a surcharge applied.
-- [PaymentCardTransactionRequest.TransactionAmountDescription](paymentcardtransactionrequest/transactionamountdescription.md)
+- [PaymentCardTransactionRequest.TransactionAmountDescription](./transactionamountdescription.md)
   Values that provide additional information about the transaction amount.
 
 

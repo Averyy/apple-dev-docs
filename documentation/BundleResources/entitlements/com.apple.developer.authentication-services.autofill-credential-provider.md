@@ -1,7 +1,8 @@
 # AutoFill Credential Provider Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app may, with user permission, provide user names and passwords for AutoFill in Safari and other apps.
 
@@ -11,9 +12,10 @@ A Boolean value that indicates whether the app may, with user permission, provid
 - macOS 11.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.authentication-services.autofill-credential-provider` (AutoFill Credential Provider)
+- **Type**: boolean
 
 #### Discussion
 
@@ -21,9 +23,10 @@ To add this entitlement to a target, enable the AutoFill Credential Provider cap
 
 ## See Also
 
-- [Account Creation Requires Phone Number](entitlements/com.apple.developer.authentication-services.account-creation-requires-phone-number.md)
+### Authentication
+- [Account Creation Requires Phone Number](./com.apple.developer.authentication-services.account-creation-requires-phone-number.md)
   A Boolean value that indicates whether an app requires someone to provide a phone number to create an account.
-- [Sign in with Apple Entitlement](entitlements/com.apple.developer.applesignin.md)
+- [Sign in with Apple Entitlement](./com.apple.developer.applesignin.md)
   An entitlement that lets your app use Sign in with Apple.
 
 

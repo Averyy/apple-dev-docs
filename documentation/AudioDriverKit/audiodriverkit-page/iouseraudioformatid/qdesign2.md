@@ -1,7 +1,8 @@
 # QDesign2
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The QDesign2 music format.
 
@@ -10,7 +11,7 @@ The QDesign2 music format.
 
 ## Declaration
 
-```swift
+```c
 QDesign2
 ```
 
@@ -20,7 +21,8 @@ This format uses no flags.
 
 ## See Also
 
-- [QDesign](audiodriverkit/iouseraudioformatid/qdesign.md)
+### QDesign Music Formats
+- [QDesign](./qdesign.md)
   The QDesign music format.
 
 

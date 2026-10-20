@@ -1,14 +1,15 @@
 # kGUARD_EXC_UNGUARDED
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.9+
 
 ## Declaration
 
-```swift
+```c
 kGUARD_EXC_UNGUARDED = 8
 ```
 

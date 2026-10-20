@@ -1,7 +1,8 @@
 # dispatch_allow_send_signals(_:)
 
 **Framework**: Dispatch  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 17.4+
@@ -14,6 +15,10 @@
 
 ```swift
 func dispatch_allow_send_signals(_ preserve_signum: Int32) -> Int32
+```
+
+```c
+extern int dispatch_allow_send_signals(int preserve_signum);
 ```
 
 

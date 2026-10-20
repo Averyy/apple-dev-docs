@@ -1,7 +1,8 @@
 # overallDurationHint
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total duration of fragments that currently exist, or may exist in the future.
 
@@ -21,13 +22,14 @@ var overallDurationHint: CMTime { get }
 
 #### Discussion
 
-For QuickTime movie files and MPEG-4 files, the asset retrieves this value from the `mehd` box of the `mvex` box, if present. If no total fragment duration hint is available, the value of this property is [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid).
+For QuickTime movie files and MPEG-4 files, the asset retrieves this value from the `mehd` box of the `mvex` box, if present. If no total fragment duration hint is available, the value of this property is [`invalid`](../../CoreMedia/cmtime/invalid.md).
 
 ## See Also
 
-- [var canContainFragments: Bool](avmutablemovie/cancontainfragments.md)
+### Determining fragment support
+- [var canContainFragments: Bool](./cancontainfragments.md)
   A Boolean value that indicates whether you can extend the asset by fragments.
-- [var containsFragments: Bool](avmutablemovie/containsfragments.md)
+- [var containsFragments: Bool](./containsfragments.md)
   A Boolean value that indicates whether at least one movie fragment extends the asset.
 
 

@@ -1,7 +1,8 @@
 # TextAlignment.center
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+
@@ -20,8 +21,9 @@ case center
 
 ## See Also
 
-- [TextAlignment.leading](textalignment/leading.md)
-- [TextAlignment.trailing](textalignment/trailing.md)
+### Getting text alignments
+- [TextAlignment.leading](./leading.md)
+- [TextAlignment.trailing](./trailing.md)
 
 
 ---

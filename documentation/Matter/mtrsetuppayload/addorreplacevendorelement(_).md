@@ -1,7 +1,8 @@
 # addOrReplaceVendorElement(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 func addOrReplaceVendorElement(_ element: MTROptionalQRCodeInfo)
+```
+
+```objc
+- (void) addOrReplaceVendorElement:(MTROptionalQRCodeInfo *) element;
 ```
 
 

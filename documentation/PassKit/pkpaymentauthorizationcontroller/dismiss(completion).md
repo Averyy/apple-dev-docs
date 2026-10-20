@@ -1,7 +1,8 @@
 # dismiss(completion:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Dismisses the payment sheet.
 
@@ -16,12 +17,20 @@ Dismisses the payment sheet.
 ## Declaration
 
 ```swift
+func dismiss(completion: (@Sendable () -> Void)? = nil)
+```
+
+```swift
 func dismiss() async
+```
+
+```objc
+- (void) dismissWithCompletion:(void (^)()) completion;
 ```
 
 #### Discussion
 
-Call this method when you receive the [`paymentAuthorizationControllerDidFinish(_:)`](pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish(_:).md) delegate callback, or otherwise want to dismiss the payment sheet.
+Call this method when you receive the [`paymentAuthorizationControllerDidFinish(_:)`](../pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontrollerdidfinish%28_%29.md) delegate callback, or otherwise want to dismiss the payment sheet.
 
 ## Parameters
 
@@ -29,11 +38,12 @@ Call this method when you receive the [`paymentAuthorizationControllerDidFinish(
 
 ## See Also
 
-- [var delegate: (any PKPaymentAuthorizationControllerDelegate)?](pkpaymentauthorizationcontroller/delegate.md)
+### Handling user interactions
+- [var delegate: (any PKPaymentAuthorizationControllerDelegate)?](./delegate.md)
   The controller’s delegate.
-- [protocol PKPaymentAuthorizationControllerDelegate](pkpaymentauthorizationcontrollerdelegate.md)
+- [protocol PKPaymentAuthorizationControllerDelegate](../pkpaymentauthorizationcontrollerdelegate.md)
   Methods that let you respond to user interactions with your payment authorization controller.
-- [func present(completion: ((Bool) -> Void)?)](pkpaymentauthorizationcontroller/present(completion:).md)
+- [func present(completion: ((Bool) -> Void)?)](./present%28completion%29.md)
   Presents the payment sheet modally over your app.
 
 

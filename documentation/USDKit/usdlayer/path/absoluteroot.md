@@ -1,7 +1,8 @@
 # absoluteRoot
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The absolute root, `/`.
 

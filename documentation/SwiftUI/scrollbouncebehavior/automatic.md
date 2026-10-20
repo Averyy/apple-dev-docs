@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic behavior.
 
@@ -22,13 +23,14 @@ static var automatic: ScrollBounceBehavior { get }
 
 #### Discussion
 
-The scrollable view automatically chooses whether content bounces when people scroll to the end of the view’s content. By default, scrollable views use the [`always`](scrollbouncebehavior/always.md) behavior.
+The scrollable view automatically chooses whether content bounces when people scroll to the end of the view’s content. By default, scrollable views use the [`always`](./always.md) behavior.
 
 ## See Also
 
-- [static var always: ScrollBounceBehavior](scrollbouncebehavior/always.md)
+### Bounce behaviors
+- [static var always: ScrollBounceBehavior](./always.md)
   The scrollable view always bounces.
-- [static var basedOnSize: ScrollBounceBehavior](scrollbouncebehavior/basedonsize.md)
+- [static var basedOnSize: ScrollBounceBehavior](./basedonsize.md)
   The scrollable view bounces when its content is large enough to require scrolling.
 
 

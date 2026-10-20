@@ -1,23 +1,24 @@
 # serial
 
 **Framework**: SerialDriverKit  
-**Kind**: namespace
+**Kind**: namespace  
+**Role**: Namespace
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```cpp
 namespace serial;
 ```
 
 ## Topics
 
 ### Structures
-- [SerialPortInterface](driverkit/serial/serialportinterface.md)
+- [SerialPortInterface](./serial/serialportinterface.md)
 ### Variables
-- [kSerialQueueLogSizeMax](driverkit/serial/kserialqueuelogsizemax.md)
+- [kSerialQueueLogSizeMax](./serial/kserialqueuelogsizemax.md)
 
 
 ---

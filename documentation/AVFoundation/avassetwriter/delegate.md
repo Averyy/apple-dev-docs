@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate object that responds to asset-writing events.
 
@@ -19,17 +20,22 @@ A delegate object that responds to asset-writing events.
 weak var delegate: (any AVAssetWriterDelegate)? { get set }
 ```
 
+```objc
+@property (weak, nullable) id<AVAssetWriterDelegate> delegate;
+```
+
 ## See Also
 
-- [protocol AVAssetWriterDelegate](avassetwriterdelegate.md)
+### Configuring segment writing
+- [protocol AVAssetWriterDelegate](../avassetwriterdelegate.md)
   A delegate protocol that defines the methods to implement to respond to asset-writing events.
-- [var preferredOutputSegmentInterval: CMTime](avassetwriter/preferredoutputsegmentinterval.md)
+- [var preferredOutputSegmentInterval: CMTime](./preferredoutputsegmentinterval.md)
   The interval of output segments that you prefer.
-- [var initialSegmentStartTime: CMTime](avassetwriter/initialsegmentstarttime.md)
+- [var initialSegmentStartTime: CMTime](./initialsegmentstarttime.md)
   The start time of the initial segment.
-- [var outputFileTypeProfile: AVFileTypeProfile?](avassetwriter/outputfiletypeprofile.md)
+- [var outputFileTypeProfile: AVFileTypeProfile?](./outputfiletypeprofile.md)
   A profile for the output file type.
-- [func flushSegment()](avassetwriter/flushsegment.md)
+- [func flushSegment()](./flushsegment%28%29.md)
   Closes the current segment and outputs it to a delegate method.
 
 

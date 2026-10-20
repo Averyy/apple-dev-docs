@@ -1,7 +1,8 @@
 # readAttributeNullableInt64s(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 func readAttributeNullableInt64s(with params: MTRReadParams?) -> [String : Any]?
+```
+
+```objc
+- (NSDictionary<NSString *,id> *) readAttributeNullableInt64sWithParams:(MTRReadParams *) params;
 ```
 
 

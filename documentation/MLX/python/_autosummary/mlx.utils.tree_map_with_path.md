@@ -6,37 +6,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.utils.t
 
 # mlx.utils.tree_map_with_path
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.utils.tree_map_with_path.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.utils.tree_map_with_path
-
- Table of contents 
-
-## Contents
-
-# mlx.utils.tree_map_with_path
-
 **tree_map_with_path(*fn: Callable*, *tree: Any*, **rest: Any*, *is_leaf: Callable | None = None*, *path: Any | None = None*) → [Any](https://docs.python.org/3/library/typing.html#typing.Any)**
 : Applies `fn` to the path and leaves of the Python tree `tree` and
 returns a new collection with the results.
-This function is the same [tree_map()](mlx.utils.tree_map.html#mlx.utils.tree_map) but the `fn` takes the path as
+This function is the same [tree_map()](mlx.utils.tree_map.md#mlx.utils.tree_map) but the `fn` takes the path as
 the first argument followed by the remaining tree nodes.
 
 Parameters:
@@ -52,12 +25,13 @@ Returns:
 A Python tree with the new values returned by `fn`.
 
 Example
->>> from mlx.utils import tree_map_with_path
->>> tree = {"model": [{"w": 0, "b": 1}, {"w": 0, "b": 1}]}
->>> new_tree = tree_map_with_path(lambda path, _: print(path), tree)
-model.0.w
-model.0.b
-model.1.w
-model.1.b
 
-** Contents
+  ```
+  >>> from mlx.utils import tree_map_with_path
+  >>> tree = {"model": [{"w": 0, "b": 1}, {"w": 0, "b": 1}]}
+  >>> new_tree = tree_map_with_path(lambda path, _: print(path), tree)
+  model.0.w
+  model.0.b
+  model.1.w
+  model.1.b
+  ```

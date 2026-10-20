@@ -1,7 +1,8 @@
 # union(_:eoFill:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new path with filled regions in either this path or the given path.
 
@@ -37,19 +38,20 @@ Any unclosed subpaths in either path are assumed to be closed. The result of fil
 
 ## See Also
 
-- [func addRoundedRect(in: CGRect, cornerSize: CGSize, style: RoundedCornerStyle, transform: CGAffineTransform)](path/addroundedrect(in:cornersize:style:transform:).md)
+### Performing operations on the path
+- [func addRoundedRect(in: CGRect, cornerSize: CGSize, style: RoundedCornerStyle, transform: CGAffineTransform)](./addroundedrect%28in,cornersize,style,transform%29.md)
   Adds a rounded rectangle to the path.
-- [func intersection(Path, eoFill: Bool) -> Path](path/intersection(_:eofill:).md)
+- [func intersection(Path, eoFill: Bool) -> Path](./intersection%28_,eofill%29.md)
   Returns a new path with filled regions common to both paths.
-- [func lineIntersection(Path, eoFill: Bool) -> Path](path/lineintersection(_:eofill:).md)
+- [func lineIntersection(Path, eoFill: Bool) -> Path](./lineintersection%28_,eofill%29.md)
   Returns a new path with a line from this path that overlaps the filled regions of the given path.
-- [func lineSubtraction(Path, eoFill: Bool) -> Path](path/linesubtraction(_:eofill:).md)
+- [func lineSubtraction(Path, eoFill: Bool) -> Path](./linesubtraction%28_,eofill%29.md)
   Returns a new path with a line from this path that does not overlap the filled region of the given path.
-- [func normalized(eoFill: Bool) -> Path](path/normalized(eofill:).md)
+- [func normalized(eoFill: Bool) -> Path](./normalized%28eofill%29.md)
   Returns a new weakly-simple copy of this path.
-- [func subtracting(Path, eoFill: Bool) -> Path](path/subtracting(_:eofill:).md)
+- [func subtracting(Path, eoFill: Bool) -> Path](./subtracting%28_,eofill%29.md)
   Returns a new path with filled regions from this path that are not in the given path.
-- [func symmetricDifference(Path, eoFill: Bool) -> Path](path/symmetricdifference(_:eofill:).md)
+- [func symmetricDifference(Path, eoFill: Bool) -> Path](./symmetricdifference%28_,eofill%29.md)
   Returns a new path with filled regions either from this path or the given path, but not in both.
 
 

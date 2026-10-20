@@ -1,7 +1,8 @@
 # NINearbyObject.RemovalReason.peerEnded
 
 **Framework**: Nearby Interaction  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The peer ended the session.
 
@@ -17,15 +18,20 @@ The peer ended the session.
 case peerEnded
 ```
 
+```c
+NINearbyObjectRemovalReasonPeerEnded
+```
+
 #### Discussion
 
-The framework provides this removal reason when the peer app calls [`invalidate()`](nisession/invalidate().md).
+The framework provides this removal reason when the peer app calls [`invalidate()`](../../nisession/invalidate%28%29.md).
 
 ## See Also
 
-- [NINearbyObject.RemovalReason.timeout](ninearbyobject/removalreason/timeout.md)
+### Reasons
+- [NINearbyObject.RemovalReason.timeout](./timeout.md)
   NI timed out the session.
-- [NINearbyObject.RemovalReason.timeout](ninearbyobject/removalreason/timeout.md)
+- [NINearbyObject.RemovalReason.timeout](./timeout.md)
   NI timed out the session.
 
 

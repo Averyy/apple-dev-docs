@@ -1,7 +1,8 @@
 # MACE6
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The MACE 6:1 format.
 
@@ -10,7 +11,7 @@ The MACE 6:1 format.
 
 ## Declaration
 
-```swift
+```c
 MACE6
 ```
 
@@ -20,7 +21,8 @@ This format uses no flags.
 
 ## See Also
 
-- [MACE3](audiodriverkit/iouseraudioformatid/mace3.md)
+### MACE Formats
+- [MACE3](./mace3.md)
   The MACE 3:1 format.
 
 

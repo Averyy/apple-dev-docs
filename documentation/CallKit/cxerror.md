@@ -1,7 +1,8 @@
 # CXError
 
 **Framework**: CallKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Error codes for the CallKit errors.
 
@@ -21,44 +22,45 @@ struct CXError
 ## Topics
 
 ### Constants
-- [static var invalidArgument: CXError.Code](cxerror/invalidargument.md)
+- [static var invalidArgument: CXError.Code](./cxerror/invalidargument.md)
   The argument is invalid.
-- [static var unentitled: CXError.Code](cxerror/unentitled.md)
+- [static var unentitled: CXError.Code](./cxerror/unentitled.md)
   The caller doesn’t have the correct entitlement.
-- [static var unknownError: CXError.Code](cxerror/unknownerror.md)
+- [static var unknownError: CXError.Code](./cxerror/unknownerror.md)
   An unknown error occurred.
 ### Type Properties
-- [static var missingVoIPBackgroundMode: CXError.Code](cxerror/missingvoipbackgroundmode.md)
-- [static var errorDomain: String](cxerror/errordomain.md)
+- [static var missingVoIPBackgroundMode: CXError.Code](./cxerror/missingvoipbackgroundmode.md)
+- [static var errorDomain: String](./cxerror/errordomain.md)
 ### Enumerations
-- [CXError.Code](cxerror/code.md)
+- [CXError.Code](./cxerror/code.md)
   Error codes for the CallKit errors.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum CXCallEndedReason](cxcallendedreason.md)
+### Handling Errors
+- [enum CXCallEndedReason](./cxcallendedreason.md)
   The reason that a call ended.
-- [CXError.Code](cxerror/code.md)
+- [CXError.Code](./cxerror/code.md)
   Error codes for the CallKit errors.
-- [struct CXErrorCodeIncomingCallError](cxerrorcodeincomingcallerror-swift.struct.md)
+- [struct CXErrorCodeIncomingCallError](./cxerrorcodeincomingcallerror-swift.struct.md)
   Codes for errors that occur during incoming calls.
-- [CXErrorCodeIncomingCallError.Code](cxerrorcodeincomingcallerror-swift.struct/code.md)
+- [CXErrorCodeIncomingCallError.Code](./cxerrorcodeincomingcallerror-swift.struct/code.md)
   Codes for errors that occur during incoming calls.
-- [struct CXErrorCodeNotificationServiceExtensionError](cxerrorcodenotificationserviceextensionerror-swift.struct.md)
+- [struct CXErrorCodeNotificationServiceExtensionError](./cxerrorcodenotificationserviceextensionerror-swift.struct.md)
   Errors that can occur when reporting new, incoming VoIP calls.
-- [let CXErrorDomain: String](cxerrordomain.md)
+- [let CXErrorDomain: String](./cxerrordomain.md)
   The domain for CallKit errors.
-- [let CXErrorDomainIncomingCall: String](cxerrordomainincomingcall.md)
+- [let CXErrorDomainIncomingCall: String](./cxerrordomainincomingcall.md)
   The domain for errors that occur during incoming calls.
 
 

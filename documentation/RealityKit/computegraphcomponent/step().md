@@ -1,7 +1,8 @@
 # step()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Advances the simulation by a single frame, then pauses.
 

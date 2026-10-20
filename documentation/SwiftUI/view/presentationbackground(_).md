@@ -1,7 +1,8 @@
 # presentationBackground(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the presentation background of the enclosing sheet using a shape style.
 
@@ -23,7 +24,7 @@ func presentationBackground<S>(_ style: S) -> some View where S : ShapeStyle
 
 #### Discussion
 
-The following example uses the [`thick`](material/thick.md) material as the sheet background:
+The following example uses the [`thick`](../material/thick.md) material as the sheet background:
 
 ```swift
 struct ContentView: View {
@@ -41,7 +42,7 @@ struct ContentView: View {
 }
 ```
 
-The `presentationBackground(_:)` modifier differs from the [`background(_:ignoresSafeAreaEdges:)`](view/background(_:ignoressafeareaedges:).md) modifier in several key ways. A presentation background:
+The `presentationBackground(_:)` modifier differs from the [`background(_:ignoresSafeAreaEdges:)`](./background%28_,ignoressafeareaedges%29.md) modifier in several key ways. A presentation background:
 
 - Automatically fills the entire presentation.
 - Allows views behind the presentation to show through translucent styles on supported platforms.
@@ -54,13 +55,14 @@ The `presentationBackground(_:)` modifier differs from the [`background(_:ignore
 
 ## See Also
 
-- [func presentationCornerRadius(CGFloat?) -> some View](view/presentationcornerradius(_:).md)
+### Styling a sheet and its background
+- [func presentationCornerRadius(CGFloat?) -> some View](./presentationcornerradius%28_%29.md)
   Requests that the presentation have a specific corner radius.
-- [func presentationBackground<V>(alignment: Alignment, content: () -> V) -> some View](view/presentationbackground(alignment:content:).md)
+- [func presentationBackground<V>(alignment: Alignment, content: () -> V) -> some View](./presentationbackground%28alignment,content%29.md)
   Sets the presentation background of the enclosing sheet to a custom view.
-- [func presentationBackgroundInteraction(PresentationBackgroundInteraction) -> some View](view/presentationbackgroundinteraction(_:).md)
+- [func presentationBackgroundInteraction(PresentationBackgroundInteraction) -> some View](./presentationbackgroundinteraction%28_%29.md)
   Controls whether people can interact with the view behind a presentation.
-- [struct PresentationBackgroundInteraction](presentationbackgroundinteraction.md)
+- [struct PresentationBackgroundInteraction](../presentationbackgroundinteraction.md)
   The kinds of interaction available to views behind a presentation.
 
 

@@ -1,7 +1,8 @@
 # isAntialiased
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to apply antialiasing to the edges of a shape.
 
@@ -22,7 +23,8 @@ var isAntialiased: Bool
 
 ## See Also
 
-- [var isEOFilled: Bool](fillstyle/iseofilled.md)
+### Setting fill style properties
+- [var isEOFilled: Bool](./iseofilled.md)
   A Boolean value that indicates whether to use the even-odd rule when rendering a shape.
 
 

@@ -1,19 +1,26 @@
 # thumbnailImage(atTime:timeOption:)
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Captures and returns a thumbnail image from the current movie.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 func thumbnailImage(atTime playbackTime: TimeInterval, timeOption option: MPMovieTimeOption) -> UIImage!
+```
+
+```objc
+- (UIImage *) thumbnailImageAtTime:(NSTimeInterval) playbackTime timeOption:(MPMovieTimeOption) option;
 ```
 
 #### Return Value
@@ -22,20 +29,21 @@ An image object containing the image from the movie or `nil` if the thumbnail co
 
 #### Discussion
 
-This method captures the thumbnail image synchronously from the current movie (which is accessible from the [`MPMovieSourceType.unknown`](mpmoviesourcetype/unknown.md) property).
+This method captures the thumbnail image synchronously from the current movie (which is accessible from the [`MPMovieSourceType.unknown`](../mpmoviesourcetype/unknown.md) property).
 
-> **Note**:  This method is not successful when the source URL is an HTTP Live Streaming (HLS) content source. The returned value for an HLS source is an empty `UIImage` object. See [`HTTP Live Streaming Overview`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008332).
+> **Note**:  This method is not successful when the source URL is an HTTP Live Streaming (HLS) content source. The returned value for an HLS source is an empty `UIImage` object. See [HTTP Live Streaming Overview](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008332).
 
 ## Parameters
 
 - `playbackTime`: The time at which to capture the thumbnail image. The time value represents the number of seconds from the beginning of the current movie.
-- `option`: The option to use when determining which specific frame to use for the thumbnail image. For a list of possible values, see [`MPMovieTimeOption`](mpmovietimeoption.md).
+- `option`: The option to use when determining which specific frame to use for the thumbnail image. For a list of possible values, see [`MPMovieTimeOption`](../mpmovietimeoption.md).
 
 ## See Also
 
-- [func requestThumbnailImages(atTimes: [Any]!, timeOption: MPMovieTimeOption)](mpmovieplayercontroller/requestthumbnailimages(attimes:timeoption:).md)
+### Generating thumbnail images
+- [func requestThumbnailImages(atTimes: [Any]!, timeOption: MPMovieTimeOption)](./requestthumbnailimages%28attimes,timeoption%29.md)
   Captures one or more thumbnail images asynchronously from the current movie.
-- [func cancelAllThumbnailImageRequests()](mpmovieplayercontroller/cancelallthumbnailimagerequests.md)
+- [func cancelAllThumbnailImageRequests()](./cancelallthumbnailimagerequests%28%29.md)
   Cancels all pending asynchronous thumbnail image requests.
 
 

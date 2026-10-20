@@ -1,7 +1,8 @@
 # ambientOcclusion
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The ambient occlusion (AO) map.
 

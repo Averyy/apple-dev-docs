@@ -1,7 +1,8 @@
 # clampingRange
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.1+
@@ -16,6 +17,10 @@
 ```swift
 @NSCopying
 var clampingRange: HKAudiogramSensitivityPointClampingRange? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) HKAudiogramSensitivityPointClampingRange * clampingRange;
 ```
 
 #### Discussion

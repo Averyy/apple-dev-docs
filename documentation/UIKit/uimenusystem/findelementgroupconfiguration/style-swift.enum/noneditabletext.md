@@ -1,7 +1,8 @@
 # UIMenuSystem.FindElementGroupConfiguration.Style.nonEditableText
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Prefer a set of elements for finding within a non-editable text area
 
@@ -16,6 +17,10 @@ Prefer a set of elements for finding within a non-editable text area
 
 ```swift
 case nonEditableText
+```
+
+```c
+UIMenuSystemFindElementGroupConfigurationStyleNonEditableText
 ```
 
 

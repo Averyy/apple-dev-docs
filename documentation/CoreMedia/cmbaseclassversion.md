@@ -1,16 +1,17 @@
 # CMBaseClassVersion
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@
 typealias CMBaseClassVersion = UInt
 ```
 
+```c
+typedef uintptr_t CMBaseClassVersion;
+```
+
 ## See Also
 
-- [typealias CMStructVersion](cmstructversion.md)
+### Type Aliases
+- [typealias CMStructVersion](./cmstructversion.md)
 
 
 ---

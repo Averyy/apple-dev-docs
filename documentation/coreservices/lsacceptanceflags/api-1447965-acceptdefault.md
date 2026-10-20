@@ -1,7 +1,8 @@
 # acceptDefault
 
 **Framework**: Core Services  
-**Kind**: structdata
+**Kind**: structdata  
+**Role**: Type Property
 
 Requests the default behavior that does not require the user interface to log in be presented.
 

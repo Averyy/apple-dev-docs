@@ -1,7 +1,8 @@
 # loopRange
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timestamp range for the loop, in beats.
 
@@ -19,15 +20,20 @@ The timestamp range for the loop, in beats.
 var loopRange: AVBeatRange { get set }
 ```
 
+```objc
+@property (nonatomic) AVBeatRange loopRange;
+```
+
 #### Discussion
 
 You set the loop by specifying its beat range.
 
 ## See Also
 
-- [var isLoopingEnabled: Bool](avmusictrack/isloopingenabled.md)
+### Configuring the looping state
+- [var isLoopingEnabled: Bool](./isloopingenabled.md)
   A Boolean value that indicates whether the track is in a looping state.
-- [var numberOfLoops: Int](avmusictrack/numberofloops.md)
+- [var numberOfLoops: Int](./numberofloops.md)
   The number of times the track’s loop repeats.
 
 

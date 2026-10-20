@@ -1,7 +1,8 @@
 # buildBlock(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Device Activity  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 17.4+

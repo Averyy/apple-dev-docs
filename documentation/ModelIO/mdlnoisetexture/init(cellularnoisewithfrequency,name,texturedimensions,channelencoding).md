@@ -1,7 +1,8 @@
 # init(cellularNoiseWithFrequency:name:textureDimensions:channelEncoding:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(cellularNoiseWithFrequency frequency: Float, name: String?, textureDimensions: vector_int2, channelEncoding: MDLTextureChannelEncoding)
+```
+
+```objc
+- (instancetype) initCellularNoiseWithFrequency:(float) frequency name:(NSString *) name textureDimensions:(vector_int2) textureDimensions channelEncoding:(MDLTextureChannelEncoding) channelEncoding;
 ```
 
 

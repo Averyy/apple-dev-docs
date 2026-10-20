@@ -1,7 +1,8 @@
 # formatCode
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The four-character code that encodes the pixel format of the Core Video image format.
 
@@ -11,7 +12,7 @@ The four-character code that encodes the pixel format of the Core Video image fo
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,7 +23,7 @@ var formatCode: UInt32 { get }
 
 #### Discussion
 
-For example, the following code prints the format code of a [`kCVPixelFormatType_420YpCbCr8Planar`](https://developer.apple.com/documentation/corevideo/kcvpixelformattype_420ypcbcr8planar) Core Video image format that equals the expected type:
+For example, the following code prints the format code of a [`kCVPixelFormatType_420YpCbCr8Planar`](../../CoreVideo/kcvpixelformattype_420ypcbcr8planar.md) Core Video image format that equals the expected type:
 
 ```swift
 let cvImageFormat = vImageCVImageFormat.make(
@@ -38,19 +39,21 @@ print(cvImageFormat.formatCode == kCVPixelFormatType_420YpCbCr8Planar)
 
 ## See Also
 
-- [func vImageCVImageFormat_GetFormatCode(vImageConstCVImageFormat) -> UInt32](vimagecvimageformat_getformatcode(_:).md)
+### Related Documentation
+- [func vImageCVImageFormat_GetFormatCode(vImageConstCVImageFormat) -> UInt32](../vimagecvimageformat_getformatcode%28_%29.md)
   Returns the four-character code that encodes the pixel format of a Core Video image format.
-- [var channelCount: UInt32](vimagecvimageformat/channelcount.md)
+### Inspecting a Core Video image format’s properties
+- [var channelCount: UInt32](./channelcount.md)
   The number of channels, including alpha, for the Core Video image format.
-- [var channels: [vImage.BufferType]](vimagecvimageformat/channels.md)
+- [var channels: [vImage.BufferType]](./channels.md)
   The channels of the Core Video image format.
-- [func channelDescription(bufferType: vImage.BufferType) -> vImageChannelDescription?](vimagecvimageformat/channeldescription(buffertype:).md)
+- [func channelDescription(bufferType: vImage.BufferType) -> vImageChannelDescription?](./channeldescription%28buffertype%29.md)
   Returns the range and clamp limits for a specified channel in a Core Video image format.
-- [var chromaSiting: vImageCVImageFormat.ChromaSiting?](vimagecvimageformat/chromasiting-swift.property.md)
+- [var chromaSiting: vImageCVImageFormat.ChromaSiting?](./chromasiting-swift.property.md)
   The chrominance siting of the Core Video image format.
-- [var colorSpace: CGColorSpace?](vimagecvimageformat/colorspace.md)
+- [var colorSpace: CGColorSpace?](./colorspace.md)
   The color space of the Core Video image format.
-- [var alphaIsOpaqueHint: Bool](vimagecvimageformat/alphaisopaquehint.md)
+- [var alphaIsOpaqueHint: Bool](./alphaisopaquehint.md)
   The alpha hint of the Core Video image format.
 
 

@@ -1,7 +1,8 @@
 # CredentialSessionWindowSceneEvent
 
 **Framework**: SecureElementCredential  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A CredentialSession event send to a `UIScene` or `UIWindowScene`.
 
@@ -17,7 +18,7 @@ enum CredentialSessionWindowSceneEvent
 
 ## Mentions
 
-- [Accessing and using secure element credentials](accessing-and-using-secure-element-credentials.md)
+- [Accessing and using secure element credentials](./accessing-and-using-secure-element-credentials.md)
 
 #### Overview
 
@@ -26,23 +27,24 @@ All files that refer to symbols defined here should never `import SwiftUI` Impor
 ## Topics
 
 ### Events
-- [CredentialSessionWindowSceneEvent.presentation](credentialsessionwindowsceneevent/presentation.md)
+- [CredentialSessionWindowSceneEvent.presentation](./credentialsessionwindowsceneevent/presentation.md)
   User has perform gesture on device to request for app presentation
-- [CredentialSessionWindowSceneEvent.readerDetected](credentialsessionwindowsceneevent/readerdetected.md)
+- [CredentialSessionWindowSceneEvent.readerDetected](./credentialsessionwindowsceneevent/readerdetected.md)
   External NFC reader is detected, i.e. presence of a NFC field
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [func windowScene(UIWindowScene, didReceiveCredentialSessionWindowSceneEvent: CredentialSessionWindowSceneEvent)](credentialsessionwindowscenedelegate/windowscene(_:didreceivecredentialsessionwindowsceneevent:).md)
+### Handling events
+- [func windowScene(UIWindowScene, didReceiveCredentialSessionWindowSceneEvent: CredentialSessionWindowSceneEvent)](./credentialsessionwindowscenedelegate/windowscene%28_,didreceivecredentialsessionwindowsceneevent%29.md)
 
 
 ---

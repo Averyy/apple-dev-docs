@@ -1,12 +1,13 @@
 # init(_:)
 
 **Framework**: AccessorySetupKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,7 +17,8 @@ init(_ rawValue: UInt16)
 
 ## See Also
 
-- [init(rawValue: UInt16)](asbluetoothcompanyidentifier/init(rawvalue:).md)
+### Creating an identifier
+- [init(rawValue: UInt16)](./init%28rawvalue%29.md)
 
 
 ---

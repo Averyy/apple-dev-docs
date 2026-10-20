@@ -1,7 +1,8 @@
 # littleFingerMetacarpal
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An anchor location at the metacarpal of the little finger.
 

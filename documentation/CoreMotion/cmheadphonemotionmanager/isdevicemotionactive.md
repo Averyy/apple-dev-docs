@@ -1,7 +1,8 @@
 # isDeviceMotionActive
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the headphone motion manager is active.
 
@@ -18,12 +19,17 @@ A Boolean value that indicates whether the headphone motion manager is active.
 var isDeviceMotionActive: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isDeviceMotionActive) BOOL deviceMotionActive;
+```
+
 ## See Also
 
-- [var isDeviceMotionAvailable: Bool](cmheadphonemotionmanager/isdevicemotionavailable.md)
+### Checking Availability
+- [var isDeviceMotionAvailable: Bool](./isdevicemotionavailable.md)
   A Boolean value that indicates whether the current device supports the headphone motion manager.
-- [var isConnectionStatusActive: Bool](cmheadphonemotionmanager/isconnectionstatusactive.md)
-- [class func authorizationStatus() -> CMAuthorizationStatus](cmheadphonemotionmanager/authorizationstatus.md)
+- [var isConnectionStatusActive: Bool](./isconnectionstatusactive.md)
+- [class func authorizationStatus() -> CMAuthorizationStatus](./authorizationstatus%28%29.md)
   Returns the authorization status for monitoring headphone motion.
 
 

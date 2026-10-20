@@ -1,7 +1,8 @@
 # purchase(compactJWS:options:)
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Processes a purchase for the product.
 
@@ -21,7 +22,7 @@ The result of the purchase.
 
 #### Discussion
 
-> **Note**:  A `PurchaseError`, `StoreKitError`, or `InvalidRequest` error.
+> **Throws**:  A `PurchaseError`, `StoreKitError`, or `InvalidRequest` error.
 
 ## Parameters
 
@@ -30,12 +31,13 @@ The result of the purchase.
 
 ## See Also
 
-- [AdvancedCommerceProduct.PurchaseOption](advancedcommerceproduct/purchaseoption.md)
-- [func purchase(compactJWS: String, confirmIn: NSWindow, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](advancedcommerceproduct/purchase(compactjws:confirmin:options:)-7x4bh.md)
+### Initiating purchases
+- [AdvancedCommerceProduct.PurchaseOption](./purchaseoption.md)
+- [func purchase(compactJWS: String, confirmIn: NSWindow, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](./purchase%28compactjws,confirmin,options%29-7x4bh.md)
   Processes a purchase for the product.
-- [func purchase(compactJWS: String, confirmIn: UIViewController, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](advancedcommerceproduct/purchase(compactjws:confirmin:options:)-54lkw.md)
+- [func purchase(compactJWS: String, confirmIn: UIViewController, options: Set<AdvancedCommerceProduct.PurchaseOption>) async throws -> AdvancedCommerceProduct.PurchaseResult](./purchase%28compactjws,confirmin,options%29-54lkw.md)
   Processes a purchase for the product.
-- [AdvancedCommerceProduct.PurchaseResult](advancedcommerceproduct/purchaseresult.md)
+- [AdvancedCommerceProduct.PurchaseResult](./purchaseresult.md)
 
 
 ---

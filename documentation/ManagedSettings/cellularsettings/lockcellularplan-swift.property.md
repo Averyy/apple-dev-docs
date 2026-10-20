@@ -1,7 +1,8 @@
 # lockCellularPlan
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether to prevent the user from changing their cellular plan.
 
@@ -18,7 +19,8 @@ var lockCellularPlan: Bool? { get set }
 
 ## See Also
 
-- [static let lockCellularPlan: SettingMetadata<Bool>](cellularsettings/lockcellularplan-swift.type.property.md)
+### Locking the device’s cell plan
+- [static let lockCellularPlan: SettingMetadata<Bool>](./lockcellularplan-swift.type.property.md)
   The metadata associated with the constraint that locks the user’s cellular plan.
 
 

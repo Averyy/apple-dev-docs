@@ -1,6 +1,8 @@
 # Sharing texture data between the Model I/O framework and the vImage library
 
-**Framework**: Accelerate
+**Framework**: Accelerate  
+**Role**: Sample Code  
+**Download**: [SharingTextureDataBetweenTheModelIOFrameworkAndTheVImageLibrary.zip](https://docs-assets.developer.apple.com/published/95d06baaab82/SharingTextureDataBetweenTheModelIOFrameworkAndTheVImageLibrary.zip)
 
 Use Model I/O and vImage to composite a photograph over a computer-generated sky.
 
@@ -10,17 +12,17 @@ Use Model I/O and vImage to composite a photograph over a computer-generated sky
 
 #### Overview
 
-The [`Model I/O`](https://developer.apple.com/documentation/modelio) framework provides the [`MDLTexture`](https://developer.apple.com/documentation/modelio/mdltexture) class and its subclasses to generate procedural textures such as noise, normal maps, and realistic sky boxes.  This sample code project uses an [`MDLSkyCubeTexture`](https://developer.apple.com/documentation/modelio/mdlskycubetexture) instance to generate a physically realistic simulation of a sunlit sky. The code uses the generated sky image as the background and a photograph of a building as the foreground.
+The [Model I/O](../ModelIO/ModelIO.md) framework provides the [`MDLTexture`](../ModelIO/mdltexture.md) class and its subclasses to generate procedural textures such as noise, normal maps, and realistic sky boxes.  This sample code project uses an [`MDLSkyCubeTexture`](../ModelIO/mdlskycubetexture.md) instance to generate a physically realistic simulation of a sunlit sky. The code uses the generated sky image as the background and a photograph of a building as the foreground.
 
 The image below shows the final composition:
 
-![A photograph of a skyscraper composited over a computer-generated](/images/com.apple.accelerate/img.png)
+![A photograph of a skyscraper composited over a computer-generated](https://developer.apple.com/tutorials/images/com.apple.accelerate/img.png)
 
 Using the UI, someone can define the parameters that control the sky simulation such as upper atmosphere scattering and sun elevation. Before exploring the code, try building and running the app to get familiar with the effect of the different parameters on the image.
 
-##### Create the Sky Texture Generator
+##### Create the sky texture generator
 
-The `ImageProvider` class declares constants for the source image’s dimensions and the [`MDLSkyCubeTexture`](https://developer.apple.com/documentation/modelio/mdlskycubetexture) instance named `skyGenerator`:
+The `ImageProvider` class declares constants for the source image’s dimensions and the [`MDLSkyCubeTexture`](../ModelIO/mdlskycubetexture.md) instance named `skyGenerator`:
 
 ```swift
 let width: Int
@@ -45,9 +47,9 @@ skyGenerator = MDLSkyCubeTexture(name: nil,
                                  groundAlbedo: 0)
 ```
 
-##### Update the Sky Texture Generator Parameters
+##### Update the sky texture generator parameters
 
-With each change to the SwiftUI [`Picker`](https://developer.apple.com/documentation/swiftui/picker) controls that define the sky generator parameters, the app calls the `renderSky()` function. The function sets the sky generator parameters and calls [`update()`](https://developer.apple.com/documentation/modelio/mdlskycubetexture/update()) to generate new texel data:
+With each change to the SwiftUI [`Picker`](../SwiftUI/picker.md) controls that define the sky generator parameters, the app calls the `renderSky()` function. The function sets the sky generator parameters and calls [`update()`](../ModelIO/mdlskycubetexture/update%28%29.md) to generate new texel data:
 
 ```swift
 skyGenerator.turbidity = turbidity
@@ -58,19 +60,19 @@ skyGenerator.groundAlbedo = groundAlbedo
 skyGenerator.update()
 ```
 
-##### Create the Composite Image
+##### Create the composite image
 
-The [`texelDataWithTopLeftOrigin()`](https://developer.apple.com/documentation/modelio/mdltexture/texeldatawithtopleftorigin()) method returns the sky generator’s image data organized such that its first pixel represents the top-left corner of the image. This layout matches the [`vImage.PixelBuffer`](vimage/pixelbuffer.md) layout. The code passes the texel data to the [`withUnsafeBytes(_:)`](https://developer.apple.com/documentation/foundation/data/withunsafebytes(_:)) function to work with the underlying bytes of the data’s contiguous storage.
+The [`texelDataWithTopLeftOrigin()`](../ModelIO/mdltexture/texeldatawithtopleftorigin%28%29.md) method returns the sky generator’s image data organized such that its first pixel represents the top-left corner of the image. This layout matches the [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) layout. The code passes the texel data to the [`withUnsafeBytes(_:)`](../Foundation/data/withunsafebytes%28_%29.md) function to work with the underlying bytes of the data’s contiguous storage.
 
 ```swift
 let img = skyGenerator.texelDataWithTopLeftOrigin()?.withUnsafeBytes { skyData in
 ```
 
-The [`MDLSkyCubeTexture`](https://developer.apple.com/documentation/modelio/mdlskycubetexture) instance generates a cube texture that’s represented as six sides, vertically stacked.
+The [`MDLSkyCubeTexture`](../ModelIO/mdlskycubetexture.md) instance generates a cube texture that’s represented as six sides, vertically stacked.
 
-![A vertically stacked series of six images that represent the six sides of the sky texture cube.](/images/com.apple.accelerate/cube.png)
+![A vertically stacked series of six images that represent the six sides of the sky texture cube.](https://developer.apple.com/tutorials/images/com.apple.accelerate/cube.png)
 
-The code below calculates the range texels that correspond to the selected side (one of `["+X", "-X", "+Y", "-Y", "+Z", "-Z"]`) and binds those to [`Pixel_8`](pixel_8.md) values:
+The code below calculates the range texels that correspond to the selected side (one of `["+X", "-X", "+Y", "-Y", "+Z", "-Z"]`) and binds those to [`Pixel_8`](./pixel_8.md) values:
 
 ```swift
 let imageIndex = ImageProvider.views.firstIndex(of: view) ?? 0
@@ -81,7 +83,7 @@ let range = imageIndex * imagePixelCount ..< (imageIndex + 1) * imagePixelCount
 let values = skyData.bindMemory(to: Pixel_8.self)[ range ]
 ```
 
-The code below creates a [`vImage.PixelBuffer`](vimage/pixelbuffer.md) structure from the values and, because the [`alphaComposite(_:topLayer:destination:)`](vimage/pixelbuffer/alphacomposite(_:toplayer:destination:)-fybo.md) method expects ARGB data, permutes the channel order so that alpha channel is first:
+The code below creates a [`vImage.PixelBuffer`](./vimage/pixelbuffer.md) structure from the values and, because the [`alphaComposite(_:topLayer:destination:)`](./vimage/pixelbuffer/alphacomposite%28_,toplayer,destination%29-fybo.md) method expects ARGB data, permutes the channel order so that alpha channel is first:
 
 ```swift
 let buffer = vImage.PixelBuffer(pixelValues: values,
@@ -91,7 +93,7 @@ let buffer = vImage.PixelBuffer(pixelValues: values,
 buffer.permuteChannels(to: (3, 0, 1, 2), destination: buffer)
 ```
 
-Finally, the sample code project composites the skyscraper image, represented by `foregroundBuffer`, over the sky image and returns a [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) instance that contains the result:
+Finally, the sample code project composites the skyscraper image, represented by `foregroundBuffer`, over the sky image and returns a [`CGImage`](../CoreGraphics/cgimage.md) instance that contains the result:
 
 ```swift
     buffer.alphaComposite(.nonpremultiplied,
@@ -104,17 +106,18 @@ Finally, the sample code project composites the skyscraper image, represented by
 
 ## See Also
 
-- [Using vImage pixel buffers to generate video effects](using-vimage-pixel-buffers-to-generate-video-effects.md)
+### vImage Pixel Buffers
+- [Using vImage pixel buffers to generate video effects](./using-vimage-pixel-buffers-to-generate-video-effects.md)
   Render real-time video effects with the vImage Pixel Buffer.
-- [Applying tone curve adjustments to images](applying-tone-curve-adjustments-to-images.md)
+- [Applying tone curve adjustments to images](./applying-tone-curve-adjustments-to-images.md)
   Use the vImage library’s polynomial transform to apply tone curve adjustments to images.
-- [Adjusting the brightness and contrast of an image](adjusting-the-brightness-and-contrast-of-an-image.md)
+- [Adjusting the brightness and contrast of an image](./adjusting-the-brightness-and-contrast-of-an-image.md)
   Use a gamma function to apply a linear or exponential curve.
-- [Adjusting the hue of an image](adjusting-the-hue-of-an-image.md)
+- [Adjusting the hue of an image](./adjusting-the-hue-of-an-image.md)
   Convert an image to L*a*b* color space and apply hue adjustment.
-- [Calculating the dominant colors in an image](calculating-the-dominant-colors-in-an-image.md)
+- [Calculating the dominant colors in an image](./calculating-the-dominant-colors-in-an-image.md)
   Find the main colors in an image by implementing k-means clustering using the Accelerate framework.
-- [vImage.PixelBuffer](vimage/pixelbuffer.md)
+- [vImage.PixelBuffer](./vimage/pixelbuffer.md)
   An image buffer that stores an image’s pixel data, dimensions, bit depth, and number of channels.
 
 

@@ -1,7 +1,8 @@
 # IntentParameter.DurationUnit.hours
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.0+

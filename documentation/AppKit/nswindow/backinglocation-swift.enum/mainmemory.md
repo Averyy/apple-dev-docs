@@ -1,12 +1,13 @@
 # NSWindow.BackingLocation.mainMemory
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Physical memory.
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Physical memory.
 case mainMemory
 ```
 
+```c
+NSWindowBackingLocationMainMemory
+```
+
 ## See Also
 
-- [NSWindow.BackingLocation.default](nswindow/backinglocation-swift.enum/default.md)
+### Constants
+- [NSWindow.BackingLocation.default](./default.md)
   Determined by the operating system.
-- [NSWindow.BackingLocation.videoMemory](nswindow/backinglocation-swift.enum/videomemory.md)
+- [NSWindow.BackingLocation.videoMemory](./videomemory.md)
   Video memory.
 
 

@@ -1,18 +1,19 @@
 # init(x:y:z:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a 3D point using the x, y, and z coordinates you specify.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -28,9 +29,10 @@ init(x: Float, y: Float, z: Float)
 
 ## See Also
 
-- [init()](avaudio3dpoint/init.md)
+### Creating a point
+- [init()](./init%28%29.md)
   Creates a 3D point.
-- [func AVAudioMake3DPoint(Float, Float, Float) -> AVAudio3DPoint](avaudiomake3dpoint(_:_:_:).md)
+- [func AVAudioMake3DPoint(Float, Float, Float) -> AVAudio3DPoint](../avaudiomake3dpoint%28_,_,_%29.md)
   Creates a 3D point using the x, y, and z coordinates you specify.
 
 

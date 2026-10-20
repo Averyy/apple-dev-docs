@@ -1,7 +1,8 @@
 # CMFormatDescriptionEqualIgnoringExtensionKeys(_:otherFormatDescription:extensionKeysToIgnore:sampleDescriptionExtensionAtomKeysToIgnore:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a Boolean value that indicates whether two format descriptions are equal, ignoring differences in the extension keys you specify.
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether two format descriptions are equal
 func CMFormatDescriptionEqualIgnoringExtensionKeys(_ formatDescription: CMFormatDescription?, otherFormatDescription: CMFormatDescription?, extensionKeysToIgnore formatDescriptionExtensionKeysToIgnore: CFTypeRef?, sampleDescriptionExtensionAtomKeysToIgnore: CFTypeRef?) -> Bool
 ```
 
+```c
+extern Boolean CMFormatDescriptionEqualIgnoringExtensionKeys(CMFormatDescriptionRef formatDescription, CMFormatDescriptionRef otherFormatDescription, CFTypeRef formatDescriptionExtensionKeysToIgnore, CFTypeRef sampleDescriptionExtensionAtomKeysToIgnore);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the two descriptions are equal; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if the two descriptions are equal; otherwise, [`false`](../Swift/false.md).
 
 #### Discussion
 
@@ -30,7 +35,7 @@ When you specify any keys, the function ignores `kCMFormatDescriptionExtension_V
 
 > **Note**:  This function is `NULL` safe.
 
-For extension atom keys, see [`kCMFormatDescriptionExtension_SampleDescriptionExtensionAtoms`](kcmformatdescriptionextension_sampledescriptionextensionatoms.md).
+For extension atom keys, see [`kCMFormatDescriptionExtension_SampleDescriptionExtensionAtoms`](./kcmformatdescriptionextension_sampledescriptionextensionatoms.md).
 
 ## Parameters
 
@@ -41,7 +46,8 @@ For extension atom keys, see [`kCMFormatDescriptionExtension_SampleDescriptionEx
 
 ## See Also
 
-- [func CMFormatDescriptionEqual(CMFormatDescription?, otherFormatDescription: CMFormatDescription?) -> Bool](cmformatdescriptionequal(_:otherformatdescription:).md)
+### Comparing Format Descriptions
+- [func CMFormatDescriptionEqual(CMFormatDescription?, otherFormatDescription: CMFormatDescription?) -> Bool](./cmformatdescriptionequal%28_,otherformatdescription%29.md)
   Returns a Boolean value that indicates whether two format descriptions are equal.
 
 

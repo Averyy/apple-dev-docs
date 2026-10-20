@@ -1,7 +1,8 @@
 # matches(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Matches the receiver pattern against the specified pattern.
 
@@ -18,6 +19,10 @@ Matches the receiver pattern against the specified pattern.
 func matches(_ pattern: WKWebExtension.MatchPattern?) -> Bool
 ```
 
+```objc
+- (BOOL) matchesPattern:(WKWebExtensionMatchPattern *) pattern;
+```
+
 #### Return Value
 
 A Boolean value indicating if the receiver pattern matches the specified pattern.
@@ -28,7 +33,8 @@ A Boolean value indicating if the receiver pattern matches the specified pattern
 
 ## See Also
 
-- [func matches(WKWebExtension.MatchPattern?, options: WKWebExtension.MatchPattern.Options) -> Bool](wkwebextension/matchpattern/matches(_:options:)-fnde.md)
+### Related Documentation
+- [func matches(WKWebExtension.MatchPattern?, options: WKWebExtension.MatchPattern.Options) -> Bool](./matches%28_,options%29-fnde.md)
   Matches the receiver pattern against the specified pattern with options.
 
 

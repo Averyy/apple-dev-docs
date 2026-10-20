@@ -1,7 +1,8 @@
 # sink(receiveValue:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attaches a subscriber with closure-based behavior to a publisher that never fails.
 
@@ -20,12 +21,14 @@ Attaches a subscriber with closure-based behavior to a publisher that never fail
 func sink(receiveValue: @escaping (Self.Output) -> Void) -> AnyCancellable
 ```
 
+Available when `Failure` is `Never`.
+
 ## Mentions
 
-- [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
-- [Using Combine for Your App’s Asynchronous Code](using-combine-for-your-app-s-asynchronous-code.md)
-- [Controlling Publishing with Connectable Publishers](controlling-publishing-with-connectable-publishers.md)
-- [Replacing Foundation Timers with Timer Publishers](replacing-foundation-timers-with-timer-publishers.md)
+- [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
+- [Using Combine for Your App’s Asynchronous Code](../using-combine-for-your-app-s-asynchronous-code.md)
+- [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
+- [Replacing Foundation Timers with Timer Publishers](../replacing-foundation-timers-with-timer-publishers.md)
 
 #### Return Value
 
@@ -33,9 +36,9 @@ A cancellable instance, which you use when you end assignment of the received va
 
 #### Discussion
 
-Use [`sink(receiveValue:)`](publisher/sink(receivevalue:).md) to observe values received by the publisher and print them to the console. This operator can only be used when the stream doesn’t fail, that is, when the publisher’s [`Failure`](publisher/failure.md) type is [`Never`](https://developer.apple.com/documentation/swift/never).
+Use [`sink(receiveValue:)`](./sink%28receivevalue%29.md) to observe values received by the publisher and print them to the console. This operator can only be used when the stream doesn’t fail, that is, when the publisher’s [`Failure`](./failure.md) type is [`Never`](../../Swift/never.md).
 
-In this example, a [`Range`](https://developer.apple.com/documentation/swift/range) publisher publishes integers to a [`sink(receiveValue:)`](publisher/sink(receivevalue:).md) operator’s `receiveValue` closure that prints them to the console:
+In this example, a [`Range`](../../Swift/range.md) publisher publishes integers to a [`sink(receiveValue:)`](./sink%28receivevalue%29.md) operator’s `receiveValue` closure that prints them to the console:
 
 ```swift
 let integers = (0...3)
@@ -57,11 +60,12 @@ This method creates the subscriber and immediately requests an unlimited number 
 
 ## See Also
 
-- [func assign<Root>(to: ReferenceWritableKeyPath<Root, Self.Output>, on: Root) -> AnyCancellable](publisher/assign(to:on:).md)
+### Connecting simple subscribers
+- [func assign<Root>(to: ReferenceWritableKeyPath<Root, Self.Output>, on: Root) -> AnyCancellable](./assign%28to,on%29.md)
   Assigns each element from a publisher to a property on an object.
-- [func assign(to: inout Published<Self.Output>.Publisher)](publisher/assign(to:).md)
+- [func assign(to: inout Published<Self.Output>.Publisher)](./assign%28to%29.md)
   Republishes elements received from a publisher, by assigning them to a property marked as a publisher.
-- [func sink(receiveCompletion: (Subscribers.Completion<Self.Failure>) -> Void, receiveValue: (Self.Output) -> Void) -> AnyCancellable](publisher/sink(receivecompletion:receivevalue:).md)
+- [func sink(receiveCompletion: (Subscribers.Completion<Self.Failure>) -> Void, receiveValue: (Self.Output) -> Void) -> AnyCancellable](./sink%28receivecompletion,receivevalue%29.md)
   Attaches a subscriber with closure-based behavior.
 
 

@@ -1,7 +1,8 @@
 # NEHotspotHelperResult.commandNotRecognized
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The helper did not recognize the command type.
 
@@ -17,20 +18,25 @@ The helper did not recognize the command type.
 case commandNotRecognized
 ```
 
+```c
+kNEHotspotHelperResultCommandNotRecognized
+```
+
 ## See Also
 
-- [NEHotspotHelperResult.success](nehotspothelperresult/success.md)
+### Results
+- [NEHotspotHelperResult.success](./success.md)
   The command was handled successfully.
-- [NEHotspotHelperResult.failure](nehotspothelperresult/failure.md)
+- [NEHotspotHelperResult.failure](./failure.md)
   The command failed to be handled.
-- [NEHotspotHelperResult.uiRequired](nehotspothelperresult/uirequired.md)
-  The operation requires user interaction. This result is only valid in response to a command with type [`NEHotspotHelperCommandType.authenticate`](nehotspothelpercommandtype/authenticate.md).
-- [NEHotspotHelperResult.authenticationRequired](nehotspothelperresult/authenticationrequired.md)
-  The network requires authentication again. This result is only valid in response to a command with type [`NEHotspotHelperCommandType.maintain`](nehotspothelpercommandtype/maintain.md).
-- [NEHotspotHelperResult.unsupportedNetwork](nehotspothelperresult/unsupportednetwork.md)
-  After attempting to authenticate, the Hotspot Helper app determined that it can’t perform the authentication. This result is only valid in response to commands of type [`NEHotspotHelperCommandType.authenticate`](nehotspothelpercommandtype/authenticate.md) and [`NEHotspotHelperCommandType.presentUI`](nehotspothelpercommandtype/presentui.md).
-- [NEHotspotHelperResult.temporaryFailure](nehotspothelperresult/temporaryfailure.md)
-  The Hotspot Helper app determined that it is temporarily unable to perform the authentication. This result is only valid in response to commands of type [`NEHotspotHelperCommandType.authenticate`](nehotspothelpercommandtype/authenticate.md) and [`NEHotspotHelperCommandType.presentUI`](nehotspothelpercommandtype/presentui.md).
+- [NEHotspotHelperResult.uiRequired](./uirequired.md)
+  The operation requires user interaction. This result is only valid in response to a command with type [`NEHotspotHelperCommandType.authenticate`](../nehotspothelpercommandtype/authenticate.md).
+- [NEHotspotHelperResult.authenticationRequired](./authenticationrequired.md)
+  The network requires authentication again. This result is only valid in response to a command with type [`NEHotspotHelperCommandType.maintain`](../nehotspothelpercommandtype/maintain.md).
+- [NEHotspotHelperResult.unsupportedNetwork](./unsupportednetwork.md)
+  After attempting to authenticate, the Hotspot Helper app determined that it can’t perform the authentication. This result is only valid in response to commands of type [`NEHotspotHelperCommandType.authenticate`](../nehotspothelpercommandtype/authenticate.md) and [`NEHotspotHelperCommandType.presentUI`](../nehotspothelpercommandtype/presentui.md).
+- [NEHotspotHelperResult.temporaryFailure](./temporaryfailure.md)
+  The Hotspot Helper app determined that it is temporarily unable to perform the authentication. This result is only valid in response to commands of type [`NEHotspotHelperCommandType.authenticate`](../nehotspothelpercommandtype/authenticate.md) and [`NEHotspotHelperCommandType.presentUI`](../nehotspothelpercommandtype/presentui.md).
 
 
 ---

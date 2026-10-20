@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,17 +12,17 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated symbols
-- [var NSControlCharacterContainerBreakAction: Int](nscontrolcharactercontainerbreakaction.md)
+- [var NSControlCharacterContainerBreakAction: Int](./nscontrolcharactercontainerbreakaction.md)
   A character that causes a break in layout.
-- [var NSControlCharacterHorizontalTabAction: Int](nscontrolcharacterhorizontaltabaction.md)
+- [var NSControlCharacterHorizontalTabAction: Int](./nscontrolcharacterhorizontaltabaction.md)
   An action that inserts a horizontal tab.
-- [var NSControlCharacterLineBreakAction: Int](nscontrolcharacterlinebreakaction.md)
+- [var NSControlCharacterLineBreakAction: Int](./nscontrolcharacterlinebreakaction.md)
   An action that causes a line break.
-- [var NSControlCharacterParagraphBreakAction: Int](nscontrolcharacterparagraphbreakaction.md)
+- [var NSControlCharacterParagraphBreakAction: Int](./nscontrolcharacterparagraphbreakaction.md)
   An action that causes a paragraph break.
-- [var NSControlCharacterWhitespaceAction: Int](nscontrolcharacterwhitespaceaction.md)
+- [var NSControlCharacterWhitespaceAction: Int](./nscontrolcharacterwhitespaceaction.md)
   An action that programmatically changes the white space around the glyph.
-- [var NSControlCharacterZeroAdvancementAction: Int](nscontrolcharacterzeroadvancementaction.md)
+- [var NSControlCharacterZeroAdvancementAction: Int](./nscontrolcharacterzeroadvancementaction.md)
   An action that removes the glyph from layout.
 
 

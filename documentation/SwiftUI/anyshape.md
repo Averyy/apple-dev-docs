@@ -1,7 +1,8 @@
 # AnyShape
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased shape value.
 
@@ -39,35 +40,36 @@ struct MyClippedView: View {
 ## Topics
 
 ### Creating a shape
-- [init<S>(S)](anyshape/init(_:).md)
+- [init<S>(S)](./anyshape/init%28_%29.md)
   Create an any shape instance from a shape.
 
 ## Relationships
 
 ### Conforms To
-- [Animatable](animatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Shape](shape.md)
-- [View](view.md)
+- [Animatable](./animatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Shape](./shape.md)
+- [View](./view.md)
 
 ## See Also
 
-- [protocol ShapeView](shapeview.md)
+### Defining shape behavior
+- [protocol ShapeView](./shapeview.md)
   A view that provides a shape that you can use for drawing operations.
-- [protocol Shape](shape.md)
+- [protocol Shape](./shape.md)
   A 2D shape that you can use when drawing a view.
-- [enum ShapeRole](shaperole.md)
+- [enum ShapeRole](./shaperole.md)
   Ways of styling a shape.
-- [struct StrokeStyle](strokestyle.md)
+- [struct StrokeStyle](./strokestyle.md)
   The characteristics of a stroke that traces a path.
-- [struct StrokeShapeView](strokeshapeview.md)
+- [struct StrokeShapeView](./strokeshapeview.md)
   A shape provider that strokes its shape.
-- [struct StrokeBorderShapeView](strokebordershapeview.md)
+- [struct StrokeBorderShapeView](./strokebordershapeview.md)
   A shape provider that strokes the border of its shape.
-- [struct FillStyle](fillstyle.md)
+- [struct FillStyle](./fillstyle.md)
   A style for rasterizing vector shapes.
-- [struct FillShapeView](fillshapeview.md)
+- [struct FillShapeView](./fillshapeview.md)
   A shape provider that fills its shape.
 
 

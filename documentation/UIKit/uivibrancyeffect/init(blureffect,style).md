@@ -1,7 +1,8 @@
 # init(blurEffect:style:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -13,6 +14,10 @@
 
 ```swift
 init(blurEffect: UIBlurEffect, style: UIVibrancyEffectStyle)
+```
+
+```objc
++ (UIVibrancyEffect *) effectForBlurEffect:(UIBlurEffect *) blurEffect style:(UIVibrancyEffectStyle) style;
 ```
 
 

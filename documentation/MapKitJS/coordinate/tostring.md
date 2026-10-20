@@ -1,7 +1,8 @@
 # toString()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a string representation of the coordinate object.
 
@@ -10,7 +11,7 @@ Returns a string representation of the coordinate object.
 
 ## Declaration
 
-```swift
+```
 toString(): string;
 ```
 

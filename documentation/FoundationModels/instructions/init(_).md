@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates instructions from the content of a builder closure.
 
@@ -19,15 +20,22 @@ Creates instructions from the content of a builder closure.
 init(@InstructionsBuilder _ content: () throws -> Instructions) rethrows
 ```
 
+**Other overloads**:
+
+```swift
+init(_ content: some InstructionsRepresentable)
+```
+
 ## Parameters
 
 - `content`: A closure that produces the instructions to give the model.
 
 ## See Also
 
-- [struct InstructionsBuilder](instructionsbuilder.md)
+### Creating instructions
+- [struct InstructionsBuilder](../instructionsbuilder.md)
   A type that represents an instructions builder.
-- [protocol InstructionsRepresentable](instructionsrepresentable.md)
+- [protocol InstructionsRepresentable](../instructionsrepresentable.md)
   A type that can be represented as instructions.
 
 

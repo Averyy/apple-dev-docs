@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sigvec {
     ...
 };
@@ -17,9 +17,9 @@ struct sigvec {
 ## Topics
 
 ### Instance Properties
-- [sv_flags](sigvec/1591520-sv_flags.md)
-- [sv_handler](sigvec/1591457-sv_handler.md)
-- [sv_mask](sigvec/1591563-sv_mask.md)
+- [sv_flags](./sigvec/api-1591520-sv_flags.md)
+- [sv_handler](./sigvec/api-1591457-sv_handler.md)
+- [sv_mask](./sigvec/api-1591563-sv_mask.md)
 
 
 ---

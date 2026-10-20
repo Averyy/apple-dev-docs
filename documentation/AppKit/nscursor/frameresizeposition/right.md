@@ -1,7 +1,8 @@
 # NSCursor.FrameResizePosition.right
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The right edge of the frame.
 
@@ -13,6 +14,10 @@ The right edge of the frame.
 
 ```swift
 case right
+```
+
+```c
+NSCursorFrameResizePositionRight
 ```
 
 

@@ -1,7 +1,8 @@
 # supportedViewConfigurations(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -16,11 +17,16 @@
 func supportedViewConfigurations(_ availableViewConfigurations: [AUAudioUnitViewConfiguration]) -> IndexSet
 ```
 
+```objc
+- (NSIndexSet *) supportedViewConfigurations:(NSArray<AUAudioUnitViewConfiguration *> *) availableViewConfigurations;
+```
+
 ## See Also
 
-- [var providesUserInterface: Bool](auaudiounit/providesuserinterface.md)
+### Configuring the User Interface
+- [var providesUserInterface: Bool](./providesuserinterface.md)
   A Boolean that indicates whether the audio unit provides a user interface, normally in the form of a view controller.
-- [func select(AUAudioUnitViewConfiguration)](auaudiounit/select(_:).md)
+- [func select(AUAudioUnitViewConfiguration)](./select%28_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # childViewControllerForPointerLock
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A child view controller to query for the pointer lock preference.
 
@@ -17,15 +18,20 @@ A child view controller to query for the pointer lock preference.
 var childViewControllerForPointerLock: UIViewController? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIViewController * childViewControllerForPointerLock;
+```
+
 #### Discussion
 
-Call [`setNeedsUpdateOfPrefersPointerLocked()`](uiviewcontroller/setneedsupdateofpreferspointerlocked().md) if the child view controller that the system needs to query for the pointer lock preference changes.
+Call [`setNeedsUpdateOfPrefersPointerLocked()`](./setneedsupdateofpreferspointerlocked%28%29.md) if the child view controller that the system needs to query for the pointer lock preference changes.
 
 ## See Also
 
-- [var prefersPointerLocked: Bool](uiviewcontroller/preferspointerlocked.md)
+### Managing pointer lock state
+- [var prefersPointerLocked: Bool](./preferspointerlocked.md)
   A Boolean value that indicates whether the view controller prefers to lock the pointer to a specific scene.
-- [func setNeedsUpdateOfPrefersPointerLocked()](uiviewcontroller/setneedsupdateofpreferspointerlocked.md)
+- [func setNeedsUpdateOfPrefersPointerLocked()](./setneedsupdateofpreferspointerlocked%28%29.md)
   Indicates that the view controller changed the pointer lock preference.
 
 

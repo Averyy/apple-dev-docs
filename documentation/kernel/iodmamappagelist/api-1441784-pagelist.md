@@ -1,14 +1,15 @@
 # pageList
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
 
 ## Declaration
 
-```swift
+```c
 const upl_page_info_t *pageList;
 ```
 

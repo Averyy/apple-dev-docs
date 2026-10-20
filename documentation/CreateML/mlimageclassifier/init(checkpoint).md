@@ -1,7 +1,8 @@
 # init(checkpoint:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image classifier from a training session checkpoint.
 
@@ -20,7 +21,7 @@ init(checkpoint: MLCheckpoint) throws
 
 #### Discussion
 
-You can only use a checkpoint from an image classifier’s training session if its [`phase`](mlcheckpoint/phase.md) property is [`MLPhase.training`](mlphase/training.md).
+You can only use a checkpoint from an image classifier’s training session if its [`phase`](../mlcheckpoint/phase.md) property is [`MLPhase.training`](../mlphase/training.md).
 
 ## Parameters
 

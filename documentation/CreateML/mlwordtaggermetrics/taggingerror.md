@@ -1,7 +1,8 @@
 # taggingError
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fraction of incorrectly tagged examples.
 
@@ -16,13 +17,14 @@ var taggingError: Double { get }
 
 ## Mentions
 
-- [Creating a word tagger model](creating-a-word-tagger-model.md)
+- [Creating a word tagger model](../creating-a-word-tagger-model.md)
 
 ## See Also
 
-- [var precisionRecall: MLDataTable](mlwordtaggermetrics/precisionrecall.md)
+### Analyzing the tagger’s performance
+- [var precisionRecall: MLDataTable](./precisionrecall.md)
   A data table listing the precision and recall percentages for each category.
-- [var confusion: MLDataTable](mlwordtaggermetrics/confusion.md)
+- [var confusion: MLDataTable](./confusion.md)
   A table comparing the actual and predicted labels for each tagging category.
 
 

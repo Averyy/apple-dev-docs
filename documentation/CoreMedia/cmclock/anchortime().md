@@ -1,7 +1,8 @@
 # anchorTime()
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current time from a clock and the matching time from the clock’s reference clock.
 
@@ -22,11 +23,12 @@ func anchorTime() throws -> (anchorTime: CMTime, referenceTime: CMTime)
 
 ## See Also
 
-- [func audioDevice() throws -> (deviceUID: String?, deviceID: AudioDeviceID, trackingDefaultDevice: Bool)](cmclock/audiodevice.md)
+### Getting Time and Devices
+- [func audioDevice() throws -> (deviceUID: String?, deviceID: AudioDeviceID, trackingDefaultDevice: Bool)](./audiodevice%28%29.md)
   Returns the audio device the clock tracks.
-- [func setAudioDeviceID(AudioDeviceID) throws](cmclock/setaudiodeviceid(_:).md)
+- [func setAudioDeviceID(AudioDeviceID) throws](./setaudiodeviceid%28_%29.md)
   Sets the audio device by using the device identifier.
-- [func setAudioDeviceUID(String?) throws](cmclock/setaudiodeviceuid(_:).md)
+- [func setAudioDeviceUID(String?) throws](./setaudiodeviceuid%28_%29.md)
   Sets the audio device by using the unique device identifier.
 
 

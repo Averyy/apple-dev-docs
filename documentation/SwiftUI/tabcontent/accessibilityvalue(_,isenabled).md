@@ -1,7 +1,8 @@
 # accessibilityValue(_:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a textual description of the value that the tab contains.
 
@@ -19,6 +20,23 @@ Adds a textual description of the value that the tab contains.
 ```swift
 @export(implementation)
 nonisolated func accessibilityValue(_ valueResource: LocalizedStringResource, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
+```
+
+**Other overloads**:
+
+```swift
+nonisolated
+func accessibilityValue(_ valueDescription: Text, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
+```
+
+```swift
+nonisolated
+func accessibilityValue(_ valueKey: LocalizedStringKey, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
+```
+
+```swift
+nonisolated
+func accessibilityValue<S>(_ value: S, isEnabled: Bool = true) -> some TabContent<Self.TabValue> where S : StringProtocol
 ```
 
 #### Discussion
@@ -46,14 +64,15 @@ var body: some View {
 
 ## See Also
 
-- [func accessibilityHint(_:isEnabled:)](tabcontent/accessibilityhint(_:isenabled:).md)
+### Configuring tab accessibility
+- [func accessibilityHint(_:isEnabled:)](./accessibilityhint%28_,isenabled%29.md)
   Communicates to the user what happens after selecting the tab.
 - [func accessibilityIdentifier(String, isEnabled: Bool) -> some TabContent<Self.TabValue>
-](tabcontent/accessibilityidentifier(_:isenabled:).md)
+](./accessibilityidentifier%28_,isenabled%29.md)
   Uses the string you specify to identify the view. Use this value for testing. It isn’t visible to the user.
-- [func accessibilityInputLabels(_:isEnabled:)](tabcontent/accessibilityinputlabels(_:isenabled:).md)
+- [func accessibilityInputLabels(_:isEnabled:)](./accessibilityinputlabels%28_,isenabled%29.md)
   Sets alternate input labels with which users identify a tab.
-- [func accessibilityLabel(_:isEnabled:)](tabcontent/accessibilitylabel(_:isenabled:).md)
+- [func accessibilityLabel(_:isEnabled:)](./accessibilitylabel%28_,isenabled%29.md)
   Adds a label to the tab that describes its contents.
 
 

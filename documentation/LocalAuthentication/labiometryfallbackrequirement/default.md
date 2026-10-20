@@ -1,7 +1,8 @@
 # default
 
 **Framework**: Local Authentication  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default biometric fallback requirement.
 
@@ -18,9 +19,14 @@ The default biometric fallback requirement.
 class var `default`: LABiometryFallbackRequirement { get }
 ```
 
+```objc
+@property (class, readonly) LABiometryFallbackRequirement * defaultRequirement;
+```
+
 ## See Also
 
-- [class var devicePasscode: LABiometryFallbackRequirement](labiometryfallbackrequirement/devicepasscode.md)
+### Specifying biometric fallback requirements
+- [class var devicePasscode: LABiometryFallbackRequirement](./devicepasscode.md)
   The fallback requirement that requires entering the device passcode.
 
 

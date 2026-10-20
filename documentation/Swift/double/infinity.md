@@ -1,7 +1,8 @@
 # infinity
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Positive infinity.
 
@@ -33,21 +34,22 @@ let y = x * 2
 
 ## See Also
 
-- [static var pi: Double](double/pi.md)
+### Accessing Numeric Constants
+- [static var pi: Double](./pi.md)
   The mathematical constant pi (π), approximately equal to 3.14159.
-- [static var greatestFiniteMagnitude: Double](double/greatestfinitemagnitude.md)
+- [static var greatestFiniteMagnitude: Double](./greatestfinitemagnitude.md)
   The greatest finite number representable by this type.
-- [static var nan: Double](double/nan.md)
+- [static var nan: Double](./nan.md)
   A quiet NaN (“not a number”).
-- [static var signalingNaN: Double](double/signalingnan.md)
+- [static var signalingNaN: Double](./signalingnan.md)
   A signaling NaN (“not a number”).
-- [static var ulpOfOne: Double](double/ulpofone.md)
+- [static var ulpOfOne: Double](./ulpofone.md)
   The unit in the last place of 1.0.
-- [static var leastNonzeroMagnitude: Double](double/leastnonzeromagnitude.md)
+- [static var leastNonzeroMagnitude: Double](./leastnonzeromagnitude.md)
   The least positive number.
-- [static var leastNormalMagnitude: Double](double/leastnormalmagnitude.md)
+- [static var leastNormalMagnitude: Double](./leastnormalmagnitude.md)
   The least positive normal number.
-- [static var zero: Self](double/zero.md)
+- [static var zero: Self](./zero.md)
   The zero value.
 
 

@@ -1,7 +1,8 @@
 # ClothMeshResource
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A mesh resource that defines the topology and shape of a cloth body or a mesh-shaped cloth collider.
 
@@ -18,61 +19,62 @@ final class ClothMeshResource
 
 #### Overview
 
-Use this resource as the mesh for a [`mesh`](clothbodycomponent/mesh.md) or a [`mesh`](clothmeshshape/mesh.md).
+Use this resource as the mesh for a [`mesh`](./clothbodycomponent/mesh.md) or a [`mesh`](./clothmeshshape/mesh.md).
 
 ## Topics
 
 ### Creating a cloth mesh
-- [convenience init(positions: [SIMD3<Float>], triangleIndices: [UInt32]) throws](clothmeshresource/init(positions:triangleindices:).md)
+- [convenience init(positions: [SIMD3<Float>], triangleIndices: [UInt32]) throws](./clothmeshresource/init%28positions,triangleindices%29.md)
   Creates a cloth mesh resource from the given vertex positions and triangle indices.
-- [static func patch(size: SIMD2<Float>, targetEdgeLength: Float) throws -> Self](clothmeshresource/patch(size:targetedgelength:).md)
+- [static func patch(size: SIMD2<Float>, targetEdgeLength: Float) throws -> Self](./clothmeshresource/patch%28size,targetedgelength%29.md)
   Creates a rectangular patch mesh with a topology suitable for cloth simulation.
-- [static func box(size: SIMD3<Float>, targetEdgeLength: Float) throws -> Self](clothmeshresource/box(size:targetedgelength:).md)
+- [static func box(size: SIMD3<Float>, targetEdgeLength: Float) throws -> Self](./clothmeshresource/box%28size,targetedgelength%29.md)
   Creates a box mesh with a topology suitable for cloth simulation.
-- [static func sphere(radius: Float, targetEdgeLength: Float) throws -> Self](clothmeshresource/sphere(radius:targetedgelength:).md)
+- [static func sphere(radius: Float, targetEdgeLength: Float) throws -> Self](./clothmeshresource/sphere%28radius,targetedgelength%29.md)
   Creates a sphere mesh with a topology suitable for cloth simulation.
-- [static func capsule(height: Float, radius: Float, targetEdgeLength: Float) throws -> Self](clothmeshresource/capsule(height:radius:targetedgelength:).md)
+- [static func capsule(height: Float, radius: Float, targetEdgeLength: Float) throws -> Self](./clothmeshresource/capsule%28height,radius,targetedgelength%29.md)
   Creates a capsule mesh with a topology suitable for cloth simulation.
-- [static func cylinder(height: Float, radius: Float, withCaps: Bool, targetEdgeLength: Float) throws -> Self](clothmeshresource/cylinder(height:radius:withcaps:targetedgelength:).md)
+- [static func cylinder(height: Float, radius: Float, withCaps: Bool, targetEdgeLength: Float) throws -> Self](./clothmeshresource/cylinder%28height,radius,withcaps,targetedgelength%29.md)
   Creates a cylinder mesh with a topology suitable for cloth simulation.
-- [static let defaultTargetEdgeLength: Float](clothmeshresource/defaulttargetedgelength.md)
+- [static let defaultTargetEdgeLength: Float](./clothmeshresource/defaulttargetedgelength.md)
   Default target edge length for mesh generation.
 ### Accessing vertex data
-- [var vertexCount: Int](clothmeshresource/vertexcount.md)
+- [var vertexCount: Int](./clothmeshresource/vertexcount.md)
   The number of vertices in the mesh.
-- [func position(at: UInt32) -> SIMD3<Float>](clothmeshresource/position(at:).md)
+- [func position(at: UInt32) -> SIMD3<Float>](./clothmeshresource/position%28at%29.md)
   Returns the position of the vertex at the given index.
-- [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothmeshresource/withpositions(_:).md)
+- [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](./clothmeshresource/withpositions%28_%29.md)
   Provides access to the positions of all the vertices within a callback.
-- [func vertexIndex(at: UInt32) -> UInt32](clothmeshresource/vertexindex(at:).md)
+- [func vertexIndex(at: UInt32) -> UInt32](./clothmeshresource/vertexindex%28at%29.md)
   Returns the vertex index at the given position in the mesh’s flattened primitive index array.
-- [func vertexIndex(primitive: UInt32, vertex: UInt32) -> UInt32](clothmeshresource/vertexindex(primitive:vertex:).md)
+- [func vertexIndex(primitive: UInt32, vertex: UInt32) -> UInt32](./clothmeshresource/vertexindex%28primitive,vertex%29.md)
   Returns the vertex index of the specified vertex within the specified primitive.
-- [func vertices(in: ClothVolumeShape, center: SIMD3<Float>, orientation: simd_quatf) -> [UInt32]](clothmeshresource/vertices(in:center:orientation:).md)
+- [func vertices(in: ClothVolumeShape, center: SIMD3<Float>, orientation: simd_quatf) -> [UInt32]](./clothmeshresource/vertices%28in,center,orientation%29.md)
   Returns the indices of the vertices that lie inside the given volume shape.
 ### Inspecting mesh geometry
-- [var isWatertight: Bool](clothmeshresource/iswatertight.md)
+- [var isWatertight: Bool](./clothmeshresource/iswatertight.md)
   Indicates whether the mesh is “watertight”.
-- [var volume: Float?](clothmeshresource/volume.md)
+- [var volume: Float?](./clothmeshresource/volume.md)
   The volume of the mesh, or `nil` if the mesh is not watertight.
 ### Initializers
-- [convenience init(from: MeshResource) throws](clothmeshresource/init(from:).md)
+- [convenience init(from: MeshResource) throws](./clothmeshresource/init%28from%29.md)
   Creates a cloth mesh resource from a rendering mesh resource.
 ### Instance Properties
-- [var indexCount: Int](clothmeshresource/indexcount.md)
+- [var indexCount: Int](./clothmeshresource/indexcount.md)
   The number of indices in the mesh.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Resource](resource.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Resource](./resource.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class ClothPoseResource](clothposeresource.md)
+### Cloth resources
+- [class ClothPoseResource](./clothposeresource.md)
   A resource that defines a set of vertex positions for a cloth body.
 
 

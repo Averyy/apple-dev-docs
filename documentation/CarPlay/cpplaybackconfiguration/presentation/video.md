@@ -1,7 +1,8 @@
 # CPPlaybackConfiguration.Presentation.video
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 26.4+
@@ -12,6 +13,10 @@
 
 ```swift
 case video
+```
+
+```c
+CPPlaybackPresentationVideo
 ```
 
 

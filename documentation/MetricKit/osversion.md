@@ -1,7 +1,8 @@
 # OSVersion
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The version of the operating system on the device.
 
@@ -21,32 +22,33 @@ struct OSVersion
 ## Topics
 
 ### Instance Properties
-- [let buildNumber: String](osversion/buildnumber.md)
+- [let buildNumber: String](./osversion/buildnumber.md)
   The build number of the operating system (e.g., “23F75”).
-- [let number: String](osversion/number.md)
+- [let number: String](./osversion/number.md)
   The version number of the operating system (e.g., “26.5”).
-- [let platform: String](osversion/platform.md)
+- [let platform: String](./osversion/platform.md)
   The name of the operating system platform (e.g., “iPhone OS”).
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct Histogram](histogram.md)
+### Supporting types
+- [struct Histogram](./histogram.md)
   A distribution of values organized into buckets.
-- [struct AverageStatistics](averagestatistics.md)
+- [struct AverageStatistics](./averagestatistics.md)
   A value that encapsulates an average measurement with supporting statistical data.
-- [class SignalBars](signalbars.md)
+- [class SignalBars](./signalbars.md)
   A unit for cellular signal strength measurements in bars.
-- [class HitchTimeRatio](hitchtimeratio.md)
+- [class HitchTimeRatio](./hitchtimeratio.md)
   A unit for animation hitch time ratio measurements.
 
 

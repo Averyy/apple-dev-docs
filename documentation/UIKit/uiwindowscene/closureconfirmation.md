@@ -1,7 +1,8 @@
 # closureConfirmation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A configuration describing a confirmation dialog to be shown when a user action will result in destruction of the scene session and disconnection of the scene.
 
@@ -15,6 +16,10 @@ A configuration describing a confirmation dialog to be shown when a user action 
 ```swift
 @NSCopying
 var closureConfirmation: UISceneClosureConfirmation? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) UISceneClosureConfirmation * closureConfirmation;
 ```
 
 

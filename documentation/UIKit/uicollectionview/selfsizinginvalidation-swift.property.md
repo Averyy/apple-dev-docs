@@ -1,7 +1,8 @@
 # selfSizingInvalidation
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mode that the collection view uses for invalidating the size of self-sizing cells.
 
@@ -18,13 +19,18 @@ The mode that the collection view uses for invalidating the size of self-sizing 
 var selfSizingInvalidation: UICollectionView.SelfSizingInvalidation { get set }
 ```
 
+```objc
+@property (nonatomic) UICollectionViewSelfSizingInvalidation selfSizingInvalidation;
+```
+
 #### Discussion
 
-> **Note**:  Session 10068: [`What’s new in UIKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10068)
+> **Related Sessions from WWDC22**:  Session 10068: [What’s new in UIKit](https://developer.apple.com/wwdc22/10068)
 
 ## See Also
 
-- [UICollectionView.SelfSizingInvalidation](uicollectionview/selfsizinginvalidation-swift.enum.md)
+### Resizing self-sizing cells
+- [UICollectionView.SelfSizingInvalidation](./selfsizinginvalidation-swift.enum.md)
   Constants that describe modes for invalidating the size of self-sizing collection view cells.
 
 

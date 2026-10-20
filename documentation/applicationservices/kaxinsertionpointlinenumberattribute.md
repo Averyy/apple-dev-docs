@@ -1,7 +1,8 @@
 # kAXInsertionPointLineNumberAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The line number of the insertion point in the text associated with this accessibility object.
 
@@ -12,6 +13,10 @@ The line number of the insertion point in the text associated with this accessib
 
 ```swift
 var kAXInsertionPointLineNumberAttribute: String { get }
+```
+
+```c
+#define kAXInsertionPointLineNumberAttribute
 ```
 
 

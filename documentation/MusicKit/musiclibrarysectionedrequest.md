@@ -1,7 +1,8 @@
 # MusicLibrarySectionedRequest
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A request that your app uses to fetch items grouped by sections from the user’s music library.
 
@@ -23,51 +24,51 @@ struct MusicLibrarySectionedRequest<SectionType, MusicItemType> where SectionTyp
 ## Topics
 
 ### Initializers
-- [init()](musiclibrarysectionedrequest/init.md)
+- [init()](./musiclibrarysectionedrequest/init%28%29.md)
   Creates a request to fetch items grouped by sections from the library.
 ### Instance Properties
-- [var includeOnlyDownloadedContent: Bool](musiclibrarysectionedrequest/includeonlydownloadedcontent.md)
+- [var includeOnlyDownloadedContent: Bool](./musiclibrarysectionedrequest/includeonlydownloadedcontent.md)
   A Boolean value that indicates whether the library response should only include items downloaded on the user’s device.
-- [var limit: Int](musiclibrarysectionedrequest/limit.md)
+- [var limit: Int](./musiclibrarysectionedrequest/limit.md)
   A limit for the number of items to return in the library response.
-- [var offset: Int](musiclibrarysectionedrequest/offset.md)
+- [var offset: Int](./musiclibrarysectionedrequest/offset.md)
   An offset for the request.
 ### Instance Methods
-- [func filterItems<RelatedMusicItemType>(matching: KeyPath<MusicItemType.LibraryFilter, MusicItemCollection<RelatedMusicItemType>?>, contains: RelatedMusicItemType)](musiclibrarysectionedrequest/filteritems(matching:contains:)-3s88f.md)
+- [func filterItems<RelatedMusicItemType>(matching: KeyPath<MusicItemType.LibraryFilter, MusicItemCollection<RelatedMusicItemType>?>, contains: RelatedMusicItemType)](./musiclibrarysectionedrequest/filteritems%28matching,contains%29-3s88f.md)
   Filters items by a given relationship that matches a specific value.
-- [func filterItems(matching: KeyPath<MusicItemType.LibraryFilter, String>, contains: String)](musiclibrarysectionedrequest/filteritems(matching:contains:)-8rbsc.md)
+- [func filterItems(matching: KeyPath<MusicItemType.LibraryFilter, String>, contains: String)](./musiclibrarysectionedrequest/filteritems%28matching,contains%29-8rbsc.md)
   Filters items by a given property that contains a specific string.
-- [func filterItems(matching: KeyPath<MusicItemType.LibraryFilter, String?>, contains: String)](musiclibrarysectionedrequest/filteritems(matching:contains:)-9hpfh.md)
+- [func filterItems(matching: KeyPath<MusicItemType.LibraryFilter, String?>, contains: String)](./musiclibrarysectionedrequest/filteritems%28matching,contains%29-9hpfh.md)
   Filters items by a given optional property that contains a specific string.
-- [func filterItems<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value>, equalTo: Value)](musiclibrarysectionedrequest/filteritems(matching:equalto:)-3zn4r.md)
+- [func filterItems<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value>, equalTo: Value)](./musiclibrarysectionedrequest/filteritems%28matching,equalto%29-3zn4r.md)
   Filters items by a given property that matches a specific value.
-- [func filterItems<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value?>, equalTo: Value?)](musiclibrarysectionedrequest/filteritems(matching:equalto:)-5ybaa.md)
+- [func filterItems<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value?>, equalTo: Value?)](./musiclibrarysectionedrequest/filteritems%28matching,equalto%29-5ybaa.md)
   Filters items by a given optional property that matches a specific value.
-- [func filterItems<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value>, memberOf: [Value])](musiclibrarysectionedrequest/filteritems(matching:memberof:)-49h2x.md)
+- [func filterItems<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value>, memberOf: [Value])](./musiclibrarysectionedrequest/filteritems%28matching,memberof%29-49h2x.md)
   Filters items by a property for an array of possible values.
-- [func filterItems<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value?>, memberOf: [Value?])](musiclibrarysectionedrequest/filteritems(matching:memberof:)-zmb0.md)
+- [func filterItems<Value>(matching: KeyPath<MusicItemType.LibraryFilter, Value?>, memberOf: [Value?])](./musiclibrarysectionedrequest/filteritems%28matching,memberof%29-zmb0.md)
   Filters items by an optional property for an array of possible values.
-- [func filterItems(text: String)](musiclibrarysectionedrequest/filteritems(text:).md)
+- [func filterItems(text: String)](./musiclibrarysectionedrequest/filteritems%28text%29.md)
   Filters items by a specific string.
-- [func filterSections(matching: KeyPath<SectionType.LibraryFilter, String?>, contains: String)](musiclibrarysectionedrequest/filtersections(matching:contains:)-3jf7b.md)
+- [func filterSections(matching: KeyPath<SectionType.LibraryFilter, String?>, contains: String)](./musiclibrarysectionedrequest/filtersections%28matching,contains%29-3jf7b.md)
   Filters sections by a given optional property that contains a specific string.
-- [func filterSections(matching: KeyPath<SectionType.LibraryFilter, String>, contains: String)](musiclibrarysectionedrequest/filtersections(matching:contains:)-5ptoy.md)
+- [func filterSections(matching: KeyPath<SectionType.LibraryFilter, String>, contains: String)](./musiclibrarysectionedrequest/filtersections%28matching,contains%29-5ptoy.md)
   Filters sections by a given property that contains a specific string.
-- [func filterSections<Value>(matching: KeyPath<SectionType.LibraryFilter, Value?>, equalTo: Value?)](musiclibrarysectionedrequest/filtersections(matching:equalto:)-5nop7.md)
+- [func filterSections<Value>(matching: KeyPath<SectionType.LibraryFilter, Value?>, equalTo: Value?)](./musiclibrarysectionedrequest/filtersections%28matching,equalto%29-5nop7.md)
   Filters sections by a given optional property that matches a specific value.
-- [func filterSections<Value>(matching: KeyPath<SectionType.LibraryFilter, Value>, equalTo: Value)](musiclibrarysectionedrequest/filtersections(matching:equalto:)-7v8tr.md)
+- [func filterSections<Value>(matching: KeyPath<SectionType.LibraryFilter, Value>, equalTo: Value)](./musiclibrarysectionedrequest/filtersections%28matching,equalto%29-7v8tr.md)
   Filters sections by a given property that matches a specific value.
-- [func filterSections<Value>(matching: KeyPath<SectionType.LibraryFilter, Value>, memberOf: [Value])](musiclibrarysectionedrequest/filtersections(matching:memberof:)-4l0z8.md)
+- [func filterSections<Value>(matching: KeyPath<SectionType.LibraryFilter, Value>, memberOf: [Value])](./musiclibrarysectionedrequest/filtersections%28matching,memberof%29-4l0z8.md)
   Filters sections by a property for an array of possible values.
-- [func filterSections<Value>(matching: KeyPath<SectionType.LibraryFilter, Value?>, memberOf: [Value?])](musiclibrarysectionedrequest/filtersections(matching:memberof:)-746mb.md)
+- [func filterSections<Value>(matching: KeyPath<SectionType.LibraryFilter, Value?>, memberOf: [Value?])](./musiclibrarysectionedrequest/filtersections%28matching,memberof%29-746mb.md)
   Filters sections by an optional property for an array of possible values.
-- [func filterSections(text: String)](musiclibrarysectionedrequest/filtersections(text:).md)
+- [func filterSections(text: String)](./musiclibrarysectionedrequest/filtersections%28text%29.md)
   Filters sections by a specific string.
-- [func response() async throws -> MusicLibrarySectionedResponse<SectionType, MusicItemType>](musiclibrarysectionedrequest/response.md)
+- [func response() async throws -> MusicLibrarySectionedResponse<SectionType, MusicItemType>](./musiclibrarysectionedrequest/response%28%29.md)
   Fetches items grouped by sections from the user’s music library.
-- [func sortItems<Value>(by: KeyPath<MusicItemType.LibrarySortProperties, Value>, ascending: Bool)](musiclibrarysectionedrequest/sortitems(by:ascending:).md)
+- [func sortItems<Value>(by: KeyPath<MusicItemType.LibrarySortProperties, Value>, ascending: Bool)](./musiclibrarysectionedrequest/sortitems%28by,ascending%29.md)
   Sorts items by a specified property.
-- [func sortSections<Value>(by: KeyPath<SectionType.LibrarySortProperties, Value>, ascending: Bool)](musiclibrarysectionedrequest/sortsections(by:ascending:).md)
+- [func sortSections<Value>(by: KeyPath<SectionType.LibrarySortProperties, Value>, ascending: Bool)](./musiclibrarysectionedrequest/sortsections%28by,ascending%29.md)
   Sorts sections by a specified property.
 
 

@@ -1,19 +1,20 @@
 # iOS & iPadOS 18.4 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 18.4 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18.4. The SDK comes bundled with Xcode 16.3. For information on the compatibility requirements for Xcode 16.3, see [`Xcode 16.3 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_3-release-notes).
+The iOS & iPadOS 18.4 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18.4. The SDK comes bundled with Xcode 16.3. For information on the compatibility requirements for Xcode 16.3, see [Xcode 16.3 Release Notes](../Xcode-Release-Notes/xcode-16_3-release-notes.md).
 
-##### Adattributionkit
+##### AdAttributionKit
 
 ###### New Features
 
-- [`AdAttributionKit`](https://developer.apple.comhttps://developer.apple.com/documentation/AdAttributionKit) now supports Overlapping Conversions, which enables advertisers to have multiple simultaneous re-engagement conversions. The system provides a conversion tag as the value of the re-engagement URL parameter. You can pass the conversion tag into the updateConversionValue API to update the specific conversion.  (136100247)
-- New [`AdAttributionKit`](https://developer.apple.comhttps://developer.apple.com/documentation/AdAttributionKit) testability for advertised apps is in iOS Settings > Developer > Ad Attribution Testing. You can now create and interact with development postbacks for your app in iOS Settings, instead of requiring a separate publisher app to sign and show ads for your app. If your app is built with Xcode, you can now create development postbacks for your app in iOS Settings, replacing the need for your app to first be distributed in the App Store or alternative app marketplace.  (136704392)
+- [AdAttributionKit](../AdAttributionKit/AdAttributionKit.md) now supports Overlapping Conversions, which enables advertisers to have multiple simultaneous re-engagement conversions. The system provides a conversion tag as the value of the re-engagement URL parameter. You can pass the conversion tag into the updateConversionValue API to update the specific conversion.  (136100247)
+- New [AdAttributionKit](../AdAttributionKit/AdAttributionKit.md) testability for advertised apps is in iOS Settings > Developer > Ad Attribution Testing. You can now create and interact with development postbacks for your app in iOS Settings, instead of requiring a separate publisher app to sign and show ads for your app. If your app is built with Xcode, you can now create development postbacks for your app in iOS Settings, replacing the need for your app to first be distributed in the App Store or alternative app marketplace.  (136704392)
 
 ##### Apple Intelligence
 
@@ -23,21 +24,25 @@ The iOS & iPadOS 18.4 SDK provides support to develop apps for iPhone and iPad r
 - Fixed: After restoring iOS 18.4 or iPadOS 18.4, some Apple Intelligence features might not be available or you might see “Downloading support…”.  (145117473)
 - Fixed: Some Apple Intelligence features are unavailable until device is rebooted.  (145431408)
 
-##### Apple Vision Pro App
+##### Apple Vision Pro app
 
 ###### Resolved Issues
 
 - Fixed: On iOS 18.4 beta 1, the Apple Vision Pro app launches with a black screen if downloaded from the App Store. Upgrade to iOS 18.4 beta 2 and newer, and the app will launch as expected.  (146814396)
 
-##### Hvf
+##### hvf
 
 ###### Known Issues
 
-- Availability checking is disabled for C APIs in hvf.  (147323772) **Workaround:** To enable availability checking, add this ahead of any headers: ```None
- #define BUILD_FOR_APPLE_SDK 1
-```
+- Availability checking is disabled for C APIs in hvf.  (147323772)
 
-##### Libxml2
+  **Workaround:** To enable availability checking, add this ahead of any headers:
+
+  ```
+   #define BUILD_FOR_APPLE_SDK 1
+  ```
+
+##### libxml2
 
 ###### Deprecations
 
@@ -67,13 +72,13 @@ The iOS & iPadOS 18.4 SDK provides support to develop apps for iPhone and iPad r
 
 - Fixed: In non-English languages, some Siri suggestions might fail to complete successfully.  (143407922)
 
-##### Storekit
+##### StoreKit
 
 ###### New Features
 
-- New StoreKit APIs support [`Advanced Commerce API`](https://developer.apple.comhttps://developer.apple.com/in-app-purchase/advanced-commerce-api/) in-app purchases.  (118528943)
+- New StoreKit APIs support [Advanced Commerce API](https://developer.apple.com/in-app-purchase/advanced-commerce-api/) in-app purchases.  (118528943)
 - By using the new purchase option API `introductoryOfferEligibility(compactJWS:)`, you can now set a preference for whether an introductory offer should be redeemed during a purchase. This API requires you to sign a payload on your server in order to either apply the offer (even if the customer is not eligible) or block it.  (136152740)
-- New properties `appTransactionID`, `originalPlatform`, and `period` are now available in [`AppTransaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/apptransaction), [`Transaction`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction), [`Transaction.Offer`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/offer-swift.struct), and [`Product.SubscriptionInfo.RenewalInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo).  (136395697)
+- New properties `appTransactionID`, `originalPlatform`, and `period` are now available in [AppTransaction](../StoreKit/apptransaction.md), [Transaction](../StoreKit/transaction.md), [Transaction.Offer](../StoreKit/transaction/offer-swift.struct.md), and [Product.SubscriptionInfo.RenewalInfo](../StoreKit/product/subscriptioninfo/renewalinfo.md).  (136395697)
 - The `Platform` symbol used by originalPlatform in AppTransaction has been moved to `AppStore.Platform`.  (143632084)
 - The introductory offer eligibility preference API in PurchaseOption has been renamed to `introductoryOfferEligibility(compactJWS:)`.  (143905053)
 - `watchOS` is removed as an option in the AppStore.Platform API. `watchOS` is now combined with `iOS`.  (145578780)
@@ -85,13 +90,15 @@ The iOS & iPadOS 18.4 SDK provides support to develop apps for iPhone and iPad r
 
 ###### Known Issues
 
-- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524) **Workaround:** The user should sign in with their App Store account to request introductory offer eligibility.
+- Calling `isEligibleForIntroOffer(for:)` will return false if there is no user account signed in.  (146119524)
+
+  **Workaround:** The user should sign in with their App Store account to request introductory offer eligibility.
 
 ###### Deprecations
 
-- [`Transaction.currentEntitlement(for:)`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/currententitlement(for:)) is now deprecated. This API returns the latest transaction that entitles the user to a product, which may not include transactions originated for family shared subscriptions. Use the `Transaction.currentEntitlements(for:)` method to get all the transactions that entitle the user to a product.  (138320205)
+- [Transaction.currentEntitlement(for:)](../StoreKit/transaction/currententitlement%28for%29.md) is now deprecated. This API returns the latest transaction that entitles the user to a product, which may not include transactions originated for family shared subscriptions. Use the `Transaction.currentEntitlements(for:)` method to get all the transactions that entitle the user to a product.  (138320205)
 
-##### Swiftui
+##### SwiftUI
 
 ###### Resolved Issues
 
@@ -106,7 +113,7 @@ The iOS & iPadOS 18.4 SDK provides support to develop apps for iPhone and iPad r
 
 - fileport_makeport(2) and fileport_makefd(2) are now APIs with manual pages.  (66571768) (FB8270900)
 
-##### Uiwritingtoolscoordinator
+##### UIWritingToolsCoordinator
 
 ###### Resolved Issues
 
@@ -115,13 +122,13 @@ The iOS & iPadOS 18.4 SDK provides support to develop apps for iPhone and iPad r
 - Fixed: The delegate receives more calls to `-writingToolsCoordinator:selectRanges:inContext:completion:` than necessary.  (138868937)
 - Fixed: In iOS 18.4 beta, UIWritingToolsCoordinatorDelegate method `-writingToolsCoordinator:requestsRangeInContextWithIdentifierForPoint:completion:` is marked as optional will not be called.  (139544247)
 
-##### Urlsession
+##### URLSession
 
 ###### New Features
 
 - To enable the new HTTP loading mode, set `usesClassicLoadingMode` to false on URLSessionConfiguration. The new loading mode will become the default in a future release.  (89390075)
 
-##### Wi Fi Calling
+##### Wi-Fi Calling
 
 ###### Resolved Issues
 
@@ -135,17 +142,18 @@ The iOS & iPadOS 18.4 SDK provides support to develop apps for iPhone and iPad r
 
 ## See Also
 
-- [iOS & iPadOS 18.6 Release Notes](ios-ipados-18_6-release-notes.md)
+### iOS & iPadOS 18
+- [iOS & iPadOS 18.6 Release Notes](./ios-ipados-18_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.5 Release Notes](ios-ipados-18_5-release-notes.md)
+- [iOS & iPadOS 18.5 Release Notes](./ios-ipados-18_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.3 Release Notes](ios-ipados-18_3-release-notes.md)
+- [iOS & iPadOS 18.3 Release Notes](./ios-ipados-18_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.2 Release Notes](ios-ipados-18_2-release-notes.md)
+- [iOS & iPadOS 18.2 Release Notes](./ios-ipados-18_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.1 Release Notes](ios-ipados-18_1-release-notes.md)
+- [iOS & iPadOS 18.1 Release Notes](./ios-ipados-18_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18 Release Notes](ios-ipados-18-release-notes.md)
+- [iOS & iPadOS 18 Release Notes](./ios-ipados-18-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: LockedCameraCapture  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a locked camera capture extension scene.
 
@@ -18,7 +19,7 @@ init(content: @escaping (LockedCameraCaptureSession) -> Content)
 
 ## Parameters
 
-- `content`: The content of the locked camera capture extension using a [`LockedCameraCaptureSession`](lockedcameracapturesession.md).
+- `content`: The content of the locked camera capture extension using a [`LockedCameraCaptureSession`](../lockedcameracapturesession.md).
 
 
 ---

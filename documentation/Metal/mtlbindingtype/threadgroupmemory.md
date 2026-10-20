@@ -1,7 +1,8 @@
 # MTLBindingType.threadgroupMemory
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,10 @@
 
 ```swift
 case threadgroupMemory
+```
+
+```c
+MTLBindingTypeThreadgroupMemory
 ```
 
 

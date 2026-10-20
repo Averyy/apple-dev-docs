@@ -1,7 +1,8 @@
 # richText
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option to include style attributes consistent with the RTF format in the returned text.
 
@@ -17,13 +18,18 @@ An option to include style attributes consistent with the RTF format in the retu
 static var richText: UIWritingToolsResultOptions { get }
 ```
 
+```c
+UIWritingToolsResultRichText
+```
+
 ## See Also
 
-- [static var plainText: UIWritingToolsResultOptions](uiwritingtoolsresultoptions/plaintext.md)
+### Getting the output options
+- [static var plainText: UIWritingToolsResultOptions](./plaintext.md)
   An option to allow only plain text without any attributes in the returned text.
-- [static var list: UIWritingToolsResultOptions](uiwritingtoolsresultoptions/list.md)
+- [static var list: UIWritingToolsResultOptions](./list.md)
   An option to allow list-style formatting in the returned text.
-- [static var table: UIWritingToolsResultOptions](uiwritingtoolsresultoptions/table.md)
+- [static var table: UIWritingToolsResultOptions](./table.md)
   An option to allow tabular layout attributes in the returned text.
 
 

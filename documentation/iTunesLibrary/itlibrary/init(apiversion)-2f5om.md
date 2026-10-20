@@ -1,7 +1,8 @@
 # init(APIVersion:)
 
 **Framework**: iTunes Library  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 14.0+

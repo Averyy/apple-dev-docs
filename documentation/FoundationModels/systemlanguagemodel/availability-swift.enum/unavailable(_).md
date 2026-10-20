@@ -1,7 +1,8 @@
 # SystemLanguageModel.Availability.unavailable(_:)
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system isn’t ready for requests.
 
@@ -20,9 +21,10 @@ case unavailable(SystemLanguageModel.Availability.UnavailableReason)
 
 ## See Also
 
-- [SystemLanguageModel.Availability.available](systemlanguagemodel/availability-swift.enum/available.md)
+### Checking for availability
+- [SystemLanguageModel.Availability.available](./available.md)
   The system is ready to make requests.
-- [SystemLanguageModel.Availability.UnavailableReason](systemlanguagemodel/availability-swift.enum/unavailablereason.md)
+- [SystemLanguageModel.Availability.UnavailableReason](./unavailablereason.md)
   The reason the system language model is unavailable.
 
 

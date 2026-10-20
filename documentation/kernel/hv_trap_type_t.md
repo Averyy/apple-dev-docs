@@ -1,14 +1,15 @@
 # hv_trap_type_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.10+
 
 ## Declaration
 
-```swift
+```c
 typedef enum hv_trap_type_t : unsigned int {
     ...
 } hv_trap_type_t;
@@ -17,8 +18,8 @@ typedef enum hv_trap_type_t : unsigned int {
 ## Topics
 
 ### Constants
-- [HV_TASK_TRAP](hv_trap_type_t/hv_task_trap.md)
-- [HV_THREAD_TRAP](hv_trap_type_t/hv_thread_trap.md)
+- [HV_TASK_TRAP](./hv_trap_type_t/hv_task_trap.md)
+- [HV_THREAD_TRAP](./hv_trap_type_t/hv_thread_trap.md)
 
 
 ---

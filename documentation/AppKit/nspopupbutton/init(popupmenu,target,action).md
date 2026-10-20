@@ -1,7 +1,8 @@
 # init(popUpMenu:target:action:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a standard pop-up button with a menu, target, and action.
 

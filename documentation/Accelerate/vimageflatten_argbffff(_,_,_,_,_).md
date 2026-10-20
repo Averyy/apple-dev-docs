@@ -1,7 +1,8 @@
 # vImageFlatten_ARGBFFFF(_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Performs an alpha composite of a 32-bit-per-channel, 4-channel ARGB buffer over a solid background color.
 
@@ -20,9 +21,13 @@ Performs an alpha composite of a 32-bit-per-channel, 4-channel ARGB buffer over 
 func vImageFlatten_ARGBFFFF(_ argbSrc: UnsafePointer<vImage_Buffer>, _ argbDst: UnsafePointer<vImage_Buffer>, _ argbBackgroundColorPtr: UnsafePointer<Float>, _ isImagePremultiplied: Bool, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageFlatten_ARGBFFFF(const vImage_Buffer *argbSrc, const vImage_Buffer *argbDst, const Pixel_FFFF argbBackgroundColorPtr, bool isImagePremultiplied, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -40,14 +45,15 @@ The function uses the following calculation to flatten the source image:
 ## Parameters
 
 - `argbSrc`: The source vImage buffer.
-- `argbDst`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `argbDst`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `argbBackgroundColorPtr`: A pixel value that defines the solid background color.
 - `isImagePremultiplied`: A Boolean value that specifes whether the source image has premultiplied alpha.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageFlatten_RGBAFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Float>, Bool, vImage_Flags) -> vImage_Error](vimageflatten_rgbaffff(_:_:_:_:_:).md)
+### Flattening 4-channel, 32-bit images
+- [func vImageFlatten_RGBAFFFF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<Float>, Bool, vImage_Flags) -> vImage_Error](./vimageflatten_rgbaffff%28_,_,_,_,_%29.md)
   Performs an alpha composite of a 32-bit-per-channel, 4-channel RGBA buffer over a solid background color.
 
 

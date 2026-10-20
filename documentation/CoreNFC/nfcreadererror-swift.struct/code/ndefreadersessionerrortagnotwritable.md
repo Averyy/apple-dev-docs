@@ -1,7 +1,8 @@
 # NFCReaderError.Code.ndefReaderSessionErrorTagNotWritable
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The NDEF tag isn’t writable.
 
@@ -16,19 +17,24 @@ The NDEF tag isn’t writable.
 case ndefReaderSessionErrorTagNotWritable
 ```
 
+```c
+NFCNdefReaderSessionErrorTagNotWritable
+```
+
 ## See Also
 
-- [NFCReaderError.Code.ndefReaderSessionErrorTagSizeTooSmall](nfcreadererror-swift.struct/code/ndefreadersessionerrortagsizetoosmall.md)
+### NDEF Tag Errors
+- [NFCReaderError.Code.ndefReaderSessionErrorTagSizeTooSmall](./ndefreadersessionerrortagsizetoosmall.md)
   The NDEF tag memory size is too small to store the data.
-- [NFCReaderError.Code.ndefReaderSessionErrorTagUpdateFailure](nfcreadererror-swift.struct/code/ndefreadersessionerrortagupdatefailure.md)
+- [NFCReaderError.Code.ndefReaderSessionErrorTagUpdateFailure](./ndefreadersessionerrortagupdatefailure.md)
   The reader session failed to update the NDEF tag.
-- [NFCReaderError.Code.ndefReaderSessionErrorZeroLengthMessage](nfcreadererror-swift.struct/code/ndefreadersessionerrorzerolengthmessage.md)
+- [NFCReaderError.Code.ndefReaderSessionErrorZeroLengthMessage](./ndefreadersessionerrorzerolengthmessage.md)
   The NDEF tag doesn’t contain an NDEF message.
-- [NFCReaderError.Code.ndefReaderSessionErrorTagSizeTooSmall](nfcreadererror-swift.struct/code/ndefreadersessionerrortagsizetoosmall.md)
+- [NFCReaderError.Code.ndefReaderSessionErrorTagSizeTooSmall](./ndefreadersessionerrortagsizetoosmall.md)
   The NDEF tag memory size is too small to store the data.
-- [NFCReaderError.Code.ndefReaderSessionErrorTagUpdateFailure](nfcreadererror-swift.struct/code/ndefreadersessionerrortagupdatefailure.md)
+- [NFCReaderError.Code.ndefReaderSessionErrorTagUpdateFailure](./ndefreadersessionerrortagupdatefailure.md)
   The reader session failed to update the NDEF tag.
-- [NFCReaderError.Code.ndefReaderSessionErrorZeroLengthMessage](nfcreadererror-swift.struct/code/ndefreadersessionerrorzerolengthmessage.md)
+- [NFCReaderError.Code.ndefReaderSessionErrorZeroLengthMessage](./ndefreadersessionerrorzerolengthmessage.md)
   The NDEF tag doesn’t contain an NDEF message.
 
 

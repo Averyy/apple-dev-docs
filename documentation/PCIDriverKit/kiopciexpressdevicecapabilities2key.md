@@ -1,15 +1,16 @@
 # kIOPCIExpressDeviceCapabilities2Key
 
 **Framework**: PCIDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 #define kIOPCIExpressDeviceCapabilities2Key
 ```
 

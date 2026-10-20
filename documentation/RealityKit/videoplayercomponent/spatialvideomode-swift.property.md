@@ -1,7 +1,8 @@
 # spatialVideoMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently active spatial video rendering mode.
 

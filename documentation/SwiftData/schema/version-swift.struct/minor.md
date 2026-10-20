@@ -1,7 +1,8 @@
 # minor
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minor version according to the semantic versioning standard.
 

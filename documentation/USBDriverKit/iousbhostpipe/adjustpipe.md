@@ -1,7 +1,8 @@
 # AdjustPipe
 
 **Framework**: USBDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adjusts the behavior of periodic endpoints to consume a different amount of bus bandwidth.
 
@@ -10,13 +11,13 @@ Adjusts the behavior of periodic endpoints to consume a different amount of bus 
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t AdjustPipe(const IOUSBStandardEndpointDescriptors *descriptors);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -28,7 +29,8 @@ Periodic (interrupt and isochronous) endpoints reserve bus bandwidth when theyâ€
 
 ## See Also
 
-- [ClearStall](iousbhostpipe/clearstall.md)
+### Adjusting the Pipeâ€™s Status
+- [ClearStall](./clearstall.md)
   Clears the halt condition of the pipe.
 
 

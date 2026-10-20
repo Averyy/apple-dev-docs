@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The position of the first element in a nonempty collection.
 
@@ -19,6 +20,8 @@ The position of the first element in a nonempty collection.
 ```swift
 var startIndex: LazyPrefixWhileSequence<Base>.Index { get }
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Discussion
 

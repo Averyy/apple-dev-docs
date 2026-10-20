@@ -1,7 +1,8 @@
 # sharedBackgroundVisibility(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Controls the visibility of the glass background effect on items in the toolbar. In certain contexts, such as the navigation bar on iOS and the window toolbar on macOS, toolbar items will be given a glass background effect that is shared with other items in the same logical grouping.
 
@@ -38,9 +39,10 @@ ContentView()
 
 ## See Also
 
-- [func hidden(Bool) -> some ToolbarContent](toolbarcontent/hidden(_:).md)
+### Setting visibility
+- [func hidden(Bool) -> some ToolbarContent](./hidden%28_%29.md)
   Hides a toolbar item within its toolbar.
-- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some ToolbarContent](toolbarcontent/visibilitypriority(_:).md)
+- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some ToolbarContent](./visibilitypriority%28_%29.md)
   Defines the visibility priority for a toolbar item.
 
 

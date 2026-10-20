@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an instance that type-erases `transition`.
 
@@ -22,7 +23,8 @@ init<T>(_ transition: T) where T : Transition
 
 ## See Also
 
-- [static func modifier<E>(active: E, identity: E) -> AnyTransition](anytransition/modifier(active:identity:).md)
+### Creating a custom transition
+- [static func modifier<E>(active: E, identity: E) -> AnyTransition](./modifier%28active,identity%29.md)
   Returns a transition defined between an active modifier and an identity modifier.
 
 

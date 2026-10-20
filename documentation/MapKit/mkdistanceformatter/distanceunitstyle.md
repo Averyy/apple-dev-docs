@@ -1,7 +1,8 @@
 # MKDistanceFormatter.DistanceUnitStyle
 
 **Framework**: MapKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the format style to use for strings.
 
@@ -20,43 +21,48 @@ Constants that indicate the format style to use for strings.
 enum DistanceUnitStyle
 ```
 
+```c
+enum MKDistanceFormatterUnitStyle : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [MKDistanceFormatter.DistanceUnitStyle.default](mkdistanceformatter/distanceunitstyle/default.md)
+- [MKDistanceFormatter.DistanceUnitStyle.default](./distanceunitstyle/default.md)
   Bases the determination to abbreviate on the current locale and user language settings.
-- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](mkdistanceformatter/distanceunitstyle/abbreviated.md)
+- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](./distanceunitstyle/abbreviated.md)
   Abbreviates units.
-- [MKDistanceFormatter.DistanceUnitStyle.full](mkdistanceformatter/distanceunitstyle/full.md)
+- [MKDistanceFormatter.DistanceUnitStyle.full](./distanceunitstyle/full.md)
   Spells out units in full.
-- [MKDistanceFormatter.DistanceUnitStyle.default](mkdistanceformatter/distanceunitstyle/default.md)
+- [MKDistanceFormatter.DistanceUnitStyle.default](./distanceunitstyle/default.md)
   Bases the determination to abbreviate on the current locale and user language settings.
-- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](mkdistanceformatter/distanceunitstyle/abbreviated.md)
+- [MKDistanceFormatter.DistanceUnitStyle.abbreviated](./distanceunitstyle/abbreviated.md)
   Abbreviates units.
-- [MKDistanceFormatter.DistanceUnitStyle.full](mkdistanceformatter/distanceunitstyle/full.md)
+- [MKDistanceFormatter.DistanceUnitStyle.full](./distanceunitstyle/full.md)
   Spells out units in full.
 ### Initializers
-- [init?(rawValue: UInt)](mkdistanceformatter/distanceunitstyle/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./distanceunitstyle/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var locale: Locale!](mkdistanceformatter/locale.md)
+### Specifying the format
+- [var locale: Locale!](./locale.md)
   The locale to use when formatting strings.
-- [var units: MKDistanceFormatter.Units](mkdistanceformatter/units-swift.property.md)
+- [var units: MKDistanceFormatter.Units](./units-swift.property.md)
   The measuring system — imperial or metric — to use for units.
-- [MKDistanceFormatter.Units](mkdistanceformatter/units-swift.enum.md)
+- [MKDistanceFormatter.Units](./units-swift.enum.md)
   Constants that reflect the type of units to use in the string.
-- [var unitStyle: MKDistanceFormatter.DistanceUnitStyle](mkdistanceformatter/unitstyle.md)
+- [var unitStyle: MKDistanceFormatter.DistanceUnitStyle](./unitstyle.md)
   The preferred style for units.
 
 

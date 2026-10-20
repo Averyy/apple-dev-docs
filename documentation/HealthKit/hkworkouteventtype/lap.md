@@ -1,7 +1,8 @@
 # HKWorkoutEventType.lap
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant indicating a lap.
 
@@ -19,35 +20,40 @@ A constant indicating a lap.
 case lap
 ```
 
+```c
+HKWorkoutEventTypeLap
+```
+
 ## Mentions
 
-- [Running workout sessions](running-workout-sessions.md)
+- [Running workout sessions](../running-workout-sessions.md)
 
 #### Discussion
 
-Lap events partition a workout into segments of equal distance (for example, laps around a track or laps in a pool). The lap’s [`dateInterval`](hkworkoutevent/dateinterval.md) property should mark the start and end of the lap. Lap events can’t overlap.
+Lap events partition a workout into segments of equal distance (for example, laps around a track or laps in a pool). The lap’s [`dateInterval`](../hkworkoutevent/dateinterval.md) property should mark the start and end of the lap. Lap events can’t overlap.
 
-When you receive lap events from the HealthKit store, examine the event’s [`dateInterval`](hkworkoutevent/dateinterval.md) property to interpret the lap correctly:
+When you receive lap events from the HealthKit store, examine the event’s [`dateInterval`](../hkworkoutevent/dateinterval.md) property to interpret the lap correctly:
 
 **Zero-duration intervals.** Older lap events (created before iOS 11 and watchOS 4) have a zero-duration date interval that marks the end of the lap. Each lap is assumed to start when the previous lap ends, and laps fill the entire workout completely.****
 
-**Nonzero-duration intervals.** Newer lap events use the date interval to mark the start and the duration of the lap. These events have a nonzero duration, and they do not need to fill the workout; however, you should ideally mark any rest periods between laps using [`HKWorkoutEventType.pause`](hkworkouteventtype/pause.md) and [`HKWorkoutEventType.resume`](hkworkouteventtype/resume.md) events.
+**Nonzero-duration intervals.** Newer lap events use the date interval to mark the start and the duration of the lap. These events have a nonzero duration, and they do not need to fill the workout; however, you should ideally mark any rest periods between laps using [`HKWorkoutEventType.pause`](./pause.md) and [`HKWorkoutEventType.resume`](./resume.md) events.
 
 ## See Also
 
-- [HKWorkoutEventType.pause](hkworkouteventtype/pause.md)
+### Events
+- [HKWorkoutEventType.pause](./pause.md)
   A constant indicating that the workout has paused.
-- [HKWorkoutEventType.resume](hkworkouteventtype/resume.md)
+- [HKWorkoutEventType.resume](./resume.md)
   A constant indicating that the workout has resumed.
-- [HKWorkoutEventType.motionPaused](hkworkouteventtype/motionpaused.md)
+- [HKWorkoutEventType.motionPaused](./motionpaused.md)
   A constant indicating that the system has automatically paused a workout session.
-- [HKWorkoutEventType.motionResumed](hkworkouteventtype/motionresumed.md)
+- [HKWorkoutEventType.motionResumed](./motionresumed.md)
   A constant indicating that the system has automatically resumed a workout session.
-- [HKWorkoutEventType.pauseOrResumeRequest](hkworkouteventtype/pauseorresumerequest.md)
+- [HKWorkoutEventType.pauseOrResumeRequest](./pauseorresumerequest.md)
   A constant indicating that the user has requested a pause or resume.
-- [HKWorkoutEventType.segment](hkworkouteventtype/segment.md)
+- [HKWorkoutEventType.segment](./segment.md)
   A constant indicating a period of time of interest during a workout.
-- [HKWorkoutEventType.marker](hkworkouteventtype/marker.md)
+- [HKWorkoutEventType.marker](./marker.md)
   A constant indicating a point of interest during a workout session.
 
 

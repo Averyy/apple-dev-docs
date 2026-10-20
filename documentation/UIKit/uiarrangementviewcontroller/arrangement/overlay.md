@@ -1,7 +1,8 @@
 # overlay
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An arrangement that layers the primary view over the secondary view, or places the views side by side on a folded display.
 
@@ -18,13 +19,16 @@ An arrangement that layers the primary view over the secondary view, or places t
 static var overlay: UIOverlayArrangement { get }
 ```
 
+Available when `Self` is `UIOverlayArrangement`.
+
 #### Discussion
 
-For more information about an overlay arrangement, see [`UIOverlayArrangement`](uioverlayarrangement-swift.struct.md).
+For more information about an overlay arrangement, see [`UIOverlayArrangement`](../../uioverlayarrangement-swift.struct.md).
 
 ## See Also
 
-- [static var split: UISplitArrangement](uiarrangementviewcontroller/arrangement/split.md)
+### Getting arrangements
+- [static var split: UISplitArrangement](./split.md)
   An arrangement that places the primary and secondary views side by side along one or more axes.
 
 

@@ -1,7 +1,8 @@
 # +(_:_:)
 
 **Framework**: Spatial  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a vector that’s the element-wise sum of a point and a vector.
 
@@ -11,7 +12,7 @@ Returns a vector that’s the element-wise sum of a point and a vector.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -27,35 +28,36 @@ static func + (lhs: Point3D, rhs: Vector3D) -> Point3D
 
 ## See Also
 
-- [static func * (Vector3D, Double) -> Vector3D](vector3d/*(_:_:)-dcwn.md)
+### Applying arithmetic operations
+- [static func * (Vector3D, Double) -> Vector3D](./star%28_,_%29-dcwn.md)
   Returns a vector that’s the product of a vector and a scalar value.
-- [static func * (Double, Vector3D) -> Vector3D](vector3d/*(_:_:)-64lzt.md)
+- [static func * (Double, Vector3D) -> Vector3D](./star%28_,_%29-64lzt.md)
   Returns a vector that’s the product of a scalar value and a vector.
-- [static func * (AffineTransform3D, Vector3D) -> Vector3D](vector3d/*(_:_:)-6rxsr.md)
+- [static func * (AffineTransform3D, Vector3D) -> Vector3D](./star%28_,_%29-6rxsr.md)
   Returns the vector that results from applying the affine transform to the vector.
-- [static func * (ProjectiveTransform3D, Vector3D) -> Vector3D](vector3d/*(_:_:)-3dpli.md)
+- [static func * (ProjectiveTransform3D, Vector3D) -> Vector3D](./star%28_,_%29-3dpli.md)
   Returns the vector that results from applying the projective transform to the vector.
-- [static func * (Pose3D, Vector3D) -> Vector3D](vector3d/*(_:_:)-8y7xq.md)
+- [static func * (Pose3D, Vector3D) -> Vector3D](./star%28_,_%29-8y7xq.md)
   Returns a new vector after applying the pose to the vector.
-- [static func + (Vector3D, Vector3D) -> Vector3D](vector3d/+(_:_:)-7gbcj.md)
+- [static func + (Vector3D, Vector3D) -> Vector3D](./plus%28_,_%29-7gbcj.md)
   Returns a vector that’s the element-wise sum of two sizes.
-- [static func + (Vector3D, Size3D) -> Size3D](vector3d/+(_:_:)-9xfxv.md)
+- [static func + (Vector3D, Size3D) -> Size3D](./plus%28_,_%29-9xfxv.md)
   Returns a vector that’s the element-wise sum of a vector and a size.
-- [static func + (Size3D, Vector3D) -> Size3D](vector3d/+(_:_:)-1xufx.md)
+- [static func + (Size3D, Vector3D) -> Size3D](./plus%28_,_%29-1xufx.md)
   Returns a vector that’s the element-wise sum of a size and a vector.
-- [static func + (Vector3D, Point3D) -> Point3D](vector3d/+(_:_:)-1bq1m.md)
+- [static func + (Vector3D, Point3D) -> Point3D](./plus%28_,_%29-1bq1m.md)
   Returns a vector that’s the element-wise sum of a vector and a point.
-- [static func - (Vector3D) -> Vector3D](vector3d/-(_:).md)
+- [static func - (Vector3D) -> Vector3D](./minus%28_%29.md)
   Returns a vector that’s the element-wise negation of the vector.
-- [static func - (Vector3D, Vector3D) -> Vector3D](vector3d/-(_:_:)-6zam.md)
+- [static func - (Vector3D, Vector3D) -> Vector3D](./minus%28_,_%29-6zam.md)
   Returns a size that’s the element-wise difference of two vectors.
-- [static func - (Vector3D, Size3D) -> Size3D](vector3d/-(_:_:)-6lui1.md)
+- [static func - (Vector3D, Size3D) -> Size3D](./minus%28_,_%29-6lui1.md)
   Returns a size that’s the element-wise difference of a vector and a size.
-- [static func - (Size3D, Vector3D) -> Size3D](vector3d/-(_:_:)-3qpww.md)
+- [static func - (Size3D, Vector3D) -> Size3D](./minus%28_,_%29-3qpww.md)
   Returns a size that’s the element-wise difference of a size and a vector.
-- [static func - (Vector3D, Point3D) -> Point3D](vector3d/-(_:_:)-1nz82.md)
+- [static func - (Vector3D, Point3D) -> Point3D](./minus%28_,_%29-1nz82.md)
   Returns a size that’s the element-wise difference of a vector and a point.
-- [static func - (Point3D, Vector3D) -> Point3D](vector3d/-(_:_:)-8sgai.md)
+- [static func - (Point3D, Vector3D) -> Point3D](./minus%28_,_%29-8sgai.md)
   Returns a size that’s the element-wise difference of a point and a vector.
 
 

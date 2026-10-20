@@ -1,7 +1,8 @@
 # supportedCameraModels(with:)
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func supportedCameraModels(with version: CIRAWDecoderVersion) -> [String]
+```
+
+```objc
++ (NSArray<NSString *> *) supportedCameraModelsWithVersion:(CIRAWDecoderVersion) version;
 ```
 
 

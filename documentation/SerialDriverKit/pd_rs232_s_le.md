@@ -1,14 +1,15 @@
 # PD_RS232_S_LE
 
 **Framework**: SerialDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define PD_RS232_S_LE
 ```
 

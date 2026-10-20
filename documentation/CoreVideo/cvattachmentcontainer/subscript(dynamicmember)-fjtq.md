@@ -1,7 +1,8 @@
 # subscript(dynamicMember:)
 
 **Framework**: Core Video  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 Get or set composite attachment value as a property of this object.
 

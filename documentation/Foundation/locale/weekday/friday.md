@@ -1,7 +1,8 @@
 # Locale.Weekday.friday
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The weekday enumeration value for Friday.
 
@@ -22,17 +23,18 @@ case friday
 
 ## See Also
 
-- [Locale.Weekday.monday](locale/weekday/monday.md)
+### Using defined weekdays
+- [Locale.Weekday.monday](./monday.md)
   The weekday enumeration value for Monday.
-- [Locale.Weekday.tuesday](locale/weekday/tuesday.md)
+- [Locale.Weekday.tuesday](./tuesday.md)
   The weekday enumeration value for Tuesday.
-- [Locale.Weekday.wednesday](locale/weekday/wednesday.md)
+- [Locale.Weekday.wednesday](./wednesday.md)
   The weekday enumeration value for Wednesday.
-- [Locale.Weekday.thursday](locale/weekday/thursday.md)
+- [Locale.Weekday.thursday](./thursday.md)
   The weekday enumeration value for Thursday.
-- [Locale.Weekday.saturday](locale/weekday/saturday.md)
+- [Locale.Weekday.saturday](./saturday.md)
   The weekday enumeration value for Saturday.
-- [Locale.Weekday.sunday](locale/weekday/sunday.md)
+- [Locale.Weekday.sunday](./sunday.md)
   The weekday enumeration value for Sunday.
 
 

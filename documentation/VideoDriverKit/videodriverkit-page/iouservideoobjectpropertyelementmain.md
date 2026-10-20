@@ -1,7 +1,8 @@
 # IOUserVideoObjectPropertyElementMain
 
 **Framework**: VideoDriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The value for properties that apply to the main element or to the entire scope.
 
@@ -10,21 +11,22 @@ The value for properties that apply to the main element or to the entire scope.
 
 ## Declaration
 
-```swift
+```cpp
 constexpr const IOUserVideoObjectPropertyElement IOUserVideoObjectPropertyElementMain;
 ```
 
 #### Discussion
 
-This value is used with [`IOUserVideoObjectPropertyElement`](videodriverkit/iouservideoobjectpropertyelement.md).
+This value is used with [`IOUserVideoObjectPropertyElement`](./iouservideoobjectpropertyelement.md).
 
 ## See Also
 
-- [IOUserVideoObjectPropertyElement](videodriverkit/iouservideoobjectpropertyelement.md)
+### Working with object properties
+- [IOUserVideoObjectPropertyElement](./iouservideoobjectpropertyelement.md)
   An integer that identifies, along with the property selector and scope, a specific piece of information about a video object.
-- [IOUserVideoObjectPropertyScope](videodriverkit/iouservideoobjectpropertyscope.md)
+- [IOUserVideoObjectPropertyScope](./iouservideoobjectpropertyscope.md)
   A four character code which, along with the selector and element, identifies a specific piece of information about a video object.
-- [IOUserVideoObjectPropertySelector](videodriverkit/iouservideoobjectpropertyselector.md)
+- [IOUserVideoObjectPropertySelector](./iouservideoobjectpropertyselector.md)
   A four character code which, along with the scope and element, specifies a specific piece of information about a video object.
 
 

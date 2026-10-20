@@ -1,7 +1,8 @@
 # kCFFTPStatusCodeKey
 
 **Framework**: CFNetwork  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -17,21 +18,26 @@
 let kCFFTPStatusCodeKey: CFString
 ```
 
+```c
+extern CFStringRef const kCFFTPStatusCodeKey;
+```
+
 #### Discussion
 
 If an error of type `kCFFTPErrorUnexpectedStatusCode` is returned, querying this key returns the last status code sent by the FTP server in response to the previous operation.
 
 ## See Also
 
-- [let kCFURLErrorFailingURLErrorKey: CFString](kcfurlerrorfailingurlerrorkey.md)
+### Constants
+- [let kCFURLErrorFailingURLErrorKey: CFString](./kcfurlerrorfailingurlerrorkey.md)
   The URL that caused the load to fail as a `CFURLRef` object.
-- [let kCFURLErrorFailingURLStringErrorKey: CFString](kcfurlerrorfailingurlstringerrorkey.md)
+- [let kCFURLErrorFailingURLStringErrorKey: CFString](./kcfurlerrorfailingurlstringerrorkey.md)
   The URL that caused the load to fail as a `CFStringRef` object.
-- [let kCFGetAddrInfoFailureKey: CFString](kcfgetaddrinfofailurekey.md)
-- [let kCFSOCKSStatusCodeKey: CFString](kcfsocksstatuscodekey.md)
-- [let kCFSOCKSVersionKey: CFString](kcfsocksversionkey.md)
-- [let kCFSOCKSNegotiationMethodKey: CFString](kcfsocksnegotiationmethodkey.md)
-- [let kCFDNSServiceFailureKey: CFString](kcfdnsservicefailurekey.md)
+- [let kCFGetAddrInfoFailureKey: CFString](./kcfgetaddrinfofailurekey.md)
+- [let kCFSOCKSStatusCodeKey: CFString](./kcfsocksstatuscodekey.md)
+- [let kCFSOCKSVersionKey: CFString](./kcfsocksversionkey.md)
+- [let kCFSOCKSNegotiationMethodKey: CFString](./kcfsocksnegotiationmethodkey.md)
+- [let kCFDNSServiceFailureKey: CFString](./kcfdnsservicefailurekey.md)
 
 
 ---

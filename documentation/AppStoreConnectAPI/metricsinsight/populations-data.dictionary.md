@@ -1,7 +1,8 @@
 # MetricsInsight.Populations
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The value of a metric for a device type on the latest app version, and its percent change as compared with previous app versions.
 
@@ -10,7 +11,7 @@ The value of a metric for a device type on the latest app version, and its perce
 
 ## Declaration
 
-```swift
+```
 object MetricsInsight.Populations
 ```
 

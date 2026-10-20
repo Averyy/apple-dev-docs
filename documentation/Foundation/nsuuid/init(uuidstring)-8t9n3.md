@@ -1,7 +1,8 @@
 # init(uuidString:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new UUID with the formatted string.
 
@@ -20,6 +21,10 @@ Initializes a new UUID with the formatted string.
 convenience init?(uuidString string: String)
 ```
 
+```objc
+- (instancetype) initWithUUIDString:(NSString *) string;
+```
+
 #### Return Value
 
 A new UUID object. Returns `nil` for invalid strings.
@@ -30,9 +35,10 @@ A new UUID object. Returns `nil` for invalid strings.
 
 ## See Also
 
-- [init()](nsuuid/init.md)
+### Creating UUIDs
+- [init()](./init%28%29.md)
   Initializes a new UUID with RFC 4122 version 4 random bytes.
-- [convenience init(uuidBytes: UnsafePointer<UInt8>?)](nsuuid/init(uuidbytes:)-2p4d5.md)
+- [convenience init(uuidBytes: UnsafePointer<UInt8>?)](./init%28uuidbytes%29-2p4d5.md)
   Initializes a new UUID with the given bytes.
 
 

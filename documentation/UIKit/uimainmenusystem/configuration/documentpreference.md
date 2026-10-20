@@ -1,7 +1,8 @@
 # documentPreference
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies a preference for document elements in the main menu.
 
@@ -16,6 +17,10 @@ Specifies a preference for document elements in the main menu.
 
 ```swift
 var documentPreference: UIMenuSystem.ElementGroupPreference { get set }
+```
+
+```objc
+@property (nonatomic, assign) UIMenuSystemElementGroupPreference documentPreference;
 ```
 
 

@@ -1,7 +1,8 @@
 # earliestBeginDate
 
 **Framework**: Background Tasks  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The earliest date and time at which to run the task.
 
@@ -18,6 +19,10 @@ The earliest date and time at which to run the task.
 var earliestBeginDate: Date? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSDate * earliestBeginDate;
+```
+
 #### Discussion
 
 Specify `nil` for no start delay.
@@ -26,7 +31,8 @@ Setting the property indicates that the background task shouldn’t start any ea
 
 ## See Also
 
-- [var identifier: String](bgtaskrequest/identifier.md)
+### Configuring a Task Request
+- [var identifier: String](./identifier.md)
   The identifier of the task associated with the request.
 
 

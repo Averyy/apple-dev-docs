@@ -1,6 +1,7 @@
 # Structure of an effect description
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 An effect description is the sole media sample for an effect track.
 
@@ -20,11 +21,12 @@ You then add the effect description to the media of the effect track.
 
 ## See Also
 
-- [Required atoms of an effects description](required_atoms_of_an_effects_description.md)
+### Effect descriptions
+- [Required atoms of an effects description](./required_atoms_of_an_effects_description.md)
   Specify the required atoms for your effects description.
-- [Parameter atoms of an effects description](parameter_atoms_of_an_effects_description.md)
+- [Parameter atoms of an effects description](./parameter_atoms_of_an_effects_description.md)
   Customize your effect with parameter atoms.
-- [Creating an input map](creating_an_input_map.md)
+- [Creating an input map](./creating_an_input_map.md)
   Describe and name sources with an input map.
 
 

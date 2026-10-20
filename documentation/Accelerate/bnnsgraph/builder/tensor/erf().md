@@ -1,7 +1,8 @@
 # erf()
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an Error Function (erf) activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds an Error Function (erf) activation operation to the current graph.
 ```swift
 func erf() -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 
 ---

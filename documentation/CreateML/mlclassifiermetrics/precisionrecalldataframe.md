@@ -1,7 +1,8 @@
 # precisionRecallDataFrame
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A data frame listing the precision and recall percentages for each class.
 
@@ -27,25 +28,26 @@ Precision describes how effective the model was at applying a label only when ap
 
 Recall describes how effective the model was at finding all the relevant examples of a category (few false negatives).
 
-![None](/images/com.apple.createml/MLClassifierMetrics-precisionRecall-1@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.createml/MLClassifierMetrics-precisionRecall-1@2x.png)
 
 The figure below shows how each example contributes to the precision and recall percentages for the category “Elephant”.
 
-![A table of actual and predicted labels for the Elephant category.](/images/com.apple.createml/MLClassifierMetrics-precisionRecall-2@2x.png)
+![A table of actual and predicted labels for the Elephant category.](https://developer.apple.com/tutorials/images/com.apple.createml/MLClassifierMetrics-precisionRecall-2@2x.png)
 
-“Elephant” appears as the true or correct label only once, but it’s predicted twice. This second prediction is an error in precision. Precision and recall can give you a much better idea of how your model is making mistakes than [`classificationError`](mlclassifiermetrics/classificationerror.md).
+“Elephant” appears as the true or correct label only once, but it’s predicted twice. This second prediction is an error in precision. Precision and recall can give you a much better idea of how your model is making mistakes than [`classificationError`](./classificationerror.md).
 
-To determine what other categories “Elephant” examples may have been labeled with, see the [`confusion`](mlclassifiermetrics/confusion.md) property.
+To determine what other categories “Elephant” examples may have been labeled with, see the [`confusion`](./confusion.md) property.
 
 ## See Also
 
-- [var classificationError: Double](mlclassifiermetrics/classificationerror.md)
+### Understanding the model
+- [var classificationError: Double](./classificationerror.md)
   The fraction of incorrectly labeled examples.
-- [var precisionRecall: MLDataTable](mlclassifiermetrics/precisionrecall.md)
+- [var precisionRecall: MLDataTable](./precisionrecall.md)
   A data table listing the precision and recall percentages for each class.
-- [var confusion: MLDataTable](mlclassifiermetrics/confusion.md)
+- [var confusion: MLDataTable](./confusion.md)
   A table comparing the actual and predicted labels for each classification category.
-- [var confusionDataFrame: DataFrame](mlclassifiermetrics/confusiondataframe.md)
+- [var confusionDataFrame: DataFrame](./confusiondataframe.md)
   A data frame comparing the actual and predicted labels for each class.
 
 

@@ -1,7 +1,8 @@
 # string(from:style:)
 
 **Framework**: Contacts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a postal address as a string and formatted for the specified style.
 
@@ -19,6 +20,10 @@ Returns a postal address as a string and formatted for the specified style.
 class func string(from postalAddress: CNPostalAddress, style: CNPostalAddressFormatterStyle) -> String
 ```
 
+```objc
++ (NSString *) stringFromPostalAddress:(CNPostalAddress *) postalAddress style:(CNPostalAddressFormatterStyle) style;
+```
+
 #### Return Value
 
 The formatted postal address.
@@ -26,11 +31,12 @@ The formatted postal address.
 ## Parameters
 
 - `postalAddress`: The postal address to format.
-- `style`: The postal formatting style to use. For a list of possible values, see [`CNPostalAddressFormatterStyle`](cnpostaladdressformatterstyle.md).
+- `style`: The postal formatting style to use. For a list of possible values, see [`CNPostalAddressFormatterStyle`](../cnpostaladdressformatterstyle.md).
 
 ## See Also
 
-- [func string(from: CNPostalAddress) -> String](cnpostaladdressformatter/string(from:).md)
+### Generating a formatted string
+- [func string(from: CNPostalAddress) -> String](./string%28from%29.md)
   Returns a formatted postal address.
 
 

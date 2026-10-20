@@ -1,7 +1,8 @@
 # start(with:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Start commissioning with the given controller (which identifies the fabric the commissionee should be commissioned into).  The delegate will be notified if there are any failures.
 
@@ -18,6 +19,10 @@ Start commissioning with the given controller (which identifies the fabric the c
 
 ```swift
 func start(with controller: MTRDeviceController)
+```
+
+```objc
+- (void) startWithController:(MTRDeviceController *) controller;
 ```
 
 

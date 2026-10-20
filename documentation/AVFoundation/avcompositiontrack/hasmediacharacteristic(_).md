@@ -1,18 +1,19 @@
 # hasMediaCharacteristic(_:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the track references media with the specified media characteristic.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns a Boolean value that indicates whether the track references media with t
 func hasMediaCharacteristic(_ mediaCharacteristic: AVMediaCharacteristic) -> Bool
 ```
 
+```objc
+- (BOOL) hasMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the track references media with the specified characteristic; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the track references media with the specified characteristic; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -30,15 +35,16 @@ func hasMediaCharacteristic(_ mediaCharacteristic: AVMediaCharacteristic) -> Boo
 
 ## See Also
 
-- [var isPlayable: Bool](avcompositiontrack/isplayable.md)
+### Accessing track information
+- [var isPlayable: Bool](./isplayable.md)
   A Boolean value that indicates whether the track is playable in the current environment.
-- [var isDecodable: Bool](avcompositiontrack/isdecodable.md)
+- [var isDecodable: Bool](./isdecodable.md)
   A Boolean value that indicates whether the track is decodable in the current environment.
-- [var isEnabled: Bool](avcompositiontrack/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the track’s container enables it.
-- [var isSelfContained: Bool](avcompositiontrack/isselfcontained.md)
+- [var isSelfContained: Bool](./isselfcontained.md)
   A Boolean value that indicates whether this track references sample data only within its container file.
-- [var totalSampleDataLength: Int64](avcompositiontrack/totalsampledatalength.md)
+- [var totalSampleDataLength: Int64](./totalsampledatalength.md)
   The total number of bytes of sample data the track requires.
 
 

@@ -1,7 +1,8 @@
 # CPLaneStatus
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the status or preferability of a lane.
 
@@ -16,38 +17,43 @@ Values that describe the status or preferability of a lane.
 enum CPLaneStatus
 ```
 
+```c
+enum CPLaneStatus : NSInteger;
+```
+
 ## Topics
 
 ### Initializers
-- [init?(rawValue: Int)](cplanestatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cplanestatus/init%28rawvalue%29.md)
   Creates a lane status with the provided value.
 ### Lane statuses
-- [CPLaneStatus.notGood](cplanestatus/notgood.md)
+- [CPLaneStatus.notGood](./cplanestatus/notgood.md)
   The lane status is not good.
-- [CPLaneStatus.good](cplanestatus/good.md)
+- [CPLaneStatus.good](./cplanestatus/good.md)
   The lane status is good.
-- [CPLaneStatus.preferred](cplanestatus/preferred.md)
+- [CPLaneStatus.preferred](./cplanestatus/preferred.md)
   The lane status is preferred.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class CPRouteInformation](cprouteinformation.md)
+### Routes, lanes and junctions
+- [class CPRouteInformation](./cprouteinformation.md)
   A class that describes the characteristic elements of a route.
-- [class CPLane](cplane.md)
+- [class CPLane](./cplane.md)
   A class that describes characteristics of a lane on a roadway.
-- [class CPLaneGuidance](cplaneguidance.md)
+- [class CPLaneGuidance](./cplaneguidance.md)
   A class that provides information that describes the number of lanes on a roadway and navigation instruction variants.
-- [enum CPJunctionType](cpjunctiontype.md)
+- [enum CPJunctionType](./cpjunctiontype.md)
   Values that represent types of roadway junctions.
 
 

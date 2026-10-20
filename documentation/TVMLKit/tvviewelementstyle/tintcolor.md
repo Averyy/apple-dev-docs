@@ -1,12 +1,15 @@
 # tintColor
 
 **Framework**: TVMLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color applied to an element.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,13 +17,18 @@ The tint color applied to an element.
 var tintColor: TVColor? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) TVColor * tintColor;
+```
+
 ## See Also
 
-- [var backgroundColor: TVColor?](tvviewelementstyle/backgroundcolor.md)
+### Coloring an Element
+- [var backgroundColor: TVColor?](./backgroundcolor.md)
   The background color for an element.
-- [var color: TVColor?](tvviewelementstyle/color.md)
+- [var color: TVColor?](./color.md)
   The color for an element.
-- [var highlightColor: TVColor?](tvviewelementstyle/highlightcolor.md)
+- [var highlightColor: TVColor?](./highlightcolor.md)
   The color of the element when it is highlighted.
 
 

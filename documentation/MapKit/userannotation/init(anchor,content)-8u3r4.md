@@ -1,7 +1,8 @@
 # init(anchor:content:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an annotation that displays a person’s current location using the system styled user location indicator with the specified anchor point using a custom view.
 
@@ -11,7 +12,7 @@ Creates an annotation that displays a person’s current location using the syst
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -23,20 +24,21 @@ Creates an annotation that displays a person’s current location using the syst
 
 #### Return Value
 
-Returns  a [`UserAnnotation`](userannotation.md) that displays a persons current location using the specified anchor location.
+Returns  a [`UserAnnotation`](../userannotation.md) that displays a persons current location using the specified anchor location.
 
 ## Parameters
 
-- `anchor`: A UnitPoint value that describes how to anchor the user location indicator to the person’s location. The default is [`center`](https://developer.apple.com/documentation/swiftui/unitpoint/center).
+- `anchor`: A UnitPoint value that describes how to anchor the user location indicator to the person’s location. The default is [`center`](../../SwiftUI/unitpoint/center.md).
 - `content`: The custom view to show at the person’s location.
 
 ## See Also
 
-- [init()](userannotation/init.md)
+### Creating a user annotation
+- [init()](./init%28%29.md)
   Creates an annotation that displays the person’s current location.
-- [init(anchor: UnitPoint)](userannotation/init(anchor:).md)
+- [init(anchor: UnitPoint)](./init%28anchor%29.md)
   Creates an annotation that displays the person’s current location using the system styled user location indicator with the specified anchor point.
-- [init(anchor: UnitPoint, content: () -> Content)](userannotation/init(anchor:content:)-3e78j.md)
+- [init(anchor: UnitPoint, content: () -> Content)](./init%28anchor,content%29-3e78j.md)
   Create an annotation that displays the person’s current location of the user using a custom view.
 
 

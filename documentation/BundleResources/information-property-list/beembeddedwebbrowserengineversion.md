@@ -1,7 +1,8 @@
 # BEEmbeddedWebBrowserEngineVersion
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A string version number for the alternative browser engine that your app embeds.
 
@@ -9,9 +10,10 @@ A string version number for the alternative browser engine that your app embeds.
 - iOS 17.4+
 - iPadOS 17.4+
 
+## Details
 
-
-**Type**: string
+- **Name**: `BEEmbeddedWebBrowserEngineVersion`
+- **Type**: string
 
 #### Discussion
 
@@ -19,11 +21,12 @@ If your app isn’t a browser app, but embeds an alternative browser engine, add
 
 Supply a version that matches this regular expression: `(v(ersion)?\s?)?\d+(\.\d+)*`.
 
-For more information, see [`Creating browser extensions in Xcode`](https://developer.apple.com/documentation/browserenginekit/creating-browser-extensions-in-xcode).
+For more information, see [Creating browser extensions in Xcode](../../BrowserEngineKit/creating-browser-extensions-in-xcode.md).
 
 ## See Also
 
-- [BEEmbeddedWebBrowserEngine](information-property-list/beembeddedwebbrowserengine.md)
+### Alternative browser engines
+- [BEEmbeddedWebBrowserEngine](./beembeddedwebbrowserengine.md)
   A string name of the alternative browser engine that your app embeds.
 
 

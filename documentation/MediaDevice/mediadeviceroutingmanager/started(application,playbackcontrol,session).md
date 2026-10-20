@@ -1,7 +1,8 @@
 # started(application:playbackControl:session:)
 
 **Framework**: Media Device  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the system that a remote application has successfully started on the target device.
 
@@ -32,15 +33,15 @@ After calling this function, the system will be able to route media playback to 
 
 > ❗ **Important**: Call this function on the main actor to ensure thread-safe state updates.
 
-> **Note**: [`sessionFailed(_:error:)`](mediadeviceroutingmanager/sessionfailed(_:error:).md)
+> **See Also**: [`sessionFailed(_:error:)`](./sessionfailed%28_,error%29.md)
 
-> **Note**: `AVPlaybackUserInterfaceControllable`
+> **See Also**: `AVPlaybackUserInterfaceControllable`
 
 ## Parameters
 
 - `applicationIdentifier`: A unique identifier for the application running on the remote device. For a default media playback experience on the remote device, use `nil`.
 - `playbackControl`: An object conforming to `AVPlaybackUserInterfaceControllable` that provides playback control capabilities (play, pause, seek, etc.) for the remote session.
-- `session`: The [`MediaOutputSession`](mediaoutputsession.md) associated with this playback session.
+- `session`: The [`MediaOutputSession`](../mediaoutputsession.md) associated with this playback session.
 
 
 ---

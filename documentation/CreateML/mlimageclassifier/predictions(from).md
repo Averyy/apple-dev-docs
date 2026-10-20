@@ -1,7 +1,8 @@
 # predictions(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates predictions for an array of images.
 
@@ -28,7 +29,8 @@ An array of prediction labels for the images. Each label’s index corresponds t
 
 ## See Also
 
-- [func prediction(from:)](mlimageclassifier/prediction(from:).md)
+### Testing an image classifier
+- [func prediction(from:)](./prediction%28from%29.md)
   Generates a prediction for an image.
 
 

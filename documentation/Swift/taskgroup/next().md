@@ -1,7 +1,8 @@
 # next()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -20,11 +21,12 @@ mutating func next() async -> ChildTaskResult?
 
 ## See Also
 
-- [func next(isolation: isolated (any Actor)?) async -> ChildTaskResult?](taskgroup/next(isolation:).md)
+### Accessing Individual Results
+- [func next(isolation: isolated (any Actor)?) async -> ChildTaskResult?](./next%28isolation%29.md)
   Waits for the next child task to complete, and returns the value it returned.
-- [var isEmpty: Bool](taskgroup/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
-- [func waitForAll() async](taskgroup/waitforall.md)
+- [func waitForAll() async](./waitforall%28%29.md)
   Wait for all of the group’s remaining tasks to complete.
 
 

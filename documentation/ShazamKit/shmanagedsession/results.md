@@ -1,7 +1,8 @@
 # results
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results as an asynchronous sequence of matches.
 
@@ -22,15 +23,16 @@ final var results: SHSession.Results { get }
 
 #### Discussion
 
-This session continues to return results until the sequence is exhausted or the app calls [`cancel()`](shmanagedsession/cancel().md).
+This session continues to return results until the sequence is exhausted or the app calls [`cancel()`](./cancel%28%29.md).
 
 ## See Also
 
-- [func result() async -> SHSession.Result](shmanagedsession/result.md)
+### Returning queries
+- [func result() async -> SHSession.Result](./result%28%29.md)
   Performs an asynchronous match with a single signature.
-- [func cancel()](shmanagedsession/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels the currently running match attempt.
-- [func prepare() async](shmanagedsession/prepare.md)
+- [func prepare() async](./prepare%28%29.md)
   Preallocates the resources needed for a match, which increases the responsiveness of matches.
 
 

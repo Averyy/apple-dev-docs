@@ -1,7 +1,8 @@
 # init(primaryItem:identifier:time:templateItems:restrictions:resumptionOffset:playoutLimit:userDefinedAttributes:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an interstitial event, with user-defined attributes, for the specified time.
 
@@ -22,22 +23,23 @@ convenience init(primaryItem: AVPlayerItem, identifier: String?, time: CMTime, t
 
 ## Parameters
 
-- `primaryItem`: The player item that represents the primary content. The item must contain an [`AVAsset`](avasset.md) that provides intrinsic mappings from its timeline to real-time dates.
+- `primaryItem`: The player item that represents the primary content. The item must contain an [`AVAsset`](../avasset.md) that provides intrinsic mappings from its timeline to real-time dates.
 - `identifier`: An external identifier for the event.
 - `time`: The time in the primary item’s timeline for playback of interstitial content to begin.
 - `templateItems`: An array of player item configurations to use as templates for player items that play interstitial content.
 - `restrictions`: Restrictions on access to playback controls during the event.
-- `resumptionOffset`: The time offset for resuming playback of the primary content after interstitial content finishes. You can specify a definite time, or specify [`indefinite`](https://developer.apple.com/documentation/coremedia/cmtime/indefinite) to indicate that the effective resumption time offset needs to align with time elapsed during interstitial playback.
-- `playoutLimit`: The time offset from the beginning of the interstitial when interstitial playback needs to end, if interstitial assets are longer. Pass a positive numeric value, or [`invalid`](https://developer.apple.com/documentation/coremedia/cmtime/invalid) to indicate no play out limit.
+- `resumptionOffset`: The time offset for resuming playback of the primary content after interstitial content finishes. You can specify a definite time, or specify [`indefinite`](../../CoreMedia/cmtime/indefinite.md) to indicate that the effective resumption time offset needs to align with time elapsed during interstitial playback.
+- `playoutLimit`: The time offset from the beginning of the interstitial when interstitial playback needs to end, if interstitial assets are longer. Pass a positive numeric value, or [`invalid`](../../CoreMedia/cmtime/invalid.md) to indicate no play out limit.
 - `userDefinedAttributes`: Custom attributes to add to the event.
 
 ## See Also
 
-- [convenience init(primaryItem: AVPlayerItem, time: CMTime)](avplayerinterstitialevent/init(primaryitem:time:).md)
+### Creating an event
+- [convenience init(primaryItem: AVPlayerItem, time: CMTime)](./init%28primaryitem,time%29.md)
   Creates an interstitial event for the specified time.
-- [convenience init(primaryItem: AVPlayerItem, date: Date)](avplayerinterstitialevent/init(primaryitem:date:).md)
+- [convenience init(primaryItem: AVPlayerItem, date: Date)](./init%28primaryitem,date%29.md)
   Creates an interstitial event for the specified date.
-- [convenience init(primaryItem: AVPlayerItem, identifier: String?, date: Date, templateItems: [AVPlayerItem], restrictions: AVPlayerInterstitialEvent.Restrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: [String : Any])](avplayerinterstitialevent/init(primaryitem:identifier:date:templateitems:restrictions:resumptionoffset:playoutlimit:userdefinedattributes:).md)
+- [convenience init(primaryItem: AVPlayerItem, identifier: String?, date: Date, templateItems: [AVPlayerItem], restrictions: AVPlayerInterstitialEvent.Restrictions, resumptionOffset: CMTime, playoutLimit: CMTime, userDefinedAttributes: [String : Any])](./init%28primaryitem,identifier,date,templateitems,restrictions,resumptionoffset,playoutlimit,userdefinedattributes%29.md)
   Creates an interstitial event, with user-defined attributes, for the specified date.
 
 

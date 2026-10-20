@@ -1,7 +1,8 @@
 # AgeRangeService.AgeRangeDeclaration.selfDeclared
 
 **Framework**: Declared Age Range  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the person signed in to iCloud to set their own age range.
 
@@ -19,9 +20,10 @@ case selfDeclared
 
 ## See Also
 
-- [AgeRangeService.AgeRangeDeclaration.guardianDeclared](agerangeservice/agerangedeclaration/guardiandeclared.md)
+### Determining the age set method
+- [AgeRangeService.AgeRangeDeclaration.guardianDeclared](./guardiandeclared.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range.
-- [AgeRangeService.AgeRangeDeclaration.confirmed](agerangeservice/agerangedeclaration/confirmed.md)
+- [AgeRangeService.AgeRangeDeclaration.confirmed](./confirmed.md)
   A status that indicates a person confirmed their age-range declaration using a credit card or government ID.
 
 

@@ -1,21 +1,28 @@
 # cumulativeCPUInstructions
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of CPU instructions the app executed during the reporting period.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.0
+- macOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`CPUInstructionsCountMetric`](../cpuinstructionscountmetric.md) instead.
 
 ## Declaration
 
 ```swift
 var cumulativeCPUInstructions: Measurement<Unit> { get }
+```
+
+```objc
+@property (strong, readonly, nonnull) NSMeasurement<NSUnit *> * cumulativeCPUInstructions;
 ```
 
 #### Discussion
@@ -24,7 +31,8 @@ For CPUs using out-of-order execution, this property represents the count of ins
 
 ## See Also
 
-- [var cumulativeCPUTime: Measurement<UnitDuration>](mxcpumetric/cumulativecputime.md)
+### Reading CPU use
+- [var cumulativeCPUTime: Measurement<UnitDuration>](./cumulativecputime.md)
   The total amount of CPU the app used.
 
 

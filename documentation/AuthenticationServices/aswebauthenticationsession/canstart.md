@@ -1,7 +1,8 @@
 # canStart
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the session can begin.
 
@@ -20,11 +21,16 @@ A Boolean indicating whether the session can begin.
 var canStart: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL canStart;
+```
+
 ## See Also
 
-- [func start() -> Bool](aswebauthenticationsession/start.md)
+### Starting and Stopping a Session
+- [func start() -> Bool](./start%28%29.md)
   Starts a web authentication session.
-- [func cancel()](aswebauthenticationsession/cancel.md)
+- [func cancel()](./cancel%28%29.md)
   Cancels a web authentication session.
 
 

@@ -1,17 +1,24 @@
 # kSecTransformActionAttributeValidation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An action that triggers to perform validation of an attribute.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 13.0
+
+> **Deprecated**: SecTransform is no longer supported
 
 ## Declaration
 
 ```swift
 let kSecTransformActionAttributeValidation: CFString
+```
+
+```c
+extern CFStringRef const kSecTransformActionAttributeValidation;
 ```
 
 #### Discussion

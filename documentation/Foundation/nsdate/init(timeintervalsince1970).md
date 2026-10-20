@@ -1,7 +1,8 @@
 # init(timeIntervalSince1970:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a date object initialized relative to 00:00:00 UTC on 1 January 1970 by a given number of seconds.
 
@@ -20,6 +21,10 @@ Returns a date object initialized relative to 00:00:00 UTC on 1 January 1970 by 
 convenience init(timeIntervalSince1970 secs: TimeInterval)
 ```
 
+```objc
+- (instancetype) initWithTimeIntervalSince1970:(NSTimeInterval) secs;
+```
+
 #### Return Value
 
 An `NSDate` object set to `seconds` seconds from the reference date.
@@ -34,13 +39,14 @@ This method is useful for creating `NSDate` objects from time_t values returned 
 
 ## See Also
 
-- [init()](nsdate/init.md)
+### Initializing a Date
+- [init()](./init%28%29.md)
   Returns a date object initialized to the current date and time.
-- [convenience init(timeIntervalSinceNow: TimeInterval)](nsdate/init(timeintervalsincenow:).md)
+- [convenience init(timeIntervalSinceNow: TimeInterval)](./init%28timeintervalsincenow%29.md)
   Returns a date object initialized relative to the current date and time by a given number of seconds.
-- [init(timeIntervalSinceReferenceDate: TimeInterval)](nsdate/init(timeintervalsincereferencedate:).md)
+- [init(timeIntervalSinceReferenceDate: TimeInterval)](./init%28timeintervalsincereferencedate%29.md)
   Returns a date object initialized relative to 00:00:00 UTC on 1 January 2001 by a given number of seconds.
-- [init?(coder: NSCoder)](nsdate/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Returns a date object initialized from data in the given unarchiver.
 
 

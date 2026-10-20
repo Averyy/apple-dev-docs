@@ -1,7 +1,8 @@
 # GL_INT_VEC3
 
 **Framework**: OpenGL ES  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var GL_INT_VEC3: Int32 { get }
+```
+
+```c
+#define GL_INT_VEC3
 ```
 
 

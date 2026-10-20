@@ -1,14 +1,15 @@
 # performRequests(_:origin:)
 
 **Framework**: IdentityDocumentServicesUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs an identity document request.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 26.0+
 
 ## Declaration

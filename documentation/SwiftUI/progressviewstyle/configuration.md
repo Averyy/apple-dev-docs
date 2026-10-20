@@ -1,7 +1,8 @@
 # ProgressViewStyle.Configuration
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type alias for the properties of a progress view instance.
 
@@ -22,9 +23,10 @@ typealias Configuration = ProgressViewStyleConfiguration
 
 ## See Also
 
-- [func makeBody(configuration: Self.Configuration) -> Self.Body](progressviewstyle/makebody(configuration:).md)
+### Creating custom progress view styles
+- [func makeBody(configuration: Self.Configuration) -> Self.Body](./makebody%28configuration%29.md)
   Creates a view representing the body of a progress view.
-- [associatedtype Body : View](progressviewstyle/body.md)
+- [associatedtype Body : View](./body.md)
   A view representing the body of a progress view.
 
 

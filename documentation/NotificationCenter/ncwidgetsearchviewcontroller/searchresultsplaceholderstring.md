@@ -1,12 +1,15 @@
 # searchResultsPlaceholderString
 
 **Framework**: Notification Center  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A localized phrase displayed in the results list when no search results are available.
 
 **Availability**:
-- macOS 10.10+
+- macOS 10.10+ - Deprecated in 11.0
+
+> **Deprecated**: Use [WidgetKit](../../WidgetKit/WidgetKit.md) instead.
 
 ## Declaration
 
@@ -14,9 +17,14 @@ A localized phrase displayed in the results list when no search results are avai
 var searchResultsPlaceholderString: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * searchResultsPlaceholderString;
+```
+
 ## See Also
 
-- [var searchDescription: String?](ncwidgetsearchviewcontroller/searchdescription.md)
+### Displaying the Search Interface
+- [var searchDescription: String?](./searchdescription.md)
   A localized description of the nature of the search.
 
 

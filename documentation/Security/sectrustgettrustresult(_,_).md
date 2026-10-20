@@ -1,7 +1,8 @@
 # SecTrustGetTrustResult(_:_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the result code from the most recent trust evaluation.
 
@@ -20,22 +21,26 @@ Returns the result code from the most recent trust evaluation.
 func SecTrustGetTrustResult(_ trust: SecTrust, _ result: UnsafeMutablePointer<SecTrustResultType>) -> OSStatus
 ```
 
+```c
+OSStatus SecTrustGetTrustResult(SecTrustRef trust, SecTrustResultType *result);
+```
+
 ## Mentions
 
-- [Discovering Why a Trust Evaluation Failed](discovering-why-a-trust-evaluation-failed.md)
+- [Discovering Why a Trust Evaluation Failed](./discovering-why-a-trust-evaluation-failed.md)
 
 #### Return Value
 
-A result code. See [`Security Framework Result Codes`](security-framework-result-codes.md).
+A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
 #### Discussion
 
-If the trust object has not yet been evaluated, the result type is [`SecTrustResultType.invalid`](sectrustresulttype/invalid.md).
+If the trust object has not yet been evaluated, the result type is [`SecTrustResultType.invalid`](./sectrustresulttype/invalid.md).
 
 ## Parameters
 
 - `trust`: The trust object from which results should be obtained
-- `result`: A pointer that the function sets to point at a value that is the result type. See [`SecTrustResultType`](sectrustresulttype.md) for possible values.
+- `result`: A pointer that the function sets to point at a value that is the result type. See [`SecTrustResultType`](./sectrustresulttype.md) for possible values.
 
 
 ---

@@ -1,7 +1,8 @@
 # Unicode.GeneralCategory.finalPunctuation
 
 **Framework**: Swift  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A final quotation mark.
 
@@ -22,7 +23,7 @@ case finalPunctuation
 
 #### Discussion
 
-This value corresponds to the category `Final_Punctuation` (abbreviated `Pf`) in the [`Unicode Standard`](https://developer.apple.comhttps://unicode.org/reports/tr44/#General_Category_Values).
+This value corresponds to the category `Final_Punctuation` (abbreviated `Pf`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 
 
 ---

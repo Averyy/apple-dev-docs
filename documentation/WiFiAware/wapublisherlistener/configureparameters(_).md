@@ -1,7 +1,8 @@
 # configureParameters(_:)
 
 **Framework**: Wi-Fi Aware  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the provided parameters for a Wi-Fi Aware publish operation and connection.
 
@@ -22,9 +23,10 @@ func configureParameters(_ parameters: NWParameters)
 
 ## See Also
 
-- [var service: NWListener.Service](wapublisherlistener/service.md)
+### Creating publisher implementation details
+- [var service: NWListener.Service](./service.md)
   The service data for the Wi-Fi Aware publish operation.
-- [var isApplicationService: Bool](wapublisherlistener/isapplicationservice.md)
+- [var isApplicationService: Bool](./isapplicationservice.md)
   A Boolean value that determines whether the devices are listening for an application service.
 
 

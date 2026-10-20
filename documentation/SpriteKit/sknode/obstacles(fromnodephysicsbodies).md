@@ -1,17 +1,18 @@
 # obstacles(fromNodePhysicsBodies:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts each node into an obstacle by transforming the node’s physics body shape into the scene’s coordinate system.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,25 +20,30 @@ Converts each node into an obstacle by transforming the node’s physics body sh
 class func obstacles(fromNodePhysicsBodies nodes: [SKNode]) -> [GKPolygonObstacle]
 ```
 
+```objc
++ (NSArray<GKPolygonObstacle *> *) obstaclesFromNodePhysicsBodies:(NSArray<SKNode *> *) nodes;
+```
+
 #### Return Value
 
-An array of [`GKPolygonObstacle`](https://developer.apple.com/documentation/gameplaykit/gkpolygonobstacle) objects.
+An array of [`GKPolygonObstacle`](../../GameplayKit/gkpolygonobstacle.md) objects.
 
 #### Discussion
 
-Use the array of obstacles to create an obstacle graph ([`GKObstacleGraph`](https://developer.apple.com/documentation/gameplaykit/gkobstaclegraph)) in GameplayKit. See [`GameplayKit`](https://developer.apple.com/documentation/gameplaykit) and [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+Use the array of obstacles to create an obstacle graph ([`GKObstacleGraph`](../../GameplayKit/gkobstaclegraph.md)) in GameplayKit. See [GameplayKit](../../GameplayKit/GameplayKit.md) and [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Parameters
 
-- `nodes`: An array of [`SKNode`](sknode.md) objects.
+- `nodes`: An array of [`SKNode`](../sknode.md) objects.
 
 ## See Also
 
-- [var entity: GKEntity?](sknode/entity.md)
+### Adding GameplayKit Behaviors
+- [var entity: GKEntity?](./entity.md)
   The GameplayKit entity this node represents.
-- [class func obstacles(fromNodeBounds: [SKNode]) -> [GKPolygonObstacle]](sknode/obstacles(fromnodebounds:).md)
+- [class func obstacles(fromNodeBounds: [SKNode]) -> [GKPolygonObstacle]](./obstacles%28fromnodebounds%29.md)
   Converts each node into an obstacle by transforming its bounds into the scene’s coordinate system.
-- [class func obstacles(fromSpriteTextures: [SKNode], accuracy: Float) -> [GKPolygonObstacle]](sknode/obstacles(fromspritetextures:accuracy:).md)
+- [class func obstacles(fromSpriteTextures: [SKNode], accuracy: Float) -> [GKPolygonObstacle]](./obstacles%28fromspritetextures,accuracy%29.md)
   Turns each node into an obstacle by changing the node’s texture into a physics shape and converting it into the scene’s coordinate system.
 
 

@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 bool readyFlag;
 ```
 
@@ -15,13 +15,14 @@ used by parent
 
 ## See Also
 
-- [stateKnown](iopowerconnection/stateknown.md)
-- [requestFlag](iopowerconnection/requestflag.md)
-- [preventSystemSleepFlag](iopowerconnection/preventsystemsleepflag.md)
-- [preventIdleSleepFlag](iopowerconnection/preventidlesleepflag.md)
-- [desiredDomainState](iopowerconnection/desireddomainstate.md)
-- [currentPowerFlags](iopowerconnection/currentpowerflags.md)
-- [awaitingAck](iopowerconnection/awaitingack.md)
+### Instance Variables
+- [stateKnown](./stateknown.md)
+- [requestFlag](./requestflag.md)
+- [preventSystemSleepFlag](./preventsystemsleepflag.md)
+- [preventIdleSleepFlag](./preventidlesleepflag.md)
+- [desiredDomainState](./desireddomainstate.md)
+- [currentPowerFlags](./currentpowerflags.md)
+- [awaitingAck](./awaitingack.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # animation(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the animation with which the transition will be applied.
 
@@ -34,9 +35,10 @@ If the transition is interactive, the given animation will be used to animate th
 
 ## See Also
 
-- [func threshold(ScrollTransitionConfiguration.Threshold) -> ScrollTransitionConfiguration](scrolltransitionconfiguration/threshold(_:).md)
+### Accessing the configuration
+- [func threshold(ScrollTransitionConfiguration.Threshold) -> ScrollTransitionConfiguration](./threshold%28_%29.md)
   Sets the threshold at which the view will be considered fully visible.
-- [ScrollTransitionConfiguration.Threshold](scrolltransitionconfiguration/threshold.md)
+- [ScrollTransitionConfiguration.Threshold](./threshold.md)
   Describes a specific point in the progression of a target view within a container from hidden (fully outside the container) to visible.
 
 

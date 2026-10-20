@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An image that defines the shape to use when disintegrating from the source to the target image.
@@ -11,7 +12,7 @@ An image that defines the shape to use when disintegrating from the source to th
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,13 +21,18 @@ An image that defines the shape to use when disintegrating from the source to th
 var maskImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * maskImage;
+```
+
 ## See Also
 
-- [var shadowDensity: Float](cidisintegratewithmasktransition/shadowdensity.md)
+### Instance Properties
+- [var shadowDensity: Float](./shadowdensity.md)
   The density of the shadow the mask creates.
-- [var shadowOffset: CGPoint](cidisintegratewithmasktransition/shadowoffset.md)
+- [var shadowOffset: CGPoint](./shadowoffset.md)
   The offset of the shadow the mask creates.
-- [var shadowRadius: Float](cidisintegratewithmasktransition/shadowradius.md)
+- [var shadowRadius: Float](./shadowradius.md)
   The radius of the shadow the mask creates.
 
 

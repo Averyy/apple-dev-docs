@@ -1,7 +1,8 @@
 # logicallyComplete
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The animation has logically completed, but may still be in its long tail.
 
@@ -26,7 +27,8 @@ If a subsequent change occurs that creates additional animations on properties w
 
 ## See Also
 
-- [static let removed: AnimationCompletionCriteria](animationcompletioncriteria/removed.md)
+### Getting the completion criteria
+- [static let removed: AnimationCompletionCriteria](./removed.md)
   The entire animation is finished and will now be removed.
 
 

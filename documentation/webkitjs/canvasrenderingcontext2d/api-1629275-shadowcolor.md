@@ -1,7 +1,8 @@
 # shadowColor
 
 **Framework**: WebKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 A string that contains the RGBa color value of shadows. 
 
@@ -11,7 +12,7 @@ A string that contains the RGBa color value of shadows.
 
 ## Declaration
 
-```swift
+```
 attribute DOMString shadowColor;
 ```
 
@@ -21,13 +22,14 @@ The value may be any CSS color value. If the alpha value of `shadowColor` is non
 
 ## See Also
 
-- [clearShadow](canvasrenderingcontext2d/1634057-clearshadow.md)
+### Working with Shadows
+- [clearShadow](./api-1634057-clearshadow.md)
   Turns shadows off.
-- [shadowBlur](canvasrenderingcontext2d/1632236-shadowblur.md)
+- [shadowBlur](./api-1632236-shadowblur.md)
   A floating-point number that controls the degree of Gaussian blur applied to shadows.
-- [shadowOffsetX](canvasrenderingcontext2d/1632399-shadowoffsetx.md)
+- [shadowOffsetX](./api-1632399-shadowoffsetx.md)
   A floating-point number that controls the horizontal offset of shadows from the elements casting the shadows.
-- [shadowOffsetY](canvasrenderingcontext2d/1633455-shadowoffsety.md)
+- [shadowOffsetY](./api-1633455-shadowoffsety.md)
   A floating-point number that controls the vertical offset of shadows from the elements casting the shadows.
 
 

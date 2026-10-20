@@ -2,6 +2,7 @@
 
 **Framework**: Core Animation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Determines the number of times the animation will repeat.
@@ -20,15 +21,20 @@ Determines the number of times the animation will repeat.
 var repeatCount: Float { get set }
 ```
 
+```objc
+@property float repeatCount;
+```
+
 #### Discussion
 
-May be fractional. If the `repeatCount` is 0, it is ignored. Defaults to 0. If both [`repeatDuration`](camediatiming/repeatduration.md) and [`repeatCount`](camediatiming/repeatcount.md) are specified the behavior is undefined.
+May be fractional. If the `repeatCount` is 0, it is ignored. Defaults to 0. If both [`repeatDuration`](./repeatduration.md) and [`repeatCount`](./repeatcount.md) are specified the behavior is undefined.
 
-Setting this property to [`greatestFiniteMagnitude`](https://developer.apple.com/documentation/swift/float/greatestfinitemagnitude) will cause the animation to repeat forever.
+Setting this property to [`greatestFiniteMagnitude`](../../Swift/float/greatestfinitemagnitude.md) will cause the animation to repeat forever.
 
 ## See Also
 
-- [var repeatDuration: CFTimeInterval](camediatiming/repeatduration.md)
+### Repeating Animations
+- [var repeatDuration: CFTimeInterval](./repeatduration.md)
   Determines how many seconds the animation will repeat for.
 
 

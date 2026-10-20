@@ -1,7 +1,8 @@
 # PluginCommandIntent.custom(verb:description:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A custom command plug-in intent.
 
@@ -25,9 +26,10 @@ Use this case when none of the predefined cases fulfill the role of the plug-in.
 
 ## See Also
 
-- [static func documentationGeneration() -> PluginCommandIntent](plugincommandintent/documentationgeneration.md)
+### Creating a Command Intent
+- [static func documentationGeneration() -> PluginCommandIntent](./documentationgeneration%28%29.md)
   The plugin generates documentation.
-- [static func sourceCodeFormatting() -> PluginCommandIntent](plugincommandintent/sourcecodeformatting.md)
+- [static func sourceCodeFormatting() -> PluginCommandIntent](./sourcecodeformatting%28%29.md)
   The plug-in formats source code.
 
 

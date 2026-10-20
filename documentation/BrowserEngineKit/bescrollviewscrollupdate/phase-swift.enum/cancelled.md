@@ -1,7 +1,8 @@
 # BEScrollViewScrollUpdate.Phase.cancelled
 
 **Framework**: BrowserEngineKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A scroll phase that indicates the system stops scroll view gesture tracking due to an event.
 
@@ -15,6 +16,10 @@ A scroll phase that indicates the system stops scroll view gesture tracking due 
 
 ```swift
 case cancelled
+```
+
+```c
+BEScrollViewScrollUpdatePhaseCancelled
 ```
 
 

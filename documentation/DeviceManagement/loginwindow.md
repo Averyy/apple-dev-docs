@@ -1,7 +1,8 @@
 # LoginWindow
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures Login Window behavior.
 
@@ -10,7 +11,7 @@ The payload that configures Login Window behavior.
 
 ## Declaration
 
-```swift
+```
 object LoginWindow
 ```
 
@@ -18,7 +19,7 @@ object LoginWindow
 
 Specify `com.apple.loginwindow` as the payload type.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -30,7 +31,7 @@ Specify `com.apple.loginwindow` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -115,42 +116,103 @@ Specify `com.apple.loginwindow` as the payload type.
 ## Properties
 
 - `AdminHostInfo` (string): The admin host info. If present in the payload, the system displays its value in the Login Window as additional computer information. Before macOS 10.10, this string could only contain host name, system version, or IP address. After macOS 10.10, setting this key to any value allows the user to click the time area of the menu bar to toggle through various computer information values.
+
+  **Allowed Values**: `HostName`, `SystemVersion`, `IPAddress`
 - `AdminMayDisableMCX` (boolean): If `true`, a local administrator user can bypass or disable managed preferences (MCX settings) for their login session. The device presents the user with this option at login only when the user is a local administrator, and other users are not logged in.
+
+  **Default**: `false`
 - `AllowList` ([string]): The list of user GUIDs or group GUIDs of users that the system allows to log in. An asterisk (`*`) string specifies all users or groups. This only applies to network accounts and mobile accounts.
-- `AutologinPassword` (string): An optional user password to set up auto login. This must match the `AutologinUsername` user’s current password. Available: macOS 14+
-- `AutologinUsername` (string): The user short name for an existing user to set up auto login. Available: macOS 14+
+- `AutologinPassword` (string): An optional user password to set up auto login. This must match the `AutologinUsername` user’s current password.
+
+  Available: macOS 14+
+- `AutologinUsername` (string): The user short name for an existing user to set up auto login.
+
+  Available: macOS 14+
 - `DenyList` ([string]): The list of user GUIDs or group GUIDs of users that the system disallows to log in. This list takes priority over the list in the `AllowList` key. This only applies to network accounts and mobile accounts.
 - `DisableConsoleAccess` (boolean): If `true`, the system disregards the `>console` special user name, which provides a command line UI.
-- `DisableFDEAutoLogin` (boolean): If `true`, the system disables the automatic login option when using FileVault. Available: macOS 10.9+
-- `DisableScreenLockImmediate` (boolean): If `true`, the system disables the immediate Screen Lock functions. Available: macOS 10.13+
-- `ForceCaptivePortalConnectionFromLockScreen` (boolean): If `true`, the system allows use of the captive WiFi portal at login or unlock. Available: macOS 27+
-- `ForceWifiConfigurationOnLockScreen` (boolean): If `true`, the system allows the user to select WiFi networks at login or unlock. Available: macOS 27+
+
+  **Default**: `false`
+- `DisableFDEAutoLogin` (boolean): If `true`, the system disables the automatic login option when using FileVault.
+
+  Available: macOS 10.9+
+
+  **Default**: `false`
+- `DisableScreenLockImmediate` (boolean): If `true`, the system disables the immediate Screen Lock functions.
+
+  Available: macOS 10.13+
+
+  **Default**: `false`
+- `ForceCaptivePortalConnectionFromLockScreen` (boolean): If `true`, the system allows use of the captive WiFi portal at login or unlock.
+
+  Available: macOS 27+
+
+  **Default**: `false`
+- `ForceWifiConfigurationOnLockScreen` (boolean): If `true`, the system allows the user to select WiFi networks at login or unlock.
+
+  Available: macOS 27+
+
+  **Default**: `false`
 - `HideAdminUsers` (boolean): If `true`, the system hides administrator users when showing a user list.
+
+  **Default**: `false`
 - `HideLocalUsers` (boolean): If `true`, the system shows only network and system users when showing a user list.
+
+  **Default**: `false`
 - `HideMobileAccounts` (boolean): If `true`, the system hides mobile account users in a user list. In some cases, mobile users show up as network users.
+
+  **Default**: `false`
 - `IncludeNetworkUser` (boolean): If `true`, the system shows network users when showing a user list.
+
+  **Default**: `false`
 - `LoginwindowText` (string): The text to display in the Login Window.
-- `LogOutDisabledWhileLoggedIn` (boolean): If `true`, the system disables the Log Out menu item when the user is logged in. Available: macOS 10.13+
+- `LogOutDisabledWhileLoggedIn` (boolean): If `true`, the system disables the Log Out menu item when the user is logged in.
+
+  Available: macOS 10.13+
+
+  **Default**: `false`
 - `PowerOffDisabledWhileLoggedIn` (boolean): If `true`, the system disables the Power Off menu item when the user is logged in.
+
+  **Default**: `false`
 - `RestartDisabled` (boolean): If `true`, the system disables the Restart item.
+
+  **Default**: `false`
 - `RestartDisabledWhileLoggedIn` (boolean): If `true`, the system disables the Restart menu item when the user is logged in.
+
+  **Default**: `false`
 - `RetriesUntilHint` (integer): If specified, allows a certain number of retries until the device shows a password hint. The device shows no hints if set to a value of 0.
+
+  **Default**: `0`
 - `SHOWFULLNAME` (boolean): If `true`, the system shows the name and password dialog. If `false`, the system displays a list of users.
-- `showInputMenu` (boolean): If `true`, the system shows the Input Menu in the Login Window. Available: macOS 10.8+
+
+  **Default**: `false`
+- `showInputMenu` (boolean): If `true`, the system shows the Input Menu in the Login Window.
+
+  Available: macOS 10.8+
+
+  **Default**: `false`
 - `SHOWOTHERUSERS_MANAGED` (boolean): If `true`, the system displays “Other…” when it shows a list of users.
+
+  **Default**: `false`
 - `ShutDownDisabled` (boolean): If `true`, the system disables the Shut Down button.
+
+  **Default**: `false`
 - `ShutDownDisabledWhileLoggedIn` (boolean): If `true`, the system disables the Shut Down menu item when the user is logged in.
+
+  **Default**: `false`
 - `SleepDisabled` (boolean): If `true`, the system disables the Sleep button.
+
+  **Default**: `false`
 
 ## See Also
 
-- [object LoginItemsManagedItems](loginitemsmanageditems.md)
+### Login
+- [object LoginItemsManagedItems](./loginitemsmanageditems.md)
   The payload that configures a device’s login items.
-- [object LoginWindowLoginItems](loginwindowloginitems.md)
+- [object LoginWindowLoginItems](./loginwindowloginitems.md)
   The payload that configures login behavior.
-- [object LoginWindowScripts](loginwindowscripts.md)
+- [object LoginWindowScripts](./loginwindowscripts.md)
   The payload that configures scripts to run at login and logout.
-- [object ServiceManagementManagedLoginItems](servicemanagementmanagedloginitems.md)
+- [object ServiceManagementManagedLoginItems](./servicemanagementmanagedloginitems.md)
   This payload that configures managed login items, which auto-enables and auto-allows matched items.
 
 

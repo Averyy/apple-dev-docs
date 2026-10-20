@@ -1,7 +1,8 @@
 # PKIssuerProvisioningExtensionHandler
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract superclass for an app extension to add a payment card to Wallet.
 
@@ -17,6 +18,10 @@ An abstract superclass for an app extension to add a payment card to Wallet.
 class PKIssuerProvisioningExtensionHandler
 ```
 
+```objc
+@interface PKIssuerProvisioningExtensionHandler : NSObject
+```
+
 #### Overview
 
 The principal class of your app’s extension target must be a subclass of `PKIssuerProvisioningExtensionHandler`.
@@ -28,40 +33,41 @@ Your app must be installed and the user open the app at least once for the syste
 ## Topics
 
 ### Returning extension status
-- [func status(completion: (PKIssuerProvisioningExtensionStatus) -> Void)](pkissuerprovisioningextensionhandler/status(completion:).md)
+- [func status(completion: (PKIssuerProvisioningExtensionStatus) -> Void)](./pkissuerprovisioningextensionhandler/status%28completion%29.md)
   Reports the status of your Wallet extension.
-- [class PKIssuerProvisioningExtensionStatus](pkissuerprovisioningextensionstatus.md)
+- [class PKIssuerProvisioningExtensionStatus](./pkissuerprovisioningextensionstatus.md)
   An object that indicates whether there are any payment cards available to add as Wallet passes.
 ### Returning available passes
-- [func passEntries(completion: ([PKIssuerProvisioningExtensionPassEntry]) -> Void)](pkissuerprovisioningextensionhandler/passentries(completion:).md)
+- [func passEntries(completion: ([PKIssuerProvisioningExtensionPassEntry]) -> Void)](./pkissuerprovisioningextensionhandler/passentries%28completion%29.md)
   Reports the list of passes available to add to an iPhone.
-- [func remotePassEntries(completion: ([PKIssuerProvisioningExtensionPassEntry]) -> Void)](pkissuerprovisioningextensionhandler/remotepassentries(completion:).md)
+- [func remotePassEntries(completion: ([PKIssuerProvisioningExtensionPassEntry]) -> Void)](./pkissuerprovisioningextensionhandler/remotepassentries%28completion%29.md)
   Reports the list of passes available to add to an Apple Watch.
-- [class PKIssuerProvisioningExtensionPassEntry](pkissuerprovisioningextensionpassentry.md)
+- [class PKIssuerProvisioningExtensionPassEntry](./pkissuerprovisioningextensionpassentry.md)
   An object that represents an item available to add to as a Wallet pass.
-- [class PKIssuerProvisioningExtensionPaymentPassEntry](pkissuerprovisioningextensionpaymentpassentry.md)
+- [class PKIssuerProvisioningExtensionPaymentPassEntry](./pkissuerprovisioningextensionpaymentpassentry.md)
   An object that represents a payment card available to add as a payment pass.
 ### Returning information for adding a pass
-- [func generateAddPaymentPassRequestForPassEntryWithIdentifier(String, configuration: PKAddPaymentPassRequestConfiguration, certificateChain: [Data], nonce: Data, nonceSignature: Data, completionHandler: (PKAddPaymentPassRequest?) -> Void)](pkissuerprovisioningextensionhandler/generateaddpaymentpassrequestforpassentrywithidentifier(_:configuration:certificatechain:nonce:noncesignature:completionhandler:).md)
+- [func generateAddPaymentPassRequestForPassEntryWithIdentifier(String, configuration: PKAddPaymentPassRequestConfiguration, certificateChain: [Data], nonce: Data, nonceSignature: Data, completionHandler: (PKAddPaymentPassRequest?) -> Void)](./pkissuerprovisioningextensionhandler/generateaddpaymentpassrequestforpassentrywithidentifier%28_,configuration,certificatechain,nonce,noncesignature,completionhandler%29.md)
   Creates an object with the data the system needs to add a card to Apple Pay.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Implementing Wallet Extensions](implementing-wallet-extensions.md)
+### Issuer cards
+- [Implementing Wallet Extensions](./implementing-wallet-extensions.md)
   Support adding an issued card to Apple Pay from directly within Apple Wallet using Wallet Extensions.
-- [protocol PKIssuerProvisioningExtensionAuthorizationProviding](pkissuerprovisioningextensionauthorizationproviding.md)
+- [protocol PKIssuerProvisioningExtensionAuthorizationProviding](./pkissuerprovisioningextensionauthorizationproviding.md)
   A protocol for a UI app extension to authorize a user to add a payment card to Wallet.
 
 

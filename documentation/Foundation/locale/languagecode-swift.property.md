@@ -1,18 +1,19 @@
 # languageCode
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The language code of the locale, or `nil` if has none.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
-- macOS 10.10+
-- tvOS 9.0+
+- iOS 8.0+ - Deprecated in 16.0 (renamed: language.languageCode.identifier)
+- iPadOS 8.0+ - Deprecated in 16.0 (renamed: language.languageCode.identifier)
+- Mac Catalyst 8.0+ - Deprecated in 16.0 (renamed: language.languageCode.identifier)
+- macOS 10.10+ - Deprecated in 13.0 (renamed: language.languageCode.identifier)
+- tvOS 9.0+ - Deprecated in 16.0 (renamed: language.languageCode.identifier)
 - visionOS 1.0+
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 9.0 (renamed: language.languageCode.identifier)
 
 ## Declaration
 
@@ -26,35 +27,36 @@ For example, for the locale “zh-Hant-HK”, returns “zh”.
 
 ## See Also
 
-- [var identifier: String](locale/identifier.md)
+### Getting information about a locale
+- [var identifier: String](./identifier.md)
   The identifier of the locale.
-- [func identifier(Locale.IdentifierType) -> String](locale/identifier(_:).md)
+- [func identifier(Locale.IdentifierType) -> String](./identifier%28_%29.md)
   Returns the locale identifier, in the specified standard format.
-- [Locale.IdentifierType](locale/identifiertype.md)
+- [Locale.IdentifierType](./identifiertype.md)
   A type that indicates the standard that defines a locale’s identifier.
-- [var calendar: Calendar](locale/calendar.md)
+- [var calendar: Calendar](./calendar.md)
   The calendar for the locale, or the Gregorian calendar as a fallback.
-- [var regionCode: String?](locale/regioncode.md)
+- [var regionCode: String?](./regioncode.md)
   The region code of the locale, or `nil` if it has none.
-- [var scriptCode: String?](locale/scriptcode.md)
+- [var scriptCode: String?](./scriptcode.md)
   The script code of the locale, or `nil` if has none.
-- [var variantCode: String?](locale/variantcode.md)
+- [var variantCode: String?](./variantcode.md)
   The variant code for the locale, or `nil` if it has none.
-- [var exemplarCharacterSet: CharacterSet?](locale/exemplarcharacterset.md)
+- [var exemplarCharacterSet: CharacterSet?](./exemplarcharacterset.md)
   The exemplar character set for the locale, or `nil` if has none.
-- [var collationIdentifier: String?](locale/collationidentifier.md)
+- [var collationIdentifier: String?](./collationidentifier.md)
   The collation identifier for the locale, or `nil` if it has none.
-- [var collatorIdentifier: String?](locale/collatoridentifier.md)
+- [var collatorIdentifier: String?](./collatoridentifier.md)
   The collator identifier of the locale.
-- [var usesMetricSystem: Bool](locale/usesmetricsystem.md)
+- [var usesMetricSystem: Bool](./usesmetricsystem.md)
   A Boolean that is true if the locale uses the metric system.
-- [var decimalSeparator: String?](locale/decimalseparator.md)
+- [var decimalSeparator: String?](./decimalseparator.md)
   The decimal separator of the locale.
-- [var groupingSeparator: String?](locale/groupingseparator.md)
+- [var groupingSeparator: String?](./groupingseparator.md)
   The grouping separator of the locale.
-- [var currencyCode: String?](locale/currencycode.md)
+- [var currencyCode: String?](./currencycode.md)
   The currency code of the locale.
-- [var currencySymbol: String?](locale/currencysymbol.md)
+- [var currencySymbol: String?](./currencysymbol.md)
   The currency symbol of the locale.
 
 

@@ -1,7 +1,8 @@
 # onMove(perform:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the move action for the dynamic view.
 
@@ -23,7 +24,7 @@ func onMove(perform action: Optional<(IndexSet, Int) -> Void>) -> some DynamicVi
 
 ## Mentions
 
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Making a view into a drag source](../making-a-view-into-a-drag-source.md)
 
 #### Return Value
 
@@ -35,11 +36,12 @@ A view that calls `action` when elements are moved within the original view.
 
 ## See Also
 
-- [func onDelete(perform: Optional<(IndexSet) -> Void>) -> some DynamicViewContent](dynamicviewcontent/ondelete(perform:).md)
-  Sets the deletion action for the dynamic view. You must delete the corresponding item within `action`, as it will be called after the row has already been removed from the [`List`](list.md).
-- [func onInsert(of:perform:)](dynamicviewcontent/oninsert(of:perform:).md)
+### Responding to updates
+- [func onDelete(perform: Optional<(IndexSet) -> Void>) -> some DynamicViewContent](./ondelete%28perform%29.md)
+  Sets the deletion action for the dynamic view. You must delete the corresponding item within `action`, as it will be called after the row has already been removed from the [`List`](../list.md).
+- [func onInsert(of:perform:)](./oninsert%28of,perform%29.md)
   Sets the insert action for the dynamic view.
-- [func dropDestination<T>(for: T.Type, action: ([T], Int) -> Void) -> some DynamicViewContent](dynamicviewcontent/dropdestination(for:action:).md)
+- [func dropDestination<T>(for: T.Type, action: ([T], Int) -> Void) -> some DynamicViewContent](./dropdestination%28for,action%29.md)
   Sets the insert action for the dynamic view.
 
 

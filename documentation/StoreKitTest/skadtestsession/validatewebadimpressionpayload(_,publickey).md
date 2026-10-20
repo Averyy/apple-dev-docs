@@ -1,7 +1,8 @@
 # validateWebAdImpressionPayload(_:publicKey:)
 
 **Framework**: StoreKit Test  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates an impression for a web ad.
 
@@ -16,11 +17,16 @@ Validates an impression for a web ad.
 func validateWebAdImpressionPayload(_ impressionData: Data, publicKey: String) throws
 ```
 
+```objc
+- (BOOL) validateWebAdImpressionPayload:(NSData *) impressionData publicKey:(NSString *) publicKey error:(NSError **) error;
+```
+
 ## See Also
 
-- [func validate(SKAdImpression, publicKey: String) throws](skadtestsession/validate(_:publickey:).md)
+### Validating impressions
+- [func validate(SKAdImpression, publicKey: String) throws](./validate%28_,publickey%29.md)
   Validates an impression for a view-through ad.
-- [func validateImpression(parameters: [String : Any], publicKey: String) throws](skadtestsession/validateimpression(parameters:publickey:).md)
+- [func validateImpression(parameters: [String : Any], publicKey: String) throws](./validateimpression%28parameters,publickey%29.md)
   Validates an impression for a StoreKit-rendered ad.
 
 

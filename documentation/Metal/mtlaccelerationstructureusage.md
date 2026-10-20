@@ -1,7 +1,8 @@
 # MTLAccelerationStructureUsage
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options that affect how Metal builds an acceleration structure and the behavior of that acceleration structure.
 
@@ -19,56 +20,61 @@ Options that affect how Metal builds an acceleration structure and the behavior 
 struct MTLAccelerationStructureUsage
 ```
 
+```c
+enum MTLAccelerationStructureUsage : NSUInteger;
+```
+
 ## Topics
 
 ### Applying options
-- [static var refit: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/refit.md)
+- [static var refit: MTLAccelerationStructureUsage](./mtlaccelerationstructureusage/refit.md)
   An option that lets you update an acceleration structure after creating it.
-- [static var preferFastBuild: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/preferfastbuild.md)
+- [static var preferFastBuild: MTLAccelerationStructureUsage](./mtlaccelerationstructureusage/preferfastbuild.md)
   An option that instructs Metal to build an acceleration structure quickly.
-- [static var preferFastIntersection: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/preferfastintersection.md)
+- [static var preferFastIntersection: MTLAccelerationStructureUsage](./mtlaccelerationstructureusage/preferfastintersection.md)
   An option that instructs Metal to prioritize building an acceleration structure with better intersection performance.
-- [static var minimizeMemory: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/minimizememory.md)
+- [static var minimizeMemory: MTLAccelerationStructureUsage](./mtlaccelerationstructureusage/minimizememory.md)
   An option that instructs Metal to prioritize building an acceleration structure that needs less memory.
-- [static var extendedLimits: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/extendedlimits.md)
+- [static var extendedLimits: MTLAccelerationStructureUsage](./mtlaccelerationstructureusage/extendedlimits.md)
   An option that increases an acceleration structure’s storage capacity.
 ### Swift support
-- [init(rawValue: UInt)](mtlaccelerationstructureusage/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mtlaccelerationstructureusage/init%28rawvalue%29.md)
   Creates new usage options instance from a raw integer value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [Improving ray-tracing data access using per-primitive data](improving-ray-tracing-data-access-using-per-primitive-data.md)
+### Acceleration structures
+- [Improving ray-tracing data access using per-primitive data](./improving-ray-tracing-data-access-using-per-primitive-data.md)
   Simplify data access and improve GPU utilization by storing custom primitive data directly in the acceleration structure.
-- [protocol MTLAccelerationStructure](mtlaccelerationstructure.md)
+- [protocol MTLAccelerationStructure](./mtlaccelerationstructure.md)
   A collection of model data for GPU-accelerated intersection of rays with the model.
-- [class MTL4AccelerationStructureDescriptor](mtl4accelerationstructuredescriptor.md)
+- [class MTL4AccelerationStructureDescriptor](./mtl4accelerationstructuredescriptor.md)
   Base class for Metal 4 acceleration structure descriptors.
-- [class MTLAccelerationStructureDescriptor](mtlaccelerationstructuredescriptor.md)
+- [class MTLAccelerationStructureDescriptor](./mtlaccelerationstructuredescriptor.md)
   A base class for classes that define the configuration for a new acceleration structure.
-- [class MTL4PrimitiveAccelerationStructureDescriptor](mtl4primitiveaccelerationstructuredescriptor.md)
+- [class MTL4PrimitiveAccelerationStructureDescriptor](./mtl4primitiveaccelerationstructuredescriptor.md)
   Descriptor for a primitive acceleration structure that directly references geometric shapes, such as triangles and bounding boxes.
-- [class MTLPrimitiveAccelerationStructureDescriptor](mtlprimitiveaccelerationstructuredescriptor.md)
+- [class MTLPrimitiveAccelerationStructureDescriptor](./mtlprimitiveaccelerationstructuredescriptor.md)
   A description of an acceleration structure that contains geometry primitives.
-- [class MTL4InstanceAccelerationStructureDescriptor](mtl4instanceaccelerationstructuredescriptor.md)
+- [class MTL4InstanceAccelerationStructureDescriptor](./mtl4instanceaccelerationstructuredescriptor.md)
   Descriptor for an instance acceleration structure.
-- [class MTLInstanceAccelerationStructureDescriptor](mtlinstanceaccelerationstructuredescriptor.md)
+- [class MTLInstanceAccelerationStructureDescriptor](./mtlinstanceaccelerationstructuredescriptor.md)
   A description of an acceleration structure that derives from instances of primitive acceleration structures.
-- [protocol MTLAccelerationStructureCommandEncoder](mtlaccelerationstructurecommandencoder.md)
+- [protocol MTLAccelerationStructureCommandEncoder](./mtlaccelerationstructurecommandencoder.md)
   Encodes commands that build and refit acceleration structures for a single pass.
-- [struct MTLAccelerationStructureRefitOptions](mtlaccelerationstructurerefitoptions.md)
+- [struct MTLAccelerationStructureRefitOptions](./mtlaccelerationstructurerefitoptions.md)
 
 
 ---

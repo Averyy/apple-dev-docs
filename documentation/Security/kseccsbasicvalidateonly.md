@@ -1,7 +1,8 @@
 # kSecCSBasicValidateOnly
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Do not validate either the main executable or the bundle resources, if any.
 
@@ -15,9 +16,13 @@ Do not validate either the main executable or the bundle resources, if any.
 var kSecCSBasicValidateOnly: UInt32 { get }
 ```
 
+```c
+kSecCSBasicValidateOnly
+```
+
 #### Discussion
 
-This flag is the bitwise OR of the [`kSecCSDoNotValidateExecutable`](kseccsdonotvalidateexecutable.md) and [`kSecCSDoNotValidateResources`](kseccsdonotvalidateresources.md) flags.
+This flag is the bitwise OR of the [`kSecCSDoNotValidateExecutable`](./kseccsdonotvalidateexecutable.md) and [`kSecCSDoNotValidateResources`](./kseccsdonotvalidateresources.md) flags.
 
 
 ---

@@ -1,7 +1,8 @@
 # supportedBitDepths
 
 **Framework**: ImageCaptureCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.4+
@@ -10,6 +11,10 @@
 
 ```swift
 var supportedBitDepths: IndexSet { get }
+```
+
+```objc
+@property (readonly) NSIndexSet * supportedBitDepths;
 ```
 
 

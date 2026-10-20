@@ -1,7 +1,8 @@
 # descriptor(for:searchingInAssetPackWithID:)
 
 **Framework**: Background Assets  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens and returns a file descriptor for an asset file at the specified relative path.
 
@@ -22,7 +23,7 @@ func descriptor(for path: FilePath, searchingInAssetPackWithID assetPackID: Stri
 
 ## Mentions
 
-- [Downloading Apple-hosted asset packs](downloading-apple-hosted-asset-packs.md)
+- [Downloading Apple-hosted asset packs](../downloading-apple-hosted-asset-packs.md)
 
 #### Return Value
 
@@ -34,11 +35,11 @@ A descriptor for the opened file.
 
 All asset packs share the same namespace, so you can treat the overall collection of downloaded asset packs as if it were a single root directory that contains all of your subdirectories and asset files, regardless of the specific asset pack in which any particular file resides. If there’s a path collision across multiple asset packs, then it’s undefined from which asset pack the file will be read unless you explicitly limit the search to a particular asset pack by passing a non-`nil` ID to the `assetPackID` parameter.
 
-> **Note**: [`ManagedBackgroundAssetsError.fileNotFound(at:)`](managedbackgroundassetserror/filenotfound(at:).md) when no file is found at `path`.
+> **Throws**: [`ManagedBackgroundAssetsError.fileNotFound(at:)`](../managedbackgroundassetserror/filenotfound%28at%29.md) when no file is found at `path`.
 
-> **Note**: When the path is not relative or when some other error occurs while finding or opening the requested file.
+> **Throws**: When the path is not relative or when some other error occurs while finding or opening the requested file.
 
-> **Note**: Use this method if you need low-level access to the file descriptor. If you don’t, then use [`contents(at:searchingInAssetPackWithID:options:)`](assetpackmanager/contents(at:searchinginassetpackwithid:options:).md) instead.
+> **Remark**: Use this method if you need low-level access to the file descriptor. If you don’t, then use [`contents(at:searchingInAssetPackWithID:options:)`](./contents%28at,searchinginassetpackwithid,options%29.md) instead.
 
 ## Parameters
 
@@ -47,15 +48,16 @@ All asset packs share the same namespace, so you can treat the overall collectio
 
 ## See Also
 
-- [func contents(at: FilePath, searchingInAssetPackWithID: String?, options: Data.ReadingOptions) throws -> Data](assetpackmanager/contents(at:searchinginassetpackwithid:options:).md)
+### Accessing asset contents
+- [func contents(at: FilePath, searchingInAssetPackWithID: String?, options: Data.ReadingOptions) throws -> Data](./contents%28at,searchinginassetpackwithid,options%29.md)
   Returns the contents of an asset file at the specified relative path.
-- [func contents(at: FilePath, asLocalizedFor: Locale.Language, options: Data.ReadingOptions) throws -> Data](assetpackmanager/contents(at:aslocalizedfor:options:).md)
+- [func contents(at: FilePath, asLocalizedFor: Locale.Language, options: Data.ReadingOptions) throws -> Data](./contents%28at,aslocalizedfor,options%29.md)
   Returns the contents of a localized asset file at the specified relative path.
-- [func descriptor(for: FilePath, asLocalizedFor: Locale.Language) throws -> FileDescriptor](assetpackmanager/descriptor(for:aslocalizedfor:).md)
+- [func descriptor(for: FilePath, asLocalizedFor: Locale.Language) throws -> FileDescriptor](./descriptor%28for,aslocalizedfor%29.md)
   Opens and returns a file descriptor for a localized asset file at the specified relative path.
-- [func url(for: FilePath) throws -> URL](assetpackmanager/url(for:).md)
+- [func url(for: FilePath) throws -> URL](./url%28for%29.md)
   Returns a URL for the specified relative path.
-- [func url(for: FilePath, asLocalizedFor: Locale.Language) throws -> URL](assetpackmanager/url(for:aslocalizedfor:).md)
+- [func url(for: FilePath, asLocalizedFor: Locale.Language) throws -> URL](./url%28for,aslocalizedfor%29.md)
   Returns a URL for the specified relative path.
 
 

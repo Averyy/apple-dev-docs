@@ -1,14 +1,15 @@
 # setDataOffAndLen
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 23.0+
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setDataOffAndLen(size_t offset, size_t length);
 ```
 

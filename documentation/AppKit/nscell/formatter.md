@@ -1,17 +1,22 @@
 # formatter
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cell’s formatter object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var formatter: Formatter? { get set }
+```
+
+```objc
+@property (strong, nullable) NSFormatter * formatter;
 ```
 
 #### Discussion

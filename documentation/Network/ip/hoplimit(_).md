@@ -1,7 +1,8 @@
 # hopLimit(_:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configure the IP hop limit.
 

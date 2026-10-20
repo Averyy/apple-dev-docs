@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional opacity texture for the decal.
 

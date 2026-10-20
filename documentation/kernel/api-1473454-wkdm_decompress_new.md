@@ -1,20 +1,22 @@
 # WKdm_decompress_new
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void WKdm_decompress_new(WK_word *src_buf, WK_word *dest_buf, WK_word *scratch, unsigned int bytes);
 ```
 
 ## See Also
 
-- [WKdm_compress_new](1473458-wkdm_compress_new.md)
+### Compression
+- [WKdm_compress_new](./api-1473458-wkdm_compress_new.md)
 
 
 ---

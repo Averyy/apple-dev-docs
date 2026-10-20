@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Converts dynamic sample buffer to a sample buffer containing data buffer.
 
@@ -19,6 +20,8 @@ Converts dynamic sample buffer to a sample buffer containing data buffer.
 ```swift
 init?(_ other: CMReadySampleBuffer<CMSampleBuffer.DynamicContent>)
 ```
+
+Available when `Content` is `CMReadOnlyDataBlockBuffer`.
 
 
 ---

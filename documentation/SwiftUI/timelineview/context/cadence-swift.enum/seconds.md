@@ -1,7 +1,8 @@
 # TimelineView.Context.Cadence.seconds
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Updates the view approximately once per second.
 
@@ -22,9 +23,10 @@ case seconds
 
 ## See Also
 
-- [TimelineView.Context.Cadence.live](timelineview/context/cadence-swift.enum/live.md)
+### Getting cadences
+- [TimelineView.Context.Cadence.live](./live.md)
   Updates the view continuously.
-- [TimelineView.Context.Cadence.minutes](timelineview/context/cadence-swift.enum/minutes.md)
+- [TimelineView.Context.Cadence.minutes](./minutes.md)
   Updates the view approximately once per minute.
 
 

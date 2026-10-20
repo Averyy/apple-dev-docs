@@ -1,7 +1,8 @@
 # collidedWithEquipment
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The other equipment identifier in contact or `nil` if in contact with the game’s boundary.
 
@@ -16,7 +17,8 @@ let collidedWithEquipment: EquipmentIdentifier?
 
 ## See Also
 
-- [let collider: any Equipment](tablevisualstate/contact/collider.md)
+### Getting collision objects
+- [let collider: any Equipment](./collider.md)
   A dynamic equipment that is in contact with either another equipment or the game’s boundary.
 
 

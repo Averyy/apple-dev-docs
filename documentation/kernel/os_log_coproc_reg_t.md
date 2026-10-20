@@ -1,14 +1,15 @@
 # os_log_coproc_reg_t
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum os_log_coproc_reg_t : unsigned int {
     ...
 } os_log_coproc_reg_t;
@@ -17,8 +18,8 @@ typedef enum os_log_coproc_reg_t : unsigned int {
 ## Topics
 
 ### Constants
-- [os_log_coproc_register_harvest_fs_ftab](os_log_coproc_reg_t/os_log_coproc_register_harvest_fs_ftab.md)
-- [os_log_coproc_register_memory](os_log_coproc_reg_t/os_log_coproc_register_memory.md)
+- [os_log_coproc_register_harvest_fs_ftab](./os_log_coproc_reg_t/os_log_coproc_register_harvest_fs_ftab.md)
+- [os_log_coproc_register_memory](./os_log_coproc_reg_t/os_log_coproc_register_memory.md)
 
 
 ---

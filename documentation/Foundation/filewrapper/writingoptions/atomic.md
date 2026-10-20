@@ -1,7 +1,8 @@
 # atomic
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Whether writing is done atomically.
 
@@ -20,14 +21,19 @@ Whether writing is done atomically.
 static var atomic: FileWrapper.WritingOptions { get }
 ```
 
+```c
+NSFileWrapperWritingAtomic
+```
+
 #### Discussion
 
-You can use this option to ensure that, when overwriting a file package, the overwriting either completely succeeds or completely fails, with no possibility of leaving the file package in an inconsistent state. Because this option causes additional I/O, you shouldn’t use it unnecessarily. For example, don’t use this option in an override of `-[NSDocument` [`write(to:ofType:)`](https://developer.apple.com/documentation/appkit/nsdocument/write(to:oftype:))`]`, because `NSDocument` safe-saving is already done atomically.
+You can use this option to ensure that, when overwriting a file package, the overwriting either completely succeeds or completely fails, with no possibility of leaving the file package in an inconsistent state. Because this option causes additional I/O, you shouldn’t use it unnecessarily. For example, don’t use this option in an override of `-[NSDocument` [`write(to:ofType:)`](../../../AppKit/nsdocument/write%28to,oftype%29.md)`]`, because `NSDocument` safe-saving is already done atomically.
 
 ## See Also
 
-- [static var withNameUpdating: FileWrapper.WritingOptions](filewrapper/writingoptions/withnameupdating.md)
-  Whether descendant file wrappers’[`filename`](filewrapper/filename.md) properties are set if the writing succeeds.
+### Constants
+- [static var withNameUpdating: FileWrapper.WritingOptions](./withnameupdating.md)
+  Whether descendant file wrappers’[`filename`](../filename.md) properties are set if the writing succeeds.
 
 
 ---

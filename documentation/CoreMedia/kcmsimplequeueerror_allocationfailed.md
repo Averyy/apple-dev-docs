@@ -1,18 +1,19 @@
 # kCMSimpleQueueError_AllocationFailed
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The system failed to allocate memory.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,18 @@ The system failed to allocate memory.
 var kCMSimpleQueueError_AllocationFailed: OSStatus { get }
 ```
 
+```c
+kCMSimpleQueueError_AllocationFailed
+```
+
 ## See Also
 
-- [var kCMSimpleQueueError_QueueIsFull: OSStatus](kcmsimplequeueerror_queueisfull.md)
+### Constants
+- [var kCMSimpleQueueError_QueueIsFull: OSStatus](./kcmsimplequeueerror_queueisfull.md)
   An operation failed because the queue is full.
-- [var kCMSimpleQueueError_ParameterOutOfRange: OSStatus](kcmsimplequeueerror_parameteroutofrange.md)
+- [var kCMSimpleQueueError_ParameterOutOfRange: OSStatus](./kcmsimplequeueerror_parameteroutofrange.md)
   You passed a parameter to a function that’s outside the range of allowed values.
-- [var kCMSimpleQueueError_RequiredParameterMissing: OSStatus](kcmsimplequeueerror_requiredparametermissing.md)
+- [var kCMSimpleQueueError_RequiredParameterMissing: OSStatus](./kcmsimplequeueerror_requiredparametermissing.md)
   You failed to pass a required parameter to a function.
 
 

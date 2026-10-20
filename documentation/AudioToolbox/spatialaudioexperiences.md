@@ -1,7 +1,8 @@
 # SpatialAudioExperiences
 
 **Framework**: Audio Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - visionOS 26.0+
@@ -15,9 +16,9 @@ enum SpatialAudioExperiences
 ## Topics
 
 ### Enumerations
-- [SpatialAudioExperiences.AnchoringStrategy](spatialaudioexperiences/anchoringstrategy.md)
+- [SpatialAudioExperiences.AnchoringStrategy](./spatialaudioexperiences/anchoringstrategy.md)
   The center of a head-tracked spatial experience.
-- [SpatialAudioExperiences.SoundStageSize](spatialaudioexperiences/soundstagesize.md)
+- [SpatialAudioExperiences.SoundStageSize](./spatialaudioexperiences/soundstagesize.md)
   Configure the distribution of audio channels in 3D space.
 
 

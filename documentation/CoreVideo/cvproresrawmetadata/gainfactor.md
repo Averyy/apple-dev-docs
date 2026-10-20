@@ -1,7 +1,8 @@
 # gainFactor
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The overall gain factor for raw conversion.
 

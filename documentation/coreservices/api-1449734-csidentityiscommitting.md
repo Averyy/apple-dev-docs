@@ -1,7 +1,8 @@
 # CSIdentityIsCommitting(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentityIsCommitting(_ identity: CSIdentity!) -> Bool
+```
+
+```c
+Boolean CSIdentityIsCommitting(CSIdentityRef identity);
 ```
 
 

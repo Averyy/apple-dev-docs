@@ -1,7 +1,8 @@
 # kSecCSSigningInformation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Cryptographic signing information.
 
@@ -13,6 +14,10 @@ Cryptographic signing information.
 
 ```swift
 var kSecCSSigningInformation: UInt32 { get }
+```
+
+```c
+kSecCSSigningInformation
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # SubscriptionRevokeResponse
 
 **Framework**: Advanced Commerce API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response body for a successful revoke-subscription request.
 
@@ -10,13 +11,13 @@ The response body for a successful revoke-subscription request.
 
 ## Declaration
 
-```swift
+```
 object SubscriptionRevokeResponse
 ```
 
 #### Discussion
 
-This is the response body for the [`Revoke Subscription`](revoke-subscription.md) endpoint.
+This is the response body for the [`Revoke Subscription`](./revoke-subscription.md) endpoint.
 
 ## Properties
 
@@ -25,9 +26,10 @@ This is the response body for the [`Revoke Subscription`](revoke-subscription.md
 
 ## See Also
 
-- [Revoke Subscription](revoke-subscription.md)
+### Subscription revocation from the server
+- [Revoke Subscription](./revoke-subscription.md)
   Immediately cancel a customer’s subscription and all the items that are included in the subscription, and request a full or prorated refund.
-- [object SubscriptionRevokeRequest](subscriptionrevokerequest.md)
+- [object SubscriptionRevokeRequest](./subscriptionrevokerequest.md)
   The request body you provide to terminate a subscription and all its items immediately.
 
 

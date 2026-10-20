@@ -1,17 +1,24 @@
 # compositionParameterView(_:didChangeParameterWithKey:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called after an input parameter in the composition parameter view has been edited.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
 ```swift
 func compositionParameterView(_ parameterView: QCCompositionParameterView!, didChangeParameterWithKey portKey: String!)
+```
+
+```objc
+- (void) compositionParameterView:(QCCompositionParameterView *) parameterView didChangeParameterWithKey:(NSString *) portKey;
 ```
 
 ## Parameters

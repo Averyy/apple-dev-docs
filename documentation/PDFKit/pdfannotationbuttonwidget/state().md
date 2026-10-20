@@ -1,17 +1,22 @@
 # state()
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the state of the control.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func state() -> Int
+```
+
+```objc
+- (NSInteger) state;
 ```
 
 #### Return Value
@@ -20,7 +25,8 @@ func state() -> Int
 
 ## See Also
 
-- [func setState(Int)](pdfannotationbuttonwidget/setstate(_:).md)
+### Getting and Setting the Control’s State
+- [func setState(Int)](./setstate%28_%29.md)
   Sets the state of the control.
 
 

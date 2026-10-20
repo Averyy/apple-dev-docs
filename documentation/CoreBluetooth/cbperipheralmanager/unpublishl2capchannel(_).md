@@ -1,7 +1,8 @@
 # unpublishL2CAPChannel(_:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a published service from the local system.
 
@@ -20,6 +21,10 @@ Removes a published service from the local system.
 func unpublishL2CAPChannel(_ PSM: CBL2CAPPSM)
 ```
 
+```objc
+- (void) unpublishL2CAPChannel:(CBL2CAPPSM) PSM;
+```
+
 #### Discussion
 
 After you make this call, the peripheral manager accepts no new connections for this PSM, and closes any existing L2CAP channels using this PSM.
@@ -30,7 +35,8 @@ After you make this call, the peripheral manager accepts no new connections for 
 
 ## See Also
 
-- [func publishL2CAPChannel(withEncryption: Bool)](cbperipheralmanager/publishl2capchannel(withencryption:).md)
+### Using L2CAP Channels
+- [func publishL2CAPChannel(withEncryption: Bool)](./publishl2capchannel%28withencryption%29.md)
   Creates a listener for incoming L2CAP channel connections.
 
 

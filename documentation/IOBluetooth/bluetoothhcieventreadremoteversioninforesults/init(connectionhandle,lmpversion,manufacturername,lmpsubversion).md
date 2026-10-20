@@ -1,10 +1,11 @@
 # init(connectionHandle:lmpVersion:manufacturerName:lmpSubversion:)
 
 **Framework**: IOBluetooth  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 

@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns `self` inset by `amount`.
@@ -24,7 +25,8 @@ func inset(by amount: CGFloat) -> Self.InsetShape
 
 ## See Also
 
-- [associatedtype InsetShape : InsettableShape](insettableshape/insetshape.md)
+### Setting the inset
+- [associatedtype InsetShape : InsettableShape](./insetshape.md)
   The type of the inset shape.
 
 

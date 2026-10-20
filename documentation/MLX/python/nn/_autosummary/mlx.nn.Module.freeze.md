@@ -6,44 +6,20 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.Module.freeze
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Module.freeze.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Module.freeze
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Module.freeze
-
-**Module.freeze(***, *recurse: bool = True*, *keys: str | List[str] | None = None*, *strict: bool = False*) → [Module](../module.html#mlx.nn.Module)**
+**Module.freeze(***, *recurse: bool = True*, *keys: str | List[str] | None = None*, *strict: bool = False*) → [Module](../module.md#mlx.nn.Module)**
 : Freeze the Module’s parameters or some of them. Freezing a parameter means
 not computing gradients for it.
 This function is idempotent i.e. freezing a frozen model is a no-op.
 Example
 For instance to only train the attention parameters from a Transformer:
-model = nn.Transformer()
-model.freeze()
-model.apply_to_modules(
-    lambda k, v: v.unfreeze() if k.endswith("attention") else None
-)
+
+  ```
+  model = nn.Transformer()
+  model.freeze()
+  model.apply_to_modules(
+      lambda k, v: v.unfreeze() if k.endswith("attention") else None
+  )
+  ```
 
 Parameters:
 
@@ -58,5 +34,3 @@ exist. Default: `False`.
 
 Returns:
 The module instance after freezing the parameters.
-
-** Contents

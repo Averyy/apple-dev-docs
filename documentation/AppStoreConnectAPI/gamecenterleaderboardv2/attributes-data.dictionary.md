@@ -1,7 +1,8 @@
 # GameCenterLeaderboardV2.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Game Center leaderboard v2 resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Game Center leaderboard v2 resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardV2.Attributes
 ```
 
@@ -41,14 +42,15 @@ object GameCenterLeaderboardV2.Attributes
 - `referenceName` (string)
 - `scoreRangeEnd` (number)
 - `scoreRangeStart` (number)
-- `scoreSortType` (string)
-- `submissionType` (string)
+- `scoreSortType` (string): **Allowed Values**: `ASC`, `DESC`
+- `submissionType` (string): **Allowed Values**: `BEST_SCORE`, `MOST_RECENT_SCORE`
 - `vendorIdentifier` (string)
-- `visibility` (string)
+- `visibility` (string): **Allowed Values**: `SHOW_FOR_ALL`, `HIDE_FOR_ALL`
 
 ## See Also
 
-- [object GameCenterLeaderboardV2.Relationships](gamecenterleaderboardv2/relationships-data.dictionary.md)
+### Dictionaries
+- [object GameCenterLeaderboardV2.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 

@@ -1,7 +1,8 @@
 # donations
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an events existing donations.
 
@@ -22,7 +23,8 @@ var donations: [Tips.Event<DonationInfo>.Donation] { get }
 
 ## See Also
 
-- [struct Donation](tips/event/donation.md)
+### Donations
+- [struct Donation](./donation.md)
   A repeatable user-defined action.
 
 

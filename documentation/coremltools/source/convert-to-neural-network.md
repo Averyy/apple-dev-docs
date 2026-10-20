@@ -6,21 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/convert-to-neural-ne
 
 # Convert Models to Neural Networks
 
-**
-
-- [.md](../_sources/source/convert-to-neural-network.md)
-- **
-
-.pdf
-
-**
-
-# Convert Models to Neural Networks
-
- Table of contents 
-
-# Convert Models to Neural Networks
-
 With versions of Core ML Tools older than 7.0, if you didn’t specify the model type, or your `minimum_deployment_target` was a version older than iOS15, macOS12, watchOS8, or tvOS15, the model was converted by default to a neural network.
 
 Note

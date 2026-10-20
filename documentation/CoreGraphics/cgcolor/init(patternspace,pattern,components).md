@@ -1,7 +1,8 @@
 # init(patternSpace:pattern:components:)
 
 **Framework**: Core Graphics  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a color using a list of intensity values (including alpha), a pattern color space, and a pattern.
 
@@ -10,7 +11,7 @@ Creates a color using a list of intensity values (including alpha), a pattern co
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,9 +21,13 @@ Creates a color using a list of intensity values (including alpha), a pattern co
 init?(patternSpace space: CGColorSpace, pattern: CGPattern, components: UnsafePointer<CGFloat>)
 ```
 
+```c
+extern CGColorRefCGColorCreateWithPattern(CGColorSpaceRef space, CGPatternRef pattern, const CGFloat *components);
+```
+
 #### Return Value
 
-A new color. In Objective-C, you’re responsible for releasing this object using [`CGColorRelease`](cgcolorrelease.md).
+A new color. In Objective-C, you’re responsible for releasing this object using [`CGColorRelease`](../cgcolorrelease.md).
 
 ## Parameters
 
@@ -32,21 +37,22 @@ A new color. In Objective-C, you’re responsible for releasing this object usin
 
 ## See Also
 
-- [func copy() -> CGColor?](cgcolor/copy.md)
+### Creating Colors
+- [func copy() -> CGColor?](./copy%28%29.md)
   Creates a copy of an existing color.
-- [func copy(alpha: CGFloat) -> CGColor?](cgcolor/copy(alpha:).md)
+- [func copy(alpha: CGFloat) -> CGColor?](./copy%28alpha%29.md)
   Creates a copy of an existing color, substituting a new alpha value.
-- [init(genericCMYKCyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFloat, alpha: CGFloat)](cgcolor/init(genericcmykcyan:magenta:yellow:black:alpha:).md)
+- [init(genericCMYKCyan: CGFloat, magenta: CGFloat, yellow: CGFloat, black: CGFloat, alpha: CGFloat)](./init%28genericcmykcyan,magenta,yellow,black,alpha%29.md)
   Creates a color in the Generic CMYK color space.
-- [init(gray: CGFloat, alpha: CGFloat)](cgcolor/init(gray:alpha:).md)
+- [init(gray: CGFloat, alpha: CGFloat)](./init%28gray,alpha%29.md)
   Creates a color in the Generic gray color space.
-- [init(genericGrayGamma2_2Gray: CGFloat, alpha: CGFloat)](cgcolor/init(genericgraygamma2_2gray:alpha:).md)
+- [init(genericGrayGamma2_2Gray: CGFloat, alpha: CGFloat)](./init%28genericgraygamma2_2gray,alpha%29.md)
   Creates a color in the Generic gray color space with a gamma ramp of 2.2.
-- [init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](cgcolor/init(red:green:blue:alpha:).md)
+- [init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28red,green,blue,alpha%29.md)
   Creates a color in the Generic RGB color space.
-- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](cgcolor/init(srgbred:green:blue:alpha:).md)
+- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](./init%28srgbred,green,blue,alpha%29.md)
   Creates a color in the sRGB color space.
-- [init?(colorSpace: CGColorSpace, components: UnsafePointer<CGFloat>)](cgcolor/init(colorspace:components:).md)
+- [init?(colorSpace: CGColorSpace, components: UnsafePointer<CGFloat>)](./init%28colorspace,components%29.md)
   Creates a color using a list of intensity values (including alpha) and an associated color space.
 
 

@@ -1,12 +1,13 @@
 # HV_MSR_NONE
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Model-Specific Register (MSR) no-access permission.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The Model-Specific Register (MSR) no-access permission.
 var HV_MSR_NONE: Int { get }
 ```
 
+```c
+HV_MSR_NONE
+```
+
 ## See Also
 
-- [var HV_MSR_READ: Int](hv_msr_read.md)
+### Permissions
+- [var HV_MSR_READ: Int](./hv_msr_read.md)
   The Model-Specific Register (MSR) read permission.
-- [var HV_MSR_WRITE: Int](hv_msr_write.md)
+- [var HV_MSR_WRITE: Int](./hv_msr_write.md)
   The Model-Specific Register (MSR) write permission.
 
 

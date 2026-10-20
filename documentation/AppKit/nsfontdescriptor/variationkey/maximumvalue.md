@@ -1,12 +1,13 @@
 # maximumValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum axis value as a number object.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ The maximum axis value as a number object.
 static let maximumValue: NSFontDescriptor.VariationKey
 ```
 
+```c
+extern NSFontDescriptorVariationKey NSFontVariationAxisMaximumValueKey;
+```
+
 #### Discussion
 
-The value of this key is an [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
+The value of this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object.
 
 ## See Also
 
-- [static let identifier: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/identifier.md)
+### Variation Keys
+- [static let identifier: NSFontDescriptor.VariationKey](./identifier.md)
   The axis identifier value as a number object.
-- [static let minimumValue: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/minimumvalue.md)
+- [static let minimumValue: NSFontDescriptor.VariationKey](./minimumvalue.md)
   The minimum axis value as a number object.
-- [static let defaultValue: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/defaultvalue.md)
+- [static let defaultValue: NSFontDescriptor.VariationKey](./defaultvalue.md)
   The default axis value as a number object.
-- [static let name: NSFontDescriptor.VariationKey](nsfontdescriptor/variationkey/name.md)
+- [static let name: NSFontDescriptor.VariationKey](./name.md)
   The localized variation axis name.
 
 

@@ -1,7 +1,8 @@
 # willMove(to:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the dynamic behavior is added to, or removed from, a dynamic animator.
 
@@ -9,13 +10,17 @@ Called when the dynamic behavior is added to, or removed from, a dynamic animato
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func willMove(to dynamicAnimator: UIDynamicAnimator?)
+```
+
+```objc
+- (void) willMoveToAnimator:(UIDynamicAnimator *) dynamicAnimator;
 ```
 
 #### Discussion
@@ -28,7 +33,8 @@ Use this method as the override point for responding to changes in the UIKit Dyn
 
 ## See Also
 
-- [var dynamicAnimator: UIDynamicAnimator?](uidynamicbehavior/dynamicanimator.md)
+### Responding to changes in the behavior tree
+- [var dynamicAnimator: UIDynamicAnimator?](./dynamicanimator.md)
   The dynamic animator that the dynamic behavior is associated with.
 
 

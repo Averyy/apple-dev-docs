@@ -1,7 +1,8 @@
 # InlineArray.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of the array’s elements.
 

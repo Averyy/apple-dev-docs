@@ -1,7 +1,8 @@
 # requestOwnership(timeout:_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests ownership of the entity.
 
@@ -11,7 +12,7 @@ Requests ownership of the entity.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -31,7 +32,8 @@ Requesting ownership isn’t guaranteed to succeed.
 
 ## See Also
 
-- [var isOwner: Bool](hassynchronization/isowner.md)
+### Managing ownership
+- [var isOwner: Bool](./isowner.md)
   A Boolean that indicates whether the calling process owns the entity.
 
 

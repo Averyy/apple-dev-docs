@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates generated content from another value.
 
@@ -17,6 +18,12 @@ Creates generated content from another value.
 
 ```swift
 init(_ content: GeneratedContent) throws
+```
+
+**Other overloads**:
+
+```swift
+init(_ value: some ConvertibleToGeneratedContent)
 ```
 
 #### Discussion

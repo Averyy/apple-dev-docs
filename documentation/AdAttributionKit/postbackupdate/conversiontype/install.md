@@ -1,7 +1,8 @@
 # PostbackUpdate.ConversionType.install
 
 **Framework**: AdAttributionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The value that represents the installation of an app after an ad interaction.
 

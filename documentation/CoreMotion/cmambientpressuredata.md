@@ -1,7 +1,8 @@
 # CMAmbientPressureData
 
 **Framework**: Core Motion  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A measurement of the ambient pressure and temperature.
 
@@ -19,34 +20,39 @@ A measurement of the ambient pressure and temperature.
 class CMAmbientPressureData
 ```
 
+```objc
+@interface CMAmbientPressureData : CMLogItem
+```
+
 ## Topics
 
 ### Accessing the data
-- [var pressure: Measurement<UnitPressure>](cmambientpressuredata/pressure.md)
+- [var pressure: Measurement<UnitPressure>](./cmambientpressuredata/pressure.md)
   The ambient pressure.
-- [var temperature: Measurement<UnitTemperature>](cmambientpressuredata/temperature.md)
+- [var temperature: Measurement<UnitTemperature>](./cmambientpressuredata/temperature.md)
   The temperature.
 
 ## Relationships
 
 ### Inherits From
-- [CMLogItem](cmlogitem.md)
+- [CMLogItem](./cmlogitem.md)
 ### Inherited By
-- [CMRecordedPressureData](cmrecordedpressuredata.md)
+- [CMRecordedPressureData](./cmrecordedpressuredata.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class CMRecordedPressureData](cmrecordedpressuredata.md)
+### Ambient pressure
+- [class CMRecordedPressureData](./cmrecordedpressuredata.md)
   A recorded measurement of pressure data.
 
 

@@ -1,7 +1,8 @@
 # instanceDelay
 
 **Framework**: Core Animation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the delay, in seconds, between replicated copies. Animatable.
 
@@ -17,6 +18,10 @@ Specifies the delay, in seconds, between replicated copies. Animatable.
 
 ```swift
 var instanceDelay: CFTimeInterval { get set }
+```
+
+```objc
+@property CFTimeInterval instanceDelay;
 ```
 
 #### Discussion
@@ -54,13 +59,14 @@ replicatorLayer.instanceTransform = CATransform3DMakeRotation(angle, 0, 0, 1)
 
 The following illustration shows the result of the above code:
 
-![Activity monitor created with a replicator layer.](/images/com.apple.quartzcore/media-2776911@2x.png)
+![Activity monitor created with a replicator layer.](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2776911@2x.png)
 
 ## See Also
 
-- [var instanceCount: Int](careplicatorlayer/instancecount.md)
+### Setting Instance Display Properties
+- [var instanceCount: Int](./instancecount.md)
   The number of copies to create, including the source layers.
-- [var instanceTransform: CATransform3D](careplicatorlayer/instancetransform.md)
+- [var instanceTransform: CATransform3D](./instancetransform.md)
   The transform matrix applied to the previous instance to produce the current instance. Animatable.
 
 

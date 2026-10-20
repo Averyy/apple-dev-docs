@@ -2,6 +2,7 @@
 
 **Framework**: SwiftData  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 **Availability**:
@@ -19,6 +20,11 @@
 ```swift
 var isRelationship: Bool { get }
 ```
+
+## Default Implementations
+
+### SchemaProperty Implementations
+- [var isRelationship: Bool](./isrelationship-ksdo.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # ImagePresentationEvents.TransitionCompleted
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transition between two viewing modes has completed for an image presentation component.
 
@@ -21,21 +22,22 @@ Use the `TransitionCompleted` event as an opportunity to display or relocate ove
 ## Topics
 
 ### Instance Properties
-- [let currentViewingMode: ImagePresentationComponent.ViewingMode](imagepresentationevents/transitioncompleted/currentviewingmode.md)
+- [let currentViewingMode: ImagePresentationComponent.ViewingMode](./transitioncompleted/currentviewingmode.md)
   The viewing mode the image presentation component transitioned to.
-- [let previousViewingMode: ImagePresentationComponent.ViewingMode](imagepresentationevents/transitioncompleted/previousviewingmode.md)
+- [let previousViewingMode: ImagePresentationComponent.ViewingMode](./transitioncompleted/previousviewingmode.md)
   The viewing mode the image presentation component transitioned from.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ImagePresentationEvents.TransitionStarted](imagepresentationevents/transitionstarted.md)
+### Viewing mode transitions
+- [ImagePresentationEvents.TransitionStarted](./transitionstarted.md)
   A transition between two viewing modes has started for an image presentation component.
 
 

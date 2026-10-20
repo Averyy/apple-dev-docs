@@ -1,7 +1,8 @@
 # descriptors
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the characteristic’s descriptors.
 
@@ -20,21 +21,26 @@ An array of the characteristic’s descriptors.
 var descriptors: [CBDescriptor]? { get set }
 ```
 
+```objc
+@property (retain, readwrite, nullable) NSArray<CBDescriptor *> * descriptors;
+```
+
 #### Discussion
 
-The value of this property is an array of [`CBDescriptor`](cbdescriptor.md) objects that provide more information about a characteristic’s value. For example, they may describe the value in human-readable form and describe how to format the value for presentation purposes. For more information about characteristic descriptors, see [`CBDescriptor`](cbdescriptor.md).
+The value of this property is an array of [`CBDescriptor`](../cbdescriptor.md) objects that provide more information about a characteristic’s value. For example, they may describe the value in human-readable form and describe how to format the value for presentation purposes. For more information about characteristic descriptors, see [`CBDescriptor`](../cbdescriptor.md).
 
 ## See Also
 
-- [var value: Data?](cbmutablecharacteristic/value.md)
+### Managing a Mutable Characteristic
+- [var value: Data?](./value.md)
   The value of the characteristic.
-- [var properties: CBCharacteristicProperties](cbmutablecharacteristic/properties.md)
+- [var properties: CBCharacteristicProperties](./properties.md)
   The properties of the characteristic.
-- [var permissions: CBAttributePermissions](cbmutablecharacteristic/permissions.md)
+- [var permissions: CBAttributePermissions](./permissions.md)
   The permissions of the characteristic value.
-- [struct CBAttributePermissions](cbattributepermissions.md)
+- [struct CBAttributePermissions](../cbattributepermissions.md)
   Values that represent the read, write, and encryption permissions for a characteristic’s value.
-- [var subscribedCentrals: [CBCentral]?](cbmutablecharacteristic/subscribedcentrals.md)
+- [var subscribedCentrals: [CBCentral]?](./subscribedcentrals.md)
   A list of centrals that are currently subscribed to the characteristic’s value.
 
 

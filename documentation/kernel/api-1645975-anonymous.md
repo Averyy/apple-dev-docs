@@ -1,7 +1,8 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - DriverKit 24.4+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -18,8 +19,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOReportCopyChannelData](1645975-anonymous/kioreportcopychanneldata.md)
-- [kIOReportTraceChannelData](1645975-anonymous/kioreporttracechanneldata.md)
+- [kIOReportCopyChannelData](./api-1645975-anonymous/kioreportcopychanneldata.md)
+- [kIOReportTraceChannelData](./api-1645975-anonymous/kioreporttracechanneldata.md)
 
 
 ---

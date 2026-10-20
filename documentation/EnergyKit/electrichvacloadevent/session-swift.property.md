@@ -1,14 +1,15 @@
 # session
 
 **Framework**: EnergyKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session information.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 
@@ -22,11 +23,12 @@ An HVAC system between its cooling or heating cycles can be idling and load even
 
 ## See Also
 
-- [let id: UUID](electrichvacloadevent/id.md)
+### Getting load event information
+- [let id: UUID](./id.md)
   The unique identifier of the electrical load event.
-- [let timestamp: Date](electrichvacloadevent/timestamp.md)
+- [let timestamp: Date](./timestamp.md)
   The timestamp for when the event occurred.
-- [ElectricHVACLoadEvent.Session](electrichvacloadevent/session-swift.struct.md)
+- [ElectricHVACLoadEvent.Session](./session-swift.struct.md)
   A session that tracks the event.
 
 

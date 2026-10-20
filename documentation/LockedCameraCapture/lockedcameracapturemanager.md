@@ -1,7 +1,8 @@
 # LockedCameraCaptureManager
 
 **Framework**: LockedCameraCapture  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides handling of captured content and transitioning to the extension’s containing app.
 
@@ -18,33 +19,34 @@ final class LockedCameraCaptureManager
 ## Topics
 
 ### Instance Properties
-- [var sessionContentURLs: [URL]](lockedcameracapturemanager/sessioncontenturls.md)
+- [var sessionContentURLs: [URL]](./lockedcameracapturemanager/sessioncontenturls.md)
   An array of URLs that each point to a directory containing captured content.
-- [var sessionContentUpdates: some AsyncSequence<LockedCameraCaptureManager.SessionContentUpdate, Never>](lockedcameracapturemanager/sessioncontentupdates.md)
+- [var sessionContentUpdates: some AsyncSequence<LockedCameraCaptureManager.SessionContentUpdate, Never>](./lockedcameracapturemanager/sessioncontentupdates.md)
   An `AsyncSequence` to process captured content from your capture extension.
 ### Instance Methods
-- [func beginDelayingAppearance()](lockedcameracapturemanager/begindelayingappearance.md)
+- [func beginDelayingAppearance()](./lockedcameracapturemanager/begindelayingappearance%28%29.md)
   Tells the system that the application wants to delay the application launch during a transition between the extension and the application
-- [func endDelayingAppearance()](lockedcameracapturemanager/enddelayingappearance.md)
+- [func endDelayingAppearance()](./lockedcameracapturemanager/enddelayingappearance%28%29.md)
   Tells the system that the application is ready to appear after delaying the appearance during a transition between the extension and the application
-- [func invalidateSessionContent(at: URL) async throws](lockedcameracapturemanager/invalidatesessioncontent(at:).md)
+- [func invalidateSessionContent(at: URL) async throws](./lockedcameracapturemanager/invalidatesessioncontent%28at%29.md)
   Tells the system that the app no longer needs the directory at the URL and it can be deleted.
 ### Type Properties
-- [static let shared: LockedCameraCaptureManager](lockedcameracapturemanager/shared.md)
+- [static let shared: LockedCameraCaptureManager](./lockedcameracapturemanager/shared.md)
   The shared instance of the manager.
 ### Enumerations
-- [LockedCameraCaptureManager.SessionContentUpdate](lockedcameracapturemanager/sessioncontentupdate.md)
-  URLs provided by the [`sessionContentUpdates`](lockedcameracapturemanager/sessioncontentupdates.md) `AsyncSequence`.
+- [LockedCameraCaptureManager.SessionContentUpdate](./lockedcameracapturemanager/sessioncontentupdate.md)
+  URLs provided by the [`sessionContentUpdates`](./lockedcameracapturemanager/sessioncontentupdates.md) `AsyncSequence`.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let NSUserActivityTypeLockedCameraCapture: String](nsuseractivitytypelockedcameracapture.md)
+### App integration
+- [let NSUserActivityTypeLockedCameraCapture: String](./nsuseractivitytypelockedcameracapture.md)
   A type to use when opening your app from the capture extension.
 
 

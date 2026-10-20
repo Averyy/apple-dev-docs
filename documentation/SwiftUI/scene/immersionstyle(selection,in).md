@@ -1,7 +1,8 @@
 # immersionStyle(selection:in:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the style for an immersive space.
 
@@ -22,7 +23,7 @@ A scene that uses one of the specified `styles`.
 
 #### Discussion
 
-Use this modifier to configure the appearance and behavior of an [`ImmersiveSpace`](immersivespace.md). Specify a style that conforms to the [`ImmersionStyle`](immersionstyle.md) protocol, like [`mixed`](immersionstyle/mixed.md) or [`full`](immersionstyle/full.md). For example, the following app defines a solar system scene that uses full immersion:
+Use this modifier to configure the appearance and behavior of an [`ImmersiveSpace`](../immersivespace.md). Specify a style that conforms to the [`ImmersionStyle`](../immersionstyle.md) protocol, like [`mixed`](../immersionstyle/mixed.md) or [`full`](../immersionstyle/full.md). For example, the following app defines a solar system scene that uses full immersion:
 
 ```swift
 @main
@@ -40,22 +41,23 @@ struct SolarSystemApp: App {
 
 ## Parameters
 
-- `selection`: A [`Binding`](binding.md) to the style that the space uses. You can change this value to change the scene’s style even after you present the immersive space. Even though you provide a binding, the value changes only if you change it.
+- `selection`: A [`Binding`](../binding.md) to the style that the space uses. You can change this value to change the scene’s style even after you present the immersive space. Even though you provide a binding, the value changes only if you change it.
 - `styles`: The list of styles that the `selection` input can have. Include any styles that you plan to use during the lifetime of the scene.
 
 ## See Also
 
-- [struct ImmersiveSpace](immersivespace.md)
+### Creating an immersive space
+- [struct ImmersiveSpace](../immersivespace.md)
   A scene that presents its content in an unbounded space.
-- [struct ImmersiveSpaceContentBuilder](immersivespacecontentbuilder.md)
+- [struct ImmersiveSpaceContentBuilder](../immersivespacecontentbuilder.md)
   A result builder for composing a collection of immersive space elements.
-- [protocol ImmersionStyle](immersionstyle.md)
+- [protocol ImmersionStyle](../immersionstyle.md)
   The styles that an immersive space can have.
-- [var immersiveSpaceDisplacement: Pose3D](environmentvalues/immersivespacedisplacement.md)
+- [var immersiveSpaceDisplacement: Pose3D](../environmentvalues/immersivespacedisplacement.md)
   The displacement that the system applies to the immersive space when moving the space away from its default position, in meters.
-- [struct ImmersiveEnvironmentBehavior](immersiveenvironmentbehavior.md)
+- [struct ImmersiveEnvironmentBehavior](../immersiveenvironmentbehavior.md)
   The behavior of the system-provided immersive environments when a scene is opened by your app.
-- [struct ProgressiveImmersionAspectRatio](progressiveimmersionaspectratio.md)
+- [struct ProgressiveImmersionAspectRatio](../progressiveimmersionaspectratio.md)
   The shape of the portal that a progressive immersion style opens.
 
 

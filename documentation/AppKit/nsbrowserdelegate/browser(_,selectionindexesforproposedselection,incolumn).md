@@ -1,7 +1,8 @@
 # browser(_:selectionIndexesForProposedSelection:inColumn:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for a set of indexes to select when the user changes the selection in the browser with the keyboard or mouse.
 
@@ -13,6 +14,10 @@ Asks the delegate for a set of indexes to select when the user changes the selec
 ```swift
 @MainActor
 optional func browser(_ browser: NSBrowser, selectionIndexesForProposedSelection proposedSelectionIndexes: IndexSet, inColumn column: Int) -> IndexSet
+```
+
+```objc
+- (NSIndexSet *) browser:(NSBrowser *) browser selectionIndexesForProposedSelection:(NSIndexSet *) proposedSelectionIndexes inColumn:(NSInteger) column;
 ```
 
 #### Return Value
@@ -31,9 +36,10 @@ This method may be called multiple times, with one new index added to the previo
 
 ## See Also
 
-- [func browser(NSBrowser, selectCellWith: String, inColumn: Int) -> Bool](nsbrowserdelegate/browser(_:selectcellwith:incolumn:).md)
+### Managing Selection
+- [func browser(NSBrowser, selectCellWith: String, inColumn: Int) -> Bool](./browser%28_,selectcellwith,incolumn%29.md)
   Asks the delegate to select the cell with the given title in the specified column.
-- [func browser(NSBrowser, selectRow: Int, inColumn: Int) -> Bool](nsbrowserdelegate/browser(_:selectrow:incolumn:).md)
+- [func browser(NSBrowser, selectRow: Int, inColumn: Int) -> Bool](./browser%28_,selectrow,incolumn%29.md)
   Asks the delegate to select the cell at the specified row and column location.
 
 

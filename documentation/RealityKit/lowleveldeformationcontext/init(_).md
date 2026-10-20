@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a context targeting the specified Metal device.
 
@@ -19,7 +20,7 @@ init(_ device: any MTLDevice) throws
 
 #### Discussion
 
-> **Note**: If the context cannot be initialized for the given device.
+> **Throws**: If the context cannot be initialized for the given device.
 
 ## Parameters
 

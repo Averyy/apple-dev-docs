@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ip6_opt_router {
     ...
 };
@@ -17,9 +17,9 @@ struct ip6_opt_router {
 ## Topics
 
 ### Instance Properties
-- [ip6or_len](ip6_opt_router/3754517-ip6or_len.md)
-- [ip6or_type](ip6_opt_router/3754518-ip6or_type.md)
-- [ip6or_value](ip6_opt_router/3754519-ip6or_value.md)
+- [ip6or_len](./ip6_opt_router/api-3754517-ip6or_len.md)
+- [ip6or_type](./ip6_opt_router/api-3754518-ip6or_type.md)
+- [ip6or_value](./ip6_opt_router/api-3754519-ip6or_value.md)
 
 
 ---

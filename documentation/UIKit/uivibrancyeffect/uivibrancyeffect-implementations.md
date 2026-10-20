@@ -1,11 +1,12 @@
 # UIVibrancyEffect Implementations
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init(forBlurEffect: UIBlurEffect, style: UIVibrancyEffectStyle)](uivibrancyeffect/init(forblureffect:style:).md)
+- [init(forBlurEffect: UIBlurEffect, style: UIVibrancyEffectStyle)](./init%28forblureffect,style%29.md)
   Creates a vibrancy effect with the specified blur and style values.
 
 

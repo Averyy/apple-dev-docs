@@ -1,7 +1,8 @@
 # TokenResponse
 
 **Framework**: Apple Maps Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An object that contains an access token and an expiration time in seconds.
 
@@ -10,7 +11,7 @@ An object that contains an access token and an expiration time in seconds.
 
 ## Declaration
 
-```swift
+```
 object TokenResponse
 ```
 

@@ -1,7 +1,8 @@
 # SHSignature
 
 **Framework**: ShazamKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains the opaque data and other information for a signature.
 
@@ -20,55 +21,60 @@ An object that contains the opaque data and other information for a signature.
 class SHSignature
 ```
 
+```objc
+@interface SHSignature : NSObject
+```
+
 #### Overview
 
 You can save signatures to files and share them with others. Use saved signatures to populate a custom catalog.
 
-Check whether your captured query signature is long enough to search for a match by comparing [`duration`](shsignature/duration.md) to the [`minimumQuerySignatureDuration`](shcatalog/minimumquerysignatureduration.md) and [`maximumQuerySignatureDuration`](shcatalog/maximumquerysignatureduration.md) of a catalog.
+Check whether your captured query signature is long enough to search for a match by comparing [`duration`](./shsignature/duration.md) to the [`minimumQuerySignatureDuration`](./shcatalog/minimumquerysignatureduration.md) and [`maximumQuerySignatureDuration`](./shcatalog/maximumquerysignatureduration.md) of a catalog.
 
-For signatures longer than [`maximumQuerySignatureDuration`](shcatalog/maximumquerysignatureduration.md), use [`slices(from:duration:stride:)`](shsignature/slices(from:duration:stride:).md) to create multiple segments that meet the duration requirement.
+For signatures longer than [`maximumQuerySignatureDuration`](./shcatalog/maximumquerysignatureduration.md), use [`slices(from:duration:stride:)`](./shsignature/slices%28from,duration,stride%29.md) to create multiple segments that meet the duration requirement.
 
 ## Topics
 
 ### Creating a signature object
-- [init(dataRepresentation: Data) throws](shsignature/init(datarepresentation:).md)
+- [init(dataRepresentation: Data) throws](./shsignature/init%28datarepresentation%29.md)
   Creates a signature object from raw data.
 ### Reading signature information
-- [var dataRepresentation: Data](shsignature/datarepresentation.md)
+- [var dataRepresentation: Data](./shsignature/datarepresentation.md)
   The raw data for the signature.
-- [var duration: TimeInterval](shsignature/duration.md)
+- [var duration: TimeInterval](./shsignature/duration.md)
   The duration of the audio you use to generate the signature.
 ### Slicing signature segments
-- [func slices(from: TimeInterval, duration: TimeInterval, stride: TimeInterval?) throws -> SHSignature.Slices](shsignature/slices(from:duration:stride:).md)
+- [func slices(from: TimeInterval, duration: TimeInterval, stride: TimeInterval?) throws -> SHSignature.Slices](./shsignature/slices%28from,duration,stride%29.md)
   Returns a sequence of signatures of the specified duration from a starting value, stepping by the stride.
-- [SHSignature.Slices](shsignature/slices.md)
+- [SHSignature.Slices](./shsignature/slices.md)
   A sequence of signature segments.
 ### Getting the content type
-- [static var shazamSignature: UTType](../uniformtypeidentifiers/uttype-swift.struct/shazamsignature.md)
+- [static var shazamSignature: UTType](../UniformTypeIdentifiers/uttype-swift.struct/shazamsignature.md)
   A type that represents a signature.
 ### Initializers
-- [init?(coder: NSCoder)](shsignature/init(coder:).md)
+- [init?(coder: NSCoder)](./shsignature/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class SHSignatureGenerator](shsignaturegenerator.md)
+### Create a signature from audio
+- [class SHSignatureGenerator](./shsignaturegenerator.md)
   An object for converting audio data into a signature.
 
 

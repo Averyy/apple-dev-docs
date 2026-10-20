@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared session instance.
 
@@ -16,7 +17,7 @@ static let shared: TelephonyMessagingSession
 
 ## Mentions
 
-- [Creating a carrier messaging app](creating-a-carrier-messaging-app.md)
+- [Creating a carrier messaging app](../creating-a-carrier-messaging-app.md)
 
 
 ---

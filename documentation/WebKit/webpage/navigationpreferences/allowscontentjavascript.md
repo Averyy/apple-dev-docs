@@ -1,7 +1,8 @@
 # allowsContentJavaScript
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether JavaScript from web content is allowed to run.
 

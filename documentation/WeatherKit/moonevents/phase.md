@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The moon phase.
 
@@ -22,9 +23,10 @@ var phase: MoonPhase
 
 ## See Also
 
-- [var moonrise: Date?](moonevents/moonrise.md)
+### Getting the moon events
+- [var moonrise: Date?](./moonrise.md)
   The time of moonrise.
-- [var moonset: Date?](moonevents/moonset.md)
+- [var moonset: Date?](./moonset.md)
   The time of moonset.
 
 

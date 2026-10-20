@@ -1,7 +1,8 @@
 # handler
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional handler that performs custom evaluation of matching notifications.
 
@@ -11,9 +12,14 @@ An optional handler that performs custom evaluation of matching notifications.
 var handler: XCTNSNotificationExpectation.Handler? { get set }
 ```
 
+```objc
+@property (copy, nullable) XCNotificationExpectationHandler handler;
+```
+
 ## See Also
 
-- [XCTNSNotificationExpectation.Handler](xctnsnotificationexpectation/handler-swift.typealias.md)
+### Custom Notification Evaluation
+- [XCTNSNotificationExpectation.Handler](./handler-swift.typealias.md)
   A custom handler to be called when a matching notification is received.
 
 

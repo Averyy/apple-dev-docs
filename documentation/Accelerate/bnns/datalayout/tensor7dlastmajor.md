@@ -1,7 +1,8 @@
 # BNNS.DataLayout.tensor7DLastMajor
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that represents a 7D last-major tensor.
 
@@ -11,7 +12,7 @@ A constant that represents a 7D last-major tensor.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -22,35 +23,36 @@ case tensor7DLastMajor
 
 ## See Also
 
-- [BNNS.DataLayout.vector](bnns/datalayout/vector.md)
+### Data Layout Constants
+- [BNNS.DataLayout.vector](./vector.md)
   A constant that represents a 1D vector.
-- [BNNS.DataLayout.matrixColumnMajor](bnns/datalayout/matrixcolumnmajor.md)
+- [BNNS.DataLayout.matrixColumnMajor](./matrixcolumnmajor.md)
   A constant that represents a 2D column-major matrix.
-- [BNNS.DataLayout.matrixRowMajor](bnns/datalayout/matrixrowmajor.md)
+- [BNNS.DataLayout.matrixRowMajor](./matrixrowmajor.md)
   A constant that represents a 2D row-major matrix.
-- [BNNS.DataLayout.matrixFirstMajor](bnns/datalayout/matrixfirstmajor.md)
+- [BNNS.DataLayout.matrixFirstMajor](./matrixfirstmajor.md)
   A constant that represents a 2D first-major matrix.
-- [BNNS.DataLayout.matrixLastMajor](bnns/datalayout/matrixlastmajor.md)
+- [BNNS.DataLayout.matrixLastMajor](./matrixlastmajor.md)
   A constant that represents a 2D last-major matrix.
-- [BNNS.DataLayout.imageCHW](bnns/datalayout/imagechw.md)
+- [BNNS.DataLayout.imageCHW](./imagechw.md)
   A constant that represents a 3D image stack.
-- [BNNS.DataLayout.tensor3DFirstMajor](bnns/datalayout/tensor3dfirstmajor.md)
+- [BNNS.DataLayout.tensor3DFirstMajor](./tensor3dfirstmajor.md)
   A constant that represents a 3D first-major tensor.
-- [BNNS.DataLayout.tensor3DLastMajor](bnns/datalayout/tensor3dlastmajor.md)
+- [BNNS.DataLayout.tensor3DLastMajor](./tensor3dlastmajor.md)
   A constant that represents a 3D last-major tensor.
-- [BNNS.DataLayout.tensor3DNSE](bnns/datalayout/tensor3dnse.md)
+- [BNNS.DataLayout.tensor3DNSE](./tensor3dnse.md)
   A constant that represents a 3D tensor with size ordered by embedding dimension, sequence length, batch size.
-- [BNNS.DataLayout.tensor3DSNE](bnns/datalayout/tensor3dsne.md)
+- [BNNS.DataLayout.tensor3DSNE](./tensor3dsne.md)
   A constant that represents a 3D tensor with size ordered by embedding dimension, batch size, sequence length.
-- [BNNS.DataLayout.convolutionWeightsOIHW](bnns/datalayout/convolutionweightsoihw.md)
+- [BNNS.DataLayout.convolutionWeightsOIHW](./convolutionweightsoihw.md)
   A constant that represents a 4D array of convolution weights.
-- [BNNS.DataLayout.tensor4DFirstMajor](bnns/datalayout/tensor4dfirstmajor.md)
+- [BNNS.DataLayout.tensor4DFirstMajor](./tensor4dfirstmajor.md)
   A constant that represents a 4D first-major tensor.
-- [BNNS.DataLayout.tensor4DLastMajor](bnns/datalayout/tensor4dlastmajor.md)
+- [BNNS.DataLayout.tensor4DLastMajor](./tensor4dlastmajor.md)
   A constant that represents a 4D last-major tensor.
-- [BNNS.DataLayout.tensor5DFirstMajor](bnns/datalayout/tensor5dfirstmajor.md)
+- [BNNS.DataLayout.tensor5DFirstMajor](./tensor5dfirstmajor.md)
   A constant that represents a 5D first-major tensor.
-- [BNNS.DataLayout.tensor5DLastMajor](bnns/datalayout/tensor5dlastmajor.md)
+- [BNNS.DataLayout.tensor5DLastMajor](./tensor5dlastmajor.md)
   A constant that represents a 5D last-major tensor.
 
 

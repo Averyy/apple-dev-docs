@@ -1,16 +1,17 @@
 # UITableViewCell.StateMask
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants used to determine the new state of a cell as it transitions between states.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,38 +19,43 @@ Constants used to determine the new state of a cell as it transitions between st
 struct StateMask
 ```
 
+```c
+enum UITableViewCellStateMask : NSUInteger;
+```
+
 #### Overview
 
-The methods that use these constants are [`didTransition(to:)`](uitableviewcell/didtransition(to:).md) and [`willTransition(to:)`](uitableviewcell/willtransition(to:).md).
+The methods that use these constants are [`didTransition(to:)`](./didtransition%28to%29.md) and [`willTransition(to:)`](./willtransition%28to%29.md).
 
 ## Topics
 
 ### Constants
-- [static var showingEditControl: UITableViewCell.StateMask](uitableviewcell/statemask/showingeditcontrol.md)
+- [static var showingEditControl: UITableViewCell.StateMask](./statemask/showingeditcontrol.md)
   The state of a table view cell when the table view is in editing mode.
-- [static var showingDeleteConfirmation: UITableViewCell.StateMask](uitableviewcell/statemask/showingdeleteconfirmation.md)
+- [static var showingDeleteConfirmation: UITableViewCell.StateMask](./statemask/showingdeleteconfirmation.md)
   The state of a table view cell that shows a button requesting confirmation of a delete gesture.
 ### Initializers
-- [init(rawValue: UInt)](uitableviewcell/statemask/init(rawvalue:).md)
+- [init(rawValue: UInt)](./statemask/init%28rawvalue%29.md)
   Creates a state mask with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [func willTransition(to: UITableViewCell.StateMask)](uitableviewcell/willtransition(to:).md)
+### Adjusting to state transitions
+- [func willTransition(to: UITableViewCell.StateMask)](./willtransition%28to%29.md)
   Notifies the cell that it’s about to transition to a new cell state.
-- [func didTransition(to: UITableViewCell.StateMask)](uitableviewcell/didtransition(to:).md)
+- [func didTransition(to: UITableViewCell.StateMask)](./didtransition%28to%29.md)
   Notifies the cell that it transitioned to a new cell state.
 
 

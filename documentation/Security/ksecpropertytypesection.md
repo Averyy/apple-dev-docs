@@ -1,7 +1,8 @@
 # kSecPropertyTypeSection
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a string describing the name of a field in the certificate (`CFSTR("Subject Name")`, for example).
 
@@ -12,6 +13,10 @@ A key whose value is a string describing the name of a field in the certificate 
 
 ```swift
 let kSecPropertyTypeSection: CFString
+```
+
+```c
+extern CFStringRef const kSecPropertyTypeSection;
 ```
 
 

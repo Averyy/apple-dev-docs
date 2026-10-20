@@ -1,7 +1,8 @@
 # setPoliciesDisclosed(_:)
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies whether the trust policy settings subview is disclosed.
 
@@ -14,25 +15,30 @@ Specifies whether the trust policy settings subview is disclosed.
 func setPoliciesDisclosed(_ disclosed: Bool)
 ```
 
+```objc
+- (void) setPoliciesDisclosed:(BOOL) disclosed;
+```
+
 #### Discussion
 
 The trust policy settings can be shown or hidden depending on whether the user clicks the disclosure triangle. This method sets the state of that disclosure triangle and the visibility of the corresponding view.
 
 ## Parameters
 
-- `disclosed`: Pass [`true`](https://developer.apple.com/documentation/swift/true) to display the certificate details, or [`false`](https://developer.apple.com/documentation/swift/false) to hide them.
+- `disclosed`: Pass [`true`](../../Swift/true.md) to display the certificate details, or [`false`](../../Swift/false.md) to hide them.
 
 ## See Also
 
-- [func setDetailsDisclosed(Bool)](sfcertificateview/setdetailsdisclosed(_:).md)
+### Customizing the Appearance and Behavior of the View
+- [func setDetailsDisclosed(Bool)](./setdetailsdisclosed%28_%29.md)
   Sets whether the certificate details subview is disclosed.
-- [func setDisplayDetails(Bool)](sfcertificateview/setdisplaydetails(_:).md)
+- [func setDisplayDetails(Bool)](./setdisplaydetails%28_%29.md)
   Specifies whether the user can see the certificate details.
-- [func setDisplayTrust(Bool)](sfcertificateview/setdisplaytrust(_:).md)
+- [func setDisplayTrust(Bool)](./setdisplaytrust%28_%29.md)
   Specifies whether the user can see the certificate’s trust settings.
-- [func setEditableTrust(Bool)](sfcertificateview/seteditabletrust(_:).md)
+- [func setEditableTrust(Bool)](./seteditabletrust%28_%29.md)
   Specifies whether the user can edit the certificate’s trust settings.
-- [func setPolicies(Any!)](sfcertificateview/setpolicies(_:).md)
+- [func setPolicies(Any!)](./setpolicies%28_%29.md)
   Specifies the policies to use when evaluating this certificate’s status.
 
 

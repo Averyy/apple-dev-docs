@@ -1,7 +1,8 @@
 # parseStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parse strategy that this format style uses.
 
@@ -22,7 +23,8 @@ var parseStrategy: Decimal.ParseStrategy<Decimal.FormatStyle> { get }
 
 ## See Also
 
-- [Decimal.ParseStrategy](decimal/parsestrategy.md)
+### Parsing decimals
+- [Decimal.ParseStrategy](../parsestrategy.md)
   A parse strategy for creating decimal values from formatted strings.
 
 

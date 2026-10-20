@@ -1,7 +1,8 @@
 # countryCode
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An ISO country code.
 
@@ -19,13 +20,26 @@ An ISO country code.
 var countryCode: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * countryCode;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * countryCode;
+```
+
 #### Discussion
 
 ISO is the default country code for phone numbers. This is determined by the device’s SIM card or the operating system’s configured language.
 
 ## See Also
 
-- [var sortOrder: CNContactSortOrder](cncontactsuserdefaults/sortorder.md)
+### Getting the Default Values
+- [var sortOrder: CNContactSortOrder](./sortorder.md)
   Default sorting order by name.
 
 

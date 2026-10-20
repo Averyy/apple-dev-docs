@@ -1,7 +1,8 @@
 # init(for:contentType:)
 
 **Framework**: Core Transferable  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transfer representation for a given type and type identifier.
 
@@ -31,7 +32,8 @@ This initializer uses JSON for encoding and decoding.
 
 ## See Also
 
-- [init(for: Item.Type, contentType: UTType, encoder: Encoder, decoder: Decoder)](codablerepresentation/init(for:contenttype:encoder:decoder:).md)
+### Creating a transfer representation
+- [init(for: Item.Type, contentType: UTType, encoder: Encoder, decoder: Decoder)](./init%28for,contenttype,encoder,decoder%29.md)
   Creates a transfer representation for a given type with the encoder and decoder you supply.
 
 

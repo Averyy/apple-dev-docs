@@ -1,7 +1,8 @@
 # init(includeSchemaInPrompt:reasoningLevel:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates options that control how the model is prompted.
 

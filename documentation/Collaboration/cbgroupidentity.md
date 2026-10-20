@@ -1,7 +1,8 @@
 # CBGroupIdentity
 
 **Framework**: Collaboration  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object of the `CBGroupIdentity` class represents a group identity and is used for viewing the attributes of group identities from an identity authority. The principal attributes of a `CBGroupIdentity` object are a POSIX group identifier (GID) and a list of members.
 
@@ -14,30 +15,34 @@ An object of the `CBGroupIdentity` class represents a group identity and is used
 class CBGroupIdentity
 ```
 
+```objc
+@interface CBGroupIdentity : CBIdentity
+```
+
 ## Topics
 
 ### Finding Group Identities
-- [init?(posixGID: gid_t, authority: CBIdentityAuthority)](cbgroupidentity/init(posixgid:authority:).md)
+- [init?(posixGID: gid_t, authority: CBIdentityAuthority)](./cbgroupidentity/init%28posixgid,authority%29.md)
   Returns the group identity with the given POSIX GID in the specified identity authority.
 ### Group Identity Attributes
-- [var posixGID: gid_t](cbgroupidentity/posixgid.md)
+- [var posixGID: gid_t](./cbgroupidentity/posixgid.md)
   Returns the POSIX GID of the identity.
 ### Instance Properties
-- [var memberIdentities: [CBIdentity]](cbgroupidentity/memberidentities.md)
+- [var memberIdentities: [CBIdentity]](./cbgroupidentity/memberidentities.md)
 
 ## Relationships
 
 ### Inherits From
-- [CBIdentity](cbidentity.md)
+- [CBIdentity](./cbidentity.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

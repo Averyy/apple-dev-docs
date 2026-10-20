@@ -1,7 +1,8 @@
 # status
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current quota status.
 
@@ -21,13 +22,14 @@ var status: PrivateCloudComputeLanguageModel.QuotaUsage.Status
 
 ## Mentions
 
-- [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
+- [Adding server-side intelligence with Private Cloud Compute](../../adding-server-side-intelligence-with-private-cloud-compute.md)
 
 ## See Also
 
-- [PrivateCloudComputeLanguageModel.QuotaUsage.Status](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum.md)
+### Getting the quota status
+- [PrivateCloudComputeLanguageModel.QuotaUsage.Status](./status-swift.enum.md)
   The quota status of a language model.
-- [var resetDate: Date?](privatecloudcomputelanguagemodel/quotausage-swift.struct/resetdate.md)
+- [var resetDate: Date?](./resetdate.md)
   The date at which the quota refreshes.
 
 

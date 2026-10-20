@@ -1,10 +1,11 @@
 # kBluetoothHCIMasterRole
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothHCIMasterRole: BluetoothHCIRoles { get }
 ```
 
+```c
+kBluetoothHCIMasterRole
+```
+
 ## See Also
 
-- [var kBluetoothHCISlaveRole: BluetoothHCIRoles](kbluetoothhcislaverole.md)
-- [var kBluetoothHCICentralRole: BluetoothHCIRoles](kbluetoothhcicentralrole.md)
-- [var kBluetoothHCIPeripheralRole: BluetoothHCIRoles](kbluetoothhciperipheralrole.md)
+### Constants
+- [var kBluetoothHCISlaveRole: BluetoothHCIRoles](./kbluetoothhcislaverole.md)
+- [var kBluetoothHCICentralRole: BluetoothHCIRoles](./kbluetoothhcicentralrole.md)
+- [var kBluetoothHCIPeripheralRole: BluetoothHCIRoles](./kbluetoothhciperipheralrole.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # JSValueIsUndefined(_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Tests whether a JavaScript value’s type is the undefined type.
 
@@ -19,40 +20,45 @@ Tests whether a JavaScript value’s type is the undefined type.
 func JSValueIsUndefined(_ ctx: JSContextRef!, _ value: JSValueRef!) -> Bool
 ```
 
+```c
+bool JSValueIsUndefined(JSContextRef ctx, JSValueRef value);
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the type of `value` is the undefined type; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../Swift/true.md) if the type of `value` is the undefined type; otherwise, [`false`](../Swift/false.md).
 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `value`: The [`JSValueRef`](jsvalueref.md) to test.
+- `value`: The [`JSValueRef`](./jsvalueref.md) to test.
 
 ## See Also
 
-- [func JSValueGetType(JSContextRef!, JSValueRef!) -> JSType](jsvaluegettype(_:_:).md)
+### Testing the Value’s Type
+- [func JSValueGetType(JSContextRef!, JSValueRef!) -> JSType](./jsvaluegettype%28_,_%29.md)
   Returns a JavaScript value’s type.
-- [func JSValueIsNull(JSContextRef!, JSValueRef!) -> Bool](jsvalueisnull(_:_:).md)
+- [func JSValueIsNull(JSContextRef!, JSValueRef!) -> Bool](./jsvalueisnull%28_,_%29.md)
   Tests whether a JavaScript value’s type is the null type.
-- [func JSValueIsBoolean(JSContextRef!, JSValueRef!) -> Bool](jsvalueisboolean(_:_:).md)
+- [func JSValueIsBoolean(JSContextRef!, JSValueRef!) -> Bool](./jsvalueisboolean%28_,_%29.md)
   Tests whether a JavaScript value is Boolean.
-- [func JSValueIsNumber(JSContextRef!, JSValueRef!) -> Bool](jsvalueisnumber(_:_:).md)
+- [func JSValueIsNumber(JSContextRef!, JSValueRef!) -> Bool](./jsvalueisnumber%28_,_%29.md)
   Tests whether a JavaScript value’s type is the number type.
-- [func JSValueIsString(JSContextRef!, JSValueRef!) -> Bool](jsvalueisstring(_:_:).md)
+- [func JSValueIsString(JSContextRef!, JSValueRef!) -> Bool](./jsvalueisstring%28_,_%29.md)
   Tests whether a JavaScript value’s type is the string type.
-- [func JSValueIsSymbol(JSContextRef!, JSValueRef!) -> Bool](jsvalueissymbol(_:_:).md)
+- [func JSValueIsSymbol(JSContextRef!, JSValueRef!) -> Bool](./jsvalueissymbol%28_,_%29.md)
   Tests whether a JavaScript value’s type is the symbol type.
-- [func JSValueIsObject(JSContextRef!, JSValueRef!) -> Bool](jsvalueisobject(_:_:).md)
+- [func JSValueIsObject(JSContextRef!, JSValueRef!) -> Bool](./jsvalueisobject%28_,_%29.md)
   Tests whether a JavaScript value’s type is the object type.
-- [func JSValueIsObjectOfClass(JSContextRef!, JSValueRef!, JSClassRef!) -> Bool](jsvalueisobjectofclass(_:_:_:).md)
+- [func JSValueIsObjectOfClass(JSContextRef!, JSValueRef!, JSClassRef!) -> Bool](./jsvalueisobjectofclass%28_,_,_%29.md)
   Tests whether a JavaScript value is an object with a specified class in its class chain.
-- [func JSValueIsArray(JSContextRef!, JSValueRef!) -> Bool](jsvalueisarray(_:_:).md)
+- [func JSValueIsArray(JSContextRef!, JSValueRef!) -> Bool](./jsvalueisarray%28_,_%29.md)
   Tests whether a JavaScript value is an array.
-- [func JSValueIsDate(JSContextRef!, JSValueRef!) -> Bool](jsvalueisdate(_:_:).md)
+- [func JSValueIsDate(JSContextRef!, JSValueRef!) -> Bool](./jsvalueisdate%28_,_%29.md)
   Tests whether a JavaScript value is a date.
-- [func JSValueGetTypedArrayType(JSContextRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> JSTypedArrayType](jsvaluegettypedarraytype(_:_:_:).md)
+- [func JSValueGetTypedArrayType(JSContextRef!, JSValueRef!, UnsafeMutablePointer<JSValueRef?>!) -> JSTypedArrayType](./jsvaluegettypedarraytype%28_,_,_%29.md)
   Returns a JavaScript value’s typed array type.
-- [struct JSType](jstype.md)
+- [struct JSType](./jstype.md)
   Constants that identify the type of a JavaScript value.
 
 

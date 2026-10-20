@@ -1,7 +1,8 @@
 # ArgumentMatcher.naturalLanguage(argumentName:criteria:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates that the argument must be present and semantically match the given criteria.
 

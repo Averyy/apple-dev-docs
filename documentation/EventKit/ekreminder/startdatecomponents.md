@@ -1,7 +1,8 @@
 # startDateComponents
 
 **Framework**: EventKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start date of the task.
 
@@ -19,15 +20,19 @@ The start date of the task.
 var startDateComponents: DateComponents? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSDateComponents * startDateComponents;
+```
+
 ## Mentions
 
-- [Creating events and reminders](creating-events-and-reminders.md)
+- [Creating events and reminders](../creating-events-and-reminders.md)
 
 #### Discussion
 
 The use of date components allows the start date and its time zone to be represented in a single property. A `nil` time zone represents a floating date. Setting a date component without an hour, minute and second component will set the reminder to be an all-day reminder. If this property is set, the calendar must be set to `NSGregorianCalendar`; otherwise an exception is raised.
 
-The start date components’s `timeZone` property corresponds to the [`timeZone`](ekcalendaritem/timezone.md) property on `EKCalendarItem`. A change in one value will cause a change in the other. Setting the time zone directly on the components does not guarantee that your changes will be saved; instead, pull this property from the reminder, set the time zone on it, and assign it back to the reminder:
+The start date components’s `timeZone` property corresponds to the [`timeZone`](../ekcalendaritem/timezone.md) property on `EKCalendarItem`. A change in one value will cause a change in the other. Setting the time zone directly on the components does not guarantee that your changes will be saved; instead, pull this property from the reminder, set the time zone on it, and assign it back to the reminder:
 
 ```objc
 NSDateComponents *start = myEKReminder.startDateComponents;
@@ -37,15 +42,16 @@ myEKReminder.startDateComponents = start;
 
 ## See Also
 
-- [enum EKReminderPriority](ekreminderpriority.md)
+### Accessing Reminder Properties
+- [enum EKReminderPriority](../ekreminderpriority.md)
   The priority of the reminder.
-- [var priority: Int](ekreminder/priority.md)
+- [var priority: Int](./priority.md)
   The reminder’s priority.
-- [var dueDateComponents: DateComponents?](ekreminder/duedatecomponents.md)
+- [var dueDateComponents: DateComponents?](./duedatecomponents.md)
   The date by which the reminder should be completed.
-- [var isCompleted: Bool](ekreminder/iscompleted.md)
+- [var isCompleted: Bool](./iscompleted.md)
   A Boolean value determining whether or not the reminder is marked completed.
-- [var completionDate: Date?](ekreminder/completiondate.md)
+- [var completionDate: Date?](./completiondate.md)
   The date on which the reminder was completed.
 
 

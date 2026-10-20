@@ -1,7 +1,8 @@
 # BloomComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The `BloomComponent` adds a luminous glow effect around bright objects in the scene by extracting and blurring the brightest parts of the image, then combining them back with the original rendering. If scope is set to `unbounded` Bloom will be computed on the entire screen. If scope is set to `hierarchical` multiple Bloom Components can be used to opt in only the regions around certain objects for blooming.
 
@@ -43,42 +44,43 @@ bloomOptionsComponent.threshold = 0
 self.root.components.set(bloomOptionsComponent)
 ```
 
-#### Performance and Thermal State
+#### Performance and thermal state
 
 Bloom is a screen-space effect, so its cost scales with how much of the screen it touches. There are two distinct contributions to keep in mind:
 
-- **Applying the bloom** is proportional to the on-screen size of the bloomers — the bright regions that exceed the [`threshold`](bloomoptionscomponent/threshold.md). Larger and brighter bloomers and a larger [`blurRadius`](bloomoptionscomponent/blurradius.md) increase this cost.
-- **Searching for bloom** is a separate step with a large cost that is proportional to the portion of the screen scanned for bright pixels. With [`unbounded`](bloomcomponent/bloomscope/unbounded.md) this scans the entire screen regardless of how much of the scene actually blooms.
+- **Applying the bloom** is proportional to the on-screen size of the bloomers — the bright regions that exceed the [`threshold`](./bloomoptionscomponent/threshold.md). Larger and brighter bloomers and a larger [`blurRadius`](./bloomoptionscomponent/blurradius.md) increase this cost.
+- **Searching for bloom** is a separate step with a large cost that is proportional to the portion of the screen scanned for bright pixels. With [`unbounded`](./bloomcomponent/bloomscope/unbounded.md) this scans the entire screen regardless of how much of the scene actually blooms.
 
-You can shrink the searched region — and therefore this large cost — by using [`hierarchical`](bloomcomponent/bloomscope/hierarchical.md) and attaching a `BloomComponent` to the entities that should bloom. Bloom is then only searched for and applied within the screen-space bounds of those entity hierarchies. Prefer [`hierarchical`](bloomcomponent/bloomscope/hierarchical.md) whenever you know which objects bloom; reserve [`unbounded`](bloomcomponent/bloomscope/unbounded.md) for cases where bright pixels can appear anywhere on screen.
+You can shrink the searched region — and therefore this large cost — by using [`hierarchical`](./bloomcomponent/bloomscope/hierarchical.md) and attaching a `BloomComponent` to the entities that should bloom. Bloom is then only searched for and applied within the screen-space bounds of those entity hierarchies. Prefer [`hierarchical`](./bloomcomponent/bloomscope/hierarchical.md) whenever you know which objects bloom; reserve [`unbounded`](./bloomcomponent/bloomscope/unbounded.md) for cases where bright pixels can appear anywhere on screen.
 
-Excessive bloom may contribute to user-noticeable frame drops and can cause the device to heat up in graphically demanding scenes. Monitor the thermal state and shrink the bloom region (prefer [`hierarchical`](bloomcomponent/bloomscope/hierarchical.md) over [`unbounded`](bloomcomponent/bloomscope/unbounded.md)), lower the [`blurRadius`](bloomoptionscomponent/blurradius.md), raise the [`threshold`](bloomoptionscomponent/threshold.md), or disable bloom entirely if necessary.
+Excessive bloom may contribute to user-noticeable frame drops and can cause the device to heat up in graphically demanding scenes. Monitor the thermal state and shrink the bloom region (prefer [`hierarchical`](./bloomcomponent/bloomscope/hierarchical.md) over [`unbounded`](./bloomcomponent/bloomscope/unbounded.md)), lower the [`blurRadius`](./bloomoptionscomponent/blurradius.md), raise the [`threshold`](./bloomoptionscomponent/threshold.md), or disable bloom entirely if necessary.
 
-To stay responsive to the device’s available thermal headroom, read `ProcessInfo.processInfo.thermalState` and observe [`ProcessInfo.thermalStateDidChangeNotification`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/processinfo/thermalstatedidchangenotification) to react when it changes. As the reported state moves from `.fair` toward `.serious` and `.critical`, reduce bloom’s footprint.
+To stay responsive to the device’s available thermal headroom, read `ProcessInfo.processInfo.thermalState` and observe [ProcessInfo.thermalStateDidChangeNotification](../Foundation/processinfo/thermalstatedidchangenotification.md) to react when it changes. As the reported state moves from `.fair` toward `.serious` and `.critical`, reduce bloom’s footprint.
 
 ## Topics
 
 ### Creating a bloom component
-- [init(scope: BloomComponent.BloomScope)](bloomcomponent/init(scope:).md)
+- [init(scope: BloomComponent.BloomScope)](./bloomcomponent/init%28scope%29.md)
   Creates a BloomComponent with the specified scope.
 ### Configuring the bloom scope
-- [var scope: BloomComponent.BloomScope](bloomcomponent/scope.md)
+- [var scope: BloomComponent.BloomScope](./bloomcomponent/scope.md)
   The scope of where bloom will be computed
-- [BloomComponent.BloomScope](bloomcomponent/bloomscope.md)
+- [BloomComponent.BloomScope](./bloomcomponent/bloomscope.md)
 ### Initializers
-- [init()](bloomcomponent/init.md)
+- [init()](./bloomcomponent/init%28%29.md)
   Creates a Bloom Component.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 ## See Also
 
-- [struct BloomOptionsComponent](bloomoptionscomponent.md)
+### Bloom and tone mapping
+- [struct BloomOptionsComponent](./bloomoptionscomponent.md)
   A component that sets the properties for the bloom post-processing effects.
-- [struct ToneMappingComponent](tonemappingcomponent.md)
+- [struct ToneMappingComponent](./tonemappingcomponent.md)
 
 
 ---

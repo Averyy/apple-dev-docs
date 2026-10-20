@@ -1,21 +1,22 @@
 # AnalyticsReportRequest.Relationships.Reports
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.4+
 
 ## Declaration
 
-```swift
+```
 object AnalyticsReportRequest.Relationships.Reports
 ```
 
 ## Topics
 
 ### Objects
-- [object AnalyticsReportRequest.Relationships.Reports.Data](analyticsreportrequest/relationships-data.dictionary/reports-data.dictionary/data-data.dictionary.md)
+- [object AnalyticsReportRequest.Relationships.Reports.Data](./reports-data.dictionary/data-data.dictionary.md)
   The resource linkage identifying an analytics report associated with a report request.
 
 ## Properties

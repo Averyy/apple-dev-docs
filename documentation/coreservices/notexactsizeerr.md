@@ -1,7 +1,8 @@
 # notExactSizeErr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Can't digitize to the exact size requested. 
 

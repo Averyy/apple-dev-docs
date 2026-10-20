@@ -1,7 +1,8 @@
 # vImagePiecewiseRational_PlanarF(_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Applies a set of piecewise rational expressions to transform a 32-bit planar image.
 
@@ -20,15 +21,19 @@ Applies a set of piecewise rational expressions to transform a 32-bit planar ima
 func vImagePiecewiseRational_PlanarF(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ topCoefficients: UnsafeMutablePointer<UnsafePointer<Float>?>, _ bottomCoefficients: UnsafeMutablePointer<UnsafePointer<Float>?>, _ boundaries: UnsafePointer<Float>, _ topOrder: UInt32, _ bottomOrder: UInt32, _ log2segments: UInt32, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImagePiecewiseRational_PlanarF(const vImage_Buffer *src, const vImage_Buffer *dest, const float **topCoefficients, const float **bottomCoefficients, const float *boundaries, uint32_t topOrder, uint32_t bottomOrder, uint32_t log2segments, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
-You can approximate many different correction functions by carefully choosing the polynomials and the ranges of input values they operate on. For example, the sample code project [`Applying tone curve adjustments to images`](applying-tone-curve-adjustments-to-images.md) demonstrates how to apply tone curve adjustments to images using polynomial transforms.
+You can approximate many different correction functions by carefully choosing the polynomials and the ranges of input values they operate on. For example, the sample code project [Applying tone curve adjustments to images](./applying-tone-curve-adjustments-to-images.md) demonstrates how to apply tone curve adjustments to images using polynomial transforms.
 
-The [`vImagePiecewiseRational_PlanarF(_:_:_:_:_:_:_:_:_:)`](vimagepiecewiserational_planarf(_:_:_:_:_:_:_:_:_:).md) function evaluates polynomials similarly to [`vImagePiecewisePolynomial_PlanarF(_:_:_:_:_:_:_:)`](vimagepiecewisepolynomial_planarf(_:_:_:_:_:_:_:).md), but works with two sets of polynomials the `topCoefficients` and `bottomCoefficients` parameters specify. The function writes the result of evaluating the top polynomials divided by the result of evaluating the bottom polynomials to the destination pixel.
+The [`vImagePiecewiseRational_PlanarF(_:_:_:_:_:_:_:_:_:)`](./vimagepiecewiserational_planarf%28_,_,_,_,_,_,_,_,_%29.md) function evaluates polynomials similarly to [`vImagePiecewisePolynomial_PlanarF(_:_:_:_:_:_:_:)`](./vimagepiecewisepolynomial_planarf%28_,_,_,_,_,_,_%29.md), but works with two sets of polynomials the `topCoefficients` and `bottomCoefficients` parameters specify. The function writes the result of evaluating the top polynomials divided by the result of evaluating the bottom polynomials to the destination pixel.
 
 The following code defines two sets of polynomial coefficients, `topCoefficients` as `[0.0, 0.5, 0.0]` and `bottomCoefficients` as `[0.0, 0.0, 1.0, 0.2]`. The result of the expression for each pixel is (`0.0 * x⁰ + 0.5 * x¹ + 0.0 * x²) / (0.0 * x⁰ + 0.0 * x¹ + 1.0 * x² + 0.2 * x³)`.
 
@@ -158,13 +163,17 @@ This function doesn’t deliver IEEE-754 correct division and doesn’t round pe
 
 - `src`: The source vImage buffer.
 - `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the `height`, `width`, and `rowBytes` fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
-- `topCoefficients`: A pointer to an array of numerator polynomial coefficient arrays. Each polynomial coefficient array contains the coefficients for one polynomial. A polynomial of order `R` has `R+1` coefficients, and all of the polynomials in this array must have the same order. Order the coefficients from the zeroth-order term to the highest order term. For example, the function evaluates the coefficients `[0.5, 0.6, 0.7]` as `0.5 * x⁰ + 0.6 * x¹ + 0.7 * x²`.
-- `bottomCoefficients`: A pointer to an array of denominator polynomial coefficient arrays. Each polynomial coefficient array contains the coefficients for one polynomial. A polynomial of order `R` has `R+1` coefficients, and all of the polynomials in this array must have the same order. Order the coefficients from the zeroth-order term to the highest order term. For example, the function evaluates the coefficients `[0.5, 0.6, 0.7]` as `0.5 * x⁰ + 0.6 * x¹ + 0.7 * x²`.
+- `topCoefficients`: A pointer to an array of numerator polynomial coefficient arrays. Each polynomial coefficient array contains the coefficients for one polynomial. A polynomial of order `R` has `R+1` coefficients, and all of the polynomials in this array must have the same order.
+
+  Order the coefficients from the zeroth-order term to the highest order term. For example, the function evaluates the coefficients `[0.5, 0.6, 0.7]` as `0.5 * x⁰ + 0.6 * x¹ + 0.7 * x²`.
+- `bottomCoefficients`: A pointer to an array of denominator polynomial coefficient arrays. Each polynomial coefficient array contains the coefficients for one polynomial. A polynomial of order `R` has `R+1` coefficients, and all of the polynomials in this array must have the same order.
+
+  Order the coefficients from the zeroth-order term to the highest order term. For example, the function evaluates the coefficients `[0.5, 0.6, 0.7]` as `0.5 * x⁰ + 0.6 * x¹ + 0.7 * x²`.
 - `boundaries`: A pointer to an array of boundary values, in increasing order, that separates adjacent ranges of pixel values. The first boundary value is the lowest in the range and the function clips input values lower than this to this value. The last boundary value is the highest in the range and the function clips input values higher than this to this value. The boundary values between the first and last separate the subranges from each other.
 - `topOrder`: The order of the numerator polynomials.
 - `bottomOrder`: The order of the denominator polynomials.
 - `log2segments`: The number of rational expressions to represent as a base-2 logarithm. If you pass a noninteger power-of-two number of polynomials, round up to the next integer power of two, and repeat the last expression the appropriate number of times.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 
 ---

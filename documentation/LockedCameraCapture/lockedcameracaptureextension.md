@@ -1,7 +1,8 @@
 # LockedCameraCaptureExtension
 
 **Framework**: LockedCameraCapture  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that creates a locked camera capture extension.
 
@@ -19,19 +20,20 @@ protocol LockedCameraCaptureExtension : AppExtension
 ## Topics
 
 ### Associated Types
-- [associatedtype Body : LockedCameraCaptureExtensionScene](lockedcameracaptureextension/body-swift.associatedtype.md)
+- [associatedtype Body : LockedCameraCaptureExtensionScene](./lockedcameracaptureextension/body-swift.associatedtype.md)
 ### Instance Properties
-- [var body: Self.Body](lockedcameracaptureextension/body-swift.property.md)
+- [var body: Self.Body](./lockedcameracaptureextension/body-swift.property.md)
   The content for the locked camera capture extension.
 
 ## Relationships
 
 ### Inherits From
-- [AppExtension](../extensionfoundation/appextension.md)
+- [AppExtension](../ExtensionFoundation/appextension.md)
 
 ## See Also
 
-- [protocol LockedCameraCaptureExtensionScene](lockedcameracaptureextensionscene.md)
+### Extension
+- [protocol LockedCameraCaptureExtensionScene](./lockedcameracaptureextensionscene.md)
   A protocol that provides the UI for the locked camera capture extension.
 
 

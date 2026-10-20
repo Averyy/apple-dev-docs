@@ -1,7 +1,8 @@
 # PhysicsMaterialResource
 
 **Framework**: RealityKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Material properties, like friction, of a physically simulated object.
 
@@ -11,7 +12,7 @@ Material properties, like friction, of a physically simulated object.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -23,28 +24,29 @@ Material properties, like friction, of a physically simulated object.
 ## Topics
 
 ### Using the default material resource
-- [static let `default`: PhysicsMaterialResource](physicsmaterialresource/default.md)
+- [static let `default`: PhysicsMaterialResource](./physicsmaterialresource/default.md)
   A default material resource.
 ### Creating a custom material resource
-- [static func generate(friction: Float, restitution: Float) -> PhysicsMaterialResource](physicsmaterialresource/generate(friction:restitution:).md)
+- [static func generate(friction: Float, restitution: Float) -> PhysicsMaterialResource](./physicsmaterialresource/generate%28friction,restitution%29.md)
   Generates a new material with the given characteristics.
-- [static func generate(staticFriction: Float, dynamicFriction: Float, restitution: Float) -> PhysicsMaterialResource](physicsmaterialresource/generate(staticfriction:dynamicfriction:restitution:).md)
+- [static func generate(staticFriction: Float, dynamicFriction: Float, restitution: Float) -> PhysicsMaterialResource](./physicsmaterialresource/generate%28staticfriction,dynamicfriction,restitution%29.md)
   Creates a new material with the specified static friction, dynamic friction, and restitution.
 
 ## Relationships
 
 ### Conforms To
-- [Resource](resource.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Resource](./resource.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PhysicsBodyComponent](physicsbodycomponent.md)
+### Physical properties
+- [struct PhysicsBodyComponent](./physicsbodycomponent.md)
   A component that defines an entity’s behavior in physics body simulations.
-- [enum PhysicsBodyMode](physicsbodymode.md)
+- [enum PhysicsBodyMode](./physicsbodymode.md)
   The ways that a physics body can move in response to physical forces.
-- [struct PhysicsMassProperties](physicsmassproperties.md)
+- [struct PhysicsMassProperties](./physicsmassproperties.md)
   Mass properties of a physics body.
 
 

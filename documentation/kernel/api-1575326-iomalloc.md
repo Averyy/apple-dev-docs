@@ -1,7 +1,8 @@
 # IOMalloc
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Allocates general purpose, wired memory in the kernel map.
 
@@ -10,11 +11,11 @@ Allocates general purpose, wired memory in the kernel map.
 
 ## Declaration
 
-```swift
+```c
 void * IOMalloc(vm_size_t size);
 ```
 
-#### Return_value
+#### Return Value
 
 Pointer to the allocated memory, or zero on failure.
 
@@ -28,12 +29,13 @@ This is a general purpose utility to allocate memory in the kernel. There are no
 
 ## See Also
 
-- [IOMallocAligned](1575291-iomallocaligned.md)
+### Allocation
+- [IOMallocAligned](./api-1575291-iomallocaligned.md)
   Allocates wired memory in the kernel map, with an alignment restriction.
-- [IOMallocPageable](1575327-iomallocpageable.md)
+- [IOMallocPageable](./api-1575327-iomallocpageable.md)
   Allocates pageable memory in the kernel map.
-- [IOMallocZero](3074962-iomalloczero.md)
-- [IORangeAllocator](iorangeallocator.md)
+- [IOMallocZero](./api-3074962-iomalloczero.md)
+- [IORangeAllocator](./iorangeallocator.md)
   A utility class to manage allocations from a range.
 
 

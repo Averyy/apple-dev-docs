@@ -1,7 +1,8 @@
 # MLActionClassifier.ModelParameters.ValidationData.none
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An empty validation dataset that skips the model validation phase after training.
 
@@ -20,9 +21,10 @@ Use this case when you don’t have validation data while preventing Create ML f
 
 ## See Also
 
-- [MLActionClassifier.ModelParameters.ValidationData.dataSource(_:)](mlactionclassifier/modelparameters-swift.struct/validationdata/datasource(_:).md)
+### Designating validation data
+- [MLActionClassifier.ModelParameters.ValidationData.dataSource(_:)](./datasource%28_%29.md)
   A validation dataset represented by a data source.
-- [MLActionClassifier.ModelParameters.ValidationData.split(strategy:)](mlactionclassifier/modelparameters-swift.struct/validationdata/split(strategy:).md)
+- [MLActionClassifier.ModelParameters.ValidationData.split(strategy:)](./split%28strategy%29.md)
   A validation dataset derived by randomly selecting a portion of the action classifier’s training dataset using the split strategy.
 
 

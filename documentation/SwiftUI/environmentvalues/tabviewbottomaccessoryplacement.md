@@ -1,7 +1,8 @@
 # tabViewBottomAccessoryPlacement
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current placement of the tab view bottom accessory.
 

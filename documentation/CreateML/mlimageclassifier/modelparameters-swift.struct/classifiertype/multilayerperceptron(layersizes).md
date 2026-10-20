@@ -1,7 +1,8 @@
 # MLImageClassifier.ModelParameters.ClassifierType.multilayerPerceptron(layerSizes:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Multilayer perceptron, layerSizes holds a list of positive integers that represent the number of hidden units in each layer. An additional fully connected layer with a Softmax activation output will be added that maps to probabilities of sound categories.
 
@@ -16,7 +17,8 @@ case multilayerPerceptron(layerSizes: [Int])
 
 ## See Also
 
-- [MLImageClassifier.ModelParameters.ClassifierType.logisticRegressor](mlimageclassifier/modelparameters-swift.struct/classifiertype/logisticregressor.md)
+### Designating an algorithm’s classifier
+- [MLImageClassifier.ModelParameters.ClassifierType.logisticRegressor](./logisticregressor.md)
   Logistic regression is a statistical model that classifies input feature vector into different categories.
 
 

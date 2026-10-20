@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a face observation.
 
@@ -21,7 +22,8 @@ init(_ observation: VNFaceObservation)
 
 ## See Also
 
-- [init(boundingBox: NormalizedRect, revision: DetectFaceRectanglesRequest.Revision?)](faceobservation/init(boundingbox:revision:).md)
+### Creating an observation
+- [init(boundingBox: NormalizedRect, revision: DetectFaceRectanglesRequest.Revision?)](./init%28boundingbox,revision%29.md)
   Creates a face observation from its bounding box.
 
 

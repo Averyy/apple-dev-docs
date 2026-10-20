@@ -1,6 +1,8 @@
 # Authoring Apple Immersive Video
 
-**Framework**: Immersive Media Support
+**Framework**: Immersive Media Support  
+**Role**: Sample Code  
+**Download**: [AuthoringAppleImmersiveVideo.zip](https://docs-assets.developer.apple.com/published/b64c668d9fd1/AuthoringAppleImmersiveVideo.zip)
 
 Prepare and package immersive video content for delivery.
 
@@ -10,11 +12,11 @@ Prepare and package immersive video content for delivery.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC25 session 403: [`Learn about Apple Immersive Video technologies`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/403).
+> **Note**: This sample code project is associated with WWDC25 session 403: [Learn about Apple Immersive Video technologies](https://developer.apple.com/videos/play/wwdc2025/403).
 
-##### Configure the Sample Code Project
+##### Configure the sample code project
 
-Running this sample requires [`downloading`](https://developer.apple.comhttps://devstreaming-cdn.apple.com/videos/streaming/examples/immersive-media/AIV/Apple_Immersive_Video_Beach.zip) a zip file that contains an example QuickTime movie and supporting content. When the download completes, expand the zip file.
+Running this sample requires [downloading](https://devstreaming-cdn.apple.com/videos/streaming/examples/immersive-media/AIV/Apple_Immersive_Video_Beach.zip) a zip file that contains an example QuickTime movie and supporting content. When the download completes, expand the zip file.
 
 To run the app in Xcode, choose Product > Scheme > Edit Scheme, and update the command-line argument paths to reference the downloaded files:
 
@@ -26,7 +28,8 @@ To run the app in Xcode, choose Product > Scheme > Edit Scheme, and update the c
 
 ## See Also
 
-- [Processing Apple Immersive Video with foveation](processing-apple-immersive-video-with-foveation.md)
+### Essentials
+- [Processing Apple Immersive Video with foveation](./processing-apple-immersive-video-with-foveation.md)
   Reduce a video’s data rate while maintaining high acuity in the center of the imagery by applying foveation to immersive video content.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Pops the latest string off of a stack of debug group strings for the command encoder.
@@ -11,7 +12,7 @@ Pops the latest string off of a stack of debug group strings for the command enc
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ Pops the latest string off of a stack of debug group strings for the command enc
 func popDebugGroup()
 ```
 
+```objc
+- (void) popDebugGroup;
+```
+
 #### Discussion
 
-For more information, see [`Naming resources and commands`](https://developer.apple.com/documentation/xcode/naming-resources-and-commands).
+For more information, see [Naming resources and commands](../../Xcode/naming-resources-and-commands.md).
 
 ## See Also
 
-- [func insertDebugSignpost(String)](mtlcommandencoder/insertdebugsignpost(_:).md)
+### Annotating the command buffer with debug information
+- [func insertDebugSignpost(String)](./insertdebugsignpost%28_%29.md)
   Inserts a debug string into the captured frame data.
-- [func pushDebugGroup(String)](mtlcommandencoder/pushdebuggroup(_:).md)
+- [func pushDebugGroup(String)](./pushdebuggroup%28_%29.md)
   Pushes a specific string onto a stack of debug group strings for the command encoder.
 
 

@@ -1,7 +1,8 @@
 # kSecCSInternalInformation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Internal code signing information.
 
@@ -13,6 +14,10 @@ Internal code signing information.
 
 ```swift
 var kSecCSInternalInformation: UInt32 { get }
+```
+
+```c
+kSecCSInternalInformation
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # pathComponentCell(at:withFrame:in:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the cell located at the given point within the given frame of the given view.
 
@@ -12,6 +13,10 @@ Returns the cell located at the given point within the given frame of the given 
 
 ```swift
 func pathComponentCell(at point: NSPoint, withFrame frame: NSRect, in view: NSView) -> NSPathComponentCell?
+```
+
+```objc
+- (NSPathComponentCell *) pathComponentCellAtPoint:(NSPoint) point withFrame:(NSRect) frame inView:(NSView *) view;
 ```
 
 #### Return Value
@@ -26,13 +31,14 @@ The component cell within which the given point is located, or `nil` if no cell 
 
 ## See Also
 
-- [class var pathComponentCellClass: AnyClass](nspathcell/pathcomponentcellclass.md)
+### Managing Path Components
+- [class var pathComponentCellClass: AnyClass](./pathcomponentcellclass.md)
   Returns the class used to create `pathComponentCell` objects when automatically filling up the control.
-- [func rect(of: NSPathComponentCell, withFrame: NSRect, in: NSView) -> NSRect](nspathcell/rect(of:withframe:in:).md)
+- [func rect(of: NSPathComponentCell, withFrame: NSRect, in: NSView) -> NSRect](./rect%28of,withframe,in%29.md)
   Returns the current rectangle being displayed for a given path component cell, with respect to a given frame in a given view.
-- [var clickedPathComponentCell: NSPathComponentCell?](nspathcell/clickedpathcomponentcell.md)
+- [var clickedPathComponentCell: NSPathComponentCell?](./clickedpathcomponentcell.md)
   Sets the value of the path displayed by the receiver.
-- [var pathComponentCells: [NSPathComponentCell]](nspathcell/pathcomponentcells.md)
+- [var pathComponentCells: [NSPathComponentCell]](./pathcomponentcells.md)
   Sets the array of `NSPathComponentCell` objects currently being displayed.
 
 

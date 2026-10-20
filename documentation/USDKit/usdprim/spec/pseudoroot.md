@@ -1,7 +1,8 @@
 # pseudoRoot
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pseudo-root prim spec at `/` in this spec’s layer.
 

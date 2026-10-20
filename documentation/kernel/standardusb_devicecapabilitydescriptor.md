@@ -1,14 +1,15 @@
 # StandardUSB::DeviceCapabilityDescriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```cpp
 typedef struct StandardUSB::DeviceCapabilityDescriptor {
     ...
 } StandardUSB::DeviceCapabilityDescriptor;
@@ -17,7 +18,7 @@ typedef struct StandardUSB::DeviceCapabilityDescriptor {
 ## Topics
 
 ### Instance Properties
-- [bDevCapabilityType](standardusb_devicecapabilitydescriptor/3794059-bdevcapabilitytype.md)
+- [bDevCapabilityType](./standardusb_devicecapabilitydescriptor/api-3794059-bdevcapabilitytype.md)
 
 
 ---

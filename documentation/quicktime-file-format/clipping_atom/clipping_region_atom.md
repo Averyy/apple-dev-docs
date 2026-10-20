@@ -1,19 +1,21 @@
 # Clipping region atom
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An atom that specifies the clipping region.
 
 #### Overview
 
-See [`Clipping region atom`](clipping_region_atom.md).
+See [`Clipping region atom`](../clipping_region_atom.md).
 
 ## See Also
 
-- [Size](clipping_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this clipping atom.
-- [Type](clipping_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
 
 

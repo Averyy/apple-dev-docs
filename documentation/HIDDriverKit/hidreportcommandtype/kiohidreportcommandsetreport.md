@@ -1,21 +1,23 @@
 # kIOHIDReportCommandSetReport
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kIOHIDReportCommandSetReport
 ```
 
 ## See Also
 
-- [kIOHIDReportCommandGetReport](hidreportcommandtype/kiohidreportcommandgetreport.md)
+### Getting the Report Command Types
+- [kIOHIDReportCommandGetReport](./kiohidreportcommandgetreport.md)
 
 
 ---

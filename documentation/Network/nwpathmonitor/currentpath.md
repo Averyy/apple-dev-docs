@@ -1,7 +1,8 @@
 # currentPath
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The currently available network path observed by the path monitor.
 
@@ -22,7 +23,8 @@ final var currentPath: NWPath { get set }
 
 ## See Also
 
-- [var pathUpdateHandler: ((NWPath) -> Void)?](nwpathmonitor/pathupdatehandler.md)
+### Handling Path Updates
+- [var pathUpdateHandler: ((NWPath) -> Void)?](./pathupdatehandler.md)
   A handler that receives network path updates.
 
 

@@ -1,7 +1,8 @@
 # groupIdentifier
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The identifier for the group that the leaderboard set belongs to.
 
@@ -20,15 +21,20 @@ The identifier for the group that the leaderboard set belongs to.
 var groupIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSString * groupIdentifier;
+```
+
 #### Discussion
 
 GameKit sets this property when the leaderboard set is part of a game group, and it calls `loadLeaderboardSetsWithCompletionHandler:` for leaderboards that support game groups.
 
 ## See Also
 
-- [var title: String](gkleaderboardset/title.md)
+### Accessing Properties
+- [var title: String](./title.md)
   The localized title for the leaderboard set.
-- [var identifier: String?](gkleaderboardset/identifier.md)
+- [var identifier: String?](./identifier.md)
   The identifier for the leaderboard set.
 
 

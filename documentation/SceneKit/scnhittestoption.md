@@ -1,18 +1,19 @@
 # SCNHitTestOption
 
 **Framework**: SceneKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Options affecting the behavior of SceneKit hit-testing methods.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,51 +21,57 @@ Options affecting the behavior of SceneKit hit-testing methods.
 struct SCNHitTestOption
 ```
 
+```c
+typedef NSString * SCNHitTestOption;
+```
+
 ## Topics
 
 ### Options
-- [static let backFaceCulling: SCNHitTestOption](scnhittestoption/backfaceculling.md)
+- [static let backFaceCulling: SCNHitTestOption](./scnhittestoption/backfaceculling.md)
   An option to ignore faces not oriented toward the camera.
-- [static let boundingBoxOnly: SCNHitTestOption](scnhittestoption/boundingboxonly.md)
+- [static let boundingBoxOnly: SCNHitTestOption](./scnhittestoption/boundingboxonly.md)
   An option to search for objects by bounding box only.
-- [static let categoryBitMask: SCNHitTestOption](scnhittestoption/categorybitmask.md)
+- [static let categoryBitMask: SCNHitTestOption](./scnhittestoption/categorybitmask.md)
   An option to search only for objects matching a specified bitmask.
-- [static let clipToZRange: SCNHitTestOption](scnhittestoption/cliptozrange.md)
+- [static let clipToZRange: SCNHitTestOption](./scnhittestoption/cliptozrange.md)
   An option to search for objects only within the depth range of the current point of view.
-- [static let ignoreChildNodes: SCNHitTestOption](scnhittestoption/ignorechildnodes.md)
+- [static let ignoreChildNodes: SCNHitTestOption](./scnhittestoption/ignorechildnodes.md)
   An option to ignore child nodes when searching.
-- [static let ignoreHiddenNodes: SCNHitTestOption](scnhittestoption/ignorehiddennodes.md)
+- [static let ignoreHiddenNodes: SCNHitTestOption](./scnhittestoption/ignorehiddennodes.md)
   An option to ignore hidden nodes when searching.
-- [static let rootNode: SCNHitTestOption](scnhittestoption/rootnode.md)
+- [static let rootNode: SCNHitTestOption](./scnhittestoption/rootnode.md)
   The root of the node hierarchy to be searched.
-- [static let searchMode: SCNHitTestOption](scnhittestoption/searchmode.md)
+- [static let searchMode: SCNHitTestOption](./scnhittestoption/searchmode.md)
   An option for the number and order of hit test results to provide.
-- [enum SCNHitTestSearchMode](scnhittestsearchmode.md)
-  Possible values for the [`searchMode`](scnhittestoption/searchmode.md) option used with hit-testing methods.
+- [enum SCNHitTestSearchMode](./scnhittestsearchmode.md)
+  Possible values for the [`searchMode`](./scnhittestoption/searchmode.md) option used with hit-testing methods.
 ### Deprecated
-- [static let firstFoundOnly: SCNHitTestOption](scnhittestoption/firstfoundonly.md)
+- [static let firstFoundOnly: SCNHitTestOption](./scnhittestoption/firstfoundonly.md)
   An option to return only the first object found.
-- [static let sortResults: SCNHitTestOption](scnhittestoption/sortresults.md)
+- [static let sortResults: SCNHitTestOption](./scnhittestoption/sortresults.md)
   An option to sort the results of a hit-test.
 ### Initializers
-- [init(rawValue: String)](scnhittestoption/init(rawvalue:).md)
+- [init(rawValue: String)](./scnhittestoption/init%28rawvalue%29.md)
 ### Type Properties
-- [static let ignoreLightArea: SCNHitTestOption](scnhittestoption/ignorelightarea.md)
+- [static let ignoreLightArea: SCNHitTestOption](./scnhittestoption/ignorelightarea.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func hitTestWithSegment(from: SCNVector3, to: SCNVector3, options: [String : Any]?) -> [SCNHitTestResult]](scnnode/hittestwithsegment(from:to:options:).md)
+### Related Documentation
+- [func hitTestWithSegment(from: SCNVector3, to: SCNVector3, options: [String : Any]?) -> [SCNHitTestResult]](./scnnode/hittestwithsegment%28from,to,options%29.md)
   Searches the node’s child node subtree for objects intersecting a line segment between two specified points.
-- [func hitTestWithSegment(from: SCNVector3, to: SCNVector3, options: [String : Any]?) -> [SCNHitTestResult]](scnnode/hittestwithsegment(from:to:options:).md)
+### Hit-Testing
+- [func hitTestWithSegment(from: SCNVector3, to: SCNVector3, options: [String : Any]?) -> [SCNHitTestResult]](./scnnode/hittestwithsegment%28from,to,options%29.md)
   Searches the node’s child node subtree for objects intersecting a line segment between two specified points.
 
 

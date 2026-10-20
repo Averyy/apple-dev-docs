@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Field.pass
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A field for the customer’s Wallet pass.
 

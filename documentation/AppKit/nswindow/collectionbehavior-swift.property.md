@@ -1,7 +1,8 @@
 # collectionBehavior
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that identifies the window’s behavior in window collections.
 
@@ -14,41 +15,46 @@ A value that identifies the window’s behavior in window collections.
 var collectionBehavior: NSWindow.CollectionBehavior { get set }
 ```
 
+```objc
+@property NSWindowCollectionBehavior collectionBehavior;
+```
+
 #### Discussion
 
-The possible values for this property are listed in [`NSWindow.CollectionBehavior`](nswindow/collectionbehavior-swift.struct.md).
+The possible values for this property are listed in [`NSWindow.CollectionBehavior`](./collectionbehavior-swift.struct.md).
 
 ## See Also
 
-- [var styleMask: NSWindow.StyleMask](nswindow/stylemask-swift.property.md)
+### Configuring the Window’s Appearance
+- [var styleMask: NSWindow.StyleMask](./stylemask-swift.property.md)
   Flags that describe the window’s current style, such as if it’s resizable or in full-screen mode.
-- [NSWindow.StyleMask](nswindow/stylemask-swift.struct.md)
+- [NSWindow.StyleMask](./stylemask-swift.struct.md)
   Constants that specify the style of a window, and that you can combine with the C bitwise OR operator.
-- [func toggleFullScreen(Any?)](nswindow/togglefullscreen(_:).md)
+- [func toggleFullScreen(Any?)](./togglefullscreen%28_%29.md)
   Takes the window into or out of fullscreen mode,
-- [var worksWhenModal: Bool](nswindow/workswhenmodal.md)
+- [var worksWhenModal: Bool](./workswhenmodal.md)
   A Boolean value that indicates whether the window is able to receive keyboard and mouse events even when some other window is being run modally.
-- [var alphaValue: CGFloat](nswindow/alphavalue.md)
+- [var alphaValue: CGFloat](./alphavalue.md)
   The window’s alpha value.
-- [var backgroundColor: NSColor!](nswindow/backgroundcolor.md)
+- [var backgroundColor: NSColor!](./backgroundcolor.md)
   The color of the window’s background.
-- [var colorSpace: NSColorSpace?](nswindow/colorspace.md)
+- [var colorSpace: NSColorSpace?](./colorspace.md)
   The window’s color space.
-- [func setDynamicDepthLimit(Bool)](nswindow/setdynamicdepthlimit(_:).md)
+- [func setDynamicDepthLimit(Bool)](./setdynamicdepthlimit%28_%29.md)
   Sets a Boolean value that indicates whether the window’s depth limit can change to match the depth of the screen it’s on.
-- [var canHide: Bool](nswindow/canhide.md)
+- [var canHide: Bool](./canhide.md)
   A Boolean value that indicates whether the window can hide when its application becomes hidden.
-- [var isOnActiveSpace: Bool](nswindow/isonactivespace.md)
+- [var isOnActiveSpace: Bool](./isonactivespace.md)
   A Boolean value that indicates whether the window is on the currently active space.
-- [var hidesOnDeactivate: Bool](nswindow/hidesondeactivate.md)
+- [var hidesOnDeactivate: Bool](./hidesondeactivate.md)
   A Boolean value that indicates whether the window is removed from the screen when its application becomes inactive.
-- [var isOpaque: Bool](nswindow/isopaque.md)
+- [var isOpaque: Bool](./isopaque.md)
   A Boolean value that indicates whether the window is opaque.
-- [var hasShadow: Bool](nswindow/hasshadow.md)
+- [var hasShadow: Bool](./hasshadow.md)
   A Boolean value that indicates whether the window has a shadow.
-- [func invalidateShadow()](nswindow/invalidateshadow.md)
+- [func invalidateShadow()](./invalidateshadow%28%29.md)
   Invalidates the window shadow so that it is recomputed based on the current window shape.
-- [func autorecalculatesContentBorderThickness(for: NSRectEdge) -> Bool](nswindow/autorecalculatescontentborderthickness(for:).md)
+- [func autorecalculatesContentBorderThickness(for: NSRectEdge) -> Bool](./autorecalculatescontentborderthickness%28for%29.md)
   Indicates whether the window calculates the thickness of a given border automatically.
 
 

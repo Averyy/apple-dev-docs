@@ -1,7 +1,8 @@
 # LocationButton.Title
 
 **Framework**: CoreLocationUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that specify the text of a button title.
 
@@ -20,20 +21,21 @@ struct Title
 ## Topics
 
 ### Customizing title styles
-- [static let currentLocation: LocationButton.Title](locationbutton/title/currentlocation.md)
+- [static let currentLocation: LocationButton.Title](./title/currentlocation.md)
   A button title with the text *Current Location*.
-- [static let sendCurrentLocation: LocationButton.Title](locationbutton/title/sendcurrentlocation.md)
+- [static let sendCurrentLocation: LocationButton.Title](./title/sendcurrentlocation.md)
   A button title with the text *Send Current Location*.
-- [static let sendMyCurrentLocation: LocationButton.Title](locationbutton/title/sendmycurrentlocation.md)
+- [static let sendMyCurrentLocation: LocationButton.Title](./title/sendmycurrentlocation.md)
   A button title with the text *Send My Current Location*.
-- [static let shareCurrentLocation: LocationButton.Title](locationbutton/title/sharecurrentlocation.md)
+- [static let shareCurrentLocation: LocationButton.Title](./title/sharecurrentlocation.md)
   A button title with the text *Share Current Location*.
-- [static let shareMyCurrentLocation: LocationButton.Title](locationbutton/title/sharemycurrentlocation.md)
+- [static let shareMyCurrentLocation: LocationButton.Title](./title/sharemycurrentlocation.md)
   A button title with the text *Share My Current Location*.
 
 ## See Also
 
-- [init(LocationButton.Title?, action: () -> Void)](locationbutton/init(_:action:).md)
+### Creating a location button
+- [init(LocationButton.Title?, action: () -> Void)](./init%28_,action%29.md)
   Creates a location button with the specified title and action.
 
 

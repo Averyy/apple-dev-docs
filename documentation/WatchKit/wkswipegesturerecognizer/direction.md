@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The permitted directions of the swipe.
 
@@ -14,9 +15,13 @@ The permitted directions of the swipe.
 var direction: WKSwipeGestureRecognizerDirection { get set }
 ```
 
+```objc
+@property (nonatomic) WKSwipeGestureRecognizerDirection direction;
+```
+
 #### Discussion
 
-The default value of this property is [`right`](wkswipegesturerecognizerdirection/right.md). You may specify more than one direction to track swipes in multiple directions with the same gesture recognizer.
+The default value of this property is [`right`](../wkswipegesturerecognizerdirection/right.md). You may specify more than one direction to track swipes in multiple directions with the same gesture recognizer.
 
 
 ---

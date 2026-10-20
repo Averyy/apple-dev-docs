@@ -1,15 +1,16 @@
 # IOPCISaveDeviceStateOptions
 
 **Framework**: PCIDriverKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 enum IOPCISaveDeviceStateOptions : unsigned int;
 ```
 
@@ -20,14 +21,15 @@ Options for SaveDeviceState
 ## Topics
 
 ### Enumeration Cases
-- [kPCIConfigShadowPermanent](iopcisavedevicestateoptions/kpciconfigshadowpermanent.md)
+- [kPCIConfigShadowPermanent](./iopcisavedevicestateoptions/kpciconfigshadowpermanent.md)
 
 ## See Also
 
-- [IOPCIBARType](iopcibartype.md)
-- [IOPCILinkSpeed](iopcilinkspeed.md)
-- [IOPCIMemoryRange](iopcimemoryrange.md)
-- [tIOPCILinkControlASPMBits](tiopcilinkcontrolaspmbits.md)
+### Data Types
+- [IOPCIBARType](./iopcibartype.md)
+- [IOPCILinkSpeed](./iopcilinkspeed.md)
+- [IOPCIMemoryRange](./iopcimemoryrange.md)
+- [tIOPCILinkControlASPMBits](./tiopcilinkcontrolaspmbits.md)
 
 
 ---

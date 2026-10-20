@@ -1,7 +1,8 @@
 # streamState
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current state of the camera stream.
 
@@ -19,17 +20,22 @@ The current state of the camera stream.
 var streamState: HMCameraStreamState { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) HMCameraStreamState streamState;
+```
+
 ## See Also
 
-- [func startStream()](hmcamerastreamcontrol/startstream.md)
+### Controlling the stream
+- [func startStream()](./startstream%28%29.md)
   Starts the camera stream.
-- [func stopStream()](hmcamerastreamcontrol/stopstream.md)
+- [func stopStream()](./stopstream%28%29.md)
   Stops the camera stream.
-- [var cameraStream: HMCameraStream?](hmcamerastreamcontrol/camerastream.md)
+- [var cameraStream: HMCameraStream?](./camerastream.md)
   The current camera stream.
-- [class HMCameraStream](hmcamerastream.md)
+- [class HMCameraStream](../hmcamerastream.md)
   An object that represents a camera’s audiovisual stream.
-- [enum HMCameraStreamState](hmcamerastreamstate.md)
+- [enum HMCameraStreamState](../hmcamerastreamstate.md)
   The states associated with a camera stream.
 
 

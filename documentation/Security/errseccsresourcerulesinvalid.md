@@ -1,7 +1,8 @@
 # errSecCSResourceRulesInvalid
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Invalid resource selection rule or rules.
 
@@ -13,6 +14,10 @@ Invalid resource selection rule or rules.
 
 ```swift
 var errSecCSResourceRulesInvalid: OSStatus { get }
+```
+
+```c
+errSecCSResourceRulesInvalid
 ```
 
 

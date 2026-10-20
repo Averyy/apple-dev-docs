@@ -1,7 +1,8 @@
 # driverKit(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Configures the minimum deployment target version for the DriverKit platform using a custom version string.
 
@@ -24,11 +25,12 @@ A `SupportedPlatform` instance.
 
 ## See Also
 
-- [static func driverKit(SupportedPlatform.DriverKitVersion) -> SupportedPlatform](supportedplatform/driverkit(_:)-jxlz.md)
+### Supporting DriverKit
+- [static func driverKit(SupportedPlatform.DriverKitVersion) -> SupportedPlatform](./driverkit%28_%29-jxlz.md)
   Configures the minimum deployment target version for the DriverKit platform.
-- [static let driverKit: Platform](platform/driverkit.md)
+- [static let driverKit: Platform](../platform/driverkit.md)
   The DriverKit platform
-- [SupportedPlatform.DriverKitVersion](supportedplatform/driverkitversion.md)
+- [SupportedPlatform.DriverKitVersion](./driverkitversion.md)
   The supported DriverKit version.
 
 

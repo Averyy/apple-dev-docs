@@ -1,7 +1,8 @@
 # getFlattenedItemList()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 A flattened array of items that includes annotations and overlays.
 
@@ -10,21 +11,22 @@ A flattened array of items that includes annotations and overlays.
 
 ## Declaration
 
-```swift
+```
 getFlattenedItemList(): (Annotation | Overlay)[];
 ```
 
 #### Discussion
 
-The items in an [`ItemCollection`](itemcollection.md) may include nested item collections. Use [`getFlattenedItemList()`](itemcollection/getflatteneditemlist.md) when you need a flat array that contains individual annotations and overlays.
+The items in an [`ItemCollection`](../itemcollection.md) may include nested item collections. Use [`getFlattenedItemList()`](./getflatteneditemlist.md) when you need a flat array that contains individual annotations and overlays.
 
-Access the original GeoJSON data in the [`data`](itemcollection/data.md) object. To retrieve the data as MapKit JS items, use the [`items`](itemcollection/items.md) or [`getFlattenedItemList()`](itemcollection/getflatteneditemlist.md) objects.
+Access the original GeoJSON data in the [`data`](./data.md) object. To retrieve the data as MapKit JS items, use the [`items`](./items.md) or [`getFlattenedItemList()`](./getflatteneditemlist.md) objects.
 
 ## See Also
 
-- [data](itemcollection/data.md)
+### Item collection properties
+- [data](./data.md)
   The raw GeoJSON data.
-- [items](itemcollection/items.md)
+- [items](./items.md)
   A nested list of annotations, overlays, and other item collections.
 
 

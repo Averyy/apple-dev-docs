@@ -1,7 +1,8 @@
 # Overlay
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A blend operation that multiplies dark areas and screens light areas.
 
@@ -19,7 +20,55 @@ A blend operation that multiplies dark areas and screens light areas.
 
 #### Parameter Types
 
-#### Parameter Descriptions
+**Overlay (float)**:
+
+| Input | Type |
+| --- | --- |
+| `Foreground` | Float |
+| `Background` | Float |
+| `Mix` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Overlay (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `Foreground` | Color4 |
+| `Background` | Color4 |
+| `Mix` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Overlay (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `Foreground` | Color3 |
+| `Background` | Color3 |
+| `Mix` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Overlay (half)**:
+
+| Input | Type |
+| --- | --- |
+| `Foreground` | Half |
+| `Background` | Half |
+| `Mix` | Half |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Half |
+
+#### Parameter descriptions
 
 - **`Foreground`**: The foreground input. Represented by `F` in the mathmatical equation.
 - **`Background`**: The background input. Represented by `B` in the mathmatical equation.
@@ -30,47 +79,52 @@ A blend operation that multiplies dark areas and screens light areas.
 The `Overlay` node has one of two effects:
 
 - If `F+B` is less than `0.5`, then the node outputs a value of `2*F*B`.
-- If `F+B` is greater than or equal to `0.5`, then it outputs`1-(1-F)(1-B)`, which creates the same visual effect as the [`Screen`](compositing/screen.md) node. Visually the node makes dark areas of the blended texture even darker and light areas of the blended texture even lighter.
+- If `F+B` is greater than or equal to `0.5`, then it outputs`1-(1-F)(1-B)`, which creates the same visual effect as the [`Screen`](./screen.md) node. Visually the node makes dark areas of the blended texture even darker and light areas of the blended texture even lighter.
 
 Below is an example of a simple node graph that uses the `Overlay` node to blend two images together into a single material:
 
-![None](/images/ShaderGraph-Docs/OverlayGraph.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/OverlayGraph.png)
 
 Below are two images and their resulting blended texture applied to a cube:
 
-![None](/images/ShaderGraph-Docs/OverlayMaterial2.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/OverlayMaterial1.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/ScreenMaterial1.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/OverlayMaterial2.png)
 
 ## See Also
 
-- [Premultiply](compositing/premultiply.md)
+### Nodes
+- [Premultiply](./premultiply.md)
   Multiplies the RGB channels of the input by the alpha channel.
-- [Unpremultiply](compositing/unpremultiply.md)
+- [Unpremultiply](./unpremultiply.md)
   Divides the RGB channels of the input by the alpha channel.
-- [Additive Mix](compositing/additive-mix.md)
+- [Additive Mix](./additive-mix.md)
   Adds foreground and background values.
-- [Subtractive Mix](compositing/subtractive-mix.md)
+- [Subtractive Mix](./subtractive-mix.md)
   Subtracts foreground from background values.
-- [Difference](compositing/difference.md)
+- [Difference](./difference.md)
   Outputs the distance between foreground and background values.
-- [Burn](compositing/burn.md)
+- [Burn](./burn.md)
   A blend operation that darkens the foreground layer using the background.
-- [Dodge](compositing/dodge.md)
+- [Dodge](./dodge.md)
   A blend operation that lightens the background layer depending on the foreground.
-- [Screen](compositing/screen.md)
+- [Screen](./screen.md)
   A blend operation that lightens areas that are darker than white.
-- [Disjoint Over](compositing/disjoint-over.md)
+- [Disjoint Over](./disjoint-over.md)
   A merge operation that layers foreground over background color, but assumes no overlap in partially transparent areas covered by both.
-- [In](compositing/in.md)
+- [In](./in.md)
   Outputs areas of foreground that overlap with the alpha of background.
-- [Mask](compositing/mask.md)
+- [Mask](./mask.md)
   Outputs areas of background that overlap with the alpha of foreground.
-- [Matte](compositing/matte.md)
+- [Matte](./matte.md)
   A merge operation that layers premultiplied foreground over background.
-- [Out](compositing/out.md)
+- [Out](./out.md)
   Outputs areas of foreground that do not overlap with background.
-- [Over](compositing/over.md)
+- [Over](./over.md)
   A merge operation that layers foreground over background, using the alpha of the foreground.
-- [Inside](compositing/inside.md)
+- [Inside](./inside.md)
   Multiplies a mask to all channels of the input.
 
 

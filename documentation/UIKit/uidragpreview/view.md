@@ -1,7 +1,8 @@
 # view
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view associated with the drag item preview.
 
@@ -15,6 +16,10 @@ The view associated with the drag item preview.
 
 ```swift
 var view: UIView { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIView * view;
 ```
 
 #### Discussion

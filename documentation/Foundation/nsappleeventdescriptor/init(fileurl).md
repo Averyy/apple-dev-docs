@@ -1,7 +1,8 @@
 # init(fileURL:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a descriptor that stores the specified file URL.
 
@@ -12,6 +13,10 @@ Creates a descriptor that stores the specified file URL.
 
 ```swift
 init(fileURL: URL)
+```
+
+```objc
++ (NSAppleEventDescriptor *) descriptorWithFileURL:(NSURL *) fileURL;
 ```
 
 

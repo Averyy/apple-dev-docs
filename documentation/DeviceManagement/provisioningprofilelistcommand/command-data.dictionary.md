@@ -1,7 +1,8 @@
 # ProvisioningProfileListCommand.Command
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of installed provisioning profiles on a device.
 
@@ -16,15 +17,23 @@ The command to get a list of installed provisioning profiles on a device.
 
 ## Declaration
 
-```swift
+```
 object ProvisioningProfileListCommand.Command
 ```
 
 ## Properties
 
-- `ManagedOnly` (boolean): If `true`, only include profiles that MDM has installed. For user enrollments, the device ignores this key and always limits the results to managed profiles. Available: iOS 13+ | iPadOS 13+ | macOS 11+ | tvOS 13+ | visionOS 1.1+ | watchOS 10+
+- `ManagedOnly` (boolean): If `true`, only include profiles that MDM has installed. For user enrollments, the device ignores this key and always limits the results to managed profiles.
+
+  Available: iOS 13+ | iPadOS 13+ | macOS 11+ | tvOS 13+ | visionOS 1.1+ | watchOS 10+
+
+  **Default**: `false`
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
+
+  **Default**: `false`
 - `RequestType` (string) *(required)*: The request type for this command.
+
+  **Allowed Values**: `ProvisioningProfileList`
 
 
 ---

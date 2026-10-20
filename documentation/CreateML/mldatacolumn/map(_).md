@@ -1,7 +1,8 @@
 # map(_:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a new column by applying the given thread-safe transform to every non-missing element of this column.
 
@@ -19,17 +20,26 @@ Creates a new column by applying the given thread-safe transform to every non-mi
 func map<T>(_ lazyTransform: @escaping (Element) -> T) -> MLDataColumn<T> where T : MLDataValueConvertible
 ```
 
+Available when `Element` conforms to `MLDataValueConvertible`.
+
+**Other overloads**:
+
+```swift
+func map<T>(_ lazyTransform: @escaping (Element) -> T?) -> MLDataColumn<T> where T : MLDataValueConvertible
+```
+
 #### Return Value
 
 A new column typed to the return type of `lazyTransform`.
 
 ## Parameters
 
-- `lazyTransform`: A thread-safe element transformation function. The implementation of the transform you provide should accept an `Element` of the column and return a transformed value of a type that conforms to [`MLDataValueConvertible`](mldatavalueconvertible.md).
+- `lazyTransform`: A thread-safe element transformation function. The implementation of the transform you provide should accept an `Element` of the column and return a transformed value of a type that conforms to [`MLDataValueConvertible`](../mldatavalueconvertible.md).
 
 ## See Also
 
-- [func mapMissing<T>((Element?) -> T?) -> MLDataColumn<T>](mldatacolumn/mapmissing(_:).md)
+### Transforming elements to generate a column
+- [func mapMissing<T>((Element?) -> T?) -> MLDataColumn<T>](./mapmissing%28_%29.md)
   Creates a new column, potentially with missing elements, by applying the given thread-safe transform to every element of the column, including missing elements.
 
 

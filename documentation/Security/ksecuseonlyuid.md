@@ -1,7 +1,8 @@
 # kSecUseOnlyUID
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The access control list should be owned by the user matching the specified user ID parameter.
 
@@ -18,6 +19,10 @@ The access control list should be owned by the user matching the specified user 
 
 ```swift
 var kSecUseOnlyUID: Int { get }
+```
+
+```c
+kSecUseOnlyUID
 ```
 
 

@@ -1,7 +1,8 @@
 # restart()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Restarts the emission of particles. Requires the component to be re-assigned to the entity to take effect.
 

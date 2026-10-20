@@ -1,7 +1,8 @@
 # image
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image displayed by the scrubber item.
 
@@ -15,9 +16,14 @@ The image displayed by the scrubber item.
 var image: NSImage { get set }
 ```
 
+```objc
+@property (copy) NSImage * image;
+```
+
 ## See Also
 
-- [var imageView: NSImageView](nsscrubberimageitemview/imageview.md)
+### Providing image content
+- [var imageView: NSImageView](./imageview.md)
   The image view that the scrubber item uses to display its image.
 
 

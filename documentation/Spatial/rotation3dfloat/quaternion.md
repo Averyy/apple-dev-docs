@@ -1,7 +1,8 @@
 # quaternion
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var quaternion: simd_quatf { get set }
+```
+
+```c
+simd_quatf quaternion;
 ```
 
 #### Discussion

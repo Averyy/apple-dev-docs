@@ -1,7 +1,8 @@
 # init(url:width:height:isTemplate:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an image object, of the specified size, from an image file in the local file system.
 
@@ -11,7 +12,7 @@ Creates an image object, of the specified size, from an image file in the local 
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

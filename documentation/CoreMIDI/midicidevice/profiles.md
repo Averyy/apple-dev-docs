@@ -1,7 +1,8 @@
 # profiles
 
 **Framework**: Core MIDI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var profiles: [MIDIUMPCIProfile] { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSArray<MIDIUMPCIProfile *> * profiles;
 ```
 
 

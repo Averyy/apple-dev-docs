@@ -1,7 +1,8 @@
 # MDCopyLabelsMatchingExpression(_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDCopyLabelsMatchingExpression(_ simpleQueryString: CFString!) -> CFArray!
+```
+
+```c
+CFArrayRef MDCopyLabelsMatchingExpression(CFStringRef simpleQueryString);
 ```
 
 

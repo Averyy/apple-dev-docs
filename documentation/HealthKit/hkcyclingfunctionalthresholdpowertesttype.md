@@ -1,7 +1,8 @@
 # HKCyclingFunctionalThresholdPowerTestType
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -17,25 +18,29 @@
 enum HKCyclingFunctionalThresholdPowerTestType
 ```
 
+```c
+enum HKCyclingFunctionalThresholdPowerTestType : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [HKCyclingFunctionalThresholdPowerTestType.maxExercise20Minute](hkcyclingfunctionalthresholdpowertesttype/maxexercise20minute.md)
-- [HKCyclingFunctionalThresholdPowerTestType.maxExercise60Minute](hkcyclingfunctionalthresholdpowertesttype/maxexercise60minute.md)
-- [HKCyclingFunctionalThresholdPowerTestType.predictionExercise](hkcyclingfunctionalthresholdpowertesttype/predictionexercise.md)
-- [HKCyclingFunctionalThresholdPowerTestType.rampTest](hkcyclingfunctionalthresholdpowertesttype/ramptest.md)
+- [HKCyclingFunctionalThresholdPowerTestType.maxExercise20Minute](./hkcyclingfunctionalthresholdpowertesttype/maxexercise20minute.md)
+- [HKCyclingFunctionalThresholdPowerTestType.maxExercise60Minute](./hkcyclingfunctionalthresholdpowertesttype/maxexercise60minute.md)
+- [HKCyclingFunctionalThresholdPowerTestType.predictionExercise](./hkcyclingfunctionalthresholdpowertesttype/predictionexercise.md)
+- [HKCyclingFunctionalThresholdPowerTestType.rampTest](./hkcyclingfunctionalthresholdpowertesttype/ramptest.md)
 ### Initializers
-- [init?(rawValue: Int)](hkcyclingfunctionalthresholdpowertesttype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./hkcyclingfunctionalthresholdpowertesttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

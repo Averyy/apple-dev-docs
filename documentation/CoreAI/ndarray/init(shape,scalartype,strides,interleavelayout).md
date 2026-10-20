@@ -1,7 +1,8 @@
 # init(shape:scalarType:strides:interleaveLayout:)
 
 **Framework**: Core AI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an NDArray with the provided shape, scalar type, strides, and interleaved dimension.
 
@@ -27,17 +28,18 @@ init(shape: [Int], scalarType: NDArray.ScalarType, strides: [Int], interleaveLay
 - `shape`: The length of each dimension of the ndArray.
 - `scalarType`: The type of elements in the ndArray.
 - `strides`: The strides of the ndArray.
-- `interleaveLayout`: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md).
+- `interleaveLayout`: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](./interleavelayout-swift.struct.md).
 
 ## See Also
 
-- [init(shape: [Int], scalarType: NDArray.ScalarType)](ndarray/init(shape:scalartype:).md)
+### Creating an array
+- [init(shape: [Int], scalarType: NDArray.ScalarType)](./init%28shape,scalartype%29.md)
   Creates an array with the specified shape and scalar type.
-- [init(shape: [Int], scalarType: NDArray.ScalarType, strides: [Int])](ndarray/init(shape:scalartype:strides:).md)
+- [init(shape: [Int], scalarType: NDArray.ScalarType, strides: [Int])](./init%28shape,scalartype,strides%29.md)
   Creates an array with the specified shape, scalar type, and strides.
-- [init<Scalar>(scalars: some Sequence, shape: [Int])](ndarray/init(scalars:shape:).md)
+- [init<Scalar>(scalars: some Sequence, shape: [Int])](./init%28scalars,shape%29.md)
   Initialize an ndArray with a copy of some sequence of scalars, stored in the ndArray in row-major order.
-- [init(descriptor: consuming NDArrayDescriptor)](ndarray/init(descriptor:).md)
+- [init(descriptor: consuming NDArrayDescriptor)](./init%28descriptor%29.md)
   Creates an array with the shape and preferred strides from the specified descriptor.
 
 

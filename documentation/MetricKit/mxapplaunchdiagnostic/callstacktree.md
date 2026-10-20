@@ -1,15 +1,18 @@
 # callStackTree
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The call stack tree associated with the app launch.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 27.2
+- iPadOS 16.0+ - Deprecated in 27.2
+- Mac Catalyst 16.0+ - Deprecated in 27.0
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`callStackTree`](../applaunchdiagnostic/callstacktree.md) instead.
 
 ## Declaration
 
@@ -17,9 +20,14 @@ The call stack tree associated with the app launch.
 var callStackTree: MXCallStackTree { get }
 ```
 
+```objc
+@property (strong, readonly, nonnull) MXCallStackTree * callStackTree;
+```
+
 ## See Also
 
-- [var launchDuration: Measurement<UnitDuration>](mxapplaunchdiagnostic/launchduration.md)
+### Reading app launch metrics
+- [var launchDuration: Measurement<UnitDuration>](./launchduration.md)
   The total app launch duration.
 
 

@@ -1,17 +1,18 @@
 # MTLMapIndirectArguments
 
 **Framework**: Metal  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The data layout for mapping sparse texture regions when using indirect commands.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,60 +20,65 @@ The data layout for mapping sparse texture regions when using indirect commands.
 struct MTLMapIndirectArguments
 ```
 
+```c
+typedef struct { ... } MTLMapIndirectArguments;
+```
+
 ## Topics
 
 ### Creating indirect mapping arguments
-- [init()](mtlmapindirectarguments/init.md)
+- [init()](./mtlmapindirectarguments/init%28%29.md)
   Returns a default data layout for mapping sparse texture regions.
-- [init(regionOriginX: UInt32, regionOriginY: UInt32, regionOriginZ: UInt32, regionSizeWidth: UInt32, regionSizeHeight: UInt32, regionSizeDepth: UInt32, mipMapLevel: UInt32, sliceId: UInt32)](mtlmapindirectarguments/init(regionoriginx:regionoriginy:regionoriginz:regionsizewidth:regionsizeheight:regionsizedepth:mipmaplevel:sliceid:).md)
+- [init(regionOriginX: UInt32, regionOriginY: UInt32, regionOriginZ: UInt32, regionSizeWidth: UInt32, regionSizeHeight: UInt32, regionSizeDepth: UInt32, mipMapLevel: UInt32, sliceId: UInt32)](./mtlmapindirectarguments/init%28regionoriginx,regionoriginy,regionoriginz,regionsizewidth,regionsizeheight,regionsizedepth,mipmaplevel,sliceid%29.md)
   Returns a new data layout for mapping sparse texture regions.
 ### Specifying region origin
-- [var regionOriginX: UInt32](mtlmapindirectarguments/regionoriginx.md)
+- [var regionOriginX: UInt32](./mtlmapindirectarguments/regionoriginx.md)
   The x coordinate of the region to change, measured in tile coordinates.
-- [var regionOriginY: UInt32](mtlmapindirectarguments/regionoriginy.md)
+- [var regionOriginY: UInt32](./mtlmapindirectarguments/regionoriginy.md)
   The y coordinate of the region to change, measured in tile coordinates.
-- [var regionOriginZ: UInt32](mtlmapindirectarguments/regionoriginz.md)
+- [var regionOriginZ: UInt32](./mtlmapindirectarguments/regionoriginz.md)
   The z coordinate of the region to change, measured in tile coordinates.
 ### Specifying region dimensions
-- [var regionSizeWidth: UInt32](mtlmapindirectarguments/regionsizewidth.md)
+- [var regionSizeWidth: UInt32](./mtlmapindirectarguments/regionsizewidth.md)
   The width of the region, measured in tile coordinates.
-- [var regionSizeHeight: UInt32](mtlmapindirectarguments/regionsizeheight.md)
+- [var regionSizeHeight: UInt32](./mtlmapindirectarguments/regionsizeheight.md)
   The height of the region, measured in tile coordinates.
-- [var regionSizeDepth: UInt32](mtlmapindirectarguments/regionsizedepth.md)
+- [var regionSizeDepth: UInt32](./mtlmapindirectarguments/regionsizedepth.md)
   The depth of the region, measured in tile coordinates.
 ### Specifying texture location
-- [var mipMapLevel: UInt32](mtlmapindirectarguments/mipmaplevel.md)
+- [var mipMapLevel: UInt32](./mtlmapindirectarguments/mipmaplevel.md)
   The mipmap to change.
-- [var sliceId: UInt32](mtlmapindirectarguments/sliceid.md)
+- [var sliceId: UInt32](./mtlmapindirectarguments/sliceid.md)
   The texture slice to change.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Managing sparse texture memory](managing-sparse-texture-memory.md)
+### Sparse textures
+- [Managing sparse texture memory](./managing-sparse-texture-memory.md)
   Take direct control of memory allocation for texture data by using sparse textures.
-- [Creating sparse heaps and sparse textures](creating-sparse-heaps-and-sparse-textures.md)
+- [Creating sparse heaps and sparse textures](./creating-sparse-heaps-and-sparse-textures.md)
   Allocate memory for sparse textures by creating a sparse heap.
-- [Converting between pixel regions and sparse tile regions](converting-between-pixel-regions-and-sparse-tile-regions.md)
+- [Converting between pixel regions and sparse tile regions](./converting-between-pixel-regions-and-sparse-tile-regions.md)
   Learn how a sparse texture’s contents are organized in memory.
-- [Assigning memory to sparse textures](assigning-memory-to-sparse-textures.md)
+- [Assigning memory to sparse textures](./assigning-memory-to-sparse-textures.md)
   Use a resource state encoder to allocate and deallocate sparse tiles for a sparse texture.
-- [Reading and writing to sparse textures](reading-and-writing-to-sparse-textures.md)
+- [Reading and writing to sparse textures](./reading-and-writing-to-sparse-textures.md)
   Decide how to handle access to unmapped texture regions.
-- [Estimating how often a texture region is accessed](estimating-how-often-a-texture-region-is-accessed.md)
+- [Estimating how often a texture region is accessed](./estimating-how-often-a-texture-region-is-accessed.md)
   Use texture access patterns to determine when you need to map a texture region.
-- [class MTLResourceStatePassDescriptor](mtlresourcestatepassdescriptor.md)
+- [class MTLResourceStatePassDescriptor](./mtlresourcestatepassdescriptor.md)
   A configuration for a resource state pass, used to create a resource state command encoder.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](mtlresourcestatepasssamplebufferattachmentdescriptor.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptor](./mtlresourcestatepasssamplebufferattachmentdescriptor.md)
   A description of where to store GPU counter information at the start and end of a resource state pass.
-- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
+- [class MTLResourceStatePassSampleBufferAttachmentDescriptorArray](./mtlresourcestatepasssamplebufferattachmentdescriptorarray.md)
   An array of sample buffer attachments for a resource state pass.
-- [protocol MTLResourceStateCommandEncoder](mtlresourcestatecommandencoder.md)
+- [protocol MTLResourceStateCommandEncoder](./mtlresourcestatecommandencoder.md)
   An encoder that encodes commands that modify resource configurations.
 
 

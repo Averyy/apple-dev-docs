@@ -1,7 +1,8 @@
 # fileTotalCount
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total number of files for a file progress object.
 
@@ -24,17 +25,18 @@ var fileTotalCount: Int? { get set }
 
 If the current progress is operating on a set of files, set this property to the total number of files in the operation.
 
-If present, [`Progress`](progress.md) presents additional information in its localized description by setting a value in the `userInfo` dictionary.
+If present, [`Progress`](../progress.md) presents additional information in its localized description by setting a value in the `userInfo` dictionary.
 
 ## See Also
 
-- [var fileOperationKind: Progress.FileOperationKind?](progress/fileoperationkind-swift.property.md)
+### Inspecting File Operation Progress Information
+- [var fileOperationKind: Progress.FileOperationKind?](./fileoperationkind-swift.property.md)
   The kind of file operation for the progress object.
-- [var fileURL: URL?](progress/fileurl.md)
+- [var fileURL: URL?](./fileurl.md)
   A URL that represents the file for the current progress object.
-- [var fileCompletedCount: Int?](progress/filecompletedcount.md)
+- [var fileCompletedCount: Int?](./filecompletedcount.md)
   The number of completed files for a file progress object.
-- [Progress.FileOperationKind](progress/fileoperationkind-swift.struct.md)
+- [Progress.FileOperationKind](./fileoperationkind-swift.struct.md)
   The kind of file operation.
 
 

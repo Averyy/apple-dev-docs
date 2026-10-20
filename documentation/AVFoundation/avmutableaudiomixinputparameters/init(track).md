@@ -1,7 +1,8 @@
 # init(track:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a mutable input parameters object for a given track.
 
@@ -20,9 +21,13 @@ Creates a mutable input parameters object for a given track.
 convenience init(track: AVAssetTrack?)
 ```
 
+```objc
++ (instancetype) audioMixInputParametersWithTrack:(AVAssetTrack *) track;
+```
+
 #### Return Value
 
-A mutable input parameters object with no volume ramps and [`trackID`](avmutableaudiomixinputparameters/trackid.md) set to `track`’s identifier.
+A mutable input parameters object with no volume ramps and [`trackID`](./trackid.md) set to `track`’s identifier.
 
 ## Parameters
 

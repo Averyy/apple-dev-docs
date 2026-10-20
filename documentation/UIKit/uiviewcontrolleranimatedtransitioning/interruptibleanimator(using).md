@@ -1,7 +1,8 @@
 # interruptibleAnimator(using:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the interruptible animator to use during the transition.
 
@@ -18,13 +19,17 @@ Returns the interruptible animator to use during the transition.
 optional func interruptibleAnimator(using transitionContext: any UIViewControllerContextTransitioning) -> any UIViewImplicitlyAnimating
 ```
 
+```objc
+- (id<UIViewImplicitlyAnimating>) interruptibleAnimatorForTransition:(id<UIViewControllerContextTransitioning>) transitionContext;
+```
+
 #### Return Value
 
 An animator object that supports the modification of its running animations.
 
 #### Discussion
 
-Implement this method when you want to perform your transitions using an interruptible animator object, such as a [`UIViewPropertyAnimator`](uiviewpropertyanimator.md) object. You must return the same animator object for the duration of the transition.
+Implement this method when you want to perform your transitions using an interruptible animator object, such as a [`UIViewPropertyAnimator`](../uiviewpropertyanimator.md) object. You must return the same animator object for the duration of the transition.
 
 ## Parameters
 

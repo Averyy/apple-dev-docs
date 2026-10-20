@@ -1,7 +1,8 @@
 # IconRefIntersectsCGRect(_:_:_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func IconRefIntersectsCGRect(_ testRect: UnsafePointer<CGRect>!, _ iconRect: UnsafePointer<CGRect>!, _ align: IconAlignmentType, _ iconServicesUsageFlags: IconServicesUsageFlags, _ theIconRef: IconRef!) -> Bool
+```
+
+```c
+Boolean IconRefIntersectsCGRect(const CGRect *testRect, const CGRect *iconRect, IconAlignmentType align, IconServicesUsageFlags iconServicesUsageFlags, IconRef theIconRef);
 ```
 
 

@@ -1,7 +1,8 @@
 # NDArray.ScalarType.bool
 
 **Framework**: Core AI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A Boolean scalar.
 

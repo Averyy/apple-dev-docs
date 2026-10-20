@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The formation of the dragging items while the drag is over the destination.
@@ -16,19 +17,24 @@ The formation of the dragging items while the drag is over the destination.
 var draggingFormation: NSDraggingFormation { get set }
 ```
 
+```objc
+@property NSDraggingFormation draggingFormation;
+```
+
 #### Discussion
 
-Set this property to change the formation of the drag items. This is generally done during the [`updateDraggingItemsForDrag(_:)`](nsdraggingdestination/updatedraggingitemsfordrag(_:).md) method or whenever you enumerate the dragging items.
+Set this property to change the formation of the drag items. This is generally done during the [`updateDraggingItemsForDrag(_:)`](../nsdraggingdestination/updatedraggingitemsfordrag%28_%29.md) method or whenever you enumerate the dragging items.
 
 The default value is the current drag formation.
 
-> **Note**:  Set this property before or after the [`NSDraggingInfo`](nsdragginginfo.md) or [`NSDraggingSession`](nsdraggingsession.md) class’s method [`enumerateDraggingItems(options:for:classes:searchOptions:using:)`](nsdragginginfo/enumeratedraggingitems(options:for:classes:searchoptions:using:).md) not inside the enumeration Block.
+> **Note**:  Set this property before or after the [`NSDraggingInfo`](../nsdragginginfo.md) or [`NSDraggingSession`](../nsdraggingsession.md) class’s method [`enumerateDraggingItems(options:for:classes:searchOptions:using:)`](./enumeratedraggingitems%28options,for,classes,searchoptions,using%29.md) not inside the enumeration Block.
 
 ## See Also
 
-- [func slideDraggedImage(to: NSPoint)](nsdragginginfo/slidedraggedimage(to:).md)
+### Sliding the image
+- [func slideDraggedImage(to: NSPoint)](./slidedraggedimage%28to%29.md)
   Slides the image to a specified location.
-- [var animatesToDestination: Bool](nsdragginginfo/animatestodestination.md)
+- [var animatesToDestination: Bool](./animatestodestination.md)
   A Boolean value that indicates whether the dragging formation animates while the drag is over the destination.
 
 

@@ -1,7 +1,8 @@
 # ComputeNodeGraph.StateDefinition
 
 **Framework**: Compute Graph  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A declaration of a named state value and where it lives in the simulation.
 
@@ -12,7 +13,7 @@ A declaration of a named state value and where it lives in the simulation.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -27,23 +28,23 @@ State definitions are used by `ComputeNodeGraph/Node/Kind/loadState(definition:)
 ## Topics
 
 ### Structures
-- [ComputeNodeGraph.StateDefinition.Options](computenodegraph/statedefinition/options-swift.struct.md)
+- [ComputeNodeGraph.StateDefinition.Options](./statedefinition/options-swift.struct.md)
 ### Initializers
-- [init(scope: ComputeNodeGraph.Scope, options: ComputeNodeGraph.StateDefinition.Options, type: ComputeNodeGraph.StateType)](computenodegraph/statedefinition/init(scope:options:type:).md)
+- [init(scope: ComputeNodeGraph.Scope, options: ComputeNodeGraph.StateDefinition.Options, type: ComputeNodeGraph.StateType)](./statedefinition/init%28scope,options,type%29.md)
 ### Instance Properties
-- [var options: ComputeNodeGraph.StateDefinition.Options](computenodegraph/statedefinition/options-swift.property.md)
-  Whether this state is read, written, or both. See [`ComputeNodeGraph.StateDefinition.Options`](computenodegraph/statedefinition/options-swift.struct.md).
-- [var scope: ComputeNodeGraph.Scope](computenodegraph/statedefinition/scope.md)
+- [var options: ComputeNodeGraph.StateDefinition.Options](./statedefinition/options-swift.property.md)
+  Whether this state is read, written, or both. See [`ComputeNodeGraph.StateDefinition.Options`](./statedefinition/options-swift.struct.md).
+- [var scope: ComputeNodeGraph.Scope](./statedefinition/scope.md)
   The scope that owns this state. For example, `ComputeNodeGraph/Scope/element` stores a value per particle, while `ComputeNodeGraph/Scope/emitter` stores a single value used by the emission stage.
-- [var type: ComputeNodeGraph.StateType](computenodegraph/statedefinition/type.md)
+- [var type: ComputeNodeGraph.StateType](./statedefinition/type.md)
   The data type of the stored value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # NSBatchInsertRequestResultType
 
 **Framework**: Core Data  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Result types for a batch-insertion request.
 
@@ -20,33 +21,38 @@ Result types for a batch-insertion request.
 enum NSBatchInsertRequestResultType
 ```
 
+```c
+enum NSBatchInsertRequestResultType : NSUInteger;
+```
+
 ## Topics
 
 ### Request Types
-- [NSBatchInsertRequestResultType.statusOnly](nsbatchinsertrequestresulttype/statusonly.md)
+- [NSBatchInsertRequestResultType.statusOnly](./nsbatchinsertrequestresulttype/statusonly.md)
   A value that indicates that the return type is a Boolean value representing whether the batch-insertion request succeeded.
-- [NSBatchInsertRequestResultType.objectIDs](nsbatchinsertrequestresulttype/objectids.md)
+- [NSBatchInsertRequestResultType.objectIDs](./nsbatchinsertrequestresulttype/objectids.md)
   A value that indicates the return type is an array of object IDs that corresponds to the inserted rows.
-- [NSBatchInsertRequestResultType.count](nsbatchinsertrequestresulttype/count.md)
+- [NSBatchInsertRequestResultType.count](./nsbatchinsertrequestresulttype/count.md)
   A value that indicates that the return type is the number of inserted rows.
 ### Initializers
-- [init?(rawValue: UInt)](nsbatchinsertrequestresulttype/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./nsbatchinsertrequestresulttype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var result: Any?](nsbatchinsertresult/result.md)
+### Accessing Results
+- [var result: Any?](./nsbatchinsertresult/result.md)
   The result of a batch-insertion request.
-- [var resultType: NSBatchInsertRequestResultType](nsbatchinsertresult/resulttype.md)
+- [var resultType: NSBatchInsertRequestResultType](./nsbatchinsertresult/resulttype.md)
   The type of result that Core Data returns from this request.
 
 

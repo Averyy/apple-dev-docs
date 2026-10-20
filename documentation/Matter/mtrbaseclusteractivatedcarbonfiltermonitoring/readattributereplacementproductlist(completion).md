@@ -1,7 +1,8 @@
 # readAttributeReplacementProductList(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeReplacementProductList(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeReplacementProductList() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeReplacementProductListWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sub_library_command {
     ...
 };
@@ -17,9 +17,9 @@ struct sub_library_command {
 ## Topics
 
 ### Instance Properties
-- [cmd](sub_library_command/1525464-cmd.md)
-- [cmdsize](sub_library_command/1525627-cmdsize.md)
-- [sub_library](sub_library_command/1525659-sub_library.md)
+- [cmd](./sub_library_command/api-1525464-cmd.md)
+- [cmdsize](./sub_library_command/api-1525627-cmdsize.md)
+- [sub_library](./sub_library_command/api-1525659-sub_library.md)
 
 
 ---

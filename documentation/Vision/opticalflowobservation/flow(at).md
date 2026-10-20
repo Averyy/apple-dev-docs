@@ -1,7 +1,8 @@
 # flow(at:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the optical flow for the specified location in the observation image.
 

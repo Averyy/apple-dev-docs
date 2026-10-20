@@ -1,7 +1,8 @@
 # visibilityPriority(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines the visibility priority for a toolbar item.
 
@@ -23,7 +24,7 @@ Defines the visibility priority for a toolbar item.
 
 #### Discussion
 
-When toolbar space is limited, items with a lower priority move into the overflow menu before items with a higher priority. The default is [`automatic`](toolbaritemvisibilitypriority/automatic.md).
+When toolbar space is limited, items with a lower priority move into the overflow menu before items with a higher priority. The default is [`automatic`](../toolbaritemvisibilitypriority/automatic.md).
 
 For example, an important control can appear at the trailing edge of the toolbar, but still be shown as the window is made smaller:
 
@@ -50,7 +51,8 @@ struct RootView: View {
 
 ## See Also
 
-- [struct ToolbarItemVisibilityPriority](toolbaritemvisibilitypriority.md)
+### Controlling item visibility
+- [struct ToolbarItemVisibilityPriority](../toolbaritemvisibilitypriority.md)
   A value that defines the visibility priority of a toolbar item.
 
 

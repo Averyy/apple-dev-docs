@@ -1,7 +1,8 @@
 # HIDReportType.output
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An output report is data sent from the system to the device, typically used to set a device control.
 

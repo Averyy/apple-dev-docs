@@ -1,7 +1,8 @@
 # stroke(with:alpha:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws a line along the path using the specified blend mode and transparency values.
 
@@ -9,7 +10,7 @@ Draws a line along the path using the specified blend mode and transparency valu
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -17,6 +18,10 @@ Draws a line along the path using the specified blend mode and transparency valu
 
 ```swift
 func stroke(with blendMode: CGBlendMode, alpha: CGFloat)
+```
+
+```objc
+- (void) strokeWithBlendMode:(CGBlendMode) blendMode alpha:(CGFloat) alpha;
 ```
 
 #### Discussion
@@ -32,11 +37,12 @@ This method automatically saves the current graphics state prior to drawing and 
 
 ## See Also
 
-- [func fill()](uibezierpath/fill.md)
+### Drawing paths
+- [func fill()](./fill%28%29.md)
   Uses the current drawing properties to paint the region that the path encloses.
-- [func fill(with: CGBlendMode, alpha: CGFloat)](uibezierpath/fill(with:alpha:).md)
+- [func fill(with: CGBlendMode, alpha: CGFloat)](./fill%28with,alpha%29.md)
   Uses the specified blend mode and transparency values to paint the region that the path encloses.
-- [func stroke()](uibezierpath/stroke.md)
+- [func stroke()](./stroke%28%29.md)
   Draws a line along the path using the current drawing properties.
 
 

@@ -1,7 +1,8 @@
 # init(qos:flags:group:)
 
 **Framework**: Dispatch  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a dispatch queue scheduler options instance with the given options.
 
@@ -11,7 +12,7 @@ Creates a dispatch queue scheduler options instance with the given options.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

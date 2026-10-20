@@ -1,7 +1,8 @@
 # finish()
 
 **Framework**: StoreKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates to the App Store that the app delivered the purchased content or enabled the service to finish the transaction.
 
@@ -22,19 +23,20 @@ func finish() async
 
 ## Mentions
 
-- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
-- [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
-- [Supporting promoted Apple In-App Purchases in your app](supporting-promoted-in-app-purchases-in-your-app.md)
-- [Testing at all stages of development with Xcode and the sandbox](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
+- [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
+- [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
+- [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
+- [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md)
+- [Testing at all stages of development with Xcode and the sandbox](../testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
 
 #### Discussion
 
-Call [`finish()`](transaction/finish().md) to complete a transaction after you deliver the purchased content or enable the purchased service. For on-demand resources, don’t finish the transaction until the app completes downloading the resource or you’ve otherwise delivered the resource.
+Call [`finish()`](./finish%28%29.md) to complete a transaction after you deliver the purchased content or enable the purchased service. For on-demand resources, don’t finish the transaction until the app completes downloading the resource or you’ve otherwise delivered the resource.
 
 ## See Also
 
-- [static var unfinished: Transaction.Transactions](transaction/unfinished.md)
+### Finishing the transaction
+- [static var unfinished: Transaction.Transactions](./unfinished.md)
   A sequence that emits unfinished transactions for the customer.
 
 

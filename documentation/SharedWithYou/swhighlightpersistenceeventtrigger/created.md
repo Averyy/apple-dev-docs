@@ -1,7 +1,8 @@
 # SWHighlightPersistenceEventTrigger.created
 
 **Framework**: Shared with You  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Signifies a creation event.
 
@@ -18,13 +19,18 @@ Signifies a creation event.
 case created
 ```
 
+```c
+SWHighlightPersistenceEventTriggerCreated
+```
+
 ## See Also
 
-- [SWHighlightPersistenceEventTrigger.deleted](swhighlightpersistenceeventtrigger/deleted.md)
+### Persistence actions
+- [SWHighlightPersistenceEventTrigger.deleted](./deleted.md)
   Signifies a deletion event.
-- [SWHighlightPersistenceEventTrigger.renamed](swhighlightpersistenceeventtrigger/renamed.md)
+- [SWHighlightPersistenceEventTrigger.renamed](./renamed.md)
   Signifies a rename event.
-- [SWHighlightPersistenceEventTrigger.moved](swhighlightpersistenceeventtrigger/moved.md)
+- [SWHighlightPersistenceEventTrigger.moved](./moved.md)
   Signifies a move event.
 
 

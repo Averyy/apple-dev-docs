@@ -1,7 +1,8 @@
 # NSTextBlock.Layer.margin
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Margin of the text block: space surrounding the border.
 
@@ -14,11 +15,16 @@ Margin of the text block: space surrounding the border.
 case margin
 ```
 
+```c
+NSTextBlockLayerMargin
+```
+
 ## See Also
 
-- [NSTextBlock.Layer.padding](nstextblock/layer/padding.md)
+### Constants
+- [NSTextBlock.Layer.padding](./padding.md)
   Padding of the text block: space surrounding the content area extending to the border.
-- [NSTextBlock.Layer.border](nstextblock/layer/border.md)
+- [NSTextBlock.Layer.border](./border.md)
   The border of the text block.
 
 

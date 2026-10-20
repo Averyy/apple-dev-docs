@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ip6_mtuinfo {
     ...
 };
@@ -17,8 +17,8 @@ struct ip6_mtuinfo {
 ## Topics
 
 ### Instance Properties
-- [ip6m_addr](ip6_mtuinfo/1527648-ip6m_addr.md)
-- [ip6m_mtu](ip6_mtuinfo/1527654-ip6m_mtu.md)
+- [ip6m_addr](./ip6_mtuinfo/api-1527648-ip6m_addr.md)
+- [ip6m_mtu](./ip6_mtuinfo/api-1527654-ip6m_mtu.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # GLKViewDrawableStencilFormat.format8
 
 **Framework**: GLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An 8-bit stencil entry for each pixel.
 
@@ -16,9 +17,14 @@ An 8-bit stencil entry for each pixel.
 case format8
 ```
 
+```c
+GLKViewDrawableStencilFormat8
+```
+
 ## See Also
 
-- [GLKViewDrawableStencilFormat.formatNone](glkviewdrawablestencilformat/formatnone.md)
+### Constants
+- [GLKViewDrawableStencilFormat.formatNone](./formatnone.md)
   The underlying framebuffer object has no stencil buffer.
 
 

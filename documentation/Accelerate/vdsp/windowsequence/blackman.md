@@ -1,7 +1,8 @@
 # vDSP.WindowSequence.blackman
 
 **Framework**: Accelerate  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Blackman window, used to reduce spectral leakage prior to discrete Fourier transform.
 
@@ -11,7 +12,7 @@ The Blackman window, used to reduce spectral leakage prior to discrete Fourier t
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration
@@ -22,21 +23,23 @@ case blackman
 
 ## Mentions
 
-- [Reducing spectral leakage with windowing](reducing-spectral-leakage-with-windowing.md)
+- [Reducing spectral leakage with windowing](../../reducing-spectral-leakage-with-windowing.md)
 
 ## See Also
 
-- [Reducing spectral leakage with windowing](reducing-spectral-leakage-with-windowing.md)
+### Related Documentation
+- [Reducing spectral leakage with windowing](../../reducing-spectral-leakage-with-windowing.md)
   Multiply signal data by window sequence values when performing transforms with noninteger period signals.
-- [vDSP_blkman_window](vdsp_blkman_window.md)
+- [vDSP_blkman_window](../../vdsp_blkman_window.md)
   Creates a single-precision Blackman window.
-- [vDSP_blkman_windowD](vdsp_blkman_windowd.md)
+- [vDSP_blkman_windowD](../../vdsp_blkman_windowd.md)
   Creates a double-precision Blackman window.
-- [vDSP.WindowSequence.hamming](vdsp/windowsequence/hamming.md)
+### Enumeration Cases
+- [vDSP.WindowSequence.hamming](./hamming.md)
   The Hamming window, used to reduce spectral leakage prior to discrete Fourier transform.
-- [vDSP.WindowSequence.hanningDenormalized](vdsp/windowsequence/hanningdenormalized.md)
+- [vDSP.WindowSequence.hanningDenormalized](./hanningdenormalized.md)
   The denormalized-Hann window, used to reduce spectral leakage prior to discrete Fourier transform.
-- [vDSP.WindowSequence.hanningNormalized](vdsp/windowsequence/hanningnormalized.md)
+- [vDSP.WindowSequence.hanningNormalized](./hanningnormalized.md)
   The normalized-Hann window, used to reduce spectral leakage prior to discrete Fourier transform.
 
 

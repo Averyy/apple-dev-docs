@@ -1,7 +1,8 @@
 # NSWindow.DidExitFullScreenMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,15 +16,15 @@ struct DidExitFullScreenMessage
 ## Topics
 
 ### Initializers
-- [init(window: NSWindow)](nswindow/didexitfullscreenmessage/init(window:).md)
+- [init(window: NSWindow)](./didexitfullscreenmessage/init%28window%29.md)
 ### Instance Properties
-- [var window: NSWindow](nswindow/didexitfullscreenmessage/window.md)
+- [var window: NSWindow](./didexitfullscreenmessage/window.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

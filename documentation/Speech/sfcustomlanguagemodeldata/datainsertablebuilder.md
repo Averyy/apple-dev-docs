@@ -1,7 +1,8 @@
 # SFCustomLanguageModelData.DataInsertableBuilder
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A custom parameter attribute that constructs custom language model data from closures.
 
@@ -27,22 +28,23 @@ The `SFCustomLanguageModelData` class provides two methods for accumulating data
 ## Topics
 
 ### Result builder methods
-- [static func buildArray([any DataInsertable]) -> any DataInsertable](sfcustomlanguagemodeldata/datainsertablebuilder/buildarray(_:).md)
+- [static func buildArray([any DataInsertable]) -> any DataInsertable](./datainsertablebuilder/buildarray%28_%29.md)
   Enables support for `for..in` loops.
-- [static func buildBlock(any DataInsertable...) -> any DataInsertable](sfcustomlanguagemodeldata/datainsertablebuilder/buildblock(_:).md)
+- [static func buildBlock(any DataInsertable...) -> any DataInsertable](./datainsertablebuilder/buildblock%28_%29.md)
   Combines statement blocks into a single product.
-- [static func buildEither(first: any DataInsertable) -> any DataInsertable](sfcustomlanguagemodeldata/datainsertablebuilder/buildeither(first:).md)
+- [static func buildEither(first: any DataInsertable) -> any DataInsertable](./datainsertablebuilder/buildeither%28first%29.md)
   Enables support for `if-else` and `switch` constructs.
-- [static func buildEither(second: any DataInsertable) -> any DataInsertable](sfcustomlanguagemodeldata/datainsertablebuilder/buildeither(second:).md)
+- [static func buildEither(second: any DataInsertable) -> any DataInsertable](./datainsertablebuilder/buildeither%28second%29.md)
   Enables support for `if-else` and `switch` constructs.
-- [static func buildOptional((any DataInsertable)?) -> any DataInsertable](sfcustomlanguagemodeldata/datainsertablebuilder/buildoptional(_:).md)
+- [static func buildOptional((any DataInsertable)?) -> any DataInsertable](./datainsertablebuilder/buildoptional%28_%29.md)
   Enables support for `if` statements that do not have an `else` clause.
 
 ## See Also
 
-- [convenience init(locale: Locale, identifier: String, version: String, builder: () -> any DataInsertable)](sfcustomlanguagemodeldata/init(locale:identifier:version:builder:).md)
+### Creating a model data container
+- [convenience init(locale: Locale, identifier: String, version: String, builder: () -> any DataInsertable)](./init%28locale,identifier,version,builder%29.md)
   Constructs a data container using a builder
-- [init(locale: Locale, identifier: String, version: String)](sfcustomlanguagemodeldata/init(locale:identifier:version:).md)
+- [init(locale: Locale, identifier: String, version: String)](./init%28locale,identifier,version%29.md)
   Constructs an empty data container.
 
 

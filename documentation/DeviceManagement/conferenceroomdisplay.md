@@ -1,7 +1,8 @@
 # ConferenceRoomDisplay
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures Conference Room Display mode for Apple TV.
 
@@ -10,7 +11,7 @@ The payload that configures Conference Room Display mode for Apple TV.
 
 ## Declaration
 
-```swift
+```
 object ConferenceRoomDisplay
 ```
 
@@ -20,7 +21,7 @@ Specify `com.apple.conferenceroomdisplay` as the payload type.
 
 Conference Room Display mode locks Apple TV into that mode, to prevent other types of usage.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +33,7 @@ Conference Room Display mode locks Apple TV into that mode, to prevent other typ
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -74,7 +75,8 @@ Conference Room Display mode locks Apple TV into that mode, to prevent other typ
 
 ## See Also
 
-- [object TVRemote](tvremote.md)
+### Apple TV
+- [object TVRemote](./tvremote.md)
   The payload that configures the Apple TV remote.
 
 

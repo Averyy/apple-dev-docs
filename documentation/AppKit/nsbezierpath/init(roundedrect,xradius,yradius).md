@@ -1,7 +1,8 @@
 # init(roundedRect:xRadius:yRadius:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new Bézier path object initialized with a rounded rectangular path.
 
@@ -12,6 +13,10 @@ Creates and returns a new Bézier path object initialized with a rounded rectang
 
 ```swift
 init(roundedRect rect: NSRect, xRadius: CGFloat, yRadius: CGFloat)
+```
+
+```objc
++ (NSBezierPath *) bezierPathWithRoundedRect:(NSRect) rect xRadius:(CGFloat) xRadius yRadius:(CGFloat) yRadius;
 ```
 
 #### Return Value
@@ -30,16 +35,18 @@ The path is constructed in a counter-clockwise direction, starting at the top-le
 
 ## See Also
 
-- [func appendRoundedRect(NSRect, xRadius: CGFloat, yRadius: CGFloat)](nsbezierpath/appendroundedrect(_:xradius:yradius:).md)
+### Related Documentation
+- [func appendRoundedRect(NSRect, xRadius: CGFloat, yRadius: CGFloat)](./appendroundedrect%28_,xradius,yradius%29.md)
   Appends a rounded rectangular path to the path.
-- [init(ovalIn: NSRect)](nsbezierpath/init(ovalin:).md)
+### Creating a Bézier Path
+- [init(ovalIn: NSRect)](./init%28ovalin%29.md)
   Creates and returns a new Bézier path object initialized with an oval path inscribed in the specified rectangle.
-- [init(rect: NSRect)](nsbezierpath/init(rect:).md)
+- [init(rect: NSRect)](./init%28rect%29.md)
   Creates and returns a new Bézier path object initialized with a rectangular path.
-- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:)-96cxk.md)
-- [var flattened: NSBezierPath](nsbezierpath/flattened.md)
+- [init(cgPath: CGPath)](./init%28cgpath%29-96cxk.md)
+- [var flattened: NSBezierPath](./flattened.md)
   A flattened version of the path object.
-- [var reversed: NSBezierPath](nsbezierpath/reversed.md)
+- [var reversed: NSBezierPath](./reversed.md)
   A path containing the reversed contents of the current path object.
 
 

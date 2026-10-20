@@ -1,14 +1,15 @@
 # kIOTimingIDGTF_640x480_120hz
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kIOTimingIDGTF_640x480_120hz = 159
 ```
 

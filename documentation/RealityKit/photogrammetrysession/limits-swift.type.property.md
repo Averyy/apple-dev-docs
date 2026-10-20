@@ -1,7 +1,8 @@
 # limits
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Observer for the device-specific constant hardware limits for reconstruction.
 

@@ -1,7 +1,8 @@
 # primaryLanguage
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The primary language for a custom keyboard.
 
@@ -9,13 +10,17 @@ The primary language for a custom keyboard.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var primaryLanguage: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * primaryLanguage;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # hardSigmoid(alpha:beta:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a hard sigmoid activation operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a hard sigmoid activation operation to the current graph.
 ```swift
 func hardSigmoid(alpha: Float, beta: Float) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 ## Parameters
 

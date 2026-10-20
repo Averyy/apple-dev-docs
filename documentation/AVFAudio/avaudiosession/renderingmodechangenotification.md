@@ -1,7 +1,8 @@
 # renderingModeChangeNotification
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when the rendering mode changes.
 
@@ -17,23 +18,28 @@ A notification the system posts when the rendering mode changes.
 class let renderingModeChangeNotification: NSNotification.Name
 ```
 
+```c
+extern NSNotificationName const AVAudioSessionRenderingModeChangeNotification;
+```
+
 ## Topics
 
 ### User information keys
-- [let AVAudioSessionRenderingModeNewRenderingModeKey: String](avaudiosessionrenderingmodenewrenderingmodekey.md)
+- [let AVAudioSessionRenderingModeNewRenderingModeKey: String](../avaudiosessionrenderingmodenewrenderingmodekey.md)
   A key to retrieve an integer value that represents the new resolved rendering mode.
 
 ## See Also
 
-- [var renderingMode: AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.property.md)
+### Inspecting rendering capabilities
+- [var renderingMode: AVAudioSession.RenderingMode](./renderingmode-swift.property.md)
   The current audio session’s rendering mode.
-- [AVAudioSession.RenderingMode](avaudiosession/renderingmode-swift.enum.md)
+- [AVAudioSession.RenderingMode](./renderingmode-swift.enum.md)
   Audio session rendering mode identifiers.
-- [var supportedOutputChannelLayouts: [AVAudioChannelLayout]](avaudiosession/supportedoutputchannellayouts.md)
+- [var supportedOutputChannelLayouts: [AVAudioChannelLayout]](./supportedoutputchannellayouts.md)
   The array of channel layouts that the current route supports.
-- [class let renderingCapabilitiesChangeNotification: NSNotification.Name](avaudiosession/renderingcapabilitieschangenotification.md)
+- [class let renderingCapabilitiesChangeNotification: NSNotification.Name](./renderingcapabilitieschangenotification.md)
   A notification the system posts when the rendering capabilities change.
-- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](avaudiosession/spatialplaybackcapabilitieschangednotification.md)
+- [class let spatialPlaybackCapabilitiesChangedNotification: NSNotification.Name](./spatialplaybackcapabilitieschangednotification.md)
   A notification the system posts when its spatial playback capabilities change.
 
 

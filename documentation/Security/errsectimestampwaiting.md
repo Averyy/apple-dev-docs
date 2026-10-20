@@ -1,7 +1,8 @@
 # errSecTimestampWaiting
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A timestamp transaction is waiting.
 
@@ -18,6 +19,10 @@ A timestamp transaction is waiting.
 
 ```swift
 var errSecTimestampWaiting: OSStatus { get }
+```
+
+```c
+errSecTimestampWaiting
 ```
 
 

@@ -1,7 +1,8 @@
 # default
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default font design.
 
@@ -14,13 +15,18 @@ The default font design.
 static let `default`: NSFontDescriptor.SystemDesign
 ```
 
+```c
+extern NSFontDescriptorSystemDesign const NSFontDescriptorSystemDesignDefault;
+```
+
 ## See Also
 
-- [static let monospaced: NSFontDescriptor.SystemDesign](nsfontdescriptor/systemdesign/monospaced.md)
+### Designs
+- [static let monospaced: NSFontDescriptor.SystemDesign](./monospaced.md)
   A font with a monospace appearance.
-- [static let rounded: NSFontDescriptor.SystemDesign](nsfontdescriptor/systemdesign/rounded.md)
+- [static let rounded: NSFontDescriptor.SystemDesign](./rounded.md)
   A font with a rounded appearance.
-- [static let serif: NSFontDescriptor.SystemDesign](nsfontdescriptor/systemdesign/serif.md)
+- [static let serif: NSFontDescriptor.SystemDesign](./serif.md)
   A font with a serif design.
 
 

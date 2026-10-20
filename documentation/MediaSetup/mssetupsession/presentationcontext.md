@@ -1,7 +1,8 @@
 # presentationContext
 
 **Framework**: Media Setup  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A delegate that provides media setup display information to the system.
 
@@ -17,11 +18,16 @@ A delegate that provides media setup display information to the system.
 weak var presentationContext: (any MSAuthenticationPresentationContext)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak) id<MSAuthenticationPresentationContext> presentationContext;
+```
+
 ## See Also
 
-- [protocol MSAuthenticationPresentationContext](msauthenticationpresentationcontext.md)
+### Presenting the Configuration View
+- [protocol MSAuthenticationPresentationContext](../msauthenticationpresentationcontext.md)
   A protocol that provides media setup display information to the system.
-- [func start() throws](mssetupsession/start.md)
+- [func start() throws](./start%28%29.md)
   Initiates the service configuration process and sends the account details of the streaming media service to the user’s HomePod speakers.
 
 

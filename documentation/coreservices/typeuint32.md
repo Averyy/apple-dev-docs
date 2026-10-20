@@ -1,7 +1,8 @@
 # typeUInt32
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 32-bit unsigned integer.
 

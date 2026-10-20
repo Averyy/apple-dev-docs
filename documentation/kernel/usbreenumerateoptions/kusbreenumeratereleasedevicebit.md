@@ -1,7 +1,8 @@
 # kUSBReEnumerateReleaseDeviceBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The bit to release the device.
 
@@ -10,7 +11,7 @@ The bit to release the device.
 
 ## Declaration
 
-```swift
+```c
 kUSBReEnumerateReleaseDeviceBit = 29
 ```
 

@@ -1,7 +1,8 @@
 # DeviceActivityAuthorization
 
 **Framework**: Device Activity  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.0+
@@ -19,28 +20,29 @@ class DeviceActivityAuthorization
 ## Topics
 
 ### Initializers
-- [init()](deviceactivityauthorization/init.md)
+- [init()](./deviceactivityauthorization/init%28%29.md)
 ### Type Properties
-- [static var authorizedClientIdentifiers: [String]](deviceactivityauthorization/authorizedclientidentifiers.md)
-- [static var isOverridden: Bool](deviceactivityauthorization/isoverridden.md)
-- [static var sharingEnabled: Bool](deviceactivityauthorization/sharingenabled.md)
+- [static var authorizedClientIdentifiers: [String]](./deviceactivityauthorization/authorizedclientidentifiers.md)
+- [static var isOverridden: Bool](./deviceactivityauthorization/isoverridden.md)
+- [static var sharingEnabled: Bool](./deviceactivityauthorization/sharingenabled.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [DeviceActivityAuthorizing](deviceactivityauthorizing.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [DeviceActivityAuthorizing](./deviceactivityauthorizing.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol DeviceActivityAuthorizing](deviceactivityauthorizing.md)
+### Authorize access
+- [protocol DeviceActivityAuthorizing](./deviceactivityauthorizing.md)
 
 
 ---

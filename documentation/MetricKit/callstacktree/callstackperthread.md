@@ -1,7 +1,8 @@
 # callStackPerThread
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether call stacks are organized per-thread
 
@@ -20,13 +21,14 @@ let callStackPerThread: Bool
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 
-- [let callStackThreads: ContiguousArray<CallStackThread>](callstacktree/callstackthreads.md)
+### Threads and frames
+- [let callStackThreads: ContiguousArray<CallStackThread>](./callstackthreads.md)
   Array of call stack threads
-- [func forEachFrame((CallStackFrame) throws -> Void) rethrows](callstacktree/foreachframe(_:).md)
+- [func forEachFrame((CallStackFrame) throws -> Void) rethrows](./foreachframe%28_%29.md)
   Iterates all frames efficiently.
 
 

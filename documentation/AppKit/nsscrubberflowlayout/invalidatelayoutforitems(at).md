@@ -1,7 +1,8 @@
 # invalidateLayoutForItems(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the scrubber that it should perform a new layout pass for the items at the specified indexes.
 
@@ -12,6 +13,10 @@ Informs the scrubber that it should perform a new layout pass for the items at t
 
 ```swift
 func invalidateLayoutForItems(at invalidItemIndexes: IndexSet)
+```
+
+```objc
+- (void) invalidateLayoutForItemsAtIndexes:(NSIndexSet *) invalidItemIndexes;
 ```
 
 ## Parameters

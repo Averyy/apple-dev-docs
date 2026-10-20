@@ -1,7 +1,8 @@
 # axes
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scrollable axes of the scroll view.
 

@@ -1,9 +1,10 @@
 # kAXFontSizeKey
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
-Required key of the [`kAXFontTextAttribute`](kaxfonttextattribute.md) dictionary for the font size in a `CFNumberRef`.
+Required key of the [`kAXFontTextAttribute`](./kaxfonttextattribute.md) dictionary for the font size in a `CFNumberRef`.
 
 **Availability**:
 - macOS 10.4+
@@ -12,6 +13,10 @@ Required key of the [`kAXFontTextAttribute`](kaxfonttextattribute.md) dictionary
 
 ```swift
 var kAXFontSizeKey: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXFontSizeKey;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # optimizationLevel
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optimization level for the graph execution, default is MPSGraphOptimizationLevel1.
 
@@ -17,6 +18,10 @@ The optimization level for the graph execution, default is MPSGraphOptimizationL
 
 ```swift
 var optimizationLevel: MPSGraphOptimization { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphOptimization optimizationLevel;
 ```
 
 

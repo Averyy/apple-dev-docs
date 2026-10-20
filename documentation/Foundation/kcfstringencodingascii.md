@@ -1,7 +1,8 @@
 # kCFStringEncodingASCII
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -20,8 +21,9 @@ var kCFStringEncodingASCII: CFStringEncoding { get }
 
 ## See Also
 
-- [let NSOperationNotSupportedForKeyException: String](nsoperationnotsupportedforkeyexception.md)
-- [let NSURLSessionUploadTaskResumeData: String](nsurlsessionuploadtaskresumedata.md)
+### Variables
+- [let NSOperationNotSupportedForKeyException: String](./nsoperationnotsupportedforkeyexception.md)
+- [let NSURLSessionUploadTaskResumeData: String](./nsurlsessionuploadtaskresumedata.md)
   Key in the userInfo dictionary of an NSError received during a failed upload.
 
 

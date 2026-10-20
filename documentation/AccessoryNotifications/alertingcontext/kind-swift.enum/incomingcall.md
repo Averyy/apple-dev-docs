@@ -1,7 +1,8 @@
 # AlertingContext.Kind.incomingCall
 
 **Framework**: Accessory Notifications  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An incoming call notification.
 
@@ -20,11 +21,12 @@ Apply special handling for incoming calls on your accessory, such as full-screen
 
 ## See Also
 
-- [AlertingContext.Kind.notification](alertingcontext/kind-swift.enum/notification.md)
+### Identifying notification types
+- [AlertingContext.Kind.notification](./notification.md)
   A standard notification.
-- [AlertingContext.Kind.alarm](alertingcontext/kind-swift.enum/alarm.md)
+- [AlertingContext.Kind.alarm](./alarm.md)
   A classification for alarm notifications.
-- [AlertingContext.Kind.timer](alertingcontext/kind-swift.enum/timer.md)
+- [AlertingContext.Kind.timer](./timer.md)
   A timer notification.
 
 

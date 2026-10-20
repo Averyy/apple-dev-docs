@@ -1,7 +1,8 @@
 # completionBlock()
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the completion block object.
 
@@ -19,13 +20,18 @@ Returns the completion block object.
 class func completionBlock() -> (() -> Void)?
 ```
 
+```objc
++ (void (^)(void)) completionBlock;
+```
+
 #### Discussion
 
-See [`setCompletionBlock(_:)`](catransaction/setcompletionblock(_:).md) for a description of the role of the completion block object.
+See [`setCompletionBlock(_:)`](./setcompletionblock%28_%29.md) for a description of the role of the completion block object.
 
 ## See Also
 
-- [class func setCompletionBlock((() -> Void)?)](catransaction/setcompletionblock(_:).md)
+### Getting and Setting Completion Block Objects
+- [class func setCompletionBlock((() -> Void)?)](./setcompletionblock%28_%29.md)
   Sets the completion block object.
 
 

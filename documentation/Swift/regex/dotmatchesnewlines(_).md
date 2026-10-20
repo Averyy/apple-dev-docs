@@ -1,7 +1,8 @@
 # dotMatchesNewlines(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a regular expression where the “any” metacharacter (`.`) also matches against the start and end of a line.
 

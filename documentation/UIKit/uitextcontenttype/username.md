@@ -1,7 +1,8 @@
 # username
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A property that defines the content in a text input area as an account or login name.
 
@@ -18,11 +19,16 @@ A property that defines the content in a text input area as an account or login 
 static let username: UITextContentType
 ```
 
+```c
+extern UITextContentType const UITextContentTypeUsername;
+```
+
 ## See Also
 
-- [static let password: UITextContentType](uitextcontenttype/password.md)
+### Managing accounts
+- [static let password: UITextContentType](./password.md)
   A property that defines the content in a text input area as a password.
-- [static let newPassword: UITextContentType](uitextcontenttype/newpassword.md)
+- [static let newPassword: UITextContentType](./newpassword.md)
   A property that defines the content in a text input area as a new password.
 
 

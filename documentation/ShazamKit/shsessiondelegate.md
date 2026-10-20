@@ -1,7 +1,8 @@
 # SHSessionDelegate
 
 **Framework**: ShazamKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods that the session calls with the result of a match request.
 
@@ -20,30 +21,35 @@ Methods that the session calls with the result of a match request.
 protocol SHSessionDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol SHSessionDelegate <NSObject>
+```
+
 ## Topics
 
 ### Handling matches
-- [func session(SHSession, didFind: SHMatch)](shsessiondelegate/session(_:didfind:).md)
+- [func session(SHSession, didFind: SHMatch)](./shsessiondelegate/session%28_,didfind%29.md)
   Tells the delegate that the query signature matches an item in the catalog.
-- [func session(SHSession, didNotFindMatchFor: SHSignature, error: (any Error)?)](shsessiondelegate/session(_:didnotfindmatchfor:error:).md)
+- [func session(SHSession, didNotFindMatchFor: SHSignature, error: (any Error)?)](./shsessiondelegate/session%28_,didnotfindmatchfor,error%29.md)
   Tells the delegate that the query signature doesn’t match an item in the catalog, or that there’s an error.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SHSession](shsession.md)
+### Match audio
+- [class SHSession](./shsession.md)
   An object that matches a specific audio recording when a segment of that recording is part of captured sound in the Shazam catalog or your custom catalog.
-- [class SHManagedSession](shmanagedsession.md)
+- [class SHManagedSession](./shmanagedsession.md)
   An object that records and matches a recording with captured sound in the Shazam catalog or your custom catalog.
-- [class SHMatch](shmatch.md)
+- [class SHMatch](./shmatch.md)
   An object that represents the catalog media items that match a query.
-- [class SHMatchedMediaItem](shmatchedmediaitem.md)
+- [class SHMatchedMediaItem](./shmatchedmediaitem.md)
   An object that represents the metadata for a matched reference signature.
-- [class SHMediaItem](shmediaitem.md)
+- [class SHMediaItem](./shmediaitem.md)
   An object that represents the metadata for a reference signature.
 
 

@@ -1,7 +1,8 @@
 # oidExtendedKeyUsageIPSec
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 let oidExtendedKeyUsageIPSec: DERItem
+```
+
+```c
+extern const DERItem oidExtendedKeyUsageIPSec;
 ```
 
 

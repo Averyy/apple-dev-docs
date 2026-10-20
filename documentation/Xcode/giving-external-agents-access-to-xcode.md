@@ -1,6 +1,7 @@
 # Giving external agents access to Xcode
 
-**Framework**: Xcode
+**Framework**: Xcode  
+**Role**: Article
 
 Let agents access your project and Xcode capabilities using the Model Context Protocol.
 
@@ -16,40 +17,41 @@ If you use an external agent for development:
 
 Xcode alerts you when the external agent connects to Xcode and when it’s active.
 
-##### Update Intelligence Settings to Give External Agents Access to Xcode
+##### Update Intelligence settings to give external agents access to Xcode
 
 In Intelligence settings, allow external agents to connect with Xcode using its MCP server:
 
 1. Choose Xcode > Settings and select Intelligence in the sidebar.
 2. Under Model Context Protocol, turn on “Allow external agents to use Xcode tools.”
 
-![A screenshot of the Intelligence settings showing the “Allow external agents to use Xcode tools” toggle under Model Context Protocol.](/images/com.apple.Xcode/intelligence-settings@2x.png)
+![A screenshot of the Intelligence settings showing the “Allow external agents to use Xcode tools” toggle under Model Context Protocol.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings@2x.png)
 
-##### Configure External Agents to Use the Mcp Server
+##### Configure external agents to use the MCP server
 
 In Terminal, use the `xcrun mcpbridge` command to configure the external agent to use Xcode Tools. For example, run the following command in Terminal to give Claude Code access to your open project and Xcode capabilities:
 
-```None
+```
 claude mcp add --transport stdio xcode -- xcrun mcpbridge
 ```
 
 For Codex, run:
 
-```None
+```
 codex mcp add xcode -- xcrun mcpbridge
 ```
 
 To verify the configuration, enter `claude mcp list` or `codex mcp list` in Terminal.
 
-Optionally, add hints about Xcode and your project to configuration files, such as the `AGENTS.md` or `CLAUDE.md` files, in the location that the external agent uses. For more information on configuring agents that run inside Xcode, see [`Customize agent environments`](extending-and-customizing-agents#Customize-agent-environments.md).
+Optionally, add hints about Xcode and your project to configuration files, such as the `AGENTS.md` or `CLAUDE.md` files, in the location that the external agent uses. For more information on configuring agents that run inside Xcode, see [Customize agent environments](./extending-and-customizing-agents.md#Customize-agent-environments).
 
 Before prompting an external agent (outside of Xcode), be sure to open your project in Xcode.
 
 ## See Also
 
-- [Extending and customizing agents](extending-and-customizing-agents.md)
+### Agent configuration
+- [Extending and customizing agents](./extending-and-customizing-agents.md)
   Expand agent capabilities for your specific needs and application domain.
-- [Updating your Xcode project configuration file format](updating-your-xcode-project-configuration-file-format.md)
+- [Updating your Xcode project configuration file format](./updating-your-xcode-project-configuration-file-format.md)
   Configure your Xcode project to use the JSON project configuration file format that’s more human-readable and editable by coding intelligence agents.
 
 

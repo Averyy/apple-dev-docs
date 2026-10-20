@@ -1,6 +1,7 @@
 # Implementing a Multi-Touch app
 
-**Framework**: UIKit
+**Framework**: UIKit  
+**Role**: Article
 
 Learn how to create a simple app that handles multitouch input.
 
@@ -8,21 +9,21 @@ Learn how to create a simple app that handles multitouch input.
 
 Consider the app shown in the following image, where a single main view draws a gray circle at each touch location. When a touch ends, the circle disappears. When the user’s fingers move, the underlying circles move with them.
 
-![A screenshot from an app that draws gray circles on the screen at multiple touch points simultaneously.](/images/com.apple.uikit/implementing-a-multi-touch-app-1@2x.png)
+![A screenshot from an app that draws gray circles on the screen at multiple touch points simultaneously.](https://developer.apple.com/tutorials/images/com.apple.uikit/implementing-a-multi-touch-app-1@2x.png)
 
-The creation of this app begins with the Single View app template in Xcode. This type of app has a single view controller whose view — in this case, a custom subclass of [`UIView`](uiview.md) called `TouchableView` — fills the screen. The view contains only a label initially, but the app programmatically adds subviews later. The following image shows the storyboard for the view controller.
+The creation of this app begins with the Single View app template in Xcode. This type of app has a single view controller whose view — in this case, a custom subclass of [`UIView`](./uiview.md) called `TouchableView` — fills the screen. The view contains only a label initially, but the app programmatically adds subviews later. The following image shows the storyboard for the view controller.
 
-![A screenshot of a storyboard in Interface Builder showing a single view controller, whose view is of the custom type TouchableView.](/images/com.apple.uikit/implementing-a-multi-touch-app-2@2x.png)
+![A screenshot of a storyboard in Interface Builder showing a single view controller, whose view is of the custom type TouchableView.](https://developer.apple.com/tutorials/images/com.apple.uikit/implementing-a-multi-touch-app-2@2x.png)
 
-##### Implement the Touchableview Class
+##### Implement the TouchableView class
 
-The `TouchableView` class overrides the inherited [`touchesBegan(_:with:)`](uiresponder/touchesbegan(_:with:).md), [`touchesMoved(_:with:)`](uiresponder/touchesmoved(_:with:).md), [`touchesEnded(_:with:)`](uiresponder/touchesended(_:with:).md), and [`touchesCancelled(_:with:)`](uiresponder/touchescancelled(_:with:).md) methods. These methods handle the creation and management of subviews that draw the gray circles at each touch location. Specifically, these methods do the following:
+The `TouchableView` class overrides the inherited [`touchesBegan(_:with:)`](./uiresponder/touchesbegan%28_,with%29.md), [`touchesMoved(_:with:)`](./uiresponder/touchesmoved%28_,with%29.md), [`touchesEnded(_:with:)`](./uiresponder/touchesended%28_,with%29.md), and [`touchesCancelled(_:with:)`](./uiresponder/touchescancelled%28_,with%29.md) methods. These methods handle the creation and management of subviews that draw the gray circles at each touch location. Specifically, these methods do the following:
 
-- The [`touchesBegan(_:with:)`](uiresponder/touchesbegan(_:with:).md) method creates a new subview at the location of each touch event.
-- The [`touchesMoved(_:with:)`](uiresponder/touchesmoved(_:with:).md) method updates the position of the subview associated with each touch.
-- The [`touchesEnded(_:with:)`](uiresponder/touchesended(_:with:).md) and [`touchesCancelled(_:with:)`](uiresponder/touchescancelled(_:with:).md) methods remove the subview associated with each touch that ended.
+- The [`touchesBegan(_:with:)`](./uiresponder/touchesbegan%28_,with%29.md) method creates a new subview at the location of each touch event.
+- The [`touchesMoved(_:with:)`](./uiresponder/touchesmoved%28_,with%29.md) method updates the position of the subview associated with each touch.
+- The [`touchesEnded(_:with:)`](./uiresponder/touchesended%28_,with%29.md) and [`touchesCancelled(_:with:)`](./uiresponder/touchescancelled%28_,with%29.md) methods remove the subview associated with each touch that ended.
 
-The following code shows the main implementation of the `TouchableView` class and its touch handling methods. Each method iterates through the touches and performs the needed actions. The `touchViews` dictionary uses the [`UITouch`](uitouch.md) objects as keys to retrieve the subviews the user is manipulating onscreen.
+The following code shows the main implementation of the `TouchableView` class and its touch handling methods. Each method iterates through the touches and performs the needed actions. The `touchViews` dictionary uses the [`UITouch`](./uitouch.md) objects as keys to retrieve the subviews the user is manipulating onscreen.
 
 ```swift
 class TouchableView: UIView {
@@ -99,9 +100,9 @@ func removeViewForTouch (touch : UITouch ) {
 }
 ```
 
-##### Implement the Touchspotview Class
+##### Implement the TouchSpotView class
 
-The `TouchSpotView` class (shown in the following code) represents the custom subviews that draw the gray circles onscreen. `TouchSpotView` maintains its circular shape by setting the [`cornerRadius`](https://developer.apple.com/documentation/quartzcore/calayer/cornerradius) property of the layer each time its [`bounds`](uiview/bounds.md) property changes.
+The `TouchSpotView` class (shown in the following code) represents the custom subviews that draw the gray circles onscreen. `TouchSpotView` maintains its circular shape by setting the [`cornerRadius`](../QuartzCore/calayer/cornerradius.md) property of the layer each time its [`bounds`](./uiview/bounds.md) property changes.
 
 ```swift
 class TouchSpotView : UIView {
@@ -123,9 +124,10 @@ class TouchSpotView : UIView {
 
 ## See Also
 
-- [Getting high-fidelity input with coalesced touches](getting-high-fidelity-input-with-coalesced-touches.md)
+### Advanced touch handling
+- [Getting high-fidelity input with coalesced touches](./getting-high-fidelity-input-with-coalesced-touches.md)
   Learn how to support high-precision touches in your app.
-- [Minimizing latency with predicted touches](minimizing-latency-with-predicted-touches.md)
+- [Minimizing latency with predicted touches](./minimizing-latency-with-predicted-touches.md)
   Create a smooth and responsive drawing experience using UIKit’s predictions for touch locations.
 
 

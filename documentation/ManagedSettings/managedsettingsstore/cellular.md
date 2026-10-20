@@ -1,7 +1,8 @@
 # cellular
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Settings that affect cellular networking.
 
@@ -18,27 +19,28 @@ var cellular: CellularSettings
 
 ## See Also
 
-- [var account: AccountSettings](managedsettingsstore/account.md)
+### Restricting device settings
+- [var account: AccountSettings](./account.md)
   Settings that affect accounts.
-- [struct AccountSettings](accountsettings.md)
+- [struct AccountSettings](../accountsettings.md)
   An object that configures whether a user can modify their device’s account settings.
-- [struct CellularSettings](cellularsettings.md)
+- [struct CellularSettings](../cellularsettings.md)
   Constraints on the user’s cellular networking settings.
-- [var dateAndTime: DateAndTimeSettings](managedsettingsstore/dateandtime.md)
+- [var dateAndTime: DateAndTimeSettings](./dateandtime.md)
   Settings that affect the date and time.
-- [struct DateAndTimeSettings](dateandtimesettings.md)
+- [struct DateAndTimeSettings](../dateandtimesettings.md)
   Constraints on the device’s date and time settings.
-- [var passcode: PasscodeSettings](managedsettingsstore/passcode.md)
+- [var passcode: PasscodeSettings](./passcode.md)
   Settings that affect the device passcode.
-- [struct PasscodeSettings](passcodesettings.md)
+- [struct PasscodeSettings](../passcodesettings.md)
   Constraints on a user’s ability to change their device’s passcode.
-- [var shield: ShieldSettings](managedsettingsstore/shield.md)
+- [var shield: ShieldSettings](./shield.md)
   Settings that affect what activities the system covers with a shielding view on this device.
-- [struct ShieldSettings](shieldsettings.md)
+- [struct ShieldSettings](../shieldsettings.md)
   Constraints that indicate what apps and websites to cover with a shielding view.
-- [var siri: SiriSettings](managedsettingsstore/siri.md)
+- [var siri: SiriSettings](./siri.md)
   Settings that affect Siri.
-- [struct SiriSettings](sirisettings.md)
+- [struct SiriSettings](../sirisettings.md)
   Constraints on the device’s Siri settings.
 
 

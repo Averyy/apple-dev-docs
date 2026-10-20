@@ -1,7 +1,8 @@
 # kCGImagePropertyFileContentsDictionary
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A dictionary of properties related to the image’s on-disk file.
 
@@ -20,9 +21,13 @@ A dictionary of properties related to the image’s on-disk file.
 let kCGImagePropertyFileContentsDictionary: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyFileContentsDictionary;
+```
+
 #### Discussion
 
-The value of this property is a [`CFDictionary`](https://developer.apple.com/documentation/corefoundation/cfdictionary).
+The value of this property is a [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 
 
 ---

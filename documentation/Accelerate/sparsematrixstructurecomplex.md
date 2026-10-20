@@ -1,23 +1,28 @@
 # SparseMatrixStructureComplex
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type representing the sparsity structure of a sparse complex matrix.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 struct SparseMatrixStructureComplex
+```
+
+```c
+typedef struct { ... } SparseMatrixStructureComplex;
 ```
 
 #### Overview
@@ -38,23 +43,24 @@ CSR format data can be simulated by using a blockSize of `1` and setting the tra
 ## Topics
 
 ### Initializers
-- [init(rowCount: Int32, columnCount: Int32, columnStarts: UnsafeMutablePointer<Int>, rowIndices: UnsafeMutablePointer<Int32>, attributes: SparseAttributesComplex_t, blockSize: UInt8)](sparsematrixstructurecomplex/init(rowcount:columncount:columnstarts:rowindices:attributes:blocksize:).md)
+- [init(rowCount: Int32, columnCount: Int32, columnStarts: UnsafeMutablePointer<Int>, rowIndices: UnsafeMutablePointer<Int32>, attributes: SparseAttributesComplex_t, blockSize: UInt8)](./sparsematrixstructurecomplex/init%28rowcount,columncount,columnstarts,rowindices,attributes,blocksize%29.md)
 ### Instance Properties
-- [var attributes: SparseAttributesComplex_t](sparsematrixstructurecomplex/attributes.md)
+- [var attributes: SparseAttributesComplex_t](./sparsematrixstructurecomplex/attributes.md)
   A type representing the attributes of a matrix.
-- [var blockSize: UInt8](sparsematrixstructurecomplex/blocksize.md)
-- [var columnCount: Int32](sparsematrixstructurecomplex/columncount.md)
-- [var columnStarts: UnsafeMutablePointer<Int>](sparsematrixstructurecomplex/columnstarts.md)
-- [var rowCount: Int32](sparsematrixstructurecomplex/rowcount.md)
-- [var rowIndices: UnsafeMutablePointer<Int32>](sparsematrixstructurecomplex/rowindices.md)
+- [var blockSize: UInt8](./sparsematrixstructurecomplex/blocksize.md)
+- [var columnCount: Int32](./sparsematrixstructurecomplex/columncount.md)
+- [var columnStarts: UnsafeMutablePointer<Int>](./sparsematrixstructurecomplex/columnstarts.md)
+- [var rowCount: Int32](./sparsematrixstructurecomplex/rowcount.md)
+- [var rowIndices: UnsafeMutablePointer<Int32>](./sparsematrixstructurecomplex/rowindices.md)
 
 ## See Also
 
-- [struct SparseMatrix_Complex_Double](sparsematrix_complex_double.md)
+### Creating sparse complex matrices
+- [struct SparseMatrix_Complex_Double](./sparsematrix_complex_double.md)
   A type representing a sparse complex matrix.
-- [struct SparseMatrix_Complex_Float](sparsematrix_complex_float.md)
+- [struct SparseMatrix_Complex_Float](./sparsematrix_complex_float.md)
   A type representing a sparse complex matrix.
-- [struct SparseAttributesComplex_t](sparseattributescomplex_t.md)
+- [struct SparseAttributesComplex_t](./sparseattributescomplex_t.md)
   A type representing the attributes of a matrix.
 
 

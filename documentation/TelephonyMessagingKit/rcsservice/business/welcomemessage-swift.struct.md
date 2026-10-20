@@ -1,7 +1,8 @@
 # RCSService.Business.WelcomeMessage
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Structure containing details about a business’ welcome message.
 
@@ -17,19 +18,19 @@ struct WelcomeMessage
 ## Topics
 
 ### Instance Properties
-- [let content: RCSService.Business.WelcomeMessage.Content](rcsservice/business/welcomemessage-swift.struct/content-swift.property.md)
+- [let content: RCSService.Business.WelcomeMessage.Content](./welcomemessage-swift.struct/content-swift.property.md)
   The content of the message.
 ### Enumerations
-- [RCSService.Business.WelcomeMessage.Content](rcsservice/business/welcomemessage-swift.struct/content-swift.enum.md)
+- [RCSService.Business.WelcomeMessage.Content](./welcomemessage-swift.struct/content-swift.enum.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

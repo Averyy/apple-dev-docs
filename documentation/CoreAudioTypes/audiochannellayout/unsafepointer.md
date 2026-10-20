@@ -1,7 +1,8 @@
 # AudioChannelLayout.UnsafePointer
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 13.0+
@@ -21,22 +22,22 @@ struct UnsafePointer
 ## Topics
 
 ### Initializers
-- [init(UnsafePointer<AudioChannelLayout>)](audiochannellayout/unsafepointer/init(_:)-21nid.md)
-- [init?(UnsafePointer<AudioChannelLayout>?)](audiochannellayout/unsafepointer/init(_:)-2vicp.md)
+- [init(UnsafePointer<AudioChannelLayout>)](./unsafepointer/init%28_%29-21nid.md)
+- [init?(UnsafePointer<AudioChannelLayout>?)](./unsafepointer/init%28_%29-2vicp.md)
 ### Instance Properties
-- [var count: Int](audiochannellayout/unsafepointer/count.md)
+- [var count: Int](./unsafepointer/count.md)
   The number of `AudioChannelDescription`s
-- [var unsafePointer: UnsafePointer<AudioChannelLayout>](audiochannellayout/unsafepointer/unsafepointer.md)
+- [var unsafePointer: UnsafePointer<AudioChannelLayout>](./unsafepointer/unsafepointer.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

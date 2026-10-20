@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The number of folds used in the transition.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The number of folds used in the transition.
 var numberOfFolds: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float numberOfFolds;
+```
+
 ## See Also
 
-- [var bottomHeight: Float](ciaccordionfoldtransition/bottomheight.md)
+### Instance Properties
+- [var bottomHeight: Float](./bottomheight.md)
   The height of the accordion-fold part of the transition.
-- [var foldShadowAmount: Float](ciaccordionfoldtransition/foldshadowamount.md)
+- [var foldShadowAmount: Float](./foldshadowamount.md)
   A value that specifies the intensity of the shadow in the transtion.
 
 

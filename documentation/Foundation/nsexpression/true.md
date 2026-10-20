@@ -1,7 +1,8 @@
 # true
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An expression to evalutate if a conditional expression’s predicate evaluates to true.
 
@@ -21,17 +22,22 @@ An expression to evalutate if a conditional expression’s predicate evaluates t
 var `true`: NSExpression { get }
 ```
 
+```objc
+@property (copy, readonly) NSExpression * trueExpression;
+```
+
 #### Discussion
 
 Accessing this property raises an exception if it isn’t applicable to the expression.
 
 ## See Also
 
-- [func expressionValue(with: Any?, context: NSMutableDictionary?) -> Any?](nsexpression/expressionvalue(with:context:).md)
+### Evaluating an Expression
+- [func expressionValue(with: Any?, context: NSMutableDictionary?) -> Any?](./expressionvalue%28with,context%29.md)
   Evaluates an expression using a specified object and context.
-- [func allowEvaluation()](nsexpression/allowevaluation.md)
+- [func allowEvaluation()](./allowevaluation%28%29.md)
   Forces a securely decoded expression to allow evaluation.
-- [var `false`: NSExpression](nsexpression/false.md)
+- [var `false`: NSExpression](./false.md)
   An expression to evalutate if a conditional expression’s predicate evaluates to false.
 
 

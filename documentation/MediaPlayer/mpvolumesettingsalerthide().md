@@ -1,14 +1,17 @@
 # MPVolumeSettingsAlertHide()
 
 **Framework**: Media Player  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Hides the alert panel that controls the system volume.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 11.3
+- iPadOS 2.0+ - Deprecated in 11.3
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use MPVolumeView to present volume controls.
 
 ## Declaration
 
@@ -16,11 +19,16 @@ Hides the alert panel that controls the system volume.
 func MPVolumeSettingsAlertHide()
 ```
 
+```c
+extern void MPVolumeSettingsAlertHide();
+```
+
 ## See Also
 
-- [func MPVolumeSettingsAlertShow()](mpvolumesettingsalertshow().md)
+### Global volume setting methods
+- [func MPVolumeSettingsAlertShow()](./mpvolumesettingsalertshow%28%29.md)
   Displays an alert panel for controlling the system volume.
-- [func MPVolumeSettingsAlertIsVisible() -> Bool](mpvolumesettingsalertisvisible().md)
+- [func MPVolumeSettingsAlertIsVisible() -> Bool](./mpvolumesettingsalertisvisible%28%29.md)
   Returns a Boolean value indicating whether the volume alert panel is currently visible.
 
 

@@ -1,7 +1,8 @@
 # attributedString
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the source attributed string.
 
@@ -14,11 +15,16 @@ Returns the source attributed string.
 var attributedString: NSAttributedString { get }
 ```
 
+```objc
+@property (strong, readonly) NSAttributedString * attributedString;
+```
+
 ## See Also
 
-- [var paragraphContentRange: NSTextRange?](nstextparagraph/paragraphcontentrange.md)
+### Getting paragraph characteristics
+- [var paragraphContentRange: NSTextRange?](./paragraphcontentrange.md)
   Returns the range of the paragraph in the containing text’s attributed string.
-- [var paragraphSeparatorRange: NSTextRange?](nstextparagraph/paragraphseparatorrange.md)
+- [var paragraphSeparatorRange: NSTextRange?](./paragraphseparatorrange.md)
   Returns the range of the paragraph separator in the containing text’s attributed string.
 
 

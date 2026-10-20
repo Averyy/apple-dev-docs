@@ -1,7 +1,8 @@
 # splitViewItem(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the corresponding split view item for the specified child view controller of the split view controller.
 
@@ -14,6 +15,10 @@ Returns the corresponding split view item for the specified child view controlle
 func splitViewItem(for viewController: NSViewController) -> NSSplitViewItem?
 ```
 
+```objc
+- (NSSplitViewItem *) splitViewItemForViewController:(NSViewController *) viewController;
+```
+
 #### Return Value
 
 The corresponding split view item, or `nil` if `viewController` isn’t a child of the split view controller.
@@ -24,11 +29,12 @@ The corresponding split view item, or `nil` if `viewController` isn’t a child 
 
 ## See Also
 
-- [var splitView: NSSplitView](nssplitviewcontroller/splitview.md)
+### Configuring and Managing a Split View Controller
+- [var splitView: NSSplitView](./splitview.md)
   The split view that the split view controller manages.
-- [var splitViewItems: [NSSplitViewItem]](nssplitviewcontroller/splitviewitems.md)
+- [var splitViewItems: [NSSplitViewItem]](./splitviewitems.md)
   The array of split view items that correspond to the split view controller’s child view controllers.
-- [class NSSplitViewItem](nssplitviewitem.md)
+- [class NSSplitViewItem](../nssplitviewitem.md)
   An item in a split view controller.
 
 

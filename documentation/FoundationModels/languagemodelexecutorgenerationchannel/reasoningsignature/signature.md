@@ -1,7 +1,8 @@
 # signature
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The opaque token that authenticates the reasoning entry.
 
@@ -21,7 +22,8 @@ var signature: Data
 
 ## See Also
 
-- [var tokenCount: Int](languagemodelexecutorgenerationchannel/reasoningsignature/tokencount.md)
+### Handling the reasoning signature
+- [var tokenCount: Int](./tokencount.md)
   The number of the tokens the signature carries.
 
 

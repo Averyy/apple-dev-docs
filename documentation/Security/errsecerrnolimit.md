@@ -1,7 +1,8 @@
 # errSecErrnoLimit
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var errSecErrnoLimit: Int32 { get }
+```
+
+```c
+#define errSecErrnoLimit
 ```
 
 

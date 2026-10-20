@@ -1,7 +1,8 @@
 # data
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns a copy of the provider’s data.
 
@@ -10,7 +11,7 @@ Returns a copy of the provider’s data.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.3+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns a copy of the provider’s data.
 
 ```swift
 var data: CFData? { get }
+```
+
+```c
+extern CFDataRefCGDataProviderCopyData(CGDataProviderRef provider);
 ```
 
 

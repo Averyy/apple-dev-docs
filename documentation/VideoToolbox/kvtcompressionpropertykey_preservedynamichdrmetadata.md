@@ -1,7 +1,8 @@
 # kVTCompressionPropertyKey_PreserveDynamicHDRMetadata
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Specifies whether to preserve dynamic HDR metadata on the input pixel buffer.
 
@@ -19,17 +20,22 @@ Specifies whether to preserve dynamic HDR metadata on the input pixel buffer.
 let kVTCompressionPropertyKey_PreserveDynamicHDRMetadata: CFString
 ```
 
+```c
+extern CFStringRef const kVTCompressionPropertyKey_PreserveDynamicHDRMetadata;
+```
+
 ## See Also
 
-- [let kVTCompressionPropertyKey_Depth: CFString](kvtcompressionpropertykey_depth.md)
+### Bitstream Configuration
+- [let kVTCompressionPropertyKey_Depth: CFString](./kvtcompressionpropertykey_depth.md)
   The pixel depth of the encoded video.
-- [let kVTCompressionPropertyKey_H264EntropyMode: CFString](kvtcompressionpropertykey_h264entropymode.md)
+- [let kVTCompressionPropertyKey_H264EntropyMode: CFString](./kvtcompressionpropertykey_h264entropymode.md)
   The entropy encoding mode for H.264 compression.
-- [let kVTCompressionPropertyKey_HDRMetadataInsertionMode: CFString](kvtcompressionpropertykey_hdrmetadatainsertionmode.md)
-- [let kVTCompressionPropertyKey_OutputBitDepth: CFString](kvtcompressionpropertykey_outputbitdepth.md)
-- [let kVTCompressionPropertyKey_PreserveAlphaChannel: CFString](kvtcompressionpropertykey_preservealphachannel.md)
+- [let kVTCompressionPropertyKey_HDRMetadataInsertionMode: CFString](./kvtcompressionpropertykey_hdrmetadatainsertionmode.md)
+- [let kVTCompressionPropertyKey_OutputBitDepth: CFString](./kvtcompressionpropertykey_outputbitdepth.md)
+- [let kVTCompressionPropertyKey_PreserveAlphaChannel: CFString](./kvtcompressionpropertykey_preservealphachannel.md)
   A key that specifies whether to encode the alpha channel of input video frames.
-- [let kVTCompressionPropertyKey_ProfileLevel: CFString](kvtcompressionpropertykey_profilelevel.md)
+- [let kVTCompressionPropertyKey_ProfileLevel: CFString](./kvtcompressionpropertykey_profilelevel.md)
   The profile and level for the encoded bitstream.
 
 

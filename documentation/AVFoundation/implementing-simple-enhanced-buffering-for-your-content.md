@@ -1,12 +1,13 @@
 # Implementing simple enhanced buffering for your content
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: Article
 
 Configure your app for simple enhanced buffering to stream content faster to AirPlay-enabled devices and supported CarPlay vehicles.
 
 #### Overview
 
-The [`AVPlayer`](avplayer.md) and [`AVQueuePlayer`](avqueueplayer.md) classes provide the simplest way to enhance buffering for your content with AirPlay 2.
+The [`AVPlayer`](./avplayer.md) and [`AVQueuePlayer`](./avqueueplayer.md) classes provide the simplest way to enhance buffering for your content with AirPlay 2.
 
 To implement simple enhanced buffering, complete the following steps.
 
@@ -17,7 +18,7 @@ let player = AVQueuePlayer()
 ```
 
 1. Identify a URL that points to local or cloud content that you want to play.
-2. Create an [`AVAsset`](avasset.md) instance with a URL, and then create an [`AVPlayerItem`](avplayeritem.md) instance with that asset.
+2. Create an [`AVAsset`](./avasset.md) instance with a URL, and then create an [`AVPlayerItem`](./avplayeritem.md) instance with that asset.
 
 ```swift
 let url = URL(string: "http://www.examplecontenturl.com")!
@@ -39,9 +40,10 @@ player.play()
 
 ## See Also
 
-- [Implementing flexible enhanced buffering for your content](implementing-flexible-enhanced-buffering-for-your-content.md)
+### Buffered playback
+- [Implementing flexible enhanced buffering for your content](./implementing-flexible-enhanced-buffering-for-your-content.md)
   Configure your app for flexible enhanced buffering to stream content faster to AirPlay-enabled devices and supported CarPlay vehicles.
-- [Integrating AirPlay for long-form video apps](integrating-airplay-for-long-form-video-apps.md)
+- [Integrating AirPlay for long-form video apps](./integrating-airplay-for-long-form-video-apps.md)
   Integrate AirPlay features and implement a dedicated external playback experience by preparing the routing system for long-form video playback.
 
 

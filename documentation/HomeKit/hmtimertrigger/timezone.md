@@ -1,22 +1,29 @@
 # timeZone
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The timezone in which to evaluate the fire time.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
-- tvOS 10.0+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 8.0+ - Deprecated in 16.4
+- iPadOS 8.0+ - Deprecated in 16.4
+- Mac Catalyst 8.0+ - Deprecated in 16.4
+- tvOS 10.0+ - Deprecated in 16.4
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 9.4
+
+> **Deprecated**: Use [`HMEventTrigger`](../hmeventtrigger.md) with [`HMCalendarEvent`](../hmcalendarevent.md) for triggers based on a time-zone-relative time of day.
 
 ## Declaration
 
 ```swift
 var timeZone: TimeZone? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSTimeZone * timeZone;
 ```
 
 #### Discussion
@@ -25,11 +32,12 @@ If this value is `nil`, the trigger’s fire time will stay at the same relative
 
 ## See Also
 
-- [init(name: String, fireDate: Date, timeZone: TimeZone?, recurrence: DateComponents?, recurrenceCalendar: Calendar?)](hmtimertrigger/init(name:firedate:timezone:recurrence:recurrencecalendar:).md)
+### Deprecated symbols
+- [init(name: String, fireDate: Date, timeZone: TimeZone?, recurrence: DateComponents?, recurrenceCalendar: Calendar?)](./init%28name,firedate,timezone,recurrence,recurrencecalendar%29.md)
   Initializes a timer trigger with specified timing information.
-- [func updateTimeZone(TimeZone?, completionHandler: ((any Error)?) -> Void)](hmtimertrigger/updatetimezone(_:completionhandler:).md)
+- [func updateTimeZone(TimeZone?, completionHandler: ((any Error)?) -> Void)](./updatetimezone%28_,completionhandler%29.md)
   Updates the trigger’s time zone.
-- [var recurrenceCalendar: Calendar?](hmtimertrigger/recurrencecalendar.md)
+- [var recurrenceCalendar: Calendar?](./recurrencecalendar.md)
   The calendar in which the recurrence value is evaluated.
 
 

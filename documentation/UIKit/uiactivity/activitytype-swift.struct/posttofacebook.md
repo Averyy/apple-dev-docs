@@ -1,7 +1,8 @@
 # postToFacebook
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A type of activity that posts the provided content to the user’s wall on Facebook.
 
@@ -17,38 +18,43 @@ A type of activity that posts the provided content to the user’s wall on Faceb
 static let postToFacebook: UIActivity.ActivityType
 ```
 
+```c
+extern UIActivityType const UIActivityTypePostToFacebook;
+```
+
 #### Discussion
 
-When using this service, you can provide [`NSString`](https://developer.apple.com/documentation/foundation/nsstring), [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring), [`UIImage`](uiimage.md), and [`NSURL`](https://developer.apple.com/documentation/foundation/nsurl) objects as data for the activity items.
+When using this service, you can provide [`NSString`](../../../Foundation/nsstring.md), [`NSAttributedString`](../../../Foundation/nsattributedstring.md), [`UIImage`](../../uiimage.md), and [`NSURL`](../../../Foundation/nsurl.md) objects as data for the activity items.
 
 ## See Also
 
-- [static let addToHomeScreen: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/addtohomescreen.md)
-- [static let addToReadingList: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/addtoreadinglist.md)
+### Constants
+- [static let addToHomeScreen: UIActivity.ActivityType](./addtohomescreen.md)
+- [static let addToReadingList: UIActivity.ActivityType](./addtoreadinglist.md)
   A type of activity that adds the URL to Safari’s reading list.
-- [static let airDrop: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/airdrop.md)
+- [static let airDrop: UIActivity.ActivityType](./airdrop.md)
   A type of activity that makes the provided content available through AirDrop.
-- [static let assignToContact: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/assigntocontact.md)
+- [static let assignToContact: UIActivity.ActivityType](./assigntocontact.md)
   A type of activity that assigns the image to a contact.
-- [static let collaborationCopyLink: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/collaborationcopylink.md)
-- [static let collaborationInviteWithLink: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/collaborationinvitewithlink.md)
-- [static let copyToPasteboard: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/copytopasteboard.md)
+- [static let collaborationCopyLink: UIActivity.ActivityType](./collaborationcopylink.md)
+- [static let collaborationInviteWithLink: UIActivity.ActivityType](./collaborationinvitewithlink.md)
+- [static let copyToPasteboard: UIActivity.ActivityType](./copytopasteboard.md)
   A type of activity that posts the provided content to the pasteboard.
-- [static let mail: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/mail.md)
+- [static let mail: UIActivity.ActivityType](./mail.md)
   A type of activity that posts the provided content to a new email message.
-- [static let markupAsPDF: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/markupaspdf.md)
+- [static let markupAsPDF: UIActivity.ActivityType](./markupaspdf.md)
   A type of activity that marks up the provided content as a PDF file.
-- [static let message: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/message.md)
+- [static let message: UIActivity.ActivityType](./message.md)
   A type of activity that posts the provided content to the Messages app.
-- [static let openInIBooks: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/openinibooks.md)
+- [static let openInIBooks: UIActivity.ActivityType](./openinibooks.md)
   A type of activity that opens the content in iBooks.
-- [static let postToFlickr: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/posttoflickr.md)
+- [static let postToFlickr: UIActivity.ActivityType](./posttoflickr.md)
   A type of activity that posts the provided image to the user’s Flickr account.
-- [static let postToTencentWeibo: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/posttotencentweibo.md)
+- [static let postToTencentWeibo: UIActivity.ActivityType](./posttotencentweibo.md)
   A type of activity that posts the provided content to the user’s Tencent Weibo feed.
-- [static let postToTwitter: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/posttotwitter.md)
+- [static let postToTwitter: UIActivity.ActivityType](./posttotwitter.md)
   A type of activity that posts the provided content to the user’s Twitter feed.
-- [static let postToVimeo: UIActivity.ActivityType](uiactivity/activitytype-swift.struct/posttovimeo.md)
+- [static let postToVimeo: UIActivity.ActivityType](./posttovimeo.md)
   A type of activity that posts the provided video to the user’s Vimeo account.
 
 

@@ -1,7 +1,8 @@
 # OSLogEntrySignpost.SignpostType.undefined
 
 **Framework**: OSLog  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The signpost does not have a type.
 
@@ -20,17 +21,22 @@ The signpost does not have a type.
 case undefined
 ```
 
+```c
+OSLogEntrySignpostTypeUndefined
+```
+
 #### Discussion
 
 You should never encounter an undefined signpost type.
 
 ## See Also
 
-- [OSLogEntrySignpost.SignpostType.intervalBegin](oslogentrysignpost/signposttype-swift.enum/intervalbegin.md)
+### Enumeration Cases
+- [OSLogEntrySignpost.SignpostType.intervalBegin](./intervalbegin.md)
   The signpost marks the start of a time interval.
-- [OSLogEntrySignpost.SignpostType.intervalEnd](oslogentrysignpost/signposttype-swift.enum/intervalend.md)
+- [OSLogEntrySignpost.SignpostType.intervalEnd](./intervalend.md)
   The signpost marks the end of a time interval.
-- [OSLogEntrySignpost.SignpostType.event](oslogentrysignpost/signposttype-swift.enum/event.md)
+- [OSLogEntrySignpost.SignpostType.event](./event.md)
   The signpost marks an event.
 
 

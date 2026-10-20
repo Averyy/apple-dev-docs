@@ -1,7 +1,8 @@
 # ManipulationEvents.WillBegin
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The event that occurs when someone is about to start an entity manipulation gesture.
 
@@ -17,29 +18,30 @@ struct WillBegin
 ## Topics
 
 ### Instance Properties
-- [let entity: Entity](manipulationevents/willbegin/entity.md)
+- [let entity: Entity](./willbegin/entity.md)
   The component’s entity.
-- [let inputDeviceSet: ManipulationEvents.InputDeviceSet](manipulationevents/willbegin/inputdeviceset.md)
+- [let inputDeviceSet: ManipulationEvents.InputDeviceSet](./willbegin/inputdeviceset.md)
   The input element that triggered the interaction.
-- [let pivotPoint: Point3DFloat](manipulationevents/willbegin/pivotpoint.md)
+- [let pivotPoint: Point3DFloat](./willbegin/pivotpoint.md)
   This point is in the coordinate space configured in the view modifier.
 
 ## Relationships
 
 ### Conforms To
-- [Event](event.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Event](../event.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [ManipulationEvents.DidUpdateTransform](manipulationevents/didupdatetransform.md)
+### Detecting manipulation gesture events
+- [ManipulationEvents.DidUpdateTransform](./didupdatetransform.md)
   The event that occurs repeatedly when the entity’s transform updates during a manipulation gesture.
-- [ManipulationEvents.DidHandOff](manipulationevents/didhandoff.md)
+- [ManipulationEvents.DidHandOff](./didhandoff.md)
   The event that occurs during a manipulation gesture when someone passes an entity from one hand to the other.
-- [ManipulationEvents.WillRelease](manipulationevents/willrelease.md)
+- [ManipulationEvents.WillRelease](./willrelease.md)
   The event that occurs just as someone releases an entity during a manipulation gesture.
-- [ManipulationEvents.WillEnd](manipulationevents/willend.md)
+- [ManipulationEvents.WillEnd](./willend.md)
   The event that occurs at the end of a manipulation gesture, when the entity has reached its resting position, destination and the system no longer updates it.
 
 

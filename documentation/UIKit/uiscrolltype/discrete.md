@@ -1,7 +1,8 @@
 # UIScrollType.discrete
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A discrete scroll type that originates from a device like a mouse with a scroll wheel.
 
@@ -17,9 +18,14 @@ A discrete scroll type that originates from a device like a mouse with a scroll 
 case discrete
 ```
 
+```c
+UIScrollTypeDiscrete
+```
+
 ## See Also
 
-- [UIScrollType.continuous](uiscrolltype/continuous.md)
+### Constants
+- [UIScrollType.continuous](./continuous.md)
   A continuous scroll type that originates from a device like a trackpad.
 
 

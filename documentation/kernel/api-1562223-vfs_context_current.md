@@ -1,7 +1,8 @@
 # vfs_context_current
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Get the vfs_context for the current thread, or the kernel context if there is no context for current thread.
 
@@ -10,11 +11,11 @@ Get the vfs_context for the current thread, or the kernel context if there is no
 
 ## Declaration
 
-```swift
+```c
 vfs_context_t vfs_context_current(void);
 ```
 
-#### Return_value
+#### Return Value
 
 Context for current thread, or kernel context if thread context is unavailable.
 

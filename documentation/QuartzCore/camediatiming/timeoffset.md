@@ -2,6 +2,7 @@
 
 **Framework**: Core Animation  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Specifies an additional time offset in active local time.
@@ -20,13 +21,18 @@ Specifies an additional time offset in active local time.
 var timeOffset: CFTimeInterval { get set }
 ```
 
+```objc
+@property CFTimeInterval timeOffset;
+```
+
 #### Discussion
 
 Defaults to 0. .
 
 ## See Also
 
-- [var beginTime: CFTimeInterval](camediatiming/begintime.md)
+### Animation Start Time
+- [var beginTime: CFTimeInterval](./begintime.md)
   Specifies the begin time of the receiver in relation to its parent object, if applicable.
 
 

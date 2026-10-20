@@ -1,7 +1,8 @@
 # ControlSize.regular
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A control version that is the default size.
 
@@ -22,14 +23,15 @@ case regular
 
 ## See Also
 
-- [ControlSize.mini](controlsize/mini.md)
+### Getting control sizes
+- [ControlSize.mini](./mini.md)
   A control version that is minimally sized.
-- [ControlSize.small](controlsize/small.md)
+- [ControlSize.small](./small.md)
   A control version that is proportionally smaller size for space-constrained views.
-- [ControlSize.large](controlsize/large.md)
+- [ControlSize.large](./large.md)
   A control version that is prominently sized.
-- [ControlSize.extraLarge](controlsize/extralarge.md)
-  A control version that is substantially sized. The largest control size. Resolves to [`ControlSize.large`](controlsize/large.md) on platforms other than visionOS.
+- [ControlSize.extraLarge](./extralarge.md)
+  A control version that is substantially sized. The largest control size. Resolves to [`ControlSize.large`](./large.md) on platforms other than visionOS.
 
 
 ---

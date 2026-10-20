@@ -1,12 +1,15 @@
 # receiveMessage(using:messageID:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves an MMS message that matches the given identifiers.
 
 **Availability**:
-- iOS 26.0+
+- iOS 26.0+ - Deprecated in 26.1
+
+> **Deprecated**: Use IncomingMessageNotification.message instead.
 
 ## Declaration
 
@@ -20,9 +23,9 @@ The message matching the specified identifiers.
 
 #### Discussion
 
-You get the `cellularServiceID` and `messageID` from an [`MMSService.IncomingMessageNotification`](mmsservice/incomingmessagenotification.md) that you receive from the [`incomingMessageNotifications`](mmsservice/incomingmessagenotifications.md) asynchronous sequence.
+You get the `cellularServiceID` and `messageID` from an [`MMSService.IncomingMessageNotification`](./incomingmessagenotification.md) that you receive from the [`incomingMessageNotifications`](./incomingmessagenotifications.md) asynchronous sequence.
 
-> **Note**: [`TelephonyMessagingSession.Error.invalidSession`](telephonymessagingsession/error/invalidsession.md) if the session is no longer valid.
+> **Throws**: [`TelephonyMessagingSession.Error.invalidSession`](../telephonymessagingsession/error/invalidsession.md) if the session is no longer valid.
 
 ## Parameters
 

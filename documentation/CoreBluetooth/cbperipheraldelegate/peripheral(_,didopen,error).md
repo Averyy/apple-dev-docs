@@ -1,7 +1,8 @@
 # peripheral(_:didOpen:error:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Delivers the result of an attempt to open an L2CAP channel.
 
@@ -20,9 +21,13 @@ Delivers the result of an attempt to open an L2CAP channel.
 optional func peripheral(_ peripheral: CBPeripheral, didOpen channel: CBL2CAPChannel?, error: (any Error)?)
 ```
 
+```objc
+- (void) peripheral:(CBPeripheral *) peripheral didOpenL2CAPChannel:(CBL2CAPChannel *) channel error:(NSError *) error;
+```
+
 #### Discussion
 
-This method delivers the result of a previous call to [`openL2CAPChannel(_:)`](cbperipheral/openl2capchannel(_:).md).
+This method delivers the result of a previous call to [`openL2CAPChannel(_:)`](../cbperipheral/openl2capchannel%28_%29.md).
 
 
 ---

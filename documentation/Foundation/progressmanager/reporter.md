@@ -1,7 +1,8 @@
 # reporter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A `ProgressReporter` instance, used for providing read-only observation of progress updates or composing into other `ProgressManager`s.
 

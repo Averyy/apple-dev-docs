@@ -1,18 +1,21 @@
 # AnimatableModifier
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A modifier that can create another modifier with animation.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`Animatable`](./animatable.md) instead.
 
 ## Declaration
 
@@ -23,19 +26,20 @@ protocol AnimatableModifier : Animatable, ViewModifier
 ## Relationships
 
 ### Inherits From
-- [Animatable](animatable.md)
-- [ViewModifier](viewmodifier.md)
+- [Animatable](./animatable.md)
+- [ViewModifier](./viewmodifier.md)
 
 ## See Also
 
-- [protocol Animatable](animatable.md)
+### Making data animatable
+- [protocol Animatable](./animatable.md)
   A type that describes how to animate a property of a view.
-- [struct AnimatableValues](animatablevalues.md)
-- [struct AnimatablePair](animatablepair.md)
+- [struct AnimatableValues](./animatablevalues.md)
+- [struct AnimatablePair](./animatablepair.md)
   A pair of animatable values, which is itself animatable.
-- [protocol VectorArithmetic](vectorarithmetic.md)
+- [protocol VectorArithmetic](./vectorarithmetic.md)
   A type that can serve as the animatable data of an animatable type.
-- [struct EmptyAnimatableData](emptyanimatabledata.md)
+- [struct EmptyAnimatableData](./emptyanimatabledata.md)
   An empty type for animatable data.
 
 

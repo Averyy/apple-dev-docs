@@ -1,7 +1,8 @@
 # phoneticOrganizationName
 
 **Framework**: Contacts  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The phonetic name of the organization associated with the contact.
 
@@ -19,17 +20,30 @@ The phonetic name of the organization associated with the contact.
 var phoneticOrganizationName: String { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly) NSString * phoneticOrganizationName;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly) NSString * phoneticOrganizationName;
+```
+
 #### Discussion
 
 This property contains a string that specifies the pronunciation of the contact’s organization name.
 
 ## See Also
 
-- [var jobTitle: String](cncontact/jobtitle.md)
+### Getting Work Information
+- [var jobTitle: String](./jobtitle.md)
   The contact’s job title.
-- [var departmentName: String](cncontact/departmentname.md)
+- [var departmentName: String](./departmentname.md)
   The name of the department associated with the contact.
-- [var organizationName: String](cncontact/organizationname.md)
+- [var organizationName: String](./organizationname.md)
   The name of the organization associated with the contact.
 
 

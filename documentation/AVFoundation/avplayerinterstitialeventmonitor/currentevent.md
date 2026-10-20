@@ -1,7 +1,8 @@
 # currentEvent
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current interstitial event.
 
@@ -20,13 +21,18 @@ The current interstitial event.
 var currentEvent: AVPlayerInterstitialEvent? { get }
 ```
 
+```objc
+@property (readonly, nullable) AVPlayerInterstitialEvent * currentEvent;
+```
+
 #### Discussion
 
 The value is `nil` when primary content is playing.
 
 ## See Also
 
-- [class let currentEventDidChangeNotification: NSNotification.Name](avplayerinterstitialeventmonitor/currenteventdidchangenotification.md)
+### Monitoring the current event
+- [class let currentEventDidChangeNotification: NSNotification.Name](./currenteventdidchangenotification.md)
   A notification the system posts when the monitor’s current interstitial event changes.
 
 

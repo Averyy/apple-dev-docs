@@ -1,7 +1,8 @@
 # UnownedJob
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A unit of schedulable work.
 
@@ -25,57 +26,58 @@ struct UnownedJob
 
 Unless you’re implementing a scheduler, you don’t generally interact with jobs directly.
 
-An `UnownedJob` must be eventually run *exactly once* using `runSynchronously(on:)`. Not doing so is effectively going to leak and “hang” the work that the job represents (e.g. a [`Task`](task.md)).
+An `UnownedJob` must be eventually run *exactly once* using `runSynchronously(on:)`. Not doing so is effectively going to leak and “hang” the work that the job represents (e.g. a [`Task`](./task.md)).
 
 ## Topics
 
 ### Initializers
-- [init(ExecutorJob)](unownedjob/init(_:)-8ra8c.md)
+- [init(ExecutorJob)](./unownedjob/init%28_%29-8ra8c.md)
   Create an `UnownedJob` whose lifetime must be managed carefully until it is run exactly once.
-- [init(Job)](unownedjob/init(_:)-9f1zn.md)
+- [init(Job)](./unownedjob/init%28_%29-9f1zn.md)
   Create an `UnownedJob` whose lifetime must be managed carefully until it is run exactly once.
 ### Instance Properties
-- [var priority: JobPriority](unownedjob/priority.md)
+- [var priority: JobPriority](./unownedjob/priority.md)
   The priority of this job.
 ### Instance Methods
-- [func runSynchronously(isolatedTo: UnownedSerialExecutor, taskExecutor: UnownedTaskExecutor)](unownedjob/runsynchronously(isolatedto:taskexecutor:).md)
+- [func runSynchronously(isolatedTo: UnownedSerialExecutor, taskExecutor: UnownedTaskExecutor)](./unownedjob/runsynchronously%28isolatedto,taskexecutor%29.md)
   Run this job isolated to the passed in serial executor, while executing it on the specified task executor.
-- [func runSynchronously(on: UnownedTaskExecutor)](unownedjob/runsynchronously(on:)-4eaxu.md)
+- [func runSynchronously(on: UnownedTaskExecutor)](./unownedjob/runsynchronously%28on%29-4eaxu.md)
   Run this job isolated to the passed task executor.
-- [func runSynchronously(on: UnownedSerialExecutor)](unownedjob/runsynchronously(on:)-o1nb.md)
+- [func runSynchronously(on: UnownedSerialExecutor)](./unownedjob/runsynchronously%28on%29-o1nb.md)
   Run this job on the passed in executor.
 ### Default Implementations
-- [CustomStringConvertible Implementations](unownedjob/customstringconvertible-implementations.md)
+- [CustomStringConvertible Implementations](./unownedjob/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Escapable](escapable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Copyable](./copyable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Escapable](./escapable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol Executor](executor.md)
+### Executors
+- [protocol Executor](./executor.md)
   A service that can execute jobs.
-- [struct ExecutorJob](executorjob.md)
+- [struct ExecutorJob](./executorjob.md)
   A unit of schedulable work.
-- [protocol SerialExecutor](serialexecutor.md)
+- [protocol SerialExecutor](./serialexecutor.md)
   A service that executes jobs.
-- [protocol TaskExecutor](taskexecutor.md)
+- [protocol TaskExecutor](./taskexecutor.md)
   An executor that may be used as preferred executor by a task.
-- [struct JobPriority](jobpriority.md)
+- [struct JobPriority](./jobpriority.md)
   The priority of this job.
-- [struct UnownedSerialExecutor](unownedserialexecutor.md)
+- [struct UnownedSerialExecutor](./unownedserialexecutor.md)
   An unowned reference to a serial executor (a `SerialExecutor` value).
-- [struct UnownedTaskExecutor](unownedtaskexecutor.md)
-- [var globalConcurrentExecutor: any TaskExecutor](globalconcurrentexecutor.md)
+- [struct UnownedTaskExecutor](./unownedtaskexecutor.md)
+- [var globalConcurrentExecutor: any TaskExecutor](./globalconcurrentexecutor.md)
   The global concurrent executor that is used by default for Swift Concurrency tasks.
-- [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](withtaskexecutorpreference(_:isolation:operation:).md)
-  Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
+- [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](./withtaskexecutorpreference%28_,isolation,operation%29.md)
+  Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](./taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
 
 
 ---

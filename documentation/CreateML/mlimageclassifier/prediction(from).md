@@ -1,7 +1,8 @@
 # prediction(from:)
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Generates a prediction for an image.
 
@@ -18,6 +19,12 @@ Generates a prediction for an image.
 func prediction(from image: CGImage) throws -> String
 ```
 
+**Other overloads**:
+
+```swift
+func prediction(from image: URL) throws -> String
+```
+
 #### Return Value
 
 A prediction label for the image.
@@ -28,7 +35,8 @@ A prediction label for the image.
 
 ## See Also
 
-- [func predictions(from: [URL]) throws -> [String]](mlimageclassifier/predictions(from:).md)
+### Testing an image classifier
+- [func predictions(from: [URL]) throws -> [String]](./predictions%28from%29.md)
   Generates predictions for an array of images.
 
 

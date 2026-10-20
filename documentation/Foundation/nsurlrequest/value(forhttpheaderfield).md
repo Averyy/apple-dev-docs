@@ -1,7 +1,8 @@
 # value(forHTTPHeaderField:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the value of the specified HTTP header field.
 
@@ -20,6 +21,10 @@ Returns the value of the specified HTTP header field.
 func value(forHTTPHeaderField field: String) -> String?
 ```
 
+```objc
+- (NSString *) valueForHTTPHeaderField:(NSString *) field;
+```
+
 #### Return Value
 
 The value associated with the header field `field`, or `nil` if there is no corresponding header field.
@@ -30,11 +35,13 @@ The value associated with the header field `field`, or `nil` if there is no corr
 
 ## See Also
 
-- [func addValue(String, forHTTPHeaderField: String)](nsmutableurlrequest/addvalue(_:forhttpheaderfield:).md)
+### Related Documentation
+- [func addValue(String, forHTTPHeaderField: String)](../nsmutableurlrequest/addvalue%28_,forhttpheaderfield%29.md)
   Adds a value to the header field.
-- [func setValue(String?, forHTTPHeaderField: String)](nsmutableurlrequest/setvalue(_:forhttpheaderfield:).md)
+- [func setValue(String?, forHTTPHeaderField: String)](../nsmutableurlrequest/setvalue%28_,forhttpheaderfield%29.md)
   Sets a value for the header field.
-- [var allHTTPHeaderFields: [String : String]?](nsurlrequest/allhttpheaderfields.md)
+### Getting header fields
+- [var allHTTPHeaderFields: [String : String]?](./allhttpheaderfields.md)
   A dictionary containing all of the HTTP header fields for a request.
 
 

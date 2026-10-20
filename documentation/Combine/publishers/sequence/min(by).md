@@ -1,7 +1,8 @@
 # min(by:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 13.0+
@@ -18,14 +19,17 @@
 func min(by areInIncreasingOrder: (Publishers.Sequence<Elements, Failure>.Output, Publishers.Sequence<Elements, Failure>.Output) -> Bool) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher
 ```
 
+Available when `Elements` conforms to `Sequence` and `Failure` is `Never`.
+
 ## See Also
 
-- [func count() -> Just<Int>](publishers/sequence/count-5rrw2.md)
-- [func count() -> Result<Int, Failure>.Publisher](publishers/sequence/count-5hb52.md)
-- [func count() -> Result<Int, Failure>.Publisher](publishers/sequence/count-b8ct.md)
-- [func max() -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](publishers/sequence/max.md)
-- [func max(by: (Publishers.Sequence<Elements, Failure>.Output, Publishers.Sequence<Elements, Failure>.Output) -> Bool) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](publishers/sequence/max(by:).md)
-- [func min() -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](publishers/sequence/min.md)
+### Applying mathematical operations on elements
+- [func count() -> Just<Int>](./count%28%29-5rrw2.md)
+- [func count() -> Result<Int, Failure>.Publisher](./count%28%29-5hb52.md)
+- [func count() -> Result<Int, Failure>.Publisher](./count%28%29-b8ct.md)
+- [func max() -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](./max%28%29.md)
+- [func max(by: (Publishers.Sequence<Elements, Failure>.Output, Publishers.Sequence<Elements, Failure>.Output) -> Bool) -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](./max%28by%29.md)
+- [func min() -> Optional<Publishers.Sequence<Elements, Failure>.Output>.Publisher](./min%28%29.md)
 
 
 ---

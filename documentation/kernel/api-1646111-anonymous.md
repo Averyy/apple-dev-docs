@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,14 +18,14 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kHFSFileRecord](1646111-anonymous/khfsfilerecord.md)
-- [kHFSFileThreadRecord](1646111-anonymous/khfsfilethreadrecord.md)
-- [kHFSFolderRecord](1646111-anonymous/khfsfolderrecord.md)
-- [kHFSFolderThreadRecord](1646111-anonymous/khfsfolderthreadrecord.md)
-- [kHFSPlusFileRecord](1646111-anonymous/khfsplusfilerecord.md)
-- [kHFSPlusFileThreadRecord](1646111-anonymous/khfsplusfilethreadrecord.md)
-- [kHFSPlusFolderRecord](1646111-anonymous/khfsplusfolderrecord.md)
-- [kHFSPlusFolderThreadRecord](1646111-anonymous/khfsplusfolderthreadrecord.md)
+- [kHFSFileRecord](./api-1646111-anonymous/khfsfilerecord.md)
+- [kHFSFileThreadRecord](./api-1646111-anonymous/khfsfilethreadrecord.md)
+- [kHFSFolderRecord](./api-1646111-anonymous/khfsfolderrecord.md)
+- [kHFSFolderThreadRecord](./api-1646111-anonymous/khfsfolderthreadrecord.md)
+- [kHFSPlusFileRecord](./api-1646111-anonymous/khfsplusfilerecord.md)
+- [kHFSPlusFileThreadRecord](./api-1646111-anonymous/khfsplusfilethreadrecord.md)
+- [kHFSPlusFolderRecord](./api-1646111-anonymous/khfsplusfolderrecord.md)
+- [kHFSPlusFolderThreadRecord](./api-1646111-anonymous/khfsplusfolderthreadrecord.md)
 
 
 ---

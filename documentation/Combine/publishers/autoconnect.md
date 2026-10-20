@@ -1,7 +1,8 @@
 # Publishers.Autoconnect
 
 **Framework**: Combine  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A publisher that automatically connects to an upstream connectable publisher.
 
@@ -22,30 +23,31 @@ class Autoconnect<Upstream> where Upstream : ConnectablePublisher
 
 #### Overview
 
-This publisher calls [`connect()`](connectablepublisher/connect().md) on the upstream [`ConnectablePublisher`](connectablepublisher.md) when first attached to by a subscriber.
+This publisher calls [`connect()`](../connectablepublisher/connect%28%29.md) on the upstream [`ConnectablePublisher`](../connectablepublisher.md) when first attached to by a subscriber.
 
 ## Topics
 
 ### Creating an autoconnect publisher
-- [init(upstream: Upstream)](publishers/autoconnect/init(upstream:).md)
+- [init(upstream: Upstream)](./autoconnect/init%28upstream%29.md)
   Creates a publisher that automatically connects to an upstream connectable publisher.
 ### Declaring supporting types
-- [Publishers.Autoconnect.Output](publishers/autoconnect/output.md)
+- [Publishers.Autoconnect.Output](./autoconnect/output.md)
   The kind of values published by this publisher.
-- [Publishers.Autoconnect.Failure](publishers/autoconnect/failure.md)
+- [Publishers.Autoconnect.Failure](./autoconnect/failure.md)
   The kind of errors this publisher might publish.
 ### Inspecting publisher properties
-- [let upstream: Upstream](publishers/autoconnect/upstream.md)
+- [let upstream: Upstream](./autoconnect/upstream.md)
   The publisher from which this publisher receives elements.
 
 ## Relationships
 
 ### Conforms To
-- [Publisher](publisher.md)
+- [Publisher](../publisher.md)
 
 ## See Also
 
-- [Publishers.MakeConnectable](publishers/makeconnectable.md)
+### Using explicit publisher connections
+- [Publishers.MakeConnectable](./makeconnectable.md)
   A publisher that provides explicit connectability to another publisher.
 
 

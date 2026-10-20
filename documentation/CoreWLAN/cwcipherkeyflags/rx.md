@@ -1,7 +1,8 @@
 # rx
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A flag that indicates to use the cipher key for packets received by the interface.
 
@@ -14,13 +15,18 @@ A flag that indicates to use the cipher key for packets received by the interfac
 static var rx: CWCipherKeyFlags { get }
 ```
 
+```c
+kCWCipherKeyFlagsRx
+```
+
 ## See Also
 
-- [static var unicast: CWCipherKeyFlags](cwcipherkeyflags/unicast.md)
+### Constants
+- [static var unicast: CWCipherKeyFlags](./unicast.md)
   A flag that indicates to use the cipher key for unicast packets.
-- [static var multicast: CWCipherKeyFlags](cwcipherkeyflags/multicast.md)
+- [static var multicast: CWCipherKeyFlags](./multicast.md)
   A flag that indicates to use the cipher key for multicast packets.
-- [static var tx: CWCipherKeyFlags](cwcipherkeyflags/tx.md)
+- [static var tx: CWCipherKeyFlags](./tx.md)
   A flag that indicates to use the cipher key for packets sent from the interface.
 
 

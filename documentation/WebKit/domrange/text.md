@@ -1,15 +1,20 @@
 # text
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS 10.5+
+- macOS 10.5+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 var text: String! { get }
+```
+
+```objc
+@property (copy, readonly) NSString * text;
 ```
 
 

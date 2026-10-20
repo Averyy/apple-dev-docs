@@ -1,7 +1,8 @@
 # nearbyInteractionOriginAnchor(session:isEnabled:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Specifies this view as the reference body for the nearby interaction session’s angle calculations.
 

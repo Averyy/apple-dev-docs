@@ -1,15 +1,18 @@
 # linearAttenuation
 
 **Framework**: GLKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A linear factor applied to the attenuation of a point light or spotlight.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.8+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- macOS 10.8+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -17,15 +20,20 @@ A linear factor applied to the attenuation of a point light or spotlight.
 var linearAttenuation: GLfloat { get set }
 ```
 
+```objc
+@property (nonatomic, assign) GLfloat linearAttenuation;
+```
+
 #### Discussion
 
-The distance attenuation factor is calculated as `1.0 / (k0 + k1 * d + k2 * d * d)`, where `d` represents the distance from the light to the point being lit. The [`linearAttenuation`](glkeffectpropertylight/linearattenuation.md) property is represented in this calculation as `k1`. The default value is `0.0`.
+The distance attenuation factor is calculated as `1.0 / (k0 + k1 * d + k2 * d * d)`, where `d` represents the distance from the light to the point being lit. The [`linearAttenuation`](./linearattenuation.md) property is represented in this calculation as `k1`. The default value is `0.0`.
 
 ## See Also
 
-- [var constantAttenuation: GLfloat](glkeffectpropertylight/constantattenuation.md)
+### Configuring Lighting Attenuation
+- [var constantAttenuation: GLfloat](./constantattenuation.md)
   A constant factor applied to the attenuation of a point light or spotlight.
-- [var quadraticAttenuation: GLfloat](glkeffectpropertylight/quadraticattenuation.md)
+- [var quadraticAttenuation: GLfloat](./quadraticattenuation.md)
   A quadratic factor applied to the attenuation of a point light or spotlight.
 
 

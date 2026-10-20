@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The system determines the restoration behavior.
 
@@ -26,7 +27,8 @@ By default, the toolbar restores when the user reverses scroll direction.
 
 ## See Also
 
-- [static let atScrollEdge: ToolbarMinimizationRestoration](toolbarminimizationrestoration/atscrolledge.md)
+### Getting restoration options
+- [static let atScrollEdge: ToolbarMinimizationRestoration](./atscrolledge.md)
   The toolbar restores only when the scroll view’s content reaches the scroll edge.
 
 

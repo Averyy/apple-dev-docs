@@ -1,7 +1,8 @@
 # dateFormatter
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A closure that maps dates to their string representations.
 

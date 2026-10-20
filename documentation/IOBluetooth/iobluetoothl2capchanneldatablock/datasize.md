@@ -1,15 +1,20 @@
 # dataSize
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var dataSize: Int
+```
+
+```c
+size_t dataSize;
 ```
 
 

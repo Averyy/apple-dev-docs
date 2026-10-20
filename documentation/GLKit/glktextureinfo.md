@@ -1,15 +1,18 @@
 # GLKTextureInfo
 
 **Framework**: GLKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
-Information about OpenGL textures created by the [`GLKTextureLoader`](glktextureloader.md) class.
+Information about OpenGL textures created by the [`GLKTextureLoader`](./glktextureloader.md) class.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- macOS 10.8+
-- tvOS 9.0+
+- iOS 5.0+ - Deprecated in 12.0
+- iPadOS 5.0+ - Deprecated in 12.0
+- macOS 10.8+ - Deprecated in 10.14
+- tvOS 9.0+ - Deprecated in 12.0
+
+> **Deprecated**: OpenGLES API deprecated. (Define GLES_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -17,53 +20,58 @@ Information about OpenGL textures created by the [`GLKTextureLoader`](glktexture
 class GLKTextureInfo
 ```
 
+```objc
+@interface GLKTextureInfo : NSObject
+```
+
 #### Overview
 
-When your app loads textures using the [`GLKTextureLoader`](glktextureloader.md) class, the texture loader returns information about the textures using [`GLKTextureInfo`](glktextureinfo.md) objects. Your app never creates [`GLKTextureInfo`](glktextureinfo.md) objects directly.
+When your app loads textures using the [`GLKTextureLoader`](./glktextureloader.md) class, the texture loader returns information about the textures using [`GLKTextureInfo`](./glktextureinfo.md) objects. Your app never creates [`GLKTextureInfo`](./glktextureinfo.md) objects directly.
 
 ## Topics
 
 ### Reading Texture Information
-- [var name: GLuint](glktextureinfo/name-swift.property.md)
+- [var name: GLuint](./glktextureinfo/name-swift.property.md)
   The OpenGL context’s name for the texture.
-- [var target: GLenum](glktextureinfo/target-swift.property.md)
+- [var target: GLenum](./glktextureinfo/target-swift.property.md)
   The OpenGL binding target for the texture.
-- [var height: GLuint](glktextureinfo/height-swift.property.md)
+- [var height: GLuint](./glktextureinfo/height-swift.property.md)
   The height of the loaded texture.
-- [var width: GLuint](glktextureinfo/width-swift.property.md)
+- [var width: GLuint](./glktextureinfo/width-swift.property.md)
   The width of the loaded texture.
-- [var textureOrigin: GLKTextureInfoOrigin](glktextureinfo/textureorigin-swift.property.md)
+- [var textureOrigin: GLKTextureInfoOrigin](./glktextureinfo/textureorigin-swift.property.md)
   The location of the origin in the loaded texture.
-- [var alphaState: GLKTextureInfoAlphaState](glktextureinfo/alphastate-swift.property.md)
+- [var alphaState: GLKTextureInfoAlphaState](./glktextureinfo/alphastate-swift.property.md)
   The state of the alpha component in the loaded texture.
-- [var containsMipmaps: Bool](glktextureinfo/containsmipmaps-swift.property.md)
+- [var containsMipmaps: Bool](./glktextureinfo/containsmipmaps-swift.property.md)
   A Boolean value that states whether the loaded texture contains mip maps.
 ### Constants
-- [enum GLKTextureInfoAlphaState](glktextureinfoalphastate.md)
+- [enum GLKTextureInfoAlphaState](./glktextureinfoalphastate.md)
   Values that describe the alpha information stored in a source image’s pixel data.
-- [enum GLKTextureInfoOrigin](glktextureinfoorigin.md)
+- [enum GLKTextureInfoOrigin](./glktextureinfoorigin.md)
   The location of the origin in the original source image.
 ### Instance Properties
-- [var arrayLength: GLuint](glktextureinfo/arraylength-swift.property.md)
-- [var depth: GLuint](glktextureinfo/depth-swift.property.md)
-- [var mimapLevelCount: GLuint](glktextureinfo/mimaplevelcount-swift.property.md)
+- [var arrayLength: GLuint](./glktextureinfo/arraylength-swift.property.md)
+- [var depth: GLuint](./glktextureinfo/depth-swift.property.md)
+- [var mimapLevelCount: GLuint](./glktextureinfo/mimaplevelcount-swift.property.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GLKTextureLoader](glktextureloader.md)
+### Texture Loading
+- [class GLKTextureLoader](./glktextureloader.md)
   A utility class that simplifies loading OpenGL or OpenGL ES texture datas from a variety of image file formats.
 
 

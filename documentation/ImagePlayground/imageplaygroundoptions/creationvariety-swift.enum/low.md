@@ -1,7 +1,8 @@
 # ImagePlaygroundOptions.CreationVariety.low
 
 **Framework**: Image Playground  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to use a low amount of variety when creating images.
 

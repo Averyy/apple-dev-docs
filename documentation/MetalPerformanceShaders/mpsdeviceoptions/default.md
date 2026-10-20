@@ -1,7 +1,8 @@
 # Default
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 12.2+
@@ -15,6 +16,10 @@
 
 ```swift
 static var Default: MPSDeviceOptions { get }
+```
+
+```c
+MPSDeviceOptionsDefault
 ```
 
 

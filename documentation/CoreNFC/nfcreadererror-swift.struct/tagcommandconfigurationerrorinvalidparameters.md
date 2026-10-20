@@ -1,7 +1,8 @@
 # tagCommandConfigurationErrorInvalidParameters
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The tag has been configured with invalid parameters.
 

@@ -1,7 +1,8 @@
 # fileProviderErrorForRejectedDeletion(of:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.0+
@@ -14,6 +15,10 @@
 
 ```swift
 class func fileProviderErrorForRejectedDeletion(of updatedVersion: NSFileProviderItem) -> Self
+```
+
+```objc
++ (instancetype) fileProviderErrorForRejectedDeletionOfItem:(NSFileProviderItem) updatedVersion;
 ```
 
 

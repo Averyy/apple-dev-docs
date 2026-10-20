@@ -1,7 +1,8 @@
 # childElements
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of zero or more child text elements.
 
@@ -18,11 +19,16 @@ An array of zero or more child text elements.
 var childElements: [NSTextElement] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<__kindof NSTextElement *> * childElements;
+```
+
 ## See Also
 
-- [var isRepresentedElement: Bool](nstextelement/isrepresentedelement.md)
+### Accessing text elements
+- [var isRepresentedElement: Bool](./isrepresentedelement.md)
   A Boolean value that indicates whether this element is in the text layout.
-- [var parent: NSTextElement?](nstextelement/parent.md)
+- [var parent: NSTextElement?](./parent.md)
   A value that represents the parent element if this text element is a child of an enclosing element.
 
 

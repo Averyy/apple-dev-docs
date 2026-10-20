@@ -1,7 +1,8 @@
 # subranges
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of subranges that are available through this discontiguous slice.
 

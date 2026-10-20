@@ -1,7 +1,8 @@
 # init(zoneID:subscriptionID:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a named subscription for all records in the specified record zone.
 
@@ -11,7 +12,7 @@ Creates a named subscription for all records in the specified record zone.
 - Mac Catalyst 13.1+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 - Swift 4.2+
 
@@ -32,9 +33,10 @@ The subscription that this method returns is a zone-based subscription that gene
 
 ## See Also
 
-- [convenience init(zoneID: CKRecordZone.ID)](ckrecordzonesubscription/init(zoneid:).md)
+### Creating a Zone-Based Subscription
+- [convenience init(zoneID: CKRecordZone.ID)](./init%28zoneid%29.md)
   Creates a subscription for all records in the specified record zone.
-- [init(coder: NSCoder)](ckrecordzonesubscription/init(coder:).md)
+- [init(coder: NSCoder)](./init%28coder%29.md)
   Creates a zone-based subscription from a serialized instance.
 
 

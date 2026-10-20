@@ -1,7 +1,8 @@
 # compare(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Compares another date to this one.
 
@@ -26,17 +27,18 @@ func compare(_ other: Date) -> ComparisonResult
 
 ## See Also
 
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+### Comparing Dates
+- [static func == (Date, Date) -> Bool](./eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
-- [static func > (Date, Date) -> Bool](date/_(_:_:)-880ns.md)
+- [static func > (Date, Date) -> Bool](./op%28_,_%29-880ns.md)
   Returns true if the left hand `Date` is later in time than the right hand `Date`.
-- [static func >= (Date, Date) -> Bool](date/_=(_:_:)-9dues.md)
+- [static func >= (Date, Date) -> Bool](./opeq%28_,_%29-9dues.md)
   Returns true if the left hand `Date` is later in time than or equal to the right hand `Date`.
-- [static func < (Date, Date) -> Bool](date/_(_:_:)-42kro.md)
+- [static func < (Date, Date) -> Bool](./op%28_,_%29-42kro.md)
   Returns true if the left hand `Date` is earlier in time than the right hand `Date`.
-- [static func <= (Date, Date) -> Bool](date/_=(_:_:)-9co12.md)
+- [static func <= (Date, Date) -> Bool](./opeq%28_,_%29-9co12.md)
   Returns true if the left hand `Date` is earlier in time than or equal to the right hand `Date`.
-- [func distance(to: Date) -> TimeInterval](date/distance(to:).md)
+- [func distance(to: Date) -> TimeInterval](./distance%28to%29.md)
   Returns the distance from this date to another date, specified as a time interval.
 
 

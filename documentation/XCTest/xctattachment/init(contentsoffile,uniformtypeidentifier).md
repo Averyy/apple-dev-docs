@@ -1,12 +1,17 @@
 # init(contentsOfFile:uniformTypeIdentifier:)
 
 **Framework**: XCTest  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 ## Declaration
 
 ```swift
 convenience init(contentsOfFile url: URL, uniformTypeIdentifier identifier: String)
+```
+
+```objc
++ (instancetype) attachmentWithContentsOfFileAtURL:(NSURL *) url uniformTypeIdentifier:(NSString *) identifier;
 ```
 
 #### Discussion

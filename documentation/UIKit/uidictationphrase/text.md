@@ -1,7 +1,8 @@
 # text
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The most likely textual interpretation of a dictated phrase.
 
@@ -9,7 +10,7 @@ The most likely textual interpretation of a dictated phrase.
 - iOS 5.1+
 - iPadOS 5.1+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,14 @@ The most likely textual interpretation of a dictated phrase.
 var text: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * text;
+```
+
 ## See Also
 
-- [var alternativeInterpretations: [String]?](uidictationphrase/alternativeinterpretations.md)
+### Obtaining textual interpretations of spoken text
+- [var alternativeInterpretations: [String]?](./alternativeinterpretations.md)
   An array of alternative textual interpretations of a dictated phrase.
 
 

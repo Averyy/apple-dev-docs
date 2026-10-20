@@ -1,7 +1,8 @@
 # init(urlTemplate:)
 
 **Framework**: MapKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a tile overlay object using the specified tile-access template.
 
@@ -19,6 +20,10 @@ Creates and returns a tile overlay object using the specified tile-access templa
 init(urlTemplate URLTemplate: String?)
 ```
 
+```objc
+- (instancetype) initWithURLTemplate:(NSString *) URLTemplate;
+```
+
 #### Return Value
 
 An initialized tile overlay object.
@@ -33,9 +38,10 @@ The default tile overlay object uses the template string you specify to request 
 
 ## See Also
 
-- [func url(forTilePath: MKTileOverlayPath) -> URL](mktileoverlay/url(fortilepath:).md)
+### Related Documentation
+- [func url(forTilePath: MKTileOverlayPath) -> URL](./url%28fortilepath%29.md)
   Returns the URL to use to access the specified tile.
-- [Location and Maps Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
+- [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497)
 
 
 ---

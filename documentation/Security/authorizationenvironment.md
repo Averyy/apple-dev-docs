@@ -1,7 +1,8 @@
 # AuthorizationEnvironment
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An authorization item set designated to hold environment information relevant to authorization decisions.
 
@@ -15,11 +16,15 @@ An authorization item set designated to hold environment information relevant to
 typealias AuthorizationEnvironment = AuthorizationItemSet
 ```
 
+```c
+typedef AuthorizationItemSet AuthorizationEnvironment;
+```
+
 #### Discussion
 
 The authorization items in the set represent data about the environment, such as user name and other information gathered during evaluation of authorization.
 
-This set is actually an instance of an [`AuthorizationItemSet`](authorizationitemset.md).
+This set is actually an instance of an [`AuthorizationItemSet`](./authorizationitemset.md).
 
 
 ---

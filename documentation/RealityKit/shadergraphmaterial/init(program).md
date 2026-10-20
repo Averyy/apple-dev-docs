@@ -1,7 +1,8 @@
 # init(program:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a ShaderGraphMaterial with an already initialized Program. Use this method when you want to preload a library of shaders and create instances of them quickly and synchronously via ShaderGraphMaterials at runtime.
 

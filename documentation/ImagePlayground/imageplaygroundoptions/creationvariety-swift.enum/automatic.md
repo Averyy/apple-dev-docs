@@ -1,7 +1,8 @@
 # ImagePlaygroundOptions.CreationVariety.automatic
 
 **Framework**: Image Playground  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to programmatically determine how much variety to use when creating images.
 

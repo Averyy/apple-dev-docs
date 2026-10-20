@@ -1,7 +1,8 @@
 # HMCameraSnapshot
 
 **Framework**: HomeKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a snapshot taken from a camera.
 
@@ -19,33 +20,38 @@ An object that represents a snapshot taken from a camera.
 class HMCameraSnapshot
 ```
 
+```objc
+@interface HMCameraSnapshot : HMCameraSource
+```
+
 ## Topics
 
 ### Accessing snapshot properties
-- [var captureDate: Date](hmcamerasnapshot/capturedate.md)
+- [var captureDate: Date](./hmcamerasnapshot/capturedate.md)
   Date and time at which the snapshot was requested.
 ### Initializers
-- [init()](hmcamerasnapshot/init.md)
+- [init()](./hmcamerasnapshot/init%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [HMCameraSource](hmcamerasource.md)
+- [HMCameraSource](./hmcamerasource.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func takeSnapshot()](hmcamerasnapshotcontrol/takesnapshot.md)
+### Taking snapshots
+- [func takeSnapshot()](./hmcamerasnapshotcontrol/takesnapshot%28%29.md)
   Takes an image snapshot.
-- [var mostRecentSnapshot: HMCameraSnapshot?](hmcamerasnapshotcontrol/mostrecentsnapshot.md)
+- [var mostRecentSnapshot: HMCameraSnapshot?](./hmcamerasnapshotcontrol/mostrecentsnapshot.md)
   The camera’s most recent snapshot.
 
 

@@ -1,7 +1,8 @@
 # contains(pasteboardTypes:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the pasteboard holds data of the specified representation type.
 
@@ -17,9 +18,13 @@ Returns whether the pasteboard holds data of the specified representation type.
 func contains(pasteboardTypes: [String]) -> Bool
 ```
 
+```objc
+- (BOOL) containsPasteboardTypes:(NSArray<NSString *> *) pasteboardTypes;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the pasteboard item holds data of the indicated representation type, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the pasteboard item holds data of the indicated representation type, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -33,13 +38,14 @@ Starting in iOS 10, you can directly check which data types are present on a pas
 
 ## See Also
 
-- [var types: [String]](uipasteboard/types.md)
+### Determining types of pasteboard items
+- [var types: [String]](./types.md)
   The types of the first item on the pasteboard.
-- [func types(forItemSet: IndexSet?) -> [[String]]?](uipasteboard/types(foritemset:).md)
+- [func types(forItemSet: IndexSet?) -> [[String]]?](./types%28foritemset%29.md)
   Returns an array of representation types for each specified pasteboard item.
-- [func contains(pasteboardTypes: [String], inItemSet: IndexSet?) -> Bool](uipasteboard/contains(pasteboardtypes:initemset:).md)
+- [func contains(pasteboardTypes: [String], inItemSet: IndexSet?) -> Bool](./contains%28pasteboardtypes,initemset%29.md)
   Returns whether the specified pasteboard items contain data of the given representation types.
-- [func itemSet(withPasteboardTypes: [String]) -> IndexSet?](uipasteboard/itemset(withpasteboardtypes:).md)
+- [func itemSet(withPasteboardTypes: [String]) -> IndexSet?](./itemset%28withpasteboardtypes%29.md)
   Returns an index set identifying pasteboard items having the specified representation types.
 
 

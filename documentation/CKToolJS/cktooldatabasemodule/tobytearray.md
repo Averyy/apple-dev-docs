@@ -1,7 +1,8 @@
 # toByteArray
 
 **Framework**: CKTool JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts a numeric array to a `ByteArray`.
 
@@ -10,7 +11,7 @@ Converts a numeric array to a `ByteArray`.
 
 ## Declaration
 
-```swift
+```
 static ByteArray toByteArray();
 ```
 

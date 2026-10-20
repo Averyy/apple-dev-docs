@@ -1,7 +1,8 @@
 # update(_:with:eventHandler:)
 
 **Framework**: Create ML Components  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates a fully connected network regressor model with a new sequence of examples.
 
@@ -19,6 +20,8 @@ Updates a fully connected network regressor model with a new sequence of example
 ```swift
 func update<InputSequence>(_ transformer: inout FullyConnectedNetworkRegressorModel<Scalar>, with input: InputSequence, eventHandler: EventHandler? = nil) async throws where InputSequence : Sequence, InputSequence.Element == AnnotatedFeature<MLShapedArray<Scalar>, Float>
 ```
+
+Available when `Scalar` conforms to `MLShapedArrayScalar` and `BinaryFloatingPoint`.
 
 ## Parameters
 

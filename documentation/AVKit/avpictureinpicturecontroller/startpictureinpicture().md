@@ -1,7 +1,8 @@
 # startPictureInPicture()
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts Picture in Picture, if possible.
 
@@ -19,27 +20,32 @@ Starts Picture in Picture, if possible.
 func startPictureInPicture()
 ```
 
+```objc
+- (void) startPictureInPicture;
+```
+
 ## Mentions
 
-- [Adopting Picture in Picture for video calls](adopting-picture-in-picture-for-video-calls.md)
+- [Adopting Picture in Picture for video calls](../adopting-picture-in-picture-for-video-calls.md)
 
 #### Discussion
 
-When you call this method and Picture in Picture (PiP) is possible, your delegate receives a call to its [`pictureInPictureControllerWillStartPictureInPicture(_:)`](avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerwillstartpictureinpicture(_:).md) method. After a successful start, your delegate receives a call to the [`pictureInPictureControllerDidStartPictureInPicture(_:)`](avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerdidstartpictureinpicture(_:).md) method.
+When you call this method and Picture in Picture (PiP) is possible, your delegate receives a call to its [`pictureInPictureControllerWillStartPictureInPicture(_:)`](../avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerwillstartpictureinpicture%28_%29.md) method. After a successful start, your delegate receives a call to the [`pictureInPictureControllerDidStartPictureInPicture(_:)`](../avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerdidstartpictureinpicture%28_%29.md) method.
 
-If PiP fails, your delegate receives a call to the [`pictureInPictureController(_:failedToStartPictureInPictureWithError:)`](avpictureinpicturecontrollerdelegate/pictureinpicturecontroller(_:failedtostartpictureinpicturewitherror:).md)method.
+If PiP fails, your delegate receives a call to the [`pictureInPictureController(_:failedToStartPictureInPictureWithError:)`](../avpictureinpicturecontrollerdelegate/pictureinpicturecontroller%28_,failedtostartpictureinpicturewitherror%29.md)method.
 
-Whether you explicitly stop PiP, the user stops it through interaction, or the system stops it, your delegate receives a call to the [`pictureInPictureControllerWillStopPictureInPicture(_:)`](avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerwillstoppictureinpicture(_:).md) method, followed by the [`pictureInPictureControllerDidStopPictureInPicture(_:)`](avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerdidstoppictureinpicture(_:).md) method after the PiP stop animation completes.
+Whether you explicitly stop PiP, the user stops it through interaction, or the system stops it, your delegate receives a call to the [`pictureInPictureControllerWillStopPictureInPicture(_:)`](../avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerwillstoppictureinpicture%28_%29.md) method, followed by the [`pictureInPictureControllerDidStopPictureInPicture(_:)`](../avpictureinpicturecontrollerdelegate/pictureinpicturecontrollerdidstoppictureinpicture%28_%29.md) method after the PiP stop animation completes.
 
 ## See Also
 
-- [var canStopPictureInPicture: Bool](avpictureinpicturecontroller/canstoppictureinpicture.md)
+### Controlling Picture in Picture playback
+- [var canStopPictureInPicture: Bool](./canstoppictureinpicture.md)
   A Boolean value that indicates whether Picture in Picture is active and is able to stop.
-- [var canStartPictureInPictureAutomaticallyFromInline: Bool](avpictureinpicturecontroller/canstartpictureinpictureautomaticallyfrominline.md)
+- [var canStartPictureInPictureAutomaticallyFromInline: Bool](./canstartpictureinpictureautomaticallyfrominline.md)
   A Boolean value that indicates whether Picture in Picture starts automatically when the controller embeds its content inline and the app transitions to the background.
-- [func stopPictureInPicture()](avpictureinpicturecontroller/stoppictureinpicture.md)
+- [func stopPictureInPicture()](./stoppictureinpicture%28%29.md)
   Stops Picture in Picture, if active.
-- [func invalidatePlaybackState()](avpictureinpicturecontroller/invalidateplaybackstate.md)
+- [func invalidatePlaybackState()](./invalidateplaybackstate%28%29.md)
   Invalidates the controller’s current playback state and fetches the updated state from the sample buffer playback delegate object.
 
 

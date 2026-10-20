@@ -1,7 +1,8 @@
 # NSTextPreview
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A snapshot of the text in your view, which the system uses to create user-visible effects.
 
@@ -15,9 +16,13 @@ A snapshot of the text in your view, which the system uses to create user-visibl
 class NSTextPreview
 ```
 
+```objc
+@interface NSTextPreview : NSObject
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom AppKit view](adding-writing-tools-support-to-a-custom-nsview.md)
+- [Adding Writing Tools support to a custom AppKit view](./adding-writing-tools-support-to-a-custom-nsview.md)
 
 #### Overview
 
@@ -28,30 +33,30 @@ Create an `NSTextPreview` object in response to specific system requests. Create
 ## Topics
 
 ### Creating a text preview
-- [convenience init(snapshotImage: CGImage, presentationFrame: NSRect)](nstextpreview/init(snapshotimage:presentationframe:).md)
+- [convenience init(snapshotImage: CGImage, presentationFrame: NSRect)](./nstextpreview/init%28snapshotimage,presentationframe%29.md)
   Creates a text preview using the specified image.
-- [init(snapshotImage: CGImage, presentationFrame: NSRect, candidateRects: [NSValue])](nstextpreview/init(snapshotimage:presentationframe:candidaterects:).md)
+- [init(snapshotImage: CGImage, presentationFrame: NSRect, candidateRects: [NSValue])](./nstextpreview/init%28snapshotimage,presentationframe,candidaterects%29.md)
   Creates a text preview using the specified image and rectangles that indicate the portions of text to highlight.
 ### Getting the preview details
-- [var previewImage: CGImage](nstextpreview/previewimage.md)
+- [var previewImage: CGImage](./nstextpreview/previewimage.md)
   The image that contains the requested text from your view.
-- [var presentationFrame: NSRect](nstextpreview/presentationframe.md)
+- [var presentationFrame: NSRect](./nstextpreview/presentationframe.md)
   The frame rectangle that places the preview image directly over the matching text.
-- [var candidateRects: [NSValue]](nstextpreview/candidaterects.md)
+- [var candidateRects: [NSValue]](./nstextpreview/candidaterects.md)
   Rectangles that define the specific portions of text to highlight.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

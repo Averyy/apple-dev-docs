@@ -1,7 +1,8 @@
 # toolCalls
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tool calls from the transcript, or an empty array if no transcript was provided.
 
@@ -20,9 +21,12 @@ The tool calls from the transcript, or an empty array if no transcript was provi
 var toolCalls: [Transcript.ToolCall] { get }
 ```
 
+Available when `Value` conforms to `Decodable`, `Encodable`, and `Sendable`.
+
 ## See Also
 
-- [struct StructuredTranscript](structuredtranscript.md)
+### Inspecting tool calls
+- [struct StructuredTranscript](../structuredtranscript.md)
 
 
 ---

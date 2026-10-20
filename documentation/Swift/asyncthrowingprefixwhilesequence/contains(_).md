@@ -1,7 +1,8 @@
 # contains(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the asynchronous sequence contains the given element.
 
@@ -19,6 +20,8 @@ Returns a Boolean value that indicates whether the asynchronous sequence contain
 ```swift
 func contains(_ search: Self.Element) async rethrows -> Bool
 ```
+
+Available when `Element` conforms to `Equatable`.
 
 #### Return Value
 

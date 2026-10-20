@@ -1,7 +1,8 @@
 # content
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content of the message.
 

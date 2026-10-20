@@ -1,9 +1,10 @@
 # LowLevelDeformation.Descriptor.Renormalization
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The renormalization data dimensions for a [`LowLevelDeformation`](lowleveldeformation.md).
+The renormalization data dimensions for a [`LowLevelDeformation`](../../lowleveldeformation.md).
 
 **Availability**:
 - iOS 27.0+
@@ -20,19 +21,19 @@ struct Renormalization
 ## Topics
 
 ### Initializers
-- [init(adjacenciesCount: Int, indexCount: Int)](lowleveldeformation/descriptor-swift.struct/renormalization-swift.struct/init(adjacenciescount:indexcount:).md)
+- [init(adjacenciesCount: Int, indexCount: Int)](./renormalization-swift.struct/init%28adjacenciescount,indexcount%29.md)
   Creates a renormalization descriptor.
 ### Instance Properties
-- [var adjacenciesCount: Int](lowleveldeformation/descriptor-swift.struct/renormalization-swift.struct/adjacenciescount.md)
+- [var adjacenciesCount: Int](./renormalization-swift.struct/adjacenciescount.md)
   The total number of triangle-adjacency entries across all vertices.
-- [var indexCount: Int](lowleveldeformation/descriptor-swift.struct/renormalization-swift.struct/indexcount.md)
+- [var indexCount: Int](./renormalization-swift.struct/indexcount.md)
   The number of indices in the triangle index buffer.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

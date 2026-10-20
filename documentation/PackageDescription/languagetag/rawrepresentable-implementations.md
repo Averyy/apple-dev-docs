@@ -1,11 +1,12 @@
 # RawRepresentable Implementations
 
-**Framework**: PackageDescription
+**Framework**: PackageDescription  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(rawValue: String)](languagetag/init(rawvalue:).md)
+- [init?(rawValue: String)](./init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 

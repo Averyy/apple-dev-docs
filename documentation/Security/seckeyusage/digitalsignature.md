@@ -1,7 +1,8 @@
 # digitalSignature
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The `DigitalSignature` bit is set in KeyUsage extension.
 
@@ -12,6 +13,10 @@ The `DigitalSignature` bit is set in KeyUsage extension.
 
 ```swift
 static var digitalSignature: SecKeyUsage { get }
+```
+
+```c
+kSecKeyUsageDigitalSignature
 ```
 
 

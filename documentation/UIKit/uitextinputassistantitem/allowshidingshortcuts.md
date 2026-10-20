@@ -1,7 +1,8 @@
 # allowsHidingShortcuts
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the user can hide the shortcuts bar.
 
@@ -16,15 +17,20 @@ A Boolean value that indicates whether the user can hide the shortcuts bar.
 var allowsHidingShortcuts: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, assign, readwrite) BOOL allowsHidingShortcuts;
+```
+
 #### Discussion
 
-When the value of this property is [`true`](https://developer.apple.com/documentation/swift/true), the user may hide the shortcuts bar when the keyboard is visible. When the value is [`false`](https://developer.apple.com/documentation/swift/false), the shortcuts bar remains visible while the keyboard is visible. The default value of this property is [`true`](https://developer.apple.com/documentation/swift/true).
+When the value of this property is [`true`](../../Swift/true.md), the user may hide the shortcuts bar when the keyboard is visible. When the value is [`false`](../../Swift/false.md), the shortcuts bar remains visible while the keyboard is visible. The default value of this property is [`true`](../../Swift/true.md).
 
 ## See Also
 
-- [var leadingBarButtonGroups: [UIBarButtonItemGroup]](uitextinputassistantitem/leadingbarbuttongroups.md)
+### Configuring the shortcuts bar
+- [var leadingBarButtonGroups: [UIBarButtonItemGroup]](./leadingbarbuttongroups.md)
   The array of button item groups to display before the typing suggestions.
-- [var trailingBarButtonGroups: [UIBarButtonItemGroup]](uitextinputassistantitem/trailingbarbuttongroups.md)
+- [var trailingBarButtonGroups: [UIBarButtonItemGroup]](./trailingbarbuttongroups.md)
   The array of button item groups to display after the typing suggestions.
 
 

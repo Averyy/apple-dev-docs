@@ -1,7 +1,8 @@
 # init(xattrValue:)
 
 **Framework**: FSKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a result for an extended-attribute-getting operation.
 
@@ -12,6 +13,10 @@ Creates a result for an extended-attribute-getting operation.
 
 ```swift
 init?(xattrValue value: Data)
+```
+
+```objc
+- (instancetype) initWithXattrValue:(NSData *) value;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # MTRColorControlClusterMoveToHueAndSaturationParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,29 +19,33 @@
 class MTRColorControlClusterMoveToHueAndSaturationParams
 ```
 
+```objc
+@interface MTRColorControlClusterMoveToHueAndSaturationParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var hue: NSNumber](mtrcolorcontrolclustermovetohueandsaturationparams/hue.md)
-- [var optionsMask: NSNumber](mtrcolorcontrolclustermovetohueandsaturationparams/optionsmask.md)
-- [var optionsOverride: NSNumber](mtrcolorcontrolclustermovetohueandsaturationparams/optionsoverride.md)
-- [var saturation: NSNumber](mtrcolorcontrolclustermovetohueandsaturationparams/saturation.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrcolorcontrolclustermovetohueandsaturationparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrcolorcontrolclustermovetohueandsaturationparams/timedinvoketimeoutms.md)
-- [var transitionTime: NSNumber](mtrcolorcontrolclustermovetohueandsaturationparams/transitiontime.md)
+- [var hue: NSNumber](./mtrcolorcontrolclustermovetohueandsaturationparams/hue.md)
+- [var optionsMask: NSNumber](./mtrcolorcontrolclustermovetohueandsaturationparams/optionsmask.md)
+- [var optionsOverride: NSNumber](./mtrcolorcontrolclustermovetohueandsaturationparams/optionsoverride.md)
+- [var saturation: NSNumber](./mtrcolorcontrolclustermovetohueandsaturationparams/saturation.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrcolorcontrolclustermovetohueandsaturationparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrcolorcontrolclustermovetohueandsaturationparams/timedinvoketimeoutms.md)
+- [var transitionTime: NSNumber](./mtrcolorcontrolclustermovetohueandsaturationparams/transitiontime.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

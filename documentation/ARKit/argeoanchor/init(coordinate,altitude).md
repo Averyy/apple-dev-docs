@@ -1,7 +1,8 @@
 # init(coordinate:altitude:)
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a location anchor with the given coordinate and altitude.
 
@@ -23,9 +24,10 @@ convenience init(coordinate: CLLocationCoordinate2D, altitude: CLLocationDistanc
 
 ## See Also
 
-- [init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance)](argeoanchor/init(name:coordinate:altitude:)-8sbh4.md)
+### Creating a Geo Anchor
+- [init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance)](./init%28name,coordinate,altitude%29-8sbh4.md)
   Initializes a named location anchor with the given coordinates and altitude.
-- [convenience init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance?)](argeoanchor/init(name:coordinate:altitude:)-csze.md)
+- [convenience init(name: String, coordinate: CLLocationCoordinate2D, altitude: CLLocationDistance?)](./init%28name,coordinate,altitude%29-csze.md)
   Initializes a named location anchor with the given coordinates and altitude.
 
 

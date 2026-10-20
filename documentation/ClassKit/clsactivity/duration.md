@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: ClassKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cumulative time in seconds that an activity has been active.
 
@@ -18,17 +19,22 @@ The cumulative time in seconds that an activity has been active.
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval duration;
+```
+
 #### Discussion
 
-When you create a new activity to represent a new attempt at a task by calling the [`createNewActivity()`](clscontext/createnewactivity().md) method, the duration initializes to zero. After calling the [`start()`](clsactivity/start().md) method, it begins counting seconds. When you call the [`stop()`](clsactivity/stop().md) method, the duration counter stops. It resumes counting (without resetting) if you make a new call to the [`start()`](clsactivity/start().md) method, enabling you to effectively pause an activity. However, when you create a new activity, the duration of the previous activity stops permanently and is no longer accessible to your app.
+When you create a new activity to represent a new attempt at a task by calling the [`createNewActivity()`](../clscontext/createnewactivity%28%29.md) method, the duration initializes to zero. After calling the [`start()`](./start%28%29.md) method, it begins counting seconds. When you call the [`stop()`](./stop%28%29.md) method, the duration counter stops. It resumes counting (without resetting) if you make a new call to the [`start()`](./start%28%29.md) method, enabling you to effectively pause an activity. However, when you create a new activity, the duration of the previous activity stops permanently and is no longer accessible to your app.
 
 ## See Also
 
-- [func start()](clsactivity/start.md)
+### Starting and stopping an activity
+- [func start()](./start%28%29.md)
   Tells an activity to start recording duration and progress for a task.
-- [func stop()](clsactivity/stop.md)
+- [func stop()](./stop%28%29.md)
   Tells an activity to stop or pause recording duration and progress for a task.
-- [var isStarted: Bool](clsactivity/isstarted.md)
+- [var isStarted: Bool](./isstarted.md)
   A Boolean that indicates whether an activity is running.
 
 

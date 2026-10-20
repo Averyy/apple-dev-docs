@@ -2,6 +2,7 @@
 
 **Framework**: BrowserEngineKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Stops the extension process.
@@ -17,13 +18,17 @@ Stops the extension process.
 func invalidate()
 ```
 
+```objc
+- (void) invalidate;
+```
+
 #### Discussion
 
 Call this method to signal to the system your app no longer needs the extension process. If this is the last connection from the system to the extension, the system ends the extension process.
 
 ## See Also
 
-- [func makeLibXPCConnectionError() throws -> xpc_connection_t](beextensionprocess/makelibxpcconnectionerror.md)
+- [func makeLibXPCConnectionError() throws -> xpc_connection_t](./makelibxpcconnectionerror%28%29.md)
   Creates a new libXPC connection to the extension process.
 
 

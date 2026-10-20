@@ -1,7 +1,8 @@
 # SymbolEffectConfiguration
 
 **Framework**: Symbols  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that specifies the configuration of a symbol effect.
 
@@ -23,14 +24,15 @@ struct SymbolEffectConfiguration
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var configuration: SymbolEffectConfiguration](symboleffect/configuration.md)
+### Accessing the configuration
+- [var configuration: SymbolEffectConfiguration](./symboleffect/configuration.md)
   A configuration for a symbol effect.
 
 

@@ -1,7 +1,8 @@
 # CXCallDirectoryProvider
 
 **Framework**: CallKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The principal object for a Call Directory app extension for a host app.
 
@@ -17,38 +18,43 @@ The principal object for a Call Directory app extension for a host app.
 class CXCallDirectoryProvider
 ```
 
+```objc
+@interface CXCallDirectoryProvider : NSObject
+```
+
 ## Mentions
 
-- [Identifying and blocking calls](identifying-and-blocking-calls.md)
+- [Identifying and blocking calls](./identifying-and-blocking-calls.md)
 
 ## Topics
 
 ### Beginning a Request
-- [func beginRequest(with: CXCallDirectoryExtensionContext)](cxcalldirectoryprovider/beginrequest(with:).md)
+- [func beginRequest(with: CXCallDirectoryExtensionContext)](./cxcalldirectoryprovider/beginrequest%28with%29.md)
   Tells the extension to prepare for a host app’s request.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSExtensionRequestHandling](../foundation/nsextensionrequesthandling.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSExtensionRequestHandling](../Foundation/nsextensionrequesthandling.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Identifying and blocking calls](identifying-and-blocking-calls.md)
+### Caller ID
+- [Identifying and blocking calls](./identifying-and-blocking-calls.md)
   Create a Call Directory app extension to identify and block incoming callers by their phone number.
-- [class CXCallDirectoryExtensionContext](cxcalldirectoryextensioncontext.md)
+- [class CXCallDirectoryExtensionContext](./cxcalldirectoryextensioncontext.md)
   A programmatic interface for adding identification and blocking entries to a Call Directory app extension.
-- [protocol CXCallDirectoryExtensionContextDelegate](cxcalldirectoryextensioncontextdelegate.md)
+- [protocol CXCallDirectoryExtensionContextDelegate](./cxcalldirectoryextensioncontextdelegate.md)
   A collection of methods a Call Directory extension context object calls when a request fails.
-- [class CXCallDirectoryManager](cxcalldirectorymanager.md)
+- [class CXCallDirectoryManager](./cxcalldirectorymanager.md)
   The programmatic interface to an object that manages a Call Directory app extension.
 
 

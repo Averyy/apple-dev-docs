@@ -1,7 +1,8 @@
 # AppScreenshot.Relationships.AppScreenshotSet
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The data and links that describe the relationship between the resources.
 
@@ -10,14 +11,14 @@ The data and links that describe the relationship between the resources.
 
 ## Declaration
 
-```swift
+```
 object AppScreenshot.Relationships.AppScreenshotSet
 ```
 
 ## Topics
 
 ### Objects
-- [object AppScreenshot.Relationships.AppScreenshotSet.Data](appscreenshot/relationships-data.dictionary/appscreenshotset-data.dictionary/data-data.dictionary.md)
+- [object AppScreenshot.Relationships.AppScreenshotSet.Data](./appscreenshotset-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

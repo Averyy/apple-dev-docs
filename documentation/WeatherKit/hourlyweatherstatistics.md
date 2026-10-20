@@ -1,7 +1,8 @@
 # HourlyWeatherStatistics
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that holds a collection of hour weather statistics data.
 
@@ -27,32 +28,32 @@ Weather statistics for each hour are derived from data for that hour, collected 
 ## Topics
 
 ### Instance Properties
-- [var baselineStartDate: Date](hourlyweatherstatistics/baselinestartdate.md)
+- [var baselineStartDate: Date](./hourlyweatherstatistics/baselinestartdate.md)
   The date when the statistics collection began.
-- [var endIndex: HourlyWeatherStatistics<T>.Index](hourlyweatherstatistics/endindex.md)
+- [var endIndex: HourlyWeatherStatistics<T>.Index](./hourlyweatherstatistics/endindex.md)
   The end index for the hourly weather statistics.
-- [var hours: [T]](hourlyweatherstatistics/hours.md)
+- [var hours: [T]](./hourlyweatherstatistics/hours.md)
   An ordered collection of hour weather statistics data of type `T`, for each requested hour.
-- [var metadata: WeatherMetadata](hourlyweatherstatistics/metadata.md)
+- [var metadata: WeatherMetadata](./hourlyweatherstatistics/metadata.md)
   Descriptive information about the weather statistics data.
-- [var startIndex: HourlyWeatherStatistics<T>.Index](hourlyweatherstatistics/startindex.md)
+- [var startIndex: HourlyWeatherStatistics<T>.Index](./hourlyweatherstatistics/startindex.md)
   The start index for the hourly weather statistics.
 ### Subscripts
-- [subscript(HourlyWeatherStatistics<T>.Index) -> HourlyWeatherStatistics<T>.Element](hourlyweatherstatistics/subscript(_:).md)
+- [subscript(HourlyWeatherStatistics<T>.Index) -> HourlyWeatherStatistics<T>.Element](./hourlyweatherstatistics/subscript%28_%29.md)
   The hour weather statistics at the provided index.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../Swift/bidirectionalcollection.md)
+- [Collection](../Swift/collection.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [RandomAccessCollection](../Swift/randomaccesscollection.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [Sequence](../Swift/sequence.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # collectionView(_:canEditItemAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Determines whether the specified item is editable.
 
@@ -18,9 +19,13 @@ Determines whether the specified item is editable.
 optional func collectionView(_ collectionView: UICollectionView, canEditItemAt indexPath: IndexPath) -> Bool
 ```
 
+```objc
+- (BOOL) collectionView:(UICollectionView *) collectionView canEditItemAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the item is editable, [`false`](https://developer.apple.com/documentation/swift/false) if it’s not. The default value is [`true`](https://developer.apple.com/documentation/swift/true).
+Returns [`true`](../../Swift/true.md) if the item is editable, [`false`](../../Swift/false.md) if it’s not. The default value is [`true`](../../Swift/true.md).
 
 ## Parameters
 

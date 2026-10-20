@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: PaperKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new ellipse.
 

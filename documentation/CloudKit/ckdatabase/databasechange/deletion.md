@@ -1,7 +1,8 @@
 # CKDatabase.DatabaseChange.Deletion
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A database change that represents the deletion of a record zone.
 
@@ -11,7 +12,7 @@ A database change that represents the deletion of a record zone.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
 
 ## Declaration
@@ -23,23 +24,23 @@ struct Deletion
 ## Topics
 
 ### Identifying the Deleted Record Zone
-- [var zoneID: CKRecordZone.ID](ckdatabase/databasechange/deletion/zoneid.md)
+- [var zoneID: CKRecordZone.ID](./deletion/zoneid.md)
   The identifier of the deleted record zone.
-- [var purged: Bool](ckdatabase/databasechange/deletion/purged.md)
+- [var purged: Bool](./deletion/purged.md)
   A Boolean value that indicates whether the user deleted the record zone when managing their iCloud storage.
 ### Instance Properties
-- [var reason: CKDatabase.DatabaseChange.Deletion.Reason](ckdatabase/databasechange/deletion/reason-swift.property.md)
+- [var reason: CKDatabase.DatabaseChange.Deletion.Reason](./deletion/reason-swift.property.md)
 ### Enumerations
-- [CKDatabase.DatabaseChange.Deletion.Reason](ckdatabase/databasechange/deletion/reason-swift.enum.md)
+- [CKDatabase.DatabaseChange.Deletion.Reason](./deletion/reason-swift.enum.md)
   Constants that represent why a record zone was deleted.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

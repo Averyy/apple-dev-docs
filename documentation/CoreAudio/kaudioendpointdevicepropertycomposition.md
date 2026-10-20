@@ -1,11 +1,12 @@
 # kAudioEndPointDevicePropertyComposition
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,10 +14,15 @@
 var kAudioEndPointDevicePropertyComposition: AudioObjectPropertySelector { get }
 ```
 
+```c
+kAudioEndPointDevicePropertyComposition
+```
+
 ## See Also
 
-- [var kAudioEndPointDevicePropertyEndPointList: AudioObjectPropertySelector](kaudioendpointdevicepropertyendpointlist.md)
-- [var kAudioEndPointDevicePropertyIsPrivate: AudioObjectPropertySelector](kaudioendpointdevicepropertyisprivate.md)
+### Constants
+- [var kAudioEndPointDevicePropertyEndPointList: AudioObjectPropertySelector](./kaudioendpointdevicepropertyendpointlist.md)
+- [var kAudioEndPointDevicePropertyIsPrivate: AudioObjectPropertySelector](./kaudioendpointdevicepropertyisprivate.md)
 
 
 ---

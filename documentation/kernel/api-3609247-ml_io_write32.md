@@ -1,14 +1,15 @@
 # ml_io_write32
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 void ml_io_write32(uintptr_t vaddr, uint32_t val);
 ```
 

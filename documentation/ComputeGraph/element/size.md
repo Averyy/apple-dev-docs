@@ -1,13 +1,14 @@
 # element::size
 
 **Framework**: Compute Graph  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the current size of the element.
 
 **Availability**:
-- macOS ?+
-- Reality Composer Pro ?+
+- macOS
+- Reality Composer Pro
 
 ## Declaration
 
@@ -23,7 +24,7 @@ The size as a 2D vector (width, height)
 
 Use this function to read the element’s dimensions in meters, which represent its width and height.
 
-> **Note**: ![Graph](/images/com.apple.computegraph/element__size.svg)
+> **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/element__size.svg)
 
 
 ---

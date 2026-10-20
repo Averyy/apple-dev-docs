@@ -1,18 +1,19 @@
 # Suite(_:_:)
 
 **Framework**: Swift Testing  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 Declare a test suite.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 - Swift 6.0+
 - Xcode 16.0+
 
@@ -38,17 +39,19 @@ When adding test functions to a type extension, do not use the `@Suite` attribut
 
 ## See Also
 
-- [Organizing test functions with suite types](organizingtests.md)
+### Related Documentation
+- [Organizing test functions with suite types](./organizingtests.md)
   Organize tests into test suites.
-- [Defining test functions](definingtests.md)
+### Essentials
+- [Defining test functions](./definingtests.md)
   Define a test function to validate that code is working correctly.
-- [Organizing test functions with suite types](organizingtests.md)
+- [Organizing test functions with suite types](./organizingtests.md)
   Organize tests into test suites.
-- [Migrating a test from XCTest](migratingfromxctest.md)
+- [Migrating a test from XCTest](./migratingfromxctest.md)
   Migrate an existing test method or test class written using XCTest.
-- [macro Test(String?, any TestTrait...)](test(_:_:).md)
+- [macro Test(String?, any TestTrait...)](./test%28_,_%29.md)
   Declare a test.
-- [struct Test](test.md)
+- [struct Test](./test.md)
   A type representing a test or suite.
 
 

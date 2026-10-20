@@ -1,7 +1,8 @@
 # init(reductionMode:offsets:strides:dilationRates:explicitPadding:boundaryMode:paddingStyle:paddingConstant:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a stencil operation descriptor with given values.
 
@@ -17,6 +18,10 @@ Creates a stencil operation descriptor with given values.
 
 ```swift
 convenience init?(reductionMode: MPSGraphReductionMode, offsets: [NSNumber], strides: [NSNumber], dilationRates: [NSNumber], explicitPadding: [NSNumber], boundaryMode: MPSGraphPaddingMode, paddingStyle: MPSGraphPaddingStyle, paddingConstant: Float)
+```
+
+```objc
++ (instancetype) descriptorWithReductionMode:(MPSGraphReductionMode) reductionMode offsets:(MPSShape *) offsets strides:(MPSShape *) strides dilationRates:(MPSShape *) dilationRates explicitPadding:(MPSShape *) explicitPadding boundaryMode:(MPSGraphPaddingMode) boundaryMode paddingStyle:(MPSGraphPaddingStyle) paddingStyle paddingConstant:(float) paddingConstant;
 ```
 
 #### Return Value

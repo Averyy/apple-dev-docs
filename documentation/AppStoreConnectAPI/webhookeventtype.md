@@ -1,7 +1,8 @@
 # WebhookEventType
 
 **Framework**: App Store Connect API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A string that represents the event types for a webhook notification.
 
@@ -10,44 +11,60 @@ A string that represents the event types for a webhook notification.
 
 ## Declaration
 
-```swift
+```
 string WebhookEventType
 ```
 
+## Possible Values
+
+- `APP_STORE_VERSION_APP_VERSION_STATE_UPDATED`
+- `BETA_FEEDBACK_CRASH_SUBMISSION_CREATED`
+- `BETA_FEEDBACK_SCREENSHOT_SUBMISSION_CREATED`
+- `ALTERNATIVE_DISTRIBUTION_PACKAGE_VERSION_CREATED`
+- `ALTERNATIVE_DISTRIBUTION_PACKAGE_AVAILABLE_UPDATED`
+- `ALTERNATIVE_DISTRIBUTION_TERRITORY_AVAILABILITY_UPDATED`
+- `BACKGROUND_ASSET_VERSION_APP_STORE_RELEASE_STATE_UPDATED`
+- `BACKGROUND_ASSET_VERSION_EXTERNAL_BETA_RELEASE_STATE_UPDATED`
+- `BACKGROUND_ASSET_VERSION_INTERNAL_BETA_RELEASE_CREATED`
+- `BACKGROUND_ASSET_VERSION_STATE_UPDATED`
+- `BUILD_BETA_DETAIL_EXTERNAL_BUILD_STATE_UPDATED`
+- `BUILD_UPLOAD_STATE_UPDATED`
+
 ## Mentions
 
-- [Understanding webhook events](webhook-events.md)
+- [Understanding webhook events](./webhook-events.md)
 
 ## See Also
 
-- [object Webhook](webhook.md)
+### Objects and types
+- [object Webhook](./webhook.md)
   A configured HTTP endpoint in App Store Connect that receives notifications when specific events occur.
-- [object WebhookCreateRequest](webhookcreaterequest.md)
+- [object WebhookCreateRequest](./webhookcreaterequest.md)
   The request body for registering a webhook endpoint to receive App Store Connect event notifications.
-- [object WebhookDeliveriesResponse](webhookdeliveriesresponse.md)
+- [object WebhookDeliveriesResponse](./webhookdeliveriesresponse.md)
   A response containing a list of webhook delivery records, each showing the outcome of a notification attempt.
-- [object WebhookDelivery](webhookdelivery.md)
+- [object WebhookDelivery](./webhookdelivery.md)
   A recorded delivery attempt of an event notification to a webhook endpoint, including the request and response details.
-- [object WebhookDeliveryCreateRequest](webhookdeliverycreaterequest.md)
+- [object WebhookDeliveryCreateRequest](./webhookdeliverycreaterequest.md)
   The request body for retrying a failed webhook delivery.
-- [object WebhookDeliveryResponse](webhookdeliveryresponse.md)
+- [object WebhookDeliveryResponse](./webhookdeliveryresponse.md)
   A response containing a single webhook delivery attempt record.
-- [object WebhookEvent](webhookevent.md)
+- [object WebhookEvent](./webhookevent.md)
   An event type that can trigger webhook notifications, such as build completion or review status changes.
-- [object WebhookPing](webhookping.md)
+- [object WebhookPing](./webhookping.md)
   A test payload sent to verify that a webhook endpoint is reachable and correctly configured.
-- [object WebhookPingCreateRequest](webhookpingcreaterequest.md)
+- [object WebhookPingCreateRequest](./webhookpingcreaterequest.md)
   The request body for sending a test ping event to verify that a webhook endpoint is reachable.
-- [object WebhookPingResponse](webhookpingresponse.md)
+- [object WebhookPingResponse](./webhookpingresponse.md)
   A response confirming that a test ping was sent to a webhook endpoint.
-- [object WebhookResponse](webhookresponse.md)
+- [object WebhookResponse](./webhookresponse.md)
   The response body for endpoints that create, read, or modify a single webhook.
-- [object WebhookUpdateRequest](webhookupdaterequest.md)
+- [object WebhookUpdateRequest](./webhookupdaterequest.md)
   The request body you use to update a webhook update request.
-- [object WebhooksResponse](webhooksresponse.md)
+- [object WebhooksResponse](./webhooksresponse.md)
   The response body for endpoints that list webhooks.
-- [object WebhookDeliveriesLinkagesResponse](webhookdeliverieslinkagesresponse.md)
-- [object AppWebhooksLinkagesResponse](appwebhookslinkagesresponse.md)
+- [object WebhookDeliveriesLinkagesResponse](./webhookdeliverieslinkagesresponse.md)
+- [object AppWebhooksLinkagesResponse](./appwebhookslinkagesresponse.md)
 
 
 ---

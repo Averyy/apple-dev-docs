@@ -1,7 +1,8 @@
 # VNRequestRevisionProviding
 
 **Framework**: Vision  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for specifying the revision number of Vision algorithms.
 
@@ -19,106 +20,111 @@ A protocol for specifying the revision number of Vision algorithms.
 protocol VNRequestRevisionProviding
 ```
 
+```objc
+@protocol VNRequestRevisionProviding
+```
+
 #### Overview
 
-Subclasses of [`VNRequest`](vnrequest.md) should adopt this protocol to specify which revision of an algorithm the Vision framework uses to generate requests.
+Subclasses of [`VNRequest`](./vnrequest.md) should adopt this protocol to specify which revision of an algorithm the Vision framework uses to generate requests.
 
 ## Topics
 
 ### Specifying Revision Number
-- [var requestRevision: Int](vnrequestrevisionproviding/requestrevision.md)
-  The revision of the [`VNRequest`](vnrequest.md) subclass used to generate the implementing object.
+- [var requestRevision: Int](./vnrequestrevisionproviding/requestrevision.md)
+  The revision of the [`VNRequest`](./vnrequest.md) subclass used to generate the implementing object.
 ### Determining Revision Type
-- [var VNRequestRevisionUnspecified: Int](vnrequestrevisionunspecified.md)
+- [var VNRequestRevisionUnspecified: Int](./vnrequestrevisionunspecified.md)
   A constant for specifying an unspecified request revision.
-- [var VNDetectRectanglesRequestRevision1: Int](vndetectrectanglesrequestrevision1.md)
+- [var VNDetectRectanglesRequestRevision1: Int](./vndetectrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the rectangle detection request.
-- [var VNTrackRectangleRequestRevision1: Int](vntrackrectanglerequestrevision1.md)
+- [var VNTrackRectangleRequestRevision1: Int](./vntrackrectanglerequestrevision1.md)
   A constant for specifying revision 1 of the rectangling tracking request.
-- [var VNTrackObjectRequestRevision1: Int](vntrackobjectrequestrevision1.md)
+- [var VNTrackObjectRequestRevision1: Int](./vntrackobjectrequestrevision1.md)
   A constant for specifying revision 1 of the object tracking request.
-- [var VNDetectFaceRectanglesRequestRevision2: Int](vndetectfacerectanglesrequestrevision2.md)
+- [var VNDetectFaceRectanglesRequestRevision2: Int](./vndetectfacerectanglesrequestrevision2.md)
   A constant for specifying revision 2 of the face rectangles detection request.
-- [var VNDetectFaceRectanglesRequestRevision1: Int](vndetectfacerectanglesrequestrevision1.md)
+- [var VNDetectFaceRectanglesRequestRevision1: Int](./vndetectfacerectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the face rectangles detection request.
-- [var VNDetectFaceLandmarksRequestRevision3: Int](vndetectfacelandmarksrequestrevision3.md)
+- [var VNDetectFaceLandmarksRequestRevision3: Int](./vndetectfacelandmarksrequestrevision3.md)
   A constant for specifying revision 3 of the face landmarks detection request.
-- [var VNDetectFaceLandmarksRequestRevision2: Int](vndetectfacelandmarksrequestrevision2.md)
+- [var VNDetectFaceLandmarksRequestRevision2: Int](./vndetectfacelandmarksrequestrevision2.md)
   A constant for specifying revision 2 of the face landmarks detection request.
-- [var VNDetectFaceLandmarksRequestRevision1: Int](vndetectfacelandmarksrequestrevision1.md)
+- [var VNDetectFaceLandmarksRequestRevision1: Int](./vndetectfacelandmarksrequestrevision1.md)
   A constant for specifying revision 1 of the face landmarks detection request.
-- [var VNRecognizeTextRequestRevision1: Int](vnrecognizetextrequestrevision1.md)
+- [var VNRecognizeTextRequestRevision1: Int](./vnrecognizetextrequestrevision1.md)
   A constant for specifying revision 1 of the text recognition request.
-- [var VNDetectTextRectanglesRequestRevision1: Int](vndetecttextrectanglesrequestrevision1.md)
+- [var VNDetectTextRectanglesRequestRevision1: Int](./vndetecttextrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the text rectangles detection request.
-- [var VNDetectBarcodesRequestRevision1: Int](vndetectbarcodesrequestrevision1.md)
+- [var VNDetectBarcodesRequestRevision1: Int](./vndetectbarcodesrequestrevision1.md)
   A constant for specifying revision 1 of the barcode detection request.
-- [var VNDetectHorizonRequestRevision1: Int](vndetecthorizonrequestrevision1.md)
+- [var VNDetectHorizonRequestRevision1: Int](./vndetecthorizonrequestrevision1.md)
   A constant for specifying revision 1 of the horizon detection request.
-- [var VNTranslationalImageRegistrationRequestRevision1: Int](vntranslationalimageregistrationrequestrevision1.md)
+- [var VNTranslationalImageRegistrationRequestRevision1: Int](./vntranslationalimageregistrationrequestrevision1.md)
   A constant for specifying revision 1 of the translational image registration request.
-- [var VNHomographicImageRegistrationRequestRevision1: Int](vnhomographicimageregistrationrequestrevision1.md)
+- [var VNHomographicImageRegistrationRequestRevision1: Int](./vnhomographicimageregistrationrequestrevision1.md)
   A constant for specifying revision 1 of the homographic image registration request.
-- [var VNCoreMLRequestRevision1: Int](vncoremlrequestrevision1.md)
+- [var VNCoreMLRequestRevision1: Int](./vncoremlrequestrevision1.md)
   A constant for specifying revision 1 of a Core ML request.
-- [var VNGenerateAttentionBasedSaliencyImageRequestRevision1: Int](vngenerateattentionbasedsaliencyimagerequestrevision1.md)
+- [var VNGenerateAttentionBasedSaliencyImageRequestRevision1: Int](./vngenerateattentionbasedsaliencyimagerequestrevision1.md)
   A constant for specifying revision 1 of the image saliency request.
-- [var VNGenerateObjectnessBasedSaliencyImageRequestRevision1: Int](vngenerateobjectnessbasedsaliencyimagerequestrevision1.md)
+- [var VNGenerateObjectnessBasedSaliencyImageRequestRevision1: Int](./vngenerateobjectnessbasedsaliencyimagerequestrevision1.md)
   A constant for specifying revision 1 of the image saliency request.
-- [var VNClassifyImageRequestRevision1: Int](vnclassifyimagerequestrevision1.md)
+- [var VNClassifyImageRequestRevision1: Int](./vnclassifyimagerequestrevision1.md)
   A constant for specifying the first revision of the image-classification request.
-- [var VNGenerateImageFeaturePrintRequestRevision1: Int](vngenerateimagefeatureprintrequestrevision1.md)
+- [var VNGenerateImageFeaturePrintRequestRevision1: Int](./vngenerateimagefeatureprintrequestrevision1.md)
   A constant for specifying the first revision of the feature-print request.
-- [var VNDetectFaceCaptureQualityRequestRevision1: Int](vndetectfacecapturequalityrequestrevision1.md)
+- [var VNDetectFaceCaptureQualityRequestRevision1: Int](./vndetectfacecapturequalityrequestrevision1.md)
   A constant for specifying revision 1 of the face capture detection request.
-- [var VNDetectHumanRectanglesRequestRevision1: Int](vndetecthumanrectanglesrequestrevision1.md)
+- [var VNDetectHumanRectanglesRequestRevision1: Int](./vndetecthumanrectanglesrequestrevision1.md)
   A constant for specifying revision 1 of the human rectangles detection request.
 
 ## Relationships
 
 ### Conforming Types
-- [VNAnimalBodyPoseObservation](vnanimalbodyposeobservation.md)
-- [VNBarcodeObservation](vnbarcodeobservation.md)
-- [VNClassificationObservation](vnclassificationobservation.md)
-- [VNContour](vncontour.md)
-- [VNContoursObservation](vncontoursobservation.md)
-- [VNCoreMLFeatureValueObservation](vncoremlfeaturevalueobservation.md)
-- [VNDetectedObjectObservation](vndetectedobjectobservation.md)
-- [VNFaceLandmarkRegion](vnfacelandmarkregion.md)
-- [VNFaceLandmarkRegion2D](vnfacelandmarkregion2d.md)
-- [VNFaceLandmarks](vnfacelandmarks.md)
-- [VNFaceLandmarks2D](vnfacelandmarks2d.md)
-- [VNFaceObservation](vnfaceobservation.md)
-- [VNFeaturePrintObservation](vnfeatureprintobservation.md)
-- [VNHorizonObservation](vnhorizonobservation.md)
-- [VNHumanBodyPose3DObservation](vnhumanbodypose3dobservation.md)
-- [VNHumanBodyPoseObservation](vnhumanbodyposeobservation.md)
-- [VNHumanHandPoseObservation](vnhumanhandposeobservation.md)
-- [VNHumanObservation](vnhumanobservation.md)
-- [VNImageAestheticsScoresObservation](vnimageaestheticsscoresobservation.md)
-- [VNImageAlignmentObservation](vnimagealignmentobservation.md)
-- [VNImageHomographicAlignmentObservation](vnimagehomographicalignmentobservation.md)
-- [VNImageTranslationAlignmentObservation](vnimagetranslationalignmentobservation.md)
-- [VNInstanceMaskObservation](vninstancemaskobservation.md)
-- [VNObservation](vnobservation.md)
-- [VNPixelBufferObservation](vnpixelbufferobservation.md)
-- [VNRecognizedObjectObservation](vnrecognizedobjectobservation.md)
-- [VNRecognizedPoints3DObservation](vnrecognizedpoints3dobservation.md)
-- [VNRecognizedPointsObservation](vnrecognizedpointsobservation.md)
-- [VNRecognizedText](vnrecognizedtext.md)
-- [VNRecognizedTextObservation](vnrecognizedtextobservation.md)
-- [VNRectangleObservation](vnrectangleobservation.md)
-- [VNSaliencyImageObservation](vnsaliencyimageobservation.md)
-- [VNTextObservation](vntextobservation.md)
-- [VNTrajectoryObservation](vntrajectoryobservation.md)
+- [VNAnimalBodyPoseObservation](./vnanimalbodyposeobservation.md)
+- [VNBarcodeObservation](./vnbarcodeobservation.md)
+- [VNClassificationObservation](./vnclassificationobservation.md)
+- [VNContour](./vncontour.md)
+- [VNContoursObservation](./vncontoursobservation.md)
+- [VNCoreMLFeatureValueObservation](./vncoremlfeaturevalueobservation.md)
+- [VNDetectedObjectObservation](./vndetectedobjectobservation.md)
+- [VNFaceLandmarkRegion](./vnfacelandmarkregion.md)
+- [VNFaceLandmarkRegion2D](./vnfacelandmarkregion2d.md)
+- [VNFaceLandmarks](./vnfacelandmarks.md)
+- [VNFaceLandmarks2D](./vnfacelandmarks2d.md)
+- [VNFaceObservation](./vnfaceobservation.md)
+- [VNFeaturePrintObservation](./vnfeatureprintobservation.md)
+- [VNHorizonObservation](./vnhorizonobservation.md)
+- [VNHumanBodyPose3DObservation](./vnhumanbodypose3dobservation.md)
+- [VNHumanBodyPoseObservation](./vnhumanbodyposeobservation.md)
+- [VNHumanHandPoseObservation](./vnhumanhandposeobservation.md)
+- [VNHumanObservation](./vnhumanobservation.md)
+- [VNImageAestheticsScoresObservation](./vnimageaestheticsscoresobservation.md)
+- [VNImageAlignmentObservation](./vnimagealignmentobservation.md)
+- [VNImageHomographicAlignmentObservation](./vnimagehomographicalignmentobservation.md)
+- [VNImageTranslationAlignmentObservation](./vnimagetranslationalignmentobservation.md)
+- [VNInstanceMaskObservation](./vninstancemaskobservation.md)
+- [VNObservation](./vnobservation.md)
+- [VNPixelBufferObservation](./vnpixelbufferobservation.md)
+- [VNRecognizedObjectObservation](./vnrecognizedobjectobservation.md)
+- [VNRecognizedPoints3DObservation](./vnrecognizedpoints3dobservation.md)
+- [VNRecognizedPointsObservation](./vnrecognizedpointsobservation.md)
+- [VNRecognizedText](./vnrecognizedtext.md)
+- [VNRecognizedTextObservation](./vnrecognizedtextobservation.md)
+- [VNRectangleObservation](./vnrectangleobservation.md)
+- [VNSaliencyImageObservation](./vnsaliencyimageobservation.md)
+- [VNTextObservation](./vntextobservation.md)
+- [VNTrajectoryObservation](./vntrajectoryobservation.md)
 
 ## See Also
 
-- [class var currentRevision: Int](vnrequest/currentrevision.md)
+### Determining the Revision
+- [class var currentRevision: Int](./vnrequest/currentrevision.md)
   The current revison supported by the request.
-- [class var defaultRevision: Int](vnrequest/defaultrevision.md)
+- [class var defaultRevision: Int](./vnrequest/defaultrevision.md)
   The revision of the latest request for the particular SDK linked with the client application.
-- [class var supportedRevisions: IndexSet](vnrequest/supportedrevisions.md)
+- [class var supportedRevisions: IndexSet](./vnrequest/supportedrevisions.md)
   The collection of currently-supported algorithm versions for the class of request.
 
 

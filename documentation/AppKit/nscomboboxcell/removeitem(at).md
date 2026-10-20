@@ -1,12 +1,13 @@
 # removeItem(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the object at the specified location from the combo box’s internal item list.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Removes the object at the specified location from the combo box’s internal ite
 func removeItem(at index: Int)
 ```
 
+```objc
+- (void) removeItemAtIndex:(NSInteger) index;
+```
+
 #### Discussion
 
-The removed object receives a `release` message. This method raises an `NSRangeException` if `index` is beyond the end of the list and logs a warning if [`usesDataSource`](nscomboboxcell/usesdatasource.md) is [`true`](https://developer.apple.com/documentation/swift/true).
+The removed object receives a `release` message. This method raises an `NSRangeException` if `index` is beyond the end of the list and logs a warning if [`usesDataSource`](./usesdatasource.md) is [`true`](../../Swift/true.md).
 
 ## Parameters
 
@@ -24,19 +29,20 @@ The removed object receives a `release` message. This method raises an `NSRangeE
 
 ## See Also
 
-- [func addItems(withObjectValues: [Any])](nscomboboxcell/additems(withobjectvalues:).md)
+### Working with an Internal List
+- [func addItems(withObjectValues: [Any])](./additems%28withobjectvalues%29.md)
   Adds multiple objects to the internal item list.
-- [func addItem(withObjectValue: Any)](nscomboboxcell/additem(withobjectvalue:).md)
+- [func addItem(withObjectValue: Any)](./additem%28withobjectvalue%29.md)
   Adds the specified object to the internal item list.
-- [func insertItem(withObjectValue: Any, at: Int)](nscomboboxcell/insertitem(withobjectvalue:at:).md)
+- [func insertItem(withObjectValue: Any, at: Int)](./insertitem%28withobjectvalue,at%29.md)
   Inserts an object at the specified location in the internal item list.
-- [var objectValues: [Any]](nscomboboxcell/objectvalues.md)
+- [var objectValues: [Any]](./objectvalues.md)
   The combo box’s internal item list in an array.
-- [func removeAllItems()](nscomboboxcell/removeallitems.md)
+- [func removeAllItems()](./removeallitems%28%29.md)
   Removes all items from the combo box’s internal item list.
-- [func removeItem(withObjectValue: Any)](nscomboboxcell/removeitem(withobjectvalue:).md)
+- [func removeItem(withObjectValue: Any)](./removeitem%28withobjectvalue%29.md)
   Removes all occurrences of the specified object from the combo box’s internal item list.
-- [var numberOfItems: Int](nscomboboxcell/numberofitems.md)
+- [var numberOfItems: Int](./numberofitems.md)
   The total number of items in the pop-up list.
 
 

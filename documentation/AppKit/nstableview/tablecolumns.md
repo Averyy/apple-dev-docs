@@ -1,12 +1,13 @@
 # tableColumns
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array containing the current table column objects.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ An array containing the current table column objects.
 var tableColumns: [NSTableColumn] { get }
 ```
 
+```objc
+@property (copy, readonly) NSArray<NSTableColumn *> * tableColumns;
+```
+
 #### Discussion
 
-This property contains an array of [`NSTableColumn`](nstablecolumn.md) objects corresponding to the columns in the table. This array contains all columns, including those that are currently hidden.
+This property contains an array of [`NSTableColumn`](../nstablecolumn.md) objects corresponding to the columns in the table. This array contains all columns, including those that are currently hidden.
 
 ## See Also
 
-- [func addTableColumn(NSTableColumn)](nstableview/addtablecolumn(_:).md)
+### Column Management
+- [func addTableColumn(NSTableColumn)](./addtablecolumn%28_%29.md)
   Adds the specified column as the last column of the table view.
-- [func removeTableColumn(NSTableColumn)](nstableview/removetablecolumn(_:).md)
+- [func removeTableColumn(NSTableColumn)](./removetablecolumn%28_%29.md)
   Removes the specified column from the table view.
-- [func moveColumn(Int, toColumn: Int)](nstableview/movecolumn(_:tocolumn:).md)
+- [func moveColumn(Int, toColumn: Int)](./movecolumn%28_,tocolumn%29.md)
   Moves the column and heading at the specified index to the new specified index.
-- [func column(withIdentifier: NSUserInterfaceItemIdentifier) -> Int](nstableview/column(withidentifier:).md)
+- [func column(withIdentifier: NSUserInterfaceItemIdentifier) -> Int](./column%28withidentifier%29.md)
   Returns the index of the first column in the table view whose identifier is equal to the specified identifier.
-- [func tableColumn(withIdentifier: NSUserInterfaceItemIdentifier) -> NSTableColumn?](nstableview/tablecolumn(withidentifier:).md)
+- [func tableColumn(withIdentifier: NSUserInterfaceItemIdentifier) -> NSTableColumn?](./tablecolumn%28withidentifier%29.md)
   Returns the `NSTableColumn` object for the first column whose identifier is equal to the specified object.
 
 

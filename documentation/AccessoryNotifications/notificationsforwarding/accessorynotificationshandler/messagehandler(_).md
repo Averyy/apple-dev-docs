@@ -2,6 +2,7 @@
 
 **Framework**: Accessory Notifications  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Handles decrypted messages received from the paired accessory.
@@ -17,15 +18,15 @@ func messageHandler(_ message: TransportMessage)
 
 ## Mentions
 
-- [Responding to forwarded notifications](responding-to-forwarded-notifications.md)
+- [Responding to forwarded notifications](../../responding-to-forwarded-notifications.md)
 
 #### Discussion
 
-The system calls this method when your accessory sends data to the data provider extension. For Bluetooth transport, the accessory sends data through your transport extension using [`sendMessageToDataProvider(_:)`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/sendmessagetodataprovider(_:)). For internet transport, the accessory routes data to the device through APNs using [`pushToken`](https://developer.apple.com/documentation/accessorytransportextension/accessorytransportsession/pushtoken). In either case, the system delivers decrypted messages to this method regardless of the transport type.
+The system calls this method when your accessory sends data to the data provider extension. For Bluetooth transport, the accessory sends data through your transport extension using [`sendMessageToDataProvider(_:)`](../../../AccessoryTransportExtension/accessorytransportsession/sendmessagetodataprovider%28_%29.md). For internet transport, the accessory routes data to the device through APNs using [`pushToken`](../../../AccessoryTransportExtension/accessorytransportsession/pushtoken.md). In either case, the system delivers decrypted messages to this method regardless of the transport type.
 
-#### Process Notification Responses
+#### Process notification responses
 
-Parse the message to determine the response type (notification dismissal, action selection, or text input). Create a [`NotificationResponse`](notificationresponse.md) instance and send it to the system using [`sendResponse(_:)`](notificationsforwarding/accessorynotificationssession/sendresponse(_:).md):
+Parse the message to determine the response type (notification dismissal, action selection, or text input). Create a [`NotificationResponse`](../../notificationresponse.md) instance and send it to the system using [`sendResponse(_:)`](../accessorynotificationssession/sendresponse%28_%29.md):
 
 ```swift
 func messageHandler(_ message: AccessoryMessage) {

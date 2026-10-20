@@ -1,12 +1,13 @@
 # NSNullGlyph
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The reserved code for a null glyph.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,18 @@ The reserved code for a null glyph.
 var NSNullGlyph: Int { get }
 ```
 
+```c
+NSNullGlyph
+```
+
 ## See Also
 
-- [var numberOfGlyphs: Int](nsfont/numberofglyphs.md)
+### Getting Information About Glyphs
+- [var numberOfGlyphs: Int](./nsfont/numberofglyphs.md)
   The number of glyphs in the font.
-- [typealias NSGlyph](nsglyph.md)
+- [typealias NSGlyph](./nsglyph.md)
   The type used to specify glyphs.
-- [var NSControlGlyph: Int](nscontrolglyph.md)
+- [var NSControlGlyph: Int](./nscontrolglyph.md)
   The reserved code for a control glyph.
 
 

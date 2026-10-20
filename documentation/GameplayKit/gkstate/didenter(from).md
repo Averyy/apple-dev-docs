@@ -1,7 +1,8 @@
 # didEnter(from:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs custom actions when a state machine transitions into this state.
 
@@ -19,6 +20,10 @@ Performs custom actions when a state machine transitions into this state.
 func didEnter(from previousState: GKState?)
 ```
 
+```objc
+- (void) didEnterWithPreviousState:(GKState *) previousState;
+```
+
 #### Discussion
 
 Override this method when the actions you want to perform in response to a state change should be associated with the new state, or when those actions depend on which state a state machine was previously in.
@@ -33,9 +38,10 @@ Or, in a state machine that governs a game’s user interface, with Menu, Playin
 
 ## See Also
 
-- [func update(deltaTime: TimeInterval)](gkstate/update(deltatime:).md)
+### Handling State Transitions and Updates
+- [func update(deltaTime: TimeInterval)](./update%28deltatime%29.md)
   Performs custom actions when a state machine updates while in this state.
-- [func willExit(to: GKState)](gkstate/willexit(to:).md)
+- [func willExit(to: GKState)](./willexit%28to%29.md)
   Performs custom actions when a state machine transitions out of this state.
 
 

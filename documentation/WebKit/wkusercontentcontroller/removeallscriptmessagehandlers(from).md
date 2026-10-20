@@ -1,7 +1,8 @@
 # removeAllScriptMessageHandlers(from:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Uninstalls all custom message handlers from the specified content world in your JavaScript code.
 
@@ -18,31 +19,36 @@ Uninstalls all custom message handlers from the specified content world in your 
 func removeAllScriptMessageHandlers(from contentWorld: WKContentWorld)
 ```
 
+```objc
+- (void) removeAllScriptMessageHandlersFromContentWorld:(WKContentWorld *) contentWorld;
+```
+
 #### Discussion
 
 Use this method to remove all message handlers in the specified content world. Message handlers in other content worlds are unaffected.
 
 ## Parameters
 
-- `contentWorld`: The content world from which to remove the message handler. For more information about content worlds, see [`WKContentWorld`](wkcontentworld.md).
+- `contentWorld`: The content world from which to remove the message handler. For more information about content worlds, see [`WKContentWorld`](../wkcontentworld.md).
 
 ## See Also
 
-- [func add(any WKScriptMessageHandler, name: String)](wkusercontentcontroller/add(_:name:).md)
+### Adding and Removing Message Handlers
+- [func add(any WKScriptMessageHandler, name: String)](./add%28_,name%29.md)
   Installs a message handler that you can call from your JavaScript code.
-- [func add(any WKScriptMessageHandler, contentWorld: WKContentWorld, name: String)](wkusercontentcontroller/add(_:contentworld:name:).md)
+- [func add(any WKScriptMessageHandler, contentWorld: WKContentWorld, name: String)](./add%28_,contentworld,name%29.md)
   Installs a message handler that you can call from the specified content world in your JavaScript code.
-- [func addScriptMessageHandler(any WKScriptMessageHandlerWithReply, contentWorld: WKContentWorld, name: String)](wkusercontentcontroller/addscriptmessagehandler(_:contentworld:name:).md)
+- [func addScriptMessageHandler(any WKScriptMessageHandlerWithReply, contentWorld: WKContentWorld, name: String)](./addscriptmessagehandler%28_,contentworld,name%29.md)
   Installs a message handler that returns a reply to your JavaScript code.
-- [func removeScriptMessageHandler(forName: String)](wkusercontentcontroller/removescriptmessagehandler(forname:).md)
+- [func removeScriptMessageHandler(forName: String)](./removescriptmessagehandler%28forname%29.md)
   Uninstalls the custom message handler with the specified name from your JavaScript code.
-- [func removeScriptMessageHandler(forName: String, contentWorld: WKContentWorld)](wkusercontentcontroller/removescriptmessagehandler(forname:contentworld:).md)
+- [func removeScriptMessageHandler(forName: String, contentWorld: WKContentWorld)](./removescriptmessagehandler%28forname,contentworld%29.md)
   Uninstalls a custom message handler from the specified content world in your JavaScript code.
-- [func removeAllScriptMessageHandlers()](wkusercontentcontroller/removeallscriptmessagehandlers.md)
+- [func removeAllScriptMessageHandlers()](./removeallscriptmessagehandlers%28%29.md)
   Uninstalls all custom message handlers associated with the user content controller.
-- [protocol WKScriptMessageHandler](wkscriptmessagehandler.md)
+- [protocol WKScriptMessageHandler](../wkscriptmessagehandler.md)
   An interface for receiving messages from JavaScript code running in a webpage.
-- [protocol WKScriptMessageHandlerWithReply](wkscriptmessagehandlerwithreply.md)
+- [protocol WKScriptMessageHandlerWithReply](../wkscriptmessagehandlerwithreply.md)
   An interface for responding to messages from JavaScript code running in a webpage.
 
 

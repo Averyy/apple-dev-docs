@@ -1,7 +1,8 @@
 # filterCriteria
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The criteria the system evaluates to determine if it displays the notification in the current Focus.
 
@@ -19,19 +20,32 @@ The criteria the system evaluates to determine if it displays the notification i
 var filterCriteria: String? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * filterCriteria;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, readonly, nullable) NSString * filterCriteria;
+```
+
 #### Discussion
 
-For more information, see [`SetFocusFilterIntent`](https://developer.apple.com/documentation/appintents/setfocusfilterintent).
+For more information, see [`SetFocusFilterIntent`](../../AppIntents/setfocusfilterintent.md).
 
 ## See Also
 
-- [var sound: UNNotificationSound?](unnotificationcontent/sound.md)
+### Reading system configuration
+- [var sound: UNNotificationSound?](./sound.md)
   The sound that plays when the system delivers the notification.
-- [var interruptionLevel: UNNotificationInterruptionLevel](unnotificationcontent/interruptionlevel.md)
+- [var interruptionLevel: UNNotificationInterruptionLevel](./interruptionlevel.md)
   The notification’s importance and required delivery timing.
-- [enum UNNotificationInterruptionLevel](unnotificationinterruptionlevel.md)
+- [enum UNNotificationInterruptionLevel](../unnotificationinterruptionlevel.md)
   Constants that indicate the importance and delivery timing of a notification.
-- [var relevanceScore: Double](unnotificationcontent/relevancescore.md)
+- [var relevanceScore: Double](./relevancescore.md)
   The score the system uses to determine if the notification is the summary’s featured notification.
 
 

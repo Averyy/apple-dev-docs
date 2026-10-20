@@ -1,7 +1,8 @@
 # mapRect
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The map rectangle that you want to capture.
 
@@ -20,17 +21,22 @@ The map rectangle that you want to capture.
 var mapRect: MKMapRect { get set }
 ```
 
+```objc
+@property (nonatomic, assign) MKMapRect mapRect;
+```
+
 #### Discussion
 
-Use this property to specify the map using map view points. If you assign a value for this property, the snapshotter updates the value in the [`region`](mkmapsnapshotter/options/region.md) property to match the corresponding map rectangle as closely as possible.
+Use this property to specify the map using map view points. If you assign a value for this property, the snapshotter updates the value in the [`region`](./region.md) property to match the corresponding map rectangle as closely as possible.
 
 The snapshotter sets the default value of this property to a map rectangle that encompasses the user’s country or region, based on the current locale information.
 
 ## See Also
 
-- [var region: MKCoordinateRegion](mkmapsnapshotter/options/region.md)
+### Configuring the snapshot region
+- [var region: MKCoordinateRegion](./region.md)
   The area of the map that you want to capture.
-- [var camera: MKMapCamera](mkmapsnapshotter/options/camera.md)
+- [var camera: MKMapCamera](./camera.md)
   The camera to use when taking the map snapshot.
 
 

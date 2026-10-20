@@ -1,7 +1,8 @@
 # BulkKeywordCreate
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The `data` payload for a single keyword-create item within a bulk create request.
 
@@ -10,60 +11,62 @@ The `data` payload for a single keyword-create item within a bulk create request
 
 ## Declaration
 
-```swift
+```
 object BulkKeywordCreate
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object BulkKeywordCreate.Bid](bulkkeywordcreate/bid-data.dictionary.md)
+- [object BulkKeywordCreate.Bid](./bulkkeywordcreate/bid-data.dictionary.md)
   The keyword-level bid amount for a bulk keyword create item.
 ### Type Aliases
-- [type BulkKeywordCreate.MatchType](bulkkeywordcreate/matchtype-data.typealias.md)
+- [type BulkKeywordCreate.MatchType](./bulkkeywordcreate/matchtype-data.typealias.md)
   The keyword’s match type for a bulk keyword create item.
-- [type BulkKeywordCreate.Status](bulkkeywordcreate/status-data.typealias.md)
+- [type BulkKeywordCreate.Status](./bulkkeywordcreate/status-data.typealias.md)
   The keyword’s status for a bulk keyword create item.
 
 ## Properties
 
 - `adGroupId` (int64) *(required)*: The ad group in which the keyword is created.
 - `text` (string) *(required)*: The keyword text. Minimum length of 1.
-- `matchType` (BulkKeywordCreate.MatchType): The keyword’s match type. See [`KeywordMatchType`](keywordmatchtype.md).
-- `bid` (BulkKeywordCreate.Bid): The keyword-level bid amount. Nullable. See [`Money`](money.md).
-- `status` (BulkKeywordCreate.Status): The keyword’s status. See [`KeywordStatus`](keywordstatus.md).
+
+  **Minimum Length**: `1`
+- `matchType` (BulkKeywordCreate.MatchType): The keyword’s match type. See [`KeywordMatchType`](./keywordmatchtype.md).
+- `bid` (BulkKeywordCreate.Bid): The keyword-level bid amount. Nullable. See [`Money`](./money.md).
+- `status` (BulkKeywordCreate.Status): The keyword’s status. See [`KeywordStatus`](./keywordstatus.md).
 
 ## See Also
 
-- [object BaseBulkRequest](basebulkrequest.md)
+- [object BaseBulkRequest](./basebulkrequest.md)
   Base type for all bulk operation requests.
-- [object BulkOperationRequest](bulkoperationrequest.md)
+- [object BulkOperationRequest](./bulkoperationrequest.md)
   Container for a bulk operation request.
-- [object BulkItemResult](bulkitemresult.md)
+- [object BulkItemResult](./bulkitemresult.md)
   The base result envelope for a single item in a bulk operation response.
-- [object BulkItemResultKeyword](bulkitemresultkeyword.md)
+- [object BulkItemResultKeyword](./bulkitemresultkeyword.md)
   A bulk operation result item that includes the affected Keyword entity.
-- [object BulkItemResultNegativeKeyword](bulkitemresultnegativekeyword.md)
+- [object BulkItemResultNegativeKeyword](./bulkitemresultnegativekeyword.md)
   A bulk operation result item that includes the affected NegativeKeyword entity.
-- [object BulkResponse](bulkresponse.md)
+- [object BulkResponse](./bulkresponse.md)
   The generic response envelope returned by all bulk operations.
-- [object KeywordCreateBulkRequest](keywordcreatebulkrequest.md)
+- [object KeywordCreateBulkRequest](./keywordcreatebulkrequest.md)
   A bulk request to create multiple Keyword objects.
-- [object KeywordCreateBulkResponse](keywordcreatebulkresponse.md)
+- [object KeywordCreateBulkResponse](./keywordcreatebulkresponse.md)
   The response from a bulk Keyword creation request, containing results for each item.
-- [object KeywordDeleteBulkRequest](keyworddeletebulkrequest.md)
+- [object KeywordDeleteBulkRequest](./keyworddeletebulkrequest.md)
   A bulk request to delete multiple Keyword objects by their identifiers.
-- [object KeywordDeleteBulkResponse](keyworddeletebulkresponse.md)
+- [object KeywordDeleteBulkResponse](./keyworddeletebulkresponse.md)
   The response from a bulk Keyword deletion request.
-- [object KeywordUpdateBulkRequest](keywordupdatebulkrequest.md)
+- [object KeywordUpdateBulkRequest](./keywordupdatebulkrequest.md)
   A bulk request to update multiple Keyword objects.
-- [object KeywordUpdateBulkResponse](keywordupdatebulkresponse.md)
+- [object KeywordUpdateBulkResponse](./keywordupdatebulkresponse.md)
   The response from a bulk Keyword update request, containing results for each item.
-- [object NegativeKeywordCreateBulkRequest](negativekeywordcreatebulkrequest.md)
+- [object NegativeKeywordCreateBulkRequest](./negativekeywordcreatebulkrequest.md)
   A bulk request to create multiple negative keywords.
-- [object NegativeKeywordCreateBulkResponse](negativekeywordcreatebulkresponse.md)
+- [object NegativeKeywordCreateBulkResponse](./negativekeywordcreatebulkresponse.md)
   The response from a bulk negative keyword creation request, containing results for each item.
-- [object NegativeKeywordDeleteBulkRequest](negativekeyworddeletebulkrequest.md)
+- [object NegativeKeywordDeleteBulkRequest](./negativekeyworddeletebulkrequest.md)
   A bulk request to delete multiple negative keywords by their identifiers.
 
 

@@ -1,7 +1,8 @@
 # numberFormatter
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number formatter used to format the numbers in energy strings.
 
@@ -21,25 +22,30 @@ The number formatter used to format the numbers in energy strings.
 var numberFormatter: NumberFormatter! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSNumberFormatter * numberFormatter;
+```
+
 #### Discussion
 
-This property defaults to a number formatter using the [`NumberFormatter.Style.decimal`](numberformatter/style/decimal.md) style. You can provide a different number formatter to customize the energy string’s appearance.
+This property defaults to a number formatter using the [`NumberFormatter.Style.decimal`](../numberformatter/style/decimal.md) style. You can provide a different number formatter to customize the energy string’s appearance.
 
 ## See Also
 
-- [var isForFoodEnergyUse: Bool](energyformatter/isforfoodenergyuse.md)
+### Formatting Energy Strings
+- [var isForFoodEnergyUse: Bool](./isforfoodenergyuse.md)
   A Boolean value that indicates whether the energy value is used to measure food energy.
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](energyformatter/getobjectvalue(_:for:errordescription:).md)
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](./getobjectvalue%28_,for,errordescription%29.md)
   This method is not supported for the `NSEnergyFormatter` class.
-- [func string(fromJoules: Double) -> String](energyformatter/string(fromjoules:).md)
+- [func string(fromJoules: Double) -> String](./string%28fromjoules%29.md)
   Returns an energy string for the provided value.
-- [func string(fromValue: Double, unit: EnergyFormatter.Unit) -> String](energyformatter/string(fromvalue:unit:).md)
+- [func string(fromValue: Double, unit: EnergyFormatter.Unit) -> String](./string%28fromvalue,unit%29.md)
   Returns a properly formatted energy string for the given value and unit.
-- [func unitString(fromJoules: Double, usedUnit: UnsafeMutablePointer<EnergyFormatter.Unit>?) -> String](energyformatter/unitstring(fromjoules:usedunit:).md)
+- [func unitString(fromJoules: Double, usedUnit: UnsafeMutablePointer<EnergyFormatter.Unit>?) -> String](./unitstring%28fromjoules,usedunit%29.md)
   Returns the unit string for the provided value.
-- [func unitString(fromValue: Double, unit: EnergyFormatter.Unit) -> String](energyformatter/unitstring(fromvalue:unit:).md)
+- [func unitString(fromValue: Double, unit: EnergyFormatter.Unit) -> String](./unitstring%28fromvalue,unit%29.md)
   Returns the unit string based on the provided value and unit.
-- [var unitStyle: Formatter.UnitStyle](energyformatter/unitstyle.md)
+- [var unitStyle: Formatter.UnitStyle](./unitstyle.md)
   The unit style used by this formatter.
 
 

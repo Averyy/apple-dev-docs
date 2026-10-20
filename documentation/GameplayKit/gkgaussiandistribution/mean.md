@@ -1,7 +1,8 @@
 # mean
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mean value of the distribution (also called the *expected value* or *median*).
 
@@ -19,15 +20,20 @@ The mean value of the distribution (also called the *expected value* or *median*
 var mean: Float { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) float mean;
+```
+
 #### Discussion
 
 Random samplings from the distribution are most likely to result in the mean value, with other values increasingly far from the mean occurring with decreasing probability.
 
-This property is read-only—its value is always the midpoint between the values of the inherited [`lowestValue`](gkrandomdistribution/lowestvalue.md) and [`highestValue`](gkrandomdistribution/highestvalue.md) properties (`mean = (highest + lowest) / 2`).
+This property is read-only—its value is always the midpoint between the values of the inherited [`lowestValue`](../gkrandomdistribution/lowestvalue.md) and [`highestValue`](../gkrandomdistribution/highestvalue.md) properties (`mean = (highest + lowest) / 2`).
 
 ## See Also
 
-- [var deviation: Float](gkgaussiandistribution/deviation.md)
+### Working with Characteristics of a Distribution
+- [var deviation: Float](./deviation.md)
   The standard deviation of the distribution (also called *sigma*).
 
 

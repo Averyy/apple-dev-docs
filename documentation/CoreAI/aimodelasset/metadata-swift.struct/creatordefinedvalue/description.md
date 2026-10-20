@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Core AI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of the value.
 

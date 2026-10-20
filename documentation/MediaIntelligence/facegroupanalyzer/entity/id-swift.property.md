@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for the entity.
 
@@ -21,7 +22,8 @@ let id: FaceGroupAnalyzer.Entity.ID
 
 ## See Also
 
-- [FaceGroupAnalyzer.Entity.ID](facegroupanalyzer/entity/id-swift.struct.md)
+### Identifying an entity
+- [FaceGroupAnalyzer.Entity.ID](./id-swift.struct.md)
   A type that uniquely identifies an entity.
 
 

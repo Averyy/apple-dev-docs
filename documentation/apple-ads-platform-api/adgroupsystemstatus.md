@@ -1,7 +1,8 @@
 # AdGroupSystemStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 System-derived operational status reflecting whether an ad group is actively serving.
 
@@ -10,25 +11,30 @@ System-derived operational status reflecting whether an ad group is actively ser
 
 ## Declaration
 
-```swift
+```
 string AdGroupSystemStatus
 ```
 
+## Possible Values
+
+- `RUNNING`: The ad group is active and serving ads.
+- `NOT_RUNNING`: The ad group is not serving ads. Check `systemStatusReasons` for the specific cause.
+
 ## See Also
 
-- [type AdGroupStatus](adgroupstatus.md)
+- [type AdGroupStatus](./adgroupstatus.md)
   Advertiser-configurable serving status for an ad group.
-- [type AdGroupDisplayStatus](adgroupdisplaystatus.md)
+- [type AdGroupDisplayStatus](./adgroupdisplaystatus.md)
   Derived display status for an ad group, combining advertiser-set status with system status.
-- [type AdGroupSystemStatusReason](adgroupsystemstatusreason.md)
+- [type AdGroupSystemStatusReason](./adgroupsystemstatusreason.md)
   Reasons that can cause an ad group’s system status to be `NOT_RUNNING`.
-- [type AdGroupSystemLimitedStatusReason](adgroupsystemlimitedstatusreason.md)
+- [type AdGroupSystemLimitedStatusReason](./adgroupsystemlimitedstatusreason.md)
   Reasons that limit delivery for an ad group without fully stopping it.
-- [type BidStrategyType](bidstrategytype.md)
+- [type BidStrategyType](./bidstrategytype.md)
   Auction participation approach controlling how an ad group or campaign sets and adjusts bids.
-- [type BidStrategyGoal](bidstrategygoal.md)
+- [type BidStrategyGoal](./bidstrategygoal.md)
   Optimization objective a bid strategy targets during Apple Ads auction competition.
-- [type PricingModel](pricingmodel.md)
+- [type PricingModel](./pricingmodel.md)
   The unit of ad delivery that determines billing for an ad group, independent of how the account funds spend.
 
 

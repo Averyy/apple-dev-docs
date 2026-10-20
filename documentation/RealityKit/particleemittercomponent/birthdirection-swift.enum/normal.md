@@ -1,7 +1,8 @@
 # ParticleEmitterComponent.BirthDirection.normal
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The emitting direction for each particle is along the surface normal vector at the point where the particle is emitted.
 

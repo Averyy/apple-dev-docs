@@ -1,7 +1,8 @@
 # init(compressedAudioDataBuffer:formatDescription:presentationTimeStamp:packetDescriptions:)
 
 **Framework**: Core Media  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a sample buffer carrying compressed audio media data.
 
@@ -19,6 +20,8 @@ Creates a sample buffer carrying compressed audio media data.
 ```swift
 init(compressedAudioDataBuffer content: Content, formatDescription: CMAudioFormatDescription, presentationTimeStamp: CMTime, packetDescriptions: [AudioStreamPacketDescription])
 ```
+
+Available when `Content` is `CMReadOnlyDataBlockBuffer`.
 
 #### Discussion
 

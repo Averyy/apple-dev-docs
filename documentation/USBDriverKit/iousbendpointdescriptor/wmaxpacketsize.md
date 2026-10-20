@@ -1,7 +1,8 @@
 # wMaxPacketSize
 
 **Framework**: USBDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum packet size that the endpoint supports.
 
@@ -10,21 +11,22 @@ The maximum packet size that the endpoint supports.
 
 ## Declaration
 
-```swift
+```c
 uint16_t wMaxPacketSize;
 ```
 
 ## See Also
 
-- [bLength](iousbendpointdescriptor/blength.md)
+### Accessing the Descriptor Properties
+- [bLength](./blength.md)
   The length of the descriptor in bytes.
-- [bDescriptorType](iousbendpointdescriptor/bdescriptortype.md)
+- [bDescriptorType](./bdescriptortype.md)
   The type of the descriptor.
-- [bEndpointAddress](iousbendpointdescriptor/bendpointaddress.md)
+- [bEndpointAddress](./bendpointaddress.md)
   The address of the endpoint.
-- [bmAttributes](iousbendpointdescriptor/bmattributes.md)
+- [bmAttributes](./bmattributes.md)
   The attributes of the endpoint.
-- [bInterval](iousbendpointdescriptor/binterval.md)
+- [bInterval](./binterval.md)
   The interval to use when polling the endpoint for data transfers, specified in frames or microframes depending on the device’s speed.
 
 

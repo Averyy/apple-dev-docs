@@ -1,7 +1,8 @@
 # WorldTrackingProvider.Error
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An error that can occur during a world-tracking session.
 
@@ -17,45 +18,46 @@ struct Error
 ## Topics
 
 ### Inspecting world-tracking errors
-- [let anchor: WorldAnchor?](worldtrackingprovider/error/anchor.md)
+- [let anchor: WorldAnchor?](./error/anchor.md)
   The anchor that caused a world-tracking error.
-- [var code: WorldTrackingProvider.Error.Code](worldtrackingprovider/error/code-swift.property.md)
+- [var code: WorldTrackingProvider.Error.Code](./error/code-swift.property.md)
   The error code.
-- [WorldTrackingProvider.Error.Code](worldtrackingprovider/error/code-swift.enum.md)
+- [WorldTrackingProvider.Error.Code](./error/code-swift.enum.md)
   The error codes for errors that world tracking providers throw.
-- [var errorDescription: String?](worldtrackingprovider/error/errordescription.md)
+- [var errorDescription: String?](./error/errordescription.md)
   A localized message that describes the error that occurred.
 ### Providing recovery suggestions
-- [var recoverySuggestion: String?](worldtrackingprovider/error/recoverysuggestion.md)
+- [var recoverySuggestion: String?](./error/recoverysuggestion.md)
   A localized message that describes how someone might recover from the error.
-- [var failureReason: String?](worldtrackingprovider/error/failurereason.md)
+- [var failureReason: String?](./error/failurereason.md)
   A localized message that describes why the error occurred.
 ### Instance Properties
-- [var description: String](worldtrackingprovider/error/description.md)
+- [var description: String](./error/description.md)
   A textual description of the error that occurred.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Error](../swift/error.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Error](../../Swift/error.md)
+- [LocalizedError](../../Foundation/localizederror.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init()](worldtrackingprovider/init.md)
+### Tracking objects
+- [init()](./init%28%29.md)
   Creates a world-tracking provider.
-- [var anchorUpdates: AnchorUpdateSequence<WorldAnchor>](worldtrackingprovider/anchorupdates.md)
+- [var anchorUpdates: AnchorUpdateSequence<WorldAnchor>](./anchorupdates.md)
   A sequence of updates to anchors a provider tracks.
-- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](worldtrackingprovider/requiredauthorizations.md)
+- [static var requiredAuthorizations: [ARKitSession.AuthorizationType]](./requiredauthorizations.md)
   The types of authorizations necessary for tracking world anchors.
-- [static var isSupported: Bool](worldtrackingprovider/issupported.md)
+- [static var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current runtime environment supports world-tracking providers.
-- [var allAnchors: [WorldAnchor]?](worldtrackingprovider/allanchors.md)
+- [var allAnchors: [WorldAnchor]?](./allanchors.md)
   An array of all known world anchors from the world-tracking provider.
-- [func addAnchor(WorldAnchor) async throws](worldtrackingprovider/addanchor(_:).md)
+- [func addAnchor(WorldAnchor) async throws](./addanchor%28_%29.md)
   Adds a world anchor you supply to the set of currently tracked anchors.
 
 

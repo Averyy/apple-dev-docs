@@ -1,7 +1,8 @@
 # handleBDXQuery(forNodeID:controller:blockSize:blockIndex:bytesToSkip:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+optional func handleBDXQuery(forNodeID nodeID: NSNumber, controller: MTRDeviceController, blockSize: NSNumber, blockIndex: NSNumber, bytesToSkip: NSNumber, completion: @escaping @Sendable (Data?, Bool) -> Void)
+```
+
+```swift
 optional func handleBDXQuery(forNodeID nodeID: NSNumber, controller: MTRDeviceController, blockSize: NSNumber, blockIndex: NSNumber, bytesToSkip: NSNumber) async -> (Data?, Bool)
+```
+
+```objc
+- (void) handleBDXQueryForNodeID:(NSNumber *) nodeID controller:(MTRDeviceController *) controller blockSize:(NSNumber *) blockSize blockIndex:(NSNumber *) blockIndex bytesToSkip:(NSNumber *) bytesToSkip completion:(void (^)(NSData *data, BOOL isEOF)) completion;
 ```
 
 

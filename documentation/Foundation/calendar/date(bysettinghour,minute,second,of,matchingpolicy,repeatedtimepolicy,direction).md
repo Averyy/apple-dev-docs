@@ -1,7 +1,8 @@
 # date(bySettingHour:minute:second:of:matchingPolicy:repeatedTimePolicy:direction:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new `Date` representing the date calculated by setting hour, minute, and second to a given time on a specified `Date`.
 
@@ -40,13 +41,14 @@ If no such time exists, the next available time is returned (which could, for ex
 
 ## See Also
 
-- [func date(from: DateComponents) -> Date?](calendar/date(from:).md)
+### Calculating Dates from Components
+- [func date(from: DateComponents) -> Date?](./date%28from%29.md)
   Returns a date created from the specified components.
-- [func date(byAdding: DateComponents, to: Date, wrappingComponents: Bool) -> Date?](calendar/date(byadding:to:wrappingcomponents:).md)
+- [func date(byAdding: DateComponents, to: Date, wrappingComponents: Bool) -> Date?](./date%28byadding,to,wrappingcomponents%29.md)
   Returns a new `Date` representing the date calculated by adding components to a given date.
-- [func date(byAdding: Calendar.Component, value: Int, to: Date, wrappingComponents: Bool) -> Date?](calendar/date(byadding:value:to:wrappingcomponents:).md)
+- [func date(byAdding: Calendar.Component, value: Int, to: Date, wrappingComponents: Bool) -> Date?](./date%28byadding,value,to,wrappingcomponents%29.md)
   Returns a new `Date` representing the date calculated by adding an amount of a specific component to a given date.
-- [func date(bySetting: Calendar.Component, value: Int, of: Date) -> Date?](calendar/date(bysetting:value:of:).md)
+- [func date(bySetting: Calendar.Component, value: Int, of: Date) -> Date?](./date%28bysetting,value,of%29.md)
   Returns a new `Date` representing the date calculated by setting a specific component to a given time, and trying to keep lower components the same.  If the component already has that value, this may result in a date which is the same as the given date.
 
 

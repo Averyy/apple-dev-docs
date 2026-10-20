@@ -1,7 +1,8 @@
 # UIPress.PressType.pageDown
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A constant that represents the page down button.
 
@@ -14,25 +15,30 @@ A constant that represents the page down button.
 case pageDown
 ```
 
+```c
+UIPressTypePageDown
+```
+
 #### Discussion
 
-Add gesture recognizers for [`UIPress.PressType.pageDown`](uipress/presstype/pagedown.md) and [`UIPress.PressType.pageUp`](uipress/presstype/pageup.md) to navigate content in your app.
+Add gesture recognizers for [`UIPress.PressType.pageDown`](./pagedown.md) and [`UIPress.PressType.pageUp`](./pageup.md) to navigate content in your app.
 
-In an electronic program guide, select the item below the current one in response to [`UIPress.PressType.downArrow`](uipress/presstype/downarrow.md), and display the next screen of items in response to [`UIPress.PressType.pageDown`](uipress/presstype/pagedown.md). While your content plays, change the channel when your app receives [`UIPress.PressType.pageUp`](uipress/presstype/pageup.md) or [`UIPress.PressType.pageDown`](uipress/presstype/pagedown.md).
+In an electronic program guide, select the item below the current one in response to [`UIPress.PressType.downArrow`](./downarrow.md), and display the next screen of items in response to [`UIPress.PressType.pageDown`](./pagedown.md). While your content plays, change the channel when your app receives [`UIPress.PressType.pageUp`](./pageup.md) or [`UIPress.PressType.pageDown`](./pagedown.md).
 
-For more details on browsing multichannel content, see [`Providing Channel Navigation`](https://developer.apple.com/documentation/tvservices/providing-channel-navigation).
+For more details on browsing multichannel content, see [Providing Channel Navigation](../../../TVServices/providing-channel-navigation.md).
 
 ## See Also
 
-- [UIPress.PressType.upArrow](uipress/presstype/uparrow.md)
+### Navigation
+- [UIPress.PressType.upArrow](./uparrow.md)
   A constant that represents the up arrow button.
-- [UIPress.PressType.downArrow](uipress/presstype/downarrow.md)
+- [UIPress.PressType.downArrow](./downarrow.md)
   A constant that represents the down arrow button.
-- [UIPress.PressType.leftArrow](uipress/presstype/leftarrow.md)
+- [UIPress.PressType.leftArrow](./leftarrow.md)
   A constant that represents the left arrow button.
-- [UIPress.PressType.rightArrow](uipress/presstype/rightarrow.md)
+- [UIPress.PressType.rightArrow](./rightarrow.md)
   A constant that represents the right arrow button.
-- [UIPress.PressType.pageUp](uipress/presstype/pageup.md)
+- [UIPress.PressType.pageUp](./pageup.md)
   A constant that represents the page up button.
 
 

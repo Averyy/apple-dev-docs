@@ -1,7 +1,8 @@
 # CFBundleDisplayName
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The user-visible name for the bundle, used by Siri and visible on the iOS Home screen.
 
@@ -13,23 +14,25 @@ The user-visible name for the bundle, used by Siri and visible on the iOS Home s
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
+
+- **Name**: `CFBundleDisplayName` (Bundle display name)
+- **Type**: string
+
 ## Mentions
 
-- [Managing your app’s information property list values](managing-your-app-s-information-property-list.md)
-
-
-
-**Type**: string
+- [Managing your app’s information property list values](../managing-your-app-s-information-property-list.md)
 
 #### Discussion
 
-Use this key if you want a product name that’s longer than [`CFBundleName`](information-property-list/cfbundlename.md).
+Use this key if you want a product name that’s longer than [`CFBundleName`](./cfbundlename.md).
 
 ## See Also
 
-- [CFBundleName](information-property-list/cfbundlename.md)
+### Naming
+- [CFBundleName](./cfbundlename.md)
   A user-visible short name for the bundle.
-- [CFBundleSpokenName](information-property-list/cfbundlespokenname.md)
+- [CFBundleSpokenName](./cfbundlespokenname.md)
   A replacement for the app name in text-to-speech operations.
 
 

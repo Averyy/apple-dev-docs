@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the file provider to download the requested item from remote storage.
@@ -15,13 +16,17 @@ Tells the file provider to download the requested item from remote storage.
 func fetchPartialContents(for itemIdentifier: NSFileProviderItemIdentifier, version requestedVersion: NSFileProviderItemVersion, request: NSFileProviderRequest, minimalRange requestedRange: NSRange, aligningTo alignment: Int, options: NSFileProviderFetchContentsOptions = [], completionHandler: @escaping (URL?, NSFileProviderItem?, NSRange, NSFileProviderMaterializationFlags, (any Error)?) -> Void) -> Progress
 ```
 
+```objc
+- (NSProgress *) fetchPartialContentsForItemWithIdentifier:(NSFileProviderItemIdentifier) itemIdentifier version:(NSFileProviderItemVersion *) requestedVersion request:(NSFileProviderRequest *) request minimalRange:(NSRange) requestedRange aligningTo:(NSUInteger) alignment options:(NSFileProviderFetchContentsOptions) options completionHandler:(void (^)(NSURL *fileContents, NSFileProviderItem item, NSRange retrievedRange, NSFileProviderMaterializationFlags flags, NSError *error)) completionHandler;
+```
+
 #### Return Value
 
 An item that tracks the extension’s progress.
 
 #### Discussion
 
-Implement this method to download a range of the specified file and pass it to the completion handler. If your file provider extension doesn’t implement this method, the system defaults to [`fetchContents(for:version:request:completionHandler:)`](nsfileproviderreplicatedextension/fetchcontents(for:version:request:completionhandler:).md).
+Implement this method to download a range of the specified file and pass it to the completion handler. If your file provider extension doesn’t implement this method, the system defaults to [`fetchContents(for:version:request:completionHandler:)`](../nsfileproviderreplicatedextension/fetchcontents%28for,version,request,completionhandler%29.md).
 
 The temporary file you provide must meet the following requirements:
 
@@ -35,15 +40,15 @@ The system writes your entire `retrievedRange` to the user-visible file. You can
 
 If this is the first time the system has requested the file’s content, it sets the `options` parameter to an empty set. This indicates that it’s safe to return a different version than the requested version, if necessary.
 
-However, when updating existing files, the system sets the `options` parameter to [`strictVersioning`](nsfileproviderfetchcontentsoptions/strictversioning.md). This prevents the system from accidentally writing mismatched pieces from different versions to the same file. If you can’t provide the requested version, pass a [`NSFileProviderError.Code.versionNoLongerAvailable`](nsfileprovidererror/code/versionnolongeravailable.md) error to the completion handler instead.
+However, when updating existing files, the system sets the `options` parameter to [`strictVersioning`](../nsfileproviderfetchcontentsoptions/strictversioning.md). This prevents the system from accidentally writing mismatched pieces from different versions to the same file. If you can’t provide the requested version, pass a [`NSFileProviderError.Code.versionNoLongerAvailable`](../nsfileprovidererror/code/versionnolongeravailable.md) error to the completion handler instead.
 
 ##### Concurrently Downloading Files
 
-By default, the system calls the [`fetchPartialContents(for:version:request:minimalRange:aligningTo:options:completionHandler:)`](nsfileproviderpartialcontentfetching/fetchpartialcontents(for:version:request:minimalrange:aligningto:options:completionhandler:).md) method concurrently when there are multiple outstanding requests. This can include making multiple concurrent requests for different parts of the file.
+By default, the system calls the [`fetchPartialContents(for:version:request:minimalRange:aligningTo:options:completionHandler:)`](./fetchpartialcontents%28for,version,request,minimalrange,aligningto,options,completionhandler%29.md) method concurrently when there are multiple outstanding requests. This can include making multiple concurrent requests for different parts of the file.
 
-You can control concurrent requests by setting the [`NSExtensionFileProviderDownloadPipelineDepth`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionfileproviderdownloadpipelinedepth) key in your extension’s `Info.plist` file. Set the value to the number of concurrent downloads the system can create per domain. This value must be between 1 and 128.
+You can control concurrent requests by setting the [`NSExtensionFileProviderDownloadPipelineDepth`](../../BundleResources/information-property-list/nsextension/nsextensionfileproviderdownloadpipelinedepth.md) key in your extension’s `Info.plist` file. Set the value to the number of concurrent downloads the system can create per domain. This value must be between 1 and 128.
 
-> **Note**:  You must set the [`NSExtensionFileProviderDownloadPipelineDepth`](https://developer.apple.com/documentation/bundleresources/information-property-list/nsextension/nsextensionfileproviderdownloadpipelinedepth) key for each domain. The setting affects all requests for files in the specified domain.
+> **Note**:  You must set the [`NSExtensionFileProviderDownloadPipelineDepth`](../../BundleResources/information-property-list/nsextension/nsextensionfileproviderdownloadpipelinedepth.md) key for each domain. The setting affects all requests for files in the specified domain.
 
 ##### Managing File Ownership
 
@@ -55,20 +60,20 @@ If the extension or system crashes after you call the completion handler but bef
 
 You can control which processes can request files. By default, the system automatically manages files based on its POSIX access control lists.
 
-To prevent a process from accessing content from the extension’s domain, save an array of strings to the `NSFileProviderExtensionNonMaterializingProcessNames` [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) key. The system won’t fetch content if the requesting process’s name matches a string in this array.
+To prevent a process from accessing content from the extension’s domain, save an array of strings to the `NSFileProviderExtensionNonMaterializingProcessNames` [`UserDefaults`](../../Foundation/userdefaults.md) key. The system won’t fetch content if the requesting process’s name matches a string in this array.
 
 - In macOS 11.0 and later, the system checks this list when a process reads a file using POSIX filesystem calls.
 - In macOS 11.4 and later, the system also checks this list when a process reads a file using file coordination.
 
 ##### Handing Errors
 
-If the system requests an item that your file provider extension doesn’t know about, pass the [`NSFileProviderError.Code.noSuchItem`](nsfileprovidererror/code/nosuchitem.md) error to the completion handler. The system then treats the item as if someone had removed the item from the domain, and it attempts to delete the file. If it can’t delete the item (for example, because the item has local changes) it recreates the item by calling your extension’s [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).md) method.
+If the system requests an item that your file provider extension doesn’t know about, pass the [`NSFileProviderError.Code.noSuchItem`](../nsfileprovidererror/code/nosuchitem.md) error to the completion handler. The system then treats the item as if someone had removed the item from the domain, and it attempts to delete the file. If it can’t delete the item (for example, because the item has local changes) it recreates the item by calling your extension’s [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](../nsfileproviderreplicatedextension/createitem%28basedon,fields,contents,options,request,completionhandler%29.md) method.
 
-If the user doesn’t have access to the file, you can pass an [`NSFileReadNoPermissionError`](https://developer.apple.com/documentation/foundation/nsfilereadnopermissionerror-swift.var) error to the completion handler. The system then displays that error to the user.
+If the user doesn’t have access to the file, you can pass an [`NSFileReadNoPermissionError`](../../Foundation/nsfilereadnopermissionerror-swift.var.md) error to the completion handler. The system then displays that error to the user.
 
-Your extension can also pass [`NSFileProviderError.Code.notAuthenticated`](nsfileprovidererror/code/notauthenticated.md) and [`NSFileReadNoPermissionError`](https://developer.apple.com/documentation/foundation/nsfilereadnopermissionerror-swift.var) errors if it can’t download the items because of the system or domain’s current state. In those cases, the system displays an error to the user, and doesn’t make another fetch request until the next time it receives an update notification about the item.
+Your extension can also pass [`NSFileProviderError.Code.notAuthenticated`](../nsfileprovidererror/code/notauthenticated.md) and [`NSFileReadNoPermissionError`](../../Foundation/nsfilereadnopermissionerror-swift.var.md) errors if it can’t download the items because of the system or domain’s current state. In those cases, the system displays an error to the user, and doesn’t make another fetch request until the next time it receives an update notification about the item.
 
-If you can’t provide the requested version for an item, provide a different version unless the system passed the [`strictVersioning`](nsfileproviderfetchcontentsoptions/strictversioning.md) key in the `options` parameter. In this case, pass a [`NSFileProviderError.Code.versionNoLongerAvailable`](nsfileprovidererror/code/versionnolongeravailable.md) error to the completion handler instead.
+If you can’t provide the requested version for an item, provide a different version unless the system passed the [`strictVersioning`](../nsfileproviderfetchcontentsoptions/strictversioning.md) key in the `options` parameter. In this case, pass a [`NSFileProviderError.Code.versionNoLongerAvailable`](../nsfileprovidererror/code/versionnolongeravailable.md) error to the completion handler instead.
 
 If your extension provides content that doesn’t match the requested version, the system detects the mismatch and treats it as a remote update. The system sends the requesting application an error, indicating that something has updated the item remotely. It then requests an updated copy of the item from your file provider.
 
@@ -76,9 +81,9 @@ The system considers all other errors as transient, and attempts to request the 
 
 ##### Canceling Downloads
 
-Your implementation of this method must return a [`Progress`](https://developer.apple.com/documentation/foundation/progress) item that tracks your app’s progress while downloading the requested range. The system uses this item to show the progress to the user.
+Your implementation of this method must return a [`Progress`](../../Foundation/progress.md) item that tracks your app’s progress while downloading the requested range. The system uses this item to show the progress to the user.
 
-If the user cancels the operation, the system calls the progress item’s [`cancellationHandler`](https://developer.apple.com/documentation/foundation/progress/cancellationhandler) block. Use this block to stop fetching the item, because it’s no longer required.
+If the user cancels the operation, the system calls the progress item’s [`cancellationHandler`](../../Foundation/progress/cancellationhandler.md) block. Use this block to stop fetching the item, because it’s no longer required.
 
 ## Parameters
 
@@ -88,17 +93,20 @@ If the user cancels the operation, the system calls the progress item’s [`canc
 - `requestedRange`: The range given as a starting location and a length in bytes.
 - `alignment`: A system defined alignment value. The start and end of the range of data you provide must be multiples of this value. The alignment value may change across reboots; however, the system guarantees that it’s a power of two.
 - `options`: Options for the fetch range.
-- `completionHandler`: A block that you call after downloading the item from your remote storage. You pass the following parameters: - **`fileContents`**: A URL to the item’s contents.
-- **`item`**: The downloaded item.
-- **`retrievedRange`**: The range that your file provider extension is providing. This must be properly aligned, and must cover the requested range.
-- **`flags`**: A flag that provides additional information about the provided content.
-- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
+- `completionHandler`: A block that you call after downloading the item from your remote storage. You pass the following parameters:
+
+  - **`fileContents`**: A URL to the item’s contents.
+  - **`item`**: The downloaded item.
+  - **`retrievedRange`**: The range that your file provider extension is providing. This must be properly aligned, and must cover the requested range.
+  - **`flags`**: A flag that provides additional information about the provided content.
+  - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 
-- [struct NSFileProviderFetchContentsOptions](nsfileproviderfetchcontentsoptions.md)
+### Fetching Ranges from a File
+- [struct NSFileProviderFetchContentsOptions](../nsfileproviderfetchcontentsoptions.md)
   Options for fetching a range of data from a file.
-- [struct NSFileProviderMaterializationFlags](nsfileprovidermaterializationflags.md)
+- [struct NSFileProviderMaterializationFlags](../nsfileprovidermaterializationflags.md)
   Flags that provides additional information about the provided content.
 
 

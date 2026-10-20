@@ -1,7 +1,8 @@
 # JSValueMakeFromJSONString(_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a JavaScript value from a JSON-formatted string.
 
@@ -19,18 +20,23 @@ Creates a JavaScript value from a JSON-formatted string.
 func JSValueMakeFromJSONString(_ ctx: JSContextRef!, _ string: JSStringRef!) -> JSValueRef!
 ```
 
+```c
+JSValueRefJSValueMakeFromJSONString(JSContextRef ctx, JSStringRef string);
+```
+
 #### Return Value
 
-A [`JSValueRef`](jsvalueref.md) that contains the parsed value, or `NULL` if the input is invalid.
+A [`JSValueRef`](./jsvalueref.md) that contains the parsed value, or `NULL` if the input is invalid.
 
 ## Parameters
 
 - `ctx`: The execution context to use.
-- `string`: The [`JSStringRef`](jsstringref.md) that contains the JSON string to parse.
+- `string`: The [`JSStringRef`](./jsstringref.md) that contains the JSON string to parse.
 
 ## See Also
 
-- [func JSValueCreateJSONString(JSContextRef!, JSValueRef!, UInt32, UnsafeMutablePointer<JSValueRef?>!) -> JSStringRef!](jsvaluecreatejsonstring(_:_:_:_:).md)
+### Converting to and from JSON-Formatted Strings
+- [func JSValueCreateJSONString(JSContextRef!, JSValueRef!, UInt32, UnsafeMutablePointer<JSValueRef?>!) -> JSStringRef!](./jsvaluecreatejsonstring%28_,_,_,_%29.md)
   Creates a JavaScript string that contains the JSON-serialized representation of a JavaScript value.
 
 

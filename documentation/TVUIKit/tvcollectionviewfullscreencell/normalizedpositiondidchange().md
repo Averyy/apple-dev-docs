@@ -1,7 +1,8 @@
 # normalizedPositionDidChange()
 
 **Framework**: TVUIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the cell when its normalized position changes.
 
@@ -14,11 +15,16 @@ Notifies the cell when its normalized position changes.
 func normalizedPositionDidChange()
 ```
 
+```objc
+- (void) normalizedPositionDidChange;
+```
+
 #### Discussion
 
 ## See Also
 
-- [func normalizedPositionWillChange(CGFloat)](tvcollectionviewfullscreencell/normalizedpositionwillchange(_:).md)
+### Managing Cell Position
+- [func normalizedPositionWillChange(CGFloat)](./normalizedpositionwillchange%28_%29.md)
   Notifies the cell when its normalized position is about to change.
 
 

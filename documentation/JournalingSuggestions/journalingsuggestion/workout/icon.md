@@ -1,7 +1,8 @@
 # icon
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL to an image on disc that represents the type of workout.
 
@@ -16,7 +17,8 @@ var icon: URL?
 
 ## See Also
 
-- [var route: [CLLocation]?](journalingsuggestion/workout/route.md)
+### Accessing workout summary information
+- [var route: [CLLocation]?](./route.md)
   The geographic path that a person travels over the course of the workout.
 
 

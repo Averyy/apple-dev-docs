@@ -1,12 +1,15 @@
 # line2TextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The text to display below the image.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,13 +18,18 @@ The text to display below the image.
 var line2TextProvider: CLKTextProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKTextProvider * line2TextProvider;
+```
+
 #### Discussion
 
 This property supports multicolor text.
 
 ## See Also
 
-- [var line1ImageProvider: CLKFullColorImageProvider](clkcomplicationtemplategraphicextralargecircularstackimage/line1imageprovider.md)
+### Setting the Complication Data
+- [var line1ImageProvider: CLKFullColorImageProvider](./line1imageprovider.md)
   The image to display.
 
 

@@ -1,7 +1,8 @@
 # angularGradient(_:center:startAngle:endAngle:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An angular gradient, which applies the color function as the angle changes between the start and end angles, and anchored to a relative center point within the filled shape.
 
@@ -21,6 +22,15 @@ An angular gradient, which applies the color function as the angle changes betwe
 static func angularGradient(_ gradient: AnyGradient, center: UnitPoint = .center, startAngle: Angle, endAngle: Angle) -> some ShapeStyle
 ```
 
+Available when `Self` is `AngularGradient`.
+
+**Other overloads**:
+
+```swift
+@export(implementation)
+static func angularGradient(_ gradient: Gradient, center: UnitPoint, startAngle: Angle, endAngle: Angle) -> AngularGradient
+```
+
 #### Discussion
 
 An angular gradient is also known as a “conic” gradient. If `endAngle - startAngle > 2π`, the gradient only draws the last complete turn. If `endAngle - startAngle < 2π`, the gradient fills the missing area with the colors defined by gradient stop locations at `0` and `1`, transitioning between the two halfway across the missing area.
@@ -32,7 +42,7 @@ ContentView()
     .background(.angularGradient(.red.gradient))
 ```
 
-For information about how to use shape styles, see [`ShapeStyle`](shapestyle.md).
+For information about how to use shape styles, see [`ShapeStyle`](../shapestyle.md).
 
 ## Parameters
 
@@ -43,9 +53,10 @@ For information about how to use shape styles, see [`ShapeStyle`](shapestyle.md)
 
 ## See Also
 
-- [static func angularGradient(colors: [Color], center: UnitPoint, startAngle: Angle, endAngle: Angle) -> AngularGradient](shapestyle/angulargradient(colors:center:startangle:endangle:).md)
+### Angular gradients
+- [static func angularGradient(colors: [Color], center: UnitPoint, startAngle: Angle, endAngle: Angle) -> AngularGradient](./angulargradient%28colors,center,startangle,endangle%29.md)
   An angular gradient defined by a collection of colors.
-- [static func angularGradient(stops: [Gradient.Stop], center: UnitPoint, startAngle: Angle, endAngle: Angle) -> AngularGradient](shapestyle/angulargradient(stops:center:startangle:endangle:).md)
+- [static func angularGradient(stops: [Gradient.Stop], center: UnitPoint, startAngle: Angle, endAngle: Angle) -> AngularGradient](./angulargradient%28stops,center,startangle,endangle%29.md)
   An angular gradient defined by a collection of color stops.
 
 

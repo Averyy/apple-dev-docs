@@ -1,7 +1,8 @@
 # FamilyControlsError
 
 **Framework**: Family Controls  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors the Family Controls framework reports.
 
@@ -19,44 +20,44 @@ enum FamilyControlsError
 ## Topics
 
 ### Error values
-- [FamilyControlsError.invalidAccountType](familycontrolserror/invalidaccounttype.md)
+- [FamilyControlsError.invalidAccountType](./familycontrolserror/invalidaccounttype.md)
   The device isn’t signed into a valid iCloud account.
-- [FamilyControlsError.authorizationConflict](familycontrolserror/authorizationconflict.md)
+- [FamilyControlsError.authorizationConflict](./familycontrolserror/authorizationconflict.md)
   Another authorized app already provides parental controls.
-- [FamilyControlsError.authorizationCanceled](familycontrolserror/authorizationcanceled.md)
+- [FamilyControlsError.authorizationCanceled](./familycontrolserror/authorizationcanceled.md)
   The parent or guardian canceled a request for authorization.
-- [FamilyControlsError.invalidArgument](familycontrolserror/invalidargument.md)
+- [FamilyControlsError.invalidArgument](./familycontrolserror/invalidargument.md)
   The method’s arguments are invalid.
-- [FamilyControlsError.unavailable](familycontrolserror/unavailable.md)
+- [FamilyControlsError.unavailable](./familycontrolserror/unavailable.md)
   The system failed to set up the Family Control framework.
-- [FamilyControlsError.restricted](familycontrolserror/restricted.md)
+- [FamilyControlsError.restricted](./familycontrolserror/restricted.md)
   A restriction prevents your app from using Family Controls on this device.
-- [FamilyControlsError.networkError](familycontrolserror/networkerror.md)
+- [FamilyControlsError.networkError](./familycontrolserror/networkerror.md)
   The device must be connected to the network in order to enroll with parental controls.
-- [FamilyControlsError.authenticationMethodUnavailable](familycontrolserror/authenticationmethodunavailable.md)
+- [FamilyControlsError.authenticationMethodUnavailable](./familycontrolserror/authenticationmethodunavailable.md)
   The device must have a passcode set in order for an individual to enroll with parental controls.
 ### Error data
-- [var errorDescription: String?](familycontrolserror/errordescription.md)
+- [var errorDescription: String?](./familycontrolserror/errordescription.md)
   A nonlocalized description of the error, suitable for debugging.
-- [var errorDescription: String?](familycontrolserror/errordescription.md)
+- [var errorDescription: String?](./familycontrolserror/errordescription.md)
   A nonlocalized description of the error, suitable for debugging.
 ### Enumeration Cases
-- [FamilyControlsError.unauthorized](familycontrolserror/unauthorized.md)
+- [FamilyControlsError.unauthorized](./familycontrolserror/unauthorized.md)
   The calling app must be authorized to provide parental controls and access data.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [LocalizedError](../foundation/localizederror.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [LocalizedError](../Foundation/localizederror.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

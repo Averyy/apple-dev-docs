@@ -1,7 +1,8 @@
 # SpacerSizing
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type which defines how spacers should size themselves.
 
@@ -19,7 +20,7 @@ struct SpacerSizing
 
 #### Overview
 
-Use this type in coordination with the [`ToolbarSpacer`](toolbarspacer.md) type to define if the spacer should be a flexible size, or a fixed size using system-defined sizing rules.
+Use this type in coordination with the [`ToolbarSpacer`](./toolbarspacer.md) type to define if the spacer should be a flexible size, or a fixed size using system-defined sizing rules.
 
 For example, the following adds a fixed-size toolbar spacer between the share and more buttons in the toolbar:
 
@@ -42,32 +43,33 @@ ContentView()
 ## Topics
 
 ### Type Properties
-- [static let fixed: SpacerSizing](spacersizing/fixed.md)
+- [static let fixed: SpacerSizing](./spacersizing/fixed.md)
   The fixed spacer sizing behavior. The spacer will use a pre-defined size determined by the system and the context in which the spacer is used.
-- [static let flexible: SpacerSizing](spacersizing/flexible.md)
+- [static let flexible: SpacerSizing](./spacersizing/flexible.md)
   The flexible spacer sizing behavior. The spacer will expand to accommodate as much space as it is given in the current context.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func toolbarColorScheme(ColorScheme?, for: ToolbarPlacement...) -> some View](view/toolbarcolorscheme(_:for:).md)
+### Styling a toolbar
+- [func toolbarColorScheme(ColorScheme?, for: ToolbarPlacement...) -> some View](./view/toolbarcolorscheme%28_,for%29.md)
   Specifies the preferred color scheme of a bar managed by SwiftUI.
-- [func toolbarForegroundStyle<S>(S, for: ToolbarPlacement...) -> some View](view/toolbarforegroundstyle(_:for:).md)
+- [func toolbarForegroundStyle<S>(S, for: ToolbarPlacement...) -> some View](./view/toolbarforegroundstyle%28_,for%29.md)
   Specifies the preferred foreground style of bars managed by SwiftUI.
-- [func windowToolbarStyle<S>(S) -> some Scene](scene/windowtoolbarstyle(_:).md)
+- [func windowToolbarStyle<S>(S) -> some Scene](./scene/windowtoolbarstyle%28_%29.md)
   Sets the style for the toolbar defined within this scene.
-- [protocol WindowToolbarStyle](windowtoolbarstyle.md)
+- [protocol WindowToolbarStyle](./windowtoolbarstyle.md)
   A specification for the appearance and behavior of a window’s toolbar.
-- [var toolbarLabelStyle: ToolbarLabelStyle?](environmentvalues/toolbarlabelstyle.md)
+- [var toolbarLabelStyle: ToolbarLabelStyle?](./environmentvalues/toolbarlabelstyle.md)
   The label style to apply to controls within a toolbar.
-- [struct ToolbarLabelStyle](toolbarlabelstyle.md)
+- [struct ToolbarLabelStyle](./toolbarlabelstyle.md)
   The label style of a toolbar.
-- [func toolbarBackground(_:for:)](view/toolbarbackground(_:for:).md)
+- [func toolbarBackground(_:for:)](./view/toolbarbackground%28_,for%29.md)
   Specifies the preferred shape style of the background of a bar managed by SwiftUI.
 
 

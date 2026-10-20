@@ -2,6 +2,7 @@
 
 **Framework**: MetalFX  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The width, in pixels, of the content region within the distortion texture to use as input.
@@ -19,9 +20,13 @@ The width, in pixels, of the content region within the distortion texture to use
 var distortionWidth: Int { get set }
 ```
 
+```objc
+@property (nonatomic, readwrite) NSUInteger distortionWidth;
+```
+
 #### Discussion
 
-When set to zero (the default), the frame interpolator uses [`contentWidth`](mtlfxframeinterpolatorbase/contentwidth.md) instead.
+When set to zero (the default), the frame interpolator uses [`contentWidth`](./contentwidth.md) instead.
 
 
 ---

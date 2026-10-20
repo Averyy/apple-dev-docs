@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The direction of the force relative to the effect’s transform.
 

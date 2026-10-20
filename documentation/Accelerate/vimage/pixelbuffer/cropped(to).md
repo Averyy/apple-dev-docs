@@ -1,7 +1,8 @@
 # cropped(to:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new pixel buffer that contains a copy of the data specified as a subregion of an existing pixel buffer.
 
@@ -11,7 +12,7 @@ Returns a new pixel buffer that contains a copy of the data specified as a subre
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,6 +20,8 @@ Returns a new pixel buffer that contains a copy of the data specified as a subre
 ```swift
 func cropped(to rect: CGRect) -> vImage.PixelBuffer<Format>
 ```
+
+Available when `Format` conforms to `StaticPixelFormat`.
 
 #### Return Value
 
@@ -56,7 +59,8 @@ print(dest.array)
 
 ## See Also
 
-- [func crop(at: CGPoint, destination: vImage.PixelBuffer<Format>)](vimage/pixelbuffer/crop(at:destination:).md)
+### Cropping
+- [func crop(at: CGPoint, destination: vImage.PixelBuffer<Format>)](./crop%28at,destination%29.md)
   Crops the pixel buffer to a rectangle that’s defined by an origin and the destination buffer’s dimensions.
 
 

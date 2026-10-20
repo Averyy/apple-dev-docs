@@ -1,7 +1,8 @@
 # init(type:creator:)
 
 **Framework**: File Provider  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a structure that contains the provided type and creator codes.
 
@@ -24,7 +25,8 @@ init(type: OSType, creator: OSType)
 
 ## See Also
 
-- [init()](nsfileprovidertypeandcreator/init.md)
+### Creating Type and Creator Structures
+- [init()](./init%28%29.md)
   Returns a new type and creator structure with both codes set to `0`.
 
 

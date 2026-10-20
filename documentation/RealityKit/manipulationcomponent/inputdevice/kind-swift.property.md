@@ -1,7 +1,8 @@
 # kind
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of this input device.
 

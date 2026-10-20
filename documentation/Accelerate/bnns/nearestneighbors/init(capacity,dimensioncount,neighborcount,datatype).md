@@ -1,7 +1,8 @@
 # init(capacity:dimensionCount:neighborCount:dataType:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a new k-nearest neighbors object.
 
@@ -11,7 +12,7 @@ Returns a new k-nearest neighbors object.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 - watchOS 10.0+
 
 ## Declaration
@@ -24,7 +25,7 @@ init(capacity: Int, dimensionCount: Int, neighborCount: Int, dataType: BNNSDataT
 
 - `capacity`: The maximum number of data points.
 - `dimensionCount`: The number of features or dimensions of each data point.
-- `neighborCount`: The number of nearest neighbors that a subsequent call to [`apply(index:outputIndices:outputDistances:)`](bnns/nearestneighbors/apply(index:outputindices:outputdistances:).md) calculates.
+- `neighborCount`: The number of nearest neighbors that a subsequent call to [`apply(index:outputIndices:outputDistances:)`](./apply%28index,outputindices,outputdistances%29.md) calculates.
 - `dataType`: The data type of the data points. This must be either `BNNSDataTypeFloat32` or `BNNSDataTypeFloat16`.
 
 

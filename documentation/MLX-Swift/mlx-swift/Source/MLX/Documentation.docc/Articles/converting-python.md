@@ -10,7 +10,7 @@ Common patterns from python and mapping `mlx` function names.
 
 ## Indexing
 
-``MLXArray`` supports all the same indexing (see <doc:indexing>) as 
+``MLXArray`` supports all the same indexing (see [Indexing](../Organization/indexing.md)) as 
 the python `mx.array`, though in some cases they are written differently.
 In all cases both `MLXArray` and `mx.array` indexing strive to match
 [numpy indexing](https://numpy.org/doc/stable/user/basics.indexing.html).
@@ -37,7 +37,7 @@ Python code | Swift Code
 `array[..., ::-1]` | `array[.ellipsis, stride(by: -1)]` -- reverse last dimension of array
 `array.shape[:-1]` | `array.shape.dropLast()`
 
-See <doc:indexing> for more information.
+See [Indexing](../Organization/indexing.md) for more information.
 
 ## Name Mapping
 
@@ -68,7 +68,7 @@ Note: some of the symbols are not linkable.
 
 `mx.array` method | ``MLXArray`` method
 --- | ---
-`__init__` | see <doc:initialization>
+`__init__` | see [Initialization](../Organization/initialization.md)
 `__repr__` | ``MLXArray/description``
 `__eq__` | ``MLXArray/.==(_:_:)-(MLXArray,MLXArray)``
 `size` | ``MLXArray/size``

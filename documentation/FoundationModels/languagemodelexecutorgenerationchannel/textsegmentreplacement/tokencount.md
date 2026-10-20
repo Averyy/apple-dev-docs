@@ -1,7 +1,8 @@
 # tokenCount
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of tokens the replacement text carries.
 
@@ -21,9 +22,10 @@ var tokenCount: Int
 
 ## See Also
 
-- [var content: String](languagemodelexecutorgenerationchannel/textsegmentreplacement/content.md)
+### Handling the replacement
+- [var content: String](./content.md)
   The replacement text for the entry’s current text segment.
-- [var segmentID: String?](languagemodelexecutorgenerationchannel/textsegmentreplacement/segmentid.md)
+- [var segmentID: String?](./segmentid.md)
   The identifier of the text segment to replace, or empty for the current segment.
 
 

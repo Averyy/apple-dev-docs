@@ -1,14 +1,15 @@
 # EMBEDDED_LEVEL_CALIBRATION_NOISE_SOURCE
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 EMBEDDED_LEVEL_CALIBRATION_NOISE_SOURCE = 0x0701
 ```
 

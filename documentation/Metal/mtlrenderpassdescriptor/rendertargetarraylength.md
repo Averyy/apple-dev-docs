@@ -1,7 +1,8 @@
 # renderTargetArrayLength
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of active layers that all attachments need to have for layered rendering.
 
@@ -19,9 +20,13 @@ The number of active layers that all attachments need to have for layered render
 var renderTargetArrayLength: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger renderTargetArrayLength;
+```
+
 ## Mentions
 
-- [Rendering to multiple texture slices in a draw command](rendering-to-multiple-texture-slices-in-a-draw-command.md)
+- [Rendering to multiple texture slices in a draw command](../rendering-to-multiple-texture-slices-in-a-draw-command.md)
 
 #### Discussion
 
@@ -31,15 +36,16 @@ The table below gives typical values you might set, depending on the type of tex
 
 | Texture Type | Typical Length |
 | --- | --- |
-| [`MTLTextureType.type1DArray`](mtltexturetype/type1darray.md) or [`MTLTextureType.type2DArray`](mtltexturetype/type2darray.md) | The length of the texture array ([`arrayLength`](mtltexture/arraylength.md)) |
-| [`MTLTextureType.typeCube`](mtltexturetype/typecube.md) | 6 |
-| [`MTLTextureType.typeCubeArray`](mtltexturetype/typecubearray.md) | 6 times the length of the texture array ([`arrayLength`](mtltexture/arraylength.md)) |
+| [`MTLTextureType.type1DArray`](../mtltexturetype/type1darray.md) or [`MTLTextureType.type2DArray`](../mtltexturetype/type2darray.md) | The length of the texture array ([`arrayLength`](../mtltexture/arraylength.md)) |
+| [`MTLTextureType.typeCube`](../mtltexturetype/typecube.md) | 6 |
+| [`MTLTextureType.typeCubeArray`](../mtltexturetype/typecubearray.md) | 6 times the length of the texture array ([`arrayLength`](../mtltexture/arraylength.md)) |
 
 ## See Also
 
-- [var renderTargetWidth: Int](mtlrenderpassdescriptor/rendertargetwidth.md)
+### Layered rendering
+- [var renderTargetWidth: Int](./rendertargetwidth.md)
   The width, in pixels, to constrain the render target to.
-- [var renderTargetHeight: Int](mtlrenderpassdescriptor/rendertargetheight.md)
+- [var renderTargetHeight: Int](./rendertargetheight.md)
   The height, in pixels, to constrain the render target to.
 
 

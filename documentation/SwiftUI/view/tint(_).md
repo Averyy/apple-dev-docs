@@ -1,7 +1,8 @@
 # tint(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the tint color within this view.
 
@@ -21,11 +22,18 @@ nonisolated
 func tint(_ tint: Color?) -> some View
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+func tint<S>(_ tint: S?) -> some View where S : ShapeStyle
+```
+
 #### Discussion
 
 Use this method to override the default accent color for this view. Unlike an app’s accent color, which can be overridden by user preference, the tint color is always respected and should be used as a way to provide additional meaning to the control.
 
-This example shows Answer and Decline buttons with [`green`](shapestyle/green.md) and [`red`](shapestyle/red.md) tint colors, respectively.
+This example shows Answer and Decline buttons with [`green`](../shapestyle/green.md) and [`red`](../shapestyle/red.md) tint colors, respectively.
 
 ```swift
 struct ControlTint: View {
@@ -50,15 +58,16 @@ struct ControlTint: View {
 }
 ```
 
-Some controls adapt to the tint color differently based on their style, the current platform, and the surrounding context. For example, in macOS, a button with the [`bordered`](primitivebuttonstyle/bordered.md) style doesn’t tint its background, but one with the [`borderedProminent`](primitivebuttonstyle/borderedprominent.md) style does. In macOS, neither of these button styles tint their label, but they do in other platforms.
+Some controls adapt to the tint color differently based on their style, the current platform, and the surrounding context. For example, in macOS, a button with the [`bordered`](../primitivebuttonstyle/bordered.md) style doesn’t tint its background, but one with the [`borderedProminent`](../primitivebuttonstyle/borderedprominent.md) style does. In macOS, neither of these button styles tint their label, but they do in other platforms.
 
 ## Parameters
 
-- `tint`: The tint [`Color`](color.md) to apply.
+- `tint`: The tint [`Color`](../color.md) to apply.
 
 ## See Also
 
-- [struct Color](color.md)
+### Setting a color
+- [struct Color](../color.md)
   A representation of a color that adapts to a given context.
 
 

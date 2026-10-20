@@ -1,7 +1,8 @@
 # matchedString
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A substring that the data detection system identifies from an original string as a common type of data.
 
@@ -18,6 +19,10 @@ A substring that the data detection system identifies from an original string as
 
 ```swift
 var matchedString: String { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSString * matchedString;
 ```
 
 #### Discussion

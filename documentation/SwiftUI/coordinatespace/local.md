@@ -1,7 +1,8 @@
 # CoordinateSpace.local
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The local coordinate space of the current view.
 
@@ -22,9 +23,10 @@ case local
 
 ## See Also
 
-- [CoordinateSpace.global](coordinatespace/global.md)
+### Getting coordinate spaces
+- [CoordinateSpace.global](./global.md)
   The global coordinate space at the root of the view hierarchy.
-- [CoordinateSpace.named(_:)](coordinatespace/named(_:).md)
+- [CoordinateSpace.named(_:)](./named%28_%29.md)
   A named reference to a view’s local coordinate space.
 
 

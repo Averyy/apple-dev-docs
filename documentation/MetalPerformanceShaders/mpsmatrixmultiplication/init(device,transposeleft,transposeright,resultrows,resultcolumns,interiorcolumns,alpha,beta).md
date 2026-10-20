@@ -1,7 +1,8 @@
 # init(device:transposeLeft:transposeRight:resultRows:resultColumns:interiorColumns:alpha:beta:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a matrix multiplication kernel.
 
@@ -19,15 +20,19 @@ Initializes a matrix multiplication kernel.
 init(device: any MTLDevice, transposeLeft: Bool, transposeRight: Bool, resultRows: Int, resultColumns: Int, interiorColumns: Int, alpha: Double, beta: Double)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device transposeLeft:(BOOL) transposeLeft transposeRight:(BOOL) transposeRight resultRows:(NSUInteger) resultRows resultColumns:(NSUInteger) resultColumns interiorColumns:(NSUInteger) interiorColumns alpha:(double) alpha beta:(double) beta;
+```
+
 #### Return Value
 
-A valid [`MPSMatrixMultiplication`](mpsmatrixmultiplication.md) object or `nil`, if failure.
+A valid [`MPSMatrixMultiplication`](../mpsmatrixmultiplication.md) object or `nil`, if failure.
 
 ## Parameters
 
 - `device`: The device on which the matrix multiplication kernel will run.
-- `transposeLeft`: A boolean value that indicates if the left input matrix should be used in its transposed form. If the value is [`true`](https://developer.apple.com/documentation/swift/true), then `op(A) = A**T`; otherwise, `op(A) = A`.
-- `transposeRight`: A boolean value that indicates if the right input matrix should be used in its transposed form. If the value is [`true`](https://developer.apple.com/documentation/swift/true), then `op(B) = B**T`; otherwise, `op(B) = B`.
+- `transposeLeft`: A boolean value that indicates if the left input matrix should be used in its transposed form. If the value is [`true`](../../Swift/true.md), then `op(A) = A**T`; otherwise, `op(A) = A`.
+- `transposeRight`: A boolean value that indicates if the right input matrix should be used in its transposed form. If the value is [`true`](../../Swift/true.md), then `op(B) = B**T`; otherwise, `op(B) = B`.
 - `resultRows`: The number of rows in the result matrix (`M` in the *BLAS GEMM* description).
 - `resultColumns`: The number of columns in the result matrix (`N` in the *BLAS GEMM* description).
 - `interiorColumns`: The number of columns of the left input matrix after the appropriate transpose operation has been applied (`K` in the *BLAS GEMM* description).
@@ -36,7 +41,8 @@ A valid [`MPSMatrixMultiplication`](mpsmatrixmultiplication.md) object or `nil`,
 
 ## See Also
 
-- [func encode(commandBuffer: any MTLCommandBuffer, leftMatrix: MPSMatrix, rightMatrix: MPSMatrix, resultMatrix: MPSMatrix)](mpsmatrixmultiplication/encode(commandbuffer:leftmatrix:rightmatrix:resultmatrix:).md)
+### Methods
+- [func encode(commandBuffer: any MTLCommandBuffer, leftMatrix: MPSMatrix, rightMatrix: MPSMatrix, resultMatrix: MPSMatrix)](./encode%28commandbuffer,leftmatrix,rightmatrix,resultmatrix%29.md)
   Encodes a matrix multiplication kernel to a command buffer.
 
 

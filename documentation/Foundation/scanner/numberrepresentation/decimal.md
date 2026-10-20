@@ -1,7 +1,8 @@
 # Scanner.NumberRepresentation.decimal
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 13.0+

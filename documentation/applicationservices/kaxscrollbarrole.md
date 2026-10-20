@@ -1,7 +1,8 @@
 # kAXScrollBarRole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A scroll bar control.
 
@@ -12,6 +13,10 @@ A scroll bar control.
 
 ```swift
 var kAXScrollBarRole: String { get }
+```
+
+```c
+#define kAXScrollBarRole
 ```
 
 

@@ -1,7 +1,8 @@
 # AdAttributionKitError.invalidImpressionJWSComponents
 
 **Framework**: AdAttributionKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The attribution failed due to invalid JWS components.
 

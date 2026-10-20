@@ -1,7 +1,8 @@
 # hasAccessToAllHosts
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating if the currently granted permission match patterns set contains the `<all_urls>` pattern or any `*` host patterns.
 
@@ -18,11 +19,16 @@ A Boolean value indicating if the currently granted permission match patterns se
 var hasAccessToAllHosts: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL hasAccessToAllHosts;
+```
+
 ## See Also
 
-- [var currentPermissionMatchPatterns: Set<WKWebExtension.MatchPattern>](wkwebextensioncontext/currentpermissionmatchpatterns.md)
+### Related Documentation
+- [var currentPermissionMatchPatterns: Set<WKWebExtension.MatchPattern>](./currentpermissionmatchpatterns.md)
   The currently granted permission match patterns that have not expired.
-- [var hasAccessToAllURLs: Bool](wkwebextensioncontext/hasaccesstoallurls.md)
+- [var hasAccessToAllURLs: Bool](./hasaccesstoallurls.md)
   A Boolean value indicating if the currently granted permission match patterns set contains the `<all_urls>` pattern.
 
 

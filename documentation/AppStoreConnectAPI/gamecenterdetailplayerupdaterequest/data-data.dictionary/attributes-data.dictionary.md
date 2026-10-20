@@ -1,7 +1,8 @@
 # GameCenterDetailPlayerUpdateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes that describe a Game Center detail player you update.
 
@@ -10,7 +11,7 @@ The attributes that describe a Game Center detail player you update.
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetailPlayerUpdateRequest.Data.Attributes
 ```
 

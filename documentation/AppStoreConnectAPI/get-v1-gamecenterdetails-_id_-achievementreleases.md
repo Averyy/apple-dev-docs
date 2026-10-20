@@ -1,12 +1,15 @@
 # List achievement releases
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Read information about the achievement releases for specific Game Center detail.
 
 **Availability**:
-- App Store Connect API 3.0+
+- App Store Connect API 3.0+ - Deprecated in 4.3
+
+> **Deprecated**: This endpoint is deprecated.
 
 #### Discussion
 
@@ -14,7 +17,7 @@ Read information about the achievement releases for specific Game Center detail.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/gameCenterDetails/83b895ff-7bfe-5056-1208-ffd0d6a74e46/achievementReleases?limit=5
 ```
 
@@ -87,25 +90,41 @@ https://api.appstoreconnect.apple.com/v1/gameCenterDetails/83b895ff-7bfe-5056-12
 
 ## Parameters
 
-- `fields[gameCenterAchievementReleases]` ([string])
-- `fields[gameCenterAchievements]` ([string])
-- `fields[gameCenterDetails]` ([string])
-- `filter[gameCenterAchievement]` ([string])
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center detail resource ID from the [`Read the state of game center for an app`](./get-v1-apps-_id_-gamecenterdetail.md) response.
+
+### Query Parameters
+
+- `fields[gameCenterAchievementReleases]` ([string]): **Allowed Values**: `live`, `gameCenterDetail`, `gameCenterAchievement`
+- `fields[gameCenterAchievements]` ([string]): **Allowed Values**: `referenceName`, `vendorIdentifier`, `points`, `showBeforeEarned`, `repeatable`, `archived`, `activityProperties`, `gameCenterDetail`, `gameCenterGroup`, `groupAchievement`, `localizations`, `releases`, `activity`
+- `fields[gameCenterDetails]` ([string]): **Allowed Values**: `arcadeEnabled`, `challengeEnabled`, `app`, `gameCenterAppVersions`, `gameCenterGroup`, `gameCenterLeaderboards`, `gameCenterLeaderboardsV2`, `gameCenterLeaderboardSets`, `gameCenterLeaderboardSetsV2`, `gameCenterAchievements`, `gameCenterAchievementsV2`, `gameCenterActivities`, `gameCenterChallenges`, `defaultLeaderboard`, `defaultLeaderboardV2`, `defaultGroupLeaderboard`, `defaultGroupLeaderboardV2`, `achievementReleases`, `activityReleases`, `challengeReleases`, `leaderboardReleases`, `leaderboardSetReleases`, `blockedPlayers`, `challengesMinimumPlatformVersions`
+- `filter[gameCenterAchievement]` ([string]) *(deprecated)*
 - `filter[live]` ([string])
-- `include` ([string])
-- `limit` (integer)
+- `include` ([string]): **Allowed Values**: `gameCenterDetail`, `gameCenterAchievement`
+- `limit` (integer): **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`GameCenterAchievementReleasesResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List achievement release IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
-- [Read Release Information for an Achievement](get-v1-gamecenterachievements-_id_-releases.md)
+### Managing Game Center achievement releases
+- [List achievement release IDs for a Game Center detail](./get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
+- [Read Release Information for an Achievement](./get-v1-gamecenterachievements-_id_-releases.md)
   Read the state of an achievement release and related information.
-- [List release IDs for a Game Center achievement](get-v1-gamecenterachievements-_id_-relationships-releases.md)
-- [Read game center achievement release information](get-v1-gamecenterachievementreleases-_id_.md)
+- [List release IDs for a Game Center achievement](./get-v1-gamecenterachievements-_id_-relationships-releases.md)
+- [Read game center achievement release information](./get-v1-gamecenterachievementreleases-_id_.md)
   Read the state of a specific achievement release.
-- [Create a game center achievement release](post-v1-gamecenterachievementreleases.md)
+- [Create a game center achievement release](./post-v1-gamecenterachievementreleases.md)
   Create a release for an achievement and a Game Center detail.
-- [Delete a game center achievement release](delete-v1-gamecenterachievementreleases-_id_.md)
+- [Delete a game center achievement release](./delete-v1-gamecenterachievementreleases-_id_.md)
   Delete a release of an achievement or Game Center detail.
 
 

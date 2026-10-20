@@ -1,7 +1,8 @@
 # replace
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A behavior that replaces any currently opened immersive environment with the new scene.
 
@@ -16,7 +17,7 @@ static var replace: ImmersiveEnvironmentBehavior { get }
 
 #### Discussion
 
-Use this value with the [`immersiveEnvironmentBehavior(_:)`](scene/immersiveenvironmentbehavior(_:).md) scene modifier to define that the system should hide the system’s immersive environment before opening the scene.
+Use this value with the [`immersiveEnvironmentBehavior(_:)`](../scene/immersiveenvironmentbehavior%28_%29.md) scene modifier to define that the system should hide the system’s immersive environment before opening the scene.
 
 
 ---

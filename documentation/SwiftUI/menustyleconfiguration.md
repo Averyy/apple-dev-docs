@@ -1,7 +1,8 @@
 # MenuStyleConfiguration
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A configuration of a menu.
 
@@ -21,7 +22,7 @@ struct MenuStyleConfiguration
 
 #### Overview
 
-Use the [`init(_:)`](menu/init(_:).md) initializer of [`Menu`](menu.md) to create an instance using the current menu style, which you can modify to create a custom style.
+Use the [`init(_:)`](./menu/init%28_%29.md) initializer of [`Menu`](./menu.md) to create an instance using the current menu style, which you can modify to create a custom style.
 
 For example, the following code creates a new, custom style that adds a red border to the current menu style:
 
@@ -37,16 +38,17 @@ struct RedBorderMenuStyle: MenuStyle {
 ## Topics
 
 ### Setting the label and content
-- [MenuStyleConfiguration.Label](menustyleconfiguration/label.md)
+- [MenuStyleConfiguration.Label](./menustyleconfiguration/label.md)
   A type-erased label of a menu.
-- [MenuStyleConfiguration.Content](menustyleconfiguration/content.md)
+- [MenuStyleConfiguration.Content](./menustyleconfiguration/content.md)
   A type-erased content of a menu.
 
 ## See Also
 
-- [func menuStyle<S>(S) -> some View](view/menustyle(_:).md)
+### Styling menus
+- [func menuStyle<S>(S) -> some View](./view/menustyle%28_%29.md)
   Sets the style for menus within this view.
-- [protocol MenuStyle](menustyle.md)
+- [protocol MenuStyle](./menustyle.md)
   A type that applies standard interaction behavior and a custom appearance to all menus within a view hierarchy.
 
 

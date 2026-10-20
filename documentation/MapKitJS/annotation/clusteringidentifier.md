@@ -1,7 +1,8 @@
 # clusteringIdentifier
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for grouping annotations into the same cluster.
 
@@ -10,14 +11,14 @@ An identifier for grouping annotations into the same cluster.
 
 ## Declaration
 
-```swift
+```
 get clusteringIdentifier(): string | null;
 set clusteringIdentifier(value: string | null);
 ```
 
 ## Mentions
 
-- [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 5](../mapkit-js-5.md)
 
 #### Discussion
 
@@ -25,13 +26,14 @@ For MapKit JS to cluster annotations, an annotation needs a `clusteringIdentifie
 
 The default value is `null`.
 
-For more details, see [`Clustering annotations`](clustering-annotations.md).
+For more details, see [Clustering annotations](../clustering-annotations.md).
 
 ## See Also
 
-- [memberAnnotations](annotation/memberannotations.md)
+### Managing clustering
+- [memberAnnotations](./memberannotations.md)
   An array of annotations that the framework groups together in a cluster.
-- [collisionMode](annotation/collisionmode-data.property.md)
+- [collisionMode](./collisionmode-data.property.md)
   A mode that determines the shape of the collision frame.
 
 

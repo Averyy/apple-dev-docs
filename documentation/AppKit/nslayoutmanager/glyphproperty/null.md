@@ -1,7 +1,8 @@
 # null
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The null glyph, which the layout manager ignores.
 
@@ -14,13 +15,18 @@ The null glyph, which the layout manager ignores.
 static var null: NSLayoutManager.GlyphProperty { get }
 ```
 
+```c
+NSGlyphPropertyNull
+```
+
 ## See Also
 
-- [static var controlCharacter: NSLayoutManager.GlyphProperty](nslayoutmanager/glyphproperty/controlcharacter.md)
+### Glyph properties
+- [static var controlCharacter: NSLayoutManager.GlyphProperty](./controlcharacter.md)
   A glyph representing a control character.
-- [static var elastic: NSLayoutManager.GlyphProperty](nslayoutmanager/glyphproperty/elastic.md)
+- [static var elastic: NSLayoutManager.GlyphProperty](./elastic.md)
   A glyph with a changeable width, such as a white space character.
-- [static var nonBaseCharacter: NSLayoutManager.GlyphProperty](nslayoutmanager/glyphproperty/nonbasecharacter.md)
+- [static var nonBaseCharacter: NSLayoutManager.GlyphProperty](./nonbasecharacter.md)
   A glyph that combines several properties.
 
 

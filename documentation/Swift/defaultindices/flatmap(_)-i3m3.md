@@ -1,7 +1,8 @@
 # flatMap(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array containing the concatenated results of calling the given transformation with each element of this sequence.
 
@@ -42,7 +43,7 @@ let flatMapped = numbers.flatMap { Array(repeating: $0, count: $0) }
 
 In fact, `s.flatMap(transform)`  is equivalent to `Array(s.map(transform).joined())`.
 
-> **Note**: O(*m* + *n*), where *n* is the length of this sequence and *m* is the length of the result.
+> **Complexity**: O(*m* + *n*), where *n* is the length of this sequence and *m* is the length of the result.
 
 ## Parameters
 

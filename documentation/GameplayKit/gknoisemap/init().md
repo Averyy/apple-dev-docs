@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: GameplayKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a noise map with a constant noise value of zero throughout.
 
@@ -19,19 +20,24 @@ Initializes a noise map with a constant noise value of zero throughout.
 convenience init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 #### Return Value
 
 A new noise map object.
 
 #### Discussion
 
-This convenience initializer is equivalent to creating a [`GKNoise`](gknoise.md) object from [`GKConstantNoiseSource`](gkconstantnoisesource.md) output with a constant value of zero, then using the [`init(_:)`](gknoisemap/init(_:).md) initializer to create a noise map from the result.
+This convenience initializer is equivalent to creating a [`GKNoise`](../gknoise.md) object from [`GKConstantNoiseSource`](../gkconstantnoisesource.md) output with a constant value of zero, then using the [`init(_:)`](./init%28_%29.md) initializer to create a noise map from the result.
 
 ## See Also
 
-- [convenience init(GKNoise)](gknoisemap/init(_:).md)
+### Creating a Noise Map
+- [convenience init(GKNoise)](./init%28_%29.md)
   Initializes a noise map by sampling from the specified noise object.
-- [init(GKNoise, size: vector_double2, origin: vector_double2, sampleCount: vector_int2, seamless: Bool)](gknoisemap/init(_:size:origin:samplecount:seamless:).md)
+- [init(GKNoise, size: vector_double2, origin: vector_double2, sampleCount: vector_int2, seamless: Bool)](./init%28_,size,origin,samplecount,seamless%29.md)
   Creates a noise map by sampling from the specified noise object.
 
 

@@ -1,7 +1,8 @@
 # force
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of force applied by the touch.
 
@@ -18,15 +19,20 @@ The amount of force applied by the touch.
 var force: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CGFloat force;
+```
+
 #### Discussion
 
 This is a value predetermined by the system and isn’t user specific. A value of 1.0 represents the force of an average touch.
 
 ## See Also
 
-- [var altitude: CGFloat](pkstrokepointreference/altitude.md)
+### Getting the point’s touch data
+- [var altitude: CGFloat](./altitude.md)
   The altitude of this point in radians.
-- [var azimuth: CGFloat](pkstrokepointreference/azimuth.md)
+- [var azimuth: CGFloat](./azimuth.md)
   The azimuth of this point in radians.
 
 

@@ -1,7 +1,8 @@
 # MerchantMetadata
 
 **Framework**: Apple Pay Merchant Token Management API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The metadata of the merchant that updated on the server.
 
@@ -10,7 +11,7 @@ The metadata of the merchant that updated on the server.
 
 ## Declaration
 
-```swift
+```
 object MerchantMetadata
 ```
 
@@ -21,6 +22,8 @@ Apple Pay sends a notification with a unique event identifier to this URL for ev
 ## Properties
 
 - `tokenNotificationURL` (string): The URL for the token notification.
+
+  **Maximum Length**: `256`
 
 
 ---

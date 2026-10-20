@@ -1,7 +1,8 @@
 # kAXSecureTextFieldSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A text field intended to contain sensitive data and that displays the user’s input as a series of bullets.
 
@@ -12,6 +13,10 @@ A text field intended to contain sensitive data and that displays the user’s i
 
 ```swift
 var kAXSecureTextFieldSubrole: String { get }
+```
+
+```c
+#define kAXSecureTextFieldSubrole
 ```
 
 

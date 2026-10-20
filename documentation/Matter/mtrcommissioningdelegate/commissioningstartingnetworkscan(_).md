@@ -1,7 +1,8 @@
 # commissioningStartingNetworkScan(_:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notification that a network scan is starting.  This will only happen if a network scan is performed during commissioning.
 
@@ -18,6 +19,10 @@ Notification that a network scan is starting.  This will only happen if a networ
 
 ```swift
 optional func commissioningStartingNetworkScan(_ commissioning: MTRCommissioningOperation)
+```
+
+```objc
+- (void) commissioningStartingNetworkScan:(MTRCommissioningOperation *) commissioning;
 ```
 
 

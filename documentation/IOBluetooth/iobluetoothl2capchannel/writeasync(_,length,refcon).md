@@ -1,17 +1,22 @@
 # writeAsync(_:length:refcon:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the given data over the target L2CAP channel asynchronously to the remote device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func writeAsync(_ data: UnsafeMutableRawPointer!, length: UInt16, refcon: UnsafeMutableRawPointer!) -> IOReturn
+```
+
+```objc
+- (IOReturn) writeAsync:(void *) data length:(UInt16) length refcon:(void *) refcon;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # ENOSTR
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Not a STREAM.
 

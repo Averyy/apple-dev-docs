@@ -1,7 +1,8 @@
 # vehicleRestrictions
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The restrictions on the driving privilege.
 

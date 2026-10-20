@@ -1,7 +1,8 @@
 # sourceApplicationBundleIdentifier
 
 **Framework**: BrowserKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source browser app’s bundle identifier.
 
@@ -15,9 +16,14 @@ The source browser app’s bundle identifier.
 var sourceApplicationBundleIdentifier: String? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * sourceApplicationBundleIdentifier;
+```
+
 ## See Also
 
-- [var sourceApplicationLocalizedName: String?](bebrowserdata/sourceapplicationlocalizedname.md)
+### Identifying the source browser app
+- [var sourceApplicationLocalizedName: String?](./sourceapplicationlocalizedname.md)
   The source browser app’s localized name.
 
 

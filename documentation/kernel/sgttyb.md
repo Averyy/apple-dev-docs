@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct sgttyb {
     ...
 };
@@ -17,11 +17,11 @@ struct sgttyb {
 ## Topics
 
 ### Instance Properties
-- [sg_erase](sgttyb/1557853-sg_erase.md)
-- [sg_flags](sgttyb/1557868-sg_flags.md)
-- [sg_ispeed](sgttyb/1557882-sg_ispeed.md)
-- [sg_kill](sgttyb/1557833-sg_kill.md)
-- [sg_ospeed](sgttyb/1557872-sg_ospeed.md)
+- [sg_erase](./sgttyb/api-1557853-sg_erase.md)
+- [sg_flags](./sgttyb/api-1557868-sg_flags.md)
+- [sg_ispeed](./sgttyb/api-1557882-sg_ispeed.md)
+- [sg_kill](./sgttyb/api-1557833-sg_kill.md)
+- [sg_ospeed](./sgttyb/api-1557872-sg_ospeed.md)
 
 
 ---

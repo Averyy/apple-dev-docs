@@ -1,16 +1,21 @@
 # item
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var item: UnsafeMutablePointer<es_btm_launch_item_t>
+```
+
+```c
+es_btm_launch_item_t * item;
 ```
 
 

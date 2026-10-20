@@ -1,7 +1,8 @@
 # IOHIDCompletionAction
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Function called when set/get report completes
 
@@ -10,7 +11,7 @@ Function called when set/get report completes
 
 ## Declaration
 
-```swift
+```c
 typedef void (*IOHIDCompletionAction)(void *target, void *parameter, IOReturn status, uint32_t bufferSizeRemaining);
 ```
 
@@ -22,10 +23,11 @@ typedef void (*IOHIDCompletionAction)(void *target, void *parameter, IOReturn st
 
 ## See Also
 
-- [IOHIDReportType](iohidreporttype.md)
+### Reports
+- [IOHIDReportType](./iohidreporttype.md)
   Describes different type of HID reports.
-- [HIDReportCommandType](hidreportcommandtype.md)
-- [IOHIDCompletion](iohidcompletion.md)
+- [HIDReportCommandType](./hidreportcommandtype.md)
+- [IOHIDCompletion](./iohidcompletion.md)
   Struct specifying action to perform when set/get report completes.
 
 

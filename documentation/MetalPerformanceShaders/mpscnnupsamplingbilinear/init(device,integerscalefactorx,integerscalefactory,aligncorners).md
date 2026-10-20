@@ -1,7 +1,8 @@
 # init(device:integerScaleFactorX:integerScaleFactorY:alignCorners:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.0+
@@ -17,9 +18,14 @@
 init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int, alignCorners: Bool)
 ```
 
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device integerScaleFactorX:(NSUInteger) integerScaleFactorX integerScaleFactorY:(NSUInteger) integerScaleFactorY alignCorners:(BOOL) alignCorners;
+```
+
 ## See Also
 
-- [convenience init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](mpscnnupsamplingbilinear/init(device:integerscalefactorx:integerscalefactory:).md)
+### Initializers
+- [convenience init(device: any MTLDevice, integerScaleFactorX: Int, integerScaleFactorY: Int)](./init%28device,integerscalefactorx,integerscalefactory%29.md)
   Initializes a bilinear spatial upsampling filter.
 
 

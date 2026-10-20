@@ -1,7 +1,8 @@
 # Read the repository information for an xcode cloud workflow
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about the Git repository of a specific Xcode Cloud workflow.
 
@@ -16,7 +17,7 @@ The example request below retrieves information about an Xcode Cloud workflow’
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f-9aa2651c2f1f/repository
 ```
 
@@ -64,19 +65,37 @@ https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f-9aa
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Workflows  resource.
+
+### Query Parameters
+
 - `fields[scmRepositories]` ([string]): Additional fields to include for the Repositories resource returned by the response.
-- `fields[scmGitReferences]` ([string])
-- `fields[scmProviders]` ([string])
-- `include` ([string])
+
+  **Allowed Values**: `lastAccessedDate`, `httpCloneUrl`, `sshCloneUrl`, `ownerName`, `repositoryName`, `scmProvider`, `defaultBranch`, `gitReferences`, `pullRequests`
+- `fields[scmGitReferences]` ([string]): **Allowed Values**: `name`, `canonicalName`, `isDeleted`, `kind`, `repository`
+- `fields[scmProviders]` ([string]): **Allowed Values**: `scmProviderType`, `url`, `repositories`
+- `include` ([string]): **Allowed Values**: `scmProvider`, `defaultBranch`
+
+## Responses
+
+- `200` OK (`ScmRepositoryResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read xcode cloud workflow information](get-v1-ciworkflows-_id_.md)
+### Getting Xcode Cloud Workflows
+- [Read xcode cloud workflow information](./get-v1-ciworkflows-_id_.md)
   Get information about a specific Xcode Cloud workflow.
-- [List all xcode cloud builds for a workflow](get-v1-ciworkflows-_id_-buildruns.md)
+- [List all xcode cloud builds for a workflow](./get-v1-ciworkflows-_id_-buildruns.md)
   List all builds Xcode Cloud performed for a specific workflow.
-- [List build run IDs for a CI workflow](get-v1-ciworkflows-_id_-relationships-buildruns.md)
-- [Get the repository ID for a CI workflow](get-v1-ciworkflows-_id_-relationships-repository.md)
+- [List build run IDs for a CI workflow](./get-v1-ciworkflows-_id_-relationships-buildruns.md)
+- [Get the repository ID for a CI workflow](./get-v1-ciworkflows-_id_-relationships-repository.md)
 
 
 ---

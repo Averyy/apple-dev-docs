@@ -1,7 +1,8 @@
 # CNContactNoteKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A note associated with a contact.
 
@@ -19,15 +20,20 @@ A note associated with a contact.
 let CNContactNoteKey: String
 ```
 
+```c
+extern NSString * const CNContactNoteKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
-To be able to fetch the [`note`](cncontact/note.md) property in iOS, your app needs the [`com.apple.developer.contacts.notes`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.contacts.notes) entitlement.
+To be able to fetch the [`note`](./cncontact/note.md) property in iOS, your app needs the [`com.apple.developer.contacts.notes`](../BundleResources/entitlements/com.apple.developer.contacts.notes.md) entitlement.
 
 ## See Also
 
-- [com.apple.developer.contacts.notes](../bundleresources/entitlements/com.apple.developer.contacts.notes.md)
+### Notes
+- [com.apple.developer.contacts.notes](../BundleResources/entitlements/com.apple.developer.contacts.notes.md)
   A Boolean value that indicates whether the app may access the notes in contact entries.
 
 

@@ -1,7 +1,8 @@
 # CaptureInputSequenceProvider
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Reads from an AV capture device such as a microphone, providing the captured audio in a format suitable for analysis by a speech analyzer.
 
@@ -22,26 +23,27 @@ final class CaptureInputSequenceProvider
 ## Topics
 
 ### Creating a provider
-- [static func providerWithSession(from: AVCaptureDevice, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> CaptureInputSequenceProvider](captureinputsequenceprovider/providerwithsession(from:compatiblewith:priority:).md)
+- [static func providerWithSession(from: AVCaptureDevice, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> CaptureInputSequenceProvider](./captureinputsequenceprovider/providerwithsession%28from,compatiblewith,priority%29.md)
   Returns an input sequence provider that reads from an audio capture device, and configures a new audio capture session with that device.
-- [static func provider(from: AVCaptureDevice, in: AVCaptureSession, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> CaptureInputSequenceProvider](captureinputsequenceprovider/provider(from:in:compatiblewith:priority:).md)
+- [static func provider(from: AVCaptureDevice, in: AVCaptureSession, compatibleWith: [any SpeechModule], priority: TaskPriority?) async throws -> CaptureInputSequenceProvider](./captureinputsequenceprovider/provider%28from,in,compatiblewith,priority%29.md)
   Returns an input sequence provider that reads from an audio capture device.
-- [init(session: AVCaptureSession, analyzerFormat: AVAudioFormat, priority: TaskPriority?) throws](captureinputsequenceprovider/init(session:analyzerformat:priority:).md)
+- [init(session: AVCaptureSession, analyzerFormat: AVAudioFormat, priority: TaskPriority?) throws](./captureinputsequenceprovider/init%28session,analyzerformat,priority%29.md)
   Creates an input sequence provider.
 ### Obtaining an input sequence
-- [var analyzerInputs: some Sendable & AsyncSequence<AnalyzerInput, any Error>](captureinputsequenceprovider/analyzerinputs.md)
+- [var analyzerInputs: some Sendable & AsyncSequence<AnalyzerInput, any Error>](./captureinputsequenceprovider/analyzerinputs.md)
   A new sequence of speech analyzer input objects containing captured audio.
 ### Working with a capture session
-- [var captureSession: AVCaptureSession](captureinputsequenceprovider/capturesession.md)
+- [var captureSession: AVCaptureSession](./captureinputsequenceprovider/capturesession.md)
   The underlying capture session.
-- [var captureAudioDataOutput: AVCaptureAudioDataOutput](captureinputsequenceprovider/captureaudiodataoutput.md)
+- [var captureAudioDataOutput: AVCaptureAudioDataOutput](./captureinputsequenceprovider/captureaudiodataoutput.md)
   An audio data output that routes and converts captured audio buffers to async sequences.
 
 ## See Also
 
-- [class AssetInputSequenceProvider](assetinputsequenceprovider.md)
+### Audio sources
+- [class AssetInputSequenceProvider](./assetinputsequenceprovider.md)
   Reads from an audio file or asset, providing its audio in a format suitable for analysis by a speech analyzer.
-- [class AnalyzerInputConverter](analyzerinputconverter.md)
+- [class AnalyzerInputConverter](./analyzerinputconverter.md)
   Converts audio buffers to a format suitable for analysis by a speech analyzer.
 
 

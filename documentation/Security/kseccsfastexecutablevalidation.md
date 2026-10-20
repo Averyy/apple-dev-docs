@@ -1,7 +1,8 @@
 # kSecCSFastExecutableValidation
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 14.5+
@@ -13,6 +14,10 @@
 
 ```swift
 var kSecCSFastExecutableValidation: UInt32 { get }
+```
+
+```c
+kSecCSFastExecutableValidation
 ```
 
 

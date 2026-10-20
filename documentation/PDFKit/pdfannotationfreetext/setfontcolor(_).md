@@ -1,17 +1,22 @@
 # setFontColor(_:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the font color used in the text field of the annotation.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.12
 
 ## Declaration
 
 ```swift
 func setFontColor(_ color: NSColor!)
+```
+
+```objc
+- (void) setFontColor:(NSColor *) color;
 ```
 
 ## Parameters
@@ -20,13 +25,15 @@ func setFontColor(_ color: NSColor!)
 
 ## See Also
 
-- [class PDFAnnotationFreeText](pdfannotationfreetext.md)
+### Related Documentation
+- [class PDFAnnotationFreeText](../pdfannotationfreetext.md)
   A `PDFAnnotationFreeText` object displays text on a page.
-- [func font() -> NSFont!](pdfannotationfreetext/font.md)
+### Managing Font and Font Color
+- [func font() -> NSFont!](./font%28%29.md)
   Returns the font used for the annotation’s text field.
-- [func setFont(NSFont!)](pdfannotationfreetext/setfont(_:).md)
+- [func setFont(NSFont!)](./setfont%28_%29.md)
   Sets the font used in the text field of the annotation.
-- [func fontColor() -> NSColor!](pdfannotationfreetext/fontcolor.md)
+- [func fontColor() -> NSColor!](./fontcolor%28%29.md)
   Returns the font color used in the text field of the annotation.
 
 

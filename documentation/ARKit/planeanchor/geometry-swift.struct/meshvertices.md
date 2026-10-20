@@ -1,7 +1,8 @@
 # meshVertices
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The vertices in the mesh that describes a plane.
 
@@ -16,11 +17,12 @@ var meshVertices: GeometrySource { get }
 
 ## See Also
 
-- [var meshFaces: GeometryElement](planeanchor/geometry-swift.struct/meshfaces.md)
+### Inspecting plane geometry
+- [var meshFaces: GeometryElement](./meshfaces.md)
   The faces in the mesh that describes a plane.
-- [var extent: PlaneAnchor.Geometry.Extent](planeanchor/geometry-swift.struct/extent-swift.property.md)
+- [var extent: PlaneAnchor.Geometry.Extent](./extent-swift.property.md)
   The size of a plane.
-- [PlaneAnchor.Geometry.Extent](planeanchor/geometry-swift.struct/extent-swift.struct.md)
+- [PlaneAnchor.Geometry.Extent](./extent-swift.struct.md)
   The size of a plane.
 
 

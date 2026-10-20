@@ -2,6 +2,7 @@
 
 **Framework**: Core NFC  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Sends the Select command (0x25 command code), as defined in the ISO 15693-3 specification, to the tag.
@@ -14,7 +15,15 @@ Sends the Select command (0x25 command code), as defined in the ISO 15693-3 spec
 ## Declaration
 
 ```swift
+func select(requestFlags flags: NFCISO15693RequestFlag, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func select(requestFlags flags: NFCISO15693RequestFlag) async throws
+```
+
+```objc
+- (void) selectWithRequestFlags:(NFCISO15693RequestFlag) flags completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 

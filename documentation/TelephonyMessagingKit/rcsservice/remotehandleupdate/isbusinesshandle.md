@@ -1,7 +1,8 @@
 # isBusinessHandle
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the handle is a business handle.
 
@@ -16,17 +17,18 @@ let isBusinessHandle: Bool
 
 ## See Also
 
-- [let cellularServiceID: CellularServiceID](rcsservice/remotehandleupdate/cellularserviceid.md)
+### Accessing handle update properties
+- [let cellularServiceID: CellularServiceID](./cellularserviceid.md)
   The cellular service ID associated with message.
-- [struct CellularServiceID](cellularserviceid.md)
+- [struct CellularServiceID](../../cellularserviceid.md)
   An opaque identifier that represents the cellular service for which to provide operations.
-- [let handle: RCSHandle](rcsservice/remotehandleupdate/handle.md)
+- [let handle: RCSHandle](./handle.md)
   The old value of the handle that updated.
-- [let newHandle: RCSHandle?](rcsservice/remotehandleupdate/newhandle.md)
+- [let newHandle: RCSHandle?](./newhandle.md)
   The new value for the updated handle.
-- [enum RCSHandle](rcshandle.md)
+- [enum RCSHandle](../../rcshandle.md)
   An enumeration that represents an RCS destination or sender.
-- [let capabilities: RCSService.RemoteCapabilities?](rcsservice/remotehandleupdate/capabilities.md)
+- [let capabilities: RCSService.RemoteCapabilities?](./capabilities.md)
   The updated capabilities.
 
 

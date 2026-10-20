@@ -1,7 +1,8 @@
 # MDLabelCopyAttribute(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 func MDLabelCopyAttribute(_ label: MDLabel!, _ name: CFString!) -> CFTypeRef!
+```
+
+```c
+CFTypeRef MDLabelCopyAttribute(MDLabelRef label, CFStringRef name);
 ```
 
 

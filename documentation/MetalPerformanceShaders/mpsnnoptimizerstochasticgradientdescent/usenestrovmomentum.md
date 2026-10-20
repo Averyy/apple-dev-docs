@@ -1,7 +1,8 @@
 # useNestrovMomentum
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var useNestrovMomentum: Bool { get }
+```
+
+```objc
+@property (nonatomic, readonly) BOOL useNestrovMomentum;
 ```
 
 

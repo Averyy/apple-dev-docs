@@ -1,7 +1,8 @@
 # CXErrorDomainRequestTransaction
 
 **Framework**: CallKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Domain for errors when requesting a transaction from a call controller.
 
@@ -18,14 +19,19 @@ Domain for errors when requesting a transaction from a call controller.
 let CXErrorDomainRequestTransaction: String
 ```
 
+```c
+extern NSErrorDomain const CXErrorDomainRequestTransaction;
+```
+
 #### Discussion
 
-See [`CallKit Constants`](callkit-constants.md) for possible error codes.
+See [CallKit Constants](./callkit-constants.md) for possible error codes.
 
 ## See Also
 
-- [struct CXErrorCodeRequestTransactionError](cxerrorcoderequesttransactionerror-swift.struct.md)
-- [CXErrorCodeRequestTransactionError.Code](cxerrorcoderequesttransactionerror-swift.struct/code.md)
+### Errors
+- [struct CXErrorCodeRequestTransactionError](./cxerrorcoderequesttransactionerror-swift.struct.md)
+- [CXErrorCodeRequestTransactionError.Code](./cxerrorcoderequesttransactionerror-swift.struct/code.md)
   Error codes for the CallKit error domain.
 
 

@@ -1,7 +1,8 @@
 # didAddInertPrim
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether an inert prim spec was added.
 

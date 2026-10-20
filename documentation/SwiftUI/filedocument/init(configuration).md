@@ -2,16 +2,19 @@
 
 **Framework**: SwiftUI  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates a document and initializes it with the contents of a file.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 14.0+ - Deprecated in 27.2
+- iPadOS 14.0+ - Deprecated in 27.2
+- Mac Catalyst 14.0+ - Deprecated in 27.2
+- macOS 11.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Conform your type to Document instead.
 
 ## Declaration
 
@@ -21,7 +24,7 @@ init(configuration: Self.ReadConfiguration) throws
 
 #### Discussion
 
-SwiftUI calls this initializer when someone opens a file type that matches one of those that your document type supports. Use the [`file`](filedocumentreadconfiguration/file.md) property of the `configuration` input to get document’s data. Deserialize the data, and store it in your document’s data structure:
+SwiftUI calls this initializer when someone opens a file type that matches one of those that your document type supports. Use the [`file`](../filedocumentreadconfiguration/file.md) property of the `configuration` input to get document’s data. Deserialize the data, and store it in your document’s data structure:
 
 ```swift
 init(configuration: ReadConfiguration) throws {
@@ -31,7 +34,7 @@ init(configuration: ReadConfiguration) throws {
 }
 ```
 
-The above example assumes that you define `Model` to contain the document’s data, that `Model` conforms to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol, and that you store a `model` property of that type inside your document.
+The above example assumes that you define `Model` to contain the document’s data, that `Model` conforms to the [`Codable`](../../Swift/codable.md) protocol, and that you store a `model` property of that type inside your document.
 
 > **Note**: SwiftUI calls this method on a background thread. Don’t make user interface changes from that thread.
 
@@ -41,9 +44,10 @@ The above example assumes that you define `Model` to contain the document’s da
 
 ## See Also
 
-- [static var readableContentTypes: [UTType]](filedocument/readablecontenttypes.md)
+### Reading a document
+- [static var readableContentTypes: [UTType]](./readablecontenttypes.md)
   The file and data types that the document reads from.
-- [FileDocument.ReadConfiguration](filedocument/readconfiguration.md)
+- [FileDocument.ReadConfiguration](./readconfiguration.md)
   The configuration for reading document contents.
 
 

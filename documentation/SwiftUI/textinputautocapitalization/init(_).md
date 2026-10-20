@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a new [`TextInputAutocapitalization`](textinputautocapitalization.md) struct from a `UITextAutocapitalizationType` enum.
+Creates a new [`TextInputAutocapitalization`](../textinputautocapitalization.md) struct from a `UITextAutocapitalizationType` enum.
 
 **Availability**:
 - iOS 15.0+

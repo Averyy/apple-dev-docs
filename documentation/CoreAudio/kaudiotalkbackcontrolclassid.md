@@ -1,11 +1,12 @@
 # kAudioTalkbackControlClassID
 
 **Framework**: Core Audio  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -13,17 +14,22 @@
 var kAudioTalkbackControlClassID: AudioClassID { get }
 ```
 
+```c
+kAudioTalkbackControlClassID
+```
+
 ## See Also
 
-- [var kAudioBooleanControlClassID: AudioClassID](kaudiobooleancontrolclassid.md)
-- [var kAudioClipLightControlClassID: AudioClassID](kaudiocliplightcontrolclassid.md)
-- [var kAudioJackControlClassID: AudioClassID](kaudiojackcontrolclassid.md)
-- [var kAudioLFEMuteControlClassID: AudioClassID](kaudiolfemutecontrolclassid.md)
-- [var kAudioListenbackControlClassID: AudioClassID](kaudiolistenbackcontrolclassid.md)
-- [var kAudioMuteControlClassID: AudioClassID](kaudiomutecontrolclassid.md)
-- [var kAudioPhantomPowerControlClassID: AudioClassID](kaudiophantompowercontrolclassid.md)
-- [var kAudioPhaseInvertControlClassID: AudioClassID](kaudiophaseinvertcontrolclassid.md)
-- [var kAudioSoloControlClassID: AudioClassID](kaudiosolocontrolclassid.md)
+### Constants
+- [var kAudioBooleanControlClassID: AudioClassID](./kaudiobooleancontrolclassid.md)
+- [var kAudioClipLightControlClassID: AudioClassID](./kaudiocliplightcontrolclassid.md)
+- [var kAudioJackControlClassID: AudioClassID](./kaudiojackcontrolclassid.md)
+- [var kAudioLFEMuteControlClassID: AudioClassID](./kaudiolfemutecontrolclassid.md)
+- [var kAudioListenbackControlClassID: AudioClassID](./kaudiolistenbackcontrolclassid.md)
+- [var kAudioMuteControlClassID: AudioClassID](./kaudiomutecontrolclassid.md)
+- [var kAudioPhantomPowerControlClassID: AudioClassID](./kaudiophantompowercontrolclassid.md)
+- [var kAudioPhaseInvertControlClassID: AudioClassID](./kaudiophaseinvertcontrolclassid.md)
+- [var kAudioSoloControlClassID: AudioClassID](./kaudiosolocontrolclassid.md)
 
 
 ---

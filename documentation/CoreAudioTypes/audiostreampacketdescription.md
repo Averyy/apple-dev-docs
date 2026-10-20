@@ -1,7 +1,8 @@
 # AudioStreamPacketDescription
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A value that describes a packet in a buffer of audio data.
 
@@ -20,46 +21,51 @@ A value that describes a packet in a buffer of audio data.
 struct AudioStreamPacketDescription
 ```
 
+```c
+struct AudioStreamPacketDescription;
+```
+
 #### Overview
 
-For data formats where the packet size isn’t constant, such as variable bit rate data and data where the channels have unequal sizes, use this structure to supplement the information in the [`AudioStreamBasicDescription`](audiostreambasicdescription.md) structure.
+For data formats where the packet size isn’t constant, such as variable bit rate data and data where the channels have unequal sizes, use this structure to supplement the information in the [`AudioStreamBasicDescription`](./audiostreambasicdescription.md) structure.
 
 ## Topics
 
 ### Inspecting an audio stream packet description
-- [var mDataByteSize: UInt32](audiostreampacketdescription/mdatabytesize.md)
+- [var mDataByteSize: UInt32](./audiostreampacketdescription/mdatabytesize.md)
   The number of bytes in the packet.
-- [var mStartOffset: Int64](audiostreampacketdescription/mstartoffset.md)
+- [var mStartOffset: Int64](./audiostreampacketdescription/mstartoffset.md)
   The number of bytes from the start of the buffer to the beginning of the packet.
-- [var mVariableFramesInPacket: UInt32](audiostreampacketdescription/mvariableframesinpacket.md)
+- [var mVariableFramesInPacket: UInt32](./audiostreampacketdescription/mvariableframesinpacket.md)
   The number of sample frames of data in the packet.
 ### Creating an audio stream packet descripiton
-- [init()](audiostreampacketdescription/init.md)
+- [init()](./audiostreampacketdescription/init%28%29.md)
   Creates an audio stream basic description.
-- [init(mStartOffset: Int64, mVariableFramesInPacket: UInt32, mDataByteSize: UInt32)](audiostreampacketdescription/init(mstartoffset:mvariableframesinpacket:mdatabytesize:).md)
+- [init(mStartOffset: Int64, mVariableFramesInPacket: UInt32, mDataByteSize: UInt32)](./audiostreampacketdescription/init%28mstartoffset,mvariableframesinpacket,mdatabytesize%29.md)
   Creates an audio stream basic description with the start offset, and the number of sample frames and bytes in the packet that you specify.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [struct AudioStreamBasicDescription](audiostreambasicdescription.md)
+### Streams
+- [struct AudioStreamBasicDescription](./audiostreambasicdescription.md)
   A format specification for an audio stream.
-- [typealias AudioFormatFlags](audioformatflags.md)
+- [typealias AudioFormatFlags](./audioformatflags.md)
   A type definition for audio format flags.
-- [Audio Format Flags](audio-format-flags.md)
+- [Audio Format Flags](./audio-format-flags.md)
   Commonly used combinations of data format flags for an audio stream description.
-- [typealias AudioFormatID](audioformatid.md)
+- [typealias AudioFormatID](./audioformatid.md)
   A type definition for audio format identifiers.
-- [Audio Format Identifiers](audio-format-identifiers.md)
+- [Audio Format Identifiers](./audio-format-identifiers.md)
   Identifiers for supported audio formats.
-- [var kAudioStreamAnyRate: Float64](kaudiostreamanyrate.md)
+- [var kAudioStreamAnyRate: Float64](./kaudiostreamanyrate.md)
   A value that indicates that an audio stream can use any sample rate.
-- [enum MPEG4ObjectID](mpeg4objectid.md)
+- [enum MPEG4ObjectID](./mpeg4objectid.md)
   Constants that define the type of MPEG-4 audio data.
 
 

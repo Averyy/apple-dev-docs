@@ -1,7 +1,8 @@
 # filterQueries
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The query string used to filter the results.
 
@@ -16,6 +17,10 @@ The query string used to filter the results.
 
 ```swift
 var filterQueries: [String] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * filterQueries;
 ```
 
 

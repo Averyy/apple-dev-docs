@@ -1,7 +1,8 @@
 # ILMessageFilterError.Code.networkRequestFailed
 
 **Framework**: SMS and Call Reporting  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The network request failed.
 
@@ -17,19 +18,24 @@ The network request failed.
 case networkRequestFailed
 ```
 
+```c
+ILMessageFilterErrorNetworkRequestFailed
+```
+
 #### Discussion
 
-The network request failed (the `NSUnderlyingErrorKey` in the [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary of the [`ILMessageFilterError`](ilmessagefiltererror-swift.struct.md) may have additional details).
+The network request failed (the `NSUnderlyingErrorKey` in the [`userInfo`](../../../Foundation/nserror/userinfo.md) dictionary of the [`ILMessageFilterError`](../../ilmessagefiltererror-swift.struct.md) may have additional details).
 
 ## See Also
 
-- [ILMessageFilterError.Code.system](ilmessagefiltererror-swift.struct/code/system.md)
+### Error Codes
+- [ILMessageFilterError.Code.system](./system.md)
   An unspecified system error occurred.
-- [ILMessageFilterError.Code.invalidNetworkURL](ilmessagefiltererror-swift.struct/code/invalidnetworkurl.md)
+- [ILMessageFilterError.Code.invalidNetworkURL](./invalidnetworkurl.md)
   The network request URL given by the `ILMessageFilterExtensionNetworkURL` key in the app extension’s `Info.plist` file is either missing or invalid.
-- [ILMessageFilterError.Code.networkURLUnauthorized](ilmessagefiltererror-swift.struct/code/networkurlunauthorized.md)
+- [ILMessageFilterError.Code.networkURLUnauthorized](./networkurlunauthorized.md)
   The app extension’s containing app isn’t authorized to allow the app extension to defer network requests to the host specified in its `Info.plist` file.
-- [ILMessageFilterError.Code.redundantNetworkDeferral](ilmessagefiltererror-swift.struct/code/redundantnetworkdeferral.md)
+- [ILMessageFilterError.Code.redundantNetworkDeferral](./redundantnetworkdeferral.md)
   The app extension tried to defer a request to its network service more than once, which isn’t allowed.
 
 

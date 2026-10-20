@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The action’s unique identifier.
 
@@ -17,13 +18,18 @@ The action’s unique identifier.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [var localizedTitle: String](uidocumentbrowseraction/localizedtitle.md)
+### Accessing activity data
+- [var localizedTitle: String](./localizedtitle.md)
   The title that appears in the menu or navigation bar.
-- [var availability: UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.property.md)
+- [var availability: UIDocumentBrowserAction.Availability](./availability-swift.property.md)
   A value that defines where the action can appear (in the Edit Menu, the navigation bar, or both).
-- [UIDocumentBrowserAction.Availability](uidocumentbrowseraction/availability-swift.struct.md)
+- [UIDocumentBrowserAction.Availability](./availability-swift.struct.md)
   Values that determine where the action can appear in the document browser.
 
 

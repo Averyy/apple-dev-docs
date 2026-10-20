@@ -1,7 +1,8 @@
 # BNNSDataLayout5DLastMajor
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A constant that represents a 5D last-major tensor.
 
@@ -20,6 +21,10 @@ A constant that represents a 5D last-major tensor.
 var BNNSDataLayout5DLastMajor: BNNSDataLayout { get }
 ```
 
+```c
+BNNSDataLayout5DLastMajor
+```
+
 #### Discussion
 
 The value `(i, j, k, l, m)` is at index:
@@ -34,7 +39,8 @@ The value `(i, j, k, l, m)` is at index:
 
 ## See Also
 
-- [var BNNSDataLayout5DFirstMajor: BNNSDataLayout](bnnsdatalayout5dfirstmajor.md)
+### 5D Data Layouts
+- [var BNNSDataLayout5DFirstMajor: BNNSDataLayout](./bnnsdatalayout5dfirstmajor.md)
   A constant that represents a 5D first-major tensor.
 
 

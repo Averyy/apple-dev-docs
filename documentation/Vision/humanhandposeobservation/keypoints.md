@@ -1,7 +1,8 @@
 # keypoints
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The keypoints for the observation.
 
@@ -21,11 +22,12 @@ var keypoints: MLMultiArray { get throws }
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let chirality: HumanHandPoseObservation.Chirality?](humanhandposeobservation/chirality-swift.property.md)
+- [let chirality: HumanHandPoseObservation.Chirality?](./chirality-swift.property.md)
   The chirality, or handedness, of a pose.
-- [HumanHandPoseObservation.Chirality](humanhandposeobservation/chirality-swift.enum.md)
+- [HumanHandPoseObservation.Chirality](./chirality-swift.enum.md)
   The hand sidedness of a pose.
 
 

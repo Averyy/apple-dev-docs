@@ -1,16 +1,18 @@
 # IOKitPersonalities
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 One or more groups of attributes that tell the system about the devices your driver supports.
 
 **Availability**:
 - macOS 10.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `IOKitPersonalities`
+- **Type**: dictionary
 
 #### Discussion
 
@@ -20,25 +22,25 @@ During the matching process, the system compares the attributes in each personal
 
 All personality dictionaries must include the following keys:
 
-- [`CFBundleIdentifier`](information-property-list/cfbundleidentifier.md)
-- [`IOProviderClass`](information-property-list/ioproviderclass.md)
-- [`IOClass`](information-property-list/ioclass.md)
+- [`CFBundleIdentifier`](./cfbundleidentifier.md)
+- [`IOProviderClass`](./ioproviderclass.md)
+- [`IOClass`](./ioclass.md)
 
 Include any of the following keys in your personality dictionary to customize the match criteria:
 
-- [`IOPropertyMatch`](information-property-list/iopropertymatch.md)
-- [`IONameMatch`](information-property-list/ionamematch.md)
-- [`IOResourceMatch`](information-property-list/ioresourcematch.md)
+- [`IOPropertyMatch`](./iopropertymatch.md)
+- [`IONameMatch`](./ionamematch.md)
+- [`IOResourceMatch`](./ioresourcematch.md)
 - `IOParentMatch`
 - `IOPathMatch`
 - `IOMatchCategory`
-- Device-specific keys, such as `DeviceUsagePairs`, `VendorID`, or `ProductID`. See a specific [`IOService`](https://developer.apple.com/documentation/driverkit/ioservice) subclass for information about the keys it supports.
+- Device-specific keys, such as `DeviceUsagePairs`, `VendorID`, or `ProductID`. See a specific [`IOService`](../../DriverKit/ioservice.md) subclass for information about the keys it supports.
 
 Include one of more of the following keys to specify how to load your driver’s code:
 
-- [`IOUserClass`](information-property-list/iouserclass.md)
-- [`IOUserServerName`](information-property-list/iouserservername.md)
-- [`IOUserClientClass`](information-property-list/iouserclientclass.md)
+- [`IOUserClass`](./iouserclass.md)
+- [`IOUserServerName`](./iouserservername.md)
+- [`IOUserClientClass`](./iouserclientclass.md)
 
 Use the following keys to further customize your driver’s behavior:
 
@@ -48,26 +50,26 @@ Use the following keys to further customize your driver’s behavior:
 ## Topics
 
 ### Driver Classes
-- [IOUserClass](information-property-list/iouserclass.md)
+- [IOUserClass](./iouserclass.md)
   The name of your driver’s main class, which is the entry point for interacting with your driver’s code.
-- [IOProviderClass](information-property-list/ioproviderclass.md)
+- [IOProviderClass](./ioproviderclass.md)
   The name of the class that your driver expects to provide the implementation for its provider object.
-- [IOClass](information-property-list/ioclass.md)
+- [IOClass](./ioclass.md)
   The name of the class to instantiate from your driver.
-- [IOUserClientClass](information-property-list/iouserclientclass.md)
+- [IOUserClientClass](./iouserclientclass.md)
   The name of the class to instantiate when the system requires a client connection to the driver.
-- [IOUserServerName](information-property-list/iouserservername.md)
+- [IOUserServerName](./iouserservername.md)
   The name that the system uses to facilitate communication between your driver and other clients.
 ### Advanced Match Criteria
-- [IOPropertyMatch](information-property-list/iopropertymatch.md)
+- [IOPropertyMatch](./iopropertymatch.md)
   The device-specific keys the system must match in order to use your driver.
-- [IONameMatch](information-property-list/ionamematch.md)
+- [IONameMatch](./ionamematch.md)
   One or more strings that contain the names of possible provider objects in the system registry.
-- [IOResourceMatch](information-property-list/ioresourcematch.md)
+- [IOResourceMatch](./ioresourcematch.md)
   One or more system-specific or device-specific resources that your driver requires.
-- [IOParentMatch](information-property-list/ioparentmatch.md)
-- [IOPathMatch](information-property-list/iopathmatch.md)
-- [IOMatchCategory](information-property-list/iomatchcategory.md)
+- [IOParentMatch](./ioparentmatch.md)
+- [IOPathMatch](./iopathmatch.md)
+- [IOMatchCategory](./iomatchcategory.md)
 
 
 ---

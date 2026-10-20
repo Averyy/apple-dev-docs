@@ -1,7 +1,8 @@
 # thumbnail(withMaximumSize:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a thumbnail image whose size is no larger than the specified size.
 
@@ -14,13 +15,18 @@ Returns a thumbnail image whose size is no larger than the specified size.
 optional func thumbnail(withMaximumSize size: NSSize) -> Unmanaged<CGImage>!
 ```
 
+```objc
+- (CGImageRef) thumbnailWithMaximumSize:(NSSize) size;
+```
+
 #### Return Value
 
 An image.
 
 ## See Also
 
-- [var image: CGImage!](ikimageeditpaneldatasource/image.md)
+### Getting Images From the Data Source
+- [var image: CGImage!](./image.md)
   Returns an image.
 
 

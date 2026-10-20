@@ -1,7 +1,8 @@
 # bounce
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 How bouncy the spring is.
 
@@ -26,19 +27,20 @@ A value of 0 indicates no bounces (a critically damped spring), positive values 
 
 ## See Also
 
-- [var damping: Double](spring/damping.md)
+### Getting spring characteristics
+- [var damping: Double](./damping.md)
   Defines how the spring’s motion should be damped due to the forces of friction.
-- [var dampingRatio: Double](spring/dampingratio.md)
+- [var dampingRatio: Double](./dampingratio.md)
   The amount of drag applied, as a fraction of the amount needed to produce critical damping.
-- [var duration: TimeInterval](spring/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The perceptual duration, which defines the pace of the spring.
-- [var mass: Double](spring/mass.md)
+- [var mass: Double](./mass.md)
   The mass of the object attached to the end of the spring.
-- [var response: Double](spring/response.md)
+- [var response: Double](./response.md)
   The stiffness of the spring, defined as an approximate duration in seconds.
-- [var settlingDuration: TimeInterval](spring/settlingduration.md)
+- [var settlingDuration: TimeInterval](./settlingduration.md)
   The estimated duration required for the spring system to be considered at rest.
-- [var stiffness: Double](spring/stiffness.md)
+- [var stiffness: Double](./stiffness.md)
   The spring stiffness coefficient.
 
 

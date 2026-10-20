@@ -1,7 +1,8 @@
 # PencilSqueezeGesturePhase.failed
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user started squeezing their Apple Pencil but failed to successfully complete the gesture.
 

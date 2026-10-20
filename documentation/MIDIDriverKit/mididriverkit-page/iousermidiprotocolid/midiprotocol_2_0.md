@@ -1,20 +1,22 @@
 # MIDIProtocol_2_0
 
 **Framework**: MIDIDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 MIDIProtocol_2_0
 ```
 
 ## See Also
 
-- [MIDIProtocol_1_0](mididriverkit/iousermidiprotocolid/midiprotocol_1_0.md)
+### Constants
+- [MIDIProtocol_1_0](./midiprotocol_1_0.md)
 
 
 ---

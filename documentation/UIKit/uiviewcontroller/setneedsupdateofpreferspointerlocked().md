@@ -1,7 +1,8 @@
 # setNeedsUpdateOfPrefersPointerLocked()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Indicates that the view controller changed the pointer lock preference.
 
@@ -17,11 +18,16 @@ Indicates that the view controller changed the pointer lock preference.
 func setNeedsUpdateOfPrefersPointerLocked()
 ```
 
+```objc
+- (void) setNeedsUpdateOfPrefersPointerLocked;
+```
+
 ## See Also
 
-- [var prefersPointerLocked: Bool](uiviewcontroller/preferspointerlocked.md)
+### Managing pointer lock state
+- [var prefersPointerLocked: Bool](./preferspointerlocked.md)
   A Boolean value that indicates whether the view controller prefers to lock the pointer to a specific scene.
-- [var childViewControllerForPointerLock: UIViewController?](uiviewcontroller/childviewcontrollerforpointerlock.md)
+- [var childViewControllerForPointerLock: UIViewController?](./childviewcontrollerforpointerlock.md)
   A child view controller to query for the pointer lock preference.
 
 

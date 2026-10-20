@@ -1,7 +1,8 @@
 # glyphCount
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of glyphs (externally visible parts) in the hvgl table
 

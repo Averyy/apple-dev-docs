@@ -1,7 +1,8 @@
 # isCustom
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this property is a custom property not defined by a schema.
 

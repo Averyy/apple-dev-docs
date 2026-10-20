@@ -1,7 +1,8 @@
 # lessThanOrEqualTo(_:_:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Checks in an elementwise manner if the first input tensor is less than or equal to the second.
 
@@ -17,6 +18,10 @@ Checks in an elementwise manner if the first input tensor is less than or equal 
 
 ```swift
 func lessThanOrEqualTo(_ primaryTensor: MPSGraphTensor, _ secondaryTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) lessThanOrEqualToWithPrimaryTensor:(MPSGraphTensor *) primaryTensor secondaryTensor:(MPSGraphTensor *) secondaryTensor name:(NSString *) name;
 ```
 
 #### Return Value

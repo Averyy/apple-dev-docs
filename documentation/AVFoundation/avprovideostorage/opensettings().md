@@ -1,7 +1,8 @@
 # openSettings()
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the Pro Video Storage UI in Settings app.
 
@@ -16,6 +17,10 @@ Opens the Pro Video Storage UI in Settings app.
 
 ```swift
 func openSettings()
+```
+
+```objc
+- (void) openSettings;
 ```
 
 #### Discussion

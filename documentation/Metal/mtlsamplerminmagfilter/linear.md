@@ -1,7 +1,8 @@
 # MTLSamplerMinMagFilter.linear
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Select two pixels in each dimension and interpolate linearly between them.
 
@@ -10,7 +11,7 @@ Select two pixels in each dimension and interpolate linearly between them.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,16 +20,21 @@ Select two pixels in each dimension and interpolate linearly between them.
 case linear
 ```
 
+```c
+MTLSamplerMinMagFilterLinear
+```
+
 #### Discussion
 
 Support for linear filtering varies by GPU and the format of the texture being sampled. For example, you can’t use linear filtering on textures with an integer format, and only some device objects support linear filtering for textures with a floating-point format. To determine whether linear filtering is available for a specific texture format, see:
 
-- [`Metal feature set tables (PDF)`](https://developer.apple.comhttps://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
-- [`Metal feature set tables (Numbers)`](https://developer.apple.comhttps://developer.apple.com/metal/metal-feature-set-tables.zip)
+- [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf)
+- [Metal feature set tables (Numbers)](https://developer.apple.com/metal/metal-feature-set-tables.zip)
 
 ## See Also
 
-- [MTLSamplerMinMagFilter.nearest](mtlsamplerminmagfilter/nearest.md)
+### Filter options
+- [MTLSamplerMinMagFilter.nearest](./nearest.md)
   Select the single pixel nearest to the sample point.
 
 

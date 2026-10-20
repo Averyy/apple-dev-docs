@@ -1,7 +1,8 @@
 # identify(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func identify(with params: MTRIdentifyClusterIdentifyParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func identify(with params: MTRIdentifyClusterIdentifyParams) async throws
+```
+
+```objc
+- (void) identifyWithParams:(MTRIdentifyClusterIdentifyParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

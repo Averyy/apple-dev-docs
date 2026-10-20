@@ -1,7 +1,8 @@
 # VisionResult.recognizeText(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from performing a recognize text request.
 
@@ -21,7 +22,8 @@ case recognizeText(RecognizeTextRequest, [RecognizedTextObservation])
 
 ## See Also
 
-- [case detectTextRectangles(DetectTextRectanglesRequest, [TextObservation])](visionresult/detecttextrectangles(_:_:).md)
+### Getting the text result
+- [case detectTextRectangles(DetectTextRectanglesRequest, [TextObservation])](./detecttextrectangles%28_,_%29.md)
   A result from performing a detect text rectangles request.
 
 

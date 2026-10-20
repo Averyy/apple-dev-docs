@@ -1,12 +1,13 @@
 # leading
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The leading value of the font.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,17 +15,23 @@ The leading value of the font.
 var leading: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat leading;
+```
+
 ## See Also
 
-- [init?(descriptor: NSFontDescriptor, size: CGFloat)](nsfont/init(descriptor:size:).md)
+### Related Documentation
+- [init?(descriptor: NSFontDescriptor, size: CGFloat)](./init%28descriptor,size%29.md)
   Returns a font object for the specified font descriptor and font size.
-- [var ascender: CGFloat](nsfont/ascender.md)
+### Getting the Font Metrics
+- [var ascender: CGFloat](./ascender.md)
   The top y-coordinate, offset from the baseline, of the font’s longest ascender.
-- [var descender: CGFloat](nsfont/descender.md)
+- [var descender: CGFloat](./descender.md)
   The bottom y-coordinate, offset from the baseline, of the font’s longest descender.
-- [var capHeight: CGFloat](nsfont/capheight.md)
+- [var capHeight: CGFloat](./capheight.md)
   The cap height of the font.
-- [var xHeight: CGFloat](nsfont/xheight.md)
+- [var xHeight: CGFloat](./xheight.md)
   The x-height of the font.
 
 

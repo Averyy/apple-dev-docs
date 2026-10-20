@@ -1,7 +1,8 @@
 # allowedAudioSpatializationFormats
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source audio channel layouts the player item supports for spatialization.
 
@@ -20,11 +21,15 @@ nonisolated
 var allowedAudioSpatializationFormats: AVAudioSpatializationFormats { get set }
 ```
 
+```objc
+@property (nonatomic, assign) AVAudioSpatializationFormats allowedAudioSpatializationFormats;
+```
+
 #### Discussion
 
 Spatialization uses psychoacoustic methods to create a more immersive audio experience when playing content on specialized headphones and speaker arrangements.
 
-The default value for video content is [`monoStereoAndMultichannel`](avaudiospatializationformats/monostereoandmultichannel.md), and [`multichannel`](avaudiospatializationformats/multichannel.md) for audio-only content. Your app can set a preferred spatialization format, but a user can change the audio spatialization behavior in Control Center.
+The default value for video content is [`monoStereoAndMultichannel`](../avaudiospatializationformats/monostereoandmultichannel.md), and [`multichannel`](../avaudiospatializationformats/multichannel.md) for audio-only content. Your app can set a preferred spatialization format, but a user can change the audio spatialization behavior in Control Center.
 
 This property isn’t key-value observable.
 
@@ -32,15 +37,16 @@ This property isn’t key-value observable.
 
 ## See Also
 
-- [var volume: Float](avplayer/volume.md)
+### Configuring audio behavior
+- [var volume: Float](../avplayer/volume.md)
   The audio playback volume for the player.
-- [var isMuted: Bool](avplayer/ismuted.md)
+- [var isMuted: Bool](../avplayer/ismuted.md)
   A Boolean value that indicates whether the audio output of the player is muted.
-- [var isAudioSpatializationAllowed: Bool](avplayeritem/isaudiospatializationallowed.md)
+- [var isAudioSpatializationAllowed: Bool](./isaudiospatializationallowed.md)
   A Boolean value that indicates whether the player item allows spatialized audio playback.
-- [var audioOutputSuppressedDueToNonMixableAudioRoute: Bool](avplayer/audiooutputsuppressedduetononmixableaudioroute.md)
+- [var audioOutputSuppressedDueToNonMixableAudioRoute: Bool](../avplayer/audiooutputsuppressedduetononmixableaudioroute.md)
   Whether the player’s audio output is suppressed due to being on a non-mixable audio route.
-- [var intendedSpatialAudioExperience: any SpatialAudioExperience](avplayer/intendedspatialaudioexperience-1bd87.md)
+- [var intendedSpatialAudioExperience: any SpatialAudioExperience](../avplayer/intendedspatialaudioexperience-1bd87.md)
   The player’s intended Spatial Audio experience.
 
 

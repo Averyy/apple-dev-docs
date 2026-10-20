@@ -1,7 +1,8 @@
 # isRotateEnabled
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the map uses the camera’s heading information.
 
@@ -18,21 +19,26 @@ A Boolean value that indicates whether the map uses the camera’s heading infor
 var isRotateEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isRotateEnabled) BOOL rotateEnabled;
+```
+
 #### Discussion
 
-When this property is [`true`](https://developer.apple.com/documentation/swift/true) and the framework associates a valid camera with the map, the map uses the camera’s heading angle to rotate the plane of the map around its center point. When this property is [`false`](https://developer.apple.com/documentation/swift/false), the map view ignores the camera’s heading angle and the map orients so that the map view situates true north at the top.
+When this property is [`true`](../../Swift/true.md) and the framework associates a valid camera with the map, the map uses the camera’s heading angle to rotate the plane of the map around its center point. When this property is [`false`](../../Swift/false.md), the map view ignores the camera’s heading angle and the map orients so that the map view situates true north at the top.
 
 ## See Also
 
-- [enum MKMapType](mkmaptype.md)
+### Accessing map properties
+- [enum MKMapType](../mkmaptype.md)
   The type of map to display.
-- [var isZoomEnabled: Bool](mkmapview/iszoomenabled.md)
+- [var isZoomEnabled: Bool](./iszoomenabled.md)
   A Boolean value that determines whether the user may use pinch gestures to zoom in and out of the map.
-- [var isScrollEnabled: Bool](mkmapview/isscrollenabled.md)
+- [var isScrollEnabled: Bool](./isscrollenabled.md)
   A Boolean value that determines whether the user may scroll around the map.
-- [var isPitchEnabled: Bool](mkmapview/ispitchenabled.md)
+- [var isPitchEnabled: Bool](./ispitchenabled.md)
   A Boolean value that indicates whether the map uses the camera’s pitch information.
-- [var mapType: MKMapType](mkmapview/maptype.md)
+- [var mapType: MKMapType](./maptype.md)
   The type of data the map view displays.
 
 

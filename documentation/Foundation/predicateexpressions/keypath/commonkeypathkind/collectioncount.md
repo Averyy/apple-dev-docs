@@ -1,7 +1,8 @@
 # PredicateExpressions.KeyPath.CommonKeyPathKind.collectionCount
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+

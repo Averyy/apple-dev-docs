@@ -1,7 +1,8 @@
 # loadindexes
 
 **Framework**: TVMLKit JS  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 An event type that tells the data source to load its indexes.
 
@@ -10,7 +11,7 @@ An event type that tells the data source to load its indexes.
 
 ## Declaration
 
-```swift
+```
 attribute  loadindexes;
 ```
 
@@ -18,12 +19,13 @@ attribute  loadindexes;
 
 This event gets triggered when TVMLKit recognizes that the `DataSource` needs to load more indexes. TVMLKit invokes the event when there are visible cells onscreen consisting of incomplete data segments. For example, when the `DataSource` is set up to support lazy loading of data and it begins to request uninitialized objects, this event is triggered.
 
-The `loadIndexes` event contains its `DataSource `object` `as the target, as well as a `request` property, which is a [`LoadIndexesRequest`](loadindexesrequest.md) object.
+The `loadIndexes` event contains its `DataSource `object` `as the target, as well as a `request` property, which is a [`LoadIndexesRequest`](../../loadindexesrequest.md) object.
 
 ## See Also
 
-- [segmentSize](datasource/datasource/3192122-segmentsize.md)
-  The maximum number of indexes that are loaded each time the [`loadindexes`](datasource/datasource/3192119-loadindexes.md) event is triggered.
+### Loading Elements
+- [segmentSize](./api-3192122-segmentsize.md)
+  The maximum number of indexes that are loaded each time the [`loadindexes`](./api-3192119-loadindexes.md) event is triggered.
 
 
 ---

@@ -1,7 +1,8 @@
 # sendExchange(to:data:localizableMessageKey:arguments:timeout:completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends an exchange request that contains your game data to one or more participants.
 
@@ -17,18 +18,26 @@ Sends an exchange request that contains your game data to one or more participan
 ## Declaration
 
 ```swift
+func sendExchange(to participants: [GKTurnBasedParticipant], data: Data, localizableMessageKey key: String, arguments: [String], timeout: TimeInterval, completionHandler: (@Sendable (GKTurnBasedExchange?, (any Error)?) -> Void)? = nil)
+```
+
+```swift
 func sendExchange(to participants: [GKTurnBasedParticipant], data: Data, localizableMessageKey key: String, arguments: [String], timeout: TimeInterval) async throws -> GKTurnBasedExchange
+```
+
+```objc
+- (void) sendExchangeToParticipants:(NSArray<GKTurnBasedParticipant *> *) participants data:(NSData *) data localizableMessageKey:(NSString *) key arguments:(NSArray<NSString *> *) arguments timeout:(NSTimeInterval) timeout completionHandler:(void (^)(GKTurnBasedExchange *exchange, NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
+- [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
 #### Discussion
 
-If your game isn’t running or is in the background on recipient devices, a notification containing the localized message you pass to this method appears. When the participant taps or clicks the notification, GameKit launches or brings the game to the foreground and then invokes the [`player(_:receivedExchangeRequest:for:)`](gkturnbasedeventlistener/player(_:receivedexchangerequest:for:).md) method.
+If your game isn’t running or is in the background on recipient devices, a notification containing the localized message you pass to this method appears. When the participant taps or clicks the notification, GameKit launches or brings the game to the foreground and then invokes the [`player(_:receivedExchangeRequest:for:)`](../gkturnbasedeventlistener/player%28_,receivedexchangerequest,for%29.md) method.
 
-Implement the [`player(_:receivedExchangeRequest:for:)`](gkturnbasedeventlistener/player(_:receivedexchangerequest:for:).md) protocol method to handle the exchange request — for example, show an interface on the receiver’s device to accept or reject the exchange.
+Implement the [`player(_:receivedExchangeRequest:for:)`](../gkturnbasedeventlistener/player%28_,receivedexchangerequest,for%29.md) protocol method to handle the exchange request — for example, show an interface on the receiver’s device to accept or reject the exchange.
 
 ## Parameters
 
@@ -37,24 +46,29 @@ Implement the [`player(_:receivedExchangeRequest:for:)`](gkturnbasedeventlistene
 - `key`: The identifier for looking up the translated message in the default `Localized.strings` file. If you use a formatted string with specifiers, provide the arguments.
 - `arguments`: A list of arguments to substitute into the localized string if it’s formatted and contains specifiers.
 - `timeout`: The length of time a participant has to respond to the exchange request. The maximum value is 90 days.
-- `completionHandler`: The block that GameKit calls when it completes the request. The block receives the following parameters: - **exchange**: The exchange object that GameKit passes to the other participants.
-- ***error***: Describes an error if it occurs, or `nil` if the operation completes. An error occurs if any of the participants are inactive.
+- `completionHandler`: The block that GameKit calls when it completes the request.
+
+  The block receives the following parameters:
+
+  - **exchange**: The exchange object that GameKit passes to the other participants.
+  - ***error***: Describes an error if it occurs, or `nil` if the operation completes. An error occurs if any of the participants are inactive.
 
 ## See Also
 
-- [Exchange Timeouts](exchange-timeouts.md)
+### Exchanging Data Between Participants
+- [Exchange Timeouts](../exchange-timeouts.md)
   The amount of time that passes before an exchange times out.
-- [var exchangeDataMaximumSize: Int](gkturnbasedmatch/exchangedatamaximumsize.md)
+- [var exchangeDataMaximumSize: Int](./exchangedatamaximumsize.md)
   The maximum size of the exchange data.
-- [var exchangeMaxInitiatedExchangesPerPlayer: Int](gkturnbasedmatch/exchangemaxinitiatedexchangesperplayer.md)
+- [var exchangeMaxInitiatedExchangesPerPlayer: Int](./exchangemaxinitiatedexchangesperplayer.md)
   The maximum number of exchanges the local player can initiate.
-- [var activeExchanges: [GKTurnBasedExchange]?](gkturnbasedmatch/activeexchanges.md)
+- [var activeExchanges: [GKTurnBasedExchange]?](./activeexchanges.md)
   The exchanges that the local player needs to accept or reject.
-- [var completedExchanges: [GKTurnBasedExchange]?](gkturnbasedmatch/completedexchanges.md)
+- [var completedExchanges: [GKTurnBasedExchange]?](./completedexchanges.md)
   The exchange requests that all recipients replied to and the current participant needs to save.
-- [var exchanges: [GKTurnBasedExchange]?](gkturnbasedmatch/exchanges.md)
+- [var exchanges: [GKTurnBasedExchange]?](./exchanges.md)
   The exchange requests that are active or complete.
-- [func saveMergedMatch(Data, withResolvedExchanges: [GKTurnBasedExchange], completionHandler: (((any Error)?) -> Void)?)](gkturnbasedmatch/savemergedmatch(_:withresolvedexchanges:completionhandler:).md)
+- [func saveMergedMatch(Data, withResolvedExchanges: [GKTurnBasedExchange], completionHandler: (((any Error)?) -> Void)?)](./savemergedmatch%28_,withresolvedexchanges,completionhandler%29.md)
   Saves match data for completed exchanges without ending the turn.
 
 

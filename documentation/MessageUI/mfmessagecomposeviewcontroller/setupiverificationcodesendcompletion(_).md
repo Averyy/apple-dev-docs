@@ -1,7 +1,8 @@
 # setUPIVerificationCodeSendCompletion(_:)
 
 **Framework**: Message UI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures the instance of a view for Unified Payments Interface (UPI) device validation.
 
@@ -17,21 +18,25 @@ Configures the instance of a view for Unified Payments Interface (UPI) device va
 func setUPIVerificationCodeSendCompletion(_ completion: @escaping (Bool) -> Void)
 ```
 
+```objc
+- (void) setUPIVerificationCodeSendCompletion:(void (^)(BOOL didSend)) completion;
+```
+
 #### Discussion
 
-If you use the [`com.apple.developer.upi-device-validation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.upi-device-validation) managed entitlement, [`setUPIVerificationCodeSendCompletion(_:)`](mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion(_:).md) configures the instance of [`MFMessageComposeViewController`](mfmessagecomposeviewcontroller.md) with non-editable recipients and body fields.
+If you use the [`com.apple.developer.upi-device-validation`](../../BundleResources/entitlements/com.apple.developer.upi-device-validation.md) managed entitlement, [`setUPIVerificationCodeSendCompletion(_:)`](./setupiverificationcodesendcompletion%28_%29.md) configures the instance of [`MFMessageComposeViewController`](../mfmessagecomposeviewcontroller.md) with non-editable recipients and body fields.
 
-> **Note**:  The [`setUPIVerificationCodeSendCompletion(_:)`](mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion(_:).md) method is only functional on devices with SMS capability and is only compatible with recipients that don’t use iMessage.
+> **Note**:  The [`setUPIVerificationCodeSendCompletion(_:)`](./setupiverificationcodesendcompletion%28_%29.md) method is only functional on devices with SMS capability and is only compatible with recipients that don’t use iMessage.
 
-The system invokes the completion handler on the main thread. It only invokes the completion handler after the [`MFMessageComposeViewController`](mfmessagecomposeviewcontroller.md) delegate’s [`messageComposeViewController(_:didFinishWith:)`](mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller(_:didfinishwith:).md) method gets called if a person sends the transaction.
+The system invokes the completion handler on the main thread. It only invokes the completion handler after the [`MFMessageComposeViewController`](../mfmessagecomposeviewcontroller.md) delegate’s [`messageComposeViewController(_:didFinishWith:)`](../mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller%28_,didfinishwith%29.md) method gets called if a person sends the transaction.
 
 The system calls the send completion handler with the transmission result of the message. The system won’t call the completion handler if:
 
 - The device doesn’t have SMS capability.
-- Your app doesn’t have the [`com.apple.developer.upi-device-validation`](https://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.upi-device-validation) entitlement.
+- Your app doesn’t have the [`com.apple.developer.upi-device-validation`](../../BundleResources/entitlements/com.apple.developer.upi-device-validation.md) entitlement.
 - The recipient can use iMessage or the person cancels the transaction.
 
-The following code snippet is an example of how you can create an instance of [`MFMessageComposeViewController`](mfmessagecomposeviewcontroller.md), configure it with a UPI verification phone number and generated token, and set a completion block indicating the use of the controller for UPI device enrollment:
+The following code snippet is an example of how you can create an instance of [`MFMessageComposeViewController`](../mfmessagecomposeviewcontroller.md), configure it with a UPI verification phone number and generated token, and set a completion block indicating the use of the controller for UPI device enrollment:
 
 ```swift
 import MessageUI.UPI
@@ -73,7 +78,7 @@ The following code snippet is the same as the one above, but in Objective-C:
 @end
 ```
 
-In addition, you need to use the existing [`messageComposeViewController(_:didFinishWith:)`](mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller(_:didfinishwith:).md) delegate method to dismiss the [`MFMessageComposeViewController`](mfmessagecomposeviewcontroller.md) instance because sending may take several seconds to complete. You can choose to allow people to continue interacting with your app or display a waiting UI. The following code snippet is an example of using [`messageComposeViewController(_:didFinishWith:)`](mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller(_:didfinishwith:).md)
+In addition, you need to use the existing [`messageComposeViewController(_:didFinishWith:)`](../mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller%28_,didfinishwith%29.md) delegate method to dismiss the [`MFMessageComposeViewController`](../mfmessagecomposeviewcontroller.md) instance because sending may take several seconds to complete. You can choose to allow people to continue interacting with your app or display a waiting UI. The following code snippet is an example of using [`messageComposeViewController(_:didFinishWith:)`](../mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller%28_,didfinishwith%29.md)
 
 ```swift
 import MessageUI.UPI

@@ -1,7 +1,8 @@
 # SecTrustSettingsDomain.system
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 System trust settings.
 
@@ -13,6 +14,10 @@ System trust settings.
 
 ```swift
 case system
+```
+
+```c
+kSecTrustSettingsDomainSystem
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a simd packed vector from a Spatial vector.
 
@@ -19,6 +20,8 @@ Creates a simd packed vector from a Spatial vector.
 ```swift
 init(_ vector: Vector3D)
 ```
+
+Available when `Scalar` is `Double`.
 
 
 ---

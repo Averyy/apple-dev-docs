@@ -1,7 +1,8 @@
 # license
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 License information for the model.
 
@@ -22,13 +23,14 @@ var license: String
 
 ## See Also
 
-- [var author: String](modelmetadata/author.md)
+### Getting the properties
+- [var author: String](./author.md)
   The author of this model.
-- [var creatorDefined: [String : String]](modelmetadata/creatordefined.md)
+- [var creatorDefined: [String : String]](./creatordefined.md)
   Creator-defined custom metadata.
-- [var description: String](modelmetadata/description.md)
+- [var description: String](./description.md)
   A short description of what the model does and/or its purpose.
-- [var version: String](modelmetadata/version.md)
+- [var version: String](./version.md)
   A version number encoded as a string.
 
 

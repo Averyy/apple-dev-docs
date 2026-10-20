@@ -1,7 +1,8 @@
 # HKMetadataKeyLapLength
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates the length of a lap during a workout.
 
@@ -19,18 +20,23 @@ A key that indicates the length of a lap during a workout.
 let HKMetadataKeyLapLength: String
 ```
 
+```c
+extern NSString * const HKMetadataKeyLapLength;
+```
+
 #### Discussion
 
-Set this key on  a workout, workout segment, or a quantity sample that represents distance. Set its value to an [`HKQuantity`](hkquantity.md) object that uses length units (described in [`HKUnit`](hkunit.md)).
+Set this key on  a workout, workout segment, or a quantity sample that represents distance. Set its value to an [`HKQuantity`](./hkquantity.md) object that uses length units (described in [`HKUnit`](./hkunit.md)).
 
 ## See Also
 
-- [let HKMetadataKeySwimmingLocationType: String](hkmetadatakeyswimminglocationtype.md)
+### Swimming
+- [let HKMetadataKeySwimmingLocationType: String](./hkmetadatakeyswimminglocationtype.md)
   A key that indicates the location for a swimming workout.
-- [let HKMetadataKeySwimmingStrokeStyle: String](hkmetadatakeyswimmingstrokestyle.md)
+- [let HKMetadataKeySwimmingStrokeStyle: String](./hkmetadatakeyswimmingstrokestyle.md)
   A key that indicates the predominant stroke style for a lap of swimming.
-- [let HKMetadataKeySWOLFScore: String](hkmetadatakeyswolfscore.md)
-- [let HKMetadataKeyWaterSalinity: String](hkmetadatakeywatersalinity.md)
+- [let HKMetadataKeySWOLFScore: String](./hkmetadatakeyswolfscore.md)
+- [let HKMetadataKeyWaterSalinity: String](./hkmetadatakeywatersalinity.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # timeInterval
 
 **Framework**: User Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time interval to create the trigger.
 
@@ -20,13 +21,26 @@ The time interval to create the trigger.
 var timeInterval: TimeInterval { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly) NSTimeInterval timeInterval;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) NSTimeInterval timeInterval;
+```
+
 #### Discussion
 
-This property contains the original time interval that you specified when creating the trigger object. The value in this property isn’t updated as time counts down. To find out when the trigger will fire next, call the [`nextTriggerDate()`](untimeintervalnotificationtrigger/nexttriggerdate().md) method.
+This property contains the original time interval that you specified when creating the trigger object. The value in this property isn’t updated as time counts down. To find out when the trigger will fire next, call the [`nextTriggerDate()`](./nexttriggerdate%28%29.md) method.
 
 ## See Also
 
-- [func nextTriggerDate() -> Date?](untimeintervalnotificationtrigger/nexttriggerdate.md)
+### Getting the Trigger Information
+- [func nextTriggerDate() -> Date?](./nexttriggerdate%28%29.md)
   The next date at which the trigger conditions are met.
 
 

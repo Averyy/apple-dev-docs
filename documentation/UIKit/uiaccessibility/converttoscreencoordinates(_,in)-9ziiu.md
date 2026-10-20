@@ -1,7 +1,8 @@
 # convertToScreenCoordinates(_:in:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts the specified rectangle from view coordinates to screen coordinates.
 
@@ -9,7 +10,7 @@ Converts the specified rectangle from view coordinates to screen coordinates.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -17,6 +18,10 @@ Converts the specified rectangle from view coordinates to screen coordinates.
 ```swift
 @MainActor
 static func convertToScreenCoordinates(_ rect: CGRect, in view: UIView) -> CGRect
+```
+
+```c
+extern CGRect UIAccessibilityConvertFrameToScreenCoordinates(CGRect rect, UIView *view);
 ```
 
 #### Return Value
@@ -34,7 +39,8 @@ Use this function to convert accessibility frame rectangles to screen coordinate
 
 ## See Also
 
-- [static func convertToScreenCoordinates(UIBezierPath, in: UIView) -> UIBezierPath](uiaccessibility/converttoscreencoordinates(_:in:)-6dx4a.md)
+### Conversions
+- [static func convertToScreenCoordinates(UIBezierPath, in: UIView) -> UIBezierPath](./converttoscreencoordinates%28_,in%29-6dx4a.md)
   Converts the specified path object to screen coordinates and returns a new path object with the results.
 
 

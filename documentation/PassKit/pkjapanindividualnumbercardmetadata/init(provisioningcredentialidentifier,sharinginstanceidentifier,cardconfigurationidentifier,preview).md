@@ -1,7 +1,8 @@
 # init(provisioningCredentialIdentifier:sharingInstanceIdentifier:cardConfigurationIdentifier:preview:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the user instance for provisioning.
 
@@ -9,13 +10,17 @@ Initializes the user instance for provisioning.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- macOS ?+
+- macOS
 - visionOS 2.0+
 
 ## Declaration
 
 ```swift
 init(provisioningCredentialIdentifier credentialIdentifier: String, sharingInstanceIdentifier: String, cardConfigurationIdentifier: String, preview: PKAddPassMetadataPreview)
+```
+
+```objc
+- (instancetype) initWithProvisioningCredentialIdentifier:(NSString *) credentialIdentifier sharingInstanceIdentifier:(NSString *) sharingInstanceIdentifier cardConfigurationIdentifier:(NSString *) cardConfigurationIdentifier preview:(PKAddPassMetadataPreview *) preview;
 ```
 
 ## Parameters
@@ -26,7 +31,8 @@ init(provisioningCredentialIdentifier credentialIdentifier: String, sharingInsta
 
 ## See Also
 
-- [init(provisioningCredentialIdentifier: String, sharingInstanceIdentifier: String, cardTemplateIdentifier: String, preview: PKAddPassMetadataPreview)](pkjapanindividualnumbercardmetadata/init(provisioningcredentialidentifier:sharinginstanceidentifier:cardtemplateidentifier:preview:).md)
+### Initializing the digital card metadata
+- [init(provisioningCredentialIdentifier: String, sharingInstanceIdentifier: String, cardTemplateIdentifier: String, preview: PKAddPassMetadataPreview)](./init%28provisioningcredentialidentifier,sharinginstanceidentifier,cardtemplateidentifier,preview%29.md)
   Creates the product instance to provision.
 
 

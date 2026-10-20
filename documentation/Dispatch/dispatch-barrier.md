@@ -1,6 +1,7 @@
 # Dispatch Barrier
 
-**Framework**: Dispatch
+**Framework**: Dispatch  
+**Role**: API Collection
 
 A synchronization point for tasks executing in a concurrent dispatch queue.
 
@@ -10,9 +11,10 @@ Use a barrier to synchronize the execution of one or more tasks in your dispatch
 
 ## See Also
 
-- [class DispatchSemaphore](dispatchsemaphore.md)
+### Task Synchronization
+- [class DispatchSemaphore](./dispatchsemaphore.md)
   An object that controls access to a resource across multiple execution contexts through use of a traditional counting semaphore.
-- [Dispatch Semaphore](dispatch-semaphore.md)
+- [Dispatch Semaphore](./dispatch-semaphore.md)
   An object that controls access to a resource across multiple execution contexts through use of a traditional counting semaphore.
 
 

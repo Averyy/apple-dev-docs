@@ -1,7 +1,8 @@
 # SparseGMRES(_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a generalized minimal residual (GMRES) method with specified options.
 
@@ -20,15 +21,19 @@ Returns a generalized minimal residual (GMRES) method with specified options.
 func SparseGMRES(_ options: SparseGMRESOptions) -> SparseIterativeMethod
 ```
 
+```c
+static SparseIterativeMethod SparseGMRES(SparseGMRESOptions options);
+```
+
 #### Return Value
 
-A [`SparseIterativeMethod`](sparseiterativemethod.md) structure that represents a generalized minimal residual (GMRES) method.
+A [`SparseIterativeMethod`](./sparseiterativemethod.md) structure that represents a generalized minimal residual (GMRES) method.
 
 #### Discussion
 
 Use GMRES to solve *Ax = b* when *A* is symmetric indefinite or unsymmetric.
 
-For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](sparseconjugategradient(_:).md). For rectangular or singular systems, use [`SparseLSMR(_:)`](sparselsmr(_:).md).
+For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](./sparseconjugategradient%28_%29.md). For rectangular or singular systems, use [`SparseLSMR(_:)`](./sparselsmr%28_%29.md).
 
 ## Parameters
 
@@ -36,9 +41,10 @@ For symmetric positive-definite systems, use [`SparseConjugateGradient(_:)`](spa
 
 ## See Also
 
-- [func SparseGMRES() -> SparseIterativeMethod](sparsegmres().md)
+### Sparse Iterative Methods for Symmetric Indefinite and Unsymmetric Coefficient Matrices
+- [func SparseGMRES() -> SparseIterativeMethod](./sparsegmres%28%29.md)
   Returns a generalized minimal residual (GMRES) method.
-- [struct SparseGMRESOptions](sparsegmresoptions.md)
+- [struct SparseGMRESOptions](./sparsegmresoptions.md)
   Options for creating a generalized minimal residual (GMRES) method.
 
 

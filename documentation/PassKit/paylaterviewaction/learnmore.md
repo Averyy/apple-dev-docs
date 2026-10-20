@@ -1,14 +1,17 @@
 # learnMore
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An action that displays a button that a person can tap to learn more about Apple Pay Later.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- visionOS ?+
+- visionOS
+
+> **Deprecated**: Apple Pay Later is deprecated.
 
 ## Declaration
 
@@ -18,7 +21,8 @@ static let learnMore: PayLaterViewAction
 
 ## See Also
 
-- [static let calculator: PayLaterViewAction](paylaterviewaction/calculator.md)
+### Pay Later actions
+- [static let calculator: PayLaterViewAction](./calculator.md)
   An action the provides the standard price breakdown calculator for Apple Pay Later.
 
 

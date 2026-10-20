@@ -1,7 +1,8 @@
 # upOrOpen(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func upOrOpen(with params: MTRWindowCoveringClusterUpOrOpenParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func upOrOpen(with params: MTRWindowCoveringClusterUpOrOpenParams?) async throws
+```
+
+```objc
+- (void) upOrOpenWithParams:(MTRWindowCoveringClusterUpOrOpenParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

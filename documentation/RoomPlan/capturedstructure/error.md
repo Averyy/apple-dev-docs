@@ -1,7 +1,8 @@
 # CapturedStructure.Error
 
 **Framework**: RoomPlan  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Errors that can occur during a captured structure export.
 
@@ -18,7 +19,7 @@ typealias Error = CapturedRoom.Error
 
 #### Discussion
 
-The captured structure ([`CapturedStructure`](capturedstructure.md)) function [`export(to:metadataURL:modelProvider:exportOptions:)`](capturedstructure/export(to:metadataurl:modelprovider:exportoptions:).md) can throw an error of this type.
+The captured structure ([`CapturedStructure`](../capturedstructure.md)) function [`export(to:metadataURL:modelProvider:exportOptions:)`](./export%28to,metadataurl,modelprovider,exportoptions%29.md) can throw an error of this type.
 
 
 ---

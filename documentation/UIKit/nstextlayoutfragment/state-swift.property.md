@@ -1,7 +1,8 @@
 # state
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The layout information state.
 
@@ -18,17 +19,22 @@ The layout information state.
 var state: NSTextLayoutFragment.State { get }
 ```
 
+```objc
+@property (readonly) NSTextLayoutFragmentState state;
+```
+
 #### Discussion
 
 This property is KVO-compliant.
 
 ## See Also
 
-- [NSTextLayoutFragment.State](nstextlayoutfragment/state-swift.enum.md)
+### Getting element information
+- [NSTextLayoutFragment.State](./state-swift.enum.md)
   Values that describe the possible layout states.
-- [var rangeInElement: NSTextRange](nstextlayoutfragment/rangeinelement.md)
+- [var rangeInElement: NSTextRange](./rangeinelement.md)
   The range inside the text element relative to the document origin.
-- [var textElement: NSTextElement?](nstextlayoutfragment/textelement.md)
+- [var textElement: NSTextElement?](./textelement.md)
   The parent text element.
 
 

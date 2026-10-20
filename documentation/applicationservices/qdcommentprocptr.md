@@ -1,7 +1,8 @@
 # QDCommentProcPtr
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias QDCommentProcPtr = (Int16, Int16, Handle?) -> Void
+```
+
+```c
+typedef void (*QDCommentProcPtr)(short kind, short dataSize, Handle dataHandle);
 ```
 
 

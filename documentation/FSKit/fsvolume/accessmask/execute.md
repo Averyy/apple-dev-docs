@@ -1,7 +1,8 @@
 # execute
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file system allows file execution.
 
@@ -14,11 +15,16 @@ The file system allows file execution.
 static var execute: FSVolume.AccessMask { get }
 ```
 
+```c
+FSAccessExecute
+```
+
 ## See Also
 
-- [static var delete: FSVolume.AccessMask](fsvolume/accessmask/delete.md)
+### Declaring file maniulation access
+- [static var delete: FSVolume.AccessMask](./delete.md)
   The file system allows deleting a file.
-- [static var appendData: FSVolume.AccessMask](fsvolume/accessmask/appenddata.md)
+- [static var appendData: FSVolume.AccessMask](./appenddata.md)
   The file system allows appending data to a file.
 
 

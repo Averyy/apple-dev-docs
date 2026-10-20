@@ -1,7 +1,8 @@
 # stream
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The async sequence that yields each sample in the array during an evaluation run.
 

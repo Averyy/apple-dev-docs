@@ -1,14 +1,15 @@
 # getDOMImplementation
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - tvOS 14.0+
 
 ## Declaration
 
-```swift
+```
 DOMImplementation getDOMImplementation(
     in String features
 );

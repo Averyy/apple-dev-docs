@@ -1,7 +1,8 @@
 # init(dictionaryLiteral:)
 
 **Framework**: XPC  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an `XPCDictionary` initialized with the given key-value pairs.
 
@@ -11,7 +12,7 @@ Creates an `XPCDictionary` initialized with the given key-value pairs.
 - Mac Catalyst 27.0+
 - macOS 27.0+
 - tvOS 27.0+
-- visionOS ?+
+- visionOS
 - watchOS 27.0+
 
 ## Declaration

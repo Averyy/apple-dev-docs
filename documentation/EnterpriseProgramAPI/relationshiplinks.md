@@ -1,13 +1,14 @@
 # RelationshipLinks
 
 **Framework**: Enterprise Program API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The links to the related data and the relationship’s self-link.
 
 ## Declaration
 
-```swift
+```
 object RelationshipLinks
 ```
 
@@ -18,7 +19,8 @@ object RelationshipLinks
 
 ## See Also
 
-- [object Profile.Relationships.Devices.Data](profile/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md)
+### Objects
+- [object Profile.Relationships.Devices.Data](./profile/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 

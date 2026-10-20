@@ -1,7 +1,8 @@
 # activation
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that defines the activation function to use with the RNN operation.
 
@@ -17,6 +18,10 @@ A parameter that defines the activation function to use with the RNN operation.
 
 ```swift
 var activation: MPSGraphRNNActivation { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphRNNActivation activation;
 ```
 
 #### Discussion

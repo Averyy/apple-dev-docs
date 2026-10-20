@@ -1,7 +1,8 @@
 # Transcript.Segment.text(_:)
 
 **Framework**: Foundation Models  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A segment containing text.
 
@@ -21,9 +22,10 @@ case text(Transcript.TextSegment)
 
 ## See Also
 
-- [case attachment(Transcript.AttachmentSegment)](transcript/segment/attachment(_:).md)
+### Segment cases
+- [case attachment(Transcript.AttachmentSegment)](./attachment%28_%29.md)
   A segment containing an attachment.
-- [case structure(Transcript.StructuredSegment)](transcript/segment/structure(_:).md)
+- [case structure(Transcript.StructuredSegment)](./structure%28_%29.md)
   A segment containing structured content.
 
 

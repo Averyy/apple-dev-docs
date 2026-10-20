@@ -1,22 +1,27 @@
 # AURenderCallback
 
 **Framework**: Audio Toolbox  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Called by the system when an audio unit requires input samples, or before and after a render operation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
 ```swift
 typealias AURenderCallback = (UnsafeMutableRawPointer, UnsafeMutablePointer<AudioUnitRenderActionFlags>, UnsafePointer<AudioTimeStamp>, UInt32, UInt32, UnsafeMutablePointer<AudioBufferList>?) -> OSStatus
+```
+
+```c
+typedef int (*)(void *, enum AudioUnitRenderActionFlags *, const struct AudioTimeStamp *, unsigned int, unsigned int, struct AudioBufferList *) __attribute__((nonblocking)) AURenderCallback;
 ```
 
 #### Return Value
@@ -29,7 +34,7 @@ If you named your callback function `MyAURenderCallback`, you would declare it l
 
 ##### Discussion
 
-You can use this callback function with both the audio unit render notification API (see the [`AudioUnitAddRenderNotify(_:_:_:)`](audiounitaddrendernotify(_:_:_:).md) function) and the render input callback (see the `kAudioUnitProperty_SetRenderCallback` property).
+You can use this callback function with both the audio unit render notification API (see the [`AudioUnitAddRenderNotify(_:_:_:)`](./audiounitaddrendernotify%28_,_,_%29.md) function) and the render input callback (see the `kAudioUnitProperty_SetRenderCallback` property).
 
 As a notification listener, the system invokes this callback before and after an audio unit’s render operations.
 
@@ -46,13 +51,14 @@ As a render operation input callback, it is invoked when an audio unit requires 
 
 ## See Also
 
-- [func AudioUnitRender(AudioUnit, UnsafeMutablePointer<AudioUnitRenderActionFlags>?, UnsafePointer<AudioTimeStamp>, UInt32, UInt32, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](audiounitrender(_:_:_:_:_:_:).md)
+### Rendering the Audio
+- [func AudioUnitRender(AudioUnit, UnsafeMutablePointer<AudioUnitRenderActionFlags>?, UnsafePointer<AudioTimeStamp>, UInt32, UInt32, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](./audiounitrender%28_,_,_,_,_,_%29.md)
   Initiates a rendering cycle for an audio unit.
-- [func AudioUnitAddRenderNotify(AudioUnit, AURenderCallback, UnsafeMutableRawPointer?) -> OSStatus](audiounitaddrendernotify(_:_:_:).md)
+- [func AudioUnitAddRenderNotify(AudioUnit, AURenderCallback, UnsafeMutableRawPointer?) -> OSStatus](./audiounitaddrendernotify%28_,_,_%29.md)
   Registers a callback to receive audio unit render notifications.
-- [func AudioUnitRemoveRenderNotify(AudioUnit, AURenderCallback, UnsafeMutableRawPointer?) -> OSStatus](audiounitremoverendernotify(_:_:_:).md)
+- [func AudioUnitRemoveRenderNotify(AudioUnit, AURenderCallback, UnsafeMutableRawPointer?) -> OSStatus](./audiounitremoverendernotify%28_,_,_%29.md)
   Unregisters a previously-registered render listener callback function.
-- [struct AudioUnitRenderActionFlags](audiounitrenderactionflags.md)
+- [struct AudioUnitRenderActionFlags](./audiounitrenderactionflags.md)
   Flags for configuring audio unit rendering.
 
 

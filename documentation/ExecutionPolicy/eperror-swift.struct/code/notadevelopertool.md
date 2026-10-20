@@ -1,7 +1,8 @@
 # EPError.Code.notADeveloperTool
 
 **Framework**: Execution Policy  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - Mac Catalyst 13.1+
@@ -13,9 +14,14 @@
 case notADeveloperTool
 ```
 
+```c
+EPErrorNotADeveloperTool
+```
+
 ## See Also
 
-- [EPError.Code.generic](eperror-swift.struct/code/generic.md)
+### Enumeration Cases
+- [EPError.Code.generic](./generic.md)
 
 
 ---

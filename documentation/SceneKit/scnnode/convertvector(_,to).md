@@ -1,23 +1,28 @@
 # convertVector(_:to:)
 
 **Framework**: SceneKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts a direction vector from the node’s local coordinate space to that of another node.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
 ```swift
 func convertVector(_ vector: SCNVector3, to node: SCNNode?) -> SCNVector3
+```
+
+```objc
+- (SCNVector3) convertVector:(SCNVector3) vector toNode:(SCNNode *) node;
 ```
 
 #### Return Value
@@ -26,7 +31,7 @@ A direction vector in the local coordinate space defined by the other node.
 
 #### Discussion
 
-Unlike the [`convertPosition(_:to:)`](scnnode/convertposition(_:to:).md) method, this method ignores the translational aspect of both nodes’ transforms. As such, this method is more appropriate for use with vectors that represent only directional information, such as velocity or facing.
+Unlike the [`convertPosition(_:to:)`](./convertposition%28_,to%29.md) method, this method ignores the translational aspect of both nodes’ transforms. As such, this method is more appropriate for use with vectors that represent only directional information, such as velocity or facing.
 
 ## Parameters
 
@@ -35,17 +40,19 @@ Unlike the [`convertPosition(_:to:)`](scnnode/convertposition(_:to:).md) method,
 
 ## See Also
 
-- [func simdConvertVector(simd_float3, to: SCNNode?) -> simd_float3](scnnode/simdconvertvector(_:to:).md)
+### Related Documentation
+- [func simdConvertVector(simd_float3, to: SCNNode?) -> simd_float3](./simdconvertvector%28_,to%29.md)
   Converts a direction vector from the node’s local coordinate space to that of another node.
-- [func convertPosition(SCNVector3, from: SCNNode?) -> SCNVector3](scnnode/convertposition(_:from:).md)
+### Converting Between Coordinate Spaces (SceneKit Types)
+- [func convertPosition(SCNVector3, from: SCNNode?) -> SCNVector3](./convertposition%28_,from%29.md)
   Converts a position to the node’s local coordinate space from that of another node.
-- [func convertPosition(SCNVector3, to: SCNNode?) -> SCNVector3](scnnode/convertposition(_:to:).md)
+- [func convertPosition(SCNVector3, to: SCNNode?) -> SCNVector3](./convertposition%28_,to%29.md)
   Converts a position from the node’s local coordinate space to that of another node.
-- [func convertTransform(SCNMatrix4, from: SCNNode?) -> SCNMatrix4](scnnode/converttransform(_:from:).md)
+- [func convertTransform(SCNMatrix4, from: SCNNode?) -> SCNMatrix4](./converttransform%28_,from%29.md)
   Converts a transform to the node’s local coordinate space from that of another node.
-- [func convertTransform(SCNMatrix4, to: SCNNode?) -> SCNMatrix4](scnnode/converttransform(_:to:).md)
+- [func convertTransform(SCNMatrix4, to: SCNNode?) -> SCNMatrix4](./converttransform%28_,to%29.md)
   Converts a transform from the node’s local coordinate space to that of another node.
-- [func convertVector(SCNVector3, from: SCNNode?) -> SCNVector3](scnnode/convertvector(_:from:).md)
+- [func convertVector(SCNVector3, from: SCNNode?) -> SCNVector3](./convertvector%28_,from%29.md)
   Converts a direction vector to the node’s local coordinate space from that of another node.
 
 

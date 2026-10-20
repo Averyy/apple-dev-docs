@@ -1,7 +1,8 @@
 # endDate
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end date for the item.
 
@@ -18,17 +19,22 @@ The end date for the item.
 var endDate: Date? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSDate * endDate;
+```
+
 ## See Also
 
-- [var allDay: NSNumber?](cssearchableitemattributeset/allday.md)
+### Describing events
+- [var allDay: NSNumber?](./allday.md)
   A value that indicates if the event covers an entire day.
-- [var completionDate: Date?](cssearchableitemattributeset/completiondate.md)
+- [var completionDate: Date?](./completiondate.md)
   The date on which the item was completed.
-- [var dueDate: Date?](cssearchableitemattributeset/duedate.md)
+- [var dueDate: Date?](./duedate.md)
   The date on which the item is due.
-- [var importantDates: [Date]?](cssearchableitemattributeset/importantdates.md)
+- [var importantDates: [Date]?](./importantdates.md)
   An array of important dates associated with the item.
-- [var startDate: Date?](cssearchableitemattributeset/startdate.md)
+- [var startDate: Date?](./startdate.md)
   The start date for the item.
 
 

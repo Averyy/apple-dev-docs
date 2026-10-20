@@ -1,7 +1,8 @@
 # IODeviceNumber
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias IODeviceNumber = UInt32
+```
+
+```c
+typedef unsigned int IODeviceNumber;
 ```
 
 

@@ -1,13 +1,14 @@
 # CurrencyAmount
 
 **Framework**: Apple Pay Merchant Token Usage Information API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An amount of money.
 
 ## Declaration
 
-```swift
+```
 object CurrencyAmount
 ```
 
@@ -15,6 +16,8 @@ object CurrencyAmount
 
 - `amount` (string) *(required)*: The monetary amount associated with the currency.
 - `currency` (string) *(required)*: The ISO 4217 currency code that applies to the monetary amount.
+
+  **Minimum Length**: `3`; **Maximum Length**: `3`
 
 
 ---

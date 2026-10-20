@@ -1,7 +1,8 @@
 # Menu
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A control for presenting a menu of actions.
 
@@ -22,8 +23,8 @@ struct Menu<Label, Content> where Label : View, Content : View
 
 ## Mentions
 
-- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+- [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
 #### Overview
 
@@ -42,7 +43,7 @@ Menu("Actions") {
 }
 ```
 
-You can create the menu’s title with a [`LocalizedStringKey`](localizedstringkey.md), as seen in the previous example, or with a content builder that creates multiple views, such as an image and a text view:
+You can create the menu’s title with a [`LocalizedStringKey`](./localizedstringkey.md), as seen in the previous example, or with a content builder that creates multiple views, such as an image and a text view:
 
 ```swift
 Menu {
@@ -72,7 +73,7 @@ Menu {
 
 > **Note**: This behavior does not apply to buttons outside of a menu’s content.
 
-##### Primary Action
+##### Primary action
 
 Menus can be created with a custom primary action. The primary action will be performed when the user taps or clicks on the body of the control, and the menu presentation will happen on a secondary gesture, such as on long press or on click of the menu indicator. The following example creates a menu that adds bookmarks, with advanced options that are presented in a menu.
 
@@ -94,9 +95,9 @@ Menu {
 }
 ```
 
-##### Styling Menus
+##### Styling menus
 
-Use the [`menuStyle(_:)`](view/menustyle(_:).md) modifier to change the style of all menus in a view. The following example shows how to apply a custom style:
+Use the [`menuStyle(_:)`](./view/menustyle%28_%29.md) modifier to change the style of all menus in a view. The following example shows how to apply a custom style:
 
 ```swift
 Menu("Editing") {
@@ -109,37 +110,38 @@ Menu("Editing") {
 ## Topics
 
 ### Creating a menu from content
-- [init(_:content:)](menu/init(_:content:).md)
+- [init(_:content:)](./menu/init%28_,content%29.md)
   Creates a menu that generates its label from a localized string resource.
-- [init(content: () -> Content, label: () -> Label)](menu/init(content:label:).md)
+- [init(content: () -> Content, label: () -> Label)](./menu/init%28content,label%29.md)
   Creates a menu with a custom label.
-- [init(_:image:content:)](menu/init(_:image:content:).md)
+- [init(_:image:content:)](./menu/init%28_,image,content%29.md)
   Creates a menu that generates its label from a localized string resource and image resource.
-- [init(_:systemImage:content:)](menu/init(_:systemimage:content:).md)
+- [init(_:systemImage:content:)](./menu/init%28_,systemimage,content%29.md)
   Creates a menu that generates its label from a localized string key and system image.
 ### Creating a menu with a primary action
-- [init(_:content:primaryAction:)](menu/init(_:content:primaryaction:).md)
+- [init(_:content:primaryAction:)](./menu/init%28_,content,primaryaction%29.md)
   Creates a menu with a custom primary action that generates its label from a localized string resource.
-- [init(content: () -> Content, label: () -> Label, primaryAction: () -> Void)](menu/init(content:label:primaryaction:).md)
+- [init(content: () -> Content, label: () -> Label, primaryAction: () -> Void)](./menu/init%28content,label,primaryaction%29.md)
   Creates a menu with a custom primary action and custom label.
-- [init(_:image:content:primaryAction:)](menu/init(_:image:content:primaryaction:).md)
+- [init(_:image:content:primaryAction:)](./menu/init%28_,image,content,primaryaction%29.md)
   Creates a menu with a custom primary action that generates its label from a localized string resource.
-- [init(_:systemImage:content:primaryAction:)](menu/init(_:systemimage:content:primaryaction:).md)
+- [init(_:systemImage:content:primaryAction:)](./menu/init%28_,systemimage,content,primaryaction%29.md)
   Creates a menu with a custom primary action that generates its label from a localized string key and system image.
 ### Creating a menu from a configuration
-- [init(MenuStyleConfiguration)](menu/init(_:).md)
+- [init(MenuStyleConfiguration)](./menu/init%28_%29.md)
   Creates a menu based on a style configuration.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [Populating SwiftUI menus with adaptive controls](populating-swiftui-menus-with-adaptive-controls.md)
+### Creating a menu
+- [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
   Improve your app by populating menus with controls and organizing your content intuitively.
-- [func menuStyle<S>(S) -> some View](view/menustyle(_:).md)
+- [func menuStyle<S>(S) -> some View](./view/menustyle%28_%29.md)
   Sets the style for menus within this view.
 
 

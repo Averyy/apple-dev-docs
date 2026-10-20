@@ -1,7 +1,8 @@
 # setActivationPolicy(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to modify the app’s activation policy.
 
@@ -14,9 +15,13 @@ Attempts to modify the app’s activation policy.
 func setActivationPolicy(_ activationPolicy: NSApplication.ActivationPolicy) -> Bool
 ```
 
+```objc
+- (BOOL) setActivationPolicy:(NSApplicationActivationPolicy) activationPolicy;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the policy switch succeded; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the policy switch succeded; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
@@ -28,10 +33,11 @@ You can set any activation policy in macOS 10.9 and later; in macOS 10.8 and ear
 
 ## See Also
 
-- [func activationPolicy() -> NSApplication.ActivationPolicy](nsapplication/activationpolicy.md)
+### Configuring the activation policy
+- [func activationPolicy() -> NSApplication.ActivationPolicy](./activationpolicy%28%29.md)
   Returns the app’s activation policy.
-- [NSApplication.ActivationPolicy](nsapplication/activationpolicy-swift.enum.md)
-  Activation policies (used by [`activationPolicy`](nsrunningapplication/activationpolicy.md)) that control whether and how an app may be activated.
+- [NSApplication.ActivationPolicy](./activationpolicy-swift.enum.md)
+  Activation policies (used by [`activationPolicy`](../nsrunningapplication/activationpolicy.md)) that control whether and how an app may be activated.
 
 
 ---

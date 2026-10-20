@@ -1,7 +1,8 @@
 # init(mappingTransform:)
 
 **Framework**: App Intents  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Declares support for the `contains` operator between an optional `Array` property and user-supplied values.
 
@@ -11,7 +12,7 @@ Declares support for the `contains` operator between an optional `Array` propert
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -26,11 +27,12 @@ init(mappingTransform: @escaping (InputType) -> ComparatorMappingType) where Pro
 
 ## See Also
 
-- [init(mappingTransform: (InputType) -> ComparatorMappingType)](containscomparator/init(mappingtransform:)-xvws.md)
+### Creating a comparator
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](./init%28mappingtransform%29-xvws.md)
   Declares support for the `contains` operator between a `AttributedString` property and user-supplied values.
-- [init(mappingTransform: (InputType) -> ComparatorMappingType)](containscomparator/init(mappingtransform:)-3xuvt.md)
+- [init(mappingTransform: (InputType) -> ComparatorMappingType)](./init%28mappingtransform%29-3xuvt.md)
   Declares support for the `contains` operator between a `String` property and user-supplied values.
-- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](containscomparator/init(withresolvers:mappingtransform:)-4482k.md)
+- [init<Spec>(withResolvers: () -> Spec, mappingTransform: (InputType) -> ComparatorMappingType)](./init%28withresolvers,mappingtransform%29-4482k.md)
   Declares support for the `contains` operator between an `Array` property and user-supplied values.
 
 

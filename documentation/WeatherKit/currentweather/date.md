@@ -1,7 +1,8 @@
 # date
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date of the current weather.
 

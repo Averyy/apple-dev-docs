@@ -1,12 +1,15 @@
 # List all video clips for an app event localization
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of video clips for a specific app event localization.
 
 **Availability**:
-- App Store Connect API 1.7+
+- App Store Connect API 1.7+ - Deprecated in 4.5
+
+> **Deprecated**: This relationship is deprecated. Use the [`AppAssetLibraryPlacement`](./appassetlibraryplacement.md) relationship instead.
 
 ## Endpoint
 
@@ -14,28 +17,52 @@ Get a list of video clips for a specific app event localization.
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app event localization resource ID from the [`List all localizations for an in-app event`](./get-v1-appevents-_id_-localizations.md) response.
+
+### Query Parameters
+
 - `fields[appEventVideoClips]` ([string]): Additional fields to include for each app event video clip resource returned by the response.
+
+  **Allowed Values**: `fileSize`, `fileName`, `previewFrameTimeCode`, `videoUrl`, `previewFrameImage`, `previewImage`, `uploadOperations`, `assetDeliveryState`, `videoDeliveryState`, `appEventAssetType`, `appEventLocalization`
 - `limit` (integer): The maximum number of app event video clip resources to return.
+
+  **Maximum**: `200`
 - `fields[appEventLocalizations]` ([string]): Additional fields to include for each app event localization resource returned by the response.
+
+  **Allowed Values**: `locale`, `name`, `shortDescription`, `longDescription`, `appEvent`, `appEventScreenshots`, `appEventVideoClips`, `placements`
 - `include` ([string]): The relationship data to include in the response.
+
+  **Allowed Values**: `appEventLocalization`
+
+## Responses
+
+- `200` OK (`AppEventVideoClipsResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Read app event localization information](get-v1-appeventlocalizations-_id_.md)
+### Endpoints
+- [Read app event localization information](./get-v1-appeventlocalizations-_id_.md)
   Get information about a specific app event localization.
-- [List app event video clip IDs for an app event localization](get-v1-appeventlocalizations-_id_-relationships-appeventvideoclips.md)
-- [List all screenshots for an app event localization](get-v1-appeventlocalizations-_id_-appeventscreenshots.md)
+- [List app event video clip IDs for an app event localization](./get-v1-appeventlocalizations-_id_-relationships-appeventvideoclips.md)
+- [List all screenshots for an app event localization](./get-v1-appeventlocalizations-_id_-appeventscreenshots.md)
   Get a list of screenshots for a specific app event localization.
-- [List app event screenshot IDs for an app event localization](get-v1-appeventlocalizations-_id_-relationships-appeventscreenshots.md)
-- [Modify an app event localization](patch-v1-appeventlocalizations-_id_.md)
+- [List app event screenshot IDs for an app event localization](./get-v1-appeventlocalizations-_id_-relationships-appeventscreenshots.md)
+- [Modify an app event localization](./patch-v1-appeventlocalizations-_id_.md)
   Update the localized metadata for a specific in-app event.
-- [Create an app event localization](post-v1-appeventlocalizations.md)
+- [Create an app event localization](./post-v1-appeventlocalizations.md)
   Add a new localization for an in-app event.
-- [Delete an app event localization](delete-v1-appeventlocalizations-_id_.md)
+- [Delete an app event localization](./delete-v1-appeventlocalizations-_id_.md)
   Delete localized metadata that you configured for an in-app event.
-- [List related placements](get-v1-appeventlocalizations-_id_-placements.md)
+- [List related placements](./get-v1-appeventlocalizations-_id_-placements.md)
   List the placements for an in-app event localization.
-- [List the placement IDs for an in-app event localization](get-v1-appeventlocalizations-_id_-relationships-placements.md)
+- [List the placement IDs for an in-app event localization](./get-v1-appeventlocalizations-_id_-relationships-placements.md)
   Get a list of placement resource IDs for a specific in-app event localization.
 
 

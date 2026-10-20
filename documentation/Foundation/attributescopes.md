@@ -1,7 +1,8 @@
 # AttributeScopes
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Collections of attributes that system frameworks define.
 
@@ -25,7 +26,7 @@ enum AttributeScopes
 
 Attribute scopes define groups of attributes appropriate for use with attributed strings in a certain domain. Attribute definitions contain a name, value type, and encode/decode methods to support serialization.
 
-For example, the [`AttributeScopes.FoundationAttributes`](attributescopes/foundationattributes.md) scope provides an attribute type for a link to a URL, [`AttributeScopes.FoundationAttributes.LinkAttribute`](attributescopes/foundationattributes/linkattribute.md), along with a property to access this type, [`link`](attributescopes/foundationattributes/link.md). Because [`AttributeScopes.FoundationAttributes`](attributescopes/foundationattributes.md) implements [`AttributeDynamicLookup`](attributedynamiclookup.md), you can access the link attribute by name, as this example shows:
+For example, the [`AttributeScopes.FoundationAttributes`](./attributescopes/foundationattributes.md) scope provides an attribute type for a link to a URL, [`AttributeScopes.FoundationAttributes.LinkAttribute`](./attributescopes/foundationattributes/linkattribute.md), along with a property to access this type, [`link`](./attributescopes/foundationattributes/link.md). Because [`AttributeScopes.FoundationAttributes`](./attributescopes/foundationattributes.md) implements [`AttributeDynamicLookup`](./attributedynamiclookup.md), you can access the link attribute by name, as this example shows:
 
 ```swift
 var attrStr = AttributedString("Example site")
@@ -35,49 +36,50 @@ attrStr.link = URL(string: "http://example.com")
 ## Topics
 
 ### Foundation-Defined Attributes
-- [var foundation: AttributeScopes.FoundationAttributes.Type](attributescopes/foundation.md)
+- [var foundation: AttributeScopes.FoundationAttributes.Type](./attributescopes/foundation.md)
   A property for accessing the attribute scopes that Foundation defines.
-- [AttributeScopes.FoundationAttributes](attributescopes/foundationattributes.md)
+- [AttributeScopes.FoundationAttributes](./attributescopes/foundationattributes.md)
   Attribute scopes that Foundation defines.
 ### SwiftUI-Defined Attributes
-- [var swiftUI: AttributeScopes.SwiftUIAttributes.Type](attributescopes/swiftui.md)
+- [var swiftUI: AttributeScopes.SwiftUIAttributes.Type](./attributescopes/swiftui.md)
   A property for accessing the attribute scopes that SwiftUI defines.
-- [AttributeScopes.SwiftUIAttributes](attributescopes/swiftuiattributes.md)
+- [AttributeScopes.SwiftUIAttributes](./attributescopes/swiftuiattributes.md)
   Attribute scopes that SwiftUI defines.
 ### UIKit-Defined Attributes
-- [var uiKit: AttributeScopes.UIKitAttributes.Type](attributescopes/uikit.md)
+- [var uiKit: AttributeScopes.UIKitAttributes.Type](./attributescopes/uikit.md)
   A property for accessing the attribute scopes that UIKit defines.
-- [AttributeScopes.UIKitAttributes](attributescopes/uikitattributes.md)
+- [AttributeScopes.UIKitAttributes](./attributescopes/uikitattributes.md)
   Attribute scopes that UIKit defines.
 ### AppKit-Defined Attributes
-- [var appKit: AttributeScopes.AppKitAttributes.Type](attributescopes/appkit.md)
+- [var appKit: AttributeScopes.AppKitAttributes.Type](./attributescopes/appkit.md)
   A property for accessing the attribute scopes that AppKit defines.
-- [AttributeScopes.AppKitAttributes](attributescopes/appkitattributes.md)
+- [AttributeScopes.AppKitAttributes](./attributescopes/appkitattributes.md)
   Attribute scopes that AppKit defines.
 ### Translation-Defined Attributes
-- [var translation: AttributeScopes.TranslationAttributes.Type](attributescopes/translation.md)
+- [var translation: AttributeScopes.TranslationAttributes.Type](./attributescopes/translation.md)
   Provides access to translation-related attributes.
-- [AttributeScopes.TranslationAttributes](attributescopes/translationattributes.md)
+- [AttributeScopes.TranslationAttributes](./attributescopes/translationattributes.md)
   A scope that defines translation-specific properties on attributed strings.
 ### Structures
-- [AttributeScopes.AccessibilityAttributes](attributescopes/accessibilityattributes.md)
-- [AttributeScopes.CoreTextAttributes](attributescopes/coretextattributes.md)
+- [AttributeScopes.AccessibilityAttributes](./attributescopes/accessibilityattributes.md)
+- [AttributeScopes.CoreTextAttributes](./attributescopes/coretextattributes.md)
   A namespace for attributes defined by CoreText.
-- [AttributeScopes.SpeechAttributes](attributescopes/speechattributes.md)
+- [AttributeScopes.SpeechAttributes](./attributescopes/speechattributes.md)
 ### Instance Properties
-- [var accessibility: AttributeScopes.AccessibilityAttributes.Type](attributescopes/accessibility.md)
+- [var accessibility: AttributeScopes.AccessibilityAttributes.Type](./attributescopes/accessibility.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
 
 ## See Also
 
-- [enum AttributeDynamicLookup](attributedynamiclookup.md)
+### Using Defined Attributes
+- [enum AttributeDynamicLookup](./attributedynamiclookup.md)
   A type to support dynamic member lookup of attributes and containers.
-- [struct ScopedAttributeContainer](scopedattributecontainer.md)
+- [struct ScopedAttributeContainer](./scopedattributecontainer.md)
   An attribute container that allows dynamic member lookup of its contents within the specified attribute scope.
 
 

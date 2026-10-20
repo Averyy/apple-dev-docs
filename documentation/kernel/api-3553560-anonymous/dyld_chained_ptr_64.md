@@ -1,14 +1,15 @@
 # DYLD_CHAINED_PTR_64
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 DYLD_CHAINED_PTR_64 = 2
 ```
 

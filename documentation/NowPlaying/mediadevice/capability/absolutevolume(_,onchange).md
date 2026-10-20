@@ -1,7 +1,8 @@
 # absoluteVolume(_:onChange:)
 
 **Framework**: Now Playing  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a capability that lets the device be set to a specific volume level.
 
@@ -19,7 +20,7 @@ static func absoluteVolume(_ currentLevel: Float, onChange: @escaping @Sendable 
 
 ## Mentions
 
-- [Publishing remote media sessions](publishing-remote-media-sessions.md)
+- [Publishing remote media sessions](../../publishing-remote-media-sessions.md)
 
 #### Discussion
 

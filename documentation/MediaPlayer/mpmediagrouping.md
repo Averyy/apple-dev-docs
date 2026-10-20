@@ -1,7 +1,8 @@
 # MPMediaGrouping
 
 **Framework**: Media Player  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Keys used to configure a media query.
 
@@ -15,6 +16,10 @@ Keys used to configure a media query.
 
 ```swift
 enum MPMediaGrouping
+```
+
+```c
+enum MPMediaGrouping : NSInteger;
 ```
 
 #### Overview
@@ -46,48 +51,49 @@ Collections sort according to the same rules used by iTunes on the desktop. This
 ## Topics
 
 ### Media query keys
-- [MPMediaGrouping.title](mpmediagrouping/title.md)
+- [MPMediaGrouping.title](./mpmediagrouping/title.md)
   Groups and sorts media item collections by title. For songs, for example, the title is the song name. This is the default grouping key.
-- [MPMediaGrouping.album](mpmediagrouping/album.md)
+- [MPMediaGrouping.album](./mpmediagrouping/album.md)
   Groups and sorts media item collections by album, and sorts songs within an album by track order.
-- [MPMediaGrouping.artist](mpmediagrouping/artist.md)
+- [MPMediaGrouping.artist](./mpmediagrouping/artist.md)
   Groups and sorts media item collections by performing artist.
-- [MPMediaGrouping.albumArtist](mpmediagrouping/albumartist.md)
+- [MPMediaGrouping.albumArtist](./mpmediagrouping/albumartist.md)
   Groups and sorts media item collections by album artist (the primary performing artist for an album as a whole).
-- [MPMediaGrouping.composer](mpmediagrouping/composer.md)
+- [MPMediaGrouping.composer](./mpmediagrouping/composer.md)
   Groups and sorts media item collections by composer.
-- [MPMediaGrouping.genre](mpmediagrouping/genre.md)
+- [MPMediaGrouping.genre](./mpmediagrouping/genre.md)
   Groups and sorts media item collections by musical or film genre.
-- [MPMediaGrouping.playlist](mpmediagrouping/playlist.md)
+- [MPMediaGrouping.playlist](./mpmediagrouping/playlist.md)
   Groups and sorts media item collections by playlist.
-- [MPMediaGrouping.podcastTitle](mpmediagrouping/podcasttitle.md)
+- [MPMediaGrouping.podcastTitle](./mpmediagrouping/podcasttitle.md)
   Groups and sorts media item collections by podcast title.
 ### Initializers
-- [init?(rawValue: Int)](mpmediagrouping/init(rawvalue:).md)
+- [init?(rawValue: Int)](./mpmediagrouping/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var filterPredicates: Set<MPMediaPredicate>?](mpmediaquery/filterpredicates.md)
+### Configuring media queries
+- [var filterPredicates: Set<MPMediaPredicate>?](./mpmediaquery/filterpredicates.md)
   The media property predicates of the media query.
-- [func addFilterPredicate(MPMediaPredicate)](mpmediaquery/addfilterpredicate(_:).md)
+- [func addFilterPredicate(MPMediaPredicate)](./mpmediaquery/addfilterpredicate%28_%29.md)
   Adds a media property predicate to a query.
-- [func removeFilterPredicate(MPMediaPredicate)](mpmediaquery/removefilterpredicate(_:).md)
+- [func removeFilterPredicate(MPMediaPredicate)](./mpmediaquery/removefilterpredicate%28_%29.md)
   Removes a filter predicate from a query.
-- [var groupingType: MPMediaGrouping](mpmediaquery/groupingtype.md)
+- [var groupingType: MPMediaGrouping](./mpmediaquery/groupingtype.md)
   The grouping for collections retrieved with the media query.
-- [var itemSections: [MPMediaQuerySection]?](mpmediaquery/itemsections.md)
+- [var itemSections: [MPMediaQuerySection]?](./mpmediaquery/itemsections.md)
   An array representing the section grouping of the query’s specified media items.
-- [var collectionSections: [MPMediaQuerySection]?](mpmediaquery/collectionsections.md)
+- [var collectionSections: [MPMediaQuerySection]?](./mpmediaquery/collectionsections.md)
   An array representing the section grouping of the query’s specified media item collections.
 
 

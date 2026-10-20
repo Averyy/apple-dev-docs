@@ -1,7 +1,8 @@
 # ScrollDismissesKeyboardMode
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The ways that scrollable content can interact with the software keyboard.
 
@@ -21,33 +22,34 @@ struct ScrollDismissesKeyboardMode
 
 #### Overview
 
-Use this type in a call to the [`scrollDismissesKeyboard(_:)`](view/scrolldismisseskeyboard(_:).md) modifier to specify the dismissal behavior of scrollable views.
+Use this type in a call to the [`scrollDismissesKeyboard(_:)`](./view/scrolldismisseskeyboard%28_%29.md) modifier to specify the dismissal behavior of scrollable views.
 
 ## Topics
 
 ### Getting modes
-- [static var automatic: ScrollDismissesKeyboardMode](scrolldismisseskeyboardmode/automatic.md)
+- [static var automatic: ScrollDismissesKeyboardMode](./scrolldismisseskeyboardmode/automatic.md)
   Determine the mode automatically based on the surrounding context.
-- [static var immediately: ScrollDismissesKeyboardMode](scrolldismisseskeyboardmode/immediately.md)
+- [static var immediately: ScrollDismissesKeyboardMode](./scrolldismisseskeyboardmode/immediately.md)
   Dismiss the keyboard as soon as scrolling starts.
-- [static var interactively: ScrollDismissesKeyboardMode](scrolldismisseskeyboardmode/interactively.md)
+- [static var interactively: ScrollDismissesKeyboardMode](./scrolldismisseskeyboardmode/interactively.md)
   Enable people to interactively dismiss the keyboard as part of the scroll operation.
-- [static var never: ScrollDismissesKeyboardMode](scrolldismisseskeyboardmode/never.md)
+- [static var never: ScrollDismissesKeyboardMode](./scrolldismisseskeyboardmode/never.md)
   Never dismiss the keyboard automatically as a result of scrolling.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](view/scrolldismisseskeyboard(_:).md)
+### Interacting with a software keyboard
+- [func scrollDismissesKeyboard(ScrollDismissesKeyboardMode) -> some View](./view/scrolldismisseskeyboard%28_%29.md)
   Configures the behavior in which scrollable content interacts with the software keyboard.
-- [var scrollDismissesKeyboardMode: ScrollDismissesKeyboardMode](environmentvalues/scrolldismisseskeyboardmode.md)
+- [var scrollDismissesKeyboardMode: ScrollDismissesKeyboardMode](./environmentvalues/scrolldismisseskeyboardmode.md)
   The way that scrollable content interacts with the software keyboard.
 
 

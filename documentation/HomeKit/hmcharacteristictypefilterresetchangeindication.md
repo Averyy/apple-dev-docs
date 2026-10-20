@@ -1,7 +1,8 @@
 # HMCharacteristicTypeFilterResetChangeIndication
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A reset control for a filter change notification.
 
@@ -19,19 +20,24 @@ A reset control for a filter change notification.
 let HMCharacteristicTypeFilterResetChangeIndication: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeFilterResetChangeIndication;
+```
+
 #### Discussion
 
 The corresponding value is a write-only Boolean value that your app sets to `true` to reset the filter change indicator.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentAirPurifierState: String](hmcharacteristictypecurrentairpurifierstate.md)
+### Purifiers and filters
+- [let HMCharacteristicTypeCurrentAirPurifierState: String](./hmcharacteristictypecurrentairpurifierstate.md)
   The current air purifier state.
-- [let HMCharacteristicTypeTargetAirPurifierState: String](hmcharacteristictypetargetairpurifierstate.md)
+- [let HMCharacteristicTypeTargetAirPurifierState: String](./hmcharacteristictypetargetairpurifierstate.md)
   The target air purifier state.
-- [let HMCharacteristicTypeFilterLifeLevel: String](hmcharacteristictypefilterlifelevel.md)
+- [let HMCharacteristicTypeFilterLifeLevel: String](./hmcharacteristictypefilterlifelevel.md)
   The amount of useful life remaining in a filter.
-- [let HMCharacteristicTypeFilterChangeIndication: String](hmcharacteristictypefilterchangeindication.md)
+- [let HMCharacteristicTypeFilterChangeIndication: String](./hmcharacteristictypefilterchangeindication.md)
   A filter’s change indicator.
 
 

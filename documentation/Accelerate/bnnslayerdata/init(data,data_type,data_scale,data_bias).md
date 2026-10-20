@@ -1,16 +1,19 @@
 # init(data:data_type:data_scale:data_bias:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 10.0+
-- macOS 10.12+
-- tvOS 10.0+
-- visionOS ?+
-- watchOS 3.0+
+- iOS 10.0+ - Deprecated in 15.0
+- iPadOS 10.0+ - Deprecated in 15.0
+- Mac Catalyst 10.0+ - Deprecated in 15.0
+- macOS 10.12+ - Deprecated in 12.0
+- tvOS 10.0+ - Deprecated in 15.0
+- visionOS
+- watchOS 3.0+ - Deprecated in 8.0
+
+> **Deprecated**: BNNS switched to new Layer Parameters data structures.
 
 ## Declaration
 
@@ -20,8 +23,9 @@ init(data: UnsafeRawPointer?, data_type: BNNSDataType, data_scale: Float = 1, da
 
 ## See Also
 
-- [init()](bnnslayerdata/init.md)
-- [init(data: UnsafeRawPointer?, data_type: BNNSDataType, data_scale: Float, data_bias: Float, data_table: UnsafePointer<Float>?)](bnnslayerdata/init(data:data_type:data_scale:data_bias:data_table:).md)
+### Initializers
+- [init()](./init%28%29.md)
+- [init(data: UnsafeRawPointer?, data_type: BNNSDataType, data_scale: Float, data_bias: Float, data_table: UnsafePointer<Float>?)](./init%28data,data_type,data_scale,data_bias,data_table%29.md)
   Returns a new layer data structure.
 
 

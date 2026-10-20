@@ -1,7 +1,8 @@
 # cadence
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cadence the video processor maintains to process the request.
 
@@ -20,17 +21,22 @@ The cadence the video processor maintains to process the request.
 var cadence: VNVideoProcessor.Cadence? { get set }
 ```
 
+```objc
+@property (copy, readwrite, nullable) VNVideoProcessorCadence * cadence;
+```
+
 #### Discussion
 
 By default, the system processes every frame of video if you don’t provide a value for this property.
 
 ## See Also
 
-- [VNVideoProcessor.Cadence](vnvideoprocessor/cadence.md)
+### Configuring Options
+- [VNVideoProcessor.Cadence](../cadence.md)
   An object that defines the cadence at which to process video.
-- [VNVideoProcessor.FrameRateCadence](vnvideoprocessor/frameratecadence.md)
+- [VNVideoProcessor.FrameRateCadence](../frameratecadence.md)
   An object that defines a frame-based cadence for processing a video stream.
-- [VNVideoProcessor.TimeIntervalCadence](vnvideoprocessor/timeintervalcadence.md)
+- [VNVideoProcessor.TimeIntervalCadence](../timeintervalcadence.md)
   An object that defines a time-based cadence for processing a video stream.
 
 

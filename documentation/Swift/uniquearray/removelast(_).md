@@ -1,7 +1,8 @@
 # removeLast(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and discards the specified number of elements from the end of the array.
 
@@ -24,7 +25,7 @@ mutating func removeLast(_ k: Int)
 
 Attempting to remove more elements than exist in the array triggers a runtime error.
 
-> **Note**: O(`k`)
+> **Complexity**: O(`k`)
 
 ## Parameters
 

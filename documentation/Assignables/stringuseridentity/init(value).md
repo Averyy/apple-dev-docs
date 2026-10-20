@@ -1,7 +1,8 @@
 # init(value:)
 
 **Framework**: Assignables  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a `StringUserIdentity` with the given string value.
 
@@ -9,7 +10,7 @@ Initializes a `StringUserIdentity` with the given string value.
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

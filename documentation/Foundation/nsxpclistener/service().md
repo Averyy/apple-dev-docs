@@ -1,7 +1,8 @@
 # service()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the singleton listener used to listen for incoming connections in an XPC service.
 
@@ -20,6 +21,10 @@ Returns the singleton listener used to listen for incoming connections in an XPC
 class func service() -> NSXPCListener
 ```
 
+```objc
++ (NSXPCListener *) serviceListener;
+```
+
 #### Discussion
 
 Calling the `resume` method on the returned object starts the listener and never returns. This method is typically called at the end of your `main` function.
@@ -28,7 +33,8 @@ Calling the `resume` method on the returned object starts the listener and never
 
 ## See Also
 
-- [class func anonymous() -> NSXPCListener](nsxpclistener/anonymous.md)
+### Using standard listeners
+- [class func anonymous() -> NSXPCListener](./anonymous%28%29.md)
   Returns a new anonymous listener connection.
 
 

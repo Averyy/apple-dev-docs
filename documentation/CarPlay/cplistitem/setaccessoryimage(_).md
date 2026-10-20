@@ -1,7 +1,8 @@
 # setAccessoryImage(_:)
 
 **Framework**: CarPlay  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the list item’s accessory image.
 
@@ -16,13 +17,17 @@ Updates the list item’s accessory image.
 func setAccessoryImage(_ accessoryImage: UIImage?)
 ```
 
+```objc
+- (void) setAccessoryImage:(UIImage *) accessoryImage;
+```
+
 #### Discussion
 
-Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](https://developer.apple.com/documentation/uikit/uiimageasset) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](cpinterfacecontroller/cartraitcollection.md) property. At runtime, use [`maximumImageSize`](cplistitem/maximumimagesize.md) to determine the maximum size for a list item’s accessory image.
+Provide an image that is display-ready. If necessary, provide light and dark variants using an asset catalog, or use an instance of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style. To properly size your image, use the display scale of the vehicle’s primary screen, which you access from your interface controller’s [`carTraitCollection`](../cpinterfacecontroller/cartraitcollection.md) property. At runtime, use [`maximumImageSize`](./maximumimagesize.md) to determine the maximum size for a list item’s accessory image.
 
 CarPlay doesn’t support animated images. If you provide an animated image, CarPlay uses only the first image in the animation sequence.
 
-CarPlay sets the `accessoryType` property’s value to [`CPListItemAccessoryType.none`](cplistitemaccessorytype/none.md) when you call this method.
+CarPlay sets the `accessoryType` property’s value to [`CPListItemAccessoryType.none`](../cplistitemaccessorytype/none.md) when you call this method.
 
 ## Parameters
 
@@ -30,11 +35,12 @@ CarPlay sets the `accessoryType` property’s value to [`CPListItemAccessoryType
 
 ## See Also
 
-- [var accessoryType: CPListItemAccessoryType](cplistitem/accessorytype.md)
+### Managing Accessories
+- [var accessoryType: CPListItemAccessoryType](./accessorytype.md)
   The accessory that the list item displays in its trailing region.
-- [enum CPListItemAccessoryType](cplistitemaccessorytype.md)
+- [enum CPListItemAccessoryType](../cplistitemaccessorytype.md)
   The accessory types that a list item can display.
-- [var accessoryImage: UIImage?](cplistitem/accessoryimage.md)
+- [var accessoryImage: UIImage?](./accessoryimage.md)
   The image that the list item displays in its trailing region.
 
 

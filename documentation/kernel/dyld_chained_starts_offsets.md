@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct dyld_chained_starts_offsets {
     ...
 };
@@ -17,9 +17,9 @@ struct dyld_chained_starts_offsets {
 ## Topics
 
 ### Instance Properties
-- [chain_starts](dyld_chained_starts_offsets/3553680-chain_starts.md)
-- [pointer_format](dyld_chained_starts_offsets/3553681-pointer_format.md)
-- [starts_count](dyld_chained_starts_offsets/3553682-starts_count.md)
+- [chain_starts](./dyld_chained_starts_offsets/api-3553680-chain_starts.md)
+- [pointer_format](./dyld_chained_starts_offsets/api-3553681-pointer_format.md)
+- [starts_count](./dyld_chained_starts_offsets/api-3553682-starts_count.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # init(capacity:sizeMultiple:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a buffer descriptor with the given capacity and size alignment.
 

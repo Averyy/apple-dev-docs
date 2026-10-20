@@ -1,7 +1,8 @@
 # kAEUseHTTPProxyAttr
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A value of type `typeBoolean`. Specifies whether to manually specify the proxy host and port. Defaults to `true`.
 

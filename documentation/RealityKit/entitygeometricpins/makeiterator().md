@@ -1,7 +1,8 @@
 # makeIterator()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an iterator for the sequence.
 

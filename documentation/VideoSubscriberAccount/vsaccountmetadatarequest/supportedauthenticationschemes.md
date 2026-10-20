@@ -1,7 +1,8 @@
 # supportedAuthenticationSchemes
 
 **Framework**: Video Subscriber Account  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of authentication schemes your app supports for this request.
 
@@ -9,7 +10,7 @@ A collection of authentication schemes your app supports for this request.
 - iOS 10.2+
 - iPadOS 10.2+
 - Mac Catalyst 10.2+
-- macOS ?+
+- macOS
 - tvOS 10.1+
 - visionOS 1.0+
 
@@ -19,19 +20,24 @@ A collection of authentication schemes your app supports for this request.
 var supportedAuthenticationSchemes: [VSAccountProviderAuthenticationScheme] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<NSString *> * supportedAuthenticationSchemes;
+```
+
 #### Discussion
 
 Use this property to check if the authentication schemes your app supports are compatible with account providers. The default is `VSAccountProviderAuthenticationSchemeSAML`.
 
 ## See Also
 
-- [var attributeNames: [String]](vsaccountmetadatarequest/attributenames.md)
+### Requesting App-Level Authentication
+- [var attributeNames: [String]](./attributenames.md)
   The SAML attributes that your app sends to the account provider.
-- [var channelIdentifier: String?](vsaccountmetadatarequest/channelidentifier.md)
+- [var channelIdentifier: String?](./channelidentifier.md)
   The channel identifier for the request.
-- [var supportedAccountProviderIdentifiers: [String]](vsaccountmetadatarequest/supportedaccountprovideridentifiers.md)
+- [var supportedAccountProviderIdentifiers: [String]](./supportedaccountprovideridentifiers.md)
   A list of identifiers for TV providers that your app supports.
-- [var verificationToken: String?](vsaccountmetadatarequest/verificationtoken.md)
+- [var verificationToken: String?](./verificationtoken.md)
   A token that your app sends to an account provider to identify itself.
 
 

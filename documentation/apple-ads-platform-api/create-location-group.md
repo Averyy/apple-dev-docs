@@ -1,7 +1,8 @@
 # Create Location Group
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Create a named group of locations for geographic targeting.
 
@@ -14,7 +15,7 @@ Location groups define which physical locations are in scope for an ad group. Al
 
 #### Request Body
 
-See [`LocationGroupCreate`](locationgroupcreate.md).
+See [`LocationGroupCreate`](./locationgroupcreate.md).
 
 #### Payload Examples
 
@@ -130,17 +131,34 @@ Creates a dynamic group that automatically includes all locations in the specifi
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `LocationGroupCreate`
+
+## Responses
+
+- `200` OK (`LocationGroupResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`Error`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Query Location Groups](query-location-groups.md)
+- [Query Location Groups](./query-location-groups.md)
   Retrieve a paginated list of location groups using filters and sorting.
-- [Get Location Group](get-location-group-by-id.md)
+- [Get Location Group](./get-location-group-by-id.md)
   Retrieve a single location group by its unique identifier.
-- [Update Location Group](update-location-group.md)
+- [Update Location Group](./update-location-group.md)
   Update an existing location group’s name, rules, or location membership.
-- [Delete Location Group](delete-location-group.md)
+- [Delete Location Group](./delete-location-group.md)
   Delete a location group by its unique identifier.
 
 

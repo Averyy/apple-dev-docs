@@ -1,7 +1,8 @@
 # databaseType
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The database type.
 
@@ -10,7 +11,7 @@ The database type.
 
 ## Declaration
 
-```swift
+```
 attribute string? databaseType;
 ```
 

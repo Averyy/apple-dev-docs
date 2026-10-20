@@ -1,7 +1,8 @@
 # removeTileOverlays(tileOverlays)
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes an array of tile overlays from the map.
 
@@ -10,7 +11,7 @@ Removes an array of tile overlays from the map.
 
 ## Declaration
 
-```swift
+```
 removeTileOverlays(tileOverlays: TileOverlay[]): TileOverlay[];
 ```
 
@@ -24,13 +25,14 @@ Returns the array of tile overlays.
 
 ## See Also
 
-- [tileOverlays](map/tileoverlays.md)
+### Adding and removing tile overlays
+- [tileOverlays](./tileoverlays.md)
   An array of all of the map’s tile overlays.
-- [addTileOverlay(tileOverlay)](map/addtileoverlay.md)
+- [addTileOverlay(tileOverlay)](./addtileoverlay.md)
   Adds a tile overlay to the map.
-- [addTileOverlays(tileOverlays)](map/addtileoverlays.md)
+- [addTileOverlays(tileOverlays)](./addtileoverlays.md)
   Adds an array of tile overlays to the map.
-- [removeTileOverlay(tileOverlay)](map/removetileoverlay.md)
+- [removeTileOverlay(tileOverlay)](./removetileoverlay.md)
   Removes a tile overlay from the map.
 
 

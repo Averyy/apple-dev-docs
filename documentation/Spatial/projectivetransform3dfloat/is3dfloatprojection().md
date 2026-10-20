@@ -1,7 +1,8 @@
 # is3DFloatProjection()
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func is3DFloatProjection() -> Bool
+```
+
+```c
+static bool SPProjectiveTransform3DFloatIs3DFloatProjection(SPProjectiveTransform3DFloat transform);
 ```
 
 #### Return Value

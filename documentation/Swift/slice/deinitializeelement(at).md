@@ -1,7 +1,8 @@
 # deinitializeElement(at:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deinitializes the memory underlying the element at `index`.
 
@@ -19,6 +20,8 @@ Deinitializes the memory underlying the element at `index`.
 ```swift
 func deinitializeElement<Element>(at index: UnsafeMutableBufferPointer<Element>.Index) where Base == UnsafeMutableBufferPointer<Element>
 ```
+
+Available when `Base` conforms to `Collection`.
 
 #### Discussion
 

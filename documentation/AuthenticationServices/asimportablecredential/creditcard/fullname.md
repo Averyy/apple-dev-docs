@@ -1,7 +1,8 @@
 # fullName
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The full name of the card owner.
 
@@ -20,15 +21,16 @@ var fullName: ASImportableEditableField?
 
 ## See Also
 
-- [var number: ASImportableEditableField?](asimportablecredential/creditcard/number.md)
+### Accessing credit card properties
+- [var number: ASImportableEditableField?](./number.md)
   The card number.
-- [var cardType: ASImportableEditableField?](asimportablecredential/creditcard/cardtype.md)
+- [var cardType: ASImportableEditableField?](./cardtype.md)
   The card type, if any.
-- [var verificationNumber: ASImportableEditableField?](asimportablecredential/creditcard/verificationnumber.md)
+- [var verificationNumber: ASImportableEditableField?](./verificationnumber.md)
   The verification number, such as the CVC code.
-- [var expiryDate: ASImportableEditableField?](asimportablecredential/creditcard/expirydate.md)
+- [var expiryDate: ASImportableEditableField?](./expirydate.md)
   The expiration date, if any, in MM/DD format.
-- [var validFrom: ASImportableEditableField?](asimportablecredential/creditcard/validfrom.md)
+- [var validFrom: ASImportableEditableField?](./validfrom.md)
   The date from which the card is valid, if any.
 
 

@@ -1,7 +1,8 @@
 # bluetoothTransportBridging
 
 **Framework**: AccessorySetupKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The accessory supports bridging to Bluetooth classic transport.
 
@@ -15,15 +16,20 @@ The accessory supports bridging to Bluetooth classic transport.
 static var bluetoothTransportBridging: ASAccessory.SupportOptions { get }
 ```
 
+```c
+ASAccessorySupportBluetoothTransportBridging
+```
+
 #### Discussion
 
 This option indicates that when connecting with low energy transport, the accessory supports activating Bluetooth classic transport profiles.
 
 ## See Also
 
-- [static var bluetoothPairingLE: ASAccessory.SupportOptions](asaccessory/supportoptions/bluetoothpairingle.md)
+### Bluetooth options
+- [static var bluetoothPairingLE: ASAccessory.SupportOptions](./bluetoothpairingle.md)
   The accessory supports Bluetooth Low Energy pairing.
-- [static var bluetoothHID: ASAccessory.SupportOptions](asaccessory/supportoptions/bluetoothhid.md)
+- [static var bluetoothHID: ASAccessory.SupportOptions](./bluetoothhid.md)
   The accessory supports Bluetooth Low Energy HID service.
 
 

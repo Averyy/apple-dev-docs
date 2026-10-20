@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: StoreKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an overlay you use to recommend another app on the App Store.
 
@@ -17,9 +18,13 @@ Creates an overlay you use to recommend another app on the App Store.
 init(configuration: SKOverlay.Configuration)
 ```
 
+```objc
+- (instancetype) initWithConfiguration:(SKOverlayConfiguration *) configuration;
+```
+
 #### Discussion
 
-Pass an [`SKOverlay.AppConfiguration`](skoverlay/appconfiguration.md) as the `configuration` parameter if you want to display the overlay in an app. To recommend an App Clip’s corresponding app, pass an [`SKOverlay.AppClipConfiguration`](skoverlay/appclipconfiguration.md) object to the initializer. For more information, see [`Recommending your app to App Clip users`](https://developer.apple.com/documentation/appclip/recommending-your-app-to-app-clip-users).
+Pass an [`SKOverlay.AppConfiguration`](./appconfiguration.md) as the `configuration` parameter if you want to display the overlay in an app. To recommend an App Clip’s corresponding app, pass an [`SKOverlay.AppClipConfiguration`](./appclipconfiguration.md) object to the initializer. For more information, see [Recommending your app to App Clip users](../../AppClip/recommending-your-app-to-app-clip-users.md).
 
 ## Parameters
 
@@ -27,13 +32,14 @@ Pass an [`SKOverlay.AppConfiguration`](skoverlay/appconfiguration.md) as the `co
 
 ## See Also
 
-- [var configuration: SKOverlay.Configuration](skoverlay/configuration-swift.property.md)
+### Creating an overlay
+- [var configuration: SKOverlay.Configuration](./configuration-swift.property.md)
   An overlay’s attributes; for example, its position on the screen.
-- [SKOverlay.AppConfiguration](skoverlay/appconfiguration.md)
+- [SKOverlay.AppConfiguration](./appconfiguration.md)
   An object that represents the attributes of an overlay you use to recommend another app on the App Store.
-- [SKOverlay.AppClipConfiguration](skoverlay/appclipconfiguration.md)
+- [SKOverlay.AppClipConfiguration](./appclipconfiguration.md)
   An object that represents the attributes of an overlay you use to recommend an App Clip’s corresponding full app.
-- [SKOverlay.Configuration](skoverlay/configuration-swift.class.md)
+- [SKOverlay.Configuration](./configuration-swift.class.md)
   The abstract superclass for all classes that represent an overlay’s attributes.
 
 

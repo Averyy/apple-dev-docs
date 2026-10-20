@@ -1,7 +1,8 @@
 # VNContour
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that represents a detected contour in an image.
 
@@ -19,56 +20,61 @@ A class that represents a detected contour in an image.
 class VNContour
 ```
 
+```objc
+@interface VNContour : NSObject
+```
+
 ## Topics
 
 ### Inspecting the Contour
-- [var aspectRatio: Float](vncontour/aspectratio.md)
+- [var aspectRatio: Float](./vncontour/aspectratio.md)
   The aspect ratio of the contour.
-- [var indexPath: IndexPath](vncontour/indexpath.md)
+- [var indexPath: IndexPath](./vncontour/indexpath.md)
   The contour object’s index path.
-- [var normalizedPath: CGPath](vncontour/normalizedpath.md)
+- [var normalizedPath: CGPath](./vncontour/normalizedpath.md)
   The contour object as a path in normalized coordinates.
-- [var pointCount: Int](vncontour/pointcount.md)
+- [var pointCount: Int](./vncontour/pointcount.md)
   The contour’s number of points.
-- [var normalizedPoints: [simd_float2]](vncontour/normalizedpoints-8n2s5.md)
+- [var normalizedPoints: [simd_float2]](./vncontour/normalizedpoints-8n2s5.md)
   The contour’s array of points in normalized coordinates.
-- [func polygonApproximation(epsilon: Float) throws -> VNContour](vncontour/polygonapproximation(epsilon:).md)
+- [func polygonApproximation(epsilon: Float) throws -> VNContour](./vncontour/polygonapproximation%28epsilon%29.md)
   Simplifies the contour to a polygon using a Ramer-Douglas-Peucker algorithm.
 ### Accessing Child Contours
-- [var childContourCount: Int](vncontour/childcontourcount.md)
+- [var childContourCount: Int](./vncontour/childcontourcount.md)
   The total number of detected child contours.
-- [var childContours: [VNContour]](vncontour/childcontours.md)
+- [var childContours: [VNContour]](./vncontour/childcontours.md)
   An array of contours that this contour encloses.
-- [func childContour(at: Int) throws -> VNContour](vncontour/childcontour(at:).md)
+- [func childContour(at: Int) throws -> VNContour](./vncontour/childcontour%28at%29.md)
   Retrieves the child contour object at the specified index.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [VNRequestRevisionProviding](./vnrequestrevisionproviding.md)
 
 ## See Also
 
-- [var contourCount: Int](vncontoursobservation/contourcount.md)
+### Inspecting the Observation
+- [var contourCount: Int](./vncontoursobservation/contourcount.md)
   The total number of detected contours.
-- [var normalizedPath: CGPath](vncontoursobservation/normalizedpath.md)
+- [var normalizedPath: CGPath](./vncontoursobservation/normalizedpath.md)
   The detected contours as a path object in normalized coordinates.
-- [var topLevelContours: [VNContour]](vncontoursobservation/toplevelcontours.md)
+- [var topLevelContours: [VNContour]](./vncontoursobservation/toplevelcontours.md)
   An array of contours that don’t have another contour enclosing them.
-- [var topLevelContourCount: Int](vncontoursobservation/toplevelcontourcount.md)
+- [var topLevelContourCount: Int](./vncontoursobservation/toplevelcontourcount.md)
   The total number of detected top-level contours.
-- [func contour(at: Int) throws -> VNContour](vncontoursobservation/contour(at:)-9on0y.md)
+- [func contour(at: Int) throws -> VNContour](./vncontoursobservation/contour%28at%29-9on0y.md)
   Retrieves the contour object at the specified index, irrespective of hierarchy.
-- [func contour(at: IndexPath) throws -> VNContour](vncontoursobservation/contour(at:)-52odo.md)
+- [func contour(at: IndexPath) throws -> VNContour](./vncontoursobservation/contour%28at%29-52odo.md)
   Retrieves the contour object at the specified index path.
 
 

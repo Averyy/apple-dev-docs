@@ -1,7 +1,8 @@
 # GKAgent3D
 
 **Framework**: GameplayKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An agent that operates in a three-dimensional space.
 
@@ -19,57 +20,62 @@ An agent that operates in a three-dimensional space.
 class GKAgent3D
 ```
 
+```objc
+@interface GKAgent3D : GKAgent
+```
+
 #### Overview
 
-Agents are game entities that move according to realistic constraints and whose behavior is determined by goals that motivate movement. The general functionality of an agent is defined by the abstract superclass [`GKAgent`](gkagent.md); however, you use instances of the [`GKAgent3D`](gkagent3d.md) class to implement agent-based gameplay in a 3D game.
+Agents are game entities that move according to realistic constraints and whose behavior is determined by goals that motivate movement. The general functionality of an agent is defined by the abstract superclass [`GKAgent`](./gkagent.md); however, you use instances of the [`GKAgent3D`](./gkagent3d.md) class to implement agent-based gameplay in a 3D game.
 
-To learn more about using goals and agents, see [`Agents, Goals, and Behaviors`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Agent.html#//apple_ref/doc/uid/TP40015172-CH8) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+To learn more about using goals and agents, see [Agents, Goals, and Behaviors](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/Agent.html#//apple_ref/doc/uid/TP40015172-CH8) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Topics
 
 ### Managing an Agent’s Position and Orientation
-- [var position: vector_float3](gkagent3d/position.md)
+- [var position: vector_float3](./gkagent3d/position.md)
   The current position of the agent in 3D space.
-- [var rotation: matrix_float3x3](gkagent3d/rotation.md)
+- [var rotation: matrix_float3x3](./gkagent3d/rotation.md)
   The orientation of the agent in 3D space.
 ### Running the Agent Simulation
-- [func update(deltaTime: TimeInterval)](gkagent3d/update(deltatime:).md)
+- [func update(deltaTime: TimeInterval)](./gkagent3d/update%28deltatime%29.md)
   Causes the agent to evaluate its goals and update its position, rotation, and velocity accordingly.
-- [var velocity: vector_float3](gkagent3d/velocity.md)
+- [var velocity: vector_float3](./gkagent3d/velocity.md)
   The current velocity of the agent in 3D space.
 ### Instance Properties
-- [var rightHanded: Bool](gkagent3d/righthanded.md)
+- [var rightHanded: Bool](./gkagent3d/righthanded.md)
 
 ## Relationships
 
 ### Inherits From
-- [GKAgent](gkagent.md)
+- [GKAgent](./gkagent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class GKAgent](gkagent.md)
+### Agents, Goals, and Behaviors
+- [class GKAgent](./gkagent.md)
   A component that moves a game entity according to a set of goals and realistic constraints.
-- [class GKAgent2D](gkagent2d.md)
+- [class GKAgent2D](./gkagent2d.md)
   An agent that operates in a two-dimensional space.
-- [class GKGoal](gkgoal.md)
+- [class GKGoal](./gkgoal.md)
   An influence that motivates the movement of one or more agents.
-- [class GKBehavior](gkbehavior.md)
+- [class GKBehavior](./gkbehavior.md)
   A set of goals that together influence the movement of an agent.
-- [class GKCompositeBehavior](gkcompositebehavior.md)
+- [class GKCompositeBehavior](./gkcompositebehavior.md)
   A set of behaviors, each of which is a set of goals, that together influence the movement of an agent.
-- [class GKPath](gkpath.md)
+- [class GKPath](./gkpath.md)
   A polygonal path that can be followed by an agent.
-- [protocol GKAgentDelegate](gkagentdelegate.md)
+- [protocol GKAgentDelegate](./gkagentdelegate.md)
   Implement this protocol to synchronize the state of an agent with its visual representation in your game.
 
 

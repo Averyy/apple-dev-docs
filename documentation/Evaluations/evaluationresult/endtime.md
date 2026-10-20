@@ -1,7 +1,8 @@
 # endTime
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time when the evaluation run finished.
 
@@ -22,9 +23,10 @@ let endTime: Date
 
 ## See Also
 
-- [let startTime: Date](evaluationresult/starttime.md)
+### Inspecting timing
+- [let startTime: Date](./starttime.md)
   The time when the evaluation run started.
-- [var duration: TimeInterval](evaluationresult/duration.md)
+- [var duration: TimeInterval](./duration.md)
   The total duration of the evaluation run.
 
 

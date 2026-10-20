@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: CarKey  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a request to stop a previously started action.
 

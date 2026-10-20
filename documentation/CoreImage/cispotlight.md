@@ -1,17 +1,18 @@
 # CISpotLight
 
 **Framework**: Core Image  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The properties you use to configure a spotlight filter.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,59 +20,65 @@ The properties you use to configure a spotlight filter.
 protocol CISpotLight : CIFilterProtocol
 ```
 
+```objc
+@protocol CISpotLight <CIFilter>
+```
+
 ## Topics
 
 ### Instance Properties
-- [var brightness: Float](cispotlight/brightness.md)
+- [var brightness: Float](./cispotlight/brightness.md)
   The brightness of the spotlight.
-- [var color: CIColor](cispotlight/color.md)
+- [var color: CIColor](./cispotlight/color.md)
   The color of the spotlight.
-- [var concentration: Float](cispotlight/concentration.md)
+- [var concentration: Float](./cispotlight/concentration.md)
   The size of the spotlight.
-- [var inputImage: CIImage?](cispotlight/inputimage.md)
+- [var inputImage: CIImage?](./cispotlight/inputimage.md)
   The image to use as an input image.
-- [var lightPointsAt: CIVector](cispotlight/lightpointsat.md)
+- [var lightPointsAt: CIVector](./cispotlight/lightpointsat.md)
   The x and y position that the spotlight points at.
-- [var lightPosition: CIVector](cispotlight/lightposition.md)
+- [var lightPosition: CIVector](./cispotlight/lightposition.md)
   The x and y position of the spotlight.
 
 ## Relationships
 
 ### Inherits From
-- [CIFilterProtocol](cifilterprotocol.md)
+- [CIFilterProtocol](./cifilterprotocol.md)
 
 ## See Also
 
-- [class func spotLight() -> any CIFilter & CISpotLight](cifilter-swift.class/spotlight.md)
+### Related Documentation
+- [class func spotLight() -> any CIFilter & CISpotLight](./cifilter-swift.class/spotlight%28%29.md)
   Highlights a definined area of the image.
-- [protocol CIBlendWithMask](ciblendwithmask.md)
+### Protocols
+- [protocol CIBlendWithMask](./ciblendwithmask.md)
   The properties you use to configure a blend with mask filter.
-- [protocol CIBloom](cibloom.md)
+- [protocol CIBloom](./cibloom.md)
   The properties you use to configure a bloom filter.
-- [protocol CICannyEdgeDetector](cicannyedgedetector.md)
-- [protocol CIComicEffect](cicomiceffect.md)
+- [protocol CICannyEdgeDetector](./cicannyedgedetector.md)
+- [protocol CIComicEffect](./cicomiceffect.md)
   The properties you use to configure a comic effect filter.
-- [protocol CICoreMLModel](cicoremlmodel.md)
+- [protocol CICoreMLModel](./cicoremlmodel.md)
   The properties you use to configure a Core ML model filter.
-- [protocol CICrystallize](cicrystallize.md)
+- [protocol CICrystallize](./cicrystallize.md)
   The properties you use to configure a crystalize filter.
-- [protocol CIDepthOfField](cidepthoffield.md)
+- [protocol CIDepthOfField](./cidepthoffield.md)
   The properties you use to configure a depth-of-field filter.
-- [protocol CIEdgeWork](ciedgework.md)
+- [protocol CIEdgeWork](./ciedgework.md)
   The properties you use to configure an edge-work filter.
-- [protocol CIEdges](ciedges.md)
+- [protocol CIEdges](./ciedges.md)
   The properties you use to configure an edges filter.
-- [protocol CIGaborGradients](cigaborgradients.md)
+- [protocol CIGaborGradients](./cigaborgradients.md)
   The properties you use to configure a Gabor gradients filter.
-- [protocol CIGloom](cigloom.md)
+- [protocol CIGloom](./cigloom.md)
   The properties you use to configure a gloom filter.
-- [protocol CIHeightFieldFromMask](ciheightfieldfrommask.md)
+- [protocol CIHeightFieldFromMask](./ciheightfieldfrommask.md)
   The properties you use to configure a height-field-from-mask filter.
-- [protocol CIHexagonalPixellate](cihexagonalpixellate.md)
+- [protocol CIHexagonalPixellate](./cihexagonalpixellate.md)
   The properties you use to configure a hexagonal pixellate filter.
-- [protocol CIHighlightShadowAdjust](cihighlightshadowadjust.md)
+- [protocol CIHighlightShadowAdjust](./cihighlightshadowadjust.md)
   The properties you use to configure a highlight-shadow adjust filter.
-- [protocol CILineOverlay](cilineoverlay.md)
+- [protocol CILineOverlay](./cilineoverlay.md)
   The properties you use to configure a line overlay filter.
 
 

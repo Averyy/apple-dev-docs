@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Removes the specified number of elements from the beginning of the collection.
@@ -32,11 +33,19 @@ print(bugs)
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(*n*), where *n* is the length of the collection.
 
 ## Parameters
 
 - `k`: The number of elements to remove from the collection. `k` must be greater than or equal to zero and must not exceed the number of elements in the collection.
+
+## Default Implementations
+
+### RangeReplaceableCollection Implementations
+- [func removeFirst(Int)](./removefirst%28_%29-6lekf.md)
+  Removes the specified number of elements from the beginning of the collection.
+- [func removeFirst(Int)](./removefirst%28_%29-6mezs.md)
+  Removes the specified number of elements from the beginning of the collection.
 
 
 ---

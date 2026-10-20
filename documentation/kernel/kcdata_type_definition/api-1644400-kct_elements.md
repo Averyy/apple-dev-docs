@@ -1,14 +1,15 @@
 # kct_elements
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 struct kcdata_subtype_descriptor kct_elements[];
 ```
 

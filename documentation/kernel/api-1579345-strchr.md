@@ -1,24 +1,26 @@
 # strchr
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 char * strchr(const char *const s, int c);
 ```
 
 ## See Also
 
-- [strlen](1579342-strlen.md)
-- [strnlen](1579340-strnlen.md)
-- [strnstr](1579346-strnstr.md)
-- [strprefix](1579348-strprefix.md)
-- [strsep](1441093-strsep.md)
+### String Contents
+- [strlen](./api-1579342-strlen.md)
+- [strnlen](./api-1579340-strnlen.md)
+- [strnstr](./api-1579346-strnstr.md)
+- [strprefix](./api-1579348-strprefix.md)
+- [strsep](./api-1441093-strsep.md)
 
 
 ---

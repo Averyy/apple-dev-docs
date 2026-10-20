@@ -1,12 +1,13 @@
 # enableCursorRects()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Reenables cursor rectangle management within the window after a [`disableCursorRects()`](nswindow/disablecursorrects().md) message.
+Reenables cursor rectangle management within the window after a [`disableCursorRects()`](./disablecursorrects%28%29.md) message.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,18 +15,23 @@ Reenables cursor rectangle management within the window after a [`disableCursorR
 func enableCursorRects()
 ```
 
+```objc
+- (void) enableCursorRects;
+```
+
 ## See Also
 
-- [var areCursorRectsEnabled: Bool](nswindow/arecursorrectsenabled.md)
+### Managing Cursor Rectangles
+- [var areCursorRectsEnabled: Bool](./arecursorrectsenabled.md)
   A Boolean value that indicates whether the window’s cursor rectangles are enabled.
-- [func disableCursorRects()](nswindow/disablecursorrects.md)
+- [func disableCursorRects()](./disablecursorrects%28%29.md)
   Disables all cursor rectangle management within the window.
-- [func discardCursorRects()](nswindow/discardcursorrects.md)
+- [func discardCursorRects()](./discardcursorrects%28%29.md)
   Invalidates all cursor rectangles in the window.
-- [func invalidateCursorRects(for: NSView)](nswindow/invalidatecursorrects(for:).md)
+- [func invalidateCursorRects(for: NSView)](./invalidatecursorrects%28for%29.md)
   Marks as invalid the cursor rectangles of a given view object in the window, so they’ll be set up again when the window becomes key.
-- [func resetCursorRects()](nswindow/resetcursorrects.md)
-  Clears the window’s cursor rectangles and the cursor rectangles of the [`NSView`](nsview.md) objects in its view hierarchy.
+- [func resetCursorRects()](./resetcursorrects%28%29.md)
+  Clears the window’s cursor rectangles and the cursor rectangles of the [`NSView`](../nsview.md) objects in its view hierarchy.
 
 
 ---

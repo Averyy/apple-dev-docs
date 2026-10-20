@@ -1,7 +1,8 @@
 # delete(_:)
 
 **Framework**: SwiftData  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified model from the persistent storage during the next save operation.
 
@@ -31,9 +32,10 @@ When the context nexts commits its changes, SwiftData removes the model from the
 
 ## See Also
 
-- [var deletedModelsArray: [any PersistentModel]](modelcontext/deletedmodelsarray.md)
+### Deleting models
+- [var deletedModelsArray: [any PersistentModel]](./deletedmodelsarray.md)
   The array of registered models that the context will remove from the persistent storage during the next save operation.
-- [func delete<T>(model: T.Type, where: Predicate<T>?, includeSubclasses: Bool) throws](modelcontext/delete(model:where:includesubclasses:).md)
+- [func delete<T>(model: T.Type, where: Predicate<T>?, includeSubclasses: Bool) throws](./delete%28model,where,includesubclasses%29.md)
   Removes each model satisfying the given predicate from the persistent storage during the next save operation.
 
 

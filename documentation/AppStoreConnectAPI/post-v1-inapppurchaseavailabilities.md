@@ -1,7 +1,8 @@
 # Modify the Territory Availablity of an In-App Purchase
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update the territory availablity of a specific In-App Purchase.
 
@@ -14,7 +15,7 @@ Update the territory availablity of a specific In-App Purchase.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities -d
 {
   "data": {
@@ -82,13 +83,29 @@ https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities -d
 
 `POST https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities`
 
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `InAppPurchaseAvailabilityCreateRequest`
+
+## Responses
+
+- `201` Created (`InAppPurchaseAvailabilityResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `409` Conflict (`ErrorResponse`, `application/json`)
+- `422` (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
+
 ## See Also
 
-- [Read information about the availablity of an In-App Purchase](get-v1-inapppurchaseavailabilities-_id_.md)
+### Endpoints
+- [Read information about the availablity of an In-App Purchase](./get-v1-inapppurchaseavailabilities-_id_.md)
   Get information about the territory availablity for an In-App Purchase.
-- [List the Territory Availablity of an In-App Purchase](get-v1-inapppurchaseavailabilities-_id_-availableterritories.md)
+- [List the Territory Availablity of an In-App Purchase](./get-v1-inapppurchaseavailabilities-_id_-availableterritories.md)
   List all the territories where an In-App Purchase is available.
-- [List available territory IDs for an In-App Purchase availability](get-v1-inapppurchaseavailabilities-_id_-relationships-availableterritories.md)
+- [List available territory IDs for an In-App Purchase availability](./get-v1-inapppurchaseavailabilities-_id_-relationships-availableterritories.md)
 
 
 ---

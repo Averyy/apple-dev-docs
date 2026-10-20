@@ -1,6 +1,8 @@
 # Incorporating real-world surroundings in an immersive experience
 
-**Framework**: visionOS
+**Framework**: visionOS  
+**Role**: Sample Code  
+**Download**: [SceneReconstructionExample.zip](https://docs-assets.developer.apple.com/published/04a6ee5b7e6f/SceneReconstructionExample.zip)
 
 Create an immersive experience by making your app’s content respond to the local shape of the world.
 
@@ -10,13 +12,15 @@ Create an immersive experience by making your app’s content respond to the loc
 
 #### Overview
 
-Scene reconstruction helps bridge the gap between the rendered 3D content in your app and the person’s surroundings. Use scene reconstruction in ARKit to give your app an idea of the shape of the person’s surroundings and to bring your app experience into their world. Immersive experiences  — those that use the [`mixed`](https://developer.apple.com/documentation/swiftui/immersionstyle/mixed) space style — are best positioned to incorporate this kind of contextual information: scene reconstruction is only available in spaces and isn’t as relevant for the [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full) space style.
+Scene reconstruction helps bridge the gap between the rendered 3D content in your app and the person’s surroundings. Use scene reconstruction in ARKit to give your app an idea of the shape of the person’s surroundings and to bring your app experience into their world. Immersive experiences  — those that use the [`mixed`](../SwiftUI/immersionstyle/mixed.md) space style — are best positioned to incorporate this kind of contextual information: scene reconstruction is only available in spaces and isn’t as relevant for the [`full`](../SwiftUI/immersionstyle/full.md) space style.
 
 In addition to providing a 3D mesh of the shape of different nearby objects, ARKit gives a classification to each mesh face it detects. For example, it might classify a face of a mesh as being part of an appliance, a piece of furniture, or structural information about the room like the position of walls and floors. The following video shows virtual cubes colliding with the scene reconstruction mesh, which makes the cubes appear to land on a table:
 
-##### Configure a Scene Reconstruction Session
+[Video: A recording showing a table with a vertical stack of three virtual cubic blocks on it in visionOS. A person moves their hand toward the blocks from right to left, and their extended fingers touch and push aside the center block. The center block falls to the side, and the other block also tumbles onto the tabletop.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/visionos-spatial-gesture-direct.mp4)
 
-Scene reconstruction requires the [`ARKitSession.AuthorizationType.worldSensing`](https://developer.apple.com/documentation/arkit/arkitsession/authorizationtype/worldsensing) authorization type and corresponding usage description that you supply in your app’s `Info.plist` file. The following starts a session and processes updates as ARKit refines its reconstruction of the person’s surroundings:
+##### Configure a scene reconstruction session
+
+Scene reconstruction requires the [`ARKitSession.AuthorizationType.worldSensing`](../ARKit/arkitsession/authorizationtype/worldsensing.md) authorization type and corresponding usage description that you supply in your app’s `Info.plist` file. The following starts a session and processes updates as ARKit refines its reconstruction of the person’s surroundings:
 
 ```swift
 RealityView { content in
@@ -50,11 +54,11 @@ RealityView { content in
 })
 ```
 
-##### Add Real World Interactivity Using Collision Components
+##### Add real-world interactivity using collision components
 
-You can make rendered 3D content more lifelike by having it appear to interact physically with objects in the person’s surroundings, like furniture and floors. Use RealityKit’s collision components and physics support to provide these interactions in your app. The [`generateStaticMesh(from:)`](https://developer.apple.com/documentation/realitykit/shaperesource/generatestaticmesh(from:)) method bridges between scene reconstruction and RealityKit’s physics simulation.
+You can make rendered 3D content more lifelike by having it appear to interact physically with objects in the person’s surroundings, like furniture and floors. Use RealityKit’s collision components and physics support to provide these interactions in your app. The [`generateStaticMesh(from:)`](../RealityKit/shaperesource/generatestaticmesh%28from%29.md) method bridges between scene reconstruction and RealityKit’s physics simulation.
 
-> ⚠️ **Warning**: Be mindful of how much content you include in immersive scenes that use the [`mixed`](https://developer.apple.com/documentation/swiftui/immersionstyle/mixed) style. Content that fills a significant portion of the screen, even if that content is partially transparent, can prevent the person from seeing potential hazards in their surroundings. If you want to immerse the person in your content, configure your space with the [`full`](https://developer.apple.com/documentation/swiftui/immersionstyle/full) style. For more information, see [`Creating fully immersive experiences in your app`](creating-fully-immersive-experiences.md).
+> ⚠️ **Warning**: Be mindful of how much content you include in immersive scenes that use the [`mixed`](../SwiftUI/immersionstyle/mixed.md) style. Content that fills a significant portion of the screen, even if that content is partially transparent, can prevent the person from seeing potential hazards in their surroundings. If you want to immerse the person in your content, configure your space with the [`full`](../SwiftUI/immersionstyle/full.md) style. For more information, see [Creating fully immersive experiences in your app](./creating-fully-immersive-experiences.md).
 
 Use low-priority tasks to generate meshes, because generating them is a computationally expensive operation. The following creates a mesh entity with collision shapes using scene reconstruction:
 
@@ -87,39 +91,40 @@ func processReconstructionUpdates() async {
 }
 ```
 
-> **Note**: Scene reconstruction meshes only support the [`PhysicsBodyMode.static`](https://developer.apple.com/documentation/realitykit/physicsbodymode/static) physics body component mode.
+> **Note**: Scene reconstruction meshes only support the [`PhysicsBodyMode.static`](../RealityKit/physicsbodymode/static.md) physics body component mode.
 
-Each object in the scene reconstruction mesh updates its [`originFromAnchorTransform`](https://developer.apple.com/documentation/arkit/meshanchor/originfromanchortransform) information independently and requires a separate static mesh because ARKit subdivides its representation of the world into multiple, distinct sections.
+Each object in the scene reconstruction mesh updates its [`originFromAnchorTransform`](../ARKit/meshanchor/originfromanchortransform.md) information independently and requires a separate static mesh because ARKit subdivides its representation of the world into multiple, distinct sections.
 
-##### Display Scene Reconstruction Meshes During Debugging
+##### Display scene reconstruction meshes during debugging
 
-People using an app that leverages scene reconstruction typically don’t need to see a visual rendering of the scene reconstruction mesh. The system already shows passthrough video in an immersive experience. However, temporarily displaying the scene reconstruction mesh can help while you’re developing and debugging your app. In Xcode’s debugging toolbar, click the Enable Visualizations button and select Collision Shapes. Because each element of the scene reconstruction mesh has a collision component, the details of the mesh appear in the debug visualization. For more information, see [`Diagnosing issues in the appearance of a running app`](https://developer.apple.com/documentation/xcode/diagnosing-issues-in-the-appearance-of-your-running-app).
+People using an app that leverages scene reconstruction typically don’t need to see a visual rendering of the scene reconstruction mesh. The system already shows passthrough video in an immersive experience. However, temporarily displaying the scene reconstruction mesh can help while you’re developing and debugging your app. In Xcode’s debugging toolbar, click the Enable Visualizations button and select Collision Shapes. Because each element of the scene reconstruction mesh has a collision component, the details of the mesh appear in the debug visualization. For more information, see [Diagnosing issues in the appearance of a running app](../Xcode/diagnosing-issues-in-the-appearance-of-your-running-app.md).
 
 ## See Also
 
-- [Happy Beam](happybeam.md)
+### ARKit
+- [Happy Beam](./happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
-- [Setting up access to ARKit data](setting-up-access-to-arkit-data.md)
+- [Setting up access to ARKit data](./setting-up-access-to-arkit-data.md)
   Check whether your app can use ARKit and respect people’s privacy.
-- [Placing content on detected planes](placing-content-on-detected-planes.md)
+- [Placing content on detected planes](./placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
-- [Tracking specific points in world space](tracking-points-in-world-space.md)
+- [Tracking specific points in world space](./tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
-- [Tracking preregistered images in 3D space](tracking-images-in-3d-space.md)
+- [Tracking preregistered images in 3D space](./tracking-images-in-3d-space.md)
   Place content based on the current position of a known image in a person’s surroundings.
-- [Exploring object tracking with ARKit](exploring_object_tracking_with_arkit.md)
+- [Exploring object tracking with ARKit](./exploring_object_tracking_with_arkit.md)
   Find and track real-world objects in visionOS using reference objects you train with Create ML.
-- [Object tracking with Reality Composer Pro experiences](object-tracking-with-reality-composer-pro-experiences.md)
+- [Object tracking with Reality Composer Pro experiences](./object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
-- [Building local experiences with room tracking](building-local-experiences-with-room-tracking.md)
+- [Building local experiences with room tracking](./building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
-- [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
+- [Placing entities using head and device transform](./placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
+- [Drawing in the air and on surfaces with a spatial stylus](./drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
-- [Preparing spatial accessories for tracking in your visionOS app](../arkit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
-- [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
+- [Working with generic spatial accessories](./working-with-generic-spatial-accessories.md)
   Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
 
 

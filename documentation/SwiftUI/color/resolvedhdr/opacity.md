@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The opacity of the color, in the range `0` to `1`.
 
@@ -27,19 +28,20 @@ A value of `0` means 100% transparency, while a value of `1` means 100% opacity.
 
 ## See Also
 
-- [var red: Float](color/resolvedhdr/red.md)
+### Getting color properties
+- [var red: Float](./red.md)
   The amount of red in the color in the extended sRGB color space.
-- [var green: Float](color/resolvedhdr/green.md)
+- [var green: Float](./green.md)
   The amount of green in the color in the extended sRGB color space.
-- [var blue: Float](color/resolvedhdr/blue.md)
+- [var blue: Float](./blue.md)
   The amount of blue in the color in the extended sRGB color space.
-- [var linearRed: Float](color/resolvedhdr/linearred.md)
+- [var linearRed: Float](./linearred.md)
   The amount of red in the color in the extended sRGB color space variant with linear gamma.
-- [var linearGreen: Float](color/resolvedhdr/lineargreen.md)
+- [var linearGreen: Float](./lineargreen.md)
   The amount of green in the color in the extended sRGB color space variant with linear gamma.
-- [var linearBlue: Float](color/resolvedhdr/linearblue.md)
+- [var linearBlue: Float](./linearblue.md)
   The amount of blue in the color in the extended sRGB color space variant with linear gamma.
-- [var headroom: Float?](color/resolvedhdr/headroom.md)
+- [var headroom: Float?](./headroom.md)
   The content headroom of the color.
 
 

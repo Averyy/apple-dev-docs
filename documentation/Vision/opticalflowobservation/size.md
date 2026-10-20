@@ -1,7 +1,8 @@
 # size
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the observation image.
 
@@ -22,9 +23,10 @@ var size: CGSize { get }
 
 ## See Also
 
-- [var pixelFormat: OSType](opticalflowobservation/pixelformat.md)
+### Inspecting an observation
+- [var pixelFormat: OSType](./pixelformat.md)
   The four-character code that identifies the pixel format.
-- [var pixelBuffer: CVReadOnlyPixelBuffer](opticalflowobservation/pixelbuffer.md)
+- [var pixelBuffer: CVReadOnlyPixelBuffer](./pixelbuffer.md)
 
 
 ---

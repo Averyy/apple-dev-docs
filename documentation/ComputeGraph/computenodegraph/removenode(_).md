@@ -1,7 +1,8 @@
 # removeNode(_:)
 
 **Framework**: Compute Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a node from the graph.
 
@@ -12,7 +13,7 @@ Removes a node from the graph.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 
@@ -22,7 +23,7 @@ mutating func removeNode(_ node: ComputeNodeGraph.NodeID) throws
 
 #### Discussion
 
-> **Note**: If the node cannot be removed.
+> **Throws**: If the node cannot be removed.
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # ArrangementView
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view that dynamically lays out a primary and secondary view based on size class, orientation, and reserved regions.
 
@@ -35,9 +36,9 @@ When iPhone Duo is fully open or closed, people interact with the flat display l
 
 Arrangement views offer two distinct styles: split and overlay. You specify the split arrangement view style to indicate that the views lay out next to each other, either horizontally or vertically. You specify the overlay style to indicate that the views layer over each other on a flat display and next to each other on a folded display.
 
-For more information on designing your app to use an arrangement view, see [`Designing for iPhone Duo`](https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo).
+For more information on designing your app to use an arrangement view, see [Designing for iPhone Duo](https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo).
 
-#### Configure an Overlay Arrangement View
+#### Configure an overlay arrangement view
 
 An overlay arrangement view places a primary view and a secondary view in a stacked arrangement when the device has a flat display, or next to each other horizontally when someone is holding a folded device in landscape orientation or above and below each other when someone is holding a folded device in portrait orientation. Here’s how the overlay arrangement positions the primary and secondary views:
 
@@ -45,7 +46,7 @@ An overlay arrangement view places a primary view and a secondary view in a stac
 - When someone holds a folded iPhone Duo in landscape orientation, the arrangement view places the secondary view in the leading position and the primary view in the trailing position.
 - When someone holds a folded iPhone Duo in portrait orientation, the arrangement view places the secondary view in the top position and the primary view in the bottom position.
 
-Create an overlay arrangement view by specifying a primary and secondary view, and add the [`arrangementViewStyle(_:)`](view/arrangementviewstyle(_:).md) modifier with [`overlay`](arrangementviewstyle/overlay.md), as the following example shows:
+Create an overlay arrangement view by specifying a primary and secondary view, and add the [`arrangementViewStyle(_:)`](./view/arrangementviewstyle%28_%29.md) modifier with [`overlay`](./arrangementviewstyle/overlay.md), as the following example shows:
 
 ```swift
 ArrangementView {
@@ -56,9 +57,9 @@ ArrangementView {
 .arrangementViewStyle(.overlay) 
 ```
 
-For more information on configuring layout for a folded iPhone Duo in an overlay arrangement, see [`Customize a folded layout`](overlayarrangementviewstyle#Customize-a-folded-layout.md).
+For more information on configuring layout for a folded iPhone Duo in an overlay arrangement, see [Customize a folded layout](./overlayarrangementviewstyle.md#Customize-a-folded-layout).
 
-#### Configure a Split Arrangement View
+#### Configure a split arrangement view
 
 Unlike an overlay arrangement, which typically layers its two views and only separates them when the device folds, a split arrangement view always keeps its primary and secondary views in separate spaces: next to each other horizontally when someone is holding the device in landscape orientation, or stacked vertically when someone is holding the device in portrait orientation. Here’s how the split arrangement positions the primary and secondary views:
 
@@ -66,7 +67,7 @@ Unlike an overlay arrangement, which typically layers its two views and only sep
 - In portrait orientation, the arrangement view places the primary view in the top position and the secondary view in the bottom position.
 - When someone is holding a closed iPhone Duo in landscape orientation, the split arrangement only shows the primary view.
 
-Create a split arrangement view by specifying a primary and secondary view, and add the [`arrangementViewStyle(_:)`](view/arrangementviewstyle(_:).md) modifier with [`split`](arrangementviewstyle/split.md), as the following example shows:
+Create a split arrangement view by specifying a primary and secondary view, and add the [`arrangementViewStyle(_:)`](./view/arrangementviewstyle%28_%29.md) modifier with [`split`](./arrangementviewstyle/split.md), as the following example shows:
 
 ```swift
 ArrangementView {
@@ -77,9 +78,9 @@ ArrangementView {
 .arrangementViewStyle(.split)
 ```
 
-For more information on adjusting view sizes in a split arrangement, see [`Adjust layout sizing in a split arrangement`](splitarrangementviewstyle#Adjust-layout-sizing-in-a-split-arrangement.md).
+For more information on adjusting view sizes in a split arrangement, see [Adjust layout sizing in a split arrangement](./splitarrangementviewstyle.md#Adjust-layout-sizing-in-a-split-arrangement).
 
-#### Limit an Arrangement By Orientation
+#### Limit an arrangement by orientation
 
 You can limit which axes your split or overlay arrangement view supports by specifying the axes for the arrangement view style. The following example shows an arrangement that only splits vertically:
 
@@ -92,41 +93,42 @@ ArrangementView {
 .arrangementViewStyle(.split.axes(.vertical))
 ```
 
-Use [`axes(_:)`](splitarrangementviewstyle/axes(_:).md) to set the axes for a split style, or [`axes(_:)`](overlayarrangementviewstyle/axes(_:).md) to set the axes for an overlay style.
+Use [`axes(_:)`](./splitarrangementviewstyle/axes%28_%29.md) to set the axes for a split style, or [`axes(_:)`](./overlayarrangementviewstyle/axes%28_%29.md) to set the axes for an overlay style.
 
 ## Topics
 
 ### Creating an arrangement view
-- [init(primary: () -> Primary, secondary: () -> Secondary)](arrangementview/init(primary:secondary:).md)
+- [init(primary: () -> Primary, secondary: () -> Secondary)](./arrangementview/init%28primary,secondary%29.md)
   Creates an arrangement view with a primary and secondary view.
-- [init(ArrangementViewStyleConfiguration)](arrangementview/init(_:).md)
+- [init(ArrangementViewStyleConfiguration)](./arrangementview/init%28_%29.md)
   Creates an arrangement view from a style configuration.
-- [struct ArrangementViewStyleConfiguration](arrangementviewstyleconfiguration.md)
+- [struct ArrangementViewStyleConfiguration](./arrangementviewstyleconfiguration.md)
   The properties of an arrangement view you provide to create a custom style.
 ### Configuring an arrangement view
-- [func arrangementViewStyle(some ArrangementViewStyle) -> some View](view/arrangementviewstyle(_:).md)
+- [func arrangementViewStyle(some ArrangementViewStyle) -> some View](./view/arrangementviewstyle%28_%29.md)
   Sets the style for arrangement views within this view.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [func arrangementViewStyle(some ArrangementViewStyle) -> some View](view/arrangementviewstyle(_:).md)
+### Dynamically arranging a primary and secondary view
+- [func arrangementViewStyle(some ArrangementViewStyle) -> some View](./view/arrangementviewstyle%28_%29.md)
   Sets the style for arrangement views within this view.
-- [protocol ArrangementViewStyle](arrangementviewstyle.md)
+- [protocol ArrangementViewStyle](./arrangementviewstyle.md)
   A style that indicates how an arrangement view lays out a primary and secondary view.
-- [func overlayArrangementEdge(_:)](view/overlayarrangementedge(_:).md)
+- [func overlayArrangementEdge(_:)](./view/overlayarrangementedge%28_%29.md)
   The horizontal edge a view in an overlay arrangement aligns to when the arrangement transitions to a landscape orientation.
-- [func splitArrangementFixedLayoutSize(horizontal: Bool, vertical: Bool) -> some View](view/splitarrangementfixedlayoutsize(horizontal:vertical:).md)
+- [func splitArrangementFixedLayoutSize(horizontal: Bool, vertical: Bool) -> some View](./view/splitarrangementfixedlayoutsize%28horizontal,vertical%29.md)
   Sets the preferred size constraint for a view in a split arrangement style to the ideal size of the view within its container.
-- [func splitArrangementLayoutRatio(CGFloat?) -> some View](view/splitarrangementlayoutratio(_:).md)
+- [func splitArrangementLayoutRatio(CGFloat?) -> some View](./view/splitarrangementlayoutratio%28_%29.md)
   Sets the preferred size ratio for a view in a split style arrangement view.
-- [func splitArrangementLayoutRatio(minHorizontal: CGFloat?, idealHorizontal: CGFloat?, maxHorizontal: CGFloat?, minVertical: CGFloat?, idealVertical: CGFloat?, maxVertical: CGFloat?) -> some View](view/splitarrangementlayoutratio(minhorizontal:idealhorizontal:maxhorizontal:minvertical:idealvertical:maxvertical:).md)
+- [func splitArrangementLayoutRatio(minHorizontal: CGFloat?, idealHorizontal: CGFloat?, maxHorizontal: CGFloat?, minVertical: CGFloat?, idealVertical: CGFloat?, maxVertical: CGFloat?) -> some View](./view/splitarrangementlayoutratio%28minhorizontal,idealhorizontal,maxhorizontal,minvertical,idealvertical,maxvertical%29.md)
   Sets the size ratio for a view in a split style arrangement view.
-- [func splitArrangementLayoutSize(minWidth: CGFloat?, idealWidth: CGFloat?, maxWidth: CGFloat?, minHeight: CGFloat?, idealHeight: CGFloat?, maxHeight: CGFloat?) -> some View](view/splitarrangementlayoutsize(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:).md)
+- [func splitArrangementLayoutSize(minWidth: CGFloat?, idealWidth: CGFloat?, maxWidth: CGFloat?, minHeight: CGFloat?, idealHeight: CGFloat?, maxHeight: CGFloat?) -> some View](./view/splitarrangementlayoutsize%28minwidth,idealwidth,maxwidth,minheight,idealheight,maxheight%29.md)
   Sets the size constraints for a view in a split style arrangement view.
 
 

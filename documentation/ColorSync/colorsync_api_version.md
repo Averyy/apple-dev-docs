@@ -1,7 +1,8 @@
 # COLORSYNC_API_VERSION
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.0+
@@ -18,12 +19,17 @@
 var COLORSYNC_API_VERSION: Int { get }
 ```
 
+```c
+#define COLORSYNC_API_VERSION
+```
+
 ## See Also
 
-- [func ColorSyncAPIVersion() -> UInt32](colorsyncapiversion().md)
+### Versioning
+- [func ColorSyncAPIVersion() -> UInt32](./colorsyncapiversion%28%29.md)
   Returns the version of the ColorSync API.
-- [var icVersion4Number: Int](icversion4number.md)
-- [var icVersion4Point4Number: Int](icversion4point4number.md)
+- [var icVersion4Number: Int](./icversion4number.md)
+- [var icVersion4Point4Number: Int](./icversion4point4number.md)
 
 
 ---

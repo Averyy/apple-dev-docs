@@ -1,7 +1,8 @@
 # PlaygroundBluetoothConnectionView.State.connectedPeripheralFirmwareOutOfDate
 
 **Framework**: Playground Bluetooth  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 The currently connected peripheral has outdated firmware and can't be used.
 

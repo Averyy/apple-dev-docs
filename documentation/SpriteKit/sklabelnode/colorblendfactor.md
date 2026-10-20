@@ -1,23 +1,28 @@
 # colorBlendFactor
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A floating-point value that describes how the color is blended with the font color.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var colorBlendFactor: CGFloat { get set }
+```
+
+```objc
+@property (nonatomic) CGFloat colorBlendFactor;
 ```
 
 #### Discussion
@@ -26,7 +31,8 @@ The value must be a number between `0.0` and `1.0`, inclusive. The default value
 
 ## See Also
 
-- [var color: UIColor?](sklabelnode/color.md)
+### Colorizing a Label
+- [var color: UIColor?](./color.md)
   An alternative to the font color that can be used for animations.
 
 

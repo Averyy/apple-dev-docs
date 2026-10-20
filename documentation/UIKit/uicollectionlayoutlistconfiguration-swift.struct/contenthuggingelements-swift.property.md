@@ -1,7 +1,8 @@
 # contentHuggingElements
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A setting that determines which type of items tightly hug their content.
 
@@ -20,13 +21,14 @@ var contentHuggingElements: UICollectionLayoutListConfiguration.ContentHuggingEl
 
 #### Discussion
 
-The default value of this property is [`supplementaryHeader`](uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.struct/supplementaryheader.md) in visionOS, and `[]` on all other platforms.
+The default value of this property is [`supplementaryHeader`](./contenthuggingelements-swift.struct/supplementaryheader.md) in visionOS, and `[]` on all other platforms.
 
-When the value of this property is [`supplementaryHeader`](uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.struct/supplementaryheader.md), header views tightly hug their content. This means header views don’t stretch to fill the width of the collection view if its content’s intrinsic content size is less than the collection view’s width.
+When the value of this property is [`supplementaryHeader`](./contenthuggingelements-swift.struct/supplementaryheader.md), header views tightly hug their content. This means header views don’t stretch to fill the width of the collection view if its content’s intrinsic content size is less than the collection view’s width.
 
 ## See Also
 
-- [UICollectionLayoutListConfiguration.ContentHuggingElements](uicollectionlayoutlistconfiguration-swift.struct/contenthuggingelements-swift.struct.md)
+### Managing content-hugging behavior
+- [UICollectionLayoutListConfiguration.ContentHuggingElements](./contenthuggingelements-swift.struct.md)
   Constants that determine which types of items in a collection view tightly hug their content.
 
 

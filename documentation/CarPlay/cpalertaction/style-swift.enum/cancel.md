@@ -1,7 +1,8 @@
 # CPAlertAction.Style.cancel
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The display style indicating that the action leaves data unchanged.
 
@@ -16,15 +17,20 @@ The display style indicating that the action leaves data unchanged.
 case cancel
 ```
 
+```c
+CPAlertActionStyleCancel
+```
+
 #### Discussion
 
 Use this style when providing a cancel action on the alert.
 
 ## See Also
 
-- [CPAlertAction.Style.default](cpalertaction/style-swift.enum/default.md)
+### Styles
+- [CPAlertAction.Style.default](./default.md)
   The default display style for an action button.
-- [CPAlertAction.Style.destructive](cpalertaction/style-swift.enum/destructive.md)
+- [CPAlertAction.Style.destructive](./destructive.md)
   The style indicating that the action changes or deletes data.
 
 

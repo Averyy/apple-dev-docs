@@ -1,7 +1,8 @@
 # message
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A message from the recipient to the sender of the exchange request.
 
@@ -20,13 +21,26 @@ A message from the recipient to the sender of the exchange request.
 var message: String? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * message;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly, nullable) NSString * message;
+```
+
 ## See Also
 
-- [var data: Data?](gkturnbasedexchangereply/data.md)
+### Retrieving Reply Details
+- [var data: Data?](./data.md)
   The game-specific data that the recipent provides in the exchange request reply.
-- [var recipient: GKTurnBasedParticipant](gkturnbasedexchangereply/recipient.md)
+- [var recipient: GKTurnBasedParticipant](./recipient.md)
   The participant who replies to the exchange request.
-- [var replyDate: Date](gkturnbasedexchangereply/replydate.md)
+- [var replyDate: Date](./replydate.md)
   The date the recipient replies to the exchange request.
 
 

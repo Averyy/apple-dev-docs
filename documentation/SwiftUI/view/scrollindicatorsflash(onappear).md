@@ -1,7 +1,8 @@
 # scrollIndicatorsFlash(onAppear:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Flashes the scroll indicators of a scrollable view when it appears.
 
@@ -36,7 +37,7 @@ ScrollView {
 .scrollIndicatorsFlash(onAppear: true)
 ```
 
-Only scroll indicators that you configure to be visible flash. To flash scroll indicators when a value changes, use [`scrollIndicatorsFlash(trigger:)`](view/scrollindicatorsflash(trigger:).md) instead.
+Only scroll indicators that you configure to be visible flash. To flash scroll indicators when a value changes, use [`scrollIndicatorsFlash(trigger:)`](./scrollindicatorsflash%28trigger%29.md) instead.
 
 ## Parameters
 
@@ -44,15 +45,16 @@ Only scroll indicators that you configure to be visible flash. To flash scroll i
 
 ## See Also
 
-- [func scrollIndicatorsFlash(trigger: some Equatable) -> some View](view/scrollindicatorsflash(trigger:).md)
+### Showing scroll indicators
+- [func scrollIndicatorsFlash(trigger: some Equatable) -> some View](./scrollindicatorsflash%28trigger%29.md)
   Flashes the scroll indicators of scrollable views when a value changes.
-- [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](view/scrollindicators(_:axes:).md)
+- [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](./scrollindicators%28_,axes%29.md)
   Sets the visibility of scroll indicators within this view.
-- [var horizontalScrollIndicatorVisibility: ScrollIndicatorVisibility](environmentvalues/horizontalscrollindicatorvisibility.md)
+- [var horizontalScrollIndicatorVisibility: ScrollIndicatorVisibility](../environmentvalues/horizontalscrollindicatorvisibility.md)
   The visibility to apply to scroll indicators of any horizontally scrollable content.
-- [var verticalScrollIndicatorVisibility: ScrollIndicatorVisibility](environmentvalues/verticalscrollindicatorvisibility.md)
+- [var verticalScrollIndicatorVisibility: ScrollIndicatorVisibility](../environmentvalues/verticalscrollindicatorvisibility.md)
   The visiblity to apply to scroll indicators of any vertically scrollable content.
-- [struct ScrollIndicatorVisibility](scrollindicatorvisibility.md)
+- [struct ScrollIndicatorVisibility](../scrollindicatorvisibility.md)
   The visibility of scroll indicators of a UI element.
 
 

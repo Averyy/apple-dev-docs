@@ -1,14 +1,15 @@
 # BEAccessibilityPressedState
 
 **Framework**: BrowserEngineKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that indicates whether an element is pressed.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- macOS ?+
+- macOS
 - tvOS 18.0+
 - visionOS 2.0+
 
@@ -18,55 +19,60 @@ An enumeration that indicates whether an element is pressed.
 enum BEAccessibilityPressedState
 ```
 
+```c
+enum BEAccessibilityPressedState : NSInteger;
+```
+
 ## Topics
 
 ### Element states
-- [BEAccessibilityPressedState.false](beaccessibilitypressedstate/false.md)
+- [BEAccessibilityPressedState.false](./beaccessibilitypressedstate/false.md)
   A state that indicates the element isn’t pressed.
-- [BEAccessibilityPressedState.true](beaccessibilitypressedstate/true.md)
+- [BEAccessibilityPressedState.true](./beaccessibilitypressedstate/true.md)
   A state that indicates the element is pressed.
-- [BEAccessibilityPressedState.mixed](beaccessibilitypressedstate/mixed.md)
+- [BEAccessibilityPressedState.mixed](./beaccessibilitypressedstate/mixed.md)
   A state that indicates the element is in a mixed state.
-- [BEAccessibilityPressedState.undefined](beaccessibilitypressedstate/undefined.md)
+- [BEAccessibilityPressedState.undefined](./beaccessibilitypressedstate/undefined.md)
   An option that indicates an undefined pressed state.
 ### Initializers
-- [init?(rawValue: Int)](beaccessibilitypressedstate/init(rawvalue:).md)
+- [init?(rawValue: Int)](./beaccessibilitypressedstate/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol BEAccessibilityTextMarkerSupport](beaccessibilitytextmarkersupport.md)
+### Accessibility
+- [protocol BEAccessibilityTextMarkerSupport](./beaccessibilitytextmarkersupport.md)
   A set of methods that provide information about text offsets to support assistive features.
-- [static var valueChangedNotification: UIAccessibility.Notification](beaccessibility/valuechangednotification.md)
+- [static var valueChangedNotification: UIAccessibility.Notification](./beaccessibility/valuechangednotification.md)
   A notification you post when the value of an element changes.
-- [static var selectionChangedNotification: UIAccessibility.Notification](beaccessibility/selectionchangednotification.md)
+- [static var selectionChangedNotification: UIAccessibility.Notification](./beaccessibility/selectionchangednotification.md)
   A notification you post when the selection inside an element changes.
-- [struct BEAccessibilityContainerType](beaccessibilitycontainertype.md)
+- [struct BEAccessibilityContainerType](./beaccessibilitycontainertype.md)
   Types of containers for an element.
-- [static var menuItem: UIAccessibilityTraits](beaccessibility/menuitem.md)
+- [static var menuItem: UIAccessibilityTraits](./beaccessibility/menuitem.md)
   An accessibility element with a menu interface.
-- [static var popUpButton: UIAccessibilityTraits](beaccessibility/popupbutton.md)
+- [static var popUpButton: UIAccessibilityTraits](./beaccessibility/popupbutton.md)
   An accessibility element with a pop-up button interface.
-- [static var radioButton: UIAccessibilityTraits](beaccessibility/radiobutton.md)
+- [static var radioButton: UIAccessibilityTraits](./beaccessibility/radiobutton.md)
   An accessibility element with a radio button interface.
-- [static var readOnly: UIAccessibilityTraits](beaccessibility/readonly.md)
+- [static var readOnly: UIAccessibilityTraits](./beaccessibility/readonly.md)
   An accessibility element with a read-only interface.
-- [static var visited: UIAccessibilityTraits](beaccessibility/visited.md)
+- [static var visited: UIAccessibilityTraits](./beaccessibility/visited.md)
   An accessibility element that resembles a visited link.
-- [class BEAccessibilityRemoteElement](beaccessibilityremoteelement.md)
+- [class BEAccessibilityRemoteElement](./beaccessibilityremoteelement.md)
   A class that shares the accessibility information of a peripheral process with the main process.
-- [class BEAccessibilityRemoteHostElement](beaccessibilityremotehostelement.md)
+- [class BEAccessibilityRemoteHostElement](./beaccessibilityremotehostelement.md)
   A class that connects the accessibility information of different processes.
-- [struct BEAccessibility](beaccessibility.md)
+- [struct BEAccessibility](./beaccessibility.md)
   A category for accessibility features in the framework.
 
 

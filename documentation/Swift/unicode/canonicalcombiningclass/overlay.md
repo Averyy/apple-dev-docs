@@ -1,7 +1,8 @@
 # overlay
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Marks that overlay a base letter or symbol.
 

@@ -1,7 +1,8 @@
 # highHalf
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A half-length vector made up of the high elements of the vector.
 

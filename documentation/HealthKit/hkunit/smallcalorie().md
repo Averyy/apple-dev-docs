@@ -1,7 +1,8 @@
 # smallCalorie()
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring energy in small calories (cal).
 
@@ -19,6 +20,10 @@ Returns a HealthKit unit for measuring energy in small calories (cal).
 class func smallCalorie() -> Self
 ```
 
+```objc
++ (instancetype) smallCalorieUnit;
+```
+
 #### Discussion
 
 This unit represents the gram calorie, or the amount of energy needed to raise 1 gram of water by 1 degree Celsius (1 cal = 4.1840 J).
@@ -27,15 +32,16 @@ This unit is occasionally used in chemistry and other sciences, but it should no
 
 ## See Also
 
-- [class func joule() -> Self](hkunit/joule.md)
+### Constructing energy units
+- [class func joule() -> Self](./joule%28%29.md)
   Returns a HealthKit unit for measuring energy in joules.
-- [class func jouleUnit(with: HKMetricPrefix) -> Self](hkunit/jouleunit(with:).md)
+- [class func jouleUnit(with: HKMetricPrefix) -> Self](./jouleunit%28with%29.md)
   Returns a HealthKit unit for measuring energy, using joule units with the provided prefix.
-- [class func kilocalorie() -> Self](hkunit/kilocalorie.md)
+- [class func kilocalorie() -> Self](./kilocalorie%28%29.md)
   Returns a HealthKit unit for measuring energy in kilocalories.
-- [class func largeCalorie() -> Self](hkunit/largecalorie.md)
+- [class func largeCalorie() -> Self](./largecalorie%28%29.md)
   Returns a HealthKit unit for measuring energy in large calories (Cal).
-- [class func calorie() -> Self](hkunit/calorie.md)
+- [class func calorie() -> Self](./calorie%28%29.md)
   Returns a HealthKit unit for measuring energy in calories.
 
 

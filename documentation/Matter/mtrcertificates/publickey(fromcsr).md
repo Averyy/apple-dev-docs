@@ -1,7 +1,8 @@
 # publicKey(fromCSR:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 class func publicKey(fromCSR csr: Data) throws -> Data
+```
+
+```objc
++ (NSData *) publicKeyFromCSR:(MTRCSRDERBytes) csr error:(NSError **) error;
 ```
 
 

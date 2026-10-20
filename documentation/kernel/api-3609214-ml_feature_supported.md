@@ -1,14 +1,15 @@
 # ml_feature_supported
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 bool ml_feature_supported(uint64_t feature_bit);
 ```
 

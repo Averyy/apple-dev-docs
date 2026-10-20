@@ -1,7 +1,8 @@
 # isElementFullscreenEnabled
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether a web view can display content full screen.
 
@@ -18,21 +19,26 @@ A Boolean value that indicates whether a web view can display content full scree
 var isElementFullscreenEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isElementFullscreenEnabled) BOOL elementFullscreenEnabled;
+```
+
 #### Discussion
 
-The default value for this preference is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value for this preference is [`false`](../../Swift/false.md).
 
-> ❗ **Important**:  When this value is [`true`](https://developer.apple.com/documentation/swift/true) and a page requests full-screen mode, the system removes the [`WKWebView`](wkwebview.md) from your app’s view hierarchy.
+> ❗ **Important**:  When this value is [`true`](../../Swift/true.md) and a page requests full-screen mode, the system removes the [`WKWebView`](../wkwebview.md) from your app’s view hierarchy.
 
 ## See Also
 
-- [var tabFocusesLinks: Bool](wkpreferences/tabfocuseslinks.md)
+### Setting Behavior Preferences
+- [var tabFocusesLinks: Bool](./tabfocuseslinks.md)
   A Boolean value that indicates whether pressing the tab key changes the focus to links and form controls.
-- [var isTextInteractionEnabled: Bool](wkpreferences/istextinteractionenabled.md)
+- [var isTextInteractionEnabled: Bool](./istextinteractionenabled.md)
   A Boolean value that indicates whether to allow people to select or otherwise interact with text.
-- [var inactiveSchedulingPolicy: WKPreferences.InactiveSchedulingPolicy](wkpreferences/inactiveschedulingpolicy-swift.property.md)
+- [var inactiveSchedulingPolicy: WKPreferences.InactiveSchedulingPolicy](./inactiveschedulingpolicy-swift.property.md)
   A policy you set to specify how a web view that’s not in a window handles tasks.
-- [WKPreferences.InactiveSchedulingPolicy](wkpreferences/inactiveschedulingpolicy-swift.enum.md)
+- [WKPreferences.InactiveSchedulingPolicy](./inactiveschedulingpolicy-swift.enum.md)
   An enumeration that lists policies for how a web view that’s not in a window handles tasks.
 
 

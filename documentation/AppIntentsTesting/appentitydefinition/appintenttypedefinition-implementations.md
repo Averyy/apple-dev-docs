@@ -1,11 +1,12 @@
 # AppIntentTypeDefinition Implementations
 
-**Framework**: App Intents Testing
+**Framework**: App Intents Testing  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func isInstance(AnyAppEntity) throws](appentitydefinition/isinstance(_:).md)
+- [func isInstance(AnyAppEntity) throws](./isinstance%28_%29.md)
   Validates that the provided entity instance matches this entity definition’s type.
 
 

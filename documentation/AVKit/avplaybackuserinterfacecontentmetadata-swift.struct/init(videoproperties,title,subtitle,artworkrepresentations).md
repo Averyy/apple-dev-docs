@@ -1,7 +1,8 @@
 # init(videoProperties:title:subtitle:artworkRepresentations:)
 
 **Framework**: AVKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new metadata object.
 

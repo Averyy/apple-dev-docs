@@ -1,6 +1,8 @@
 # Handling Payment Requests with SiriKit
 
-**Framework**: SiriKit
+**Framework**: SiriKit  
+**Role**: Sample Code  
+**Download**: [HandlingPaymentRequestsWithSiriKit.zip](https://docs-assets.developer.apple.com/published/5460339aebf0/HandlingPaymentRequestsWithSiriKit.zip)
 
 Add an Intent Extension to your app to handle money transfer requests with Siri.
 
@@ -20,7 +22,7 @@ The project consists of three targets:
 - `PaymentsIntentsExtension`, an Intent Extension that integrates with SiriKit to send payments.
 - `PaymentsFramework`, an embedded framework containing shared code needed by both the Intent Extension and the main app.
 
-See [`Creating an Intents App Extension`](creating-an-intents-app-extension.md). for more information on the general process of adding an Intent Extension to your app, including how to enable the Siri capability and configure the `NSExtension` keys in the `Info.plist`.
+See [Creating an Intents App Extension](./creating-an-intents-app-extension.md). for more information on the general process of adding an Intent Extension to your app, including how to enable the Siri capability and configure the `NSExtension` keys in the `Info.plist`.
 
 ##### Configure the Sample Code Project
 
@@ -115,9 +117,9 @@ func resolveCurrencyAmount(for intent: INSendPaymentIntent, with completion: @es
 }
 ```
 
-##### Add Domain Specific Language
+##### Add Domain-Specific Language
 
-Use [`INVocabulary`](https://developer.apple.com/documentation/intents/invocabulary) to aid Siri with recognizing any domain-specific vocabulary users are likely to use in their voice commands. For example, in this sample project payee names are not taken from the user’s contacts but from a predefined list inside the app, so these names are added as additional vocabulary with [`setVocabularyStrings(_:of:)`](https://developer.apple.com/documentation/intents/invocabulary/setvocabularystrings(_:of:)).
+Use [`INVocabulary`](https://developer.apple.com/documentation/intents/invocabulary) to aid Siri with recognizing any domain-specific vocabulary users are likely to use in their voice commands. For example, in this sample project payee names are not taken from the user’s contacts but from a predefined list inside the app, so these names are added as additional vocabulary with [`setVocabularyStrings:ofType:`](https://developer.apple.com/documentation/intents/invocabulary/setvocabularystrings(_:of:)).
 
 ```swift
 // Register names of contacts that may not be in the user's address book.
@@ -125,7 +127,7 @@ let contactNames = Contact.sampleContacts.map { $0.formattedName }
 INVocabulary.shared().setVocabularyStrings(NSOrderedSet(array: contactNames), of: .contactName)
 ```
 
-More information on the types of custom vocabulary that are appropriate to add to Siri can be found in [`Registering Custom Vocabulary with SiriKit`](registering-custom-vocabulary-with-sirikit.md).
+More information on the types of custom vocabulary that are appropriate to add to Siri can be found in [Registering Custom Vocabulary with SiriKit](./registering-custom-vocabulary-with-sirikit.md).
 
 ##### Confirm and Complete the Payment
 
@@ -201,21 +203,22 @@ func handle(intent: INSendPaymentIntent, completion: @escaping (INSendPaymentInt
 
 ## See Also
 
-- [Adding Shortcuts for Wind Down](adding-shortcuts-for-wind-down.md)
+### Sample code
+- [Adding Shortcuts for Wind Down](./adding-shortcuts-for-wind-down.md)
   Reveal your app’s shortcuts inside the Health app.
-- [Booking Rides with SiriKit](booking-rides-with-sirikit.md)
+- [Booking Rides with SiriKit](./booking-rides-with-sirikit.md)
   Add Intents extensions to your app to handle requests to book rides using Siri and Maps.
-- [Handling Workout Requests with SiriKit](handling-workout-requests-with-sirikit.md)
+- [Handling Workout Requests with SiriKit](./handling-workout-requests-with-sirikit.md)
   Add an Intent Extension to your app that handles requests to control workouts with Siri.
-- [Integrating Your App with Siri Event Suggestions](integrating-your-app-with-siri-event-suggestions.md)
+- [Integrating Your App with Siri Event Suggestions](./integrating-your-app-with-siri-event-suggestions.md)
   Donate reservations and provide quick access to event details throughout the system.
-- [Managing Audio with SiriKit](managing-audio-with-sirikit.md)
+- [Managing Audio with SiriKit](./managing-audio-with-sirikit.md)
   Control audio playback and handle requests to add media using SiriKit Media Intents.
-- [Providing Hands-Free App Control with Intents](providing-hands-free-app-control-with-intents.md)
+- [Providing Hands-Free App Control with Intents](./providing-hands-free-app-control-with-intents.md)
   Resolve, confirm, and handle intents without an extension.
-- [Soup Chef: Accelerating App Interactions with Shortcuts](soup-chef-accelerating-app-interactions-with-shortcuts.md)
+- [Soup Chef: Accelerating App Interactions with Shortcuts](./soup-chef-accelerating-app-interactions-with-shortcuts.md)
   Make it easy for people to use Siri with your app by providing shortcuts to your app’s actions.
-- [Soup Chef with App Intents: Migrating custom intents](soup-chef-with-app-intents-migrating-custom-intents.md)
+- [Soup Chef with App Intents: Migrating custom intents](./soup-chef-with-app-intents-migrating-custom-intents.md)
   Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 
 

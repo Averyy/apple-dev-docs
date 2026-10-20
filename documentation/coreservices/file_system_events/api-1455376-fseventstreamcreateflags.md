@@ -9,13 +9,13 @@ Flags that can be passed to the FSEventStreamCreate...() functions to modify the
 ## Topics
 
 ### Constants
-- [var kFSEventStreamCreateFlagNone: Int](kfseventstreamcreateflagnone.md)
-- [var kFSEventStreamCreateFlagUseCFTypes: Int](kfseventstreamcreateflagusecftypes.md)
-- [var kFSEventStreamCreateFlagNoDefer: Int](kfseventstreamcreateflagnodefer.md)
-- [var kFSEventStreamCreateFlagWatchRoot: Int](kfseventstreamcreateflagwatchroot.md)
-- [var kFSEventStreamCreateFlagIgnoreSelf: Int](kfseventstreamcreateflagignoreself.md)
-- [var kFSEventStreamCreateFlagFileEvents: Int](kfseventstreamcreateflagfileevents.md)
-- [var kFSEventStreamCreateFlagMarkSelf: Int](kfseventstreamcreateflagmarkself.md)
+- [var kFSEventStreamCreateFlagNone: Int](../kfseventstreamcreateflagnone.md)
+- [var kFSEventStreamCreateFlagUseCFTypes: Int](../kfseventstreamcreateflagusecftypes.md)
+- [var kFSEventStreamCreateFlagNoDefer: Int](../kfseventstreamcreateflagnodefer.md)
+- [var kFSEventStreamCreateFlagWatchRoot: Int](../kfseventstreamcreateflagwatchroot.md)
+- [var kFSEventStreamCreateFlagIgnoreSelf: Int](../kfseventstreamcreateflagignoreself.md)
+- [var kFSEventStreamCreateFlagFileEvents: Int](../kfseventstreamcreateflagfileevents.md)
+- [var kFSEventStreamCreateFlagMarkSelf: Int](../kfseventstreamcreateflagmarkself.md)
 
 
 ---

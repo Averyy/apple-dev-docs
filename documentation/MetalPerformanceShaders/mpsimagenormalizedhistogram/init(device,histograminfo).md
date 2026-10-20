@@ -1,7 +1,8 @@
 # init(device:histogramInfo:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 9.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init(device: any MTLDevice, histogramInfo: UnsafePointer<MPSImageHistogramInfo>)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device histogramInfo:(const MPSImageHistogramInfo *) histogramInfo;
 ```
 
 

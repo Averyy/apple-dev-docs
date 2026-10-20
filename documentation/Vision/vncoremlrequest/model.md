@@ -1,7 +1,8 @@
 # model
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model to base the image analysis request on.
 
@@ -19,17 +20,22 @@ The model to base the image analysis request on.
 var model: VNCoreMLModel { get }
 ```
 
+```objc
+@property (nonatomic, readonly) VNCoreMLModel * model;
+```
+
 #### Discussion
 
-This object wraps a [`Core ML`](https://developer.apple.com/documentation/coreml) model.
+This object wraps a [Core ML](../../CoreML/CoreML.md) model.
 
 ## See Also
 
-- [convenience init(model: VNCoreMLModel)](vncoremlrequest/init(model:).md)
+### Initializing with a Core ML Model
+- [convenience init(model: VNCoreMLModel)](./init%28model%29.md)
   Creates a model container to use with an image analysis request based on the model you provide.
-- [init(model: VNCoreMLModel, completionHandler: VNRequestCompletionHandler?)](vncoremlrequest/init(model:completionhandler:).md)
+- [init(model: VNCoreMLModel, completionHandler: VNRequestCompletionHandler?)](./init%28model,completionhandler%29.md)
   Creates a model container to use with an image analysis request based on the model you provide, with an optional completion handler.
-- [class VNCoreMLModel](vncoremlmodel.md)
+- [class VNCoreMLModel](../vncoremlmodel.md)
   A container for the model to use with Vision requests.
 
 

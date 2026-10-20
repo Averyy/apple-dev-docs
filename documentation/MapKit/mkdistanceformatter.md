@@ -1,7 +1,8 @@
 # MKDistanceFormatter
 
 **Framework**: MapKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A utility object that converts between a geographic distance and a string-based expression of that distance.
 
@@ -20,6 +21,10 @@ A utility object that converts between a geographic distance and a string-based 
 class MKDistanceFormatter
 ```
 
+```objc
+@interface MKDistanceFormatter : NSFormatter
+```
+
 #### Overview
 
 Use a distance formatter to display distances to the user or to parse user-specified text to obtain a numerical value for a distance. When formatting strings containing distances, a distance formatter object takes into account the user’s locale and language settings. You can also specify a custom locale or custom units for any distances that you format.
@@ -27,47 +32,48 @@ Use a distance formatter to display distances to the user or to parse user-speci
 ## Topics
 
 ### Converting distances
-- [func string(fromDistance: CLLocationDistance) -> String](mkdistanceformatter/string(fromdistance:).md)
+- [func string(fromDistance: CLLocationDistance) -> String](./mkdistanceformatter/string%28fromdistance%29.md)
   Creates a string representation of the specified distance.
-- [func distance(from: String) -> CLLocationDistance](mkdistanceformatter/distance(from:).md)
+- [func distance(from: String) -> CLLocationDistance](./mkdistanceformatter/distance%28from%29.md)
   Returns the distance value parsed from the specified string.
 ### Specifying the format
-- [var locale: Locale!](mkdistanceformatter/locale.md)
+- [var locale: Locale!](./mkdistanceformatter/locale.md)
   The locale to use when formatting strings.
-- [var units: MKDistanceFormatter.Units](mkdistanceformatter/units-swift.property.md)
+- [var units: MKDistanceFormatter.Units](./mkdistanceformatter/units-swift.property.md)
   The measuring system — imperial or metric — to use for units.
-- [MKDistanceFormatter.Units](mkdistanceformatter/units-swift.enum.md)
+- [MKDistanceFormatter.Units](./mkdistanceformatter/units-swift.enum.md)
   Constants that reflect the type of units to use in the string.
-- [var unitStyle: MKDistanceFormatter.DistanceUnitStyle](mkdistanceformatter/unitstyle.md)
+- [var unitStyle: MKDistanceFormatter.DistanceUnitStyle](./mkdistanceformatter/unitstyle.md)
   The preferred style for units.
-- [MKDistanceFormatter.DistanceUnitStyle](mkdistanceformatter/distanceunitstyle.md)
+- [MKDistanceFormatter.DistanceUnitStyle](./mkdistanceformatter/distanceunitstyle.md)
   Constants that indicate the format style to use for strings.
 
 ## Relationships
 
 ### Inherits From
-- [Formatter](../foundation/formatter.md)
+- [Formatter](../Foundation/formatter.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [struct MKCoordinateRegion](mkcoordinateregion.md)
+### Map coordinates
+- [struct MKCoordinateRegion](./mkcoordinateregion.md)
   A rectangular geographic region that centers around a specific latitude and longitude.
-- [struct MKCoordinateSpan](mkcoordinatespan.md)
+- [struct MKCoordinateSpan](./mkcoordinatespan.md)
   The width and height of a map region.
-- [struct MKMapRect](mkmaprect.md)
+- [struct MKMapRect](./mkmaprect.md)
   A rectangular area on a two-dimensional map projection.
-- [struct MKMapPoint](mkmappoint.md)
+- [struct MKMapPoint](./mkmappoint.md)
   A point on a two-dimensional map projection.
-- [struct MKMapSize](mkmapsize.md)
+- [struct MKMapSize](./mkmapsize.md)
   Width and height information on a two-dimensional map projection.
 
 

@@ -1,7 +1,8 @@
 # ProcessCapability.Grant
 
 **Framework**: BrowserEngineKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents the provision of a capability.
 
@@ -18,25 +19,26 @@ struct Grant
 
 ## Mentions
 
-- [Managing the browser extension life cycle](managing-the-browser-extension-lifecycle.md)
+- [Managing the browser extension life cycle](../managing-the-browser-extension-lifecycle.md)
 
 ## Topics
 
 ### Testing and changing validity
-- [var isValid: Bool](processcapability/grant/isvalid.md)
+- [var isValid: Bool](./grant/isvalid.md)
   A Boolean value that indicates whether the system honors a granted capability for the browser extension process.
-- [func invalidate()](processcapability/grant/invalidate.md)
+- [func invalidate()](./grant/invalidate%28%29.md)
   Invalidates the grant, removing the capability from the process it was granted to.
 
 ## See Also
 
-- [ProcessCapability.background](processcapability/background.md)
+### Granting capabilities
+- [ProcessCapability.background](./background.md)
   A process capability for work in the background.
-- [ProcessCapability.foreground](processcapability/foreground.md)
+- [ProcessCapability.foreground](./foreground.md)
   A process capability for work in the foreground.
-- [ProcessCapability.suspended](processcapability/suspended.md)
+- [ProcessCapability.suspended](./suspended.md)
   A process capability that grants residency in a suspended state.
-- [case mediaPlaybackAndCapture(environment: MediaEnvironment)](processcapability/mediaplaybackandcapture(environment:).md)
+- [case mediaPlaybackAndCapture(environment: MediaEnvironment)](./mediaplaybackandcapture%28environment%29.md)
   The helper extension process may access media hardware required for media capture and playback.
 
 

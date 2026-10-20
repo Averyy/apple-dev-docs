@@ -1,13 +1,16 @@
 # JPKIPassContents.Error.incorrectUserAuthentication
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The provided credential authentication request wasn’t accepted.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
+- iOS 18.0+ - Deprecated in 18.4
+- iPadOS 18.0+ - Deprecated in 18.4
+
+> **Deprecated**: Use userAuthenticationFailed(remainingRetryAttempts: Int) instead
 
 ## Declaration
 
@@ -21,13 +24,14 @@ For example, this error occurs if the PIN provided is incorrect.
 
 ## See Also
 
-- [JPKIPassContents.Error.appNotForeground](jpkipasscontents/error/appnotforeground.md)
+### Error cases
+- [JPKIPassContents.Error.appNotForeground](./appnotforeground.md)
   The calling app isn’t in the foreground.
-- [JPKIPassContents.Error.biometricUnavailable](jpkipasscontents/error/biometricunavailable.md)
+- [JPKIPassContents.Error.biometricUnavailable](./biometricunavailable.md)
   Biometric authorization isn’t available.
-- [JPKIPassContents.Error.invalidInput](jpkipasscontents/error/invalidinput.md)
+- [JPKIPassContents.Error.invalidInput](./invalidinput.md)
   The PIN or password doesn’t meet the specified conditions.
-- [JPKIPassContents.Error.resourceNotAvailable](jpkipasscontents/error/resourcenotavailable.md)
+- [JPKIPassContents.Error.resourceNotAvailable](./resourcenotavailable.md)
   The system resouce is currently unavailable.
 
 

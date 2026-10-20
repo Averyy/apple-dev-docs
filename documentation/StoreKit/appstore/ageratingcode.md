@@ -1,7 +1,8 @@
 # ageRatingCode
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The current age rating code for your app.
 
@@ -40,7 +41,7 @@ func getAgeRatingCode() async -> Int? {
 }
 ```
 
-If your app’s age rating has changed, consider informing parents or guardians by using the [`Significant Change API`](https://developer.apple.comhttps://developer.apple.com/documentation/PermissionKit/SignificantAppUpdateTopic).
+If your app’s age rating has changed, consider informing parents or guardians by using the [Significant Change API](../../PermissionKit/significantappupdatetopic.md).
 
 
 ---

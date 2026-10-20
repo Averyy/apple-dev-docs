@@ -1,7 +1,8 @@
 # preferredContentMode
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content mode for the web view to use when it loads and renders a webpage.
 

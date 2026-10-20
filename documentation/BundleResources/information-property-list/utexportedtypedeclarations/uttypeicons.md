@@ -1,7 +1,8 @@
 # UTTypeIcons
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A dictionary that describes how the system represents this type as an icon or symbol.
 
@@ -11,9 +12,10 @@ A dictionary that describes how the system represents this type as an icon or sy
 - macOS 11.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `UTTypeIcons` (Icons)
+- **Type**: dictionary
 
 #### Discussion
 
@@ -24,31 +26,32 @@ All sub-keys are optional. If you omit a sub-key, the system substitutes a defau
 ## Topics
 
 ### Document icon resources
-- [UTTypeIconBackgroundName](information-property-list/utexportedtypedeclarations/uttypeicons/uttypeiconbackgroundname.md)
+- [UTTypeIconBackgroundName](./uttypeicons/uttypeiconbackgroundname.md)
   The name of an icon set in your app’s asset catalog to use as the background fill of the document icon.
-- [UTTypeIconBadgeName](information-property-list/utexportedtypedeclarations/uttypeicons/uttypeiconbadgename.md)
+- [UTTypeIconBadgeName](./uttypeicons/uttypeiconbadgename.md)
   The name of an icon set in your app’s asset catalog to use as the center badge image of the document icon.
-- [UTTypeIconText](information-property-list/utexportedtypedeclarations/uttypeicons/uttypeicontext.md)
+- [UTTypeIconText](./uttypeicons/uttypeicontext.md)
   A short string the system renders at the bottom edge of the document icon.
 ### Symbol representation
-- [UTTypeSymbolName](information-property-list/utexportedtypedeclarations/uttypeicons/uttypesymbolname.md)
+- [UTTypeSymbolName](./uttypeicons/uttypesymbolname.md)
   The name of an SF Symbol that represents this type.
 
 ## See Also
 
-- [UTTypeConformsTo](information-property-list/utexportedtypedeclarations/uttypeconformsto.md)
+### Property List Keys
+- [UTTypeConformsTo](./uttypeconformsto.md)
   The Uniform Type Identifier types that this type conforms to.
-- [UTTypeDescription](information-property-list/utexportedtypedeclarations/uttypedescription.md)
+- [UTTypeDescription](./uttypedescription.md)
   A description for this type.
-- [UTTypeIconFile](information-property-list/utexportedtypedeclarations/uttypeiconfile.md)
+- [UTTypeIconFile](./uttypeiconfile.md)
   The bundle icon resource to associate with this type.
-- [UTTypeIconFiles](information-property-list/utexportedtypedeclarations/uttypeiconfiles.md)
+- [UTTypeIconFiles](./uttypeiconfiles.md)
   One or more bundle icon resources to associate with this type.
-- [UTTypeIdentifier](information-property-list/utexportedtypedeclarations/uttypeidentifier.md)
+- [UTTypeIdentifier](./uttypeidentifier.md)
   The Uniform Type Identifier to assign to this type.
-- [UTTypeReferenceURL](information-property-list/utexportedtypedeclarations/uttypereferenceurl.md)
+- [UTTypeReferenceURL](./uttypereferenceurl.md)
   The webpage for a reference document that describes this type.
-- [UTTypeTagSpecification](information-property-list/utexportedtypedeclarations/uttypetagspecification.md)
+- [UTTypeTagSpecification](./uttypetagspecification.md)
   A dictionary defining one or more equivalent type identifiers.
 
 

@@ -1,7 +1,8 @@
 # SetControlValue
 
 **Framework**: AudioDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the value of the slider control.
 
@@ -10,13 +11,13 @@ Sets the value of the slider control.
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetControlValue(uint32_t in_control_value);
 ```
 
 #### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. For a list of error codes, see [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes).
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. For a list of error codes, see [Error Codes](../../DriverKit/error-codes.md).
 
 #### Discussion
 
@@ -30,13 +31,14 @@ This method synchronizes by using the work queue created by the object.
 
 ## See Also
 
-- [GetControlValue](iouseraudioslidercontrol/getcontrolvalue.md)
+### Accessing the Value
+- [GetControlValue](./getcontrolvalue.md)
   Gets the value of the slider control.
-- [SetRange](iouseraudioslidercontrol/setrange.md)
+- [SetRange](./setrange.md)
   Sets the range of possible values for the slider.
-- [GetRange](iouseraudioslidercontrol/getrange.md)
+- [GetRange](./getrange.md)
   Gets the range of possible values for the slider.
-- [IOUserAudioSliderRange](iouseraudiosliderrange.md)
+- [IOUserAudioSliderRange](../iouseraudiosliderrange.md)
   A type that indicates minimum and maximum values for slider controls.
 
 

@@ -1,7 +1,8 @@
 # peripheralManager(_:central:didUnsubscribeFrom:)
 
 **Framework**: Core Bluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that a remote central device unsubscribed from a characteristic’s value.
 
@@ -20,6 +21,10 @@ Tells the delegate that a remote central device unsubscribed from a characterist
 optional func peripheralManager(_ peripheral: CBPeripheralManager, central: CBCentral, didUnsubscribeFrom characteristic: CBCharacteristic)
 ```
 
+```objc
+- (void) peripheralManager:(CBPeripheralManager *) peripheral central:(CBCentral *) central didUnsubscribeFromCharacteristic:(CBCharacteristic *) characteristic;
+```
+
 #### Discussion
 
 Core Bluetooth calls this method when a remote central device unsubscribes from the value of one of the local peripheral’s characteristics, by disabling notifications or indications on the characteristic’s value. When called, stop sending the subscribed central updates of updates to the characteristic’s value.
@@ -32,9 +37,10 @@ Core Bluetooth calls this method when a remote central device unsubscribes from 
 
 ## See Also
 
-- [func peripheralManager(CBPeripheralManager, central: CBCentral, didSubscribeTo: CBCharacteristic)](cbperipheralmanagerdelegate/peripheralmanager(_:central:didsubscribeto:).md)
+### Monitoring Subscriptions to Characteristic Values
+- [func peripheralManager(CBPeripheralManager, central: CBCentral, didSubscribeTo: CBCharacteristic)](./peripheralmanager%28_,central,didsubscribeto%29.md)
   Tells the delegate that a remote central device subscribed to a characteristic’s value.
-- [func peripheralManagerIsReady(toUpdateSubscribers: CBPeripheralManager)](cbperipheralmanagerdelegate/peripheralmanagerisready(toupdatesubscribers:).md)
+- [func peripheralManagerIsReady(toUpdateSubscribers: CBPeripheralManager)](./peripheralmanagerisready%28toupdatesubscribers%29.md)
   Tells the delegate that a local peripheral device is ready to send characteristic value updates.
 
 

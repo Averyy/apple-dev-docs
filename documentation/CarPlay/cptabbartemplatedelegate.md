@@ -1,7 +1,8 @@
 # CPTabBarTemplateDelegate
 
 **Framework**: CarPlay  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The methods an object implements to act as the delegate for a tab bar template.
 
@@ -17,6 +18,10 @@ The methods an object implements to act as the delegate for a tab bar template.
 protocol CPTabBarTemplateDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol CPTabBarTemplateDelegate <NSObject>
+```
+
 #### Overview
 
 You use the `CPTabBarTemplateDelegate` protocol to respond to a tab bar template’s events. The protocol defines methods that the template calls in response to these events, and your implementation provides the appropriate behavior when the events occur. For example, reloading a tab’s contents when the user selects it to make sure it’s displaying the latest data.
@@ -24,17 +29,18 @@ You use the `CPTabBarTemplateDelegate` protocol to respond to a tab bar template
 ## Topics
 
 ### Managing the Selected Template
-- [func tabBarTemplate(CPTabBarTemplate, didSelect: CPTemplate)](cptabbartemplatedelegate/tabbartemplate(_:didselect:).md)
+- [func tabBarTemplate(CPTabBarTemplate, didSelect: CPTemplate)](./cptabbartemplatedelegate/tabbartemplate%28_,didselect%29.md)
   Tells the delegate when the tab bar selects the specified template.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any CPTabBarTemplateDelegate)?](cptabbartemplate/delegate.md)
+### Managing Tab Bar Interactions
+- [var delegate: (any CPTabBarTemplateDelegate)?](./cptabbartemplate/delegate.md)
   The object that acts as the template’s delegate.
 
 

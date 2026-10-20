@@ -1,14 +1,15 @@
 # iOS & iPadOS 18.5 Release Notes
 
-**Framework**: iOS & iPadOS Release Notes
+**Framework**: iOS & iPadOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 18.5 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18.5. The SDK comes bundled with Xcode 16.4. For information on the compatibility requirements for Xcode 16.4, see [`Xcode 16.4 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-16_4-release-notes).
+The iOS & iPadOS 18.5 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18.5. The SDK comes bundled with Xcode 16.4. For information on the compatibility requirements for Xcode 16.4, see [Xcode 16.4 Release Notes](../Xcode-Release-Notes/xcode-16_4-release-notes.md).
 
-##### Apple Vision Pro App
+##### Apple Vision Pro app
 
 ###### Resolved Issues
 
@@ -20,7 +21,7 @@ The iOS & iPadOS 18.5 SDK provides support to develop apps for iPhone and iPad r
 
 - Broadcast extensions now have a higher per-process memory limit. This should enable capturing & streaming content at higher quality, if the system resources are available.  (144104867)
 
-##### Hvf
+##### hvf
 
 ###### Resolved Issues
 
@@ -38,7 +39,7 @@ The iOS & iPadOS 18.5 SDK provides support to develop apps for iPhone and iPad r
 
 - Siri requests to play a song in Apple Music might fail across multiple platforms.  (149392508)
 
-##### Storekit
+##### StoreKit
 
 ###### Resolved Issues
 
@@ -52,17 +53,18 @@ The iOS & iPadOS 18.5 SDK provides support to develop apps for iPhone and iPad r
 
 ## See Also
 
-- [iOS & iPadOS 18.6 Release Notes](ios-ipados-18_6-release-notes.md)
+### iOS & iPadOS 18
+- [iOS & iPadOS 18.6 Release Notes](./ios-ipados-18_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.4 Release Notes](ios-ipados-18_4-release-notes.md)
+- [iOS & iPadOS 18.4 Release Notes](./ios-ipados-18_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.3 Release Notes](ios-ipados-18_3-release-notes.md)
+- [iOS & iPadOS 18.3 Release Notes](./ios-ipados-18_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.2 Release Notes](ios-ipados-18_2-release-notes.md)
+- [iOS & iPadOS 18.2 Release Notes](./ios-ipados-18_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18.1 Release Notes](ios-ipados-18_1-release-notes.md)
+- [iOS & iPadOS 18.1 Release Notes](./ios-ipados-18_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [iOS & iPadOS 18 Release Notes](ios-ipados-18-release-notes.md)
+- [iOS & iPadOS 18 Release Notes](./ios-ipados-18-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

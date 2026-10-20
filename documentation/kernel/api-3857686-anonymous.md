@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned long {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned long {
 ## Topics
 
 ### Constants
-- [IOUSBHostCIDeviceUpdateCommandData1DescriptorAddress](3857686-anonymous/iousbhostcideviceupdatecommanddata1descriptoraddress.md)
-- [IOUSBHostCIDeviceUpdateCommandData1DescriptorAddressPhase](3857686-anonymous/iousbhostcideviceupdatecommanddata1descriptoraddressphase.md)
+- [IOUSBHostCIDeviceUpdateCommandData1DescriptorAddress](./api-3857686-anonymous/iousbhostcideviceupdatecommanddata1descriptoraddress.md)
+- [IOUSBHostCIDeviceUpdateCommandData1DescriptorAddressPhase](./api-3857686-anonymous/iousbhostcideviceupdatecommanddata1descriptoraddressphase.md)
 
 
 ---

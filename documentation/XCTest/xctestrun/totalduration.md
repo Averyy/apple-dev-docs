@@ -1,7 +1,8 @@
 # totalDuration
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of seconds that elapse between when the run starts and when it stops.
 
@@ -11,13 +12,18 @@ The number of seconds that elapse between when the run starts and when it stops.
 var totalDuration: TimeInterval { get }
 ```
 
+```objc
+@property (readonly) NSTimeInterval totalDuration;
+```
+
 ## See Also
 
-- [var startDate: Date?](xctestrun/startdate.md)
+### Tracking Test Durations
+- [var startDate: Date?](./startdate.md)
   The date and time when the test run started, or no value if the test hasn’t run.
-- [var stopDate: Date?](xctestrun/stopdate.md)
+- [var stopDate: Date?](./stopdate.md)
   The date and time when the test run stopped, or no value if the test hasn’t run.
-- [var testDuration: TimeInterval](xctestrun/testduration.md)
+- [var testDuration: TimeInterval](./testduration.md)
   The number of seconds that elapse between when the run starts and when it stops.
 
 

@@ -1,7 +1,8 @@
 # init(image:withName:options:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Asynchronously creates a texture resource from an in-memory Core Graphics image.
 
@@ -20,9 +21,16 @@ Asynchronously creates a texture resource from an in-memory Core Graphics image.
 @preconcurrency convenience init(image cgImage: CGImage, withName resourceName: String? = nil, options: TextureResource.CreateOptions) async throws
 ```
 
+**Other overloads**:
+
+```swift
+@MainActor
+@preconcurrency convenience init(image cgImage: CGImage, withName resourceName: String? = nil, options: TextureResource.CreateOptions) throws
+```
+
 #### Discussion
 
-This method creates a texture resource from an existing [`CGImage`](https://developer.apple.com/documentation/coregraphics/cgimage) with specific options.
+This method creates a texture resource from an existing [`CGImage`](../../CoreGraphics/cgimage.md) with specific options.
 
 RealityKit uses the resource name to identify resources, and to match texture resources between networked peers. Specify a unique name for each texture resource you load or generate.
 

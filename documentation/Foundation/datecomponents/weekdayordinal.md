@@ -1,7 +1,8 @@
 # weekdayOrdinal
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A weekday ordinal or count of weekday ordinals.
 
@@ -28,13 +29,14 @@ Weekday ordinal units represent the position of the weekday within the next larg
 
 ## See Also
 
-- [var weekOfMonth: Int?](datecomponents/weekofmonth.md)
+### Accessing Weeks and Days
+- [var weekOfMonth: Int?](./weekofmonth.md)
   A week of the month or a count of weeks of the month.
-- [var weekOfYear: Int?](datecomponents/weekofyear.md)
+- [var weekOfYear: Int?](./weekofyear.md)
   A week of the year or count of the weeks of the year.
-- [var weekday: Int?](datecomponents/weekday.md)
+- [var weekday: Int?](./weekday.md)
   A weekday or count of weekdays.
-- [var day: Int?](datecomponents/day.md)
+- [var day: Int?](./day.md)
   A day or count of days.
 
 

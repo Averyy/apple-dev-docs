@@ -1,7 +1,8 @@
 # errSecUnsupportedLocality
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The locality is not supported.
 
@@ -18,6 +19,10 @@ The locality is not supported.
 
 ```swift
 var errSecUnsupportedLocality: OSStatus { get }
+```
+
+```c
+errSecUnsupportedLocality
 ```
 
 

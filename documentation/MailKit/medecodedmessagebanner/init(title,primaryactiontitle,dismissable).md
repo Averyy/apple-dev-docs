@@ -1,7 +1,8 @@
 # init(title:primaryActionTitle:dismissable:)
 
 **Framework**: MailKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 init(title: String, primaryActionTitle: String, dismissable: Bool)
+```
+
+```objc
+- (instancetype) initWithTitle:(NSString *) title primaryActionTitle:(NSString *) primaryActionTitle dismissable:(BOOL) dismissable;
 ```
 
 

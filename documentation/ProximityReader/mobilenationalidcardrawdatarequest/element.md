@@ -1,7 +1,8 @@
 # MobileNationalIDCardRawDataRequest.Element
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type representing an element that you can request from a mobile national ID card.
 
@@ -19,43 +20,44 @@ struct Element
 ## Topics
 
 ### Type Properties
-- [static let address: MobileNationalIDCardRawDataRequest.Element](mobilenationalidcardrawdatarequest/element/address.md)
+- [static let address: MobileNationalIDCardRawDataRequest.Element](./element/address.md)
   The mobile national ID card holder’s address on record with the issuer.
-- [static let age: MobileNationalIDCardRawDataRequest.Element](mobilenationalidcardrawdatarequest/element/age.md)
+- [static let age: MobileNationalIDCardRawDataRequest.Element](./element/age.md)
   The mobile national ID card holder’s age in years.
-- [static let dateOfBirth: MobileNationalIDCardRawDataRequest.Element](mobilenationalidcardrawdatarequest/element/dateofbirth.md)
+- [static let dateOfBirth: MobileNationalIDCardRawDataRequest.Element](./element/dateofbirth.md)
   The date of birth of the mobile national ID card holder.
-- [static let documentNumber: MobileNationalIDCardRawDataRequest.Element](mobilenationalidcardrawdatarequest/element/documentnumber.md)
+- [static let documentNumber: MobileNationalIDCardRawDataRequest.Element](./element/documentnumber.md)
   The document’s number, as defined by the document’s issuing authority.
-- [static let familyName: MobileNationalIDCardRawDataRequest.Element](mobilenationalidcardrawdatarequest/element/familyname.md)
+- [static let familyName: MobileNationalIDCardRawDataRequest.Element](./element/familyname.md)
   The mobile national ID card holder’s family name or last name.
-- [static let givenName: MobileNationalIDCardRawDataRequest.Element](mobilenationalidcardrawdatarequest/element/givenname.md)
+- [static let givenName: MobileNationalIDCardRawDataRequest.Element](./element/givenname.md)
   The mobile national ID card holder’s given name or first name.
-- [static let name: MobileNationalIDCardRawDataRequest.Element](mobilenationalidcardrawdatarequest/element/name.md)
+- [static let name: MobileNationalIDCardRawDataRequest.Element](./element/name.md)
   The mobile national ID card holder’s name.
-- [static let portrait: MobileNationalIDCardRawDataRequest.Element](mobilenationalidcardrawdatarequest/element/portrait.md)
+- [static let portrait: MobileNationalIDCardRawDataRequest.Element](./element/portrait.md)
   The portrait of the mobile national ID card holder on record with the issuer.
-- [static let sex: MobileNationalIDCardRawDataRequest.Element](mobilenationalidcardrawdatarequest/element/sex.md)
+- [static let sex: MobileNationalIDCardRawDataRequest.Element](./element/sex.md)
   The mobile national ID card holder’s sex.
 ### Type Methods
-- [static func ageAtLeast(Int) -> MobileNationalIDCardRawDataRequest.Element](mobilenationalidcardrawdatarequest/element/ageatleast(_:).md)
+- [static func ageAtLeast(Int) -> MobileNationalIDCardRawDataRequest.Element](./element/ageatleast%28_%29.md)
   A Boolean value that indicates whether the mobile national ID card holder’s age is at least the given age.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var region: Locale.Region](mobilenationalidcardrawdatarequest/region.md)
+### Configuring the request details
+- [var region: Locale.Region](./region.md)
   The region of the document you’re requesting.
-- [var retainedElements: [MobileNationalIDCardRawDataRequest.Element]](mobilenationalidcardrawdatarequest/retainedelements.md)
+- [var retainedElements: [MobileNationalIDCardRawDataRequest.Element]](./retainedelements.md)
   The document elements you’re requesting and intend to retain for an indefinite period of time.
-- [var nonRetainedElements: [MobileNationalIDCardRawDataRequest.Element]](mobilenationalidcardrawdatarequest/nonretainedelements.md)
+- [var nonRetainedElements: [MobileNationalIDCardRawDataRequest.Element]](./nonretainedelements.md)
   The document elements you’re requesting and intend to retain no longer than is necessary to process the result in realtime.
 
 

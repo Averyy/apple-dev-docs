@@ -1,7 +1,8 @@
 # aeBuildSyntaxBadData
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Bad data was found inside a variable argument list.
 

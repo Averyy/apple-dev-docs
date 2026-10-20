@@ -1,7 +1,8 @@
 # GCControllerPlayerIndex.index2
 
 **Framework**: Game Controller  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Player two is using the controller.
 
@@ -19,19 +20,24 @@ Player two is using the controller.
 case index2
 ```
 
+```c
+GCControllerPlayerIndex2
+```
+
 ## Mentions
 
-- [Discovering game controllers](discovering-game-controllers.md)
+- [Discovering game controllers](../discovering-game-controllers.md)
 
 ## See Also
 
-- [GCControllerPlayerIndex.indexUnset](gccontrollerplayerindex/indexunset.md)
+### Player indices
+- [GCControllerPlayerIndex.indexUnset](./indexunset.md)
   The default index for a player on a controller.
-- [GCControllerPlayerIndex.index1](gccontrollerplayerindex/index1.md)
+- [GCControllerPlayerIndex.index1](./index1.md)
   Player one is using the controller.
-- [GCControllerPlayerIndex.index3](gccontrollerplayerindex/index3.md)
+- [GCControllerPlayerIndex.index3](./index3.md)
   Player three is using the controller.
-- [GCControllerPlayerIndex.index4](gccontrollerplayerindex/index4.md)
+- [GCControllerPlayerIndex.index4](./index4.md)
   Player four is using the controller.
 
 

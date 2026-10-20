@@ -1,7 +1,8 @@
 # paymentSummaryItems
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of payment summary item objects that summarize the amount of the payment.
 
@@ -19,11 +20,15 @@ An array of payment summary item objects that summarize the amount of the paymen
 var paymentSummaryItems: [PKPaymentSummaryItem] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<PKPaymentSummaryItem *> * paymentSummaryItems;
+```
+
 #### Discussion
 
 A typical transaction includes separate summary items for the order total, shipping cost, tax, and the grand total. See the following code for an example.
 
-Apple Pay uses the last item in the `paymentSummaryItems` array as the grand total for the purchase shown in the example in [`paymentSummaryItems`](pkpaymentrequest/paymentsummaryitems.md). The [`PKPaymentAuthorizationViewController`](pkpaymentauthorizationviewcontroller.md) class displays this item differently than the rest of the summary items. As a result, there are additional requirements placed on both its amount and its label.
+Apple Pay uses the last item in the `paymentSummaryItems` array as the grand total for the purchase shown in the example in [`paymentSummaryItems`](./paymentsummaryitems.md). The [`PKPaymentAuthorizationViewController`](../pkpaymentauthorizationviewcontroller.md) class displays this item differently than the rest of the summary items. As a result, there are additional requirements placed on both its amount and its label.
 
 - Set the grand total amount to the sum of all the other items in the array. This amount must be greater than or equal to zero.
 - Set the grand total label to the name of your company. This label represents the person or company receiving payment.
@@ -32,9 +37,9 @@ Your payment processor might have additional requirements, such as a minimum or 
 
 In iOS 15 and later you can create three different types of payment summary items:
 
-- Use a [`PKPaymentSummaryItem`](pkpaymentsummaryitem.md) for an immediate payment.
-- Use a [`PKDeferredPaymentSummaryItem`](pkdeferredpaymentsummaryitem.md) for a payment that occurs in the future, such as a pre-order.
-- Use a [`PKRecurringPaymentSummaryItem`](pkrecurringpaymentsummaryitem.md) for a payment that occurs more than once, such as a subscription.
+- Use a [`PKPaymentSummaryItem`](../pkpaymentsummaryitem.md) for an immediate payment.
+- Use a [`PKDeferredPaymentSummaryItem`](../pkdeferredpaymentsummaryitem.md) for a payment that occurs in the future, such as a pre-order.
+- Use a [`PKRecurringPaymentSummaryItem`](../pkrecurringpaymentsummaryitem.md) for a payment that occurs more than once, such as a subscription.
 
 > **Note**:  In versions of iOS prior to version 12.0 and watchOS prior to version 5.0, the amount of the grand total must be greater than zero.
 
@@ -61,13 +66,15 @@ request.paymentSummaryItems = self.summaryItems;
 
 ## See Also
 
-- [convenience init(label: String, amount: NSDecimalNumber)](pkpaymentsummaryitem/init(label:amount:).md)
+### Related Documentation
+- [convenience init(label: String, amount: NSDecimalNumber)](../pkpaymentsummaryitem/init%28label,amount%29.md)
   Initializes and returns a summary item with the given label and amount.
-- [class PKPaymentSummaryItem](pkpaymentsummaryitem.md)
+### Setting the payment summary items
+- [class PKPaymentSummaryItem](../pkpaymentsummaryitem.md)
   An object that defines a summary item in a payment request, taxes, discounts, shipping, a grand total, and the like.
-- [class PKRecurringPaymentSummaryItem](pkrecurringpaymentsummaryitem.md)
+- [class PKRecurringPaymentSummaryItem](../pkrecurringpaymentsummaryitem.md)
   An object that defines a summary item for a payment that occurs repeatedly at a specified interval, such as a subscription.
-- [class PKDeferredPaymentSummaryItem](pkdeferredpaymentsummaryitem.md)
+- [class PKDeferredPaymentSummaryItem](../pkdeferredpaymentsummaryitem.md)
   An object that defines a summary item for a payment that occurs at a later date, such as a pre-order.
 
 

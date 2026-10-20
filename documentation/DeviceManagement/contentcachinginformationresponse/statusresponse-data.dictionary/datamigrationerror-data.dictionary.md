@@ -1,7 +1,8 @@
 # ContentCachingInformationResponse.StatusResponse.DataMigrationError
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 A dictionary that describes a data migration error.
 
@@ -10,14 +11,14 @@ A dictionary that describes a data migration error.
 
 ## Declaration
 
-```swift
+```
 object ContentCachingInformationResponse.StatusResponse.DataMigrationError
 ```
 
 ## Topics
 
 ### Objects
-- [object ContentCachingInformationResponse.StatusResponse.DataMigrationError.UserInfo](contentcachinginformationresponse/statusresponse-data.dictionary/datamigrationerror-data.dictionary/userinfo-data.dictionary.md)
+- [object ContentCachingInformationResponse.StatusResponse.DataMigrationError.UserInfo](./datamigrationerror-data.dictionary/userinfo-data.dictionary.md)
   A dictionary that contains additional information about a data migration error.
 
 ## Properties
@@ -28,15 +29,16 @@ object ContentCachingInformationResponse.StatusResponse.DataMigrationError
 
 ## See Also
 
-- [object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRanges](contentcachinginformationresponse/statusresponse-data.dictionary/alertsforpeerfilterranges-data.dictionary.md)
+### Objects
+- [object ContentCachingInformationResponse.StatusResponse.AlertsForPeerFilterRanges](./alertsforpeerfilterranges-data.dictionary.md)
   A dictionary that contains alerts for peer filter ranges.
-- [object ContentCachingInformationResponse.StatusResponse.AlertsItem](contentcachinginformationresponse/statusresponse-data.dictionary/alertsitem.md)
+- [object ContentCachingInformationResponse.StatusResponse.AlertsItem](./alertsitem.md)
   A dictionary that describes an alert from the content cache.
-- [object ContentCachingInformationResponse.StatusResponse.CacheDetails](contentcachinginformationresponse/statusresponse-data.dictionary/cachedetails-data.dictionary.md)
+- [object ContentCachingInformationResponse.StatusResponse.CacheDetails](./cachedetails-data.dictionary.md)
   A dictionary that describes disk space the content cache uses.
-- [object ContentCachingInformationResponse.StatusResponse.ParentsItem](contentcachinginformationresponse/statusresponse-data.dictionary/parentsitem.md)
+- [object ContentCachingInformationResponse.StatusResponse.ParentsItem](./parentsitem.md)
   A dictionary that describes a parent content cache.
-- [object ContentCachingInformationResponse.StatusResponse.PeersItem](contentcachinginformationresponse/statusresponse-data.dictionary/peersitem.md)
+- [object ContentCachingInformationResponse.StatusResponse.PeersItem](./peersitem.md)
   A dictionary that describes a peer content cache.
 
 

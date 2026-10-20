@@ -1,7 +1,8 @@
 # loadReferenceImages(inGroupNamed:bundle:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates multiple reference images based on their group name in an asset catalog.
 
@@ -25,9 +26,10 @@ An array of reference images loaded from the group you specify.
 
 ## See Also
 
-- [init(cgimage: CGImage, physicalSize: CGSize, orientation: CGImagePropertyOrientation)](referenceimage/init(cgimage:physicalsize:orientation:).md)
+### Creating a reference image
+- [init(cgimage: CGImage, physicalSize: CGSize, orientation: CGImagePropertyOrientation)](./init%28cgimage,physicalsize,orientation%29.md)
   Creates a reference image from a Core Graphics image.
-- [init(pixelBuffer: CVPixelBuffer, physicalSize: CGSize, orientation: CGImagePropertyOrientation)](referenceimage/init(pixelbuffer:physicalsize:orientation:).md)
+- [init(pixelBuffer: CVPixelBuffer, physicalSize: CGSize, orientation: CGImagePropertyOrientation)](./init%28pixelbuffer,physicalsize,orientation%29.md)
   Creates a reference image from a pixel buffer.
 
 

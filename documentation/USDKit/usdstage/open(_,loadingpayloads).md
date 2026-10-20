@@ -1,7 +1,8 @@
 # open(_:loadingPayloads:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Opens a stage using the file at a URL as its root layer.
 
@@ -25,7 +26,7 @@ A new stage rooted at the layer loaded from `url`.
 
 #### Discussion
 
-> **Note**: An error if the URL does not refer to a readable file.
+> **Throws**: An error if the URL does not refer to a readable file.
 
 ## Parameters
 
@@ -34,13 +35,14 @@ A new stage rooted at the layer loaded from `url`.
 
 ## See Also
 
-- [static func open(rootLayer: USDLayer, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](usdstage/open(rootlayer:sessionlayer:options:).md)
+### Opening a stage
+- [static func open(rootLayer: USDLayer, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](./open%28rootlayer,sessionlayer,options%29.md)
   Opens a stage rooted at a given layer.
-- [static func open(FilePath, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](usdstage/open(_:sessionlayer:options:).md)
+- [static func open(FilePath, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](./open%28_,sessionlayer,options%29.md)
   Opens a stage using a file as the root layer.
-- [USDStage.OpenOptions](usdstage/openoptions.md)
+- [USDStage.OpenOptions](./openoptions.md)
   Options that specify behavior related to opening a stage.
-- [USDStage.InitialLoadRule](usdstage/initialloadrule.md)
+- [USDStage.InitialLoadRule](./initialloadrule.md)
   Specifies the rule used when opening a stage to determine if referenced payloads are loaded.
 
 

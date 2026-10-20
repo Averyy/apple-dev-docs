@@ -1,6 +1,7 @@
 # Xcode 16.1 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -16,7 +17,7 @@ Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, mac
 
 ###### Deprecations
 
-- The simulator runtimes are currently available on the Apple Developer website, but will no longer be posted through the website in future updates.  Please use `xcodebuild -downloadPlatform <platform> -exportPath <path>` command to download the runtime and then `xcodebuild -importPlatform <path/simruntime.dmg>` to install it.  For more details, see [`Installing and managing Simulator runtimes`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/installing-additional-simulator-runtimes).  (133776444)
+- The simulator runtimes are currently available on the Apple Developer website, but will no longer be posted through the website in future updates.  Please use `xcodebuild -downloadPlatform <platform> -exportPath <path>` command to download the runtime and then `xcodebuild -importPlatform <path/simruntime.dmg>` to install it.  For more details, see [Installing and managing Simulator runtimes](../Xcode/installing-additional-simulator-runtimes.md).  (133776444)
 
 ##### App Distribution
 
@@ -35,7 +36,11 @@ Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, mac
 
 ###### New Features
 
-- Xcodebuild’s download platforms command now supports an optional -buildVersion  argument to request a specific released simulator runtime. The  can be a build update number or the release number. Simulator runtime version that are supported versions are iOS 16.0+, watchOS 9.0+, tvOS 16+, visionOS 1.0+. Example usage, to download, install and export the iOS 16.0 simulator runtime: xcodebuild -downloadPlatform iOS -buildVersion 16.0 -exportPath  ./SimRuntimeImages/ xcodebuild -downloadPlatform iOS -buildVersion 20A360 -exportPath  ./SimRuntimeImages/  (135989441) (FB15126412)
+- Xcodebuild’s download platforms command now supports an optional -buildVersion  argument to request a specific released simulator runtime. The  can be a build update number or the release number. Simulator runtime version that are supported versions are iOS 16.0+, watchOS 9.0+, tvOS 16+, visionOS 1.0+.
+
+  Example usage, to download, install and export the iOS 16.0 simulator runtime:
+
+  xcodebuild -downloadPlatform iOS -buildVersion 16.0 -exportPath  ./SimRuntimeImages/ xcodebuild -downloadPlatform iOS -buildVersion 20A360 -exportPath  ./SimRuntimeImages/  (135989441) (FB15126412)
 
 ###### Resolved Issues
 
@@ -43,7 +48,9 @@ Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, mac
 
 ###### Known Issues
 
-- Custom app fonts may fail to be listed at the top of the custom fonts list in the Interface Builder inspector.  (100908086) (FB11662082) **Workaround:** Restarting Xcode will force this list to be recreated.
+- Custom app fonts may fail to be listed at the top of the custom fonts list in the Interface Builder inspector.  (100908086) (FB11662082)
+
+  **Workaround:** Restarting Xcode will force this list to be recreated.
 - IBInspectable properties are no longer accessible in Interface Builder. Current values in IB Documents are still compiled into the NIBs and used at runtime.  (135140474) (FB15011501)
 
 ##### Localization
@@ -52,11 +59,13 @@ Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, mac
 
 - Fixed: Resolved a hang that could occur in the String Catalog Editor shortly after opening the file or building the project.  (134611283) (FB14906651)
 
-##### Lockedcameracapture
+##### LockedCameraCapture
 
 ###### Known Issues
 
-- Logging does not appear in Xcode when debugging Capture Extensions when using “Attach to Process”.  (129785280) **Workaround:** Use “Attach to Process by PID or Name” in Xcode to debug Capture Extensions.
+- Logging does not appear in Xcode when debugging Capture Extensions when using “Attach to Process”.  (129785280)
+
+  **Workaround:** Use “Attach to Process by PID or Name” in Xcode to debug Capture Extensions.
 
 ##### Previews
 
@@ -71,7 +80,9 @@ Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, mac
 
 ###### Known Issues
 
-- On Simulator.app launch with visionOS device, “Simulated Scenes” Control for visionOS can be disabled   (136714857) **Workaround:** Device Restart or Simulator.app restart
+- On Simulator.app launch with visionOS device, “Simulated Scenes” Control for visionOS can be disabled   (136714857)
+
+  **Workaround:** Device Restart or Simulator.app restart
 
 ##### Testing
 
@@ -84,13 +95,14 @@ Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, mac
 
 ## See Also
 
-- [Xcode 16.4 Release Notes](xcode-16_4-release-notes.md)
+### Xcode 16
+- [Xcode 16.4 Release Notes](./xcode-16_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 16.3 Release Notes](xcode-16_3-release-notes.md)
+- [Xcode 16.3 Release Notes](./xcode-16_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 16.2 Release Notes](xcode-16_2-release-notes.md)
+- [Xcode 16.2 Release Notes](./xcode-16_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 16 Release Notes](xcode-16-release-notes.md)
+- [Xcode 16 Release Notes](./xcode-16-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

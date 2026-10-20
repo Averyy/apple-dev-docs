@@ -1,7 +1,8 @@
 # Complete
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A value that indicates the Look Around view has completed loading.
 
@@ -10,17 +11,18 @@ A value that indicates the Look Around view has completed loading.
 
 ## Declaration
 
-```swift
+```
 readonly Complete: "complete";
 ```
 
 ## See Also
 
-- [Destroyed](lookaroundreadystate/destroyed.md)
+### Look Around object states
+- [Destroyed](./destroyed.md)
   A value that indicates the Look Around object is destroyed.
-- [Error](lookaroundreadystate/error.md)
+- [Error](./error.md)
   A value that indicates the Look Around view encountered an error while loading.
-- [Loading](lookaroundreadystate/loading.md)
+- [Loading](./loading.md)
   A value that indicates the Look Around view is loading.
 
 

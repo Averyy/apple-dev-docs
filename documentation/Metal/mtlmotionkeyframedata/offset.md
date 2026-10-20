@@ -1,7 +1,8 @@
 # offset
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The offset, in bytes, to the keyframe data.
 
@@ -19,9 +20,14 @@ The offset, in bytes, to the keyframe data.
 var offset: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger offset;
+```
+
 ## See Also
 
-- [var buffer: (any MTLBuffer)?](mtlmotionkeyframedata/buffer.md)
+### Specifying the keyframe data
+- [var buffer: (any MTLBuffer)?](./buffer.md)
   The buffer that holds the geometry data.
 
 

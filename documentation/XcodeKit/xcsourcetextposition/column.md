@@ -1,7 +1,8 @@
 # column
 
 **Framework**: XcodeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The horizontal component of a source text position.
 
@@ -14,9 +15,14 @@ The horizontal component of a source text position.
 var column: Int
 ```
 
+```c
+NSInteger column;
+```
+
 ## See Also
 
-- [var line: Int](xcsourcetextposition/line.md)
+### Inspecting Source Text Positions
+- [var line: Int](./line.md)
   The vertical component of a source text position.
 
 

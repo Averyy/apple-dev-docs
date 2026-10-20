@@ -1,7 +1,8 @@
 # MTLLibraryOptimizationLevel.size
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An optimization option for the Metal compiler that prioritizes minimizing the size of its output binaries, which may also reduce compile time.
 
@@ -19,17 +20,22 @@ An optimization option for the Metal compiler that prioritizes minimizing the si
 case size
 ```
 
+```c
+MTLLibraryOptimizationLevelSize
+```
+
 ## Mentions
 
-- [Minimizing the binary size of a shader library](minimizing-the-binary-size-of-a-shader-library.md)
+- [Minimizing the binary size of a shader library](../minimizing-the-binary-size-of-a-shader-library.md)
 
 #### Discussion
 
-This option is similar to [`MTLLibraryOptimizationLevel.default`](mtllibraryoptimizationlevel/default.md), but adds optimizations that prioritize minimizing a shader’s executable size, which may also reduce compile time.
+This option is similar to [`MTLLibraryOptimizationLevel.default`](./default.md), but adds optimizations that prioritize minimizing a shader’s executable size, which may also reduce compile time.
 
 ## See Also
 
-- [MTLLibraryOptimizationLevel.default](mtllibraryoptimizationlevel/default.md)
+### Optimization options
+- [MTLLibraryOptimizationLevel.default](./default.md)
   An optimization option for the Metal compiler that prioritizes runtime performance.
 
 

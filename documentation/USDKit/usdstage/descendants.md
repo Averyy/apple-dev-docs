@@ -1,7 +1,8 @@
 # descendants
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The active, loaded, defined, non-abstract descendant prims of this stage’s pseudo-root.
 
@@ -21,9 +22,10 @@ var descendants: [USDPrim] { get }
 
 ## See Also
 
-- [func descendants(where: USDPrim.Predicate) -> [USDPrim]](usdstage/descendants(where:).md)
+### Traversing the scene
+- [func descendants(where: USDPrim.Predicate) -> [USDPrim]](./descendants%28where%29.md)
   Returns the descendant prims of this stage that satisfy the given predicate.
-- [var allDescendants: [USDPrim]](usdstage/alldescendants.md)
+- [var allDescendants: [USDPrim]](./alldescendants.md)
   All descendant prims of this stage’s pseudo-root.
 
 

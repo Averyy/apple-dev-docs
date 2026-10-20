@@ -1,7 +1,8 @@
 # requiresUserAccountType
 
 **Framework**: Automatic Assessment Configuration  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Specifies the type of user account required to start an assessment.
 
@@ -15,11 +16,15 @@ Specifies the type of user account required to start an assessment.
 var requiresUserAccountType: AEUserAccountType { get set }
 ```
 
+```objc
+@property (nonatomic, assign) AEUserAccountType requiresUserAccountType;
+```
+
 #### Discussion
 
 This property defines the account requirement for starting an assessment session. Set it to `.standard` to require a non-administrator account, `.guest` to require a guest account, or `.any` (the default) to allow any account type.
 
-> **Note**: [`AEUserAccountType`](aeuseraccounttype.md).
+> **See Also**: [`AEUserAccountType`](../aeuseraccounttype.md).
 
 
 ---

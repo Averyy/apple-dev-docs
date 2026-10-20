@@ -1,6 +1,7 @@
 # Securing Logins with iCloud Keychain Verification Codes
 
-**Framework**: Authentication Services
+**Framework**: Authentication Services  
+**Role**: Article
 
 Use time-based codes generated on-device for a secure authentication experience.
 
@@ -12,7 +13,7 @@ With iCloud Keychain verification codes, iPhones, iPads, and Macs generate verif
 
 ##### Set Up the Verification Code
 
-Both iOS and macOS handle a special URL based on the industry standard [`otpauth specification`](https://developer.apple.comhttps://github.com/google/google-authenticator/wiki/Key-Uri-Format). The Apple-specific version of this URL is identical to the standard, but uses the `apple-otpauth:` scheme. Embed this URL in your webpages and apps to allow your users to set up new code generators directly in the iCloud Keychain password manager with minimal effort. On the web, use an `<a>` tag to create a link. In apps, create an [`NSAttributedString`](https://developer.apple.com/documentation/foundation/nsattributedstring) with a [`link`](https://developer.apple.com/documentation/foundation/nsattributedstring/key/link) attribute, or open the URL in response to a button tap. When the user taps on the URL, the system prompts them to choose a credential. A new verification code is set up for that credential using the parameters specified in the URL.
+Both iOS and macOS handle a special URL based on the industry standard [otpauth specification](https://github.com/google/google-authenticator/wiki/Key-Uri-Format). The Apple-specific version of this URL is identical to the standard, but uses the `apple-otpauth:` scheme. Embed this URL in your webpages and apps to allow your users to set up new code generators directly in the iCloud Keychain password manager with minimal effort. On the web, use an `<a>` tag to create a link. In apps, create an [`NSAttributedString`](../Foundation/nsattributedstring.md) with a [`link`](../Foundation/nsattributedstring/key/link.md) attribute, or open the URL in response to a button tap. When the user taps on the URL, the system prompts them to choose a credential. A new verification code is set up for that credential using the parameters specified in the URL.
 
 The host portion of the URL must be `totp`, and the path should be the proper name of your service, followed by a colon and the user name or email of the account. The `otpauth:` specification defines a number of query parameters. The following are the most important:
 
@@ -27,21 +28,22 @@ Here’s an example of the URL for an app called Example for the user meichen3@i
 
 ##### Prepare the Text Input Field
 
-AutoFill on iOS and macOS offer to fill verification codes automatically in text fields where you set the content type of the field to a one-time code type. In SwiftUI, set the content type to [`oneTimeCode`](https://developer.apple.com/documentation/uikit/uitextcontenttype/onetimecode) with the [`textContentType(_:)`](https://developer.apple.com/documentation/swiftui/view/textcontenttype(_:)-ufdv) view modifier. In UIKit, set [`textContentType`](https://developer.apple.com/documentation/uikit/uitextinputtraits/textcontenttype) to [`oneTimeCode`](https://developer.apple.com/documentation/uikit/uitextcontenttype/onetimecode). In AppKit, set [`contentType`](https://developer.apple.com/documentation/appkit/nstextcontent/contenttype) to [`oneTimeCode`](https://developer.apple.com/documentation/appkit/nstextcontenttype/onetimecode). For web-based text fields, set the HTML attribute on the input element to `autocomplete=one-time-code`.
+AutoFill on iOS and macOS offer to fill verification codes automatically in text fields where you set the content type of the field to a one-time code type. In SwiftUI, set the content type to [`oneTimeCode`](../UIKit/uitextcontenttype/onetimecode.md) with the [`textContentType(_:)`](../SwiftUI/view/textcontenttype%28_%29-ufdv.md) view modifier. In UIKit, set [`textContentType`](../UIKit/uitextinputtraits/textcontenttype.md) to [`oneTimeCode`](../UIKit/uitextcontenttype/onetimecode.md). In AppKit, set [`contentType`](../AppKit/nstextcontent/contenttype.md) to [`oneTimeCode`](../AppKit/nstextcontenttype/onetimecode.md). For web-based text fields, set the HTML attribute on the input element to `autocomplete=one-time-code`.
 
 ## See Also
 
-- [Authenticating a User Through a Web Service](authenticating-a-user-through-a-web-service.md)
+### Web authentication sessions
+- [Authenticating a User Through a Web Service](./authenticating-a-user-through-a-web-service.md)
   Use a web authentication session to authenticate a user in your app.
-- [class ASWebAuthenticationSession](aswebauthenticationsession.md)
+- [class ASWebAuthenticationSession](./aswebauthenticationsession.md)
   A session that an app uses to authenticate a user through a web service.
-- [struct WebAuthenticationSession](webauthenticationsession.md)
+- [struct WebAuthenticationSession](./webauthenticationsession.md)
   A SwiftUI environment value that views use to authenticate someone using a web service.
-- [Supporting Single Sign-On in a Web Browser App](supporting-single-sign-on-in-a-web-browser-app.md)
+- [Supporting Single Sign-On in a Web Browser App](./supporting-single-sign-on-in-a-web-browser-app.md)
   Extend your web browser app to handle web authentication requests from other apps.
-- [class ASWebAuthenticationSessionWebBrowserSessionManager](aswebauthenticationsessionwebbrowsersessionmanager.md)
+- [class ASWebAuthenticationSessionWebBrowserSessionManager](./aswebauthenticationsessionwebbrowsersessionmanager.md)
   A session manager that mediates sharing data between an app and a web browser.
-- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../bundleresources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md)
+- [ASWebAuthenticationSessionWebBrowserSupportCapabilities](../BundleResources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md)
   A collection of keys that a browser app uses to declare its ability to handle authentication requests from other apps.
 
 

@@ -1,7 +1,8 @@
 # HandSkeleton.JointName.thumbIntermediateBase
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - visionOS 1.0+
@@ -14,9 +15,10 @@ case thumbIntermediateBase
 
 ## See Also
 
-- [HandSkeleton.JointName.thumbIntermediateTip](handskeleton/jointname/thumbintermediatetip.md)
-- [HandSkeleton.JointName.thumbKnuckle](handskeleton/jointname/thumbknuckle.md)
-- [HandSkeleton.JointName.thumbTip](handskeleton/jointname/thumbtip.md)
+### Thumb joints
+- [HandSkeleton.JointName.thumbIntermediateTip](./thumbintermediatetip.md)
+- [HandSkeleton.JointName.thumbKnuckle](./thumbknuckle.md)
+- [HandSkeleton.JointName.thumbTip](./thumbtip.md)
 
 
 ---

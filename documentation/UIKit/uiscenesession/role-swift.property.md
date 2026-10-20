@@ -1,7 +1,8 @@
 # role
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The role played by the scene’s content.
 
@@ -18,15 +19,20 @@ The role played by the scene’s content.
 var role: UISceneSession.Role { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UISceneSessionRole role;
+```
+
 #### Discussion
 
 Use this property to determine how the user interacts with the content of the associated scene. UIKit sets the initial value of this property based on the information in your app’s `Info.plist` file. If you don’t provide scene configuration data for your app, UIKit sets the role to an appropriate value.
 
 ## See Also
 
-- [var scene: UIScene?](uiscenesession/scene.md)
+### Getting the scene information
+- [var scene: UIScene?](./scene.md)
   The scene associated with the current session.
-- [UISceneSession.Role](uiscenesession/role-swift.struct.md)
+- [UISceneSession.Role](./role-swift.struct.md)
   Constants that indicate the possible roles for a scene.
 
 

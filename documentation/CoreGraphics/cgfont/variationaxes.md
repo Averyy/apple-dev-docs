@@ -1,7 +1,8 @@
 # variationAxes
 
 **Framework**: Core Graphics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns an array of the variation axis dictionaries for a font.
 
@@ -10,7 +11,7 @@ Returns an array of the variation axis dictionaries for a font.
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ Returns an array of the variation axis dictionaries for a font.
 var variationAxes: CFArray? { get }
 ```
 
+```c
+extern CFArrayRefCGFontCopyVariationAxes(CGFontRef font);
+```
+
 #### Discussion
 
 A variation axis is a range included in a font by the font designer that allows a font to produce different type styles. Each variation axis dictionary contains key-value pairs that specify the variation axis name and the minimum, maximum, and default values for that variation axis.
 
 ## See Also
 
-- [func copy(withVariations: CFDictionary?) -> CGFont?](cgfont/copy(withvariations:).md)
+### Working with Variations
+- [func copy(withVariations: CFDictionary?) -> CGFont?](./copy%28withvariations%29.md)
   Creates a copy of a font using a variation specification dictionary.
-- [var variations: CFDictionary?](cgfont/variations.md)
+- [var variations: CFDictionary?](./variations.md)
   Returns the variation specification dictionary for a font.
-- [Font Variation Axis Keys](font-variation-axis-keys.md)
+- [Font Variation Axis Keys](../font-variation-axis-keys.md)
   Keys used for a font variation axis dictionary.
 
 

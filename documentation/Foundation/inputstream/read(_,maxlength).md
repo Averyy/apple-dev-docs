@@ -1,7 +1,8 @@
 # read(_:maxLength:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Reads up to a given number of bytes into a given buffer.
 
@@ -20,6 +21,10 @@ Reads up to a given number of bytes into a given buffer.
 func read(_ buffer: UnsafeMutablePointer<UInt8>, maxLength len: Int) -> Int
 ```
 
+```objc
+- (NSInteger) read:(uint8_t *) buffer maxLength:(NSUInteger) len;
+```
+
 #### Return Value
 
 A number indicating the outcome of the operation:
@@ -28,7 +33,7 @@ A number indicating the outcome of the operation:
 
 - A positive number indicates the number of bytes read.
 - `0` indicates that the end of the buffer was reached.
-- `-1` means that the operation failed; more information about the error can be obtained with [`streamError`](stream/streamerror.md).
+- `-1` means that the operation failed; more information about the error can be obtained with [`streamError`](../stream/streamerror.md).
 
 ## Parameters
 
@@ -37,9 +42,10 @@ A number indicating the outcome of the operation:
 
 ## See Also
 
-- [func getBuffer(UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>, length: UnsafeMutablePointer<Int>) -> Bool](inputstream/getbuffer(_:length:).md)
+### Using Streams
+- [func getBuffer(UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>, length: UnsafeMutablePointer<Int>) -> Bool](./getbuffer%28_,length%29.md)
   Returns by reference a pointer to a read buffer and, by reference, the number of bytes available, and returns a Boolean value that indicates whether the buffer is available.
-- [var hasBytesAvailable: Bool](inputstream/hasbytesavailable.md)
+- [var hasBytesAvailable: Bool](./hasbytesavailable.md)
   A Boolean value that indicates whether the receiver has bytes available to read.
 
 

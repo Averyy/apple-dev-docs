@@ -1,7 +1,8 @@
 # showsExpertParameters
 
 **Framework**: CoreAudioKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether or not controls for expert audio unit parameters are displayed in the generic view.
 
@@ -14,9 +15,13 @@ Indicates whether or not controls for expert audio unit parameters are displayed
 var showsExpertParameters: Bool { get set }
 ```
 
+```objc
+@property BOOL showsExpertParameters;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if controls for expert audio unit parameters are displayed; [`false`](https://developer.apple.com/documentation/swift/false) otherwise.
+[`true`](../../Swift/true.md) if controls for expert audio unit parameters are displayed; [`false`](../../Swift/false.md) otherwise.
 
 
 ---

@@ -1,7 +1,8 @@
 # preferredForwardBufferDuration
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration the player should buffer media from the network ahead of the playhead to guard against playback disruption.
 
@@ -21,15 +22,20 @@ nonisolated
 var preferredForwardBufferDuration: TimeInterval { get set }
 ```
 
+```objc
+@property NSTimeInterval preferredForwardBufferDuration;
+```
+
 #### Discussion
 
 This property defines the preferred forward buffer duration in seconds. If set to 0, the player will choose an appropriate level of buffering for most use cases. Setting this property to a low value will increase the chance that playback will stall and re-buffer, while setting it to a high value will increase demand on system resources.
 
 ## See Also
 
-- [var preferredPeakBitRate: Double](avplayeritem/preferredpeakbitrate.md)
+### Configuring network behavior
+- [var preferredPeakBitRate: Double](./preferredpeakbitrate.md)
   The desired limit, in bits per second, of network bandwidth consumption for this item.
-- [var canUseNetworkResourcesForLiveStreamingWhilePaused: Bool](avplayeritem/canusenetworkresourcesforlivestreamingwhilepaused.md)
+- [var canUseNetworkResourcesForLiveStreamingWhilePaused: Bool](./canusenetworkresourcesforlivestreamingwhilepaused.md)
   A Boolean value that indicates whether the player item can use network resources to keep the playback state up to date while paused.
 
 

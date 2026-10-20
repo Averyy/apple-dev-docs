@@ -1,7 +1,8 @@
 # typeType
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Four-character code for event class or event ID
 

@@ -1,7 +1,8 @@
 # readAttributeServerList(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeServerList(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeServerList() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeServerListWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

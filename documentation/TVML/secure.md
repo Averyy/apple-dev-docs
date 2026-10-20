@@ -1,20 +1,22 @@
 # secure
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Hides typed text.
 
 ## See Also
 
-- [accessibilityText](accessibilitytext.md)
+### Text Attributes
+- [accessibilityText](./accessibilitytext.md)
   Adds hidden text to an element that is used when VoiceOver is enabled.
-- [firstName](firstname.md)
+- [firstName](./firstname.md)
   Adds a person’s first name to an element.
-- [lastName](lastname.md)
+- [lastName](./lastname.md)
   Adds a person’s last name to an element.
-- [layoutDirection](layoutdirection.md)
+- [layoutDirection](./layoutdirection.md)
   Specifies the direction in which text is displayed.
-- [showSpinner](showspinner.md)
+- [showSpinner](./showspinner.md)
   Displays a rotating spinner icon inside of a search field.
 
 

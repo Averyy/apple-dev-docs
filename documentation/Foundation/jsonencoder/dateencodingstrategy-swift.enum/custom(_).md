@@ -1,7 +1,8 @@
 # JSONEncoder.DateEncodingStrategy.custom(_:)
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The strategy that formats custom dates by calling a user-defined function.
 
@@ -33,7 +34,8 @@ If the user-defined function doesn’t perform any encoding at all, the encoder 
 
 ## See Also
 
-- [JSONEncoder.DateEncodingStrategy.formatted(_:)](jsonencoder/dateencodingstrategy-swift.enum/formatted(_:).md)
+### Custom Formats
+- [JSONEncoder.DateEncodingStrategy.formatted(_:)](./formatted%28_%29.md)
   The strategy that defers formatting settings to a supplied date formatter.
 
 

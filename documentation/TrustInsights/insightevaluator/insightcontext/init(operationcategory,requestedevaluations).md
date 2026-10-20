@@ -1,7 +1,8 @@
 # init(operationCategory:requestedEvaluations:)
 
 **Framework**: Trust Insights  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the context with which to request insights.
 

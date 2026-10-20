@@ -1,7 +1,8 @@
 # UIDocumentBrowserError
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains information about document browser errors.
 
@@ -20,31 +21,32 @@ struct UIDocumentBrowserError
 ## Topics
 
 ### Error codes
-- [static var generic: UIDocumentBrowserError.Code](uidocumentbrowsererror/generic.md)
+- [static var generic: UIDocumentBrowserError.Code](./uidocumentbrowsererror/generic.md)
   An unspecified error.
-- [static var noLocationAvailable: UIDocumentBrowserError.Code](uidocumentbrowsererror/nolocationavailable.md)
+- [static var noLocationAvailable: UIDocumentBrowserError.Code](./uidocumentbrowsererror/nolocationavailable.md)
   An error indicating that no location exists.
-- [UIDocumentBrowserError.Code](uidocumentbrowsererror/code.md)
+- [UIDocumentBrowserError.Code](./uidocumentbrowsererror/code.md)
   The error codes for document browser errors.
 ### Getting error properties
-- [static var errorDomain: String](uidocumentbrowsererror/errordomain.md)
+- [static var errorDomain: String](./uidocumentbrowsererror/errordomain.md)
   A string that identifies the error domain.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [UIDocumentBrowserError.Code](uidocumentbrowsererror/code.md)
+### Handling errors
+- [UIDocumentBrowserError.Code](./uidocumentbrowsererror/code.md)
   The error codes for document browser errors.
-- [let UIDocumentBrowserErrorDomain: String](uidocumentbrowsererrordomain.md)
+- [let UIDocumentBrowserErrorDomain: String](./uidocumentbrowsererrordomain.md)
   The error domain for document browser errors.
 
 

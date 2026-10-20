@@ -1,7 +1,8 @@
 # helpAnchor()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current help anchor string for the sheet or panel.
 
@@ -14,13 +15,18 @@ Returns the current help anchor string for the sheet or panel.
 func helpAnchor() -> String!
 ```
 
+```objc
+- (NSString *) helpAnchor;
+```
+
 ## See Also
 
-- [func setHelpAnchor(String!)](sfcertificatepanel/sethelpanchor(_:).md)
+### Providing Help
+- [func setHelpAnchor(String!)](./sethelpanchor%28_%29.md)
   Sets the help anchor string for the sheet or modal panel.
-- [func setShowsHelp(Bool)](sfcertificatepanel/setshowshelp(_:).md)
+- [func setShowsHelp(Bool)](./setshowshelp%28_%29.md)
   Displays a Help button in the sheet or panel.
-- [func showsHelp() -> Bool](sfcertificatepanel/showshelp.md)
+- [func showsHelp() -> Bool](./showshelp%28%29.md)
   Indicates whether the help button is currently set to be displayed.
 
 

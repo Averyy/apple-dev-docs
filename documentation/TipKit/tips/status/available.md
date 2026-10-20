@@ -1,7 +1,8 @@
 # Tips.Status.available
 
 **Framework**: TipKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The tip is eligible for display.
 

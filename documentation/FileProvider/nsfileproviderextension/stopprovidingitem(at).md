@@ -1,7 +1,8 @@
 # stopProvidingItem(at:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the File Provider extension that a given document is no longer being accessed.
 
@@ -17,6 +18,10 @@ Tells the File Provider extension that a given document is no longer being acces
 func stopProvidingItem(at url: URL)
 ```
 
+```objc
+- (void) stopProvidingItemAtURL:(NSURL *) url;
+```
+
 #### Discussion
 
 The system calls this method as soon as all other processes have stopped accessing the given file. You can override this method to remove the document from the local file system, thus freeing up storage space. You must provide placeholders for any documents you remove.
@@ -29,11 +34,12 @@ You must override this method, even if you only provide an empty implementation.
 
 ## See Also
 
-- [func itemChanged(at: URL)](nsfileproviderextension/itemchanged(at:).md)
+### Managing shared files
+- [func itemChanged(at: URL)](./itemchanged%28at%29.md)
   Tells the File Provider extension that a document has changed.
-- [func providePlaceholder(at: URL, completionHandler: ((any Error)?) -> Void)](nsfileproviderextension/provideplaceholder(at:completionhandler:).md)
+- [func providePlaceholder(at: URL, completionHandler: ((any Error)?) -> Void)](./provideplaceholder%28at,completionhandler%29.md)
   Triggers the creation of a placeholder for the given URL.
-- [func startProvidingItem(at: URL, completionHandler: ((any Error)?) -> Void)](nsfileproviderextension/startprovidingitem(at:completionhandler:).md)
+- [func startProvidingItem(at: URL, completionHandler: ((any Error)?) -> Void)](./startprovidingitem%28at,completionhandler%29.md)
   Provides an actual file on disk for a placeholder.
 
 

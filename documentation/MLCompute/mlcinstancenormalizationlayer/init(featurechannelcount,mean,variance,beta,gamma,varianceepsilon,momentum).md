@@ -1,21 +1,26 @@
 # init(featureChannelCount:mean:variance:beta:gamma:varianceEpsilon:momentum:)
 
 **Framework**: ML Compute  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance normalization layer with the number of feature channels, mean, variance, beta and gamma tensors, variance epsilon, and momentum you specify.
 
 **Availability**:
-- iOS 14.5+
-- iPadOS 14.5+
-- Mac Catalyst 14.5+
-- macOS 11.3+
-- tvOS 14.5+
+- iOS 14.5+ - Deprecated in 17.4
+- iPadOS 14.5+ - Deprecated in 17.4
+- Mac Catalyst 14.5+ - Deprecated in 17.4
+- macOS 11.3+ - Deprecated in 14.3
+- tvOS 14.5+ - Deprecated in 17.4
 
 ## Declaration
 
 ```swift
 convenience init?(featureChannelCount: Int, mean: MLCTensor, variance: MLCTensor, beta: MLCTensor?, gamma: MLCTensor?, varianceEpsilon: Float, momentum: Float)
+```
+
+```objc
++ (instancetype) layerWithFeatureChannelCount:(NSUInteger) featureChannelCount mean:(MLCTensor *) mean variance:(MLCTensor *) variance beta:(MLCTensor *) beta gamma:(MLCTensor *) gamma varianceEpsilon:(float) varianceEpsilon momentum:(float) momentum;
 ```
 
 ## Parameters
@@ -30,9 +35,10 @@ convenience init?(featureChannelCount: Int, mean: MLCTensor, variance: MLCTensor
 
 ## See Also
 
-- [convenience init?(featureChannelCount: Int, beta: MLCTensor?, gamma: MLCTensor?, varianceEpsilon: Float)](mlcinstancenormalizationlayer/init(featurechannelcount:beta:gamma:varianceepsilon:).md)
+### Creating Instance Normalization Layers
+- [convenience init?(featureChannelCount: Int, beta: MLCTensor?, gamma: MLCTensor?, varianceEpsilon: Float)](./init%28featurechannelcount,beta,gamma,varianceepsilon%29.md)
   Creates an instance normalization layer with the number of feature channels, beta and gamma tensors, and variance epsilon you specify.
-- [convenience init?(featureChannelCount: Int, beta: MLCTensor?, gamma: MLCTensor?, varianceEpsilon: Float, momentum: Float)](mlcinstancenormalizationlayer/init(featurechannelcount:beta:gamma:varianceepsilon:momentum:).md)
+- [convenience init?(featureChannelCount: Int, beta: MLCTensor?, gamma: MLCTensor?, varianceEpsilon: Float, momentum: Float)](./init%28featurechannelcount,beta,gamma,varianceepsilon,momentum%29.md)
   Creates an instance normalization layer with the number of feature channels, beta and gamma tensors, variance epsilon, and momentum you specify.
 
 

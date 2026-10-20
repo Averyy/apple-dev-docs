@@ -1,7 +1,8 @@
 # changesWhenCaseMapped
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the scalar may change when it undergoes case mapping.
 
@@ -24,7 +25,7 @@ var changesWhenCaseMapped: Bool { get }
 
 This property is `true` whenever one or more of `changesWhenLowercased`, `changesWhenUppercased`, or `changesWhenTitlecased` are `true`.
 
-This property corresponds to the “Changes_When_Casemapped” property in the [`Unicode Standard`](https://developer.apple.comhttp://www.unicode.org/versions/latest/).
+This property corresponds to the “Changes_When_Casemapped” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 
 
 ---

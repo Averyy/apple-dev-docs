@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The content and behavior of this widget.
@@ -23,7 +24,8 @@ The content and behavior of this widget.
 
 ## See Also
 
-- [associatedtype Body : WidgetConfiguration](widgetconfiguration/body-swift.associatedtype.md)
+### Implementing a widget
+- [associatedtype Body : WidgetConfiguration](./body-swift.associatedtype.md)
   The type of widget configuration representing the body of this configuration.
 
 

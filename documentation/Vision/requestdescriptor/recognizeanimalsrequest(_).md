@@ -1,7 +1,8 @@
 # RequestDescriptor.recognizeAnimalsRequest(_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A descriptor that describes a recognize animals request.
 
@@ -22,7 +23,8 @@ case recognizeAnimalsRequest(RecognizeAnimalsRequest.Revision)
 
 ## See Also
 
-- [case detectAnimalBodyPoseRequest(DetectAnimalBodyPoseRequest.Revision)](requestdescriptor/detectanimalbodyposerequest(_:).md)
+### Getting the animal detection descriptor
+- [case detectAnimalBodyPoseRequest(DetectAnimalBodyPoseRequest.Revision)](./detectanimalbodyposerequest%28_%29.md)
   A descriptor that describes a detect animal body pose request.
 
 

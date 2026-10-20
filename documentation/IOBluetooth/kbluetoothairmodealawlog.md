@@ -1,10 +1,11 @@
 # kBluetoothAirModeALawLog
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kBluetoothAirModeALawLog: Int { get }
 ```
 
+```c
+kBluetoothAirModeALawLog
+```
+
 ## See Also
 
-- [var kBluetoothAirModeCVSD: Int](kbluetoothairmodecvsd.md)
-- [var kBluetoothAirModeTransparentData: Int](kbluetoothairmodetransparentdata.md)
-- [var kBluetoothAirModeULawLog: Int](kbluetoothairmodeulawlog.md)
+### Constants
+- [var kBluetoothAirModeCVSD: Int](./kbluetoothairmodecvsd.md)
+- [var kBluetoothAirModeTransparentData: Int](./kbluetoothairmodetransparentdata.md)
+- [var kBluetoothAirModeULawLog: Int](./kbluetoothairmodeulawlog.md)
 
 
 ---

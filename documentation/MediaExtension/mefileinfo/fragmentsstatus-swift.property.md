@@ -1,7 +1,8 @@
 # fragmentsStatus
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates if the media asset contains fragments or is extendable by fragments.
 
@@ -14,15 +15,20 @@ Indicates if the media asset contains fragments or is extendable by fragments.
 var fragmentsStatus: MEFileInfo.FragmentsStatus { get set }
 ```
 
+```objc
+@property (nonatomic) MEFileInfoFragmentsStatus fragmentsStatus;
+```
+
 #### Discussion
 
-The default value is [`MEFileInfo.FragmentsStatus.couldNotContainFragments`](mefileinfo/fragmentsstatus-swift.enum/couldnotcontainfragments.md).
+The default value is [`MEFileInfo.FragmentsStatus.couldNotContainFragments`](./fragmentsstatus-swift.enum/couldnotcontainfragments.md).
 
 ## See Also
 
-- [var duration: CMTime](mefileinfo/duration.md)
+### Inspecting file properties
+- [var duration: CMTime](./duration.md)
   The duration of the media asset, if available.
-- [MEFileInfo.FragmentsStatus](mefileinfo/fragmentsstatus-swift.enum.md)
+- [MEFileInfo.FragmentsStatus](./fragmentsstatus-swift.enum.md)
   An enumeration that describes if a media asset contains or supports fragments.
 
 

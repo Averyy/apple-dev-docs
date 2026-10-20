@@ -1,7 +1,8 @@
 # naturalSize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The natural display dimensions of the output’s visual media.
 
@@ -19,21 +20,26 @@ The natural display dimensions of the output’s visual media.
 var naturalSize: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic) CGSize naturalSize;
+```
+
 #### Discussion
 
-The default value is [`CGSizeZero`](https://developer.apple.com/documentation/coregraphics/cgsizezero), which indicates the system sets the natural size according to the dimensions of the output track’s format descriptions.
+The default value is [`CGSizeZero`](../../CoreGraphics/cgsizezero.md), which indicates the system sets the natural size according to the dimensions of the output track’s format descriptions.
 
 You can’t set this value after writing starts.
 
 ## See Also
 
-- [var transform: CGAffineTransform](avassetwriterinput/transform.md)
+### Configuring presentation
+- [var transform: CGAffineTransform](./transform.md)
   The transform to use for display of the output’s visual media.
-- [var preferredVolume: Float](avassetwriterinput/preferredvolume.md)
+- [var preferredVolume: Float](./preferredvolume.md)
   The volume to prefer for playback of the output’s audio data.
-- [var mediaTimeScale: CMTimeScale](avassetwriterinput/mediatimescale.md)
+- [var mediaTimeScale: CMTimeScale](./mediatimescale.md)
   The time scale of the track in the output file.
-- [var marksOutputTrackAsEnabled: Bool](avassetwriterinput/marksoutputtrackasenabled.md)
+- [var marksOutputTrackAsEnabled: Bool](./marksoutputtrackasenabled.md)
   A Boolean value that indicates whether to enable a track in the output for playback and processing.
 
 

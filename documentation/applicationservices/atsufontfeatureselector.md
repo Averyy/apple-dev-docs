@@ -1,7 +1,8 @@
 # ATSUFontFeatureSelector
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ATSUFontFeatureSelector = UInt16
+```
+
+```c
+typedef UInt16 ATSUFontFeatureSelector;
 ```
 
 

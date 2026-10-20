@@ -1,7 +1,8 @@
 # draw(with:in:)
 
 **Framework**: PDFKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the annotation in a graphics context using page-space coordinates relative to the origin of the specified box.
 
@@ -19,6 +20,10 @@ Draws the annotation in a graphics context using page-space coordinates relative
 func draw(with box: PDFDisplayBox, in context: CGContext)
 ```
 
+```objc
+- (void) drawWithBox:(PDFDisplayBox) box inContext:(CGContextRef) context;
+```
+
 #### Discussion
 
 Page space is a 72 dpi coordinate system with the origin at the lower-left corner of the current page.
@@ -30,9 +35,10 @@ Page space is a 72 dpi coordinate system with the origin at the lower-left corne
 
 ## See Also
 
-- [var shouldDisplay: Bool](pdfannotation/shoulddisplay.md)
+### Managing Annotation Drawing and Output
+- [var shouldDisplay: Bool](./shoulddisplay.md)
   Returns a Boolean value indicating whether the annotation should be displayed.
-- [var shouldPrint: Bool](pdfannotation/shouldprint.md)
+- [var shouldPrint: Bool](./shouldprint.md)
   Returns a Boolean value indicating whether the annotation should appear when the document is printed.
 
 

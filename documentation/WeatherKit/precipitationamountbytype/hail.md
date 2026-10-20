@@ -1,7 +1,8 @@
 # hail
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of hail for the period.
 

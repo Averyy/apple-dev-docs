@@ -1,13 +1,14 @@
 # PKShareSecureElementPassError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 9.0+
 
@@ -20,46 +21,47 @@ struct PKShareSecureElementPassError
 ## Topics
 
 ### Type Properties
-- [static var errorDomain: String](pksharesecureelementpasserror/errordomain.md)
-- [static var setupError: PKShareSecureElementPassError.Code](pksharesecureelementpasserror/setuperror.md)
-- [static var unknownError: PKShareSecureElementPassError.Code](pksharesecureelementpasserror/unknownerror.md)
+- [static var errorDomain: String](./pksharesecureelementpasserror/errordomain.md)
+- [static var setupError: PKShareSecureElementPassError.Code](./pksharesecureelementpasserror/setuperror.md)
+- [static var unknownError: PKShareSecureElementPassError.Code](./pksharesecureelementpasserror/unknownerror.md)
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PKPassKitError](pkpasskiterror.md)
+### Errors
+- [struct PKPassKitError](./pkpasskiterror.md)
   Errors that the PassKit framework uses.
-- [struct PKAddSecureElementPassError](pkaddsecureelementpasserror.md)
+- [struct PKAddSecureElementPassError](./pkaddsecureelementpasserror.md)
   An error object that PassKit uses when it adds Secure Element passes.
-- [PKPassKitError.Code](pkpasskiterror/code.md)
+- [PKPassKitError.Code](./pkpasskiterror/code.md)
   Errors that the PassKit framework uses.
-- [PKAddSecureElementPassError.Code](pkaddsecureelementpasserror/code.md)
+- [PKAddSecureElementPassError.Code](./pkaddsecureelementpasserror/code.md)
   Error codes for problems that occur when you add a secure element passes.
-- [enum PKAddPaymentPassError](pkaddpaymentpasserror.md)
+- [enum PKAddPaymentPassError](./pkaddpaymentpasserror.md)
   Error codes for adding payment passes.
-- [struct PKIdentityError](pkidentityerror-swift.struct.md)
+- [struct PKIdentityError](./pkidentityerror-swift.struct.md)
   A structure that represents an identity error.
-- [PKIdentityError.Code](pkidentityerror-swift.struct/code.md)
+- [PKIdentityError.Code](./pkidentityerror-swift.struct/code.md)
   Error codes for identity operations.
-- [PKShareSecureElementPassError.Code](pksharesecureelementpasserror/code.md)
-- [enum PKVehicleConnectionErrorCode](pkvehicleconnectionerrorcode.md)
-- [enum PayWithApplePayButtonPaymentAuthorizationPhase](paywithapplepaybuttonpaymentauthorizationphase.md)
-- [let PKPassKitErrorDomain: String](pkpasskiterrordomain.md)
+- [PKShareSecureElementPassError.Code](./pksharesecureelementpasserror/code.md)
+- [enum PKVehicleConnectionErrorCode](./pkvehicleconnectionerrorcode.md)
+- [enum PayWithApplePayButtonPaymentAuthorizationPhase](./paywithapplepaybuttonpaymentauthorizationphase.md)
+- [let PKPassKitErrorDomain: String](./pkpasskiterrordomain.md)
   The error domain for PassKit errors.
-- [let PKIdentityErrorDomain: String](pkidentityerrordomain.md)
+- [let PKIdentityErrorDomain: String](./pkidentityerrordomain.md)
   The error domain for identity errors.
-- [let PKAddSecureElementPassErrorDomain: String](pkaddsecureelementpasserrordomain.md)
+- [let PKAddSecureElementPassErrorDomain: String](./pkaddsecureelementpasserrordomain.md)
   The error domain for errors that occur when adding a secure pass.
-- [let PKShareSecureElementPassErrorDomain: String](pksharesecureelementpasserrordomain.md)
+- [let PKShareSecureElementPassErrorDomain: String](./pksharesecureelementpasserrordomain.md)
 
 
 ---

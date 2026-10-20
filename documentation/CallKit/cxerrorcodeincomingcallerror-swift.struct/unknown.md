@@ -1,7 +1,8 @@
 # unknown
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An unknown error occurred.
 
@@ -20,13 +21,14 @@ static var unknown: CXErrorCodeIncomingCallError.Code { get }
 
 ## See Also
 
-- [static var callUUIDAlreadyExists: CXErrorCodeIncomingCallError.Code](cxerrorcodeincomingcallerror-swift.struct/calluuidalreadyexists.md)
+### Errors
+- [static var callUUIDAlreadyExists: CXErrorCodeIncomingCallError.Code](./calluuidalreadyexists.md)
   The incoming call UUID already exists.
-- [static var filteredByBlockList: CXErrorCodeIncomingCallError.Code](cxerrorcodeincomingcallerror-swift.struct/filteredbyblocklist.md)
+- [static var filteredByBlockList: CXErrorCodeIncomingCallError.Code](./filteredbyblocklist.md)
   The system is filtering the incoming call because the user is blocking it.
-- [static var filteredByDoNotDisturb: CXErrorCodeIncomingCallError.Code](cxerrorcodeincomingcallerror-swift.struct/filteredbydonotdisturb.md)
+- [static var filteredByDoNotDisturb: CXErrorCodeIncomingCallError.Code](./filteredbydonotdisturb.md)
   The system is filtering the incoming call because Do Not Disturb is active and the incoming caller isn’t a VIP.
-- [static var unentitled: CXErrorCodeIncomingCallError.Code](cxerrorcodeincomingcallerror-swift.struct/unentitled.md)
+- [static var unentitled: CXErrorCodeIncomingCallError.Code](./unentitled.md)
   The app doesn’t have the entitlement to receive incoming calls.
 
 

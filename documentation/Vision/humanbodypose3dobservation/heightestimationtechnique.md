@@ -1,7 +1,8 @@
 # heightEstimationTechnique
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The technique the framework uses to estimate body height.
 
@@ -21,13 +22,14 @@ let heightEstimationTechnique: HumanBodyPose3DObservation.EstimationTechnique
 
 ## See Also
 
-- [enum RequestDescriptor](requestdescriptor.md)
+### Inspecting an observation
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
-- [let bodyHeight: Measurement<UnitLength>](humanbodypose3dobservation/bodyheight.md)
+- [let bodyHeight: Measurement<UnitLength>](./bodyheight.md)
   The estimated human body height, in meters.
-- [let cameraOriginMatrix: simd_float4x4](humanbodypose3dobservation/cameraoriginmatrix.md)
+- [let cameraOriginMatrix: simd_float4x4](./cameraoriginmatrix.md)
   A transform from the skeleton hip to the camera.
-- [HumanBodyPose3DObservation.EstimationTechnique](humanbodypose3dobservation/estimationtechnique.md)
+- [HumanBodyPose3DObservation.EstimationTechnique](./estimationtechnique.md)
   Constants that identify body height estimation techniques.
 
 

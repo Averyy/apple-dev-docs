@@ -1,7 +1,8 @@
 # vfs_isupdate
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Determine if a mount update is in progress.
 
@@ -10,11 +11,11 @@ Determine if a mount update is in progress.
 
 ## Declaration
 
-```swift
+```c
 int vfs_isupdate(mount_t mp);
 ```
 
-#### Return_value
+#### Return Value
 
 Nonzero if a mount update is in progress, 0 otherwise.
 

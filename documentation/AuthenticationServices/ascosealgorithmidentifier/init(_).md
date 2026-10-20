@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the algorithm identifier.
 
@@ -24,9 +25,10 @@ init(_ rawValue: Int)
 
 ## See Also
 
-- [init(rawValue: Int)](ascosealgorithmidentifier/init(rawvalue:).md)
+### Creating the identifier
+- [init(rawValue: Int)](./init%28rawvalue%29.md)
   Creates the algorithm identifier.
-- [static var ES256: ASCOSEAlgorithmIdentifier](ascosealgorithmidentifier/es256.md)
+- [static var ES256: ASCOSEAlgorithmIdentifier](./es256.md)
   The ES256 algorithm.
 
 

@@ -1,11 +1,12 @@
 # CustomStringConvertible Implementations
 
-**Framework**: Apple CryptoKit
+**Framework**: Apple CryptoKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var description: String](messageauthenticationcode/description.md)
+- [var description: String](./description.md)
   A textual representation of this instance.
 
 

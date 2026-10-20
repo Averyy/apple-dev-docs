@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Natural Language  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a language tag with the given string as its raw value.
 
@@ -26,7 +27,8 @@ init(rawValue: String)
 
 ## See Also
 
-- [init(String)](nllanguage/init(_:).md)
+### Creating custom language tags
+- [init(String)](./init%28_%29.md)
   Creates a language tag with the given string.
 
 

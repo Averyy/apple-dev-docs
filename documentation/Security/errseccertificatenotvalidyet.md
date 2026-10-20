@@ -1,7 +1,8 @@
 # errSecCertificateNotValidYet
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate is not yet valid.
 
@@ -18,6 +19,10 @@ The certificate is not yet valid.
 
 ```swift
 var errSecCertificateNotValidYet: OSStatus { get }
+```
+
+```c
+errSecCertificateNotValidYet
 ```
 
 

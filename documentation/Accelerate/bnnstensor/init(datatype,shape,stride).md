@@ -1,7 +1,8 @@
 # init(dataType:shape:stride:)
 
 **Framework**: Accelerate  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an unallocated `BNNSTensor`
 

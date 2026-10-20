@@ -5,8 +5,8 @@
 ## Topics
 
 ### Constants
-- [var kAESocks4Protocol: Int](kaesocks4protocol.md)
-- [var kAESocks5Protocol: Int](kaesocks5protocol.md)
+- [var kAESocks4Protocol: Int](../kaesocks4protocol.md)
+- [var kAESocks5Protocol: Int](../kaesocks5protocol.md)
 
 
 ---

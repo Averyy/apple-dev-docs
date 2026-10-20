@@ -1,7 +1,8 @@
 # replaceCharacters(in:with:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the characters and attributes in a given range with the characters and attributes of the given attributed string.
 
@@ -20,9 +21,13 @@ Replaces the characters and attributes in a given range with the characters and 
 func replaceCharacters(in range: NSRange, with attrString: NSAttributedString)
 ```
 
+```objc
+- (void) replaceCharactersInRange:(NSRange) range withAttributedString:(NSAttributedString *) attrString;
+```
+
 #### Discussion
 
-Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
+Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 
 ## Parameters
 
@@ -31,11 +36,12 @@ Raises an [`rangeException`](nsexceptionname/rangeexception.md) if any part of `
 
 ## See Also
 
-- [func append(NSAttributedString)](nsmutableattributedstring/append(_:).md)
+### Changing Characters and Attributes
+- [func append(NSAttributedString)](./append%28_%29.md)
   Adds the characters and attributes of a given attributed string to the end of the receiver.
-- [func insert(NSAttributedString, at: Int)](nsmutableattributedstring/insert(_:at:).md)
+- [func insert(NSAttributedString, at: Int)](./insert%28_,at%29.md)
   Inserts the characters and attributes of the given attributed string into the receiver at the given index.
-- [func setAttributedString(NSAttributedString)](nsmutableattributedstring/setattributedstring(_:).md)
+- [func setAttributedString(NSAttributedString)](./setattributedstring%28_%29.md)
   Replaces the receiver’s entire contents with the characters and attributes of the given attributed string.
 
 

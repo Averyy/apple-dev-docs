@@ -1,7 +1,8 @@
 # render
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A tensor context that applies to render encoders.
 
@@ -19,9 +20,13 @@ A tensor context that applies to render encoders.
 static var render: MTLTensorUsage { get }
 ```
 
+```c
+MTLTensorUsageRender
+```
+
 #### Discussion
 
-You can use tensors with this context in [`MTL4RenderCommandEncoder`](mtl4rendercommandencoder.md) or [`MTLRenderCommandEncoder`](mtlrendercommandencoder.md) instances.
+You can use tensors with this context in [`MTL4RenderCommandEncoder`](../mtl4rendercommandencoder.md) or [`MTLRenderCommandEncoder`](../mtlrendercommandencoder.md) instances.
 
 
 ---

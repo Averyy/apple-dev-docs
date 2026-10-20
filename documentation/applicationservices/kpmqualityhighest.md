@@ -1,7 +1,8 @@
 # kPMQualityHighest
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies to use the highest print quality available to the printer.
 

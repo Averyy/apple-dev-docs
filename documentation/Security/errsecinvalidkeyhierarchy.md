@@ -1,7 +1,8 @@
 # errSecInvalidKeyHierarchy
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An invalid key hierarchy was detected.
 
@@ -18,6 +19,10 @@ An invalid key hierarchy was detected.
 
 ```swift
 var errSecInvalidKeyHierarchy: OSStatus { get }
+```
+
+```c
+errSecInvalidKeyHierarchy
 ```
 
 

@@ -1,25 +1,27 @@
 # sendSize
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 uint32_t sendSize;
 ```
 
 ## See Also
 
-- [message](iorpc/message.md)
-- [reply](iorpc/reply.md)
-- [replySize](iorpc/replysize.md)
+### Getting the Properties
+- [message](./message.md)
+- [reply](./reply.md)
+- [replySize](./replysize.md)
 
 
 ---

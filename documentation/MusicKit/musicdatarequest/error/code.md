@@ -1,7 +1,8 @@
 # code
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The specific code for the underlying cause of the error.
 

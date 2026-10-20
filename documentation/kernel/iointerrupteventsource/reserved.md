@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 ExpansionData *reserved;
 ```
 
@@ -15,12 +15,13 @@ Reserved for future use. (Internal use only)
 
 ## See Also
 
-- [provider](iointerrupteventsource/provider.md)
-- [producerCount](iointerrupteventsource/producercount.md)
-- [intIndex](iointerrupteventsource/intindex.md)
-- [explicitDisable](iointerrupteventsource/explicitdisable.md)
-- [consumerCount](iointerrupteventsource/consumercount.md)
-- [autoDisable](iointerrupteventsource/autodisable.md)
+### Instance Variables
+- [provider](./provider.md)
+- [producerCount](./producercount.md)
+- [intIndex](./intindex.md)
+- [explicitDisable](./explicitdisable.md)
+- [consumerCount](./consumercount.md)
+- [autoDisable](./autodisable.md)
 
 
 ---

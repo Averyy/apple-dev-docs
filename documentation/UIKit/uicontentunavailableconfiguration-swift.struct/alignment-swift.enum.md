@@ -1,7 +1,8 @@
 # UIContentUnavailableConfiguration.Alignment
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants to define the alignment of views in a content-unavailable view.
 
@@ -10,7 +11,7 @@ Constants to define the alignment of views in a content-unavailable view.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,16 +22,16 @@ enum Alignment
 ## Topics
 
 ### Enumeration Cases
-- [UIContentUnavailableConfiguration.Alignment.center](uicontentunavailableconfiguration-swift.struct/alignment-swift.enum/center.md)
+- [UIContentUnavailableConfiguration.Alignment.center](./alignment-swift.enum/center.md)
   Views with centered alignment.
-- [UIContentUnavailableConfiguration.Alignment.natural](uicontentunavailableconfiguration-swift.struct/alignment-swift.enum/natural.md)
+- [UIContentUnavailableConfiguration.Alignment.natural](./alignment-swift.enum/natural.md)
   The default alignment for the current locale.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 
 ---

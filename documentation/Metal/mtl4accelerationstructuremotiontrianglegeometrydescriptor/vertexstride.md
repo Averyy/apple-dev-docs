@@ -1,7 +1,8 @@
 # vertexStride
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the stride, in bytes, between vertices in all the vertex buffer.
 
@@ -19,13 +20,17 @@ Sets the stride, in bytes, between vertices in all the vertex buffer.
 var vertexStride: Int { get set }
 ```
 
+```objc
+@property (nonatomic) NSUInteger vertexStride;
+```
+
 #### Discussion
 
-All keyframes share the same vertex stride. This stride needs to be a multiple of the size of the vertex format you provide in the [`vertexFormat`](mtl4accelerationstructuremotiontrianglegeometrydescriptor/vertexformat.md) property.
+All keyframes share the same vertex stride. This stride needs to be a multiple of the size of the vertex format you provide in the [`vertexFormat`](./vertexformat.md) property.
 
 Similarly, you are responsible for ensuring this stride matches the vertex format data type’s alignment.
 
-Defaults to `0`, which signals the stride matches the size of the [`vertexFormat`](mtl4accelerationstructuremotiontrianglegeometrydescriptor/vertexformat.md) data.
+Defaults to `0`, which signals the stride matches the size of the [`vertexFormat`](./vertexformat.md) data.
 
 
 ---

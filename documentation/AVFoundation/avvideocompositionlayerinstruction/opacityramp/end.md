@@ -1,7 +1,8 @@
 # end
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -19,8 +20,9 @@ var end: Float
 
 ## See Also
 
-- [var start: Float](avvideocompositionlayerinstruction/opacityramp/start.md)
-- [var timeRange: CMTimeRange](avvideocompositionlayerinstruction/opacityramp/timerange.md)
+### Inspecting the opacity ramp
+- [var start: Float](./start.md)
+- [var timeRange: CMTimeRange](./timerange.md)
 
 
 ---

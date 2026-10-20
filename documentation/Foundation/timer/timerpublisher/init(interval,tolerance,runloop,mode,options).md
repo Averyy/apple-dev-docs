@@ -1,7 +1,8 @@
 # init(interval:tolerance:runLoop:mode:options:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that repeatedly emits the current date on the given interval.
 

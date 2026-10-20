@@ -1,7 +1,8 @@
 # ASError.Code.extensionNotFound
 
 **Framework**: AccessorySetupKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The framework couldn’t find the app extension.
 
@@ -15,11 +16,16 @@ The framework couldn’t find the app extension.
 case extensionNotFound
 ```
 
+```c
+ASErrorCodeExtensionNotFound
+```
+
 ## See Also
 
-- [ASError.Code.userRestricted](aserror/code/userrestricted.md)
+### Configuration errors
+- [ASError.Code.userRestricted](./userrestricted.md)
   The person using the app restricted access.
-- [ASError.Code.invalidRequest](aserror/code/invalidrequest.md)
+- [ASError.Code.invalidRequest](./invalidrequest.md)
   The session received an invalid request.
 
 

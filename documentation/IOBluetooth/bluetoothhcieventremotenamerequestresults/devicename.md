@@ -1,15 +1,20 @@
 # deviceName
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var deviceName: BluetoothDeviceName
+```
+
+```c
+BluetoothDeviceName deviceName;
 ```
 
 

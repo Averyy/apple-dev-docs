@@ -1,7 +1,8 @@
 # InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships.OfferCode
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an In-App Purchase offer code custom code for data relationships.
 
@@ -10,14 +11,14 @@ The request body you use to create an In-App Purchase offer code custom code for
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships.OfferCode
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships.OfferCode.Data](inapppurchaseoffercodecustomcodecreaterequest/data-data.dictionary/relationships-data.dictionary/offercode-data.dictionary/data-data.dictionary.md)
+- [object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships.OfferCode.Data](./offercode-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 
 ## Properties

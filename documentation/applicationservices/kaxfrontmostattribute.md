@@ -1,7 +1,8 @@
 # kAXFrontmostAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates whether the application represented by this accessibility object is active. This attribute is recommended for all application-level accessibility objects.
 
@@ -12,6 +13,10 @@ Indicates whether the application represented by this accessibility object is ac
 
 ```swift
 var kAXFrontmostAttribute: String { get }
+```
+
+```c
+#define kAXFrontmostAttribute
 ```
 
 

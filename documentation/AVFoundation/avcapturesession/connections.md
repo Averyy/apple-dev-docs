@@ -1,7 +1,8 @@
 # connections
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The connections between inputs and outputs that a capture session contains.
 
@@ -19,23 +20,28 @@ The connections between inputs and outputs that a capture session contains.
 var connections: [AVCaptureConnection] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVCaptureConnection *> * connections;
+```
+
 #### Discussion
 
-A capture session automatically forms connections between inputs and outputs when you call the [`addInput(_:)`](avcapturesession/addinput(_:).md) or [`addOutput(_:)`](avcapturesession/addoutput(_:).md) methods. You can explicitly add connections to a session by calling the [`addConnection(_:)`](avcapturesession/addconnection(_:).md) method.
+A capture session automatically forms connections between inputs and outputs when you call the [`addInput(_:)`](./addinput%28_%29.md) or [`addOutput(_:)`](./addoutput%28_%29.md) methods. You can explicitly add connections to a session by calling the [`addConnection(_:)`](./addconnection%28_%29.md) method.
 
 ## See Also
 
-- [func addConnection(AVCaptureConnection)](avcapturesession/addconnection(_:).md)
+### Connecting inputs and outputs
+- [func addConnection(AVCaptureConnection)](./addconnection%28_%29.md)
   Adds a connection to the capture session.
-- [func canAddConnection(AVCaptureConnection) -> Bool](avcapturesession/canaddconnection(_:).md)
+- [func canAddConnection(AVCaptureConnection) -> Bool](./canaddconnection%28_%29.md)
   Determines whether a you can add a connection to a capture session.
-- [func addInputWithNoConnections(AVCaptureInput)](avcapturesession/addinputwithnoconnections(_:).md)
+- [func addInputWithNoConnections(AVCaptureInput)](./addinputwithnoconnections%28_%29.md)
   Adds a capture input to a session without forming any connections.
-- [func addOutputWithNoConnections(AVCaptureOutput)](avcapturesession/addoutputwithnoconnections(_:).md)
+- [func addOutputWithNoConnections(AVCaptureOutput)](./addoutputwithnoconnections%28_%29.md)
   Adds a capture output to the session without forming any connections.
-- [func removeConnection(AVCaptureConnection)](avcapturesession/removeconnection(_:).md)
+- [func removeConnection(AVCaptureConnection)](./removeconnection%28_%29.md)
   Removes a capture connection from the session.
-- [class AVCaptureAudioChannel](avcaptureaudiochannel.md)
+- [class AVCaptureAudioChannel](../avcaptureaudiochannel.md)
   An object that monitors average and peak power levels for an audio channel in a capture connection.
 
 

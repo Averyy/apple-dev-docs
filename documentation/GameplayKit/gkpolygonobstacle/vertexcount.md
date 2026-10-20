@@ -1,7 +1,8 @@
 # vertexCount
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of vertices that define the polygon-shaped area of the obstacle.
 
@@ -19,13 +20,18 @@ The number of vertices that define the polygon-shaped area of the obstacle.
 var vertexCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSUInteger vertexCount;
+```
+
 #### Discussion
 
-Obstacles are immutable objects; to change the shape of an obstacle, remove it and create a new obstacle with a new list of vertices. Use this property along with the [`vertex(at:)`](gkpolygonobstacle/vertex(at:).md) method to inspect an existing obstacle—for example, to draw a debugging overlay representing the obstacle in your game.
+Obstacles are immutable objects; to change the shape of an obstacle, remove it and create a new obstacle with a new list of vertices. Use this property along with the [`vertex(at:)`](./vertex%28at%29.md) method to inspect an existing obstacle—for example, to draw a debugging overlay representing the obstacle in your game.
 
 ## See Also
 
-- [func vertex(at: Int) -> vector_float2](gkpolygonobstacle/vertex(at:).md)
+### Inspecting Vertices
+- [func vertex(at: Int) -> vector_float2](./vertex%28at%29.md)
   Returns the point coordinates of the specified vertex.
 
 

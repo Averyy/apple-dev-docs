@@ -1,7 +1,8 @@
 # AccessibilityNotification
 
 **Framework**: Accessibility  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Types of accessibility notifications that an app can post.
 
@@ -29,18 +30,18 @@ Accessibility notifications provide a unified, multiplatform way for your app to
 - *Screen change* to indicate when a new view appears that occupies a major portion of the screen
 - *Page scroll* to indicate when a scroll action completes
 
-For announcement notifications, you can set a priority to specify the announcement’s importance relative to other announcements that are in the queue for an assistive app to speak. For more information, see [`AccessibilityNotification.Announcement`](accessibilitynotification/announcement.md).
+For announcement notifications, you can set a priority to specify the announcement’s importance relative to other announcements that are in the queue for an assistive app to speak. For more information, see [`AccessibilityNotification.Announcement`](./accessibilitynotification/announcement.md).
 
 ## Topics
 
 ### Notifications
-- [AccessibilityNotification.Announcement](accessibilitynotification/announcement.md)
+- [AccessibilityNotification.Announcement](./accessibilitynotification/announcement.md)
   A notification that an app posts when it needs to convey an announcement to an assistive app.
-- [AccessibilityNotification.LayoutChanged](accessibilitynotification/layoutchanged.md)
+- [AccessibilityNotification.LayoutChanged](./accessibilitynotification/layoutchanged.md)
   A notification that an app posts when the layout of a screen changes.
-- [AccessibilityNotification.ScreenChanged](accessibilitynotification/screenchanged.md)
+- [AccessibilityNotification.ScreenChanged](./accessibilitynotification/screenchanged.md)
   A notification that an app posts when a new view appears that occupies a major portion of the screen.
-- [AccessibilityNotification.PageScrolled](accessibilitynotification/pagescrolled.md)
+- [AccessibilityNotification.PageScrolled](./accessibilitynotification/pagescrolled.md)
   A notification that an app posts when a scroll action completes.
 
 

@@ -1,7 +1,8 @@
 # insertItems(withIdentifiers:afterItemWithIdentifier:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Inserts the provided items immediately after the item with the specified identifier in the snapshot.
 
@@ -18,6 +19,10 @@ Inserts the provided items immediately after the item with the specified identif
 func insertItems(withIdentifiers identifiers: [Any], afterItemWithIdentifier itemIdentifier: Any)
 ```
 
+```objc
+- (void) insertItemsWithIdentifiers:(NSArray<id> *) identifiers afterItemWithIdentifier:(ItemIdentifierType) itemIdentifier;
+```
+
 ## Parameters
 
 - `identifiers`: The array of identifiers corresponding to the items to add to the snapshot.
@@ -25,11 +30,12 @@ func insertItems(withIdentifiers identifiers: [Any], afterItemWithIdentifier ite
 
 ## See Also
 
-- [func insertItems(withIdentifiers: [Any], beforeItemWithIdentifier: Any)](nsdiffabledatasourcesnapshotreference/insertitems(withidentifiers:beforeitemwithidentifier:).md)
+### Inserting items and sections
+- [func insertItems(withIdentifiers: [Any], beforeItemWithIdentifier: Any)](./insertitems%28withidentifiers,beforeitemwithidentifier%29.md)
   Inserts the provided items immediately before the item with the specified identifier in the snapshot.
-- [func insertSections(withIdentifiers: [Any], afterSectionWithIdentifier: Any)](nsdiffabledatasourcesnapshotreference/insertsections(withidentifiers:aftersectionwithidentifier:).md)
+- [func insertSections(withIdentifiers: [Any], afterSectionWithIdentifier: Any)](./insertsections%28withidentifiers,aftersectionwithidentifier%29.md)
   Inserts the provided sections immediately after the section with the specified identifier in the snapshot.
-- [func insertSections(withIdentifiers: [Any], beforeSectionWithIdentifier: Any)](nsdiffabledatasourcesnapshotreference/insertsections(withidentifiers:beforesectionwithidentifier:).md)
+- [func insertSections(withIdentifiers: [Any], beforeSectionWithIdentifier: Any)](./insertsections%28withidentifiers,beforesectionwithidentifier%29.md)
   Inserts the provided sections immediately before the section with the specified identifier in the snapshot.
 
 

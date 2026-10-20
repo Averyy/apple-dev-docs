@@ -1,7 +1,8 @@
 # PhotogrammetrySession.Request.modelFile(url:detail:geometry:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An object-creation request saved to a USDZ file or a folder (for OBJ output).
 
@@ -25,11 +26,12 @@ case modelFile(url: URL, detail: PhotogrammetrySession.Request.Detail = .reduced
 
 ## See Also
 
-- [case modelEntity(detail: PhotogrammetrySession.Request.Detail, geometry: PhotogrammetrySession.Request.Geometry?)](photogrammetrysession/request/modelentity(detail:geometry:).md)
+### Specifying the output
+- [case modelEntity(detail: PhotogrammetrySession.Request.Detail, geometry: PhotogrammetrySession.Request.Geometry?)](./modelentity%28detail,geometry%29.md)
   An object-creation request stored in-memory for immediate display.
-- [PhotogrammetrySession.Request.bounds](photogrammetrysession/request/bounds.md)
+- [PhotogrammetrySession.Request.bounds](./bounds.md)
   An object-creation request that returns a box the same size as the created model.
-- [PhotogrammetrySession.Request.Detail](photogrammetrysession/request/detail.md)
+- [PhotogrammetrySession.Request.Detail](./detail.md)
   Supported levels of detail for a request.
 
 

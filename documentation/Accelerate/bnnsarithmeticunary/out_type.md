@@ -1,18 +1,21 @@
 # out_type
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descriptor type of the output.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 18.0
+- iPadOS 14.0+ - Deprecated in 18.0
+- Mac Catalyst 14.0+ - Deprecated in 18.0
+- macOS 11.0+ - Deprecated in 15.0
+- tvOS 14.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 7.0+ - Deprecated in 11.0
+
+> **Deprecated**: Use BNNSGraph* APIs
 
 ## Declaration
 
@@ -20,13 +23,18 @@ The descriptor type of the output.
 var out_type: BNNSDescriptorType
 ```
 
+```c
+BNNSDescriptorType out_type;
+```
+
 ## See Also
 
-- [var `in`: BNNSNDArrayDescriptor](bnnsarithmeticunary/in.md)
+### Inspecting the Properties of an Arithmetic Structure
+- [var `in`: BNNSNDArrayDescriptor](./in.md)
   The descriptor of the input.
-- [var in_type: BNNSDescriptorType](bnnsarithmeticunary/in_type.md)
+- [var in_type: BNNSDescriptorType](./in_type.md)
   The descriptor type of the input.
-- [var out: BNNSNDArrayDescriptor](bnnsarithmeticunary/out.md)
+- [var out: BNNSNDArrayDescriptor](./out.md)
   The descriptor of the output.
 
 

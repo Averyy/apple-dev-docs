@@ -1,7 +1,8 @@
 # kAXCancelAction
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Simulates pressing a Cancel button.
 
@@ -12,6 +13,10 @@ Simulates pressing a Cancel button.
 
 ```swift
 var kAXCancelAction: String { get }
+```
+
+```c
+#define kAXCancelAction
 ```
 
 

@@ -1,7 +1,8 @@
 # accommodatePresentedSubitemDeletion(at:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that some entity wants to delete an item that is inside of a presented directory.
 
@@ -17,7 +18,15 @@ Tells the delegate that some entity wants to delete an item that is inside of a 
 ## Declaration
 
 ```swift
+optional func accommodatePresentedSubitemDeletion(at url: URL, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 optional func accommodatePresentedSubitemDeletion(at url: URL) async throws
+```
+
+```objc
+- (void) accommodatePresentedSubitemDeletionAtURL:(NSURL *) url completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
 #### Discussion
@@ -29,15 +38,16 @@ This method is relevant for applications that present directories. This might oc
 ## Parameters
 
 - `url`: The URL of the item being deleted from the presented directory. The item need not be at the top level of the presented directory but may itself be inside a nested subdirectory.
-- `completionHandler`: The [`Block object`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) to call after updating your data structures. Pass `nil` to the block’s `errorOrNil` parameter if you were able to successfully prepare for the deletion of the item. Pass an error object if your object could not prepare itself properly.
+- `completionHandler`: The [Block object](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Block.html#//apple_ref/doc/uid/TP40008195-CH3) to call after updating your data structures. Pass `nil` to the block’s `errorOrNil` parameter if you were able to successfully prepare for the deletion of the item. Pass an error object if your object could not prepare itself properly.
 
 ## See Also
 
-- [func presentedSubitemDidAppear(at: URL)](nsfilepresenter/presentedsubitemdidappear(at:).md)
+### Handling Changes to a Presented Directory
+- [func presentedSubitemDidAppear(at: URL)](./presentedsubitemdidappear%28at%29.md)
   Tells the delegate that an item was added to the presented directory.
-- [func presentedSubitem(at: URL, didMoveTo: URL)](nsfilepresenter/presentedsubitem(at:didmoveto:).md)
+- [func presentedSubitem(at: URL, didMoveTo: URL)](./presentedsubitem%28at,didmoveto%29.md)
   Tells the delegate that an item in the presented directory moved to a new location.
-- [func presentedSubitemDidChange(at: URL)](nsfilepresenter/presentedsubitemdidchange(at:).md)
+- [func presentedSubitemDidChange(at: URL)](./presentedsubitemdidchange%28at%29.md)
   Tells the delegate that the contents or attributes of the specified item changed.
 
 

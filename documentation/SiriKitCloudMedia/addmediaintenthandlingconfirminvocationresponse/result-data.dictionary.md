@@ -1,7 +1,8 @@
 # AddMediaIntentHandlingConfirmInvocationResponse.Result
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The result of receiving the user’s confirmation that they want to add the media items to the destination.
 
@@ -10,7 +11,7 @@ The result of receiving the user’s confirmation that they want to add the medi
 
 ## Declaration
 
-```swift
+```
 object AddMediaIntentHandlingConfirmInvocationResponse.Result
 ```
 

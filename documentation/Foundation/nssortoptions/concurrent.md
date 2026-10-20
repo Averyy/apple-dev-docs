@@ -1,7 +1,8 @@
 # concurrent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies that the Block sort operation should be concurrent.
 
@@ -20,13 +21,18 @@ Specifies that the Block sort operation should be concurrent.
 static var concurrent: NSSortOptions { get }
 ```
 
+```c
+NSSortConcurrent
+```
+
 #### Discussion
 
 This option is a hint and may be ignored by the implementation under some circumstances; the code of the Block must be safe against concurrent invocation.
 
 ## See Also
 
-- [static var stable: NSSortOptions](nssortoptions/stable.md)
+### Constants
+- [static var stable: NSSortOptions](./stable.md)
   Specifies that the sorted results should return compared items having equal value in the order they occurred originally.
 
 

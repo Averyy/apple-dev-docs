@@ -1,10 +1,11 @@
 # DOMXPathExceptionCode
 
 **Framework**: WebKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -12,32 +13,37 @@
 struct DOMXPathExceptionCode
 ```
 
+```c
+enum DOMXPathExceptionCode : unsigned int;
+```
+
 ## Topics
 
 ### Constants
-- [var DOM_INVALID_EXPRESSION_ERR: DOMXPathExceptionCode](dom_invalid_expression_err.md)
-- [var DOM_TYPE_ERR: DOMXPathExceptionCode](dom_type_err.md)
+- [var DOM_INVALID_EXPRESSION_ERR: DOMXPathExceptionCode](./dom_invalid_expression_err.md)
+- [var DOM_TYPE_ERR: DOMXPathExceptionCode](./dom_type_err.md)
 ### Initializers
-- [init(UInt32)](domxpathexceptioncode/init(_:).md)
-- [init(rawValue: UInt32)](domxpathexceptioncode/init(rawvalue:).md)
+- [init(UInt32)](./domxpathexceptioncode/init%28_%29.md)
+- [init(rawValue: UInt32)](./domxpathexceptioncode/init%28rawvalue%29.md)
 ### Instance Properties
-- [var rawValue: UInt32](domxpathexceptioncode/rawvalue.md)
+- [var rawValue: UInt32](./domxpathexceptioncode/rawvalue.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias DOMTimeStamp](domtimestamp.md)
-- [struct DOMEventExceptionCode](domeventexceptioncode.md)
-- [struct DOMExceptionCode](domexceptioncode.md)
-- [struct DOMRangeExceptionCode](domrangeexceptioncode.md)
+### Data Types
+- [typealias DOMTimeStamp](./domtimestamp.md)
+- [struct DOMEventExceptionCode](./domeventexceptioncode.md)
+- [struct DOMExceptionCode](./domexceptioncode.md)
+- [struct DOMRangeExceptionCode](./domrangeexceptioncode.md)
 
 
 ---

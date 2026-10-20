@@ -1,7 +1,8 @@
 # SharedBudget
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A budget order.
 
@@ -10,7 +11,7 @@ A budget order.
 
 ## Declaration
 
-```swift
+```
 object SharedBudget
 ```
 
@@ -53,12 +54,12 @@ The `systemStatus` field reflects whether the budget is currently usable. Common
 ## Topics
 
 ### Dictionaries
-- [object SharedBudget.InvoiceDetail](sharedbudget/invoicedetail-data.dictionary.md)
+- [object SharedBudget.InvoiceDetail](./sharedbudget/invoicedetail-data.dictionary.md)
   Invoice billing details for accounts on the Line of Credit (LOC) payment model.
 ### Type Aliases
-- [type SharedBudget.SystemStatus](sharedbudget/systemstatus-data.typealias.md)
+- [type SharedBudget.SystemStatus](./sharedbudget/systemstatus-data.typealias.md)
   The system-derived operational state of a budget order.
-- [type SharedBudget.SystemStatusReasons](sharedbudget/systemstatusreasons-data.typealias.md)
+- [type SharedBudget.SystemStatusReasons](./sharedbudget/systemstatusreasons-data.typealias.md)
   Reason codes explaining a budget order’s current system status.
 
 ## Properties
@@ -66,12 +67,12 @@ The `systemStatus` field reflects whether the budget is currently usable. Common
 - `name` (string): Non-empty string label for the budget order. Mutable.
 - `startTime` (date-time): The start date and time for this budget. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC (for example, `2026-06-07T00:00:00.000`). Must be tomorrow or later (midnight UTC). Today is rejected. Mutable.
 - `endTime` (date-time): The end date and time for this budget. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Must be after `startTime`. Omit for an open-ended budget. Mutable.
-- `value` (Money): The budget amount as a Money object with amount and ISO 4217 currency code. See [`Money`](money.md). Mutable.
+- `value` (Money): The budget amount as a Money object with amount and ISO 4217 currency code. See [`Money`](./money.md). Mutable.
 - `adAccountIds` ([int64]): The ad account IDs this budget order applies to. At least one ID is required. Mutable.
 - `orgId` (int64): The identifier of the organization that owns this budget order. Read-only.
-- `systemStatus` (SharedBudget.SystemStatus): Current system status of this budget order. See [`BudgetSystemStatus`](budgetsystemstatus.md). Read-only.
+- `systemStatus` (SharedBudget.SystemStatus): Current system status of this budget order. See [`BudgetSystemStatus`](./budgetsystemstatus.md). Read-only.
 - `systemStatusReasons` ([SharedBudget.SystemStatusReasons]): Status reasons applied based on system factors. Values: `CANCELED`, `CAMPAIGN_BUDGET_UNASSIGNED`, `DELETED_BY_USER`, `EXHAUSTED`, `PROCESSING`, `SCHEDULE_EXPIRED`, `SCHEDULE_PENDING`. Read-only.
-- `invoiceDetail` (SharedBudget.InvoiceDetail): Invoice details required on create for Line of Credit accounts. Required fields: `name`, `primaryBuyerName`, `primaryBuyerEmail`, `billingEmail`. `clientName` and `orderNumber` are optional and nullable. See [`InvoiceDetail`](invoicedetail.md). Mutable.
+- `invoiceDetail` (SharedBudget.InvoiceDetail): Invoice details required on create for Line of Credit accounts. Required fields: `name`, `primaryBuyerName`, `primaryBuyerEmail`, `billingEmail`. `clientName` and `orderNumber` are optional and nullable. See [`InvoiceDetail`](./invoicedetail.md). Mutable.
 - `id` (int64): The unique budget identifier. Read-only.
 - `creationTime` (date-time): Timestamp when the budget was created. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Read-only.
 - `modificationTime` (date-time): Timestamp of the last modification. Format: `yyyy-MM-dd'T'HH:mm:ss.SSS` in UTC. Read-only.
@@ -79,23 +80,23 @@ The `systemStatus` field reflects whether the budget is currently usable. Common
 
 ## See Also
 
-- [object SharedBudgetCreate](sharedbudgetcreate.md)
+- [object SharedBudgetCreate](./sharedbudgetcreate.md)
   The request body for creating a new budget order.
-- [object SharedBudgetUpdate](sharedbudgetupdate.md)
+- [object SharedBudgetUpdate](./sharedbudgetupdate.md)
   Request body for updating an existing budget order.
-- [object SharedBudgetResponse](sharedbudgetresponse.md)
+- [object SharedBudgetResponse](./sharedbudgetresponse.md)
   The response object for a single budget order operation.
-- [object SharedBudgetQueryResponse](sharedbudgetqueryresponse.md)
+- [object SharedBudgetQueryResponse](./sharedbudgetqueryresponse.md)
   The response object for a budget order query.
-- [object SharedBudgetAssignment](sharedbudgetassignment.md)
+- [object SharedBudgetAssignment](./sharedbudgetassignment.md)
   Represents a single budget order assignment within a campaign’s `sharedBudgets` array.
-- [object SharedBudgetAssignmentCreate](sharedbudgetassignmentcreate.md)
+- [object SharedBudgetAssignmentCreate](./sharedbudgetassignmentcreate.md)
   Request payload for assigning a campaign to a budget order at campaign creation time.
-- [object SharedBudgetAssignmentUpdate](sharedbudgetassignmentupdate.md)
+- [object SharedBudgetAssignmentUpdate](./sharedbudgetassignmentupdate.md)
   Request payload for changing or removing a campaign’s budget order assignment.
-- [object InvoiceDetail](invoicedetail.md)
+- [object InvoiceDetail](./invoicedetail.md)
   Invoice billing details for accounts on the Line of Credit (LOC) payment model.
-- [object InvoiceDetailUpdate](invoicedetailupdate.md)
+- [object InvoiceDetailUpdate](./invoicedetailupdate.md)
   The request body for updating the invoice details of a budget order.
 
 

@@ -1,7 +1,8 @@
 # AccountExchangeSMIMEObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Settings for S/MIME. Applicable for “EAS” only.
 
@@ -13,16 +14,16 @@ Settings for S/MIME. Applicable for “EAS” only.
 
 ## Declaration
 
-```swift
+```
 object AccountExchangeSMIMEObject
 ```
 
 ## Topics
 
 ### Objects
-- [object AccountExchangeSMIME_EncryptionObject](accountexchangesmime_encryptionobject.md)
+- [object AccountExchangeSMIME_EncryptionObject](./accountexchangesmime_encryptionobject.md)
   Settings for S/MIME encryption. Applicable for “EAS” only.
-- [object AccountExchangeSMIME_SigningObject](accountexchangesmime_signingobject.md)
+- [object AccountExchangeSMIME_SigningObject](./accountexchangesmime_signingobject.md)
   Settings for S/MIME signing. Applicable for “EAS” only.
 
 ## Properties
@@ -32,7 +33,8 @@ object AccountExchangeSMIMEObject
 
 ## See Also
 
-- [object AccountExchangeOAuthObject](accountexchangeoauthobject.md)
+### Objects
+- [object AccountExchangeOAuthObject](./accountexchangeoauthobject.md)
   The configuration settings for OAuth for this account.
 
 

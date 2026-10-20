@@ -1,16 +1,17 @@
 # r_scattered
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-If this bit is 0, this structure is actually a [`relocation_info`](relocation_info.md) structure.
+If this bit is 0, this structure is actually a [`relocation_info`](../relocation_info.md) structure.
 
 **Availability**:
 - macOS 10.8+
 
 ## Declaration
 
-```swift
+```c
 uint32_t r_scattered:1;
 ```
 

@@ -1,7 +1,8 @@
 # previewItemTitle
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 4.0+
@@ -13,6 +14,10 @@
 
 ```swift
 optional var previewItemTitle: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * previewItemTitle;
 ```
 
 #### Discussion

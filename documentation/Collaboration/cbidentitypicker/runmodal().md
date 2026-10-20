@@ -1,7 +1,8 @@
 # runModal()
 
 **Framework**: Collaboration  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Runs the receiver as an application-modal dialog.
 
@@ -14,6 +15,10 @@ Runs the receiver as an application-modal dialog.
 func runModal() -> Int
 ```
 
+```objc
+- (NSInteger) runModal;
+```
+
 #### Return Value
 
 `NSOKButton` if the user selected OK; otherwise,  `NSCancelButton`.
@@ -24,9 +29,10 @@ The receiver may create identities for selected records if necessary.
 
 ## See Also
 
-- [func runModal(for: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](cbidentitypicker/runmodal(for:modaldelegate:didend:contextinfo:).md)
+### Running an Identity Picker
+- [func runModal(for: NSWindow, modalDelegate: Any?, didEnd: Selector?, contextInfo: UnsafeMutableRawPointer?)](./runmodal%28for,modaldelegate,didend,contextinfo%29.md)
   Runs the receiver modally as a sheet attached to a specified window.
-- [func runModal(for: NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](cbidentitypicker/runmodal(for:completionhandler:).md)
+- [func runModal(for: NSWindow, completionHandler: ((NSApplication.ModalResponse) -> Void)?)](./runmodal%28for,completionhandler%29.md)
   Runs the identity picker modally as a sheet attached to a specified window.
 
 

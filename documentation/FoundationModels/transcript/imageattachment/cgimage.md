@@ -1,7 +1,8 @@
 # cgImage
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image as a Core Graphics image.
 
@@ -21,11 +22,12 @@ var cgImage: CGImage { get }
 
 ## See Also
 
-- [var ciImage: CIImage](transcript/imageattachment/ciimage.md)
+### Inspecting an image attachment
+- [var ciImage: CIImage](./ciimage.md)
   The image as a Core Image image.
-- [var orientation: CGImagePropertyOrientation](transcript/imageattachment/orientation.md)
+- [var orientation: CGImagePropertyOrientation](./orientation.md)
   The display orientation of the image.
-- [var url: URL?](transcript/imageattachment/url.md)
+- [var url: URL?](./url.md)
   The URL of the original image asset, if the attachment was created from a URL.
 
 

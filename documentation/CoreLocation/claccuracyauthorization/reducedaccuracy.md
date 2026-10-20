@@ -1,7 +1,8 @@
 # CLAccuracyAuthorization.reducedAccuracy
 
 **Framework**: Core Location  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user authorized the app to access location data with reduced accuracy.
 
@@ -20,15 +21,20 @@ The user authorized the app to access location data with reduced accuracy.
 case reducedAccuracy
 ```
 
+```c
+CLAccuracyAuthorizationReducedAccuracy
+```
+
 ## Topics
 
 ### Related documentation
-- [var accuracyAuthorization: CLAccuracyAuthorization](cllocationmanager/accuracyauthorization.md)
+- [var accuracyAuthorization: CLAccuracyAuthorization](../cllocationmanager/accuracyauthorization.md)
   A value that indicates the level of location accuracy the app has permission to use.
 
 ## See Also
 
-- [CLAccuracyAuthorization.fullAccuracy](claccuracyauthorization/fullaccuracy.md)
+### Getting the location accuracy
+- [CLAccuracyAuthorization.fullAccuracy](./fullaccuracy.md)
   The user authorized the app to access location data with full accuracy.
 
 

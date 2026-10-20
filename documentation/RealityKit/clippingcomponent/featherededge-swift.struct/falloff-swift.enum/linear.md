@@ -1,7 +1,8 @@
 # ClippingComponent.FeatheredEdge.Falloff.linear
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 27.0+
@@ -19,7 +20,8 @@ case linear
 
 ## See Also
 
-- [ClippingComponent.FeatheredEdge.Falloff.cubic](clippingcomponent/featherededge-swift.struct/falloff-swift.enum/cubic.md)
+### Choosing the falloff curve
+- [ClippingComponent.FeatheredEdge.Falloff.cubic](./cubic.md)
 
 
 ---

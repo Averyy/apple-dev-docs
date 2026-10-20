@@ -1,7 +1,8 @@
 # accessibilityDecrement()
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the accessibility element to decrement the value of its content.
 
@@ -9,7 +10,7 @@ Tells the accessibility element to decrement the value of its content.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ Tells the accessibility element to decrement the value of its content.
 func accessibilityDecrement()
 ```
 
+```objc
+- (void) accessibilityDecrement;
+```
+
 #### Discussion
 
-If your element has the [`adjustable`](https://developer.apple.com/documentation/uikit/uiaccessibilitytraits/adjustable) trait, you must implement this method. Use this method to decrement the value of the element. For example, a [`UISlider`](https://developer.apple.com/documentation/uikit/uislider) object uses this method to decrement its value by an appropriate amount.
+If your element has the [`adjustable`](../../UIKit/uiaccessibilitytraits/adjustable.md) trait, you must implement this method. Use this method to decrement the value of the element. For example, a [`UISlider`](../../UIKit/uislider.md) object uses this method to decrement its value by an appropriate amount.
 
 ## See Also
 
-- [func accessibilityActivate() -> Bool](nsobject-swift.class/accessibilityactivate.md)
+### Performing an action
+- [func accessibilityActivate() -> Bool](./accessibilityactivate%28%29.md)
   Tells the element to activate itself and report the success or failure of the operation.
-- [func accessibilityIncrement()](nsobject-swift.class/accessibilityincrement.md)
+- [func accessibilityIncrement()](./accessibilityincrement%28%29.md)
   Tells the accessibility element to increment the value of its content.
-- [func accessibilityScroll(UIAccessibilityScrollDirection) -> Bool](nsobject-swift.class/accessibilityscroll(_:).md)
+- [func accessibilityScroll(UIAccessibilityScrollDirection) -> Bool](./accessibilityscroll%28_%29.md)
   Scrolls screen content in an application-specific way and returns the success or failure of the action.
-- [func accessibilityPerformEscape() -> Bool](nsobject-swift.class/accessibilityperformescape.md)
+- [func accessibilityPerformEscape() -> Bool](./accessibilityperformescape%28%29.md)
   Dismisses a modal view and returns the success or failure of the action.
-- [func accessibilityPerformMagicTap() -> Bool](nsobject-swift.class/accessibilityperformmagictap.md)
+- [func accessibilityPerformMagicTap() -> Bool](./accessibilityperformmagictap%28%29.md)
   Performs a salient action.
 
 

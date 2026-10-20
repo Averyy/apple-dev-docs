@@ -1,7 +1,8 @@
 # isFontPanelVisible
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the font panel is visible.
 
@@ -18,9 +19,14 @@ A Boolean value that indicates whether the font panel is visible.
 class var isFontPanelVisible: Bool { get }
 ```
 
+```objc
+@property (class, readonly, getter=isFontPanelVisible) BOOL fontPanelVisible;
+```
+
 ## See Also
 
-- [class func toggleFontPanel(Any)](uitextformattingcoordinator/togglefontpanel(_:).md)
+### Showing the Font Panel
+- [class func toggleFontPanel(Any)](./togglefontpanel%28_%29.md)
   Toggles the visibility of the font panel.
 
 

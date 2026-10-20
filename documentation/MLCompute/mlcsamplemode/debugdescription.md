@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual description of the sample mode, suitable for debugging.
 
@@ -18,10 +19,15 @@ A textual description of the sample mode, suitable for debugging.
 var debugDescription: String { get }
 ```
 
+```c
+NSString *MLCSampleModeDebugDescription(MLCSampleMode mode);
+```
+
 ## See Also
 
-- [MLCSampleMode.nearest](mlcsamplemode/nearest.md)
-- [MLCSampleMode.linear](mlcsamplemode/linear.md)
+### Enumeration Cases
+- [MLCSampleMode.nearest](./nearest.md)
+- [MLCSampleMode.linear](./linear.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # convTranspose(weight:strides:padding:outputPaddingValues:dilations:groupCount:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a transposed convolution operation to the current graph.
 
@@ -19,6 +20,8 @@ Adds a transposed convolution operation to the current graph.
 ```swift
 func convTranspose(weight: some BNNSGraph.Builder.OperationParameter<T>, strides: [Int], padding: BNNSGraph.Builder.ConvolutionPadding, outputPaddingValues: [Int]? = nil, dilations: [Int]? = nil, groupCount: Int = 1) -> BNNSGraph.Builder.Tensor<T>
 ```
+
+Available when `T` conforms to `BNNSScalar`.
 
 #### Discussion
 

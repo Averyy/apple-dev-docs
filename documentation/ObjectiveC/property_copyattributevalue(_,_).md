@@ -1,7 +1,8 @@
 # property_copyAttributeValue(_:_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the value of a property attribute given the attribute name.
 
@@ -20,6 +21,10 @@ Returns the value of a property attribute given the attribute name.
 func property_copyAttributeValue(_ property: objc_property_t, _ attributeName: UnsafePointer<CChar>) -> UnsafeMutablePointer<CChar>?
 ```
 
+```c
+extern char *property_copyAttributeValue(objc_property_t property, const char *attributeName);
+```
+
 #### Return Value
 
 The value string of the `attributeName` attribute, if one exists in `property`; otherwise, `nil`. You must free the returned value string with `free()`.
@@ -31,11 +36,12 @@ The value string of the `attributeName` attribute, if one exists in `property`; 
 
 ## See Also
 
-- [func property_getName(objc_property_t) -> UnsafePointer<CChar>](property_getname(_:).md)
+### Working with Properties
+- [func property_getName(objc_property_t) -> UnsafePointer<CChar>](./property_getname%28_%29.md)
   Returns the name of a property.
-- [func property_getAttributes(objc_property_t) -> UnsafePointer<CChar>?](property_getattributes(_:).md)
+- [func property_getAttributes(objc_property_t) -> UnsafePointer<CChar>?](./property_getattributes%28_%29.md)
   Returns the attribute string of a property.
-- [func property_copyAttributeList(objc_property_t, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<objc_property_attribute_t>?](property_copyattributelist(_:_:).md)
+- [func property_copyAttributeList(objc_property_t, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<objc_property_attribute_t>?](./property_copyattributelist%28_,_%29.md)
   Returns an array of property attributes for a given property.
 
 

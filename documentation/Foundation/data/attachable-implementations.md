@@ -1,11 +1,12 @@
 # Attachable Implementations
 
-**Framework**: Foundation
+**Framework**: Foundation  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func withUnsafeBytes<R>(for: borrowing Attachment<Data>, (UnsafeRawBufferPointer) throws -> R) throws -> R](data/withunsafebytes(for:_:).md)
+- [func withUnsafeBytes<R>(for: borrowing Attachment<Data>, (UnsafeRawBufferPointer) throws -> R) throws -> R](./withunsafebytes%28for,_%29.md)
 
 
 ---

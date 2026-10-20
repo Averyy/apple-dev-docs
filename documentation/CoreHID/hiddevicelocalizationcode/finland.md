@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.finland
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Finnish in the HID specification.
 

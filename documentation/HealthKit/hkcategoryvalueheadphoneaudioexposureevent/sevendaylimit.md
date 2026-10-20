@@ -1,7 +1,8 @@
 # HKCategoryValueHeadphoneAudioExposureEvent.sevenDayLimit
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Exposure to significant audio levels from headphones over a seven-day period.
 
@@ -17,6 +18,10 @@ Exposure to significant audio levels from headphones over a seven-day period.
 
 ```swift
 case sevenDayLimit
+```
+
+```c
+HKCategoryValueHeadphoneAudioExposureEventSevenDayLimit
 ```
 
 

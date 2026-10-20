@@ -1,7 +1,8 @@
 # WKMediaCaptureState.none
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The media device is off.
 
@@ -18,11 +19,16 @@ The media device is off.
 case none
 ```
 
+```c
+WKMediaCaptureStateNone
+```
+
 ## See Also
 
-- [WKMediaCaptureState.active](wkmediacapturestate/active.md)
+### Constants
+- [WKMediaCaptureState.active](./active.md)
   The media device is actively capturing audio or video.
-- [WKMediaCaptureState.muted](wkmediacapturestate/muted.md)
+- [WKMediaCaptureState.muted](./muted.md)
   The media device is muted, and not actively capturing audio or video.
 
 

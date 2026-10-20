@@ -1,17 +1,22 @@
 # webView(_:didClearWindowObject:for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called when the JavaScript window object in a frame is ready for loading.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 optional func webView(_ webView: WebView!, didClearWindowObject windowObject: WebScriptObject!, for frame: WebFrame!)
+```
+
+```objc
+- (void) webView:(WebView *) webView didClearWindowObject:(WebScriptObject *) windowObject forFrame:(WebFrame *) frame;
 ```
 
 #### Discussion

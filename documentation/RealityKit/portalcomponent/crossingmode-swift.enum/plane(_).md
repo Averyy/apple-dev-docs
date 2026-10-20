@@ -1,7 +1,8 @@
 # PortalComponent.CrossingMode.plane(_:)
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Allows contents within the portal to cross out of the portal along the provided plane.
 

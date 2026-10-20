@@ -1,10 +1,11 @@
 # bipolar
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,13 +13,18 @@
 static var bipolar: AUParameterMIDIMappingFlags { get }
 ```
 
+```c
+kAUParameterMIDIMapping_Bipolar
+```
+
 ## See Also
 
-- [static var anyChannelFlag: AUParameterMIDIMappingFlags](auparametermidimappingflags/anychannelflag.md)
-- [static var anyNoteFlag: AUParameterMIDIMappingFlags](auparametermidimappingflags/anynoteflag.md)
-- [static var bipolar_On: AUParameterMIDIMappingFlags](auparametermidimappingflags/bipolar_on.md)
-- [static var subRange: AUParameterMIDIMappingFlags](auparametermidimappingflags/subrange.md)
-- [static var toggle: AUParameterMIDIMappingFlags](auparametermidimappingflags/toggle.md)
+### Constants
+- [static var anyChannelFlag: AUParameterMIDIMappingFlags](./anychannelflag.md)
+- [static var anyNoteFlag: AUParameterMIDIMappingFlags](./anynoteflag.md)
+- [static var bipolar_On: AUParameterMIDIMappingFlags](./bipolar_on.md)
+- [static var subRange: AUParameterMIDIMappingFlags](./subrange.md)
+- [static var toggle: AUParameterMIDIMappingFlags](./toggle.md)
 
 
 ---

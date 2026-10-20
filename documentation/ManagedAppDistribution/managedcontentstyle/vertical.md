@@ -1,7 +1,8 @@
 # vertical
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 26.4+
@@ -15,9 +16,10 @@ static var vertical: ManagedContentStyle { get }
 
 ## See Also
 
-- [static var automatic: ManagedContentStyle](managedcontentstyle/automatic.md)
-- [static var compact: ManagedContentStyle](managedcontentstyle/compact.md)
-- [static var header: ManagedContentStyle](managedcontentstyle/header.md)
+### Determining styles
+- [static var automatic: ManagedContentStyle](./automatic.md)
+- [static var compact: ManagedContentStyle](./compact.md)
+- [static var header: ManagedContentStyle](./header.md)
 
 
 ---

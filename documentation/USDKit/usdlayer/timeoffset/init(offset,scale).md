@@ -1,7 +1,8 @@
 # init(offset:scale:)
 
 **Framework**: USDKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a time offset with the given shift and scale.
 

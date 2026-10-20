@@ -1,7 +1,8 @@
 # MACaptionAppearanceBehavior
 
 **Framework**: Media Accessibility  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A value that indicates the preferred behavior for a preference setting.
 
@@ -19,35 +20,40 @@ A value that indicates the preferred behavior for a preference setting.
 enum MACaptionAppearanceBehavior
 ```
 
+```c
+enum MACaptionAppearanceBehavior : CFIndex;
+```
+
 ## Topics
 
 ### Constants
-- [MACaptionAppearanceBehavior.useValue](macaptionappearancebehavior/usevalue.md)
+- [MACaptionAppearanceBehavior.useValue](./macaptionappearancebehavior/usevalue.md)
   The preference setting should always be used.
-- [MACaptionAppearanceBehavior.useContentIfAvailable](macaptionappearancebehavior/usecontentifavailable.md)
+- [MACaptionAppearanceBehavior.useContentIfAvailable](./macaptionappearancebehavior/usecontentifavailable.md)
   The preference setting should be used unless the content media being played has its own custom value for this setting.
 ### Initializers
-- [init?(rawValue: CFIndex)](macaptionappearancebehavior/init(rawvalue:).md)
+- [init?(rawValue: CFIndex)](./macaptionappearancebehavior/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MACaptionAppearanceDomain](macaptionappearancedomain.md)
+### Constants
+- [enum MACaptionAppearanceDomain](./macaptionappearancedomain.md)
   A value that specifies which domain to retrieve a preference setting from.
-- [enum MACaptionAppearanceDisplayType](macaptionappearancedisplaytype.md)
+- [enum MACaptionAppearanceDisplayType](./macaptionappearancedisplaytype.md)
   A value that specifies the type of captions to display.
-- [enum MACaptionAppearanceFontStyle](macaptionappearancefontstyle.md)
+- [enum MACaptionAppearanceFontStyle](./macaptionappearancefontstyle.md)
   A value that specifies a font style.
-- [enum MACaptionAppearanceTextEdgeStyle](macaptionappearancetextedgestyle.md)
+- [enum MACaptionAppearanceTextEdgeStyle](./macaptionappearancetextedgestyle.md)
   A value that specifies a style for the outside of the text.
 
 

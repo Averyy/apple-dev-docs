@@ -1,6 +1,8 @@
 # Synchronizing group gameplay with TabletopKit
 
-**Framework**: TabletopKit
+**Framework**: TabletopKit  
+**Role**: Sample Code  
+**Download**: [SynchronizingGroupGameplayWithTabletopKit.zip](https://docs-assets.developer.apple.com/published/d76d2acbb4f9/SynchronizingGroupGameplayWithTabletopKit.zip)
 
 Maintain game state across multiple players in a race to capture all the coins.
 
@@ -12,11 +14,13 @@ Maintain game state across multiple players in a race to capture all the coins.
 
 This sample code project demonstrates how to overcome the difficult task of maintaining a multiplayer game’s state in real time. TabletopKit supports automatic game-state synchronization by keeping gameplay items, such as player tokens, dice, coins, and scenery updates — all with positions and actions — in sync during a multiplayer game. TabletopKit also supports many more gameplay styles than the traditional board game layout.
 
-#### Set Up the App
+[Video: A video of a game where the player moves their character across the game stage to collect coins and avoid water. The player moves the character by pulling back in a slingshot motion while the character collects a coin.](https://developer.apple.com/tutorials/videos/com.apple.tabletopkit/tabletopkit-mini-game-01@2x.mp4)
 
-The TabletopKit app object creates an instance of the `Game` class, which sets up, observes, and renders the [`TabletopGame`](tabletopgame.md) state. `Game` equipment, objects that implement the [`Equipment`](equipment.md) protocol, represents all interactive portions of a game. The `Game` class also handles game start and reset, initiating programmatic interactions, and adding equipment reset actions. The `GameSetup` class initializes and positions all game equipment.
+#### Set up the app
 
-The `GameRenderer` class implements [`TabletopGame.RenderDelegate`](tabletopgame/renderdelegate.md), which loads assets and communicates when the game needs visual updates. The `GameObserver` class implements [`TabletopGame.Observer`](tabletopgame/observer.md) and indicates confirmed gameplay actions. You can define custom actions to modify the game state to your needs. The `CustomAction.swift` file in this sample contains custom actions to reset the players, decrement player health, collect coins, reset coins, sink lily pads, and reset lily pads.
+The TabletopKit app object creates an instance of the `Game` class, which sets up, observes, and renders the [`TabletopGame`](./tabletopgame.md) state. `Game` equipment, objects that implement the [`Equipment`](./equipment.md) protocol, represents all interactive portions of a game. The `Game` class also handles game start and reset, initiating programmatic interactions, and adding equipment reset actions. The `GameSetup` class initializes and positions all game equipment.
+
+The `GameRenderer` class implements [`TabletopGame.RenderDelegate`](./tabletopgame/renderdelegate.md), which loads assets and communicates when the game needs visual updates. The `GameObserver` class implements [`TabletopGame.Observer`](./tabletopgame/observer.md) and indicates confirmed gameplay actions. You can define custom actions to modify the game state to your needs. The `CustomAction.swift` file in this sample contains custom actions to reset the players, decrement player health, collect coins, reset coins, sink lily pads, and reset lily pads.
 
 ```swift
 class Game {
@@ -29,7 +33,7 @@ class Game {
 }
 ```
 
-The `GameView` structure contains the [`RealityView`](https://developer.apple.com/documentation/realitykit/realityview), which hosts game content and the toolbar for player interaction, and stores the `Game` object as an environment property. The [`tabletopGame(_:parent:automaticUpdate:)`](https://developer.apple.com/documentation/swiftui/view/tabletopgame(_:parent:automaticupdate:)) modifier connects the `TabletopGame` object to the `RealityView`. The modifier returns the appropriate delegate for the game equipment ID that passes into the update closure. A [`Task`](https://developer.apple.com/documentation/swift/task) creates `GroupActivityManager`, which connects multiple players and provides the `TabletopGame` object.
+The `GameView` structure contains the [`RealityView`](../RealityKit/realityview.md), which hosts game content and the toolbar for player interaction, and stores the `Game` object as an environment property. The [`tabletopGame(_:parent:automaticUpdate:)`](../SwiftUI/view/tabletopgame%28_,parent,automaticupdate%29.md) modifier connects the `TabletopGame` object to the `RealityView`. The modifier returns the appropriate delegate for the game equipment ID that passes into the update closure. A [`Task`](../Swift/task.md) creates `GroupActivityManager`, which connects multiple players and provides the `TabletopGame` object.
 
 ```swift
 var body: some View {
@@ -63,7 +67,7 @@ var body: some View {
 }
 ```
 
-The player joins other players by tapping the SharePlay button in the volume’s toolbar. This instantiates an `Activity` object that implements the [`GroupActivity`](https://developer.apple.com/documentation/groupactivities/groupactivity) protocol. `Activity` initializes an observable `GroupActivityManager` awaiting `Activity` sessions that coordinate with the provided `TabletopGame`. TabletopKit handles all player connections and synchronization. The app only needs to register its equipment and actions, and then handle their updates.
+The player joins other players by tapping the SharePlay button in the volume’s toolbar. This instantiates an `Activity` object that implements the [`GroupActivity`](../GroupActivities/groupactivity.md) protocol. `Activity` initializes an observable `GroupActivityManager` awaiting `Activity` sessions that coordinate with the provided `TabletopGame`. TabletopKit handles all player connections and synchronization. The app only needs to register its equipment and actions, and then handle their updates.
 
 ```swift
 struct Activity: GroupActivity {
@@ -94,9 +98,9 @@ class GroupActivityManager: Observable {
 }
 ```
 
-#### Define Gameplay
+#### Define gameplay
 
-The game begins when the player taps the Start Game button in the toolbar. This sets the `Game.gameStarted` state to `true` and initiates `Log` entity interactions. Objects that implement the [`TabletopInteraction.Delegate`](tabletopinteraction/delegate.md) protocol handle all gameplay event updates.
+The game begins when the player taps the Start Game button in the toolbar. This sets the `Game.gameStarted` state to `true` and initiates `Log` entity interactions. Objects that implement the [`TabletopInteraction.Delegate`](./tabletopinteraction/delegate.md) protocol handle all gameplay event updates.
 
 ```swift
 class GameInteraction: TabletopInteraction.Delegate {
@@ -112,7 +116,7 @@ class GameInteraction: TabletopInteraction.Delegate {
 }
 ```
 
-`PlayerInteraction` handles player input by implementing `TabletopInteraction.Delegate`. When the player gazes at a gameplay object and interacts using direct or indirect gestures, the `PlayerInteraction` receives a [`TabletopInteraction`](tabletopinteraction.md) object in its [`update(interaction:)`](tabletopinteraction/delegate/update(interaction:).md) method. TabletopKit supplies an active gesture for the interaction. The sample splits this functionality into two parts — updating based on user gestures and updating due to automatic programmatic interactions.
+`PlayerInteraction` handles player input by implementing `TabletopInteraction.Delegate`. When the player gazes at a gameplay object and interacts using direct or indirect gestures, the `PlayerInteraction` receives a [`TabletopInteraction`](./tabletopinteraction.md) object in its [`update(interaction:)`](./tabletopinteraction/delegate/update%28interaction%29.md) method. TabletopKit supplies an active gesture for the interaction. The sample splits this functionality into two parts — updating based on user gestures and updating due to automatic programmatic interactions.
 
 ```swift
 class PlayerInteraction: GameInteraction {
@@ -162,7 +166,7 @@ On gesture update, `updateGestureInteraction` modifies the local slingshot visua
     //...
 ```
 
-On gesture end, `updateGestureInteraction` calculates the change in gesture position, calls [`startInteraction(onEquipmentID:)`](tabletopgame/startinteraction(onequipmentid:).md) for the interaction’s equipment, and adds it to the programmatic player interaction dictionary of `Game`. When gesture handling is complete, TabletopKit moves the player’s piece.
+On gesture end, `updateGestureInteraction` calculates the change in gesture position, calls [`startInteraction(onEquipmentID:)`](./tabletopgame/startinteraction%28onequipmentid%29.md) for the interaction’s equipment, and adds it to the programmatic player interaction dictionary of `Game`. When gesture handling is complete, TabletopKit moves the player’s piece.
 
 ```swift
     //...
@@ -230,7 +234,7 @@ During the interaction, the app finds a target programmatic player interaction f
     //...
 ```
 
-At the end of the interaction, `updateProgrammaticInteraction` calls into `endJump`. Adding a [`MoveEquipmentAction`](moveequipmentaction.md) object to the active `TabletopInteraction` moves the player. If the target lands on a lily pad, the sample initiates the sinking animation by calling  [`startInteraction(onEquipmentID:)`](tabletopgame/startinteraction(onequipmentid:).md) with the lily pad’s equipment ID. If the target lands on an allowed destination with a coin, `endJump` adds a `CollectCoin` action to the active `TabletopInteraction`. The app then removes the interaction from the `programmaticPlayerInteractions` dictionary.
+At the end of the interaction, `updateProgrammaticInteraction` calls into `endJump`. Adding a [`MoveEquipmentAction`](./moveequipmentaction.md) object to the active `TabletopInteraction` moves the player. If the target lands on a lily pad, the sample initiates the sinking animation by calling  [`startInteraction(onEquipmentID:)`](./tabletopgame/startinteraction%28onequipmentid%29.md) with the lily pad’s equipment ID. If the target lands on an allowed destination with a coin, `endJump` adds a `CollectCoin` action to the active `TabletopInteraction`. The app then removes the interaction from the `programmaticPlayerInteractions` dictionary.
 
 ```swift
     //...
@@ -276,7 +280,7 @@ Finally, if the landing site isn’t a valid location, `endJump` returns the pla
 }
 ```
 
-The `GameObserver` class is responsible for reacting to confirmed game actions. The game decrements a player’s health when the player lands in the water, or if they fail to jump again quickly after landing on a lily pad before it sinks. Within `actionWasConfirmed()`, the game resets the player’s state if the newly provided [`TableSnapshot`](tablesnapshot.md) matches a `ResetPlayer` action. The actions can have other possible matches, like `DecrementHealth` where the game decrements the player’s health, or `CollectCoin` where the player collects a coin at the player’s new location. The game ends when the players collect all of the coins, or when all of the players run out of lives.
+The `GameObserver` class is responsible for reacting to confirmed game actions. The game decrements a player’s health when the player lands in the water, or if they fail to jump again quickly after landing on a lily pad before it sinks. Within `actionWasConfirmed()`, the game resets the player’s state if the newly provided [`TableSnapshot`](./tablesnapshot.md) matches a `ResetPlayer` action. The actions can have other possible matches, like `DecrementHealth` where the game decrements the player’s health, or `CollectCoin` where the player collects a coin at the player’s new location. The game ends when the players collect all of the coins, or when all of the players run out of lives.
 
 ```swift
 class GameObserver: TabletopGame.Observer {
@@ -318,17 +322,18 @@ class GameObserver: TabletopGame.Observer {
 
 ## See Also
 
-- [Creating tabletop games](creating-tabletop-games.md)
+### Essentials
+- [Creating tabletop games](./creating-tabletop-games.md)
   Develop a spatial board game where multiple players interact with pieces on a table.
-- [class TabletopGame](tabletopgame.md)
+- [class TabletopGame](./tabletopgame.md)
   An object that manages the setup and gameplay of a tabletop game.
-- [struct TableSetup](tablesetup.md)
+- [struct TableSetup](./tablesetup.md)
   An object that represents the arrangement of seats, equipment, and counters around the game table.
-- [protocol Tabletop](tabletop.md)
+- [protocol Tabletop](./tabletop.md)
   A protocol for the table surface in your game.
-- [protocol EntityTabletop](entitytabletop.md)
+- [protocol EntityTabletop](./entitytabletop.md)
   A protocol for the table surface in your game when you render it using RealityKit.
-- [struct TabletopShape](tabletopshape.md)
+- [struct TabletopShape](./tabletopshape.md)
   An object that represents the physical properties of the table.
 
 

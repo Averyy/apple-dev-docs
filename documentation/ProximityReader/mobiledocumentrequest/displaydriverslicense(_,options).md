@@ -1,7 +1,8 @@
 # displayDriversLicense(_:options:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A request that displays driver’s license elements onscreen.
 
@@ -16,9 +17,12 @@ A request that displays driver’s license elements onscreen.
 static func displayDriversLicense(_ elements: [MobileDriversLicenseDisplayRequest.Element], options: MobileDriversLicenseDisplayRequest.Options = .init()) -> Self
 ```
 
+Available when `Self` is `MobileDriversLicenseDisplayRequest`.
+
 ## See Also
 
-- [struct MobileDriversLicenseDisplayRequest](mobiledriverslicensedisplayrequest.md)
+### Mobile driver’s license display request
+- [struct MobileDriversLicenseDisplayRequest](../mobiledriverslicensedisplayrequest.md)
   A mobile driver’s license request that retrieves elements from the holder and displays the results onscreen for visual inspection.
 
 

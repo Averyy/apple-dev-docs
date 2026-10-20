@@ -1,7 +1,8 @@
 # AvailabilityError
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 An error type that indicates the requested Look Around view isn’t available.
 
@@ -10,7 +11,7 @@ An error type that indicates the requested Look Around view isn’t available.
 
 ## Declaration
 
-```swift
+```
 readonly AvailabilityError: "availability-error";
 ```
 

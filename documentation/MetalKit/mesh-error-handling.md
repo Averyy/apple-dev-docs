@@ -1,16 +1,17 @@
 # Mesh Error Handling
 
-**Framework**: MetalKit
+**Framework**: MetalKit  
+**Role**: API Collection
 
-Strings used when handling [`NSError`](https://developer.apple.com/documentation/foundation/nserror) messages returned from a mesh initialization method.
+Strings used when handling [`NSError`](../Foundation/nserror.md) messages returned from a mesh initialization method.
 
 ## Topics
 
 ### Constants
-- [static let domain: MTKModelError](mtkmodelerror/domain.md)
+- [static let domain: MTKModelError](./mtkmodelerror/domain.md)
   The error domain used by MetalKit when returning mesh initialization errors.
-- [static let key: MTKModelError](mtkmodelerror/key.md)
-  The key used to retrieve an error string from an error object’s [`userInfo`](https://developer.apple.com/documentation/foundation/nserror/userinfo) dictionary.
+- [static let key: MTKModelError](./mtkmodelerror/key.md)
+  The key used to retrieve an error string from an error object’s [`userInfo`](../Foundation/nserror/userinfo.md) dictionary.
 
 
 ---

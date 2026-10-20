@@ -1,7 +1,8 @@
 # location
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location provided to the initializer.
 
@@ -21,11 +22,16 @@ The location provided to the initializer.
 var location: CLLocation { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) CLLocation * location;
+```
+
 ## See Also
 
-- [var isLoading: Bool](mkreversegeocodingrequest/isloading.md)
+### Getting the reverse geocoder’s state
+- [var isLoading: Bool](./isloading.md)
   A Boolean value that indicates whether the current reverse geocoding request is in a loading state.
-- [var isCancelled: Bool](mkreversegeocodingrequest/iscancelled.md)
+- [var isCancelled: Bool](./iscancelled.md)
   A Boolean value that indicates whether the current reverse geocoding request is in a cancelled state.
 
 

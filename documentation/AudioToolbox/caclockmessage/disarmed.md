@@ -1,10 +1,11 @@
 # CAClockMessage.disarmed
 
 **Framework**: Audio Toolbox  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,14 +13,19 @@
 case disarmed
 ```
 
+```c
+kCAClockMessage_Disarmed
+```
+
 ## See Also
 
-- [CAClockMessage.armed](caclockmessage/armed.md)
-- [CAClockMessage.propertyChanged](caclockmessage/propertychanged.md)
-- [CAClockMessage.startTimeSet](caclockmessage/starttimeset.md)
-- [CAClockMessage.started](caclockmessage/started.md)
-- [CAClockMessage.stopped](caclockmessage/stopped.md)
-- [CAClockMessage.wrongSMPTEFormat](caclockmessage/wrongsmpteformat.md)
+### Constants
+- [CAClockMessage.armed](./armed.md)
+- [CAClockMessage.propertyChanged](./propertychanged.md)
+- [CAClockMessage.startTimeSet](./starttimeset.md)
+- [CAClockMessage.started](./started.md)
+- [CAClockMessage.stopped](./stopped.md)
+- [CAClockMessage.wrongSMPTEFormat](./wrongsmpteformat.md)
 
 
 ---

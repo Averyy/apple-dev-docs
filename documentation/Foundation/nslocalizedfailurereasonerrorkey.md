@@ -1,9 +1,10 @@
 # NSLocalizedFailureReasonErrorKey
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-The corresponding value is a localized string representation containing the reason for the failure that, if present, will be returned by [`localizedFailureReason`](nserror/localizedfailurereason.md).
+The corresponding value is a localized string representation containing the reason for the failure that, if present, will be returned by [`localizedFailureReason`](./nserror/localizedfailurereason.md).
 
 **Availability**:
 - iOS 2.0+
@@ -20,29 +21,34 @@ The corresponding value is a localized string representation containing the reas
 let NSLocalizedFailureReasonErrorKey: String
 ```
 
+```c
+extern NSErrorUserInfoKey const NSLocalizedFailureReasonErrorKey;
+```
+
 ## See Also
 
-- [let NSURLErrorKey: String](nsurlerrorkey.md)
+### Constants
+- [let NSURLErrorKey: String](./nsurlerrorkey.md)
   The corresponding value is an `NSURL` object.
-- [let NSFilePathErrorKey: String](nsfilepatherrorkey.md)
+- [let NSFilePathErrorKey: String](./nsfilepatherrorkey.md)
   Contains the file path of the error.
-- [let NSHelpAnchorErrorKey: String](nshelpanchorerrorkey.md)
-  The corresponding value is an `NSString` containing the localized help corresponding to the help button. See [`helpAnchor`](nserror/helpanchor.md) for more information.
-- [let NSLocalizedDescriptionKey: String](nslocalizeddescriptionkey.md)
-  The corresponding value is a localized string representation of the error that, if present, will be returned by [`localizedDescription`](nserror/localizeddescription.md).
-- [let NSLocalizedFailureErrorKey: String](nslocalizedfailureerrorkey.md)
-- [let NSLocalizedRecoveryOptionsErrorKey: String](nslocalizedrecoveryoptionserrorkey.md)
+- [let NSHelpAnchorErrorKey: String](./nshelpanchorerrorkey.md)
+  The corresponding value is an `NSString` containing the localized help corresponding to the help button. See [`helpAnchor`](./nserror/helpanchor.md) for more information.
+- [let NSLocalizedDescriptionKey: String](./nslocalizeddescriptionkey.md)
+  The corresponding value is a localized string representation of the error that, if present, will be returned by [`localizedDescription`](./nserror/localizeddescription.md).
+- [let NSLocalizedFailureErrorKey: String](./nslocalizedfailureerrorkey.md)
+- [let NSLocalizedRecoveryOptionsErrorKey: String](./nslocalizedrecoveryoptionserrorkey.md)
   The corresponding value is an array containing the localized titles of buttons appropriate for displaying in an alert panel.
-- [let NSLocalizedRecoverySuggestionErrorKey: String](nslocalizedrecoverysuggestionerrorkey.md)
+- [let NSLocalizedRecoverySuggestionErrorKey: String](./nslocalizedrecoverysuggestionerrorkey.md)
   The corresponding value is a string containing the localized recovery suggestion for the error.
-- [let NSRecoveryAttempterErrorKey: String](nsrecoveryattemptererrorkey.md)
+- [let NSRecoveryAttempterErrorKey: String](./nsrecoveryattemptererrorkey.md)
   The corresponding value is an object that conforms to the NSErrorRecoveryAttempting informal protocol.
-- [let NSStringEncodingErrorKey: String](nsstringencodingerrorkey.md)
+- [let NSStringEncodingErrorKey: String](./nsstringencodingerrorkey.md)
   The corresponding value is an `NSNumber` object containing the `NSStringEncoding` value.
-- [let NSUnderlyingErrorKey: String](nsunderlyingerrorkey.md)
+- [let NSUnderlyingErrorKey: String](./nsunderlyingerrorkey.md)
   The corresponding value is an error that was encountered in an underlying implementation and caused the error that the receiver represents to occur.
-- [let NSDebugDescriptionErrorKey: String](nsdebugdescriptionerrorkey.md)
-- [let NSMultipleUnderlyingErrorsKey: String](nsmultipleunderlyingerrorskey.md)
+- [let NSDebugDescriptionErrorKey: String](./nsdebugdescriptionerrorkey.md)
+- [let NSMultipleUnderlyingErrorsKey: String](./nsmultipleunderlyingerrorskey.md)
 
 
 ---

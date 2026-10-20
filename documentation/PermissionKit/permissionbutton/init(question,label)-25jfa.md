@@ -1,7 +1,8 @@
 # init(question:label:)
 
 **Framework**: PermissionKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a button that requests permission from parents or guardians.
 
@@ -26,7 +27,8 @@ Creates a button that requests permission from parents or guardians.
 
 ## See Also
 
-- [init(question: PermissionQuestion<Topic>, label: () -> Label)](permissionbutton/init(question:label:)-8291n.md)
+### Creating buttons
+- [init(question: PermissionQuestion<Topic>, label: () -> Label)](./init%28question,label%29-8291n.md)
   Creates a button that requests permission from parents or guardians to continue using your app after a significant update.
 
 

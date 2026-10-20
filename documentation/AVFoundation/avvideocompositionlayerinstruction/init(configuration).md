@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an AVVideoCompositionLayerInstruction with a configuration.
 
@@ -25,7 +26,8 @@ convenience init(configuration: AVVideoCompositionLayerInstruction.Configuration
 
 ## See Also
 
-- [AVVideoCompositionLayerInstruction.Configuration](avvideocompositionlayerinstruction/configuration.md)
+### Creating a layer instruction
+- [AVVideoCompositionLayerInstruction.Configuration](./configuration.md)
   Configurable properties for initializing a new AVVideoCompositionLayerInstruction instance.
 
 

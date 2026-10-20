@@ -1,7 +1,8 @@
 # MTLVertexFormat.float
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 32-bit floating-point value.
 
@@ -10,7 +11,7 @@ A 32-bit floating-point value.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,17 +20,22 @@ A 32-bit floating-point value.
 case float
 ```
 
+```c
+MTLVertexFormatFloat
+```
+
 ## See Also
 
-- [MTLVertexFormat.float2](mtlvertexformat/float2.md)
+### 32-bit floating-point formats
+- [MTLVertexFormat.float2](./float2.md)
   A two-component vector with 32-bit floating-point values.
-- [MTLVertexFormat.float3](mtlvertexformat/float3.md)
+- [MTLVertexFormat.float3](./float3.md)
   A three-component vector with 32-bit floating-point values.
-- [MTLVertexFormat.float4](mtlvertexformat/float4.md)
+- [MTLVertexFormat.float4](./float4.md)
   A four-component vector with 32-bit floating-point values.
-- [MTLVertexFormat.floatRG11B10](mtlvertexformat/floatrg11b10.md)
+- [MTLVertexFormat.floatRG11B10](./floatrg11b10.md)
   A three-component vector with 11-bit floating-point values for red and green, and a 10-bit value for blue.
-- [MTLVertexFormat.floatRGB9E5](mtlvertexformat/floatrgb9e5.md)
+- [MTLVertexFormat.floatRGB9E5](./floatrgb9e5.md)
   A three-component vector with 9-bit floating-point values for red, green, and blue, and a 5-bit shared exponent.
 
 

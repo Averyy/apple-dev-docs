@@ -1,7 +1,8 @@
 # dispatchEvent
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Dispatches an event.
 
@@ -10,7 +11,7 @@ Dispatches an event.
 
 ## Declaration
 
-```swift
+```cpp
 virtual void dispatchEvent(IOHIDEvent *event, IOOptionBits options);
 ```
 

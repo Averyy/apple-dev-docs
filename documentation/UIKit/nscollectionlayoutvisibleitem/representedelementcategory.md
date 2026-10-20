@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A category that identifies the item, such as decoration or supplementary view.
@@ -19,11 +20,16 @@ A category that identifies the item, such as decoration or supplementary view.
 var representedElementCategory: UICollectionView.ElementCategory { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UICollectionElementCategory representedElementCategory;
+```
+
 ## See Also
 
-- [var name: String](nscollectionlayoutvisibleitem/name.md)
+### Identifying the item
+- [var name: String](./name.md)
   The name of the item.
-- [var representedElementKind: String?](nscollectionlayoutvisibleitem/representedelementkind.md)
+- [var representedElementKind: String?](./representedelementkind.md)
   A string that identifies the type of item.
 
 

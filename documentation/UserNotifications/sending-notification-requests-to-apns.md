@@ -1,6 +1,7 @@
 # Sending notification requests to APNs
 
-**Framework**: User Notifications
+**Framework**: User Notifications  
+**Role**: Article
 
 Transmit your remote notification payload and device token information to Apple Push Notification service (APNs).
 
@@ -8,16 +9,16 @@ Transmit your remote notification payload and device token information to Apple 
 
 As a best-effort service, APNs may reorder notifications you send to the same device token. If APNs can’t deliver a notification immediately, it may store the notification for 30 days or less, depending on the date you specify in the `apns-expiration` header. APNs attempts to deliver the notification the next time the device activates and is available online.
 
-APNs stores only one notification per bundle ID. When you send multiple notifications to the same device for a bundle ID, APNs selects only one notification to store. In most cases, the latest notification is stored. However, this behavior isn’t always guaranteed when multiple notifications are stored in a short duration. Notifications with `apns-priority 5` and `apns-priority 1` might get grouped and delivered in bursts to a person’s device. Your notifications may also get throttled, saved in storage, and in some cases, not delivered. The way a person interacts with your app and the power state of the device determines the exact behavior. For more information about the factors that impact the delivery of a push notification, refer to [`Viewing the status of push notifications using Metrics and APNs`](viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
+APNs stores only one notification per bundle ID. When you send multiple notifications to the same device for a bundle ID, APNs selects only one notification to store. In most cases, the latest notification is stored. However, this behavior isn’t always guaranteed when multiple notifications are stored in a short duration. Notifications with `apns-priority 5` and `apns-priority 1` might get grouped and delivered in bursts to a person’s device. Your notifications may also get throttled, saved in storage, and in some cases, not delivered. The way a person interacts with your app and the power state of the device determines the exact behavior. For more information about the factors that impact the delivery of a push notification, refer to [Viewing the status of push notifications using Metrics and APNs](./viewing-the-status-of-push-notifications-using-metrics-and-apns.md).
 
-When you have a notification to send to a user, your provider must construct a POST request and send it to Apple Push Notification service (APNs). Upon receiving your server’s POST request, APNs validates the request using either the provided authentication token or your server’s certificate. If validation succeeds, APNs uses the provided device token to identify the user’s device. It then tries to send your JSON payload to that device. For information on sending test notifications without setting up the environment, refer to [`Testing notifications using the Push Notification Console`](testing-notifications-using-the-push-notification-console.md).
+When you have a notification to send to a user, your provider must construct a POST request and send it to Apple Push Notification service (APNs). Upon receiving your server’s POST request, APNs validates the request using either the provided authentication token or your server’s certificate. If validation succeeds, APNs uses the provided device token to identify the user’s device. It then tries to send your JSON payload to that device. For information on sending test notifications without setting up the environment, refer to [Testing notifications using the Push Notification Console](./testing-notifications-using-the-push-notification-console.md).
 
-##### Establish a Connection to Apns
+##### Establish a connection to APNs
 
 Use HTTP/2 and TLS 1.2 or later to establish a connection between your provider server and one of the following servers:
 
-- Development server: [`api.sandbox.push.apple.com:443`](https://developer.apple.comhttps://api.sandbox.push.apple.com:443)
-- Production server: [`api.push.apple.com:443`](https://developer.apple.comhttps://api.push.apple.com:443)
+- Development server: [api.sandbox.push.apple.com:443](https://api.sandbox.push.apple.com:443)
+- Production server: [api.push.apple.com:443](https://api.push.apple.com:443)
 
 Use the production server for your shipping apps and the development server for testing. When sending many remote notifications, you can establish multiple connections to these servers to improve performance.
 
@@ -25,32 +26,32 @@ Use the production server for your shipping apps and the development server for 
 
 APNs allows multiple concurrent streams for each connection, but don’t assume a specific number of streams. The exact number varies based on server load and whether you use a provider certificate or an authentication token. For example, when using an authentication token, APNs allows only one stream until you post a request with a valid authentication token. APNs ignores `HTTP/2 PRIORITY` frames, so don’t send them on your streams.
 
-If you experience a revoked provider certificate, or if you revoke your authentication token, close all connections to APNs, fix the problem, and then open new connections. APNs may also terminate a connection by sending a `GOAWAY` frame. The payload of the `GOAWAY` frame includes JSON data with a `reason` key, indicating the reason for the connection termination. For a list of values for the `reason` key, refer to the response error strings in [`Handling notification responses from APNs`](handling-notification-responses-from-apns.md).
+If you experience a revoked provider certificate, or if you revoke your authentication token, close all connections to APNs, fix the problem, and then open new connections. APNs may also terminate a connection by sending a `GOAWAY` frame. The payload of the `GOAWAY` frame includes JSON data with a `reason` key, indicating the reason for the connection termination. For a list of values for the `reason` key, refer to the response error strings in [Handling notification responses from APNs](./handling-notification-responses-from-apns.md).
 
-##### Create a Post Request to Apns
+##### Create a POST request to APNs
 
 To send a notification to a user’s device, construct and send a POST notification to APNs. Send this request over the connection you created using HTTP/2 and TLS. To create your POST notification, you must already have the following pieces of information:
 
-- The device token that identifies the user device to receive the notification; refer to [`Registering your app with APNs`](registering-your-app-with-apns.md).
-- Your current authentication token (only if you’re using token-based authentication); refer to [`Establishing a token-based connection to APNs`](establishing-a-token-based-connection-to-apns.md).
-- The notification’s payload, specified as JSON data; refer to [`Generating a remote notification`](generating-a-remote-notification.md).
+- The device token that identifies the user device to receive the notification; refer to [Registering your app with APNs](./registering-your-app-with-apns.md).
+- Your current authentication token (only if you’re using token-based authentication); refer to [Establishing a token-based connection to APNs](./establishing-a-token-based-connection-to-apns.md).
+- The notification’s payload, specified as JSON data; refer to [Generating a remote notification](./generating-a-remote-notification.md).
 
-> **Note**:  If you’re using certificate-based authentication, you send your provider certificate to APNs when setting up your TLS connection. For more information, refer to [`Establishing a certificate-based connection to APNs`](establishing-a-certificate-based-connection-to-apns.md).
+> **Note**:  If you’re using certificate-based authentication, you send your provider certificate to APNs when setting up your TLS connection. For more information, refer to [Establishing a certificate-based connection to APNs](./establishing-a-certificate-based-connection-to-apns.md).
 
-##### Send a Post Request to Apns
+##### Send a POST request to APNs
 
 To deliver the notifications, you’re required to have some header fields. In addition to the preceding data, add the following header fields in to your request. Other headers are optional or may depend on whether you’re using token-based or certificate-based authentication.
 
 | Header field | Required | Description |
 | --- | --- | --- |
 | `:method` | Required | The value `POST`. |
-| `:path` | Required | The path to the device token. The value of this header is `/3/device/<device_token>`, where `<device_token>` is the hexadecimal bytes that identify the user’s device. Your app receives the bytes for this device token when registering for remote notifications. For more information, refer to [`Registering your app with APNs`](registering-your-app-with-apns.md). |
-| `authorization` | Required for token-based authentication | The value of this header is `bearer <provider_token>`, where `<provider_token>` is the encrypted token that authorizes you to send notifications for the specified topic. APNs ignores this header if you use certificate-based authentication. For more information, refer to [`Establishing a token-based connection to APNs`](establishing-a-token-based-connection-to-apns.md). |
+| `:path` | Required | The path to the device token. The value of this header is `/3/device/<device_token>`, where `<device_token>` is the hexadecimal bytes that identify the user’s device. Your app receives the bytes for this device token when registering for remote notifications. For more information, refer to [Registering your app with APNs](./registering-your-app-with-apns.md). |
+| `authorization` | Required for token-based authentication | The value of this header is `bearer <provider_token>`, where `<provider_token>` is the encrypted token that authorizes you to send notifications for the specified topic. APNs ignores this header if you use certificate-based authentication. For more information, refer to [Establishing a token-based connection to APNs](./establishing-a-token-based-connection-to-apns.md). |
 | `apns-push-type` | Required for watchOS 6 and later; recommended for macOS, iOS, tvOS, and iPadOS | The value of this header must accurately reflect the contents of your notification’s payload. If there’s a mismatch, or if the header is missing on required systems, APNs may return an error, delay the delivery of the notification, or drop it altogether. |
 | `apns-id` | Optional | A canonical UUID that’s the unique ID for the notification. If an error occurs when sending the notification, APNs includes this value when reporting the error to your server. Canonical UUIDs are 32 lowercase hexadecimal digits, displayed in five groups separated by hyphens in the form 8-4-4-4-12. For example: `123e4567-e89b-12d3-a456-4266554400a0`. If you omit this header, APNs creates a UUID for you and returns it in its response. |
-| `apns-expiration` | Optional | The date at which the notification is no longer valid. This value is a UNIX epoch expressed in seconds (UTC). If the value is nonzero, APNs stores the notification and tries to deliver it at least once, repeating the attempt as needed until the specified date. If the value is `0`, APNs attempts to deliver the notification only once and doesn’t store it. ![None](/images/com.apple.usernotifications/spacer.png) A single APNs attempt may involve retries over multiple network interfaces and connections of the destination device. Often these retries span over some time period, depending on the network characteristics. In addition, a push notification may take some time on the network after APNs sends it to the device. APNs uses best efforts to honor the expiry date without any guarantee. If the value is nonzero, the notification may deliver after the specified timestamp. If the value is `0`, the notification may deliver with some delay. ![None](/images/com.apple.usernotifications/spacer.png) If you omit this header, APNs stores the push according to APNs storage policy. For more information, refer to [`Sending notification requests to APNs`](sending-notification-requests-to-apns.md). |
-| `apns-priority` | Optional | The priority of the notification. If you omit this header, APNs sets the notification priority to `10`. ![None](/images/com.apple.usernotifications/spacer.png) Specify `10` to send the notification immediately. ![None](/images/com.apple.usernotifications/spacer.png) Specify `5` to send the notification based on power considerations on the user’s device. ![None](/images/com.apple.usernotifications/spacer.png) Specify 1 to prioritize the device’s power considerations over all other factors for delivery, and prevent awakening the device. |
-| `apns-topic` | Required | The topic for the notification. In general, the topic is your app’s bundle ID/app ID. It can have a suffix based on the type of push notification. To learn more about app ID, refer to [`Register an App ID`](https://developer.apple.comhttps://help.apple.com/developer-account/#/dev1b35d6f83). See more details on push type below. |
+| `apns-expiration` | Optional | The date at which the notification is no longer valid. This value is a UNIX epoch expressed in seconds (UTC). If the value is nonzero, APNs stores the notification and tries to deliver it at least once, repeating the attempt as needed until the specified date. If the value is `0`, APNs attempts to deliver the notification only once and doesn’t store it. ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) A single APNs attempt may involve retries over multiple network interfaces and connections of the destination device. Often these retries span over some time period, depending on the network characteristics. In addition, a push notification may take some time on the network after APNs sends it to the device. APNs uses best efforts to honor the expiry date without any guarantee. If the value is nonzero, the notification may deliver after the specified timestamp. If the value is `0`, the notification may deliver with some delay. ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) If you omit this header, APNs stores the push according to APNs storage policy. For more information, refer to [Sending notification requests to APNs](./sending-notification-requests-to-apns.md). |
+| `apns-priority` | Optional | The priority of the notification. If you omit this header, APNs sets the notification priority to `10`. ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) Specify `10` to send the notification immediately. ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) Specify `5` to send the notification based on power considerations on the user’s device. ![](https://developer.apple.com/tutorials/images/com.apple.usernotifications/spacer.png) Specify 1 to prioritize the device’s power considerations over all other factors for delivery, and prevent awakening the device. |
+| `apns-topic` | Required | The topic for the notification. In general, the topic is your app’s bundle ID/app ID. It can have a suffix based on the type of push notification. To learn more about app ID, refer to [Register an App ID](https://help.apple.com/developer-account/#/dev1b35d6f83). See more details on push type below. |
 | `apns-collapse-id` | Optional | An identifier you use to merge multiple notifications into a single notification for the user. Typically, each notification request displays a new notification on the user’s device. When sending the same notification more than once, use the same value in this header to merge the requests. The value of this key must not exceed 64 bytes. |
 
 APNs requires the use of HPACK (header compression for HTTP/2), which prevents repeatedly storing header keys and values. APNs maintains a small dynamic table for HPACK. To avoid filling up that table, encode your headers in the following way—especially when using many streams:
@@ -107,26 +108,54 @@ DATA
 
 ```
 
-##### Know When to Use Push Types
+##### Know when to use push types
 
 The `apns-push-type` header field has the following valid values. The descriptions below describe when and how to use these values. Send an `apns-push-type` header with each push. Recent and upcoming features may not work if this header is missing. See the table above to determine if this header is required or optional.
 
-- **`accessory`**: The push type for a paired accessory’s response to an iOS device over the internet. Set the `apns-topic` header field to your app’s bundle ID with `.push-type.accessory` appended to the end. For more information, see [`Responding to forwarded notifications`](https://developer.apple.com/documentation/accessorynotifications/responding-to-forwarded-notifications). The `accessory` push type is available on iOS only.
-- **`alert`**: The push type for notifications that trigger a user interaction—for example, an alert, badge, or sound. If you set this push type, the `apns-topic` header field must use your app’s bundle ID as the topic. For more information, refer to [`Generating a remote notification`](generating-a-remote-notification.md). If the notification requires immediate action from the user, set notification priority to `10`; otherwise use `5`. You’re required to use the `alert` push type on watchOS 6 and later. It’s recommended on macOS, iOS, tvOS, and iPadOS.
-- **`background`**: The push type for notifications that deliver content in the background, and don’t trigger any user interactions. If you set this push type, the `apns-topic` header field must use your app’s bundle ID as the topic. Always use priority `5`. Using priority `10` is an error. For more information, refer to [`Pushing background updates to your App`](pushing-background-updates-to-your-app.md). You’re required to use the `background` push type on watchOS 6 and later. It’s recommended on macOS, iOS, tvOS, and iPadOS.
-- **`complication`**: The push type for notifications that contain update information for a watchOS app’s complications. For more information, refer to [`Keeping your complications up to date`](https://developer.apple.com/documentation/clockkit/keeping-your-complications-up-to-date). If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `h.complication` appended to the end. If you’re using certificate-based authentication, you must also register the certificate for WatchKit services. The topic is then part of the `1.2.840.113635.100.6.3.6` extension. The `complication` push type isn’t available on macOS, tvOS, and iPadOS. It’s recommended for watchOS and iOS.
-- **`controls`**: The push type to reload and update a control. When someone interacts with a web server connected to your app, enable a control to update its state using the `controls` push type. If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `.push-type.controls` appended to the end. For more information, refer to [`Updating controls locally and remotely`](https://developer.apple.com/documentation/widgetkit/updating-controls-locally-and-remotely)
-- **`fileprovider`**: The push type to signal changes to a File Provider extension. If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `.pushkit.fileprovider` appended to the end. For more information, refer to [`Using push notifications to signal changes`](https://developer.apple.com/documentation/fileprovider/using-push-notifications-to-signal-changes) The `fileprovider` push type isn’t available on watchOS. It’s recommended on macOS, iOS, tvOS, and iPadOS.
-- **`liveactivity`**: The push type to signal changes to a Live Activity. If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `push-type.liveactivity` appended to the end. For more information, refer to [`Starting and updating Live Activities with ActivityKit push notifications`](https://developer.apple.com/documentation/activitykit/starting-and-updating-live-activities-with-activitykit-push-notifications). The `liveactivity` push type isn’t available on watchOS, macOS, and tvOS. It’s recommended on iOS and iPadOS.
-- **`location`**: The push type for notifications that request a user’s location. If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `.location-query` appended to the end. For more information, refer to [`Creating a location push service extension`](https://developer.apple.com/documentation/corelocation/creating-a-location-push-service-extension). It’s recommended for iOS and iPadOS. If the location query requires an immediate response from the Location Push Service Extension, set notification `apns-priority` to `10`; otherwise, use `5`. The `location` push type supports only token-based authentication. The `location` push type isn’t available on macOS, tvOS, and watchOS.
-- **`mdm`**: The push type for notifications that tell managed devices to contact the MDM server. If you set this push type, you must use the topic from the UID attribute in the subject of your MDM push certificate. For more information, refer to [`Device Management`](https://developer.apple.com/documentation/devicemanagement). The `mdm` push type isn’t available on watchOS. It’s recommended on macOS, iOS, tvOS, and iPadOS.
-- **`pushtotalk`**: The push type for notifications that provide information about updates to your application’s push to talk services. For more information, refer to [`Push to Talk`](https://developer.apple.com/documentation/pushtotalk). If you set this push type, the apns-topic header field must use your app’s bundle ID with `.voip-ptt` appended to the end. The `pushtotalk` push type isn’t available on watchOS, macOS, and tvOS. It’s recommended on iOS and iPadOS.
-- **`voip`**: The push type for notifications that provide information about an incoming Voice-over-IP (VoIP) call. For more information, refer to [`Responding to VoIP Notifications from PushKit`](https://developer.apple.com/documentation/pushkit/responding-to-voip-notifications-from-pushkit). If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `.voip` appended to the end. If you’re using certificate-based authentication, you must also register the certificate for VoIP services. The topic is then part of the `1.2.840.113635.100.6.3.4` or `1.2.840.113635.100.6.3.6` extension. The `voip` push type isn’t available on watchOS. It’s recommended on macOS, iOS, tvOS, and iPadOS.
-- **`widgets`**: The push type to signal changes to widgets and watch complications you create with WidgetKit. If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `.push-type.widgets` appended to the end. For more information, refer to [`Updating widgets with WidgetKit push notifications`](https://developer.apple.com/documentation/widgetkit/updating-widgets-with-widgetkit-push-notifications).
+- **`accessory`**: The push type for a paired accessory’s response to an iOS device over the internet. Set the `apns-topic` header field to your app’s bundle ID with `.push-type.accessory` appended to the end. For more information, see [Responding to forwarded notifications](../AccessoryNotifications/responding-to-forwarded-notifications.md).
 
-Certificate-based connection supports only a subset of push types and token-based connection supports all push-types. For more information, refer to [`Establishing a certificate-based connection to APNs`](establishing-a-certificate-based-connection-to-apns.md). Check Extension `1.2.840.113635.100.6.3.6` and `1.2.840.113635.100.6.3.4` of your push certificate. These extensions list all the push topics allowed for your certificate. If a push topic for a specific push type isn’t listed, you can’t use the certificate to send a notification of that push type.
+  The `accessory` push type is available on iOS only.
+- **`alert`**: The push type for notifications that trigger a user interaction—for example, an alert, badge, or sound. If you set this push type, the `apns-topic` header field must use your app’s bundle ID as the topic. For more information, refer to [Generating a remote notification](./generating-a-remote-notification.md).
 
-##### Follow Best Practices While Sending Push Notifications with Apns
+  If the notification requires immediate action from the user, set notification priority to `10`; otherwise use `5`.
+
+  You’re required to use the `alert` push type on watchOS 6 and later. It’s recommended on macOS, iOS, tvOS, and iPadOS.
+- **`background`**: The push type for notifications that deliver content in the background, and don’t trigger any user interactions. If you set this push type, the `apns-topic` header field must use your app’s bundle ID as the topic. Always use priority `5`. Using priority `10` is an error. For more information, refer to [Pushing background updates to your App](./pushing-background-updates-to-your-app.md).
+
+  You’re required to use the `background` push type on watchOS 6 and later. It’s recommended on macOS, iOS, tvOS, and iPadOS.
+- **`complication`**: The push type for notifications that contain update information for a watchOS app’s complications. For more information, refer to [Keeping your complications up to date](../ClockKit/keeping-your-complications-up-to-date.md).
+
+  If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `h.complication` appended to the end. If you’re using certificate-based authentication, you must also register the certificate for WatchKit services. The topic is then part of the `1.2.840.113635.100.6.3.6` extension.
+
+  The `complication` push type isn’t available on macOS, tvOS, and iPadOS. It’s recommended for watchOS and iOS.
+- **`controls`**: The push type to reload and update a control. When someone interacts with a web server connected to your app, enable a control to update its state using the `controls` push type. If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `.push-type.controls` appended to the end. For more information, refer to [Updating controls locally and remotely](../WidgetKit/updating-controls-locally-and-remotely.md)
+- **`fileprovider`**: The push type to signal changes to a File Provider extension. If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `.pushkit.fileprovider` appended to the end. For more information, refer to [Using push notifications to signal changes](../FileProvider/using-push-notifications-to-signal-changes.md)
+
+  The `fileprovider` push type isn’t available on watchOS. It’s recommended on macOS, iOS, tvOS, and iPadOS.
+- **`liveactivity`**: The push type to signal changes to a Live Activity. If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `push-type.liveactivity` appended to the end. For more information, refer to [Starting and updating Live Activities with ActivityKit push notifications](../ActivityKit/starting-and-updating-live-activities-with-activitykit-push-notifications.md).
+
+  The `liveactivity` push type isn’t available on watchOS, macOS, and tvOS. It’s recommended on iOS and iPadOS.
+- **`location`**: The push type for notifications that request a user’s location. If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `.location-query` appended to the end. For more information, refer to [Creating a location push service extension](../CoreLocation/creating-a-location-push-service-extension.md).
+
+  It’s recommended for iOS and iPadOS. If the location query requires an immediate response from the Location Push Service Extension, set notification `apns-priority` to `10`; otherwise, use `5`. The `location` push type supports only token-based authentication.
+
+  The `location` push type isn’t available on macOS, tvOS, and watchOS.
+- **`mdm`**: The push type for notifications that tell managed devices to contact the MDM server. If you set this push type, you must use the topic from the UID attribute in the subject of your MDM push certificate. For more information, refer to [Device Management](../DeviceManagement/DeviceManagement.md).
+
+  The `mdm` push type isn’t available on watchOS. It’s recommended on macOS, iOS, tvOS, and iPadOS.
+- **`pushtotalk`**: The push type for notifications that provide information about updates to your application’s push to talk services. For more information, refer to [Push to Talk](../PushToTalk/PushToTalk.md). If you set this push type, the apns-topic header field must use your app’s bundle ID with `.voip-ptt` appended to the end.
+
+  The `pushtotalk` push type isn’t available on watchOS, macOS, and tvOS. It’s recommended on iOS and iPadOS.
+- **`voip`**: The push type for notifications that provide information about an incoming Voice-over-IP (VoIP) call. For more information, refer to [Responding to VoIP Notifications from PushKit](../PushKit/responding-to-voip-notifications-from-pushkit.md).
+
+  If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `.voip` appended to the end. If you’re using certificate-based authentication, you must also register the certificate for VoIP services. The topic is then part of the `1.2.840.113635.100.6.3.4` or `1.2.840.113635.100.6.3.6` extension.
+
+  The `voip` push type isn’t available on watchOS. It’s recommended on macOS, iOS, tvOS, and iPadOS.
+- **`widgets`**: The push type to signal changes to widgets and watch complications you create with WidgetKit. If you set this push type, the `apns-topic` header field must use your app’s bundle ID with `.push-type.widgets` appended to the end. For more information, refer to [Updating widgets with WidgetKit push notifications](../WidgetKit/updating-widgets-with-widgetkit-push-notifications.md).
+
+Certificate-based connection supports only a subset of push types and token-based connection supports all push-types. For more information, refer to [Establishing a certificate-based connection to APNs](./establishing-a-certificate-based-connection-to-apns.md). Check Extension `1.2.840.113635.100.6.3.6` and `1.2.840.113635.100.6.3.4` of your push certificate. These extensions list all the push topics allowed for your certificate. If a push topic for a specific push type isn’t listed, you can’t use the certificate to send a notification of that push type.
+
+##### Follow best practices while sending push notifications with APNs
 
 Below are some APNs best practices to consider:
 
@@ -134,7 +163,7 @@ Below are some APNs best practices to consider:
 - Avoid push bursts over selective connections. Diversifying push traffic over many connections distributes push traffic for your application across all APNs servers.
 - Reuse a connection as long as possible. In most cases, you can reuse a connection for many hours to days. If your connection is mostly idle, you may send a HTTP2 PING frame after an hour of inactivity. Reusing a connection often results in less bandwidth and CPU consumption.
 - Create a unique value for the `apns-id` header to track your push notification. If you don’t provide one, APNs creates one and returns it as part of the response. Record this UUID to assist with debugging.
-- Pay attention to status returned by APNs for each push and take appropriate action for your application. For more information, refer to [`Handling notification responses from APNs`](handling-notification-responses-from-apns.md).
+- Pay attention to status returned by APNs for each push and take appropriate action for your application. For more information, refer to [Handling notification responses from APNs](./handling-notification-responses-from-apns.md).
 - If you’re using a certificate to connect to APNs, remember to get a new certificate and deploy it with your service before the expiry of the current certificate.
 - Don’t make assumptions about device token size.
 
@@ -142,9 +171,10 @@ Below are some APNs best practices to consider:
 
 ## See Also
 
-- [Handling notification responses from APNs](handling-notification-responses-from-apns.md)
+### Device push notifications
+- [Handling notification responses from APNs](./handling-notification-responses-from-apns.md)
   Respond to the status codes that the APNs servers return.
-- [Viewing the status of push notifications using Metrics and APNs](viewing-the-status-of-push-notifications-using-metrics-and-apns.md)
+- [Viewing the status of push notifications using Metrics and APNs](./viewing-the-status-of-push-notifications-using-metrics-and-apns.md)
   Monitor and interpret the status of your push notifications with Apple Push Notification service (APNs).
 
 

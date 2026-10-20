@@ -1,7 +1,8 @@
 # NWPath.Status.requiresConnection
 
 **Framework**: Network  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The path is not currently available, but establishing a new connection may activate the path.
 
@@ -22,9 +23,10 @@ case requiresConnection
 
 ## See Also
 
-- [NWPath.Status.unsatisfied](nwpath/status-swift.enum/unsatisfied.md)
+### Status Values
+- [NWPath.Status.unsatisfied](./unsatisfied.md)
   The path is not available for use.
-- [NWPath.Status.satisfied](nwpath/status-swift.enum/satisfied.md)
+- [NWPath.Status.satisfied](./satisfied.md)
   The path is available to establish connections and send data.
 
 

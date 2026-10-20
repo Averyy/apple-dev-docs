@@ -1,7 +1,8 @@
 # IntentParameter.Volume
 
 **Framework**: App Intents  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -18,56 +19,59 @@
 enum Volume
 ```
 
+Available when `Value` conforms to `_IntentValue`, `Value` conforms to `Sendable`, and `Value.ValueType` is `Measurement<UnitVolume>`.
+
 ## Topics
 
 ### Enumeration Cases
-- [IntentParameter.Volume.acreFeet](intentparameter/volume/acrefeet.md)
-- [IntentParameter.Volume.bushels](intentparameter/volume/bushels.md)
-- [IntentParameter.Volume.centiliters](intentparameter/volume/centiliters.md)
-- [IntentParameter.Volume.cubicCentimeters](intentparameter/volume/cubiccentimeters.md)
-- [IntentParameter.Volume.cubicDecimeters](intentparameter/volume/cubicdecimeters.md)
-- [IntentParameter.Volume.cubicFeet](intentparameter/volume/cubicfeet.md)
-- [IntentParameter.Volume.cubicInches](intentparameter/volume/cubicinches.md)
-- [IntentParameter.Volume.cubicKilometers](intentparameter/volume/cubickilometers.md)
-- [IntentParameter.Volume.cubicMeters](intentparameter/volume/cubicmeters.md)
-- [IntentParameter.Volume.cubicMiles](intentparameter/volume/cubicmiles.md)
-- [IntentParameter.Volume.cubicMillimeters](intentparameter/volume/cubicmillimeters.md)
-- [IntentParameter.Volume.cubicYards](intentparameter/volume/cubicyards.md)
-- [IntentParameter.Volume.cups](intentparameter/volume/cups.md)
-- [IntentParameter.Volume.deciliters](intentparameter/volume/deciliters.md)
-- [IntentParameter.Volume.fluidOunces](intentparameter/volume/fluidounces.md)
-- [IntentParameter.Volume.gallons](intentparameter/volume/gallons.md)
-- [IntentParameter.Volume.imperialFluidOunces](intentparameter/volume/imperialfluidounces.md)
-- [IntentParameter.Volume.imperialGallons](intentparameter/volume/imperialgallons.md)
-- [IntentParameter.Volume.imperialPints](intentparameter/volume/imperialpints.md)
-- [IntentParameter.Volume.imperialQuarts](intentparameter/volume/imperialquarts.md)
-- [IntentParameter.Volume.imperialTablespoons](intentparameter/volume/imperialtablespoons.md)
-- [IntentParameter.Volume.imperialTeaspoons](intentparameter/volume/imperialteaspoons.md)
-- [IntentParameter.Volume.kiloliters](intentparameter/volume/kiloliters.md)
-- [IntentParameter.Volume.liters](intentparameter/volume/liters.md)
-- [IntentParameter.Volume.megaliters](intentparameter/volume/megaliters.md)
-- [IntentParameter.Volume.metricCups](intentparameter/volume/metriccups.md)
-- [IntentParameter.Volume.milliliters](intentparameter/volume/milliliters.md)
-- [IntentParameter.Volume.pints](intentparameter/volume/pints.md)
-- [IntentParameter.Volume.quarts](intentparameter/volume/quarts.md)
-- [IntentParameter.Volume.tablespoons](intentparameter/volume/tablespoons.md)
-- [IntentParameter.Volume.teaspoons](intentparameter/volume/teaspoons.md)
+- [IntentParameter.Volume.acreFeet](./volume/acrefeet.md)
+- [IntentParameter.Volume.bushels](./volume/bushels.md)
+- [IntentParameter.Volume.centiliters](./volume/centiliters.md)
+- [IntentParameter.Volume.cubicCentimeters](./volume/cubiccentimeters.md)
+- [IntentParameter.Volume.cubicDecimeters](./volume/cubicdecimeters.md)
+- [IntentParameter.Volume.cubicFeet](./volume/cubicfeet.md)
+- [IntentParameter.Volume.cubicInches](./volume/cubicinches.md)
+- [IntentParameter.Volume.cubicKilometers](./volume/cubickilometers.md)
+- [IntentParameter.Volume.cubicMeters](./volume/cubicmeters.md)
+- [IntentParameter.Volume.cubicMiles](./volume/cubicmiles.md)
+- [IntentParameter.Volume.cubicMillimeters](./volume/cubicmillimeters.md)
+- [IntentParameter.Volume.cubicYards](./volume/cubicyards.md)
+- [IntentParameter.Volume.cups](./volume/cups.md)
+- [IntentParameter.Volume.deciliters](./volume/deciliters.md)
+- [IntentParameter.Volume.fluidOunces](./volume/fluidounces.md)
+- [IntentParameter.Volume.gallons](./volume/gallons.md)
+- [IntentParameter.Volume.imperialFluidOunces](./volume/imperialfluidounces.md)
+- [IntentParameter.Volume.imperialGallons](./volume/imperialgallons.md)
+- [IntentParameter.Volume.imperialPints](./volume/imperialpints.md)
+- [IntentParameter.Volume.imperialQuarts](./volume/imperialquarts.md)
+- [IntentParameter.Volume.imperialTablespoons](./volume/imperialtablespoons.md)
+- [IntentParameter.Volume.imperialTeaspoons](./volume/imperialteaspoons.md)
+- [IntentParameter.Volume.kiloliters](./volume/kiloliters.md)
+- [IntentParameter.Volume.liters](./volume/liters.md)
+- [IntentParameter.Volume.megaliters](./volume/megaliters.md)
+- [IntentParameter.Volume.metricCups](./volume/metriccups.md)
+- [IntentParameter.Volume.milliliters](./volume/milliliters.md)
+- [IntentParameter.Volume.pints](./volume/pints.md)
+- [IntentParameter.Volume.quarts](./volume/quarts.md)
+- [IntentParameter.Volume.tablespoons](./volume/tablespoons.md)
+- [IntentParameter.Volume.teaspoons](./volume/teaspoons.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../swift/caseiterable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
+- [CaseIterable](../../Swift/caseiterable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [var unit: IntentParameter<Value>.Volume?](intentparameter/unit-95hrl.md)
-- [var defaultUnit: IntentParameter<Value>.Volume?](intentparameter/defaultunit-2bsyg.md)
-- [var supportsNegativeNumbers: Bool?](intentparameter/supportsnegativenumbers-903r6.md)
-- [var unitAdjustForLocale: Bool?](intentparameter/unitadjustforlocale-9ln52.md)
+### Accessing unit details
+- [var unit: IntentParameter<Value>.Volume?](./unit-95hrl.md)
+- [var defaultUnit: IntentParameter<Value>.Volume?](./defaultunit-2bsyg.md)
+- [var supportsNegativeNumbers: Bool?](./supportsnegativenumbers-903r6.md)
+- [var unitAdjustForLocale: Bool?](./unitadjustforlocale-9ln52.md)
 
 
 ---

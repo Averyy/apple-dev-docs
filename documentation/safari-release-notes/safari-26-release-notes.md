@@ -1,6 +1,7 @@
 # Safari 26.0 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released September 15, 2025 — 26 (20622.1.22)
 
@@ -40,7 +41,7 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 - Fixed keyboard typing to cancel voice dictation.  (152597958)
 - Fixed: Safari now reports a frozen OS version in its user agent string on iOS 26 and iPadOS 26, showing the last version released before iOS 26.  (156170132)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -95,7 +96,7 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 - Added support for the request-method content blocker trigger field. (148474901)
 - Added support for `isContentRuleListRedirect`.  (150692793)
 
-##### Dom
+##### DOM
 
 ###### Resolved Issues
 
@@ -132,7 +133,7 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 - Fixed allowing the custom element itself to be passed as validation anchor in the `setValidity()` API. (154303420)
 - Fixed the intrinsic size of number inputs when the spin button width is a percentage value. (154680747)
 
-##### Http
+##### HTTP
 
 ###### New Features
 
@@ -148,7 +149,7 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 
 - Fixed zoomed `<img>` to not cause unwanted rounding of `width` and `height`. (150473104)
 
-##### Javascript
+##### JavaScript
 
 ###### New Features
 
@@ -204,7 +205,7 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 
 - Added support for `<link rel=dns-prefetch>` on iOS while improving privacy on macOS.  (144699889)
 
-##### Pdf
+##### PDF
 
 ###### Resolved Issues
 
@@ -255,7 +256,7 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 - Fixed grid containers incorrectly processing first-letter pseudo-elements when they should not contribute a first formatted line according to the CSS Grid specification. (154504582)
 - Fixed grid items hit-testing order to align with painting order. (154990290)
 
-##### Svg
+##### SVG
 
 ###### New Features
 
@@ -265,7 +266,7 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 
 - Fixed SVG paint server fallback handling for a non-existent URL. (144493507)
 - Fixed respecting the CSS `image-rendering` property when drawing an SVG. (144507619)
-- Fixed handling `url(...) none` to match the [`SVG Paint Server specification`](https://developer.apple.comhttps://svgwg.org/svg2-draft/painting.html#SpecifyingPaint). (146454258)
+- Fixed handling `url(...) none` to match the [SVG Paint Server specification](https://svgwg.org/svg2-draft/painting.html#SpecifyingPaint). (146454258)
 - Fixed ancestor bounding box for “disabled” `<foreignObject>` and `<image>`. (147455573)
 - Fixed: Improved handling of SVG images with subresources. (148607855)
 - Fixed handling of `auto` for `rx` and `ry` on `<ellipse>`. (153274593)
@@ -325,7 +326,7 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 - Fixed Korean counter styles to be aligned with manual Korean numbering in lists. (152969810)
 - Fixed content spacing for elements with `text-align: justify` and `white-space: pre-wrap` applied. (154211168)
 
-##### Urls
+##### URLs
 
 ###### Resolved Issues
 
@@ -334,7 +335,7 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 - Fixed making URL host and hostname setters handle `@` correctly. (146886347)
 - Fixed Windows drive letter after `file:///` when parsing URLs. (147381130)
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -436,20 +437,20 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 - Fixed clicking on the “+” button in the Sources tab sidebar doing nothing when Web Inspector is undocked. (153193833)
 - Fixed Quick Open dialog to show results when an Inspector Bootstrap script exists. (154947309)
 
-##### Webassembly
+##### WebAssembly
 
 ###### New Features
 
 - Added support for an in-place interpreter for Wasm. (113768719)
 - Added support for `WebAssembly.JSTag` to enable modern wasm exception handling. (136036182)
 
-##### Webgpu
+##### WebGPU
 
 ###### New Features
 
 - Added support for WebGPU.  (145801580)
 
-##### Webkit Api
+##### WebKit API
 
 ###### New Features
 
@@ -467,7 +468,7 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 
 - Deprecated WKProcessPool and WKSelectionGranularity.  (152447218)
 
-##### Webrtc
+##### WebRTC
 
 ###### New Features
 
@@ -494,17 +495,18 @@ Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequo
 
 ## See Also
 
-- [Safari 26.6 Release Notes](safari-26_6-release-notes.md)
+### Version 26
+- [Safari 26.6 Release Notes](./safari-26_6-release-notes.md)
   Released July 27, 2026 — 26.6 (20624.4.5)
-- [Safari 26.5 Release Notes](safari-26_5-release-notes.md)
+- [Safari 26.5 Release Notes](./safari-26_5-release-notes.md)
   Released May 11, 2026 — 26.5 (20624.2.5)
-- [Safari 26.4 Release Notes](safari-26_4-release-notes.md)
+- [Safari 26.4 Release Notes](./safari-26_4-release-notes.md)
   Released March 24, 2026 — 26.4 (20624.1.16)
-- [Safari 26.3 Release Notes](safari-26_3-release-notes.md)
+- [Safari 26.3 Release Notes](./safari-26_3-release-notes.md)
   Released February 11, 2026 — 26.3 (20623.2.7)
-- [Safari 26.2 Release Notes](safari-26_2-release-notes.md)
+- [Safari 26.2 Release Notes](./safari-26_2-release-notes.md)
   Released December 12, 2025 — 26.2 (20623.1.14)
-- [Safari 26.1 Release Notes](safari-26_1-release-notes.md)
+- [Safari 26.1 Release Notes](./safari-26_1-release-notes.md)
   Released November 3, 2025 — 26.1 (20622.2.11)
 
 

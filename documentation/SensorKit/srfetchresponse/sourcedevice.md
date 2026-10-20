@@ -1,7 +1,8 @@
 # sourceDevice
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The source of the sample data.
 

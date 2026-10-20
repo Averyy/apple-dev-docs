@@ -1,24 +1,26 @@
 # HID Element Flags
 
-**Framework**: HIDDriverKit
+**Framework**: HIDDriverKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Getting the Element Flag Masks
-- [kIOHIDElementFlagsBufferedByteMask](kiohidelementflagsbufferedbytemask.md)
-- [kIOHIDElementFlagsConstantMask](kiohidelementflagsconstantmask.md)
-- [kIOHIDElementFlagsNoPreferredMask](kiohidelementflagsnopreferredmask.md)
-- [kIOHIDElementFlagsNonLinearMask](kiohidelementflagsnonlinearmask.md)
-- [kIOHIDElementFlagsNullStateMask](kiohidelementflagsnullstatemask.md)
-- [kIOHIDElementFlagsRelativeMask](kiohidelementflagsrelativemask.md)
-- [kIOHIDElementFlagsVariableMask](kiohidelementflagsvariablemask.md)
-- [kIOHIDElementFlagsVolativeMask](kiohidelementflagsvolativemask.md)
-- [kIOHIDElementFlagsWrapMask](kiohidelementflagswrapmask.md)
+- [kIOHIDElementFlagsBufferedByteMask](./kiohidelementflagsbufferedbytemask.md)
+- [kIOHIDElementFlagsConstantMask](./kiohidelementflagsconstantmask.md)
+- [kIOHIDElementFlagsNoPreferredMask](./kiohidelementflagsnopreferredmask.md)
+- [kIOHIDElementFlagsNonLinearMask](./kiohidelementflagsnonlinearmask.md)
+- [kIOHIDElementFlagsNullStateMask](./kiohidelementflagsnullstatemask.md)
+- [kIOHIDElementFlagsRelativeMask](./kiohidelementflagsrelativemask.md)
+- [kIOHIDElementFlagsVariableMask](./kiohidelementflagsvariablemask.md)
+- [kIOHIDElementFlagsVolativeMask](./kiohidelementflagsvolativemask.md)
+- [kIOHIDElementFlagsWrapMask](./kiohidelementflagswrapmask.md)
 
 ## See Also
 
-- [getFlags](iohidelement/getflags.md)
-- [IOHIDElementFlags](iohidelementflags.md)
+### Getting the Element Flags
+- [getFlags](./iohidelement/getflags.md)
+- [IOHIDElementFlags](./iohidelementflags.md)
 
 
 ---

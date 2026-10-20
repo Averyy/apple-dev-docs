@@ -1,7 +1,8 @@
 # typeApplicationURL
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 For specifying an application by URL. See Discussion section below for important information.
 

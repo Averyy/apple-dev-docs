@@ -1,17 +1,22 @@
 # setClip()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the clipping path of the current graphics context with the area inside the path.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setClip()
+```
+
+```objc
+- (void) setClip;
 ```
 
 #### Discussion
@@ -22,13 +27,15 @@ This method uses the current winding rule to determine the clipping shape of the
 
 ## See Also
 
-- [func saveGraphicsState()](nsgraphicscontext/savegraphicsstate-swift.method.md)
+### Related Documentation
+- [func saveGraphicsState()](../nsgraphicscontext/savegraphicsstate%28%29-swift.method.md)
   Saves the current graphics state and creates a new graphics state on the top of the stack.
-- [func restoreGraphicsState()](nsgraphicscontext/restoregraphicsstate-swift.method.md)
+- [func restoreGraphicsState()](../nsgraphicscontext/restoregraphicsstate%28%29-swift.method.md)
   Removes the context’s graphics state from the top of the graphics state stack and makes the next graphics state the current graphics state.
-- [func addClip()](nsbezierpath/addclip.md)
+### Specifying a Clipping Path
+- [func addClip()](./addclip%28%29.md)
   Intersects the area enclosed by the path with the clipping path of the current graphics context and makes the resulting shape the current clipping path.
-- [class func clip(NSRect)](nsbezierpath/clip(_:).md)
+- [class func clip(NSRect)](./clip%28_%29.md)
   Intersects the specified rectangle with the clipping path of the current graphics context and makes the resulting shape the current clipping path.
 
 

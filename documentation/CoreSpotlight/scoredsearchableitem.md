@@ -1,7 +1,8 @@
 # ScoredSearchableItem
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A searchable item paired with a caller-assigned relevance score.
 
@@ -20,36 +21,37 @@ struct ScoredSearchableItem
 
 ## Mentions
 
-- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
+- [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
 #### Overview
 
-Use this type to associate a score with a searchable item from the app’s index. You create instances of this type from a [`CustomStage`](customstage.md) when the stage’s output type is [`SearchPipelineDataType.scoredItems`](searchpipelinedatatype/scoreditems.md).
+Use this type to associate a score with a searchable item from the app’s index. You create instances of this type from a [`CustomStage`](./customstage.md) when the stage’s output type is [`SearchPipelineDataType.scoredItems`](./searchpipelinedatatype/scoreditems.md).
 
 ## Topics
 
 ### Creating the item
-- [init(item: SearchableItem, score: Double)](scoredsearchableitem/init(item:score:).md)
+- [init(item: SearchableItem, score: Double)](./scoredsearchableitem/init%28item,score%29.md)
   Initializes the type with the specified item and score values.
 ### Getting the item details
-- [let item: SearchableItem](scoredsearchableitem/item.md)
+- [let item: SearchableItem](./scoredsearchableitem/item.md)
   The searchable item from the app’s index.
-- [let score: Double](scoredsearchableitem/score.md)
+- [let score: Double](./scoredsearchableitem/score.md)
   The relevance score for the item.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol CustomStage](customstage.md)
+### Tool customization
+- [protocol CustomStage](./customstage.md)
   A custom processing stage the Spotlight search tool uses to identify search results.
-- [struct SearchPipelineData](searchpipelinedata.md)
+- [struct SearchPipelineData](./searchpipelinedata.md)
   The type you use to store the output from a custom stage.
-- [enum SearchPipelineDataType](searchpipelinedatatype.md)
+- [enum SearchPipelineDataType](./searchpipelinedatatype.md)
   Data types that a pipeline stage accepts or produces.
 
 

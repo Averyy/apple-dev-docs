@@ -1,7 +1,8 @@
 # AVKitError
 
 **Framework**: AVKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents a framework error.
 
@@ -21,29 +22,30 @@ struct AVKitError
 ## Topics
 
 ### Inspecting an error
-- [static var errorDomain: String](avkiterror-swift.struct/errordomain.md)
-- [AVKitError.Code](avkiterror-swift.struct/code.md)
+- [static var errorDomain: String](./avkiterror-swift.struct/errordomain.md)
+- [AVKitError.Code](./avkiterror-swift.struct/code.md)
   Constants that identify framework error codes.
-- [Error constants](error-constants.md)
+- [Error constants](./error-constants.md)
   Error code constants for framework operations.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let AVKitErrorDomain: String](avkiterrordomain.md)
+### Errors
+- [let AVKitErrorDomain: String](./avkiterrordomain.md)
   The domain of errors the framework generates.
-- [AVKitError.Code](avkiterror-swift.struct/code.md)
+- [AVKitError.Code](./avkiterror-swift.struct/code.md)
   Constants that identify framework error codes.
-- [Error constants](error-constants.md)
+- [Error constants](./error-constants.md)
   Error code constants for framework operations.
 
 

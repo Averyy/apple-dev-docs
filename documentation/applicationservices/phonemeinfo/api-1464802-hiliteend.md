@@ -1,7 +1,8 @@
 # hiliteEnd
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The number of characters between the beginning of the example word and the end of the portion of that word representing the phoneme.
 
@@ -12,6 +13,10 @@ The number of characters between the beginning of the example word and the end o
 
 ```swift
 var hiliteEnd: Int16
+```
+
+```c
+SInt16 hiliteEnd;
 ```
 
 

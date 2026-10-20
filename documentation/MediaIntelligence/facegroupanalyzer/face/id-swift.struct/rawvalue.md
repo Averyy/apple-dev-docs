@@ -1,7 +1,8 @@
 # rawValue
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw string value of the identifier.
 

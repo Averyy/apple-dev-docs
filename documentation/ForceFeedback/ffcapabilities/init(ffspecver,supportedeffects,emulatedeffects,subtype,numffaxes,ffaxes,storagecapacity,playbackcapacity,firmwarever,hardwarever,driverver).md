@@ -1,7 +1,8 @@
 # init(ffSpecVer:supportedEffects:emulatedEffects:subType:numFfAxes:ffAxes:storageCapacity:playbackCapacity:firmwareVer:hardwareVer:driverVer:)
 
 **Framework**: Force Feedback  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -15,7 +16,8 @@ init(ffSpecVer: NumVersion, supportedEffects: UInt32, emulatedEffects: UInt32, s
 
 ## See Also
 
-- [init()](ffcapabilities/init.md)
+### Initializers
+- [init()](./init%28%29.md)
 
 
 ---

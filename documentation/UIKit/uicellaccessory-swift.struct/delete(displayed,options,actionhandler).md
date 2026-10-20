@@ -1,7 +1,8 @@
 # delete(displayed:options:actionHandler:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a delete system accessory with the specified display state, configuration options, and optional action handler.
 
@@ -10,7 +11,7 @@ Creates a delete system accessory with the specified display state, configuratio
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,13 +25,14 @@ A configured delete cell accessory. This accessory is a minus sign inside of a c
 
 ## Parameters
 
-- `displayed`: The cell-editing states that the delete accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.whenEditing`](uicellaccessory-swift.struct/displayedstate/whenediting.md).
-- `options`: Configuration options for the delete accessory. See [`UICellAccessory.DeleteOptions`](uicellaccessory-swift.struct/deleteoptions.md) for possible configuration options.
+- `displayed`: The cell-editing states that the delete accessory appears in. This parameter has a default value of [`UICellAccessory.DisplayedState.whenEditing`](./displayedstate/whenediting.md).
+- `options`: Configuration options for the delete accessory. See [`UICellAccessory.DeleteOptions`](./deleteoptions.md) for possible configuration options.
 - `actionHandler`: An optional closure that the system calls when a user interacts with the delete accessory.
 
 ## See Also
 
-- [UICellAccessory.DeleteOptions](uicellaccessory-swift.struct/deleteoptions.md)
+### Creating a delete accessory
+- [UICellAccessory.DeleteOptions](./deleteoptions.md)
   Configuration options for a delete accessory.
 
 

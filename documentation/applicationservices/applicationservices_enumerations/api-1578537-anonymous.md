@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var icNoPerm: Int](icnoperm.md)
-- [var icReadOnlyPerm: Int](icreadonlyperm.md)
-- [var icReadWritePerm: Int](icreadwriteperm.md)
+- [var icNoPerm: Int](../icnoperm.md)
+- [var icReadOnlyPerm: Int](../icreadonlyperm.md)
+- [var icReadWritePerm: Int](../icreadwriteperm.md)
 
 
 ---

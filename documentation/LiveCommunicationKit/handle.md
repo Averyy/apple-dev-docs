@@ -1,7 +1,8 @@
 # Handle
 
 **Framework**: LiveCommunicationKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A way to reach a participant, such as a phone number or email address.
 
@@ -20,41 +21,42 @@ struct Handle
 
 ## Mentions
 
-- [Preparing your app to be the default dialer app](preparing-your-app-to-be-the-default-dialer-app.md)
+- [Preparing your app to be the default dialer app](./preparing-your-app-to-be-the-default-dialer-app.md)
 
 ## Topics
 
 ### Creation
-- [init(type: Handle.Kind, value: String, displayName: String?)](handle/init(type:value:displayname:).md)
+- [init(type: Handle.Kind, value: String, displayName: String?)](./handle/init%28type,value,displayname%29.md)
   Creates a new handle that identifies a participant in a conversation.
 ### Type
-- [var type: Handle.Kind](handle/type.md)
+- [var type: Handle.Kind](./handle/type.md)
   The type of the handle; for example a phone number or email address.
-- [Handle.Kind](handle/kind.md)
+- [Handle.Kind](./handle/kind.md)
   Values that define the handle that identifies a participant in a conversation.
 ### Attributes
-- [var displayName: String](handle/displayname.md)
+- [var displayName: String](./handle/displayname.md)
   The name for a participant in a conversation that appears in the conversation UI.
-- [var value: String](handle/value.md)
+- [var value: String](./handle/value.md)
   The raw value of the handle.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class TelephonyConversationManager](telephonyconversationmanager.md)
+### Cellular network conversations
+- [class TelephonyConversationManager](./telephonyconversationmanager.md)
   An interface for initiating cellular network conversations.
-- [struct StartCellularConversationAction](startcellularconversationaction.md)
+- [struct StartCellularConversationAction](./startcellularconversationaction.md)
   The action that starts a cellular conversation using the default calling app.
-- [struct CellularService](cellularservice.md)
+- [struct CellularService](./cellularservice.md)
   A structure that represents the cellular service account to use for starting or joining a conversation.
 
 

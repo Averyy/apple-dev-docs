@@ -1,7 +1,8 @@
 # kIOUSB30DeviceNotificationTypeBusIntervalAdjustment
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The bus interval adjustment.
 
@@ -10,7 +11,7 @@ The bus interval adjustment.
 
 ## Declaration
 
-```swift
+```c
 kIOUSB30DeviceNotificationTypeBusIntervalAdjustment = 3
 ```
 

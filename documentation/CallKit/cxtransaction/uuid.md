@@ -1,7 +1,8 @@
 # uuid
 
 **Framework**: CallKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the transaction.
 
@@ -18,11 +19,16 @@ The unique identifier of the transaction.
 var uuid: UUID { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSUUID * UUID;
+```
+
 ## See Also
 
-- [var isComplete: Bool](cxtransaction/iscomplete.md)
+### Accessing Transaction Attributes
+- [var isComplete: Bool](./iscomplete.md)
   A Boolean value that indicates whether the transaction has been completed.
-- [var actions: [CXAction]](cxtransaction/actions.md)
+- [var actions: [CXAction]](./actions.md)
   The actions added to a transaction.
 
 

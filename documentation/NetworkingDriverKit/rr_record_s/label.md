@@ -1,23 +1,24 @@
 # label
 
 **Framework**: NetworkingDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```c
 struct { ... } label;
 ```
 
 ## Topics
 
 ### Instance Properties
-- [len](rr_record_s/label/len.md)
-- [name](rr_record_s/label/name.md)
-- [record](rr_record_s/label/record.md)
+- [len](./label/len.md)
+- [name](./label/name.md)
+- [record](./label/record.md)
 
 
 ---

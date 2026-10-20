@@ -1,7 +1,8 @@
 # AppSchema.MessagesIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Identifies intent schemas in the messages domain.
 
@@ -21,35 +22,36 @@ protocol MessagesIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var draftMessage: some AppSchemaIntent](appschema/messagesintent/draftmessage.md)
+- [var draftMessage: some AppSchemaIntent](./messagesintent/draftmessage.md)
   An intent schema that opens app to start or continue composing a message via touch.
-- [var editSentMessage: some AppSchemaIntent](appschema/messagesintent/editsentmessage.md)
+- [var editSentMessage: some AppSchemaIntent](./messagesintent/editsentmessage.md)
   An intent schema that edits an already sent message with new content.
-- [var sendMessage: some AppSchemaIntent](appschema/messagesintent/sendmessage.md)
+- [var sendMessage: some AppSchemaIntent](./messagesintent/sendmessage.md)
   An intent schema that sends a message with the associated parameters.
-- [var setMessageReadStatus: some AppSchemaIntent](appschema/messagesintent/setmessagereadstatus.md)
+- [var setMessageReadStatus: some AppSchemaIntent](./messagesintent/setmessagereadstatus.md)
   An intent schema that changes the message read status to a given value.
-- [var unsendMessage: some AppSchemaIntent](appschema/messagesintent/unsendmessage.md)
+- [var unsendMessage: some AppSchemaIntent](./messagesintent/unsendmessage.md)
   An intent schema that unsends a sent message.
 
 ## Relationships
 
 ### Inherits From
-- [AppSchema.Kind](appschema/kind.md)
+- [AppSchema.Kind](./kind.md)
 ### Conforming Types
-- [AppSchema.Intent](appschema/intent.md)
+- [AppSchema.Intent](./intent.md)
 
 ## See Also
 
-- [var draftMessage: some AppSchemaIntent](appschema/messagesintent/draftmessage.md)
+### Actions
+- [var draftMessage: some AppSchemaIntent](./messagesintent/draftmessage.md)
   An intent schema that opens app to start or continue composing a message via touch.
-- [var editSentMessage: some AppSchemaIntent](appschema/messagesintent/editsentmessage.md)
+- [var editSentMessage: some AppSchemaIntent](./messagesintent/editsentmessage.md)
   An intent schema that edits an already sent message with new content.
-- [var sendMessage: some AppSchemaIntent](appschema/messagesintent/sendmessage.md)
+- [var sendMessage: some AppSchemaIntent](./messagesintent/sendmessage.md)
   An intent schema that sends a message with the associated parameters.
-- [var setMessageReadStatus: some AppSchemaIntent](appschema/messagesintent/setmessagereadstatus.md)
+- [var setMessageReadStatus: some AppSchemaIntent](./messagesintent/setmessagereadstatus.md)
   An intent schema that changes the message read status to a given value.
-- [var unsendMessage: some AppSchemaIntent](appschema/messagesintent/unsendmessage.md)
+- [var unsendMessage: some AppSchemaIntent](./messagesintent/unsendmessage.md)
   An intent schema that unsends a sent message.
 
 

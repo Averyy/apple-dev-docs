@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the size of the text in `proposal`. The provided `text` proxy value may be used to query the sizing behavior of the underlying text layout.
@@ -24,6 +25,12 @@ func sizeThatFits(proposal: ProposedViewSize, text: TextProxy) -> CGSize
 #### Discussion
 
 The default implementation of this function returns `text.size(proposal)`.
+
+## Default Implementations
+
+### TextRenderer Implementations
+- [func sizeThatFits(proposal: ProposedViewSize, text: TextProxy) -> CGSize](./sizethatfits%28proposal,text%29-3wr9v.md)
+  Returns the size of the text in `proposal`. The provided `text` proxy value may be used to query the sizing behavior of the underlying text layout.
 
 
 ---

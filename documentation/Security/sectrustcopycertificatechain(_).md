@@ -1,7 +1,8 @@
 # SecTrustCopyCertificateChain(_:)
 
 **Framework**: Security  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 15.0+
@@ -16,6 +17,10 @@
 
 ```swift
 func SecTrustCopyCertificateChain(_ trust: SecTrust) -> CFArray?
+```
+
+```c
+CFArrayRefSecTrustCopyCertificateChain(SecTrustRef trust);
 ```
 
 

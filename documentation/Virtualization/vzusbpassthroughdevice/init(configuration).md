@@ -1,7 +1,8 @@
 # init(configuration:)
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 init(configuration: VZUSBPassthroughDeviceConfiguration) throws
+```
+
+```objc
+- (instancetype) initWithConfiguration:(VZUSBPassthroughDeviceConfiguration *) configuration error:(NSError **) error;
 ```
 
 #### Return Value

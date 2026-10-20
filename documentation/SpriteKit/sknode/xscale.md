@@ -1,18 +1,19 @@
 # xScale
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A scaling factor that multiplies the width of a node and its children.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,24 +21,29 @@ A scaling factor that multiplies the width of a node and its children.
 var xScale: CGFloat { get set }
 ```
 
+```objc
+@property (nonatomic) CGFloat xScale;
+```
+
 ## Mentions
 
-- [Getting Started with a Camera](getting-started-with-a-camera.md)
-- [Resizing a Sprite in Nine Parts](resizing-a-sprite-in-nine-parts.md)
-- [About Node Property Propagation](about-node-property-propagation.md)
-- [Getting Started with Nodes](getting-started-with-nodes.md)
+- [Getting Started with a Camera](../getting-started-with-a-camera.md)
+- [Resizing a Sprite in Nine Parts](../resizing-a-sprite-in-nine-parts.md)
+- [About Node Property Propagation](../about-node-property-propagation.md)
+- [Getting Started with Nodes](../getting-started-with-nodes.md)
 
 #### Discussion
 
-The [`xScale`](sknode/xscale.md) property scales the width of the node and all of its descendants. The scale value affects how a node’s frame is calculated, its hit test area, how it is drawn, and other similar characteristics. The default value is `1.0`.
+The [`xScale`](./xscale.md) property scales the width of the node and all of its descendants. The scale value affects how a node’s frame is calculated, its hit test area, how it is drawn, and other similar characteristics. The default value is `1.0`.
 
 ## See Also
 
-- [var zRotation: CGFloat](sknode/zrotation.md)
+### Scaling and Rotating
+- [var zRotation: CGFloat](./zrotation.md)
   The Euler rotation about the z axis (in radians).
-- [func setScale(CGFloat)](sknode/setscale(_:).md)
-  Sets the [`xScale`](sknode/xscale.md) and [`yScale`](sknode/yscale.md) properties of the node.
-- [var yScale: CGFloat](sknode/yscale.md)
+- [func setScale(CGFloat)](./setscale%28_%29.md)
+  Sets the [`xScale`](./xscale.md) and [`yScale`](./yscale.md) properties of the node.
+- [var yScale: CGFloat](./yscale.md)
   A scaling factor that multiplies the height of a node and its children.
 
 

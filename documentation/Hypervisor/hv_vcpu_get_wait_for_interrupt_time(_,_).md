@@ -1,7 +1,8 @@
 # hv_vcpu_get_wait_for_interrupt_time(_:_:)
 
 **Framework**: Hypervisor  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 27.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func hv_vcpu_get_wait_for_interrupt_time(_ vcpu: hv_vcpu_t, _ time: UnsafeMutablePointer<UInt64>) -> hv_return_t
+```
+
+```c
+extern hv_return_t hv_vcpu_get_wait_for_interrupt_time(hv_vcpu_t vcpu, uint64_t *time);
 ```
 
 #### Return Value

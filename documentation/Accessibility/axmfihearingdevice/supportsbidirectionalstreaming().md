@@ -1,7 +1,8 @@
 # supportsBidirectionalStreaming()
 
 **Framework**: Accessibility  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a Boolean value that indicates whether the iOS device supports bidirectional streaming.
 
@@ -18,9 +19,13 @@ Returns a Boolean value that indicates whether the iOS device supports bidirecti
 static func supportsBidirectionalStreaming() -> Bool
 ```
 
+```c
+extern BOOL AXSupportsBidirectionalAXMFiHearingDeviceStreaming();
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the iOS device supports bidirectional streaming; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the iOS device supports bidirectional streaming; otherwise, [`false`](../../Swift/false.md).
 
 
 ---

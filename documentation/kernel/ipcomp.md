@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct ipcomp {
     ...
 };
@@ -17,9 +17,9 @@ struct ipcomp {
 ## Topics
 
 ### Instance Properties
-- [comp_cpi](ipcomp/1392363-comp_cpi.md)
-- [comp_flags](ipcomp/1392357-comp_flags.md)
-- [comp_nxt](ipcomp/1392349-comp_nxt.md)
+- [comp_cpi](./ipcomp/api-1392363-comp_cpi.md)
+- [comp_flags](./ipcomp/api-1392357-comp_flags.md)
+- [comp_nxt](./ipcomp/api-1392349-comp_nxt.md)
 
 
 ---

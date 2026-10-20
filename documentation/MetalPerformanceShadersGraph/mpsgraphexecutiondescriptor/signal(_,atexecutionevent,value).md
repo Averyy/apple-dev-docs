@@ -1,7 +1,8 @@
 # signal(_:atExecutionEvent:value:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Executable signals these shared events at execution stage and immediately proceeds.
 
@@ -17,6 +18,10 @@ Executable signals these shared events at execution stage and immediately procee
 
 ```swift
 func signal(_ event: any MTLSharedEvent, atExecutionEvent executionStage: MPSGraphExecutionStage, value: UInt64)
+```
+
+```objc
+- (void) signalEvent:(id<MTLSharedEvent>) event atExecutionEvent:(MPSGraphExecutionStage) executionStage value:(uint64_t) value;
 ```
 
 ## Parameters

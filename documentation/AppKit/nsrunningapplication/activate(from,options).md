@@ -1,7 +1,8 @@
 # activate(from:options:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Attempts to activate the application using the specified options.
 
@@ -14,13 +15,17 @@ Attempts to activate the application using the specified options.
 func activate(from application: NSRunningApplication, options: NSApplication.ActivationOptions = []) -> Bool
 ```
 
+```objc
+- (BOOL) activateFromApplication:(NSRunningApplication *) application options:(NSApplicationActivationOptions) options;
+```
+
 #### Return Value
 
-Returns [`true`](https://developer.apple.com/documentation/swift/true) if the request is allowed by the system, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+Returns [`true`](../../Swift/true.md) if the request is allowed by the system, otherwise [`false`](../../Swift/false.md).
 
 #### Discussion
 
-Use this method to request app activation. Calling this method doesn’t guarantee app activation. For cooperative activation, the other application should call [`yieldActivation(to:)`](nsapplication/yieldactivation(to:).md) or equivalent prior to the target application invoking [`activate()`](nsapplication/activate().md).
+Use this method to request app activation. Calling this method doesn’t guarantee app activation. For cooperative activation, the other application should call [`yieldActivation(to:)`](../nsapplication/yieldactivation%28to%29.md) or equivalent prior to the target application invoking [`activate()`](../nsapplication/activate%28%29.md).
 
 ## Parameters
 
@@ -29,16 +34,17 @@ Use this method to request app activation. Calling this method doesn’t guarant
 
 ## See Also
 
-- [func activate(options: NSApplication.ActivationOptions) -> Bool](nsrunningapplication/activate(options:).md)
+### Activating applications
+- [func activate(options: NSApplication.ActivationOptions) -> Bool](./activate%28options%29.md)
   Attempts to activate the application using the specified options.
-- [var isActive: Bool](nsrunningapplication/isactive.md)
+- [var isActive: Bool](./isactive.md)
   Indicates whether the application is currently frontmost.
-- [NSApplication.ActivationOptions](nsapplication/activationoptions.md)
-  The following flags are for [`activate(options:)`](nsrunningapplication/activate(options:).md).
-- [var activationPolicy: NSApplication.ActivationPolicy](nsrunningapplication/activationpolicy.md)
+- [NSApplication.ActivationOptions](../nsapplication/activationoptions.md)
+  The following flags are for [`activate(options:)`](./activate%28options%29.md).
+- [var activationPolicy: NSApplication.ActivationPolicy](./activationpolicy.md)
   Indicates the activation policy of the application.
-- [NSApplication.ActivationPolicy](nsapplication/activationpolicy-swift.enum.md)
-  Activation policies (used by [`activationPolicy`](nsrunningapplication/activationpolicy.md)) that control whether and how an app may be activated.
+- [NSApplication.ActivationPolicy](../nsapplication/activationpolicy-swift.enum.md)
+  Activation policies (used by [`activationPolicy`](./activationpolicy.md)) that control whether and how an app may be activated.
 
 
 ---

@@ -1,7 +1,8 @@
 # setAcceleration(_:)
 
 **Framework**: Game Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the total acceleration of the controller that includes gravity and the user’s acceleration.
 
@@ -19,21 +20,26 @@ Sets the total acceleration of the controller that includes gravity and the user
 func setAcceleration(_ acceleration: GCAcceleration)
 ```
 
+```objc
+- (void) setAcceleration:(GCAcceleration) acceleration;
+```
+
 ## Parameters
 
 - `acceleration`: The total acceleration of the controller.
 
 ## See Also
 
-- [func setStateFrom(GCMotion)](gcmotion/setstatefrom(_:).md)
+### Setting Snapshot Values
+- [func setStateFrom(GCMotion)](./setstatefrom%28_%29.md)
   Copies the input values from a specified motion profile to a snapshot of a motion profile.
-- [func setAttitude(GCQuaternion)](gcmotion/setattitude(_:).md)
+- [func setAttitude(GCQuaternion)](./setattitude%28_%29.md)
   Sets the controller’s attitude.
-- [func setRotationRate(GCRotationRate)](gcmotion/setrotationrate(_:).md)
+- [func setRotationRate(GCRotationRate)](./setrotationrate%28_%29.md)
   Sets the controller’s rotation rate.
-- [func setGravity(GCAcceleration)](gcmotion/setgravity(_:).md)
+- [func setGravity(GCAcceleration)](./setgravity%28_%29.md)
   Sets the controller’s gravity data.
-- [func setUserAcceleration(GCAcceleration)](gcmotion/setuseracceleration(_:).md)
+- [func setUserAcceleration(GCAcceleration)](./setuseracceleration%28_%29.md)
   Sets the acceleration the user applies to the controller.
 
 

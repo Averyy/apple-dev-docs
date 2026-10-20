@@ -1,7 +1,8 @@
 # NSControl.ControlSize.large
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A size larger than the default control size.
 
@@ -14,13 +15,18 @@ A size larger than the default control size.
 case large
 ```
 
+```c
+NSControlSizeLarge
+```
+
 ## See Also
 
-- [NSControl.ControlSize.mini](nscontrol/controlsize-swift.enum/mini.md)
+### Sizing Controls
+- [NSControl.ControlSize.mini](./mini.md)
   The smallest control size.
-- [NSControl.ControlSize.small](nscontrol/controlsize-swift.enum/small.md)
+- [NSControl.ControlSize.small](./small.md)
   A size smaller than the default control size.
-- [NSControl.ControlSize.regular](nscontrol/controlsize-swift.enum/regular.md)
+- [NSControl.ControlSize.regular](./regular.md)
   The default control size.
 
 

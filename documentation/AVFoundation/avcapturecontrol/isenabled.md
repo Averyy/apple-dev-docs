@@ -1,7 +1,8 @@
 # isEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this control supports user interaction.
 
@@ -16,6 +17,10 @@ A Boolean value that indicates whether this control supports user interaction.
 
 ```swift
 var isEnabled: Bool { get set }
+```
+
+```objc
+@property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
 #### Discussion

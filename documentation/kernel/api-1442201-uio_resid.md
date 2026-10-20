@@ -1,14 +1,15 @@
 # uio_resid
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+
 
 ## Declaration
 
-```swift
+```c
 user_ssize_t uio_resid(uio_t a_uio);
 ```
 

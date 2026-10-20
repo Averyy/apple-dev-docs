@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The observed homographic image alignment request.
 
@@ -17,6 +18,10 @@ The observed homographic image alignment request.
 
 ```swift
 var results: [VNImageHomographicAlignmentObservation]? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSArray<VNImageHomographicAlignmentObservation *> * results;
 ```
 
 

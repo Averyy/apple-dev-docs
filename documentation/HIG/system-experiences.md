@@ -18,7 +18,6 @@ framework: HIG
 - [Watch faces](/design/human-interface-guidelines/watch-faces) - A watch face is a view that people choose as their primary view in watchOS.
 - [Widgets](/design/human-interface-guidelines/widgets) - A widget provides quick access to essential information and focused interactions from your app or game in additional contexts.
 
-
 ## Topics
 
 - [App Shortcuts](app-shortcuts.md) - An App Shortcut gives people access to your app’s key functions or content throughout the system.
@@ -31,8 +30,6 @@ framework: HIG
 - [Top Shelf](top-shelf.md) - The Apple TV Home Screen provides an area called Top Shelf, which showcases your content in a rich, engaging way while also giving people access to their favorite apps in the Dock.
 - [Watch faces](watch-faces.md) - A watch face is a view that people choose as their primary view in watchOS.
 - [Widgets](widgets.md) - A widget provides quick access to essential information and focused interactions from your app or game in additional contexts.
-
-
 
 ---
 *Source: [https://developer.apple.com/design/human-interface-guidelines/system-experiences](https://developer.apple.com/design/human-interface-guidelines/system-experiences)*

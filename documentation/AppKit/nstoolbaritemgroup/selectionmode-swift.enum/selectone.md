@@ -1,7 +1,8 @@
 # NSToolbarItemGroup.SelectionMode.selectOne
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system displays a highlighted mode on the most recent item selected.
 
@@ -17,11 +18,16 @@ The system displays a highlighted mode on the most recent item selected.
 case selectOne
 ```
 
+```c
+NSToolbarItemGroupSelectionModeSelectOne
+```
+
 ## See Also
 
-- [NSToolbarItemGroup.SelectionMode.momentary](nstoolbaritemgroup/selectionmode-swift.enum/momentary.md)
+### Selection modes
+- [NSToolbarItemGroup.SelectionMode.momentary](./momentary.md)
   The system temporarily highlights the select group item when the user selects the item.
-- [NSToolbarItemGroup.SelectionMode.selectAny](nstoolbaritemgroup/selectionmode-swift.enum/selectany.md)
+- [NSToolbarItemGroup.SelectionMode.selectAny](./selectany.md)
   The system toggles a highlight on any item selected.
 
 

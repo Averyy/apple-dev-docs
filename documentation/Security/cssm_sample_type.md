@@ -1,7 +1,8 @@
 # CSSM_SAMPLE_TYPE
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_SAMPLE_TYPE = CSSM_WORDID_TYPE
+```
+
+```c
+typedef CSSM_WORDID_TYPE CSSM_SAMPLE_TYPE;
 ```
 
 

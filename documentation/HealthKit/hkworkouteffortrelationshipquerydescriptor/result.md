@@ -1,14 +1,15 @@
 # HKWorkoutEffortRelationshipQueryDescriptor.Result
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -20,8 +21,8 @@ struct Result
 ## Topics
 
 ### Instance Properties
-- [let newAnchor: HKQueryAnchor](hkworkouteffortrelationshipquerydescriptor/result/newanchor.md)
-- [let relationships: [HKWorkoutEffortRelationship]](hkworkouteffortrelationshipquerydescriptor/result/relationships.md)
+- [let newAnchor: HKQueryAnchor](./result/newanchor.md)
+- [let relationships: [HKWorkoutEffortRelationship]](./result/relationships.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # remove(_:queue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func remove(_ endpoint: MTRServerEndpoint, queue: dispatch_queue_t, completion: @escaping @Sendable () -> Void)
+```
+
+```swift
 func remove(_ endpoint: MTRServerEndpoint, queue: dispatch_queue_t) async
+```
+
+```objc
+- (void) removeServerEndpoint:(MTRServerEndpoint *) endpoint queue:(dispatch_queue_t) queue completion:(dispatch_block_t) completion;
 ```
 
 

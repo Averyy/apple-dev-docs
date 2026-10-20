@@ -1,7 +1,8 @@
 # allowedTypes
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the component types allowed in the path when the cell is editable.
 
@@ -12,6 +13,10 @@ Sets the component types allowed in the path when the cell is editable.
 
 ```swift
 var allowedTypes: [String]? { get set }
+```
+
+```objc
+@property (copy, nullable) NSArray<NSString *> * allowedTypes;
 ```
 
 #### Discussion

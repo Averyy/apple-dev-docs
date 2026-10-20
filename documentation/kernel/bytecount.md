@@ -1,7 +1,8 @@
 # ByteCount
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 Abst_ByteCount
 
@@ -10,7 +11,7 @@ Abst_ByteCount
 
 ## Declaration
 
-```swift
+```c
 typedef IOByteCount ByteCount;
 ```
 

@@ -1,7 +1,8 @@
 # Int32.Words.SubSequence
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A collection representing a contiguous subrange of this collection’s elements. The subsequence shares indices with the original collection.
 

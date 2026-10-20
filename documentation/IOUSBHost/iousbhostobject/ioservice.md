@@ -1,7 +1,8 @@
 # ioService
 
 **Framework**: IOUSBHost  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A reference to the kernel object.
 
@@ -15,15 +16,20 @@ A reference to the kernel object.
 var ioService: io_service_t { get }
 ```
 
+```objc
+@property (readonly) io_service_t ioService;
+```
+
 ## See Also
 
-- [struct IOUSBHostObjectInitOptions](iousbhostobjectinitoptions.md)
+### Managing the Object Life Cycle
+- [struct IOUSBHostObjectInitOptions](../iousbhostobjectinitoptions.md)
   Options for initializing the host object.
-- [typealias IOUSBHostInterestHandler](iousbhostinteresthandler.md)
+- [typealias IOUSBHostInterestHandler](../iousbhostinteresthandler.md)
   The callback that handles underlying service-state changes.
-- [var queue: dispatch_queue_t](iousbhostobject/queue.md)
+- [var queue: dispatch_queue_t](./queue.md)
   The queue for servicing input/output requests.
-- [func destroy()](iousbhostobject/destroy.md)
+- [func destroy()](./destroy%28%29.md)
   Removes underlying allocations and connections from the USB host object.
 
 

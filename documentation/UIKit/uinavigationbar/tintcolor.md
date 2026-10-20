@@ -1,7 +1,8 @@
 # tintColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The tint color to apply to the navigation items and bar button items.
 
@@ -9,7 +10,7 @@ The tint color to apply to the navigation items and bar button items.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,9 +19,13 @@ The tint color to apply to the navigation items and bar button items.
 var tintColor: UIColor! { get set }
 ```
 
+```objc
+@property (nonatomic, strong, null_resettable) UIColor * tintColor;
+```
+
 #### Discussion
 
-All subclasses of [`UIView`](uiview.md) derive their behavior for [`tintColor`](uiview/tintcolor.md) from the base class. See the discussion of [`tintColor`](uiview/tintcolor.md) at the [`UIView`](uiview.md) level for more information.
+All subclasses of [`UIView`](../uiview.md) derive their behavior for [`tintColor`](../uiview/tintcolor.md) from the base class. See the discussion of [`tintColor`](../uiview/tintcolor.md) at the [`UIView`](../uiview.md) level for more information.
 
 
 ---

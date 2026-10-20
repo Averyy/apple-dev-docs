@@ -1,16 +1,17 @@
 # MediaManagementAllowedMedia
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures media management.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 11.0
 
 ## Declaration
 
-```swift
+```
 object MediaManagementAllowedMedia
 ```
 
@@ -20,7 +21,7 @@ Specify `com.apple.systemuiserver` as the payload type.
 
 This payload is deprecated as of macOS 11.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -35,30 +36,37 @@ This payload is deprecated as of macOS 11.
 ## Topics
 
 ### Objects
-- [object MediaManagementAllowedMedia.Logout-eject](mediamanagementallowedmedia/logout-eject-data.dictionary.md)
+- [object MediaManagementAllowedMedia.Logout-eject](./mediamanagementallowedmedia/logout-eject-data.dictionary.md)
   A dictionary of volumes to eject when the user logs out.
-- [object MediaManagementAllowedMedia.Mount-controls](mediamanagementallowedmedia/mount-controls-data.dictionary.md)
+- [object MediaManagementAllowedMedia.Mount-controls](./mediamanagementallowedmedia/mount-controls-data.dictionary.md)
   A dictionary of volumes to control volume mounting.
-- [object MediaManagementAllowedMedia.Unmount-controls](mediamanagementallowedmedia/unmount-controls-data.dictionary.md)
+- [object MediaManagementAllowedMedia.Unmount-controls](./mediamanagementallowedmedia/unmount-controls-data.dictionary.md)
   A dictionary to control volume unmounting.
 
 ## Properties
 
-- `logout-eject` (MediaManagementAllowedMedia.Logout-eject): The media type dictionary that defines volumes to eject when the user logs out. Deprecated: macOS 11+
-- `mount-controls` (MediaManagementAllowedMedia.Mount-controls): The media type dictionary that controls volume mounting. Deprecated: macOS 11+
-- `unmount-controls` (MediaManagementAllowedMedia.Unmount-controls): The media type dictionary that controls volume unmounting. Deprecated: macOS 11+
+- `logout-eject` (MediaManagementAllowedMedia.Logout-eject) *(deprecated)*: The media type dictionary that defines volumes to eject when the user logs out.
+
+  Deprecated: macOS 11+
+- `mount-controls` (MediaManagementAllowedMedia.Mount-controls) *(deprecated)*: The media type dictionary that controls volume mounting.
+
+  Deprecated: macOS 11+
+- `unmount-controls` (MediaManagementAllowedMedia.Unmount-controls) *(deprecated)*: The media type dictionary that controls volume unmounting.
+
+  Deprecated: macOS 11+
 
 ## See Also
 
-- [object APN](apn.md)
+### Deprecated
+- [object APN](./apn.md)
   The payload that configures access point names.
-- [object FDERecoveryKeyRedirection](fderecoverykeyredirection.md)
+- [object FDERecoveryKeyRedirection](./fderecoverykeyredirection.md)
   The payload that configures FileVault recovery key redirection.
-- [object ParentalControlDictationAndProfanity](parentalcontroldictationandprofanity.md)
+- [object ParentalControlDictationAndProfanity](./parentalcontroldictationandprofanity.md)
   The payload that configures parental control for dictation and profanity.
-- [object ShareKit](sharekit.md)
+- [object ShareKit](./sharekit.md)
   The payload that configures ShareKit.
-- [object SystemPreferences](systempreferences.md)
+- [object SystemPreferences](./systempreferences.md)
   The payload that configures the preference panes.
 
 

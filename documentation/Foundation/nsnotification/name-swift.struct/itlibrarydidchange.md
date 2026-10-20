@@ -1,7 +1,8 @@
 # ITLibraryDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A notification the system posts when a library change occurs.
 
@@ -16,7 +17,7 @@ static let ITLibraryDidChange: NSNotification.Name
 
 #### Discussion
 
-Call [`reloadData()`](https://developer.apple.com/documentation/ituneslibrary/itlibrary/reloaddata()) to retrieve a new view of the library contents.
+Call [`reloadData()`](../../../iTunesLibrary/itlibrary/reloaddata%28%29.md) to retrieve a new view of the library contents.
 
 
 ---

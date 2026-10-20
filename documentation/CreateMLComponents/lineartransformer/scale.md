@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount to be scaled.
 
@@ -22,7 +23,8 @@ var scale: Element
 
 ## See Also
 
-- [var offset: Element](lineartransformer/offset.md)
+### Getting the properties
+- [var offset: Element](./offset.md)
   The amount to be offset after scaling.
 
 

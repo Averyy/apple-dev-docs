@@ -1,7 +1,8 @@
 # removeDeliveredNotifications(withIdentifiers:)
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes your app’s notifications from Notification Center that match the specified identifiers.
 
@@ -19,19 +20,24 @@ Removes your app’s notifications from Notification Center that match the speci
 func removeDeliveredNotifications(withIdentifiers identifiers: [String])
 ```
 
+```objc
+- (void) removeDeliveredNotificationsWithIdentifiers:(NSArray<NSString *> *) identifiers;
+```
+
 #### Discussion
 
 Use this method to selectively remove notifications that you no longer want displayed in Notification Center. The method executes asynchronously, returning immediately and removing the specified notifications on a background thread.
 
 ## Parameters
 
-- `identifiers`: An array of [`NSString`](https://developer.apple.com/documentation/foundation/nsstring) objects, each of which corresponds to a value in the [`identifier`](unnotificationrequest/identifier.md) property of a [`UNNotificationRequest`](unnotificationrequest.md) object. This method ignores the identifiers of requests whose notifications are not currently displayed in Notification Center.
+- `identifiers`: An array of [`NSString`](../../Foundation/nsstring.md) objects, each of which corresponds to a value in the [`identifier`](../unnotificationrequest/identifier.md) property of a [`UNNotificationRequest`](../unnotificationrequest.md) object. This method ignores the identifiers of requests whose notifications are not currently displayed in Notification Center.
 
 ## See Also
 
-- [func getDeliveredNotifications(completionHandler: ([UNNotification]) -> Void)](unusernotificationcenter/getdeliverednotifications(completionhandler:).md)
+### Removing delivered notifications
+- [func getDeliveredNotifications(completionHandler: ([UNNotification]) -> Void)](./getdeliverednotifications%28completionhandler%29.md)
   Fetches all of your app’s delivered notifications that are still present in Notification Center.
-- [func removeAllDeliveredNotifications()](unusernotificationcenter/removealldeliverednotifications.md)
+- [func removeAllDeliveredNotifications()](./removealldeliverednotifications%28%29.md)
   Removes all of your app’s delivered notifications from Notification Center.
 
 

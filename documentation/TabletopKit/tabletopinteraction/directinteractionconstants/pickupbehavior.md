@@ -1,7 +1,8 @@
 # pickupBehavior
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of pickup behavior that should be used for this interaction.
 

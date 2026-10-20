@@ -1,17 +1,24 @@
 # imageUnfilteredPasteboardTypes()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns an array of strings identifying the pasteboard types supported directly by the registered image representation objects.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use +imageUnfilteredTypes instead
 
 ## Declaration
 
 ```swift
 class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]
+```
+
+```objc
++ (NSArray<NSString *> *) imageUnfilteredPasteboardTypes;
 ```
 
 #### Return Value
@@ -24,11 +31,12 @@ The returned list does not contain pasteboard types that are supported only thro
 
 ## See Also
 
-- [class func imageFileTypes() -> [String]](nsimage/imagefiletypes.md)
+### Deprecated class methods
+- [class func imageFileTypes() -> [String]](./imagefiletypes%28%29.md)
   Returns an array of strings identifying the image types supported by the registered image representation objects.
-- [class func imageUnfilteredFileTypes() -> [String]](nsimage/imageunfilteredfiletypes.md)
+- [class func imageUnfilteredFileTypes() -> [String]](./imageunfilteredfiletypes%28%29.md)
   Returns an array of strings identifying the file types supported directly by the registered image representation objects.
-- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimage/imagepasteboardtypes.md)
+- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](./imagepasteboardtypes%28%29.md)
   Returns an array of strings identifying the pasteboard types supported directly by the registered image representation objects.
 
 

@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a hosting configuration with the given contents.
 
@@ -17,6 +18,8 @@ Creates a hosting configuration with the given contents.
 ```swift
 init(@ContentBuilder content: () -> Content)
 ```
+
+Available when `Content` conforms to `View` and `Background` is `EmptyView`.
 
 ## Parameters
 

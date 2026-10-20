@@ -1,6 +1,7 @@
 # Combining multiple streams of metadata into the same track
 
-**Framework**: QuickTime File Format
+**Framework**: QuickTime File Format  
+**Role**: Article
 
 Introduce new metadata samples with the union of all metadata values from combined tracks.
 
@@ -10,7 +11,7 @@ Because two “streams” or tracks of metadata values might occur where the tim
 
 For example, this figure shows the results of combining the metadata from two metadata tracks:
 
-![A diagram with two axes, where the horiztonal axis shows time marked with t0, t1, t2, and t3, and the vertical axis has labels for tracks, which are Metadata 1, Metadata 2, and Metadata track (bundled). A track labeled A is at the top of the diagram, aligned with the label Metadata 1, and extends from t0 to t2. A track labeled B, aligned with the label Metadata 2, is below the track labeled B, extends from t1 to t3, and has an arrow pointing to the track labeled {A, B} below it. There are three tracks below the tracked labeled B, all aligned with the label Metadata track (bundled). The track labeled A extends from t0 to t1. The track labeled {A, B} extends from t1 to t2. The track labeled B extends from t2 to t3.](/images/com.apple.qtff/combining-metadata-streams@2x.png)
+![A diagram with two axes, where the horiztonal axis shows time marked with t0, t1, t2, and t3, and the vertical axis has labels for tracks, which are Metadata 1, Metadata 2, and Metadata track (bundled). A track labeled A is at the top of the diagram, aligned with the label Metadata 1, and extends from t0 to t2. A track labeled B, aligned with the label Metadata 2, is below the track labeled B, extends from t1 to t3, and has an arrow pointing to the track labeled {A, B} below it. There are three tracks below the tracked labeled B, all aligned with the label Metadata track (bundled). The track labeled A extends from t0 to t1. The track labeled {A, B} extends from t1 to t2. The track labeled B extends from t2 to t3.](https://developer.apple.com/tutorials/images/com.apple.qtff/combining-metadata-streams@2x.png)
 
 > **Note**: The combined timed metadata media samples from time t1 to t2 contain both the A and B metadata values. This is done so that for any time t, it is possible to determine all applicable metadata values without needing to scan through all timed metadata media tracks in backward or forward directions.
 
@@ -18,15 +19,16 @@ In the new combined track, a single timed metadata sample description containing
 
 ## See Also
 
-- [Overview of timed metadata](overview_of_timed_metadata.md)
+### Storing timed metadata media
+- [Overview of timed metadata](./overview_of_timed_metadata.md)
   Synchronize metadata references to media tracks for particular media time periods with timed metadata.
-- [Timed metadata sample description](timed_metadata_sample_descriptions.md)
+- [Timed metadata sample description](./timed_metadata_sample_descriptions.md)
   An atom that defines how to interpret timed metadata media samples.
-- [Timed metadata sample data format](timed_metadata_sample_data_format.md)
+- [Timed metadata sample data format](./timed_metadata_sample_data_format.md)
   A concatenation of one or more atoms that structure a timed metadata media sample.
-- [Constant-size timed metadata sample data](constant-size_timed_metadata_sample_data.md)
+- [Constant-size timed metadata sample data](./constant-size_timed_metadata_sample_data.md)
   Create metadata tracks with samples that have the same size.
-- [Movie-level relationships among tracks](movie-level_relationships_among_tracks.md)
+- [Movie-level relationships among tracks](./movie-level_relationships_among_tracks.md)
   Handling tracks with more than one associated metadata track.
 
 

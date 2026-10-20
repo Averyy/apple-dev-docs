@@ -1,7 +1,8 @@
 # matchedGeometryEffect(id:in:properties:anchor:isSource:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Defines a group of views with synchronized geometry using an identifier and namespace that you provide.
 
@@ -36,20 +37,21 @@ If the number of currently-inserted views in the group with `isSource = true` is
 ## Parameters
 
 - `id`: The identifier, often derived from the identifier of the data being displayed by the view.
-- `namespace`: The namespace in which defines the `id`. New namespaces are created by adding an `@Namespace` variable to a [`View`](view.md) type and reading its value in the view’s body method.
+- `namespace`: The namespace in which defines the `id`. New namespaces are created by adding an `@Namespace` variable to a [`View`](../view.md) type and reading its value in the view’s body method.
 - `properties`: The properties to copy from the source view.
 - `anchor`: The relative location in the view used to produce its shared position value.
 - `isSource`: True if the view should be used as the source of geometry for other views in the group.
 
 ## See Also
 
-- [struct MatchedGeometryProperties](matchedgeometryproperties.md)
+### Synchronizing geometries
+- [struct MatchedGeometryProperties](../matchedgeometryproperties.md)
   A set of view properties that may be synchronized between views using the `View.matchedGeometryEffect()` function.
-- [protocol GeometryEffect](geometryeffect.md)
+- [protocol GeometryEffect](../geometryeffect.md)
   An effect that changes the visual appearance of a view, largely without changing its ancestors or descendants.
-- [struct Namespace](namespace.md)
+- [struct Namespace](../namespace.md)
   A dynamic property type that allows access to a namespace defined by the persistent identity of the object containing the property (e.g. a view).
-- [func geometryGroup() -> some View](view/geometrygroup.md)
+- [func geometryGroup() -> some View](./geometrygroup%28%29.md)
   Isolates the geometry (e.g. position and size) of the view from its parent view.
 
 

@@ -1,7 +1,8 @@
 # init(_:defaultValue:table:locale:bundle:comment:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a localized string resource from a static string and its bundle properties.
 
@@ -25,8 +26,8 @@ init(_ key: StaticString, defaultValue: String.LocalizationValue, table: String?
 - `key`: The key for an entry in the specified table.
 - `defaultValue`: A localization value to use if `key` doesn’t exist in `table`. Xcode’s Product > Export Localizations feature also extracts this value as the default translation in the project’s development locale.
 - `table`: The name of the table containing the key-value pairs. If not provided, `nil`, or an empty string, this value defaults to `Localizable.strings.`
-- `locale`: The locale for the resource to use. By default, the resource uses [`current`](locale/current.md).
-- `bundle`: A [`LocalizedStringResource.BundleDescription`](localizedstringresource/bundledescription.md) that indicates where to locate the table’s strings file. By default, the resource uses the main bundle.
+- `locale`: The locale for the resource to use. By default, the resource uses [`current`](../locale/current.md).
+- `bundle`: A [`LocalizedStringResource.BundleDescription`](./bundledescription.md) that indicates where to locate the table’s strings file. By default, the resource uses the main bundle.
 - `comment`: The comment to place above the key-value pair in the strings file. This parameter provides the translator with some context about the localized string’s presentation to the user.
 
 

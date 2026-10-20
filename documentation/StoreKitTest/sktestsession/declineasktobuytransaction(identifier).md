@@ -1,7 +1,8 @@
 # declineAskToBuyTransaction(identifier:)
 
 **Framework**: StoreKit Test  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resolves an Ask to Buy test scenario by declining the transaction.
 
@@ -20,15 +21,20 @@ Resolves an Ask to Buy test scenario by declining the transaction.
 func declineAskToBuyTransaction(identifier: Int) throws
 ```
 
+```objc
+- (BOOL) declineAskToBuyTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
+```
+
 ## Parameters
 
-- `identifier`: The transaction [`identifier`](sktesttransaction/identifier.md) of an Ask to Buy transaction.
+- `identifier`: The transaction [`identifier`](../sktesttransaction/identifier.md) of an Ask to Buy transaction.
 
 ## See Also
 
-- [var askToBuyEnabled: Bool](sktestsession/asktobuyenabled.md)
+### Testing Ask To Buy transactions
+- [var askToBuyEnabled: Bool](./asktobuyenabled.md)
   A Boolean value that determines whether the testing environment simulates an Ask to Buy scenario.
-- [func approveAskToBuyTransaction(identifier: Int) throws](sktestsession/approveasktobuytransaction(identifier:).md)
+- [func approveAskToBuyTransaction(identifier: Int) throws](./approveasktobuytransaction%28identifier%29.md)
   Resolves an Ask to Buy test scenario by approving the transaction.
 
 

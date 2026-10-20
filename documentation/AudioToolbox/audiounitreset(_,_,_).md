@@ -1,7 +1,8 @@
 # AudioUnitReset(_:_:_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Resets an audio unit’s render state.
 
@@ -19,9 +20,13 @@ Resets an audio unit’s render state.
 func AudioUnitReset(_ inUnit: AudioUnit, _ inScope: AudioUnitScope, _ inElement: AudioUnitElement) -> OSStatus
 ```
 
+```c
+extern OSStatus AudioUnitReset(AudioUnit inUnit, AudioUnitScope inScope, AudioUnitElement inElement);
+```
+
 ## Mentions
 
-- [Migrating Your Audio Unit Host to the AUv3 API](migrating-your-audio-unit-host-to-the-auv3-api.md)
+- [Migrating Your Audio Unit Host to the AUv3 API](./migrating-your-audio-unit-host-to-the-auv3-api.md)
 
 #### Return Value
 
@@ -41,13 +46,14 @@ This function clears memory. It does not allocate or free memory resources.
 
 ## See Also
 
-- [func AudioUnitInitialize(AudioUnit) -> OSStatus](audiounitinitialize(_:).md)
+### Initializing the Audio Unit
+- [func AudioUnitInitialize(AudioUnit) -> OSStatus](./audiounitinitialize%28_%29.md)
   Initializes an audio unit
-- [func AudioUnitUninitialize(AudioUnit) -> OSStatus](audiounituninitialize(_:).md)
+- [func AudioUnitUninitialize(AudioUnit) -> OSStatus](./audiounituninitialize%28_%29.md)
   Uninitializes an audio unit.
-- [func AudioUnitProcess(AudioUnit, UnsafeMutablePointer<AudioUnitRenderActionFlags>?, UnsafePointer<AudioTimeStamp>, UInt32, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](audiounitprocess(_:_:_:_:_:).md)
-- [func AudioUnitProcessMultiple(AudioUnit, UnsafeMutablePointer<AudioUnitRenderActionFlags>?, UnsafePointer<AudioTimeStamp>, UInt32, UInt32, UnsafeMutablePointer<UnsafePointer<AudioBufferList>>, UInt32, UnsafeMutablePointer<UnsafeMutablePointer<AudioBufferList>>) -> OSStatus](audiounitprocessmultiple(_:_:_:_:_:_:_:_:).md)
-- [typealias AudioUnit](audiounit.md)
+- [func AudioUnitProcess(AudioUnit, UnsafeMutablePointer<AudioUnitRenderActionFlags>?, UnsafePointer<AudioTimeStamp>, UInt32, UnsafeMutablePointer<AudioBufferList>) -> OSStatus](./audiounitprocess%28_,_,_,_,_%29.md)
+- [func AudioUnitProcessMultiple(AudioUnit, UnsafeMutablePointer<AudioUnitRenderActionFlags>?, UnsafePointer<AudioTimeStamp>, UInt32, UInt32, UnsafeMutablePointer<UnsafePointer<AudioBufferList>>, UInt32, UnsafeMutablePointer<UnsafeMutablePointer<AudioBufferList>>) -> OSStatus](./audiounitprocessmultiple%28_,_,_,_,_,_,_,_%29.md)
+- [typealias AudioUnit](./audiounit.md)
   The data type for a plug-in component that provides audio processing or audio data generation.
 
 

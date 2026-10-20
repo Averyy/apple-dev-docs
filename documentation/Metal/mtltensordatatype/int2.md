@@ -1,7 +1,8 @@
 # MTLTensorDataType.int2
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A 2-bit signed integer data type.
 
@@ -17,6 +18,10 @@ A 2-bit signed integer data type.
 
 ```swift
 case int2
+```
+
+```c
+MTLTensorDataTypeInt2
 ```
 
 

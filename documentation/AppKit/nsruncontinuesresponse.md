@@ -1,12 +1,15 @@
 # NSRunContinuesResponse
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Modal session is continuing (returned by [`runModalSession(_:)`](nsapplication/runmodalsession(_:).md) only).
+Modal session is continuing (returned by [`runModalSession(_:)`](./nsapplication/runmodalsession%28_%29.md) only).
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use [`continue`](./nsapplication/modalresponse/continue.md) instead.
 
 ## Declaration
 
@@ -14,12 +17,17 @@ Modal session is continuing (returned by [`runModalSession(_:)`](nsapplication/r
 var NSRunContinuesResponse: Int { get }
 ```
 
+```c
+NSRunContinuesResponse
+```
+
 ## See Also
 
-- [var NSRunAbortedResponse: Int](nsrunabortedresponse.md)
-  Modal session was broken with [`abortModal()`](nsapplication/abortmodal().md).
-- [var NSRunStoppedResponse: Int](nsrunstoppedresponse.md)
-  Modal session was broken with [`stopModal()`](nsapplication/stopmodal().md).
+### Constants
+- [var NSRunAbortedResponse: Int](./nsrunabortedresponse.md)
+  Modal session was broken with [`abortModal()`](./nsapplication/abortmodal%28%29.md).
+- [var NSRunStoppedResponse: Int](./nsrunstoppedresponse.md)
+  Modal session was broken with [`stopModal()`](./nsapplication/stopmodal%28%29.md).
 
 
 ---

@@ -1,7 +1,8 @@
 # scalesWithZoom
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the adornment scales with the zoom level or remains fixed in the base coordinate system.
 
@@ -24,9 +25,10 @@ When this value is `true`, the adornment image adjusts to the zoom scale of the 
 
 ## See Also
 
-- [MarkupAdornment.DragRegion](markupadornment/dragregion-swift.struct.md)
+### Controlling interactions
+- [MarkupAdornment.DragRegion](./dragregion-swift.struct.md)
   The movement behavior and interaction constraints for a markup adornment.
-- [var dragRegion: MarkupAdornment.DragRegion](markupadornment/dragregion-swift.property.md)
+- [var dragRegion: MarkupAdornment.DragRegion](./dragregion-swift.property.md)
   The constraints that define where a person can drag this adornment.
 
 

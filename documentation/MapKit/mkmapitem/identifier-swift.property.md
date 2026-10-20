@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for a place.
 
@@ -20,9 +21,13 @@ A unique identifier for a place.
 var identifier: MKMapItem.Identifier? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) MKMapItemIdentifier * identifier;
+```
+
 ## Mentions
 
-- [Identifying unique locations with Place IDs](identifying-unique-locations-with-place-ids.md)
+- [Identifying unique locations with Place IDs](../identifying-unique-locations-with-place-ids.md)
 
 #### Discussion
 
@@ -30,23 +35,24 @@ An identifier uniquely identifies a place, such as a business or a landmark. You
 
 ## See Also
 
-- [MKMapItem.Identifier](mkmapitem/identifier-swift.class.md)
+### Accessing the map item attributes
+- [MKMapItem.Identifier](./identifier-swift.class.md)
   A unique identifier for a place.
-- [var alternateIdentifiers: Set<MKMapItem.Identifier>](mkmapitem/alternateidentifiers.md)
+- [var alternateIdentifiers: Set<MKMapItem.Identifier>](./alternateidentifiers.md)
   A set of alternative identifiers for a place.
-- [var isCurrentLocation: Bool](mkmapitem/iscurrentlocation.md)
+- [var isCurrentLocation: Bool](./iscurrentlocation.md)
   A Boolean value that indicates whether the map item represents the user’s location.
-- [var name: String?](mkmapitem/name.md)
+- [var name: String?](./name.md)
   The descriptive name associated with the map item.
-- [var placemark: MKPlacemark](mkmapitem/placemark.md)
+- [var placemark: MKPlacemark](./placemark.md)
   The placemark object containing the location information.
-- [var pointOfInterestCategory: MKPointOfInterestCategory?](mkmapitem/pointofinterestcategory.md)
+- [var pointOfInterestCategory: MKPointOfInterestCategory?](./pointofinterestcategory.md)
   The point-of-interest category for the map item.
-- [var phoneNumber: String?](mkmapitem/phonenumber.md)
+- [var phoneNumber: String?](./phonenumber.md)
   The phone number associated with a business at the specified location.
-- [var timeZone: TimeZone?](mkmapitem/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone of the specified location.
-- [var url: URL?](mkmapitem/url.md)
+- [var url: URL?](./url.md)
   The URL associated with the specified location.
 
 

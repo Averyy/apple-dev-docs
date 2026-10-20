@@ -1,7 +1,8 @@
 # AttributedString.MarkdownParsingOptions.InterpretedSyntax.full
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A syntax value that interprets the full Markdown syntax and produces all relevant attributes.
 
@@ -22,9 +23,10 @@ case full
 
 ## See Also
 
-- [AttributedString.MarkdownParsingOptions.InterpretedSyntax.inlineOnly](attributedstring/markdownparsingoptions/interpretedsyntax-swift.enum/inlineonly.md)
+### Syntax Values
+- [AttributedString.MarkdownParsingOptions.InterpretedSyntax.inlineOnly](./inlineonly.md)
   A syntax value that parses all Markdown text, but interprets only attributes that apply to inline spans.
-- [AttributedString.MarkdownParsingOptions.InterpretedSyntax.inlineOnlyPreservingWhitespace](attributedstring/markdownparsingoptions/interpretedsyntax-swift.enum/inlineonlypreservingwhitespace.md)
+- [AttributedString.MarkdownParsingOptions.InterpretedSyntax.inlineOnlyPreservingWhitespace](./inlineonlypreservingwhitespace.md)
   A syntax value that parses all Markdown text, but interprets only attributes that apply to inline spans, preserving white space.
 
 

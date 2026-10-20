@@ -1,7 +1,8 @@
 # init(descriptors:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a composite document descriptor with specified descriptors.
 
@@ -15,6 +16,10 @@ Returns a composite document descriptor with specified descriptors.
 
 ```swift
 init(descriptors: [any PKIdentityDocumentDescriptor])
+```
+
+```objc
+- (instancetype) initWithDescriptors:(NSArray<id<PKIdentityDocumentDescriptor>> *) descriptors;
 ```
 
 

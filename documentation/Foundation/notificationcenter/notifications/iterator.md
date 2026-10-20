@@ -1,7 +1,8 @@
 # NotificationCenter.Notifications.Iterator
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The asynchronous iterator created by this asynchronous sequence.
 
@@ -23,20 +24,21 @@ struct Iterator
 ## Topics
 
 ### Iterating over Elements
-- [func next() async -> Notification?](notificationcenter/notifications/iterator/next.md)
+- [func next() async -> Notification?](./iterator/next%28%29.md)
   Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
 ### Supporting Types
-- [NotificationCenter.Notifications.Element](notificationcenter/notifications/element.md)
+- [NotificationCenter.Notifications.Element](./element.md)
   The type of element produced by this asynchronous sequence.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> NotificationCenter.Notifications.Iterator](notificationcenter/notifications/makeasynciterator.md)
+### Creating an Iterator
+- [func makeAsyncIterator() -> NotificationCenter.Notifications.Iterator](./makeasynciterator%28%29.md)
   Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
 

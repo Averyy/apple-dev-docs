@@ -1,7 +1,8 @@
 # includePendingChanges
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether, when the fetch runs, it matches against currently unsaved changes in the model context.
 
@@ -29,13 +30,14 @@ The default value is `true`.
 
 ## See Also
 
-- [var predicate: Predicate<T>?](fetchdescriptor/predicate.md)
+### Constraining the fetch
+- [var predicate: Predicate<T>?](./predicate.md)
   The logical condition that determines whether the fetch includes a specific model in its results.
-- [var sortBy: [SortDescriptor<T>]](fetchdescriptor/sortby.md)
+- [var sortBy: [SortDescriptor<T>]](./sortby.md)
   The sort descriptors that tell the fetch how to order its results.
-- [var fetchLimit: Int?](fetchdescriptor/fetchlimit.md)
+- [var fetchLimit: Int?](./fetchlimit.md)
   The maximum number of models the fetch can return.
-- [var fetchOffset: Int?](fetchdescriptor/fetchoffset.md)
+- [var fetchOffset: Int?](./fetchoffset.md)
   The offset of the first matching model to fetch.
 
 

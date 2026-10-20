@@ -1,7 +1,8 @@
 # didResignKey
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,8 @@
 ```swift
 static var didResignKey: NotificationCenter.BaseMessageIdentifier<UIWindow.DidResignKeyMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIWindow.DidResignKeyMessage>`.
 
 
 ---

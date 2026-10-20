@@ -1,7 +1,8 @@
 # milliseconds(_:)
 
 **Framework**: Combine  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Converts the specified number of milliseconds into an instance of this scheduler time type.
 
@@ -22,13 +23,14 @@ static func milliseconds(_ ms: Int) -> ImmediateScheduler.SchedulerTimeType.Stri
 
 ## See Also
 
-- [static func microseconds(Int) -> ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/stride/microseconds(_:).md)
+### Creating Scheduler Time Strides from Seconds
+- [static func microseconds(Int) -> ImmediateScheduler.SchedulerTimeType.Stride](./microseconds%28_%29.md)
   Converts the specified number of microseconds into an instance of this scheduler time type.
-- [static func nanoseconds(Int) -> ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/stride/nanoseconds(_:).md)
+- [static func nanoseconds(Int) -> ImmediateScheduler.SchedulerTimeType.Stride](./nanoseconds%28_%29.md)
   Converts the specified number of nanoseconds into an instance of this scheduler time type.
-- [static func seconds(Double) -> ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/stride/seconds(_:)-8lm65.md)
+- [static func seconds(Double) -> ImmediateScheduler.SchedulerTimeType.Stride](./seconds%28_%29-8lm65.md)
   Converts the specified number of seconds, as a floating-point value, into an instance of this scheduler time type.
-- [static func seconds(Int) -> ImmediateScheduler.SchedulerTimeType.Stride](immediatescheduler/schedulertimetype/stride/seconds(_:)-9uwki.md)
+- [static func seconds(Int) -> ImmediateScheduler.SchedulerTimeType.Stride](./seconds%28_%29-9uwki.md)
   Converts the specified number of seconds into an instance of this scheduler time type.
 
 

@@ -1,9 +1,10 @@
 # launchFlags
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-Launch flags specifying how to launch each application(including whether to print or merely open documents); see [`LSLaunchFlags`](lslaunchflags.md) fora description of these flags.
+Launch flags specifying how to launch each application(including whether to print or merely open documents); see [`LSLaunchFlags`](../lslaunchflags.md) fora description of these flags.
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.10
@@ -12,6 +13,10 @@ Launch flags specifying how to launch each application(including whether to prin
 
 ```swift
 var launchFlags: LSLaunchFlags
+```
+
+```c
+LSLaunchFlags launchFlags;
 ```
 
 

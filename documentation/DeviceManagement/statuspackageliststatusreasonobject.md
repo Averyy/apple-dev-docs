@@ -1,7 +1,8 @@
 # StatusPackageListStatusReasonObject
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Information about a status error.
 
@@ -10,14 +11,14 @@ Information about a status error.
 
 ## Declaration
 
-```swift
+```
 object StatusPackageListStatusReasonObject
 ```
 
 ## Topics
 
 ### Objects
-- [object StatusPackageListStatusReason_DetailsObject](statuspackageliststatusreason_detailsobject.md)
+- [object StatusPackageListStatusReason_DetailsObject](./statuspackageliststatusreason_detailsobject.md)
   A dictionary that contains additional details about the state.
 
 ## Properties

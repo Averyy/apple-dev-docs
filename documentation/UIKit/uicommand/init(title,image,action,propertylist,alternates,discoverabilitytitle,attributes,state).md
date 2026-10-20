@@ -1,7 +1,8 @@
 # init(title:image:action:propertyList:alternates:discoverabilityTitle:attributes:state:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a command with the specified title, image, action, property list, alternative commands, discoverability title, attributes, and state.
 
@@ -9,7 +10,7 @@ Creates a command with the specified title, image, action, property list, altern
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,7 +22,7 @@ Creates a command with the specified title, image, action, property list, altern
 ## Parameters
 
 - `title`: The title to display for the command.
-- `image`: The image to display next to the command’s title. Only the [`context`](uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
+- `image`: The image to display next to the command’s title. Only the [`context`](../uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
 - `action`: The action to take after a person user selects the command.
 - `propertyList`: An object that contains data to associate with the command.
 - `alternates`: An array of alternatives for the command.
@@ -31,11 +32,12 @@ Creates a command with the specified title, image, action, property list, altern
 
 ## See Also
 
-- [convenience init(title: String, subtitle: String?, image: UIImage?, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](uicommand/init(title:subtitle:image:action:propertylist:alternates:discoverabilitytitle:attributes:state:).md)
+### Creating a command
+- [convenience init(title: String, subtitle: String?, image: UIImage?, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](./init%28title,subtitle,image,action,propertylist,alternates,discoverabilitytitle,attributes,state%29.md)
   Creates a command with the specified title, subtitle, image, action, property list, alternative commands, discoverability title, attributes, and state.
-- [init?(coder: NSCoder)](uicommand/init(coder:).md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
   Creates a command from data in an unarchiver.
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+- [Adding menus and shortcuts to the menu bar and user interface](../adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
 
 

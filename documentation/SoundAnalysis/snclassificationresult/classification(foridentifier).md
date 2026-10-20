@@ -1,7 +1,8 @@
 # classification(forIdentifier:)
 
 **Framework**: Sound Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the classification for an identifier.
 
@@ -20,13 +21,17 @@ Returns the classification for an identifier.
 func classification(forIdentifier identifier: String) -> SNClassification?
 ```
 
+```objc
+- (SNClassification *) classificationForIdentifier:(NSString *) identifier;
+```
+
 #### Return Value
 
 A sound classification with a corresponding identifier if it exists in the result; otherwise, `nil`.
 
 #### Discussion
 
-The `identifier` parameter corresponds to the [`identifier`](snclassification/identifier.md) property in an [`SNClassification`](snclassification.md).
+The `identifier` parameter corresponds to the [`identifier`](../snclassification/identifier.md) property in an [`SNClassification`](../snclassification.md).
 
 ## Parameters
 
@@ -34,11 +39,12 @@ The `identifier` parameter corresponds to the [`identifier`](snclassification/id
 
 ## See Also
 
-- [var timeRange: CMTimeRange](snclassificationresult/timerange.md)
+### Inspecting the Result
+- [var timeRange: CMTimeRange](./timerange.md)
   The time span that corresponds to the result’s classifications.
-- [var classifications: [SNClassification]](snclassificationresult/classifications.md)
+- [var classifications: [SNClassification]](./classifications.md)
   A sorted array of the request’s top classification candidates.
-- [class SNClassification](snclassification.md)
+- [class SNClassification](../snclassification.md)
   A type that pairs a sound classifier’s prediction with its confidence in that prediction.
 
 

@@ -1,7 +1,8 @@
 # hash(into:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Hashes the essential components of the scalar parameter by feeding them into the given hash function.
 
@@ -11,7 +12,7 @@ Hashes the essential components of the scalar parameter by feeding them into the
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

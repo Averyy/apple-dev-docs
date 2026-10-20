@@ -1,7 +1,8 @@
 # vehicleEndorsements
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The endorsements on the driving privilege.
 

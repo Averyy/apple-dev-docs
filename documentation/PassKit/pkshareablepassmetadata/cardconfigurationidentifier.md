@@ -1,7 +1,8 @@
 # cardConfigurationIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A developer-defined value that represents the configuration of a pass.
 
@@ -9,13 +10,17 @@ A developer-defined value that represents the configuration of a pass.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var cardConfigurationIdentifier: String { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) NSString * cardConfigurationIdentifier;
 ```
 
 

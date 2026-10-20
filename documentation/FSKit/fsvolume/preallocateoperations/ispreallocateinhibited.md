@@ -1,17 +1,22 @@
 # isPreallocateInhibited
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
 
 **Availability**:
-- macOS 15.4+
+- macOS 15.4+ - Deprecated in 27.0
 
 ## Declaration
 
 ```swift
 optional var isPreallocateInhibited: Bool { get set }
+```
+
+```objc
+@property (getter=isPreallocateInhibited) BOOL preallocateInhibited;
 ```
 
 #### Discussion

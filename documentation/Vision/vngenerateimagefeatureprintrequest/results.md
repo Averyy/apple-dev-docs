@@ -1,7 +1,8 @@
 # results
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The results of the feature print request.
 
@@ -19,9 +20,14 @@ The results of the feature print request.
 var results: [VNFeaturePrintObservation]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<VNFeaturePrintObservation *> * results;
+```
+
 ## See Also
 
-- [class VNFeaturePrintObservation](vnfeatureprintobservation.md)
+### Accessing the Results
+- [class VNFeaturePrintObservation](../vnfeatureprintobservation.md)
   An observation that provides the recognized feature print.
 
 

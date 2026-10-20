@@ -1,13 +1,14 @@
 # kLSMMapDiscardCounts
 
 **Framework**: Latent Semantic Mapping  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An option that specifies not to keep counts.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,17 +16,22 @@ An option that specifies not to keep counts.
 var kLSMMapDiscardCounts: Int { get }
 ```
 
+```c
+kLSMMapDiscardCounts
+```
+
 #### Discussion
 
-If you specify this option when loading the map, you must reload the map without this option before calling [`LSMMapStartTraining(_:)`](lsmmapstarttraining(_:).md).
+If you specify this option when loading the map, you must reload the map without this option before calling [`LSMMapStartTraining(_:)`](./lsmmapstarttraining%28_%29.md).
 
 If you specify this option when storing the map, the stored map can’t be retrained at all. This option can save a lot of memory or disk space.
 
 ## See Also
 
-- [var kLSMMapLoadMutable: Int](klsmmaploadmutable.md)
+### Constants
+- [var kLSMMapLoadMutable: Int](./klsmmaploadmutable.md)
   An option that specifies to load the map as mutable in training state.
-- [var kLSMMapHashText: Int](klsmmaphashtext.md)
+- [var kLSMMapHashText: Int](./klsmmaphashtext.md)
   An option that specifies to transform the text so it’s not human-readable.
 
 

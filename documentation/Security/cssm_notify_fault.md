@@ -1,7 +1,8 @@
 # CSSM_NOTIFY_FAULT
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_NOTIFY_FAULT: Int { get }
+```
+
+```c
+CSSM_NOTIFY_FAULT
 ```
 
 

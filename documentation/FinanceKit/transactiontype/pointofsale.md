@@ -1,7 +1,8 @@
 # TransactionType.pointOfSale
 
 **Framework**: FinanceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A Point of Sales transaction.
 
@@ -17,35 +18,36 @@ case pointOfSale
 
 ## See Also
 
-- [TransactionType.adjustment](transactiontype/adjustment.md)
+### Enumeration Cases
+- [TransactionType.adjustment](./adjustment.md)
   A credit or debit adjustment transaction.
-- [TransactionType.atm](transactiontype/atm.md)
+- [TransactionType.atm](./atm.md)
   An ATM  transaction.
-- [TransactionType.billPayment](transactiontype/billpayment.md)
+- [TransactionType.billPayment](./billpayment.md)
   A bill payment, usually carried out through an eBill or eCheck system.
-- [TransactionType.check](transactiontype/check.md)
+- [TransactionType.check](./check.md)
   A check  payment.
-- [TransactionType.deposit](transactiontype/deposit.md)
+- [TransactionType.deposit](./deposit.md)
   A deposit of money by a payer into a payee’s bank account.
-- [TransactionType.directDebit](transactiontype/directdebit.md)
+- [TransactionType.directDebit](./directdebit.md)
   A payment to a third party on agreed dates, typically in order to pay bills.
-- [TransactionType.directDeposit](transactiontype/directdeposit.md)
+- [TransactionType.directDeposit](./directdeposit.md)
   A deposit of money by a payer directly into a payee’s bank account.
-- [TransactionType.dividend](transactiontype/dividend.md)
+- [TransactionType.dividend](./dividend.md)
   A distribution of a company’s earnings to its shareholders.
-- [TransactionType.fee](transactiontype/fee.md)
+- [TransactionType.fee](./fee.md)
   A fee or charge levied by the account provider.
-- [TransactionType.interest](transactiontype/interest.md)
+- [TransactionType.interest](./interest.md)
   A credit or debit due to interest earned or incurred.
-- [TransactionType.loan](transactiontype/loan.md)
+- [TransactionType.loan](./loan.md)
   A loan drawdown or repayment.
-- [TransactionType.refund](transactiontype/refund.md)
+- [TransactionType.refund](./refund.md)
   A refund.
-- [TransactionType.standingOrder](transactiontype/standingorder.md)
+- [TransactionType.standingOrder](./standingorder.md)
   A regular payment of a fixed amount that’s paid on a specified date.
-- [TransactionType.transfer](transactiontype/transfer.md)
+- [TransactionType.transfer](./transfer.md)
   A transfer between accounts.
-- [TransactionType.unknown](transactiontype/unknown.md)
+- [TransactionType.unknown](./unknown.md)
   The transaction’s category doesn’t map to a known value.
 
 

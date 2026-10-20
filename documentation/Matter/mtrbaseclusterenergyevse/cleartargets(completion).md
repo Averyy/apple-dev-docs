@@ -1,7 +1,8 @@
 # clearTargets(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func clearTargets(completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func clearTargets() async throws
+```
+
+```objc
+- (void) clearTargetsWithCompletion:(MTRStatusCompletion) completion;
 ```
 
 

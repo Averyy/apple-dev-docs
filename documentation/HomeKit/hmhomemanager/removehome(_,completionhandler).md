@@ -1,7 +1,8 @@
 # removeHome(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a home from this home manager.
 
@@ -14,7 +15,15 @@ Removes a home from this home manager.
 ## Declaration
 
 ```swift
+func removeHome(_ home: HMHome, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func removeHome(_ home: HMHome) async throws
+```
+
+```objc
+- (void) removeHome:(HMHome *) home completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 #### Discussion
@@ -24,11 +33,14 @@ This method returns an error if the specified home is not managed by the home ma
 ## Parameters
 
 - `home`: The home to remove.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [func addHome(withName: String, completionHandler: (HMHome?, (any Error)?) -> Void)](hmhomemanager/addhome(withname:completionhandler:).md)
+### Adding and removing homes
+- [func addHome(withName: String, completionHandler: (HMHome?, (any Error)?) -> Void)](./addhome%28withname,completionhandler%29.md)
   Adds a new home to this home manager.
 
 

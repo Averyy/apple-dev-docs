@@ -1,7 +1,8 @@
 # claimKnownFolders(_:localizedReason:completionHandler:)
 
 **Framework**: File Provider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the domain to sync the specified known folders.
 
@@ -11,7 +12,15 @@ Asks the domain to sync the specified known folders.
 ## Declaration
 
 ```swift
+func claimKnownFolders(_ knownFolders: NSFileProviderKnownFolderLocations, localizedReason: String, completionHandler: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func claimKnownFolders(_ knownFolders: NSFileProviderKnownFolderLocations, localizedReason: String) async throws
+```
+
+```objc
+- (void) claimKnownFolders:(NSFileProviderKnownFolderLocations *) knownFolders localizedReason:(NSString *) localizedReason completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
 #### Discussion
@@ -20,13 +29,14 @@ Use this method to claim a set of known folders according to the information in 
 
 ## See Also
 
-- [func releaseKnownFolders(NSFileProviderKnownFolders, localizedReason: String, completionHandler: ((any Error)?) -> Void)](nsfileprovidermanager/releaseknownfolders(_:localizedreason:completionhandler:).md)
+### Syncing Desktop and Documents folders
+- [func releaseKnownFolders(NSFileProviderKnownFolders, localizedReason: String, completionHandler: ((any Error)?) -> Void)](./releaseknownfolders%28_,localizedreason,completionhandler%29.md)
   Asks the system to stop replicating the specified known folders in the domain.
-- [struct NSFileProviderKnownFolders](nsfileproviderknownfolders.md)
+- [struct NSFileProviderKnownFolders](../nsfileproviderknownfolders.md)
   Constants that identify known folders.
-- [class NSFileProviderKnownFolderLocations](nsfileproviderknownfolderlocations.md)
+- [class NSFileProviderKnownFolderLocations](../nsfileproviderknownfolderlocations.md)
   A class for working with known-folder locations.
-- [protocol NSFileProviderKnownFolderSupporting](nsfileproviderknownfoldersupporting.md)
+- [protocol NSFileProviderKnownFolderSupporting](../nsfileproviderknownfoldersupporting.md)
   A protocol that defines the interface for sharing known-folder locations with the system.
 
 

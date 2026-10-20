@@ -1,27 +1,28 @@
 # Comparable Implementations
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: API Collection
 
 ## Topics
 
 ### Operators
-- [static func ... (Self) -> PartialRangeFrom<Self>](enumeratedsequence/index/'...(_:)-1tyzg.md)
+- [static func ... (Self) -> PartialRangeFrom<Self>](./dotdotdot%28_%29-1tyzg.md)
   Returns a partial range extending upward from a lower bound.
-- [static func ... (Self) -> PartialRangeThrough<Self>](enumeratedsequence/index/'...(_:)-55wxw.md)
+- [static func ... (Self) -> PartialRangeThrough<Self>](./dotdotdot%28_%29-55wxw.md)
   Returns a partial range up to, and including, its upper bound.
-- [static func ... (Self, Self) -> ClosedRange<Self>](enumeratedsequence/index/'...(_:_:).md)
+- [static func ... (Self, Self) -> ClosedRange<Self>](./dotdotdot%28_,_%29.md)
   Returns a closed range that contains both of its bounds.
-- [static func ..< (Self) -> PartialRangeUpTo<Self>](enumeratedsequence/index/'.._(_:).md)
+- [static func ..< (Self) -> PartialRangeUpTo<Self>](./dotdotop%28_%29.md)
   Returns a partial range up to, but not including, its upper bound.
-- [static func ..< (Self, Self) -> Range<Self>](enumeratedsequence/index/'.._(_:_:).md)
+- [static func ..< (Self, Self) -> Range<Self>](./dotdotop%28_,_%29.md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func < (EnumeratedSequence<Base>.Index, EnumeratedSequence<Base>.Index) -> Bool](enumeratedsequence/index/_(_:_:).md)
+- [static func < (EnumeratedSequence<Base>.Index, EnumeratedSequence<Base>.Index) -> Bool](./op%28_,_%29.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (borrowing Self, borrowing Self) -> Bool](enumeratedsequence/index/_(_:_:)-75ls0.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](./op%28_,_%29-75ls0.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (borrowing Self, borrowing Self) -> Bool](enumeratedsequence/index/_=(_:_:)-642fd.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-642fd.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (borrowing Self, borrowing Self) -> Bool](enumeratedsequence/index/_=(_:_:)-8ylf3.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](./opeq%28_,_%29-8ylf3.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 
 

@@ -11,18 +11,18 @@ The implicitly encoded text types, `typeText`, `typeCString`, and `typePString`,
 ## Topics
 
 ### Constants
-- [var typeUTF16ExternalRepresentation: DescType](../coreservices/typeutf16externalrepresentation.md)
-- [var typeUnicodeText: DescType](../coreservices/typeunicodetext.md)
+- [var typeUTF16ExternalRepresentation: DescType](../../coreservices/typeutf16externalrepresentation.md)
+- [var typeUnicodeText: DescType](../../coreservices/typeunicodetext.md)
   Unicode text. Native byte ordering, optional BOM.
-- [var typeStyledUnicodeText: DescType](../coreservices/typestyledunicodetext.md)
+- [var typeStyledUnicodeText: DescType](../../coreservices/typestyledunicodetext.md)
   Styled Unicode text. Not implemented.
-- [var typeUTF8Text: DescType](../coreservices/typeutf8text.md)
+- [var typeUTF8Text: DescType](../../coreservices/typeutf8text.md)
   8-bit Unicode (UTF-8 encoding).
-- [var typeEncodedString: DescType](../coreservices/typeencodedstring.md)
+- [var typeEncodedString: DescType](../../coreservices/typeencodedstring.md)
   Styled Unicode text. Not implemented.
-- [var typeCString: DescType](../coreservices/typecstring.md)
+- [var typeCString: DescType](../../coreservices/typecstring.md)
   C string—Mac OS Roman characters followed by a NULL byte. Deprecated.
-- [var typePString: DescType](../coreservices/typepstring.md)
+- [var typePString: DescType](../../coreservices/typepstring.md)
   Pascal string—unsigned length byte followed by Mac OS Roman characters. Deprecated.
 
 

@@ -1,7 +1,8 @@
 # selectedAnnotations
 
 **Framework**: MapKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The selected annotations.
 
@@ -19,17 +20,22 @@ The selected annotations.
 var selectedAnnotations: [any MKAnnotation] { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSArray<id<MKAnnotation>> * selectedAnnotations;
+```
+
 #### Discussion
 
 Assigning a new array to this property selects only the first annotation in the array.
 
 ## See Also
 
-- [var annotationVisibleRect: CGRect](mkmapview/annotationvisiblerect.md)
+### Managing annotation selections
+- [var annotationVisibleRect: CGRect](./annotationvisiblerect.md)
   The visible rectangle where the map is displaying annotation views.
-- [func selectAnnotation(any MKAnnotation, animated: Bool)](mkmapview/selectannotation(_:animated:).md)
+- [func selectAnnotation(any MKAnnotation, animated: Bool)](./selectannotation%28_,animated%29.md)
   Selects the specified annotation and displays a callout view for it.
-- [func deselectAnnotation((any MKAnnotation)?, animated: Bool)](mkmapview/deselectannotation(_:animated:).md)
+- [func deselectAnnotation((any MKAnnotation)?, animated: Bool)](./deselectannotation%28_,animated%29.md)
   Deselects the specified annotation and hides its callout view.
 
 

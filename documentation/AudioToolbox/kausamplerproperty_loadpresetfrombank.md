@@ -1,15 +1,16 @@
 # kAUSamplerProperty_LoadPresetFromBank
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var kAUSamplerProperty_LoadPresetFromBank: AudioUnitPropertyID { get }
 ```
 
+```c
+kAUSamplerProperty_LoadPresetFromBank
+```
+
 ## See Also
 
-- [var kAUSamplerProperty_BankAndPreset: AudioUnitPropertyID](kausamplerproperty_bankandpreset.md)
+### Constants
+- [var kAUSamplerProperty_BankAndPreset: AudioUnitPropertyID](./kausamplerproperty_bankandpreset.md)
 
 
 ---

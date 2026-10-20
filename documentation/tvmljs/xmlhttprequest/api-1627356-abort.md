@@ -1,7 +1,8 @@
 # abort
 
 **Framework**: TVMLKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Cancels any network activity.
 
@@ -12,7 +13,7 @@ Cancels any network activity.
 
 ## Declaration
 
-```swift
+```
 void abort();
 ```
 
@@ -22,13 +23,14 @@ This method raises a `DOMException` if any arguments are passed into this functi
 
 ## See Also
 
-- [open](xmlhttprequest/1627318-open.md)
+### Initializing and Sending a Request
+- [open](./api-1627318-open.md)
   Sets the method, URL, and synchronous flag for a request.
-- [send](xmlhttprequest/1627309-send.md)
+- [send](./api-1627309-send.md)
   Sends the request.
-- [timeout](xmlhttprequest/1627335-timeout.md)
+- [timeout](./api-1627335-timeout.md)
   The amount of time, in milliseconds, before causing a request to time out.
-- [XMLHttpRequest](xmlhttprequest/1627350-xmlhttprequest.md)
+- [XMLHttpRequest](./api-1627350-xmlhttprequest.md)
   Creates a new XMLHttpRequest.
 
 

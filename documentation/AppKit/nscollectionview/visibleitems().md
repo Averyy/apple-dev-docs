@@ -1,7 +1,8 @@
 # visibleItems()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an array of the actively managed items in the collection view.
 
@@ -14,31 +15,36 @@ Returns an array of the actively managed items in the collection view.
 func visibleItems() -> [NSCollectionViewItem]
 ```
 
+```objc
+- (NSArray<NSCollectionViewItem *> *) visibleItems;
+```
+
 #### Return Value
 
-An array of [`NSCollectionViewItem`](nscollectionviewitem.md) objects. The returned array may be empty.
+An array of [`NSCollectionViewItem`](../nscollectionviewitem.md) objects. The returned array may be empty.
 
 #### Discussion
 
-The items returned by this method represent the ones that are active and currently being managed by the collection view. This array may contain items that are outside of the collection view’s actual visible rectangle. For example, it may contain items that were recently visible but have since been scrolled out of view. To test whether an item is actually visible, check to see if its frame rectangle intersects the [`visibleRect`](nsview/visiblerect.md) of the collection view.
+The items returned by this method represent the ones that are active and currently being managed by the collection view. This array may contain items that are outside of the collection view’s actual visible rectangle. For example, it may contain items that were recently visible but have since been scrolled out of view. To test whether an item is actually visible, check to see if its frame rectangle intersects the [`visibleRect`](../nsview/visiblerect.md) of the collection view.
 
 ## See Also
 
-- [func indexPathsForVisibleItems() -> Set<IndexPath>](nscollectionview/indexpathsforvisibleitems.md)
+### Locating Items and Views
+- [func indexPathsForVisibleItems() -> Set<IndexPath>](./indexpathsforvisibleitems%28%29.md)
   Returns the index paths of the currently active items.
-- [func visibleSupplementaryViews(ofKind: NSCollectionView.SupplementaryElementKind) -> [any NSView & NSCollectionViewElement]](nscollectionview/visiblesupplementaryviews(ofkind:).md)
+- [func visibleSupplementaryViews(ofKind: NSCollectionView.SupplementaryElementKind) -> [any NSView & NSCollectionViewElement]](./visiblesupplementaryviews%28ofkind%29.md)
   Returns an array of the actively managed supplementary views in the collection view.
-- [func indexPathsForVisibleSupplementaryElements(ofKind: NSCollectionView.SupplementaryElementKind) -> Set<IndexPath>](nscollectionview/indexpathsforvisiblesupplementaryelements(ofkind:).md)
+- [func indexPathsForVisibleSupplementaryElements(ofKind: NSCollectionView.SupplementaryElementKind) -> Set<IndexPath>](./indexpathsforvisiblesupplementaryelements%28ofkind%29.md)
   Returns the index paths of the currently active supplementary views.
-- [func indexPath(for: NSCollectionViewItem) -> IndexPath?](nscollectionview/indexpath(for:).md)
+- [func indexPath(for: NSCollectionViewItem) -> IndexPath?](./indexpath%28for%29.md)
   Returns the index path of the specified item.
-- [func indexPathForItem(at: NSPoint) -> IndexPath?](nscollectionview/indexpathforitem(at:).md)
+- [func indexPathForItem(at: NSPoint) -> IndexPath?](./indexpathforitem%28at%29.md)
   Returns the index path of the item at the specified point.
-- [func item(at: IndexPath) -> NSCollectionViewItem?](nscollectionview/item(at:)-2vx2h.md)
+- [func item(at: IndexPath) -> NSCollectionViewItem?](./item%28at%29-2vx2h.md)
   Returns the item associated with the specified index path.
-- [func supplementaryView(forElementKind: NSCollectionView.SupplementaryElementKind, at: IndexPath) -> (any NSView & NSCollectionViewElement)?](nscollectionview/supplementaryview(forelementkind:at:).md)
+- [func supplementaryView(forElementKind: NSCollectionView.SupplementaryElementKind, at: IndexPath) -> (any NSView & NSCollectionViewElement)?](./supplementaryview%28forelementkind,at%29.md)
   Returns the supplementary view associated with the specified index path.
-- [func scrollToItems(at: Set<IndexPath>, scrollPosition: NSCollectionView.ScrollPosition)](nscollectionview/scrolltoitems(at:scrollposition:).md)
+- [func scrollToItems(at: Set<IndexPath>, scrollPosition: NSCollectionView.ScrollPosition)](./scrolltoitems%28at,scrollposition%29.md)
   Scrolls the collection view contents until the specified items are visible.
 
 

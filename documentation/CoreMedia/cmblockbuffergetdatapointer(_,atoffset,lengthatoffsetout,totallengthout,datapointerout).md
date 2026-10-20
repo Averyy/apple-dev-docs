@@ -1,7 +1,8 @@
 # CMBlockBufferGetDataPointer(_:atOffset:lengthAtOffsetOut:totalLengthOut:dataPointerOut:)
 
 **Framework**: Core Media  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Gains access to the data represented by a block buffer.
 
@@ -20,13 +21,17 @@ Gains access to the data represented by a block buffer.
 func CMBlockBufferGetDataPointer(_ theBuffer: CMBlockBuffer, atOffset offset: Int, lengthAtOffsetOut: UnsafeMutablePointer<Int>?, totalLengthOut: UnsafeMutablePointer<Int>?, dataPointerOut: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>?) -> OSStatus
 ```
 
+```c
+extern OSStatus CMBlockBufferGetDataPointer(CMBlockBufferRef theBuffer, size_t offset, size_t *lengthAtOffsetOut, size_t *totalLengthOut, char **dataPointerOut);
+```
+
 #### Return Value
 
 Returns `kCMBlockBufferNoErr` if data was accessible at the specified offset within the given `CMBlockBuffer`. Returns an error otherwise.
 
 #### Discussion
 
-Gains access to the data represented by a [`CMBlockBuffer`](cmblockbuffer.md). A pointer into a memory block is returned which corresponds to the offset within the `CMBlockBuffer`.  If `lengthAtOffset` is non `NULL`, the number of bytes addressable at the pointer is returned. This length-at-offset may be smaller than the number of bytes actually available starting at the offset if the `dataLength` of the `CMBlockBuffer` is covered by multiple memory blocks (a noncontiguous `CMBlockBuffer`). The caller can compare (`offset`+`lengthAtOffset`) with `totalLength` to determine whether the entire `CMBlockBuffer` has been referenced and whether it is possible to access the `CMBlockBuffer`’s data with a contiguous reference. The data pointer returned will remain valid as long as the original `CMBlockBuffer` is referenced - once the `CMBlockBuffer` is released for the last time, any pointers                into it will be invalid.
+Gains access to the data represented by a [`CMBlockBuffer`](./cmblockbuffer.md). A pointer into a memory block is returned which corresponds to the offset within the `CMBlockBuffer`.  If `lengthAtOffset` is non `NULL`, the number of bytes addressable at the pointer is returned. This length-at-offset may be smaller than the number of bytes actually available starting at the offset if the `dataLength` of the `CMBlockBuffer` is covered by multiple memory blocks (a noncontiguous `CMBlockBuffer`). The caller can compare (`offset`+`lengthAtOffset`) with `totalLength` to determine whether the entire `CMBlockBuffer` has been referenced and whether it is possible to access the `CMBlockBuffer`’s data with a contiguous reference. The data pointer returned will remain valid as long as the original `CMBlockBuffer` is referenced - once the `CMBlockBuffer` is released for the last time, any pointers                into it will be invalid.
 
 ## Parameters
 
@@ -38,11 +43,12 @@ Gains access to the data represented by a [`CMBlockBuffer`](cmblockbuffer.md). A
 
 ## See Also
 
-- [func CMBlockBufferGetDataLength(CMBlockBuffer) -> Int](cmblockbuffergetdatalength(_:).md)
+### Inspecting a Block Buffer
+- [func CMBlockBufferGetDataLength(CMBlockBuffer) -> Int](./cmblockbuffergetdatalength%28_%29.md)
   Returns the total length of data that’s accessible by a block buffer.
-- [func CMBlockBufferIsRangeContiguous(CMBlockBuffer, atOffset: Int, length: Int) -> Bool](cmblockbufferisrangecontiguous(_:atoffset:length:).md)
+- [func CMBlockBufferIsRangeContiguous(CMBlockBuffer, atOffset: Int, length: Int) -> Bool](./cmblockbufferisrangecontiguous%28_,atoffset,length%29.md)
   Returns a Boolean value that indicates whether the specified range within a block buffer is contiguous.
-- [func CMBlockBufferIsEmpty(CMBlockBuffer) -> Bool](cmblockbufferisempty(_:).md)
+- [func CMBlockBufferIsEmpty(CMBlockBuffer) -> Bool](./cmblockbufferisempty%28_%29.md)
   Returns a Boolean value that indicates whether the buffer is empty.
 
 

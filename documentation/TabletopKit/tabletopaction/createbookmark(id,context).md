@@ -1,7 +1,8 @@
 # createBookmark(id:context:)
 
 **Framework**: TabletopKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - visionOS 2.0+
@@ -12,9 +13,12 @@
 static func createBookmark(id: StateBookmarkIdentifier, context: UInt64 = 0) -> Self
 ```
 
+Available when `Self` is `CreateBookmarkAction`.
+
 ## See Also
 
-- [static func createBookmark(StateBookmark, context: UInt64) -> Self](tabletopaction/createbookmark(_:context:).md)
+### Creating bookmarks
+- [static func createBookmark(StateBookmark, context: UInt64) -> Self](./createbookmark%28_,context%29.md)
 
 
 ---

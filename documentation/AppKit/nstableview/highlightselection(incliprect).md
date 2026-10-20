@@ -1,12 +1,13 @@
 # highlightSelection(inClipRect:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Highlights the region of the table view in the specified rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,13 +15,17 @@ Highlights the region of the table view in the specified rectangle.
 func highlightSelection(inClipRect clipRect: NSRect)
 ```
 
+```objc
+- (void) highlightSelectionInClipRect:(NSRect) clipRect;
+```
+
 #### Discussion
 
-This method is invoked before [`drawRow(_:clipRect:)`](nstableview/drawrow(_:cliprect:).md).
+This method is invoked before [`drawRow(_:clipRect:)`](./drawrow%28_,cliprect%29.md).
 
-[`NSCell`](nscell.md)-based table views can override this method to change the manner in which they highlight selections.
+[`NSCell`](../nscell.md)-based table views can override this method to change the manner in which they highlight selections.
 
-> **Note**:  This method should not be subclassed or overridden for a view-base table view. Instead, row drawing customization should be done by subclassing [`NSTableRowView`](nstablerowview.md).
+> **Note**:  This method should not be subclassed or overridden for a view-base table view. Instead, row drawing customization should be done by subclassing [`NSTableRowView`](../nstablerowview.md).
 
 ## Parameters
 
@@ -28,11 +33,12 @@ This method is invoked before [`drawRow(_:clipRect:)`](nstableview/drawrow(_:cli
 
 ## See Also
 
-- [func drawRow(Int, clipRect: NSRect)](nstableview/drawrow(_:cliprect:).md)
+### Drawing
+- [func drawRow(Int, clipRect: NSRect)](./drawrow%28_,cliprect%29.md)
   Draws the cells for the row at `rowIndex` in the columns that intersect `clipRect`.
-- [func drawGrid(inClipRect: NSRect)](nstableview/drawgrid(incliprect:).md)
+- [func drawGrid(inClipRect: NSRect)](./drawgrid%28incliprect%29.md)
   Draws the grid lines within the supplied rectangle.
-- [func drawBackground(inClipRect: NSRect)](nstableview/drawbackground(incliprect:).md)
+- [func drawBackground(inClipRect: NSRect)](./drawbackground%28incliprect%29.md)
   Draws the background of the table view in the clip rect specified by the rectangle.
 
 

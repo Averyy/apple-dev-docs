@@ -1,7 +1,8 @@
 # MTRDiagnosticLogsClusterRetrieveLogsResponseParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,31 +19,35 @@
 class MTRDiagnosticLogsClusterRetrieveLogsResponseParams
 ```
 
+```objc
+@interface MTRDiagnosticLogsClusterRetrieveLogsResponseParams : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(responseValue: [String : Any]) throws](mtrdiagnosticlogsclusterretrievelogsresponseparams/init(responsevalue:).md)
+- [init(responseValue: [String : Any]) throws](./mtrdiagnosticlogsclusterretrievelogsresponseparams/init%28responsevalue%29.md)
 ### Instance Properties
-- [var content: Data](mtrdiagnosticlogsclusterretrievelogsresponseparams/content.md)
-- [var logContent: Data](mtrdiagnosticlogsclusterretrievelogsresponseparams/logcontent.md)
-- [var status: NSNumber](mtrdiagnosticlogsclusterretrievelogsresponseparams/status.md)
-- [var timeSinceBoot: NSNumber?](mtrdiagnosticlogsclusterretrievelogsresponseparams/timesinceboot.md)
-- [var timeStamp: NSNumber?](mtrdiagnosticlogsclusterretrievelogsresponseparams/timestamp.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrdiagnosticlogsclusterretrievelogsresponseparams/timedinvoketimeoutms.md)
-- [var utcTimeStamp: NSNumber?](mtrdiagnosticlogsclusterretrievelogsresponseparams/utctimestamp.md)
+- [var content: Data](./mtrdiagnosticlogsclusterretrievelogsresponseparams/content.md)
+- [var logContent: Data](./mtrdiagnosticlogsclusterretrievelogsresponseparams/logcontent.md)
+- [var status: NSNumber](./mtrdiagnosticlogsclusterretrievelogsresponseparams/status.md)
+- [var timeSinceBoot: NSNumber?](./mtrdiagnosticlogsclusterretrievelogsresponseparams/timesinceboot.md)
+- [var timeStamp: NSNumber?](./mtrdiagnosticlogsclusterretrievelogsresponseparams/timestamp.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrdiagnosticlogsclusterretrievelogsresponseparams/timedinvoketimeoutms.md)
+- [var utcTimeStamp: NSNumber?](./mtrdiagnosticlogsclusterretrievelogsresponseparams/utctimestamp.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

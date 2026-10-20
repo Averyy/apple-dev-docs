@@ -1,7 +1,8 @@
 # setMetadata(_:keyPath:value:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -10,6 +11,8 @@
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
+
+> **Deprecated**: Use Int32 for int or Int64 for int64.
 
 ## Declaration
 

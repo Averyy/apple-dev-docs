@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range in the audio stream that the metrics and analytics apply to.
 
@@ -16,9 +17,14 @@ The time range in the audio stream that the metrics and analytics apply to.
 var timeRange: CMTimeRange { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CMTimeRange timeRange;
+```
+
 ## See Also
 
-- [var version: String](srspeechexpression/version.md)
+### Getting speech metrics
+- [var version: String](./version.md)
   The version of the algorithm that the system uses to generate the metrics and analytics.
 
 

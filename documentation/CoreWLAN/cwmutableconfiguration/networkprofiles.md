@@ -1,7 +1,8 @@
 # networkProfiles
 
 **Framework**: Core WLAN  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The preferred networks list.
 
@@ -13,6 +14,10 @@ The preferred networks list.
 ```swift
 @NSCopying
 var networkProfiles: NSOrderedSet { get set }
+```
+
+```objc
+@property (copy) NSOrderedSet<CWNetworkProfile *> * networkProfiles;
 ```
 
 

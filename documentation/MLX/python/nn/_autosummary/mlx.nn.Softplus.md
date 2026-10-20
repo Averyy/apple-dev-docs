@@ -6,36 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.S
 
 # mlx.nn.Softplus
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Softplus.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Softplus
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Softplus
-
 **class Softplus**
 : Applies the Softplus function.
-See [softplus()](../_autosummary_functions/mlx.nn.softplus.html#mlx.nn.softplus) for the functional equivalent.
+See [softplus()](../_autosummary_functions/mlx.nn.softplus.md#mlx.nn.softplus) for the functional equivalent.
 Methods
-
-** Contents

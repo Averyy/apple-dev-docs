@@ -1,7 +1,8 @@
 # label
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The label of the node.
 

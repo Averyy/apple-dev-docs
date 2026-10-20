@@ -1,7 +1,8 @@
 # MPSCNNArithmetic
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for arithmetic operators.
 
@@ -19,60 +20,65 @@ The base class for arithmetic operators.
 class MPSCNNArithmetic
 ```
 
+```objc
+@interface MPSCNNArithmetic : MPSCNNBinaryKernel
+```
+
 ## Topics
 
 ### Instance Properties
-- [var bias: Float](mpscnnarithmetic/bias.md)
-- [var maximumValue: Float](mpscnnarithmetic/maximumvalue.md)
-- [var minimumValue: Float](mpscnnarithmetic/minimumvalue.md)
-- [var primaryScale: Float](mpscnnarithmetic/primaryscale.md)
-- [var primaryStrideInFeatureChannels: Int](mpscnnarithmetic/primarystrideinfeaturechannels.md)
-- [var secondaryScale: Float](mpscnnarithmetic/secondaryscale.md)
-- [var secondaryStrideInFeatureChannels: Int](mpscnnarithmetic/secondarystrideinfeaturechannels.md)
+- [var bias: Float](./mpscnnarithmetic/bias.md)
+- [var maximumValue: Float](./mpscnnarithmetic/maximumvalue.md)
+- [var minimumValue: Float](./mpscnnarithmetic/minimumvalue.md)
+- [var primaryScale: Float](./mpscnnarithmetic/primaryscale.md)
+- [var primaryStrideInFeatureChannels: Int](./mpscnnarithmetic/primarystrideinfeaturechannels.md)
+- [var secondaryScale: Float](./mpscnnarithmetic/secondaryscale.md)
+- [var secondaryStrideInFeatureChannels: Int](./mpscnnarithmetic/secondarystrideinfeaturechannels.md)
 ### Instance Methods
-- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationState: MPSCNNArithmeticGradientState, destinationImage: MPSImage)](mpscnnarithmetic/encode(commandbuffer:primaryimage:secondaryimage:destinationstate:destinationimage:).md)
-- [func encodeBatch(commandBuffer: any MTLCommandBuffer, primaryImages: [MPSImage], secondaryImages: [MPSImage], destinationStates: [MPSCNNArithmeticGradientState], destinationImages: [MPSImage])](mpscnnarithmetic/encodebatch(commandbuffer:primaryimages:secondaryimages:destinationstates:destinationimages:).md)
+- [func encode(commandBuffer: any MTLCommandBuffer, primaryImage: MPSImage, secondaryImage: MPSImage, destinationState: MPSCNNArithmeticGradientState, destinationImage: MPSImage)](./mpscnnarithmetic/encode%28commandbuffer,primaryimage,secondaryimage,destinationstate,destinationimage%29.md)
+- [func encodeBatch(commandBuffer: any MTLCommandBuffer, primaryImages: [MPSImage], secondaryImages: [MPSImage], destinationStates: [MPSCNNArithmeticGradientState], destinationImages: [MPSImage])](./mpscnnarithmetic/encodebatch%28commandbuffer,primaryimages,secondaryimages,destinationstates,destinationimages%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSCNNBinaryKernel](mpscnnbinarykernel.md)
+- [MPSCNNBinaryKernel](./mpscnnbinarykernel.md)
 ### Inherited By
-- [MPSCNNAdd](mpscnnadd.md)
-- [MPSCNNDivide](mpscnndivide.md)
-- [MPSCNNMultiply](mpscnnmultiply.md)
-- [MPSCNNSubtract](mpscnnsubtract.md)
-- [MPSNNCompare](mpsnncompare.md)
+- [MPSCNNAdd](./mpscnnadd.md)
+- [MPSCNNDivide](./mpscnndivide.md)
+- [MPSCNNMultiply](./mpscnnmultiply.md)
+- [MPSCNNSubtract](./mpscnnsubtract.md)
+- [MPSNNCompare](./mpsnncompare.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [class MPSCNNAdd](mpscnnadd.md)
+### Arithmetic Layers
+- [class MPSCNNAdd](./mpscnnadd.md)
   An addition operator.
-- [class MPSCNNAddGradient](mpscnnaddgradient.md)
+- [class MPSCNNAddGradient](./mpscnnaddgradient.md)
   A gradient addition operator.
-- [class MPSCNNSubtract](mpscnnsubtract.md)
+- [class MPSCNNSubtract](./mpscnnsubtract.md)
   A subtraction operator.
-- [class MPSCNNSubtractGradient](mpscnnsubtractgradient.md)
+- [class MPSCNNSubtractGradient](./mpscnnsubtractgradient.md)
   A gradient subtraction operator.
-- [class MPSCNNMultiply](mpscnnmultiply.md)
+- [class MPSCNNMultiply](./mpscnnmultiply.md)
   A multiply operator.
-- [class MPSCNNMultiplyGradient](mpscnnmultiplygradient.md)
+- [class MPSCNNMultiplyGradient](./mpscnnmultiplygradient.md)
   A gradient multiply operator.
-- [class MPSCNNDivide](mpscnndivide.md)
+- [class MPSCNNDivide](./mpscnndivide.md)
   A division operator.
-- [class MPSCNNArithmeticGradient](mpscnnarithmeticgradient.md)
+- [class MPSCNNArithmeticGradient](./mpscnnarithmeticgradient.md)
   The base class for gradient arithmetic operators.
-- [class MPSCNNArithmeticGradientState](mpscnnarithmeticgradientstate.md)
+- [class MPSCNNArithmeticGradientState](./mpscnnarithmeticgradientstate.md)
   An object that stores the clamp mask used by gradient arithmetic operators.
 
 

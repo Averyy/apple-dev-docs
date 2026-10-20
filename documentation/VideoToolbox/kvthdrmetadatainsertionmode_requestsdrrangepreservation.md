@@ -1,7 +1,8 @@
 # kVTHDRMetadataInsertionMode_RequestSDRRangePreservation
 
 **Framework**: Video Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 26.0+
@@ -17,10 +18,15 @@
 let kVTHDRMetadataInsertionMode_RequestSDRRangePreservation: CFString
 ```
 
+```c
+extern CFStringRef const kVTHDRMetadataInsertionMode_RequestSDRRangePreservation;
+```
+
 ## See Also
 
-- [let kVTHDRMetadataInsertionMode_Auto: CFString](kvthdrmetadatainsertionmode_auto.md)
-- [let kVTHDRMetadataInsertionMode_None: CFString](kvthdrmetadatainsertionmode_none.md)
+### Insertion Modes
+- [let kVTHDRMetadataInsertionMode_Auto: CFString](./kvthdrmetadatainsertionmode_auto.md)
+- [let kVTHDRMetadataInsertionMode_None: CFString](./kvthdrmetadatainsertionmode_none.md)
 
 
 ---

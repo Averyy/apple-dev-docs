@@ -1,7 +1,8 @@
 # semantic
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The semantic of the vertex attribute, which describes how you want the renderer to interpret the attribute.
 

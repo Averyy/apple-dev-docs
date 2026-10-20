@@ -1,7 +1,8 @@
 # randomElement()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a random element of the collection.
 
@@ -36,13 +37,14 @@ let randomName = names.randomElement()!
 
 This method is equivalent to calling `randomElement(using:)`, passing in the system’s default random generator.
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*n*), where *n* is the length of the collection.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*n*), where *n* is the length of the collection.
 
 ## See Also
 
-- [var first: Self.Element?](set/first.md)
+### Accessing Individual Elements
+- [var first: Self.Element?](./first.md)
   The first element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](set/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
 
 

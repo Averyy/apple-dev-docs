@@ -1,7 +1,8 @@
 # isEssential
 
 **Framework**: Background Assets  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.4+
@@ -17,11 +18,16 @@
 var isEssential: Bool { get }
 ```
 
+```objc
+@property (readonly) BOOL isEssential;
+```
+
 ## See Also
 
-- [var priority: BADownload.Priority](badownload/priority-swift.property.md)
+### Determining the priority
+- [var priority: BADownload.Priority](./priority-swift.property.md)
   The download’s execution priority.
-- [BADownload.Priority](badownload/priority-swift.struct.md)
+- [BADownload.Priority](./priority-swift.struct.md)
   A type that determines the execution priority of a scheduled asset download.
 
 

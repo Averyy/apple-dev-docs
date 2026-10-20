@@ -1,7 +1,8 @@
 # notAtHome
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Triggers the event when there are no users in the home.
 
@@ -19,13 +20,18 @@ Triggers the event when there are no users in the home.
 static var notAtHome: HMPresenceEventType { get }
 ```
 
+```c
+HMPresenceEventTypeNotAtHome
+```
+
 #### Discussion
 
-A convenience value for use in predicates on [`HMEventTrigger`](hmeventtrigger.md). Represents the presence of no users in the home.
+A convenience value for use in predicates on [`HMEventTrigger`](../hmeventtrigger.md). Represents the presence of no users in the home.
 
 ## See Also
 
-- [static var atHome: HMPresenceEventType](hmpresenceeventtype/athome.md)
+### Using presence as a predicate
+- [static var atHome: HMPresenceEventType](./athome.md)
   Triggers the event when at least one user is in the home.
 
 

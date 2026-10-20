@@ -1,7 +1,8 @@
 # saveOptions(_:shouldShowUTType:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to determine if the specified uniform type identifier should be shown in the save panel.
 
@@ -14,9 +15,13 @@ Called to determine if the specified uniform type identifier should be shown in 
 func saveOptions(_ saveOptions: IKSaveOptions!, shouldShowUTType utType: String!) -> Bool
 ```
 
+```objc
+- (BOOL) saveOptions:(IKSaveOptions *) saveOptions shouldShowUTType:(NSString *) utType;
+```
+
 #### Return Value
 
-[`YES`](yes.md) if the specified type should be shown in the save options, otherwise [`NO`](no.md).
+[`YES`](../yes.md) if the specified type should be shown in the save options, otherwise [`NO`](../no.md).
 
 ## Parameters
 

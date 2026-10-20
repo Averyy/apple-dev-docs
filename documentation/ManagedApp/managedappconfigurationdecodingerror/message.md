@@ -2,6 +2,7 @@
 
 **Framework**: ManagedApp  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A human-readable message that describes the configuration issue.
@@ -20,7 +21,7 @@ var message: String { get set }
 
 ## Mentions
 
-- [Specifying and decoding a configuration](specifying-and-decoding-a-configuration.md)
+- [Specifying and decoding a configuration](../specifying-and-decoding-a-configuration.md)
 
 
 ---

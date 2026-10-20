@@ -1,14 +1,17 @@
 # MPMovieLoadState
 
 **Framework**: Media Player  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants describing the network load state of the movie player.
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
@@ -16,59 +19,64 @@ Constants describing the network load state of the movie player.
 struct MPMovieLoadState
 ```
 
+```c
+enum MPMovieLoadState : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [static var playable: MPMovieLoadState](mpmovieloadstate/playable.md)
-- [static var playthroughOK: MPMovieLoadState](mpmovieloadstate/playthroughok.md)
-- [static var stalled: MPMovieLoadState](mpmovieloadstate/stalled.md)
+- [static var playable: MPMovieLoadState](./mpmovieloadstate/playable.md)
+- [static var playthroughOK: MPMovieLoadState](./mpmovieloadstate/playthroughok.md)
+- [static var stalled: MPMovieLoadState](./mpmovieloadstate/stalled.md)
 ### Initializers
-- [init(rawValue: UInt)](mpmovieloadstate/init(rawvalue:).md)
+- [init(rawValue: UInt)](./mpmovieloadstate/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [class MPMovieAccessLog](mpmovieaccesslog.md)
+### Deprecated symbols
+- [class MPMovieAccessLog](./mpmovieaccesslog.md)
   Key metrics about network playback for an associated movie player that’s playing streamed content.
-- [class MPMovieAccessLogEvent](mpmovieaccesslogevent.md)
+- [class MPMovieAccessLogEvent](./mpmovieaccesslogevent.md)
   A single piece of information for a movie access log.
-- [class MPMovieErrorLog](mpmovieerrorlog.md)
+- [class MPMovieErrorLog](./mpmovieerrorlog.md)
   Data describing network resource playback failures for the associated movie player, including timestamps indicating when each failure occurred.
-- [class MPMovieErrorLogEvent](mpmovieerrorlogevent.md)
+- [class MPMovieErrorLogEvent](./mpmovieerrorlogevent.md)
   A single piece of information for a movie error log.
-- [struct MPMovieMediaTypeMask](mpmoviemediatypemask.md)
+- [struct MPMovieMediaTypeMask](./mpmoviemediatypemask.md)
   The types of content available in the movie file.
-- [class MPMoviePlayerController](mpmovieplayercontroller.md)
+- [class MPMoviePlayerController](./mpmovieplayercontroller.md)
   A type of movie player that manages the playback of a movie from a file or a network stream.
-- [class MPMoviePlayerViewController](mpmovieplayerviewcontroller.md)
+- [class MPMoviePlayerViewController](./mpmovieplayerviewcontroller.md)
   A simple view controller for displaying full-screen movies.
-- [class MPTimedMetadata](mptimedmetadata.md)
+- [class MPTimedMetadata](./mptimedmetadata.md)
   A *timed metadata object that* carries time-based information within HTTP streamed media.
-- [class MPPlayableContentManager](mpplayablecontentmanager.md)
+- [class MPPlayableContentManager](./mpplayablecontentmanager.md)
   A shared content manager for controlling interactions between your media app and system-provided or external media player interfaces.
-- [class MPPlayableContentManagerContext](mpplayablecontentmanagercontext.md)
+- [class MPPlayableContentManagerContext](./mpplayablecontentmanagercontext.md)
   An object representing the current state of the playable endpoint.
-- [class var iPodMusicPlayer: MPMusicPlayerController](mpmusicplayercontroller/ipodmusicplayer.md)
+- [class var iPodMusicPlayer: MPMusicPlayerController](./mpmusicplayercontroller/ipodmusicplayer.md)
   Returns the iPod music player, which controls the iPod app’s state.
-- [convenience init(image: UIImage)](mpmediaitemartwork/init(image:).md)
+- [convenience init(image: UIImage)](./mpmediaitemartwork/init%28image%29.md)
   Initializes a media item artwork instance with a full-size image.
-- [var imageCropRect: CGRect](mpmediaitemartwork/imagecroprect.md)
+- [var imageCropRect: CGRect](./mpmediaitemartwork/imagecroprect.md)
   The bounds, in points, of the content area for the full size image associated with the media item artwork.
-- [var showsRouteButton: Bool](mpvolumeview/showsroutebutton.md)
+- [var showsRouteButton: Bool](./mpvolumeview/showsroutebutton.md)
   A Boolean value that indicates whether the route button is visible in the volume view.
-- [func routeButtonImage(for: UIControl.State) -> UIImage?](mpvolumeview/routebuttonimage(for:).md)
+- [func routeButtonImage(for: UIControl.State) -> UIImage?](./mpvolumeview/routebuttonimage%28for%29.md)
   Returns the button image associated with the specified control state.
 
 

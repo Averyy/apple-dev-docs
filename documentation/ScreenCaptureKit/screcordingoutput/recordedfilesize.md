@@ -1,7 +1,8 @@
 # recordedFileSize
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -17,9 +18,14 @@
 var recordedFileSize: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger recordedFileSize;
+```
+
 ## See Also
 
-- [var recordedDuration: CMTime](screcordingoutput/recordedduration.md)
+### Monitoring recording progress
+- [var recordedDuration: CMTime](./recordedduration.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MPSStateBatchIncrementReadCount(_:_:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Increments or decrements the read count of a state batch by a specified amount.
 
@@ -17,6 +18,10 @@ Increments or decrements the read count of a state batch by a specified amount.
 
 ```swift
 func MPSStateBatchIncrementReadCount(_ batch: [MPSState]?, _ amount: Int) -> Int
+```
+
+```c
+NSUInteger MPSStateBatchIncrementReadCount(MPSStateBatch *batch, NSInteger amount);
 ```
 
 

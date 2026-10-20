@@ -1,7 +1,8 @@
 # removeAll()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Remove all this span’s bytes and return its memory to the uninitialized state.
 

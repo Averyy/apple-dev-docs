@@ -1,7 +1,8 @@
 # SandboxTesterV2.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a sandbox tester v2 resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a sandbox tester v2 resource.
 
 ## Declaration
 
-```swift
+```
 object SandboxTesterV2.Attributes
 ```
 
@@ -21,7 +22,7 @@ object SandboxTesterV2.Attributes
 - `firstName` (string)
 - `interruptPurchases` (boolean)
 - `lastName` (string)
-- `subscriptionRenewalRate` (string)
+- `subscriptionRenewalRate` (string): **Allowed Values**: `MONTHLY_RENEWAL_EVERY_ONE_HOUR`, `MONTHLY_RENEWAL_EVERY_THIRTY_MINUTES`, `MONTHLY_RENEWAL_EVERY_FIFTEEN_MINUTES`, `MONTHLY_RENEWAL_EVERY_FIVE_MINUTES`, `MONTHLY_RENEWAL_EVERY_THREE_MINUTES`
 - `territory` (TerritoryCode)
 
 

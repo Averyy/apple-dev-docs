@@ -1,7 +1,8 @@
 # UnicodeDecodingResult
 
 **Framework**: Swift  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The result of one Unicode decoding step.
 
@@ -28,36 +29,37 @@ Each `UnicodeDecodingResult` instance can represent a Unicode scalar value, an i
 ## Topics
 
 ### Operators
-- [static func == (UnicodeDecodingResult, UnicodeDecodingResult) -> Bool](unicodedecodingresult/==(_:_:).md)
+- [static func == (UnicodeDecodingResult, UnicodeDecodingResult) -> Bool](./unicodedecodingresult/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are equal.
 ### Enumeration Cases
-- [UnicodeDecodingResult.emptyInput](unicodedecodingresult/emptyinput.md)
+- [UnicodeDecodingResult.emptyInput](./unicodedecodingresult/emptyinput.md)
   An indication that no more Unicode scalars are available in the input.
-- [UnicodeDecodingResult.error](unicodedecodingresult/error.md)
+- [UnicodeDecodingResult.error](./unicodedecodingresult/error.md)
   An indication of a decoding error.
-- [UnicodeDecodingResult.scalarValue(_:)](unicodedecodingresult/scalarvalue(_:).md)
+- [UnicodeDecodingResult.scalarValue(_:)](./unicodedecodingresult/scalarvalue%28_%29.md)
   A decoded Unicode scalar value.
 ### Default Implementations
-- [Equatable Implementations](unicodedecodingresult/equatable-implementations.md)
+- [Equatable Implementations](./unicodedecodingresult/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [Copyable](copyable.md)
-- [Equatable](equatable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [Copyable](./copyable.md)
+- [Equatable](./equatable.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
 
 ## See Also
 
-- [protocol UnicodeCodec](unicodecodec.md)
+### Unicode Codecs
+- [protocol UnicodeCodec](./unicodecodec.md)
   A Unicode encoding form that translates between Unicode scalar values and form-specific code units.
-- [Unicode.ASCII](unicode/ascii.md)
-- [Unicode.UTF8](unicode/utf8.md)
-- [Unicode.UTF16](unicode/utf16.md)
-- [Unicode.UTF32](unicode/utf32.md)
-- [Unicode.ParseResult](unicode/parseresult.md)
+- [Unicode.ASCII](./unicode/ascii.md)
+- [Unicode.UTF8](./unicode/utf8.md)
+- [Unicode.UTF16](./unicode/utf16.md)
+- [Unicode.UTF32](./unicode/utf32.md)
+- [Unicode.ParseResult](./unicode/parseresult.md)
   The result of attempting to parse a `T` from some input.
 
 

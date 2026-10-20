@@ -1,7 +1,8 @@
 # FinanceStore.History.Element
 
 **Framework**: FinanceKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 An alias for the type that this asynchronous sequence holds.
 
@@ -17,7 +18,8 @@ typealias Element = FinanceStore.Changes<Model>
 
 ## See Also
 
-- [FinanceStore.History.AsyncIterator](financestore/history/asynciterator.md)
+### Type Aliases
+- [FinanceStore.History.AsyncIterator](./asynciterator.md)
   The type of asynchronous iterator that produces elements of this asynchronous sequence.
 
 

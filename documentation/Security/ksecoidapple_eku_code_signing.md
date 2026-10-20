@@ -1,7 +1,8 @@
 # kSecOIDAPPLE_EKU_CODE_SIGNING
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDAPPLE_EKU_CODE_SIGNING: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDAPPLE_EKU_CODE_SIGNING;
 ```
 
 

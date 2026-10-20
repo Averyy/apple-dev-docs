@@ -1,7 +1,8 @@
 # removeObject(forKey:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the value of the specified key in the cache.
 
@@ -20,17 +21,22 @@ Removes the value of the specified key in the cache.
 func removeObject(forKey key: KeyType)
 ```
 
+```objc
+- (void) removeObjectForKey:(KeyType) key;
+```
+
 ## Parameters
 
 - `key`: The key identifying the value to be removed.
 
 ## See Also
 
-- [func setObject(ObjectType, forKey: KeyType)](nscache/setobject(_:forkey:).md)
+### Adding and Removing Cached Values
+- [func setObject(ObjectType, forKey: KeyType)](./setobject%28_,forkey%29.md)
   Sets the value of the specified key in the cache.
-- [func setObject(ObjectType, forKey: KeyType, cost: Int)](nscache/setobject(_:forkey:cost:).md)
+- [func setObject(ObjectType, forKey: KeyType, cost: Int)](./setobject%28_,forkey,cost%29.md)
   Sets the value of the specified key in the cache, and associates the key-value pair with the specified cost.
-- [func removeAllObjects()](nscache/removeallobjects.md)
+- [func removeAllObjects()](./removeallobjects%28%29.md)
   Empties the cache.
 
 

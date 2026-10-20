@@ -1,20 +1,27 @@
 # hyphenationFactor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The threshold controlling when hyphenation is done.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 7.0+
-- tvOS 9.0+
+- iOS 7.0+ - Deprecated in 13.0
+- iPadOS 7.0+ - Deprecated in 13.0
+- Mac Catalyst 7.0+ - Deprecated in 13.0
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: Use [`usesDefaultHyphenation`](./usesdefaulthyphenation.md) instead.
 
 ## Declaration
 
 ```swift
 var hyphenationFactor: CGFloat { get set }
+```
+
+```objc
+@property CGFloat hyphenationFactor;
 ```
 
 #### Discussion
@@ -23,11 +30,12 @@ Whenever (width of the real contents of the line) / (the line fragment width) is
 
 ## See Also
 
-- [attributedString](nslayoutmanager-attributedstring.md)
+### Deprecated properties
+- [attributedString](../nslayoutmanager-attributedstring.md)
   The text storage object from which the `NSGlyphGenerator` object procures characters for glyph generation.
-- [layoutOptions](nslayoutmanager-layoutoptions.md)
+- [layoutOptions](../nslayoutmanager-layoutoptions.md)
   The layout manager’s current layout options.
-- [var usesScreenFonts: Bool](../appkit/nslayoutmanager/usesscreenfonts.md)
+- [var usesScreenFonts: Bool](../../AppKit/nslayoutmanager/usesscreenfonts.md)
   A Boolean that controls using screen fonts to calculate layout and display text.
 
 

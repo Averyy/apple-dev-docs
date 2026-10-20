@@ -1,7 +1,8 @@
 # setPermissionStatus(_:for:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the status of a permission with a distant future expiration date.
 
@@ -18,11 +19,15 @@ Sets the status of a permission with a distant future expiration date.
 func setPermissionStatus(_ status: WKWebExtensionContext.PermissionStatus, for permission: WKWebExtension.Permission)
 ```
 
+```objc
+- (void) setPermissionStatus:(WKWebExtensionContextPermissionStatus) status forPermission:(WKWebExtensionPermission) permission;
+```
+
 #### Discussion
 
-This method will update [`grantedPermissions`](wkwebextensioncontext/grantedpermissions.md) and [`deniedPermissions`](wkwebextensioncontext/deniedpermissions.md). Use this method for changing a single permission’s status.
+This method will update [`grantedPermissions`](./grantedpermissions.md) and [`deniedPermissions`](./deniedpermissions.md). Use this method for changing a single permission’s status.
 
-Only [`WKWebExtensionContext.PermissionStatus.deniedExplicitly`](wkwebextensioncontext/permissionstatus/deniedexplicitly.md), [`WKWebExtensionContext.PermissionStatus.unknown`](wkwebextensioncontext/permissionstatus/unknown.md), and [`WKWebExtensionContext.PermissionStatus.grantedExplicitly`](wkwebextensioncontext/permissionstatus/grantedexplicitly.md) states are allowed to be set using this method.
+Only [`WKWebExtensionContext.PermissionStatus.deniedExplicitly`](./permissionstatus/deniedexplicitly.md), [`WKWebExtensionContext.PermissionStatus.unknown`](./permissionstatus/unknown.md), and [`WKWebExtensionContext.PermissionStatus.grantedExplicitly`](./permissionstatus/grantedexplicitly.md) states are allowed to be set using this method.
 
 ## Parameters
 
@@ -31,7 +36,8 @@ Only [`WKWebExtensionContext.PermissionStatus.deniedExplicitly`](wkwebextensionc
 
 ## See Also
 
-- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.Permission, expirationDate: Date?)](wkwebextensioncontext/setpermissionstatus(_:for:expirationdate:)-692ui.md)
+### Related Documentation
+- [func setPermissionStatus(WKWebExtensionContext.PermissionStatus, for: WKWebExtension.Permission, expirationDate: Date?)](./setpermissionstatus%28_,for,expirationdate%29-692ui.md)
   Sets the status of a permission with a specific expiration date.
 
 

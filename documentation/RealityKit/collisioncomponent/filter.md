@@ -1,7 +1,8 @@
 # filter
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collision filter used to segregate entities into different collision groups.
 
@@ -11,7 +12,7 @@ The collision filter used to segregate entities into different collision groups.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

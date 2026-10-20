@@ -1,7 +1,8 @@
 # inputGroups
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input groups an asset writer contains.
 
@@ -19,15 +20,20 @@ The input groups an asset writer contains.
 var inputGroups: [AVAssetWriterInputGroup] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVAssetWriterInputGroup *> * inputGroups;
+```
+
 #### Discussion
 
-Add input groups to the asset writer using its [`add(_:)`](avassetwriter/add(_:)-3san4.md) method.
+Add input groups to the asset writer using its [`add(_:)`](./add%28_%29-3san4.md) method.
 
 ## See Also
 
-- [func canAdd(AVAssetWriterInputGroup) -> Bool](avassetwriter/canadd(_:)-8s1oh.md)
+### Configuring input groups
+- [func canAdd(AVAssetWriterInputGroup) -> Bool](./canadd%28_%29-8s1oh.md)
   Determines whether the asset writer supports adding the input group.
-- [func add(AVAssetWriterInputGroup)](avassetwriter/add(_:)-3san4.md)
+- [func add(AVAssetWriterInputGroup)](./add%28_%29-3san4.md)
   Adds an input group to an asset writer.
 
 

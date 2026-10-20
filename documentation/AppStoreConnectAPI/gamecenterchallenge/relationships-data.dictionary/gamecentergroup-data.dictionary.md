@@ -1,21 +1,22 @@
 # GameCenterChallenge.Relationships.GameCenterGroup
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 4.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterChallenge.Relationships.GameCenterGroup
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterChallenge.Relationships.GameCenterGroup.Data](gamecenterchallenge/relationships-data.dictionary/gamecentergroup-data.dictionary/data-data.dictionary.md)
+- [object GameCenterChallenge.Relationships.GameCenterGroup.Data](./gamecentergroup-data.dictionary/data-data.dictionary.md)
   The request body you use to update a challenge.
 
 ## Properties

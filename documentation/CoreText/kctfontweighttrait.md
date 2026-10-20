@@ -1,7 +1,8 @@
 # kCTFontWeightTrait
 
 **Framework**: Core Text  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The normalized weight trait from the font traits dictionary.
 
@@ -20,17 +21,22 @@ The normalized weight trait from the font traits dictionary.
 let kCTFontWeightTrait: CFString
 ```
 
+```c
+extern CFStringRef const kCTFontWeightTrait;
+```
+
 #### Discussion
 
-The value returned is a [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) representing a float value between `-1.0` and `1.0` for normalized weight. The value of `0.0` corresponds to the regular or medium font weight.
+The value returned is a [`CFNumber`](../CoreFoundation/cfnumber.md) representing a float value between `-1.0` and `1.0` for normalized weight. The value of `0.0` corresponds to the regular or medium font weight.
 
 ## See Also
 
-- [let kCTFontSymbolicTrait: CFString](kctfontsymbolictrait.md)
+### Font Trait Keys
+- [let kCTFontSymbolicTrait: CFString](./kctfontsymbolictrait.md)
   The symbolic traits value from the font traits dictionary.
-- [let kCTFontWidthTrait: CFString](kctfontwidthtrait.md)
+- [let kCTFontWidthTrait: CFString](./kctfontwidthtrait.md)
   The normalized proportion (width condense or expand) trait from the font traits dictionary.
-- [let kCTFontSlantTrait: CFString](kctfontslanttrait.md)
+- [let kCTFontSlantTrait: CFString](./kctfontslanttrait.md)
   The normalized slant angle from the font traits dictionary.
 
 

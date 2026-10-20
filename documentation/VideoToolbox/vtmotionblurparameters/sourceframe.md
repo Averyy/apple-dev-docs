@@ -1,7 +1,8 @@
 # sourceFrame
 
 **Framework**: Video Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current source frame.
 
@@ -17,25 +18,30 @@ The current source frame.
 var sourceFrame: VTFrameProcessorFrame { get }
 ```
 
+```objc
+@property (nonatomic, readonly) VTFrameProcessorFrame * sourceFrame;
+```
+
 #### Discussion
 
 This value must be non nil.
 
 ## See Also
 
-- [var nextFrame: VTFrameProcessorFrame?](vtmotionblurparameters/nextframe.md)
+### Inspecting the parameters
+- [var nextFrame: VTFrameProcessorFrame?](./nextframe.md)
   The next source frame in presentation time order.
-- [var previousFrame: VTFrameProcessorFrame?](vtmotionblurparameters/previousframe.md)
+- [var previousFrame: VTFrameProcessorFrame?](./previousframe.md)
   The previous source frame in presentation time order.
-- [var motionBlurStrength: Int](vtmotionblurparameters/motionblurstrength.md)
+- [var motionBlurStrength: Int](./motionblurstrength.md)
   A value that indicates the strength of blur to apply.
-- [var nextOpticalFlow: VTFrameProcessorOpticalFlow?](vtmotionblurparameters/nextopticalflow.md)
+- [var nextOpticalFlow: VTFrameProcessorOpticalFlow?](./nextopticalflow.md)
   Optional optical flow object that contains forward and backward optical flow with the next frame.
-- [var previousOpticalFlow: VTFrameProcessorOpticalFlow?](vtmotionblurparameters/previousopticalflow.md)
+- [var previousOpticalFlow: VTFrameProcessorOpticalFlow?](./previousopticalflow.md)
   Optional optical flow object that contains forward and backward optical flow with the previous frame.
-- [var submissionMode: VTMotionBlurParameters.SubmissionMode](vtmotionblurparameters/submissionmode-swift.property.md)
+- [var submissionMode: VTMotionBlurParameters.SubmissionMode](./submissionmode-swift.property.md)
   A value describing the processing request in a parameters submission object.
-- [VTMotionBlurParameters.SubmissionMode](vtmotionblurparameters/submissionmode-swift.enum.md)
+- [VTMotionBlurParameters.SubmissionMode](./submissionmode-swift.enum.md)
   A value describing the processing request in a parameters submission object.
 
 

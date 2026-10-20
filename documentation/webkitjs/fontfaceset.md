@@ -1,7 +1,8 @@
 # FontFaceSet
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,27 +10,27 @@
 
 ## Declaration
 
-```swift
+```
 interface FontFaceSet
 ```
 
 ## Topics
 
 ### Instance Properties
-- [>](fontfaceset/1777771.md)
-- [onloading](fontfaceset/1777817-onloading.md)
-- [onloadingdone](fontfaceset/1777849-onloadingdone.md)
-- [onloadingerror](fontfaceset/1777928-onloadingerror.md)
-- [ready](fontfaceset/1777923-ready.md)
-- [size](fontfaceset/1777921-size.md)
-- [status](fontfaceset/1777933-status.md)
+- [>](./fontfaceset/api-1777771.md)
+- [onloading](./fontfaceset/api-1777817-onloading.md)
+- [onloadingdone](./fontfaceset/api-1777849-onloadingdone.md)
+- [onloadingerror](./fontfaceset/api-1777928-onloadingerror.md)
+- [ready](./fontfaceset/api-1777923-ready.md)
+- [size](./fontfaceset/api-1777921-size.md)
+- [status](./fontfaceset/api-1777933-status.md)
 ### Instance Methods
-- [add](fontfaceset/1777848-add.md)
-- [check](fontfaceset/1777825-check.md)
-- [clear](fontfaceset/1777917-clear.md)
-- [delete](fontfaceset/1777813-delete.md)
-- [has](fontfaceset/1777950-has.md)
-- [load](fontfaceset/1777882-load.md)
+- [add](./fontfaceset/api-1777848-add.md)
+- [check](./fontfaceset/api-1777825-check.md)
+- [clear](./fontfaceset/api-1777917-clear.md)
+- [delete](./fontfaceset/api-1777813-delete.md)
+- [has](./fontfaceset/api-1777950-has.md)
+- [load](./fontfaceset/api-1777882-load.md)
 
 ## Relationships
 

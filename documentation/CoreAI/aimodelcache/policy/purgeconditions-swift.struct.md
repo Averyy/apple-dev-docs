@@ -1,7 +1,8 @@
 # AIModelCache.Policy.PurgeConditions
 
 **Framework**: Core AI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A set of conditions that determine when the system purges specialized assets.
 
@@ -25,24 +26,24 @@ struct PurgeConditions
 ## Topics
 
 ### Identifying purge conditions
-- [static let sourceAssetChangedOrDeleted: AIModelCache.Policy.PurgeConditions](aimodelcache/policy/purgeconditions-swift.struct/sourceassetchangedordeleted.md)
+- [static let sourceAssetChangedOrDeleted: AIModelCache.Policy.PurgeConditions](./purgeconditions-swift.struct/sourceassetchangedordeleted.md)
   A condition that allows purging when the source model changes or no longer exists.
-- [static let storagePressure: AIModelCache.Policy.PurgeConditions](aimodelcache/policy/purgeconditions-swift.struct/storagepressure.md)
+- [static let storagePressure: AIModelCache.Policy.PurgeConditions](./purgeconditions-swift.struct/storagepressure.md)
   A condition that allows purging under device storage pressure.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [Hashable](../swift/hashable.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Decodable](../../../Swift/decodable.md)
+- [Encodable](../../../Swift/encodable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../../Swift/expressiblebyarrayliteral.md)
+- [Hashable](../../../Swift/hashable.md)
+- [OptionSet](../../../Swift/optionset.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../../Swift/setalgebra.md)
 
 
 ---

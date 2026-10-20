@@ -1,7 +1,8 @@
 # credit
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Support for credit cards.
 
@@ -19,15 +20,20 @@ Support for credit cards.
 static var credit: PKMerchantCapability { get }
 ```
 
+```c
+PKMerchantCapabilityCredit
+```
+
 ## See Also
 
-- [static var instantFundsOut: PKMerchantCapability](pkmerchantcapability/instantfundsout.md)
+### Constants
+- [static var instantFundsOut: PKMerchantCapability](./instantfundsout.md)
   The value that indicates the merchant supports disbursing funds using Instant Funds Out.
-- [static var threeDSecure: PKMerchantCapability](pkmerchantcapability/threedsecure.md)
+- [static var threeDSecure: PKMerchantCapability](./threedsecure.md)
   Support for the 3-D Secure protocol.
-- [static var emv: PKMerchantCapability](pkmerchantcapability/emv.md)
+- [static var emv: PKMerchantCapability](./emv.md)
   Support for the EMV protocol.
-- [static var debit: PKMerchantCapability](pkmerchantcapability/debit.md)
+- [static var debit: PKMerchantCapability](./debit.md)
   Support for debit cards.
 
 

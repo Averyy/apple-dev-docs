@@ -1,7 +1,8 @@
 # init(data:shape:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a shaped array with a defined data and shape.
 
@@ -20,6 +21,8 @@ Creates a shaped array with a defined data and shape.
 init(data: Data, shape: [Int])
 ```
 
+Available when `Scalar` conforms to `MLShapedArrayScalar`.
+
 ## Parameters
 
 - `data`: A block of data that initializes the array.
@@ -27,7 +30,8 @@ init(data: Data, shape: [Int])
 
 ## See Also
 
-- [init(data: Data, shape: [Int], strides: [Int])](mlshapedarrayslice/init(data:shape:strides:).md)
+### Creating a shaped array slice with data
+- [init(data: Data, shape: [Int], strides: [Int])](./init%28data,shape,strides%29.md)
   Creates a shaped array with defined data, shape, and strides.
 
 

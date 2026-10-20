@@ -1,7 +1,8 @@
 # appendItems(withIdentifiers:intoSectionWithIdentifier:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds the items with the specified identifiers to the specified section of the snapshot.
 
@@ -14,6 +15,10 @@ Adds the items with the specified identifiers to the specified section of the sn
 func appendItems(withIdentifiers identifiers: [Any], intoSectionWithIdentifier sectionIdentifier: Any)
 ```
 
+```objc
+- (void) appendItemsWithIdentifiers:(NSArray<id> *) identifiers intoSectionWithIdentifier:(SectionIdentifierType) sectionIdentifier;
+```
+
 ## Parameters
 
 - `identifiers`: An array of identifiers specifying the items to add to the snapshot.
@@ -21,9 +26,10 @@ func appendItems(withIdentifiers identifiers: [Any], intoSectionWithIdentifier s
 
 ## See Also
 
-- [func appendSections(withIdentifiers: [Any])](nsdiffabledatasourcesnapshotreference/appendsections(withidentifiers:).md)
+### Creating a snapshot
+- [func appendSections(withIdentifiers: [Any])](./appendsections%28withidentifiers%29.md)
   Adds the sections with the specified identifiers to the snapshot.
-- [func appendItems(withIdentifiers: [Any])](nsdiffabledatasourcesnapshotreference/appenditems(withidentifiers:).md)
+- [func appendItems(withIdentifiers: [Any])](./appenditems%28withidentifiers%29.md)
   Adds the items with the specified identifiers to the last section of the snapshot.
 
 

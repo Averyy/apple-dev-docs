@@ -1,7 +1,8 @@
 # ProcessCodeSigningFlags.DataType
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The basic input data type for this constraint: `ProcessCodeSigningFlags.ValueSet`
 

@@ -1,16 +1,19 @@
 # EligibilityRecordListResponse
 
 **Framework**: Apple Ads  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The response details to an app eligibility request.
 
 **Availability**:
-- Search Ads 4.10+
+- Search Ads 4.10+ - Deprecated in 5.2
+
+> **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
 ## Declaration
 
-```swift
+```
 object EligibilityRecordListResponse
 ```
 
@@ -21,7 +24,8 @@ object EligibilityRecordListResponse
 
 ## See Also
 
-- [object EligibilityRecord](eligibilityrecord.md)
+### App Eligibility Request and Response Objects
+- [object EligibilityRecord](./eligibilityrecord.md)
   App eligibility parameters that an API response returns.
 
 

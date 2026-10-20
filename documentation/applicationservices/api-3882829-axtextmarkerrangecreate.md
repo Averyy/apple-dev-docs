@@ -1,7 +1,8 @@
 # AXTextMarkerRangeCreate(_:_:_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 12.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func AXTextMarkerRangeCreate(_ allocator: CFAllocator?, _ startMarker: AXTextMarker, _ endMarker: AXTextMarker) -> AXTextMarkerRange
+```
+
+```c
+AXTextMarkerRangeRef AXTextMarkerRangeCreate(CFAllocatorRef allocator, AXTextMarkerRef startMarker, AXTextMarkerRef endMarker);
 ```
 
 

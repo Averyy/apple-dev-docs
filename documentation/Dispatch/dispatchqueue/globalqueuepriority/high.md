@@ -1,16 +1,19 @@
 # DispatchQueue.GlobalQueuePriority.high
 
 **Framework**: Dispatch  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+ - Deprecated
-- visionOS ?+
-- watchOS ?+ - Deprecated
+- iOS - Deprecated in 8.0
+- iPadOS - Deprecated in 8.0
+- Mac Catalyst
+- macOS - Deprecated in 10.10
+- tvOS - Deprecated
+- visionOS
+- watchOS - Deprecated
+
+> **Deprecated**: Use qos attributes instead
 
 ## Declaration
 
@@ -20,9 +23,10 @@ case high
 
 ## See Also
 
-- [DispatchQueue.GlobalQueuePriority.default](dispatchqueue/globalqueuepriority/default.md)
-- [DispatchQueue.GlobalQueuePriority.low](dispatchqueue/globalqueuepriority/low.md)
-- [DispatchQueue.GlobalQueuePriority.background](dispatchqueue/globalqueuepriority/background.md)
+### Priorities
+- [DispatchQueue.GlobalQueuePriority.default](./default.md)
+- [DispatchQueue.GlobalQueuePriority.low](./low.md)
+- [DispatchQueue.GlobalQueuePriority.background](./background.md)
 
 
 ---

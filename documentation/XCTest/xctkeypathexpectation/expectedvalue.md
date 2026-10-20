@@ -1,7 +1,8 @@
 # expectedValue
 
 **Framework**: XCTest  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A value that the key path’s specified property must equal to fulfill the expectation.
 
@@ -17,17 +18,20 @@ A value that the key path’s specified property must equal to fulfill the expec
 final var expectedValue: V? { get }
 ```
 
+Available when `T` inherits `NSObject` and `V` conforms to `Equatable`.
+
 #### Discussion
 
 If the expectation doesn’t initialize with an expected value, this property returns `nil`.
 
 ## See Also
 
-- [let keyPath: KeyPath<T, V>](xctkeypathexpectation/keypath.md)
+### Expectation properties
+- [let keyPath: KeyPath<T, V>](./keypath.md)
   The key path for the observed property, relative to the observed object.
-- [let observedObject: T](xctkeypathexpectation/observedobject.md)
+- [let observedObject: T](./observedobject.md)
   The object the system observes the key path on.
-- [let options: NSKeyValueObservingOptions](xctkeypathexpectation/options.md)
+- [let options: NSKeyValueObservingOptions](./options.md)
   A combination of values that specify what to include in observation notifications.
 
 

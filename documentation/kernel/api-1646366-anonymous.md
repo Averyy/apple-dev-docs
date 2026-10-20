@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : long {
     ...
 };
@@ -17,28 +18,28 @@ enum : long {
 ## Topics
 
 ### Constants
-- [kUSBAllStreams](1646366-anonymous/kusballstreams.md)
-- [kUSBDeviceIDMask](1646366-anonymous/kusbdeviceidmask.md)
-- [kUSBDeviceIDShift](1646366-anonymous/kusbdeviceidshift.md)
-- [kUSBDeviceMask](1646366-anonymous/kusbdevicemask.md)
-- [kUSBEndPtShift](1646366-anonymous/kusbendptshift.md)
-- [kUSBEndpointTransferTypeUCMask](1646366-anonymous/kusbendpointtransfertypeucmask.md)
-- [kUSBInterfaceIDMask](1646366-anonymous/kusbinterfaceidmask.md)
-- [kUSBInterfaceIDShift](1646366-anonymous/kusbinterfaceidshift.md)
-- [kUSBMaxDevice](1646366-anonymous/kusbmaxdevice.md)
-- [kUSBMaxDevices](1646366-anonymous/kusbmaxdevices.md)
-- [kUSBMaxInterfaces](1646366-anonymous/kusbmaxinterfaces.md)
-- [kUSBMaxPipes](1646366-anonymous/kusbmaxpipes.md)
-- [kUSBMaxStream](1646366-anonymous/kusbmaxstream.md)
-- [kUSBNoPipeIdx](1646366-anonymous/kusbnopipeidx.md)
-- [kUSBNoStream](1646366-anonymous/kusbnostream.md)
-- [kUSBPRimeStream](1646366-anonymous/kusbprimestream.md)
-- [kUSBPipeIDMask](1646366-anonymous/kusbpipeidmask.md)
-- [kUSBStream0](1646366-anonymous/kusbstream0.md)
-- [kUSBStreamIDAllStreamsMask](1646366-anonymous/kusbstreamidallstreamsmask.md)
-- [kUSBStreamIDMask](1646366-anonymous/kusbstreamidmask.md)
-- [kUSBTooManyDevicesAddress](1646366-anonymous/kusbtoomanydevicesaddress.md)
-- [kUSBUCRequestWithoutUSBNotificationMask](1646366-anonymous/kusbucrequestwithoutusbnotificationmask.md)
+- [kUSBAllStreams](./api-1646366-anonymous/kusballstreams.md)
+- [kUSBDeviceIDMask](./api-1646366-anonymous/kusbdeviceidmask.md)
+- [kUSBDeviceIDShift](./api-1646366-anonymous/kusbdeviceidshift.md)
+- [kUSBDeviceMask](./api-1646366-anonymous/kusbdevicemask.md)
+- [kUSBEndPtShift](./api-1646366-anonymous/kusbendptshift.md)
+- [kUSBEndpointTransferTypeUCMask](./api-1646366-anonymous/kusbendpointtransfertypeucmask.md)
+- [kUSBInterfaceIDMask](./api-1646366-anonymous/kusbinterfaceidmask.md)
+- [kUSBInterfaceIDShift](./api-1646366-anonymous/kusbinterfaceidshift.md)
+- [kUSBMaxDevice](./api-1646366-anonymous/kusbmaxdevice.md)
+- [kUSBMaxDevices](./api-1646366-anonymous/kusbmaxdevices.md)
+- [kUSBMaxInterfaces](./api-1646366-anonymous/kusbmaxinterfaces.md)
+- [kUSBMaxPipes](./api-1646366-anonymous/kusbmaxpipes.md)
+- [kUSBMaxStream](./api-1646366-anonymous/kusbmaxstream.md)
+- [kUSBNoPipeIdx](./api-1646366-anonymous/kusbnopipeidx.md)
+- [kUSBNoStream](./api-1646366-anonymous/kusbnostream.md)
+- [kUSBPRimeStream](./api-1646366-anonymous/kusbprimestream.md)
+- [kUSBPipeIDMask](./api-1646366-anonymous/kusbpipeidmask.md)
+- [kUSBStream0](./api-1646366-anonymous/kusbstream0.md)
+- [kUSBStreamIDAllStreamsMask](./api-1646366-anonymous/kusbstreamidallstreamsmask.md)
+- [kUSBStreamIDMask](./api-1646366-anonymous/kusbstreamidmask.md)
+- [kUSBTooManyDevicesAddress](./api-1646366-anonymous/kusbtoomanydevicesaddress.md)
+- [kUSBUCRequestWithoutUSBNotificationMask](./api-1646366-anonymous/kusbucrequestwithoutusbnotificationmask.md)
 
 
 ---

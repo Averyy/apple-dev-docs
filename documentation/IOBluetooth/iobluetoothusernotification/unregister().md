@@ -1,17 +1,22 @@
 # unregister()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Called to unregister the target notification.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func unregister()
+```
+
+```objc
+- (void) unregister;
 ```
 
 #### Discussion

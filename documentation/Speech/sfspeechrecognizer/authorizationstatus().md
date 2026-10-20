@@ -1,7 +1,8 @@
 # authorizationStatus()
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns your app’s current authorization to perform speech recognition.
 
@@ -18,9 +19,13 @@ Returns your app’s current authorization to perform speech recognition.
 class func authorizationStatus() -> SFSpeechRecognizerAuthorizationStatus
 ```
 
+```objc
++ (SFSpeechRecognizerAuthorizationStatus) authorizationStatus;
+```
+
 #### Return Value
 
-The app’s current authorization status value. For a list of values, see [`SFSpeechRecognizerAuthorizationStatus`](sfspeechrecognizerauthorizationstatus.md).
+The app’s current authorization status value. For a list of values, see [`SFSpeechRecognizerAuthorizationStatus`](../sfspeechrecognizerauthorizationstatus.md).
 
 #### Discussion
 
@@ -28,9 +33,10 @@ The user can reject your app’s request to perform speech recognition, but your
 
 ## See Also
 
-- [class func requestAuthorization((SFSpeechRecognizerAuthorizationStatus) -> Void)](sfspeechrecognizer/requestauthorization(_:).md)
+### Requesting user authorization
+- [class func requestAuthorization((SFSpeechRecognizerAuthorizationStatus) -> Void)](./requestauthorization%28_%29.md)
   Asks the user to allow your app to perform speech recognition.
-- [enum SFSpeechRecognizerAuthorizationStatus](sfspeechrecognizerauthorizationstatus.md)
+- [enum SFSpeechRecognizerAuthorizationStatus](../sfspeechrecognizerauthorizationstatus.md)
   The app’s authorization to perform speech recognition.
 
 

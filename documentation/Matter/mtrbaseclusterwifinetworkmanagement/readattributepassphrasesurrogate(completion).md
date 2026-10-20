@@ -1,7 +1,8 @@
 # readAttributePassphraseSurrogate(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributePassphraseSurrogate(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributePassphraseSurrogate() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributePassphraseSurrogateWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

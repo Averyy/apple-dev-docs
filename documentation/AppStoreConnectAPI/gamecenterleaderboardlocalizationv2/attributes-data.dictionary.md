@@ -1,7 +1,8 @@
 # GameCenterLeaderboardLocalizationV2.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe a Game Center leaderboard localization v2 resource.
 
@@ -10,7 +11,7 @@ Attributes that describe a Game Center leaderboard localization v2 resource.
 
 ## Declaration
 
-```swift
+```
 object GameCenterLeaderboardLocalizationV2.Attributes
 ```
 
@@ -34,7 +35,8 @@ object GameCenterLeaderboardLocalizationV2.Attributes
 
 ## See Also
 
-- [object GameCenterLeaderboardLocalizationV2.Relationships](gamecenterleaderboardlocalizationv2/relationships-data.dictionary.md)
+### Dictionaries
+- [object GameCenterLeaderboardLocalizationV2.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those you can operate on.
 
 

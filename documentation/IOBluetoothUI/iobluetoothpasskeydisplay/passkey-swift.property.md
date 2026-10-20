@@ -1,7 +1,8 @@
 # passkey
 
 **Framework**: IOBluetooth UI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,19 @@
 var passkey: String! { get set }
 ```
 
+```objc
+@property (copy) NSString * passkey;
+```
+
 ## See Also
 
-- [var backgroundImageConstraint: NSLayoutConstraint!](iobluetoothpasskeydisplay/backgroundimageconstraint.md)
-- [var centeredView: NSView!](iobluetoothpasskeydisplay/centeredview.md)
-- [var isIncomingRequest: Bool](iobluetoothpasskeydisplay/isincomingrequest-swift.property.md)
-- [var returnHighlightImage: NSImage!](iobluetoothpasskeydisplay/returnhighlightimage.md)
-- [var returnImage: NSImage!](iobluetoothpasskeydisplay/returnimage.md)
-- [var usePasskeyNotificaitons: Bool](iobluetoothpasskeydisplay/usepasskeynotificaitons.md)
+### Instance Properties
+- [var backgroundImageConstraint: NSLayoutConstraint!](./backgroundimageconstraint.md)
+- [var centeredView: NSView!](./centeredview.md)
+- [var isIncomingRequest: Bool](./isincomingrequest-swift.property.md)
+- [var returnHighlightImage: NSImage!](./returnhighlightimage.md)
+- [var returnImage: NSImage!](./returnimage.md)
+- [var usePasskeyNotificaitons: Bool](./usepasskeynotificaitons.md)
 
 
 ---

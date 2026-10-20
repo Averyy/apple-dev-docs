@@ -1,7 +1,8 @@
 # SystemLanguageModel.Error.AssetsUnavailable
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about unavailable model assets.
 
@@ -21,21 +22,22 @@ struct AssetsUnavailable
 ## Topics
 
 ### Creating an asset unavailable error
-- [init(debugDescription: String)](systemlanguagemodel/error/assetsunavailable/init(debugdescription:).md)
+- [init(debugDescription: String)](./assetsunavailable/init%28debugdescription%29.md)
   Creates an assets unavailable value.
 ### Getting the error description
-- [var debugDescription: String](systemlanguagemodel/error/assetsunavailable/debugdescription.md)
+- [var debugDescription: String](./assetsunavailable/debugdescription.md)
   A description of why the assets are unavailable.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [case assetsUnavailable(SystemLanguageModel.Error.AssetsUnavailable)](systemlanguagemodel/error/assetsunavailable(_:).md)
+### Error cases
+- [case assetsUnavailable(SystemLanguageModel.Error.AssetsUnavailable)](./assetsunavailable%28_%29.md)
   The assets required for the session are unavailable.
 
 

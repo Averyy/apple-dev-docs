@@ -1,7 +1,8 @@
 # GCProductCategoryKeyboard
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The keyboard product category.
 
@@ -19,9 +20,14 @@ The keyboard product category.
 let GCProductCategoryKeyboard: String
 ```
 
+```c
+extern NSString * const GCProductCategoryKeyboard;
+```
+
 ## See Also
 
-- [let GCProductCategoryMouse: String](gcproductcategorymouse.md)
+### Mouse and keyboard categories
+- [let GCProductCategoryMouse: String](./gcproductcategorymouse.md)
   The mouse product category.
 
 

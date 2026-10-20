@@ -1,7 +1,8 @@
 # init(undefined:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feature value with a type that represents an undefined or missing value.
 
@@ -18,6 +19,10 @@ Creates a feature value with a type that represents an undefined or missing valu
 
 ```swift
 convenience init(undefined type: MLFeatureType)
+```
+
+```objc
++ (instancetype) undefinedFeatureValueWithType:(MLFeatureType) type;
 ```
 
 ## Parameters

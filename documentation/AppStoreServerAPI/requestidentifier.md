@@ -1,7 +1,8 @@
 # requestIdentifier
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 A string that contains a unique identifier you provide to track each subscription-renewal-date extension request.
 
@@ -10,27 +11,32 @@ A string that contains a unique identifier you provide to track each subscriptio
 
 ## Declaration
 
-```swift
+```
 string requestIdentifier
 ```
 
+
+
+**Maximum Length**: `128`
+
 #### Discussion
 
-You provide a `requestIdentifier` in the request body when you call the [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) and [`Extend a Subscription Renewal Date`](extend-a-subscription-renewal-date.md) endpoints.
+You provide a `requestIdentifier` in the request body when you call the [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) and [`Extend a Subscription Renewal Date`](./extend-a-subscription-renewal-date.md) endpoints.
 
-The API returns the same request identifier in its response, so you can match your request with the related response. The [`App Store Server Notifications V2`](https://developer.apple.com/documentation/appstoreservernotifications/app-store-server-notifications-v2) also include this request identifier in notifications related to the [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint. For more information, see the `RENEWAL_EXTENSION` [`notificationType`](https://developer.apple.com/documentation/appstoreservernotifications/notificationtype).
+The API returns the same request identifier in its response, so you can match your request with the related response. The [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) also include this request identifier in notifications related to the [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint. For more information, see the `RENEWAL_EXTENSION` [`notificationType`](../AppStoreServerNotifications/notificationtype.md).
 
 To resend the same request due to a timeout or other error, use the same request identifier. Otherwise, create a unique request identifier for each different subscription-renewal-date extension request.
 
-> ❗ **Important**:  Provide a `UUID` value for the [`requestIdentifier`](requestidentifier.md) when calling the [`Extend Subscription Renewal Dates for All Active Subscribers`](extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint.
+> ❗ **Important**:  Provide a `UUID` value for the [`requestIdentifier`](./requestidentifier.md) when calling the [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint.
 
 The maximum string length is 128 characters.
 
 ## See Also
 
-- [type extendByDays](extendbydays.md)
+### Request data types
+- [type extendByDays](./extendbydays.md)
   The number of days to extend the subscription renewal date.
-- [type extendReasonCode](extendreasoncode.md)
+- [type extendReasonCode](./extendreasoncode.md)
   The code that represents the reason for the subscription-renewal-date extension.
 
 

@@ -1,7 +1,8 @@
 # stop()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops the receiver’s current query from gathering any further results.
 
@@ -20,6 +21,10 @@ Stops the receiver’s current query from gathering any further results.
 func stop()
 ```
 
+```objc
+- (void) stopQuery;
+```
+
 #### Discussion
 
 The receiver first completes gathering any unprocessed results. If a query is stopped before the gathering phase finishes, it does not post an `NSMetadataQueryDidStartGatheringNotification` notification.
@@ -28,13 +33,14 @@ You call this function to stop a query that is generating too many results to be
 
 ## See Also
 
-- [var isStarted: Bool](nsmetadataquery/isstarted.md)
+### Running queries
+- [var isStarted: Bool](./isstarted.md)
   A Boolean value that indicates whether the query has started. (read-only)
-- [func start() -> Bool](nsmetadataquery/start.md)
+- [func start() -> Bool](./start%28%29.md)
   Attempts to start the query.
-- [var isGathering: Bool](nsmetadataquery/isgathering.md)
+- [var isGathering: Bool](./isgathering.md)
   A Boolean value that indicates whether the receiver is in the initial gathering phase of the query. (read-only)
-- [var isStopped: Bool](nsmetadataquery/isstopped.md)
+- [var isStopped: Bool](./isstopped.md)
   A Boolean value that indicates whether the query has stopped.
 
 

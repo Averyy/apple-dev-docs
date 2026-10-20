@@ -1,7 +1,8 @@
 # init(name:direction:firstGroup:totalGroupsSpanned:maxSysEx8Streams:midi1Info:uiHint:isEnabled:)
 
 **Framework**: Core MIDI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 init?(name: String, direction: MIDIUMPFunctionBlockDirection, firstGroup: MIDIUMPGroupNumber, totalGroupsSpanned: MIDIUInteger7, maxSysEx8Streams: MIDIUInteger7, midi1Info MIDI1Info: MIDIUMPFunctionBlockMIDI1Info, uiHint UIHint: MIDIUMPFunctionBlockUIHint, isEnabled: Bool)
+```
+
+```objc
+- (instancetype) initWithName:(NSString *) name direction:(MIDIUMPFunctionBlockDirection) direction firstGroup:(MIDIUMPGroupNumber) firstGroup totalGroupsSpanned:(MIDIUInteger7) totalGroupsSpanned maxSysEx8Streams:(MIDIUInteger7) maxSysEx8Streams MIDI1Info:(MIDIUMPFunctionBlockMIDI1Info) MIDI1Info UIHint:(MIDIUMPFunctionBlockUIHint) UIHint isEnabled:(BOOL) isEnabled;
 ```
 
 

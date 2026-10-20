@@ -1,7 +1,8 @@
 # mSampleTime
 
 **Framework**: Core Audio Types  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The absolute sample frame time.
 
@@ -20,19 +21,24 @@ The absolute sample frame time.
 var mSampleTime: Float64
 ```
 
+```c
+Float64 mSampleTime;
+```
+
 ## See Also
 
-- [var mFlags: AudioTimeStampFlags](audiotimestamp/mflags.md)
+### Accessing the Data
+- [var mFlags: AudioTimeStampFlags](./mflags.md)
   A set of flags indicating which representations of the time are valid; see `Audio Time Stamp Flags` and `Audio Time Stamp Flag Combination Constant`.
-- [var mHostTime: UInt64](audiotimestamp/mhosttime.md)
+- [var mHostTime: UInt64](./mhosttime.md)
   The host machine’s time base (see `CoreAudio/HostTime.h`).
-- [var mRateScalar: Float64](audiotimestamp/mratescalar.md)
+- [var mRateScalar: Float64](./mratescalar.md)
   The ratio of actual host ticks per sample frame to the nominal host ticks per sample frame.
-- [var mReserved: UInt32](audiotimestamp/mreserved.md)
+- [var mReserved: UInt32](./mreserved.md)
   Pads the structure out to force an even 8-byte alignment.
-- [var mSMPTETime: SMPTETime](audiotimestamp/msmptetime.md)
-  The SMPTE time (see [`SMPTETime`](smptetime.md)).
-- [var mWordClockTime: UInt64](audiotimestamp/mwordclocktime.md)
+- [var mSMPTETime: SMPTETime](./msmptetime.md)
+  The SMPTE time (see [`SMPTETime`](../smptetime.md)).
+- [var mWordClockTime: UInt64](./mwordclocktime.md)
   The word clock time.
 
 

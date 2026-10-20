@@ -1,7 +1,8 @@
 # MediaCommand.RepeatMode.one
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The player repeats a single item indefinitely.
 

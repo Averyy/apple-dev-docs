@@ -1,6 +1,7 @@
 # Deprecated symbols
 
-**Framework**: AppKit
+**Framework**: AppKit  
+**Role**: API Collection
 
 Review symbols that are no longer in active development, and their recommended replacements.
 
@@ -11,7 +12,7 @@ Although these symbols are available for use, Apple is no longer actively develo
 ## Topics
 
 ### Deprecated properties
-- [var shouldRunSavePanelWithAccessoryView: Bool](nsdocument/shouldrunsavepanelwithaccessoryview.md)
+- [var shouldRunSavePanelWithAccessoryView: Bool](./nsdocument/shouldrunsavepanelwithaccessoryview.md)
   A Boolean value that indicates whether the document’s Save panel displays a list of supported writable document types.
 
 

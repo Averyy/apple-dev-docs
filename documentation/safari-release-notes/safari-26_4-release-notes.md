@@ -1,6 +1,7 @@
 # Safari 26.4 Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released March 24, 2026 — 26.4 (20624.1.16)
 
@@ -38,7 +39,7 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 
 - Fixed Safari gesture support to prevent pages that should not be able to scroll, such as with explicit `overflow: hidden`, from unexpectedly scrolling.  (163660111)
 
-##### Css
+##### CSS
 
 ###### New Features
 
@@ -154,7 +155,7 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed an issue where `input[type="search"]` fields with `appearance: none` incorrectly reserved space for the datalist dropdown button. (166754216)
 - Fixed an incorrect fallback for the menu style for empty lists, improving readability and correctness. (167662316)
 
-##### Html
+##### HTML
 
 ###### New Features
 
@@ -172,7 +173,7 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 
 - Fixed image uploading to not transcode images when `accept="image/*"` is specified. (166124206)
 
-##### Javascript
+##### JavaScript
 
 ###### New Features
 
@@ -187,7 +188,7 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed `%TypedArray%.prototype.includes` to correctly check that the `index` is less than the array length, aligning its behavior with ECMA-262. (167183441)
 - Fixed async functions without any `await` to inline their bodies for performance and corrected async stack traces with a single function entry for exceptions thrown from or through async functions. (167254635)
 
-##### Mathml
+##### MathML
 
 ###### New Features
 
@@ -268,7 +269,7 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed table layout `min-width` distribution for spanning cells with mixed `percent`, `fixed`, and `auto` columns. (167684748)
 - Fixed: Improved drop-shadow and blur effects rendering performance. (169472992)
 
-##### Svg
+##### SVG
 
 ###### New Features
 
@@ -319,13 +320,13 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 
 - Added support for parsing and computing `font-size: math` with scaling logic. (163323845)
 
-##### Wkwebview
+##### WKWebView
 
 ###### Resolved Issues
 
 - Fixed an issue where `WKWebView` apps with a toolbar would fail to display a top scroll edge effect when relying on automatic content inset adjustments. (161370795)
 
-##### Web Api
+##### Web API
 
 ###### New Features
 
@@ -410,19 +411,19 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 - Fixed a performance issue in the Web Inspector search panel by limiting initial results to 100 per resource and adding UI controls to load more or all results, reducing unnecessary UI work for large queries. (169804865)
 - Fixed an issue where the search bar settings icon disappeared when the search field was focused. (169997100)
 
-##### Webassembly
+##### WebAssembly
 
 ###### Resolved Issues
 
 - Fixed `Error.isError(WebAssembly.Exception)` to correctly return `false` based on current WebAssembly spec semantics. (167110254)
 
-##### Webgpu
+##### WebGPU
 
 ###### Resolved Issues
 
 - Fixed incorrect handling of some PNG pixel formats in WebGPU. (158797747)
 
-##### Webrtc
+##### WebRTC
 
 ###### New Features
 
@@ -439,17 +440,18 @@ Safari 26.4 is available for iOS 26.4, iPadOS 26.4, visionOS 26.4, macOS 26.4, m
 
 ## See Also
 
-- [Safari 26.6 Release Notes](safari-26_6-release-notes.md)
+### Version 26
+- [Safari 26.6 Release Notes](./safari-26_6-release-notes.md)
   Released July 27, 2026 — 26.6 (20624.4.5)
-- [Safari 26.5 Release Notes](safari-26_5-release-notes.md)
+- [Safari 26.5 Release Notes](./safari-26_5-release-notes.md)
   Released May 11, 2026 — 26.5 (20624.2.5)
-- [Safari 26.3 Release Notes](safari-26_3-release-notes.md)
+- [Safari 26.3 Release Notes](./safari-26_3-release-notes.md)
   Released February 11, 2026 — 26.3 (20623.2.7)
-- [Safari 26.2 Release Notes](safari-26_2-release-notes.md)
+- [Safari 26.2 Release Notes](./safari-26_2-release-notes.md)
   Released December 12, 2025 — 26.2 (20623.1.14)
-- [Safari 26.1 Release Notes](safari-26_1-release-notes.md)
+- [Safari 26.1 Release Notes](./safari-26_1-release-notes.md)
   Released November 3, 2025 — 26.1 (20622.2.11)
-- [Safari 26.0 Release Notes](safari-26-release-notes.md)
+- [Safari 26.0 Release Notes](./safari-26-release-notes.md)
   Released September 15, 2025 — 26 (20622.1.22)
 
 

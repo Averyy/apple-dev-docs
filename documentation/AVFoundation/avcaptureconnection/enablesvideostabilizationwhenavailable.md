@@ -1,14 +1,17 @@
 # enablesVideoStabilizationWhenAvailable
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the system enables video stabilization when it’s available.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 13.1+
+- iOS 6.0+ - Deprecated in 8.0
+- iPadOS 6.0+ - Deprecated in 8.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use the [`preferredVideoStabilizationMode`](./preferredvideostabilizationmode.md) property instead.
 
 ## Declaration
 
@@ -16,15 +19,20 @@ A Boolean value that indicates whether the system enables video stabilization wh
 var enablesVideoStabilizationWhenAvailable: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL enablesVideoStabilizationWhenAvailable;
+```
+
 ## See Also
 
-- [var isVideoStabilizationEnabled: Bool](avcaptureconnection/isvideostabilizationenabled.md)
+### Deprecated
+- [var isVideoStabilizationEnabled: Bool](./isvideostabilizationenabled.md)
   A Boolean value that indicates whether video stabilization is active for the connection.
-- [var isVideoOrientationSupported: Bool](avcaptureconnection/isvideoorientationsupported.md)
+- [var isVideoOrientationSupported: Bool](./isvideoorientationsupported.md)
   A Boolean value that indicates whether the connection supports changing the orientation of the video.
-- [var videoOrientation: AVCaptureVideoOrientation](avcaptureconnection/videoorientation.md)
+- [var videoOrientation: AVCaptureVideoOrientation](./videoorientation.md)
   An orientation that tells the connection how to rotate a video flowing through it.
-- [enum AVCaptureVideoOrientation](avcapturevideoorientation.md)
+- [enum AVCaptureVideoOrientation](../avcapturevideoorientation.md)
   Constants indicating video orientation.
 
 

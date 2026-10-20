@@ -1,7 +1,8 @@
 # navigationTransition(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the navigation transition style for this view.
 
@@ -23,7 +24,7 @@ func navigationTransition(_ style: some NavigationTransition) -> some View
 
 #### Discussion
 
-Add this modifier to a view that appears within a [`NavigationStack`](navigationstack.md) or a sheet, outside of any containers such as [`VStack`](vstack.md).
+Add this modifier to a view that appears within a [`NavigationStack`](../navigationstack.md) or a sheet, outside of any containers such as [`VStack`](../vstack.md).
 
 ```swift
 struct ContentView: View {
@@ -44,11 +45,12 @@ struct ContentView: View {
 
 ## See Also
 
-- [protocol NavigationTransition](navigationtransition.md)
+### Defining navigation transitions
+- [protocol NavigationTransition](../navigationtransition.md)
   A type that defines the transition to use when navigating to a view.
-- [struct AnyNavigationTransition](anynavigationtransition.md)
+- [struct AnyNavigationTransition](../anynavigationtransition.md)
   A type-erasing navigation transition that allows for providing any navigation transition value dynamically.
-- [struct CrossFadeNavigationTransition](crossfadenavigationtransition.md)
+- [struct CrossFadeNavigationTransition](../crossfadenavigationtransition.md)
   A navigation transition that cross-fades between the appearing view and the disappearing view.
 
 

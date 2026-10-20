@@ -2,6 +2,7 @@
 
 **Framework**: IdentityDocumentServicesUI  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A body containing an identity document scene for each request type the app supports.
@@ -9,7 +10,7 @@ A body containing an identity document scene for each request type the app suppo
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst
 
 ## Declaration
 

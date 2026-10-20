@@ -1,7 +1,8 @@
 # SetFocusFilterIntentError.notFound
 
 **Framework**: App Intents  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ case notFound
 
 ## See Also
 
-- [SetFocusFilterIntentError.missingParameterValue](setfocusfilterintenterror/missingparametervalue.md)
+### Getting the error codes
+- [SetFocusFilterIntentError.missingParameterValue](./missingparametervalue.md)
   An error indicating that the intent has an invalid parameter value.
 
 

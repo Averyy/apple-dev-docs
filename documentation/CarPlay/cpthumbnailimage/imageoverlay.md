@@ -1,7 +1,8 @@
 # imageOverlay
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional overlay for the thumbnail.
 
@@ -14,6 +15,10 @@ An optional overlay for the thumbnail.
 
 ```swift
 var imageOverlay: CPImageOverlay? { get set }
+```
+
+```objc
+@property (nonatomic, strong, nullable) CPImageOverlay * imageOverlay;
 ```
 
 

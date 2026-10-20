@@ -1,7 +1,8 @@
 # FilePath.Component.Kind.currentDirectory
 
 **Framework**: System  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The special directory `.`, representing the current directory.
 

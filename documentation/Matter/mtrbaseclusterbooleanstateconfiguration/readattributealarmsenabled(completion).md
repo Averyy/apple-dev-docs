@@ -1,7 +1,8 @@
 # readAttributeAlarmsEnabled(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeAlarmsEnabled(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeAlarmsEnabled() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeAlarmsEnabledWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

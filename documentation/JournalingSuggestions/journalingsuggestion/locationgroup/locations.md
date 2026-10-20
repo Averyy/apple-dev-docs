@@ -1,7 +1,8 @@
 # locations
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of locations that a particular suggestion refers to.
 

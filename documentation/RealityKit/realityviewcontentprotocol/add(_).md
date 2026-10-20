@@ -1,7 +1,8 @@
 # add(_:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an entity to this content.
 
@@ -21,11 +22,12 @@ func add(_ entity: Entity)
 
 ## See Also
 
-- [func remove(Entity)](realityviewcontentprotocol/remove(_:).md)
+### Managing view content
+- [func remove(Entity)](./remove%28_%29.md)
   Removes an entity from this content, if present.
-- [associatedtype Entities : EntityCollection](realityviewcontentprotocol/entities-swift.associatedtype.md)
+- [associatedtype Entities : EntityCollection](./entities-swift.associatedtype.md)
   The type of collection used for `entities`.
-- [var entities: Self.Entities](realityviewcontentprotocol/entities-swift.property.md)
+- [var entities: Self.Entities](./entities-swift.property.md)
   A collection of RealityKit entities that this view content renders within the scene.
 
 

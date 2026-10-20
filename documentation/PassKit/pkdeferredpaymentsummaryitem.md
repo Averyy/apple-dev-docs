@@ -1,7 +1,8 @@
 # PKDeferredPaymentSummaryItem
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines a summary item for a payment that occurs at a later date, such as a pre-order.
 
@@ -19,27 +20,32 @@ An object that defines a summary item for a payment that occurs at a later date,
 class PKDeferredPaymentSummaryItem
 ```
 
+```objc
+@interface PKDeferredPaymentSummaryItem : PKPaymentSummaryItem
+```
+
 ## Topics
 
 ### Setting the payment date
-- [var deferredDate: Date](pkdeferredpaymentsummaryitem/deferreddate.md)
+- [var deferredDate: Date](./pkdeferredpaymentsummaryitem/deferreddate.md)
   The date, in the future, of the payment.
 
 ## Relationships
 
 ### Inherits From
-- [PKPaymentSummaryItem](pkpaymentsummaryitem.md)
+- [PKPaymentSummaryItem](./pkpaymentsummaryitem.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var deferredBilling: PKDeferredPaymentSummaryItem](pkdeferredpaymentrequest/deferredbilling.md)
+### Setting payment summary items
+- [var deferredBilling: PKDeferredPaymentSummaryItem](./pkdeferredpaymentrequest/deferredbilling.md)
   An object that contains details about the deferred payment.
 
 

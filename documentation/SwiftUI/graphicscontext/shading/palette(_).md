@@ -1,7 +1,8 @@
 # palette(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a multilevel shading instance constructed from an array of shading instances.
 
@@ -30,7 +31,8 @@ A shading instance composed from the given instances.
 
 ## See Also
 
-- [static var backdrop: GraphicsContext.Shading](graphicscontext/shading/backdrop.md)
+### Composite shading types
+- [static var backdrop: GraphicsContext.Shading](./backdrop.md)
   A shading instance that draws a copy of the current background.
 
 

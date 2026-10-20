@@ -1,7 +1,8 @@
 # sign(strategy:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Modifies the format style to use the specified sign display strategy for displaying or omitting sign symbols.
 
@@ -26,7 +27,7 @@ An integer format style modified to use the specified sign display strategy.
 
 #### Discussion
 
-The following example creates a default [`IntegerFormatStyle`](integerformatstyle.md) for the `en_US` locale, and a second style that displays a sign for all values except zero. It then applies each style to an array of integers. The formatting that the modified style applies adds the negative (`-`) or positive (`+`) sign to all the numbers.
+The following example creates a default [`IntegerFormatStyle`](../integerformatstyle.md) for the `en_US` locale, and a second style that displays a sign for all values except zero. It then applies each style to an array of integers. The formatting that the modified style applies adds the negative (`-`) or positive (`+`) sign to all the numbers.
 
 ```swift
 let defaultStyle = IntegerFormatStyle<Int>(locale: Locale(identifier: "en_US"))
@@ -38,25 +39,26 @@ let alwaysNums = nums.map { alwaysStyle.format($0) } // ["-2", "-1", "0", "+1", 
 
 ## Parameters
 
-- `strategy`: The sign display strategy to apply to the format style, such as [`automatic`](numberformatstyleconfiguration/signdisplaystrategy/automatic.md) or [`never`](numberformatstyleconfiguration/signdisplaystrategy/never.md).
+- `strategy`: The sign display strategy to apply to the format style, such as [`automatic`](../numberformatstyleconfiguration/signdisplaystrategy/automatic.md) or [`never`](../numberformatstyleconfiguration/signdisplaystrategy/never.md).
 
 ## See Also
 
-- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>](integerformatstyle/decimalseparator(strategy:).md)
+### Customizing style behavior
+- [func decimalSeparator(strategy: IntegerFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> IntegerFormatStyle<Value>](./decimalseparator%28strategy%29.md)
   Modifies the format style to use the specified decimal separator display strategy.
-- [func grouping(IntegerFormatStyle<Value>.Configuration.Grouping) -> IntegerFormatStyle<Value>](integerformatstyle/grouping(_:).md)
+- [func grouping(IntegerFormatStyle<Value>.Configuration.Grouping) -> IntegerFormatStyle<Value>](./grouping%28_%29.md)
   Modifies the format style to use the specified grouping.
-- [func notation(IntegerFormatStyle<Value>.Configuration.Notation) -> IntegerFormatStyle<Value>](integerformatstyle/notation(_:).md)
+- [func notation(IntegerFormatStyle<Value>.Configuration.Notation) -> IntegerFormatStyle<Value>](./notation%28_%29.md)
   Modifies the format style to use the specified notation.
-- [func precision(IntegerFormatStyle<Value>.Configuration.Precision) -> IntegerFormatStyle<Value>](integerformatstyle/precision(_:).md)
+- [func precision(IntegerFormatStyle<Value>.Configuration.Precision) -> IntegerFormatStyle<Value>](./precision%28_%29.md)
   Modifies the format style to use the specified precision.
-- [func rounded(rule: IntegerFormatStyle<Value>.Configuration.RoundingRule, increment: Int?) -> IntegerFormatStyle<Value>](integerformatstyle/rounded(rule:increment:).md)
+- [func rounded(rule: IntegerFormatStyle<Value>.Configuration.RoundingRule, increment: Int?) -> IntegerFormatStyle<Value>](./rounded%28rule,increment%29.md)
   Modifies the format style to use the specified rounding rule and increment.
-- [func scale(Double) -> IntegerFormatStyle<Value>](integerformatstyle/scale(_:).md)
+- [func scale(Double) -> IntegerFormatStyle<Value>](./scale%28_%29.md)
   Modifies the format style to use the specified scale.
-- [IntegerFormatStyle.Configuration](integerformatstyle/configuration.md)
+- [IntegerFormatStyle.Configuration](./configuration.md)
   The type the format style uses for configuration settings.
-- [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
+- [enum NumberFormatStyleConfiguration](../numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
 
 

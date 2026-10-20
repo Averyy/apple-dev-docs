@@ -1,10 +1,11 @@
 # kAUNetReceiveProperty_Hostname
 
 **Framework**: Audio Toolbox  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,9 +13,14 @@
 var kAUNetReceiveProperty_Hostname: AudioUnitPropertyID { get }
 ```
 
+```c
+kAUNetReceiveProperty_Hostname
+```
+
 ## See Also
 
-- [var kAUNetReceiveProperty_Password: AudioUnitPropertyID](kaunetreceiveproperty_password.md)
+### Constants
+- [var kAUNetReceiveProperty_Password: AudioUnitPropertyID](./kaunetreceiveproperty_password.md)
 
 
 ---

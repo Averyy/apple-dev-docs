@@ -1,7 +1,8 @@
 # bufferRange
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The range in the buffer, in tiles.
 
@@ -17,6 +18,10 @@ The range in the buffer, in tiles.
 
 ```swift
 var bufferRange: NSRange
+```
+
+```c
+NSRange bufferRange;
 ```
 
 

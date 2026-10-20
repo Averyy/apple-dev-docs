@@ -1,7 +1,8 @@
 # kCGImagePropertyOpenEXRCompression
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 let kCGImagePropertyOpenEXRCompression: CFString
+```
+
+```c
+extern CFStringRef const kCGImagePropertyOpenEXRCompression;
 ```
 
 

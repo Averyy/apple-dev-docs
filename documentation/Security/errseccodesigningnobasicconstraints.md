@@ -1,7 +1,8 @@
 # errSecCodeSigningNoBasicConstraints
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Code signing found no basic constraints.
 
@@ -18,6 +19,10 @@ Code signing found no basic constraints.
 
 ```swift
 var errSecCodeSigningNoBasicConstraints: OSStatus { get }
+```
+
+```c
+errSecCodeSigningNoBasicConstraints
 ```
 
 

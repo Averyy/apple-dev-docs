@@ -1,7 +1,8 @@
 # isParametricImmersive(asset:)
 
 **Framework**: Immersive Media Support  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Checks asynchronously whether the asset is already in the parametric immersive format.
 

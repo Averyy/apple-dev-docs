@@ -1,7 +1,8 @@
 # Text.Case
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A scheme for transforming the capitalization of characters within text.
 
@@ -23,50 +24,51 @@ enum Case
 ## Topics
 
 ### Getting text cases
-- [Text.Case.lowercase](text/case/lowercase.md)
+- [Text.Case.lowercase](./case/lowercase.md)
   Displays text in all lowercase characters.
-- [Text.Case.uppercase](text/case/uppercase.md)
+- [Text.Case.uppercase](./case/uppercase.md)
   Displays text in all uppercase characters.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func foregroundStyle<S>(S) -> Text](text/foregroundstyle(_:).md)
+### Styling the view’s text
+- [func foregroundStyle<S>(S) -> Text](./foregroundstyle%28_%29.md)
   Sets the style of the text displayed by this view.
-- [func bold() -> Text](text/bold.md)
+- [func bold() -> Text](./bold%28%29.md)
   Applies a bold or emphasized treatment to the fonts of the text.
-- [func bold(Bool) -> Text](text/bold(_:).md)
+- [func bold(Bool) -> Text](./bold%28_%29.md)
   Applies a bold font weight to the text.
-- [func italic() -> Text](text/italic.md)
+- [func italic() -> Text](./italic%28%29.md)
   Applies italics to the text.
-- [func italic(Bool) -> Text](text/italic(_:).md)
+- [func italic(Bool) -> Text](./italic%28_%29.md)
   Applies italics to the text.
-- [func strikethrough(Bool, color: Color?) -> Text](text/strikethrough(_:color:).md)
+- [func strikethrough(Bool, color: Color?) -> Text](./strikethrough%28_,color%29.md)
   Applies a strikethrough to the text.
-- [func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> Text](text/strikethrough(_:pattern:color:).md)
+- [func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> Text](./strikethrough%28_,pattern,color%29.md)
   Applies a strikethrough to the text.
-- [func underline(Bool, color: Color?) -> Text](text/underline(_:color:).md)
+- [func underline(Bool, color: Color?) -> Text](./underline%28_,color%29.md)
   Applies an underline to the text.
-- [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> Text](text/underline(_:pattern:color:).md)
+- [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> Text](./underline%28_,pattern,color%29.md)
   Applies an underline to the text.
-- [func monospaced(Bool) -> Text](text/monospaced(_:).md)
+- [func monospaced(Bool) -> Text](./monospaced%28_%29.md)
   Modifies the font of the text to use the fixed-width variant of the current font, if possible.
-- [func monospacedDigit() -> Text](text/monospaceddigit.md)
+- [func monospacedDigit() -> Text](./monospaceddigit%28%29.md)
   Modifies the text view’s font to use fixed-width digits, while leaving other characters proportionally spaced.
-- [func kerning(CGFloat) -> Text](text/kerning(_:).md)
+- [func kerning(CGFloat) -> Text](./kerning%28_%29.md)
   Sets the spacing, or kerning, between characters.
-- [func tracking(CGFloat) -> Text](text/tracking(_:).md)
+- [func tracking(CGFloat) -> Text](./tracking%28_%29.md)
   Sets the tracking for the text.
-- [func baselineOffset(CGFloat) -> Text](text/baselineoffset(_:).md)
+- [func baselineOffset(CGFloat) -> Text](./baselineoffset%28_%29.md)
   Sets the vertical offset for the text relative to its baseline.
-- [struct DateStyle](text/datestyle.md)
+- [struct DateStyle](./datestyle.md)
   A predefined style used to display a `Date`.
 
 

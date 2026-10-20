@@ -1,7 +1,8 @@
 # NWConnectionGroup.Message
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a message that you send or receive within a group, and that contains protocol metadata and send properties.
 
@@ -23,40 +24,41 @@ class Message
 ## Topics
 
 ### Inspecting Received Messages
-- [var remoteEndpoint: NWEndpoint?](nwconnectiongroup/message/remoteendpoint.md)
+- [var remoteEndpoint: NWEndpoint?](./message/remoteendpoint.md)
   The endpoint that originates the message you receive.
-- [var localEndpoint: NWEndpoint?](nwconnectiongroup/message/localendpoint.md)
+- [var localEndpoint: NWEndpoint?](./message/localendpoint.md)
   The local address and port you use to receive the message.
-- [var path: NWPath?](nwconnectiongroup/message/path.md)
+- [var path: NWPath?](./message/path.md)
   The network path on which you receive the message.
 ### Replying to Received Messages
-- [func reply(content: Data?, message: NWConnectionGroup.Message)](nwconnectiongroup/message/reply(content:message:).md)
+- [func reply(content: Data?, message: NWConnectionGroup.Message)](./message/reply%28content,message%29.md)
   Sends a reply to the specific endpoint that originates a group message you receive.
-- [func extractConnection() -> NWConnection?](nwconnectiongroup/message/extractconnection.md)
+- [func extractConnection() -> NWConnection?](./message/extractconnection%28%29.md)
   Converts a message you receive from an endpoint into a connection object that you use for long-term communication with that endpoint.
 ### Sending Messages
-- [static let `default`: NWConnectionGroup.Message](nwconnectiongroup/message/default.md)
+- [static let `default`: NWConnectionGroup.Message](./message/default.md)
   A static object you use to send a message with default properties.
-- [init(identifier: String, expiration: UInt64, priority: Double, isFinal: Bool, antecedent: NWConnection.ContentContext?, metadata: [NWProtocolMetadata]?)](nwconnectiongroup/message/init(identifier:expiration:priority:isfinal:antecedent:metadata:).md)
+- [init(identifier: String, expiration: UInt64, priority: Double, isFinal: Bool, antecedent: NWConnection.ContentContext?, metadata: [NWProtocolMetadata]?)](./message/init%28identifier,expiration,priority,isfinal,antecedent,metadata%29.md)
   Initializes a custom message context you use to send data.
 ### Initializers
-- [init(nw: nw_content_context_t)](nwconnectiongroup/message/init(nw:).md)
+- [init(nw: nw_content_context_t)](./message/init%28nw%29.md)
 ### Instance Methods
-- [func metadata(definition: NWProtocolDefinition) -> NWProtocolMetadata?](nwconnectiongroup/message/metadata(definition:).md)
+- [func metadata(definition: NWProtocolDefinition) -> NWProtocolMetadata?](./message/metadata%28definition%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NWConnection.ContentContext](nwconnection/contentcontext.md)
+- [NWConnection.ContentContext](../nwconnection/contentcontext.md)
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func setReceiveHandler(maximumMessageSize: Int, rejectOversizedMessages: Bool, handler: ((NWConnectionGroup.Message, Data?, Bool) -> Void)?)](nwconnectiongroup/setreceivehandler(maximummessagesize:rejectoversizedmessages:handler:).md)
+### Sending and Receiving Group Messages
+- [func setReceiveHandler(maximumMessageSize: Int, rejectOversizedMessages: Bool, handler: ((NWConnectionGroup.Message, Data?, Bool) -> Void)?)](./setreceivehandler%28maximummessagesize,rejectoversizedmessages,handler%29.md)
   Sets a handler that receives inbound messages from members of the group.
-- [func send(content: Data?, to: NWEndpoint?, message: NWConnectionGroup.Message, completion: (NWError?) -> Void)](nwconnectiongroup/send(content:to:message:completion:).md)
+- [func send(content: Data?, to: NWEndpoint?, message: NWConnectionGroup.Message, completion: (NWError?) -> Void)](./send%28content,to,message,completion%29.md)
   Sends data to the entire group, or to a specific member of the group.
 
 

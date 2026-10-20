@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Writes data to the virtual graphics device’s memory-mapped I/O region.
@@ -16,6 +17,10 @@ Writes data to the virtual graphics device’s memory-mapped I/O region.
 func mmioWrite(atOffset offset: Int, value: UInt32)
 ```
 
+```objc
+- (void) mmioWriteAtOffset:(size_t) offset value:(uint32_t) value;
+```
+
 #### Discussion
 
 Call this method whenever the guest virtual machine writes to the graphics device’s memory-mapped I/O region.
@@ -27,7 +32,8 @@ Call this method whenever the guest virtual machine writes to the graphics devic
 
 ## See Also
 
-- [func mmioRead(atOffset: Int) -> UInt32](pgdevice/mmioread(atoffset:).md)
+### Handling Memory-Mapped I/O
+- [func mmioRead(atOffset: Int) -> UInt32](./mmioread%28atoffset%29.md)
   Reads data from the virtual graphics device’s memory-mapped I/O region.
 
 

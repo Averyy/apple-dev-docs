@@ -1,7 +1,8 @@
 # IOFreeContiguous
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Deprecated - use IOBufferMemoryDescriptor. Frees memory allocated with IOMallocContiguous.
 
@@ -10,7 +11,7 @@ Deprecated - use IOBufferMemoryDescriptor. Frees memory allocated with IOMallocC
 
 ## Declaration
 
-```swift
+```c
 void IOFreeContiguous(void *address, vm_size_t size);
 ```
 

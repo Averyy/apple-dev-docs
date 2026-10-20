@@ -1,7 +1,8 @@
 # CXTranslationEngine
 
 **Framework**: CallKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the translation engine that provided a translation.
 
@@ -16,25 +17,29 @@ Values that describe the translation engine that provided a translation.
 enum CXTranslationEngine
 ```
 
+```c
+enum CXTranslationEngine : NSInteger;
+```
+
 ## Topics
 
 ### Types
-- [CXTranslationEngine.default](cxtranslationengine/default.md)
+- [CXTranslationEngine.default](./cxtranslationengine/default.md)
   The translation was provided by the system’s default translation engine.
 ### Enumeration Cases
-- [CXTranslationEngine.custom](cxtranslationengine/custom.md)
+- [CXTranslationEngine.custom](./cxtranslationengine/custom.md)
 ### Initializers
-- [init?(rawValue: Int)](cxtranslationengine/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cxtranslationengine/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

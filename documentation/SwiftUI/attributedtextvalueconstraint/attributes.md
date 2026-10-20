@@ -1,7 +1,8 @@
 # AttributedTextValueConstraint.Attributes
 
 **Framework**: SwiftUI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A proxy type for a container of partially constrained attributes.
 

@@ -1,7 +1,8 @@
 # kCMTextMarkupCharacterEdgeStyle_None
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No edge style.
 
@@ -20,15 +21,20 @@ No edge style.
 let kCMTextMarkupCharacterEdgeStyle_None: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextMarkupCharacterEdgeStyle_None;
+```
+
 ## See Also
 
-- [let kCMTextMarkupCharacterEdgeStyle_Raised: CFString](kcmtextmarkupcharacteredgestyle_raised.md)
+### Edge Styles
+- [let kCMTextMarkupCharacterEdgeStyle_Raised: CFString](./kcmtextmarkupcharacteredgestyle_raised.md)
   A raised edge style.
-- [let kCMTextMarkupCharacterEdgeStyle_Depressed: CFString](kcmtextmarkupcharacteredgestyle_depressed.md)
+- [let kCMTextMarkupCharacterEdgeStyle_Depressed: CFString](./kcmtextmarkupcharacteredgestyle_depressed.md)
   A depressed edge style.
-- [let kCMTextMarkupCharacterEdgeStyle_Uniform: CFString](kcmtextmarkupcharacteredgestyle_uniform.md)
+- [let kCMTextMarkupCharacterEdgeStyle_Uniform: CFString](./kcmtextmarkupcharacteredgestyle_uniform.md)
   A uniform border style.
-- [let kCMTextMarkupCharacterEdgeStyle_DropShadow: CFString](kcmtextmarkupcharacteredgestyle_dropshadow.md)
+- [let kCMTextMarkupCharacterEdgeStyle_DropShadow: CFString](./kcmtextmarkupcharacteredgestyle_dropshadow.md)
   A drop shadow style.
 
 

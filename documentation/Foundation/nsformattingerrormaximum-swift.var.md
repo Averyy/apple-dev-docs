@@ -1,7 +1,8 @@
 # NSFormattingErrorMaximum
 
 **Framework**: Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The end of the range of error codes reserved for formatting errors.
 
@@ -22,9 +23,10 @@ var NSFormattingErrorMaximum: Int { get }
 
 ## See Also
 
-- [var NSFormattingErrorMinimum: Int](nsformattingerrorminimum-swift.var.md)
+### Formatting Errors
+- [var NSFormattingErrorMinimum: Int](./nsformattingerrorminimum-swift.var.md)
   The start of the range of error codes reserved for formatting errors.
-- [var NSFormattingError: Int](nsformattingerror-swift.var.md)
+- [var NSFormattingError: Int](./nsformattingerror-swift.var.md)
   A formatter couldn’t generate a string for an object, or parse a string into an object.
 
 

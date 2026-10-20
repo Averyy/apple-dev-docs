@@ -1,7 +1,8 @@
 # removeFirst()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes and returns the first element of the collection.
 
@@ -21,6 +22,8 @@ Removes and returns the first element of the collection.
 mutating func removeFirst() -> Self.Element
 ```
 
+Available when `Self` is `Self.SubSequence`.
+
 #### Return Value
 
 The first element of the collection.
@@ -29,7 +32,7 @@ The first element of the collection.
 
 The collection must not be empty.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 
 ---

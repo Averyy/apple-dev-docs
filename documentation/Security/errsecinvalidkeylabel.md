@@ -1,7 +1,8 @@
 # errSecInvalidKeyLabel
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key label is not valid.
 
@@ -18,6 +19,10 @@ The key label is not valid.
 
 ```swift
 var errSecInvalidKeyLabel: OSStatus { get }
+```
+
+```c
+errSecInvalidKeyLabel
 ```
 
 

@@ -1,7 +1,8 @@
 # init(itemsAt:options:)
 
 **Framework**: Quick Look  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview scene configuration.
 
@@ -14,6 +15,10 @@ Creates a preview scene configuration.
 
 ```swift
 init(itemsAt urls: [URL], options: QLPreviewSceneActivationConfiguration.Options?)
+```
+
+```objc
+- (instancetype) initWithItemsAtURLs:(NSArray<NSURL *> *) urls options:(QLPreviewSceneOptions *) options;
 ```
 
 ## Parameters

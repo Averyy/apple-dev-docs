@@ -1,7 +1,8 @@
 # videoPath
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The filesystem path to the movie to be loaded by the video editor.
 
@@ -17,11 +18,16 @@ The filesystem path to the movie to be loaded by the video editor.
 var videoPath: String { get set }
 ```
 
+```objc
+@property (nonatomic, copy) NSString * videoPath;
+```
+
 ## See Also
 
-- [var videoMaximumDuration: TimeInterval](uivideoeditorcontroller/videomaximumduration.md)
+### Configuring the editor
+- [var videoMaximumDuration: TimeInterval](./videomaximumduration.md)
   The maximum duration, in seconds, permitted for trimmed movies saved by the video editor.
-- [var videoQuality: UIImagePickerController.QualityType](uivideoeditorcontroller/videoquality.md)
+- [var videoQuality: UIImagePickerController.QualityType](./videoquality.md)
   The video quality to use when saving a trimmed movie.
 
 

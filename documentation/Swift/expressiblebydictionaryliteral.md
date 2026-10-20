@@ -1,7 +1,8 @@
 # ExpressibleByDictionaryLiteral
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be initialized using a dictionary literal.
 
@@ -45,7 +46,7 @@ print(frequencies.count)
 
 > **Note**:  A dictionary literal is *not* the same as an instance of `Dictionary`. You can’t initialize a type that conforms to `ExpressibleByDictionaryLiteral` simply by assigning an instance of `Dictionary`, `KeyValuePairs`, or similar.
 
-### Conforming to the Expressiblebydictionaryliteral Protocol
+### Conforming to the ExpressibleByDictionaryLiteral Protocol
 
 To add the capability to be initialized with a dictionary literal to your own custom types, declare an `init(dictionaryLiteral:)` initializer. The following example shows the dictionary literal initializer for a hypothetical `CountedSet` type, which uses setlike semantics while keeping track of the count for duplicate elements:
 
@@ -75,23 +76,24 @@ extension CountedSet: ExpressibleByDictionaryLiteral {
 ## Topics
 
 ### Associated Types
-- [associatedtype Key](expressiblebydictionaryliteral/key.md)
+- [associatedtype Key](./expressiblebydictionaryliteral/key.md)
   The key type of a dictionary literal.
-- [associatedtype Value](expressiblebydictionaryliteral/value.md)
+- [associatedtype Value](./expressiblebydictionaryliteral/value.md)
   The value type of a dictionary literal.
 ### Initializers
-- [init(dictionaryLiteral: (Self.Key, Self.Value)...)](expressiblebydictionaryliteral/init(dictionaryliteral:).md)
+- [init(dictionaryLiteral: (Self.Key, Self.Value)...)](./expressiblebydictionaryliteral/init%28dictionaryliteral%29.md)
   Creates an instance initialized with the given key-value pairs.
 
 ## Relationships
 
 ### Conforming Types
-- [Dictionary](dictionary.md)
-- [KeyValuePairs](keyvaluepairs.md)
+- [Dictionary](./dictionary.md)
+- [KeyValuePairs](./keyvaluepairs.md)
 
 ## See Also
 
-- [protocol ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
+### Collection Literals
+- [protocol ExpressibleByArrayLiteral](./expressiblebyarrayliteral.md)
   A type that can be initialized using an array literal.
 
 

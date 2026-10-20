@@ -1,7 +1,8 @@
 # regular
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The regular variant of the Liquid Glass material.
 
@@ -21,7 +22,7 @@ static var regular: Glass { get }
 
 ## Mentions
 
-- [Applying Liquid Glass to custom views](applying-liquid-glass-to-custom-views.md)
+- [Applying Liquid Glass to custom views](../applying-liquid-glass-to-custom-views.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A labeled content style that resolves its appearance automatically based on the current context.
 
@@ -20,6 +21,8 @@ A labeled content style that resolves its appearance automatically based on the 
 @MainActor
 @preconcurrency static var automatic: AutomaticLabeledContentStyle { get }
 ```
+
+Available when `Self` is `AutomaticLabeledContentStyle`.
 
 
 ---

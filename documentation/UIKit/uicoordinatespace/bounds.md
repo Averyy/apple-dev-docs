@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The bounds rectangle describing the item’s location and size in its own coordinate system.
@@ -9,13 +10,17 @@ The bounds rectangle describing the item’s location and size in its own coordi
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var bounds: CGRect { get }
+```
+
+```objc
+@property (nonatomic, readonly) CGRect bounds;
 ```
 
 #### Discussion

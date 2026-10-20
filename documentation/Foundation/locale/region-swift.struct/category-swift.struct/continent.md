@@ -1,7 +1,8 @@
 # continent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Category representing a continent, regions contained directly by world.
 

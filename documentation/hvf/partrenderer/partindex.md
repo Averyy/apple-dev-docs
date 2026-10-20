@@ -1,7 +1,8 @@
 # partIndex
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of the part to be rendered. Setting this resets the parameters property to default values (an empty part parameter tree). Any previously captured PartParameters or AxisValues are invalid.
 

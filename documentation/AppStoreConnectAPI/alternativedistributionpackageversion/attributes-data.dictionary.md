@@ -1,7 +1,8 @@
 # AlternativeDistributionPackageVersion.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an alternative distribution package version resource.
 
@@ -10,21 +11,22 @@ Attributes that describe an alternative distribution package version resource.
 
 ## Declaration
 
-```swift
+```
 object AlternativeDistributionPackageVersion.Attributes
 ```
 
 ## Properties
 
 - `fileChecksum` (string)
-- `state` (string)
+- `state` (string): **Allowed Values**: `COMPLETED`, `REPLACED`
 - `url` (uri)
 - `urlExpirationDate` (date-time)
 - `version` (string)
 
 ## See Also
 
-- [object AlternativeDistributionPackageVersion.Relationships](alternativedistributionpackageversion/relationships-data.dictionary.md)
+### Objects
+- [object AlternativeDistributionPackageVersion.Relationships](./relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 
 

@@ -1,7 +1,8 @@
 # AutoreleasingUnsafeMutablePointer
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A mutable pointer addressing an Objective-C reference that doesn’t own its target.
 
@@ -23,7 +24,7 @@ struct AutoreleasingUnsafeMutablePointer<Pointee>
 
 ## Mentions
 
-- [Using Imported C Functions in Swift](using-imported-c-functions-in-swift.md)
+- [Using Imported C Functions in Swift](./using-imported-c-functions-in-swift.md)
 
 #### Overview
 
@@ -42,48 +43,49 @@ This type does not carry an owner pointer unlike the other C*Pointer types becau
 ## Topics
 
 ### Converting Pointers
-- [init?<U>(UnsafeMutablePointer<U>?)](autoreleasingunsafemutablepointer/init(_:)-7rndr.md)
+- [init?<U>(UnsafeMutablePointer<U>?)](./autoreleasingunsafemutablepointer/init%28_%29-7rndr.md)
   Explicit construction from an UnsafeMutablePointer.
-- [init<U>(UnsafeMutablePointer<U>)](autoreleasingunsafemutablepointer/init(_:)-4mrz1.md)
+- [init<U>(UnsafeMutablePointer<U>)](./autoreleasingunsafemutablepointer/init%28_%29-4mrz1.md)
   Explicit construction from an UnsafeMutablePointer.
 ### Accessing a Pointer’s Memory
-- [var pointee: Pointee](autoreleasingunsafemutablepointer/pointee.md)
+- [var pointee: Pointee](./autoreleasingunsafemutablepointer/pointee.md)
   Retrieve or set the `Pointee` instance referenced by `self`.
-- [subscript(Int) -> Pointee](autoreleasingunsafemutablepointer/subscript(_:).md)
+- [subscript(Int) -> Pointee](./autoreleasingunsafemutablepointer/subscript%28_%29.md)
   Access the `i`th element of the raw array pointed to by `self`.
 ### Comparing Pointers
-- [static func == (Self, Self) -> Bool](autoreleasingunsafemutablepointer/==(_:_:)-4wfti.md)
+- [static func == (Self, Self) -> Bool](./autoreleasingunsafemutablepointer/eqeq%28_,_%29-4wfti.md)
   Returns a Boolean value indicating whether two values are equal.
 ### Instance Properties
-- [var hashValue: Int](autoreleasingunsafemutablepointer/hashvalue.md)
+- [var hashValue: Int](./autoreleasingunsafemutablepointer/hashvalue.md)
   The hash value.
 ### Type Aliases
-- [AutoreleasingUnsafeMutablePointer.Stride](autoreleasingunsafemutablepointer/stride.md)
+- [AutoreleasingUnsafeMutablePointer.Stride](./autoreleasingunsafemutablepointer/stride.md)
   A type that represents the distance between two values.
 ### Default Implementations
-- [Comparable Implementations](autoreleasingunsafemutablepointer/comparable-implementations.md)
-- [CustomReflectable Implementations](autoreleasingunsafemutablepointer/customreflectable-implementations.md)
-- [Equatable Implementations](autoreleasingunsafemutablepointer/equatable-implementations.md)
-- [Hashable Implementations](autoreleasingunsafemutablepointer/hashable-implementations.md)
-- [Strideable Implementations](autoreleasingunsafemutablepointer/strideable-implementations.md)
+- [Comparable Implementations](./autoreleasingunsafemutablepointer/comparable-implementations.md)
+- [CustomReflectable Implementations](./autoreleasingunsafemutablepointer/customreflectable-implementations.md)
+- [Equatable Implementations](./autoreleasingunsafemutablepointer/equatable-implementations.md)
+- [Hashable Implementations](./autoreleasingunsafemutablepointer/hashable-implementations.md)
+- [Strideable Implementations](./autoreleasingunsafemutablepointer/strideable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](bitwisecopyable.md)
-- [CVarArg](cvararg.md)
-- [Comparable](comparable.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [Hashable](hashable.md)
-- [Strideable](strideable.md)
+- [BitwiseCopyable](./bitwisecopyable.md)
+- [CVarArg](./cvararg.md)
+- [Comparable](./comparable.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [Hashable](./hashable.md)
+- [Strideable](./strideable.md)
 
 ## See Also
 
-- [struct OpaquePointer](opaquepointer.md)
+### C and Objective-C Pointers
+- [struct OpaquePointer](./opaquepointer.md)
   A wrapper around an opaque C pointer.
 
 

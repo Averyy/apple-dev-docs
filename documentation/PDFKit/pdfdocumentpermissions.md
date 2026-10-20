@@ -1,7 +1,8 @@
 # PDFDocumentPermissions
 
 **Framework**: PDFKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration that specifies document permissions status.
 
@@ -19,33 +20,38 @@ An enumeration that specifies document permissions status.
 enum PDFDocumentPermissions
 ```
 
+```c
+enum PDFDocumentPermissions : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [PDFDocumentPermissions.none](pdfdocumentpermissions/none.md)
+- [PDFDocumentPermissions.none](./pdfdocumentpermissions/none.md)
   The status that indicates no document permissions.
-- [PDFDocumentPermissions.user](pdfdocumentpermissions/user.md)
+- [PDFDocumentPermissions.user](./pdfdocumentpermissions/user.md)
   The status that indicates user document permissions.
-- [PDFDocumentPermissions.owner](pdfdocumentpermissions/owner.md)
+- [PDFDocumentPermissions.owner](./pdfdocumentpermissions/owner.md)
   The status that indicates owner document permissions.
 ### Initializers
-- [init?(rawValue: Int)](pdfdocumentpermissions/init(rawvalue:).md)
+- [init?(rawValue: Int)](./pdfdocumentpermissions/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct PDFDocumentAttribute](pdfdocumentattribute.md)
+### Constants
+- [struct PDFDocumentAttribute](./pdfdocumentattribute.md)
   A structure that specifies document attributes.
-- [struct PDFDocumentWriteOption](pdfdocumentwriteoption.md)
+- [struct PDFDocumentWriteOption](./pdfdocumentwriteoption.md)
   A structure that specifies file writing options for a document.
 
 

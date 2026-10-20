@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct newah {
     ...
 };
@@ -17,11 +17,11 @@ struct newah {
 ## Topics
 
 ### Instance Properties
-- [ah_len](newah/1417627-ah_len.md)
-- [ah_nxt](newah/1417625-ah_nxt.md)
-- [ah_reserve](newah/1417612-ah_reserve.md)
-- [ah_seq](newah/1417622-ah_seq.md)
-- [ah_spi](newah/1417620-ah_spi.md)
+- [ah_len](./newah/api-1417627-ah_len.md)
+- [ah_nxt](./newah/api-1417625-ah_nxt.md)
+- [ah_reserve](./newah/api-1417612-ah_reserve.md)
+- [ah_seq](./newah/api-1417622-ah_seq.md)
+- [ah_spi](./newah/api-1417620-ah_spi.md)
 
 
 ---

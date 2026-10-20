@@ -1,7 +1,8 @@
 # NSTypeIdentifierDateText
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 8.0+
@@ -15,15 +16,20 @@
 let NSTypeIdentifierDateText: String
 ```
 
+```c
+extern NSString * const NSTypeIdentifierDateText;
+```
+
 #### Discussion
 
-UTI subtype for [`date`](https://developer.apple.com/documentation/foundation/nstextcheckingresult/date), `com.apple.structured-text.date`.
+UTI subtype for [`date`](../Foundation/nstextcheckingresult/date.md), `com.apple.structured-text.date`.
 
 ## See Also
 
-- [let NSTypeIdentifierAddressText: String](nstypeidentifieraddresstext.md)
-- [let NSTypeIdentifierPhoneNumberText: String](nstypeidentifierphonenumbertext.md)
-- [let NSTypeIdentifierTransitInformationText: String](nstypeidentifiertransitinformationtext.md)
+### UTI Subtypes for Data Detector Types
+- [let NSTypeIdentifierAddressText: String](./nstypeidentifieraddresstext.md)
+- [let NSTypeIdentifierPhoneNumberText: String](./nstypeidentifierphonenumbertext.md)
+- [let NSTypeIdentifierTransitInformationText: String](./nstypeidentifiertransitinformationtext.md)
 
 
 ---

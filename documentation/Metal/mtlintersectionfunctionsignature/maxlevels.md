@@ -1,7 +1,8 @@
 # maxLevels
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 17.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var maxLevels: MTLIntersectionFunctionSignature { get }
+```
+
+```c
+MTLIntersectionFunctionSignatureMaxLevels
 ```
 
 

@@ -1,7 +1,8 @@
 # NSExtensionManagement
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Profile
 
 The payload that configures the extensions that the system allows or disallows to run on the device.
 
@@ -10,7 +11,7 @@ The payload that configures the extensions that the system allows or disallows t
 
 ## Declaration
 
-```swift
+```
 object NSExtensionManagement
 ```
 
@@ -22,7 +23,7 @@ You can manage extensions by bundle identifiers in allow and deny lists, or by a
 
 You can also start with all public extensions disallowed. To do so, include `AllPublicExtensionPoints` in `DeniedExtensionPoints`. This causes the system to expand the list to include all extensions that belong to any public extension points. This expansion occurs at evaluation time. The list of extension points can change from release to release. The expanded list disallows Apple and third-party extensions, but still allows extensions that belong to system-critcial extension points to execute.
 
-##### Profile Availability
+##### Profile availability
 
 |  |  |
 | --- | --- |
@@ -34,7 +35,7 @@ You can also start with all public extensions disallowed. To do so, include `All
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile Example
+##### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>
@@ -88,11 +89,12 @@ You can also start with all public extensions disallowed. To do so, include `All
 
 ## See Also
 
-- [object AppLock](applock.md)
+### App management
+- [object AppLock](./applock.md)
   The payload that configures a device to run a single app.
-- [object AssociatedDomains](associateddomains.md)
+- [object AssociatedDomains](./associateddomains.md)
   The payload that configures associated domains.
-- [object AutonomousSingleAppMode](autonomoussingleappmode.md)
+- [object AutonomousSingleAppMode](./autonomoussingleappmode.md)
   The payload that configures Autonomous Single App mode.
 
 

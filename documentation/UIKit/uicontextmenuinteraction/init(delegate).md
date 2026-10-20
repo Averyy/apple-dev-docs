@@ -1,7 +1,8 @@
 # init(delegate:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a context menu interaction object with the specified delegate object.
 
@@ -18,19 +19,24 @@ Creates a context menu interaction object with the specified delegate object.
 init(delegate: any UIContextMenuInteractionDelegate)
 ```
 
+```objc
+- (instancetype) initWithDelegate:(id<UIContextMenuInteractionDelegate>) delegate;
+```
+
 #### Return Value
 
 A new context menu interaction object with the associated delegate.
 
 ## Parameters
 
-- `delegate`: The object that provides the contextual menu and responds to other interaction-related events. This object must adopt the [`UIContextMenuInteractionDelegate`](uicontextmenuinteractiondelegate.md) protocol.
+- `delegate`: The object that provides the contextual menu and responds to other interaction-related events. This object must adopt the [`UIContextMenuInteractionDelegate`](../uicontextmenuinteractiondelegate.md) protocol.
 
 ## See Also
 
-- [Adding context menus in your app](adding-context-menus-in-your-app.md)
+### Creating a context menu interaction object
+- [Adding context menus in your app](../adding-context-menus-in-your-app.md)
   Provide quick access to useful actions by adding context menus to your iOS app.
-- [Adding menus and shortcuts to the menu bar and user interface](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
+- [Adding menus and shortcuts to the menu bar and user interface](../adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md)
   Provide quick access to useful actions by adding menus and keyboard shortcuts to your Mac app built with Mac Catalyst.
 
 

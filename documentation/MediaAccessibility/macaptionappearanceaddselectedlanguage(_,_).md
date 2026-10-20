@@ -1,7 +1,8 @@
 # MACaptionAppearanceAddSelectedLanguage(_:_:)
 
 **Framework**: Media Accessibility  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a preference for caption language to the stack of languages.
 
@@ -19,13 +20,17 @@ Adds a preference for caption language to the stack of languages.
 func MACaptionAppearanceAddSelectedLanguage(_ domain: MACaptionAppearanceDomain, _ language: CFString) -> Bool
 ```
 
+```c
+extern bool MACaptionAppearanceAddSelectedLanguage(MACaptionAppearanceDomain domain, CFStringRef language);
+```
+
 #### Return Value
 
 Returns `true` if addition was successful; `false` if an error occurred. Errors are most likely the result of invalid language codes.
 
 #### Discussion
 
-The added language will appear in the array returned by [`MACaptionAppearanceCopySelectedLanguages(_:)`](macaptionappearancecopyselectedlanguages(_:).md). Call the `MACaptionAppearanceAddSelectedLanguage` function anytime a user selects a specific captioning language from a pop-up menu or other UI affordance. For example, an AVFoundation client may execute the following code:
+The added language will appear in the array returned by [`MACaptionAppearanceCopySelectedLanguages(_:)`](./macaptionappearancecopyselectedlanguages%28_%29.md). Call the `MACaptionAppearanceAddSelectedLanguage` function anytime a user selects a specific captioning language from a pop-up menu or other UI affordance. For example, an AVFoundation client may execute the following code:
 
 ```objc
  // in response to a user selection, make the selection effective
@@ -37,12 +42,13 @@ MACaptionAppearanceAddSelectedLanguage(kMACaptionAppearanceDomainUser, (CFString
 
 ## Parameters
 
-- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
-- `language`: A canonical language identifier (see [`CFLocale`](https://developer.apple.com/documentation/corefoundation/cflocale)) of the preferred caption language.
+- `domain`: The domain to retrieve the preference value from. See [`MACaptionAppearanceDomain`](./macaptionappearancedomain.md). Pass [`MACaptionAppearanceDomain.user`](./macaptionappearancedomain/user.md) unless the system defaults are needed for comparison.
+- `language`: A canonical language identifier (see [`CFLocale`](../CoreFoundation/cflocale.md)) of the preferred caption language.
 
 ## See Also
 
-- [func MACaptionAppearanceCopySelectedLanguages(MACaptionAppearanceDomain) -> Unmanaged<CFArray>](macaptionappearancecopyselectedlanguages(_:).md)
+### Language settings
+- [func MACaptionAppearanceCopySelectedLanguages(MACaptionAppearanceDomain) -> Unmanaged<CFArray>](./macaptionappearancecopyselectedlanguages%28_%29.md)
   Returns the preferred caption languages.
 
 

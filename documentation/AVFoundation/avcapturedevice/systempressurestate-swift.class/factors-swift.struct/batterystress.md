@@ -1,7 +1,8 @@
 # batteryStress
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that under the current battery conditions, the device will shut down within 30 seconds if system load is not reduced.
 
@@ -16,6 +17,10 @@ Indicates that under the current battery conditions, the device will shut down w
 
 ```swift
 static var batteryStress: AVCaptureDevice.SystemPressureState.Factors { get }
+```
+
+```c
+AVCaptureSystemPressureFactorBatteryStress
 ```
 
 

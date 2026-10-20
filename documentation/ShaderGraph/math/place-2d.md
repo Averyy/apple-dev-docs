@@ -1,7 +1,8 @@
 # Place 2D
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 Transforms UV texture coordinates for 2D texture placement.
 
@@ -15,7 +16,19 @@ Transforms UV texture coordinates for 2D texture placement.
 
 #### Parameter Types
 
-#### Parameter Descriptions
+| Input | Type |
+| --- | --- |
+| `Texture Coordinates` | Vector2f |
+| `Pivot` | Vector2f |
+| `Scale` | Vector2f |
+| `Rotate` | Float |
+| `Offset` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+#### Parameter descriptions
 
 - **`Texture Coordinates`**: The input texture coordinates to transform. The default value is the current surface texture coordinates with an index of `0`.
 - **`Pivot`**: The pivot point for scaling and rotating the texture coordinates. The node subtracts this value from U and V before it applies the scale or rotation. The node then adds this value back later.
@@ -27,7 +40,7 @@ Transforms UV texture coordinates for 2D texture placement.
 
 Use the `Place 2D` node to transform texture coordinates and apply these basic transformations to textures. Below is an example of a simple node graph that uses the `Place 2D` node to transform texture coordinates before passing them to an image node:
 
-![None](/images/ShaderGraph-Docs/Place2dGraph.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/Place2dGraph.png)
 
 The incoming texture coordinates transform in three ways; they are:
 
@@ -37,37 +50,42 @@ The incoming texture coordinates transform in three ways; they are:
 
 Below is the original image and the texture with the transformation applied:
 
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/Place2dMaterial1.png)
+
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/Place2dMaterial2.png)
+
 ## See Also
 
-- [Add](math/add.md)
+### Nodes
+- [Add](./add.md)
   Adds two values.
-- [Subtract](math/subtract.md)
+- [Subtract](./subtract.md)
   Subtracts two values.
-- [Multiply](math/multiply.md)
+- [Multiply](./multiply.md)
   Multiplies two values.
-- [Divide](math/divide.md)
+- [Divide](./divide.md)
   Divides two values.
-- [Modulo](math/modulo.md)
+- [Modulo](./modulo.md)
   Outputs the remaining fraction after dividing the input by a value and subtracting the integer portion.
-- [Abs](math/abs.md)
+- [Abs](./abs.md)
   Outputs the per-channel absolute value of the input.
-- [Floor](math/floor.md)
+- [Floor](./floor.md)
   Outputs the nearest integer value, per-channel, less than or equal to the incoming values.
-- [Ceiling](math/ceiling.md)
+- [Ceiling](./ceiling.md)
   Outputs the nearest integer value, per-channel, greater than or equal to the incoming values.
-- [Power](math/power.md)
+- [Power](./power.md)
   Raises the incoming value to an exponent.
-- [Sin](math/sin.md)
+- [Sin](./sin.md)
   The sine of the incoming value in radians.
-- [Cos](math/cos.md)
+- [Cos](./cos.md)
   The cosine of the incoming value in radians.
-- [Tan](math/tan.md)
+- [Tan](./tan.md)
   The tangent of the incoming value in radians.
-- [Asin](math/asin.md)
+- [Asin](./asin.md)
   The arcsine of the incoming value in radians.
-- [Acos](math/acos.md)
+- [Acos](./acos.md)
   The arccosine of the incoming value in radians.
-- [Atan2](math/atan2.md)
+- [Atan2](./atan2.md)
   The arctangent of the expression (iny/inx) in radians.
 
 

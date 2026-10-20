@@ -1,7 +1,8 @@
 # heartRateVariabilityRMSSD
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static let heartRateVariabilityRMSSD: HKQuantityTypeIdentifier
+```
+
+```c
+extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierHeartRateVariabilityRMSSD;
 ```
 
 

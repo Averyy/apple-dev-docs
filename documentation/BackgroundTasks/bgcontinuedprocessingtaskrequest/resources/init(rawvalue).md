@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: Background Tasks  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a required resource for a Continuous Background Task by raw value.
 

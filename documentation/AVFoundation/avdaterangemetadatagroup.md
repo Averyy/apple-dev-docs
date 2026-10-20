@@ -1,7 +1,8 @@
 # AVDateRangeMetadataGroup
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A collection of metadata items that are valid for use within a specific date range.
 
@@ -20,53 +21,58 @@ A collection of metadata items that are valid for use within a specific date ran
 class AVDateRangeMetadataGroup
 ```
 
+```objc
+@interface AVDateRangeMetadataGroup : AVMetadataGroup
+```
+
 ## Topics
 
 ### Creating a date range group
-- [init(items: [AVMetadataItem], start: Date, end: Date?)](avdaterangemetadatagroup/init(items:start:end:).md)
+- [init(items: [AVMetadataItem], start: Date, end: Date?)](./avdaterangemetadatagroup/init%28items,start,end%29.md)
   Initializes an instance of `AVDateRangeMetadataGroup` with a collection of metadata items.
 ### Accessing the metadata
-- [var items: [AVMetadataItem]](avdaterangemetadatagroup/items.md)
+- [var items: [AVMetadataItem]](./avdaterangemetadatagroup/items.md)
   An array of associated metadata items.
 ### Accessing the date range
-- [var startDate: Date](avdaterangemetadatagroup/startdate.md)
+- [var startDate: Date](./avdaterangemetadatagroup/startdate.md)
   The start date for the metadata date range group.
-- [var endDate: Date?](avdaterangemetadatagroup/enddate.md)
+- [var endDate: Date?](./avdaterangemetadatagroup/enddate.md)
   The end date for the metadata date range group.
 ### Initializers
-- [init(items: [AVMetadataItem], startDate: Date, endDate: Date?)](avdaterangemetadatagroup/init(items:startdate:enddate:).md)
+- [init(items: [AVMetadataItem], startDate: Date, endDate: Date?)](./avdaterangemetadatagroup/init%28items,startdate,enddate%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [AVMetadataGroup](avmetadatagroup.md)
+- [AVMetadataGroup](./avmetadatagroup.md)
 ### Inherited By
-- [AVMutableDateRangeMetadataGroup](avmutabledaterangemetadatagroup.md)
+- [AVMutableDateRangeMetadataGroup](./avmutabledaterangemetadatagroup.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSMutableCopying](../foundation/nsmutablecopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSMutableCopying](../Foundation/nsmutablecopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Presenting chapter markers](presenting-chapter-markers.md)
+### Timed metadata
+- [Presenting chapter markers](./presenting-chapter-markers.md)
   Add chapter markers to enable users to quickly navigate your content.
-- [class AVMetadataGroup](avmetadatagroup.md)
+- [class AVMetadataGroup](./avmetadatagroup.md)
   A collection of metadata items associated with a timeline segment.
-- [class AVTimedMetadataGroup](avtimedmetadatagroup.md)
+- [class AVTimedMetadataGroup](./avtimedmetadatagroup.md)
   A collection of metadata items that are valid for use during a specific time range.
-- [class AVMutableTimedMetadataGroup](avmutabletimedmetadatagroup.md)
+- [class AVMutableTimedMetadataGroup](./avmutabletimedmetadatagroup.md)
   A mutable collection of metadata items that are valid for use during a specific time range.
-- [class AVMutableDateRangeMetadataGroup](avmutabledaterangemetadatagroup.md)
+- [class AVMutableDateRangeMetadataGroup](./avmutabledaterangemetadatagroup.md)
   A mutable collection of metadata items that are valid for use within a specific range of dates.
-- [class AVPlayerItemMediaDataCollector](avplayeritemmediadatacollector.md)
+- [class AVPlayerItemMediaDataCollector](./avplayeritemmediadatacollector.md)
   The abstract base for media data collectors.
-- [class AVPlayerItemMetadataCollector](avplayeritemmetadatacollector.md)
+- [class AVPlayerItemMetadataCollector](./avplayeritemmetadatacollector.md)
   An object used to capture the date range metadata defined for an HTTP Live Streaming asset.
 
 

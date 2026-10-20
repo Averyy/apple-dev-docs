@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kClamshellSleepBit](1645012-anonymous/kclamshellsleepbit.md)
-- [kClamshellStateBit](1645012-anonymous/kclamshellstatebit.md)
+- [kClamshellSleepBit](./api-1645012-anonymous/kclamshellsleepbit.md)
+- [kClamshellStateBit](./api-1645012-anonymous/kclamshellstatebit.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # bFunctionClass
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The function class.
 
@@ -10,25 +11,26 @@ The function class.
 
 ## Declaration
 
-```swift
+```c
 uint8_t bFunctionClass;
 ```
 
 ## See Also
 
-- [bLength](iousbinterfaceassociationdescriptor/1545909-blength.md)
+### Getting the Properties
+- [bLength](./api-1545909-blength.md)
   The size of the descriptor.
-- [bDescriptorType](iousbinterfaceassociationdescriptor/1546180-bdescriptortype.md)
+- [bDescriptorType](./api-1546180-bdescriptortype.md)
   The type of the descriptor.
-- [bFirstInterface](iousbinterfaceassociationdescriptor/1546445-bfirstinterface.md)
+- [bFirstInterface](./api-1546445-bfirstinterface.md)
   The first interface of the descriptor.
-- [bInterfaceCount](iousbinterfaceassociationdescriptor/1545905-binterfacecount.md)
+- [bInterfaceCount](./api-1545905-binterfacecount.md)
   The number of interfaces.
-- [bFunctionSubClass](iousbinterfaceassociationdescriptor/1546578-bfunctionsubclass.md)
+- [bFunctionSubClass](./api-1546578-bfunctionsubclass.md)
   The function subclass.
-- [bFunctionProtocol](iousbinterfaceassociationdescriptor/1546423-bfunctionprotocol.md)
+- [bFunctionProtocol](./api-1546423-bfunctionprotocol.md)
   The function protocol.
-- [iFunction](iousbinterfaceassociationdescriptor/1546285-ifunction.md)
+- [iFunction](./api-1546285-ifunction.md)
   The descriptor’s function.
 
 

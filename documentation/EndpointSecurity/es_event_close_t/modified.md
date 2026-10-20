@@ -1,18 +1,23 @@
 # modified
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the file has modifications.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var modified: Bool
+```
+
+```c
+bool modified;
 ```
 
 #### Discussion
@@ -21,7 +26,8 @@ This value corresponds to `KAUTH_FILEOP_CLOSE_MODIFIED`.
 
 ## See Also
 
-- [var target: UnsafeMutablePointer<es_file_t>](es_event_close_t/target.md)
+### Inspecting Event Properties
+- [var target: UnsafeMutablePointer<es_file_t>](./target.md)
   The file to close.
 
 

@@ -1,7 +1,8 @@
 # amSymbol
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The symbol used to represent “AM”, localized to the Calendar’s `locale`.
 
@@ -28,7 +29,8 @@ For example, for English in the Gregorian calendar, returns `"AM"`.
 
 ## See Also
 
-- [var pmSymbol: String](calendar/pmsymbol.md)
+### Getting AM and PM symbols
+- [var pmSymbol: String](./pmsymbol.md)
   The symbol used to represent “PM”, localized to the Calendar’s `locale`.
 
 

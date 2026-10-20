@@ -1,7 +1,8 @@
 # MixedImmersionStyle
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An immersion style that displays unbounded content intermixed with other app content, along with passthrough video.
 
@@ -16,27 +17,28 @@ struct MixedImmersionStyle
 
 #### Overview
 
-When this immersion style is selected, the immersion amount reported by the closure of [`onImmersionChange(initial:_:)`](view/onimmersionchange(initial:_:).md) is `0.0`.
+When this immersion style is selected, the immersion amount reported by the closure of [`onImmersionChange(initial:_:)`](./view/onimmersionchange%28initial,_%29.md) is `0.0`.
 
-Use [`mixed`](immersionstyle/mixed.md) with the [`immersionStyle(selection:in:)`](scene/immersionstyle(selection:in:).md)modifier to specify this style.
+Use [`mixed`](./immersionstyle/mixed.md) with the [`immersionStyle(selection:in:)`](./scene/immersionstyle%28selection,in%29.md)modifier to specify this style.
 
 ## Topics
 
 ### Creating the immersion style
-- [init()](mixedimmersionstyle/init.md)
+- [init()](./mixedimmersionstyle/init%28%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [ImmersionStyle](immersionstyle.md)
+- [ImmersionStyle](./immersionstyle.md)
 
 ## See Also
 
-- [struct AutomaticImmersionStyle](automaticimmersionstyle.md)
+### Supporting types
+- [struct AutomaticImmersionStyle](./automaticimmersionstyle.md)
   The default style of immersive spaces.
-- [struct FullImmersionStyle](fullimmersionstyle.md)
+- [struct FullImmersionStyle](./fullimmersionstyle.md)
   An immersion style that displays unbounded content that completely replaces passthrough video.
-- [struct ProgressiveImmersionStyle](progressiveimmersionstyle.md)
+- [struct ProgressiveImmersionStyle](./progressiveimmersionstyle.md)
   An immersion style that displays unbounded content that partially replaces passthrough video.
 
 

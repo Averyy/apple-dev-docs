@@ -1,7 +1,8 @@
 # isStoredInMemoryOnly
 
 **Framework**: SwiftData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the associated persistent storage is ephemeral and exists only in memory.
 
@@ -23,9 +24,10 @@ let isStoredInMemoryOnly: Bool
 
 ## See Also
 
-- [let url: URL](modelconfiguration/url.md)
+### Accessing configuration details
+- [let url: URL](./url.md)
   The on-disk location of the schema’s persistent storage.
-- [let allowsSave: Bool](modelconfiguration/allowssave.md)
+- [let allowsSave: Bool](./allowssave.md)
   A Boolean value that determines whether the associated persistent storage is writable.
 
 

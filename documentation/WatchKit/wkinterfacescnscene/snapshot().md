@@ -1,7 +1,8 @@
 # snapshot()
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Renders the scene to a new image object.
 
@@ -14,6 +15,10 @@ Renders the scene to a new image object.
 func snapshot() -> UIImage
 ```
 
+```objc
+- (UIImage *) snapshot;
+```
+
 #### Return Value
 
 An image object depicting the scene in its current state.
@@ -24,11 +29,12 @@ This method is thread-safe and may be called at any time.
 
 ## See Also
 
-- [var antialiasingMode: SCNAntialiasingMode](wkinterfacescnscene/antialiasingmode.md)
+### Managing the SceneKit Scene
+- [var antialiasingMode: SCNAntialiasingMode](./antialiasingmode.md)
   The antialiasing mode used for rendering the scene.
-- [var preferredFramesPerSecond: Int](wkinterfacescnscene/preferredframespersecond.md)
+- [var preferredFramesPerSecond: Int](./preferredframespersecond.md)
   The animation frame rate that the interface uses to render its scene.
-- [var scene: SCNScene?](wkinterfacescnscene/scene.md)
+- [var scene: SCNScene?](./scene.md)
   The scene to be displayed.
 
 

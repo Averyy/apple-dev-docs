@@ -1,7 +1,8 @@
 # tooManyLEPairedDevices
 
 **Framework**: Core Bluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 14.0+
@@ -20,10 +21,11 @@ static var tooManyLEPairedDevices: CBError.Code { get }
 
 ## See Also
 
-- [static var encryptionTimedOut: CBError.Code](cberror-swift.struct/encryptiontimedout.md)
-- [static var leGattExceededBackgroundNotificationLimit: CBError.Code](cberror-swift.struct/legattexceededbackgroundnotificationlimit.md)
-- [static var leGattNearBackgroundNotificationLimit: CBError.Code](cberror-swift.struct/legattnearbackgroundnotificationlimit.md)
-- [static var peerRemovedPairingInformation: CBError.Code](cberror-swift.struct/peerremovedpairinginformation.md)
+### Type Properties
+- [static var encryptionTimedOut: CBError.Code](./encryptiontimedout.md)
+- [static var leGattExceededBackgroundNotificationLimit: CBError.Code](./legattexceededbackgroundnotificationlimit.md)
+- [static var leGattNearBackgroundNotificationLimit: CBError.Code](./legattnearbackgroundnotificationlimit.md)
+- [static var peerRemovedPairingInformation: CBError.Code](./peerremovedpairinginformation.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # trustedServers
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The information used to authenticate the server.
 

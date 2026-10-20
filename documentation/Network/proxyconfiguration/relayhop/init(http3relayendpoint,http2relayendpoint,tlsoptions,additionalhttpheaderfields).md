@@ -1,7 +1,8 @@
 # init(http3RelayEndpoint:http2RelayEndpoint:tlsOptions:additionalHTTPHeaderFields:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a configuration for a secure relay accessible using HTTP/3, with an optional HTTP/2 fallback.
 
@@ -29,7 +30,8 @@ init(http3RelayEndpoint: NWEndpoint, http2RelayEndpoint: NWEndpoint? = nil, tlsO
 
 ## See Also
 
-- [init(http2RelayEndpoint: NWEndpoint, tlsOptions: NWProtocolTLS.Options, additionalHTTPHeaderFields: [String : String])](proxyconfiguration/relayhop/init(http2relayendpoint:tlsoptions:additionalhttpheaderfields:).md)
+### Creating Relay Hops
+- [init(http2RelayEndpoint: NWEndpoint, tlsOptions: NWProtocolTLS.Options, additionalHTTPHeaderFields: [String : String])](./init%28http2relayendpoint,tlsoptions,additionalhttpheaderfields%29.md)
   Creates a configuration for a secure relay accessible only using HTTP/2.
 
 

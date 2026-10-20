@@ -1,7 +1,8 @@
 # WeatherCondition.freezingDrizzle
 
 **Framework**: WeatherKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Freezing drizzle or light rain.
 
@@ -22,13 +23,14 @@ case freezingDrizzle
 
 ## See Also
 
-- [WeatherCondition.blizzard](weathercondition/blizzard.md)
+### Getting hazardous winter properties
+- [WeatherCondition.blizzard](./blizzard.md)
   Blizzard.
-- [WeatherCondition.blowingSnow](weathercondition/blowingsnow.md)
+- [WeatherCondition.blowingSnow](./blowingsnow.md)
   Blowing or drifting snow.
-- [WeatherCondition.freezingRain](weathercondition/freezingrain.md)
+- [WeatherCondition.freezingRain](./freezingrain.md)
   Freezing rain.
-- [WeatherCondition.heavySnow](weathercondition/heavysnow.md)
+- [WeatherCondition.heavySnow](./heavysnow.md)
   Heavy snow.
 
 

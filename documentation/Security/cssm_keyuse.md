@@ -1,7 +1,8 @@
 # CSSM_KEYUSE
 
 **Framework**: Security  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSSM_KEYUSE = uint32
+```
+
+```c
+typedef uint32 CSSM_KEYUSE;
 ```
 
 

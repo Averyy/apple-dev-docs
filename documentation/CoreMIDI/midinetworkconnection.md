@@ -1,7 +1,8 @@
 # MIDINetworkConnection
 
 **Framework**: Core MIDI  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that connects a session to a host.
 
@@ -18,32 +19,37 @@ An object that connects a session to a host.
 class MIDINetworkConnection
 ```
 
+```objc
+@interface MIDINetworkConnection : NSObject
+```
+
 ## Topics
 
 ### Creating Connections
-- [convenience init(host: MIDINetworkHost)](midinetworkconnection/init(host:).md)
+- [convenience init(host: MIDINetworkHost)](./midinetworkconnection/init%28host%29.md)
   Creates a connection to the specified host.
 ### Accessing Connections
-- [var host: MIDINetworkHost](midinetworkconnection/host.md)
+- [var host: MIDINetworkHost](./midinetworkconnection/host.md)
   The host connection.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MIDINetworkHost](midinetworkhost.md)
+### Networking
+- [class MIDINetworkHost](./midinetworkhost.md)
   An object that represents the host’s network address.
-- [class MIDINetworkSession](midinetworksession.md)
+- [class MIDINetworkSession](./midinetworksession.md)
   An object that represents a pairing of a source and destination.
 
 

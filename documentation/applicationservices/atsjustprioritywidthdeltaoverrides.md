@@ -1,7 +1,8 @@
 # ATSJustPriorityWidthDeltaOverrides
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias ATSJustPriorityWidthDeltaOverrides = (ATSJustWidthDeltaEntryOverride, ATSJustWidthDeltaEntryOverride, ATSJustWidthDeltaEntryOverride, ATSJustWidthDeltaEntryOverride)
+```
+
+```c
+typedef ATSJustWidthDeltaEntryOverride ATSJustPriorityWidthDeltaOverrides[4];
 ```
 
 

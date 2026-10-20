@@ -1,7 +1,8 @@
 # errSecNoTrustSettings
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 No trust settings were found.
 
@@ -18,6 +19,10 @@ No trust settings were found.
 
 ```swift
 var errSecNoTrustSettings: OSStatus { get }
+```
+
+```c
+errSecNoTrustSettings
 ```
 
 

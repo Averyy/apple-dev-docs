@@ -1,7 +1,8 @@
 # MusicVenue
 
 **Framework**: MapKit JS  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 The point-of-interest category for music venues.
 
@@ -10,7 +11,7 @@ The point-of-interest category for music venues.
 
 ## Declaration
 
-```swift
+```
 readonly MusicVenue: "MusicVenue";
 ```
 

@@ -1,7 +1,8 @@
 # errSecKeyHeaderInconsistent
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key header is inconsistent.
 
@@ -18,6 +19,10 @@ The key header is inconsistent.
 
 ```swift
 var errSecKeyHeaderInconsistent: OSStatus { get }
+```
+
+```c
+errSecKeyHeaderInconsistent
 ```
 
 

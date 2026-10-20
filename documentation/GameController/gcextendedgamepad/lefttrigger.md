@@ -1,7 +1,8 @@
 # leftTrigger
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The controller’s left trigger element.
 
@@ -19,13 +20,18 @@ The controller’s left trigger element.
 var leftTrigger: GCControllerButtonInput { get }
 ```
 
+```objc
+@property (nonatomic, readonly) GCControllerButtonInput * leftTrigger;
+```
+
 #### Discussion
 
 The triggers in the extended gamepad profile are analog buttons.
 
 ## See Also
 
-- [var rightTrigger: GCControllerButtonInput](gcextendedgamepad/righttrigger.md)
+### Getting trigger inputs
+- [var rightTrigger: GCControllerButtonInput](./righttrigger.md)
   The controller’s right trigger element.
 
 

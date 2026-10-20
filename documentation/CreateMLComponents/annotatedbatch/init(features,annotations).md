@@ -1,7 +1,8 @@
 # init(features:annotations:)
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an annotated batch.
 

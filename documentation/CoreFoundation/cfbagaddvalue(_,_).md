@@ -1,23 +1,28 @@
 # CFBagAddValue(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a value to a mutable bag.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFBagAddValue(_ theBag: CFMutableBag!, _ value: UnsafeRawPointer!)
+```
+
+```c
+extern void CFBagAddValue(CFMutableBagRef theBag, const void *value);
 ```
 
 #### Discussion
@@ -31,13 +36,14 @@ The `value` parameter is retained by `theBag` using the retain callback provided
 
 ## See Also
 
-- [func CFBagRemoveAllValues(CFMutableBag!)](cfbagremoveallvalues(_:).md)
+### Modifying a Mutable Bag
+- [func CFBagRemoveAllValues(CFMutableBag!)](./cfbagremoveallvalues%28_%29.md)
   Removes all values from a mutable bag.
-- [func CFBagRemoveValue(CFMutableBag!, UnsafeRawPointer!)](cfbagremovevalue(_:_:).md)
+- [func CFBagRemoveValue(CFMutableBag!, UnsafeRawPointer!)](./cfbagremovevalue%28_,_%29.md)
   Removes a value from a mutable bag.
-- [func CFBagReplaceValue(CFMutableBag!, UnsafeRawPointer!)](cfbagreplacevalue(_:_:).md)
+- [func CFBagReplaceValue(CFMutableBag!, UnsafeRawPointer!)](./cfbagreplacevalue%28_,_%29.md)
   Replaces a value in a mutable bag.
-- [func CFBagSetValue(CFMutableBag!, UnsafeRawPointer!)](cfbagsetvalue(_:_:).md)
+- [func CFBagSetValue(CFMutableBag!, UnsafeRawPointer!)](./cfbagsetvalue%28_,_%29.md)
   Sets a value in a mutable bag.
 
 

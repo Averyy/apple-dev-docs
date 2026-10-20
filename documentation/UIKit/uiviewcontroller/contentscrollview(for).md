@@ -1,7 +1,8 @@
 # contentScrollView(for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the scroll view the view controller observes for the specified edge.
 
@@ -18,13 +19,17 @@ Returns the scroll view the view controller observes for the specified edge.
 func contentScrollView(for edge: NSDirectionalRectEdge) -> UIScrollView?
 ```
 
+```objc
+- (UIScrollView *) contentScrollViewForEdge:(NSDirectionalRectEdge) edge;
+```
+
 #### Return Value
 
 The scroll view the view controller observes for the edge.
 
 #### Discussion
 
-Toolbars, navigation bars, and tab bars adjust their appearance when the edge of a scroll view’s content aligns with the edge of the bar. If you want to disable this behavior for one or more edges, override this method and return `nil` for the appropriate edge. If you don’t set a scroll view with [`setContentScrollView(_:for:)`](uiviewcontroller/setcontentscrollview(_:for:).md) or [`setContentScrollView(_:)`](uiviewcontroller/setcontentscrollview(_:).md), the default implementation of this method returns `nil`.
+Toolbars, navigation bars, and tab bars adjust their appearance when the edge of a scroll view’s content aligns with the edge of the bar. If you want to disable this behavior for one or more edges, override this method and return `nil` for the appropriate edge. If you don’t set a scroll view with [`setContentScrollView(_:for:)`](./setcontentscrollview%28_,for%29.md) or [`setContentScrollView(_:)`](./setcontentscrollview%28_%29.md), the default implementation of this method returns `nil`.
 
 The following example disables the scroll edge view for the top edge only. This example disables the appearance changes of the navigation bar at the top edge, but not the toolbar at the bottom edge.
 
@@ -40,13 +45,14 @@ override func contentScrollView(for edge: NSDirectionalRectEdge) -> UIScrollView
 
 ## Parameters
 
-- `edge`: The edge the scroll view observes for alignment, [`top`](nsdirectionalrectedge/top.md) or [`bottom`](nsdirectionalrectedge/bottom.md). Passing any other value raises an exception.
+- `edge`: The edge the scroll view observes for alignment, [`top`](../nsdirectionalrectedge/top.md) or [`bottom`](../nsdirectionalrectedge/bottom.md). Passing any other value raises an exception.
 
 ## See Also
 
-- [func setContentScrollView(UIScrollView?, for: NSDirectionalRectEdge)](uiviewcontroller/setcontentscrollview(_:for:).md)
+### Working with scrolling content
+- [func setContentScrollView(UIScrollView?, for: NSDirectionalRectEdge)](./setcontentscrollview%28_,for%29.md)
   Sets the scroll view that bars observe for the specified edge.
-- [func setContentScrollView(UIScrollView?)](uiviewcontroller/setcontentscrollview(_:).md)
+- [func setContentScrollView(UIScrollView?)](./setcontentscrollview%28_%29.md)
   Sets the scroll view that bars observe for all edges of the view.
 
 

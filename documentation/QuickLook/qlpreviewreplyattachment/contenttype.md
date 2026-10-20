@@ -1,7 +1,8 @@
 # contentType
 
 **Framework**: Quick Look  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content type of the attachment for an html preview
 
@@ -15,6 +16,10 @@ The content type of the attachment for an html preview
 
 ```swift
 var contentType: UTType { get }
+```
+
+```objc
+@property (readonly) UTType * contentType;
 ```
 
 

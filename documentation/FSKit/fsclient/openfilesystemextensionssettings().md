@@ -1,7 +1,8 @@
 # openFileSystemExtensionsSettings()
 
 **Framework**: FSKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens the File System Extensions settings in System Settings.
 
@@ -12,6 +13,10 @@ Opens the File System Extensions settings in System Settings.
 
 ```swift
 func openFileSystemExtensionsSettings() -> Bool
+```
+
+```objc
+- (BOOL) openFileSystemExtensionsSettings;
 ```
 
 #### Return Value

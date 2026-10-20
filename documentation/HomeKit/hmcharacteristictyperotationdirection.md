@@ -1,7 +1,8 @@
 # HMCharacteristicTypeRotationDirection
 
 **Framework**: HomeKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The rotation direction of an accessory like a fan.
 
@@ -19,25 +20,30 @@ The rotation direction of an accessory like a fan.
 let HMCharacteristicTypeRotationDirection: String
 ```
 
+```c
+extern NSString * const HMCharacteristicTypeRotationDirection;
+```
+
 #### Discussion
 
-The corresponding value is one of the constants in the [`HMCharacteristicValueRotationDirection`](hmcharacteristicvaluerotationdirection.md) enumeration.
+The corresponding value is one of the constants in the [`HMCharacteristicValueRotationDirection`](./hmcharacteristicvaluerotationdirection.md) enumeration.
 
 ## Topics
 
 ### Values
-- [enum HMCharacteristicValueRotationDirection](hmcharacteristicvaluerotationdirection.md)
+- [enum HMCharacteristicValueRotationDirection](./hmcharacteristicvaluerotationdirection.md)
   Possible values for the direction of rotation.
 
 ## See Also
 
-- [let HMCharacteristicTypeCurrentFanState: String](hmcharacteristictypecurrentfanstate.md)
+### Fans
+- [let HMCharacteristicTypeCurrentFanState: String](./hmcharacteristictypecurrentfanstate.md)
   The current state of a fan.
-- [let HMCharacteristicTypeTargetFanState: String](hmcharacteristictypetargetfanstate.md)
+- [let HMCharacteristicTypeTargetFanState: String](./hmcharacteristictypetargetfanstate.md)
   The target state of a fan.
-- [let HMCharacteristicTypeRotationSpeed: String](hmcharacteristictyperotationspeed.md)
+- [let HMCharacteristicTypeRotationSpeed: String](./hmcharacteristictyperotationspeed.md)
   The rotation speed of an accessory like a fan.
-- [let HMCharacteristicTypeSwingMode: String](hmcharacteristictypeswingmode.md)
+- [let HMCharacteristicTypeSwingMode: String](./hmcharacteristictypeswingmode.md)
   An indicator of whether a fan swings back and forth during operation.
 
 

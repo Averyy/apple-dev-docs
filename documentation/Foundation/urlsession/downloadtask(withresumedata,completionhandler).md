@@ -1,7 +1,8 @@
 # downloadTask(withResumeData:completionHandler:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a download task to resume a previously canceled or failed download and calls a handler upon completion.
 
@@ -20,9 +21,13 @@ Creates a download task to resume a previously canceled or failed download and c
 func downloadTask(withResumeData resumeData: Data, completionHandler: @escaping @Sendable (URL?, URLResponse?, (any Error)?) -> Void) -> URLSessionDownloadTask
 ```
 
+```objc
+- (NSURLSessionDownloadTask *) downloadTaskWithResumeData:(NSData *) resumeData completionHandler:(void (^)(NSURL *location, NSURLResponse *response, NSError *error)) completionHandler;
+```
+
 ## Mentions
 
-- [Pausing and resuming downloads](pausing-and-resuming-downloads.md)
+- [Pausing and resuming downloads](../pausing-and-resuming-downloads.md)
 
 #### Return Value
 
@@ -32,14 +37,14 @@ The new session download task.
 
 By using a completion handler, the task bypasses calls to delegate methods for response and data delivery, and instead provides any resulting data, response, or error inside the completion handler. Delegate methods for handling authentication challenges, however, are still called.
 
-You should pass a `nil` completion handler *only* when creating tasks in sessions whose delegates include a [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](urlsessiondownloaddelegate/urlsession(_:downloadtask:didfinishdownloadingto:).md) method.
+You should pass a `nil` completion handler *only* when creating tasks in sessions whose delegates include a [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](../urlsessiondownloaddelegate/urlsession%28_,downloadtask,didfinishdownloadingto%29.md) method.
 
 Your app can obtain a `resumeData` object in two ways:
 
-- If your app cancels an existing transfer by calling [`cancel(byProducingResumeData:)`](urlsessiondownloadtask/cancel(byproducingresumedata:).md), the session object passes a `resumeData` object to the completion handler that you provided in that call.
-- If a transfer fails, the session object provides an `NSError` object either to its delegate or to the task’s completion handler. In that object, the [`NSURLSessionDownloadTaskResumeData`](nsurlsessiondownloadtaskresumedata.md) key in the `userInfo` dictionary contains a `resumeData` object.
+- If your app cancels an existing transfer by calling [`cancel(byProducingResumeData:)`](../urlsessiondownloadtask/cancel%28byproducingresumedata%29.md), the session object passes a `resumeData` object to the completion handler that you provided in that call.
+- If a transfer fails, the session object provides an `NSError` object either to its delegate or to the task’s completion handler. In that object, the [`NSURLSessionDownloadTaskResumeData`](../nsurlsessiondownloadtaskresumedata.md) key in the `userInfo` dictionary contains a `resumeData` object.
 
-After you create the task, you must start it by calling its [`resume()`](urlsessiontask/resume().md) method.
+After you create the task, you must start it by calling its [`resume()`](../urlsessiontask/resume%28%29.md) method.
 
 If the request completes successfully, the `location` parameter of the completion handler block contains the location of the temporary file, and the `error` parameter is `nil`. If the request fails, the `location` parameter is `nil` and the `error` parameter contain information about the failure. If a response from the server is received, regardless of whether the request completes successfully or fails, the `response` parameter contains that information.
 
@@ -48,25 +53,30 @@ If the request completes successfully, the `location` parameter of the completio
 ## Parameters
 
 - `resumeData`: A data object that provides the data necessary to resume the download.
-- `completionHandler`: The completion handler to call when the load request is complete. This handler is executed on the delegate queue. If you pass `nil`, only the session delegate methods are called when the task completes, making this method equivalent to the [`downloadTask(withResumeData:)`](urlsession/downloadtask(withresumedata:).md) method. - **`location`**: The location of a temporary file where the server’s response is stored. You must move this file or open it for reading before your completion handler returns. Otherwise, the file is deleted, and the data is lost.
-- **`response`**: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an [`HTTPURLResponse`](httpurlresponse.md) object.
-- **`error`**: An error object that indicates why the request failed, or `nil` if the request was successful.
+- `completionHandler`: The completion handler to call when the load request is complete. This handler is executed on the delegate queue.
+
+  If you pass `nil`, only the session delegate methods are called when the task completes, making this method equivalent to the [`downloadTask(withResumeData:)`](./downloadtask%28withresumedata%29.md) method.
+
+  - **`location`**: The location of a temporary file where the server’s response is stored. You must move this file or open it for reading before your completion handler returns. Otherwise, the file is deleted, and the data is lost.
+  - **`response`**: An object that provides response metadata, such as HTTP headers and status code. If you are making an HTTP or HTTPS request, the returned object is actually an [`HTTPURLResponse`](../httpurlresponse.md) object.
+  - **`error`**: An error object that indicates why the request failed, or `nil` if the request was successful.
 
 ## See Also
 
-- [func downloadTask(with: URL) -> URLSessionDownloadTask](urlsession/downloadtask(with:)-1onj.md)
+### Adding download tasks to a session
+- [func downloadTask(with: URL) -> URLSessionDownloadTask](./downloadtask%28with%29-1onj.md)
   Creates a download task that retrieves the contents of the specified URL and saves the results to a file.
-- [func downloadTask(with: URL, completionHandler: (URL?, URLResponse?, (any Error)?) -> Void) -> URLSessionDownloadTask](urlsession/downloadtask(with:completionhandler:)-7cuje.md)
+- [func downloadTask(with: URL, completionHandler: (URL?, URLResponse?, (any Error)?) -> Void) -> URLSessionDownloadTask](./downloadtask%28with,completionhandler%29-7cuje.md)
   Creates a download task that retrieves the contents of the specified URL, saves the results to a file, and calls a handler upon completion.
-- [func downloadTask(with: URLRequest) -> URLSessionDownloadTask](urlsession/downloadtask(with:)-3fb7s.md)
+- [func downloadTask(with: URLRequest) -> URLSessionDownloadTask](./downloadtask%28with%29-3fb7s.md)
   Creates a download task that retrieves the contents of a URL based on the specified URL request object and saves the results to a file.
-- [func downloadTask(with: URLRequest, completionHandler: (URL?, URLResponse?, (any Error)?) -> Void) -> URLSessionDownloadTask](urlsession/downloadtask(with:completionhandler:)-4a84s.md)
+- [func downloadTask(with: URLRequest, completionHandler: (URL?, URLResponse?, (any Error)?) -> Void) -> URLSessionDownloadTask](./downloadtask%28with,completionhandler%29-4a84s.md)
   Creates a download task that retrieves the contents of a URL based on the specified URL request object, saves the results to a file, and calls a handler upon completion.
-- [func downloadTask(withResumeData: Data) -> URLSessionDownloadTask](urlsession/downloadtask(withresumedata:).md)
+- [func downloadTask(withResumeData: Data) -> URLSessionDownloadTask](./downloadtask%28withresumedata%29.md)
   Creates a download task to resume a previously canceled or failed download.
-- [class URLSessionDownloadTask](urlsessiondownloadtask.md)
+- [class URLSessionDownloadTask](../urlsessiondownloadtask.md)
   A URL session task that stores downloaded data to a file.
-- [protocol URLSessionDownloadDelegate](urlsessiondownloaddelegate.md)
+- [protocol URLSessionDownloadDelegate](../urlsessiondownloaddelegate.md)
   A protocol that defines methods that URL session instances call on their delegates to handle task-level events specific to download tasks.
 
 

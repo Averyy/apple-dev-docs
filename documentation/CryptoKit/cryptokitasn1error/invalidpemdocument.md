@@ -1,7 +1,8 @@
 # CryptoKitASN1Error.invalidPEMDocument
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The string doesn’t parse as a PEM document.
 
@@ -22,19 +23,20 @@ case invalidPEMDocument
 
 ## See Also
 
-- [CryptoKitASN1Error.invalidASN1IntegerEncoding](cryptokitasn1error/invalidasn1integerencoding.md)
+### Reporting errors
+- [CryptoKitASN1Error.invalidASN1IntegerEncoding](./invalidasn1integerencoding.md)
   An ASN.1 integer doesn’t use the minimum number of bytes for its encoding.
-- [CryptoKitASN1Error.invalidASN1Object](cryptokitasn1error/invalidasn1object.md)
+- [CryptoKitASN1Error.invalidASN1Object](./invalidasn1object.md)
   The format of the parsed ASN.1 object doesn’t match the format required for the data type being decoded.
-- [CryptoKitASN1Error.invalidFieldIdentifier](cryptokitasn1error/invalidfieldidentifier.md)
+- [CryptoKitASN1Error.invalidFieldIdentifier](./invalidfieldidentifier.md)
   The ASN.1 tag for this field is invalid or unsupported.
-- [CryptoKitASN1Error.invalidObjectIdentifier](cryptokitasn1error/invalidobjectidentifier.md)
+- [CryptoKitASN1Error.invalidObjectIdentifier](./invalidobjectidentifier.md)
   An ASN.1 object identifier is invalid.
-- [CryptoKitASN1Error.truncatedASN1Field](cryptokitasn1error/truncatedasn1field.md)
+- [CryptoKitASN1Error.truncatedASN1Field](./truncatedasn1field.md)
   An ASN.1 field is truncated.
-- [CryptoKitASN1Error.unexpectedFieldType](cryptokitasn1error/unexpectedfieldtype.md)
+- [CryptoKitASN1Error.unexpectedFieldType](./unexpectedfieldtype.md)
   The ASN.1 tag for the parsed field doesn’t match the required format.
-- [CryptoKitASN1Error.unsupportedFieldLength](cryptokitasn1error/unsupportedfieldlength.md)
+- [CryptoKitASN1Error.unsupportedFieldLength](./unsupportedfieldlength.md)
   The encoding used for the field length is unsupported.
 
 

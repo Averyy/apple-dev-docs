@@ -1,7 +1,8 @@
 # applications
 
 **Framework**: Managed Settings  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The metadata for the configuration that specifies apps for the system to cover with a shielding view.
 
@@ -22,11 +23,12 @@ The default value is an empty set.
 
 ## See Also
 
-- [var applications: Set<ApplicationToken>?](shieldsettings/applications-swift.property.md)
+### Blocking apps and websites
+- [var applications: Set<ApplicationToken>?](./applications-swift.property.md)
   Applications for the system to cover with a shielding view.
-- [var webDomains: Set<WebDomainToken>?](shieldsettings/webdomains-swift.property.md)
+- [var webDomains: Set<WebDomainToken>?](./webdomains-swift.property.md)
   Websites for the system to cover with a shielding view.
-- [static let webDomains: SettingMetadata<Set<WebDomainToken>>](shieldsettings/webdomains-swift.type.property.md)
+- [static let webDomains: SettingMetadata<Set<WebDomainToken>>](./webdomains-swift.type.property.md)
   The metadata for the configuration that specifies websites for the system to shield.
 
 

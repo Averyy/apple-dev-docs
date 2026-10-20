@@ -1,18 +1,19 @@
 # Creating a dynamic height and normal map with low-level texture
 
-**Framework**: RealityKit
+**Framework**: RealityKit  
+**Role**: Article
 
 Create a low-level texture and update its pixel data on the GPU to form a dynamic height and normal map.
 
 #### Overview
 
-A height map is a texture in which each pixel stores height information describing the shape of a surface. You can read height data from a height map to offset the vertices of a mesh, as well as derive the surface normal directions. Generally speaking, height maps are static textures that remain unmodified at runtime; however, by leveraging [`LowLevelTexture`](lowleveltexture.md), you can create a dynamic height map that you write height data to in every frame on the GPU. Additionally, you can derive surface normals from your height map every time you update it, allowing for a variety of dynamic and interactive effects.
+A height map is a texture in which each pixel stores height information describing the shape of a surface. You can read height data from a height map to offset the vertices of a mesh, as well as derive the surface normal directions. Generally speaking, height maps are static textures that remain unmodified at runtime; however, by leveraging [`LowLevelTexture`](./lowleveltexture.md), you can create a dynamic height map that you write height data to in every frame on the GPU. Additionally, you can derive surface normals from your height map every time you update it, allowing for a variety of dynamic and interactive effects.
 
-Create a height map with [`LowLevelTexture`](lowleveltexture.md), and write height data to its alpha channel in every frame by dispatching a Metal compute shader. Derive normal directions from the height map and store them in the red, green, and blue channels of the texture. See [`Generating interactive geometry with RealityKit`](generating-interactive-geometry-with-realitykit.md) for an example of how you can dynamically modify the vertices of a low-level mesh with this height and normal map texture.
+Create a height map with [`LowLevelTexture`](./lowleveltexture.md), and write height data to its alpha channel in every frame by dispatching a Metal compute shader. Derive normal directions from the height map and store them in the red, green, and blue channels of the texture. See [Generating interactive geometry with RealityKit](./generating-interactive-geometry-with-realitykit.md) for an example of how you can dynamically modify the vertices of a low-level mesh with this height and normal map texture.
 
-#### Create a Low Level Texture
+#### Create a low-level texture
 
-Create a height map [`LowLevelTexture`](lowleveltexture.md) by describing its pixel format, width, height, and usage:
+Create a height map [`LowLevelTexture`](./lowleveltexture.md) by describing its pixel format, width, height, and usage:
 
 ```swift
 /// The low-level texture that stores the height and normal information of the height map.
@@ -29,9 +30,9 @@ init(dimensions: SIMD2<UInt32>) throws {
 }
 ```
 
-Initialize this texture with a pixel format of [`MTLPixelFormat.rgba32Float`](https://developer.apple.comhttps://developer.apple.com/documentation/metal/mtlpixelformat/rgba32float) so that each pixel in the texture has four 32-bit floats, composing its red, green, blue, and alpha channels. You can store height in the alpha channel, and the surface normal direction in the red, green, and blue channels.
+Initialize this texture with a pixel format of [MTLPixelFormat.rgba32Float](../Metal/mtlpixelformat/rgba32float.md) so that each pixel in the texture has four 32-bit floats, composing its red, green, blue, and alpha channels. You can store height in the alpha channel, and the surface normal direction in the red, green, and blue channels.
 
-#### Write Height Data to the Low Level Texture with a Compute Shader
+#### Write height data to the low-level texture with a compute shader
 
 Write height data to the texture on the GPU by dispatching a Metal compute shader. For example, you can create a height map with waves that oscillate outward from the center of the texture by setting the height of each pixel to the sine of the pixel’s distance from the center:
 
@@ -79,9 +80,11 @@ Include the height map texture as a parameter of this function twice, both in a 
 
 The following video shows the alpha channel of texture this compute shader function creates:
 
-#### Dispatch the Compute Shader
+[Video: A video of the height map texture the generate sine wave height map compute shader function creates. The texture oscillates from black to white in concentric circles growing outward from the center of the texture over time.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/creating-a-dynamic-height-map-with-low-level-texture-1.mp4)
 
-Create a helper method that makes the [`MTLComputePipelineState`](https://developer.apple.comhttps://developer.apple.com/documentation/metal/mtlcomputepipelinestate) for a given compute shader function:
+#### Dispatch the compute shader
+
+Create a helper method that makes the [MTLComputePipelineState](../Metal/mtlcomputepipelinestate.md) for a given compute shader function:
 
 ```swift
 /// The device Metal selects as the default.
@@ -96,7 +99,7 @@ func makeComputePipeline(named name: String) -> MTLComputePipelineState? {
 }
 ```
 
-Get the [`MTLComputePipelineState`](https://developer.apple.comhttps://developer.apple.com/documentation/metal/mtlcomputepipelinestate) for the `generateSineWaveHeightMap` compute shader function:
+Get the [`MTLComputePipelineState`](../Metal/mtlcomputepipelinestate.md) for the `generateSineWaveHeightMap` compute shader function:
 
 ```swift
 private let sineWaveHeightPipeline: MTLComputePipelineState = makeComputePipeline(named: "generateSineWaveHeightMap")!
@@ -120,7 +123,7 @@ private var time: Float = 0
 private var amplitude: Float = 0.05
 ```
 
-Finally, dispatch the `generateSineWaveHeightMap` function in every frame with an [`MTLComputeCommandEncoder`](https://developer.apple.comhttps://developer.apple.com/documentation/metal/mtlcomputecommandencoder), passing it both a readable and a writable version of the height map [`LowLevelTexture`](lowleveltexture.md), as well as the time and the amplitude:
+Finally, dispatch the `generateSineWaveHeightMap` function in every frame with an [MTLComputeCommandEncoder](../Metal/mtlcomputecommandencoder.md), passing it both a readable and a writable version of the height map [`LowLevelTexture`](./lowleveltexture.md), as well as the time and the amplitude:
 
 ```swift
 // Increment time.
@@ -143,13 +146,13 @@ computeEncoder.setBytes(&amplitude, length: MemoryLayout<Float>.size, index: 3)
 computeEncoder.dispatchThreadgroups(threadgroups, threadsPerThreadgroup: threadsPerThreadgroup)
 ```
 
-See [`Performing Calculations on a GPU`](https://developer.apple.comhttps://developer.apple.com/documentation/metal/performing_calculations_on_a_gpu) for general information about dispatching Metal shaders, as well as [`Passing Metal command objects around your application`](passing-metal-command-objects-around-your-application.md) for specifics on how to obtain the compute encoder, command buffer, and delta time parameters.
+See [Performing Calculations on a GPU](../Metal/performing_calculations_on_a_gpu.md) for general information about dispatching Metal shaders, as well as [Passing Metal command objects around your application](./passing-metal-command-objects-around-your-application.md) for specifics on how to obtain the compute encoder, command buffer, and delta time parameters.
 
-#### Derive Surface Normals From the Height Map Texture
+#### Derive surface normals from the height map texture
 
 You can derive surface normal directions directly from the height map and store them in its red, green, and blue channels.
 
-> **Note**: The [`Generating interactive geometry with RealityKit`](generating-interactive-geometry-with-realitykit.md) sample sets its vertex normals with the normals the height map texture stores.
+> **Note**: The [Generating interactive geometry with RealityKit](./generating-interactive-geometry-with-realitykit.md) sample sets its vertex normals with the normals the height map texture stores.
 
 Derive the normal direction at each pixel in the height map by computing the difference between the pixel’s neighboring height values:
 
@@ -188,13 +191,13 @@ void deriveNormalsFromHeightMap(texture2d<float, access::read> heightMapIn [[tex
 }
 ```
 
-Get the [`MTLComputePipelineState`](https://developer.apple.comhttps://developer.apple.com/documentation/metal/mtlcomputepipelinestate) for this compute function:
+Get the [`MTLComputePipelineState`](../Metal/mtlcomputepipelinestate.md) for this compute function:
 
 ```swift
 private let deriveNormalsPipeline: MTLComputePipelineState = makeComputePipeline(named: "deriveNormalsFromHeightMap")!
 ```
 
-Finally, dispatch this compute function with an [`MTLComputeCommandEncoder`](https://developer.apple.comhttps://developer.apple.com/documentation/metal/mtlcomputecommandencoder), passing in both a readable and a writable version of the height map low-level texture:
+Finally, dispatch this compute function with an [`MTLComputeCommandEncoder`](../Metal/mtlcomputecommandencoder.md), passing in both a readable and a writable version of the height map low-level texture:
 
 ```swift
 // Set the compute shader pipeline to `deriveNormalsFromHeightMap`.
@@ -212,23 +215,26 @@ computeEncoder.setBytes(&cellSize, length: MemoryLayout<SIMD2<Float>>.size, inde
 computeEncoder.dispatchThreadgroups(threadgroups, threadsPerThreadgroup: threadsPerThreadgroup)
 ```
 
-In this example, `cellSize` describes the size of the texture’s pixels in the same units as the height. In the [`Generating interactive geometry with RealityKit`](generating-interactive-geometry-with-realitykit.md) sample, this is the size of the cells that compose the plane mesh, or rather the distance between the vertices of the mesh.
+In this example, `cellSize` describes the size of the texture’s pixels in the same units as the height. In the [Generating interactive geometry with RealityKit](./generating-interactive-geometry-with-realitykit.md) sample, this is the size of the cells that compose the plane mesh, or rather the distance between the vertices of the mesh.
 
 The following video shows the normal map the compute shader function derives from the sine wave height map:
 
+[Video: A video of the normal map texture the compute shader derives from the sine wave height map. Concentric circles of light teal, pink, blue, and purple oscillate outward in a gradient over time.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/creating-a-dynamic-height-map-with-low-level-texture-2.mp4)
+
 ## See Also
 
-- [Rendering a windowed game in stereo](rendering-a-windowed-game-in-stereo.md)
+### Texture drawing
+- [Rendering a windowed game in stereo](./rendering-a-windowed-game-in-stereo.md)
   Bring an iOS or iPadOS game to visionOS and enhance it.
-- [class LowLevelTexture](lowleveltexture.md)
+- [class LowLevelTexture](./lowleveltexture.md)
   A container for texture data allowing you to create and update textures using your own format.
-- [LowLevelTexture.Descriptor](lowleveltexture/descriptor-swift.struct.md)
+- [LowLevelTexture.Descriptor](./lowleveltexture/descriptor-swift.struct.md)
   An object that you use to configure new `LowLevelTexture` objects.
-- [TextureResource.Drawable](textureresource/drawable.md)
+- [TextureResource.Drawable](./textureresource/drawable.md)
   A drawable associated with a drawable queue
-- [TextureResource.DrawableQueue](textureresource/drawablequeue-swift.class.md)
+- [TextureResource.DrawableQueue](./textureresource/drawablequeue-swift.class.md)
   A drawable queue that may be used to update a texture resource dynamically
-- [TextureResource.DrawableQueue.Descriptor](textureresource/drawablequeue-swift.class/descriptor.md)
+- [TextureResource.DrawableQueue.Descriptor](./textureresource/drawablequeue-swift.class/descriptor.md)
   Describes the texture managed by the drawable queue
 
 

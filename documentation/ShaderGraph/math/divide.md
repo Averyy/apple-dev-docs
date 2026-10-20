@@ -1,7 +1,8 @@
 # Divide
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 Divides two values.
 
@@ -19,37 +20,236 @@ Division of two matrices is the product of  and the inverse of
 
 #### Parameter Types
 
+**Divide (float)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Float |
+| `In 2` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Divide (vector4f / float)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Vector4f |
+| `In 2` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+**Divide (color4f / float)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Color4 |
+| `In 2` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Divide (vector4f)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Vector4f |
+| `In 2` | Vector4f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4f |
+
+**Divide (color3f / float)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Color3 |
+| `In 2` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Divide (matrix3x3f)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Matrix3x3f |
+| `In 2` | Matrix3x3f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Matrix3x3f |
+
+**Divide (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Color3 |
+| `In 2` | Color3 |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Divide (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Color4 |
+| `In 2` | Color4 |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+**Divide (vector3h)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Vector3h |
+| `In 2` | Vector3h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3h |
+
+**Divide (matrix4x4f)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Matrix4x4f |
+| `In 2` | Matrix4x4f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Matrix4x4f |
+
+**Divide (vector4h)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Vector4h |
+| `In 2` | Vector4h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector4h |
+
+**Divide (vector2h)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Vector2h |
+| `In 2` | Vector2h |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2h |
+
+**Divide (vector3f)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Vector3f |
+| `In 2` | Vector3f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+**Divide (vector2f / float)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Vector2f |
+| `In 2` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Divide (half)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Half |
+| `In 2` | Half |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Half |
+
+**Divide (matrix2x2f)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Matrix2x2f |
+| `In 2` | Matrix2x2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Matrix2x2f |
+
+**Divide (vector2f)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Vector2f |
+| `In 2` | Vector2f |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector2f |
+
+**Divide (vector3f / float)**:
+
+| Input | Type |
+| --- | --- |
+| `In 1` | Vector3f |
+| `In 2` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
 ## See Also
 
-- [Add](math/add.md)
+### Nodes
+- [Add](./add.md)
   Adds two values.
-- [Subtract](math/subtract.md)
+- [Subtract](./subtract.md)
   Subtracts two values.
-- [Multiply](math/multiply.md)
+- [Multiply](./multiply.md)
   Multiplies two values.
-- [Modulo](math/modulo.md)
+- [Modulo](./modulo.md)
   Outputs the remaining fraction after dividing the input by a value and subtracting the integer portion.
-- [Abs](math/abs.md)
+- [Abs](./abs.md)
   Outputs the per-channel absolute value of the input.
-- [Floor](math/floor.md)
+- [Floor](./floor.md)
   Outputs the nearest integer value, per-channel, less than or equal to the incoming values.
-- [Ceiling](math/ceiling.md)
+- [Ceiling](./ceiling.md)
   Outputs the nearest integer value, per-channel, greater than or equal to the incoming values.
-- [Power](math/power.md)
+- [Power](./power.md)
   Raises the incoming value to an exponent.
-- [Sin](math/sin.md)
+- [Sin](./sin.md)
   The sine of the incoming value in radians.
-- [Cos](math/cos.md)
+- [Cos](./cos.md)
   The cosine of the incoming value in radians.
-- [Tan](math/tan.md)
+- [Tan](./tan.md)
   The tangent of the incoming value in radians.
-- [Asin](math/asin.md)
+- [Asin](./asin.md)
   The arcsine of the incoming value in radians.
-- [Acos](math/acos.md)
+- [Acos](./acos.md)
   The arccosine of the incoming value in radians.
-- [Atan2](math/atan2.md)
+- [Atan2](./atan2.md)
   The arctangent of the expression (iny/inx) in radians.
-- [Square Root](math/square-root.md)
+- [Square Root](./square-root.md)
   The square root of the incoming value.
 
 

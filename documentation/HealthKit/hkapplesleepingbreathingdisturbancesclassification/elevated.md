@@ -1,7 +1,8 @@
 # HKAppleSleepingBreathingDisturbancesClassification.elevated
 
 **Framework**: HealthKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -17,9 +18,14 @@
 case elevated
 ```
 
+```c
+HKAppleSleepingBreathingDisturbancesClassificationElevated
+```
+
 ## See Also
 
-- [HKAppleSleepingBreathingDisturbancesClassification.notElevated](hkapplesleepingbreathingdisturbancesclassification/notelevated.md)
+### Enumeration Cases
+- [HKAppleSleepingBreathingDisturbancesClassification.notElevated](./notelevated.md)
 
 
 ---

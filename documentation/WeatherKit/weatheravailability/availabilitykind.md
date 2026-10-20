@@ -1,7 +1,8 @@
 # WeatherAvailability.AvailabilityKind
 
 **Framework**: WeatherKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The availability kind.
 
@@ -23,33 +24,34 @@ enum AvailabilityKind
 ## Topics
 
 ### Enumeration Cases
-- [WeatherAvailability.AvailabilityKind.available](weatheravailability/availabilitykind/available.md)
+- [WeatherAvailability.AvailabilityKind.available](./availabilitykind/available.md)
   The data is available.
-- [WeatherAvailability.AvailabilityKind.temporarilyUnavailable](weatheravailability/availabilitykind/temporarilyunavailable.md)
+- [WeatherAvailability.AvailabilityKind.temporarilyUnavailable](./availabilitykind/temporarilyunavailable.md)
   The data is supported for the location but is temporarily unavailable.
-- [WeatherAvailability.AvailabilityKind.unknown](weatheravailability/availabilitykind/unknown.md)
+- [WeatherAvailability.AvailabilityKind.unknown](./availabilitykind/unknown.md)
   The availability is unknown.
-- [WeatherAvailability.AvailabilityKind.unsupported](weatheravailability/availabilitykind/unsupported.md)
+- [WeatherAvailability.AvailabilityKind.unsupported](./availabilitykind/unsupported.md)
   The data isn’t supported for the location.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var alertAvailability: WeatherAvailability.AvailabilityKind](weatheravailability/alertavailability.md)
+### Getting the properties
+- [var alertAvailability: WeatherAvailability.AvailabilityKind](./alertavailability.md)
   The weather alerts availability.
-- [var minuteAvailability: WeatherAvailability.AvailabilityKind](weatheravailability/minuteavailability.md)
+- [var minuteAvailability: WeatherAvailability.AvailabilityKind](./minuteavailability.md)
   The minute forecast availability.
 
 

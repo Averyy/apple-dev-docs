@@ -1,17 +1,22 @@
 # removeContextHelp(for:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the association between an object and its context-sensitive help.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func removeContextHelp(for object: Any)
+```
+
+```objc
+- (void) removeContextHelpForObject:(id) object;
 ```
 
 #### Discussion
@@ -24,7 +29,8 @@ If `object` does not have context-sensitive help associated with it, this method
 
 ## See Also
 
-- [func setContextHelp(NSAttributedString, for: Any)](nshelpmanager/setcontexthelp(_:for:).md)
+### Configuring Context-Sensitive Help
+- [func setContextHelp(NSAttributedString, for: Any)](./setcontexthelp%28_,for%29.md)
   Associates help content with an object.
 
 

@@ -1,7 +1,8 @@
 # DeviceActivityFilter.SegmentInterval.hourly(during:)
 
 **Framework**: Device Activity  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the system aggregates data into hourly segments within the specified interval.
 

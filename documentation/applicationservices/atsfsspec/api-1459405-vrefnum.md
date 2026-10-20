@@ -1,7 +1,8 @@
 # vRefNum
 
 **Framework**: Application Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var vRefNum: FSVolumeRefNum
+```
+
+```c
+FSVolumeRefNum vRefNum;
 ```
 
 

@@ -1,7 +1,8 @@
 # Date.FormatStyle.Symbol.Month
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that specifies a format for the month in a date format style.
 
@@ -22,17 +23,17 @@ struct Month
 
 #### Overview
 
-The type [`Date.FormatStyle.Symbol.Month`](date/formatstyle/symbol/month.md) includes static factory variables that create custom [`Date.FormatStyle.Symbol.Month`](date/formatstyle/symbol/month.md) objects:
+The type [`Date.FormatStyle.Symbol.Month`](./month.md) includes static factory variables that create custom [`Date.FormatStyle.Symbol.Month`](./month.md) objects:
 
 | Factory variable | Description |
 | --- | --- |
-| [`abbreviated`](date/formatstyle/symbol/month/abbreviated.md) | Abbreviated month name. For example, `Sep`. |
-| [`defaultDigits`](date/formatstyle/symbol/month/defaultdigits.md) | Minimum number of digits that represents the numeric month. For example, `9`, `12`. |
-| [`narrow`](date/formatstyle/symbol/month/narrow.md) | Narrow month name. For example, `S`. |
-| [`twoDigits`](date/formatstyle/symbol/month/twodigits.md) | Two-digit numeric month, zero-padded if necessary. For example, `09`, `12`. |
-| [`wide`](date/formatstyle/symbol/month/wide.md) | Wide month name. For example, `September`. |
+| [`abbreviated`](./month/abbreviated.md) | Abbreviated month name. For example, `Sep`. |
+| [`defaultDigits`](./month/defaultdigits.md) | Minimum number of digits that represents the numeric month. For example, `9`, `12`. |
+| [`narrow`](./month/narrow.md) | Narrow month name. For example, `S`. |
+| [`twoDigits`](./month/twodigits.md) | Two-digit numeric month, zero-padded if necessary. For example, `09`, `12`. |
+| [`wide`](./month/wide.md) | Wide month name. For example, `September`. |
 
-To customize the month format in a string representation of a `Date`, use [`month(_:)`](date/formatstyle/month(_:).md). The following example shows a variety of [`Date.FormatStyle.Symbol.Month`](date/formatstyle/symbol/month.md) format styles applied to a date.
+To customize the month format in a string representation of a `Date`, use [`month(_:)`](../month%28_%29.md). The following example shows a variety of [`Date.FormatStyle.Symbol.Month`](./month.md) format styles applied to a date.
 
 ```swift
 let meetingDate = Date() // Feb 9, 2021 at 3:00 PM
@@ -44,69 +45,70 @@ meetingDate.formatted(Date.FormatStyle().month(.wide)) // February
 meetingDate.formatted(Date.FormatStyle().month()) // Feb
 ```
 
-If no format is specified as a parameter, the [`abbreviated`](date/formatstyle/symbol/month/abbreviated.md) static variable is the default format.
+If no format is specified as a parameter, the [`abbreviated`](./month/abbreviated.md) static variable is the default format.
 
-For more information about formatting dates, see the [`Date.FormatStyle`](date/formatstyle.md).
+For more information about formatting dates, see the [`Date.FormatStyle`](../../formatstyle.md).
 
 ## Topics
 
 ### Modifying a Month
-- [static var abbreviated: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/abbreviated.md)
+- [static var abbreviated: Date.FormatStyle.Symbol.Month](./month/abbreviated.md)
   The abbreviated representation of a month.
-- [static var defaultDigits: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/defaultdigits.md)
+- [static var defaultDigits: Date.FormatStyle.Symbol.Month](./month/defaultdigits.md)
   Custom month format style showing the minimum number of digits that represents the numeric month.
-- [static var narrow: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/narrow.md)
+- [static var narrow: Date.FormatStyle.Symbol.Month](./month/narrow.md)
   The shortest representation of a month.
-- [static var twoDigits: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/twodigits.md)
+- [static var twoDigits: Date.FormatStyle.Symbol.Month](./month/twodigits.md)
   The custom month format style that uses two digits to represent the numeric month.
-- [static var wide: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/wide.md)
+- [static var wide: Date.FormatStyle.Symbol.Month](./month/wide.md)
   The full representation of a month.
 ### Comparing a Month
-- [static func == (Date, Date) -> Bool](date/==(_:_:).md)
+- [static func == (Date, Date) -> Bool](../../eqeq%28_,_%29.md)
   Returns true if the two `Date` values represent the same point in time.
 ### Type Properties
-- [static let omitted: Date.FormatStyle.Symbol.Month](date/formatstyle/symbol/month/omitted.md)
+- [static let omitted: Date.FormatStyle.Symbol.Month](./month/omitted.md)
   The option for not including the symbol in the formatted output.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Date.FormatStyle.Symbol.CyclicYear](date/formatstyle/symbol/cyclicyear.md)
+### Modifying Date Style Format Symbols
+- [Date.FormatStyle.Symbol.CyclicYear](./cyclicyear.md)
   A type that specifies a format for a cyclic year in a date format style.
-- [Date.FormatStyle.Symbol.Day](date/formatstyle/symbol/day.md)
+- [Date.FormatStyle.Symbol.Day](./day.md)
   A type that specifies the format for a day in a date format style.
-- [Date.FormatStyle.Symbol.DayOfYear](date/formatstyle/symbol/dayofyear.md)
+- [Date.FormatStyle.Symbol.DayOfYear](./dayofyear.md)
   A type that specifies the format for the day of the year in a date format style.
-- [Date.FormatStyle.Symbol.DayPeriod](date/formatstyle/symbol/dayperiod.md)
+- [Date.FormatStyle.Symbol.DayPeriod](./dayperiod.md)
   A type that specifies a format for the time period in a date format style.
-- [Date.FormatStyle.Symbol.Era](date/formatstyle/symbol/era.md)
+- [Date.FormatStyle.Symbol.Era](./era.md)
   A type that specifies a format for the era in a date format style.
-- [Date.FormatStyle.Symbol.Hour](date/formatstyle/symbol/hour.md)
+- [Date.FormatStyle.Symbol.Hour](./hour.md)
   A type that specifies a format for the hour in a date format style.
-- [Date.FormatStyle.Symbol.Minute](date/formatstyle/symbol/minute.md)
+- [Date.FormatStyle.Symbol.Minute](./minute.md)
   A type that specifies the format for the minutes in a date format style.
-- [Date.FormatStyle.Symbol.Quarter](date/formatstyle/symbol/quarter.md)
+- [Date.FormatStyle.Symbol.Quarter](./quarter.md)
   A type that specifies the format for the quarter in a date format style.
-- [Date.FormatStyle.Symbol.Second](date/formatstyle/symbol/second.md)
+- [Date.FormatStyle.Symbol.Second](./second.md)
   A type that specifies the format for the seconds in a date format style.
-- [Date.FormatStyle.Symbol.SecondFraction](date/formatstyle/symbol/secondfraction.md)
+- [Date.FormatStyle.Symbol.SecondFraction](./secondfraction.md)
   A type that specifies the format for the second fraction in a date format style.
-- [Date.FormatStyle.Symbol.StandaloneMonth](date/formatstyle/symbol/standalonemonth.md)
+- [Date.FormatStyle.Symbol.StandaloneMonth](./standalonemonth.md)
   A type that specifies the format for a standalone month.
-- [Date.FormatStyle.Symbol.StandaloneQuarter](date/formatstyle/symbol/standalonequarter.md)
+- [Date.FormatStyle.Symbol.StandaloneQuarter](./standalonequarter.md)
   A type that specifies the format for a standalone quarter.
-- [Date.FormatStyle.Symbol.StandaloneWeekday](date/formatstyle/symbol/standaloneweekday.md)
+- [Date.FormatStyle.Symbol.StandaloneWeekday](./standaloneweekday.md)
   A type that specifies the format for a standalone weekday.
-- [Date.FormatStyle.Symbol.TimeZone](date/formatstyle/symbol/timezone.md)
+- [Date.FormatStyle.Symbol.TimeZone](./timezone.md)
   A type that specifies a format for the time zone in a date format style.
-- [Date.FormatStyle.Symbol.VerbatimHour](date/formatstyle/symbol/verbatimhour.md)
+- [Date.FormatStyle.Symbol.VerbatimHour](./verbatimhour.md)
   A type that specifies a format for the hour in a date format style.
 
 

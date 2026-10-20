@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kBootROMTypeNewWorld](1646266-anonymous/kbootromtypenewworld.md)
-- [kBootROMTypeOldWorld](1646266-anonymous/kbootromtypeoldworld.md)
+- [kBootROMTypeNewWorld](./api-1646266-anonymous/kbootromtypenewworld.md)
+- [kBootROMTypeOldWorld](./api-1646266-anonymous/kbootromtypeoldworld.md)
 
 
 ---

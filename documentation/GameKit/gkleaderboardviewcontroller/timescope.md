@@ -1,13 +1,14 @@
 # timeScope
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A time filter used to restrict which scores are displayed to the player.
 
 **Availability**:
-- macOS ?+
-- visionOS ?+
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -15,17 +16,30 @@ A time filter used to restrict which scores are displayed to the player.
 var timeScope: GKLeaderboard.TimeScope { get set }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, assign) GKLeaderboardTimeScope timeScope;
+```
+
+*macOS*
+
+```objc
+@property (atomic, assign) GKLeaderboardTimeScope timeScope;
+```
+
 #### Discussion
 
-This property determines which tab view is displayed to the player. The default value is [`GKLeaderboard.TimeScope.allTime`](gkleaderboard/timescope-swift.enum/alltime.md), which shows the best score each player has earned. For more information on time scopes, see [`GKLeaderboard`](gkleaderboard.md).
+This property determines which tab view is displayed to the player. The default value is [`GKLeaderboard.TimeScope.allTime`](../gkleaderboard/timescope-swift.enum/alltime.md), which shows the best score each player has earned. For more information on time scopes, see [`GKLeaderboard`](../gkleaderboard.md).
 
 If the player changes which tab they view, the `timeScope` property is automatically updated. For example, you can read the `timeScope` property after the view controller is dismissed, and set that value the next time you initialize a new leaderboard view controller.
 
 ## See Also
 
-- [var category: String!](gkleaderboardviewcontroller/category.md)
+### Configuring the Leaderboard View Controller
+- [var category: String!](./category.md)
   The named leaderboard that is displayed by the view controller.
-- [var leaderboardDelegate: (any GKLeaderboardViewControllerDelegate)!](gkleaderboardviewcontroller/leaderboarddelegate.md)
+- [var leaderboardDelegate: (any GKLeaderboardViewControllerDelegate)!](./leaderboarddelegate.md)
   The view controller’s delegate.
 
 

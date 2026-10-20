@@ -1,14 +1,15 @@
 # kBluetoothHCICommandSetConnectionlessPeripheralBroadcast
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothHCICommandSetConnectionlessPeripheralBroadcast = 0x0041
 ```
 

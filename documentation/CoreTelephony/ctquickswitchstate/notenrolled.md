@@ -1,7 +1,8 @@
 # CTQuickSwitchState.notEnrolled
 
 **Framework**: Core Telephony  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The device or phone number isn’t enrolled in quick switch.
 
@@ -16,13 +17,18 @@ The device or phone number isn’t enrolled in quick switch.
 case notEnrolled
 ```
 
+```c
+CTQuickSwitchStateNotEnrolled
+```
+
 ## See Also
 
-- [CTQuickSwitchState.active](ctquickswitchstate/active.md)
+### Quick switch states
+- [CTQuickSwitchState.active](./active.md)
   This device is the active participant; cellular service is available on this device.
-- [CTQuickSwitchState.failed](ctquickswitchstate/failed.md)
+- [CTQuickSwitchState.failed](./failed.md)
   The framework couldn’t determine the state of the device due to an error.
-- [CTQuickSwitchState.passive](ctquickswitchstate/passive.md)
+- [CTQuickSwitchState.passive](./passive.md)
   This device is passive; cellular service is held by another device.
 
 

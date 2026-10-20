@@ -1,25 +1,27 @@
 # getValue
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 int64_t getValue(uint64_t channel_id);
 ```
 
 ## See Also
 
-- [incrementValue](iosimplereporter/incrementvalue.md)
-- [initWith](iosimplereporter/initwith.md)
-- [setValue](iosimplereporter/setvalue.md)
+### Instance Methods
+- [incrementValue](./incrementvalue.md)
+- [initWith](./initwith.md)
+- [setValue](./setvalue.md)
 
 
 ---

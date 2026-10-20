@@ -1,7 +1,8 @@
 # SegmentBlendType.tangentTangent1
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Segment is the first of two tangents in a row
 

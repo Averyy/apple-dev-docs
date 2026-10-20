@@ -1,7 +1,8 @@
 # averageHeartRate
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The average heart rate that a person experiences during the workout.
 

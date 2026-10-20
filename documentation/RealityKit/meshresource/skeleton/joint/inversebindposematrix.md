@@ -1,7 +1,8 @@
 # inverseBindPoseMatrix
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A matrix which transforms from the authored pose (the “bind pose”) of the bound model to the local space of this joint.
 

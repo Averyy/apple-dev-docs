@@ -1,7 +1,8 @@
 # buttonMask
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A bit mask that represents which input-device buttons are pressed for the current event.
 
@@ -17,9 +18,14 @@ A bit mask that represents which input-device buttons are pressed for the curren
 var buttonMask: UIEvent.ButtonMask { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIEventButtonMask buttonMask;
+```
+
 ## See Also
 
-- [UIEvent.ButtonMask](uievent/buttonmask-swift.struct.md)
+### Getting the button mask
+- [UIEvent.ButtonMask](./buttonmask-swift.struct.md)
   Constants that indicate which input-device buttons are pressed.
 
 

@@ -1,7 +1,8 @@
 # CFBundleExecutable
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 The name of the bundle’s executable file.
 
@@ -13,9 +14,10 @@ The name of the bundle’s executable file.
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: string
+- **Name**: `CFBundleExecutable` (Executable file)
+- **Type**: string
 
 #### Discussion
 
@@ -25,13 +27,14 @@ macOS uses this key to locate the bundle’s executable or shared library in cas
 
 ## See Also
 
-- [NSPrincipalClass](information-property-list/nsprincipalclass.md)
+### Launch
+- [NSPrincipalClass](./nsprincipalclass.md)
   The name of the bundle’s main executable class.
-- [CLKComplicationPrincipalClass](information-property-list/clkcomplicationprincipalclass.md)
+- [CLKComplicationPrincipalClass](./clkcomplicationprincipalclass.md)
   The name of the class that implements the complication data source protocol.
-- [LSEnvironment](information-property-list/lsenvironment.md)
+- [LSEnvironment](./lsenvironment.md)
   Environment variables to set before launching the app.
-- [UIApplicationShortcutItems](information-property-list/uiapplicationshortcutitems.md)
+- [UIApplicationShortcutItems](./uiapplicationshortcutitems.md)
 
 
 ---

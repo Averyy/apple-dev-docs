@@ -1,7 +1,8 @@
 # rotationAlignment
 
 **Framework**: TabletopKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The rotation alignment indicates how the equipment’s orientation should be automatically aligned during the course of the interaction.
 

@@ -1,7 +1,8 @@
 # isAutomaticLegibleLanguageOption()
 
 **Framework**: Media Player  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that determines whether to use the best legible language option based on the system preferences.
 
@@ -20,13 +21,18 @@ Returns a Boolean value that determines whether to use the best legible language
 func isAutomaticLegibleLanguageOption() -> Bool
 ```
 
+```objc
+- (BOOL) isAutomaticLegibleLanguageOption;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the framework uses the system preferences to determine the best legible language option; otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the framework uses the system preferences to determine the best legible language option; otherwise [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [func isAutomaticAudibleLanguageOption() -> Bool](mpnowplayinginfolanguageoption/isautomaticaudiblelanguageoption.md)
+### Retrieving a language option based on system preferences
+- [func isAutomaticAudibleLanguageOption() -> Bool](./isautomaticaudiblelanguageoption%28%29.md)
   Returns a Boolean value that determines whether to use the best audible language option based on the system preferences.
 
 

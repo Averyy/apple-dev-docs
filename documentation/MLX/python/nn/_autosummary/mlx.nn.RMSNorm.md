@@ -6,33 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.R
 
 # mlx.nn.RMSNorm
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.RMSNorm.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.RMSNorm
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.RMSNorm
-
 **class RMSNorm(*dims: int*, *eps: float = 1e-05*)**
 : Applies Root Mean Square normalization [1] to the inputs.
 Computes
@@ -50,5 +23,3 @@ Parameters:
 Default: `1e-5`.
 
 Methods
-
-** Contents

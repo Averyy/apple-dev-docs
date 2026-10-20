@@ -1,11 +1,12 @@
 # LosslessStringConvertible Implementations
 
-**Framework**: PackageDescription
+**Framework**: PackageDescription  
+**Role**: API Collection
 
 ## Topics
 
 ### Initializers
-- [init?(String)](version/init(_:).md)
+- [init?(String)](./init%28_%29.md)
   Initializes a version struct with the provided version string.
 
 

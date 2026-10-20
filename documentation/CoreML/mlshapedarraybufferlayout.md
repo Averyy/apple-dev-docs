@@ -1,7 +1,8 @@
 # MLShapedArrayBufferLayout
 
 **Framework**: Core ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Buffer layout enum
 
@@ -23,22 +24,23 @@ enum MLShapedArrayBufferLayout
 ## Topics
 
 ### Buffer layouts
-- [MLShapedArrayBufferLayout.firstMajorContiguous](mlshapedarraybufferlayout/firstmajorcontiguous.md)
+- [MLShapedArrayBufferLayout.firstMajorContiguous](./mlshapedarraybufferlayout/firstmajorcontiguous.md)
   Layout scalars contiguously in first-major order.
-- [MLShapedArrayBufferLayout.lastMajorContiguous](mlshapedarraybufferlayout/lastmajorcontiguous.md)
+- [MLShapedArrayBufferLayout.lastMajorContiguous](./mlshapedarraybufferlayout/lastmajorcontiguous.md)
   Layout scalars contiguously in last-major order.
-- [MLShapedArrayBufferLayout.strides(_:)](mlshapedarraybufferlayout/strides(_:).md)
+- [MLShapedArrayBufferLayout.strides(_:)](./mlshapedarraybufferlayout/strides%28_%29.md)
   Layout scalars according to the strides.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MLModelStructure](mlmodelstructure-swift.enum.md)
+### Enumerations
+- [enum MLModelStructure](./mlmodelstructure-swift.enum.md)
   An enum representing the structure of a model.
 
 

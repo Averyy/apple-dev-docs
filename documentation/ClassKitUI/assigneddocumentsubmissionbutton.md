@@ -1,7 +1,8 @@
 # AssignedDocumentSubmissionButton
 
 **Framework**: ClassKit UI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A button that provides submission functionality for the assigned document.
 
@@ -27,13 +28,13 @@ You can customize the submission process using view modifiers that execute at ke
 
 For submissions, use:
 
-- [`onAssignedDocumentWillSubmit(_:)`](https://developer.apple.com/documentation/swiftui/view/onassigneddocumentwillsubmit(_:)) to validate the document before submission.
-- [`onAssignedDocumentDidSubmit(_:)`](https://developer.apple.com/documentation/swiftui/view/onassigneddocumentdidsubmit(_:)) to update your interface or log analytics after a successful submission.
+- [`onAssignedDocumentWillSubmit(_:)`](../SwiftUI/view/onassigneddocumentwillsubmit%28_%29.md) to validate the document before submission.
+- [`onAssignedDocumentDidSubmit(_:)`](../SwiftUI/view/onassigneddocumentdidsubmit%28_%29.md) to update your interface or log analytics after a successful submission.
 
 For withdrawing submissions use:
 
-- [`onAssignedDocumentWillWithdraw(_:)`](https://developer.apple.com/documentation/swiftui/view/onassigneddocumentwillwithdraw(_:)) to confirm the withdrawal action with the student or prepare your app state.
-- [`onAssignedDocumentDidWithdraw(_:)`](https://developer.apple.com/documentation/swiftui/view/onassigneddocumentdidwithdraw(_:)) to update your interface or notify the student that their document is no longer submitted.
+- [`onAssignedDocumentWillWithdraw(_:)`](../SwiftUI/view/onassigneddocumentwillwithdraw%28_%29.md) to confirm the withdrawal action with the student or prepare your app state.
+- [`onAssignedDocumentDidWithdraw(_:)`](../SwiftUI/view/onassigneddocumentdidwithdraw%28_%29.md) to update your interface or notify the student that their document is no longer submitted.
 
 The following example shows how to create an assigned document submission button and customize its behavior with validation and completion actions:
 
@@ -61,21 +62,22 @@ AssignedDocumentSubmissionButton(documentURL: documentURL)
 ## Topics
 
 ### Initializers
-- [init(documentURL: URL)](assigneddocumentsubmissionbutton/init(documenturl:).md)
+- [init(documentURL: URL)](./assigneddocumentsubmissionbutton/init%28documenturl%29.md)
   Creates a button for document submission.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [View](../SwiftUI/view.md)
 
 ## See Also
 
-- [class AssignedDocumentDeferredMenuElement](assigneddocumentdeferredmenuelement.md)
+### Submitting assigned documents
+- [class AssignedDocumentDeferredMenuElement](./assigneddocumentdeferredmenuelement.md)
   A deferred menu element that provides assigned document submission functionality.
-- [class AssignedDocumentMenuItem](assigneddocumentmenuitem.md)
+- [class AssignedDocumentMenuItem](./assigneddocumentmenuitem.md)
   A menu item that provides assigned document submission functionality.
 
 

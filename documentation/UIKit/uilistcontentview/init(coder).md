@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a list content view from data in an unarchiver.
 
@@ -18,9 +19,14 @@ Creates a list content view from data in an unarchiver.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## See Also
 
-- [convenience init(configuration: UIListContentConfiguration)](uilistcontentview/init(configuration:).md)
+### Creating a list content view
+- [convenience init(configuration: UIListContentConfiguration)](./init%28configuration%29.md)
   Creates a list content view with the specified content configuration.
 
 

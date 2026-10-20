@@ -1,7 +1,8 @@
 # NSFileProviderVolumeUnsupportedReason
 
 **Framework**: File Provider  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe why an external volume might not be eligible for storing a domain.
 
@@ -14,35 +15,40 @@ Constants that describe why an external volume might not be eligible for storing
 struct NSFileProviderVolumeUnsupportedReason
 ```
 
+```c
+enum NSFileProviderVolumeUnsupportedReason : NSUInteger;
+```
+
 ## Topics
 
 ### Reasons
-- [static var unknown: NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason/unknown.md)
-- [static var nonEncrypted: NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason/nonencrypted.md)
-- [static var readOnly: NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason/readonly.md)
-- [static var network: NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason/network.md)
-- [static var quarantined: NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason/quarantined.md)
+- [static var unknown: NSFileProviderVolumeUnsupportedReason](./nsfileprovidervolumeunsupportedreason/unknown.md)
+- [static var nonEncrypted: NSFileProviderVolumeUnsupportedReason](./nsfileprovidervolumeunsupportedreason/nonencrypted.md)
+- [static var readOnly: NSFileProviderVolumeUnsupportedReason](./nsfileprovidervolumeunsupportedreason/readonly.md)
+- [static var network: NSFileProviderVolumeUnsupportedReason](./nsfileprovidervolumeunsupportedreason/network.md)
+- [static var quarantined: NSFileProviderVolumeUnsupportedReason](./nsfileprovidervolumeunsupportedreason/quarantined.md)
 ### Initializers
-- [init(rawValue: UInt)](nsfileprovidervolumeunsupportedreason/init(rawvalue:).md)
+- [init(rawValue: UInt)](./nsfileprovidervolumeunsupportedreason/init%28rawvalue%29.md)
 ### Type Properties
-- [static var nonAPFS: NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason/nonapfs.md)
+- [static var nonAPFS: NSFileProviderVolumeUnsupportedReason](./nsfileprovidervolumeunsupportedreason/nonapfs.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [NSFileProviderManager.EligibilityResult.eligible](nsfileprovidermanager/eligibilityresult/eligible.md)
-- [NSFileProviderManager.EligibilityResult.ineligible(_:)](nsfileprovidermanager/eligibilityresult/ineligible(_:).md)
+### Determining eligibility
+- [NSFileProviderManager.EligibilityResult.eligible](./nsfileprovidermanager/eligibilityresult/eligible.md)
+- [NSFileProviderManager.EligibilityResult.ineligible(_:)](./nsfileprovidermanager/eligibilityresult/ineligible%28_%29.md)
 
 
 ---

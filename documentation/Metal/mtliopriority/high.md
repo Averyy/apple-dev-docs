@@ -1,7 +1,8 @@
 # MTLIOPriority.high
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Sets a new input/output command queue’s priority to a high priority.
 
@@ -19,15 +20,20 @@ Sets a new input/output command queue’s priority to a high priority.
 case high
 ```
 
+```c
+MTLIOPriorityHigh
+```
+
 #### Discussion
 
 Create a command queue with a high priority to load important assets or those your app needs quickly. For example, a game that plays sound effects that match its animations can load its audio assets with low latency with a high priority queue.
 
 ## See Also
 
-- [MTLIOPriority.normal](mtliopriority/normal.md)
+### I/O command queue priorities
+- [MTLIOPriority.normal](./normal.md)
   Designates the normal priority for a new input/output command queue.
-- [MTLIOPriority.low](mtliopriority/low.md)
+- [MTLIOPriority.low](./low.md)
   Designates the low priority for a new input/output command queue.
 
 

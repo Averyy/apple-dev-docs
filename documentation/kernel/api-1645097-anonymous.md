@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOConnectionBuiltIn](1645097-anonymous/kioconnectionbuiltin.md)
-- [kIOConnectionStereoSync](1645097-anonymous/kioconnectionstereosync.md)
+- [kIOConnectionBuiltIn](./api-1645097-anonymous/kioconnectionbuiltin.md)
+- [kIOConnectionStereoSync](./api-1645097-anonymous/kioconnectionstereosync.md)
 
 
 ---

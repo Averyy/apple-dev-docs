@@ -1,9 +1,10 @@
 # providerConfiguration
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A [`NEFilterProviderConfiguration`](nefilterproviderconfiguration.md) object containing the filter configuration settings.
+A [`NEFilterProviderConfiguration`](../nefilterproviderconfiguration.md) object containing the filter configuration settings.
 
 **Availability**:
 - iOS 9.0+
@@ -18,15 +19,20 @@ A [`NEFilterProviderConfiguration`](nefilterproviderconfiguration.md) object con
 var providerConfiguration: NEFilterProviderConfiguration? { get set }
 ```
 
+```objc
+@property (strong, nullable) NEFilterProviderConfiguration * providerConfiguration;
+```
+
 #### Discussion
 
 If this property is nil after calling `loadFromPreferencesWithCompletionHandler:`, then the filter configuration does not exist in the Network Extension preferences.
 
 ## See Also
 
-- [var isEnabled: Bool](nefiltermanager/isenabled.md)
+### Accessing filter configuration properties
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean used to toggle the enabled state of the filter.
-- [var localizedDescription: String?](nefiltermanager/localizeddescription.md)
+- [var localizedDescription: String?](./localizeddescription.md)
   A string containing a description of the filter configuration.
 
 

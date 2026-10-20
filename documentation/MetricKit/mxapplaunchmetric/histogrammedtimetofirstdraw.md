@@ -1,16 +1,19 @@
 # histogrammedTimeToFirstDraw
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A histogram of the different amounts of time taken to launch the app.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 10.15+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`TimeToFirstDrawMetric`](../timetofirstdrawmetric.md) instead.
 
 ## Declaration
 
@@ -18,13 +21,18 @@ A histogram of the different amounts of time taken to launch the app.
 var histogrammedTimeToFirstDraw: MXHistogram<UnitDuration> { get }
 ```
 
+```objc
+@property (strong, readonly, nonnull) MXHistogram<NSUnitDuration *> * histogrammedTimeToFirstDraw;
+```
+
 ## See Also
 
-- [var histogrammedOptimizedTimeToFirstDraw: MXHistogram<UnitDuration>](mxapplaunchmetric/histogrammedoptimizedtimetofirstdraw.md)
+### Viewing app launch and resume time
+- [var histogrammedOptimizedTimeToFirstDraw: MXHistogram<UnitDuration>](./histogrammedoptimizedtimetofirstdraw.md)
   A histogram of the different amounts of time associated with prewarmed app launches.
-- [var histogrammedApplicationResumeTime: MXHistogram<UnitDuration>](mxapplaunchmetric/histogrammedapplicationresumetime.md)
+- [var histogrammedApplicationResumeTime: MXHistogram<UnitDuration>](./histogrammedapplicationresumetime.md)
   A histogram of the different amounts of time taken to resume the app from the background.
-- [var histogrammedExtendedLaunch: MXHistogram<UnitDuration>](mxapplaunchmetric/histogrammedextendedlaunch.md)
+- [var histogrammedExtendedLaunch: MXHistogram<UnitDuration>](./histogrammedextendedlaunch.md)
   A histogram of the different amounts of time taken to launch the app, including the extended launch tasks.
 
 

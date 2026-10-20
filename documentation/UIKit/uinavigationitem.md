@@ -1,7 +1,8 @@
 # UINavigationItem
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The items that a navigation bar displays when the associated view controller is visible.
 
@@ -9,7 +10,7 @@ The items that a navigation bar displays when the associated view controller is 
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,197 +20,202 @@ The items that a navigation bar displays when the associated view controller is 
 class UINavigationItem
 ```
 
+```objc
+@interface UINavigationItem : NSObject
+```
+
 #### Overview
 
-When building a navigation interface, each view controller that you push onto the navigation stack must have a [`UINavigationItem`](uinavigationitem.md) object that contains the buttons and views you want to display in the navigation bar. The managing [`UINavigationController`](uinavigationcontroller.md) object uses the navigation items of the topmost two view controllers to populate the navigation bar with content.
+When building a navigation interface, each view controller that you push onto the navigation stack must have a [`UINavigationItem`](./uinavigationitem.md) object that contains the buttons and views you want to display in the navigation bar. The managing [`UINavigationController`](./uinavigationcontroller.md) object uses the navigation items of the topmost two view controllers to populate the navigation bar with content.
 
-A navigation item always reflects information about its associated view controller. The navigation item must provide a title to display when the view controller is topmost on the navigation stack. The item can also contain additional buttons to display on the right (or trailing) side of the navigation bar. You can specify buttons and views to display on the left (or leading) side of the toolbar using the [`leftBarButtonItems`](uinavigationitem/leftbarbuttonitems.md) property, but the navigation controller displays those buttons only when space is available.
+A navigation item always reflects information about its associated view controller. The navigation item must provide a title to display when the view controller is topmost on the navigation stack. The item can also contain additional buttons to display on the right (or trailing) side of the navigation bar. You can specify buttons and views to display on the left (or leading) side of the toolbar using the [`leftBarButtonItems`](./uinavigationitem/leftbarbuttonitems.md) property, but the navigation controller displays those buttons only when space is available.
 
-To convey additional information about the view that a navigation item represents, use the [`subtitle`](uinavigationitem/subtitle.md) property. For example, in a view controller that displays a list of messages, you could use the `subtitle` to indicate the number of unread messages or the last time the app fetched messages. To apply text styles to a navigation item’s title or subtitle, use the [`attributedTitle`](uinavigationitem/attributedtitle-25fxb.md), [`attributedSubtitle`](uinavigationitem/attributedsubtitle-wrjk.md), and [`largeAttributedSubtitle`](uinavigationitem/largeattributedsubtitle-4z2gx.md) properties.
+To convey additional information about the view that a navigation item represents, use the [`subtitle`](./uinavigationitem/subtitle.md) property. For example, in a view controller that displays a list of messages, you could use the `subtitle` to indicate the number of unread messages or the last time the app fetched messages. To apply text styles to a navigation item’s title or subtitle, use the [`attributedTitle`](./uinavigationitem/attributedtitle-25fxb.md), [`attributedSubtitle`](./uinavigationitem/attributedsubtitle-wrjk.md), and [`largeAttributedSubtitle`](./uinavigationitem/largeattributedsubtitle-4z2gx.md) properties.
 
-The [`backBarButtonItem`](uinavigationitem/backbarbuttonitem.md) property of a navigation item reflects the Back button you want to display when the current view controller is just below the topmost view controller. The Back button doesn’t appear when the current view controller is topmost.
+The [`backBarButtonItem`](./uinavigationitem/backbarbuttonitem.md) property of a navigation item reflects the Back button you want to display when the current view controller is just below the topmost view controller. The Back button doesn’t appear when the current view controller is topmost.
 
-When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](uibarbuttonitem.md) objects. If you want to display custom views in the navigation bar, you must wrap those views inside a [`UIBarButtonItem`](uibarbuttonitem.md) object before adding them to the navigation item.
+When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](./uibarbuttonitem.md) objects. If you want to display custom views in the navigation bar, you must wrap those views inside a [`UIBarButtonItem`](./uibarbuttonitem.md) object before adding them to the navigation item.
 
 ## Topics
 
 ### Initializing an item
-- [init(title: String)](uinavigationitem/init(title:).md)
+- [init(title: String)](./uinavigationitem/init%28title%29.md)
   Creates a navigation item with the specified title.
-- [init?(coder: NSCoder)](uinavigationitem/init(coder:).md)
+- [init?(coder: NSCoder)](./uinavigationitem/init%28coder%29.md)
   Creates a navigation item from data in an unarchiver.
 ### Configuring the title
-- [var title: String?](uinavigationitem/title.md)
+- [var title: String?](./uinavigationitem/title.md)
   The navigation item’s title that displays in the navigation bar.
-- [var attributedTitle: AttributedString?](uinavigationitem/attributedtitle-25fxb.md)
+- [var attributedTitle: AttributedString?](./uinavigationitem/attributedtitle-25fxb.md)
   An attributed string that the system renders as the title in the navigation bar.
-- [var largeTitle: String?](uinavigationitem/largetitle.md)
+- [var largeTitle: String?](./uinavigationitem/largetitle.md)
   String to be used as the large title.
-- [var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode](uinavigationitem/largetitledisplaymode-swift.property.md)
+- [var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode](./uinavigationitem/largetitledisplaymode-swift.property.md)
   The mode for displaying the title of the navigation bar.
-- [UINavigationItem.LargeTitleDisplayMode](uinavigationitem/largetitledisplaymode-swift.enum.md)
+- [UINavigationItem.LargeTitleDisplayMode](./uinavigationitem/largetitledisplaymode-swift.enum.md)
   Constants that indicate how to size the title of this item.
 ### Configuring the subtitle
-- [var subtitle: String?](uinavigationitem/subtitle.md)
+- [var subtitle: String?](./uinavigationitem/subtitle.md)
   A string to display as the subtitle in the navigation bar.
-- [var attributedSubtitle: AttributedString?](uinavigationitem/attributedsubtitle-wrjk.md)
-- [var largeSubtitle: String?](uinavigationitem/largesubtitle.md)
+- [var attributedSubtitle: AttributedString?](./uinavigationitem/attributedsubtitle-wrjk.md)
+- [var largeSubtitle: String?](./uinavigationitem/largesubtitle.md)
   String to be rendered below the large title.
-- [var largeAttributedSubtitle: AttributedString?](uinavigationitem/largeattributedsubtitle-4z2gx.md)
+- [var largeAttributedSubtitle: AttributedString?](./uinavigationitem/largeattributedsubtitle-4z2gx.md)
 ### Configuring the Back button
-- [var backBarButtonItem: UIBarButtonItem?](uinavigationitem/backbarbuttonitem.md)
+- [var backBarButtonItem: UIBarButtonItem?](./uinavigationitem/backbarbuttonitem.md)
   The bar button item for adding a Back button to the navigation bar.
-- [var backButtonTitle: String?](uinavigationitem/backbuttontitle.md)
+- [var backButtonTitle: String?](./uinavigationitem/backbuttontitle.md)
   The custom title of the Back button.
-- [var backButtonDisplayMode: UINavigationItem.BackButtonDisplayMode](uinavigationitem/backbuttondisplaymode-swift.property.md)
+- [var backButtonDisplayMode: UINavigationItem.BackButtonDisplayMode](./uinavigationitem/backbuttondisplaymode-swift.property.md)
   The display mode of the Back button.
-- [UINavigationItem.BackButtonDisplayMode](uinavigationitem/backbuttondisplaymode-swift.enum.md)
+- [UINavigationItem.BackButtonDisplayMode](./uinavigationitem/backbuttondisplaymode-swift.enum.md)
   Constants that describe the display modes of the Back button.
-- [var hidesBackButton: Bool](uinavigationitem/hidesbackbutton.md)
+- [var hidesBackButton: Bool](./uinavigationitem/hidesbackbutton.md)
   A Boolean value that determines whether the navigation item hides the Back button.
-- [func setHidesBackButton(Bool, animated: Bool)](uinavigationitem/sethidesbackbutton(_:animated:).md)
+- [func setHidesBackButton(Bool, animated: Bool)](./uinavigationitem/sethidesbackbutton%28_,animated%29.md)
   Hides or shows the Back button, optionally animating the transition.
-- [var backAction: UIAction?](uinavigationitem/backaction.md)
+- [var backAction: UIAction?](./uinavigationitem/backaction.md)
   The back action for the navigation bar.
 ### Specifying the navigation style
-- [var style: UINavigationItem.ItemStyle](uinavigationitem/style.md)
+- [var style: UINavigationItem.ItemStyle](./uinavigationitem/style.md)
   A style that determines how the content of the navigation item lays out in the navigation bar.
-- [UINavigationItem.ItemStyle](uinavigationitem/itemstyle.md)
+- [UINavigationItem.ItemStyle](./uinavigationitem/itemstyle.md)
   Constants that determine how the content of the navigation item lays out in the navigation bar.
 ### Specifying custom views
-- [var centerItemGroups: [UIBarButtonItemGroup]](uinavigationitem/centeritemgroups.md)
+- [var centerItemGroups: [UIBarButtonItemGroup]](./uinavigationitem/centeritemgroups.md)
   Customizable item groups to display in the center section of the navigation bar.
-- [var leadingItemGroups: [UIBarButtonItemGroup]](uinavigationitem/leadingitemgroups.md)
+- [var leadingItemGroups: [UIBarButtonItemGroup]](./uinavigationitem/leadingitemgroups.md)
   Item groups to display in the leading section of the navigation bar.
-- [var trailingItemGroups: [UIBarButtonItemGroup]](uinavigationitem/trailingitemgroups.md)
+- [var trailingItemGroups: [UIBarButtonItemGroup]](./uinavigationitem/trailingitemgroups.md)
   Item groups to display in the trailing section of the navigation bar.
-- [var pinnedTrailingGroup: UIBarButtonItemGroup?](uinavigationitem/pinnedtrailinggroup.md)
+- [var pinnedTrailingGroup: UIBarButtonItemGroup?](./uinavigationitem/pinnedtrailinggroup.md)
   The item group to display on the trailing edge of the navigation bar, on the trailing side of the overflow and search items.
-- [var titleView: UIView?](uinavigationitem/titleview.md)
+- [var titleView: UIView?](./uinavigationitem/titleview.md)
   A custom view that displays in the center of the navigation bar when the receiver is the top item.
-- [var subtitleView: UIView?](uinavigationitem/subtitleview.md)
+- [var subtitleView: UIView?](./uinavigationitem/subtitleview.md)
   A custom view to display below the title in the navigation bar.
-- [var largeSubtitleView: UIView?](uinavigationitem/largesubtitleview.md)
+- [var largeSubtitleView: UIView?](./uinavigationitem/largesubtitleview.md)
   A custom view to display below the large title.
-- [var leftBarButtonItems: [UIBarButtonItem]?](uinavigationitem/leftbarbuttonitems.md)
+- [var leftBarButtonItems: [UIBarButtonItem]?](./uinavigationitem/leftbarbuttonitems.md)
   An array of custom bar button items to display on the left (or leading) side of the navigation bar when the navigation item is the top item.
-- [var leftBarButtonItem: UIBarButtonItem?](uinavigationitem/leftbarbuttonitem.md)
+- [var leftBarButtonItem: UIBarButtonItem?](./uinavigationitem/leftbarbuttonitem.md)
   A custom bar button item that displays on the left (or leading) edge of the navigation bar when the navigation item is the top item.
-- [var rightBarButtonItems: [UIBarButtonItem]?](uinavigationitem/rightbarbuttonitems.md)
+- [var rightBarButtonItems: [UIBarButtonItem]?](./uinavigationitem/rightbarbuttonitems.md)
   An array of custom bar button items to display on the right (or trailing) side of the navigation bar when the navigation item is the top item.
-- [var rightBarButtonItem: UIBarButtonItem?](uinavigationitem/rightbarbuttonitem.md)
+- [var rightBarButtonItem: UIBarButtonItem?](./uinavigationitem/rightbarbuttonitem.md)
   A custom bar button item that displays on the right (or trailing) edge of the navigation bar when the navigation item is the top item.
-- [func setLeftBarButtonItems([UIBarButtonItem]?, animated: Bool)](uinavigationitem/setleftbarbuttonitems(_:animated:).md)
+- [func setLeftBarButtonItems([UIBarButtonItem]?, animated: Bool)](./uinavigationitem/setleftbarbuttonitems%28_,animated%29.md)
   Sets the left bar button items, optionally animating the transition to the new items.
-- [func setLeftBarButton(UIBarButtonItem?, animated: Bool)](uinavigationitem/setleftbarbutton(_:animated:).md)
+- [func setLeftBarButton(UIBarButtonItem?, animated: Bool)](./uinavigationitem/setleftbarbutton%28_,animated%29.md)
   Sets the custom bar button item, optionally animating the transition to the new item.
-- [func setRightBarButtonItems([UIBarButtonItem]?, animated: Bool)](uinavigationitem/setrightbarbuttonitems(_:animated:).md)
+- [func setRightBarButtonItems([UIBarButtonItem]?, animated: Bool)](./uinavigationitem/setrightbarbuttonitems%28_,animated%29.md)
   Sets the right bar button items, optionally animating the transition to the new items.
-- [func setRightBarButton(UIBarButtonItem?, animated: Bool)](uinavigationitem/setrightbarbutton(_:animated:).md)
+- [func setRightBarButton(UIBarButtonItem?, animated: Bool)](./uinavigationitem/setrightbarbutton%28_,animated%29.md)
   Sets the custom bar button item, optionally animating the transition to the view.
 ### Configuring bars on the vertical axis
-- [var verticalBarCompressionBehavior: UIVerticalBarCompressionBehavior](uinavigationitem/verticalbarcompressionbehavior.md)
+- [var verticalBarCompressionBehavior: UIVerticalBarCompressionBehavior](./uinavigationitem/verticalbarcompressionbehavior.md)
   When the tab bar and navigation/toolbar items are both rendered together in the vertical bar, this property controls which items compress first.
-- [enum UIVerticalBarCompressionBehavior](uiverticalbarcompressionbehavior.md)
+- [enum UIVerticalBarCompressionBehavior](./uiverticalbarcompressionbehavior.md)
   How bars compress when different types of bars are hosted together and space is constrained.
 ### Getting and setting properties
-- [var prompt: String?](uinavigationitem/prompt.md)
+- [var prompt: String?](./uinavigationitem/prompt.md)
   A single line of text that displays at the top of the navigation bar.
-- [var leftItemsSupplementBackButton: Bool](uinavigationitem/leftitemssupplementbackbutton.md)
+- [var leftItemsSupplementBackButton: Bool](./uinavigationitem/leftitemssupplementbackbutton.md)
   A Boolean value that indicates whether the left items display in addition to the Back button.
 ### Overriding the navigation bar’s appearance settings
-- [var standardAppearance: UINavigationBarAppearance?](uinavigationitem/standardappearance.md)
+- [var standardAppearance: UINavigationBarAppearance?](./uinavigationitem/standardappearance.md)
   The appearance settings for a standard-height navigation bar.
-- [var compactAppearance: UINavigationBarAppearance?](uinavigationitem/compactappearance.md)
+- [var compactAppearance: UINavigationBarAppearance?](./uinavigationitem/compactappearance.md)
   The appearance settings for a compact-height navigation bar.
-- [var scrollEdgeAppearance: UINavigationBarAppearance?](uinavigationitem/scrolledgeappearance.md)
+- [var scrollEdgeAppearance: UINavigationBarAppearance?](./uinavigationitem/scrolledgeappearance.md)
   The appearance settings for a standard-height navigation bar when the edge of scrollable content aligns with the edge of the navigation bar.
-- [var compactScrollEdgeAppearance: UINavigationBarAppearance?](uinavigationitem/compactscrolledgeappearance.md)
+- [var compactScrollEdgeAppearance: UINavigationBarAppearance?](./uinavigationitem/compactscrolledgeappearance.md)
   The appearance settings for a compact-height navigation bar when the edge of scrollable content aligns with the edge of the navigation bar.
 ### Integrating search into your interface
-- [var searchController: UISearchController?](uinavigationitem/searchcontroller.md)
+- [var searchController: UISearchController?](./uinavigationitem/searchcontroller.md)
   The search controller to integrate into your navigation interface.
-- [var hidesSearchBarWhenScrolling: Bool](uinavigationitem/hidessearchbarwhenscrolling.md)
+- [var hidesSearchBarWhenScrolling: Bool](./uinavigationitem/hidessearchbarwhenscrolling.md)
   A Boolean value that indicates whether the app hides the integrated search bar when scrolling any underlying content.
-- [var searchBarPlacement: UINavigationItem.SearchBarPlacement](uinavigationitem/searchbarplacement-swift.property.md)
+- [var searchBarPlacement: UINavigationItem.SearchBarPlacement](./uinavigationitem/searchbarplacement-swift.property.md)
   The placement of the search bar in the navigation bar.
-- [var preferredSearchBarPlacement: UINavigationItem.SearchBarPlacement](uinavigationitem/preferredsearchbarplacement.md)
+- [var preferredSearchBarPlacement: UINavigationItem.SearchBarPlacement](./uinavigationitem/preferredsearchbarplacement.md)
   The preferred placement of the search bar in the navigation bar.
-- [UINavigationItem.SearchBarPlacement](uinavigationitem/searchbarplacement-swift.enum.md)
+- [UINavigationItem.SearchBarPlacement](./uinavigationitem/searchbarplacement-swift.enum.md)
   Constants that determine where the search bar appears in the navigation bar.
-- [var searchBarPlacementAllowsExternalIntegration: Bool](uinavigationitem/searchbarplacementallowsexternalintegration.md)
+- [var searchBarPlacementAllowsExternalIntegration: Bool](./uinavigationitem/searchbarplacementallowsexternalintegration.md)
   A Boolean value that indicates whether an alternate object may integrate the search bar somewhere other than the navigation bar or toolbar.
-- [var searchBarPlacementAllowsToolbarIntegration: Bool](uinavigationitem/searchbarplacementallowstoolbarintegration.md)
+- [var searchBarPlacementAllowsToolbarIntegration: Bool](./uinavigationitem/searchbarplacementallowstoolbarintegration.md)
   A Boolean value that indicates whether the system can place the search bar among other toolbar items on iPhone.
-- [var searchBarPlacementBarButtonItem: UIBarButtonItem](uinavigationitem/searchbarplacementbarbuttonitem.md)
+- [var searchBarPlacementBarButtonItem: UIBarButtonItem](./uinavigationitem/searchbarplacementbarbuttonitem.md)
   An item you use to control the placement of the search bar in a toolbar on iPhone.
 ### Supporting navigation bar customization
-- [var customizationIdentifier: String?](uinavigationitem/customizationidentifier.md)
+- [var customizationIdentifier: String?](./uinavigationitem/customizationidentifier.md)
   A globally unique string that enables user customization of the navigation bar layout.
 ### Working with the overflow menu
-- [var additionalOverflowItems: UIDeferredMenuElement?](uinavigationitem/additionaloverflowitems.md)
+- [var additionalOverflowItems: UIDeferredMenuElement?](./uinavigationitem/additionaloverflowitems.md)
   Additional items to present in the overflow menu.
-- [var overflowPresentationSource: (any UIPopoverPresentationControllerSourceItem)?](uinavigationitem/overflowpresentationsource.md)
+- [var overflowPresentationSource: (any UIPopoverPresentationControllerSourceItem)?](./uinavigationitem/overflowpresentationsource.md)
   The item you can use as an anchor to present a custom UI from the overflow menu button.
 ### Customizing the title menu
-- [var titleMenuProvider: (([UIMenuElement]) -> UIMenu?)?](uinavigationitem/titlemenuprovider.md)
+- [var titleMenuProvider: (([UIMenuElement]) -> UIMenu?)?](./uinavigationitem/titlemenuprovider.md)
   A closure that generates the navigation item’s title menu.
-- [var documentProperties: UIDocumentProperties?](uinavigationitem/documentproperties.md)
+- [var documentProperties: UIDocumentProperties?](./uinavigationitem/documentproperties.md)
   An object that provides the document header for the title menu.
-- [class UIDocumentProperties](uidocumentproperties.md)
+- [class UIDocumentProperties](./uidocumentproperties.md)
   Information that UIKit uses to generate a document header for a navigation item’s title menu.
 ### Renaming documents
-- [var renameDelegate: (any UINavigationItemRenameDelegate)?](uinavigationitem/renamedelegate-8jiuf.md)
+- [var renameDelegate: (any UINavigationItemRenameDelegate)?](./uinavigationitem/renamedelegate-8jiuf.md)
   The delegate for renaming the navigation item.
-- [protocol UINavigationItemRenameDelegate](uinavigationitemrenamedelegate-5j4ws.md)
+- [protocol UINavigationItemRenameDelegate](./uinavigationitemrenamedelegate-5j4ws.md)
   Methods an object implements to rename a navigation item.
 ### Instance Properties
-- [var navigationBarMinimization: UIBarMinimization](uinavigationitem/navigationbarminimization-1kj9z.md)
-- [var titleAlignment: UINavigationItem.TitleAlignment](uinavigationitem/titlealignment-swift.property.md)
+- [var navigationBarMinimization: UIBarMinimization](./uinavigationitem/navigationbarminimization-1kj9z.md)
+- [var titleAlignment: UINavigationItem.TitleAlignment](./uinavigationitem/titlealignment-swift.property.md)
   The preferred alignment of the navigation bar’s title.
 ### Enumerations
-- [UINavigationItem.TitleAlignment](uinavigationitem/titlealignment-swift.enum.md)
+- [UINavigationItem.TitleAlignment](./uinavigationitem/titlealignment-swift.enum.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Creating a custom container view controller](creating-a-custom-container-view-controller.md)
+### Container view controllers
+- [Creating a custom container view controller](./creating-a-custom-container-view-controller.md)
   Create a composite interface by combining content from one or more view controllers with other custom views.
-- [class UISplitViewController](uisplitviewcontroller.md)
+- [class UISplitViewController](./uisplitviewcontroller.md)
   A container view controller that implements a hierarchical interface.
-- [class UINavigationController](uinavigationcontroller.md)
+- [class UINavigationController](./uinavigationcontroller.md)
   A container view controller that defines a stack-based scheme for navigating hierarchical content.
-- [class UINavigationBar](uinavigationbar.md)
+- [class UINavigationBar](./uinavigationbar.md)
   A region that displays the title and controls provided by navigation items.
-- [class UITabBarController](uitabbarcontroller.md)
+- [class UITabBarController](./uitabbarcontroller.md)
   A container view controller that manages a multiselection interface, where the selection determines which child view controller to display.
-- [class UITabBar](uitabbar.md)
+- [class UITabBar](./uitabbar.md)
   A control that displays one or more buttons in a tab bar for selecting between different subtasks, views, or modes in an app.
-- [class UITabBarItem](uitabbaritem.md)
+- [class UITabBarItem](./uitabbaritem.md)
   An object that describes an item in a tab bar.
-- [class UITab](uitab.md)
+- [class UITab](./uitab.md)
   An object that manages a tab in a tab bar.
-- [class UITabAccessory](uitabaccessory.md)
-- [class UISearchTab](uisearchtab.md)
+- [class UITabAccessory](./uitabaccessory.md)
+- [class UISearchTab](./uisearchtab.md)
   A tab subclass that represents the system’s search tab.
-- [class UITabGroup](uitabgroup.md)
+- [class UITabGroup](./uitabgroup.md)
   An object that manages a collection of tab objects.
-- [class UIPageViewController](uipageviewcontroller.md)
+- [class UIPageViewController](./uipageviewcontroller.md)
   A container view controller that manages navigation between pages of content, where a subview controller manages each page.
-- [class UIArrangementViewController](uiarrangementviewcontroller.md)
+- [class UIArrangementViewController](./uiarrangementviewcontroller.md)
   A view controller that dynamically lays out primary and secondary view controllers based on size class, orientation, and reserved regions.
 
 

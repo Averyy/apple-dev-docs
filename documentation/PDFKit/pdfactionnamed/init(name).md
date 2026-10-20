@@ -1,7 +1,8 @@
 # init(name:)
 
 **Framework**: PDFKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the `PDFActionName` object with the specified named action.
 
@@ -19,13 +20,17 @@ Initializes the `PDFActionName` object with the specified named action.
 init(name: PDFActionNamedName)
 ```
 
+```objc
+- (instancetype) initWithName:(PDFActionNamedName) name;
+```
+
 #### Return Value
 
 An initialized `PDFActionNamed` instance, or `NULL` if the object could not be initialized.
 
 #### Discussion
 
-See [`PDFActionNamed`](pdfactionnamed.md) for the names of named actions you can specify.
+See [`PDFActionNamed`](../pdfactionnamed.md) for the names of named actions you can specify.
 
 ## Parameters
 

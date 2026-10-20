@@ -1,7 +1,8 @@
 # NewSubmissionResponse.Meta
 
 **Framework**: Notary API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 An empty object.
 
@@ -10,7 +11,7 @@ An empty object.
 
 ## Declaration
 
-```swift
+```
 object NewSubmissionResponse.Meta
 ```
 
@@ -20,7 +21,8 @@ This object is reserved for future use.
 
 ## See Also
 
-- [object NewSubmissionResponse.Data](newsubmissionresponse/data-data.dictionary.md)
+### Objects
+- [object NewSubmissionResponse.Data](./data-data.dictionary.md)
   Information that the notary service provides for uploading your software for notarization and tracking the submission.
 
 

@@ -1,7 +1,8 @@
 # UIDragSession
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The interface for configuring a drag session.
 
@@ -18,29 +19,34 @@ The interface for configuring a drag session.
 protocol UIDragSession : UIDragDropSession
 ```
 
+```objc
+@protocol UIDragSession <UIDragDropSession>
+```
+
 ## Mentions
 
-- [Making a view into a drag source](making-a-view-into-a-drag-source.md)
+- [Making a view into a drag source](./making-a-view-into-a-drag-source.md)
 
 ## Topics
 
 ### Accessing local information
-- [var localContext: Any?](uidragsession/localcontext.md)
+- [var localContext: Any?](./uidragsession/localcontext.md)
   The optional custom data that you attach to a drag session, visible only to the app in which the drag activity begins.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [UIDragDropSession](uidragdropsession.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [UIDragDropSession](./uidragdropsession.md)
 
 ## See Also
 
-- [class UIDragItem](uidragitem.md)
+### Drag sources
+- [class UIDragItem](./uidragitem.md)
   A representation of an underlying data item as a person drags it from one location to another.
-- [protocol UIDragDropSession](uidragdropsession.md)
+- [protocol UIDragDropSession](./uidragdropsession.md)
   The common interface for querying the state of both drag sessions and drop sessions.
-- [protocol UIDragAnimating](uidraganimating.md)
+- [protocol UIDragAnimating](./uidraganimating.md)
   The interface for providing custom animation alongside the system’s lift, drop, and cancellation animations.
 
 

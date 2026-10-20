@@ -1,7 +1,8 @@
 # configurationWithoutTextStyle()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a copy of the current symbol configuration object without font text style information.
 
@@ -19,17 +20,22 @@ Returns a copy of the current symbol configuration object without font text styl
 func configurationWithoutTextStyle() -> Self
 ```
 
+```objc
+- (instancetype) configurationWithoutTextStyle;
+```
+
 #### Return Value
 
 A new symbol configuration object without the text style information.
 
 ## See Also
 
-- [func configurationWithoutPointSizeAndWeight() -> Self](uiimage/symbolconfiguration-swift.class/configurationwithoutpointsizeandweight.md)
+### Removing configuration attributes
+- [func configurationWithoutPointSizeAndWeight() -> Self](./configurationwithoutpointsizeandweight%28%29.md)
   Returns a copy of the current symbol configuration object without point-size and weight information.
-- [func configurationWithoutScale() -> Self](uiimage/symbolconfiguration-swift.class/configurationwithoutscale.md)
+- [func configurationWithoutScale() -> Self](./configurationwithoutscale%28%29.md)
   Returns a copy of the current symbol configuration object without scale information.
-- [func configurationWithoutWeight() -> Self](uiimage/symbolconfiguration-swift.class/configurationwithoutweight.md)
+- [func configurationWithoutWeight() -> Self](./configurationwithoutweight%28%29.md)
   Returns a copy of the current symbol configuration object without weight information.
 
 

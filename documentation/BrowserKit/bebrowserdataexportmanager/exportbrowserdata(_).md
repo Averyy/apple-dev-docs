@@ -1,7 +1,8 @@
 # exportBrowserData(_:)
 
 **Framework**: BrowserKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exports the given browser data.
 
@@ -18,15 +19,15 @@ final func exportBrowserData(_ browserDataStream: AsyncStream<BEBrowserData>) as
 
 ## Mentions
 
-- [Transferring browsing data to another browser](transferring-browsing-data-to-another-browser.md)
+- [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
 #### Discussion
 
-Call this method to stream browsing data to the system, as identified by [`dataTypes`](beexportoptions/datatypes-swift.property.md).
+Call this method to stream browsing data to the system, as identified by [`dataTypes`](../beexportoptions/datatypes-swift.property.md).
 
-Use this method after [`requestExport(for:token:completionHandler:)`](bebrowserdataexportmanager/requestexport(for:token:completionhandler:).md) returns an [`BEExportOptions`](beexportoptions.md) with [`exportToFiles`](beexportoptions/exporttofiles.md) = `false`, or when the system launches your app as part of the transfer of browsing data to another browser.
+Use this method after [`requestExport(for:token:completionHandler:)`](./requestexport%28for,token,completionhandler%29.md) returns an [`BEExportOptions`](../beexportoptions.md) with [`exportToFiles`](../beexportoptions/exporttofiles.md) = `false`, or when the system launches your app as part of the transfer of browsing data to another browser.
 
-For more information, see [`Transferring browsing data to another browser`](transferring-browsing-data-to-another-browser.md).
+For more information, see [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md).
 
 ## Parameters
 
@@ -34,7 +35,8 @@ For more information, see [`Transferring browsing data to another browser`](tran
 
 ## See Also
 
-- [func requestExport(for: BEExportMetadata, token: UUID?, completionHandler: (BEExportOptions?, (any Error)?) -> Void)](bebrowserdataexportmanager/requestexport(for:token:completionhandler:).md)
+### Exporting browser data
+- [func requestExport(for: BEExportMetadata, token: UUID?, completionHandler: (BEExportOptions?, (any Error)?) -> Void)](./requestexport%28for,token,completionhandler%29.md)
   Requests that the system display the browsing-data transfer sheet to export data to another browser.
 
 

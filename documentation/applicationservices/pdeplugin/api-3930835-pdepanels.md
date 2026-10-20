@@ -2,6 +2,7 @@
 
 **Framework**: Application Services  
 **Kind**: intfm  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:

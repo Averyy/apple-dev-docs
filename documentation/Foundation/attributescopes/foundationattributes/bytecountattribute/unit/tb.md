@@ -1,7 +1,8 @@
 # AttributeScopes.FoundationAttributes.ByteCountAttribute.Unit.tb
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 15.0+

@@ -1,7 +1,8 @@
 # scale(x:y:anchor:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Scales this shape without changing its bounding frame.
 
@@ -37,25 +38,26 @@ Both the `x` and `y` multiplication factors halve their respective dimension’s
 
 ## See Also
 
-- [func trim(from: CGFloat, to: CGFloat) -> some Shape](shape/trim(from:to:).md)
+### Transforming a shape
+- [func trim(from: CGFloat, to: CGFloat) -> some Shape](./trim%28from,to%29.md)
   Trims this shape by a fractional amount based on its representation as a path.
-- [func transform(CGAffineTransform) -> TransformedShape<Self>](shape/transform(_:).md)
+- [func transform(CGAffineTransform) -> TransformedShape<Self>](./transform%28_%29.md)
   Applies an affine transform to this shape.
-- [func size(CGSize) -> some Shape](shape/size(_:).md)
+- [func size(CGSize) -> some Shape](./size%28_%29.md)
   Returns a new version of self representing the same shape, but that will ask it to create its path from a rect of `size`. This does not affect the layout properties of any views created from the shape (e.g. by filling it).
-- [func size(CGSize, anchor: UnitPoint) -> some Shape](shape/size(_:anchor:).md)
+- [func size(CGSize, anchor: UnitPoint) -> some Shape](./size%28_,anchor%29.md)
   Returns a new version of self representing the same shape, but within a rect of `size` instead of the container size.
-- [func size(width: CGFloat, height: CGFloat) -> some Shape](shape/size(width:height:).md)
+- [func size(width: CGFloat, height: CGFloat) -> some Shape](./size%28width,height%29.md)
   Returns a new version of self representing the same shape, but that will ask it to create its path from a rect of size `(width, height)`. This does not affect the layout properties of any views created from the shape (e.g. by filling it).
-- [func size(width: CGFloat, height: CGFloat, anchor: UnitPoint) -> some Shape](shape/size(width:height:anchor:).md)
+- [func size(width: CGFloat, height: CGFloat, anchor: UnitPoint) -> some Shape](./size%28width,height,anchor%29.md)
   Returns a new version of self representing the same shape, but within a rect of `(width, height)` instead of the container size.
-- [func scale(CGFloat, anchor: UnitPoint) -> ScaledShape<Self>](shape/scale(_:anchor:).md)
+- [func scale(CGFloat, anchor: UnitPoint) -> ScaledShape<Self>](./scale%28_,anchor%29.md)
   Scales this shape without changing its bounding frame.
-- [func rotation(Angle, anchor: UnitPoint) -> RotatedShape<Self>](shape/rotation(_:anchor:).md)
+- [func rotation(Angle, anchor: UnitPoint) -> RotatedShape<Self>](./rotation%28_,anchor%29.md)
   Rotates this shape around an anchor point at the angle you specify.
-- [func offset(_:)](shape/offset(_:).md)
+- [func offset(_:)](./offset%28_%29.md)
   Changes the relative position of this shape using the specified point.
-- [func offset(x: CGFloat, y: CGFloat) -> OffsetShape<Self>](shape/offset(x:y:).md)
+- [func offset(x: CGFloat, y: CGFloat) -> OffsetShape<Self>](./offset%28x,y%29.md)
   Changes the relative position of this shape using the specified point.
 
 

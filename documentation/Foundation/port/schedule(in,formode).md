@@ -1,7 +1,8 @@
 # schedule(in:forMode:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This method should be implemented by a subclass to set up monitoring of a port when added to a given run loop in a given input mode.
 
@@ -20,6 +21,10 @@ This method should be implemented by a subclass to set up monitoring of a port w
 func schedule(in runLoop: RunLoop, forMode mode: RunLoop.Mode)
 ```
 
+```objc
+- (void) scheduleInRunLoop:(NSRunLoop *) runLoop forMode:(NSRunLoopMode) mode;
+```
+
 #### Discussion
 
 This method should not be called directly.
@@ -31,7 +36,8 @@ This method should not be called directly.
 
 ## See Also
 
-- [func remove(from: RunLoop, forMode: RunLoop.Mode)](port/remove(from:formode:).md)
+### Port monitoring
+- [func remove(from: RunLoop, forMode: RunLoop.Mode)](./remove%28from,formode%29.md)
   This method should be implemented by a subclass to stop monitoring of a port when removed from a give run loop in a given input mode.
 
 

@@ -1,12 +1,13 @@
 # applicationWillEnterForegroundNotification
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A message indicating that the watchOS app is about to transition from the background to the foreground.
 
 **Availability**:
-- watchOS 7.0+
+- watchOS 7.0+ - Deprecated in 9.2 (renamed: WKApplication.willEnterForegroundNotification)
 
 ## Declaration
 
@@ -17,17 +18,18 @@ A message indicating that the watchOS app is about to transition from the backgr
 
 #### Discussion
 
-When creating an app that uses the SwiftUI [`App`](https://developer.apple.com/documentation/swiftui/app) protocol to manage your life cycle, use the [`onChange(of:perform:)`](https://developer.apple.com/documentation/swiftui/view/onchange(of:perform:)) modifier and the [`scenePhase`](https://developer.apple.com/documentation/swiftui/environmentvalues/scenephase) environment value to monitor life cycle changes when possible. For more information, see [`Building a watchOS app`](https://developer.apple.com/documentation/watchos-apps/building_a_watchos_app).
+When creating an app that uses the SwiftUI [`App`](../../SwiftUI/app.md) protocol to manage your life cycle, use the [`onChange(of:perform:)`](../../SwiftUI/view/onchange%28of,perform%29.md) modifier and the [`scenePhase`](../../SwiftUI/environmentvalues/scenephase.md) environment value to monitor life cycle changes when possible. For more information, see [Building a watchOS app](../../watchOS-Apps/building_a_watchos_app.md).
 
 ## See Also
 
-- [static var applicationDidFinishLaunchingNotification: NSNotification.Name](wkextension/applicationdidfinishlaunchingnotification.md)
+### Observing messages from the notification center
+- [static var applicationDidFinishLaunchingNotification: NSNotification.Name](./applicationdidfinishlaunchingnotification.md)
   A message indicating that the launch process finished and the extension is ready to run.
-- [static var applicationDidBecomeActiveNotification: NSNotification.Name](wkextension/applicationdidbecomeactivenotification.md)
+- [static var applicationDidBecomeActiveNotification: NSNotification.Name](./applicationdidbecomeactivenotification.md)
   A message indicating that the watchOS app is visible and processing events.
-- [static var applicationWillResignActiveNotification: NSNotification.Name](wkextension/applicationwillresignactivenotification.md)
+- [static var applicationWillResignActiveNotification: NSNotification.Name](./applicationwillresignactivenotification.md)
   A message indicating that the system is about to deactivate the watchOS app.
-- [static var applicationDidEnterBackgroundNotification: NSNotification.Name](wkextension/applicationdidenterbackgroundnotification.md)
+- [static var applicationDidEnterBackgroundNotification: NSNotification.Name](./applicationdidenterbackgroundnotification.md)
   A message indicating that the watchOS app transitioned from the foreground to the background.
 
 

@@ -1,7 +1,8 @@
 # userNotificationCenter(_:openSettingsFor:)
 
 **Framework**: User Notifications  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate to display the in-app notification settings.
 
@@ -16,6 +17,10 @@ Asks the delegate to display the in-app notification settings.
 
 ```swift
 optional func userNotificationCenter(_ center: UNUserNotificationCenter, openSettingsFor notification: UNNotification?)
+```
+
+```objc
+- (void) userNotificationCenter:(UNUserNotificationCenter *) center openSettingsForNotification:(UNNotification *) notification;
 ```
 
 

@@ -1,7 +1,8 @@
 # resumeImmediately
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that Indicates that the coordinator needs to resume playback as soon as possible, regardless of other participant’s readiness or suspensions.
 
@@ -17,6 +18,10 @@ An option that Indicates that the coordinator needs to resume playback as soon a
 
 ```swift
 static var resumeImmediately: AVDelegatingPlaybackCoordinatorSeekOptions { get }
+```
+
+```c
+AVDelegatingPlaybackCoordinatorSeekOptionResumeImmediately
 ```
 
 

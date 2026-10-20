@@ -1,7 +1,8 @@
 # shaderReflection
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Controls whether to include Metal shader reflection in this pipeline.
 
@@ -17,6 +18,10 @@ Controls whether to include Metal shader reflection in this pipeline.
 
 ```swift
 var shaderReflection: MTL4ShaderReflection { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTL4ShaderReflection shaderReflection;
 ```
 
 

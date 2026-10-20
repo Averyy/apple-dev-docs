@@ -1,7 +1,8 @@
 # grammarDetails
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The details of a located grammatical type checking result.
 
@@ -20,13 +21,18 @@ The details of a located grammatical type checking result.
 var grammarDetails: [[String : Any]]? { get }
 ```
 
+```objc
+@property (copy, readonly, nullable) NSArray<NSDictionary<NSString *,id> *> * grammarDetails;
+```
+
 #### Discussion
 
 This array of strings is suitable for presenting to the user.
 
 ## See Also
 
-- [class func grammarCheckingResult(range: NSRange, details: [[String : Any]]) -> NSTextCheckingResult](nstextcheckingresult/grammarcheckingresult(range:details:).md)
+### Text Checking Results for Grammar
+- [class func grammarCheckingResult(range: NSRange, details: [[String : Any]]) -> NSTextCheckingResult](./grammarcheckingresult%28range,details%29.md)
   Creates and returns a text checking result with the specified array of grammatical errors.
 
 

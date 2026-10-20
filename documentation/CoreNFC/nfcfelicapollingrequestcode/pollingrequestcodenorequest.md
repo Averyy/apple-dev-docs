@@ -1,14 +1,15 @@
 # PollingRequestCodeNoRequest
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A code that indicates no request.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
+- iOS 13.0+ - Deprecated in 14.0 (renamed: NFCFeliCaPollingRequestCode.noRequest)
+- iPadOS 13.0+ - Deprecated in 14.0 (renamed: NFCFeliCaPollingRequestCode.noRequest)
+- Mac Catalyst 13.1+ - Deprecated in 14.0 (renamed: NFCFeliCaPollingRequestCode.noRequest)
 
 ## Declaration
 
@@ -16,11 +17,16 @@ A code that indicates no request.
 static var PollingRequestCodeNoRequest: NFCFeliCaPollingRequestCode { get }
 ```
 
+```c
+PollingRequestCodeNoRequest
+```
+
 ## See Also
 
-- [static var PollingRequestCodeSystemCode: NFCFeliCaPollingRequestCode](nfcfelicapollingrequestcode/pollingrequestcodesystemcode.md)
+### Request Codes
+- [static var PollingRequestCodeSystemCode: NFCFeliCaPollingRequestCode](./pollingrequestcodesystemcode.md)
   A code that indicates a system code request.
-- [static var PollingRequestCodeCommunicationPerformance: NFCFeliCaPollingRequestCode](nfcfelicapollingrequestcode/pollingrequestcodecommunicationperformance.md)
+- [static var PollingRequestCodeCommunicationPerformance: NFCFeliCaPollingRequestCode](./pollingrequestcodecommunicationperformance.md)
   A code that indicates a communication performance request.
 
 

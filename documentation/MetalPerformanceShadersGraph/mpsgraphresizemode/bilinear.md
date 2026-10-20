@@ -1,7 +1,8 @@
 # MPSGraphResizeMode.bilinear
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Samples the 4 neighbors to the pixel coordinate and uses bilinear interpolation.
 
@@ -17,6 +18,10 @@ Samples the 4 neighbors to the pixel coordinate and uses bilinear interpolation.
 
 ```swift
 case bilinear
+```
+
+```c
+MPSGraphResizeBilinear
 ```
 
 

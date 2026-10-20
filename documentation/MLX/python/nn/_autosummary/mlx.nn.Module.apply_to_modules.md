@@ -6,34 +6,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.M
 
 # mlx.nn.Module.apply_to_modules
 
-**
-
-- [.rst](../../../_sources/python/nn/_autosummary/mlx.nn.Module.apply_to_modules.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.nn.Module.apply_to_modules
-
- Table of contents 
-
-## Contents
-
-# mlx.nn.Module.apply_to_modules
-
-**Module.apply_to_modules(*apply_fn: Callable[[str, Module], Any]*) → [Module](../module.html#mlx.nn.Module)**
+**Module.apply_to_modules(*apply_fn: Callable[[str, Module], Any]*) → [Module](../module.md#mlx.nn.Module)**
 : Apply a function to all the modules in this instance (including this
 instance).
 
@@ -45,5 +18,3 @@ parameter is the module object.
 
 Returns:
 The module instance after updating submodules.
-
-** Contents

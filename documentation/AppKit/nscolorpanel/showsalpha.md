@@ -1,12 +1,13 @@
 # showsAlpha
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver shows alpha values and an opacity slider.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,15 +15,20 @@ A Boolean value that indicates whether the receiver shows alpha values and an op
 var showsAlpha: Bool { get set }
 ```
 
+```objc
+@property BOOL showsAlpha;
+```
+
 ## See Also
 
-- [var accessoryView: NSView?](nscolorpanel/accessoryview.md)
+### Configuring the color panel
+- [var accessoryView: NSView?](./accessoryview.md)
   The accessory view.
-- [var isContinuous: Bool](nscolorpanel/iscontinuous.md)
+- [var isContinuous: Bool](./iscontinuous.md)
   A Boolean value indicating whether the receiver continuously sends the action message to the target.
-- [func setAction(Selector?)](nscolorpanel/setaction(_:).md)
+- [func setAction(Selector?)](./setaction%28_%29.md)
   Sets the color panel’s action message.
-- [func setTarget(Any?)](nscolorpanel/settarget(_:).md)
+- [func setTarget(Any?)](./settarget%28_%29.md)
   Sets the target of the receiver.
 
 

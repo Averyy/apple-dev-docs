@@ -1,21 +1,22 @@
 # TestCustomNamedGetter
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Mobile 9.0+
 
 ## Declaration
 
-```swift
+```
 interface TestCustomNamedGetter
 ```
 
 ## Topics
 
 ### Instance Methods
-- [anotherFunction](testcustomnamedgetter/1631125-anotherfunction.md)
+- [anotherFunction](./testcustomnamedgetter/api-1631125-anotherfunction.md)
 
 
 ---

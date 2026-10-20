@@ -1,7 +1,8 @@
 # WritableDocument
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A document type that supports writing to file.
 
@@ -20,17 +21,17 @@ protocol WritableDocument : AnyObject
 
 #### Overview
 
-Conform to `WritableDocument` to add save and export capabilities. Most documents also conform to [`ReadableDocument`](readabledocument.md) — use the [`Document`](document.md) protocol as a shorthand for both.
+Conform to `WritableDocument` to add save and export capabilities. Most documents also conform to [`ReadableDocument`](./readabledocument.md) — use the [`Document`](./document.md) protocol as a shorthand for both.
 
 The document saving has three steps:
 
-1. SwiftUI calls [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md) on the main actor.
-2. SwiftUI calls [`writer(configuration:)`](writabledocument/writer(configuration:).md) to get a writer.
+1. SwiftUI calls [`snapshot(contentType:)`](./writabledocument/snapshot%28contenttype%29.md) on the main actor.
+2. SwiftUI calls [`writer(configuration:)`](./writabledocument/writer%28configuration%29.md) to get a writer.
 3. The writer’s `DocumentWriter/write(content:to:previous:progress:)` runs in the background with coordinated file access.
 
 > ❗ **Important**: Without registered undo actions, SwiftUI won’t trigger autosave. Register undo actions with the undo manager from the `View` environment for every user-facing change.
 
-Example using [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md):
+Example using [`FileWrapperDocumentWriter`](./filewrapperdocumentwriter.md):
 
 ```swift
 @Observable
@@ -75,33 +76,34 @@ struct NoteEditorView: View {
 ## Topics
 
 ### Writing a document
-- [static var writableContentTypes: [UTType]](writabledocument/writablecontenttypes.md)
+- [static var writableContentTypes: [UTType]](./writabledocument/writablecontenttypes.md)
   The content types this document can save or export to.
-- [WritableDocument.WriteConfiguration](writabledocument/writeconfiguration.md)
+- [WritableDocument.WriteConfiguration](./writabledocument/writeconfiguration.md)
   The configuration for writing document contents.
-- [associatedtype Writer : DocumentWriter](writabledocument/writer.md)
+- [associatedtype Writer : DocumentWriter](./writabledocument/writer.md)
   A type that implements writing to disk.
-- [func writer(configuration: sending Self.WriteConfiguration) -> sending Self.Writer](writabledocument/writer(configuration:).md)
+- [func writer(configuration: sending Self.WriteConfiguration) -> sending Self.Writer](./writabledocument/writer%28configuration%29.md)
   Creates a writer to save this document to disk.
-- [func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot](writabledocument/snapshot(contenttype:).md)
+- [func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot](./writabledocument/snapshot%28contenttype%29.md)
   Captures the document’s current state for saving.
 
 ## Relationships
 
 ### Inherited By
-- [Document](document.md)
+- [Document](./document.md)
 
 ## See Also
 
-- [protocol Document](document.md)
+### Storing document data in a reference type instance
+- [protocol Document](./document.md)
   A document that supports both reading and writing.
-- [protocol ReadableDocument](readabledocument.md)
+- [protocol ReadableDocument](./readabledocument.md)
   A document type that supports reading from file.
-- [class URLDocumentConfiguration](urldocumentconfiguration.md)
+- [class URLDocumentConfiguration](./urldocumentconfiguration.md)
   The configuration of an open document that stores its file URL, last modification date, and related metadata.
-- [struct DocumentCreationContext](documentcreationcontext.md)
+- [struct DocumentCreationContext](./documentcreationcontext.md)
   Context about how a document was created.
-- [protocol DocumentBaseBox](documentbasebox.md)
+- [protocol DocumentBaseBox](./documentbasebox.md)
   A Box that allows setting its Document base not requiring the caller to know the exact types of the box and its base.
 
 

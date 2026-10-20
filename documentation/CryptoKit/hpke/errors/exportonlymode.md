@@ -1,7 +1,8 @@
 # HPKE.Errors.exportOnlyMode
 
 **Framework**: Apple CryptoKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The object is in export-only mode and received a request to encrypt or decrypt data.
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: WatchKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a view that displays the system’s Now Playing interface.
 

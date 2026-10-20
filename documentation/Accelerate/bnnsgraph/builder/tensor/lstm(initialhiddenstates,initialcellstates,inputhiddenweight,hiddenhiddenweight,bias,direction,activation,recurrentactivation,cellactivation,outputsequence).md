@@ -1,7 +1,8 @@
 # lstm(initialHiddenStates:initialCellStates:inputHiddenWeight:hiddenHiddenWeight:bias:direction:activation:recurrentActivation:cellActivation:outputSequence:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an LSTM operation to the current graph.
 
@@ -20,43 +21,45 @@ Adds an LSTM operation to the current graph.
 func lstm(initialHiddenStates: BNNSGraph.Builder.Tensor<T>, initialCellStates: BNNSGraph.Builder.Tensor<T>, inputHiddenWeight: BNNSGraph.Builder.Tensor<T>, hiddenHiddenWeight: BNNSGraph.Builder.Tensor<T>, bias: BNNSGraph.Builder.Tensor<T>, direction: BNNSGraph.Builder.Direction, activation: BNNSGraph.Builder.Activation, recurrentActivation: BNNSGraph.Builder.Activation, cellActivation: BNNSGraph.Builder.Activation, outputSequence: Bool) -> (output: BNNSGraph.Builder.Tensor<T>, hiddenStates: BNNSGraph.Builder.Tensor<T>, memoryStates: BNNSGraph.Builder.Tensor<T>)
 ```
 
+Available when `T` conforms to `BNNSScalar`.
+
 #### Discussion
 
 For each time t from 0 to L-1, this operation computes the following:
 
 Input gate:
 
-```None
+```
 i[t, ...] = RA(matmul(W_ii, x[t, ...]) + b_ii + matmul(W_hi, h[t-1, ...]) + b_hi)
 ```
 
 Forget gate:
 
-```None
+```
 f[t, ...] = RA(matmul(W_if, x[t, ...]) + b_if + matmul(W_hf, h[t-1, ...]) + b_hf)
 ```
 
 Cell gate:
 
-```None
+```
 g[t, ...] = CA(matmul(W_ig, x[t, ...]) + b_ig + matmul(W_hg, h[t-1, ...]) + b_hg)
 ```
 
 Output gate:
 
-```None
+```
 o[t, ...] = RA(matmul(W_io, x[t, ...]) + b_io + matmul(W_ho, h[t-1, ...]) + b_ho)
 ```
 
 Cell state:
 
-```None
+```
 c[t, ...] = f[t, ...] * c[t-1, ...] + i[t, ...] * g[t, ...]
 ```
 
 Hidden state:
 
-```None
+```
 h[t, ...] = o[t, ...] * A(c[t, ...])
 ```
 

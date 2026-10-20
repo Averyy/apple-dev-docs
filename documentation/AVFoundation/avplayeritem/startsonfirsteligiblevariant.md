@@ -1,7 +1,8 @@
 # startsOnFirstEligibleVariant
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether playback starts with the first eligible variant that appears in the stream’s main playlist.
 
@@ -21,11 +22,16 @@ nonisolated
 var startsOnFirstEligibleVariant: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL startsOnFirstEligibleVariant;
+```
+
 ## See Also
 
-- [var variantPreferences: AVVariantPreferences](avplayeritem/variantpreferences.md)
+### Setting variant behavior
+- [var variantPreferences: AVVariantPreferences](./variantpreferences.md)
   The preferences the player item uses when selecting variant playlists.
-- [struct AVVariantPreferences](avvariantpreferences.md)
+- [struct AVVariantPreferences](../avvariantpreferences.md)
   Defines the preferences the player item uses when selecting variant playlists.
 
 

@@ -1,7 +1,8 @@
 # indexCount
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of indices for the `Primitive`.
 

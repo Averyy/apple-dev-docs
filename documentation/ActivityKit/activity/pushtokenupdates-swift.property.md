@@ -1,7 +1,8 @@
 # pushTokenUpdates
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An asynchronous sequence you use to observe changes to the push token of a Live Activity.
 
@@ -17,18 +18,19 @@ var pushTokenUpdates: Activity<Attributes>.PushTokenUpdates { get }
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
-- [Starting and updating Live Activities with ActivityKit push notifications](starting-and-updating-live-activities-with-activitykit-push-notifications.md)
+- [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
+- [Starting and updating Live Activities with ActivityKit push notifications](../starting-and-updating-live-activities-with-activitykit-push-notifications.md)
 
 ## See Also
 
-- [var pushToken: Data?](activity/pushtoken.md)
+### Using ActivityKit push notifications
+- [var pushToken: Data?](./pushtoken.md)
   The token you use to send ActivityKit push notifications to a Live Activity.
-- [Activity.PushTokenUpdates](activity/pushtokenupdates-swift.struct.md)
+- [Activity.PushTokenUpdates](./pushtokenupdates-swift.struct.md)
   A structure that offers functionality to observe changes to the push token of a Live Activity.
-- [static var pushToStartToken: Data?](activity/pushtostarttoken.md)
+- [static var pushToStartToken: Data?](./pushtostarttoken.md)
   The token you use to start a Live Activity with an ActivityKit push notification.
-- [static var pushToStartTokenUpdates: Activity<Attributes>.PushTokenUpdates](activity/pushtostarttokenupdates.md)
+- [static var pushToStartTokenUpdates: Activity<Attributes>.PushTokenUpdates](./pushtostarttokenupdates.md)
   An asynchronous sequence you use to observe changes to the token for starting a Live Activity with an ActivityKit push notification.
 
 

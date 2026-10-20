@@ -1,7 +1,8 @@
 # init(byAdding:to:)
 
 **Framework**: Vision  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new vector by adding the specified vectors.
 
@@ -19,6 +20,10 @@ Creates a new vector by adding the specified vectors.
 init(byAdding v1: VNVector, to v2: VNVector)
 ```
 
+```objc
++ (VNVector *) vectorByAddingVector:(VNVector *) v1 toVector:(VNVector *) v2;
+```
+
 ## Parameters
 
 - `v1`: The first vector.
@@ -26,22 +31,23 @@ init(byAdding v1: VNVector, to v2: VNVector)
 
 ## See Also
 
-- [init(byAddingVector: VNVector, toVector: VNVector)](vnvector/init(byaddingvector:tovector:).md)
-- [init(bySubtracting: VNVector, from: VNVector)](vnvector/init(bysubtracting:from:).md)
+### Creating a Vector
+- [init(byAddingVector: VNVector, toVector: VNVector)](./init%28byaddingvector,tovector%29.md)
+- [init(bySubtracting: VNVector, from: VNVector)](./init%28bysubtracting,from%29.md)
   Creates a new vector by subtracting the first vector from the second vector.
-- [init(bySubtractingVector: VNVector, fromVector: VNVector)](vnvector/init(bysubtractingvector:fromvector:).md)
-- [init(byMultiplying: VNVector, byScalar: Double)](vnvector/init(bymultiplying:byscalar:).md)
+- [init(bySubtractingVector: VNVector, fromVector: VNVector)](./init%28bysubtractingvector,fromvector%29.md)
+- [init(byMultiplying: VNVector, byScalar: Double)](./init%28bymultiplying,byscalar%29.md)
   Creates a new vector by multiplying the specified vector’s x-axis and y-axis projections by the scalar value.
-- [init(byMultiplyingVector: VNVector, byScalar: Double)](vnvector/init(bymultiplyingvector:byscalar:).md)
-- [convenience init(r: Double, theta: Double)](vnvector/init(r:theta:).md)
+- [init(byMultiplyingVector: VNVector, byScalar: Double)](./init%28bymultiplyingvector,byscalar%29.md)
+- [convenience init(r: Double, theta: Double)](./init%28r,theta%29.md)
   Creates a new vector in polar coordinate space.
-- [convenience init(vectorHead: VNPoint, tail: VNPoint)](vnvector/init(vectorhead:tail:).md)
+- [convenience init(vectorHead: VNPoint, tail: VNPoint)](./init%28vectorhead,tail%29.md)
   Creates a new vector in Cartesian coordinate space.
-- [init(XComponent: Double, yComponent: Double)](vnvector/init(xcomponent:ycomponent:)-231pv.md)
-- [init(xComponent: Double, yComponent: Double)](vnvector/init(xcomponent:ycomponent:)-3p5k3.md)
+- [init(XComponent: Double, yComponent: Double)](./init%28xcomponent,ycomponent%29-231pv.md)
+- [init(xComponent: Double, yComponent: Double)](./init%28xcomponent,ycomponent%29-3p5k3.md)
   Creates a new vector in Cartesian coordinate space, based on its x-axis and y-axis projections.
-- [init?(coder: NSCoder)](vnvector/init(coder:).md)
-- [class var zero: VNVector](vnvector/zero.md)
+- [init?(coder: NSCoder)](./init%28coder%29.md)
+- [class var zero: VNVector](./zero.md)
   A vector object with zero length.
 
 

@@ -1,7 +1,8 @@
 # MigrationRequest
 
 **Framework**: AppMigrationKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A migration request that uses the default supported options.
 
@@ -17,11 +18,12 @@ typealias MigrationRequest = MigrationRequestWithOptions<MigrationDefaultSupport
 
 #### Discussion
 
-This type alias is a [`MigrationRequestWithOptions`](migrationrequestwithoptions.md) with the `OptionsType` generic constraint [`MigrationDefaultSupportedOptions`](migrationdefaultsupportedoptions.md). Use this type of request for migrations that don’t need to incorporate any options specific to the counterpart operating system.
+This type alias is a [`MigrationRequestWithOptions`](./migrationrequestwithoptions.md) with the `OptionsType` generic constraint [`MigrationDefaultSupportedOptions`](./migrationdefaultsupportedoptions.md). Use this type of request for migrations that don’t need to incorporate any options specific to the counterpart operating system.
 
 ## See Also
 
-- [struct MigrationRequestWithOptions](migrationrequestwithoptions.md)
+### Supporting types
+- [struct MigrationRequestWithOptions](./migrationrequestwithoptions.md)
   An object that exposes properties of the migration request.
 
 

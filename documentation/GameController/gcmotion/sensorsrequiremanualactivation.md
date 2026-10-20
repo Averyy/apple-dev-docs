@@ -1,7 +1,8 @@
 # sensorsRequireManualActivation
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the sensors that compute the motion data require manual activation.
 
@@ -19,13 +20,18 @@ A Boolean value that indicates whether the sensors that compute the motion data 
 var sensorsRequireManualActivation: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly) BOOL sensorsRequireManualActivation;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the sensors require manual activation; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the sensors require manual activation; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var sensorsActive: Bool](gcmotion/sensorsactive.md)
+### Accessing Sensor Data
+- [var sensorsActive: Bool](./sensorsactive.md)
   A Boolean value that indicates whether the sensors that compute the motion data are active.
 
 

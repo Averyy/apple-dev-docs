@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOFBLinkVoltageLevel0](1645096-anonymous/kiofblinkvoltagelevel0.md)
-- [kIOFBLinkVoltageLevel1](1645096-anonymous/kiofblinkvoltagelevel1.md)
-- [kIOFBLinkVoltageLevel2](1645096-anonymous/kiofblinkvoltagelevel2.md)
-- [kIOFBLinkVoltageLevel3](1645096-anonymous/kiofblinkvoltagelevel3.md)
+- [kIOFBLinkVoltageLevel0](./api-1645096-anonymous/kiofblinkvoltagelevel0.md)
+- [kIOFBLinkVoltageLevel1](./api-1645096-anonymous/kiofblinkvoltagelevel1.md)
+- [kIOFBLinkVoltageLevel2](./api-1645096-anonymous/kiofblinkvoltagelevel2.md)
+- [kIOFBLinkVoltageLevel3](./api-1645096-anonymous/kiofblinkvoltagelevel3.md)
 
 
 ---

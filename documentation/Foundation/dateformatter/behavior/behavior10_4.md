@@ -1,7 +1,8 @@
 # DateFormatter.Behavior.behavior10_4
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 2.0+
@@ -18,14 +19,19 @@
 case behavior10_4
 ```
 
+```c
+NSDateFormatterBehavior10_4
+```
+
 #### Discussion
 
 Specifies formatting behavior equivalent for OS X 10.4.
 
 ## See Also
 
-- [DateFormatter.Behavior.default](dateformatter/behavior/default.md)
-- [DateFormatter.Behavior.behavior10_0](dateformatter/behavior/behavior10_0.md)
+### Constants
+- [DateFormatter.Behavior.default](./default.md)
+- [DateFormatter.Behavior.behavior10_0](./behavior10_0.md)
 
 
 ---

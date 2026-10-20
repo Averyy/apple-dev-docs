@@ -1,7 +1,8 @@
 # readAttributeListStructOctetString(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeListStructOctetString(completion: @escaping @Sendable ([Any]?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeListStructOctetString() async throws -> [Any]
+```
+
+```objc
+- (void) readAttributeListStructOctetStringWithCompletion:(void (^)(NSArray *value, NSError *error)) completion;
 ```
 
 

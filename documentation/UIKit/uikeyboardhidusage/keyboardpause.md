@@ -1,7 +1,8 @@
 # UIKeyboardHIDUsage.keyboardPause
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The raw usage code 72 (decimal)/48 (hexadecimal).
 
@@ -18,15 +19,20 @@ The raw usage code 72 (decimal)/48 (hexadecimal).
 case keyboardPause
 ```
 
+```c
+UIKeyboardHIDUsageKeyboardPause
+```
+
 ## See Also
 
-- [UIKeyboardHIDUsage.keyboardStop](uikeyboardhidusage/keyboardstop.md)
+### Media keys
+- [UIKeyboardHIDUsage.keyboardStop](./keyboardstop.md)
   The raw usage code 120 (decimal)/78 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardMute](uikeyboardhidusage/keyboardmute.md)
+- [UIKeyboardHIDUsage.keyboardMute](./keyboardmute.md)
   The raw usage code 127 (decimal)/7F (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardVolumeUp](uikeyboardhidusage/keyboardvolumeup.md)
+- [UIKeyboardHIDUsage.keyboardVolumeUp](./keyboardvolumeup.md)
   The raw usage code 128 (decimal)/80 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardVolumeDown](uikeyboardhidusage/keyboardvolumedown.md)
+- [UIKeyboardHIDUsage.keyboardVolumeDown](./keyboardvolumedown.md)
   The raw usage code 129 (decimal)/81 (hexadecimal).
 
 

@@ -1,7 +1,8 @@
 # renewalDate
 
 **Framework**: StoreKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The UNIX time, in milliseconds, that the most recent auto-renewable subscription purchase expires.
 
@@ -23,11 +24,12 @@ var renewalDate: Date? { get }
 
 #### Discussion
 
-The [`renewalDate`](product/subscriptioninfo/renewalinfo/renewaldate.md) is a value that’s always present for auto-renewable subscriptions, even for expired subscriptions. This date indicates the expiration date of the most recent auto-renewable subscription purchase, including renewals, and may be in the past. For subscriptions that renew successfully, the [`renewalDate`](product/subscriptioninfo/renewalinfo/renewaldate.md) is the date when the subscription renews.
+The [`renewalDate`](./renewaldate.md) is a value that’s always present for auto-renewable subscriptions, even for expired subscriptions. This date indicates the expiration date of the most recent auto-renewable subscription purchase, including renewals, and may be in the past. For subscriptions that renew successfully, the [`renewalDate`](./renewaldate.md) is the date when the subscription renews.
 
 ## See Also
 
-- [var recentSubscriptionStartDate: Date](product/subscriptioninfo/renewalinfo/recentsubscriptionstartdate.md)
+### Getting subscription dates
+- [var recentSubscriptionStartDate: Date](./recentsubscriptionstartdate.md)
   The earliest start date of a subscription in a series of auto-renewable subscription purchases that ignores all lapses of paid service shorter than 60 days.
 
 

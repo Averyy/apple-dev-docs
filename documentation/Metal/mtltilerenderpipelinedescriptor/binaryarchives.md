@@ -1,7 +1,8 @@
 # binaryArchives
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of binary archives to search for precompiled versions of the shader.
 
@@ -19,9 +20,14 @@ An array of binary archives to search for precompiled versions of the shader.
 var binaryArchives: [any MTLBinaryArchive]? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite, nullable) NSArray<id<MTLBinaryArchive>> * binaryArchives;
+```
+
 ## See Also
 
-- [var supportAddingBinaryFunctions: Bool](mtltilerenderpipelinedescriptor/supportaddingbinaryfunctions.md)
+### Specifying precompiled shader binaries
+- [var supportAddingBinaryFunctions: Bool](./supportaddingbinaryfunctions.md)
   A Boolean value that indicates whether you can use the pipeline to create new pipelines by adding binary functions to its callable functions list.
 
 

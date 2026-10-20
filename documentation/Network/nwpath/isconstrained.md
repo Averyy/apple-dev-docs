@@ -1,7 +1,8 @@
 # isConstrained
 
 **Framework**: Network  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean indicating whether the path uses an interface in Low Data Mode.
 
@@ -22,13 +23,14 @@ var isConstrained: Bool { get }
 
 ## See Also
 
-- [let supportsIPv4: Bool](nwpath/supportsipv4.md)
+### Checking Path Capabilities
+- [let supportsIPv4: Bool](./supportsipv4.md)
   A Boolean indicating whether the path can route IPv4 traffic.
-- [let supportsIPv6: Bool](nwpath/supportsipv6.md)
+- [let supportsIPv6: Bool](./supportsipv6.md)
   A Boolean indicating whether the path can route IPv6 traffic.
-- [let supportsDNS: Bool](nwpath/supportsdns.md)
+- [let supportsDNS: Bool](./supportsdns.md)
   A Boolean indicating whether the path has a DNS server configured.
-- [let isExpensive: Bool](nwpath/isexpensive.md)
+- [let isExpensive: Bool](./isexpensive.md)
   A Boolean indicating whether the path uses an interface that is considered expensive, such as Cellular or a Personal Hotspot.
 
 

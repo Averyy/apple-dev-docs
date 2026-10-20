@@ -1,7 +1,8 @@
 # Burn
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 A blend operation that darkens the foreground layer using the background.
 
@@ -19,7 +20,55 @@ A blend operation that darkens the foreground layer using the background.
 
 #### Parameter Types
 
-#### Parameter Descriptions
+**Burn (float)**:
+
+| Input | Type |
+| --- | --- |
+| `Foreground` | Float |
+| `Background` | Float |
+| `Mix` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Float |
+
+**Burn (half)**:
+
+| Input | Type |
+| --- | --- |
+| `Foreground` | Half |
+| `Background` | Half |
+| `Mix` | Half |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Half |
+
+**Burn (color3f)**:
+
+| Input | Type |
+| --- | --- |
+| `Foreground` | Color3 |
+| `Background` | Color3 |
+| `Mix` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color3 |
+
+**Burn (color4f)**:
+
+| Input | Type |
+| --- | --- |
+| `Foreground` | Color4 |
+| `Background` | Color4 |
+| `Mix` | Float |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Color4 |
+
+#### Parameter descriptions
 
 - **`Foreground`**: The foreground input. Represented by `F` in the mathmatical equation.
 - **`Background`**: The background input. Represented by `B` in the mathmatical equation.
@@ -29,43 +78,44 @@ A blend operation that darkens the foreground layer using the background.
 
 The `Burn` node darkens each area in the background based on the darkness of the corresponding area in the foreground, represented by the equation `1 - (1 - B) / F`. Below is an example of a node graph that uses the `Burn` node to darken a brick texture:
 
-![None](/images/ShaderGraph-Docs/BurnGraph.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/BurnGraph.png)
 
-Use a [`Noise 2D`](2d-procedural/noise-2d.md) node to generate Perlin noise, and use the output of that texture as the foreground in the `Burn` node. This process darkens the background brick texture according to the procedural pattern. Below, the resulting texture applies to a cube:
+Use a [`Noise 2D`](../api-2d-procedural/noise-2d.md) node to generate Perlin noise, and use the output of that texture as the foreground in the `Burn` node. This process darkens the background brick texture according to the procedural pattern. Below, the resulting texture applies to a cube:
 
-![None](/images/ShaderGraph-Docs/BurnMaterial.png)
+![](https://developer.apple.com/tutorials/images/ShaderGraph-Docs/BurnMaterial.png)
 
 ## See Also
 
-- [Premultiply](compositing/premultiply.md)
+### Nodes
+- [Premultiply](./premultiply.md)
   Multiplies the RGB channels of the input by the alpha channel.
-- [Unpremultiply](compositing/unpremultiply.md)
+- [Unpremultiply](./unpremultiply.md)
   Divides the RGB channels of the input by the alpha channel.
-- [Additive Mix](compositing/additive-mix.md)
+- [Additive Mix](./additive-mix.md)
   Adds foreground and background values.
-- [Subtractive Mix](compositing/subtractive-mix.md)
+- [Subtractive Mix](./subtractive-mix.md)
   Subtracts foreground from background values.
-- [Difference](compositing/difference.md)
+- [Difference](./difference.md)
   Outputs the distance between foreground and background values.
-- [Dodge](compositing/dodge.md)
+- [Dodge](./dodge.md)
   A blend operation that lightens the background layer depending on the foreground.
-- [Screen](compositing/screen.md)
+- [Screen](./screen.md)
   A blend operation that lightens areas that are darker than white.
-- [Overlay](compositing/overlay.md)
+- [Overlay](./overlay.md)
   A blend operation that multiplies dark areas and screens light areas.
-- [Disjoint Over](compositing/disjoint-over.md)
+- [Disjoint Over](./disjoint-over.md)
   A merge operation that layers foreground over background color, but assumes no overlap in partially transparent areas covered by both.
-- [In](compositing/in.md)
+- [In](./in.md)
   Outputs areas of foreground that overlap with the alpha of background.
-- [Mask](compositing/mask.md)
+- [Mask](./mask.md)
   Outputs areas of background that overlap with the alpha of foreground.
-- [Matte](compositing/matte.md)
+- [Matte](./matte.md)
   A merge operation that layers premultiplied foreground over background.
-- [Out](compositing/out.md)
+- [Out](./out.md)
   Outputs areas of foreground that do not overlap with background.
-- [Over](compositing/over.md)
+- [Over](./over.md)
   A merge operation that layers foreground over background, using the alpha of the foreground.
-- [Inside](compositing/inside.md)
+- [Inside](./inside.md)
   Multiplies a mask to all channels of the input.
 
 

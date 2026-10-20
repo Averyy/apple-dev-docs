@@ -1,7 +1,8 @@
 # attachments
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Attachments of the sample.
 

@@ -1,7 +1,8 @@
 # NEDNSProxyManagerError
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible DNS proxy manager errors.
 
@@ -18,37 +19,42 @@ The possible DNS proxy manager errors.
 enum NEDNSProxyManagerError
 ```
 
+```c
+enum NEDNSProxyManagerError : NSInteger;
+```
+
 #### Overview
 
-These errors appear as the parameter in the completion handler of the methods that you use to manage DNS proxy configuration: [`loadFromPreferences(completionHandler:)`](nednsproxymanager/loadfrompreferences(completionhandler:).md), [`removeFromPreferences(completionHandler:)`](nednsproxymanager/removefrompreferences(completionhandler:).md), and [`saveToPreferences(completionHandler:)`](nednsproxymanager/savetopreferences(completionhandler:).md).
+These errors appear as the parameter in the completion handler of the methods that you use to manage DNS proxy configuration: [`loadFromPreferences(completionHandler:)`](./nednsproxymanager/loadfrompreferences%28completionhandler%29.md), [`removeFromPreferences(completionHandler:)`](./nednsproxymanager/removefrompreferences%28completionhandler%29.md), and [`saveToPreferences(completionHandler:)`](./nednsproxymanager/savetopreferences%28completionhandler%29.md).
 
 ## Topics
 
 ### Enumeration Cases
-- [NEDNSProxyManagerError.configurationInvalid](nednsproxymanagererror/configurationinvalid.md)
+- [NEDNSProxyManagerError.configurationInvalid](./nednsproxymanagererror/configurationinvalid.md)
   Invalid DNS proxy configuration that cannot be stored.
-- [NEDNSProxyManagerError.configurationDisabled](nednsproxymanagererror/configurationdisabled.md)
+- [NEDNSProxyManagerError.configurationDisabled](./nednsproxymanagererror/configurationdisabled.md)
   Disabled DNS proxy configuration.
-- [NEDNSProxyManagerError.configurationStale](nednsproxymanagererror/configurationstale.md)
+- [NEDNSProxyManagerError.configurationStale](./nednsproxymanagererror/configurationstale.md)
   Outdated DNS proxy configuration that needs to be loaded.
-- [NEDNSProxyManagerError.configurationCannotBeRemoved](nednsproxymanagererror/configurationcannotberemoved.md)
+- [NEDNSProxyManagerError.configurationCannotBeRemoved](./nednsproxymanagererror/configurationcannotberemoved.md)
   Unremovable DNS proxy configuration.
 ### Initializers
-- [init?(rawValue: Int)](nednsproxymanagererror/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nednsproxymanagererror/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let NEDNSProxyErrorDomain: String](nednsproxyerrordomain.md)
+### Errors
+- [let NEDNSProxyErrorDomain: String](./nednsproxyerrordomain.md)
   The DNS proxy error domain.
 
 

@@ -1,15 +1,20 @@
 # deviceInquiryDeviceNameUpdated(_:device:devicesRemaining:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func deviceInquiryDeviceNameUpdated(_ sender: IOBluetoothDeviceInquiry!, device: IOBluetoothDevice!, devicesRemaining: UInt32)
+```
+
+```objc
+- (void) deviceInquiryDeviceNameUpdated:(IOBluetoothDeviceInquiry *) sender device:(IOBluetoothDevice *) device devicesRemaining:(uint32_t) devicesRemaining;
 ```
 
 #### Discussion

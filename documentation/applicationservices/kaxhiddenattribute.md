@@ -1,7 +1,8 @@
 # kAXHiddenAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Indicates whether the application represented by this accessibility object is hidden. This attribute is recommended for all application-level accessibility objects.
 
@@ -12,6 +13,10 @@ Indicates whether the application represented by this accessibility object is hi
 
 ```swift
 var kAXHiddenAttribute: String { get }
+```
+
+```c
+#define kAXHiddenAttribute
 ```
 
 

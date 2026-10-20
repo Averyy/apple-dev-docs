@@ -1,12 +1,13 @@
 # webViewStatusText(_:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the current status message from a web view’s window.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns the current status message from a web view’s window.
 optional func webViewStatusText(_ sender: WebView!) -> String!
 ```
 
+```objc
+- (NSString *) webViewStatusText:(WebView *) sender;
+```
+
 #### Return Value
 
-The status message displayed in the web view’s window if one has been set with the [`webView(_:setStatusText:)`](webuidelegate/webview(_:setstatustext:).md) method; otherwise, `nil`.
+The status message displayed in the web view’s window if one has been set with the [`webView(_:setStatusText:)`](./webview%28_,setstatustext%29.md) method; otherwise, `nil`.
 
 ## Parameters
 
@@ -24,7 +29,8 @@ The status message displayed in the web view’s window if one has been set with
 
 ## See Also
 
-- [func webView(WebView!, setStatusText: String!)](webuidelegate/webview(_:setstatustext:).md)
+### Displaying Status Messages
+- [func webView(WebView!, setStatusText: String!)](./webview%28_,setstatustext%29.md)
   Sets the status message displayed by a web view’s window, if any, to the specified text.
 
 

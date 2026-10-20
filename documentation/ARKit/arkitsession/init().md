@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ARKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new session.
 
@@ -20,11 +21,12 @@ ARKit stops sessions when they’re deinitialized.
 
 ## See Also
 
-- [func run([any DataProvider]) async throws](arkitsession/run(_:).md)
+### Starting and stopping a session
+- [func run([any DataProvider]) async throws](./run%28_%29.md)
   Runs a session with the data providers you supply.
-- [func stop()](arkitsession/stop.md)
+- [func stop()](./stop%28%29.md)
   Stops all data providers running in this session.
-- [ARKitSession.Error](arkitsession/error.md)
+- [ARKitSession.Error](./error.md)
   An error that might occur when running data providers on an ARKit session.
 
 

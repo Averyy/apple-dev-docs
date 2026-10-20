@@ -1,7 +1,8 @@
 # SRWristTemperature.Condition
 
 **Framework**: SensorKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The user activities with the watch that can impact the temperature measurement.
 
@@ -16,34 +17,39 @@ The user activities with the watch that can impact the temperature measurement.
 struct Condition
 ```
 
+```c
+enum SRWristTemperatureCondition : NSUInteger;
+```
+
 ## Topics
 
 ### Conditions
-- [static var offWrist: SRWristTemperature.Condition](srwristtemperature/condition-swift.struct/offwrist.md)
+- [static var offWrist: SRWristTemperature.Condition](./condition-swift.struct/offwrist.md)
   The watch being off the wrist impacts the accuracy.
-- [static var onCharger: SRWristTemperature.Condition](srwristtemperature/condition-swift.struct/oncharger.md)
+- [static var onCharger: SRWristTemperature.Condition](./condition-swift.struct/oncharger.md)
   The watch being on the charger impacts the accuracy.
-- [static var inMotion: SRWristTemperature.Condition](srwristtemperature/condition-swift.struct/inmotion.md)
+- [static var inMotion: SRWristTemperature.Condition](./condition-swift.struct/inmotion.md)
   The watch being in motion impacts the accuracy.
 ### Creating conditions
-- [init(rawValue: UInt)](srwristtemperature/condition-swift.struct/init(rawvalue:).md)
+- [init(rawValue: UInt)](./condition-swift.struct/init%28rawvalue%29.md)
   Creates and returns a new structure with the specified value.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [var condition: SRWristTemperature.Condition](srwristtemperature/condition-swift.property.md)
+### Determining the accuracy
+- [var condition: SRWristTemperature.Condition](./condition-swift.property.md)
   The condition of the measurement that impacts its accuracy.
 
 

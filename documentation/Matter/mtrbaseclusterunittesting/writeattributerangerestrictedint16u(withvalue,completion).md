@@ -1,7 +1,8 @@
 # writeAttributeRangeRestrictedInt16u(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeRangeRestrictedInt16u(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeRangeRestrictedInt16u(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeRangeRestrictedInt16uWithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

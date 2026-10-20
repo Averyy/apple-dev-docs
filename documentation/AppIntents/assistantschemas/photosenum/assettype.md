@@ -1,7 +1,8 @@
 # assetType
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of asset.
 
@@ -38,7 +39,7 @@ enum PhotoAssetType: AppEnum {
 }
 ```
 
-For more information about the `.photos` app intent domain, see [`Photos`](app-schema-domain-photos.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
+For more information about the `.photos` app intent domain, see [Photos](../../app-schema-domain-photos.md). For general information about app intent domains, see [Making actions and content discoverable by Apple Intelligence](../../making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

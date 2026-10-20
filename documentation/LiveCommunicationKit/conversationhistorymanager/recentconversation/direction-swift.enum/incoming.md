@@ -1,7 +1,8 @@
 # ConversationHistoryManager.RecentConversation.Direction.incoming
 
 **Framework**: LiveCommunicationKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The conversation was received by the local participant.
 
@@ -18,7 +19,8 @@ case incoming
 
 ## See Also
 
-- [ConversationHistoryManager.RecentConversation.Direction.outgoing](conversationhistorymanager/recentconversation/direction-swift.enum/outgoing.md)
+### Conversation direction
+- [ConversationHistoryManager.RecentConversation.Direction.outgoing](./outgoing.md)
   The conversation was initiated by the local participant.
 
 

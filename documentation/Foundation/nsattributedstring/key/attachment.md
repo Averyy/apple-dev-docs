@@ -1,7 +1,8 @@
 # attachment
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The attachment for the text.
 
@@ -22,11 +23,12 @@ static let attachment: NSAttributedString.Key
 
 #### Discussion
 
-The value of this attribute is an [`NSTextAttachment`](https://developer.apple.com/documentation/appkit/nstextattachment) object. The default value of this property is `nil`, indicating no attachment.
+The value of this attribute is an [`NSTextAttachment`](../../../AppKit/nstextattachment.md) object. The default value of this property is `nil`, indicating no attachment.
 
 ## See Also
 
-- [static let adaptiveImageGlyph: NSAttributedString.Key](nsattributedstring/key/adaptiveimageglyph.md)
+### Getting attachment attribute keys
+- [static let adaptiveImageGlyph: NSAttributedString.Key](./adaptiveimageglyph.md)
   The adaptive image glyph for the text.
 
 

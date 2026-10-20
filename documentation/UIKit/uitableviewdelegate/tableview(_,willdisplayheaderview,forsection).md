@@ -1,7 +1,8 @@
 # tableView(_:willDisplayHeaderView:forSection:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the table is about to display the header view for the specified section.
 
@@ -9,13 +10,17 @@ Tells the delegate that the table is about to display the header view for the sp
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 optional func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int)
+```
+
+```objc
+- (void) tableView:(UITableView *) tableView willDisplayHeaderView:(UIView *) view forSection:(NSInteger) section;
 ```
 
 ## Parameters
@@ -26,11 +31,12 @@ optional func tableView(_ tableView: UITableView, willDisplayHeaderView view: UI
 
 ## See Also
 
-- [func tableView(UITableView, viewForHeaderInSection: Int) -> UIView?](uitableviewdelegate/tableview(_:viewforheaderinsection:).md)
+### Providing custom header and footer views
+- [func tableView(UITableView, viewForHeaderInSection: Int) -> UIView?](./tableview%28_,viewforheaderinsection%29.md)
   Asks the delegate for a view to display in the header of the specified section of the table view.
-- [func tableView(UITableView, viewForFooterInSection: Int) -> UIView?](uitableviewdelegate/tableview(_:viewforfooterinsection:).md)
+- [func tableView(UITableView, viewForFooterInSection: Int) -> UIView?](./tableview%28_,viewforfooterinsection%29.md)
   Asks the delegate for a view to display in the footer of the specified section of the table view.
-- [func tableView(UITableView, willDisplayFooterView: UIView, forSection: Int)](uitableviewdelegate/tableview(_:willdisplayfooterview:forsection:).md)
+- [func tableView(UITableView, willDisplayFooterView: UIView, forSection: Int)](./tableview%28_,willdisplayfooterview,forsection%29.md)
   Tells the delegate that the table is about to display the footer view for the specified section.
 
 

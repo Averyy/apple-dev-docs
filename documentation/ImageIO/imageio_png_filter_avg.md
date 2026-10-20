@@ -1,7 +1,8 @@
 # IMAGEIO_PNG_FILTER_AVG
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A filter in which each byte is replaced with the difference between it and the average of the bytes above it and to its left.
 
@@ -20,19 +21,24 @@ A filter in which each byte is replaced with the difference between it and the a
 var IMAGEIO_PNG_FILTER_AVG: Int32 { get }
 ```
 
+```c
+#define IMAGEIO_PNG_FILTER_AVG
+```
+
 ## See Also
 
-- [let kCGImagePropertyPNGCompressionFilter: CFString](kcgimagepropertypngcompressionfilter.md)
+### Pre-Compression Filters
+- [let kCGImagePropertyPNGCompressionFilter: CFString](./kcgimagepropertypngcompressionfilter.md)
   The PNG filter to apply prior to compression.
-- [var IMAGEIO_PNG_NO_FILTERS: Int32](imageio_png_no_filters.md)
+- [var IMAGEIO_PNG_NO_FILTERS: Int32](./imageio_png_no_filters.md)
   No PNG filters.
-- [var IMAGEIO_PNG_FILTER_NONE: Int32](imageio_png_filter_none.md)
+- [var IMAGEIO_PNG_FILTER_NONE: Int32](./imageio_png_filter_none.md)
   A filter in which each byte is unchanged.
-- [var IMAGEIO_PNG_FILTER_SUB: Int32](imageio_png_filter_sub.md)
+- [var IMAGEIO_PNG_FILTER_SUB: Int32](./imageio_png_filter_sub.md)
   A filter in which each byte is replaced with the difference between it and the corresponding byte to its left.
-- [var IMAGEIO_PNG_FILTER_UP: Int32](imageio_png_filter_up.md)
+- [var IMAGEIO_PNG_FILTER_UP: Int32](./imageio_png_filter_up.md)
   A filter in which each byte is replaced with the difference between it and the byte above it.
-- [var IMAGEIO_PNG_FILTER_PAETH: Int32](imageio_png_filter_paeth.md)
+- [var IMAGEIO_PNG_FILTER_PAETH: Int32](./imageio_png_filter_paeth.md)
   A filter in which each byte is replaced with the difference between it and the Paeth predictor of the bytes to its left, above, and upper left.
 
 

@@ -1,7 +1,8 @@
 # GeoRequest
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A single geo entity lookup criterion used in a geo location search request.
 
@@ -10,13 +11,13 @@ A single geo entity lookup criterion used in a geo location search request.
 
 ## Declaration
 
-```swift
+```
 object GeoRequest
 ```
 
 #### Discussion
 
-The `GeoRequest` object specifies a single geographic entity to look up within a [`GeoSearchPostRequest`](geosearchpostrequest.md). Both identifiers work for any entity type. Use whichever you already have. Search results return both so you can switch between them freely.
+The `GeoRequest` object specifies a single geographic entity to look up within a [`GeoSearchPostRequest`](./geosearchpostrequest.md). Both identifiers work for any entity type. Use whichever you already have. Search results return both so you can switch between them freely.
 
 To batch-resolve geo entity eligibility in one call, use multiple `GeoRequest` objects in a single `GeoSearchPostRequest`.
 
@@ -37,17 +38,17 @@ To batch-resolve geo entity eligibility in one call, use multiple `GeoRequest` o
 
 ## See Also
 
-- [object GeoSearchPostRequest](geosearchpostrequest.md)
+- [object GeoSearchPostRequest](./geosearchpostrequest.md)
   Request body for querying geo locations.
-- [object GeoSearchResponse](geosearchresponse.md)
+- [object GeoSearchResponse](./geosearchresponse.md)
   Response envelope for the geo location search endpoints.
-- [object GeoSearchPagination](geosearchpagination.md)
+- [object GeoSearchPagination](./geosearchpagination.md)
   Pagination parameters for geo location search requests and responses.
-- [object GeoEligibility](geoeligibility.md)
+- [object GeoEligibility](./geoeligibility.md)
   Eligibility restrictions for a geographic location, scoped to the supply source specified in the request.
-- [object GeoBlockedGroup](geoblockedgroup.md)
+- [object GeoBlockedGroup](./geoblockedgroup.md)
   A blocking rule that names the supply source(s) and reason code(s) restricting a geo location.
-- [object SearchEntity](searchentity.md)
+- [object SearchEntity](./searchentity.md)
   A single geographic location result returned by the geo search endpoints.
 
 

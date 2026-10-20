@@ -1,7 +1,8 @@
 # WKImmersiveEnvironmentDelegate
 
 **Framework**: WebKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - visionOS 27.0+
@@ -13,6 +14,10 @@
 protocol WKImmersiveEnvironmentDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol WKImmersiveEnvironmentDelegate <NSObject>
+```
+
 #### Overview
 
 A protocol for managing immersive environment presentation in a web view.
@@ -22,21 +27,22 @@ Implement the methods of this protocol to control authorization, presentation, a
 ## Topics
 
 ### Instance Methods
-- [func webView(WKWebView, dismiss: WKImmersiveEnvironment, completionHandler: () -> Void)](wkimmersiveenvironmentdelegate/webview(_:dismiss:completionhandler:).md)
-- [func webView(WKWebView, present: WKImmersiveEnvironment, completionHandler: ((any Error)?) -> Void)](wkimmersiveenvironmentdelegate/webview(_:present:completionhandler:).md)
-- [func webView(WKWebView, shouldAllowImmersiveEnvironmentFromFrame: WKFrameInfo, completionHandler: (Bool) -> Void)](wkimmersiveenvironmentdelegate/webview(_:shouldallowimmersiveenvironmentfromframe:completionhandler:).md)
+- [func webView(WKWebView, dismiss: WKImmersiveEnvironment, completionHandler: () -> Void)](./wkimmersiveenvironmentdelegate/webview%28_,dismiss,completionhandler%29.md)
+- [func webView(WKWebView, present: WKImmersiveEnvironment, completionHandler: ((any Error)?) -> Void)](./wkimmersiveenvironmentdelegate/webview%28_,present,completionhandler%29.md)
+- [func webView(WKWebView, shouldAllowImmersiveEnvironmentFromFrame: WKFrameInfo, completionHandler: (Bool) -> Void)](./wkimmersiveenvironmentdelegate/webview%28_,shouldallowimmersiveenvironmentfromframe,completionhandler%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class WKImmersiveEnvironment](wkimmersiveenvironment.md)
-- [var allowsImmersiveEnvironments: Bool](wkwebviewconfiguration/allowsimmersiveenvironments.md)
-- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](wkwebview/immersiveenvironmentdelegate.md)
-- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](wkwebview/dismissimmersiveenvironment(completionhandler:).md)
+### Immersive environments
+- [class WKImmersiveEnvironment](./wkimmersiveenvironment.md)
+- [var allowsImmersiveEnvironments: Bool](./wkwebviewconfiguration/allowsimmersiveenvironments.md)
+- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](./wkwebview/immersiveenvironmentdelegate.md)
+- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](./wkwebview/dismissimmersiveenvironment%28completionhandler%29.md)
 
 
 ---

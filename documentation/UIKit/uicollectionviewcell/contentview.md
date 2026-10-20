@@ -1,7 +1,8 @@
 # contentView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The main view that you add your cell’s custom content to.
 
@@ -9,7 +10,7 @@ The main view that you add your cell’s custom content to.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The main view that you add your cell’s custom content to.
 var contentView: UIView { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIView * contentView;
+```
+
 #### Discussion
 
 When configuring a cell, you add any custom views representing your cell’s content to this view. The cell object places the content in this view in front of any background views.
 
 ## See Also
 
-- [var contentConfiguration: (any UIContentConfiguration)?](uicollectionviewcell/contentconfiguration-13e7k.md)
+### Managing the content
+- [var contentConfiguration: (any UIContentConfiguration)?](./contentconfiguration-13e7k.md)
   The current content configuration of the cell.
-- [var automaticallyUpdatesContentConfiguration: Bool](uicollectionviewcell/automaticallyupdatescontentconfiguration.md)
+- [var automaticallyUpdatesContentConfiguration: Bool](./automaticallyupdatescontentconfiguration.md)
   A Boolean value that determines whether the cell automatically updates its content configuration when its state changes.
 
 

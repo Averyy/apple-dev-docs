@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize an MPSGraph to insert nodes in.
 
@@ -17,6 +18,10 @@ Initialize an MPSGraph to insert nodes in.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

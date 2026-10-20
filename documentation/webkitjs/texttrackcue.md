@@ -1,7 +1,8 @@
 # TextTrackCue
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface TextTrackCue
 ```
 
 ## Topics
 
 ### Instance Properties
-- [endTime](texttrackcue/1629506-endtime.md)
-- [id](texttrackcue/1631614-id.md)
-- [onenter](texttrackcue/1629590-onenter.md)
-- [onexit](texttrackcue/1632128-onexit.md)
-- [pauseOnExit](texttrackcue/1632561-pauseonexit.md)
-- [startTime](texttrackcue/1629523-starttime.md)
-- [track](texttrackcue/1631309-track.md)
+- [endTime](./texttrackcue/api-1629506-endtime.md)
+- [id](./texttrackcue/api-1631614-id.md)
+- [onenter](./texttrackcue/api-1629590-onenter.md)
+- [onexit](./texttrackcue/api-1632128-onexit.md)
+- [pauseOnExit](./texttrackcue/api-1632561-pauseonexit.md)
+- [startTime](./texttrackcue/api-1629523-starttime.md)
+- [track](./texttrackcue/api-1631309-track.md)
 
 ## Relationships
 

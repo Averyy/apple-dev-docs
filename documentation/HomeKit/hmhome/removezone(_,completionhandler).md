@@ -1,7 +1,8 @@
 # removeZone(_:completionHandler:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes a zone from the home.
 
@@ -14,21 +15,32 @@ Removes a zone from the home.
 ## Declaration
 
 ```swift
+func removeZone(_ zone: HMZone, completionHandler completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func removeZone(_ zone: HMZone) async throws
+```
+
+```objc
+- (void) removeZone:(HMZone *) zone completionHandler:(void (^)(NSError *error)) completion;
 ```
 
 ## Parameters
 
 - `zone`: The zone to remove.
-- `completion`: The block executed after the request is processed. - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
+- `completion`: The block executed after the request is processed.
+
+  - **error**: `nil` on success; otherwise, error object indicating the reason for failure.
 
 ## See Also
 
-- [var zones: [HMZone]](hmhome/zones.md)
+### Grouping rooms into zones
+- [var zones: [HMZone]](./zones.md)
   An array of all the zones in the home.
-- [func addZone(withName: String, completionHandler: (HMZone?, (any Error)?) -> Void)](hmhome/addzone(withname:completionhandler:).md)
+- [func addZone(withName: String, completionHandler: (HMZone?, (any Error)?) -> Void)](./addzone%28withname,completionhandler%29.md)
   Adds a new zone to the home.
-- [class HMZone](hmzone.md)
+- [class HMZone](../hmzone.md)
   A collection of rooms that users think of as a single area, like upstairs or downstairs.
 
 

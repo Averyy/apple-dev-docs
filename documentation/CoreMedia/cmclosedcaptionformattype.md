@@ -1,7 +1,8 @@
 # CMClosedCaptionFormatType
 
 **Framework**: Core Media  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A closed caption format type.
 
@@ -20,33 +21,38 @@ A closed caption format type.
 typealias CMClosedCaptionFormatType = FourCharCode
 ```
 
+```c
+typedef FourCharCode CMClosedCaptionFormatType;
+```
+
 ## Topics
 
 ### Constants
-- [var kCMClosedCaptionFormatType_CEA608: CMClosedCaptionFormatType](kcmclosedcaptionformattype_cea608.md)
+- [var kCMClosedCaptionFormatType_CEA608: CMClosedCaptionFormatType](./kcmclosedcaptionformattype_cea608.md)
   A type that describes CEA 608-compliant samples.
-- [var kCMClosedCaptionFormatType_CEA708: CMClosedCaptionFormatType](kcmclosedcaptionformattype_cea708.md)
+- [var kCMClosedCaptionFormatType_CEA708: CMClosedCaptionFormatType](./kcmclosedcaptionformattype_cea708.md)
   A type that describes CEA 708-compliant samples.
 
 ## See Also
 
-- [typealias CMMetadataFormatType](cmmetadataformattype.md)
+### Format Types
+- [typealias CMMetadataFormatType](./cmmetadataformattype.md)
   A metadata format type.
-- [Metadata Format Types](metadata-format-types.md)
+- [Metadata Format Types](./metadata-format-types.md)
   Constants that represent media format types.
-- [typealias CMSubtitleFormatType](cmsubtitleformattype.md)
+- [typealias CMSubtitleFormatType](./cmsubtitleformattype.md)
   A type that represents a text subtitle format.
-- [Subtitle Format Types](subtitle-format-types.md)
+- [Subtitle Format Types](./subtitle-format-types.md)
   Constants that represent subtitle format types.
-- [typealias CMTimeCodeFormatType](cmtimecodeformattype.md)
+- [typealias CMTimeCodeFormatType](./cmtimecodeformattype.md)
   A time code format type.
-- [Time Code Formats](time-code-formats.md)
+- [Time Code Formats](./time-code-formats.md)
   Constants that represent time code format types.
-- [typealias CMTextFormatType](cmtextformattype.md)
+- [typealias CMTextFormatType](./cmtextformattype.md)
   A text format type.
-- [typealias CMPixelFormatType](cmpixelformattype.md)
+- [typealias CMPixelFormatType](./cmpixelformattype.md)
   A pixel format type.
-- [Tagged Buffer Group Format Types](tagged-buffergroup-format-types.md)
+- [Tagged Buffer Group Format Types](./tagged-buffergroup-format-types.md)
 
 
 ---

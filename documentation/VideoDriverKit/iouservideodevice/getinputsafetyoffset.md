@@ -1,7 +1,8 @@
 # GetInputSafetyOffset
 
 **Framework**: VideoDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gets the input safety offset of the device.
 
@@ -10,7 +11,7 @@ Gets the input safety offset of the device.
 
 ## Declaration
 
-```swift
+```c
 uint32_t GetInputSafetyOffset();
 ```
 
@@ -24,11 +25,12 @@ A uint32_t whose value indicates the number for frames behind the current hardwa
 
 ## See Also
 
-- [SetInputSafetyOffset](iouservideodevice/setinputsafetyoffset.md)
+### Working with safety offset behavior
+- [SetInputSafetyOffset](./setinputsafetyoffset.md)
   Specifies the input safety offset of the device.
-- [SetOutputSafetyOffset](iouservideodevice/setoutputsafetyoffset.md)
+- [SetOutputSafetyOffset](./setoutputsafetyoffset.md)
   Specifies the output safety offset of the device.
-- [GetOutputSafetyOffset](iouservideodevice/getoutputsafetyoffset.md)
+- [GetOutputSafetyOffset](./getoutputsafetyoffset.md)
   Gets the output safety offset of the device.
 
 

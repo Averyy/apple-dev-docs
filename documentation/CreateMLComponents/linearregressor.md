@@ -1,7 +1,8 @@
 # LinearRegressor
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A linear regressor.
 
@@ -23,61 +24,62 @@ struct LinearRegressor<Scalar> where Scalar : MLShapedArrayScalar, Scalar : Bina
 ## Topics
 
 ### Creating a regressor
-- [init(configuration: LinearRegressor<Scalar>.Configuration)](linearregressor/init(configuration:).md)
+- [init(configuration: LinearRegressor<Scalar>.Configuration)](./linearregressor/init%28configuration%29.md)
   Creates a linear regressor.
-- [LinearRegressor.Configuration](linearregressor/configuration-swift.struct.md)
+- [LinearRegressor.Configuration](./linearregressor/configuration-swift.struct.md)
   A linear regressor configuration.
 ### Getting the configuration
-- [var configuration: LinearRegressor<Scalar>.Configuration](linearregressor/configuration-swift.property.md)
+- [var configuration: LinearRegressor<Scalar>.Configuration](./linearregressor/configuration-swift.property.md)
   The linear regressor configuration.
 ### Encoding and decoding
-- [func encodeWithOptimizer(LinearRegressorModel<Scalar>, to: inout any EstimatorEncoder) throws](linearregressor/encodewithoptimizer(_:to:).md)
+- [func encodeWithOptimizer(LinearRegressorModel<Scalar>, to: inout any EstimatorEncoder) throws](./linearregressor/encodewithoptimizer%28_,to%29.md)
   Encodes the transformer and optimizer to an encoder.
-- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> LinearRegressorModel<Scalar>](linearregressor/decodewithoptimizer(from:).md)
+- [func decodeWithOptimizer(from: inout any EstimatorDecoder) throws -> LinearRegressorModel<Scalar>](./linearregressor/decodewithoptimizer%28from%29.md)
   Reads the encoded transformer and optimizer with a decoder.
 ### Fitting
-- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LinearRegressorModel<Scalar>](linearregressor/fitted(to:eventhandler:).md)
+- [func fitted<Input>(to: Input, eventHandler: EventHandler?) async throws -> LinearRegressorModel<Scalar>](./linearregressor/fitted%28to,eventhandler%29.md)
   Fits a linear regressor model to a sequence of examples.
-- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> LinearRegressorModel<Scalar>](linearregressor/fitted(to:validateon:eventhandler:).md)
+- [func fitted<Input, Validation>(to: Input, validateOn: Validation, eventHandler: EventHandler?) async throws -> LinearRegressorModel<Scalar>](./linearregressor/fitted%28to,validateon,eventhandler%29.md)
   Fits a linear regressor model to a sequence of examples.
-- [LinearRegressor.Annotation](linearregressor/annotation.md)
+- [LinearRegressor.Annotation](./linearregressor/annotation.md)
   The annotation type.
-- [LinearRegressor.Transformer](linearregressor/transformer.md)
+- [LinearRegressor.Transformer](./linearregressor/transformer.md)
   The transformer type created by this estimator.
 ### Default Implementations
-- [UpdatableSupervisedEstimator Implementations](linearregressor/updatablesupervisedestimator-implementations.md)
+- [UpdatableSupervisedEstimator Implementations](./linearregressor/updatablesupervisedestimator-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SupervisedEstimator](supervisedestimator.md)
-- [UpdatableSupervisedEstimator](updatablesupervisedestimator.md)
+- [Copyable](../Swift/copyable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SupervisedEstimator](./supervisedestimator.md)
+- [UpdatableSupervisedEstimator](./updatablesupervisedestimator.md)
 
 ## See Also
 
-- [protocol Regressor](regressor.md)
+### Regressors
+- [protocol Regressor](./regressor.md)
   A transformer that predicts a float value.
-- [struct LinearRegressorModel](linearregressormodel.md)
+- [struct LinearRegressorModel](./linearregressormodel.md)
   A trained linear regressor model.
-- [struct MultivariateLinearRegressor](multivariatelinearregressor.md)
+- [struct MultivariateLinearRegressor](./multivariatelinearregressor.md)
   A multivariate linear regressor.
-- [struct MultivariateLinearRegressorConfiguration](multivariatelinearregressorconfiguration.md)
+- [struct MultivariateLinearRegressorConfiguration](./multivariatelinearregressorconfiguration.md)
   A linear regressor configuration.
-- [MultivariateLinearRegressor.Model](multivariatelinearregressor/model.md)
+- [MultivariateLinearRegressor.Model](./multivariatelinearregressor/model.md)
   A trained multivariate linear regressor model.
-- [struct FullyConnectedNetworkRegressor](fullyconnectednetworkregressor.md)
+- [struct FullyConnectedNetworkRegressor](./fullyconnectednetworkregressor.md)
   A regressor that uses a fully connected network.
-- [struct FullyConnectedNetworkRegressorModel](fullyconnectednetworkregressormodel.md)
+- [struct FullyConnectedNetworkRegressorModel](./fullyconnectednetworkregressormodel.md)
   A regressor model that uses a fully connected network.
-- [struct BoostedTreeRegressor](boostedtreeregressor.md)
+- [struct BoostedTreeRegressor](./boostedtreeregressor.md)
   A gradient boosted decision tree regressor.
-- [struct TreeRegressorModel](treeregressormodel.md)
+- [struct TreeRegressorModel](./treeregressormodel.md)
   A trained tree regressor model.
-- [enum OptimizationStrategy](optimizationstrategy.md)
+- [enum OptimizationStrategy](./optimizationstrategy.md)
   A linear optimization strategy.
 
 

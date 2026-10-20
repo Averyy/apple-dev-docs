@@ -1,17 +1,24 @@
 # audio
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 3.2+
-- iPadOS 3.2+
-- Mac Catalyst 13.1+
+- iOS 3.2+ - Deprecated in 9.0
+- iPadOS 3.2+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use AVPlayerViewController in AVKit
 
 ## Declaration
 
 ```swift
 static var audio: MPMovieMediaTypeMask { get }
+```
+
+```c
+MPMovieMediaTypeMaskAudio
 ```
 
 #### Discussion
@@ -20,7 +27,8 @@ The movie file contains audio media.
 
 ## See Also
 
-- [static var video: MPMovieMediaTypeMask](mpmoviemediatypemask/video.md)
+### Constants
+- [static var video: MPMovieMediaTypeMask](./video.md)
 
 
 ---

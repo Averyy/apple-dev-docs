@@ -1,7 +1,8 @@
 # default
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default set of options for loading subscription offers for Apple Music.
 

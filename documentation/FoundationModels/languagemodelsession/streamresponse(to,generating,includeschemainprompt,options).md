@@ -1,7 +1,8 @@
 # streamResponse(to:generating:includeSchemaInPrompt:options:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Produces a response stream to a prompt.
 
@@ -19,15 +20,21 @@ Produces a response stream to a prompt.
 final func streamResponse<Content>(to prompt: Prompt, generating type: Content.Type = Content.self, includeSchemaInPrompt: Bool = true, options: GenerationOptions = GenerationOptions()) -> sending LanguageModelSession.ResponseStream<Content> where Content : Generable
 ```
 
+**Other overloads**:
+
+```swift
+final func streamResponse<Content>(to prompt: String, generating type: Content.Type = Content.self, includeSchemaInPrompt: Bool = true, options: GenerationOptions = GenerationOptions()) -> sending LanguageModelSession.ResponseStream<Content> where Content : Generable
+```
+
 #### Return Value
 
-A response stream that produces [`GeneratedContent`](generatedcontent.md) containing the fields and values defined in the schema.
+A response stream that produces [`GeneratedContent`](../generatedcontent.md) containing the fields and values defined in the schema.
 
 #### Discussion
 
 Consider using the default value of `true` for `includeSchemaInPrompt`. The exception to the rule is when the model has knowledge about the expected response format, either because it has been trained on it, or because it has seen exhaustive examples during this session.
 
-> ❗ **Important**: If running in the background, use the non-streaming [`respond(to:options:)`](languagemodelsession/respond(to:options:)-6a2gb.md) method to reduce the likelihood of encountering [`LanguageModelError.rateLimited(_:)`](languagemodelerror/ratelimited(_:).md) errors.
+> ❗ **Important**: If running in the background, use the non-streaming [`respond(to:options:)`](./respond%28to,options%29-6a2gb.md) method to reduce the likelihood of encountering [`LanguageModelError.rateLimited(_:)`](../languagemodelerror/ratelimited%28_%29.md) errors.
 
 ## Parameters
 
@@ -38,17 +45,18 @@ Consider using the default value of `true` for `includeSchemaInPrompt`. The exce
 
 ## See Also
 
-- [func streamResponse(options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](languagemodelsession/streamresponse(options:prompt:).md)
+### Streaming a response
+- [func streamResponse(options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](./streamresponse%28options,prompt%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt:).md)
+- [func streamResponse<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](./streamresponse%28generating,includeschemainprompt,options,prompt%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<GeneratedContent>](languagemodelsession/streamresponse(schema:includeschemainprompt:options:prompt:).md)
+- [func streamResponse(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<GeneratedContent>](./streamresponse%28schema,includeschemainprompt,options,prompt%29.md)
   Produces a response stream to a prompt and schema.
-- [func streamResponse(to:options:)](languagemodelsession/streamresponse(to:options:).md)
+- [func streamResponse(to:options:)](./streamresponse%28to,options%29.md)
   Produces a response stream to a prompt.
-- [func streamResponse(to:schema:includeSchemaInPrompt:options:)](languagemodelsession/streamresponse(to:schema:includeschemainprompt:options:).md)
+- [func streamResponse(to:schema:includeSchemaInPrompt:options:)](./streamresponse%28to,schema,includeschemainprompt,options%29.md)
   Produces a response stream to a prompt and schema.
-- [LanguageModelSession.ResponseStream](languagemodelsession/responsestream.md)
+- [LanguageModelSession.ResponseStream](./responsestream.md)
   An async sequence of snapshots of partially generated content.
 
 

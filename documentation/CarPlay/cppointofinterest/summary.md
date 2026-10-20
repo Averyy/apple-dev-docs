@@ -1,7 +1,8 @@
 # summary
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The summary that the picker’s item displays.
 
@@ -16,11 +17,16 @@ The summary that the picker’s item displays.
 var summary: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * summary;
+```
+
 ## See Also
 
-- [var title: String](cppointofinterest/title.md)
+### Managing the Picker Item’s Data
+- [var title: String](./title.md)
   The title that the picker’s item displays.
-- [var subtitle: String?](cppointofinterest/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The subtitle that the picker’s item displays.
 
 

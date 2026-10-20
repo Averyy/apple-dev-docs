@@ -1,7 +1,8 @@
 # AVPlayerInterstitialEventMonitor.ScheduleRequestCompleted
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A NotificationCenter AsyncMessage that is sent when a daterange-schedule request completes
 
@@ -28,15 +29,15 @@ struct ScheduleRequestCompleted
 ## Topics
 
 ### Inspecting the completion
-- [let scheduleIdentifier: String](avplayerinterstitialeventmonitor/schedulerequestcompleted/scheduleidentifier.md)
-- [let result: Result<Data, any Error>](avplayerinterstitialeventmonitor/schedulerequestcompleted/result.md)
+- [let scheduleIdentifier: String](./schedulerequestcompleted/scheduleidentifier.md)
+- [let result: Result<Data, any Error>](./schedulerequestcompleted/result.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.AsyncMessage](../foundation/notificationcenter/asyncmessage.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.AsyncMessage](../../Foundation/notificationcenter/asyncmessage.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

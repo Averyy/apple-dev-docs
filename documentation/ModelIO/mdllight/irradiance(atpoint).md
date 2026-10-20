@@ -1,7 +1,8 @@
 # irradiance(atPoint:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the radiance of the light as received at a specific point in the same scene.
 
@@ -19,13 +20,17 @@ Returns the radiance of the light as received at a specific point in the same sc
 func irradiance(atPoint point: vector_float3) -> Unmanaged<CGColor>
 ```
 
+```objc
+- (CGColorRef) irradianceAtPoint:(vector_float3) point;
+```
+
 #### Return Value
 
 The color and intensity of the light’s effect on the specified point.
 
 #### Discussion
 
-Calling this method is equivalent to calling the [`irradiance(atPoint:colorSpace:)`](mdllight/irradiance(atpoint:colorspace:).md) method and passing the Rec. 709 color space. (See `kCGColorSpaceITUR_709`.)
+Calling this method is equivalent to calling the [`irradiance(atPoint:colorSpace:)`](./irradiance%28atpoint,colorspace%29.md) method and passing the Rec. 709 color space. (See `kCGColorSpaceITUR_709`.)
 
 ## Parameters
 
@@ -33,11 +38,12 @@ Calling this method is equivalent to calling the [`irradiance(atPoint:colorSpace
 
 ## See Also
 
-- [func irradiance(atPoint: vector_float3, colorSpace: CGColorSpace) -> Unmanaged<CGColor>](mdllight/irradiance(atpoint:colorspace:).md)
+### Working with Lights
+- [func irradiance(atPoint: vector_float3, colorSpace: CGColorSpace) -> Unmanaged<CGColor>](./irradiance%28atpoint,colorspace%29.md)
   Returns the radiance of the light as received at a specific point in the same scene, expressed using the specified color space.
-- [var lightType: MDLLightType](mdllight/lighttype.md)
+- [var lightType: MDLLightType](./lighttype.md)
   The type of the light.
-- [var colorSpace: String](mdllight/colorspace.md)
+- [var colorSpace: String](./colorspace.md)
   The name of the Core Graphics color space to be used for interpreting the light’s color information.
 
 

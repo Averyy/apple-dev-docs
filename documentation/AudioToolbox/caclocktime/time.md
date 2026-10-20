@@ -1,15 +1,20 @@
 # time
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var time: CAClockTime.__Unnamed_union_time
+```
+
+```c
+union { ... } time;
 ```
 
 

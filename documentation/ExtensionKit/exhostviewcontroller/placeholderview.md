@@ -1,7 +1,8 @@
 # placeholderView
 
 **Framework**: ExtensionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view to display when the view controller has no app extension content to display.
 
@@ -13,15 +14,24 @@ The view to display when the view controller has no app extension content to dis
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst*
+
+```swift
+var placeholderView: UIView { get set }
+```
+
+*macOS*
+
 ```swift
 var placeholderView: NSView { get set }
 ```
 
 ## See Also
 
-- [var configuration: EXHostViewController.Configuration?](exhostviewcontroller/configuration-swift.property.md)
+### Configuring the view controller
+- [var configuration: EXHostViewController.Configuration?](./configuration-swift.property.md)
   The information the host view controller uses to fetch the appropriate scene from an app extension.
-- [EXHostViewController.Configuration](exhostviewcontroller/configuration-swift.struct.md)
+- [EXHostViewController.Configuration](./configuration-swift.struct.md)
   An object that holds configuration options for a host view controller.
 
 

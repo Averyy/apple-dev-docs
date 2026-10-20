@@ -1,7 +1,8 @@
 # HKPredicateKeyPathMostRecentDuration
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key path for the duration of the sample’s most recent quantity.
 
@@ -19,23 +20,28 @@ A key path for the duration of the sample’s most recent quantity.
 let HKPredicateKeyPathMostRecentDuration: String
 ```
 
+```c
+extern NSString * const HKPredicateKeyPathMostRecentDuration;
+```
+
 #### Discussion
 
 Use this constant whenever you want to include a sample’s quantity in a predicate format string. Add a `%K` placeholder to the format string, and then pass this constant as an argument.
 
 ## See Also
 
-- [let HKPredicateKeyPathMin: String](hkpredicatekeypathmin.md)
+### Specifying Predicate Key Paths
+- [let HKPredicateKeyPathMin: String](./hkpredicatekeypathmin.md)
   The key path for the sample’s minimum quantity.
-- [let HKPredicateKeyPathAverage: String](hkpredicatekeypathaverage.md)
+- [let HKPredicateKeyPathAverage: String](./hkpredicatekeypathaverage.md)
   The key path for the sample’s average quantity.
-- [let HKPredicateKeyPathMax: String](hkpredicatekeypathmax.md)
+- [let HKPredicateKeyPathMax: String](./hkpredicatekeypathmax.md)
   The key path for the sample’s maximum quantity.
-- [let HKPredicateKeyPathMostRecent: String](hkpredicatekeypathmostrecent.md)
+- [let HKPredicateKeyPathMostRecent: String](./hkpredicatekeypathmostrecent.md)
   The key path for the sample’s most recent quantity.
-- [let HKPredicateKeyPathMostRecentStartDate: String](hkpredicatekeypathmostrecentstartdate.md)
+- [let HKPredicateKeyPathMostRecentStartDate: String](./hkpredicatekeypathmostrecentstartdate.md)
   The key path for the start date of the sample’s most recent quantity.
-- [let HKPredicateKeyPathMostRecentEndDate: String](hkpredicatekeypathmostrecentenddate.md)
+- [let HKPredicateKeyPathMostRecentEndDate: String](./hkpredicatekeypathmostrecentenddate.md)
   The key path for the end date of the sample’s most recent quantity.
 
 

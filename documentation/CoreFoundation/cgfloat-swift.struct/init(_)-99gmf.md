@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Core Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new value, rounded to the closest possible representation.
 
@@ -11,9 +12,9 @@ Creates a new value, rounded to the closest possible representation.
 - Mac Catalyst 8.0+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 2.0+
-- Swift ?+
+- Swift - Deprecated in 4.0 (renamed: init(truncating:))
 
 ## Declaration
 

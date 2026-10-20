@@ -1,22 +1,27 @@
 # handleMatchEnded(_:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sent to the delegate when a match the local player is participating in has ended.
 
 **Availability**:
-- iOS 6.0+
-- iPadOS 6.0+
-- Mac Catalyst 6.0+
-- macOS 10.8+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 6.0+ - Deprecated in 7.0
+- iPadOS 6.0+ - Deprecated in 7.0
+- Mac Catalyst 6.0+ - Deprecated in 7.0
+- macOS 10.8+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 3.0+ - Deprecated in 3.0
 
 ## Declaration
 
 ```swift
 optional func handleMatchEnded(_ match: GKTurnBasedMatch)
+```
+
+```objc
+- (void) handleMatchEnded:(GKTurnBasedMatch *) match;
 ```
 
 #### Discussion
@@ -29,11 +34,12 @@ When your delegate receives this message, it should display the match’s final 
 
 ## See Also
 
-- [func handleInvite(fromGameCenter: [String])](gkturnbasedeventhandlerdelegate/handleinvite(fromgamecenter:).md)
+### Receiving Turn-based Events
+- [func handleInvite(fromGameCenter: [String])](./handleinvite%28fromgamecenter%29.md)
   Sent to the delegate when the local player receives an invitation to join a new turn-based match.
-- [func handleTurnEvent(for: GKTurnBasedMatch)](gkturnbasedeventhandlerdelegate/handleturnevent(for:).md)
+- [func handleTurnEvent(for: GKTurnBasedMatch)](./handleturnevent%28for%29.md)
   Sent to the delegate when it is the local player’s turn to act in a turn-based match.
-- [func handleTurnEvent(for: GKTurnBasedMatch, didBecomeActive: Bool)](gkturnbasedeventhandlerdelegate/handleturnevent(for:didbecomeactive:).md)
+- [func handleTurnEvent(for: GKTurnBasedMatch, didBecomeActive: Bool)](./handleturnevent%28for,didbecomeactive%29.md)
   Sent to the delegate when it is the local player’s turn to act in a turn-based match.
 
 

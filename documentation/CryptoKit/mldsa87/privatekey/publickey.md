@@ -1,7 +1,8 @@
 # publicKey
 
 **Framework**: Apple CryptoKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The associated public key.
 
@@ -22,9 +23,10 @@ var publicKey: MLDSA87.PublicKey { get }
 
 ## See Also
 
-- [var integrityCheckedRepresentation: Data](mldsa87/privatekey/integritycheckedrepresentation.md)
+### Inspecting a private key’s properties
+- [var integrityCheckedRepresentation: Data](./integritycheckedrepresentation.md)
   The integrity-checked data representation of the private key.
-- [var seedRepresentation: Data](mldsa87/privatekey/seedrepresentation.md)
+- [var seedRepresentation: Data](./seedrepresentation.md)
   The seed representation of the private key.
 
 

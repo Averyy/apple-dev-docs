@@ -1,7 +1,8 @@
 # title
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The title of this section of items, or `nil` to have a untitled section of items
 

@@ -2,6 +2,7 @@
 
 **Framework**: Game Controller  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The dispatch queue that the framework uses to call element value change handlers.
@@ -20,17 +21,22 @@ The dispatch queue that the framework uses to call element value change handlers
 var handlerQueue: dispatch_queue_t { get set }
 ```
 
+```objc
+@property (nonatomic, strong) dispatch_queue_t handlerQueue;
+```
+
 ## Mentions
 
-- [Handling input events](handling-input-events.md)
+- [Handling input events](../handling-input-events.md)
 
 #### Discussion
 
-The default queue is the main queue. Set this property to another queue to asynchronously call value change handlers (see [`GCControllerAxisInput`](gccontrolleraxisinput.md), [`GCControllerButtonInput`](gccontrollerbuttoninput.md), [`GCControllerDirectionPad`](gccontrollerdirectionpad.md), and [`GCMotion`](gcmotion.md)). For example, if you handle input on another queue, set this property when you first access the input device.
+The default queue is the main queue. Set this property to another queue to asynchronously call value change handlers (see [`GCControllerAxisInput`](../gccontrolleraxisinput.md), [`GCControllerButtonInput`](../gccontrollerbuttoninput.md), [`GCControllerDirectionPad`](../gccontrollerdirectionpad.md), and [`GCMotion`](../gcmotion.md)). For example, if you handle input on another queue, set this property when you first access the input device.
 
 ## See Also
 
-- [var physicalInputProfile: GCPhysicalInputProfile](gcdevice/physicalinputprofile.md)
+### Handling input
+- [var physicalInputProfile: GCPhysicalInputProfile](./physicalinputprofile.md)
   The device’s physical input profile, such as a controller’s extended gamepad.
 
 

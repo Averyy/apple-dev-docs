@@ -1,7 +1,8 @@
 # Sync the Locations
 
 **Framework**: Device Management  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get updates about the list of locations the server manages.
 
@@ -20,15 +21,24 @@ This service may return the same location more than once. You can identify dupli
 
 ## Request Body
 
+**Content-Type**: `application/json`  
+**Type**: `RosterRequest`
+
 The object containing the request information.
+
+## Responses
+
+- `200` OK (`RosterClassLocationResponse`, `application/json`): The request was successful. The server returns a list of locations.
+- `400` Bad Request: The server was unable to process the request.
 
 ## See Also
 
-- [object BaseRosterLocation](baserosterlocation.md)
+### Location management
+- [object BaseRosterLocation](./baserosterlocation.md)
   A base location’s properties and their values.
-- [object RosterLocation](rosterlocation.md)
+- [object RosterLocation](./rosterlocation.md)
   A location’s properties and their values.
-- [Get the List of Locations](fetch-location-roster.md)
+- [Get the List of Locations](./fetch-location-roster.md)
   Obtain a list of the locations the server manages.
 
 

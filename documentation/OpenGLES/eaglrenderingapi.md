@@ -1,7 +1,8 @@
 # EAGLRenderingAPI
 
 **Framework**: OpenGL ES  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Versions of OpenGL ES that a rendering context provides.
 
@@ -18,27 +19,31 @@ Versions of OpenGL ES that a rendering context provides.
 enum EAGLRenderingAPI
 ```
 
+```c
+enum EAGLRenderingAPI : NSUInteger;
+```
+
 ## Topics
 
 ### Constants
-- [EAGLRenderingAPI.openGLES1](eaglrenderingapi/opengles1.md)
+- [EAGLRenderingAPI.openGLES1](./eaglrenderingapi/opengles1.md)
   Context supports OpenGL ES 1.x rendering API.
-- [EAGLRenderingAPI.openGLES2](eaglrenderingapi/opengles2.md)
+- [EAGLRenderingAPI.openGLES2](./eaglrenderingapi/opengles2.md)
   Context supports OpenGL ES 2.x rendering API.
-- [EAGLRenderingAPI.openGLES3](eaglrenderingapi/opengles3.md)
+- [EAGLRenderingAPI.openGLES3](./eaglrenderingapi/opengles3.md)
   Context supports OpenGL ES 3.x rendering API.
 ### Initializers
-- [init?(rawValue: UInt)](eaglrenderingapi/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./eaglrenderingapi/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

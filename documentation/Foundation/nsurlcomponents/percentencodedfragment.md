@@ -1,7 +1,8 @@
 # percentEncodedFragment
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The fragment URL component (the part after a `#` symbol) expressed as a URL-encoded string, or `nil` if not present.
 
@@ -20,6 +21,10 @@ The fragment URL component (the part after a `#` symbol) expressed as a URL-enco
 var percentEncodedFragment: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * percentEncodedFragment;
+```
+
 #### Discussion
 
 For example, in the URL `http://www.example.com/index.html#jumpLocation`, the fragment is `jumpLocation`.
@@ -28,15 +33,16 @@ If you set this value to something that is not a valid, percent-encoded string, 
 
 ## See Also
 
-- [var percentEncodedHost: String?](nsurlcomponents/percentencodedhost.md)
+### Accessing components in URL-encoded format
+- [var percentEncodedHost: String?](./percentencodedhost.md)
   The host URL subcomponent expressed as a URL-encoded string, or `nil` if not present.
-- [var percentEncodedPassword: String?](nsurlcomponents/percentencodedpassword.md)
+- [var percentEncodedPassword: String?](./percentencodedpassword.md)
   The password URL subcomponent expressed as a URL-encoded string, or `nil` if not present.
-- [var percentEncodedPath: String?](nsurlcomponents/percentencodedpath.md)
+- [var percentEncodedPath: String?](./percentencodedpath.md)
   The path URL component expressed as a URL-encoded string, or `nil` if not present.
-- [var percentEncodedQuery: String?](nsurlcomponents/percentencodedquery.md)
+- [var percentEncodedQuery: String?](./percentencodedquery.md)
   The query URL component expressed as a URL-encoded string, or `nil` if not present.
-- [var percentEncodedUser: String?](nsurlcomponents/percentencodeduser.md)
+- [var percentEncodedUser: String?](./percentencodeduser.md)
   The username URL subcomponent expressed as a URL-encoded string, or `nil` if not present.
 
 

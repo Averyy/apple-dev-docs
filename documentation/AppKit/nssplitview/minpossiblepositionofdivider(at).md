@@ -1,7 +1,8 @@
 # minPossiblePositionOfDivider(at:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the minimum possible position of the divider at the specified index.
 
@@ -14,17 +15,21 @@ Returns the minimum possible position of the divider at the specified index.
 func minPossiblePositionOfDivider(at dividerIndex: Int) -> CGFloat
 ```
 
+```objc
+- (CGFloat) minPossiblePositionOfDividerAtIndex:(NSInteger) dividerIndex;
+```
+
 #### Return Value
 
-A [`CGFloat`](https://developer.apple.com/documentation/corefoundation/cgfloat-swift.struct) that specifies the minimum possible position of the divider.
+A [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md) that specifies the minimum possible position of the divider.
 
 #### Discussion
 
 The position is *possible* because the bounds of the split view and the current position of other dividers dictate it. *Allowable* positions result from letting the delegate apply constraints to the possible positions.
 
-You can invoke this method to determine the range of values that you can pass to [`setPosition(_:ofDividerAt:)`](nssplitview/setposition(_:ofdividerat:).md). You can also invoke it from delegate methods like [`splitView(_:constrainSplitPosition:ofSubviewAt:)`](nssplitviewdelegate/splitview(_:constrainsplitposition:ofsubviewat:).md) to implement relatively complex behaviors that depend on the current state of the split view.
+You can invoke this method to determine the range of values that you can pass to [`setPosition(_:ofDividerAt:)`](./setposition%28_,ofdividerat%29.md). You can also invoke it from delegate methods like [`splitView(_:constrainSplitPosition:ofSubviewAt:)`](../nssplitviewdelegate/splitview%28_,constrainsplitposition,ofsubviewat%29.md) to implement relatively complex behaviors that depend on the current state of the split view.
 
-The result of invoking this method when you haven’t invoked [`adjustSubviews()`](nssplitview/adjustsubviews().md), and the subview frames are invalid, is undefined.
+The result of invoking this method when you haven’t invoked [`adjustSubviews()`](./adjustsubviews%28%29.md), and the subview frames are invalid, is undefined.
 
 ## Parameters
 
@@ -32,9 +37,10 @@ The result of invoking this method when you haven’t invoked [`adjustSubviews()
 
 ## See Also
 
-- [func maxPossiblePositionOfDivider(at: Int) -> CGFloat](nssplitview/maxpossiblepositionofdivider(at:).md)
+### Constraining Split Position
+- [func maxPossiblePositionOfDivider(at: Int) -> CGFloat](./maxpossiblepositionofdivider%28at%29.md)
   Returns the maximum possible position of the divider at the specified index.
-- [func setPosition(CGFloat, ofDividerAt: Int)](nssplitview/setposition(_:ofdividerat:).md)
+- [func setPosition(CGFloat, ofDividerAt: Int)](./setposition%28_,ofdividerat%29.md)
   Updates the location of a divider you specify by index.
 
 

@@ -1,9 +1,10 @@
 # action(for:forKey:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Returns the default action of the [`action(forKey:)`](calayer/action(forkey:).md) method.
+Returns the default action of the [`action(forKey:)`](../calayer/action%28forkey%29.md) method.
 
 **Availability**:
 - iOS 10.0+
@@ -19,15 +20,19 @@ Returns the default action of the [`action(forKey:)`](calayer/action(forkey:).md
 optional func action(for layer: CALayer, forKey event: String) -> (any CAAction)?
 ```
 
+```objc
+- (id<CAAction>) actionForLayer:(CALayer *) layer forKey:(NSString *) event;
+```
+
 #### Return Value
 
-An object implementing the [`CAAction`](caaction.md) protocol or `nil` if the delegate does not specify a behavior for the specified `key`.
+An object implementing the [`CAAction`](../caaction.md) protocol or `nil` if the delegate does not specify a behavior for the specified `key`.
 
 #### Discussion
 
-A layer’s delegate that implements this method returns an action for a specified key and stops any further searches (i.e. actions for the same key in the layer’s [`actions`](calayer/actions.md) dictionary or specified by [`defaultAction(forKey:)`](calayer/defaultaction(forkey:).md) are not returned).
+A layer’s delegate that implements this method returns an action for a specified key and stops any further searches (i.e. actions for the same key in the layer’s [`actions`](../calayer/actions.md) dictionary or specified by [`defaultAction(forKey:)`](../calayer/defaultaction%28forkey%29.md) are not returned).
 
-The following code shows how you can create a class named `LayerDelegate` that implements [`CALayerDelegate`](calayerdelegate.md) and sets it as a layer’s (named `sublayer`) delegate. `LayerDelegate` returns a basic animation that moves an object from left to right. The `moveSublayer()` method searches `sublayer` for an action with the key `moveRight` and, if the action is found, runs it.
+The following code shows how you can create a class named `LayerDelegate` that implements [`CALayerDelegate`](../calayerdelegate.md) and sets it as a layer’s (named `sublayer`) delegate. `LayerDelegate` returns a basic animation that moves an object from left to right. The `moveSublayer()` method searches `sublayer` for an action with the key `moveRight` and, if the action is found, runs it.
 
 ```swift
 let delegate = LayerDelegate()

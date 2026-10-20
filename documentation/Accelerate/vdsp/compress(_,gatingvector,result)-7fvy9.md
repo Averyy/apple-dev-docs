@@ -1,7 +1,8 @@
 # compress(_:gatingVector:result:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Compresses the specified single-precision vector using the nonzero values in a gating vector.
 
@@ -11,7 +12,7 @@ Compresses the specified single-precision vector using the nonzero values in a g
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -62,11 +63,12 @@ print(destination)
 
 ## See Also
 
-- [static func compress<T, U>(T, gatingVector: U, nonZeroGatingCount: Int?) -> [Float]](vdsp/compress(_:gatingvector:nonzerogatingcount:)-3c7yk.md)
+### Vector compression
+- [static func compress<T, U>(T, gatingVector: U, nonZeroGatingCount: Int?) -> [Float]](./compress%28_,gatingvector,nonzerogatingcount%29-3c7yk.md)
   Returns a compressed copy of the specified single-precision vector using the nonzero values in a gating vector.
-- [static func compress<T, U>(T, gatingVector: U, nonZeroGatingCount: Int?) -> [Double]](vdsp/compress(_:gatingvector:nonzerogatingcount:)-93v23.md)
+- [static func compress<T, U>(T, gatingVector: U, nonZeroGatingCount: Int?) -> [Double]](./compress%28_,gatingvector,nonzerogatingcount%29-93v23.md)
   Returns a compressed copy of the specified double-precision vector using the nonzero values in a gating vector.
-- [static func compress<T, U, V>(T, gatingVector: U, result: inout V)](vdsp/compress(_:gatingvector:result:)-2yse4.md)
+- [static func compress<T, U, V>(T, gatingVector: U, result: inout V)](./compress%28_,gatingvector,result%29-2yse4.md)
   Compresses the specified double-precision vector using the nonzero values in a gating vector.
 
 

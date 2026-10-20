@@ -1,7 +1,8 @@
 # removeAllRequests()
 
 **Framework**: Sound Analysis  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes all the sound analysis requests from the audio file analyzer.
 
@@ -20,15 +21,20 @@ Removes all the sound analysis requests from the audio file analyzer.
 func removeAllRequests()
 ```
 
+```objc
+- (void) removeAllRequests;
+```
+
 ## See Also
 
-- [func add(any SNRequest, withObserver: any SNResultsObserving) throws](snaudiofileanalyzer/add(_:withobserver:).md)
+### Managing Requests
+- [func add(any SNRequest, withObserver: any SNResultsObserving) throws](./add%28_,withobserver%29.md)
   Adds a new analysis request to the audio file analyzer.
-- [protocol SNRequest](snrequest.md)
+- [protocol SNRequest](../snrequest.md)
   A protocol that represents sound analysis requests.
-- [protocol SNResultsObserving](snresultsobserving.md)
+- [protocol SNResultsObserving](../snresultsobserving.md)
   The interface your app implements to receive the results of an analysis request.
-- [func remove(any SNRequest)](snaudiofileanalyzer/remove(_:).md)
+- [func remove(any SNRequest)](./remove%28_%29.md)
   Removes an existing request from the audio file analyzer.
 
 

@@ -1,14 +1,15 @@
 # msgh_ad
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.5+
 
 ## Declaration
 
-```swift
+```c
 mach_msg_filter_id msgh_ad;
 ```
 

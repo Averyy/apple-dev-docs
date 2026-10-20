@@ -1,7 +1,8 @@
 # VZVirtioFileSystemDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents the configuration of a Virtio file system device.
 
@@ -14,9 +15,13 @@ An object that represents the configuration of a Virtio file system device.
 class VZVirtioFileSystemDeviceConfiguration
 ```
 
+```objc
+@interface VZVirtioFileSystemDeviceConfiguration : VZDirectorySharingDeviceConfiguration
+```
+
 #### Overview
 
-Use `VZVirtioFileSystemDeviceConfiguration` to create a Virtio file system device which allows the host to expose directories to a guest using a [`tag`](vzvirtiofilesystemdeviceconfiguration/tag.md) label.
+Use `VZVirtioFileSystemDeviceConfiguration` to create a Virtio file system device which allows the host to expose directories to a guest using a [`tag`](./vzvirtiofilesystemdeviceconfiguration/tag.md) label.
 
 The example below shows the creation of a `VZVirtioFileSystemDeviceConfiguration` that shares a single directory that the user can manually mount after creating a mount point in the guest VM:
 
@@ -109,7 +114,7 @@ static func createMultipleDirectoryShareDeviceConfiguration() -> VZVirtioFileSys
     sharingConfiguration.share = multipleDirectoryShare;
 ```
 
-##### Mounting Shared Directories
+##### Mounting shared directories
 
 > ❗ **Important**:  The commands required to mount shared directories in a guest VM aren’t commands that your app can execute or that you can script from inside your application to a VM; the user must perform them either interactively or as part of a script while logged in to the guest. You must communicate these requirements to the user of your app.
 
@@ -120,9 +125,9 @@ Mounting a shared directory requires the user to execute a command in a terminal
 
 The `tag` argument is the file system device configuration label — `Projects` in the single directory case and `myfiles` in the multiple directory case in these examples — and `directory` is the mount point in the guest file system to which the framework attaches the shared directories.
 
-##### Automounting Shared Directories in Macos Vms
+##### Automounting shared directories in macOS VMs
 
-In macOS 13 and later, it’s possible to specify a file system device that macOS 13 or later guest VMs automount using the [`macOSGuestAutomountTag`](vzvirtiofilesystemdeviceconfiguration/macosguestautomounttag.md) property. The example below demonstrates sharing a single macOS directory, to a macOS guest:
+In macOS 13 and later, it’s possible to specify a file system device that macOS 13 or later guest VMs automount using the [`macOSGuestAutomountTag`](./vzvirtiofilesystemdeviceconfiguration/macosguestautomounttag.md) property. The example below demonstrates sharing a single macOS directory, to a macOS guest:
 
 ```swift
 // Define a URL to a specific file path, in this case the 
@@ -175,41 +180,43 @@ In the guest, the framework lists each shared directory by its specified name un
 ## Topics
 
 ### Creating a file system device configuration
-- [init(tag: String)](vzvirtiofilesystemdeviceconfiguration/init(tag:).md)
+- [init(tag: String)](./vzvirtiofilesystemdeviceconfiguration/init%28tag%29.md)
   Creates a configuration for a VIRTIO file system device.
 ### Getting file system information
-- [var share: VZDirectoryShare?](vzvirtiofilesystemdeviceconfiguration/share.md)
+- [var share: VZDirectoryShare?](./vzvirtiofilesystemdeviceconfiguration/share.md)
   A value that defines how the host exposes resources to the guest virtual machine.
-- [var tag: String](vzvirtiofilesystemdeviceconfiguration/tag.md)
+- [var tag: String](./vzvirtiofilesystemdeviceconfiguration/tag.md)
   A label that identifies this device in the guest VM.
-- [class var macOSGuestAutomountTag: String](vzvirtiofilesystemdeviceconfiguration/macosguestautomounttag.md)
+- [class var macOSGuestAutomountTag: String](./vzvirtiofilesystemdeviceconfiguration/macosguestautomounttag.md)
   A value that indicates that the guest needs to automount this file system device in the guest VM.
 ### Tag validation
-- [class func validateTag(String) throws](vzvirtiofilesystemdeviceconfiguration/validatetag(_:).md)
+- [class func validateTag(String) throws](./vzvirtiofilesystemdeviceconfiguration/validatetag%28_%29.md)
   Checks to see whether a Virtio tag is valid.
 
 ## Relationships
 
 ### Inherits From
-- [VZDirectorySharingDeviceConfiguration](vzdirectorysharingdeviceconfiguration.md)
+- [VZDirectorySharingDeviceConfiguration](./vzdirectorysharingdeviceconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZMultipleDirectoryShare](vzmultipledirectoryshare.md)
+### Related Documentation
+- [class VZMultipleDirectoryShare](./vzmultipledirectoryshare.md)
   An object that describes a directory share for multiple directories.
-- [class VZSingleDirectoryShare](vzsingledirectoryshare.md)
+- [class VZSingleDirectoryShare](./vzsingledirectoryshare.md)
   An object that defines the directory share for a single directory.
-- [class VZDirectorySharingDeviceConfiguration](vzdirectorysharingdeviceconfiguration.md)
+### Configurations
+- [class VZDirectorySharingDeviceConfiguration](./vzdirectorysharingdeviceconfiguration.md)
   The base class for a directory sharing device configuration.
-- [class VZLinuxRosettaDirectoryShare](vzlinuxrosettadirectoryshare.md)
+- [class VZLinuxRosettaDirectoryShare](./vzlinuxrosettadirectoryshare.md)
   The Linux directory share for Rosetta.
 
 

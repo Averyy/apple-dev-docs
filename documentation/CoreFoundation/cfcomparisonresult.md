@@ -1,18 +1,19 @@
 # CFComparisonResult
 
 **Framework**: Core Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants returned by comparison functions, indicating whether a value is equal to, less than, or greater than another value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,35 +21,40 @@ Constants returned by comparison functions, indicating whether a value is equal 
 enum CFComparisonResult
 ```
 
+```c
+enum CFComparisonResult : CFIndex;
+```
+
 ## Topics
 
 ### Constants
-- [CFComparisonResult.compareLessThan](cfcomparisonresult/comparelessthan.md)
+- [CFComparisonResult.compareLessThan](./cfcomparisonresult/comparelessthan.md)
   Returned by a comparison function if the first value is less than the second value.
-- [CFComparisonResult.compareEqualTo](cfcomparisonresult/compareequalto.md)
+- [CFComparisonResult.compareEqualTo](./cfcomparisonresult/compareequalto.md)
   Returned by a comparison function if the first value is equal to the second value.
-- [CFComparisonResult.compareGreaterThan](cfcomparisonresult/comparegreaterthan.md)
+- [CFComparisonResult.compareGreaterThan](./cfcomparisonresult/comparegreaterthan.md)
   Returned by a comparison function if the first value is greater than the second value.
 ### Initializers
-- [init?(rawValue: CFIndex)](cfcomparisonresult/init(rawvalue:).md)
+- [init?(rawValue: CFIndex)](./cfcomparisonresult/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Value Not Found](value-not-found.md)
+### Constants
+- [Value Not Found](./value-not-found.md)
   Special value returned when a Core Foundation function cannot locate a requested value.
-- [Current Framework Version Number](current-framework-version-number.md)
+- [Current Framework Version Number](./current-framework-version-number.md)
   Current version number of the Core Foundation framework.
-- [Framework Version Numbers](framework-version-numbers.md)
+- [Framework Version Numbers](./framework-version-numbers.md)
   Version numbers of the Core Foundation framework.
 
 

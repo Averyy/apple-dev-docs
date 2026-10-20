@@ -1,7 +1,8 @@
 # SVGFEDropShadowElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,25 +10,25 @@
 
 ## Declaration
 
-```swift
+```
 interface SVGFEDropShadowElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [dx](svgfedropshadowelement/1634105-dx.md)
-- [dy](svgfedropshadowelement/1632476-dy.md)
-- [in1](svgfedropshadowelement/1631107-in1.md)
-- [stdDeviationX](svgfedropshadowelement/1634016-stddeviationx.md)
-- [stdDeviationY](svgfedropshadowelement/1632822-stddeviationy.md)
+- [dx](./svgfedropshadowelement/api-1634105-dx.md)
+- [dy](./svgfedropshadowelement/api-1632476-dy.md)
+- [in1](./svgfedropshadowelement/api-1631107-in1.md)
+- [stdDeviationX](./svgfedropshadowelement/api-1634016-stddeviationx.md)
+- [stdDeviationY](./svgfedropshadowelement/api-1632822-stddeviationy.md)
 ### Instance Methods
-- [setStdDeviation](svgfedropshadowelement/1632902-setstddeviation.md)
+- [setStdDeviation](./svgfedropshadowelement/api-1632902-setstddeviation.md)
 
 ## Relationships
 
 ### Inherits From
-- [SVGElement](svgelement.md)
+- [SVGElement](./svgelement.md)
 
 
 ---

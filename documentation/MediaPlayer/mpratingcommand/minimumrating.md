@@ -1,7 +1,8 @@
 # minimumRating
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum rating for a command.
 
@@ -20,13 +21,18 @@ The minimum rating for a command.
 var minimumRating: Float { get set }
 ```
 
+```objc
+@property (nonatomic, assign) float minimumRating;
+```
+
 #### Discussion
 
-The `minimumRating` property must be less than the [`maximumRating`](mpratingcommand/maximumrating.md) property.
+The `minimumRating` property must be less than the [`maximumRating`](./maximumrating.md) property.
 
 ## See Also
 
-- [var maximumRating: Float](mpratingcommand/maximumrating.md)
+### Defining maximum and minimum ratings
+- [var maximumRating: Float](./maximumrating.md)
   The maximum rating for a command.
 
 

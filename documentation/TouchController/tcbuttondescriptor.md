@@ -1,7 +1,8 @@
 # TCButtonDescriptor
 
 **Framework**: Touch Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A descriptor for configuring a button.
 
@@ -16,54 +17,59 @@ A descriptor for configuring a button.
 class TCButtonDescriptor
 ```
 
+```objc
+@interface TCButtonDescriptor : NSObject
+```
+
 ## Topics
 
 ### Creating the descriptor
-- [init()](tcbuttondescriptor/init.md)
+- [init()](./tcbuttondescriptor/init%28%29.md)
   Creates a new button descriptor with default values.
 ### Inspecting the descriptor
-- [var contents: TCControlContents?](tcbuttondescriptor/contents.md)
+- [var contents: TCControlContents?](./tcbuttondescriptor/contents.md)
   The contents for the button in its normal state.
-- [var highlightDuration: TimeInterval](tcbuttondescriptor/highlightduration.md)
+- [var highlightDuration: TimeInterval](./tcbuttondescriptor/highlightduration.md)
   The time it takes for a highlight to fade away, in seconds.
-- [var zIndex: Int](tcbuttondescriptor/zindex.md)
+- [var zIndex: Int](./tcbuttondescriptor/zindex.md)
   The z-index of the button. A lower z-index is drawn first.
-- [var label: TCControlLabel](tcbuttondescriptor/label.md)
+- [var label: TCControlLabel](./tcbuttondescriptor/label.md)
   The label you associate with the button.
-- [var offset: CGPoint](tcbuttondescriptor/offset.md)
+- [var offset: CGPoint](./tcbuttondescriptor/offset.md)
   The control’s offset from the anchor, which determines its position.
-- [var size: CGSize](tcbuttondescriptor/size.md)
+- [var size: CGSize](./tcbuttondescriptor/size.md)
   The size (width, height) of the button in points.
 ### Accessing the anchor
-- [var anchor: TCControlLayoutAnchor](tcbuttondescriptor/anchor.md)
+- [var anchor: TCControlLayoutAnchor](./tcbuttondescriptor/anchor.md)
   The anchor point that the button’s offset is relative to.
-- [enum TCControlLayoutAnchor](tccontrollayoutanchor.md)
+- [enum TCControlLayoutAnchor](./tccontrollayoutanchor.md)
   Defines the anchor point for a control.
-- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](tcbuttondescriptor/anchorcoordinatesystem.md)
+- [var anchorCoordinateSystem: TCControlLayoutAnchorCoordinateSystem](./tcbuttondescriptor/anchorcoordinatesystem.md)
   The coordinate system for the control’s anchor point.
-- [enum TCControlLayoutAnchorCoordinateSystem](tccontrollayoutanchorcoordinatesystem.md)
+- [enum TCControlLayoutAnchorCoordinateSystem](./tccontrollayoutanchorcoordinatesystem.md)
   Defines the coodinate system for an anchor point.
 ### Getting the collider shape
-- [var colliderShape: TCColliderShape](tcbuttondescriptor/collidershape.md)
+- [var colliderShape: TCColliderShape](./tcbuttondescriptor/collidershape.md)
   The shape of collider to use for the button.
-- [enum TCColliderShape](tccollidershape.md)
+- [enum TCColliderShape](./tccollidershape.md)
   Defines the shape of a control collider.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func addButton(descriptor: TCButtonDescriptor) -> TCButton](tctouchcontroller/addbutton(descriptor:).md)
+### Adding a button control
+- [func addButton(descriptor: TCButtonDescriptor) -> TCButton](./tctouchcontroller/addbutton%28descriptor%29.md)
   Creates a new button control with the provided descriptor, and adds it to the touch controller.
 
 

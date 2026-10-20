@@ -1,7 +1,8 @@
 # maximumNumberOfTitleLines
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of lines the menu displays for an item’s title or subtitle before it truncates the text.
 
@@ -18,9 +19,13 @@ The number of lines the menu displays for an item’s title or subtitle before i
 var maximumNumberOfTitleLines: Int { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSInteger maximumNumberOfTitleLines;
+```
+
 #### Discussion
 
-By default, [`UIMenu`](uimenu.md) restricts the number of lines in a menu item’s title or subtitle to create a balance between a compact and expressive display. If you dynamically prepare menu items that might contain more text, set this value to a higher number and use this object as the menu’s [`displayPreferences`](uimenu/displaypreferences.md).
+By default, [`UIMenu`](../uimenu.md) restricts the number of lines in a menu item’s title or subtitle to create a balance between a compact and expressive display. If you dynamically prepare menu items that might contain more text, set this value to a higher number and use this object as the menu’s [`displayPreferences`](../uimenu/displaypreferences.md).
 
 > **Note**:  Setting this property has no effect on menus in Mac Catalyst apps.
 

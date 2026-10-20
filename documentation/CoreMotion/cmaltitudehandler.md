@@ -1,7 +1,8 @@
 # CMAltitudeHandler
 
 **Framework**: Core Motion  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block for receiving relative altitude data.
 
@@ -17,9 +18,13 @@ A block for receiving relative altitude data.
 typealias CMAltitudeHandler = (CMAltitudeData?, (any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(CMAltitudeData *, NSError *) CMAltitudeHandler;
+```
+
 #### Discussion
 
-You pass a block of this type to the altimeter object’s [`startRelativeAltitudeUpdates(to:withHandler:)`](cmaltimeter/startrelativealtitudeupdates(to:withhandler:).md) method when starting the delivery of altitude data.
+You pass a block of this type to the altimeter object’s [`startRelativeAltitudeUpdates(to:withHandler:)`](./cmaltimeter/startrelativealtitudeupdates%28to,withhandler%29.md) method when starting the delivery of altitude data.
 
 ## Parameters
 
@@ -28,15 +33,16 @@ You pass a block of this type to the altimeter object’s [`startRelativeAltitud
 
 ## See Also
 
-- [func startAbsoluteAltitudeUpdates(to: OperationQueue, withHandler: CMAbsoluteAltitudeHandler)](cmaltimeter/startabsolutealtitudeupdates(to:withhandler:).md)
+### Starting and Stopping Altitude Updates
+- [func startAbsoluteAltitudeUpdates(to: OperationQueue, withHandler: CMAbsoluteAltitudeHandler)](./cmaltimeter/startabsolutealtitudeupdates%28to,withhandler%29.md)
   Starts the delivery of absolute altitude data to the specified handler.
-- [func stopAbsoluteAltitudeUpdates()](cmaltimeter/stopabsolutealtitudeupdates.md)
+- [func stopAbsoluteAltitudeUpdates()](./cmaltimeter/stopabsolutealtitudeupdates%28%29.md)
   Stops the delivery of absolute altitude data for this altimeter object.
-- [typealias CMAbsoluteAltitudeHandler](cmabsolutealtitudehandler.md)
+- [typealias CMAbsoluteAltitudeHandler](./cmabsolutealtitudehandler.md)
   A block for receiving absolute altitude data.
-- [func startRelativeAltitudeUpdates(to: OperationQueue, withHandler: CMAltitudeHandler)](cmaltimeter/startrelativealtitudeupdates(to:withhandler:).md)
+- [func startRelativeAltitudeUpdates(to: OperationQueue, withHandler: CMAltitudeHandler)](./cmaltimeter/startrelativealtitudeupdates%28to,withhandler%29.md)
   Starts the delivery of relative altitude data to the specified handler.
-- [func stopRelativeAltitudeUpdates()](cmaltimeter/stoprelativealtitudeupdates.md)
+- [func stopRelativeAltitudeUpdates()](./cmaltimeter/stoprelativealtitudeupdates%28%29.md)
   Stops the delivery of relative altitude data for the altimeter object.
 
 

@@ -1,7 +1,8 @@
 # isVisible
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that reflects whether or not the item is visible.
 
@@ -17,17 +18,22 @@ A Boolean value that reflects whether or not the item is visible.
 var isVisible: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isVisible) BOOL visible;
+```
+
 #### Discussion
 
-When [`true`](https://developer.apple.com/documentation/swift/true), this item is shown in a currently visible bar. This property is always [`false`](https://developer.apple.com/documentation/swift/false) for spaces, proxy items, and groups.
+When [`true`](../../Swift/true.md), this item is shown in a currently visible bar. This property is always [`false`](../../Swift/false.md) for spaces, proxy items, and groups.
 
 This property is key-value observable.
 
 ## See Also
 
-- [var visibilityPriority: NSTouchBarItem.Priority](nstouchbaritem/visibilitypriority.md)
+### Managing item visibility
+- [var visibilityPriority: NSTouchBarItem.Priority](./visibilitypriority.md)
   Determines which items are shown in a bar when space is limited.
-- [NSTouchBarItem.Priority](nstouchbaritem/priority.md)
+- [NSTouchBarItem.Priority](./priority.md)
   Priorities for the visibility of a Touch Bar item.
 
 

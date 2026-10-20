@@ -1,7 +1,8 @@
 # ExtensionConfig.Media.Queues.UpdateActivity
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Configuration details for your service’s update activity endpoint.
 
@@ -10,28 +11,31 @@ Configuration details for your service’s update activity endpoint.
 
 ## Declaration
 
-```swift
+```
 object ExtensionConfig.Media.Queues.UpdateActivity
 ```
 
 ## Topics
 
 ### Requiring Headers
-- [object ExtensionConfig.Media.Queues.UpdateActivity.Hdr](extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionary/hdr-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.UpdateActivity.Hdr](./updateactivity-data.dictionary/hdr-data.dictionary.md)
   Headers to include with requests to the update activity endpoint.
 
 ## Properties
 
-- `url` (string): The relative path for the client to access [`updateActivity`](extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionarykey.md).
+- `url` (string): The relative path for the client to access [`updateActivity`](./updateactivity-data.dictionarykey.md).
+
+  **Default**: `/queues/updateActivity`; **Minimum Length**: `1`; **Maximum Length**: `4000`
 - `hdr` (ExtensionConfig.Media.Queues.UpdateActivity.Hdr): Headers to include with requests to this endpoint.
 
 ## See Also
 
-- [object ExtensionConfig.Media.Queues.PlayMedia](extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary.md)
+### Requiring Headers and Specifying Paths for Specific Queue Endpoints
+- [object ExtensionConfig.Media.Queues.PlayMedia](./playmedia-data.dictionary.md)
   Configuration details for your service’s media playback queue.
-- [object ExtensionConfig.Media.Queues.ContentPlaybackFailure](extensionconfig/media-data.dictionary/queues-data.dictionary/contentplaybackfailure-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.ContentPlaybackFailure](./contentplaybackfailure-data.dictionary.md)
   Configuration details for your service’s content playback failure endpoint.
-- [object ExtensionConfig.Media.Queues.ContentProtectionKey](extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary.md)
+- [object ExtensionConfig.Media.Queues.ContentProtectionKey](./contentprotectionkey-data.dictionary.md)
   Configuration details for your service’s content protection key endpoint.
 
 

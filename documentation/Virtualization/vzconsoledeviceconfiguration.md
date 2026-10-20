@@ -1,7 +1,8 @@
 # VZConsoleDeviceConfiguration
 
 **Framework**: Virtualization  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The base class for a console device configuration.
 
@@ -14,34 +15,39 @@ The base class for a console device configuration.
 class VZConsoleDeviceConfiguration
 ```
 
+```objc
+@interface VZConsoleDeviceConfiguration : NSObject
+```
+
 #### Overview
 
-Don’t instantiate VZConsoleDeviceConfiguration directly, instead use one of its subclasses like [`VZVirtioConsoleDeviceConfiguration`](vzvirtioconsoledeviceconfiguration.md) instead.
+Don’t instantiate VZConsoleDeviceConfiguration directly, instead use one of its subclasses like [`VZVirtioConsoleDeviceConfiguration`](./vzvirtioconsoledeviceconfiguration.md) instead.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [VZVirtioConsoleDeviceConfiguration](vzvirtioconsoledeviceconfiguration.md)
+- [VZVirtioConsoleDeviceConfiguration](./vzvirtioconsoledeviceconfiguration.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class VZConsolePortConfiguration](vzconsoleportconfiguration.md)
+### Configurations
+- [class VZConsolePortConfiguration](./vzconsoleportconfiguration.md)
   The base class for a console port configuration.
-- [class VZVirtioConsoleDeviceConfiguration](vzvirtioconsoledeviceconfiguration.md)
+- [class VZVirtioConsoleDeviceConfiguration](./vzvirtioconsoledeviceconfiguration.md)
   A console device that enables communication between the host and the guest using console ports through a Virtio interface.
-- [class VZVirtioConsolePortConfiguration](vzvirtioconsoleportconfiguration.md)
+- [class VZVirtioConsolePortConfiguration](./vzvirtioconsoleportconfiguration.md)
   A class that represents the configuration options you can set on a Virtio console port.
-- [class VZVirtioConsolePortConfigurationArray](vzvirtioconsoleportconfigurationarray.md)
+- [class VZVirtioConsolePortConfigurationArray](./vzvirtioconsoleportconfigurationarray.md)
   A class that represents a collection of Virtio console port configurations.
 
 

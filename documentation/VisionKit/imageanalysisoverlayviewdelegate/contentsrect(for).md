@@ -2,6 +2,7 @@
 
 **Framework**: VisionKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the rectangle, in unit coordinate space, that contains the image within the view.
@@ -22,15 +23,22 @@ The rectangle of the image within the view, in unit coordinates. The default ret
 
 #### Discussion
 
-Implement this method if the [`trackingImageView`](imageanalysisoverlayview/trackingimageview.md) type isn’t [`NSImageView`](https://developer.apple.com/documentation/appkit/nsimageview).
+Implement this method if the [`trackingImageView`](../imageanalysisoverlayview/trackingimageview.md) type isn’t [`NSImageView`](../../AppKit/nsimageview.md).
 
 ## Parameters
 
 - `overlayView`: The associated overlay view for the contents rectangle.
 
+## Default Implementations
+
+### ImageAnalysisOverlayViewDelegate Implementations
+- [func contentsRect(for: ImageAnalysisOverlayView) -> CGRect](./contentsrect%28for%29-34yzu.md)
+  A default implementation that returns a rectangle that specifies the full width and height of the view.
+
 ## See Also
 
-- [func contentView(for: ImageAnalysisOverlayView) -> NSView?](imageanalysisoverlayviewdelegate/contentview(for:).md)
+### Providing interface details
+- [func contentView(for: ImageAnalysisOverlayView) -> NSView?](./contentview%28for%29.md)
   Provides the view that contains the image.
 
 

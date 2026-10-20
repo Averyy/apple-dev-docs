@@ -1,7 +1,8 @@
 # overlay
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
 
@@ -21,17 +22,20 @@ A style that layers the primary view over the secondary view, or places the view
 nonisolated static var overlay: OverlayArrangementViewStyle { get }
 ```
 
+Available when `Self` is `OverlayArrangementViewStyle`.
+
 ## See Also
 
-- [static var automatic: AutomaticArrangementViewStyle](arrangementviewstyle/automatic.md)
+### Getting arrangement view styles
+- [static var automatic: AutomaticArrangementViewStyle](./automatic.md)
   The default arrangement view style.
-- [struct AutomaticArrangementViewStyle](automaticarrangementviewstyle.md)
+- [struct AutomaticArrangementViewStyle](../automaticarrangementviewstyle.md)
   The default arrangement view style.
-- [struct OverlayArrangementViewStyle](overlayarrangementviewstyle.md)
+- [struct OverlayArrangementViewStyle](../overlayarrangementviewstyle.md)
   A style that layers the primary view over the secondary view, or places the views side by side on a folded display.
-- [static var split: SplitArrangementViewStyle](arrangementviewstyle/split.md)
+- [static var split: SplitArrangementViewStyle](./split.md)
   An arrangement view style that places the primary and secondary views side by side along one or more axes.
-- [struct SplitArrangementViewStyle](splitarrangementviewstyle.md)
+- [struct SplitArrangementViewStyle](../splitarrangementviewstyle.md)
   An arrangement view style that places the primary and secondary views side by side along one or more axes.
 
 

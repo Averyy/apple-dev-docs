@@ -1,7 +1,8 @@
 # shadow
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The shadow displayed underneath the view.
 
@@ -15,27 +16,32 @@ The shadow displayed underneath the view.
 var shadow: NSShadow? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSShadow * shadow;
+```
+
 #### Return Value
 
-An instance of `NSShadow` that is created using the [`shadowColor`](https://developer.apple.com/documentation/quartzcore/calayer/shadowcolor),[`shadowOffset`](https://developer.apple.com/documentation/quartzcore/calayer/shadowoffset), [`shadowOpacity`](https://developer.apple.com/documentation/quartzcore/calayer/shadowopacity), and [`shadowRadius`](https://developer.apple.com/documentation/quartzcore/calayer/shadowradius) properties of the view’s layer.
+An instance of `NSShadow` that is created using the [`shadowColor`](../../QuartzCore/calayer/shadowcolor.md),[`shadowOffset`](../../QuartzCore/calayer/shadowoffset.md), [`shadowOpacity`](../../QuartzCore/calayer/shadowopacity.md), and [`shadowRadius`](../../QuartzCore/calayer/shadowradius.md) properties of the view’s layer.
 
 #### Discussion
 
-The default value of this property is normally `nil`. When you configure any of the shadow-related properties on the view’s layer, such as the [`shadowColor`](https://developer.apple.com/documentation/quartzcore/calayer/shadowcolor),[`shadowOffset`](https://developer.apple.com/documentation/quartzcore/calayer/shadowoffset), [`shadowOpacity`](https://developer.apple.com/documentation/quartzcore/calayer/shadowopacity) or [`shadowRadius`](https://developer.apple.com/documentation/quartzcore/calayer/shadowradius) properties, this property contains the [`NSShadow`](nsshadow.md) object that encapsulates that information. Assigning a new shadow object to this property sets the corresponding shadow-related properties on the view’s layer.
+The default value of this property is normally `nil`. When you configure any of the shadow-related properties on the view’s layer, such as the [`shadowColor`](../../QuartzCore/calayer/shadowcolor.md),[`shadowOffset`](../../QuartzCore/calayer/shadowoffset.md), [`shadowOpacity`](../../QuartzCore/calayer/shadowopacity.md) or [`shadowRadius`](../../QuartzCore/calayer/shadowradius.md) properties, this property contains the [`NSShadow`](../nsshadow.md) object that encapsulates that information. Assigning a new shadow object to this property sets the corresponding shadow-related properties on the view’s layer.
 
 If the view does not have a layer, setting the value of this property has no effect.
 
 ## See Also
 
-- [var alphaValue: CGFloat](nsview/alphavalue.md)
+### Managing Layer-Related Properties
+- [var alphaValue: CGFloat](./alphavalue.md)
   The opacity of the view.
-- [var frameCenterRotation: CGFloat](nsview/framecenterrotation.md)
+- [var frameCenterRotation: CGFloat](./framecenterrotation.md)
   The rotation angle of the view around the center of its layer.
-- [var backgroundFilters: [CIFilter]](nsview/backgroundfilters.md)
+- [var backgroundFilters: [CIFilter]](./backgroundfilters.md)
   An array of Core Image filters to apply to the view’s background.
-- [var compositingFilter: CIFilter?](nsview/compositingfilter.md)
+- [var compositingFilter: CIFilter?](./compositingfilter.md)
   The Core Image filter used to composite the view’s contents with its background.
-- [var contentFilters: [CIFilter]](nsview/contentfilters.md)
+- [var contentFilters: [CIFilter]](./contentfilters.md)
   An array of Core Image filters to apply to the contents of the view and its sublayers.
 
 

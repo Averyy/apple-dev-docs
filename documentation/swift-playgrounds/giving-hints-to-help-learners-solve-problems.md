@@ -1,6 +1,7 @@
 # Giving hints to help learners solve problems
 
-**Framework**: Swift Playgrounds
+**Framework**: Swift Playgrounds  
+**Role**: Article
 
 Add hints, spoilers, and solutions to a page to help teach the material.
 
@@ -10,9 +11,9 @@ Learners sometimes become stuck when working through a challenge or learning ass
 
 Hints are disclosed after the learner taps the Hint button in a page’s live view.
 
-![A screenshot highlighting the Hint button in the bottom-right corner of a playground page’s live view.](/images/com.apple.Swift-Playgrounds/giving-hints-to-help-learners-solve-problems-1@2x.png)
+![A screenshot highlighting the Hint button in the bottom-right corner of a playground page’s live view.](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/giving-hints-to-help-learners-solve-problems-1@2x.png)
 
-##### Add Hints By Using a Property List
+##### Add hints by using a property list
 
 Add hints to your playground page by creating a property list at the following path, alongside the rest of the resources for the page:
 
@@ -20,19 +21,21 @@ Add hints to your playground page by creating a property list at the following p
 
 The root key for the hints property list is named `Hints`, and it must contain an array of dictionaries. Hints are shown in Swift Playgrounds in the same order as they appear in this array.
 
-##### Add Keys to the Dictionaries
+##### Add keys to the dictionaries
 
 Add the following keys in each dictionary in the hints array:
 
 - **`Content`**: The text of the hint.
-- **`FileReference`**: The path to a text file that contains the hint. This path is relative to the page’s Resources folder, so a hint file located at the following path only needs to be referenced as `MyHint.txt` in the value of the `FileReference` key: **`.playgroundbook/Contents/`**`.playgroundchapter/Pages/`**`.playgroundpage/PrivateResources/MyHint.txt`
+- **`FileReference`**: The path to a text file that contains the hint. This path is relative to the page’s Resources folder, so a hint file located at the following path only needs to be referenced as `MyHint.txt` in the value of the `FileReference` key:
+
+  **`.playgroundbook/Contents/`**`.playgroundchapter/Pages/`**`.playgroundpage/PrivateResources/MyHint.txt`
 - **`SpoilerButtonTitle`**: A hint that’s hidden until the learner taps a button. Include the `SpoilerButtonTitle` key to hide the hint. The string you supply as the value for the key becomes the button’s title.
 
 Don’t include both the `Content` and `FileReference` keys in the same dictionary. You can use either one, but not both, because they both serve the role of provider of the hint text.
 
-You can use markup to format hint text. For more information, see [`Markup Formatting Reference`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497).
+You can use markup to format hint text. For more information, see [Markup Formatting Reference](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/index.html#//apple_ref/doc/uid/TP40016497).
 
-##### Create Hints for Various Contexts
+##### Create hints for various contexts
 
 Create hints, spoilers, and solutions to suit the needs of each of your playground pages. The example below shows each of the forms a hint can take.
 
@@ -70,7 +73,7 @@ Create hints, spoilers, and solutions to suit the needs of each of your playgrou
 
 Here’s how the hints property list looks when displayed as a popover in the playground page’s live view:
 
-![A screenshot showing three hints. The top hint uses the “Content” key, the middle hint uses a spoiler sheet to hide the hint initially, and the bottom hint uses text from a file.](/images/com.apple.Swift-Playgrounds/giving-hints-to-help-learners-solve-problems-2@2x.png)
+![A screenshot showing three hints. The top hint uses the “Content” key, the middle hint uses a spoiler sheet to hide the hint initially, and the bottom hint uses text from a file.](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/giving-hints-to-help-learners-solve-problems-2@2x.png)
 
 
 ---

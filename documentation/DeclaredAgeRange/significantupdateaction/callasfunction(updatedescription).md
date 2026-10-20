@@ -1,7 +1,8 @@
 # callAsFunction(updateDescription:)
 
 **Framework**: Declared Age Range  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Shows the significant update acknowledgment interface.
 
@@ -18,9 +19,9 @@ func callAsFunction(updateDescription: String) async throws
 
 #### Discussion
 
-Call this method when you need to inform people about significant changes to your app that require their acknowledgment and consent before proceeding. For a code example, refer to [`showSignificantUpdateAcknowledgment`](https://developer.apple.com/documentation/swiftui/environmentvalues/showsignificantupdateacknowledgment).
+Call this method when you need to inform people about significant changes to your app that require their acknowledgment and consent before proceeding. For a code example, refer to [`showSignificantUpdateAcknowledgment`](../../SwiftUI/environmentvalues/showsignificantupdateacknowledgment.md).
 
-> **Note**:  An error if the request fails.
+> **Throws**:  An error if the request fails.
 
 ## Parameters
 

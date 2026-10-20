@@ -1,7 +1,8 @@
 # CModeT
 
 **Framework**: System  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The C `mode_t` type.
 
@@ -22,9 +23,10 @@ typealias CModeT = mode_t
 
 ## See Also
 
-- [init(rawValue: CModeT)](filepermissions/init(rawvalue:).md)
+### Interacting with C APIs
+- [init(rawValue: CModeT)](./filepermissions/init%28rawvalue%29.md)
   Create a strongly-typed file permission from a raw C value.
-- [let rawValue: CModeT](filepermissions/rawvalue.md)
+- [let rawValue: CModeT](./filepermissions/rawvalue.md)
   The raw C file permissions.
 
 

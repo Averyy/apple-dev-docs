@@ -1,17 +1,22 @@
 # services
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Gets an array of service records for the device.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var services: [Any]! { get }
+```
+
+```objc
+@property (readonly) NSArray * services;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # SFCustomLanguageModelData.TemplatePhraseCountGenerator.Iterator.Element
 
 **Framework**: Speech  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 17.0+

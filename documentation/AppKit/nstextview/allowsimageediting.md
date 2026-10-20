@@ -1,7 +1,8 @@
 # allowsImageEditing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates whether image attachments should permit editing of their images.
 
@@ -14,43 +15,48 @@ Indicates whether image attachments should permit editing of their images.
 var allowsImageEditing: Bool { get set }
 ```
 
+```objc
+@property BOOL allowsImageEditing;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if image editing is allowed; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if image editing is allowed; otherwise, [`false`](../../Swift/false.md).
 
 For image editing to be allowed, the text view must be editable and the text attachment cell must support image editing.
 
 ## See Also
 
-- [var allowsUndo: Bool](nstextview/allowsundo.md)
+### Setting behavioral attributes
+- [var allowsUndo: Bool](./allowsundo.md)
   A Boolean value that indicates whether the receiver allows undo.
-- [var isEditable: Bool](nstextview/iseditable.md)
+- [var isEditable: Bool](./iseditable.md)
   A Boolean value that controls whether the text views sharing the receiver’s layout manager allow the user to edit text.
-- [var isSelectable: Bool](nstextview/isselectable.md)
+- [var isSelectable: Bool](./isselectable.md)
   A Boolean value that controls whether the text views sharing the receiver’s layout manager allow the user to select text.
-- [var isFieldEditor: Bool](nstextview/isfieldeditor.md)
+- [var isFieldEditor: Bool](./isfieldeditor.md)
   A Boolean value that controls whether the text views sharing the receiver’s layout manager behave as field editors.
-- [var isRichText: Bool](nstextview/isrichtext.md)
+- [var isRichText: Bool](./isrichtext.md)
   A Boolean value that controls whether the text views sharing the receiver’s layout manager allow the user to apply attributes to specific ranges of text.
-- [var importsGraphics: Bool](nstextview/importsgraphics.md)
+- [var importsGraphics: Bool](./importsgraphics.md)
   A Boolean value that controls whether the text views sharing the receiver’s layout manager allow the user to import files by dragging.
-- [func setBaseWritingDirection(NSWritingDirection, range: NSRange)](nstextview/setbasewritingdirection(_:range:).md)
+- [func setBaseWritingDirection(NSWritingDirection, range: NSRange)](./setbasewritingdirection%28_,range%29.md)
   Sets the base writing direction of a range of text.
-- [var defaultParagraphStyle: NSParagraphStyle?](nstextview/defaultparagraphstyle.md)
+- [var defaultParagraphStyle: NSParagraphStyle?](./defaultparagraphstyle.md)
   The receiver’s default paragraph style.
-- [func outline(Any?)](nstextview/outline(_:).md)
+- [func outline(Any?)](./outline%28_%29.md)
   Adds the outline attribute to the selected text attributes if absent; removes the attribute if present.
-- [var isAutomaticQuoteSubstitutionEnabled: Bool](nstextview/isautomaticquotesubstitutionenabled.md)
+- [var isAutomaticQuoteSubstitutionEnabled: Bool](./isautomaticquotesubstitutionenabled.md)
   A Boolean value that enables and disables automatic quotation mark substitution.
-- [func toggleAutomaticQuoteSubstitution(Any?)](nstextview/toggleautomaticquotesubstitution(_:).md)
+- [func toggleAutomaticQuoteSubstitution(Any?)](./toggleautomaticquotesubstitution%28_%29.md)
   Changes the state of automatic quotation mark substitution from enabled to disabled and vice versa.
-- [var isAutomaticLinkDetectionEnabled: Bool](nstextview/isautomaticlinkdetectionenabled.md)
+- [var isAutomaticLinkDetectionEnabled: Bool](./isautomaticlinkdetectionenabled.md)
   A Boolean value that enables or disables automatic link detection.
-- [func toggleAutomaticLinkDetection(Any?)](nstextview/toggleautomaticlinkdetection(_:).md)
+- [func toggleAutomaticLinkDetection(Any?)](./toggleautomaticlinkdetection%28_%29.md)
   Changes the state of automatic link detection from enabled to disabled and vice versa.
-- [var displaysLinkToolTips: Bool](nstextview/displayslinktooltips.md)
+- [var displaysLinkToolTips: Bool](./displayslinktooltips.md)
   A Boolean value that indicates whether the text view automatically supplies the destination of a link as a tooltip for text that has a link attribute.
-- [var isAutomaticTextCompletionEnabled: Bool](nstextview/isautomatictextcompletionenabled.md)
+- [var isAutomaticTextCompletionEnabled: Bool](./isautomatictextcompletionenabled.md)
   A Boolean value that indicates whether the text view supplies autocompletion suggestions as the user types.
 
 

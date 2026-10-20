@@ -1,17 +1,22 @@
 # setUpPrintOperationDefaultValues()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Validates the attributes encapsulated by the print info.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setUpPrintOperationDefaultValues()
+```
+
+```objc
+- (void) setUpPrintOperationDefaultValues;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ Invoked when the print operation is about to start. Subclasses may override this
 
 ## See Also
 
-- [var jobDisposition: NSPrintInfo.JobDisposition](nsprintinfo/jobdisposition-swift.property.md)
+### Controlling Printing
+- [var jobDisposition: NSPrintInfo.JobDisposition](./jobdisposition-swift.property.md)
   The action specified for the job.
-- [NSPrintInfo.JobDisposition](nsprintinfo/jobdisposition-swift.struct.md)
+- [NSPrintInfo.JobDisposition](./jobdisposition-swift.struct.md)
   Constants that specify values for the print job disposition.
 
 

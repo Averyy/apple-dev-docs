@@ -1,7 +1,8 @@
 # JSValueCreateJSONString(_:_:_:_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a JavaScript string that contains the JSON-serialized representation of a JavaScript value.
 
@@ -19,20 +20,25 @@ Creates a JavaScript string that contains the JSON-serialized representation of 
 func JSValueCreateJSONString(_ ctx: JSContextRef!, _ value: JSValueRef!, _ indent: UInt32, _ exception: UnsafeMutablePointer<JSValueRef?>!) -> JSStringRef!
 ```
 
+```c
+JSStringRefJSValueCreateJSONString(JSContextRef ctx, JSValueRef value, unsigned int indent, JSValueRef*exception);
+```
+
 #### Return Value
 
-A [`JSStringRef`](jsstringref.md) with the result of serialization, or `NULL` if the system throws an exception.
+A [`JSStringRef`](./jsstringref.md) with the result of serialization, or `NULL` if the system throws an exception.
 
 ## Parameters
 
 - `ctx`: The execution context to use.
 - `value`: The value to serialize.
 - `indent`: The number of spaces to indent when nesting. If `0`, the resulting JSON string doesn’t contain new lines. The size of the indent clamps to 10 spaces.
-- `exception`: A pointer to a [`JSValueRef`](jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
+- `exception`: A pointer to a [`JSValueRef`](./jsvalueref.md) to store an exception in, if any. Pass `NULL` to discard any exception.
 
 ## See Also
 
-- [func JSValueMakeFromJSONString(JSContextRef!, JSStringRef!) -> JSValueRef!](jsvaluemakefromjsonstring(_:_:).md)
+### Converting to and from JSON-Formatted Strings
+- [func JSValueMakeFromJSONString(JSContextRef!, JSStringRef!) -> JSValueRef!](./jsvaluemakefromjsonstring%28_,_%29.md)
   Creates a JavaScript value from a JSON-formatted string.
 
 

@@ -1,7 +1,8 @@
 # kMEVideoDecoderObjectNameKey
 
 **Framework**: MediaExtension  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A user-readable string describing the decoder.
 
@@ -15,21 +16,26 @@ A user-readable string describing the decoder.
 var kMEVideoDecoderObjectNameKey: String { get }
 ```
 
+```c
+#define kMEVideoDecoderObjectNameKey
+```
+
 #### Discussion
 
 This string is used internally for uniquely identifying video decoders and possibly for debug logging but is typically not visible to users.
 
 ## See Also
 
-- [var kMEVideoDecoderClassImplementationIDKey: String](kmevideodecoderclassimplementationidkey.md)
+### Property list keys
+- [var kMEVideoDecoderClassImplementationIDKey: String](./kmevideodecoderclassimplementationidkey.md)
   The unique identifier for the video decoder.
-- [var kMERAWProcessorExtensionPointName: String](kmerawprocessorextensionpointname.md)
+- [var kMERAWProcessorExtensionPointName: String](./kmerawprocessorextensionpointname.md)
   The extension point name for RAW processors.
-- [var kMEVideoDecoderCodecInfoKey: String](kmevideodecodercodecinfokey.md)
+- [var kMEVideoDecoderCodecInfoKey: String](./kmevideodecodercodecinfokey.md)
   An array of one or more dictionaries describing the codecs that the decoder supports.
-- [var kMEVideoDecoderCodecTypeKey: String](kmevideodecodercodectypekey.md)
+- [var kMEVideoDecoderCodecTypeKey: String](./kmevideodecodercodectypekey.md)
   A string describing the four-character code of the codec that the decoder supports.
-- [var kMEVideoDecoderCodecNameKey: String](kmevideodecodercodecnamekey.md)
+- [var kMEVideoDecoderCodecNameKey: String](./kmevideodecodercodecnamekey.md)
   A user-readable string describing the name of the codec format.
 
 

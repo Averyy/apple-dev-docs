@@ -1,7 +1,8 @@
 # sin(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the sine operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the sine operation to the input tensor elements.
 
 ```swift
 func sin(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) sinWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

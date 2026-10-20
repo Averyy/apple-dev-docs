@@ -2,6 +2,7 @@
 
 **Framework**: Core Haptics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Starts playing the pattern at the specified time.
@@ -20,13 +21,17 @@ Starts playing the pattern at the specified time.
 func start(atTime time: TimeInterval) throws
 ```
 
+```objc
+- (BOOL) startAtTime:(NSTimeInterval) time error:(NSError **) outError;
+```
+
 ## Mentions
 
-- [Playing a single-tap haptic pattern](playing-a-single-tap-haptic-pattern.md)
+- [Playing a single-tap haptic pattern](../playing-a-single-tap-haptic-pattern.md)
 
 #### Discussion
 
-If `time` is `0` or any value less than the haptic engine’s [`currentTime`](chhapticengine/currenttime.md), the pattern starts playing immediately. If you call this method on a player that’s already playing, it restarts itself at the beginning of the pattern.
+If `time` is `0` or any value less than the haptic engine’s [`currentTime`](../chhapticengine/currenttime.md), the pattern starts playing immediately. If you call this method on a player that’s already playing, it restarts itself at the beginning of the pattern.
 
 ## Parameters
 
@@ -34,9 +39,10 @@ If `time` is `0` or any value less than the haptic engine’s [`currentTime`](ch
 
 ## See Also
 
-- [func stop(atTime: TimeInterval) throws](chhapticpatternplayer/stop(attime:).md)
+### Starting and Stopping Playback
+- [func stop(atTime: TimeInterval) throws](./stop%28attime%29.md)
   Stops playing the pattern at the specified time.
-- [func cancel() throws](chhapticpatternplayer/cancel.md)
+- [func cancel() throws](./cancel%28%29.md)
   Stops the pattern player immediately and returns the specified error.
 
 

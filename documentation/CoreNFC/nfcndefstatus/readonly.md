@@ -1,7 +1,8 @@
 # NFCNDEFStatus.readOnly
 
 **Framework**: Core NFC  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status indicating that the tag supports reading NDEF message data only.
 
@@ -16,11 +17,16 @@ A status indicating that the tag supports reading NDEF message data only.
 case readOnly
 ```
 
+```c
+NFCNDEFStatusReadOnly
+```
+
 ## See Also
 
-- [NFCNDEFStatus.notSupported](nfcndefstatus/notsupported.md)
+### Statuses
+- [NFCNDEFStatus.notSupported](./notsupported.md)
   A status indicating that that tag isn’t an NDEF-formatted tag.
-- [NFCNDEFStatus.readWrite](nfcndefstatus/readwrite.md)
+- [NFCNDEFStatus.readWrite](./readwrite.md)
   A status indicating that the tag supports reading and writing NDEF message data.
 
 

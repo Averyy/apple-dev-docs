@@ -1,7 +1,8 @@
 # viewWillMove(toWindow:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the view immediately before it moves to a new window (which may be `nil`).
 
@@ -14,6 +15,10 @@ Notifies the view immediately before it moves to a new window (which may be `nil
 func viewWillMove(toWindow newWindow: NSWindow?)
 ```
 
+```objc
+- (void) viewWillMoveToWindow:(NSWindow *) newWindow;
+```
+
 #### Discussion
 
 When subclassing, you can override this method and use it to perform any tasks associated with the change. You must call `super` at some point during your implementation.
@@ -24,7 +29,8 @@ When subclassing, you can override this method and use it to perform any tasks a
 
 ## See Also
 
-- [func viewDidMoveToWindow()](nsvisualeffectview/viewdidmovetowindow.md)
+### Handling Moves to a Different Window
+- [func viewDidMoveToWindow()](./viewdidmovetowindow%28%29.md)
   Notifies the view that it moved to a new window.
 
 

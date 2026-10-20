@@ -1,7 +1,8 @@
 # OSSystemExtensionErrorDomain
 
 **Framework**: System Extensions  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The error domain identifying system extension errors.
 
@@ -17,11 +18,16 @@ The error domain identifying system extension errors.
 let OSSystemExtensionErrorDomain: String
 ```
 
+```c
+extern NSErrorDomain const OSSystemExtensionErrorDomain;
+```
+
 ## See Also
 
-- [struct OSSystemExtensionError](ossystemextensionerror.md)
+### Errors
+- [struct OSSystemExtensionError](./ossystemextensionerror.md)
   An error that describes a failed extension manager request.
-- [OSSystemExtensionError.Code](ossystemextensionerror/code.md)
+- [OSSystemExtensionError.Code](./ossystemextensionerror/code.md)
   Error codes for system extensions.
 
 

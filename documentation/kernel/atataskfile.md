@@ -1,14 +1,15 @@
 # ataTaskFile
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ataTaskFile {
     ...
 } ataTaskFile;
@@ -17,13 +18,13 @@ typedef struct ataTaskFile {
 ## Topics
 
 ### Instance Properties
-- [ataTFCommand](atataskfile/1513617-atatfcommand.md)
-- [ataTFCount](atataskfile/1513681-atatfcount.md)
-- [ataTFCylHigh](atataskfile/1513750-atatfcylhigh.md)
-- [ataTFCylLo](atataskfile/1513899-atatfcyllo.md)
-- [ataTFFeatures](atataskfile/1513716-atatffeatures.md)
-- [ataTFSDH](atataskfile/1513965-atatfsdh.md)
-- [ataTFSector](atataskfile/1513671-atatfsector.md)
+- [ataTFCommand](./atataskfile/api-1513617-atatfcommand.md)
+- [ataTFCount](./atataskfile/api-1513681-atatfcount.md)
+- [ataTFCylHigh](./atataskfile/api-1513750-atatfcylhigh.md)
+- [ataTFCylLo](./atataskfile/api-1513899-atatfcyllo.md)
+- [ataTFFeatures](./atataskfile/api-1513716-atatffeatures.md)
+- [ataTFSDH](./atataskfile/api-1513965-atatfsdh.md)
+- [ataTFSector](./atataskfile/api-1513671-atatfsector.md)
 
 
 ---

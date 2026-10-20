@@ -1,7 +1,8 @@
 # CredentialSession.Credential.InstanceInfo.InstanceType
 
 **Framework**: SecureElementCredential  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 An enumeration of Secure Element applet instance types.
 
@@ -18,24 +19,25 @@ enum InstanceType
 ## Topics
 
 ### Instance types
-- [CredentialSession.Credential.InstanceInfo.InstanceType.standalone](credentialsession/credential/instanceinfo/instancetype-swift.enum/standalone.md)
+- [CredentialSession.Credential.InstanceInfo.InstanceType.standalone](./instancetype-swift.enum/standalone.md)
   A type that indicates an instance doesn’t have any associative relationships with other instances.
-- [CredentialSession.Credential.InstanceInfo.InstanceType.headApplication](credentialsession/credential/instanceinfo/instancetype-swift.enum/headapplication.md)
+- [CredentialSession.Credential.InstanceInfo.InstanceType.headApplication](./instancetype-swift.enum/headapplication.md)
   A type that indicates an instance is the head application of a group.
-- [CredentialSession.Credential.InstanceInfo.InstanceType.groupApplication](credentialsession/credential/instanceinfo/instancetype-swift.enum/groupapplication.md)
+- [CredentialSession.Credential.InstanceInfo.InstanceType.groupApplication](./instancetype-swift.enum/groupapplication.md)
   A type that indicates an instance is a member of a group of application instances.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let instanceType: CredentialSession.Credential.InstanceInfo.InstanceType](credentialsession/credential/instanceinfo/instancetype-swift.property.md)
+### Inspecting the instance type
+- [let instanceType: CredentialSession.Credential.InstanceInfo.InstanceType](./instancetype-swift.property.md)
   The instance type of this instance.
 
 

@@ -1,7 +1,8 @@
 # getObject
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Returns a member of the dictionary.
 
@@ -11,11 +12,19 @@ Returns a member of the dictionary.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+OSObject * getObject(const OSObject *aKey);
+```
+
+*macOS*
+
+```cpp
 virtual OSObject * getObject(const OSString *aKey);
 ```
 
-#### Return_value
+#### Return Value
 
 Member at the given index or NULL if the index is greater or equal to the array count. The retain count of the result object is not incremented and the object should not be release by the caller.
 
@@ -29,22 +38,23 @@ Looks up an existing object in the dictionary with the given key and returns it.
 
 ## See Also
 
-- [- getObject](osdictionary/3433846-getobject.md)
+### Accessing Keys and Values
+- [- getObject](./api-3433846-getobject.md)
   Returns a member of the dictionary.
-- [- setObject](osdictionary/3180906-setobject.md)
+- [- setObject](./api-3180906-setobject.md)
   Add or replace an object in the dictionary.
-- [- setObject](osdictionary/3433850-setobject.md)
+- [- setObject](./api-3433850-setobject.md)
   Add or replace an object in the dictionary.
-- [- removeObject](osdictionary/3180905-removeobject.md)
+- [- removeObject](./api-3180905-removeobject.md)
   Remove an object by key from the dictionary.
-- [- removeObject](osdictionary/3433849-removeobject.md)
+- [- removeObject](./api-3433849-removeobject.md)
   Remove an object by key from the dictionary.
-- [- iterateObjects](../driverkit/osdictionary/iterateobjects-9h89s.md)
+- [- iterateObjects](../../DriverKit/osdictionary/iterateobjects-9h89s.md)
   Iterates the dictionary calling a callback block for each member.
-- [- iterateObjects](../driverkit/osdictionary/iterateobjects-6cv0d.md)
+- [- iterateObjects](../../DriverKit/osdictionary/iterateobjects-6cv0d.md)
   Iterates the dictionary calling a callback block for each member.
-- [OSDictionaryIterateObjectsBlock](../driverkit/osdictionaryiterateobjectsblock.md)
-- [OSDictionaryIterateObjectsCallback](../driverkit/osdictionaryiterateobjectscallback.md)
+- [OSDictionaryIterateObjectsBlock](../../DriverKit/osdictionaryiterateobjectsblock.md)
+- [OSDictionaryIterateObjectsCallback](../../DriverKit/osdictionaryiterateobjectscallback.md)
 
 
 ---

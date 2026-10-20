@@ -1,7 +1,8 @@
 # backgroundColors
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The array of background colors to use when drawing the grid.
 
@@ -14,9 +15,13 @@ The array of background colors to use when drawing the grid.
 var backgroundColors: [NSColor]! { get set }
 ```
 
+```objc
+@property (copy, null_resettable) NSArray<NSColor *> * backgroundColors;
+```
+
 #### Discussion
 
-The [`NSColor`](nscolor.md) objects in this property are used to draw the grid’s background. The appearance of the background depends on the value you specify:
+The [`NSColor`](../nscolor.md) objects in this property are used to draw the grid’s background. The appearance of the background depends on the value you specify:
 
 - Specifying `nil` fills the background with the collection view’s default background color.
 - Specifying an empty array causes the collection view to draw no background color.

@@ -1,7 +1,8 @@
 # client
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The client for the device with which this collection is associated.
 

@@ -1,7 +1,8 @@
 # kQLThumbnailOptionIconModeKey
 
 **Framework**: Quick Look  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Quick Look generator produces the thumbnail as an icon with decor.
 
@@ -14,19 +15,24 @@ The Quick Look generator produces the thumbnail as an icon with decor.
 let kQLThumbnailOptionIconModeKey: CFString!
 ```
 
+```c
+extern CFStringRef const kQLThumbnailOptionIconModeKey;
+```
+
 #### Discussion
 
-The default value is [`kCFBooleanFalse`](https://developer.apple.com/documentation/corefoundation/kcfbooleanfalse). If you use the default, the Quick Look feature creates a thumbnail image with no icon decor. To create the thumbnail as an icon, set the value to [`kCFBooleanTrue`](https://developer.apple.com/documentation/corefoundation/kcfbooleantrue). The icon’s image includes all the typical icon decor, such as shadows and a curled corner.
+The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md). If you use the default, the Quick Look feature creates a thumbnail image with no icon decor. To create the thumbnail as an icon, set the value to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md). The icon’s image includes all the typical icon decor, such as shadows and a curled corner.
 
 ## See Also
 
-- [var kQLReturnMask: Int32](kqlreturnmask.md)
+### Constants
+- [var kQLReturnMask: Int32](./kqlreturnmask.md)
   The Quick Look generator can create a preview.
-- [var kQLReturnHasMore: Int32](kqlreturnhasmore.md)
+- [var kQLReturnHasMore: Int32](./kqlreturnhasmore.md)
   The Quick Look generator has more content to display as part of the preview.
-- [let kQLThumbnailOptionScaleFactorKey: CFString!](kqlthumbnailoptionscalefactorkey.md)
+- [let kQLThumbnailOptionScaleFactorKey: CFString!](./kqlthumbnailoptionscalefactorkey.md)
   The scale factor for the thumbnail.
-- [var QUICKLOOK_VERSION: Int32](quicklook_version.md)
+- [var QUICKLOOK_VERSION: Int32](./quicklook_version.md)
 
 
 ---

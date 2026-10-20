@@ -1,7 +1,8 @@
 # Language list atom ('lang')
 
 **Framework**: QuickTime File Format  
-**Kind**: class
+**Kind**: class  
+**Role**: Atom
 
 An atom that lists items that are suitable for more than one language.
 
@@ -37,38 +38,39 @@ The following table shows an example Language List atom consisting of two langua
 ## Topics
 
 ### Data fields
-- [Size](language_list_atom/size.md)
+- [Size](./language_list_atom/size.md)
   A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
-- [Type](language_list_atom/type.md)
+- [Type](./language_list_atom/type.md)
   A 32-bit unsigned integer value.
-- [Version](language_list_atom/version.md)
+- [Version](./language_list_atom/version.md)
   One byte.
-- [Flags](language_list_atom/flags.md)
+- [Flags](./language_list_atom/flags.md)
   Three bytes.
-- [Entry_count](language_list_atom/entry_count.md)
+- [Entry_count](./language_list_atom/entry_count.md)
   A 32-bit integer indicating the number of language arrays to follow in this atom.
-- [Language_count](language_list_atom/language_count.md)
+- [Language_count](./language_list_atom/language_count.md)
   A 16-bit integer indicating the number of languages in the array.
-- [Language[Language_count]](language_list_atom/language_language_count.md)
+- [Language[Language_count]](./language_list_atom/language_language_count.md)
   An array of 16-bit integers, defined according to the ISO 639-2/T definition of language codes.
 
 ## See Also
 
-- [Country list atom ('ctry')](country_list_atom.md)
+### Atoms
+- [Country list atom ('ctry')](./country_list_atom.md)
   An atom that lists items that are suitable for more than one country.
-- [Metadata item keys atom ('keys')](metadata_item_keys_atom.md)
+- [Metadata item keys atom ('keys')](./metadata_item_keys_atom.md)
   An atom that holds a list of the metadata keys that may be present in the metadata atom.
-- [Metadata item list atom ('ilst')](metadata_item_list_atom.md)
+- [Metadata item list atom ('ilst')](./metadata_item_list_atom.md)
   An atom that holds a list of actual metadata values that are present in the metadata atom.
-- [Metadata item atom](metadata_item_atom.md)
+- [Metadata item atom](./metadata_item_atom.md)
   An atom that holds a metadata value.
-- [Value atom](value_atom.md)
+- [Value atom](./value_atom.md)
   An atom that expresses a metadata value.
-- [Item information atom ('itif')](item_information_atom.md)
+- [Item information atom ('itif')](./item_information_atom.md)
   An atom that contains information about the item, including item-specific flags and item optional identifier.
-- [Name atom ('name')](name_atom.md)
+- [Name atom ('name')](./name_atom.md)
   An atom you use to provide a name for a metadata item.
-- [Data atom ('data')](data_atom.md)
+- [Data atom ('data')](./data_atom.md)
   An atom that contains the type and locale specific value of metadata.
 
 

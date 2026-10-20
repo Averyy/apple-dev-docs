@@ -1,7 +1,8 @@
 # init(texture:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object from a specified texture.
 
@@ -11,7 +12,7 @@ Creates an object from a specified texture.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -25,7 +26,8 @@ init(texture: PhysicallyBasedMaterial.Texture? = nil)
 
 ## See Also
 
-- [init(CustomMaterial.Normal)](physicallybasedmaterial/normal-swift.struct/init(_:).md)
+### Creating a normal object
+- [init(CustomMaterial.Normal)](./init%28_%29.md)
   Creates a normal object from a custom material’s normal property.
 
 

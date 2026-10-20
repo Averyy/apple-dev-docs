@@ -1,7 +1,8 @@
 # mirroring()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether video mirroring is enabled during snapshots.
 
@@ -14,13 +15,18 @@ Returns whether video mirroring is enabled during snapshots.
 func mirroring() -> Bool
 ```
 
+```objc
+- (BOOL) mirroring;
+```
+
 #### Return Value
 
 Returns YES if video mirroring is enabled, NO otherwise.
 
 ## See Also
 
-- [func setMirroring(Bool)](ikpicturetaker/setmirroring(_:).md)
+### Getting and Setting Mirroring
+- [func setMirroring(Bool)](./setmirroring%28_%29.md)
   Controls whether the receiver enables video mirroring during snapshots.
 
 

@@ -1,7 +1,8 @@
 # normal
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 14.0+
@@ -15,6 +16,10 @@
 
 ```swift
 static var normal: MPSMatrixRandomDistribution { get }
+```
+
+```c
+MPSMatrixRandomDistributionNormal
 ```
 
 

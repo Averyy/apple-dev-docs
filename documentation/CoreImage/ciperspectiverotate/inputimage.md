@@ -2,6 +2,7 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The image to process.
@@ -11,7 +12,7 @@ The image to process.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.4+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -20,15 +21,20 @@ The image to process.
 var inputImage: CIImage? { get set }
 ```
 
+```objc
+@property (nonatomic, retain, nullable) CIImage * inputImage;
+```
+
 ## See Also
 
-- [var focalLength: Float](ciperspectiverotate/focallength.md)
+### Instance Properties
+- [var focalLength: Float](./focallength.md)
   The 35mm equivalent focal length of the input image.
-- [var pitch: Float](ciperspectiverotate/pitch.md)
+- [var pitch: Float](./pitch.md)
   The pitch angle, in radians.
-- [var roll: Float](ciperspectiverotate/roll.md)
+- [var roll: Float](./roll.md)
   The roll angle, in radians.
-- [var yaw: Float](ciperspectiverotate/yaw.md)
+- [var yaw: Float](./yaw.md)
   The yaw angle, in radians.
 
 

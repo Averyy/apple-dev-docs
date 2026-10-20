@@ -1,7 +1,8 @@
 # voronoiNoise(withFrequency:displacement:distanceEnabled:seed:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a Voronoi noise source with the specified parameters.
 
@@ -19,24 +20,29 @@ Creates a Voronoi noise source with the specified parameters.
 class func voronoiNoise(withFrequency frequency: Double, displacement: Double, distanceEnabled: Bool, seed: Int32) -> Self
 ```
 
+```objc
++ (instancetype) voronoiNoiseWithFrequency:(double) frequency displacement:(double) displacement distanceEnabled:(BOOL) distanceEnabled seed:(int32_t) seed;
+```
+
 #### Return Value
 
 A new noise source.
 
 #### Discussion
 
-To make use of this noise source, create a [`GKNoise`](gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](https://developer.apple.com/documentation/spritekit/sktexture) or `SKTileMap` class.
+To make use of this noise source, create a [`GKNoise`](../gknoise.md) object from it (and optionally apply operations to that noise object or combine it with other noise objects). Then create a [`GKNoiseMap`](../gknoisemap.md) object from your noise object, generating a concrete field of values that you can sample from directly or visualize using the [`SKTexture`](../../SpriteKit/sktexture.md) or `SKTileMap` class.
 
 ## Parameters
 
-- `frequency`: The initial value for the [`frequency`](gkvoronoinoisesource/frequency.md) property, which determines the number and spacing of cells in generated noise.
-- `displacement`: The initial value for the [`displacement`](gkvoronoinoisesource/displacement.md) property, which determines the variety of noise values between cells in generated noise.
-- `distanceEnabled`: The initial value for the [`isDistanceEnabled`](gkvoronoinoisesource/isdistanceenabled.md) property, which determines whether to add distance values to generated noise.
-- `seed`: The initial value for the [`seed`](gkvoronoinoisesource/seed.md) property, which determines the overall structure of generated noise.
+- `frequency`: The initial value for the [`frequency`](./frequency.md) property, which determines the number and spacing of cells in generated noise.
+- `displacement`: The initial value for the [`displacement`](./displacement.md) property, which determines the variety of noise values between cells in generated noise.
+- `distanceEnabled`: The initial value for the [`isDistanceEnabled`](./isdistanceenabled.md) property, which determines whether to add distance values to generated noise.
+- `seed`: The initial value for the [`seed`](./seed.md) property, which determines the overall structure of generated noise.
 
 ## See Also
 
-- [init(frequency: Double, displacement: Double, distanceEnabled: Bool, seed: Int32)](gkvoronoinoisesource/init(frequency:displacement:distanceenabled:seed:).md)
+### Creating a Noise Source
+- [init(frequency: Double, displacement: Double, distanceEnabled: Bool, seed: Int32)](./init%28frequency,displacement,distanceenabled,seed%29.md)
   Initializes a Voronoi noise source with the specified parameters.
 
 

@@ -1,7 +1,8 @@
 # deleteRecordZones
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the specified zones.
 
@@ -10,7 +11,7 @@ Deletes the specified zones.
 
 ## Declaration
 
-```swift
+```
 Promise<CloudKit.RecordZonesResponse, CloudKit.CKError> deleteRecordZones(
 	CloudKit.ZoneID|CloudKit.ZoneID[]|String|String[] zones
 );
@@ -18,24 +19,27 @@ Promise<CloudKit.RecordZonesResponse, CloudKit.CKError> deleteRecordZones(
 
 #### Return Value
 
-A `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](cloudkit.recordzonesresponse.md) object if the operation succeeds; otherwise, a [`CKError`](cloudkit/ckerror.md) object.
+A `Promise` object that resolves to a [`CloudKit.RecordZonesResponse`](../cloudkit.recordzonesresponse.md) object if the operation succeeds; otherwise, a [`CKError`](../cloudkit/ckerror.md) object.
 
 ## Parameters
 
-- `zones`: Possible values are: | Type | Description |
-| --- | --- |
-| [`CloudKit.ZoneID`](cloudkit.zoneid.md) | A zone in the database to delete. |
-| `CloudKit.ZoneID[]` | An array of zones to delete. |
-| `String` | The name of a zone to delete. |
-| `String[]` | An array of names of zones to delete. |
+- `zones`: Possible values are:
+
+  | Type | Description |
+  | --- | --- |
+  | [`CloudKit.ZoneID`](../cloudkit.zoneid.md) | A zone in the database to delete. |
+  | `CloudKit.ZoneID[]` | An array of zones to delete. |
+  | `String` | The name of a zone to delete. |
+  | `String[]` | An array of names of zones to delete. |
 
 ## See Also
 
-- [saveRecordZones](cloudkit.database/saverecordzones.md)
+### Accessing Record Zones
+- [saveRecordZones](./saverecordzones.md)
   Creates one or more zones in the database.
-- [fetchRecordZones](cloudkit.database/fetchrecordzones.md)
+- [fetchRecordZones](./fetchrecordzones.md)
   Fetches one or more zones.
-- [fetchAllRecordZones](cloudkit.database/fetchallrecordzones.md)
+- [fetchAllRecordZones](./fetchallrecordzones.md)
   Fetches all zones in the database.
 
 

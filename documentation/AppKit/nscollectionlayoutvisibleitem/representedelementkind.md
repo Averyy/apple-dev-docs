@@ -2,6 +2,7 @@
 
 **Framework**: AppKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A string that identifies the type of item.
@@ -15,11 +16,16 @@ A string that identifies the type of item.
 var representedElementKind: String? { get }
 ```
 
+```objc
+@property (readonly, nullable) NSString * representedElementKind;
+```
+
 ## See Also
 
-- [var name: String](nscollectionlayoutvisibleitem/name.md)
+### Identifying the item
+- [var name: String](./name.md)
   The name of the item.
-- [var representedElementCategory: NSCollectionElementCategory](nscollectionlayoutvisibleitem/representedelementcategory.md)
+- [var representedElementCategory: NSCollectionElementCategory](./representedelementcategory.md)
   A category that identifies the item, such as decoration or supplementary view.
 
 

@@ -1,7 +1,8 @@
 # sex
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The photo ID holder’s sex.
 

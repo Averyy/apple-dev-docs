@@ -1,18 +1,19 @@
 # init(rawValue:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an activation-options set from a raw bitmask.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ init(rawValue: UInt)
 
 ## Parameters
 
-- `rawValue`: A bitwise combination of the defined [`AVAudioSessionActivationOptions`](avaudiosessionactivationoptions.md) constants.
+- `rawValue`: A bitwise combination of the defined [`AVAudioSessionActivationOptions`](../avaudiosessionactivationoptions.md) constants.
 
 
 ---

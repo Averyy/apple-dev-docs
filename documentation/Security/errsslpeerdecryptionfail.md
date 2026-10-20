@@ -1,7 +1,8 @@
 # errSSLPeerDecryptionFail
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Decryption failed.
 
@@ -18,6 +19,10 @@ Decryption failed.
 
 ```swift
 var errSSLPeerDecryptionFail: OSStatus { get }
+```
+
+```c
+errSSLPeerDecryptionFail
 ```
 
 

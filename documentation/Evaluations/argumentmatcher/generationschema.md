@@ -1,7 +1,8 @@
 # generationSchema
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The generation schema for this partially generated argument matcher.
 

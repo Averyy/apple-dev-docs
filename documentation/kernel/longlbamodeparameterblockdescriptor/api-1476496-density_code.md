@@ -1,14 +1,15 @@
 # DENSITY_CODE
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 UInt8 DENSITY_CODE;
 ```
 

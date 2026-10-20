@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Virtualization  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a macOS boot loader.
 
@@ -12,6 +13,10 @@ Creates a macOS boot loader.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

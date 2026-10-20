@@ -1,7 +1,8 @@
 # init(_:as:using:widget:timelineProvider:)
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a preview of a widget with an `INIntent` configuration.
 
@@ -26,13 +27,14 @@ The `#Preview` macro expands into a declaration that calls this initializer. To 
 
 ## See Also
 
-- [init<Attributes>(String?, as: ActivityPreviewViewKind, using: Attributes, widget: () -> some Widget, contentStates: () async -> [Attributes.ContentState])](preview/init(_:as:using:widget:contentstates:).md)
+### Creating a preview of a widget
+- [init<Attributes>(String?, as: ActivityPreviewViewKind, using: Attributes, widget: () -> some Widget, contentStates: () async -> [Attributes.ContentState])](./init%28_,as,using,widget,contentstates%29.md)
   Creates a preview of a live activity widget.
-- [init<Provider>(String?, as: WidgetFamily, using: Provider.Intent, widget: () -> some Widget, timelineProvider: () -> Provider)](preview/init(_:as:using:widget:timelineprovider:)-1if5u.md)
+- [init<Provider>(String?, as: WidgetFamily, using: Provider.Intent, widget: () -> some Widget, timelineProvider: () -> Provider)](./init%28_,as,using,widget,timelineprovider%29-1if5u.md)
   Creates a preview of a widget with an `AppIntent` configuration.
-- [init(String?, as: WidgetFamily, widget: () -> some Widget, timeline: () async -> [any TimelineEntry])](preview/init(_:as:widget:timeline:).md)
+- [init(String?, as: WidgetFamily, widget: () -> some Widget, timeline: () async -> [any TimelineEntry])](./init%28_,as,widget,timeline%29.md)
   Creates a preview of a timeline-style widget.
-- [init(String?, as: WidgetFamily, widget: () -> some Widget, timelineProvider: () -> some TimelineProvider)](preview/init(_:as:widget:timelineprovider:).md)
+- [init(String?, as: WidgetFamily, widget: () -> some Widget, timelineProvider: () -> some TimelineProvider)](./init%28_,as,widget,timelineprovider%29.md)
   Creates a preview of a widget with a static configuration.
 
 

@@ -1,7 +1,8 @@
 # scrollView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scroll view to affect
 
@@ -16,6 +17,10 @@ The scroll view to affect
 
 ```swift
 weak var scrollView: UIScrollView? { get set }
+```
+
+```objc
+@property (nonatomic, weak, nullable) UIScrollView * scrollView;
 ```
 
 

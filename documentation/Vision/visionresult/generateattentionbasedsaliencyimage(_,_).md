@@ -1,7 +1,8 @@
 # VisionResult.generateAttentionBasedSaliencyImage(_:_:)
 
 **Framework**: Vision  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A result from performing a generate attention based saliency image request.
 
@@ -22,7 +23,8 @@ case generateAttentionBasedSaliencyImage(GenerateAttentionBasedSaliencyImageRequ
 
 ## See Also
 
-- [case generateObjectnessBasedSaliencyImage(GenerateObjectnessBasedSaliencyImageRequest, SaliencyImageObservation)](visionresult/generateobjectnessbasedsaliencyimage(_:_:).md)
+### Getting the saliency result
+- [case generateObjectnessBasedSaliencyImage(GenerateObjectnessBasedSaliencyImageRequest, SaliencyImageObservation)](./generateobjectnessbasedsaliencyimage%28_,_%29.md)
   A result from performing a generate objectness based saliency image request.
 
 

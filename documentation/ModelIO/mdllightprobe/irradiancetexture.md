@@ -1,7 +1,8 @@
 # irradianceTexture
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A cube map texture that contains samples of the total light arriving at the light probe’s position from every direction.
 
@@ -19,15 +20,20 @@ A cube map texture that contains samples of the total light arriving at the ligh
 var irradianceTexture: MDLTexture? { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly, nullable) MDLTexture * irradianceTexture;
+```
+
 #### Discussion
 
-A renderer can use this texture to create diffuse lighting effects. You can derive an irradiance map from a reflective texture with methods on the [`MDLTexture`](mdltexture.md) class, or when creating a light probe with the [`init(textureSize:forLocation:lightsToConsider:objectsToConsider:reflectiveCubemap:irradianceCubemap:)`](mdllightprobe/init(texturesize:forlocation:lightstoconsider:objectstoconsider:reflectivecubemap:irradiancecubemap:).md) method.
+A renderer can use this texture to create diffuse lighting effects. You can derive an irradiance map from a reflective texture with methods on the [`MDLTexture`](../mdltexture.md) class, or when creating a light probe with the [`init(textureSize:forLocation:lightsToConsider:objectsToConsider:reflectiveCubemap:irradianceCubemap:)`](./init%28texturesize,forlocation,lightstoconsider,objectstoconsider,reflectivecubemap,irradiancecubemap%29.md) method.
 
 For example, consider a light probe whose reflective texture is red in all directions above the probe’s location and blue in all directions below that point. A diffuse material on the side of such an object should appear purple, because the side of the object receives a blend of the red light from above and the blue light from below. Therefore, the irradiance texture for this light probe is red directly above, blue directly below, and contains gradations of purple on all sides.
 
 ## See Also
 
-- [var reflectiveTexture: MDLTexture?](mdllightprobe/reflectivetexture.md)
+### Working with Textures
+- [var reflectiveTexture: MDLTexture?](./reflectivetexture.md)
   A cube map texture that contains a rendering of a scene as seen from the light probe’s position.
 
 

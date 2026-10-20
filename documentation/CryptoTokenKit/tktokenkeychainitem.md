@@ -1,7 +1,8 @@
 # TKTokenKeychainItem
 
 **Framework**: CryptoTokenKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An abstract base class for managing a token’s contents as keychain items.
 
@@ -20,51 +21,56 @@ An abstract base class for managing a token’s contents as keychain items.
 class TKTokenKeychainItem
 ```
 
+```objc
+@interface TKTokenKeychainItem : NSObject
+```
+
 #### Overview
 
-Don’t use this base class directly. Instead, use one of its subclasses, such as [`TKTokenKeychainCertificate`](tktokenkeychaincertificate.md) for managing certificates or [`TKTokenKeychainKey`](tktokenkeychainkey.md) for managing cryptographic keys.
+Don’t use this base class directly. Instead, use one of its subclasses, such as [`TKTokenKeychainCertificate`](./tktokenkeychaincertificate.md) for managing certificates or [`TKTokenKeychainKey`](./tktokenkeychainkey.md) for managing cryptographic keys.
 
 ## Topics
 
 ### Creating Token Keychain Items
-- [init(objectID: TKToken.ObjectID)](tktokenkeychainitem/init(objectid:).md)
+- [init(objectID: TKToken.ObjectID)](./tktokenkeychainitem/init%28objectid%29.md)
   Initializes a token keychain item with the specified object ID.
 ### Accessing Keychain Item Attributes
-- [var objectID: TKToken.ObjectID](tktokenkeychainitem/objectid.md)
+- [var objectID: TKToken.ObjectID](./tktokenkeychainitem/objectid.md)
   Returns the object ID used for keychain item identification.
-- [var label: String?](tktokenkeychainitem/label.md)
+- [var label: String?](./tktokenkeychainitem/label.md)
   The user-visible label for the keychain item.
-- [var constraints: [NSNumber : Any]?](tktokenkeychainitem/constraints.md)
-  Access constraints for the keychain item, keyed by [`TKTokenOperation`](tktokenoperation.md) values wrapped in [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) objects.
+- [var constraints: [NSNumber : Any]?](./tktokenkeychainitem/constraints.md)
+  Access constraints for the keychain item, keyed by [`TKTokenOperation`](./tktokenoperation.md) values wrapped in [`NSNumber`](../Foundation/nsnumber.md) objects.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [TKTokenKeychainCertificate](tktokenkeychaincertificate.md)
-- [TKTokenKeychainKey](tktokenkeychainkey.md)
+- [TKTokenKeychainCertificate](./tktokenkeychaincertificate.md)
+- [TKTokenKeychainKey](./tktokenkeychainkey.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var keychainContents: TKTokenKeychainContents?](tktoken/keychaincontents.md)
+### Accessing Keychain Items
+- [var keychainContents: TKTokenKeychainContents?](./tktoken/keychaincontents.md)
   The contents of the keychain for this token.
-- [class TKTokenKeychainContents](tktokenkeychaincontents.md)
+- [class TKTokenKeychainContents](./tktokenkeychaincontents.md)
   A representation of the state of the keychain for a particular token.
-- [class TKTokenKeychainCertificate](tktokenkeychaincertificate.md)
+- [class TKTokenKeychainCertificate](./tktokenkeychaincertificate.md)
   A token’s certificate as stored in the keychain.
-- [class TKTokenKeychainKey](tktokenkeychainkey.md)
+- [class TKTokenKeychainKey](./tktokenkeychainkey.md)
   A token’s key as stored in the keychain.
-- [typealias ObjectID](tktoken/objectid.md)
+- [typealias ObjectID](./tktoken/objectid.md)
   A unique and persistent identifier of a particular token object.
-- [typealias ObjectID](tktoken/objectid.md)
+- [typealias ObjectID](./tktoken/objectid.md)
   A unique and persistent identifier of a particular token object.
 
 

@@ -1,7 +1,8 @@
 # AssetData
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A reference to arbitrary data with a specific media type.
 
@@ -16,7 +17,7 @@ A reference to arbitrary data with a specific media type.
 
 ## Declaration
 
-```swift
+```
 object AssetData
 ```
 
@@ -24,7 +25,7 @@ object AssetData
 
 Specify `com.apple.asset.data` as the declaration type.
 
-##### Asset Example
+##### Asset example
 
 ```json
 {
@@ -46,9 +47,9 @@ Specify `com.apple.asset.data` as the declaration type.
 ## Topics
 
 ### Objects
-- [object AssetDataAuthenticationObject](assetdataauthenticationobject.md)
+- [object AssetDataAuthenticationObject](./assetdataauthenticationobject.md)
   The server authentication details. If this key is absent, the default authentication type is MDM.
-- [object AssetDataReferenceObject](assetdatareferenceobject.md)
+- [object AssetDataReferenceObject](./assetdatareferenceobject.md)
   The external reference.
 
 ## Properties
@@ -58,17 +59,18 @@ Specify `com.apple.asset.data` as the declaration type.
 
 ## See Also
 
-- [object AssetCredentialACME](assetcredentialacme.md)
+### Assets
+- [object AssetCredentialACME](./assetcredentialacme.md)
   A reference to an ACME identity.
-- [object AssetCredentialCertificate](assetcredentialcertificate.md)
+- [object AssetCredentialCertificate](./assetcredentialcertificate.md)
   A reference to one PKCS #1 or PEM encoded certificate.
-- [object AssetCredentialIdentity](assetcredentialidentity.md)
+- [object AssetCredentialIdentity](./assetcredentialidentity.md)
   A reference to a PKCS #12 password-protected identity.
-- [object AssetCredentialSCEP](assetcredentialscep.md)
+- [object AssetCredentialSCEP](./assetcredentialscep.md)
   A reference to a SCEP identity.
-- [object AssetCredentialUserNameAndPassword](assetcredentialusernameandpassword.md)
+- [object AssetCredentialUserNameAndPassword](./assetcredentialusernameandpassword.md)
   A reference to data that describes a credential that represents a user name and password.
-- [object AssetUserIdentity](assetuseridentity.md)
+- [object AssetUserIdentity](./assetuseridentity.md)
   The user-identity data.
 
 

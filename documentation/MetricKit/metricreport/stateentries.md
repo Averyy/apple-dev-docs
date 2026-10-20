@@ -1,7 +1,8 @@
 # stateEntries
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The state entries in this metric report, populated when state reporting is enabled.
 
@@ -19,14 +20,14 @@ let stateEntries: [MetricReport.StateEntry]
 
 ## Mentions
 
-- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
 #### Discussion
 
-`stateEntries` is only populated when the [`MetricManager`](metricmanager.md) was initialized with [`init(enabledStateReportingDomains:)`](metricmanager/init(enabledstatereportingdomains:).md). Each [`MetricReport.StateEntry`](metricreport/stateentry.md) contains metric values aggregated while the app was in a specific state, scoped to a specific [`MetricManager.ReportedState`](metricmanager/reportedstate.md).
+`stateEntries` is only populated when the [`MetricManager`](../metricmanager.md) was initialized with [`init(enabledStateReportingDomains:)`](../metricmanager/init%28enabledstatereportingdomains%29.md). Each [`MetricReport.StateEntry`](./stateentry.md) contains metric values aggregated while the app was in a specific state, scoped to a specific [`MetricManager.ReportedState`](../metricmanager/reportedstate.md).
 
-Only a subset of metrics appear in state entries, including hang time, hitch time, app termination counts, signpost intervals, location activity time, and app runtime metrics. CPU time, memory, network, disk I/O, GPU, app launch, and disk space metrics appear only in [`intervalEntries`](metricreport/intervalentries.md).
+Only a subset of metrics appear in state entries, including hang time, hitch time, app termination counts, signpost intervals, location activity time, and app runtime metrics. CPU time, memory, network, disk I/O, GPU, app launch, and disk space metrics appear only in [`intervalEntries`](./intervalentries.md).
 
 Use `byStateReportingDomain` on the collection to group entries by domain:
 
@@ -41,11 +42,12 @@ if let sessionEntries = byDomain[StateReportingDomain(rawValue: "com.example.app
 
 ## See Also
 
-- [let intervalEntries: [MetricReport.IntervalEntry]](metricreport/intervalentries.md)
+### Metric data
+- [let intervalEntries: [MetricReport.IntervalEntry]](./intervalentries.md)
   The interval entries in this metric report, including the full-day aggregate.
-- [static let encodingFormatKey: CodingUserInfoKey](metricreport/encodingformatkey.md)
+- [static let encodingFormatKey: CodingUserInfoKey](./encodingformatkey.md)
   A `CodingUserInfoKey` for selecting the JSON encoding format of a metric report.
-- [MetricReport.EncodingFormat](metricreport/encodingformat.md)
+- [MetricReport.EncodingFormat](./encodingformat.md)
   A value that controls the JSON structure used when encoding a metric report.
 
 

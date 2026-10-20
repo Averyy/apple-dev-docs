@@ -1,7 +1,8 @@
 # MPSGraphRNNActivation.hardSigmoid
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Defines a Hard sigmoid activation.
 
@@ -17,6 +18,10 @@ Defines a Hard sigmoid activation.
 
 ```swift
 case hardSigmoid
+```
+
+```c
+MPSGraphRNNActivationHardSigmoid
 ```
 
 

@@ -1,7 +1,8 @@
 # init(cgContext:options:)
 
 **Framework**: Core Image  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a Core Image context from a Quartz context, using the specified options.
 
@@ -19,18 +20,22 @@ Creates a Core Image context from a Quartz context, using the specified options.
 init(cgContext cgctx: CGContext, options: [CIContextOption : Any]? = nil)
 ```
 
+```objc
++ (CIContext *) contextWithCGContext:(CGContextRef) cgctx options:(NSDictionary<NSString *,id> *) options;
+```
+
 #### Discussion
 
 After calling this method, Core Image draws content to the specified Quartz graphics context.
 
-When you create a [`CIContext`](cicontext.md) object using a Quartz graphics context, any transformations that are already set on the Quartz graphics context affect drawing to that context.
+When you create a [`CIContext`](../cicontext.md) object using a Quartz graphics context, any transformations that are already set on the Quartz graphics context affect drawing to that context.
 
-> **Note**:  To obtain a Core Image context for the current AppKit drawing context in macOS, use the [`NSGraphicsContext`](https://developer.apple.com/documentation/appkit/nsgraphicscontext) [`ciContext`](https://developer.apple.com/documentation/appkit/nsgraphicscontext/cicontext) property.
+> **Note**:  To obtain a Core Image context for the current AppKit drawing context in macOS, use the [`NSGraphicsContext`](../../AppKit/nsgraphicscontext.md) [`ciContext`](../../AppKit/nsgraphicscontext/cicontext.md) property.
 
 ## Parameters
 
 - `cgctx`: A Quartz graphics context.
-- `options`: A dictionary that contains color space information. You can pass any of the keys defined in [`CIContextOption`](cicontextoption.md) along with the appropriate value.
+- `options`: A dictionary that contains color space information. You can pass any of the keys defined in [`CIContextOption`](../cicontextoption.md) along with the appropriate value.
 
 
 ---

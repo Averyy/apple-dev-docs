@@ -1,22 +1,25 @@
 # All files entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the app may have access to all files.
 
 **Availability**:
-- macOS 10.7+
+- macOS 10.7+ - Deprecated in 10.11
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.security.files.all` (All Files Entitlement)
+- **Type**: boolean
 
 ## See Also
 
-- [Maps Entitlement](entitlements/com.apple.developer.maps.md)
+### Deprecated entitlements
+- [Maps Entitlement](./com.apple.developer.maps.md)
   A Boolean value that indicates whether the app may provide directions beyond what Maps supports, such as subway routes, hiking trails, and bike paths.
-- [Inter-App Audio Entitlement](entitlements/inter-app-audio.md)
+- [Inter-App Audio Entitlement](./inter-app-audio.md)
   A Boolean value that indicates whether the app may exchange audio with other Inter-App Audio-enabled apps.
 
 

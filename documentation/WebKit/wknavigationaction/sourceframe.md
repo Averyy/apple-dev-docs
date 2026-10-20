@@ -1,7 +1,8 @@
 # sourceFrame
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame that requested the navigation.
 
@@ -19,13 +20,18 @@ The frame that requested the navigation.
 var sourceFrame: WKFrameInfo { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) WKFrameInfo * sourceFrame;
+```
+
 ## See Also
 
-- [var request: URLRequest](wknavigationaction/request.md)
+### Inspecting navigation information
+- [var request: URLRequest](./request.md)
   The URL request object associated with the navigation action.
-- [var targetFrame: WKFrameInfo?](wknavigationaction/targetframe.md)
+- [var targetFrame: WKFrameInfo?](./targetframe.md)
   The frame in which to display the new content.
-- [var shouldPerformDownload: Bool](wknavigationaction/shouldperformdownload.md)
+- [var shouldPerformDownload: Bool](./shouldperformdownload.md)
   A Boolean value that indicates whether the web content provided an attribute that indicates a download.
 
 

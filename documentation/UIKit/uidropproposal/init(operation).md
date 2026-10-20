@@ -1,7 +1,8 @@
 # init(operation:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new drop proposal with a drop operation type.
 
@@ -17,6 +18,10 @@ Initializes a new drop proposal with a drop operation type.
 init(operation: UIDropOperation)
 ```
 
+```objc
+- (instancetype) initWithDropOperation:(UIDropOperation) operation;
+```
+
 #### Return Value
 
 A drop proposal that has a drop operation.
@@ -27,7 +32,8 @@ A drop proposal that has a drop operation.
 
 ## See Also
 
-- [var operation: UIDropOperation](uidropproposal/operation.md)
+### Initializing a drop proposal
+- [var operation: UIDropOperation](./operation.md)
   The drop operation that the drop interaction proposes to perform.
 
 

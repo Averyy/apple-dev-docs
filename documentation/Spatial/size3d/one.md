@@ -1,7 +1,8 @@
 # one
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The size structure with width, height, and depth values of one.
 
@@ -11,7 +12,7 @@ The size structure with width, height, and depth values of one.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

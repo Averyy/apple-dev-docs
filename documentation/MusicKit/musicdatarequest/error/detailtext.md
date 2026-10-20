@@ -1,7 +1,8 @@
 # detailText
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional detailed information about the cause of the error.
 

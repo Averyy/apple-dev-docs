@@ -1,7 +1,8 @@
 # MDLMatrix4x4Array
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -17,30 +18,34 @@
 class MDLMatrix4x4Array
 ```
 
+```objc
+@interface MDLMatrix4x4Array : NSObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(elementCount: Int)](mdlmatrix4x4array/init(elementcount:).md)
+- [init(elementCount: Int)](./mdlmatrix4x4array/init%28elementcount%29.md)
 ### Instance Properties
-- [var double4x4Array: [double4x4]](mdlmatrix4x4array/double4x4array.md)
-- [var elementCount: Int](mdlmatrix4x4array/elementcount.md)
-- [var float4x4Array: [float4x4]](mdlmatrix4x4array/float4x4array.md)
-- [var precision: MDLDataPrecision](mdlmatrix4x4array/precision.md)
+- [var double4x4Array: [double4x4]](./mdlmatrix4x4array/double4x4array.md)
+- [var elementCount: Int](./mdlmatrix4x4array/elementcount.md)
+- [var float4x4Array: [float4x4]](./mdlmatrix4x4array/float4x4array.md)
+- [var precision: MDLDataPrecision](./mdlmatrix4x4array/precision.md)
 ### Instance Methods
-- [func clear()](mdlmatrix4x4array/clear.md)
+- [func clear()](./mdlmatrix4x4array/clear%28%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

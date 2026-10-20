@@ -1,7 +1,8 @@
 # MTLDataType.rgb9e5Float
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A packed 32-bit format with three color components, each of which is a 9-bit floating-point value.
 
@@ -19,13 +20,18 @@ A packed 32-bit format with three color components, each of which is a 9-bit flo
 case rgb9e5Float
 ```
 
+```c
+MTLDataTypeRGB9E5Float
+```
+
 #### Discussion
 
 The color components are in RGBA order, which stands for red, green, blue, and alpha. The red, green, and blue components each have 9 bits, and the alpha component has 5 bits.
 
 ## See Also
 
-- [MTLDataType.rg11b10Float](mtldatatype/rg11b10float.md)
+### 32-bit color floating-point types
+- [MTLDataType.rg11b10Float](./rg11b10float.md)
   A packed 32-bit format with three floating-point color components, two of which are 11-bit values, and one is a 10-bit value.
 
 

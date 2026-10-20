@@ -1,7 +1,8 @@
 # HMError.Code.communicationFailure
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A communication failure.
 
@@ -19,21 +20,26 @@ A communication failure.
 case communicationFailure
 ```
 
+```c
+HMErrorCodeCommunicationFailure
+```
+
 ## See Also
 
-- [HMError.Code.accessDenied](hmerror/code/accessdenied.md)
+### Communication errors
+- [HMError.Code.accessDenied](./accessdenied.md)
   An error indicating the current user doesn’t have privileges to perform the operation.
-- [HMError.Code.accessoryCommunicationFailure](hmerror/code/accessorycommunicationfailure.md)
+- [HMError.Code.accessoryCommunicationFailure](./accessorycommunicationfailure.md)
   The accessory failed to communicate.
-- [HMError.Code.accessoryPairingFailed](hmerror/code/accessorypairingfailed.md)
+- [HMError.Code.accessoryPairingFailed](./accessorypairingfailed.md)
   An attempt to pair with the accessory has failed.
-- [HMError.Code.accessorySentInvalidResponse](hmerror/code/accessorysentinvalidresponse.md)
+- [HMError.Code.accessorySentInvalidResponse](./accessorysentinvalidresponse.md)
   An error indicating the accessory sent an invalid response.
-- [HMError.Code.clientRequestError](hmerror/code/clientrequesterror.md)
+- [HMError.Code.clientRequestError](./clientrequesterror.md)
   An error with the client request.
-- [HMError.Code.dataResetFailure](hmerror/code/dataresetfailure.md)
+- [HMError.Code.dataResetFailure](./dataresetfailure.md)
   An attempt to reset the data failed.
-- [HMError.Code.timedOutWaitingForAccessory](hmerror/code/timedoutwaitingforaccessory.md)
+- [HMError.Code.timedOutWaitingForAccessory](./timedoutwaitingforaccessory.md)
   An accessory did not respond timely.
 
 

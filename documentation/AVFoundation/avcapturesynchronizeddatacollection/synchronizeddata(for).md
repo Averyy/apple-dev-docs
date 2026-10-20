@@ -1,7 +1,8 @@
 # synchronizedData(for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns synchronized data captured by the specified capture output.
 
@@ -17,6 +18,10 @@ Returns synchronized data captured by the specified capture output.
 func synchronizedData(for captureOutput: AVCaptureOutput) -> AVCaptureSynchronizedData?
 ```
 
+```objc
+- (AVCaptureSynchronizedData *) synchronizedDataForCaptureOutput:(AVCaptureOutput *) captureOutput;
+```
+
 #### Return Value
 
 A synchronized data object corresponding to the specified capture output.
@@ -27,9 +32,10 @@ A synchronized data object corresponding to the specified capture output.
 
 ## See Also
 
-- [var count: Int](avcapturesynchronizeddatacollection/count.md)
+### Accessing synchronized data
+- [var count: Int](./count.md)
   The number of synchronized data objects in the collection.
-- [subscript(AVCaptureOutput) -> AVCaptureSynchronizedData?](avcapturesynchronizeddatacollection/subscript(_:).md)
+- [subscript(AVCaptureOutput) -> AVCaptureSynchronizedData?](./subscript%28_%29.md)
   Returns data captured by the specified capture output, using subscript syntax.
 
 

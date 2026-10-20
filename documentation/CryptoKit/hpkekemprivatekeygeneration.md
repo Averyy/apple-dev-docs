@@ -1,7 +1,8 @@
 # HPKEKEMPrivateKeyGeneration
 
 **Framework**: Apple CryptoKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that represents the generation of private keys in HPKE
 
@@ -24,18 +25,18 @@ protocol HPKEKEMPrivateKeyGeneration : HPKEKEMPrivateKey
 ## Topics
 
 ### Initializers
-- [init() throws](hpkekemprivatekeygeneration/init.md)
+- [init() throws](./hpkekemprivatekeygeneration/init%28%29.md)
   Creates a private key generator.
 
 ## Relationships
 
 ### Inherits From
-- [HPKEKEMPrivateKey](hpkekemprivatekey.md)
-- [KEMPrivateKey](kemprivatekey.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [HPKEKEMPrivateKey](./hpkekemprivatekey.md)
+- [KEMPrivateKey](./kemprivatekey.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 ### Conforming Types
-- [XWingMLKEM768X25519.PrivateKey](xwingmlkem768x25519/privatekey.md)
+- [XWingMLKEM768X25519.PrivateKey](./xwingmlkem768x25519/privatekey.md)
 
 
 ---

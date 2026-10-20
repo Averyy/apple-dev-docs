@@ -1,7 +1,8 @@
 # storeAnimatedJoints(transforms:jointIndex:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stores a subset of animated joints.
 
@@ -20,9 +21,11 @@ Stores a subset of animated joints.
 func storeAnimatedJoints(transforms: [Transform], jointIndex: Int) -> Bool
 ```
 
+Available when `Value` is `JointTransforms`.
+
 #### Discussion
 
-See [`storeAnimatedValue(_:)`](animationstateprotocol/storeanimatedvalue(_:).md) for more about returning an animation result to the animation system.
+See [`storeAnimatedValue(_:)`](../animationstateprotocol/storeanimatedvalue%28_%29.md) for more about returning an animation result to the animation system.
 
 
 ---

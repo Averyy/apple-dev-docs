@@ -2,6 +2,7 @@
 
 **Framework**: SecureElementCredential  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,8 @@ func windowScene(_ windowScene: UIWindowScene, didReceiveCredentialSessionWindow
 
 ## See Also
 
-- [enum CredentialSessionWindowSceneEvent](credentialsessionwindowsceneevent.md)
+### Handling events
+- [enum CredentialSessionWindowSceneEvent](../credentialsessionwindowsceneevent.md)
   A CredentialSession event send to a `UIScene` or `UIWindowScene`.
 
 

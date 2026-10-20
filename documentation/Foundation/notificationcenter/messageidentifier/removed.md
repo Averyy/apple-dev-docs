@@ -1,7 +1,8 @@
 # removed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,9 +16,12 @@
 static var removed: NotificationCenter.BaseMessageIdentifier<UIPasteboard.RemovedMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<UIPasteboard.RemovedMessage>`.
+
 ## See Also
 
-- [static var changed: NotificationCenter.BaseMessageIdentifier<UIPasteboard.ChangedMessage>](notificationcenter/messageidentifier/changed-28zxj.md)
+### Identifying UIKit pasteboard messages
+- [static var changed: NotificationCenter.BaseMessageIdentifier<UIPasteboard.ChangedMessage>](./changed-28zxj.md)
 
 
 ---

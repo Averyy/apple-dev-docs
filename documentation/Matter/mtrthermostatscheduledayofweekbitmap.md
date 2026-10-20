@@ -1,7 +1,8 @@
 # MTRThermostatScheduleDayOfWeekBitmap
 
 **Framework**: Matter  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 17.4+
@@ -18,31 +19,35 @@
 struct MTRThermostatScheduleDayOfWeekBitmap
 ```
 
+```c
+enum MTRThermostatScheduleDayOfWeekBitmap : uint8_t;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt8)](mtrthermostatscheduledayofweekbitmap/init(rawvalue:).md)
+- [init(rawValue: UInt8)](./mtrthermostatscheduledayofweekbitmap/init%28rawvalue%29.md)
 ### Type Properties
-- [static var away: MTRThermostatScheduleDayOfWeekBitmap](mtrthermostatscheduledayofweekbitmap/away.md)
-- [static var friday: MTRThermostatScheduleDayOfWeekBitmap](mtrthermostatscheduledayofweekbitmap/friday.md)
-- [static var monday: MTRThermostatScheduleDayOfWeekBitmap](mtrthermostatscheduledayofweekbitmap/monday.md)
-- [static var saturday: MTRThermostatScheduleDayOfWeekBitmap](mtrthermostatscheduledayofweekbitmap/saturday.md)
-- [static var sunday: MTRThermostatScheduleDayOfWeekBitmap](mtrthermostatscheduledayofweekbitmap/sunday.md)
-- [static var thursday: MTRThermostatScheduleDayOfWeekBitmap](mtrthermostatscheduledayofweekbitmap/thursday.md)
-- [static var tuesday: MTRThermostatScheduleDayOfWeekBitmap](mtrthermostatscheduledayofweekbitmap/tuesday.md)
-- [static var wednesday: MTRThermostatScheduleDayOfWeekBitmap](mtrthermostatscheduledayofweekbitmap/wednesday.md)
+- [static var away: MTRThermostatScheduleDayOfWeekBitmap](./mtrthermostatscheduledayofweekbitmap/away.md)
+- [static var friday: MTRThermostatScheduleDayOfWeekBitmap](./mtrthermostatscheduledayofweekbitmap/friday.md)
+- [static var monday: MTRThermostatScheduleDayOfWeekBitmap](./mtrthermostatscheduledayofweekbitmap/monday.md)
+- [static var saturday: MTRThermostatScheduleDayOfWeekBitmap](./mtrthermostatscheduledayofweekbitmap/saturday.md)
+- [static var sunday: MTRThermostatScheduleDayOfWeekBitmap](./mtrthermostatscheduledayofweekbitmap/sunday.md)
+- [static var thursday: MTRThermostatScheduleDayOfWeekBitmap](./mtrthermostatscheduledayofweekbitmap/thursday.md)
+- [static var tuesday: MTRThermostatScheduleDayOfWeekBitmap](./mtrthermostatscheduledayofweekbitmap/tuesday.md)
+- [static var wednesday: MTRThermostatScheduleDayOfWeekBitmap](./mtrthermostatscheduledayofweekbitmap/wednesday.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 
 ---

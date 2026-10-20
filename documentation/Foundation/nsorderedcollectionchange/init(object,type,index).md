@@ -1,7 +1,8 @@
 # init(object:type:index:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a change object that represents inserting or removing an object from an ordered collection at a specific index.
 
@@ -20,6 +21,10 @@ Creates a change object that represents inserting or removing an object from an 
 convenience init(object anObject: Any?, type: NSCollectionChangeType, index: Int)
 ```
 
+```objc
+- (instancetype) initWithObject:(ObjectType) anObject type:(NSCollectionChangeType) type index:(NSUInteger) index;
+```
+
 ## Parameters
 
 - `anObject`: An optional object the change will remove or insert.
@@ -28,7 +33,8 @@ convenience init(object anObject: Any?, type: NSCollectionChangeType, index: Int
 
 ## See Also
 
-- [init(object: Any?, type: NSCollectionChangeType, index: Int, associatedIndex: Int)](nsorderedcollectionchange/init(object:type:index:associatedindex:).md)
+### Creating a Change
+- [init(object: Any?, type: NSCollectionChangeType, index: Int, associatedIndex: Int)](./init%28object,type,index,associatedindex%29.md)
   Creates a change object that represents inserting, removing, or moving an object from an ordered collection at a specific index.
 
 

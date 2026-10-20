@@ -1,7 +1,8 @@
 # clusterThreadNetworkDirectoryAttributeClusterRevisionID
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 static var clusterThreadNetworkDirectoryAttributeClusterRevisionID: MTRAttributeIDType { get }
+```
+
+```c
+MTRAttributeIDTypeClusterThreadNetworkDirectoryAttributeClusterRevisionID
 ```
 
 

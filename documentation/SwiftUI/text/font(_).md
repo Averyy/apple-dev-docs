@@ -1,7 +1,8 @@
 # font(_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the default font for text in the view.
 
@@ -23,7 +24,7 @@ func font(_ font: Font?) -> Text
 
 ## Mentions
 
-- [Applying custom fonts to text](applying-custom-fonts-to-text.md)
+- [Applying custom fonts to text](../applying-custom-fonts-to-text.md)
 
 #### Return Value
 
@@ -48,7 +49,7 @@ VStack {
 }
 ```
 
-![Applying a font to a single text view or a view container](/images/com.apple.SwiftUI/SwiftUI-view-font@2x.png)
+![Applying a font to a single text view or a view container](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-view-font@2x.png)
 
 ## Parameters
 
@@ -56,11 +57,12 @@ VStack {
 
 ## See Also
 
-- [func fontWeight(Font.Weight?) -> Text](text/fontweight(_:).md)
+### Choosing a font
+- [func fontWeight(Font.Weight?) -> Text](./fontweight%28_%29.md)
   Sets the font weight of the text.
-- [func fontDesign(Font.Design?) -> Text](text/fontdesign(_:).md)
+- [func fontDesign(Font.Design?) -> Text](./fontdesign%28_%29.md)
   Sets the font design of the text.
-- [func fontWidth(Font.Width?) -> Text](text/fontwidth(_:).md)
+- [func fontWidth(Font.Width?) -> Text](./fontwidth%28_%29.md)
   Sets the font width of the text.
 
 

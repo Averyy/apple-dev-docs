@@ -1,7 +1,8 @@
 # Artwork
 
 **Framework**: MusicKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that represents artwork for a music item.
 
@@ -23,43 +24,44 @@ struct Artwork
 ## Topics
 
 ### Instance Properties
-- [let alternateText: String?](artwork/alternatetext.md)
+- [let alternateText: String?](./artwork/alternatetext.md)
   A textual description for the image.
-- [let backgroundColor: CGColor?](artwork/backgroundcolor.md)
+- [let backgroundColor: CGColor?](./artwork/backgroundcolor.md)
   The average background color of the image.
-- [let maximumHeight: Int](artwork/maximumheight.md)
+- [let maximumHeight: Int](./artwork/maximumheight.md)
   The maximum height available for the image.
-- [let maximumWidth: Int](artwork/maximumwidth.md)
+- [let maximumWidth: Int](./artwork/maximumwidth.md)
   The maximum width available for the image.
-- [let primaryTextColor: CGColor?](artwork/primarytextcolor.md)
+- [let primaryTextColor: CGColor?](./artwork/primarytextcolor.md)
   The primary text color to use when displaying the background color.
-- [let quaternaryTextColor: CGColor?](artwork/quaternarytextcolor.md)
+- [let quaternaryTextColor: CGColor?](./artwork/quaternarytextcolor.md)
   The final posttertiary text color to use when displaying the background color.
-- [let secondaryTextColor: CGColor?](artwork/secondarytextcolor.md)
+- [let secondaryTextColor: CGColor?](./artwork/secondarytextcolor.md)
   The secondary text color to use when displaying the background color.
-- [let tertiaryTextColor: CGColor?](artwork/tertiarytextcolor.md)
+- [let tertiaryTextColor: CGColor?](./artwork/tertiarytextcolor.md)
   The tertiary text color to use when displaying the background color.
 ### Instance Methods
-- [func url(width: Int, height: Int) -> URL?](artwork/url(width:height:).md)
+- [func url(width: Int, height: Int) -> URL?](./artwork/url%28width,height%29.md)
   Returns a URL to request the image asset for a specified width and height.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct ArtworkImage](artworkimage.md)
+### Artwork
+- [struct ArtworkImage](./artworkimage.md)
   A view that displays the image for a music item’s artwork.
 
 

@@ -1,7 +1,8 @@
 # init(id:toolName:arguments:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a tool call that invokes a tool with the arguments you provide.
 
@@ -27,7 +28,8 @@ init(id: String, toolName: String, arguments: GeneratedContent)
 
 ## See Also
 
-- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], toolName: String, arguments: GeneratedContent)](transcript/toolcall/init(id:metadata:toolname:arguments:).md)
+### Creating a tool call
+- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], toolName: String, arguments: GeneratedContent)](./init%28id,metadata,toolname,arguments%29.md)
   Creates a tool call that invokes a tool with the metadata and arguments you provide.
 
 

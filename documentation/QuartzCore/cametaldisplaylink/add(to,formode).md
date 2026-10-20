@@ -1,7 +1,8 @@
 # add(to:forMode:)
 
 **Framework**: Core Animation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers the display link with a run loop.
 
@@ -19,11 +20,15 @@ Registers the display link with a run loop.
 func add(to runloop: RunLoop, forMode mode: RunLoop.Mode)
 ```
 
+```objc
+- (void) addToRunLoop:(NSRunLoop *) runloop forMode:(NSRunLoopMode) mode;
+```
+
 #### Discussion
 
-You can associate the display link with any of the [`RunLoop`](https://developer.apple.com/documentation/foundation/runloop) modes, multiple input modes, or a custom mode. When the run loop is in `mode`, the display link notifies its delegate when the system prepares the next frame.
+You can associate the display link with any of the [`RunLoop`](../../Foundation/runloop.md) modes, multiple input modes, or a custom mode. When the run loop is in `mode`, the display link notifies its delegate when the system prepares the next frame.
 
-You can remove the display link from a run loop by calling [`remove(from:forMode:)`](cametaldisplaylink/remove(from:formode:).md), or from all run loops with [`invalidate()`](cametaldisplaylink/invalidate().md).
+You can remove the display link from a run loop by calling [`remove(from:forMode:)`](./remove%28from,formode%29.md), or from all run loops with [`invalidate()`](./invalidate%28%29.md).
 
 ## Parameters
 

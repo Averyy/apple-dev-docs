@@ -1,7 +1,8 @@
 # GKTurnBasedExchangeStatus.complete
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 All recipients of the exchange request replied.
 
@@ -20,19 +21,24 @@ All recipients of the exchange request replied.
 case complete
 ```
 
+```c
+GKTurnBasedExchangeStatusComplete
+```
+
 ## Mentions
 
-- [Exchanging data between players in turn-based games](exchanging-data-between-players-in-turn-based-games.md)
+- [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
 ## See Also
 
-- [GKTurnBasedExchangeStatus.unknown](gkturnbasedexchangestatus/unknown.md)
+### Statuses
+- [GKTurnBasedExchangeStatus.unknown](./unknown.md)
   The state of the exchange request is unknown.
-- [GKTurnBasedExchangeStatus.active](gkturnbasedexchangestatus/active.md)
+- [GKTurnBasedExchangeStatus.active](./active.md)
   GameKit sent the exchange request to recipients but not all recipients replied.
-- [GKTurnBasedExchangeStatus.resolved](gkturnbasedexchangestatus/resolved.md)
+- [GKTurnBasedExchangeStatus.resolved](./resolved.md)
   The current participant saved the exchange request.
-- [GKTurnBasedExchangeStatus.canceled](gkturnbasedexchangestatus/canceled.md)
+- [GKTurnBasedExchangeStatus.canceled](./canceled.md)
   The sender canceled the exchange request.
 
 

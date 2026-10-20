@@ -1,6 +1,7 @@
 # AXNotificationConstants.h
 
-**Framework**: Application Services
+**Framework**: Application Services  
+**Role**: API Collection
 
 #### Overview
 
@@ -15,10 +16,10 @@ Observers are represented by the AXObserverRef type, which is a CFType. Like all
 ## Topics
 
 ### Callbacks
-- [typealias CFIndex](../corefoundation/cfindex.md)
+- [typealias CFIndex](../CoreFoundation/cfindex.md)
   Priority values used for kAXPriorityKey
 ### Constants
-- [Miscellaneous Defines](axnotificationconstants_h/miscellaneous_defines.md)
+- [Miscellaneous Defines](./axnotificationconstants_h/miscellaneous_defines.md)
 
 
 ---

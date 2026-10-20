@@ -1,7 +1,8 @@
 # CPListImageRowItemCondensedElement.Shape.circular
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The list item will render an element with a circular image.
 
@@ -14,6 +15,10 @@ The list item will render an element with a circular image.
 
 ```swift
 case circular
+```
+
+```c
+CPListImageRowItemCondensedElementShapeCircular
 ```
 
 

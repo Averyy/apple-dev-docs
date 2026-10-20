@@ -1,6 +1,7 @@
 # Bulk Operations Endpoints
 
-**Framework**: Apple Ads Platform API
+**Framework**: Apple Ads Platform API  
+**Role**: API Collection
 
 Create, update, and delete keywords and negative keywords in bulk through these endpoints.
 
@@ -22,7 +23,7 @@ Each entity that supports bulk operations exposes create, update, and delete end
 | Keywords | `POST /v1/keywords/bulk-create` | `POST /v1/keywords/bulk-update` | `POST /v1/keywords/bulk-delete` |
 | Negative Keywords | `POST /v1/negative-keywords/bulk-create` | `POST /v1/negative-keywords/bulk-update` | `POST /v1/negative-keywords/bulk-delete` |
 
-##### Create Update and Delete
+##### Create, Update, and Delete
 
 To create, update, or delete items in bulk, send a POST request to the entity’s bulk endpoint with an `items` array; the endpoint you call determines the shape of each item’s `data` object:
 
@@ -38,32 +39,33 @@ Bulk endpoints use a partial-success model when the request sets `allowPartialSu
 
 The response reports bulk-level validation failures (such as sending more items than the endpoint allows in a single request) in the outer `BulkResponse.error.details` field, not in the per-item `result` array. When the endpoint returns a bulk-level error, it processes no items regardless of the `allowPartialSuccess` setting. If you hit this rejection, split the request into smaller batches and retry each one.
 
-##### Choose Between Bulk and Single Item Endpoints
+##### Choose Between Bulk and Single-Item Endpoints
 
-Prefer bulk endpoints when creating, updating, or deleting more than a handful of keywords or negative keywords at once, such as rolling out a new keyword list across many ad groups or pausing a large negative keyword list in one pass. A bulk request counts as a single call against your rate limit regardless of how many items it carries, so batching changes into bulk requests is the most effective way to stay under the limits described in [`Applying Rate Limits`](rate-limits.md) during large-scale operations.
+Prefer bulk endpoints when creating, updating, or deleting more than a handful of keywords or negative keywords at once, such as rolling out a new keyword list across many ad groups or pausing a large negative keyword list in one pass. A bulk request counts as a single call against your rate limit regardless of how many items it carries, so batching changes into bulk requests is the most effective way to stay under the limits described in [Applying Rate Limits](./rate-limits.md) during large-scale operations.
 
 Use the single-item endpoints for one-off changes, such as adjusting a single keyword’s bid, where there’s no batch to build. The single-item response shape is also simpler to handle in application code, since it returns a single `Error` object instead of a per-item `result` array keyed by `correlationId`.
 
 ## Topics
 
 ### Keywords
-- [Bulk Create Keywords](post-keywords-bulk-create.md)
+- [Bulk Create Keywords](./post-keywords-bulk-create.md)
   Creates multiple keywords in a single request.
-- [Bulk Update Keywords](post-keywords-bulk-update.md)
+- [Bulk Update Keywords](./post-keywords-bulk-update.md)
   Updates multiple keywords in a single request.
-- [Bulk Delete Keywords](post-keywords-bulk-delete.md)
+- [Bulk Delete Keywords](./post-keywords-bulk-delete.md)
   Soft-deletes multiple keywords in a single request.
 ### Negative Keywords
-- [Bulk Create Negative Keywords](post-negative-keywords-bulk-create.md)
+- [Bulk Create Negative Keywords](./post-negative-keywords-bulk-create.md)
   Create multiple negative keywords in a single request.
-- [Bulk Update Negative Keywords](post-negative-keywords-bulk-update.md)
+- [Bulk Update Negative Keywords](./post-negative-keywords-bulk-update.md)
   Update multiple negative keywords in a single request.
-- [Bulk Delete Negative Keywords](post-negative-keywords-bulk-delete.md)
+- [Bulk Delete Negative Keywords](./post-negative-keywords-bulk-delete.md)
   Delete multiple negative keywords in a single request.
 
 ## See Also
 
-- [Bulk Data Objects](bulk-data-objects.md)
+### Bulk Operations
+- [Bulk Data Objects](./bulk-data-objects.md)
   Build bulk keyword and negative keyword requests, and read per-item results.
 
 

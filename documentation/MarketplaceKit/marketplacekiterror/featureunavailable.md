@@ -1,7 +1,8 @@
 # MarketplaceKitError.featureUnavailable
 
 **Framework**: MarketplaceKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates that the requested feature is unavailable.
 
@@ -17,13 +18,14 @@ case featureUnavailable
 
 ## See Also
 
-- [MarketplaceKitError.cancelled](marketplacekiterror/cancelled.md)
+### System and network errors
+- [MarketplaceKitError.cancelled](./cancelled.md)
   An error that indicates the app isn’t eligible for installation.
-- [MarketplaceKitError.networkError](marketplacekiterror/networkerror.md)
+- [MarketplaceKitError.networkError](./networkerror.md)
   An error that indicates a network error occurs during a request.
-- [MarketplaceKitError.oauthTokenError](marketplacekiterror/oauthtokenerror.md)
+- [MarketplaceKitError.oauthTokenError](./oauthtokenerror.md)
   An error that indicates that the framework failed to retrieve an authorization token.
-- [MarketplaceKitError.unknown](marketplacekiterror/unknown.md)
+- [MarketplaceKitError.unknown](./unknown.md)
   An error that indicates failure due to an unknown error.
 
 

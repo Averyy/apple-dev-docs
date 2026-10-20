@@ -1,7 +1,8 @@
 # TupleView
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A View created from a swift tuple of View values.
 
@@ -24,23 +25,24 @@ nonisolated struct TupleView<T>
 ## Topics
 
 ### Creating a tuple view
-- [init(_:)](tupleview/init(_:).md)
-- [var value: T](tupleview/value.md)
+- [init(_:)](./tupleview/init%28_%29.md)
+- [var value: T](./tupleview/value.md)
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct AnyView](anyview.md)
+### Supporting view types
+- [struct AnyView](./anyview.md)
   A type-erased view.
-- [struct EmptyView](emptyview.md)
+- [struct EmptyView](./emptyview.md)
   A view that doesn’t contain any content.
-- [struct EquatableView](equatableview.md)
+- [struct EquatableView](./equatableview.md)
   A view type that compares itself against its previous value and prevents its child updating if its new value is the same as its old value.
-- [struct SubscriptionView](subscriptionview.md)
+- [struct SubscriptionView](./subscriptionview.md)
   A view that subscribes to a publisher with an action.
 
 

@@ -1,7 +1,8 @@
 # supportsLocale(_:)
 
 **Framework**: Foundation Models  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a Boolean value that indicates whether the given locale is supported by the model.
 
@@ -22,11 +23,12 @@ nonisolated
 
 #### Discussion
 
-Use this method over [`supportedLanguages`](privatecloudcomputelanguagemodel/supportedlanguages.md) to check whether the given locale qualifies a person for using this model, as this method also takes language fallbacks into consideration.
+Use this method over [`supportedLanguages`](./supportedlanguages.md) to check whether the given locale qualifies a person for using this model, as this method also takes language fallbacks into consideration.
 
 ## See Also
 
-- [var supportedLanguages: Set<Locale.Language>](privatecloudcomputelanguagemodel/supportedlanguages.md)
+### Handling language and locales
+- [var supportedLanguages: Set<Locale.Language>](./supportedlanguages.md)
   Languages that the model supports.
 
 

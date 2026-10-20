@@ -1,7 +1,8 @@
 # Insecure.SHA1.Digest
 
 **Framework**: Apple CryptoKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The digest type for a SHA1 hash function.
 
@@ -22,7 +23,8 @@ typealias Digest = Insecure.SHA1Digest
 
 ## See Also
 
-- [Insecure.SHA1Digest](insecure/sha1digest.md)
+### Specifying the output type
+- [Insecure.SHA1Digest](../sha1digest.md)
   The output of a SHA1 hash.
 
 

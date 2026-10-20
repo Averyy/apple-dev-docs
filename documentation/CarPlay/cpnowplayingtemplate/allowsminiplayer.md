@@ -1,7 +1,8 @@
 # allowsMiniPlayer
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the mini player is allowed to appear.
 
@@ -14,6 +15,10 @@ A Boolean value indicating whether the mini player is allowed to appear.
 
 ```swift
 var allowsMiniPlayer: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL allowsMiniPlayer;
 ```
 
 #### Discussion

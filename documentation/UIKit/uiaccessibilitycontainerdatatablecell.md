@@ -1,7 +1,8 @@
 # UIAccessibilityContainerDataTableCell
 
 **Framework**: UIKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Methods that provide the location of a cell in a table.
 
@@ -19,24 +20,29 @@ Methods that provide the location of a cell in a table.
 protocol UIAccessibilityContainerDataTableCell : NSObjectProtocol
 ```
 
+```objc
+@protocol UIAccessibilityContainerDataTableCell <NSObject>
+```
+
 ## Topics
 
 ### Getting the rows and columns
-- [func accessibilityColumnRange() -> NSRange](uiaccessibilitycontainerdatatablecell/accessibilitycolumnrange.md)
+- [func accessibilityColumnRange() -> NSRange](./uiaccessibilitycontainerdatatablecell/accessibilitycolumnrange%28%29.md)
   Returns the columns spanned by the cell.
-- [func accessibilityRowRange() -> NSRange](uiaccessibilitycontainerdatatablecell/accessibilityrowrange.md)
+- [func accessibilityRowRange() -> NSRange](./uiaccessibilitycontainerdatatablecell/accessibilityrowrange%28%29.md)
   Returns the visible range of rows.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [protocol UIAccessibilityContainerDataTable](uiaccessibilitycontainerdatatable.md)
+### Containers
+- [protocol UIAccessibilityContainerDataTable](./uiaccessibilitycontainerdatatable.md)
   Methods that convey information about the contents of a table.
-- [enum UIAccessibilityContainerType](uiaccessibilitycontainertype.md)
+- [enum UIAccessibilityContainerType](./uiaccessibilitycontainertype.md)
   Constants that indicate the type of content in a data-based container.
 
 

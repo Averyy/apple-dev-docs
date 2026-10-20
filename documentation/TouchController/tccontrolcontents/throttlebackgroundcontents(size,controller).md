@@ -1,7 +1,8 @@
 # throttleBackgroundContents(size:controller:)
 
 **Framework**: Touch Controller  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 The throttle background contents for the specified size.
 
@@ -16,6 +17,10 @@ The throttle background contents for the specified size.
 class func throttleBackgroundContents(size: CGSize, controller: TCTouchController) -> TCControlContents
 ```
 
+```objc
++ (TCControlContents *) throttleBackgroundContentsOfSize:(CGSize) size controller:(TCTouchController *) controller;
+```
+
 #### Return Value
 
 The `TCControlContents` for the throttle background.
@@ -27,7 +32,8 @@ The `TCControlContents` for the throttle background.
 
 ## See Also
 
-- [class func throttleIndicatorContents(size: CGSize, controller: TCTouchController) -> TCControlContents](tccontrolcontents/throttleindicatorcontents(size:controller:).md)
+### Accessing throttle contents
+- [class func throttleIndicatorContents(size: CGSize, controller: TCTouchController) -> TCControlContents](./throttleindicatorcontents%28size,controller%29.md)
   The throttle indicator contents for the specified size.
 
 

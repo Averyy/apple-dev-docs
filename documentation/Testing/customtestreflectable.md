@@ -1,7 +1,8 @@
 # CustomTestReflectable
 
 **Framework**: Swift Testing  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol describing types with a custom reflection when presented as part of a test’s output.
 
@@ -17,19 +18,20 @@ protocol CustomTestReflectable
 
 ## Mentions
 
-- [Describing and reflecting values](describing-values.md)
+- [Describing and reflecting values](./describing-values.md)
 
 ## Topics
 
 ### Instance Properties
-- [var customTestMirror: Mirror](customtestreflectable/customtestmirror.md)
+- [var customTestMirror: Mirror](./customtestreflectable/customtestmirror.md)
   The custom mirror for this instance.
 
 ## See Also
 
-- [Describing and reflecting values](describing-values.md)
+### Value description and reflection
+- [Describing and reflecting values](./describing-values.md)
   Add custom descriptions and mirrors to values you use in your tests.
-- [protocol CustomTestStringConvertible](customteststringconvertible.md)
+- [protocol CustomTestStringConvertible](./customteststringconvertible.md)
   A protocol describing types with a custom string representation when presented as part of a test’s output.
 
 

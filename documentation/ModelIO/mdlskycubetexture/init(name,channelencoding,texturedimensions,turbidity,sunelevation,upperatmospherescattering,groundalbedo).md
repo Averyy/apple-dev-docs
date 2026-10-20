@@ -1,7 +1,8 @@
 # init(name:channelEncoding:textureDimensions:turbidity:sunElevation:upperAtmosphereScattering:groundAlbedo:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a sky cube texture object with the specified parameters.
 
@@ -19,25 +20,29 @@ Initializes a sky cube texture object with the specified parameters.
 init(name: String?, channelEncoding: MDLTextureChannelEncoding, textureDimensions: vector_int2, turbidity: Float, sunElevation: Float, upperAtmosphereScattering: Float, groundAlbedo: Float)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name channelEncoding:(MDLTextureChannelEncoding) channelEncoding textureDimensions:(vector_int2) textureDimensions turbidity:(float) turbidity sunElevation:(float) sunElevation upperAtmosphereScattering:(float) upperAtmosphereScattering groundAlbedo:(float) groundAlbedo;
+```
+
 #### Return Value
 
 A new sky cube texture object.
 
 #### Discussion
 
-The newly created texture is a cube texture; that is, its [`isCube`](mdltexture/iscube.md) property is [`true`](https://developer.apple.com/documentation/swift/true), and its [`dimensions`](mdltexture/dimensions.md) property reflects the vertical layout of cube faces.
+The newly created texture is a cube texture; that is, its [`isCube`](../mdltexture/iscube.md) property is [`true`](../../Swift/true.md), and its [`dimensions`](../mdltexture/dimensions.md) property reflects the vertical layout of cube faces.
 
-This initializer does not generate texel data; the [`MDLSkyCubeTexture`](mdlskycubetexture.md) class automatically generates data and caches it for reuse when you use one of the [`MDLTexture`](mdltexture.md) methods listed in Accessing Texture Data.
+This initializer does not generate texel data; the [`MDLSkyCubeTexture`](../mdlskycubetexture.md) class automatically generates data and caches it for reuse when you use one of the [`MDLTexture`](../mdltexture.md) methods listed in Accessing Texture Data.
 
 ## Parameters
 
-- `name`: The [`name`](mdlnamed/name.md) property for the new texture object.
-- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see [`MDLTextureChannelEncoding`](mdltexturechannelencoding.md).
+- `name`: The [`name`](../mdlnamed/name.md) property for the new texture object.
+- `channelEncoding`: The data format for each channel value per texel—for example, 8-bit integer or 32-bit floating point. For possible values, see [`MDLTextureChannelEncoding`](../mdltexturechannelencoding.md).
 - `textureDimensions`: The texel dimensions (width and height) of the texture image.
-- `turbidity`: The cloudiness or haziness of the simulated sky. See the [`turbidity`](mdlskycubetexture/turbidity.md) property.
-- `sunElevation`: The sun’s position in the simulated sky. See the [`sunElevation`](mdlskycubetexture/sunelevation.md) property.
-- `upperAtmosphereScattering`: A factor that influences the color of the simulated sky. See the [`upperAtmosphereScattering`](mdlskycubetexture/upperatmospherescattering.md) property.
-- `groundAlbedo`: A factor that influences the clarity of the simulated sky. See the [`groundAlbedo`](mdlskycubetexture/groundalbedo.md) property.
+- `turbidity`: The cloudiness or haziness of the simulated sky. See the [`turbidity`](./turbidity.md) property.
+- `sunElevation`: The sun’s position in the simulated sky. See the [`sunElevation`](./sunelevation.md) property.
+- `upperAtmosphereScattering`: A factor that influences the color of the simulated sky. See the [`upperAtmosphereScattering`](./upperatmospherescattering.md) property.
+- `groundAlbedo`: A factor that influences the clarity of the simulated sky. See the [`groundAlbedo`](./groundalbedo.md) property.
 
 
 ---

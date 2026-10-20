@@ -1,7 +1,8 @@
 # sizeConstraint
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Additional sizes this image feature supports.
 
@@ -20,9 +21,14 @@ Additional sizes this image feature supports.
 var sizeConstraint: MLImageSizeConstraint { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLImageSizeConstraint * sizeConstraint;
+```
+
 ## See Also
 
-- [class MLImageSizeConstraint](mlimagesizeconstraint.md)
+### Inspecting acceptable sizes
+- [class MLImageSizeConstraint](../mlimagesizeconstraint.md)
   A list or range of sizes that augment an image constraint’s default size.
 
 

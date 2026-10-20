@@ -1,7 +1,8 @@
 # NSUpdateSecurityPolicy
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 A dictionary that identifies which apps or installer packages the operating system allows to write to the app’s bundle.
 
@@ -9,9 +10,10 @@ A dictionary that identifies which apps or installer packages the operating syst
 - Mac Catalyst 16.0+
 - macOS 13.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `NSUpdateSecurityPolicy`
+- **Type**: dictionary
 
 #### Discussion
 
@@ -19,14 +21,14 @@ The `NSUpdateSecurityPolicy` property list key describes a security policy dicti
 
 For signed apps, macOS allows apps from the same developer — those sharing the same Team ID — to modify the app’s bundle. Use this security policy to change the default behavior and customize which specific apps or installers can write to your app’s bundle.
 
-If this protection mechanism isn’t relevant to your app, you can opt out of this capability and disable the hardened runtime by adding the `com.apple.security.cs.disable-executable-page-protection` entitlement to your app’s `info.plist` file. For information about this entitlement — and important information about the security ramifications of disabling this protection — see [`Disable Executable Memory Protection Entitlement`](entitlements/com.apple.security.cs.disable-executable-page-protection.md).
+If this protection mechanism isn’t relevant to your app, you can opt out of this capability and disable the hardened runtime by adding the `com.apple.security.cs.disable-executable-page-protection` entitlement to your app’s `info.plist` file. For information about this entitlement — and important information about the security ramifications of disabling this protection — see [Disable Executable Memory Protection Entitlement](../entitlements/com.apple.security.cs.disable-executable-page-protection.md).
 
 The `NSUpdateSecurityPolicy` key is a dictionary you add to your app’s `info.plist` file in the source editor pane of your app’s Xcode target. Add the key following the instructions below, and add one or both of the dictionary’s subkeys, depending on the types of apps or installers you want to allow to perform updates to your app’s resources. The subkeys are:
 
 - `AllowPackages`: An array of Team IDs. The operating system allows any installer package signed by any Team ID in this list to write content into this app’s bundle.
 - `AllowProcesses`: A dictionary that maps Team IDs to an array of signing (bundle) IDs. The operating system allows an app (process) with the matching bundle ID that’s signed by the specified Team ID to write content into this app’s bundle.
 
-##### Add the Policy Dictionary to Your Apps Information Property List
+##### Add the policy dictionary to your app’s information property list
 
 To add the `NSUpdateSecurityPolicy` key to your app’s `info.plist` file, follow these steps:
 
@@ -38,7 +40,7 @@ To add the `NSUpdateSecurityPolicy` key to your app’s `info.plist` file, follo
 
 The newly created, empty `NSUpdateSecurityPolicy` dictionary in your app’s property list resembles the image below:
 
-![A screenshot that shows the Xcode property list editor with the addition of a new, empty dictionary supporting the NSUpdateSecurityPolicy key.](/images/com.apple.bundleresources/media-4098859@2x.png)
+![A screenshot that shows the Xcode property list editor with the addition of a new, empty dictionary supporting the NSUpdateSecurityPolicy key.](https://developer.apple.com/tutorials/images/com.apple.bundleresources/media-4098859@2x.png)
 
 Next, add one or both subcomponents to the security policy dictionary depending on your app’s update policy requirements. To allow any installer package signed by a specific Team ID, add an `AllowPackages` array to the `NSUpdateSecurityPolicy` dictionary. Using this key, the operating system allows any installer package signed by the specified Team IDs in this array to write content into the app’s bundle.
 
@@ -65,7 +67,7 @@ To allow specific apps from specific teams to write to this app’s bundle, add 
 
 The final new `NSUpdateSecurityPolicy` dictionary resembles the configuration in the image below:
 
-![A screenshot that shows the Xcode property list editor with the addition of the NSUpdateSecurityPolicy key and its allowsPackages and allowedProcesses components with sample values.](/images/com.apple.bundleresources/media-4098858@2x.png)
+![A screenshot that shows the Xcode property list editor with the addition of the NSUpdateSecurityPolicy key and its allowsPackages and allowedProcesses components with sample values.](https://developer.apple.com/tutorials/images/com.apple.bundleresources/media-4098858@2x.png)
 
 The following sample code describes a complete update policy, in JSON format, that allows any installer package signed by Team ID `Z9P22VQP42` to write to the app bundle. The policy also allows a single app associated with the bundle ID `com.example.myapp.updater` (also signed with the Team ID `Z9P22VQP42`) that can modify the app bundle.
 
@@ -87,28 +89,29 @@ The following sample code describes a complete update policy, in JSON format, th
 ## Topics
 
 ### Security policies
-- [AllowPackages](information-property-list/nsupdatesecuritypolicy/allowpackages.md)
+- [AllowPackages](./nsupdatesecuritypolicy/allowpackages.md)
   An array of Team IDs that the system uses to determine whether an installer package, signed by one of the specified Team IDs, can update an app’s bundle.
-- [AllowProcesses](information-property-list/nsupdatesecuritypolicy/allowprocesses.md)
+- [AllowProcesses](./nsupdatesecuritypolicy/allowprocesses.md)
   A dictionary that maps Team IDs to an array of signing (bundle) IDs that the system uses to determine whether a process can update an app’s bundle.
 
 ## See Also
 
-- [NSAppBundlesUsageDescription](information-property-list/nsappbundlesusagedescription.md)
+### Security
+- [NSAppBundlesUsageDescription](./nsappbundlesusagedescription.md)
   A message that tells people why the app needs to access the contents of other apps’ bundles.
-- [NSAppDataUsageDescription](information-property-list/nsappdatausagedescription.md)
+- [NSAppDataUsageDescription](./nsappdatausagedescription.md)
   A message that tells people why the app needs to access files in other apps’ sandbox containers.
-- [NSUserTrackingUsageDescription](information-property-list/nsusertrackingusagedescription.md)
+- [NSUserTrackingUsageDescription](./nsusertrackingusagedescription.md)
   A message that explains the purpose for accessing data that an app can use to track a person or device.
-- [NSUserTrackingMarkdownUsageDescription](information-property-list/nsusertrackingmarkdownusagedescription.md)
+- [NSUserTrackingMarkdownUsageDescription](./nsusertrackingmarkdownusagedescription.md)
   A message that explains the purpose for accessing data that an application can use to track a person or device.
-- [NSAppleEventsUsageDescription](information-property-list/nsappleeventsusagedescription.md)
+- [NSAppleEventsUsageDescription](./nsappleeventsusagedescription.md)
   A message that tells people why the app is requesting the ability to send Apple events.
-- [NSSystemAdministrationUsageDescription](information-property-list/nssystemadministrationusagedescription.md)
+- [NSSystemAdministrationUsageDescription](./nssystemadministrationusagedescription.md)
   A message in macOS that tells people why the app is requesting to manipulate the system configuration.
-- [ITSAppUsesNonExemptEncryption](information-property-list/itsappusesnonexemptencryption.md)
+- [ITSAppUsesNonExemptEncryption](./itsappusesnonexemptencryption.md)
   A Boolean value indicating whether the app uses encryption.
-- [ITSEncryptionExportComplianceCode](information-property-list/itsencryptionexportcompliancecode.md)
+- [ITSEncryptionExportComplianceCode](./itsencryptionexportcompliancecode.md)
   The export compliance code provided by App Store Connect for apps that require it.
 
 

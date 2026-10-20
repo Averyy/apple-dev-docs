@@ -1,16 +1,17 @@
 # UICollectionView.ScrollDirection.vertical
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The layout scrolls content vertically.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,9 +19,14 @@ The layout scrolls content vertically.
 case vertical
 ```
 
+```c
+UICollectionViewScrollDirectionVertical
+```
+
 ## See Also
 
-- [UICollectionView.ScrollDirection.horizontal](uicollectionview/scrolldirection/horizontal.md)
+### Constants
+- [UICollectionView.ScrollDirection.horizontal](./horizontal.md)
   The layout scrolls content horizontally.
 
 

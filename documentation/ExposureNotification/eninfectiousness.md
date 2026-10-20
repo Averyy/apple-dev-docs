@@ -1,19 +1,26 @@
 # ENInfectiousness
 
 **Framework**: Exposure Notification  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The degree to which a person’s symptoms may indicate transmission risk.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 enum ENInfectiousness
+```
+
+```c
+enum ENInfectiousness : uint32_t;
 ```
 
 #### Overview
@@ -23,42 +30,43 @@ enum ENInfectiousness
 ## Topics
 
 ### Enumeration Cases
-- [ENInfectiousness.high](eninfectiousness/high.md)
+- [ENInfectiousness.high](./eninfectiousness/high.md)
   The user is highly infectious.
-- [ENInfectiousness.none](eninfectiousness/none.md)
+- [ENInfectiousness.none](./eninfectiousness/none.md)
   The user is not infectious.
-- [ENInfectiousness.standard](eninfectiousness/standard.md)
+- [ENInfectiousness.standard](./eninfectiousness/standard.md)
   The user is mildly infectious.
 ### Initializers
-- [init?(rawValue: UInt32)](eninfectiousness/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./eninfectiousness/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Attenuation](attenuation.md)
+### Enumerations
+- [Attenuation](./attenuation.md)
   The minimum and maximum signal attenuations.
-- [Risk Level](risk-level.md)
+- [Risk Level](./risk-level.md)
   The minimum and maximum risk levels.
-- [Risk Level Value](risk-level-value.md)
+- [Risk Level Value](./risk-level-value.md)
   The minimum and maximum risk level values.
-- [Risk Score](risk-score.md)
+- [Risk Score](./risk-score.md)
   The minimum and maximum risk score.
-- [Risk Weight](risk-weight.md)
+- [Risk Weight](./risk-weight.md)
   The minimum, default, and maximum risk weights.
-- [struct ENActivityFlags](enactivityflags.md)
+- [struct ENActivityFlags](./enactivityflags.md)
   Activities that occur while the app isn’t running.
-- [enum ENCalibrationConfidence](encalibrationconfidence.md)
+- [enum ENCalibrationConfidence](./encalibrationconfidence.md)
   The transmitting device’s calibration confidence.
-- [enum ENDiagnosisReportType](endiagnosisreporttype.md)
+- [enum ENDiagnosisReportType](./endiagnosisreporttype.md)
   The type of a report that describes the origin of a diagnosis.
 
 

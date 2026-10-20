@@ -1,7 +1,8 @@
 # kAXUIElementsKey
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification info key used to specify an element.
 
@@ -12,6 +13,10 @@ Notification info key used to specify an element.
 
 ```swift
 var kAXUIElementsKey: String { get }
+```
+
+```c
+#define kAXUIElementsKey
 ```
 
 

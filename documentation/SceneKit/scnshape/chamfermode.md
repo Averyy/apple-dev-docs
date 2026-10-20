@@ -1,18 +1,19 @@
 # chamferMode
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A constant specifying which ends of the extruded shape’s profile are chamfered.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,17 +21,22 @@ A constant specifying which ends of the extruded shape’s profile are chamfered
 var chamferMode: SCNChamferMode { get set }
 ```
 
+```objc
+@property (nonatomic) SCNChamferMode chamferMode;
+```
+
 #### Discussion
 
-See [`SCNChamferMode`](scnchamfermode.md) for allowed values. The default chamfer mode is [`SCNChamferMode.both`](scnchamfermode/both.md).
+See [`SCNChamferMode`](../scnchamfermode.md) for allowed values. The default chamfer mode is [`SCNChamferMode.both`](../scnchamfermode/both.md).
 
 ## See Also
 
-- [enum SCNChamferMode](scnchamfermode.md)
-  Options for which edges of an extruded shape are chamfered, used by the [`chamferMode`](scnshape/chamfermode.md) property.
-- [var chamferProfile: UIBezierPath?](scnshape/chamferprofile.md)
+### Chamfering a Shape
+- [enum SCNChamferMode](../scnchamfermode.md)
+  Options for which edges of an extruded shape are chamfered, used by the [`chamferMode`](./chamfermode.md) property.
+- [var chamferProfile: UIBezierPath?](./chamferprofile.md)
   A path that determines the cross-sectional contour of each chamfered edge.
-- [var chamferRadius: CGFloat](scnshape/chamferradius.md)
+- [var chamferRadius: CGFloat](./chamferradius.md)
   The width or depth of each chamfered edge. Animatable.
 
 

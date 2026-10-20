@@ -1,7 +1,8 @@
 # MIDIOutputPortCreate(_:_:_:)
 
 **Framework**: Core MIDI  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an output port through which a client sends outgoing MIDI messages to any MIDI destination.
 
@@ -16,6 +17,10 @@ Creates an output port through which a client sends outgoing MIDI messages to an
 
 ```swift
 func MIDIOutputPortCreate(_ client: MIDIClientRef, _ portName: CFString, _ outPort: UnsafeMutablePointer<MIDIPortRef>) -> OSStatus
+```
+
+```c
+extern OSStatus MIDIOutputPortCreate(MIDIClientRef client, CFStringRef portName, MIDIPortRef *outPort);
 ```
 
 #### Return Value
@@ -36,17 +41,18 @@ Multiple output ports are only necessary when an application is capable of direc
 
 ## See Also
 
-- [func MIDIInputPortCreateWithProtocol(MIDIClientRef, CFString, MIDIProtocolID, UnsafeMutablePointer<MIDIPortRef>, MIDIReceiveBlock) -> OSStatus](midiinputportcreatewithprotocol(_:_:_:_:_:).md)
+### Port management
+- [func MIDIInputPortCreateWithProtocol(MIDIClientRef, CFString, MIDIProtocolID, UnsafeMutablePointer<MIDIPortRef>, MIDIReceiveBlock) -> OSStatus](./midiinputportcreatewithprotocol%28_,_,_,_,_%29.md)
   Creates an input port through which the client may receive incoming MIDI messages from any MIDI source.
-- [func MIDIPortDispose(MIDIPortRef) -> OSStatus](midiportdispose(_:).md)
+- [func MIDIPortDispose(MIDIPortRef) -> OSStatus](./midiportdispose%28_%29.md)
   Disposes of a MIDI port.
-- [func MIDIPortConnectSource(MIDIPortRef, MIDIEndpointRef, UnsafeMutableRawPointer?) -> OSStatus](midiportconnectsource(_:_:_:).md)
+- [func MIDIPortConnectSource(MIDIPortRef, MIDIEndpointRef, UnsafeMutableRawPointer?) -> OSStatus](./midiportconnectsource%28_,_,_%29.md)
   Makes a connection from a source to a client input port.
-- [func MIDIPortDisconnectSource(MIDIPortRef, MIDIEndpointRef) -> OSStatus](midiportdisconnectsource(_:_:).md)
+- [func MIDIPortDisconnectSource(MIDIPortRef, MIDIEndpointRef) -> OSStatus](./midiportdisconnectsource%28_,_%29.md)
   Closes a previously established source-to-input port connection.
-- [typealias MIDIPortRef](midiportref.md)
+- [typealias MIDIPortRef](./midiportref.md)
   A MIDI connection that a client maintains.
-- [typealias MIDIReceiveBlock](midireceiveblock.md)
+- [typealias MIDIReceiveBlock](./midireceiveblock.md)
   A block receiving MIDI input that includes the incoming messages and a refCon to identify the source.
 
 

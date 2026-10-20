@@ -1,6 +1,8 @@
 # Building a signal generator
 
-**Framework**: AVFAudio
+**Framework**: AVFAudio  
+**Role**: Sample Code  
+**Download**: [BuildingASignalGenerator.zip](https://docs-assets.developer.apple.com/published/33ed57cac273/BuildingASignalGenerator.zip)
 
 Generate audio signals using an audio source node and a custom render callback.
 
@@ -15,7 +17,7 @@ Generate audio signals using an audio source node and a custom render callback.
 
 This sample code project shows you how to use an audio source node and a custom render callback to generate classic waveforms.
 
-> **Note**: This sample code project is associated with WWDC19 session [`510: What’s New in AVAudioEngine`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc19/510/).
+> **Note**: This sample code project is associated with WWDC19 session [510: What’s New in AVAudioEngine](https://developer.apple.com/videos/play/wwdc19/510/).
 
 A class called `SignalGeneratorKernel`, written in C++ to ensure real-time safety, provides the digital signal processing (DSP) logic. The project also includes an Objective-C wrapper class called `SignalGenerator` to act as an intermediary.
 
@@ -23,7 +25,7 @@ A class called `SignalGeneratorKernel`, written in C++ to ensure real-time safet
 
 You can change the waveform, frequency, and amplitude of the signal generator in real time. Because changing the amplitude and frequency of the signal generator can produce audible artifacts, the sample project uses the  included `ParameterRamp` class to ramp these parameters.
 
-#### Synthesize Classic Waveforms
+#### Synthesize classic waveforms
 
 The classic waveforms the signal generator kernel produces are sine, sawtooth down, square, triangle, and white noise. Digital synthesis of classic waveforms that have discontinuities can produce aliasing. This is particularly the case for sawtooth and square waveforms, which have jump discontinuities.
 
@@ -79,9 +81,9 @@ inline float additiveTriangle(float phase, int harmonics) {
 }
 ```
 
-#### Define a Custom Render Callback
+#### Define a custom render callback
 
-The `AudioManager` class bridges an instance of `SignalGenerator` to an [`AVAudioEngine`](https://developer.apple.comhttps://developer.apple.com/documentation/avfaudio/avaudioengine). When initialized, `AudioManager` constructs an [`AVAudioSourceNode`](https://developer.apple.comhttps://developer.apple.com/documentation/avfaudio/avaudiosourcenode) object using the `renderCallback` property of the signal generator class. After creating an audio source node, `AudioManager` attaches the node to the [`AVAudioEngine`](https://developer.apple.comhttps://developer.apple.com/documentation/avfaudio/avaudioengine), and connects it to the main mixer node.
+The `AudioManager` class bridges an instance of `SignalGenerator` to an [AVAudioEngine](./avaudioengine.md). When initialized, `AudioManager` constructs an [AVAudioSourceNode](./avaudiosourcenode.md) object using the `renderCallback` property of the signal generator class. After creating an audio source node, `AudioManager` attaches the node to the [AVAudioEngine](./avaudioengine.md), and connects it to the main mixer node.
 
 ```swift
 init() {
@@ -95,7 +97,7 @@ init() {
 }
 ```
 
-`SignalGenerator` provides a render block in much the same way an instance of [`AUAudioUnit`](https://developer.apple.comhttps://developer.apple.com/documentation/audiotoolbox/auaudiounit) provides an [`internalRenderBlock`](https://developer.apple.comhttps://developer.apple.com/documentation/audiotoolbox/auaudiounit/1439864-internalrenderblock). The basic difference is that `SignalGenerator` provides a render block of type [`AVAudioSourceNodeRenderBlock`](https://developer.apple.comhttps://developer.apple.com/documentation/avfaudio/avaudiosourcenoderenderblock), and [`AUAudioUnit`](https://developer.apple.comhttps://developer.apple.com/documentation/audiotoolbox/auaudiounit) provides a render block of type [`AUInternalRenderBlock`](https://developer.apple.comhttps://developer.apple.com/documentation/audiotoolbox/auinternalrenderblock).
+`SignalGenerator` provides a render block in much the same way an instance of [AUAudioUnit](../AudioToolbox/auaudiounit.md) provides an [internalRenderBlock](../AudioToolbox/auaudiounit/api-1439864-internalrenderblock.md). The basic difference is that `SignalGenerator` provides a render block of type [AVAudioSourceNodeRenderBlock](./avaudiosourcenoderenderblock.md), and [AUAudioUnit](../AudioToolbox/auaudiounit.md) provides a render block of type [AUInternalRenderBlock](../AudioToolbox/auinternalrenderblock.md).
 
 ```obj-c
 @interface SignalGenerator : NSObject
@@ -108,11 +110,11 @@ init() {
 @end
 ```
 
-#### Connect the User Interface to the Signal Generator
+#### Connect the user interface to the signal generator
 
-The user interface is a [`View`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/view) that observes a property of type `AudioManager`. The audio manager class, in turn, implements the [`Observable`](https://developer.apple.comhttps://developer.apple.com/documentation/observation/observable) protocol, and is responsible for maintaining the state of the user interface.
+The user interface is a [View](../SwiftUI/view.md) that observes a property of type `AudioManager`. The audio manager class, in turn, implements the [Observable](../Observation/observable.md) protocol, and is responsible for maintaining the state of the user interface.
 
-The audio manager exposes properties that control the waveform, frequency, and amplitude of the signal generator, and provides methods to start and stop the [`AVAudioEngine`](https://developer.apple.comhttps://developer.apple.com/documentation/avfaudio/avaudioengine).
+The audio manager exposes properties that control the waveform, frequency, and amplitude of the signal generator, and provides methods to start and stop the [AVAudioEngine](./avaudioengine.md).
 
 ```swift
 var waveform: Waveform = .sine {
@@ -136,11 +138,12 @@ var amplitude: Float = -12.0 {
 
 ## See Also
 
-- [Performing offline audio processing](performing-offline-audio-processing.md)
+### Custom and offline rendering
+- [Performing offline audio processing](./performing-offline-audio-processing.md)
   Add offline audio processing features to your app by enabling offline manual rendering mode.
-- [class AVAudioSourceNode](avaudiosourcenode.md)
+- [class AVAudioSourceNode](./avaudiosourcenode.md)
   An object that supplies audio data.
-- [class AVAudioSinkNode](avaudiosinknode.md)
+- [class AVAudioSinkNode](./avaudiosinknode.md)
   An object that receives audio data.
 
 

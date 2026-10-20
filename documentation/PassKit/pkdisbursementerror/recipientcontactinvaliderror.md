@@ -1,7 +1,8 @@
 # recipientContactInvalidError
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates the recipient’s contact information is invalid.
 
@@ -20,10 +21,11 @@ static var recipientContactInvalidError: PKDisbursementError.Code { get }
 
 ## See Also
 
-- [static var errorDomain: String](pkdisbursementerror/errordomain.md)
-- [static var unknownError: PKDisbursementError.Code](pkdisbursementerror/unknownerror.md)
+### Type properties
+- [static var errorDomain: String](./errordomain.md)
+- [static var unknownError: PKDisbursementError.Code](./unknownerror.md)
   A value that indicates an unknown error occurred.
-- [static var unsupportedCardError: PKDisbursementError.Code](pkdisbursementerror/unsupportedcarderror.md)
+- [static var unsupportedCardError: PKDisbursementError.Code](./unsupportedcarderror.md)
   A value that indicates that the framework doesn’t support the card the individual presented for this disbursement.
 
 

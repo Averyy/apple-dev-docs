@@ -1,7 +1,8 @@
 # assetID
 
 **Framework**: Media Intelligence  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for the image asset that contains this face.
 
@@ -21,15 +22,16 @@ let assetID: MediaIntelligenceImageAsset.ID
 
 ## Mentions
 
-- [Detecting and grouping faces in images](detecting-and-grouping-faces-in-images.md)
+- [Detecting and grouping faces in images](../../detecting-and-grouping-faces-in-images.md)
 
 ## See Also
 
-- [let id: FaceGroupAnalyzer.Face.ID](facegroupanalyzer/face/id-swift.property.md)
+### Identifying a face
+- [let id: FaceGroupAnalyzer.Face.ID](./id-swift.property.md)
   A unique identifier for the face.
-- [let entityID: FaceGroupAnalyzer.Entity.ID?](facegroupanalyzer/face/entityid.md)
+- [let entityID: FaceGroupAnalyzer.Entity.ID?](./entityid.md)
   An identifier for the entity this face belongs to.
-- [FaceGroupAnalyzer.Face.ID](facegroupanalyzer/face/id-swift.struct.md)
+- [FaceGroupAnalyzer.Face.ID](./id-swift.struct.md)
   A unique identifier for a detected face.
 
 

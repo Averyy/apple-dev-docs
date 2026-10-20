@@ -1,7 +1,8 @@
 # weakCompareExchange(expected:desired:successOrdering:failureOrdering:)
 
 **Framework**: Synchronization  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Perform an atomic weak compare and exchange operation on the current value, applying the specified success/failure memory orderings. This compare-exchange variant is allowed to spuriously fail; it is designed to be called in a loop until it indicates a successful exchange has happened.
 
@@ -19,6 +20,8 @@ Perform an atomic weak compare and exchange operation on the current value, appl
 ```swift
 func weakCompareExchange(expected: consuming Value, desired: consuming Value, successOrdering: AtomicUpdateOrdering, failureOrdering: AtomicLoadOrdering) -> (exchanged: Bool, original: Value)
 ```
+
+Available when `Value` conforms to `AtomicRepresentable` and `Value.AtomicRepresentation` is `_Atomic128BitStorage`.
 
 #### Return Value
 

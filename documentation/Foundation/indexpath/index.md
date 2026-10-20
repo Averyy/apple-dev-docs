@@ -1,7 +1,8 @@
 # IndexPath.Index
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A type that points to a particular node in an index path, similar to an array index.
 
@@ -22,15 +23,16 @@ typealias Index = Array<Int>.Index
 
 ## See Also
 
-- [var startIndex: IndexPath.Index](indexpath/startindex.md)
+### Manipulating Indexes
+- [var startIndex: IndexPath.Index](./startindex.md)
   The index of the first node in the index path.
-- [var endIndex: IndexPath.Index](indexpath/endindex.md)
+- [var endIndex: IndexPath.Index](./endindex.md)
   One past the index of the last node in the index path.
-- [func index(after: IndexPath.Index) -> IndexPath.Index](indexpath/index(after:).md)
+- [func index(after: IndexPath.Index) -> IndexPath.Index](./index%28after%29.md)
   Returns the index that follows the given index.
-- [func index(before: IndexPath.Index) -> IndexPath.Index](indexpath/index(before:).md)
+- [func index(before: IndexPath.Index) -> IndexPath.Index](./index%28before%29.md)
   Returns the index that precedes the given index.
-- [IndexPath.Indices](indexpath/indices.md)
+- [IndexPath.Indices](./indices.md)
   A type that represents a group of nodes in an index path.
 
 

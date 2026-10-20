@@ -1,7 +1,8 @@
 # kMDAttributeType
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A CFNumberRef or CFTypeId describing thetype of data returned as the value of the metadata attribute key.
 
@@ -12,6 +13,10 @@ A CFNumberRef or CFTypeId describing thetype of data returned as the value of th
 
 ```swift
 let kMDAttributeType: CFString!
+```
+
+```c
+const CFStringRef kMDAttributeType;
 ```
 
 

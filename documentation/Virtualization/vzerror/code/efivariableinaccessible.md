@@ -1,7 +1,8 @@
 # VZError.Code.efiVariableInaccessible
 
 **Framework**: Virtualization  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An error that indicates the framework can’t access the EFI variable store.
 
@@ -12,6 +13,10 @@ An error that indicates the framework can’t access the EFI variable store.
 
 ```swift
 case efiVariableInaccessible
+```
+
+```c
+VZErrorEFIVariableInaccessible
 ```
 
 

@@ -1,7 +1,8 @@
 # CMAttachmentBearerProtocol
 
 **Framework**: Core Media  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol for objects that can carry attachments.
 
@@ -23,24 +24,25 @@ protocol CMAttachmentBearerProtocol
 ## Topics
 
 ### Processing Attachments
-- [var attachments: CMAttachmentBearerAttachments](cmattachmentbearerprotocol/attachments.md)
+- [var attachments: CMAttachmentBearerAttachments](./cmattachmentbearerprotocol/attachments.md)
   All attachments for this object.
-- [func propagateAttachments<T>(to: T)](cmattachmentbearerprotocol/propagateattachments(to:).md)
+- [func propagateAttachments<T>(to: T)](./cmattachmentbearerprotocol/propagateattachments%28to%29.md)
   Copies all propagable attachments from one attachment bearer object to another.
-- [struct CMAttachmentBearerAttachments](cmattachmentbearerattachments.md)
+- [struct CMAttachmentBearerAttachments](./cmattachmentbearerattachments.md)
   A structure that contains attachments.
 
 ## Relationships
 
 ### Conforming Types
-- [CMBlockBuffer](cmblockbuffer.md)
-- [CMSampleBuffer](cmsamplebuffer.md)
+- [CMBlockBuffer](./cmblockbuffer.md)
+- [CMSampleBuffer](./cmsamplebuffer.md)
 
 ## See Also
 
-- [typealias CMAttachmentBearer](cmattachmentbearer.md)
+### Data Types
+- [typealias CMAttachmentBearer](./cmattachmentbearer.md)
   An object that can carry attachments.
-- [typealias CMAttachmentMode](cmattachmentmode.md)
+- [typealias CMAttachmentMode](./cmattachmentmode.md)
   The mode to use when propagating attachments.
 
 

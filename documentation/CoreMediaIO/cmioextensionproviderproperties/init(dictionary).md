@@ -1,7 +1,8 @@
 # init(dictionary:)
 
 **Framework**: Core Media I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a provider properties object with the specified properties.
 
@@ -13,6 +14,10 @@ Creates a provider properties object with the specified properties.
 
 ```swift
 init(dictionary propertiesDictionary: [CMIOExtensionProperty : CMIOExtensionPropertyState<AnyObject>])
+```
+
+```objc
+- (instancetype) initWithDictionary:(NSDictionary<NSString *,CMIOExtensionPropertyState *> *) propertiesDictionary;
 ```
 
 ## Parameters

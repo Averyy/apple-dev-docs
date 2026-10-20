@@ -1,7 +1,8 @@
 # ColorRenderingMode
 
 **Framework**: SwiftUI  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The set of possible working color spaces for color-compositing operations.
 
@@ -27,36 +28,37 @@ Each color space guarantees the preservation of a particular range of color valu
 ## Topics
 
 ### Getting rendering modes
-- [ColorRenderingMode.extendedLinear](colorrenderingmode/extendedlinear.md)
+- [ColorRenderingMode.extendedLinear](./colorrenderingmode/extendedlinear.md)
   The extended linear sRGB working color space.
-- [ColorRenderingMode.linear](colorrenderingmode/linear.md)
+- [ColorRenderingMode.linear](./colorrenderingmode/linear.md)
   The linear sRGB working color space.
-- [ColorRenderingMode.nonLinear](colorrenderingmode/nonlinear.md)
+- [ColorRenderingMode.nonLinear](./colorrenderingmode/nonlinear.md)
   The non-linear sRGB working color space.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func blendMode(BlendMode) -> some View](view/blendmode(_:).md)
+### Compositing views
+- [func blendMode(BlendMode) -> some View](./view/blendmode%28_%29.md)
   Sets the blend mode for compositing this view with overlapping views.
-- [func compositingGroup() -> some View](view/compositinggroup.md)
+- [func compositingGroup() -> some View](./view/compositinggroup%28%29.md)
   Wraps this view in a compositing group.
-- [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](view/drawinggroup(opaque:colormode:).md)
+- [func drawingGroup(opaque: Bool, colorMode: ColorRenderingMode) -> some View](./view/drawinggroup%28opaque,colormode%29.md)
   Composites this view’s contents into an offscreen image before final display.
-- [enum BlendMode](blendmode.md)
+- [enum BlendMode](./blendmode.md)
   Modes for compositing a view with overlapping content.
-- [protocol CompositorContent](compositorcontent.md)
+- [protocol CompositorContent](./compositorcontent.md)
   A type that describes content a scene renders directly with Metal, rather than composing from SwiftUI views.
-- [struct CompositorContentBuilder](compositorcontentbuilder.md)
-  A result builder for composing a collection of [`CompositorContent`](compositorcontent.md) elements.
-- [struct AnyCompositorContent](anycompositorcontent.md)
+- [struct CompositorContentBuilder](./compositorcontentbuilder.md)
+  A result builder for composing a collection of [`CompositorContent`](./compositorcontent.md) elements.
+- [struct AnyCompositorContent](./anycompositorcontent.md)
   Type erased compositor content.
 
 

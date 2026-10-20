@@ -1,7 +1,8 @@
 # Manipulable.Inertia
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Describes inertia of a view that defines how much a view resists being manipulated.
 
@@ -17,22 +18,22 @@ struct Inertia
 ## Topics
 
 ### Type Properties
-- [static let high: Manipulable.Inertia](manipulable/inertia/high.md)
+- [static let high: Manipulable.Inertia](./inertia/high.md)
   A view has high inertia and high resistance to being manipulated.
-- [static let low: Manipulable.Inertia](manipulable/inertia/low.md)
+- [static let low: Manipulable.Inertia](./inertia/low.md)
   A view has low inertia and low resistance to being manipulated.
-- [static let medium: Manipulable.Inertia](manipulable/inertia/medium.md)
+- [static let medium: Manipulable.Inertia](./inertia/medium.md)
   A view has medium inertia and medium resistance to being manipulated.
-- [static let none: Manipulable.Inertia](manipulable/inertia/none.md)
+- [static let none: Manipulable.Inertia](./inertia/none.md)
   A view has no inertia and no resistance to being manipulated.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

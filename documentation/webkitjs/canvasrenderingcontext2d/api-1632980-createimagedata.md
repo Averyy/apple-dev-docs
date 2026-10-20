@@ -1,7 +1,8 @@
 # createImageData
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Creates an opaque object whose `data` property contains a one-dimensional array of pixel values, initialized to transparent black.
 
@@ -11,13 +12,13 @@ Creates an opaque object whose `data` property contains a one-dimensional array 
 
 ## Declaration
 
-```swift
+```
 ImageData createImageData(
     ImageData? imagedata
 );
 ```
 
-#### Return_value
+#### Return Value
 
 An `imageData` object.
 
@@ -32,9 +33,10 @@ This method is typically used to create additional pixel arrays that can be blit
 
 ## See Also
 
-- [getImageData](canvasrenderingcontext2d/1632656-getimagedata.md)
+### Manipulating Pixels
+- [getImageData](./api-1632656-getimagedata.md)
   Gets an `imageData` object containing an RGBa pixel array corresponding to a rectangular area of the canvas.
-- [putImageData](canvasrenderingcontext2d/1633082-putimagedata.md)
+- [putImageData](./api-1633082-putimagedata.md)
   Blits the contents of an `imageData` object to the canvas. Alternatively, blits a specified region of the `imageData` object to the canvas.
 
 

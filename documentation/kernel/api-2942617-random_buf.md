@@ -1,14 +1,15 @@
 # random_buf
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.13.4+
 
 ## Declaration
 
-```swift
+```c
 int random_buf(void *buf, size_t buflen);
 ```
 

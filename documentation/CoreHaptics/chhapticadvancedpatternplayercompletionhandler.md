@@ -1,7 +1,8 @@
 # CHHapticAdvancedPatternPlayerCompletionHandler
 
 **Framework**: Core Haptics  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A typealias for the completion handler to run after a haptic finishes playback.
 
@@ -9,7 +10,7 @@ A typealias for the completion handler to run after a haptic finishes playback.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS ?+
+- macOS
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -19,15 +20,20 @@ A typealias for the completion handler to run after a haptic finishes playback.
 typealias CHHapticAdvancedPatternPlayerCompletionHandler = ((any Error)?) -> Void
 ```
 
+```c
+typedef void (^)(NSError *) CHHapticAdvancedPatternPlayerCompletionHandler;
+```
+
 ## See Also
 
-- [var loopEnabled: Bool](chhapticadvancedpatternplayer/loopenabled.md)
+### Setting Playback Properties
+- [var loopEnabled: Bool](./chhapticadvancedpatternplayer/loopenabled.md)
   A Boolean that determines whether the haptic repeats itself on completion.
-- [var loopEnd: TimeInterval](chhapticadvancedpatternplayer/loopend.md)
+- [var loopEnd: TimeInterval](./chhapticadvancedpatternplayer/loopend.md)
   The time at which to end looping haptic playback.
-- [var playbackRate: Float](chhapticadvancedpatternplayer/playbackrate.md)
+- [var playbackRate: Float](./chhapticadvancedpatternplayer/playbackrate.md)
   The playback rate of the haptic player.
-- [var completionHandler: CHHapticAdvancedPatternPlayerCompletionHandler](chhapticadvancedpatternplayer/completionhandler.md)
+- [var completionHandler: CHHapticAdvancedPatternPlayerCompletionHandler](./chhapticadvancedpatternplayer/completionhandler.md)
   A completion block that runs after the haptic finishes playing.
 
 

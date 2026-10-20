@@ -1,7 +1,8 @@
 # writeAttributeBitmap8(withValue:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func writeAttributeBitmap8(withValue value: NSNumber, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func writeAttributeBitmap8(withValue value: NSNumber) async throws
+```
+
+```objc
+- (void) writeAttributeBitmap8WithValue:(NSNumber *) value completion:(MTRStatusCompletion) completion;
 ```
 
 

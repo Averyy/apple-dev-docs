@@ -1,7 +1,8 @@
 # init(resource:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a `ComputeGraphComponent` and immediately attaches the given resource.
 
@@ -20,7 +21,7 @@ init(resource: ComputeGraphResource)
 
 ## Parameters
 
-- `resource`: The [`ComputeGraphResource`](computegraphresource.md) that defines the simulation.
+- `resource`: The [`ComputeGraphResource`](../computegraphresource.md) that defines the simulation.
 
 
 ---

@@ -1,7 +1,8 @@
 # IKCellsStyleTitled
 
 **Framework**: Quartz  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Cells display a title.
 
@@ -14,15 +15,20 @@ Cells display a title.
 var IKCellsStyleTitled: Int { get }
 ```
 
+```c
+IKCellsStyleTitled
+```
+
 ## See Also
 
-- [var IKCellsStyleNone: Int](ikcellsstylenone.md)
+### Constants
+- [var IKCellsStyleNone: Int](./ikcellsstylenone.md)
   No style.
-- [var IKCellsStyleShadowed: Int](ikcellsstyleshadowed.md)
+- [var IKCellsStyleShadowed: Int](./ikcellsstyleshadowed.md)
   Cells use shadows.
-- [var IKCellsStyleOutlined: Int](ikcellsstyleoutlined.md)
+- [var IKCellsStyleOutlined: Int](./ikcellsstyleoutlined.md)
   Cells are outlined.
-- [var IKCellsStyleSubtitled: Int](ikcellsstylesubtitled.md)
+- [var IKCellsStyleSubtitled: Int](./ikcellsstylesubtitled.md)
   Cells display a subtitle.
 
 

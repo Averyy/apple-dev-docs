@@ -1,17 +1,22 @@
 # setDelegate(_:)
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Allows an object to register itself as a client of the RFCOMM channel.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func setDelegate(_ delegate: Any!) -> IOReturn
+```
+
+```objc
+- (IOReturn) setDelegate:(id) delegate;
 ```
 
 #### Return Value

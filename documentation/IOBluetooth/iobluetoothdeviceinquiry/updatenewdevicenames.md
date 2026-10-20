@@ -1,17 +1,22 @@
 # updateNewDeviceNames
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets whether or not the inquiry object will retrieve the names of devices found during the search.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var updateNewDeviceNames: Bool { get set }
+```
+
+```objc
+@property (assign) BOOL updateNewDeviceNames;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # performAction(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs the specified text finding action.
 
@@ -14,11 +15,15 @@ Performs the specified text finding action.
 func performAction(_ op: NSTextFinder.Action)
 ```
 
+```objc
+- (void) performAction:(NSTextFinderAction) op;
+```
+
 #### Discussion
 
-Objects that respond to [`performTextFinderAction(_:)`](nsresponder/performtextfinderaction(_:).md) typically call [`validateAction(_:)`](nstextfinder/validateaction(_:).md) to ensure that the action is valid and then invoke [`performAction(_:)`](nstextfinder/performaction(_:).md) if validation is successful.
+Objects that respond to [`performTextFinderAction(_:)`](../nsresponder/performtextfinderaction%28_%29.md) typically call [`validateAction(_:)`](./validateaction%28_%29.md) to ensure that the action is valid and then invoke [`performAction(_:)`](./performaction%28_%29.md) if validation is successful.
 
-When invoking the [`validateAction(_:)`](nstextfinder/validateaction(_:).md) and [`performAction(_:)`](nstextfinder/performaction(_:).md) the item or sender’s tag should be passed as the parameter. By convention, the `sender` parameter for this method will have an [`NSTextFinder.Action`](nstextfinder/action.md) set as its tag. The responder that receives this method should pass the tag as the action for this method:
+When invoking the [`validateAction(_:)`](./validateaction%28_%29.md) and [`performAction(_:)`](./performaction%28_%29.md) the item or sender’s tag should be passed as the parameter. By convention, the `sender` parameter for this method will have an [`NSTextFinder.Action`](./action.md) set as its tag. The responder that receives this method should pass the tag as the action for this method:
 
 ```objc
 - (void)performTextFinderAction:(id)sender {
@@ -28,13 +33,14 @@ When invoking the [`validateAction(_:)`](nstextfinder/validateaction(_:).md) and
 
 ## Parameters
 
-- `op`: The text finding action. See [`NSTextFinder.Action`](nstextfinder/action.md) for the possible values.
+- `op`: The text finding action. See [`NSTextFinder.Action`](./action.md) for the possible values.
 
 ## See Also
 
-- [func validateAction(NSTextFinder.Action) -> Bool](nstextfinder/validateaction(_:).md)
+### Validating and Performing Text Finding
+- [func validateAction(NSTextFinder.Action) -> Bool](./validateaction%28_%29.md)
   Allows validation of the find action before performing.
-- [func cancelFindIndicator()](nstextfinder/cancelfindindicator.md)
+- [func cancelFindIndicator()](./cancelfindindicator%28%29.md)
   Cancels the find indicator immediately.
 
 

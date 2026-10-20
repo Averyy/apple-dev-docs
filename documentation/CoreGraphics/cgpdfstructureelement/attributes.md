@@ -1,7 +1,8 @@
 # CGPDFStructureElement.Attributes
 
 **Framework**: Core Graphics  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The accessibility and presentation attributes of a structure element.
 
@@ -25,28 +26,28 @@ The underlying tagged-PDF API accepts these attributes only at creation time, so
 ## Topics
 
 ### Initializers
-- [init(title: String?, language: Locale.Language?, alternativeText: String?, expansionText: String?, actualText: String?)](cgpdfstructureelement/attributes/init(title:language:alternativetext:expansiontext:actualtext:).md)
+- [init(title: String?, language: Locale.Language?, alternativeText: String?, expansionText: String?, actualText: String?)](./attributes/init%28title,language,alternativetext,expansiontext,actualtext%29.md)
 ### Instance Properties
-- [var actualText: String?](cgpdfstructureelement/attributes/actualtext.md)
+- [var actualText: String?](./attributes/actualtext.md)
   Text that is an exact replacement for the element and its children, used when extracting the document’s contents.
-- [var alternativeText: String?](cgpdfstructureelement/attributes/alternativetext.md)
+- [var alternativeText: String?](./attributes/alternativetext.md)
   An alternate description of the element and its children, typically used for graphical content such as an image.
-- [var expansionText: String?](cgpdfstructureelement/attributes/expansiontext.md)
+- [var expansionText: String?](./attributes/expansiontext.md)
   The expansion of an abbreviation or acronym.
-- [var language: Locale.Language?](cgpdfstructureelement/attributes/language.md)
+- [var language: Locale.Language?](./attributes/language.md)
   The natural language of the element’s content, used when it differs from the document’s language.
-- [var title: String?](cgpdfstructureelement/attributes/title.md)
+- [var title: String?](./attributes/title.md)
   A human-readable title for the element. Presentational only; it should not be relied upon for accessibility.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

@@ -2,6 +2,7 @@
 
 **Framework**: Matter  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -16,7 +17,15 @@
 ## Declaration
 
 ```swift
+func deviceController(_ controller: UUID, nodeID: NSNumber, getDeviceCachePrimedWithReply reply: @escaping @Sendable (Bool) -> Void)
+```
+
+```swift
 func deviceControllerGetDeviceCachePrimed(_ controller: UUID, nodeID: NSNumber) async -> Bool
+```
+
+```objc
+- (void) deviceController:(NSUUID *) controller nodeID:(NSNumber *) nodeID getDeviceCachePrimedWithReply:(void (^)(BOOL primed)) reply;
 ```
 
 

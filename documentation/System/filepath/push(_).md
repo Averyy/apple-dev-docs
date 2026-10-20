@@ -1,7 +1,8 @@
 # push(_:)
 
 **Framework**: System  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 If `other` does not have a root, append each component of `other`. If `other` has a root, replaces `self` with other.
 

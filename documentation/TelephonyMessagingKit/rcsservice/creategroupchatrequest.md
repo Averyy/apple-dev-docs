@@ -1,7 +1,8 @@
 # RCSService.CreateGroupChatRequest
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Structure representing a request for creating a group chat.
 
@@ -17,50 +18,51 @@ struct CreateGroupChatRequest
 ## Topics
 
 ### Creating a group chat request
-- [init(cellularServiceID: CellularServiceID, participants: [RCSHandle.URI], subject: String)](rcsservice/creategroupchatrequest/init(cellularserviceid:participants:subject:).md)
+- [init(cellularServiceID: CellularServiceID, participants: [RCSHandle.URI], subject: String)](./creategroupchatrequest/init%28cellularserviceid,participants,subject%29.md)
 ### Accessing request properties
-- [var cellularServiceID: CellularServiceID](rcsservice/creategroupchatrequest/cellularserviceid.md)
+- [var cellularServiceID: CellularServiceID](./creategroupchatrequest/cellularserviceid.md)
   Service identifier to use for this request.
-- [var participants: [RCSHandle.URI]](rcsservice/creategroupchatrequest/participants.md)
+- [var participants: [RCSHandle.URI]](./creategroupchatrequest/participants.md)
   List of participants in the group chat.
-- [var subject: String](rcsservice/creategroupchatrequest/subject.md)
+- [var subject: String](./creategroupchatrequest/subject.md)
   Subject to be used for group chat.
 ### Accessing the request result
-- [RCSService.CreateGroupChatRequest.Result](rcsservice/creategroupchatrequest/result.md)
+- [RCSService.CreateGroupChatRequest.Result](./creategroupchatrequest/result.md)
   Structure representing the result of a request to create a group chat.
 ### Supporting RCS encryption
-- [var isEndToEndEncrypted: Bool](rcsservice/creategroupchatrequest/isendtoendencrypted.md)
-  A Boolean value indicating whether this request should be end-to-end encrypted. If the service does not support end-to-end encryption, the operation will throw [`RCSService.Error.endToEndEncryptionNotSupported`](rcsservice/error/endtoendencryptionnotsupported.md).
+- [var isEndToEndEncrypted: Bool](./creategroupchatrequest/isendtoendencrypted.md)
+  A Boolean value indicating whether this request should be end-to-end encrypted. If the service does not support end-to-end encryption, the operation will throw [`RCSService.Error.endToEndEncryptionNotSupported`](./error/endtoendencryptionnotsupported.md).
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func createGroupChat(RCSService.CreateGroupChatRequest) async throws -> RCSService.CreateGroupChatRequest.Result](rcsservice/creategroupchat(_:).md)
+### Managing group chats
+- [func createGroupChat(RCSService.CreateGroupChatRequest) async throws -> RCSService.CreateGroupChatRequest.Result](./creategroupchat%28_%29.md)
   Creates a group with a list of participants and a specified subject.
-- [func leaveGroupChat(RCSService.LeaveGroupChatRequest) async throws](rcsservice/leavegroupchat(_:).md)
+- [func leaveGroupChat(RCSService.LeaveGroupChatRequest) async throws](./leavegroupchat%28_%29.md)
   Leave a group chat.
-- [RCSService.LeaveGroupChatRequest](rcsservice/leavegroupchatrequest.md)
+- [RCSService.LeaveGroupChatRequest](./leavegroupchatrequest.md)
   Structure representing a request to leave a group chat.
-- [func addGroupChatParticipants(RCSService.AddGroupChatParticipantsRequest) async throws -> RCSService.AddGroupChatParticipantsRequest.Result](rcsservice/addgroupchatparticipants(_:).md)
+- [func addGroupChatParticipants(RCSService.AddGroupChatParticipantsRequest) async throws -> RCSService.AddGroupChatParticipantsRequest.Result](./addgroupchatparticipants%28_%29.md)
   Adds participants to a group chat.
-- [RCSService.AddGroupChatParticipantsRequest](rcsservice/addgroupchatparticipantsrequest.md)
+- [RCSService.AddGroupChatParticipantsRequest](./addgroupchatparticipantsrequest.md)
   Structure representing a request for adding participants to a group chat.
-- [func removeGroupChatParticipants(RCSService.RemoveGroupChatParticipantsRequest) async throws -> RCSService.RemoveGroupChatParticipantsRequest.Result](rcsservice/removegroupchatparticipants(_:).md)
+- [func removeGroupChatParticipants(RCSService.RemoveGroupChatParticipantsRequest) async throws -> RCSService.RemoveGroupChatParticipantsRequest.Result](./removegroupchatparticipants%28_%29.md)
   Removes participants from a group chat.
-- [RCSService.RemoveGroupChatParticipantsRequest](rcsservice/removegroupchatparticipantsrequest.md)
+- [RCSService.RemoveGroupChatParticipantsRequest](./removegroupchatparticipantsrequest.md)
   Structure representing a request for removing participants from a group chat.
-- [func changeGroupChatSubject(RCSService.ChangeGroupChatSubjectRequest) async throws](rcsservice/changegroupchatsubject(_:).md)
+- [func changeGroupChatSubject(RCSService.ChangeGroupChatSubjectRequest) async throws](./changegroupchatsubject%28_%29.md)
   Changes subject of a group.
-- [RCSService.ChangeGroupChatSubjectRequest](rcsservice/changegroupchatsubjectrequest.md)
+- [RCSService.ChangeGroupChatSubjectRequest](./changegroupchatsubjectrequest.md)
   Structure representing a request for changing a group chat’s subject.
-- [var groupChatEvents: some AsyncSequence<RCSService.GroupChatEvent, Never>](rcsservice/groupchatevents.md)
+- [var groupChatEvents: some AsyncSequence<RCSService.GroupChatEvent, Never>](./groupchatevents.md)
   Returns an asynchronous sequence of incoming group chat notifications produced by this service.
-- [RCSService.GroupChatEvent](rcsservice/groupchatevent.md)
+- [RCSService.GroupChatEvent](./groupchatevent.md)
   Enumeration representing an RCS group chat event.
 
 

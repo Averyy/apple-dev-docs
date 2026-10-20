@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Obtains the function handle for a specific function this pipeline state links at the binary level.
@@ -18,6 +19,10 @@ Obtains the function handle for a specific function this pipeline state links at
 
 ```swift
 func functionHandle(function: any MTL4BinaryFunction, stage: MTLRenderStages) -> (any MTLFunctionHandle)?
+```
+
+```objc
+- (id<MTLFunctionHandle>) functionHandleWithBinaryFunction:(id<MTL4BinaryFunction>) function stage:(MTLRenderStages) stage;
 ```
 
 #### Return Value

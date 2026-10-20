@@ -1,7 +1,8 @@
 # SectionedFetchResults.Section
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of fetched results that share a specified identifier.
 
@@ -23,9 +24,9 @@ A collection of fetched results that share a specified identifier.
 
 #### Overview
 
-Examine a `Section` instance to find the entities that satisfy a [`SectionedFetchRequest`](sectionedfetchrequest.md) predicate, and that have a particular property with the value stored in the section’s [`id`](sectionedfetchresults/section/id.md) parameter. You specify which property by setting the fetch request’s `sectionIdentifier` parameter during initialization, or by modifying the corresponding [`SectionedFetchResults`](sectionedfetchresults.md) instance’s [`sectionIdentifier`](sectionedfetchresults/sectionidentifier.md) property.
+Examine a `Section` instance to find the entities that satisfy a [`SectionedFetchRequest`](../sectionedfetchrequest.md) predicate, and that have a particular property with the value stored in the section’s [`id`](./section/id.md) parameter. You specify which property by setting the fetch request’s `sectionIdentifier` parameter during initialization, or by modifying the corresponding [`SectionedFetchResults`](../sectionedfetchresults.md) instance’s [`sectionIdentifier`](./sectionidentifier.md) property.
 
-Obtain specific sections by treating the fetch results as a collection. For example, consider the following property declaration that fetches `Quake` managed objects that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines to store earthquake data:
+Obtain specific sections by treating the fetch results as a collection. For example, consider the following property declaration that fetches `Quake` managed objects that the [Loading and displaying a large data feed](../loading-and-displaying-a-large-data-feed.md) sample code project defines to store earthquake data:
 
 ```swift
 @SectionedFetchRequest<String, Quake>(
@@ -49,42 +50,43 @@ ForEach(quakes) { section in
 }
 ```
 
-The sections also act as collections, which means you can use elements like the [`count`](https://developer.apple.com/documentation/swift/collection/count) property in the example above.
+The sections also act as collections, which means you can use elements like the [`count`](../../Swift/collection/count.md) property in the example above.
 
 ## Topics
 
 ### Identifying the section
-- [let id: SectionIdentifier](sectionedfetchresults/section/id.md)
+- [let id: SectionIdentifier](./section/id.md)
   The value that all entities in the section share for a specified key path.
 ### Getting indices
-- [var startIndex: Int](sectionedfetchresults/section/startindex.md)
+- [var startIndex: Int](./section/startindex.md)
   The index of the first entity in the section.
-- [var endIndex: Int](sectionedfetchresults/section/endindex.md)
+- [var endIndex: Int](./section/endindex.md)
   The index that’s one greater than that of the last entity in the section.
 ### Getting results
-- [subscript(Int) -> Result](sectionedfetchresults/section/subscript(_:).md)
+- [subscript(Int) -> Result](./section/subscript%28_%29.md)
   Gets the entity at the specified index within the section.
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [Identifiable](../swift/identifiable.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [Identifiable](../../Swift/identifiable.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Sequence](../../Swift/sequence.md)
 
 ## See Also
 
-- [var nsPredicate: NSPredicate?](sectionedfetchresults/nspredicate.md)
+### Configuring the associated sectioned fetch request
+- [var nsPredicate: NSPredicate?](./nspredicate.md)
   The request’s predicate.
-- [var sortDescriptors: [SortDescriptor<Result>]](sectionedfetchresults/sortdescriptors.md)
+- [var sortDescriptors: [SortDescriptor<Result>]](./sortdescriptors.md)
   The request’s sort descriptors, accessed as value types.
-- [var nsSortDescriptors: [NSSortDescriptor]](sectionedfetchresults/nssortdescriptors.md)
+- [var nsSortDescriptors: [NSSortDescriptor]](./nssortdescriptors.md)
   The request’s sort descriptors, accessed as reference types.
-- [var sectionIdentifier: KeyPath<Result, SectionIdentifier>](sectionedfetchresults/sectionidentifier.md)
+- [var sectionIdentifier: KeyPath<Result, SectionIdentifier>](./sectionidentifier.md)
   The key path that the system uses to group fetched results into sections.
 
 

@@ -1,16 +1,17 @@
 # GetBufferCount
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the number of buffers associated with the network packet buffer pool.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t GetBufferCount(uint32_t *count);
 ```
 
@@ -24,7 +25,8 @@ virtual kern_return_t GetBufferCount(uint32_t *count);
 
 ## See Also
 
-- [GetPacketCount](iousernetworkpacketbufferpool/getpacketcount.md)
+### Getting Pool Information
+- [GetPacketCount](./getpacketcount.md)
   Returns the number of network packets that the pool is capable of storing.
 
 

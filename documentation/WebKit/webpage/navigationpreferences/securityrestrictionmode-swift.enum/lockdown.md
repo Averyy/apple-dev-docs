@@ -1,7 +1,8 @@
 # WebPage.NavigationPreferences.SecurityRestrictionMode.lockdown
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Maximum security restrictions including feature disablement. Applied automatically by the system in Lockdown Mode.
 

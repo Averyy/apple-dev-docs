@@ -1,7 +1,8 @@
 # init(identifier:title:type:)
 
 **Framework**: ClassKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new binary activity item of the given type.
 
@@ -18,6 +19,10 @@ Initializes a new binary activity item of the given type.
 init(identifier: String, title: String, type valueType: CLSBinaryValueType)
 ```
 
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier title:(NSString *) title type:(CLSBinaryValueType) valueType;
+```
+
 ## Parameters
 
 - `identifier`: A unique identifier for the activity item.
@@ -26,7 +31,8 @@ init(identifier: String, title: String, type valueType: CLSBinaryValueType)
 
 ## See Also
 
-- [enum CLSBinaryValueType](clsbinaryvaluetype.md)
+### Creating Binary Activity Items
+- [enum CLSBinaryValueType](../clsbinaryvaluetype.md)
   The kinds of outcomes that a binary activity item can represent.
 
 

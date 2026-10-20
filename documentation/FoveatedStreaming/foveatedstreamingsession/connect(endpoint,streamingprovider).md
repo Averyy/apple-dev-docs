@@ -1,7 +1,8 @@
 # connect(endpoint:streamingProvider:)
 
 **Framework**: Foveated Streaming  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Establishes a streaming connection at the provided endpoint using the specified streaming provider.
 
@@ -19,7 +20,7 @@ final func connect(endpoint: FoveatedStreamingSession.Endpoint = .systemDiscover
 
 This overload allows you to explicitly specify which streaming provider extension to use.
 
-> **Note**: [`FoveatedStreamingSession.DisconnectReason`](foveatedstreamingsession/disconnectreason.md) if the connection fails, or `CancellationError` if the task is cancelled.
+> **Throws**: [`FoveatedStreamingSession.DisconnectReason`](./disconnectreason.md) if the connection fails, or `CancellationError` if the task is cancelled.
 
 ## Parameters
 

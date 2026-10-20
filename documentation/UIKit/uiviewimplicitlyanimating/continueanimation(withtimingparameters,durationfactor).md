@@ -1,7 +1,8 @@
 # continueAnimation(withTimingParameters:durationFactor:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adjusts the final timing and duration of a paused animation.
 
@@ -18,6 +19,10 @@ Adjusts the final timing and duration of a paused animation.
 optional func continueAnimation(withTimingParameters parameters: (any UITimingCurveProvider)?, durationFactor: CGFloat)
 ```
 
+```objc
+- (void) continueAnimationWithTimingParameters:(id<UITimingCurveProvider>) parameters durationFactor:(CGFloat) durationFactor;
+```
+
 #### Discussion
 
 Use this method to change the timing and duration parameters for the current animations temporarily. You define the conditions for which it’s safe to call this method, but typically it’s an error to call this method on an animator that’s inactive, running, or not interruptible. You should retain the original timing and duration values and restore them when your animator transitions back to the inactive state.
@@ -29,13 +34,15 @@ Use this method to change the timing and duration parameters for the current ani
 
 ## See Also
 
-- [func pauseAnimation()](uiviewanimating/pauseanimation.md)
+### Related Documentation
+- [func pauseAnimation()](../uiviewanimating/pauseanimation%28%29.md)
   Pauses a running animation at its current position.
-- [func addAnimations(() -> Void)](uiviewimplicitlyanimating/addanimations(_:).md)
+### Modifying animations
+- [func addAnimations(() -> Void)](./addanimations%28_%29.md)
   Adds the specified animation block to the animator.
-- [func addAnimations(() -> Void, delayFactor: CGFloat)](uiviewimplicitlyanimating/addanimations(_:delayfactor:).md)
+- [func addAnimations(() -> Void, delayFactor: CGFloat)](./addanimations%28_,delayfactor%29.md)
   Adds the specified animation block to the animator with a delay.
-- [func addCompletion((UIViewAnimatingPosition) -> Void)](uiviewimplicitlyanimating/addcompletion(_:).md)
+- [func addCompletion((UIViewAnimatingPosition) -> Void)](./addcompletion%28_%29.md)
   Adds the specified completion block to the animator.
 
 

@@ -1,7 +1,8 @@
 # attrAppleCodesigningHashAgility
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Include Apple codesigning hash agility.
 
@@ -13,6 +14,10 @@ Include Apple codesigning hash agility.
 
 ```swift
 static var attrAppleCodesigningHashAgility: CMSSignedAttributes { get }
+```
+
+```c
+kCMSAttrAppleCodesigningHashAgility
 ```
 
 

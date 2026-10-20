@@ -1,14 +1,15 @@
 # kIOServiceReservedMatchState
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 kIOServiceReservedMatchState = 0x80000000
 ```
 

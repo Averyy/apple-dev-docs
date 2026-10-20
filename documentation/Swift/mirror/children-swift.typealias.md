@@ -1,7 +1,8 @@
 # Mirror.Children
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type used to represent substructure.
 

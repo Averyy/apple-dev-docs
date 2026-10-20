@@ -1,7 +1,8 @@
 # NSComparisonPredicate.Modifier.direct
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A predicate to compare directly the left and right hand sides.
 
@@ -20,11 +21,16 @@ A predicate to compare directly the left and right hand sides.
 case direct
 ```
 
+```c
+NSDirectPredicateModifier
+```
+
 ## See Also
 
-- [NSComparisonPredicate.Modifier.all](nscomparisonpredicate/modifier/all.md)
+### Constants
+- [NSComparisonPredicate.Modifier.all](./all.md)
   A predicate to compare all entries in the destination of a to-many relationship.
-- [NSComparisonPredicate.Modifier.any](nscomparisonpredicate/modifier/any.md)
+- [NSComparisonPredicate.Modifier.any](./any.md)
   A predicate to match with any entry in the destination of a to-many relationship.
 
 

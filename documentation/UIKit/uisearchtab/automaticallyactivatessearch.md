@@ -1,7 +1,8 @@
 # automaticallyActivatesSearch
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Determines if the search tab should automatically activate the embedded search field when the tab becomes visible.
 
@@ -14,6 +15,10 @@ Determines if the search tab should automatically activate the embedded search f
 
 ```swift
 var automaticallyActivatesSearch: Bool { get set }
+```
+
+```objc
+@property (nonatomic, assign) BOOL automaticallyActivatesSearch;
 ```
 
 #### Discussion

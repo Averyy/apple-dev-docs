@@ -1,23 +1,30 @@
 # SKPaymentQueueDelegate
 
 **Framework**: StoreKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The protocol that provides information needed to complete transactions.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.2+
+- iOS 13.0+ - Deprecated in 18.0
+- iPadOS 13.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.15+ - Deprecated in 15.0
+- tvOS 13.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+- watchOS 6.2+ - Deprecated in 11.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 protocol SKPaymentQueueDelegate : NSObjectProtocol
+```
+
+```objc
+@protocol SKPaymentQueueDelegate <NSObject>
 ```
 
 #### Overview
@@ -27,28 +34,29 @@ This protocol includes a method that lets your app determine whether to continue
 ## Topics
 
 ### Continuing transactions
-- [func paymentQueue(SKPaymentQueue, shouldContinue: SKPaymentTransaction, in: SKStorefront) -> Bool](skpaymentqueuedelegate/paymentqueue(_:shouldcontinue:in:).md)
+- [func paymentQueue(SKPaymentQueue, shouldContinue: SKPaymentTransaction, in: SKStorefront) -> Bool](./skpaymentqueuedelegate/paymentqueue%28_,shouldcontinue,in%29.md)
   Asks the delegate whether to continue the transaction if the device’s App Store storefront changes during a transaction.
 ### Showing price consent
-- [func paymentQueueShouldShowPriceConsent(SKPaymentQueue) -> Bool](skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent(_:).md)
+- [func paymentQueueShouldShowPriceConsent(SKPaymentQueue) -> Bool](./skpaymentqueuedelegate/paymentqueueshouldshowpriceconsent%28_%29.md)
   Asks the delegate whether to immediately display a price consent sheet.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Setting up the transaction observer for the payment queue](setting-up-the-transaction-observer-for-the-payment-queue.md)
+### Essentials
+- [Setting up the transaction observer for the payment queue](./setting-up-the-transaction-observer-for-the-payment-queue.md)
   Enable your app to receive and handle transactions by adding an observer.
-- [Offering, completing, and restoring Apple In-App Purchases](offering-completing-and-restoring-in-app-purchases.md)
+- [Offering, completing, and restoring Apple In-App Purchases](./offering-completing-and-restoring-in-app-purchases.md)
   Fetch, display, purchase, validate, and finish transactions in your app.
-- [class SKPaymentQueue](skpaymentqueue.md)
+- [class SKPaymentQueue](./skpaymentqueue.md)
   A queue of payment transactions for the App Store to process.
-- [protocol SKPaymentTransactionObserver](skpaymenttransactionobserver.md)
+- [protocol SKPaymentTransactionObserver](./skpaymenttransactionobserver.md)
   A set of methods that process transactions, unlock purchased functionality, and continue promoted Apple In-App Purchases.
-- [class SKRequest](skrequest.md)
+- [class SKRequest](./skrequest.md)
   An abstract class that represents a request to the App Store.
 
 

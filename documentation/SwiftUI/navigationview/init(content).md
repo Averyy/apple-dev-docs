@@ -1,18 +1,21 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a destination-based navigation view.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 7.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`NavigationStack`](../navigationstack.md) and [`NavigationSplitView`](../navigationsplitview.md) instead. For more information, see [Migrating to new navigation types](../migrating-to-new-navigation-types.md).
 
 ## Declaration
 
@@ -37,7 +40,7 @@ struct ColorDetail: View {
 }
 ```
 
-The following [`NavigationView`](navigationview.md) presents three links to color detail views:
+The following [`NavigationView`](../navigationview.md) presents three links to color detail views:
 
 ```swift
 NavigationView {
@@ -52,21 +55,21 @@ NavigationView {
 }
 ```
 
-When the horizontal size class is [`UserInterfaceSizeClass.regular`](userinterfacesizeclass/regular.md), like on an iPad in landscape mode, or on a Mac, the navigation view presents itself as a multicolumn view, using its second and later content views — a single [`Text`](text.md) view in the example above — as a placeholder for the corresponding column:
+When the horizontal size class is [`UserInterfaceSizeClass.regular`](../userinterfacesizeclass/regular.md), like on an iPad in landscape mode, or on a Mac, the navigation view presents itself as a multicolumn view, using its second and later content views — a single [`Text`](../text.md) view in the example above — as a placeholder for the corresponding column:
 
-![A screenshot of a Mac window showing a multicolumn navigation view. The left column lists the colors Purple, Pink, and Orange, with none selected. The right column presents a placeholder view that says Select a Color.](/images/com.apple.SwiftUI/NavigationView-init-content-1@2x.png)
+![A screenshot of a Mac window showing a multicolumn navigation view. The left column lists the colors Purple, Pink, and Orange, with none selected. The right column presents a placeholder view that says Select a Color.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/NavigationView-init-content-1@2x.png)
 
 When the user selects one of the navigation links from the list, the linked destination view replaces the placeholder text in the detail column:
 
-![A screenshot of a Mac window showing a multicolumn navigation view. The left column lists the colors Purple, Pink, and Orange, with Purple selected. The right column presents a detail view that shows a purple square.](/images/com.apple.SwiftUI/NavigationView-init-content-2@2x.png)
+![A screenshot of a Mac window showing a multicolumn navigation view. The left column lists the colors Purple, Pink, and Orange, with Purple selected. The right column presents a detail view that shows a purple square.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/NavigationView-init-content-2@2x.png)
 
-When the size class is [`UserInterfaceSizeClass.compact`](userinterfacesizeclass/compact.md), like on an iPhone in portrait orientation, the navigation view presents itself as a single column that the user navigates as a stack. Tapping one of the links replaces the list with the detail view, which provides a back button to return to the list:
+When the size class is [`UserInterfaceSizeClass.compact`](../userinterfacesizeclass/compact.md), like on an iPhone in portrait orientation, the navigation view presents itself as a single column that the user navigates as a stack. Tapping one of the links replaces the list with the detail view, which provides a back button to return to the list:
 
-![Two screenshots of an iPhone in portrait orientation connected by an arrow. The first screenshot shows a single column consisting of a list of colors with the names Purple, Pink, and Orange. The second screenshot has the title Purple, and contains a purple square. The arrow connects the Purple item in the list on the left to the screenshot on the right.](/images/com.apple.SwiftUI/NavigationView-init-content-3@2x.png)
+![Two screenshots of an iPhone in portrait orientation connected by an arrow. The first screenshot shows a single column consisting of a list of colors with the names Purple, Pink, and Orange. The second screenshot has the title Purple, and contains a purple square. The arrow connects the Purple item in the list on the left to the screenshot on the right.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/NavigationView-init-content-3@2x.png)
 
 ## Parameters
 
-- `content`: A [`ViewBuilder`](viewbuilder.md) that produces the content that the navigation view wraps. Any views after the first act as placeholders for corresponding columns in a multicolumn display.
+- `content`: A [`ViewBuilder`](../viewbuilder.md) that produces the content that the navigation view wraps. Any views after the first act as placeholders for corresponding columns in a multicolumn display.
 
 
 ---

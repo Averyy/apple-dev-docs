@@ -1,7 +1,8 @@
 # AVMergedMetrics
 
 **Framework**: AVFoundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An asynchronous stream of metric information from different publishers.
 
@@ -23,21 +24,22 @@ struct AVMergedMetrics<MetricEvent1, MetricEvent2, each MetricEventPack> where M
 ## Relationships
 
 ### Conforms To
-- [AsyncSequence](../swift/asyncsequence.md)
+- [AsyncSequence](../Swift/asyncsequence.md)
 
 ## See Also
 
-- [struct AVMetrics](avmetrics.md)
+### Metrics
+- [struct AVMetrics](./avmetrics.md)
   An asynchronous stream of metric information.
-- [class AVVideoPerformanceMetrics](avvideoperformancemetrics.md)
+- [class AVVideoPerformanceMetrics](./avvideoperformancemetrics.md)
   An object that provides metrics related to video playback quality.
-- [protocol AVMetricEventStreamPublisher](avmetriceventstreampublisher.md)
+- [protocol AVMetricEventStreamPublisher](./avmetriceventstreampublisher.md)
   A type for objects that publish metric events to the event stream.
-- [class AVMetricEvent](avmetricevent.md)
+- [class AVMetricEvent](./avmetricevent.md)
   A base class that represents a metric event.
-- [class AVMetricErrorEvent](avmetricerrorevent.md)
+- [class AVMetricErrorEvent](./avmetricerrorevent.md)
   An object that represents a metric event when an error occurs.
-- [Metric event types](metric-event-types.md)
+- [Metric event types](./metric-event-types.md)
 
 
 ---

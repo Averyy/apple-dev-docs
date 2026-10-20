@@ -1,7 +1,8 @@
 # kCMMCreateTransformPropertyProcName
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The CMM bundle info-dictionary key whose value is the name of the function that creates a transform property.
 
@@ -15,13 +16,18 @@ The CMM bundle info-dictionary key whose value is the name of the function that 
 var kCMMCreateTransformPropertyProcName: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kCMMCreateTransformPropertyProcName;
+```
+
 ## See Also
 
-- [var kCMMApplyTransformProcName: Unmanaged<CFString>!](kcmmapplytransformprocname.md)
+### Registering plug-in entry points
+- [var kCMMApplyTransformProcName: Unmanaged<CFString>!](./kcmmapplytransformprocname.md)
   The CMM bundle info-dictionary key whose value is the name of the function that applies a color transform.
-- [var kCMMInitializeLinkProfileProcName: Unmanaged<CFString>!](kcmminitializelinkprofileprocname.md)
+- [var kCMMInitializeLinkProfileProcName: Unmanaged<CFString>!](./kcmminitializelinkprofileprocname.md)
   The CMM bundle info-dictionary key whose value is the name of the function that initializes a device-link profile.
-- [var kCMMInitializeTransformProcName: Unmanaged<CFString>!](kcmminitializetransformprocname.md)
+- [var kCMMInitializeTransformProcName: Unmanaged<CFString>!](./kcmminitializetransformprocname.md)
   The CMM bundle info-dictionary key whose value is the name of the function that initializes a color transform.
 
 

@@ -1,7 +1,8 @@
 # init(characteristic:targetValue:)
 
 **Framework**: HomeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize a characteristic write action with a specified characteristic and target value.
 
@@ -17,6 +18,10 @@ Initialize a characteristic write action with a specified characteristic and tar
 init(characteristic: HMCharacteristic, targetValue: TargetValueType)
 ```
 
+```objc
+- (instancetype) initWithCharacteristic:(HMCharacteristic *) characteristic targetValue:(TargetValueType) targetValue;
+```
+
 #### Return Value
 
 A newly initialized characteristic write action object with the specified characteristic and target value.
@@ -28,12 +33,14 @@ A newly initialized characteristic write action object with the specified charac
 
 ## See Also
 
-- [HomeKit Developer Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/HomeKitDeveloperGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40015050)
-- [var characteristic: HMCharacteristic](hmcharacteristicwriteaction/characteristic.md)
+### Related Documentation
+- [HomeKit Developer Guide](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/HomeKitDeveloperGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40015050)
+### New Methods
+- [var characteristic: HMCharacteristic](./characteristic.md)
   The characteristic whose value is to be written by the action.
-- [var targetValue: TargetValueType](hmcharacteristicwriteaction/targetvalue.md)
+- [var targetValue: TargetValueType](./targetvalue.md)
   The value that will be written to the characteristic when the action is executed.
-- [func updateTargetValue(TargetValueType, completionHandler: ((any Error)?) -> Void)](hmcharacteristicwriteaction/updatetargetvalue(_:completionhandler:).md)
+- [func updateTargetValue(TargetValueType, completionHandler: ((any Error)?) -> Void)](./updatetargetvalue%28_,completionhandler%29.md)
   Updates the target value.
 
 

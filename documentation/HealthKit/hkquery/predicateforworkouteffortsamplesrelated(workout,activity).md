@@ -1,7 +1,8 @@
 # predicateForWorkoutEffortSamplesRelated(workout:activity:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 class func predicateForWorkoutEffortSamplesRelated(workout: HKWorkout, activity: HKWorkoutActivity?) -> NSPredicate
+```
+
+```objc
++ (NSPredicate *) predicateForWorkoutEffortSamplesRelatedToWorkout:(HKWorkout *) workout activity:(HKWorkoutActivity *) activity;
 ```
 
 

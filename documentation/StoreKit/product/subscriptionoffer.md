@@ -1,7 +1,8 @@
 # Product.SubscriptionOffer
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Information about a subscription offer that you configure in App Store Connect.
 
@@ -22,64 +23,65 @@ struct SubscriptionOffer
 
 ## Mentions
 
-- [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
+- [Merchandising win-back offers in your app](../merchandising-win-back-offers-in-your-app.md)
 
 #### Overview
 
 You set up subscription offers, such as introductory offers and win-back offers, in App Store Connect.
 
-For more information about subscription offers, see [`Providing subscription offers`](https://developer.apple.comhttps://developer.apple.com/app-store/subscriptions/#providing-subscription-offers). For information about configuring the various types of subscription offers in App Store Connect, see:
+For more information about subscription offers, see [Providing subscription offers](https://developer.apple.com/app-store/subscriptions/#providing-subscription-offers). For information about configuring the various types of subscription offers in App Store Connect, see:
 
-- [`Set up offer codes`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes/)
-- [`Set up introductory offers for auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions)
-- [`Set up promotional offers for auto-renewable subscriptions`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions)
-- [`Set up win-back offers`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-win-back-offers)
+- [Set up offer codes](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-offer-codes/)
+- [Set up introductory offers for auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions)
+- [Set up promotional offers for auto-renewable subscriptions](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions)
+- [Set up win-back offers](https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-win-back-offers)
 
 ## Topics
 
 ### Getting the subscription offer identifier
-- [let id: String?](product/subscriptionoffer/id.md)
+- [let id: String?](./subscriptionoffer/id.md)
   The offer identifier.
 ### Getting the subscription offer type
-- [let type: Product.SubscriptionOffer.OfferType](product/subscriptionoffer/type.md)
+- [let type: Product.SubscriptionOffer.OfferType](./subscriptionoffer/type.md)
   The type of subscription offer, which can be introductory, promotional, or win-back.
-- [Product.SubscriptionOffer.OfferType](product/subscriptionoffer/offertype.md)
+- [Product.SubscriptionOffer.OfferType](./subscriptionoffer/offertype.md)
   The types of offers for auto-renewable subscriptions.
 ### Getting price information
-- [let displayPrice: String](product/subscriptionoffer/displayprice.md)
+- [let displayPrice: String](./subscriptionoffer/displayprice.md)
   The localized string representation of the discounted price of the subscription offer.
-- [let price: Decimal](product/subscriptionoffer/price.md)
+- [let price: Decimal](./subscriptionoffer/price.md)
   The decimal representation of the discounted price of the subscription offer.
-- [let paymentMode: Product.SubscriptionOffer.PaymentMode](product/subscriptionoffer/paymentmode-swift.property.md)
+- [let paymentMode: Product.SubscriptionOffer.PaymentMode](./subscriptionoffer/paymentmode-swift.property.md)
   The offer’s payment mode.
-- [Product.SubscriptionOffer.PaymentMode](product/subscriptionoffer/paymentmode-swift.struct.md)
+- [Product.SubscriptionOffer.PaymentMode](./subscriptionoffer/paymentmode-swift.struct.md)
   The payment modes for subscription offers that apply to a transaction.
 ### Getting the subscription duration
-- [let period: Product.SubscriptionPeriod](product/subscriptionoffer/period.md)
+- [let period: Product.SubscriptionPeriod](./subscriptionoffer/period.md)
   The subscription period for the subscription offer.
-- [let periodCount: Int](product/subscriptionoffer/periodcount.md)
+- [let periodCount: Int](./subscriptionoffer/periodcount.md)
   The number of periods that the subscription offer renews for.
 ### Creating a subscription offer signature
-- [Product.SubscriptionOffer.Signature](product/subscriptionoffer/signature.md)
+- [Product.SubscriptionOffer.Signature](./subscriptionoffer/signature.md)
   A cryptographic signature for a promotional offer.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+### Offers
+- [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
   Enable customers to redeem offer codes through the App Store or within your app.
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
+- [Supporting win-back offers in your app](../supporting-win-back-offers-in-your-app.md)
   Re-engage previous subscribers with a free or discounted offer for an auto-renewable subscription, for a specific duration.
-- [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
+- [Merchandising win-back offers in your app](../merchandising-win-back-offers-in-your-app.md)
   Present win-back offers to eligible customers in your app with the win-back offer sheet or by implementing custom merchandising.
-- [Product.SubscriptionOffer.OfferType](product/subscriptionoffer/offertype.md)
+- [Product.SubscriptionOffer.OfferType](./subscriptionoffer/offertype.md)
   The types of offers for auto-renewable subscriptions.
 
 

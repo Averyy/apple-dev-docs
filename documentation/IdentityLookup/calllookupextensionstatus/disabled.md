@@ -1,7 +1,8 @@
 # CallLookupExtensionStatus.disabled
 
 **Framework**: SMS and Call Reporting  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The Live Caller ID Lookup app extension is in a disabled state.
 
@@ -20,7 +21,8 @@ case disabled
 
 ## See Also
 
-- [CallLookupExtensionStatus.enabled](calllookupextensionstatus/enabled.md)
+### Checking the state of the app extension
+- [CallLookupExtensionStatus.enabled](./enabled.md)
   The Live Caller ID Lookup app extension is in an enabled state.
 
 

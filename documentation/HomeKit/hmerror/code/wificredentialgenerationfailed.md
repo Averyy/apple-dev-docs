@@ -1,7 +1,8 @@
 # HMError.Code.wiFiCredentialGenerationFailed
 
 **Framework**: HomeKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 WiFi credential generation failed.
 
@@ -19,15 +20,20 @@ WiFi credential generation failed.
 case wiFiCredentialGenerationFailed
 ```
 
+```c
+HMErrorCodeWiFiCredentialGenerationFailed
+```
+
 ## See Also
 
-- [HMError.Code.enterpriseNetworkNotSupported](hmerror/code/enterprisenetworknotsupported.md)
+### Network errors
+- [HMError.Code.enterpriseNetworkNotSupported](./enterprisenetworknotsupported.md)
   An enterprise network doesn’t support this accessory.
-- [HMError.Code.failedToJoinNetwork](hmerror/code/failedtojoinnetwork.md)
+- [HMError.Code.failedToJoinNetwork](./failedtojoinnetwork.md)
   The accessory failed to join the network.
-- [HMError.Code.incompatibleNetwork](hmerror/code/incompatiblenetwork.md)
+- [HMError.Code.incompatibleNetwork](./incompatiblenetwork.md)
   An error indicating an incompatible network.
-- [HMError.Code.networkUnavailable](hmerror/code/networkunavailable.md)
+- [HMError.Code.networkUnavailable](./networkunavailable.md)
   An error indicating the network is unavailable.
 
 

@@ -1,7 +1,8 @@
 # kMDItemResolutionHeightDPI
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Resolution height, in DPI, of this image. A CFNumber.
 
@@ -12,6 +13,10 @@ Resolution height, in DPI, of this image. A CFNumber.
 
 ```swift
 let kMDItemResolutionHeightDPI: CFString!
+```
+
+```c
+const CFStringRef kMDItemResolutionHeightDPI;
 ```
 
 

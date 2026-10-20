@@ -1,7 +1,8 @@
 # animate(_:body:completion:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 **Availability**:
 - iOS 26.0+
@@ -20,7 +21,7 @@
 
 ## Mentions
 
-- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+- [Automatically animating RealityKit entities](../automatically-animating-realitykit-entities.md)
 
 
 ---

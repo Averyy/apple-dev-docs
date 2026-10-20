@@ -1,7 +1,8 @@
 # AVAudioUnitDistortionPreset.multiDecimated3
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A preset that represents a variant of the decimated distortion.
 
@@ -10,7 +11,7 @@ A preset that represents a variant of the decimated distortion.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,33 +21,38 @@ A preset that represents a variant of the decimated distortion.
 case multiDecimated3
 ```
 
+```c
+AVAudioUnitDistortionPresetMultiDecimated3
+```
+
 ## See Also
 
-- [AVAudioUnitDistortionPreset.multiBrokenSpeaker](avaudiounitdistortionpreset/multibrokenspeaker.md)
+### Choosing a multi-effect preset
+- [AVAudioUnitDistortionPreset.multiBrokenSpeaker](./multibrokenspeaker.md)
   A preset that represents a broken speaker distortion.
-- [AVAudioUnitDistortionPreset.multiCellphoneConcert](avaudiounitdistortionpreset/multicellphoneconcert.md)
+- [AVAudioUnitDistortionPreset.multiCellphoneConcert](./multicellphoneconcert.md)
   A preset that represents a cellphone concert distortion.
-- [AVAudioUnitDistortionPreset.multiDecimated1](avaudiounitdistortionpreset/multidecimated1.md)
+- [AVAudioUnitDistortionPreset.multiDecimated1](./multidecimated1.md)
   A preset that represents a variant of the decimated distortion.
-- [AVAudioUnitDistortionPreset.multiDecimated2](avaudiounitdistortionpreset/multidecimated2.md)
+- [AVAudioUnitDistortionPreset.multiDecimated2](./multidecimated2.md)
   A preset that represents a variant of the decimated distortion.
-- [AVAudioUnitDistortionPreset.multiDecimated4](avaudiounitdistortionpreset/multidecimated4.md)
+- [AVAudioUnitDistortionPreset.multiDecimated4](./multidecimated4.md)
   A preset that represents a variant of the decimated distortion.
-- [AVAudioUnitDistortionPreset.multiDistortedFunk](avaudiounitdistortionpreset/multidistortedfunk.md)
+- [AVAudioUnitDistortionPreset.multiDistortedFunk](./multidistortedfunk.md)
   A preset that represents a distorted funk distortion.
-- [AVAudioUnitDistortionPreset.multiDistortedCubed](avaudiounitdistortionpreset/multidistortedcubed.md)
+- [AVAudioUnitDistortionPreset.multiDistortedCubed](./multidistortedcubed.md)
   A preset that represents a distorted cubed distortion.
-- [AVAudioUnitDistortionPreset.multiDistortedSquared](avaudiounitdistortionpreset/multidistortedsquared.md)
+- [AVAudioUnitDistortionPreset.multiDistortedSquared](./multidistortedsquared.md)
   A preset that represents a distorted squared distortion.
-- [AVAudioUnitDistortionPreset.multiEcho1](avaudiounitdistortionpreset/multiecho1.md)
+- [AVAudioUnitDistortionPreset.multiEcho1](./multiecho1.md)
   A preset that represents a variant of an echo distortion.
-- [AVAudioUnitDistortionPreset.multiEcho2](avaudiounitdistortionpreset/multiecho2.md)
+- [AVAudioUnitDistortionPreset.multiEcho2](./multiecho2.md)
   A preset that represents a variant of an echo distortion.
-- [AVAudioUnitDistortionPreset.multiEchoTight1](avaudiounitdistortionpreset/multiechotight1.md)
+- [AVAudioUnitDistortionPreset.multiEchoTight1](./multiechotight1.md)
   A preset that represents a variant of a tight echo distortion.
-- [AVAudioUnitDistortionPreset.multiEchoTight2](avaudiounitdistortionpreset/multiechotight2.md)
+- [AVAudioUnitDistortionPreset.multiEchoTight2](./multiechotight2.md)
   A preset that represents a variant of a tight echo distortion.
-- [AVAudioUnitDistortionPreset.multiEverythingIsBroken](avaudiounitdistortionpreset/multieverythingisbroken.md)
+- [AVAudioUnitDistortionPreset.multiEverythingIsBroken](./multieverythingisbroken.md)
   A preset that represents an everything-is-broken distortion.
 
 

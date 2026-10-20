@@ -1,7 +1,8 @@
 # ProximityReaderDiscovery.Topic
 
 **Framework**: ProximityReader  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The topics you can present to someone.
 
@@ -19,24 +20,25 @@ enum Topic
 ## Topics
 
 ### Creating a discovery object
-- [case payment(ProximityReaderDiscovery.Topic.Payment)](proximityreaderdiscovery/topic/payment(_:).md)
+- [case payment(ProximityReaderDiscovery.Topic.Payment)](./topic/payment%28_%29.md)
   A topic related to accepting payments.
-- [ProximityReaderDiscovery.Topic.Payment](proximityreaderdiscovery/topic/payment.md)
+- [ProximityReaderDiscovery.Topic.Payment](./topic/payment.md)
   The subtopics that show merchants how to accept different types of payments with *Tap to Pay* on iPhone.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func content(for: ProximityReaderDiscovery.Topic) async throws -> ProximityReaderDiscovery.Content](proximityreaderdiscovery/content(for:).md)
+### Fetching the content to display
+- [func content(for: ProximityReaderDiscovery.Topic) async throws -> ProximityReaderDiscovery.Content](./content%28for%29.md)
   Fetches the content for the specified topic.
-- [ProximityReaderDiscovery.Content](proximityreaderdiscovery/content.md)
+- [ProximityReaderDiscovery.Content](./content.md)
   A type that represents content you can display on the current device.
-- [var contentList: [ProximityReaderDiscovery.Content]](proximityreaderdiscovery/contentlist.md)
+- [var contentList: [ProximityReaderDiscovery.Content]](./contentlist.md)
   The content you can present for the current device.
 
 

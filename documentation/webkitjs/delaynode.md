@@ -1,7 +1,8 @@
 # DelayNode
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,19 +10,19 @@
 
 ## Declaration
 
-```swift
+```
 interface DelayNode
 ```
 
 ## Topics
 
 ### Instance Properties
-- [delayTime](delaynode/1632741-delaytime.md)
+- [delayTime](./delaynode/api-1632741-delaytime.md)
 
 ## Relationships
 
 ### Inherits From
-- [AudioNode](audionode.md)
+- [AudioNode](./audionode.md)
 
 
 ---

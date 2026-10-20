@@ -1,7 +1,8 @@
 # init(upstream:interval:tolerance:scheduler:options:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that delays delivery of elements and completion to the downstream receiver.
 

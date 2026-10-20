@@ -1,11 +1,12 @@
 # CustomReflectable Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Properties
-- [var customMirror: Mirror](projectivetransform3d/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
 
 
 ---

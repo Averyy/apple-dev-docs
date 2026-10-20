@@ -1,7 +1,8 @@
 # paymentType
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of payment method, such as a credit card or bank account
 
@@ -11,7 +12,7 @@ The kind of payment method, such as a credit card or bank account
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,13 +23,14 @@ var paymentType: IntentPaymentMethod.PaymentType { get }
 
 ## See Also
 
-- [var name: String?](intentpaymentmethod/name.md)
+### Getting the payment details
+- [var name: String?](./name.md)
   The user-visible name of the payment method
-- [var identificationHint: String?](intentpaymentmethod/identificationhint.md)
+- [var identificationHint: String?](./identificationhint.md)
   A hint making it easier for the user to identify the payment method among others of similar name or type, such as the last several digits of a credit card number
-- [var icon: DisplayRepresentation.Image?](intentpaymentmethod/icon.md)
+- [var icon: DisplayRepresentation.Image?](./icon.md)
   The icon or image representing this payment method
-- [IntentPaymentMethod.PaymentType](intentpaymentmethod/paymenttype-swift.enum.md)
+- [IntentPaymentMethod.PaymentType](./paymenttype-swift.enum.md)
   Constants that describe the available payment options, such as credit cards or bank accounts.
 
 

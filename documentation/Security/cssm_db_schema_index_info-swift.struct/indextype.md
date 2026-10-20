@@ -1,7 +1,8 @@
 # IndexType
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var IndexType: CSSM_DB_INDEX_TYPE
+```
+
+```c
+CSSM_DB_INDEX_TYPE IndexType;
 ```
 
 

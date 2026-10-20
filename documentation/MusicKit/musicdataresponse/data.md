@@ -1,7 +1,8 @@
 # data
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The raw data returned by the Apple Music API endpoint for the originating data request.
 

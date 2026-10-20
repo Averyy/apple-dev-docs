@@ -1,19 +1,26 @@
 # reportTypeConfirmedClinicalDiagnosisWeight
 
 **Framework**: Exposure Notification  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The weight assigned to a risk level based on a confirmed clinical diagnosis.
 
 **Availability**:
-- iOS 12.5+
-- iPadOS 12.5+
-- Mac Catalyst 12.5+
+- iOS 12.5+ - Deprecated in 27.0
+- iPadOS 12.5+ - Deprecated in 27.0
+- Mac Catalyst 12.5+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported.
 
 ## Declaration
 
 ```swift
 var reportTypeConfirmedClinicalDiagnosisWeight: Double { get set }
+```
+
+```objc
+@property (nonatomic, assign, readwrite) double reportTypeConfirmedClinicalDiagnosisWeight;
 ```
 
 #### Discussion
@@ -22,13 +29,14 @@ var reportTypeConfirmedClinicalDiagnosisWeight: Double { get set }
 
 ## See Also
 
-- [var reportTypeConfirmedTestWeight: Double](enexposureconfiguration/reporttypeconfirmedtestweight.md)
+### Configuring Report Types
+- [var reportTypeConfirmedTestWeight: Double](./reporttypeconfirmedtestweight.md)
   The weight assigned to a risk level based on a confirmed test.
-- [var reportTypeRecursiveWeight: Double](enexposureconfiguration/reporttyperecursiveweight.md)
+- [var reportTypeRecursiveWeight: Double](./reporttyperecursiveweight.md)
   The weight assigned to a risk level based on an exposure to someone exposed to someone else.
-- [var reportTypeSelfReportedWeight: Double](enexposureconfiguration/reporttypeselfreportedweight.md)
+- [var reportTypeSelfReportedWeight: Double](./reporttypeselfreportedweight.md)
   The weight assigned to a risk level based on a self-reported diagnoisis.
-- [var reportTypeNoneMap: ENDiagnosisReportType](enexposureconfiguration/reporttypenonemap.md)
+- [var reportTypeNoneMap: ENDiagnosisReportType](./reporttypenonemap.md)
   The report type to map an unknown diagnosis to.
 
 

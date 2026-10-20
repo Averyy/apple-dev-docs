@@ -1,7 +1,8 @@
 # allowsColorSelection
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether to show the color selection UI for the tool.
 
@@ -19,11 +20,12 @@ var allowsColorSelection: Bool
 
 #### Discussion
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+The default value is [`false`](../../../Swift/false.md).
 
 ## See Also
 
-- [var defaultColor: UIColor](pktoolpickercustomitem/configuration-swift.struct/defaultcolor.md)
+### Customizing color
+- [var defaultColor: UIColor](./defaultcolor.md)
   The default color for the tool.
 
 

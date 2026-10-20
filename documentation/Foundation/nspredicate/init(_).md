@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a predicate by converting an existing predicate.
 
@@ -26,7 +27,7 @@ The converted predicate, or `nil` if conversion fails.
 
 #### Discussion
 
-Only a subset of predicates that can be expressed by [`Predicate`](predicate.md) are convertible to [`NSPredicate`](nspredicate.md). Predicates that include operations like the following can’t be converted:
+Only a subset of predicates that can be expressed by [`Predicate`](../predicate.md) are convertible to [`NSPredicate`](../nspredicate.md). Predicates that include operations like the following can’t be converted:
 
 - Accessing key paths for properties that aren’t exposed to the Objective-C runtime.
 - Capturing values of types that aren’t supported by `NSPredicate`, like custom Swift structures.
@@ -38,19 +39,20 @@ Only a subset of predicates that can be expressed by [`Predicate`](predicate.md)
 
 ## See Also
 
-- [init(format: String, argumentArray: [Any]?)](nspredicate/init(format:argumentarray:).md)
+### Creating a Predicate
+- [init(format: String, argumentArray: [Any]?)](./init%28format,argumentarray%29.md)
   Creates a predicate by substituting the values in a specified array into a format string and parsing the result.
-- [init(format: String, arguments: CVaListPointer)](nspredicate/init(format:arguments:).md)
+- [init(format: String, arguments: CVaListPointer)](./init%28format,arguments%29.md)
   Creates a predicate by substituting the values in an argument list into a format string and parsing the result.
-- [convenience init(format: String, any CVarArg...)](nspredicate/init(format:_:).md)
+- [convenience init(format: String, any CVarArg...)](./init%28format,_%29.md)
   Creates a predicate by substituting the values in an argument list into a format string and parsing the result.
-- [func withSubstitutionVariables([String : Any]) -> Self](nspredicate/withsubstitutionvariables(_:).md)
+- [func withSubstitutionVariables([String : Any]) -> Self](./withsubstitutionvariables%28_%29.md)
   Returns a copy of the predicate and substitutes the predicates variables with specified values from a specified substitution variables dictionary.
-- [init(value: Bool)](nspredicate/init(value:).md)
+- [init(value: Bool)](./init%28value%29.md)
   Creates and returns a predicate that always evaluates to a specified Boolean value.
-- [init(block: (Any?, [String : Any]?) -> Bool)](nspredicate/init(block:).md)
+- [init(block: (Any?, [String : Any]?) -> Bool)](./init%28block%29.md)
   Creates a predicate that evaluates using a specified block object and bindings dictionary.
-- [init?(fromMetadataQueryString: String)](nspredicate/init(frommetadataquerystring:).md)
+- [init?(fromMetadataQueryString: String)](./init%28frommetadataquerystring%29.md)
   Creates a predicate with a metadata query string.
 
 

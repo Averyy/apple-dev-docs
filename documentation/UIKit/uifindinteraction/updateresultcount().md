@@ -1,7 +1,8 @@
 # updateResultCount()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the results the interface displays for the active search.
 
@@ -17,9 +18,14 @@ Updates the results the interface displays for the active search.
 func updateResultCount()
 ```
 
+```objc
+- (void) updateResultCount;
+```
+
 ## See Also
 
-- [var activeFindSession: UIFindSession?](uifindinteraction/activefindsession.md)
+### Managing the search
+- [var activeFindSession: UIFindSession?](./activefindsession.md)
   The object that manages the state, presentation, and behavior of an active search.
 
 

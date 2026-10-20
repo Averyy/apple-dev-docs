@@ -1,7 +1,8 @@
 # inputs
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The inputs with tracks that are mutually exclusive to each other for playback or processing.
 
@@ -19,9 +20,14 @@ The inputs with tracks that are mutually exclusive to each other for playback or
 var inputs: [AVAssetWriterInput] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<AVAssetWriterInput *> * inputs;
+```
+
 ## See Also
 
-- [var defaultInput: AVAssetWriterInput?](avassetwriterinputgroup/defaultinput.md)
+### Accessing the inputs
+- [var defaultInput: AVAssetWriterInput?](./defaultinput.md)
   The default input for the group.
 
 

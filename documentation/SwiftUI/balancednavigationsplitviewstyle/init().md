@@ -1,9 +1,10 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates an instance of [`BalancedNavigationSplitViewStyle`](balancednavigationsplitviewstyle.md).
+Creates an instance of [`BalancedNavigationSplitViewStyle`](../balancednavigationsplitviewstyle.md).
 
 **Availability**:
 - iOS 16.0+
@@ -23,7 +24,7 @@ Creates an instance of [`BalancedNavigationSplitViewStyle`](balancednavigationsp
 
 #### Discussion
 
-You can also use [`balanced`](navigationsplitviewstyle/balanced.md) to construct this style.
+You can also use [`balanced`](../navigationsplitviewstyle/balanced.md) to construct this style.
 
 
 ---

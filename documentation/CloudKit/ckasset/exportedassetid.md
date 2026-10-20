@@ -1,9 +1,10 @@
 # CKAsset.ExportedAssetID
 
 **Framework**: CloudKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-An identifier that can be used for creating a server-side copy of a [`CKAsset`](ckasset.md) that already exists in iCloud, potentially in a different container.
+An identifier that can be used for creating a server-side copy of a [`CKAsset`](../ckasset.md) that already exists in iCloud, potentially in a different container.
 
 **Availability**:
 - iOS 27.0+
@@ -22,15 +23,15 @@ struct ExportedAssetID
 
 #### Overview
 
-An [`CKAsset.ExportedAssetID`](ckasset/exportedassetid.md) is valid only on the same device where it was created, and it expires after a few days.
+An [`CKAsset.ExportedAssetID`](./exportedassetid.md) is valid only on the same device where it was created, and it expires after a few days.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

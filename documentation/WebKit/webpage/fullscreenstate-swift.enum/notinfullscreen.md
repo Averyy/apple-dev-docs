@@ -1,7 +1,8 @@
 # WebPage.FullscreenState.notInFullscreen
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The page is not currently in fullscreen.
 

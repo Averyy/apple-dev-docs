@@ -1,7 +1,8 @@
 # isOrientedToPath
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the orbiting object updates its orientation during the animation to orient itself along the rotation path.
 

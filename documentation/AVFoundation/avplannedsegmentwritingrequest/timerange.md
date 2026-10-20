@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The PTS range for this segment.
 
@@ -19,17 +20,22 @@ The PTS range for this segment.
 var timeRange: CMTimeRange { get }
 ```
 
+```objc
+@property (readonly) CMTimeRange timeRange;
+```
+
 #### Discussion
 
 The client is responsible for delivering the appropriate sample corresponding to timeRange.start if we are resuming a previous session that has already made incremental progress for this track.
 
 ## See Also
 
-- [var segmentFileOutputURL: URL](avplannedsegmentwritingrequest/segmentfileoutputurl.md)
+### Inspecting the request
+- [var segmentFileOutputURL: URL](./segmentfileoutputurl.md)
   The URL of the file where this incremental segment should be written to.
-- [var progress: Float](avplannedsegmentwritingrequest/progress.md)
+- [var progress: Float](./progress.md)
   The current progress for the track identified by assemblyTrackID.
-- [var assemblyTrackID: CMPersistentTrackID](avplannedsegmentwritingrequest/assemblytrackid.md)
+- [var assemblyTrackID: CMPersistentTrackID](./assemblytrackid.md)
   The trackID identifies which track should be written to this segment file. This is the same track ID in the AVAssetTrackPlan object. This is also the trackID the AVAssetWritingPlanner uses to build the assembled AVComposition before it calls the completion handler.
 
 

@@ -1,7 +1,8 @@
 # lineStyle(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Represents data using line styles.
 
@@ -27,13 +28,14 @@ func lineStyle(_ style: KeyPath<Self.DataElement, StrokeStyle>) -> some Vectoriz
 
 ## See Also
 
+### Styling marks
 - [func foregroundStyle(KeyPath<Self.DataElement, some ShapeStyle>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/foregroundstyle(_:).md)
+](./foregroundstyle%28_%29.md)
   Represents data using a foreground style.
 - [func opacity(KeyPath<Self.DataElement, CGFloat>) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/opacity(_:).md)
+](./opacity%28_%29.md)
 - [func position(by: PlottableProjection<Self.DataElement, some Plottable>, axis: Axis?, span: MarkDimension) -> some VectorizedChartContent<Self.DataElement>
-](vectorizedchartcontent/position(by:axis:span:).md)
+](./position%28by,axis,span%29.md)
 
 
 ---

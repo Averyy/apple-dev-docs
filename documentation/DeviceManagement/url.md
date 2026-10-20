@@ -1,7 +1,8 @@
 # Url
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A URL object.
 
@@ -10,7 +11,7 @@ A URL object.
 
 ## Declaration
 
-```swift
+```
 object Url
 ```
 
@@ -22,13 +23,14 @@ object Url
 
 ## See Also
 
-- [object Device](device.md)
+### Objects and data types
+- [object Device](./device.md)
   A device’s properties and their values.
-- [object MachineInfo](machineinfo.md)
+- [object MachineInfo](./machineinfo.md)
   A device’s information in response to a MDM enrollment profile request.
-- [object Profile](profile.md)
+- [object Profile](./profile.md)
   A profile’s properties and their values.
-- [object Limit](limit.md)
+- [object Limit](./limit.md)
   A ranged limit.
 
 

@@ -1,7 +1,8 @@
 # SegmentBlendType.tangent
 
 **Framework**: hvf  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Segment is an isolated tangent segment
 

@@ -1,10 +1,11 @@
 # kBluetoothHCIInquiryModeResultFormatWithRSSIOrExtendedInquiryResultFormat
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,10 +13,15 @@
 var kBluetoothHCIInquiryModeResultFormatWithRSSIOrExtendedInquiryResultFormat: BluetoothHCIInquiryModes { get }
 ```
 
+```c
+kBluetoothHCIInquiryModeResultFormatWithRSSIOrExtendedInquiryResultFormat
+```
+
 ## See Also
 
-- [var kBluetoothHCIInquiryModeResultFormatStandard: BluetoothHCIInquiryModes](kbluetoothhciinquirymoderesultformatstandard.md)
-- [var kBluetoothHCIInquiryModeResultFormatWithRSSI: BluetoothHCIInquiryModes](kbluetoothhciinquirymoderesultformatwithrssi.md)
+### Constants
+- [var kBluetoothHCIInquiryModeResultFormatStandard: BluetoothHCIInquiryModes](./kbluetoothhciinquirymoderesultformatstandard.md)
+- [var kBluetoothHCIInquiryModeResultFormatWithRSSI: BluetoothHCIInquiryModes](./kbluetoothhciinquirymoderesultformatwithrssi.md)
 
 
 ---

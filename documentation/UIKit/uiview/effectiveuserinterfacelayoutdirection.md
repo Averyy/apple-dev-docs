@@ -1,7 +1,8 @@
 # effectiveUserInterfaceLayoutDirection
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The user interface layout direction appropriate for arranging the immediate content of the view.
 
@@ -18,19 +19,24 @@ The user interface layout direction appropriate for arranging the immediate cont
 var effectiveUserInterfaceLayoutDirection: UIUserInterfaceLayoutDirection { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UIUserInterfaceLayoutDirection effectiveUserInterfaceLayoutDirection;
+```
+
 #### Discussion
 
 When a view’s immediate content is being arranged or drawn, you should always consult the value of this property. In addition, note that you can’t assume that the value propagates through the view’s subtree.
 
 ## See Also
 
-- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](uiview/overrideuserinterfacestyle.md)
+### Adjusting the user interface
+- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](./overrideuserinterfacestyle.md)
   The user interface style adopted by the view and all of its subviews.
-- [var semanticContentAttribute: UISemanticContentAttribute](uiview/semanticcontentattribute.md)
+- [var semanticContentAttribute: UISemanticContentAttribute](./semanticcontentattribute.md)
   A semantic description of the view’s contents, used to determine whether the view should be flipped when switching between left-to-right and right-to-left layouts.
-- [class func userInterfaceLayoutDirection(for: UISemanticContentAttribute) -> UIUserInterfaceLayoutDirection](uiview/userinterfacelayoutdirection(for:).md)
+- [class func userInterfaceLayoutDirection(for: UISemanticContentAttribute) -> UIUserInterfaceLayoutDirection](./userinterfacelayoutdirection%28for%29.md)
   Returns the user interface direction for the given semantic content attribute.
-- [class func userInterfaceLayoutDirection(for: UISemanticContentAttribute, relativeTo: UIUserInterfaceLayoutDirection) -> UIUserInterfaceLayoutDirection](uiview/userinterfacelayoutdirection(for:relativeto:).md)
+- [class func userInterfaceLayoutDirection(for: UISemanticContentAttribute, relativeTo: UIUserInterfaceLayoutDirection) -> UIUserInterfaceLayoutDirection](./userinterfacelayoutdirection%28for,relativeto%29.md)
   Returns the layout direction implied by the specified semantic content attribute, relative to the specified layout direction.
 
 

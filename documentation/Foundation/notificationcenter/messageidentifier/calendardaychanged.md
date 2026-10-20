@@ -1,7 +1,8 @@
 # calendarDayChanged
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier for a message about a change in calendar day.
 
@@ -20,15 +21,18 @@ An identifier for a message about a change in calendar day.
 static var calendarDayChanged: NotificationCenter.BaseMessageIdentifier<Calendar.CalendarDayChangedMessage> { get }
 ```
 
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<Calendar.CalendarDayChangedMessage>`.
+
 #### Discussion
 
-Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Calendar.CalendarDayChangedMessage`](calendar/calendardaychangedmessage.md).
+Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Calendar.CalendarDayChangedMessage`](../../calendar/calendardaychangedmessage.md).
 
 ## See Also
 
-- [static var systemClockDidChange: NotificationCenter.BaseMessageIdentifier<Date.SystemClockDidChangeMessage>](notificationcenter/messageidentifier/systemclockdidchange.md)
+### Identifying calendar, date, and time zone messages
+- [static var systemClockDidChange: NotificationCenter.BaseMessageIdentifier<Date.SystemClockDidChangeMessage>](./systemclockdidchange.md)
   An identifier for a message about a change in the system clock.
-- [static var systemTimeZoneDidChange: NotificationCenter.BaseMessageIdentifier<TimeZone.SystemTimeZoneDidChangeMessage>](notificationcenter/messageidentifier/systemtimezonedidchange.md)
+- [static var systemTimeZoneDidChange: NotificationCenter.BaseMessageIdentifier<TimeZone.SystemTimeZoneDidChangeMessage>](./systemtimezonedidchange.md)
   An identifier for a message about a change in the system time zone.
 
 

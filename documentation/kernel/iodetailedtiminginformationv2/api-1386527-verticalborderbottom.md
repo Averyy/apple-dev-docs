@@ -1,7 +1,8 @@
 # verticalBorderBottom
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 Number of lines in bottom vertical border.
 
@@ -10,7 +11,7 @@ Number of lines in bottom vertical border.
 
 ## Declaration
 
-```swift
+```c
 UInt32 verticalBorderBottom;
 ```
 

@@ -5,12 +5,12 @@
 ## Topics
 
 ### Constants
-- [var kAppleMenuFolderIconResource: Int](kapplemenufoldericonresource.md)
-- [var kGenericExtensionIconResource: Int](kgenericextensioniconresource.md)
-- [var kGenericPreferencesIconResource: Int](kgenericpreferencesiconresource.md)
-- [var kGenericQueryDocumentIconResource: Int](kgenericquerydocumenticonresource.md)
-- [var kHelpIconResource: Int](khelpiconresource.md)
-- [var kSystemFolderIconResource: Int](ksystemfoldericonresource.md)
+- [var kAppleMenuFolderIconResource: Int](../../kapplemenufoldericonresource.md)
+- [var kGenericExtensionIconResource: Int](../../kgenericextensioniconresource.md)
+- [var kGenericPreferencesIconResource: Int](../../kgenericpreferencesiconresource.md)
+- [var kGenericQueryDocumentIconResource: Int](../../kgenericquerydocumenticonresource.md)
+- [var kHelpIconResource: Int](../../khelpiconresource.md)
+- [var kSystemFolderIconResource: Int](../../ksystemfoldericonresource.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # IOUSBHostCIPortCapabilitiesMessageControlConnectorType
 
 **Framework**: IOUSBHost  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 14.0+
@@ -13,14 +14,19 @@
 var IOUSBHostCIPortCapabilitiesMessageControlConnectorType: UInt32 { get }
 ```
 
+```c
+IOUSBHostCIPortCapabilitiesMessageControlConnectorType
+```
+
 ## See Also
 
-- [var IOUSBHostCIPortCapabilitiesMessageControlConnectorTypePhase: UInt32](iousbhostciportcapabilitiesmessagecontrolconnectortypephase.md)
-- [var IOUSBHostCIPortCapabilitiesMessageControlInternalConnector: UInt32](iousbhostciportcapabilitiesmessagecontrolinternalconnector.md)
-- [var IOUSBHostCIPortCapabilitiesMessageControlPortNumber: UInt32](iousbhostciportcapabilitiesmessagecontrolportnumber.md)
-- [var IOUSBHostCIPortCapabilitiesMessageControlPortNumberPhase: UInt32](iousbhostciportcapabilitiesmessagecontrolportnumberphase.md)
-- [var IOUSBHostCIPortCapabilitiesMessageData0MaxPower: UInt32](iousbhostciportcapabilitiesmessagedata0maxpower.md)
-- [var IOUSBHostCIPortCapabilitiesMessageData0MaxPowerPhase: UInt32](iousbhostciportcapabilitiesmessagedata0maxpowerphase.md)
+### Constants
+- [var IOUSBHostCIPortCapabilitiesMessageControlConnectorTypePhase: UInt32](./iousbhostciportcapabilitiesmessagecontrolconnectortypephase.md)
+- [var IOUSBHostCIPortCapabilitiesMessageControlInternalConnector: UInt32](./iousbhostciportcapabilitiesmessagecontrolinternalconnector.md)
+- [var IOUSBHostCIPortCapabilitiesMessageControlPortNumber: UInt32](./iousbhostciportcapabilitiesmessagecontrolportnumber.md)
+- [var IOUSBHostCIPortCapabilitiesMessageControlPortNumberPhase: UInt32](./iousbhostciportcapabilitiesmessagecontrolportnumberphase.md)
+- [var IOUSBHostCIPortCapabilitiesMessageData0MaxPower: UInt32](./iousbhostciportcapabilitiesmessagedata0maxpower.md)
+- [var IOUSBHostCIPortCapabilitiesMessageData0MaxPowerPhase: UInt32](./iousbhostciportcapabilitiesmessagedata0maxpowerphase.md)
 
 
 ---

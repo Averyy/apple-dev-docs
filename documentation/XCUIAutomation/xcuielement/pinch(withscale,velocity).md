@@ -1,21 +1,26 @@
 # pinch(withScale:velocity:)
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sends a pinching gesture with two touches.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- watchOS
 - Xcode 16.3+
 
 ## Declaration
 
 ```swift
 func pinch(withScale scale: CGFloat, velocity: CGFloat)
+```
+
+```objc
+- (void) pinchWithScale:(CGFloat) scale velocity:(CGFloat) velocity;
 ```
 
 #### Discussion
@@ -29,25 +34,26 @@ The system makes a best effort to synthesize the requested scale and velocity, b
 
 ## See Also
 
-- [func swipeLeft()](xcuielement/swipeleft.md)
+### Performing gestures
+- [func swipeLeft()](./swipeleft%28%29.md)
   Sends a swipe-left gesture.
-- [func swipeLeft(velocity: XCUIGestureVelocity)](xcuielement/swipeleft(velocity:).md)
+- [func swipeLeft(velocity: XCUIGestureVelocity)](./swipeleft%28velocity%29.md)
   Sends a swipe-left gesture with a velocity you specify.
-- [func swipeRight()](xcuielement/swiperight.md)
+- [func swipeRight()](./swiperight%28%29.md)
   Sends a swipe-right gesture.
-- [func swipeRight(velocity: XCUIGestureVelocity)](xcuielement/swiperight(velocity:).md)
+- [func swipeRight(velocity: XCUIGestureVelocity)](./swiperight%28velocity%29.md)
   Sends a swipe-right gesture with a velocity you specify.
-- [func swipeUp()](xcuielement/swipeup.md)
+- [func swipeUp()](./swipeup%28%29.md)
   Sends a swipe-up gesture.
-- [func swipeUp(velocity: XCUIGestureVelocity)](xcuielement/swipeup(velocity:).md)
+- [func swipeUp(velocity: XCUIGestureVelocity)](./swipeup%28velocity%29.md)
   Sends a swipe-up gesture with a velocity you specify.
-- [func swipeDown()](xcuielement/swipedown.md)
+- [func swipeDown()](./swipedown%28%29.md)
   Sends a swipe-down gesture.
-- [func swipeDown(velocity: XCUIGestureVelocity)](xcuielement/swipedown(velocity:).md)
+- [func swipeDown(velocity: XCUIGestureVelocity)](./swipedown%28velocity%29.md)
   Sends a swipe-down gesture with a velocity you specify.
-- [func rotate(CGFloat, withVelocity: CGFloat)](xcuielement/rotate(_:withvelocity:).md)
+- [func rotate(CGFloat, withVelocity: CGFloat)](./rotate%28_,withvelocity%29.md)
   Sends a rotation gesture with two touches.
-- [struct XCUIGestureVelocity](xcuigesturevelocity.md)
+- [struct XCUIGestureVelocity](../xcuigesturevelocity.md)
   A value that describes how fast a gesture moves across the screen, in pixels per second.
 
 

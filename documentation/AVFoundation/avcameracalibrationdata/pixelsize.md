@@ -1,7 +1,8 @@
 # pixelSize
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size, in millimeters, of one image pixel.
 
@@ -19,13 +20,18 @@ The size, in millimeters, of one image pixel.
 var pixelSize: Float { get }
 ```
 
+```objc
+@property (nonatomic, readonly) float pixelSize;
+```
+
 ## See Also
 
-- [var intrinsicMatrix: matrix_float3x3](avcameracalibrationdata/intrinsicmatrix.md)
+### Mapping pixels to scene geometry
+- [var intrinsicMatrix: matrix_float3x3](./intrinsicmatrix.md)
   A matrix that relates a camera’s internal properties to an ideal pinhole-camera model.
-- [var intrinsicMatrixReferenceDimensions: CGSize](avcameracalibrationdata/intrinsicmatrixreferencedimensions.md)
+- [var intrinsicMatrixReferenceDimensions: CGSize](./intrinsicmatrixreferencedimensions.md)
   The image dimensions to which the camera’s intrinsic matrix values are relative.
-- [var extrinsicMatrix: matrix_float4x3](avcameracalibrationdata/extrinsicmatrix.md)
+- [var extrinsicMatrix: matrix_float4x3](./extrinsicmatrix.md)
   A matrix relating a camera’s position and orientation to a world or scene coordinate system.
 
 

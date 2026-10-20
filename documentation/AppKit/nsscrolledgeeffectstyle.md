@@ -1,7 +1,8 @@
 # NSScrollEdgeEffectStyle
 
 **Framework**: AppKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Styles for a scroll view’s edge effect.
 
@@ -15,32 +16,37 @@ Styles for a scroll view’s edge effect.
 class NSScrollEdgeEffectStyle
 ```
 
+```objc
+@interface NSScrollEdgeEffectStyle : NSObject
+```
+
 ## Topics
 
 ### Type Properties
-- [class var automatic: NSScrollEdgeEffectStyle](nsscrolledgeeffectstyle/automatic.md)
+- [class var automatic: NSScrollEdgeEffectStyle](./nsscrolledgeeffectstyle/automatic.md)
   The automatic scroll edge effect style.
-- [class var hard: NSScrollEdgeEffectStyle](nsscrolledgeeffectstyle/hard.md)
+- [class var hard: NSScrollEdgeEffectStyle](./nsscrolledgeeffectstyle/hard.md)
   A scroll edge effect with a hard cutoff.
-- [class var soft: NSScrollEdgeEffectStyle](nsscrolledgeeffectstyle/soft.md)
+- [class var soft: NSScrollEdgeEffectStyle](./nsscrolledgeeffectstyle/soft.md)
   A scroll edge effect with a soft edge.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [var preferredScrollEdgeEffectStyle: NSScrollEdgeEffectStyle](nstitlebaraccessoryviewcontroller/preferredscrolledgeeffectstyle.md)
+### Configuring the scroll edge effect
+- [var preferredScrollEdgeEffectStyle: NSScrollEdgeEffectStyle](./nstitlebaraccessoryviewcontroller/preferredscrolledgeeffectstyle.md)
   The titlebar accessory’s preferred effect for content scrolling behind it.
 
 

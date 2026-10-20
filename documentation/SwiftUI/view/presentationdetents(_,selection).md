@@ -1,7 +1,8 @@
 # presentationDetents(_:selection:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the available detents for the enclosing sheet, giving you programmatic control of the currently selected detent.
 
@@ -23,7 +24,7 @@ func presentationDetents(_ detents: Set<PresentationDetent>, selection: Binding<
 
 #### Discussion
 
-By default, sheets support the [`large`](presentationdetent/large.md) detent.
+By default, sheets support the [`large`](../presentationdetent/large.md) detent.
 
 ```swift
 struct ContentView: View {
@@ -48,25 +49,26 @@ struct ContentView: View {
 ## Parameters
 
 - `detents`: A set of supported detents for the sheet. If you provide more that one detent, people can drag the sheet to resize it.
-- `selection`: A [`Binding`](binding.md) to the currently selected detent. Ensure that the value matches one of the detents that you provide for the `detents` parameter.
+- `selection`: A [`Binding`](../binding.md) to the currently selected detent. Ensure that the value matches one of the detents that you provide for the `detents` parameter.
 
 ## See Also
 
-- [func presentationDetents(Set<PresentationDetent>) -> some View](view/presentationdetents(_:).md)
+### Configuring a sheet’s height and placement
+- [func presentationDetents(Set<PresentationDetent>) -> some View](./presentationdetents%28_%29.md)
   Sets the available detents for the enclosing sheet.
-- [func presentationContentInteraction(PresentationContentInteraction) -> some View](view/presentationcontentinteraction(_:).md)
+- [func presentationContentInteraction(PresentationContentInteraction) -> some View](./presentationcontentinteraction%28_%29.md)
   Configures the behavior of swipe gestures on a presentation.
-- [func presentationDragIndicator(Visibility) -> some View](view/presentationdragindicator(_:).md)
+- [func presentationDragIndicator(Visibility) -> some View](./presentationdragindicator%28_%29.md)
   Sets the visibility of the drag indicator on top of a sheet.
-- [struct PresentationDetent](presentationdetent.md)
+- [struct PresentationDetent](../presentationdetent.md)
   A type that represents a height where a sheet naturally rests.
-- [protocol CustomPresentationDetent](custompresentationdetent.md)
+- [protocol CustomPresentationDetent](../custompresentationdetent.md)
   The definition of a custom detent with a calculated height.
-- [struct PresentationContentInteraction](presentationcontentinteraction.md)
+- [struct PresentationContentInteraction](../presentationcontentinteraction.md)
   A behavior that you can use to influence how a presentation responds to swipe gestures.
-- [func presentationPlacement(PresentationPlacement) -> some View](view/presentationplacement(_:).md)
+- [func presentationPlacement(PresentationPlacement) -> some View](./presentationplacement%28_%29.md)
   Sets the placement of a presentation within the presenting view.
-- [struct PresentationPlacement](presentationplacement.md)
+- [struct PresentationPlacement](../presentationplacement.md)
   The placement of a presentation within the presenting view.
 
 

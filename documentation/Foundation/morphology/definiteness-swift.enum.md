@@ -1,7 +1,8 @@
 # Morphology.Definiteness
 
 **Framework**: Foundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -21,21 +22,21 @@ enum Definiteness
 ## Topics
 
 ### Enumeration Cases
-- [Morphology.Definiteness.definite](morphology/definiteness-swift.enum/definite.md)
-- [Morphology.Definiteness.indefinite](morphology/definiteness-swift.enum/indefinite.md)
+- [Morphology.Definiteness.definite](./definiteness-swift.enum/definite.md)
+- [Morphology.Definiteness.indefinite](./definiteness-swift.enum/indefinite.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

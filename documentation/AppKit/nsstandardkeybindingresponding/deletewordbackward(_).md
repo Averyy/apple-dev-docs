@@ -1,17 +1,22 @@
 # deleteWordBackward(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the word preceding the current insertion point.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func deleteWordBackward(_ sender: Any?)
+```
+
+```objc
+- (void) deleteWordBackward:(id) sender;
 ```
 
 #### Discussion
@@ -20,20 +25,21 @@ If the insertion point is in the middle of a word, this method deletes only the 
 
 ## See Also
 
-- [func deleteBackward(Any?)](nsstandardkeybindingresponding/deletebackward(_:).md)
+### Deleting Content
+- [func deleteBackward(Any?)](./deletebackward%28_%29.md)
   Deletes content moving backward from the current insertion point.
-- [func deleteBackwardByDecomposingPreviousCharacter(Any?)](nsstandardkeybindingresponding/deletebackwardbydecomposingpreviouscharacter(_:).md)
-- [func deleteForward(Any?)](nsstandardkeybindingresponding/deleteforward(_:).md)
-- [func deleteToBeginningOfLine(Any?)](nsstandardkeybindingresponding/deletetobeginningofline(_:).md)
+- [func deleteBackwardByDecomposingPreviousCharacter(Any?)](./deletebackwardbydecomposingpreviouscharacter%28_%29.md)
+- [func deleteForward(Any?)](./deleteforward%28_%29.md)
+- [func deleteToBeginningOfLine(Any?)](./deletetobeginningofline%28_%29.md)
   Deletes content from the insertion point to the beginning of the current line.
-- [func deleteToBeginningOfParagraph(Any?)](nsstandardkeybindingresponding/deletetobeginningofparagraph(_:).md)
+- [func deleteToBeginningOfParagraph(Any?)](./deletetobeginningofparagraph%28_%29.md)
   Deletes content from the insertion point to the beginning of the current paragraph.
-- [func deleteToEndOfLine(Any?)](nsstandardkeybindingresponding/deletetoendofline(_:).md)
+- [func deleteToEndOfLine(Any?)](./deletetoendofline%28_%29.md)
   Deletes content from the insertion point to the end of the current line.
-- [func deleteToEndOfParagraph(Any?)](nsstandardkeybindingresponding/deletetoendofparagraph(_:).md)
+- [func deleteToEndOfParagraph(Any?)](./deletetoendofparagraph%28_%29.md)
   Deletes content from the insertion point to the end of the current paragraph.
-- [func deleteWordForward(Any?)](nsstandardkeybindingresponding/deletewordforward(_:).md)
-- [func yank(Any?)](nsstandardkeybindingresponding/yank(_:).md)
+- [func deleteWordForward(Any?)](./deletewordforward%28_%29.md)
+- [func yank(Any?)](./yank%28_%29.md)
   Deletes the current selection, placing it in a temporary buffer, such as the Clipboard.
 
 

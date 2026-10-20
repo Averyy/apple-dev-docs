@@ -1,16 +1,17 @@
 # UITextField.BorderStyle
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of border around the text field.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -18,49 +19,54 @@ The type of border around the text field.
 enum BorderStyle
 ```
 
+```c
+enum UITextBorderStyle : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UITextField.BorderStyle.none](uitextfield/borderstyle-swift.enum/none.md)
+- [UITextField.BorderStyle.none](./borderstyle-swift.enum/none.md)
   The text field does not display a border.
-- [UITextField.BorderStyle.line](uitextfield/borderstyle-swift.enum/line.md)
+- [UITextField.BorderStyle.line](./borderstyle-swift.enum/line.md)
   Displays a thin rectangle around the text field.
-- [UITextField.BorderStyle.bezel](uitextfield/borderstyle-swift.enum/bezel.md)
+- [UITextField.BorderStyle.bezel](./borderstyle-swift.enum/bezel.md)
   Displays a bezel-style border for the text field. This style is typically used for standard data-entry fields.
-- [UITextField.BorderStyle.roundedRect](uitextfield/borderstyle-swift.enum/roundedrect.md)
+- [UITextField.BorderStyle.roundedRect](./borderstyle-swift.enum/roundedrect.md)
   Displays a rounded-style border for the text field.
 ### Initializers
-- [init?(rawValue: Int)](uitextfield/borderstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./borderstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var text: String?](uitextfield/text.md)
+### Configuring the text attributes
+- [var text: String?](./text.md)
   The text that the text field displays.
-- [var attributedText: NSAttributedString?](uitextfield/attributedtext.md)
+- [var attributedText: NSAttributedString?](./attributedtext.md)
   The styled text that the text field displays.
-- [var placeholder: String?](uitextfield/placeholder.md)
+- [var placeholder: String?](./placeholder.md)
   The string that displays when there is no other text in the text field.
-- [var attributedPlaceholder: NSAttributedString?](uitextfield/attributedplaceholder.md)
+- [var attributedPlaceholder: NSAttributedString?](./attributedplaceholder.md)
   The styled string that displays when there is no other text in the text field.
-- [var defaultTextAttributes: [NSAttributedString.Key : Any]](uitextfield/defaulttextattributes.md)
+- [var defaultTextAttributes: [NSAttributedString.Key : Any]](./defaulttextattributes.md)
   The default attributes to apply to the text.
-- [var font: UIFont?](uitextfield/font.md)
+- [var font: UIFont?](./font.md)
   The font of the text.
-- [var textColor: UIColor?](uitextfield/textcolor.md)
+- [var textColor: UIColor?](./textcolor.md)
   The color of the text.
-- [var textAlignment: NSTextAlignment](uitextfield/textalignment.md)
+- [var textAlignment: NSTextAlignment](./textalignment.md)
   The technique for aligning the text.
-- [var typingAttributes: [NSAttributedString.Key : Any]?](uitextfield/typingattributes.md)
+- [var typingAttributes: [NSAttributedString.Key : Any]?](./typingattributes.md)
   The attributes to apply to new text that the user enters.
 
 

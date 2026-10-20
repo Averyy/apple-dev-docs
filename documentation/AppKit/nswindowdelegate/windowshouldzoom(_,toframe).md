@@ -1,12 +1,13 @@
 # windowShouldZoom(_:toFrame:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the specified window should zoom to the specified frame.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,9 +16,13 @@ Asks the delegate whether the specified window should zoom to the specified fram
 optional func windowShouldZoom(_ window: NSWindow, toFrame newFrame: NSRect) -> Bool
 ```
 
+```objc
+- (BOOL) windowShouldZoom:(NSWindow *) window toFrame:(NSRect) newFrame;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) to allow `window`’s frame to become `newFrame`; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) to allow `window`’s frame to become `newFrame`; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -26,8 +31,9 @@ optional func windowShouldZoom(_ window: NSWindow, toFrame newFrame: NSRect) -> 
 
 ## See Also
 
-- [func windowWillUseStandardFrame(NSWindow, defaultFrame: NSRect) -> NSRect](nswindowdelegate/windowwillusestandardframe(_:defaultframe:).md)
-  Called by `NSWindow`’s [`zoom(_:)`](nswindow/zoom(_:).md) method while determining the frame a window may be zoomed to.
+### Zooming Window
+- [func windowWillUseStandardFrame(NSWindow, defaultFrame: NSRect) -> NSRect](./windowwillusestandardframe%28_,defaultframe%29.md)
+  Called by `NSWindow`’s [`zoom(_:)`](../nswindow/zoom%28_%29.md) method while determining the frame a window may be zoomed to.
 
 
 ---

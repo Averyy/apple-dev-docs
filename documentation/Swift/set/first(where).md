@@ -1,7 +1,8 @@
 # first(where:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the first element of the sequence that satisfies the given predicate.
 
@@ -36,7 +37,7 @@ if let firstNegative = numbers.first(where: { $0 < 0 }) {
 // Prints "The first negative number is -2."
 ```
 
-> **Note**: O(*n*), where *n* is the length of the sequence.
+> **Complexity**: O(*n*), where *n* is the length of the sequence.
 
 ## Parameters
 
@@ -44,25 +45,26 @@ if let firstNegative = numbers.first(where: { $0 < 0 }) {
 
 ## See Also
 
-- [subscript(Set<Element>.Index) -> Element](set/subscript(_:).md)
+### Finding Elements
+- [subscript(Set<Element>.Index) -> Element](./subscript%28_%29.md)
   Accesses the member at the given position.
-- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](set/contains(where:).md)
+- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](./contains%28where%29.md)
   Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
-- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](set/allsatisfy(_:).md)
+- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](./allsatisfy%28_%29.md)
   Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.
-- [func firstIndex(of: Element) -> Set<Element>.Index?](set/firstindex(of:).md)
+- [func firstIndex(of: Element) -> Set<Element>.Index?](./firstindex%28of%29.md)
   Returns the index of the given element in the set, or `nil` if the element is not a member of the set.
-- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](set/firstindex(where:).md)
+- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./firstindex%28where%29.md)
   Returns the first index in which an element of the collection satisfies the given predicate.
-- [func index(of: Self.Element) -> Self.Index?](set/index(of:).md)
+- [func index(of: Self.Element) -> Self.Index?](./index%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func min() -> Self.Element?](set/min.md)
+- [func min() -> Self.Element?](./min%28%29.md)
   Returns the minimum element in the sequence.
-- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](set/min(by:).md)
+- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./min%28by%29.md)
   Returns the minimum element in the sequence, using the given predicate as the comparison between elements.
-- [func max() -> Self.Element?](set/max.md)
+- [func max() -> Self.Element?](./max%28%29.md)
   Returns the maximum element in the sequence.
-- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](set/max(by:).md)
+- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./max%28by%29.md)
   Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
 
 

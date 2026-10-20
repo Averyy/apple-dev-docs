@@ -1,14 +1,15 @@
 # iis_tree_small
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 natural_t iis_tree_small;
 ```
 

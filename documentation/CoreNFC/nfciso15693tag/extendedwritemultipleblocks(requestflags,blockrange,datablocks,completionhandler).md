@@ -1,7 +1,8 @@
 # extendedWriteMultipleBlocks(requestFlags:blockRange:dataBlocks:completionHandler:)
 
 **Framework**: Core NFC  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 14.0+

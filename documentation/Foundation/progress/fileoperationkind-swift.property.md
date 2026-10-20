@@ -1,7 +1,8 @@
 # fileOperationKind
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The kind of file operation for the progress object.
 
@@ -20,21 +21,26 @@ The kind of file operation for the progress object.
 var fileOperationKind: Progress.FileOperationKind? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSProgressFileOperationKind fileOperationKind;
+```
+
 #### Discussion
 
-Set this value when the [`kind`](progress/kind.md) property is [`file`](progresskind/file.md) to describe the kind of file operation.
+Set this value when the [`kind`](./kind.md) property is [`file`](../progresskind/file.md) to describe the kind of file operation.
 
-If present, [`Progress`](progress.md) presents additional information in its localized description by setting a value in the `userInfo` dictionary.
+If present, [`Progress`](../progress.md) presents additional information in its localized description by setting a value in the `userInfo` dictionary.
 
 ## See Also
 
-- [var fileURL: URL?](progress/fileurl.md)
+### Inspecting File Operation Progress Information
+- [var fileURL: URL?](./fileurl.md)
   A URL that represents the file for the current progress object.
-- [var fileTotalCount: Int?](progress/filetotalcount.md)
+- [var fileTotalCount: Int?](./filetotalcount.md)
   The total number of files for a file progress object.
-- [var fileCompletedCount: Int?](progress/filecompletedcount.md)
+- [var fileCompletedCount: Int?](./filecompletedcount.md)
   The number of completed files for a file progress object.
-- [Progress.FileOperationKind](progress/fileoperationkind-swift.struct.md)
+- [Progress.FileOperationKind](./fileoperationkind-swift.struct.md)
   The kind of file operation.
 
 

@@ -1,7 +1,8 @@
 # kCFSOCKSVersionKey
 
 **Framework**: CFNetwork  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -17,21 +18,26 @@
 let kCFSOCKSVersionKey: CFString
 ```
 
+```c
+extern CFStringRef const kCFSOCKSVersionKey;
+```
+
 #### Discussion
 
 If an error of type `kCFSOCKSErrorUnsupportedServerVersion` is returned, querying this key returns the SOCKS version in use by the current connection.
 
 ## See Also
 
-- [let kCFURLErrorFailingURLErrorKey: CFString](kcfurlerrorfailingurlerrorkey.md)
+### Constants
+- [let kCFURLErrorFailingURLErrorKey: CFString](./kcfurlerrorfailingurlerrorkey.md)
   The URL that caused the load to fail as a `CFURLRef` object.
-- [let kCFURLErrorFailingURLStringErrorKey: CFString](kcfurlerrorfailingurlstringerrorkey.md)
+- [let kCFURLErrorFailingURLStringErrorKey: CFString](./kcfurlerrorfailingurlstringerrorkey.md)
   The URL that caused the load to fail as a `CFStringRef` object.
-- [let kCFGetAddrInfoFailureKey: CFString](kcfgetaddrinfofailurekey.md)
-- [let kCFSOCKSStatusCodeKey: CFString](kcfsocksstatuscodekey.md)
-- [let kCFSOCKSNegotiationMethodKey: CFString](kcfsocksnegotiationmethodkey.md)
-- [let kCFDNSServiceFailureKey: CFString](kcfdnsservicefailurekey.md)
-- [let kCFFTPStatusCodeKey: CFString](kcfftpstatuscodekey.md)
+- [let kCFGetAddrInfoFailureKey: CFString](./kcfgetaddrinfofailurekey.md)
+- [let kCFSOCKSStatusCodeKey: CFString](./kcfsocksstatuscodekey.md)
+- [let kCFSOCKSNegotiationMethodKey: CFString](./kcfsocksnegotiationmethodkey.md)
+- [let kCFDNSServiceFailureKey: CFString](./kcfdnsservicefailurekey.md)
+- [let kCFFTPStatusCodeKey: CFString](./kcfftpstatuscodekey.md)
 
 
 ---

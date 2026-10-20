@@ -1,7 +1,8 @@
 # IOSurfaceMemoryLedgerTags.network
 
 **Framework**: IOSurface  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 11.0+
@@ -17,12 +18,17 @@
 case network
 ```
 
+```c
+kIOSurfaceMemoryLedgerTagNetwork
+```
+
 ## See Also
 
-- [IOSurfaceMemoryLedgerTags.default](iosurfacememoryledgertags/default.md)
-- [IOSurfaceMemoryLedgerTags.graphics](iosurfacememoryledgertags/graphics.md)
-- [IOSurfaceMemoryLedgerTags.media](iosurfacememoryledgertags/media.md)
-- [IOSurfaceMemoryLedgerTags.neural](iosurfacememoryledgertags/neural.md)
+### Enumeration Cases
+- [IOSurfaceMemoryLedgerTags.default](./default.md)
+- [IOSurfaceMemoryLedgerTags.graphics](./graphics.md)
+- [IOSurfaceMemoryLedgerTags.media](./media.md)
+- [IOSurfaceMemoryLedgerTags.neural](./neural.md)
 
 
 ---

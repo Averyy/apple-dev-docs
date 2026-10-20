@@ -1,14 +1,15 @@
 # writeXPRAM
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 IOReturn writeXPRAM(IOByteCount offset, UInt8 *buffer, IOByteCount length);
 ```
 

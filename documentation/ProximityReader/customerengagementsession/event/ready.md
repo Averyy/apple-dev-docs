@@ -1,7 +1,8 @@
 # CustomerEngagementSession.Event.ready
 
 **Framework**: ProximityReader  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An event indicating that the peer is ready to accept requests.
 

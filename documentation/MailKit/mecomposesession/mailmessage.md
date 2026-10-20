@@ -1,7 +1,8 @@
 # mailMessage
 
 **Framework**: MailKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The properties of the mail message, such as the subject and recipients.
 
@@ -12,6 +13,10 @@ The properties of the mail message, such as the subject and recipients.
 
 ```swift
 var mailMessage: MEMessage { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly) MEMessage * mailMessage;
 ```
 
 

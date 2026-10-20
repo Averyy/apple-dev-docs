@@ -1,7 +1,8 @@
 # readAttributeSerialNumber(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeSerialNumber(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeSerialNumber() async throws -> String
+```
+
+```objc
+- (void) readAttributeSerialNumberWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

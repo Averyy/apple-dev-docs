@@ -1,7 +1,8 @@
 # sharingService(_:sourceFrameOnScreenForShareItem:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Invoked when the sharing service is performed and the sharing window is displayed, to present a transition between the original items and the sharing window.
 
@@ -13,6 +14,10 @@ Invoked when the sharing service is performed and the sharing window is displaye
 ```swift
 @MainActor
 optional func sharingService(_ sharingService: NSSharingService, sourceFrameOnScreenForShareItem item: Any) -> NSRect
+```
+
+```objc
+- (NSRect) sharingService:(NSSharingService *) sharingService sourceFrameOnScreenForShareItem:(id) item;
 ```
 
 #### Return Value
@@ -44,11 +49,12 @@ The following is an example implementation of this method:
 
 ## See Also
 
-- [func sharingService(NSSharingService, transitionImageForShareItem: Any, contentRect: UnsafeMutablePointer<NSRect>) -> NSImage?](nssharingservicedelegate/sharingservice(_:transitionimageforshareitem:contentrect:).md)
+### Customizing Transition Animation
+- [func sharingService(NSSharingService, transitionImageForShareItem: Any, contentRect: UnsafeMutablePointer<NSRect>) -> NSImage?](./sharingservice%28_,transitionimageforshareitem,contentrect%29.md)
   Invoked to allow returning a custom transition image when sharing an item.
-- [func sharingService(NSSharingService, sourceWindowForShareItems: [Any], sharingContentScope: UnsafeMutablePointer<NSSharingService.SharingContentScope>) -> NSWindow?](nssharingservicedelegate/sharingservice(_:sourcewindowforshareitems:sharingcontentscope:).md)
+- [func sharingService(NSSharingService, sourceWindowForShareItems: [Any], sharingContentScope: UnsafeMutablePointer<NSSharingService.SharingContentScope>) -> NSWindow?](./sharingservice%28_,sourcewindowforshareitems,sharingcontentscope%29.md)
   Returns the window that contained the share items.
-- [NSSharingService.SharingContentScope](nssharingservice/sharingcontentscope.md)
+- [NSSharingService.SharingContentScope](../nssharingservice/sharingcontentscope.md)
   The sharing scope constants specify the nature of the things you are sharing.
 
 

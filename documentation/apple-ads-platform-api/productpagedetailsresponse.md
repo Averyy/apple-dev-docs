@@ -1,7 +1,8 @@
 # ProductPageDetailsResponse
 
 **Framework**: Apple Ads Platform API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Response object for a single product page retrieval.
 
@@ -10,13 +11,13 @@ Response object for a single product page retrieval.
 
 ## Declaration
 
-```swift
+```
 object ProductPageDetailsResponse
 ```
 
 #### Discussion
 
-The [`Get Product Page by ID`](get-product-page-by-id.md) endpoint returns `ProductPageDetailsResponse` as the top-level envelope.
+The [`Get Product Page by ID`](./get-product-page-by-id.md) endpoint returns `ProductPageDetailsResponse` as the top-level envelope.
 
 ##### Example
 
@@ -36,20 +37,20 @@ The [`Get Product Page by ID`](get-product-page-by-id.md) endpoint returns `Prod
 
 ## Properties
 
-- `result` (ProductPageDetails): On success, the [`ProductPageDetails`](productpagedetails.md) object for the requested product page. Read-only.
-- `error` (Error): Populated only when the request fails. Omitted entirely on success. See [`Error`](error.md).
+- `result` (ProductPageDetails): On success, the [`ProductPageDetails`](./productpagedetails.md) object for the requested product page. Read-only.
+- `error` (Error): Populated only when the request fails. Omitted entirely on success. See [`Error`](./error.md).
 
 ## See Also
 
-- [object ProductPageDetails](productpagedetails.md)
+- [object ProductPageDetails](./productpagedetails.md)
   Product page metadata for a Default Product Page, Custom Product Page, or Product Page Optimization (PPO) variant.
-- [object ProductPageDetailsQueryResponse](productpagedetailsqueryresponse.md)
+- [object ProductPageDetailsQueryResponse](./productpagedetailsqueryresponse.md)
   Paginated response object for the product page details query.
-- [object ProductPageLocaleDetails](productpagelocaledetails.md)
+- [object ProductPageLocaleDetails](./productpagelocaledetails.md)
   Locale-specific metadata for an App Store product page.
-- [object ProductPageLocaleDetailsQueryResponse](productpagelocaledetailsqueryresponse.md)
+- [object ProductPageLocaleDetailsQueryResponse](./productpagelocaledetailsqueryresponse.md)
   Paginated response object for the product page locale details query.
-- [object DeviceAssetGroup](deviceassetgroup.md)
+- [object DeviceAssetGroup](./deviceassetgroup.md)
   Represents assets organized by device type with fallback device information.
 
 

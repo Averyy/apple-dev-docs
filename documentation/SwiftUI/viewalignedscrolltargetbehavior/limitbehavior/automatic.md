@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The automatic limit behavior.
 
@@ -26,9 +27,10 @@ By default, the behavior will be limited in compact horizontal size classes and 
 
 ## See Also
 
-- [static var always: ViewAlignedScrollTargetBehavior.LimitBehavior](viewalignedscrolltargetbehavior/limitbehavior/always.md)
+### Getting the limit behavior
+- [static var always: ViewAlignedScrollTargetBehavior.LimitBehavior](./always.md)
   The always limit behavior.
-- [static var never: ViewAlignedScrollTargetBehavior.LimitBehavior](viewalignedscrolltargetbehavior/limitbehavior/never.md)
+- [static var never: ViewAlignedScrollTargetBehavior.LimitBehavior](./never.md)
   The never limit behavior.
 
 

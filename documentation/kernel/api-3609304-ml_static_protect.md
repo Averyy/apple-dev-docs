@@ -1,14 +1,15 @@
 # ml_static_protect
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t ml_static_protect(vm_offset_t start, vm_size_t size, vm_prot_t new_prot);
 ```
 

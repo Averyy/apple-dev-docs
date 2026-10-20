@@ -1,7 +1,8 @@
 # cmAlphaSpace
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An alpha channel component is added to the color value. 
 

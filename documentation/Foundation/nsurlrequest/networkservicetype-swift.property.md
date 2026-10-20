@@ -1,7 +1,8 @@
 # networkServiceType
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The network service type of the request.
 
@@ -20,15 +21,21 @@ The network service type of the request.
 var networkServiceType: NSURLRequest.NetworkServiceType { get }
 ```
 
+```objc
+@property (readonly) NSURLRequestNetworkServiceType networkServiceType;
+```
+
 #### Discussion
 
 The network service type provides a hint to the operating system about what the underlying traffic is used for. This hint enhances the system’s ability to prioritize traffic, determine how quickly it needs to wake up the cellular or Wi-Fi radio, and so on. By providing accurate information, you improve the ability of the system to optimally balance battery life, performance, and other considerations.
 
 ## See Also
 
-- [var networkServiceType: NSURLRequest.NetworkServiceType](nsmutableurlrequest/networkservicetype.md)
+### Related Documentation
+- [var networkServiceType: NSURLRequest.NetworkServiceType](../nsmutableurlrequest/networkservicetype.md)
   The network service type of the connection.
-- [NSURLRequest.NetworkServiceType](nsurlrequest/networkservicetype-swift.enum.md)
+### Accessing the service type
+- [NSURLRequest.NetworkServiceType](./networkservicetype-swift.enum.md)
   Constants that specify how a request uses network resources.
 
 

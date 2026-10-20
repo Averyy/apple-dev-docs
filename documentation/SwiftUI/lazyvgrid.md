@@ -1,7 +1,8 @@
 # LazyVGrid
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container view that arranges its child views in a grid that grows vertically, creating items only as needed.
 
@@ -23,13 +24,13 @@ struct LazyVGrid<Content> where Content : View
 
 ## Mentions
 
-- [Picking container views for your content](picking-container-views-for-your-content.md)
+- [Picking container views for your content](./picking-container-views-for-your-content.md)
 
 #### Overview
 
-Use a lazy vertical grid when you want to display a large, vertically scrollable collection of views arranged in a two dimensional layout. The first view that you provide to the grid’s `content` closure appears in the top row of the column that’s on the grid’s leading edge. Additional views occupy successive cells in the grid, filling the first row from leading to trailing edges, then the second row, and so on. The number of rows can grow unbounded, but you specify the number of columns by providing a corresponding number of [`GridItem`](griditem.md) instances to the grid’s initializer.
+Use a lazy vertical grid when you want to display a large, vertically scrollable collection of views arranged in a two dimensional layout. The first view that you provide to the grid’s `content` closure appears in the top row of the column that’s on the grid’s leading edge. Additional views occupy successive cells in the grid, filling the first row from leading to trailing edges, then the second row, and so on. The number of rows can grow unbounded, but you specify the number of columns by providing a corresponding number of [`GridItem`](./griditem.md) instances to the grid’s initializer.
 
-The grid in the following example defines two columns and uses a [`ForEach`](foreach.md) structure to repeatedly generate a pair of [`Text`](text.md) views for the columns in each row:
+The grid in the following example defines two columns and uses a [`ForEach`](./foreach.md) structure to repeatedly generate a pair of [`Text`](./text.md) views for the columns in each row:
 
 ```swift
 struct VerticalSmileys: View {
@@ -56,26 +57,27 @@ struct VerticalSmileys: View {
 
 For each row in the grid, the first column shows a Unicode code point from the “Smileys” group, and the second shows its corresponding emoji:
 
-![A screenshot of a colunb of hexadecimal numbers to the left of a column](/images/com.apple.SwiftUI/LazyVGrid-1-iOS@2x.png)
+![A screenshot of a colunb of hexadecimal numbers to the left of a column](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/LazyVGrid-1-iOS@2x.png)
 
-You can achieve a similar layout using a [`Grid`](grid.md) container. Unlike a lazy grid, which creates child views only when SwiftUI needs to display them, a regular grid creates all of its child views right away. This enables the grid to provide better support for cell spacing and alignment. Only use a lazy grid if profiling your app shows that a [`Grid`](grid.md) view performs poorly because it tries to load too many views at once.
+You can achieve a similar layout using a [`Grid`](./grid.md) container. Unlike a lazy grid, which creates child views only when SwiftUI needs to display them, a regular grid creates all of its child views right away. This enables the grid to provide better support for cell spacing and alignment. Only use a lazy grid if profiling your app shows that a [`Grid`](./grid.md) view performs poorly because it tries to load too many views at once.
 
 ## Topics
 
 ### Creating a vertical grid
-- [init(columns: [GridItem], alignment: HorizontalAlignment, spacing: CGFloat?, pinnedViews: PinnedScrollableViews, content: () -> Content)](lazyvgrid/init(columns:alignment:spacing:pinnedviews:content:).md)
+- [init(columns: [GridItem], alignment: HorizontalAlignment, spacing: CGFloat?, pinnedViews: PinnedScrollableViews, content: () -> Content)](./lazyvgrid/init%28columns,alignment,spacing,pinnedviews,content%29.md)
   Creates a grid that grows vertically.
 
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](./view.md)
 
 ## See Also
 
-- [struct LazyHGrid](lazyhgrid.md)
+### Dynamically arranging views in two dimensions
+- [struct LazyHGrid](./lazyhgrid.md)
   A container view that arranges its child views in a grid that grows horizontally, creating items only as needed.
-- [struct GridItem](griditem.md)
+- [struct GridItem](./griditem.md)
   A description of a row or a column in a lazy grid.
 
 

@@ -1,7 +1,8 @@
 # GCExtendedGamepad
 
 **Framework**: Game Controller  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A controller profile that supports the extended set of gamepad controls.
 
@@ -19,9 +20,13 @@ A controller profile that supports the extended set of gamepad controls.
 class GCExtendedGamepad
 ```
 
+```objc
+@interface GCExtendedGamepad : GCPhysicalInputProfile
+```
+
 ## Mentions
 
-- [Discovering game controllers](discovering-game-controllers.md)
+- [Discovering game controllers](./discovering-game-controllers.md)
 
 #### Overview
 
@@ -35,112 +40,113 @@ The extended gamepad controller profile represents a physical or virtual control
 - Optional Home and Options buttons
 - A Menu button
 
-![An illustration of an extended gamepad controller with callouts for the buttons and controls.](/images/com.apple.gamecontroller/media-3850406@2x.png)
+![An illustration of an extended gamepad controller with callouts for the buttons and controls.](https://developer.apple.com/tutorials/images/com.apple.gamecontroller/media-3850406@2x.png)
 
-If a [`GCController`](gccontroller.md) object supports this type of profile, get the input values of the elements from the controller’s [`extendedGamepad`](gccontroller/extendedgamepad.md) property or use the profile’s [`valueChangedHandler`](gcextendedgamepad/valuechangedhandler.md) method to receive a callback when the input values change. Alternatively, use the [`saveSnapshot()`](gcextendedgamepad/savesnapshot().md) method to capture the input values at a moment in time.
+If a [`GCController`](./gccontroller.md) object supports this type of profile, get the input values of the elements from the controller’s [`extendedGamepad`](./gccontroller/extendedgamepad.md) property or use the profile’s [`valueChangedHandler`](./gcextendedgamepad/valuechangedhandler.md) method to receive a callback when the input values change. Alternatively, use the [`saveSnapshot()`](./gcextendedgamepad/savesnapshot%28%29.md) method to capture the input values at a moment in time.
 
-If the controller’s [`extendedGamepad`](gccontroller/extendedgamepad.md) property is `nil`, the controller doesn’t support this type of profile. See [`GCController`](gccontroller.md) for other profiles you can use.
+If the controller’s [`extendedGamepad`](./gccontroller/extendedgamepad.md) property is `nil`, the controller doesn’t support this type of profile. See [`GCController`](./gccontroller.md) for other profiles you can use.
 
 ## Topics
 
 ### Getting the controller
-- [var controller: GCController?](gcextendedgamepad/controller.md)
+- [var controller: GCController?](./gcextendedgamepad/controller.md)
   The controller for the profile.
 ### Getting change information
-- [var valueChangedHandler: GCExtendedGamepadValueChangedHandler?](gcextendedgamepad/valuechangedhandler.md)
+- [var valueChangedHandler: GCExtendedGamepadValueChangedHandler?](./gcextendedgamepad/valuechangedhandler.md)
   The block that the profile calls when an element’s value changes.
-- [typealias GCExtendedGamepadValueChangedHandler](gcextendedgamepadvaluechangedhandler.md)
+- [typealias GCExtendedGamepadValueChangedHandler](./gcextendedgamepadvaluechangedhandler.md)
   The signature for the block that the profile calls when an element’s value changes.
 ### Getting shoulder button inputs
-- [var leftShoulder: GCControllerButtonInput](gcextendedgamepad/leftshoulder.md)
+- [var leftShoulder: GCControllerButtonInput](./gcextendedgamepad/leftshoulder.md)
   The controller’s left shoulder button element.
-- [var rightShoulder: GCControllerButtonInput](gcextendedgamepad/rightshoulder.md)
+- [var rightShoulder: GCControllerButtonInput](./gcextendedgamepad/rightshoulder.md)
   The controller’s right shoulder button element.
 ### Getting trigger inputs
-- [var leftTrigger: GCControllerButtonInput](gcextendedgamepad/lefttrigger.md)
+- [var leftTrigger: GCControllerButtonInput](./gcextendedgamepad/lefttrigger.md)
   The controller’s left trigger element.
-- [var rightTrigger: GCControllerButtonInput](gcextendedgamepad/righttrigger.md)
+- [var rightTrigger: GCControllerButtonInput](./gcextendedgamepad/righttrigger.md)
   The controller’s right trigger element.
 ### Getting face button inputs
-- [var buttonMenu: GCControllerButtonInput](gcextendedgamepad/buttonmenu.md)
+- [var buttonMenu: GCControllerButtonInput](./gcextendedgamepad/buttonmenu.md)
   The primary menu button element that players use to enter the main menu and pause the game.
-- [var buttonOptions: GCControllerButtonInput?](gcextendedgamepad/buttonoptions.md)
+- [var buttonOptions: GCControllerButtonInput?](./gcextendedgamepad/buttonoptions.md)
   The controller’s secondary menu button element.
-- [var buttonHome: GCControllerButtonInput?](gcextendedgamepad/buttonhome.md)
+- [var buttonHome: GCControllerButtonInput?](./gcextendedgamepad/buttonhome.md)
   The main menu button element that players use to enter the secondary menu and pause the game.
-- [var buttonA: GCControllerButtonInput](gcextendedgamepad/buttona.md)
+- [var buttonA: GCControllerButtonInput](./gcextendedgamepad/buttona.md)
   The bottom face button that uses *A* or another indicator as its label.
-- [var buttonB: GCControllerButtonInput](gcextendedgamepad/buttonb.md)
+- [var buttonB: GCControllerButtonInput](./gcextendedgamepad/buttonb.md)
   The right face button that uses *B* or another indicator as its label.
-- [var buttonX: GCControllerButtonInput](gcextendedgamepad/buttonx.md)
+- [var buttonX: GCControllerButtonInput](./gcextendedgamepad/buttonx.md)
   The left face button that uses *X* or another indicator as its label.
-- [var buttonY: GCControllerButtonInput](gcextendedgamepad/buttony.md)
+- [var buttonY: GCControllerButtonInput](./gcextendedgamepad/buttony.md)
   The top face button that uses *Y* or another indicator as its label.
 ### Getting directional pad inputs
-- [var dpad: GCControllerDirectionPad](gcextendedgamepad/dpad.md)
+- [var dpad: GCControllerDirectionPad](./gcextendedgamepad/dpad.md)
   The controller’s directional pad element.
 ### Getting thumbstick and thumbstick button inputs
-- [var leftThumbstick: GCControllerDirectionPad](gcextendedgamepad/leftthumbstick.md)
+- [var leftThumbstick: GCControllerDirectionPad](./gcextendedgamepad/leftthumbstick.md)
   The controller’s left thumbstick element.
-- [var rightThumbstick: GCControllerDirectionPad](gcextendedgamepad/rightthumbstick.md)
+- [var rightThumbstick: GCControllerDirectionPad](./gcextendedgamepad/rightthumbstick.md)
   The controller’s right thumbstick element.
-- [var leftThumbstickButton: GCControllerButtonInput?](gcextendedgamepad/leftthumbstickbutton.md)
+- [var leftThumbstickButton: GCControllerButtonInput?](./gcextendedgamepad/leftthumbstickbutton.md)
   The button on the left thumbstick of the controller.
-- [var rightThumbstickButton: GCControllerButtonInput?](gcextendedgamepad/rightthumbstickbutton.md)
+- [var rightThumbstickButton: GCControllerButtonInput?](./gcextendedgamepad/rightthumbstickbutton.md)
   The button on the right thumbstick of the controller.
 ### Accessing elements by name
-- [Extended gamepad input names](extended-gamepad-input-names.md)
+- [Extended gamepad input names](./extended-gamepad-input-names.md)
   Constants for names of extended gamepad elements.
 ### Setting snapshot values
-- [func setStateFrom(GCExtendedGamepad)](gcextendedgamepad/setstatefrom(_:).md)
+- [func setStateFrom(GCExtendedGamepad)](./gcextendedgamepad/setstatefrom%28_%29.md)
   Copies the input values from a specified extended gamepad to a snapshot of an extended gamepad.
-- [func saveSnapshot() -> GCExtendedGamepadSnapshot](gcextendedgamepad/savesnapshot.md)
+- [func saveSnapshot() -> GCExtendedGamepadSnapshot](./gcextendedgamepad/savesnapshot%28%29.md)
   Saves a snapshot of all of the profile’s elements.
 
 ## Relationships
 
 ### Inherits From
-- [GCPhysicalInputProfile](gcphysicalinputprofile.md)
+- [GCPhysicalInputProfile](./gcphysicalinputprofile.md)
 ### Inherited By
-- [GCDualSenseGamepad](gcdualsensegamepad.md)
-- [GCDualShockGamepad](gcdualshockgamepad.md)
-- [GCExtendedGamepadSnapshot](gcextendedgamepadsnapshot.md)
-- [GCXboxGamepad](gcxboxgamepad.md)
+- [GCDualSenseGamepad](./gcdualsensegamepad.md)
+- [GCDualShockGamepad](./gcdualshockgamepad.md)
+- [GCExtendedGamepadSnapshot](./gcextendedgamepadsnapshot.md)
+- [GCXboxGamepad](./gcxboxgamepad.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var extendedGamepad: GCExtendedGamepad?](gccontroller/extendedgamepad.md)
+### Accessing controller profiles
+- [var extendedGamepad: GCExtendedGamepad?](./gccontroller/extendedgamepad.md)
   The extended gamepad profile.
-- [class GCPhysicalInputProfile](gcphysicalinputprofile.md)
+- [class GCPhysicalInputProfile](./gcphysicalinputprofile.md)
   The base class for controller profiles that support physical buttons, thumbsticks, and directional pads.
-- [class GCKeyboardInput](gckeyboardinput.md)
+- [class GCKeyboardInput](./gckeyboardinput.md)
   A controller profile that uses the keyboard as the input device.
-- [class GCMouseInput](gcmouseinput.md)
+- [class GCMouseInput](./gcmouseinput.md)
   A controller profile that tracks input from a mouse.
-- [class GCDualShockGamepad](gcdualshockgamepad.md)
+- [class GCDualShockGamepad](./gcdualshockgamepad.md)
   A controller profile that supports the DualShock 4 controller.
-- [class GCXboxGamepad](gcxboxgamepad.md)
+- [class GCXboxGamepad](./gcxboxgamepad.md)
   A controller profile that supports the Xbox controller.
-- [class GCDualSenseGamepad](gcdualsensegamepad.md)
+- [class GCDualSenseGamepad](./gcdualsensegamepad.md)
   A controller profile that supported the DualSense controller.
-- [var microGamepad: GCMicroGamepad?](gccontroller/microgamepad.md)
+- [var microGamepad: GCMicroGamepad?](./gccontroller/microgamepad.md)
   The micro gamepad profile.
-- [class GCMicroGamepad](gcmicrogamepad.md)
+- [class GCMicroGamepad](./gcmicrogamepad.md)
   A controller profile that supports the Siri Remote.
-- [class GCDirectionalGamepad](gcdirectionalgamepad.md)
+- [class GCDirectionalGamepad](./gcdirectionalgamepad.md)
   A profile that supports only the directional pad, without motion or rotation.
-- [var motion: GCMotion?](gccontroller/motion.md)
+- [var motion: GCMotion?](./gccontroller/motion.md)
   The motion input profile.
-- [var physicalInputProfile: GCPhysicalInputProfile](gccontroller/physicalinputprofile.md)
+- [var physicalInputProfile: GCPhysicalInputProfile](./gccontroller/physicalinputprofile.md)
   The physical input profile for the controller.
-- [var gamepad: GCGamepad?](gccontroller/gamepad.md)
+- [var gamepad: GCGamepad?](./gccontroller/gamepad.md)
   The gamepad profile.
 
 

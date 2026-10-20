@@ -1,7 +1,8 @@
 # run()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Causes the receiver to start listening for spell-checking requests.
 
@@ -15,15 +16,21 @@ Causes the receiver to start listening for spell-checking requests.
 func run()
 ```
 
+```objc
+- (void) run;
+```
+
 #### Discussion
 
 This method starts a loop that never returns; you need to set the `NSSpellServer` object’s delegate before sending this message.
 
 ## See Also
 
-- [var delegate: (any NSSpellServerDelegate)?](nsspellserver/delegate.md)
+### Related Documentation
+- [var delegate: (any NSSpellServerDelegate)?](./delegate.md)
   Returns the receiver’s delegate.
-- [func registerLanguage(String?, byVendor: String?) -> Bool](nsspellserver/registerlanguage(_:byvendor:).md)
+### Providing Spelling Services
+- [func registerLanguage(String?, byVendor: String?) -> Bool](./registerlanguage%28_,byvendor%29.md)
   Notifies the receiver of a language your spelling checker can check.
 
 

@@ -1,7 +1,8 @@
 # ESRCH
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 No such process.
 

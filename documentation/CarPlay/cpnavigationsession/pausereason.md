@@ -1,7 +1,8 @@
 # CPNavigationSession.PauseReason
 
 **Framework**: CarPlay  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A set of reasons for pausing a trip.
 
@@ -16,42 +17,47 @@ A set of reasons for pausing a trip.
 enum PauseReason
 ```
 
+```c
+enum CPTripPauseReason : NSUInteger;
+```
+
 ## Topics
 
 ### Reasons
-- [CPNavigationSession.PauseReason.arrived](cpnavigationsession/pausereason/arrived.md)
+- [CPNavigationSession.PauseReason.arrived](./pausereason/arrived.md)
   The user arrived at the destination.
-- [CPNavigationSession.PauseReason.loading](cpnavigationsession/pausereason/loading.md)
+- [CPNavigationSession.PauseReason.loading](./pausereason/loading.md)
   The system is loading the route.
-- [CPNavigationSession.PauseReason.locating](cpnavigationsession/pausereason/locating.md)
+- [CPNavigationSession.PauseReason.locating](./pausereason/locating.md)
   The system is locating the destination.
-- [CPNavigationSession.PauseReason.proceedToRoute](cpnavigationsession/pausereason/proceedtoroute.md)
+- [CPNavigationSession.PauseReason.proceedToRoute](./pausereason/proceedtoroute.md)
   The system is waiting for the user to proceed to the route.
-- [CPNavigationSession.PauseReason.rerouting](cpnavigationsession/pausereason/rerouting.md)
+- [CPNavigationSession.PauseReason.rerouting](./pausereason/rerouting.md)
   The system is rerouting the trip.
 ### Initializers
-- [init?(rawValue: UInt)](cpnavigationsession/pausereason/init(rawvalue:).md)
+- [init?(rawValue: UInt)](./pausereason/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func cancelTrip()](cpnavigationsession/canceltrip.md)
+### Managing Trip Navigation
+- [func cancelTrip()](./canceltrip%28%29.md)
   Tells the navigation session to cancel the trip.
-- [func finishTrip()](cpnavigationsession/finishtrip.md)
+- [func finishTrip()](./finishtrip%28%29.md)
   Tells the navigation session to finish the trip.
-- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?)](cpnavigationsession/pausetrip(for:description:).md)
+- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?)](./pausetrip%28for,description%29.md)
   Tells the navigation session to pause the trip for the specified reason.
-- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?, turnCardColor: UIColor?)](cpnavigationsession/pausetrip(for:description:turncardcolor:).md)
-- [func resumeTrip(updatedRouteInformation: CPRouteInformation)](cpnavigationsession/resumetrip(updatedrouteinformation:).md)
+- [func pauseTrip(for: CPNavigationSession.PauseReason, description: String?, turnCardColor: UIColor?)](./pausetrip%28for,description,turncardcolor%29.md)
+- [func resumeTrip(updatedRouteInformation: CPRouteInformation)](./resumetrip%28updatedrouteinformation%29.md)
   Resumes the current trip with updated route information.
 
 

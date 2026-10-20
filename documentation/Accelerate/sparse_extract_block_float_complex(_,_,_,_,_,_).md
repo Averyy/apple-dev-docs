@@ -1,7 +1,8 @@
 # sparse_extract_block_float_complex(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - iOS 18.5+
@@ -18,13 +19,18 @@
 func sparse_extract_block_float_complex(_ A: sparse_matrix_float_complex!, _ bi: sparse_index, _ bj: sparse_index, _ row_stride: sparse_dimension, _ col_stride: sparse_dimension, _ val: OpaquePointer!) -> sparse_status
 ```
 
+```c
+sparse_status sparse_extract_block_float_complex(sparse_matrix_float_complex A, sparse_index bi, sparse_index bj, sparse_dimension row_stride, sparse_dimension col_stride, _Complex float * restrictval);
+```
+
 ## See Also
 
-- [func sparse_extract_block_double(sparse_matrix_double!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, UnsafeMutablePointer<Double>!) -> sparse_status](sparse_extract_block_double(_:_:_:_:_:_:).md)
+### Value extraction
+- [func sparse_extract_block_double(sparse_matrix_double!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, UnsafeMutablePointer<Double>!) -> sparse_status](./sparse_extract_block_double%28_,_,_,_,_,_%29.md)
   Extracts values from a specified block of a double-precision matrix.
-- [func sparse_extract_block_float(sparse_matrix_float!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, UnsafeMutablePointer<Float>!) -> sparse_status](sparse_extract_block_float(_:_:_:_:_:_:).md)
+- [func sparse_extract_block_float(sparse_matrix_float!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, UnsafeMutablePointer<Float>!) -> sparse_status](./sparse_extract_block_float%28_,_,_,_,_,_%29.md)
   Extracts values from a specified block of a single-precision matrix.
-- [func sparse_extract_block_double_complex(sparse_matrix_double_complex!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, OpaquePointer!) -> sparse_status](sparse_extract_block_double_complex(_:_:_:_:_:_:).md)
+- [func sparse_extract_block_double_complex(sparse_matrix_double_complex!, sparse_index, sparse_index, sparse_dimension, sparse_dimension, OpaquePointer!) -> sparse_status](./sparse_extract_block_double_complex%28_,_,_,_,_,_%29.md)
 
 
 ---

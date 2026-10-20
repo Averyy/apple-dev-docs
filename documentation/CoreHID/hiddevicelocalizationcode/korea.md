@@ -1,7 +1,8 @@
 # HIDDeviceLocalizationCode.korea
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 This maps to Korean in the HID specification.
 

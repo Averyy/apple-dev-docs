@@ -1,7 +1,8 @@
 # SRMediaEventType
 
 **Framework**: SensorKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The types of user interaction with media that the sensor tracks.
 
@@ -16,29 +17,34 @@ The types of user interaction with media that the sensor tracks.
 enum SRMediaEventType
 ```
 
+```c
+enum SRMediaEventType : NSInteger;
+```
+
 ## Topics
 
 ### Event types
-- [SRMediaEventType.onScreen](srmediaeventtype/onscreen.md)
+- [SRMediaEventType.onScreen](./srmediaeventtype/onscreen.md)
   An event that occurs when the media appears on the screen.
-- [SRMediaEventType.offScreen](srmediaeventtype/offscreen.md)
+- [SRMediaEventType.offScreen](./srmediaeventtype/offscreen.md)
   An event that occurs when the media disappears from the screen.
 ### Initializers
-- [init?(rawValue: Int)](srmediaeventtype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./srmediaeventtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var eventType: SRMediaEventType](srmediaevent/eventtype.md)
+### Tracking Media Events
+- [var eventType: SRMediaEventType](./srmediaevent/eventtype.md)
   The type of user interaction with the media.
 
 

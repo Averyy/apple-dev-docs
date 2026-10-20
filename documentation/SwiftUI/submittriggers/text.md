@@ -1,7 +1,8 @@
 # text
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Defines triggers originating from text input controls like `TextField` and `SecureField`.
 
@@ -22,7 +23,8 @@ static let text: SubmitTriggers
 
 ## See Also
 
-- [static let search: SubmitTriggers](submittriggers/search.md)
+### Getting submit triggers
+- [static let search: SubmitTriggers](./search.md)
   Defines triggers originating from search fields constructed from searchable modifiers.
 
 

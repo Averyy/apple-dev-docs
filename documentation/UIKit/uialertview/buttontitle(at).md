@@ -1,19 +1,26 @@
 # buttonTitle(at:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the title of the button at the given index.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
+- iOS 2.0+ - Deprecated in 9.0
+- iPadOS 2.0+ - Deprecated in 9.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIAlertView`](../uialertview.md).
 
 ## Declaration
 
 ```swift
 func buttonTitle(at buttonIndex: Int) -> String?
+```
+
+```objc
+- (NSString *) buttonTitleAtIndex:(NSInteger) buttonIndex;
 ```
 
 #### Return Value
@@ -26,15 +33,16 @@ The title of the button specified by index `buttonIndex`.
 
 ## See Also
 
-- [func addButton(withTitle: String?) -> Int](uialertview/addbutton(withtitle:).md)
+### Configuring buttons
+- [func addButton(withTitle: String?) -> Int](./addbutton%28withtitle%29.md)
   Adds a button to the receiver with the given title.
-- [var numberOfButtons: Int](uialertview/numberofbuttons.md)
+- [var numberOfButtons: Int](./numberofbuttons.md)
   The number of buttons on the alert view.
-- [func textField(at: Int) -> UITextField?](uialertview/textfield(at:).md)
+- [func textField(at: Int) -> UITextField?](./textfield%28at%29.md)
   Returns the text field at the given index
-- [var cancelButtonIndex: Int](uialertview/cancelbuttonindex.md)
+- [var cancelButtonIndex: Int](./cancelbuttonindex.md)
   The index number of the cancel button.
-- [var firstOtherButtonIndex: Int](uialertview/firstotherbuttonindex.md)
+- [var firstOtherButtonIndex: Int](./firstotherbuttonindex.md)
   The index of the first other button.
 
 

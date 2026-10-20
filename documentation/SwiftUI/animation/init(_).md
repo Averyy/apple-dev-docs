@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create an `Animation` that contains the specified custom animation.
 
@@ -22,9 +23,10 @@ init<A>(_ base: A) where A : CustomAnimation
 
 ## See Also
 
-- [static func timingCurve(UnitCurve, duration: TimeInterval) -> Animation](animation/timingcurve(_:duration:).md)
+### Creating custom animations
+- [static func timingCurve(UnitCurve, duration: TimeInterval) -> Animation](./timingcurve%28_,duration%29.md)
   Creates a new animation with speed controlled by the given curve.
-- [static func timingCurve(Double, Double, Double, Double, duration: TimeInterval) -> Animation](animation/timingcurve(_:_:_:_:duration:).md)
+- [static func timingCurve(Double, Double, Double, Double, duration: TimeInterval) -> Animation](./timingcurve%28_,_,_,_,duration%29.md)
   An animation created from a cubic Bézier timing curve.
 
 

@@ -1,7 +1,8 @@
 # ARSession.CollaborationData.Priority.optional
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A priority that indicates that collaboration can continue without this data.
 
@@ -15,9 +16,13 @@ A priority that indicates that collaboration can continue without this data.
 case optional
 ```
 
+```c
+ARCollaborationDataPriorityOptional
+```
+
 #### Discussion
 
-ARKit sets the data [`priority`](arsession/collaborationdata/priority-swift.property.md) to [`ARSession.CollaborationData.Priority.optional`](arsession/collaborationdata/priority-swift.enum/optional.md) when the data is important and time-sensitive but the session can continue if it’s not received.
+ARKit sets the data [`priority`](../priority-swift.property.md) to [`ARSession.CollaborationData.Priority.optional`](./optional.md) when the data is important and time-sensitive but the session can continue if it’s not received.
 
 
 ---

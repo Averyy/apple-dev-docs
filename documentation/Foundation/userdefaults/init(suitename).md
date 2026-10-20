@@ -1,7 +1,8 @@
 # init(suiteName:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new defaults object and initializes it with the settings from the specified database.
 
@@ -20,11 +21,15 @@ Creates a new defaults object and initializes it with the settings from the spec
 init?(suiteName suitename: String?)
 ```
 
+```objc
+- (instancetype) initWithSuiteName:(NSString *) suitename;
+```
+
 #### Discussion
 
 Use this method to create a defaults object that reads settings from the custom domain you specify. For example, you might use this method to access settings you share among multiple apps or between your app and an app extension. The returned object writes settings to the domain you specified. Every instance of ``UserDefaults shares the contents of the argument and registration domains.
 
-The `suiteName` parameter matches the domain parameter of the corresponding CFPreferences APIs, except when translating between Foundation and Core Foundation constants. The following example shows two equivalent statements. For more details, see [`Preferences Utilities`](https://developer.apple.com/documentation/corefoundation/preferences-utilities).
+The `suiteName` parameter matches the domain parameter of the corresponding CFPreferences APIs, except when translating between Foundation and Core Foundation constants. The following example shows two equivalent statements. For more details, see [Preferences Utilities](../../CoreFoundation/preferences-utilities.md).
 
 Equivalent statements using NSUserDefaults and CFPreferences APIs
 
@@ -44,17 +49,18 @@ id preferencesValue = CFPreferencesCopyAppValue(@"someKey", @"someDomain");
 // userDefaultsValue and preferencesValue are equal
 ```
 
-In macOS, specify another app’s bundle identifier to search that app’s settings. You can’t search another app’s settings if either app runs in an [`App Sandbox`](https://developer.apple.com/documentation/security/app-sandbox) and you don’t have the proper entitlements.
+In macOS, specify another app’s bundle identifier to search that app’s settings. You can’t search another app’s settings if either app runs in an [App Sandbox](../../Security/app-sandbox.md) and you don’t have the proper entitlements.
 
 ## Parameters
 
-- `suitename`: The name of the app group or suite to add to the search list. To read and write settings for a shared app group, specify the app group identifier. Don’t specify the [`globalDomain`](userdefaults/globaldomain.md) or your app’s bundle identifier. If you specify `nil`, this method returns a defaults object that reads and writes from the current app’s settings.
+- `suitename`: The name of the app group or suite to add to the search list. To read and write settings for a shared app group, specify the app group identifier. Don’t specify the [`globalDomain`](./globaldomain.md) or your app’s bundle identifier. If you specify `nil`, this method returns a defaults object that reads and writes from the current app’s settings.
 
 ## See Also
 
-- [class var standard: UserDefaults](userdefaults/standard.md)
+### Creating a user defaults object
+- [class var standard: UserDefaults](./standard.md)
   The shared defaults object for the current app.
-- [convenience init()](userdefaults/init.md)
+- [convenience init()](./init%28%29.md)
   Creates a new defaults object and initializes it with the app’s current settings.
 
 

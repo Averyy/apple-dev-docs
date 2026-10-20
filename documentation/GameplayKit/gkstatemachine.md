@@ -1,7 +1,8 @@
 # GKStateMachine
 
 **Framework**: GameplayKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A finite-state machine—a collection of state objects that each define logic for a particular state of gameplay and rules for transitioning between states.
 
@@ -19,9 +20,13 @@ A finite-state machine—a collection of state objects that each define logic fo
 class GKStateMachine
 ```
 
+```objc
+@interface GKStateMachine : NSObject
+```
+
 #### Overview
 
-In GameplayKit, you subclass [`GKState`](gkstate.md) to define each state and the rules for allowed transitions between states, and use a [`GKStateMachine`](gkstatemachine.md) instance to manage a machine that combines several states. This system provides a way to organize code in your game by organizing state-dependent actions into methods that run when entering a state, when exiting a state, and periodically while in a state (for example, on every animation frame your game renders).
+In GameplayKit, you subclass [`GKState`](./gkstate.md) to define each state and the rules for allowed transitions between states, and use a [`GKStateMachine`](./gkstatemachine.md) instance to manage a machine that combines several states. This system provides a way to organize code in your game by organizing state-dependent actions into methods that run when entering a state, when exiting a state, and periodically while in a state (for example, on every animation frame your game renders).
 
 You can use state machines to govern various aspects of a game. For example:
 
@@ -29,47 +34,48 @@ You can use state machines to govern various aspects of a game. For example:
 - An automated turret might use a state machine with Ready, Firing, and Cooldown states, controlling when it seeks out nearby targets and how often it fires.
 - A game user interface might use Menu, Playing, Paused, and GameOver states, each of which determines what UI elements are shown and what other game elements are running.
 
-To build a state machine, first define a distinct subclass of [`GKState`](gkstate.md) for each possible state of the machine. In each state class, the [`isValidNextState(_:)`](gkstate/isvalidnextstate(_:).md) method determines which other state classes the machine may transition into from that state. Then, create a state machine object by constructing instances of the state classes and passing them to one of the methods listed in Creating a State Machine below. Finally, set the machine in motion by choosing an initial state for it to enter with the [`enter(_:)`](gkstatemachine/enter(_:).md) method.
+To build a state machine, first define a distinct subclass of [`GKState`](./gkstate.md) for each possible state of the machine. In each state class, the [`isValidNextState(_:)`](./gkstate/isvalidnextstate%28_%29.md) method determines which other state classes the machine may transition into from that state. Then, create a state machine object by constructing instances of the state classes and passing them to one of the methods listed in Creating a State Machine below. Finally, set the machine in motion by choosing an initial state for it to enter with the [`enter(_:)`](./gkstatemachine/enter%28_%29.md) method.
 
-To define state-dependent behavior, override the [`didEnter(from:)`](gkstate/didenter(from:).md), [`update(deltaTime:)`](gkstate/update(deltatime:).md), and [`willExit(to:)`](gkstate/willexit(to:).md) methods in each [`GKState`](gkstate.md) subclass.
+To define state-dependent behavior, override the [`didEnter(from:)`](./gkstate/didenter%28from%29.md), [`update(deltaTime:)`](./gkstate/update%28deltatime%29.md), and [`willExit(to:)`](./gkstate/willexit%28to%29.md) methods in each [`GKState`](./gkstate.md) subclass.
 
-- The state machine notifies the current state whenever a state change happens. Use the [`didEnter(from:)`](gkstate/didenter(from:).md) and [`willExit(to:)`](gkstate/willexit(to:).md) methods to perform actions in response to a state change. For example, an enemy character entering the Flee state might change its appearance to indicate that is has become vulnerable to attack by the player.
-- When you call a state machine’s [`update(deltaTime:)`](gkstatemachine/update(deltatime:).md) method, the state machine calls the [`update(deltaTime:)`](gkstate/update(deltatime:).md) method of its current state. Use this method to organize per-frame update code by state. For example, an enemy character in the Chase state can update its position to pursue the player, and an enemy in the Flee state can update its position to evade the player.
+- The state machine notifies the current state whenever a state change happens. Use the [`didEnter(from:)`](./gkstate/didenter%28from%29.md) and [`willExit(to:)`](./gkstate/willexit%28to%29.md) methods to perform actions in response to a state change. For example, an enemy character entering the Flee state might change its appearance to indicate that is has become vulnerable to attack by the player.
+- When you call a state machine’s [`update(deltaTime:)`](./gkstatemachine/update%28deltatime%29.md) method, the state machine calls the [`update(deltaTime:)`](./gkstate/update%28deltatime%29.md) method of its current state. Use this method to organize per-frame update code by state. For example, an enemy character in the Chase state can update its position to pursue the player, and an enemy in the Flee state can update its position to evade the player.
 
-For more information about state machines, read [`State Machines`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/StateMachine.html#//apple_ref/doc/uid/TP40015172-CH7) in [`GameplayKit Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
+For more information about state machines, read [State Machines](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/StateMachine.html#//apple_ref/doc/uid/TP40015172-CH7) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172).
 
 ## Topics
 
 ### Creating a State Machine
-- [init(states: [GKState])](gkstatemachine/init(states:).md)
+- [init(states: [GKState])](./gkstatemachine/init%28states%29.md)
   Initializes a state machine with the specified states.
 ### Working with States
-- [var currentState: GKState?](gkstatemachine/currentstate.md)
+- [var currentState: GKState?](./gkstatemachine/currentstate.md)
   The state machine’s current state.
-- [func canEnterState(AnyClass) -> Bool](gkstatemachine/canenterstate(_:).md)
+- [func canEnterState(AnyClass) -> Bool](./gkstatemachine/canenterstate%28_%29.md)
   Returns a Boolean value indicating whether it is valid for the state machine to transition from its current state to a state of the specified class.
-- [func enter(AnyClass) -> Bool](gkstatemachine/enter(_:).md)
+- [func enter(AnyClass) -> Bool](./gkstatemachine/enter%28_%29.md)
   Attempts to transition the state machine from its current state to a state of the specified class.
-- [func update(deltaTime: TimeInterval)](gkstatemachine/update(deltatime:).md)
+- [func update(deltaTime: TimeInterval)](./gkstatemachine/update%28deltatime%29.md)
   Tells the current state object to perform per-frame updates.
 ### Instance Methods
-- [func state<StateType>(forClass: StateType.Type) -> StateType?](gkstatemachine/state(forclass:).md)
+- [func state<StateType>(forClass: StateType.Type) -> StateType?](./gkstatemachine/state%28forclass%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class GKState](gkstate.md)
+### State Machines
+- [class GKState](./gkstate.md)
   The abstract superclass for defining state-specific logic as part of a state machine.
 
 

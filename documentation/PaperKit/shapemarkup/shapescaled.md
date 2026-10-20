@@ -1,7 +1,8 @@
 # shapeScaled
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of the shape with values scaled to the current frame.
 
@@ -38,9 +39,10 @@ shape.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
 
 ## See Also
 
-- [var shape: ShapeMarkup.Shape](shapemarkup/shape-swift.property.md)
+### Choosing a shape type
+- [var shape: ShapeMarkup.Shape](./shape-swift.property.md)
   The type of the shape.
-- [ShapeMarkup.Shape](shapemarkup/shape-swift.enum.md)
+- [ShapeMarkup.Shape](./shape-swift.enum.md)
 
 
 ---

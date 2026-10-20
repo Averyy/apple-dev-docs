@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The name of the attribute.
 
@@ -22,7 +23,8 @@ static let name: String
 
 ## See Also
 
-- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargumentattribute/value.md)
+### Inspecting attributed string key properties
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value](./value.md)
   The value type represented by this attribute.
 
 

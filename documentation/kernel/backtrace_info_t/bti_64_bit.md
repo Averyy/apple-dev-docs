@@ -1,14 +1,15 @@
 # BTI_64_BIT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 12.0+
 
 ## Declaration
 
-```swift
+```c
 BTI_64_BIT
 ```
 

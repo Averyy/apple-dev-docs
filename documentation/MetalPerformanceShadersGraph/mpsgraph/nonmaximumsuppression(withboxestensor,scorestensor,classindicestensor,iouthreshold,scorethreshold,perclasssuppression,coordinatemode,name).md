@@ -1,7 +1,8 @@
 # nonMaximumSuppression(withBoxesTensor:scoresTensor:classIndicesTensor:iouThreshold:scoreThreshold:perClassSuppression:coordinateMode:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a nonMaximumumSuppression operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a nonMaximumumSuppression operation and returns the result tensor.
 
 ```swift
 func nonMaximumSuppression(withBoxesTensor boxesTensor: MPSGraphTensor, scoresTensor: MPSGraphTensor, classIndicesTensor: MPSGraphTensor, iouThreshold IOUThreshold: Float, scoreThreshold: Float, perClassSuppression: Bool, coordinateMode: MPSGraphNonMaximumSuppressionCoordinateMode, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) nonMaximumSuppressionWithBoxesTensor:(MPSGraphTensor *) boxesTensor scoresTensor:(MPSGraphTensor *) scoresTensor classIndicesTensor:(MPSGraphTensor *) classIndicesTensor IOUThreshold:(float) IOUThreshold scoreThreshold:(float) scoreThreshold perClassSuppression:(BOOL) perClassSuppression coordinateMode:(MPSGraphNonMaximumSuppressionCoordinateMode) coordinateMode name:(NSString *) name;
 ```
 
 ## Parameters

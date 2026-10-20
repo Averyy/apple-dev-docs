@@ -1,34 +1,36 @@
 # Tool Modes
 
-**Framework**: Quartz
+**Framework**: Quartz  
+**Role**: API Collection
 
-Image Kit tools modes referenced by the [`currentToolMode`](ikimageview/currenttoolmode.md) property.
+Image Kit tools modes referenced by the [`currentToolMode`](./ikimageview/currenttoolmode.md) property.
 
 ## Topics
 
 ### Constants
-- [let IKToolModeNone: String](iktoolmodenone.md)
+- [let IKToolModeNone: String](./iktoolmodenone.md)
   No tool is set.
-- [let IKToolModeMove: String](iktoolmodemove.md)
+- [let IKToolModeMove: String](./iktoolmodemove.md)
   The move tool.
-- [let IKToolModeSelect: String](iktoolmodeselect.md)
+- [let IKToolModeSelect: String](./iktoolmodeselect.md)
   The selection tool.
-- [let IKToolModeSelectRect: String](iktoolmodeselectrect.md)
+- [let IKToolModeSelectRect: String](./iktoolmodeselectrect.md)
   Same as `IKToolModeSelect`.
-- [let IKToolModeSelectEllipse: String](iktoolmodeselectellipse.md)
+- [let IKToolModeSelectEllipse: String](./iktoolmodeselectellipse.md)
   The selection ellipse.
-- [let IKToolModeSelectLasso: String](iktoolmodeselectlasso.md)
+- [let IKToolModeSelectLasso: String](./iktoolmodeselectlasso.md)
   The selection lasso.
-- [let IKToolModeCrop: String](iktoolmodecrop.md)
+- [let IKToolModeCrop: String](./iktoolmodecrop.md)
   The crop tool.
-- [let IKToolModeRotate: String](iktoolmoderotate.md)
+- [let IKToolModeRotate: String](./iktoolmoderotate.md)
   The rotation tool.
-- [let IKToolModeAnnotate: String](iktoolmodeannotate.md)
+- [let IKToolModeAnnotate: String](./iktoolmodeannotate.md)
   The annotation tool.
 
 ## See Also
 
-- [Overlay Types](overlay-types.md)
+### Constants
+- [Overlay Types](./overlay-types.md)
   A layer level.
 
 

@@ -1,7 +1,8 @@
 # init(subbandParameters:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object that directs sound in a heart-shaped curve surrounding a sound source.
 
@@ -17,6 +18,10 @@ Creates an object that directs sound in a heart-shaped curve surrounding a sound
 
 ```swift
 init(subbandParameters: [PHASECardioidDirectivityModelSubbandParameters])
+```
+
+```objc
+- (instancetype) initWithSubbandParameters:(NSArray<PHASECardioidDirectivityModelSubbandParameters *> *) subbandParameters;
 ```
 
 ## Parameters

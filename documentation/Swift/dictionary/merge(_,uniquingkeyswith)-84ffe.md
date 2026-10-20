@@ -1,7 +1,8 @@
 # merge(_:uniquingKeysWith:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Merges the key-value pairs in the given sequence into the dictionary, using a combining closure to determine the value for any duplicate keys.
 
@@ -19,6 +20,8 @@ Merges the key-value pairs in the given sequence into the dictionary, using a co
 ```swift
 mutating func merge<S, E>(_ other: S, uniquingKeysWith combine: (Value, Value) throws(E) -> Value) throws(E) where S : Sequence, E : Error, S.Element == (Key, Value)
 ```
+
+Available when `Key` conforms to `Hashable`.
 
 #### Discussion
 

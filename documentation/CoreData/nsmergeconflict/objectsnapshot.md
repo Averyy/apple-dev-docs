@@ -1,7 +1,8 @@
 # objectSnapshot
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary containing the values of the source object.
 
@@ -10,7 +11,7 @@ A dictionary containing the values of the source object.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,17 +21,22 @@ A dictionary containing the values of the source object.
 var objectSnapshot: [String : Any]? { get }
 ```
 
+```objc
+@property (retain, readonly, nullable) NSDictionary<NSString *,id> * objectSnapshot;
+```
+
 ## See Also
 
-- [var sourceObject: NSManagedObject](nsmergeconflict/sourceobject.md)
+### Accessing Merge Conflict Details
+- [var sourceObject: NSManagedObject](./sourceobject.md)
   The source object for the conflict.
-- [var cachedSnapshot: [String : Any]?](nsmergeconflict/cachedsnapshot.md)
+- [var cachedSnapshot: [String : Any]?](./cachedsnapshot.md)
   A dictionary containing the values of the source object held in the persistent store coordinator layer.
-- [var persistedSnapshot: [String : Any]?](nsmergeconflict/persistedsnapshot.md)
+- [var persistedSnapshot: [String : Any]?](./persistedsnapshot.md)
   A dictionary containing the values of the source object held in the persistent store.
-- [var newVersionNumber: Int](nsmergeconflict/newversionnumber.md)
+- [var newVersionNumber: Int](./newversionnumber.md)
   The new version number for the change.
-- [var oldVersionNumber: Int](nsmergeconflict/oldversionnumber.md)
+- [var oldVersionNumber: Int](./oldversionnumber.md)
   The old version number for the change.
 
 

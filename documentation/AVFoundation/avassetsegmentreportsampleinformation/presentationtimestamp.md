@@ -1,7 +1,8 @@
 # presentationTimeStamp
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The presentation timestamp (PTS) of a sample.
 
@@ -19,17 +20,22 @@ The presentation timestamp (PTS) of a sample.
 var presentationTimeStamp: CMTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTime presentationTimeStamp;
+```
+
 #### Discussion
 
-This timestamp may be different from the [`earliestPresentationTimeStamp`](avassetsegmenttrackreport/earliestpresentationtimestamp.md) if the video’s author encodes it using frame reordering.
+This timestamp may be different from the [`earliestPresentationTimeStamp`](../avassetsegmenttrackreport/earliestpresentationtimestamp.md) if the video’s author encodes it using frame reordering.
 
 ## See Also
 
-- [var offset: Int](avassetsegmentreportsampleinformation/offset.md)
+### Inspecting the information
+- [var offset: Int](./offset.md)
   The offset of a sample in the segment.
-- [var length: Int](avassetsegmentreportsampleinformation/length.md)
+- [var length: Int](./length.md)
   The length of the sample data.
-- [var isSyncSample: Bool](avassetsegmentreportsampleinformation/issyncsample.md)
+- [var isSyncSample: Bool](./issyncsample.md)
   A Boolean value that indicates whether the sample is a key frame.
 
 

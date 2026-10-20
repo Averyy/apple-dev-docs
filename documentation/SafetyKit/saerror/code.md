@@ -1,7 +1,8 @@
 # SAError.Code
 
 **Framework**: SafetyKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Codes for identifying errors in SafetyKit.
 
@@ -18,35 +19,40 @@ Codes for identifying errors in SafetyKit.
 enum Code
 ```
 
+```c
+enum SAErrorCode : NSInteger;
+```
+
 ## Topics
 
 ### Determining the error type
-- [SAError.Code.invalidArgument](saerror/code/invalidargument.md)
+- [SAError.Code.invalidArgument](./code/invalidargument.md)
   The passed argument is invalid.
-- [SAError.Code.notAllowed](saerror/code/notallowed.md)
+- [SAError.Code.notAllowed](./code/notallowed.md)
   The system restricts the feature on this iPhone at the current time.
-- [SAError.Code.notAuthorized](saerror/code/notauthorized.md)
+- [SAError.Code.notAuthorized](./code/notauthorized.md)
   The app isn’t authorized to perform the requested operation.
-- [SAError.Code.operationFailed](saerror/code/operationfailed.md)
+- [SAError.Code.operationFailed](./code/operationfailed.md)
   The requested operation failed; retrying may succeed.
 ### Initializers
-- [init?(rawValue: Int)](saerror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let SAErrorDomain: String](saerrordomain.md)
+### Handling errors
+- [let SAErrorDomain: String](../saerrordomain.md)
   The domain for error objects that SafetyKit produces.
-- [struct SAError](saerror.md)
+- [struct SAError](../saerror.md)
   An error reported by SafetyKit.
 
 

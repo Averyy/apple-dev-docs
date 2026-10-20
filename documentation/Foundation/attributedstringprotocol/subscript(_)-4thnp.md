@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: subscript  
+**Role**: Instance Subscript  
 **Required**: Yes
 
 Returns an attribute value that corresponds to an attributed string key.
@@ -24,19 +25,26 @@ subscript<K>(_: K.Type) -> K.Value? where K : AttributedStringKey, K.Value : Sen
 
 #### Discussion
 
-This subscript returns `nil` unless the specified attribute exists, and is present and identical for the entire attributed string or substring. To find portions of an attributed string with consistent attributes, use the [`runs`](attributedstring/runs-swift.property.md) property.
+This subscript returns `nil` unless the specified attribute exists, and is present and identical for the entire attributed string or substring. To find portions of an attributed string with consistent attributes, use the [`runs`](../attributedstring/runs-swift.property.md) property.
 
 Getting or setting stringwide attributes with this subscript has `O(n)` behavior in the worst case, where `n` is the number of runs.
 
+## Default Implementations
+
+### AttributedStringProtocol Implementations
+- [subscript(RangeSet<AttributedString.Index>) -> DiscontiguousAttributedSubstring](./subscript%28_%29-67hgv.md)
+  Returns a discontiguous substring of this attributed string using a set of ranges to indicate the discontiguous substring bounds.
+
 ## See Also
 
-- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](attributedstringprotocol/subscript(dynamicmember:)-2wake.md)
+### Accessing Whole-String Attributes
+- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](./subscript%28dynamicmember%29-2wake.md)
   Returns an attribute value that a key path indicates.
-- [enum AttributeDynamicLookup](attributedynamiclookup.md)
+- [enum AttributeDynamicLookup](../attributedynamiclookup.md)
   A type to support dynamic member lookup of attributes and containers.
-- [subscript<S>(dynamicMember _: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S>](attributedstringprotocol/subscript(dynamicmember:)-55pcu.md)
+- [subscript<S>(dynamicMember _: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S>](./subscript%28dynamicmember%29-55pcu.md)
   Returns a scoped attribute container that a key path indicates.
-- [struct ScopedAttributeContainer](scopedattributecontainer.md)
+- [struct ScopedAttributeContainer](../scopedattributecontainer.md)
   An attribute container that allows dynamic member lookup of its contents within the specified attribute scope.
 
 

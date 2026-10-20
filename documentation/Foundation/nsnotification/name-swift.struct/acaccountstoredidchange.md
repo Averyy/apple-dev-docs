@@ -1,15 +1,18 @@
 # ACAccountStoreDidChange
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Posted when the accounts managed by this account store changed in the database.
 
 **Availability**:
-- iOS 5.0+
-- iPadOS 5.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
+- iOS 5.0+ - Deprecated in 14.0
+- iPadOS 5.0+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- macOS 10.8+ - Deprecated in 11.0
+
+> **Deprecated**: Public notification deprecated. Internal clients, see private header for replacement
 
 ## Declaration
 

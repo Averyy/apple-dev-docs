@@ -1,14 +1,15 @@
 # lv_file_start
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 user32_off_t lv_file_start;
 ```
 

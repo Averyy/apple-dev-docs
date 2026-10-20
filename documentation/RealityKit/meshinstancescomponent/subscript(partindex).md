@@ -1,7 +1,8 @@
 # subscript(partIndex:)
 
 **Framework**: RealityKit  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 26.0+

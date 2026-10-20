@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsOnThunderboltBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The bit indicating that the USB device is on a Thunderbolt port.
 
@@ -10,7 +11,7 @@ The bit indicating that the USB device is on a Thunderbolt port.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsOnThunderboltBit = 13
 ```
 

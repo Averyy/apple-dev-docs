@@ -1,7 +1,8 @@
 # NormalizationScaler.Transformer
 
 **Framework**: Create ML Components  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transformer that scales the input using a normalization strategy.
 
@@ -20,31 +21,33 @@ A transformer that scales the input using a normalization strategy.
 struct Transformer
 ```
 
+Available when `Element` conforms to `BinaryFloatingPoint`, `Decodable`, and `Encodable`.
+
 ## Topics
 
 ### Creating a transformer
-- [init(scale: Element)](normalizationscaler/transformer/init(scale:).md)
+- [init(scale: Element)](./transformer/init%28scale%29.md)
   Creates a normalization scaling transformer.
 ### Getting the scale
-- [var scale: Element](normalizationscaler/transformer/scale.md)
+- [var scale: Element](./transformer/scale.md)
   The normalization scale used to scale the input.
 ### Performing the transformation
-- [func applied(to: Element, eventHandler: EventHandler?) -> Element](normalizationscaler/transformer/applied(to:eventhandler:).md)
+- [func applied(to: Element, eventHandler: EventHandler?) -> Element](./transformer/applied%28to,eventhandler%29.md)
   Scales the input values using the calculation `input / scale`.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [Transformer](transformer.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomDebugStringConvertible](../../Swift/customdebugstringconvertible.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [Transformer](../transformer.md)
 
 
 ---

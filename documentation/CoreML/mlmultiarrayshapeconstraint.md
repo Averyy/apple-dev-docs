@@ -1,7 +1,8 @@
 # MLMultiArrayShapeConstraint
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The lists of shapes or ranges of shapes that constrain a multiarray feature.
 
@@ -20,41 +21,46 @@ The lists of shapes or ranges of shapes that constrain a multiarray feature.
 class MLMultiArrayShapeConstraint
 ```
 
+```objc
+@interface MLMultiArrayShapeConstraint : NSObject
+```
+
 ## Topics
 
 ### Accessing the Constraints
-- [var enumeratedShapes: [[NSNumber]]](mlmultiarrayshapeconstraint/enumeratedshapes.md)
+- [var enumeratedShapes: [[NSNumber]]](./mlmultiarrayshapeconstraint/enumeratedshapes.md)
   Array of allowed shapes for a multiarray feature.
-- [var sizeRangeForDimension: [NSValue]](mlmultiarrayshapeconstraint/sizerangefordimension.md)
+- [var sizeRangeForDimension: [NSValue]](./mlmultiarrayshapeconstraint/sizerangefordimension.md)
   The allowable range for a dimention of the multiarray.
-- [var type: MLMultiArrayShapeConstraintType](mlmultiarrayshapeconstraint/type.md)
+- [var type: MLMultiArrayShapeConstraintType](./mlmultiarrayshapeconstraint/type.md)
   The type of the shape constraint.
-- [enum MLMultiArrayShapeConstraintType](mlmultiarrayshapeconstrainttype.md)
+- [enum MLMultiArrayShapeConstraintType](./mlmultiarrayshapeconstrainttype.md)
   The possible types of shape constraints.
 ### Initializers
-- [init?(coder: NSCoder)](mlmultiarrayshapeconstraint/init(coder:).md)
+- [init?(coder: NSCoder)](./mlmultiarrayshapeconstraint/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var shape: [NSNumber]](mlmultiarrayconstraint/shape.md)
+### Accessing the Constraints
+- [var shape: [NSNumber]](./mlmultiarrayconstraint/shape.md)
   The shape of the multi array.
-- [var dataType: MLMultiArrayDataType](mlmultiarrayconstraint/datatype.md)
+- [var dataType: MLMultiArrayDataType](./mlmultiarrayconstraint/datatype.md)
   The type for the multi array.
-- [var shapeConstraint: MLMultiArrayShapeConstraint](mlmultiarrayconstraint/shapeconstraint.md)
+- [var shapeConstraint: MLMultiArrayShapeConstraint](./mlmultiarrayconstraint/shapeconstraint.md)
   The constraint on the shape of the multiarray.
 
 

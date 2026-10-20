@@ -1,7 +1,8 @@
 # ATSFlatDataLineInfoData
 
 **Framework**: Application Services  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.2+
@@ -12,14 +13,20 @@
 struct ATSFlatDataLineInfoData
 ```
 
+```c
+typedef struct ATSFlatDataLineInfoData {
+    ...
+} ATSFlatDataLineInfoData;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](atsflatdatalineinfodata/1461454-init.md)
-- [init(lineLength: UInt32, numberOfLineControls: UInt32)](atsflatdatalineinfodata/1462859-init.md)
+- [init()](./atsflatdatalineinfodata/api-1461454-init.md)
+- [init(lineLength: UInt32, numberOfLineControls: UInt32)](./atsflatdatalineinfodata/api-1462859-init.md)
 ### Instance Properties
-- [var lineLength: UInt32](atsflatdatalineinfodata/1462995-linelength.md)
-- [var numberOfLineControls: UInt32](atsflatdatalineinfodata/1460103-numberoflinecontrols.md)
+- [var lineLength: UInt32](./atsflatdatalineinfodata/api-1462995-linelength.md)
+- [var numberOfLineControls: UInt32](./atsflatdatalineinfodata/api-1460103-numberoflinecontrols.md)
 
 
 ---

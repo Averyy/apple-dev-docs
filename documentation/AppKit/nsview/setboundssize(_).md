@@ -1,12 +1,13 @@
 # setBoundsSize(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the size of the view’s bounds rectangle to specified dimensions, inversely scaling its coordinate system relative to its frame rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,15 @@ Sets the size of the view’s bounds rectangle to specified dimensions, inversel
 func setBoundsSize(_ newSize: NSSize)
 ```
 
+```objc
+- (void) setBoundsSize:(NSSize) newSize;
+```
+
 #### Discussion
 
-For example, a view object with a frame size of (100.0, 100.0) and a bounds size of (200.0, 100.0) draws half as wide along the x axis. This method neither redisplays the view nor marks it as needing display. Set the [`needsDisplay`](nsview/needsdisplay.md) property to [`true`](https://developer.apple.com/documentation/swift/true) when you want the view to be redisplayed.
+For example, a view object with a frame size of (100.0, 100.0) and a bounds size of (200.0, 100.0) draws half as wide along the x axis. This method neither redisplays the view nor marks it as needing display. Set the [`needsDisplay`](./needsdisplay.md) property to [`true`](../../Swift/true.md) when you want the view to be redisplayed.
 
-This method posts an [`boundsDidChangeNotification`](nsview/boundsdidchangenotification.md) to the default notification center if the view is configured to do so.
+This method posts an [`boundsDidChangeNotification`](./boundsdidchangenotification.md) to the default notification center if the view is configured to do so.
 
 After calling this method, `NSView` creates an internal transform (or appends these changes to an existing internal transform) to convert from frame coordinates to bounds coordinates in your view. As long as the width-to-height ratio of the two coordinate systems remains the same, your content appears normal. If the ratios differ, your content may appear skewed.
 
@@ -28,16 +33,17 @@ After calling this method, `NSView` creates an internal transform (or appends th
 
 ## See Also
 
-- [var bounds: NSRect](nsview/bounds.md)
+### Modifying the bounds rectangle
+- [var bounds: NSRect](./bounds.md)
   The view’s bounds rectangle, which expresses its location and size in its own coordinate system.
-- [func setBoundsOrigin(NSPoint)](nsview/setboundsorigin(_:).md)
+- [func setBoundsOrigin(NSPoint)](./setboundsorigin%28_%29.md)
   Sets the origin of the view’s bounds rectangle to a specified point.
-- [var boundsRotation: CGFloat](nsview/boundsrotation.md)
+- [var boundsRotation: CGFloat](./boundsrotation.md)
   The angle of rotation, measured in degrees, applied to the view’s bounds rectangle relative to its frame rectangle.
-- [class let boundsDidChangeNotification: NSNotification.Name](nsview/boundsdidchangenotification.md)
+- [class let boundsDidChangeNotification: NSNotification.Name](./boundsdidchangenotification.md)
   A notification that posts when the view’s bounds rectangle changes to a new value independently of the frame rectangle.
-- [NSView.BoundsDidChangeMessage](nsview/boundsdidchangemessage.md)
-- [var postsBoundsChangedNotifications: Bool](nsview/postsboundschangednotifications.md)
+- [NSView.BoundsDidChangeMessage](./boundsdidchangemessage.md)
+- [var postsBoundsChangedNotifications: Bool](./postsboundschangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its bounds rectangle changes.
 
 

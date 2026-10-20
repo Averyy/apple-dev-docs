@@ -1,7 +1,8 @@
 # underPageBackgroundColor
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color the web view displays behind the active page, visible when the user scrolls beyond the bounds of the page.
 
@@ -14,9 +15,30 @@ The color the web view displays behind the active page, visible when the user sc
 
 ## Declaration
 
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```swift
+@NSCopying
+var underPageBackgroundColor: UIColor! { get set }
+```
+
+*macOS*
+
 ```swift
 @NSCopying
 var underPageBackgroundColor: NSColor! { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, visionOS*
+
+```objc
+@property (nonatomic, copy, null_resettable) UIColor * underPageBackgroundColor;
+```
+
+*macOS*
+
+```objc
+@property (nonatomic, copy, null_resettable) NSColor * underPageBackgroundColor;
 ```
 
 #### Discussion
@@ -25,23 +47,24 @@ The web view derives the default value of this property from the content of the 
 
 ## See Also
 
-- [var scrollView: UIScrollView](wkwebview/scrollview.md)
+### Inspecting the view information
+- [var scrollView: UIScrollView](./scrollview.md)
   The scroll view associated with the web view.
-- [var title: String?](wkwebview/title.md)
+- [var title: String?](./title.md)
   The page title.
-- [var url: URL?](wkwebview/url.md)
+- [var url: URL?](./url.md)
   The URL for the current webpage.
-- [var mediaType: String?](wkwebview/mediatype.md)
+- [var mediaType: String?](./mediatype.md)
   The media type for the contents of the web view.
-- [var customUserAgent: String?](wkwebview/customuseragent.md)
+- [var customUserAgent: String?](./customuseragent.md)
   The custom user agent string.
-- [var serverTrust: SecTrust?](wkwebview/servertrust.md)
+- [var serverTrust: SecTrust?](./servertrust.md)
   The trust management object you use to evaluate trust for the current webpage.
-- [var hasOnlySecureContent: Bool](wkwebview/hasonlysecurecontent.md)
+- [var hasOnlySecureContent: Bool](./hasonlysecurecontent.md)
   A Boolean value that indicates whether the web view loaded all resources on the page through securely encrypted connections.
-- [var themeColor: UIColor?](wkwebview/themecolor.md)
+- [var themeColor: UIColor?](./themecolor.md)
   The theme color that the system gets from the first valid meta tag in the webpage.
-- [var refreshController: NSRefreshController?](wkwebview/refreshcontroller.md)
+- [var refreshController: NSRefreshController?](./refreshcontroller.md)
 
 
 ---

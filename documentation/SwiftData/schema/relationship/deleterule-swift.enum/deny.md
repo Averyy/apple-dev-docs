@@ -1,7 +1,8 @@
 # Schema.Relationship.DeleteRule.deny
 
 **Framework**: SwiftData  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A rule that prevents the deletion of a model because it contains one or more references to other models.
 
@@ -23,15 +24,16 @@ case deny
 
 ## Mentions
 
-- [Syncing model data across a person’s devices](syncing-model-data-across-a-persons-devices.md)
+- [Syncing model data across a person’s devices](../../../syncing-model-data-across-a-persons-devices.md)
 
 ## See Also
 
-- [Schema.Relationship.DeleteRule.cascade](schema/relationship/deleterule-swift.enum/cascade.md)
+### Accessing delete rules
+- [Schema.Relationship.DeleteRule.cascade](./cascade.md)
   A rule that deletes any related models.
-- [Schema.Relationship.DeleteRule.noAction](schema/relationship/deleterule-swift.enum/noaction.md)
+- [Schema.Relationship.DeleteRule.noAction](./noaction.md)
   A rule that doesn’t make changes to any related models.
-- [Schema.Relationship.DeleteRule.nullify](schema/relationship/deleterule-swift.enum/nullify.md)
+- [Schema.Relationship.DeleteRule.nullify](./nullify.md)
   A rule that nullifies the related model’s reference to the deleted model.
 
 

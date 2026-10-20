@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type to use for defining the intent’s workout style.
@@ -12,7 +13,7 @@ The type to use for defining the intent’s workout style.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,15 +24,16 @@ associatedtype WorkoutStyle : AppValue
 
 #### Discussion
 
-Assign a type that adopts either the [`AppEnum`](appenum.md) or [`AppEntity`](appentity.md) protocol.
+Assign a type that adopts either the [`AppEnum`](../appenum.md) or [`AppEntity`](../appentity.md) protocol.
 
 ## See Also
 
-- [var workoutStyle: Self.WorkoutStyle](startworkoutintent/workoutstyle-swift.property.md)
+### Defining supported workouts
+- [var workoutStyle: Self.WorkoutStyle](./workoutstyle-swift.property.md)
   The workout style for the intent.
-- [static var suggestedWorkouts: [Self]](startworkoutintent/suggestedworkouts.md)
+- [static var suggestedWorkouts: [Self]](./suggestedworkouts.md)
   A list of the supported workout styles.
-- [static func invalidateSuggestedWorkouts()](startworkoutintent/invalidatesuggestedworkouts.md)
+- [static func invalidateSuggestedWorkouts()](./invalidatesuggestedworkouts%28%29.md)
   Tells the system when the list of suggested workouts changes.
 
 

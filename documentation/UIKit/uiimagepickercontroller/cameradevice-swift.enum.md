@@ -1,14 +1,15 @@
 # UIImagePickerController.CameraDevice
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that specify the camera to use for image or movie capture.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS
+- iPadOS
+- Mac Catalyst
 
 ## Declaration
 
@@ -16,35 +17,40 @@ Constants that specify the camera to use for image or movie capture.
 enum CameraDevice
 ```
 
+```c
+enum UIImagePickerControllerCameraDevice : NSInteger;
+```
+
 #### Overview
 
-The constants in this enumeration are for use as values of the [`cameraDevice`](uiimagepickercontroller/cameradevice-swift.property.md) property.
+The constants in this enumeration are for use as values of the [`cameraDevice`](./cameradevice-swift.property.md) property.
 
 ## Topics
 
 ### Constants
-- [UIImagePickerController.CameraDevice.rear](uiimagepickercontroller/cameradevice-swift.enum/rear.md)
+- [UIImagePickerController.CameraDevice.rear](./cameradevice-swift.enum/rear.md)
   Specifies the camera on the rear of the device.
-- [UIImagePickerController.CameraDevice.front](uiimagepickercontroller/cameradevice-swift.enum/front.md)
+- [UIImagePickerController.CameraDevice.front](./cameradevice-swift.enum/front.md)
   Specifies the camera on the front of the device.
 ### Initializers
-- [init?(rawValue: Int)](uiimagepickercontroller/cameradevice-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./cameradevice-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class func isCameraDeviceAvailable(UIImagePickerController.CameraDevice) -> Bool](uiimagepickercontroller/iscameradeviceavailable(_:).md)
+### Configuring the camera to use
+- [class func isCameraDeviceAvailable(UIImagePickerController.CameraDevice) -> Bool](./iscameradeviceavailable%28_%29.md)
   Queries whether the specified camera is available.
-- [var cameraDevice: UIImagePickerController.CameraDevice](uiimagepickercontroller/cameradevice-swift.property.md)
+- [var cameraDevice: UIImagePickerController.CameraDevice](./cameradevice-swift.property.md)
   The camera used by the image picker controller.
 
 

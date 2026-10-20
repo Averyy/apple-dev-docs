@@ -1,7 +1,8 @@
 # NEFilterReport.Event
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A type that represents the kind of event indicated by a report.
 
@@ -18,43 +19,48 @@ A type that represents the kind of event indicated by a report.
 enum Event
 ```
 
+```c
+enum NEFilterReportEvent : NSInteger;
+```
+
 ## Topics
 
 ### Event Types
-- [NEFilterReport.Event.newFlow](nefilterreport/event-swift.enum/newflow.md)
+- [NEFilterReport.Event.newFlow](./event-swift.enum/newflow.md)
   A type of event indicating the report is for a new flow.
-- [NEFilterReport.Event.dataDecision](nefilterreport/event-swift.enum/datadecision.md)
+- [NEFilterReport.Event.dataDecision](./event-swift.enum/datadecision.md)
   A type of event indicating the report is about a pass/block decision made after analyzing some amount of a flow’s data.
-- [NEFilterReport.Event.flowClosed](nefilterreport/event-swift.enum/flowclosed.md)
+- [NEFilterReport.Event.flowClosed](./event-swift.enum/flowclosed.md)
   A type of event indicating the report is for a flow’s closing.
-- [NEFilterReport.Event.statistics](nefilterreport/event-swift.enum/statistics.md)
+- [NEFilterReport.Event.statistics](./event-swift.enum/statistics.md)
   A type of event indicating the report is for the latest statistics of the flow.
 ### Initializers
-- [init?(rawValue: Int)](nefilterreport/event-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./event-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var flow: NEFilterFlow?](nefilterreport/flow.md)
+### Getting report properties
+- [var flow: NEFilterFlow?](./flow.md)
   The flow on which the associated action was taken.
-- [var action: NEFilterAction](nefilterreport/action.md)
+- [var action: NEFilterAction](./action.md)
   The action taken on the reported flow.
-- [enum NEFilterAction](nefilteraction.md)
+- [enum NEFilterAction](../nefilteraction.md)
   The actions a data provider can take on a filter flow.
-- [var event: NEFilterReport.Event](nefilterreport/event-swift.property.md)
+- [var event: NEFilterReport.Event](./event-swift.property.md)
   The type of event indicated by this report.
-- [var bytesInboundCount: Int](nefilterreport/bytesinboundcount.md)
+- [var bytesInboundCount: Int](./bytesinboundcount.md)
   The number of inbound bytes received from the flow.
-- [var bytesOutboundCount: Int](nefilterreport/bytesoutboundcount.md)
+- [var bytesOutboundCount: Int](./bytesoutboundcount.md)
   The number of outbound bytes sent on the flow.
 
 

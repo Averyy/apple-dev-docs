@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the configuration of a provider object.
 
@@ -19,9 +20,14 @@ Creates the configuration of a provider object.
 init()
 ```
 
+```objc
+- (instancetype) init;
+```
+
 ## See Also
 
-- [convenience init(localizedName: String)](cxproviderconfiguration/init(localizedname:).md)
+### Creating New Configurations
+- [convenience init(localizedName: String)](./init%28localizedname%29.md)
   Initializes a configuration with the specified localized name.
 
 

@@ -1,7 +1,8 @@
 # direction
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 The direction of the endpoint.
 
@@ -10,17 +11,18 @@ The direction of the endpoint.
 
 ## Declaration
 
-```swift
+```c
 UInt8 direction;
 ```
 
 ## See Also
 
-- [type](iousbfindendpointrequest/1546255-type.md)
+### Getting the Properties
+- [type](./api-1546255-type.md)
   The type of endpoint.
-- [maxPacketSize](iousbfindendpointrequest/1546175-maxpacketsize.md)
+- [maxPacketSize](./api-1546175-maxpacketsize.md)
   The maximum packet size of the endpoint.
-- [interval](iousbfindendpointrequest/1546078-interval.md)
+- [interval](./api-1546078-interval.md)
   The polling interval for the endpoint in milliseconds.
 
 

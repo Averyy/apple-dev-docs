@@ -1,7 +1,8 @@
 # StationGenres.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for the station genre resource.
 
@@ -10,7 +11,7 @@ The attributes for the station genre resource.
 
 ## Declaration
 
-```swift
+```
 object StationGenres.Attributes
 ```
 
@@ -20,7 +21,8 @@ object StationGenres.Attributes
 
 ## See Also
 
-- [object StationGenres.Relationships](stationgenres/relationships-data.dictionary.md)
+### Related Objects
+- [object StationGenres.Relationships](./relationships-data.dictionary.md)
   The relationships for a station genre resource.
 
 

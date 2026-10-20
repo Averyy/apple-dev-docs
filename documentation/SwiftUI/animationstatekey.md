@@ -1,7 +1,8 @@
 # AnimationStateKey
 
 **Framework**: SwiftUI  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A key for accessing animation state values.
 
@@ -22,7 +23,7 @@ protocol AnimationStateKey
 
 #### Overview
 
-To access animation state from an [`AnimationContext`](animationcontext.md) in a custom animation, create an `AnimationStateKey`. For example, the following code creates an animation state key named `PausableState` and sets the value for the required [`defaultValue`](animationstatekey/defaultvalue.md) property. The code also defines properties for state values that the custom animation needs when calculating animation values. Keeping the state values in the animation state key makes it more convenient to read and write those values in the implementation of a [`CustomAnimation`](customanimation.md).
+To access animation state from an [`AnimationContext`](./animationcontext.md) in a custom animation, create an `AnimationStateKey`. For example, the following code creates an animation state key named `PausableState` and sets the value for the required [`defaultValue`](./animationstatekey/defaultvalue.md) property. The code also defines properties for state values that the custom animation needs when calculating animation values. Keeping the state values in the animation state key makes it more convenient to read and write those values in the implementation of a [`CustomAnimation`](./customanimation.md).
 
 ```swift
 private struct PausableState<Value: VectorArithmetic>: AnimationStateKey {
@@ -33,7 +34,7 @@ private struct PausableState<Value: VectorArithmetic>: AnimationStateKey {
 }
 ```
 
-To make accessing the value of the animation state key more convenient, define a property for it by extending [`AnimationContext`](animationcontext.md):
+To make accessing the value of the animation state key more convenient, define a property for it by extending [`AnimationContext`](./animationcontext.md):
 
 ```swift
 extension AnimationContext {
@@ -44,7 +45,7 @@ extension AnimationContext {
 }
 ```
 
-Then, you can read and write your state in an instance of `CustomAnimation` using the [`AnimationContext`](animationcontext.md):
+Then, you can read and write your state in an instance of `CustomAnimation` using the [`AnimationContext`](./animationcontext.md):
 
 ```swift
 struct PausableAnimation: CustomAnimation {
@@ -70,22 +71,23 @@ struct PausableAnimation: CustomAnimation {
 ## Topics
 
 ### Setting the default value
-- [static var defaultValue: Self.Value](animationstatekey/defaultvalue.md)
+- [static var defaultValue: Self.Value](./animationstatekey/defaultvalue.md)
   The default value for the animation state key.
-- [associatedtype Value](animationstatekey/value.md)
+- [associatedtype Value](./animationstatekey/value.md)
   The associated type representing the type of the animation state key’s value.
 
 ## See Also
 
-- [protocol CustomAnimation](customanimation.md)
+### Creating custom animations
+- [protocol CustomAnimation](./customanimation.md)
   A type that defines how an animatable value changes over time.
-- [struct AnimationContext](animationcontext.md)
+- [struct AnimationContext](./animationcontext.md)
   Contextual values that a custom animation can use to manage state and access a view’s environment.
-- [struct AnimationState](animationstate.md)
+- [struct AnimationState](./animationstate.md)
   A container that stores the state for a custom animation.
-- [struct UnitCurve](unitcurve.md)
+- [struct UnitCurve](./unitcurve.md)
   A  function defined by a two-dimensional curve that maps an input progress in the range [0,1] to an output progress that is also in the range [0,1]. By changing the shape of the curve, the effective speed of an animation or other interpolation can be changed.
-- [struct Spring](spring.md)
+- [struct Spring](./spring.md)
   A representation of a spring’s motion.
 
 

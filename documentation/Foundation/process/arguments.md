@@ -1,7 +1,8 @@
 # arguments
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The command arguments that the system uses to launch the executable.
 
@@ -15,9 +16,13 @@ The command arguments that the system uses to launch the executable.
 var arguments: [String]? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSArray<NSString *> * arguments;
+```
+
 #### Discussion
 
-The `NSTask` object converts both `path` and the strings in `arguments` to appropriate C-style strings (using [`fileSystemRepresentation`](nsstring/filesystemrepresentation.md)) before passing them to the task through `argv[]`. The strings in `arguments` don’t undergo shell expansion, so you don’t need to do special quoting, and shell variables, such as `$PWD`, aren’t resolved.
+The `NSTask` object converts both `path` and the strings in `arguments` to appropriate C-style strings (using [`fileSystemRepresentation`](../nsstring/filesystemrepresentation.md)) before passing them to the task through `argv[]`. The strings in `arguments` don’t undergo shell expansion, so you don’t need to do special quoting, and shell variables, such as `$PWD`, aren’t resolved.
 
 ## Parameters
 
@@ -25,19 +30,20 @@ The `NSTask` object converts both `path` and the strings in `arguments` to appro
 
 ## See Also
 
-- [var currentDirectoryURL: URL?](process/currentdirectoryurl.md)
+### Configuring a process
+- [var currentDirectoryURL: URL?](./currentdirectoryurl.md)
   The current directory for the receiver.
-- [var environment: [String : String]?](process/environment.md)
+- [var environment: [String : String]?](./environment.md)
   The environment for the receiver.
-- [var executableURL: URL?](process/executableurl.md)
+- [var executableURL: URL?](./executableurl.md)
   The receiver’s executable.
-- [var qualityOfService: QualityOfService](process/qualityofservice.md)
+- [var qualityOfService: QualityOfService](./qualityofservice.md)
   The default quality of service level the system applies to operations the task executes.
-- [var standardError: Any?](process/standarderror.md)
+- [var standardError: Any?](./standarderror.md)
   The standard error for the receiver.
-- [var standardInput: Any?](process/standardinput.md)
+- [var standardInput: Any?](./standardinput.md)
   The standard input for the receiver.
-- [var standardOutput: Any?](process/standardoutput.md)
+- [var standardOutput: Any?](./standardoutput.md)
   The standard output for the receiver.
 
 

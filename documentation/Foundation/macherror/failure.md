@@ -1,7 +1,8 @@
 # failure
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The function could not be performed.  A catch-all.
 

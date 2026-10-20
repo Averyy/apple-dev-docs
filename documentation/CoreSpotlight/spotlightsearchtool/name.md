@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique name for the Spotlight search tool.
 
@@ -20,7 +21,7 @@ var name: String
 
 #### Discussion
 
-The Spotlight search tool implements this property as part of its conformance to the [`Tool`](https://developer.apple.com/documentation/foundationmodels/tool) protocol.
+The Spotlight search tool implements this property as part of its conformance to the [`Tool`](../../FoundationModels/tool.md) protocol.
 
 
 ---

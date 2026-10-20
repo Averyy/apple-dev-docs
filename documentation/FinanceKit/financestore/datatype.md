@@ -1,7 +1,8 @@
 # FinanceStore.DataType
 
 **Framework**: FinanceKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values that describe the kinds of data in the finance store.
 
@@ -19,28 +20,29 @@ enum DataType
 ## Topics
 
 ### Enumeration Cases
-- [FinanceStore.DataType.financialData](financestore/datatype/financialdata.md)
+- [FinanceStore.DataType.financialData](./datatype/financialdata.md)
   The value that describes financial data, such as account information.
-- [FinanceStore.DataType.orders](financestore/datatype/orders.md)
+- [FinanceStore.DataType.orders](./datatype/orders.md)
   The value that describes orders records, such as purchases.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [FinanceStore.ContainsOrderResult](financestore/containsorderresult.md)
+### Enumerations
+- [FinanceStore.ContainsOrderResult](./containsorderresult.md)
   Result type for queries against the finance store’s orders.
-- [FinanceStore.SaveOrderResult](financestore/saveorderresult.md)
+- [FinanceStore.SaveOrderResult](./saveorderresult.md)
   Result type for the finance store’s save order method.
-- [FinanceStore.BackgroundDataType](financestore/backgrounddatatype.md)
+- [FinanceStore.BackgroundDataType](./backgrounddatatype.md)
   Types of data in the finance store supported by background delivery.
-- [FinanceStore.UpdateFrequency](financestore/updatefrequency.md)
+- [FinanceStore.UpdateFrequency](./updatefrequency.md)
   Frequencies of background delivery updates.
 
 

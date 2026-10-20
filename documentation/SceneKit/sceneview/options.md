@@ -1,16 +1,17 @@
 # SceneView.Options
 
 **Framework**: SceneKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
-- visionOS 1.0+
-- watchOS 7.0+
+- iOS 14.0+ - Deprecated in 26.0
+- iPadOS 14.0+ - Deprecated in 26.0
+- Mac Catalyst 14.0+ - Deprecated in 26.0
+- macOS 11.0+ - Deprecated in 26.0
+- tvOS 14.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 7.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -21,24 +22,25 @@ struct Options
 ## Topics
 
 ### Type Properties
-- [static let allowsCameraControl: SceneView.Options](sceneview/options/allowscameracontrol.md)
-- [static let autoenablesDefaultLighting: SceneView.Options](sceneview/options/autoenablesdefaultlighting.md)
-- [static let jitteringEnabled: SceneView.Options](sceneview/options/jitteringenabled.md)
-- [static let rendersContinuously: SceneView.Options](sceneview/options/renderscontinuously.md)
-- [static let temporalAntialiasingEnabled: SceneView.Options](sceneview/options/temporalantialiasingenabled.md)
+- [static let allowsCameraControl: SceneView.Options](./options/allowscameracontrol.md)
+- [static let autoenablesDefaultLighting: SceneView.Options](./options/autoenablesdefaultlighting.md)
+- [static let jitteringEnabled: SceneView.Options](./options/jitteringenabled.md)
+- [static let rendersContinuously: SceneView.Options](./options/renderscontinuously.md)
+- [static let temporalAntialiasingEnabled: SceneView.Options](./options/temporalantialiasingenabled.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../../Swift/optionset.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [SetAlgebra](../../Swift/setalgebra.md)
 
 ## See Also
 
-- [init(scene: SCNScene?, pointOfView: SCNNode?, options: SceneView.Options, preferredFramesPerSecond: Int, antialiasingMode: SCNAntialiasingMode, delegate: (any SCNSceneRendererDelegate)?, technique: SCNTechnique?)](sceneview/init(scene:pointofview:options:preferredframespersecond:antialiasingmode:delegate:technique:).md)
+### Creating a Scene View
+- [init(scene: SCNScene?, pointOfView: SCNNode?, options: SceneView.Options, preferredFramesPerSecond: Int, antialiasingMode: SCNAntialiasingMode, delegate: (any SCNSceneRendererDelegate)?, technique: SCNTechnique?)](./init%28scene,pointofview,options,preferredframespersecond,antialiasingmode,delegate,technique%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # Package.Dependency.SourceControlRequirement.exact(_:)
 
 **Framework**: PackageDescription  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An exact version based requirement.
 

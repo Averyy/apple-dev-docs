@@ -1,7 +1,8 @@
 # UITextMathExpressionCompletionType.no
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 18.0+
@@ -14,6 +15,10 @@
 
 ```swift
 case no
+```
+
+```c
+UITextMathExpressionCompletionTypeNo
 ```
 
 

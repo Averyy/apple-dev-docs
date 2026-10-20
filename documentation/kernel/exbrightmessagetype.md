@@ -1,14 +1,15 @@
 # EXBrightMessageType
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 typedef enum EXBrightMessageType : unsigned int {
     ...
 } EXBrightMessageType;
@@ -17,7 +18,7 @@ typedef enum EXBrightMessageType : unsigned int {
 ## Topics
 
 ### Constants
-- [kLoadALSSCalibration](exbrightmessagetype/kloadalsscalibration.md)
+- [kLoadALSSCalibration](./exbrightmessagetype/kloadalsscalibration.md)
 
 
 ---

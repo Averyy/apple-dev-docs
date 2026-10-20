@@ -1,7 +1,8 @@
 # title
 
 **Framework**: ActivityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A short title that describes the purpose of the Live Activity update on Apple Watch.
 
@@ -21,13 +22,14 @@ Apple Watch displays this string briefly as part of the alert that appears when 
 
 ## See Also
 
-- [init(title: LocalizedStringResource, body: LocalizedStringResource, sound: AlertConfiguration.AlertSound)](alertconfiguration/init(title:body:sound:).md)
+### Configuring Live Activity alerts
+- [init(title: LocalizedStringResource, body: LocalizedStringResource, sound: AlertConfiguration.AlertSound)](./init%28title,body,sound%29.md)
   Initializes a new alert configuration for a Live Activity update.
-- [var body: LocalizedStringResource](alertconfiguration/body.md)
+- [var body: LocalizedStringResource](./body.md)
   The main text that appears on the alert for a Live Activity update on Apple Watch.
-- [var sound: AlertConfiguration.AlertSound](alertconfiguration/sound.md)
+- [var sound: AlertConfiguration.AlertSound](./sound.md)
   The sound the system plays when the Live Activity alert appears on a person’s device.
-- [AlertConfiguration.AlertSound](alertconfiguration/alertsound.md)
+- [AlertConfiguration.AlertSound](./alertsound.md)
   An object that describes the sound to play for a Live Activity update alert.
 
 

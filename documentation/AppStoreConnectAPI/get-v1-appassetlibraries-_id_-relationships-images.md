@@ -1,7 +1,8 @@
 # List the image IDs for an app asset library
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get a list of image asset resource IDs for a specific asset library.
 
@@ -14,7 +15,7 @@ Get a list of image asset resource IDs for a specific asset library.
 
 **Request**:
 
-```None
+```
 https://api.appstoreconnect.apple.com/v1/appAssetLibraries/1234567890/relationships/images?limit=2
 ```
 
@@ -48,15 +49,33 @@ https://api.appstoreconnect.apple.com/v1/appAssetLibraries/1234567890/relationsh
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+
+### Query Parameters
+
 - `limit` (integer): The maximum number of app asset library image resource identifiers to return.
+
+  **Maximum**: `200`
+
+## Responses
+
+- `200` OK (`AppAssetLibraryImagesLinkagesResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [List related images](get-v1-appassetlibraries-_id_-images.md)
+### Getting assets in a library
+- [List related images](./get-v1-appassetlibraries-_id_-images.md)
   List the image assets in an app’s asset library.
-- [List related videos](get-v1-appassetlibraries-_id_-videos.md)
+- [List related videos](./get-v1-appassetlibraries-_id_-videos.md)
   List the video assets in an app’s asset library.
-- [List the video IDs for an app asset library](get-v1-appassetlibraries-_id_-relationships-videos.md)
+- [List the video IDs for an app asset library](./get-v1-appassetlibraries-_id_-relationships-videos.md)
   Get a list of video asset resource IDs for a specific asset library.
 
 

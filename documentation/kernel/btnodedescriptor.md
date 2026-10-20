@@ -1,14 +1,15 @@
 # BTNodeDescriptor
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.6+
 
 ## Declaration
 
-```swift
+```c
 typedef struct BTNodeDescriptor {
     ...
 } BTNodeDescriptor;
@@ -17,12 +18,12 @@ typedef struct BTNodeDescriptor {
 ## Topics
 
 ### Instance Properties
-- [bLink](btnodedescriptor/1578157-blink.md)
-- [fLink](btnodedescriptor/1577861-flink.md)
-- [height](btnodedescriptor/1577881-height.md)
-- [kind](btnodedescriptor/1577909-kind.md)
-- [numRecords](btnodedescriptor/1577947-numrecords.md)
-- [reserved](btnodedescriptor/1578124-reserved.md)
+- [bLink](./btnodedescriptor/api-1578157-blink.md)
+- [fLink](./btnodedescriptor/api-1577861-flink.md)
+- [height](./btnodedescriptor/api-1577881-height.md)
+- [kind](./btnodedescriptor/api-1577909-kind.md)
+- [numRecords](./btnodedescriptor/api-1577947-numrecords.md)
+- [reserved](./btnodedescriptor/api-1578124-reserved.md)
 
 
 ---

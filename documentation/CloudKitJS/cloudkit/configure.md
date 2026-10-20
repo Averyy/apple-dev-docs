@@ -1,7 +1,8 @@
 # configure
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Configures CloudKit JS.
 
@@ -10,7 +11,7 @@ Configures CloudKit JS.
 
 ## Declaration
 
-```swift
+```
 CloudKit configure(
 	CloudKit.CloudKitConfig config
 );
@@ -36,7 +37,7 @@ CloudKit.configure({
 });
 ```
 
-Other [`CloudKit.ContainerConfig`](cloudkit.containerconfig.md).`apiTokenAuth` keys, such as the `persist` key, are optional. To keep the user signed in after closing and reopening the browser, set `persist` to `true`.
+Other [`CloudKit.ContainerConfig`](../cloudkit.containerconfig.md).`apiTokenAuth` keys, such as the `persist` key, are optional. To keep the user signed in after closing and reopening the browser, set `persist` to `true`.
 
 ```javascript
 CloudKit.configure({
@@ -52,7 +53,7 @@ CloudKit.configure({
 
 To customize the sign in and sign out buttons, add `signInButton` and `signOutButton` keys to the `auth` dictionary.
 
-For more container and service configuration options, see [`CloudKit.CloudKitConfig`](cloudkit.cloudkitconfig.md) in [`CloudKit JS Data Types`](cloudkit-js-data-types.md).
+For more container and service configuration options, see [`CloudKit.CloudKitConfig`](../cloudkit.cloudkitconfig.md) in [CloudKit JS Data Types](../cloudkit-js-data-types.md).
 
 ## Parameters
 

@@ -1,17 +1,22 @@
 # underlineThickness
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The thickness to use when drawing underlines with the font.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var underlineThickness: CGFloat { get }
+```
+
+```objc
+@property (readonly) CGFloat underlineThickness;
 ```
 
 #### Discussion
@@ -20,9 +25,10 @@ The value in this property is determined by the font’s AFM file.
 
 ## See Also
 
-- [var italicAngle: CGFloat](nsfont/italicangle.md)
+### Getting Underline and Italic Metrics
+- [var italicAngle: CGFloat](./italicangle.md)
   The number of degrees that the font is slanted counterclockwise from the vertical.
-- [var underlinePosition: CGFloat](nsfont/underlineposition.md)
+- [var underlinePosition: CGFloat](./underlineposition.md)
   The baseline offset to use when drawing underlines with the font.
 
 

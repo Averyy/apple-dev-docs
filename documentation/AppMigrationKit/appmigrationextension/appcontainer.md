@@ -2,6 +2,7 @@
 
 **Framework**: AppMigrationKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The data container of the containing app.
@@ -20,9 +21,16 @@ var appContainer: MigrationDataContainer { get }
 
 To access the containing app’s data, your app requires the `com.apple.developer.app-migration.data-container-access` entitlement.
 
+## Default Implementations
+
+### AppMigrationExtension Implementations
+- [var appContainer: MigrationDataContainer](./appcontainer-44kyi.md)
+  The data container of the containing app.
+
 ## See Also
 
-- [struct MigrationDataContainer](migrationdatacontainer.md)
+### Accessing migration data
+- [struct MigrationDataContainer](../migrationdatacontainer.md)
   An object describing an app’s data container
 
 

@@ -1,7 +1,8 @@
 # streamID
 
 **Framework**: Core Media I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A universally unique identifier for the stream.
 
@@ -15,9 +16,14 @@ A universally unique identifier for the stream.
 var streamID: UUID { get }
 ```
 
+```objc
+@property (atomic, copy, readonly) NSUUID * streamID;
+```
+
 ## See Also
 
-- [var localizedName: String](cmioextensionstream/localizedname.md)
+### Identifying a Stream
+- [var localizedName: String](./localizedname.md)
   A localized name for the stream.
 
 

@@ -1,9 +1,10 @@
 # MDLVoxelIndexExtent
 
 **Framework**: Model I/O  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
-The corner voxel indices defining a solid rectangular volume of voxels. Used by the [`voxelIndexExtent`](mdlvoxelarray/voxelindexextent.md) property and [`voxels(within:)`](mdlvoxelarray/voxels(within:).md) method.
+The corner voxel indices defining a solid rectangular volume of voxels. Used by the [`voxelIndexExtent`](./mdlvoxelarray/voxelindexextent.md) property and [`voxels(within:)`](./mdlvoxelarray/voxels%28within%29.md) method.
 
 **Availability**:
 - iOS 9.0+
@@ -19,26 +20,31 @@ The corner voxel indices defining a solid rectangular volume of voxels. Used by 
 struct MDLVoxelIndexExtent
 ```
 
+```c
+typedef struct { ... } MDLVoxelIndexExtent;
+```
+
 ## Topics
 
 ### Initializers
-- [init()](mdlvoxelindexextent/init.md)
-- [init(minimumExtent: MDLVoxelIndex, maximumExtent: MDLVoxelIndex)](mdlvoxelindexextent/init(minimumextent:maximumextent:).md)
+- [init()](./mdlvoxelindexextent/init%28%29.md)
+- [init(minimumExtent: MDLVoxelIndex, maximumExtent: MDLVoxelIndex)](./mdlvoxelindexextent/init%28minimumextent,maximumextent%29.md)
 ### Instance Properties
-- [var maximumExtent: MDLVoxelIndex](mdlvoxelindexextent/maximumextent.md)
+- [var maximumExtent: MDLVoxelIndex](./mdlvoxelindexextent/maximumextent.md)
   The highest x, y, and z coordinates in the volume.
-- [var minimumExtent: MDLVoxelIndex](mdlvoxelindexextent/minimumextent.md)
+- [var minimumExtent: MDLVoxelIndex](./mdlvoxelindexextent/minimumextent.md)
   The lowest x, y, and z coordinates in the volume.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Sendable](../swift/sendable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [typealias MDLVoxelIndex](mdlvoxelindex.md)
+### Constants
+- [typealias MDLVoxelIndex](./mdlvoxelindex.md)
   A 4-component vector encoding the location of a voxel in a voxel array and describing its relation to an object’s volume.
 
 

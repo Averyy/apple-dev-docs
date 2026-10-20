@@ -1,7 +1,8 @@
 # WKWebExtension.WindowType.popup
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates a pop-up window.
 
@@ -16,6 +17,10 @@ Indicates a pop-up window.
 
 ```swift
 case popup
+```
+
+```c
+WKWebExtensionWindowTypePopup
 ```
 
 

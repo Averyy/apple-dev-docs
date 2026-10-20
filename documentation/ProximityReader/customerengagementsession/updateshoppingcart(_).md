@@ -1,7 +1,8 @@
 # updateShoppingCart(_:)
 
 **Framework**: ProximityReader  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Updates the shopping cart on the customer’s device.
 
@@ -18,19 +19,19 @@ final func updateShoppingCart(_ shoppingCart: CustomerEngagement.ShoppingCart) a
 
 ## Mentions
 
-- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+- [Adding support for Tap to Share to your app](../adding-support-for-tap-to-share-to-your-app.md)
 
 #### Return Value
 
-[`CustomerEngagement.ShoppingCartToken`](customerengagement/shoppingcarttoken.md) for making payment request using [`requestPayment(for:using:delegate:)`](customerengagementsession/requestpayment(for:using:delegate:).md).
+[`CustomerEngagement.ShoppingCartToken`](../customerengagement/shoppingcarttoken.md) for making payment request using [`requestPayment(for:using:delegate:)`](./requestpayment%28for,using,delegate%29.md).
 
 #### Discussion
 
 This function can be called repeatedly as the shopping cart is populated, and each update replaces the entire shopping cart.
 
-When there isn’t any form, like a sign-up form being displayed, the screen defaults to the current [`CustomerEngagement.ShoppingCart`](customerengagement/shoppingcart.md).
+When there isn’t any form, like a sign-up form being displayed, the screen defaults to the current [`CustomerEngagement.ShoppingCart`](../customerengagement/shoppingcart.md).
 
-> **Note**: [`CustomerEngagementSession.Error`](customerengagementsession/error.md) if the request fails.
+> **Throws**: [`CustomerEngagementSession.Error`](./error.md) if the request fails.
 
 ## Parameters
 
@@ -38,7 +39,8 @@ When there isn’t any form, like a sign-up form being displayed, the screen def
 
 ## See Also
 
-- [func updateStatus(CustomerEngagement.Status) async throws](customerengagementsession/updatestatus(_:).md)
+### Updating the customer status and cart
+- [func updateStatus(CustomerEngagement.Status) async throws](./updatestatus%28_%29.md)
   Updates the status on the customer’s screen.
 
 

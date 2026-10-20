@@ -1,7 +1,8 @@
 # closest(to:)
 
 **Framework**: Image Playground  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a new instance of this structure with a size value that best matches the specified size.
 

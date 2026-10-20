@@ -1,12 +1,13 @@
 # WatchKitErrorDomain
 
 **Framework**: WatchKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The domain for WatchKit errors.
 
 **Availability**:
-- watchOS ?+
+- watchOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ The domain for WatchKit errors.
 let WatchKitErrorDomain: String
 ```
 
+```c
+extern NSString * const WatchKitErrorDomain;
+```
+
 #### Discussion
 
-The system uses this value in the [`NSError`](https://developer.apple.com/documentation/foundation/nserror) class.
+The system uses this value in the [`NSError`](../Foundation/nserror.md) class.
 
 
 ---

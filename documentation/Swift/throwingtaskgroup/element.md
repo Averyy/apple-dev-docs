@@ -1,7 +1,8 @@
 # ThrowingTaskGroup.Element
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The type of element produced by this asynchronous sequence.
 
@@ -20,11 +21,14 @@ The type of element produced by this asynchronous sequence.
 typealias Element = ChildTaskResult
 ```
 
+Available when `ChildTaskResult` conforms to `Sendable` and `Failure` conforms to `Error`.
+
 ## See Also
 
-- [ThrowingTaskGroup.Iterator](throwingtaskgroup/iterator.md)
+### Supporting Types
+- [ThrowingTaskGroup.Iterator](./iterator.md)
   A type that provides an iteration interface over the results of tasks added to the group.
-- [ThrowingTaskGroup.AsyncIterator](throwingtaskgroup/asynciterator.md)
+- [ThrowingTaskGroup.AsyncIterator](./asynciterator.md)
   The type of asynchronous iterator that produces elements of this asynchronous sequence.
 
 

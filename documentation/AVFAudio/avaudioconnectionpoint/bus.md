@@ -1,7 +1,8 @@
 # bus
 
 **Framework**: AVFAudio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bus on the node in the connection point.
 
@@ -20,13 +21,18 @@ The bus on the node in the connection point.
 var bus: AVAudioNodeBus { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVAudioNodeBus bus;
+```
+
 ## See Also
 
-- [func inputConnectionPoint(for: AVAudioNode, inputBus: AVAudioNodeBus) -> AVAudioConnectionPoint?](avaudioengine/inputconnectionpoint(for:inputbus:).md)
+### Getting connection point properties
+- [func inputConnectionPoint(for: AVAudioNode, inputBus: AVAudioNodeBus) -> AVAudioConnectionPoint?](../avaudioengine/inputconnectionpoint%28for,inputbus%29.md)
   Returns connection information about a node’s input bus.
-- [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](avaudioengine/outputconnectionpoints(for:outputbus:).md)
+- [func outputConnectionPoints(for: AVAudioNode, outputBus: AVAudioNodeBus) -> [AVAudioConnectionPoint]](../avaudioengine/outputconnectionpoints%28for,outputbus%29.md)
   Returns connection information about a node’s output bus.
-- [var node: AVAudioNode?](avaudioconnectionpoint/node.md)
+- [var node: AVAudioNode?](./node.md)
   The node in the connection point.
 
 

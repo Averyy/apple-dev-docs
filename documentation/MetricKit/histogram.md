@@ -1,7 +1,8 @@
 # Histogram
 
 **Framework**: MetricKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A distribution of values organized into buckets.
 
@@ -19,13 +20,13 @@ struct Histogram<DimensionType> where DimensionType : Dimension
 
 ## Mentions
 
-- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](./analyzing-app-performance-with-metrickit.md)
 
 #### Discussion
 
-Each [`Histogram.Bucket`](histogram/bucket.md) in the [`buckets`](histogram/buckets.md) array covers a range from [`lowerBound`](histogram/bucket/lowerbound.md) to [`upperBound`](histogram/bucket/upperbound.md) and reports the number of samples in that range via [`count`](histogram/bucket/count.md).
+Each [`Histogram.Bucket`](./histogram/bucket.md) in the [`buckets`](./histogram/buckets.md) array covers a range from [`lowerBound`](./histogram/bucket/lowerbound.md) to [`upperBound`](./histogram/bucket/upperbound.md) and reports the number of samples in that range via [`count`](./histogram/bucket/count.md).
 
-You encounter `Histogram` as the type of properties on various metric structs, such as [`histogram`](hangtimemetric/histogram.md) and [`histogram`](timetofirstdrawmetric/histogram.md):
+You encounter `Histogram` as the type of properties on various metric structs, such as [`histogram`](./hangtimemetric/histogram.md) and [`histogram`](./timetofirstdrawmetric/histogram.md):
 
 ```swift
 let histogram = metric.histogram // Histogram<UnitDuration>
@@ -39,29 +40,30 @@ for bucket in histogram.buckets {
 ## Topics
 
 ### Buckets
-- [let buckets: [Histogram<DimensionType>.Bucket]](histogram/buckets.md)
+- [let buckets: [Histogram<DimensionType>.Bucket]](./histogram/buckets.md)
 ### Structures
-- [Histogram.Bucket](histogram/bucket.md)
+- [Histogram.Bucket](./histogram/bucket.md)
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AverageStatistics](averagestatistics.md)
+### Supporting types
+- [struct AverageStatistics](./averagestatistics.md)
   A value that encapsulates an average measurement with supporting statistical data.
-- [class SignalBars](signalbars.md)
+- [class SignalBars](./signalbars.md)
   A unit for cellular signal strength measurements in bars.
-- [class HitchTimeRatio](hitchtimeratio.md)
+- [class HitchTimeRatio](./hitchtimeratio.md)
   A unit for animation hitch time ratio measurements.
-- [struct OSVersion](osversion.md)
+- [struct OSVersion](./osversion.md)
   The version of the operating system on the device.
 
 

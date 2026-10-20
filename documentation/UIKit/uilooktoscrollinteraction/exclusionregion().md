@@ -1,7 +1,8 @@
 # exclusionRegion()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An interaction which specifies that the receiver should not trigger Look to Scroll.
 
@@ -12,6 +13,10 @@ An interaction which specifies that the receiver should not trigger Look to Scro
 
 ```swift
 class func exclusionRegion() -> Self
+```
+
+```objc
++ (instancetype) exclusionRegionInteraction;
 ```
 
 

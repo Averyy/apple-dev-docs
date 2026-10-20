@@ -1,7 +1,8 @@
 # IOURLCreateDataAndPropertiesFromResource(_:_:_:_:_:_:)
 
 **Framework**: IOKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - Mac Catalyst 13.0+

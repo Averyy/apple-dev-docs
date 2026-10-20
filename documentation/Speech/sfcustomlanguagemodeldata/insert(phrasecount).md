@@ -1,7 +1,8 @@
 # insert(phraseCount:)
 
 **Framework**: Speech  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Add a sample to the body of training data.
 
@@ -29,7 +30,8 @@ This class accumulates text data that will later be used to train a language mod
 
 ## See Also
 
-- [SFCustomLanguageModelData.PhraseCount](sfcustomlanguagemodeldata/phrasecount.md)
+### Adding phrases
+- [SFCustomLanguageModelData.PhraseCount](./phrasecount.md)
   A phrase used to bias the language model, along with a weight influencing the relative strength of the bias.
 
 

@@ -1,15 +1,20 @@
 # headerDataLength
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var headerDataLength: Int
+```
+
+```c
+size_t headerDataLength;
 ```
 
 

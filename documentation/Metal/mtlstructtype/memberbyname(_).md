@@ -1,7 +1,8 @@
 # memberByName(_:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Provides a representation of a struct member.
 
@@ -10,13 +11,17 @@ Provides a representation of a struct member.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func memberByName(_ name: String) -> MTLStructMember?
+```
+
+```objc
+- (MTLStructMember *) memberByName:(NSString *) name;
 ```
 
 #### Return Value
@@ -29,7 +34,8 @@ An object that represents the named struct member. If `name` does not match a me
 
 ## See Also
 
-- [var members: [MTLStructMember]](mtlstructtype/members.md)
+### Obtaining information about struct members
+- [var members: [MTLStructMember]](./members.md)
   An array of instances that describe the fields in the struct.
 
 

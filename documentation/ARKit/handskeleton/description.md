@@ -1,7 +1,8 @@
 # description
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this Skeleton.
 
@@ -16,9 +17,10 @@ var description: String { get }
 
 ## See Also
 
-- [var allJoints: [HandSkeleton.Joint]](handskeleton/alljoints.md)
+### Inspecting hand skeletons
+- [var allJoints: [HandSkeleton.Joint]](./alljoints.md)
   All of the joints in a hand skeleton.
-- [static var neutralPose: HandSkeleton](handskeleton/neutralpose.md)
+- [static var neutralPose: HandSkeleton](./neutralpose.md)
   A hand pose that you can use as a reference.
 
 

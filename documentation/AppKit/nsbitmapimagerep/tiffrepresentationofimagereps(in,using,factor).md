@@ -1,17 +1,22 @@
 # tiffRepresentationOfImageReps(in:using:factor:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a TIFF representation of the specified images using the specified compression scheme and factor.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class func tiffRepresentationOfImageReps(in array: [NSImageRep], using comp: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?
+```
+
+```objc
++ (NSData *) TIFFRepresentationOfImageRepsInArray:(NSArray<NSImageRep *> *) array usingCompression:(NSTIFFCompression) comp factor:(float) factor;
 ```
 
 #### Return Value
@@ -20,27 +25,30 @@ A data object containing a TIFF image representation.
 
 #### Discussion
 
-If the specified compression isn’t applicable, no compression is used. If a problem is encountered during generation of the TIFF, the method raises an [`NSTIFFException`](nstiffexception.md) or an [`NSBadBitmapParametersException`](nsbadbitmapparametersexception.md).
+If the specified compression isn’t applicable, no compression is used. If a problem is encountered during generation of the TIFF, the method raises an [`NSTIFFException`](../nstiffexception.md) or an [`NSBadBitmapParametersException`](../nsbadbitmapparametersexception.md).
 
 ## Parameters
 
 - `array`: An array containing objects representing bitmap image representations.
-- `comp`: An enum constant that represents a TIFF data-compression scheme. Legal values for `compression` can be found in [`NSBitmapImageRep.TIFFCompression`](nsbitmapimagerep/tiffcompression.md).
-- `factor`: A `float` value that provides a hint for those compression types that implement variable compression ratios. Currently only JPEG compression uses a compression factor. JPEG compression in TIFF files is not supported, and `factor` is ignored.
+- `comp`: An enum constant that represents a TIFF data-compression scheme. Legal values for `compression` can be found in [`NSBitmapImageRep.TIFFCompression`](./tiffcompression.md).
+- `factor`: A `float` value that provides a hint for those compression types that implement variable compression ratios.
+
+  Currently only JPEG compression uses a compression factor. JPEG compression in TIFF files is not supported, and `factor` is ignored.
 
 ## See Also
 
-- [class func tiffRepresentationOfImageReps(in: [NSImageRep]) -> Data?](nsbitmapimagerep/tiffrepresentationofimagereps(in:).md)
+### Producing Other Representations of Images
+- [class func tiffRepresentationOfImageReps(in: [NSImageRep]) -> Data?](./tiffrepresentationofimagereps%28in%29.md)
   Returns a TIFF representation of the specified images.
-- [var tiffRepresentation: Data?](nsbitmapimagerep/tiffrepresentation.md)
+- [var tiffRepresentation: Data?](./tiffrepresentation.md)
   A TIFF representation of the bitmap image data.
-- [func tiffRepresentation(using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](nsbitmapimagerep/tiffrepresentation(using:factor:).md)
+- [func tiffRepresentation(using: NSBitmapImageRep.TIFFCompression, factor: Float) -> Data?](./tiffrepresentation%28using,factor%29.md)
   Returns a TIFF representation of the image using the specified compression.
-- [class func representationOfImageReps(in: [NSImageRep], using: NSBitmapImageRep.FileType, properties: [NSBitmapImageRep.PropertyKey : Any]) -> Data?](nsbitmapimagerep/representationofimagereps(in:using:properties:).md)
+- [class func representationOfImageReps(in: [NSImageRep], using: NSBitmapImageRep.FileType, properties: [NSBitmapImageRep.PropertyKey : Any]) -> Data?](./representationofimagereps%28in,using,properties%29.md)
   Formats the specified bitmap images using the specified storage type and properties and returns them in a data object.
-- [func representation(using: NSBitmapImageRep.FileType, properties: [NSBitmapImageRep.PropertyKey : Any]) -> Data?](nsbitmapimagerep/representation(using:properties:).md)
+- [func representation(using: NSBitmapImageRep.FileType, properties: [NSBitmapImageRep.PropertyKey : Any]) -> Data?](./representation%28using,properties%29.md)
   Formats the bitmap representation’s image data using the specified storage type and properties and returns it in a data object.
-- [func NSDrawBitmap(NSRect, Int, Int, Int, Int, Int, Int, Bool, Bool, NSColorSpaceName, UnsafePointer<UnsafePointer<UInt8>?>)](nsdrawbitmap(_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func NSDrawBitmap(NSRect, Int, Int, Int, Int, Int, Int, Bool, Bool, NSColorSpaceName, UnsafePointer<UnsafePointer<UInt8>?>)](../nsdrawbitmap%28_,_,_,_,_,_,_,_,_,_,_%29.md)
   Draws a bitmap image.
 
 

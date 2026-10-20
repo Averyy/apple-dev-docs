@@ -1,18 +1,19 @@
 # SKSpriteNode
 
 **Framework**: SpriteKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An image or solid color.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,15 +21,19 @@ An image or solid color.
 class SKSpriteNode
 ```
 
+```objc
+@interface SKSpriteNode : SKNode
+```
+
 ## Mentions
 
-- [Getting Started with Shape Nodes](getting-started-with-shape-nodes.md)
-- [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
-- [Animate the Warping of a Sprite](animate-the-warping-of-a-sprite.md)
-- [Customizing the Behavior of a Node](customizing-the-behavior-of-a-node.md)
-- [Drawing SpriteKit Content in a View](drawing-spritekit-content-in-a-view.md)
-- [Getting Started with Nodes](getting-started-with-nodes.md)
-- [Loading and Using Textures](loading-and-using-textures.md)
+- [Getting Started with Shape Nodes](./getting-started-with-shape-nodes.md)
+- [Adding a Video to a Scene](./adding-a-video-to-a-scene.md)
+- [Animate the Warping of a Sprite](./animate-the-warping-of-a-sprite.md)
+- [Customizing the Behavior of a Node](./customizing-the-behavior-of-a-node.md)
+- [Drawing SpriteKit Content in a View](./drawing-spritekit-content-in-a-view.md)
+- [Getting Started with Nodes](./getting-started-with-nodes.md)
+- [Loading and Using Textures](./loading-and-using-textures.md)
 
 #### Overview
 
@@ -37,132 +42,133 @@ class SKSpriteNode
 ## Topics
 
 ### Creating a Sprite from an Image Filename
-- [Getting Started with Sprite Nodes](getting-started-with-sprite-nodes.md)
+- [Getting Started with Sprite Nodes](./getting-started-with-sprite-nodes.md)
   Learn the basics about using images, also known as sprites, with SpriteKit.
-- [convenience init(imageNamed: String)](skspritenode/init(imagenamed:).md)
+- [convenience init(imageNamed: String)](./skspritenode/init%28imagenamed%29.md)
   Initializes a textured sprite using an image file.
-- [convenience init(imageNamed: String, normalMapped: Bool)](skspritenode/init(imagenamed:normalmapped:).md)
+- [convenience init(imageNamed: String, normalMapped: Bool)](./skspritenode/init%28imagenamed,normalmapped%29.md)
   Initializes a textured sprite using an image file, optionally adding a normal map to simulate 3D lighting.
 ### Creating a Sprite from a Texture
-- [convenience init(texture: SKTexture?)](skspritenode/init(texture:).md)
+- [convenience init(texture: SKTexture?)](./skspritenode/init%28texture%29.md)
   Initializes a textured sprite using an existing texture object.
-- [init(texture: SKTexture?, color: UIColor, size: CGSize)](skspritenode/init(texture:color:size:).md)
+- [init(texture: SKTexture?, color: UIColor, size: CGSize)](./skspritenode/init%28texture,color,size%29.md)
   Initializes a textured sprite in color using an existing texture object.
-- [convenience init(texture: SKTexture?, size: CGSize)](skspritenode/init(texture:size:).md)
+- [convenience init(texture: SKTexture?, size: CGSize)](./skspritenode/init%28texture,size%29.md)
   Initializes a textured sprite using an existing texture object but with a specified size.
-- [convenience init(texture: SKTexture?, normalMap: SKTexture?)](skspritenode/init(texture:normalmap:).md)
+- [convenience init(texture: SKTexture?, normalMap: SKTexture?)](./skspritenode/init%28texture,normalmap%29.md)
   Initializes a textured sprite with a normal map to simulate 3D lighting.
-- [var texture: SKTexture?](skspritenode/texture.md)
+- [var texture: SKTexture?](./skspritenode/texture.md)
   The texture used to draw the sprite.
 ### Creating a Solid-Color Sprite
-- [convenience init(color: UIColor, size: CGSize)](skspritenode/init(color:size:).md)
+- [convenience init(color: UIColor, size: CGSize)](./skspritenode/init%28color,size%29.md)
   Initializes a single-color sprite node.
 ### Initializing a Sprite from an Archive
-- [init?(coder: NSCoder)](skspritenode/init(coder:).md)
+- [init?(coder: NSCoder)](./skspritenode/init%28coder%29.md)
   Tells you when to initialize a sprite from an archive.
 ### Setting a Sprite’s Size and Position
-- [Using the Anchor Point to Move a Sprite](using-the-anchor-point-to-move-a-sprite.md)
+- [Using the Anchor Point to Move a Sprite](./using-the-anchor-point-to-move-a-sprite.md)
   Learn how the anchor point affects a sprite’s position.
-- [var size: CGSize](skspritenode/size.md)
+- [var size: CGSize](./skspritenode/size.md)
   The dimensions of the sprite, in points.
-- [func scale(to: CGSize)](skspritenode/scale(to:).md)
+- [func scale(to: CGSize)](./skspritenode/scale%28to%29.md)
   Scales the sprite node to a specified size.
-- [var anchorPoint: CGPoint](skspritenode/anchorpoint.md)
+- [var anchorPoint: CGPoint](./skspritenode/anchorpoint.md)
   Defines the point in the sprite that corresponds to the node’s position.
 ### Scaling a Sprite in Nine Parts
-- [Resizing a Sprite in Nine Parts](resizing-a-sprite-in-nine-parts.md)
+- [Resizing a Sprite in Nine Parts](./resizing-a-sprite-in-nine-parts.md)
   Scale a sprite using nine-part algorithm.
-- [var centerRect: CGRect](skspritenode/centerrect.md)
+- [var centerRect: CGRect](./skspritenode/centerrect.md)
   Enable nine-part stretching of the sprite’s texture.
 ### Tinting a Sprite
-- [Tinting a Sprite](tinting-a-sprite.md)
+- [Tinting a Sprite](./tinting-a-sprite.md)
   Provide a color and blend factor to additively color your sprite.
-- [var color: UIColor](skspritenode/color.md)
+- [var color: UIColor](./skspritenode/color.md)
   The sprite’s color.
-- [var colorBlendFactor: CGFloat](skspritenode/colorblendfactor.md)
+- [var colorBlendFactor: CGFloat](./skspritenode/colorblendfactor.md)
   A floating-point value that describes how the color is blended with the sprite’s texture.
 ### Configuring Alpha Blendling
-- [Blending a Sprite with Different Interpretations of Alpha](blending-a-sprite-with-different-interpretations-of-alpha.md)
+- [Blending a Sprite with Different Interpretations of Alpha](./blending-a-sprite-with-different-interpretations-of-alpha.md)
   Reinterpret a sprite’s alpha property to react differently to the objects below it.
-- [var blendMode: SKBlendMode](skspritenode/blendmode.md)
+- [var blendMode: SKBlendMode](./skspritenode/blendmode.md)
   The blend mode used to draw the sprite into the parent’s framebuffer.
-- [enum SKBlendMode](skblendmode.md)
+- [enum SKBlendMode](./skblendmode.md)
   The modes that describe how the source and destination pixel colors are used to calculate the new destination color.
 ### Lighting a Sprite
-- [Lighting a Sprite with Light Nodes](lighting-a-sprite-with-light-nodes.md)
+- [Lighting a Sprite with Light Nodes](./lighting-a-sprite-with-light-nodes.md)
   Add lighting and shadows to your scene with light nodes.
-- [var lightingBitMask: UInt32](skspritenode/lightingbitmask.md)
+- [var lightingBitMask: UInt32](./skspritenode/lightingbitmask.md)
   A mask that defines how this sprite is lit by light nodes in the scene.
-- [var shadowedBitMask: UInt32](skspritenode/shadowedbitmask.md)
+- [var shadowedBitMask: UInt32](./skspritenode/shadowedbitmask.md)
   A mask that defines which lights add shadows to the sprite.
-- [var shadowCastBitMask: UInt32](skspritenode/shadowcastbitmask.md)
+- [var shadowCastBitMask: UInt32](./skspritenode/shadowcastbitmask.md)
   A mask that defines which lights are occluded by this sprite.
-- [var normalTexture: SKTexture?](skspritenode/normaltexture.md)
+- [var normalTexture: SKTexture?](./skspritenode/normaltexture.md)
   A texture that specifies the normal map for the sprite.
 ### Adding a Custom Shader to a Sprite
-- [Applying Shaders to a Sprite](applying-shaders-to-a-sprite.md)
+- [Applying Shaders to a Sprite](./applying-shaders-to-a-sprite.md)
   Write custom GLSL code that modifies the look of your sprite.
-- [var shader: SKShader?](skspritenode/shader.md)
+- [var shader: SKShader?](./skspritenode/shader.md)
   A text file that defines code that does custom per-pixel drawing or colorization.
-- [var attributeValues: [String : SKAttributeValue]](skspritenode/attributevalues.md)
+- [var attributeValues: [String : SKAttributeValue]](./skspritenode/attributevalues.md)
   The values of each attribute associated with the node’s attached shader.
-- [func setValue(SKAttributeValue, forAttribute: String)](skspritenode/setvalue(_:forattribute:).md)
+- [func setValue(SKAttributeValue, forAttribute: String)](./skspritenode/setvalue%28_,forattribute%29.md)
   Sets an attribute value for an attached shader.
-- [func value(forAttributeNamed: String) -> SKAttributeValue?](skspritenode/value(forattributenamed:).md)
+- [func value(forAttributeNamed: String) -> SKAttributeValue?](./skspritenode/value%28forattributenamed%29.md)
   Sets the value of a shader attribute.
 ### Animating a Sprite by Changing its Texture
-- [Animating a Sprite by Changing its Texture](animating-a-sprite-by-changing-its-texture.md)
+- [Animating a Sprite by Changing its Texture](./animating-a-sprite-by-changing-its-texture.md)
   Load a sequence of images and play them back at a rate you define, while optionally looping the resulting animation.
 ### Instance Properties
-- [var customPlaygroundQuickLook: PlaygroundQuickLook](skspritenode/customplaygroundquicklook.md)
+- [var customPlaygroundQuickLook: PlaygroundQuickLook](./skspritenode/customplaygroundquicklook.md)
   A custom playground quick look for this instance.
 
 ## Relationships
 
 ### Inherits From
-- [SKNode](sknode.md)
+- [SKNode](./sknode.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [NSStandardKeyBindingResponding](../appkit/nsstandardkeybindingresponding.md)
-- [NSTouchBarProvider](../appkit/nstouchbarprovider.md)
-- [NSUserActivityRestoring](../appkit/nsuseractivityrestoring.md)
-- [SKWarpable](skwarpable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [UIActivityItemsConfigurationProviding](../uikit/uiactivityitemsconfigurationproviding.md)
-- [UICoordinateSpace](../uikit/uicoordinatespace.md)
-- [UIFocusEnvironment](../uikit/uifocusenvironment.md)
-- [UIFocusItem](../uikit/uifocusitem.md)
-- [UIFocusItemContainer](../uikit/uifocusitemcontainer.md)
-- [UIPasteConfigurationSupporting](../uikit/uipasteconfigurationsupporting.md)
-- [UIResponderStandardEditActions](../uikit/uiresponderstandardeditactions.md)
-- [UIUserActivityRestoring](../uikit/uiuseractivityrestoring.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [NSStandardKeyBindingResponding](../AppKit/nsstandardkeybindingresponding.md)
+- [NSTouchBarProvider](../AppKit/nstouchbarprovider.md)
+- [NSUserActivityRestoring](../AppKit/nsuseractivityrestoring.md)
+- [SKWarpable](./skwarpable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [UIActivityItemsConfigurationProviding](../UIKit/uiactivityitemsconfigurationproviding.md)
+- [UICoordinateSpace](../UIKit/uicoordinatespace.md)
+- [UIFocusEnvironment](../UIKit/uifocusenvironment.md)
+- [UIFocusItem](../UIKit/uifocusitem.md)
+- [UIFocusItemContainer](../UIKit/uifocusitemcontainer.md)
+- [UIPasteConfigurationSupporting](../UIKit/uipasteconfigurationsupporting.md)
+- [UIResponderStandardEditActions](../UIKit/uiresponderstandardeditactions.md)
+- [UIUserActivityRestoring](../UIKit/uiuseractivityrestoring.md)
 
 ## See Also
 
-- [Maximizing Node Drawing Performance](maximizing-node-drawing-performance.md)
+### Nodes that Draw
+- [Maximizing Node Drawing Performance](./maximizing-node-drawing-performance.md)
   Structure your nodes for maximum performance.
-- [class SKShapeNode](skshapenode.md)
+- [class SKShapeNode](./skshapenode.md)
   A mathematical shape that can be stroked or filled.
-- [class SKEmitterNode](skemitternode.md)
+- [class SKEmitterNode](./skemitternode.md)
   A source of various particle effects.
-- [class SKLabelNode](sklabelnode.md)
+- [class SKLabelNode](./sklabelnode.md)
   A graphical element that draws text.
-- [class SKVideoNode](skvideonode.md)
+- [class SKVideoNode](./skvideonode.md)
   A graphical element that plays video content.
-- [class SKTileMapNode](sktilemapnode.md)
+- [class SKTileMapNode](./sktilemapnode.md)
   A two-dimensional array of images.
-- [class SK3DNode](sk3dnode.md)
+- [class SK3DNode](./sk3dnode.md)
   3D SceneKit content drawn as a flattened sprite.
 
 

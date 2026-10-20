@@ -1,25 +1,28 @@
 # InAppPurchaseImage
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A screenshot or image associated with an In-App Purchase or subscription, displayed on the App Store product page.
 
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 2.0+ - Deprecated in 4.4.1
+
+> **Deprecated**: This object is deprecated. Use [`InAppPurchaseImageV2`](./inapppurchaseimagev2.md) instead.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseImage
 ```
 
 ## Topics
 
 ### Objects
-- [object InAppPurchaseImage.Attributes](inapppurchaseimage/attributes-data.dictionary.md)
+- [object InAppPurchaseImage.Attributes](./inapppurchaseimage/attributes-data.dictionary.md)
   Attributes that describe a subscription image resource.
-- [object InAppPurchaseImage.Relationships](inapppurchaseimage/relationships-data.dictionary.md)
+- [object InAppPurchaseImage.Relationships](./inapppurchaseimage/relationships-data.dictionary.md)
   The relationships for an In-App Purchase image, linking it to its associated In-App Purchase.
 
 ## Properties
@@ -28,17 +31,20 @@ object InAppPurchaseImage
 - `id` (string) *(required)*: The opaque resource ID that uniquely identifies the resource.
 - `relationships` (InAppPurchaseImage.Relationships): Navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.
+
+  **Allowed Values**: `inAppPurchaseImages`
 - `links` (ResourceLinks): Navigational links that include the self-link.
 
 ## See Also
 
-- [object InAppPurchaseImageCreateRequest](inapppurchaseimagecreaterequest.md)
+### Objects
+- [object InAppPurchaseImageCreateRequest](./inapppurchaseimagecreaterequest.md)
   The request body you use to create an In-App Purchase image reservation.
-- [object InAppPurchaseImageResponse](inapppurchaseimageresponse.md)
+- [object InAppPurchaseImageResponse](./inapppurchaseimageresponse.md)
   A response containing a single image for an In-App Purchase.
-- [object InAppPurchaseImageUpdateRequest](inapppurchaseimageupdaterequest.md)
+- [object InAppPurchaseImageUpdateRequest](./inapppurchaseimageupdaterequest.md)
   The request body for updating the upload state or file content of an In-App Purchase image.
-- [object InAppPurchaseImagesResponse](inapppurchaseimagesresponse.md)
+- [object InAppPurchaseImagesResponse](./inapppurchaseimagesresponse.md)
   A response containing a list of images for an In-App Purchase.
 
 

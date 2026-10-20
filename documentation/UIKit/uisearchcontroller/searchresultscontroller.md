@@ -1,7 +1,8 @@
 # searchResultsController
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The view controller that displays the results of the search.
 
@@ -9,7 +10,7 @@ The view controller that displays the results of the search.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,19 +19,24 @@ The view controller that displays the results of the search.
 var searchResultsController: UIViewController? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) UIViewController * searchResultsController;
+```
+
 #### Discussion
 
-When the user enters text in the search bar, the search controller displays this view controller immediately and without any animations. You’re responsible for passing the search results to this view controller so that they can be displayed. You do this using the object in the [`searchResultsUpdater`](uisearchcontroller/searchresultsupdater.md) property.
+When the user enters text in the search bar, the search controller displays this view controller immediately and without any animations. You’re responsible for passing the search results to this view controller so that they can be displayed. You do this using the object in the [`searchResultsUpdater`](./searchresultsupdater.md) property.
 
 When the value of this property is `nil`, the search controller doesn’t present a separate view controller for the search results. Instead, you should display the results using the original view controller containing the search bar and searchable contents.
 
 ## See Also
 
-- [var searchBar: UISearchBar](uisearchcontroller/searchbar.md)
+### Managing the search results
+- [var searchBar: UISearchBar](./searchbar.md)
   The search bar to install in your interface.
-- [var searchResultsUpdater: (any UISearchResultsUpdating)?](uisearchcontroller/searchresultsupdater.md)
+- [var searchResultsUpdater: (any UISearchResultsUpdating)?](./searchresultsupdater.md)
   The object responsible for updating the contents of the search results controller.
-- [var isActive: Bool](uisearchcontroller/isactive.md)
+- [var isActive: Bool](./isactive.md)
   The presented state of the search interface.
 
 

@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: Scripting Bridge  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error-handling delegate of the receiver.
 
@@ -15,9 +16,13 @@ The error-handling delegate of the receiver.
 var delegate: (any SBApplicationDelegate)? { get set }
 ```
 
+```objc
+@property (strong, nullable) id<SBApplicationDelegate> delegate;
+```
+
 #### Discussion
 
-The delegate should implement the [`eventDidFail(_:withError:)`](sbapplicationdelegate/eventdidfail(_:witherror:).md) method of the [`SBApplicationDelegate`](sbapplicationdelegate.md) informal protocol.
+The delegate should implement the [`eventDidFail(_:withError:)`](../sbapplicationdelegate/eventdidfail%28_,witherror%29.md) method of the [`SBApplicationDelegate`](../sbapplicationdelegate.md) informal protocol.
 
 
 ---

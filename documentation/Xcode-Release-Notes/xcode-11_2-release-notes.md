@@ -1,6 +1,7 @@
 # Xcode 11.2 Release Notes
 
-**Framework**: Xcode Release Notes
+**Framework**: Xcode Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
@@ -8,9 +9,9 @@ Update your apps to use new features, and test your apps against API changes.
 
 Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tvOS 13.2. Xcode 11.2 supports on-device debugging for iOS 8 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 11.2 requires a Mac running macOS Mojave 10.14.4 or later.
 
-> ❗ **Important**: Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview) will cause the app to crash on operating system versions earlier than iOS 13.2 and tvOS 13.2 if compiled with Xcode 11.2. (56808566)
+> ❗ **Important**: Storyboards containing a [`UITextView`](../UIKit/uitextview.md) will cause the app to crash on operating system versions earlier than iOS 13.2 and tvOS 13.2 if compiled with Xcode 11.2. (56808566)
 
-> ❗ **Important**: Storyboards containing a [`UITextView`](https://developer.apple.com/documentation/uikit/uitextview) will cause the app to crash on macOS versions earlier than macOS 10.15.1 if compiled on a Mac running macOS 10.15.1. (56873523)
+> ❗ **Important**: Storyboards containing a [`UITextView`](../UIKit/uitextview.md) will cause the app to crash on macOS versions earlier than macOS 10.15.1 if compiled on a Mac running macOS 10.15.1. (56873523)
 
 ##### Devices
 
@@ -22,15 +23,17 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 ###### New Features
 
-- Added support for configuring [`WKInterfaceAuthorizationAppleIDButton`](https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton) styles. (53251536)
+- Added support for configuring [`WKInterfaceAuthorizationAppleIDButton`](../WatchKit/wkinterfaceauthorizationappleidbutton.md) styles. (53251536)
 
 ###### Known Issues
 
-- Setting the Selected Segment Tint Color of a segmented control in Interface Builder to a named color will cause a failure when the view is loaded on iOS 12 and earlier. (55254963) **Workaround**: Set the segmented control’s [`selectedSegmentTintColor`](https://developer.apple.com/documentation/uikit/uisegmentedcontrol/selectedsegmenttintcolor) in an [`awakeFromNib()`](https://developer.apple.com/documentation/objectivec/nsobject-swift.class/awakefromnib()) method.
+- Setting the Selected Segment Tint Color of a segmented control in Interface Builder to a named color will cause a failure when the view is loaded on iOS 12 and earlier. (55254963)
+
+  **Workaround**: Set the segmented control’s [`selectedSegmentTintColor`](../UIKit/uisegmentedcontrol/selectedsegmenttintcolor.md) in an [`awakeFromNib()`](../ObjectiveC/nsobject-swift.class/awakefromnib%28%29.md) method.
 
 ###### Resolved Issues
 
-- Fixed an issue with [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller) where decoding an instance from a storyboard would create extra views at the left end of the screen. If you worked around this issue on Xcode 11.0 or 11.1 by creating a subclass of [`UITabBarController`](https://developer.apple.com/documentation/uikit/uitabbarcontroller) and hiding extra views in the initializer you can remove the workaround. (55310448)
+- Fixed an issue with [`UITabBarController`](../UIKit/uitabbarcontroller.md) where decoding an instance from a storyboard would create extra views at the left end of the screen. If you worked around this issue on Xcode 11.0 or 11.1 by creating a subclass of [`UITabBarController`](../UIKit/uitabbarcontroller.md) and hiding extra views in the initializer you can remove the workaround. (55310448)
 - Fixed a crash that occurred in iOS/tvOS projects when reselecting the currently selected color in a user-defined runtime attribute. (55464140)
 - The host system’s appearance no longer affects which fallback color is archived for an adaptive asset catalog color. (55570108)
 
@@ -51,33 +54,41 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 - Functions tagged with `@ViewBuilder` now preview correctly in Xcode Previews. (54433866)
 - Xcode Previews now correctly support structs, functions, and other types marked with `@available`. (54568910)
 - Fixed an issue where some SwiftUI tutorials failed to build or preview with Xcode Previews. (54732993)
-- Fixed a crash in the SwiftUI inspectors when inspecting some [`Color`](https://developer.apple.com/documentation/swiftui/color) types. (55129285)
+- Fixed a crash in the SwiftUI inspectors when inspecting some [`Color`](../SwiftUI/color.md) types. (55129285)
 
 ##### Simulator
 
 ###### New Features
 
-- simctl video recording now produces smaller video files, supports HEIC compression, and takes advantage of hardware encoding support where available. In addition, the ability to record video on iOS 13, tvOS 13, and watchOS 6 devices has been restored. (50625716, 54409532, 55207068). > **Note**: The flags and arguments supported by simctl video recording have changed. See `xcrun simctl help io` for more information.
+- simctl video recording now produces smaller video files, supports HEIC compression, and takes advantage of hardware encoding support where available. In addition, the ability to record video on iOS 13, tvOS 13, and watchOS 6 devices has been restored. (50625716, 54409532, 55207068).
+
+  > **Note**: The flags and arguments supported by simctl video recording have changed. See `xcrun simctl help io` for more information.
 - Simulator now has a menu item and keyboard shortcut to bring up the app switcher in iOS simulators. (54793361)
-- In [`AVAssetExportSession`](https://developer.apple.com/documentation/avfoundation/avassetexportsession), the [`allExportPresets()`](https://developer.apple.com/documentation/avfoundation/avassetexportsession/allexportpresets()) type method now returns presets in iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max simulators. (55659811)
+- In [`AVAssetExportSession`](../AVFoundation/avassetexportsession.md), the [`allExportPresets()`](../AVFoundation/avassetexportsession/allexportpresets%28%29.md) type method now returns presets in iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max simulators. (55659811)
 - `xcrun simctl list --json` now includes more information about devices and runtimes, including the device type used by each device. (55671833)
 
 ###### Known Issues
 
-- Third party “endpoint security” software may cause slow simulators, system freezes, or prevent debug processes from running in simulators reliably. This sometimes manifests as `debugserver` disconnections or simulator applications receiving a `SIGKILL` signal. (55853555) **Workaround**: Uninstall the third party software.
+- Third party “endpoint security” software may cause slow simulators, system freezes, or prevent debug processes from running in simulators reliably. This sometimes manifests as `debugserver` disconnections or simulator applications receiving a `SIGKILL` signal. (55853555)
+
+  **Workaround**: Uninstall the third party software.
 
 ###### Resolved Issues
 
 - Fixed a crash loop that could occur on macOS 10.15 Catalina when using iCloud Drive in simulated devices running older versions of iOS. (51392951, 54282967, 54818084)
 - Fixed an issue causing simulated devices running iOS 13 to display a black window instead of enabling an external display or a CarPlay display. (53966664)
-- Resolved an issue that prevented apps from installing on iOS 8.4 simulators. (55646411) > **Note**: iOS 8.4 and 9.x simulators are only supported when running on macOS 10.14 Mojave.
+- Resolved an issue that prevented apps from installing on iOS 8.4 simulators. (55646411)
+
+  > **Note**: iOS 8.4 and 9.x simulators are only supported when running on macOS 10.14 Mojave.
 - Simulators no longer shut down when a process inside the simulator misuses Metal APIs or attempts to execute an invalid shader. (55725833)
 
 ##### Swift
 
 ###### Known Issues
 
-- If a module is built with `BUILD_LIBRARIES_FOR_DISTRIBUTION` and contains a public type with the same name as the module itself, clients will fail to import the module. (19481048) (FB5863238) **Workaround**: Rename either the type or the module to remove the conflict.
+- If a module is built with `BUILD_LIBRARIES_FOR_DISTRIBUTION` and contains a public type with the same name as the module itself, clients will fail to import the module. (19481048) (FB5863238)
+
+  **Workaround**: Rename either the type or the module to remove the conflict.
 
 ##### Swift Compiler
 
@@ -87,30 +98,34 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 ###### Resolved Issues
 
-- The enum `NEHotspotConfigurationError` in the [`Network Extension`](https://developer.apple.com/documentation/networkextension) framework changed back to `NS_ENUM` (from `NS_ERROR_ENUM`), as it was before Xcode 11.0. (54134493)
+- The enum `NEHotspotConfigurationError` in the [Network Extension](../NetworkExtension/NetworkExtension.md) framework changed back to `NS_ENUM` (from `NS_ERROR_ENUM`), as it was before Xcode 11.0. (54134493)
 - Fixed a runtime crash that would occur when running watch apps statically linked with Swift libraries. (55082864)
 
 ##### Swift Packages
 
 ###### Known Issues
 
-- If an iOS, tvOS, or watchOS app uses a Swift Package that builds a dynamic library, it cannot be submitted to the App Store. (55564324) **Workaround**: Modify the Package manifest to build a static library.
+- If an iOS, tvOS, or watchOS app uses a Swift Package that builds a dynamic library, it cannot be submitted to the App Store. (55564324)
+
+  **Workaround**: Modify the Package manifest to build a static library.
 
 ###### Resolved Issues
 
 - The scheme autogenerated for a Swift package will be automatically updated when the package adds or removes targets. (50586754, 54777895)
 
-##### Swiftui
+##### SwiftUI
 
 ###### Resolved Issues
 
 - All downloadable project files from the SwiftUI tutorials inside Xcode’s documentation viewer now download. (55575465)
 
-##### Watchos
+##### watchOS
 
 ###### Known Issues
 
-- Launching the watch App on an iOS simulator will cause `NTKFaceSnapshotServices` to continuously crash in the background. The watch app should function as normal. (56349123) **Workaround**: To stop crashes, quit the simulator or erase content and settings.
+- Launching the watch App on an iOS simulator will cause `NTKFaceSnapshotServices` to continuously crash in the background. The watch app should function as normal. (56349123)
+
+  **Workaround**: To stop crashes, quit the simulator or erase content and settings.
 
 ###### Resolved Issues
 
@@ -118,25 +133,26 @@ Xcode 11.2 includes SDKs for iOS 13.2, macOS Catalina 10.15, watchOS 6.1, and tv
 
 ## See Also
 
-- [Xcode 11.7 Release Notes](xcode-11_7-release-notes.md)
+### Xcode 11
+- [Xcode 11.7 Release Notes](./xcode-11_7-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.6 Release Notes](xcode-11_6-release-notes.md)
+- [Xcode 11.6 Release Notes](./xcode-11_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.5 Release Notes](xcode-11_5-release-notes.md)
+- [Xcode 11.5 Release Notes](./xcode-11_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.4.1 Release Notes](xcode-11_4_1-release-notes.md)
+- [Xcode 11.4.1 Release Notes](./xcode-11_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.4 Release Notes](xcode-11_4-release-notes.md)
+- [Xcode 11.4 Release Notes](./xcode-11_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.3.1 Release Notes](xcode-11_3_1-release-notes.md)
+- [Xcode 11.3.1 Release Notes](./xcode-11_3_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes
-- [Xcode 11.3 Release Notes](xcode-11_3-release-notes.md)
+- [Xcode 11.3 Release Notes](./xcode-11_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes
-- [Xcode 11.2.1 Release Notes](xcode-11_2_1-release-notes.md)
+- [Xcode 11.2.1 Release Notes](./xcode-11_2_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11.1 Release Notes](xcode-11_1-release-notes.md)
+- [Xcode 11.1 Release Notes](./xcode-11_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [Xcode 11 Release Notes](xcode-11-release-notes.md)
+- [Xcode 11 Release Notes](./xcode-11-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

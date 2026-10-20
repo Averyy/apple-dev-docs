@@ -1,7 +1,8 @@
 # MLDataValue.dictionary(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A dictionary of named data values.
 
@@ -21,15 +22,16 @@ case dictionary(MLDataValue.DictionaryType)
 
 ## See Also
 
-- [MLDataValue.int(_:)](mldatavalue/int(_:).md)
+### Creating a data value
+- [MLDataValue.int(_:)](./int%28_%29.md)
   An integer value.
-- [MLDataValue.double(_:)](mldatavalue/double(_:).md)
+- [MLDataValue.double(_:)](./double%28_%29.md)
   A double value.
-- [MLDataValue.string(_:)](mldatavalue/string(_:).md)
+- [MLDataValue.string(_:)](./string%28_%29.md)
   A string value.
-- [case sequence(MLDataValue.SequenceType)](mldatavalue/sequence(_:).md)
+- [case sequence(MLDataValue.SequenceType)](./sequence%28_%29.md)
   A sequence of data values.
-- [case multiArray(MLDataValue.MultiArrayType)](mldatavalue/multiarray(_:).md)
+- [case multiArray(MLDataValue.MultiArrayType)](./multiarray%28_%29.md)
   A multidimensional array of data values.
 
 

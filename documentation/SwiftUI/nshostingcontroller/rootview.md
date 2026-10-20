@@ -1,7 +1,8 @@
 # rootView
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The root view of the SwiftUI view hierarchy managed by this view controller.
 
@@ -17,7 +18,8 @@ The root view of the SwiftUI view hierarchy managed by this view controller.
 
 ## See Also
 
-- [var identifier: NSUserInterfaceItemIdentifier?](nshostingcontroller/identifier.md)
+### Getting the root view
+- [var identifier: NSUserInterfaceItemIdentifier?](./identifier.md)
 
 
 ---

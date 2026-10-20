@@ -1,23 +1,28 @@
 # MKStringFromMapRect(_:)
 
 **Framework**: MapKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a formatted string for the specified map rectangle.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func MKStringFromMapRect(_ rect: MKMapRect) -> String
+```
+
+```c
+static NSString *MKStringFromMapRect(MKMapRect rect);
 ```
 
 #### Return Value

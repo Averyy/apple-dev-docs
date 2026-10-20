@@ -1,7 +1,8 @@
 # IOReturn
 
 **Framework**: IOKit  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 18.4+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias IOReturn = kern_return_t
+```
+
+```c
+typedef kern_return_t IOReturn;
 ```
 
 

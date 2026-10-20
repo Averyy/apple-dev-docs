@@ -1,7 +1,8 @@
 # startCapture(completionHandler:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Starts the stream with a callback to indicate whether it successfully starts.
 
@@ -16,7 +17,15 @@ Starts the stream with a callback to indicate whether it successfully starts.
 ## Declaration
 
 ```swift
+func startCapture(completionHandler: (@Sendable ((any Error)?) -> Void)? = nil)
+```
+
+```swift
 func startCapture() async throws
+```
+
+```objc
+- (void) startCaptureWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
 ## Parameters
@@ -25,7 +34,8 @@ func startCapture() async throws
 
 ## See Also
 
-- [func stopCapture(completionHandler: (((any Error)?) -> Void)?)](scstream/stopcapture(completionhandler:).md)
+### Starting and stopping a stream
+- [func stopCapture(completionHandler: (((any Error)?) -> Void)?)](./stopcapture%28completionhandler%29.md)
   Stops the stream.
 
 

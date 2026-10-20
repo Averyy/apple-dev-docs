@@ -1,7 +1,8 @@
 # multipliedFullWidth(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a tuple containing the high and low parts of the result of multiplying this value by the given value.
 
@@ -49,7 +50,8 @@ let z = Int16(result.high) << 8 | Int16(result.low)
 
 ## See Also
 
-- [func dividingFullWidth((high: Int, low: Int.Magnitude)) -> (quotient: Int, remainder: Int)](int/dividingfullwidth(_:).md)
+### Performing Double-Width Calculations
+- [func dividingFullWidth((high: Int, low: Int.Magnitude)) -> (quotient: Int, remainder: Int)](./dividingfullwidth%28_%29.md)
   Returns a tuple containing the quotient and remainder of dividing the given value by this value.
 
 

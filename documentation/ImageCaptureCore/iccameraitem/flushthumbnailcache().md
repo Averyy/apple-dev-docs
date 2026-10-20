@@ -1,7 +1,8 @@
 # flushThumbnailCache()
 
 **Framework**: ImageCaptureCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Deletes the item’s cached thumbnail.
 
@@ -18,17 +19,22 @@ Deletes the item’s cached thumbnail.
 func flushThumbnailCache()
 ```
 
+```objc
+- (void) flushThumbnailCache;
+```
+
 ## See Also
 
-- [func requestThumbnail()](iccameraitem/requestthumbnail.md)
+### Requesting Thumbnails
+- [func requestThumbnail()](./requestthumbnail%28%29.md)
   Requests a thumbnail for the item.
-- [var thumbnail: CGImage?](iccameraitem/thumbnail.md)
+- [var thumbnail: CGImage?](./thumbnail.md)
   The item’s thumbnail.
-- [var thumbnailIfAvailable: CGImage?](iccameraitem/thumbnailifavailable.md)
+- [var thumbnailIfAvailable: CGImage?](./thumbnailifavailable.md)
   The item’s thumbnail if it is readily available.
-- [var largeThumbnailIfAvailable: CGImage?](iccameraitem/largethumbnailifavailable.md)
+- [var largeThumbnailIfAvailable: CGImage?](./largethumbnailifavailable.md)
   A large thumbnail for the item if one is readily available.
-- [struct ICCameraItemThumbnailOption](iccameraitemthumbnailoption.md)
+- [struct ICCameraItemThumbnailOption](../iccameraitemthumbnailoption.md)
   An option for the item’s thumbnail.
 
 

@@ -1,18 +1,19 @@
 # DenseVector_Float
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that contains a dense vector of single-precision, floating-point values.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,11 +21,15 @@ A structure that contains a dense vector of single-precision, floating-point val
 struct DenseVector_Float
 ```
 
+```c
+typedef struct { ... } DenseVector_Float;
+```
+
 #### Overview
 
-You typically use dense vectors to represent the unknowns vector, *x*, and the right-hand-side vector, *b*, in the matrix equation *Ax = b.* A [`DenseVector_Float`](densevector_float.md) structure provides a pointer to its underlying data and a count of its number of elements.
+You typically use dense vectors to represent the unknowns vector, *x*, and the right-hand-side vector, *b*, in the matrix equation *Ax = b.* A [`DenseVector_Float`](./densevector_float.md) structure provides a pointer to its underlying data and a count of its number of elements.
 
-The following code shows an example of how to create a dense vector structure from an array of single-precision values. In this case, use [`withUnsafeMutableBufferPointer(_:)`](acceleratemutablebuffer/withunsafemutablebufferpointer(_:).md) to pass a pointer to your collection. The [`DenseVector_Float`](densevector_float.md) structure is valid only during the execution of the closure. Don’t store or return the structure for later use:
+The following code shows an example of how to create a dense vector structure from an array of single-precision values. In this case, use [`withUnsafeMutableBufferPointer(_:)`](./acceleratemutablebuffer/withunsafemutablebufferpointer%28_%29.md) to pass a pointer to your collection. The [`DenseVector_Float`](./densevector_float.md) structure is valid only during the execution of the closure. Don’t store or return the structure for later use:
 
 ```swift
 var vectorValues: [Float] = [10, 20, 30, 40]
@@ -42,26 +47,27 @@ vectorValues.withUnsafeMutableBufferPointer { vectorValuesPtr in
 ## Topics
 
 ### Initializers
-- [init(count: Int32, data: UnsafeMutablePointer<Float>)](densevector_float/init(count:data:).md)
+- [init(count: Int32, data: UnsafeMutablePointer<Float>)](./densevector_float/init%28count,data%29.md)
   Creates a new vector of single-precision values.
 ### Inspecting a Vector’s Structure and Data
-- [var count: Int32](densevector_float/count.md)
+- [var count: Int32](./densevector_float/count.md)
   The number of items in the vector.
-- [var data: UnsafeMutablePointer<Float>](densevector_float/data.md)
+- [var data: UnsafeMutablePointer<Float>](./densevector_float/data.md)
   The array of single-precision, floating-point values.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
 
 ## See Also
 
-- [struct DenseMatrix_Double](densematrix_double.md)
+### Creating dense matrices and dense vectors
+- [struct DenseMatrix_Double](./densematrix_double.md)
   A structure that contains a dense matrix of double-precision, floating-point values.
-- [struct DenseMatrix_Float](densematrix_float.md)
+- [struct DenseMatrix_Float](./densematrix_float.md)
   A structure that contains a dense matrix of single-precision, floating-point values.
-- [struct DenseVector_Double](densevector_double.md)
+- [struct DenseVector_Double](./densevector_double.md)
   A structure that contains a dense vector of double-precision, floating-point values.
 
 

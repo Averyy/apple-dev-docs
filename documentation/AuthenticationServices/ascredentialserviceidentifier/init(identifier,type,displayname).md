@@ -1,7 +1,8 @@
 # init(identifier:type:displayName:)
 
 **Framework**: Authentication Services  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an ASCredentialServiceIdentifier object.
 
@@ -16,6 +17,10 @@ Initializes an ASCredentialServiceIdentifier object.
 
 ```swift
 init(identifier: String, type: ASCredentialServiceIdentifier.IdentifierType, displayName: String)
+```
+
+```objc
+- (instancetype) initWithIdentifier:(NSString *) identifier type:(ASCredentialServiceIdentifierType) type displayName:(NSString *) displayName;
 ```
 
 ## Parameters

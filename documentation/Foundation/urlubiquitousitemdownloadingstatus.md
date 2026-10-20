@@ -1,7 +1,8 @@
 # URLUbiquitousItemDownloadingStatus
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Values that describe the iCloud storage state of a file.
 
@@ -20,63 +21,68 @@ Values that describe the iCloud storage state of a file.
 struct URLUbiquitousItemDownloadingStatus
 ```
 
+```c
+typedef NSString * NSURLUbiquitousItemDownloadingStatus;
+```
+
 #### Discussion
 
-These constants are possible values for the [`ubiquitousItemDownloadingStatusKey`](urlresourcekey/ubiquitousitemdownloadingstatuskey.md) key.
+These constants are possible values for the [`ubiquitousItemDownloadingStatusKey`](./urlresourcekey/ubiquitousitemdownloadingstatuskey.md) key.
 
 ## Topics
 
 ### Creating a Download Status Instance
-- [init(rawValue: String)](urlubiquitousitemdownloadingstatus/init(rawvalue:).md)
+- [init(rawValue: String)](./urlubiquitousitemdownloadingstatus/init%28rawvalue%29.md)
   Creates a download status instance from the provided constant string.
 ### Constants
-- [static let current: URLUbiquitousItemDownloadingStatus](urlubiquitousitemdownloadingstatus/current.md)
+- [static let current: URLUbiquitousItemDownloadingStatus](./urlubiquitousitemdownloadingstatus/current.md)
   A local copy of this item exists and is the most up-to-date version known to the device.
-- [static let downloaded: URLUbiquitousItemDownloadingStatus](urlubiquitousitemdownloadingstatus/downloaded.md)
+- [static let downloaded: URLUbiquitousItemDownloadingStatus](./urlubiquitousitemdownloadingstatus/downloaded.md)
   A local copy of this item exists, but it is stale. The most recent version will be downloaded as soon as possible.
-- [static let notDownloaded: URLUbiquitousItemDownloadingStatus](urlubiquitousitemdownloadingstatus/notdownloaded.md)
-  This item has not been downloaded yet. Use [`startDownloadingUbiquitousItem(at:)`](filemanager/startdownloadingubiquitousitem(at:).md) to download it.
+- [static let notDownloaded: URLUbiquitousItemDownloadingStatus](./urlubiquitousitemdownloadingstatus/notdownloaded.md)
+  This item has not been downloaded yet. Use [`startDownloadingUbiquitousItem(at:)`](./filemanager/startdownloadingubiquitousitem%28at%29.md) to download it.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static let isUbiquitousItemKey: URLResourceKey](urlresourcekey/isubiquitousitemkey.md)
+### Ubiquitous keys
+- [static let isUbiquitousItemKey: URLResourceKey](./urlresourcekey/isubiquitousitemkey.md)
   The key for a Boolean value that indicates whether the item is in iCloud storage.
-- [static let ubiquitousSharedItemMostRecentEditorNameComponentsKey: URLResourceKey](urlresourcekey/ubiquitousshareditemmostrecenteditornamecomponentskey.md)
+- [static let ubiquitousSharedItemMostRecentEditorNameComponentsKey: URLResourceKey](./urlresourcekey/ubiquitousshareditemmostrecenteditornamecomponentskey.md)
   The key for the name components of the most recent editor.
-- [static let ubiquitousItemDownloadRequestedKey: URLResourceKey](urlresourcekey/ubiquitousitemdownloadrequestedkey.md)
-  The key for a Boolean value that indicates whether the system has already made a call [`startDownloadingUbiquitousItem(at:)`](filemanager/startdownloadingubiquitousitem(at:).md) to download the item.
-- [static let ubiquitousItemIsDownloadingKey: URLResourceKey](urlresourcekey/ubiquitousitemisdownloadingkey.md)
+- [static let ubiquitousItemDownloadRequestedKey: URLResourceKey](./urlresourcekey/ubiquitousitemdownloadrequestedkey.md)
+  The key for a Boolean value that indicates whether the system has already made a call [`startDownloadingUbiquitousItem(at:)`](./filemanager/startdownloadingubiquitousitem%28at%29.md) to download the item.
+- [static let ubiquitousItemIsDownloadingKey: URLResourceKey](./urlresourcekey/ubiquitousitemisdownloadingkey.md)
   The key for a Boolean value that indicates whether the system is downloading the item from iCloud.
-- [static let ubiquitousItemDownloadingErrorKey: URLResourceKey](urlresourcekey/ubiquitousitemdownloadingerrorkey.md)
+- [static let ubiquitousItemDownloadingErrorKey: URLResourceKey](./urlresourcekey/ubiquitousitemdownloadingerrorkey.md)
   The key for an error object that indicates why downloading the item from iCloud fails.
-- [static let ubiquitousItemDownloadingStatusKey: URLResourceKey](urlresourcekey/ubiquitousitemdownloadingstatuskey.md)
+- [static let ubiquitousItemDownloadingStatusKey: URLResourceKey](./urlresourcekey/ubiquitousitemdownloadingstatuskey.md)
   The key for the current download state for the item.
-- [static let ubiquitousItemIsExcludedFromSyncKey: URLResourceKey](urlresourcekey/ubiquitousitemisexcludedfromsynckey.md)
+- [static let ubiquitousItemIsExcludedFromSyncKey: URLResourceKey](./urlresourcekey/ubiquitousitemisexcludedfromsynckey.md)
   The key of a Boolean value that indicates whether the system excludes the item from syncing.
-- [static let ubiquitousItemIsUploadedKey: URLResourceKey](urlresourcekey/ubiquitousitemisuploadedkey.md)
+- [static let ubiquitousItemIsUploadedKey: URLResourceKey](./urlresourcekey/ubiquitousitemisuploadedkey.md)
   The key for a Boolean value that indicates whether the system uploads the item’s data to iCloud storage.
-- [static let ubiquitousItemIsUploadingKey: URLResourceKey](urlresourcekey/ubiquitousitemisuploadingkey.md)
+- [static let ubiquitousItemIsUploadingKey: URLResourceKey](./urlresourcekey/ubiquitousitemisuploadingkey.md)
   The key for a Boolean value that indicates whether the system is uploading the item to iCloud.
-- [static let ubiquitousItemUploadingErrorKey: URLResourceKey](urlresourcekey/ubiquitousitemuploadingerrorkey.md)
+- [static let ubiquitousItemUploadingErrorKey: URLResourceKey](./urlresourcekey/ubiquitousitemuploadingerrorkey.md)
   The key for an error object that indicates why uploading the item to iCloud fails.
-- [static let ubiquitousItemHasUnresolvedConflictsKey: URLResourceKey](urlresourcekey/ubiquitousitemhasunresolvedconflictskey.md)
+- [static let ubiquitousItemHasUnresolvedConflictsKey: URLResourceKey](./urlresourcekey/ubiquitousitemhasunresolvedconflictskey.md)
   The key for a Boolean value that indicates whether this item has outstanding conflicts.
-- [static let ubiquitousItemContainerDisplayNameKey: URLResourceKey](urlresourcekey/ubiquitousitemcontainerdisplaynamekey.md)
+- [static let ubiquitousItemContainerDisplayNameKey: URLResourceKey](./urlresourcekey/ubiquitousitemcontainerdisplaynamekey.md)
   The key for a string that contains the name of the item’s container as it appears to the user.
-- [static let ubiquitousSharedItemOwnerNameComponentsKey: URLResourceKey](urlresourcekey/ubiquitousshareditemownernamecomponentskey.md)
+- [static let ubiquitousSharedItemOwnerNameComponentsKey: URLResourceKey](./urlresourcekey/ubiquitousshareditemownernamecomponentskey.md)
   The key for the name components of the item’s owner.
-- [static let ubiquitousSharedItemCurrentUserPermissionsKey: URLResourceKey](urlresourcekey/ubiquitousshareditemcurrentuserpermissionskey.md)
+- [static let ubiquitousSharedItemCurrentUserPermissionsKey: URLResourceKey](./urlresourcekey/ubiquitousshareditemcurrentuserpermissionskey.md)
   The key for the current user’s permissions.
-- [static let ubiquitousSharedItemCurrentUserRoleKey: URLResourceKey](urlresourcekey/ubiquitousshareditemcurrentuserrolekey.md)
+- [static let ubiquitousSharedItemCurrentUserRoleKey: URLResourceKey](./urlresourcekey/ubiquitousshareditemcurrentuserrolekey.md)
   The key for the role of the current user.
 
 

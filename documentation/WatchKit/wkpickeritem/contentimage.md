@@ -1,7 +1,8 @@
 # contentImage
 
 **Framework**: WatchKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display for the item.
 
@@ -15,17 +16,22 @@ The image to display for the item.
 var contentImage: WKImage? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) WKImage * contentImage;
+```
+
 #### Discussion
 
 This image contains the item’s content and is displayed when the item is selected. The content image supported for all picker styles.
 
 ## See Also
 
-- [var title: String?](wkpickeritem/title.md)
+### Setting the Picker Item’s Content
+- [var title: String?](./title.md)
   The text to display for the item.
-- [var accessoryImage: WKImage?](wkpickeritem/accessoryimage.md)
+- [var accessoryImage: WKImage?](./accessoryimage.md)
   A small image to display next to the title string.
-- [var caption: String?](wkpickeritem/caption.md)
+- [var caption: String?](./caption.md)
   A caption for the item’s content.
 
 

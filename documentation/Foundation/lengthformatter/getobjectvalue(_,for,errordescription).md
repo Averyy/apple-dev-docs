@@ -1,7 +1,8 @@
 # getObjectValue(_:for:errorDescription:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 This method is not supported for the `NSLengthFormatter` class.
 
@@ -20,13 +21,17 @@ This method is not supported for the `NSLengthFormatter` class.
 func getObjectValue(_ obj: AutoreleasingUnsafeMutablePointer<AnyObject?>?, for string: String, errorDescription error: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool
 ```
 
+```objc
+- (BOOL) getObjectValue:(id*) obj forString:(NSString *) string errorDescription:(NSString **) error;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the conversion from string was successful; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the conversion from string was successful; otherwise, [`false`](../../Swift/false.md).
 
 #### Discussion
 
-You can override this method in a subclass. For more information, see [`Formatter`](formatter.md).
+You can override this method in a subclass. For more information, see [`Formatter`](../formatter.md).
 
 ## Parameters
 
@@ -36,21 +41,23 @@ You can override this method in a subclass. For more information, see [`Formatte
 
 ## See Also
 
-- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](formatter/getobjectvalue(_:for:errordescription:).md)
+### Related Documentation
+- [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](../formatter/getobjectvalue%28_,for,errordescription%29.md)
   The default implementation of this method raises an exception.
-- [var isForPersonHeightUse: Bool](lengthformatter/isforpersonheightuse.md)
+### Formatting Length Strings
+- [var isForPersonHeightUse: Bool](./isforpersonheightuse.md)
   A Boolean value that indicates whether the resulting string represents a person’s height.
-- [var numberFormatter: NumberFormatter!](lengthformatter/numberformatter.md)
+- [var numberFormatter: NumberFormatter!](./numberformatter.md)
   The number formatter used to format the numbers in length strings.
-- [func string(fromMeters: Double) -> String](lengthformatter/string(frommeters:).md)
+- [func string(fromMeters: Double) -> String](./string%28frommeters%29.md)
   Returns a length string for the provided value.
-- [func string(fromValue: Double, unit: LengthFormatter.Unit) -> String](lengthformatter/string(fromvalue:unit:).md)
+- [func string(fromValue: Double, unit: LengthFormatter.Unit) -> String](./string%28fromvalue,unit%29.md)
   Returns a properly formatted length string for the given value and unit.
-- [func unitString(fromMeters: Double, usedUnit: UnsafeMutablePointer<LengthFormatter.Unit>?) -> String](lengthformatter/unitstring(frommeters:usedunit:).md)
+- [func unitString(fromMeters: Double, usedUnit: UnsafeMutablePointer<LengthFormatter.Unit>?) -> String](./unitstring%28frommeters,usedunit%29.md)
   Returns the unit string for the provided value.
-- [func unitString(fromValue: Double, unit: LengthFormatter.Unit) -> String](lengthformatter/unitstring(fromvalue:unit:).md)
+- [func unitString(fromValue: Double, unit: LengthFormatter.Unit) -> String](./unitstring%28fromvalue,unit%29.md)
   Returns the unit string based on the provided value and unit.
-- [var unitStyle: Formatter.UnitStyle](lengthformatter/unitstyle.md)
+- [var unitStyle: Formatter.UnitStyle](./unitstyle.md)
   The unit style used by this formatter.
 
 

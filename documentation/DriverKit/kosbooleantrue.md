@@ -1,19 +1,20 @@
 # kOSBooleanTrue
 
 **Framework**: DriverKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The OSBoolean constant for `true` .
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 extern OSBooleanPtr kOSBooleanTrue;
 ```
 
@@ -23,7 +24,8 @@ kOSBooleanTrue is the OSBoolean constant for `true` . This object does not need 
 
 ## See Also
 
-- [kOSBooleanFalse](kosbooleanfalse.md)
+### Getting Boolean Values
+- [kOSBooleanFalse](./kosbooleanfalse.md)
   The OSBoolean constant for `false` .
 
 

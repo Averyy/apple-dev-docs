@@ -1,7 +1,8 @@
 # highlightDuration
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time it takes for a highlight to fade away, in seconds.
 
@@ -16,13 +17,18 @@ The time it takes for a highlight to fade away, in seconds.
 var highlightDuration: TimeInterval { get set }
 ```
 
+```objc
+@property (nonatomic, assign) NSTimeInterval highlightDuration;
+```
+
 ## See Also
 
-- [var contents: TCControlContents?](tcswitch/contents.md)
+### Inspecting the switch
+- [var contents: TCControlContents?](./contents.md)
   The contents for the switch in its normal state.
-- [var isSwitchedOn: Bool](tcswitch/isswitchedon.md)
+- [var isSwitchedOn: Bool](./isswitchedon.md)
   A Boolean value that indicates whether the switch is currently switched on.
-- [var switchedOnContents: TCControlContents?](tcswitch/switchedoncontents.md)
+- [var switchedOnContents: TCControlContents?](./switchedoncontents.md)
   The contents for the switch when it is switched on.
 
 

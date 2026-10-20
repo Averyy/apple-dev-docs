@@ -1,21 +1,23 @@
 # Version
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 1-byte specification of the version of this atom.
 
 ## See Also
 
-- [Size](track_production_aperture_dimensions_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in the atom.
-- [Type](track_production_aperture_dimensions_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Flags](track_production_aperture_dimensions_atom/flags.md)
+- [Flags](./flags.md)
   Three bytes that are reserved for the atom flags.
-- [Width](track_production_aperture_dimensions_atom/width.md)
+- [Width](./width.md)
   A 32-bit fixed-point number that specifies the width of the track production aperture in pixels.
-- [Height](track_production_aperture_dimensions_atom/height.md)
+- [Height](./height.md)
   A 32-bit fixed-point number that specifies the height of the track production aperture in pixels.
 
 

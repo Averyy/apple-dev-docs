@@ -1,12 +1,15 @@
 # kSCPropNetInterfaceSupportsModemOnHold
 
 **Framework**: System Configuration  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The Interface key `SupportsModemOnHold`, whose value is of type `CFNumber` and is equal to `0` or `1`.
 
 **Availability**:
-- macOS 10.2+
+- macOS 10.2+ - Deprecated in 10.13
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -14,15 +17,20 @@ The Interface key `SupportsModemOnHold`, whose value is of type `CFNumber` and i
 let kSCPropNetInterfaceSupportsModemOnHold: CFString
 ```
 
+```c
+extern CFStringRef const kSCPropNetInterfaceSupportsModemOnHold;
+```
+
 ## See Also
 
-- [let kSCPropNetInterfaceDeviceName: CFString](kscpropnetinterfacedevicename-swift.var.md)
+### Constants
+- [let kSCPropNetInterfaceDeviceName: CFString](./kscpropnetinterfacedevicename-swift.var.md)
   The Interface key `DeviceName`, whose value is of type `CFString`.
-- [let kSCPropNetInterfaceHardware: CFString](kscpropnetinterfacehardware-swift.var.md)
+- [let kSCPropNetInterfaceHardware: CFString](./kscpropnetinterfacehardware-swift.var.md)
   The Interface key `Hardware`, whose value is of type `CFString`.
-- [let kSCPropNetInterfaceType: CFString](kscpropnetinterfacetype-swift.var.md)
+- [let kSCPropNetInterfaceType: CFString](./kscpropnetinterfacetype-swift.var.md)
   The Interface key `Type`, whose value is of type `CFString`.
-- [let kSCPropNetInterfaceSubType: CFString](kscpropnetinterfacesubtype-swift.var.md)
+- [let kSCPropNetInterfaceSubType: CFString](./kscpropnetinterfacesubtype-swift.var.md)
   The Interface key `SubType`, whose value is of type `CFString`.
 
 

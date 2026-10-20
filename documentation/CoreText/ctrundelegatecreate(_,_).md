@@ -1,7 +1,8 @@
 # CTRunDelegateCreate(_:_:)
 
 **Framework**: Core Text  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates an immutable instance of a run delegate.
 
@@ -18,6 +19,10 @@ Creates an immutable instance of a run delegate.
 
 ```swift
 func CTRunDelegateCreate(_ callbacks: UnsafePointer<CTRunDelegateCallbacks>, _ refCon: UnsafeMutableRawPointer?) -> CTRunDelegate?
+```
+
+```c
+extern CTRunDelegateRefCTRunDelegateCreate(const CTRunDelegateCallbacks *callbacks, void *refCon);
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # MTLVertexAttributeDescriptor
 
 **Framework**: Metal  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that determines how to store attribute data in memory and map it to the arguments of a vertex function.
 
@@ -10,13 +11,17 @@ An object that determines how to store attribute data in memory and map it to th
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 class MTLVertexAttributeDescriptor
+```
+
+```objc
+@interface MTLVertexAttributeDescriptor : NSObject
 ```
 
 #### Overview
@@ -26,39 +31,40 @@ A vertex attribute descriptor provides organization information so a vertex shad
 ## Topics
 
 ### Organizing the vertex attribute
-- [var format: MTLVertexFormat](mtlvertexattributedescriptor/format.md)
+- [var format: MTLVertexFormat](./mtlvertexattributedescriptor/format.md)
   The format of the vertex attribute.
-- [var offset: Int](mtlvertexattributedescriptor/offset.md)
+- [var offset: Int](./mtlvertexattributedescriptor/offset.md)
   The location of an attribute in vertex data, determined by the byte offset from the start of the vertex data.
-- [var bufferIndex: Int](mtlvertexattributedescriptor/bufferindex.md)
+- [var bufferIndex: Int](./mtlvertexattributedescriptor/bufferindex.md)
   The index in the argument table for the associated vertex buffer.
-- [enum MTLVertexFormat](mtlvertexformat.md)
+- [enum MTLVertexFormat](./mtlvertexformat.md)
   The vertex data format options for render pipelines.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MTLVertexDescriptor](mtlvertexdescriptor.md)
+### Render pass inputs
+- [class MTLVertexDescriptor](./mtlvertexdescriptor.md)
   An instance that describes how to organize and map data to a vertex function.
-- [class MTLVertexAttributeDescriptorArray](mtlvertexattributedescriptorarray.md)
+- [class MTLVertexAttributeDescriptorArray](./mtlvertexattributedescriptorarray.md)
   An array of vertex attribute descriptor instances.
-- [class MTLVertexBufferLayoutDescriptor](mtlvertexbufferlayoutdescriptor.md)
+- [class MTLVertexBufferLayoutDescriptor](./mtlvertexbufferlayoutdescriptor.md)
   An object that configures how a render pipeline fetches data to send to the vertex function.
-- [class MTLVertexBufferLayoutDescriptorArray](mtlvertexbufferlayoutdescriptorarray.md)
+- [class MTLVertexBufferLayoutDescriptorArray](./mtlvertexbufferlayoutdescriptorarray.md)
   An array of vertex buffer layout descriptor instances.
-- [var MTLBufferLayoutStrideDynamic: Int](mtlbufferlayoutstridedynamic.md)
+- [var MTLBufferLayoutStrideDynamic: Int](./mtlbufferlayoutstridedynamic.md)
 
 
 ---

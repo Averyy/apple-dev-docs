@@ -1,7 +1,8 @@
 # nextToken
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -17,6 +18,10 @@
 ```swift
 @NSCopying
 var nextToken: MTRChannelClusterPageTokenStruct? { get set }
+```
+
+```objc
+@property (nonatomic, copy) MTRChannelClusterPageTokenStruct * nextToken;
 ```
 
 

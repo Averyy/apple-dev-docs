@@ -1,16 +1,17 @@
 # ICReturnThumbnailError.Code.invalid
 
 **Framework**: ImageCaptureCore  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Item thumbnail request completed with invalid result.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- visionOS
 
 ## Declaration
 
@@ -18,19 +19,24 @@ Item thumbnail request completed with invalid result.
 case invalid
 ```
 
+```c
+ICReturnThumbnailInvalid
+```
+
 ## See Also
 
-- [ICReturnThumbnailError.Code.alreadyFetching](icreturnthumbnailerror/code/alreadyfetching.md)
+### Error Cases
+- [ICReturnThumbnailError.Code.alreadyFetching](./alreadyfetching.md)
   Item thumbnail request is being serviced.
-- [ICReturnThumbnailError.Code.canceled](icreturnthumbnailerror/code/canceled.md)
+- [ICReturnThumbnailError.Code.canceled](./canceled.md)
   Item thumbnail request has been canceled.
-- [ICReturnThumbnailError.Code.notAvailable](icreturnthumbnailerror/code/notavailable.md)
+- [ICReturnThumbnailError.Code.notAvailable](./notavailable.md)
   Item does not have thumbnail available.
-- [ICReturnThumbnailError.Code.alreadyFetching](icreturnthumbnailerror/code/alreadyfetching.md)
+- [ICReturnThumbnailError.Code.alreadyFetching](./alreadyfetching.md)
   Item thumbnail request is being serviced.
-- [ICReturnThumbnailError.Code.canceled](icreturnthumbnailerror/code/canceled.md)
+- [ICReturnThumbnailError.Code.canceled](./canceled.md)
   Item thumbnail request has been canceled.
-- [ICReturnThumbnailError.Code.notAvailable](icreturnthumbnailerror/code/notavailable.md)
+- [ICReturnThumbnailError.Code.notAvailable](./notavailable.md)
   Item does not have thumbnail available.
 
 

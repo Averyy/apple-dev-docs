@@ -1,7 +1,8 @@
 # shared
 
 **Framework**: WidgetKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The shared widget center.
 
@@ -21,9 +22,10 @@ static let shared: WidgetCenter
 
 ## See Also
 
-- [func getCurrentConfigurations((Result<[WidgetInfo], any Error>) -> Void)](widgetcenter/getcurrentconfigurations(_:).md)
+### Getting Widget Information
+- [func getCurrentConfigurations((Result<[WidgetInfo], any Error>) -> Void)](./getcurrentconfigurations%28_%29.md)
   Retrieves information about user-configured widgets.
-- [WidgetCenter.UserInfoKey](widgetcenter/userinfokey.md)
+- [WidgetCenter.UserInfoKey](./userinfokey.md)
   An object that defines keys for accessing information in a user info dictionary.
 
 

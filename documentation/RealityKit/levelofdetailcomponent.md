@@ -1,7 +1,8 @@
 # LevelOfDetailComponent
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A component that enables Level of Detail (LOD) optimization for entities with multiple detail levels.
 
@@ -26,31 +27,31 @@ The component allows entities to automatically show/hide child entities based on
 ## Topics
 
 ### Creating a component
-- [init(levels: [LevelOfDetailComponent.DetailLevel], switchingAt: LevelOfDetailComponent.SelectionStrategy)](levelofdetailcomponent/init(levels:switchingat:).md)
+- [init(levels: [LevelOfDetailComponent.DetailLevel], switchingAt: LevelOfDetailComponent.SelectionStrategy)](./levelofdetailcomponent/init%28levels,switchingat%29.md)
   Creates a new Level of Detail component.
-- [static func addByCameraDistance(to: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, maxDistance: Float)])](levelofdetailcomponent/addbycameradistance(to:levels:).md)
+- [static func addByCameraDistance(to: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, maxDistance: Float)])](./levelofdetailcomponent/addbycameradistance%28to,levels%29.md)
   Adds Level of Detail configuration using distance-based switching to an entity .
-- [static func addByScreenArea(to: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, minArea: Float)])](levelofdetailcomponent/addbyscreenarea(to:levels:).md)
+- [static func addByScreenArea(to: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, minArea: Float)])](./levelofdetailcomponent/addbyscreenarea%28to,levels%29.md)
   Adds Level of Detail configuration using screen area-based switching to an entity.
-- [static func addByResolutionMetric(to: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, switchingResolutions: LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions)], boundingBox: BoundingBox)](levelofdetailcomponent/addbyresolutionmetric(to:levels:boundingbox:).md)
+- [static func addByResolutionMetric(to: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, switchingResolutions: LevelOfDetailComponent.SelectionStrategy.ResolutionMetric.DirectionalSwitchingResolutions)], boundingBox: BoundingBox)](./levelofdetailcomponent/addbyresolutionmetric%28to,levels,boundingbox%29.md)
   Adds Level of Detail configuration using resolution metric-based switching to an entity.
 ### Configuring detail levels
-- [var levels: [LevelOfDetailComponent.DetailLevel]](levelofdetailcomponent/levels.md)
-- [LevelOfDetailComponent.DetailLevel](levelofdetailcomponent/detaillevel.md)
+- [var levels: [LevelOfDetailComponent.DetailLevel]](./levelofdetailcomponent/levels.md)
+- [LevelOfDetailComponent.DetailLevel](./levelofdetailcomponent/detaillevel.md)
   An array of entities representing a single detail level. Entities within a level are shown or hidden together based on LOD selection.
 ### Choosing a level
-- [var strategy: LevelOfDetailComponent.SelectionStrategy](levelofdetailcomponent/strategy.md)
-- [LevelOfDetailComponent.SelectionStrategy](levelofdetailcomponent/selectionstrategy.md)
+- [var strategy: LevelOfDetailComponent.SelectionStrategy](./levelofdetailcomponent/strategy.md)
+- [LevelOfDetailComponent.SelectionStrategy](./levelofdetailcomponent/selectionstrategy.md)
   The strategy used to select which detail level to display.
-- [var levelSelection: LevelOfDetailComponent.LevelSelection](levelofdetailcomponent/levelselection-swift.property.md)
+- [var levelSelection: LevelOfDetailComponent.LevelSelection](./levelofdetailcomponent/levelselection-swift.property.md)
   The level selection mode. Defaults to automatic selection based on the strategy.
-- [LevelOfDetailComponent.LevelSelection](levelofdetailcomponent/levelselection-swift.struct.md)
+- [LevelOfDetailComponent.LevelSelection](./levelofdetailcomponent/levelselection-swift.struct.md)
   Controls whether LOD selection is automatic or manually overridden.
 
 ## Relationships
 
 ### Conforms To
-- [Component](component.md)
+- [Component](./component.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # objc_copyImageNames(_:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the names of all the loaded Objective-C frameworks and dynamic libraries.
 
@@ -20,6 +21,10 @@ Returns the names of all the loaded Objective-C frameworks and dynamic libraries
 func objc_copyImageNames(_ outCount: UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<UnsafePointer<CChar>>
 ```
 
+```c
+extern const char **objc_copyImageNames(unsigned int *outCount);
+```
+
 #### Return Value
 
 An array of C strings representing the names of all the loaded Objective-C frameworks and dynamic libraries.
@@ -30,9 +35,10 @@ An array of C strings representing the names of all the loaded Objective-C frame
 
 ## See Also
 
-- [func class_getImageName(AnyClass?) -> UnsafePointer<CChar>?](class_getimagename(_:).md)
+### Working with Libraries
+- [func class_getImageName(AnyClass?) -> UnsafePointer<CChar>?](./class_getimagename%28_%29.md)
   Returns the name of the dynamic library a class originated from.
-- [func objc_copyClassNamesForImage(UnsafePointer<CChar>, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<UnsafePointer<CChar>>?](objc_copyclassnamesforimage(_:_:).md)
+- [func objc_copyClassNamesForImage(UnsafePointer<CChar>, UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<UnsafePointer<CChar>>?](./objc_copyclassnamesforimage%28_,_%29.md)
   Returns the names of all the classes within a specified library or framework.
 
 

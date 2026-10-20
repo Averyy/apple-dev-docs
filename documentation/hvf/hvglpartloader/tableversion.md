@@ -1,7 +1,8 @@
 # tableVersion
 
 **Framework**: hvf  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The version of the hvgl table this loader supports
 

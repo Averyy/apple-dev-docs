@@ -1,14 +1,15 @@
 # setCommandFlags
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual void setCommandFlags(UInt32 flags);
 ```
 

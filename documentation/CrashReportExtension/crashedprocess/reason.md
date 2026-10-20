@@ -1,7 +1,8 @@
 # reason
 
 **Framework**: CrashReportExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Contextual information about the reported crash.
 
@@ -9,9 +10,9 @@ Contextual information about the reported crash.
 - iOS 27.0+
 - iPadOS 27.0+
 - macOS 27.0+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -21,13 +22,14 @@ final var reason: CrashReason
 
 ## See Also
 
-- [struct CrashReason](crashreason.md)
+### Accessing process properties
+- [struct CrashReason](../crashreason.md)
   Context information about the crash being reported
-- [var binaryImages: [BinaryImageInfo]](crashedprocess/binaryimages.md)
+- [var binaryImages: [BinaryImageInfo]](./binaryimages.md)
   A list of binary images from the crashed process.
-- [struct BinaryImageInfo](binaryimageinfo.md)
+- [struct BinaryImageInfo](../binaryimageinfo.md)
   A type that represents a binary image loaded in the crashed process.
-- [var corpsePort: mach_port_t](crashedprocess/corpseport.md)
+- [var corpsePort: mach_port_t](./corpseport.md)
   A property that provides a Mach port to the crashed process.
 
 

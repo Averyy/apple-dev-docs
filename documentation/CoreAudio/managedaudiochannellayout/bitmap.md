@@ -1,7 +1,8 @@
 # bitmap
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 If `tag` is set to `kAudioChannelLayoutTag_UseChannelBitmap`, this is the channel usage bitmap.
 
@@ -11,7 +12,7 @@ If `tag` is set to `kAudioChannelLayoutTag_UseChannelBitmap`, this is the channe
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

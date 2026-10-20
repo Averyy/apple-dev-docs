@@ -1,7 +1,8 @@
 # init(trainingData:targetColumn:featureColumns:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a classifier.
 
@@ -14,6 +15,12 @@ Creates a classifier.
 init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = nil) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil) throws
+```
+
 ## Parameters
 
 - `trainingData`: The training data
@@ -22,9 +29,10 @@ init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = 
 
 ## See Also
 
-- [var targetColumn: String](mlclassifier/targetcolumn.md)
+### Creating and training a classifier
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
-- [var featureColumns: [String]](mlclassifier/featurecolumns.md)
+- [var featureColumns: [String]](./featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
 
 

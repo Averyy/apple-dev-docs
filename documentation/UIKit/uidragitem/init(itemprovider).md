@@ -1,7 +1,8 @@
 # init(itemProvider:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new drag item with a specified item provider.
 
@@ -17,17 +18,21 @@ Initializes a new drag item with a specified item provider.
 init(itemProvider: NSItemProvider)
 ```
 
+```objc
+- (instancetype) initWithItemProvider:(NSItemProvider *) itemProvider;
+```
+
 #### Return Value
 
 A drag item that the system initializes with the specified item provider.
 
 #### Discussion
 
-Provide an [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) object to create a new drag item. The item provider communicates the data that the drag-and-drop activity shares between processes.
+Provide an [`NSItemProvider`](../../Foundation/nsitemprovider.md) object to create a new drag item. The item provider communicates the data that the drag-and-drop activity shares between processes.
 
 ## Parameters
 
-- `itemProvider`: An instance of [`NSItemProvider`](https://developer.apple.com/documentation/foundation/nsitemprovider) that conveys the data or file to share during the drag-and-drop activity.
+- `itemProvider`: An instance of [`NSItemProvider`](../../Foundation/nsitemprovider.md) that conveys the data or file to share during the drag-and-drop activity.
 
 
 ---

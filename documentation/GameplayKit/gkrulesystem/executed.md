@@ -1,7 +1,8 @@
 # executed
 
 **Framework**: GameplayKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of rules whose actions have been performed during evaluation of the system.
 
@@ -19,19 +20,25 @@ The list of rules whose actions have been performed during evaluation of the sys
 var executed: [GKRule] { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) NSArray<GKRule *> * executed;
+```
+
 #### Discussion
 
-When you call the [`evaluate()`](gkrulesystem/evaluate().md) method, the system considers each rule in the [`agenda`](gkrulesystem/agenda.md) list in order. If a rule on the agenda is satisfied—that is, its predicate returns [`true`](https://developer.apple.com/documentation/swift/true) and it executes its action—the system moves that rule to the [`executed`](gkrulesystem/executed.md) list.
+When you call the [`evaluate()`](./evaluate%28%29.md) method, the system considers each rule in the [`agenda`](./agenda.md) list in order. If a rule on the agenda is satisfied—that is, its predicate returns [`true`](../../Swift/true.md) and it executes its action—the system moves that rule to the [`executed`](./executed.md) list.
 
 ## See Also
 
-- [var rules: [GKRule]](gkrulesystem/rules.md)
+### Related Documentation
+- [var rules: [GKRule]](./rules.md)
   The list of rules to be executed when evaluating the system.
-- [func evaluate()](gkrulesystem/evaluate.md)
+### Evaluating a Rule System
+- [func evaluate()](./evaluate%28%29.md)
   Evaluates the rule system, executing the list of rules in its agenda.
-- [var agenda: [GKRule]](gkrulesystem/agenda.md)
+- [var agenda: [GKRule]](./agenda.md)
   The list of rules to be considered when evaluating the system.
-- [func reset()](gkrulesystem/reset.md)
+- [func reset()](./reset%28%29.md)
   Returns the rule system to its original agenda and clears all facts.
 
 

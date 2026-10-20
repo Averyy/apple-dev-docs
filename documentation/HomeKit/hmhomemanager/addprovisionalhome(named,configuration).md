@@ -1,7 +1,8 @@
 # addProvisionalHome(named:configuration:)
 
 **Framework**: HomeKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a temporary provisional home while someone performs HomeKit installation services for a client.
 
@@ -30,9 +31,10 @@ When a person performs installation services at a home and pairs accessories, Ho
 
 ## See Also
 
-- [HMHomeManager.ProvisionalConfiguration](hmhomemanager/provisionalconfiguration.md)
+### Providing installation services
+- [HMHomeManager.ProvisionalConfiguration](./provisionalconfiguration.md)
   The configuration you use to create a temporary, provisional home for performing installation services.
-- [HMHomeManager.PairingIdentity](hmhomemanager/pairingidentity.md)
+- [HMHomeManager.PairingIdentity](./pairingidentity.md)
   Identity information that an installation service uses to set up a provisional home for a client.
 
 

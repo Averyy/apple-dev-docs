@@ -1,7 +1,8 @@
 # elCorteIngles
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - iOS 26.4+
@@ -15,6 +16,10 @@
 
 ```swift
 static let elCorteIngles: PKPaymentNetwork
+```
+
+```c
+extern PKPaymentNetwork const PKPaymentNetworkElCorteIngles;
 ```
 
 

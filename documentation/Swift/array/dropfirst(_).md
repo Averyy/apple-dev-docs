@@ -1,7 +1,8 @@
 # dropFirst(_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a subsequence containing all but the given number of initial elements.
 
@@ -36,7 +37,7 @@ print(numbers.dropFirst(10))
 // Prints "[]"
 ```
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the number of elements to drop from the beginning of the collection.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the number of elements to drop from the beginning of the collection.
 
 ## Parameters
 
@@ -44,9 +45,10 @@ print(numbers.dropFirst(10))
 
 ## See Also
 
-- [func dropLast(Int) -> Self.SubSequence](array/droplast(_:).md)
+### Excluding Elements
+- [func dropLast(Int) -> Self.SubSequence](./droplast%28_%29.md)
   Returns a subsequence containing all but the specified number of final elements.
-- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](array/drop(while:).md)
+- [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](./drop%28while%29.md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
 
 

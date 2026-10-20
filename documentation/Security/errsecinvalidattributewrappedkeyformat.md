@@ -1,7 +1,8 @@
 # errSecInvalidAttributeWrappedKeyFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A wrapped key format attribute is not valid.
 
@@ -18,6 +19,10 @@ A wrapped key format attribute is not valid.
 
 ```swift
 var errSecInvalidAttributeWrappedKeyFormat: OSStatus { get }
+```
+
+```c
+errSecInvalidAttributeWrappedKeyFormat
 ```
 
 

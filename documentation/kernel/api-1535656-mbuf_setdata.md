@@ -1,18 +1,19 @@
 # mbuf_setdata
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_setdata(mbuf_t mbuf, void *data, size_t len);
 ```
 
-#### Return_value
+#### Return Value
 
 0 on success, errno error on failure.
 

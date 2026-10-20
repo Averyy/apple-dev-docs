@@ -1,7 +1,8 @@
 # events
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The events that activate the trigger.
 
@@ -19,19 +20,24 @@ The events that activate the trigger.
 var events: [HMEvent] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMEvent *> * events;
+```
+
 ## See Also
 
-- [func updateEvents([HMEvent], completionHandler: ((any Error)?) -> Void)](hmeventtrigger/updateevents(_:completionhandler:).md)
+### Setting trigger events
+- [func updateEvents([HMEvent], completionHandler: ((any Error)?) -> Void)](./updateevents%28_,completionhandler%29.md)
   Updates the set of trigger events.
-- [Location events](location-events.md)
+- [Location events](../location-events.md)
   Events that represent the user’s movement among regions.
-- [Time events](time-events.md)
+- [Time events](../time-events.md)
   Events based on time, significant occurrences, and time durations.
-- [Characteristic events](characteristic-events.md)
+- [Characteristic events](../characteristic-events.md)
   Events based on the capabilities or characteristics of accessories.
-- [Presence events](presence-events.md)
+- [Presence events](../presence-events.md)
   Events based on the user’s presence in a home.
-- [class HMEvent](hmevent.md)
+- [class HMEvent](../hmevent.md)
   The abstract base class for a HomeKit event.
 
 

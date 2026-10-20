@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 struct kauth_cache_sizes {
     ...
 };
@@ -17,8 +17,8 @@ struct kauth_cache_sizes {
 ## Topics
 
 ### Instance Properties
-- [kcs_group_size](kauth_cache_sizes/1547403-kcs_group_size.md)
-- [kcs_id_size](kauth_cache_sizes/1547337-kcs_id_size.md)
+- [kcs_group_size](./kauth_cache_sizes/api-1547403-kcs_group_size.md)
+- [kcs_id_size](./kauth_cache_sizes/api-1547337-kcs_id_size.md)
 
 
 ---

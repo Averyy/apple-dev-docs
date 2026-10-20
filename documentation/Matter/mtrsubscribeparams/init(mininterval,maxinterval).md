@@ -1,7 +1,8 @@
 # init(minInterval:maxInterval:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.1+
@@ -16,6 +17,10 @@
 
 ```swift
 init(minInterval: NSNumber, maxInterval: NSNumber)
+```
+
+```objc
+- (instancetype) initWithMinInterval:(NSNumber *) minInterval maxInterval:(NSNumber *) maxInterval;
 ```
 
 

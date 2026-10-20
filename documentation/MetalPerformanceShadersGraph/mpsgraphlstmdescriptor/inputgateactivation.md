@@ -1,7 +1,8 @@
 # inputGateActivation
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A parameter that defines the activation function used with the input gate of the LSTM operation.
 
@@ -17,6 +18,10 @@ A parameter that defines the activation function used with the input gate of the
 
 ```swift
 var inputGateActivation: MPSGraphRNNActivation { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MPSGraphRNNActivation inputGateActivation;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # enumeratedNumbers
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A set of the numbers allowed in this constraint.
 
@@ -20,11 +21,16 @@ A set of the numbers allowed in this constraint.
 var enumeratedNumbers: Set<NSNumber>? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSSet<NSNumber *> * enumeratedNumbers;
+```
+
 ## See Also
 
-- [var minNumber: NSNumber](mlnumericconstraint/minnumber.md)
+### Numeric Constraints
+- [var minNumber: NSNumber](./minnumber.md)
   The smallest numerical value allowed by this constraint.
-- [var maxNumber: NSNumber](mlnumericconstraint/maxnumber.md)
+- [var maxNumber: NSNumber](./maxnumber.md)
   The largest numerical value allowed by this constraint.
 
 

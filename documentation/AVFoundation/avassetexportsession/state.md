@@ -1,7 +1,8 @@
 # AVAssetExportSession.State
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate the state of an export operation.
 
@@ -22,25 +23,26 @@ enum State
 ## Topics
 
 ### States
-- [AVAssetExportSession.State.pending](avassetexportsession/state/pending.md)
+- [AVAssetExportSession.State.pending](./state/pending.md)
   An export operation is currently pending.
-- [AVAssetExportSession.State.exporting(progress:)](avassetexportsession/state/exporting(progress:).md)
+- [AVAssetExportSession.State.exporting(progress:)](./state/exporting%28progress%29.md)
   An export session is currently exporting media.
-- [AVAssetExportSession.State.waiting](avassetexportsession/state/waiting.md)
+- [AVAssetExportSession.State.waiting](./state/waiting.md)
   An export session is currently waiting.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
+### Monitoring export progress
 - [func states(updateInterval: TimeInterval) -> some Sendable & AsyncSequence<AVAssetExportSession.State, Never>
-](avassetexportsession/states(updateinterval:).md)
+](./states%28updateinterval%29.md)
   Monitors the progress state of an export operation.
-- [AVAssetExportSession.Status](avassetexportsession/status-swift.enum.md)
+- [AVAssetExportSession.Status](./status-swift.enum.md)
   Values that indicate the state of an export session.
 
 

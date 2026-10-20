@@ -1,7 +1,8 @@
 # movingAverageRadius
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The moving average radius of the object the request is tracking.
 
@@ -19,13 +20,18 @@ The moving average radius of the object the request is tracking.
 var movingAverageRadius: CGFloat { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) CGFloat movingAverageRadius;
+```
+
 ## See Also
 
-- [var detectedPoints: [VNPoint]](vntrajectoryobservation/detectedpoints.md)
+### Evaluating an Observation
+- [var detectedPoints: [VNPoint]](./detectedpoints.md)
   The centroid points of the detected contour along the trajectory.
-- [var projectedPoints: [VNPoint]](vntrajectoryobservation/projectedpoints.md)
+- [var projectedPoints: [VNPoint]](./projectedpoints.md)
   The centroids of the calculated trajectory from the detected points.
-- [var equationCoefficients: simd_float3](vntrajectoryobservation/equationcoefficients.md)
+- [var equationCoefficients: simd_float3](./equationcoefficients.md)
   The coefficients of the parabolic equation.
 
 

@@ -1,7 +1,8 @@
 # participants
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Users who accepted this shared record.
 
@@ -10,7 +11,7 @@ Users who accepted this shared record.
 
 ## Declaration
 
-```swift
+```
 attribute CloudKit.ShareParticipant[] participants;
 ```
 

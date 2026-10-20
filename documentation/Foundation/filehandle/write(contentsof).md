@@ -1,7 +1,8 @@
 # write(contentsOf:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the specified data synchronously to the file handle.
 
@@ -30,11 +31,12 @@ If the handle represents a file, writing takes place at the file pointer’s cur
 
 ## See Also
 
-- [var availableData: Data](filehandle/availabledata.md)
+### Related Documentation
+- [var availableData: Data](./availabledata.md)
   The data currently available in the receiver.
-- [func read(upToCount: Int) throws -> Data?](filehandle/read(uptocount:).md)
+- [func read(upToCount: Int) throws -> Data?](./read%28uptocount%29.md)
   Reads data synchronously up to the specified number of bytes.
-- [func readToEnd() throws -> Data?](filehandle/readtoend.md)
+- [func readToEnd() throws -> Data?](./readtoend%28%29.md)
   Reads the available data synchronously up to the end of file or maximum number of bytes.
 
 

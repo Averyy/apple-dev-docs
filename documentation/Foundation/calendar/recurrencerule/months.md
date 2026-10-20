@@ -1,7 +1,8 @@
 # months
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 On which months the event should occur.
 

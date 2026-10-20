@@ -1,7 +1,8 @@
 # CSSRuleList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface CSSRuleList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](cssrulelist/1630667-length.md)
+- [length](./cssrulelist/api-1630667-length.md)
 ### Instance Methods
-- [item](cssrulelist/1632087-item.md)
+- [item](./cssrulelist/api-1632087-item.md)
 
 
 ---

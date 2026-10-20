@@ -1,7 +1,8 @@
 # both
 
 **Framework**: PaperKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The combined horizontal and vertical axes.
 
@@ -20,9 +21,10 @@ static let both: PaperMarkupViewController.ScrollConfiguration.Axis
 
 ## See Also
 
-- [static let horizontal: PaperMarkupViewController.ScrollConfiguration.Axis](papermarkupviewcontroller/scrollconfiguration-swift.class/axis/horizontal.md)
+### Choosing an axis
+- [static let horizontal: PaperMarkupViewController.ScrollConfiguration.Axis](./horizontal.md)
   The horizontal axis.
-- [static let vertical: PaperMarkupViewController.ScrollConfiguration.Axis](papermarkupviewcontroller/scrollconfiguration-swift.class/axis/vertical.md)
+- [static let vertical: PaperMarkupViewController.ScrollConfiguration.Axis](./vertical.md)
   The vertical axis.
 
 

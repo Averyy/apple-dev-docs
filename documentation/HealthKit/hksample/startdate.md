@@ -1,7 +1,8 @@
 # startDate
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The sample’s start date.
 
@@ -19,10 +20,14 @@ The sample’s start date.
 var startDate: Date { get }
 ```
 
+```objc
+@property (strong, readonly) NSDate * startDate;
+```
+
 ## Mentions
 
-- [Adding samples to a workout](adding-samples-to-a-workout.md)
-- [Running workout sessions](running-workout-sessions.md)
+- [Adding samples to a workout](../adding-samples-to-a-workout.md)
+- [Running workout sessions](../running-workout-sessions.md)
 
 #### Discussion
 
@@ -34,11 +39,12 @@ Other samples—for example, step count—represent data over a time interval. H
 
 ## See Also
 
-- [var endDate: Date](hksample/enddate.md)
+### Accessing the Sample’s Data
+- [var endDate: Date](./enddate.md)
   The sample’s end date.
-- [var hasUndeterminedDuration: Bool](hksample/hasundeterminedduration.md)
+- [var hasUndeterminedDuration: Bool](./hasundeterminedduration.md)
   Indicates whether the sample has an unknown duration.
-- [var sampleType: HKSampleType](hksample/sampletype.md)
+- [var sampleType: HKSampleType](./sampletype.md)
   The sample type.
 
 

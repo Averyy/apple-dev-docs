@@ -1,7 +1,8 @@
 # UITableViewDropProposal.Intent
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants indicating how you intend to handle a drop.
 
@@ -17,35 +18,40 @@ Constants indicating how you intend to handle a drop.
 enum Intent
 ```
 
+```c
+enum UITableViewDropIntent : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UITableViewDropProposal.Intent.unspecified](uitableviewdropproposal/intent-swift.enum/unspecified.md)
+- [UITableViewDropProposal.Intent.unspecified](./intent-swift.enum/unspecified.md)
   No drop proposal was specified.
-- [UITableViewDropProposal.Intent.insertAtDestinationIndexPath](uitableviewdropproposal/intent-swift.enum/insertatdestinationindexpath.md)
+- [UITableViewDropProposal.Intent.insertAtDestinationIndexPath](./intent-swift.enum/insertatdestinationindexpath.md)
   Insert the dropped content at the specified index path.
-- [UITableViewDropProposal.Intent.insertIntoDestinationIndexPath](uitableviewdropproposal/intent-swift.enum/insertintodestinationindexpath.md)
+- [UITableViewDropProposal.Intent.insertIntoDestinationIndexPath](./intent-swift.enum/insertintodestinationindexpath.md)
   Incorporate the dropped content into the row at the specified index path.
-- [UITableViewDropProposal.Intent.automatic](uitableviewdropproposal/intent-swift.enum/automatic.md)
+- [UITableViewDropProposal.Intent.automatic](./intent-swift.enum/automatic.md)
   Incorporate the content in an appropriate way based on the drop location.
 ### Initializers
-- [init?(rawValue: Int)](uitableviewdropproposal/intent-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./intent-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var intent: UITableViewDropProposal.Intent](uitableviewdropproposal/intent-swift.property.md)
+### Getting the proposed drop location
+- [var intent: UITableViewDropProposal.Intent](./intent-swift.property.md)
   The option to use when incorporating dropped items into your content.
-- [enum UIDropOperation](uidropoperation.md)
+- [enum UIDropOperation](../uidropoperation.md)
   Operation types that determine how a drag and drop activity resolves when the user drops a drag item.
 
 

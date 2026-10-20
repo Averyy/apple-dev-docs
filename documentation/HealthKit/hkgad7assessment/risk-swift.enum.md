@@ -1,7 +1,8 @@
 # HKGAD7Assessment.Risk
 
 **Framework**: HealthKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.0+
@@ -17,47 +18,52 @@
 enum Risk
 ```
 
+```c
+enum HKGAD7AssessmentRisk : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [HKGAD7Assessment.Risk.mild](hkgad7assessment/risk-swift.enum/mild.md)
-- [HKGAD7Assessment.Risk.moderate](hkgad7assessment/risk-swift.enum/moderate.md)
-- [HKGAD7Assessment.Risk.noneToMinimal](hkgad7assessment/risk-swift.enum/nonetominimal.md)
-- [HKGAD7Assessment.Risk.severe](hkgad7assessment/risk-swift.enum/severe.md)
+- [HKGAD7Assessment.Risk.mild](./risk-swift.enum/mild.md)
+- [HKGAD7Assessment.Risk.moderate](./risk-swift.enum/moderate.md)
+- [HKGAD7Assessment.Risk.noneToMinimal](./risk-swift.enum/nonetominimal.md)
+- [HKGAD7Assessment.Risk.severe](./risk-swift.enum/severe.md)
 ### Initializers
-- [init?(rawValue: Int)](hkgad7assessment/risk-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./risk-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum HKAudiogramConductionType](hkaudiogramconductiontype.md)
-- [enum HKAudiogramSensitivityTestSide](hkaudiogramsensitivitytestside.md)
-- [enum HKCategoryValueVaginalBleeding](hkcategoryvaluevaginalbleeding.md)
+### Enumerations
+- [enum HKAudiogramConductionType](../hkaudiogramconductiontype.md)
+- [enum HKAudiogramSensitivityTestSide](../hkaudiogramsensitivitytestside.md)
+- [enum HKCategoryValueVaginalBleeding](../hkcategoryvaluevaginalbleeding.md)
   A value that indicates the intensity of vaginal bleeding.
-- [HKGAD7Assessment.Answer](hkgad7assessment/answer.md)
-- [HKPHQ9Assessment.Answer](hkphq9assessment/answer.md)
-- [HKPHQ9Assessment.Risk](hkphq9assessment/risk-swift.enum.md)
-- [HKStateOfMind.Association](hkstateofmind/association.md)
-- [HKStateOfMind.Kind](hkstateofmind/kind-swift.enum.md)
-- [HKStateOfMind.Label](hkstateofmind/label.md)
-- [HKStateOfMind.ValenceClassification](hkstateofmind/valenceclassification-swift.enum.md)
-- [enum HKWorkoutEffortRelationshipQueryOptions](hkworkouteffortrelationshipqueryoptions.md)
-- [enum HKBiologicalSex](hkbiologicalsex.md)
+- [HKGAD7Assessment.Answer](./answer.md)
+- [HKPHQ9Assessment.Answer](../hkphq9assessment/answer.md)
+- [HKPHQ9Assessment.Risk](../hkphq9assessment/risk-swift.enum.md)
+- [HKStateOfMind.Association](../hkstateofmind/association.md)
+- [HKStateOfMind.Kind](../hkstateofmind/kind-swift.enum.md)
+- [HKStateOfMind.Label](../hkstateofmind/label.md)
+- [HKStateOfMind.ValenceClassification](../hkstateofmind/valenceclassification-swift.enum.md)
+- [enum HKWorkoutEffortRelationshipQueryOptions](../hkworkouteffortrelationshipqueryoptions.md)
+- [enum HKBiologicalSex](../hkbiologicalsex.md)
   Constants indicating the user’s sex.
-- [enum HKBloodType](hkbloodtype.md)
+- [enum HKBloodType](../hkbloodtype.md)
   Constants indicating the user’s blood type.
-- [enum HKFitzpatrickSkinType](hkfitzpatrickskintype.md)
+- [enum HKFitzpatrickSkinType](../hkfitzpatrickskintype.md)
   Categories representing the user’s skin type based on the Fitzpatrick scale.
-- [enum HKWheelchairUse](hkwheelchairuse.md)
+- [enum HKWheelchairUse](../hkwheelchairuse.md)
   Constants indicating the user’s wheelchair use.
 
 

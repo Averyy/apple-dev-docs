@@ -1,7 +1,8 @@
 # kAXSelectedChildrenMovedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Notification that the selected children have moved.
 
@@ -12,6 +13,10 @@ Notification that the selected children have moved.
 
 ```swift
 var kAXSelectedChildrenMovedNotification: String { get }
+```
+
+```c
+#define kAXSelectedChildrenMovedNotification
 ```
 
 

@@ -1,7 +1,8 @@
 # webView
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The web view where the download initiated.
 
@@ -18,9 +19,14 @@ The web view where the download initiated.
 weak var webView: WKWebView? { get }
 ```
 
+```objc
+@property (nonatomic, weak, readonly) WKWebView * webView;
+```
+
 ## See Also
 
-- [var originalRequest: URLRequest?](wkdownload/originalrequest.md)
+### Inspecting the download
+- [var originalRequest: URLRequest?](./originalrequest.md)
   An object that represents the request that initiated the download.
 
 

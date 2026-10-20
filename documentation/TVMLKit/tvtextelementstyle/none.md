@@ -1,12 +1,15 @@
 # TVTextElementStyle.none
 
 **Framework**: TVMLKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 No style is applied to the element.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -14,15 +17,20 @@ No style is applied to the element.
 case none
 ```
 
+```c
+TVTextElementStyleNone
+```
+
 ## See Also
 
-- [TVTextElementStyle.title](tvtextelementstyle/title.md)
+### Constants
+- [TVTextElementStyle.title](./title.md)
   The title style defaults are applied to the element.
-- [TVTextElementStyle.subtitle](tvtextelementstyle/subtitle.md)
+- [TVTextElementStyle.subtitle](./subtitle.md)
   The subtitle style defaults are applied to the element.
-- [TVTextElementStyle.description](tvtextelementstyle/description.md)
+- [TVTextElementStyle.description](./description.md)
   The description style defaults are applied to the element.
-- [TVTextElementStyle.decoration](tvtextelementstyle/decoration.md)
+- [TVTextElementStyle.decoration](./decoration.md)
   The decoration style defaults are applied to the element.
 
 

@@ -1,7 +1,8 @@
 # minimumFrameInterval
 
 **Framework**: ScreenCaptureKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The desired minimum time between frame updates, in seconds.
 
@@ -13,6 +14,10 @@ The desired minimum time between frame updates, in seconds.
 
 ```swift
 var minimumFrameInterval: CMTime { get set }
+```
+
+```objc
+@property (nonatomic, assign) CMTime minimumFrameInterval;
 ```
 
 #### Discussion
@@ -28,11 +33,12 @@ config.minimumFrameInterval = CMTime(value: 1, timescale: CMTimeScale(60))
 
 ## See Also
 
-- [var queueDepth: Int](scstreamconfiguration/queuedepth.md)
+### Configuring captured frames
+- [var queueDepth: Int](./queuedepth.md)
   The maximum number of frames for the queue to store.
-- [var captureResolution: SCCaptureResolutionType](scstreamconfiguration/captureresolution.md)
+- [var captureResolution: SCCaptureResolutionType](./captureresolution.md)
   The resolution at which to capture source content.
-- [enum SCCaptureResolutionType](sccaptureresolutiontype.md)
+- [enum SCCaptureResolutionType](../sccaptureresolutiontype.md)
   Available resolutions for content capture.
 
 

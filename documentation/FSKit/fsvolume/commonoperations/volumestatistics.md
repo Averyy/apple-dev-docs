@@ -2,6 +2,7 @@
 
 **Framework**: FSKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A property that provides up-to-date statistics of the volume.
@@ -13,6 +14,10 @@ A property that provides up-to-date statistics of the volume.
 
 ```swift
 var volumeStatistics: FSStatFSResult { get }
+```
+
+```objc
+@property (nonatomic, readonly) FSStatFSResult * volumeStatistics;
 ```
 
 

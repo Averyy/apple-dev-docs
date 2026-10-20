@@ -1,7 +1,8 @@
 # LinearPCMFormatFlagsAreAllClear
 
 **Framework**: AudioDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 A value indicating that all PCM format flags are clear.
 
@@ -10,17 +11,18 @@ A value indicating that all PCM format flags are clear.
 
 ## Declaration
 
-```swift
+```c
 LinearPCMFormatFlagsAreAllClear
 ```
 
 #### Discussion
 
-This flag is a synonym of [`FormatFlagsAreAllClear`](audiodriverkit/iouseraudioformatflags/formatflagsareallclear.md).
+This flag is a synonym of [`FormatFlagsAreAllClear`](./formatflagsareallclear.md).
 
 ## See Also
 
-- [FormatFlagsAreAllClear](audiodriverkit/iouseraudioformatflags/formatflagsareallclear.md)
+### Special Purpose Flags
+- [FormatFlagsAreAllClear](./formatflagsareallclear.md)
   A value indicating that all format flags are clear.
 
 

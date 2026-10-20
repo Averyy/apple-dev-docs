@@ -1,27 +1,30 @@
 # Browses
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 An array of dictionaries, where each dictionary contains a unique identifier, a usage description string, and a list of supported OSs.
 
 **Availability**:
 - tvOS 16.0+
 
+## Details
 
-
-**Type**: dictionary 
+- **Name**: `Browses`
+- **Type**: array of dictionary 
 
 ## Topics
 
 ### Property List Keys
-- [NSApplicationServiceIdentifier](information-property-list/nsapplicationservices/browses/nsapplicationserviceidentifier.md)
-- [NSApplicationServicePlatformSupport](information-property-list/nsapplicationservices/browses/nsapplicationserviceplatformsupport.md)
-- [NSApplicationServiceUsageDescription](information-property-list/nsapplicationservices/browses/nsapplicationserviceusagedescription.md)
+- [NSApplicationServiceIdentifier](./browses/nsapplicationserviceidentifier.md)
+- [NSApplicationServicePlatformSupport](./browses/nsapplicationserviceplatformsupport.md)
+- [NSApplicationServiceUsageDescription](./browses/nsapplicationserviceusagedescription.md)
 
 ## See Also
 
-- [Advertises](information-property-list/nsapplicationservices/advertises.md)
+### Property List Keys
+- [Advertises](./advertises.md)
   An array of dictionaries, where each dictionary contains a unique identifier.
 
 

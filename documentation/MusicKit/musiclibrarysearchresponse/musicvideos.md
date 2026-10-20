@@ -1,7 +1,8 @@
 # musicVideos
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A collection of music videos.
 

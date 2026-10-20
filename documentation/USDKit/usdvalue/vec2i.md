@@ -1,7 +1,8 @@
 # USDValue.Vec2i
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 2-component 32-bit integer vector.
 
@@ -23,36 +24,36 @@ struct Vec2i
 ## Topics
 
 ### Initializers
-- [init()](usdvalue/vec2i/init.md)
+- [init()](./vec2i/init%28%29.md)
   Creates a zero vector.
-- [init(SIMD2<Int32>)](usdvalue/vec2i/init(_:).md)
+- [init(SIMD2<Int32>)](./vec2i/init%28_%29.md)
   Creates a vector from a `SIMD2<Int32>`.
-- [init(Int32, Int32)](usdvalue/vec2i/init(_:_:)-7uw95.md)
-- [init(Int, Int)](usdvalue/vec2i/init(_:_:)-8faxo.md)
+- [init(Int32, Int32)](./vec2i/init%28_,_%29-7uw95.md)
+- [init(Int, Int)](./vec2i/init%28_,_%29-8faxo.md)
   Creates a vector with the given components.
 ### Instance Properties
-- [var simd: SIMD2<Int32>](usdvalue/vec2i/simd.md)
+- [var simd: SIMD2<Int32>](./vec2i/simd.md)
   The vector as a `SIMD2<Int32>`.
-- [var x: Int32](usdvalue/vec2i/x.md)
-- [var y: Int32](usdvalue/vec2i/y.md)
+- [var x: Int32](./vec2i/x.md)
+- [var y: Int32](./vec2i/y.md)
 ### Subscripts
-- [subscript(Int) -> Int32](usdvalue/vec2i/subscript(_:).md)
+- [subscript(Int) -> Int32](./vec2i/subscript%28_%29.md)
   Accesses the component at the specified index.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](../usdstage/object/metadatavalue.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 
 ---

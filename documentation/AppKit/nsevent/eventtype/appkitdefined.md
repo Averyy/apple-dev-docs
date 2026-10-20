@@ -1,12 +1,13 @@
 # NSEvent.EventType.appKitDefined
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An AppKit-related event occurred.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,19 +15,24 @@ An AppKit-related event occurred.
 case appKitDefined
 ```
 
+```c
+NSEventTypeAppKitDefined
+```
+
 ## See Also
 
-- [NSEvent.EventType.applicationDefined](nsevent/eventtype/applicationdefined.md)
+### Getting System Event Types
+- [NSEvent.EventType.applicationDefined](./applicationdefined.md)
   An app-defined event occurred.
-- [NSEvent.EventType.cursorUpdate](nsevent/eventtype/cursorupdate.md)
+- [NSEvent.EventType.cursorUpdate](./cursorupdate.md)
   An event that updates the cursor.
-- [NSEvent.EventType.flagsChanged](nsevent/eventtype/flagschanged.md)
+- [NSEvent.EventType.flagsChanged](./flagschanged.md)
   The event flags changed.
-- [NSEvent.EventType.periodic](nsevent/eventtype/periodic.md)
+- [NSEvent.EventType.periodic](./periodic.md)
   An event that provides execution time to periodic tasks.
-- [NSEvent.EventType.quickLook](nsevent/eventtype/quicklook.md)
+- [NSEvent.EventType.quickLook](./quicklook.md)
   An event that initiates a Quick Look request.
-- [NSEvent.EventType.systemDefined](nsevent/eventtype/systemdefined.md)
+- [NSEvent.EventType.systemDefined](./systemdefined.md)
   A system-related event occurred.
 
 

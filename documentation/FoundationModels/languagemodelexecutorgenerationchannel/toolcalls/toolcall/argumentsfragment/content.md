@@ -1,7 +1,8 @@
 # content
 
 **Framework**: Foundation Models  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The argument text to append to the tool call.
 
@@ -21,7 +22,8 @@ var content: String
 
 ## See Also
 
-- [var tokenCount: Int](languagemodelexecutorgenerationchannel/toolcalls/toolcall/argumentsfragment/tokencount.md)
+### Handling the arguments fragment
+- [var tokenCount: Int](./tokencount.md)
   The number of tokens the argument text carries.
 
 

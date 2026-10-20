@@ -1,7 +1,8 @@
 # instance
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The instance within the MeshResource of the intersection. This can be used to index into MeshResource.contents.instances
 

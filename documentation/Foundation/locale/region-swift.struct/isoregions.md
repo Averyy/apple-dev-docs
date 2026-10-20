@@ -1,7 +1,8 @@
 # isoRegions
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An array of regions defined by ISO.
 

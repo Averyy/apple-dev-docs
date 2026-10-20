@@ -1,7 +1,8 @@
 # AssistantSchemas.SystemIntent
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for types you use for system functionality.
 
@@ -23,15 +24,15 @@ protocol SystemIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var search: some AssistantSchemas.Intent](assistantschemas/systemintent/search.md)
+- [var search: some AssistantSchemas.Intent](./systemintent/search.md)
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
+- [AssistantSchema.IntentSchema](../assistantschema/intentschema.md)
+- [AssistantSchemas.IntentSchema](./intentschema.md)
 
 
 ---

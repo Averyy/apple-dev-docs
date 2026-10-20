@@ -1,14 +1,15 @@
 # AbortPMTransition
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```c
 static void AbortPMTransition(thread_call_param_t whichDevice);
 ```
 

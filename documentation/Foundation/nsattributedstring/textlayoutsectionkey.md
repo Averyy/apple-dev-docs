@@ -1,7 +1,8 @@
 # NSAttributedString.TextLayoutSectionKey
 
 **Framework**: Foundation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants for the text layout sections document attribute key.
 
@@ -22,39 +23,40 @@ struct TextLayoutSectionKey
 
 #### Overview
 
-Use these constants as values for the [`textLayoutSections`](nsattributedstring/documentattributekey/textlayoutsections.md) key in the document attributes dictionary.
+Use these constants as values for the [`textLayoutSections`](./documentattributekey/textlayoutsections.md) key in the document attributes dictionary.
 
 ## Topics
 
 ### Getting keys for text layouts
-- [static let orientation: NSAttributedString.TextLayoutSectionKey](nsattributedstring/textlayoutsectionkey/orientation.md)
+- [static let orientation: NSAttributedString.TextLayoutSectionKey](./textlayoutsectionkey/orientation.md)
   The orientation of the text.
-- [static let range: NSAttributedString.TextLayoutSectionKey](nsattributedstring/textlayoutsectionkey/range.md)
+- [static let range: NSAttributedString.TextLayoutSectionKey](./textlayoutsectionkey/range.md)
   The character range.
 ### Initializers
-- [init(rawValue: String)](nsattributedstring/textlayoutsectionkey/init(rawvalue:).md)
+- [init(rawValue: String)](./textlayoutsectionkey/init%28rawvalue%29.md)
   Creates a text layout section key with the specified raw value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [NSAttributedString.DocumentAttributeKey](nsattributedstring/documentattributekey.md)
+### Getting document-wide attributes
+- [NSAttributedString.DocumentAttributeKey](./documentattributekey.md)
   The attributes you apply to an entire document.
-- [NSAttributedString.DocumentReadingOptionKey](nsattributedstring/documentreadingoptionkey.md)
+- [NSAttributedString.DocumentReadingOptionKey](./documentreadingoptionkey.md)
   Options for constructing an attributed string from data you read from disk.
-- [HTML attributes](html-attributes.md)
+- [HTML attributes](../html-attributes.md)
   Documentwide attributes that provide control over the form of generated HTML.
-- [NSAttributedString.DocumentType](nsattributedstring/documenttype.md)
+- [NSAttributedString.DocumentType](./documenttype.md)
   Constants for the document type document attribute key.
-- [enum NSTextScalingType](../uikit/nstextscalingtype.md)
+- [enum NSTextScalingType](../../UIKit/nstextscalingtype.md)
   Constants that specify the text scaling.
 
 

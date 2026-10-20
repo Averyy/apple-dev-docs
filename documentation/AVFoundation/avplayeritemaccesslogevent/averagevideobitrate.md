@@ -1,7 +1,8 @@
 # averageVideoBitrate
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The video track’s average bit rate, in bits per second.
 
@@ -19,6 +20,10 @@ The video track’s average bit rate, in bits per second.
 var averageVideoBitrate: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double averageVideoBitrate;
+```
+
 #### Discussion
 
 The property corresponds to “c-avg-video-bitrate”.
@@ -31,21 +36,22 @@ This property is not compatible with key-value observing.
 
 ## See Also
 
-- [var observedBitrateStandardDeviation: Double](avplayeritemaccesslogevent/observedbitratestandarddeviation.md)
+### Getting bit rate log events
+- [var observedBitrateStandardDeviation: Double](./observedbitratestandarddeviation.md)
   The standard deviation of the observed segment download bit rates.
-- [var observedMaxBitrate: Double](avplayeritemaccesslogevent/observedmaxbitrate.md)
+- [var observedMaxBitrate: Double](./observedmaxbitrate.md)
   The maximum observed segment download bit rate.
-- [var observedMinBitrate: Double](avplayeritemaccesslogevent/observedminbitrate.md)
+- [var observedMinBitrate: Double](./observedminbitrate.md)
   The minimum observed segment download bit rate.
-- [var switchBitrate: Double](avplayeritemaccesslogevent/switchbitrate.md)
+- [var switchBitrate: Double](./switchbitrate.md)
   The bandwidth value that causes a switch, up or down, in the item’s quality being played.
-- [var indicatedBitrate: Double](avplayeritemaccesslogevent/indicatedbitrate.md)
+- [var indicatedBitrate: Double](./indicatedbitrate.md)
   The throughput, in bits per second, required to play the stream, as advertised by the server.
-- [var observedBitrate: Double](avplayeritemaccesslogevent/observedbitrate.md)
+- [var observedBitrate: Double](./observedbitrate.md)
   The empirical throughput, in bits per second, across all media downloaded.
-- [var averageAudioBitrate: Double](avplayeritemaccesslogevent/averageaudiobitrate.md)
+- [var averageAudioBitrate: Double](./averageaudiobitrate.md)
   The audio track’s average bit rate, in bits per second.
-- [var indicatedAverageBitrate: Double](avplayeritemaccesslogevent/indicatedaveragebitrate.md)
+- [var indicatedAverageBitrate: Double](./indicatedaveragebitrate.md)
   The average throughput, in bits per second, required to play the stream, as advertised by the server.
 
 

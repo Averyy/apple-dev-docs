@@ -1,7 +1,8 @@
 # PasteboardStandardLocation
 
 **Framework**: Application Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.5+
@@ -12,16 +13,22 @@
 enum PasteboardStandardLocation
 ```
 
+```c
+typedef enum PasteboardStandardLocation : OSType {
+    ...
+} PasteboardStandardLocation;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [PasteboardStandardLocation.trash](pasteboardstandardlocation/trash.md)
-- [PasteboardStandardLocation.unknown](pasteboardstandardlocation/unknown.md)
+- [PasteboardStandardLocation.trash](./pasteboardstandardlocation/trash.md)
+- [PasteboardStandardLocation.unknown](./pasteboardstandardlocation/unknown.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
+- [Sendable](../Swift/sendable.md)
 
 
 ---

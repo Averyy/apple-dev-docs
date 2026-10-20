@@ -1,7 +1,8 @@
 # state
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that exposes the observable properties of the music player.
 

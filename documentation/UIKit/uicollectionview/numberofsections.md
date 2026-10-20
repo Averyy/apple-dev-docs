@@ -1,7 +1,8 @@
 # numberOfSections
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of sections displayed by the collection view.
 
@@ -9,7 +10,7 @@ The number of sections displayed by the collection view.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,11 +19,16 @@ The number of sections displayed by the collection view.
 var numberOfSections: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger numberOfSections;
+```
+
 ## See Also
 
-- [func numberOfItems(inSection: Int) -> Int](uicollectionview/numberofitems(insection:).md)
+### Getting the state of the collection view
+- [func numberOfItems(inSection: Int) -> Int](./numberofitems%28insection%29.md)
   Fetches the count of items in the specified section.
-- [var visibleCells: [UICollectionViewCell]](uicollectionview/visiblecells.md)
+- [var visibleCells: [UICollectionViewCell]](./visiblecells.md)
   An array of visible cells currently displayed by the collection view.
 
 

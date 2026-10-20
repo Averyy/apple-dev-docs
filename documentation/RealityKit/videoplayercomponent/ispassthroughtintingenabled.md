@@ -1,7 +1,8 @@
 # isPassthroughTintingEnabled
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the passthrough camera feed is tinted, emphasizing the video content.
 
@@ -16,7 +17,8 @@ var isPassthroughTintingEnabled: Bool { get set }
 
 ## See Also
 
-- [var desiredViewingMode: VideoPlaybackController.ViewingMode](videoplayercomponent/desiredviewingmode.md)
+### Configuring the video player
+- [var desiredViewingMode: VideoPlaybackController.ViewingMode](./desiredviewingmode.md)
   The viewer’s selected content-viewing mode.
 
 

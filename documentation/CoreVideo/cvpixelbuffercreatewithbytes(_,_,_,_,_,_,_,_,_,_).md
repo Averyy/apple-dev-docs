@@ -1,7 +1,8 @@
 # CVPixelBufferCreateWithBytes(_:_:_:_:_:_:_:_:_:_:)
 
 **Framework**: Core Video  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a pixel buffer for a given size and pixel format containing data specified by a memory location.
 
@@ -20,9 +21,13 @@ Creates a pixel buffer for a given size and pixel format containing data specifi
 func CVPixelBufferCreateWithBytes(_ allocator: CFAllocator?, _ width: Int, _ height: Int, _ pixelFormatType: OSType, _ baseAddress: UnsafeMutableRawPointer, _ bytesPerRow: Int, _ releaseCallback: CVPixelBufferReleaseBytesCallback?, _ releaseRefCon: UnsafeMutableRawPointer?, _ pixelBufferAttributes: CFDictionary?, _ pixelBufferOut: UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn
 ```
 
+```c
+extern CVReturn CVPixelBufferCreateWithBytes(CFAllocatorRef allocator, size_t width, size_t height, OSType pixelFormatType, void *baseAddress, size_t bytesPerRow, CVPixelBufferReleaseBytesCallback releaseCallback, void *releaseRefCon, CFDictionaryRef pixelBufferAttributes, CVPixelBufferRef*pixelBufferOut);
+```
+
 #### Return Value
 
-A Core Video result code. See [`Result Codes`](result-codes.md) for possible values.
+A Core Video result code. See [Result Codes](./result-codes.md) for possible values.
 
 #### Discussion
 
@@ -30,24 +35,25 @@ Some of the parameters specified in this call override equivalent pixel buffer a
 
 ## Parameters
 
-- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](https://developer.apple.com/documentation/corefoundation/kcfallocatordefault) for the `allocator` parameter to use the default allocator. See [`Predefined Allocators`](https://developer.apple.com/documentation/corefoundation/predefined-allocators) for additional values you can use.
+- `allocator`: The allocator to use for creating the buffer pool. Pass [`kCFAllocatorDefault`](../CoreFoundation/kcfallocatordefault.md) for the `allocator` parameter to use the default allocator. See [Predefined Allocators](../CoreFoundation/predefined-allocators.md) for additional values you can use.
 - `width`: The width of the pixel buffer, in pixels.
 - `height`: The height of the pixel buffer, in pixels.
 - `pixelFormatType`: The pixel format identified by its respective four character code (type `OSType`).
 - `baseAddress`: A pointer to the base address of the memory storing the pixels.
 - `bytesPerRow`: The row bytes of the pixel storage memory.
-- `releaseCallback`: The callback function to be called when the pixel buffer is destroyed. This callback allows the owner of the pixels to free the memory. See [`CVPixelBufferReleaseBytesCallback`](cvpixelbufferreleasebytescallback.md) for more information.
+- `releaseCallback`: The callback function to be called when the pixel buffer is destroyed. This callback allows the owner of the pixels to free the memory. See [`CVPixelBufferReleaseBytesCallback`](./cvpixelbufferreleasebytescallback.md) for more information.
 - `releaseRefCon`: The user data identifying the pixel buffer. This value is passed to your pixel buffer release callback.
-- `pixelBufferAttributes`: A Core Foundation dictionary with additional attributes for a pixel buffer. This parameter is optional. See [`Pixel Buffer Attribute Keys`](pixel-buffer-attribute-keys.md) for more details.
-- `pixelBufferOut`: On output, the newly created pixel buffer. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+- `pixelBufferAttributes`: A Core Foundation dictionary with additional attributes for a pixel buffer. This parameter is optional. See [Pixel Buffer Attribute Keys](./pixel-buffer-attribute-keys.md) for more details.
+- `pixelBufferOut`: On output, the newly created pixel buffer. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## See Also
 
-- [func CVPixelBufferCreate(CFAllocator?, Int, Int, OSType, CFDictionary?, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](cvpixelbuffercreate(_:_:_:_:_:_:).md)
+### Creating pixel buffers
+- [func CVPixelBufferCreate(CFAllocator?, Int, Int, OSType, CFDictionary?, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](./cvpixelbuffercreate%28_,_,_,_,_,_%29.md)
   Creates a single pixel buffer for a given size and pixel format.
-- [func CVPixelBufferCreateWithPlanarBytes(CFAllocator?, Int, Int, OSType, UnsafeMutableRawPointer?, Int, Int, UnsafeMutablePointer<UnsafeMutableRawPointer?>, UnsafeMutablePointer<Int>, UnsafeMutablePointer<Int>, UnsafeMutablePointer<Int>, CVPixelBufferReleasePlanarBytesCallback?, UnsafeMutableRawPointer?, CFDictionary?, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](cvpixelbuffercreatewithplanarbytes(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [func CVPixelBufferCreateWithPlanarBytes(CFAllocator?, Int, Int, OSType, UnsafeMutableRawPointer?, Int, Int, UnsafeMutablePointer<UnsafeMutableRawPointer?>, UnsafeMutablePointer<Int>, UnsafeMutablePointer<Int>, UnsafeMutablePointer<Int>, CVPixelBufferReleasePlanarBytesCallback?, UnsafeMutableRawPointer?, CFDictionary?, UnsafeMutablePointer<CVPixelBuffer?>) -> CVReturn](./cvpixelbuffercreatewithplanarbytes%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Creates a single pixel buffer in planar format for a given size and pixel format containing data specified by a memory location.
-- [func CVPixelBufferCreateWithIOSurface(CFAllocator?, IOSurfaceRef, CFDictionary?, UnsafeMutablePointer<Unmanaged<CVPixelBuffer>?>) -> CVReturn](cvpixelbuffercreatewithiosurface(_:_:_:_:).md)
+- [func CVPixelBufferCreateWithIOSurface(CFAllocator?, IOSurfaceRef, CFDictionary?, UnsafeMutablePointer<Unmanaged<CVPixelBuffer>?>) -> CVReturn](./cvpixelbuffercreatewithiosurface%28_,_,_,_%29.md)
   Creates a single pixel buffer for the IO surface that you specify.
 
 

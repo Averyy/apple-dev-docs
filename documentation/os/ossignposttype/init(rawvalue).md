@@ -1,18 +1,19 @@
 # init(rawValue:)
 
 **Framework**: os  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a signpost from a raw integer value.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,7 +23,8 @@ init(rawValue: UInt8)
 
 ## See Also
 
-- [init(UInt8)](ossignposttype/init(_:).md)
+### Creating Signpost Types
+- [init(UInt8)](./init%28_%29.md)
   Creates a signpost from a raw integer value.
 
 

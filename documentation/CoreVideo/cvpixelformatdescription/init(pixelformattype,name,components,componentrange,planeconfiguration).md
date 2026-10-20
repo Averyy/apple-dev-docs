@@ -1,7 +1,8 @@
 # init(pixelFormatType:name:components:componentRange:planeConfiguration:)
 
 **Framework**: Core Video  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 26.0+

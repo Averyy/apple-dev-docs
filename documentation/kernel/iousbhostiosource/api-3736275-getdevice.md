@@ -1,14 +1,15 @@
 # getDevice
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.3+ - Deprecated in 11.3
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOUSBHostDevice * getDevice(void);
 ```
 

@@ -1,7 +1,8 @@
 # DataStoreSaveChangesRequest
 
 **Framework**: SwiftData  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 18.0+
@@ -22,21 +23,22 @@ struct DataStoreSaveChangesRequest<SnapshotType> where SnapshotType : DataStoreS
 ## Topics
 
 ### Instance Properties
-- [let deleted: [SnapshotType]](datastoresavechangesrequest/deleted.md)
-- [let editingState: EditingState](datastoresavechangesrequest/editingstate.md)
-- [let inserted: [SnapshotType]](datastoresavechangesrequest/inserted.md)
-- [let updated: [SnapshotType]](datastoresavechangesrequest/updated.md)
+- [let deleted: [SnapshotType]](./datastoresavechangesrequest/deleted.md)
+- [let editingState: EditingState](./datastoresavechangesrequest/editingstate.md)
+- [let inserted: [SnapshotType]](./datastoresavechangesrequest/inserted.md)
+- [let updated: [SnapshotType]](./datastoresavechangesrequest/updated.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func save(DataStoreSaveChangesRequest<Self.Snapshot>) throws -> DataStoreSaveChangesResult<Self.Snapshot>](datastore/save(_:).md)
-- [class DataStoreSaveChangesResult](datastoresavechangesresult.md)
+### Persisting model data
+- [func save(DataStoreSaveChangesRequest<Self.Snapshot>) throws -> DataStoreSaveChangesResult<Self.Snapshot>](./datastore/save%28_%29.md)
+- [class DataStoreSaveChangesResult](./datastoresavechangesresult.md)
 
 
 ---

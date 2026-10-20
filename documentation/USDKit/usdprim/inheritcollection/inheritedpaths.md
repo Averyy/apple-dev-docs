@@ -1,7 +1,8 @@
 # inheritedPaths
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 All paths this prim inherits from, including paths inherited transitively through inherited classes.
 

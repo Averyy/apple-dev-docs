@@ -1,7 +1,8 @@
 # readAttributeMeshLocalPrefix(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeMeshLocalPrefix(completion: @escaping @Sendable (Data?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeMeshLocalPrefix() async throws -> Data
+```
+
+```objc
+- (void) readAttributeMeshLocalPrefixWithCompletion:(void (^)(NSData *value, NSError *error)) completion;
 ```
 
 

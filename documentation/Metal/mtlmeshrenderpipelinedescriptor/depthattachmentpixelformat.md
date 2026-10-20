@@ -1,7 +1,8 @@
 # depthAttachmentPixelFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 16.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var depthAttachmentPixelFormat: MTLPixelFormat { get set }
+```
+
+```objc
+@property (nonatomic) MTLPixelFormat depthAttachmentPixelFormat;
 ```
 
 

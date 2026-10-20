@@ -1,7 +1,8 @@
 # grantedPrivilege
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 17.6+
@@ -16,6 +17,10 @@
 
 ```swift
 var grantedPrivilege: MTRAccessControlEntryPrivilege { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) MTRAccessControlEntryPrivilege grantedPrivilege;
 ```
 
 

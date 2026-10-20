@@ -1,14 +1,15 @@
 # STACKSHOT_COLLECT_SHAREDCACHE_LAYOUT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 STACKSHOT_COLLECT_SHAREDCACHE_LAYOUT
 ```
 

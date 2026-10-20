@@ -1,7 +1,8 @@
 # disbursementCardUnsupportedError()
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an error that indicates that the selected payment pass doesn’t support receiving funds through disbursements.
 
@@ -18,13 +19,18 @@ Creates an error that indicates that the selected payment pass doesn’t support
 class func disbursementCardUnsupportedError() -> any Error
 ```
 
+```objc
++ (NSError *) disbursementCardUnsupportedError;
+```
+
 #### Return Value
 
-An [`NSError`](https://developer.apple.com/documentation/foundation/nserror) that describes the error condition.
+An [`NSError`](../../Foundation/nserror.md) that describes the error condition.
 
 ## See Also
 
-- [class func disbursementContactInvalidError(withContactField: PKContactField, localizedDescription: String?) -> any Error](pkdisbursementrequest/disbursementcontactinvaliderror(withcontactfield:localizeddescription:).md)
+### Handling errors
+- [class func disbursementContactInvalidError(withContactField: PKContactField, localizedDescription: String?) -> any Error](./disbursementcontactinvaliderror%28withcontactfield,localizeddescription%29.md)
   Creates a recipient contact error with the supplied field.
 
 

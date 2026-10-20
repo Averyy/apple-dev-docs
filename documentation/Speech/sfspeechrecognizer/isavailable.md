@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the speech recognizer is currently available.
 
@@ -18,17 +19,22 @@ A Boolean value that indicates whether the speech recognizer is currently availa
 var isAvailable: Bool { get }
 ```
 
+```objc
+@property (nonatomic, readonly, getter=isAvailable) BOOL available;
+```
+
 #### Discussion
 
 When the value of this property is `true`, you may create new speech recognition tasks. When value of this property is `false`, speech recognition services are not available.
 
 ## See Also
 
-- [var delegate: (any SFSpeechRecognizerDelegate)?](sfspeechrecognizer/delegate.md)
+### Monitoring speech recognition availability
+- [var delegate: (any SFSpeechRecognizerDelegate)?](./delegate.md)
   The delegate object that handles changes to the availability of speech recognition services.
-- [protocol SFSpeechRecognizerDelegate](sfspeechrecognizerdelegate.md)
+- [protocol SFSpeechRecognizerDelegate](../sfspeechrecognizerdelegate.md)
   A protocol that you adopt in your objects to track the availability of a speech recognizer.
-- [var supportsOnDeviceRecognition: Bool](sfspeechrecognizer/supportsondevicerecognition.md)
+- [var supportsOnDeviceRecognition: Bool](./supportsondevicerecognition.md)
   A Boolean value that indicates whether the speech recognizer can operate without network access.
 
 

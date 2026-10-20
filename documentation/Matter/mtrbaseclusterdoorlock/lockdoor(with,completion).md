@@ -1,7 +1,8 @@
 # lockDoor(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func lockDoor(with params: MTRDoorLockClusterLockDoorParams?, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func lockDoor(with params: MTRDoorLockClusterLockDoorParams?) async throws
+```
+
+```objc
+- (void) lockDoorWithParams:(MTRDoorLockClusterLockDoorParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

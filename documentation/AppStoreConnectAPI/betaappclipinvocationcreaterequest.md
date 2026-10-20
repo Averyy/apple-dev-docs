@@ -1,7 +1,8 @@
 # BetaAppClipInvocationCreateRequest
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request body you use to create an App Clip invocation for testers.
 
@@ -10,16 +11,16 @@ The request body you use to create an App Clip invocation for testers.
 
 ## Declaration
 
-```swift
+```
 object BetaAppClipInvocationCreateRequest
 ```
 
 ## Topics
 
 ### Objects
-- [object BetaAppClipInvocationLocalizationInlineCreate](betaappclipinvocationlocalizationinlinecreate.md)
+- [object BetaAppClipInvocationLocalizationInlineCreate](./betaappclipinvocationlocalizationinlinecreate.md)
   An inline object for specifying a localized title for a beta App Clip invocation within a parent create or update request.
-- [object BetaAppClipInvocationCreateRequest.Data](betaappclipinvocationcreaterequest/data-data.dictionary.md)
+- [object BetaAppClipInvocationCreateRequest.Data](./betaappclipinvocationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
 ## Properties
@@ -29,11 +30,12 @@ object BetaAppClipInvocationCreateRequest
 
 ## See Also
 
-- [object BetaAppClipInvocation](betaappclipinvocation.md)
+### Objects
+- [object BetaAppClipInvocation](./betaappclipinvocation.md)
   A TestFlight URL scheme invocation that allows beta testers to launch an App Clip during testing.
-- [object BetaAppClipInvocationResponse](betaappclipinvocationresponse.md)
+- [object BetaAppClipInvocationResponse](./betaappclipinvocationresponse.md)
   A response containing a single TestFlight App Clip invocation URL.
-- [object BetaAppClipInvocationUpdateRequest](betaappclipinvocationupdaterequest.md)
+- [object BetaAppClipInvocationUpdateRequest](./betaappclipinvocationupdaterequest.md)
   The request body you use to update a Beta App Clip Invocation.
 
 

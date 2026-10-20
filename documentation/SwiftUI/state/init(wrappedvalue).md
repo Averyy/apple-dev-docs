@@ -1,7 +1,8 @@
 # init(wrappedValue:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a state property that stores an initial wrapped value.
 
@@ -32,7 +33,7 @@ struct MyView: View {
 }
 ```
 
-SwiftUI initializes the state’s storage only once for each container instance that you declare. In the above code, SwiftUI creates `isPlaying` only the first time it initializes a particular instance of `MyView`. On the other hand, each instance of `MyView` creates a distinct instance of the state. For example, each of the views in the following [`VStack`](vstack.md) has its own `isPlaying` value:
+SwiftUI initializes the state’s storage only once for each container instance that you declare. In the above code, SwiftUI creates `isPlaying` only the first time it initializes a particular instance of `MyView`. On the other hand, each instance of `MyView` creates a distinct instance of the state. For example, each of the views in the following [`VStack`](../vstack.md) has its own `isPlaying` value:
 
 ```swift
 var body: some View {
@@ -49,9 +50,10 @@ var body: some View {
 
 ## See Also
 
-- [init(initialValue: Value)](state/init(initialvalue:).md)
+### Creating a state
+- [init(initialValue: Value)](./init%28initialvalue%29.md)
   Creates a state property that stores an initial value.
-- [init()](state/init.md)
+- [init()](./init%28%29.md)
   Creates a state property without an initial value.
 
 

@@ -1,7 +1,8 @@
 # TelephonyMessagingSession.Error.serviceUnavailable
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The service is unavailable.
 
@@ -16,11 +17,12 @@ case serviceUnavailable
 
 ## See Also
 
-- [TelephonyMessagingSession.Error.invalidSession](telephonymessagingsession/error/invalidsession.md)
+### Inspecting errors
+- [TelephonyMessagingSession.Error.invalidSession](./invalidsession.md)
   The session is invalid.
-- [TelephonyMessagingSession.Error.invalidArgument](telephonymessagingsession/error/invalidargument.md)
+- [TelephonyMessagingSession.Error.invalidArgument](./invalidargument.md)
   A call used an invalid argument.
-- [TelephonyMessagingSession.Error.internalError](telephonymessagingsession/error/internalerror.md)
+- [TelephonyMessagingSession.Error.internalError](./internalerror.md)
   The session encountered an internal service error.
 
 

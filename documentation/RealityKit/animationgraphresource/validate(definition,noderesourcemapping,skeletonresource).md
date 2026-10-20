@@ -1,7 +1,8 @@
 # validate(definition:nodeResourceMapping:skeletonResource:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Compiles an animation graph definition and returns any diagnostic messages the compiler produced, without producing a resource.
 
@@ -25,17 +26,18 @@ An array of diagnostic messages produced by the compiler. An empty array indicat
 
 #### Discussion
 
-Call this method to validate a definition at editor time without paying the cost of holding on to the compiled resource and without having to handle a thrown error. To produce a usable [`AnimationGraphResource`](animationgraphresource.md), call [`init(definition:nodeResourceMapping:skeletonResource:)`](animationgraphresource/init(definition:noderesourcemapping:skeletonresource:).md) instead.
+Call this method to validate a definition at editor time without paying the cost of holding on to the compiled resource and without having to handle a thrown error. To produce a usable [`AnimationGraphResource`](../animationgraphresource.md), call [`init(definition:nodeResourceMapping:skeletonResource:)`](./init%28definition,noderesourcemapping,skeletonresource%29.md) instead.
 
 ## Parameters
 
 - `definition`: The animation graph definition to validate.
-- `nodeResourceMapping`: A mapping from graph-node IDs to the [`AnimationResource`](animationresource.md) clips those nodes reference. Defaults to empty.
-- `skeletonResource`: The [`SkeletonResource`](skeletonresource.md) the graph targets.
+- `nodeResourceMapping`: A mapping from graph-node IDs to the [`AnimationResource`](../animationresource.md) clips those nodes reference. Defaults to empty.
+- `skeletonResource`: The [`SkeletonResource`](../skeletonresource.md) the graph targets.
 
 ## See Also
 
-- [convenience init(definition: Data, nodeResourceMapping: [Int : AnimationResource], skeletonResource: SkeletonResource) throws](animationgraphresource/init(definition:noderesourcemapping:skeletonresource:).md)
+### Creating an animation graph
+- [convenience init(definition: Data, nodeResourceMapping: [Int : AnimationResource], skeletonResource: SkeletonResource) throws](./init%28definition,noderesourcemapping,skeletonresource%29.md)
   Compiles an animation graph definition into a resource that can drive animation on an entity.
 
 

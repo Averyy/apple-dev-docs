@@ -1,7 +1,8 @@
 # FileList
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,16 +10,16 @@
 
 ## Declaration
 
-```swift
+```
 interface FileList
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](filelist/1632887-length.md)
+- [length](./filelist/api-1632887-length.md)
 ### Instance Methods
-- [item](filelist/1632782-item.md)
+- [item](./filelist/api-1632782-item.md)
 
 
 ---

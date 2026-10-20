@@ -1,7 +1,8 @@
 # kAXOverflowButtonAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Identifies which child of an accessibility object representing a toolbar is the overflow button (if any). This attribute is optional.
 
@@ -12,6 +13,10 @@ Identifies which child of an accessibility object representing a toolbar is the 
 
 ```swift
 var kAXOverflowButtonAttribute: String { get }
+```
+
+```c
+#define kAXOverflowButtonAttribute
 ```
 
 

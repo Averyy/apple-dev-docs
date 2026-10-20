@@ -1,7 +1,8 @@
 # init(primaryAction:secondaryAction:)
 
 **Framework**: CarPlay  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the button configuration object with the specified buttons.
 
@@ -14,6 +15,10 @@ Initializes the button configuration object with the specified buttons.
 
 ```swift
 init(primaryAction: CPTextButton, secondaryAction: CPTextButton?)
+```
+
+```objc
+- (instancetype) initWithPrimaryAction:(CPTextButton *) primaryAction secondaryAction:(CPTextButton *) secondaryAction;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # Read xcode cloud issue information
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get information about a specific issue that occurred when Xcode Cloud performed a build.
 
@@ -16,7 +17,7 @@ The example request below retrieves information about a specific issue Xcode Clo
 
 **Request**:
 
-```None
+```
 GET https://api.appstoreconnect.apple.com/v1/ciIssues/61473b34-2ecd-498d-9e2b-94216b7e8fb4
 ```
 
@@ -52,7 +53,24 @@ GET https://api.appstoreconnect.apple.com/v1/ciIssues/61473b34-2ecd-498d-9e2b-94
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Issues resource.
+
+### Query Parameters
+
 - `fields[ciIssues]` ([string]): Additional fields to include for the Issues resource returned by the response.
+
+  **Allowed Values**: `issueType`, `message`, `fileSource`, `category`
+
+## Responses
+
+- `200` OK (`CiIssueResponse`, `application/json`): The request completed successfully.
+- `400` Bad Request (`ErrorResponse`, `application/json`): An error occurred with your request.
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`): Request not authorized.
+- `404` Not Found (`ErrorResponse`, `application/json`): Resource not found.
+- `429` (`ErrorResponse`, `application/json`)
 
 
 ---

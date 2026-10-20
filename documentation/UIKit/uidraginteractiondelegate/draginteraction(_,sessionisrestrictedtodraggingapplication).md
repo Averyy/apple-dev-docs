@@ -1,7 +1,8 @@
 # dragInteraction(_:sessionIsRestrictedToDraggingApplication:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate whether the system should restrict the drag session to the app that started the session.
 
@@ -17,13 +18,17 @@ Asks the delegate whether the system should restrict the drag session to the app
 optional func dragInteraction(_ interaction: UIDragInteraction, sessionIsRestrictedToDraggingApplication session: any UIDragSession) -> Bool
 ```
 
+```objc
+- (BOOL) dragInteraction:(UIDragInteraction *) interaction sessionIsRestrictedToDraggingApplication:(id<UIDragSession>) session;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if you want to restrict the drag session to the app that started it; otherwise [`false`](https://developer.apple.com/documentation/swift/false), which is the default if you don’t provide this method.
+[`true`](../../Swift/true.md) if you want to restrict the drag session to the app that started it; otherwise [`false`](../../Swift/false.md), which is the default if you don’t provide this method.
 
 #### Discussion
 
-If you return [`true`](https://developer.apple.com/documentation/swift/true) and the user attempts to drop the drag items onto another app, the system cancels the session.
+If you return [`true`](../../Swift/true.md) and the user attempts to drop the drag items onto another app, the system cancels the session.
 
 > **Note**:  The system calls this method only on devices that support dragging across apps.
 
@@ -34,7 +39,8 @@ If you return [`true`](https://developer.apple.com/documentation/swift/true) and
 
 ## See Also
 
-- [func dragInteraction(UIDragInteraction, sessionAllowsMoveOperation: any UIDragSession) -> Bool](uidraginteractiondelegate/draginteraction(_:sessionallowsmoveoperation:).md)
+### Restricting the drag behavior
+- [func dragInteraction(UIDragInteraction, sessionAllowsMoveOperation: any UIDragSession) -> Bool](./draginteraction%28_,sessionallowsmoveoperation%29.md)
   Asks the delegate whether the session allows the move operation.
 
 

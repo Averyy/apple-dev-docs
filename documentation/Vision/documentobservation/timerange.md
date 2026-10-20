@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Time in a video frame where the observation was detected.
 
@@ -25,11 +26,12 @@ When evaluating a sequence of image buffers, use this property to determine each
 
 ## See Also
 
-- [let uuid: UUID](documentobservation/uuid.md)
+### Inspecting an observation
+- [let uuid: UUID](./uuid.md)
   A unique alphanumeric value that the framework assigns to the observation.
-- [let confidence: Float](documentobservation/confidence.md)
+- [let confidence: Float](./confidence.md)
   The level of confidence in the observation’s accuracy.
-- [let document: DocumentObservation.Container](documentobservation/document.md)
+- [let document: DocumentObservation.Container](./document.md)
   The contents of the document.
 
 

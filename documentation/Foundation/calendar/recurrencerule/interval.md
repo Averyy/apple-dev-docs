@@ -1,7 +1,8 @@
 # interval
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 At what interval to repeat
 

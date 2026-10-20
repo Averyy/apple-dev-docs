@@ -1,7 +1,8 @@
 # webView(_:requestGeolocationPermissionFor:initiatedByFrame:decisionHandler:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -13,7 +14,15 @@
 ## Declaration
 
 ```swift
+optional func webView(_ webView: WKWebView, requestGeolocationPermissionFor origin: WKSecurityOrigin, initiatedByFrame frame: WKFrameInfo, decisionHandler: @escaping @MainActor @Sendable (WKPermissionDecision) -> Void)
+```
+
+```swift
 optional func webView(_ webView: WKWebView, requestGeolocationPermissionFor origin: WKSecurityOrigin, initiatedBy frame: WKFrameInfo) async -> WKPermissionDecision
+```
+
+```objc
+- (void) webView:(WKWebView *) webView requestGeolocationPermissionForOrigin:(WKSecurityOrigin *) origin initiatedByFrame:(WKFrameInfo *) frame decisionHandler:(void (^)(enum WKPermissionDecision)) decisionHandler;
 ```
 
 #### Discussion

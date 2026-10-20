@@ -1,7 +1,8 @@
 # ASUserAgeRange.child
 
 **Framework**: Authentication Services  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+
@@ -18,10 +19,15 @@
 case child
 ```
 
+```c
+ASUserAgeRangeChild
+```
+
 ## See Also
 
-- [ASUserAgeRange.notChild](asuseragerange/notchild.md)
-- [ASUserAgeRange.unknown](asuseragerange/unknown.md)
+### Enumeration Cases
+- [ASUserAgeRange.notChild](./notchild.md)
+- [ASUserAgeRange.unknown](./unknown.md)
 
 
 ---

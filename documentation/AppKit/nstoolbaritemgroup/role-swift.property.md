@@ -1,7 +1,8 @@
 # role
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The semantic role of the item. Defaults to `NSToolbarItemGroupRoleAutomatic`.
 
@@ -17,16 +18,21 @@ The semantic role of the item. Defaults to `NSToolbarItemGroupRoleAutomatic`.
 var role: NSToolbarItemGroup.Role { get set }
 ```
 
+```objc
+@property NSToolbarItemGroupRole role;
+```
+
 ## See Also
 
-- [var controlRepresentation: NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.property.md)
+### Configuring grouped toolbar items
+- [var controlRepresentation: NSToolbarItemGroup.ControlRepresentation](./controlrepresentation-swift.property.md)
   A value that represents how a toolbar displays a grouped toolbar item.
-- [NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.enum.md)
-- [var selectionMode: NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.property.md)
+- [NSToolbarItemGroup.ControlRepresentation](./controlrepresentation-swift.enum.md)
+- [var selectionMode: NSToolbarItemGroup.SelectionMode](./selectionmode-swift.property.md)
   The selection mode of the grouped toolbar item.
-- [NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.enum.md)
+- [NSToolbarItemGroup.SelectionMode](./selectionmode-swift.enum.md)
   A value that indicates how a grouped toolbar item selects its subitems.
-- [NSToolbarItemGroup.Role](nstoolbaritemgroup/role-swift.enum.md)
+- [NSToolbarItemGroup.Role](./role-swift.enum.md)
 
 
 ---

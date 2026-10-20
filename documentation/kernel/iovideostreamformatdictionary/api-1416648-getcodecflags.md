@@ -1,14 +1,15 @@
 # getCodecFlags
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```c
 static UInt32 getCodecFlags(const OSDictionary *dictionary);
 ```
 

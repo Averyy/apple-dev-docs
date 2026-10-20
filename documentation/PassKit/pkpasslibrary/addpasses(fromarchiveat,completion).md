@@ -1,7 +1,8 @@
 # addPasses(fromArchiveAt:completion:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -12,7 +13,15 @@
 ## Declaration
 
 ```swift
+func addPasses(fromArchiveAt passesArchiveFileURL: URL, completion completionHandler: @escaping @Sendable (PKPassLibraryAddPassesStatus) -> Void)
+```
+
+```swift
 func addPasses(fromArchiveAt passesArchiveFileURL: URL) async -> PKPassLibraryAddPassesStatus
+```
+
+```objc
+- (void) addPassesFromArchiveAtFileURL:(NSURL *) passesArchiveFileURL completionHandler:(void (^)(PKPassLibraryAddPassesStatus )) completionHandler;
 ```
 
 

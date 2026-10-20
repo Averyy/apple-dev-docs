@@ -1,7 +1,8 @@
 # init(from:)
 
 **Framework**: SwiftData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 17.0+
@@ -21,7 +22,8 @@ required init(from decoder: any Decoder) throws
 
 ## See Also
 
-- [func encode(to: any Encoder) throws](schema/compositeattribute/encode(to:).md)
+### Encoding and decoding
+- [func encode(to: any Encoder) throws](./encode%28to%29.md)
   Encodes this value into the given encoder.
 
 

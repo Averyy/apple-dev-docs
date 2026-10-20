@@ -1,7 +1,8 @@
 # UICornerRadius
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that represents the radius the system uses to round a corner.
 
@@ -21,27 +22,28 @@ struct UICornerRadius
 ## Topics
 
 ### Defining a radius
-- [static func containerConcentric(minimum: CGFloat?) -> UICornerRadius](uicornerradius-swift.struct/containerconcentric(minimum:).md)
+- [static func containerConcentric(minimum: CGFloat?) -> UICornerRadius](./uicornerradius-swift.struct/containerconcentric%28minimum%29.md)
   A dynamic corner radius calculated using the geometry of the view and its container limited to a minimum radius.
-- [static func fixed(Double) -> UICornerRadius](uicornerradius-swift.struct/fixed(_:).md)
+- [static func fixed(Double) -> UICornerRadius](./uicornerradius-swift.struct/fixed%28_%29.md)
   Creates a radius that represents a fixed corner radius in points.
 
 ## Relationships
 
 ### Conforms To
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [Hashable](../swift/hashable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByFloatLiteral](../Swift/expressiblebyfloatliteral.md)
+- [ExpressibleByIntegerLiteral](../Swift/expressiblebyintegerliteral.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [var cornerConfiguration: UICornerConfiguration](uiview/cornerconfiguration-7l0ja.md)
+### Configuring a view’s corners
+- [var cornerConfiguration: UICornerConfiguration](./uiview/cornerconfiguration-7l0ja.md)
   A configuration that defines the corners of the view.
-- [struct UICornerConfiguration](uicornerconfiguration-swift.struct.md)
+- [struct UICornerConfiguration](./uicornerconfiguration-swift.struct.md)
   A configuration that defines how corner radii are mapped to the corners of a rectangle.
-- [func effectiveRadius(corner: UIRectCorner) -> CGFloat](uiview/effectiveradius(corner:).md)
+- [func effectiveRadius(corner: UIRectCorner) -> CGFloat](./uiview/effectiveradius%28corner%29.md)
   Returns the effective radius for the corner you provide, calculated using the view’s current corner configuration.
 
 

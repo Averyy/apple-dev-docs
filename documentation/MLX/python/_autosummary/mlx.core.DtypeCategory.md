@@ -6,70 +6,43 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.Dt
 
 # mlx.core.DtypeCategory
 
-**
-
-- [.rst](../../_sources/python/_autosummary/mlx.core.DtypeCategory.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# mlx.core.DtypeCategory
-
- Table of contents 
-
-## Contents
-
-# mlx.core.DtypeCategory
-
 **class DtypeCategory(**values*)**
-: Type to hold categories of [dtypes](mlx.core.Dtype.html#mlx.core.Dtype).
+: Type to hold categories of [dtypes](mlx.core.Dtype.md#mlx.core.Dtype).
 
 `generic`
 
-[bool_](../data_types.html#data-types)
+[bool_](../data_types.md#data-types)
 `number`
 
 `integer`
 
 `unsignedinteger`
 
-[uint8](../data_types.html#data-types)
-[uint16](../data_types.html#data-types)
-[uint32](../data_types.html#data-types)
-[uint64](../data_types.html#data-types)
+[uint8](../data_types.md#data-types)
+[uint16](../data_types.md#data-types)
+[uint32](../data_types.md#data-types)
+[uint64](../data_types.md#data-types)
 
 `signedinteger`
 
-[int8](../data_types.html#data-types)
-[int32](../data_types.html#data-types)
-[int64](../data_types.html#data-types)
+[int8](../data_types.md#data-types)
+[int32](../data_types.md#data-types)
+[int64](../data_types.md#data-types)
 
 `inexact`
 
 `floating`
 
-[float16](../data_types.html#data-types)
-[bfloat16](../data_types.html#data-types)
-[float32](../data_types.html#data-types)
-[float64](../data_types.html#data-types)
+[float16](../data_types.md#data-types)
+[bfloat16](../data_types.md#data-types)
+[float32](../data_types.md#data-types)
+[float64](../data_types.md#data-types)
 
 `complexfloating`
 
-[complex64](../data_types.html#data-types)
+[complex64](../data_types.md#data-types)
 
-See also [issubdtype()](mlx.core.issubdtype.html#mlx.core.issubdtype).
+See also [issubdtype()](mlx.core.issubdtype.md#mlx.core.issubdtype).
 
 __init__(**args*, ***kwds*)
 
@@ -90,5 +63,3 @@ Attributes
 `number`
 
 `generic`
-
-** Contents

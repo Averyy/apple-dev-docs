@@ -1,7 +1,8 @@
 # matchBidirectionally
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that two patterns should be checked in either direction while matching.
 
@@ -16,6 +17,10 @@ Indicates that two patterns should be checked in either direction while matching
 
 ```swift
 static var matchBidirectionally: WKWebExtension.MatchPattern.Options { get }
+```
+
+```c
+WKWebExtensionMatchPatternOptionsMatchBidirectionally
 ```
 
 #### Discussion

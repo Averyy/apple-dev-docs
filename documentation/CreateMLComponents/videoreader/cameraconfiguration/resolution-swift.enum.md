@@ -1,7 +1,8 @@
 # VideoReader.CameraConfiguration.Resolution
 
 **Framework**: Create ML Components  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The camera resolution.
 
@@ -21,27 +22,28 @@ enum Resolution
 ## Topics
 
 ### Camera resolutions
-- [VideoReader.CameraConfiguration.Resolution.high](videoreader/cameraconfiguration/resolution-swift.enum/high.md)
-- [VideoReader.CameraConfiguration.Resolution.low](videoreader/cameraconfiguration/resolution-swift.enum/low.md)
-- [VideoReader.CameraConfiguration.Resolution.medium](videoreader/cameraconfiguration/resolution-swift.enum/medium.md)
+- [VideoReader.CameraConfiguration.Resolution.high](./resolution-swift.enum/high.md)
+- [VideoReader.CameraConfiguration.Resolution.low](./resolution-swift.enum/low.md)
+- [VideoReader.CameraConfiguration.Resolution.medium](./resolution-swift.enum/medium.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init()](videoreader/cameraconfiguration/init.md)
+### Creating a camera configuration
+- [init()](./init%28%29.md)
   Creates a camera configuration.
-- [init(position: VideoReader.CameraConfiguration.Position, pixelFormat: VideoReader.CameraConfiguration.PixelFormat, resolution: VideoReader.CameraConfiguration.Resolution, frameRate: Double)](videoreader/cameraconfiguration/init(position:pixelformat:resolution:framerate:).md)
+- [init(position: VideoReader.CameraConfiguration.Position, pixelFormat: VideoReader.CameraConfiguration.PixelFormat, resolution: VideoReader.CameraConfiguration.Resolution, frameRate: Double)](./init%28position,pixelformat,resolution,framerate%29.md)
   Creates a camera configuration.
-- [VideoReader.CameraConfiguration.PixelFormat](videoreader/cameraconfiguration/pixelformat-swift.enum.md)
+- [VideoReader.CameraConfiguration.PixelFormat](./pixelformat-swift.enum.md)
   The camera pixel format.
-- [VideoReader.CameraConfiguration.Position](videoreader/cameraconfiguration/position-swift.enum.md)
+- [VideoReader.CameraConfiguration.Position](./position-swift.enum.md)
   The position of the camera for an iOS device.
 
 

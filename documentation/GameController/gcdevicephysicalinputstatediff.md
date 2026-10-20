@@ -1,7 +1,8 @@
 # GCDevicePhysicalInputStateDiff
 
 **Framework**: Game Controller  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 The common functions for objects that contain the differences between a current and previous input state object.
 
@@ -19,35 +20,40 @@ The common functions for objects that contain the differences between a current 
 protocol GCDevicePhysicalInputStateDiff : NSObjectProtocol
 ```
 
+```objc
+@protocol GCDevicePhysicalInputStateDiff <NSObject>
+```
+
 #### Overview
 
-Use the `GCDevicePhysicalInput` [`nextInputState()`](gcdevicephysicalinput/nextinputstate().md) method to get an input state object conforming to this protocol.
+Use the `GCDevicePhysicalInput` [`nextInputState()`](./gcdevicephysicalinput/nextinputstate%28%29.md) method to get an input state object conforming to this protocol.
 
 ## Topics
 
 ### Getting changes
-- [func change(for: any GCPhysicalInputElement) -> GCDevicePhysicalInputElementChange](gcdevicephysicalinputstatediff/change(for:).md)
+- [func change(for: any GCPhysicalInputElement) -> GCDevicePhysicalInputElementChange](./gcdevicephysicalinputstatediff/change%28for%29.md)
   Returns whether the input value of an element changes.
-- [enum GCDevicePhysicalInputElementChange](gcdevicephysicalinputelementchange.md)
+- [enum GCDevicePhysicalInputElementChange](./gcdevicephysicalinputelementchange.md)
   Possible values that describe whether the input value of an element changes.
-- [func changedElements() -> NSEnumerator?](gcdevicephysicalinputstatediff/changedelements-9cdq4.md)
+- [func changedElements() -> NSEnumerator?](./gcdevicephysicalinputstatediff/changedelements%28%29-9cdq4.md)
   Returns the elements that changed since the previous input state.
 - [func changedElements() -> (some Sequence<any GCPhysicalInputElement>)?
-](gcdevicephysicalinputstatediff/changedelements-2zzwm.md)
+](./gcdevicephysicalinputstatediff/changedelements%28%29-2zzwm.md)
   Returns the elements that changed since the previous input state.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Handling input events](handling-input-events.md)
+### Essentials
+- [Handling input events](./handling-input-events.md)
   Receive controller input using either polling or callbacks.
-- [protocol GCDevicePhysicalInput](gcdevicephysicalinput.md)
+- [protocol GCDevicePhysicalInput](./gcdevicephysicalinput.md)
   The common properties and methods for objects that represent the input profile of a device.
-- [protocol GCDevicePhysicalInputState](gcdevicephysicalinputstate.md)
+- [protocol GCDevicePhysicalInputState](./gcdevicephysicalinputstate.md)
   The common properties for physical devices with elements.
 
 

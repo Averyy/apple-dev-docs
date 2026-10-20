@@ -1,19 +1,21 @@
 # Size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit unsigned integer that indicates the size in bytes of the atom structure.
 
 ## See Also
 
-- [Type](bit_rate_atom/type.md)
+### Data fields
+- [Type](./type.md)
   A 32-bit unsigned integer value.
-- [Buffer size](bit_rate_atom/buffer_size.md)
+- [Buffer size](./buffer_size.md)
   A 32-bit unsigned integer that indicates the suggested size of the associated data buffer.
-- [Max bit rate](bit_rate_atom/max_bit_rate.md)
+- [Max bit rate](./max_bit_rate.md)
   A 32-bit unsigned integer that indicates the maximum bit rate in bits/second of the associated media stream.
-- [Average bit rate](bit_rate_atom/average_bit_rate.md)
+- [Average bit rate](./average_bit_rate.md)
   A 32-bit unsigned integer that indicates the average bit rate in bits/second of the associated media stream.
 
 

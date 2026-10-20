@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The size of the resource, in bytes.
@@ -18,6 +19,10 @@ The size of the resource, in bytes.
 
 ```swift
 var allocatedSize: Int { get }
+```
+
+```objc
+@property (readonly) NSUInteger allocatedSize;
 ```
 
 

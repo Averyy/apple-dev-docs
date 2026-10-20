@@ -1,7 +1,8 @@
 # AnchorStateEvents.WillUnanchor.Reason.anchorDisqualified
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Anchor is removed from session or loses tracking
 

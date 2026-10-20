@@ -1,7 +1,8 @@
 # init(dictionaryLiteral:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated dictionary from the given key-value pairs.
 
@@ -26,9 +27,10 @@ required convenience init(dictionaryLiteral elements: (Any, Any)...)
 
 ## See Also
 
-- [convenience init(dictionary: [AnyHashable : Any])](nsdictionary/init(dictionary:)-9fw1u.md)
+### Creating a Dictionary from Another Dictionary
+- [convenience init(dictionary: [AnyHashable : Any])](./init%28dictionary%29-9fw1u.md)
   Initializes a newly allocated dictionary by placing in it the keys and values contained in another given dictionary.
-- [convenience init(dictionary: [AnyHashable : Any], copyItems: Bool)](nsdictionary/init(dictionary:copyitems:).md)
+- [convenience init(dictionary: [AnyHashable : Any], copyItems: Bool)](./init%28dictionary,copyitems%29.md)
   Initializes a newly allocated dictionary using the objects contained in another given dictionary.
 
 

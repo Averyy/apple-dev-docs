@@ -1,7 +1,8 @@
 # ApplePayLaterAvailability
 
 **Framework**: Apple Pay on the Web  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Values you use to enable or disable Apple Pay Later for a specific transaction.
 
@@ -9,9 +10,11 @@ Values you use to enable or disable Apple Pay Later for a specific transaction.
 - Safari Desktop 10.0+
 - Safari Mobile 10.0+
 
+> **Deprecated**: Apple Pay Later is deprecated.
+
 ## Declaration
 
-```swift
+```
 enum ApplePayLaterAvailability
 ```
 
@@ -21,7 +24,7 @@ The following table describes the Apple Pay Later availability reasons.
 
 | Availability reason | Description |
 | --- | --- |
-| `available` | Apple Pay Later is available. ![None](/images/com.apple.applepayontheweb/spacer.png) This is the default. |
+| `available` | Apple Pay Later is available. ![](https://developer.apple.com/tutorials/images/com.apple.applepayontheweb/spacer.png) This is the default. |
 | `unavailableItemIneligible` | Apple Pay Later is unavailable because one or more ineligible or prohibited items are in the shopping cart, such as gift cards |
 | `unavailableRecurringTransaction` | Apple Pay Later is unavailable because there’s a recurring payment or subscription in the shopping cart. |
 
@@ -34,13 +37,14 @@ applePayLaterAvailability = “unavailableRecurringTransaction”;
 ## Topics
 
 ### Enumeration Cases
-- [available](applepaylateravailability/available.md)
-- [unavailableItemIneligible](applepaylateravailability/unavailableitemineligible.md)
-- [unavailableRecurringTransaction](applepaylateravailability/unavailablerecurringtransaction.md)
+- [available](./applepaylateravailability/available.md)
+- [unavailableItemIneligible](./applepaylateravailability/unavailableitemineligible.md)
+- [unavailableRecurringTransaction](./applepaylateravailability/unavailablerecurringtransaction.md)
 
 ## See Also
 
-- [applePayLaterAvailability](applepayrequestbase/applepaylateravailability.md)
+### Setting the Apple Pay Later mode
+- [applePayLaterAvailability](./applepayrequestbase/applepaylateravailability.md)
   A value that indicates whether Apple Pay Later is available for a transaction.
 
 

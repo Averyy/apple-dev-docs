@@ -1,7 +1,8 @@
 # restore
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Restores the last saved set of context settings.
 
@@ -11,7 +12,7 @@ Restores the last saved set of context settings.
 
 ## Declaration
 
-```swift
+```
 void restore();
 ```
 
@@ -21,7 +22,8 @@ You can save and restore all of the context settings: rotation, scale, translati
 
 ## See Also
 
-- [save](canvasrenderingcontext2d/1634183-save.md)
+### Saving and Restoring Settings
+- [save](./api-1634183-save.md)
   Saves the current context settings on the stack.
 
 

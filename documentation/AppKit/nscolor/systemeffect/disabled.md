@@ -1,7 +1,8 @@
 # NSColor.SystemEffect.disabled
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The color that indicates the item is disabled.
 
@@ -14,15 +15,20 @@ The color that indicates the item is disabled.
 case disabled
 ```
 
+```c
+NSColorSystemEffectDisabled
+```
+
 ## See Also
 
-- [NSColor.SystemEffect.none](nscolor/systemeffect/none.md)
+### Appearances
+- [NSColor.SystemEffect.none](./none.md)
   No additional effects.
-- [NSColor.SystemEffect.pressed](nscolor/systemeffect/pressed.md)
+- [NSColor.SystemEffect.pressed](./pressed.md)
   The color that indicates the item was pressed.
-- [NSColor.SystemEffect.deepPressed](nscolor/systemeffect/deeppressed.md)
+- [NSColor.SystemEffect.deepPressed](./deeppressed.md)
   The color that indicates the item received a deep press.
-- [NSColor.SystemEffect.rollover](nscolor/systemeffect/rollover.md)
+- [NSColor.SystemEffect.rollover](./rollover.md)
   The color that indicates the mouse rolled over the item.
 
 

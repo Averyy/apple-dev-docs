@@ -1,7 +1,8 @@
 # init(apiToken:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a fetch operation for the specified API token.
 
@@ -20,13 +21,18 @@ Creates a fetch operation for the specified API token.
 convenience init(apiToken APIToken: String)
 ```
 
+```objc
+- (instancetype) initWithAPIToken:(NSString *) APIToken;
+```
+
 ## Parameters
 
 - `APIToken`: The API token that allows access to an app’s container.
 
 ## See Also
 
-- [init()](ckfetchwebauthtokenoperation/init.md)
+### Creating a Fetch Token Operation
+- [init()](./init%28%29.md)
   Creates an empty fetch operation.
 
 

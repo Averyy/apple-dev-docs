@@ -1,7 +1,8 @@
 # NSPrintPanel.Result
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 14.0+
@@ -12,29 +13,34 @@
 enum Result
 ```
 
+```c
+enum NSPrintPanelResult : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [NSPrintPanel.Result.cancelled](nsprintpanel/result/cancelled.md)
-- [NSPrintPanel.Result.printed](nsprintpanel/result/printed.md)
+- [NSPrintPanel.Result.cancelled](./result/cancelled.md)
+- [NSPrintPanel.Result.printed](./result/printed.md)
 ### Initializers
-- [init?(rawValue: Int)](nsprintpanel/result/init(rawvalue:).md)
+- [init?(rawValue: Int)](./result/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var printInfo: NSPrintInfo](nsprintpanel/printinfo.md)
+### Accessing the Printing Information
+- [var printInfo: NSPrintInfo](./printinfo.md)
   The information associated with the running Print panel.
-- [class NSPrintInfo](nsprintinfo.md)
+- [class NSPrintInfo](../nsprintinfo.md)
   An object that stores information that’s used to generate printed output.
 
 

@@ -1,7 +1,8 @@
 # repeat
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The user held a key down to issue a sequence of repeating events.
 
@@ -21,11 +22,12 @@ static let `repeat`: KeyPress.Phases
 
 ## See Also
 
-- [static let down: KeyPress.Phases](keypress/phases/down.md)
+### Getting the phases
+- [static let down: KeyPress.Phases](./down.md)
   The user pressed down on a key.
-- [static let up: KeyPress.Phases](keypress/phases/up.md)
+- [static let up: KeyPress.Phases](./up.md)
   The user released a key.
-- [static let all: KeyPress.Phases](keypress/phases/all.md)
+- [static let all: KeyPress.Phases](./all.md)
   A value that matches all key press phases.
 
 

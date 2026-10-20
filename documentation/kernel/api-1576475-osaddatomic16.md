@@ -1,7 +1,8 @@
 # OSAddAtomic16
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 16-bit add operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
 
@@ -10,11 +11,11 @@
 
 ## Declaration
 
-```swift
+```c
 SInt16 OSAddAtomic16(SInt32 amount, volatile SInt16 *address);
 ```
 
-#### Return_value
+#### Return Value
 
 The value before the addition
 
@@ -30,11 +31,12 @@ This function guarantees atomicity only with main system memory. It is specifica
 
 ## See Also
 
-- [OSAddAtomic](1576452-osaddatomic.md)
+### Additions
+- [OSAddAtomic](./api-1576452-osaddatomic.md)
   32-bit add operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSAddAtomic8](1576483-osaddatomic8.md)
+- [OSAddAtomic8](./api-1576483-osaddatomic8.md)
   8-bit add operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSAddAtomic64](1576451-osaddatomic64.md)
+- [OSAddAtomic64](./api-1576451-osaddatomic64.md)
   64-bit atomic add operation.
 
 

@@ -1,7 +1,8 @@
 # blendMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Describes how materials using the created `PhysicallyBasedMaterial.Program` will be blended with content behind them.
 

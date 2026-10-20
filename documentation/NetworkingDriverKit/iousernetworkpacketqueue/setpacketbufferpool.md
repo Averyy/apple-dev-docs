@@ -1,16 +1,17 @@
 # SetPacketBufferPool
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Assigns the specified buffer pool with this queue.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t SetPacketBufferPool(IOUserNetworkPacketBufferPool *pool);
 ```
 
@@ -28,7 +29,8 @@ Use this method to change the buffer pool that provides network packets to the q
 
 ## See Also
 
-- [SetPacketDirection](iousernetworkpacketqueue/setpacketdirection.md)
+### Configuring the Queue Attributes
+- [SetPacketDirection](./setpacketdirection.md)
   Specifies whether packets flow into or out of the queue.
 
 

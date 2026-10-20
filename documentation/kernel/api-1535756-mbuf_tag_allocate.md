@@ -1,18 +1,19 @@
 # mbuf_tag_allocate
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 errno_t mbuf_tag_allocate(mbuf_t mbuf, mbuf_tag_id_t module_id, mbuf_tag_type_t type, size_t length, mbuf_how_t how, void **data_p);
 ```
 
-#### Return_value
+#### Return Value
 
 0 upon success otherwise the errno error.
 

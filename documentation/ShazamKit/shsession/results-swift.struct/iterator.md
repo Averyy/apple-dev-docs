@@ -1,7 +1,8 @@
 # SHSession.Results.Iterator
 
 **Framework**: ShazamKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An iterator for accessing session results.
 
@@ -23,19 +24,20 @@ struct Iterator
 ## Topics
 
 ### Iterating over results
-- [func next() async -> SHSession.Results.Element?](shsession/results-swift.struct/iterator/next.md)
+- [func next() async -> SHSession.Results.Element?](./iterator/next%28%29.md)
   Asynchronously waits for the next element and returns it.
 
 ## Relationships
 
 ### Conforms To
-- [AsyncIteratorProtocol](../swift/asynciteratorprotocol.md)
+- [AsyncIteratorProtocol](../../../Swift/asynciteratorprotocol.md)
 
 ## See Also
 
-- [func makeAsyncIterator() -> SHSession.Results.Iterator](shsession/results-swift.struct/makeasynciterator.md)
+### Creating an iterator
+- [func makeAsyncIterator() -> SHSession.Results.Iterator](./makeasynciterator%28%29.md)
   Creates an asynchronous iterator that produces results from an asynchronous sequence.
-- [SHSession.Results.Element](shsession/results-swift.struct/element.md)
+- [SHSession.Results.Element](./element.md)
   A set of results that a session result object returns.
 
 

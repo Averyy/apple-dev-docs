@@ -1,7 +1,8 @@
 # kColorSyncProfileHostScope
 
 **Framework**: ColorSync  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key specifying the host preference scope of a profile; currently only `kCFPreferencesCurrentHost` is supported.
 
@@ -15,21 +16,26 @@ A key specifying the host preference scope of a profile; currently only `kCFPref
 var kColorSyncProfileHostScope: Unmanaged<CFString>!
 ```
 
+```c
+extern CFStringRef kColorSyncProfileHostScope;
+```
+
 ## See Also
 
-- [var kColorSyncDeviceDefaultProfileID: Unmanaged<CFString>!](kcolorsyncdevicedefaultprofileid.md)
+### Describing device profiles
+- [var kColorSyncDeviceDefaultProfileID: Unmanaged<CFString>!](./kcolorsyncdevicedefaultprofileid.md)
   A key whose value is the ProfileID of the device’s default profile.
-- [var kColorSyncDeviceProfileID: Unmanaged<CFString>!](kcolorsyncdeviceprofileid.md)
+- [var kColorSyncDeviceProfileID: Unmanaged<CFString>!](./kcolorsyncdeviceprofileid.md)
   A key in the device-profile-info dictionary whose value is the profile’s ProfileID.
-- [var kColorSyncDeviceProfileURL: Unmanaged<CFString>!](kcolorsyncdeviceprofileurl.md)
+- [var kColorSyncDeviceProfileURL: Unmanaged<CFString>!](./kcolorsyncdeviceprofileurl.md)
   A key whose value is the `CFURLRef` of a device profile.
-- [var kColorSyncDeviceProfileIsCurrent: Unmanaged<CFString>!](kcolorsyncdeviceprofileiscurrent.md)
+- [var kColorSyncDeviceProfileIsCurrent: Unmanaged<CFString>!](./kcolorsyncdeviceprofileiscurrent.md)
   A key in the device-profile-info dictionary whose value indicates whether the profile is the current profile.
-- [var kColorSyncDeviceProfileIsDefault: Unmanaged<CFString>!](kcolorsyncdeviceprofileisdefault.md)
+- [var kColorSyncDeviceProfileIsDefault: Unmanaged<CFString>!](./kcolorsyncdeviceprofileisdefault.md)
   A key in the device-profile-info dictionary whose value indicates whether the profile is the default profile.
-- [var kColorSyncDeviceProfileIsFactory: Unmanaged<CFString>!](kcolorsyncdeviceprofileisfactory.md)
+- [var kColorSyncDeviceProfileIsFactory: Unmanaged<CFString>!](./kcolorsyncdeviceprofileisfactory.md)
   A key in the device-profile-info dictionary whose value indicates whether the profile is a factory profile.
-- [var kColorSyncProfileUserScope: Unmanaged<CFString>!](kcolorsyncprofileuserscope.md)
+- [var kColorSyncProfileUserScope: Unmanaged<CFString>!](./kcolorsyncprofileuserscope.md)
   A key specifying the user preference scope of a profile; one of `kCFPreferencesCurrentUser` or `kCFPreferencesAnyUser`.
 
 

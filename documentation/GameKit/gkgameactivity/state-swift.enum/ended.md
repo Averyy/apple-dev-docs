@@ -1,7 +1,8 @@
 # GKGameActivity.State.ended
 
 **Framework**: GameKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The game activity has ended. This is a terminal state.
 
@@ -17,6 +18,10 @@ The game activity has ended. This is a terminal state.
 
 ```swift
 case ended
+```
+
+```c
+GKGameActivityStateEnded
 ```
 
 

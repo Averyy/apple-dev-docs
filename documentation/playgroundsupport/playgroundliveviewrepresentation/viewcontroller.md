@@ -1,7 +1,8 @@
 # PlaygroundLiveViewRepresentation.viewController(_:)
 
 **Framework**: Playground Support  
-**Kind**: enumelt
+**Kind**: enumelt  
+**Role**: Enumeration Case
 
 A UIKit view controller whose view is displayed as the live view.
 
@@ -17,7 +18,8 @@ case viewController(UIViewController)
 
 ## See Also
 
-- [PlaygroundLiveViewRepresentation.view(_:)](playgroundliveviewrepresentation/view.md)
+### Displaying UIKit Views
+- [PlaygroundLiveViewRepresentation.view(_:)](./view.md)
   A UIKit view that's displayed as the live view.
 
 

@@ -1,15 +1,16 @@
 # featureChannelOffset
 
 **Framework**: Metal Performance Shaders  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -17,9 +18,14 @@
 var featureChannelOffset: Int
 ```
 
+```c
+NSUInteger featureChannelOffset;
+```
+
 ## See Also
 
-- [var numberOfFeatureChannelsToReadWrite: Int](mpsimagereadwriteparams/numberoffeaturechannelstoreadwrite.md)
+### Instance Properties
+- [var numberOfFeatureChannelsToReadWrite: Int](./numberoffeaturechannelstoreadwrite.md)
 
 
 ---

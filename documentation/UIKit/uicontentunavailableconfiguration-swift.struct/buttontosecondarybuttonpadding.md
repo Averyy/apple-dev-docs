@@ -1,7 +1,8 @@
 # buttonToSecondaryButtonPadding
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The padding between the primary button and secondary button.
 
@@ -10,7 +11,7 @@ The padding between the primary button and secondary button.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - tvOS 17.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

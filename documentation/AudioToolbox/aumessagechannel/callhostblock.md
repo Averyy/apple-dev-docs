@@ -1,7 +1,8 @@
 # callHostBlock
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A callback for the audio unit to send a message to the host.
 
@@ -16,6 +17,18 @@ A callback for the audio unit to send a message to the host.
 
 ```swift
 optional var callHostBlock: CallHostBlock? { get set }
+```
+
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, copy, nullable) CallHostBlock callHostBlock;
+```
+
+*macOS*
+
+```objc
+@property (atomic, copy, nullable) CallHostBlock callHostBlock;
 ```
 
 #### Discussion

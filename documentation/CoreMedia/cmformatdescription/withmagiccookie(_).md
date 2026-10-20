@@ -1,7 +1,8 @@
 # withMagicCookie(_:)
 
 **Framework**: Core Media  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the magic cookie.
 

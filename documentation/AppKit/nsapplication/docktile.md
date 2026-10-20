@@ -1,7 +1,8 @@
 # dockTile
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s Dock tile.
 
@@ -14,9 +15,14 @@ The app’s Dock tile.
 var dockTile: NSDockTile { get }
 ```
 
+```objc
+@property (strong, readonly) NSDockTile * dockTile;
+```
+
 ## See Also
 
-- [var applicationIconImage: NSImage!](nsapplication/applicationiconimage.md)
+### Accessing the dock tile
+- [var applicationIconImage: NSImage!](./applicationiconimage.md)
   The image used for the app’s icon.
 
 

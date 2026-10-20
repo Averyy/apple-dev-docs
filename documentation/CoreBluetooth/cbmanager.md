@@ -1,7 +1,8 @@
 # CBManager
 
 **Framework**: Core Bluetooth  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The abstract base class that manages central and peripheral objects.
 
@@ -20,44 +21,49 @@ The abstract base class that manages central and peripheral objects.
 class CBManager
 ```
 
+```objc
+@interface CBManager : NSObject
+```
+
 ## Topics
 
 ### Accessing the Manager’s Properties
-- [var state: CBManagerState](cbmanager/state.md)
+- [var state: CBManagerState](./cbmanager/state.md)
   The current state of the manager.
-- [enum CBManagerState](cbmanagerstate.md)
+- [enum CBManagerState](./cbmanagerstate.md)
   The possible states of a Core Bluetooth manager.
 ### Determining Authorization State
-- [class var authorization: CBManagerAuthorization](cbmanager/authorization-swift.type.property.md)
+- [class var authorization: CBManagerAuthorization](./cbmanager/authorization-swift.type.property.md)
   The current authorization status for using Bluetooth.
-- [enum CBManagerAuthorization](cbmanagerauthorization.md)
+- [enum CBManagerAuthorization](./cbmanagerauthorization.md)
   The current authorization state of a Core Bluetooth manager.
 ### Deprecated Properties
-- [var authorization: CBManagerAuthorization](cbmanager/authorization-swift.property.md)
+- [var authorization: CBManagerAuthorization](./cbmanager/authorization-swift.property.md)
   The current authorization status for using Bluetooth.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [CBCentralManager](cbcentralmanager.md)
-- [CBPeripheralManager](cbperipheralmanager.md)
+- [CBCentralManager](./cbcentralmanager.md)
+- [CBPeripheralManager](./cbperipheralmanager.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class CBATTRequest](cbattrequest.md)
+### Supporting Types
+- [class CBATTRequest](./cbattrequest.md)
   A request that uses the Attribute Protocol (ATT).
-- [class CBPeer](cbpeer.md)
+- [class CBPeer](./cbpeer.md)
   An object that represents a remote device.
-- [class CBUUID](cbuuid.md)
+- [class CBUUID](./cbuuid.md)
   A universally unique identifier, as defined by Bluetooth standards.
 
 

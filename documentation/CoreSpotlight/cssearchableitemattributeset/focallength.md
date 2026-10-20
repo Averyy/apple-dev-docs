@@ -1,7 +1,8 @@
 # focalLength
 
 **Framework**: Core Spotlight  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The actual focal length of the lens, in millimeters.
 
@@ -18,37 +19,42 @@ The actual focal length of the lens, in millimeters.
 var focalLength: NSNumber? { get set }
 ```
 
+```objc
+@property (strong, nullable) NSNumber * focalLength;
+```
+
 ## See Also
 
-- [var isoSpeed: NSNumber?](cssearchableitemattributeset/isospeed.md)
+### Describing images
+- [var isoSpeed: NSNumber?](./isospeed.md)
   The ISO speed setting at the time the camera captured the image.
-- [var acquisitionMake: String?](cssearchableitemattributeset/acquisitionmake.md)
+- [var acquisitionMake: String?](./acquisitionmake.md)
   The manufacturer of the device that captured the image.
-- [var acquisitionModel: String?](cssearchableitemattributeset/acquisitionmodel.md)
+- [var acquisitionModel: String?](./acquisitionmodel.md)
   The model of the device that captured the image.
-- [var aperture: NSNumber?](cssearchableitemattributeset/aperture.md)
+- [var aperture: NSNumber?](./aperture.md)
   The size of the lens aperture at the time the camera captured the image, as a log-scale APEX value.
-- [var bitsPerSample: NSNumber?](cssearchableitemattributeset/bitspersample.md)
+- [var bitsPerSample: NSNumber?](./bitspersample.md)
   The number of bits per sample.
-- [var cameraOwner: String?](cssearchableitemattributeset/cameraowner.md)
+- [var cameraOwner: String?](./cameraowner.md)
   The owner of the camera that captured the image.
-- [var colorSpace: String?](cssearchableitemattributeset/colorspace.md)
+- [var colorSpace: String?](./colorspace.md)
   The color space model the image uses, such as RGB, CMYK, YUV, or YCbCr.
-- [var flashOn: NSNumber?](cssearchableitemattributeset/flashon.md)
+- [var flashOn: NSNumber?](./flashon.md)
   A value that indicates if the camera used a flash to capture the image.
-- [var focalLength35mm: NSNumber?](cssearchableitemattributeset/focallength35mm.md)
+- [var focalLength35mm: NSNumber?](./focallength35mm.md)
   A value that indicates if the focal length is 35mm.
-- [var layerNames: [String]?](cssearchableitemattributeset/layernames.md)
+- [var layerNames: [String]?](./layernames.md)
   An array that contains the names of the various layers in the file.
-- [var lensModel: String?](cssearchableitemattributeset/lensmodel.md)
+- [var lensModel: String?](./lensmodel.md)
   The model of the lens that captured the image.
-- [var orientation: NSNumber?](cssearchableitemattributeset/orientation.md)
+- [var orientation: NSNumber?](./orientation.md)
   The orientation of the data.
-- [var pixelCount: NSNumber?](cssearchableitemattributeset/pixelcount.md)
+- [var pixelCount: NSNumber?](./pixelcount.md)
   The total number of pixels in the image.
-- [var pixelHeight: NSNumber?](cssearchableitemattributeset/pixelheight.md)
+- [var pixelHeight: NSNumber?](./pixelheight.md)
   The height of the item, such as image or video frame height, in pixels.
-- [var pixelWidth: NSNumber?](cssearchableitemattributeset/pixelwidth.md)
+- [var pixelWidth: NSNumber?](./pixelwidth.md)
   The width of the item, such as image or video frame width, in pixels.
 
 

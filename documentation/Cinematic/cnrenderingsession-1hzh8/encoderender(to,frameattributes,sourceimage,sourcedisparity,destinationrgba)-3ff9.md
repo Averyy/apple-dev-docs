@@ -1,16 +1,19 @@
 # encodeRender(to:frameAttributes:sourceImage:sourceDisparity:destinationRGBA:)
 
 **Framework**: Cinematic  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encode a command to render a shallow depth of field (SDoF) image to a metal texture as RGBA.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst ?+
-- macOS 14.0+
-- tvOS 17.0+
+- iOS 17.0+ - Deprecated in 27.0
+- iPadOS 17.0+ - Deprecated in 27.0
+- Mac Catalyst
+- macOS 14.0+ - Deprecated in 27.0
+- tvOS 17.0+ - Deprecated in 27.0
+
+> **Deprecated**: Use method using CVReadOnlyPixelBuffer: encodeRender(to:frameAttributes:sourceImage:sourceDisparity:destinationRGBA:)
 
 ## Declaration
 

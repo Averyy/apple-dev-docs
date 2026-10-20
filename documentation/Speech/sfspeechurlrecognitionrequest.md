@@ -1,7 +1,8 @@
 # SFSpeechURLRecognitionRequest
 
 **Framework**: Speech  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A request to recognize speech in a recorded audio file.
 
@@ -16,6 +17,10 @@ A request to recognize speech in a recorded audio file.
 
 ```swift
 class SFSpeechURLRecognitionRequest
+```
+
+```objc
+@interface SFSpeechURLRecognitionRequest : SFSpeechRecognitionRequest
 ```
 
 #### Overview
@@ -59,31 +64,32 @@ func recognizeFile(url: URL) {
 ## Topics
 
 ### Creating a speech recognition request
-- [init(url: URL)](sfspeechurlrecognitionrequest/init(url:)-3ymmz.md)
+- [init(url: URL)](./sfspeechurlrecognitionrequest/init%28url%29-3ymmz.md)
   Creates a speech recognition request, initialized with the specified URL.
 ### Accessing the audio file URL
-- [var url: URL](sfspeechurlrecognitionrequest/url.md)
+- [var url: URL](./sfspeechurlrecognitionrequest/url.md)
   The URL of the audio file.
 ### Initializers
-- [init(URL: URL)](sfspeechurlrecognitionrequest/init(url:)-xca9.md)
+- [init(URL: URL)](./sfspeechurlrecognitionrequest/init%28url%29-xca9.md)
 
 ## Relationships
 
 ### Inherits From
-- [SFSpeechRecognitionRequest](sfspeechrecognitionrequest.md)
+- [SFSpeechRecognitionRequest](./sfspeechrecognitionrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class SFSpeechAudioBufferRecognitionRequest](sfspeechaudiobufferrecognitionrequest.md)
+### Audio sources
+- [class SFSpeechAudioBufferRecognitionRequest](./sfspeechaudiobufferrecognitionrequest.md)
   A request to recognize speech from captured audio content, such as audio from the device’s microphone.
-- [class SFSpeechRecognitionRequest](sfspeechrecognitionrequest.md)
+- [class SFSpeechRecognitionRequest](./sfspeechrecognitionrequest.md)
   An abstract class that represents a request to recognize speech from an audio source.
 
 

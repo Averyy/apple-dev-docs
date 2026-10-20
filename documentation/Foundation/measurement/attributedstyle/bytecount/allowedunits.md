@@ -1,7 +1,8 @@
 # allowedUnits
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The units the format style can use to express the byte count.
 
@@ -22,17 +23,18 @@ var allowedUnits: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount.
 
 ## See Also
 
-- [Measurement.AttributedStyle.ByteCount.Units](measurement/attributedstyle/bytecount/units.md)
+### Accessing style properties
+- [Measurement.AttributedStyle.ByteCount.Units](./units.md)
   The type the measurement format style uses to represent byte-counting units.
-- [var spellsOutZero: Bool](measurement/attributedstyle/bytecount/spellsoutzero.md)
+- [var spellsOutZero: Bool](./spellsoutzero.md)
   A Boolean value that indicates whether the format style should spell out zero-byte values as text.
-- [var includesActualByteCount: Bool](measurement/attributedstyle/bytecount/includesactualbytecount.md)
+- [var includesActualByteCount: Bool](./includesactualbytecount.md)
   A Boolean value that indicates whether the format style should include the exact byte count, in addition to expressing it in terms of units.
-- [var style: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount.Style](measurement/attributedstyle/bytecount/style-swift.property.md)
+- [var style: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount.Style](./style-swift.property.md)
   The style of byte count to express, such as memory or file system storage.
-- [Measurement.AttributedStyle.ByteCount.Style](measurement/attributedstyle/bytecount/style-swift.typealias.md)
+- [Measurement.AttributedStyle.ByteCount.Style](./style-swift.typealias.md)
   The type used to represent the style of the formatted byte count.
-- [var locale: Locale](measurement/attributedstyle/bytecount/locale.md)
+- [var locale: Locale](./locale.md)
   The locale to use to format the numeric part of the byte count.
 
 

@@ -1,7 +1,8 @@
 # isApplicationService
 
 **Framework**: Wi-Fi Aware  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the devices are listening for an application service.
 
@@ -22,9 +23,10 @@ The value is `true` if a device is listening for an application service. The val
 
 ## See Also
 
-- [func configureParameters(NWParameters)](wapublisherlistener/configureparameters(_:).md)
+### Creating publisher implementation details
+- [func configureParameters(NWParameters)](./configureparameters%28_%29.md)
   Configures the provided parameters for a Wi-Fi Aware publish operation and connection.
-- [var service: NWListener.Service](wapublisherlistener/service.md)
+- [var service: NWListener.Service](./service.md)
   The service data for the Wi-Fi Aware publish operation.
 
 

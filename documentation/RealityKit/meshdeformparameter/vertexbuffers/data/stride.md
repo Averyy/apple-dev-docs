@@ -1,7 +1,8 @@
 # stride
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The stride of the vertex data.
 
@@ -21,7 +22,8 @@ let stride: Int
 
 ## See Also
 
-- [let buffer: Buffer](meshdeformparameter/vertexbuffers/data/buffer.md)
+### Accessing buffer data
+- [let buffer: Buffer](./buffer.md)
   The allocation containing the vertex data.
 
 

@@ -1,7 +1,8 @@
 # identity()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the identity that the user chose in the panel or sheet.
 
@@ -12,6 +13,10 @@ Returns the identity that the user chose in the panel or sheet.
 
 ```swift
 func identity() -> Unmanaged<SecIdentity>!
+```
+
+```objc
+- (SecIdentityRef) identity;
 ```
 
 

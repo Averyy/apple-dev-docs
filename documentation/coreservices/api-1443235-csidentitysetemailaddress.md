@@ -1,7 +1,8 @@
 # CSIdentitySetEmailAddress(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.5+
@@ -10,6 +11,10 @@
 
 ```swift
 func CSIdentitySetEmailAddress(_ identity: CSIdentity!, _ emailAddress: CFString!)
+```
+
+```c
+void CSIdentitySetEmailAddress(CSIdentityRef identity, CFStringRef emailAddress);
 ```
 
 

@@ -1,7 +1,8 @@
 # smoothsColors
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Whether cubic (smooth) interpolation should be used for the colors in the mesh (rather than only for the shape of the mesh).
 

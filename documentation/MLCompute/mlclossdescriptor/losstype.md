@@ -1,16 +1,17 @@
 # lossType
 
 **Framework**: ML Compute  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The loss function type.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,19 +19,24 @@ The loss function type.
 var lossType: MLCLossType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) MLCLossType lossType;
+```
+
 ## See Also
 
-- [var reductionType: MLCReductionType](mlclossdescriptor/reductiontype.md)
+### Inspecting Loss Descriptors
+- [var reductionType: MLCReductionType](./reductiontype.md)
   The reduction operation performed by the loss function.
-- [var weight: Float](mlclossdescriptor/weight.md)
+- [var weight: Float](./weight.md)
   The scale factor you apply to each element of a result.
-- [var labelSmoothing: Float](mlclossdescriptor/labelsmoothing.md)
+- [var labelSmoothing: Float](./labelsmoothing.md)
   The value for label smoothing.
-- [var classCount: Int](mlclossdescriptor/classcount.md)
+- [var classCount: Int](./classcount.md)
   The number of classes.
-- [var epsilon: Float](mlclossdescriptor/epsilon.md)
+- [var epsilon: Float](./epsilon.md)
   The epsilon value.
-- [var delta: Float](mlclossdescriptor/delta.md)
+- [var delta: Float](./delta.md)
   The delta value.
 
 

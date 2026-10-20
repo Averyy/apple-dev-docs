@@ -1,14 +1,15 @@
 # suword
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 int suword(user_addr_t addr, long word);
 ```
 

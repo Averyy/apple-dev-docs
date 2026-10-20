@@ -1,7 +1,8 @@
 # floorsDescended
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The approximate number of floors descended by walking.
 
@@ -18,13 +19,18 @@ The approximate number of floors descended by walking.
 var floorsDescended: NSNumber? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSNumber * floorsDescended;
+```
+
 #### Discussion
 
 This value reflects only the floors descended while the user was walking or running down stairs and does not reflect the floors descended by elevator or other assisted means. A single floor has a height of approximately three meters. The value in this property is `nil` when floor counting is not supported on the current device.
 
 ## See Also
 
-- [var floorsAscended: NSNumber?](cmpedometerdata/floorsascended.md)
+### Getting the Floor Counts
+- [var floorsAscended: NSNumber?](./floorsascended.md)
   The approximate number of floors ascended by walking.
 
 

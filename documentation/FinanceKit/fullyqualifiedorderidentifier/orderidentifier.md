@@ -1,7 +1,8 @@
 # orderIdentifier
 
 **Framework**: FinanceKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A string the merchant uses to identify a specific customer order.
 
@@ -18,7 +19,8 @@ var orderIdentifier: String
 
 ## See Also
 
-- [var orderTypeIdentifier: String](fullyqualifiedorderidentifier/ordertypeidentifier.md)
+### Instance Properties
+- [var orderTypeIdentifier: String](./ordertypeidentifier.md)
   A string that describes the order type.
 
 

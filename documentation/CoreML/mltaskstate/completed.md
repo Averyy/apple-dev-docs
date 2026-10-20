@@ -1,7 +1,8 @@
 # MLTaskState.completed
 
 **Framework**: Core ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The state of a machine learning task that has finished successfully.
 
@@ -20,9 +21,14 @@ The state of a machine learning task that has finished successfully.
 case completed
 ```
 
+```c
+MLTaskStateCompleted
+```
+
 ## See Also
 
-- [MLTaskState.failed](mltaskstate/failed.md)
+### Final states
+- [MLTaskState.failed](./failed.md)
   The state of a machine learning task that has terminated due to an error.
 
 

@@ -1,12 +1,13 @@
 # IOBluetoothHandsFreeCallType
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The format of the caller’s phone number.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ The format of the caller’s phone number.
 let IOBluetoothHandsFreeCallType: String
 ```
 
+```c
+extern NSString * const IOBluetoothHandsFreeCallType;
+```
+
 ## See Also
 
-- [let IOBluetoothHandsFreeCallNumber: String](iobluetoothhandsfreecallnumber.md)
+### Remote Number Information
+- [let IOBluetoothHandsFreeCallNumber: String](./iobluetoothhandsfreecallnumber.md)
   The caller’s phone number.
-- [let IOBluetoothHandsFreeCallName: String](iobluetoothhandsfreecallname.md)
+- [let IOBluetoothHandsFreeCallName: String](./iobluetoothhandsfreecallname.md)
   The name of the caller.
 
 

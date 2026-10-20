@@ -1,14 +1,15 @@
 # COMPLEX
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 typedef DSPComplex COMPLEX;
 ```
 

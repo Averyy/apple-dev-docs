@@ -1,14 +1,17 @@
 # alert
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The app posts an alert.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 10.0
+- iPadOS 8.0+ - Deprecated in 10.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: For more information, see [`UIUserNotificationSettings`](../uiusernotificationsettings.md).
 
 ## Declaration
 
@@ -16,11 +19,16 @@ The app posts an alert.
 static var alert: UIUserNotificationType { get }
 ```
 
+```c
+UIUserNotificationTypeAlert
+```
+
 ## See Also
 
-- [static var badge: UIUserNotificationType](uiusernotificationtype/badge.md)
+### Constants
+- [static var badge: UIUserNotificationType](./badge.md)
   The app badges its icon.
-- [static var sound: UIUserNotificationType](uiusernotificationtype/sound.md)
+- [static var sound: UIUserNotificationType](./sound.md)
   The app plays a sound.
 
 

@@ -1,7 +1,8 @@
 # enumeratedImageSizes
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of image sizes a model’s image feature accepts as input or produces as output.
 
@@ -20,9 +21,14 @@ An array of image sizes a model’s image feature accepts as input or produces a
 var enumeratedImageSizes: [MLImageSize] { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSArray<MLImageSize *> * enumeratedImageSizes;
+```
+
 ## See Also
 
-- [class MLImageSize](mlimagesize.md)
+### Accessing the enumerated image sizes
+- [class MLImageSize](../mlimagesize.md)
   The width and height of an image feature size.
 
 

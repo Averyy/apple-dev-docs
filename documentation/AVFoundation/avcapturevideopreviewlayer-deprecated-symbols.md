@@ -1,12 +1,13 @@
 # Deprecated symbols
 
-**Framework**: AVFoundation
+**Framework**: AVFoundation  
+**Role**: API Collection
 
 Review unsupported symbols and their replacements.
 
 #### Overview
 
-Configure the properties below on the associated [`AVCaptureConnection`](avcaptureconnection.md) instead.
+Configure the properties below on the associated [`AVCaptureConnection`](./avcaptureconnection.md) instead.
 
 
 ---

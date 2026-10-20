@@ -1,7 +1,8 @@
 # minphys
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adjust a buffer's count to be no more than maximum physical I/O transfer size for the host architecture.
 
@@ -10,11 +11,11 @@ Adjust a buffer's count to be no more than maximum physical I/O transfer size fo
 
 ## Declaration
 
-```swift
+```c
 u_int minphys(buf_t bp);
 ```
 
-#### Return_value
+#### Return Value
 
 New byte count.
 

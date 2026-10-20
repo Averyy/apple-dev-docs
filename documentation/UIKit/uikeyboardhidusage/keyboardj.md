@@ -1,7 +1,8 @@
 # UIKeyboardHIDUsage.keyboardJ
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The raw usage code 13 (decimal)/0D (hexadecimal).
 
@@ -18,37 +19,42 @@ The raw usage code 13 (decimal)/0D (hexadecimal).
 case keyboardJ
 ```
 
+```c
+UIKeyboardHIDUsageKeyboardJ
+```
+
 ## See Also
 
-- [UIKeyboardHIDUsage.keyboardA](uikeyboardhidusage/keyboarda.md)
+### Alphabetical keys
+- [UIKeyboardHIDUsage.keyboardA](./keyboarda.md)
   The raw usage code 4 (decimal)/04 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardB](uikeyboardhidusage/keyboardb.md)
+- [UIKeyboardHIDUsage.keyboardB](./keyboardb.md)
   The raw usage code 5 (decimal)/05 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardC](uikeyboardhidusage/keyboardc.md)
+- [UIKeyboardHIDUsage.keyboardC](./keyboardc.md)
   The raw usage code 6 (decimal)/06 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardD](uikeyboardhidusage/keyboardd.md)
+- [UIKeyboardHIDUsage.keyboardD](./keyboardd.md)
   The raw usage code 7 (decimal)/07 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardE](uikeyboardhidusage/keyboarde.md)
+- [UIKeyboardHIDUsage.keyboardE](./keyboarde.md)
   The raw usage code 8 (decimal)/08 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardF](uikeyboardhidusage/keyboardf.md)
+- [UIKeyboardHIDUsage.keyboardF](./keyboardf.md)
   The raw usage code 9 (decimal)/09 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardG](uikeyboardhidusage/keyboardg.md)
+- [UIKeyboardHIDUsage.keyboardG](./keyboardg.md)
   The raw usage code 10 (decimal)/0A (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardH](uikeyboardhidusage/keyboardh.md)
+- [UIKeyboardHIDUsage.keyboardH](./keyboardh.md)
   The raw usage code 11 (decimal)/0B (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardI](uikeyboardhidusage/keyboardi.md)
+- [UIKeyboardHIDUsage.keyboardI](./keyboardi.md)
   The raw usage code 12 (decimal)/0C (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardK](uikeyboardhidusage/keyboardk.md)
+- [UIKeyboardHIDUsage.keyboardK](./keyboardk.md)
   The raw usage code 14 (decimal)/0E (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardL](uikeyboardhidusage/keyboardl.md)
+- [UIKeyboardHIDUsage.keyboardL](./keyboardl.md)
   The raw usage code 15 (decimal)/0F (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardM](uikeyboardhidusage/keyboardm.md)
+- [UIKeyboardHIDUsage.keyboardM](./keyboardm.md)
   The raw usage code 16 (decimal)/10 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardN](uikeyboardhidusage/keyboardn.md)
+- [UIKeyboardHIDUsage.keyboardN](./keyboardn.md)
   The raw usage code 17 (decimal)/11 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardO](uikeyboardhidusage/keyboardo.md)
+- [UIKeyboardHIDUsage.keyboardO](./keyboardo.md)
   The raw usage code 18 (decimal)/12 (hexadecimal).
-- [UIKeyboardHIDUsage.keyboardP](uikeyboardhidusage/keyboardp.md)
+- [UIKeyboardHIDUsage.keyboardP](./keyboardp.md)
   The raw usage code 19 (decimal)/13 (hexadecimal).
 
 

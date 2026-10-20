@@ -1,7 +1,8 @@
 # allInstances
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The collection that contains all instances, excluding the background.
 
@@ -22,11 +23,12 @@ let allInstances: IndexSet
 
 ## See Also
 
-- [func instanceAtPoint(NormalizedPoint) -> IndexSet](instancemaskobservation/instanceatpoint(_:).md)
+### Getting instances
+- [func instanceAtPoint(NormalizedPoint) -> IndexSet](./instanceatpoint%28_%29.md)
   Returns an instance at the point you specify.
-- [let allInstancesMask: PixelBufferObservation](instancemaskobservation/allinstancesmask.md)
+- [let allInstancesMask: PixelBufferObservation](./allinstancesmask.md)
   The resulting mask that represents all instances.
-- [struct PixelBufferObservation](pixelbufferobservation.md)
+- [struct PixelBufferObservation](../pixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
 
 

@@ -1,14 +1,15 @@
 # kHFSExpandedTimesMask
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 15.0+
 
 ## Declaration
 
-```swift
+```c
 kHFSExpandedTimesMask = 0x20000000
 ```
 

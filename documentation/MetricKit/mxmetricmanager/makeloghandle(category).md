@@ -1,16 +1,19 @@
 # makeLogHandle(category:)
 
 **Framework**: MetricKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a log handle used for writing custom metric events.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.1+
-- macOS 12.0+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.1+ - Deprecated in 27.0
+- macOS 12.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use [`logHandle(category:)`](../metricmanager/loghandle%28category%29.md) instead.
 
 ## Declaration
 
@@ -18,13 +21,17 @@ Returns a log handle used for writing custom metric events.
 class func makeLogHandle(category: String) -> OSLog
 ```
 
+```objc
++ (os_log_t) makeLogHandleWithCategory:(NSString *) category;
+```
+
 #### Return Value
 
-A customized [`OSLog`](https://developer.apple.com/documentation/os/oslog) object used for writing custom metrics of the same category.
+A customized [`OSLog`](../../os/oslog.md) object used for writing custom metrics of the same category.
 
 #### Discussion
 
-The object returned by this method saves only custom signpost metrics. Other kinds of [`os_log`](https://developer.apple.com/documentation/os/os_log) messages aren’t persisted.
+The object returned by this method saves only custom signpost metrics. Other kinds of [`os_log`](../../os/os_log.md) messages aren’t persisted.
 
 ## Parameters
 

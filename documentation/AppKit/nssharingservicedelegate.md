@@ -1,12 +1,13 @@
 # NSSharingServiceDelegate
 
 **Framework**: AppKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A set of methods that you use to customize the position and animation of a share sheet, and to be notified whether the item is successfully shared.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,42 +15,47 @@ A set of methods that you use to customize the position and animation of a share
 protocol NSSharingServiceDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSSharingServiceDelegate <NSObject>
+```
+
 #### Overview
 
-See [`NSSharingService`](nssharingservice.md) for more information.
+See [`NSSharingService`](./nssharingservice.md) for more information.
 
 ## Topics
 
 ### Sharing Items
-- [func sharingService(NSSharingService, willShareItems: [Any])](nssharingservicedelegate/sharingservice(_:willshareitems:).md)
+- [func sharingService(NSSharingService, willShareItems: [Any])](./nssharingservicedelegate/sharingservice%28_,willshareitems%29.md)
   Invoked when the sharing service will share the specified items.
-- [func sharingService(NSSharingService, didShareItems: [Any])](nssharingservicedelegate/sharingservice(_:didshareitems:).md)
+- [func sharingService(NSSharingService, didShareItems: [Any])](./nssharingservicedelegate/sharingservice%28_,didshareitems%29.md)
   Invoked when the sharing service has finished sharing the items.
-- [func sharingService(NSSharingService, didFailToShareItems: [Any], error: any Error)](nssharingservicedelegate/sharingservice(_:didfailtoshareitems:error:).md)
+- [func sharingService(NSSharingService, didFailToShareItems: [Any], error: any Error)](./nssharingservicedelegate/sharingservice%28_,didfailtoshareitems,error%29.md)
   Invoked when the sharing service encountered an error when sharing items.
 ### Customizing Transition Animation
-- [func sharingService(NSSharingService, sourceFrameOnScreenForShareItem: Any) -> NSRect](nssharingservicedelegate/sharingservice(_:sourceframeonscreenforshareitem:).md)
+- [func sharingService(NSSharingService, sourceFrameOnScreenForShareItem: Any) -> NSRect](./nssharingservicedelegate/sharingservice%28_,sourceframeonscreenforshareitem%29.md)
   Invoked when the sharing service is performed and the sharing window is displayed, to present a transition between the original items and the sharing window.
-- [func sharingService(NSSharingService, transitionImageForShareItem: Any, contentRect: UnsafeMutablePointer<NSRect>) -> NSImage?](nssharingservicedelegate/sharingservice(_:transitionimageforshareitem:contentrect:).md)
+- [func sharingService(NSSharingService, transitionImageForShareItem: Any, contentRect: UnsafeMutablePointer<NSRect>) -> NSImage?](./nssharingservicedelegate/sharingservice%28_,transitionimageforshareitem,contentrect%29.md)
   Invoked to allow returning a custom transition image when sharing an item.
-- [func sharingService(NSSharingService, sourceWindowForShareItems: [Any], sharingContentScope: UnsafeMutablePointer<NSSharingService.SharingContentScope>) -> NSWindow?](nssharingservicedelegate/sharingservice(_:sourcewindowforshareitems:sharingcontentscope:).md)
+- [func sharingService(NSSharingService, sourceWindowForShareItems: [Any], sharingContentScope: UnsafeMutablePointer<NSSharingService.SharingContentScope>) -> NSWindow?](./nssharingservicedelegate/sharingservice%28_,sourcewindowforshareitems,sharingcontentscope%29.md)
   Returns the window that contained the share items.
-- [NSSharingService.SharingContentScope](nssharingservice/sharingcontentscope.md)
+- [NSSharingService.SharingContentScope](./nssharingservice/sharingcontentscope.md)
   The sharing scope constants specify the nature of the things you are sharing.
 ### Getting an Anchor View
-- [func anchoringView(for: NSSharingService, showRelativeTo: UnsafeMutablePointer<NSRect>, preferredEdge: UnsafeMutablePointer<NSRectEdge>) -> NSView?](nssharingservicedelegate/anchoringview(for:showrelativeto:preferrededge:).md)
+- [func anchoringView(for: NSSharingService, showRelativeTo: UnsafeMutablePointer<NSRect>, preferredEdge: UnsafeMutablePointer<NSRectEdge>) -> NSView?](./nssharingservicedelegate/anchoringview%28for,showrelativeto,preferrededge%29.md)
   The method invoked when the service is performed and wants to display its contents in a popover.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 ### Inherited By
-- [NSCloudSharingServiceDelegate](nscloudsharingservicedelegate.md)
+- [NSCloudSharingServiceDelegate](./nscloudsharingservicedelegate.md)
 
 ## See Also
 
-- [var delegate: (any NSSharingServiceDelegate)?](nssharingservice/delegate.md)
+### Managing the Delegate
+- [var delegate: (any NSSharingServiceDelegate)?](./nssharingservice/delegate.md)
   Specifies the delegate of the sharing service.
 
 

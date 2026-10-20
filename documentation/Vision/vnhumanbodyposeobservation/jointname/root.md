@@ -1,7 +1,8 @@
 # root
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The root (waist).
 
@@ -17,6 +18,10 @@ The root (waist).
 
 ```swift
 static let root: VNHumanBodyPoseObservation.JointName
+```
+
+```c
+extern VNHumanBodyPoseObservationJointName const VNHumanBodyPoseObservationJointNameRoot;
 ```
 
 

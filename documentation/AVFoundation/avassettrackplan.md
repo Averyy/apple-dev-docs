@@ -1,7 +1,8 @@
 # AVAssetTrackPlan
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 AVAssetTrackPlan holds information about a track and how it should be segmented and executed in an incremental writing session.
 
@@ -19,6 +20,10 @@ AVAssetTrackPlan holds information about a track and how it should be segmented 
 class AVAssetTrackPlan
 ```
 
+```objc
+@interface AVAssetTrackPlan : NSObject
+```
+
 #### Overview
 
 Call AVAssetWritingPlanner’s “planTrack:withSegmentsGeneratedBy:” method to add an AVAssetTrackPlan to the planner to include it in the incremental writing session.
@@ -26,45 +31,46 @@ Call AVAssetWritingPlanner’s “planTrack:withSegmentsGeneratedBy:” method t
 ## Topics
 
 ### Creating a track plan
-- [init(mediaType: AVMediaType, segmentConfigurations: [AVPlannedSegmentConfiguration], assemblyTrackID: CMPersistentTrackID)](avassettrackplan/init(mediatype:segmentconfigurations:assemblytrackid:).md)
+- [init(mediaType: AVMediaType, segmentConfigurations: [AVPlannedSegmentConfiguration], assemblyTrackID: CMPersistentTrackID)](./avassettrackplan/init%28mediatype,segmentconfigurations,assemblytrackid%29.md)
   Returns an instance of AVAssetTrackPlan
 ### Inspecting the track plan
-- [var mediaType: AVMediaType](avassettrackplan/mediatype.md)
+- [var mediaType: AVMediaType](./avassettrackplan/mediatype.md)
   The media type of this track.
-- [var segmentConfigurations: [AVPlannedSegmentConfiguration]](avassettrackplan/segmentconfigurations.md)
+- [var segmentConfigurations: [AVPlannedSegmentConfiguration]](./avassettrackplan/segmentconfigurations.md)
   Array of AVPlannedSegmentConfigurations, each element specifying the configuration of a planned segment, ordered in output PTS order.
-- [var assemblyTrackID: CMPersistentTrackID](avassettrackplan/assemblytrackid.md)
+- [var assemblyTrackID: CMPersistentTrackID](./avassettrackplan/assemblytrackid.md)
   This is the track ID of this track when it is included in the assemblyComposition the planner passes to the completion handler to assemble all planned segments of all tracks into a single AVComposition.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVAssetVideoTrackPlan](avassetvideotrackplan.md)
+- [AVAssetVideoTrackPlan](./avassetvideotrackplan.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVAssetWritingPlanner](avassetwritingplanner.md)
+### Planned export
+- [class AVAssetWritingPlanner](./avassetwritingplanner.md)
   AVAssetWritingPlanner orchestrates incremental writing of media files.
-- [class AVAssetWritingPlannerProgress](avassetwritingplannerprogress.md)
+- [class AVAssetWritingPlannerProgress](./avassetwritingplannerprogress.md)
   AVAssetWritingPlannerProgress tracks the progress of incremental writing for each track in an AVAssetWritingPlanner session.
-- [class AVAssetVideoTrackPlan](avassetvideotrackplan.md)
+- [class AVAssetVideoTrackPlan](./avassetvideotrackplan.md)
   AVAssetVideoTrackPlan holds information about a track and how it should be segmented and executed in an incremental writing session.
-- [class AVPlannedSegmentConfiguration](avplannedsegmentconfiguration.md)
+- [class AVPlannedSegmentConfiguration](./avplannedsegmentconfiguration.md)
   AVPlannedSegmentConfiguration describes the requirements for a planned segment in an incremental writing session executed by the AVAssetWritingPlanner. Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
-- [class AVPlannedVideoSegmentConfiguration](avplannedvideosegmentconfiguration.md)
+- [class AVPlannedVideoSegmentConfiguration](./avplannedvideosegmentconfiguration.md)
   AVPlannedVideoSegmentConfiguration describes the requirements for a planned video segment in an incremental writing session executed by the AVAssetWritingPlanner.
-- [class AVPlannedSegmentWritingRequest](avplannedsegmentwritingrequest.md)
+- [class AVPlannedSegmentWritingRequest](./avplannedsegmentwritingrequest.md)
   AVPlannedSegmentWritingRequest encompasses a request from the AVAssetWritingPlanner to the client code to write one incremental track segment.
-- [class AVPlannedVideoSegmentWritingRequest](avplannedvideosegmentwritingrequest.md)
+- [class AVPlannedVideoSegmentWritingRequest](./avplannedvideosegmentwritingrequest.md)
   AVPlannedVideoSegmentWritingRequest encompasses a request from the AVAssetWritingPlanner to the client code to write one incremental video track segment with compression.
 
 

@@ -1,7 +1,8 @@
 # placeLightProbes(withDensity:heuristic:using:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Automatically creates and places light probes for use in illuminating a scene.
 
@@ -19,17 +20,21 @@ Automatically creates and places light probes for use in illuminating a scene.
 class func placeLightProbes(withDensity value: Float, heuristic type: MDLProbePlacement, using dataSource: any MDLLightProbeIrradianceDataSource) -> [MDLLightProbe]
 ```
 
+```objc
++ (NSArray<MDLLightProbe *> *) placeLightProbesWithDensity:(float) value heuristic:(MDLProbePlacement) type usingIrradianceDataSource:(id<MDLLightProbeIrradianceDataSource>) dataSource;
+```
+
 #### Return Value
 
 An array of light probe objects for use in the scene.
 
 #### Discussion
 
-When you call this method, you must pass a custom object implementing the [`MDLLightProbeIrradianceDataSource`](mdllightprobeirradiancedatasource.md) protocol. Model I/O queries this object to determine how to place light probes.
+When you call this method, you must pass a custom object implementing the [`MDLLightProbeIrradianceDataSource`](../mdllightprobeirradiancedatasource.md) protocol. Model I/O queries this object to determine how to place light probes.
 
-When you use the [`MDLProbePlacement.uniformGrid`](mdlprobeplacement/uniformgrid.md) heuristic,  Model I/O simply divides the [`boundingBox`](mdllightprobeirradiancedatasource/boundingbox.md) region your data source provides into `value` units in each dimension, and creates an array of light probe objects to fill each position in the resulting grid.
+When you use the [`MDLProbePlacement.uniformGrid`](../mdlprobeplacement/uniformgrid.md) heuristic,  Model I/O simply divides the [`boundingBox`](../mdllightprobeirradiancedatasource/boundingbox.md) region your data source provides into `value` units in each dimension, and creates an array of light probe objects to fill each position in the resulting grid.
 
-When you use the [`MDLProbePlacement.irradianceDistribution`](mdlprobeplacement/irradiancedistribution.md) heuristic, Model I/O uses the same grid to sample information about the lighting conditions in your scene (by calling the [`sphericalHarmonicsLevel`](mdllightprobeirradiancedatasource/sphericalharmonicslevel.md) and [`sphericalHarmonicsCoefficients(atPosition:)`](mdllightprobeirradiancedatasource/sphericalharmonicscoefficients(atposition:).md) methods of your data source), then creates and positions light probes to optimally account for differences in lighting conditions across the scene.
+When you use the [`MDLProbePlacement.irradianceDistribution`](../mdlprobeplacement/irradiancedistribution.md) heuristic, Model I/O uses the same grid to sample information about the lighting conditions in your scene (by calling the [`sphericalHarmonicsLevel`](../mdllightprobeirradiancedatasource/sphericalharmonicslevel.md) and [`sphericalHarmonicsCoefficients(atPosition:)`](../mdllightprobeirradiancedatasource/sphericalharmonicscoefficients%28atposition%29.md) methods of your data source), then creates and positions light probes to optimally account for differences in lighting conditions across the scene.
 
 ## Parameters
 
@@ -39,8 +44,9 @@ When you use the [`MDLProbePlacement.irradianceDistribution`](mdlprobeplacement/
 
 ## See Also
 
-- [enum MDLProbePlacement](mdlprobeplacement.md)
-  Options affecting automatic placement of light probes in a scene, used with the [`placeLightProbes(withDensity:heuristic:using:)`](mdlasset/placelightprobes(withdensity:heuristic:using:).md) method.
+### Working with Lights
+- [enum MDLProbePlacement](../mdlprobeplacement.md)
+  Options affecting automatic placement of light probes in a scene, used with the [`placeLightProbes(withDensity:heuristic:using:)`](./placelightprobes%28withdensity,heuristic,using%29.md) method.
 
 
 ---

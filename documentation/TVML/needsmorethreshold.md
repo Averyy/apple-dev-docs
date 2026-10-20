@@ -1,6 +1,7 @@
 # needsMoreThreshold
 
-**Framework**: TVML
+**Framework**: TVML  
+**Role**: Article
 
 Sets the amount of remaining screen lengths before firing the needs more event.
 
@@ -12,23 +13,24 @@ Use the `needsMoreThreshold` attribute to specify when the needs more event is d
 <shelf needsMoreThreshold="2">
 ```
 
-##### Values for Needsmorethreshold
+##### Values for needsMoreThreshold
 
 - **Float**: The number of screen lengths of information left before the needs more event is dispatched.
 
-##### Elements That Use Needsmorethreshold
+##### Elements that Use needsMoreThreshold
 
-- [`grid`](grid.md)
-- [`shelf`](shelf.md)
-- [`stackTemplate`](stacktemplate.md)
+- [grid](./grid.md)
+- [shelf](./shelf.md)
+- [stackTemplate](./stacktemplate.md)
 
 ## See Also
 
-- [binding](binding.md)
+### Binding and DOM Manipulation
+- [binding](./binding.md)
   Associates information in a data item with an element.
-- [itemID](itemid.md)
+- [itemID](./itemid.md)
   Mark elements for reuse during DOM updates.
-- [prototype](prototype.md)
+- [prototype](./prototype.md)
   Associates a data item type with an element.
 
 

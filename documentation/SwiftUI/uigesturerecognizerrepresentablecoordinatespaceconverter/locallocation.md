@@ -1,7 +1,8 @@
 # localLocation
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The represented gesture recognizer’s current location in the coordinate space of the SwiftUI view it’s attached to.
 

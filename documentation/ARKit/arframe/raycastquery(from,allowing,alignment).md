@@ -1,7 +1,8 @@
 # raycastQuery(from:allowing:alignment:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Get a ray-cast query for a screen point.
 
@@ -15,9 +16,13 @@ Get a ray-cast query for a screen point.
 func raycastQuery(from point: CGPoint, allowing target: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment) -> ARRaycastQuery
 ```
 
+```objc
+- (ARRaycastQuery *) raycastQueryFromPoint:(CGPoint) point allowingTarget:(ARRaycastTarget) target alignment:(ARRaycastTargetAlignment) alignment;
+```
+
 #### Discussion
 
-To cast the ray, you pass the resulting query to your current session via [`raycast(_:)`](arsession/raycast(_:).md) or [`trackedRaycast(_:updateHandler:)`](arsession/trackedraycast(_:updatehandler:).md).
+To cast the ray, you pass the resulting query to your current session via [`raycast(_:)`](../arsession/raycast%28_%29.md) or [`trackedRaycast(_:updateHandler:)`](../arsession/trackedraycast%28_,updatehandler%29.md).
 
 ## Parameters
 
@@ -27,9 +32,10 @@ To cast the ray, you pass the resulting query to your current session via [`rayc
 
 ## See Also
 
-- [var anchors: [ARAnchor]](arframe/anchors.md)
+### Tracking and interacting with the real world
+- [var anchors: [ARAnchor]](./anchors.md)
   The list of anchors representing positions tracked or objects detected in the scene.
-- [func hitTest(CGPoint, types: ARHitTestResult.ResultType) -> [ARHitTestResult]](arframe/hittest(_:types:).md)
+- [func hitTest(CGPoint, types: ARHitTestResult.ResultType) -> [ARHitTestResult]](./hittest%28_,types%29.md)
   Searches for real-world objects or AR anchors in the captured camera image.
 
 

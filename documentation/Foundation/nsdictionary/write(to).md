@@ -1,7 +1,8 @@
 # write(to:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes a property list representation of the contents of the dictionary to a given URL.
 
@@ -20,15 +21,19 @@ Writes a property list representation of the contents of the dictionary to a giv
 func write(to url: URL) throws
 ```
 
+```objc
+- (BOOL) writeToURL:(NSURL *) url error:(NSError **) error;
+```
+
 #### Discussion
 
-This method recursively validates that all the contained objects are property list objects (instances of [`NSData`](nsdata.md), [`NSDate`](nsdate.md), [`NSNumber`](nsnumber.md), [`NSString`](nsstring.md), [`NSArray`](nsarray.md), or [`NSDictionary`](nsdictionary.md)) before writing out the file. The method throws an error if all the objects are not property list objects, because the resulting output wouldn’t be a valid property list.
+This method recursively validates that all the contained objects are property list objects (instances of [`NSData`](../nsdata.md), [`NSDate`](../nsdate.md), [`NSNumber`](../nsnumber.md), [`NSString`](../nsstring.md), [`NSArray`](../nsarray.md), or [`NSDictionary`](../nsdictionary.md)) before writing out the file. The method throws an error if all the objects are not property list objects, because the resulting output wouldn’t be a valid property list.
 
 If the dictionary’s contents are all property list objects, you can use the location written by this method to initialize a new dictionary with the instance method `NSDictionary/init(contentsOfURL:)-4pv16`.
 
-If you need greater control over the property list representation, use [`PropertyListSerialization`](propertylistserialization.md) instead.
+If you need greater control over the property list representation, use [`PropertyListSerialization`](../propertylistserialization.md) instead.
 
-For more information about property lists, see [`Property List Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html#//apple_ref/doc/uid/10000048i).
+For more information about property lists, see [Property List Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html#//apple_ref/doc/uid/10000048i).
 
 ## Parameters
 
@@ -36,9 +41,10 @@ For more information about property lists, see [`Property List Programming Guide
 
 ## See Also
 
-- [func write(to: URL, atomically: Bool) -> Bool](nsdictionary/write(to:atomically:).md)
+### Storing Dictionaries
+- [func write(to: URL, atomically: Bool) -> Bool](./write%28to,atomically%29.md)
   Writes a property list representation of the contents of the dictionary to a given URL.
-- [func write(toFile: String, atomically: Bool) -> Bool](nsdictionary/write(tofile:atomically:).md)
+- [func write(toFile: String, atomically: Bool) -> Bool](./write%28tofile,atomically%29.md)
   Writes a property list representation of the contents of the dictionary to a given path.
 
 

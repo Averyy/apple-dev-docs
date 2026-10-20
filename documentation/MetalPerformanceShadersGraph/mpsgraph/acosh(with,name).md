@@ -1,7 +1,8 @@
 # acosh(with:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Applies the inverse hyperbolic cosine operation to the input tensor elements.
 
@@ -17,6 +18,10 @@ Applies the inverse hyperbolic cosine operation to the input tensor elements.
 
 ```swift
 func acosh(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) acoshWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # IOUserVideoObjectPropertySelector
 
 **Framework**: VideoDriverKit  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A four character code which, along with the scope and element, specifies a specific piece of information about a video object.
 
@@ -10,7 +11,7 @@ A four character code which, along with the scope and element, specifies a speci
 
 ## Declaration
 
-```swift
+```c
 typedef uint32_t IOUserVideoObjectPropertySelector;
 ```
 
@@ -20,9 +21,10 @@ The property selector specifies the general classification of the property such 
 
 ## See Also
 
-- [PropertiesChanged](iouservideodriver/propertieschanged.md)
+### Communicating with the host
+- [PropertiesChanged](../iouservideodriver/propertieschanged.md)
   This method informs the host when the state of an driver’s object changes.
-- [IOUserVideoObjectID](videodriverkit/iouservideoobjectid.md)
+- [IOUserVideoObjectID](./iouservideoobjectid.md)
   A handle for a a specific video object.
 
 

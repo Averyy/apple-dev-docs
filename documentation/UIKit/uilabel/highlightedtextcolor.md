@@ -1,7 +1,8 @@
 # highlightedTextColor
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The highlight color for the label’s text.
 
@@ -9,7 +10,7 @@ The highlight color for the label’s text.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,15 +19,20 @@ The highlight color for the label’s text.
 var highlightedTextColor: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * highlightedTextColor;
+```
+
 #### Discussion
 
-Subclasses that use labels to implement a type of text button can use the value in this property when drawing the pressed state for the button. The label uses this value to display text whenever the [`isHighlighted`](uilabel/ishighlighted.md) property is [`true`](https://developer.apple.com/documentation/swift/true).
+Subclasses that use labels to implement a type of text button can use the value in this property when drawing the pressed state for the button. The label uses this value to display text whenever the [`isHighlighted`](./ishighlighted.md) property is [`true`](../../Swift/true.md).
 
 The default value of this property is `nil`.
 
 ## See Also
 
-- [var isHighlighted: Bool](uilabel/ishighlighted.md)
+### Managing highlight values
+- [var isHighlighted: Bool](./ishighlighted.md)
   A Boolean value that determines whether the label draws its text with a highlight.
 
 

@@ -1,7 +1,8 @@
 # index(_:offsetBy:limitedBy:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an index that is the specified distance from the given index, unless that distance is beyond a given limiting index.
 
@@ -19,6 +20,8 @@ Returns an index that is the specified distance from the given index, unless tha
 ```swift
 func index(_ i: FlattenSequence<Base>.Index, offsetBy n: Int, limitedBy limit: FlattenSequence<Base>.Index) -> FlattenSequence<Base>.Index?
 ```
+
+Available when `Base` conforms to `Collection` and `Base.Element` conforms to `Collection`.
 
 #### Return Value
 
@@ -46,7 +49,7 @@ print(j)
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection, unless the index passed as `limit` prevents offsetting beyond those bounds.
 
-> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the absolute value of `distance`.
+> **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the absolute value of `distance`.
 
 ## Parameters
 

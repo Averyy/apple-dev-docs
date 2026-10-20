@@ -1,7 +1,8 @@
 # SecExternalFormat.formatWrappedPKCS8
 
 **Framework**: Security  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Format for wrapped symmetric and private keys. PKCS8 is the Private-Key Information Syntax Standard from RSA Security.
 
@@ -12,6 +13,10 @@ Format for wrapped symmetric and private keys. PKCS8 is the Private-Key Informat
 
 ```swift
 case formatWrappedPKCS8
+```
+
+```c
+kSecFormatWrappedPKCS8
 ```
 
 

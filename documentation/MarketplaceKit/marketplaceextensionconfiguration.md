@@ -1,11 +1,12 @@
 # MarketplaceExtensionConfiguration
 
 **Framework**: MarketplaceKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
+- iOS 17.4+ - Deprecated in 26.0
+- iPadOS 17.4+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -17,13 +18,14 @@
 ## Relationships
 
 ### Inherits From
-- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionConfiguration](../ExtensionFoundation/appextensionconfiguration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [protocol MarketplaceExtension](marketplaceextension.md)
+### Deprecations
+- [protocol MarketplaceExtension](./marketplaceextension.md)
 
 
 ---

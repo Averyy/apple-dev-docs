@@ -1,7 +1,8 @@
 # runCustomizationPalette(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Displays the toolbar’s customization palette and handles any user-initiated customizations.
 
@@ -9,12 +10,16 @@ Displays the toolbar’s customization palette and handles any user-initiated cu
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func runCustomizationPalette(_ sender: Any?)
+```
+
+```objc
+- (void) runCustomizationPalette:(id) sender;
 ```
 
 #### Discussion
@@ -27,7 +32,8 @@ While the customization palette is visible, the toolbar calls methods of its del
 
 ## See Also
 
-- [var customizationPaletteIsRunning: Bool](nstoolbar/customizationpaletteisrunning.md)
+### Displaying the customization palette
+- [var customizationPaletteIsRunning: Bool](./customizationpaletteisrunning.md)
   A Boolean value that indicates whether the toolbar’s customization palette is in use.
 
 

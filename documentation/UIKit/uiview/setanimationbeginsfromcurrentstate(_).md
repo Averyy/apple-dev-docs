@@ -1,15 +1,18 @@
 # setAnimationBeginsFromCurrentState(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Sets whether the animation should begin playing from the current state.
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.1+
-- tvOS ?+
+- iOS 2.0+ - Deprecated in 13.0
+- iPadOS 2.0+ - Deprecated in 13.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+- tvOS - Deprecated in 13.0
+
+> **Deprecated**: Use [`animate(withDuration:delay:options:animations:completion:)`](./animate%28withduration,delay,options,animations,completion%29.md) instead.
 
 ## Declaration
 
@@ -17,47 +20,52 @@ Sets whether the animation should begin playing from the current state.
 class func setAnimationBeginsFromCurrentState(_ fromCurrentState: Bool)
 ```
 
+```objc
++ (void) setAnimationBeginsFromCurrentState:(BOOL) fromCurrentState;
+```
+
 #### Discussion
 
-If set to [`true`](https://developer.apple.com/documentation/swift/true) when an animation is in flight, the current view position of the in-flight animation is used as the starting state for the new animation. If set to [`false`](https://developer.apple.com/documentation/swift/false), the in-flight animation ends before the new animation begins using the last view position as the starting state. This method does nothing if an animation is not in flight or invoked outside of an animation block. Use the [`beginAnimations(_:context:)`](uiview/beginanimations(_:context:).md) class method to start and the [`commitAnimations()`](uiview/commitanimations().md) class method to end an animation block. The default value is [`false`](https://developer.apple.com/documentation/swift/false).
+If set to [`true`](../../Swift/true.md) when an animation is in flight, the current view position of the in-flight animation is used as the starting state for the new animation. If set to [`false`](../../Swift/false.md), the in-flight animation ends before the new animation begins using the last view position as the starting state. This method does nothing if an animation is not in flight or invoked outside of an animation block. Use the [`beginAnimations(_:context:)`](./beginanimations%28_,context%29.md) class method to start and the [`commitAnimations()`](./commitanimations%28%29.md) class method to end an animation block. The default value is [`false`](../../Swift/false.md).
 
-Use of this method is discouraged in iOS 4.0 and later. Instead, you should use the[`animate(withDuration:delay:options:animations:completion:)`](uiview/animate(withduration:delay:options:animations:completion:).md) method to specify your animations and the animation options.
+Use of this method is discouraged in iOS 4.0 and later. Instead, you should use the[`animate(withDuration:delay:options:animations:completion:)`](./animate%28withduration,delay,options,animations,completion%29.md) method to specify your animations and the animation options.
 
 ## Parameters
 
-- `fromCurrentState`: Specify [`true`](https://developer.apple.com/documentation/swift/true) if animations should begin from their currently visible state; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+- `fromCurrentState`: Specify [`true`](../../Swift/true.md) if animations should begin from their currently visible state; otherwise, [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [class func beginAnimations(String?, context: UnsafeMutableRawPointer?)](uiview/beginanimations(_:context:).md)
+### Deprecated methods
+- [class func beginAnimations(String?, context: UnsafeMutableRawPointer?)](./beginanimations%28_,context%29.md)
   Marks the beginning of a begin/commit animation block.
-- [class func commitAnimations()](uiview/commitanimations.md)
+- [class func commitAnimations()](./commitanimations%28%29.md)
   Marks the end of a begin/commit animation block and schedules the animations for execution.
-- [class func setAnimationStart(Date)](uiview/setanimationstart(_:).md)
+- [class func setAnimationStart(Date)](./setanimationstart%28_%29.md)
   Sets the start time for the current animation block.
-- [class func setAnimationsEnabled(Bool)](uiview/setanimationsenabled(_:).md)
+- [class func setAnimationsEnabled(Bool)](./setanimationsenabled%28_%29.md)
   Sets whether animations are enabled.
-- [class func setAnimationDelegate(Any?)](uiview/setanimationdelegate(_:).md)
+- [class func setAnimationDelegate(Any?)](./setanimationdelegate%28_%29.md)
   Sets the delegate for any animation messages.
-- [class func setAnimationWillStart(Selector?)](uiview/setanimationwillstart(_:).md)
+- [class func setAnimationWillStart(Selector?)](./setanimationwillstart%28_%29.md)
   Sets the message to send to the animation delegate when the animation starts.
-- [class func setAnimationDidStop(Selector?)](uiview/setanimationdidstop(_:).md)
+- [class func setAnimationDidStop(Selector?)](./setanimationdidstop%28_%29.md)
   Sets the message to send to the animation delegate when animation stops.
-- [class func setAnimationDuration(TimeInterval)](uiview/setanimationduration(_:).md)
+- [class func setAnimationDuration(TimeInterval)](./setanimationduration%28_%29.md)
   Sets the duration (measured in seconds) of the animations in an animation block.
-- [class func setAnimationDelay(TimeInterval)](uiview/setanimationdelay(_:).md)
+- [class func setAnimationDelay(TimeInterval)](./setanimationdelay%28_%29.md)
   Sets the amount of time (in seconds) to wait before animating property changes within an animation block.
-- [class func setAnimationCurve(UIView.AnimationCurve)](uiview/setanimationcurve(_:).md)
+- [class func setAnimationCurve(UIView.AnimationCurve)](./setanimationcurve%28_%29.md)
   Sets the curve to use when animating property changes within an animation block.
-- [class func setAnimationRepeatCount(Float)](uiview/setanimationrepeatcount(_:).md)
+- [class func setAnimationRepeatCount(Float)](./setanimationrepeatcount%28_%29.md)
   Sets the number of times animations within an animation block repeat.
-- [class func setAnimationRepeatAutoreverses(Bool)](uiview/setanimationrepeatautoreverses(_:).md)
+- [class func setAnimationRepeatAutoreverses(Bool)](./setanimationrepeatautoreverses%28_%29.md)
   Sets whether the animations within an animation block automatically reverse themselves.
-- [class func setAnimationTransition(UIView.AnimationTransition, for: UIView, cache: Bool)](uiview/setanimationtransition(_:for:cache:).md)
+- [class func setAnimationTransition(UIView.AnimationTransition, for: UIView, cache: Bool)](./setanimationtransition%28_,for,cache%29.md)
   Sets a transition to apply to a view during an animation block.
-- [class var areAnimationsEnabled: Bool](uiview/areanimationsenabled.md)
+- [class var areAnimationsEnabled: Bool](./areanimationsenabled.md)
   Returns a Boolean value indicating whether animations are enabled.
-- [func forBaselineLayout() -> UIView](uiview/forbaselinelayout.md)
+- [func forBaselineLayout() -> UIView](./forbaselinelayout%28%29.md)
   Returns a view used to satisfy baseline constraints.
 
 

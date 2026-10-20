@@ -1,7 +1,8 @@
 # NSWindow.DidDeminiaturizeMessage
 
 **Framework**: AppKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 27.0+
@@ -15,17 +16,17 @@ struct DidDeminiaturizeMessage
 ## Topics
 
 ### Initializers
-- [init(window: NSWindow)](nswindow/diddeminiaturizemessage/init(window:).md)
+- [init(window: NSWindow)](./diddeminiaturizemessage/init%28window%29.md)
 ### Instance Properties
-- [var window: NSWindow](nswindow/diddeminiaturizemessage/window.md)
+- [var window: NSWindow](./diddeminiaturizemessage/window.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Escapable](../swift/escapable.md)
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../Swift/copyable.md)
+- [Escapable](../../Swift/escapable.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

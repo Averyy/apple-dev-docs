@@ -1,7 +1,8 @@
 # level
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum level of messages that the shader can log.
 
@@ -19,15 +20,20 @@ The minimum level of messages that the shader can log.
 var level: MTLLogLevel { get set }
 ```
 
+```objc
+@property (assign, readwrite) MTLLogLevel level;
+```
+
 #### Discussion
 
-The default value is [`MTLLogLevel.debug`](mtlloglevel/debug.md).
+The default value is [`MTLLogLevel.debug`](../mtlloglevel/debug.md).
 
 Use this value to limit which logs from your shader the log state stores. The log state doesn’t store messages at a lower level. Increase the level to reduce verbosity of logging.
 
 ## See Also
 
-- [var bufferSize: Int](mtllogstatedescriptor/buffersize.md)
+### Instance properties
+- [var bufferSize: Int](./buffersize.md)
   The size of the internal buffer the log state uses, specified in bytes.
 
 

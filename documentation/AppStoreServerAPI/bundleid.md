@@ -1,7 +1,8 @@
 # bundleId
 
 **Framework**: App Store Server API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The bundle identifier of an app.
 
@@ -10,21 +11,22 @@ The bundle identifier of an app.
 
 ## Declaration
 
-```swift
+```
 string bundleId
 ```
 
 ## See Also
 
-- [type appAppleId](appappleid.md)
+### Response data types
+- [type appAppleId](./appappleid.md)
   The unique identifier of an app in the App Store.
-- [type environment](environment.md)
+- [type environment](./environment.md)
   The server environment, either sandbox or production.
-- [type hasMore](hasmore.md)
+- [type hasMore](./hasmore.md)
   A Boolean value indicating whether the App Store has more data to return.
-- [type revision](revision.md)
+- [type revision](./revision.md)
   A token you use in a query to request the next set of transactions for the customer.
-- [type JWSTransaction](jwstransaction.md)
+- [type JWSTransaction](./jwstransaction.md)
   Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
 
 

@@ -1,7 +1,8 @@
 # MediaDevice.DeviceType.setTopBox
 
 **Framework**: Now Playing  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A set-top box.
 

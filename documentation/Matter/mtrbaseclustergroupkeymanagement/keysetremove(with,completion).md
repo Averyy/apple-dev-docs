@@ -1,7 +1,8 @@
 # keySetRemove(with:completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func keySetRemove(with params: MTRGroupKeyManagementClusterKeySetRemoveParams, completion: @escaping @Sendable ((any Error)?) -> Void)
+```
+
+```swift
 func keySetRemove(with params: MTRGroupKeyManagementClusterKeySetRemoveParams) async throws
+```
+
+```objc
+- (void) keySetRemoveWithParams:(MTRGroupKeyManagementClusterKeySetRemoveParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
 

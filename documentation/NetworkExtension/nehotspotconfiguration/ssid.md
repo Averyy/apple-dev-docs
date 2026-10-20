@@ -1,7 +1,8 @@
 # ssid
 
 **Framework**: Network Extension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The SSID of an open, WEP, WPA/WPA2 personal, or WPA/WPA2 enterprise Wi-Fi network.
 
@@ -18,6 +19,10 @@ The SSID of an open, WEP, WPA/WPA2 personal, or WPA/WPA2 enterprise Wi-Fi networ
 var ssid: String { get }
 ```
 
+```objc
+@property (readonly) NSString * SSID;
+```
+
 #### Discussion
 
 An SSID is a string of 1-32 characters.
@@ -28,13 +33,14 @@ This API does not support hidden SSIDs.
 
 ## See Also
 
-- [var ssidPrefix: String](nehotspotconfiguration/ssidprefix.md)
+### Accessing configuration properties
+- [var ssidPrefix: String](./ssidprefix.md)
   The string used to match networks against a known SSID prefix.
-- [var lifeTimeInDays: NSNumber](nehotspotconfiguration/lifetimeindays.md)
+- [var lifeTimeInDays: NSNumber](./lifetimeindays.md)
   The number of days the network retains the associated configuration.
-- [var joinOnce: Bool](nehotspotconfiguration/joinonce.md)
+- [var joinOnce: Bool](./joinonce.md)
   Restricts the lifetime of a configuration to the operating status of the app that created it.
-- [var hidden: Bool](nehotspotconfiguration/hidden.md)
+- [var hidden: Bool](./hidden.md)
   A Boolean value that indicates the visibility of the SSID.
 
 

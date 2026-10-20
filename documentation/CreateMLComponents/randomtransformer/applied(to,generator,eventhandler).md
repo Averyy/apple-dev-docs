@@ -2,6 +2,7 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Performs the random transformation on a single input.
@@ -33,9 +34,10 @@ An output produced by applying the random transformer to the input.
 
 ## See Also
 
-- [associatedtype Input](randomtransformer/input.md)
+### Performing the transformation
+- [associatedtype Input](./input.md)
   The input type.
-- [associatedtype Output](randomtransformer/output.md)
+- [associatedtype Output](./output.md)
   The output type.
 
 

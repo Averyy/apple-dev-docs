@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: CloudKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an operation group from a serialized instance.
 
@@ -20,13 +21,18 @@ Creates an operation group from a serialized instance.
 init(coder aDecoder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) aDecoder;
+```
+
 ## Parameters
 
 - `aDecoder`: The coder to use when deserializing the group.
 
 ## See Also
 
-- [init()](ckoperationgroup/init.md)
+### Creating an Operation Group
+- [init()](./init%28%29.md)
   Creates an operation group.
 
 

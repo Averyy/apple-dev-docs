@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOPCIProbeOptionDone](1640358-anonymous/kiopciprobeoptiondone.md)
-- [kIOPCIProbeOptionEject](1640358-anonymous/kiopciprobeoptioneject.md)
-- [kIOPCIProbeOptionNeedsScan](1640358-anonymous/kiopciprobeoptionneedsscan.md)
+- [kIOPCIProbeOptionDone](./api-1640358-anonymous/kiopciprobeoptiondone.md)
+- [kIOPCIProbeOptionEject](./api-1640358-anonymous/kiopciprobeoptioneject.md)
+- [kIOPCIProbeOptionNeedsScan](./api-1640358-anonymous/kiopciprobeoptionneedsscan.md)
 
 
 ---

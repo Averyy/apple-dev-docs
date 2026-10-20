@@ -1,7 +1,8 @@
 # count
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of active cameras.
 
@@ -19,7 +20,8 @@ var count: Int { get set }
 
 ## See Also
 
-- [static let maxCount: Int](lowlevelrenderer/cameraarray/maxcount.md)
+### Accessing the camera count
+- [static let maxCount: Int](./maxcount.md)
   The maximum number of cameras supported.
 
 

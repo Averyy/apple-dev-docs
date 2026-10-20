@@ -1,7 +1,8 @@
 # description()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a description of the disabled mode.
 
@@ -17,19 +18,24 @@ Returns a description of the disabled mode.
 func description() -> String
 ```
 
+```objc
+- (NSString *) description;
+```
+
 ## See Also
 
-- [var alertDismissButtonTitle: String?](uiactivityviewcontroller/collaborationmoderestriction/alertdismissbuttontitle.md)
+### Accessing the disabled mode’s properties
+- [var alertDismissButtonTitle: String?](./alertdismissbuttontitle.md)
   A title for the alert’s dismiss button.
-- [var alertMessage: String?](uiactivityviewcontroller/collaborationmoderestriction/alertmessage.md)
+- [var alertMessage: String?](./alertmessage.md)
   A message displayed by the alert
-- [var alertRecoverySuggestionButtonLaunchURL: URL?](uiactivityviewcontroller/collaborationmoderestriction/alertrecoverysuggestionbuttonlaunchurl.md)
+- [var alertRecoverySuggestionButtonLaunchURL: URL?](./alertrecoverysuggestionbuttonlaunchurl.md)
   A launch URL that the system passes to your app when someone taps the recovery suggestion button.
-- [var alertRecoverySuggestionButtonTitle: String?](uiactivityviewcontroller/collaborationmoderestriction/alertrecoverysuggestionbuttontitle.md)
+- [var alertRecoverySuggestionButtonTitle: String?](./alertrecoverysuggestionbuttontitle.md)
   A title for the alert’s recovery suggestion button.
-- [var alertTitle: String?](uiactivityviewcontroller/collaborationmoderestriction/alerttitle.md)
+- [var alertTitle: String?](./alerttitle.md)
   A title for the alert that the system displays when someone selects the disabled mode.
-- [var disabledMode: UIActivityCollaborationMode](uiactivityviewcontroller/collaborationmoderestriction/disabledmode.md)
+- [var disabledMode: UIActivityCollaborationMode](./disabledmode.md)
   The mode that is disabled.
 
 

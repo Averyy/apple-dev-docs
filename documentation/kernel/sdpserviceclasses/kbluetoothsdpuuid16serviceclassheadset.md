@@ -1,14 +1,15 @@
 # kBluetoothSDPUUID16ServiceClassHeadset
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.2+
 
 ## Declaration
 
-```swift
+```c
 kBluetoothSDPUUID16ServiceClassHeadset = 0x1108
 ```
 

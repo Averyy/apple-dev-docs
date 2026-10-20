@@ -1,7 +1,8 @@
 # structuredValue
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The equivalent structured value representation of this argument value.
 
@@ -22,7 +23,8 @@ var structuredValue: StructuredValue { get }
 
 ## See Also
 
-- [enum StructuredValue](structuredvalue.md)
+### Converting values
+- [enum StructuredValue](../structuredvalue.md)
   A type-safe representation of JSON values.
 
 

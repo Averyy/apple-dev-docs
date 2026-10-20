@@ -1,7 +1,8 @@
 # setOutputSettings(_:for:)
 
 **Framework**: AVFoundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -20,10 +21,11 @@ func setOutputSettings(_ outputSettings: [String : any Sendable]?, for tagCollec
 
 ## See Also
 
-- [var defaultOutputSettings: [String : any Sendable]?](avvideooutputspecification/defaultoutputsettings.md)
-- [var defaultPixelBufferAttributes: [String : Any]?](avvideooutputspecification/defaultpixelbufferattributes.md)
-- [func setOutputPixelBufferAttributes([String : Any]?, for: [CMTag])](avvideooutputspecification/setoutputpixelbufferattributes(_:for:).md)
-- [var preferredTagCollections: [[CMTag]]](avvideooutputspecification/preferredtagcollections-3gdo7.md)
+### Configuring the specification
+- [var defaultOutputSettings: [String : any Sendable]?](./defaultoutputsettings.md)
+- [var defaultPixelBufferAttributes: [String : Any]?](./defaultpixelbufferattributes.md)
+- [func setOutputPixelBufferAttributes([String : Any]?, for: [CMTag])](./setoutputpixelbufferattributes%28_,for%29.md)
+- [var preferredTagCollections: [[CMTag]]](./preferredtagcollections-3gdo7.md)
 
 
 ---

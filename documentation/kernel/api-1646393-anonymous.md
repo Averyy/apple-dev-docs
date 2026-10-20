@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,14 +18,14 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kIOBufferDescriptorMemoryFlags](1646393-anonymous/kiobufferdescriptormemoryflags.md)
-- [kIOMemoryHostPhysicallyContiguous](1646393-anonymous/kiomemoryhostphysicallycontiguous.md)
-- [kIOMemoryKernelUserShared](1646393-anonymous/kiomemorykernelusershared.md)
-- [kIOMemoryPageable](1646393-anonymous/kiomemorypageable.md)
-- [kIOMemoryPhysicallyContiguous](1646393-anonymous/kiomemoryphysicallycontiguous.md)
-- [kIOMemoryPurgeable](1646393-anonymous/kiomemorypurgeable.md)
-- [kIOMemorySharingTypeMask](1646393-anonymous/kiomemorysharingtypemask.md)
-- [kIOMemoryUnshared](1646393-anonymous/kiomemoryunshared.md)
+- [kIOBufferDescriptorMemoryFlags](./api-1646393-anonymous/kiobufferdescriptormemoryflags.md)
+- [kIOMemoryHostPhysicallyContiguous](./api-1646393-anonymous/kiomemoryhostphysicallycontiguous.md)
+- [kIOMemoryKernelUserShared](./api-1646393-anonymous/kiomemorykernelusershared.md)
+- [kIOMemoryPageable](./api-1646393-anonymous/kiomemorypageable.md)
+- [kIOMemoryPhysicallyContiguous](./api-1646393-anonymous/kiomemoryphysicallycontiguous.md)
+- [kIOMemoryPurgeable](./api-1646393-anonymous/kiomemorypurgeable.md)
+- [kIOMemorySharingTypeMask](./api-1646393-anonymous/kiomemorysharingtypemask.md)
+- [kIOMemoryUnshared](./api-1646393-anonymous/kiomemoryunshared.md)
 
 
 ---

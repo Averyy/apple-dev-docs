@@ -8,7 +8,7 @@
 
 ## Declaration
 
-```swift
+```c
 enum exclave_addressspace_flags : uint64_t {
     ...
 };
@@ -17,7 +17,7 @@ enum exclave_addressspace_flags : uint64_t {
 ## Topics
 
 ### Constants
-- [kExclaveAddressSpaceHaveSlide](exclave_addressspace_flags/kexclaveaddressspacehaveslide.md)
+- [kExclaveAddressSpaceHaveSlide](./exclave_addressspace_flags/kexclaveaddressspacehaveslide.md)
 
 
 ---

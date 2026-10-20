@@ -1,7 +1,8 @@
 # resetHandler
 
 **Framework**: Core Haptics  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A block that the haptic engine calls after recovering from a haptic server error.
 
@@ -19,9 +20,13 @@ A block that the haptic engine calls after recovering from a haptic server error
 var resetHandler: CHHapticEngine.ResetHandler { get set }
 ```
 
+```objc
+@property (atomic, readwrite) CHHapticEngineResetHandler resetHandler;
+```
+
 #### Discussion
 
-If the handler has to reset itself after a server failure, the system calls this block asynchronously. In this block, release all haptic pattern players and recreate them. The system preserves [`CHHapticPattern`](chhapticpattern.md) objects and [`CHHapticEngine`](chhapticengine.md) properties across restarts. Consider trying to restart the engine inside the reset block.
+If the handler has to reset itself after a server failure, the system calls this block asynchronously. In this block, release all haptic pattern players and recreate them. The system preserves [`CHHapticPattern`](../chhapticpattern.md) objects and [`CHHapticEngine`](../chhapticengine.md) properties across restarts. Consider trying to restart the engine inside the reset block.
 
 **Swift**:
 
@@ -49,7 +54,8 @@ Callbacks to this block arrive on a non-main thread, so handle them in a thread-
 
 ## See Also
 
-- [CHHapticEngine.ResetHandler](chhapticengine/resethandler-swift.typealias.md)
+### Handling Haptic Engine Resets
+- [CHHapticEngine.ResetHandler](./resethandler-swift.typealias.md)
   A typealias for the block that the haptic engine calls after being reset.
 
 

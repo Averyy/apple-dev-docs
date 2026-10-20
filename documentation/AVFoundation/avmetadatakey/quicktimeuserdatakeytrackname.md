@@ -1,7 +1,8 @@
 # quickTimeUserDataKeyTrackName
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A key that represents the name of a track in the movie file content.
 
@@ -20,37 +21,42 @@ A key that represents the name of a track in the movie file content.
 static let quickTimeUserDataKeyTrackName: AVMetadataKey
 ```
 
+```c
+extern AVMetadataKey const AVMetadataQuickTimeUserDataKeyTrackName;
+```
+
 ## See Also
 
-- [static let quickTimeUserDataKeyAccessibilityDescription: AVMetadataKey](avmetadatakey/quicktimeuserdatakeyaccessibilitydescription.md)
+### QuickTime user metadata keys
+- [static let quickTimeUserDataKeyAccessibilityDescription: AVMetadataKey](./quicktimeuserdatakeyaccessibilitydescription.md)
   A key that represents the accessibility description for the movie file content.
-- [static let quickTimeUserDataKeyAlbum: AVMetadataKey](avmetadatakey/quicktimeuserdatakeyalbum.md)
+- [static let quickTimeUserDataKeyAlbum: AVMetadataKey](./quicktimeuserdatakeyalbum.md)
   A key that represents the name of the album or collection in QuickTime.
-- [static let quickTimeUserDataKeyArranger: AVMetadataKey](avmetadatakey/quicktimeuserdatakeyarranger.md)
+- [static let quickTimeUserDataKeyArranger: AVMetadataKey](./quicktimeuserdatakeyarranger.md)
   A key that represents the name of the arranger of the movie file content.
-- [static let quickTimeUserDataKeyArtist: AVMetadataKey](avmetadatakey/quicktimeuserdatakeyartist.md)
+- [static let quickTimeUserDataKeyArtist: AVMetadataKey](./quicktimeuserdatakeyartist.md)
   A key that represents the name of the artist of the movie file content.
-- [static let quickTimeUserDataKeyAuthor: AVMetadataKey](avmetadatakey/quicktimeuserdatakeyauthor.md)
+- [static let quickTimeUserDataKeyAuthor: AVMetadataKey](./quicktimeuserdatakeyauthor.md)
   A key that represents the name of the author of the movie file content.
-- [static let quickTimeUserDataKeyChapter: AVMetadataKey](avmetadatakey/quicktimeuserdatakeychapter.md)
+- [static let quickTimeUserDataKeyChapter: AVMetadataKey](./quicktimeuserdatakeychapter.md)
   A key that represents the name of the chapter.
-- [static let quickTimeUserDataKeyComment: AVMetadataKey](avmetadatakey/quicktimeuserdatakeycomment.md)
+- [static let quickTimeUserDataKeyComment: AVMetadataKey](./quicktimeuserdatakeycomment.md)
   A key that represents a comment regarding the movie file content.
-- [static let quickTimeUserDataKeyComposer: AVMetadataKey](avmetadatakey/quicktimeuserdatakeycomposer.md)
+- [static let quickTimeUserDataKeyComposer: AVMetadataKey](./quicktimeuserdatakeycomposer.md)
   A key that represents the name of the composer of the movie file content.
-- [static let quickTimeUserDataKeyCopyright: AVMetadataKey](avmetadatakey/quicktimeuserdatakeycopyright.md)
+- [static let quickTimeUserDataKeyCopyright: AVMetadataKey](./quicktimeuserdatakeycopyright.md)
   A key that represents the copyright statement in QuickTime.
-- [static let quickTimeUserDataKeyCreationDate: AVMetadataKey](avmetadatakey/quicktimeuserdatakeycreationdate.md)
+- [static let quickTimeUserDataKeyCreationDate: AVMetadataKey](./quicktimeuserdatakeycreationdate.md)
   A key that represents the creation date of the movie file content.
-- [static let quickTimeUserDataKeyCredits: AVMetadataKey](avmetadatakey/quicktimeuserdatakeycredits.md)
+- [static let quickTimeUserDataKeyCredits: AVMetadataKey](./quicktimeuserdatakeycredits.md)
   A key that represents the credits of movie source content.
-- [static let quickTimeUserDataKeyDescription: AVMetadataKey](avmetadatakey/quicktimeuserdatakeydescription.md)
+- [static let quickTimeUserDataKeyDescription: AVMetadataKey](./quicktimeuserdatakeydescription.md)
   A key that represents the description of the movie file content.
-- [static let quickTimeUserDataKeyDirector: AVMetadataKey](avmetadatakey/quicktimeuserdatakeydirector.md)
+- [static let quickTimeUserDataKeyDirector: AVMetadataKey](./quicktimeuserdatakeydirector.md)
   A key that represents the name of the director of the movie file content.
-- [static let quickTimeUserDataKeyDisclaimer: AVMetadataKey](avmetadatakey/quicktimeuserdatakeydisclaimer.md)
+- [static let quickTimeUserDataKeyDisclaimer: AVMetadataKey](./quicktimeuserdatakeydisclaimer.md)
   A key that represents the disclaimer regarding the movie file content.
-- [static let quickTimeUserDataKeyEncodedBy: AVMetadataKey](avmetadatakey/quicktimeuserdatakeyencodedby.md)
+- [static let quickTimeUserDataKeyEncodedBy: AVMetadataKey](./quicktimeuserdatakeyencodedby.md)
   A key that represents the name of the person or organization responsible for encoding the movie file content.
 
 

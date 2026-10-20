@@ -1,7 +1,8 @@
 # LAError.Code.userCancel
 
 **Framework**: Local Authentication  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user tapped the cancel button in the authentication dialog.
 
@@ -19,11 +20,16 @@ The user tapped the cancel button in the authentication dialog.
 case userCancel
 ```
 
+```c
+LAErrorUserCancel
+```
+
 ## See Also
 
-- [LAError.Code.appCancel](laerror-swift.struct/code/appcancel.md)
+### Cancellation
+- [LAError.Code.appCancel](./appcancel.md)
   The app canceled authentication.
-- [LAError.Code.systemCancel](laerror-swift.struct/code/systemcancel.md)
+- [LAError.Code.systemCancel](./systemcancel.md)
   The system canceled authentication.
 
 

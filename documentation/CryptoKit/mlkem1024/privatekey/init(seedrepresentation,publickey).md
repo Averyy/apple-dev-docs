@@ -1,7 +1,8 @@
 # init(seedRepresentation:publicKey:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a private key from a seed representation and optional public key.
 
@@ -27,11 +28,12 @@ init<D>(seedRepresentation: D, publicKey: MLKEM1024.PublicKey?) throws where D :
 
 ## See Also
 
-- [static func generate() throws -> MLKEM1024.PrivateKey](mlkem1024/privatekey/generate.md)
+### Creating a private key
+- [static func generate() throws -> MLKEM1024.PrivateKey](./generate%28%29.md)
   Generates a new, random private key.
-- [init() throws](mlkem1024/privatekey/init.md)
+- [init() throws](./init%28%29.md)
   Initializes a random private key.
-- [init<D>(integrityCheckedRepresentation: D) throws](mlkem1024/privatekey/init(integritycheckedrepresentation:).md)
+- [init<D>(integrityCheckedRepresentation: D) throws](./init%28integritycheckedrepresentation%29.md)
   Initializes a private key from an integrity-checked representation.
 
 

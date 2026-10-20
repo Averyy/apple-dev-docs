@@ -1,7 +1,8 @@
 # physicalMemory
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount of physical memory on the computer in bytes.
 
@@ -20,17 +21,22 @@ The amount of physical memory on the computer in bytes.
 var physicalMemory: UInt64 { get }
 ```
 
+```objc
+@property (readonly) unsigned long long physicalMemory;
+```
+
 ## See Also
 
-- [var processorCount: Int](processinfo/processorcount.md)
+### Getting computer information
+- [var processorCount: Int](./processorcount.md)
   The number of processing cores available on the computer.
-- [var activeProcessorCount: Int](processinfo/activeprocessorcount.md)
+- [var activeProcessorCount: Int](./activeprocessorcount.md)
   The number of active processing cores available on the computer.
-- [func isDeviceCertified(for: NSDeviceCertification) -> Bool](processinfo/isdevicecertified(for:).md)
+- [func isDeviceCertified(for: NSDeviceCertification) -> Bool](./isdevicecertified%28for%29.md)
   Indicates whether the device supports the requested performance tier.
-- [func hasPerformanceProfile(NSProcessPerformanceProfile) -> Bool](processinfo/hasperformanceprofile(_:).md)
+- [func hasPerformanceProfile(NSProcessPerformanceProfile) -> Bool](./hasperformanceprofile%28_%29.md)
   Indicates whether an app is running under a known performance profile.
-- [var systemUptime: TimeInterval](processinfo/systemuptime.md)
+- [var systemUptime: TimeInterval](./systemuptime.md)
   The amount of time the system has been awake since the last time it was restarted.
 
 

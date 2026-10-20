@@ -1,17 +1,18 @@
 # Link Quality Constants
 
-**Framework**: NetworkingDriverKit
+**Framework**: NetworkingDriverKit  
+**Role**: API Collection
 
 Constants describing the quality of the link between the device and your driver.
 
 ## Topics
 
 ### Getting the Link Quality
-- [kIOUserNetworkLinkQualityOff](kiousernetworklinkqualityoff.md)
-- [kIOUserNetworkLinkQualityUnknown](kiousernetworklinkqualityunknown.md)
-- [kIOUserNetworkLinkQualityBad](kiousernetworklinkqualitybad.md)
-- [kIOUserNetworkLinkQualityPoor](kiousernetworklinkqualitypoor.md)
-- [kIOUserNetworkLinkQualityGood](kiousernetworklinkqualitygood.md)
+- [kIOUserNetworkLinkQualityOff](./kiousernetworklinkqualityoff.md)
+- [kIOUserNetworkLinkQualityUnknown](./kiousernetworklinkqualityunknown.md)
+- [kIOUserNetworkLinkQualityBad](./kiousernetworklinkqualitybad.md)
+- [kIOUserNetworkLinkQualityPoor](./kiousernetworklinkqualitypoor.md)
+- [kIOUserNetworkLinkQualityGood](./kiousernetworklinkqualitygood.md)
 
 
 ---

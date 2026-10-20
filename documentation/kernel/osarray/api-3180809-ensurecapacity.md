@@ -1,7 +1,8 @@
 # ensureCapacity
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Allocates capacity for members in array.
 
@@ -11,11 +12,19 @@ Allocates capacity for members in array.
 
 ## Declaration
 
-```swift
+*DriverKit*
+
+```cpp
+virtual uint32_t ensureCapacity(uint32_t newCapacity);
+```
+
+*macOS*
+
+```cpp
 virtual unsigned int ensureCapacity(unsigned int newCapacity);
 ```
 
-#### Return_value
+#### Return Value
 
 New count of capacity for members in array, may return prior capacity on failure.
 
@@ -25,9 +34,10 @@ New count of capacity for members in array, may return prior capacity on failure
 
 ## See Also
 
-- [- getCount](osarray/3180813-getcount.md)
+### Inspecting an Array
+- [- getCount](./api-3180813-getcount.md)
   Returns count of members in array.
-- [- getCapacity](osarray/3180812-getcapacity.md)
+- [- getCapacity](./api-3180812-getcapacity.md)
   Returns count of currently allocated capacity for members in array.
 
 

@@ -1,7 +1,8 @@
 # cursorView
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The cursor view to be animated.
 
@@ -16,6 +17,10 @@ The cursor view to be animated.
 
 ```swift
 var cursorView: (any UIView & UITextCursorView)! { get }
+```
+
+```objc
+@property (nonatomic, readonly) UIView<UITextCursorView> * cursorView;
 ```
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: Foundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 The next discretization boundary after the given input.
@@ -23,7 +24,7 @@ func discreteInput(after input: Self.FormatInput) -> Self.FormatInput?
 
 #### Return Value
 
-For most `input`s, the method returns the “smallest” value “greater” than `input` for which the style produces a different [`FormatOutput`](formatstyle/formatoutput.md), or `nil` if no such value exists. For some input values, the function may also return a value “greater” than `input` for which the style still produces the same [`FormatOutput`](formatstyle/formatoutput.md) as for `input`.
+For most `input`s, the method returns the “smallest” value “greater” than `input` for which the style produces a different [`FormatOutput`](../formatstyle/formatoutput.md), or `nil` if no such value exists. For some input values, the function may also return a value “greater” than `input` for which the style still produces the same [`FormatOutput`](../formatstyle/formatoutput.md) as for `input`.
 
 #### Discussion
 

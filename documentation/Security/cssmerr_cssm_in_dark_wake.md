@@ -1,7 +1,8 @@
 # CSSMERR_CSSM_IN_DARK_WAKE
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var CSSMERR_CSSM_IN_DARK_WAKE: Int { get }
+```
+
+```c
+CSSMERR_CSSM_IN_DARK_WAKE
 ```
 
 

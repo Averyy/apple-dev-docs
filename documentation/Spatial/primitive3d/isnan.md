@@ -2,6 +2,7 @@
 
 **Framework**: Spatial  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 Returns a Boolean value that indicates whether the primitive contains any NaN values.
@@ -12,7 +13,7 @@ Returns a Boolean value that indicates whether the primitive contains any NaN va
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,9 +24,10 @@ var isNaN: Bool { get }
 
 ## See Also
 
-- [var isFinite: Bool](primitive3d/isfinite.md)
+### Instance properties
+- [var isFinite: Bool](./isfinite.md)
   Returns a Boolean value that indicates whether the primitive is infinite.
-- [var isZero: Bool](primitive3d/iszero.md)
+- [var isZero: Bool](./iszero.md)
   Returns a Boolean value that indicates whether the primitive is zero.
 
 

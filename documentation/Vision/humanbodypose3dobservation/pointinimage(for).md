@@ -1,7 +1,8 @@
 # pointInImage(for:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a 2D point for the joint name you specify, relative to the input image.
 

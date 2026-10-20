@@ -1,17 +1,22 @@
 # WebPolicyDecisionListener
 
 **Framework**: WebKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-This protocol enables [`WebView`](webview-swift.class.md) policy delegates to communicate with listener objects. A listener object conforming to this protocol is passed as one of the arguments to web view policy delegate methods.
+This protocol enables [`WebView`](./webview-swift.class.md) policy delegates to communicate with listener objects. A listener object conforming to this protocol is passed as one of the arguments to web view policy delegate methods.
 
 **Availability**:
-- macOS 10.3+
+- macOS 10.3+ - Deprecated in 10.14
 
 ## Declaration
 
 ```swift
 protocol WebPolicyDecisionListener : NSObjectProtocol
+```
+
+```objc
+@protocol WebPolicyDecisionListener <NSObject>
 ```
 
 #### Overview
@@ -21,22 +26,24 @@ This protocol allows delegates to handle download decisions asynchronously. For 
 ## Topics
 
 ### Making Resource-Usage Decisions
-- [func download()](webpolicydecisionlistener/download.md)
+- [func download()](./webpolicydecisionlistener/download%28%29.md)
   Tells the listener to download the resource instead of displaying it.
-- [func ignore()](webpolicydecisionlistener/ignore.md)
+- [func ignore()](./webpolicydecisionlistener/ignore%28%29.md)
   Tells the listener to ignore the resource.
-- [func use()](webpolicydecisionlistener/use.md)
+- [func use()](./webpolicydecisionlistener/use%28%29.md)
   Tells the listener to use the resource.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [WebKit Objective-C Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
-- [protocol WebPolicyDelegate](webpolicydelegate.md)
+### Related Documentation
+- [WebKit Objective-C Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
+### Setting Policies (Legacy)
+- [protocol WebPolicyDelegate](./webpolicydelegate.md)
 
 
 ---

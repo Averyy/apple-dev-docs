@@ -11,7 +11,7 @@ iOS detects when an SMS message contains a one-time code and offers that code fo
 ## Topics
 
 ### Essentials
-- [Enabling AutoFill for domain-bound SMS codes](enabling-autofill-for-domain-bound-sms-codes.md)
+- [Enabling AutoFill for domain-bound SMS codes](./enabling-autofill-for-domain-bound-sms-codes.md)
   Streamline entering codes you send as SMS messages.
 
 

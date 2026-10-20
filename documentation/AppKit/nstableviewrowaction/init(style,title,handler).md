@@ -1,7 +1,8 @@
 # init(style:title:handler:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a new table view row action object.
 
@@ -12,6 +13,10 @@ Creates and returns a new table view row action object.
 
 ```swift
 convenience init(style: NSTableViewRowAction.Style, title: String, handler: @escaping (NSTableViewRowAction, Int) -> Void)
+```
+
+```objc
++ (instancetype) rowActionWithStyle:(NSTableViewRowActionStyle) style title:(NSString *) title handler:(void (^)(NSTableViewRowAction *action, NSInteger row)) handler;
 ```
 
 #### Return Value
@@ -26,16 +31,19 @@ You can assign the same row action object to multiple rows of your table.
 
 ## Parameters
 
-- `style`: The style characteristics to apply to the button. Use this value to apply default appearance characteristics to the button. These characteristics visually communicate, such as by color, information about what the button does. For example, specify a style of [`NSTableViewRowAction.Style.destructive`](nstableviewrowaction/style-swift.enum/destructive.md) to indicate an action is destructive to the underlying data. For a list of possible style values, see [`NSTableViewRowAction.Style`](nstableviewrowaction/style-swift.enum.md).
+- `style`: The style characteristics to apply to the button. Use this value to apply default appearance characteristics to the button. These characteristics visually communicate, such as by color, information about what the button does. For example, specify a style of [`NSTableViewRowAction.Style.destructive`](./style-swift.enum/destructive.md) to indicate an action is destructive to the underlying data. For a list of possible style values, see [`NSTableViewRowAction.Style`](./style-swift.enum.md).
 - `title`: The string to display in the button. Specify a string localized for the user’s current language.
-- `handler`: The block to execute when the user clicks the button associated with this action. AppKit makes a copy of the block you provide. When the user selects the action represented by this object, AppKit executes your `handler` block on the app’s main thread. This parameter must not be `nil`. This block has no return value and takes the following parameters: - **action**: The action object representing the action that the user selected.
-- **indexPath**: The table row that the user acted on.
+- `handler`: The block to execute when the user clicks the button associated with this action. AppKit makes a copy of the block you provide. When the user selects the action represented by this object, AppKit executes your `handler` block on the app’s main thread. This parameter must not be `nil`. This block has no return value and takes the following parameters:
+
+  - **action**: The action object representing the action that the user selected.
+  - **indexPath**: The table row that the user acted on.
 
 ## See Also
 
-- [NSTableViewRowAction.Style](nstableviewrowaction/style-swift.enum.md)
+### Related Documentation
+- [NSTableViewRowAction.Style](./style-swift.enum.md)
   Constants that help define the appearance and behavior of action buttons.
-- [func tableView(NSTableView, rowActionsForRow: Int, edge: NSTableView.RowActionEdge) -> [NSTableViewRowAction]](nstableviewdelegate/tableview(_:rowactionsforrow:edge:).md)
+- [func tableView(NSTableView, rowActionsForRow: Int, edge: NSTableView.RowActionEdge) -> [NSTableViewRowAction]](../nstableviewdelegate/tableview%28_,rowactionsforrow,edge%29.md)
   Asks the delegate to provide an array of row actions to be attached to the specified edge of a table row and displayed when the user swipes horizontally across the row.
 
 

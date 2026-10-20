@@ -1,7 +1,8 @@
 # swapAt(_:_:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Exchanges the values at the specified indices of the collection.
 
@@ -24,7 +25,7 @@ mutating func swapAt(_ i: Self.Index, _ j: Self.Index)
 
 Both parameters must be valid indices of the collection that are not equal to `endIndex`. Calling `swapAt(_:_:)` with the same index as both `i` and `j` has no effect.
 
-> **Note**: O(1)
+> **Complexity**: O(1)
 
 ## Parameters
 

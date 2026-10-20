@@ -1,7 +1,8 @@
 # SpeechDetector.DetectionOptions
 
 **Framework**: Speech  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Allows clients to customize an instance of a speech detector.
 
@@ -21,30 +22,31 @@ struct DetectionOptions
 
 ## Parameters
 
-- `sensitivityLevel`: One of [`SpeechDetector.SensitivityLevel`](speechdetector/sensitivitylevel.md). This value is used to determine how “aggressive” the voice activity detection (VAD) model will be.
+- `sensitivityLevel`: One of [`SpeechDetector.SensitivityLevel`](./sensitivitylevel.md). This value is used to determine how “aggressive” the voice activity detection (VAD) model will be.
 
 ## Topics
 
 ### Creating an options object
-- [init(sensitivityLevel: SpeechDetector.SensitivityLevel)](speechdetector/detectionoptions/init(sensitivitylevel:).md)
+- [init(sensitivityLevel: SpeechDetector.SensitivityLevel)](./detectionoptions/init%28sensitivitylevel%29.md)
 ### Inspecting options
-- [let sensitivityLevel: SpeechDetector.SensitivityLevel](speechdetector/detectionoptions/sensitivitylevel.md)
+- [let sensitivityLevel: SpeechDetector.SensitivityLevel](./detectionoptions/sensitivitylevel.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init()](speechdetector/init.md)
+### Creating a detector
+- [convenience init()](./init%28%29.md)
   Creates a speech detector with default settings.
-- [init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)](speechdetector/init(detectionoptions:reportresults:).md)
+- [init(detectionOptions: SpeechDetector.DetectionOptions, reportResults: Bool)](./init%28detectionoptions,reportresults%29.md)
   Creates a speech detector.
-- [SpeechDetector.SensitivityLevel](speechdetector/sensitivitylevel.md)
+- [SpeechDetector.SensitivityLevel](./sensitivitylevel.md)
   Determines how “aggressive” the voice activity detection (VAD) model will be.
 
 

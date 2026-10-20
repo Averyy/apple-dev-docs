@@ -1,7 +1,8 @@
 # CSIdentityQueryReceiveEventCallback
 
 **Framework**: Core Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 typealias CSIdentityQueryReceiveEventCallback = (CSIdentityQuery?, CSIdentityQueryEvent, CFArray?, CFError?, UnsafeMutableRawPointer?) -> Void
+```
+
+```c
+typedef void (*CSIdentityQueryReceiveEventCallback)(CSIdentityQueryRef query, CSIdentityQueryEvent event, CFArrayRef identities, CFErrorRef error, void *info);
 ```
 
 

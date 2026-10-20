@@ -1,7 +1,8 @@
 # webOrderLineItemId
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The unique identifier of subscription purchase events across devices, including subscription renewals.
 
@@ -10,7 +11,7 @@ The unique identifier of subscription purchase events across devices, including 
 
 ## Declaration
 
-```swift
+```
 string webOrderLineItemId
 ```
 
@@ -20,11 +21,12 @@ This value applies only to auto-renewable subscriptions.
 
 ## See Also
 
-- [type originalTransactionId](originaltransactionid.md)
+### Transaction identifiers
+- [type originalTransactionId](./originaltransactionid.md)
   The original transaction identifier of a purchase.
-- [type transactionId](transactionid.md)
+- [type transactionId](./transactionid.md)
   The unique identifier for a transaction, such as an In-App Purchase, restored purchase, or subscription renewal.
-- [type previousOriginalTransactionId](previousoriginaltransactionid.md)
+- [type previousOriginalTransactionId](./previousoriginaltransactionid.md)
   The original transaction identifier of a subscription before migration.
 
 

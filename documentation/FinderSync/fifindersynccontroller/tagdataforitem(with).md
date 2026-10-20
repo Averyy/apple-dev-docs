@@ -1,7 +1,8 @@
 # tagDataForItem(with:)
 
 **Framework**: Finder Sync  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.10+
@@ -10,6 +11,10 @@
 
 ```swift
 func tagDataForItem(with itemURL: URL) -> Data?
+```
+
+```objc
+- (NSData *) tagDataForItemWithURL:(NSURL *) itemURL;
 ```
 
 

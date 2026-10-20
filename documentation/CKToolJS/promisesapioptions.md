@@ -1,7 +1,8 @@
 # PromisesApiOptions
 
 **Framework**: CKTool JS  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A dictionary of options for promises API classes.
 
@@ -10,7 +11,7 @@ A dictionary of options for promises API classes.
 
 ## Declaration
 
-```swift
+```
 dictionary PromisesApiOptions {
 	Configuration configuration;
 	Security? security;
@@ -20,16 +21,17 @@ dictionary PromisesApiOptions {
 ## Topics
 
 ### Instance Properties
-- [configuration](promisesapioptions/configuration.md)
+- [configuration](./promisesapioptions/configuration.md)
   A `Configuration` instance returned from `createConfiguration`.
-- [security](promisesapioptions/security.md)
+- [security](./promisesapioptions/security.md)
   A dictionary of your authorization tokens.
 
 ## See Also
 
-- [PromisesApi](promisesapi/promisesapi.md)
+### Initialization
+- [PromisesApi](./promisesapi/promisesapi.md)
   Creates a `PromisesApi` object.
-- [Security](security.md)
+- [Security](./security.md)
   A dictionary of your authorization tokens.
 
 

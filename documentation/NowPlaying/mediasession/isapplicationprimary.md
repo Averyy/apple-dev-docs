@@ -1,7 +1,8 @@
 # isApplicationPrimary
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether this is currently the primary application session.
 
@@ -23,7 +24,7 @@ var isApplicationPrimary: Bool { get }
 
 ## Mentions
 
-- [Publishing media sessions](publishing-media-sessions.md)
+- [Publishing media sessions](../publishing-media-sessions.md)
 
 
 ---

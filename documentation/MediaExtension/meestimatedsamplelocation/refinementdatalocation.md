@@ -1,7 +1,8 @@
 # refinementDataLocation
 
 **Framework**: MediaExtension  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The starting file offset and size in bytes of the data necessary to provide an accurate sample location.
 
@@ -14,15 +15,20 @@ The starting file offset and size in bytes of the data necessary to provide an a
 var refinementDataLocation: AVSampleCursorStorageRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVSampleCursorStorageRange refinementDataLocation;
+```
+
 #### Discussion
 
-Pass this refinement data to the [`refineSampleLocation(_:refinementData:refinementDataLength:refinedLocation:)`](mesamplecursor/refinesamplelocation(_:refinementdata:refinementdatalength:refinedlocation:).md) to determine the exact sample location.
+Pass this refinement data to the [`refineSampleLocation(_:refinementData:refinementDataLength:refinedLocation:)`](../mesamplecursor/refinesamplelocation%28_,refinementdata,refinementdatalength,refinedlocation%29.md) to determine the exact sample location.
 
 ## See Also
 
-- [var byteSource: MEByteSource](meestimatedsamplelocation/bytesource.md)
+### Inspecting an estimated sample location
+- [var byteSource: MEByteSource](./bytesource.md)
   The byte source to use to read the data for the sample.
-- [var estimatedSampleLocation: AVSampleCursorStorageRange](meestimatedsamplelocation/estimatedsamplelocation.md)
+- [var estimatedSampleLocation: AVSampleCursorStorageRange](./estimatedsamplelocation.md)
   The estimated starting file offset and size in bytes of the sample.
 
 

@@ -7,7 +7,7 @@ Allocates a new IOAudioPort instance with the given attributes
 
 ## Declaration
 
-```swift
+```c
 static IOAudioPort *withAttributes(
  UInt32 portType,
  const char *portName = 0,
@@ -15,7 +15,7 @@ static IOAudioPort *withAttributes(
  OSDictionary *properties = 0);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the newly allocated and initialized IOAudioPort instance.
 
@@ -32,17 +32,18 @@ This static method allocates a new IOAudioPort and calls initWithAttributes() on
 
 ## See Also
 
-- [addAudioControl](ioaudioport/1811855-addaudiocontrol.md)
+### Miscellaneous
+- [addAudioControl](./api-1811855-addaudiocontrol.md)
   Adds a newly created IOAudioControl instance to the port.
-- [deactivateAudioControls](ioaudioport/1811875-deactivateaudiocontrols.md)
+- [deactivateAudioControls](./api-1811875-deactivateaudiocontrols.md)
   Called to shut down all of the audio controls for this port.
-- [free](ioaudioport/1811888-free.md)
+- [free](./api-1811888-free.md)
   Frees all of the resources allocated by the IOAudioPort.
-- [initWithAttributes](ioaudioport/1811904-initwithattributes.md)
+- [initWithAttributes](./api-1811904-initwithattributes.md)
   Initializes a newly allocated IOAudioPort instance with the given attributes
-- [start](ioaudioport/1811924-start.md)
+- [start](./api-1811924-start.md)
   Called to start a newly created IOAudioPort.
-- [stop](ioaudioport/1811938-stop.md)
+- [stop](./api-1811938-stop.md)
   Called when the IOAudioDevice is stopping when it is no longer available.
 
 

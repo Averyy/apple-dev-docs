@@ -1,7 +1,8 @@
 # maxInputLength
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum length of input APDU (Application Protocol Data Unit) that the Smart Card reader slot is able to transfer to the Smart Card.
 
@@ -20,11 +21,16 @@ The maximum length of input APDU (Application Protocol Data Unit) that the Smart
 var maxInputLength: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger maxInputLength;
+```
+
 ## See Also
 
-- [var name: String](tksmartcardslot/name.md)
+### Getting the Slot Configuration
+- [var name: String](./name.md)
   The name of the Smart Card reader slot.
-- [var maxOutputLength: Int](tksmartcardslot/maxoutputlength.md)
+- [var maxOutputLength: Int](./maxoutputlength.md)
   The maximum length of output APDU (Application Protocol Data Unit) that the Smart Card reader slot is able to transfer from the Smart Card.
 
 

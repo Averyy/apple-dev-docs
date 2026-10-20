@@ -1,12 +1,13 @@
 # isOpaque
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the cell is completely opaque.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,21 +15,26 @@ A Boolean value indicating whether the cell is completely opaque.
 var isOpaque: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isOpaque) BOOL opaque;
+```
+
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/swift/true) if the cell is completely opaque or [`false`](https://developer.apple.com/documentation/swift/false) if it contains some transparency.
+The value of this property is [`true`](../../Swift/true.md) if the cell is completely opaque or [`false`](../../Swift/false.md) if it contains some transparency.
 
 ## See Also
 
-- [var isBezeled: Bool](nscell/isbezeled.md)
+### Managing Display Attributes
+- [var isBezeled: Bool](./isbezeled.md)
   A Boolean value indicating whether the cell has a bezeled border.
-- [var isBordered: Bool](nscell/isbordered.md)
+- [var isBordered: Bool](./isbordered.md)
   A Boolean value indicating whether the cell draws itself outlined with a plain border.
-- [var backgroundStyle: NSView.BackgroundStyle](nscell/backgroundstyle.md)
+- [var backgroundStyle: NSView.BackgroundStyle](./backgroundstyle.md)
   The cell’s background style.
-- [var interiorBackgroundStyle: NSView.BackgroundStyle](nscell/interiorbackgroundstyle.md)
+- [var interiorBackgroundStyle: NSView.BackgroundStyle](./interiorbackgroundstyle.md)
   The cell’s interior background style.
-- [NSView.BackgroundStyle](nsview/backgroundstyle.md)
+- [NSView.BackgroundStyle](../nsview/backgroundstyle.md)
   Background styles to apply to a view’s cell.
 
 

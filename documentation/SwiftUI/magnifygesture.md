@@ -1,7 +1,8 @@
 # MagnifyGesture
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A gesture that recognizes a magnification motion and tracks the amount of magnification.
 
@@ -21,9 +22,9 @@ struct MagnifyGesture
 
 #### Overview
 
-A magnify gesture tracks how a magnification event sequence changes. To recognize a magnify gesture on a view, create and configure the gesture, and then add it to the view using the [`gesture(_:including:)`](view/gesture(_:including:).md) modifier.
+A magnify gesture tracks how a magnification event sequence changes. To recognize a magnify gesture on a view, create and configure the gesture, and then add it to the view using the [`gesture(_:including:)`](./view/gesture%28_,including%29.md) modifier.
 
-Add a magnify gesture to a [`Circle`](circle.md) that changes its size while the user performs the gesture:
+Add a magnify gesture to a [`Circle`](./circle.md) that changes its size while the user performs the gesture:
 
 ```swift
 struct MagnifyGestureView: View {
@@ -48,37 +49,38 @@ struct MagnifyGestureView: View {
 ## Topics
 
 ### Creating the gesture
-- [init(minimumScaleDelta: CGFloat)](magnifygesture/init(minimumscaledelta:).md)
+- [init(minimumScaleDelta: CGFloat)](./magnifygesture/init%28minimumscaledelta%29.md)
   Creates a magnify gesture with a given minimum delta for the gesture to start.
-- [init(minimumScaleDelta: CGFloat, inputKinds: GestureInputKinds)](magnifygesture/init(minimumscaledelta:inputkinds:).md)
+- [init(minimumScaleDelta: CGFloat, inputKinds: GestureInputKinds)](./magnifygesture/init%28minimumscaledelta,inputkinds%29.md)
   Creates a magnify gesture with a given minimum delta for the gesture to start, and the input kinds the gesture recognizes.
-- [var minimumScaleDelta: CGFloat](magnifygesture/minimumscaledelta.md)
+- [var minimumScaleDelta: CGFloat](./magnifygesture/minimumscaledelta.md)
   The minimum required delta before the gesture starts.
 
 ## Relationships
 
 ### Conforms To
-- [Gesture](gesture.md)
+- [Gesture](./gesture.md)
 
 ## See Also
 
-- [func gesture(_:)](view/gesture(_:).md)
-  Attaches an [`NSGestureRecognizerRepresentable`](nsgesturerecognizerrepresentable.md) to the view.
-- [func gesture<T>(T, isEnabled: Bool) -> some View](view/gesture(_:isenabled:).md)
+### Recognizing gestures that change over time
+- [func gesture(_:)](./view/gesture%28_%29.md)
+  Attaches an [`NSGestureRecognizerRepresentable`](./nsgesturerecognizerrepresentable.md) to the view.
+- [func gesture<T>(T, isEnabled: Bool) -> some View](./view/gesture%28_,isenabled%29.md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
-- [func gesture<T>(T, name: String, isEnabled: Bool) -> some View](view/gesture(_:name:isenabled:).md)
+- [func gesture<T>(T, name: String, isEnabled: Bool) -> some View](./view/gesture%28_,name,isenabled%29.md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
-- [func gesture<T>(T, including: GestureMask) -> some View](view/gesture(_:including:).md)
+- [func gesture<T>(T, including: GestureMask) -> some View](./view/gesture%28_,including%29.md)
   Attaches a gesture to the view with a lower precedence than gestures defined by the view.
-- [struct DragGesture](draggesture.md)
+- [struct DragGesture](./draggesture.md)
   A dragging motion that invokes an action as the drag-event sequence changes.
-- [struct WindowDragGesture](windowdraggesture.md)
+- [struct WindowDragGesture](./windowdraggesture.md)
   A gesture that recognizes the motion of and handles dragging a window.
-- [struct RotateGesture](rotategesture.md)
+- [struct RotateGesture](./rotategesture.md)
   A gesture that recognizes a rotation motion and tracks the angle of the rotation.
-- [struct RotateGesture3D](rotategesture3d.md)
+- [struct RotateGesture3D](./rotategesture3d.md)
   A gesture that recognizes 3D rotation motion and tracks the angle and axis of the rotation.
-- [struct GestureMask](gesturemask.md)
+- [struct GestureMask](./gesturemask.md)
   Options that control how adding a gesture to a view affects other gestures recognized by the view and its subviews.
 
 

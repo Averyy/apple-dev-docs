@@ -1,7 +1,8 @@
 # CMMotionActivityHandler
 
 **Framework**: Core Motion  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 A block that reports the current motion associated with the device.
 
@@ -17,6 +18,10 @@ A block that reports the current motion associated with the device.
 typealias CMMotionActivityHandler = (CMMotionActivity?) -> Void
 ```
 
+```c
+typedef void (^)(CMMotionActivity *) CMMotionActivityHandler;
+```
+
 #### Discussion
 
 This block takes the following parameter:
@@ -25,9 +30,10 @@ This block takes the following parameter:
 
 ## See Also
 
-- [func startActivityUpdates(to: OperationQueue, withHandler: CMMotionActivityHandler)](cmmotionactivitymanager/startactivityupdates(to:withhandler:).md)
+### Starting and Stopping Activity Updates
+- [func startActivityUpdates(to: OperationQueue, withHandler: CMMotionActivityHandler)](./cmmotionactivitymanager/startactivityupdates%28to,withhandler%29.md)
   Starts the delivery of current motion data updates to your app.
-- [func stopActivityUpdates()](cmmotionactivitymanager/stopactivityupdates.md)
+- [func stopActivityUpdates()](./cmmotionactivitymanager/stopactivityupdates%28%29.md)
   Stops the delivery of motion updates to your app
 
 

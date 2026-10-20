@@ -1,7 +1,8 @@
 # kCGImagePropertyGIFLoopCount
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The number of times to repeat an animated sequence.
 
@@ -20,13 +21,18 @@ The number of times to repeat an animated sequence.
 let kCGImagePropertyGIFLoopCount: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyGIFLoopCount;
+```
+
 ## See Also
 
-- [let kCGImagePropertyGIFFrameInfoArray: CFString](kcgimagepropertygifframeinfoarray.md)
+### Sequence Timing
+- [let kCGImagePropertyGIFFrameInfoArray: CFString](./kcgimagepropertygifframeinfoarray.md)
   An array of dictionaries that contain timing information for the image sequence.
-- [let kCGImagePropertyGIFDelayTime: CFString](kcgimagepropertygifdelaytime.md)
+- [let kCGImagePropertyGIFDelayTime: CFString](./kcgimagepropertygifdelaytime.md)
   The number of seconds to wait before displaying the next image in an animated sequence, clamped to a minimum of 100 milliseconds.
-- [let kCGImagePropertyGIFUnclampedDelayTime: CFString](kcgimagepropertygifunclampeddelaytime.md)
+- [let kCGImagePropertyGIFUnclampedDelayTime: CFString](./kcgimagepropertygifunclampeddelaytime.md)
   The number of seconds to wait before displaying the next image in an animated sequence.
 
 

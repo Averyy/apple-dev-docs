@@ -2,6 +2,7 @@
 
 **Framework**: File Provider  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Tells the file provider that an item’s content or metadata changed.
@@ -17,6 +18,10 @@ Tells the file provider that an item’s content or metadata changed.
 
 ```swift
 func modifyItem(_ item: NSFileProviderItem, baseVersion version: NSFileProviderItemVersion, changedFields: NSFileProviderItemFields, contents newContents: URL?, options: NSFileProviderModifyItemOptions = [], request: NSFileProviderRequest, completionHandler: @escaping (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress
+```
+
+```objc
+- (NSProgress *) modifyItem:(NSFileProviderItem) item baseVersion:(NSFileProviderItemVersion *) version changedFields:(NSFileProviderItemFields) changedFields contents:(NSURL *) newContents options:(NSFileProviderModifyItemOptions) options request:(NSFileProviderRequest *) request completionHandler:(void (^)(NSFileProviderItem item, NSFileProviderItemFields stillPendingFields, BOOL shouldFetchContent, NSError *error)) completionHandler;
 ```
 
 #### Return Value
@@ -35,22 +40,25 @@ The system calls this method when the user modifies an item—for example, movin
 - `newContents`: A URL for the local copy of the item’s new contents.
 - `options`: The modification options.
 - `request`: An object that identifies the context of that request, such as the requesting app.
-- `completionHandler`: A block that you call after uploading the changes to your remote storage. You pass the following parameters: - **`item`**: The newly modified item.
-- **`stillPendingFields`**: Any fields that you haven’t yet applied. If you can apply all the fields at once, pass an empty `NSFileProviderItemField` instance.
-- **`shouldFetchContent`**: A Boolean value that indicates whether the system should fetch the item’s content from your remote storage.
-- **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
+- `completionHandler`: A block that you call after uploading the changes to your remote storage. You pass the following parameters:
+
+  - **`item`**: The newly modified item.
+  - **`stillPendingFields`**: Any fields that you haven’t yet applied. If you can apply all the fields at once, pass an empty `NSFileProviderItemField` instance.
+  - **`shouldFetchContent`**: A Boolean value that indicates whether the system should fetch the item’s content from your remote storage.
+  - **`error`**: If an error occurs, this object contains information about the error; otherwise, it’s `nil`.
 
 ## See Also
 
-- [func createItem(basedOn: NSFileProviderItem, fields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderCreateItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/createitem(basedon:fields:contents:options:request:completionhandler:).md)
+### Managing Items
+- [func createItem(basedOn: NSFileProviderItem, fields: NSFileProviderItemFields, contents: URL?, options: NSFileProviderCreateItemOptions, request: NSFileProviderRequest, completionHandler: (NSFileProviderItem?, NSFileProviderItemFields, Bool, (any Error)?) -> Void) -> Progress](./createitem%28basedon,fields,contents,options,request,completionhandler%29.md)
   Tells the file provider to create or import an item based on a template.
-- [struct NSFileProviderCreateItemOptions](nsfileprovidercreateitemoptions.md)
+- [struct NSFileProviderCreateItemOptions](../nsfileprovidercreateitemoptions.md)
   Options for creating items.
-- [struct NSFileProviderModifyItemOptions](nsfileprovidermodifyitemoptions.md)
+- [struct NSFileProviderModifyItemOptions](../nsfileprovidermodifyitemoptions.md)
   Options for modifying items.
-- [func deleteItem(identifier: NSFileProviderItemIdentifier, baseVersion: NSFileProviderItemVersion, options: NSFileProviderDeleteItemOptions, request: NSFileProviderRequest, completionHandler: ((any Error)?) -> Void) -> Progress](nsfileproviderreplicatedextension/deleteitem(identifier:baseversion:options:request:completionhandler:).md)
+- [func deleteItem(identifier: NSFileProviderItemIdentifier, baseVersion: NSFileProviderItemVersion, options: NSFileProviderDeleteItemOptions, request: NSFileProviderRequest, completionHandler: ((any Error)?) -> Void) -> Progress](./deleteitem%28identifier,baseversion,options,request,completionhandler%29.md)
   Tells the file provider to delete an item forever.
-- [struct NSFileProviderDeleteItemOptions](nsfileproviderdeleteitemoptions.md)
+- [struct NSFileProviderDeleteItemOptions](../nsfileproviderdeleteitemoptions.md)
   Options for deleting items.
 
 

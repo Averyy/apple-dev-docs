@@ -1,7 +1,8 @@
 # quality
 
 **Framework**: Cinematic  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -14,6 +15,10 @@
 
 ```swift
 var quality: CNRenderingQuality { get }
+```
+
+```objc
+@property (readonly) CNRenderingQuality quality;
 ```
 
 

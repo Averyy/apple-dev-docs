@@ -1,7 +1,8 @@
 # largeBlob
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The request’s binary large object value.
 

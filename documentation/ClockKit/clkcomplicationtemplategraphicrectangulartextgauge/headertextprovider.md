@@ -1,12 +1,15 @@
 # headerTextProvider
 
 **Framework**: ClockKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The header text to display in the complication.
 
 **Availability**:
-- watchOS 5.0+
+- watchOS 5.0+ - Deprecated in 27.2
+
+> **Deprecated**: On watchOS 9.0 or later, use WidgetKit instead
 
 ## Declaration
 
@@ -15,17 +18,22 @@ The header text to display in the complication.
 var headerTextProvider: CLKTextProvider { get set }
 ```
 
+```objc
+@property (nonatomic, copy) CLKTextProvider * headerTextProvider;
+```
+
 #### Discussion
 
 This property supports multicolor text.
 
 ## See Also
 
-- [var headerImageProvider: CLKFullColorImageProvider?](clkcomplicationtemplategraphicrectangulartextgauge/headerimageprovider.md)
+### Setting the Complication Data
+- [var headerImageProvider: CLKFullColorImageProvider?](./headerimageprovider.md)
   The header image to display.
-- [var body1TextProvider: CLKTextProvider](clkcomplicationtemplategraphicrectangulartextgauge/body1textprovider.md)
+- [var body1TextProvider: CLKTextProvider](./body1textprovider.md)
   The main body text to display in the complication.
-- [var gaugeProvider: CLKGaugeProvider](clkcomplicationtemplategraphicrectangulartextgauge/gaugeprovider.md)
+- [var gaugeProvider: CLKGaugeProvider](./gaugeprovider.md)
   The gauge to display in the complication.
 
 

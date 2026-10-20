@@ -1,17 +1,18 @@
 # PHASESoundEvent.PrepareHandlerReason.prepared
 
 **Framework**: PHASE  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the completion of sound-event preparation.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -19,11 +20,16 @@ Indicates the completion of sound-event preparation.
 case prepared
 ```
 
+```c
+PHASESoundEventPrepareHandlerReasonPrepared
+```
+
 ## See Also
 
-- [PHASESoundEvent.PrepareHandlerReason.terminated](phasesoundevent/preparehandlerreason/terminated.md)
+### Reasons
+- [PHASESoundEvent.PrepareHandlerReason.terminated](./terminated.md)
   Indicates sound-event preparation stops abruptly.
-- [PHASESoundEvent.PrepareHandlerReason.failure](phasesoundevent/preparehandlerreason/failure.md)
+- [PHASESoundEvent.PrepareHandlerReason.failure](./failure.md)
   Indicates an error occurs during sound-event preparation.
 
 

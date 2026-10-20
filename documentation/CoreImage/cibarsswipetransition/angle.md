@@ -2,17 +2,18 @@
 
 **Framework**: Core Image  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The angle, in radians, of the bars.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
 
 ## Declaration
 
@@ -20,11 +21,16 @@ The angle, in radians, of the bars.
 var angle: Float { get set }
 ```
 
+```objc
+@property (nonatomic) float angle;
+```
+
 ## See Also
 
-- [var barOffset: Float](cibarsswipetransition/baroffset.md)
+### Instance Properties
+- [var barOffset: Float](./baroffset.md)
   The offset of one bar with respect to another.
-- [var width: Float](cibarsswipetransition/width.md)
+- [var width: Float](./width.md)
   The width of each bar.
 
 

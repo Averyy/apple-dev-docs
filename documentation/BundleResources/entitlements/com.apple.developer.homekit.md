@@ -1,7 +1,8 @@
 # HomeKit Entitlement
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether users of the app may manage HomeKit-compatible accessories.
 
@@ -12,19 +13,21 @@ A Boolean value that indicates whether users of the app may manage HomeKit-compa
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `com.apple.developer.homekit` (HomeKit)
+- **Type**: boolean
 
 #### Discussion
 
 This key Indicates whether the users of an app may manage HomeKit-compatible accessories, such as switches, lights, fans, locks, and thermostats.
 
-To add this entitlement to your app, enable the HomeKit capability in Xcode. For more information, see [`Enabling HomeKit in your app`](https://developer.apple.com/documentation/homekit/enabling-homekit-in-your-app).
+To add this entitlement to your app, enable the HomeKit capability in Xcode. For more information, see [Enabling HomeKit in your app](../../HomeKit/enabling-homekit-in-your-app.md).
 
 ## See Also
 
-- [Matter Allow Setup Payload](entitlements/com.apple.developer.matter.allow-setup-payload.md)
+### Home automation
+- [Matter Allow Setup Payload](./com.apple.developer.matter.allow-setup-payload.md)
   A Boolean value that allows an app to provide an optional Matter Setup payload while setting up a Matter device in an ecosystem.
 
 

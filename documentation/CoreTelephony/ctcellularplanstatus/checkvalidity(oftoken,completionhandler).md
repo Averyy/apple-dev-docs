@@ -1,7 +1,8 @@
 # checkValidity(ofToken:completionHandler:)
 
 **Framework**: Core Telephony  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Checks the validity of the ICCID associated with the token.
 
@@ -13,7 +14,15 @@ Checks the validity of the ICCID associated with the token.
 ## Declaration
 
 ```swift
+class func checkValidity(ofToken token: String, completionHandler: @escaping @Sendable (Bool, (any Error)?) -> Void)
+```
+
+```swift
 class func checkValidity(ofToken token: String) async throws -> Bool
+```
+
+```objc
++ (void) checkValidityOfToken:(NSString *) token completionHandler:(void (^)(BOOL isValid, NSError *error)) completionHandler;
 ```
 
 #### Discussion

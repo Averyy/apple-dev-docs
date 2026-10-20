@@ -1,14 +1,15 @@
 # makeNumberParamProperty
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 10.15.4+ - Deprecated in 10.15.4
 
 ## Declaration
 
-```swift
+```c
 static void makeNumberParamProperty(OSDictionary *dict, const char *key, unsigned long long number, unsigned int bits);
 ```
 

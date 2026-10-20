@@ -1,15 +1,20 @@
 # peakBandwidth
 
 **Framework**: IOBluetooth  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var peakBandwidth: UInt32
+```
+
+```c
+uint32_t peakBandwidth;
 ```
 
 

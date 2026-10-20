@@ -1,7 +1,8 @@
 # indexPathBeforeUpdate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The index path of the item before the update.
 
@@ -9,7 +10,7 @@ The index path of the item before the update.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -18,13 +19,18 @@ The index path of the item before the update.
 var indexPathBeforeUpdate: IndexPath? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSIndexPath * indexPathBeforeUpdate;
+```
+
 ## See Also
 
-- [var indexPathAfterUpdate: IndexPath?](uicollectionviewupdateitem/indexpathafterupdate.md)
+### Accessing the item changes
+- [var indexPathAfterUpdate: IndexPath?](./indexpathafterupdate.md)
   The index path of the item after the update.
-- [var updateAction: UICollectionViewUpdateItem.Action](uicollectionviewupdateitem/updateaction.md)
+- [var updateAction: UICollectionViewUpdateItem.Action](./updateaction.md)
   The action being performed on the item.
-- [UICollectionViewUpdateItem.Action](uicollectionviewupdateitem/action.md)
+- [UICollectionViewUpdateItem.Action](./action.md)
   Constants indicating the type of action being performed on an item.
 
 

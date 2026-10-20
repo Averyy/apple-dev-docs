@@ -1,7 +1,8 @@
 # kAXYearFieldAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The year field of a time field represented by this accessibility object. This attribute is required for accessibility objects that represent time fields that display years.
 
@@ -12,6 +13,10 @@ The year field of a time field represented by this accessibility object. This at
 
 ```swift
 var kAXYearFieldAttribute: String { get }
+```
+
+```c
+#define kAXYearFieldAttribute
 ```
 
 

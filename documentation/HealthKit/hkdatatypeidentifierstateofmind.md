@@ -1,7 +1,8 @@
 # HKDataTypeIdentifierStateOfMind
 
 **Framework**: HealthKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 18.0+
@@ -17,12 +18,17 @@
 let HKDataTypeIdentifierStateOfMind: String
 ```
 
+```c
+extern NSString * const HKDataTypeIdentifierStateOfMind;
+```
+
 ## See Also
 
-- [let HKMetadataKeyAppleFitnessPlusCatalogIdentifier: String](hkmetadatakeyapplefitnesspluscatalogidentifier.md)
-- [let HKMetadataKeyMaximumLightIntensity: String](hkmetadatakeymaximumlightintensity.md)
+### Constants
+- [let HKMetadataKeyAppleFitnessPlusCatalogIdentifier: String](./hkmetadatakeyapplefitnesspluscatalogidentifier.md)
+- [let HKMetadataKeyMaximumLightIntensity: String](./hkmetadatakeymaximumlightintensity.md)
   A key that indicates the maximum intensity of light for an outdoor time sample.
-- [let HKPredicateKeyPathWorkoutEffortRelationship: String](hkpredicatekeypathworkouteffortrelationship.md)
+- [let HKPredicateKeyPathWorkoutEffortRelationship: String](./hkpredicatekeypathworkouteffortrelationship.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # active
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Materials will always appear active.
 

@@ -1,7 +1,8 @@
 # iTunesMetadataPerformer
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An identifier that represents the name of the performer.
 
@@ -20,37 +21,42 @@ An identifier that represents the name of the performer.
 static let iTunesMetadataPerformer: AVMetadataIdentifier
 ```
 
+```c
+extern AVMetadataIdentifier const AVMetadataIdentifieriTunesMetadataPerformer;
+```
+
 ## See Also
 
-- [static let iTunesMetadataAccountKind: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataaccountkind.md)
+### iTunes metadata identifiers
+- [static let iTunesMetadataAccountKind: AVMetadataIdentifier](./itunesmetadataaccountkind.md)
   An identifier that represents the kind of iTunes account.
-- [static let iTunesMetadataAcknowledgement: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataacknowledgement.md)
+- [static let iTunesMetadataAcknowledgement: AVMetadataIdentifier](./itunesmetadataacknowledgement.md)
   An identifier that represents the acknowledgement information in iTunes.
-- [static let iTunesMetadataAlbum: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataalbum.md)
+- [static let iTunesMetadataAlbum: AVMetadataIdentifier](./itunesmetadataalbum.md)
   An identifier that represents the name of the album in iTunes.
-- [static let iTunesMetadataAlbumArtist: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataalbumartist.md)
+- [static let iTunesMetadataAlbumArtist: AVMetadataIdentifier](./itunesmetadataalbumartist.md)
   An identifier that represents the artist for the album.
-- [static let iTunesMetadataAppleID: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataappleid.md)
+- [static let iTunesMetadataAppleID: AVMetadataIdentifier](./itunesmetadataappleid.md)
   An identifier that represents an Apple ID.
-- [static let iTunesMetadataArranger: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataarranger.md)
+- [static let iTunesMetadataArranger: AVMetadataIdentifier](./itunesmetadataarranger.md)
   An identifier that represents the name of the arranger.
-- [static let iTunesMetadataArtDirector: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataartdirector.md)
+- [static let iTunesMetadataArtDirector: AVMetadataIdentifier](./itunesmetadataartdirector.md)
   An identifier that represents the name of the art director.
-- [static let iTunesMetadataArtist: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataartist.md)
+- [static let iTunesMetadataArtist: AVMetadataIdentifier](./itunesmetadataartist.md)
   An identifier that represents the name of the artist.
-- [static let iTunesMetadataArtistID: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataartistid.md)
+- [static let iTunesMetadataArtistID: AVMetadataIdentifier](./itunesmetadataartistid.md)
   An identifier that represents the ID for an artist.
-- [static let iTunesMetadataAuthor: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataauthor.md)
+- [static let iTunesMetadataAuthor: AVMetadataIdentifier](./itunesmetadataauthor.md)
   An identifier that represents the name of the author.
-- [static let iTunesMetadataBeatsPerMin: AVMetadataIdentifier](avmetadataidentifier/itunesmetadatabeatspermin.md)
+- [static let iTunesMetadataBeatsPerMin: AVMetadataIdentifier](./itunesmetadatabeatspermin.md)
   An identifier that represents the beats per minute of a track in iTunes.
-- [static let iTunesMetadataComposer: AVMetadataIdentifier](avmetadataidentifier/itunesmetadatacomposer.md)
+- [static let iTunesMetadataComposer: AVMetadataIdentifier](./itunesmetadatacomposer.md)
   An identifier that represents the name of the composer.
-- [static let iTunesMetadataConductor: AVMetadataIdentifier](avmetadataidentifier/itunesmetadataconductor.md)
+- [static let iTunesMetadataConductor: AVMetadataIdentifier](./itunesmetadataconductor.md)
   An identifier that represents the name of the conductor.
-- [static let iTunesMetadataContentRating: AVMetadataIdentifier](avmetadataidentifier/itunesmetadatacontentrating.md)
+- [static let iTunesMetadataContentRating: AVMetadataIdentifier](./itunesmetadatacontentrating.md)
   An identifier that represents the content rating in iTunes.
-- [static let iTunesMetadataCopyright: AVMetadataIdentifier](avmetadataidentifier/itunesmetadatacopyright.md)
+- [static let iTunesMetadataCopyright: AVMetadataIdentifier](./itunesmetadatacopyright.md)
   An identifier that represents the copyright statement in iTunes.
 
 

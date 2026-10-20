@@ -1,13 +1,14 @@
 # remount
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Properties of an event that indicates the remounting of a file system.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,11 +16,16 @@ Properties of an event that indicates the remounting of a file system.
 var remount: es_event_remount_t { get set }
 ```
 
+```c
+es_event_remount_t remount;
+```
+
 ## See Also
 
-- [var mount: es_event_mount_t](es_events_t/mount.md)
+### File System Mounting Events
+- [var mount: es_event_mount_t](./mount.md)
   Properties of an event that indicates the mounting of a file system.
-- [var unmount: es_event_unmount_t](es_events_t/unmount.md)
+- [var unmount: es_event_unmount_t](./unmount.md)
   Properties of an event that indicates the unmounting of a file system.
 
 

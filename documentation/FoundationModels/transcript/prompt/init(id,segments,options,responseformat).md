@@ -1,7 +1,8 @@
 # init(id:segments:options:responseFormat:)
 
 **Framework**: Foundation Models  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a prompt.
 
@@ -21,14 +22,15 @@ init(id: String = UUID().uuidString, segments: [Transcript.Segment], options: Ge
 
 ## Parameters
 
-- `id`: A [`Generable`](generable.md) type to use as the response format.
+- `id`: A [`Generable`](../../generable.md) type to use as the response format.
 - `segments`: An array of segments that make up the prompt.
 - `options`: Options that control how tokens are sampled from the distribution the model produces.
 - `responseFormat`: A response format that describes the output structure.
 
 ## See Also
 
-- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment], options: GenerationOptions, responseFormat: Transcript.ResponseFormat?, contextOptions: ContextOptions)](transcript/prompt/init(id:metadata:segments:options:responseformat:contextoptions:).md)
+### Creating a prompt
+- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment], options: GenerationOptions, responseFormat: Transcript.ResponseFormat?, contextOptions: ContextOptions)](./init%28id,metadata,segments,options,responseformat,contextoptions%29.md)
   Creates a prompt.
 
 

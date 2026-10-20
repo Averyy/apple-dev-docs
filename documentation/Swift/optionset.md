@@ -1,7 +1,8 @@
 # OptionSet
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that presents a mathematical set interface to a bit set.
 
@@ -75,23 +76,24 @@ if freeOptions.contains(.priority) {
 ## Topics
 
 ### Required Initializer
-- [init(rawValue: Self.RawValue)](optionset/init(rawvalue:).md)
+- [init(rawValue: Self.RawValue)](./optionset/init%28rawvalue%29.md)
   Creates a new option set from the given raw value.
 ### Element
-- [associatedtype Element = Self](optionset/element.md)
+- [associatedtype Element = Self](./optionset/element.md)
   The element type of the option set.
 
 ## Relationships
 
 ### Inherits From
-- [Equatable](equatable.md)
-- [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
-- [RawRepresentable](rawrepresentable.md)
-- [SetAlgebra](setalgebra.md)
+- [Equatable](./equatable.md)
+- [ExpressibleByArrayLiteral](./expressiblebyarrayliteral.md)
+- [RawRepresentable](./rawrepresentable.md)
+- [SetAlgebra](./setalgebra.md)
 
 ## See Also
 
-- [struct Set](set.md)
+### Sets
+- [struct Set](./set.md)
   An unordered collection of unique elements.
 
 

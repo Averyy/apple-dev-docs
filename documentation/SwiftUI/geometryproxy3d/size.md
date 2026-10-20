@@ -1,7 +1,8 @@
 # size
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The size of the container view.
 
@@ -16,13 +17,14 @@ var size: Size3D { get }
 
 ## See Also
 
-- [func frame(in: some CoordinateSpaceProtocol) -> Rect3D](geometryproxy3d/frame(in:).md)
+### Accessing geometry characteristics
+- [func frame(in: some CoordinateSpaceProtocol) -> Rect3D](./frame%28in%29.md)
   The container view’s bounds rectangle converted to a defined coordinate space.
-- [var safeAreaInsets: EdgeInsets3D](geometryproxy3d/safeareainsets.md)
+- [var safeAreaInsets: EdgeInsets3D](./safeareainsets.md)
   The safe area inset of the container view.
-- [subscript<T>(Anchor<T>) -> T](geometryproxy3d/subscript(_:).md)
+- [subscript<T>(Anchor<T>) -> T](./subscript%28_%29.md)
   Resolves the value of an anchor to the container view.
-- [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](geometryproxy3d/transform(in:).md)
+- [func transform(in: some CoordinateSpaceProtocol) -> AffineTransform3D?](./transform%28in%29.md)
   The container view’s 3D transform converted to a defined coordinate space.
 
 

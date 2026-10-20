@@ -1,7 +1,8 @@
 # renderTargetHeight
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the height, in pixels, to which Metal constrains the render target.
 
@@ -17,6 +18,10 @@ Sets the height, in pixels, to which Metal constrains the render target.
 
 ```swift
 var renderTargetHeight: Int { get set }
+```
+
+```objc
+@property (nonatomic) NSUInteger renderTargetHeight;
 ```
 
 #### Discussion

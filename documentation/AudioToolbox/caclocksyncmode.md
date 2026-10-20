@@ -1,10 +1,11 @@
 # CAClockSyncMode
 
 **Framework**: Audio Toolbox  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,31 +13,36 @@
 enum CAClockSyncMode
 ```
 
+```c
+enum CAClockSyncMode : UInt32;
+```
+
 ## Topics
 
 ### Constants
-- [CAClockSyncMode.internal](caclocksyncmode/internal.md)
-- [CAClockSyncMode.midiClockTransport](caclocksyncmode/midiclocktransport.md)
-- [CAClockSyncMode.mtcTransport](caclocksyncmode/mtctransport.md)
+- [CAClockSyncMode.internal](./caclocksyncmode/internal.md)
+- [CAClockSyncMode.midiClockTransport](./caclocksyncmode/midiclocktransport.md)
+- [CAClockSyncMode.mtcTransport](./caclocksyncmode/mtctransport.md)
 ### Initializers
-- [init?(rawValue: UInt32)](caclocksyncmode/init(rawvalue:).md)
+- [init?(rawValue: UInt32)](./caclocksyncmode/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func CAClockGetProperty(CAClockRef, CAClockPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](caclockgetproperty(_:_:_:_:).md)
-- [func CAClockGetPropertyInfo(CAClockRef, CAClockPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](caclockgetpropertyinfo(_:_:_:_:).md)
-- [func CAClockSetProperty(CAClockRef, CAClockPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](caclocksetproperty(_:_:_:_:).md)
-- [enum CAClockPropertyID](caclockpropertyid.md)
+### Accessing Clock Properties
+- [func CAClockGetProperty(CAClockRef, CAClockPropertyID, UnsafeMutablePointer<UInt32>, UnsafeMutableRawPointer) -> OSStatus](./caclockgetproperty%28_,_,_,_%29.md)
+- [func CAClockGetPropertyInfo(CAClockRef, CAClockPropertyID, UnsafeMutablePointer<UInt32>?, UnsafeMutablePointer<DarwinBoolean>?) -> OSStatus](./caclockgetpropertyinfo%28_,_,_,_%29.md)
+- [func CAClockSetProperty(CAClockRef, CAClockPropertyID, UInt32, UnsafeRawPointer) -> OSStatus](./caclocksetproperty%28_,_,_,_%29.md)
+- [enum CAClockPropertyID](./caclockpropertyid.md)
 
 
 ---

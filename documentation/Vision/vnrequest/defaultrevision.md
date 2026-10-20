@@ -1,7 +1,8 @@
 # defaultRevision
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The revision of the latest request for the particular SDK linked with the client application.
 
@@ -19,13 +20,18 @@ The revision of the latest request for the particular SDK linked with the client
 class var defaultRevision: Int { get }
 ```
 
+```objc
+@property (class, nonatomic, assign, readonly) NSUInteger defaultRevision;
+```
+
 ## See Also
 
-- [protocol VNRequestRevisionProviding](vnrequestrevisionproviding.md)
+### Determining the Revision
+- [protocol VNRequestRevisionProviding](../vnrequestrevisionproviding.md)
   A protocol for specifying the revision number of Vision algorithms.
-- [class var currentRevision: Int](vnrequest/currentrevision.md)
+- [class var currentRevision: Int](./currentrevision.md)
   The current revison supported by the request.
-- [class var supportedRevisions: IndexSet](vnrequest/supportedrevisions.md)
+- [class var supportedRevisions: IndexSet](./supportedrevisions.md)
   The collection of currently-supported algorithm versions for the class of request.
 
 

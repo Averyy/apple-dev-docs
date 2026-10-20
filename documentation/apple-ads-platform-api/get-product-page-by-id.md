@@ -1,7 +1,8 @@
 # Get Product Page by ID
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieves a specific Product Page (DPP, CPP, or PPO) by its unique UUID.
 
@@ -21,7 +22,7 @@ Keep the following constraints in mind when fetching a product page:
 | Constraint | Detail |
 | --- | --- |
 | UUID format | `productPageId` is a UUID assigned by App Store Connect. It is not an integer. |
-| Discovery | Use [`Query Product Pages`](query-product-pages.md) to list all product pages for an app by `adamId` before fetching by ID. |
+| Discovery | Use [`Query Product Pages`](./query-product-pages.md) to list all product pages for an app by `adamId` before fetching by ID. |
 
 #### Payload Examples
 
@@ -31,7 +32,7 @@ Keep the following constraints in mind when fetching a product page:
 
 Retrieves a product page by its unique identifier.
 
-```None
+```
 GET https://api.ads.apple.com/v1/product-pages/133fc807-d4d5-4c77-92ae-1d6ffdf0c7dc
 ```
 
@@ -55,7 +56,7 @@ GET https://api.ads.apple.com/v1/product-pages/133fc807-d4d5-4c77-92ae-1d6ffdf0c
 
 ##### Request
 
-```None
+```
 GET https://api.ads.apple.com/v1/product-pages/00000000-0000-0000-0000-000000000000
 ```
 
@@ -85,15 +86,31 @@ GET https://api.ads.apple.com/v1/product-pages/00000000-0000-0000-0000-000000000
 
 ## Parameters
 
+### Path Parameters
+
+- `productPageId` (string) *(required)*
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`ProductPageDetailsResponse`, `application/json`)
+- `400` Bad Request (`Error`, `application/json`)
+- `401` Unauthorized (`Error`, `application/json`)
+- `403` Forbidden (`Error`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`Error`, `application/json`)
+- `500` Internal Server Error (`Error`, `application/json`)
 
 ## See Also
 
-- [Query Product Pages](query-product-pages.md)
+- [Query Product Pages](./query-product-pages.md)
   Queries App Store product pages available to your account.
-- [Query Product Page Locale Details](query-product-page-locale-details.md)
+- [Query Product Page Locale Details](./query-product-page-locale-details.md)
   Queries the localized content associated with a custom product page.
-- [Query App Locale Details](query-default-product-page-locale-details-by-adam-id.md)
+- [Query App Locale Details](./query-default-product-page-locale-details-by-adam-id.md)
   Return the default product page locale details for an app identified by its adamId.
 
 

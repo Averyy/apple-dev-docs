@@ -1,7 +1,8 @@
 # ...(_:_:)
 
 **Framework**: RegexBuilder  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Returns a character class that includes the Unicode scalars in the given range.
 
@@ -11,7 +12,7 @@ Returns a character class that includes the Unicode scalars in the given range.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration

@@ -1,7 +1,8 @@
 # space(toDepth2DTensor:widthAxis:heightAxis:depthAxis:blockSize:usePixelShuffleOrder:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a space-to-depth2D operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a space-to-depth2D operation and returns the result tensor.
 
 ```swift
 func space(toDepth2DTensor tensor: MPSGraphTensor, widthAxis: Int, heightAxis: Int, depthAxis: Int, blockSize: Int, usePixelShuffleOrder: Bool, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) spaceToDepth2DTensor:(MPSGraphTensor *) tensor widthAxis:(NSUInteger) widthAxis heightAxis:(NSUInteger) heightAxis depthAxis:(NSUInteger) depthAxis blockSize:(NSUInteger) blockSize usePixelShuffleOrder:(BOOL) usePixelShuffleOrder name:(NSString *) name;
 ```
 
 #### Return Value

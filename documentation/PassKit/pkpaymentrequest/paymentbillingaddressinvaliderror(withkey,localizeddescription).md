@@ -1,7 +1,8 @@
 # paymentBillingAddressInvalidError(withKey:localizedDescription:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a billing address error with the supplied key and user-facing error message.
 
@@ -19,28 +20,33 @@ Creates a billing address error with the supplied key and user-facing error mess
 class func paymentBillingAddressInvalidError(withKey postalAddressKey: String, localizedDescription: String?) -> any Error
 ```
 
+```objc
++ (NSError *) paymentBillingAddressInvalidErrorWithKey:(NSString *) postalAddressKey localizedDescription:(NSString *) localizedDescription;
+```
+
 #### Discussion
 
-You can use this convenience method to create a payment error object instead of creating an [`NSError`](https://developer.apple.com/documentation/foundation/nserror) object yourself.  This method indicates an error in the billing address that is received from an Apple Pay sheet.
+You can use this convenience method to create a payment error object instead of creating an [`NSError`](../../Foundation/nserror.md) object yourself.  This method indicates an error in the billing address that is received from an Apple Pay sheet.
 
 The error you provide and its optional message appear on the Apple Pay sheet. The available space to display messages is limited, so you should keep your messages concise.
 
 ## Parameters
 
-- `postalAddressKey`: A key value from [`CNPostalAddress`](https://developer.apple.com/documentation/contacts/cnpostaladdress) that indicates which part of the address has an error.
+- `postalAddressKey`: A key value from [`CNPostalAddress`](../../Contacts/cnpostaladdress.md) that indicates which part of the address has an error.
 - `localizedDescription`: Optional. Provide a localized, user-facing error message string to help the user resolve the error.
 
 ## See Also
 
-- [class func paymentContactInvalidError(withContactField: PKContactField, localizedDescription: String?) -> any Error](pkpaymentrequest/paymentcontactinvaliderror(withcontactfield:localizeddescription:).md)
+### Providing error information
+- [class func paymentContactInvalidError(withContactField: PKContactField, localizedDescription: String?) -> any Error](./paymentcontactinvaliderror%28withcontactfield,localizeddescription%29.md)
   Creates a contact error with the supplied field and user-facing error message.
-- [class func paymentShippingAddressInvalidError(withKey: String, localizedDescription: String?) -> any Error](pkpaymentrequest/paymentshippingaddressinvaliderror(withkey:localizeddescription:).md)
+- [class func paymentShippingAddressInvalidError(withKey: String, localizedDescription: String?) -> any Error](./paymentshippingaddressinvaliderror%28withkey,localizeddescription%29.md)
   Creates a shipping address error with the supplied key and user-facing error message.
-- [class func paymentShippingAddressUnserviceableError(withLocalizedDescription: String?) -> any Error](pkpaymentrequest/paymentshippingaddressunserviceableerror(withlocalizeddescription:).md)
+- [class func paymentShippingAddressUnserviceableError(withLocalizedDescription: String?) -> any Error](./paymentshippingaddressunserviceableerror%28withlocalizeddescription%29.md)
   Creates an error for an unserviceable address, with the supplied user-facing error message.
-- [static func paymentCouponCodeInvalidError(localizedDescription: String?) -> any Error](pkpaymentrequest/paymentcouponcodeinvaliderror(localizeddescription:).md)
+- [static func paymentCouponCodeInvalidError(localizedDescription: String?) -> any Error](./paymentcouponcodeinvaliderror%28localizeddescription%29.md)
   Returns an error object that indicates an invalid coupon.
-- [static func paymentCouponCodeExpiredError(localizedDescription: String?) -> any Error](pkpaymentrequest/paymentcouponcodeexpirederror(localizeddescription:).md)
+- [static func paymentCouponCodeExpiredError(localizedDescription: String?) -> any Error](./paymentcouponcodeexpirederror%28localizeddescription%29.md)
   Returns an error object that indicates an expired coupon.
 
 

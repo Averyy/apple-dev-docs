@@ -1,7 +1,8 @@
 # simulation
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The reference frame is the simulation root.
 
@@ -18,7 +19,8 @@ static var simulation: ClothCoordinateSpace { get }
 
 ## See Also
 
-- [static var local: ClothCoordinateSpace](clothcoordinatespace/local.md)
+### Accessing coordinate spaces
+- [static var local: ClothCoordinateSpace](./local.md)
   The reference frame is the local entity.
 
 

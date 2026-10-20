@@ -1,7 +1,8 @@
 # presentation
 
 **Framework**: AlarmKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The content required for the various states of the UI.
 
@@ -18,13 +19,14 @@ var presentation: AlarmPresentation
 
 ## See Also
 
-- [init(presentation: AlarmPresentation, metadata: Metadata?, tintColor: Color)](alarmattributes/init(presentation:metadata:tintcolor:).md)
+### Creating an alarm attribute
+- [init(presentation: AlarmPresentation, metadata: Metadata?, tintColor: Color)](./init%28presentation,metadata,tintcolor%29.md)
   Creates an instance of an alarm UI.
-- [var tintColor: Color](alarmattributes/tintcolor.md)
+- [var tintColor: Color](./tintcolor.md)
   The tint color applied to the templated UI.
-- [var metadata: Metadata?](alarmattributes/metadata.md)
+- [var metadata: Metadata?](./metadata.md)
   The additional data you can include in your attributes.
-- [AlarmAttributes.ContentState](alarmattributes/contentstate.md)
+- [AlarmAttributes.ContentState](./contentstate.md)
   The type alias for the structure that describes the content of an alarm.
 
 

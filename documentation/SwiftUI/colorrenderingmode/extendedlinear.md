@@ -1,7 +1,8 @@
 # ColorRenderingMode.extendedLinear
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The extended linear sRGB working color space.
 
@@ -26,9 +27,10 @@ Color component values outside the range `[0, 1]` are preserved. This color spac
 
 ## See Also
 
-- [ColorRenderingMode.linear](colorrenderingmode/linear.md)
+### Getting rendering modes
+- [ColorRenderingMode.linear](./linear.md)
   The linear sRGB working color space.
-- [ColorRenderingMode.nonLinear](colorrenderingmode/nonlinear.md)
+- [ColorRenderingMode.nonLinear](./nonlinear.md)
   The non-linear sRGB working color space.
 
 

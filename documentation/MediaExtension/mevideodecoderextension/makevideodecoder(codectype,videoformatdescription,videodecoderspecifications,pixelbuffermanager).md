@@ -2,6 +2,7 @@
 
 **Framework**: MediaExtension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new video decoder that matches the codec type, format description, decoder specifications, and pixel buffer manager that you specify.
@@ -15,20 +16,24 @@ Creates a new video decoder that matches the codec type, format description, dec
 func makeVideoDecoder(codecType: CMVideoCodecType, videoFormatDescription: CMVideoFormatDescription, videoDecoderSpecifications: [String : Any], pixelBufferManager extensionDecoderPixelBufferManager: MEVideoDecoderPixelBufferManager) throws -> any MEVideoDecoder
 ```
 
+```objc
+- (id<MEVideoDecoder>) videoDecoderWithCodecType:(CMVideoCodecType) codecType videoFormatDescription:(CMVideoFormatDescriptionRef) videoFormatDescription videoDecoderSpecifications:(NSDictionary<NSString *,id> *) videoDecoderSpecifications extensionDecoderPixelBufferManager:(MEVideoDecoderPixelBufferManager *) extensionDecoderPixelBufferManager error:(NSError **) error;
+```
+
 #### Return Value
 
-A new [`MEVideoDecoder`](mevideodecoder.md).
+A new [`MEVideoDecoder`](../mevideodecoder.md).
 
 #### Discussion
 
 The `videoDecoderSpecifications` parameter accepts the following keys:
 
-- [`kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder`](https://developer.apple.com/documentation/videotoolbox/kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder)
-- [`kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder`](https://developer.apple.com/documentation/videotoolbox/kvtvideodecoderspecification_requirehardwareacceleratedvideodecoder)
-- [`kVTVideoDecoderSpecification_RequiredDecoderGPURegistryID`](https://developer.apple.com/documentation/videotoolbox/kvtvideodecoderspecification_requireddecodergpuregistryid)
-- [`kVTVideoDecoderSpecification_PreferredDecoderGPURegistryID`](https://developer.apple.com/documentation/videotoolbox/kvtvideodecoderspecification_preferreddecodergpuregistryid)
+- [`kVTVideoDecoderSpecification_EnableHardwareAcceleratedVideoDecoder`](../../VideoToolbox/kvtvideodecoderspecification_enablehardwareacceleratedvideodecoder.md)
+- [`kVTVideoDecoderSpecification_RequireHardwareAcceleratedVideoDecoder`](../../VideoToolbox/kvtvideodecoderspecification_requirehardwareacceleratedvideodecoder.md)
+- [`kVTVideoDecoderSpecification_RequiredDecoderGPURegistryID`](../../VideoToolbox/kvtvideodecoderspecification_requireddecodergpuregistryid.md)
+- [`kVTVideoDecoderSpecification_PreferredDecoderGPURegistryID`](../../VideoToolbox/kvtvideodecoderspecification_preferreddecodergpuregistryid.md)
 
-If the parameter values aren’t compatible with the video decoder, this method fails with the error [`MEError.Code.unsupportedFeature`](meerror-swift.struct/code/unsupportedfeature.md).
+If the parameter values aren’t compatible with the video decoder, this method fails with the error [`MEError.Code.unsupportedFeature`](../meerror-swift.struct/code/unsupportedfeature.md).
 
 The video decoder needs to retain the pixel buffer manager and use it to allocate and configure output pixel buffers.
 
@@ -36,12 +41,13 @@ The video decoder needs to retain the pixel buffer manager and use it to allocat
 
 - `codecType`: The codec type for the requested decoder.
 - `videoFormatDescription`: An object that describes the video data.
-- `videoDecoderSpecifications`: A dictionary that contains video decoder specification values, which may be empty. See [`Decompression Properties`](https://developer.apple.com/documentation/videotoolbox/decompression-properties) for a list of keys to use.
+- `videoDecoderSpecifications`: A dictionary that contains video decoder specification values, which may be empty. See [Decompression Properties](../../VideoToolbox/decompression-properties.md) for a list of keys to use.
 - `extensionDecoderPixelBufferManager`: A pixel buffer manager.
 
 ## See Also
 
-- [init()](mevideodecoderextension/init.md)
+### Creating a video decoder
+- [init()](./init%28%29.md)
   Creates a new video decoder factory.
 
 

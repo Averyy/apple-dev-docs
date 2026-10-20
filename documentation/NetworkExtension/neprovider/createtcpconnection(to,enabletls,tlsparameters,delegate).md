@@ -1,17 +1,20 @@
 # createTCPConnection(to:enableTLS:tlsParameters:delegate:)
 
 **Framework**: Network Extension  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Create a TCP connection.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.11+
-- tvOS 17.0+
-- visionOS 1.0+
+- iOS 9.0+ - Deprecated in 18.0
+- iPadOS 9.0+ - Deprecated in 18.0
+- Mac Catalyst 13.1+ - Deprecated in 18.0
+- macOS 10.11+ - Deprecated in 15.0
+- tvOS 17.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
+
+> **Deprecated**: Use the [`nw_connection_t`](../../Network/nw_connection_t.md) type from the [Network](../../Network/Network.md) framework instead.
 
 ## Declaration
 
@@ -19,9 +22,13 @@ Create a TCP connection.
 func createTCPConnection(to remoteEndpoint: NWEndpoint, enableTLS: Bool, tlsParameters TLSParameters: NWTLSParameters?, delegate: Any?) -> NWTCPConnection
 ```
 
+```objc
+- (NWTCPConnection *) createTCPConnectionToEndpoint:(NWEndpoint *) remoteEndpoint enableTLS:(BOOL) enableTLS TLSParameters:(NWTLSParameters *) TLSParameters delegate:(id) delegate;
+```
+
 #### Return Value
 
-A [`NWTCPConnection`](nwtcpconnection.md) object. The underlying connection is in the process of being established. You can observe the connection’s `state` property using KVO to determine when the connection is successfully established or fails due to an error. For information about KVO, see [`Key-Value Observing Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
+A [`NWTCPConnection`](../nwtcpconnection.md) object. The underlying connection is in the process of being established. You can observe the connection’s `state` property using KVO to determine when the connection is successfully established or fails due to an error. For information about KVO, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 
 #### Discussion
 
@@ -31,12 +38,13 @@ This method provides a convenient way to create TCP connections from a Network E
 
 - `remoteEndpoint`: The remote endpoint to connect to.
 - `enableTLS`: A flag indicating if the TLS protocol should be used to secure the communication over the connection.
-- `TLSParameters`: The TLS protocol parameters to use. If `enableTLS` is [`true`](https://developer.apple.com/documentation/swift/true) and this parameter is nil then the default TLS parameters will be used.
-- `delegate`: An optional delegate object that conforms to the [`NWTCPConnectionAuthenticationDelegate`](nwtcpconnectionauthenticationdelegate.md) protocol.
+- `TLSParameters`: The TLS protocol parameters to use. If `enableTLS` is [`true`](../../Swift/true.md) and this parameter is nil then the default TLS parameters will be used.
+- `delegate`: An optional delegate object that conforms to the [`NWTCPConnectionAuthenticationDelegate`](../nwtcpconnectionauthenticationdelegate.md) protocol.
 
 ## See Also
 
-- [func createUDPSession(to: NWEndpoint, from: NWHostEndpoint?) -> NWUDPSession](neprovider/createudpsession(to:from:).md)
+### Creating network connections
+- [func createUDPSession(to: NWEndpoint, from: NWHostEndpoint?) -> NWUDPSession](./createudpsession%28to,from%29.md)
   Creates a UDP session.
 
 

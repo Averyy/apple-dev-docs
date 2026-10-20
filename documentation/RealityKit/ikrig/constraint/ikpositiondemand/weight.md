@@ -1,7 +1,8 @@
 # weight
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The per-axis weight this demand has on the pose.
 

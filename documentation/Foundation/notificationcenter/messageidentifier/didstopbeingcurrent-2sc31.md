@@ -1,7 +1,8 @@
 # didStopBeingCurrent
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The identifier of the message that posts after a mouse stops being longer the most recently used mouse.
 
@@ -18,6 +19,8 @@ The identifier of the message that posts after a mouse stops being longer the mo
 ```swift
 static var didStopBeingCurrent: NotificationCenter.BaseMessageIdentifier<GCMouse.DidStopBeingCurrentMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<GCMouse.DidStopBeingCurrentMessage>`.
 
 
 ---

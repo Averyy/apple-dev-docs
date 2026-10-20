@@ -1,14 +1,15 @@
 # cpuid_thermal_leaf
 
 **Framework**: Kernel  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.3+
 
 ## Declaration
 
-```swift
+```c
 cpuid_thermal_leaf_t cpuid_thermal_leaf;
 ```
 

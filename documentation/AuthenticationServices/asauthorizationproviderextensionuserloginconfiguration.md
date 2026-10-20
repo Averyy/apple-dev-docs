@@ -1,7 +1,8 @@
 # ASAuthorizationProviderExtensionUserLoginConfiguration
 
 **Framework**: Authentication Services  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - macOS 14.0+
@@ -12,34 +13,38 @@
 class ASAuthorizationProviderExtensionUserLoginConfiguration
 ```
 
+```objc
+@interface ASAuthorizationProviderExtensionUserLoginConfiguration : NSObject
+```
+
 ## Mentions
 
-- [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
-- [Registering devices and users](registering-devices-and-users.md)
+- [Configuring authentication with the identity provider (IdP)](./configuring-authentication-with-the-identity-provider-idp.md)
+- [Registering devices and users](./registering-devices-and-users.md)
 
 ## Topics
 
 ### Initializers
-- [init(loginUserName: String)](asauthorizationproviderextensionuserloginconfiguration/init(loginusername:).md)
+- [init(loginUserName: String)](./asauthorizationproviderextensionuserloginconfiguration/init%28loginusername%29.md)
 ### Instance Properties
-- [var loginUserName: String](asauthorizationproviderextensionuserloginconfiguration/loginusername.md)
+- [var loginUserName: String](./asauthorizationproviderextensionuserloginconfiguration/loginusername.md)
 ### Instance Methods
-- [func setCustomAssertionRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionuserloginconfiguration/setcustomassertionrequestbodyclaims(_:).md)
-- [func setCustomAssertionRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionuserloginconfiguration/setcustomassertionrequestheaderclaims(_:).md)
-- [func setCustomLoginRequestBodyClaims([String : Any]) throws](asauthorizationproviderextensionuserloginconfiguration/setcustomloginrequestbodyclaims(_:).md)
-- [func setCustomLoginRequestHeaderClaims([String : Any]) throws](asauthorizationproviderextensionuserloginconfiguration/setcustomloginrequestheaderclaims(_:).md)
+- [func setCustomAssertionRequestBodyClaims([String : Any]) throws](./asauthorizationproviderextensionuserloginconfiguration/setcustomassertionrequestbodyclaims%28_%29.md)
+- [func setCustomAssertionRequestHeaderClaims([String : Any]) throws](./asauthorizationproviderextensionuserloginconfiguration/setcustomassertionrequestheaderclaims%28_%29.md)
+- [func setCustomLoginRequestBodyClaims([String : Any]) throws](./asauthorizationproviderextensionuserloginconfiguration/setcustomloginrequestbodyclaims%28_%29.md)
+- [func setCustomLoginRequestHeaderClaims([String : Any]) throws](./asauthorizationproviderextensionuserloginconfiguration/setcustomloginrequestheaderclaims%28_%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

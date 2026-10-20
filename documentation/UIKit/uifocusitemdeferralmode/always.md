@@ -1,7 +1,8 @@
 # UIFocusItemDeferralMode.always
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Always defer focus for this item, even if deferral is disabled right now. This means a programmatic update to this item would result in focus disappearing until the user interacts with the focus engine again.
 
@@ -16,6 +17,10 @@ Always defer focus for this item, even if deferral is disabled right now. This m
 
 ```swift
 case always
+```
+
+```c
+UIFocusItemDeferralModeAlways
 ```
 
 

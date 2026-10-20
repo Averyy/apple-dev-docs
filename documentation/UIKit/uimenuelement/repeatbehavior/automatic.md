@@ -1,7 +1,8 @@
 # UIMenuElement.RepeatBehavior.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Automatically uses the appropriate repeat behavior for this element.
 
@@ -16,6 +17,10 @@ Automatically uses the appropriate repeat behavior for this element.
 
 ```swift
 case automatic
+```
+
+```c
+UIMenuElementRepeatBehaviorAutomatic
 ```
 
 

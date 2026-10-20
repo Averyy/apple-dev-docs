@@ -1,7 +1,8 @@
 # inputDeviceSet
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input element that triggered the interaction.
 

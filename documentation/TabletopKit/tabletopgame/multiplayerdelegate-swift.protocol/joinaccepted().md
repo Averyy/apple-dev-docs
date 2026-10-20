@@ -2,6 +2,7 @@
 
 **Framework**: TabletopKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 We tried to join a game and got accepted
@@ -17,7 +18,8 @@ func joinAccepted()
 
 ## See Also
 
-- [func playerJoined(PlayerIdentifier)](tabletopgame/multiplayerdelegate-swift.protocol/playerjoined(_:).md)
+### Joining games
+- [func playerJoined(PlayerIdentifier)](./playerjoined%28_%29.md)
   A player joined our multiplayer session
 
 

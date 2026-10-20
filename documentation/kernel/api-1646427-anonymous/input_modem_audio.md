@@ -1,14 +1,15 @@
 # INPUT_MODEM_AUDIO
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 INPUT_MODEM_AUDIO = 0x207
 ```
 

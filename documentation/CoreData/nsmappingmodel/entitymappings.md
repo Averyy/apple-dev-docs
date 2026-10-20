@@ -1,7 +1,8 @@
 # entityMappings
 
 **Framework**: Core Data  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The entity mappings for the mapping model.
 
@@ -10,7 +11,7 @@ The entity mappings for the mapping model.
 - iPadOS 3.0+
 - Mac Catalyst 13.1+
 - macOS 10.5+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ The entity mappings for the mapping model.
 var entityMappings: [NSEntityMapping]! { get set }
 ```
 
+```objc
+@property (strong, null_resettable) NSArray<NSEntityMapping *> * entityMappings;
+```
+
 #### Discussion
 
 The order of the mappings in the array determines the order in which they will be processed during migration.
 
 ## See Also
 
-- [var entityMappingsByName: [String : NSEntityMapping]](nsmappingmodel/entitymappingsbyname.md)
+### Managing Entity Mappings
+- [var entityMappingsByName: [String : NSEntityMapping]](./entitymappingsbyname.md)
   The entity mappings for the mapping model, keyed by name.
 
 

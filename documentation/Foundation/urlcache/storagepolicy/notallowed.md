@@ -1,9 +1,10 @@
 # URLCache.StoragePolicy.notAllowed
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Storage in [`URLCache`](urlcache.md) is not allowed in any fashion, either in memory or on disk.
+Storage in [`URLCache`](../../urlcache.md) is not allowed in any fashion, either in memory or on disk.
 
 **Availability**:
 - iOS 2.0+
@@ -20,12 +21,17 @@ Storage in [`URLCache`](urlcache.md) is not allowed in any fashion, either in me
 case notAllowed
 ```
 
+```c
+NSURLCacheStorageNotAllowed
+```
+
 ## See Also
 
-- [URLCache.StoragePolicy.allowed](urlcache/storagepolicy/allowed.md)
-  Storage in [`URLCache`](urlcache.md) is allowed without restriction.
-- [URLCache.StoragePolicy.allowedInMemoryOnly](urlcache/storagepolicy/allowedinmemoryonly.md)
-  Storage in [`URLCache`](urlcache.md) is allowed; however storage should be restricted to memory only.
+### Policies
+- [URLCache.StoragePolicy.allowed](./allowed.md)
+  Storage in [`URLCache`](../../urlcache.md) is allowed without restriction.
+- [URLCache.StoragePolicy.allowedInMemoryOnly](./allowedinmemoryonly.md)
+  Storage in [`URLCache`](../../urlcache.md) is allowed; however storage should be restricted to memory only.
 
 
 ---

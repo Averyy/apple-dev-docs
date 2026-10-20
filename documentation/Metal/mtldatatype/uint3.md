@@ -1,7 +1,8 @@
 # MTLDataType.uint3
 
 **Framework**: Metal  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A three-component vector with 32-bit, unsigned integer values.
 
@@ -10,7 +11,7 @@ A three-component vector with 32-bit, unsigned integer values.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.11+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
@@ -19,21 +20,26 @@ A three-component vector with 32-bit, unsigned integer values.
 case uint3
 ```
 
+```c
+MTLDataTypeUInt3
+```
+
 ## See Also
 
-- [MTLDataType.int](mtldatatype/int.md)
+### 32-bit integer types
+- [MTLDataType.int](./int.md)
   A 32-bit, signed integer value.
-- [MTLDataType.int2](mtldatatype/int2.md)
+- [MTLDataType.int2](./int2.md)
   A two-component vector with 32-bit, signed integer values.
-- [MTLDataType.int3](mtldatatype/int3.md)
+- [MTLDataType.int3](./int3.md)
   A three-component vector with 32-bit, signed integer values.
-- [MTLDataType.int4](mtldatatype/int4.md)
+- [MTLDataType.int4](./int4.md)
   A four-component vector with 32-bit, signed integer values.
-- [MTLDataType.uint](mtldatatype/uint.md)
+- [MTLDataType.uint](./uint.md)
   A 32-bit, unsigned integer value.
-- [MTLDataType.uint2](mtldatatype/uint2.md)
+- [MTLDataType.uint2](./uint2.md)
   A two-component vector with 32-bit, unsigned integer values.
-- [MTLDataType.uint4](mtldatatype/uint4.md)
+- [MTLDataType.uint4](./uint4.md)
   A four-component vector with 32-bit, unsigned integer values.
 
 

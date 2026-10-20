@@ -1,7 +1,8 @@
 # CSSuggestion.SuggestionKind.none
 
 **Framework**: Core Spotlight  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Blocks the system from displaying the suggestion.
 
@@ -18,11 +19,16 @@ Blocks the system from displaying the suggestion.
 case none
 ```
 
+```c
+CSSuggestionKindNone
+```
+
 ## See Also
 
-- [CSSuggestion.SuggestionKind.custom](cssuggestion/suggestionkind-swift.enum/custom.md)
+### Suggestion types
+- [CSSuggestion.SuggestionKind.custom](./custom.md)
   Sorts the custom suggestions together.
-- [CSSuggestion.SuggestionKind.default](cssuggestion/suggestionkind-swift.enum/default.md)
+- [CSSuggestion.SuggestionKind.default](./default.md)
   Displays the suggestion normally.
 
 

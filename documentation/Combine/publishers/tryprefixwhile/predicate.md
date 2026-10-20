@@ -1,7 +1,8 @@
 # predicate
 
 **Framework**: Combine  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The error-throwing closure that determines whether publishing should continue.
 
@@ -22,7 +23,8 @@ let predicate: (Publishers.TryPrefixWhile<Upstream>.Output) throws -> Bool
 
 ## See Also
 
-- [let upstream: Upstream](publishers/tryprefixwhile/upstream.md)
+### Inspecting publisher properties
+- [let upstream: Upstream](./upstream.md)
   The publisher from which this publisher receives elements.
 
 

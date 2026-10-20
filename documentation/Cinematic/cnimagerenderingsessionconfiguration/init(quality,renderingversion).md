@@ -1,7 +1,8 @@
 # init(quality:renderingVersion:)
 
 **Framework**: Cinematic  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize with a specific rendering version.
 
@@ -16,6 +17,10 @@ Initialize with a specific rendering version.
 
 ```swift
 init?(quality: CNRenderingQuality, renderingVersion: Int)
+```
+
+```objc
+- (instancetype) initWithQuality:(CNRenderingQuality) quality renderingVersion:(NSInteger) renderingVersion;
 ```
 
 ## Parameters

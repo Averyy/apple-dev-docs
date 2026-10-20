@@ -1,7 +1,8 @@
 # ActivityStyle.transient
 
 **Framework**: ActivityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 16.1+
@@ -15,11 +16,12 @@ case transient
 
 ## Mentions
 
-- [Displaying live data with Live Activities](displaying-live-data-with-live-activities.md)
+- [Displaying live data with Live Activities](../displaying-live-data-with-live-activities.md)
 
 ## See Also
 
-- [ActivityStyle.standard](activitystyle/standard.md)
+### Style
+- [ActivityStyle.standard](./standard.md)
 
 
 ---

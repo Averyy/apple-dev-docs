@@ -1,7 +1,8 @@
 # fixed(_:)
 
 **Framework**: Swift Charts  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 A constant dimension.
 

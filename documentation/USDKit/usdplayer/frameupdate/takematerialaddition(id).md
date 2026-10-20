@@ -1,9 +1,10 @@
 # takeMaterialAddition(id:)
 
 **Framework**: USDKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
-Consumes and returns the [`USDPlayer.MaterialData`](usdplayer/materialdata.md) for the given material addition.
+Consumes and returns the [`USDPlayer.MaterialData`](../materialdata.md) for the given material addition.
 
 **Availability**:
 - iOS 27.0+

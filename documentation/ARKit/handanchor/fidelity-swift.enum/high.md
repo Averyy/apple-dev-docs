@@ -1,7 +1,8 @@
 # HandAnchor.Fidelity.high
 
 **Framework**: ARKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 High fidelity.
 

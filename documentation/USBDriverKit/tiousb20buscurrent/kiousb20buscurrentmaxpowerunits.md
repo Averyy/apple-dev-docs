@@ -1,21 +1,23 @@
 # kIOUSB20BusCurrentMaxPowerUnits
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 kIOUSB20BusCurrentMaxPowerUnits
 ```
 
 ## See Also
 
-- [kIOUSB20BusCurrentMinimum](tiousb20buscurrent/kiousb20buscurrentminimum.md)
-- [kIOUSB20BusCurrentDefault](tiousb20buscurrent/kiousb20buscurrentdefault.md)
+### Getting the Current Limits
+- [kIOUSB20BusCurrentMinimum](./kiousb20buscurrentminimum.md)
+- [kIOUSB20BusCurrentDefault](./kiousb20buscurrentdefault.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # interfaceParametersDescription()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a human-readable string describing the data that SiriKit displays to the user when you handle an intent.
 
@@ -17,17 +18,22 @@ Returns a human-readable string describing the data that SiriKit displays to the
 func interfaceParametersDescription() -> String
 ```
 
+```objc
+- (NSString *) interfaceParametersDescription;
+```
+
 #### Discussion
 
 If you provide an Intents UI app extension, you can customize all or some of the interface that SiriKit displays to the user for a given intent. The information displayed by SiriKit is different for each intent, and can change in the future. During development, use this method to retrieve a human-readable description of the contents of the [`INParameter`](https://developer.apple.com/documentation/intents/inparameter) objects that SiriKit intends to display for the current intent. Use that information to plan your custom interface.
 
-For information about customizing the Siri and Maps interfaces, see [`Creating an Intents App Extension`](https://developer.apple.com/documentation/sirikit/creating-an-intents-app-extension).
+For information about customizing the Siri and Maps interfaces, see [Creating an Intents App Extension](../../SiriKit/creating-an-intents-app-extension.md).
 
 ## See Also
 
-- [var hostedViewMinimumAllowedSize: CGSize](nsextensioncontext/hostedviewminimumallowedsize.md)
+### Getting Siri-related information
+- [var hostedViewMinimumAllowedSize: CGSize](./hostedviewminimumallowedsize.md)
   The minimum size for a Siri hosted view.
-- [var hostedViewMaximumAllowedSize: CGSize](nsextensioncontext/hostedviewmaximumallowedsize.md)
+- [var hostedViewMaximumAllowedSize: CGSize](./hostedviewmaximumallowedsize.md)
   The maximum size for a Siri hosted view.
 
 

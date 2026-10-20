@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var badComponentInstance: Int](badcomponentinstance.md)
+- [var badComponentInstance: Int](../../badcomponentinstance.md)
   Invalid component  passed to Component Manager.
-- [var badComponentSelector: Int](badcomponentselector.md)
+- [var badComponentSelector: Int](../../badcomponentselector.md)
   Component does not support the specified request code.
 
 

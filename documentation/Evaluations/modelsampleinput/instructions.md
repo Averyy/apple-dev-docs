@@ -1,7 +1,8 @@
 # instructions
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The optional FoundationModels instructions for this input.
 

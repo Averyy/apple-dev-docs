@@ -1,7 +1,8 @@
 # AVExternalStorageDevice
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 Represents a physical external storage device that stores media assets.
 
@@ -18,64 +19,69 @@ Represents a physical external storage device that stores media assets.
 class AVExternalStorageDevice
 ```
 
+```objc
+@interface AVExternalStorageDevice : NSObject
+```
+
 #### Overview
 
-Each storage device instance corresponds to a physical external storage device where the system can media assets. You can access all of the currently available external storage devices with the [`AVExternalStorageDeviceDiscoverySession`](avexternalstoragedevicediscoverysession.md) object’s [`externalStorageDevices`](avexternalstoragedevicediscoverysession/externalstoragedevices.md) property.
+Each storage device instance corresponds to a physical external storage device where the system can media assets. You can access all of the currently available external storage devices with the [`AVExternalStorageDeviceDiscoverySession`](./avexternalstoragedevicediscoverysession.md) object’s [`externalStorageDevices`](./avexternalstoragedevicediscoverysession/externalstoragedevices.md) property.
 
 ## Topics
 
 ### Checking permission to generate URLs
-- [class var authorizationStatus: AVAuthorizationStatus](avexternalstoragedevice/authorizationstatus.md)
+- [class var authorizationStatus: AVAuthorizationStatus](./avexternalstoragedevice/authorizationstatus.md)
   Your app’s authorization status for the external storage device.
 ### Requesting permission to generate URLs
-- [class func requestAccess(completionHandler: (Bool) -> Void)](avexternalstoragedevice/requestaccess(completionhandler:).md)
+- [class func requestAccess(completionHandler: (Bool) -> Void)](./avexternalstoragedevice/requestaccess%28completionhandler%29.md)
   Requests access to an external storage device on behalf of your app, which can present a dialog to a person on their device’s display.
 ### Generating URLs for image assets
-- [func nextAvailableURLs(withPathExtensions: [String]) throws -> [URL]](avexternalstoragedevice/nextavailableurls(withpathextensions:).md)
+- [func nextAvailableURLs(withPathExtensions: [String]) throws -> [URL]](./avexternalstoragedevice/nextavailableurls%28withpathextensions%29.md)
   Generates an array of security scoped URLs that are compliant for digital camera formats, where each element has a different path extension.
 ### Inspecting a storage device
-- [var isConnected: Bool](avexternalstoragedevice/isconnected.md)
+- [var isConnected: Bool](./avexternalstoragedevice/isconnected.md)
   A Boolean value that indicates whether the system has a connection to the external storage device.
-- [var displayName: String?](avexternalstoragedevice/displayname.md)
+- [var displayName: String?](./avexternalstoragedevice/displayname.md)
   The name of an external storage device that’s appropriate for a user interface.
-- [var uuid: UUID?](avexternalstoragedevice/uuid.md)
+- [var uuid: UUID?](./avexternalstoragedevice/uuid.md)
   The external storage device’s unique identifier.
-- [var freeSize: Int](avexternalstoragedevice/freesize.md)
+- [var freeSize: Int](./avexternalstoragedevice/freesize.md)
   The amount of free storage space, in bytes, that’s available on the external storage device.
-- [var totalSize: Int](avexternalstoragedevice/totalsize.md)
+- [var totalSize: Int](./avexternalstoragedevice/totalsize.md)
   The total amount of storage space, in bytes, that’s available on the external storage device.
-- [var isNotRecommendedForCaptureUse: Bool](avexternalstoragedevice/isnotrecommendedforcaptureuse.md)
+- [var isNotRecommendedForCaptureUse: Bool](./avexternalstoragedevice/isnotrecommendedforcaptureuse.md)
   A Boolean value that indicates whether the external storage device is suitable for camera capture.
-- [var reasonsNotRecommendedForCaptureUse: Set<AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse>](avexternalstoragedevice/reasonsnotrecommendedforcaptureuse.md)
-- [AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](avexternalstoragedevice/reasonnotrecommendedforcaptureuse.md)
+- [var reasonsNotRecommendedForCaptureUse: Set<AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse>](./avexternalstoragedevice/reasonsnotrecommendedforcaptureuse.md)
+- [AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](./avexternalstoragedevice/reasonnotrecommendedforcaptureuse.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Choosing a capture device](choosing-a-capture-device.md)
+### Capture devices
+- [Choosing a capture device](./choosing-a-capture-device.md)
   Select the front or back camera, or use advanced features like the TrueDepth camera or dual camera.
-- [Adopting smart framing in your camera app](adopting-smart-framing-in-your-camera-app.md)
+- [Adopting smart framing in your camera app](./adopting-smart-framing-in-your-camera-app.md)
   Capture the optimal shot by providing automatic framing recommendations.
-- [Supporting device rotation in your camera app](supporting-device-rotation-in-your-camera-app.md)
+- [Supporting device rotation in your camera app](./supporting-device-rotation-in-your-camera-app.md)
   Keep your camera preview and captured photos and video upright by applying the angles a rotation coordinator reports.
-- [class AVCaptureDevice](avcapturedevice.md)
+- [class AVCaptureDevice](./avcapturedevice.md)
   An object that represents a hardware or virtual capture device like a camera or microphone.
-- [class AVCaptureDeviceInput](avcapturedeviceinput.md)
+- [class AVCaptureDeviceInput](./avcapturedeviceinput.md)
   An object that provides media input from a capture device to a capture session.
-- [class AVContinuityDevice](avcontinuitydevice.md)
+- [class AVContinuityDevice](./avcontinuitydevice.md)
   A class that represents a physical iOS device that’s nearby and can provide access to its cameras and microphones.
-- [class AVExternalStorageDeviceDiscoverySession](avexternalstoragedevicediscoverysession.md)
+- [class AVExternalStorageDeviceDiscoverySession](./avexternalstoragedevicediscoverysession.md)
   Informs your app when the external storage devices connect to and disconnect from the system.
 
 

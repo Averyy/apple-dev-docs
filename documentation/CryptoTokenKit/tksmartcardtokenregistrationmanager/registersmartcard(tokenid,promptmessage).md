@@ -1,7 +1,8 @@
 # registerSmartCard(tokenID:promptMessage:)
 
 **Framework**: CryptoTokenKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a smartcard with a specific token ID.
 
@@ -15,6 +16,10 @@ Registers a smartcard with a specific token ID.
 
 ```swift
 func registerSmartCard(tokenID: String, promptMessage: String) throws
+```
+
+```objc
+- (BOOL) registerSmartCardWithTokenID:(NSString *) tokenID promptMessage:(NSString *) promptMessage error:(NSError **) error;
 ```
 
 #### Discussion

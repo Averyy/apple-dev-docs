@@ -1,7 +1,8 @@
 # NSUserName()
 
 **Framework**: Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the logon name of the current user.
 
@@ -20,25 +21,30 @@ Returns the logon name of the current user.
 func NSUserName() -> String
 ```
 
+```c
+extern NSString *NSUserName();
+```
+
 #### Return Value
 
 The logon name of the current user.
 
 ## See Also
 
-- [var homeDirectoryForCurrentUser: URL](filemanager/homedirectoryforcurrentuser.md)
+### Accessing user directories
+- [var homeDirectoryForCurrentUser: URL](./filemanager/homedirectoryforcurrentuser.md)
   The home directory for the current user.
-- [func NSHomeDirectory() -> String](nshomedirectory().md)
+- [func NSHomeDirectory() -> String](./nshomedirectory%28%29.md)
   Returns the path to either the user’s or application’s home directory, depending on the platform.
-- [func NSFullUserName() -> String](nsfullusername().md)
+- [func NSFullUserName() -> String](./nsfullusername%28%29.md)
   Returns a string containing the full name of the current user.
-- [func homeDirectory(forUser: String) -> URL?](filemanager/homedirectory(foruser:).md)
+- [func homeDirectory(forUser: String) -> URL?](./filemanager/homedirectory%28foruser%29.md)
   Returns the home directory for the specified user.
-- [func NSHomeDirectoryForUser(String?) -> String?](nshomedirectoryforuser(_:).md)
+- [func NSHomeDirectoryForUser(String?) -> String?](./nshomedirectoryforuser%28_%29.md)
   Returns the path to a given user’s home directory.
-- [var temporaryDirectory: URL](filemanager/temporarydirectory.md)
+- [var temporaryDirectory: URL](./filemanager/temporarydirectory.md)
   The temporary directory for the current user.
-- [func NSTemporaryDirectory() -> String](nstemporarydirectory().md)
+- [func NSTemporaryDirectory() -> String](./nstemporarydirectory%28%29.md)
   Returns the path of the temporary directory for the current user.
 
 

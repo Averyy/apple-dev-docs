@@ -1,7 +1,8 @@
 # subscript(_:_:)
 
 **Framework**: Create ML  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: Instance Subscript
 
 **Availability**:
 - iOS 15.0+
@@ -19,7 +20,8 @@ subscript<T>(name: MLDataTable.Row.Key, type: T.Type) -> T? where T : MLDataValu
 
 ## See Also
 
-- [subscript(MLDataTable.Row.Key) -> MLDataTable.Row.Value?](mldatatable/row/subscript(_:).md)
+### Accessing rows
+- [subscript(MLDataTable.Row.Key) -> MLDataTable.Row.Value?](./subscript%28_%29.md)
 
 
 ---

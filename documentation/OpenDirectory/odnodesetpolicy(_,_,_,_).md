@@ -1,11 +1,14 @@
 # ODNodeSetPolicy(_:_:_:_:)
 
 **Framework**: Open Directory  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS 10.9+
+- Mac Catalyst
+- macOS 10.9+ - Deprecated in 10.10
+
+> **Deprecated**: use ODNodeAddAccountPolicy
 
 ## Declaration
 
@@ -13,23 +16,28 @@
 func ODNodeSetPolicy(_ node: ODNodeRef!, _ policyType: String!, _ value: CFTypeRef!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
 ```
 
+```c
+extern bool ODNodeSetPolicy(ODNodeRef node, ODPolicyType policyType, CFTypeRef value, CFErrorRef*error);
+```
+
 ## See Also
 
-- [func ODNodeAddAccountPolicy(ODNodeRef!, CFDictionary!, String!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odnodeaddaccountpolicy(_:_:_:_:).md)
-- [func ODNodeCopyAccountPolicies(ODNodeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> CFDictionary!](odnodecopyaccountpolicies(_:_:).md)
-- [func ODNodeCopyPolicies(ODNodeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFDictionary>!](odnodecopypolicies(_:_:).md)
-- [func ODNodeCopySupportedPolicies(ODNodeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFDictionary>!](odnodecopysupportedpolicies(_:_:).md)
-- [func ODNodeCustomFunction(ODNodeRef!, CFString!, CFTypeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> CFTypeRef!](odnodecustomfunction(_:_:_:_:).md)
-- [func ODNodePasswordContentCheck(ODNodeRef!, CFString!, CFString!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odnodepasswordcontentcheck(_:_:_:_:).md)
-- [func ODNodeRemoveAccountPolicy(ODNodeRef!, CFDictionary!, String!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odnoderemoveaccountpolicy(_:_:_:_:).md)
-- [func ODNodeRemovePolicy(ODNodeRef!, String!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odnoderemovepolicy(_:_:_:).md)
-- [func ODNodeSetAccountPolicies(ODNodeRef!, CFDictionary!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odnodesetaccountpolicies(_:_:_:).md)
-- [func ODNodeSetPolicies(ODNodeRef!, CFDictionary!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odnodesetpolicies(_:_:_:).md)
-- [func ODRecordAddAccountPolicy(ODRecordRef!, CFDictionary!, String!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odrecordaddaccountpolicy(_:_:_:_:).md)
-- [func ODRecordAuthenticationAllowed(ODRecordRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odrecordauthenticationallowed(_:_:).md)
-- [func ODRecordCopyAccountPolicies(ODRecordRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> CFDictionary!](odrecordcopyaccountpolicies(_:_:).md)
-- [func ODRecordCopyEffectivePolicies(ODRecordRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFDictionary>!](odrecordcopyeffectivepolicies(_:_:).md)
-- [func ODRecordCopyPolicies(ODRecordRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFDictionary>!](odrecordcopypolicies(_:_:).md)
+### Functions
+- [func ODNodeAddAccountPolicy(ODNodeRef!, CFDictionary!, String!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odnodeaddaccountpolicy%28_,_,_,_%29.md)
+- [func ODNodeCopyAccountPolicies(ODNodeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> CFDictionary!](./odnodecopyaccountpolicies%28_,_%29.md)
+- [func ODNodeCopyPolicies(ODNodeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFDictionary>!](./odnodecopypolicies%28_,_%29.md)
+- [func ODNodeCopySupportedPolicies(ODNodeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFDictionary>!](./odnodecopysupportedpolicies%28_,_%29.md)
+- [func ODNodeCustomFunction(ODNodeRef!, CFString!, CFTypeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> CFTypeRef!](./odnodecustomfunction%28_,_,_,_%29.md)
+- [func ODNodePasswordContentCheck(ODNodeRef!, CFString!, CFString!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odnodepasswordcontentcheck%28_,_,_,_%29.md)
+- [func ODNodeRemoveAccountPolicy(ODNodeRef!, CFDictionary!, String!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odnoderemoveaccountpolicy%28_,_,_,_%29.md)
+- [func ODNodeRemovePolicy(ODNodeRef!, String!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odnoderemovepolicy%28_,_,_%29.md)
+- [func ODNodeSetAccountPolicies(ODNodeRef!, CFDictionary!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odnodesetaccountpolicies%28_,_,_%29.md)
+- [func ODNodeSetPolicies(ODNodeRef!, CFDictionary!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odnodesetpolicies%28_,_,_%29.md)
+- [func ODRecordAddAccountPolicy(ODRecordRef!, CFDictionary!, String!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odrecordaddaccountpolicy%28_,_,_,_%29.md)
+- [func ODRecordAuthenticationAllowed(ODRecordRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](./odrecordauthenticationallowed%28_,_%29.md)
+- [func ODRecordCopyAccountPolicies(ODRecordRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> CFDictionary!](./odrecordcopyaccountpolicies%28_,_%29.md)
+- [func ODRecordCopyEffectivePolicies(ODRecordRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFDictionary>!](./odrecordcopyeffectivepolicies%28_,_%29.md)
+- [func ODRecordCopyPolicies(ODRecordRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Unmanaged<CFDictionary>!](./odrecordcopypolicies%28_,_%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # layer(at:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the layer description for a layer in the rate map.
 
@@ -19,9 +20,13 @@ Returns the layer description for a layer in the rate map.
 func layer(at layerIndex: Int) -> MTLRasterizationRateLayerDescriptor?
 ```
 
+```objc
+- (MTLRasterizationRateLayerDescriptor *) layerAtIndex:(NSUInteger) layerIndex;
+```
+
 #### Return Value
 
-The [`MTLRasterizationRateLayerDescriptor`](mtlrasterizationratelayerdescriptor.md) instance for the given index, or `nil` if you haven’t set an instance for this index.
+The [`MTLRasterizationRateLayerDescriptor`](../mtlrasterizationratelayerdescriptor.md) instance for the given index, or `nil` if you haven’t set an instance for this index.
 
 #### Discussion
 
@@ -33,13 +38,14 @@ Calling this method is equivalent to using array subscript syntax.
 
 ## See Also
 
-- [var layerCount: Int](mtlrasterizationratemapdescriptor/layercount.md)
+### Configuring the rate map layers
+- [var layerCount: Int](./layercount.md)
   The number of layers in the rate map.
-- [func setLayer(MTLRasterizationRateLayerDescriptor?, at: Int)](mtlrasterizationratemapdescriptor/setlayer(_:at:).md)
+- [func setLayer(MTLRasterizationRateLayerDescriptor?, at: Int)](./setlayer%28_,at%29.md)
   Sets a configuration for a layer rate map.
-- [var layers: MTLRasterizationRateLayerArray](mtlrasterizationratemapdescriptor/layers.md)
+- [var layers: MTLRasterizationRateLayerArray](./layers.md)
   The rasterization rates for one or more layers in the rate map.
-- [class MTLRasterizationRateLayerArray](mtlrasterizationratelayerarray.md)
+- [class MTLRasterizationRateLayerArray](../mtlrasterizationratelayerarray.md)
   Descriptions for the rasterization rates to apply to the set of layers in a rate map.
 
 

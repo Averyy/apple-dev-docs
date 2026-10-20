@@ -1,7 +1,8 @@
 # isLenient
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that indicates whether the receiver uses heuristics when parsing a string.
 
@@ -20,15 +21,20 @@ A Boolean value that indicates whether the receiver uses heuristics when parsing
 var isLenient: Bool { get set }
 ```
 
+```objc
+@property (getter=isLenient) BOOL lenient;
+```
+
 #### Discussion
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the receiver has been set to use heuristics when parsing a string to guess at the date which is intended, otherwise [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the receiver has been set to use heuristics when parsing a string to guess at the date which is intended, otherwise [`false`](../../Swift/false.md).
 
 If a formatter is set to be lenient, when parsing a string it uses heuristics to guess at the date which is intended. As with any guessing, it may get the result date wrong (that is, a date other than that which was intended).
 
 ## See Also
 
-- [var doesRelativeDateFormatting: Bool](dateformatter/doesrelativedateformatting.md)
+### Managing Natural Language Support
+- [var doesRelativeDateFormatting: Bool](./doesrelativedateformatting.md)
   A Boolean value that indicates whether the receiver uses phrases such as “today” and “tomorrow” for the date component.
 
 

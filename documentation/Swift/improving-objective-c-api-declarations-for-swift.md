@@ -1,6 +1,7 @@
 # Improving Objective-C API Declarations for Swift
 
-**Framework**: Swift
+**Framework**: Swift  
+**Role**: Article
 
 Use the `NS_REFINED_FOR_SWIFT` macro to change how an API is imported into Swift.
 
@@ -75,15 +76,16 @@ extension Color {
 
 ## See Also
 
-- [Designating Nullability in Objective-C APIs](designating-nullability-in-objective-c-apis.md)
+### Customizing Objective-C APIs
+- [Designating Nullability in Objective-C APIs](./designating-nullability-in-objective-c-apis.md)
   Use nullability annotations or mark regions as annotated to control how Objective-C declarations are imported into Swift.
-- [Renaming Objective-C APIs for Swift](renaming-objective-c-apis-for-swift.md)
+- [Renaming Objective-C APIs for Swift](./renaming-objective-c-apis-for-swift.md)
   Use the `NS_SWIFT_NAME` macro to customize API names for Swift.
-- [Grouping Related Objective-C Constants](grouping-related-objective-c-constants.md)
+- [Grouping Related Objective-C Constants](./grouping-related-objective-c-constants.md)
   Add macros to your Objective-C types to group their values in Swift.
-- [Marking API Availability in Objective-C](marking-api-availability-in-objective-c.md)
+- [Marking API Availability in Objective-C](./marking-api-availability-in-objective-c.md)
   Use a macro to denote the availability of an Objective-C API.
-- [Making Objective-C APIs Unavailable in Swift](making-objective-c-apis-unavailable-in-swift.md)
+- [Making Objective-C APIs Unavailable in Swift](./making-objective-c-apis-unavailable-in-swift.md)
   Use the `NS_SWIFT_UNAVAILABLE` macro to prevent an API from being used in Swift.
 
 

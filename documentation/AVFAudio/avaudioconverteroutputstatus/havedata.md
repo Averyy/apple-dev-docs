@@ -1,7 +1,8 @@
 # AVAudioConverterOutputStatus.haveData
 
 **Framework**: AVFAudio  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A status that indicates that the method returns all of the requested data.
 
@@ -20,13 +21,18 @@ A status that indicates that the method returns all of the requested data.
 case haveData
 ```
 
+```c
+AVAudioConverterOutputStatus_HaveData
+```
+
 ## See Also
 
-- [AVAudioConverterOutputStatus.inputRanDry](avaudioconverteroutputstatus/inputrandry.md)
+### Interpreting conversion results
+- [AVAudioConverterOutputStatus.inputRanDry](./inputrandry.md)
   A status that indicates the method doesn’t have enough input available to satisfy the request.
-- [AVAudioConverterOutputStatus.endOfStream](avaudioconverteroutputstatus/endofstream.md)
+- [AVAudioConverterOutputStatus.endOfStream](./endofstream.md)
   A status that indicates the method reaches the end of the stream, and doesn’t return any data.
-- [AVAudioConverterOutputStatus.error](avaudioconverteroutputstatus/error.md)
+- [AVAudioConverterOutputStatus.error](./error.md)
   A status that indicates the method encounters an error.
 
 

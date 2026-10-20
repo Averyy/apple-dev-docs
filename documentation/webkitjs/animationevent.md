@@ -1,7 +1,8 @@
 # AnimationEvent
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,15 +10,15 @@
 
 ## Declaration
 
-```swift
+```
 interface AnimationEvent
 ```
 
 ## Topics
 
 ### Instance Properties
-- [animationName](animationevent/1633047-animationname.md)
-- [elapsedTime](animationevent/1632194-elapsedtime.md)
+- [animationName](./animationevent/api-1633047-animationname.md)
+- [elapsedTime](./animationevent/api-1632194-elapsedtime.md)
 
 ## Relationships
 

@@ -1,7 +1,8 @@
 # name
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of this `IntentPerson`
 
@@ -11,7 +12,7 @@ The name of this `IntentPerson`
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ var name: IntentPerson.Name
 
 ## See Also
 
-- [IntentPerson.Name](intentperson/name-swift.enum.md)
+### Getting the person’s name
+- [IntentPerson.Name](./name-swift.enum.md)
   A type that stores name-related information for a person.
 
 

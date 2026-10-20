@@ -2,6 +2,7 @@
 
 **Framework**: MediaExtension  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Requests the processor to process a video frame.
@@ -12,12 +13,20 @@ Requests the processor to process a video frame.
 ## Declaration
 
 ```swift
+func processFrame(fromImageBuffer inputFrame: CVPixelBuffer, completionHandler: @escaping @Sendable (CVPixelBuffer?, (any Error)?) -> Void)
+```
+
+```swift
 func processFrame(fromImageBuffer inputFrame: CVPixelBuffer) async throws -> CVPixelBuffer
+```
+
+```objc
+- (void) processFrameFromImageBuffer:(CVPixelBufferRef) inputFrame completionHandler:(void (^)(CVPixelBufferRef imageBuffer, NSError *error)) completionHandler;
 ```
 
 #### Discussion
 
-The completionHandler block must be called for every [`processFrame(fromImageBuffer:completionHandler:)`](merawprocessor/processframe(fromimagebuffer:completionhandler:).md) call when processing is complete. The completion handler block should return either a processed pixel buffer or an error.
+The completionHandler block must be called for every [`processFrame(fromImageBuffer:completionHandler:)`](./processframe%28fromimagebuffer,completionhandler%29.md) call when processing is complete. The completion handler block should return either a processed pixel buffer or an error.
 
 ## Parameters
 

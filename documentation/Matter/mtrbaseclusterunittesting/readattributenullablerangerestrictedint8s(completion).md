@@ -1,7 +1,8 @@
 # readAttributeNullableRangeRestrictedInt8s(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeNullableRangeRestrictedInt8s(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeNullableRangeRestrictedInt8s() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeNullableRangeRestrictedInt8sWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

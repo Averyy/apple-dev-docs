@@ -1,7 +1,8 @@
 # waitForAll()
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Wait for all of the group’s remaining tasks to complete.
 
@@ -25,7 +26,7 @@ nonisolated
 
 If any of the tasks throw, the *first* error thrown is captured and re-thrown by this method although the task group is *not* canceled when this happens.
 
-##### Cancelling the Task Group on First Error
+##### Cancelling the task group on first error
 
 If you want to cancel the task group, and all “sibling” tasks, whenever any of child tasks throws an error, use the following pattern instead:
 
@@ -47,16 +48,17 @@ while !group.isEmpty {
 assert(group.isEmpty())
 ```
 
-> **Note**: The *first* error that was thrown by a child task during draining all the tasks. This first error is stored until all other tasks have completed, and is re-thrown afterwards.
+> **Throws**: The *first* error that was thrown by a child task during draining all the tasks. This first error is stored until all other tasks have completed, and is re-thrown afterwards.
 
 ## See Also
 
-- [func next() async throws -> ChildTaskResult?](throwingtaskgroup/next.md)
-- [func nextResult() async -> Result<ChildTaskResult, Failure>?](throwingtaskgroup/nextresult.md)
+### Accessing Individual Results
+- [func next() async throws -> ChildTaskResult?](./next%28%29.md)
+- [func nextResult() async -> Result<ChildTaskResult, Failure>?](./nextresult%28%29.md)
   Wait for the next child task to complete, and return a result containing either the value that the child task returned or the error that it threw.
-- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](throwingtaskgroup/next(isolation:).md)
+- [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](./next%28isolation%29.md)
   Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
-- [var isEmpty: Bool](throwingtaskgroup/isempty.md)
+- [var isEmpty: Bool](./isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
 
 

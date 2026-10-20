@@ -1,7 +1,8 @@
 # keyValueStore
 
 **Framework**: Playground Support  
-**Kind**: instp
+**Kind**: instp  
+**Role**: Instance Property
 
 An object that persists data on a page between multiple sessions.
 
@@ -17,7 +18,8 @@ var keyValueStore: PlaygroundKeyValueStore { get }
 
 ## See Also
 
-- [var text: String](playgroundpage/3029563-text.md)
+### Inspecting Page Data
+- [var text: String](./api-3029563-text.md)
   The current contents of the playground page, including any user-entered text.
 
 

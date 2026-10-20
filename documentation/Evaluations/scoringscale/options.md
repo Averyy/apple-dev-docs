@@ -1,7 +1,8 @@
 # options
 
 **Framework**: Evaluations  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scale options, ordered from highest to lowest value.
 
@@ -22,7 +23,8 @@ let options: [ScaleOption]
 
 ## See Also
 
-- [struct ScaleOption](scaleoption.md)
+### Inspecting a scale
+- [struct ScaleOption](../scaleoption.md)
   A single option in a scoring scale.
 
 

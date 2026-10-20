@@ -1,7 +1,8 @@
 # phase
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The phase of the event.
 

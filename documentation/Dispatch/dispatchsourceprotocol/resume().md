@@ -1,18 +1,19 @@
 # resume()
 
 **Framework**: Dispatch  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resumes the dispatch source.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -22,9 +23,10 @@ func resume()
 
 ## See Also
 
-- [func activate()](dispatchsourceprotocol/activate.md)
+### Activating, Suspending, and Resuming a Source
+- [func activate()](./activate%28%29.md)
   Activates the dispatch source.
-- [func suspend()](dispatchsourceprotocol/suspend.md)
+- [func suspend()](./suspend%28%29.md)
   Suspends the dispatch source.
 
 

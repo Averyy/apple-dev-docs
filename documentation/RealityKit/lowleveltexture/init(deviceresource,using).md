@@ -1,9 +1,10 @@
 # init(deviceResource:using:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Creates a low-level texture from an existing [`LowLevelDeviceResource`](lowleveldeviceresource.md) created and managed by the application.
+Creates a low-level texture from an existing [`LowLevelDeviceResource`](../lowleveldeviceresource.md) created and managed by the application.
 
 **Availability**:
 - iOS 27.0+
@@ -23,7 +24,7 @@ convenience init(deviceResource: LowLevelDeviceResource, using commandBuffer: (a
 ## Parameters
 
 - `deviceResource`: The underlying texture this object should refer to.
-- `commandBuffer`: The [`MTLCommandBuffer`](https://developer.apple.com/documentation/metal/mtlcommandbuffer) you intend to use for texture modifications. RealityKit waits for the command buffer to complete before utilizing the texture for rendering.
+- `commandBuffer`: The [`MTLCommandBuffer`](../../Metal/mtlcommandbuffer.md) you intend to use for texture modifications. RealityKit waits for the command buffer to complete before utilizing the texture for rendering.
 
 
 ---

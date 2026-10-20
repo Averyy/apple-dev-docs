@@ -1,7 +1,8 @@
 # Get Rule-Based Match Requests
 
 **Framework**: App Store Connect API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Get match requests that use matchmaking rules.
 
@@ -14,7 +15,7 @@ Get match requests that use matchmaking rules.
 
 **Request**:
 
-```None
+```
 GET /v1/gameCenterDetails/8fb73d41-1ca1-1cbf-2538-9df424beb10b/metrics/ruleBasedMatchmakingRequests?granularity=PT15M
 ```
 
@@ -376,15 +377,41 @@ GET /v1/gameCenterDetails/8fb73d41-1ca1-1cbf-2538-9df424beb10b/metrics/ruleBased
 
 ## Parameters
 
+### Path Parameters
+
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the [`GameCenterDetail`](./gamecenterdetail.md) resource object. You can obtain this resource ID from the [`List apps`](./get-v1-apps.md) response.
+
+### Query Parameters
+
 - `filter[result]` (string): The types of the match requests to include in the response.
+
+  **Allowed Values**: `MATCHED`, `CANCELED`, `EXPIRED`
 - `granularity` (string) *(required)*: The level of information you want in the response, specified as a time interval for the data collection, using the ISO 8601 format for durations.
+
+  **Allowed Values**: `P1D`, `PT1H`, `PT15M`
 - `groupBy` ([string]): If `result`, organizes the match requests by type (`MATCHED`, `CANCELED`, and `EXPIRED`).
+
+  **Allowed Values**: `result`
 - `limit` (integer): The maximum number of match requests to fetch.
+
+  **Maximum**: `200`
 - `sort` ([string]): Sorts the match request by count or duration in the queue. For example, `count` sorts the results by decreasing number of players that Game Center finds.
+
+  **Allowed Values**: `count`, `-count`, `averageSecondsInQueue`, `-averageSecondsInQueue`, `p50SecondsInQueue`, `-p50SecondsInQueue`, `p95SecondsInQueue`, `-p95SecondsInQueue`
+
+## Responses
+
+- `200` OK (`GameCenterMatchmakingAppRequestsV1MetricResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Get Classic Match Requests](get-v1-gamecenterdetails-_id_-metrics-classicmatchmakingrequests.md)
+### Getting match request metrics
+- [Get Classic Match Requests](./get-v1-gamecenterdetails-_id_-metrics-classicmatchmakingrequests.md)
   Get match requests that don’t use matchmaking rules.
 
 

@@ -1,7 +1,8 @@
 # SpotlightSearchTool.ContentDomain.Audio
 
 **Framework**: Core Spotlight  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Attribute mapping for the audio domain.
 
@@ -21,28 +22,29 @@ struct Audio
 ## Topics
 
 ### Configuring the domain
-- [init(artist: [SearchableItemAttribute]?, album: [SearchableItemAttribute]?, transcription: [SearchableItemAttribute]?, date: [SearchableItemAttribute]?)](spotlightsearchtool/contentdomain/audio-swift.struct/init(artist:album:transcription:date:).md)
+- [init(artist: [SearchableItemAttribute]?, album: [SearchableItemAttribute]?, transcription: [SearchableItemAttribute]?, date: [SearchableItemAttribute]?)](./audio-swift.struct/init%28artist,album,transcription,date%29.md)
 ### Getting the domain attributes
-- [var album: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/audio-swift.struct/album.md)
-  Attributes queried for the album. Default: [`album`](searchableitemattribute/album.md)
-- [var artist: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/audio-swift.struct/artist.md)
-  Attributes queried for the artist. Default: [`artist`](searchableitemattribute/artist.md)
-- [var date: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/audio-swift.struct/date.md)
-  Attributes queried for the recording date. Default: [`contentCreationDate`](searchableitemattribute/contentcreationdate.md)
-- [var transcription: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/audio-swift.struct/transcription.md)
+- [var album: [SearchableItemAttribute]?](./audio-swift.struct/album.md)
+  Attributes queried for the album. Default: [`album`](../../searchableitemattribute/album.md)
+- [var artist: [SearchableItemAttribute]?](./audio-swift.struct/artist.md)
+  Attributes queried for the artist. Default: [`artist`](../../searchableitemattribute/artist.md)
+- [var date: [SearchableItemAttribute]?](./audio-swift.struct/date.md)
+  Attributes queried for the recording date. Default: [`contentCreationDate`](../../searchableitemattribute/contentcreationdate.md)
+- [var transcription: [SearchableItemAttribute]?](./audio-swift.struct/transcription.md)
   Attributes queried for transcribed text.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var audio: SpotlightSearchTool.ContentDomain](spotlightsearchtool/contentdomain/audio-swift.type.property.md)
+### Getting the audio domain
+- [static var audio: SpotlightSearchTool.ContentDomain](./audio-swift.type.property.md)
   Music, podcasts, voice memos, and other audio content.
-- [static func audio(SpotlightSearchTool.ContentDomain.Audio) -> SpotlightSearchTool.ContentDomain](spotlightsearchtool/contentdomain/audio(_:).md)
+- [static func audio(SpotlightSearchTool.ContentDomain.Audio) -> SpotlightSearchTool.ContentDomain](./audio%28_%29.md)
   Music, podcasts, voice memos, and other audio content with custom attribute mapping.
 
 

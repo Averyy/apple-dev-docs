@@ -1,7 +1,8 @@
 # exceptionType
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A human-readable string denoting type of the exception.
 
@@ -20,9 +21,10 @@ let exceptionType: String
 
 ## See Also
 
-- [let className: String](crashdiagnostic/objectivecexceptionreason/classname.md)
+### Exception type
+- [let className: String](./classname.md)
   The class name of the exception
-- [let exceptionName: String](crashdiagnostic/objectivecexceptionreason/exceptionname.md)
+- [let exceptionName: String](./exceptionname.md)
   The name of the exception.
 
 

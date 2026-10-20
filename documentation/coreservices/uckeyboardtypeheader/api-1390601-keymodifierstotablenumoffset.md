@@ -1,9 +1,10 @@
 # keyModifiersToTableNumOffset
 
 **Framework**: Core Services  
-**Kind**: structp
+**Kind**: structp  
+**Role**: Instance Property
 
-An unsigned 32-bit integer providing an offset to a structure of type [`UCKeyModifiersToTableNum`](uckeymodifierstotablenum.md). The `'uchr'` resource requires a `UCKeyModifiersToTableNum` structure, therefore this field must contain a non-zero value.
+An unsigned 32-bit integer providing an offset to a structure of type [`UCKeyModifiersToTableNum`](../uckeymodifierstotablenum.md). The `'uchr'` resource requires a `UCKeyModifiersToTableNum` structure, therefore this field must contain a non-zero value.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -13,6 +14,10 @@ An unsigned 32-bit integer providing an offset to a structure of type [`UCKeyMod
 
 ```swift
 var keyModifiersToTableNumOffset: UInt32
+```
+
+```c
+UInt32 keyModifiersToTableNumOffset;
 ```
 
 

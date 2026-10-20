@@ -1,10 +1,11 @@
 # GUEST_INTRBILITY_STI_BLOCKING
 
 **Framework**: Hypervisor  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var GUEST_INTRBILITY_STI_BLOCKING: UInt64 { get }
 ```
 
+```c
+#define GUEST_INTRBILITY_STI_BLOCKING
+```
+
 ## See Also
 
-- [var GUEST_INTRBILITY_MOVSS_BLOCKING: UInt64](guest_intrbility_movss_blocking.md)
-- [var GUEST_INTRBILITY_NMI_BLOCKING: UInt64](guest_intrbility_nmi_blocking.md)
-- [var GUEST_INTRBILITY_SMI_BLOCKING: UInt64](guest_intrbility_smi_blocking.md)
+### Interruptibility options
+- [var GUEST_INTRBILITY_MOVSS_BLOCKING: UInt64](./guest_intrbility_movss_blocking.md)
+- [var GUEST_INTRBILITY_NMI_BLOCKING: UInt64](./guest_intrbility_nmi_blocking.md)
+- [var GUEST_INTRBILITY_SMI_BLOCKING: UInt64](./guest_intrbility_smi_blocking.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # parseStrategy
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The parse strategy used by this format style.
 
@@ -22,7 +23,8 @@ var parseStrategy: URL.ParseStrategy { get }
 
 ## See Also
 
-- [struct ParseStrategy](url/parsestrategy.md)
+### Parsing URLs
+- [struct ParseStrategy](../parsestrategy.md)
   A parse strategy for creating URLs from formatted strings.
 
 

@@ -1,7 +1,8 @@
 # ATSUFontFallbacks
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.1+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ATSUFontFallbacks = OpaquePointer
+```
+
+```c
+typedef struct OpaqueATSUFontFallbacks *ATSUFontFallbacks;
 ```
 
 

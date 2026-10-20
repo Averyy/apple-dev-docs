@@ -1,6 +1,7 @@
 # iPhone quick switch
 
-**Framework**: Core Telephony
+**Framework**: Core Telephony  
+**Role**: API Collection
 
 Enable seamless app transition between multiple iPhones.
 
@@ -12,7 +13,7 @@ iPhone quick switch enables your app to receive notifications from the system wh
 
 There are two ways adopt iPhone quick switching:
 
-- Create a [`CTQuickSwitchManager`](ctquickswitchmanager.md) object, and, optionally, subscribe to the [`CTQuickSwitchManager.Delegate`](ctquickswitchmanager/delegate-swift.protocol.md) protocol to receive notification state changes.
+- Create a [`CTQuickSwitchManager`](./ctquickswitchmanager.md) object, and, optionally, subscribe to the [`CTQuickSwitchManager.Delegate`](./ctquickswitchmanager/delegate-swift.protocol.md) protocol to receive notification state changes.
 - Query the a device’s `CTQuickSwitch` state directly.
 
 The following example shows how to create a `CTQuickSwitchManager`, register and de-register for events, check the quick switch state for a specific phone number, and check the device’s current state.
@@ -191,31 +192,32 @@ The following examples show how to create a `CTQuickSwitchManager`, register and
 ## Topics
 
 ### Adopting iPhone quick switch
-- [class CTQuickSwitchManager](ctquickswitchmanager.md)
+- [class CTQuickSwitchManager](./ctquickswitchmanager.md)
   An object that enables an app to register and query a device’s quick switch state.
-- [var delegate: (any CTQuickSwitchManager.Delegate)?](ctquickswitchmanager/delegate-swift.property.md)
+- [var delegate: (any CTQuickSwitchManager.Delegate)?](./ctquickswitchmanager/delegate-swift.property.md)
   An object the system notifies to respond to quick switch events.
-- [CTQuickSwitchManager.Delegate](ctquickswitchmanager/delegate-swift.protocol.md)
+- [CTQuickSwitchManager.Delegate](./ctquickswitchmanager/delegate-swift.protocol.md)
   Methods you implement to respond to changes in a device’s quick switch state.
 ### Registering and unregistering for quick switch events
-- [class func registerForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/registerforlaunch(onquickswitchstateevents:).md)
+- [class func registerForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](./ctquickswitchmanager/registerforlaunch%28onquickswitchstateevents%29.md)
   Registers the calling app for background launch whenever the device’s quick switch state changes.
-- [class func unregisterForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/unregisterforlaunch(onquickswitchstateevents:).md)
+- [class func unregisterForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](./ctquickswitchmanager/unregisterforlaunch%28onquickswitchstateevents%29.md)
   Removes the calling app’s registration for background launch on quick switch state changes.
 ### Responding to quick switch state changes
-- [func quickSwitchManager(CTQuickSwitchManager, didChangeTo: CTQuickSwitchState)](ctquickswitchmanager/delegate-swift.protocol/quickswitchmanager(_:didchangeto:).md)
+- [func quickSwitchManager(CTQuickSwitchManager, didChangeTo: CTQuickSwitchState)](./ctquickswitchmanager/delegate-swift.protocol/quickswitchmanager%28_,didchangeto%29.md)
   Indicates there’s been a change in device’s quick switch state.
 ### Checking the state of a device
-- [func getDeviceState((CTQuickSwitchState, (any Error)?) -> Void)](ctquickswitchmanager/getdevicestate(_:).md)
+- [func getDeviceState((CTQuickSwitchState, (any Error)?) -> Void)](./ctquickswitchmanager/getdevicestate%28_%29.md)
   Gets the quick switch state of the current device.
-- [func getPhoneNumberState(forSuffix: String, completion: (CTQuickSwitchState, (any Error)?) -> Void)](ctquickswitchmanager/getphonenumberstate(forsuffix:completion:).md)
+- [func getPhoneNumberState(forSuffix: String, completion: (CTQuickSwitchState, (any Error)?) -> Void)](./ctquickswitchmanager/getphonenumberstate%28forsuffix,completion%29.md)
   Queries the quick switch state for a phone number whose suffix matches the provided phone number suffix.
-- [enum CTQuickSwitchState](ctquickswitchstate.md)
+- [enum CTQuickSwitchState](./ctquickswitchstate.md)
   Values that describe a device’s quick switch status.
 
 ## See Also
 
-- [class CTTelephonyNetworkInfo](cttelephonynetworkinfo.md)
+### Service information
+- [class CTTelephonyNetworkInfo](./cttelephonynetworkinfo.md)
   An object that provides notifications of changes to the user’s cellular service provider.
 
 

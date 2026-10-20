@@ -1,12 +1,15 @@
 # minContentSize
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum allowed size of the receiver’s content area.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.13
+
+> **Deprecated**: Drawers are deprecated; consider using NSSplitViewController
 
 ## Declaration
 
@@ -14,15 +17,20 @@ The minimum allowed size of the receiver’s content area.
 var minContentSize: NSSize { get set }
 ```
 
+```objc
+@property NSSize minContentSize;
+```
+
 ## See Also
 
-- [var contentSize: NSSize](nsdrawer/contentsize.md)
+### Managing Drawer Size
+- [var contentSize: NSSize](./contentsize.md)
   The size of the receiver’s content area.
-- [var leadingOffset: CGFloat](nsdrawer/leadingoffset.md)
+- [var leadingOffset: CGFloat](./leadingoffset.md)
   The receiver’s leading offset.
-- [var maxContentSize: NSSize](nsdrawer/maxcontentsize.md)
+- [var maxContentSize: NSSize](./maxcontentsize.md)
   The maximum allowed size of the receiver’s content area.
-- [var trailingOffset: CGFloat](nsdrawer/trailingoffset.md)
+- [var trailingOffset: CGFloat](./trailingoffset.md)
   The receiver’s trailing offset.
 
 

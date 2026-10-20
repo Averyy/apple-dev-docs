@@ -1,7 +1,8 @@
 # midY()
 
 **Framework**: MapKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the midpoint along the y-axis of a rectangle.
 
@@ -10,21 +11,22 @@ Returns the midpoint along the y-axis of a rectangle.
 
 ## Declaration
 
-```swift
+```
 midY(): number;
 ```
 
 ## See Also
 
-- [maxX()](maprect/maxx.md)
+### Obtaining rectangle metrics
+- [maxX()](./maxx.md)
   Returns the maximum x-axis value of a rectangle.
-- [maxY()](maprect/maxy.md)
+- [maxY()](./maxy.md)
   Returns the maximum y-axis value of a rectangle.
-- [midX()](maprect/midx.md)
+- [midX()](./midx.md)
   Returns the midpoint along the x-axis of a rectangle.
-- [minX()](maprect/minx.md)
+- [minX()](./minx.md)
   Returns the minimum x-axis value of a rectangle.
-- [minY()](maprect/miny.md)
+- [minY()](./miny.md)
   Returns the minimum y-axis value of a rectangle.
 
 

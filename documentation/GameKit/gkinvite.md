@@ -1,7 +1,8 @@
 # GKInvite
 
 **Framework**: GameKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An invitation to join a match sent to the local player from another player.
 
@@ -19,9 +20,13 @@ An invitation to join a match sent to the local player from another player.
 class GKInvite
 ```
 
+```objc
+@interface GKInvite : NSObject
+```
+
 ## Mentions
 
-- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+- [Finding players for custom server-based games](./finding-players-for-custom-server-based-games.md)
 
 #### Overview
 
@@ -30,52 +35,53 @@ Your game never directly creates `GKInvite` objects. Instead, these objects are 
 ## Topics
 
 ### Getting Properties
-- [var sender: GKPlayer](gkinvite/sender.md)
+- [var sender: GKPlayer](./gkinvite/sender.md)
   The player who sends the invitation.
-- [var playerAttributes: UInt32](gkinvite/playerattributes.md)
+- [var playerAttributes: UInt32](./gkinvite/playerattributes.md)
   The player attributes for the match.
-- [var playerGroup: Int](gkinvite/playergroup.md)
+- [var playerGroup: Int](./gkinvite/playergroup.md)
   The player group for the match.
-- [var isHosted: Bool](gkinvite/ishosted.md)
+- [var isHosted: Bool](./gkinvite/ishosted.md)
   A Boolean value that indicates whether you host the game on your own servers.
-- [var inviter: String](gkinvite/inviter.md)
+- [var inviter: String](./gkinvite/inviter.md)
   The identifier for the player who sends the invitation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Creating real-time games](creating-real-time-games.md)
+### Real-time games
+- [Creating real-time games](./creating-real-time-games.md)
   Develop games where multiple players interact in real time.
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
+- [Finding multiple players for a game](./finding-multiple-players-for-a-game.md)
   Discover and invite other players to participate in a real-time game.
-- [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
+- [Exchanging data between players in real-time games](./exchanging-data-between-players-in-real-time-games.md)
   Send data between players in a real-time multiplayer game.
-- [Adding voice chat to multiplayer games](adding-voice-chat-to-multiplayer-games.md)
+- [Adding voice chat to multiplayer games](./adding-voice-chat-to-multiplayer-games.md)
   Enable players to voice chat with all, or groups of, players in a multiplayer game.
-- [Finding players for custom server-based games](finding-players-for-custom-server-based-games.md)
+- [Finding players for custom server-based games](./finding-players-for-custom-server-based-games.md)
   Connect players to your custom server-hosted games by creating game sessions with hosted matches.
-- [Matchmaking rules](matchmaking-rules.md)
+- [Matchmaking rules](./matchmaking-rules.md)
   Game Center applies different type of rules you create in a particular order to find the best matches.
-- [class GKMatchRequest](gkmatchrequest.md)
+- [class GKMatchRequest](./gkmatchrequest.md)
   An object that encapsulates the parameters to create a real-time or turn-based match.
-- [class GKMatchmaker](gkmatchmaker.md)
+- [class GKMatchmaker](./gkmatchmaker.md)
   An object that creates matches with other players without presenting an interface to the players.
-- [class GKMatchmakerViewController](gkmatchmakerviewcontroller.md)
+- [class GKMatchmakerViewController](./gkmatchmakerviewcontroller.md)
   An interface that allows a player to invite other players to a real-time game and automatch to fill any empty slots.
-- [protocol GKInviteEventListener](gkinviteeventlistener.md)
+- [protocol GKInviteEventListener](./gkinviteeventlistener.md)
   A protocol that handles invite events from Game Center.
-- [class GKMatch](gkmatch.md)
+- [class GKMatch](./gkmatch.md)
   A peer-to-peer network between a group of players that sign into Game Center.
 
 

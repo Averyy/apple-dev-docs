@@ -9,7 +9,7 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned long VERTEX_ARRAY_BINDING_OES;
 ```
 

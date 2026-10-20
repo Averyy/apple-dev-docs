@@ -1,7 +1,8 @@
 # sourceAppStoreItemIdentifier
 
 **Framework**: StoreKit Test  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item identifier of the app that displays the ad.
 
@@ -16,19 +17,24 @@ The item identifier of the app that displays the ad.
 var sourceAppStoreItemIdentifier: Int { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSInteger sourceAppStoreItemIdentifier;
+```
+
 #### Discussion
 
-In the testing environment, the [`sourceAppStoreItemIdentifier`](skadtestpostback/sourceappstoreitemidentifier.md) is always `0`.
+In the testing environment, the [`sourceAppStoreItemIdentifier`](./sourceappstoreitemidentifier.md) is always `0`.
 
 ## See Also
 
-- [var adNetworkIdentifier: String](skadtestpostback/adnetworkidentifier.md)
+### Getting advertisement information
+- [var adNetworkIdentifier: String](./adnetworkidentifier.md)
   A string that represents the advertising network’s unique identifier.
-- [var appStoreItemIdentifier: Int](skadtestpostback/appstoreitemidentifier.md)
+- [var appStoreItemIdentifier: Int](./appstoreitemidentifier.md)
   The item identifier of the app that this ad impression advertises.
-- [var sourceDomain: String?](skadtestpostback/sourcedomain.md)
+- [var sourceDomain: String?](./sourcedomain.md)
   The source of a web ad.
-- [var sourceIdentifier: String?](skadtestpostback/sourceidentifier.md)
+- [var sourceIdentifier: String?](./sourceidentifier.md)
   A string that identifies an ad campaign.
 
 

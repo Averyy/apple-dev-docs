@@ -1,14 +1,15 @@
 # ServiceNotificationReady_Invoke
 
 **Framework**: Kernel  
-**Kind**: clm
+**Kind**: clm  
+**Role**: Type Method
 
 **Availability**:
 - macOS 15.4+
 
 ## Declaration
 
-```swift
+```c
 static kern_return_t ServiceNotificationReady_Invoke(const IORPC rpc, OSMetaClassBase *target, ServiceNotificationReady_Handler func);
 ```
 

@@ -1,7 +1,8 @@
 # com.apple.developer.sensitivecontentanalysis.client
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A code-signing entitlement that enables an app to detect nudity in images and video.
 
@@ -9,15 +10,20 @@ A code-signing entitlement that enables an app to detect nudity in images and vi
 - iOS 17.0+
 - iPadOS 17.0+
 
+## Details
 
+- **Name**: `com.apple.developer.sensitivecontentanalysis.client`
+- **Type**: array of string 
 
-**Type**: string 
+## Possible Values
+
+- `analysis`
 
 #### Discussion
 
-The [`Sensitive Content Analysis`](https://developer.apple.com/documentation/sensitivecontentanalysis) framework fails to return positive results for apps that lack this entitlement in its code signature.
+The [Sensitive Content Analysis](../../SensitiveContentAnalysis/SensitiveContentAnalysis.md) framework fails to return positive results for apps that lack this entitlement in its code signature.
 
-You can add this entitlement to your app by enabling the Sensitive Content Analysis capability in Xcode. For more information, see [`Detecting sensitive content in media and providing intervention options`](https://developer.apple.com/documentation/sensitivecontentanalysis/detecting-nudity-in-media-and-providing-intervention-options).
+You can add this entitlement to your app by enabling the Sensitive Content Analysis capability in Xcode. For more information, see [Detecting sensitive content in media and providing intervention options](../../SensitiveContentAnalysis/detecting-nudity-in-media-and-providing-intervention-options.md).
 
 
 ---

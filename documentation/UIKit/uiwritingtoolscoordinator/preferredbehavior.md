@@ -1,7 +1,8 @@
 # preferredBehavior
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The level of Writing Tools support you want the system to provide for your view.
 
@@ -17,21 +18,26 @@ The level of Writing Tools support you want the system to provide for your view.
 var preferredBehavior: UIWritingToolsBehavior { get set }
 ```
 
+```objc
+@property (nonatomic) UIWritingToolsBehavior preferredBehavior;
+```
+
 ## Mentions
 
-- [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
+- [Adding Writing Tools support to a custom UIKit view](../adding-writing-tools-support-to-a-custom-uiview.md)
 
 #### Discussion
 
-Use this property to request an inline or panel-based experience, or to disable Writing Tools for your view altogether. The default value of this property is [`UIWritingToolsBehavior.default`](uiwritingtoolsbehavior/default.md).
+Use this property to request an inline or panel-based experience, or to disable Writing Tools for your view altogether. The default value of this property is [`UIWritingToolsBehavior.default`](../uiwritingtoolsbehavior/default.md).
 
 ## See Also
 
-- [var behavior: UIWritingToolsBehavior](uiwritingtoolscoordinator/behavior.md)
+### Configuring the experience
+- [var behavior: UIWritingToolsBehavior](./behavior.md)
   The actual level of Writing Tools support the system provides for your view.
-- [var preferredResultOptions: UIWritingToolsResultOptions](uiwritingtoolscoordinator/preferredresultoptions.md)
+- [var preferredResultOptions: UIWritingToolsResultOptions](./preferredresultoptions.md)
   The type of content you allow Writing Tools to generate for your custom text view.
-- [var resultOptions: UIWritingToolsResultOptions](uiwritingtoolscoordinator/resultoptions.md)
+- [var resultOptions: UIWritingToolsResultOptions](./resultoptions.md)
   The type of content the system generates for your custom text view.
 
 

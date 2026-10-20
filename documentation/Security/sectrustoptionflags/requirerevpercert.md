@@ -1,7 +1,8 @@
 # requireRevPerCert
 
 **Framework**: Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Require a positive revocation check for each certificate.
 
@@ -12,6 +13,10 @@ Require a positive revocation check for each certificate.
 
 ```swift
 static var requireRevPerCert: SecTrustOptionFlags { get }
+```
+
+```c
+kSecTrustOptionRequireRevPerCert
 ```
 
 

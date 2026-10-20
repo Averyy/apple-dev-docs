@@ -1,7 +1,8 @@
 # clamp(lowerBound:upperBound:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 8.0+
@@ -17,6 +18,8 @@
 ```swift
 mutating func clamp(lowerBound: Self, upperBound: Self)
 ```
+
+Available when `Scalar` conforms to `FloatingPoint`.
 
 
 ---

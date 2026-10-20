@@ -1,7 +1,8 @@
 # MTRLaundryDryerControlsDrynessLevel
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 18.4+
@@ -18,25 +19,29 @@
 enum MTRLaundryDryerControlsDrynessLevel
 ```
 
+```c
+enum MTRLaundryDryerControlsDrynessLevel : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRLaundryDryerControlsDrynessLevel.extra](mtrlaundrydryercontrolsdrynesslevel/extra.md)
-- [MTRLaundryDryerControlsDrynessLevel.low](mtrlaundrydryercontrolsdrynesslevel/low.md)
-- [MTRLaundryDryerControlsDrynessLevel.max](mtrlaundrydryercontrolsdrynesslevel/max.md)
-- [MTRLaundryDryerControlsDrynessLevel.normal](mtrlaundrydryercontrolsdrynesslevel/normal.md)
+- [MTRLaundryDryerControlsDrynessLevel.extra](./mtrlaundrydryercontrolsdrynesslevel/extra.md)
+- [MTRLaundryDryerControlsDrynessLevel.low](./mtrlaundrydryercontrolsdrynesslevel/low.md)
+- [MTRLaundryDryerControlsDrynessLevel.max](./mtrlaundrydryercontrolsdrynesslevel/max.md)
+- [MTRLaundryDryerControlsDrynessLevel.normal](./mtrlaundrydryercontrolsdrynesslevel/normal.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrlaundrydryercontrolsdrynesslevel/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrlaundrydryercontrolsdrynesslevel/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

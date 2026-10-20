@@ -1,7 +1,8 @@
 # GLuint
 
 **Framework**: OpenGL ES  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 2.0+
@@ -14,6 +15,10 @@
 
 ```swift
 typealias GLuint = UInt32
+```
+
+```c
+typedef uint32_t GLuint;
 ```
 
 

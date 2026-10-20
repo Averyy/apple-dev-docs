@@ -1,7 +1,8 @@
 # didReplaceTab(_:with:)
 
 **Framework**: WebKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Should be called by the app when a tab is replaced by another tab to fire appropriate events with all loaded web extensions.
 
@@ -16,6 +17,10 @@ Should be called by the app when a tab is replaced by another tab to fire approp
 
 ```swift
 func didReplaceTab(_ oldTab: any WKWebExtensionTab, with newTab: any WKWebExtensionTab)
+```
+
+```objc
+- (void) didReplaceTab:(id<WKWebExtensionTab>) oldTab withTab:(id<WKWebExtensionTab>) newTab;
 ```
 
 #### Discussion

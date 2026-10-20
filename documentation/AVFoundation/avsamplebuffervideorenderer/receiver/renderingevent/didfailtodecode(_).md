@@ -1,7 +1,8 @@
 # AVSampleBufferVideoRenderer.Receiver.RenderingEvent.didFailToDecode(_:)
 
 **Framework**: AVFoundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that the renderer failed to decode one or more previously enqueued sample buffers.
 
@@ -21,9 +22,10 @@ case didFailToDecode([any Error])
 
 ## See Also
 
-- [AVSampleBufferVideoRenderer.Receiver.RenderingEvent.requiresFlushToResumeDecoding(_:)](avsamplebuffervideorenderer/receiver/renderingevent/requiresflushtoresumedecoding(_:).md)
+### Rendering events
+- [AVSampleBufferVideoRenderer.Receiver.RenderingEvent.requiresFlushToResumeDecoding(_:)](./requiresflushtoresumedecoding%28_%29.md)
   The Receiver requires a flush to continue enqueuing samples.
-- [AVSampleBufferVideoRenderer.Receiver.RenderingEvent.failed(_:)](avsamplebuffervideorenderer/receiver/renderingevent/failed(_:).md)
+- [AVSampleBufferVideoRenderer.Receiver.RenderingEvent.failed(_:)](./failed%28_%29.md)
   Indicates that the receiver cannot currently enqueue or render sample buffers because of the associated error.
 
 

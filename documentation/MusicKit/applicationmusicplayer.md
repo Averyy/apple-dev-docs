@@ -1,7 +1,8 @@
 # ApplicationMusicPlayer
 
 **Framework**: MusicKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object your app uses to play music in a way that doesn’t affect the Music app’s state.
 
@@ -28,30 +29,31 @@ If your app includes a background audio mode in your `Info.plist` file, the appl
 ## Topics
 
 ### Classes
-- [ApplicationMusicPlayer.Queue](applicationmusicplayer/queue-swift.class.md)
+- [ApplicationMusicPlayer.Queue](./applicationmusicplayer/queue-swift.class.md)
 ### Instance Properties
-- [var queue: ApplicationMusicPlayer.Queue](applicationmusicplayer/queue-swift.property.md)
+- [var queue: ApplicationMusicPlayer.Queue](./applicationmusicplayer/queue-swift.property.md)
   The playback queue for the application music player.
-- [var transition: MusicPlayer.Transition](applicationmusicplayer/transition.md)
+- [var transition: MusicPlayer.Transition](./applicationmusicplayer/transition.md)
   The transition between items for the application music player.
 ### Type Properties
-- [static let shared: ApplicationMusicPlayer](applicationmusicplayer/shared.md)
+- [static let shared: ApplicationMusicPlayer](./applicationmusicplayer/shared.md)
   The shared application music player, which plays music specifically for your app.
 
 ## Relationships
 
 ### Inherits From
-- [MusicPlayer](musicplayer.md)
+- [MusicPlayer](./musicplayer.md)
 
 ## See Also
 
-- [class SystemMusicPlayer](systemmusicplayer.md)
+### Playback
+- [class SystemMusicPlayer](./systemmusicplayer.md)
   An object your app uses to play music by controlling the Music app’s state.
-- [class MusicPlayer](musicplayer.md)
+- [class MusicPlayer](./musicplayer.md)
   An object your app uses to play music.
-- [protocol PlayableMusicItem](playablemusicitem.md)
+- [protocol PlayableMusicItem](./playablemusicitem.md)
   A set of properties that a music player uses to initiate playback for a music item.
-- [struct PlayParameters](playparameters.md)
+- [struct PlayParameters](./playparameters.md)
   An opaque object that represents parameters to initiate playback of a playable music item using a music player.
 
 

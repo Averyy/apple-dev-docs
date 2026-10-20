@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The proposal for how to incorporate the dropped items.
@@ -18,13 +19,18 @@ The proposal for how to incorporate the dropped items.
 var proposal: UITableViewDropProposal { get }
 ```
 
+```objc
+@property (nonatomic, readonly) UITableViewDropProposal * proposal;
+```
+
 #### Discussion
 
-If your drag delegate implements the [`tableView(_:dropSessionDidUpdate:withDestinationIndexPath:)`](uitableviewdropdelegate/tableview(_:dropsessiondidupdate:withdestinationindexpath:).md) method, this object contains the information that you provided when making your drop proposal for the given location.
+If your drag delegate implements the [`tableView(_:dropSessionDidUpdate:withDestinationIndexPath:)`](../uitableviewdropdelegate/tableview%28_,dropsessiondidupdate,withdestinationindexpath%29.md) method, this object contains the information that you provided when making your drop proposal for the given location.
 
 ## See Also
 
-- [var session: any UIDropSession](uitableviewdropcoordinator/session.md)
+### Getting the session information
+- [var session: any UIDropSession](./session.md)
   The drop session containing information about the transaction.
 
 

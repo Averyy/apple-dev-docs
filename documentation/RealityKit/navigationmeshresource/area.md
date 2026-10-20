@@ -1,7 +1,8 @@
 # NavigationMeshResource.Area
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An identifier for different areas on a Navigation Mesh.
 
@@ -22,30 +23,31 @@ struct Area
 ## Topics
 
 ### Initializers
-- [init(UInt8)](navigationmeshresource/area/init(_:).md)
+- [init(UInt8)](./area/init%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
 
 ## See Also
 
-- [NavigationMeshResource.Configuration](navigationmeshresource/configuration-swift.struct.md)
+### Supporting types
+- [NavigationMeshResource.Configuration](./configuration-swift.struct.md)
   The NavigationMeshResource configuration that defines how the mesh is created.
-- [NavigationMeshResource.Flag](navigationmeshresource/flag.md)
+- [NavigationMeshResource.Flag](./flag.md)
   An identifier for different flags on a Navigation Mesh.
-- [NavigationMeshResource.FlagGroup](navigationmeshresource/flaggroup.md)
+- [NavigationMeshResource.FlagGroup](./flaggroup.md)
   A collection of Flags.
-- [NavigationMeshResource.OffMeshConnection](navigationmeshresource/offmeshconnection.md)
+- [NavigationMeshResource.OffMeshConnection](./offmeshconnection.md)
   A container for the data associated with an off-mesh connection.
-- [NavigationMeshResource.HeightData](navigationmeshresource/heightdata-swift.struct.md)
+- [NavigationMeshResource.HeightData](./heightdata-swift.struct.md)
   A container for the detailed height data of the NavigationMeshResource.
-- [NavigationMeshResource.Layer](navigationmeshresource/layer-swift.struct.md)
-  An identifier for a Navigation Mesh, used by a [`NavigationComponent`](navigationcomponent.md) to select a specific Navigation Mesh for pathfinding.
-- [NavigationMeshResource.PathNode](navigationmeshresource/pathnode.md)
+- [NavigationMeshResource.Layer](./layer-swift.struct.md)
+  An identifier for a Navigation Mesh, used by a [`NavigationComponent`](../navigationcomponent.md) to select a specific Navigation Mesh for pathfinding.
+- [NavigationMeshResource.PathNode](./pathnode.md)
   A container for the path node data.
 
 

@@ -1,14 +1,15 @@
 # replaceOrCopyPacket
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual mbuf_t replaceOrCopyPacket(mbuf_t *mp, UInt32 length, bool *replaced);
 ```
 

@@ -1,7 +1,8 @@
 # BuildBetaDetail.Relationships
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The relationships you include in the request and those on which you can operate.
 
@@ -10,14 +11,14 @@ The relationships you include in the request and those on which you can operate.
 
 ## Declaration
 
-```swift
+```
 object BuildBetaDetail.Relationships
 ```
 
 ## Topics
 
 ### Objects
-- [object BuildBetaDetail.Relationships.Build](buildbetadetail/relationships-data.dictionary/build-data.dictionary.md)
+- [object BuildBetaDetail.Relationships.Build](./relationships-data.dictionary/build-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 
 ## Properties
@@ -26,7 +27,8 @@ object BuildBetaDetail.Relationships
 
 ## See Also
 
-- [object BuildBetaDetail.Attributes](buildbetadetail/attributes-data.dictionary.md)
+### Objects
+- [object BuildBetaDetail.Attributes](./attributes-data.dictionary.md)
   Attributes that describe a Build Beta Details resource.
 
 

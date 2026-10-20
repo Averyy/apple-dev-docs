@@ -1,7 +1,8 @@
 # LanguageModelFeedback
 
 **Framework**: Foundation Models  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Feedback appropriate for logging or attaching to Feedback Assistant.
 
@@ -21,9 +22,9 @@ struct LanguageModelFeedback
 
 #### Overview
 
-`LanguageModelFeedback` is a namespace with  structures for describing feedback in a consistent way. [`LanguageModelFeedback.Sentiment`](languagemodelfeedback/sentiment.md) describes the sentiment of the feedback, while [`LanguageModelFeedback.Issue`](languagemodelfeedback/issue.md) offers a standard template for issues.
+`LanguageModelFeedback` is a namespace with  structures for describing feedback in a consistent way. [`LanguageModelFeedback.Sentiment`](./languagemodelfeedback/sentiment.md) describes the sentiment of the feedback, while [`LanguageModelFeedback.Issue`](./languagemodelfeedback/issue.md) offers a standard template for issues.
 
-Given a model session, use [`logFeedbackAttachment(sentiment:issues:desiredOutput:)`](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md) to produce structured feedback.
+Given a model session, use [`logFeedbackAttachment(sentiment:issues:desiredOutput:)`](./languagemodelsession/logfeedbackattachment%28sentiment,issues,desiredoutput%29.md) to produce structured feedback.
 
 ```swift
 let session = LanguageModelSession()
@@ -45,18 +46,19 @@ let feedbackData = session.logFeedbackAttachment(
 ## Topics
 
 ### Feedback types
-- [LanguageModelFeedback.Issue](languagemodelfeedback/issue.md)
+- [LanguageModelFeedback.Issue](./languagemodelfeedback/issue.md)
   An issue with the model’s response.
-- [LanguageModelFeedback.Sentiment](languagemodelfeedback/sentiment.md)
+- [LanguageModelFeedback.Sentiment](./languagemodelfeedback/sentiment.md)
   A sentiment regarding the model’s response.
 
 ## See Also
 
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredOutput: Transcript.Entry?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md)
+### Generating feedback
+- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredOutput: Transcript.Entry?) -> Data](./languagemodelsession/logfeedbackattachment%28sentiment,issues,desiredoutput%29.md)
   Logs and serializes a feedback attachment that can be submitted to Apple.
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseContent: (any ConvertibleToGeneratedContent)?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredresponsecontent:).md)
+- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseContent: (any ConvertibleToGeneratedContent)?) -> Data](./languagemodelsession/logfeedbackattachment%28sentiment,issues,desiredresponsecontent%29.md)
   Logs and serializes a feedback attachment that includes the content you expected.
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseText: String?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredresponsetext:).md)
+- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseText: String?) -> Data](./languagemodelsession/logfeedbackattachment%28sentiment,issues,desiredresponsetext%29.md)
   Logs and serializes a feedback attachment that includes the response text you expected.
 
 

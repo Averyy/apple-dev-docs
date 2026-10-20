@@ -1,7 +1,8 @@
 # PrimitiveButtonStyleConfiguration.Label
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased label of a button.
 
@@ -24,11 +25,12 @@ A type-erased label of a button.
 ## Relationships
 
 ### Conforms To
-- [View](view.md)
+- [View](../view.md)
 
 ## See Also
 
-- [let label: PrimitiveButtonStyleConfiguration.Label](primitivebuttonstyleconfiguration/label-swift.property.md)
+### Configuring a button’s label
+- [let label: PrimitiveButtonStyleConfiguration.Label](./label-swift.property.md)
   A view that describes the effect of calling the button’s action.
 
 

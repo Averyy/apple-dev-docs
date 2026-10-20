@@ -1,7 +1,8 @@
 # init(named:assetResolver:)
 
 **Framework**: Model I/O  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 12.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init?(named name: String, assetResolver resolver: any MDLAssetResolver)
+```
+
+```objc
++ (instancetype) textureNamed:(NSString *) name assetResolver:(id<MDLAssetResolver>) resolver;
 ```
 
 

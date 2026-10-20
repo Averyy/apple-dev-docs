@@ -1,15 +1,18 @@
 # enforcedContentItemsCount
 
 **Framework**: Media Player  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the number of content items to display during content limiting.
 
 **Availability**:
-- iOS 8.4+
-- iPadOS 8.4+
-- Mac Catalyst 13.1+
-- visionOS 1.0+
+- iOS 8.4+ - Deprecated in 14.0
+- iPadOS 8.4+ - Deprecated in 14.0
+- Mac Catalyst 13.1+ - Deprecated in 14.0
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: Use CarPlay framework
 
 ## Declaration
 
@@ -17,19 +20,24 @@ Returns the number of content items to display during content limiting.
 var enforcedContentItemsCount: Int { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSInteger enforcedContentItemsCount;
+```
+
 #### Discussion
 
-This property returns [`NSIntegerMax`](https://developer.apple.com/documentation/objectivec/nsintegermax) when the content server doesn’t limit the maximum number of items.
+This property returns [`NSIntegerMax`](../../ObjectiveC/nsintegermax.md) when the content server doesn’t limit the maximum number of items.
 
 ## See Also
 
-- [var contentLimitsEnforced: Bool](mpplayablecontentmanagercontext/contentlimitsenforced.md)
+### Inspecting content manager properties
+- [var contentLimitsEnforced: Bool](./contentlimitsenforced.md)
   A Boolean value that indicates whether the content server enforces content limits.
-- [var endpointAvailable: Bool](mpplayablecontentmanagercontext/endpointavailable.md)
+- [var endpointAvailable: Bool](./endpointavailable.md)
   Returns a Boolean that indicates whether the content server is available.
-- [var enforcedContentTreeDepth: Int](mpplayablecontentmanagercontext/enforcedcontenttreedepth.md)
+- [var enforcedContentTreeDepth: Int](./enforcedcontenttreedepth.md)
   The maximum depth of the navigation hierarchy allowed by the content server.
-- [var contentLimitsEnabled: Bool](mpplayablecontentmanagercontext/contentlimitsenabled.md)
+- [var contentLimitsEnabled: Bool](./contentlimitsenabled.md)
   A Boolean value that indicates whether the content server enables content limits.
 
 

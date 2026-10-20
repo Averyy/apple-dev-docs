@@ -1,24 +1,26 @@
 # ForeignLanguage
 
 **Framework**: VideoDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 ForeignLanguage
 ```
 
 ## See Also
 
-- [ClickTrack](videodriverkit/iouservideochannellabel/clicktrack.md)
-- [DialogCentricMix](videodriverkit/iouservideochannellabel/dialogcentricmix.md)
-- [HearingImpaired](videodriverkit/iouservideochannellabel/hearingimpaired.md)
-- [Haptic](videodriverkit/iouservideochannellabel/haptic.md)
-- [Narration](videodriverkit/iouservideochannellabel/narration.md)
+### Alternate content channels
+- [ClickTrack](./clicktrack.md)
+- [DialogCentricMix](./dialogcentricmix.md)
+- [HearingImpaired](./hearingimpaired.md)
+- [Haptic](./haptic.md)
+- [Narration](./narration.md)
 
 
 ---

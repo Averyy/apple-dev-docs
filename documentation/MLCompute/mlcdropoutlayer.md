@@ -1,16 +1,17 @@
 # MLCDropoutLayer
 
 **Framework**: ML Compute  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A layer that deactivates neurons randomly to avoid overfitting.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 14.0+ - Deprecated in 17.4
+- iPadOS 14.0+ - Deprecated in 17.4
+- Mac Catalyst 14.0+ - Deprecated in 17.4
+- macOS 11.0+ - Deprecated in 14.3
+- tvOS 14.0+ - Deprecated in 17.4
 
 ## Declaration
 
@@ -18,38 +19,43 @@ A layer that deactivates neurons randomly to avoid overfitting.
 class MLCDropoutLayer
 ```
 
+```objc
+@interface MLCDropoutLayer : MLCLayer
+```
+
 ## Topics
 
 ### Creating Dropout Layers
-- [convenience init(rate: Float, seed: Int)](mlcdropoutlayer/init(rate:seed:).md)
+- [convenience init(rate: Float, seed: Int)](./mlcdropoutlayer/init%28rate,seed%29.md)
   Creates a dropout layer with the probability rate and random number generator seed you specify.
 ### Inspecting a Dropout Layer
-- [var rate: Float](mlcdropoutlayer/rate.md)
+- [var rate: Float](./mlcdropoutlayer/rate.md)
   The dropout rate you use for each element.
-- [var seed: Int](mlcdropoutlayer/seed.md)
+- [var seed: Int](./mlcdropoutlayer/seed.md)
   The seed you use to generate random numbers.
 
 ## Relationships
 
 ### Inherits From
-- [MLCLayer](mlclayer.md)
+- [MLCLayer](./mlclayer.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class MLCLayerNormalizationLayer](mlclayernormalizationlayer.md)
+### Normalization Layers
+- [class MLCLayerNormalizationLayer](./mlclayernormalizationlayer.md)
   A layer that applies layer normalization over inputs.
-- [class MLCBatchNormalizationLayer](mlcbatchnormalizationlayer.md)
+- [class MLCBatchNormalizationLayer](./mlcbatchnormalizationlayer.md)
   A layer that normalizes a batch of inputs.
-- [class MLCGroupNormalizationLayer](mlcgroupnormalizationlayer.md)
+- [class MLCGroupNormalizationLayer](./mlcgroupnormalizationlayer.md)
   A layer that divides the channels into groups for normalization.
-- [class MLCInstanceNormalizationLayer](mlcinstancenormalizationlayer.md)
+- [class MLCInstanceNormalizationLayer](./mlcinstancenormalizationlayer.md)
   A layer that normalizes all features of one channel.
 
 

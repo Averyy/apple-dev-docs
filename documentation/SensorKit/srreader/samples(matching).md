@@ -1,7 +1,8 @@
 # samples(matching:)
 
 **Framework**: SensorKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Fetches sensor data based on the provided request parameters. The reader must be authorized for the sensor for this to succeed.
 

@@ -1,7 +1,8 @@
 # match(_:player:didChange:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Handles when players connect or disconnect from a match.
 
@@ -19,14 +20,18 @@ Handles when players connect or disconnect from a match.
 optional func match(_ match: GKMatch, player: GKPlayer, didChange state: GKPlayerConnectionState)
 ```
 
+```objc
+- (void) match:(GKMatch *) match player:(GKPlayer *) player didChangeConnectionState:(GKPlayerConnectionState) state;
+```
+
 ## Mentions
 
-- [Finding multiple players for a game](finding-multiple-players-for-a-game.md)
-- [Exchanging data between players in real-time games](exchanging-data-between-players-in-real-time-games.md)
+- [Finding multiple players for a game](../finding-multiple-players-for-a-game.md)
+- [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
 #### Discussion
 
-If the match’s [`expectedPlayerCount`](gkmatch/expectedplayercount.md) property is `0` when GameKit invokes this method, you can start the game. If two or more players join the match, you can begin data and voice communication.
+If the match’s [`expectedPlayerCount`](../gkmatch/expectedplayercount.md) property is `0` when GameKit invokes this method, you can start the game. If two or more players join the match, you can begin data and voice communication.
 
 ## Parameters
 
@@ -36,7 +41,8 @@ If the match’s [`expectedPlayerCount`](gkmatch/expectedplayercount.md) propert
 
 ## See Also
 
-- [enum GKPlayerConnectionState](gkplayerconnectionstate.md)
+### Receiving State Notifications About Other Players
+- [enum GKPlayerConnectionState](../gkplayerconnectionstate.md)
   The possible states of a connection to a match.
 
 

@@ -1,7 +1,8 @@
 # disable()
 
 **Framework**: XCUIAutomation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disable VoiceOver.
 
@@ -19,6 +20,10 @@ Disable VoiceOver.
 
 ```swift
 func disable() throws
+```
+
+```objc
+- (BOOL) disableAndReturnError:(NSError **) error;
 ```
 
 

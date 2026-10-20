@@ -1,16 +1,17 @@
 # MLLinearRegressor.ModelParameters.ValidationData.table(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Set validation data from the MLDataTable provided.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 11.0+
-- tvOS 16.0+
+- iOS 15.0+ - Deprecated in 17.0
+- iPadOS 15.0+ - Deprecated in 17.0
+- Mac Catalyst 15.0+ - Deprecated in 17.0
+- macOS 11.0+ - Deprecated in 14.0
+- tvOS 16.0+ - Deprecated in 17.0
 - visionOS 1.0+
 
 ## Declaration
@@ -21,11 +22,12 @@ case table(MLDataTable)
 
 ## See Also
 
-- [MLLinearRegressor.ModelParameters.ValidationData.split(strategy:)](mllinearregressor/modelparameters-swift.struct/validationdata-swift.enum/split(strategy:).md)
+### Specifying validation data
+- [MLLinearRegressor.ModelParameters.ValidationData.split(strategy:)](./split%28strategy%29.md)
   Generate validation data by splitting the training dataset. This is the default.
-- [MLLinearRegressor.ModelParameters.ValidationData.dataFrame(_:)](mllinearregressor/modelparameters-swift.struct/validationdata-swift.enum/dataframe(_:).md)
+- [MLLinearRegressor.ModelParameters.ValidationData.dataFrame(_:)](./dataframe%28_%29.md)
   Set validation data from the DataFrame provided.
-- [MLLinearRegressor.ModelParameters.ValidationData.none](mllinearregressor/modelparameters-swift.struct/validationdata-swift.enum/none.md)
+- [MLLinearRegressor.ModelParameters.ValidationData.none](./none.md)
   Do not set validation data.
 
 

@@ -1,7 +1,8 @@
 # error()
 
 **Framework**: Security Interface  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the last error encountered by the keychain save panel.
 
@@ -14,9 +15,14 @@ Returns the last error encountered by the keychain save panel.
 func error() -> (any Error)!
 ```
 
+```objc
+- (NSError *) error;
+```
+
 ## See Also
 
-- [func keychain() -> Unmanaged<SecKeychain>!](sfkeychainsavepanel/keychain.md)
+### Returning Information from the Sheet or Panel
+- [func keychain() -> Unmanaged<SecKeychain>!](./keychain%28%29.md)
   Returns the keychain created by the keychain save panel.
 
 

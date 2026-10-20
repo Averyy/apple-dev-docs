@@ -1,7 +1,8 @@
 # width
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The width of the rectangle starting at rectangle’s left offset toward the rectangle’s right edge.
 
@@ -22,7 +23,7 @@ var width: UInt16
 
 #### Discussion
 
-This value is always less than [`referenceRasterWidth`](cvimagedisplaymaskrectangle/referencerasterwidth.md).
+This value is always less than [`referenceRasterWidth`](./referencerasterwidth.md).
 
 
 ---

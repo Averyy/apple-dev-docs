@@ -1,7 +1,8 @@
 # allAsleepValues
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A set of values that represents the possible stages of sleep.
 
@@ -10,7 +11,7 @@ A set of values that represents the possible stages of sleep.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -21,7 +22,7 @@ static var allAsleepValues: Set<HKCategoryValueSleepAnalysis> { get }
 
 #### Discussion
 
-This value includes [`asleep`](hkcategoryvaluesleepanalysis/asleep.md), [`HKCategoryValueSleepAnalysis.asleepCore`](hkcategoryvaluesleepanalysis/asleepcore.md), [`HKCategoryValueSleepAnalysis.asleepDeep`](hkcategoryvaluesleepanalysis/asleepdeep.md), [`HKCategoryValueSleepAnalysis.asleepREM`](hkcategoryvaluesleepanalysis/asleeprem.md), and [`HKCategoryValueSleepAnalysis.asleepUnspecified`](hkcategoryvaluesleepanalysis/asleepunspecified.md).
+This value includes [`asleep`](./asleep.md), [`HKCategoryValueSleepAnalysis.asleepCore`](./asleepcore.md), [`HKCategoryValueSleepAnalysis.asleepDeep`](./asleepdeep.md), [`HKCategoryValueSleepAnalysis.asleepREM`](./asleeprem.md), and [`HKCategoryValueSleepAnalysis.asleepUnspecified`](./asleepunspecified.md).
 
 
 ---

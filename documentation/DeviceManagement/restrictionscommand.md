@@ -1,7 +1,8 @@
 # RestrictionsCommand
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Device Management Command
 
 The command to get a list of restrictions on the device.
 
@@ -15,18 +16,18 @@ The command to get a list of restrictions on the device.
 
 ## Declaration
 
-```swift
+```
 object RestrictionsCommand
 ```
 
 ## Mentions
 
-- [Handling NotNow status responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](./handling-notnow-status-responses.md)
 
 ## Topics
 
 ### Objects
-- [object RestrictionsCommand.Command](restrictionscommand/command-data.dictionary.md)
+- [object RestrictionsCommand.Command](./restrictionscommand/command-data.dictionary.md)
   The command to get a list of restrictions on the device.
 
 ## Properties
@@ -36,7 +37,8 @@ object RestrictionsCommand
 
 ## See Also
 
-- [object RestrictionsResponse](restrictionsresponse.md)
+### Commands and responses
+- [object RestrictionsResponse](./restrictionsresponse.md)
   A response from the device after it processes the command to get a list of restrictions on the device.
 
 

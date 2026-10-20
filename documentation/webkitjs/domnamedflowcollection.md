@@ -1,7 +1,8 @@
 # DOMNamedFlowCollection
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface DOMNamedFlowCollection
 ```
 
 ## Topics
 
 ### Instance Properties
-- [length](domnamedflowcollection/1632378-length.md)
+- [length](./domnamedflowcollection/api-1632378-length.md)
 ### Instance Methods
-- [item](domnamedflowcollection/1633922-item.md)
-- [namedItem](domnamedflowcollection/1630151-nameditem.md)
+- [item](./domnamedflowcollection/api-1633922-item.md)
+- [namedItem](./domnamedflowcollection/api-1630151-nameditem.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # MTRElectricalPowerMeasurementClusterMeasurementAccuracyRangeStruct
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 17.6+
@@ -18,30 +19,34 @@
 class MTRElectricalPowerMeasurementClusterMeasurementAccuracyRangeStruct
 ```
 
+```objc
+@interface MTRElectricalPowerMeasurementClusterMeasurementAccuracyRangeStruct : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var fixedMax: NSNumber?](mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/fixedmax.md)
-- [var fixedMin: NSNumber?](mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/fixedmin.md)
-- [var fixedTypical: NSNumber?](mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/fixedtypical.md)
-- [var percentMax: NSNumber?](mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/percentmax.md)
-- [var percentMin: NSNumber?](mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/percentmin.md)
-- [var percentTypical: NSNumber?](mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/percenttypical.md)
-- [var rangeMax: NSNumber](mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/rangemax.md)
-- [var rangeMin: NSNumber](mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/rangemin.md)
+- [var fixedMax: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/fixedmax.md)
+- [var fixedMin: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/fixedmin.md)
+- [var fixedTypical: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/fixedtypical.md)
+- [var percentMax: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/percentmax.md)
+- [var percentMin: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/percentmin.md)
+- [var percentTypical: NSNumber?](./mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/percenttypical.md)
+- [var rangeMax: NSNumber](./mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/rangemax.md)
+- [var rangeMin: NSNumber](./mtrelectricalpowermeasurementclustermeasurementaccuracyrangestruct/rangemin.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

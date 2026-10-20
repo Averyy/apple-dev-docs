@@ -1,7 +1,8 @@
 # init(_:id:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new workout plan from the provided workout and ID.
 
@@ -25,7 +26,8 @@ init(_ workout: WorkoutPlan.Workout, id: UUID = UUID())
 
 ## See Also
 
-- [WorkoutPlan.Workout](workoutplan/workout-swift.enum.md)
+### Creating a workout plan
+- [WorkoutPlan.Workout](./workout-swift.enum.md)
   The workout for the workout plan.
 
 

@@ -1,7 +1,8 @@
 # init(device:scalar:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+
@@ -15,6 +16,10 @@
 
 ```swift
 convenience init(device: any MTLDevice, scalar value: Double)
+```
+
+```objc
+- (instancetype) initWithDevice:(id<MTLDevice>) device scalar:(double) value;
 ```
 
 

@@ -1,25 +1,27 @@
 # Size
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer that specifies the number of bytes in this base media info atom.
 
 ## See Also
 
-- [Type](base_media_info_atom/type.md)
+### Data fields
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](base_media_info_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this base media information header atom.
-- [Flags](base_media_info_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte space for base media information flags.
-- [Graphics mode](base_media_info_atom/graphics_mode.md)
+- [Graphics mode](./graphics_mode.md)
   A 16-bit integer that specifies the transfer mode.
-- [Opcolor](base_media_info_atom/opcolor.md)
+- [Opcolor](./opcolor.md)
   Three 16-bit values that specify the red, green, and blue colors for the transfer mode operation indicated in the graphics mode field.
-- [Balance](base_media_info_atom/balance.md)
+- [Balance](./balance.md)
   A 16-bit integer that specifies the sound balance of this media.
-- [Reserved](base_media_info_atom/reserved.md)
+- [Reserved](./reserved.md)
   Reserved for use by Apple.
 
 

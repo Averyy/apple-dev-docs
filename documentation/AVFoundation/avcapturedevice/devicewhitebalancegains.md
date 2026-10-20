@@ -1,7 +1,8 @@
 # deviceWhiteBalanceGains
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current device-specific RGB white balance gain values in use.
 
@@ -17,17 +18,22 @@ The current device-specific RGB white balance gain values in use.
 var deviceWhiteBalanceGains: AVCaptureDevice.WhiteBalanceGains { get }
 ```
 
+```objc
+@property (nonatomic, readonly) AVCaptureWhiteBalanceGains deviceWhiteBalanceGains;
+```
+
 #### Discussion
 
-This property specifies the current red, green, and blue gain values used for white balance. You can use the values to adjust color casts for a given scene. Each channel supports values between 1.0 and -[`maxWhiteBalanceGain`](avcapturedevice/maxwhitebalancegain.md).
+This property specifies the current red, green, and blue gain values used for white balance. You can use the values to adjust color casts for a given scene. Each channel supports values between 1.0 and -[`maxWhiteBalanceGain`](./maxwhitebalancegain.md).
 
 This property is key-value observable.
 
 ## See Also
 
-- [var grayWorldDeviceWhiteBalanceGains: AVCaptureDevice.WhiteBalanceGains](avcapturedevice/grayworlddevicewhitebalancegains.md)
+### Inspecting gain levels
+- [var grayWorldDeviceWhiteBalanceGains: AVCaptureDevice.WhiteBalanceGains](./grayworlddevicewhitebalancegains.md)
   The current device-specific white balance values required for a neutral gray white point.
-- [var maxWhiteBalanceGain: Float](avcapturedevice/maxwhitebalancegain.md)
+- [var maxWhiteBalanceGain: Float](./maxwhitebalancegain.md)
   The maximum supported value to which you can set a color channel.
 
 

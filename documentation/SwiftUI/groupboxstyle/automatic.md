@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default style for group box views.
 
@@ -18,6 +19,8 @@ The default style for group box views.
 @MainActor
 @export(implementation) @preconcurrency static var automatic: DefaultGroupBoxStyle { get }
 ```
+
+Available when `Self` is `DefaultGroupBoxStyle`.
 
 
 ---

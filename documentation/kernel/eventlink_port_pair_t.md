@@ -1,14 +1,15 @@
 # eventlink_port_pair_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 11.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct ipc_port *eventlink_port_pair_t[2];
 ```
 

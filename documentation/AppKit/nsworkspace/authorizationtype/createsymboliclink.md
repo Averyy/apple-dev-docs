@@ -1,7 +1,8 @@
 # NSWorkspace.AuthorizationType.createSymbolicLink
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Authorization for the app to create a symbolic link.
 
@@ -14,15 +15,20 @@ Authorization for the app to create a symbolic link.
 case createSymbolicLink
 ```
 
+```c
+NSWorkspaceAuthorizationTypeCreateSymbolicLink
+```
+
 #### Discussion
 
-Signifies that the user has granted authorization for [`createSymbolicLink(at:withDestinationURL:)`](https://developer.apple.com/documentation/foundation/filemanager/createsymboliclink(at:withdestinationurl:)).
+Signifies that the user has granted authorization for [`createSymbolicLink(at:withDestinationURL:)`](../../../Foundation/filemanager/createsymboliclink%28at,withdestinationurl%29.md).
 
 ## See Also
 
-- [NSWorkspace.AuthorizationType.replaceFile](nsworkspace/authorizationtype/replacefile.md)
+### Types of Authorization
+- [NSWorkspace.AuthorizationType.replaceFile](./replacefile.md)
   Authorization for the app to perform an atomic file write without changing the target file’s permissions.
-- [NSWorkspace.AuthorizationType.setAttributes](nsworkspace/authorizationtype/setattributes.md)
+- [NSWorkspace.AuthorizationType.setAttributes](./setattributes.md)
   Authorization for the app to change specific file attributes.
 
 

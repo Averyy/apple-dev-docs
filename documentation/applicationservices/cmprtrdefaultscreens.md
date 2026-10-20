@@ -1,7 +1,8 @@
 # cmPrtrDefaultScreens
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Use printer default screens; can have an associated value of `0` for `false` or `1` for `true`.
 

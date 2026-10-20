@@ -1,7 +1,8 @@
 # isApproximatelyEqual(to:tolerance:)
 
 **Framework**: Spatial  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 18.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
-- visionOS ?+
+- visionOS
 - watchOS 11.0+
 
 ## Declaration
@@ -20,7 +21,8 @@ func isApproximatelyEqual(to other: Point3D, tolerance: Double = sqrt(.ulpOfOne)
 
 ## See Also
 
-- [static func == (Point3D, Point3D) -> Bool](point3d/==(_:_:).md)
+### Comparing values
+- [static func == (Point3D, Point3D) -> Bool](./eqeq%28_,_%29.md)
   Returns a Boolean value that indicates whether two values are equal.
 
 

@@ -1,7 +1,8 @@
 # kSecAttrCreator
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key with a value that indicates the item’s creator.
 
@@ -20,9 +21,13 @@ A key with a value that indicates the item’s creator.
 let kSecAttrCreator: CFString
 ```
 
+```c
+extern CFStringRef const kSecAttrCreator;
+```
+
 #### Discussion
 
-The corresponding value is of type [`CFNumber`](https://developer.apple.com/documentation/corefoundation/cfnumber) and represents the item’s creator. This number is the unsigned integer representation of a four-character code (for example, `'aCrt'`).
+The corresponding value is of type [`CFNumber`](../CoreFoundation/cfnumber.md) and represents the item’s creator. This number is the unsigned integer representation of a four-character code (for example, `'aCrt'`).
 
 
 ---

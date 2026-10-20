@@ -1,7 +1,8 @@
 # productID
 
 **Framework**: Core HID  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The product ID for the device.
 
@@ -16,7 +17,7 @@ var productID: UInt32?
 
 #### Discussion
 
-The product ID combines with the [`vendorID`](hiddevicemanager/devicematchingcriteria/vendorid.md) to specify the exact product. Without knowing the vendor, the product ID is meaningless. Look for vendor specific documentation for more details on the assigned product IDs for a vendor’s products.
+The product ID combines with the [`vendorID`](./vendorid.md) to specify the exact product. Without knowing the vendor, the product ID is meaningless. Look for vendor specific documentation for more details on the assigned product IDs for a vendor’s products.
 
 
 ---

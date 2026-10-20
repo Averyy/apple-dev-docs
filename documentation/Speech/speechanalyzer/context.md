@@ -1,7 +1,8 @@
 # context
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object containing contextual information.
 
@@ -21,7 +22,8 @@ final var context: AnalysisContext { get async }
 
 ## See Also
 
-- [func setContext(AnalysisContext) async throws](speechanalyzer/setcontext(_:).md)
+### Managing contexts
+- [func setContext(AnalysisContext) async throws](./setcontext%28_%29.md)
   Sets contextual information to improve or inform the analysis.
 
 

@@ -1,7 +1,8 @@
 # BindPath.Part.blendShapeWeights
 
 **Framework**: RealityKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option the entity’s blend shape weights animate. Requires that the entity has a BlendShapeWeightsComponent. Can be indexed by blend shape index or by blend shape name.  Default is by index 0.
 

@@ -1,7 +1,8 @@
 # simple
 
 **Framework**: Swift  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A word boundary algorithm that implements the “simple word boundary” Unicode recommendation.
 

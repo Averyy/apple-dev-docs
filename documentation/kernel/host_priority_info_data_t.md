@@ -1,14 +1,15 @@
 # host_priority_info_data_t
 
 **Framework**: Kernel  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 typedef struct host_priority_info {
     ...
 } host_priority_info_data_t;
@@ -17,14 +18,14 @@ typedef struct host_priority_info {
 ## Topics
 
 ### Instance Properties
-- [depress_priority](host_priority_info_data_t/1586771-depress_priority.md)
-- [idle_priority](host_priority_info_data_t/1586725-idle_priority.md)
-- [kernel_priority](host_priority_info_data_t/1586736-kernel_priority.md)
-- [maximum_priority](host_priority_info_data_t/1586726-maximum_priority.md)
-- [minimum_priority](host_priority_info_data_t/1586729-minimum_priority.md)
-- [server_priority](host_priority_info_data_t/1586792-server_priority.md)
-- [system_priority](host_priority_info_data_t/1586762-system_priority.md)
-- [user_priority](host_priority_info_data_t/1586756-user_priority.md)
+- [depress_priority](./host_priority_info_data_t/api-1586771-depress_priority.md)
+- [idle_priority](./host_priority_info_data_t/api-1586725-idle_priority.md)
+- [kernel_priority](./host_priority_info_data_t/api-1586736-kernel_priority.md)
+- [maximum_priority](./host_priority_info_data_t/api-1586726-maximum_priority.md)
+- [minimum_priority](./host_priority_info_data_t/api-1586729-minimum_priority.md)
+- [server_priority](./host_priority_info_data_t/api-1586792-server_priority.md)
+- [system_priority](./host_priority_info_data_t/api-1586762-system_priority.md)
+- [user_priority](./host_priority_info_data_t/api-1586756-user_priority.md)
 
 
 ---

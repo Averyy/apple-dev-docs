@@ -1,17 +1,22 @@
 # currentDirectory
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The directory path to use as the starting point in the Open dialog.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var currentDirectory: String? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSString * currentDirectory;
 ```
 
 #### Discussion
@@ -24,13 +29,14 @@ The first valid directory from the following list is returned:
 
 ## See Also
 
-- [func beginOpenPanel(completionHandler: ([URL]?) -> Void)](nsdocumentcontroller/beginopenpanel(completionhandler:).md)
+### Managing the Open Dialog
+- [func beginOpenPanel(completionHandler: ([URL]?) -> Void)](./beginopenpanel%28completionhandler%29.md)
   Presents an Open dialog and delivers the results to a completion handler as an array of URLs for the chosen files, or nil.
-- [func beginOpenPanel(NSOpenPanel, forTypes: [String]?, completionHandler: (Int) -> Void)](nsdocumentcontroller/beginopenpanel(_:fortypes:completionhandler:).md)
+- [func beginOpenPanel(NSOpenPanel, forTypes: [String]?, completionHandler: (Int) -> Void)](./beginopenpanel%28_,fortypes,completionhandler%29.md)
   Presents a nonmodal Open dialog that displays files you can open from a list of UTIs.
-- [func runModalOpenPanel(NSOpenPanel, forTypes: [String]?) -> Int](nsdocumentcontroller/runmodalopenpanel(_:fortypes:).md)
+- [func runModalOpenPanel(NSOpenPanel, forTypes: [String]?) -> Int](./runmodalopenpanel%28_,fortypes%29.md)
   Presents a modal Open dialog and limits selection to specific file types.
-- [func urlsFromRunningOpenPanel() -> [URL]?](nsdocumentcontroller/urlsfromrunningopenpanel.md)
+- [func urlsFromRunningOpenPanel() -> [URL]?](./urlsfromrunningopenpanel%28%29.md)
   An array of URLs that correspond to the selected files in a running Open dialog.
 
 

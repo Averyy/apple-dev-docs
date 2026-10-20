@@ -1,7 +1,8 @@
 # spotlightQuery(_:)
 
 **Framework**: App Intents Testing  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Performs a Spotlight search query for entities of this type.
 
@@ -20,7 +21,7 @@ func spotlightQuery(_ userQuery: String? = nil) async throws -> [AnyAppEntity]
 
 ## Mentions
 
-- [Testing your App Intents code](testing-your-app-intents-code.md)
+- [Testing your App Intents code](../testing-your-app-intents-code.md)
 
 #### Return Value
 
@@ -28,7 +29,7 @@ An array of `AnyAppEntity` instances that match the search criteria.
 
 #### Discussion
 
-> **Note**: An error if the spotlight query fails.
+> **Throws**: An error if the spotlight query fails.
 
 ## Parameters
 
@@ -36,13 +37,14 @@ An array of `AnyAppEntity` instances that match the search criteria.
 
 ## See Also
 
-- [func entities<Identifier>(identifiers: [Identifier]) async throws -> [AnyAppEntity]](appentitydefinition/entities(identifiers:).md)
+### Searching matching entities
+- [func entities<Identifier>(identifiers: [Identifier]) async throws -> [AnyAppEntity]](./entities%28identifiers%29.md)
   Retrieves entities by their identifiers.
-- [func entityQuery<Identifier>(identifiers: [Identifier]) -> AnyEntityQuery](appentitydefinition/entityquery(identifiers:).md)
+- [func entityQuery<Identifier>(identifiers: [Identifier]) -> AnyEntityQuery](./entityquery%28identifiers%29.md)
   Creates an entity query that searches for entities by their identifiers.
-- [func entities(matching: String) async throws -> [AnyAppEntity]](appentitydefinition/entities(matching:).md)
+- [func entities(matching: String) async throws -> [AnyAppEntity]](./entities%28matching%29.md)
   Finds app entities that match a given string query.
-- [func entityQuery(matching: String) -> AnyEntityQuery](appentitydefinition/entityquery(matching:).md)
+- [func entityQuery(matching: String) -> AnyEntityQuery](./entityquery%28matching%29.md)
   Creates an entity query that searches for entities that match a given string.
 
 

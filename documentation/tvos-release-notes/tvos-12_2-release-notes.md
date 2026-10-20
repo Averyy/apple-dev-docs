@@ -1,12 +1,13 @@
 # tvOS 12.2 Release Notes
 
-**Framework**: tvOS Release Notes
+**Framework**: tvOS Release Notes  
+**Role**: Article
 
 Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 12.2 SDK provides support for developing tvOS apps for Apple TV devices running tvOS 12.2. The SDK comes bundled with Xcode 10.2. For information on the compatibility requirements for Xcode 10.2, see [`Xcode Release Notes`](https://developer.apple.com/documentation/xcode-release-notes).
+The tvOS 12.2 SDK provides support for developing tvOS apps for Apple TV devices running tvOS 12.2. The SDK comes bundled with Xcode 10.2. For information on the compatibility requirements for Xcode 10.2, see [Xcode Release Notes](../Xcode-Release-Notes/Xcode-Release-Notes.md).
 
 ##### App Store
 
@@ -14,17 +15,18 @@ The tvOS 12.2 SDK provides support for developing tvOS apps for Apple TV devices
 
 StoreKit now supports subscription offers in addition to introductory offers, so apps with auto-renewable subscriptions can provide a discounted price for a specific duration for existing and previously subscribed customers. You can use subscription offers to help win back subscribers who have canceled their subscriptions or promote an upgrade to another subscription at a special price. Customers can accept the offer even if they’ve already completed an introductory offer.
 
-StoreKit introduces a new array of [`SKProductDiscount`](https://developer.apple.com/documentation/storekit/skproductdiscount) objects within the [`SKProduct`](https://developer.apple.com/documentation/storekit/skproduct) class to display offers within your app to eligible customers. Add a new [`SKPaymentDiscount`](https://developer.apple.com/documentation/storekit/skpaymentdiscount) object within the [`SKPayment`](https://developer.apple.com/documentation/storekit/skpayment) class to allow these offers to be accepted by the customer.
+StoreKit introduces a new array of [`SKProductDiscount`](../StoreKit/skproductdiscount.md) objects within the [`SKProduct`](../StoreKit/skproduct.md) class to display offers within your app to eligible customers. Add a new [`SKPaymentDiscount`](../StoreKit/skpaymentdiscount.md) object within the [`SKPayment`](../StoreKit/skpayment.md) class to allow these offers to be accepted by the customer.
 
 ## See Also
 
-- [tvOS 12.4 Release Notes](tvos-12_4-release-notes.md)
+### tvOS 12
+- [tvOS 12.4 Release Notes](./tvos-12_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 12.1.2 Release Notes](tvos-12_1_2-release-notes.md)
+- [tvOS 12.1.2 Release Notes](./tvos-12_1_2-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 12.1.1 Release Notes](tvos-12_1_1-release-notes.md)
+- [tvOS 12.1.1 Release Notes](./tvos-12_1_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
-- [tvOS 12 Release Notes](tvos-12-release-notes.md)
+- [tvOS 12 Release Notes](./tvos-12-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

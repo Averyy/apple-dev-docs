@@ -1,7 +1,8 @@
 # Org.SystemStatus
 
 **Framework**: Apple Ads Platform API  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 System-derived operational status of the organization.
 
@@ -10,13 +11,18 @@ System-derived operational status of the organization.
 
 ## Declaration
 
-```swift
+```
 string Org.SystemStatus
 ```
 
+## Possible Values
+
+- `ACTIVE`: The organization is active and operational.
+- `INACTIVE`: The organization is inactive. Check `systemStatusReasons` for the specific cause.
+
 #### Discussion
 
-This status reflects the organization as a whole; individual ad accounts under it carry their own separate [`AdAccount.SystemStatus`](adaccount/systemstatus-data.typealias.md).
+This status reflects the organization as a whole; individual ad accounts under it carry their own separate [`AdAccount.SystemStatus`](../adaccount/systemstatus-data.typealias.md).
 
 ##### Example
 

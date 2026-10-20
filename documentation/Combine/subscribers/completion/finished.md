@@ -1,7 +1,8 @@
 # Subscribers.Completion.finished
 
 **Framework**: Combine  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The publisher finished normally.
 
@@ -22,11 +23,12 @@ case finished
 
 ## Mentions
 
-- [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
+- [Processing Published Elements with Subscribers](../../processing-published-elements-with-subscribers.md)
 
 ## See Also
 
-- [Subscribers.Completion.failure(_:)](subscribers/completion/failure(_:).md)
+### Completion states
+- [Subscribers.Completion.failure(_:)](./failure%28_%29.md)
   The publisher stopped publishing due to the indicated error.
 
 

@@ -1,7 +1,8 @@
 # webURL
 
 **Framework**: ShazamKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A link to the Shazam Music catalog page that contains the full information for the song.
 
@@ -20,15 +21,28 @@ A link to the Shazam Music catalog page that contains the full information for t
 var webURL: URL? { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS, watchOS*
+
+```objc
+@property (nonatomic, strong, readonly, nullable) NSURL * webURL;
+```
+
+*macOS*
+
+```objc
+@property (atomic, strong, readonly, nullable) NSURL * webURL;
+```
+
 #### Discussion
 
 This link opens the Shazam app or App Clip if it’s available on the device.
 
 ## See Also
 
-- [var shazamID: String?](shmediaitem/shazamid.md)
+### Working with Shazam music catalog media items
+- [var shazamID: String?](./shazamid.md)
   The Shazam ID for the song.
-- [class func fetch(shazamID: String, completionHandler: (SHMediaItem?, (any Error)?) -> Void)](shmediaitem/fetch(shazamid:completionhandler:).md)
+- [class func fetch(shazamID: String, completionHandler: (SHMediaItem?, (any Error)?) -> Void)](./fetch%28shazamid,completionhandler%29.md)
   Requests the media item for the song with the specified Shazam ID.
 
 

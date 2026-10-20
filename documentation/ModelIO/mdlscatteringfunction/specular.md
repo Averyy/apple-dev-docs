@@ -1,7 +1,8 @@
 # specular
 
 **Framework**: Model I/O  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The intensity of specular highlights on the material’s surface.
 
@@ -19,25 +20,30 @@ The intensity of specular highlights on the material’s surface.
 var specular: MDLMaterialProperty { get }
 ```
 
+```objc
+@property (nonatomic, retain, readonly) MDLMaterialProperty * specular;
+```
+
 #### Discussion
 
 The default specular value is zero (no specular highlights).
 
 ## See Also
 
-- [var baseColor: MDLMaterialProperty](mdlscatteringfunction/basecolor.md)
+### Working with Shading Properties
+- [var baseColor: MDLMaterialProperty](./basecolor.md)
   The inherent color of the material, to be used as a modulator during shading.
-- [var emission: MDLMaterialProperty](mdlscatteringfunction/emission.md)
+- [var emission: MDLMaterialProperty](./emission.md)
   The color emitted as radiance from a material’s surface.
-- [var materialIndexOfRefraction: MDLMaterialProperty](mdlscatteringfunction/materialindexofrefraction.md)
+- [var materialIndexOfRefraction: MDLMaterialProperty](./materialindexofrefraction.md)
   The index of refraction for the medium surrounding a material.
-- [var interfaceIndexOfRefraction: MDLMaterialProperty](mdlscatteringfunction/interfaceindexofrefraction.md)
+- [var interfaceIndexOfRefraction: MDLMaterialProperty](./interfaceindexofrefraction.md)
   The index of refraction for a material itself.
-- [var normal: MDLMaterialProperty](mdlscatteringfunction/normal.md)
+- [var normal: MDLMaterialProperty](./normal.md)
   The variation in the surface normal vectors in a material, relative to model coordinate space.
-- [var ambientOcclusion: MDLMaterialProperty](mdlscatteringfunction/ambientocclusion.md)
+- [var ambientOcclusion: MDLMaterialProperty](./ambientocclusion.md)
   The attenuation of ambient light due to local geometry variations on a surface.
-- [var ambientOcclusionScale: MDLMaterialProperty](mdlscatteringfunction/ambientocclusionscale.md)
+- [var ambientOcclusionScale: MDLMaterialProperty](./ambientocclusionscale.md)
   The scaling factor for ambient occlusion shading.
 
 

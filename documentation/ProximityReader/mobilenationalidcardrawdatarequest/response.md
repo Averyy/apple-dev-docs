@@ -1,7 +1,8 @@
 # MobileNationalIDCardRawDataRequest.Response
 
 **Framework**: ProximityReader  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type that contains the response information from a successful mobile national ID card raw data request.
 
@@ -19,20 +20,20 @@ struct Response
 ## Topics
 
 ### Instance Properties
-- [let ephemeralReaderKey: Data](mobilenationalidcardrawdatarequest/response/ephemeralreaderkey.md)
+- [let ephemeralReaderKey: Data](./response/ephemeralreaderkey.md)
   The session’s ephemeral reader key.
-- [let responseData: Data](mobilenationalidcardrawdatarequest/response/responsedata.md)
+- [let responseData: Data](./response/responsedata.md)
   The data the mobile national ID card holder returns.
-- [let sessionTranscript: Data](mobilenationalidcardrawdatarequest/response/sessiontranscript.md)
+- [let sessionTranscript: Data](./response/sessiontranscript.md)
   The session transcript of the document request.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

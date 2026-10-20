@@ -1,7 +1,8 @@
 # kIOUSBDeviceRequestDirectionPhase
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The direction phase.
 
@@ -10,7 +11,7 @@ The direction phase.
 
 ## Declaration
 
-```swift
+```c
 kIOUSBDeviceRequestDirectionPhase = IOUSBBitRangePhase(7, 7)
 ```
 

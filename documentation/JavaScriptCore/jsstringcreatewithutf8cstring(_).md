@@ -1,7 +1,8 @@
 # JSStringCreateWithUTF8CString(_:)
 
 **Framework**: JavaScriptCore  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a JavaScript string from a null-terminated UTF-8 string.
 
@@ -19,23 +20,28 @@ Creates a JavaScript string from a null-terminated UTF-8 string.
 func JSStringCreateWithUTF8CString(_ string: UnsafePointer<CChar>!) -> JSStringRef!
 ```
 
+```c
+JSStringRefJSStringCreateWithUTF8CString(const char *string);
+```
+
 #### Return Value
 
-A [`JSStringRef`](jsstringref.md) that contains `string`. Ownership follows [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+A [`JSStringRef`](./jsstringref.md) that contains `string`. Ownership follows [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 ## Parameters
 
-- `string`: The null-terminated UTF-8 string to copy into the new [`JSStringRef`](jsstringref.md).
+- `string`: The null-terminated UTF-8 string to copy into the new [`JSStringRef`](./jsstringref.md).
 
 ## See Also
 
-- [func JSStringCreateWithCharacters(UnsafePointer<JSChar>!, Int) -> JSStringRef!](jsstringcreatewithcharacters(_:_:).md)
+### Creating a JavaScript String
+- [func JSStringCreateWithCharacters(UnsafePointer<JSChar>!, Int) -> JSStringRef!](./jsstringcreatewithcharacters%28_,_%29.md)
   Creates a JavaScript string from a buffer of Unicode characters.
-- [typealias JSChar](jschar.md)
+- [typealias JSChar](./jschar.md)
   A Unicode character.
-- [func JSStringRetain(JSStringRef!) -> JSStringRef!](jsstringretain(_:).md)
+- [func JSStringRetain(JSStringRef!) -> JSStringRef!](./jsstringretain%28_%29.md)
   Retains a JavaScript string.
-- [func JSStringRelease(JSStringRef!)](jsstringrelease(_:).md)
+- [func JSStringRelease(JSStringRef!)](./jsstringrelease%28_%29.md)
   Releases a JavaScript string.
 
 

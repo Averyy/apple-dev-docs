@@ -1,7 +1,8 @@
 # requiredThreadsPerObjectThreadgroup
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 26.0+
@@ -15,6 +16,10 @@
 
 ```swift
 var requiredThreadsPerObjectThreadgroup: MTLSize { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) MTLSize requiredThreadsPerObjectThreadgroup;
 ```
 
 #### Discussion

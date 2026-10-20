@@ -1,14 +1,15 @@
 # handleProximityReport
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 11.1+ - Deprecated in 11.1
 
 ## Declaration
 
-```swift
+```c
 void handleProximityReport(AbsoluteTime, UInt32 reportID);
 ```
 

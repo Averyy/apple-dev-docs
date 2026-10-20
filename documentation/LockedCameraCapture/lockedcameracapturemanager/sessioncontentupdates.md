@@ -1,7 +1,8 @@
 # sessionContentUpdates
 
 **Framework**: LockedCameraCapture  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An `AsyncSequence` to process captured content from your capture extension.
 

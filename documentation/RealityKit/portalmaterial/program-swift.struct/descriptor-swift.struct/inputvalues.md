@@ -1,7 +1,8 @@
 # inputValues
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Initial values for the inputs that the shader graph declares.
 
@@ -21,15 +22,16 @@ var inputValues: [String : MaterialParameters.Value]
 
 #### Discussion
 
-Each entry binds a graph input by name to a starting value. The engine applies these values when a [`PortalMaterial`](portalmaterial.md) is first created from the resulting program; you can change any of them at runtime by calling [`setParameter(name:value:)`](portalmaterial/setparameter(name:value:).md).
+Each entry binds a graph input by name to a starting value. The engine applies these values when a [`PortalMaterial`](../../../portalmaterial.md) is first created from the resulting program; you can change any of them at runtime by calling [`setParameter(name:value:)`](../../setparameter%28name,value%29.md).
 
-Inputs that the graph declares as function constants belong in [`constantValues`](portalmaterial/program-swift.struct/descriptor-swift.struct/constantvalues.md) instead.
+Inputs that the graph declares as function constants belong in [`constantValues`](./constantvalues.md) instead.
 
 ## See Also
 
-- [var shaderGraph: ShaderGraph](portalmaterial/program-swift.struct/descriptor-swift.struct/shadergraph.md)
+### Configuring the shader program
+- [var shaderGraph: ShaderGraph](./shadergraph.md)
   The shader graph that describes the shading logic for this program.
-- [var constantValues: MTLFunctionConstantValues](portalmaterial/program-swift.struct/descriptor-swift.struct/constantvalues.md)
+- [var constantValues: MTLFunctionConstantValues](./constantvalues.md)
   Values for the function-constant inputs that the shader graph declares.
 
 

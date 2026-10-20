@@ -1,7 +1,8 @@
 # variance(of:mean:axes:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the variance of the first input along the specified axes when the mean has been precomputed.
 
@@ -17,6 +18,10 @@ Returns the variance of the first input along the specified axes when the mean h
 
 ```swift
 func variance(of tensor: MPSGraphTensor, mean meanTensor: MPSGraphTensor, axes: [NSNumber], name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) varianceOfTensor:(MPSGraphTensor *) tensor meanTensor:(MPSGraphTensor *) meanTensor axes:(NSArray<NSNumber *> *) axes name:(NSString *) name;
 ```
 
 #### Return Value

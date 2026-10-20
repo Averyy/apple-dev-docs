@@ -1,7 +1,8 @@
 # stopSync()
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Stops multipeer synchronization.
 
@@ -19,11 +20,12 @@ func stopSync()
 
 #### Discussion
 
-Call this method to stop multipeer syncing with connected peers. To resume syncing after calling this method, call [`startSync()`](multipeerconnectivityservice/startsync().md).
+Call this method to stop multipeer syncing with connected peers. To resume syncing after calling this method, call [`startSync()`](./startsync%28%29.md).
 
 ## See Also
 
-- [func startSync()](multipeerconnectivityservice/startsync.md)
+### Pausing and resuming
+- [func startSync()](./startsync%28%29.md)
   Begins multipeer synchronization.
 
 

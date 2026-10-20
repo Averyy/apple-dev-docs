@@ -1,7 +1,8 @@
 # CloudKit.ShareParticipantPermission
 
 **Framework**: CloudKit JS  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The status of a participant accepting a share invitation.
 
@@ -10,7 +11,7 @@ The status of a participant accepting a share invitation.
 
 ## Declaration
 
-```swift
+```
 interface CloudKit.ShareParticipantPermission {
 	const String UNKNOWN;
 	const String NONE;
@@ -22,30 +23,31 @@ interface CloudKit.ShareParticipantPermission {
 ## Topics
 
 ### Enumeration Cases
-- [NONE](cloudkit.shareparticipantpermission/none.md)
+- [NONE](./cloudkit.shareparticipantpermission/none.md)
   No permissions.
-- [READ_ONLY](cloudkit.shareparticipantpermission/read_only.md)
+- [READ_ONLY](./cloudkit.shareparticipantpermission/read_only.md)
   Read-only permissions.
-- [READ_WRITE](cloudkit.shareparticipantpermission/read_write.md)
+- [READ_WRITE](./cloudkit.shareparticipantpermission/read_write.md)
   Read-write permissions.
-- [UNKNOWN](cloudkit.shareparticipantpermission/unknown.md)
+- [UNKNOWN](./cloudkit.shareparticipantpermission/unknown.md)
   Unknown permissions.
 
 ## See Also
 
-- [CloudKit.AppleIDButtonTheme](cloudkit.appleidbuttontheme.md)
+### Enumerations
+- [CloudKit.AppleIDButtonTheme](./cloudkit.appleidbuttontheme.md)
   Specifies the look of the Apple ID button.
-- [CloudKit.DatabaseScope](cloudkit.databasescope.md)
+- [CloudKit.DatabaseScope](./cloudkit.databasescope.md)
   Available database scopes.
-- [CloudKit.QueryFilterComparator](cloudkit.queryfiltercomparator.md)
+- [CloudKit.QueryFilterComparator](./cloudkit.queryfiltercomparator.md)
   The comparators you use to create queries.
-- [CloudKit.ReferenceAction](cloudkit.referenceaction.md)
+- [CloudKit.ReferenceAction](./cloudkit.referenceaction.md)
   The delete action for a reference object.
-- [CloudKit.ShareParticipantAcceptanceStatus](cloudkit.shareparticipantacceptancestatus.md)
+- [CloudKit.ShareParticipantAcceptanceStatus](./cloudkit.shareparticipantacceptancestatus.md)
   The status of a participant accepting a share invitation.
-- [CloudKit.ShareParticipantType](cloudkit.shareparticipanttype.md)
+- [CloudKit.ShareParticipantType](./cloudkit.shareparticipanttype.md)
   Determines whether a participant can modify the list of participants of a shared record.
-- [CloudKit.SubscriptionType](cloudkit.subscriptiontype.md)
+- [CloudKit.SubscriptionType](./cloudkit.subscriptiontype.md)
   The type of subscription.
 
 

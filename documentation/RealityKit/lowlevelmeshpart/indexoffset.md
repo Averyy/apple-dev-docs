@@ -1,7 +1,8 @@
 # indexOffset
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The byte offset of the first index.
 

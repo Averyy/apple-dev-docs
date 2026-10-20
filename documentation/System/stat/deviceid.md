@@ -1,7 +1,8 @@
 # deviceID
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 ID of device containing file
 

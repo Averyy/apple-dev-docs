@@ -1,7 +1,8 @@
 # kSecAttrProtocolRTSP
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 RTSP protocol.
 
@@ -18,6 +19,10 @@ RTSP protocol.
 
 ```swift
 let kSecAttrProtocolRTSP: CFString
+```
+
+```c
+extern CFStringRef const kSecAttrProtocolRTSP;
 ```
 
 

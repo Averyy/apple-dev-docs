@@ -1,7 +1,8 @@
 # Get Change History Detail
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Retrieve field-level before and after values for a single entity change by its detail ID.
 
@@ -10,7 +11,7 @@ Retrieve field-level before and after values for a single entity change by its d
 
 #### Discussion
 
-This endpoint returns the complete field-level change record for a single entity within a transaction. The response contains a `details` array of [`ActivityDetail`](activitydetail.md) objects, each holding a `changes` array of field change objects. Each change object captures the `field` name, `oldValues`, and `newValues` as string arrays. To page through a large `changes` array, use `limit` and `offset`.
+This endpoint returns the complete field-level change record for a single entity within a transaction. The response contains a `details` array of [`ActivityDetail`](./activitydetail.md) objects, each holding a `changes` array of field change objects. Each change object captures the `field` name, `oldValues`, and `newValues` as string arrays. To page through a large `changes` array, use `limit` and `offset`.
 
 What populates `oldValues` and `newValues` depends on the event type that produced the change.
 
@@ -28,7 +29,7 @@ What populates `oldValues` and `newValues` depends on the event type that produc
 
 Retrieve field-level details for a campaign update that changed two fields in the same transaction: it re-enables `status` and increases `dailyBudget`.
 
-```None
+```
 GET https://api.ads.apple.com/v1/change-history/Campaign.444555666.txn_abc123def456
 ```
 
@@ -91,7 +92,7 @@ GET https://api.ads.apple.com/v1/change-history/Campaign.444555666.txn_abc123def
 
 Retrieve field-level details for a new ad group creation. The `oldValues` field is empty for all fields on `CREATE` events.
 
-```None
+```
 GET https://api.ads.apple.com/v1/change-history/AdGroup.888999333.txn_def789ghi012
 ```
 
@@ -165,7 +166,7 @@ GET https://api.ads.apple.com/v1/change-history/AdGroup.888999333.txn_def789ghi0
 
 Retrieve field-level details for a deleted keyword. The `newValues` field is empty for all fields on `DELETE` events.
 
-```None
+```
 GET https://api.ads.apple.com/v1/change-history/Keyword.777888999.txn_jkl345mno678
 ```
 
@@ -232,11 +233,36 @@ GET https://api.ads.apple.com/v1/change-history/Keyword.777888999.txn_jkl345mno6
 
 ## Parameters
 
+### Path Parameters
+
+- `detailId` (string) *(required)*: The composite identifier for the entity change to retrieve, in the form `EntityType.entityId.txnId` (for example, `Campaign.444555666.txn_abc123def456`). Path parameter.
+
+### Query Parameters
+
+- `limit` (integer): Maximum number of entries to return from the `changes` array. Defaults to `100`.
+
+  **Default**: `100`
+- `offset` (integer): Zero-based index of the first `changes` entry to return. Defaults to `0`.
+
+  **Default**: `0`
+
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Responses
+
+- `200` OK (`ChangeDetailsResponse`, `application/json`): Successful operation. Returns [`ChangeDetailsResponse`](./changedetailsresponse.md) (`result`: array of [`ChangeDetails`](./changedetails.md)).
+- `400` Bad Request (`Error`, `application/json`): Bad Request. Returns [`ErrorMessage`](./errormessage.md).
+- `401` Unauthorized (`Error`, `application/json`): Unauthorized.
+- `403` Forbidden (`Error`, `application/json`): Forbidden.
+- `404` Not Found (`Error`, `application/json`): Not Found. Returns [`ErrorMessage`](./errormessage.md).
+- `429` Too Many Requests (`Error`, `application/json`): Rate Limit Exceeded. Returns [`ErrorMessage`](./errormessage.md).
+- `500` Internal Server Error (`Error`, `application/json`): Internal Server Error. Returns [`ErrorMessage`](./errormessage.md).
 
 ## See Also
 
-- [Query Change History](query-audit-summary-_-grouped-by-transaction.md)
+- [Query Change History](./query-audit-summary-_-grouped-by-transaction.md)
   Query audit summaries grouped by transaction across a specified time range.
 
 

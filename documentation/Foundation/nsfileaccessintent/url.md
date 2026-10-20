@@ -1,7 +1,8 @@
 # url
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current URL for the item managed by the file access intent instance. (read-only)
 
@@ -20,13 +21,18 @@ The current URL for the item managed by the file access intent instance. (read-o
 var url: URL { get }
 ```
 
+```objc
+@property (copy, readonly) NSURL * URL;
+```
+
 #### Discussion
 
-Always use the URL returned by this property inside the accessor block of a file coordinator’s [`coordinate(with:queue:byAccessor:)`](nsfilecoordinator/coordinate(with:queue:byaccessor:).md) method. This property’s value may be different from the original URL, because the item was either moved or renamed while the file coordinator waited for access.
+Always use the URL returned by this property inside the accessor block of a file coordinator’s [`coordinate(with:queue:byAccessor:)`](../nsfilecoordinator/coordinate%28with,queue,byaccessor%29.md) method. This property’s value may be different from the original URL, because the item was either moved or renamed while the file coordinator waited for access.
 
 ## See Also
 
-- [func coordinate(with: [NSFileAccessIntent], queue: OperationQueue, byAccessor: ((any Error)?) -> Void)](nsfilecoordinator/coordinate(with:queue:byaccessor:).md)
+### Related Documentation
+- [func coordinate(with: [NSFileAccessIntent], queue: OperationQueue, byAccessor: ((any Error)?) -> Void)](../nsfilecoordinator/coordinate%28with,queue,byaccessor%29.md)
   Performs a number of coordinated-read or -write operations asynchronously.
 
 

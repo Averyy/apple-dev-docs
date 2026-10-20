@@ -1,7 +1,8 @@
 # GCInputDirectionalTouchSurfaceButton
 
 **Framework**: Game Controller  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The name of the controller’s touch surface button.
 
@@ -19,15 +20,21 @@ The name of the controller’s touch surface button.
 let GCInputDirectionalTouchSurfaceButton: String
 ```
 
+```c
+extern NSString * const GCInputDirectionalTouchSurfaceButton;
+```
+
 #### Discussion
 
 For the second-generation Siri Remote and later, this represents the button on the entire touch surface including the inner and outer rings.
 
 ## See Also
 
-- [var buttonA: GCControllerButtonInput](gcmicrogamepad/buttona.md)
+### Related Documentation
+- [var buttonA: GCControllerButtonInput](./gcmicrogamepad/buttona.md)
   The button that the user activates by pressing harder on the touchpad.
-- [let GCInputDirectionalCenterButton: String](gcinputdirectionalcenterbutton.md)
+### Directional Pad Button Names
+- [let GCInputDirectionalCenterButton: String](./gcinputdirectionalcenterbutton.md)
   The name of the controller’s optional button on the directional gamepad.
 
 

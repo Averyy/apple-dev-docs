@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 18.0+
@@ -15,6 +16,10 @@
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

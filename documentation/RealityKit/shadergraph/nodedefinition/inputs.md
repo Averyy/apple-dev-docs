@@ -1,7 +1,8 @@
 # inputs
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The input ports accepted by this node definition.
 

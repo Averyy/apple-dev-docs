@@ -1,7 +1,8 @@
 # secondaryTextureCoordinateTransform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A two-dimensional transformation to apply to the entity’s secondary texture coordinates.
 
@@ -11,7 +12,7 @@ A two-dimensional transformation to apply to the entity’s secondary texture co
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -34,11 +35,12 @@ secondaryTextureCoordinateTransform =.init(offset: SIMD2<Float>(x:0.5, y: 0.5),
                                             rotation: rotationRadians)
 ```
 
-Some entities imported from USDZ files have more than one set of UV coordinates. This property transforms the secondary set. To transform the primary UV coordinates in a material, see [`textureCoordinateTransform`](physicallybasedmaterial/texturecoordinatetransform-swift.property.md).
+Some entities imported from USDZ files have more than one set of UV coordinates. This property transforms the secondary set. To transform the primary UV coordinates in a material, see [`textureCoordinateTransform`](./texturecoordinatetransform-swift.property.md).
 
 ## See Also
 
-- [var textureCoordinateTransform: PhysicallyBasedMaterial.TextureCoordinateTransform](physicallybasedmaterial/texturecoordinatetransform-swift.property.md)
+### Modifying texture coordinates
+- [var textureCoordinateTransform: PhysicallyBasedMaterial.TextureCoordinateTransform](./texturecoordinatetransform-swift.property.md)
   A two-dimensional transformation to apply to the entity’s primary texture coordinates.
 
 

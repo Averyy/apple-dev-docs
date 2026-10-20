@@ -1,7 +1,8 @@
 # WKNavigationResponsePolicy.cancel
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Cancel the navigation.
 
@@ -18,11 +19,16 @@ Cancel the navigation.
 case cancel
 ```
 
+```c
+WKNavigationResponsePolicyCancel
+```
+
 ## See Also
 
-- [WKNavigationResponsePolicy.allow](wknavigationresponsepolicy/allow.md)
+### Constants
+- [WKNavigationResponsePolicy.allow](./allow.md)
   Allow the navigation to continue.
-- [WKNavigationResponsePolicy.download](wknavigationresponsepolicy/download.md)
+- [WKNavigationResponsePolicy.download](./download.md)
   Allow the download to proceed.
 
 

@@ -1,7 +1,8 @@
 # recognizedText(strokeIDs:)
 
 **Framework**: PencilKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the recognized text from the specified strokes in the drawing.
 
@@ -20,7 +21,7 @@ final func recognizedText(strokeIDs: Set<UUID>? = nil) async -> String?
 
 ## Mentions
 
-- [Recognizing handwriting and converting it to text](recognizing-handwriting-and-converting-to-text.md)
+- [Recognizing handwriting and converting it to text](../recognizing-handwriting-and-converting-to-text.md)
 
 ## Parameters
 
@@ -28,7 +29,8 @@ final func recognizedText(strokeIDs: Set<UUID>? = nil) async -> String?
 
 ## See Also
 
-- [var indexableContent: String?](pkstrokerecognizer/indexablecontent.md)
+### Recognizing handwriting
+- [var indexableContent: String?](./indexablecontent.md)
   A string suitable for indexing the drawing’s recognized text in search systems such as Spotlight.
 
 

@@ -1,11 +1,12 @@
 # Miscellaneous Defines
 
-**Framework**: Kernel
+**Framework**: Kernel  
+**Role**: API Collection
 
 ## Topics
 
 ### Constants
-- [IOInterruptEventAction](iointerrupteventaction.md)
+- [IOInterruptEventAction](../iointerrupteventaction.md)
 
 
 ---

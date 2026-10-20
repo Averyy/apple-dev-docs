@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the linear regressor.
 
@@ -21,9 +22,10 @@ var description: String { get }
 
 ## See Also
 
-- [var debugDescription: String](mllinearregressor/debugdescription.md)
+### Describing a linear regressor
+- [var debugDescription: String](./debugdescription.md)
   A text representation of the linear regressor that’s suitable for output during debugging.
-- [var playgroundDescription: Any](mllinearregressor/playgrounddescription.md)
+- [var playgroundDescription: Any](./playgrounddescription.md)
   A description of the linear regressor shown in a playground.
 
 

@@ -1,12 +1,13 @@
 # Compiling binary archives from a custom configuration script
 
-**Framework**: Metal
+**Framework**: Metal  
+**Role**: Article
 
 Define how the Metal translator builds binary archives without precompiled binaries as a starting source.
 
 #### Overview
 
-Creating binary archives for additional GPU architectures, as [`Creating binary archives from device-built pipeline state objects`](creating-binary-archives-from-device-built-pipeline-state-objects.md) describes, requires a compiled binary archive. To bypass this restriction, you can hand-author JSON configuration scripts that represent a pipeline state for the Metal translator. Hand-authoring configuration scripts gives you control over defining your pipeline states, and allows you to provide a script section of the JSON for conditional compilation on a per-architecture basis.
+Creating binary archives for additional GPU architectures, as [Creating binary archives from device-built pipeline state objects](./creating-binary-archives-from-device-built-pipeline-state-objects.md) describes, requires a compiled binary archive. To bypass this restriction, you can hand-author JSON configuration scripts that represent a pipeline state for the Metal translator. Hand-authoring configuration scripts gives you control over defining your pipeline states, and allows you to provide a script section of the JSON for conditional compilation on a per-architecture basis.
 
 This article shows you how to create a Metal translator configuration script that represents a pipeline state, as the following code example demonstrates:
 
@@ -95,7 +96,7 @@ BOOL createPipelineDescriptors(MTLRenderPipelineDescriptor **renderPipelineDescr
 
 The code example above includes a render pipeline with a single-stage fragment and vertex shader, as well as a compute pipeline. The library `render.metallib` contains the Metal IR for the shaders, and `render.binary.metallib` is the binary you generate from the Metal translator. The compute kernel optonally uses ray tracing, depending on the value of `enableRayTracing`, and enabling ray tracing uses intersection functions.
 
-##### Create Your Configuration Script and Add Libraries
+##### Create your configuration script and add libraries
 
 Create a file named `render.mtlp-json` in the same directory as `render.metallib`, and open it in a text editor. This is the configuration script the Metal translator uses to build your described pipeline states.
 
@@ -116,9 +117,9 @@ The basic format of this file is a JSON dictionary containing at least two keys,
 }
 ```
 
-##### Add Render Pipeline States
+##### Add render pipeline states
 
-Each pipeline in your configuration script needs a reference to shader functions and information about your app’s pipeline state when Metal invokes them. Any optional property that you omit from a pipeline description in the configuration script uses its default value, just as with a pipeline state descriptor instance in code. The example below creates an [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md) instance for both a `vertexFunction` and a `fragmentFunction`. This render pipeline also uses a nondefault [`MTLPixelFormat.bgra8Unorm`](mtlpixelformat/bgra8unorm.md) pixel format.
+Each pipeline in your configuration script needs a reference to shader functions and information about your app’s pipeline state when Metal invokes them. Any optional property that you omit from a pipeline description in the configuration script uses its default value, just as with a pipeline state descriptor instance in code. The example below creates an [`MTLRenderPipelineDescriptor`](./mtlrenderpipelinedescriptor.md) instance for both a `vertexFunction` and a `fragmentFunction`. This render pipeline also uses a nondefault [`MTLPixelFormat.bgra8Unorm`](./mtlpixelformat/bgra8unorm.md) pixel format.
 
 **Swift**:
 
@@ -215,7 +216,7 @@ Dictionaries describing render pipelines need both a `vertex_function` and a `fr
 
 > 💡 **Tip**:  Full documentation of the configuration script format, including how to conditionally control compilation to binary, is available by running `man metal-pipelines-script` in Terminal.
 
-##### Add Compute Pipeline States with Visible and Intersection Functions
+##### Add compute pipeline states with visible and intersection functions
 
 In the following code example, the compute kernel uses the ray-tracing intersection function `sphereIntersection` and the visible function `evaluateGeometry`:
 
@@ -318,7 +319,7 @@ The following code example is the JSON configuration script representation of th
 
 > ❗ **Important**:  Use function names in the `binary_functions` array, not function aliases.
 
-##### Add Specialization Constants for Your Compute Pipeline
+##### Add specialization constants for your compute pipeline
 
 In this article’s code examples, the `enableRayTracing` constant controls whether the compute kernel uses ray-tracing support. In your app, you use `rayTracingKernel` for the compute kernel’s name, but each constant specializes the function to a single binary representation that has its own name. The following code example sets the specialized function names `rayTracingWithIntersection` and `rayTracingNoIntersection`, depending on the value of `enableRayTracing`:
 
@@ -456,7 +457,7 @@ Modify the existing `compile_pipelines` section from the JSON configuration scri
 }
 ```
 
-##### Compile Binary Archives
+##### Compile binary archives
 
 With the Metal IR library and a configuration script that describes a pipeline state matching your app’s code, the Metal translator can compile GPU-specific binaries for any device that supports Metal. In Terminal, run the following `metal-tt` command to build for GPUs targeting iOS 16:
 
@@ -471,19 +472,20 @@ By default, `metal-tt` compiles for all GPU architectures the target triple supp
 applegpu_g10p applegpu_g5p applegpu_g9p applegpu_g9g applegpu_g11p applegpu_g12p applegpu_g13p applegpu_g13g applegpu_g14p applegpu_g14g applegpu_g16p applegpu_g15p
 ```
 
-##### Add the Compiled Binary Archive to Your App
+##### Add the compiled binary archive to your app
 
-To use your compiled Metal binary archive, you need to add it to your Xcode project’s bundle resources. Add the `precompiled.binary.metallib` archive to your project’s Copy Bundle Resources build phase. For instructions, see [`Customizing the build phases of a target`](https://developer.apple.com/documentation/xcode/customizing-the-build-phases-of-a-target).
+To use your compiled Metal binary archive, you need to add it to your Xcode project’s bundle resources. Add the `precompiled.binary.metallib` archive to your project’s Copy Bundle Resources build phase. For instructions, see [Customizing the build phases of a target](../Xcode/customizing-the-build-phases-of-a-target.md).
 
 > **Note**:  Select the “Copy items if needed” checkbox to ensure the created archive is in your project, and the system doesn’t overwrite or delete it.
 
-In your code, load binary archives by calling [`makeBinaryArchive(descriptor:)`](mtldevice/makebinaryarchive(descriptor:).md) and add the resulting instances to your pipeline state descriptor’s [`binaryArchives`](mtlfunctiondescriptor/binaryarchives.md) property. For specialized, visible, and intersection functions, load them into an appropriate [`MTLFunctionDescriptor`](mtlfunctiondescriptor.md) instance’s [`binaryArchives`](mtlfunctiondescriptor/binaryarchives.md) property. The code examples throughout this article include sections for linking binary archives when a function has a precompiled shader.
+In your code, load binary archives by calling [`makeBinaryArchive(descriptor:)`](./mtldevice/makebinaryarchive%28descriptor%29.md) and add the resulting instances to your pipeline state descriptor’s [`binaryArchives`](./mtlfunctiondescriptor/binaryarchives.md) property. For specialized, visible, and intersection functions, load them into an appropriate [`MTLFunctionDescriptor`](./mtlfunctiondescriptor.md) instance’s [`binaryArchives`](./mtlfunctiondescriptor/binaryarchives.md) property. The code examples throughout this article include sections for linking binary archives when a function has a precompiled shader.
 
 ## See Also
 
-- [Creating binary archives from device-built pipeline state objects](creating-binary-archives-from-device-built-pipeline-state-objects.md)
+### Working with Metal binary archives
+- [Creating binary archives from device-built pipeline state objects](./creating-binary-archives-from-device-built-pipeline-state-objects.md)
   Write your Metal pipeline states to a binary archive at app runtime, and build binaries for any supported GPU.
-- [Manipulating Metal binary archives](manipulating-metal-binary-archives.md)
+- [Manipulating Metal binary archives](./manipulating-metal-binary-archives.md)
   Split precompiled binaries into individual slices, and combine them back together for targeted distribution.
 
 

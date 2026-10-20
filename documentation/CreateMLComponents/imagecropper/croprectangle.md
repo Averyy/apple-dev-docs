@@ -1,7 +1,8 @@
 # cropRectangle
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The crop rectangle within the image bounds.
 

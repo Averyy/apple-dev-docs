@@ -1,7 +1,8 @@
 # IntentValueRepresentation
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A transfer representation that enables bidirectional conversion between app entities and system intent values.
 
@@ -22,8 +23,8 @@ struct IntentValueRepresentation<Item, IntentValue> where Item : Transferable, I
 
 ## Mentions
 
-- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
-- [Providing contextual cues to Apple Intelligence and Siri](providing-contextual-cues-to-apple-intelligence-and-siri.md)
+- [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
+- [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md)
 
 #### Overview
 
@@ -59,7 +60,7 @@ ValueRepresentation(
 )
 ```
 
-#### Key Path Based Export
+#### Key Path-Based Export
 
 For entities that directly contain a system intent value property, you can use a simplified key path syntax:
 
@@ -77,25 +78,25 @@ struct LocationEntity: TransientAppEntity, Transferable {
 ## Topics
 
 ### Initializers
-- [init(exporting: (Item) async throws -> IntentValue)](intentvaluerepresentation/init(exporting:)-2woe8.md)
+- [init(exporting: (Item) async throws -> IntentValue)](./intentvaluerepresentation/init%28exporting%29-2woe8.md)
   Creates a value representation that exports an entity to a system intent value.
-- [init(exporting: (Item) async throws -> IntentValue)](intentvaluerepresentation/init(exporting:)-7wi2e.md)
+- [init(exporting: (Item) async throws -> IntentValue)](./intentvaluerepresentation/init%28exporting%29-7wi2e.md)
   Creates a value representation that exports an entity to an `IntentPerson`.
-- [init(exporting: (Item) async throws -> IntentValue, importing: (IntentValue) async throws -> Item)](intentvaluerepresentation/init(exporting:importing:)-4zz9c.md)
+- [init(exporting: (Item) async throws -> IntentValue, importing: (IntentValue) async throws -> Item)](./intentvaluerepresentation/init%28exporting,importing%29-4zz9c.md)
   Creates a value representation that supports bidirectional conversion between an entity and a system intent value.
-- [init(exporting: (Item) async throws -> IntentValue, importing: (IntentValue) async throws -> Item)](intentvaluerepresentation/init(exporting:importing:)-550j7.md)
+- [init(exporting: (Item) async throws -> IntentValue, importing: (IntentValue) async throws -> Item)](./intentvaluerepresentation/init%28exporting,importing%29-550j7.md)
   an entity and an `IntentPerson`.
-- [init(importing: (IntentValue) async throws -> Item)](intentvaluerepresentation/init(importing:)-6jio8.md)
+- [init(importing: (IntentValue) async throws -> Item)](./intentvaluerepresentation/init%28importing%29-6jio8.md)
   Creates a value representation that imports an `IntentPerson` into an entity.
-- [init(importing: (IntentValue) async throws -> Item)](intentvaluerepresentation/init(importing:)-7cl3z.md)
+- [init(importing: (IntentValue) async throws -> Item)](./intentvaluerepresentation/init%28importing%29-7cl3z.md)
   Creates a value representation that imports a system intent value into an entity.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TransferRepresentation](../coretransferable/transferrepresentation.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TransferRepresentation](../CoreTransferable/transferrepresentation.md)
 
 
 ---

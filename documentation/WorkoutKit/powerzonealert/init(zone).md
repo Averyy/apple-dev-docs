@@ -1,7 +1,8 @@
 # init(zone:)
 
 **Framework**: WorkoutKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new power zone alert.
 

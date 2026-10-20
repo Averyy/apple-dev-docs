@@ -1,7 +1,8 @@
 # setEnabled(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Enables or disables the slider.
 
@@ -12,6 +13,10 @@ Enables or disables the slider.
 
 ```swift
 func setEnabled(_ enabled: Bool)
+```
+
+```objc
+- (void) setEnabled:(BOOL) enabled;
 ```
 
 #### Discussion

@@ -1,7 +1,8 @@
 # Up Direction
 
 **Framework**: ShaderGraph  
-**Kind**: subscript
+**Kind**: subscript  
+**Role**: ShaderGraph Node
 
 The direction of the up vector.
 
@@ -15,13 +16,22 @@ The direction of the up vector.
 
 #### Parameter Types
 
-#### Parameter Description
+| Input | Type |
+| --- | --- |
+| `Space` | String |
+
+| Output | Type |
+| --- | --- |
+| `Out` | Vector3f |
+
+#### Parameter description
 
 - **`Space`**: The space for which the node returns the up vector; the default is `world`.
 
 ## See Also
 
-- [Time (float)](application/time-(float).md)
+### Nodes
+- [Time (float)](./time-%28float%29.md)
   The current time in seconds.
 
 

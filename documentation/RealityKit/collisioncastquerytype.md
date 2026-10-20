@@ -1,7 +1,8 @@
 # CollisionCastQueryType
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The kinds of ray and convex shape cast queries that you can make.
 
@@ -11,7 +12,7 @@ The kinds of ray and convex shape cast queries that you can make.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,26 +23,27 @@ enum CollisionCastQueryType
 ## Topics
 
 ### Collision cast queries
-- [CollisionCastQueryType.nearest](collisioncastquerytype/nearest.md)
+- [CollisionCastQueryType.nearest](./collisioncastquerytype/nearest.md)
   Report the closest hit.
-- [CollisionCastQueryType.all](collisioncastquerytype/all.md)
+- [CollisionCastQueryType.all](./collisioncastquerytype/all.md)
   Report all hits sorted in ascending order by distance from the cast origin.
-- [CollisionCastQueryType.any](collisioncastquerytype/any.md)
+- [CollisionCastQueryType.any](./collisioncastquerytype/any.md)
   Report one hit.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
 
 ## See Also
 
-- [struct CollisionCastHit](collisioncasthit.md)
+### Ray casting
+- [struct CollisionCastHit](./collisioncasthit.md)
   A hit result of a collision cast.
-- [CollisionCastHit.TriangleHit](collisioncasthit/trianglehit-swift.struct.md)
+- [CollisionCastHit.TriangleHit](./collisioncasthit/trianglehit-swift.struct.md)
   Information returned when ray intersects a triangle mesh.
-- [struct PixelCastHit](pixelcasthit.md)
+- [struct PixelCastHit](./pixelcasthit.md)
 
 
 ---

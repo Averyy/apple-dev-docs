@@ -1,17 +1,24 @@
 # lastAccessedDate
 
 **Framework**: TV Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The date when the user last accessed this item.
 
 **Availability**:
-- tvOS 9.0+
+- tvOS 9.0+ - Deprecated in 13.0
+
+> **Deprecated**: TVContentItem has been replaced by TVTopShelfItem
 
 ## Declaration
 
 ```swift
 var lastAccessedDate: Date? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSDate * lastAccessedDate;
 ```
 
 #### Discussion
@@ -20,9 +27,10 @@ A typical use is for content types in which “playing” represents the date wh
 
 ## See Also
 
-- [var currentPosition: NSNumber?](tvcontentitem/currentposition.md)
+### Inspecting the Playback Properties
+- [var currentPosition: NSNumber?](./currentposition.md)
   The index location, measured in seconds, at which the user last played this item.
-- [var hasPlayedToEnd: NSNumber?](tvcontentitem/hasplayedtoend.md)
+- [var hasPlayedToEnd: NSNumber?](./hasplayedtoend.md)
   A Boolean value indicating whether the user can be considered to have finished this item.
 
 

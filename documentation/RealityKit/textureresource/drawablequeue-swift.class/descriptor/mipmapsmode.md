@@ -1,7 +1,8 @@
 # mipmapsMode
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that determines whether the resource should generate mipmaps for each drawable’s texture after it was updated.
 
@@ -11,7 +12,7 @@ A Boolean value that determines whether the resource should generate mipmaps for
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 

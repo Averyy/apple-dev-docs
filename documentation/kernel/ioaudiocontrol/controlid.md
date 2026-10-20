@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```c
 UInt32 controlID;
 ```
 
@@ -15,11 +15,12 @@ An optional identifier that can be used to identify the control.
 
 ## See Also
 
-- [workLoop](ioaudiocontrol/workloop.md)
-- [userClients](ioaudiocontrol/userclients.md)
-- [isStarted](ioaudiocontrol/isstarted.md)
-- [commandGate](ioaudiocontrol/commandgate.md)
-- [channelID](ioaudiocontrol/channelid.md)
+### Instance Variables
+- [workLoop](./workloop.md)
+- [userClients](./userclients.md)
+- [isStarted](./isstarted.md)
+- [commandGate](./commandgate.md)
+- [channelID](./channelid.md)
 
 
 ---

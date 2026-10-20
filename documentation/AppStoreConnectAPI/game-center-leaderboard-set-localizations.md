@@ -1,70 +1,72 @@
 # Game Center leaderboard set localizations
 
-**Framework**: App Store Connect API
+**Framework**: App Store Connect API  
+**Role**: API Collection
 
 Manage localizations for your Game Center leaderboard sets.
 
 ## Topics
 
 ### Managing leaderboard set localizations
-- [Read Game Center Leaderboard Set Localization Information](get-v2-gamecenterleaderboardsetlocalizations-_id_.md)
+- [Read Game Center Leaderboard Set Localization Information](./get-v2-gamecenterleaderboardsetlocalizations-_id_.md)
   Get information about a specific Game Center leaderboard set localization.
-- [List All Images for a Game Center Leaderboard Set Localization](get-v2-gamecenterleaderboardsetlocalizations-_id_-image.md)
+- [List All Images for a Game Center Leaderboard Set Localization](./get-v2-gamecenterleaderboardsetlocalizations-_id_-image.md)
   Get a list of images for a specific Game Center leaderboard set localization.
-- [Get All Image IDs for a Game Center Leaderboard Set Localization](get-v2-gamecenterleaderboardsetlocalizations-_id_-relationships-image.md)
+- [Get All Image IDs for a Game Center Leaderboard Set Localization](./get-v2-gamecenterleaderboardsetlocalizations-_id_-relationships-image.md)
   Get a list of image resource IDs for a specific Game Center leaderboard set localization.
-- [Create a Game Center Leaderboard Set Localization](post-v2-gamecenterleaderboardsetlocalizations.md)
+- [Create a Game Center Leaderboard Set Localization](./post-v2-gamecenterleaderboardsetlocalizations.md)
   Create a Game Center leaderboard set localization.
-- [Modify a Game Center Leaderboard Set Localization](patch-v2-gamecenterleaderboardsetlocalizations-_id_.md)
+- [Modify a Game Center Leaderboard Set Localization](./patch-v2-gamecenterleaderboardsetlocalizations-_id_.md)
   Update a specific Game Center leaderboard set localization.
-- [Delete a Game Center Leaderboard Set Localization](delete-v2-gamecenterleaderboardsetlocalizations-_id_.md)
+- [Delete a Game Center Leaderboard Set Localization](./delete-v2-gamecenterleaderboardsetlocalizations-_id_.md)
   Delete a specific Game Center leaderboard set localization.
-- [Read Leaderboard Set Localization Information](get-v1-gamecenterleaderboardsetlocalizations-_id_.md)
+- [Read Leaderboard Set Localization Information](./get-v1-gamecenterleaderboardsetlocalizations-_id_.md)
   Get information about a leaderboard set localization.
-- [Read the Image Associated With a Leaderboard Set Localization](get-v1-gamecenterleaderboardsetlocalizations-_id_-gamecenterleaderboardsetimage.md)
+- [Read the Image Associated With a Leaderboard Set Localization](./get-v1-gamecenterleaderboardsetlocalizations-_id_-gamecenterleaderboardsetimage.md)
   Get information about a leaderboard set image associated with a leaderboard set localization.
-- [Get the leaderboard set image ID for a Game Center leaderboard set localization](get-v1-gamecenterleaderboardsetlocalizations-_id_-relationships-gamecenterleaderboardsetimage.md)
-- [Create a Leaderboard Set Localization](post-v1-gamecenterleaderboardsetlocalizations.md)
+- [Get the leaderboard set image ID for a Game Center leaderboard set localization](./get-v1-gamecenterleaderboardsetlocalizations-_id_-relationships-gamecenterleaderboardsetimage.md)
+- [Create a Leaderboard Set Localization](./post-v1-gamecenterleaderboardsetlocalizations.md)
   Add a new leaderboard set localization.
-- [Modify a Leaderboard Set Localization](patch-v1-gamecenterleaderboardsetlocalizations-_id_.md)
+- [Modify a Leaderboard Set Localization](./patch-v1-gamecenterleaderboardsetlocalizations-_id_.md)
   Edit a leaderboard set localization.
-- [Delete a Leaderboard Set Localization](delete-v1-gamecenterleaderboardsetlocalizations-_id_.md)
+- [Delete a Leaderboard Set Localization](./delete-v1-gamecenterleaderboardsetlocalizations-_id_.md)
   Delete a localization that’s associated with a leaderboard set.
 ### Objects
-- [object GameCenterLeaderboardSetLocalizationV2](gamecenterleaderboardsetlocalizationv2.md)
+- [object GameCenterLeaderboardSetLocalizationV2](./gamecenterleaderboardsetlocalizationv2.md)
   The data structure that represents a Game Center leaderboard set localization v2 resource.
-- [object GameCenterLeaderboardSetLocalizationV2CreateRequest](gamecenterleaderboardsetlocalizationv2createrequest.md)
+- [object GameCenterLeaderboardSetLocalizationV2CreateRequest](./gamecenterleaderboardsetlocalizationv2createrequest.md)
   The request body you use to create a Game Center leaderboard set localization v2.
-- [object GameCenterLeaderboardSetLocalizationV2Response](gamecenterleaderboardsetlocalizationv2response.md)
+- [object GameCenterLeaderboardSetLocalizationV2Response](./gamecenterleaderboardsetlocalizationv2response.md)
   A response that contains a single Game Center leaderboard set localization v2 resource.
-- [object GameCenterLeaderboardSetLocalizationV2UpdateRequest](gamecenterleaderboardsetlocalizationv2updaterequest.md)
+- [object GameCenterLeaderboardSetLocalizationV2UpdateRequest](./gamecenterleaderboardsetlocalizationv2updaterequest.md)
   The request body you use to update a Game Center leaderboard set localization v2.
-- [object GameCenterLeaderboardSetLocalizationsV2Response](gamecenterleaderboardsetlocalizationsv2response.md)
+- [object GameCenterLeaderboardSetLocalizationsV2Response](./gamecenterleaderboardsetlocalizationsv2response.md)
   A response that contains a single Game Center leaderboard set localization v2 resource.
-- [object GameCenterLeaderboardSetLocalizationV2ImageLinkageResponse](gamecenterleaderboardsetlocalizationv2imagelinkageresponse.md)
+- [object GameCenterLeaderboardSetLocalizationV2ImageLinkageResponse](./gamecenterleaderboardsetlocalizationv2imagelinkageresponse.md)
   A response that contains a single Game Center leaderboard set localization v2 image linkage resource.
-- [object GameCenterLeaderboardSetLocalization](gamecenterleaderboardsetlocalization.md)
+- [object GameCenterLeaderboardSetLocalization](./gamecenterleaderboardsetlocalization.md)
   The data structure that represent a leaderboard set localization.
-- [object GameCenterLeaderboardSetLocalizationCreateRequest](gamecenterleaderboardsetlocalizationcreaterequest.md)
+- [object GameCenterLeaderboardSetLocalizationCreateRequest](./gamecenterleaderboardsetlocalizationcreaterequest.md)
   The request body you use to create a leaderboard set localization.
-- [object GameCenterLeaderboardSetLocalizationResponse](gamecenterleaderboardsetlocalizationresponse.md)
+- [object GameCenterLeaderboardSetLocalizationResponse](./gamecenterleaderboardsetlocalizationresponse.md)
   The response body for endpoints that create, read, or modify a single Game Center leaderboard set localization.
-- [object GameCenterLeaderboardSetLocalizationUpdateRequest](gamecenterleaderboardsetlocalizationupdaterequest.md)
+- [object GameCenterLeaderboardSetLocalizationUpdateRequest](./gamecenterleaderboardsetlocalizationupdaterequest.md)
   The request body you use to update a leaderboard localization.
-- [object GameCenterLeaderboardSetLocalizationsResponse](gamecenterleaderboardsetlocalizationsresponse.md)
+- [object GameCenterLeaderboardSetLocalizationsResponse](./gamecenterleaderboardsetlocalizationsresponse.md)
   The response body for endpoints that list Game Center leaderboard set localizations.
 
 ## See Also
 
-- [Game Center leaderboard sets](game-center-leaderboard-sets.md)
+### Leaderboard sets
+- [Game Center leaderboard sets](./game-center-leaderboard-sets.md)
   Manage Game Center leaderboard sets for your apps.
-- [Game Center leaderboard set images](game-center-leaderboard-set-images.md)
+- [Game Center leaderboard set images](./game-center-leaderboard-set-images.md)
   Manage image assets for your Game Center leaderboard sets.
-- [Game Center leaderboard set versions](game-center-leaderboard-set-versions.md)
+- [Game Center leaderboard set versions](./game-center-leaderboard-set-versions.md)
   Manage versions for your Game Center leaderboard sets.
-- [Game Center leaderboard set releases](game-center-leaderboard-set-releases.md)
+- [Game Center leaderboard set releases](./game-center-leaderboard-set-releases.md)
   Manage a leaderboard set releases.
-- [Game Center leaderboard set member localizations](game-center-leaderboard-set-member-localizations.md)
+- [Game Center leaderboard set member localizations](./game-center-leaderboard-set-member-localizations.md)
   Manage Game Center leaderboard set member localizations.
 
 

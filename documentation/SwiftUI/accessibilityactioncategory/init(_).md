@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a custom action category labeled by `nameResource`.
 
@@ -21,13 +22,29 @@ Creates a custom action category labeled by `nameResource`.
 init(_ nameResource: LocalizedStringResource)
 ```
 
+**Other overloads**:
+
+```swift
+init(_ name: Text)
+```
+
+```swift
+init(_ name: some StringProtocol)
+```
+
+```swift
+init(_ nameKey: LocalizedStringKey)
+```
+
 #### Discussion
 
 Extension AccessibilityActionCategory { static let table = AccessibilityActionCategory(“Table Options”) }
 
 var body: some View { TableCellView() .accessibilityActions(category: .table) { ForEach(tableCellActions) { action in Button(action.title) { action() } } } }
 
-- Parameter: - nameResource: The name for the category of the accessibility actions.
+- Parameter:
+
+  - nameResource: The name for the category of the accessibility actions.
 
 
 ---

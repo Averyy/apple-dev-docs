@@ -1,6 +1,7 @@
 # Accessible descriptions
 
-**Framework**: SwiftUI
+**Framework**: SwiftUI  
+**Role**: API Collection
 
 Describe interface elements to help people understand what they represent.
 
@@ -8,82 +9,83 @@ Describe interface elements to help people understand what they represent.
 
 SwiftUI can often infer some information about your user interface elements, but you can use accessibility modifiers to provide even more information for users that need it.
 
-![None](/images/com.apple.SwiftUI/accessible-descriptions-hero@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/accessible-descriptions-hero@2x.png)
 
-For design guidance, see [`Accessibility`](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the Accessibility section of the Human Interface Guidelines.
+For design guidance, see [Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) in the Accessibility section of the Human Interface Guidelines.
 
 ## Topics
 
 ### Applying labels
-- [func accessibilityLabel(_:)](view/accessibilitylabel(_:).md)
+- [func accessibilityLabel(_:)](./view/accessibilitylabel%28_%29.md)
   Adds a label to the view that describes its contents.
-- [func accessibilityLabel(_:isEnabled:)](view/accessibilitylabel(_:isenabled:).md)
+- [func accessibilityLabel(_:isEnabled:)](./view/accessibilitylabel%28_,isenabled%29.md)
   Adds a label to the view that describes its contents.
-- [func accessibilityLabel<V>(content: (PlaceholderContentView<Self>) -> V) -> some View](view/accessibilitylabel(content:).md)
+- [func accessibilityLabel<V>(content: (PlaceholderContentView<Self>) -> V) -> some View](./view/accessibilitylabel%28content%29.md)
   Adds a label to the view that describes its contents.
-- [func accessibilityInputLabels(_:)](view/accessibilityinputlabels(_:).md)
+- [func accessibilityInputLabels(_:)](./view/accessibilityinputlabels%28_%29.md)
   Sets alternate input labels with which users identify a view.
-- [func accessibilityInputLabels(_:isEnabled:)](view/accessibilityinputlabels(_:isenabled:).md)
+- [func accessibilityInputLabels(_:isEnabled:)](./view/accessibilityinputlabels%28_,isenabled%29.md)
   Sets alternate input labels with which users identify a view.
-- [func accessibilityLabeledPair<ID>(role: AccessibilityLabeledPairRole, id: ID, in: Namespace.ID) -> some View](view/accessibilitylabeledpair(role:id:in:).md)
+- [func accessibilityLabeledPair<ID>(role: AccessibilityLabeledPairRole, id: ID, in: Namespace.ID) -> some View](./view/accessibilitylabeledpair%28role,id,in%29.md)
   Pairs an accessibility element representing a label with the element for the matching content.
-- [enum AccessibilityLabeledPairRole](accessibilitylabeledpairrole.md)
+- [enum AccessibilityLabeledPairRole](./accessibilitylabeledpairrole.md)
   The role of an accessibility element in a label / content pair.
 ### Describing values
-- [func accessibilityValue(_:)](view/accessibilityvalue(_:).md)
+- [func accessibilityValue(_:)](./view/accessibilityvalue%28_%29.md)
   Adds a textual description of the value that the view contains.
-- [func accessibilityValue(_:isEnabled:)](view/accessibilityvalue(_:isenabled:).md)
+- [func accessibilityValue(_:isEnabled:)](./view/accessibilityvalue%28_,isenabled%29.md)
   Adds a textual description of the value that the view contains.
 ### Describing content
-- [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilitytextcontenttype(_:).md)
+- [func accessibilityTextContentType(AccessibilityTextContentType) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilitytextcontenttype%28_%29.md)
   Sets an accessibility text content type.
-- [func accessibilityHeading(AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityheading(_:).md)
+- [func accessibilityHeading(AccessibilityHeadingLevel) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityheading%28_%29.md)
   Sets the accessibility level of this heading.
-- [enum AccessibilityHeadingLevel](accessibilityheadinglevel.md)
+- [enum AccessibilityHeadingLevel](./accessibilityheadinglevel.md)
   The hierarchy of a heading in relation to other headings.
-- [struct AccessibilityTextContentType](accessibilitytextcontenttype.md)
+- [struct AccessibilityTextContentType](./accessibilitytextcontenttype.md)
   Textual context that assistive technologies can use to improve the presentation of spoken text.
 ### Describing charts
-- [func accessibilityChartDescriptor<R>(R) -> some View](view/accessibilitychartdescriptor(_:).md)
+- [func accessibilityChartDescriptor<R>(R) -> some View](./view/accessibilitychartdescriptor%28_%29.md)
   Adds a descriptor to a View that represents a chart to make the chart’s contents accessible to all users.
-- [protocol AXChartDescriptorRepresentable](axchartdescriptorrepresentable.md)
+- [protocol AXChartDescriptorRepresentable](./axchartdescriptorrepresentable.md)
   A type to generate an `AXChartDescriptor` object that you use to provide information about a chart and its data for an accessible experience in VoiceOver or other assistive technologies.
 ### Adding custom descriptions
-- [func accessibilityCustomContent(_:_:importance:)](view/accessibilitycustomcontent(_:_:importance:).md)
+- [func accessibilityCustomContent(_:_:importance:)](./view/accessibilitycustomcontent%28_,_,importance%29.md)
   Add additional accessibility information to the view.
-- [struct AccessibilityCustomContentKey](accessibilitycustomcontentkey.md)
+- [struct AccessibilityCustomContentKey](./accessibilitycustomcontentkey.md)
   Key used to specify the identifier and label associated with an entry of additional accessibility information.
 ### Assigning traits to content
-- [func accessibilityAddTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityaddtraits(_:).md)
+- [func accessibilityAddTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityaddtraits%28_%29.md)
   Adds the given traits to the view.
-- [func accessibilityRemoveTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityremovetraits(_:).md)
+- [func accessibilityRemoveTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](./view/accessibilityremovetraits%28_%29.md)
   Removes the given traits from this view.
-- [struct AccessibilityTraits](accessibilitytraits.md)
+- [struct AccessibilityTraits](./accessibilitytraits.md)
   A set of accessibility traits that describe how an element behaves.
 ### Offering hints
-- [func accessibilityHint(_:)](view/accessibilityhint(_:).md)
+- [func accessibilityHint(_:)](./view/accessibilityhint%28_%29.md)
   Communicates to the user what happens after performing the view’s action.
-- [func accessibilityHint(_:isEnabled:)](view/accessibilityhint(_:isenabled:).md)
+- [func accessibilityHint(_:isEnabled:)](./view/accessibilityhint%28_,isenabled%29.md)
   Communicates to the user what happens after performing the view’s action.
 ### Configuring VoiceOver
-- [func speechAdjustedPitch(Double) -> some View](view/speechadjustedpitch(_:).md)
+- [func speechAdjustedPitch(Double) -> some View](./view/speechadjustedpitch%28_%29.md)
   Raises or lowers the pitch of spoken text.
-- [func speechAlwaysIncludesPunctuation(Bool) -> some View](view/speechalwaysincludespunctuation(_:).md)
+- [func speechAlwaysIncludesPunctuation(Bool) -> some View](./view/speechalwaysincludespunctuation%28_%29.md)
   Sets whether VoiceOver should always speak all punctuation in the text view.
-- [func speechAnnouncementsQueued(Bool) -> some View](view/speechannouncementsqueued(_:).md)
+- [func speechAnnouncementsQueued(Bool) -> some View](./view/speechannouncementsqueued%28_%29.md)
   Controls whether to queue pending announcements behind existing speech rather than interrupting speech in progress.
-- [func speechSpellsOutCharacters(Bool) -> some View](view/speechspellsoutcharacters(_:).md)
+- [func speechSpellsOutCharacters(Bool) -> some View](./view/speechspellsoutcharacters%28_%29.md)
   Sets whether VoiceOver should speak the contents of the text view character by character.
 
 ## See Also
 
-- [Accessibility fundamentals](accessibility-fundamentals.md)
+### Accessibility
+- [Accessibility fundamentals](./accessibility-fundamentals.md)
   Make your SwiftUI apps accessible to everyone, including people with disabilities.
-- [Accessible appearance](accessible-appearance.md)
+- [Accessible appearance](./accessible-appearance.md)
   Enhance the legibility of content in your app’s interface.
-- [Accessible controls](accessible-controls.md)
+- [Accessible controls](./accessible-controls.md)
   Improve access to actions that your app can undertake.
-- [Accessible navigation](accessible-navigation.md)
+- [Accessible navigation](./accessible-navigation.md)
   Enable users to navigate to specific user interface elements using rotors.
 
 

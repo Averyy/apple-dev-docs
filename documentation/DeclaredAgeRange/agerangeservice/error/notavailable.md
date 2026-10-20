@@ -1,7 +1,8 @@
 # AgeRangeService.Error.notAvailable
 
 **Framework**: Declared Age Range  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the system was unable to share the person’s age range.
 
@@ -23,7 +24,8 @@ You receive this error when the system prompts a person and they decide not to s
 
 ## See Also
 
-- [AgeRangeService.Error.invalidRequest](agerangeservice/error/invalidrequest.md)
+### Interpreting error responses
+- [AgeRangeService.Error.invalidRequest](./invalidrequest.md)
   Indicates your request contains invalid parameters or configuration.
 
 

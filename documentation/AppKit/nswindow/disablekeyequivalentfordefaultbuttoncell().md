@@ -1,12 +1,13 @@
 # disableKeyEquivalentForDefaultButtonCell()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disables the default button cell’s key equivalent, so it doesn’t perform a click when the user presses Return (or Enter).
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Disables the default button cell’s key equivalent, so it doesn’t perform a c
 func disableKeyEquivalentForDefaultButtonCell()
 ```
 
+```objc
+- (void) disableKeyEquivalentForDefaultButtonCell;
+```
+
 ## See Also
 
-- [var defaultButtonCell: NSButtonCell?](nswindow/defaultbuttoncell.md)
+### Managing Default Buttons
+- [var defaultButtonCell: NSButtonCell?](./defaultbuttoncell.md)
   The button cell that performs as if clicked when the window receives a Return (or Enter) key event.
-- [func enableKeyEquivalentForDefaultButtonCell()](nswindow/enablekeyequivalentfordefaultbuttoncell.md)
+- [func enableKeyEquivalentForDefaultButtonCell()](./enablekeyequivalentfordefaultbuttoncell%28%29.md)
   Reenables the default button cell’s key equivalent, so it performs a click when the user presses Return (or Enter).
 
 

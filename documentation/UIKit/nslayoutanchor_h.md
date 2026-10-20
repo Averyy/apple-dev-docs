@@ -1,15 +1,16 @@
 # NSLAYOUTANCHOR_H
 
 **Framework**: UIKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -17,13 +18,18 @@
 var NSLAYOUTANCHOR_H: Int32 { get }
 ```
 
+```c
+#define NSLAYOUTANCHOR_H
+```
+
 ## See Also
 
-- [class NSLayoutAnchor](nslayoutanchor.md)
+### Anchors
+- [class NSLayoutAnchor](./nslayoutanchor.md)
   A factory class for creating layout constraint objects using a fluent API.
-- [class NSLayoutXAxisAnchor](nslayoutxaxisanchor.md)
+- [class NSLayoutXAxisAnchor](./nslayoutxaxisanchor.md)
   A factory class for creating horizontal layout constraint objects using a fluent API.
-- [class NSLayoutYAxisAnchor](nslayoutyaxisanchor.md)
+- [class NSLayoutYAxisAnchor](./nslayoutyaxisanchor.md)
   A factory class for creating vertical layout constraint objects using a fluent API.
 
 

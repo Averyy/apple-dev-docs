@@ -2,17 +2,24 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Adds a barrier, which forces any texture read operations to wait until write operations to the same texture finish.
 
 **Availability**:
-- macOS 10.11+
+- macOS 10.11+ - Deprecated in 10.14
+
+> **Deprecated**: Call [`memoryBarrier(scope:after:before:)`](./memorybarrier%28scope,after,before%29.md) instead.
 
 ## Declaration
 
 ```swift
 func textureBarrier()
+```
+
+```objc
+- (void) textureBarrier;
 ```
 
 #### Discussion
@@ -23,21 +30,22 @@ A barrier let’s your app safely write to and then correctly read from the same
 
 ## See Also
 
-- [func useResource(any MTLResource, usage: MTLResourceUsage)](mtlrendercommandencoder/useresource(_:usage:).md)
+### Deprecated methods
+- [func useResource(any MTLResource, usage: MTLResourceUsage)](./useresource%28_,usage%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to a resource.
-- [func use(any MTLResource, usage: MTLResourceUsage, stages: MTLRenderStages)](mtlrendercommandencoder/use(_:usage:stages:).md)
+- [func use(any MTLResource, usage: MTLResourceUsage, stages: MTLRenderStages)](./use%28_,usage,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to a resource.
-- [func useResources([any MTLResource], usage: MTLResourceUsage)](mtlrendercommandencoder/useresources(_:usage:).md)
+- [func useResources([any MTLResource], usage: MTLResourceUsage)](./useresources%28_,usage%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to multiple resources.
-- [func use(UnsafePointer<any MTLResource>, count: Int, usage: MTLResourceUsage, stages: MTLRenderStages)](mtlrendercommandencoder/use(_:count:usage:stages:).md)
+- [func use(UnsafePointer<any MTLResource>, count: Int, usage: MTLResourceUsage, stages: MTLRenderStages)](./use%28_,count,usage,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to multiple resources.
-- [func useHeap(any MTLHeap)](mtlrendercommandencoder/useheap(_:).md)
+- [func useHeap(any MTLHeap)](./useheap%28_%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from a heap.
-- [func use(any MTLHeap, stages: MTLRenderStages)](mtlrendercommandencoder/use(_:stages:).md)
+- [func use(any MTLHeap, stages: MTLRenderStages)](./use%28_,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from a heap.
-- [func useHeaps([any MTLHeap])](mtlrendercommandencoder/useheaps(_:).md)
+- [func useHeaps([any MTLHeap])](./useheaps%28_%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
-- [func use(UnsafePointer<any MTLHeap>, count: Int, stages: MTLRenderStages)](mtlrendercommandencoder/use(_:count:stages:).md)
+- [func use(UnsafePointer<any MTLHeap>, count: Int, stages: MTLRenderStages)](./use%28_,count,stages%29.md)
   Ensures the shaders in the render pass’s subsequent draw commands have access to the resources you allocate from multiple heaps.
 
 

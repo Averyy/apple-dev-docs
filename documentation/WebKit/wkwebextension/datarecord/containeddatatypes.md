@@ -1,7 +1,8 @@
 # containedDataTypes
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of data types contained in this data record.
 
@@ -16,6 +17,10 @@ The set of data types contained in this data record.
 
 ```swift
 var containedDataTypes: Set<WKWebExtension.DataType> { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSSet<NSString *> * containedDataTypes;
 ```
 
 

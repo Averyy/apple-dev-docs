@@ -1,7 +1,8 @@
 # image
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The loaded image, if any.
 
@@ -22,7 +23,7 @@ var image: Image? { get }
 
 #### Discussion
 
-If this value isn’t `nil`, the image load operation has finished, and you can use the image to update the view. You can use the image directly, or you can modify it in some way. For example, you can add a [`resizable(capInsets:resizingMode:)`](image/resizable(capinsets:resizingmode:).md) modifier to make the image resizable.
+If this value isn’t `nil`, the image load operation has finished, and you can use the image to update the view. You can use the image directly, or you can modify it in some way. For example, you can add a [`resizable(capInsets:resizingMode:)`](../image/resizable%28capinsets,resizingmode%29.md) modifier to make the image resizable.
 
 
 ---

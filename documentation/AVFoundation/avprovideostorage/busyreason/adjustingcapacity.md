@@ -1,7 +1,8 @@
 # adjustingCapacity
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Pro Video Storage is being created or resized.
 
@@ -16,6 +17,10 @@ Pro Video Storage is being created or resized.
 
 ```swift
 static let adjustingCapacity: AVProVideoStorage.BusyReason
+```
+
+```c
+extern AVProVideoStorageBusyReason const AVProVideoStorageBusyReasonAdjustingCapacity;
 ```
 
 

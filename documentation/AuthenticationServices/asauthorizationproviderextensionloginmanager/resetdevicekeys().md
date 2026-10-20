@@ -1,7 +1,8 @@
 # resetDeviceKeys()
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 14.0+
@@ -12,11 +13,16 @@
 func resetDeviceKeys()
 ```
 
+```objc
+- (void) resetDeviceKeys;
+```
+
 ## See Also
 
-- [func decryptionKeysNeedRepair()](asauthorizationproviderextensionloginmanager/decryptionkeysneedrepair.md)
-- [func resetUserSecureEnclaveKey()](asauthorizationproviderextensionloginmanager/resetusersecureenclavekey.md)
-- [func saveUserLoginConfiguration(ASAuthorizationProviderExtensionUserLoginConfiguration) throws](asauthorizationproviderextensionloginmanager/saveuserloginconfiguration(_:).md)
+### Instance Methods
+- [func decryptionKeysNeedRepair()](./decryptionkeysneedrepair%28%29.md)
+- [func resetUserSecureEnclaveKey()](./resetusersecureenclavekey%28%29.md)
+- [func saveUserLoginConfiguration(ASAuthorizationProviderExtensionUserLoginConfiguration) throws](./saveuserloginconfiguration%28_%29.md)
 
 
 ---

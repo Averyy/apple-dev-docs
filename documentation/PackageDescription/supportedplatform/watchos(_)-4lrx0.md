@@ -1,7 +1,8 @@
 # watchOS(_:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Configure the minimum deployment target version for the watchOS platform using a custom version string.
 
@@ -19,7 +20,7 @@ A `SupportedPlatform` instance.
 
 The version string must be a series of two or three dot-separated integers, such as `2.0` or `2.0.1`.
 
-> **Note**: First available in PackageDescription 5.0
+> **Since**: First available in PackageDescription 5.0
 
 ## Parameters
 
@@ -27,11 +28,12 @@ The version string must be a series of two or three dot-separated integers, such
 
 ## See Also
 
-- [static func watchOS(SupportedPlatform.WatchOSVersion) -> SupportedPlatform](supportedplatform/watchos(_:)-t998.md)
+### Supporting watchOS
+- [static func watchOS(SupportedPlatform.WatchOSVersion) -> SupportedPlatform](./watchos%28_%29-t998.md)
   Configure the minimum deployment target version for the watchOS platform.
-- [static let watchOS: Platform](platform/watchos.md)
+- [static let watchOS: Platform](../platform/watchos.md)
   The watchOS platform.
-- [SupportedPlatform.WatchOSVersion](supportedplatform/watchosversion.md)
+- [SupportedPlatform.WatchOSVersion](./watchosversion.md)
   The supported watchOS version.
 
 

@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: Apple CryptoKit  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 Determines whether two digests are equal.
 
@@ -31,7 +32,8 @@ A Boolean value set to `true` if the two digests are equal.
 
 ## See Also
 
-- [static func == <D>(Self, D) -> Bool](digest/==(_:_:)-7yz3z.md)
+### Comparing digests
+- [static func == <D>(Self, D) -> Bool](./eqeq%28_,_%29-7yz3z.md)
   Determines whether a digest is equivalent to a collection of contiguous bytes.
 
 

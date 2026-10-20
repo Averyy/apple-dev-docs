@@ -1,32 +1,37 @@
 # DriverKit Family virtual HID
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 An entitlement that lets an app create and manage virtual HID devices.
 
 **Availability**:
 - macOS 10.15+
 
+## Details
+
+- **Name**: `com.apple.developer.driverkit.family.hid.virtual.device`
+- **Type**: boolean
 
 
-**Type**: boolean
 
 **Default**: `true`
 
 #### Discussion
 
-To request this entitlement, [`fill out the request form`](https://developer.apple.comhttps://developer.apple.com/contact/request/system-extension/).
+To request this entitlement, [fill out the request form](https://developer.apple.com/contact/request/system-extension/).
 
 ## See Also
 
-- [com.apple.developer.driverkit.family.hid.device](entitlements/com.apple.developer.driverkit.family.hid.device.md)
+### Human Interface Device Drivers
+- [com.apple.developer.driverkit.family.hid.device](./com.apple.developer.driverkit.family.hid.device.md)
   A Boolean value that indicates whether the driver provides a HID-related service to the system.
-- [com.apple.developer.driverkit.family.hid.eventservice](entitlements/com.apple.developer.driverkit.family.hid.eventservice.md)
+- [com.apple.developer.driverkit.family.hid.eventservice](./com.apple.developer.driverkit.family.hid.eventservice.md)
   A Boolean value that indicates whether the driver provides a HID-related event service to the system.
-- [com.apple.developer.driverkit.transport.hid](entitlements/com.apple.developer.driverkit.transport.hid.md)
+- [com.apple.developer.driverkit.transport.hid](./com.apple.developer.driverkit.transport.hid.md)
   A Boolean value that indicates whether the driver communicates with human interface devices.
-- [com.apple.developer.hid.virtual.device](entitlements/com.apple.developer.hid.virtual.device.md)
+- [com.apple.developer.hid.virtual.device](./com.apple.developer.hid.virtual.device.md)
   A Boolean value that indicates whether the driver creates a virtual HID device.
 
 

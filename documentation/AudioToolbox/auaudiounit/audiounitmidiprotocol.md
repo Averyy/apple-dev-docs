@@ -1,7 +1,8 @@
 # audioUnitMIDIProtocol
 
 **Framework**: Audio Toolbox  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 15.0+
@@ -17,12 +18,25 @@
 var audioUnitMIDIProtocol: MIDIProtocolID { get }
 ```
 
+*iOS, iPadOS, Mac Catalyst, tvOS, visionOS*
+
+```objc
+@property (nonatomic, readonly) MIDIProtocolID AudioUnitMIDIProtocol;
+```
+
+*macOS*
+
+```objc
+@property (atomic, readonly) MIDIProtocolID AudioUnitMIDIProtocol;
+```
+
 ## See Also
 
-- [var hostMIDIProtocol: MIDIProtocolID](auaudiounit/hostmidiprotocol.md)
-- [var midiOutputEventListBlock: AUMIDIEventListBlock?](auaudiounit/midioutputeventlistblock.md)
-- [var migrateFromPlugin: [Any]](auaudiounit/migratefromplugin.md)
-- [var scheduleMIDIEventListBlock: AUMIDIEventListBlock?](auaudiounit/schedulemidieventlistblock.md)
+### Instance properties
+- [var hostMIDIProtocol: MIDIProtocolID](./hostmidiprotocol.md)
+- [var midiOutputEventListBlock: AUMIDIEventListBlock?](./midioutputeventlistblock.md)
+- [var migrateFromPlugin: [Any]](./migratefromplugin.md)
+- [var scheduleMIDIEventListBlock: AUMIDIEventListBlock?](./schedulemidieventlistblock.md)
 
 
 ---

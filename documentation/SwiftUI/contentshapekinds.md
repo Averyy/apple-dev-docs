@@ -1,7 +1,8 @@
 # ContentShapeKinds
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A kind for the content shape of a view.
 
@@ -27,40 +28,41 @@ The kind is used by the system to influence various effects, hit-testing, and mo
 ## Topics
 
 ### Getting shape kinds
-- [static let interaction: ContentShapeKinds](contentshapekinds/interaction.md)
+- [static let interaction: ContentShapeKinds](./contentshapekinds/interaction.md)
   The kind for hit-testing and accessibility.
-- [static let dragPreview: ContentShapeKinds](contentshapekinds/dragpreview.md)
+- [static let dragPreview: ContentShapeKinds](./contentshapekinds/dragpreview.md)
   The kind for drag and drop previews.
-- [static let contextMenuPreview: ContentShapeKinds](contentshapekinds/contextmenupreview.md)
+- [static let contextMenuPreview: ContentShapeKinds](./contentshapekinds/contextmenupreview.md)
   The kind for context menu previews.
-- [static let focusEffect: ContentShapeKinds](contentshapekinds/focuseffect.md)
+- [static let focusEffect: ContentShapeKinds](./contentshapekinds/focuseffect.md)
   The kind for the focus effect.
-- [static let hoverEffect: ContentShapeKinds](contentshapekinds/hovereffect.md)
+- [static let hoverEffect: ContentShapeKinds](./contentshapekinds/hovereffect.md)
   The kind for hover effects.
-- [static let accessibility: ContentShapeKinds](contentshapekinds/accessibility.md)
+- [static let accessibility: ContentShapeKinds](./contentshapekinds/accessibility.md)
   The kind for accessibility visuals and sorting.
 ### Creating a set of options
-- [init(rawValue: Int)](contentshapekinds/init(rawvalue:).md)
+- [init(rawValue: Int)](./contentshapekinds/init%28rawvalue%29.md)
   Creates a content shape kind.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [func allowsTightening(Bool) -> some View](view/allowstightening(_:).md)
+### Controlling hit testing
+- [func allowsTightening(Bool) -> some View](./view/allowstightening%28_%29.md)
   Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
-- [func contentShape<S>(S, eoFill: Bool) -> some View](view/contentshape(_:eofill:).md)
+- [func contentShape<S>(S, eoFill: Bool) -> some View](./view/contentshape%28_,eofill%29.md)
   Defines the content shape for hit testing.
-- [func contentShape<S>(ContentShapeKinds, S, eoFill: Bool) -> some View](view/contentshape(_:_:eofill:).md)
+- [func contentShape<S>(ContentShapeKinds, S, eoFill: Bool) -> some View](./view/contentshape%28_,_,eofill%29.md)
   Sets the content shape for this view.
 
 

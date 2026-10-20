@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Indicates when the tab sidebar is available to be displayed in the current context. When available, the sidebar is either visible, or can become visible depending on `isHidden`. Use this property to gate behaviors or UI that is dependent on the availability of the sidebar (like child tabs, or landing pages for groups).
 
@@ -15,6 +16,10 @@ Indicates when the tab sidebar is available to be displayed in the current conte
 
 ```swift
 var isAvailable: Bool { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) BOOL isAvailable;
 ```
 
 #### Discussion

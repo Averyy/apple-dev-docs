@@ -1,7 +1,8 @@
 # availability
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value that indicates the current state of Rosetta’s availability.
 
@@ -14,17 +15,22 @@ A value that indicates the current state of Rosetta’s availability.
 class var availability: VZLinuxRosettaAvailability { get }
 ```
 
+```objc
+@property (class, readonly) VZLinuxRosettaAvailability availability;
+```
+
 ## Mentions
 
-- [Running Intel Binaries in Linux VMs](running-intel-binaries-in-linux-vms.md)
+- [Running Intel Binaries in Linux VMs](../running-intel-binaries-in-linux-vms.md)
 
 #### Discussion
 
-The value is one of the possible [`VZLinuxRosettaAvailability`](vzlinuxrosettaavailability.md) values.
+The value is one of the possible [`VZLinuxRosettaAvailability`](../vzlinuxrosettaavailability.md) values.
 
 ## See Also
 
-- [enum VZLinuxRosettaAvailability](vzlinuxrosettaavailability.md)
+### Checking Rosetta availability
+- [enum VZLinuxRosettaAvailability](../vzlinuxrosettaavailability.md)
   Constants that describe the availability and installation status of Rosetta.
 
 

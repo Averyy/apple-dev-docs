@@ -1,7 +1,8 @@
 # init(columnName:rowIndex:encodingError:)
 
 **Framework**: TabularData  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a column encoding error.
 

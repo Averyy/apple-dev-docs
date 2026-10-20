@@ -1,10 +1,11 @@
 # kNoScansEnabled
 
 **Framework**: IOBluetooth  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -12,11 +13,16 @@
 var kNoScansEnabled: BluetoothHCIPageScanEnableStates { get }
 ```
 
+```c
+kNoScansEnabled
+```
+
 ## See Also
 
-- [var kInquiryScanDisabledPageScanEnabled: BluetoothHCIPageScanEnableStates](kinquiryscandisabledpagescanenabled.md)
-- [var kInquiryScanEnabledPageScanDisabled: BluetoothHCIPageScanEnableStates](kinquiryscanenabledpagescandisabled.md)
-- [var kInquiryScanEnabledPageScanEnabled: BluetoothHCIPageScanEnableStates](kinquiryscanenabledpagescanenabled.md)
+### Constants
+- [var kInquiryScanDisabledPageScanEnabled: BluetoothHCIPageScanEnableStates](./kinquiryscandisabledpagescanenabled.md)
+- [var kInquiryScanEnabledPageScanDisabled: BluetoothHCIPageScanEnableStates](./kinquiryscanenabledpagescandisabled.md)
+- [var kInquiryScanEnabledPageScanEnabled: BluetoothHCIPageScanEnableStates](./kinquiryscanenabledpagescanenabled.md)
 
 
 ---

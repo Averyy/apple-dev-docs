@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Applies the system’s default effect when selected.
 
@@ -24,9 +25,10 @@ When using un-tinted SF Symbols or template images, the current tint color is ap
 
 ## See Also
 
-- [static let custom: PaletteSelectionEffect](paletteselectioneffect/custom.md)
+### Getting palette selection effects
+- [static let custom: PaletteSelectionEffect](./custom.md)
   Does not apply any system effect when selected.
-- [static func symbolVariant(SymbolVariants) -> PaletteSelectionEffect](paletteselectioneffect/symbolvariant(_:).md)
+- [static func symbolVariant(SymbolVariants) -> PaletteSelectionEffect](./symbolvariant%28_%29.md)
   Applies the specified symbol variant when selected.
 
 

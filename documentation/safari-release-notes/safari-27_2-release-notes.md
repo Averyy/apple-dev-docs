@@ -1,6 +1,7 @@
 # Safari 27.2 Beta Release Notes
 
-**Framework**: Safari Release Notes
+**Framework**: Safari Release Notes  
+**Role**: Article
 
 Released October 13, 2026 — 27.2 beta (20625.2.8)
 
@@ -22,7 +23,7 @@ Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2
 
 - Fixed `animation-range-start` and `animation-range-end` resolving incorrectly when `zoom` is applied, including when the value is inherited from an element with a different zoom factor. (185760120)
 
-##### Css
+##### CSS
 
 ###### Resolved Issues
 
@@ -43,13 +44,13 @@ Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2
 
 - Fixed: Switched default `content` for `appearance: base-select` `<select>` `::picker-icon` to render with a glyph that does not require negative margins to align correctly.  (187411081)
 
-##### Html
+##### HTML
 
 ###### Resolved Issues
 
 - Fixed the window `load` event never being dispatched when a `readystatechange` handler starts a new load. (186475302)
 
-##### Javascript
+##### JavaScript
 
 ###### Resolved Issues
 
@@ -71,19 +72,19 @@ Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2
 
 - Fixed cookies set by a top-level navigation’s own response being capped to a seven day lifetime when the site’s hostname is CNAMEd to a different registrable domain. (183787115)
 
-##### Svg
+##### SVG
 
 ###### Resolved Issues
 
 - Fixed dynamic changes to a `<foreignObject>` element’s `x` and `y` values having no effect. (184273832)
 
-##### Safari Mcp
+##### Safari MCP
 
 ###### Resolved Issues
 
 - Fixed Safari taking keyboard focus from other apps when creating tabs or capturing screenshots under Safari MCP control.  (182558329)
 
-##### Web Api
+##### Web API
 
 ###### Resolved Issues
 
@@ -95,13 +96,13 @@ Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2
 
 - Fixed a significant delay before web extension content is injected when Safari is cold launched. (185268822)
 
-##### Webgpu
+##### WebGPU
 
 ###### Resolved Issues
 
 - Fixed a severe frame rate drop when calling `executeBundles()` with render bundles that contain `drawIndirect()` or `drawIndexedIndirect()`. (186099290)
 
-##### Webrtc
+##### WebRTC
 
 ###### Resolved Issues
 
@@ -109,7 +110,8 @@ Safari 27.2 beta is available for iOS 27.2 beta, iPadOS 27.2 beta, visionOS 27.2
 
 ## See Also
 
-- [Safari 27 Release Notes](safari-27-release-notes.md)
+### Version 27
+- [Safari 27 Release Notes](./safari-27-release-notes.md)
   Released September 14, 2026 — 27.0 (20625.1.29)
 
 

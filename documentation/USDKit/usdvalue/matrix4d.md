@@ -1,7 +1,8 @@
 # USDValue.Matrix4d
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A 4x4 matrix of double-precision floating-point values.
 
@@ -23,39 +24,39 @@ struct Matrix4d
 ## Topics
 
 ### Initializers
-- [init(ProjectiveTransform3D)](usdvalue/matrix4d/init(_:)-6b27q.md)
+- [init(ProjectiveTransform3D)](./matrix4d/init%28_%29-6b27q.md)
   Creates a matrix from a Spatial projective transform (double-precision).
-- [init(ProjectiveTransform3DFloat)](usdvalue/matrix4d/init(_:)-9y0w7.md)
+- [init(ProjectiveTransform3DFloat)](./matrix4d/init%28_%29-9y0w7.md)
   Creates a matrix from a Spatial projective transform (single-precision).
-- [init(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double)](usdvalue/matrix4d/init(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:).md)
+- [init(Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double, Double)](./matrix4d/init%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md)
   Creates a matrix from individual element values in row-major order.
-- [init(diagonal: Double)](usdvalue/matrix4d/init(diagonal:).md)
+- [init(diagonal: Double)](./matrix4d/init%28diagonal%29.md)
   Creates a diagonal matrix with `s` on the diagonal and zeros elsewhere.
 ### Instance Properties
-- [var projectiveTransform: ProjectiveTransform3D](usdvalue/matrix4d/projectivetransform.md)
+- [var projectiveTransform: ProjectiveTransform3D](./matrix4d/projectivetransform.md)
   The matrix as a Spatial projective transform.
 ### Subscripts
-- [subscript(Int) -> USDValue.Matrix4d.VectorType](usdvalue/matrix4d/subscript(_:).md)
+- [subscript(Int) -> USDValue.Matrix4d.VectorType](./matrix4d/subscript%28_%29.md)
   Accesses the row at the specified index.
-- [subscript(column _: Int) -> USDValue.Matrix4d.VectorType](usdvalue/matrix4d/subscript(column:).md)
+- [subscript(column _: Int) -> USDValue.Matrix4d.VectorType](./matrix4d/subscript%28column%29.md)
   Accesses the column at the specified index.
 ### Type Aliases
-- [USDValue.Matrix4d.VectorType](usdvalue/matrix4d/vectortype.md)
+- [USDValue.Matrix4d.VectorType](./matrix4d/vectortype.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [USDPrim.Attribute.Value](usdprim/attribute/value.md)
-- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
-- [USDValueProtocol](usdvalueprotocol.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [CustomStringConvertible](../../Swift/customstringconvertible.md)
+- [Equatable](../../Swift/equatable.md)
+- [Escapable](../../Swift/escapable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
+- [USDPrim.Attribute.Value](../usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](../usdstage/object/metadatavalue.md)
+- [USDValueProtocol](../usdvalueprotocol.md)
 
 
 ---

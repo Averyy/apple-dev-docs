@@ -1,7 +1,8 @@
 # viewControllers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of the root view controllers displayed by the tab bar interface.
 
@@ -9,13 +10,17 @@ An array of the root view controllers displayed by the tab bar interface.
 - iOS 2.0+
 - iPadOS 2.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 var viewControllers: [UIViewController]? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSArray<__kindof UIViewController *> * viewControllers;
 ```
 
 #### Discussion
@@ -26,15 +31,16 @@ The default value of this property is `nil`. When configuring a tab bar controll
 
 If you change the value of this property at runtime, the tab bar controller removes all of the old view controllers before installing the new ones. The tab bar items for the new view controllers are displayed immediately and are not animated into position. When changing the view controllers, the tab bar controller remembers the view controller object that was previously selected and attempts to reselect it. If the selected view controller is no longer present, it attempts to select the view controller at the same index in the array as the previous selection. If that index is invalid, it selects the view controller at index 0.
 
-Setting this property also sets the [`customizableViewControllers`](uitabbarcontroller/customizableviewcontrollers.md) property to the same set of view controllers.
+Setting this property also sets the [`customizableViewControllers`](./customizableviewcontrollers.md) property to the same set of view controllers.
 
 ## See Also
 
-- [func setViewControllers([UIViewController]?, animated: Bool)](uitabbarcontroller/setviewcontrollers(_:animated:).md)
+### Managing the view controllers
+- [func setViewControllers([UIViewController]?, animated: Bool)](./setviewcontrollers%28_,animated%29.md)
   Sets the root view controllers of the tab bar controller.
-- [var customizableViewControllers: [UIViewController]?](uitabbarcontroller/customizableviewcontrollers.md)
+- [var customizableViewControllers: [UIViewController]?](./customizableviewcontrollers.md)
   The subset of view controllers managed by this tab bar controller that can be customized.
-- [var moreNavigationController: UINavigationController](uitabbarcontroller/morenavigationcontroller.md)
+- [var moreNavigationController: UINavigationController](./morenavigationcontroller.md)
   The view controller that manages the More navigation interface.
 
 

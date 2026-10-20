@@ -1,7 +1,8 @@
 # DNSServiceProtocol
 
 **Framework**: dnssd  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
 - iOS 10.0+
@@ -18,15 +19,20 @@
 typealias DNSServiceProtocol = UInt32
 ```
 
+```c
+typedef uint32_t DNSServiceProtocol;
+```
+
 #### Discussion
 
 Type declaration for DNS Service protocol.
 
 ## See Also
 
-- [typealias DNSServiceErrorType](dnsserviceerrortype.md)
-- [typealias DNSServiceFlags](dnsserviceflags.md)
-- [typealias TXTRecordRef](txtrecordref.md)
+### Data Types
+- [typealias DNSServiceErrorType](./dnsserviceerrortype.md)
+- [typealias DNSServiceFlags](./dnsserviceflags.md)
+- [typealias TXTRecordRef](./txtrecordref.md)
   Opaque internal data type that represents a DNS-SD TXT record.
 
 

@@ -2,12 +2,15 @@
 
 **Framework**: TVMLKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 An array of custom playback event properties.
 
 **Availability**:
-- tvOS 12.0+
+- tvOS 12.0+ - Deprecated in 18.0
+
+> **Deprecated**: Please use SwiftUI or UIKit
 
 ## Declaration
 
@@ -15,11 +18,16 @@ An array of custom playback event properties.
 var properties: [TVPlaybackEventProperty : Any]? { get }
 ```
 
+```objc
+@property (nonatomic, strong, readonly, nullable) NSDictionary<NSString *,id> * properties;
+```
+
 ## See Also
 
-- [func processReturnValue(value: JSValue, in: JSContext)](tvplaybackeventmarshaling/processreturnvalue(value:in:).md)
+### Processing Playback Events
+- [func processReturnValue(value: JSValue, in: JSContext)](./processreturnvalue%28value,in%29.md)
   Converts a JavaScript value into a value that is readable in Swift or Objective-C.
-- [struct TVPlaybackEventProperty](tvplaybackeventproperty.md)
+- [struct TVPlaybackEventProperty](../tvplaybackeventproperty.md)
   Extend this structure to create your own custom playback event properties.
 
 

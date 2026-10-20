@@ -1,7 +1,8 @@
 # CNContainerType.unassigned
 
 **Framework**: Contacts  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A container where the system hasn’t assigned the container type.
 
@@ -19,13 +20,18 @@ A container where the system hasn’t assigned the container type.
 case unassigned
 ```
 
+```c
+CNContainerTypeUnassigned
+```
+
 ## See Also
 
-- [CNContainerType.local](cncontainertype/local.md)
+### Constants
+- [CNContainerType.local](./local.md)
   A container for contacts only stored locally on the device.
-- [CNContainerType.exchange](cncontainertype/exchange.md)
+- [CNContainerType.exchange](./exchange.md)
   A container for contacts stored in an Exchange folder from an Exchange server.
-- [CNContainerType.cardDAV](cncontainertype/carddav.md)
+- [CNContainerType.cardDAV](./carddav.md)
   A container for contacts stored in an CardDAV server, such as iCloud.
 
 

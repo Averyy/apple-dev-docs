@@ -1,7 +1,8 @@
 # RegisterVppUserRequest
 
 **Framework**: Device Management  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The request for registering a user.
 
@@ -10,13 +11,13 @@ The request for registering a user.
 
 ## Declaration
 
-```swift
+```
 object RegisterVppUserRequest
 ```
 
 #### Discussion
 
-##### Clientuseridstr
+##### ClientUserIdStr
 
 The `clientUserIdStr` must be unique within the organization and can’t be changed after a user is registered. Don’t use an email address because a future user might reuse an email address. You can use the GUID of the user.
 
@@ -37,11 +38,12 @@ Additionally, if two user identifiers exist for a given `clientUserIdStr`, one a
 - `clientUserIdStr` (string) *(required)*: The identifier supplied by the client when registering a user. The identifier must be unique within the organization.
 - `email` (string): The user’s email address.
 - `managedAppleIDStr` (string): The Apple Account associated with the user. This ID’s organization must match the organization of the provided `sToken`.
-- `sToken` (string) *(required)*: The authentication token. For more information, see [`Authenticate with the web service`](managing-apps-and-books-through-web-services-legacy#Authenticate-with-the-web-service.md).
+- `sToken` (string) *(required)*: The authentication token. For more information, see [Authenticate with the web service](./managing-apps-and-books-through-web-services-legacy.md#Authenticate-with-the-web-service).
 
 ## See Also
 
-- [object RegisterVppUserResponse](registervppuserresponse.md)
+### Request and Response
+- [object RegisterVppUserResponse](./registervppuserresponse.md)
   The response from registering a user.
 
 

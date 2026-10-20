@@ -1,7 +1,8 @@
 # never
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The event repeats indefinitely
 

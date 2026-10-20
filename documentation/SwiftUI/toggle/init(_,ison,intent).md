@@ -1,7 +1,8 @@
 # init(_:isOn:intent:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a toggle performing an `AppIntent` and generates its label from a localized string key.
 
@@ -20,11 +21,25 @@ nonisolated
 init(_ titleKey: LocalizedStringKey, isOn: Bool, intent: some AppIntent)
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleResource: LocalizedStringResource, isOn: Bool, intent: some AppIntent)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, isOn: Bool, intent: some AppIntent) where S : StringProtocol
+```
+
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md). See `Text` for more information about localizing strings.
+This initializer creates a [`Text`](../text.md) view on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](../text/init%28_,tablename,bundle,comment%29.md). See `Text` for more information about localizing strings.
 
-To initialize a toggle with a string variable, use [`init(_:isOn:intent:)`](toggle/init(_:ison:intent:).md) instead.
+To initialize a toggle with a string variable, use [`init(_:isOn:intent:)`](./init%28_,ison,intent%29.md) instead.
 
 ## Parameters
 
@@ -34,7 +49,8 @@ To initialize a toggle with a string variable, use [`init(_:isOn:intent:)`](togg
 
 ## See Also
 
-- [init<I>(isOn: Bool, intent: I, label: () -> Label)](toggle/init(ison:intent:label:).md)
+### Creating a toggle for an App Intent
+- [init<I>(isOn: Bool, intent: I, label: () -> Label)](./init%28ison,intent,label%29.md)
   Creates a toggle performing an `AppIntent`.
 
 

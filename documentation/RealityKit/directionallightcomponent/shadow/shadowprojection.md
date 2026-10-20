@@ -1,7 +1,8 @@
 # shadowProjection
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Sets the shadow projection used for shadow map rendering
 
@@ -21,11 +22,12 @@ var shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType { ge
 
 ## See Also
 
-- [var depthBias: Float](directionallightcomponent/shadow/depthbias.md)
+### Configuring the shadow
+- [var depthBias: Float](./depthbias.md)
   A constant value that RealityKit applies as a bias to its shadow calculations.
-- [var cullModeOverride: DirectionalLightComponent.Shadow.ShadowMapCullMode?](directionallightcomponent/shadow/cullmodeoverride.md)
+- [var cullModeOverride: DirectionalLightComponent.Shadow.ShadowMapCullMode?](./cullmodeoverride.md)
   The light’s culling mode for shadow map rendering.
-- [var maximumDistance: Float](directionallightcomponent/shadow/maximumdistance.md)
+- [var maximumDistance: Float](./maximumdistance.md)
   The maximum distance for the shadow.
 
 

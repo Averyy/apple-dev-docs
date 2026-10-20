@@ -1,7 +1,8 @@
 # init(host:port:using:)
 
 **Framework**: Network  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new connection to a host and port.
 
@@ -22,11 +23,12 @@ convenience init(host: NWEndpoint.Host, port: NWEndpoint.Port, using: NWParamete
 
 ## See Also
 
-- [init(to: NWEndpoint, using: NWParameters)](nwconnection/init(to:using:).md)
+### Creating Connections
+- [init(to: NWEndpoint, using: NWParameters)](./init%28to,using%29.md)
   Initializes a new connection to a remote endpoint.
-- [func start(queue: DispatchQueue)](nwconnection/start(queue:).md)
+- [func start(queue: DispatchQueue)](./start%28queue%29.md)
   Starts establishing a connection, and sets the queue on which to deliver all connection events.
-- [func restart()](nwconnection/restart.md)
+- [func restart()](./restart%28%29.md)
   Restarts a connection that is in the waiting state.
 
 

@@ -1,7 +1,8 @@
 # stylus
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A constant that represents events from a stylus.
 
@@ -12,6 +13,10 @@ A constant that represents events from a stylus.
 
 ```swift
 static var stylus: GCUIEventTypes { get }
+```
+
+```c
+GCUIEventTypeStylus
 ```
 
 

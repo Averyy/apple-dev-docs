@@ -1,7 +1,8 @@
 # errSessionSuccess
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The operation completed successfully.
 
@@ -18,6 +19,10 @@ The operation completed successfully.
 
 ```swift
 var errSessionSuccess: OSStatus { get }
+```
+
+```c
+errSessionSuccess
 ```
 
 #### Discussion

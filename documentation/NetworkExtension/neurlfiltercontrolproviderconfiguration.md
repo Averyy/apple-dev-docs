@@ -1,7 +1,8 @@
 # NEURLFilterControlProviderConfiguration
 
 **Framework**: Network Extension  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that defines app extension configurations for the URL Filter control provider app extension.
 
@@ -20,24 +21,25 @@ A class that defines app extension configurations for the URL Filter control pro
 
 #### Overview
 
-[`NEURLFilterControlProvider`](neurlfiltercontrolprovider.md) uses this class to conform to the [`ExtensionKit`](https://developer.apple.com/documentation/extensionkit) framework. Your extension doesn’t need to use this class directly.
+[`NEURLFilterControlProvider`](./neurlfiltercontrolprovider.md) uses this class to conform to the [ExtensionKit](../ExtensionKit/ExtensionKit.md) framework. Your extension doesn’t need to use this class directly.
 
 ## Relationships
 
 ### Inherits From
-- [NEAppExtensionConfiguration](neappextensionconfiguration.md)
+- [NEAppExtensionConfiguration](./neappextensionconfiguration.md)
 ### Conforms To
-- [AppExtensionConfiguration](../extensionfoundation/appextensionconfiguration.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppExtensionConfiguration](../ExtensionFoundation/appextensionconfiguration.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [class NEURLFilterManager](neurlfiltermanager.md)
+### URL filters
+- [class NEURLFilterManager](./neurlfiltermanager.md)
   A class you use to configure and control a URL filter.
-- [protocol NEURLFilterControlProvider](neurlfiltercontrolprovider.md)
+- [protocol NEURLFilterControlProvider](./neurlfiltercontrolprovider.md)
   A protocol that defines an object that’s responsible for fetching pre-filter data.
-- [class NEURLFilter](neurlfilter.md)
+- [class NEURLFilter](./neurlfilter.md)
   A class used to voluntarily validate URLs for apps that don’t use WebKit or the URL session API.
 
 

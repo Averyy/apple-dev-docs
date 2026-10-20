@@ -1,16 +1,17 @@
 # MIDIUInteger7
 
 **Framework**: Core MIDI  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -18,25 +19,30 @@
 typealias MIDIUInteger7 = UInt8
 ```
 
+```c
+typedef UInt8 MIDIUInteger7;
+```
+
 ## See Also
 
-- [typealias MIDICIDeviceID](midicideviceid.md)
-- [MIDICIDeviceManager.DictionaryKey](midicidevicemanager/dictionarykey.md)
-- [typealias MIDICIMUID](midicimuid.md)
-- [struct MIDICIPropertyExchangeRequestID](midicipropertyexchangerequestid.md)
-- [typealias MIDIEventVisitor](midieventvisitor.md)
-- [typealias MIDIUInteger14](midiuinteger14.md)
-- [typealias MIDIUInteger2](midiuinteger2.md)
-- [typealias MIDIUInteger28](midiuinteger28.md)
-- [typealias MIDIUInteger4](midiuinteger4.md)
-- [MIDIUMPEndpointManager.DictionaryKey](midiumpendpointmanager/dictionarykey.md)
-- [typealias MIDIUMPFunctionBlockID](midiumpfunctionblockid.md)
-- [typealias MIDIUMPGroupNumber](midiumpgroupnumber.md)
-- [typealias MIDICIDiscoveryResponseBlock](midicidiscoveryresponseblock.md)
+### Data Types
+- [typealias MIDICIDeviceID](./midicideviceid.md)
+- [MIDICIDeviceManager.DictionaryKey](./midicidevicemanager/dictionarykey.md)
+- [typealias MIDICIMUID](./midicimuid.md)
+- [struct MIDICIPropertyExchangeRequestID](./midicipropertyexchangerequestid.md)
+- [typealias MIDIEventVisitor](./midieventvisitor.md)
+- [typealias MIDIUInteger14](./midiuinteger14.md)
+- [typealias MIDIUInteger2](./midiuinteger2.md)
+- [typealias MIDIUInteger28](./midiuinteger28.md)
+- [typealias MIDIUInteger4](./midiuinteger4.md)
+- [MIDIUMPEndpointManager.DictionaryKey](./midiumpendpointmanager/dictionarykey.md)
+- [typealias MIDIUMPFunctionBlockID](./midiumpfunctionblockid.md)
+- [typealias MIDIUMPGroupNumber](./midiumpgroupnumber.md)
+- [typealias MIDICIDiscoveryResponseBlock](./midicidiscoveryresponseblock.md)
   A block the system calls when a MIDI-CI node discovery request completes.
-- [typealias MIDICISessionDisconnectBlock](midicisessiondisconnectblock.md)
+- [typealias MIDICISessionDisconnectBlock](./midicisessiondisconnectblock.md)
   A block the system calls when a MIDI-CI session disconnects.
-- [typealias MIDIChannelNumber](midichannelnumber.md)
+- [typealias MIDIChannelNumber](./midichannelnumber.md)
 
 
 ---

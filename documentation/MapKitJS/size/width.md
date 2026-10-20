@@ -1,7 +1,8 @@
 # width
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Interface Property
 
 The width value of the size structure.
 
@@ -10,7 +11,7 @@ The width value of the size structure.
 
 ## Declaration
 
-```swift
+```
 width: number;
 ```
 

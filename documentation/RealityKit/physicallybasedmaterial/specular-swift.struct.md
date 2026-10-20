@@ -1,7 +1,8 @@
 # PhysicallyBasedMaterial.Specular
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that defines the specular highlights of an entity.
 
@@ -11,7 +12,7 @@ An object that defines the specular highlights of an entity.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,67 +22,68 @@ struct Specular
 
 #### Overview
 
-RealityKit automatically draws *specular highlights* for physically based materials, using the values of various properties, primarily [`roughness`](physicallybasedmaterial/roughness-swift.property.md) and [`metallic`](physicallybasedmaterial/metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
+RealityKit automatically draws *specular highlights* for physically based materials, using the values of various properties, primarily [`roughness`](./roughness-swift.property.md) and [`metallic`](./metallic-swift.property.md). Specular highlights are bright spots of reflected light that appear on shiny objects.
 
-![An illustration showing a sphere and a cube with rounded corners. Both](/images/com.apple.RealityKit/PhysicallyBasedMaterial-Specular-swift-struct-1@2x.png)
+![An illustration showing a sphere and a cube with rounded corners. Both](https://developer.apple.com/tutorials/images/com.apple.RealityKit/PhysicallyBasedMaterial-Specular-swift-struct-1@2x.png)
 
 Although many real-world objects can be accurately and realistically simulated with just the core physically based rendering (PBR) properties, you can create additional realistic effects by augmenting the specular highlights.
 
-Use this object to specify the amount of [`specular`](physicallybasedmaterial/specular-swift.property.md) for a [`PhysicallyBasedMaterial`](physicallybasedmaterial.md).
+Use this object to specify the amount of [`specular`](./specular-swift.property.md) for a [`PhysicallyBasedMaterial`](../physicallybasedmaterial.md).
 
 ## Topics
 
 ### Creating a specular object
-- [init(floatLiteral: Float)](physicallybasedmaterial/specular-swift.struct/init(floatliteral:).md)
+- [init(floatLiteral: Float)](./specular-swift.struct/init%28floatliteral%29.md)
   Creates an object from single value.
-- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](physicallybasedmaterial/specular-swift.struct/init(scale:texture:).md)
+- [init(scale: Float, texture: PhysicallyBasedMaterial.Texture?)](./specular-swift.struct/init%28scale,texture%29.md)
   Creates an object from a single value or a texture.
-- [init(CustomMaterial.Specular)](physicallybasedmaterial/specular-swift.struct/init(_:).md)
+- [init(CustomMaterial.Specular)](./specular-swift.struct/init%28_%29.md)
   Creates an object from a custom material’s specular property.
 ### Accessing specular values
-- [var texture: PhysicallyBasedMaterial.Texture?](physicallybasedmaterial/specular-swift.struct/texture.md)
+- [var texture: PhysicallyBasedMaterial.Texture?](./specular-swift.struct/texture.md)
   The amount of specular as a UV-mapped image texture.
-- [static let textureSemantic: TextureResource.Semantic](physicallybasedmaterial/specular-swift.struct/texturesemantic.md)
+- [static let textureSemantic: TextureResource.Semantic](./specular-swift.struct/texturesemantic.md)
   The intended use of the object’s texture property.
-- [var scale: Float](physicallybasedmaterial/specular-swift.struct/scale.md)
+- [var scale: Float](./specular-swift.struct/scale.md)
   The amount of specular for the entire entity.
 
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByFloatLiteral](../swift/expressiblebyfloatliteral.md)
+- [ExpressibleByFloatLiteral](../../Swift/expressiblebyfloatliteral.md)
 
 ## See Also
 
-- [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
+### Realistic materials
+- [Applying realistic material and lighting effects to entities](../applying-realistic-material-and-lighting-effects-to-entities.md)
   Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
-- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+- [Rendering high-fidelity characters](../rendering-high-fidelity-characters.md)
   Configure material and lighting properties to avoid flat, dull skin and static hair on your characters.
-- [Generating procedural textures](../visionos/generating-procedural-textures-in-visionos.md)
+- [Generating procedural textures](../../visionOS/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
-- [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
+- [struct PhysicallyBasedMaterial](../physicallybasedmaterial.md)
   A material that simulates the appearance of real-world objects.
-- [PhysicallyBasedMaterial.BaseColor](physicallybasedmaterial/basecolor-swift.struct.md)
+- [PhysicallyBasedMaterial.BaseColor](./basecolor-swift.struct.md)
   An object that defines an entity’s base color.
-- [PhysicallyBasedMaterial.Roughness](physicallybasedmaterial/roughness-swift.struct.md)
+- [PhysicallyBasedMaterial.Roughness](./roughness-swift.struct.md)
   An object that defines the roughness of an entity’s surface.
-- [PhysicallyBasedMaterial.Metallic](physicallybasedmaterial/metallic-swift.struct.md)
+- [PhysicallyBasedMaterial.Metallic](./metallic-swift.struct.md)
   An object that defines the reflectiveness of an entity.
-- [PhysicallyBasedMaterial.Normal](physicallybasedmaterial/normal-swift.struct.md)
+- [PhysicallyBasedMaterial.Normal](./normal-swift.struct.md)
   An object that specifies an entity’s normal map.
-- [PhysicallyBasedMaterial.Blending](physicallybasedmaterial/blending-swift.enum.md)
+- [PhysicallyBasedMaterial.Blending](./blending-swift.enum.md)
   The object that defines the transparency of an entity.
-- [PhysicallyBasedMaterial.AmbientOcclusion](physicallybasedmaterial/ambientocclusion-swift.struct.md)
+- [PhysicallyBasedMaterial.AmbientOcclusion](./ambientocclusion-swift.struct.md)
   An object that defines the ambient occlusion of an entity’s surface.
-- [PhysicallyBasedMaterial.SheenColor](physicallybasedmaterial/sheencolor.md)
+- [PhysicallyBasedMaterial.SheenColor](./sheencolor.md)
   An object that defines the color of an entity’s sheen.
-- [PhysicallyBasedMaterial.Clearcoat](physicallybasedmaterial/clearcoat-swift.struct.md)
+- [PhysicallyBasedMaterial.Clearcoat](./clearcoat-swift.struct.md)
   An object that defines the intensity of an entity’s clear, shiny coating.
-- [PhysicallyBasedMaterial.ClearcoatRoughness](physicallybasedmaterial/clearcoatroughness-swift.struct.md)
+- [PhysicallyBasedMaterial.ClearcoatRoughness](./clearcoatroughness-swift.struct.md)
   An object that defines the degree to which an entity’s clear, shiny coating scatters light to create soft highlights.
-- [PhysicallyBasedMaterial.AnisotropyLevel](physicallybasedmaterial/anisotropylevel-swift.struct.md)
+- [PhysicallyBasedMaterial.AnisotropyLevel](./anisotropylevel-swift.struct.md)
   An object that defines the degree to which an entity reflects light to create stretched or oblong highlights.
-- [PhysicallyBasedMaterial.AnisotropyAngle](physicallybasedmaterial/anisotropyangle-swift.struct.md)
+- [PhysicallyBasedMaterial.AnisotropyAngle](./anisotropyangle-swift.struct.md)
   An object used to define a material’s anisotropy angle.
 
 

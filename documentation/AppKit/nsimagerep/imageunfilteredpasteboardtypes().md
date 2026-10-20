@@ -1,17 +1,24 @@
 # imageUnfilteredPasteboardTypes()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the list of pasteboard types supported directly by the image representation.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.10
+
+> **Deprecated**: Use [`imageUnfilteredTypes`](./imageunfilteredtypes.md) instead.
 
 ## Declaration
 
 ```swift
 class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]
+```
+
+```objc
++ (NSArray<NSString *> *) imageUnfilteredPasteboardTypes;
 ```
 
 #### Return Value
@@ -35,17 +42,19 @@ If your subclass supports the types supported by its superclass, you must explic
 
 ## See Also
 
-- [class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimage/imageunfilteredpasteboardtypes.md)
+### Related Documentation
+- [class func imageUnfilteredPasteboardTypes() -> [NSPasteboard.PasteboardType]](../nsimage/imageunfilteredpasteboardtypes%28%29.md)
   Returns an array of strings identifying the pasteboard types supported directly by the registered image representation objects.
-- [class func imageFileTypes() -> [String]](nsimagerep/imagefiletypes.md)
+### Deprecated methods
+- [class func imageFileTypes() -> [String]](./imagefiletypes%28%29.md)
   Returns the file types supported by the image representation class or one of its subclasses.
-- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](nsimagerep/imagepasteboardtypes.md)
+- [class func imagePasteboardTypes() -> [NSPasteboard.PasteboardType]](./imagepasteboardtypes%28%29.md)
   Returns the pasteboard types supported by the image representation class or one of its subclasses.
-- [class func imageUnfilteredFileTypes() -> [String]](nsimagerep/imageunfilteredfiletypes.md)
+- [class func imageUnfilteredFileTypes() -> [String]](./imageunfilteredfiletypes%28%29.md)
   Returns the list of file types supported directly by the image representation.
-- [class func `class`(forFileType: String) -> AnyClass?](nsimagerep/class(forfiletype:).md)
+- [class func `class`(forFileType: String) -> AnyClass?](./class%28forfiletype%29.md)
   Returns the image representation subclass that handles data with the specified type.
-- [class func `class`(forPasteboardType: NSPasteboard.PasteboardType) -> AnyClass?](nsimagerep/class(forpasteboardtype:).md)
+- [class func `class`(forPasteboardType: NSPasteboard.PasteboardType) -> AnyClass?](./class%28forpasteboardtype%29.md)
   Returns the image representation subclass that handles data with the specified pasteboard type.
 
 

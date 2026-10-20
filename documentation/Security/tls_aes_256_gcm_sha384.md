@@ -1,7 +1,8 @@
 # TLS_AES_256_GCM_SHA384
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var TLS_AES_256_GCM_SHA384: SSLCipherSuite { get }
+```
+
+```c
+TLS_AES_256_GCM_SHA384
 ```
 
 

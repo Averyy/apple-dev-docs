@@ -1,7 +1,8 @@
 # init(style:allowedUnits:spellsOutZero:includesActualByteCount:locale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a byte count format style.
 
@@ -22,7 +23,7 @@ init(style: Measurement<UnitType>.FormatStyle.ByteCount.Style, allowedUnits: Mea
 
 #### Discussion
 
-In situations that infer the [`Measurement.FormatStyle.ByteCount`](measurement/formatstyle/bytecount.md) type, you can call `Measurement/FormatStyle/ByteCount/byteCount(style:allowedUnits:spellsOutZero:includesActualByteCount:)` instead of explicitly using this initializer. This is the case when you call [`formatted()`](measurement/formatted().md) on a [`Measurement`](measurement.md) whose unit type is [`UnitInformationStorage`](unitinformationstorage.md).
+In situations that infer the [`Measurement.FormatStyle.ByteCount`](../bytecount.md) type, you can call `Measurement/FormatStyle/ByteCount/byteCount(style:allowedUnits:spellsOutZero:includesActualByteCount:)` instead of explicitly using this initializer. This is the case when you call [`formatted()`](../../formatted%28%29.md) on a [`Measurement`](../../../measurement.md) whose unit type is [`UnitInformationStorage`](../../../unitinformationstorage.md).
 
 ## Parameters
 

@@ -1,7 +1,8 @@
 # layoutBased
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The alignment following the environment setting.
 
@@ -22,7 +23,7 @@ static let layoutBased: Text.AlignmentStrategy
 
 #### Discussion
 
-This alignment follows the [`multilineTextAlignment`](environmentvalues/multilinetextalignment.md) in the view hierarchy.
+This alignment follows the [`multilineTextAlignment`](../../environmentvalues/multilinetextalignment.md) in the view hierarchy.
 
 
 ---

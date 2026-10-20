@@ -1,7 +1,8 @@
 # Ratings.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The attributes for a rating resource.
 
@@ -10,7 +11,7 @@ The attributes for a rating resource.
 
 ## Declaration
 
-```swift
+```
 object Ratings.Attributes
 ```
 
@@ -18,9 +19,12 @@ object Ratings.Attributes
 
 - `value` (integer): The value for the resource’s rating. The possible values for the value key are `1` and `-1`. If a value isn’t present, the content doesn’t have a rating.
 
+  **Allowed Values**: `-1`, `1`
+
 ## See Also
 
-- [object Ratings.Relationships](ratings/relationships-data.dictionary.md)
+### Related Objects
+- [object Ratings.Relationships](./relationships-data.dictionary.md)
   The relationships for a rating resource.
 
 

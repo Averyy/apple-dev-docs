@@ -1,7 +1,8 @@
 # UIGraphicsImageRendererFormat.Range.automatic
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The system automatically chooses the image renderer context’s pixel format according to the color range of its content.
 
@@ -18,13 +19,18 @@ The system automatically chooses the image renderer context’s pixel format acc
 case automatic
 ```
 
+```c
+UIGraphicsImageRendererFormatRangeAutomatic
+```
+
 ## See Also
 
-- [UIGraphicsImageRendererFormat.Range.extended](uigraphicsimagerendererformat/range/extended.md)
+### Constants
+- [UIGraphicsImageRendererFormat.Range.extended](./extended.md)
   The image renderer context supports wide color.
-- [UIGraphicsImageRendererFormat.Range.standard](uigraphicsimagerendererformat/range/standard.md)
+- [UIGraphicsImageRendererFormat.Range.standard](./standard.md)
   The image renderer context doesn’t support extended colors.
-- [UIGraphicsImageRendererFormat.Range.unspecified](uigraphicsimagerendererformat/range/unspecified.md)
+- [UIGraphicsImageRendererFormat.Range.unspecified](./unspecified.md)
   The image renderer context doesn’t specify a color range.
 
 

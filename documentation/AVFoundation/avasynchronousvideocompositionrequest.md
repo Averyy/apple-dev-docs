@@ -1,7 +1,8 @@
 # AVAsynchronousVideoCompositionRequest
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that contains information a video compositor needs to render an output pixel buffer.
 
@@ -19,70 +20,75 @@ An object that contains information a video compositor needs to render an output
 class AVAsynchronousVideoCompositionRequest
 ```
 
+```objc
+@interface AVAsynchronousVideoCompositionRequest : NSObject
+```
+
 #### Overview
 
-The video compositor must adopt the [`AVVideoCompositing`](avvideocompositing.md) protocol.
+The video compositor must adopt the [`AVVideoCompositing`](./avvideocompositing.md) protocol.
 
 ## Topics
 
 ### Inspecting the request
-- [var compositionTime: CMTime](avasynchronousvideocompositionrequest/compositiontime.md)
+- [var compositionTime: CMTime](./avasynchronousvideocompositionrequest/compositiontime.md)
   A time for which to compose the frame.
-- [var renderContext: AVVideoCompositionRenderContext](avasynchronousvideocompositionrequest/rendercontext.md)
+- [var renderContext: AVVideoCompositionRenderContext](./avasynchronousvideocompositionrequest/rendercontext.md)
   The rendering context of the video composition.
-- [var videoCompositionInstruction: any AVVideoCompositionInstructionProtocol](avasynchronousvideocompositionrequest/videocompositioninstruction.md)
+- [var videoCompositionInstruction: any AVVideoCompositionInstructionProtocol](./avasynchronousvideocompositionrequest/videocompositioninstruction.md)
   A video composition instruction that indicates how to compose the frame.
 ### Accessing source data
-- [func attach(AVSpatialVideoConfiguration, to: inout CVMutablePixelBuffer) throws](avasynchronousvideocompositionrequest/attach(_:to:).md)
+- [func attach(AVSpatialVideoConfiguration, to: inout CVMutablePixelBuffer) throws](./avasynchronousvideocompositionrequest/attach%28_,to%29.md)
   Associates the pixel buffer with the specified spatial configuration.
-- [func sourceFrame(byTrackID: CMPersistentTrackID) -> CVPixelBuffer?](avasynchronousvideocompositionrequest/sourceframe(bytrackid:).md)
+- [func sourceFrame(byTrackID: CMPersistentTrackID) -> CVPixelBuffer?](./avasynchronousvideocompositionrequest/sourceframe%28bytrackid%29.md)
   Returns a source pixel buffer for the track that contains the specified identifier.
-- [func sourceReadOnlyPixelBuffer(byTrackID: CMPersistentTrackID) -> CVReadOnlyPixelBuffer?](avasynchronousvideocompositionrequest/sourcereadonlypixelbuffer(bytrackid:).md)
+- [func sourceReadOnlyPixelBuffer(byTrackID: CMPersistentTrackID) -> CVReadOnlyPixelBuffer?](./avasynchronousvideocompositionrequest/sourcereadonlypixelbuffer%28bytrackid%29.md)
   Returns the source CVReadOnlyPixelBuffer for the given track ID. If the track contains tagged buffers, a pixel buffer from one of the tagged buffers will be returned.
-- [func sourceReadySampleBuffer(byTrackID: CMPersistentTrackID) -> CMReadySampleBuffer<CMSampleBuffer.DynamicContent>?](avasynchronousvideocompositionrequest/sourcereadysamplebuffer(bytrackid:).md)
+- [func sourceReadySampleBuffer(byTrackID: CMPersistentTrackID) -> CMReadySampleBuffer<CMSampleBuffer.DynamicContent>?](./avasynchronousvideocompositionrequest/sourcereadysamplebuffer%28bytrackid%29.md)
   Returns the source CMReadySampleBuffer for the given track ID.
-- [func sourceSampleBuffer(byTrackID: CMPersistentTrackID) -> CMSampleBuffer?](avasynchronousvideocompositionrequest/sourcesamplebuffer(bytrackid:).md)
+- [func sourceSampleBuffer(byTrackID: CMPersistentTrackID) -> CMSampleBuffer?](./avasynchronousvideocompositionrequest/sourcesamplebuffer%28bytrackid%29.md)
   Returns a source sample buffer for the track that contains the specified identifier.
-- [var sourceSampleDataTrackIDs: [CMPersistentTrackID]](avasynchronousvideocompositionrequest/sourcesampledatatrackids-3yiab.md)
+- [var sourceSampleDataTrackIDs: [CMPersistentTrackID]](./avasynchronousvideocompositionrequest/sourcesampledatatrackids-3yiab.md)
   The identifiers of tracks that contain source sample data.
-- [func sourceTaggedDynamicBuffers(byTrackID: CMPersistentTrackID) -> [CMTaggedDynamicBuffer]?](avasynchronousvideocompositionrequest/sourcetaggeddynamicbuffers(bytrackid:).md)
+- [func sourceTaggedDynamicBuffers(byTrackID: CMPersistentTrackID) -> [CMTaggedDynamicBuffer]?](./avasynchronousvideocompositionrequest/sourcetaggeddynamicbuffers%28bytrackid%29.md)
   Returns the source tagged dynamic buffers for the given track ID. Returns nil if the video track does not contain tagged buffers, or if the track does not contain video. This function should only be called when supportsSourceTaggedBuffers is YES.
-- [func sourceTimedMetadata(byTrackID: CMPersistentTrackID) -> AVTimedMetadataGroup?](avasynchronousvideocompositionrequest/sourcetimedmetadata(bytrackid:).md)
+- [func sourceTimedMetadata(byTrackID: CMPersistentTrackID) -> AVTimedMetadataGroup?](./avasynchronousvideocompositionrequest/sourcetimedmetadata%28bytrackid%29.md)
   Returns a source timed metadata group for the track that contains the specified identifier.
-- [var sourceTrackIDs: [NSNumber]](avasynchronousvideocompositionrequest/sourcetrackids.md)
+- [var sourceTrackIDs: [NSNumber]](./avasynchronousvideocompositionrequest/sourcetrackids.md)
   The identifiers of tracks that contain source video.
 ### Finishing the request
-- [func finish(withComposedVideoFrame: CVPixelBuffer)](avasynchronousvideocompositionrequest/finish(withcomposedvideoframe:).md)
+- [func finish(withComposedVideoFrame: CVPixelBuffer)](./avasynchronousvideocompositionrequest/finish%28withcomposedvideoframe%29.md)
   Finishes the request to compose the frame.
-- [func finish(withComposedPixelBuffer: CVReadOnlyPixelBuffer)](avasynchronousvideocompositionrequest/finish(withcomposedpixelbuffer:).md)
+- [func finish(withComposedPixelBuffer: CVReadOnlyPixelBuffer)](./avasynchronousvideocompositionrequest/finish%28withcomposedpixelbuffer%29.md)
   The method that the custom compositor calls when composition succeeds.
-- [func finish(withComposedTaggedBuffers: [CMTaggedDynamicBuffer])](avasynchronousvideocompositionrequest/finish(withcomposedtaggedbuffers:).md)
+- [func finish(withComposedTaggedBuffers: [CMTaggedDynamicBuffer])](./avasynchronousvideocompositionrequest/finish%28withcomposedtaggedbuffers%29.md)
   The method that the custom compositor calls when composition succeeds.
-- [func finish(with: any Error)](avasynchronousvideocompositionrequest/finish(with:).md)
+- [func finish(with: any Error)](./avasynchronousvideocompositionrequest/finish%28with%29.md)
   Finishes the request with an error.
-- [func finishCancelledRequest()](avasynchronousvideocompositionrequest/finishcancelledrequest.md)
+- [func finishCancelledRequest()](./avasynchronousvideocompositionrequest/finishcancelledrequest%28%29.md)
   Cancels the request to compose a video frame.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func startRequest(AVAsynchronousVideoCompositionRequest)](avvideocompositing/startrequest(_:).md)
+### Rendering the composition
+- [func startRequest(AVAsynchronousVideoCompositionRequest)](./avvideocompositing/startrequest%28_%29.md)
   Directs a custom video compositor object to create a new pixel buffer composed asynchronously from a collection of sources.
-- [func cancelAllPendingVideoCompositionRequests()](avvideocompositing/cancelallpendingvideocompositionrequests.md)
+- [func cancelAllPendingVideoCompositionRequests()](./avvideocompositing/cancelallpendingvideocompositionrequests%28%29.md)
   Directs a custom video compositor object to cancel or finish all pending video composition requests.
 
 

@@ -1,7 +1,8 @@
 # makeAsyncIterator()
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
@@ -26,7 +27,8 @@ An instance of the `URL.AsyncBytes.AsyncIterator` type used to produce elements 
 
 ## See Also
 
-- [URL.AsyncBytes.AsyncIterator](url/asyncbytes/asynciterator.md)
+### Creating an iterator
+- [URL.AsyncBytes.AsyncIterator](./asynciterator.md)
   The iterator type that produces elements of this asynchronous sequence.
 
 

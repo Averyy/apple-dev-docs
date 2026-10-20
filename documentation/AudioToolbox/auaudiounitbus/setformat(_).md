@@ -1,7 +1,8 @@
 # setFormat(_:)
 
 **Framework**: Audio Toolbox  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the bus’s audio format.
 
@@ -19,17 +20,23 @@ Sets the bus’s audio format.
 func setFormat(_ format: AVAudioFormat) throws
 ```
 
+```objc
+- (BOOL) setFormat:(AVAudioFormat *) format error:(NSError **) outError;
+```
+
 #### Discussion
 
-- [`false`](https://developer.apple.com/documentation/swift/false) if the operation failed.
+- [`false`](../../Swift/false.md) if the operation failed.
 
 #### Discussion
 
-Audio units can generally be expected to support the [`AVAudioFormat`](https://developer.apple.com/documentation/avfaudio/avaudioformat) standard format (deinterleaved 32-bit float), at any sample rate.
+Audio units can generally be expected to support the [`AVAudioFormat`](../../AVFAudio/avaudioformat.md) standard format (deinterleaved 32-bit float), at any sample rate.
 
-Channel counts can be more complex. See the [`channelCapabilities`](auaudiounit/channelcapabilities.md) reference for a more complete discussion.
+Channel counts can be more complex. See the [`channelCapabilities`](../auaudiounit/channelcapabilities.md) reference for a more complete discussion.
 
-> **Note**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure. You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [`Error Handling`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
+> **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
+>
+> You call this method in a `try` expression and handle any errors in the `catch` clauses of a `do` statement, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
 ## Parameters
 
@@ -37,23 +44,24 @@ Channel counts can be more complex. See the [`channelCapabilities`](auaudiounit/
 
 ## See Also
 
-- [var format: AVAudioFormat](auaudiounitbus/format.md)
+### Bus Methods and Properties
+- [var format: AVAudioFormat](./format.md)
   The audio format and channel layout of audio being transferred on the bus.
-- [var isEnabled: Bool](auaudiounitbus/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   Determines whether the bus is active.
-- [var name: String?](auaudiounitbus/name.md)
+- [var name: String?](./name.md)
   A name for the bus.
-- [var index: Int](auaudiounitbus/index.md)
+- [var index: Int](./index.md)
   The index of this bus in its containing array.
-- [var busType: AUAudioUnitBusType](auaudiounitbus/bustype.md)
+- [var busType: AUAudioUnitBusType](./bustype.md)
   The bus type.
-- [var ownerAudioUnit: AUAudioUnit](auaudiounitbus/owneraudiounit.md)
+- [var ownerAudioUnit: AUAudioUnit](./owneraudiounit.md)
   The audio unit that owns the bus.
-- [var supportedChannelLayoutTags: [NSNumber]?](auaudiounitbus/supportedchannellayouttags.md)
+- [var supportedChannelLayoutTags: [NSNumber]?](./supportedchannellayouttags.md)
   An array of audio channel layout tags.
-- [var contextPresentationLatency: TimeInterval](auaudiounitbus/contextpresentationlatency.md)
+- [var contextPresentationLatency: TimeInterval](./contextpresentationlatency.md)
   Information about latency in the audio unit’s processing context.
-- [var shouldAllocateBuffer: Bool](auaudiounitbus/shouldallocatebuffer.md)
+- [var shouldAllocateBuffer: Bool](./shouldallocatebuffer.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # setIntercellSpacing(_:)
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the spacing between cells in the view.
 
@@ -14,6 +15,10 @@ Sets the spacing between cells in the view.
 func setIntercellSpacing(_ aSize: NSSize)
 ```
 
+```objc
+- (void) setIntercellSpacing:(NSSize) aSize;
+```
+
 #### Discussion
 
 By default, both values are `10.0` in the receiver’s coordinate system.
@@ -24,15 +29,16 @@ By default, both values are `10.0` in the receiver’s coordinate system.
 
 ## See Also
 
-- [func setCellsStyleMask(Int)](ikimagebrowserview/setcellsstylemask(_:).md)
+### Setting the Appearance
+- [func setCellsStyleMask(Int)](./setcellsstylemask%28_%29.md)
   Defines the appearance style of the cells.
-- [func cellsStyleMask() -> Int](ikimagebrowserview/cellsstylemask.md)
+- [func cellsStyleMask() -> Int](./cellsstylemask%28%29.md)
   Returns the appearance style mask for the cell.
-- [func setConstrainsToOriginalSize(Bool)](ikimagebrowserview/setconstrainstooriginalsize(_:).md)
+- [func setConstrainsToOriginalSize(Bool)](./setconstrainstooriginalsize%28_%29.md)
   Sets whether the receiver constrains the cell’s image to its original size.
-- [func constrainsToOriginalSize() -> Bool](ikimagebrowserview/constrainstooriginalsize.md)
+- [func constrainsToOriginalSize() -> Bool](./constrainstooriginalsize%28%29.md)
   Returns whether the receiver constrains the cell’s image to its original size.
-- [func intercellSpacing() -> NSSize](ikimagebrowserview/intercellspacing.md)
+- [func intercellSpacing() -> NSSize](./intercellspacing%28%29.md)
   Returns the spacing between cells in the view.
 
 

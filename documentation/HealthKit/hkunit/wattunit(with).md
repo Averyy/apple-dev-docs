@@ -1,7 +1,8 @@
 # wattUnit(with:)
 
 **Framework**: HealthKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns a HealthKit unit for measuring power, using watt units with the provided prefix.
 
@@ -19,13 +20,18 @@ Returns a HealthKit unit for measuring power, using watt units with the provided
 class func wattUnit(with prefix: HKMetricPrefix) -> Self
 ```
 
+```objc
++ (instancetype) wattUnitWithMetricPrefix:(HKMetricPrefix) prefix;
+```
+
 ## Parameters
 
-- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](hkmetricprefix.md).
+- `prefix`: A valid metric prefix value. For the complete list of prefix values, see [`HKMetricPrefix`](../hkmetricprefix.md).
 
 ## See Also
 
-- [class func watt() -> Self](hkunit/watt.md)
+### Constructing power units
+- [class func watt() -> Self](./watt%28%29.md)
   Returns a HealthKit unit for measuring power in watts.
 
 

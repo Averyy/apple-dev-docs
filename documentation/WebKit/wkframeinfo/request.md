@@ -1,7 +1,8 @@
 # request
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The frame’s current request.
 
@@ -18,13 +19,18 @@ The frame’s current request.
 var request: URLRequest { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSURLRequest * request;
+```
+
 ## See Also
 
-- [var isMainFrame: Bool](wkframeinfo/ismainframe.md)
+### Inspecting frame information
+- [var isMainFrame: Bool](./ismainframe.md)
   A Boolean value indicating whether the frame is the web site’s main frame or a subframe.
-- [var securityOrigin: WKSecurityOrigin](wkframeinfo/securityorigin.md)
+- [var securityOrigin: WKSecurityOrigin](./securityorigin.md)
   The frame’s security origin.
-- [var webView: WKWebView?](wkframeinfo/webview.md)
+- [var webView: WKWebView?](./webview.md)
   The web view that contains this frame and the containing webpage.
 
 

@@ -1,14 +1,15 @@
 # kHIDUsage_LED_IndicatorAmber
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_LED_IndicatorAmber = 0x4A
 ```
 

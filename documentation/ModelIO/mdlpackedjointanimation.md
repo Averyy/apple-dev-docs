@@ -1,7 +1,8 @@
 # MDLPackedJointAnimation
 
 **Framework**: Model I/O  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 11.0+
@@ -17,30 +18,34 @@
 class MDLPackedJointAnimation
 ```
 
+```objc
+@interface MDLPackedJointAnimation : MDLObject
+```
+
 ## Topics
 
 ### Initializers
-- [init(name: String, jointPaths: [String])](mdlpackedjointanimation/init(name:jointpaths:).md)
+- [init(name: String, jointPaths: [String])](./mdlpackedjointanimation/init%28name,jointpaths%29.md)
 ### Instance Properties
-- [var jointPaths: [String]](mdlpackedjointanimation/jointpaths.md)
-- [var rotations: MDLAnimatedQuaternionArray](mdlpackedjointanimation/rotations.md)
-- [var scales: MDLAnimatedVector3Array](mdlpackedjointanimation/scales.md)
-- [var translations: MDLAnimatedVector3Array](mdlpackedjointanimation/translations.md)
+- [var jointPaths: [String]](./mdlpackedjointanimation/jointpaths.md)
+- [var rotations: MDLAnimatedQuaternionArray](./mdlpackedjointanimation/rotations.md)
+- [var scales: MDLAnimatedVector3Array](./mdlpackedjointanimation/scales.md)
+- [var translations: MDLAnimatedVector3Array](./mdlpackedjointanimation/translations.md)
 
 ## Relationships
 
 ### Inherits From
-- [MDLObject](mdlobject.md)
+- [MDLObject](./mdlobject.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [MDLJointAnimation](mdljointanimation.md)
-- [MDLNamed](mdlnamed.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [MDLJointAnimation](./mdljointanimation.md)
+- [MDLNamed](./mdlnamed.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

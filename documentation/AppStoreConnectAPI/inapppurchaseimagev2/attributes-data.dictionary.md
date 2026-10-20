@@ -1,7 +1,8 @@
 # InAppPurchaseImageV2.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that describe an In-App Purchase image resource.
 
@@ -10,7 +11,7 @@ Attributes that describe an In-App Purchase image resource.
 
 ## Declaration
 
-```swift
+```
 object InAppPurchaseImageV2.Attributes
 ```
 

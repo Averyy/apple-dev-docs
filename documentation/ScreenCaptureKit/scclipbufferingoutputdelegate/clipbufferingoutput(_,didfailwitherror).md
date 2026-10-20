@@ -1,7 +1,8 @@
 # clipBufferingOutput(_:didFailWithError:)
 
 **Framework**: ScreenCaptureKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 27.0+
@@ -15,6 +16,10 @@
 
 ```swift
 optional func clipBufferingOutput(_ clipBufferingOutput: SCClipBufferingOutput, didFailWithError error: any Error)
+```
+
+```objc
+- (void) clipBufferingOutput:(SCClipBufferingOutput *) clipBufferingOutput didFailWithError:(NSError *) error;
 ```
 
 #### Discussion

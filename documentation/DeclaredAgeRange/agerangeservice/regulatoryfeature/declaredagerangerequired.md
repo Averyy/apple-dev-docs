@@ -1,7 +1,8 @@
 # AgeRangeService.RegulatoryFeature.declaredAgeRangeRequired
 
 **Framework**: Declared Age Range  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates the person is required to share their age range with your app.
 
@@ -19,9 +20,10 @@ case declaredAgeRangeRequired
 
 ## See Also
 
-- [AgeRangeService.RegulatoryFeature.significantAppChangeRequiresAdultNotification](agerangeservice/regulatoryfeature/significantappchangerequiresadultnotification.md)
+### Checking regulatory requirements
+- [AgeRangeService.RegulatoryFeature.significantAppChangeRequiresAdultNotification](./significantappchangerequiresadultnotification.md)
   Indicates that adult users must acknowledge your app’s significant change.
-- [AgeRangeService.RegulatoryFeature.significantAppChangeRequiresParentalConsent](agerangeservice/regulatoryfeature/significantappchangerequiresparentalconsent.md)
+- [AgeRangeService.RegulatoryFeature.significantAppChangeRequiresParentalConsent](./significantappchangerequiresparentalconsent.md)
   Indicates a parent or guardian is required to acknowledge and consent to a significant app change.
 
 

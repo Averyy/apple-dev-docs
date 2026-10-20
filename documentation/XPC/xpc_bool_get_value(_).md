@@ -1,7 +1,8 @@
 # xpc_bool_get_value(_:)
 
 **Framework**: XPC  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the underlying Boolean value from the object.
 
@@ -10,7 +11,7 @@ Returns the underlying Boolean value from the object.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the underlying Boolean value from the object.
 
 ```swift
 func xpc_bool_get_value(_ xbool: xpc_object_t) -> Bool
+```
+
+```c
+extern bool xpc_bool_get_value(xpc_object_t xbool);
 ```
 
 #### Return Value
@@ -30,11 +35,12 @@ The underlying Boolean value.
 
 ## See Also
 
-- [func xpc_bool_create(Bool) -> xpc_object_t](xpc_bool_create(_:).md)
+### Boolean objects
+- [func xpc_bool_create(Bool) -> xpc_object_t](./xpc_bool_create%28_%29.md)
   Creates an XPC Boolean object.
-- [var XPC_BOOL_TRUE: xpc_object_t](xpc_bool_true-swift.var.md)
+- [var XPC_BOOL_TRUE: xpc_object_t](./xpc_bool_true-swift.var.md)
   A constant that represents a Boolean value of true.
-- [var XPC_BOOL_FALSE: xpc_object_t](xpc_bool_false-swift.var.md)
+- [var XPC_BOOL_FALSE: xpc_object_t](./xpc_bool_false-swift.var.md)
   A constant that represents a Boolean value of false.
 
 

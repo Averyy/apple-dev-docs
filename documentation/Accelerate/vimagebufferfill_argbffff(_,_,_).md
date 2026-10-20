@@ -1,7 +1,8 @@
 # vImageBufferFill_ARGBFFFF(_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Fills a floating-point 32-bit-per-channel, 4-channel interleaved buffer with a specified color.
 
@@ -20,9 +21,13 @@ Fills a floating-point 32-bit-per-channel, 4-channel interleaved buffer with a s
 func vImageBufferFill_ARGBFFFF(_ dest: UnsafePointer<vImage_Buffer>, _ color: UnsafePointer<Float>, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageBufferFill_ARGBFFFF(const vImage_Buffer *dest, const Pixel_FFFF color, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -74,24 +79,25 @@ printf("[%.1f, %.1f, %.1f, %.1f, %.1f, %.1f, %.1f, %.1f]\n",
 
 ## Parameters
 
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `color`: The fill color.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [func vImageBufferFill_CbCr8(UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](vimagebufferfill_cbcr8(_:_:_:).md)
+### Filling buffers
+- [func vImageBufferFill_CbCr8(UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](./vimagebufferfill_cbcr8%28_,_,_%29.md)
   Fills an 8-bit-per-channel, 2-channel interleaved buffer with a specified color.
-- [func vImageBufferFill_CbCr16U(UnsafePointer<vImage_Buffer>, UnsafePointer<UInt16>, vImage_Flags) -> vImage_Error](vimagebufferfill_cbcr16u(_:_:_:).md)
+- [func vImageBufferFill_CbCr16U(UnsafePointer<vImage_Buffer>, UnsafePointer<UInt16>, vImage_Flags) -> vImage_Error](./vimagebufferfill_cbcr16u%28_,_,_%29.md)
   Fills an unsigned 16-bit-per-channel, 2-channel interleaved buffer with a specified color.
-- [func vImageBufferFill_CbCr16S(UnsafePointer<vImage_Buffer>, UnsafePointer<Int16>, vImage_Flags) -> vImage_Error](vimagebufferfill_cbcr16s(_:_:_:).md)
-- [func vImageBufferFill_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](vimagebufferfill_argb8888(_:_:_:).md)
+- [func vImageBufferFill_CbCr16S(UnsafePointer<vImage_Buffer>, UnsafePointer<Int16>, vImage_Flags) -> vImage_Error](./vimagebufferfill_cbcr16s%28_,_,_%29.md)
+- [func vImageBufferFill_ARGB8888(UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, vImage_Flags) -> vImage_Error](./vimagebufferfill_argb8888%28_,_,_%29.md)
   Fills an 8-bit-per-channel, 4-channel interleaved buffer with a specified color.
-- [func vImageBufferFill_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<UInt16>, vImage_Flags) -> vImage_Error](vimagebufferfill_argb16u(_:_:_:).md)
+- [func vImageBufferFill_ARGB16U(UnsafePointer<vImage_Buffer>, UnsafePointer<UInt16>, vImage_Flags) -> vImage_Error](./vimagebufferfill_argb16u%28_,_,_%29.md)
   Fills an unsigned 16-bit-per-channel, 4-channel interleaved buffer with a specified color.
-- [func vImageBufferFill_ARGB16S(UnsafePointer<vImage_Buffer>, UnsafePointer<Int16>, vImage_Flags) -> vImage_Error](vimagebufferfill_argb16s(_:_:_:).md)
+- [func vImageBufferFill_ARGB16S(UnsafePointer<vImage_Buffer>, UnsafePointer<Int16>, vImage_Flags) -> vImage_Error](./vimagebufferfill_argb16s%28_,_,_%29.md)
   Fills a signed 16-bit-per-channel, 4-channel interleaved buffer with a specified color.
-- [func vImageBufferFill_ARGB16F(UnsafePointer<vImage_Buffer>, UnsafePointer<UInt16>, vImage_Flags) -> vImage_Error](vimagebufferfill_argb16f(_:_:_:).md)
+- [func vImageBufferFill_ARGB16F(UnsafePointer<vImage_Buffer>, UnsafePointer<UInt16>, vImage_Flags) -> vImage_Error](./vimagebufferfill_argb16f%28_,_,_%29.md)
   Fills a floating-point 16-bit-per-channel, 4-channel interleaved buffer with a specified color.
 
 

@@ -1,7 +1,8 @@
 # NWProtocolQUIC.ApplicationError
 
 **Framework**: Network  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A QUIC application error code.
 
@@ -23,26 +24,27 @@ struct ApplicationError
 ## Topics
 
 ### Configuring Application Errors
-- [init(code: UInt64, reason: String?)](nwprotocolquic/applicationerror/init(code:reason:).md)
+- [init(code: UInt64, reason: String?)](./applicationerror/init%28code,reason%29.md)
   Initializes a QUIC application error with an error code and an optional reason.
 ### Inspecting Application Errors
-- [let code: UInt64](nwprotocolquic/applicationerror/code.md)
+- [let code: UInt64](./applicationerror/code.md)
   The QUIC application error code.
-- [let reason: String?](nwprotocolquic/applicationerror/reason.md)
+- [let reason: String?](./applicationerror/reason.md)
   The QUIC application error reason.
 
 ## Relationships
 
 ### Conforms To
-- [ExpressibleByIntegerLiteral](../swift/expressiblebyintegerliteral.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [ExpressibleByIntegerLiteral](../../Swift/expressiblebyintegerliteral.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var applicationError: NWProtocolQUIC.ApplicationError](nwprotocolquic/metadata/applicationerror.md)
+### Handling Errors
+- [var applicationError: NWProtocolQUIC.ApplicationError](./metadata/applicationerror.md)
   The QUIC application error code to send for the connection, or received from the peer.
-- [var streamApplicationErrorCode: UInt64](nwprotocolquic/metadata/streamapplicationerrorcode.md)
+- [var streamApplicationErrorCode: UInt64](./metadata/streamapplicationerrorcode.md)
   The QUIC application error code to send for the stream, or received from the peer.
 
 

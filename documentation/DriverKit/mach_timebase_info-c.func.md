@@ -1,19 +1,20 @@
 # mach_timebase_info
 
 **Framework**: DriverKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns fraction to multiply a value in mach tick units with to convert it to nanoseconds.
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kern_return_t mach_timebase_info(mach_timebase_info_t info);
 ```
 
@@ -27,12 +28,13 @@ kern_return_t mach_timebase_info(mach_timebase_info_t info);
 
 ## See Also
 
-- [mach_absolute_time](mach_absolute_time.md)
+### Mach Timebase
+- [mach_absolute_time](./mach_absolute_time.md)
   Returns current value of a clock that increments monotonically in tick units (starting at an arbitrary point), this clock does not increment while the system is asleep.
-- [mach_continuous_time](mach_continuous_time.md)
+- [mach_continuous_time](./mach_continuous_time.md)
   Returns current value of a clock that increments monotonically in tick units (starting at an arbitrary point), including while the system is asleep.
-- [mach_timebase_info_t](mach_timebase_info_t.md)
-- [Time Scales](3223112-time_scales.md)
+- [mach_timebase_info_t](./mach_timebase_info_t.md)
+- [Time Scales](./api-3223112-time_scales.md)
 
 
 ---

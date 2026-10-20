@@ -1,7 +1,8 @@
 # init(start:end:)
 
 **Framework**: XcodeKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new source text range defined by its starting and ending positions.
 
@@ -12,6 +13,10 @@ Creates a new source text range defined by its starting and ending positions.
 
 ```swift
 init(start: XCSourceTextPosition, end: XCSourceTextPosition)
+```
+
+```objc
+- (instancetype) initWithStart:(XCSourceTextPosition) start end:(XCSourceTextPosition) end;
 ```
 
 

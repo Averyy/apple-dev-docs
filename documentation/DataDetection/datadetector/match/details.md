@@ -1,7 +1,8 @@
 # details
 
 **Framework**: DataDetection  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that contains the type and semantic data found in a match.
 
@@ -22,9 +23,10 @@ let details: DataDetector.Match.SemanticDetails
 
 ## See Also
 
-- [let preferredHighlightStyle: DataDetector.Match.HighlightStyle](datadetector/match/preferredhighlightstyle.md)
+### Match details
+- [let preferredHighlightStyle: DataDetector.Match.HighlightStyle](./preferredhighlightstyle.md)
   A value that suggests a highlight style for a match.
-- [let range: Range<String.Index>?](datadetector/match/range.md)
+- [let range: Range<String.Index>?](./range.md)
   The range of characters in the original text corresponding to the match.
 
 

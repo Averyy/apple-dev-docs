@@ -1,7 +1,8 @@
 # vImagePremultipliedAlphaBlendWithPermute_ARGB8888(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Permutes the top 8-bit, 4-channel premultiplied buffer, and composites with the bottom buffer.
 
@@ -20,9 +21,13 @@ Permutes the top 8-bit, 4-channel premultiplied buffer, and composites with the 
 func vImagePremultipliedAlphaBlendWithPermute_ARGB8888(_ srcTop: UnsafePointer<vImage_Buffer>, _ srcBottom: UnsafePointer<vImage_Buffer>, _ dest: UnsafePointer<vImage_Buffer>, _ permuteMap: UnsafePointer<UInt8>, _ makeDestAlphaOpaque: Bool, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImagePremultipliedAlphaBlendWithPermute_ARGB8888(const vImage_Buffer *srcTop, const vImage_Buffer *srcBottom, const vImage_Buffer *dest, const uint8_t permuteMap[4], bool makeDestAlphaOpaque, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
@@ -37,16 +42,18 @@ The `permuteMap` parameter changes the order of the `srcTop` channels:
 
 - `srcTop`: The vImage buffer that provides the source top image.
 - `srcBottom`: The vImage buffer that provides the source bottom image.
-- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](vimage_buffer/height.md), [`width`](vimage_buffer/width.md), and [`rowBytes`](vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
+- `dest`: A pointer to the destination vImage buffer structure. You’re responsible for filling out the [`height`](./vimage_buffer/height.md), [`width`](./vimage_buffer/width.md), and [`rowBytes`](./vimage_buffer/rowbytes.md) fields of this structure, and for allocating a data buffer of the appropriate size. On return, the data buffer this structure points to contains the destination image data. When you no longer need the data buffer, deallocate the memory to prevent memory leaks.
 - `permuteMap`: An array of four 8-bit integers with the values `0`, `1`, `2`, and 3, in some order. Each value specifies the channel from the source image that the function uses as the destination channel at the corresponding index.
 - `makeDestAlphaOpaque`: A Boolean value that specifies whether the function generates a destination image with opaque an alpha channel.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
 
 ## See Also
 
-- [Compositing images with alpha blending](compositing-images-with-alpha-blending.md)
+### Related Documentation
+- [Compositing images with alpha blending](./compositing-images-with-alpha-blending.md)
   Combine two images by using alpha blending to create a single output.
-- [func vImagePremultipliedAlphaBlendWithPermute_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, Bool, vImage_Flags) -> vImage_Error](vimagepremultipliedalphablendwithpermute_rgba8888(_:_:_:_:_:_:).md)
+### Performing premultiplied alpha compositing with a permute
+- [func vImagePremultipliedAlphaBlendWithPermute_RGBA8888(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafePointer<UInt8>, Bool, vImage_Flags) -> vImage_Error](./vimagepremultipliedalphablendwithpermute_rgba8888%28_,_,_,_,_,_%29.md)
   Permutes the top 8-bit, 4-channel premultiplied buffer, and composites with the bottom buffer.
 
 

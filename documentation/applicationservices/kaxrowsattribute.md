@@ -1,7 +1,8 @@
 # kAXRowsAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An array of the accessibility objects representing the rows in this table or outline view.
 
@@ -12,6 +13,10 @@ An array of the accessibility objects representing the rows in this table or out
 
 ```swift
 var kAXRowsAttribute: String { get }
+```
+
+```c
+#define kAXRowsAttribute
 ```
 
 

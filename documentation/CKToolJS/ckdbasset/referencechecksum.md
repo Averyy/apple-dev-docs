@@ -1,7 +1,8 @@
 # referenceChecksum
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The checksum of the wrapping key returned from the upload step.
 
@@ -10,7 +11,7 @@ The checksum of the wrapping key returned from the upload step.
 
 ## Declaration
 
-```swift
+```
 attribute string? referenceChecksum;
 ```
 

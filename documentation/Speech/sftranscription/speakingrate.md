@@ -1,16 +1,19 @@
 # speakingRate
 
 **Framework**: Speech  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The number of words spoken per minute.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- visionOS 1.0+
+- iOS 13.0+ - Deprecated in 14.5
+- iPadOS 13.0+ - Deprecated in 14.5
+- Mac Catalyst 13.0+ - Deprecated in 14.5
+- macOS 10.15+ - Deprecated in 11.3
+- visionOS 1.0+ - Deprecated in 1.0
+
+> **Deprecated**: speakingRate is moved to SFSpeechRecognitionMetadata
 
 ## Declaration
 
@@ -18,9 +21,14 @@ The number of words spoken per minute.
 var speakingRate: Double { get }
 ```
 
+```objc
+@property (nonatomic, readonly) double speakingRate;
+```
+
 ## See Also
 
-- [var averagePauseDuration: TimeInterval](sftranscription/averagepauseduration.md)
+### Deprecated
+- [var averagePauseDuration: TimeInterval](./averagepauseduration.md)
   The average pause duration between words, measured in seconds.
 
 

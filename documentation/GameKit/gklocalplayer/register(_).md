@@ -1,7 +1,8 @@
 # register(_:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers a listener for a particular event.
 
@@ -20,6 +21,10 @@ Registers a listener for a particular event.
 func register(_ listener: any GKLocalPlayerListener)
 ```
 
+```objc
+- (void) registerListener:(id<GKLocalPlayerListener>) listener;
+```
+
 #### Discussion
 
 Only register a listener a single time. Registering a listener multiple times results in undefined behavior.
@@ -30,9 +35,10 @@ Only register a listener a single time. Registering a listener multiple times re
 
 ## See Also
 
-- [func unregisterAllListeners()](gklocalplayer/unregisteralllisteners.md)
+### Registering Listeners
+- [func unregisterAllListeners()](./unregisteralllisteners%28%29.md)
   Unregisters all listeners in your game.
-- [func unregisterListener(any GKLocalPlayerListener)](gklocalplayer/unregisterlistener(_:).md)
+- [func unregisterListener(any GKLocalPlayerListener)](./unregisterlistener%28_%29.md)
   Unregisters a listener object.
 
 

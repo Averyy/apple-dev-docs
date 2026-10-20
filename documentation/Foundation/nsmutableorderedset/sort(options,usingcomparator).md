@@ -1,7 +1,8 @@
 # sort(options:usingComparator:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sorts the mutable ordered set using the specified options and the comparison method specified by a given comparator block.
 
@@ -20,6 +21,10 @@ Sorts the mutable ordered set using the specified options and the comparison met
 func sort(options opts: NSSortOptions = [], usingComparator cmptr: (Any, Any) -> ComparisonResult)
 ```
 
+```objc
+- (void) sortWithOptions:(NSSortOptions) opts usingComparator:(NSComparator) cmptr;
+```
+
 ## Parameters
 
 - `opts`: A bitmask that specifies the options for the sort (whether it should be performed concurrently and whether it should be performed stably).
@@ -27,11 +32,12 @@ func sort(options opts: NSSortOptions = [], usingComparator cmptr: (Any, Any) ->
 
 ## See Also
 
-- [func sort(using: [NSSortDescriptor])](nsmutableorderedset/sort(using:).md)
+### Sorting Entries
+- [func sort(using: [NSSortDescriptor])](./sort%28using%29.md)
   Sorts the receiving ordered set using a given array of sort descriptors.
-- [func sort(comparator: (Any, Any) -> ComparisonResult)](nsmutableorderedset/sort(comparator:).md)
+- [func sort(comparator: (Any, Any) -> ComparisonResult)](./sort%28comparator%29.md)
   Sorts the mutable ordered set using the comparison method specified by the comparator block.
-- [func sortRange(NSRange, options: NSSortOptions, usingComparator: (Any, Any) -> ComparisonResult)](nsmutableorderedset/sortrange(_:options:usingcomparator:).md)
+- [func sortRange(NSRange, options: NSSortOptions, usingComparator: (Any, Any) -> ComparisonResult)](./sortrange%28_,options,usingcomparator%29.md)
   Sorts the specified range of the mutable ordered set using the specified options and the comparison method specified by a given comparator block.
 
 

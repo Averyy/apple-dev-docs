@@ -1,7 +1,8 @@
 # unarchiver(_:cannotDecodeObjectOfClassName:originalClasses:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Informs the delegate that the class with a given name is not available during decoding.
 
@@ -20,6 +21,10 @@ Informs the delegate that the class with a given name is not available during de
 optional func unarchiver(_ unarchiver: NSKeyedUnarchiver, cannotDecodeObjectOfClassName name: String, originalClasses classNames: [String]) -> AnyClass?
 ```
 
+```objc
+- (Class) unarchiver:(NSKeyedUnarchiver *) unarchiver cannotDecodeObjectOfClassName:(NSString *) name originalClasses:(NSArray<NSString *> *) classNames;
+```
+
 #### Return Value
 
 The class unarchiver should use in place of the class named `name`.
@@ -36,10 +41,12 @@ The delegate may, for example, load some code to introduce the class to the runt
 
 ## See Also
 
-- [Archives and Serializations Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i)
-- [func unarchiver(NSKeyedUnarchiver, didDecode: consuming Any?) -> Any?](nskeyedunarchiverdelegate/unarchiver(_:diddecode:).md)
+### Related Documentation
+- [Archives and Serializations Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i)
+### Decoding Objects
+- [func unarchiver(NSKeyedUnarchiver, didDecode: consuming Any?) -> Any?](./unarchiver%28_,diddecode%29.md)
   Informs the delegate that a given object has been decoded.
-- [func unarchiver(NSKeyedUnarchiver, willReplace: Any, with: Any)](nskeyedunarchiverdelegate/unarchiver(_:willreplace:with:).md)
+- [func unarchiver(NSKeyedUnarchiver, willReplace: Any, with: Any)](./unarchiver%28_,willreplace,with%29.md)
   Informs the delegate that one object is being substituted for another.
 
 

@@ -1,7 +1,8 @@
 # setBadgeTextAttributes(_:for:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers text attributes that the badge uses for the specified state.
 
@@ -18,22 +19,27 @@ Registers text attributes that the badge uses for the specified state.
 func setBadgeTextAttributes(_ textAttributes: [NSAttributedString.Key : Any]?, for state: UIControl.State)
 ```
 
+```objc
+- (void) setBadgeTextAttributes:(NSDictionary<NSString *,id> *) textAttributes forState:(UIControlState) state;
+```
+
 #### Discussion
 
-The [`setTitleTextAttributes(_:for:)`](uibaritem/settitletextattributes(_:for:).md) method allows you to customize the appearance of the item’s title. Use this method to apply similar customizations to the badge’s value to achieve a consistent appearance.
+The [`setTitleTextAttributes(_:for:)`](../uibaritem/settitletextattributes%28_,for%29.md) method allows you to customize the appearance of the item’s title. Use this method to apply similar customizations to the badge’s value to achieve a consistent appearance.
 
 ## Parameters
 
-- `textAttributes`: A dictionary of text attributes. For a list of possible attributes, see [`NSAttributedString.Key`](https://developer.apple.com/documentation/foundation/nsattributedstring/key).
-- `state`: The item’s state. For possible values, see [`UIControl.State`](uicontrol/state-swift.struct.md).
+- `textAttributes`: A dictionary of text attributes. For a list of possible attributes, see [`NSAttributedString.Key`](../../Foundation/nsattributedstring/key.md).
+- `state`: The item’s state. For possible values, see [`UIControl.State`](../uicontrol/state-swift.struct.md).
 
 ## See Also
 
-- [var badgeValue: String?](uitabbaritem/badgevalue.md)
+### Configuring the item’s badge
+- [var badgeValue: String?](./badgevalue.md)
   The text that the item’s badge displays.
-- [var badgeColor: UIColor?](uitabbaritem/badgecolor.md)
+- [var badgeColor: UIColor?](./badgecolor.md)
   The background color of the item’s badge.
-- [func badgeTextAttributes(for: UIControl.State) -> [NSAttributedString.Key : Any]?](uitabbaritem/badgetextattributes(for:).md)
+- [func badgeTextAttributes(for: UIControl.State) -> [NSAttributedString.Key : Any]?](./badgetextattributes%28for%29.md)
   Returns the badge’s text attributes for the specified state.
 
 

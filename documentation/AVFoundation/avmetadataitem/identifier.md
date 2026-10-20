@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier for a metadata item.
 
@@ -18,6 +19,10 @@ An identifier for a metadata item.
 
 ```swift
 var identifier: AVMetadataIdentifier? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) AVMetadataIdentifier identifier;
 ```
 
 

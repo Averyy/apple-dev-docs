@@ -1,34 +1,36 @@
 # kUSBHostPortPropertyTestMode
 
 **Framework**: USBDriverKit  
-**Kind**: macro
+**Kind**: macro  
+**Role**: Macro
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 #define kUSBHostPortPropertyTestMode
 ```
 
 ## See Also
 
-- [kUSBHostPortPropertyUsbCPortNumber](kusbhostportpropertyusbcportnumber.md)
+### Port Properties
+- [kUSBHostPortPropertyUsbCPortNumber](./kusbhostportpropertyusbcportnumber.md)
 - [kUSBHostPortPropertyStatus](../iokit/kusbhostportpropertystatus.md)
-- [kUSBHostPortPropertySimulateInterrupt](kusbhostportpropertysimulateinterrupt.md)
-- [kUSBHostPortPropertyRemovable](kusbhostportpropertyremovable.md)
-- [kUSBHostPortPropertyPowerSource](kusbhostportpropertypowersource.md)
-- [kUSBHostPortPropertyPortNumber](kusbhostportpropertyportnumber.md)
-- [kUSBHostPortPropertyOvercurrent](kusbhostportpropertyovercurrent.md)
-- [kUSBHostPortPropertyExternalDeviceResetController](kusbhostportpropertyexternaldeviceresetcontroller.md)
-- [kUSBHostPortPropertyExternalDevicePowerController](kusbhostportpropertyexternaldevicepowercontroller.md)
-- [kUSBHostPortPropertyDisconnectInterval](kusbhostportpropertydisconnectinterval.md)
-- [kUSBHostPortPropertyConnectorType](kusbhostportpropertyconnectortype.md)
-- [kUSBHostPortPropertyConnectable](kusbhostportpropertyconnectable.md)
-- [kUSBHostPortPropertyCompanionPortNumber](kusbhostportpropertycompanionportnumber.md)
-- [kUSBHostPortPropertyCompanionIndex](kusbhostportpropertycompanionindex.md)
-- [kUSBHostPortPropertyCardReaderValidateDescriptors](kusbhostportpropertycardreadervalidatedescriptors.md)
+- [kUSBHostPortPropertySimulateInterrupt](./kusbhostportpropertysimulateinterrupt.md)
+- [kUSBHostPortPropertyRemovable](./kusbhostportpropertyremovable.md)
+- [kUSBHostPortPropertyPowerSource](./kusbhostportpropertypowersource.md)
+- [kUSBHostPortPropertyPortNumber](./kusbhostportpropertyportnumber.md)
+- [kUSBHostPortPropertyOvercurrent](./kusbhostportpropertyovercurrent.md)
+- [kUSBHostPortPropertyExternalDeviceResetController](./kusbhostportpropertyexternaldeviceresetcontroller.md)
+- [kUSBHostPortPropertyExternalDevicePowerController](./kusbhostportpropertyexternaldevicepowercontroller.md)
+- [kUSBHostPortPropertyDisconnectInterval](./kusbhostportpropertydisconnectinterval.md)
+- [kUSBHostPortPropertyConnectorType](./kusbhostportpropertyconnectortype.md)
+- [kUSBHostPortPropertyConnectable](./kusbhostportpropertyconnectable.md)
+- [kUSBHostPortPropertyCompanionPortNumber](./kusbhostportpropertycompanionportnumber.md)
+- [kUSBHostPortPropertyCompanionIndex](./kusbhostportpropertycompanionindex.md)
+- [kUSBHostPortPropertyCardReaderValidateDescriptors](./kusbhostportpropertycardreadervalidatedescriptors.md)
 
 
 ---

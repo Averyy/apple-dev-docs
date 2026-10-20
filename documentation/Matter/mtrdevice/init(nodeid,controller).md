@@ -1,7 +1,8 @@
 # init(nodeID:controller:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 init(nodeID: NSNumber, controller: MTRDeviceController)
+```
+
+```objc
++ (MTRDevice *) deviceWithNodeID:(NSNumber *) nodeID controller:(MTRDeviceController *) controller;
 ```
 
 

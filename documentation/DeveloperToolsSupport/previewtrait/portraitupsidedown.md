@@ -1,7 +1,8 @@
 # portraitUpsideDown
 
 **Framework**: DeveloperToolsSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The device is in portrait mode, but is upside down.
 
@@ -21,17 +22,20 @@ The device is in portrait mode, but is upside down.
 static var portraitUpsideDown: PreviewTrait<Preview.ViewTraits> { get }
 ```
 
+Available when `T` is `Preview.ViewTraits`.
+
 #### Discussion
 
-This is the same as [`portraitUpsideDown`](https://developer.apple.com/documentation/swiftui/interfaceorientation/portraitupsidedown).
+This is the same as [`portraitUpsideDown`](../../SwiftUI/interfaceorientation/portraitupsidedown.md).
 
 ## See Also
 
-- [static var portrait: PreviewTrait<Preview.ViewTraits>](previewtrait/portrait.md)
+### Getting an orientation
+- [static var portrait: PreviewTrait<Preview.ViewTraits>](./portrait.md)
   The device is in portrait mode, with the top of the device on top.
-- [static var landscapeLeft: PreviewTrait<Preview.ViewTraits>](previewtrait/landscapeleft.md)
+- [static var landscapeLeft: PreviewTrait<Preview.ViewTraits>](./landscapeleft.md)
   The device is in landscape mode, with the top of the device on the left.
-- [static var landscapeRight: PreviewTrait<Preview.ViewTraits>](previewtrait/landscaperight.md)
+- [static var landscapeRight: PreviewTrait<Preview.ViewTraits>](./landscaperight.md)
   The device is in landscape mode, with the top of the device on the right.
 
 

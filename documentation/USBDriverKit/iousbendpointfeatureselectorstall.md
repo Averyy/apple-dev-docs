@@ -1,25 +1,27 @@
 # IOUSBEndpointFeatureSelectorStall
 
 **Framework**: USBDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 19.0+
 
 ## Declaration
 
-```swift
+```c
 IOUSBEndpointFeatureSelectorStall
 ```
 
 ## See Also
 
-- [kIOUSBDeviceFeatureSelectorRemoteWakeup](kiousbdevicefeatureselectorremotewakeup.md)
-- [kIOUSBDeviceFeatureSelectorTestMode](kiousbdevicefeatureselectortestmode.md)
-- [kIOUSBDeviceFeatureSelectorU1Enable](kiousbdevicefeatureselectoru1enable.md)
-- [kIOUSBDeviceFeatureSelectorU2Enable](kiousbdevicefeatureselectoru2enable.md)
-- [kIOUSBDeviceFeatureSelectorLTMEnable](kiousbdevicefeatureselectorltmenable.md)
-- [kIOUSBInterfaceFeatureSelectorSuspend](kiousbinterfacefeatureselectorsuspend.md)
+### Getting the Selector Types
+- [kIOUSBDeviceFeatureSelectorRemoteWakeup](./kiousbdevicefeatureselectorremotewakeup.md)
+- [kIOUSBDeviceFeatureSelectorTestMode](./kiousbdevicefeatureselectortestmode.md)
+- [kIOUSBDeviceFeatureSelectorU1Enable](./kiousbdevicefeatureselectoru1enable.md)
+- [kIOUSBDeviceFeatureSelectorU2Enable](./kiousbdevicefeatureselectoru2enable.md)
+- [kIOUSBDeviceFeatureSelectorLTMEnable](./kiousbdevicefeatureselectorltmenable.md)
+- [kIOUSBInterfaceFeatureSelectorSuspend](./kiousbinterfacefeatureselectorsuspend.md)
 
 
 ---

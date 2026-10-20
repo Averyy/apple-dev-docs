@@ -1,7 +1,8 @@
 # documentType
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of document represented by the sample.
 
@@ -17,6 +18,10 @@ The type of document represented by the sample.
 
 ```swift
 var documentType: HKDocumentType { get }
+```
+
+```objc
+@property (strong, readonly) HKDocumentType * documentType;
 ```
 
 

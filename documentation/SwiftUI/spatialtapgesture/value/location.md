@@ -1,7 +1,8 @@
 # location
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The location of the tap gesture’s current event.
 
@@ -21,7 +22,8 @@ var location: CGPoint
 
 ## See Also
 
-- [var location3D: Point3D](spatialtapgesture/value/location3d.md)
+### Getting the tap location
+- [var location3D: Point3D](./location3d.md)
   The 3D location of the tap.
 
 

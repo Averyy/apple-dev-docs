@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The amount by which the framework scale the UV texture coordinates.
 
@@ -11,7 +12,7 @@ The amount by which the framework scale the UV texture coordinates.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,9 +22,10 @@ var scale: SIMD2<Float>
 
 ## See Also
 
-- [var offset: SIMD2<Float>](materialparametertypes/texturecoordinatetransform/offset.md)
+### Accessing the transform values
+- [var offset: SIMD2<Float>](./offset.md)
   The amount by which the framework offsets the entity’s UV texture coordinates.
-- [var rotation: Float](materialparametertypes/texturecoordinatetransform/rotation.md)
+- [var rotation: Float](./rotation.md)
   The amount by which the framework rotates the UV texture coordinates you specify in radians.
 
 

@@ -1,7 +1,8 @@
 # kSecOIDAPPLE_EXTENSION_ADC_APPLE_SIGNING
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kSecOIDAPPLE_EXTENSION_ADC_APPLE_SIGNING: CFString
+```
+
+```c
+extern CFStringRef const kSecOIDAPPLE_EXTENSION_ADC_APPLE_SIGNING;
 ```
 
 

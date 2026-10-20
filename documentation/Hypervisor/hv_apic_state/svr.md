@@ -1,15 +1,20 @@
 # svr
 
 **Framework**: Hypervisor  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 var svr: UInt32
+```
+
+```c
+uint32_t svr;
 ```
 
 

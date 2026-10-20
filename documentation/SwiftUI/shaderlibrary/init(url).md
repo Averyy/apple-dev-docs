@@ -1,7 +1,8 @@
 # init(url:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new Metal shader library from the contents of `url`, which must be the location  of precompiled Metal library. Functions compiled from the returned library will only be cached as long as the returned library exists.
 
@@ -21,7 +22,8 @@ init(url: URL)
 
 ## See Also
 
-- [init(data: Data)](shaderlibrary/init(data:).md)
+### Creating a shader library
+- [init(data: Data)](./init%28data%29.md)
   Creates a new Metal shader library from `data`, which must be the contents of precompiled Metal library. Functions compiled from the returned library will only be cached as long as the returned library exists.
 
 

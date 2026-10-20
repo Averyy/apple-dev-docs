@@ -1,7 +1,8 @@
 # ObjectAnchor
 
 **Framework**: ARKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A reference object ARKit is tracking.
 
@@ -21,56 +22,57 @@ You use object anchors to learn about the position and orientation of a real-wor
 ## Topics
 
 ### Inspecting an object anchor
-- [var boundingBox: ObjectAnchor.AxisAlignedBoundingBox](objectanchor/boundingbox.md)
+- [var boundingBox: ObjectAnchor.AxisAlignedBoundingBox](./objectanchor/boundingbox.md)
   The bounding box of an anchor.
-- [ObjectAnchor.AxisAlignedBoundingBox](objectanchor/axisalignedboundingbox.md)
+- [ObjectAnchor.AxisAlignedBoundingBox](./objectanchor/axisalignedboundingbox.md)
   Values that describe an axis-aligned bounding box.
-- [var description: String](objectanchor/description.md)
+- [var description: String](./objectanchor/description.md)
   A textual representation of this anchor.
-- [var isTracked: Bool](objectanchor/istracked.md)
+- [var isTracked: Bool](./objectanchor/istracked.md)
   A Boolean value that indicates whether the framework is currently tracking an object anchor.
-- [var originFromAnchorTransform: simd_float4x4](objectanchor/originfromanchortransform.md)
+- [var originFromAnchorTransform: simd_float4x4](./objectanchor/originfromanchortransform.md)
   The transform from the object anchor to the origin coordinate system.
-- [var referenceObject: ReferenceObject](objectanchor/referenceobject.md)
+- [var referenceObject: ReferenceObject](./objectanchor/referenceobject.md)
   The reference object that an anchor corresponds to.
-- [var inputFile: URL?](referenceobject/inputfile.md)
+- [var inputFile: URL?](./referenceobject/inputfile.md)
   The input file the framework uses for loading a reference object.
-- [var usdzFile: URL?](referenceobject/usdzfile.md)
+- [var usdzFile: URL?](./referenceobject/usdzfile.md)
   The trained USDZ file, if the reference object includes one.
-- [struct ReferenceObject](referenceobject.md)
+- [struct ReferenceObject](./referenceobject.md)
   An object the framework can track.
 ### Inspecting and comparing anchors
-- [var id: UUID](objectanchor/id-swift.property.md)
+- [var id: UUID](./objectanchor/id-swift.property.md)
   The unique identifier of this anchor.
-- [ObjectAnchor.ID](objectanchor/id-swift.typealias.md)
+- [ObjectAnchor.ID](./objectanchor/id-swift.typealias.md)
   A type representing the stable identity of the entity associated with an instance.
 ### Operators
-- [static func == (ObjectAnchor, ObjectAnchor) -> Bool](objectanchor/==(_:_:).md)
+- [static func == (ObjectAnchor, ObjectAnchor) -> Bool](./objectanchor/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two object anchors are equal.
 ### Default Implementations
-- [ARKitCoordinateSpaceProviding Implementations](objectanchor/arkitcoordinatespaceproviding-implementations.md)
+- [ARKitCoordinateSpaceProviding Implementations](./objectanchor/arkitcoordinatespaceproviding-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
-- [Anchor](anchor.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Identifiable](../swift/identifiable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [TrackableAnchor](trackableanchor.md)
+- [ARKitCoordinateSpaceProviding](./arkitcoordinatespaceproviding.md)
+- [Anchor](./anchor.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Identifiable](../Swift/identifiable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [TrackableAnchor](./trackableanchor.md)
 
 ## See Also
 
-- [class ObjectTrackingProvider](objecttrackingprovider.md)
+### Object tracking
+- [class ObjectTrackingProvider](./objecttrackingprovider.md)
   A source of real-time position of reference objects in a person’s environment.
-- [Exploring object tracking with ARKit](../visionos/exploring_object_tracking_with_arkit.md)
+- [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
   Find and track real-world objects in visionOS using reference objects you train with Create ML.
-- [Implementing object tracking in your app](../visionos/implementing-object-tracking-in-your-app.md)
+- [Implementing object tracking in your app](../visionOS/implementing-object-tracking-in-your-app.md)
   Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
 
 

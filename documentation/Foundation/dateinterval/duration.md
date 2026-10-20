@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The duration.
 
@@ -26,9 +27,10 @@ Precondition: `duration >= 0`
 
 ## See Also
 
-- [var start: Date](dateinterval/start.md)
+### Accessing Start Date, End Date, and Duration
+- [var start: Date](./start.md)
   The start date.
-- [var end: Date](dateinterval/end.md)
+- [var end: Date](./end.md)
   The end date.
 
 

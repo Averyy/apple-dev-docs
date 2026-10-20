@@ -1,7 +1,8 @@
 # image
 
 **Framework**: Push to Talk  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image file you associate with the participant.
 
@@ -17,9 +18,14 @@ The image file you associate with the participant.
 var image: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nullable) UIImage * image;
+```
+
 ## See Also
 
-- [var name: String](ptparticipant/name.md)
+### Inspecting a participant
+- [var name: String](./name.md)
   The name of the participant.
 
 

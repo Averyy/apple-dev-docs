@@ -1,7 +1,8 @@
 # init(mIsIndependentlyDecodable:mPreRollCount:mFlags:mReserved:)
 
 **Framework**: Core Audio Types  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 13.0+

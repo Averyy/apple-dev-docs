@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Create ML Components  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a transformer that unwraps an optional element or throws if the value is nil.
 

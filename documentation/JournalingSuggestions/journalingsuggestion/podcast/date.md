@@ -1,7 +1,8 @@
 # date
 
 **Framework**: Journaling Suggestions  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The podcast’s recent play date.
 

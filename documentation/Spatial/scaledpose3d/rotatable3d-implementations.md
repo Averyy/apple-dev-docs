@@ -1,13 +1,14 @@
 # Rotatable3D Implementations
 
-**Framework**: Spatial
+**Framework**: Spatial  
+**Role**: API Collection
 
 ## Topics
 
 ### Instance Methods
-- [func rotated(by: simd_quatd) -> ScaledPose3D](scaledpose3d/rotated(by:)-5mxbl.md)
+- [func rotated(by: simd_quatd) -> ScaledPose3D](./rotated%28by%29-5mxbl.md)
   Returns a scaled pose that results from rotating with the specified quaternion.
-- [func rotated(by: Rotation3D) -> ScaledPose3D](scaledpose3d/rotated(by:)-x75b.md)
+- [func rotated(by: Rotation3D) -> ScaledPose3D](./rotated%28by%29-x75b.md)
   Returns a scaled pose that results from applying the specified rotation.
 
 

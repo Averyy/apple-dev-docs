@@ -1,7 +1,8 @@
 # spacingUseDefault
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default spacing for subviews within a stack view.
 
@@ -18,13 +19,18 @@ The default spacing for subviews within a stack view.
 class let spacingUseDefault: CGFloat
 ```
 
+```c
+static const CGFloat UIStackViewSpacingUseDefault;
+```
+
 ## See Also
 
-- [func customSpacing(after: UIView) -> CGFloat](uistackview/customspacing(after:).md)
+### Adding space between items
+- [func customSpacing(after: UIView) -> CGFloat](./customspacing%28after%29.md)
   Returns the custom spacing after the specified view.
-- [func setCustomSpacing(CGFloat, after: UIView)](uistackview/setcustomspacing(_:after:).md)
+- [func setCustomSpacing(CGFloat, after: UIView)](./setcustomspacing%28_,after%29.md)
   Applies custom spacing after the specified view.
-- [class let spacingUseSystem: CGFloat](uistackview/spacingusesystem.md)
+- [class let spacingUseSystem: CGFloat](./spacingusesystem.md)
   The system-defined spacing to the neighboring view.
 
 

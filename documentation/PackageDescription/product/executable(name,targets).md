@@ -1,7 +1,8 @@
 # executable(name:targets:)
 
 **Framework**: PackageDescription  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates an executable package product.
 
@@ -22,7 +23,8 @@ A `Product` instance.
 
 ## See Also
 
-- [Product.Executable](product/executable.md)
+### Creating an Executable Product
+- [Product.Executable](./executable.md)
   The executable product of a Swift package.
 
 

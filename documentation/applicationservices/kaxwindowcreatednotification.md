@@ -1,7 +1,8 @@
 # kAXWindowCreatedNotification
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A window was created. Carbon automatically sends this notification when window is created, as long as the window is implemented using Carbon window mechanisms.
 
@@ -12,6 +13,10 @@ A window was created. Carbon automatically sends this notification when window i
 
 ```swift
 var kAXWindowCreatedNotification: String { get }
+```
+
+```c
+#define kAXWindowCreatedNotification
 ```
 
 

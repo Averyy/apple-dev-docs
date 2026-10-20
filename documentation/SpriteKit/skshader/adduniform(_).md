@@ -1,7 +1,8 @@
 # addUniform(_:)
 
 **Framework**: SpriteKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a uniform to the shader.
 
@@ -10,7 +11,7 @@ Adds a uniform to the shader.
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Adds a uniform to the shader.
 
 ```swift
 func addUniform(_ uniform: SKUniform)
+```
+
+```objc
+- (void) addUniform:(SKUniform *) uniform;
 ```
 
 #### Discussion
@@ -30,11 +35,12 @@ The uniform variable is automatically accessible inside your shader; do not add 
 
 ## See Also
 
-- [func removeUniformNamed(String)](skshader/removeuniformnamed(_:).md)
+### Providing Uniform Data to a Shader
+- [func removeUniformNamed(String)](./removeuniformnamed%28_%29.md)
   Removes a uniform from the shader.
-- [var uniforms: [SKUniform]](skshader/uniforms.md)
+- [var uniforms: [SKUniform]](./uniforms.md)
   The list of uniforms associated with the shader.
-- [func uniformNamed(String) -> SKUniform?](skshader/uniformnamed(_:).md)
+- [func uniformNamed(String) -> SKUniform?](./uniformnamed%28_%29.md)
   Returns the uniform object corresponding to a particular uniform variable.
 
 

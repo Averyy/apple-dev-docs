@@ -1,7 +1,8 @@
 # keyAERangeStart
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Specifies the first Apple event object in a desired range.
 

@@ -1,7 +1,8 @@
 # AppAssetLibraryPlacementCommonRelationships.AppCustomProductPageLocalization.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID of an app custom product page localization resource on which the placement appears.
 
@@ -10,13 +11,13 @@ The type and ID of an app custom product page localization resource on which the
 
 ## Declaration
 
-```swift
+```
 object AppAssetLibraryPlacementCommonRelationships.AppCustomProductPageLocalization.Data
 ```
 
 ## Properties
 
-- `type` (string) *(required)*
+- `type` (string) *(required)*: **Allowed Values**: `appCustomProductPageLocalizations`
 - `id` (string) *(required)*
 
 

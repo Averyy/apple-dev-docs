@@ -1,7 +1,8 @@
 # init(text:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a simple-text print formatter initialized with plain text.
 
@@ -17,6 +18,10 @@ Returns a simple-text print formatter initialized with plain text.
 init(text: String)
 ```
 
+```objc
+- (instancetype) initWithText:(NSString *) text;
+```
+
 #### Return Value
 
 An initialized instance of `UISimpleTextPrintFormatter` or `nil` if the object could not be created.
@@ -27,9 +32,11 @@ An initialized instance of `UISimpleTextPrintFormatter` or `nil` if the object c
 
 ## See Also
 
-- [var text: String?](uisimpletextprintformatter/text.md)
+### Related Documentation
+- [var text: String?](./text.md)
   A string of plain text.
-- [init(attributedText: NSAttributedString)](uisimpletextprintformatter/init(attributedtext:).md)
+### Creating a simple-text print formatter
+- [init(attributedText: NSAttributedString)](./init%28attributedtext%29.md)
   Returns a simple-text print formatter initialized with attributed text.
 
 

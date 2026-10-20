@@ -1,7 +1,8 @@
 # StreamProtocol
 
 **Framework**: Network  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Types that conform to the StreamProtocol protocol expose methods for sending and receiving byte streams.
 
@@ -23,12 +24,12 @@ protocol StreamProtocol : OneToOneProtocol
 ## Relationships
 
 ### Inherits From
-- [NetworkProtocolOptions](networkprotocoloptions.md)
-- [OneToOneProtocol](onetooneprotocol.md)
+- [NetworkProtocolOptions](./networkprotocoloptions.md)
+- [OneToOneProtocol](./onetooneprotocol.md)
 ### Conforming Types
-- [QUICStream](quicstream.md)
-- [TCP](tcp.md)
-- [TLS](tls.md)
+- [QUICStream](./quicstream.md)
+- [TCP](./tcp.md)
+- [TLS](./tls.md)
 
 
 ---

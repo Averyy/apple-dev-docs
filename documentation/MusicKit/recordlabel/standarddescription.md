@@ -1,7 +1,8 @@
 # standardDescription
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A description to show when the record label is prominently displayed.
 

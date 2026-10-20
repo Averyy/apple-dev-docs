@@ -1,7 +1,8 @@
 # value
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of int64 values.
 
@@ -10,7 +11,7 @@ An array of int64 values.
 
 ## Declaration
 
-```swift
+```
 attribute Int64[]? value;
 ```
 

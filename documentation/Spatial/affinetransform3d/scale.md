@@ -1,7 +1,8 @@
 # scale
 
 **Framework**: Spatial  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The affine transform’s scale.
 
@@ -20,11 +21,16 @@ The affine transform’s scale.
 var scale: Size3D { get }
 ```
 
+```c
+static SPSize3D SPAffineTransform3DGetScale(SPAffineTransform3D transform);
+```
+
 ## See Also
 
-- [var rotation: Rotation3D?](affinetransform3d/rotation.md)
+### Decomposing a 3D affine transform
+- [var rotation: Rotation3D?](./rotation.md)
   The affine transform’s rotation.
-- [var translation: Vector3D](affinetransform3d/translation.md)
+- [var translation: Vector3D](./translation.md)
   The translation component of the affine transform.
 
 

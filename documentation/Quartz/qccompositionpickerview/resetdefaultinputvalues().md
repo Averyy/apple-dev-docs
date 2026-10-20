@@ -1,12 +1,15 @@
 # resetDefaultInputValues()
 
 **Framework**: Quartz  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Clears all previously set default values for composition input parameters.
 
 **Availability**:
-- macOS 10.4+
+- macOS 10.4+ - Deprecated in 10.15
+
+> **Deprecated**: QuartzComposer API deprecated. (Define QC_SILENCE_DEPRECATION to silence these warnings)
 
 ## Declaration
 
@@ -14,13 +17,18 @@ Clears all previously set default values for composition input parameters.
 func resetDefaultInputValues()
 ```
 
+```objc
+- (void) resetDefaultInputValues;
+```
+
 #### Discussion
 
-This method resets the defaults that were set with the method [`setDefaultValue(_:forInputKey:)`](qccompositionpickerview/setdefaultvalue(_:forinputkey:).md).
+This method resets the defaults that were set with the method [`setDefaultValue(_:forInputKey:)`](./setdefaultvalue%28_,forinputkey%29.md).
 
 ## See Also
 
-- [func setDefaultValue(Any!, forInputKey: String!)](qccompositionpickerview/setdefaultvalue(_:forinputkey:).md)
+### Setting Composition Input Parameters
+- [func setDefaultValue(Any!, forInputKey: String!)](./setdefaultvalue%28_,forinputkey%29.md)
   Sets the default value to use for a composition input parameter.
 
 

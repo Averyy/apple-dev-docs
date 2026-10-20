@@ -1,7 +1,8 @@
 # status
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The status of reading sample buffers from the asset.
 
@@ -19,19 +20,24 @@ The status of reading sample buffers from the asset.
 var status: AVAssetReader.Status { get }
 ```
 
+```objc
+@property (readonly) AVAssetReaderStatus status;
+```
+
 #### Discussion
 
-Check the value of this property when the [`copyNextSampleBuffer()`](avassetreaderoutput/copynextsamplebuffer().md) method on [`AVAssetReaderOutput`](avassetreaderoutput.md) returns `nil` to determine why the output can’t read more data.
+Check the value of this property when the [`copyNextSampleBuffer()`](../avassetreaderoutput/copynextsamplebuffer%28%29.md) method on [`AVAssetReaderOutput`](../avassetreaderoutput.md) returns `nil` to determine why the output can’t read more data.
 
 This property is thread safe.
 
 ## See Also
 
-- [var timeRange: CMTimeRange](avassetreader/timerange.md)
+### Configuring reading
+- [var timeRange: CMTimeRange](./timerange.md)
   The time range within the asset to read.
-- [AVAssetReader.Status](avassetreader/status-swift.enum.md)
+- [AVAssetReader.Status](./status-swift.enum.md)
   Values that represent the possible states of an asset reader.
-- [var error: (any Error)?](avassetreader/error.md)
+- [var error: (any Error)?](./error.md)
   An error that describes the reason for a failure.
 
 

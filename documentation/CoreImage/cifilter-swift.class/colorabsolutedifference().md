@@ -1,7 +1,8 @@
 # colorAbsoluteDifference()
 
 **Framework**: Core Image  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calculates the absolute difference between each color component in the input images.
 
@@ -19,6 +20,10 @@ Calculates the absolute difference between each color component in the input ima
 class func colorAbsoluteDifference() -> any CIFilter & CIColorAbsoluteDifference
 ```
 
+```objc
++ (CIFilter<CIColorAbsoluteDifference> *) colorAbsoluteDifferenceFilter;
+```
+
 #### Return Value
 
 An image containing the absolute color difference between the two input images.
@@ -29,8 +34,8 @@ This method applies the color absolute difference filter to an image. This filte
 
 The absolute difference filter uses the following properties:
 
-- **`inputImage`**: The first [`CIImage`](ciimage.md) for differencing.
-- **`inputImage2`**: The second [`CIImage`](ciimage.md) for differencing.
+- **`inputImage`**: The first [`CIImage`](../ciimage.md) for differencing.
+- **`inputImage2`**: The second [`CIImage`](../ciimage.md) for differencing.
 
 The following code creates a filter that results in the color difference between two images:
 
@@ -43,39 +48,40 @@ func colorAbsolute(inputImage: CIImage, inputImage2: CIImage) -> CIImage {
 }
 ```
 
-![Three images arranged with two images on the left and an image on the right. The top left image is a solid green color, and the bottom left image is a single palm tree with a clear sky. The right image shows the result of applying the color absolute difference filter to the two images on the left. The palm tree is now highlighted against the background.](/images/com.apple.coreimage/media-4332166@2x.png)
+![Three images arranged with two images on the left and an image on the right. The top left image is a solid green color, and the bottom left image is a single palm tree with a clear sky. The right image shows the result of applying the color absolute difference filter to the two images on the left. The palm tree is now highlighted against the background.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-4332166@2x.png)
 
 ## See Also
 
-- [class func colorClamp() -> any CIFilter & CIColorClamp](cifilter-swift.class/colorclamp.md)
+### Filters
+- [class func colorClamp() -> any CIFilter & CIColorClamp](./colorclamp%28%29.md)
   Alters the colors in an image based on color components.
-- [class func colorControls() -> any CIFilter & CIColorControls](cifilter-swift.class/colorcontrols.md)
+- [class func colorControls() -> any CIFilter & CIColorControls](./colorcontrols%28%29.md)
   Alters the brightness, contrast, and saturation of an image’s colors.
-- [class func colorMatrix() -> any CIFilter & CIColorMatrix](cifilter-swift.class/colormatrix.md)
+- [class func colorMatrix() -> any CIFilter & CIColorMatrix](./colormatrix%28%29.md)
   Alters the colors in an image based on vectors provided.
-- [class func colorPolynomial() -> any CIFilter & CIColorPolynomial](cifilter-swift.class/colorpolynomial.md)
+- [class func colorPolynomial() -> any CIFilter & CIColorPolynomial](./colorpolynomial%28%29.md)
   Alters an image’s colors.
-- [class func colorThreshold() -> any CIFilter & CIColorThreshold](cifilter-swift.class/colorthreshold.md)
+- [class func colorThreshold() -> any CIFilter & CIColorThreshold](./colorthreshold%28%29.md)
   Compares the red, green, and blue components of the input image to a threshold and sets them to 1 or 0.
-- [class func colorThresholdOtsu() -> any CIFilter & CIColorThresholdOtsu](cifilter-swift.class/colorthresholdotsu.md)
+- [class func colorThresholdOtsu() -> any CIFilter & CIColorThresholdOtsu](./colorthresholdotsu%28%29.md)
   Compares the red, green, and blue components of the input image against a threshold calculated using Otsu’s algorithm.
-- [class func depthToDisparity() -> any CIFilter & CIDepthToDisparity](cifilter-swift.class/depthtodisparity.md)
+- [class func depthToDisparity() -> any CIFilter & CIDepthToDisparity](./depthtodisparity%28%29.md)
   Converts from an image containing depth data to an image containing disparity data.
-- [class func disparityToDepth() -> any CIFilter & CIDisparityToDepth](cifilter-swift.class/disparitytodepth.md)
+- [class func disparityToDepth() -> any CIFilter & CIDisparityToDepth](./disparitytodepth%28%29.md)
   Creates depth data from an image containing disparity data.
-- [class func exposureAdjust() -> any CIFilter & CIExposureAdjust](cifilter-swift.class/exposureadjust.md)
+- [class func exposureAdjust() -> any CIFilter & CIExposureAdjust](./exposureadjust%28%29.md)
   Adjusts an image’s exposure.
-- [class func gammaAdjust() -> any CIFilter & CIGammaAdjust](cifilter-swift.class/gammaadjust.md)
+- [class func gammaAdjust() -> any CIFilter & CIGammaAdjust](./gammaadjust%28%29.md)
   Alters an image’s transition between black and white.
-- [class func hueAdjust() -> any CIFilter & CIHueAdjust](cifilter-swift.class/hueadjust.md)
+- [class func hueAdjust() -> any CIFilter & CIHueAdjust](./hueadjust%28%29.md)
   Modifies an image’s hue.
-- [class func linearToSRGBToneCurve() -> any CIFilter & CILinearToSRGBToneCurve](cifilter-swift.class/lineartosrgbtonecurve.md)
+- [class func linearToSRGBToneCurve() -> any CIFilter & CILinearToSRGBToneCurve](./lineartosrgbtonecurve%28%29.md)
   Alters an image’s color intensity.
-- [class func sRGBToneCurveToLinear() -> any CIFilter & CISRGBToneCurveToLinear](cifilter-swift.class/srgbtonecurvetolinear.md)
+- [class func sRGBToneCurveToLinear() -> any CIFilter & CISRGBToneCurveToLinear](./srgbtonecurvetolinear%28%29.md)
   Converts the colors in an image from sRGB to linear.
-- [class func temperatureAndTint() -> any CIFilter & CITemperatureAndTint](cifilter-swift.class/temperatureandtint.md)
+- [class func temperatureAndTint() -> any CIFilter & CITemperatureAndTint](./temperatureandtint%28%29.md)
   Alters an image’s temperature and tint.
-- [class func toneCurve() -> any CIFilter & CIToneCurve](cifilter-swift.class/tonecurve.md)
+- [class func toneCurve() -> any CIFilter & CIToneCurve](./tonecurve%28%29.md)
   Alters an image’s tone curve according to a series of data points.
 
 

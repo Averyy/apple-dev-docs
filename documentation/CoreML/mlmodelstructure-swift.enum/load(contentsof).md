@@ -1,7 +1,8 @@
 # load(contentsOf:)
 
 **Framework**: Core ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Load the model structure asynchronously given the location of its on-disk representation.
 
@@ -26,7 +27,8 @@ static func load(contentsOf url: URL) async throws -> MLModelStructure
 
 ## See Also
 
-- [static func load(asset: MLModelAsset) async throws -> MLModelStructure](mlmodelstructure-swift.enum/load(asset:).md)
+### Loading a model structure
+- [static func load(asset: MLModelAsset) async throws -> MLModelStructure](./load%28asset%29.md)
   Load the model structure asynchronously from the model asset.
 
 

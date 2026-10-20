@@ -1,7 +1,8 @@
 # NSObservationTrackingEnabled
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether the system automatically tracks changes to observable objects in macOS 15.
 
@@ -9,9 +10,10 @@ A Boolean value that indicates whether the system automatically tracks changes t
 - iOS 15.0+
 - iPadOS 15.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSObservationTrackingEnabled`
+- **Type**: boolean
 
 #### Discussion
 
@@ -21,7 +23,8 @@ In macOS 26 and later, this key isn’t required. The system automatically track
 
 ## See Also
 
-- [UIObservationTrackingEnabled](information-property-list/uiobservationtrackingenabled.md)
+### Automatic observation tracking
+- [UIObservationTrackingEnabled](./uiobservationtrackingenabled.md)
   A Boolean value that indicates whether the system automatically tracks changes to observable objects in iOS 18.
 
 

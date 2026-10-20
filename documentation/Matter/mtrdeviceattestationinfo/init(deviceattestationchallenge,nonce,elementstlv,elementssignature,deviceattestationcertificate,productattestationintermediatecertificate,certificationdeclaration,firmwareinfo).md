@@ -1,7 +1,8 @@
 # init(deviceAttestationChallenge:nonce:elementsTLV:elementsSignature:deviceAttestationCertificate:productAttestationIntermediateCertificate:certificationDeclaration:firmwareInfo:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 init(deviceAttestationChallenge challenge: Data, nonce: Data, elementsTLV: Data, elementsSignature: Data, deviceAttestationCertificate: Data, productAttestationIntermediateCertificate processAttestationIntermediateCertificate: Data, certificationDeclaration: Data, firmwareInfo: Data)
+```
+
+```objc
+- (instancetype) initWithDeviceAttestationChallenge:(NSData *) challenge nonce:(NSData *) nonce elementsTLV:(MTRTLVBytes) elementsTLV elementsSignature:(NSData *) elementsSignature deviceAttestationCertificate:(MTRCertificateDERBytes) deviceAttestationCertificate productAttestationIntermediateCertificate:(MTRCertificateDERBytes) processAttestationIntermediateCertificate certificationDeclaration:(NSData *) certificationDeclaration firmwareInfo:(NSData *) firmwareInfo;
 ```
 
 

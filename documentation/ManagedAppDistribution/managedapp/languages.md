@@ -1,7 +1,8 @@
 # languages
 
 **Framework**: ManagedAppDistribution  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The app’s supported languages.
 
@@ -20,11 +21,12 @@ let languages: [Locale.Language]
 
 #### Discussion
 
-> 💡 **Tip**: Use `Locale.localizedString(forLanguageCode:)` to obtain a display name for the language, using [`metadataLanguage`](managedapp/metadatalanguage.md)  to create the `Locale`.
+> 💡 **Tip**: Use `Locale.localizedString(forLanguageCode:)` to obtain a display name for the language, using [`metadataLanguage`](./metadatalanguage.md)  to create the `Locale`.
 
 ## See Also
 
-- [let metadataLanguage: Locale.Language?](managedapp/metadatalanguage.md)
+### Obtaining supported languages
+- [let metadataLanguage: Locale.Language?](./metadatalanguage.md)
   The language of the localized properties of this managed app.
 
 

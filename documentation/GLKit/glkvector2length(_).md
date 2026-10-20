@@ -1,7 +1,8 @@
 # GLKVector2Length(_:)
 
 **Framework**: GLKit  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the length of a vector.
 
@@ -17,6 +18,10 @@ Returns the length of a vector.
 func GLKVector2Length(_ vector: GLKVector2) -> Float
 ```
 
+```c
+static float GLKVector2Length(GLKVector2 vector);
+```
+
 #### Return Value
 
 The length of the vector.
@@ -27,7 +32,8 @@ The length of the vector.
 
 ## See Also
 
-- [func GLKVector2Distance(GLKVector2, GLKVector2) -> Float](glkvector2distance(_:_:).md)
+### Retrieving Information About a Vector
+- [func GLKVector2Distance(GLKVector2, GLKVector2) -> Float](./glkvector2distance%28_,_%29.md)
   Returns the distance between two points.
 
 

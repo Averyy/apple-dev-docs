@@ -1,7 +1,8 @@
 # AVSampleBufferVideoRenderer.PresentationTimeExpectation
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Options that specify the expected presentation time stamps of enqueue samples.
 
@@ -22,19 +23,20 @@ enum PresentationTimeExpectation
 ## Topics
 
 ### Expectations
-- [AVSampleBufferVideoRenderer.PresentationTimeExpectation.minimumUpcoming(_:)](avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum/minimumupcoming(_:).md)
-- [AVSampleBufferVideoRenderer.PresentationTimeExpectation.monotonicallyIncreasing](avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum/monotonicallyincreasing.md)
-- [AVSampleBufferVideoRenderer.PresentationTimeExpectation.none](avsamplebuffervideorenderer/presentationtimeexpectation-swift.enum/none.md)
+- [AVSampleBufferVideoRenderer.PresentationTimeExpectation.minimumUpcoming(_:)](./presentationtimeexpectation-swift.enum/minimumupcoming%28_%29.md)
+- [AVSampleBufferVideoRenderer.PresentationTimeExpectation.monotonicallyIncreasing](./presentationtimeexpectation-swift.enum/monotonicallyincreasing.md)
+- [AVSampleBufferVideoRenderer.PresentationTimeExpectation.none](./presentationtimeexpectation-swift.enum/none.md)
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var presentationTimeExpectation: AVSampleBufferVideoRenderer.PresentationTimeExpectation](avsamplebuffervideorenderer/presentationtimeexpectation-swift.property.md)
+### Setting presentation time expectations
+- [var presentationTimeExpectation: AVSampleBufferVideoRenderer.PresentationTimeExpectation](./presentationtimeexpectation-swift.property.md)
 
 
 ---

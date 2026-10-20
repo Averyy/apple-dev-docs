@@ -2,6 +2,7 @@
 
 **Framework**: Media Player  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Ends playback of the current item.
@@ -19,19 +20,24 @@ Ends playback of the current item.
 func stop()
 ```
 
+```objc
+- (void) stop;
+```
+
 #### Discussion
 
 This method stops playback of the current item and clears the playback queue. You must provide a new playback queue before playing new media items.
 
 ## See Also
 
-- [func play()](mpmediaplayback/play.md)
+### Starting and stopping playback
+- [func play()](./play%28%29.md)
   Initiates playback of the current item.
-- [func pause()](mpmediaplayback/pause.md)
+- [func pause()](./pause%28%29.md)
   Pauses playback of the current item.
-- [func prepareToPlay()](mpmediaplayback/preparetoplay.md)
+- [func prepareToPlay()](./preparetoplay%28%29.md)
   Prepares a media player for playback.
-- [var isPreparedToPlay: Bool](mpmediaplayback/ispreparedtoplay.md)
+- [var isPreparedToPlay: Bool](./ispreparedtoplay.md)
   A Boolean value indicating whether a media player is ready to play.
 
 

@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,9 +18,9 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kDebugTypeDisplay](1646499-anonymous/kdebugtypedisplay.md)
-- [kDebugTypeNone](1646499-anonymous/kdebugtypenone.md)
-- [kDebugTypeSerial](1646499-anonymous/kdebugtypeserial.md)
+- [kDebugTypeDisplay](./api-1646499-anonymous/kdebugtypedisplay.md)
+- [kDebugTypeNone](./api-1646499-anonymous/kdebugtypenone.md)
+- [kDebugTypeSerial](./api-1646499-anonymous/kdebugtypeserial.md)
 
 
 ---

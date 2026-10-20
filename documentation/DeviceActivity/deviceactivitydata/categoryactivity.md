@@ -1,7 +1,8 @@
 # DeviceActivityData.CategoryActivity
 
 **Framework**: Device Activity  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Categorized representation of application and web domain activity.
 
@@ -19,28 +20,29 @@ struct CategoryActivity
 ## Topics
 
 ### Identifying the category
-- [var category: ActivityCategory](deviceactivitydata/categoryactivity/category.md)
+- [var category: ActivityCategory](./categoryactivity/category.md)
   Access the category of the activity.
 ### Measuring activity
-- [var totalActivityDuration: TimeInterval](deviceactivitydata/categoryactivity/totalactivityduration.md)
+- [var totalActivityDuration: TimeInterval](./categoryactivity/totalactivityduration.md)
   Access the total activity time for this category.
 ### Accessing contributing activities
-- [var applications: DeviceActivityResults<DeviceActivityData.ApplicationActivity>](deviceactivitydata/categoryactivity/applications.md)
+- [var applications: DeviceActivityResults<DeviceActivityData.ApplicationActivity>](./categoryactivity/applications.md)
   Access the application activity that contributed to this category’s total activity time.
-- [var webDomains: DeviceActivityResults<DeviceActivityData.WebDomainActivity>](deviceactivitydata/categoryactivity/webdomains.md)
+- [var webDomains: DeviceActivityResults<DeviceActivityData.WebDomainActivity>](./categoryactivity/webdomains.md)
   Access the web domain activity that contributed to this category’s total activity time.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
 
 ## See Also
 
-- [DeviceActivityData.ApplicationActivity](deviceactivitydata/applicationactivity.md)
+### Organizing activity by type
+- [DeviceActivityData.ApplicationActivity](./applicationactivity.md)
   Activity data for an application.
-- [DeviceActivityData.WebDomainActivity](deviceactivitydata/webdomainactivity.md)
+- [DeviceActivityData.WebDomainActivity](./webdomainactivity.md)
   Activity data for a web domain.
 
 

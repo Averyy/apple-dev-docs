@@ -1,7 +1,8 @@
 # wholeSymbol
 
 **Framework**: Symbols  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An effect that makes all layers disappear simultaneously.
 
@@ -22,7 +23,8 @@ var wholeSymbol: DisappearSymbolEffect { get }
 
 ## See Also
 
-- [var byLayer: DisappearSymbolEffect](disappearsymboleffect/bylayer.md)
+### Determining effect scope
+- [var byLayer: DisappearSymbolEffect](./bylayer.md)
   An effect that makes each layer disappear separately.
 
 

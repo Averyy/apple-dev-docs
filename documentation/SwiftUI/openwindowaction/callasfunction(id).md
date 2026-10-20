@@ -1,7 +1,8 @@
 # callAsFunction(id:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Opens a window that’s associated with the specified identifier.
 
@@ -21,13 +22,13 @@ Opens a window that’s associated with the specified identifier.
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`openWindow`](environmentvalues/openwindow.md) action with an identifier:
+Don’t call this method directly. SwiftUI calls it when you call the [`openWindow`](../environmentvalues/openwindow.md) action with an identifier:
 
 ```swift
 openWindow(id: "message")
 ```
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 
@@ -35,9 +36,10 @@ For information about how Swift uses the `callAsFunction()` method to simplify c
 
 ## See Also
 
-- [func callAsFunction<D>(id: String, value: D)](openwindowaction/callasfunction(id:value:).md)
+### Calling the action
+- [func callAsFunction<D>(id: String, value: D)](./callasfunction%28id,value%29.md)
   Opens a window defined by the window group that presents the specified value type and that’s associated with the specified identifier.
-- [func callAsFunction<D>(value: D)](openwindowaction/callasfunction(value:).md)
+- [func callAsFunction<D>(value: D)](./callasfunction%28value%29.md)
   Opens a window defined by a window group that presents the type of the specified value.
 
 

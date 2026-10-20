@@ -1,7 +1,8 @@
 # color
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The color of the printed text.
 
@@ -17,15 +18,20 @@ The color of the printed text.
 var color: UIColor? { get set }
 ```
 
+```objc
+@property (nonatomic, strong, nullable) UIColor * color;
+```
+
 #### Discussion
 
 If the value of this property is `nil` (the default), UIKit uses a black color when printing.
 
 ## See Also
 
-- [var font: UIFont?](uisimpletextprintformatter/font.md)
+### Text attributes for printed content
+- [var font: UIFont?](./font.md)
   The font of the printed text.
-- [var textAlignment: NSTextAlignment](uisimpletextprintformatter/textalignment.md)
+- [var textAlignment: NSTextAlignment](./textalignment.md)
   The alignment of the printed text.
 
 

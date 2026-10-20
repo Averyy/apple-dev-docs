@@ -1,7 +1,8 @@
 # LowLevelRenderContextStandalone.Resources
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Resources needed for a render context
 
@@ -20,22 +21,23 @@ struct Resources
 ## Topics
 
 ### Creating render resources
-- [init(device: any MTLDevice) async throws](lowlevelrendercontextstandalone/resources/init(device:).md)
+- [init(device: any MTLDevice) async throws](./resources/init%28device%29.md)
   Asynchronously prepare resources for the given device.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws](lowlevelrendercontextstandalone/init(configuration:resources:).md)
+### Creating a render context
+- [init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws](./init%28configuration,resources%29.md)
   Creates a standalone render context using resources prepared ahead of time.
-- [init(configuration: LowLevelRenderContextStandalone.Configuration) async throws](lowlevelrendercontextstandalone/init(configuration:).md)
+- [init(configuration: LowLevelRenderContextStandalone.Configuration) async throws](./init%28configuration%29.md)
   Creates a standalone render context, asynchronously preparing required resources.
-- [LowLevelRenderContextStandalone.Configuration](lowlevelrendercontextstandalone/configuration.md)
+- [LowLevelRenderContextStandalone.Configuration](./configuration.md)
   Configuration for creating a standalone render context backed by a Metal device.
 
 

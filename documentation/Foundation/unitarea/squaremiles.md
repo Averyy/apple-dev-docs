@@ -1,7 +1,8 @@
 # squareMiles
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The square miles unit of area.
 
@@ -21,33 +22,38 @@ The square miles unit of area.
 class var squareMiles: UnitArea { get }
 ```
 
+```objc
+@property (class, copy, readonly) NSUnitArea * squareMiles;
+```
+
 ## See Also
 
-- [class var squareMegameters: UnitArea](unitarea/squaremegameters.md)
+### Accessing Predefined Units
+- [class var squareMegameters: UnitArea](./squaremegameters.md)
   The square megameters unit of area.
-- [class var squareKilometers: UnitArea](unitarea/squarekilometers.md)
+- [class var squareKilometers: UnitArea](./squarekilometers.md)
   The square kilometers unit of area.
-- [class var squareMeters: UnitArea](unitarea/squaremeters.md)
+- [class var squareMeters: UnitArea](./squaremeters.md)
   The square meters unit of area.
-- [class var squareCentimeters: UnitArea](unitarea/squarecentimeters.md)
+- [class var squareCentimeters: UnitArea](./squarecentimeters.md)
   The square centimeters unit of area.
-- [class var squareMillimeters: UnitArea](unitarea/squaremillimeters.md)
+- [class var squareMillimeters: UnitArea](./squaremillimeters.md)
   The square millimeters unit of area.
-- [class var squareMicrometers: UnitArea](unitarea/squaremicrometers.md)
+- [class var squareMicrometers: UnitArea](./squaremicrometers.md)
   The square micrometers unit of area.
-- [class var squareNanometers: UnitArea](unitarea/squarenanometers.md)
+- [class var squareNanometers: UnitArea](./squarenanometers.md)
   The square nanometers unit of area.
-- [class var squareInches: UnitArea](unitarea/squareinches.md)
+- [class var squareInches: UnitArea](./squareinches.md)
   The square inches unit of area.
-- [class var squareFeet: UnitArea](unitarea/squarefeet.md)
+- [class var squareFeet: UnitArea](./squarefeet.md)
   The square feet unit of area.
-- [class var squareYards: UnitArea](unitarea/squareyards.md)
+- [class var squareYards: UnitArea](./squareyards.md)
   The square yards unit of area.
-- [class var acres: UnitArea](unitarea/acres.md)
+- [class var acres: UnitArea](./acres.md)
   The acres unit of area.
-- [class var ares: UnitArea](unitarea/ares.md)
+- [class var ares: UnitArea](./ares.md)
   The ares unit of area.
-- [class var hectares: UnitArea](unitarea/hectares.md)
+- [class var hectares: UnitArea](./hectares.md)
   The hectares unit of area.
 
 

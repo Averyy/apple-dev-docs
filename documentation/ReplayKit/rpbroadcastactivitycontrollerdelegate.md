@@ -1,12 +1,15 @@
 # RPBroadcastActivityControllerDelegate
 
 **Framework**: ReplayKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A protocol that defines the methods to implement to respond to selection events from a broadcast activity controller.
 
 **Availability**:
-- macOS 11.0+
+- macOS 11.0+ - Deprecated in 27.0
+
+> **Deprecated**: No longer supported
 
 ## Declaration
 
@@ -14,26 +17,31 @@ A protocol that defines the methods to implement to respond to selection events 
 protocol RPBroadcastActivityControllerDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol RPBroadcastActivityControllerDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to User Selection
-- [func broadcastActivityController(RPBroadcastActivityController, didFinishWith: RPBroadcastController?, error: (any Error)?)](rpbroadcastactivitycontrollerdelegate/broadcastactivitycontroller(_:didfinishwith:error:).md)
+- [func broadcastActivityController(RPBroadcastActivityController, didFinishWith: RPBroadcastController?, error: (any Error)?)](./rpbroadcastactivitycontrollerdelegate/broadcastactivitycontroller%28_,didfinishwith,error%29.md)
   Tells the delegate that a user selected a broadcast.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class RPBroadcastActivityViewController](rpbroadcastactivityviewcontroller.md)
+### Live Broadcast Implementation
+- [class RPBroadcastActivityViewController](./rpbroadcastactivityviewcontroller.md)
   A view controller that displays a user interface where users choose a broadcast service.
-- [class RPSystemBroadcastPickerView](rpsystembroadcastpickerview.md)
+- [class RPSystemBroadcastPickerView](./rpsystembroadcastpickerview.md)
   A view displaying a broadcast button that, when tapped, shows a broadcast picker.
-- [class RPBroadcastActivityController](rpbroadcastactivitycontroller.md)
+- [class RPBroadcastActivityController](./rpbroadcastactivitycontroller.md)
   A controller object that presents the macOS broadcast picker.
-- [class RPBroadcastConfiguration](rpbroadcastconfiguration.md)
+- [class RPBroadcastConfiguration](./rpbroadcastconfiguration.md)
   An object used to configure the movie clips produced during a live broadcast.
 
 

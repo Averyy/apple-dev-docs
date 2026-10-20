@@ -1,7 +1,8 @@
 # locale
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The locale for which the media option was authored.
 
@@ -20,13 +21,18 @@ The locale for which the media option was authored.
 var locale: Locale? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) NSLocale * locale;
+```
+
 ## See Also
 
-- [var displayName: String](avmediaselectionoption/displayname.md)
+### Getting the language and locale settings
+- [var displayName: String](./displayname.md)
   A string suitable for display using the current system locale.
-- [func displayName(with: Locale) -> String](avmediaselectionoption/displayname(with:).md)
+- [func displayName(with: Locale) -> String](./displayname%28with%29.md)
   Returns a string suitable for display using the specified locale.
-- [var extendedLanguageTag: String?](avmediaselectionoption/extendedlanguagetag.md)
+- [var extendedLanguageTag: String?](./extendedlanguagetag.md)
   The IETF BCP 47 language tag associated with the option
 
 

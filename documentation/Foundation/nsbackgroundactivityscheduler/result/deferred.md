@@ -1,7 +1,8 @@
 # NSBackgroundActivityScheduler.Result.deferred
 
 **Framework**: Foundation  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 System conditions have changed since the time the activity began executing, and deferral of additional work is recommended.
 
@@ -14,9 +15,14 @@ System conditions have changed since the time the activity began executing, and 
 case deferred
 ```
 
+```c
+NSBackgroundActivityResultDeferred
+```
+
 ## See Also
 
-- [NSBackgroundActivityScheduler.Result.finished](nsbackgroundactivityscheduler/result/finished.md)
+### Constants
+- [NSBackgroundActivityScheduler.Result.finished](./finished.md)
   The activity has finished executing. If the activity repeats, the next invocation is scheduled by the system.
 
 

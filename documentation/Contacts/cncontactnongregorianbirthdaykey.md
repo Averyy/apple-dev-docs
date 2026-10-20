@@ -1,7 +1,8 @@
 # CNContactNonGregorianBirthdayKey
 
 **Framework**: Contacts  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The non-Gregorian birthday of the contact.
 
@@ -19,15 +20,20 @@ The non-Gregorian birthday of the contact.
 let CNContactNonGregorianBirthdayKey: String
 ```
 
+```c
+extern NSString * const CNContactNonGregorianBirthdayKey;
+```
+
 #### Discussion
 
 This key takes a string value.
 
 ## See Also
 
-- [let CNContactBirthdayKey: String](cncontactbirthdaykey.md)
+### Birthday
+- [let CNContactBirthdayKey: String](./cncontactbirthdaykey.md)
   The birthday of a contact.
-- [let CNContactDatesKey: String](cncontactdateskey.md)
+- [let CNContactDatesKey: String](./cncontactdateskey.md)
   Dates associated with a contact.
 
 

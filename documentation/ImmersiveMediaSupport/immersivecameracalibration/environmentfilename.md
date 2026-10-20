@@ -1,7 +1,8 @@
 # environmentFilename
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The USDZ filename of a backdrop to use for this calibration.
 

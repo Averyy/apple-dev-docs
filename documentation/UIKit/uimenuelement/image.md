@@ -1,7 +1,8 @@
 # image
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The image to display alongside the menu element’s title.
 
@@ -18,15 +19,20 @@ The image to display alongside the menu element’s title.
 var image: UIImage? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) UIImage * image;
+```
+
 #### Discussion
 
-Only the [`context`](uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
+Only the [`context`](../uimenusystem/context.md) menu system supports the display of an image, and only when the app is running in iOS.
 
 ## See Also
 
-- [var title: String](uimenuelement/title.md)
+### Getting the element attributes
+- [var title: String](./title.md)
   The title of the menu element.
-- [var subtitle: String?](uimenuelement/subtitle.md)
+- [var subtitle: String?](./subtitle.md)
   The subtitle to display alongside the menu element’s title.
 
 

@@ -1,12 +1,13 @@
 # clockDomain
 
 **Framework**: Core Audio  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A UInt32 whose value indicates the clock domain to which this object belongs. Clocks and devices that have the same value for this property are able to be synchronized in hardware.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

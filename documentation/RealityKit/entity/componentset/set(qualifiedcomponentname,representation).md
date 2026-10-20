@@ -1,7 +1,8 @@
 # set(qualifiedComponentName:representation:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds component data to an entity that is written to a Reality file but has no other effect at author time.
 
@@ -22,7 +23,7 @@ Adds component data to an entity that is written to a Reality file but has no ot
 
 #### Discussion
 
-Use this function from an authoring tool to serialize a component whose Swift type isn’t available on the authoring platform. `representation` is encoded into any Reality file this entity is written to, and is decoded back into a [`Component`](component.md) of the type named by `qualifiedComponentName` when that file is loaded, so it must encode to the layout that component expects. For runtime use on a platform where the component’s Swift type is available, set the component directly with `set(_:)` instead.
+Use this function from an authoring tool to serialize a component whose Swift type isn’t available on the authoring platform. `representation` is encoded into any Reality file this entity is written to, and is decoded back into a [`Component`](../../component.md) of the type named by `qualifiedComponentName` when that file is loaded, so it must encode to the layout that component expects. For runtime use on a platform where the component’s Swift type is available, set the component directly with `set(_:)` instead.
 
 ```swift
 // Serialize a custom component by its fully qualified name.
@@ -34,7 +35,7 @@ try entity.components.set(
     representation: MyCustomComponent(intensity: 0.5))
 ```
 
-> **Note**: An error if `representation` can’t be encoded, or if `qualifiedComponentName` uses a reserved prefix.
+> **Throws**: An error if `representation` can’t be encoded, or if `qualifiedComponentName` uses a reserved prefix.
 
 ## Parameters
 

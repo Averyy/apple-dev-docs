@@ -1,7 +1,8 @@
 # outerGain
 
 **Framework**: PHASE  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The loudness of the audio the outside area of the cone emits.
 
@@ -19,17 +20,22 @@ The loudness of the audio the outside area of the cone emits.
 var outerGain: Double { get set }
 ```
 
+```objc
+@property (nonatomic) double outerGain;
+```
+
 #### Discussion
 
 The framework clamps the value of this property to the range `[0,` `1]`, where `0` silences loudness and `1` doesn’t modify loudness.
 
 ## See Also
 
-- [var innerAngle: Double](phaseconedirectivitymodelsubbandparameters/innerangle.md)
+### Shaping Directivity
+- [var innerAngle: Double](./innerangle.md)
   An angle, in degrees, that determines the size of the audio emitting area inside the cone.
-- [var outerAngle: Double](phaseconedirectivitymodelsubbandparameters/outerangle.md)
+- [var outerAngle: Double](./outerangle.md)
   An angle, in degrees, that determines the size of the audio emitting area outside the cone.
-- [func setAngles(innerAngle: Double, outerAngle: Double)](phaseconedirectivitymodelsubbandparameters/setangles(innerangle:outerangle:).md)
+- [func setAngles(innerAngle: Double, outerAngle: Double)](./setangles%28innerangle,outerangle%29.md)
   Configures a focus area for cone-based sound directivity.
 
 

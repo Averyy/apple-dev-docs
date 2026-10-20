@@ -1,7 +1,8 @@
 # kICLDAPSearchbase
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 var kICLDAPSearchbase: String { get }
+```
+
+```c
+#define kICLDAPSearchbase
 ```
 
 

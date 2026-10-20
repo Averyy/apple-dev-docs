@@ -1,7 +1,8 @@
 # CPJunctionType.intersection
 
 **Framework**: CarPlay  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A single intersection with roads coming to a common point.
 
@@ -16,9 +17,14 @@ A single intersection with roads coming to a common point.
 case intersection
 ```
 
+```c
+CPJunctionTypeIntersection
+```
+
 ## See Also
 
-- [CPJunctionType.roundabout](cpjunctiontype/roundabout.md)
+### Junction types
+- [CPJunctionType.roundabout](./roundabout.md)
   Junction elements that represent roads exiting the roundabout.
 
 

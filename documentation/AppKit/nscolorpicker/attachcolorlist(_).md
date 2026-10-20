@@ -1,12 +1,13 @@
 # attachColorList(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Overriden to attach a color list to a color picker.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ Overriden to attach a color list to a color picker.
 func attachColorList(_ colorList: NSColorList)
 ```
 
+```objc
+- (void) attachColorList:(NSColorList *) colorList;
+```
+
 ## Parameters
 
 - `colorList`: The color list to attach to the color picker.
 
 ## See Also
 
-- [func detachColorList(NSColorList)](nscolorpicker/detachcolorlist(_:).md)
+### Managing Color Lists
+- [func detachColorList(NSColorList)](./detachcolorlist%28_%29.md)
   Overriden to detach a color list from a color picker.
 
 

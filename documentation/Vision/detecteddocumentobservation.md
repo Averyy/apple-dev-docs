@@ -1,7 +1,8 @@
 # DetectedDocumentObservation
 
 **Framework**: Vision  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The heat map that’s a pixel buffer in a one-component floating-point pixel format.
 
@@ -27,31 +28,31 @@ The observation includes the four corner points of a document’s quadrilateral 
 ## Topics
 
 ### Creating an observation
-- [init?(VNRectangleObservation)](detecteddocumentobservation/init(_:).md)
+- [init?(VNRectangleObservation)](./detecteddocumentobservation/init%28_%29.md)
   Creates a detected document observation.
 ### Inspecting an observation
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](./requestdescriptor.md)
   A type that describes the request and revision combination.
-- [var globalSegmentationMask: PixelBufferObservation](detecteddocumentobservation/globalsegmentationmask.md)
+- [var globalSegmentationMask: PixelBufferObservation](./detecteddocumentobservation/globalsegmentationmask.md)
   A pixel buffer representing a segmentation mask for the detected document.
-- [struct PixelBufferObservation](pixelbufferobservation.md)
+- [struct PixelBufferObservation](./pixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
 
 ## Relationships
 
 ### Conforms To
-- [BoundingBoxProviding](boundingboxproviding.md)
-- [Copyable](../swift/copyable.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [QuadrilateralProviding](quadrilateralproviding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [VisionObservation](visionobservation.md)
+- [BoundingBoxProviding](./boundingboxproviding.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [QuadrilateralProviding](./quadrilateralproviding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [VisionObservation](./visionobservation.md)
 
 
 ---

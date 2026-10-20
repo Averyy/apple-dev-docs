@@ -1,7 +1,8 @@
 # minimizeMemory
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 An option that instructs Metal to prioritize building an acceleration structure that needs less memory.
 
@@ -19,19 +20,24 @@ An option that instructs Metal to prioritize building an acceleration structure 
 static var minimizeMemory: MTLAccelerationStructureUsage { get }
 ```
 
+```c
+MTLAccelerationStructureUsageMinimizeMemory
+```
+
 #### Discussion
 
 The acceleration structures you build with this option can increase their build times and can reduce their intersection performance.
 
 ## See Also
 
-- [static var refit: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/refit.md)
+### Applying options
+- [static var refit: MTLAccelerationStructureUsage](./refit.md)
   An option that lets you update an acceleration structure after creating it.
-- [static var preferFastBuild: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/preferfastbuild.md)
+- [static var preferFastBuild: MTLAccelerationStructureUsage](./preferfastbuild.md)
   An option that instructs Metal to build an acceleration structure quickly.
-- [static var preferFastIntersection: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/preferfastintersection.md)
+- [static var preferFastIntersection: MTLAccelerationStructureUsage](./preferfastintersection.md)
   An option that instructs Metal to prioritize building an acceleration structure with better intersection performance.
-- [static var extendedLimits: MTLAccelerationStructureUsage](mtlaccelerationstructureusage/extendedlimits.md)
+- [static var extendedLimits: MTLAccelerationStructureUsage](./extendedlimits.md)
   An option that increases an acceleration structure’s storage capacity.
 
 

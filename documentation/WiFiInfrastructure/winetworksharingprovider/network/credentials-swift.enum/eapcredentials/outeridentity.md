@@ -1,7 +1,8 @@
 # outerIdentity
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A name that hides the user’s actual name.
 

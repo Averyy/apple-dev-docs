@@ -1,7 +1,8 @@
 # injectionTime
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which to inject the script into the webpage.
 
@@ -18,17 +19,22 @@ The time at which to inject the script into the webpage.
 var injectionTime: WKUserScriptInjectionTime { get }
 ```
 
+```objc
+@property (nonatomic, readonly) WKUserScriptInjectionTime injectionTime;
+```
+
 #### Discussion
 
-The value is one of the constants of the enumerated type [`WKUserScriptInjectionTime`](wkuserscriptinjectiontime.md).
+The value is one of the constants of the enumerated type [`WKUserScriptInjectionTime`](../wkuserscriptinjectiontime.md).
 
 ## See Also
 
-- [var source: String](wkuserscript/source.md)
+### Inspecting Script Information
+- [var source: String](./source.md)
   The script’s source code.
-- [enum WKUserScriptInjectionTime](wkuserscriptinjectiontime.md)
+- [enum WKUserScriptInjectionTime](../wkuserscriptinjectiontime.md)
   Constants for the times at which to inject script content into a webpage.
-- [var isForMainFrameOnly: Bool](wkuserscript/isformainframeonly.md)
+- [var isForMainFrameOnly: Bool](./isformainframeonly.md)
   A Boolean value that indicates whether to inject the script into the main frame or all frames.
 
 

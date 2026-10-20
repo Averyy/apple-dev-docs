@@ -1,14 +1,15 @@
 # genPhysicalSegments
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual UInt32 genPhysicalSegments(IOMemoryDescriptor *descriptor, IOByteCount fromPosition, void *segments, UInt32 maxSegments, UInt32 maxTransferSize, IOByteCount *transferSize);
 ```
 

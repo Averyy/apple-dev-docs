@@ -1,7 +1,8 @@
 # makeTemporalScaler(device:)
 
 **Framework**: MetalFX  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a temporal scaler instance from this descriptor’s current property values.
 
@@ -18,9 +19,13 @@ Creates a temporal scaler instance from this descriptor’s current property val
 func makeTemporalScaler(device: any MTLDevice) -> (any MTLFXTemporalScaler)?
 ```
 
+```objc
+- (id<MTLFXTemporalScaler>) newTemporalScalerWithDevice:(id<MTLDevice>) device;
+```
+
 ## Parameters
 
-- `device`: An [`MTLDevice`](https://developer.apple.com/documentation/metal/mtldevice) instance that represents the GPU that applies the temporal scaling effect.
+- `device`: An [`MTLDevice`](../../Metal/mtldevice.md) instance that represents the GPU that applies the temporal scaling effect.
 
 
 ---

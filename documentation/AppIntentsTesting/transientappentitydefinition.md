@@ -1,7 +1,8 @@
 # TransientAppEntityDefinition
 
 **Framework**: App Intents Testing  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A definition you use to dynamically create transient app entities for testing.
 
@@ -22,7 +23,7 @@ struct TransientAppEntityDefinition
 
 #### Overview
 
-To create a transient app entity instance for testing, load the definition for your transient app entity using [`IntentDefinitions`](intentdefinitions.md) and its [`transientEntities`](intentdefinitions/transiententities.md) property, then create an entity instance as shown in the following example:
+To create a transient app entity instance for testing, load the definition for your transient app entity using [`IntentDefinitions`](./intentdefinitions.md) and its [`transientEntities`](./intentdefinitions/transiententities.md) property, then create an entity instance as shown in the following example:
 
 ```swift
 let definitions = IntentDefinitions(
@@ -40,44 +41,45 @@ let entity = sessionEntity.makeEntity(
 ## Topics
 
 ### Creating a transient entity instance
-- [var makeEntity: IntentValuePropertiesCallable<AnyTransientAppEntity>](transientappentitydefinition/makeentity.md)
+- [var makeEntity: IntentValuePropertiesCallable<AnyTransientAppEntity>](./transientappentitydefinition/makeentity.md)
   Creates a populated instance of this transient entity.
 ### Identifying the entity
-- [let bundleIdentifier: String](transientappentitydefinition/bundleidentifier.md)
+- [let bundleIdentifier: String](./transientappentitydefinition/bundleidentifier.md)
   The bundle identifier of the app that contains this entity.
-- [let typeIdentifier: String](transientappentitydefinition/typeidentifier.md)
+- [let typeIdentifier: String](./transientappentitydefinition/typeidentifier.md)
   The entity type’s identifier.
 ### Instance Methods
-- [func resolved<T>(from: T) async throws -> AnyTransientAppEntity](transientappentitydefinition/resolved(from:)-1lap2.md)
+- [func resolved<T>(from: T) async throws -> AnyTransientAppEntity](./transientappentitydefinition/resolved%28from%29-1lap2.md)
   Resolves a transient entity from a transferable intent value type through the entity type’s `Transferable` conformance.
-- [func resolved<T>(from: T) async throws -> AnyTransientAppEntity](transientappentitydefinition/resolved(from:)-3jjpx.md)
+- [func resolved<T>(from: T) async throws -> AnyTransientAppEntity](./transientappentitydefinition/resolved%28from%29-3jjpx.md)
   Resolves a transient entity from a system intent value type through the entity type’s `Transferable` conformance.
-- [func resolved(from: IntentFile) async throws -> AnyTransientAppEntity](transientappentitydefinition/resolved(from:)-6xsjl.md)
+- [func resolved(from: IntentFile) async throws -> AnyTransientAppEntity](./transientappentitydefinition/resolved%28from%29-6xsjl.md)
   Resolves a transient entity from an exported `IntentFile` through the entity type’s `Transferable` conformance.
 ### Default Implementations
-- [AppIntentTypeDefinition Implementations](transientappentitydefinition/appintenttypedefinition-implementations.md)
+- [AppIntentTypeDefinition Implementations](./transientappentitydefinition/appintenttypedefinition-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [AppIntentTypeDefinition](appintenttypedefinition.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [AppIntentTypeDefinition](./appintenttypedefinition.md)
+- [Copyable](../Swift/copyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var entities: IntentDefinitions.DefinitionCollection<AppEntityDefinition>](intentdefinitions/entities.md)
+### Accessing app entities and queries
+- [var entities: IntentDefinitions.DefinitionCollection<AppEntityDefinition>](./intentdefinitions/entities.md)
   The definitions for the target app’s app entities.
-- [struct AppEntityDefinition](appentitydefinition.md)
+- [struct AppEntityDefinition](./appentitydefinition.md)
   A definition you use to dynamically create entity instances for testing.
-- [var valueQueries: IntentDefinitions.DefinitionCollection<IntentValueQueryDefinition>](intentdefinitions/valuequeries.md)
+- [var valueQueries: IntentDefinitions.DefinitionCollection<IntentValueQueryDefinition>](./intentdefinitions/valuequeries.md)
   The definitions for the app’s intent value queries.
-- [struct IntentValueQueryDefinition](intentvaluequerydefinition.md)
+- [struct IntentValueQueryDefinition](./intentvaluequerydefinition.md)
   A definition you use to create an intent value query for testing.
-- [var transientEntities: IntentDefinitions.DefinitionCollection<TransientAppEntityDefinition>](intentdefinitions/transiententities.md)
+- [var transientEntities: IntentDefinitions.DefinitionCollection<TransientAppEntityDefinition>](./intentdefinitions/transiententities.md)
   Retrieve a transient app entity definition using subscript syntax.
 
 

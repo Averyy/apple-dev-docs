@@ -1,17 +1,22 @@
 # stop()
 
 **Framework**: IOBluetooth  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Halts the inquiry object. Could either stop the search for new devices, or the updating of found device names.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func stop() -> IOReturn
+```
+
+```objc
+- (IOReturn) stop;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # init(keyEntry:)
 
 **Framework**: BrowserEngineKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes an instance of BEKeyEventContext with its corresponding `keyState`
 
@@ -15,6 +16,10 @@ Initializes an instance of BEKeyEventContext with its corresponding `keyState`
 
 ```swift
 init(keyEntry: BEKeyEntry)
+```
+
+```objc
+- (instancetype) initWithKeyEntry:(BEKeyEntry *) keyEntry;
 ```
 
 

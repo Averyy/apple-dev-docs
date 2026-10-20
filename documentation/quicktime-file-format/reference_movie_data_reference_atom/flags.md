@@ -1,7 +1,8 @@
 # Flags
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 A 32-bit integer containing flags.
 
@@ -13,15 +14,16 @@ One flag is currently defined.
 
 ## See Also
 
-- [Size](reference_movie_data_reference_atom/size.md)
+### Data fields
+- [Size](./size.md)
   The number of bytes in this data reference atom.
-- [Type](reference_movie_data_reference_atom/type.md)
+- [Type](./type.md)
   The type of this atom.
-- [Data reference type](reference_movie_data_reference_atom/data_reference_type.md)
+- [Data reference type](./data_reference_type.md)
   The data reference type.
-- [Data reference size](reference_movie_data_reference_atom/data_reference_size.md)
+- [Data reference size](./data_reference_size.md)
   The size of the data reference in bytes, expressed as a 32-bit integer.
-- [Data reference](reference_movie_data_reference_atom/data_reference.md)
+- [Data reference](./data_reference.md)
   A data reference to a QuickTime movie, or to a stream or file that QuickTime can play.
 
 

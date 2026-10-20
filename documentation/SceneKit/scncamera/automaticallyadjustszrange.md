@@ -1,18 +1,19 @@
 # automaticallyAdjustsZRange
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
-A Boolean value that determines whether the camera automatically adjusts its [`zNear`](scncamera/znear.md) and [`zFar`](scncamera/zfar.md) depth limits.
+A Boolean value that determines whether the camera automatically adjusts its [`zNear`](./znear.md) and [`zFar`](./zfar.md) depth limits.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,15 +21,20 @@ A Boolean value that determines whether the camera automatically adjusts its [`z
 var automaticallyAdjustsZRange: Bool { get set }
 ```
 
+```objc
+@property (nonatomic) BOOL automaticallyAdjustsZRange;
+```
+
 #### Discussion
 
-The default value of this property is [`false`](https://developer.apple.com/documentation/swift/false), specifying that the camera’s [`zNear`](scncamera/znear.md) and [`zFar`](scncamera/zfar.md) properties control its depth limits. If you change this property’s value to [`true`](https://developer.apple.com/documentation/swift/true), SceneKit automatically adjusts the depth limits at render time to fit the bounding box of the scene. Changing the values of the [`zNear`](scncamera/znear.md) and [`zFar`](scncamera/zfar.md) properties automatically resets this property’s value to [`false`](https://developer.apple.com/documentation/swift/false).
+The default value of this property is [`false`](../../Swift/false.md), specifying that the camera’s [`zNear`](./znear.md) and [`zFar`](./zfar.md) properties control its depth limits. If you change this property’s value to [`true`](../../Swift/true.md), SceneKit automatically adjusts the depth limits at render time to fit the bounding box of the scene. Changing the values of the [`zNear`](./znear.md) and [`zFar`](./zfar.md) properties automatically resets this property’s value to [`false`](../../Swift/false.md).
 
 ## See Also
 
-- [var zNear: Double](scncamera/znear.md)
+### Adjusting Camera Perspective
+- [var zNear: Double](./znear.md)
   The camera’s near depth limit. Animatable.
-- [var zFar: Double](scncamera/zfar.md)
+- [var zFar: Double](./zfar.md)
   The camera’s far depth limit. Animatable.
 
 

@@ -6,31 +6,6 @@ url: https://ml-explore.github.io/mlx/build/html/examples/linear_regression.html
 
 # Linear Regression
 
-**
-
-- [.rst](../_sources/examples/linear_regression.rst)
-- **
-
-.pdf
-
-**
-
-**
-**
-**
-
-- **System Settings
-- **Light
-- **Dark
-
-**
-
-# Linear Regression
-
- Table of contents 
-
-# Linear Regression
-
 Let’s implement a basic linear regression model as a starting point to
 learn MLX. First import the core package and setup some problem metadata:
 

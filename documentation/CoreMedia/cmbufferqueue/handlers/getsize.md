@@ -1,7 +1,8 @@
 # getSize
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 13.0+
@@ -20,12 +21,13 @@ let getSize: CMBufferGetSizeHandler?
 
 ## See Also
 
-- [let compare: CMBufferCompareHandler?](cmbufferqueue/handlers/compare.md)
-- [let dataBecameReadyNotification: String?](cmbufferqueue/handlers/databecamereadynotification.md)
-- [let getDecodeTimeStamp: CMBufferGetTimeHandler?](cmbufferqueue/handlers/getdecodetimestamp.md)
-- [let getDuration: CMBufferGetTimeHandler](cmbufferqueue/handlers/getduration.md)
-- [let getPresentationTimeStamp: CMBufferGetTimeHandler?](cmbufferqueue/handlers/getpresentationtimestamp.md)
-- [let isDataReady: CMBufferGetBooleanHandler?](cmbufferqueue/handlers/isdataready.md)
+### Instance Properties
+- [let compare: CMBufferCompareHandler?](./compare.md)
+- [let dataBecameReadyNotification: String?](./databecamereadynotification.md)
+- [let getDecodeTimeStamp: CMBufferGetTimeHandler?](./getdecodetimestamp.md)
+- [let getDuration: CMBufferGetTimeHandler](./getduration.md)
+- [let getPresentationTimeStamp: CMBufferGetTimeHandler?](./getpresentationtimestamp.md)
+- [let isDataReady: CMBufferGetBooleanHandler?](./isdataready.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # operatingSystemVersion
 
 **Framework**: Virtualization  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The operating system version this restore image contains.
 
@@ -14,15 +15,20 @@ The operating system version this restore image contains.
 var operatingSystemVersion: OperatingSystemVersion { get }
 ```
 
+```objc
+@property (readonly) NSOperatingSystemVersion operatingSystemVersion;
+```
+
 ## See Also
 
-- [var buildVersion: String](vzmacosrestoreimage/buildversion.md)
+### Getting Information About the Restore Image
+- [var buildVersion: String](./buildversion.md)
   The build version this restore image contains.
-- [var isSupported: Bool](vzmacosrestoreimage/issupported.md)
+- [var isSupported: Bool](./issupported.md)
   A Boolean value that indicates whether the current host supports this restore image.
-- [var mostFeaturefulSupportedConfiguration: VZMacOSConfigurationRequirements?](vzmacosrestoreimage/mostfeaturefulsupportedconfiguration.md)
+- [var mostFeaturefulSupportedConfiguration: VZMacOSConfigurationRequirements?](./mostfeaturefulsupportedconfiguration.md)
   This object represents the most fully featured configuration that’s supported by both the current host and by this restore image.
-- [var url: URL](vzmacosrestoreimage/url.md)
+- [var url: URL](./url.md)
   The URL of this restore image.
 
 

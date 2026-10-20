@@ -1,7 +1,8 @@
 # init(string:locale:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a decimal number so that its value is equivalent to that in a given numeric string, interpreted using a given locale.
 
@@ -18,6 +19,10 @@ Initializes a decimal number so that its value is equivalent to that in a given 
 
 ```swift
 convenience init(string numberValue: String?, locale: Any?)
+```
+
+```objc
+- (instancetype) initWithString:(NSString *) numberValue locale:(id) locale;
 ```
 
 #### Discussion
@@ -40,16 +45,19 @@ The following strings are unacceptable:
 
 ## Parameters
 
-- `numberValue`: A numeric string. Besides digits, `numberValue` can include an initial `+` or `–`; a single `E` or `e`, to indicate the exponent of a number in scientific notation; and a single decimal separator character to divide the fractional from the integral part of the number.
-- `locale`: A dictionary that defines the locale (specifically the [`decimalSeparator`](nslocale/key/decimalseparator.md)) to use to interpret the number in `numberValue`.
+- `numberValue`: A numeric string.
+
+  Besides digits, `numberValue` can include an initial `+` or `–`; a single `E` or `e`, to indicate the exponent of a number in scientific notation; and a single decimal separator character to divide the fractional from the integral part of the number.
+- `locale`: A dictionary that defines the locale (specifically the [`decimalSeparator`](../nslocale/key/decimalseparator.md)) to use to interpret the number in `numberValue`.
 
 ## See Also
 
-- [init(decimal: Decimal)](nsdecimalnumber/init(decimal:).md)
+### Initializing a Decimal Number
+- [init(decimal: Decimal)](./init%28decimal%29.md)
   Initializes a decimal number to represent a given decimal.
-- [convenience init(mantissa: UInt64, exponent: Int16, isNegative: Bool)](nsdecimalnumber/init(mantissa:exponent:isnegative:).md)
+- [convenience init(mantissa: UInt64, exponent: Int16, isNegative: Bool)](./init%28mantissa,exponent,isnegative%29.md)
   Initializes a decimal number using the given mantissa, exponent, and sign.
-- [convenience init(string: String?)](nsdecimalnumber/init(string:).md)
+- [convenience init(string: String?)](./init%28string%29.md)
   Initializes a decimal number so that its value is equivalent to that in a given numeric string.
 
 

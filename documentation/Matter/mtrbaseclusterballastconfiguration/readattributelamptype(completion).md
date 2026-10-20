@@ -1,7 +1,8 @@
 # readAttributeLampType(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeLampType(completion: @escaping @Sendable (String?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeLampType() async throws -> String
+```
+
+```objc
+- (void) readAttributeLampTypeWithCompletion:(void (^)(NSString *value, NSError *error)) completion;
 ```
 
 

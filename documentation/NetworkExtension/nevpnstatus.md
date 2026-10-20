@@ -1,7 +1,8 @@
 # NEVPNStatus
 
 **Framework**: Network Extension  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The possible states of a VPN connection.
 
@@ -19,44 +20,49 @@ The possible states of a VPN connection.
 enum NEVPNStatus
 ```
 
+```c
+enum NEVPNStatus : NSInteger;
+```
+
 #### Overview
 
-After the VPN transitions from the [`NEVPNStatus.disconnected`](nevpnstatus/disconnected.md) to the [`NEVPNStatus.disconnecting`](nevpnstatus/disconnecting.md) state, the system doesn’t close TCP connections, but ignores packets to and from established network connections. When the VPN transitions to another state — for example, from a Wi-Fi to a cellular network — the system ignores network traffic and the VPN client typically reconnects to the VPN server.
+After the VPN transitions from the [`NEVPNStatus.disconnected`](./nevpnstatus/disconnected.md) to the [`NEVPNStatus.disconnecting`](./nevpnstatus/disconnecting.md) state, the system doesn’t close TCP connections, but ignores packets to and from established network connections. When the VPN transitions to another state — for example, from a Wi-Fi to a cellular network — the system ignores network traffic and the VPN client typically reconnects to the VPN server.
 
 ## Topics
 
 ### Statuses
-- [NEVPNStatus.disconnecting](nevpnstatus/disconnecting.md)
+- [NEVPNStatus.disconnecting](./nevpnstatus/disconnecting.md)
   The VPN is in the process of disconnecting.
-- [NEVPNStatus.reasserting](nevpnstatus/reasserting.md)
+- [NEVPNStatus.reasserting](./nevpnstatus/reasserting.md)
   The VPN is in the process of reconnecting.
-- [NEVPNStatus.connected](nevpnstatus/connected.md)
+- [NEVPNStatus.connected](./nevpnstatus/connected.md)
   The VPN is connected.
-- [NEVPNStatus.connecting](nevpnstatus/connecting.md)
+- [NEVPNStatus.connecting](./nevpnstatus/connecting.md)
   The VPN is in the process of connecting.
-- [NEVPNStatus.disconnected](nevpnstatus/disconnected.md)
+- [NEVPNStatus.disconnected](./nevpnstatus/disconnected.md)
   The VPN is disconnected.
-- [NEVPNStatus.invalid](nevpnstatus/invalid.md)
+- [NEVPNStatus.invalid](./nevpnstatus/invalid.md)
   The associated VPN configuration doesn’t exist in the Network Extension preferences or isn’t enabled.
 ### Initializers
-- [init?(rawValue: Int)](nevpnstatus/init(rawvalue:).md)
+- [init?(rawValue: Int)](./nevpnstatus/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var manager: NEVPNManager](nevpnconnection/manager.md)
-- [var status: NEVPNStatus](nevpnconnection/status.md)
+### Getting VPN connection status
+- [var manager: NEVPNManager](./nevpnconnection/manager.md)
+- [var status: NEVPNStatus](./nevpnconnection/status.md)
   The current status of the VPN connection.
-- [var connectedDate: Date?](nevpnconnection/connecteddate.md)
+- [var connectedDate: Date?](./nevpnconnection/connecteddate.md)
   The date and time when the connection status changed to `NEVPNStatusConnected`.
 
 

@@ -1,7 +1,8 @@
 # MLSplitStrategy
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Data partitioning approaches, typically for creating a validation dataset from a training dataset.
 
@@ -22,27 +23,28 @@ enum MLSplitStrategy
 ## Topics
 
 ### Partitioning data
-- [MLSplitStrategy.automatic](mlsplitstrategy/automatic.md)
+- [MLSplitStrategy.automatic](./mlsplitstrategy/automatic.md)
   Create ML automatically decides how much of your training dataset it uses for a validation dataset.
-- [case fixed(ratio: Double, seed: Int?)](mlsplitstrategy/fixed(ratio:seed:).md)
+- [case fixed(ratio: Double, seed: Int?)](./mlsplitstrategy/fixed%28ratio,seed%29.md)
   Create ML uses a portion of your training dataset to create a validation dataset based on the ratio.
-- [func resolve(count: Int) -> (ratio: Double, seed: Int)](mlsplitstrategy/resolve(count:).md)
+- [func resolve(count: Int) -> (ratio: Double, seed: Int)](./mlsplitstrategy/resolve%28count%29.md)
   Resolves this split strategy for a specific element count.
 ### Creating a random seed
-- [func timestampSeed() -> Int](timestampseed().md)
+- [func timestampSeed() -> Int](./timestampseed%28%29.md)
   Returns a number based on the current system time.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [enum MLCreateError](mlcreateerror.md)
+### Supporting types
+- [enum MLCreateError](./mlcreateerror.md)
   The errors Create ML throws while performing various operations, such as training models, making predictions, writing models to a file system, and so on.
-- [struct MLModelMetadata](mlmodelmetadata.md)
+- [struct MLModelMetadata](./mlmodelmetadata.md)
   Information about a model that’s stored in a Core ML model file.
 
 

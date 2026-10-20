@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The bottom edge inset value.
 
@@ -19,13 +20,18 @@ The bottom edge inset value.
 var bottom: CGFloat
 ```
 
+```c
+CGFloat bottom;
+```
+
 ## See Also
 
-- [var leading: CGFloat](nsdirectionaledgeinsets/leading.md)
+### Getting the edge values
+- [var leading: CGFloat](./leading.md)
   The leading edge inset value.
-- [var top: CGFloat](nsdirectionaledgeinsets/top.md)
+- [var top: CGFloat](./top.md)
   The top edge inset value.
-- [var trailing: CGFloat](nsdirectionaledgeinsets/trailing.md)
+- [var trailing: CGFloat](./trailing.md)
   The trailing edge inset value.
 
 

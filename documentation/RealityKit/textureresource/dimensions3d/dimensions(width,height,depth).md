@@ -1,7 +1,8 @@
 # dimensions(width:height:depth:)
 
 **Framework**: RealityKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Specifies the dimensions of the 3D texture.
 

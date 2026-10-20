@@ -1,7 +1,8 @@
 # entityType
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The type of `AppEntity` represented by this identifier
 
@@ -11,7 +12,7 @@ The type of `AppEntity` represented by this identifier
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,9 +23,10 @@ let entityType: any AppEntity.Type
 
 ## See Also
 
-- [let identifier: String](entityidentifier/identifier.md)
+### Getting the identifier details
+- [let identifier: String](./identifier.md)
   Value uniquely identifying the entity instance within its type.
-- [static let valueMaximumLength: Int](entityidentifier/valuemaximumlength.md)
+- [static let valueMaximumLength: Int](./valuemaximumlength.md)
   Maximum allowed length for the `identifier` value. This is a constraint imposed by the system and thus forces us to truncate the identifier if it exceeds the maximum length.
 
 

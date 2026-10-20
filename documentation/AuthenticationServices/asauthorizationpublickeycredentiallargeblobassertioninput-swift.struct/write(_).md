@@ -1,7 +1,8 @@
 # write(_:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 An operation to write the blob value, overwriting any existing value.
 
@@ -24,7 +25,8 @@ static func write(_ data: Data) -> ASAuthorizationPublicKeyCredentialLargeBlobAs
 
 ## See Also
 
-- [static var read: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](asauthorizationpublickeycredentiallargeblobassertioninput-swift.struct/read.md)
+### Using assertion inputs
+- [static var read: ASAuthorizationPublicKeyCredentialLargeBlobAssertionInput](./read.md)
   An operation to read the existing blob value.
 
 

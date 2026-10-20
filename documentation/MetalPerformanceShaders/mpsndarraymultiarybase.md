@@ -1,7 +1,8 @@
 # MPSNDArrayMultiaryBase
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 13.0+
@@ -17,41 +18,45 @@
 class MPSNDArrayMultiaryBase
 ```
 
+```objc
+@interface MPSNDArrayMultiaryBase : MPSKernel
+```
+
 ## Topics
 
 ### Initializers
-- [init(coder: NSCoder, device: any MTLDevice)](mpsndarraymultiarybase/init(coder:device:).md)
-- [init(device: any MTLDevice, sourceCount: Int)](mpsndarraymultiarybase/init(device:sourcecount:).md)
+- [init(coder: NSCoder, device: any MTLDevice)](./mpsndarraymultiarybase/init%28coder,device%29.md)
+- [init(device: any MTLDevice, sourceCount: Int)](./mpsndarraymultiarybase/init%28device,sourcecount%29.md)
 ### Instance Properties
-- [var destinationArrayAllocator: any MPSNDArrayAllocator](mpsndarraymultiarybase/destinationarrayallocator.md)
+- [var destinationArrayAllocator: any MPSNDArrayAllocator](./mpsndarraymultiarybase/destinationarrayallocator.md)
 ### Instance Methods
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsndarraymultiarybase/copy(with:device:).md)
-- [func destinationArrayDescriptor(forSourceArrays: [MPSNDArray], sourceState: MPSState?) -> MPSNDArrayDescriptor](mpsndarraymultiarybase/destinationarraydescriptor(forsourcearrays:sourcestate:).md)
-- [func dilationRates(forSourceIndex: Int) -> MPSNDArraySizes](mpsndarraymultiarybase/dilationrates(forsourceindex:).md)
-- [func edgeMode(atSourceIndex: Int) -> MPSImageEdgeMode](mpsndarraymultiarybase/edgemode(atsourceindex:).md)
-- [func encode(with: NSCoder)](mpsndarraymultiarybase/encode(with:).md)
-- [func kernelSizes(forSourceIndex: Int) -> MPSNDArraySizes](mpsndarraymultiarybase/kernelsizes(forsourceindex:).md)
-- [func offsets(atSourceIndex: Int) -> MPSNDArrayOffsets](mpsndarraymultiarybase/offsets(atsourceindex:).md)
-- [func resultState(forSourceArrays: [MPSNDArray], sourceStates: [MPSState]?, destinationArray: MPSNDArray) -> MPSState?](mpsndarraymultiarybase/resultstate(forsourcearrays:sourcestates:destinationarray:).md)
-- [func strides(forSourceIndex: Int) -> MPSNDArrayOffsets](mpsndarraymultiarybase/strides(forsourceindex:).md)
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](./mpsndarraymultiarybase/copy%28with,device%29.md)
+- [func destinationArrayDescriptor(forSourceArrays: [MPSNDArray], sourceState: MPSState?) -> MPSNDArrayDescriptor](./mpsndarraymultiarybase/destinationarraydescriptor%28forsourcearrays,sourcestate%29.md)
+- [func dilationRates(forSourceIndex: Int) -> MPSNDArraySizes](./mpsndarraymultiarybase/dilationrates%28forsourceindex%29.md)
+- [func edgeMode(atSourceIndex: Int) -> MPSImageEdgeMode](./mpsndarraymultiarybase/edgemode%28atsourceindex%29.md)
+- [func encode(with: NSCoder)](./mpsndarraymultiarybase/encode%28with%29.md)
+- [func kernelSizes(forSourceIndex: Int) -> MPSNDArraySizes](./mpsndarraymultiarybase/kernelsizes%28forsourceindex%29.md)
+- [func offsets(atSourceIndex: Int) -> MPSNDArrayOffsets](./mpsndarraymultiarybase/offsets%28atsourceindex%29.md)
+- [func resultState(forSourceArrays: [MPSNDArray], sourceStates: [MPSState]?, destinationArray: MPSNDArray) -> MPSState?](./mpsndarraymultiarybase/resultstate%28forsourcearrays,sourcestates,destinationarray%29.md)
+- [func strides(forSourceIndex: Int) -> MPSNDArrayOffsets](./mpsndarraymultiarybase/strides%28forsourceindex%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSKernel](mpskernel.md)
+- [MPSKernel](./mpskernel.md)
 ### Inherited By
-- [MPSNDArrayMultiaryGradientKernel](mpsndarraymultiarygradientkernel.md)
-- [MPSNDArrayMultiaryKernel](mpsndarraymultiarykernel.md)
+- [MPSNDArrayMultiaryGradientKernel](./mpsndarraymultiarygradientkernel.md)
+- [MPSNDArrayMultiaryKernel](./mpsndarraymultiarykernel.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 
 ---

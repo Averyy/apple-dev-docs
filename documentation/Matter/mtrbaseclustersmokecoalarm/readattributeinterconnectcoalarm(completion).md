@@ -1,7 +1,8 @@
 # readAttributeInterconnectCOAlarm(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeInterconnectCOAlarm(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeInterconnectCOAlarm() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeInterconnectCOAlarmWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

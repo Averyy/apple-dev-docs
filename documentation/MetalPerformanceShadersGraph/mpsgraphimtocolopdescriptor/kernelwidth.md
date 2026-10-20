@@ -1,7 +1,8 @@
 # kernelWidth
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The property that defines the kernel size in width dimension.
 
@@ -17,6 +18,10 @@ The property that defines the kernel size in width dimension.
 
 ```swift
 var kernelWidth: Int { get set }
+```
+
+```objc
+@property (nonatomic, readwrite) NSUInteger kernelWidth;
 ```
 
 

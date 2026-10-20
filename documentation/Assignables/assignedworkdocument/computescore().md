@@ -1,7 +1,8 @@
 # computeScore()
 
 **Framework**: Assignables  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Gathers all of the points based on all the `AssignedWorkDocument.ScoreAnnotation`s in the document and its `kind` property.
 
@@ -9,7 +10,7 @@ Gathers all of the points based on all the `AssignedWorkDocument.ScoreAnnotation
 - iOS 17.4+
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,7 +20,8 @@ func computeScore() -> Double
 
 ## See Also
 
-- [AssignedWorkDocument.ScoreAnnotation](assignedworkdocument/scoreannotation.md)
+### Computing the score
+- [AssignedWorkDocument.ScoreAnnotation](./scoreannotation.md)
   A score mark on page of the work document.
 
 

@@ -1,7 +1,8 @@
 # displayPreferences
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An object that configures how UIKit displays the menu.
 
@@ -19,9 +20,14 @@ An object that configures how UIKit displays the menu.
 var displayPreferences: UIMenuDisplayPreferences? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) UIMenuDisplayPreferences * displayPreferences;
+```
+
 ## See Also
 
-- [class UIMenuDisplayPreferences](uimenudisplaypreferences.md)
+### Customizing menu display
+- [class UIMenuDisplayPreferences](../uimenudisplaypreferences.md)
   An object that contains information for configuring a menu’s display.
 
 

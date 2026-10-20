@@ -1,7 +1,8 @@
 # init(actions:)
 
 **Framework**: CallKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a new transaction with the specified actions.
 
@@ -18,13 +19,17 @@ Initializes a new transaction with the specified actions.
 init(actions: [CXAction])
 ```
 
+```objc
+- (instancetype) initWithActions:(NSArray<CXAction *> *) actions;
+```
+
 #### Return Value
 
 A new transaction with the specified actions.
 
 #### Discussion
 
-This initializer is a convenience for using the designated initializer and calling the [`addAction(_:)`](cxtransaction/addaction(_:).md) method passing each object in `actions`.
+This initializer is a convenience for using the designated initializer and calling the [`addAction(_:)`](./addaction%28_%29.md) method passing each object in `actions`.
 
 ## Parameters
 
@@ -32,7 +37,8 @@ This initializer is a convenience for using the designated initializer and calli
 
 ## See Also
 
-- [convenience init(action: CXAction)](cxtransaction/init(action:).md)
+### Creating New Transactions
+- [convenience init(action: CXAction)](./init%28action%29.md)
   Initializes a new transaction with the specified action.
 
 

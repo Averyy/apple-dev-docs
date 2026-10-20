@@ -1,7 +1,8 @@
 # NSPageController.TransitionStyle
 
 **Framework**: AppKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 These constants control the transition style of the page controller.
 
@@ -14,6 +15,10 @@ These constants control the transition style of the page controller.
 enum TransitionStyle
 ```
 
+```c
+enum NSPageControllerTransitionStyle : NSInteger;
+```
+
 #### Overview
 
 These transition styles are independent of the delegate’s specification of book or history mode. It is perfectly reasonable to create a history style user interface using the book mode delegate methods. Simply set the transition style appropriately.
@@ -21,24 +26,24 @@ These transition styles are independent of the delegate’s specification of boo
 ## Topics
 
 ### Constants
-- [NSPageController.TransitionStyle.stackHistory](nspagecontroller/transitionstyle-swift.enum/stackhistory.md)
+- [NSPageController.TransitionStyle.stackHistory](./transitionstyle-swift.enum/stackhistory.md)
   Pages are stacked on top of each other. Pages animate out to the right to reveal the previous page. Next pages animate in from the right.
-- [NSPageController.TransitionStyle.stackBook](nspagecontroller/transitionstyle-swift.enum/stackbook.md)
+- [NSPageController.TransitionStyle.stackBook](./transitionstyle-swift.enum/stackbook.md)
   Pages are stacked on top of each other. Pages animate out to the left to reveal the next page. Previous pages animate in from the left.
-- [NSPageController.TransitionStyle.horizontalStrip](nspagecontroller/transitionstyle-swift.enum/horizontalstrip.md)
+- [NSPageController.TransitionStyle.horizontalStrip](./transitionstyle-swift.enum/horizontalstrip.md)
   Each page is laid out next to each other in one long horizontal strip
 ### Initializers
-- [init?(rawValue: Int)](nspagecontroller/transitionstyle-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./transitionstyle-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

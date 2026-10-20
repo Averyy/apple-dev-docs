@@ -1,7 +1,8 @@
 # kCGImagePropertyIPTCObjectName
 
 **Framework**: Image I/O  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The object name.
 
@@ -20,11 +21,16 @@ The object name.
 let kCGImagePropertyIPTCObjectName: CFString
 ```
 
+```c
+extern CFStringRef const kCGImagePropertyIPTCObjectName;
+```
+
 ## See Also
 
-- [let kCGImagePropertyIPTCObjectTypeReference: CFString](kcgimagepropertyiptcobjecttypereference.md)
+### Object Details
+- [let kCGImagePropertyIPTCObjectTypeReference: CFString](./kcgimagepropertyiptcobjecttypereference.md)
   The object type.
-- [let kCGImagePropertyIPTCObjectAttributeReference: CFString](kcgimagepropertyiptcobjectattributereference.md)
+- [let kCGImagePropertyIPTCObjectAttributeReference: CFString](./kcgimagepropertyiptcobjectattributereference.md)
   The object attribute.
 
 

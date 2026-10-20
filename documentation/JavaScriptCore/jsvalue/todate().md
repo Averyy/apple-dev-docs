@@ -1,7 +1,8 @@
 # toDate()
 
 **Framework**: JavaScriptCore  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Converts the JavaScript value to a date object.
 
@@ -19,43 +20,48 @@ Converts the JavaScript value to a date object.
 func toDate() -> Date!
 ```
 
+```objc
+- (NSDate *) toDate;
+```
+
 #### Return Value
 
 The date representation of the value.
 
 #### Discussion
 
-If the value contains a JavaScript `Date` object, this method returns an equivalent [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) representation. Otherwise, this method uses JavaScript type coercion to interpret the value as a number of seconds and creates an [`NSDate`](https://developer.apple.com/documentation/foundation/nsdate) object with the [`dateWithTimeIntervalSince1970:`](https://developer.apple.com/documentation/foundation/nsdate/datewithtimeintervalsince1970:) method.
+If the value contains a JavaScript `Date` object, this method returns an equivalent [`NSDate`](../../Foundation/nsdate.md) representation. Otherwise, this method uses JavaScript type coercion to interpret the value as a number of seconds and creates an [`NSDate`](../../Foundation/nsdate.md) object with the [`dateWithTimeIntervalSince1970:`](../../Foundation/nsdate/datewithtimeintervalsince1970_.md) method.
 
 ## See Also
 
-- [func toObject() -> Any!](jsvalue/toobject.md)
+### Reading and Converting JavaScript Values
+- [func toObject() -> Any!](./toobject%28%29.md)
   Converts the JavaScript value to a native object.
-- [func toObjectOf(AnyClass!) -> Any!](jsvalue/toobjectof(_:).md)
+- [func toObjectOf(AnyClass!) -> Any!](./toobjectof%28_%29.md)
   Converts the JavaScript value to a native object of the specified class.
-- [func toBool() -> Bool](jsvalue/tobool.md)
+- [func toBool() -> Bool](./tobool%28%29.md)
   Converts the JavaScript value to a native Boolean value.
-- [func toDouble() -> Double](jsvalue/todouble.md)
+- [func toDouble() -> Double](./todouble%28%29.md)
   Converts the JavaScript value to a native floating-point value.
-- [func toInt32() -> Int32](jsvalue/toint32.md)
+- [func toInt32() -> Int32](./toint32%28%29.md)
   Converts the JavaScript value to a native signed integer value.
-- [func toUInt32() -> UInt32](jsvalue/touint32.md)
+- [func toUInt32() -> UInt32](./touint32%28%29.md)
   Converts the JavaScript value to a native unsigned integer value.
-- [func toNumber() -> NSNumber!](jsvalue/tonumber.md)
-  Converts the JavaScript value to a [`NSNumber`](https://developer.apple.com/documentation/foundation/nsnumber) object.
-- [func toString() -> String!](jsvalue/tostring.md)
+- [func toNumber() -> NSNumber!](./tonumber%28%29.md)
+  Converts the JavaScript value to a [`NSNumber`](../../Foundation/nsnumber.md) object.
+- [func toString() -> String!](./tostring%28%29.md)
   Converts the JavaScript value to a native string.
-- [func toArray() -> [Any]!](jsvalue/toarray.md)
+- [func toArray() -> [Any]!](./toarray%28%29.md)
   Converts the JavaScript value to an array.
-- [func toDictionary() -> [AnyHashable : Any]!](jsvalue/todictionary.md)
+- [func toDictionary() -> [AnyHashable : Any]!](./todictionary%28%29.md)
   Converts the JavaScript value to a dictionary.
-- [func toPoint() -> CGPoint](jsvalue/topoint.md)
+- [func toPoint() -> CGPoint](./topoint%28%29.md)
   Converts the value to a point structure.
-- [func toRange() -> NSRange](jsvalue/torange.md)
+- [func toRange() -> NSRange](./torange%28%29.md)
   Converts the value to a range.
-- [func toRect() -> CGRect](jsvalue/torect.md)
+- [func toRect() -> CGRect](./torect%28%29.md)
   Converts the value to a rectangle structure.
-- [func toSize() -> CGSize](jsvalue/tosize.md)
+- [func toSize() -> CGSize](./tosize%28%29.md)
   Converts the value to a size.
 
 

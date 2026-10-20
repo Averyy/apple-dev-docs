@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a unified window toolbar style.
 
@@ -16,7 +17,8 @@ init()
 
 ## See Also
 
-- [init(showsTitle: Bool)](unifiedwindowtoolbarstyle/init(showstitle:).md)
+### Creating the window toolbar style
+- [init(showsTitle: Bool)](./init%28showstitle%29.md)
   Creates a unified window toolbar style.
 
 

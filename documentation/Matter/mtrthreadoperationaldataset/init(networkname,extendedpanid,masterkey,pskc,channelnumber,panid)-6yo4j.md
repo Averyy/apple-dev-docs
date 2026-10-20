@@ -1,7 +1,8 @@
 # init(networkName:extendedPANID:masterKey:psKc:channelNumber:panID:)
 
 **Framework**: Matter  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 16.4+
@@ -16,6 +17,10 @@
 
 ```swift
 init?(networkName: String, extendedPANID: Data, masterKey: Data, psKc PSKc: Data, channelNumber: NSNumber, panID: Data)
+```
+
+```objc
+- (instancetype) initWithNetworkName:(NSString *) networkName extendedPANID:(NSData *) extendedPANID masterKey:(NSData *) masterKey PSKc:(NSData *) PSKc channelNumber:(NSNumber *) channelNumber panID:(NSData *) panID;
 ```
 
 

@@ -1,7 +1,8 @@
 # init(name:value:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes a newly allocated query item with the specified name and value.
 
@@ -20,13 +21,17 @@ Initializes a newly allocated query item with the specified name and value.
 init(name: String, value: String?)
 ```
 
+```objc
+- (instancetype) initWithName:(NSString *) name value:(NSString *) value;
+```
+
 #### Return Value
 
 An initialized query item object.
 
 #### Discussion
 
-To use the newly initialized query item in composing a URL, add it to the [`queryItems`](nsurlcomponents/queryitems.md) array of an [`NSURLComponents`](nsurlcomponents.md) instance. Because assigning an array of query items to an [`NSURLComponents`](nsurlcomponents.md) instance automatically encodes the name and value properties, you should not percent-encode these strings.
+To use the newly initialized query item in composing a URL, add it to the [`queryItems`](../nsurlcomponents/queryitems.md) array of an [`NSURLComponents`](../nsurlcomponents.md) instance. Because assigning an array of query items to an [`NSURLComponents`](../nsurlcomponents.md) instance automatically encodes the name and value properties, you should not percent-encode these strings.
 
 ## Parameters
 

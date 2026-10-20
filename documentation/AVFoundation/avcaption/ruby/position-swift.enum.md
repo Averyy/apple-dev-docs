@@ -1,7 +1,8 @@
 # AVCaption.Ruby.Position
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Constants that indicate ruby text positions.
 
@@ -17,35 +18,40 @@ Constants that indicate ruby text positions.
 enum Position
 ```
 
+```c
+enum AVCaptionRubyPosition : NSInteger;
+```
+
 ## Topics
 
 ### Ruby positions
-- [AVCaption.Ruby.Position.before](avcaption/ruby/position-swift.enum/before.md)
+- [AVCaption.Ruby.Position.before](./position-swift.enum/before.md)
   Display ruby text above horizontal text, or to the right of vertical text in a right-to-left block progression.
-- [AVCaption.Ruby.Position.after](avcaption/ruby/position-swift.enum/after.md)
+- [AVCaption.Ruby.Position.after](./position-swift.enum/after.md)
   Display ruby text below horizontal text, or to the left of vertical text in a right-to-left block progression.
 ### Initializers
-- [init?(rawValue: Int)](avcaption/ruby/position-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./position-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var text: String](avcaption/ruby/text.md)
+### Accessing text properties
+- [var text: String](./text.md)
   The ruby text.
-- [var position: AVCaption.Ruby.Position](avcaption/ruby/position-swift.property.md)
+- [var position: AVCaption.Ruby.Position](./position-swift.property.md)
   The ruby text position.
-- [var alignment: AVCaption.Ruby.Alignment](avcaption/ruby/alignment-swift.property.md)
+- [var alignment: AVCaption.Ruby.Alignment](./alignment-swift.property.md)
   The ruby text alignment.
-- [AVCaption.Ruby.Alignment](avcaption/ruby/alignment-swift.enum.md)
+- [AVCaption.Ruby.Alignment](./alignment-swift.enum.md)
   Constants that indicate ruby text alignments.
 
 

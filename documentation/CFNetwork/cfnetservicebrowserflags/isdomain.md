@@ -1,7 +1,8 @@
 # isDomain
 
 **Framework**: CFNetwork  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Specifies whether the result pertains to a search for domains or services.
 
@@ -19,20 +20,25 @@ Specifies whether the result pertains to a search for domains or services.
 static var isDomain: CFNetServiceBrowserFlags { get }
 ```
 
+```c
+kCFNetServiceFlagIsDomain
+```
+
 #### Discussion
 
 If set, the results pertain to a search for domains. If not set, the results pertain to a search for services.
 
 ## See Also
 
-- [static var isDefault: CFNetServiceBrowserFlags](cfnetservicebrowserflags/isdefault.md)
+### Type Properties
+- [static var isDefault: CFNetServiceBrowserFlags](./isdefault.md)
   Specifies whether the resulting domain is the default registration or browse domain.
-- [static var isRegistrationDomain: CFNetServiceBrowserFlags](cfnetservicebrowserflags/isregistrationdomain.md)
-- [static var moreComing: CFNetServiceBrowserFlags](cfnetservicebrowserflags/morecoming.md)
+- [static var isRegistrationDomain: CFNetServiceBrowserFlags](./isregistrationdomain.md)
+- [static var moreComing: CFNetServiceBrowserFlags](./morecoming.md)
   A hint that the system will call the client’s callback function again soon.
-- [static var remove: CFNetServiceBrowserFlags](cfnetservicebrowserflags/remove.md)
+- [static var remove: CFNetServiceBrowserFlags](./remove.md)
   Specifies whether the client should remove the result instead of adding it.
-- [static var isRegistrationDomain: CFNetServiceBrowserFlags](cfnetservicebrowserflags/isregistrationdomain.md)
+- [static var isRegistrationDomain: CFNetServiceBrowserFlags](./isregistrationdomain.md)
 
 
 ---

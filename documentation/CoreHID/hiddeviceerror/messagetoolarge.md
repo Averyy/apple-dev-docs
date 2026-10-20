@@ -1,7 +1,8 @@
 # HIDDeviceError.messageTooLarge
 
 **Framework**: Core HID  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The data provided to a function was too large for the device to handle.
 

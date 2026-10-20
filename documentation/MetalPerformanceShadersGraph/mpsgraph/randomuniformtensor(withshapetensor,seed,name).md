@@ -1,7 +1,8 @@
 # randomUniformTensor(withShapeTensor:seed:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a RandomUniform operation and returns random uniform values
 
@@ -17,6 +18,10 @@ Creates a RandomUniform operation and returns random uniform values
 
 ```swift
 func randomUniformTensor(withShapeTensor shapeTensor: MPSGraphTensor, seed: Int, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) randomUniformTensorWithShapeTensor:(MPSGraphTensor *) shapeTensor seed:(NSUInteger) seed name:(NSString *) name;
 ```
 
 #### Return Value

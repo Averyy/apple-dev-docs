@@ -1,7 +1,8 @@
 # url
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The portion of the path from the root through the component represented by the receiver.
 
@@ -12,6 +13,10 @@ The portion of the path from the root through the component represented by the r
 
 ```swift
 var url: URL? { get set }
+```
+
+```objc
+@property (copy, nullable) NSURL * URL;
 ```
 
 

@@ -1,7 +1,8 @@
 # buffer
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The buffer this slice references.
 
@@ -19,7 +20,8 @@ var buffer: LowLevelBufferResource { get }
 
 ## See Also
 
-- [var size: Int](lowlevelbufferslice/size.md)
+### Accessing the buffer region
+- [var size: Int](./size.md)
   The size of this slice, in bytes.
 
 

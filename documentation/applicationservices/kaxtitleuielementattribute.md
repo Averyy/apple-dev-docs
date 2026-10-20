@@ -1,7 +1,8 @@
 # kAXTitleUIElementAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 An accessibility object that represents a static text title associated with another accessibility object.
 
@@ -12,6 +13,10 @@ An accessibility object that represents a static text title associated with anot
 
 ```swift
 var kAXTitleUIElementAttribute: String { get }
+```
+
+```c
+#define kAXTitleUIElementAttribute
 ```
 
 

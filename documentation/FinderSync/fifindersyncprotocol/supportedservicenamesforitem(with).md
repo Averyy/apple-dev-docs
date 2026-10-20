@@ -1,7 +1,8 @@
 # supportedServiceNamesForItem(with:)
 
 **Framework**: Finder Sync  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.10+
@@ -10,6 +11,10 @@
 
 ```swift
 optional func supportedServiceNamesForItem(with itemURL: URL) -> [NSFileProviderServiceName]
+```
+
+```objc
+- (NSArray<NSString *> *) supportedServiceNamesForItemWithURL:(NSURL *) itemURL;
 ```
 
 

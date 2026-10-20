@@ -1,7 +1,8 @@
 # MoveCommandDirection.down
 
 **Framework**: SwiftUI  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - macOS 10.15+
@@ -15,9 +16,10 @@ case down
 
 ## See Also
 
-- [MoveCommandDirection.up](movecommanddirection/up.md)
-- [MoveCommandDirection.left](movecommanddirection/left.md)
-- [MoveCommandDirection.right](movecommanddirection/right.md)
+### Getting move command directions
+- [MoveCommandDirection.up](./up.md)
+- [MoveCommandDirection.left](./left.md)
+- [MoveCommandDirection.right](./right.md)
 
 
 ---

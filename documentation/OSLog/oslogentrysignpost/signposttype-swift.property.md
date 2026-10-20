@@ -1,7 +1,8 @@
 # signpostType
 
 **Framework**: OSLog  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The signpost’s type.
 
@@ -20,9 +21,14 @@ The signpost’s type.
 var signpostType: OSLogEntrySignpost.SignpostType { get }
 ```
 
+```objc
+@property (nonatomic, readonly) OSLogEntrySignpostType signpostType;
+```
+
 ## See Also
 
-- [OSLogEntrySignpost.SignpostType](oslogentrysignpost/signposttype-swift.enum.md)
+### Accessing Signpost Types
+- [OSLogEntrySignpost.SignpostType](./signposttype-swift.enum.md)
   The available signpost types.
 
 

@@ -1,7 +1,8 @@
 # rnn(initialHiddenStates:inputHiddenWeight:hiddenHiddenWeight:bias:direction:activation:outputSequence:)
 
 **Framework**: Accelerate  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds an RNN operation to the current graph.
 
@@ -20,11 +21,13 @@ Adds an RNN operation to the current graph.
 func rnn(initialHiddenStates: BNNSGraph.Builder.Tensor<T>, inputHiddenWeight: BNNSGraph.Builder.Tensor<T>, hiddenHiddenWeight: BNNSGraph.Builder.Tensor<T>, bias: BNNSGraph.Builder.Tensor<T>, direction: BNNSGraph.Builder.Direction, activation: BNNSGraph.Builder.Activation, outputSequence: Bool) -> (output: BNNSGraph.Builder.Tensor<T>, hiddenStates: BNNSGraph.Builder.Tensor<T>)
 ```
 
+Available when `T` conforms to `BNNSScalar`.
+
 #### Discussion
 
 For each time `t`, from `0` to `L-1`, this operation performs the following:
 
-```None
+```
 h[t, ...] = activation(matmul(x[t, ...], inputHiddenWeight^T) +
                        matmul(h[t-1, ...], hiddenHiddenWeight^T) +
                        bias)

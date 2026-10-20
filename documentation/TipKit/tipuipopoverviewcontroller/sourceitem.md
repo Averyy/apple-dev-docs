@@ -1,7 +1,8 @@
 # sourceItem
 
 **Framework**: TipKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The item on which to anchor the tip popover.
 

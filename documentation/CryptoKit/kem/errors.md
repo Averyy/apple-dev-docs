@@ -1,7 +1,8 @@
 # KEM.Errors
 
 **Framework**: Apple CryptoKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Errors that CryptoKit throws when it encounters problems in key encapsulation mechanism (KEM) operations.
 
@@ -23,19 +24,19 @@ enum Errors
 ## Topics
 
 ### Enumeration Cases
-- [KEM.Errors.invalidSeed](kem/errors/invalidseed.md)
+- [KEM.Errors.invalidSeed](./errors/invalidseed.md)
   The seed value supplied for deriving a key isn’t valid.
-- [KEM.Errors.publicKeyMismatchDuringInitialization](kem/errors/publickeymismatchduringinitialization.md)
+- [KEM.Errors.publicKeyMismatchDuringInitialization](./errors/publickeymismatchduringinitialization.md)
   The public key CryptoKit receives when it initializes a key encapsulation operation doesn’t match the expected value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Error](../../Swift/error.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

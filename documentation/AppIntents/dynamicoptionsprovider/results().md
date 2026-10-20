@@ -2,6 +2,7 @@
 
 **Framework**: App Intents  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -10,7 +11,7 @@
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -19,11 +20,17 @@
 func results() async throws -> Self.Result
 ```
 
+## Default Implementations
+
+### DynamicOptionsProvider Implementations
+- [func results() async throws -> Self.Result](./results%28%29-5xj97.md)
+
 ## See Also
 
-- [func defaultResult() async -> Self.DefaultValue?](dynamicoptionsprovider/defaultresult.md)
+### Returning the parameter options
+- [func defaultResult() async -> Self.DefaultValue?](./defaultresult%28%29.md)
   The default value for parameters using this provider when no value is provided by the user.
-- [associatedtype Result : ResultsCollection](dynamicoptionsprovider/result.md)
+- [associatedtype Result : ResultsCollection](./result.md)
 
 
 ---

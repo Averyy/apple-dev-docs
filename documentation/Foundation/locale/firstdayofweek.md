@@ -1,7 +1,8 @@
 # firstDayOfWeek
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The first day of the week as represented by this locale.
 
@@ -26,17 +27,18 @@ This value is the preferred first day of the week to show in a calendar view. It
 
 This property corresponds to the `fw` key of the Unicode BCP 47 extension.
 
-For locale instances created with the `fw` specifier (such as `en-US@fw=mon`), or with a custom [`Locale.Components`](locale/components.md), this property represents the custom day. Otherwise, it represents the locale’s default first day of the week.
+For locale instances created with the `fw` specifier (such as `en-US@fw=mon`), or with a custom [`Locale.Components`](./components.md), this property represents the custom day. Otherwise, it represents the locale’s default first day of the week.
 
 ## See Also
 
-- [Locale.Weekday](locale/weekday.md)
+### Getting date and time components
+- [Locale.Weekday](./weekday.md)
   A type that represents weekdays, used for indicating a locale’s first day of the week.
-- [var hourCycle: Locale.HourCycle](locale/hourcycle-swift.property.md)
+- [var hourCycle: Locale.HourCycle](./hourcycle-swift.property.md)
   The hour cycle used by the locale, like one-to-twelve or zero-to-twenty-three.
-- [Locale.HourCycle](locale/hourcycle-swift.enum.md)
+- [Locale.HourCycle](./hourcycle-swift.enum.md)
   A type that represents the hour cycle used in a locale, like one-to-twelve or zero-to-twenty-three.
-- [var timeZone: TimeZone?](locale/timezone.md)
+- [var timeZone: TimeZone?](./timezone.md)
   The time zone associated with the locale, if any.
 
 

@@ -1,7 +1,8 @@
 # description
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A textual representation of this instance.
 
@@ -22,9 +23,10 @@ var description: String { get }
 
 ## See Also
 
-- [let confidence: Float](smudgeobservation/confidence.md)
+### Inspecting an observation
+- [let confidence: Float](./confidence.md)
   The level of confidence in the observation’s accuracy of smudge detection on a lens.
-- [enum RequestDescriptor](requestdescriptor.md)
+- [enum RequestDescriptor](../requestdescriptor.md)
   A type that describes the request and revision combination.
 
 

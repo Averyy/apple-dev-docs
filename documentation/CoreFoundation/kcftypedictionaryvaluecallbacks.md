@@ -1,23 +1,28 @@
 # kCFTypeDictionaryValueCallBacks
 
 **Framework**: Core Foundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
-Predefined [`CFDictionaryValueCallBacks`](cfdictionaryvaluecallbacks.md) structure containing a set of callbacks appropriate for use when the values in a CFDictionary are all CFType-derived objects.
+Predefined [`CFDictionaryValueCallBacks`](./cfdictionaryvaluecallbacks.md) structure containing a set of callbacks appropriate for use when the values in a CFDictionary are all CFType-derived objects.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 let kCFTypeDictionaryValueCallBacks: CFDictionaryValueCallBacks
+```
+
+```c
+extern const CFDictionaryValueCallBacks kCFTypeDictionaryValueCallBacks;
 ```
 
 #### Discussion
@@ -26,10 +31,11 @@ The retain callback is `CFRetain`, the release callback is `CFRelease`, the copy
 
 ## See Also
 
-- [let kCFCopyStringDictionaryKeyCallBacks: CFDictionaryKeyCallBacks](kcfcopystringdictionarykeycallbacks.md)
-  Predefined [`CFDictionaryKeyCallBacks`](cfdictionarykeycallbacks.md) structure containing a set of callbacks appropriate for use when the keys of a CFDictionary are all CFString objects, which may be mutable and need to be copied in order to serve as constant keys for the values in the dictionary.
-- [let kCFTypeDictionaryKeyCallBacks: CFDictionaryKeyCallBacks](kcftypedictionarykeycallbacks.md)
-  Predefined [`CFDictionaryKeyCallBacks`](cfdictionarykeycallbacks.md) structure containing a set of callbacks appropriate for use when the keys of a CFDictionary are all CFType-derived objects.
+### Constants
+- [let kCFCopyStringDictionaryKeyCallBacks: CFDictionaryKeyCallBacks](./kcfcopystringdictionarykeycallbacks.md)
+  Predefined [`CFDictionaryKeyCallBacks`](./cfdictionarykeycallbacks.md) structure containing a set of callbacks appropriate for use when the keys of a CFDictionary are all CFString objects, which may be mutable and need to be copied in order to serve as constant keys for the values in the dictionary.
+- [let kCFTypeDictionaryKeyCallBacks: CFDictionaryKeyCallBacks](./kcftypedictionarykeycallbacks.md)
+  Predefined [`CFDictionaryKeyCallBacks`](./cfdictionarykeycallbacks.md) structure containing a set of callbacks appropriate for use when the keys of a CFDictionary are all CFType-derived objects.
 
 
 ---

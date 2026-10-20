@@ -1,7 +1,8 @@
 # ==(_:_:)
 
 **Framework**: SwiftData  
-**Kind**: op
+**Kind**: op  
+**Role**: Operator
 
 **Availability**:
 - iOS 18.0+

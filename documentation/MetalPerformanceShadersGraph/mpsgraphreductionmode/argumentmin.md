@@ -1,7 +1,8 @@
 # MPSGraphReductionMode.argumentMin
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Argument Min
 
@@ -17,6 +18,10 @@ Argument Min
 
 ```swift
 case argumentMin
+```
+
+```c
+MPSGraphReductionModeArgumentMin
 ```
 
 

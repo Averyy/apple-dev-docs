@@ -1,12 +1,13 @@
 # setFrameAutosaveName(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the name AppKit uses to automatically save the window’s frame rectangle data in the defaults system.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Sets the name AppKit uses to automatically save the window’s frame rectangle d
 func setFrameAutosaveName(_ name: NSWindow.FrameAutosaveName) -> Bool
 ```
 
+```objc
+- (BOOL) setFrameAutosaveName:(NSWindowFrameAutosaveName) name;
+```
+
 #### Return Value
 
-[`true`](https://developer.apple.com/documentation/swift/true) if the specified name is acceptable and another window isn’t already using it; otherwise, [`false`](https://developer.apple.com/documentation/swift/false).
+[`true`](../../Swift/true.md) if the specified name is acceptable and another window isn’t already using it; otherwise, [`false`](../../Swift/false.md).
 
 ## Parameters
 
@@ -24,23 +29,24 @@ func setFrameAutosaveName(_ name: NSWindow.FrameAutosaveName) -> Bool
 
 ## See Also
 
-- [class func removeFrame(usingName: NSWindow.FrameAutosaveName)](nswindow/removeframe(usingname:).md)
+### Managing Window Frames in User Defaults
+- [class func removeFrame(usingName: NSWindow.FrameAutosaveName)](./removeframe%28usingname%29.md)
   Removes the frame data stored under a given name from the application’s user defaults.
-- [func setFrameUsingName(NSWindow.FrameAutosaveName) -> Bool](nswindow/setframeusingname(_:).md)
+- [func setFrameUsingName(NSWindow.FrameAutosaveName) -> Bool](./setframeusingname%28_%29.md)
   Sets the window’s frame rectangle by reading the rectangle data stored under a given name from the defaults system.
-- [func setFrameUsingName(NSWindow.FrameAutosaveName, force: Bool) -> Bool](nswindow/setframeusingname(_:force:).md)
+- [func setFrameUsingName(NSWindow.FrameAutosaveName, force: Bool) -> Bool](./setframeusingname%28_,force%29.md)
   Sets the window’s frame rectangle by reading the rectangle data stored under a given name from the defaults system. Can operate on non-resizable windows.
-- [func saveFrame(usingName: NSWindow.FrameAutosaveName)](nswindow/saveframe(usingname:).md)
+- [func saveFrame(usingName: NSWindow.FrameAutosaveName)](./saveframe%28usingname%29.md)
   Saves the window’s frame rectangle in the user defaults system under a given name.
-- [var frameAutosaveName: NSWindow.FrameAutosaveName](nswindow/frameautosavename-swift.property.md)
+- [var frameAutosaveName: NSWindow.FrameAutosaveName](./frameautosavename-swift.property.md)
   The name used to automatically save the window’s frame rectangle data in the defaults system.
-- [typealias FrameAutosaveName](nswindow/frameautosavename-swift.typealias.md)
+- [typealias FrameAutosaveName](./frameautosavename-swift.typealias.md)
   The type of a window’s frame autosave name.
-- [var frameDescriptor: NSWindow.PersistableFrameDescriptor](nswindow/framedescriptor.md)
+- [var frameDescriptor: NSWindow.PersistableFrameDescriptor](./framedescriptor.md)
   A string representation of the window’s frame rectangle.
-- [func setFrame(from: NSWindow.PersistableFrameDescriptor)](nswindow/setframe(from:).md)
+- [func setFrame(from: NSWindow.PersistableFrameDescriptor)](./setframe%28from%29.md)
   Sets the window’s frame rectangle from a given string representation.
-- [typealias PersistableFrameDescriptor](nswindow/persistableframedescriptor.md)
+- [typealias PersistableFrameDescriptor](./persistableframedescriptor.md)
   The type of a window’s frame descriptor.
 
 

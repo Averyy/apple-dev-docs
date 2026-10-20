@@ -1,22 +1,27 @@
 # displayName(forPeer:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a user-readable name for a peer.
 
 **Availability**:
-- iOS 3.0+
-- iPadOS 3.0+
-- Mac Catalyst 3.0+
-- macOS 10.8+
-- visionOS 1.0+
-- watchOS 2.0+
+- iOS 3.0+ - Deprecated in 7.0
+- iPadOS 3.0+ - Deprecated in 7.0
+- Mac Catalyst 3.0+ - Deprecated in 7.0
+- macOS 10.8+ - Deprecated in 10.10
+- visionOS 1.0+ - Deprecated in 1.0
+- watchOS 2.0+ - Deprecated in 2.0
 
 ## Declaration
 
 ```swift
 func displayName(forPeer peerID: String!) -> String!
+```
+
+```objc
+- (NSString *) displayNameForPeer:(NSString *) peerID;
 ```
 
 #### Return Value
@@ -33,9 +38,11 @@ The display name is used to populate your user interface with the names of other
 
 ## See Also
 
-- [var displayName: String!](gksession/displayname.md)
+### Related Documentation
+- [var displayName: String!](./displayname.md)
   The name of the user.
-- [func peers(with: GKPeerConnectionState) -> [Any]!](gksession/peers(with:).md)
+### Obtaining Information About Other Peers
+- [func peers(with: GKPeerConnectionState) -> [Any]!](./peers%28with%29.md)
   Returns a list of peers in the specified connection state.
 
 

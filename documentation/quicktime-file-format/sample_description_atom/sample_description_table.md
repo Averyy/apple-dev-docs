@@ -1,7 +1,8 @@
 # Sample description table
 
 **Framework**: QuickTime File Format  
-**Kind**: property
+**Kind**: property  
+**Role**: Data field
 
 An array of sample descriptions.
 
@@ -17,19 +18,20 @@ While the exact format of the sample description varies by media type, the first
 - **Reserved**: Six bytes that must be set to `0`.
 - **Data reference index**: A 16-bit integer that contains the index of the data reference to use to retrieve data associated with samples that use this sample description. Data references are stored in data reference atoms.
 
-These four fields may be followed by additional data specific to the media type and data format. See [`Media data atom types`](media_data_atom_types.md) for additional details regarding specific media types and media formats.
+These four fields may be followed by additional data specific to the media type and data format. See [Media data atom types](../media_data_atom_types.md) for additional details regarding specific media types and media formats.
 
 ## See Also
 
-- [Size](sample_description_atom/size.md)
+### Data fields
+- [Size](./size.md)
   A 32-bit integer that specifies the number of bytes in this sample description atom.
-- [Type](sample_description_atom/type.md)
+- [Type](./type.md)
   A 32-bit integer that identifies the atom type.
-- [Version](sample_description_atom/version.md)
+- [Version](./version.md)
   A 1-byte specification of the version of this sample description atom.
-- [Flags](sample_description_atom/flags.md)
+- [Flags](./flags.md)
   A 3-byte space for sample description flags.
-- [Number of entries](sample_description_atom/number_of_entries.md)
+- [Number of entries](./number_of_entries.md)
   A 32-bit integer containing the number of sample descriptions that follow.
 
 

@@ -1,7 +1,8 @@
 # allJoints(in:)
 
 **Framework**: Vision  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Retrieves a dictionary of all joints in a joint group.
 
@@ -21,15 +22,16 @@ func allJoints(in groupName: HumanBodyPose3DObservation.JointsGroupName? = nil) 
 
 ## See Also
 
-- [var availableJointsGroupNames: [HumanBodyPose3DObservation.JointsGroupName]](humanbodypose3dobservation/availablejointsgroupnames.md)
+### Getting the joints
+- [var availableJointsGroupNames: [HumanBodyPose3DObservation.JointsGroupName]](./availablejointsgroupnames.md)
   The names of the available joint groupings in the observation.
-- [HumanBodyPose3DObservation.JointsGroupName](humanbodypose3dobservation/jointsgroupname.md)
+- [HumanBodyPose3DObservation.JointsGroupName](./jointsgroupname.md)
   The supported joint group names for the body pose.
-- [func joint(for: HumanBodyPose3DObservation.JointName) -> Joint3D?](humanbodypose3dobservation/joint(for:).md)
+- [func joint(for: HumanBodyPose3DObservation.JointName) -> Joint3D?](./joint%28for%29.md)
   Retrieves a joint for a given joint name.
-- [var availableJointNames: [HumanBodyPose3DObservation.JointName]](humanbodypose3dobservation/availablejointnames.md)
+- [var availableJointNames: [HumanBodyPose3DObservation.JointName]](./availablejointnames.md)
   The names of the available joints in the observation.
-- [HumanBodyPose3DObservation.JointName](humanbodypose3dobservation/jointname.md)
+- [HumanBodyPose3DObservation.JointName](./jointname.md)
   The supported joint names for the body pose.
 
 

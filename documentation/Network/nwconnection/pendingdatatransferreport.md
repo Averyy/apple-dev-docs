@@ -1,7 +1,8 @@
 # NWConnection.PendingDataTransferReport
 
 **Framework**: Network  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An outstanding data transfer report that has yet to be collected.
 
@@ -23,26 +24,27 @@ class PendingDataTransferReport
 ## Topics
 
 ### Collecting Reports
-- [func collect(queue: DispatchQueue, completion: (NWConnection.DataTransferReport) -> Void)](nwconnection/pendingdatatransferreport/collect(queue:completion:).md)
+- [func collect(queue: DispatchQueue, completion: (NWConnection.DataTransferReport) -> Void)](./pendingdatatransferreport/collect%28queue,completion%29.md)
   Stops an outstanding data transfer report and delivers the result.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [Collecting Network Connection Metrics](collecting-network-connection-metrics.md)
+### Collecting Connection Metrics
+- [Collecting Network Connection Metrics](../collecting-network-connection-metrics.md)
   Use reports to understand how DNS and protocol handshakes impact connection establishment.
-- [func requestEstablishmentReport(queue: DispatchQueue, completion: (NWConnection.EstablishmentReport?) -> Void)](nwconnection/requestestablishmentreport(queue:completion:).md)
+- [func requestEstablishmentReport(queue: DispatchQueue, completion: (NWConnection.EstablishmentReport?) -> Void)](./requestestablishmentreport%28queue,completion%29.md)
   Requests a copy of the connection’s establishment report once the connection is in the ready state.
-- [NWConnection.EstablishmentReport](nwconnection/establishmentreport.md)
+- [NWConnection.EstablishmentReport](./establishmentreport.md)
   A report that provides metrics about the establishment of a connection.
-- [func startDataTransferReport() -> NWConnection.PendingDataTransferReport](nwconnection/startdatatransferreport.md)
+- [func startDataTransferReport() -> NWConnection.PendingDataTransferReport](./startdatatransferreport%28%29.md)
   Begins a new data transfer report, which can later be collected.
-- [NWConnection.DataTransferReport](nwconnection/datatransferreport.md)
+- [NWConnection.DataTransferReport](./datatransferreport.md)
   A report that provides metrics about data being sent and received on a connection.
 
 

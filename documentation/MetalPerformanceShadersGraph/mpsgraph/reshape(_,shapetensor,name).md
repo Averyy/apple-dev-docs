@@ -1,7 +1,8 @@
 # reshape(_:shapeTensor:name:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a reshape operation and returns the result tensor.
 
@@ -17,6 +18,10 @@ Creates a reshape operation and returns the result tensor.
 
 ```swift
 func reshape(_ tensor: MPSGraphTensor, shapeTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
+```
+
+```objc
+- (MPSGraphTensor *) reshapeTensor:(MPSGraphTensor *) tensor withShapeTensor:(MPSGraphTensor *) shapeTensor name:(NSString *) name;
 ```
 
 #### Return Value

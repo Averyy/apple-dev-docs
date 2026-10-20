@@ -1,7 +1,8 @@
 # bottom
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Place the annotation on the bottom of the item.
 

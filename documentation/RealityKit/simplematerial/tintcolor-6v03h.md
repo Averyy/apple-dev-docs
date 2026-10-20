@@ -1,12 +1,13 @@
 # tintColor
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A tint color applied to the base color in macOS.
 
 **Availability**:
-- macOS 10.15+
+- macOS 10.15+ - Deprecated in 12.0 (renamed: color)
 
 ## Declaration
 
@@ -16,17 +17,18 @@ var tintColor: NSColor { get set }
 
 ## See Also
 
-- [var color: SimpleMaterial.BaseColor](simplematerial/color.md)
+### Characterizing a material
+- [var color: SimpleMaterial.BaseColor](./color.md)
   The material’s color.
-- [var baseColor: MaterialColorParameter](simplematerial/basecolor-swift.property.md)
+- [var baseColor: MaterialColorParameter](./basecolor-swift.property.md)
   The base color of the material.
-- [SimpleMaterial.BaseColor](simplematerial/basecolor-swift.typealias.md)
+- [SimpleMaterial.BaseColor](./basecolor-swift.typealias.md)
   The type used to represent base color.
-- [SimpleMaterial.Texture](simplematerial/texture.md)
+- [SimpleMaterial.Texture](./texture.md)
   The type used to represent textures.
-- [var metallic: MaterialScalarParameter](simplematerial/metallic.md)
+- [var metallic: MaterialScalarParameter](./metallic.md)
   A value that you set to control whether the material has a metallic look.
-- [var roughness: MaterialScalarParameter](simplematerial/roughness.md)
+- [var roughness: MaterialScalarParameter](./roughness.md)
   The roughness of the material.
 
 

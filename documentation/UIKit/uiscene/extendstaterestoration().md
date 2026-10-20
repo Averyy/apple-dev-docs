@@ -1,7 +1,8 @@
 # extendStateRestoration()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 15.0+
@@ -16,9 +17,14 @@
 func extendStateRestoration()
 ```
 
+```objc
+- (void) extendStateRestoration;
+```
+
 ## See Also
 
-- [func completeStateRestoration()](uiscene/completestaterestoration.md)
+### Supporting state restoration
+- [func completeStateRestoration()](./completestaterestoration%28%29.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # findMatch(completionHandler:)
 
 **Framework**: GameKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Use information from the activity to find matches for the local player.
 
@@ -16,12 +17,20 @@ Use information from the activity to find matches for the local player.
 ## Declaration
 
 ```swift
+func findMatch(completionHandler: @escaping @Sendable (GKMatch?, (any Error)?) -> Void)
+```
+
+```swift
 func findMatch() async throws -> GKMatch
+```
+
+```objc
+- (void) findMatchWithCompletionHandler:(void (^)(GKMatch *match, NSError *error)) completionHandler;
 ```
 
 ## Mentions
 
-- [Creating activities for your game](creating-activities-for-your-game.md)
+- [Creating activities for your game](../creating-activities-for-your-game.md)
 
 #### Discussion
 
@@ -29,7 +38,8 @@ GameKit creates a classic match making request with the activity’s party code 
 
 ## See Also
 
-- [func findPlayersForHostedMatch(completionHandler: ([GKPlayer]?, (any Error)?) -> Void)](gkgameactivity/findplayersforhostedmatch(completionhandler:).md)
+### Performing a matchmaking request
+- [func findPlayersForHostedMatch(completionHandler: ([GKPlayer]?, (any Error)?) -> Void)](./findplayersforhostedmatch%28completionhandler%29.md)
   Use information from the activity to find server hosted players for the local player.
 
 

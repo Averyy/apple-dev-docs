@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Music Understanding  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The value associated with the time range.
 

@@ -1,7 +1,8 @@
 # VNCoreMLRequest
 
 **Framework**: Vision  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An image-analysis request that uses a Core ML model to process images.
 
@@ -19,60 +20,65 @@ An image-analysis request that uses a Core ML model to process images.
 class VNCoreMLRequest
 ```
 
+```objc
+@interface VNCoreMLRequest : VNImageBasedRequest
+```
+
 #### Overview
 
-The results array of a Core ML-based image analysis request contains a different observation type, depending on the kind of [`MLModel`](https://developer.apple.com/documentation/coreml/mlmodel) object you use:
+The results array of a Core ML-based image analysis request contains a different observation type, depending on the kind of [`MLModel`](../CoreML/mlmodel.md) object you use:
 
-- If the model predicts a single feature, the model’s [`modelDescription`](https://developer.apple.com/documentation/coreml/mlmodel/modeldescription) object has a non-`nil` value for [`predictedFeatureName`](https://developer.apple.com/documentation/coreml/mlmodeldescription/predictedfeaturename) and Vision treats the model as a classifier. The results are [`VNClassificationObservation`](vnclassificationobservation.md) objects.
-- If the model’s outputs include at least one output with a feature type of [`MLFeatureType.image`](https://developer.apple.com/documentation/coreml/mlfeaturetype/image), Vision treats that model as an image-to-image model. The results are [`VNPixelBufferObservation`](vnpixelbufferobservation.md) objects.
-- Otherwise, Vision treats the model as a general predictor model. The results are [`VNCoreMLFeatureValueObservation`](vncoremlfeaturevalueobservation.md) objects.
+- If the model predicts a single feature, the model’s [`modelDescription`](../CoreML/mlmodel/modeldescription.md) object has a non-`nil` value for [`predictedFeatureName`](../CoreML/mlmodeldescription/predictedfeaturename.md) and Vision treats the model as a classifier. The results are [`VNClassificationObservation`](./vnclassificationobservation.md) objects.
+- If the model’s outputs include at least one output with a feature type of [`MLFeatureType.image`](../CoreML/mlfeaturetype/image.md), Vision treats that model as an image-to-image model. The results are [`VNPixelBufferObservation`](./vnpixelbufferobservation.md) objects.
+- Otherwise, Vision treats the model as a general predictor model. The results are [`VNCoreMLFeatureValueObservation`](./vncoremlfeaturevalueobservation.md) objects.
 
-> **Note**:  Vision forwards all [`confidence`](vnobservation/confidence.md) values from Core ML models as-is and doesn’t normalize them to `[0, 1]`.
+> **Note**:  Vision forwards all [`confidence`](./vnobservation/confidence.md) values from Core ML models as-is and doesn’t normalize them to `[0, 1]`.
 
 ## Topics
 
 ### Initializing with a Core ML Model
-- [convenience init(model: VNCoreMLModel)](vncoremlrequest/init(model:).md)
+- [convenience init(model: VNCoreMLModel)](./vncoremlrequest/init%28model%29.md)
   Creates a model container to use with an image analysis request based on the model you provide.
-- [init(model: VNCoreMLModel, completionHandler: VNRequestCompletionHandler?)](vncoremlrequest/init(model:completionhandler:).md)
+- [init(model: VNCoreMLModel, completionHandler: VNRequestCompletionHandler?)](./vncoremlrequest/init%28model,completionhandler%29.md)
   Creates a model container to use with an image analysis request based on the model you provide, with an optional completion handler.
-- [var model: VNCoreMLModel](vncoremlrequest/model.md)
+- [var model: VNCoreMLModel](./vncoremlrequest/model.md)
   The model to base the image analysis request on.
-- [class VNCoreMLModel](vncoremlmodel.md)
+- [class VNCoreMLModel](./vncoremlmodel.md)
   A container for the model to use with Vision requests.
 ### Configuring Image Options
-- [var imageCropAndScaleOption: VNImageCropAndScaleOption](vncoremlrequest/imagecropandscaleoption.md)
+- [var imageCropAndScaleOption: VNImageCropAndScaleOption](./vncoremlrequest/imagecropandscaleoption.md)
   An optional setting that tells the Vision algorithm how to scale an input image.
-- [enum VNImageCropAndScaleOption](vnimagecropandscaleoption.md)
+- [enum VNImageCropAndScaleOption](./vnimagecropandscaleoption.md)
   Options that define how Vision crops and scales an input-image.
 ### Identifying Request Revisions
-- [var VNCoreMLRequestRevision1: Int](vncoremlrequestrevision1.md)
+- [var VNCoreMLRequestRevision1: Int](./vncoremlrequestrevision1.md)
   A constant for specifying revision 1 of a Core ML request.
 
 ## Relationships
 
 ### Inherits From
-- [VNImageBasedRequest](vnimagebasedrequest.md)
+- [VNImageBasedRequest](./vnimagebasedrequest.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [Classifying Images with Vision and Core ML](../coreml/classifying-images-with-vision-and-core-ml.md)
+### Machine learning image analysis
+- [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md)
   Crop and scale photos using the Vision framework and classify them with a Core ML model.
-- [Training a Create ML Model to Classify Flowers](training-a-create-ml-model-to-classify-flowers.md)
+- [Training a Create ML Model to Classify Flowers](./training-a-create-ml-model-to-classify-flowers.md)
   Train a flower classifier using Create ML in Swift Playgrounds, and apply the resulting model to real-time image classification using Vision.
-- [class VNClassificationObservation](vnclassificationobservation.md)
+- [class VNClassificationObservation](./vnclassificationobservation.md)
   An object that represents classification information that an image-analysis request produces.
-- [class VNPixelBufferObservation](vnpixelbufferobservation.md)
+- [class VNPixelBufferObservation](./vnpixelbufferobservation.md)
   An object that represents an image that an image-analysis request produces.
-- [class VNCoreMLFeatureValueObservation](vncoremlfeaturevalueobservation.md)
+- [class VNCoreMLFeatureValueObservation](./vncoremlfeaturevalueobservation.md)
   An object that represents a collection of key-value information that a Core ML image-analysis request produces.
 
 

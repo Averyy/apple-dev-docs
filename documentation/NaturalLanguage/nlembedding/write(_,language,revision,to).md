@@ -1,7 +1,8 @@
 # write(_:language:revision:to:)
 
 **Framework**: Natural Language  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Exports the word embedding contained within a Core ML model file at the given URL.
 

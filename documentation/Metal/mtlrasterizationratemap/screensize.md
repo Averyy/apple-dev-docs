@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The logical size, in pixels, of the viewport coordinate system.
@@ -20,17 +21,22 @@ The logical size, in pixels, of the viewport coordinate system.
 var screenSize: MTLSize { get }
 ```
 
+```objc
+@property (readonly) MTLSize screenSize;
+```
+
 ## Mentions
 
-- [Rendering with a rasterization rate map](rendering-with-a-rasterization-rate-map.md)
+- [Rendering with a rasterization rate map](../rendering-with-a-rasterization-rate-map.md)
 
 ## See Also
 
-- [var layerCount: Int](mtlrasterizationratemap/layercount.md)
+### Inspecting geometric and rendering properties
+- [var layerCount: Int](./layercount.md)
   The number of layers in the rate map.
-- [func physicalSize(layer: Int) -> MTLSize](mtlrasterizationratemap/physicalsize(layer:).md)
+- [func physicalSize(layer: Int) -> MTLSize](./physicalsize%28layer%29.md)
   Returns the dimensions, in pixels, of the area in the render target affected by the rasterization rate map.
-- [var physicalGranularity: MTLSize](mtlrasterizationratemap/physicalgranularity.md)
+- [var physicalGranularity: MTLSize](./physicalgranularity.md)
   The granularity, in physical pixels, at which the rasterization rate varies.
 
 

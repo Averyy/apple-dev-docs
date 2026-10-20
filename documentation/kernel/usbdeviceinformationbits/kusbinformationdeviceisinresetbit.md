@@ -1,7 +1,8 @@
 # kUSBInformationDeviceIsInResetBit
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The system is resetting the hub port that the USB attaches to.
 
@@ -10,7 +11,7 @@ The system is resetting the hub port that the USB attaches to.
 
 ## Declaration
 
-```swift
+```c
 kUSBInformationDeviceIsInResetBit = 6
 ```
 

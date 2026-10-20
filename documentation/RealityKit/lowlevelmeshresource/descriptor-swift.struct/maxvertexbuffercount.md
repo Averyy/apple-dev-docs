@@ -1,7 +1,8 @@
 # maxVertexBufferCount
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The maximum number of separate vertex buffers the renderer supports.
 

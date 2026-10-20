@@ -1,7 +1,8 @@
 # setSamplerStates(_:range:)
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Encodes an array of samplers into the argument buffer.
 
@@ -11,7 +12,7 @@ Encodes an array of samplers into the argument buffer.
 - Mac Catalyst 11.0+
 - macOS 10.13+
 - tvOS 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,11 +23,12 @@ func setSamplerStates(_ samplers: [(any MTLSamplerState)?], range: Range<Int>)
 ## Parameters
 
 - `samplers`: An array of samplers the method encodes.
-- `range`: A range of indices within the argument buffer for each element in `samplers`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](mtlargumentdescriptor.md) instances.
+- `range`: A range of indices within the argument buffer for each element in `samplers`. The values correspond to either the index IDs of declarations in Metal Shading Language (MSL) or the [`index`](../mtlargumentdescriptor/index.md) property of [`MTLArgumentDescriptor`](../mtlargumentdescriptor.md) instances.
 
 ## See Also
 
-- [func setSamplerState((any MTLSamplerState)?, index: Int)](mtlargumentencoder/setsamplerstate(_:index:).md)
+### Encoding samplers
+- [func setSamplerState((any MTLSamplerState)?, index: Int)](./setsamplerstate%28_,index%29.md)
   Encodes a sampler into the argument buffer.
 
 

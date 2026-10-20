@@ -1,7 +1,8 @@
 # run()
 
 **Framework**: XCTest  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Creates a test run instance and starts the test.
 
@@ -11,13 +12,18 @@ Creates a test run instance and starts the test.
 func run()
 ```
 
+```objc
+- (void) runTest;
+```
+
 #### Discussion
 
-Creates an instance of the class that [`testRunClass`](xctest/testrunclass.md) specifies, and passes it as a parameter to the [`perform(_:)`](xctest/perform(_:).md) method.
+Creates an instance of the class that [`testRunClass`](./testrunclass.md) specifies, and passes it as a parameter to the [`perform(_:)`](./perform%28_%29.md) method.
 
 ## See Also
 
-- [func perform(XCTestRun)](xctest/perform(_:).md)
+### Running Tests
+- [func perform(XCTestRun)](./perform%28_%29.md)
   Executes a specific test.
 
 

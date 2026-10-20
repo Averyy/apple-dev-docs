@@ -1,7 +1,8 @@
 # MatterAddDeviceExtensionRequestHandler.DeviceCredential
 
 **Framework**: MatterSupport  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A collection of device credentials the device presents during commissioning.
 
@@ -10,7 +11,7 @@ A collection of device credentials the device presents during commissioning.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -21,33 +22,34 @@ struct DeviceCredential
 ## Topics
 
 ### Creating the credential
-- [init(certificationDeclaration: Data, deviceAttestationCertificate: Data, productAttestationIntermediateCertificate: Data)](matteradddeviceextensionrequesthandler/devicecredential/init(certificationdeclaration:deviceattestationcertificate:productattestationintermediatecertificate:).md)
+- [init(certificationDeclaration: Data, deviceAttestationCertificate: Data, productAttestationIntermediateCertificate: Data)](./devicecredential/init%28certificationdeclaration,deviceattestationcertificate,productattestationintermediatecertificate%29.md)
   Creates the credential object.
 ### Getting the properties
-- [var certificationDeclaration: Data](matteradddeviceextensionrequesthandler/devicecredential/certificationdeclaration.md)
+- [var certificationDeclaration: Data](./devicecredential/certificationdeclaration.md)
   The device’s Certification Declaration as defined in the Matter specification.
-- [var deviceAttestationCertificate: Data](matteradddeviceextensionrequesthandler/devicecredential/deviceattestationcertificate.md)
+- [var deviceAttestationCertificate: Data](./devicecredential/deviceattestationcertificate.md)
   The device’s Device Attestation Certificate as defined in the Matter specification.
-- [var productAttestationIntermediateCertificate: Data](matteradddeviceextensionrequesthandler/devicecredential/productattestationintermediatecertificate.md)
+- [var productAttestationIntermediateCertificate: Data](./devicecredential/productattestationintermediatecertificate.md)
   The device’s Product Attestation Intermediate Certificate as defined in the Matter specification.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func configureDevice(named: String, in: MatterAddDeviceRequest.Room?) async](matteradddeviceextensionrequesthandler/configuredevice(named:in:).md)
+### Configuring and validating the device
+- [func configureDevice(named: String, in: MatterAddDeviceRequest.Room?) async](./configuredevice%28named,in%29.md)
   Configures the device with selected attributes.
-- [func validateDeviceCredential(MatterAddDeviceExtensionRequestHandler.DeviceCredential) async throws](matteradddeviceextensionrequesthandler/validatedevicecredential(_:).md)
+- [func validateDeviceCredential(MatterAddDeviceExtensionRequestHandler.DeviceCredential) async throws](./validatedevicecredential%28_%29.md)
   Performs verification and attestation checks.
-- [func rooms(in: MatterAddDeviceRequest.Home?) async -> [MatterAddDeviceRequest.Room]](matteradddeviceextensionrequesthandler/rooms(in:).md)
+- [func rooms(in: MatterAddDeviceRequest.Home?) async -> [MatterAddDeviceRequest.Room]](./rooms%28in%29.md)
   Provides rooms that correspond to a home in the device setup.
 
 

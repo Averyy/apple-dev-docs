@@ -1,7 +1,8 @@
 # SetAbortedHandler
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Install a handler for the system to call when no other processes reference the action object.
 
@@ -11,13 +12,13 @@ Install a handler for the system to call when no other processes reference the a
 
 ## Declaration
 
-```swift
+```c
 kern_return_t SetAbortedHandler(OSActionAbortedHandler handler);
 ```
 
-#### Return_value
+#### Return Value
 
-[`kIOReturnSuccess`](https://developer.apple.com/documentation/driverkit/kioreturnsuccess) on success, or another value if an error occurs. See [`Error Codes`](https://developer.apple.com/documentation/driverkit/error-codes). 
+[`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md). 
 
 #### Discussion
 
@@ -29,9 +30,10 @@ The system calls your handler when no other objects reference the action object.
 
 ## See Also
 
-- [+ Create](osaction/3438206-create.md)
+### Configuring the Action
+- [+ Create](./api-3438206-create.md)
   Creates a new action object and configures it with your custom target object and callback method. 
-- [- free](osaction/3438209-free.md)
+- [- free](./api-3438209-free.md)
   Performs any final cleanup for the action object.
 
 

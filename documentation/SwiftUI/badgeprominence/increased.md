@@ -1,7 +1,8 @@
 # increased
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The highest level of prominence for a badge.
 
@@ -34,9 +35,10 @@ ForEach(accounts) { account in
 
 ## See Also
 
-- [static let standard: BadgeProminence](badgeprominence/standard.md)
+### Getting background prominence
+- [static let standard: BadgeProminence](./standard.md)
   The standard level of prominence for a badge.
-- [static let decreased: BadgeProminence](badgeprominence/decreased.md)
+- [static let decreased: BadgeProminence](./decreased.md)
   The lowest level of prominence for a badge.
 
 

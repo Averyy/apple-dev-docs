@@ -1,7 +1,8 @@
 # CVBuffer.CreationAttributes.Backing
 
 **Framework**: Core Video  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Type of backing storage used by the pixel buffer
 
@@ -23,16 +24,16 @@ enum Backing
 ## Topics
 
 ### Enumeration Cases
-- [CVBuffer.CreationAttributes.Backing.ioSurface](cvbuffer/creationattributes/backing-swift.enum/iosurface.md)
-- [CVBuffer.CreationAttributes.Backing.ioSurfaceWithProperties(_:)](cvbuffer/creationattributes/backing-swift.enum/iosurfacewithproperties(_:).md)
-- [CVBuffer.CreationAttributes.Backing.memory](cvbuffer/creationattributes/backing-swift.enum/memory.md)
+- [CVBuffer.CreationAttributes.Backing.ioSurface](./backing-swift.enum/iosurface.md)
+- [CVBuffer.CreationAttributes.Backing.ioSurfaceWithProperties(_:)](./backing-swift.enum/iosurfacewithproperties%28_%29.md)
+- [CVBuffer.CreationAttributes.Backing.memory](./backing-swift.enum/memory.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

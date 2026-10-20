@@ -1,7 +1,8 @@
 # SKTestFailures.ManageSubscriptions.generic(_:)
 
 **Framework**: StoreKit Test  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 **Availability**:
 - iOS 17.0+

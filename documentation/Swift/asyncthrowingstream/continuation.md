@@ -1,7 +1,8 @@
 # AsyncThrowingStream.Continuation
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A mechanism to interface between synchronous code and an asynchronous stream.
 
@@ -29,42 +30,43 @@ The closure you provide to the `AsyncThrowingStream` in `init(_:bufferingPolicy:
 ## Topics
 
 ### Producing Elements
-- [func yield(sending Element) -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult](asyncthrowingstream/continuation/yield(_:).md)
+- [func yield(sending Element) -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult](./continuation/yield%28_%29.md)
   Resume the task awaiting the next iteration point by having it return normally from its suspension point with a given element.
-- [func yield(with: sending Result<Element, Failure>) -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult](asyncthrowingstream/continuation/yield(with:).md)
+- [func yield(with: sending Result<Element, Failure>) -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult](./continuation/yield%28with%29.md)
   Resume the task awaiting the next iteration point by having it return normally or throw, based on a given result.
-- [func yield() -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult](asyncthrowingstream/continuation/yield.md)
+- [func yield() -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult](./continuation/yield%28%29.md)
   Resume the task awaiting the next iteration point by having it return normally from its suspension point.
-- [AsyncThrowingStream.Continuation.YieldResult](asyncthrowingstream/continuation/yieldresult.md)
+- [AsyncThrowingStream.Continuation.YieldResult](./continuation/yieldresult.md)
   A type that indicates the result of yielding a value to a client, by way of the continuation.
 ### Finishing the Stream
-- [func finish(throwing: Failure?)](asyncthrowingstream/continuation/finish(throwing:).md)
+- [func finish(throwing: Failure?)](./continuation/finish%28throwing%29.md)
   Resume the task awaiting the next iteration point by having it return nil, which signifies the end of the iteration.
 ### Handling Termination
-- [var onTermination: ((AsyncThrowingStream<Element, Failure>.Continuation.Termination) -> Void)?](asyncthrowingstream/continuation/ontermination.md)
+- [var onTermination: ((AsyncThrowingStream<Element, Failure>.Continuation.Termination) -> Void)?](./continuation/ontermination.md)
   A callback to invoke when canceling iteration of an asynchronous stream.
-- [AsyncThrowingStream.Continuation.Termination](asyncthrowingstream/continuation/termination.md)
+- [AsyncThrowingStream.Continuation.Termination](./continuation/termination.md)
   A type that indicates how the stream terminated.
 ### Enumerations
-- [AsyncThrowingStream.Continuation.BufferingPolicy](asyncthrowingstream/continuation/bufferingpolicy.md)
+- [AsyncThrowingStream.Continuation.BufferingPolicy](./continuation/bufferingpolicy.md)
   A strategy that handles exhaustion of a buffer’s capacity.
 ### Default Implementations
-- [Equatable Implementations](asyncthrowingstream/continuation/equatable-implementations.md)
-- [Hashable Implementations](asyncthrowingstream/continuation/hashable-implementations.md)
+- [Equatable Implementations](./continuation/equatable-implementations.md)
+- [Hashable Implementations](./continuation/hashable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](equatable.md)
-- [Hashable](hashable.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
+- [Equatable](../equatable.md)
+- [Hashable](../hashable.md)
+- [Sendable](../sendable.md)
+- [SendableMetatype](../sendablemetatype.md)
 
 ## See Also
 
-- [init(Element.Type, bufferingPolicy: AsyncThrowingStream<Element, Failure>.Continuation.BufferingPolicy, (AsyncThrowingStream<Element, Failure>.Continuation) -> Void)](asyncthrowingstream/init(_:bufferingpolicy:_:).md)
+### Creating a Continuation-Based Stream
+- [init(Element.Type, bufferingPolicy: AsyncThrowingStream<Element, Failure>.Continuation.BufferingPolicy, (AsyncThrowingStream<Element, Failure>.Continuation) -> Void)](./init%28_,bufferingpolicy,_%29.md)
   Constructs an asynchronous stream for an element type, using the specified buffering policy and element-producing closure.
-- [AsyncThrowingStream.Continuation.BufferingPolicy](asyncthrowingstream/continuation/bufferingpolicy.md)
+- [AsyncThrowingStream.Continuation.BufferingPolicy](./continuation/bufferingpolicy.md)
   A strategy that handles exhaustion of a buffer’s capacity.
 
 

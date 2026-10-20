@@ -1,7 +1,8 @@
 # init(payload:)
 
 **Framework**: Core Spotlight  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes the pipeline data with the specified payload value.
 
@@ -20,23 +21,24 @@ init(payload: SearchPipelineData.Payload)
 
 ## Parameters
 
-- `payload`: The data your custom stage produced as its output. Use the [`SearchPipelineData.Payload`](searchpipelinedata/payload-swift.enum.md) type to construct this value.
+- `payload`: The data your custom stage produced as its output. Use the [`SearchPipelineData.Payload`](./payload-swift.enum.md) type to construct this value.
 
 ## See Also
 
-- [static func items([SearchableItem]) -> SearchPipelineData](searchpipelinedata/items(_:).md)
+### Configuring the pipeline data
+- [static func items([SearchableItem]) -> SearchPipelineData](./items%28_%29.md)
   Creates a pipeline data structure from the an array of searchable items.
-- [static func scoredItems([ScoredSearchableItem]) -> SearchPipelineData](searchpipelinedata/scoreditems(_:).md)
+- [static func scoredItems([ScoredSearchableItem]) -> SearchPipelineData](./scoreditems%28_%29.md)
   Creates a pipeline data structure from the an array of scored searchable items.
-- [static func groupedItems([SearchableItemAttribute : [SearchableItem]]) -> SearchPipelineData](searchpipelinedata/groupeditems(_:).md)
+- [static func groupedItems([SearchableItemAttribute : [SearchableItem]]) -> SearchPipelineData](./groupeditems%28_%29.md)
   Creates a pipeline data structure from a dictionary of attributes and searchable items.
-- [static func text(String) -> SearchPipelineData](searchpipelinedata/text(_:).md)
+- [static func text(String) -> SearchPipelineData](./text%28_%29.md)
   Creates a pipeline data structure from a text string.
-- [static func count(Int) -> SearchPipelineData](searchpipelinedata/count(_:).md)
+- [static func count(Int) -> SearchPipelineData](./count%28_%29.md)
   Creates a pipeline data structure from an integer value.
-- [static func statistic(name: String, value: Double) -> SearchPipelineData](searchpipelinedata/statistic(name:value:).md)
+- [static func statistic(name: String, value: Double) -> SearchPipelineData](./statistic%28name,value%29.md)
   Creates a pipeline data structure from statistical information.
-- [static func table(SearchResultsTable) -> SearchPipelineData](searchpipelinedata/table(_:).md)
+- [static func table(SearchResultsTable) -> SearchPipelineData](./table%28_%29.md)
   Creates a pipeline data structure from tabular data.
 
 

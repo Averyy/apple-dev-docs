@@ -1,14 +1,15 @@
 # notify_server_routine
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 mig_routine_t notify_server_routine(mach_msg_header_t *InHeadP);
 ```
 

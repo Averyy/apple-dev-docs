@@ -1,7 +1,8 @@
 # willStartLiveMagnify
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
 - macOS 27.0+
@@ -11,6 +12,8 @@
 ```swift
 static var willStartLiveMagnify: NotificationCenter.BaseMessageIdentifier<NSScrollView.WillStartLiveMagnifyMessage> { get }
 ```
+
+Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSScrollView.WillStartLiveMagnifyMessage>`.
 
 
 ---

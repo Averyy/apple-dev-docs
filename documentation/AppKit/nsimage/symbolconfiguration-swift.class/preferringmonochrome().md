@@ -1,7 +1,8 @@
 # preferringMonochrome()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Creates a configuration that specifies that the symbol should prefer its monochrome variant.
 
@@ -14,9 +15,14 @@ Creates a configuration that specifies that the symbol should prefer its monochr
 class func preferringMonochrome() -> Self
 ```
 
+```objc
++ (instancetype) configurationPreferringMonochrome;
+```
+
 ## See Also
 
-- [class func preferringHierarchical() -> Self](nsimage/symbolconfiguration-swift.class/preferringhierarchical.md)
+### Type Methods
+- [class func preferringHierarchical() -> Self](./preferringhierarchical%28%29.md)
   Creates a configuration that specifies that the symbol should prefer its hierarchical variant, if one exists.
 
 

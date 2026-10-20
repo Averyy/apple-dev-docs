@@ -1,7 +1,8 @@
 # init(exactly:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 8.0+
@@ -20,13 +21,14 @@ init?<T>(exactly source: T) where T : BinaryFloatingPoint
 
 ## See Also
 
-- [init?(exactly: Double)](int/init(exactly:)-77kq8.md)
+### Converting with No Loss of Precision
+- [init?(exactly: Double)](./init%28exactly%29-77kq8.md)
   Creates an integer from the given floating-point value, if it can be represented exactly.
-- [init?(exactly: Float)](int/init(exactly:)-7qdwf.md)
+- [init?(exactly: Float)](./init%28exactly%29-7qdwf.md)
   Creates an integer from the given floating-point value, if it can be represented exactly.
-- [init?(exactly: Float16)](int/init(exactly:)-5xh2s.md)
+- [init?(exactly: Float16)](./init%28exactly%29-5xh2s.md)
   Creates an integer from the given floating-point value, if it can be represented exactly.
-- [init?(exactly: Float80)](int/init(exactly:)-5kot1.md)
+- [init?(exactly: Float80)](./init%28exactly%29-5kot1.md)
   Creates an integer from the given floating-point value, if it can be represented exactly.
 
 

@@ -1,7 +1,8 @@
 # IsIconRefMaskEmpty(_:)
 
 **Framework**: Application Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func IsIconRefMaskEmpty(_ iconRef: IconRef!) -> Bool
+```
+
+```c
+Boolean IsIconRefMaskEmpty(IconRef iconRef);
 ```
 
 

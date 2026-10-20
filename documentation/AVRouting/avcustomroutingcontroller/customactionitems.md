@@ -1,7 +1,8 @@
 # customActionItems
 
 **Framework**: AVRouting  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of custom action items to add to a route picker.
 
@@ -15,6 +16,10 @@ An array of custom action items to add to a route picker.
 
 ```swift
 var customActionItems: [AVCustomRoutingActionItem] { get set }
+```
+
+```objc
+@property (nonatomic, strong) NSArray<AVCustomRoutingActionItem *> * customActionItems;
 ```
 
 

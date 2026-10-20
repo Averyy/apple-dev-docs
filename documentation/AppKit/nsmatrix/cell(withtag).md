@@ -1,12 +1,13 @@
 # cell(withTag:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Searches the receiver and returns the last cell matching the specified tag.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Searches the receiver and returns the last cell matching the specified tag.
 func cell(withTag tag: Int) -> NSCell?
 ```
 
+```objc
+- (NSCell *) cellWithTag:(NSInteger) tag;
+```
+
 #### Return Value
 
-The last (when viewing the matrix as a row-ordered array) [`NSCell`](nscell.md) object that has a tag matching `anInt`, or `nil` if no such cell exists
+The last (when viewing the matrix as a row-ordered array) [`NSCell`](../nscell.md) object that has a tag matching `anInt`, or `nil` if no such cell exists
 
 ## Parameters
 
@@ -24,19 +29,21 @@ The last (when viewing the matrix as a row-ordered array) [`NSCell`](nscell.md) 
 
 ## See Also
 
-- [func selectCell(withTag: Int) -> Bool](nsmatrix/selectcell(withtag:).md)
+### Related Documentation
+- [func selectCell(withTag: Int) -> Bool](./selectcell%28withtag%29.md)
   Selects the last cell with the given tag.
-- [var tag: Int](nsactioncell/tag.md)
+- [var tag: Int](../nsactioncell/tag.md)
   Returns the receiver’s tag.
-- [var selectedCells: [NSCell]](nsmatrix/selectedcells.md)
+### Finding Cells
+- [var selectedCells: [NSCell]](./selectedcells.md)
   An array containing all of the matrix’s highlighted cells plus its selected cell.
-- [var selectedColumn: Int](nsmatrix/selectedcolumn.md)
+- [var selectedColumn: Int](./selectedcolumn.md)
   The column number of the selected cell.
-- [var selectedRow: Int](nsmatrix/selectedrow.md)
+- [var selectedRow: Int](./selectedrow.md)
   The row number of the selected cell.
-- [func cell(atRow: Int, column: Int) -> NSCell?](nsmatrix/cell(atrow:column:).md)
+- [func cell(atRow: Int, column: Int) -> NSCell?](./cell%28atrow,column%29.md)
   Returns the cell at the specified row and column.
-- [var cells: [NSCell]](nsmatrix/cells.md)
+- [var cells: [NSCell]](./cells.md)
   An array containing the cells of the matrix.
 
 

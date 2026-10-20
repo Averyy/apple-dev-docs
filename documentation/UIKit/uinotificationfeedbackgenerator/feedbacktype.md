@@ -1,7 +1,8 @@
 # UINotificationFeedbackGenerator.FeedbackType
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The type of notification that a notification feedback generator object generates.
 
@@ -16,33 +17,38 @@ The type of notification that a notification feedback generator object generates
 enum FeedbackType
 ```
 
+```c
+enum UINotificationFeedbackType : NSInteger;
+```
+
 ## Topics
 
 ### Constants
-- [UINotificationFeedbackGenerator.FeedbackType.error](uinotificationfeedbackgenerator/feedbacktype/error.md)
+- [UINotificationFeedbackGenerator.FeedbackType.error](./feedbacktype/error.md)
   A notification feedback type that indicates a task has failed.
-- [UINotificationFeedbackGenerator.FeedbackType.success](uinotificationfeedbackgenerator/feedbacktype/success.md)
+- [UINotificationFeedbackGenerator.FeedbackType.success](./feedbacktype/success.md)
   A notification feedback type that indicates a task has completed successfully.
-- [UINotificationFeedbackGenerator.FeedbackType.warning](uinotificationfeedbackgenerator/feedbacktype/warning.md)
+- [UINotificationFeedbackGenerator.FeedbackType.warning](./feedbacktype/warning.md)
   A notification feedback type that indicates a task has produced a warning.
 ### Initializers
-- [init?(rawValue: Int)](uinotificationfeedbackgenerator/feedbacktype/init(rawvalue:).md)
+- [init?(rawValue: Int)](./feedbacktype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func notificationOccurred(UINotificationFeedbackGenerator.FeedbackType)](uinotificationfeedbackgenerator/notificationoccurred(_:).md)
+### Producing notification feedback
+- [func notificationOccurred(UINotificationFeedbackGenerator.FeedbackType)](./notificationoccurred%28_%29.md)
   Triggers notification feedback.
-- [func notificationOccurred(UINotificationFeedbackGenerator.FeedbackType, at: CGPoint)](uinotificationfeedbackgenerator/notificationoccurred(_:at:).md)
+- [func notificationOccurred(UINotificationFeedbackGenerator.FeedbackType, at: CGPoint)](./notificationoccurred%28_,at%29.md)
   Triggers notification feedback at the specified location.
 
 

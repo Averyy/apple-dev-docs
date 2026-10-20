@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: ActivityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an object you use to observe user authorizations for starting Live Activities and updating them with ActivityKit push notifications.
 
@@ -17,11 +18,12 @@ init()
 
 ## See Also
 
-- [var areActivitiesEnabled: Bool](activityauthorizationinfo/areactivitiesenabled.md)
+### Observing Live Activity permission changes
+- [var areActivitiesEnabled: Bool](./areactivitiesenabled.md)
   A Boolean value that indicates whether your app can start a Live Activity.
-- [let activityEnablementUpdates: ActivityAuthorizationInfo.ActivityEnablementUpdates](activityauthorizationinfo/activityenablementupdates-swift.property.md)
+- [let activityEnablementUpdates: ActivityAuthorizationInfo.ActivityEnablementUpdates](./activityenablementupdates-swift.property.md)
   An asynchronous sequence you use to observe whether your app can start a Live Activity.
-- [ActivityAuthorizationInfo.ActivityEnablementUpdates](activityauthorizationinfo/activityenablementupdates-swift.struct.md)
+- [ActivityAuthorizationInfo.ActivityEnablementUpdates](./activityenablementupdates-swift.struct.md)
   A structure that offers functionality to observe whether your app can start a Live Activity.
 
 

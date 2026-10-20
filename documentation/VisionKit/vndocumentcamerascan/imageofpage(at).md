@@ -1,7 +1,8 @@
 # imageOfPage(at:)
 
 **Framework**: VisionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the image of a page at a specified index.
 
@@ -17,6 +18,10 @@ Requests the image of a page at a specified index.
 func imageOfPage(at index: Int) -> UIImage
 ```
 
+```objc
+- (UIImage *) imageOfPageAtIndex:(NSUInteger) index;
+```
+
 #### Return Value
 
 The image of the page at the specified index. If `index` is out of bounds, the framework throws an exception.
@@ -27,9 +32,10 @@ The image of the page at the specified index. If `index` is out of bounds, the f
 
 ## See Also
 
-- [var title: String](vndocumentcamerascan/title.md)
+### Reading the scanned document
+- [var title: String](./title.md)
   The title of the scanned document.
-- [var pageCount: Int](vndocumentcamerascan/pagecount.md)
+- [var pageCount: Int](./pagecount.md)
   The number of pages in the scanned document.
 
 

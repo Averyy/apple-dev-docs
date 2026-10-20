@@ -1,7 +1,8 @@
 # RCSMessage.Content.fileTransfer(_:)
 
 **Framework**: TelephonyMessagingKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A content type for file transfer content.
 
@@ -16,7 +17,8 @@ case fileTransfer(RCSMessage.FileTransfer)
 
 ## See Also
 
-- [RCSMessage.FileTransfer](rcsmessage/filetransfer.md)
+### Working with file transfers
+- [RCSMessage.FileTransfer](../filetransfer.md)
   A structure that represents file transfer content in an RCS message.
 
 

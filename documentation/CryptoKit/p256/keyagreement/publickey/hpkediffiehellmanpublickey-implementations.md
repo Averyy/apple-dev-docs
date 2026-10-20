@@ -1,11 +1,12 @@
 # HPKEDiffieHellmanPublicKey Implementations
 
-**Framework**: Apple CryptoKit
+**Framework**: Apple CryptoKit  
+**Role**: API Collection
 
 ## Topics
 
 ### Type Aliases
-- [P256.KeyAgreement.PublicKey.EphemeralPrivateKey](p256/keyagreement/publickey/ephemeralprivatekey.md)
+- [P256.KeyAgreement.PublicKey.EphemeralPrivateKey](./ephemeralprivatekey.md)
   The type of the ephemeral private key associated with this public key.
 
 

@@ -1,7 +1,8 @@
 # subModelNames
 
 **Framework**: Core ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The names of the sub models in the Pipeline.
 
@@ -22,7 +23,8 @@ let subModelNames: [String]
 
 ## See Also
 
-- [let subModels: [MLModelStructure]](mlmodelstructure-swift.enum/pipeline/submodels.md)
+### Accessing the pipeline model
+- [let subModels: [MLModelStructure]](./submodels.md)
   The structure of sub models in the Pipeline.
 
 

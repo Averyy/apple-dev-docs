@@ -1,17 +1,22 @@
 # pasteboardChangedOwner(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Notifies the object that the pasteboard’s owner changed.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 optional func pasteboardChangedOwner(_ sender: NSPasteboard)
+```
+
+```objc
+- (void) pasteboardChangedOwner:(NSPasteboard *) sender;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # spacing
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The proximity at which the glass effect container view begins merging eligible descendent glass effect views.
 
@@ -12,6 +13,10 @@ The proximity at which the glass effect container view begins merging eligible d
 
 ```swift
 var spacing: CGFloat { get set }
+```
+
+```objc
+@property CGFloat spacing;
 ```
 
 #### Discussion

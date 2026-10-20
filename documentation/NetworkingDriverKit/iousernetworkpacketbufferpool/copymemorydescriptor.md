@@ -1,16 +1,17 @@
 # CopyMemoryDescriptor
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a memory descriptor for the buffer pool’s contents.
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual kern_return_t CopyMemoryDescriptor(IOMemoryDescriptor **memory);
 ```
 

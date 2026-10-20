@@ -5,10 +5,10 @@
 ## Topics
 
 ### Constants
-- [var cdevGenErr: Int](cdevgenerr.md)
-- [var cdevMemErr: Int](cdevmemerr.md)
-- [var cdevResErr: Int](cdevreserr.md)
-- [var cdevUnset: Int](cdevunset.md)
+- [var cdevGenErr: Int](../cdevgenerr.md)
+- [var cdevMemErr: Int](../cdevmemerr.md)
+- [var cdevResErr: Int](../cdevreserr.md)
+- [var cdevUnset: Int](../cdevunset.md)
 
 
 ---

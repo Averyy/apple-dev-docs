@@ -1,7 +1,8 @@
 # unmapped
 
 **Framework**: Game Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The live input of a controller without any system-level remapping of the controls.
 
@@ -17,6 +18,10 @@ The live input of a controller without any system-level remapping of the control
 
 ```swift
 var unmapped: GCControllerLiveInput? { get }
+```
+
+```objc
+@property (readonly, nullable) GCControllerLiveInput * unmappedInput;
 ```
 
 #### Discussion

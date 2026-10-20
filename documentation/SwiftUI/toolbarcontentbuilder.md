@@ -1,7 +1,8 @@
 # ToolbarContentBuilder
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constructs a toolbar item set from multi-expression closures.
 
@@ -24,43 +25,44 @@ struct ToolbarContentBuilder
 ## Topics
 
 ### Building toolbar content
-- [static buildBlock(_:)](toolbarcontentbuilder/buildblock(_:).md)
-- [static buildBlock(_:_:)](toolbarcontentbuilder/buildblock(_:_:).md)
-- [static buildBlock(_:_:_:)](toolbarcontentbuilder/buildblock(_:_:_:).md)
-- [static buildBlock(_:_:_:_:)](toolbarcontentbuilder/buildblock(_:_:_:_:).md)
-- [static buildBlock(_:_:_:_:_:)](toolbarcontentbuilder/buildblock(_:_:_:_:_:).md)
-- [static buildBlock(_:_:_:_:_:_:)](toolbarcontentbuilder/buildblock(_:_:_:_:_:_:).md)
-- [static buildBlock(_:_:_:_:_:_:_:)](toolbarcontentbuilder/buildblock(_:_:_:_:_:_:_:).md)
-- [static buildBlock(_:_:_:_:_:_:_:_:)](toolbarcontentbuilder/buildblock(_:_:_:_:_:_:_:_:).md)
-- [static buildBlock(_:_:_:_:_:_:_:_:_:)](toolbarcontentbuilder/buildblock(_:_:_:_:_:_:_:_:_:).md)
-- [static buildBlock(_:_:_:_:_:_:_:_:_:_:)](toolbarcontentbuilder/buildblock(_:_:_:_:_:_:_:_:_:_:).md)
+- [static buildBlock(_:)](./toolbarcontentbuilder/buildblock%28_%29.md)
+- [static buildBlock(_:_:)](./toolbarcontentbuilder/buildblock%28_,_%29.md)
+- [static buildBlock(_:_:_:)](./toolbarcontentbuilder/buildblock%28_,_,_%29.md)
+- [static buildBlock(_:_:_:_:)](./toolbarcontentbuilder/buildblock%28_,_,_,_%29.md)
+- [static buildBlock(_:_:_:_:_:)](./toolbarcontentbuilder/buildblock%28_,_,_,_,_%29.md)
+- [static buildBlock(_:_:_:_:_:_:)](./toolbarcontentbuilder/buildblock%28_,_,_,_,_,_%29.md)
+- [static buildBlock(_:_:_:_:_:_:_:)](./toolbarcontentbuilder/buildblock%28_,_,_,_,_,_,_%29.md)
+- [static buildBlock(_:_:_:_:_:_:_:_:)](./toolbarcontentbuilder/buildblock%28_,_,_,_,_,_,_,_%29.md)
+- [static buildBlock(_:_:_:_:_:_:_:_:_:)](./toolbarcontentbuilder/buildblock%28_,_,_,_,_,_,_,_,_%29.md)
+- [static buildBlock(_:_:_:_:_:_:_:_:_:_:)](./toolbarcontentbuilder/buildblock%28_,_,_,_,_,_,_,_,_,_%29.md)
 ### Building conditional toolbar content
-- [static buildIf(_:)](toolbarcontentbuilder/buildif(_:).md)
-- [static buildEither(first:)](toolbarcontentbuilder/buildeither(first:).md)
-- [static buildEither(second:)](toolbarcontentbuilder/buildeither(second:).md)
-- [static buildExpression(_:)](toolbarcontentbuilder/buildexpression(_:).md)
+- [static buildIf(_:)](./toolbarcontentbuilder/buildif%28_%29.md)
+- [static buildEither(first:)](./toolbarcontentbuilder/buildeither%28first%29.md)
+- [static buildEither(second:)](./toolbarcontentbuilder/buildeither%28second%29.md)
+- [static buildExpression(_:)](./toolbarcontentbuilder/buildexpression%28_%29.md)
   Builds an expression within the builder.
-- [static buildLimitedAvailability(_:)](toolbarcontentbuilder/buildlimitedavailability(_:).md)
+- [static buildLimitedAvailability(_:)](./toolbarcontentbuilder/buildlimitedavailability%28_%29.md)
 
 ## See Also
 
-- [func toolbar(content:)](view/toolbar(content:).md)
+### Populating a toolbar
+- [func toolbar(content:)](./view/toolbar%28content%29.md)
   Populates the toolbar or navigation bar with the specified items.
-- [struct ToolbarItem](toolbaritem.md)
+- [struct ToolbarItem](./toolbaritem.md)
   A model that represents an item which can be placed in the toolbar or navigation bar.
-- [struct ToolbarItemGroup](toolbaritemgroup.md)
+- [struct ToolbarItemGroup](./toolbaritemgroup.md)
   A model that represents a group of `ToolbarItem`s which can be placed in the toolbar or navigation bar.
-- [struct ToolbarItemPlacement](toolbaritemplacement.md)
+- [struct ToolbarItemPlacement](./toolbaritemplacement.md)
   A structure that defines the placement of a toolbar item.
-- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](view/toolbaroverflowmenu(content:).md)
+- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](./view/toolbaroverflowmenu%28content%29.md)
   Configures the overflow menu of a toolbar.
-- [struct ToolbarOverflowMenu](toolbaroverflowmenu.md)
+- [struct ToolbarOverflowMenu](./toolbaroverflowmenu.md)
   The overflow menu of a toolbar.
-- [protocol ToolbarContent](toolbarcontent.md)
+- [protocol ToolbarContent](./toolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a toolbar.
-- [struct ToolbarSpacer](toolbarspacer.md)
+- [struct ToolbarSpacer](./toolbarspacer.md)
   A standard space item in toolbars.
-- [struct DefaultToolbarItem](defaulttoolbaritem.md)
+- [struct DefaultToolbarItem](./defaulttoolbaritem.md)
   A toolbar item that represents a system component.
 
 

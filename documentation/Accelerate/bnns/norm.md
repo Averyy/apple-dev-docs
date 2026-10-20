@@ -1,7 +1,8 @@
 # BNNS.Norm
 
 **Framework**: Accelerate  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Constants that describe norm types.
 
@@ -11,8 +12,10 @@ Constants that describe norm types.
 - Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
-- visionOS ?+
+- visionOS
 - watchOS 8.0+
+
+> **Deprecated**: Use the BNNSGraph API instead.
 
 ## Declaration
 
@@ -24,36 +27,37 @@ struct Norm
 ## Topics
 
 ### Norm Types
-- [static var taxicab: BNNS.Norm](bnns/norm/taxicab.md)
+- [static var taxicab: BNNS.Norm](./norm/taxicab.md)
   A constant that represents the taxicab norm.
-- [static var l1: BNNS.Norm](bnns/norm/l1.md)
+- [static var l1: BNNS.Norm](./norm/l1.md)
   A constant that represents the L1 norm.
-- [static var euclidean: BNNS.Norm](bnns/norm/euclidean.md)
+- [static var euclidean: BNNS.Norm](./norm/euclidean.md)
   A constant that represents the Euclidean norm.
-- [static var l2: BNNS.Norm](bnns/norm/l2.md)
+- [static var l2: BNNS.Norm](./norm/l2.md)
   A constant that represents the L2 norm.
-- [static var maximum: BNNS.Norm](bnns/norm/maximum.md)
+- [static var maximum: BNNS.Norm](./norm/maximum.md)
   A constant that represents the maximum norm.
-- [static var lInfinity: BNNS.Norm](bnns/norm/linfinity.md)
+- [static var lInfinity: BNNS.Norm](./norm/linfinity.md)
   A constant that represents the maximum norm.
 ### Raw Values
-- [init(rawValue: Float)](bnns/norm/init(rawvalue:).md)
+- [init(rawValue: Float)](./norm/init%28rawvalue%29.md)
   Creates a new instance with the specified raw value.
-- [var rawValue: Float](bnns/norm/rawvalue.md)
+- [var rawValue: Float](./norm/rawvalue.md)
   The corresponding value of the raw type.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Copyable](../../Swift/copyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, dictionary: BNNSNDArrayDescriptor, paddingIndex: Int, maximumNorm: Float, normType: BNNS.Norm, scalesGradientByFrequency: Bool, filterParameters: BNNSFilterParameters?)](bnns/embeddinglayer/init(input:output:dictionary:paddingindex:maximumnorm:normtype:scalesgradientbyfrequency:filterparameters:).md)
+### Creating an Embedding Layer
+- [convenience init?(input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, dictionary: BNNSNDArrayDescriptor, paddingIndex: Int, maximumNorm: Float, normType: BNNS.Norm, scalesGradientByFrequency: Bool, filterParameters: BNNSFilterParameters?)](./embeddinglayer/init%28input,output,dictionary,paddingindex,maximumnorm,normtype,scalesgradientbyfrequency,filterparameters%29.md)
   Returns a new embedding layer.
 
 

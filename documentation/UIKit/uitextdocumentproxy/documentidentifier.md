@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 The unique identifier for the document.
@@ -17,6 +18,10 @@ The unique identifier for the document.
 
 ```swift
 var documentIdentifier: UUID { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSUUID * documentIdentifier;
 ```
 
 #### Discussion

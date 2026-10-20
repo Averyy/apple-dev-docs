@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: Apple CryptoKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a random MLDSA65 private key.
 
@@ -32,9 +33,10 @@ let privateKey = try! MLDSA65.PrivateKey()
 
 ## See Also
 
-- [init<D>(integrityCheckedRepresentation: D) throws](mldsa65/privatekey/init(integritycheckedrepresentation:).md)
+### Creating a private key
+- [init<D>(integrityCheckedRepresentation: D) throws](./init%28integritycheckedrepresentation%29.md)
   Initializes a private key from an integrity-checked data representation.
-- [init<D>(seedRepresentation: D, publicKey: MLDSA65.PublicKey?) throws](mldsa65/privatekey/init(seedrepresentation:publickey:).md)
+- [init<D>(seedRepresentation: D, publicKey: MLDSA65.PublicKey?) throws](./init%28seedrepresentation,publickey%29.md)
   Initializes a private key from the seed representation.
 
 

@@ -1,7 +1,8 @@
 # windowDidChangeScreenProfile(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the window has changed screen display profiles.
 
@@ -15,25 +16,30 @@ Tells the delegate that the window has changed screen display profiles.
 optional func windowDidChangeScreenProfile(_ notification: Notification)
 ```
 
+```objc
+- (void) windowDidChangeScreenProfile:(NSNotification *) notification;
+```
+
 #### Discussion
 
-You can retrieve the `NSWindow` object in question by sending [`object`](https://developer.apple.com/documentation/foundation/nsnotification/object) to `notification`.
+You can retrieve the `NSWindow` object in question by sending [`object`](../../Foundation/nsnotification/object.md) to `notification`.
 
 If your app runs in macOS 10.7.3 or later, you should instead watch for the notification `NSWindowDidChangeBackingPropertiesNotification`.
 
 ## Parameters
 
-- `notification`: A notification named [`didChangeScreenProfileNotification`](nswindow/didchangescreenprofilenotification.md).
+- `notification`: A notification named [`didChangeScreenProfileNotification`](../nswindow/didchangescreenprofilenotification.md).
 
 ## See Also
 
-- [func windowWillMove(Notification)](nswindowdelegate/windowwillmove(_:).md)
+### Moving Windows
+- [func windowWillMove(Notification)](./windowwillmove%28_%29.md)
   Tells the delegate that the window is about to move.
-- [func windowDidMove(Notification)](nswindowdelegate/windowdidmove(_:).md)
+- [func windowDidMove(Notification)](./windowdidmove%28_%29.md)
   Tells the delegate that the window has moved.
-- [func windowDidChangeScreen(Notification)](nswindowdelegate/windowdidchangescreen(_:).md)
+- [func windowDidChangeScreen(Notification)](./windowdidchangescreen%28_%29.md)
   Tells the delegate that the window has changed screens.
-- [func windowDidChangeBackingProperties(Notification)](nswindowdelegate/windowdidchangebackingproperties(_:).md)
+- [func windowDidChangeBackingProperties(Notification)](./windowdidchangebackingproperties%28_%29.md)
   Tells the delegate that the window backing properties changed.
 
 

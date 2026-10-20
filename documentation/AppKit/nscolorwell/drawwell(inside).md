@@ -1,17 +1,22 @@
 # drawWell(inside:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Draws the area inside the color well at the specified location without drawing borders.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func drawWell(inside insideRect: NSRect)
+```
+
+```objc
+- (void) drawWellInside:(NSRect) insideRect;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # kCMTextMarkupAttribute_UnderlineStyle
 
 **Framework**: Core Media  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 An underline font style.
 
@@ -20,17 +21,22 @@ An underline font style.
 let kCMTextMarkupAttribute_UnderlineStyle: CFString
 ```
 
+```c
+extern CFStringRef const kCMTextMarkupAttribute_UnderlineStyle;
+```
+
 #### Discussion
 
 This attribute’s value must be a `CFBoolean`. The default is `kCFBooleanFalse`. If this attribute is `kCFBooleanTrue`, the system renders the text with an underline style in addition to other styles you use.
 
 ## See Also
 
-- [let kCMTextMarkupAttribute_BoldStyle: CFString](kcmtextmarkupattribute_boldstyle.md)
+### Styles
+- [let kCMTextMarkupAttribute_BoldStyle: CFString](./kcmtextmarkupattribute_boldstyle.md)
   A bold font style.
-- [let kCMTextMarkupAttribute_ItalicStyle: CFString](kcmtextmarkupattribute_italicstyle.md)
+- [let kCMTextMarkupAttribute_ItalicStyle: CFString](./kcmtextmarkupattribute_italicstyle.md)
   An italic font style.
-- [let kCMTextMarkupAttribute_CharacterEdgeStyle: CFString](kcmtextmarkupattribute_characteredgestyle.md)
+- [let kCMTextMarkupAttribute_CharacterEdgeStyle: CFString](./kcmtextmarkupattribute_characteredgestyle.md)
   A style for character edges.
 
 

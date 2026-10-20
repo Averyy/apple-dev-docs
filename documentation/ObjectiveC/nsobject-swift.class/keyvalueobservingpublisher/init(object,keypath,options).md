@@ -1,7 +1,8 @@
 # init(object:keyPath:options:)
 
 **Framework**: Objective-C Runtime  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a key-value observing publisher for the given combination of object and key path, using publishing behavior options you provide.
 
@@ -11,7 +12,7 @@ Creates a key-value observing publisher for the given combination of object and 
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
-- visionOS ?+
+- visionOS
 - watchOS 6.0+
 
 ## Declaration

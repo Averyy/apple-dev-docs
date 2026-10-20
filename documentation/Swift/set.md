@@ -1,7 +1,8 @@
 # Set
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An unordered collection of unique elements.
 
@@ -112,7 +113,7 @@ let primesStringsSet = Set(primes.map(String.init))
 // 'primesStringsSet' is of type Set<String>
 ```
 
-### Bridging Between Set and Nsset
+### Bridging Between Set and NSSet
 
 You can bridge between `Set` and `NSSet` using the `as` operator. For bridging to be possible, the `Element` type of a set must be a class, an `@objc` protocol (a protocol imported from Objective-C or marked with the `@objc` attribute), or a type that bridges to a Foundation type.
 
@@ -123,237 +124,238 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
 ## Topics
 
 ### Creating a Set
-- [init()](set/init.md)
+- [init()](./set/init%28%29.md)
   Creates an empty set.
-- [init(minimumCapacity: Int)](set/init(minimumcapacity:).md)
+- [init(minimumCapacity: Int)](./set/init%28minimumcapacity%29.md)
   Creates an empty set with preallocated space for at least the specified number of elements.
-- [init<S>(S)](set/init(_:)-9cgks.md)
+- [init<S>(S)](./set/init%28_%29-9cgks.md)
   Creates a new set from a finite sequence of items.
-- [init<Source>(Source)](set/init(_:).md)
+- [init<Source>(Source)](./set/init%28_%29.md)
   Creates a new set from a finite sequence of items.
 ### Inspecting a Set
-- [var isEmpty: Bool](set/isempty.md)
+- [var isEmpty: Bool](./set/isempty.md)
   A Boolean value that indicates whether the set is empty.
-- [var count: Int](set/count.md)
+- [var count: Int](./set/count.md)
   The number of elements in the set.
-- [var capacity: Int](set/capacity.md)
+- [var capacity: Int](./set/capacity.md)
   The total number of elements that the set can contain without allocating new storage.
 ### Testing for Membership
-- [func contains(Element) -> Bool](set/contains(_:).md)
+- [func contains(Element) -> Bool](./set/contains%28_%29.md)
   Returns a Boolean value that indicates whether the given element exists in the set.
 ### Adding Elements
-- [func insert(Element) -> (inserted: Bool, memberAfterInsert: Element)](set/insert(_:)-nads.md)
+- [func insert(Element) -> (inserted: Bool, memberAfterInsert: Element)](./set/insert%28_%29-nads.md)
   Inserts the given element in the set if it is not already present.
-- [func insert<ConcreteElement>(ConcreteElement) -> (inserted: Bool, memberAfterInsert: ConcreteElement)](set/insert(_:)-yar4.md)
-- [func update(with: Element) -> Element?](set/update(with:)-2n6tk.md)
+- [func insert<ConcreteElement>(ConcreteElement) -> (inserted: Bool, memberAfterInsert: ConcreteElement)](./set/insert%28_%29-yar4.md)
+- [func update(with: Element) -> Element?](./set/update%28with%29-2n6tk.md)
   Inserts the given element into the set unconditionally.
-- [func update<ConcreteElement>(with: ConcreteElement) -> ConcreteElement?](set/update(with:)-7r2g.md)
-- [func reserveCapacity(Int)](set/reservecapacity(_:).md)
+- [func update<ConcreteElement>(with: ConcreteElement) -> ConcreteElement?](./set/update%28with%29-7r2g.md)
+- [func reserveCapacity(Int)](./set/reservecapacity%28_%29.md)
   Reserves enough space to store the specified number of elements.
 ### Removing Elements
-- [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](set/filter(_:).md)
+- [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](./set/filter%28_%29.md)
   Returns a new set containing the elements of the set that satisfy the given predicate.
-- [func remove(Element) -> Element?](set/remove(_:)-8p2tv.md)
+- [func remove(Element) -> Element?](./set/remove%28_%29-8p2tv.md)
   Removes the specified element from the set.
-- [func remove<ConcreteElement>(ConcreteElement) -> ConcreteElement?](set/remove(_:)-4d3i1.md)
-- [func removeFirst() -> Element](set/removefirst.md)
+- [func remove<ConcreteElement>(ConcreteElement) -> ConcreteElement?](./set/remove%28_%29-4d3i1.md)
+- [func removeFirst() -> Element](./set/removefirst%28%29.md)
   Removes the first element of the set.
-- [func remove(at: Set<Element>.Index) -> Element](set/remove(at:).md)
+- [func remove(at: Set<Element>.Index) -> Element](./set/remove%28at%29.md)
   Removes the element at the given index of the set.
-- [func removeAll(keepingCapacity: Bool)](set/removeall(keepingcapacity:).md)
+- [func removeAll(keepingCapacity: Bool)](./set/removeall%28keepingcapacity%29.md)
   Removes all members from the set.
 ### Combining Sets
-- [func union<S>(S) -> Set<Element>](set/union(_:).md)
+- [func union<S>(S) -> Set<Element>](./set/union%28_%29.md)
   Returns a new set with the elements of both this set and the given sequence.
-- [func formUnion<S>(S)](set/formunion(_:).md)
+- [func formUnion<S>(S)](./set/formunion%28_%29.md)
   Inserts the elements of the given sequence into the set.
-- [func intersection(Set<Element>) -> Set<Element>](set/intersection(_:)-1zh8f.md)
+- [func intersection(Set<Element>) -> Set<Element>](./set/intersection%28_%29-1zh8f.md)
   Returns a new set with the elements that are common to both this set and the given sequence.
-- [func intersection<S>(S) -> Set<Element>](set/intersection(_:)-6uts9.md)
+- [func intersection<S>(S) -> Set<Element>](./set/intersection%28_%29-6uts9.md)
   Returns a new set with the elements that are common to both this set and the given sequence.
-- [func formIntersection<S>(S)](set/formintersection(_:).md)
+- [func formIntersection<S>(S)](./set/formintersection%28_%29.md)
   Removes the elements of the set that aren’t also in the given sequence.
-- [func symmetricDifference<S>(S) -> Set<Element>](set/symmetricdifference(_:).md)
+- [func symmetricDifference<S>(S) -> Set<Element>](./set/symmetricdifference%28_%29.md)
   Returns a new set with the elements that are either in this set or in the given sequence, but not in both.
-- [func formSymmetricDifference(Set<Element>)](set/formsymmetricdifference(_:)-22p0m.md)
+- [func formSymmetricDifference(Set<Element>)](./set/formsymmetricdifference%28_%29-22p0m.md)
   Removes the elements of the set that are also in the given sequence and adds the members of the sequence that are not already in the set.
-- [func formSymmetricDifference<S>(S)](set/formsymmetricdifference(_:)-5u38b.md)
+- [func formSymmetricDifference<S>(S)](./set/formsymmetricdifference%28_%29-5u38b.md)
   Replace this set with the elements contained in this set or the given set, but not both.
-- [func subtract(Set<Element>)](set/subtract(_:)-8gc48.md)
+- [func subtract(Set<Element>)](./set/subtract%28_%29-8gc48.md)
   Removes the elements of the given set from this set.
-- [func subtract<S>(S)](set/subtract(_:)-7cd3y.md)
+- [func subtract<S>(S)](./set/subtract%28_%29-7cd3y.md)
   Removes the elements of the given sequence from the set.
-- [func subtracting(Set<Element>) -> Set<Element>](set/subtracting(_:)-3n4lc.md)
+- [func subtracting(Set<Element>) -> Set<Element>](./set/subtracting%28_%29-3n4lc.md)
   Returns a new set containing the elements of this set that do not occur in the given set.
-- [func subtracting<S>(S) -> Set<Element>](set/subtracting(_:)-2qge3.md)
+- [func subtracting<S>(S) -> Set<Element>](./set/subtracting%28_%29-2qge3.md)
   Returns a new set containing the elements of this set that do not occur in the given sequence.
 ### Comparing Sets
-- [static func == (Set<Element>, Set<Element>) -> Bool](set/==(_:_:).md)
+- [static func == (Set<Element>, Set<Element>) -> Bool](./set/eqeq%28_,_%29.md)
   Returns a Boolean value indicating whether two sets have equal elements.
-- [static func != (borrowing Self, borrowing Self) -> Bool](set/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./set/noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [func isSubset(of: Set<Element>) -> Bool](set/issubset(of:)-1d7pp.md)
+- [func isSubset(of: Set<Element>) -> Bool](./set/issubset%28of%29-1d7pp.md)
   Returns a Boolean value that indicates whether this set is a subset of the given set.
-- [func isSubset<S>(of: S) -> Bool](set/issubset(of:)-6qyo5.md)
+- [func isSubset<S>(of: S) -> Bool](./set/issubset%28of%29-6qyo5.md)
   Returns a Boolean value that indicates whether the set is a subset of the given sequence.
-- [func isStrictSubset(of: Set<Element>) -> Bool](set/isstrictsubset(of:)-96vc3.md)
+- [func isStrictSubset(of: Set<Element>) -> Bool](./set/isstrictsubset%28of%29-96vc3.md)
   Returns a Boolean value that indicates whether the set is a strict subset of the given sequence.
-- [func isStrictSubset<S>(of: S) -> Bool](set/isstrictsubset(of:)-787sx.md)
+- [func isStrictSubset<S>(of: S) -> Bool](./set/isstrictsubset%28of%29-787sx.md)
   Returns a Boolean value that indicates whether the set is a strict subset of the given sequence.
-- [func isSuperset(of: Set<Element>) -> Bool](set/issuperset(of:)-9iz62.md)
+- [func isSuperset(of: Set<Element>) -> Bool](./set/issuperset%28of%29-9iz62.md)
   Returns a Boolean value that indicates whether this set is a superset of the given set.
-- [func isSuperset<S>(of: S) -> Bool](set/issuperset(of:)-90hri.md)
+- [func isSuperset<S>(of: S) -> Bool](./set/issuperset%28of%29-90hri.md)
   Returns a Boolean value that indicates whether the set is a superset of the given sequence.
-- [func isStrictSuperset(of: Set<Element>) -> Bool](set/isstrictsuperset(of:)-4d27m.md)
+- [func isStrictSuperset(of: Set<Element>) -> Bool](./set/isstrictsuperset%28of%29-4d27m.md)
   Returns a Boolean value that indicates whether the set is a strict superset of the given sequence.
-- [func isStrictSuperset<S>(of: S) -> Bool](set/isstrictsuperset(of:)-58ejg.md)
+- [func isStrictSuperset<S>(of: S) -> Bool](./set/isstrictsuperset%28of%29-58ejg.md)
   Returns a Boolean value that indicates whether the set is a strict superset of the given sequence.
-- [func isDisjoint(with: Set<Element>) -> Bool](set/isdisjoint(with:)-8ngmk.md)
+- [func isDisjoint(with: Set<Element>) -> Bool](./set/isdisjoint%28with%29-8ngmk.md)
   Returns a Boolean value that indicates whether this set has no members in common with the given set.
-- [func isDisjoint<S>(with: S) -> Bool](set/isdisjoint(with:)-2onid.md)
+- [func isDisjoint<S>(with: S) -> Bool](./set/isdisjoint%28with%29-2onid.md)
   Returns a Boolean value that indicates whether the set has no members in common with the given sequence.
 ### Accessing Individual Elements
-- [var first: Self.Element?](set/first.md)
+- [var first: Self.Element?](./set/first.md)
   The first element of the collection.
-- [func randomElement() -> Self.Element?](set/randomelement.md)
+- [func randomElement() -> Self.Element?](./set/randomelement%28%29.md)
   Returns a random element of the collection.
-- [func randomElement<T>(using: inout T) -> Self.Element?](set/randomelement(using:).md)
+- [func randomElement<T>(using: inout T) -> Self.Element?](./set/randomelement%28using%29.md)
   Returns a random element of the collection, using the given generator as a source for randomness.
 ### Finding Elements
-- [subscript(Set<Element>.Index) -> Element](set/subscript(_:).md)
+- [subscript(Set<Element>.Index) -> Element](./set/subscript%28_%29.md)
   Accesses the member at the given position.
-- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](set/contains(where:).md)
+- [func contains(where: (Self.Element) throws -> Bool) rethrows -> Bool](./set/contains%28where%29.md)
   Returns a Boolean value indicating whether the sequence contains an element that satisfies the given predicate.
-- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](set/allsatisfy(_:).md)
+- [func allSatisfy((Self.Element) throws -> Bool) rethrows -> Bool](./set/allsatisfy%28_%29.md)
   Returns a Boolean value indicating whether every element of a sequence satisfies a given predicate.
-- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](set/first(where:).md)
+- [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](./set/first%28where%29.md)
   Returns the first element of the sequence that satisfies the given predicate.
-- [func firstIndex(of: Element) -> Set<Element>.Index?](set/firstindex(of:).md)
+- [func firstIndex(of: Element) -> Set<Element>.Index?](./set/firstindex%28of%29.md)
   Returns the index of the given element in the set, or `nil` if the element is not a member of the set.
-- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](set/firstindex(where:).md)
+- [func firstIndex(where: (Self.Element) throws -> Bool) rethrows -> Self.Index?](./set/firstindex%28where%29.md)
   Returns the first index in which an element of the collection satisfies the given predicate.
-- [func index(of: Self.Element) -> Self.Index?](set/index(of:).md)
+- [func index(of: Self.Element) -> Self.Index?](./set/index%28of%29.md)
   Returns the first index where the specified value appears in the collection.
-- [func min() -> Self.Element?](set/min.md)
+- [func min() -> Self.Element?](./set/min%28%29.md)
   Returns the minimum element in the sequence.
-- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](set/min(by:).md)
+- [func min(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./set/min%28by%29.md)
   Returns the minimum element in the sequence, using the given predicate as the comparison between elements.
-- [func max() -> Self.Element?](set/max.md)
+- [func max() -> Self.Element?](./set/max%28%29.md)
   Returns the maximum element in the sequence.
-- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](set/max(by:).md)
+- [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](./set/max%28by%29.md)
   Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
 ### Transforming a Set
-- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](set/compactmap(_:).md)
+- [func compactMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./set/compactmap%28_%29.md)
   Returns an array containing the non-`nil` results of calling the given transformation with each element of this sequence.
-- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](set/flatmap(_:)-i3my.md)
+- [func flatMap<SegmentOfResult>((Self.Element) throws -> SegmentOfResult) rethrows -> [SegmentOfResult.Element]](./set/flatmap%28_%29-i3my.md)
   Returns an array containing the concatenated results of calling the given transformation with each element of this sequence.
-- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](set/flatmap(_:)-6chuh.md)
-- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](set/reduce(_:_:).md)
+- [func flatMap<ElementOfResult>((Self.Element) throws -> ElementOfResult?) rethrows -> [ElementOfResult]](./set/flatmap%28_%29-6chuh.md)
+- [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](./set/reduce%28_,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](set/reduce(into:_:).md)
+- [func reduce<Result>(into: Result, (inout Result, Self.Element) throws -> ()) rethrows -> Result](./set/reduce%28into,_%29.md)
   Returns the result of combining the elements of the sequence using the given closure.
-- [func sorted() -> [Self.Element]](set/sorted.md)
+- [func sorted() -> [Self.Element]](./set/sorted%28%29.md)
   Returns the elements of the sequence, sorted.
-- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](set/sorted(by:).md)
+- [func sorted(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> [Self.Element]](./set/sorted%28by%29.md)
   Returns the elements of the sequence, sorted using the given predicate as the comparison between elements.
-- [func shuffled() -> [Self.Element]](set/shuffled.md)
+- [func shuffled() -> [Self.Element]](./set/shuffled%28%29.md)
   Returns the elements of the sequence, shuffled.
-- [func shuffled<T>(using: inout T) -> [Self.Element]](set/shuffled(using:).md)
+- [func shuffled<T>(using: inout T) -> [Self.Element]](./set/shuffled%28using%29.md)
   Returns the elements of the sequence, shuffled using the given generator as a source for randomness.
-- [var lazy: LazySequence<Self>](set/lazy.md)
+- [var lazy: LazySequence<Self>](./set/lazy.md)
   A sequence containing the same elements as this sequence, but on which some operations, such as `map` and `filter`, are implemented lazily.
 ### Iterating over a Set
-- [func enumerated() -> EnumeratedSequence<Self>](set/enumerated.md)
+- [func enumerated() -> EnumeratedSequence<Self>](./set/enumerated%28%29.md)
   Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
-- [func forEach((Self.Element) throws -> Void) rethrows](set/foreach(_:).md)
+- [func forEach((Self.Element) throws -> Void) rethrows](./set/foreach%28_%29.md)
   Calls the given closure on each element in the sequence in the same order as a `for`-`in` loop.
-- [func makeIterator() -> Set<Element>.Iterator](set/makeiterator.md)
+- [func makeIterator() -> Set<Element>.Iterator](./set/makeiterator%28%29.md)
   Returns an iterator over the members of the set.
-- [var underestimatedCount: Int](set/underestimatedcount.md)
+- [var underestimatedCount: Int](./set/underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.
 ### Performing Collection Operations
-- [Order Dependent Operations on Set](order-dependent-operations-on-set.md)
+- [Order Dependent Operations on Set](./order-dependent-operations-on-set.md)
   Perform order-dependent operations common to all collections, as implemented for `Set`.
 ### Encoding and Decoding
-- [func encode(to: any Encoder) throws](set/encode(to:).md)
+- [func encode(to: any Encoder) throws](./set/encode%28to%29.md)
   Encodes the elements of this set into the given encoder in an unkeyed container.
-- [init(from: any Decoder) throws](set/init(from:).md)
+- [init(from: any Decoder) throws](./set/init%28from%29.md)
   Creates a new set by decoding from the given decoder.
 ### Describing a Set
-- [func hash(into: inout Hasher)](set/hash(into:).md)
+- [func hash(into: inout Hasher)](./set/hash%28into%29.md)
   Hashes the essential components of this value by feeding them into the given hasher.
-- [var description: String](set/description.md)
+- [var description: String](./set/description.md)
   A string that represents the contents of the set.
-- [var debugDescription: String](set/debugdescription.md)
+- [var debugDescription: String](./set/debugdescription.md)
   A string that represents the contents of the set, suitable for debugging.
-- [var customMirror: Mirror](set/custommirror.md)
+- [var customMirror: Mirror](./set/custommirror.md)
   A mirror that reflects the set.
 ### Reference Types
-- [class NSSet](../foundation/nsset.md)
+- [class NSSet](../Foundation/nsset.md)
   A static, unordered collection of unique objects.
-- [class NSMutableSet](../foundation/nsmutableset.md)
+- [class NSMutableSet](../Foundation/nsmutableset.md)
   A dynamic unordered collection of unique objects.
 ### Supporting Types
-- [struct Index](set/index.md)
+- [struct Index](./set/index.md)
   The position of an element in a set.
-- [struct Iterator](set/iterator.md)
+- [struct Iterator](./set/iterator.md)
   An iterator over the members of a `Set<Element>`.
 ### Infrequently Used Functionality
-- [init(arrayLiteral: Element...)](set/init(arrayliteral:).md)
+- [init(arrayLiteral: Element...)](./set/init%28arrayliteral%29.md)
   Creates a set containing the elements of the given array literal.
-- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](set/withcontiguousstorageifavailable(_:).md)
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](./set/withcontiguousstorageifavailable%28_%29.md)
   Executes a closure on the sequence’s contiguous storage.
 ### Instance Methods
-- [func isTriviallyIdentical(to: Set<Element>) -> Bool](set/istriviallyidentical(to:).md)
+- [func isTriviallyIdentical(to: Set<Element>) -> Bool](./set/istriviallyidentical%28to%29.md)
   Returns a boolean value indicating whether this set is identical to `other`.
 ### Type Aliases
-- [typealias Specification](set/specification.md)
-- [typealias UnderlyingSequence](set/underlyingsequence.md)
-- [typealias UnwrappedType](set/unwrappedtype.md)
-- [typealias ValueType](set/valuetype.md)
+- [typealias Specification](./set/specification.md)
+- [typealias UnderlyingSequence](./set/underlyingsequence.md)
+- [typealias UnwrappedType](./set/unwrappedtype.md)
+- [typealias ValueType](./set/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: some ResolverSpecification](set/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: some ResolverSpecification](./set/defaultresolverspecification.md)
 ### Default Implementations
-- [Collection Implementations](set/collection-implementations.md)
-- [CustomDebugStringConvertible Implementations](set/customdebugstringconvertible-implementations.md)
-- [CustomReflectable Implementations](set/customreflectable-implementations.md)
-- [CustomStringConvertible Implementations](set/customstringconvertible-implementations.md)
-- [Decodable Implementations](set/decodable-implementations.md)
-- [Encodable Implementations](set/encodable-implementations.md)
-- [Equatable Implementations](set/equatable-implementations.md)
-- [ExpressibleByArrayLiteral Implementations](set/expressiblebyarrayliteral-implementations.md)
-- [Hashable Implementations](set/hashable-implementations.md)
-- [IntentValueConvertible Implementations](set/intentvalueconvertible-implementations.md)
-- [IntentValueExpressing Implementations](set/intentvalueexpressing-implementations.md)
-- [Sequence Implementations](set/sequence-implementations.md)
-- [SetAlgebra Implementations](set/setalgebra-implementations.md)
+- [Collection Implementations](./set/collection-implementations.md)
+- [CustomDebugStringConvertible Implementations](./set/customdebugstringconvertible-implementations.md)
+- [CustomReflectable Implementations](./set/customreflectable-implementations.md)
+- [CustomStringConvertible Implementations](./set/customstringconvertible-implementations.md)
+- [Decodable Implementations](./set/decodable-implementations.md)
+- [Encodable Implementations](./set/encodable-implementations.md)
+- [Equatable Implementations](./set/equatable-implementations.md)
+- [ExpressibleByArrayLiteral Implementations](./set/expressiblebyarrayliteral-implementations.md)
+- [Hashable Implementations](./set/hashable-implementations.md)
+- [IntentValueConvertible Implementations](./set/intentvalueconvertible-implementations.md)
+- [IntentValueExpressing Implementations](./set/intentvalueexpressing-implementations.md)
+- [Sequence Implementations](./set/sequence-implementations.md)
+- [SetAlgebra Implementations](./set/setalgebra-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [CVAttachmentValueRepresentable](../corevideo/cvattachmentvaluerepresentable.md)
-- [CVarArg](cvararg.md)
-- [Collection](collection.md)
-- [Copyable](copyable.md)
-- [CustomDebugStringConvertible](customdebugstringconvertible.md)
-- [CustomReflectable](customreflectable.md)
-- [CustomStringConvertible](customstringconvertible.md)
-- [Decodable](decodable.md)
-- [Encodable](encodable.md)
-- [Equatable](equatable.md)
-- [Escapable](escapable.md)
-- [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
-- [Hashable](hashable.md)
-- [IntentValueConvertible](../appintents/intentvalueconvertible.md)
-- [IntentValueExpressing](../appintents/intentvalueexpressing.md)
-- [Sendable](sendable.md)
-- [SendableMetatype](sendablemetatype.md)
-- [Sequence](sequence.md)
-- [SetAlgebra](setalgebra.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/cvattachmentvaluerepresentable.md)
+- [CVarArg](./cvararg.md)
+- [Collection](./collection.md)
+- [Copyable](./copyable.md)
+- [CustomDebugStringConvertible](./customdebugstringconvertible.md)
+- [CustomReflectable](./customreflectable.md)
+- [CustomStringConvertible](./customstringconvertible.md)
+- [Decodable](./decodable.md)
+- [Encodable](./encodable.md)
+- [Equatable](./equatable.md)
+- [Escapable](./escapable.md)
+- [ExpressibleByArrayLiteral](./expressiblebyarrayliteral.md)
+- [Hashable](./hashable.md)
+- [IntentValueConvertible](../AppIntents/intentvalueconvertible.md)
+- [IntentValueExpressing](../AppIntents/intentvalueexpressing.md)
+- [Sendable](./sendable.md)
+- [SendableMetatype](./sendablemetatype.md)
+- [Sequence](./sequence.md)
+- [SetAlgebra](./setalgebra.md)
 
 ## See Also
 
-- [protocol OptionSet](optionset.md)
+### Sets
+- [protocol OptionSet](./optionset.md)
   A type that presents a mathematical set interface to a bit set.
 
 

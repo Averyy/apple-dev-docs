@@ -1,7 +1,8 @@
 # bodyVariants
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An optional array of strings, ordered from most to least preferred.
 
@@ -14,6 +15,10 @@ An optional array of strings, ordered from most to least preferred.
 
 ```swift
 var bodyVariants: [NSAttributedString] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray<NSAttributedString *> * bodyVariants;
 ```
 
 #### Discussion

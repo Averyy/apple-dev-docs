@@ -1,7 +1,8 @@
 # NSPersistentStoreRemoteChangeNotificationPostOptionKey
 
 **Framework**: Core Data  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key that indicates a persistent store posts a remote change notification for every write to the store, including writes by other processes.
 
@@ -20,17 +21,22 @@ A key that indicates a persistent store posts a remote change notification for e
 let NSPersistentStoreRemoteChangeNotificationPostOptionKey: String
 ```
 
+```c
+extern NSString * const NSPersistentStoreRemoteChangeNotificationPostOptionKey;
+```
+
 ## Mentions
 
-- [Consuming relevant store changes](consuming-relevant-store-changes.md)
+- [Consuming relevant store changes](./consuming-relevant-store-changes.md)
 
 ## See Also
 
-- [let NSBinaryStoreInsecureDecodingCompatibilityOption: String](nsbinarystoreinsecuredecodingcompatibilityoption.md)
+### Persistent Store Metadata Keys
+- [let NSBinaryStoreInsecureDecodingCompatibilityOption: String](./nsbinarystoreinsecuredecodingcompatibilityoption.md)
   A flag that indicates Core Data decodes the binary store insecurely.
-- [let NSBinaryStoreSecureDecodingClasses: String](nsbinarystoresecuredecodingclasses.md)
+- [let NSBinaryStoreSecureDecodingClasses: String](./nsbinarystoresecuredecodingclasses.md)
   An additional set of classes to use while decoding a binary store.
-- [let NSPersistentStoreModelVersionChecksumKey: String](nspersistentstoremodelversionchecksumkey.md)
+- [let NSPersistentStoreModelVersionChecksumKey: String](./nspersistentstoremodelversionchecksumkey.md)
 
 
 ---

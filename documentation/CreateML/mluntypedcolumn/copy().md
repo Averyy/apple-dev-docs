@@ -1,7 +1,8 @@
 # copy()
 
 **Framework**: Create ML  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a new MLUntypedColumn by copying the original MLUntypedColumn
 

@@ -1,7 +1,8 @@
 # init(vertexCount:blendShape:skinning:renormalization:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a deformation descriptor.
 

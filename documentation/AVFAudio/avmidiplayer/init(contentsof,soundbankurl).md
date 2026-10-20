@@ -1,7 +1,8 @@
 # init(contentsOf:soundBankURL:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a player to play a MIDI file with the specified soundbank.
 
@@ -19,18 +20,23 @@ Creates a player to play a MIDI file with the specified soundbank.
 init(contentsOf inURL: URL, soundBankURL bankURL: URL?) throws
 ```
 
+```objc
+- (instancetype) initWithContentsOfURL:(NSURL *) inURL soundBankURL:(NSURL *) bankURL error:(NSError **) outError;
+```
+
 #### Return Value
 
-A new MIDI player, or [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) if an error occurred.
+A new MIDI player, or [`nil`](../../ObjectiveC/nil-227m0.md) if an error occurred.
 
 ## Parameters
 
 - `inURL`: The URL of the file to play.
-- `bankURL`: The URL of the sound bank. The sound bank must be in SoundFont2 or DLS format. In macOS, you can pass [`nil`](https://developer.apple.com/documentation/objectivec/nil-227m0) for the bank URL argument to use the default sound bank. In iOS, you must always pass a valid bank file.
+- `bankURL`: The URL of the sound bank. The sound bank must be in SoundFont2 or DLS format. In macOS, you can pass [`nil`](../../ObjectiveC/nil-227m0.md) for the bank URL argument to use the default sound bank. In iOS, you must always pass a valid bank file.
 
 ## See Also
 
-- [init(data: Data, soundBankURL: URL?) throws](avmidiplayer/init(data:soundbankurl:).md)
+### Creating a MIDI player
+- [init(data: Data, soundBankURL: URL?) throws](./init%28data,soundbankurl%29.md)
   Creates a player to play MIDI data with the specified soundbank.
 
 

@@ -1,7 +1,8 @@
 # confirmPasswordFieldPasswordRules
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Developer provided password rules for a “confirm password” field.
 
@@ -15,6 +16,10 @@ Developer provided password rules for a “confirm password” field.
 
 ```swift
 var confirmPasswordFieldPasswordRules: String? { get }
+```
+
+```objc
+@property (nonatomic, readonly, nullable) NSString * confirmPasswordFieldPasswordRules;
 ```
 
 #### Discussion

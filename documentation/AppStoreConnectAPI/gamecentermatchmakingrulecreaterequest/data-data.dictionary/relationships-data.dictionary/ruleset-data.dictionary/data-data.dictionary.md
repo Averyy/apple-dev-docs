@@ -1,7 +1,8 @@
 # GameCenterMatchmakingRuleCreateRequest.Data.Relationships.RuleSet.Data
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 The type and ID for the rule set that you’re adding the rule to.
 
@@ -10,7 +11,7 @@ The type and ID for the rule set that you’re adding the rule to.
 
 ## Declaration
 
-```swift
+```
 object GameCenterMatchmakingRuleCreateRequest.Data.Relationships.RuleSet.Data
 ```
 
@@ -18,6 +19,8 @@ object GameCenterMatchmakingRuleCreateRequest.Data.Relationships.RuleSet.Data
 
 - `id` (string) *(required)*: The unique identifier for the rule set.
 - `type` (string) *(required)*: The type of resource.
+
+  **Allowed Values**: `gameCenterMatchmakingRuleSets`
 
 
 ---

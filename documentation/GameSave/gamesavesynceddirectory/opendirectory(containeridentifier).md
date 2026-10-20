@@ -1,7 +1,8 @@
 # openDirectory(containerIdentifier:)
 
 **Framework**: GameSave  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Requests an instance of the game-save directory.
 
@@ -20,7 +21,7 @@ class func openDirectory(containerIdentifier: String? = nil) -> GameSaveSyncedDi
 
 #### Discussion
 
-This method returns immediately, and starts syncing the directory in the background. To wait for syncing to complete, call the [`finishSyncing()`](gamesavesynceddirectory/finishsyncing().md) method.
+This method returns immediately, and starts syncing the directory in the background. To wait for syncing to complete, call the [`finishSyncing()`](./finishsyncing%28%29.md) method.
 
 ## Parameters
 
@@ -28,9 +29,10 @@ This method returns immediately, and starts syncing the directory in the backgro
 
 ## See Also
 
-- [GameSaveSyncedDirectory.State](gamesavesynceddirectory/state-swift.enum.md)
+### Accessing a directory
+- [GameSaveSyncedDirectory.State](./state-swift.enum.md)
   The state of the directory.
-- [var state: GameSaveSyncedDirectory.State](gamesavesynceddirectory/state-swift.property.md)
+- [var state: GameSaveSyncedDirectory.State](./state-swift.property.md)
   The state that the game-save directory is in.
 
 

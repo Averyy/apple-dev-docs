@@ -1,7 +1,8 @@
 # mustHold
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default value, and maximum Auto Layout priority, that results in a view never detaching from the stack view.
 
@@ -14,11 +15,16 @@ The default value, and maximum Auto Layout priority, that results in a view neve
 static var mustHold: NSStackView.VisibilityPriority { get }
 ```
 
+```c
+static const NSStackViewVisibilityPriority NSStackViewVisibilityPriorityMustHold;
+```
+
 ## See Also
 
-- [static var detachOnlyIfNecessary: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/detachonlyifnecessary.md)
+### Priorities
+- [static var detachOnlyIfNecessary: NSStackView.VisibilityPriority](./detachonlyifnecessary.md)
   The Auto Layout priority that results in detachment of a view when there is insufficient space in the stack view to display it fully.
-- [static var notVisible: NSStackView.VisibilityPriority](nsstackview/visibilitypriority/notvisible.md)
+- [static var notVisible: NSStackView.VisibilityPriority](./notvisible.md)
   The minimum Auto Layout priority that forces a view to detach from the stack view.
 
 

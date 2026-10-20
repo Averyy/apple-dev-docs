@@ -1,7 +1,8 @@
 # transactionIdentifier
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A unique identifier for this payment.
 
@@ -19,17 +20,22 @@ A unique identifier for this payment.
 var transactionIdentifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * transactionIdentifier;
+```
+
 #### Discussion
 
 This identifier is suitable for use in a receipt.
 
 ## See Also
 
-- [var paymentData: Data](pkpaymenttoken/paymentdata.md)
+### Working with payment tokens
+- [var paymentData: Data](./paymentdata.md)
   The payment data as a UTF-8 encoded serialization of a JSON dictionary.
-- [var paymentMethod: PKPaymentMethod](pkpaymenttoken/paymentmethod.md)
+- [var paymentMethod: PKPaymentMethod](./paymentmethod.md)
   Information about the card used in the transaction.
-- [class PKPaymentMethod](pkpaymentmethod.md)
+- [class PKPaymentMethod](../pkpaymentmethod.md)
   An object that contains information about payment methods.
 
 

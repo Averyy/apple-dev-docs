@@ -1,7 +1,8 @@
 # transform
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The transform of an entity relative to its parent.
 
@@ -11,7 +12,7 @@ The transform of an entity relative to its parent.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -22,7 +23,7 @@ The transform of an entity relative to its parent.
 
 #### Discussion
 
-For an [`AnchorEntity`](anchorentity.md) instance, the transform is relative to the AR anchor.
+For an [`AnchorEntity`](../anchorentity.md) instance, the transform is relative to the AR anchor.
 
 
 ---

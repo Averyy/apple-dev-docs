@@ -1,15 +1,16 @@
 # capability3DS
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
-- macOS 11.0+
-- visionOS ?+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 17.0 (renamed: threeDSecure)
+- iPadOS 8.0+ - Deprecated in 17.0 (renamed: threeDSecure)
+- Mac Catalyst 8.0+ - Deprecated in 17.0 (renamed: threeDSecure)
+- macOS 11.0+ - Deprecated in 14.0 (renamed: threeDSecure)
+- visionOS
+- watchOS 3.0+ - Deprecated in 10.0 (renamed: threeDSecure)
 
 ## Declaration
 

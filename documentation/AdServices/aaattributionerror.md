@@ -1,7 +1,8 @@
 # AAAttributionError
 
 **Framework**: AdServices  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The error code that the parent class issues.
 
@@ -21,33 +22,34 @@ struct AAAttributionError
 ## Topics
 
 ### Error domain
-- [static var errorDomain: String](aaattributionerror/errordomain.md)
+- [static var errorDomain: String](./aaattributionerror/errordomain.md)
   The error domain the framework uses when returning errors.
 ### Error codes
-- [static var internalError: AAAttributionError.Code](aaattributionerror/internalerror.md)
+- [static var internalError: AAAttributionError.Code](./aaattributionerror/internalerror.md)
   The server is unable to provide a token because of an internal error.
-- [static var networkError: AAAttributionError.Code](aaattributionerror/networkerror.md)
+- [static var networkError: AAAttributionError.Code](./aaattributionerror/networkerror.md)
   The server is unable to provide a token because the internet isn’t available.
-- [static var platformNotSupported: AAAttributionError.Code](aaattributionerror/platformnotsupported.md)
+- [static var platformNotSupported: AAAttributionError.Code](./aaattributionerror/platformnotsupported.md)
   The server is unable to provide a token because of an unsupported operating system.
-- [AAAttributionError.Code](aaattributionerror/code.md)
+- [AAAttributionError.Code](./aaattributionerror/code.md)
   The error code that the parent class issues.
 
 ## Relationships
 
 ### Conforms To
-- [CustomNSError](../foundation/customnserror.md)
-- [Equatable](../swift/equatable.md)
-- [Error](../swift/error.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CustomNSError](../Foundation/customnserror.md)
+- [Equatable](../Swift/equatable.md)
+- [Error](../Swift/error.md)
+- [Hashable](../Swift/hashable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [let AAAttributionErrorDomain: String](aaattributionerrordomain.md)
+### Errors
+- [let AAAttributionErrorDomain: String](./aaattributionerrordomain.md)
   The framework attribution error domain.
-- [AAAttributionError.Code](aaattributionerror/code.md)
+- [AAAttributionError.Code](./aaattributionerror/code.md)
   The error code that the parent class issues.
 
 

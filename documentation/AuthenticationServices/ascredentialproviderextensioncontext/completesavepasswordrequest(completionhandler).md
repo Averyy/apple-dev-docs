@@ -1,7 +1,8 @@
 # completeSavePasswordRequest(completionHandler:)
 
 **Framework**: Authentication Services  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Signal that a password request was successfully saved.
 
@@ -14,7 +15,15 @@ Signal that a password request was successfully saved.
 ## Declaration
 
 ```swift
+func completeSavePasswordRequest(completionHandler: (@Sendable (Bool) -> Void)? = nil)
+```
+
+```swift
 func completeSavePasswordRequest() async -> Bool
+```
+
+```objc
+- (void) completeSavePasswordRequestWithCompletionHandler:(void (^)(BOOL expired)) completionHandler;
 ```
 
 #### Discussion

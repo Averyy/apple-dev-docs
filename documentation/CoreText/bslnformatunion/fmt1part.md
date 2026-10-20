@@ -1,21 +1,26 @@
 # fmt1Part
 
 **Framework**: Core Text  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 var fmt1Part: BslnFormat1Part { get set }
+```
+
+```c
+BslnFormat1Part fmt1Part;
 ```
 
 

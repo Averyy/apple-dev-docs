@@ -1,7 +1,8 @@
 # AVPlayer
 
 **Framework**: AVFoundation  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that provides the interface to control the player’s transport behavior.
 
@@ -21,253 +22,258 @@ An object that provides the interface to control the player’s transport behavi
 class AVPlayer
 ```
 
+```objc
+@interface AVPlayer : NSObject
+```
+
 ## Mentions
 
-- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
-- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
-- [Supporting AirPlay in your app](supporting-airplay-in-your-app.md)
-- [Implementing simple enhanced buffering for your content](implementing-simple-enhanced-buffering-for-your-content.md)
-- [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
-- [Presenting chapter markers](presenting-chapter-markers.md)
-- [Selecting subtitles and alternative audio tracks](selecting-subtitles-and-alternative-audio-tracks.md)
+- [Controlling the transport behavior of a player](./controlling-the-transport-behavior-of-a-player.md)
+- [Observing playback state in SwiftUI](./observing-playback-state-in-swiftui.md)
+- [Supporting AirPlay in your app](./supporting-airplay-in-your-app.md)
+- [Implementing simple enhanced buffering for your content](./implementing-simple-enhanced-buffering-for-your-content.md)
+- [Monitoring playback progress in your app](./monitoring-playback-progress-in-your-app.md)
+- [Presenting chapter markers](./presenting-chapter-markers.md)
+- [Selecting subtitles and alternative audio tracks](./selecting-subtitles-and-alternative-audio-tracks.md)
 
 #### Overview
 
-A player is a controller object that manages the playback and timing of a media asset. Use an instance of [`AVPlayer`](avplayer.md) to play local and remote file-based media, such as QuickTime movies and MP3 audio files, as well as audiovisual media served using HTTP Live Streaming.
+A player is a controller object that manages the playback and timing of a media asset. Use an instance of [`AVPlayer`](./avplayer.md) to play local and remote file-based media, such as QuickTime movies and MP3 audio files, as well as audiovisual media served using HTTP Live Streaming.
 
-Use a player object to play a single media asset. You can reuse the player instance to play additional media assets using its [`replaceCurrentItem(with:)`](avplayer/replacecurrentitem(with:).md) method, but it manages the playback of only a single media asset at a time. The framework also provides a subclass called [`AVQueuePlayer`](avqueueplayer.md) that you can use to manage the playback of a queue of media assets.
+Use a player object to play a single media asset. You can reuse the player instance to play additional media assets using its [`replaceCurrentItem(with:)`](./avplayer/replacecurrentitem%28with%29.md) method, but it manages the playback of only a single media asset at a time. The framework also provides a subclass called [`AVQueuePlayer`](./avqueueplayer.md) that you can use to manage the playback of a queue of media assets.
 
-You use an [`AVPlayer`](avplayer.md) to play media assets, which AVFoundation represents using the [`AVAsset`](avasset.md) class. [`AVAsset`](avasset.md) only models the *static* aspects of the media, such as its duration or creation date, and on its own, isn’t suitable for playback with an [`AVPlayer`](avplayer.md). To play an asset, you create an instance of its *dynamic* counterpart found in [`AVPlayerItem`](avplayeritem.md). This object models the timing and presentation state of an asset played by an instance of [`AVPlayer`](avplayer.md). See the [`AVPlayerItem`](avplayeritem.md) reference for more details.
+You use an [`AVPlayer`](./avplayer.md) to play media assets, which AVFoundation represents using the [`AVAsset`](./avasset.md) class. [`AVAsset`](./avasset.md) only models the *static* aspects of the media, such as its duration or creation date, and on its own, isn’t suitable for playback with an [`AVPlayer`](./avplayer.md). To play an asset, you create an instance of its *dynamic* counterpart found in [`AVPlayerItem`](./avplayeritem.md). This object models the timing and presentation state of an asset played by an instance of [`AVPlayer`](./avplayer.md). See the [`AVPlayerItem`](./avplayeritem.md) reference for more details.
 
-[`AVPlayer`](avplayer.md) is a dynamic object whose state continuously changes. There are two approaches you can use to observe a player’s state:
+[`AVPlayer`](./avplayer.md) is a dynamic object whose state continuously changes. There are two approaches you can use to observe a player’s state:
 
-- **General State Observations:** You can use key-value observing (KVO) to observe state changes to many of the player’s dynamic properties, such as its [`currentItem`](avplayer/currentitem.md) or its playback [`rate`](avplayer/rate.md).
-- **Timed State Observations:** KVO works well for general state observations, but isn’t intended for observing continuously changing state like the player’s time. [`AVPlayer`](avplayer.md) provides two methods to observe time changes:
-- [`addPeriodicTimeObserver(forInterval:queue:using:)`](avplayer/addperiodictimeobserver(forinterval:queue:using:).md)
-- [`addBoundaryTimeObserver(forTimes:queue:using:)`](avplayer/addboundarytimeobserver(fortimes:queue:using:).md)
+- **General State Observations:** You can use key-value observing (KVO) to observe state changes to many of the player’s dynamic properties, such as its [`currentItem`](./avplayer/currentitem.md) or its playback [`rate`](./avplayer/rate.md).
+- **Timed State Observations:** KVO works well for general state observations, but isn’t intended for observing continuously changing state like the player’s time. [`AVPlayer`](./avplayer.md) provides two methods to observe time changes:
+- [`addPeriodicTimeObserver(forInterval:queue:using:)`](./avplayer/addperiodictimeobserver%28forinterval,queue,using%29.md)
+- [`addBoundaryTimeObserver(forTimes:queue:using:)`](./avplayer/addboundarytimeobserver%28fortimes,queue,using%29.md)
 
 These methods let you observe time changes either periodically or by boundary, respectively. As changes occur, invoke the callback block or closure you supply to these methods to give you the opportunity to take some action such as updating the state of your player’s user interface.
 
-[`AVPlayer`](avplayer.md) and [`AVPlayerItem`](avplayeritem.md) are nonvisual objects, meaning that on their own they’re unable to present an asset’s video onscreen. There are two primary approaches you use to present your video content onscreen:
+[`AVPlayer`](./avplayer.md) and [`AVPlayerItem`](./avplayeritem.md) are nonvisual objects, meaning that on their own they’re unable to present an asset’s video onscreen. There are two primary approaches you use to present your video content onscreen:
 
-- **AVKit:** The best way to present your video content is with the AVKit framework’s [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller) class in iOS and tvOS, or the [`AVPlayerView`](https://developer.apple.com/documentation/avkit/avplayerview) class in macOS. These classes present the video content, along with playback controls and other media features giving you a full-featured playback experience.
-- **AVPlayerLayer:** When building a custom interface for your player, use [`AVPlayerLayer`](avplayerlayer.md). You can set this layer a view’s backing layer or add it directly to the layer hierarchy. Unlike [`AVPlayerView`](https://developer.apple.com/documentation/avkit/avplayerview) and [`AVPlayerViewController`](https://developer.apple.com/documentation/avkit/avplayerviewcontroller), a player layer doesn’t present any playback controls—it only presents the visual content onscreen. It’s up to you to build the playback transport controls to play, pause, and seek through the media.
+- **AVKit:** The best way to present your video content is with the AVKit framework’s [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) class in iOS and tvOS, or the [`AVPlayerView`](../AVKit/avplayerview.md) class in macOS. These classes present the video content, along with playback controls and other media features giving you a full-featured playback experience.
+- **AVPlayerLayer:** When building a custom interface for your player, use [`AVPlayerLayer`](./avplayerlayer.md). You can set this layer a view’s backing layer or add it directly to the layer hierarchy. Unlike [`AVPlayerView`](../AVKit/avplayerview.md) and [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md), a player layer doesn’t present any playback controls—it only presents the visual content onscreen. It’s up to you to build the playback transport controls to play, pause, and seek through the media.
 
-Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerlayer.md), you can also present animated content synchronized with the player’s timing using [`AVSynchronizedLayer`](avsynchronizedlayer.md). Use a synchronized layer pass along player timing to its layer subtree. You can use [`AVSynchronizedLayer`](avsynchronizedlayer.md) to build custom effects in Core Animation, such as animated lower thirds or video transitions, and have them play in sync with the timing of the player’s current [`AVPlayerItem`](avplayeritem.md).
+Alongside the visual content presented with AVKit or [`AVPlayerLayer`](./avplayerlayer.md), you can also present animated content synchronized with the player’s timing using [`AVSynchronizedLayer`](./avsynchronizedlayer.md). Use a synchronized layer pass along player timing to its layer subtree. You can use [`AVSynchronizedLayer`](./avsynchronizedlayer.md) to build custom effects in Core Animation, such as animated lower thirds or video transitions, and have them play in sync with the timing of the player’s current [`AVPlayerItem`](./avplayeritem.md).
 
 ## Topics
 
 ### Creating a player
-- [init(url: URL)](avplayer/init(url:)-87cxx.md)
+- [init(url: URL)](./avplayer/init%28url%29-87cxx.md)
   Creates a new player to play a single audiovisual resource referenced by a given URL.
-- [init(playerItem: AVPlayerItem?)](avplayer/init(playeritem:).md)
+- [init(playerItem: AVPlayerItem?)](./avplayer/init%28playeritem%29.md)
   Creates a new player to play the specified player item.
-- [init()](avplayer/init.md)
+- [init()](./avplayer/init%28%29.md)
   Creates a player object.
 ### Managing the player item
-- [var currentItem: AVPlayerItem?](avplayer/currentitem.md)
+- [var currentItem: AVPlayerItem?](./avplayer/currentitem.md)
   The item for which the player is currently controlling playback.
-- [func replaceCurrentItem(with: AVPlayerItem?)](avplayer/replacecurrentitem(with:).md)
+- [func replaceCurrentItem(with: AVPlayerItem?)](./avplayer/replacecurrentitem%28with%29.md)
   Replaces the current item with a new item.
 ### Determining player readiness
-- [var status: AVPlayer.Status](avplayer/status-swift.property.md)
+- [var status: AVPlayer.Status](./avplayer/status-swift.property.md)
   A value that indicates the readiness of a player object for playback.
-- [AVPlayer.Status](avplayer/status-swift.enum.md)
+- [AVPlayer.Status](./avplayer/status-swift.enum.md)
   Status values that indicate whether a player can successfully play media.
-- [var error: (any Error)?](avplayer/error.md)
+- [var error: (any Error)?](./avplayer/error.md)
   An error that caused a failure.
 ### Controlling playback
-- [var defaultRate: Float](avplayer/defaultrate.md)
+- [var defaultRate: Float](./avplayer/defaultrate.md)
   A default rate at which to begin playback.
-- [func play()](avplayer/play.md)
+- [func play()](./avplayer/play%28%29.md)
   Begins playback of the current item.
-- [func pause()](avplayer/pause.md)
+- [func pause()](./avplayer/pause%28%29.md)
   Pauses playback of the current item.
-- [var rate: Float](avplayer/rate.md)
+- [var rate: Float](./avplayer/rate.md)
   The current playback rate.
-- [class let rateDidChangeNotification: NSNotification.Name](avplayer/ratedidchangenotification.md)
+- [class let rateDidChangeNotification: NSNotification.Name](./avplayer/ratedidchangenotification.md)
   A notification that a player posts when its rate changes.
-- [static let playheadReachedLiveEdge: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/playheadreachedliveedge.md)
+- [static let playheadReachedLiveEdge: AVPlayer.RateDidChangeReason](./avplayer/ratedidchangereason/playheadreachedliveedge.md)
   Indicates that the player automatically switched the playback rate from > 1.0 back to 1.0 when the playhead reached the live edge during live streaming.
-- [static let reversePlaybackReachedStartOfSeekableRange: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/reverseplaybackreachedstartofseekablerange.md)
+- [static let reversePlaybackReachedStartOfSeekableRange: AVPlayer.RateDidChangeReason](./avplayer/ratedidchangereason/reverseplaybackreachedstartofseekablerange.md)
   Indicates that the player automatically switched rate to 1.0 when the reverse playback reached start of seekable range. only for live.
 ### Observing playback time
-- [func currentTime() -> CMTime](avplayer/currenttime.md)
+- [func currentTime() -> CMTime](./avplayer/currenttime%28%29.md)
   Returns the current time of the current player item.
-- [func addPeriodicTimeObserver(forInterval: CMTime, queue: dispatch_queue_t?, using: (CMTime) -> Void) -> Any](avplayer/addperiodictimeobserver(forinterval:queue:using:).md)
+- [func addPeriodicTimeObserver(forInterval: CMTime, queue: dispatch_queue_t?, using: (CMTime) -> Void) -> Any](./avplayer/addperiodictimeobserver%28forinterval,queue,using%29.md)
   Requests the periodic invocation of a given block during playback to report changing time.
-- [func addBoundaryTimeObserver(forTimes: [NSValue], queue: dispatch_queue_t?, using: () -> Void) -> Any](avplayer/addboundarytimeobserver(fortimes:queue:using:).md)
+- [func addBoundaryTimeObserver(forTimes: [NSValue], queue: dispatch_queue_t?, using: () -> Void) -> Any](./avplayer/addboundarytimeobserver%28fortimes,queue,using%29.md)
   Requests the invocation of a block when specified times are traversed during normal playback.
-- [func removeTimeObserver(Any)](avplayer/removetimeobserver(_:).md)
+- [func removeTimeObserver(Any)](./avplayer/removetimeobserver%28_%29.md)
   Cancels a previously registered periodic or boundary time observer.
 ### Seeking through media
-- [func seek(to: CMTime)](avplayer/seek(to:)-87h2r.md)
+- [func seek(to: CMTime)](./avplayer/seek%28to%29-87h2r.md)
   Requests that the player seek to a specified time.
-- [func seek(to: CMTime, completionHandler: (Bool) -> Void)](avplayer/seek(to:completionhandler:)-75bls.md)
+- [func seek(to: CMTime, completionHandler: (Bool) -> Void)](./avplayer/seek%28to,completionhandler%29-75bls.md)
   Requests that the player seek to a specified time, and to notify you when the seek is complete.
-- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime)](avplayer/seek(to:tolerancebefore:toleranceafter:).md)
+- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime)](./avplayer/seek%28to,tolerancebefore,toleranceafter%29.md)
   Requests that the player seek to a specified time with the amount of accuracy specified by the time tolerance values.
-- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: (Bool) -> Void)](avplayer/seek(to:tolerancebefore:toleranceafter:completionhandler:).md)
+- [func seek(to: CMTime, toleranceBefore: CMTime, toleranceAfter: CMTime, completionHandler: (Bool) -> Void)](./avplayer/seek%28to,tolerancebefore,toleranceafter,completionhandler%29.md)
   Requests that the player seek to a specified time with the amount of accuracy specified by the time tolerance values, and to notify you when the seek is complete.
-- [func seek(to: Date)](avplayer/seek(to:)-9h9qr.md)
+- [func seek(to: Date)](./avplayer/seek%28to%29-9h9qr.md)
   Requests that the player seek to a specified date.
-- [func seek(to: Date, completionHandler: (Bool) -> Void)](avplayer/seek(to:completionhandler:)-wr1l.md)
+- [func seek(to: Date, completionHandler: (Bool) -> Void)](./avplayer/seek%28to,completionhandler%29-wr1l.md)
   Requests that the player seek to a specified date, and to notify you when the seek is complete.
 ### Configuring waiting behavior
-- [var automaticallyWaitsToMinimizeStalling: Bool](avplayer/automaticallywaitstominimizestalling.md)
+- [var automaticallyWaitsToMinimizeStalling: Bool](./avplayer/automaticallywaitstominimizestalling.md)
   A Boolean value that indicates whether the player should automatically delay playback in order to minimize stalling.
-- [var reasonForWaitingToPlay: AVPlayer.WaitingReason?](avplayer/reasonforwaitingtoplay.md)
+- [var reasonForWaitingToPlay: AVPlayer.WaitingReason?](./avplayer/reasonforwaitingtoplay.md)
   The reason the player is currently waiting for playback to begin or resume.
-- [AVPlayer.WaitingReason](avplayer/waitingreason.md)
+- [AVPlayer.WaitingReason](./avplayer/waitingreason.md)
   The reasons a player is waiting to begin or resume playback.
-- [var timeControlStatus: AVPlayer.TimeControlStatus](avplayer/timecontrolstatus-swift.property.md)
+- [var timeControlStatus: AVPlayer.TimeControlStatus](./avplayer/timecontrolstatus-swift.property.md)
   A value that indicates whether playback is in progress, paused indefinitely, or waiting for network conditions to improve.
-- [AVPlayer.TimeControlStatus](avplayer/timecontrolstatus-swift.enum.md)
+- [AVPlayer.TimeControlStatus](./avplayer/timecontrolstatus-swift.enum.md)
   Constants that indicate the state of playback control.
-- [func playImmediately(atRate: Float)](avplayer/playimmediately(atrate:).md)
+- [func playImmediately(atRate: Float)](./avplayer/playimmediately%28atrate%29.md)
   Plays the available media data immediately, at the specified rate.
 ### Responding when playback ends
-- [var actionAtItemEnd: AVPlayer.ActionAtItemEnd](avplayer/actionatitemend-swift.property.md)
+- [var actionAtItemEnd: AVPlayer.ActionAtItemEnd](./avplayer/actionatitemend-swift.property.md)
   The action to perform when the current player item has finished playing.
-- [AVPlayer.ActionAtItemEnd](avplayer/actionatitemend-swift.enum.md)
+- [AVPlayer.ActionAtItemEnd](./avplayer/actionatitemend-swift.enum.md)
   The actions a player can take when it finishes playing.
 ### Configuring media selection criteria
-- [var appliesMediaSelectionCriteriaAutomatically: Bool](avplayer/appliesmediaselectioncriteriaautomatically.md)
+- [var appliesMediaSelectionCriteriaAutomatically: Bool](./avplayer/appliesmediaselectioncriteriaautomatically.md)
   A Boolean value that indicates whether the receiver should apply the current selection criteria automatically to player items.
-- [func mediaSelectionCriteria(forMediaCharacteristic: AVMediaCharacteristic) -> AVPlayerMediaSelectionCriteria?](avplayer/mediaselectioncriteria(formediacharacteristic:).md)
+- [func mediaSelectionCriteria(forMediaCharacteristic: AVMediaCharacteristic) -> AVPlayerMediaSelectionCriteria?](./avplayer/mediaselectioncriteria%28formediacharacteristic%29.md)
   Returns the automatic selection criteria for media items with the specified media characteristic.
-- [func setMediaSelectionCriteria(AVPlayerMediaSelectionCriteria?, forMediaCharacteristic: AVMediaCharacteristic)](avplayer/setmediaselectioncriteria(_:formediacharacteristic:).md)
+- [func setMediaSelectionCriteria(AVPlayerMediaSelectionCriteria?, forMediaCharacteristic: AVMediaCharacteristic)](./avplayer/setmediaselectioncriteria%28_,formediacharacteristic%29.md)
   Applies automatic selection criteria for media that has the specified media characteristic.
 ### Accessing player output
-- [var videoOutput: AVPlayerVideoOutput?](avplayer/videooutput.md)
+- [var videoOutput: AVPlayerVideoOutput?](./avplayer/videooutput.md)
   The video output for this player.
 ### Configuring audio behavior
-- [var volume: Float](avplayer/volume.md)
+- [var volume: Float](./avplayer/volume.md)
   The audio playback volume for the player.
-- [var isMuted: Bool](avplayer/ismuted.md)
+- [var isMuted: Bool](./avplayer/ismuted.md)
   A Boolean value that indicates whether the audio output of the player is muted.
-- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](avplayeritem/allowedaudiospatializationformats.md)
+- [var allowedAudioSpatializationFormats: AVAudioSpatializationFormats](./avplayeritem/allowedaudiospatializationformats.md)
   The source audio channel layouts the player item supports for spatialization.
-- [var isAudioSpatializationAllowed: Bool](avplayeritem/isaudiospatializationallowed.md)
+- [var isAudioSpatializationAllowed: Bool](./avplayeritem/isaudiospatializationallowed.md)
   A Boolean value that indicates whether the player item allows spatialized audio playback.
-- [var audioOutputSuppressedDueToNonMixableAudioRoute: Bool](avplayer/audiooutputsuppressedduetononmixableaudioroute.md)
+- [var audioOutputSuppressedDueToNonMixableAudioRoute: Bool](./avplayer/audiooutputsuppressedduetononmixableaudioroute.md)
   Whether the player’s audio output is suppressed due to being on a non-mixable audio route.
-- [var intendedSpatialAudioExperience: any SpatialAudioExperience](avplayer/intendedspatialaudioexperience-1bd87.md)
+- [var intendedSpatialAudioExperience: any SpatialAudioExperience](./avplayer/intendedspatialaudioexperience-1bd87.md)
   The player’s intended Spatial Audio experience.
 ### Configuring background playback
-- [var audiovisualBackgroundPlaybackPolicy: AVPlayerAudiovisualBackgroundPlaybackPolicy](avplayer/audiovisualbackgroundplaybackpolicy.md)
+- [var audiovisualBackgroundPlaybackPolicy: AVPlayerAudiovisualBackgroundPlaybackPolicy](./avplayer/audiovisualbackgroundplaybackpolicy.md)
   A policy that determines how playback of audiovisual media continues when the app transitions to the background.
-- [enum AVPlayerAudiovisualBackgroundPlaybackPolicy](avplayeraudiovisualbackgroundplaybackpolicy.md)
+- [enum AVPlayerAudiovisualBackgroundPlaybackPolicy](./avplayeraudiovisualbackgroundplaybackpolicy.md)
   Policies that describe playback behavior when an app transitions to the background while playing video.
 ### Managing external playback
-- [var allowsExternalPlayback: Bool](avplayer/allowsexternalplayback.md)
+- [var allowsExternalPlayback: Bool](./avplayer/allowsexternalplayback.md)
   A Boolean value that indicates whether the player allows switching to external playback mode.
-- [var isExternalPlaybackActive: Bool](avplayer/isexternalplaybackactive.md)
+- [var isExternalPlaybackActive: Bool](./avplayer/isexternalplaybackactive.md)
   A Boolean value that indicates whether the player is currently playing video in external playback mode.
-- [var usesExternalPlaybackWhileExternalScreenIsActive: Bool](avplayer/usesexternalplaybackwhileexternalscreenisactive.md)
+- [var usesExternalPlaybackWhileExternalScreenIsActive: Bool](./avplayer/usesexternalplaybackwhileexternalscreenisactive.md)
   A Boolean value that indicates whether the player should automatically switch to external playback mode while the external screen mode is active.
-- [var externalPlaybackVideoGravity: AVLayerVideoGravity](avplayer/externalplaybackvideogravity.md)
+- [var externalPlaybackVideoGravity: AVLayerVideoGravity](./avplayer/externalplaybackvideogravity.md)
   The video gravity of the player for external playback mode only.
 ### Determining HDR playback eligibility
-- [class var eligibleForHDRPlayback: Bool](avplayer/eligibleforhdrplayback.md)
+- [class var eligibleForHDRPlayback: Bool](./avplayer/eligibleforhdrplayback.md)
   A Boolean value that indicates whether the current device can present content to an HDR display.
-- [class var availableHDRModes: AVPlayer.HDRMode](avplayer/availablehdrmodes.md)
+- [class var availableHDRModes: AVPlayer.HDRMode](./avplayer/availablehdrmodes.md)
   The HDR modes that are available for playback.
-- [AVPlayer.HDRMode](avplayer/hdrmode.md)
+- [AVPlayer.HDRMode](./avplayer/hdrmode.md)
   A bitfield type that specifies an HDR mode.
-- [class let eligibleForHDRPlaybackDidChangeNotification: NSNotification.Name](avplayer/eligibleforhdrplaybackdidchangenotification.md)
+- [class let eligibleForHDRPlaybackDidChangeNotification: NSNotification.Name](./avplayer/eligibleforhdrplaybackdidchangenotification.md)
   A notification that’s posted whenever HDR playback eligibility changes.
 ### Coordinating playback
-- [var playbackCoordinator: AVPlayerPlaybackCoordinator](avplayer/playbackcoordinator.md)
+- [var playbackCoordinator: AVPlayerPlaybackCoordinator](./avplayer/playbackcoordinator.md)
   The playback coordinator for the player.
 ### Synchronizing multiple players
-- [func setRate(Float, time: CMTime, atHostTime: CMTime)](avplayer/setrate(_:time:athosttime:).md)
+- [func setRate(Float, time: CMTime, atHostTime: CMTime)](./avplayer/setrate%28_,time,athosttime%29.md)
   Synchronizes the playback rate and time of the current item with an external source.
-- [func preroll(atRate: Float, completionHandler: ((Bool) -> Void)?)](avplayer/preroll(atrate:completionhandler:).md)
+- [func preroll(atRate: Float, completionHandler: ((Bool) -> Void)?)](./avplayer/preroll%28atrate,completionhandler%29.md)
   Begins loading media data to prime the media pipelines for playback.
-- [func cancelPendingPrerolls()](avplayer/cancelpendingprerolls.md)
+- [func cancelPendingPrerolls()](./avplayer/cancelpendingprerolls%28%29.md)
   Cancels any pending preroll requests and invokes the corresponding completion handlers, if present.
-- [var sourceClock: CMClock?](avplayer/sourceclock.md)
+- [var sourceClock: CMClock?](./avplayer/sourceclock.md)
   A clock the player uses for item time bases.
-- [var masterClock: CMClock?](avplayer/masterclock.md)
+- [var masterClock: CMClock?](./avplayer/masterclock.md)
   The host clock for item time bases.
 ### Preventing sleep and backgrounding
-- [var preventsDisplaySleepDuringVideoPlayback: Bool](avplayer/preventsdisplaysleepduringvideoplayback.md)
+- [var preventsDisplaySleepDuringVideoPlayback: Bool](./avplayer/preventsdisplaysleepduringvideoplayback.md)
   A Boolean value that indicates whether video playback prevents display and device sleep.
-- [var preventsAutomaticBackgroundingDuringVideoPlayback: Bool](avplayer/preventsautomaticbackgroundingduringvideoplayback.md)
+- [var preventsAutomaticBackgroundingDuringVideoPlayback: Bool](./avplayer/preventsautomaticbackgroundingduringvideoplayback.md)
   A Boolean value that indicates whether video playback prevents the system from automatically backgrounding the app.
 ### Determining content protections
-- [var isOutputObscuredDueToInsufficientExternalProtection: Bool](avplayer/isoutputobscuredduetoinsufficientexternalprotection.md)
+- [var isOutputObscuredDueToInsufficientExternalProtection: Bool](./avplayer/isoutputobscuredduetoinsufficientexternalprotection.md)
   A Boolean value that indicates whether output is being obscured because of insufficient external protection.
 ### Configuring audio and video devices
-- [var audioOutputDeviceUniqueID: String?](avplayer/audiooutputdeviceuniqueid.md)
+- [var audioOutputDeviceUniqueID: String?](./avplayer/audiooutputdeviceuniqueid.md)
   Specifies the unique ID of the Core Audio output device used to play audio.
-- [var preferredVideoDecoderGPURegistryID: UInt64](avplayer/preferredvideodecodergpuregistryid.md)
+- [var preferredVideoDecoderGPURegistryID: UInt64](./avplayer/preferredvideodecodergpuregistryid.md)
   The registry identifier for the GPU used for video decoding.
 ### Configuring the network resource priority
-- [var networkResourcePriority: AVPlayer.NetworkResourcePriority](avplayer/networkresourcepriority-swift.property.md)
+- [var networkResourcePriority: AVPlayer.NetworkResourcePriority](./avplayer/networkresourcepriority-swift.property.md)
   Indicates the priority of this player for network bandwidth resource distribution.
-- [AVPlayer.NetworkResourcePriority](avplayer/networkresourcepriority-swift.enum.md)
+- [AVPlayer.NetworkResourcePriority](./avplayer/networkresourcepriority-swift.enum.md)
   This defines the network resource priority for a player.
 ### Configuring observation
-- [class var isObservationEnabled: Bool](avplayer/isobservationenabled.md)
+- [class var isObservationEnabled: Bool](./avplayer/isobservationenabled.md)
   AVPlayer and other AVFoundation types can optionally be observed using Swift Observation.
 ### Configuring AirPlay behavior
-- [var allowsAirPlayVideo: Bool](avplayer/allowsairplayvideo.md)
+- [var allowsAirPlayVideo: Bool](./avplayer/allowsairplayvideo.md)
   A Boolean value that indicates whether the player allows AirPlay video playback.
-- [var isAirPlayVideoActive: Bool](avplayer/isairplayvideoactive.md)
+- [var isAirPlayVideoActive: Bool](./avplayer/isairplayvideoactive.md)
   A Boolean value that indicates whether the player is playing video through AirPlay.
-- [var usesAirPlayVideoWhileAirPlayScreenIsActive: Bool](avplayer/usesairplayvideowhileairplayscreenisactive.md)
+- [var usesAirPlayVideoWhileAirPlayScreenIsActive: Bool](./avplayer/usesairplayvideowhileairplayscreenisactive.md)
   A Boolean value that indicates whether the player automatically switches to AirPlay Video while AirPlay Screen is active.
 ### Displaying closed captions
-- [var isClosedCaptionDisplayEnabled: Bool](avplayer/isclosedcaptiondisplayenabled.md)
+- [var isClosedCaptionDisplayEnabled: Bool](./avplayer/isclosedcaptiondisplayenabled.md)
   A Boolean value that indicates whether the player uses closed captioning.
 ### Initializers
-- [convenience init(URL: URL)](avplayer/init(url:)-8aqw0.md)
-- [init(URL: URL)](avplayer/init(url:)-9cqj1.md)
+- [convenience init(URL: URL)](./avplayer/init%28url%29-8aqw0.md)
+- [init(URL: URL)](./avplayer/init%28url%29-9cqj1.md)
 ### Instance Properties
-- [var allowsCaptureOfClearKeyVideo: Bool](avplayer/allowscaptureofclearkeyvideo.md)
+- [var allowsCaptureOfClearKeyVideo: Bool](./avplayer/allowscaptureofclearkeyvideo.md)
   Indicates whether the video output of ClearKey Encrypted Video can be captured
-- [var disconnectedFromSystemAudio: Bool](avplayer/disconnectedfromsystemaudio.md)
+- [var disconnectedFromSystemAudio: Bool](./avplayer/disconnectedfromsystemaudio.md)
   Indicates whether the player is disconnected from system audio.
 ### Instance Methods
-- [func setDisconnectedFromSystemAudio(Bool, completionHandler: (() -> Void)?)](avplayer/setdisconnectedfromsystemaudio(_:completionhandler:).md)
+- [func setDisconnectedFromSystemAudio(Bool, completionHandler: (() -> Void)?)](./avplayer/setdisconnectedfromsystemaudio%28_,completionhandler%29.md)
   Changes whether the player is disconnected from system audio. This method allows you to dynamically change the player’s system audio connection. The operation is asynchronous. Each call to this method will invoke its own completion handler when the operation completes. When changing from `false` to `true`, you should typically call this method first, then deactivate the `AVAudioSession` to allow other audio to resume.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [AVQueuePlayer](avqueueplayer.md)
+- [AVQueuePlayer](./avqueueplayer.md)
 ### Conforms To
-- [AVRoutingPlaybackParticipant](../avrouting/avroutingplaybackparticipant.md)
-- [CVarArg](../swift/cvararg.md)
-- [Copyable](../swift/copyable.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Observable](../observation/observable.md)
-- [Sendable](../swift/sendable.md)
+- [AVRoutingPlaybackParticipant](../AVRouting/avroutingplaybackparticipant.md)
+- [CVarArg](../Swift/cvararg.md)
+- [Copyable](../Swift/copyable.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Escapable](../Swift/escapable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Observable](../Observation/observable.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [Observing playback state in SwiftUI](observing-playback-state-in-swiftui.md)
+### Playback control
+- [Observing playback state in SwiftUI](./observing-playback-state-in-swiftui.md)
   Keep your user interface in sync with state changes from playback objects.
-- [Controlling the transport behavior of a player](controlling-the-transport-behavior-of-a-player.md)
+- [Controlling the transport behavior of a player](./controlling-the-transport-behavior-of-a-player.md)
   Play, pause, and seek through a media presentation.
-- [Creating a seamless multiview playback experience](creating-a-seamless-multiview-playback-experience.md)
+- [Creating a seamless multiview playback experience](./creating-a-seamless-multiview-playback-experience.md)
   Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
-- [class AVPlayerItem](avplayeritem.md)
+- [class AVPlayerItem](./avplayeritem.md)
   An object that models the timing and presentation state of an asset during playback.
-- [class AVPlayerItemTrack](avplayeritemtrack.md)
+- [class AVPlayerItemTrack](./avplayeritemtrack.md)
   An object that represents the presentation state of an asset track during playback.
-- [class AVQueuePlayer](avqueueplayer.md)
+- [class AVQueuePlayer](./avqueueplayer.md)
   An object that plays a sequence of player items.
-- [class AVPlayerLooper](avplayerlooper.md)
+- [class AVPlayerLooper](./avplayerlooper.md)
   An object that loops media content using a queue player.
 
 

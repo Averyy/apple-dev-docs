@@ -1,12 +1,13 @@
 # WKAudioFilePlayerStatus.unknown
 
 **Framework**: WatchKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The status of the item is unknown because the player has not yet loaded the audio file for playback.
 
 **Availability**:
-- watchOS 2.0+
+- watchOS 2.0+ - Deprecated in 6.0
 
 ## Declaration
 
@@ -14,12 +15,17 @@ The status of the item is unknown because the player has not yet loaded the audi
 case unknown
 ```
 
+```c
+WKAudioFilePlayerStatusUnknown
+```
+
 ## See Also
 
-- [WKAudioFilePlayerStatus.readyToPlay](wkaudiofileplayerstatus/readytoplay.md)
+### Constants
+- [WKAudioFilePlayerStatus.readyToPlay](./readytoplay.md)
   The player is ready to play its item.
-- [WKAudioFilePlayerStatus.failed](wkaudiofileplayerstatus/failed.md)
-  The player can no longer play the audio because of an error. Use the [`error`](wkaudiofileplayer/error.md) property to get information about the error that occurred.
+- [WKAudioFilePlayerStatus.failed](./failed.md)
+  The player can no longer play the audio because of an error. Use the [`error`](../wkaudiofileplayer/error.md) property to get information about the error that occurred.
 
 
 ---

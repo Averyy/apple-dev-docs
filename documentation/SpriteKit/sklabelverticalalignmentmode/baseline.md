@@ -1,7 +1,8 @@
 # SKLabelVerticalAlignmentMode.baseline
 
 **Framework**: SpriteKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Positions the text so that the font’s baseline lies on the node’s origin.
 
@@ -10,7 +11,7 @@ Positions the text so that the font’s baseline lies on the node’s origin.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.9+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -20,13 +21,18 @@ Positions the text so that the font’s baseline lies on the node’s origin.
 case baseline
 ```
 
+```c
+SKLabelVerticalAlignmentModeBaseline
+```
+
 ## See Also
 
-- [SKLabelVerticalAlignmentMode.center](sklabelverticalalignmentmode/center.md)
+### Constants
+- [SKLabelVerticalAlignmentMode.center](./center.md)
   Centers the text vertically on the node’s origin.
-- [SKLabelVerticalAlignmentMode.top](sklabelverticalalignmentmode/top.md)
+- [SKLabelVerticalAlignmentMode.top](./top.md)
   Positions the text so that the top of the text is on the node’s origin.
-- [SKLabelVerticalAlignmentMode.bottom](sklabelverticalalignmentmode/bottom.md)
+- [SKLabelVerticalAlignmentMode.bottom](./bottom.md)
   Positions the text so that the bottom of the text is on the node’s origin.
 
 

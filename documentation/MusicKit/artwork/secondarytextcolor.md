@@ -1,7 +1,8 @@
 # secondaryTextColor
 
 **Framework**: MusicKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The secondary text color to use when displaying the background color.
 

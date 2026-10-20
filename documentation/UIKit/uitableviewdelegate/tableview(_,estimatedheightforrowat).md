@@ -1,7 +1,8 @@
 # tableView(_:estimatedHeightForRowAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Asks the delegate for the estimated height of a row in a specified location.
 
@@ -18,13 +19,17 @@ Asks the delegate for the estimated height of a row in a specified location.
 optional func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
 ```
 
+```objc
+- (CGFloat) tableView:(UITableView *) tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *) indexPath;
+```
+
 ## Mentions
 
-- [Estimating the height of a table’s scrolling area](estimating-the-height-of-a-table-s-scrolling-area.md)
+- [Estimating the height of a table’s scrolling area](../estimating-the-height-of-a-table-s-scrolling-area.md)
 
 #### Return Value
 
-A nonnegative floating-point value that estimates the height (in points) that `row` should be. Return [`automaticDimension`](uitableview/automaticdimension.md) if you have no estimate.
+A nonnegative floating-point value that estimates the height (in points) that `row` should be. Return [`automaticDimension`](../uitableview/automaticdimension.md) if you have no estimate.
 
 #### Discussion
 
@@ -37,11 +42,13 @@ Providing an estimate the height of rows can improve the user experience when lo
 
 ## See Also
 
-- [func tableView(UITableView, heightForRowAt: IndexPath) -> CGFloat](uitableviewdelegate/tableview(_:heightforrowat:).md)
+### Related Documentation
+- [func tableView(UITableView, heightForRowAt: IndexPath) -> CGFloat](./tableview%28_,heightforrowat%29.md)
   Asks the delegate for the height to use for a row in a specified location.
-- [func tableView(UITableView, estimatedHeightForHeaderInSection: Int) -> CGFloat](uitableviewdelegate/tableview(_:estimatedheightforheaderinsection:).md)
+### Estimating heights for the table’s content
+- [func tableView(UITableView, estimatedHeightForHeaderInSection: Int) -> CGFloat](./tableview%28_,estimatedheightforheaderinsection%29.md)
   Asks the delegate for the estimated height of the header of a particular section.
-- [func tableView(UITableView, estimatedHeightForFooterInSection: Int) -> CGFloat](uitableviewdelegate/tableview(_:estimatedheightforfooterinsection:).md)
+- [func tableView(UITableView, estimatedHeightForFooterInSection: Int) -> CGFloat](./tableview%28_,estimatedheightforfooterinsection%29.md)
   Asks the delegate for the estimated height of the footer of a particular section.
 
 

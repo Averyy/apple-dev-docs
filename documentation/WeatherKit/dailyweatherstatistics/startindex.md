@@ -1,7 +1,8 @@
 # startIndex
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The start index for the daily weather statistics.
 

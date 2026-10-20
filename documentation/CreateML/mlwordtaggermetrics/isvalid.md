@@ -1,7 +1,8 @@
 # isValid
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value indicating whether the metrics were calculated.
 
@@ -20,7 +21,8 @@ Your metrics may be invalid if you attempt to perform evaluation on data that do
 
 ## See Also
 
-- [var error: (any Error)?](mlwordtaggermetrics/error.md)
+### Handling errors
+- [var error: (any Error)?](./error.md)
   The underlying error present when the metrics are invalid.
 
 

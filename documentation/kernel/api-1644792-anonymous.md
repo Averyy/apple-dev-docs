@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,8 +18,8 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kMediaStateLocked](1644792-anonymous/kmediastatelocked.md)
-- [kMediaStateUnlocked](1644792-anonymous/kmediastateunlocked.md)
+- [kMediaStateLocked](./api-1644792-anonymous/kmediastatelocked.md)
+- [kMediaStateUnlocked](./api-1644792-anonymous/kmediastateunlocked.md)
 
 
 ---

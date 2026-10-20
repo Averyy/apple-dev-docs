@@ -1,7 +1,8 @@
 # registerForNotifications
 
 **Framework**: CloudKit JS  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers to receive push notifications.
 
@@ -10,23 +11,24 @@ Registers to receive push notifications.
 
 ## Declaration
 
-```swift
+```
 void registerForNotifications();
 ```
 
 #### Discussion
 
-To subscribe to changes and register for push notifications, see `saveSubscription` in the [`CloudKit.Database`](cloudkit.database.md) class.
+To subscribe to changes and register for push notifications, see `saveSubscription` in the [`CloudKit.Database`](../cloudkit.database.md) class.
 
 ## See Also
 
-- [addNotificationListener](cloudkit.container/addnotificationlistener.md)
+### Receiving Notifications
+- [addNotificationListener](./addnotificationlistener.md)
   Adds a function to call when a push notification occurs.
-- [removeNotificationListener](cloudkit.container/removenotificationlistener.md)
+- [removeNotificationListener](./removenotificationlistener.md)
   Removes a function to call when a push notification occurs.
-- [unregisterForNotifications](cloudkit.container/unregisterfornotifications.md)
+- [unregisterForNotifications](./unregisterfornotifications.md)
   Unregisters to receive push notifications.
-- [isRegisteredForNotifications](cloudkit.container/isregisteredfornotifications.md)
+- [isRegisteredForNotifications](./isregisteredfornotifications.md)
   Boolean value indicating whether this container is registered to receive push notifications.
 
 

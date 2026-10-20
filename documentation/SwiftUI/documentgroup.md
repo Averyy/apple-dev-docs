@@ -1,7 +1,8 @@
 # DocumentGroup
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A scene that enables support for opening, creating, and saving documents.
 
@@ -21,13 +22,13 @@ struct DocumentGroup<Document, Content> where Content : View
 
 ## Mentions
 
-- [Building and customizing the menu bar with SwiftUI](building-and-customizing-the-menu-bar-with-swiftui.md)
+- [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 
 #### Overview
 
-Use a `DocumentGroup` scene to tell SwiftUI what kinds of documents your app can open when you declare your app using the [`App`](app.md) protocol.
+Use a `DocumentGroup` scene to tell SwiftUI what kinds of documents your app can open when you declare your app using the [`App`](./app.md) protocol.
 
-Initialize a document group scene by passing in the document model and a view capable of displaying the document type. The document types you supply to `DocumentGroup` must conform to [`FileDocument`](filedocument.md) or [`ReferenceFileDocument`](referencefiledocument.md). SwiftUI uses the model to add document support to your app. In macOS this includes document-based menu support, including the ability to open multiple documents. On iOS this includes a document browser that can navigate to the documents stored on the file system and multiwindow support:
+Initialize a document group scene by passing in the document model and a view capable of displaying the document type. The document types you supply to `DocumentGroup` must conform to [`FileDocument`](./filedocument.md) or [`ReferenceFileDocument`](./referencefiledocument.md). SwiftUI uses the model to add document support to your app. In macOS this includes document-based menu support, including the ability to open multiple documents. On iOS this includes a document browser that can navigate to the documents stored on the file system and multiwindow support:
 
 ```swift
 @main
@@ -42,7 +43,7 @@ struct MyApp: App {
 
 Any time the configuration changes, SwiftUI updates the contents with that new configuration, similar to other parameterized builders.
 
-##### Viewing Documents
+##### Viewing documents
 
 If your app only needs to display but not modify a specific document type, you can use the file viewer document group scene. You supply the file type of the document, and a view that displays the document type that you provide:
 
@@ -57,7 +58,7 @@ struct MyApp: App {
 }
 ```
 
-##### Supporting Multiple Document Types
+##### Supporting multiple document types
 
 Your app can support multiple document types by adding additional document group scenes:
 
@@ -75,7 +76,7 @@ struct MyApp: App {
 }
 ```
 
-##### Opening Documents
+##### Opening documents
 
 When a person opens a file — for example, by double-clicking it in macOS Finder or tapping it in the iOS Files app — the system looks through the list of registered Uniform Type Identifiers (or *content types*) to find one that corresponds to the file extension.
 
@@ -83,11 +84,15 @@ The operating system learns about new content types from information property li
 
 - The *Document Types* key (`CFBundleDocumentTypes`) lists the content type identifiers your app can open. Every document-based app must include this key.
 - The *Exported Type Identifiers* key (`UTExportedTypeDeclarations`) declares a custom content type that your app defines. Include a file extension so the system knows which files correspond to that type.
-- The *Imported Type Identifiers* key (`UTImportedTypeDeclarations`) registers a content type that another app defines. If the person doesn’t have that app installed, your declaration is what the system uses to identify the type and its associated files. If they do have it installed, the app’s exported declaration takes precedence instead. For example, if your app works with `xcresult` bundles, declare `com.apple.xcode.resultbundle` as an imported type. If someone doesn’t have Xcode installed, your declaration tells the system that `.xcresult` files belong to this type. Once they install Xcode, its exported declaration takes over. You don’t need to declare content types the operating system defines, like `UTType.utf8PlainText`.
+- The *Imported Type Identifiers* key (`UTImportedTypeDeclarations`) registers a content type that another app defines. If the person doesn’t have that app installed, your declaration is what the system uses to identify the type and its associated files. If they do have it installed, the app’s exported declaration takes precedence instead.
+
+  For example, if your app works with `xcresult` bundles, declare `com.apple.xcode.resultbundle` as an imported type. If someone doesn’t have Xcode installed, your declaration tells the system that `.xcresult` files belong to this type. Once they install Xcode, its exported declaration takes over.
+
+  You don’t need to declare content types the operating system defines, like `UTType.utf8PlainText`.
 
 You can configure these property list keys in the Info pane of your app target in Xcode. Document types that correspond to regular files on disk must conform to `UTType/data`; packages must conform to `UTType/package`.
 
-For more information on how the `UTType` system works, including its hierarchical structure and when to export versus import a type, refer to [`A Reintroduction to Uniform Type Identifiers`](https://developer.apple.comhttps://developer.apple.com/videos/play/tech-talks/10696/).
+For more information on how the `UTType` system works, including its hierarchical structure and when to export versus import a type, refer to [A Reintroduction to Uniform Type Identifiers](https://developer.apple.com/videos/play/tech-talks/10696/).
 
 When multiple apps can open the same file type, the system also considers the *Handler Rank* you set in the Document Types key, which indicates whether your app is the default handler or an alternative.
 
@@ -125,13 +130,13 @@ struct MyApp: App {
 }
 ```
 
-##### Document Life Cycle
+##### Document life cycle
 
 Once SwiftUI selects the matching `DocumentGroup`, it loads the file’s contents into the document type and presents the view with the loaded document.
 
 For a value-type document, like a `struct`, SwiftUI tracks edits through the document binding. For a reference-type document, like a `class`, it tracks changes you register with `EnvironmentValues.undoManager`. SwiftUI writes the document back to disk when needed — for example, in response to a Save command.
 
-##### Accessing the Documents Url
+##### Accessing the document’s URL
 
 If your app needs to know the document’s URL, you can read it from the `editor` closure’s `configuration` parameter, along with the binding to the document. When you create a new document, the configuration’s `fileURL` property is `nil`. Every time it changes, it is passed over to the `DocumentGroup` builder in the updated `configuration`. This ensures that the view you define in the closure always knows the URL of the document it hosts.
 
@@ -149,46 +154,47 @@ struct MyApp: App {
 }
 ```
 
-The URL can be used, for example, to present the file path of the file name in the user interface. Don’t access the document’s contents or metadata using the URL because that can conflict with the management of the file that SwiftUI performs. Instead, use the methods that [`FileDocument`](filedocument.md) and [`ReferenceFileDocument`](referencefiledocument.md) provide to perform read and write operations.
+The URL can be used, for example, to present the file path of the file name in the user interface. Don’t access the document’s contents or metadata using the URL because that can conflict with the management of the file that SwiftUI performs. Instead, use the methods that [`FileDocument`](./filedocument.md) and [`ReferenceFileDocument`](./referencefiledocument.md) provide to perform read and write operations.
 
 ## Topics
 
 ### Creating a document group
-- [init(allowCreating: Bool, editor: (Document) -> Content, makeDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(allowcreating:editor:makedocument:).md)
+- [init(allowCreating: Bool, editor: (Document) -> Content, makeDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](./documentgroup/init%28allowcreating,editor,makedocument%29.md)
   Creates a document group capable of creating, viewing, and editing documents.
-- [init(viewer: (Document) -> Content, makeReadableDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(viewer:makereadabledocument:).md)
+- [init(viewer: (Document) -> Content, makeReadableDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](./documentgroup/init%28viewer,makereadabledocument%29.md)
   Creates a document group capable of opening and viewing read-only documents.
-- [init(newDocument:editor:)](documentgroup/init(newdocument:editor:).md)
+- [init(newDocument:editor:)](./documentgroup/init%28newdocument,editor%29.md)
   Creates a document group for creating and editing file documents.
-- [init(viewing:viewer:)](documentgroup/init(viewing:viewer:).md)
+- [init(viewing:viewer:)](./documentgroup/init%28viewing,viewer%29.md)
   Creates a document group capable of viewing file documents.
 ### Editing a document backed by a persistent store
-- [init(editing:contentType:editor:prepareDocument:)](documentgroup/init(editing:contenttype:editor:preparedocument:).md)
+- [init(editing:contentType:editor:prepareDocument:)](./documentgroup/init%28editing,contenttype,editor,preparedocument%29.md)
   Instantiates a document group for creating and editing documents that store a specific model type.
-- [init(editing: UTType, migrationPlan: any SchemaMigrationPlan.Type, editor: () -> Content, prepareDocument: (ModelContext) -> Void)](documentgroup/init(editing:migrationplan:editor:preparedocument:).md)
+- [init(editing: UTType, migrationPlan: any SchemaMigrationPlan.Type, editor: () -> Content, prepareDocument: (ModelContext) -> Void)](./documentgroup/init%28editing,migrationplan,editor,preparedocument%29.md)
   Instantiates a document group for creating and editing documents described by the last `Schema` in the migration plan.
 ### Viewing a document backed by a persistent store
-- [init(viewing:contentType:viewer:)](documentgroup/init(viewing:contenttype:viewer:).md)
+- [init(viewing:contentType:viewer:)](./documentgroup/init%28viewing,contenttype,viewer%29.md)
   Instantiates a document group for viewing documents that store a specific model type.
-- [init(viewing: UTType, migrationPlan: any SchemaMigrationPlan.Type, viewer: () -> Content)](documentgroup/init(viewing:migrationplan:viewer:).md)
+- [init(viewing: UTType, migrationPlan: any SchemaMigrationPlan.Type, viewer: () -> Content)](./documentgroup/init%28viewing,migrationplan,viewer%29.md)
   Instantiates a document group for viewing documents described by the last `Schema` in the migration plan.
 
 ## Relationships
 
 ### Conforms To
-- [Scene](scene.md)
+- [Scene](./scene.md)
 
 ## See Also
 
-- [Creating a document-based app](creating-a-document-based-app.md)
+### Creating a document
+- [Creating a document-based app](./creating-a-document-based-app.md)
   Build apps that people can use to open, edit, and save files using coordinated file access.
-- [Handling advanced document scenarios](handling-advanced-document-scenarios.md)
+- [Handling advanced document scenarios](./handling-advanced-document-scenarios.md)
   Extend your document-based app to support custom file formats, on-demand file access, and progress reporting.
-- [Updating your document-based app](updating-your-document-based-app.md)
+- [Updating your document-based app](./updating-your-document-based-app.md)
   Migrate an existing app to adopt URL-based document reading and writing with Swift concurrency.
-- [Building a document-based app with SwiftUI](building-a-document-based-app-with-swiftui.md)
+- [Building a document-based app with SwiftUI](./building-a-document-based-app-with-swiftui.md)
   Create, save, and open documents in a multiplatform app.
-- [Building a document-based app using SwiftData](building-a-document-based-app-using-swiftdata.md)
+- [Building a document-based app using SwiftData](./building-a-document-based-app-using-swiftdata.md)
   Code along with the WWDC presenter to transform an app with SwiftData.
 
 

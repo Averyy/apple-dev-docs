@@ -1,7 +1,8 @@
 # vImageMultidimensionalTable_Create(_:_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Creates a multidimensional lookup table.
 
@@ -20,19 +21,23 @@ Creates a multidimensional lookup table.
 func vImageMultidimensionalTable_Create(_ tableData: UnsafePointer<UInt16>, _ numSrcChannels: UInt32, _ numDestChannels: UInt32, _ table_entries_per_dimension: UnsafePointer<UInt8>, _ hint: vImageMDTableUsageHint, _ flags: vImage_Flags, _ err: UnsafeMutablePointer<vImage_Error>!) -> vImage_MultidimensionalTable!
 ```
 
+```c
+vImage_MultidimensionalTablevImageMultidimensionalTable_Create(const uint16_t *tableData, uint32_t numSrcChannels, uint32_t numDestChannels, const uint8_t table_entries_per_dimension[], vImageMDTableUsageHint hint, vImage_Flags flags, vImage_Error *err);
+```
+
 ## Mentions
 
-- [Applying color transforms to images with a multidimensional lookup table](applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
+- [Applying color transforms to images with a multidimensional lookup table](./applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
 
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
 Use a multidimensional lookup table to transform the colors in an image. The lookup table defines an output color based on the input color values. The vImage multidimensional lookup table provides interpolation to compute output color values that don’t have an explicit entry in the table for a specified input color.
 
-A [`vImage_MultidimensionalTable`](vimage_multidimensionaltable.md) applies transforms to 32-bit and 16Q12 planar pixel buffers.
+A [`vImage_MultidimensionalTable`](./vimage_multidimensionaltable.md) applies transforms to 32-bit and 16Q12 planar pixel buffers.
 
 The following is an example of a simple lookup table that implements the Rec. 709 luminance coefficients to convert from a three-channel RGB image to a single-channel grayscale image. The lookup table is a 3D cube with 32 entries per channel. Supply the lookup values as a contiguous array of samples that defines the lookup table values. The samples have range `0...65535` that the vImage library interprets as the floating-point range `0...1`.
 
@@ -151,31 +156,32 @@ free(tableData);
 - `numSrcChannels`: The number of channels in an input pixel.
 - `numDestChannels`: The number of channels in an output pixel.
 - `table_entries_per_dimension`: An array that contains the number of table entries for each channel in an input pixel.
-- `hint`: A constant that specifies whether this function sets up the table for particular transform functions. If you only use [`vImageMultiDimensionalInterpolatedLookupTable_PlanarF(_:_:_:_:_:_:)`](vimagemultidimensionalinterpolatedlookuptable_planarf(_:_:_:_:_:_:).md), pass [`kvImageMDTableHint_Float`](kvimagemdtablehint_float.md). If you only use [`vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12(_:_:_:_:_:_:)`](vimagemultidimensionalinterpolatedlookuptable_planar16q12(_:_:_:_:_:_:).md), pass [`kvImageMDTableHint_16Q12`](kvimagemdtablehint_16q12.md). Pass both flags if you use both transform functions.
-- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](kvimagenoflags.md).
-- `err`: On output, [`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+- `hint`: A constant that specifies whether this function sets up the table for particular transform functions. If you only use [`vImageMultiDimensionalInterpolatedLookupTable_PlanarF(_:_:_:_:_:_:)`](./vimagemultidimensionalinterpolatedlookuptable_planarf%28_,_,_,_,_,_%29.md), pass [`kvImageMDTableHint_Float`](./kvimagemdtablehint_float.md). If you only use [`vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12(_:_:_:_:_:_:)`](./vimagemultidimensionalinterpolatedlookuptable_planar16q12%28_,_,_,_,_,_%29.md), pass [`kvImageMDTableHint_16Q12`](./kvimagemdtablehint_16q12.md). Pass both flags if you use both transform functions.
+- `flags`: The options to use when performing the operation. If your code implements its own tiling or its own multithreading, pass [`kvImageDoNotTile`](./kvimagedonottile.md); otherwise, pass [`kvImageNoFlags`](./kvimagenoflags.md).
+- `err`: On output, [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 ## See Also
 
-- [Applying color transforms to images with a multidimensional lookup table](applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
+### Transforming with a multidimensional lookup table
+- [Applying color transforms to images with a multidimensional lookup table](./applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md)
   Precompute translation values to optimize color space conversion and other pointwise operations.
-- [Cropping to the subject in a chroma-keyed image](cropping-to-the-subject-in-a-chroma-keyed-image.md)
+- [Cropping to the subject in a chroma-keyed image](./cropping-to-the-subject-in-a-chroma-keyed-image.md)
   Convert a chroma-key color to alpha values and trim transparent pixels using Accelerate.
-- [Applying transformations to selected colors in an image](applying-transformations-to-selected-colors-in-an-image.md)
+- [Applying transformations to selected colors in an image](./applying-transformations-to-selected-colors-in-an-image.md)
   Desaturate a range of colors in an image with a multidimensional lookup table.
-- [func vImageMultiDimensionalInterpolatedLookupTable_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_MultidimensionalTable, vImage_InterpolationMethod, vImage_Flags) -> vImage_Error](vimagemultidimensionalinterpolatedlookuptable_planarf(_:_:_:_:_:_:).md)
+- [func vImageMultiDimensionalInterpolatedLookupTable_PlanarF(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_MultidimensionalTable, vImage_InterpolationMethod, vImage_Flags) -> vImage_Error](./vimagemultidimensionalinterpolatedlookuptable_planarf%28_,_,_,_,_,_%29.md)
   Uses a multidimensional lookup table to transform a 32-bit planar image.
-- [func vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_MultidimensionalTable, vImage_InterpolationMethod, vImage_Flags) -> vImage_Error](vimagemultidimensionalinterpolatedlookuptable_planar16q12(_:_:_:_:_:_:).md)
+- [func vImageMultiDimensionalInterpolatedLookupTable_Planar16Q12(UnsafePointer<vImage_Buffer>, UnsafePointer<vImage_Buffer>, UnsafeMutableRawPointer!, vImage_MultidimensionalTable, vImage_InterpolationMethod, vImage_Flags) -> vImage_Error](./vimagemultidimensionalinterpolatedlookuptable_planar16q12%28_,_,_,_,_,_%29.md)
   Uses a multidimensional lookup table to transform a 16Q12 planar image.
-- [func vImageMultidimensionalTable_Retain(vImage_MultidimensionalTable!) -> vImage_Error](vimagemultidimensionaltable_retain(_:).md)
+- [func vImageMultidimensionalTable_Retain(vImage_MultidimensionalTable!) -> vImage_Error](./vimagemultidimensionaltable_retain%28_%29.md)
   Retains a multidimensional table.
-- [func vImageMultidimensionalTable_Release(vImage_MultidimensionalTable!) -> vImage_Error](vimagemultidimensionaltable_release(_:).md)
+- [func vImageMultidimensionalTable_Release(vImage_MultidimensionalTable!) -> vImage_Error](./vimagemultidimensionaltable_release%28_%29.md)
   Releases a multidimensional table.
-- [typealias vImage_MultidimensionalTable](vimage_multidimensionaltable.md)
+- [typealias vImage_MultidimensionalTable](./vimage_multidimensionaltable.md)
   An opaque pointer that represents a multidimensional lookup table.
-- [struct vImageMDTableUsageHint](vimagemdtableusagehint.md)
+- [struct vImageMDTableUsageHint](./vimagemdtableusagehint.md)
   Constants that indicate the use for a multidimensional lookup table.
-- [struct vImage_InterpolationMethod](vimage_interpolationmethod.md)
+- [struct vImage_InterpolationMethod](./vimage_interpolationmethod.md)
   Constants that represent different interpolation methods.
 
 

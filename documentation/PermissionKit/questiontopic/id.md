@@ -2,6 +2,7 @@
 
 **Framework**: PermissionKit  
 **Kind**: property  
+**Role**: Type Property  
 **Required**: Yes
 
 The unique identifier for the topic.

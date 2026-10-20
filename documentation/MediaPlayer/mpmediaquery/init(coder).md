@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: Media Player  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 3.0+

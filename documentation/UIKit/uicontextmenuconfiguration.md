@@ -1,7 +1,8 @@
 # UIContextMenuConfiguration
 
 **Framework**: UIKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object containing the configuration details for the contextual menu.
 
@@ -19,9 +20,13 @@ An object containing the configuration details for the contextual menu.
 class UIContextMenuConfiguration
 ```
 
+```objc
+@interface UIContextMenuConfiguration : NSObject
+```
+
 #### Overview
 
-Before displaying a contextual menu, the system asks your [`UIContextMenuInteractionDelegate`](uicontextmenuinteractiondelegate.md) to provide a [`UIContextMenuConfiguration`](uicontextmenuconfiguration.md) object with details about that menu. In your [`contextMenuInteraction(_:configurationForMenuAtLocation:)`](uicontextmenuinteractiondelegate/contextmenuinteraction(_:configurationformenuatlocation:).md) method, use the location parameter to determine where the interaction occurred, and use the content at that location to configure your contextual menu and view controller. Provide custom blocks to generate:
+Before displaying a contextual menu, the system asks your [`UIContextMenuInteractionDelegate`](./uicontextmenuinteractiondelegate.md) to provide a [`UIContextMenuConfiguration`](./uicontextmenuconfiguration.md) object with details about that menu. In your [`contextMenuInteraction(_:configurationForMenuAtLocation:)`](./uicontextmenuinteractiondelegate/contextmenuinteraction%28_,configurationformenuatlocation%29.md) method, use the location parameter to determine where the interaction occurred, and use the content at that location to configure your contextual menu and view controller. Provide custom blocks to generate:
 
 - The contextual menu with the actions for your content.
 - An optional view controller to use when displaying your content.
@@ -31,45 +36,46 @@ If you specify a default object without any custom handler blocks, the system di
 ## Topics
 
 ### Creating the menu configuration object
-- [convenience init(identifier: (any NSCopying)?, previewProvider: UIContextMenuContentPreviewProvider?, actionProvider: UIContextMenuActionProvider?)](uicontextmenuconfiguration/init(identifier:previewprovider:actionprovider:).md)
+- [convenience init(identifier: (any NSCopying)?, previewProvider: UIContextMenuContentPreviewProvider?, actionProvider: UIContextMenuActionProvider?)](./uicontextmenuconfiguration/init%28identifier,previewprovider,actionprovider%29.md)
   Creates a menu configuration object with the specified action and preview providers.
-- [typealias UIContextMenuContentPreviewProvider](uicontextmenucontentpreviewprovider.md)
+- [typealias UIContextMenuContentPreviewProvider](./uicontextmenucontentpreviewprovider.md)
   Returns the custom view controller to use when previewing your content.
-- [typealias UIContextMenuActionProvider](uicontextmenuactionprovider.md)
+- [typealias UIContextMenuActionProvider](./uicontextmenuactionprovider.md)
   Returns an action-based contextual menu, optionally incorporating the system-suggested actions.
 ### Getting the configuration identifier
-- [var identifier: any NSCopying](uicontextmenuconfiguration/identifier.md)
+- [var identifier: any NSCopying](./uicontextmenuconfiguration/identifier.md)
   The unique identifier for this configuration object.
 ### Handling multiple-item interactions
-- [var secondaryItemIdentifiers: Set<AnyHashable>](uicontextmenuconfiguration/secondaryitemidentifiers.md)
+- [var secondaryItemIdentifiers: Set<AnyHashable>](./uicontextmenuconfiguration/secondaryitemidentifiers.md)
   A set of identifiers corresponding to each item other than the primary item in a multiple-item interaction.
-- [var badgeCount: Int](uicontextmenuconfiguration/badgecount.md)
+- [var badgeCount: Int](./uicontextmenuconfiguration/badgecount.md)
   The number of items in a multiple-item interaction.
 ### Specifying the order of menu elements
-- [var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder](uicontextmenuconfiguration/preferredmenuelementorder.md)
+- [var preferredMenuElementOrder: UIContextMenuConfiguration.ElementOrder](./uicontextmenuconfiguration/preferredmenuelementorder.md)
   The preferred menu-element ordering strategy for the menu.
-- [UIContextMenuConfiguration.ElementOrder](uicontextmenuconfiguration/elementorder.md)
+- [UIContextMenuConfiguration.ElementOrder](./uicontextmenuconfiguration/elementorder.md)
   Constants that define the ordering strategy for menu elements in a context menu.
 ### Instance Properties
-- [var allowsTypeSelect: Bool](uicontextmenuconfiguration/allowstypeselect.md)
+- [var allowsTypeSelect: Bool](./uicontextmenuconfiguration/allowstypeselect.md)
   A Boolean value that indicates whether the context menu supports keystroke-based navigation.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [Sendable](../swift/sendable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [Sendable](../Swift/sendable.md)
 
 ## See Also
 
-- [func contextMenuInteraction(UIContextMenuInteraction, configurationForMenuAtLocation: CGPoint) -> UIContextMenuConfiguration?](uicontextmenuinteractiondelegate/contextmenuinteraction(_:configurationformenuatlocation:).md)
+### Providing the preview configuration data
+- [func contextMenuInteraction(UIContextMenuInteraction, configurationForMenuAtLocation: CGPoint) -> UIContextMenuConfiguration?](./uicontextmenuinteractiondelegate/contextmenuinteraction%28_,configurationformenuatlocation%29.md)
   Returns the configuration data to use when previewing the content.
 
 

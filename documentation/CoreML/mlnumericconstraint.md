@@ -1,7 +1,8 @@
 # MLNumericConstraint
 
 **Framework**: Core ML  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 The value limitations of a number.
 
@@ -20,35 +21,40 @@ The value limitations of a number.
 class MLNumericConstraint
 ```
 
+```objc
+@interface MLNumericConstraint : NSObject
+```
+
 ## Topics
 
 ### Numeric Constraints
-- [var minNumber: NSNumber](mlnumericconstraint/minnumber.md)
+- [var minNumber: NSNumber](./mlnumericconstraint/minnumber.md)
   The smallest numerical value allowed by this constraint.
-- [var maxNumber: NSNumber](mlnumericconstraint/maxnumber.md)
+- [var maxNumber: NSNumber](./mlnumericconstraint/maxnumber.md)
   The largest numerical value allowed by this constraint.
-- [var enumeratedNumbers: Set<NSNumber>?](mlnumericconstraint/enumeratednumbers.md)
+- [var enumeratedNumbers: Set<NSNumber>?](./mlnumericconstraint/enumeratednumbers.md)
   A set of the numbers allowed in this constraint.
 ### Initializers
-- [init?(coder: NSCoder)](mlnumericconstraint/init(coder:).md)
+- [init?(coder: NSCoder)](./mlnumericconstraint/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
 
 ## See Also
 
-- [var numericConstraint: MLNumericConstraint?](mlparameterdescription/numericconstraint.md)
+### Constraining numeric values
+- [var numericConstraint: MLNumericConstraint?](./mlparameterdescription/numericconstraint.md)
   The constraints of this paramter description value, if and only if the value is numerical.
 
 

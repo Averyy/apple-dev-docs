@@ -1,7 +1,8 @@
 # id
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier of this anchor.
 
@@ -16,7 +17,8 @@ var id: UUID { get }
 
 ## See Also
 
-- [var description: String](meshanchor/description.md)
+### Inspecting mesh anchors
+- [var description: String](./description.md)
   A textual representation of this anchor.
 
 

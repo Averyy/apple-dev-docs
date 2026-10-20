@@ -1,23 +1,25 @@
 # entryCount
 
 **Framework**: VideoDriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - DriverKit 27.0+
 
 ## Declaration
 
-```swift
+```c
 uint32_t entryCount;
 ```
 
 ## See Also
 
-- [headIndex](iostreambufferqueue/headindex.md)
-- [tailIndex](iostreambufferqueue/tailindex.md)
-- [queue](iostreambufferqueue/queue.md)
-- [IOStreamBufferQueueEntry](iostreambufferqueueentry.md)
+### Accessing queue contents
+- [headIndex](./headindex.md)
+- [tailIndex](./tailindex.md)
+- [queue](./queue.md)
+- [IOStreamBufferQueueEntry](../iostreambufferqueueentry.md)
 
 
 ---

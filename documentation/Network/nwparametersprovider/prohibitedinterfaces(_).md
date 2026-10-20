@@ -2,6 +2,7 @@
 
 **Framework**: Network  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Prohibit certain interfaces from being used to connect, listen, and browse.
@@ -24,6 +25,12 @@ func prohibitedInterfaces(_ interfaces: [NWInterface]) -> Self
 ## Parameters
 
 - `interfaces`: An array of interfaces to prohibit.
+
+## Default Implementations
+
+### NWParametersProvider Implementations
+- [func prohibitedInterfaces([NWInterface]) -> Self](./prohibitedinterfaces%28_%29-99pe0.md)
+  Prohibit certain interfaces from being used to connect, listen, and browse.
 
 
 ---

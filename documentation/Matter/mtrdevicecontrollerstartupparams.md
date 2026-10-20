@@ -1,7 +1,8 @@
 # MTRDeviceControllerStartupParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,51 +19,55 @@
 class MTRDeviceControllerStartupParams
 ```
 
+```objc
+@interface MTRDeviceControllerStartupParams : NSObject
+```
+
 ## Mentions
 
-- [Onboarding a Matter device](onboarding-a-matter-device.md)
+- [Onboarding a Matter device](./onboarding-a-matter-device.md)
 
 ## Topics
 
 ### Initializers
-- [init(ipk: Data, fabricID: NSNumber, nocSigner: any MTRKeypair)](mtrdevicecontrollerstartupparams/init(ipk:fabricid:nocsigner:)-810ix.md)
-- [init(ipk: Data, operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data)](mtrdevicecontrollerstartupparams/init(ipk:operationalkeypair:operationalcertificate:intermediatecertificate:rootcertificate:)-3l4qp.md)
-- [init(operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data, ipk: Data)](mtrdevicecontrollerstartupparams/init(operationalkeypair:operationalcertificate:intermediatecertificate:rootcertificate:ipk:).md)
-- [init(signingKeypair: any MTRKeypair, fabricId: UInt64, ipk: Data)](mtrdevicecontrollerstartupparams/init(signingkeypair:fabricid:ipk:).md)
-- [init(IPK: Data, fabricID: NSNumber, nocSigner: any MTRKeypair)](mtrdevicecontrollerstartupparams/init(ipk:fabricid:nocsigner:)-6tfo5.md)
-- [init(IPK: Data, operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data)](mtrdevicecontrollerstartupparams/init(ipk:operationalkeypair:operationalcertificate:intermediatecertificate:rootcertificate:)-3k8x7.md)
-- [init(signing: any MTRKeypair, fabricId: UInt64, ipk: Data)](mtrdevicecontrollerstartupparams/init(signing:fabricid:ipk:).md)
+- [init(ipk: Data, fabricID: NSNumber, nocSigner: any MTRKeypair)](./mtrdevicecontrollerstartupparams/init%28ipk,fabricid,nocsigner%29-810ix.md)
+- [init(ipk: Data, operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data)](./mtrdevicecontrollerstartupparams/init%28ipk,operationalkeypair,operationalcertificate,intermediatecertificate,rootcertificate%29-3l4qp.md)
+- [init(operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data, ipk: Data)](./mtrdevicecontrollerstartupparams/init%28operationalkeypair,operationalcertificate,intermediatecertificate,rootcertificate,ipk%29.md)
+- [init(signingKeypair: any MTRKeypair, fabricId: UInt64, ipk: Data)](./mtrdevicecontrollerstartupparams/init%28signingkeypair,fabricid,ipk%29.md)
+- [init(IPK: Data, fabricID: NSNumber, nocSigner: any MTRKeypair)](./mtrdevicecontrollerstartupparams/init%28ipk,fabricid,nocsigner%29-6tfo5.md)
+- [init(IPK: Data, operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data)](./mtrdevicecontrollerstartupparams/init%28ipk,operationalkeypair,operationalcertificate,intermediatecertificate,rootcertificate%29-3k8x7.md)
+- [init(signing: any MTRKeypair, fabricId: UInt64, ipk: Data)](./mtrdevicecontrollerstartupparams/init%28signing,fabricid,ipk%29.md)
 ### Instance Properties
-- [var caseAuthenticatedTags: Set<NSNumber>?](mtrdevicecontrollerstartupparams/caseauthenticatedtags.md)
-- [var fabricID: NSNumber](mtrdevicecontrollerstartupparams/fabricid-1cm6z.md)
-- [var fabricId: UInt64](mtrdevicecontrollerstartupparams/fabricid-1cm7v.md)
-- [var intermediateCertificate: Data?](mtrdevicecontrollerstartupparams/intermediatecertificate.md)
-- [var ipk: Data](mtrdevicecontrollerstartupparams/ipk.md)
-- [var nocSigner: (any MTRKeypair)?](mtrdevicecontrollerstartupparams/nocsigner.md)
-- [var nodeID: NSNumber?](mtrdevicecontrollerstartupparams/nodeid-9iwwv.md)
+- [var caseAuthenticatedTags: Set<NSNumber>?](./mtrdevicecontrollerstartupparams/caseauthenticatedtags.md)
+- [var fabricID: NSNumber](./mtrdevicecontrollerstartupparams/fabricid-1cm6z.md)
+- [var fabricId: UInt64](./mtrdevicecontrollerstartupparams/fabricid-1cm7v.md)
+- [var intermediateCertificate: Data?](./mtrdevicecontrollerstartupparams/intermediatecertificate.md)
+- [var ipk: Data](./mtrdevicecontrollerstartupparams/ipk.md)
+- [var nocSigner: (any MTRKeypair)?](./mtrdevicecontrollerstartupparams/nocsigner.md)
+- [var nodeID: NSNumber?](./mtrdevicecontrollerstartupparams/nodeid-9iwwv.md)
   Node id for this controller.
-- [var nodeId: NSNumber?](mtrdevicecontrollerstartupparams/nodeid-9iwxr.md)
-- [var operationalCertificate: Data?](mtrdevicecontrollerstartupparams/operationalcertificate.md)
-- [var operationalCertificateIssuer: (any MTROperationalCertificateIssuer)?](mtrdevicecontrollerstartupparams/operationalcertificateissuer.md)
-- [var operationalCertificateIssuerQueue: dispatch_queue_t?](mtrdevicecontrollerstartupparams/operationalcertificateissuerqueue.md)
-- [var operationalKeypair: (any MTRKeypair)?](mtrdevicecontrollerstartupparams/operationalkeypair.md)
-- [var rootCertificate: Data?](mtrdevicecontrollerstartupparams/rootcertificate.md)
-- [var vendorID: NSNumber?](mtrdevicecontrollerstartupparams/vendorid-8ru1s.md)
-- [var vendorId: NSNumber?](mtrdevicecontrollerstartupparams/vendorid-8ru0w.md)
+- [var nodeId: NSNumber?](./mtrdevicecontrollerstartupparams/nodeid-9iwxr.md)
+- [var operationalCertificate: Data?](./mtrdevicecontrollerstartupparams/operationalcertificate.md)
+- [var operationalCertificateIssuer: (any MTROperationalCertificateIssuer)?](./mtrdevicecontrollerstartupparams/operationalcertificateissuer.md)
+- [var operationalCertificateIssuerQueue: dispatch_queue_t?](./mtrdevicecontrollerstartupparams/operationalcertificateissuerqueue.md)
+- [var operationalKeypair: (any MTRKeypair)?](./mtrdevicecontrollerstartupparams/operationalkeypair.md)
+- [var rootCertificate: Data?](./mtrdevicecontrollerstartupparams/rootcertificate.md)
+- [var vendorID: NSNumber?](./mtrdevicecontrollerstartupparams/vendorid-8ru1s.md)
+- [var vendorId: NSNumber?](./mtrdevicecontrollerstartupparams/vendorid-8ru0w.md)
 ### Default Implementations
-- [MTRDeviceControllerStartupParams Implementations](mtrdevicecontrollerstartupparams/mtrdevicecontrollerstartupparams-implementations.md)
+- [MTRDeviceControllerStartupParams Implementations](./mtrdevicecontrollerstartupparams/mtrdevicecontrollerstartupparams-implementations.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

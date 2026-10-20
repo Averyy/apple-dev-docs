@@ -1,7 +1,8 @@
 # cmGlossy
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 If the bit 1 of the associated mask is `0` then glossy; if `1` then matte.
 

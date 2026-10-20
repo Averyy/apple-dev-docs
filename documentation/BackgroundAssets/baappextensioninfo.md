@@ -1,7 +1,8 @@
 # BAAppExtensionInfo
 
 **Framework**: Background Assets  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -17,34 +18,39 @@
 class BAAppExtensionInfo
 ```
 
+```objc
+@interface BAAppExtensionInfo : NSObject
+```
+
 ## Topics
 
 ### Getting the size of the remaining downloads
-- [var restrictedEssentialDownloadSizeRemaining: Int?](baappextensioninfo/restrictedessentialdownloadsizeremaining-5r8v0.md)
-- [var restrictedDownloadSizeRemaining: Int?](baappextensioninfo/restricteddownloadsizeremaining-4hea4.md)
+- [var restrictedEssentialDownloadSizeRemaining: Int?](./baappextensioninfo/restrictedessentialdownloadsizeremaining-5r8v0.md)
+- [var restrictedDownloadSizeRemaining: Int?](./baappextensioninfo/restricteddownloadsizeremaining-4hea4.md)
 ### Initializers
-- [init?(coder: NSCoder)](baappextensioninfo/init(coder:).md)
+- [init?(coder: NSCoder)](./baappextensioninfo/init%28coder%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func downloads(for: BAContentRequest, manifestURL: URL, extensionInfo: BAAppExtensionInfo) -> Set<BADownload>](badownloaderextension-qwaw/downloads(for:manifesturl:extensioninfo:).md)
-- [enum BAContentRequest](bacontentrequest.md)
+### Checking for asset updates
+- [func downloads(for: BAContentRequest, manifestURL: URL, extensionInfo: BAAppExtensionInfo) -> Set<BADownload>](./badownloaderextension-qwaw/downloads%28for,manifesturl,extensioninfo%29.md)
+- [enum BAContentRequest](./bacontentrequest.md)
   A type that indicates the purpose of a content download request.
 
 

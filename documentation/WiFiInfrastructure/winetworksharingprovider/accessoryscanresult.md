@@ -1,7 +1,8 @@
 # WINetworkSharingProvider.AccessoryScanResult
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An access point that the accessory was able to discover in its Wi-Fi scans.
 
@@ -25,35 +26,36 @@ Provide signal strength as a normalized value between 0.0 (weakest) and 1.0 (str
 ## Topics
 
 ### Getting network definitions
-- [let ssid: WISSID?](winetworksharingprovider/accessoryscanresult/ssid.md)
+- [let ssid: WISSID?](./accessoryscanresult/ssid.md)
   The SSID of the network.
 ### Getting network performance indicators
-- [let signalStrength: Double](winetworksharingprovider/accessoryscanresult/signalstrength.md)
+- [let signalStrength: Double](./accessoryscanresult/signalstrength.md)
   The signal strength the accessory measured for the access point.
 ### Getting network connection state
-- [let isConnected: Bool](winetworksharingprovider/accessoryscanresult/isconnected.md)
+- [let isConnected: Bool](./accessoryscanresult/isconnected.md)
   A Boolean value that indicates whether the accessory currently has a connection to this Wi-Fi access point.
 ### Initializers
-- [init(ssid: WISSID?, signalStrength: Double, isConnected: Bool)](winetworksharingprovider/accessoryscanresult/init(ssid:signalstrength:isconnected:).md)
+- [init(ssid: WISSID?, signalStrength: Double, isConnected: Bool)](./accessoryscanresult/init%28ssid,signalstrength,isconnected%29.md)
   Creates an accessory scan result.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func presentAskToShareUI(scanProvider: ((ASAccessory, WINetworkSharingProvider.AccessoryScanRequest) async -> WINetworkSharingProvider.AccessoryScanResponse?)?) async throws -> WINetworkSharingAskToShareState](winetworksharingprovider/presentasktoshareui(scanprovider:).md)
+### Displaying network selection
+- [func presentAskToShareUI(scanProvider: ((ASAccessory, WINetworkSharingProvider.AccessoryScanRequest) async -> WINetworkSharingProvider.AccessoryScanResponse?)?) async throws -> WINetworkSharingAskToShareState](./presentasktoshareui%28scanprovider%29.md)
   Presents system UI asking people to share available networks with an accessory.
-- [WINetworkSharingProvider.AccessoryScanRequest](winetworksharingprovider/accessoryscanrequest.md)
+- [WINetworkSharingProvider.AccessoryScanRequest](./accessoryscanrequest.md)
   A request for the accessory to scan for available Wi-Fi networks.
-- [WINetworkSharingProvider.AccessoryScanResponse](winetworksharingprovider/accessoryscanresponse.md)
+- [WINetworkSharingProvider.AccessoryScanResponse](./accessoryscanresponse.md)
   A scan response from the accessory containing Wi-Fi scan results, if any.
 
 

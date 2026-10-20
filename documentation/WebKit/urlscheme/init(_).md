@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new `URLScheme` value from a valid scheme, which WebKit does not already handle.
 

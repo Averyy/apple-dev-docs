@@ -1,7 +1,8 @@
 # alertRecoverySuggestionButtonLaunchURL
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The URL that is opened when the user selects the recovery suggestion, if any
 
@@ -12,6 +13,10 @@ The URL that is opened when the user selects the recovery suggestion, if any
 
 ```swift
 var alertRecoverySuggestionButtonLaunchURL: URL? { get }
+```
+
+```objc
+@property (copy, readonly, nullable) NSURL * alertRecoverySuggestionButtonLaunchURL;
 ```
 
 

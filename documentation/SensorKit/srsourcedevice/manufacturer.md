@@ -1,7 +1,8 @@
 # manufacturer
 
 **Framework**: SensorKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 27.0+
@@ -12,6 +13,10 @@
 
 ```swift
 var manufacturer: String? { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly, nullable) NSString * manufacturer;
 ```
 
 #### Discussion

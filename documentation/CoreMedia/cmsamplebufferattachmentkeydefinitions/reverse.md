@@ -1,7 +1,8 @@
 # reverse
 
 **Framework**: Core Media  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that the decoded contents of the sample buffer should be reversed.
 

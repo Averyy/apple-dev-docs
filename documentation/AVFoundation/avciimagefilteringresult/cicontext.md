@@ -1,7 +1,8 @@
 # ciContext
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The core image context used to render the image
 
@@ -21,7 +22,8 @@ let ciContext: CIContext?
 
 ## See Also
 
-- [let resultImage: CIImage](avciimagefilteringresult/resultimage.md)
+### Inspecting the result
+- [let resultImage: CIImage](./resultimage.md)
   Provides the filtered video frame image to AVFoundation for further processing or display.
 
 

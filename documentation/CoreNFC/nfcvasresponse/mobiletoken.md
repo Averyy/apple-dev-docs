@@ -1,7 +1,8 @@
 # mobileToken
 
 **Framework**: Core NFC  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A mobile token value.
 
@@ -14,6 +15,10 @@ A mobile token value.
 
 ```swift
 var mobileToken: Data { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly) NSData * mobileToken;
 ```
 
 

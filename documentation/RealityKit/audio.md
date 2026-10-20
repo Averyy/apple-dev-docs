@@ -1,7 +1,8 @@
 # Audio
 
 **Framework**: RealityKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A namespace for types that are used commonly in audio.
 
@@ -22,37 +23,38 @@ enum Audio
 ## Topics
 
 ### Playing audio resources
-- [static func playAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](audio/playaudio(_:).md)
+- [static func playAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](./audio/playaudio%28_%29.md)
   Prepares and plays multiple audio resources for synchronized playback
-- [static func playAudio([(AudioResource, Entity)], at: AVAudioTime) throws -> AudioPlaybackGroupController](audio/playaudio(_:at:).md)
+- [static func playAudio([(AudioResource, Entity)], at: AVAudioTime) throws -> AudioPlaybackGroupController](./audio/playaudio%28_,at%29.md)
   Prepares and plays multiple audio resources for synchronized playback at a specified time.
-- [static func prepareAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](audio/prepareaudio(_:).md)
+- [static func prepareAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](./audio/prepareaudio%28_%29.md)
   Prepares multiple audio resources for synchronized playback without starting them.
 ### Defining acoustic properties
-- [struct Material](audio/material.md)
+- [struct Material](./audio/material.md)
   A type that describes the acoustic characteristics of a surface.
-- [struct Absorption](audio/absorption.md)
+- [struct Absorption](./audio/absorption.md)
   An object that holds a set of absorption data.
-- [struct Scattering](audio/scattering.md)
+- [struct Scattering](./audio/scattering.md)
   An object that holds a set of scattering data.
 ### Type Aliases
-- [typealias Decibel](audio/decibel.md)
+- [typealias Decibel](./audio/decibel.md)
   The unit for measuring intensity of sound on a logarithmic scale.
-- [typealias GeneratorRenderHandler](audio/generatorrenderhandler.md)
+- [typealias GeneratorRenderHandler](./audio/generatorrenderhandler.md)
   A handler that generates real-time audio.
 ### Enumerations
-- [Audio.Directivity](audio/directivity.md)
+- [Audio.Directivity](./audio/directivity.md)
   The radiation pattern of sound emitted from an entity.
-- [Audio.DistanceAttenuation](audio/distanceattenuation.md)
+- [Audio.DistanceAttenuation](./audio/distanceattenuation.md)
   The different ways that audio intensity diminishes as the distance between the listener and the sound source increases.
 
 ## See Also
 
-- [typealias Decibel](audio/decibel.md)
+### Audio types
+- [typealias Decibel](./audio/decibel.md)
   The unit for measuring intensity of sound on a logarithmic scale.
-- [Audio.Directivity](audio/directivity.md)
+- [Audio.Directivity](./audio/directivity.md)
   The radiation pattern of sound emitted from an entity.
-- [Audio.DistanceAttenuation](audio/distanceattenuation.md)
+- [Audio.DistanceAttenuation](./audio/distanceattenuation.md)
   The different ways that audio intensity diminishes as the distance between the listener and the sound source increases.
 
 

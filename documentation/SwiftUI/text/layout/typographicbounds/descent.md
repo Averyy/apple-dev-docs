@@ -1,7 +1,8 @@
 # descent
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The descent of the element.
 

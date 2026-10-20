@@ -6,23 +6,6 @@ url: https://apple.github.io/coremltools/docs-guides/source/multifunction-models
 
 # Multifunction Models
 
-**
-
-- [.md](../_sources/source/multifunction-models.md)
-- **
-
-.pdf
-
-**
-
-# Multifunction Models
-
- Table of contents 
-
-## Contents
-
-# Multifunction Models
-
 An `mlprogram` Core ML model typically contains a single function, called `main`.
 This is the default form in which a model is constructed, such as when it’s produced via
 the conversion process. Starting with `iOS18`/`macOS15`, you can produce an `mlprogram`
@@ -34,12 +17,18 @@ For example, as illustrated in the following figure, one model may have a featur
 followed by a classifier to produce a classification output. Another model may use the same feature extractor,
 followed by a regressor to produce the regression output.
 
+![Model 1](https://apple.github.io/coremltools/docs-guides/_images/multifunction-flow1.png)
+
+![Model 2](https://apple.github.io/coremltools/docs-guides/_images/multifunction-flow2.png)
+
 Using Core ML Tools, you can merge these models to produce a
 single `.mlpackage` asset, with multiple functions,
 such that the common weights (feature extractor in this case) are shared between those.
 During the process of merging, Core ML Tools deduplicates shared weights by
 calculating the hash of the weight values.
 The merged multifunction model can do both tasks based on the function chosen to run.
+
+![Multifunction model](https://apple.github.io/coremltools/docs-guides/_images/multifunction-combination.png)
 
 ## Why Combine Models?
 
@@ -58,10 +47,16 @@ figures below. Only the parameters in these adapters
 are fine-tuned for a specific task. This is much more efficient than fine-tuning
 the whole base model, which has many more parameters.
 
+![Multifunction adapter 1](https://apple.github.io/coremltools/docs-guides/_images/multifunction-adapter-1.png)
+
+![Multifunction adapter 2](https://apple.github.io/coremltools/docs-guides/_images/multifunction-adapter-2.png)
+
 In this case, you can use a multifunction model to
 capture the multiple variations in a single model.
 A separate function could be defined for each adapter.
 The weights for the base model will be shared.
+
+![Multifunction adapter 3](https://apple.github.io/coremltools/docs-guides/_images/multifunction-adapter-3.png)
 
 For an example, see the “Deploy machine learning and AI models on-device with Core ML”
 [session video](https://developer.apple.com/videos/play/wwdc2024/10161/) in WWDC 2024
@@ -188,8 +183,14 @@ The combined model will share the 72M parameters of
 the base model and only have the additional adapter parameters.
 You can see this in the model sizes:
 
+![Model sizes LoRA toy example](https://apple.github.io/coremltools/docs-guides/_images/multifunction_model_sizes_lora_example.png)
+
 This is how the model interface for a multifunction model
 would show up in the Xcode predictions tab:
+
+![Multifunction adapter 1](https://apple.github.io/coremltools/docs-guides/_images/multifunction_input_output_xcode_adapted_model_1.png)
+
+![Multifunction adapter 2](https://apple.github.io/coremltools/docs-guides/_images/multifunction_input_output_xcode_adapted_model_2.png)
 
 Note
 
@@ -200,5 +201,3 @@ The multifunction model feature is available starting with
 You can specify the `function_name` argument when loading a
 [CompiledMLModel](https://apple.github.io/coremltools/source/coremltools.models.html#compiled-mlmodel)
 as well.
-
-** Contents

@@ -1,7 +1,8 @@
 # font
 
 **Framework**: TVUIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The font for the text.
 
@@ -16,9 +17,10 @@ var font: UIFont { get set }
 
 ## See Also
 
-- [var color: UIColor](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/color.md)
+### Configuring Text Properties
+- [var color: UIColor](./color.md)
   The color of the text.
-- [TVMonogramContentConfiguration.TextProperties.TextTransform](tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform.md)
+- [TVMonogramContentConfiguration.TextProperties.TextTransform](./texttransform.md)
   Constants that specify the transform to apply to the text.
 
 

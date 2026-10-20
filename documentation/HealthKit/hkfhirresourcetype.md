@@ -1,7 +1,8 @@
 # HKFHIRResourceType
 
 **Framework**: HealthKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The FHIR resource types supported in HealthKit.
 
@@ -18,63 +19,68 @@ The FHIR resource types supported in HealthKit.
 struct HKFHIRResourceType
 ```
 
+```c
+typedef NSString * HKFHIRResourceType;
+```
+
 ## Mentions
 
-- [Accessing Health Records](accessing-health-records.md)
+- [Accessing Health Records](./accessing-health-records.md)
 
 ## Topics
 
 ### Resource Types
-- [static let allergyIntolerance: HKFHIRResourceType](hkfhirresourcetype/allergyintolerance.md)
+- [static let allergyIntolerance: HKFHIRResourceType](./hkfhirresourcetype/allergyintolerance.md)
   A type that identifies FHIR resources for allergies and intolerances.
-- [static let condition: HKFHIRResourceType](hkfhirresourcetype/condition.md)
+- [static let condition: HKFHIRResourceType](./hkfhirresourcetype/condition.md)
   A type that identifies FHIR resources for a condition, problem, diagnosis, or other event.
-- [static let diagnosticReport: HKFHIRResourceType](hkfhirresourcetype/diagnosticreport.md)
+- [static let diagnosticReport: HKFHIRResourceType](./hkfhirresourcetype/diagnosticreport.md)
   A type that identifies FHIR resources for findings and interpretation of diagnostic tests.
-- [static let documentReference: HKFHIRResourceType](hkfhirresourcetype/documentreference.md)
+- [static let documentReference: HKFHIRResourceType](./hkfhirresourcetype/documentreference.md)
   A type that identifies FHIR resources for document references.
-- [static let immunization: HKFHIRResourceType](hkfhirresourcetype/immunization.md)
+- [static let immunization: HKFHIRResourceType](./hkfhirresourcetype/immunization.md)
   A type that identifies FHIR resources for the administration of vaccines.
-- [static let medicationOrder: HKFHIRResourceType](hkfhirresourcetype/medicationorder.md)
+- [static let medicationOrder: HKFHIRResourceType](./hkfhirresourcetype/medicationorder.md)
   A type that identifies FHIR resources for prescriptions or other orders for medication.
-- [static let medicationDispense: HKFHIRResourceType](hkfhirresourcetype/medicationdispense.md)
+- [static let medicationDispense: HKFHIRResourceType](./hkfhirresourcetype/medicationdispense.md)
   A type that identifies FHIR resources for the delivery of medication (usually in response to a prescription).
-- [static let medicationStatement: HKFHIRResourceType](hkfhirresourcetype/medicationstatement.md)
+- [static let medicationStatement: HKFHIRResourceType](./hkfhirresourcetype/medicationstatement.md)
   A type that identifies FHIR resources for statements about medication taken by the patient.
-- [static let medicationRequest: HKFHIRResourceType](hkfhirresourcetype/medicationrequest.md)
+- [static let medicationRequest: HKFHIRResourceType](./hkfhirresourcetype/medicationrequest.md)
   A type that identifies FHIR resources for prescriptions or other orders or requests for medication.
-- [static let observation: HKFHIRResourceType](hkfhirresourcetype/observation.md)
+- [static let observation: HKFHIRResourceType](./hkfhirresourcetype/observation.md)
   A type that identifies FHIR resources for medical observations, including lab results and vital signs.
-- [static let procedure: HKFHIRResourceType](hkfhirresourcetype/procedure.md)
+- [static let procedure: HKFHIRResourceType](./hkfhirresourcetype/procedure.md)
   A type that identifies FHIR resources for procedures performed on the patient.
-- [static let coverage: HKFHIRResourceType](hkfhirresourcetype/coverage.md)
+- [static let coverage: HKFHIRResourceType](./hkfhirresourcetype/coverage.md)
   A type that identifies FHIR resources containing information about the user’s insurance coverage.
 ### Initializers
-- [init(rawValue: String)](hkfhirresourcetype/init(rawvalue:).md)
+- [init(rawValue: String)](./hkfhirresourcetype/init%28rawvalue%29.md)
   Returns a new resource type for the provided string.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var identifier: String](hkfhirresource/identifier.md)
+### Accessing FHIR Data
+- [var identifier: String](./hkfhirresource/identifier.md)
   The value from the FHIR resource’s `id` field.
-- [var fhirVersion: HKFHIRVersion](hkfhirresource/fhirversion.md)
+- [var fhirVersion: HKFHIRVersion](./hkfhirresource/fhirversion.md)
   The FHIR version used by this resource.
-- [class HKFHIRVersion](hkfhirversion.md)
+- [class HKFHIRVersion](./hkfhirversion.md)
   The FHIR version.
-- [var resourceType: HKFHIRResourceType](hkfhirresource/resourcetype.md)
+- [var resourceType: HKFHIRResourceType](./hkfhirresource/resourcetype.md)
   The value from the FHIR resource’s `resourceType` field.
-- [var sourceURL: URL?](hkfhirresource/sourceurl.md)
+- [var sourceURL: URL?](./hkfhirresource/sourceurl.md)
   The full URL for the source of the FHIR resource.
-- [var data: Data](hkfhirresource/data.md)
+- [var data: Data](./hkfhirresource/data.md)
   The JSON representation of the FHIR resource.
 
 

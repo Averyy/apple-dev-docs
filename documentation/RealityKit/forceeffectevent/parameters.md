@@ -1,7 +1,8 @@
 # parameters
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Physics body parameters.
 

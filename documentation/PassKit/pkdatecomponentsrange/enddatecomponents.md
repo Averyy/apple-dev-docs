@@ -1,7 +1,8 @@
 # endDateComponents
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The end date and time of the range.
 
@@ -19,9 +20,14 @@ The end date and time of the range.
 var endDateComponents: DateComponents { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSDateComponents * endDateComponents;
+```
+
 ## See Also
 
-- [var startDateComponents: DateComponents](pkdatecomponentsrange/startdatecomponents.md)
+### Reading the Start and End Dates
+- [var startDateComponents: DateComponents](./startdatecomponents.md)
   The start date and time of the range.
 
 

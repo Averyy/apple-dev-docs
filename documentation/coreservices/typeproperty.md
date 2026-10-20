@@ -1,7 +1,8 @@
 # typeProperty
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 Apple event object property.
 

@@ -1,7 +1,8 @@
 # init()
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new environment node object.
 
@@ -17,6 +18,10 @@ Creates a new environment node object.
 
 ```swift
 init()
+```
+
+```objc
+- (instancetype) init;
 ```
 
 

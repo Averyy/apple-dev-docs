@@ -14,315 +14,315 @@ You can review these reports if you have any of these API key roles:
 - `SALES_AND_REPORTS`
 - `FINANCE`
 
-> **Note**: If you share an API key for your developer account with a third party for analyzing or processing your reports, select the SALES_AND_REPORTS role when generating a new key. This role can access to [`Download sales and trends reports`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-salesreports) but can’t access [`Download finance reports`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-financereports) endpoint.
+> **Note**: If you share an API key for your developer account with a third party for analyzing or processing your reports, select the SALES_AND_REPORTS role when generating a new key. This role can access to [`Download sales and trends reports`](../AppStoreConnectAPI/get-v1-salesreports.md) but can’t access [`Download finance reports`](../AppStoreConnectAPI/get-v1-financereports.md) endpoint.
 
-##### Download and Process Reports
+##### Download and process reports
 
-To start receiving reports, use the [`Request Reports`](https://developer.apple.com/documentation/appstoreconnectapi/post-v1-analyticsreportrequests) endpoint in the App Store Connect API. To learn more, see [`Downloading Analytics Reports`](https://developer.apple.com/documentation/appstoreconnectapi/downloading-analytics-reports). After you create your request, use [`Read Report Request Information`](https://developer.apple.com/documentation/appstoreconnectapi/get-v1-analyticsreportrequests-_id_) to poll the list of report instances to check whether new instances are downloadable. Apple does not generate reports until you create a valid Analytics Report Request.
+To start receiving reports, use the [`Request Reports`](../AppStoreConnectAPI/post-v1-analyticsreportrequests.md) endpoint in the App Store Connect API. To learn more, see [Downloading Analytics Reports](../AppStoreConnectAPI/downloading-analytics-reports.md). After you create your request, use [`Read Report Request Information`](../AppStoreConnectAPI/get-v1-analyticsreportrequests-_id_.md) to poll the list of report instances to check whether new instances are downloadable. Apple does not generate reports until you create a valid Analytics Report Request.
 
 Each report *instance* represents a new set of data. Each instance can consist of multiple *segments*, which are physical partitions of one instance, so you need to download all segments for a given instance to get the complete set of data.
 
-Each report instance has a specific granularity: daily, weekly, or monthly. *Daily* instances may contain data for one day or more days. The Date column in the report content shows the day to which the events relate. *Weekly* instances contain data from Monday to Sunday. *Monthly* instances contain data for a full month. To learn more, see [`Data Completeness and Corrections`](data-completeness-corrections.md).
+Each report instance has a specific granularity: daily, weekly, or monthly. *Daily* instances may contain data for one day or more days. The Date column in the report content shows the day to which the events relate. *Weekly* instances contain data from Monday to Sunday. *Monthly* instances contain data for a full month. To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
 > **Note**: For weekly and monthly report instances, the `Date` column represents the first day of the week and month, respectively.
 
-##### Retrieve Missed Reports
+##### Retrieve missed reports
 
-Once you generate a report instance, it’s available for 35 days. After this period, the system automatically deletes report instances. In that event, you are able to initiate a new one-time snapshot request using the [`Request reports`](https://developer.apple.comhttps://developer.apple.com/documentation/appstoreconnectapi/post-v1-analyticsreportrequests) endpoint in App Store Connect API to retrieve data that is no longer available in a daily generated report. This request generates a comprehensive data collection of all available historical reports. You can make a single, one-time snapshot request per month.
+Once you generate a report instance, it’s available for 35 days. After this period, the system automatically deletes report instances. In that event, you are able to initiate a new one-time snapshot request using the [Request reports](../AppStoreConnectAPI/post-v1-analyticsreportrequests.md) endpoint in App Store Connect API to retrieve data that is no longer available in a daily generated report. This request generates a comprehensive data collection of all available historical reports. You can make a single, one-time snapshot request per month.
 
-##### Monitor Future Report Changes
+##### Monitor future report changes
 
 Report column position might change over time. Rely on column names instead of column positions in the report files to ensure smoother schema upgrades. Report values are not case sensitive.
 
 ## Topics
 
 ### Essentials
-- [Data Completeness and Corrections](data-completeness-corrections.md)
+- [Data Completeness and Corrections](./data-completeness-corrections.md)
   Understand how the Analytics Reports API provides complete data sets.
-- [Protecting user privacy in report data](privacy.md)
+- [Protecting user privacy in report data](./privacy.md)
   Understand measures that help protect user privacy.
 ### App Store Engagement
-- [App Store Discovery and Engagement](app-store-discovery-and-engagement.md)
+- [App Store Discovery and Engagement](./app-store-discovery-and-engagement.md)
   Analyze how users interact with your app on the App Store.
-- [App Store Web Preview](app-store-web-preview.md)
+- [App Store Web Preview](./app-store-web-preview.md)
   Analyze how people engage with your app’s product pages and in-app events on web browsers.
-- [App Store Retention Messaging](app-store-retention-messaging.md)
+- [App Store Retention Messaging](./app-store-retention-messaging.md)
   Analyze how users interact with retention messages during the subscription cancellation flow.
 ### App Store Commerce
-- [App Store Downloads](app-download.md)
+- [App Store Downloads](./app-download.md)
   Analyze how many times people download your app on the App Store.
-- [App Store Pre-orders](app-store-pre-order.md)
+- [App Store Pre-orders](./app-store-pre-order.md)
   Analyze details on the number of pre-orders that people place and cancel for your app on the App Store.
-- [App Store Purchases](app-store-purchase.md)
+- [App Store Purchases](./app-store-purchase.md)
   Analyze total revenue generated by your apps on the App Store.
-- [App Store Subscription State](subscription-state.md)
+- [App Store Subscription State](./subscription-state.md)
   Analyze your App Store subscription performance.
-- [App Store Subscription Event](subscription-event.md)
+- [App Store Subscription Event](./subscription-event.md)
   Analyze and track changes throughout your users’ subscription lifecycle.
 ### App Usage
-- [App Clip Usage](app-clip-usage.md)
+- [App Clip Usage](./app-clip-usage.md)
   Analyze how users engage with your App Clips.
-- [App Crashes](app-crashes.md)
+- [App Crashes](./app-crashes.md)
   Review crashes for your App Store apps based on app version and device type.
-- [App Store Installations and Deletions](app-installs.md)
+- [App Store Installations and Deletions](./app-installs.md)
   Analyze details on the number of times users install and delete your apps.
-- [App Store Opt-in](app-store-opt-in.md)
+- [App Store Opt-in](./app-store-opt-in.md)
   Analyze the percentage of first-time app downloaders who choose to share their data with you.
-- [App Sessions](app-sessions.md)
+- [App Sessions](./app-sessions.md)
   Analyze how often people open your App Store apps, and the average session duration.
-- [CarPlay App Usage](carplay-app-usage.md)
+- [CarPlay App Usage](./carplay-app-usage.md)
   Review how people use CarPlay in your app.
-- [Platform App Installs](platform-app-installs.md)
+- [Platform App Installs](./platform-app-installs.md)
   Analyze your app’s install data by date, install type, channel, device, platform version, and territory.
-- [Shortcut App Usage](shortcut-app-usage.md)
+- [Shortcut App Usage](./shortcut-app-usage.md)
   Analyze how often people use a shortcut action in your app.
-- [Shortcuts Actions Usage](shortcuts-actions-usage.md)
+- [Shortcuts Actions Usage](./shortcuts-actions-usage.md)
   Analyze how often people run shortcuts with your app’s actions.
 ### Framework Usage
-- [AccessorySetupKit Accessory Picker Sessions](accessorysetupkit-accessory-picker-sessions.md)
+- [AccessorySetupKit Accessory Picker Sessions](./accessorysetupkit-accessory-picker-sessions.md)
   Analyze how many people use your app to set up accessories by using AccessorySetupKit.
-- [AccessorySetupKit Usage](accessorysetupkit-usage.md)
+- [AccessorySetupKit Usage](./accessorysetupkit-usage.md)
   Analyze how often your app uses AccessorySetupKit.
-- [AirPlay Discovery Sessions](airplay-discovery-sessions.md)
+- [AirPlay Discovery Sessions](./airplay-discovery-sessions.md)
   Review information about AirPlay discovery sessions.
-- [Animoji Stickers Sent](animoji-stickers-sent.md)
+- [Animoji Stickers Sent](./animoji-stickers-sent.md)
   Analyze how many times people use Memoji stickers in your app.
-- [App Added to Focus](app-added-to-focus.md)
+- [App Added to Focus](./app-added-to-focus.md)
   Review information about your app’s relationship to Focus modes.
-- [App Disk Space Usage](app-disk-space-usage.md)
+- [App Disk Space Usage](./app-disk-space-usage.md)
   Analyze your app’s disk space use.
-- [App Extended Launch Usage](app-extended-launch-usage.md)
+- [App Extended Launch Usage](./app-extended-launch-usage.md)
   Understand your app’s use of extended launch.
-- [App HangTracer Usage](app-hangtracer-usage.md)
+- [App HangTracer Usage](./app-hangtracer-usage.md)
   Analyze how much time your app spends monitoring foreground UI responsiveness through the HangTracer Framework.
-- [App Runtime Usage](app-runtime-usage.md)
+- [App Runtime Usage](./app-runtime-usage.md)
   Analyze how often your app executes specific symbols of different dynamic libraries.
-- [App Sessions Context](app-sessions-context.md)
+- [App Sessions Context](./app-sessions-context.md)
   Analyze how many people use your app and for how long.
-- [Application Preferred Language Settings](application-preferred-language-settings.md)
+- [Application Preferred Language Settings](./application-preferred-language-settings.md)
   Review how people use language preference settings in your app.
-- [ARKit ARSession Duration](arkit-arsession-duration.md)
+- [ARKit ARSession Duration](./arkit-arsession-duration.md)
   Review information  about ARKit ARSession duration.
-- [ARKit ARSession Failures](arkit-arsession-failures.md)
+- [ARKit ARSession Failures](./arkit-arsession-failures.md)
   Analyze details about ARKit ARSession failures.
-- [ARKit Capture Frame Rate Throttling](arkit-capture-frame-rate-throttling.md)
+- [ARKit Capture Frame Rate Throttling](./arkit-capture-frame-rate-throttling.md)
   Analyze how long it takes for ARKit to throttle the camera frame rate.
-- [ARKit Collaborative Session Features](arkit-collaborative-session-features.md)
+- [ARKit Collaborative Session Features](./arkit-collaborative-session-features.md)
   Review how your app uses ARKit collaborative session features.
-- [ARKit Face Tracking](arkit-face-tracking.md)
+- [ARKit Face Tracking](./arkit-face-tracking.md)
   Analyze how often your app uses ARKit face tracking.
-- [ARKit Video Formats](arkit-video-formats.md)
+- [ARKit Video Formats](./arkit-video-formats.md)
   Review information  about ARKit video formats and high-resolution frames.
-- [ARKit World Tracking](arkit-world-tracking.md)
+- [ARKit World Tracking](./arkit-world-tracking.md)
   Review the configured settings for world tracking in your app.
-- [ARKit World Tracking Image Detection](arkit-world-tracking-image-detection.md)
+- [ARKit World Tracking Image Detection](./arkit-world-tracking-image-detection.md)
   Analyze the number of images detected in ARKit world tracking.
-- [Audio Input Muting](audio-input-muting.md)
+- [Audio Input Muting](./audio-input-muting.md)
   Analyze details about audio-input muting and unmuting gestures during a call with conferencing apps.
-- [Audio Input Route and Duration and Call Mode](audio-input-route-and-duration-and-call-mode.md)
+- [Audio Input Route and Duration and Call Mode](./audio-input-route-and-duration-and-call-mode.md)
   Review how your app uses audio session inputs.
-- [Audio Session Audio Unit Usage](audio-session-audio-unit-usage.md)
+- [Audio Session Audio Unit Usage](./audio-session-audio-unit-usage.md)
   Analyze your app’s audio unit use.
-- [Audio Volume Levels and Duration](audio-volume-levels-and-duration.md)
+- [Audio Volume Levels and Duration](./audio-volume-levels-and-duration.md)
   Review how your app uses volume and duration for output audio.
-- [Automatic Speech Recognition Usage](automatic-speech-recognition-usage.md)
+- [Automatic Speech Recognition Usage](./automatic-speech-recognition-usage.md)
   Analyze how often people use dictation or Siri in your app.
-- [Bluetooth LE Advertising](bluetooth-le-advertising.md)
+- [Bluetooth LE Advertising](./bluetooth-le-advertising.md)
   Review how your app uses Bluetooth Low Energy (LE) advertising.
-- [Bluetooth LE Connection Results](bluetooth-le-connection-results.md)
+- [Bluetooth LE Connection Results](./bluetooth-le-connection-results.md)
   Analyze how often your app uses Low Energy (LE) connections and the connection results.
-- [Bluetooth LE Connections Per App](bluetooth-le-connections-per-app.md)
+- [Bluetooth LE Connections Per App](./bluetooth-le-connections-per-app.md)
   Analyze the number of completed Bluetooth Low Energy (LE) connections for your app.
-- [Bluetooth LE Disconnection Results](bluetooth-le-disconnection-results.md)
+- [Bluetooth LE Disconnection Results](./bluetooth-le-disconnection-results.md)
   Review Low Energy (LE) disconnections for your app.
-- [Bluetooth LE Scans](bluetooth-le-scans.md)
+- [Bluetooth LE Scans](./bluetooth-le-scans.md)
   Review how your app uses Bluetooth Low Energy (LE) scans.
-- [Bluetooth LE Sessions](bluetooth-le-sessions.md)
+- [Bluetooth LE Sessions](./bluetooth-le-sessions.md)
   Analyze how often your app uses Bluetooth Low Energy (LE) connections.
-- [Browser Choice Screen Engagement (iOS versions before 18.2)](browser-choice-screen-engagement.md)
+- [Browser Choice Screen Engagement (iOS versions before 18.2)](./browser-choice-screen-engagement.md)
   Measure how often your web browser app is being selected as the default from the browser choice screen  on iOS.
-- [Browser Choice Screen Selection](browser-choice-screen-selection.md)
+- [Browser Choice Screen Selection](./browser-choice-screen-selection.md)
   This report details percentage of devices that had your web browser application selected as default from the Browser Choice screen.
-- [Call Services and Call Performance](call-services-and-call-performance.md)
+- [Call Services and Call Performance](./call-services-and-call-performance.md)
   Review your app’s use of call services and call performance.
-- [CarPlay Navigation](carplay-navigation.md)
+- [CarPlay Navigation](./carplay-navigation.md)
   Analyze how often people start route-guidance sessions in your app.
-- [Collaboration Message Usage](collaboration-message-usage.md)
+- [Collaboration Message Usage](./collaboration-message-usage.md)
   Analyze how often people use collaboration messages in your app.
-- [Core Location Authorization Results](core-location-authorization-results.md)
+- [Core Location Authorization Results](./core-location-authorization-results.md)
   Review authorizations that people grant as a result of requests from your app.
-- [Core Location Geofencing](core-location-geofencing.md)
+- [Core Location Geofencing](./core-location-geofencing.md)
   Review how your app uses geo fences.
-- [CRABS-Based Video Playback Usage](crabs-based-video-playback-usage.md)
+- [CRABS-Based Video Playback Usage](./crabs-based-video-playback-usage.md)
   Analyze how often your app uses CRABS video playback or video playback that uses the CRABS protocol.
-- [Custom Language Model Builds Started](custom-language-model-builds-started.md)
+- [Custom Language Model Builds Started](./custom-language-model-builds-started.md)
   Analyze how often your app triggers a rebuild of custom language models.
-- [Customized Transcription Requests](customized-transcription-requests.md)
+- [Customized Transcription Requests](./customized-transcription-requests.md)
   Analyze transcription request use of custom language models.
-- [Default Browser Usage Rate](default-browser-usage-rate.md)
+- [Default Browser Usage Rate](./default-browser-usage-rate.md)
   Review percentage of devices where your browser app is set as the default web browser.
-- [DockKit App Usage](dockkit-app-usage.md)
+- [DockKit App Usage](./dockkit-app-usage.md)
   Review how your application uses DockKit accessories.
-- [Dynamic Island Layout Changes](dynamic-island-layout-changes.md)
+- [Dynamic Island Layout Changes](./dynamic-island-layout-changes.md)
   Analyze changes in Dynamic Island layout state.
-- [Face-Driven Auto Exposure and Auto Focus Usage](face-driven-auto-exposure-and-auto-focus-usage.md)
+- [Face-Driven Auto Exposure and Auto Focus Usage](./face-driven-auto-exposure-and-auto-focus-usage.md)
   Analyze how people use face-driven auto exposure (AE) and auto focus (AF) in your app.
-- [File-Based Video Playback Usage](file-based-video-playback-usage.md)
+- [File-Based Video Playback Usage](./file-based-video-playback-usage.md)
   Analyze how often your app uses file playback or playback that occurs on the local file system.
-- [File-System Events API Usage](file-system-events-api-usage.md)
+- [File-System Events API Usage](./file-system-events-api-usage.md)
   Analyze how many file-system events resources your app uses.
-- [Flashlight Usage](flashlight-usage.md)
+- [Flashlight Usage](./flashlight-usage.md)
   Review information about flashlight state.
-- [Game Controller Haptics Engine Creation](game-controller-haptics-engine-creation.md)
+- [Game Controller Haptics Engine Creation](./game-controller-haptics-engine-creation.md)
   Analyze how your app uses haptic localities and which controllers it uses.
-- [Game Controller Sessions](game-controller-sessions.md)
+- [Game Controller Sessions](./game-controller-sessions.md)
   Analyze how often and how long people are in game-controller sessions in your app.
-- [Haptics Engine Usage](haptics-engine-usage.md)
+- [Haptics Engine Usage](./haptics-engine-usage.md)
   Review how often your app plays haptics.
-- [Home Screen Widget Installs](home-screen-widget-installs.md)
+- [Home Screen Widget Installs](./home-screen-widget-installs.md)
   Analyze how often people add your widget to their Home Screens.
-- [Home Screen Widget Rotations](home-screen-widget-rotations.md)
+- [Home Screen Widget Rotations](./home-screen-widget-rotations.md)
   Analyze how often your app’s widget rotates to the front of a Smart Stack.
-- [Home Screen Widget Usage](home-screen-widget-usage.md)
+- [Home Screen Widget Usage](./home-screen-widget-usage.md)
   Analyze how many people are interacting with your Widget.
-- [Home Screen Widgets](home-screen-widgets.md)
+- [Home Screen Widgets](./home-screen-widgets.md)
   Analyze when the system adds your app widget to a default Smart Stack on the Home Screen.
-- [HTTP Live Streaming Playback Count](http-live-streaming-playback-count.md)
+- [HTTP Live Streaming Playback Count](./http-live-streaming-playback-count.md)
   Review your app’s use of HTTP Live Streaming (HLS) assets in AVFoundation APIs.
-- [HTTP Live Streaming Video Playback Usage](http-live-streaming-video-playback-usage.md)
+- [HTTP Live Streaming Video Playback Usage](./http-live-streaming-video-playback-usage.md)
   Review information about how your app uses HTTP live streaming (HLS) video playback or video playback that uses the HLS protocol.
-- [iBeacon Add Region Usage](ibeacon-add-region-usage.md)
+- [iBeacon Add Region Usage](./ibeacon-add-region-usage.md)
   Analyze how your app uses the iBeacon Add Region API.
-- [iBeacon Ranging Usage](ibeacon-ranging-usage.md)
+- [iBeacon Ranging Usage](./ibeacon-ranging-usage.md)
   Review information about how your app uses the iBeacon Ranging API.
-- [iBeacon Stop Monitoring for Region Usage](ibeacon-stop-monitoring-for-region-usage.md)
+- [iBeacon Stop Monitoring for Region Usage](./ibeacon-stop-monitoring-for-region-usage.md)
   Analyze how frequently your app uses the iBeacon Stop Monitoring for Region API.
-- [Keyboard Dictation Usage](keyboard-dictation-usage.md)
+- [Keyboard Dictation Usage](./keyboard-dictation-usage.md)
   Analyze how people use keyboard dictation in your app.
-- [Live Activity Use](live-activity-use.md)
+- [Live Activity Use](./live-activity-use.md)
   Review how your app uses Live Activity.
-- [Load CoreML Models Metrics](load-coreml-models-metrics.md)
+- [Load CoreML Models Metrics](./load-coreml-models-metrics.md)
   Review your app’s use of Core ML models.
-- [Local Network Privacy](local-network-privacy.md)
+- [Local Network Privacy](./local-network-privacy.md)
   Analyze results of the Local Network Privacy prompt.
-- [Location Sessions](location-sessions.md)
+- [Location Sessions](./location-sessions.md)
   Review how your app uses Core Location APIs.
-- [Lock Screen Widget Configuration](lock-screen-widget-configuration.md)
+- [Lock Screen Widget Configuration](./lock-screen-widget-configuration.md)
   Analyze how often people configure your widgets on the Lock Screen.
-- [Metal Command Queues](metal-command-queues.md)
+- [Metal Command Queues](./metal-command-queues.md)
   Review your app’s use of Metal Command Queues.
-- [Mode Activity Notifications](mode-activity-notifications.md)
+- [Mode Activity Notifications](./mode-activity-notifications.md)
   Review information about how users resolve notifications in your app.
-- [Multiple Game Controllers Usage](multiple-game-controllers-usage.md)
+- [Multiple Game Controllers Usage](./multiple-game-controllers-usage.md)
   Review how people using your app use multiple game controllers.
-- [Nearby Interaction Sessions](nearby-interaction-sessions.md)
+- [Nearby Interaction Sessions](./nearby-interaction-sessions.md)
   Analyze how often your app starts an Ultra Wideband (UWB) ranging session through Nearby Interaction.
-- [Notification Summary Engagement](notification-summary-engagement.md)
+- [Notification Summary Engagement](./notification-summary-engagement.md)
   Analyze how often people engage with notification summaries in your app.
-- [Photo Capture Usage](photo-capture-usage.md)
+- [Photo Capture Usage](./photo-capture-usage.md)
   Analyze how your app uses Photo capture in photos.
-- [Photogrammetry ObjectCaptureSession API Usage](photogrammetry-objectcapturesession-api-usage.md)
+- [Photogrammetry ObjectCaptureSession API Usage](./photogrammetry-objectcapturesession-api-usage.md)
   Review how often your app uses object capture for photogrammetry.
-- [PhotogrammetrySession API Usage](photogrammetrysession-api-usage.md)
+- [PhotogrammetrySession API Usage](./photogrammetrysession-api-usage.md)
   Review how often your app uses object modeling for photogrammetry.
-- [PhotoKit Imports](photokit-imports.md)
+- [PhotoKit Imports](./photokit-imports.md)
   Review how your app imports PhotoKit assets.
-- [Photos Library Access](photos-library-access.md)
+- [Photos Library Access](./photos-library-access.md)
   Review what type of Photos Library Access people grant in your app.
-- [Photos Picker](photos-picker.md)
+- [Photos Picker](./photos-picker.md)
   Analyze how people use Photos in your app.
-- [Photos Sharing](photos-sharing.md)
+- [Photos Sharing](./photos-sharing.md)
   Analyze how often people share Photos in your app.
-- [ProRes Video Usage](prores-video-usage.md)
+- [ProRes Video Usage](./prores-video-usage.md)
   Review how people use ProRes videos in your app.
-- [Reminders Usage](reminders-usage.md)
+- [Reminders Usage](./reminders-usage.md)
   Analyze how often your app interacts with system reminders.
-- [RoomPlan Usage](roomplan-usage.md)
+- [RoomPlan Usage](./roomplan-usage.md)
   Review how people use RoomPlan in your app.
-- [Safari Extensions Enablement](safari-extensions-enablement.md)
+- [Safari Extensions Enablement](./safari-extensions-enablement.md)
   Analyze how often people enable your Safari extension.
-- [Safari Extensions Usage](safari-extensions-usage.md)
+- [Safari Extensions Usage](./safari-extensions-usage.md)
   Review how people use your Safari extension.
-- [Shared With You Content Engagement](shared-with-you-content-engagement.md)
+- [Shared With You Content Engagement](./shared-with-you-content-engagement.md)
   Review information about people engaging with Shared with You content in your app.
-- [SharePlay Usage by Activity Type](shareplay-usage-by-activity-type.md)
+- [SharePlay Usage by Activity Type](./shareplay-usage-by-activity-type.md)
   Review how people use SharePlay in your app.
-- [ShazamKit Usage](shazamkit-usage.md)
+- [ShazamKit Usage](./shazamkit-usage.md)
   Analyze how your app utilizes ShazamKit.
-- [Spatial Audio Usage](spatial-audio-usage.md)
+- [Spatial Audio Usage](./spatial-audio-usage.md)
   Analyze changes in spatial audio modes.
-- [Speech Framework Transcription Request Audio Duration](speech-framework-transcription-request-audio-duration.md)
+- [Speech Framework Transcription Request Audio Duration](./speech-framework-transcription-request-audio-duration.md)
   Analyze the distribution of audio duration for transcription requests in your app.
-- [Speech Framework Transcription Requests](speech-framework-transcription-requests.md)
+- [Speech Framework Transcription Requests](./speech-framework-transcription-requests.md)
   Review transcription requests in your app.
-- [Text-Input Actions](text-input-actions.md)
+- [Text-Input Actions](./text-input-actions.md)
   Review information on text-input actions.
-- [Translation Request Usage](translation-request-usage.md)
+- [Translation Request Usage](./translation-request-usage.md)
   Review information about how people use speech-to-text translation in your app.
-- [Verify With Wallet Document Request Availability](verify-with-wallet-document-request-availability.md)
+- [Verify With Wallet Document Request Availability](./verify-with-wallet-document-request-availability.md)
   Review how your app uses identity and authorization APIs to check document request availability
-- [Verify with Wallet Document Requests](verify-with-wallet-document-requests.md)
+- [Verify with Wallet Document Requests](./verify-with-wallet-document-requests.md)
   Review how your app uses identity and authorization APIs.
-- [Video Duration Information](video-duration-information.md)
+- [Video Duration Information](./video-duration-information.md)
   Review information about video duration.
-- [Video PiP Duration](video-pip-duration.md)
+- [Video PiP Duration](./video-pip-duration.md)
   Review the duration of time your app uses Picture in Picture (PiP).
-- [Video Streaming Duration](video-streaming-duration.md)
+- [Video Streaming Duration](./video-streaming-duration.md)
   Review how people use video streaming in your app.
-- [VisionKit Data Detectors](visionkit-data-detectors.md)
+- [VisionKit Data Detectors](./visionkit-data-detectors.md)
   Review your app’s use of data detector invocation for VisionKit.
-- [VisionKit Image Analysis](visionkit-image-analysis.md)
+- [VisionKit Image Analysis](./visionkit-image-analysis.md)
   Analyze VisionKit analysis requests on images.
-- [VisionKit Live Text Usage](visionkit-live-text-usage.md)
+- [VisionKit Live Text Usage](./visionkit-live-text-usage.md)
   Review information about how people interact with Live Text.
-- [VisionKit Sessions](visionkit-sessions.md)
+- [VisionKit Sessions](./visionkit-sessions.md)
   Review VisionKit sessions in your app.
-- [Wi-Fi Known Network Modifications](wi-fi-known-network-modifications.md)
+- [Wi-Fi Known Network Modifications](./wi-fi-known-network-modifications.md)
   Analyze details about people adding and removing known networks by using Wi-Fi manager in your app.
 ### Performance
-- [AirPlay Errors](airplay-errors.md)
+- [AirPlay Errors](./airplay-errors.md)
   Analyze AirPlay errors in your apps.
-- [AirPlay Performance](airplay-performance.md)
+- [AirPlay Performance](./airplay-performance.md)
   Review AirPlay performance in your apps.
-- [App Crashes Expanded](app-crashes-expanded.md)
+- [App Crashes Expanded](./app-crashes-expanded.md)
   Analyze the rate at which your app crashes.
-- [App Installs Performance](app-installs-performance.md)
+- [App Installs Performance](./app-installs-performance.md)
   Analyze details about installation success and failure rates for your apps.
-- [App Neural Footprint](app-neural-footprint.md)
+- [App Neural Footprint](./app-neural-footprint.md)
   Analyze how much memory your process induces the Apple Neural Engine to wire down on your process’s behalf.
-- [App Storage Reads and Writes](app-storage-reads-and-writes.md)
+- [App Storage Reads and Writes](./app-storage-reads-and-writes.md)
   Analyze how often your app uses disk reads and writes.
-- [Audio Overloads](audio-overloads.md)
+- [Audio Overloads](./audio-overloads.md)
   Analyze how many audio glitches people experience in your app.
-- [Bluetooth LE Session Duration](bluetooth-le-session-duration.md)
+- [Bluetooth LE Session Duration](./bluetooth-le-session-duration.md)
   Analyze how long your app uses Bluetooth Low Energy (LE) connections.
-- [Bluetooth System Wakes](bluetooth-system-wakes.md)
+- [Bluetooth System Wakes](./bluetooth-system-wakes.md)
   Analyze details about bluetooth system wakes that your app causes.
-- [CAMetalLayer Performance](cametallayer-performance.md)
+- [CAMetalLayer Performance](./cametallayer-performance.md)
   Review CAMetalLayer metadata and performance in your app.
-- [Cellular Plan Provisioning](cellular-plan-provisioning.md)
+- [Cellular Plan Provisioning](./cellular-plan-provisioning.md)
   Analyze how often people use your app for eSim install and the success rate.
-- [Custom Language Model Builds Failed](custom-language-model-builds-failed.md)
+- [Custom Language Model Builds Failed](./custom-language-model-builds-failed.md)
   Analyze how often your app-triggered rebuild of a custom language model failed.
-- [Display Power Information](display-power-information.md)
+- [Display Power Information](./display-power-information.md)
   Review your app’s impact on display pixel attributes.
-- [Embedding Generation](embedding-generation.md)
+- [Embedding Generation](./embedding-generation.md)
   Analyze details about embedding generation throughput in your app.
-- [HTTP Live Streaming Playback Errors](http-live-streaming-playback-errors.md)
+- [HTTP Live Streaming Playback Errors](./http-live-streaming-playback-errors.md)
   Analyze playback errors that your app receives.
-- [Launch Image Over Memory Limit](launch-image-over-memory-limit.md)
+- [Launch Image Over Memory Limit](./launch-image-over-memory-limit.md)
   Analyze how often your app fails to load because it’s over the memory limit.
-- [Media Device Extension Errors](media-device-extension-errors.md)
+- [Media Device Extension Errors](./media-device-extension-errors.md)
   Analyze Media Device Extension errors in your apps.
-- [Media Device Extension Performance](media-device-extension-performance.md)
+- [Media Device Extension Performance](./media-device-extension-performance.md)
   Review Media Device Extension performance in your apps.
-- [Networking Connection Activity](networking-connection-activity.md)
+- [Networking Connection Activity](./networking-connection-activity.md)
   Review how your app uses network connections.
-- [Spotlight Query Performance](spotlight-query-performance.md)
+- [Spotlight Query Performance](./spotlight-query-performance.md)
   Review how your app uses Spotlight queries.
-- [Streaming Downloads Performance](streaming-downloads-performance.md)
+- [Streaming Downloads Performance](./streaming-downloads-performance.md)
   Review download performance when using the AVAssetDownloadTask APIs in your apps.
-- [Streaming Playback Performance](streaming-playback-performance.md)
+- [Streaming Playback Performance](./streaming-playback-performance.md)
   Review playback performance when using the AVPlayerItem APIs in your apps.
 
 

@@ -1,7 +1,8 @@
 # closeOnExec
 
 **Framework**: System  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Indicates that executing a program closes the file.
 

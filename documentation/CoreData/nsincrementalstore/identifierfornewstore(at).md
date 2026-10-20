@@ -1,7 +1,8 @@
 # identifierForNewStore(at:)
 
 **Framework**: Core Data  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the identifier for the store at a given URL.
 
@@ -10,7 +11,7 @@ Returns the identifier for the store at a given URL.
 - iPadOS 5.0+
 - Mac Catalyst 13.1+
 - macOS 10.7+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 - watchOS 2.0+
 
@@ -18,6 +19,10 @@ Returns the identifier for the store at a given URL.
 
 ```swift
 class func identifierForNewStore(at storeURL: URL) -> Any
+```
+
+```objc
++ (id) identifierForNewStoreAtURL:(NSURL *) storeURL;
 ```
 
 #### Return Value
@@ -30,7 +35,8 @@ The identifier for the store at `storeURL`.
 
 ## See Also
 
-- [func loadMetadata() throws](nsincrementalstore/loadmetadata.md)
+### Accessing Metadata
+- [func loadMetadata() throws](./loadmetadata%28%29.md)
   Loads the metadata for the store.
 
 

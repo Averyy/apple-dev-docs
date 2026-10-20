@@ -1,7 +1,8 @@
 # viewWillDisappear()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 26.0+
@@ -10,6 +11,10 @@
 
 ```swift
 func viewWillDisappear()
+```
+
+```objc
+- (void) viewWillDisappear;
 ```
 
 

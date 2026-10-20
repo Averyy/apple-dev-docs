@@ -1,7 +1,8 @@
 # StringFromIntResolver
 
 **Framework**: App Intents  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A resolver that converts one or more integers into one or more strings.
 
@@ -11,7 +12,7 @@ A resolver that converts one or more integers into one or more strings.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -23,17 +24,18 @@ struct StringFromIntResolver<Input, Output> where Input : _IntentValue, Output :
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Resolver](resolver.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [Resolver](./resolver.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct AttributedStringFromStringResolver](attributedstringfromstringresolver.md)
+### String resolution
+- [struct AttributedStringFromStringResolver](./attributedstringfromstringresolver.md)
   A resolver that converts a string into an attributed string.
-- [struct StringFromDoubleResolver](stringfromdoubleresolver.md)
+- [struct StringFromDoubleResolver](./stringfromdoubleresolver.md)
   A resolver that converts a double into a string.
 
 

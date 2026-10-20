@@ -1,7 +1,8 @@
 # backgroundColor
 
 **Framework**: CarPlay  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The background color of the overlay.
 
@@ -14,6 +15,10 @@ The background color of the overlay.
 
 ```swift
 var backgroundColor: UIColor? { get }
+```
+
+```objc
+@property (nonatomic, strong, readonly, nullable) UIColor * backgroundColor;
 ```
 
 

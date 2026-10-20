@@ -1,7 +1,8 @@
 # Read a location
 
 **Framework**: Roster API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Returns a specific location in an Apple School Manager organization.
 
@@ -16,7 +17,7 @@ Access to the `locations` resource requires authorization to either the `edu.use
 
 **Request**:
 
-```None
+```
 curl "https://api-school.apple.com/rosterapi/v1/locations/1234" \
         -H "Authorization: Bearer ${TOKEN}"
 
@@ -41,15 +42,27 @@ curl "https://api-school.apple.com/rosterapi/v1/locations/1234" \
 
 ## Parameters
 
-- `locationId` (string) *(required)*: The identifier from the class. Use the `id` field from the [`Location`](location.md) object.
+### Path Parameters
+
+- `locationId` (string) *(required)*: The identifier from the class. Use the `id` field from the [`Location`](./location.md) object.
+
+## Responses
+
+- `200` OK (`Location`, `application/json`): The request was successful.
+- `401` Unauthorized: The access token was invalid.
+- `403` Forbidden: You don’t have permission to access the requested location.
+- `404` Not Found: The server didn’t find a location with the given `locationId` in the organization.
+- `429`: The client made too many requests. The response includes an `X-Retry-After` header that indicates the number of seconds to wait before making another request.
+- `500` Internal Server Error: The server encountered an internal error.
 
 ## See Also
 
-- [object Location](location.md)
+### Information about locations
+- [object Location](./location.md)
   A location in an Apple School Manager organization.
-- [List locations](returns-a-list-of-locations-for-an-apple-school-manager-organization.md)
+- [List locations](./returns-a-list-of-locations-for-an-apple-school-manager-organization.md)
   Returns a list of locations in an Apple School Manager organization.
-- [object Locations](locations.md)
+- [object Locations](./locations.md)
   A list of locations, with a token for pagination.
 
 

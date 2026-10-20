@@ -1,7 +1,8 @@
 # platform
 
 **Framework**: MetricKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the operating system platform (e.g., “iPhone OS”).
 

@@ -1,7 +1,8 @@
 # pauseTimer()
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Pause the timer if it is active.
 
@@ -16,6 +17,10 @@ Pause the timer if it is active.
 
 ```swift
 func pauseTimer()
+```
+
+```objc
+- (void) pauseTimer;
 ```
 
 

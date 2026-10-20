@@ -1,18 +1,19 @@
 # hasDerivedSubTokensMask
 
 **Framework**: Core Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Compound token which may contain derived subtokens.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,21 +21,26 @@ Compound token which may contain derived subtokens.
 static var hasDerivedSubTokensMask: CFStringTokenizerTokenType { get }
 ```
 
+```c
+kCFStringTokenizerTokenHasDerivedSubTokensMask
+```
+
 #### Discussion
 
-You can obtain subtokens and derived subtokens by calling [`CFStringTokenizerGetCurrentSubTokens(_:_:_:_:)`](cfstringtokenizergetcurrentsubtokens(_:_:_:_:).md).
+You can obtain subtokens and derived subtokens by calling [`CFStringTokenizerGetCurrentSubTokens(_:_:_:_:)`](../cfstringtokenizergetcurrentsubtokens%28_,_,_,_%29.md).
 
 ## See Also
 
-- [static var normal: CFStringTokenizerTokenType](cfstringtokenizertokentype/normal.md)
+### Constants
+- [static var normal: CFStringTokenizerTokenType](./normal.md)
   Has a normal token.
-- [static var hasSubTokensMask: CFStringTokenizerTokenType](cfstringtokenizertokentype/hassubtokensmask.md)
+- [static var hasSubTokensMask: CFStringTokenizerTokenType](./hassubtokensmask.md)
   Compound token which may contain subtokens but with no derived subtokens.
-- [static var hasHasNumbersMask: CFStringTokenizerTokenType](cfstringtokenizertokentype/hashasnumbersmask.md)
+- [static var hasHasNumbersMask: CFStringTokenizerTokenType](./hashasnumbersmask.md)
   Appears to contain a number.
-- [static var hasNonLettersMask: CFStringTokenizerTokenType](cfstringtokenizertokentype/hasnonlettersmask.md)
+- [static var hasNonLettersMask: CFStringTokenizerTokenType](./hasnonlettersmask.md)
   Contains punctuation, symbols, and so on.
-- [static var isCJWordMask: CFStringTokenizerTokenType](cfstringtokenizertokentype/iscjwordmask.md)
+- [static var isCJWordMask: CFStringTokenizerTokenType](./iscjwordmask.md)
   Contains kana and/or ideographs.
 
 

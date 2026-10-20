@@ -1,7 +1,8 @@
 # windows
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The list of current active scenes
 

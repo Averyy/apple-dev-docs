@@ -1,7 +1,8 @@
 # init(double:)
 
 **Framework**: Core ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a feature value that contains a double.
 
@@ -20,13 +21,18 @@ Creates a feature value that contains a double.
 convenience init(double value: Double)
 ```
 
+```objc
++ (instancetype) featureValueWithDouble:(double) value;
+```
+
 ## Parameters
 
 - `value`: A double precision floating point value.
 
 ## See Also
 
-- [convenience init(int64: Int64)](mlfeaturevalue/init(int64:).md)
+### Creating numeric feature values
+- [convenience init(int64: Int64)](./init%28int64%29.md)
   Creates a feature value that contains an integer.
 
 

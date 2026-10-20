@@ -1,7 +1,8 @@
 # CALayer.DynamicRange
 
 **Framework**: Core Animation  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -17,38 +18,43 @@
 struct DynamicRange
 ```
 
+```c
+typedef NSString * CADynamicRange;
+```
+
 ## Topics
 
 ### Constants
-- [static let automatic: CALayer.DynamicRange](calayer/dynamicrange/automatic.md)
-- [static let standard: CALayer.DynamicRange](calayer/dynamicrange/standard.md)
-- [static let constrainedHigh: CALayer.DynamicRange](calayer/dynamicrange/constrainedhigh.md)
-- [static let high: CALayer.DynamicRange](calayer/dynamicrange/high.md)
+- [static let automatic: CALayer.DynamicRange](./dynamicrange/automatic.md)
+- [static let standard: CALayer.DynamicRange](./dynamicrange/standard.md)
+- [static let constrainedHigh: CALayer.DynamicRange](./dynamicrange/constrainedhigh.md)
+- [static let high: CALayer.DynamicRange](./dynamicrange/high.md)
 ### Initializers
-- [init(rawValue: String)](calayer/dynamicrange/init(rawvalue:).md)
+- [init(rawValue: String)](./dynamicrange/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [struct CAAutoresizingMask](caautoresizingmask.md)
-  These constants are used by the [`autoresizingMask`](calayer/autoresizingmask.md) property.
-- [Action Identifiers](action-identifiers.md)
-  These constants are the predefined action identifiers used by [`action(forKey:)`](calayer/action(forkey:).md), [`add(_:forKey:)`](calayer/add(_:forkey:).md), [`defaultAction(forKey:)`](calayer/defaultaction(forkey:).md), [`removeAnimation(forKey:)`](calayer/removeanimation(forkey:).md), Layer Filters, and the [`CAAction`](caaction.md) protocol method [`run(forKey:object:arguments:)`](caaction/run(forkey:object:arguments:).md).
-- [struct CAEdgeAntialiasingMask](caedgeantialiasingmask.md)
-  This mask is used by the [`edgeAntialiasingMask`](calayer/edgeantialiasingmask.md) property.
-- [Identity Transform](identity-transform.md)
+### Constants
+- [struct CAAutoresizingMask](../caautoresizingmask.md)
+  These constants are used by the [`autoresizingMask`](./autoresizingmask.md) property.
+- [Action Identifiers](../action-identifiers.md)
+  These constants are the predefined action identifiers used by [`action(forKey:)`](./action%28forkey%29.md), [`add(_:forKey:)`](./add%28_,forkey%29.md), [`defaultAction(forKey:)`](./defaultaction%28forkey%29.md), [`removeAnimation(forKey:)`](./removeanimation%28forkey%29.md), Layer Filters, and the [`CAAction`](../caaction.md) protocol method [`run(forKey:object:arguments:)`](../caaction/run%28forkey,object,arguments%29.md).
+- [struct CAEdgeAntialiasingMask](../caedgeantialiasingmask.md)
+  This mask is used by the [`edgeAntialiasingMask`](./edgeantialiasingmask.md) property.
+- [Identity Transform](../identity-transform.md)
   Defines the identity transform matrix used by Core Animation.
-- [Scaling Filters](scaling-filters.md)
-  These constants specify the scaling filters used by [`magnificationFilter`](calayer/magnificationfilter.md) and [`minificationFilter`](calayer/minificationfilter.md).
-- [struct CATransform3D](catransform3d.md)
+- [Scaling Filters](../scaling-filters.md)
+  These constants specify the scaling filters used by [`magnificationFilter`](./magnificationfilter.md) and [`minificationFilter`](./minificationfilter.md).
+- [struct CATransform3D](../catransform3d.md)
   The standard transform matrix used throughout Core Animation.
 
 

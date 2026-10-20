@@ -1,7 +1,8 @@
 # readAttributeAirQuality(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 17.6+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeAirQuality(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeAirQuality() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeAirQualityWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

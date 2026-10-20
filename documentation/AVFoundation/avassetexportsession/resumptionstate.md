@@ -1,7 +1,8 @@
 # AVAssetExportSession.ResumptionState
 
 **Framework**: AVFoundation  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Represents the resumption state of the export session.
 
@@ -26,22 +27,23 @@ After calling `configureForResumableExport()`, this returned state details wheth
 ## Topics
 
 ### Resumption states
-- [AVAssetExportSession.ResumptionState.resumable(isResumingFromPreviousState:)](avassetexportsession/resumptionstate/resumable(isresumingfrompreviousstate:).md)
+- [AVAssetExportSession.ResumptionState.resumable(isResumingFromPreviousState:)](./resumptionstate/resumable%28isresumingfrompreviousstate%29.md)
   The export session is successfully configured for resumption.
-- [case notResumable(failureReason: AVAssetExportSession.ResumptionFailureReason)](avassetexportsession/resumptionstate/notresumable(failurereason:).md)
+- [case notResumable(failureReason: AVAssetExportSession.ResumptionFailureReason)](./resumptionstate/notresumable%28failurereason%29.md)
   The export session could not be configured for resumption.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func configureForResumableExport() async -> AVAssetExportSession.ResumptionState](avassetexportsession/configureforresumableexport.md)
+### Configuring resumable export
+- [func configureForResumableExport() async -> AVAssetExportSession.ResumptionState](./configureforresumableexport%28%29.md)
   Configures the export session for resumable export.
-- [AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason.md)
+- [AVAssetExportSession.ResumptionFailureReason](./resumptionfailurereason.md)
   The reason that configuring the export session for resumption failed.
 
 

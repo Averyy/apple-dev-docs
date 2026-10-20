@@ -1,7 +1,8 @@
 # remove(_:)
 
 **Framework**: GameplayKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Removes the specified individual behavior from the composite behavior.
 
@@ -19,19 +20,24 @@ Removes the specified individual behavior from the composite behavior.
 func remove(_ behavior: GKBehavior)
 ```
 
+```objc
+- (void) removeBehavior:(GKBehavior *) behavior;
+```
+
 ## Parameters
 
 - `behavior`: An individual behavior in the composite behavior.
 
 ## See Also
 
-- [func setWeight(Float, for: GKBehavior)](gkcompositebehavior/setweight(_:for:).md)
+### Managing the Individual Behaviors in a Composite Behavior
+- [func setWeight(Float, for: GKBehavior)](./setweight%28_,for%29.md)
   Sets the weight for the specified individual behavior’s influence on agents, adding that behavior to the composite behavior if it is not already present.
-- [func weight(for: GKBehavior) -> Float](gkcompositebehavior/weight(for:).md)
+- [func weight(for: GKBehavior) -> Float](./weight%28for%29.md)
   Returns the weight for the specified individual behavior’s influence on agents.
-- [func removeAllBehaviors()](gkcompositebehavior/removeallbehaviors.md)
+- [func removeAllBehaviors()](./removeallbehaviors%28%29.md)
   Removes all individual behaviors from the composite behavior.
-- [var behaviorCount: Int](gkcompositebehavior/behaviorcount.md)
+- [var behaviorCount: Int](./behaviorcount.md)
   The number of individual behaviors in the composite behavior.
 
 

@@ -1,7 +1,8 @@
 # errSecFieldSpecifiedMultiple
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Too many fields were specified.
 
@@ -18,6 +19,10 @@ Too many fields were specified.
 
 ```swift
 var errSecFieldSpecifiedMultiple: OSStatus { get }
+```
+
+```c
+errSecFieldSpecifiedMultiple
 ```
 
 

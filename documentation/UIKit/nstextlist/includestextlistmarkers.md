@@ -1,7 +1,8 @@
 # includesTextListMarkers
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether TextKit includes text list markers in the text content.
 
@@ -19,17 +20,22 @@ A Boolean value that indicates whether TextKit includes text list markers in the
 class var includesTextListMarkers: Bool { get }
 ```
 
+```objc
+@property (class, readonly) BOOL includesTextListMarkers;
+```
+
 #### Overview
 
-The default value is [`false`](https://developer.apple.com/documentation/swift/false). When [`true`](https://developer.apple.com/documentation/swift/true), TextKit includes text list markers in the text content.
+The default value is [`false`](../../Swift/false.md). When [`true`](../../Swift/true.md), TextKit includes text list markers in the text content.
 
 ## See Also
 
-- [var markerFormat: NSTextList.MarkerFormat](nstextlist/markerformat-swift.property.md)
+### Working with markers
+- [var markerFormat: NSTextList.MarkerFormat](./markerformat-swift.property.md)
   Returns the marker format string used by the receiver.
-- [NSTextList.MarkerFormat](nstextlist/markerformat-swift.struct.md)
+- [NSTextList.MarkerFormat](./markerformat-swift.struct.md)
   Constants that describe marker symbols you can apply to list elements in text lists.
-- [func marker(forItemNumber: Int) -> String](nstextlist/marker(foritemnumber:).md)
+- [func marker(forItemNumber: Int) -> String](./marker%28foritemnumber%29.md)
   Returns the computed value for a specific ordinal position in the list.
 
 

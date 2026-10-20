@@ -1,7 +1,8 @@
 # GetMessageListResponseItem
 
 **Framework**: Retention Messaging API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A message identifier and status information for a message.
 
@@ -10,13 +11,13 @@ A message identifier and status information for a message.
 
 ## Declaration
 
-```swift
+```
 object GetMessageListResponseItem
 ```
 
 #### Discussion
 
-The [`Get Message List`](get-message-list.md) endpoint returns an array of these values in its response.
+The [`Get Message List`](./get-message-list.md) endpoint returns an array of these values in its response.
 
 ## Properties
 
@@ -25,17 +26,18 @@ The [`Get Message List`](get-message-list.md) endpoint returns an array of these
 
 ## See Also
 
-- [Upload Message](upload-message.md)
+### Message configuration
+- [Upload Message](./upload-message.md)
   Uploads a message to use for retention messaging.
-- [Delete Message](delete-message.md)
+- [Delete Message](./delete-message.md)
   Deletes a previously uploaded message.
-- [Get Message List](get-message-list.md)
+- [Get Message List](./get-message-list.md)
   Gets the message identifier and state of all uploaded messages.
-- [object UploadMessageRequestBody](uploadmessagerequestbody.md)
+- [object UploadMessageRequestBody](./uploadmessagerequestbody.md)
   The request body for uploading a message, which includes the message text and an optional image reference and bullet points.
-- [object UploadMessageImage](uploadmessageimage.md)
+- [object UploadMessageImage](./uploadmessageimage.md)
   The definition of an image with its alternative text.
-- [object GetMessageListResponse](getmessagelistresponse.md)
+- [object GetMessageListResponse](./getmessagelistresponse.md)
   A response that contains status information for all messages.
 
 

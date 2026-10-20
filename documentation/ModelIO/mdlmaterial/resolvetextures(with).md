@@ -1,7 +1,8 @@
 # resolveTextures(with:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resolves all texture string paths as NSURLs with resolver.
 
@@ -19,6 +20,10 @@ Resolves all texture string paths as NSURLs with resolver.
 func resolveTextures(with resolver: any MDLAssetResolver)
 ```
 
+```objc
+- (void) resolveTexturesWithResolver:(id<MDLAssetResolver>) resolver;
+```
+
 #### Discussion
 
 Iterates all material properties. If there are string values, they’re resolved into valid paths as NSURL values by the resolver.
@@ -29,7 +34,8 @@ Iterates all material properties. If there are string values, they’re resolved
 
 ## See Also
 
-- [func loadTextures(using: any MDLAssetResolver)](mdlmaterial/loadtextures(using:).md)
+### Working with textures using resolvers
+- [func loadTextures(using: any MDLAssetResolver)](./loadtextures%28using%29.md)
   Loads textures using resolver for string paths and NSURLs.
 
 

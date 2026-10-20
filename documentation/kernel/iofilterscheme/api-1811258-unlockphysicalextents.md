@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual void unlockPhysicalExtents(
  IOService *client);
 ```
@@ -20,15 +20,16 @@ Unlock the contents of the storage object for relocation again. This call must b
 
 ## See Also
 
-- [copyPhysicalExtent](iofilterscheme/1811149-copyphysicalextent.md)
-- [handleClose](iofilterscheme/1811170-handleclose.md)
-- [handleIsOpen](iofilterscheme/1811193-handleisopen.md)
-- [handleOpen](iofilterscheme/1811211-handleopen.md)
-- [lockPhysicalExtents](iofilterscheme/1811226-lockphysicalextents.md)
-- [read](iofilterscheme/1811238-read.md)
-- [synchronizeCache](iofilterscheme/1811248-synchronizecache.md)
-- [unmap](iofilterscheme/1811266-unmap.md)
-- [write](iofilterscheme/1811274-write.md)
+### Miscellaneous
+- [copyPhysicalExtent](./api-1811149-copyphysicalextent.md)
+- [handleClose](./api-1811170-handleclose.md)
+- [handleIsOpen](./api-1811193-handleisopen.md)
+- [handleOpen](./api-1811211-handleopen.md)
+- [lockPhysicalExtents](./api-1811226-lockphysicalextents.md)
+- [read](./api-1811238-read.md)
+- [synchronizeCache](./api-1811248-synchronizecache.md)
+- [unmap](./api-1811266-unmap.md)
+- [write](./api-1811274-write.md)
 
 
 ---

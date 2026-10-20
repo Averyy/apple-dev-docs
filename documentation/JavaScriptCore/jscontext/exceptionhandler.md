@@ -1,7 +1,8 @@
 # exceptionHandler
 
 **Framework**: JavaScriptCore  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A block to be invoked should evaluating a script result in a JavaScript exception being thrown.
 
@@ -19,6 +20,10 @@ A block to be invoked should evaluating a script result in a JavaScript exceptio
 var exceptionHandler: ((JSContext?, JSValue?) -> Void)! { get set }
 ```
 
+```objc
+@property (copy) void (^exceptionHandler)(JSContext *context, JSValue *exception);
+```
+
 #### Discussion
 
 The block takes the following parameters:
@@ -26,17 +31,18 @@ The block takes the following parameters:
 - **context**: The context in which the exception originates.
 - **exception**: The JavaScript exception thrown.
 
-The default value exception handler block stores its `exception` parameter value into the context’s [`exception`](jscontext/exception.md) property. As a consequence, the default behavior is that unhandled exceptions occurring within a callback from JavaScript to native code are thrown again upon return. Setting this value to `nil` results in all uncaught exceptions being silently consumed.
+The default value exception handler block stores its `exception` parameter value into the context’s [`exception`](./exception.md) property. As a consequence, the default behavior is that unhandled exceptions occurring within a callback from JavaScript to native code are thrown again upon return. Setting this value to `nil` results in all uncaught exceptions being silently consumed.
 
 ## See Also
 
-- [var globalObject: JSValue!](jscontext/globalobject.md)
+### Working with JavaScript global state
+- [var globalObject: JSValue!](./globalobject.md)
   The JavaScript global object associated with the context.
-- [var exception: JSValue!](jscontext/exception.md)
+- [var exception: JSValue!](./exception.md)
   A JavaScript exception to be thrown in evaluation of the script.
-- [var virtualMachine: JSVirtualMachine!](jscontext/virtualmachine.md)
+- [var virtualMachine: JSVirtualMachine!](./virtualmachine.md)
   The JavaScript virtual machine to which the context belongs.
-- [var name: String!](jscontext/name.md)
+- [var name: String!](./name.md)
   A descriptive name for the context.
 
 

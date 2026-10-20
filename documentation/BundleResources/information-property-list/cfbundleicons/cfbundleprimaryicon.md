@@ -1,7 +1,8 @@
 # CFBundlePrimaryIcon
 
 **Framework**: Bundle Resources  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Property List Key
 
 The app’s primary icon for display on the Home Screen, in the Settings app, and many other places throughout the system.
 
@@ -12,9 +13,10 @@ The app’s primary icon for display on the Home Screen, in the Settings app, an
 - visionOS 1.0+
 - watchOS 2.0+
 
+## Details
 
-
-**Type**: dictionary
+- **Name**: `CFBundlePrimaryIcon` (Primary Icon)
+- **Type**: dictionary
 
 #### Discussion
 
@@ -23,22 +25,23 @@ In your app for iOS, iPadOS, or watchOS, the value is a dictionary that contains
 ## Topics
 
 ### Specifying app icon files
-- [CFBundleIconFiles](information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundleiconfiles.md)
+- [CFBundleIconFiles](./cfbundleprimaryicon/cfbundleiconfiles.md)
   The names of the icon files in the app’s asset catalog or bundle.
-- [UIPrerenderedIcon](information-property-list/cfbundleicons/cfbundleprimaryicon/uiprerenderedicon.md)
+- [UIPrerenderedIcon](./cfbundleprimaryicon/uiprerenderedicon.md)
   A Boolean value indicating whether the app’s icon files already incorporate a shine effect.
 ### Customizing the App Shortcuts platter
-- [NSAppIconActionTintColorName](information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconactiontintcolorname.md)
+- [NSAppIconActionTintColorName](./cfbundleprimaryicon/nsappiconactiontintcolorname.md)
   The tint color to apply to text and symbols in the App Shortcuts platter.
-- [NSAppIconComplementingColorNames](information-property-list/cfbundleicons/cfbundleprimaryicon/nsappiconcomplementingcolornames.md)
+- [NSAppIconComplementingColorNames](./cfbundleprimaryicon/nsappiconcomplementingcolornames.md)
   The names of the colors to use for the background of the App Shortcuts platter.
 ### Associating an SF Symbol
-- [CFBundleSymbolName](information-property-list/cfbundleicons/cfbundleprimaryicon/cfbundlesymbolname.md)
+- [CFBundleSymbolName](./cfbundleprimaryicon/cfbundlesymbolname.md)
   The name of the symbol to show in the action sheet, and in Finder’s sidebar on macOS.
 
 ## See Also
 
-- [CFBundleAlternateIcons](information-property-list/cfbundleicons/cfbundlealternateicons.md)
+### Property List Keys
+- [CFBundleAlternateIcons](./cfbundlealternateicons.md)
   A list of alternate icons for the Home screen and Settings app.
 
 

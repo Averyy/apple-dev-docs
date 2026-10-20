@@ -7,12 +7,12 @@ Temporarily suspend data flow on the stream.
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn suspendStream(
  void);
 ```
 
-#### Return_value
+#### Return Value
 
 Returns kIOReturnSuccess if the stream was successfully suspended.
 
@@ -22,13 +22,14 @@ This must be implemented by a subclass.
 
 ## See Also
 
-- [getStreamMode](iostream/1809626-getstreammode.md)
+### Stream control
+- [getStreamMode](./api-1809626-getstreammode.md)
   Returns the mode of the stream, either input or output.
-- [setStreamMode](iostream/1809631-setstreammode.md)
+- [setStreamMode](./api-1809631-setstreammode.md)
   Sets the mode of the stream, either input or output.
-- [startStream](iostream/1809638-startstream.md)
+- [startStream](./api-1809638-startstream.md)
   Start sending data on a stream.
-- [stopStream](iostream/1809642-stopstream.md)
+- [stopStream](./api-1809642-stopstream.md)
   Stop sending data on a stream.
 
 

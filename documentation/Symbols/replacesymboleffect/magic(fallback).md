@@ -1,7 +1,8 @@
 # magic(fallback:)
 
 **Framework**: Symbols  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns an effect preferring MagicReplace and a configured ReplaceEffect if MagicReplace is not possible.
 

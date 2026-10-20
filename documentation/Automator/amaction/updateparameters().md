@@ -1,7 +1,8 @@
 # updateParameters()
 
 **Framework**: Automator  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Requests the action to update its stored set of parameters from the settings in the action’s user interface.
 
@@ -15,13 +16,18 @@ Requests the action to update its stored set of parameters from the settings in 
 func updateParameters()
 ```
 
+```objc
+- (void) updateParameters;
+```
+
 #### Discussion
 
 This message sends just before an action is saved, copied, or run. Preferably, an action’s settings should not solely reside in the controls of its view, but if they do, the action can fetch and save them in this method.
 
 ## See Also
 
-- [func parametersUpdated()](amaction/parametersupdated.md)
+### Updating Action Parameters
+- [func parametersUpdated()](./parametersupdated%28%29.md)
   Requests the action to update its user interface from its stored parameters, which have changed.
 
 

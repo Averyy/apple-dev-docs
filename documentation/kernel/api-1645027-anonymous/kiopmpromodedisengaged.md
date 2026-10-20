@@ -1,14 +1,15 @@
 # kIOPMProModeDisengaged
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.15.1+
 
 ## Declaration
 
-```swift
+```c
 kIOPMProModeDisengaged = (1 << 14)
 ```
 

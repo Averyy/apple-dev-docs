@@ -1,7 +1,8 @@
 # timeScale
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time scale for this value.
 
@@ -20,11 +21,16 @@ The time scale for this value.
 var timeScale: Int32
 ```
 
+```c
+int32_t timeScale;
+```
+
 ## See Also
 
-- [var flags: Int32](cvtime/flags.md)
-  The flags associated with the `CVTime` value. See [`CVTime Values`](cvtime-values.md) for possible values. If `kCVTimeIsIndefinite` is set, you should not use any of the other fields in this structure.
-- [var timeValue: Int64](cvtime/timevalue.md)
+### Properties
+- [var flags: Int32](./flags.md)
+  The flags associated with the `CVTime` value. See [CVTime Values](../cvtime-values.md) for possible values. If `kCVTimeIsIndefinite` is set, you should not use any of the other fields in this structure.
+- [var timeValue: Int64](./timevalue.md)
   The time value.
 
 

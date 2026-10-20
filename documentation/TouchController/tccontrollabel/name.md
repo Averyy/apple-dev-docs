@@ -1,7 +1,8 @@
 # name
 
 **Framework**: Touch Controller  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of the control label that you use for lookup on a game controller instance.
 
@@ -14,6 +15,10 @@ The name of the control label that you use for lookup on a game controller insta
 
 ```swift
 var name: String { get }
+```
+
+```objc
+@property (nonatomic, retain, readonly) NSString * name;
 ```
 
 

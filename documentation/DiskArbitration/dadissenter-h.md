@@ -1,6 +1,7 @@
 # DADissenter.h
 
-**Framework**: Disk Arbitration
+**Framework**: Disk Arbitration  
+**Role**: API Collection
 
 #### Overview
 
@@ -16,25 +17,26 @@ See the Overview section above for header-level documentation.
 ## Topics
 
 ### Miscellaneous
-- [func DADissenterCreate(CFAllocator?, DAReturn, CFString?) -> DADissenter](dadissentercreate(_:_:_:).md)
+- [func DADissenterCreate(CFAllocator?, DAReturn, CFString?) -> DADissenter](./dadissentercreate%28_,_,_%29.md)
   Creates a new dissenter object.
-- [func DADissenterGetStatus(DADissenter) -> DAReturn](dadissentergetstatus(_:).md)
+- [func DADissenterGetStatus(DADissenter) -> DAReturn](./dadissentergetstatus%28_%29.md)
   Obtains the return code.
-- [func DADissenterGetStatusString(DADissenter) -> CFString?](dadissentergetstatusstring(_:).md)
+- [func DADissenterGetStatusString(DADissenter) -> CFString?](./dadissentergetstatusstring%28_%29.md)
   Obtains the return code string.
 ### Data Types
-- [class DADissenter](dadissenter.md)
+- [class DADissenter](./dadissenter.md)
   Type of a reference to DADissenter instances.
 
 ## See Also
 
-- [DADisk.h](dadisk-h.md)
-- [DASession.h](dasession-h.md)
-- [DiskArbitration.h](diskarbitration-h.md)
+### Reference
+- [DADisk.h](./dadisk-h.md)
+- [DASession.h](./dasession-h.md)
+- [DiskArbitration.h](./diskarbitration-h.md)
   Register for mount/unmount notifications, and block mount/unmount events.
-- [DiskArbitration Enumerations](diskarbitration-enumerations.md)
-- [DiskArbitration Constants](diskarbitration-constants.md)
-- [DiskArbitration Data Types](diskarbitration-data-types.md)
+- [DiskArbitration Enumerations](./diskarbitration-enumerations.md)
+- [DiskArbitration Constants](./diskarbitration-constants.md)
+- [DiskArbitration Data Types](./diskarbitration-data-types.md)
 
 
 ---

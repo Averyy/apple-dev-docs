@@ -1,7 +1,8 @@
 # CMSampleBuffer.NotificationKey
 
 **Framework**: Core Media  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A key for sample buffer notifications.
 
@@ -23,23 +24,24 @@ struct NotificationKey
 ## Topics
 
 ### Keys
-- [static let status: CMSampleBuffer.NotificationKey](cmsamplebuffer/notificationkey/status.md)
+- [static let status: CMSampleBuffer.NotificationKey](./notificationkey/status.md)
   A key to retrieve a status value.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [CMSampleBuffer.Error](cmsamplebuffer/error.md)
+### Constants
+- [CMSampleBuffer.Error](./error.md)
   A structure that defines errors that occur during framework operations.
-- [CMSampleBuffer.Flags](cmsamplebuffer/flags.md)
+- [CMSampleBuffer.Flags](./flags.md)
   Flags that customize the behavior of framework operations.
 
 

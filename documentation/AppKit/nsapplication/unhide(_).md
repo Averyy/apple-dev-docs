@@ -1,12 +1,13 @@
 # unhide(_:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Restores hidden windows to the screen and makes the receiver active.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Restores hidden windows to the screen and makes the receiver active.
 func unhide(_ sender: Any?)
 ```
 
+```objc
+- (void) unhide:(id) sender;
+```
+
 #### Discussion
 
-Invokes [`unhideWithoutActivation()`](nsapplication/unhidewithoutactivation().md).
+Invokes [`unhideWithoutActivation()`](./unhidewithoutactivation%28%29.md).
 
 ## Parameters
 
@@ -24,13 +29,15 @@ Invokes [`unhideWithoutActivation()`](nsapplication/unhidewithoutactivation().md
 
 ## See Also
 
-- [func activate(ignoringOtherApps: Bool)](nsapplication/activate(ignoringotherapps:).md)
+### Related Documentation
+- [func activate(ignoringOtherApps: Bool)](./activate%28ignoringotherapps%29.md)
   Makes the receiver the active app.
-- [var isHidden: Bool](nsapplication/ishidden.md)
+### Hiding Windows
+- [var isHidden: Bool](./ishidden.md)
   A Boolean value indicating whether the app is hidden.
-- [func hide(Any?)](nsapplication/hide(_:).md)
+- [func hide(Any?)](./hide%28_%29.md)
   Hides all the receiver’s windows, and the next app in line is activated.
-- [func unhideWithoutActivation()](nsapplication/unhidewithoutactivation.md)
+- [func unhideWithoutActivation()](./unhidewithoutactivation%28%29.md)
   Restores hidden windows without activating their owner (the receiver).
 
 

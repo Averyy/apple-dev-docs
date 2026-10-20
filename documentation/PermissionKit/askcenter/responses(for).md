@@ -1,7 +1,8 @@
 # responses(for:)
 
 **Framework**: PermissionKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Registers the topic type with the system and returns an asynchronous sequence of responses.
 
@@ -24,13 +25,14 @@ final func responses<Topic>(for topicType: Topic.Type) -> some AsyncSequence<Per
 
 ## See Also
 
-- [struct PermissionResponse](permissionresponse.md)
+### Response management
+- [struct PermissionResponse](../permissionresponse.md)
   A full permission response that includes the original question and chosen answer.
-- [struct CommunicationHandle](communicationhandle.md)
+- [struct CommunicationHandle](../communicationhandle.md)
   Contact information for identifying and communicating with a person.
-- [struct PermissionChoice](permissionchoice.md)
+- [struct PermissionChoice](../permissionchoice.md)
   A class that uniquely identifies a specific, statically defined permission choice.
-- [class CommunicationLimits](communicationlimits.md)
+- [class CommunicationLimits](../communicationlimits.md)
   A type that encapsulates the communication limits for your app.
 
 

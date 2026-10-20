@@ -5,7 +5,7 @@
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn readStructure(
  IOMemoryDescriptor *buffer, 
  const DVDStructureFormatformat, 
@@ -14,7 +14,7 @@ virtual IOReturn readStructure(
  const UInt8grantID );
 ```
 
-#### Return_value
+#### Return Value
 
 Returns the status of the data transfer.
 
@@ -32,12 +32,13 @@ Issue an MMC READ DVD STRUCTURE command.
 
 ## See Also
 
-- [getSpeed](iodvdmedia/1811144-getspeed.md)
-- [readDiscInfo](iodvdmedia/1811197-readdiscinfo.md)
-- [readRZoneInfo](iodvdmedia/1811250-readrzoneinfo.md)
-- [reportKey](iodvdmedia/1811294-reportkey.md)
-- [sendKey](iodvdmedia/1811314-sendkey.md)
-- [setSpeed](iodvdmedia/1811329-setspeed.md)
+### Miscellaneous
+- [getSpeed](./api-1811144-getspeed.md)
+- [readDiscInfo](./api-1811197-readdiscinfo.md)
+- [readRZoneInfo](./api-1811250-readrzoneinfo.md)
+- [reportKey](./api-1811294-reportkey.md)
+- [sendKey](./api-1811314-sendkey.md)
+- [setSpeed](./api-1811329-setspeed.md)
 
 
 ---

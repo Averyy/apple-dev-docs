@@ -1,7 +1,8 @@
 # MLBoundingBoxCoordinatesOrigin.bottomLeft
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An origin at the image’s bottom-left corner.
 
@@ -16,7 +17,8 @@ case bottomLeft
 
 ## See Also
 
-- [MLBoundingBoxCoordinatesOrigin.topLeft](mlboundingboxcoordinatesorigin/topleft.md)
+### Designating origins
+- [MLBoundingBoxCoordinatesOrigin.topLeft](./topleft.md)
   An origin at the image’s top-left corner.
 
 

@@ -1,7 +1,8 @@
 # errSSLPeerCertExpired
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The certificate expired.
 
@@ -18,6 +19,10 @@ The certificate expired.
 
 ```swift
 var errSSLPeerCertExpired: OSStatus { get }
+```
+
+```c
+errSSLPeerCertExpired
 ```
 
 

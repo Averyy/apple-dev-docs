@@ -1,7 +1,8 @@
 # textFieldDidChangeSelection(_:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate when the text selection changes in the specified text field.
 
@@ -16,6 +17,10 @@ Tells the delegate when the text selection changes in the specified text field.
 
 ```swift
 optional func textFieldDidChangeSelection(_ textField: UITextField)
+```
+
+```objc
+- (void) textFieldDidChangeSelection:(UITextField *) textField;
 ```
 
 

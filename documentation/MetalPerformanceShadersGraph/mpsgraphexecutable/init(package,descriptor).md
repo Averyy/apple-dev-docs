@@ -1,7 +1,8 @@
 # init(package:descriptor:)
 
 **Framework**: Metal Performance Shaders Graph  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initialize the executable with the Metal Performance Shaders Graph package at the provided URL.
 
@@ -17,6 +18,10 @@ Initialize the executable with the Metal Performance Shaders Graph package at th
 
 ```swift
 init(package mpsgraphPackageURL: URL, descriptor compilationDescriptor: MPSGraphCompilationDescriptor?)
+```
+
+```objc
+- (instancetype) initWithMPSGraphPackageAtURL:(NSURL *) mpsgraphPackageURL compilationDescriptor:(MPSGraphCompilationDescriptor *) compilationDescriptor;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # uvIndex
 
 **Framework**: WeatherKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The expected intensity of ultraviolet radiation from the sun.
 
@@ -22,7 +23,8 @@ var uvIndex: UVIndex
 
 ## See Also
 
-- [var condition: WeatherCondition](dayweather/condition.md)
+### Getting condition and UV index
+- [var condition: WeatherCondition](./condition.md)
   A description of the weather condition on this day.
 
 

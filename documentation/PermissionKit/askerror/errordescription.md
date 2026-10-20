@@ -1,7 +1,8 @@
 # errorDescription
 
 **Framework**: PermissionKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized description of the error.
 

@@ -1,7 +1,8 @@
 # system
 
 **Framework**: HealthKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The string that identifies the coding system that defines this clinical code.
 
@@ -19,9 +20,13 @@ The string that identifies the coding system that defines this clinical code.
 var system: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * system;
+```
+
 #### Discussion
 
-The system is usually expressed as a URL from the [`HL7 Terminology`](https://developer.apple.comhttps://terminology.hl7.org/). For example, the RxNorm, a coding system for medications uses: `http://www.nlm.nih.gov/research/umls/rxnorm`.
+The system is usually expressed as a URL from the [HL7 Terminology](https://terminology.hl7.org/). For example, the RxNorm, a coding system for medications uses: `http://www.nlm.nih.gov/research/umls/rxnorm`.
 
 
 ---

@@ -1,7 +1,8 @@
 # CSSM_CSP_TOK_USER_PIN_INITIALIZED
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -11,6 +12,10 @@
 
 ```swift
 var CSSM_CSP_TOK_USER_PIN_INITIALIZED: Int { get }
+```
+
+```c
+CSSM_CSP_TOK_USER_PIN_INITIALIZED
 ```
 
 

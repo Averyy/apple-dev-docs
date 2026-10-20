@@ -1,15 +1,16 @@
 # kHIDUsage_Snsr_Other_HingeAngle
 
 **Framework**: HIDDriverKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Enumeration Case
 
 **Availability**:
-- DriverKit ?+
-- macOS ?+
+- DriverKit
+- macOS
 
 ## Declaration
 
-```swift
+```c
 kHIDUsage_Snsr_Other_HingeAngle
 ```
 

@@ -1,7 +1,8 @@
 # ComputeNodeGraph.Node.Kind.sequence(nodes:)
 
 **Framework**: Compute Graph  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Node is a sequence of nodes, which have implicit flow dependencies between them.
 
@@ -12,7 +13,7 @@ Node is a sequence of nodes, which have implicit flow dependencies between them.
 - macOS 27.0+
 - tvOS 27.0+
 - visionOS 27.0+
-- Reality Composer Pro ?+
+- Reality Composer Pro
 
 ## Declaration
 

@@ -1,31 +1,33 @@
 # AddDestination
 
 **Framework**: MIDIDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - DriverKit 24.0+
 
 ## Declaration
 
-```swift
+```c
 kern_return_t AddDestination(IOUserMIDIDestination *destination);
 ```
 
 ## See Also
 
-- [AddSource](iousermidientity/addsource.md)
-- [GetBaseClassID](iousermidientity/getbaseclassid.md)
-- [GetClassID](iousermidientity/getclassid.md)
-- [GetDestination](iousermidientity/getdestination.md)
-- [GetDestinations](iousermidientity/getdestinations.md)
-- [GetSource](iousermidientity/getsource.md)
-- [GetSources](iousermidientity/getsources.md)
-- [RemoveDestination](iousermidientity/removedestination.md)
-- [RemoveSource](iousermidientity/removesource.md)
-- [SetProperties](iousermidientity/setproperties.md)
-- [free](iousermidientity/free.md)
-- [init](iousermidientity/init.md)
+### Instance Methods
+- [AddSource](./addsource.md)
+- [GetBaseClassID](./getbaseclassid.md)
+- [GetClassID](./getclassid.md)
+- [GetDestination](./getdestination.md)
+- [GetDestinations](./getdestinations.md)
+- [GetSource](./getsource.md)
+- [GetSources](./getsources.md)
+- [RemoveDestination](./removedestination.md)
+- [RemoveSource](./removesource.md)
+- [SetProperties](./setproperties.md)
+- [free](./free.md)
+- [init](./init.md)
 
 
 ---

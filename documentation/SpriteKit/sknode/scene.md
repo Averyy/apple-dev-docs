@@ -1,18 +1,19 @@
 # scene
 
 **Framework**: SpriteKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scene node that contains this node.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ The scene node that contains this node.
 var scene: SKScene? { get }
 ```
 
+```objc
+@property (nonatomic, readonly, nullable) SKScene * scene;
+```
+
 ## Mentions
 
-- [Accessing and Modifying the Node Tree](accessing-and-modifying-the-node-tree.md)
+- [Accessing and Modifying the Node Tree](../accessing-and-modifying-the-node-tree.md)
 
 #### Discussion
 
@@ -30,11 +35,12 @@ If the node is not embedded in a scene, the value is `nil`.
 
 ## See Also
 
-- [About SpriteKit Coordinate Systems](about-spritekit-coordinate-systems.md)
+### Accessing Related Nodes
+- [About SpriteKit Coordinate Systems](../about-spritekit-coordinate-systems.md)
   Learn how a node conforms to its coordinate systems.
-- [var parent: SKNode?](sknode/parent.md)
+- [var parent: SKNode?](./parent.md)
   The node’s parent node.
-- [var children: [SKNode]](sknode/children.md)
+- [var children: [SKNode]](./children.md)
   The node’s children.
 
 

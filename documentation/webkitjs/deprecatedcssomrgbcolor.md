@@ -1,7 +1,8 @@
 # DeprecatedCSSOMRGBColor
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.1+
@@ -9,17 +10,17 @@
 
 ## Declaration
 
-```swift
+```
 interface DeprecatedCSSOMRGBColor
 ```
 
 ## Topics
 
 ### Instance Properties
-- [alpha](deprecatedcssomrgbcolor/2871079-alpha.md)
-- [blue](deprecatedcssomrgbcolor/2871161-blue.md)
-- [green](deprecatedcssomrgbcolor/2871454-green.md)
-- [red](deprecatedcssomrgbcolor/2871047-red.md)
+- [alpha](./deprecatedcssomrgbcolor/api-2871079-alpha.md)
+- [blue](./deprecatedcssomrgbcolor/api-2871161-blue.md)
+- [green](./deprecatedcssomrgbcolor/api-2871454-green.md)
+- [red](./deprecatedcssomrgbcolor/api-2871047-red.md)
 
 
 ---

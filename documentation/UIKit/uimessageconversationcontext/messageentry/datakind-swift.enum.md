@@ -1,7 +1,8 @@
 # UIMessageConversationContext.MessageEntry.DataKind
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A list of options that represent the kinds of data a message can contain.
 
@@ -16,33 +17,38 @@ A list of options that represent the kinds of data a message can contain.
 enum DataKind
 ```
 
+```c
+enum UIMessageConversationEntryDataKind : NSInteger;
+```
+
 ## Topics
 
 ### Kinds of data in a message
-- [UIMessageConversationContext.MessageEntry.DataKind.attachment](uimessageconversationcontext/messageentry/datakind-swift.enum/attachment.md)
+- [UIMessageConversationContext.MessageEntry.DataKind.attachment](./datakind-swift.enum/attachment.md)
   The message contains an attachment, such as an image or file.
-- [UIMessageConversationContext.MessageEntry.DataKind.other](uimessageconversationcontext/messageentry/datakind-swift.enum/other.md)
+- [UIMessageConversationContext.MessageEntry.DataKind.other](./datakind-swift.enum/other.md)
   The message contains other data, such as data that represents a sticker or a payment.
-- [UIMessageConversationContext.MessageEntry.DataKind.text](uimessageconversationcontext/messageentry/datakind-swift.enum/text.md)
+- [UIMessageConversationContext.MessageEntry.DataKind.text](./datakind-swift.enum/text.md)
   The message contains text.
 ### Initializers
-- [init?(rawValue: Int)](uimessageconversationcontext/messageentry/datakind-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](./datakind-swift.enum/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../../Swift/bitwisecopyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var dataKind: UIMessageConversationContext.MessageEntry.DataKind](uimessageconversationcontext/messageentry/datakind-swift.property.md)
+### Categorizing the entry
+- [var dataKind: UIMessageConversationContext.MessageEntry.DataKind](./datakind-swift.property.md)
   An item that represents the kind of data the message contains.
-- [var wasSentBySelf: Bool](uimessageconversationcontext/messageentry/wassentbyself.md)
+- [var wasSentBySelf: Bool](./wassentbyself.md)
   A Boolean value that indicates whether the current user sent the message.
 
 

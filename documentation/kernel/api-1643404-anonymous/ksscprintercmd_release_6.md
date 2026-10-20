@@ -1,7 +1,8 @@
 # kSSCPrinterCmd_RELEASE_6
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - DriverKit 22.0+
@@ -9,7 +10,7 @@
 
 ## Declaration
 
-```swift
+```c
 kSSCPrinterCmd_RELEASE_6 = 0x17
 ```
 

@@ -1,7 +1,8 @@
 # init(currentLayout:nextLayout:)
 
 **Framework**: AppKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns the transition layout object.
 
@@ -12,6 +13,10 @@ Initializes and returns the transition layout object.
 
 ```swift
 init(currentLayout: NSCollectionViewLayout, nextLayout newLayout: NSCollectionViewLayout)
+```
+
+```objc
+- (instancetype) initWithCurrentLayout:(NSCollectionViewLayout *) currentLayout nextLayout:(NSCollectionViewLayout *) newLayout;
 ```
 
 #### Return Value

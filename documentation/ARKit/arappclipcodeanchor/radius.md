@@ -1,7 +1,8 @@
 # radius
 
 **Framework**: ARKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The App Clip Code’s radius in meters.
 
@@ -13,6 +14,10 @@ The App Clip Code’s radius in meters.
 
 ```swift
 var radius: Float { get }
+```
+
+```objc
+@property (nonatomic, assign, readonly) float radius;
 ```
 
 #### Discussion

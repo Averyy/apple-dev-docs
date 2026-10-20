@@ -1,6 +1,7 @@
 # Fetching storefront objects
 
-**Framework**: Device Management
+**Framework**: Device Management  
+**Role**: API Collection
 
 Pick a region-specific geographic location to retrieve catalog information from.
 
@@ -17,21 +18,22 @@ GET https://api.ent.apple.com/v1/catalog/us/stoken-authenticated-apps?ids=200135
 ## Topics
 
 ### Requesting a catalog storefront
-- [Get a Storefront](get-a-storefront.md)
+- [Get a Storefront](./get-a-storefront.md)
   Fetch a single storefront by using its identifier.
-- [Get Multiple Storefronts](get-multiple-storefronts.md)
+- [Get Multiple Storefronts](./get-multiple-storefronts.md)
   Fetch one or more storefronts by using their identifiers.
-- [Get All Storefronts](get-all-storefronts.md)
+- [Get All Storefronts](./get-all-storefronts.md)
   Fetch all the storefronts in alphabetical order.
 ### Handling the response
-- [object StorefrontsResponse](storefrontsresponse.md)
+- [object StorefrontsResponse](./storefrontsresponse.md)
   The response to a storefront request.
-- [object Storefronts](storefronts.md)
+- [object Storefronts](./storefronts.md)
   A resource object that represents a region that the content is available in, and supported languages for that region.
 
 ## See Also
 
-- [Fetching resources with extended attributes](fetching-resources-with-extended-attributes.md)
+### Fetching information
+- [Fetching resources with extended attributes](./fetching-resources-with-extended-attributes.md)
   Specify additional attributes for the API to include in a response.
 
 

@@ -1,14 +1,15 @@
 # setLROInfo
 
 **Framework**: NetworkingDriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
-- DriverKit ?+
+- DriverKit
 
 ## Declaration
 
-```swift
+```cpp
 virtual IOReturn setLROInfo(IOUserNetworkPacketLROFlags flags, uint8_t segcount);
 ```
 

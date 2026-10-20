@@ -1,7 +1,8 @@
 # automatic
 
 **Framework**: Group Activities  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The default lifetime policy for a group activity.
 

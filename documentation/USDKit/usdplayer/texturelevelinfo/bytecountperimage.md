@@ -1,7 +1,8 @@
 # byteCountPerImage
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Total byte size of this mip level.
 

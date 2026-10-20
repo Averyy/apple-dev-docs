@@ -1,7 +1,8 @@
 # masses
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The mass of each rigid body, or nil if mass information was not requested or force mode does not require it.
 

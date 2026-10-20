@@ -1,7 +1,8 @@
 # MTRColorControlClusterMoveColorTemperatureParams
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 16.1+
@@ -18,30 +19,34 @@
 class MTRColorControlClusterMoveColorTemperatureParams
 ```
 
+```objc
+@interface MTRColorControlClusterMoveColorTemperatureParams : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var colorTemperatureMaximumMireds: NSNumber](mtrcolorcontrolclustermovecolortemperatureparams/colortemperaturemaximummireds.md)
-- [var colorTemperatureMinimumMireds: NSNumber](mtrcolorcontrolclustermovecolortemperatureparams/colortemperatureminimummireds.md)
-- [var moveMode: NSNumber](mtrcolorcontrolclustermovecolortemperatureparams/movemode.md)
-- [var optionsMask: NSNumber](mtrcolorcontrolclustermovecolortemperatureparams/optionsmask.md)
-- [var optionsOverride: NSNumber](mtrcolorcontrolclustermovecolortemperatureparams/optionsoverride.md)
-- [var rate: NSNumber](mtrcolorcontrolclustermovecolortemperatureparams/rate.md)
-- [var serverSideProcessingTimeout: NSNumber?](mtrcolorcontrolclustermovecolortemperatureparams/serversideprocessingtimeout.md)
-- [var timedInvokeTimeoutMs: NSNumber?](mtrcolorcontrolclustermovecolortemperatureparams/timedinvoketimeoutms.md)
+- [var colorTemperatureMaximumMireds: NSNumber](./mtrcolorcontrolclustermovecolortemperatureparams/colortemperaturemaximummireds.md)
+- [var colorTemperatureMinimumMireds: NSNumber](./mtrcolorcontrolclustermovecolortemperatureparams/colortemperatureminimummireds.md)
+- [var moveMode: NSNumber](./mtrcolorcontrolclustermovecolortemperatureparams/movemode.md)
+- [var optionsMask: NSNumber](./mtrcolorcontrolclustermovecolortemperatureparams/optionsmask.md)
+- [var optionsOverride: NSNumber](./mtrcolorcontrolclustermovecolortemperatureparams/optionsoverride.md)
+- [var rate: NSNumber](./mtrcolorcontrolclustermovecolortemperatureparams/rate.md)
+- [var serverSideProcessingTimeout: NSNumber?](./mtrcolorcontrolclustermovecolortemperatureparams/serversideprocessingtimeout.md)
+- [var timedInvokeTimeoutMs: NSNumber?](./mtrcolorcontrolclustermovecolortemperatureparams/timedinvoketimeoutms.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

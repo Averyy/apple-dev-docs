@@ -1,7 +1,8 @@
 # fragmentInvocations
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The common name for the counter that tracks the number of times a render pass calls fragment shaders.
 
@@ -19,35 +20,40 @@ The common name for the counter that tracks the number of times a render pass ca
 static let fragmentInvocations: MTLCommonCounter
 ```
 
+```c
+extern MTLCommonCounter MTLCommonCounterFragmentInvocations;
+```
+
 ## See Also
 
-- [static let timestamp: MTLCommonCounter](mtlcommoncounter/timestamp.md)
+### Common counter names
+- [static let timestamp: MTLCommonCounter](./timestamp.md)
   The common name for the counter that tracks the current time.
-- [static let tessellationInputPatches: MTLCommonCounter](mtlcommoncounter/tessellationinputpatches.md)
+- [static let tessellationInputPatches: MTLCommonCounter](./tessellationinputpatches.md)
   The common name for the counter that tracks the number of tessellation patches a render pass sends to the tessellation stage.
-- [static let vertexInvocations: MTLCommonCounter](mtlcommoncounter/vertexinvocations.md)
+- [static let vertexInvocations: MTLCommonCounter](./vertexinvocations.md)
   The common name for the counter that tracks the number of times a render pass calls any vertex shader.
-- [static let postTessellationVertexInvocations: MTLCommonCounter](mtlcommoncounter/posttessellationvertexinvocations.md)
+- [static let postTessellationVertexInvocations: MTLCommonCounter](./posttessellationvertexinvocations.md)
   The common name for the counter that tracks the number of vertices a render pass sends to a post-tessellation vertex shader.
-- [static let clipperInvocations: MTLCommonCounter](mtlcommoncounter/clipperinvocations.md)
+- [static let clipperInvocations: MTLCommonCounter](./clipperinvocations.md)
   The common name for the counter that tracks the number of primitives a render pass sends to the clip stage.
-- [static let clipperPrimitivesOut: MTLCommonCounter](mtlcommoncounter/clipperprimitivesout.md)
+- [static let clipperPrimitivesOut: MTLCommonCounter](./clipperprimitivesout.md)
   The common name for the counter that tracks the number of primitives the clip stage produces during a render pass.
-- [static let fragmentsPassed: MTLCommonCounter](mtlcommoncounter/fragmentspassed.md)
+- [static let fragmentsPassed: MTLCommonCounter](./fragmentspassed.md)
   The common name for the counter that tracks the number of fragments a render pass sends to the visibility and blend stages.
-- [static let computeKernelInvocations: MTLCommonCounter](mtlcommoncounter/computekernelinvocations.md)
+- [static let computeKernelInvocations: MTLCommonCounter](./computekernelinvocations.md)
   The common name for the counter that tracks the number of times a pass invokes any compute kernel.
-- [static let totalCycles: MTLCommonCounter](mtlcommoncounter/totalcycles.md)
+- [static let totalCycles: MTLCommonCounter](./totalcycles.md)
   The common name for the counter that tracks the total number of cycles the GPU uses to run a pass.
-- [static let vertexCycles: MTLCommonCounter](mtlcommoncounter/vertexcycles.md)
+- [static let vertexCycles: MTLCommonCounter](./vertexcycles.md)
   The common name for the counter that tracks the number of cycles the GPU uses to run vertex shaders during a pass.
-- [static let postTessellationVertexCycles: MTLCommonCounter](mtlcommoncounter/posttessellationvertexcycles.md)
+- [static let postTessellationVertexCycles: MTLCommonCounter](./posttessellationvertexcycles.md)
   The common name for the counter that tracks the number of cycles the GPU uses to run post-tessellation vertex shaders during a pass.
-- [static let fragmentCycles: MTLCommonCounter](mtlcommoncounter/fragmentcycles.md)
+- [static let fragmentCycles: MTLCommonCounter](./fragmentcycles.md)
   The common name for the counter that tracks the number of cycles the GPU uses to run fragment shaders during a pass.
-- [static let tessellationCycles: MTLCommonCounter](mtlcommoncounter/tessellationcycles.md)
+- [static let tessellationCycles: MTLCommonCounter](./tessellationcycles.md)
   The common name for the counter that tracks the number of cycles the GPU uses to run the tessellation stage during a pass.
-- [static let renderTargetWriteCycles: MTLCommonCounter](mtlcommoncounter/rendertargetwritecycles.md)
+- [static let renderTargetWriteCycles: MTLCommonCounter](./rendertargetwritecycles.md)
   The common name for the counter that tracks the number of cycles the GPU uses to write data to render targets during a render pass.
 
 

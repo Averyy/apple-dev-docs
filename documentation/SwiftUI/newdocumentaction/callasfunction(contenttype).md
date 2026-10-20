@@ -1,7 +1,8 @@
 # callAsFunction(contentType:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Presents a new document window.
 
@@ -17,7 +18,7 @@ Presents a new document window.
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`newDocument`](environmentvalues/newdocument.md) action:
+Don’t call this method directly. SwiftUI calls it when you call the [`newDocument`](../environmentvalues/newdocument.md) action:
 
 ```swift
 newDocument(contentType: .todoList)
@@ -27,9 +28,9 @@ newDocument(contentType: .todoList)
  }
 ```
 
-> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist` file. For more information, see [`Defining file and data types for your app`](https://developer.apple.com/documentation/uniformtypeidentifiers/defining-file-and-data-types-for-your-app). Also, remember to specify the supported Document types in the `Info.plist` file as well.
+> ❗ **Important**: If your app declares custom uniform type identifiers, include corresponding entries in the app’s `Info.plist` file. For more information, see [Defining file and data types for your app](../../UniformTypeIdentifiers/defining-file-and-data-types-for-your-app.md). Also, remember to specify the supported Document types in the `Info.plist` file as well.
 
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [Methods with Special Names](https://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
 
 ## Parameters
 
@@ -37,9 +38,10 @@ For information about how Swift uses the `callAsFunction()` method to simplify c
 
 ## See Also
 
-- [func callAsFunction(_:)](newdocumentaction/callasfunction(_:).md)
+### Calling the action
+- [func callAsFunction(_:)](./callasfunction%28_%29.md)
   Presents a new document window.
-- [func callAsFunction(contentType: UTType, prepareDocument: (ModelContext) -> Void)](newdocumentaction/callasfunction(contenttype:preparedocument:).md)
+- [func callAsFunction(contentType: UTType, prepareDocument: (ModelContext) -> Void)](./callasfunction%28contenttype,preparedocument%29.md)
   Presents a new document window with preset contents.
 
 

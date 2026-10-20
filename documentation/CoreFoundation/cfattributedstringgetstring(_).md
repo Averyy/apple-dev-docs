@@ -1,18 +1,19 @@
 # CFAttributedStringGetString(_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns the string for an attributed string.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,9 +21,13 @@ Returns the string for an attributed string.
 func CFAttributedStringGetString(_ aStr: CFAttributedString!) -> CFString!
 ```
 
+```c
+extern CFStringRefCFAttributedStringGetString(CFAttributedStringRef aStr);
+```
+
 #### Return Value
 
-An immutable string containing the characters from `aStr`, or `NULL` if there was a problem creating the object. Ownership follows the [`The Get Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
+An immutable string containing the characters from `aStr`, or `NULL` if there was a problem creating the object. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 
 #### Discussion
 
@@ -34,13 +39,14 @@ For performance reasons, the string returned will often be the backing store of 
 
 ## See Also
 
-- [func CFAttributedStringCreate(CFAllocator!, CFString!, CFDictionary!) -> CFAttributedString!](cfattributedstringcreate(_:_:_:).md)
+### Creating a CFAttributedString
+- [func CFAttributedStringCreate(CFAllocator!, CFString!, CFDictionary!) -> CFAttributedString!](./cfattributedstringcreate%28_,_,_%29.md)
   Creates an attributed string with specified string and attributes.
-- [func CFAttributedStringCreateCopy(CFAllocator!, CFAttributedString!) -> CFAttributedString!](cfattributedstringcreatecopy(_:_:).md)
+- [func CFAttributedStringCreateCopy(CFAllocator!, CFAttributedString!) -> CFAttributedString!](./cfattributedstringcreatecopy%28_,_%29.md)
   Creates an immutable copy of an attributed string.
-- [func CFAttributedStringCreateWithSubstring(CFAllocator!, CFAttributedString!, CFRange) -> CFAttributedString!](cfattributedstringcreatewithsubstring(_:_:_:).md)
+- [func CFAttributedStringCreateWithSubstring(CFAllocator!, CFAttributedString!, CFRange) -> CFAttributedString!](./cfattributedstringcreatewithsubstring%28_,_,_%29.md)
   Creates a sub-attributed string from the specified range.
-- [func CFAttributedStringGetLength(CFAttributedString!) -> CFIndex](cfattributedstringgetlength(_:).md)
+- [func CFAttributedStringGetLength(CFAttributedString!) -> CFIndex](./cfattributedstringgetlength%28_%29.md)
   Returns the length of the attributed string in characters.
 
 

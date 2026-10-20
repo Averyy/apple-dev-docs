@@ -1,7 +1,8 @@
 # size
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dimensions of the annotation, in CSS pixels.
 
@@ -10,14 +11,14 @@ The dimensions of the annotation, in CSS pixels.
 
 ## Declaration
 
-```swift
+```
 get size(): Size;
 set size(_: Size);
 ```
 
 #### Discussion
 
-You can’t change the size of an [`MarkerAnnotation`](markerannotation.md).
+You can’t change the size of an [`MarkerAnnotation`](../markerannotation.md).
 
 
 ---

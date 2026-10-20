@@ -1,7 +1,8 @@
 # UIWritingToolsCoordinator.TextReplacementReason.rejected
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 An option to replace the text in your view when a grammar suggestion is rejected.
 
@@ -17,9 +18,13 @@ An option to replace the text in your view when a grammar suggestion is rejected
 case rejected
 ```
 
+```c
+UIWritingToolsCoordinatorTextReplacementReasonRejected
+```
+
 #### Discussion
 
-When the user interacts with a grammar issue and the UI is shown, and the option to ignore a suggestion is chosen, this reason will be used. Update your view’s text storage without animating the change. In addition, use `ignoreGrammarRange` on [`UITextChecker`](uitextchecker.md) to make sure that the suggestion will continue to be ignored.
+When the user interacts with a grammar issue and the UI is shown, and the option to ignore a suggestion is chosen, this reason will be used. Update your view’s text storage without animating the change. In addition, use `ignoreGrammarRange` on [`UITextChecker`](../../uitextchecker.md) to make sure that the suggestion will continue to be ignored.
 
 
 ---

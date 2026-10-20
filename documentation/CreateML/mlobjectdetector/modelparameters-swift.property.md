@@ -1,7 +1,8 @@
 # modelParameters
 
 **Framework**: Create ML  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The model configuration parameters the object detector used during its training session.
 
@@ -16,7 +17,8 @@ let modelParameters: MLObjectDetector.ModelParameters
 
 ## See Also
 
-- [var model: MLModel](mlobjectdetector/model.md)
+### Inspecting an object detector model
+- [var model: MLModel](./model.md)
   The object detector’s underlying Core ML model instance.
 
 

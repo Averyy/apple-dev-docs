@@ -1,7 +1,8 @@
 # UISwitch.Style.checkbox
 
 **Framework**: UIKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A style indicating that the switch appears as a Mac-style checkbox.
 
@@ -17,20 +18,25 @@ A style indicating that the switch appears as a Mac-style checkbox.
 case checkbox
 ```
 
+```c
+UISwitchStyleCheckbox
+```
+
 ## Mentions
 
-- [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
-- [Displaying a checkbox in your Mac app built with Mac Catalyst](displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
+- [Choosing a user interface idiom for your Mac app](../../choosing-a-user-interface-idiom-for-your-mac-app.md)
+- [Displaying a checkbox in your Mac app built with Mac Catalyst](../../displaying-a-checkbox-in-your-mac-app-built-with-mac-catalyst.md)
 
 #### Discussion
 
-This style is only available to Mac apps built with Mac Catalyst that use the [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md) idiom. For more information about the Mac idiom, see [`Choosing a user interface idiom for your Mac app`](choosing-a-user-interface-idiom-for-your-mac-app.md).
+This style is only available to Mac apps built with Mac Catalyst that use the [`UIUserInterfaceIdiom.mac`](../../uiuserinterfaceidiom/mac.md) idiom. For more information about the Mac idiom, see [Choosing a user interface idiom for your Mac app](../../choosing-a-user-interface-idiom-for-your-mac-app.md).
 
 ## See Also
 
-- [UISwitch.Style.automatic](uiswitch/style-swift.enum/automatic.md)
+### Styles
+- [UISwitch.Style.automatic](./automatic.md)
   A style indicating that the system chooses the appearance of the switch according to the current user interface idiom.
-- [UISwitch.Style.sliding](uiswitch/style-swift.enum/sliding.md)
+- [UISwitch.Style.sliding](./sliding.md)
   A style indicating that the switch appears as an on/off slider.
 
 

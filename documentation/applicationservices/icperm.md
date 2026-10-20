@@ -1,7 +1,8 @@
 # ICPerm
 
 **Framework**: Application Services  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 10.0+
@@ -10,6 +11,10 @@
 
 ```swift
 typealias ICPerm = UInt8
+```
+
+```c
+typedef UInt8 ICPerm;
 ```
 
 

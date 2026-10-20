@@ -1,7 +1,8 @@
 # readAttributeRxBroadcastCount(completion:)
 
 **Framework**: Matter  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 16.4+
@@ -15,7 +16,15 @@
 ## Declaration
 
 ```swift
+func readAttributeRxBroadcastCount(completion: @escaping @Sendable (NSNumber?, (any Error)?) -> Void)
+```
+
+```swift
 func readAttributeRxBroadcastCount() async throws -> NSNumber
+```
+
+```objc
+- (void) readAttributeRxBroadcastCountWithCompletion:(void (^)(NSNumber *value, NSError *error)) completion;
 ```
 
 

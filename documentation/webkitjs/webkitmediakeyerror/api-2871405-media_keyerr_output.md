@@ -9,17 +9,18 @@
 
 ## Declaration
 
-```swift
+```
 const unsigned short MEDIA_KEYERR_OUTPUT;
 ```
 
 ## See Also
 
-- [MEDIA_KEYERR_CLIENT](webkitmediakeyerror/2871348-media_keyerr_client.md)
-- [MEDIA_KEYERR_DOMAIN](webkitmediakeyerror/2871262-media_keyerr_domain.md)
-- [MEDIA_KEYERR_HARDWARECHANGE](webkitmediakeyerror/2871049-media_keyerr_hardwarechange.md)
-- [MEDIA_KEYERR_SERVICE](webkitmediakeyerror/2871316-media_keyerr_service.md)
-- [MEDIA_KEYERR_UNKNOWN](webkitmediakeyerror/2871428-media_keyerr_unknown.md)
+### Miscellaneous
+- [MEDIA_KEYERR_CLIENT](./api-2871348-media_keyerr_client.md)
+- [MEDIA_KEYERR_DOMAIN](./api-2871262-media_keyerr_domain.md)
+- [MEDIA_KEYERR_HARDWARECHANGE](./api-2871049-media_keyerr_hardwarechange.md)
+- [MEDIA_KEYERR_SERVICE](./api-2871316-media_keyerr_service.md)
+- [MEDIA_KEYERR_UNKNOWN](./api-2871428-media_keyerr_unknown.md)
 
 
 ---

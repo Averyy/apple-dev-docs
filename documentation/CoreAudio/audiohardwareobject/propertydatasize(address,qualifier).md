@@ -1,12 +1,13 @@
 # propertyDataSize(address:qualifier:)
 
 **Framework**: Core Audio  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Queries an AudioHardwareObject to find the size of the data for the given property.
 
 **Availability**:
-- Mac Catalyst ?+
+- Mac Catalyst
 - macOS 15.0+
 
 ## Declaration

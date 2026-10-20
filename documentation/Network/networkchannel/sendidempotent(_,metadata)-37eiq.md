@@ -1,7 +1,8 @@
 # sendIdempotent(_:metadata:)
 
 **Framework**: Network  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Send an idempotent text frame on a WebSocket connection.
 
@@ -19,6 +20,8 @@ Send an idempotent text frame on a WebSocket connection.
 ```swift
 func sendIdempotent(_ content: String, @ProtocolMetadataBuilder metadata builder: () -> [NWProtocolMetadata] = {[]})
 ```
+
+Available when `ApplicationProtocol` is `WebSocket`.
 
 #### Discussion
 

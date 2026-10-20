@@ -1,7 +1,8 @@
 # decode(_:from:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a value of the type you specify, decoded from a JSON object.
 
@@ -26,7 +27,7 @@ A value of the specified type, if the decoder can parse the data.
 
 #### Discussion
 
-If the data isn’t valid JSON, this method throws the [`DecodingError.dataCorrupted(_:)`](https://developer.apple.com/documentation/swift/decodingerror/datacorrupted(_:)) error. If a value within the JSON fails to decode, this method throws the corresponding error.
+If the data isn’t valid JSON, this method throws the [`DecodingError.dataCorrupted(_:)`](../../Swift/decodingerror/datacorrupted%28_%29.md) error. If a value within the JSON fails to decode, this method throws the corresponding error.
 
 ## Parameters
 

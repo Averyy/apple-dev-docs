@@ -1,7 +1,8 @@
 # creationDate
 
 **Framework**: PencilKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time at which this stroke path starts.
 
@@ -18,13 +19,18 @@ The time at which this stroke path starts.
 var creationDate: Date { get }
 ```
 
+```objc
+@property (nonatomic, readonly) NSDate * creationDate;
+```
+
 #### Discussion
 
 The time offset of the contained stroke points is relative to this date.
 
 ## See Also
 
-- [var count: Int](pkstrokepathreference/count.md)
+### Getting the stroke path properties
+- [var count: Int](./count.md)
   The number of control points in this stroke path.
 
 

@@ -1,7 +1,8 @@
 # prominentButtonAppearance
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The appearance attributes for Prominent buttons.
 
@@ -19,13 +20,18 @@ The appearance attributes for Prominent buttons.
 var prominentButtonAppearance: UIBarButtonItemAppearance { get set }
 ```
 
+```objc
+@property (nonatomic, copy, readwrite) UIBarButtonItemAppearance * prominentButtonAppearance;
+```
+
 #### Discussion
 
 Use this property to configure the appearance of bar button items that use `UIBarButtonItemStyleProminent`. If the navigation bar doesn’t have any buttons using this style, this property has no effect.
 
 ## See Also
 
-- [var buttonAppearance: UIBarButtonItemAppearance](uitoolbarappearance/buttonappearance.md)
+### Configuring bar button items
+- [var buttonAppearance: UIBarButtonItemAppearance](./buttonappearance.md)
   The appearance attributes for plain bar button items in the toolbar.
 
 

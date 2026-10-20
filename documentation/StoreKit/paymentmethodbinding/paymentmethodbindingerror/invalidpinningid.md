@@ -1,7 +1,8 @@
 # PaymentMethodBinding.PaymentMethodBindingError.invalidPinningID
 
 **Framework**: StoreKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The in-app binding identifier is invalid or expired.
 
@@ -19,13 +20,14 @@ case invalidPinningID
 
 #### Discussion
 
-For more information about the identifier, see [`id`](paymentmethodbinding/id.md).
+For more information about the identifier, see [`id`](../id.md).
 
 ## See Also
 
-- [PaymentMethodBinding.PaymentMethodBindingError.failed](paymentmethodbinding/paymentmethodbindingerror/failed.md)
+### Getting error codes
+- [PaymentMethodBinding.PaymentMethodBindingError.failed](./failed.md)
   The initialization or binding operation failed.
-- [PaymentMethodBinding.PaymentMethodBindingError.notEligible](paymentmethodbinding/paymentmethodbindingerror/noteligible.md)
+- [PaymentMethodBinding.PaymentMethodBindingError.notEligible](./noteligible.md)
   The user isn’t eligible.
 
 

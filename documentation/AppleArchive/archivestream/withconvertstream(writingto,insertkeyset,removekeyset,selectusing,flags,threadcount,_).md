@@ -1,7 +1,8 @@
 # withConvertStream(writingTo:insertKeySet:removeKeySet:selectUsing:flags:threadCount:_:)
 
 **Framework**: Apple Archive  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Calls the given closure with a convert output archive stream.
 
@@ -11,7 +12,7 @@ Calls the given closure with a convert output archive stream.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS
 - watchOS 7.0+
 
 ## Declaration
@@ -26,7 +27,7 @@ The result of the closure.
 
 #### Discussion
 
-This function opens a stream created by [`convertStream(writingTo:insertKeySet:removeKeySet:selectUsing:flags:threadCount:)`](archivestream/convertstream(writingto:insertkeyset:removekeyset:selectusing:flags:threadcount:).md), calls the specified closure, and closes the stream.
+This function opens a stream created by [`convertStream(writingTo:insertKeySet:removeKeySet:selectUsing:flags:threadCount:)`](./convertstream%28writingto,insertkeyset,removekeyset,selectusing,flags,threadcount%29.md), calls the specified closure, and closes the stream.
 
 ## Parameters
 
@@ -40,7 +41,8 @@ This function opens a stream created by [`convertStream(writingTo:insertKeySet:r
 
 ## See Also
 
-- [static func convertStream(writingTo: ArchiveStream, insertKeySet: ArchiveHeader.FieldKeySet, removeKeySet: ArchiveHeader.FieldKeySet, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int) -> ArchiveStream?](archivestream/convertstream(writingto:insertkeyset:removekeyset:selectusing:flags:threadcount:).md)
+### Converting Data
+- [static func convertStream(writingTo: ArchiveStream, insertKeySet: ArchiveHeader.FieldKeySet, removeKeySet: ArchiveHeader.FieldKeySet, selectUsing: ArchiveHeader.EntryFilter?, flags: ArchiveFlags, threadCount: Int) -> ArchiveStream?](./convertstream%28writingto,insertkeyset,removekeyset,selectusing,flags,threadcount%29.md)
   Opens a convert output archive stream.
 
 

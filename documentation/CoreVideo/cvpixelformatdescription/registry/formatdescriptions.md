@@ -1,7 +1,8 @@
 # formatDescriptions
 
 **Framework**: Core Video  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Get all registered pixel format descriptions.
 

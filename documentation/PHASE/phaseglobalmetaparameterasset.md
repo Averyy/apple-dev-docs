@@ -1,7 +1,8 @@
 # PHASEGlobalMetaParameterAsset
 
 **Framework**: PHASE  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A reference to a registered metaparameter that the app can share with multiple sound events or sources.
 
@@ -19,29 +20,34 @@ A reference to a registered metaparameter that the app can share with multiple s
 class PHASEGlobalMetaParameterAsset
 ```
 
+```objc
+@interface PHASEGlobalMetaParameterAsset : PHASEAsset
+```
+
 #### Overview
 
-The engine’s [`registerGlobalMetaParameter(metaParameterDefinition:)`](phaseassetregistry/registerglobalmetaparameter(metaparameterdefinition:).md) function returns an instance of this class for a parameter you register. Then, you access the actual metaparameter by using this class’s [`identifier`](phaseasset/identifier.md) as the key for metaparameter dictionary, for example, a sound event’s [`metaParameters`](phasesoundevent/metaparameters.md) or the asset registry’s [`globalMetaParameters`](phaseassetregistry/globalmetaparameters.md).
+The engine’s [`registerGlobalMetaParameter(metaParameterDefinition:)`](./phaseassetregistry/registerglobalmetaparameter%28metaparameterdefinition%29.md) function returns an instance of this class for a parameter you register. Then, you access the actual metaparameter by using this class’s [`identifier`](./phaseasset/identifier.md) as the key for metaparameter dictionary, for example, a sound event’s [`metaParameters`](./phasesoundevent/metaparameters.md) or the asset registry’s [`globalMetaParameters`](./phaseassetregistry/globalmetaparameters.md).
 
 As an opaque derived object, this class adds no properties to the subclass.
 
 ## Relationships
 
 ### Inherits From
-- [PHASEAsset](phaseasset.md)
+- [PHASEAsset](./phaseasset.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class PHASEMetaParameter](phasemetaparameter.md)
+### Base Metaparameters
+- [class PHASEMetaParameter](./phasemetaparameter.md)
   A named parameter with a value that the app can change over time.
-- [class PHASEMetaParameterDefinition](phasemetaparameterdefinition.md)
+- [class PHASEMetaParameterDefinition](./phasemetaparameterdefinition.md)
   A specification for a named parameter with a constant value.
 
 

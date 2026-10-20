@@ -1,7 +1,8 @@
 # USDLayer.ChangeList.Entry.InfoChange
 
 **Framework**: USDKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Old and new values for a changed info field.
 
@@ -22,16 +23,16 @@ struct InfoChange
 ## Topics
 
 ### Instance Properties
-- [var newValue: USDValue?](usdlayer/changelist/entry/infochange/newvalue.md)
+- [var newValue: USDValue?](./infochange/newvalue.md)
   The value after the change, or `nil` if the field was removed.
-- [var oldValue: USDValue?](usdlayer/changelist/entry/infochange/oldvalue.md)
+- [var oldValue: USDValue?](./infochange/oldvalue.md)
   The value before the change, or `nil` if the field was added.
 
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 
 ---

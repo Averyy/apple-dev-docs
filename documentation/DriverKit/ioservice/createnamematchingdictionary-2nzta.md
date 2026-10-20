@@ -1,29 +1,31 @@
 # CreateNameMatchingDictionary
 
 **Framework**: DriverKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Static Method
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 static OSDictionary * CreateNameMatchingDictionary(OSString *serviceName, OSDictionary *matching);
 ```
 
 ## See Also
 
-- [CreateKernelClassMatchingDictionary](ioservice/createkernelclassmatchingdictionary-9b28.md)
-- [CreateKernelClassMatchingDictionary](ioservice/createkernelclassmatchingdictionary-3uqly.md)
-- [CreateNameMatchingDictionary](ioservice/createnamematchingdictionary-206ej.md)
-- [CreatePropertyMatchingDictionary](ioservice/createpropertymatchingdictionary-4tuca.md)
-- [CreatePropertyMatchingDictionary](ioservice/createpropertymatchingdictionary-6o4ss.md)
-- [CreateUserClassMatchingDictionary](ioservice/createuserclassmatchingdictionary-4gpbj.md)
-- [CreateUserClassMatchingDictionary](ioservice/createuserclassmatchingdictionary-60ptx.md)
+### Type Methods
+- [CreateKernelClassMatchingDictionary](./createkernelclassmatchingdictionary-9b28.md)
+- [CreateKernelClassMatchingDictionary](./createkernelclassmatchingdictionary-3uqly.md)
+- [CreateNameMatchingDictionary](./createnamematchingdictionary-206ej.md)
+- [CreatePropertyMatchingDictionary](./createpropertymatchingdictionary-4tuca.md)
+- [CreatePropertyMatchingDictionary](./createpropertymatchingdictionary-6o4ss.md)
+- [CreateUserClassMatchingDictionary](./createuserclassmatchingdictionary-4gpbj.md)
+- [CreateUserClassMatchingDictionary](./createuserclassmatchingdictionary-60ptx.md)
 
 
 ---

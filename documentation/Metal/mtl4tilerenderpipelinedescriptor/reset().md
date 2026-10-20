@@ -1,7 +1,8 @@
 # reset()
 
 **Framework**: Metal  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resets the descriptor to the default state.
 
@@ -17,6 +18,10 @@ Resets the descriptor to the default state.
 
 ```swift
 func reset()
+```
+
+```objc
+- (void) reset;
 ```
 
 

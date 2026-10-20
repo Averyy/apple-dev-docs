@@ -1,7 +1,8 @@
 # TimelineProvider
 
 **Framework**: WidgetKit  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that advises WidgetKit when to update a widget’s display.
 
@@ -21,16 +22,16 @@ protocol TimelineProvider
 
 ## Mentions
 
-- [Increasing the visibility of widgets in Smart Stacks](widget-suggestions-in-smart-stacks.md)
-- [Migrating ClockKit complications to WidgetKit](converting-a-clockkit-app.md)
+- [Increasing the visibility of widgets in Smart Stacks](./widget-suggestions-in-smart-stacks.md)
+- [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
 
 #### Overview
 
-At various times, WidgetKit requests a *timeline* from the provider. A timeline is an array of objects conforming to [`TimelineEntry`](timelineentry.md). Each timeline entry has a date, and you can specify additional properties for displaying the widget.
+At various times, WidgetKit requests a *timeline* from the provider. A timeline is an array of objects conforming to [`TimelineEntry`](./timelineentry.md). Each timeline entry has a date, and you can specify additional properties for displaying the widget.
 
 For example, consider a widget that displays the health level of a game character. In the game, when the character’s health level is below 100 percent, it recovers at a rate of 25 percent per hour. If the character’s health level is 25 percent, the provider creates a timeline consisting of the following entries:
 
-![A diagram showing a timeline with four entries, starting with the current time at 25 percent health, and hourly entries for the next three hours at 50, 75, and 100 percent health](/images/com.apple.WidgetKit/TimelineProvider-TimelineEntries@2x.png)
+![A diagram showing a timeline with four entries, starting with the current time at 25 percent health, and hourly entries for the next three hours at 50, 75, and 100 percent health](https://developer.apple.com/tutorials/images/com.apple.WidgetKit/TimelineProvider-TimelineEntries@2x.png)
 
 The following code shows the structure encapsulating this information.
 
@@ -64,7 +65,7 @@ struct CharacterDetailProvider: TimelineProvider {
 }
 ```
 
-WidgetKit makes the timeline request after the user adds your widget from the widget gallery. Because your widget extension is not always running, WidgetKit needs to know when to activate it to update the widget. The timeline your provider generates informs WidgetKit when you would like to update the widget. The following example shows how the [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project creates a timeline for its leaderboard widget.
+WidgetKit makes the timeline request after the user adds your widget from the widget gallery. Because your widget extension is not always running, WidgetKit needs to know when to activate it to update the widget. The timeline your provider generates informs WidgetKit when you would like to update the widget. The following example shows how the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project creates a timeline for its leaderboard widget.
 
 ```swift
 func getTimeline(in context: Context, completion: @escaping (Timeline<LeaderboardEntry>) -> Void) {
@@ -84,9 +85,9 @@ func getTimeline(in context: Context, completion: @escaping (Timeline<Leaderboar
 
 If your provider needs to do asynchronous work to generate the timeline, such as fetching data from a server, store a reference to the `completion` handler and call it when you are done with your asynchronous work.
 
-##### Determine a Refresh Policy
+##### Determine a refresh policy
 
-When creating the timeline, the provider specifies a refresh policy that controls when WidgetKit requests a new timeline. The default behavior is to use [`atEnd`](timelinereloadpolicy/atend.md) to request a new timeline after the last date specified by the entries in a timeline. However, if there is a different date when WidgetKit should request a new timeline, you can specify a refresh policy of [`after(_:)`](timelinereloadpolicy/after(_:).md). For example, a dragon will appear in 2.5 hours and might engage in battle with the game character. Because the outcome of this battle may change the character’s health level, the provider can tell WidgetKit to request a new timeline after the battle.
+When creating the timeline, the provider specifies a refresh policy that controls when WidgetKit requests a new timeline. The default behavior is to use [`atEnd`](./timelinereloadpolicy/atend.md) to request a new timeline after the last date specified by the entries in a timeline. However, if there is a different date when WidgetKit should request a new timeline, you can specify a refresh policy of [`after(_:)`](./timelinereloadpolicy/after%28_%29.md). For example, a dragon will appear in 2.5 hours and might engage in battle with the game character. Because the outcome of this battle may change the character’s health level, the provider can tell WidgetKit to request a new timeline after the battle.
 
 ```swift
 // Request a timeline refresh after 2.5 hours.
@@ -100,14 +101,14 @@ Other examples of when it makes sense to use a different date include:
 - In a widget displaying stock market details, you might specify the next market opening or closing date because information typically doesn’t change overnight or during weekends.
 - A flight tracking widget might continue showing a “flight landed” indication after the flight lands. In this case, you could specify a date later than when the flight lands so that its status remains visible for a while before being cleared.
 
-Alternatively, if future events are unpredictable, you can tell WidgetKit to not request a new timeline at all by specifying [`never`](timelinereloadpolicy/never.md) for the policy. In that case, your app calls the [`WidgetCenter`](widgetcenter.md) function [`reloadTimelines(ofKind:)`](widgetcenter/reloadtimelines(ofkind:).md) when a new timeline is available. Some examples of when using [`never`](timelinereloadpolicy/never.md) makes sense include:
+Alternatively, if future events are unpredictable, you can tell WidgetKit to not request a new timeline at all by specifying [`never`](./timelinereloadpolicy/never.md) for the policy. In that case, your app calls the [`WidgetCenter`](./widgetcenter.md) function [`reloadTimelines(ofKind:)`](./widgetcenter/reloadtimelines%28ofkind%29.md) when a new timeline is available. Some examples of when using [`never`](./timelinereloadpolicy/never.md) makes sense include:
 
 - When the user has a widget configured to display the health of a character, but that character is no longer actively engaging in battle and its health level won’t change.
 - When a widget’s content is dependent on the user being logged into an account and they aren’t currently logged in.
 
-In both examples, when your app determines that the status has changed, it calls the [`WidgetCenter`](widgetcenter.md) function [`reloadTimelines(ofKind:)`](widgetcenter/reloadtimelines(ofkind:).md) and WidgetKit requests a new timeline.
+In both examples, when your app determines that the status has changed, it calls the [`WidgetCenter`](./widgetcenter.md) function [`reloadTimelines(ofKind:)`](./widgetcenter/reloadtimelines%28ofkind%29.md) and WidgetKit requests a new timeline.
 
-##### Refresh Widgets Efficiently
+##### Refresh widgets efficiently
 
 Each configured widget receives a limited number of refreshes every day. Several factors affect how many refreshes a widget receives, such as whether the containing app is running in the foreground or background, how frequently the widget is shown onscreen, and what types of activities the containing app engages in.
 
@@ -116,44 +117,45 @@ Each configured widget receives a limited number of refreshes every day. Several
 Use the following approaches to optimize your widget refreshes:
 
 - Have the containing app prepare data for the widget in advance of when the widget needs it. Use a shared group container to store the data.
-- Use background processing time in your app to keep shared data up to date. For more information, see [`Using background tasks to update your app`](https://developer.apple.com/documentation/uikit/using-background-tasks-to-update-your-app).
+- Use background processing time in your app to keep shared data up to date. For more information, see [Using background tasks to update your app](../UIKit/using-background-tasks-to-update-your-app.md).
 - Choose the most appropriate refresh policy for the information being shown, as described in the preceding section.
-- Call [`reloadTimelines(ofKind:)`](widgetcenter/reloadtimelines(ofkind:).md) only when information the widget is currently displaying changes.
+- Call [`reloadTimelines(ofKind:)`](./widgetcenter/reloadtimelines%28ofkind%29.md) only when information the widget is currently displaying changes.
 
-When your app is in the foreground, has an active media session, or is using the standard location service, refreshes don’t count against the widget’s daily limit. For more information about media sessions and location services, see [`AVAudioSession`](https://developer.apple.com/documentation/avfaudio/avaudiosession) and [`Configuring your app to use location services`](https://developer.apple.com/documentation/corelocation/configuring-your-app-to-use-location-services).
+When your app is in the foreground, has an active media session, or is using the standard location service, refreshes don’t count against the widget’s daily limit. For more information about media sessions and location services, see [`AVAudioSession`](../AVFAudio/avaudiosession.md) and [Configuring your app to use location services](../CoreLocation/configuring-your-app-to-use-location-services.md).
 
 ## Topics
 
 ### Generating Timelines
-- [func getSnapshot(in: Self.Context, completion: (Self.Entry) -> Void)](timelineprovider/getsnapshot(in:completion:).md)
+- [func getSnapshot(in: Self.Context, completion: (Self.Entry) -> Void)](./timelineprovider/getsnapshot%28in,completion%29.md)
   Provides a timeline entry that represents the current time and state of a widget.
-- [func getTimeline(in: Self.Context, completion: (Timeline<Self.Entry>) -> Void)](timelineprovider/gettimeline(in:completion:).md)
+- [func getTimeline(in: Self.Context, completion: (Timeline<Self.Entry>) -> Void)](./timelineprovider/gettimeline%28in,completion%29.md)
   Provides an array of timeline entries for the current time and, optionally, any future times to update a widget.
-- [func placeholder(in: Self.Context) -> Self.Entry](timelineprovider/placeholder(in:).md)
+- [func placeholder(in: Self.Context) -> Self.Entry](./timelineprovider/placeholder%28in%29.md)
   Provides a timeline entry representing a placeholder version of the widget.
-- [associatedtype Entry : TimelineEntry](timelineprovider/entry.md)
+- [associatedtype Entry : TimelineEntry](./timelineprovider/entry.md)
   A type that specifies the date to display a widget, and, optionally, indicates the current relevance of the widget’s content.
-- [TimelineProvider.Context](timelineprovider/context.md)
+- [TimelineProvider.Context](./timelineprovider/context.md)
   An object that contains details about how a widget is rendered, including its size and whether it appears in the widget gallery.
 ### Providing relevance clues
-- [func relevance() async -> WidgetRelevance<Void>](timelineprovider/relevance.md)
+- [func relevance() async -> WidgetRelevance<Void>](./timelineprovider/relevance%28%29.md)
   Provides an object containing attributes that describe when a specific widget is relevant.
 
 ## See Also
 
-- [Keeping a widget up to date](keeping-a-widget-up-to-date.md)
+### Timeline updates
+- [Keeping a widget up to date](./keeping-a-widget-up-to-date.md)
   Plan your widget’s timeline to show timely, relevant information using dynamic views, and update the timeline when things change.
-- [protocol AppIntentTimelineProvider](appintenttimelineprovider.md)
+- [protocol AppIntentTimelineProvider](./appintenttimelineprovider.md)
   A type that advises WidgetKit when to update a user-configurable widget’s display.
-- [protocol IntentTimelineProvider](intenttimelineprovider.md)
+- [protocol IntentTimelineProvider](./intenttimelineprovider.md)
   A type that advises WidgetKit when to update a user-configurable widget’s display.
-- [struct TimelineProviderContext](timelineprovidercontext.md)
+- [struct TimelineProviderContext](./timelineprovidercontext.md)
   An object that contains details about how a widget is rendered, including its size and whether it appears in the widget gallery.
-- [protocol TimelineEntry](timelineentry.md)
+- [protocol TimelineEntry](./timelineentry.md)
   A type that specifies the date to display a widget, and, optionally, indicates the current relevance of the widget’s content.
-- [struct Timeline](timeline.md)
+- [struct Timeline](./timeline.md)
   An object that specifies a date for WidgetKit to update a widget’s view.
-- [class WidgetCenter](widgetcenter.md)
+- [class WidgetCenter](./widgetcenter.md)
   An object that contains a list of user-configured widgets and is used for reloading widget timelines.
 
 

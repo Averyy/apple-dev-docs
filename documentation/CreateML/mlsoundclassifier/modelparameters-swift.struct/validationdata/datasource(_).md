@@ -1,7 +1,8 @@
 # MLSoundClassifier.ModelParameters.ValidationData.dataSource(_:)
 
 **Framework**: Create ML  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A validation dataset represented by a data source.
 
@@ -20,15 +21,16 @@ case dataSource(MLSoundClassifier.DataSource)
 
 #### Discussion
 
-- dataSource: An [`MLSoundClassifier.DataSource`](mlsoundclassifier/datasource.md) instance that contains a validation dataset.
+- dataSource: An [`MLSoundClassifier.DataSource`](../../datasource.md) instance that contains a validation dataset.
 
 ## See Also
 
-- [MLSoundClassifier.ModelParameters.ValidationData.split(strategy:)](mlsoundclassifier/modelparameters-swift.struct/validationdata/split(strategy:).md)
+### Designating validation data
+- [MLSoundClassifier.ModelParameters.ValidationData.split(strategy:)](./split%28strategy%29.md)
   A validation dataset derived by randomly selecting a portion of the sound classifier’s training dataset using the split strategy.
-- [MLSoundClassifier.ModelParameters.ValidationData.dictionary(_:)](mlsoundclassifier/modelparameters-swift.struct/validationdata/dictionary(_:).md)
+- [MLSoundClassifier.ModelParameters.ValidationData.dictionary(_:)](./dictionary%28_%29.md)
   A validation dataset represented by a dictionary.
-- [MLSoundClassifier.ModelParameters.ValidationData.none](mlsoundclassifier/modelparameters-swift.struct/validationdata/none.md)
+- [MLSoundClassifier.ModelParameters.ValidationData.none](./none.md)
   An empty validation dataset that skips the model validation phase after training.
 
 

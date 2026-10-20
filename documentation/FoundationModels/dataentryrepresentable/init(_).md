@@ -2,6 +2,7 @@
 
 **Framework**: Foundation Models  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Rehydrate this type from its transcript representation.

@@ -1,12 +1,13 @@
 # NSShowInvisibleGlyphs
 
 **Framework**: AppKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Generates displayable glyphs for invisible characters.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,11 +15,16 @@ Generates displayable glyphs for invisible characters.
 var NSShowInvisibleGlyphs: Int { get }
 ```
 
+```c
+NSShowInvisibleGlyphs
+```
+
 ## See Also
 
-- [var NSShowControlGlyphs: Int](nsshowcontrolglyphs.md)
+### Constants
+- [var NSShowControlGlyphs: Int](./nsshowcontrolglyphs.md)
   Generates displayable glyphs for control characters.
-- [var NSWantsBidiLevels: Int](nswantsbidilevels.md)
+- [var NSWantsBidiLevels: Int](./nswantsbidilevels.md)
   Generates directional formatting codes for bidirectional text.
 
 

@@ -1,7 +1,8 @@
 # init(contentsOfURL:)
 
 **Framework**: Foundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates and returns a mutable array containing the contents specified by a given URL.
 
@@ -30,15 +31,17 @@ The array representation at the location identified by `aURL` must contain only 
 
 ## Parameters
 
-- `url`: The location of the file containing a string representation of a mutable array produced by the [`write(to:atomically:)`](nsarray/write(to:atomically:).md) method.
+- `url`: The location of the file containing a string representation of a mutable array produced by the [`write(to:atomically:)`](../nsarray/write%28to,atomically%29.md) method.
 
 ## See Also
 
-- [func write(to: URL, atomically: Bool) -> Bool](nsarray/write(to:atomically:).md)
+### Related Documentation
+- [func write(to: URL, atomically: Bool) -> Bool](../nsarray/write%28to,atomically%29.md)
   Writes the contents of the array to the location specified by a given URL.
-- [init()](nsmutablearray/init.md)
+### Creating and Initializing a Mutable Array
+- [init()](./init%28%29.md)
   Initializes a newly allocated array.
-- [init(capacity: Int)](nsmutablearray/init(capacity:).md)
+- [init(capacity: Int)](./init%28capacity%29.md)
   Returns an array, initialized with enough memory to initially hold a given number of objects.
 
 

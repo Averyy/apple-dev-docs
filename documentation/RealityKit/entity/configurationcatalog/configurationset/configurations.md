@@ -1,7 +1,8 @@
 # configurations
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The alternative configurations that are available in a set.
 
@@ -25,7 +26,8 @@ The keys are configuration IDs, and the values are the corresponding configurati
 
 ## See Also
 
-- [var defaultConfiguration: Entity.ConfigurationCatalog.Configuration](entity/configurationcatalog/configurationset/defaultconfiguration.md)
+### Accessing configurations in a configuration set
+- [var defaultConfiguration: Entity.ConfigurationCatalog.Configuration](./defaultconfiguration.md)
   The default configuration, if you don’t explicitly set one.
 
 

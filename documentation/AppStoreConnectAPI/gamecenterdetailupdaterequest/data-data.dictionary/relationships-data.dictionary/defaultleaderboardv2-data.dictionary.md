@@ -1,21 +1,22 @@
 # GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboardV2
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.6+
 
 ## Declaration
 
-```swift
+```
 object GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboardV2
 ```
 
 ## Topics
 
 ### Dictionaries
-- [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboardV2.Data](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultleaderboardv2-data.dictionary/data-data.dictionary.md)
+- [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultLeaderboardV2.Data](./defaultleaderboardv2-data.dictionary/data-data.dictionary.md)
 
 ## Properties
 

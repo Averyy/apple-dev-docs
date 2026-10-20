@@ -1,7 +1,8 @@
 # pixelFormat
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The pixel format associated with the tile shading render pipeline.
 
@@ -19,9 +20,13 @@ The pixel format associated with the tile shading render pipeline.
 var pixelFormat: MTLPixelFormat { get set }
 ```
 
+```objc
+@property (nonatomic) MTLPixelFormat pixelFormat;
+```
+
 #### Discussion
 
-The default value is [`MTLPixelFormat.invalid`](mtlpixelformat/invalid.md).
+The default value is [`MTLPixelFormat.invalid`](../mtlpixelformat/invalid.md).
 
 
 ---

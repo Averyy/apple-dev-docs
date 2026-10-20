@@ -1,7 +1,8 @@
 # opacity
 
 **Framework**: MapKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A number that indicates a tile’s opacity.
 
@@ -10,7 +11,7 @@ A number that indicates a tile’s opacity.
 
 ## Declaration
 
-```swift
+```
 get opacity(): number;
 set opacity(opacity: number);
 ```
@@ -26,9 +27,10 @@ The default value is `1`.
 
 ## See Also
 
-- [maximumZ](tileoverlay/maximumz.md)
+### Setting overlay appearance
+- [maximumZ](./maximumz.md)
   The maximum zoom level for a tile overlay.
-- [minimumZ](tileoverlay/minimumz.md)
+- [minimumZ](./minimumz.md)
   The minimum zoom level for a tile overlay.
 
 

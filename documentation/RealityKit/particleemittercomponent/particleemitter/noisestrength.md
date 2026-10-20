@@ -1,7 +1,8 @@
 # noiseStrength
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Strength of the noise (turbulence) fields affecting particle motion. Defaults to 0.
 

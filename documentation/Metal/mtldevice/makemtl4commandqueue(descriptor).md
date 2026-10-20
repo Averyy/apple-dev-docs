@@ -2,6 +2,7 @@
 
 **Framework**: Metal  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Creates a new command queue from a queue descriptor.
@@ -20,13 +21,17 @@ Creates a new command queue from a queue descriptor.
 func makeMTL4CommandQueue(descriptor: MTL4CommandQueueDescriptor) throws -> any MTL4CommandQueue
 ```
 
+```objc
+- (id<MTL4CommandQueue>) newMTL4CommandQueueWithDescriptor:(MTL4CommandQueueDescriptor *) descriptor error:(NSError **) error;
+```
+
 #### Return Value
 
-A [`MTL4CommandQueue`](mtl4commandqueue.md) instance, or `nil` if the function failed.
+A [`MTL4CommandQueue`](../mtl4commandqueue.md) instance, or `nil` if the function failed.
 
 ## Parameters
 
-- `descriptor`: A [`MTL4CommandQueueDescriptor`](mtl4commandqueuedescriptor.md) instance that configures the [`MTL4CommandQueue`](mtl4commandqueue.md) instance.
+- `descriptor`: A [`MTL4CommandQueueDescriptor`](../mtl4commandqueuedescriptor.md) instance that configures the [`MTL4CommandQueue`](../mtl4commandqueue.md) instance.
 
 
 ---

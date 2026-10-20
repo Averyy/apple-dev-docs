@@ -1,7 +1,8 @@
 # subscriptionGroupIdentifier
 
 **Framework**: App Store Server Notifications  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type
 
 The identifier of the subscription group that the subscription belongs to.
 
@@ -10,21 +11,22 @@ The identifier of the subscription group that the subscription belongs to.
 
 ## Declaration
 
-```swift
+```
 string subscriptionGroupIdentifier
 ```
 
 #### Discussion
 
-Auto-renewable subscriptions always belong to a subscription group. You create the subscription group identifiers in App Store Connect before you create and add an auto-renewable subscription. For more information about subscription groups, see [`Offer auto-renewable subscriptions`](https://developer.apple.comhttps://help.apple.com/app-store-connect/#/dev75708c031).
+Auto-renewable subscriptions always belong to a subscription group. You create the subscription group identifiers in App Store Connect before you create and add an auto-renewable subscription. For more information about subscription groups, see [Offer auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev75708c031).
 
 ## See Also
 
-- [type productId](productid.md)
+### Product information
+- [type productId](./productid.md)
   The product identifier of the In-App Purchase.
-- [type type](type.md)
+- [type type](./type.md)
   The product type of the In-App Purchase.
-- [type quantity](quantity.md)
+- [type quantity](./quantity.md)
   The number of products or seats the customer purchased.
 
 

@@ -1,7 +1,8 @@
 # errors
 
 **Framework**: CKTool JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of errors that correspond to indexes.
 
@@ -10,7 +11,7 @@ An array of errors that correspond to indexes.
 
 ## Declaration
 
-```swift
+```
 attribute Array errors;
 ```
 

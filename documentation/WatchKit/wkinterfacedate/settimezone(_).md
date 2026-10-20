@@ -1,7 +1,8 @@
 # setTimeZone(_:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Sets the time zone to use when displaying time information.
 
@@ -14,6 +15,10 @@ Sets the time zone to use when displaying time information.
 func setTimeZone(_ timeZone: TimeZone?)
 ```
 
+```objc
+- (void) setTimeZone:(NSTimeZone *) timeZone;
+```
+
 #### Discussion
 
 Use this method to configure the time zone to one that is different from the user’s current time zone. For example, a world clock app might use this method to configure the time display information.
@@ -24,9 +29,10 @@ Use this method to configure the time zone to one that is different from the use
 
 ## See Also
 
-- [func setTextColor(UIColor?)](wkinterfacedate/settextcolor(_:).md)
+### Configuring the Date and Time Display
+- [func setTextColor(UIColor?)](./settextcolor%28_%29.md)
   Sets the color of the date and time text.
-- [func setCalendar(Calendar?)](wkinterfacedate/setcalendar(_:).md)
+- [func setCalendar(Calendar?)](./setcalendar%28_%29.md)
   Sets the calendar to use when formatting date information.
 
 

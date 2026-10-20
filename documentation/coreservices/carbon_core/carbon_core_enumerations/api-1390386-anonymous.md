@@ -5,9 +5,9 @@
 ## Topics
 
 ### Constants
-- [var kUCTextBreakGoBackwardsMask: Int](kuctextbreakgobackwardsmask.md)
-- [var kUCTextBreakIterateMask: Int](kuctextbreakiteratemask.md)
-- [var kUCTextBreakLeadingEdgeMask: Int](kuctextbreakleadingedgemask.md)
+- [var kUCTextBreakGoBackwardsMask: Int](../../kuctextbreakgobackwardsmask.md)
+- [var kUCTextBreakIterateMask: Int](../../kuctextbreakiteratemask.md)
+- [var kUCTextBreakLeadingEdgeMask: Int](../../kuctextbreakleadingedgemask.md)
 
 
 ---

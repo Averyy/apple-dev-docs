@@ -1,7 +1,8 @@
 # move
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Move the data represented by the drag items instead of copying it.
 

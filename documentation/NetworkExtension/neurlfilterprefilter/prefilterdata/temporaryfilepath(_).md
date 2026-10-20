@@ -1,7 +1,8 @@
 # NEURLFilterPrefilter.PrefilterData.temporaryFilepath(_:)
 
 **Framework**: Network Extension  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A prefilter data enumeration case that contains a temporary file path to the prefilter data as the associated value.
 
@@ -19,7 +20,8 @@ case temporaryFilepath(URL)
 
 ## See Also
 
-- [NEURLFilterPrefilter.PrefilterData.smallFilter(_:)](neurlfilterprefilter/prefilterdata/smallfilter(_:).md)
+### Accessing prefilter data
+- [NEURLFilterPrefilter.PrefilterData.smallFilter(_:)](./smallfilter%28_%29.md)
   A prefilter data enumeration case that contains the prefilter data as the associated value.
 
 

@@ -1,7 +1,8 @@
 # WKWebExtensionContext.Error.Code.backgroundContentFailedToLoad
 
 **Framework**: WebKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 Indicates that an error occurred loading the background content.
 
@@ -16,6 +17,10 @@ Indicates that an error occurred loading the background content.
 
 ```swift
 case backgroundContentFailedToLoad
+```
+
+```c
+WKWebExtensionContextErrorBackgroundContentFailedToLoad
 ```
 
 

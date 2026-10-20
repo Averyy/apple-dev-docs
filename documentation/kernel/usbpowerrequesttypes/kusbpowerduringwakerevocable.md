@@ -1,7 +1,8 @@
 # kUSBPowerDuringWakeRevocable
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 The system requests power reallocation as revocable.
 
@@ -10,13 +11,13 @@ The system requests power reallocation as revocable.
 
 ## Declaration
 
-```swift
+```c
 kUSBPowerDuringWakeRevocable = 6
 ```
 
 #### Discussion
 
-The system uses this extra power while it’s awake, but the [`kUSBPowerRequestWakeRelease`](usbpowerrequesttypes/kusbpowerrequestwakerelease.md) message can take that power away and reallocate it to another device.
+The system uses this extra power while it’s awake, but the [`kUSBPowerRequestWakeRelease`](./kusbpowerrequestwakerelease.md) message can take that power away and reallocate it to another device.
 
 
 ---

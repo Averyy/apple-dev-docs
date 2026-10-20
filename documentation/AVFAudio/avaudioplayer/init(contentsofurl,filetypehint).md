@@ -1,7 +1,8 @@
 # init(contentsOfURL:fileTypeHint:)
 
 **Framework**: AVFAudio  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 7.0+

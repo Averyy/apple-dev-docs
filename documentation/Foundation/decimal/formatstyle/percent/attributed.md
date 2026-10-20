@@ -1,7 +1,8 @@
 # attributed
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An attributed format style based on the decimal percent format style.
 
@@ -22,11 +23,12 @@ var attributed: Decimal.FormatStyle.Attributed { get }
 
 #### Discussion
 
-Use this modifier to create an [`Decimal.FormatStyle.Attributed`](decimal/formatstyle/attributed-swift.struct.md) instance, which formats values as [`AttributedString`](attributedstring.md) instances. These attributed strings contain attributes from the [`AttributeScopes.FoundationAttributes.NumberFormatAttributes`](attributescopes/foundationattributes/numberformatattributes.md) attribute scope. Use these attributes to determine which runs of the attributed string represent different parts of the formatted value.
+Use this modifier to create an [`Decimal.FormatStyle.Attributed`](../attributed-swift.struct.md) instance, which formats values as [`AttributedString`](../../../attributedstring.md) instances. These attributed strings contain attributes from the [`AttributeScopes.FoundationAttributes.NumberFormatAttributes`](../../../attributescopes/foundationattributes/numberformatattributes.md) attribute scope. Use these attributes to determine which runs of the attributed string represent different parts of the formatted value.
 
 ## See Also
 
-- [Decimal.FormatStyle.Attributed](decimal/formatstyle/attributed-swift.struct.md)
+### Creating attributed strings
+- [Decimal.FormatStyle.Attributed](../attributed-swift.struct.md)
   A format style that converts integers into attributed strings.
 
 

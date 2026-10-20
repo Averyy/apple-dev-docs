@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: associatedtype  
+**Role**: Associated Type  
 **Required**: Yes
 
 The type of view to present.
@@ -21,11 +22,12 @@ associatedtype UIViewType : UIView
 
 ## See Also
 
-- [func makeUIView(context: Self.Context) -> Self.UIViewType](uiviewrepresentable/makeuiview(context:).md)
+### Creating and updating the view
+- [func makeUIView(context: Self.Context) -> Self.UIViewType](./makeuiview%28context%29.md)
   Creates the view object and configures its initial state.
-- [func updateUIView(Self.UIViewType, context: Self.Context)](uiviewrepresentable/updateuiview(_:context:).md)
+- [func updateUIView(Self.UIViewType, context: Self.Context)](./updateuiview%28_,context%29.md)
   Updates the state of the specified view with new information from SwiftUI.
-- [UIViewRepresentable.Context](uiviewrepresentable/context.md)
+- [UIViewRepresentable.Context](./context.md)
 
 
 ---

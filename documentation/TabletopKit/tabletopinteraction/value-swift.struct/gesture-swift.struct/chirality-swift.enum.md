@@ -1,7 +1,8 @@
 # TabletopInteraction.Value.Gesture.Chirality
 
 **Framework**: TabletopKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The chirality, or handedness, of a gesture.
 
@@ -17,32 +18,33 @@ enum Chirality
 ## Topics
 
 ### Handedness
-- [TabletopInteraction.Value.Gesture.Chirality.left](tabletopinteraction/value-swift.struct/gesture-swift.struct/chirality-swift.enum/left.md)
+- [TabletopInteraction.Value.Gesture.Chirality.left](./chirality-swift.enum/left.md)
   Indicates a left-handed gesture.
-- [TabletopInteraction.Value.Gesture.Chirality.right](tabletopinteraction/value-swift.struct/gesture-swift.struct/chirality-swift.enum/right.md)
+- [TabletopInteraction.Value.Gesture.Chirality.right](./chirality-swift.enum/right.md)
   Indicates a right-handed gesture.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../../../Swift/equatable.md)
+- [Hashable](../../../../Swift/hashable.md)
+- [Sendable](../../../../Swift/sendable.md)
+- [SendableMetatype](../../../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var initialInputDevicePose: Pose3D](tabletopinteraction/value-swift.struct/gesture-swift.struct/initialinputdevicepose.md)
+### Getting the gesture properties
+- [var initialInputDevicePose: Pose3D](./initialinputdevicepose.md)
   The pose of the input device at the start of the interaction.
-- [var inputDevicePose: Pose3D](tabletopinteraction/value-swift.struct/gesture-swift.struct/inputdevicepose.md)
+- [var inputDevicePose: Pose3D](./inputdevicepose.md)
   The current pose of the input device.
-- [var kind: TabletopInteraction.Value.Gesture.Kind](tabletopinteraction/value-swift.struct/gesture-swift.struct/kind-swift.property.md)
+- [var kind: TabletopInteraction.Value.Gesture.Kind](./kind-swift.property.md)
   The input source or mode which started this gesture.
-- [TabletopInteraction.Value.Gesture.Kind](tabletopinteraction/value-swift.struct/gesture-swift.struct/kind-swift.enum.md)
+- [TabletopInteraction.Value.Gesture.Kind](./kind-swift.enum.md)
   The possible input sources or modes that can start a gesture interaction.
-- [var chirality: TabletopInteraction.Value.Gesture.Chirality?](tabletopinteraction/value-swift.struct/gesture-swift.struct/chirality-swift.property.md)
+- [var chirality: TabletopInteraction.Value.Gesture.Chirality?](./chirality-swift.property.md)
   The chirality, or handedness, of this gesture, if known.
-- [var phase: TabletopInteraction.Value.Phase](tabletopinteraction/value-swift.struct/gesture-swift.struct/phase.md)
+- [var phase: TabletopInteraction.Value.Phase](./phase.md)
   The current phase of the gesture.
 
 

@@ -1,7 +1,8 @@
 # kSecPolicyAppleX509Basic
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 Basic X509-style certificate evaluation.
 
@@ -18,6 +19,10 @@ Basic X509-style certificate evaluation.
 
 ```swift
 let kSecPolicyAppleX509Basic: CFString
+```
+
+```c
+extern CFStringRef const kSecPolicyAppleX509Basic;
 ```
 
 

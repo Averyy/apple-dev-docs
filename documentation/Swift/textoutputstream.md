@@ -1,7 +1,8 @@
 # TextOutputStream
 
 **Framework**: Swift  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 A type that can be the target of text-streaming operations.
 
@@ -32,7 +33,7 @@ for n in 1...5 {
 // s == "12345"
 ```
 
-### Conforming to the Textoutputstream Protocol
+### Conforming to the TextOutputStream Protocol
 
 To make your custom type conform to the `TextOutputStream` protocol, implement the required `write(_:)` method. Functions that use a `TextOutputStream` target may call `write(_:)` multiple times per writing operation.
 
@@ -66,21 +67,22 @@ print(s, to: &asciiLogger)
 ## Topics
 
 ### Instance Methods
-- [func write(String)](textoutputstream/write(_:).md)
+- [func write(String)](./textoutputstream/write%28_%29.md)
   Appends the given string to the stream.
 
 ## Relationships
 
 ### Inherited By
-- [StringProtocol](stringprotocol.md)
+- [StringProtocol](./stringprotocol.md)
 ### Conforming Types
-- [DefaultStringInterpolation](defaultstringinterpolation.md)
-- [String](string.md)
-- [Substring](substring.md)
+- [DefaultStringInterpolation](./defaultstringinterpolation.md)
+- [String](./string.md)
+- [Substring](./substring.md)
 
 ## See Also
 
-- [protocol TextOutputStreamable](textoutputstreamable.md)
+### Streams
+- [protocol TextOutputStreamable](./textoutputstreamable.md)
   A source of text-streaming operations.
 
 

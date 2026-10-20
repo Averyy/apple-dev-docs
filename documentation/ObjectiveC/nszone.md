@@ -1,7 +1,8 @@
 # NSZone
 
 **Framework**: Objective-C Runtime  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 1.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 1.0+
 - macOS 10.0+
 - tvOS 1.0+
-- visionOS ?+
+- visionOS
 - watchOS 1.0+
 
 ## Declaration
@@ -22,22 +23,23 @@ struct NSZone
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Copyable](../swift/copyable.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Copyable](../Swift/copyable.md)
 
 ## See Also
 
-- [struct NXHashTablePrototype](nxhashtableprototype.md)
-- [struct ObjCBool](objcbool.md)
-- [struct ObjCClassList](objcclasslist.md)
-- [struct Selector](selector.md)
-- [struct objc_method_description](objc_method_description.md)
+### Structures
+- [struct NXHashTablePrototype](./nxhashtableprototype.md)
+- [struct ObjCBool](./objcbool.md)
+- [struct ObjCClassList](./objcclasslist.md)
+- [struct Selector](./selector.md)
+- [struct objc_method_description](./objc_method_description.md)
   Defines an Objective-C method.
-- [struct objc_object](objc_object.md)
+- [struct objc_object](./objc_object.md)
   Represents an instance of a class.
-- [struct objc_property_attribute_t](objc_property_attribute_t.md)
+- [struct objc_property_attribute_t](./objc_property_attribute_t.md)
   Defines a property attribute.
-- [struct objc_super](objc_super-swift.struct.md)
+- [struct objc_super](./objc_super-swift.struct.md)
   Specifies the superclass of an instance.
 
 

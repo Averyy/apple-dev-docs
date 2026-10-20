@@ -1,7 +1,8 @@
 # currencyCode
 
 **Framework**: App Intents  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The ISO 4217 currency code that applies to the monetary amount.
 
@@ -11,7 +12,7 @@ The ISO 4217 currency code that applies to the monetary amount.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS
 - watchOS 9.0+
 
 ## Declaration
@@ -22,7 +23,8 @@ let currencyCode: String
 
 ## See Also
 
-- [let amount: Decimal](intentcurrencyamount/amount.md)
+### Getting the currency details
+- [let amount: Decimal](./amount.md)
   The monetary amount.
 
 

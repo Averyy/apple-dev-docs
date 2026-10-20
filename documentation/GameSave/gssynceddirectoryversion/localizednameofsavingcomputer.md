@@ -1,7 +1,8 @@
 # localizedNameOfSavingComputer
 
 **Framework**: GameSave  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The localized name of the device that saved this version.
 
@@ -16,6 +17,10 @@ The localized name of the device that saved this version.
 
 ```swift
 var localizedNameOfSavingComputer: String { get }
+```
+
+```objc
+@property (readonly, nonnull) NSString * localizedNameOfSavingComputer;
 ```
 
 

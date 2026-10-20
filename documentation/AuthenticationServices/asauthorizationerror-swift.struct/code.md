@@ -1,7 +1,8 @@
 # ASAuthorizationError.Code
 
 **Framework**: Authentication Services  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Codes that authorization errors can have.
 
@@ -20,60 +21,65 @@ Codes that authorization errors can have.
 enum Code
 ```
 
+```c
+enum ASAuthorizationError : NSInteger;
+```
+
 ## Topics
 
 ### Codes
-- [ASAuthorizationError.Code.canceled](asauthorizationerror-swift.struct/code/canceled.md)
+- [ASAuthorizationError.Code.canceled](./code/canceled.md)
   The user canceled the authorization attempt.
-- [ASAuthorizationError.Code.failed](asauthorizationerror-swift.struct/code/failed.md)
+- [ASAuthorizationError.Code.failed](./code/failed.md)
   The authorization attempt failed.
-- [ASAuthorizationError.Code.invalidResponse](asauthorizationerror-swift.struct/code/invalidresponse.md)
+- [ASAuthorizationError.Code.invalidResponse](./code/invalidresponse.md)
   The authorization request received an invalid response.
-- [ASAuthorizationError.Code.notHandled](asauthorizationerror-swift.struct/code/nothandled.md)
+- [ASAuthorizationError.Code.notHandled](./code/nothandled.md)
   The authorization request wasn’t handled.
-- [ASAuthorizationError.Code.unknown](asauthorizationerror-swift.struct/code/unknown.md)
+- [ASAuthorizationError.Code.unknown](./code/unknown.md)
   The authorization attempt failed for an unknown reason.
-- [ASAuthorizationError.Code.notInteractive](asauthorizationerror-swift.struct/code/notinteractive.md)
+- [ASAuthorizationError.Code.notInteractive](./code/notinteractive.md)
   The authorization request isn’t interactive.
-- [ASAuthorizationError.Code.credentialExport](asauthorizationerror-swift.struct/code/credentialexport.md)
+- [ASAuthorizationError.Code.credentialExport](./code/credentialexport.md)
   The credential export request failed.
-- [ASAuthorizationError.Code.credentialImport](asauthorizationerror-swift.struct/code/credentialimport.md)
+- [ASAuthorizationError.Code.credentialImport](./code/credentialimport.md)
   The credential import request failed.
 ### Enumeration Cases
-- [ASAuthorizationError.Code.deviceNotConfiguredForPasskeyCreation](asauthorizationerror-swift.struct/code/devicenotconfiguredforpasskeycreation.md)
+- [ASAuthorizationError.Code.deviceNotConfiguredForPasskeyCreation](./code/devicenotconfiguredforpasskeycreation.md)
   This error signals that the device is not currently set up to create passkeys.
-- [ASAuthorizationError.Code.matchedExcludedCredential](asauthorizationerror-swift.struct/code/matchedexcludedcredential.md)
+- [ASAuthorizationError.Code.matchedExcludedCredential](./code/matchedexcludedcredential.md)
   This error should only be returned when specifying @c excludedCredentials on a public key credential registration request.
-- [ASAuthorizationError.Code.preferSignInWithApple](asauthorizationerror-swift.struct/code/prefersigninwithapple.md)
+- [ASAuthorizationError.Code.preferSignInWithApple](./code/prefersigninwithapple.md)
   This error signals the user has an existing Sign in with Apple account that they would prefer to use instead of continuing the current request.
 ### Initializers
-- [init?(rawValue: Int)](asauthorizationerror-swift.struct/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](./code/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../../Swift/bitwisecopyable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [RawRepresentable](../../Swift/rawrepresentable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [static var canceled: ASAuthorizationError.Code](asauthorizationerror-swift.struct/canceled.md)
+### Error Codes
+- [static var canceled: ASAuthorizationError.Code](./canceled.md)
   The user canceled the authorization attempt.
-- [static var failed: ASAuthorizationError.Code](asauthorizationerror-swift.struct/failed.md)
+- [static var failed: ASAuthorizationError.Code](./failed.md)
   The authorization attempt failed.
-- [static var invalidResponse: ASAuthorizationError.Code](asauthorizationerror-swift.struct/invalidresponse.md)
+- [static var invalidResponse: ASAuthorizationError.Code](./invalidresponse.md)
   The authorization request received an invalid response.
-- [static var notHandled: ASAuthorizationError.Code](asauthorizationerror-swift.struct/nothandled.md)
+- [static var notHandled: ASAuthorizationError.Code](./nothandled.md)
   The authorization request wasn’t handled.
-- [static var unknown: ASAuthorizationError.Code](asauthorizationerror-swift.struct/unknown.md)
+- [static var unknown: ASAuthorizationError.Code](./unknown.md)
   The authorization attempt failed for an unknown reason.
-- [static var credentialExport: ASAuthorizationError.Code](asauthorizationerror-swift.struct/credentialexport.md)
+- [static var credentialExport: ASAuthorizationError.Code](./credentialexport.md)
   The credential export request failed.
-- [static var credentialImport: ASAuthorizationError.Code](asauthorizationerror-swift.struct/credentialimport.md)
+- [static var credentialImport: ASAuthorizationError.Code](./credentialimport.md)
   The credential import request failed.
 
 

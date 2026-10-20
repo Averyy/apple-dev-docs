@@ -1,7 +1,8 @@
 # displayTransform(viewRotationAngle:viewportSize:)
 
 **Framework**: ARKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns a display transform for the provided viewport size and view angle.
 
@@ -13,6 +14,10 @@ Returns a display transform for the provided viewport size and view angle.
 
 ```swift
 func displayTransform(viewRotationAngle: CGFloat, viewportSize: CGSize) -> CGAffineTransform
+```
+
+```objc
+- (CGAffineTransform) displayTransformForViewRotationAngle:(CGFloat) viewRotationAngle viewportSize:(CGSize) viewportSize;
 ```
 
 #### Return Value

@@ -1,7 +1,8 @@
 # readAttributes
 
 **Framework**: FSKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 The file system allows reading file attributes.
 
@@ -14,17 +15,22 @@ The file system allows reading file attributes.
 static var readAttributes: FSVolume.AccessMask { get }
 ```
 
+```c
+FSAccessReadAttributes
+```
+
 ## See Also
 
-- [static var writeAttributes: FSVolume.AccessMask](fsvolume/accessmask/writeattributes.md)
+### Declaring attribute access
+- [static var writeAttributes: FSVolume.AccessMask](./writeattributes.md)
   The file system allows writing file attributes.
-- [static var readXattr: FSVolume.AccessMask](fsvolume/accessmask/readxattr.md)
+- [static var readXattr: FSVolume.AccessMask](./readxattr.md)
   The file system allows reading extended file attributes.
-- [static var writeXattr: FSVolume.AccessMask](fsvolume/accessmask/writexattr.md)
+- [static var writeXattr: FSVolume.AccessMask](./writexattr.md)
   The file system allows writing extended file attributes.
-- [static var readSecurity: FSVolume.AccessMask](fsvolume/accessmask/readsecurity.md)
+- [static var readSecurity: FSVolume.AccessMask](./readsecurity.md)
   The file system allows reading a file’s security descriptors.
-- [static var writeSecurity: FSVolume.AccessMask](fsvolume/accessmask/writesecurity.md)
+- [static var writeSecurity: FSVolume.AccessMask](./writesecurity.md)
   The file system allows writing a file’s security descriptors.
 
 

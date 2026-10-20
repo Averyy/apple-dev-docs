@@ -1,14 +1,15 @@
 # sendLimitState
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.13+
 
 ## Declaration
 
-```swift
+```c
 void sendLimitState(const uint32_t line);
 ```
 

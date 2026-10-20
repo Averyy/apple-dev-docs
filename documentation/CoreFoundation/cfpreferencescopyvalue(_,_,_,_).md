@@ -1,18 +1,19 @@
 # CFPreferencesCopyValue(_:_:_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Returns a preference value for a given domain.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,13 +21,17 @@ Returns a preference value for a given domain.
 func CFPreferencesCopyValue(_ key: CFString, _ applicationID: CFString, _ userName: CFString, _ hostName: CFString) -> CFPropertyList?
 ```
 
+```c
+extern CFPropertyListRefCFPreferencesCopyValue(CFStringRef key, CFStringRef applicationID, CFStringRef userName, CFStringRef hostName);
+```
+
 #### Return Value
 
-The preference data for the specified domain. If the no value was located, returns `NULL`. Ownership follows the [`The Create Rule`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
+The preference data for the specified domain. If the no value was located, returns `NULL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
 #### Discussion
 
-This function is the primitive get mechanism for the higher level preference function [`CFPreferencesCopyAppValue(_:_:)`](cfpreferencescopyappvalue(_:_:).md) Unlike the high-level function, [`CFPreferencesCopyValue(_:_:_:_:)`](cfpreferencescopyvalue(_:_:_:_:).md) searches only the exact domain specified. Do not use this function directly unless you have a need. All arguments must be non-`NULL`. Do not use arbitrary user and host names, instead pass the pre-defined domain qualifier constants.
+This function is the primitive get mechanism for the higher level preference function [`CFPreferencesCopyAppValue(_:_:)`](./cfpreferencescopyappvalue%28_,_%29.md) Unlike the high-level function, [`CFPreferencesCopyValue(_:_:_:_:)`](./cfpreferencescopyvalue%28_,_,_,_%29.md) searches only the exact domain specified. Do not use this function directly unless you have a need. All arguments must be non-`NULL`. Do not use arbitrary user and host names, instead pass the pre-defined domain qualifier constants.
 
 Note that values returned from this function are immutable, even if you have recently set the value using a mutable object.
 
@@ -34,20 +39,21 @@ Note that values returned from this function are immutable, even if you have rec
 
 - `key`: Preferences key for the value to obtain.
 - `applicationID`: The ID of the application whose preferences are searched. Takes the form of a Java package name, such as `com.foosoft`.
-- `userName`: [`kCFPreferencesCurrentUser`](kcfpreferencescurrentuser.md) if to search the current-user domain, otherwise [`kCFPreferencesAnyUser`](kcfpreferencesanyuser.md) to search the any-user domain.
-- `hostName`: [`kCFPreferencesCurrentHost`](kcfpreferencescurrenthost.md) if to search the current-host domain, otherwise [`kCFPreferencesAnyHost`](kcfpreferencesanyhost.md) to search the any-host domain.
+- `userName`: [`kCFPreferencesCurrentUser`](./kcfpreferencescurrentuser.md) if to search the current-user domain, otherwise [`kCFPreferencesAnyUser`](./kcfpreferencesanyuser.md) to search the any-user domain.
+- `hostName`: [`kCFPreferencesCurrentHost`](./kcfpreferencescurrenthost.md) if to search the current-host domain, otherwise [`kCFPreferencesAnyHost`](./kcfpreferencesanyhost.md) to search the any-host domain.
 
 ## See Also
 
-- [func CFPreferencesCopyAppValue(CFString, CFString) -> CFPropertyList?](cfpreferencescopyappvalue(_:_:).md)
+### Getting Preference Values
+- [func CFPreferencesCopyAppValue(CFString, CFString) -> CFPropertyList?](./cfpreferencescopyappvalue%28_,_%29.md)
   Obtains a preference value for the specified key and application.
-- [func CFPreferencesCopyKeyList(CFString, CFString, CFString) -> CFArray?](cfpreferencescopykeylist(_:_:_:).md)
+- [func CFPreferencesCopyKeyList(CFString, CFString, CFString) -> CFArray?](./cfpreferencescopykeylist%28_,_,_%29.md)
   Constructs and returns the list of all keys set in the specified domain.
-- [func CFPreferencesCopyMultiple(CFArray?, CFString, CFString, CFString) -> CFDictionary](cfpreferencescopymultiple(_:_:_:_:).md)
+- [func CFPreferencesCopyMultiple(CFArray?, CFString, CFString, CFString) -> CFDictionary](./cfpreferencescopymultiple%28_,_,_,_%29.md)
   Returns a dictionary containing preference values for multiple keys.
-- [func CFPreferencesGetAppBooleanValue(CFString, CFString, UnsafeMutablePointer<DarwinBoolean>?) -> Bool](cfpreferencesgetappbooleanvalue(_:_:_:).md)
+- [func CFPreferencesGetAppBooleanValue(CFString, CFString, UnsafeMutablePointer<DarwinBoolean>?) -> Bool](./cfpreferencesgetappbooleanvalue%28_,_,_%29.md)
   Convenience function that directly obtains a Boolean preference value for the specified key.
-- [func CFPreferencesGetAppIntegerValue(CFString, CFString, UnsafeMutablePointer<DarwinBoolean>?) -> CFIndex](cfpreferencesgetappintegervalue(_:_:_:).md)
+- [func CFPreferencesGetAppIntegerValue(CFString, CFString, UnsafeMutablePointer<DarwinBoolean>?) -> CFIndex](./cfpreferencesgetappintegervalue%28_,_,_%29.md)
   Convenience function that directly obtains an integer preference value for the specified key.
 
 

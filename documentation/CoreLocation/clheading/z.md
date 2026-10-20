@@ -1,7 +1,8 @@
 # z
 
 **Framework**: Core Location  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The geomagnetic data (measured in microteslas) for the z-axis.
 
@@ -18,17 +19,22 @@ The geomagnetic data (measured in microteslas) for the z-axis.
 var z: CLHeadingComponentValue { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CLHeadingComponentValue z;
+```
+
 #### Discussion
 
 This value represents the z-axis deviation from the magnetic field lines being tracked by the device.
 
 ## See Also
 
-- [var x: CLHeadingComponentValue](clheading/x.md)
+### Getting the raw heading data
+- [var x: CLHeadingComponentValue](./x.md)
   The geomagnetic data (measured in microteslas) for the x-axis.
-- [var y: CLHeadingComponentValue](clheading/y.md)
+- [var y: CLHeadingComponentValue](./y.md)
   The geomagnetic data (measured in microteslas) for the y-axis.
-- [typealias CLHeadingComponentValue](clheadingcomponentvalue.md)
+- [typealias CLHeadingComponentValue](../clheadingcomponentvalue.md)
   A type used to report magnetic differences reported by the onboard hardware.
 
 

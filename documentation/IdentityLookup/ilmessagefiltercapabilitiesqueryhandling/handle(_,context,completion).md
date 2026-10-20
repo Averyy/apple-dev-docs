@@ -2,6 +2,7 @@
 
 **Framework**: SMS and Call Reporting  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Evaluates a query request and provides a response describing how the system should handle the message it represents.
@@ -15,7 +16,15 @@ Evaluates a query request and provides a response describing how the system shou
 ## Declaration
 
 ```swift
+func handle(_ capabilitiesQueryRequest: ILMessageFilterCapabilitiesQueryRequest, context: ILMessageFilterExtensionContext, completion: @escaping @Sendable (ILMessageFilterCapabilitiesQueryResponse) -> Void)
+```
+
+```swift
 func handle(_ capabilitiesQueryRequest: ILMessageFilterCapabilitiesQueryRequest, context: ILMessageFilterExtensionContext) async -> ILMessageFilterCapabilitiesQueryResponse
+```
+
+```objc
+- (void) handleCapabilitiesQueryRequest:(ILMessageFilterCapabilitiesQueryRequest *) capabilitiesQueryRequest context:(ILMessageFilterExtensionContext *) context completion:(void (^)(ILMessageFilterCapabilitiesQueryResponse *)) completion;
 ```
 
 ## Parameters

@@ -1,7 +1,8 @@
 # AlarmPresentation.Alert.SecondaryButtonBehavior.countdown
 
 **Framework**: AlarmKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A case that indicates the secondary button is a countdown.
 

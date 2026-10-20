@@ -1,7 +1,8 @@
 # ManagedBufferPointer
 
 **Framework**: Swift  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 Contains a buffer object, and provides access to an instance of `Header` and contiguous storage for an arbitrary number of `Element` instances stored in that buffer.
 
@@ -53,40 +54,41 @@ A valid buffer class is non-`@objc`, with no declared stored properties.  Its `d
 ## Topics
 
 ### Creating a Buffer
-- [init(bufferClass: AnyClass, minimumCapacity: Int, makingHeaderWith: (AnyObject, (AnyObject) -> Int) throws -> Header) rethrows](managedbufferpointer/init(bufferclass:minimumcapacity:makingheaderwith:).md)
+- [init(bufferClass: AnyClass, minimumCapacity: Int, makingHeaderWith: (AnyObject, (AnyObject) -> Int) throws -> Header) rethrows](./managedbufferpointer/init%28bufferclass,minimumcapacity,makingheaderwith%29.md)
   Create with new storage containing an initial `Header` and space for at least `minimumCapacity` `element`s.
-- [init(unsafeBufferObject: AnyObject)](managedbufferpointer/init(unsafebufferobject:).md)
+- [init(unsafeBufferObject: AnyObject)](./managedbufferpointer/init%28unsafebufferobject%29.md)
   Manage the given `buffer`.
 ### Inspecting a Buffer
-- [var capacity: Int](managedbufferpointer/capacity.md)
+- [var capacity: Int](./managedbufferpointer/capacity.md)
   The actual number of elements that can be stored in this object.
-- [var header: Header](managedbufferpointer/header.md)
+- [var header: Header](./managedbufferpointer/header.md)
   The stored `Header` instance.
-- [var buffer: AnyObject](managedbufferpointer/buffer.md)
+- [var buffer: AnyObject](./managedbufferpointer/buffer.md)
   Returns the object instance being used for storage.
-- [func isUniqueReference() -> Bool](managedbufferpointer/isuniquereference.md)
+- [func isUniqueReference() -> Bool](./managedbufferpointer/isuniquereference%28%29.md)
   Returns `true` if `self` holds the only strong reference to its buffer; otherwise, returns `false`.
 ### Accessing Buffer Contents
-- [func withUnsafeMutablePointerToElements<E, R>((UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](managedbufferpointer/withunsafemutablepointertoelements(_:).md)
+- [func withUnsafeMutablePointerToElements<E, R>((UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](./managedbufferpointer/withunsafemutablepointertoelements%28_%29.md)
   Call `body` with an `UnsafeMutablePointer` to the `Element` storage.
-- [func withUnsafeMutablePointerToHeader<E, R>((UnsafeMutablePointer<Header>) throws(E) -> R) throws(E) -> R](managedbufferpointer/withunsafemutablepointertoheader(_:).md)
+- [func withUnsafeMutablePointerToHeader<E, R>((UnsafeMutablePointer<Header>) throws(E) -> R) throws(E) -> R](./managedbufferpointer/withunsafemutablepointertoheader%28_%29.md)
   Call `body` with an `UnsafeMutablePointer` to the stored `Header`.
-- [func withUnsafeMutablePointers<E, R>((UnsafeMutablePointer<Header>, UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](managedbufferpointer/withunsafemutablepointers(_:).md)
+- [func withUnsafeMutablePointers<E, R>((UnsafeMutablePointer<Header>, UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](./managedbufferpointer/withunsafemutablepointers%28_%29.md)
   Call `body` with `UnsafeMutablePointer`s to the stored `Header` and raw `Element` storage.
 ### Comparing Buffers
-- [static func != (borrowing Self, borrowing Self) -> Bool](managedbufferpointer/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](./managedbufferpointer/noteq%28_,_%29.md)
   Returns a Boolean value indicating whether two values are not equal.
 ### Default Implementations
-- [Equatable Implementations](managedbufferpointer/equatable-implementations.md)
+- [Equatable Implementations](./managedbufferpointer/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](equatable.md)
+- [Equatable](./equatable.md)
 
 ## See Also
 
-- [class ManagedBuffer](managedbuffer.md)
+### Buffer Implementation
+- [class ManagedBuffer](./managedbuffer.md)
   A class whose instances contain a property of type `Header` and raw storage for an array of `Element`, whose size is determined at instance creation.
 
 

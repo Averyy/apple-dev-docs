@@ -1,21 +1,23 @@
 # OSPrintMemory
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+
 
 ## Declaration
 
-```swift
+```c
 void OSPrintMemory(void);
 ```
 
 ## See Also
 
-- [IOFindNameForValue](1575325-iofindnameforvalue.md)
-- [IOFindValueForName](1575321-iofindvalueforname.md)
+### Helpers
+- [IOFindNameForValue](./api-1575325-iofindnameforvalue.md)
+- [IOFindValueForName](./api-1575321-iofindvalueforname.md)
 
 
 ---

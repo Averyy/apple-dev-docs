@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: WebKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Create a new WebView.
 
@@ -21,11 +22,12 @@ Create a new WebView.
 
 ## Parameters
 
-- `page`: The [`WebPage`](webpage.md) that should be associated with this [`WebView`](webview-swift.struct.md). It is a programming error to create multiple [`WebView`](webview-swift.struct.md)s with the same [`WebPage`](webpage.md).
+- `page`: The [`WebPage`](../webpage.md) that should be associated with this [`WebView`](../webview-swift.struct.md). It is a programming error to create multiple [`WebView`](../webview-swift.struct.md)s with the same [`WebPage`](../webpage.md).
 
 ## See Also
 
-- [init(url: URL?)](webview-swift.struct/init(url:).md)
+### Creating web views
+- [init(url: URL?)](./init%28url%29.md)
   Create a new WebView with the specified URL.
 
 

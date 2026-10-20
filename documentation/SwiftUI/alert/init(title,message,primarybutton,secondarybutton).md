@@ -1,18 +1,21 @@
 # init(title:message:primaryButton:secondaryButton:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an alert with two buttons.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
-- visionOS 1.0+
-- watchOS 6.0+
+- iOS 13.0+ - Deprecated in 27.2
+- iPadOS 13.0+ - Deprecated in 27.2
+- Mac Catalyst 13.0+ - Deprecated in 27.2
+- macOS 10.15+ - Deprecated in 27.2
+- tvOS 13.0+ - Deprecated in 27.2
+- visionOS 1.0+ - Deprecated in 27.2
+- watchOS 6.0+ - Deprecated in 27.2
+
+> **Deprecated**: Use a [`View`](../view.md) modifier like [`alert(_:isPresented:presenting:actions:message:)`](../view/alert%28_,ispresented,presenting,actions,message%29-8584l.md) instead.
 
 ## Declaration
 
@@ -33,9 +36,10 @@ The system determines the visual ordering of the buttons.
 
 ## See Also
 
-- [init(title: Text, message: Text?, dismissButton: Alert.Button?)](alert/init(title:message:dismissbutton:).md)
+### Creating an alert
+- [init(title: Text, message: Text?, dismissButton: Alert.Button?)](./init%28title,message,dismissbutton%29.md)
   Creates an alert with one button.
-- [static func sideBySideButtons(title: Text, message: Text?, primaryButton: Alert.Button, secondaryButton: Alert.Button) -> Alert](alert/sidebysidebuttons(title:message:primarybutton:secondarybutton:).md)
+- [static func sideBySideButtons(title: Text, message: Text?, primaryButton: Alert.Button, secondaryButton: Alert.Button) -> Alert](./sidebysidebuttons%28title,message,primarybutton,secondarybutton%29.md)
   Creates a side by side button alert.
 
 

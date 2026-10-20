@@ -1,7 +1,8 @@
 # SubscriptionStoreControlStyleConfiguration.Section.Header
 
 **Framework**: StoreKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A type-erased header of a section of subscription options.
 
@@ -24,17 +25,18 @@ A type-erased header of a section of subscription options.
 ## Relationships
 
 ### Conforms To
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [View](../swiftui/view.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
+- [View](../../../SwiftUI/view.md)
 
 ## See Also
 
-- [var header: SubscriptionStoreControlStyleConfiguration.Section.Header?](subscriptionstorecontrolstyleconfiguration/section/header-swift.property.md)
+### Getting accessory views
+- [var header: SubscriptionStoreControlStyleConfiguration.Section.Header?](./header-swift.property.md)
   A decorative header view for a section that displays before the options.
-- [var footer: SubscriptionStoreControlStyleConfiguration.Section.Footer?](subscriptionstorecontrolstyleconfiguration/section/footer-swift.property.md)
+- [var footer: SubscriptionStoreControlStyleConfiguration.Section.Footer?](./footer-swift.property.md)
   A decorative footer view for a section that displays after the options.
-- [SubscriptionStoreControlStyleConfiguration.Section.Footer](subscriptionstorecontrolstyleconfiguration/section/footer-swift.struct.md)
+- [SubscriptionStoreControlStyleConfiguration.Section.Footer](./footer-swift.struct.md)
   A type-erased footer of a section of subscription options.
 
 

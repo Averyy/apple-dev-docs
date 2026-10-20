@@ -1,7 +1,8 @@
 # value
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The result group’s value.
 
@@ -20,17 +21,22 @@ The result group’s value.
 var value: Any { get }
 ```
 
+```objc
+@property (retain, readonly) id value;
+```
+
 ## See Also
 
-- [var attribute: String](nsmetadataqueryresultgroup/attribute.md)
+### Getting Query Results
+- [var attribute: String](./attribute.md)
   The result group’s attribute name.
-- [var results: [Any]](nsmetadataqueryresultgroup/results.md)
+- [var results: [Any]](./results.md)
   An array containing the result group’s result objects.
-- [var resultCount: Int](nsmetadataqueryresultgroup/resultcount.md)
+- [var resultCount: Int](./resultcount.md)
   The number of results returned by the result group.
-- [func result(at: Int) -> Any](nsmetadataqueryresultgroup/result(at:).md)
+- [func result(at: Int) -> Any](./result%28at%29.md)
   Returns the query result at a specific index.
-- [var subgroups: [NSMetadataQueryResultGroup]?](nsmetadataqueryresultgroup/subgroups.md)
+- [var subgroups: [NSMetadataQueryResultGroup]?](./subgroups.md)
   An array containing the result group’s subgroups.
 
 

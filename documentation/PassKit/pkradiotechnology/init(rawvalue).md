@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a radio technology object of the specified type.
 
@@ -9,7 +10,7 @@ Creates a radio technology object of the specified type.
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
-- macOS ?+
+- macOS
 - visionOS 1.0+
 - watchOS 7.3+
 

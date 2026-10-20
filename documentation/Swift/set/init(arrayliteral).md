@@ -1,7 +1,8 @@
 # init(arrayLiteral:)
 
 **Framework**: Swift  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a set containing the elements of the given array literal.
 
@@ -19,6 +20,8 @@ Creates a set containing the elements of the given array literal.
 ```swift
 init(arrayLiteral elements: Element...)
 ```
+
+Available when `Element` conforms to `Hashable`.
 
 #### Discussion
 
@@ -40,7 +43,8 @@ if ingredients.isSuperset(of: ["sugar", "salt"]) {
 
 ## See Also
 
-- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](set/withcontiguousstorageifavailable(_:).md)
+### Infrequently Used Functionality
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](./withcontiguousstorageifavailable%28_%29.md)
   Executes a closure on the sequence’s contiguous storage.
 
 

@@ -1,7 +1,8 @@
 # presentationDescriptor
 
 **Framework**: Immersive Media Support  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current remote immersive video presentation descriptor.
 

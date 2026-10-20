@@ -1,19 +1,26 @@
 # documentPicker(_:didPickDocumentAt:)
 
 **Framework**: UIKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the user has selected a document or a destination.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
+- iOS 8.0+ - Deprecated in 11.0
+- iPadOS 8.0+ - Deprecated in 11.0
+- Mac Catalyst 13.1+ - Deprecated in 13.1
+
+> **Deprecated**: Use the [`documentPicker(_:didPickDocumentsAt:)`](./documentpicker%28_,didpickdocumentsat%29.md) method instead.
 
 ## Declaration
 
 ```swift
 optional func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL)
+```
+
+```objc
+- (void) documentPicker:(UIDocumentPickerViewController *) controller didPickDocumentAtURL:(NSURL *) url;
 ```
 
 #### Discussion
@@ -26,7 +33,7 @@ The URL refers to a copy of the selected document. This document is a temporary 
 
 - `UIDocumentPickerModeOpen`
 
-The URL refers to the selected document. The provided URL is a security-scoped URL referring to a file outside your app’s sandbox. For more information on working with external, security-scoped URLs, see [`Requirements`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/DocumentPickerProgrammingGuide/AccessingDocuments/AccessingDocuments.html#//apple_ref/doc/uid/TP40014451-CH2-SW3).
+The URL refers to the selected document. The provided URL is a security-scoped URL referring to a file outside your app’s sandbox. For more information on working with external, security-scoped URLs, see [Requirements](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/DocumentPickerProgrammingGuide/AccessingDocuments/AccessingDocuments.html#//apple_ref/doc/uid/TP40014451-CH2-SW3).
 
 - `UIDocumentPickerModeExportToService`
 
@@ -34,7 +41,7 @@ The URL refers to the new copy of the exported document at the selected destinat
 
 - `UIDocumentPickerModeMoveToService`
 
-The URL refers to the document’s new location. The provided URL is a security-scoped URL referring to a file outside your app’s sandbox. For more information on working with external, security-scoped URLs, see [`Requirements`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/DocumentPickerProgrammingGuide/AccessingDocuments/AccessingDocuments.html#//apple_ref/doc/uid/TP40014451-CH2-SW3).
+The URL refers to the document’s new location. The provided URL is a security-scoped URL referring to a file outside your app’s sandbox. For more information on working with external, security-scoped URLs, see [Requirements](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/DocumentPickerProgrammingGuide/AccessingDocuments/AccessingDocuments.html#//apple_ref/doc/uid/TP40014451-CH2-SW3).
 
 ## Parameters
 
@@ -43,9 +50,10 @@ The URL refers to the document’s new location. The provided URL is a security-
 
 ## See Also
 
-- [func documentPicker(UIDocumentPickerViewController, didPickDocumentsAt: [URL])](uidocumentpickerdelegate/documentpicker(_:didpickdocumentsat:).md)
+### Responding to user actions
+- [func documentPicker(UIDocumentPickerViewController, didPickDocumentsAt: [URL])](./documentpicker%28_,didpickdocumentsat%29.md)
   Tells the delegate that the user has selected one or more documents.
-- [func documentPickerWasCancelled(UIDocumentPickerViewController)](uidocumentpickerdelegate/documentpickerwascancelled(_:).md)
+- [func documentPickerWasCancelled(UIDocumentPickerViewController)](./documentpickerwascancelled%28_%29.md)
   Tells the delegate that the user canceled the document picker.
 
 

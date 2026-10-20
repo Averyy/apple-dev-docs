@@ -1,18 +1,19 @@
 # SCNCapsule
 
 **Framework**: SceneKit  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A right circular cylinder geometry whose ends are capped with hemispheres.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -20,69 +21,74 @@ A right circular cylinder geometry whose ends are capped with hemispheres.
 class SCNCapsule
 ```
 
+```objc
+@interface SCNCapsule : SCNGeometry
+```
+
 #### Overview
 
-![None](/images/com.apple.scenekit/media-2929808@2x.png)
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929808@2x.png)
 
-Define the size of the two hemispheres forming the ends of a capsule with the [`capRadius`](scncapsule/capradius.md) property. Because the cylindrical body of the capsule stretches between the its two hemispherical ends, its circular cross section in the x- and z-axis dimensions has the same radius. Define the capsule’s extent in the z-axis dimension of its local coordinate space with the [`height`](scncapsule/height.md) property. To change the orientation of a capsule, adjust the [`transform`](scnnode/transform.md) property of the node containing the capsule geometry.
+Define the size of the two hemispheres forming the ends of a capsule with the [`capRadius`](./scncapsule/capradius.md) property. Because the cylindrical body of the capsule stretches between the its two hemispherical ends, its circular cross section in the x- and z-axis dimensions has the same radius. Define the capsule’s extent in the z-axis dimension of its local coordinate space with the [`height`](./scncapsule/height.md) property. To change the orientation of a capsule, adjust the [`transform`](./scnnode/transform.md) property of the node containing the capsule geometry.
 
-Control the level of detail with the [`heightSegmentCount`](scncapsule/heightsegmentcount.md), [`capSegmentCount`](scncapsule/capsegmentcount.md), and [`height`](scncapsule/height.md) properties. Higher radial and cap segment counts create smoother curves for the cylinder’s circular sides and hemispherical ends. A higher segment count in any direction produces more vertices, which can improve rendering quality for certain lighting models or custom shader effects, but at a cost to rendering performance.
+Control the level of detail with the [`heightSegmentCount`](./scncapsule/heightsegmentcount.md), [`capSegmentCount`](./scncapsule/capsegmentcount.md), and [`height`](./scncapsule/height.md) properties. Higher radial and cap segment counts create smoother curves for the cylinder’s circular sides and hemispherical ends. A higher segment count in any direction produces more vertices, which can improve rendering quality for certain lighting models or custom shader effects, but at a cost to rendering performance.
 
 ## Topics
 
 ### Creating a Capsule
-- [convenience init(capRadius: CGFloat, height: CGFloat)](scncapsule/init(capradius:height:).md)
+- [convenience init(capRadius: CGFloat, height: CGFloat)](./scncapsule/init%28capradius,height%29.md)
   Creates a capsule geometry with the specified radius and height.
 ### Adjusting a Capsule’s Dimensions
-- [var capRadius: CGFloat](scncapsule/capradius.md)
+- [var capRadius: CGFloat](./scncapsule/capradius.md)
   The radius both of the capsule’s circular center cross section and of its hemispherical ends. Animatable.
-- [var height: CGFloat](scncapsule/height.md)
+- [var height: CGFloat](./scncapsule/height.md)
   The extent of the capsule along its y-axis. Animatable.
 ### Adjusting Geometric Detail
-- [var radialSegmentCount: Int](scncapsule/radialsegmentcount.md)
+- [var radialSegmentCount: Int](./scncapsule/radialsegmentcount.md)
   The number of subdivisions around the lateral circumference of the capsule. Animatable.
-- [var capSegmentCount: Int](scncapsule/capsegmentcount.md)
+- [var capSegmentCount: Int](./scncapsule/capsegmentcount.md)
   The number of subdivisions in the height of each hemispherical end of the capsule. Animatable.
-- [var heightSegmentCount: Int](scncapsule/heightsegmentcount.md)
+- [var heightSegmentCount: Int](./scncapsule/heightsegmentcount.md)
   The number of subdivisions in the sides of the capsule along its y-axis. Animatable.
 
 ## Relationships
 
 ### Inherits From
-- [SCNGeometry](scngeometry.md)
+- [SCNGeometry](./scngeometry.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCoding](../foundation/nscoding.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
-- [NSSecureCoding](../foundation/nssecurecoding.md)
-- [SCNAnimatable](scnanimatable.md)
-- [SCNBoundingVolume](scnboundingvolume.md)
-- [SCNShadable](scnshadable.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCoding](../Foundation/nscoding.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
+- [NSSecureCoding](../Foundation/nssecurecoding.md)
+- [SCNAnimatable](./scnanimatable.md)
+- [SCNBoundingVolume](./scnboundingvolume.md)
+- [SCNShadable](./scnshadable.md)
 
 ## See Also
 
-- [class SCNFloor](scnfloor.md)
+### Basic Shapes
+- [class SCNFloor](./scnfloor.md)
   A plane that can optionally display a reflection of the scene above it.
-- [class SCNBox](scnbox.md)
+- [class SCNBox](./scnbox.md)
   A six-sided polyhedron geometry whose faces are all rectangles, optionally with rounded edges and corners.
-- [class SCNCone](scncone.md)
+- [class SCNCone](./scncone.md)
   A right circular cone or frustum geometry.
-- [class SCNCylinder](scncylinder.md)
+- [class SCNCylinder](./scncylinder.md)
   A right circular cylinder geometry.
-- [class SCNPlane](scnplane.md)
+- [class SCNPlane](./scnplane.md)
   A rectangular, one-sided plane geometry of specified width and height.
-- [class SCNPyramid](scnpyramid.md)
+- [class SCNPyramid](./scnpyramid.md)
   A right rectangular pyramid geometry.
-- [class SCNSphere](scnsphere.md)
+- [class SCNSphere](./scnsphere.md)
   A sphere (or ball or globe) geometry.
-- [class SCNTorus](scntorus.md)
+- [class SCNTorus](./scntorus.md)
   A torus, or ring-shaped geometry.
-- [class SCNTube](scntube.md)
+- [class SCNTube](./scntube.md)
   A tube or pipe geometry—a right circular cylinder with a circular hole along its central axis.
 
 

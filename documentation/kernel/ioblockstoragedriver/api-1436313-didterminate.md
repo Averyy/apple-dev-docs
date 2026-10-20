@@ -1,14 +1,15 @@
 # didTerminate
 
 **Framework**: Kernel  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 **Availability**:
 - macOS 10.11.4+
 
 ## Declaration
 
-```swift
+```cpp
 virtual bool didTerminate(IOService *provider, IOOptionBits options, bool *defer);
 ```
 

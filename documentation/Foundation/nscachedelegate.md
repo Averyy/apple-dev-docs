@@ -1,9 +1,10 @@
 # NSCacheDelegate
 
 **Framework**: Foundation  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
-The delegate of an [`NSCache`](nscache.md) object implements this protocol to perform specialized actions when an object is about to be evicted or removed from the cache.
+The delegate of an [`NSCache`](./nscache.md) object implements this protocol to perform specialized actions when an object is about to be evicted or removed from the cache.
 
 **Availability**:
 - iOS 2.0+
@@ -20,20 +21,25 @@ The delegate of an [`NSCache`](nscache.md) object implements this protocol to pe
 protocol NSCacheDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol NSCacheDelegate <NSObject>
+```
+
 ## Topics
 
 ### Responding to Object Eviction
-- [func cache(NSCache<AnyObject, AnyObject>, willEvictObject: Any)](nscachedelegate/cache(_:willevictobject:).md)
+- [func cache(NSCache<AnyObject, AnyObject>, willEvictObject: Any)](./nscachedelegate/cache%28_,willevictobject%29.md)
   Called when an object is about to be evicted or removed from the cache.
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var delegate: (any NSCacheDelegate)?](nscache/delegate.md)
+### Managing the Delegate
+- [var delegate: (any NSCacheDelegate)?](./nscache/delegate.md)
   The cache’s delegate.
 
 

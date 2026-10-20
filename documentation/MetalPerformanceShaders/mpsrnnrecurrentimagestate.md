@@ -1,7 +1,8 @@
 # MPSRNNRecurrentImageState
 
 **Framework**: Metal Performance Shaders  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 A class that holds all the data that’s passed from one sequence iteration of the image-based recurrent neural network layer (stack) to the next.
 
@@ -19,29 +20,34 @@ A class that holds all the data that’s passed from one sequence iteration of t
 class MPSRNNRecurrentImageState
 ```
 
+```objc
+@interface MPSRNNRecurrentImageState : MPSState
+```
+
 ## Topics
 
 ### Instance Methods
-- [func getMemoryCellImage(forLayerIndex: Int) -> MPSImage?](mpsrnnrecurrentimagestate/getmemorycellimage(forlayerindex:).md)
-- [func getRecurrentOutputImage(forLayerIndex: Int) -> MPSImage?](mpsrnnrecurrentimagestate/getrecurrentoutputimage(forlayerindex:).md)
+- [func getMemoryCellImage(forLayerIndex: Int) -> MPSImage?](./mpsrnnrecurrentimagestate/getmemorycellimage%28forlayerindex%29.md)
+- [func getRecurrentOutputImage(forLayerIndex: Int) -> MPSImage?](./mpsrnnrecurrentimagestate/getrecurrentoutputimage%28forlayerindex%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [MPSState](mpsstate.md)
+- [MPSState](./mpsstate.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](mpsrnnimageinferencelayer/copy(with:device:).md)
-- [func encodeBidirectionalSequence(commandBuffer: any MTLCommandBuffer, sourceSequence: [MPSImage], destinationForwardImages: [MPSImage], destinationBackwardImages: [MPSImage]?)](mpsrnnimageinferencelayer/encodebidirectionalsequence(commandbuffer:sourcesequence:destinationforwardimages:destinationbackwardimages:).md)
-- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationImages: [MPSImage], recurrentInputState: MPSRNNRecurrentImageState?, recurrentOutputStates: NSMutableArray?)](mpsrnnimageinferencelayer/encodesequence(commandbuffer:sourceimages:destinationimages:recurrentinputstate:recurrentoutputstates:).md)
+### Instance Methods
+- [func copy(with: NSZone?, device: (any MTLDevice)?) -> Self](./mpsrnnimageinferencelayer/copy%28with,device%29.md)
+- [func encodeBidirectionalSequence(commandBuffer: any MTLCommandBuffer, sourceSequence: [MPSImage], destinationForwardImages: [MPSImage], destinationBackwardImages: [MPSImage]?)](./mpsrnnimageinferencelayer/encodebidirectionalsequence%28commandbuffer,sourcesequence,destinationforwardimages,destinationbackwardimages%29.md)
+- [func encodeSequence(commandBuffer: any MTLCommandBuffer, sourceImages: [MPSImage], destinationImages: [MPSImage], recurrentInputState: MPSRNNRecurrentImageState?, recurrentOutputStates: NSMutableArray?)](./mpsrnnimageinferencelayer/encodesequence%28commandbuffer,sourceimages,destinationimages,recurrentinputstate,recurrentoutputstates%29.md)
 
 
 ---

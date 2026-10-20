@@ -1,13 +1,14 @@
 # CGDisplayStreamFrameStatus.frameComplete
 
 **Framework**: Core Graphics  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A new frame was generated.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
@@ -15,13 +16,18 @@ A new frame was generated.
 case frameComplete
 ```
 
+```c
+kCGDisplayStreamFrameStatusFrameComplete
+```
+
 ## See Also
 
-- [CGDisplayStreamFrameStatus.frameIdle](cgdisplaystreamframestatus/frameidle.md)
+### Constants
+- [CGDisplayStreamFrameStatus.frameIdle](./frameidle.md)
   A new frame was not generated because the display did not change.
-- [CGDisplayStreamFrameStatus.frameBlank](cgdisplaystreamframestatus/frameblank.md)
+- [CGDisplayStreamFrameStatus.frameBlank](./frameblank.md)
   A new frame was not generated because the display has gone blank.
-- [CGDisplayStreamFrameStatus.stopped](cgdisplaystreamframestatus/stopped.md)
+- [CGDisplayStreamFrameStatus.stopped](./stopped.md)
   The display stream was stopped.
 
 

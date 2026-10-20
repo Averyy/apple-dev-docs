@@ -1,7 +1,8 @@
 # buildEither(second:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Produces content for a conditional statement in a multi-statement closure when the condition is false.
 
@@ -18,7 +19,7 @@ static func buildEither<F>(second: F) -> _ConditionalContent<_LimitedAvailabilit
 
 #### Discussion
 
-Conditional statements in a [`CompositorContentBuilder`](compositorcontentbuilder.md) must contain both an `if` statement and an `else` statement, and the condition can only perform a compiler check for availability, like in the following code:
+Conditional statements in a [`CompositorContentBuilder`](../compositorcontentbuilder.md) must contain both an `if` statement and an `else` statement, and the condition can only perform a compiler check for availability, like in the following code:
 
 ```swift
 var body: some CompositorContent {

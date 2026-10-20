@@ -1,7 +1,8 @@
 # ephemeralReaderKey
 
 **Framework**: ProximityReader  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The session’s ephemeral reader key.
 

@@ -1,7 +1,8 @@
 # kAXShadowTextAttribute
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 A `CFBooleanRef` value that indicates whether the text displays shadow.
 
@@ -12,6 +13,10 @@ A `CFBooleanRef` value that indicates whether the text displays shadow.
 
 ```swift
 var kAXShadowTextAttribute: Unmanaged<CFString>
+```
+
+```c
+CFStringRef kAXShadowTextAttribute;
 ```
 
 #### Discussion

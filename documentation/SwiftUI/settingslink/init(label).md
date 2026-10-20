@@ -1,7 +1,8 @@
 # init(label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a settings link with a custom label.
 
@@ -21,7 +22,8 @@ init(@ContentBuilder label: () -> Label)
 
 ## See Also
 
-- [init()](settingslink/init.md)
+### Creating a settings link
+- [init()](./init%28%29.md)
   Creates a settings link with the default system label.
 
 

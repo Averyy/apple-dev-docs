@@ -1,7 +1,8 @@
 # NSSizeArray
 
 **Framework**: Foundation  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 Type indicating a parameter is an array of `NSSize` structures.
 
@@ -15,9 +16,14 @@ Type indicating a parameter is an array of `NSSize` structures.
 typealias NSSizeArray = UnsafeMutablePointer<NSSize>
 ```
 
+```c
+typedef NSSize * NSSizeArray;
+```
+
 ## See Also
 
-- [typealias NSSizePointer](nssizepointer.md)
+### Related Types
+- [typealias NSSizePointer](./nssizepointer.md)
   Type indicating parameter is a pointer to an `NSSize` structure.
 
 

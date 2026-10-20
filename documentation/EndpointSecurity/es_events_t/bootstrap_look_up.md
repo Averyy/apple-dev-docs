@@ -1,16 +1,21 @@
 # bootstrap_look_up
 
 **Framework**: Endpoint Security  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst
+- macOS
 
 ## Declaration
 
 ```swift
 var bootstrap_look_up: UnsafeMutablePointer<es_event_bootstrap_look_up_t> { get set }
+```
+
+```c
+es_event_bootstrap_look_up_t * bootstrap_look_up;
 ```
 
 

@@ -1,7 +1,8 @@
 # drawableSize
 
 **Framework**: MetalKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The current size of drawable textures.
 
@@ -19,25 +20,30 @@ The current size of drawable textures.
 var drawableSize: CGSize { get set }
 ```
 
+```objc
+@property (nonatomic) CGSize drawableSize;
+```
+
 #### Discussion
 
-Changing this value adjusts the size of any color, depth, stencil, and multisampling textures created by the view. If [`autoResizeDrawable`](mtkview/autoresizedrawable.md) is [`true`](https://developer.apple.com/documentation/swift/true), this property is updated automatically whenever the view’s size changes. If [`autoResizeDrawable`](mtkview/autoresizedrawable.md) is [`false`](https://developer.apple.com/documentation/swift/false), set this value to change the size of the texture objects.
+Changing this value adjusts the size of any color, depth, stencil, and multisampling textures created by the view. If [`autoResizeDrawable`](./autoresizedrawable.md) is [`true`](../../Swift/true.md), this property is updated automatically whenever the view’s size changes. If [`autoResizeDrawable`](./autoresizedrawable.md) is [`false`](../../Swift/false.md), set this value to change the size of the texture objects.
 
 The default value is derived from the current view’s size, in native pixels.
 
 ## See Also
 
-- [var colorPixelFormat: MTLPixelFormat](mtkview/colorpixelformat.md)
+### Configuring the Color Render Target
+- [var colorPixelFormat: MTLPixelFormat](./colorpixelformat.md)
   The color pixel format for the current drawable’s texture.
-- [var colorspace: CGColorSpace?](mtkview/colorspace.md)
+- [var colorspace: CGColorSpace?](./colorspace.md)
   The color space of the rendered content.
-- [var framebufferOnly: Bool](mtkview/framebufferonly.md)
+- [var framebufferOnly: Bool](./framebufferonly.md)
   A Boolean value that determines whether the drawable’s textures are used only for rendering.
-- [var preferredDrawableSize: CGSize](mtkview/preferreddrawablesize.md)
+- [var preferredDrawableSize: CGSize](./preferreddrawablesize.md)
   The recommended dimensions of the drawable.
-- [var autoResizeDrawable: Bool](mtkview/autoresizedrawable.md)
+- [var autoResizeDrawable: Bool](./autoresizedrawable.md)
   A Boolean value that controls whether to resize the drawable as the view changes size.
-- [var clearColor: MTLClearColor](mtkview/clearcolor.md)
+- [var clearColor: MTLClearColor](./clearcolor.md)
   The color to use to clear the color target when creating a render pass descriptor.
 
 

@@ -1,7 +1,8 @@
 # SnowfallAmount
 
 **Framework**: WeatherKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that describes the snowfall amount over a period of time.
 
@@ -23,27 +24,27 @@ struct SnowfallAmount
 ## Topics
 
 ### Instance Properties
-- [var amount: Measurement<UnitLength>](snowfallamount/amount.md)
+- [var amount: Measurement<UnitLength>](./snowfallamount/amount.md)
   The estimated amount of snowfall as depth of snow crystals for the period.
-- [var amountLiquidEquivalent: Measurement<UnitLength>](snowfallamount/amountliquidequivalent.md)
+- [var amountLiquidEquivalent: Measurement<UnitLength>](./snowfallamount/amountliquidequivalent.md)
   The estimated amount of snowfall as liquid equivalent for the period.
-- [var maximum: Measurement<UnitLength>](snowfallamount/maximum.md)
+- [var maximum: Measurement<UnitLength>](./snowfallamount/maximum.md)
   The maximum amount of snowfall as depth of snow crystals for the period.
-- [var maximumLiquidEquivalent: Measurement<UnitLength>](snowfallamount/maximumliquidequivalent.md)
+- [var maximumLiquidEquivalent: Measurement<UnitLength>](./snowfallamount/maximumliquidequivalent.md)
   The maximum amount of snowfall as liquid equivalent for the period.
-- [var minimum: Measurement<UnitLength>](snowfallamount/minimum.md)
+- [var minimum: Measurement<UnitLength>](./snowfallamount/minimum.md)
   The minimum amount of snowfall as depth of snow crystals for the period.
-- [var minimumLiquidEquivalent: Measurement<UnitLength>](snowfallamount/minimumliquidequivalent.md)
+- [var minimumLiquidEquivalent: Measurement<UnitLength>](./snowfallamount/minimumliquidequivalent.md)
   The minimum amount of snowfall as liquid equivalent for the period.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../Swift/decodable.md)
+- [Encodable](../Swift/encodable.md)
+- [Equatable](../Swift/equatable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # detectedTypes
 
 **Framework**: Sensitive Content Analysis  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that contains the categories of sensitive content that analysis detects.
 
@@ -18,14 +19,18 @@ A property that contains the categories of sensitive content that analysis detec
 var detectedTypes: Set<SCSensitivityAnalysis.ContentType> { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly, nonnull) NSSet<NSString *> * detectedTypes;
+```
+
 ## Mentions
 
-- [Detecting sensitive content in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
-- [Testing your app’s response to sensitive media](testing-your-app-s-response-to-sensitive-media.md)
+- [Detecting sensitive content in media and providing intervention options](../detecting-nudity-in-media-and-providing-intervention-options.md)
+- [Testing your app’s response to sensitive media](../testing-your-app-s-response-to-sensitive-media.md)
 
 #### Discussion
 
-The Sensitive Content Analysis framework sets this property when analysis determines that media contains sensitive content. Check this property to determine the specific types of sensitive content, such as [`sexuallyExplicit`](scsensitivityanalysis/contenttype/sexuallyexplicit.md) or [`goreOrViolence`](scsensitivityanalysis/contenttype/goreorviolence.md). The framework populates this set only when [`isSensitive`](scsensitivityanalysis/issensitive.md) is `true`.
+The Sensitive Content Analysis framework sets this property when analysis determines that media contains sensitive content. Check this property to determine the specific types of sensitive content, such as [`sexuallyExplicit`](./contenttype/sexuallyexplicit.md) or [`goreOrViolence`](./contenttype/goreorviolence.md). The framework populates this set only when [`isSensitive`](./issensitive.md) is `true`.
 
 For example, the following code checks for specific content types after determining that media is sensitive:
 
@@ -57,7 +62,8 @@ if detectedTypes.contains(.goreOrViolence) {
 
 ## See Also
 
-- [SCSensitivityAnalysis.ContentType](scsensitivityanalysis/contenttype.md)
+### Identifying content categories
+- [SCSensitivityAnalysis.ContentType](./contenttype.md)
   A type that identifies a category of sensitive content.
 
 

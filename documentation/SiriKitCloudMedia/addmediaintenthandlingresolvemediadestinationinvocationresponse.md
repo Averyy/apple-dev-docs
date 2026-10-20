@@ -1,7 +1,8 @@
 # AddMediaIntentHandlingResolveMediaDestinationInvocationResponse
 
 **Framework**: SiriKit Cloud Media  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Your service’s response to a request to resolve media items in an add media intent.
 
@@ -10,14 +11,14 @@ Your service’s response to a request to resolve media items in an add media in
 
 ## Declaration
 
-```swift
+```
 object AddMediaIntentHandlingResolveMediaDestinationInvocationResponse
 ```
 
 ## Topics
 
 ### Specifying the Result
-- [object AddMediaIntentHandlingResolveMediaDestinationInvocationResponse.Result](addmediaintenthandlingresolvemediadestinationinvocationresponse/result-data.dictionary.md)
+- [object AddMediaIntentHandlingResolveMediaDestinationInvocationResponse.Result](./addmediaintenthandlingresolvemediadestinationinvocationresponse/result-data.dictionary.md)
   The result of attempting to modify the user’s library or a playlist.
 
 ## Properties
@@ -25,14 +26,17 @@ object AddMediaIntentHandlingResolveMediaDestinationInvocationResponse
 - `result` (AddMediaIntentHandlingResolveMediaDestinationInvocationResponse.Result) *(required)*: The results of processing the intent.
 - `method` (string) *(required)*: The action your service takes to process this intent.
 
+  **Allowed Values**: `AddMediaIntentHandling.resolveMediaDestination`
+
 ## Relationships
 
 ### Inherits From
-- [InvocationResponse](invocationresponse.md)
+- [InvocationResponse](./invocationresponse.md)
 
 ## See Also
 
-- [object AddMediaMediaDestinationResolutionResult](addmediamediadestinationresolutionresult.md)
+### Identifying a Library or Playlist
+- [object AddMediaMediaDestinationResolutionResult](./addmediamediadestinationresolutionresult.md)
   The user’s library or a specified playlist, or information about why your service can’t use the requested destination.
 
 

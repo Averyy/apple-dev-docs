@@ -2,6 +2,7 @@
 
 **Framework**: Paravirtualized Graphics  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 **Availability**:
@@ -14,11 +15,16 @@
 func pause()
 ```
 
+```objc
+- (void) pause;
+```
+
 ## See Also
 
-- [func reset()](pgdevice/reset.md)
-- [func stop()](pgdevice/stop.md)
-- [func unpause()](pgdevice/unpause.md)
+### Instance Methods
+- [func reset()](./reset%28%29.md)
+- [func stop()](./stop%28%29.md)
+- [func unpause()](./unpause%28%29.md)
 
 
 ---

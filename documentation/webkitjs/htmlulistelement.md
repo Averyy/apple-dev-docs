@@ -1,7 +1,8 @@
 # HTMLUListElement
 
 **Framework**: WebKit JS  
-**Kind**: cl
+**Kind**: cl  
+**Role**: Class
 
 **Availability**:
 - Safari Desktop 10.0+
@@ -9,20 +10,20 @@
 
 ## Declaration
 
-```swift
+```
 interface HTMLUListElement
 ```
 
 ## Topics
 
 ### Instance Properties
-- [compact](htmlulistelement/1629313-compact.md)
-- [type](htmlulistelement/1631363-type.md)
+- [compact](./htmlulistelement/api-1629313-compact.md)
+- [type](./htmlulistelement/api-1631363-type.md)
 
 ## Relationships
 
 ### Inherits From
-- [HTMLElement](htmlelement.md)
+- [HTMLElement](./htmlelement.md)
 
 
 ---

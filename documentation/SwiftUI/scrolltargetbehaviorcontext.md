@@ -1,7 +1,8 @@
 # ScrollTargetBehaviorContext
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 The context in which a scroll target behavior updates its scroll target.
 
@@ -24,38 +25,39 @@ struct ScrollTargetBehaviorContext
 ## Topics
 
 ### Getting the scroll target behavior context
-- [var axes: Axis.Set](scrolltargetbehaviorcontext/axes.md)
+- [var axes: Axis.Set](./scrolltargetbehaviorcontext/axes.md)
   The axes in which the scrollable view is scrollable.
-- [var containerSize: CGSize](scrolltargetbehaviorcontext/containersize.md)
+- [var containerSize: CGSize](./scrolltargetbehaviorcontext/containersize.md)
   The size of the container of the scrollable view.
-- [var contentSize: CGSize](scrolltargetbehaviorcontext/contentsize.md)
+- [var contentSize: CGSize](./scrolltargetbehaviorcontext/contentsize.md)
   The size of the content of the scrollable view.
-- [var originalTarget: ScrollTarget](scrolltargetbehaviorcontext/originaltarget.md)
+- [var originalTarget: ScrollTarget](./scrolltargetbehaviorcontext/originaltarget.md)
   The original target when the scroll gesture began.
-- [var velocity: CGVector](scrolltargetbehaviorcontext/velocity.md)
+- [var velocity: CGVector](./scrolltargetbehaviorcontext/velocity.md)
   The current velocity of the scrollable view’s scroll gesture.
 ### Accessing the context
-- [subscript<T>(dynamicMember _: KeyPath<EnvironmentValues, T>) -> T](scrolltargetbehaviorcontext/subscript(dynamicmember:).md)
+- [subscript<T>(dynamicMember _: KeyPath<EnvironmentValues, T>) -> T](./scrolltargetbehaviorcontext/subscript%28dynamicmember%29.md)
 
 ## See Also
 
-- [func scrollTargetBehavior(some ScrollTargetBehavior) -> some View](view/scrolltargetbehavior(_:).md)
+### Defining scroll targets
+- [func scrollTargetBehavior(some ScrollTargetBehavior) -> some View](./view/scrolltargetbehavior%28_%29.md)
   Sets the scroll behavior of views scrollable in the provided axes.
-- [func scrollTargetLayout(isEnabled: Bool) -> some View](view/scrolltargetlayout(isenabled:).md)
+- [func scrollTargetLayout(isEnabled: Bool) -> some View](./view/scrolltargetlayout%28isenabled%29.md)
   Configures the outermost layout as a scroll target layout.
-- [struct ScrollTarget](scrolltarget.md)
+- [struct ScrollTarget](./scrolltarget.md)
   A type defining the target in which a scroll view should try and scroll to.
-- [protocol ScrollTargetBehavior](scrolltargetbehavior.md)
+- [protocol ScrollTargetBehavior](./scrolltargetbehavior.md)
   A type that defines the scroll behavior of a scrollable view.
-- [struct PagingScrollTargetBehavior](pagingscrolltargetbehavior.md)
+- [struct PagingScrollTargetBehavior](./pagingscrolltargetbehavior.md)
   The scroll behavior that aligns scroll targets to container-based geometry.
-- [struct ViewAlignedScrollTargetBehavior](viewalignedscrolltargetbehavior.md)
+- [struct ViewAlignedScrollTargetBehavior](./viewalignedscrolltargetbehavior.md)
   The scroll behavior that aligns scroll targets to view-based geometry.
-- [struct AnyScrollTargetBehavior](anyscrolltargetbehavior.md)
+- [struct AnyScrollTargetBehavior](./anyscrolltargetbehavior.md)
   A type-erased scroll target behavior.
-- [struct ScrollTargetBehaviorProperties](scrolltargetbehaviorproperties.md)
+- [struct ScrollTargetBehaviorProperties](./scrolltargetbehaviorproperties.md)
   Properties influencing the scroll view a scroll target behavior applies to.
-- [struct ScrollTargetBehaviorPropertiesContext](scrolltargetbehaviorpropertiescontext.md)
+- [struct ScrollTargetBehaviorPropertiesContext](./scrolltargetbehaviorpropertiescontext.md)
   The context in which a scroll target behavior can decide its properties.
 
 

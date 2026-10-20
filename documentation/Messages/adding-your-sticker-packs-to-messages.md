@@ -1,6 +1,7 @@
 # Adding your sticker packs to Messages
 
-**Framework**: Messages
+**Framework**: Messages  
+**Role**: Article
 
 Drag and drop your sticker pack into the Stickers asset catalog to let people access your stickers from Messages.
 
@@ -22,23 +23,24 @@ Messages supports three sticker sizes, which the system displays in a grid-based
 - Medium. 136 x 136 points @3x (408 x 408 pixels).
 - Large. 206 x 206 points @3x (618 x 618 pixels).
 
-For optimal quality and performance, provide sticker images of the size you choose. For more information on creating animated stickers, see [`Creating Stickers with Motion`](https://developer.apple.comhttps://developer.apple.com/support/stickers/motion/). For more information on submitting Sticker packs to the App Store, see [`Preparing Sticker Submissions`](https://developer.apple.comhttps://developer.apple.com/app-store/sticker-submissions/).
+For optimal quality and performance, provide sticker images of the size you choose. For more information on creating animated stickers, see [Creating Stickers with Motion](https://developer.apple.com/support/stickers/motion/). For more information on submitting Sticker packs to the App Store, see [Preparing Sticker Submissions](https://developer.apple.com/app-store/sticker-submissions/).
 
-##### Specify Sticker Availability
+##### Specify sticker availability
 
 You can either restrict your sticker pack to just Messages, or make it available throughout the system. To specify which apps your sticker pack is available in, update your `Info.plist` file. Add the `NSStickerSharingLevel` key inside your Messages extension’s `Info.plist` file. The value for this key is the string `{OS}`. Messages checks for the presence of the `Info.plist` key when your app launches outside of Messages. If you add this key to your app, your sticker pack doesn’t appear in the list.
 
 ## See Also
 
-- [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
+### Custom sticker packs
+- [Adding Sticker packs and iMessage apps to the system Stickers app, Messages camera, and FaceTime](./adding-sticker-packs-and-imessage-apps-to-the-system-stickers-app-messages-camera-and-facetime.md)
   Enable your Sticker pack or iMessage app in the media context.
-- [class MSStickerBrowserViewController](msstickerbrowserviewcontroller.md)
+- [class MSStickerBrowserViewController](./msstickerbrowserviewcontroller.md)
   A view controller that provides dynamic content to the standard sticker browser.
-- [class MSStickerBrowserView](msstickerbrowserview.md)
+- [class MSStickerBrowserView](./msstickerbrowserview.md)
   A browser view that displays a dynamically generated list of stickers.
-- [class MSStickerView](msstickerview.md)
+- [class MSStickerView](./msstickerview.md)
   A view for displaying a sticker.
-- [enum MSStickerSize](msstickersize.md)
+- [enum MSStickerSize](./msstickersize.md)
   The size of the stickers in the browser view.
 
 

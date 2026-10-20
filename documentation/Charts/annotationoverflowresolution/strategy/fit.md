@@ -1,7 +1,8 @@
 # fit
 
 **Framework**: Swift Charts  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Fits the annotation automatically, adjusting its position to ensure it doesn’t overflow.
 

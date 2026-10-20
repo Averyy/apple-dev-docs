@@ -1,7 +1,8 @@
 # Subscriptions
 
 **Framework**: Combine  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 A namespace for symbols related to subscriptions.
 
@@ -23,20 +24,21 @@ enum Subscriptions
 ## Topics
 
 ### Using convenience subscriptions
-- [static var empty: any Subscription](subscriptions/empty.md)
+- [static var empty: any Subscription](./subscriptions/empty.md)
   Returns the “empty” subscription.
 
 ## See Also
 
-- [Processing Published Elements with Subscribers](processing-published-elements-with-subscribers.md)
+### Subscribers
+- [Processing Published Elements with Subscribers](./processing-published-elements-with-subscribers.md)
   Apply back pressure to precisely control when publishers produce elements.
-- [protocol Subscriber](subscriber.md)
+- [protocol Subscriber](./subscriber.md)
   A protocol that declares a type that can receive input from a publisher.
-- [enum Subscribers](subscribers.md)
+- [enum Subscribers](./subscribers.md)
   A namespace for types that serve as subscribers.
-- [struct AnySubscriber](anysubscriber.md)
+- [struct AnySubscriber](./anysubscriber.md)
   A type-erasing subscriber.
-- [protocol Subscription](subscription.md)
+- [protocol Subscription](./subscription.md)
   A protocol representing the connection of a subscriber to a publisher.
 
 

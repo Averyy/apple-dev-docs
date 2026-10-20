@@ -1,7 +1,8 @@
 # vImageConvert_ARGBToYpCbCr_GenerateConversion(_:_:_:_:_:_:)
 
 **Framework**: Accelerate  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Generates the information that describes the conversion from ARGB to YpCbCr.
 
@@ -20,13 +21,17 @@ Generates the information that describes the conversion from ARGB to YpCbCr.
 func vImageConvert_ARGBToYpCbCr_GenerateConversion(_ matrix: UnsafePointer<vImage_ARGBToYpCbCrMatrix>, _ pixelRange: UnsafePointer<vImage_YpCbCrPixelRange>, _ outInfo: UnsafeMutablePointer<vImage_ARGBToYpCbCr>, _ inARGBType: vImageARGBType, _ outYpCbCrType: vImageYpCbCrType, _ flags: vImage_Flags) -> vImage_Error
 ```
 
+```c
+vImage_Error vImageConvert_ARGBToYpCbCr_GenerateConversion(const vImage_ARGBToYpCbCrMatrix *matrix, const vImage_YpCbCrPixelRange *pixelRange, vImage_ARGBToYpCbCr *outInfo, vImageARGBType inARGBType, vImageYpCbCrType outYpCbCrType, vImage_Flags flags);
+```
+
 #### Return Value
 
-[`kvImageNoError`](kvimagenoerror.md); otherwise, one of the error codes in [`Data Types and Constants`](data-types-and-constants.md).
+[`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
 #### Discussion
 
-You use this function to create the [`vImage_ARGBToYpCbCr`](vimage_argbtoypcbcr.md) conversion information necessary for all RGB-to-YUV conversion functions.
+You use this function to create the [`vImage_ARGBToYpCbCr`](./vimage_argbtoypcbcr.md) conversion information necessary for all RGB-to-YUV conversion functions.
 
 The following example shows how to prepare for the conversion of ARGB8888 to a YUV format with ITU 601 video range:
 
@@ -78,7 +83,7 @@ The following example shows how you might define your own conversion coefficient
 
 ```
 
-The [`vImage_ARGBToYpCbCr`](vimage_argbtoypcbcr.md) structure this function creates can be reused concurrently, multiple times from multiple threads.
+The [`vImage_ARGBToYpCbCr`](./vimage_argbtoypcbcr.md) structure this function creates can be reused concurrently, multiple times from multiple threads.
 
 The conversions that are available are:
 
@@ -92,24 +97,25 @@ The conversions that are available are:
 
 ## Parameters
 
-- `matrix`: A pointer to [`vImage_ARGBToYpCbCrMatrix`](vimage_argbtoypcbcrmatrix.md) that contains the matrix coefficients for the conversion.
-- `pixelRange`: A pointer to [`vImage_YpCbCrPixelRange`](vimage_ypcbcrpixelrange.md) that contains the pixel range information for the conversion.
-- `outInfo`: A pointer to [`vImage_ARGBToYpCbCr`](vimage_argbtoypcbcr.md) that’s initialized with information for the conversion function to use later.
-- `inARGBType`: A [`vImageARGBType`](vimageargbtype.md) to specify the input (ARGB) format.
-- `outYpCbCrType`: A [`vImageYpCbCrType`](vimageypcbcrtype.md) to specify the output (YpCbCr) format.
-- `flags`: The options to use when performing this operation. Set the [`kvImagePrintDiagnosticsToConsole`](kvimageprintdiagnosticstoconsole.md) flag to print debug messages when a problem occurs.
+- `matrix`: A pointer to [`vImage_ARGBToYpCbCrMatrix`](./vimage_argbtoypcbcrmatrix.md) that contains the matrix coefficients for the conversion.
+- `pixelRange`: A pointer to [`vImage_YpCbCrPixelRange`](./vimage_ypcbcrpixelrange.md) that contains the pixel range information for the conversion.
+- `outInfo`: A pointer to [`vImage_ARGBToYpCbCr`](./vimage_argbtoypcbcr.md) that’s initialized with information for the conversion function to use later.
+- `inARGBType`: A [`vImageARGBType`](./vimageargbtype.md) to specify the input (ARGB) format.
+- `outYpCbCrType`: A [`vImageYpCbCrType`](./vimageypcbcrtype.md) to specify the output (YpCbCr) format.
+- `flags`: The options to use when performing this operation. Set the [`kvImagePrintDiagnosticsToConsole`](./kvimageprintdiagnosticstoconsole.md) flag to print debug messages when a problem occurs.
 
 ## See Also
 
-- [struct vImageYpCbCrType](vimageypcbcrtype.md)
+### Generating conversion information
+- [struct vImageYpCbCrType](./vimageypcbcrtype.md)
   Constants that describe the encoding of a YpCbCr image for conversions between RGB and YpCbCr.
-- [struct vImageARGBType](vimageargbtype.md)
+- [struct vImageARGBType](./vimageargbtype.md)
   Constants that describe the encoding of an ARGB image for conversions between RGB and YpCbCr.
-- [struct vImage_ARGBToYpCbCrMatrix](vimage_argbtoypcbcrmatrix.md)
+- [struct vImage_ARGBToYpCbCrMatrix](./vimage_argbtoypcbcrmatrix.md)
   The 3 x 3 matrix that the vImage library uses to convert from RGB to YpCbCr.
-- [struct vImage_ARGBToYpCbCr](vimage_argbtoypcbcr.md)
+- [struct vImage_ARGBToYpCbCr](./vimage_argbtoypcbcr.md)
   The information that describes the conversion from ARGB to YpCbCr.
-- [struct vImage_YpCbCrPixelRange](vimage_ypcbcrpixelrange.md)
+- [struct vImage_YpCbCrPixelRange](./vimage_ypcbcrpixelrange.md)
   The description of range and clamping information for YpCbCr pixel formats.
 
 

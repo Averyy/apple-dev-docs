@@ -1,7 +1,8 @@
 # multipliedReportingOverflow(by:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns the product of this value and the given value, along with a Boolean value indicating whether overflow occurred in the operation.
 
@@ -26,13 +27,14 @@ A tuple containing the result of the multiplication along with a Boolean value i
 
 ## See Also
 
-- [func addingReportingOverflow(Int) -> (partialValue: Int, overflow: Bool)](int/addingreportingoverflow(_:).md)
+### Performing Calculations with Overflow
+- [func addingReportingOverflow(Int) -> (partialValue: Int, overflow: Bool)](./addingreportingoverflow%28_%29.md)
   Returns the sum of this value and the given value, along with a Boolean value indicating whether overflow occurred in the operation.
-- [func subtractingReportingOverflow(Int) -> (partialValue: Int, overflow: Bool)](int/subtractingreportingoverflow(_:).md)
+- [func subtractingReportingOverflow(Int) -> (partialValue: Int, overflow: Bool)](./subtractingreportingoverflow%28_%29.md)
   Returns the difference obtained by subtracting the given value from this value, along with a Boolean value indicating whether overflow occurred in the operation.
-- [func dividedReportingOverflow(by: Int) -> (partialValue: Int, overflow: Bool)](int/dividedreportingoverflow(by:).md)
+- [func dividedReportingOverflow(by: Int) -> (partialValue: Int, overflow: Bool)](./dividedreportingoverflow%28by%29.md)
   Returns the quotient obtained by dividing this value by the given value, along with a Boolean value indicating whether overflow occurred in the operation.
-- [func remainderReportingOverflow(dividingBy: Int) -> (partialValue: Int, overflow: Bool)](int/remainderreportingoverflow(dividingby:).md)
+- [func remainderReportingOverflow(dividingBy: Int) -> (partialValue: Int, overflow: Bool)](./remainderreportingoverflow%28dividingby%29.md)
   Returns the remainder after dividing this value by the given value, along with a Boolean value indicating whether overflow occurred during division.
 
 

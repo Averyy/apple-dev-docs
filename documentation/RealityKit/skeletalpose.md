@@ -1,7 +1,8 @@
 # SkeletalPose
 
 **Framework**: RealityKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A container that holds the position and orientation of each joint in a single animation skeleton.
 
@@ -21,36 +22,37 @@ struct SkeletalPose
 
 #### Overview
 
-Each index in [`jointNames`](skeletalpose/jointnames.md) directly corresponds to the same index in [`jointTransforms`](skeletalpose/jointtransforms.md), linking each joint name to its respective transform.
+Each index in [`jointNames`](./skeletalpose/jointnames.md) directly corresponds to the same index in [`jointTransforms`](./skeletalpose/jointtransforms.md), linking each joint name to its respective transform.
 
 ## Topics
 
 ### Initializers
-- [init(id: SkeletalPose.ID, from: MeshResource.Skeleton)](skeletalpose/init(id:from:).md)
+- [init(id: SkeletalPose.ID, from: MeshResource.Skeleton)](./skeletalpose/init%28id,from%29.md)
   Creates a skeletal pose from the rest pose of the model skeleton.
-- [init(id: SkeletalPose.ID, joints: [(String, JointTransforms.Element)])](skeletalpose/init(id:joints:).md)
+- [init(id: SkeletalPose.ID, joints: [(String, JointTransforms.Element)])](./skeletalpose/init%28id,joints%29.md)
   Creates a pose for the joint name and transformation pairs.
 ### Instance Properties
-- [var id: SkeletalPose.ID](skeletalpose/id.md)
+- [var id: SkeletalPose.ID](./skeletalpose/id.md)
   The unique identifier of the pose.
-- [var jointNames: [String]](skeletalpose/jointnames.md)
+- [var jointNames: [String]](./skeletalpose/jointnames.md)
   The names of the joints in the pose in specific order.
-- [var jointTransforms: JointTransforms](skeletalpose/jointtransforms.md)
+- [var jointTransforms: JointTransforms](./skeletalpose/jointtransforms.md)
   The transformations of the joints in the pose.
 ### Subscripts
-- [subscript(String) -> Transform?](skeletalpose/subscript(_:).md)
+- [subscript(String) -> Transform?](./skeletalpose/subscript%28_%29.md)
   Accesses a pose transformation using the index of the joint name.
 
 ## Relationships
 
 ### Conforms To
-- [Identifiable](../swift/identifiable.md)
+- [Identifiable](../Swift/identifiable.md)
 
 ## See Also
 
-- [struct SkeletalPosesComponent](skeletalposescomponent.md)
+### Skeletons
+- [struct SkeletalPosesComponent](./skeletalposescomponent.md)
   A component that exposes the collection of named animation skeletal poses.
-- [struct SkeletalPoseSet](skeletalposeset.md)
+- [struct SkeletalPoseSet](./skeletalposeset.md)
   A collection of named skeletal poses.
 
 

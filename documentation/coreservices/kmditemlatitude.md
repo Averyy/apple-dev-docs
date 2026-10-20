@@ -1,7 +1,8 @@
 # kMDItemLatitude
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
  The latitude of the item in degrees north of the equator, expressed using the WGS84 datum.  Negative values lie south of the equator. A CFString.
 
@@ -12,6 +13,10 @@
 
 ```swift
 let kMDItemLatitude: CFString!
+```
+
+```c
+const CFStringRef kMDItemLatitude;
 ```
 
 

@@ -1,7 +1,8 @@
 # errSecMissingAttributePrivateKeyFormat
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A private key format attribute is missing.
 
@@ -18,6 +19,10 @@ A private key format attribute is missing.
 
 ```swift
 var errSecMissingAttributePrivateKeyFormat: OSStatus { get }
+```
+
+```c
+errSecMissingAttributePrivateKeyFormat
 ```
 
 

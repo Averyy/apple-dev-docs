@@ -1,7 +1,8 @@
 # init(location:timeOffset:size:opacity:force:azimuth:altitude:)
 
 **Framework**: PencilKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new point with the provided properties.
 
@@ -18,6 +19,10 @@ Creates a new point with the provided properties.
 init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat)
 ```
 
+```objc
+- (instancetype) initWithLocation:(CGPoint) location timeOffset:(NSTimeInterval) timeOffset size:(CGSize) size opacity:(CGFloat) opacity force:(CGFloat) force azimuth:(CGFloat) azimuth altitude:(CGFloat) altitude;
+```
+
 ## Parameters
 
 - `location`: The location of this point.
@@ -30,7 +35,8 @@ init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat
 
 ## See Also
 
-- [init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat, secondaryScale: CGFloat)](pkstrokepointreference/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:).md)
+### Creating a stroke point object
+- [init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat, secondaryScale: CGFloat)](./init%28location,timeoffset,size,opacity,force,azimuth,altitude,secondaryscale%29.md)
 
 
 ---

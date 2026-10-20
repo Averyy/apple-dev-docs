@@ -1,7 +1,8 @@
 # OSIncrementAtomic16
 
 **Framework**: Kernel  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 16-bit increment operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
 
@@ -10,11 +11,11 @@
 
 ## Declaration
 
-```swift
+```c
 SInt16 OSIncrementAtomic16(volatile SInt16 *address);
 ```
 
-#### Return_value
+#### Return Value
 
 The value before the increment.
 
@@ -30,11 +31,12 @@ This function guarantees atomicity only with main system memory. It is specifica
 
 ## See Also
 
-- [OSIncrementAtomic](1576460-osincrementatomic.md)
+### Increment
+- [OSIncrementAtomic](./api-1576460-osincrementatomic.md)
   32-bit increment operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSIncrementAtomic8](1576477-osincrementatomic8.md)
+- [OSIncrementAtomic8](./api-1576477-osincrementatomic8.md)
   8-bit increment operation, performed atomically with respect to all devices that participate in the coherency architecture of the platform.
-- [OSIncrementAtomic64](1576480-osincrementatomic64.md)
+- [OSIncrementAtomic64](./api-1576480-osincrementatomic64.md)
   64-bit increment.
 
 

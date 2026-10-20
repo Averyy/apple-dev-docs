@@ -1,7 +1,8 @@
 # requestedPermissionMatchPatterns
 
 **Framework**: WebKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The set of websites that the extension requires access to for its base functionality.
 
@@ -16,6 +17,10 @@ The set of websites that the extension requires access to for its base functiona
 
 ```swift
 var requestedPermissionMatchPatterns: Set<WKWebExtension.MatchPattern> { get }
+```
+
+```objc
+@property (nonatomic, copy, readonly) NSSet<WKWebExtensionMatchPattern *> * requestedPermissionMatchPatterns;
 ```
 
 

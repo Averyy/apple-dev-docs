@@ -1,7 +1,8 @@
 # replaceSubrange(_:with:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Replaces the specified subrange of elements with the given collection.
 
@@ -39,7 +40,7 @@ Likewise, if you pass a zero-length collection as the `newElements` parameter, t
 
 Calling this method may invalidate any existing indices for use with this collection.
 
-> **Note**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the collection, the complexity is O(*m*).
+> **Complexity**: O(*n* + *m*), where *n* is length of this collection and *m* is the length of `newElements`. If the call to this method simply appends the contents of `newElements` to the collection, the complexity is O(*m*).
 
 ## Parameters
 
@@ -48,7 +49,8 @@ Calling this method may invalidate any existing indices for use with this collec
 
 ## See Also
 
-- [func replaceSubrange<C>(Range<String.Index>, with: C)](string/replacesubrange(_:with:).md)
+### Replacing Substrings
+- [func replaceSubrange<C>(Range<String.Index>, with: C)](./replacesubrange%28_,with%29.md)
   Replaces the text within the specified bounds with the given characters.
 
 

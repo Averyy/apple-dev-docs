@@ -1,14 +1,15 @@
 # MIDIEventPacket.WordCollection
 
 **Framework**: Core MIDI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 11.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -19,22 +20,22 @@ struct WordCollection
 ## Topics
 
 ### Initializers
-- [init(UnsafePointer<MIDIEventPacket>)](midieventpacket/wordcollection/init(_:)-81z9r.md)
-- [init?(UnsafePointer<MIDIEventPacket>?)](midieventpacket/wordcollection/init(_:)-922um.md)
+- [init(UnsafePointer<MIDIEventPacket>)](./wordcollection/init%28_%29-81z9r.md)
+- [init?(UnsafePointer<MIDIEventPacket>?)](./wordcollection/init%28_%29-922um.md)
 ### Instance Properties
-- [var count: Int](midieventpacket/wordcollection/count.md)
-- [var endIndex: Int](midieventpacket/wordcollection/endindex.md)
-- [var startIndex: Int](midieventpacket/wordcollection/startindex.md)
+- [var count: Int](./wordcollection/count.md)
+- [var endIndex: Int](./wordcollection/endindex.md)
+- [var startIndex: Int](./wordcollection/startindex.md)
 ### Subscripts
-- [subscript(MIDIEventPacket.WordCollection.Index) -> MIDIEventPacket.WordCollection.Element](midieventpacket/wordcollection/subscript(_:).md)
+- [subscript(MIDIEventPacket.WordCollection.Index) -> MIDIEventPacket.WordCollection.Element](./wordcollection/subscript%28_%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BidirectionalCollection](../swift/bidirectionalcollection.md)
-- [Collection](../swift/collection.md)
-- [RandomAccessCollection](../swift/randomaccesscollection.md)
-- [Sequence](../swift/sequence.md)
+- [BidirectionalCollection](../../Swift/bidirectionalcollection.md)
+- [Collection](../../Swift/collection.md)
+- [RandomAccessCollection](../../Swift/randomaccesscollection.md)
+- [Sequence](../../Swift/sequence.md)
 
 
 ---

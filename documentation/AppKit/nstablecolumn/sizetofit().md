@@ -1,17 +1,22 @@
 # sizeToFit()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Resizes the table column to fit the width of its header cell.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 func sizeToFit()
+```
+
+```objc
+- (void) sizeToFit;
 ```
 
 #### Discussion
@@ -22,13 +27,14 @@ If this method causes the table column’s width to change, the column’s table
 
 ## See Also
 
-- [var width: CGFloat](nstablecolumn/width.md)
+### Controlling Size
+- [var width: CGFloat](./width.md)
   The table column’s width, in points.
-- [var minWidth: CGFloat](nstablecolumn/minwidth.md)
+- [var minWidth: CGFloat](./minwidth.md)
   The table column’s minimum width, in points.
-- [var maxWidth: CGFloat](nstablecolumn/maxwidth.md)
+- [var maxWidth: CGFloat](./maxwidth.md)
   The table column’s maximum width, in points.
-- [var resizingMask: NSTableColumn.ResizingOptions](nstablecolumn/resizingmask.md)
+- [var resizingMask: NSTableColumn.ResizingOptions](./resizingmask.md)
   The table column’s resizing mask.
 
 

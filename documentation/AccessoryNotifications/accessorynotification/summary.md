@@ -1,7 +1,8 @@
 # summary
 
 **Framework**: Accessory Notifications  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An Apple Intelligence summary for the notification.
 
@@ -16,11 +17,12 @@ let summary: NSAttributedString?
 
 ## See Also
 
-- [let title: String?](accessorynotification/title.md)
+### Displaying notification content
+- [let title: String?](./title.md)
   A primary text for the notification.
-- [let subtitle: String?](accessorynotification/subtitle.md)
+- [let subtitle: String?](./subtitle.md)
   Secondary text for the notification.
-- [let body: NSAttributedString?](accessorynotification/body.md)
+- [let body: NSAttributedString?](./body.md)
   A string that contains the notification’s main content.
 
 

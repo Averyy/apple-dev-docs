@@ -1,7 +1,8 @@
 # AVAssetExportPresetAppleM4A
 
 **Framework**: AVFoundation  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A preset to export an audio-only MPEG 4 Audio file with appropriate iTunes gapless playback data.
 
@@ -17,6 +18,10 @@ A preset to export an audio-only MPEG 4 Audio file with appropriate iTunes gaple
 
 ```swift
 let AVAssetExportPresetAppleM4A: String
+```
+
+```c
+extern NSString * const AVAssetExportPresetAppleM4A;
 ```
 
 

@@ -1,6 +1,7 @@
 # SMS and MMS Message Filtering
 
-**Framework**: SMS and Call Reporting
+**Framework**: SMS and Call Reporting  
+**Role**: API Collection
 
 Create an app extension that identifies and filters unwanted SMS and MMS messages while preserving user privacy.
 
@@ -12,42 +13,44 @@ When a user receives an SMS or MMS message from an unknown sender, the Messages 
 
 To find out if a message from an unknown sender is unwanted, the Messages app launches the currently enabled Message Filter app extension and queries it, as shown in the figure below.
 
-![On the left, a box represents the Message Filter app extension in the containing app. On the right, a box shows an SMS or MMS message from an unknown sender coming in to the Messages app icon. Below the sets of boxes, on arrow indicates a query request coming from the message to the app, while another indicates the decision being sent back from the containing app to the Messages app. ](/images/com.apple.identitylookup/media-2994280@2x.png)
+![On the left, a box represents the Message Filter app extension in the containing app. On the right, a box shows an SMS or MMS message from an unknown sender coming in to the Messages app icon. Below the sets of boxes, on arrow indicates a query request coming from the message to the app, while another indicates the decision being sent back from the containing app to the Messages app. ](https://developer.apple.com/tutorials/images/com.apple.identitylookup/media-2994280@2x.png)
 
-The Messages app uses an [`ILMessageFilterQueryRequest`](ilmessagefilterqueryrequest.md) object to pass information about the message to your Message Filter app extension. If your app extension can determine whether the message is unwanted, it returns its decision to Messages in an [`ILMessageFilterQueryResponse`](ilmessagefilterqueryresponse.md) object.
+The Messages app uses an [`ILMessageFilterQueryRequest`](./ilmessagefilterqueryrequest.md) object to pass information about the message to your Message Filter app extension. If your app extension can determine whether the message is unwanted, it returns its decision to Messages in an [`ILMessageFilterQueryResponse`](./ilmessagefilterqueryresponse.md) object.
 
-If your app extension can’t make this determination by itself, it tells Messages to send the information about the message to a server associated with your app. Your server examines the message information and sends a response to Messages, which passes the response to your app extension. The app extension parses the server’s response and returns the final decision to Messages in an [`ILMessageFilterQueryResponse`](ilmessagefilterqueryresponse.md) object, as shown in the figure below.
+If your app extension can’t make this determination by itself, it tells Messages to send the information about the message to a server associated with your app. Your server examines the message information and sends a response to Messages, which passes the response to your app extension. The app extension parses the server’s response and returns the final decision to Messages in an [`ILMessageFilterQueryResponse`](./ilmessagefilterqueryresponse.md) object, as shown in the figure below.
 
-![On the left, a box represents the Message Filter app extension in the containing app. In the center, a box shows an SMS or MMS message from an unknown sender coming in to the Messages app icon. On the right, a box represents the Server associated with the app. Below the sets of boxes, on arrow indicates a query request coming from the message to the app, while another indicates the decision being sent back from the containing app to the Messages app. ](/images/com.apple.identitylookup/media-2994281@2x.png)
+![On the left, a box represents the Message Filter app extension in the containing app. In the center, a box shows an SMS or MMS message from an unknown sender coming in to the Messages app icon. On the right, a box represents the Server associated with the app. Below the sets of boxes, on arrow indicates a query request coming from the message to the app, while another indicates the decision being sent back from the containing app to the Messages app. ](https://developer.apple.com/tutorials/images/com.apple.identitylookup/media-2994281@2x.png)
 
-> **Note**:  For privacy reasons, the system handles all communication with your associated server; your Message Filter app extension can’t access the network directly. Your app extension also can’t write data to containers shared with the containing app.
+> **Note**:  For privacy reasons, the system handles all communication with your associated server; your Message Filter app extension can’t access the network directly.
+>
+> Your app extension also can’t write data to containers shared with the containing app.
 
 ## Topics
 
 ### First Steps
-- [Creating a Message Filter App Extension](creating-a-message-filter-app-extension.md)
+- [Creating a Message Filter App Extension](./creating-a-message-filter-app-extension.md)
   Create an app extension that helps identify unwanted messages.
 ### App Extension
-- [class ILMessageFilterExtensionContext](ilmessagefilterextensioncontext.md)
+- [class ILMessageFilterExtensionContext](./ilmessagefilterextensioncontext.md)
   The extension context for a Message Filter app extension.
-- [class ILMessageFilterExtension](ilmessagefilterextension.md)
+- [class ILMessageFilterExtension](./ilmessagefilterextension.md)
   The abstract base class for the principal class of a Message Filter app extension.
 ### Queries
-- [class ILMessageFilterQueryRequest](ilmessagefilterqueryrequest.md)
+- [class ILMessageFilterQueryRequest](./ilmessagefilterqueryrequest.md)
   A request for a Message Filter app extension to determine the status of a message received from an unknown sender.
-- [protocol ILMessageFilterQueryHandling](ilmessagefilterqueryhandling.md)
+- [protocol ILMessageFilterQueryHandling](./ilmessagefilterqueryhandling.md)
   A set of methods implemented by a Message Filter app extension to handle query requests.
 ### Responses
-- [class ILMessageFilterQueryResponse](ilmessagefilterqueryresponse.md)
+- [class ILMessageFilterQueryResponse](./ilmessagefilterqueryresponse.md)
   A response to a message filter query request.
-- [class ILNetworkResponse](ilnetworkresponse.md)
+- [class ILNetworkResponse](./ilnetworkresponse.md)
   A response to an HTTPS network request performed on behalf of a Message Filter app extension.
-- [enum ILMessageFilterAction](ilmessagefilteraction.md)
+- [enum ILMessageFilterAction](./ilmessagefilteraction.md)
   Responds to a received message with a filter action.
 ### Errors
-- [struct ILMessageFilterError](ilmessagefiltererror-swift.struct.md)
+- [struct ILMessageFilterError](./ilmessagefiltererror-swift.struct.md)
   An error type that indicates problems with network requests and responses related to IdentityLookup APIs.
-- [let ILMessageFilterErrorDomain: String](ilmessagefiltererrordomain.md)
+- [let ILMessageFilterErrorDomain: String](./ilmessagefiltererrordomain.md)
   The error domain for errors associated with the IdentityLookup APIs.
 
 

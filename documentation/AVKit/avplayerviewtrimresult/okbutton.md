@@ -1,7 +1,8 @@
 # AVPlayerViewTrimResult.okButton
 
 **Framework**: AVKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 The user clicked the Trim button.
 
@@ -14,9 +15,14 @@ The user clicked the Trim button.
 case okButton
 ```
 
+```c
+AVPlayerViewTrimOKButton
+```
+
 ## See Also
 
-- [AVPlayerViewTrimResult.cancelButton](avplayerviewtrimresult/cancelbutton.md)
+### Trim results
+- [AVPlayerViewTrimResult.cancelButton](./cancelbutton.md)
   The user clicked the Cancel button.
 
 

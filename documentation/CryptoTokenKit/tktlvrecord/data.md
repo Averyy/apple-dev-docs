@@ -1,7 +1,8 @@
 # data
 
 **Framework**: CryptoTokenKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The record data, including the tag, length, and value fields.
 
@@ -18,6 +19,10 @@ The record data, including the tag, length, and value fields.
 
 ```swift
 var data: Data { get }
+```
+
+```objc
+@property (nonatomic, readonly) NSData * data;
 ```
 
 

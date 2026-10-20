@@ -1,7 +1,8 @@
 # MTRDeviceAttestationDelegate
 
 **Framework**: Matter  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 **Availability**:
 - iOS 16.0+
@@ -18,18 +19,22 @@
 protocol MTRDeviceAttestationDelegate : NSObjectProtocol
 ```
 
+```objc
+@protocol MTRDeviceAttestationDelegate <NSObject>
+```
+
 ## Topics
 
 ### Instance Methods
-- [func deviceAttestation(MTRDeviceController, completedForDevice: UnsafeMutableRawPointer, attestationDeviceInfo: MTRDeviceAttestationDeviceInfo, error: (any Error)?)](mtrdeviceattestationdelegate/deviceattestation(_:completedfordevice:attestationdeviceinfo:error:).md)
-- [func deviceAttestation(MTRDeviceController, failedForDevice: UnsafeMutableRawPointer, error: any Error)](mtrdeviceattestationdelegate/deviceattestation(_:failedfordevice:error:).md)
-- [func deviceAttestationCompleted(for: MTRDeviceController, opaqueDeviceHandle: UnsafeMutableRawPointer, attestationDeviceInfo: MTRDeviceAttestationDeviceInfo, error: (any Error)?)](mtrdeviceattestationdelegate/deviceattestationcompleted(for:opaquedevicehandle:attestationdeviceinfo:error:).md)
-- [func deviceAttestationFailed(for: MTRDeviceController, opaqueDeviceHandle: UnsafeMutableRawPointer, error: any Error)](mtrdeviceattestationdelegate/deviceattestationfailed(for:opaquedevicehandle:error:).md)
+- [func deviceAttestation(MTRDeviceController, completedForDevice: UnsafeMutableRawPointer, attestationDeviceInfo: MTRDeviceAttestationDeviceInfo, error: (any Error)?)](./mtrdeviceattestationdelegate/deviceattestation%28_,completedfordevice,attestationdeviceinfo,error%29.md)
+- [func deviceAttestation(MTRDeviceController, failedForDevice: UnsafeMutableRawPointer, error: any Error)](./mtrdeviceattestationdelegate/deviceattestation%28_,failedfordevice,error%29.md)
+- [func deviceAttestationCompleted(for: MTRDeviceController, opaqueDeviceHandle: UnsafeMutableRawPointer, attestationDeviceInfo: MTRDeviceAttestationDeviceInfo, error: (any Error)?)](./mtrdeviceattestationdelegate/deviceattestationcompleted%28for,opaquedevicehandle,attestationdeviceinfo,error%29.md)
+- [func deviceAttestationFailed(for: MTRDeviceController, opaqueDeviceHandle: UnsafeMutableRawPointer, error: any Error)](./mtrdeviceattestationdelegate/deviceattestationfailed%28for,opaquedevicehandle,error%29.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

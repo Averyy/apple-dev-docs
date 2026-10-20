@@ -1,7 +1,8 @@
 # init(coder:)
 
 **Framework**: UIKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Initializes and returns a newly allocated text list item.
 
@@ -19,15 +20,20 @@ Initializes and returns a newly allocated text list item.
 init?(coder: NSCoder)
 ```
 
+```objc
+- (instancetype) initWithCoder:(NSCoder *) coder;
+```
+
 ## Parameters
 
-- `coder`: An instance of [`NSCoder`](https://developer.apple.com/documentation/foundation/nscoder).
+- `coder`: An instance of [`NSCoder`](../../Foundation/nscoder.md).
 
 ## See Also
 
-- [convenience init(markerFormat: NSTextList.MarkerFormat, options: Int)](nstextlist/init(markerformat:options:).md)
+### Creating a text list
+- [convenience init(markerFormat: NSTextList.MarkerFormat, options: Int)](./init%28markerformat,options%29.md)
   Returns an initialized text list.
-- [init(markerFormat: NSTextList.MarkerFormat, options: NSTextList.Options, startingItemNumber: Int)](nstextlist/init(markerformat:options:startingitemnumber:).md)
+- [init(markerFormat: NSTextList.MarkerFormat, options: NSTextList.Options, startingItemNumber: Int)](./init%28markerformat,options,startingitemnumber%29.md)
   Returns a new text list with the format, options, and starting item number you provide.
 
 

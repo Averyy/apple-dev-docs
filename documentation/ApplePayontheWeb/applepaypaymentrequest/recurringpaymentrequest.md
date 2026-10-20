@@ -1,7 +1,8 @@
 # recurringPaymentRequest
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A property that requests a recurring payment, typically a subscription.
 
@@ -11,13 +12,13 @@ A property that requests a recurring payment, typically a subscription.
 
 ## Declaration
 
-```swift
+```
 ApplePayRecurringPaymentRequest recurringPaymentRequest;
 ```
 
 ## Mentions
 
-- [Apple Pay on the Web Version 14 Release Notes](apple-pay-on-the-web-version-14-release-notes.md)
+- [Apple Pay on the Web Version 14 Release Notes](../apple-pay-on-the-web-version-14-release-notes.md)
 
 #### Discussion
 
@@ -25,11 +26,12 @@ This property is optional. Use it to indicate that the payment request is for a 
 
 Apple Pay issues an Apple Pay Merchant Token if the user’s payment network supports merchant-specific payment tokens. Otherwise, Apple Pay issues a device token for the payment request.
 
-> ❗ **Important**:  You can’t use this property with [`multiTokenContexts`](applepaypaymentrequest/multitokencontexts.md) or [`automaticReloadPaymentRequest`](applepaypaymentrequest/automaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
+> ❗ **Important**:  You can’t use this property with [`multiTokenContexts`](./multitokencontexts.md) or [`automaticReloadPaymentRequest`](./automaticreloadpaymentrequest.md) properties. Simultaneous use of these properties results in an error and cancels the payment request.
 
 ## See Also
 
-- [ApplePayRecurringPaymentRequest](applepayrecurringpaymentrequest.md)
+### Requesting recurring payments
+- [ApplePayRecurringPaymentRequest](../applepayrecurringpaymentrequest.md)
   A dictionary that represents a request to set up a recurring payment, typically a subscription.
 
 

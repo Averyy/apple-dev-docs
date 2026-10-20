@@ -1,7 +1,8 @@
 # CSSearchableItemActivityIdentifier
 
 **Framework**: Core Spotlight  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 The key you use to access a searchable item in a user activity object.
 
@@ -18,17 +19,22 @@ The key you use to access a searchable item in a user activity object.
 let CSSearchableItemActivityIdentifier: String
 ```
 
+```c
+extern NSString * const CSSearchableItemActivityIdentifier;
+```
+
 #### Discussion
 
-Use this key to access the unique identifier for the searchable item from the [`userInfo`](https://developer.apple.com/documentation/foundation/nsuseractivity/userinfo) dictionary of a [`NSUserActivity`](https://developer.apple.com/documentation/foundation/nsuseractivity) object.
+Use this key to access the unique identifier for the searchable item from the [`userInfo`](../Foundation/nsuseractivity/userinfo.md) dictionary of a [`NSUserActivity`](../Foundation/nsuseractivity.md) object.
 
 ## See Also
 
-- [let CSSearchableItemActionType: String](cssearchableitemactiontype.md)
+### Continuing a search or activity
+- [let CSSearchableItemActionType: String](./cssearchableitemactiontype.md)
   Indicates that the activity type to continue is related to a searchable item.
-- [let CSQueryContinuationActionType: String](csquerycontinuationactiontype.md)
+- [let CSQueryContinuationActionType: String](./csquerycontinuationactiontype.md)
   Indicates that the activity type to continue is a search or query.
-- [let CSSearchQueryString: String](cssearchquerystring.md)
+- [let CSSearchQueryString: String](./cssearchquerystring.md)
   Provides the key for the current query in the info dictionary of the user activity object.
 
 

@@ -1,7 +1,8 @@
 # init(start:)
 
 **Framework**: AVFoundation  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a newly allocated sample buffer request with the specified sample cursor.
 
@@ -18,6 +19,10 @@ Creates a newly allocated sample buffer request with the specified sample cursor
 
 ```swift
 init(start startCursor: AVSampleCursor)
+```
+
+```objc
+- (instancetype) initWithStartCursor:(AVSampleCursor *) startCursor;
 ```
 
 #### Return Value

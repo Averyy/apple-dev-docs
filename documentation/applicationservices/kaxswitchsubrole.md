@@ -1,7 +1,8 @@
 # kAXSwitchSubrole
 
 **Framework**: Application Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.9+
@@ -10,6 +11,10 @@
 
 ```swift
 var kAXSwitchSubrole: String { get }
+```
+
+```c
+#define kAXSwitchSubrole
 ```
 
 

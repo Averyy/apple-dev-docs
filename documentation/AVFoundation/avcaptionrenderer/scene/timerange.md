@@ -1,7 +1,8 @@
 # timeRange
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The time range during which the system doesn’t modify the scene.
 
@@ -17,11 +18,16 @@ The time range during which the system doesn’t modify the scene.
 var timeRange: CMTimeRange { get }
 ```
 
+```objc
+@property (nonatomic, readonly) CMTimeRange timeRange;
+```
+
 ## See Also
 
-- [var hasActiveCaptions: Bool](avcaptionrenderer/scene/hasactivecaptions.md)
+### Inspecting the scene
+- [var hasActiveCaptions: Bool](./hasactivecaptions.md)
   A Boolean value that indicates whether the scene contains one or more active captions.
-- [var needsPeriodicRefresh: Bool](avcaptionrenderer/scene/needsperiodicrefresh.md)
+- [var needsPeriodicRefresh: Bool](./needsperiodicrefresh.md)
   A Boolean value that indicates whether the scene requires redrawing while your app progresses through the content.
 
 

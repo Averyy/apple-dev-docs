@@ -1,7 +1,8 @@
 # GetCustomIconsEnabled(_:_:)
 
 **Framework**: Core Services  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 **Availability**:
 - macOS 10.0+ - Deprecated in 10.15
@@ -10,6 +11,10 @@
 
 ```swift
 func GetCustomIconsEnabled(_ vRefNum: Int16, _ customIconsEnabled: UnsafeMutablePointer<DarwinBoolean>!) -> OSErr
+```
+
+```c
+OSErr GetCustomIconsEnabled(SInt16 vRefNum, Boolean *customIconsEnabled);
 ```
 
 

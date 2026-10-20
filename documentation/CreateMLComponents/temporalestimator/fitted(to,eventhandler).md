@@ -2,17 +2,18 @@
 
 **Framework**: Create ML Components  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Fits a transformer to a sequence of examples.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
-- visionOS 1.0+
+- iOS 16.0+ - Deprecated in 18.0
+- iPadOS 16.0+ - Deprecated in 18.0
+- Mac Catalyst 16.0+ - Deprecated in 18.0
+- macOS 13.0+ - Deprecated in 15.0
+- tvOS 16.0+ - Deprecated in 18.0
+- visionOS 1.0+ - Deprecated in 2.0
 
 ## Declaration
 
@@ -31,10 +32,11 @@ The fitted transformer.
 
 ## See Also
 
-- [func adaptedAsSupervised<Annotation>(annotationType: Annotation.Type) -> TemporalEstimatorToSupervisedAdaptor<Self, Annotation>](temporalestimator/adaptedassupervised(annotationtype:).md)
+### Adapting and fitting
+- [func adaptedAsSupervised<Annotation>(annotationType: Annotation.Type) -> TemporalEstimatorToSupervisedAdaptor<Self, Annotation>](./adaptedassupervised%28annotationtype%29.md)
   Exposes this temporal estimator as a supervised temporal estimator.
-- [func fitted<InputSequence>(to: InputSequence) async throws -> Self.Transformer](temporalestimator/fitted(to:).md)
-- [associatedtype Transformer : TemporalTransformer](temporalestimator/transformer.md)
+- [func fitted<InputSequence>(to: InputSequence) async throws -> Self.Transformer](./fitted%28to%29.md)
+- [associatedtype Transformer : TemporalTransformer](./transformer.md)
   The transformer type created by this estimator.
 
 

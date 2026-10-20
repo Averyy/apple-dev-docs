@@ -2,6 +2,7 @@
 
 **Framework**: SwiftUI  
 **Kind**: init  
+**Role**: Initializer  
 **Required**: Yes
 
 Creates an instance of the app using the body that you define for its content.
@@ -28,7 +29,8 @@ Swift synthesizes a default initializer for structures that don’t provide one.
 
 ## See Also
 
-- [static func main()](app/main.md)
+### Running an app
+- [static func main()](./main%28%29.md)
   Initializes and runs the app.
 
 

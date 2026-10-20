@@ -1,7 +1,8 @@
 # strategy
 
 **Framework**: Create ML Components  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The imputation strategy.
 

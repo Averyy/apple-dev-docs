@@ -1,7 +1,8 @@
 # kMDItemGPSDestBearing
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.7+
@@ -10,6 +11,10 @@
 
 ```swift
 let kMDItemGPSDestBearing: CFString!
+```
+
+```c
+const CFStringRef kMDItemGPSDestBearing;
 ```
 
 

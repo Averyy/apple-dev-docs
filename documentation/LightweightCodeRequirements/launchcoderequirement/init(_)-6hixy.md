@@ -1,9 +1,10 @@
 # init(_:)
 
 **Framework**: LightweightCodeRequirements  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
-Convert a [`OnDiskCodeRequirement`](ondiskcoderequirement.md) to a [`LaunchCodeRequirement`](launchcoderequirement.md) if possible.
+Convert a [`OnDiskCodeRequirement`](../ondiskcoderequirement.md) to a [`LaunchCodeRequirement`](../launchcoderequirement.md) if possible.
 
 **Availability**:
 - iOS 17.4+
@@ -22,7 +23,7 @@ init(_ onDiskRequirement: OnDiskCodeRequirement) throws
 
 #### Discussion
 
-Conversion will fail if the [`OnDiskCodeRequirement`](ondiskcoderequirement.md) contains a constraint that cannot be converted to [`LaunchConstraint`](launchconstraint.md).
+Conversion will fail if the [`OnDiskCodeRequirement`](../ondiskcoderequirement.md) contains a constraint that cannot be converted to [`LaunchConstraint`](../launchconstraint.md).
 
 
 ---

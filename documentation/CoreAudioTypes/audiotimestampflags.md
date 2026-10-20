@@ -1,7 +1,8 @@
 # AudioTimeStampFlags
 
 **Framework**: Core Audio Types  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A structure that represents flags for a timestamp.
 
@@ -20,40 +21,45 @@ A structure that represents flags for a timestamp.
 struct AudioTimeStampFlags
 ```
 
+```c
+enum AudioTimeStampFlags : UInt32;
+```
+
 ## Topics
 
 ### Initializers
-- [init(rawValue: UInt32)](audiotimestampflags/init(rawvalue:).md)
+- [init(rawValue: UInt32)](./audiotimestampflags/init%28rawvalue%29.md)
   Creates a flag with an unsigned-integer value.
 ### Type Properties
-- [static var hostTimeValid: AudioTimeStampFlags](audiotimestampflags/hosttimevalid.md)
+- [static var hostTimeValid: AudioTimeStampFlags](./audiotimestampflags/hosttimevalid.md)
   A flag that indicates that the host time is valid.
-- [static var rateScalarValid: AudioTimeStampFlags](audiotimestampflags/ratescalarvalid.md)
+- [static var rateScalarValid: AudioTimeStampFlags](./audiotimestampflags/ratescalarvalid.md)
   A flag that indicates that the rate scalar is valid.
-- [static var sampleHostTimeValid: AudioTimeStampFlags](audiotimestampflags/samplehosttimevalid.md)
+- [static var sampleHostTimeValid: AudioTimeStampFlags](./audiotimestampflags/samplehosttimevalid.md)
   A flag that indicates that the sample frame time and the host time are valid.
-- [static var sampleTimeValid: AudioTimeStampFlags](audiotimestampflags/sampletimevalid.md)
+- [static var sampleTimeValid: AudioTimeStampFlags](./audiotimestampflags/sampletimevalid.md)
   A flag that indicates that the sample frame time is valid.
-- [static var smpteTimeValid: AudioTimeStampFlags](audiotimestampflags/smptetimevalid.md)
+- [static var smpteTimeValid: AudioTimeStampFlags](./audiotimestampflags/smptetimevalid.md)
   A flag that indicates that the SMPTE time is valid.
-- [static var wordClockTimeValid: AudioTimeStampFlags](audiotimestampflags/wordclocktimevalid.md)
+- [static var wordClockTimeValid: AudioTimeStampFlags](./audiotimestampflags/wordclocktimevalid.md)
   A flag that indicates that the word clock time is valid.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [ExpressibleByArrayLiteral](../swift/expressiblebyarrayliteral.md)
-- [OptionSet](../swift/optionset.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
-- [SetAlgebra](../swift/setalgebra.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [ExpressibleByArrayLiteral](../Swift/expressiblebyarrayliteral.md)
+- [OptionSet](../Swift/optionset.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
+- [SetAlgebra](../Swift/setalgebra.md)
 
 ## See Also
 
-- [struct AudioTimeStamp](audiotimestamp.md)
+### Audio Time
+- [struct AudioTimeStamp](./audiotimestamp.md)
   A structure that represents a timestamp value.
 
 

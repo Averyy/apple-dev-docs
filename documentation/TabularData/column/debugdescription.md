@@ -1,7 +1,8 @@
 # debugDescription
 
 **Framework**: TabularData  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A text representation of the column suitable for debugging.
 
@@ -22,9 +23,10 @@ var debugDescription: String { get }
 
 ## See Also
 
-- [var description: String](column/description.md)
+### Describing a Column
+- [var description: String](./description.md)
   A text representation of the column.
-- [var customMirror: Mirror](column/custommirror.md)
+- [var customMirror: Mirror](./custommirror.md)
   A mirror that reflects the column.
 
 

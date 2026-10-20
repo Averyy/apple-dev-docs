@@ -1,17 +1,22 @@
 # menuZone()
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Type Method
 
 Returns the zone from which `NSMenu` objects should be allocated.
 
 **Availability**:
-- macOS 10.0+
+- macOS 10.0+ - Deprecated in 10.11
 
 ## Declaration
 
 ```swift
 class func menuZone() -> NSZone!
+```
+
+```objc
++ (NSZone *) menuZone;
 ```
 
 #### Return Value
@@ -20,11 +25,12 @@ The zone from which `NSMenu` objects should be allocated.
 
 #### Discussion
 
-This is left in for compatibility and always returns [`NSDefaultMallocZone`](https://developer.apple.com/documentation/foundation/nsdefaultmalloczone). It is not necessary to use this.
+This is left in for compatibility and always returns [`NSDefaultMallocZone`](../../Foundation/nsdefaultmalloczone.md). It is not necessary to use this.
 
 ## See Also
 
-- [func helpRequested(with: NSEvent)](nsmenu/helprequested(with:).md)
+### Deprecated methods
+- [func helpRequested(with: NSEvent)](./helprequested%28with%29.md)
   Overridden by subclasses to implement specialized context-sensitive help behavior.
 
 

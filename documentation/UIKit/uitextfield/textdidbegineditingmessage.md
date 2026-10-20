@@ -1,7 +1,8 @@
 # UITextField.TextDidBeginEditingMessage
 
 **Framework**: UIKit  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 **Availability**:
 - iOS 26.0+
@@ -19,15 +20,15 @@ struct TextDidBeginEditingMessage
 ## Topics
 
 ### Initializers
-- [init(textField: UITextField)](uitextfield/textdidbegineditingmessage/init(textfield:).md)
+- [init(textField: UITextField)](./textdidbegineditingmessage/init%28textfield%29.md)
 ### Instance Properties
-- [var textField: UITextField](uitextfield/textdidbegineditingmessage/textfield.md)
+- [var textField: UITextField](./textdidbegineditingmessage/textfield.md)
 
 ## Relationships
 
 ### Conforms To
-- [NotificationCenter.MainActorMessage](../foundation/notificationcenter/mainactormessage.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [NotificationCenter.MainActorMessage](../../Foundation/notificationcenter/mainactormessage.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

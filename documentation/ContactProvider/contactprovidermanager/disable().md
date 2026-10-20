@@ -1,7 +1,8 @@
 # disable()
 
 **Framework**: ContactProvider  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Disables the extension domain.
 
@@ -21,13 +22,14 @@ Disabling the extension deletes all previously-provided contacts for the domain.
 
 ## See Also
 
-- [var domain: any ContactProviderDomain](contactprovidermanager/domain.md)
+### Managing the domain
+- [var domain: any ContactProviderDomain](./domain.md)
   The domain that this instance manages.
-- [func enable() async throws](contactprovidermanager/enable.md)
+- [func enable() async throws](./enable%28%29.md)
   Requests the person using the app to enable the extension domain.
-- [var isEnabled: Bool](contactprovidermanager/isenabled.md)
+- [var isEnabled: Bool](./isenabled.md)
   A Boolean value that indicates whether the person using the app enabled the extension domain.
-- [func reset() async throws](contactprovidermanager/reset.md)
+- [func reset() async throws](./reset%28%29.md)
   Resets the extension domain.
 
 

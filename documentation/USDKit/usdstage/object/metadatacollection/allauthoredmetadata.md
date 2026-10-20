@@ -1,7 +1,8 @@
 # allAuthoredMetadata
 
 **Framework**: USDKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Every authored metadata value on this object.
 

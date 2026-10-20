@@ -1,7 +1,8 @@
 # key
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - macOS 10.11+
@@ -12,11 +13,16 @@
 var key: String? { get set }
 ```
 
+```objc
+@property (copy, nullable) NSString * key;
+```
+
 ## See Also
 
-- [var isExplicitlyIncluded: Bool](nsdictionarycontrollerkeyvaluepair/isexplicitlyincluded.md)
-- [var localizedKey: String?](nsdictionarycontrollerkeyvaluepair/localizedkey.md)
-- [var value: Any?](nsdictionarycontrollerkeyvaluepair/value.md)
+### Instance Properties
+- [var isExplicitlyIncluded: Bool](./isexplicitlyincluded.md)
+- [var localizedKey: String?](./localizedkey.md)
+- [var value: Any?](./value.md)
 
 
 ---

@@ -1,7 +1,8 @@
 # getLineStart(_:end:contentsEnd:for:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns by reference the beginning of the first line and the end of the last line touched by the given range.
 
@@ -18,6 +19,10 @@ Returns by reference the beginning of the first line and the end of the last lin
 
 ```swift
 func getLineStart(_ startPtr: UnsafeMutablePointer<Int>?, end lineEndPtr: UnsafeMutablePointer<Int>?, contentsEnd contentsEndPtr: UnsafeMutablePointer<Int>?, for range: NSRange)
+```
+
+```objc
+- (void) getLineStart:(NSUInteger *) startPtr end:(NSUInteger *) lineEndPtr contentsEnd:(NSUInteger *) contentsEndPtr forRange:(NSRange) range;
 ```
 
 #### Discussion
@@ -42,17 +47,21 @@ This method detects all invalid ranges (including those with negative lengths). 
 - `startPtr`: Upon return, contains the index of the first character of the line containing the beginning of `aRange`. Pass `NULL` if you do not need this value (in which case the work to compute the value isn’t performed).
 - `lineEndPtr`: Upon return, contains the index of the first character past the terminator of the line containing the end of `aRange`. Pass `NULL` if you do not need this value (in which case the work to compute the value isn’t performed).
 - `contentsEndPtr`: Upon return, contains the index of the first character of the terminator of the line containing the end of `aRange`. Pass `NULL` if you do not need this value (in which case the work to compute the value isn’t performed).
-- `range`: A range within the receiver. The value must not exceed the bounds of the receiver. Raises an `NSRangeException` if `aRange` is invalid.
+- `range`: A range within the receiver. The value must not exceed the bounds of the receiver.
+
+  Raises an `NSRangeException` if `aRange` is invalid.
 
 ## See Also
 
-- [func substring(with: NSRange) -> String](nsstring/substring(with:).md)
+### Related Documentation
+- [func substring(with: NSRange) -> String](./substring%28with%29.md)
   Returns a string object containing the characters of the receiver that lie within a given range.
-- [func lineRange(for: NSRange) -> NSRange](nsstring/linerange(for:).md)
+### Determining Line and Paragraph Ranges
+- [func lineRange(for: NSRange) -> NSRange](./linerange%28for%29.md)
   Returns the range of characters representing the line or lines containing a given range.
-- [func getParagraphStart(UnsafeMutablePointer<Int>?, end: UnsafeMutablePointer<Int>?, contentsEnd: UnsafeMutablePointer<Int>?, for: NSRange)](nsstring/getparagraphstart(_:end:contentsend:for:).md)
+- [func getParagraphStart(UnsafeMutablePointer<Int>?, end: UnsafeMutablePointer<Int>?, contentsEnd: UnsafeMutablePointer<Int>?, for: NSRange)](./getparagraphstart%28_,end,contentsend,for%29.md)
   Returns by reference the beginning of the first paragraph and the end of the last paragraph touched by the given range.
-- [func paragraphRange(for: NSRange) -> NSRange](nsstring/paragraphrange(for:).md)
+- [func paragraphRange(for: NSRange) -> NSRange](./paragraphrange%28for%29.md)
   Returns the range of characters representing the paragraph or paragraphs containing a given range.
 
 

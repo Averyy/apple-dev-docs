@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Returns the first rectangle that encloses a range of text in a document.
@@ -10,13 +11,17 @@ Returns the first rectangle that encloses a range of text in a document.
 - iOS 3.2+
 - iPadOS 3.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
 func firstRect(for range: UITextRange) -> CGRect
+```
+
+```objc
+- (CGRect) firstRectForRange:(UITextRange *) range;
 ```
 
 #### Return Value
@@ -29,15 +34,17 @@ The first rectangle in a `range` of text. You might use this rectangle to draw a
 
 ## See Also
 
-- [func caretRect(for: UITextPosition) -> CGRect](uitextinput/caretrect(for:).md)
+### Related Documentation
+- [func caretRect(for: UITextPosition) -> CGRect](./caretrect%28for%29.md)
   Returns a rectangle to draw the caret at a specified insertion point.
-- [func closestPosition(to: CGPoint) -> UITextPosition?](uitextinput/closestposition(to:).md)
+### Working with geometry and hit-testing
+- [func closestPosition(to: CGPoint) -> UITextPosition?](./closestposition%28to%29.md)
   Returns the position in a document that is closest to a specified point.
-- [func selectionRects(for: UITextRange) -> [UITextSelectionRect]](uitextinput/selectionrects(for:).md)
+- [func selectionRects(for: UITextRange) -> [UITextSelectionRect]](./selectionrects%28for%29.md)
   Returns an array of selection rects corresponding to the range of text.
-- [func closestPosition(to: CGPoint, within: UITextRange) -> UITextPosition?](uitextinput/closestposition(to:within:).md)
+- [func closestPosition(to: CGPoint, within: UITextRange) -> UITextPosition?](./closestposition%28to,within%29.md)
   Returns the position in a document that is closest to a specified point in a specified range.
-- [func characterRange(at: CGPoint) -> UITextRange?](uitextinput/characterrange(at:).md)
+- [func characterRange(at: CGPoint) -> UITextRange?](./characterrange%28at%29.md)
   Returns the character or range of characters that is at a specified point in a document.
 
 

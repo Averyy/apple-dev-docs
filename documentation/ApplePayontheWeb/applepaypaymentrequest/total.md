@@ -1,7 +1,8 @@
 # total
 
 **Framework**: Apple Pay on the Web  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A line item that represents the total for the payment.
 
@@ -11,21 +12,21 @@ A line item that represents the total for the payment.
 
 ## Declaration
 
-```swift
+```
 required ApplePayLineItem total;
 ```
 
 ## Mentions
 
-- [Apple Pay on the Web Version 4 Release Notes](apple-pay-on-the-web-version-4-release-notes.md)
+- [Apple Pay on the Web Version 4 Release Notes](../apple-pay-on-the-web-version-4-release-notes.md)
 
 #### Discussion
 
-See [`ApplePayLineItem`](applepaylineitem.md).
+See [`ApplePayLineItem`](../applepaylineitem.md).
 
-The [`amount`](applepaylineitem/amount.md) of the `total` must be greater than or equal to zero and the [`label`](applepaylineitem/label.md) must be non-empty to pass validation.
+The [`amount`](../applepaylineitem/amount.md) of the `total` must be greater than or equal to zero and the [`label`](../applepaylineitem/label.md) must be non-empty to pass validation.
 
-Provide a business name in the [`label`](applepaylineitem/label.md) field. Use the same business name people see when they look for the charge on their bank or credit card statement, for example, `“COMPANY, INC."`.
+Provide a business name in the [`label`](../applepaylineitem/label.md) field. Use the same business name people see when they look for the charge on their bank or credit card statement, for example, `“COMPANY, INC."`.
 
 ```javascript
 "total": {
@@ -35,15 +36,16 @@ Provide a business name in the [`label`](applepaylineitem/label.md) field. Use t
 }
 ```
 
-> **Note**:  In versions of Apple Pay JS prior to version 4, the `amount` of the `total` must be greater than zero. Check for version availability using [`supportsVersion`](applepaysession/supportsversion.md) before setting a zero `amount`.
+> **Note**:  In versions of Apple Pay JS prior to version 4, the `amount` of the `total` must be greater than zero. Check for version availability using [`supportsVersion`](../applepaysession/supportsversion.md) before setting a zero `amount`.
 
 ## See Also
 
-- [lineItems](applepaypaymentrequest/lineitems.md)
+### Setting the total and summary line items
+- [lineItems](./lineitems.md)
   A set of line items that explain recurring payments and additional charges and discounts.
-- [ApplePayLineItem](applepaylineitem.md)
+- [ApplePayLineItem](../applepaylineitem.md)
   A line item in a payment request—for example, total, tax, discount, or grand total.
-- [ApplePayLineItemType](applepaylineitemtype.md)
+- [ApplePayLineItemType](../applepaylineitemtype.md)
   A type that indicates whether a line item is final or pending.
 
 

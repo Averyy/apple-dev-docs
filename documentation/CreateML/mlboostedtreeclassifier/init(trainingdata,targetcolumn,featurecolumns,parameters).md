@@ -1,7 +1,8 @@
 # init(trainingData:targetColumn:featureColumns:parameters:)
 
 **Framework**: Create ML  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a boosted tree classifier.
 
@@ -19,18 +20,25 @@ Creates a boosted tree classifier.
 init(trainingData: DataFrame, targetColumn: String, featureColumns: [String]? = nil, parameters: MLBoostedTreeClassifier.ModelParameters = ModelParameters(validation: .split(strategy: .automatic))) throws
 ```
 
+**Other overloads**:
+
+```swift
+init(trainingData: MLDataTable, targetColumn: String, featureColumns: [String]? = nil, parameters: MLBoostedTreeClassifier.ModelParameters = ModelParameters(validationData: nil)) throws
+```
+
 ## Parameters
 
 - `trainingData`: The training data
 - `targetColumn`: Name of the column containing the class labels
 - `featureColumns`: Names of the columns containing feature values. If `nil` all columns, other than the target column, will be used as feature values.
-- `parameters`: Model training parameters. See [`MLBoostedTreeClassifier.ModelParameters`](mlboostedtreeclassifier/modelparameters-swift.struct.md) for the defaults.
+- `parameters`: Model training parameters. See [`MLBoostedTreeClassifier.ModelParameters`](./modelparameters-swift.struct.md) for the defaults.
 
 ## See Also
 
-- [var targetColumn: String](mlboostedtreeclassifier/targetcolumn.md)
+### Training a boosted tree classifier synchronously
+- [var targetColumn: String](./targetcolumn.md)
   The name of the column you selected at initialization to define which categories the classifier predicts.
-- [var featureColumns: [String]](mlboostedtreeclassifier/featurecolumns.md)
+- [var featureColumns: [String]](./featurecolumns.md)
   The names of the columns you selected at initialization to train the classifier.
 
 

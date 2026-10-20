@@ -1,7 +1,8 @@
 # init(rawValue:)
 
 **Framework**: IOUSBHost  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates the structure.
 

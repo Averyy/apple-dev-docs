@@ -1,23 +1,28 @@
 # CFRunLoopAddCommonMode(_:_:)
 
 **Framework**: Core Foundation  
-**Kind**: func
+**Kind**: func  
+**Role**: Function
 
 Adds a mode to the set of run loop common modes.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
 ```swift
 func CFRunLoopAddCommonMode(_ rl: CFRunLoop!, _ mode: CFRunLoopMode!)
+```
+
+```c
+extern void CFRunLoopAddCommonMode(CFRunLoopRef rl, CFRunLoopMode mode);
 ```
 
 #### Discussion
@@ -26,7 +31,7 @@ Sources, timers, and observers get registered to one or more run loop modes and 
 
 Once a mode is added to the set of common modes, it cannot be removed.
 
-The Add, Contains, and Remove functions for sources, timers, and observers operate on a run loop’s set of common modes when you use the constant [`commonModes`](cfrunloopmode/commonmodes.md) for the run loop mode.
+The Add, Contains, and Remove functions for sources, timers, and observers operate on a run loop’s set of common modes when you use the constant [`commonModes`](./cfrunloopmode/commonmodes.md) for the run loop mode.
 
 ## Parameters
 
@@ -35,9 +40,10 @@ The Add, Contains, and Remove functions for sources, timers, and observers opera
 
 ## See Also
 
-- [func CFRunLoopCopyAllModes(CFRunLoop!) -> CFArray!](cfrunloopcopyallmodes(_:).md)
+### Managing Run Loop Modes
+- [func CFRunLoopCopyAllModes(CFRunLoop!) -> CFArray!](./cfrunloopcopyallmodes%28_%29.md)
   Returns an array that contains all the defined modes for a CFRunLoop object.
-- [func CFRunLoopCopyCurrentMode(CFRunLoop!) -> CFRunLoopMode!](cfrunloopcopycurrentmode(_:).md)
+- [func CFRunLoopCopyCurrentMode(CFRunLoop!) -> CFRunLoopMode!](./cfrunloopcopycurrentmode%28_%29.md)
   Returns the name of the mode in which a given run loop is currently running.
 
 

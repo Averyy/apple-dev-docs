@@ -1,7 +1,8 @@
 # kIMKCommandClientName
 
 **Framework**: InputMethodKit  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - macOS 10.5+
@@ -12,13 +13,18 @@
 let kIMKCommandClientName: String
 ```
 
+```c
+extern const NSString * kIMKCommandClientName;
+```
+
 #### Discussion
 
 Used to look up the client object; the client conforms to the IMKInputText and NSObject protocols.
 
 ## See Also
 
-- [let kIMKCommandMenuItemName: String](kimkcommandmenuitemname.md)
+### Constants
+- [let kIMKCommandMenuItemName: String](./kimkcommandmenuitemname.md)
 
 
 ---

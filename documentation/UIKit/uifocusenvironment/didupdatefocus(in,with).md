@@ -2,6 +2,7 @@
 
 **Framework**: UIKit  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Called immediately after the system updates the focus to a new view.
@@ -19,14 +20,18 @@ Called immediately after the system updates the focus to a new view.
 func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator)
 ```
 
+```objc
+- (void) didUpdateFocusInContext:(UIFocusUpdateContext *) context withAnimationCoordinator:(UIFocusAnimationCoordinator *) coordinator;
+```
+
 #### Discussion
 
-After the focus is updated to a new view, the focus engine calls this method on all focus environments that contain either the previously focused view, the next focused view, or both, in ascending order. You should override this method to update your app’s state in response to changes in focus. Use the provided animation coordinator to animate changes in visual appearance related to the update. For more information on animation coordinators, see [`UIFocusAnimationCoordinator`](uifocusanimationcoordinator.md).
+After the focus is updated to a new view, the focus engine calls this method on all focus environments that contain either the previously focused view, the next focused view, or both, in ascending order. You should override this method to update your app’s state in response to changes in focus. Use the provided animation coordinator to animate changes in visual appearance related to the update. For more information on animation coordinators, see [`UIFocusAnimationCoordinator`](../uifocusanimationcoordinator.md).
 
 ## Parameters
 
-- `context`: An instance of [`UIFocusUpdateContext`](uifocusupdatecontext.md) containing metadata of the focus related update.
-- `coordinator`: An instance of [`UIFocusAnimationCoordinator`](uifocusanimationcoordinator.md) used for coordinating focus-related animations.
+- `context`: An instance of [`UIFocusUpdateContext`](../uifocusupdatecontext.md) containing metadata of the focus related update.
+- `coordinator`: An instance of [`UIFocusAnimationCoordinator`](../uifocusanimationcoordinator.md) used for coordinating focus-related animations.
 
 
 ---

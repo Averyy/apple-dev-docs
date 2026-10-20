@@ -1,7 +1,8 @@
 # modeTags
 
 **Framework**: Matter  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
 - iOS 18.4+
@@ -16,6 +17,10 @@
 
 ```swift
 var modeTags: [Any] { get set }
+```
+
+```objc
+@property (nonatomic, copy) NSArray * modeTags;
 ```
 
 

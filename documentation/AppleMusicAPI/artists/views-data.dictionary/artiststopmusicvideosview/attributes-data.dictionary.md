@@ -1,7 +1,8 @@
 # Artists.Views.ArtistsTopMusicVideosView.Attributes
 
 **Framework**: Apple Music API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Relevant music videos associated with the artist.
 
@@ -10,7 +11,7 @@ Relevant music videos associated with the artist.
 
 ## Declaration
 
-```swift
+```
 object Artists.Views.ArtistsTopMusicVideosView.Attributes
 ```
 

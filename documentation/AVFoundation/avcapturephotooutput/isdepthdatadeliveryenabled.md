@@ -1,7 +1,8 @@
 # isDepthDataDeliveryEnabled
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that specifies whether to configure the capture pipeline for depth data capture.
 
@@ -17,17 +18,22 @@ A Boolean value that specifies whether to configure the capture pipeline for dep
 var isDepthDataDeliveryEnabled: Bool { get set }
 ```
 
+```objc
+@property (nonatomic, getter=isDepthDataDeliveryEnabled) BOOL depthDataDeliveryEnabled;
+```
+
 #### Discussion
 
 Depth data captures a per-pixel map of scene depth information delivered alongside the photo image and optionally embedded in image file output. Depth data can be used for purposes such as applying depth-sensitive photo filter effects (like that seen in the iOS Camera app’s Portrait mode) and performing computer vision tasks.
 
-Capturing depth data requires that a capture session set up its internal rendering pipeline differently. If you intend to capture depth data at all, set this property to [`true`](https://developer.apple.com/documentation/swift/true) before calling the [`AVCaptureSession`](avcapturesession.md) [`startRunning()`](avcapturesession/startrunning().md) method. Changing this property while the session is running requires a lengthy reconfiguration of the capture render pipeline: Live Photo captures in progress will end immediately, unfulfilled photo requests will abort, and video preview will temporarily freeze.
+Capturing depth data requires that a capture session set up its internal rendering pipeline differently. If you intend to capture depth data at all, set this property to [`true`](../../Swift/true.md) before calling the [`AVCaptureSession`](../avcapturesession.md) [`startRunning()`](../avcapturesession/startrunning%28%29.md) method. Changing this property while the session is running requires a lengthy reconfiguration of the capture render pipeline: Live Photo captures in progress will end immediately, unfulfilled photo requests will abort, and video preview will temporarily freeze.
 
-You must enable this option before initiating a photo capture with the [`isDepthDataDeliveryEnabled`](avcapturephotosettings/isdepthdatadeliveryenabled.md) property of your photo settings object set to [`true`](https://developer.apple.com/documentation/swift/true). However, after you’ve enabled this option, you are free to issue photo capture requests both with and without depth data.
+You must enable this option before initiating a photo capture with the [`isDepthDataDeliveryEnabled`](../avcapturephotosettings/isdepthdatadeliveryenabled.md) property of your photo settings object set to [`true`](../../Swift/true.md). However, after you’ve enabled this option, you are free to issue photo capture requests both with and without depth data.
 
 ## See Also
 
-- [var isDepthDataDeliverySupported: Bool](avcapturephotooutput/isdepthdatadeliverysupported.md)
+### Configuring depth data capture
+- [var isDepthDataDeliverySupported: Bool](./isdepthdatadeliverysupported.md)
   A Boolean value indicating whether the capture output currently supports depth data capture.
 
 

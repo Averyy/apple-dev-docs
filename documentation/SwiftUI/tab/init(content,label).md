@@ -1,7 +1,8 @@
 # init(content:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new tab with a label that you can use in a tab view.
 
@@ -20,6 +21,8 @@ Creates a new tab with a label that you can use in a tab view.
 init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
+Available when `Value` is `Never`, `Content` conforms to `View`, and `Label` conforms to `View`.
+
 ## Parameters
 
 - `content`: The view content of the tab.
@@ -27,11 +30,12 @@ init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 
 ## See Also
 
-- [init(value:content:label:)](tab/init(value:content:label:).md)
+### Creating a tab with label
+- [init(value:content:label:)](./init%28value,content,label%29.md)
   Creates a new tab with a label that you can use in a tab view.
-- [init(role: TabRole?, content: () -> Content, label: () -> Label)](tab/init(role:content:label:).md)
+- [init(role: TabRole?, content: () -> Content, label: () -> Label)](./init%28role,content,label%29.md)
   Creates a new tab with a label that you can use in a tab view.
-- [init(value:role:content:label:)](tab/init(value:role:content:label:).md)
+- [init(value:role:content:label:)](./init%28value,role,content,label%29.md)
   Creates a new tab with a label that you can use in a tab view.
 
 

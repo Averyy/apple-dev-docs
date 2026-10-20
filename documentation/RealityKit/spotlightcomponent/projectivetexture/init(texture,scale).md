@@ -1,7 +1,8 @@
 # init(texture:scale:)
 
 **Framework**: RealityKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a new instance with the specified texture and scale
 
@@ -21,7 +22,8 @@ init(texture: TextureResource, scale: SIMD2<Float> = [1.0, 1.0])
 
 ## See Also
 
-- [init(texture: TextureResource, coordinateTransform: SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform)](spotlightcomponent/projectivetexture/init(texture:coordinatetransform:).md)
+### Creating a projective texture
+- [init(texture: TextureResource, coordinateTransform: SpotLightComponent.ProjectiveTexture.TextureCoordinateTransform)](./init%28texture,coordinatetransform%29.md)
   Creates a new instance with the specified texture and coordinate transform for scale and rotation
 
 

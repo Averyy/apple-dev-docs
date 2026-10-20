@@ -1,7 +1,8 @@
 # addTranslateOp(_:inverse:)
 
 **Framework**: Model I/O  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 11.0+
@@ -15,6 +16,10 @@
 
 ```swift
 func addTranslateOp(_ animatedValueName: String, inverse: Bool) -> MDLTransformTranslateOp
+```
+
+```objc
+- (MDLTransformTranslateOp *) addTranslateOp:(NSString *) animatedValueName inverse:(bool) inverse;
 ```
 
 

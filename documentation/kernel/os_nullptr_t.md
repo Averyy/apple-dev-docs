@@ -1,14 +1,15 @@
 # os::nullptr_t
 
 **Framework**: Kernel  
-**Kind**: tdef
+**Kind**: tdef  
+**Role**: Type Alias
 
 **Availability**:
 - macOS 12.3+
 
 ## Declaration
 
-```swift
+```cpp
 typedef decltype(nullptr) os::nullptr_t;
 ```
 

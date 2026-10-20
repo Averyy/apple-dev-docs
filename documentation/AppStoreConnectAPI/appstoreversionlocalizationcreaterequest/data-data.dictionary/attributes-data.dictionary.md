@@ -1,7 +1,8 @@
 # AppStoreVersionLocalizationCreateRequest.Data.Attributes
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 Attributes that you set that describe the new resource.
 
@@ -10,7 +11,7 @@ Attributes that you set that describe the new resource.
 
 ## Declaration
 
-```swift
+```
 object AppStoreVersionLocalizationCreateRequest.Data.Attributes
 ```
 
@@ -18,7 +19,7 @@ object AppStoreVersionLocalizationCreateRequest.Data.Attributes
 
 - `description` (string)
 - `keywords` (string)
-- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
+- `locale` (string) *(required)*: The specified locale. To learn more, see [Managing metadata in your app by using locale shortcodes](../../managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 - `marketingUrl` (uri)
 - `promotionalText` (string)
 - `supportUrl` (uri)
@@ -26,7 +27,8 @@ object AppStoreVersionLocalizationCreateRequest.Data.Attributes
 
 ## See Also
 
-- [object AppStoreVersionLocalizationCreateRequest.Data.Relationships](appstoreversionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+### Objects
+- [object AppStoreVersionLocalizationCreateRequest.Data.Relationships](./relationships-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 
 

@@ -1,7 +1,8 @@
 # duration
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The total time elapsed while in active state.
 
@@ -19,15 +20,20 @@ The total time elapsed while in active state.
 var duration: TimeInterval { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) NSTimeInterval duration;
+```
+
 ## See Also
 
-- [var startDate: Date?](gkgameactivity/startdate.md)
+### Getting the activity properties
+- [var startDate: Date?](./startdate.md)
   The date when the activity was initially started.
-- [var endDate: Date?](gkgameactivity/enddate.md)
+- [var endDate: Date?](./enddate.md)
   The date when the activity was officially ended.
-- [var creationDate: Date](gkgameactivity/creationdate.md)
+- [var creationDate: Date](./creationdate.md)
   The date when the activity was created.
-- [var lastResumeDate: Date?](gkgameactivity/lastresumedate.md)
+- [var lastResumeDate: Date?](./lastresumedate.md)
   The date when the activity was last resumed.
 
 

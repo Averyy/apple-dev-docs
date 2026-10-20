@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An identifier used to match bar button items across transitions in a navigation bar or toolbar.
 
@@ -16,6 +17,10 @@ An identifier used to match bar button items across transitions in a navigation 
 
 ```swift
 var identifier: String? { get set }
+```
+
+```objc
+@property (nonatomic, copy, nullable) NSString * identifier;
 ```
 
 #### Discussion

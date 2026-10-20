@@ -1,7 +1,8 @@
 # kSecGuestAttributeArchitecture
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 A key whose value is a number representing the CPU type under which the guest code is designed to run.
 
@@ -13,6 +14,10 @@ A key whose value is a number representing the CPU type under which the guest co
 
 ```swift
 let kSecGuestAttributeArchitecture: CFString
+```
+
+```c
+extern CFStringRef const kSecGuestAttributeArchitecture;
 ```
 
 #### Discussion

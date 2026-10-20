@@ -1,7 +1,8 @@
 # maximumPotentialExtendedDynamicRangeColorComponentValue
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The maximum possible color component value for the screen when it’s in extended dynamic range (EDR) mode.
 
@@ -14,17 +15,22 @@ The maximum possible color component value for the screen when it’s in extende
 var maximumPotentialExtendedDynamicRangeColorComponentValue: CGFloat { get }
 ```
 
+```objc
+@property (readonly) CGFloat maximumPotentialExtendedDynamicRangeColorComponentValue;
+```
+
 #### Discussion
 
-The value of this property is determined when you create the [`NSScreen`](nsscreen.md) object, and doesn’t change afterwards. If this property is greater than `1.0`, the screen supports EDR values. If the screen doesn’t support EDR values, the value is `1.0`.
+The value of this property is determined when you create the [`NSScreen`](../nsscreen.md) object, and doesn’t change afterwards. If this property is greater than `1.0`, the screen supports EDR values. If the screen doesn’t support EDR values, the value is `1.0`.
 
-The actual maximum value might be lower than this property’s value, and can change dynamically, depending on the capabilities of the display hardware and other conditions. See [`maximumExtendedDynamicRangeColorComponentValue`](nsscreen/maximumextendeddynamicrangecolorcomponentvalue.md).
+The actual maximum value might be lower than this property’s value, and can change dynamically, depending on the capabilities of the display hardware and other conditions. See [`maximumExtendedDynamicRangeColorComponentValue`](./maximumextendeddynamicrangecolorcomponentvalue.md).
 
 ## See Also
 
-- [var maximumExtendedDynamicRangeColorComponentValue: CGFloat](nsscreen/maximumextendeddynamicrangecolorcomponentvalue.md)
+### Getting Extended Dynamic Range Details
+- [var maximumExtendedDynamicRangeColorComponentValue: CGFloat](./maximumextendeddynamicrangecolorcomponentvalue.md)
   The current maximum color component value for the screen.
-- [var maximumReferenceExtendedDynamicRangeColorComponentValue: CGFloat](nsscreen/maximumreferenceextendeddynamicrangecolorcomponentvalue.md)
+- [var maximumReferenceExtendedDynamicRangeColorComponentValue: CGFloat](./maximumreferenceextendeddynamicrangecolorcomponentvalue.md)
   The current maximum color component value for reference rendering to the screen.
 
 

@@ -2,6 +2,7 @@
 
 **Framework**: WidgetKit  
 **Kind**: property  
+**Role**: Instance Property  
 **Required**: Yes
 
 A value to be shown while previewing the control in the add sheet.
@@ -21,7 +22,7 @@ var previewValue: Self.Value { get }
 
 #### Discussion
 
-This value should be generated quickly and cheaply. Calculate more expensive and accurate values in [`currentValue()`](controlvalueprovider/currentvalue().md).
+This value should be generated quickly and cheaply. Calculate more expensive and accurate values in [`currentValue()`](./currentvalue%28%29.md).
 
 
 ---

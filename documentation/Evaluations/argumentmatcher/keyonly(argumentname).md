@@ -1,7 +1,8 @@
 # ArgumentMatcher.keyOnly(argumentName:)
 
 **Framework**: Evaluations  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
 A value that indicates that the argument must be present with this key and no specific value.
 
@@ -26,7 +27,8 @@ case keyOnly(argumentName: String)
 
 ## See Also
 
-- [case exact(argumentName: String, value: ArgumentValue)](argumentmatcher/exact(argumentname:value:).md)
+### Exact matching
+- [case exact(argumentName: String, value: ArgumentValue)](./exact%28argumentname,value%29.md)
   A value that indicates that the argument must be present with this exact key and value.
 
 

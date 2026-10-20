@@ -1,7 +1,8 @@
 # addAnimationCompletion(criteria:_:)
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Adds a completion to run when the animations created with this transaction are all complete.
 
@@ -26,9 +27,10 @@ The completion callback will always be fired exactly one time. If no animations 
 
 ## See Also
 
-- [var animation: Animation?](transaction/animation.md)
+### Managing animations
+- [var animation: Animation?](./animation.md)
   The animation, if any, associated with the current state change.
-- [var disablesAnimations: Bool](transaction/disablesanimations.md)
+- [var disablesAnimations: Bool](./disablesanimations.md)
   A Boolean value that indicates whether views should disable animations.
 
 

@@ -1,7 +1,8 @@
 # PKPaymentSummaryItem
 
 **Framework**: PassKit (Apple Pay and Wallet)  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that defines a summary item in a payment request, taxes, discounts, shipping, a grand total, and the like.
 
@@ -19,53 +20,58 @@ An object that defines a summary item in a payment request, taxes, discounts, sh
 class PKPaymentSummaryItem
 ```
 
+```objc
+@interface PKPaymentSummaryItem : NSObject
+```
+
 #### Overview
 
-For shipping cost, use the [`PKShippingMethod`](pkshippingmethod.md) subclass.
+For shipping cost, use the [`PKShippingMethod`](./pkshippingmethod.md) subclass.
 
 ## Topics
 
 ### Creating  summary items
-- [convenience init(label: String, amount: NSDecimalNumber)](pkpaymentsummaryitem/init(label:amount:).md)
+- [convenience init(label: String, amount: NSDecimalNumber)](./pkpaymentsummaryitem/init%28label,amount%29.md)
   Initializes and returns a summary item with the given label and amount.
-- [convenience init(label: String, amount: NSDecimalNumber, type: PKPaymentSummaryItemType)](pkpaymentsummaryitem/init(label:amount:type:).md)
+- [convenience init(label: String, amount: NSDecimalNumber, type: PKPaymentSummaryItemType)](./pkpaymentsummaryitem/init%28label,amount,type%29.md)
   Initializes and returns a summary item with the given label, amount, and type.
 ### Describing summary items
-- [var label: String](pkpaymentsummaryitem/label.md)
+- [var label: String](./pkpaymentsummaryitem/label.md)
   A short, localized description of the item.
-- [var amount: NSDecimalNumber](pkpaymentsummaryitem/amount.md)
+- [var amount: NSDecimalNumber](./pkpaymentsummaryitem/amount.md)
   The summary item’s amount.
-- [var type: PKPaymentSummaryItemType](pkpaymentsummaryitem/type.md)
+- [var type: PKPaymentSummaryItemType](./pkpaymentsummaryitem/type.md)
   The summary item’s type that indicates whether the amount is final.
-- [enum PKPaymentSummaryItemType](pkpaymentsummaryitemtype.md)
+- [enum PKPaymentSummaryItemType](./pkpaymentsummaryitemtype.md)
   Constants that describe the type of the payment summary item, such as final or pending.
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Inherited By
-- [PKAutomaticReloadPaymentSummaryItem](pkautomaticreloadpaymentsummaryitem.md)
-- [PKDeferredPaymentSummaryItem](pkdeferredpaymentsummaryitem.md)
-- [PKDisbursementSummaryItem](pkdisbursementsummaryitem.md)
-- [PKInstantFundsOutFeeSummaryItem](pkinstantfundsoutfeesummaryitem.md)
-- [PKRecurringPaymentSummaryItem](pkrecurringpaymentsummaryitem.md)
-- [PKShippingMethod](pkshippingmethod.md)
+- [PKAutomaticReloadPaymentSummaryItem](./pkautomaticreloadpaymentsummaryitem.md)
+- [PKDeferredPaymentSummaryItem](./pkdeferredpaymentsummaryitem.md)
+- [PKDisbursementSummaryItem](./pkdisbursementsummaryitem.md)
+- [PKInstantFundsOutFeeSummaryItem](./pkinstantfundsoutfeesummaryitem.md)
+- [PKRecurringPaymentSummaryItem](./pkrecurringpaymentsummaryitem.md)
+- [PKShippingMethod](./pkshippingmethod.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [var summaryItems: [PKPaymentSummaryItem]](pkdisbursementrequest/summaryitems.md)
+### Setting the summary items
+- [var summaryItems: [PKPaymentSummaryItem]](./pkdisbursementrequest/summaryitems.md)
   An array of payment summary item objects that the framework presents to people.
-- [class PKDisbursementSummaryItem](pkdisbursementsummaryitem.md)
+- [class PKDisbursementSummaryItem](./pkdisbursementsummaryitem.md)
   A summary item that represents a disbursement.
-- [class PKInstantFundsOutFeeSummaryItem](pkinstantfundsoutfeesummaryitem.md)
+- [class PKInstantFundsOutFeeSummaryItem](./pkinstantfundsoutfeesummaryitem.md)
   A summary item that represents a fee for an instant funds out transfer.
 
 

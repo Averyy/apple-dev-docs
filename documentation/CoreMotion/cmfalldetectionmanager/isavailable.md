@@ -1,7 +1,8 @@
 # isAvailable
 
 **Framework**: Core Motion  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A Boolean value that indicates whether the current device supports fall detection.
 
@@ -12,6 +13,10 @@ A Boolean value that indicates whether the current device supports fall detectio
 
 ```swift
 class var isAvailable: Bool { get }
+```
+
+```objc
+@property (class, nonatomic, readonly, getter=isAvailable) BOOL available;
 ```
 
 

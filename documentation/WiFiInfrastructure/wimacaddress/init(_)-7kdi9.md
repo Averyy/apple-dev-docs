@@ -1,7 +1,8 @@
 # init(_:)
 
 **Framework**: Wi-Fi Infrastructure  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a MAC Address from the provided case-insensitive string, of the format `"XX:XX:XX:XX:XX:XX"`.
 
@@ -26,7 +27,8 @@ The mac address, or `nil` if the input data was invalid and it could not be cons
 
 ## See Also
 
-- [var stringRepresentation: String](wimacaddress/stringrepresentation.md)
+### Working with MAC Addresses as strings
+- [var stringRepresentation: String](./stringrepresentation.md)
   The MAC Address as an uppercase string, in the format `"XX:XX:XX:XX:XX:XX"`.
 
 

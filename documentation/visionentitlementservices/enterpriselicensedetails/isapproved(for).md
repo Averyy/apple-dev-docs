@@ -1,7 +1,8 @@
 # isApproved(for:)
 
 **Framework**: VisionEntitlementServices  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Returns whether the app is licensed to use the provided `EnterpriseEntitlement` and was built with that `EnterpriseEntitlement`
 

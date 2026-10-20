@@ -1,7 +1,8 @@
 # interactive
 
 **Framework**: File Provider  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A testing mode where the extension can deterministically test asynchronous operations.
 
@@ -18,26 +19,31 @@ A testing mode where the extension can deterministically test asynchronous opera
 static var interactive: NSFileProviderDomain.TestingModes { get }
 ```
 
+```c
+NSFileProviderDomainTestingModeInteractive
+```
+
 #### Discussion
 
 Disable the system’s automatic scheduling and execution of operations. Instead, the File Provider extension can manually determine the order of execution.
 
 This testing mode enables the following synchronous methods:
 
-- **[`listAvailableTestingOperations()`](nsfileprovidermanager/listavailabletestingoperations().md)**: Lists all the operations that are ready for scheduling.
-- **[`run(_:)`](nsfileprovidermanager/run(_:).md)**: Asks the system to schedule and execute the specified operations.
+- **[`listAvailableTestingOperations()`](../../nsfileprovidermanager/listavailabletestingoperations%28%29.md)**: Lists all the operations that are ready for scheduling.
+- **[`run(_:)`](../../nsfileprovidermanager/run%28_%29.md)**: Asks the system to schedule and execute the specified operations.
 
-The [`interactive`](nsfileproviderdomain/testingmodes-swift.struct/interactive.md) testing mode expects the File Provider extension to repeat the following steps while running tests:
+The [`interactive`](./interactive.md) testing mode expects the File Provider extension to repeat the following steps while running tests:
 
-1. Call [`listAvailableTestingOperations()`](nsfileprovidermanager/listavailabletestingoperations().md)to get the list of outstanding operations.
+1. Call [`listAvailableTestingOperations()`](../../nsfileprovidermanager/listavailabletestingoperations%28%29.md)to get the list of outstanding operations.
 2. Select the next set of operations required by your test.
-3. Call [`run(_:)`](nsfileprovidermanager/run(_:).md)to execute those operations.
+3. Call [`run(_:)`](../../nsfileprovidermanager/run%28_%29.md)to execute those operations.
 
 The `interactive` testing mode also disables some of the File Provider extension’s crash guarantees. For example, the system may lose any event that it hasn’t yet ingested.
 
 ## See Also
 
-- [static var alwaysEnabled: NSFileProviderDomain.TestingModes](nsfileproviderdomain/testingmodes-swift.struct/alwaysenabled.md)
+### Accessing Modes
+- [static var alwaysEnabled: NSFileProviderDomain.TestingModes](./alwaysenabled.md)
   A testing mode that automatically enables the domain.
 
 

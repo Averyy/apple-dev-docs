@@ -1,7 +1,8 @@
 # getBytes(_:maxLength:usedLength:encoding:options:range:remaining:)
 
 **Framework**: Swift  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Writes the given `range` of characters into `buffer` in a given `encoding`, without any allocations.  Does not NULL-terminate.
 

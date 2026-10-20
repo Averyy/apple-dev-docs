@@ -1,7 +1,8 @@
 # contentAverageLightLevel
 
 **Framework**: Core Image  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A value for overriding the automatic behavior of the Content Average Light Level property when creating an image.
 
@@ -17,6 +18,10 @@ A value for overriding the automatic behavior of the Content Average Light Level
 
 ```swift
 static let contentAverageLightLevel: CIImageOption
+```
+
+```c
+extern CIImageOption const kCIImageContentAverageLightLevel;
 ```
 
 #### Discussion

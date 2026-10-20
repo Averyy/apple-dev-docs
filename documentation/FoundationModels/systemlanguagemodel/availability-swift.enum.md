@@ -1,7 +1,8 @@
 # SystemLanguageModel.Availability
 
 **Framework**: Foundation Models  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The availability status for a specific system language model.
 
@@ -21,30 +22,31 @@ enum Availability
 
 #### Overview
 
-> **Note**: [`availability`](systemlanguagemodel/availability-swift.property.md)
+> **See Also**: [`availability`](./availability-swift.property.md)
 
 ## Topics
 
 ### Checking for availability
-- [SystemLanguageModel.Availability.available](systemlanguagemodel/availability-swift.enum/available.md)
+- [SystemLanguageModel.Availability.available](./availability-swift.enum/available.md)
   The system is ready to make requests.
-- [case unavailable(SystemLanguageModel.Availability.UnavailableReason)](systemlanguagemodel/availability-swift.enum/unavailable(_:).md)
+- [case unavailable(SystemLanguageModel.Availability.UnavailableReason)](./availability-swift.enum/unavailable%28_%29.md)
   The system isn’t ready for requests.
-- [SystemLanguageModel.Availability.UnavailableReason](systemlanguagemodel/availability-swift.enum/unavailablereason.md)
+- [SystemLanguageModel.Availability.UnavailableReason](./availability-swift.enum/unavailablereason.md)
   The reason the system language model is unavailable.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var isAvailable: Bool](systemlanguagemodel/isavailable.md)
+### Checking model availability
+- [var isAvailable: Bool](./isavailable.md)
   A Boolean value that indicates whether the system is entirely ready.
-- [var availability: SystemLanguageModel.Availability](systemlanguagemodel/availability-swift.property.md)
+- [var availability: SystemLanguageModel.Availability](./availability-swift.property.md)
   The availability of the language model.
 
 

@@ -1,7 +1,8 @@
 # ecosystemName
 
 **Framework**: MatterSupport  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of your ecosystem.
 
@@ -10,7 +11,7 @@ The name of your ecosystem.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 14.0+
-- visionOS ?+
+- visionOS
 
 ## Declaration
 
@@ -24,7 +25,8 @@ This is a localized string that appears during device setup.
 
 ## See Also
 
-- [var homes: [MatterAddDeviceRequest.Home]](matteradddevicerequest/topology-swift.struct/homes.md)
+### Getting the properties
+- [var homes: [MatterAddDeviceRequest.Home]](./homes.md)
   An array of available homes to add the new device into.
 
 

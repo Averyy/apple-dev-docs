@@ -1,14 +1,15 @@
 # kIOFBNS_Sleep
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 10.14+
 
 ## Declaration
 
-```swift
+```c
 kIOFBNS_Sleep = 0x00
 ```
 

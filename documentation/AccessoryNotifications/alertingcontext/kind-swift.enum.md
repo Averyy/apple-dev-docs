@@ -1,7 +1,8 @@
 # AlertingContext.Kind
 
 **Framework**: Accessory Notifications  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 Notification types for specialized handling.
 
@@ -17,28 +18,29 @@ enum Kind
 ## Topics
 
 ### Identifying notification types
-- [AlertingContext.Kind.notification](alertingcontext/kind-swift.enum/notification.md)
+- [AlertingContext.Kind.notification](./kind-swift.enum/notification.md)
   A standard notification.
-- [AlertingContext.Kind.incomingCall](alertingcontext/kind-swift.enum/incomingcall.md)
+- [AlertingContext.Kind.incomingCall](./kind-swift.enum/incomingcall.md)
   An incoming call notification.
-- [AlertingContext.Kind.alarm](alertingcontext/kind-swift.enum/alarm.md)
+- [AlertingContext.Kind.alarm](./kind-swift.enum/alarm.md)
   A classification for alarm notifications.
-- [AlertingContext.Kind.timer](alertingcontext/kind-swift.enum/timer.md)
+- [AlertingContext.Kind.timer](./kind-swift.enum/timer.md)
   A timer notification.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../swift/decodable.md)
-- [Encodable](../swift/encodable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Decodable](../../Swift/decodable.md)
+- [Encodable](../../Swift/encodable.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var kind: AlertingContext.Kind](alertingcontext/kind-swift.property.md)
+### Classifying the notification type
+- [var kind: AlertingContext.Kind](./kind-swift.property.md)
   A classification for the notification type.
 
 

@@ -1,7 +1,8 @@
 # Bulk Update Negative Keywords
 
 **Framework**: Apple Ads Platform API  
-**Kind**: httpRequest
+**Kind**: httpRequest  
+**Role**: Web Service Endpoint
 
 Update multiple negative keywords in a single request.
 
@@ -91,13 +92,31 @@ POST /v1/negative-keywords/bulk-update
 
 ## Parameters
 
+### Header Parameters
+
 - `X-Ap-Context` (string) *(required)*
+
+## Request Body
+
+**Content-Type**: `application/json`  
+**Type**: `NegativeKeywordUpdateBulkRequest`
+
+## Responses
+
+- `200` OK (`NegativeKeywordUpdateBulkResponse`, `application/json`)
+- `400` Bad Request (`ErrorResponse`, `application/json`)
+- `401` Unauthorized (`ErrorResponse`, `application/json`)
+- `403` Forbidden (`ErrorResponse`, `application/json`)
+- `404` Not Found (`ErrorResponse`, `application/json`)
+- `429` Too Many Requests (`ErrorResponse`, `application/json`)
+- `500` Internal Server Error (`ErrorResponse`, `application/json`)
 
 ## See Also
 
-- [Bulk Create Negative Keywords](post-negative-keywords-bulk-create.md)
+### Negative Keywords
+- [Bulk Create Negative Keywords](./post-negative-keywords-bulk-create.md)
   Create multiple negative keywords in a single request.
-- [Bulk Delete Negative Keywords](post-negative-keywords-bulk-delete.md)
+- [Bulk Delete Negative Keywords](./post-negative-keywords-bulk-delete.md)
   Delete multiple negative keywords in a single request.
 
 

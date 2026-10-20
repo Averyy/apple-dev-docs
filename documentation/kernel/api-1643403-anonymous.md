@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,7 +18,7 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kSCSIServiceAction_WRITE_LONG_16](1643403-anonymous/kscsiserviceaction_write_long_16.md)
+- [kSCSIServiceAction_WRITE_LONG_16](./api-1643403-anonymous/kscsiserviceaction_write_long_16.md)
 
 
 ---

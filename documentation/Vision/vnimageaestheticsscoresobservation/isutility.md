@@ -1,7 +1,8 @@
 # isUtility
 
 **Framework**: Vision  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A Boolean value that represents images that are not necessarily of poor image quality, but may not have memorable or exciting content.
 
@@ -19,9 +20,14 @@ A Boolean value that represents images that are not necessarily of poor image qu
 var isUtility: Bool { get }
 ```
 
+```objc
+@property (nonatomic, assign, readonly) BOOL isUtility;
+```
+
 ## See Also
 
-- [var overallScore: Float](vnimageaestheticsscoresobservation/overallscore.md)
+### Parsing Observation Content
+- [var overallScore: Float](./overallscore.md)
   A score which incorporates aesthetic score, failure score, and utility labels.
 
 

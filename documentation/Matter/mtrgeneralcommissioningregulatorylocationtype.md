@@ -1,7 +1,8 @@
 # MTRGeneralCommissioningRegulatoryLocationType
 
 **Framework**: Matter  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 16.1+
@@ -18,24 +19,28 @@
 enum MTRGeneralCommissioningRegulatoryLocationType
 ```
 
+```c
+enum MTRGeneralCommissioningRegulatoryLocationType : uint8_t;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [MTRGeneralCommissioningRegulatoryLocationType.indoor](mtrgeneralcommissioningregulatorylocationtype/indoor.md)
-- [MTRGeneralCommissioningRegulatoryLocationType.indoorOutdoor](mtrgeneralcommissioningregulatorylocationtype/indooroutdoor.md)
-- [MTRGeneralCommissioningRegulatoryLocationType.outdoor](mtrgeneralcommissioningregulatorylocationtype/outdoor.md)
+- [MTRGeneralCommissioningRegulatoryLocationType.indoor](./mtrgeneralcommissioningregulatorylocationtype/indoor.md)
+- [MTRGeneralCommissioningRegulatoryLocationType.indoorOutdoor](./mtrgeneralcommissioningregulatorylocationtype/indooroutdoor.md)
+- [MTRGeneralCommissioningRegulatoryLocationType.outdoor](./mtrgeneralcommissioningregulatorylocationtype/outdoor.md)
 ### Initializers
-- [init?(rawValue: UInt8)](mtrgeneralcommissioningregulatorylocationtype/init(rawvalue:).md)
+- [init?(rawValue: UInt8)](./mtrgeneralcommissioningregulatorylocationtype/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 
 ---

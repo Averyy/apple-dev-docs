@@ -1,7 +1,8 @@
 # soundName
 
 **Framework**: CloudKit JS  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The name of a sound file in the app bundle to play as an alert.
 
@@ -10,7 +11,7 @@ The name of a sound file in the app bundle to play as an alert.
 
 ## Declaration
 
-```swift
+```
 attribute String soundName;
 ```
 

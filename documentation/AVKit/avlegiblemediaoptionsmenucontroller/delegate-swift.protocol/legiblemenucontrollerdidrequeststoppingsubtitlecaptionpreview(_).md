@@ -1,7 +1,8 @@
 # legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview(_:)
 
 **Framework**: AVKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 **Availability**:
 - iOS 26.4+
@@ -16,6 +17,10 @@
 optional func legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview(_ menuController: AVLegibleMediaOptionsMenuController)
 ```
 
+```objc
+- (void) legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview:(AVLegibleMediaOptionsMenuController *) menuController;
+```
+
 #### Discussion
 
 Called when the caption preview should be hidden
@@ -28,8 +33,9 @@ The client should hide any active caption preview.
 
 ## See Also
 
-- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didChange: AVLegibleMediaOptionsMenuState)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontroller(_:didchange:).md)
-- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didRequestCaptionPreviewForProfileID: String)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontroller(_:didrequestcaptionpreviewforprofileid:).md)
+### Responding to menu changes
+- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didChange: AVLegibleMediaOptionsMenuState)](./legiblemenucontroller%28_,didchange%29.md)
+- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didRequestCaptionPreviewForProfileID: String)](./legiblemenucontroller%28_,didrequestcaptionpreviewforprofileid%29.md)
 
 
 ---

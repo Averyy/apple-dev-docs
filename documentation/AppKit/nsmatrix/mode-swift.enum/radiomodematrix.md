@@ -1,12 +1,13 @@
 # NSMatrix.Mode.radioModeMatrix
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: case  
+**Role**: Case
 
-Selects no more than one [`NSCell`](nscell.md) at a time.
+Selects no more than one [`NSCell`](../../nscell.md) at a time.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,18 +15,23 @@ Selects no more than one [`NSCell`](nscell.md) at a time.
 case radioModeMatrix
 ```
 
+```c
+NSRadioModeMatrix
+```
+
 #### Discussion
 
-Any time an [`NSCell`](nscell.md) is selected, the previously selected [`NSCell`](nscell.md) is unselected.
+Any time an [`NSCell`](../../nscell.md) is selected, the previously selected [`NSCell`](../../nscell.md) is unselected.
 
 ## See Also
 
-- [NSMatrix.Mode.trackModeMatrix](nsmatrix/mode-swift.enum/trackmodematrix.md)
-  The [`NSCell`](nscell.md) objects are asked to track the mouse with [`trackMouse(with:in:of:untilMouseUp:)`](nscell/trackmouse(with:in:of:untilmouseup:).md) whenever the cursor is inside their bounds. No highlighting is performed.
-- [NSMatrix.Mode.highlightModeMatrix](nsmatrix/mode-swift.enum/highlightmodematrix.md)
-  An [`NSCell`](nscell.md) is highlighted before it’s asked to track the mouse, then unhighlighted when it’s done tracking.
-- [NSMatrix.Mode.listModeMatrix](nsmatrix/mode-swift.enum/listmodematrix.md)
-  [`NSCell`](nscell.md) objects are highlighted, but don’t track the mouse.
+### Constants
+- [NSMatrix.Mode.trackModeMatrix](./trackmodematrix.md)
+  The [`NSCell`](../../nscell.md) objects are asked to track the mouse with [`trackMouse(with:in:of:untilMouseUp:)`](../../nscell/trackmouse%28with,in,of,untilmouseup%29.md) whenever the cursor is inside their bounds. No highlighting is performed.
+- [NSMatrix.Mode.highlightModeMatrix](./highlightmodematrix.md)
+  An [`NSCell`](../../nscell.md) is highlighted before it’s asked to track the mouse, then unhighlighted when it’s done tracking.
+- [NSMatrix.Mode.listModeMatrix](./listmodematrix.md)
+  [`NSCell`](../../nscell.md) objects are highlighted, but don’t track the mouse.
 
 
 ---

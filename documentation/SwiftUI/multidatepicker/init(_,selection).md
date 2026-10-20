@@ -1,7 +1,8 @@
 # init(_:selection:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an instance that selects multiple dates with an unbounded range.
 
@@ -18,6 +19,20 @@ Creates an instance that selects multiple dates with an unbounded range.
 nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<Set<DateComponents>>)
 ```
 
+Available when `Label` is `Text`.
+
+**Other overloads**:
+
+```swift
+nonisolated
+init(_ titleKey: LocalizedStringKey, selection: Binding<Set<DateComponents>>)
+```
+
+```swift
+nonisolated
+init<S>(_ title: S, selection: Binding<Set<DateComponents>>) where S : StringProtocol
+```
+
 ## Parameters
 
 - `titleResource`: The localized title of `self`, describing its purpose.
@@ -25,7 +40,8 @@ nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<Se
 
 ## See Also
 
-- [init(selection: Binding<Set<DateComponents>>, label: () -> Label)](multidatepicker/init(selection:label:).md)
+### Picking dates
+- [init(selection: Binding<Set<DateComponents>>, label: () -> Label)](./init%28selection,label%29.md)
   Creates an instance that selects multiple dates with an unbounded range.
 
 

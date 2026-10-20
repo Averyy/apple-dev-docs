@@ -1,7 +1,8 @@
 # init(sources:)
 
 **Framework**: EventKit  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates an event store that contains data for the specified sources.
 
@@ -19,6 +20,10 @@ Creates an event store that contains data for the specified sources.
 init(sources: [EKSource])
 ```
 
+```objc
+- (instancetype) initWithSources:(NSArray<EKSource *> *) sources;
+```
+
 #### Return Value
 
 An event store that contains data for a specific collection of event sources.
@@ -29,9 +34,10 @@ An event store that contains data for a specific collection of event sources.
 
 ## See Also
 
-- [init()](ekeventstore/init.md)
+### Creating event stores
+- [init()](./init%28%29.md)
   Creates a new event store.
-- [var eventStoreIdentifier: String](ekeventstore/eventstoreidentifier.md)
+- [var eventStoreIdentifier: String](./eventstoreidentifier.md)
   The unique identifier for the event store.
 
 

@@ -1,7 +1,8 @@
 # MTREnergyEVSEClusterEVNotDetectedEvent
 
 **Framework**: Matter  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 **Availability**:
 - iOS 18.4+
@@ -18,26 +19,30 @@
 class MTREnergyEVSEClusterEVNotDetectedEvent
 ```
 
+```objc
+@interface MTREnergyEVSEClusterEVNotDetectedEvent : NSObject
+```
+
 ## Topics
 
 ### Instance Properties
-- [var sessionDuration: NSNumber](mtrenergyevseclusterevnotdetectedevent/sessionduration.md)
-- [var sessionEnergyCharged: NSNumber](mtrenergyevseclusterevnotdetectedevent/sessionenergycharged.md)
-- [var sessionID: NSNumber](mtrenergyevseclusterevnotdetectedevent/sessionid.md)
-- [var state: NSNumber](mtrenergyevseclusterevnotdetectedevent/state.md)
+- [var sessionDuration: NSNumber](./mtrenergyevseclusterevnotdetectedevent/sessionduration.md)
+- [var sessionEnergyCharged: NSNumber](./mtrenergyevseclusterevnotdetectedevent/sessionenergycharged.md)
+- [var sessionID: NSNumber](./mtrenergyevseclusterevnotdetectedevent/sessionid.md)
+- [var state: NSNumber](./mtrenergyevseclusterevnotdetectedevent/state.md)
 
 ## Relationships
 
 ### Inherits From
-- [NSObject](../objectivec/nsobject-swift.class.md)
+- [NSObject](../ObjectiveC/nsobject-swift.class.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSCopying](../foundation/nscopying.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSCopying](../Foundation/nscopying.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 
 ---

@@ -1,14 +1,15 @@
 # CSSLOT_LIBRARY_CONSTRAINT
 
 **Framework**: Kernel  
-**Kind**: econst
+**Kind**: econst  
+**Role**: Enumeration Case
 
 **Availability**:
 - macOS 14.0+
 
 ## Declaration
 
-```swift
+```c
 CSSLOT_LIBRARY_CONSTRAINT = 11
 ```
 

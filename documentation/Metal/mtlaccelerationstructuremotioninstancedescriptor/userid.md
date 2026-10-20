@@ -1,7 +1,8 @@
 # userID
 
 **Framework**: Metal  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An unique identifier, which applies to the next acceleration-structure motion instance you create with the descriptor.
 
@@ -17,6 +18,10 @@ An unique identifier, which applies to the next acceleration-structure motion in
 
 ```swift
 var userID: UInt32
+```
+
+```c
+uint32_t userID;
 ```
 
 

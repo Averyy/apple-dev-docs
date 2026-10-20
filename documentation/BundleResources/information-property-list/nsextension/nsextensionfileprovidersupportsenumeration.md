@@ -1,7 +1,8 @@
 # NSExtensionFileProviderSupportsEnumeration
 
 **Framework**: Bundle Resources  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Property List Key
 
 A Boolean value that indicates whether a File Provider extension enumerates its content.
 
@@ -10,19 +11,21 @@ A Boolean value that indicates whether a File Provider extension enumerates its 
 - iPadOS 11.0+
 - visionOS 1.0+
 
+## Details
 
-
-**Type**: boolean
+- **Name**: `NSExtensionFileProviderSupportsEnumeration` (File Provider supports Enumeration)
+- **Type**: boolean
 
 ## See Also
 
-- [NSExtensionFileProviderActions](information-property-list/nsextension/nsextensionfileprovideractions.md)
+### File Provider
+- [NSExtensionFileProviderActions](./nsextensionfileprovideractions.md)
   The custom actions for a File Provider extension.
-- [NSExtensionFileProviderDocumentGroup](information-property-list/nsextension/nsextensionfileproviderdocumentgroup.md)
+- [NSExtensionFileProviderDocumentGroup](./nsextensionfileproviderdocumentgroup.md)
   The identifier of a shared container that can be accessed by a Document Picker extension and its associated File Provider extension.
-- [NSExtensionFileProviderDownloadPipelineDepth](information-property-list/nsextension/nsextensionfileproviderdownloadpipelinedepth.md)
+- [NSExtensionFileProviderDownloadPipelineDepth](./nsextensionfileproviderdownloadpipelinedepth.md)
   The per-domain limit of concurrent calls that a file provider extension can make to fetch data from remote storage.
-- [NSExtensionFileProviderUploadPipelineDepth](information-property-list/nsextension/nsextensionfileprovideruploadpipelinedepth.md)
+- [NSExtensionFileProviderUploadPipelineDepth](./nsextensionfileprovideruploadpipelinedepth.md)
   The per-domain limit of concurrent calls that a file provider extension can make to upload data.
 
 

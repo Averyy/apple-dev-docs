@@ -1,7 +1,8 @@
 # ViewDimensions3D
 
 **Framework**: SwiftUI  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 A view’s 3D size and alignment guides in its own coordinate space.
 
@@ -17,44 +18,45 @@ struct ViewDimensions3D
 ## Topics
 
 ### Instance Properties
-- [var depth: CGFloat](viewdimensions3d/depth.md)
+- [var depth: CGFloat](./viewdimensions3d/depth.md)
   The view’s depth.
-- [var height: CGFloat](viewdimensions3d/height.md)
+- [var height: CGFloat](./viewdimensions3d/height.md)
   The view’s height.
-- [var width: CGFloat](viewdimensions3d/width.md)
+- [var width: CGFloat](./viewdimensions3d/width.md)
   The view’s width.
 ### Subscripts
-- [subscript(_:)](viewdimensions3d/subscript(_:).md)
+- [subscript(_:)](./viewdimensions3d/subscript%28_%29.md)
   Gets the value of the given depth guide.
-- [subscript(explicit:)](viewdimensions3d/subscript(explicit:).md)
+- [subscript(explicit:)](./viewdimensions3d/subscript%28explicit%29.md)
   Gets the explicit value of the given depth alignment guide
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
+- [Equatable](../Swift/equatable.md)
 
 ## See Also
 
-- [Aligning views within a stack](aligning-views-within-a-stack.md)
+### Aligning views
+- [Aligning views within a stack](./aligning-views-within-a-stack.md)
   Position views inside a stack using alignment guides.
-- [Aligning views across stacks](aligning-views-across-stacks.md)
+- [Aligning views across stacks](./aligning-views-across-stacks.md)
   Create a custom alignment and use it to align views across multiple stacks.
-- [func alignmentGuide(_:computeValue:)](view/alignmentguide(_:computevalue:).md)
+- [func alignmentGuide(_:computeValue:)](./view/alignmentguide%28_,computevalue%29.md)
   Sets the view’s horizontal alignment.
-- [struct Alignment](alignment.md)
+- [struct Alignment](./alignment.md)
   An alignment in both axes.
-- [struct HorizontalAlignment](horizontalalignment.md)
+- [struct HorizontalAlignment](./horizontalalignment.md)
   An alignment position along the horizontal axis.
-- [struct VerticalAlignment](verticalalignment.md)
+- [struct VerticalAlignment](./verticalalignment.md)
   An alignment position along the vertical axis.
-- [struct DepthAlignment](depthalignment.md)
+- [struct DepthAlignment](./depthalignment.md)
   An alignment position along the depth axis.
-- [protocol AlignmentID](alignmentid.md)
+- [protocol AlignmentID](./alignmentid.md)
   A type that you use to create custom alignment guides.
-- [struct ViewDimensions](viewdimensions.md)
+- [struct ViewDimensions](./viewdimensions.md)
   A view’s size and alignment guides in its own coordinate space.
-- [struct SpatialContainer](spatialcontainer.md)
+- [struct SpatialContainer](./spatialcontainer.md)
   A layout container that aligns overlapping content in 3D space.
 
 

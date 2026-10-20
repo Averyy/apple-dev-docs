@@ -1,14 +1,15 @@
 # Anonymous
 
 **Framework**: Kernel  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - macOS 10.12+
 
 ## Declaration
 
-```swift
+```c
 enum : unsigned int {
     ...
 };
@@ -17,10 +18,10 @@ enum : unsigned int {
 ## Topics
 
 ### Constants
-- [kModeSenseSBCDeviceSpecific_DPOFUABit](1645305-anonymous/kmodesensesbcdevicespecific_dpofuabit.md)
-- [kModeSenseSBCDeviceSpecific_DPOFUAMask](1645305-anonymous/kmodesensesbcdevicespecific_dpofuamask.md)
-- [kModeSenseSBCDeviceSpecific_WriteProtectBit](1645305-anonymous/kmodesensesbcdevicespecific_writeprotectbit.md)
-- [kModeSenseSBCDeviceSpecific_WriteProtectMask](1645305-anonymous/kmodesensesbcdevicespecific_writeprotectmask.md)
+- [kModeSenseSBCDeviceSpecific_DPOFUABit](./api-1645305-anonymous/kmodesensesbcdevicespecific_dpofuabit.md)
+- [kModeSenseSBCDeviceSpecific_DPOFUAMask](./api-1645305-anonymous/kmodesensesbcdevicespecific_dpofuamask.md)
+- [kModeSenseSBCDeviceSpecific_WriteProtectBit](./api-1645305-anonymous/kmodesensesbcdevicespecific_writeprotectbit.md)
+- [kModeSenseSBCDeviceSpecific_WriteProtectMask](./api-1645305-anonymous/kmodesensesbcdevicespecific_writeprotectmask.md)
 
 
 ---

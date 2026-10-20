@@ -1,7 +1,8 @@
 # init(engine:preset:)
 
 **Framework**: PHASE  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a medium.
 
@@ -19,6 +20,10 @@ Creates a medium.
 init(engine: PHASEEngine, preset: PHASEMedium.Preset)
 ```
 
+```objc
+- (instancetype) initWithEngine:(PHASEEngine *) engine preset:(PHASEMediumPreset) preset;
+```
+
 ## Parameters
 
 - `engine`: The framework engine object.
@@ -26,7 +31,8 @@ init(engine: PHASEEngine, preset: PHASEMedium.Preset)
 
 ## See Also
 
-- [PHASEMedium.Preset](phasemedium/preset.md)
+### Creating a Medium
+- [PHASEMedium.Preset](./preset.md)
   Predetermined qualities of an environment that affect how sound transmits.
 
 

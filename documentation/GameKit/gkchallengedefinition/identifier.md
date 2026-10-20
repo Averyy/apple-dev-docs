@@ -1,7 +1,8 @@
 # identifier
 
 **Framework**: GameKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The developer defined identifier for a given challenge definition.
 
@@ -20,9 +21,14 @@ The developer defined identifier for a given challenge definition.
 var identifier: String { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSString * identifier;
+```
+
 ## See Also
 
-- [var groupIdentifier: String?](gkchallengedefinition/groupidentifier.md)
+### Getting the identifier properties
+- [var groupIdentifier: String?](./groupidentifier.md)
   The group identifier for the challenge definition, if one exists.
 
 

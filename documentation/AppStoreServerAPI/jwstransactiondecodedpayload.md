@@ -1,7 +1,8 @@
 # JWSTransactionDecodedPayload
 
 **Framework**: App Store Server API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 A decoded payload that contains transaction information.
 
@@ -10,21 +11,21 @@ A decoded payload that contains transaction information.
 
 ## Declaration
 
-```swift
+```
 object JWSTransactionDecodedPayload
 ```
 
 ## Mentions
 
-- [App Store Server API changelog](app-store-server-api-changelog.md)
+- [App Store Server API changelog](./app-store-server-api-changelog.md)
 
 #### Discussion
 
-> ❗ **Important**:  Don’t use the `price` or `currency` values for any revenue reconciliation or recognition. App Store Connect reporting is your source of record for financial and accounting purposes. For more information, see [`Overview of reporting tools`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
+> ❗ **Important**:  Don’t use the `price` or `currency` values for any revenue reconciliation or recognition. App Store Connect reporting is your source of record for financial and accounting purposes. For more information, see [Overview of reporting tools](https://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools).
 
 ## Properties
 
-- `appAccountToken` (appAccountToken): A UUID you create at the time of purchase that associates the transaction with a customer on your own service. If your app doesn’t provide an `appAccountToken`, this field is omitted. For more information, see [`appAccountToken(_:)`](https://developer.apple.com/documentation/storekit/product/purchaseoption/appaccounttoken(_:)).
+- `appAccountToken` (appAccountToken): A UUID you create at the time of purchase that associates the transaction with a customer on your own service. If your app doesn’t provide an `appAccountToken`, this field is omitted. For more information, see [`appAccountToken(_:)`](../StoreKit/product/purchaseoption/appaccounttoken%28_%29.md).
 - `appTransactionId` (appTransactionId): The unique identifier of the app download transaction.
 - `bundleId` (bundleId): The bundle identifier of the app.
 - `currency` (currency): The three-letter ISO 4217 currency code associated with the `price` parameter. This value is present only if `price` is present.
@@ -39,12 +40,14 @@ object JWSTransactionDecodedPayload
 - `originalPurchaseDate` (originalPurchaseDate): The UNIX time, in milliseconds, that represents the purchase date of the original transaction identifier.
 - `originalTransactionId` (originalTransactionId): The transaction identifier of the original purchase.
 - `previousOriginalTransactionId` (previousOriginalTransactionId): The subscription’s original transaction identifier, before you migrated the subscription.
-- `price` (price): An integer value that represents the price multiplied by 1000 of the in-app purchase or subscription offer you configured in App Store Connect and that the system records at the time of the purchase. For more information, see [`price`](https://developer.apple.com/documentation/appstoreservernotifications/price). The `currency` parameter indicates the currency of this price.
+- `price` (price): An integer value that represents the price multiplied by 1000 of the in-app purchase or subscription offer you configured in App Store Connect and that the system records at the time of the purchase. For more information, see [`price`](../AppStoreServerNotifications/price.md). The `currency` parameter indicates the currency of this price.
 - `productId` (productId): The unique identifier of the product.
 - `purchaseDate` (purchaseDate): The UNIX time, in milliseconds, that the App Store charged the customer’s account for a purchase, restored product, subscription, or subscription renewal after a lapse.
 - `quantity` (quantity): The number of products or seats the customer purchased.
 - `revocationDate` (revocationDate): The UNIX time, in milliseconds, that the App Store refunded the transaction or revoked it from Family Sharing.
 - `revocationPercentage` (revocationPercentage): The percentage, in milliunits, of the transaction that the App Store has refunded or revoked.
+
+  **Minimum**: `0`; **Maximum**: `100000`
 - `revocationReason` (revocationReason): The reason that the App Store refunded the transaction or revoked it from Family Sharing.
 - `revocationType` (revocationType): The type of the refund or revocation that applies to the transaction.
 - `signedDate` (signedDate): The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature (JWS) data.
@@ -61,19 +64,20 @@ object JWSTransactionDecodedPayload
 
 ## See Also
 
-- [object JWSDecodedHeader](jwsdecodedheader.md)
+### JWS headers and payloads
+- [object JWSDecodedHeader](./jwsdecodedheader.md)
   A decoded JSON Web Signature (JWS) header containing transaction or renewal information.
-- [type JWSAppTransaction](jwsapptransaction.md)
+- [type JWSAppTransaction](./jwsapptransaction.md)
   App transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
-- [object JWSAppTransactionDecodedPayload](jwsapptransactiondecodedpayload.md)
+- [object JWSAppTransactionDecodedPayload](./jwsapptransactiondecodedpayload.md)
   A decoded payload that contains app transaction information.
-- [type JWSTransaction](jwstransaction.md)
+- [type JWSTransaction](./jwstransaction.md)
   Transaction information signed by the App Store, in JSON Web Signature (JWS) Compact Serialization format.
-- [type JWSRenewalInfo](jwsrenewalinfo.md)
+- [type JWSRenewalInfo](./jwsrenewalinfo.md)
   Subscription renewal information, signed by the App Store, in JSON Web Signature (JWS) format.
-- [object JWSRenewalInfoDecodedPayload](jwsrenewalinfodecodedpayload.md)
+- [object JWSRenewalInfoDecodedPayload](./jwsrenewalinfodecodedpayload.md)
   A decoded payload containing subscription renewal information for an auto-renewable subscription.
-- [Data types](data-types.md)
+- [Data types](./data-types.md)
   Refer to these data types for decoded transaction and renewal information payloads.
 
 

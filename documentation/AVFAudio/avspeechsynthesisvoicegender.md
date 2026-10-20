@@ -1,7 +1,8 @@
 # AVSpeechSynthesisVoiceGender
 
 **Framework**: AVFAudio  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The gender for a voice.
 
@@ -20,45 +21,50 @@ The gender for a voice.
 enum AVSpeechSynthesisVoiceGender
 ```
 
+```c
+enum AVSpeechSynthesisVoiceGender : NSInteger;
+```
+
 ## Topics
 
 ### Creating a voice gender
-- [init?(rawValue: Int)](avspeechsynthesisvoicegender/init(rawvalue:).md)
+- [init?(rawValue: Int)](./avspeechsynthesisvoicegender/init%28rawvalue%29.md)
 ### Identifying voice genders
-- [AVSpeechSynthesisVoiceGender.unspecified](avspeechsynthesisvoicegender/unspecified.md)
+- [AVSpeechSynthesisVoiceGender.unspecified](./avspeechsynthesisvoicegender/unspecified.md)
   The nonspecific gender option.
-- [AVSpeechSynthesisVoiceGender.male](avspeechsynthesisvoicegender/male.md)
+- [AVSpeechSynthesisVoiceGender.male](./avspeechsynthesisvoicegender/male.md)
   The male voice option.
-- [AVSpeechSynthesisVoiceGender.female](avspeechsynthesisvoicegender/female.md)
+- [AVSpeechSynthesisVoiceGender.female](./avspeechsynthesisvoicegender/female.md)
   The female voice option.
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var identifier: String](avspeechsynthesisvoice/identifier.md)
+### Inspecting voices
+- [var identifier: String](./avspeechsynthesisvoice/identifier.md)
   The unique identifier of a voice.
-- [var name: String](avspeechsynthesisvoice/name.md)
+- [var name: String](./avspeechsynthesisvoice/name.md)
   The name of a voice.
-- [var quality: AVSpeechSynthesisVoiceQuality](avspeechsynthesisvoice/quality.md)
+- [var quality: AVSpeechSynthesisVoiceQuality](./avspeechsynthesisvoice/quality.md)
   The speech quality of a voice.
-- [var gender: AVSpeechSynthesisVoiceGender](avspeechsynthesisvoice/gender.md)
+- [var gender: AVSpeechSynthesisVoiceGender](./avspeechsynthesisvoice/gender.md)
   The gender for a voice.
-- [var voiceTraits: AVSpeechSynthesisVoice.Traits](avspeechsynthesisvoice/voicetraits.md)
+- [var voiceTraits: AVSpeechSynthesisVoice.Traits](./avspeechsynthesisvoice/voicetraits.md)
   The traits of a voice.
-- [var audioFileSettings: [String : Any]](avspeechsynthesisvoice/audiofilesettings.md)
+- [var audioFileSettings: [String : Any]](./avspeechsynthesisvoice/audiofilesettings.md)
   A dictionary that contains audio file settings.
-- [enum AVSpeechSynthesisVoiceQuality](avspeechsynthesisvoicequality.md)
+- [enum AVSpeechSynthesisVoiceQuality](./avspeechsynthesisvoicequality.md)
   The speech quality of a voice.
-- [AVSpeechSynthesisVoice.Traits](avspeechsynthesisvoice/traits.md)
+- [AVSpeechSynthesisVoice.Traits](./avspeechsynthesisvoice/traits.md)
   Traits that describe a voice.
 
 

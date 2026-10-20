@@ -1,7 +1,8 @@
 # init(content:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a renderer object with a source content view.
 
@@ -23,7 +24,7 @@ init(content view: Content)
 
 ## Parameters
 
-- `view`: A [`View`](view.md) to render.
+- `view`: A [`View`](../view.md) to render.
 
 
 ---

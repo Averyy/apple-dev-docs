@@ -1,7 +1,8 @@
 # init(x:y:z:)
 
 **Framework**: Spatial  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Returns a rotation axis from the specified values.
 

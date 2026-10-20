@@ -1,12 +1,13 @@
 # isEditable
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns whether the text is editable.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
@@ -14,9 +15,13 @@ Returns whether the text is editable.
 optional var isEditable: Bool { get }
 ```
 
+```objc
+@property (readonly, getter=isEditable) BOOL editable;
+```
+
 #### Discussion
 
-The text finder uses this property to validate actions. If is it not implemented, the value is assumed to be [`true`](https://developer.apple.com/documentation/swift/true) .
+The text finder uses this property to validate actions. If is it not implemented, the value is assumed to be [`true`](../../Swift/true.md) .
 
 
 ---

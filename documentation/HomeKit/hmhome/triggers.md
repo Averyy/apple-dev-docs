@@ -1,7 +1,8 @@
 # triggers
 
 **Framework**: HomeKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 An array of triggers defined in the home.
 
@@ -19,17 +20,22 @@ An array of triggers defined in the home.
 var triggers: [HMTrigger] { get }
 ```
 
+```objc
+@property (nonatomic, copy, readonly) NSArray<HMTrigger *> * triggers;
+```
+
 ## See Also
 
-- [func addTrigger(HMTrigger, completionHandler: ((any Error)?) -> Void)](hmhome/addtrigger(_:completionhandler:).md)
+### Triggering an action set
+- [func addTrigger(HMTrigger, completionHandler: ((any Error)?) -> Void)](./addtrigger%28_,completionhandler%29.md)
   Adds a trigger to the home.
-- [func removeTrigger(HMTrigger, completionHandler: ((any Error)?) -> Void)](hmhome/removetrigger(_:completionhandler:).md)
+- [func removeTrigger(HMTrigger, completionHandler: ((any Error)?) -> Void)](./removetrigger%28_,completionhandler%29.md)
   Removes a trigger from the home.
-- [class HMTimerTrigger](hmtimertrigger.md)
+- [class HMTimerTrigger](../hmtimertrigger.md)
   A trigger to activate an action set based on a periodic timer.
-- [class HMEventTrigger](hmeventtrigger.md)
+- [class HMEventTrigger](../hmeventtrigger.md)
   A trigger to activate an action set based on a set of events and optional conditions.
-- [class HMTrigger](hmtrigger.md)
+- [class HMTrigger](../hmtrigger.md)
   An abstract base class for triggering actions based on a set of conditions.
 
 

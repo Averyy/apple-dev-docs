@@ -1,7 +1,8 @@
 # init(commandBuffer:textureDescriptor:featureChannels:)
 
 **Framework**: Metal Performance Shaders  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 **Availability**:
 - iOS 11.3+
@@ -17,15 +18,20 @@
 convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor, featureChannels: Int)
 ```
 
+```objc
++ (instancetype) temporaryImageWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer textureDescriptor:(const MTLTextureDescriptor *) textureDescriptor featureChannels:(NSUInteger) featureChannels;
+```
+
 ## See Also
 
-- [convenience init(commandBuffer: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor)](mpstemporaryimage/init(commandbuffer:imagedescriptor:).md)
+### Initializers
+- [convenience init(commandBuffer: any MTLCommandBuffer, imageDescriptor: MPSImageDescriptor)](./init%28commandbuffer,imagedescriptor%29.md)
   Initializes a temporary image for use on a command buffer.
-- [class MPSImageDescriptor](mpsimagedescriptor.md)
-  A description of the attributes used to create an [`MPSImage`](mpsimage.md).
-- [convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor)](mpstemporaryimage/init(commandbuffer:texturedescriptor:).md)
+- [class MPSImageDescriptor](../mpsimagedescriptor.md)
+  A description of the attributes used to create an [`MPSImage`](../mpsimage.md).
+- [convenience init(commandBuffer: any MTLCommandBuffer, textureDescriptor: MTLTextureDescriptor)](./init%28commandbuffer,texturedescriptor%29.md)
   Low-level interface for creating a temporary image using a texture descriptor.
-- [class MTLTextureDescriptor](../metal/mtltexturedescriptor.md)
+- [class MTLTextureDescriptor](../../Metal/mtltexturedescriptor.md)
   An instance that you use to configure new Metal texture instances.
 
 

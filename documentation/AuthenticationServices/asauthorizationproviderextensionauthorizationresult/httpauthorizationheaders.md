@@ -1,7 +1,8 @@
 # httpAuthorizationHeaders
 
 **Framework**: Authentication Services  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 A dictionary of authorization HTTP headers.
 
@@ -18,11 +19,16 @@ A dictionary of authorization HTTP headers.
 var httpAuthorizationHeaders: [String : String]? { get set }
 ```
 
+```objc
+@property (nonatomic, nullable) NSDictionary<NSString *,NSString *> * httpAuthorizationHeaders;
+```
+
 ## See Also
 
-- [var httpResponse: HTTPURLResponse?](asauthorizationproviderextensionauthorizationresult/httpresponse.md)
+### Instance Properties
+- [var httpResponse: HTTPURLResponse?](./httpresponse.md)
   The HTTP response for authentications.
-- [var httpBody: Data?](asauthorizationproviderextensionauthorizationresult/httpbody.md)
+- [var httpBody: Data?](./httpbody.md)
   The HTTP response body.
 
 

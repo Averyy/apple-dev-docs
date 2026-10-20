@@ -1,17 +1,22 @@
 # system
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 Returns the system-wide status bar located in the menu bar.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 class var system: NSStatusBar { get }
+```
+
+```objc
+@property (class, strong, readonly) NSStatusBar * systemStatusBar;
 ```
 
 #### Return Value
@@ -24,7 +29,8 @@ The status bar begins at the right side of the menu bar (to the left of Menu Ext
 
 ## See Also
 
-- [Status Bar Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/StatusBar/StatusBar.html#//apple_ref/doc/uid/10000073i)
+### Related Documentation
+- [Status Bar Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/StatusBar/StatusBar.html#//apple_ref/doc/uid/10000073i)
 
 
 ---

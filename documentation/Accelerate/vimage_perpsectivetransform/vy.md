@@ -1,18 +1,19 @@
 # vy
 
 **Framework**: Accelerate  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The y-component of the projective vector.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS
+- iPadOS
+- Mac Catalyst
+- macOS
+- tvOS
+- visionOS
+- watchOS
 
 ## Declaration
 
@@ -20,23 +21,28 @@ The y-component of the projective vector.
 var vy: Float
 ```
 
+```c
+float vy;
+```
+
 ## See Also
 
-- [var a: Float](vimage_perpsectivetransform/a.md)
+### Inspecting a projective-transformation structure’s properties
+- [var a: Float](./a.md)
   The top-left cell in the 3 x 3 transformation matrix.
-- [var b: Float](vimage_perpsectivetransform/b.md)
+- [var b: Float](./b.md)
   The top-middle cell in the 3 x 3 transformation matrix.
-- [var c: Float](vimage_perpsectivetransform/c.md)
+- [var c: Float](./c.md)
   The middle-left cell in the 3 x 3 transformation matrix.
-- [var d: Float](vimage_perpsectivetransform/d.md)
+- [var d: Float](./d.md)
   The middle-middle cell in the 3 x 3 transformation matrix.
-- [var tx: Float](vimage_perpsectivetransform/tx.md)
+- [var tx: Float](./tx.md)
   The x-coordinate translation.
-- [var ty: Float](vimage_perpsectivetransform/ty.md)
+- [var ty: Float](./ty.md)
   The y-coordinate translation.
-- [var vx: Float](vimage_perpsectivetransform/vx.md)
+- [var vx: Float](./vx.md)
   The x-component of the projective vector.
-- [var v: Float](vimage_perpsectivetransform/v.md)
+- [var v: Float](./v.md)
   The homogeneous scale factor.
 
 

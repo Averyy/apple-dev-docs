@@ -1,7 +1,8 @@
 # UILabelVibrancy
 
 **Framework**: UIKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 **Availability**:
 - iOS 17.0+
@@ -16,27 +17,32 @@
 enum UILabelVibrancy
 ```
 
+```c
+enum UILabelVibrancy : NSInteger;
+```
+
 ## Topics
 
 ### Enumeration Cases
-- [UILabelVibrancy.automatic](uilabelvibrancy/automatic.md)
-- [UILabelVibrancy.none](uilabelvibrancy/none.md)
+- [UILabelVibrancy.automatic](./uilabelvibrancy/automatic.md)
+- [UILabelVibrancy.none](./uilabelvibrancy/none.md)
 ### Initializers
-- [init?(rawValue: Int)](uilabelvibrancy/init(rawvalue:).md)
+- [init?(rawValue: Int)](./uilabelvibrancy/init%28rawvalue%29.md)
 
 ## Relationships
 
 ### Conforms To
-- [BitwiseCopyable](../swift/bitwisecopyable.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [BitwiseCopyable](../Swift/bitwisecopyable.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [RawRepresentable](../Swift/rawrepresentable.md)
+- [Sendable](../Swift/sendable.md)
+- [SendableMetatype](../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [var preferredVibrancy: UILabelVibrancy](uilabel/preferredvibrancy.md)
+### Managing vibrancy
+- [var preferredVibrancy: UILabelVibrancy](./uilabel/preferredvibrancy.md)
 
 
 ---

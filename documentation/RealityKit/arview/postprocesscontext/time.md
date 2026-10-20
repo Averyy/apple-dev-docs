@@ -1,7 +1,8 @@
 # time
 
 **Framework**: RealityKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The scene’s elapsed time.
 

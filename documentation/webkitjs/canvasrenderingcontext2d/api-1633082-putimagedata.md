@@ -1,7 +1,8 @@
 # putImageData
 
 **Framework**: WebKit JS  
-**Kind**: instm
+**Kind**: instm  
+**Role**: Instance Method
 
 Blits the contents of an `imageData` object to the canvas. Alternatively, blits a specified region of the `imageData` object to the canvas.
 
@@ -11,7 +12,7 @@ Blits the contents of an `imageData` object to the canvas. Alternatively, blits 
 
 ## Declaration
 
-```swift
+```
 void putImageData(
     ImageData imagedata, 
     float dx, 
@@ -43,9 +44,10 @@ All x and y parameter values are in CSS pixels—they are unaffected by scaling,
 
 ## See Also
 
-- [createImageData](canvasrenderingcontext2d/1632980-createimagedata.md)
+### Manipulating Pixels
+- [createImageData](./api-1632980-createimagedata.md)
   Creates an opaque object whose `data` property contains a one-dimensional array of pixel values, initialized to transparent black.
-- [getImageData](canvasrenderingcontext2d/1632656-getimagedata.md)
+- [getImageData](./api-1632656-getimagedata.md)
   Gets an `imageData` object containing an RGBa pixel array corresponding to a rectangular area of the canvas.
 
 

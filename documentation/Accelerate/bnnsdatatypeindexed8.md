@@ -1,7 +1,8 @@
 # BNNSDataTypeIndexed8
 
 **Framework**: Accelerate  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 10.0+
@@ -9,7 +10,7 @@
 - Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -20,12 +21,13 @@ var BNNSDataTypeIndexed8: BNNSDataType
 
 ## See Also
 
-- [var BNNSDataTypeFloat16: BNNSDataType](bnnsdatatypefloat16.md)
-- [var BNNSDataTypeFloat32: BNNSDataType](bnnsdatatypefloat32.md)
-- [var BNNSDataTypeInt16: BNNSDataType](bnnsdatatypeint16.md)
-- [var BNNSDataTypeInt32: BNNSDataType](bnnsdatatypeint32.md)
-- [var BNNSDataTypeInt8: BNNSDataType](bnnsdatatypeint8.md)
-- [var BNNSFlagsUseClientPtr: BNNSFlags](bnnsflagsuseclientptr.md)
+### Macros
+- [var BNNSDataTypeFloat16: BNNSDataType](./bnnsdatatypefloat16.md)
+- [var BNNSDataTypeFloat32: BNNSDataType](./bnnsdatatypefloat32.md)
+- [var BNNSDataTypeInt16: BNNSDataType](./bnnsdatatypeint16.md)
+- [var BNNSDataTypeInt32: BNNSDataType](./bnnsdatatypeint32.md)
+- [var BNNSDataTypeInt8: BNNSDataType](./bnnsdatatypeint8.md)
+- [var BNNSFlagsUseClientPtr: BNNSFlags](./bnnsflagsuseclientptr.md)
 
 
 ---

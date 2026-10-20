@@ -1,7 +1,8 @@
 # MAFlashingLightsProcessor.Result
 
 **Framework**: Media Accessibility  
-**Kind**: struct
+**Kind**: struct  
+**Role**: Structure
 
 An object that reports the result of the flashing lights processor.
 
@@ -21,23 +22,24 @@ struct Result
 
 #### Overview
 
-An [`MAFlashingLightsProcessor.Result`](maflashinglightsprocessor/result.md) object is the result of calling [`processSurface(_:outSurface:timestamp:options:)`](maflashinglightsprocessor/processsurface(_:outsurface:timestamp:options:).md). This object indicates whether the method successfully processed the input surface, the intensity of flashing lights in the input surface, and the amount of mitigation in the output surface.
+An [`MAFlashingLightsProcessor.Result`](./result.md) object is the result of calling [`processSurface(_:outSurface:timestamp:options:)`](./processsurface%28_,outsurface,timestamp,options%29.md). This object indicates whether the method successfully processed the input surface, the intensity of flashing lights in the input surface, and the amount of mitigation in the output surface.
 
 ## Topics
 
 ### Interpreting results from video processing
-- [var surfaceProcessed: Bool](maflashinglightsprocessor/result/surfaceprocessed.md)
+- [var surfaceProcessed: Bool](./result/surfaceprocessed.md)
   A Boolean value that indicates whether the flashing lights processor successfully processed the input surface.
-- [var intensityLevel: Float](maflashinglightsprocessor/result/intensitylevel.md)
+- [var intensityLevel: Float](./result/intensitylevel.md)
   The intensity of flashing lights in the input surface.
-- [var mitigationLevel: Float](maflashinglightsprocessor/result/mitigationlevel.md)
+- [var mitigationLevel: Float](./result/mitigationlevel.md)
   The amount of mitigation in the output surface.
 
 ## See Also
 
-- [func processSurface(IOSurfaceRef, outSurface: inout IOSurfaceRef, timestamp: CFAbsoluteTime, options: [MAFlashingLightsProcessor.OptionKey : Any]?) -> MAFlashingLightsProcessor.Result](maflashinglightsprocessor/processsurface(_:outsurface:timestamp:options:).md)
+### Processing video content
+- [func processSurface(IOSurfaceRef, outSurface: inout IOSurfaceRef, timestamp: CFAbsoluteTime, options: [MAFlashingLightsProcessor.OptionKey : Any]?) -> MAFlashingLightsProcessor.Result](./processsurface%28_,outsurface,timestamp,options%29.md)
   Processes a surface by analyzing pixels for sequences of flashing lights and mitigates them by dimming the content.
-- [MAFlashingLightsProcessor.OptionKey](maflashinglightsprocessor/optionkey.md)
+- [MAFlashingLightsProcessor.OptionKey](./optionkey.md)
   Options for the flashing lights processor.
 
 

@@ -1,7 +1,8 @@
 # AssistantSchemas.WhiteboardEnum
 
 **Framework**: App Intents  
-**Kind**: protocol
+**Kind**: protocol  
+**Role**: Protocol
 
 Assistant schema conformance for whiteboard types.
 
@@ -23,18 +24,18 @@ protocol WhiteboardEnum : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var color: some AssistantSchemas.Enum](assistantschemas/whiteboardenum/color.md)
+- [var color: some AssistantSchemas.Enum](./whiteboardenum/color.md)
   The color of a whiteboard canvas.
-- [var itemType: some AssistantSchemas.Enum](assistantschemas/whiteboardenum/itemtype.md)
+- [var itemType: some AssistantSchemas.Enum](./whiteboardenum/itemtype.md)
   The type of an item on a whiteboard canvas.
 
 ## Relationships
 
 ### Inherits From
-- [AssistantSchemas.Model](assistantschemas/model.md)
+- [AssistantSchemas.Model](./model.md)
 ### Conforming Types
-- [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
-- [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
+- [AssistantSchema.EnumSchema](../assistantschema/enumschema.md)
+- [AssistantSchemas.EnumSchema](./enumschema.md)
 
 
 ---

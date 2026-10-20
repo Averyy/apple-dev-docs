@@ -1,7 +1,8 @@
 # delegate
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The custom object you use to provide PDF data for a screenshot.
 
@@ -17,13 +18,18 @@ The custom object you use to provide PDF data for a screenshot.
 weak var delegate: (any UIScreenshotServiceDelegate)? { get set }
 ```
 
+```objc
+@property (nonatomic, weak, nullable) id<UIScreenshotServiceDelegate> delegate;
+```
+
 #### Discussion
 
-Assign an object to this property early in the life cycle of your window scene. The object must conform to the [`UIScreenshotServiceDelegate`](uiscreenshotservicedelegate.md) protocol.
+Assign an object to this property early in the life cycle of your window scene. The object must conform to the [`UIScreenshotServiceDelegate`](../uiscreenshotservicedelegate.md) protocol.
 
 ## See Also
 
-- [protocol UIScreenshotServiceDelegate](uiscreenshotservicedelegate.md)
+### Responding to screenshot requests
+- [protocol UIScreenshotServiceDelegate](../uiscreenshotservicedelegate.md)
   Methods you use to generate PDF data that accompanies a user-requested screenshot.
 
 

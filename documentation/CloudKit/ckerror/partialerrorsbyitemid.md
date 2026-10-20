@@ -1,7 +1,8 @@
 # partialErrorsByItemID
 
 **Framework**: CloudKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The dictionary that contains errors that relate to individual record operations.
 
@@ -11,7 +12,7 @@ The dictionary that contains errors that relate to individual record operations.
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+
-- visionOS ?+
+- visionOS
 - watchOS 3.0+
 
 ## Declaration
@@ -22,9 +23,9 @@ var partialErrorsByItemID: [AnyHashable : any Error]? { get }
 
 #### Discussion
 
-This property’s value is a dictionary that maps an item ID to an error. The type of each ID depends on where the error occurs. For example, if you receive a partial error when modifying a record, the ID is an instance of [`CKRecord.ID`](ckrecord/id.md) that corresponds to the record that CloudKit can’t modify.
+This property’s value is a dictionary that maps an item ID to an error. The type of each ID depends on where the error occurs. For example, if you receive a partial error when modifying a record, the ID is an instance of [`CKRecord.ID`](../ckrecord/id.md) that corresponds to the record that CloudKit can’t modify.
 
-The error’s `userInfo` dictionary contains the same value as this property. You can access it using the [`CKPartialErrorsByItemIDKey`](ckpartialerrorsbyitemidkey.md) key.
+The error’s `userInfo` dictionary contains the same value as this property. You can access it using the [`CKPartialErrorsByItemIDKey`](../ckpartialerrorsbyitemidkey.md) key.
 
 
 ---

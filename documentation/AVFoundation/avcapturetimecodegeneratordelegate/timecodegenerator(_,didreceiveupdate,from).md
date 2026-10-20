@@ -2,6 +2,7 @@
 
 **Framework**: AVFoundation  
 **Kind**: method  
+**Role**: Instance Method  
 **Required**: Yes
 
 Notifies the delegate when new, unaligned timecodes are parsed from the specified source.
@@ -19,6 +20,10 @@ Notifies the delegate when new, unaligned timecodes are parsed from the specifie
 func timecodeGenerator(_ generator: AVCaptureTimecodeGenerator, didReceiveUpdate timecode: AVCaptureTimecode, from source: AVCaptureTimecode.Source)
 ```
 
+```objc
+- (void) timecodeGenerator:(AVCaptureTimecodeGenerator *) generator didReceiveUpdate:(AVCaptureTimecode) timecode fromSource:(AVCaptureTimecodeSource *) source;
+```
+
 ## Parameters
 
 - `generator`: The timecode generator providing the update.
@@ -27,11 +32,12 @@ func timecodeGenerator(_ generator: AVCaptureTimecodeGenerator, didReceiveUpdate
 
 ## See Also
 
-- [func timecodeGenerator(AVCaptureTimecodeGenerator, didUpdateAvailableSources: [AVCaptureTimecode.Source])](avcapturetimecodegeneratordelegate/timecodegenerator(_:didupdateavailablesources:).md)
+### Responding to timecode events
+- [func timecodeGenerator(AVCaptureTimecodeGenerator, didUpdateAvailableSources: [AVCaptureTimecode.Source])](./timecodegenerator%28_,didupdateavailablesources%29.md)
   Notifies the delegate when the list of available timecode synchronization sources is updated.
-- [func timecodeGenerator(AVCaptureTimecodeGenerator, transitionedTo: AVCaptureTimecodeGenerator.SynchronizationStatus, for: AVCaptureTimecode.Source)](avcapturetimecodegeneratordelegate/timecodegenerator(_:transitionedto:for:).md)
+- [func timecodeGenerator(AVCaptureTimecodeGenerator, transitionedTo: AVCaptureTimecodeGenerator.SynchronizationStatus, for: AVCaptureTimecode.Source)](./timecodegenerator%28_,transitionedto,for%29.md)
   Notifies the delegate when the synchronization status of a timecode source changes.
-- [AVCaptureTimecodeGenerator.SynchronizationStatus](avcapturetimecodegenerator/synchronizationstatus.md)
+- [AVCaptureTimecodeGenerator.SynchronizationStatus](../avcapturetimecodegenerator/synchronizationstatus.md)
   Constants defining the synchronization status of a timecode generator .
 
 

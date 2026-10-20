@@ -1,7 +1,8 @@
 # HMAccessory.ManufacturerFeature.Kind
 
 **Framework**: HomeKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The category of a manufacturer-declared extension feature.
 
@@ -18,22 +19,22 @@ enum Kind
 ## Topics
 
 ### Enumeration Cases
-- [HMAccessory.ManufacturerFeature.Kind.helpGuide](hmaccessory/manufacturerfeature/kind-swift.enum/helpguide.md)
-- [HMAccessory.ManufacturerFeature.Kind.interactiveSetting](hmaccessory/manufacturerfeature/kind-swift.enum/interactivesetting.md)
-- [HMAccessory.ManufacturerFeature.Kind.primitiveSetting](hmaccessory/manufacturerfeature/kind-swift.enum/primitivesetting.md)
-- [HMAccessory.ManufacturerFeature.Kind.productManual](hmaccessory/manufacturerfeature/kind-swift.enum/productmanual.md)
-- [HMAccessory.ManufacturerFeature.Kind.troubleshooting](hmaccessory/manufacturerfeature/kind-swift.enum/troubleshooting.md)
+- [HMAccessory.ManufacturerFeature.Kind.helpGuide](./kind-swift.enum/helpguide.md)
+- [HMAccessory.ManufacturerFeature.Kind.interactiveSetting](./kind-swift.enum/interactivesetting.md)
+- [HMAccessory.ManufacturerFeature.Kind.primitiveSetting](./kind-swift.enum/primitivesetting.md)
+- [HMAccessory.ManufacturerFeature.Kind.productManual](./kind-swift.enum/productmanual.md)
+- [HMAccessory.ManufacturerFeature.Kind.troubleshooting](./kind-swift.enum/troubleshooting.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../swift/copyable.md)
-- [Equatable](../swift/equatable.md)
-- [Escapable](../swift/escapable.md)
-- [Hashable](../swift/hashable.md)
-- [RawRepresentable](../swift/rawrepresentable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Copyable](../../../Swift/copyable.md)
+- [Equatable](../../../Swift/equatable.md)
+- [Escapable](../../../Swift/escapable.md)
+- [Hashable](../../../Swift/hashable.md)
+- [RawRepresentable](../../../Swift/rawrepresentable.md)
+- [Sendable](../../../Swift/sendable.md)
+- [SendableMetatype](../../../Swift/sendablemetatype.md)
 
 
 ---

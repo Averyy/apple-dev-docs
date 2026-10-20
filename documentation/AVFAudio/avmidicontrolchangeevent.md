@@ -1,7 +1,8 @@
 # AVMIDIControlChangeEvent
 
 **Framework**: AVFAudio  
-**Kind**: class
+**Kind**: class  
+**Role**: Class
 
 An object that represents a MIDI control change message.
 
@@ -19,42 +20,47 @@ An object that represents a MIDI control change message.
 class AVMIDIControlChangeEvent
 ```
 
+```objc
+@interface AVMIDIControlChangeEvent : AVMIDIChannelEvent
+```
+
 ## Topics
 
 ### Creating a control change event
-- [init(channel: UInt32, messageType: AVMIDIControlChangeEvent.MessageType, value: UInt32)](avmidicontrolchangeevent/init(channel:messagetype:value:).md)
+- [init(channel: UInt32, messageType: AVMIDIControlChangeEvent.MessageType, value: UInt32)](./avmidicontrolchangeevent/init%28channel,messagetype,value%29.md)
   Creates an event with a channel, control change type, and a value.
 ### Inspecting a control change event
-- [var value: UInt32](avmidicontrolchangeevent/value.md)
+- [var value: UInt32](./avmidicontrolchangeevent/value.md)
   The value of the control change event.
-- [var messageType: AVMIDIControlChangeEvent.MessageType](avmidicontrolchangeevent/messagetype-swift.property.md)
+- [var messageType: AVMIDIControlChangeEvent.MessageType](./avmidicontrolchangeevent/messagetype-swift.property.md)
   The type of control change message.
-- [AVMIDIControlChangeEvent.MessageType](avmidicontrolchangeevent/messagetype-swift.enum.md)
+- [AVMIDIControlChangeEvent.MessageType](./avmidicontrolchangeevent/messagetype-swift.enum.md)
   Constants that represents control change event types.
 
 ## Relationships
 
 ### Inherits From
-- [AVMIDIChannelEvent](avmidichannelevent.md)
+- [AVMIDIChannelEvent](./avmidichannelevent.md)
 ### Conforms To
-- [CVarArg](../swift/cvararg.md)
-- [CustomDebugStringConvertible](../swift/customdebugstringconvertible.md)
-- [CustomStringConvertible](../swift/customstringconvertible.md)
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [NSObjectProtocol](../objectivec/nsobjectprotocol.md)
+- [CVarArg](../Swift/cvararg.md)
+- [CustomDebugStringConvertible](../Swift/customdebugstringconvertible.md)
+- [CustomStringConvertible](../Swift/customstringconvertible.md)
+- [Equatable](../Swift/equatable.md)
+- [Hashable](../Swift/hashable.md)
+- [NSObjectProtocol](../ObjectiveC/nsobjectprotocol.md)
 
 ## See Also
 
-- [class AVMIDIChannelEvent](avmidichannelevent.md)
+### Handling MIDI channel events
+- [class AVMIDIChannelEvent](./avmidichannelevent.md)
   A base class for all MIDI messages that operate on a single MIDI channel.
-- [class AVMIDIChannelPressureEvent](avmidichannelpressureevent.md)
+- [class AVMIDIChannelPressureEvent](./avmidichannelpressureevent.md)
   An object that represents a MIDI channel pressure message.
-- [class AVMIDIProgramChangeEvent](avmidiprogramchangeevent.md)
+- [class AVMIDIProgramChangeEvent](./avmidiprogramchangeevent.md)
   An object that represents a MIDI program or patch change message.
-- [class AVMIDIPolyPressureEvent](avmidipolypressureevent.md)
+- [class AVMIDIPolyPressureEvent](./avmidipolypressureevent.md)
   An object that represents a MIDI poly or key pressure event.
-- [class AVMIDIPitchBendEvent](avmidipitchbendevent.md)
+- [class AVMIDIPitchBendEvent](./avmidipitchbendevent.md)
   An object that represents a MIDI pitch bend message.
 
 

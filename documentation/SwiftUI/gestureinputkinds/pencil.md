@@ -1,7 +1,8 @@
 # pencil
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: property  
+**Role**: Type Property
 
 A person is touching content directly with an Apple Pencil, or an other supported pencil device.
 
@@ -22,13 +23,14 @@ static let pencil: GestureInputKinds
 
 ## See Also
 
-- [static let all: GestureInputKinds](gestureinputkinds/all.md)
+### Gesture input options
+- [static let all: GestureInputKinds](./all.md)
   All possible gesture input kinds, present and future.
-- [static let directTouch: GestureInputKinds](gestureinputkinds/directtouch.md)
+- [static let directTouch: GestureInputKinds](./directtouch.md)
   A person is touching content directly.
-- [static let indirectTouch: GestureInputKinds](gestureinputkinds/indirecttouch.md)
+- [static let indirectTouch: GestureInputKinds](./indirecttouch.md)
   A person is touching content indirectly.
-- [static let pointer: GestureInputKinds](gestureinputkinds/pointer.md)
+- [static let pointer: GestureInputKinds](./pointer.md)
   A person is pressing a mouse or a trackpad button while the pointer is pointing at content.
 
 

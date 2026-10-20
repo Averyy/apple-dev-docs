@@ -1,7 +1,8 @@
 # Publishers.Count.Output
 
 **Framework**: Combine  
-**Kind**: typealias
+**Kind**: typealias  
+**Role**: Type Alias
 
 The kind of values published by this publisher.
 
@@ -26,7 +27,8 @@ This publisher produces integer elements.
 
 ## See Also
 
-- [Publishers.Count.Failure](publishers/count/failure.md)
+### Declaring supporting types
+- [Publishers.Count.Failure](./failure.md)
   The kind of errors this publisher might publish.
 
 

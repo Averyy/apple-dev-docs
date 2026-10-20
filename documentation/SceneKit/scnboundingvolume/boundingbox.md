@@ -1,18 +1,19 @@
 # boundingBox
 
 **Framework**: SceneKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The minimum and maximum corner points of the object’s bounding box.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 13.1+
-- macOS 10.8+
-- tvOS 9.0+
-- visionOS 1.0+
-- watchOS 3.0+
+- iOS 8.0+ - Deprecated in 26.0
+- iPadOS 8.0+ - Deprecated in 26.0
+- Mac Catalyst 13.1+ - Deprecated in 26.0
+- macOS 10.8+ - Deprecated in 26.0
+- tvOS 9.0+ - Deprecated in 26.0
+- visionOS 1.0+ - Deprecated in 26.0
+- watchOS 3.0+ - Deprecated in 26.0
 
 ## Declaration
 
@@ -30,7 +31,8 @@ By default, Scene Kit automatically computes the bounding volumes of nodes and g
 
 ## See Also
 
-- [var boundingSphere: (center: SCNVector3, radius: Float)](scnboundingvolume/boundingsphere.md)
+### Measuring an Object’s Bounding Volume
+- [var boundingSphere: (center: SCNVector3, radius: Float)](./boundingsphere.md)
   The center point and radius of the object’s bounding sphere.
 
 

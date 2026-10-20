@@ -1,21 +1,22 @@
 # GameCenterAchievementRelease.Relationships.GameCenterDetail
 
 **Framework**: App Store Connect API  
-**Kind**: dictionary
+**Kind**: dictionary  
+**Role**: Object
 
 **Availability**:
 - App Store Connect API 3.0+
 
 ## Declaration
 
-```swift
+```
 object GameCenterAchievementRelease.Relationships.GameCenterDetail
 ```
 
 ## Topics
 
 ### Objects
-- [object GameCenterAchievementRelease.Relationships.GameCenterDetail.Data](gamecenterachievementrelease/relationships-data.dictionary/gamecenterdetail-data.dictionary/data-data.dictionary.md)
+- [object GameCenterAchievementRelease.Relationships.GameCenterDetail.Data](./gamecenterdetail-data.dictionary/data-data.dictionary.md)
   The request body you use to update a achievement.
 
 ## Properties
@@ -24,7 +25,8 @@ object GameCenterAchievementRelease.Relationships.GameCenterDetail
 
 ## See Also
 
-- [object GameCenterAchievementRelease.Relationships.GameCenterAchievement](gamecenterachievementrelease/relationships-data.dictionary/gamecenterachievement-data.dictionary.md)
+### Objects
+- [object GameCenterAchievementRelease.Relationships.GameCenterAchievement](./gamecenterachievement-data.dictionary.md)
 
 
 ---

@@ -1,6 +1,7 @@
 # WebScripting
 
-**Framework**: Objective-C Runtime
+**Framework**: Objective-C Runtime  
+**Role**: API Collection
 
 `WebScripting` is an informal protocol that defines methods that classes can implement to export their interfaces to a WebScript environment such as JavaScript.
 
@@ -22,31 +23,32 @@ Instances of all other classes will be wrapped before being passed to the script
 
 Access to an object’s attributes, such as instance variables, is managed by key-value coding (KVC). The KVC methods `setValue:forKey:` and `valueForKey:` are used to access the attributes of an object from the scripting environment. Additionally, the scripting environment can attempt any number of attribute requests or method invocations that are not exported by your class. You can manage these requests by overriding the `setValue:forUndefinedKey:` and `valueForUndefinedKey:` methods from the key-value coding protocol.
 
-Exceptions can be raised from the scripting environment by sending a [`throwException(_:)`](https://developer.apple.com/documentation/webkit/webscriptobject/throwexception(_:)) message to the relevant `WebScriptObject` instance. The method raising the exception must be within the scope of the script invocation.
+Exceptions can be raised from the scripting environment by sending a [`throwException(_:)`](../WebKit/webscriptobject/throwexception%28_%29.md) message to the relevant `WebScriptObject` instance. The method raising the exception must be within the scope of the script invocation.
 
 ## Topics
 
 ### Getting attributes
-- [class func webScriptName(forKey: UnsafePointer<CChar>!) -> String!](nsobject-swift.class/webscriptname(forkey:).md)
+- [class func webScriptName(forKey: UnsafePointer<CChar>!) -> String!](./nsobject-swift.class/webscriptname%28forkey%29.md)
   Returns the scripting environment name for an attribute specified by a key.
-- [class func webScriptName(for: Selector!) -> String!](nsobject-swift.class/webscriptname(for:).md)
+- [class func webScriptName(for: Selector!) -> String!](./nsobject-swift.class/webscriptname%28for%29.md)
   Returns the scripting environment name for a selector.
-- [class func isSelectorExcluded(fromWebScript: Selector!) -> Bool](nsobject-swift.class/isselectorexcluded(fromwebscript:).md)
+- [class func isSelectorExcluded(fromWebScript: Selector!) -> Bool](./nsobject-swift.class/isselectorexcluded%28fromwebscript%29.md)
   Returns whether a selector should be hidden from the scripting environment.
-- [class func isKeyExcluded(fromWebScript: UnsafePointer<CChar>!) -> Bool](nsobject-swift.class/iskeyexcluded(fromwebscript:).md)
+- [class func isKeyExcluded(fromWebScript: UnsafePointer<CChar>!) -> Bool](./nsobject-swift.class/iskeyexcluded%28fromwebscript%29.md)
   Returns whether a key should be hidden from the scripting environment.
 ### Invoking methods
-- [func invokeDefaultMethod(withArguments: [Any]!) -> Any!](nsobject-swift.class/invokedefaultmethod(witharguments:).md)
+- [func invokeDefaultMethod(withArguments: [Any]!) -> Any!](./nsobject-swift.class/invokedefaultmethod%28witharguments%29.md)
   Executes when a script attempts to invoke a method on an exposed object directly.
-- [func invokeUndefinedMethod(fromWebScript: String!, withArguments: [Any]!) -> Any!](nsobject-swift.class/invokeundefinedmethod(fromwebscript:witharguments:).md)
+- [func invokeUndefinedMethod(fromWebScript: String!, withArguments: [Any]!) -> Any!](./nsobject-swift.class/invokeundefinedmethod%28fromwebscript,witharguments%29.md)
   Handles undefined method invocation from the scripting environment.
 ### Finalizing
-- [func finalizeForWebScript()](nsobject-swift.class/finalizeforwebscript.md)
+- [func finalizeForWebScript()](./nsobject-swift.class/finalizeforwebscript%28%29.md)
   Performs cleanup when the scripting environment is reset.
 
 ## See Also
 
-- [WebKit Objective-C Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
+### Related Documentation
+- [WebKit Objective-C Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DisplayWebContent/DisplayWebContent.html#//apple_ref/doc/uid/10000164i)
 
 
 ---

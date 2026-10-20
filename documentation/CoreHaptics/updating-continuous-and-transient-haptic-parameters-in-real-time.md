@@ -1,6 +1,8 @@
 # Updating Continuous and Transient Haptic Parameters in Real Time
 
-**Framework**: Core Haptics
+**Framework**: Core Haptics  
+**Role**: Sample Code  
+**Download**: [UpdatingContinuousAndTransientHapticParametersInRealTime.zip](https://docs-assets.developer.apple.com/published/b45ba5211f73/UpdatingContinuousAndTransientHapticParametersInRealTime.zip)
 
 Generate continuous and transient haptic patterns in response to user touch.
 
@@ -14,13 +16,13 @@ Generate continuous and transient haptic patterns in response to user touch.
 
 This sample, HapticPalette, defines a two-dimensional touch area, where the x-axis varies the haptic pattern’s sharpness, and the y-axis maps to haptic intensity. Use this interface to explore the range of haptic patterns that you can create with Core Haptics. By sliding your finger inside the bounded area, you can vary the parameters of the generated haptic pattern.
 
-![A screenshot of the HapticPalette interface, showing a labeled circle and the meaning of coordinate axes controlling intensity and sharpness.](/images/com.apple.corehaptics/HapticPaletteAxes@2x.png)
+![A screenshot of the HapticPalette interface, showing a labeled circle and the meaning of coordinate axes controlling intensity and sharpness.](https://developer.apple.com/tutorials/images/com.apple.corehaptics/HapticPaletteAxes@2x.png)
 
 > **Note**: HapticPalette requires Xcode 11 or later. Simulator doesn’t support a haptic interface, so build and run this sample on an iPhone 8, 8 Plus, X, XR, XS, or XS Max running iOS 13 or later.
 
 ##### Configure the App to Play Haptics
 
-This sample checks for device compatibility and sets up an instance of [`CHHapticEngine`](chhapticengine.md) on launch. Before proceeding, start the engine, so it can begin accepting haptics requests.
+This sample checks for device compatibility and sets up an instance of [`CHHapticEngine`](./chhapticengine.md) on launch. Before proceeding, start the engine, so it can begin accepting haptics requests.
 
 ```swift
 // Start the haptic engine for the first time.
@@ -31,7 +33,7 @@ do {
 }
 ```
 
-See [`Preparing your app to play haptics`](preparing-your-app-to-play-haptics.md) for more information about setting up the engine.
+See [Preparing your app to play haptics](./preparing-your-app-to-play-haptics.md) for more information about setting up the engine.
 
 ##### Create a Continuous Haptic Pattern
 
@@ -71,7 +73,7 @@ continuousPlayer.completionHandler = { _ in
 }
 ```
 
-The sample app allows you to change the continuous pattern’s intensity and sharpness by dragging your finger inside the region labeled Continuous. This region is a view that translates the touch coordinates into normalized intensity and sharpness values. To enable this behavior, the code attaches a [`UILongPressGestureRecognizer`](https://developer.apple.com/documentation/uikit/uilongpressgesturerecognizer) to each palette view. When the user begins to drag a finger in the view, the gesture handler maps the touch coordinates to intensity and sharpness values.
+The sample app allows you to change the continuous pattern’s intensity and sharpness by dragging your finger inside the region labeled Continuous. This region is a view that translates the touch coordinates into normalized intensity and sharpness values. To enable this behavior, the code attaches a [`UILongPressGestureRecognizer`](../UIKit/uilongpressgesturerecognizer.md) to each palette view. When the user begins to drag a finger in the view, the gesture handler maps the touch coordinates to intensity and sharpness values.
 
 ```swift
 // Normalize coordinates to a [0, 1] spectrum.
@@ -88,9 +90,9 @@ The normalized mapping converts the user’s finger location to the available sp
 
 The app retains the original pattern player instead of creating a new one with each change. To tell the continuous haptic pattern player to change or modulate its haptic as it’s playing, send dynamic parameters to the player.
 
-##### Alter the Continuous Haptic Pattern By Sending Dynamic Parameters
+##### Alter the Continuous Haptic Pattern by Sending Dynamic Parameters
 
-To vary a continuous haptic pattern, send dynamic parameters of class [`CHHapticDynamicParameter`](chhapticdynamicparameter.md) to the original pattern. This modifies the haptic pattern as it’s playing. In this example, the dynamic parameters for intensity and sharpness immediately change the haptic pattern’s strength and character to follow the user’s finger.
+To vary a continuous haptic pattern, send dynamic parameters of class [`CHHapticDynamicParameter`](./chhapticdynamicparameter.md) to the original pattern. This modifies the haptic pattern as it’s playing. In this example, the dynamic parameters for intensity and sharpness immediately change the haptic pattern’s strength and character to follow the user’s finger.
 
 ```swift
 // Create dynamic parameters for the updated intensity & sharpness.
@@ -111,7 +113,7 @@ do {
 }
 ```
 
-Intensity is a magnitude, so [`hapticIntensityControl`](chhapticdynamicparameter/id/hapticintensitycontrol.md) multiplies it by a factor from `0` to `1`. The factor only reduces the pattern’s intensity. Sharpness is a position on a spectrum from dull to crisp, so [`hapticSharpnessControl`](chhapticdynamicparameter/id/hapticsharpnesscontrol.md) adds a signed amount from `-1` to `1`. The amount moves the pattern’s sharpness in either direction. The other dynamic parameters split the same way. [`audioVolumeControl`](chhapticdynamicparameter/id/audiovolumecontrol.md) multiplies, and brightness, pan, pitch, and the envelope times add.
+Intensity is a magnitude, so [`hapticIntensityControl`](./chhapticdynamicparameter/id/hapticintensitycontrol.md) multiplies it by a factor from `0` to `1`. The factor only reduces the pattern’s intensity. Sharpness is a position on a spectrum from dull to crisp, so [`hapticSharpnessControl`](./chhapticdynamicparameter/id/hapticsharpnesscontrol.md) adds a signed amount from `-1` to `1`. The amount moves the pattern’s sharpness in either direction. The other dynamic parameters split the same way. [`audioVolumeControl`](./chhapticdynamicparameter/id/audiovolumecontrol.md) multiplies, and brightness, pan, pitch, and the envelope times add.
 
 Only when the gesture ends does the app stop the pattern player.
 
@@ -124,7 +126,7 @@ do {
 }
 ```
 
-When the app sends the continuous pattern player a dynamic parameter, the value of that parameter changes immediately, resulting in a viscerally different haptic pattern on the device. If your app needs to change the parameter value gradually, consider scheduling a [`CHHapticParameterCurve`](chhapticparametercurve.md).
+When the app sends the continuous pattern player a dynamic parameter, the value of that parameter changes immediately, resulting in a viscerally different haptic pattern on the device. If your app needs to change the parameter value gradually, consider scheduling a [`CHHapticParameterCurve`](./chhapticparametercurve.md).
 
 ##### Create a Transient Haptic Pattern
 
@@ -178,17 +180,18 @@ Creating haptic pattern players is inexpensive, so you don’t need to keep them
 
 ## See Also
 
-- [Delivering Rich App Experiences with Haptics](delivering-rich-app-experiences-with-haptics.md)
+### Programmatic haptics
+- [Delivering Rich App Experiences with Haptics](./delivering-rich-app-experiences-with-haptics.md)
   Enhance your app’s experience by incorporating haptic and sound feedback into key interactive moments.
-- [Playing Collision-Based Haptic Patterns](playing-collision-based-haptic-patterns.md)
+- [Playing Collision-Based Haptic Patterns](./playing-collision-based-haptic-patterns.md)
   Play a custom haptic pattern whose strength depends on an object’s collision speed.
-- [class CHHapticEvent](chhapticevent.md)
+- [class CHHapticEvent](./chhapticevent.md)
   An object that describes a single haptic or audio event.
-- [class CHHapticEventParameter](chhapticeventparameter.md)
+- [class CHHapticEventParameter](./chhapticeventparameter.md)
   A static parameter value that represents a single property of the haptic pattern.
-- [class CHHapticDynamicParameter](chhapticdynamicparameter.md)
+- [class CHHapticDynamicParameter](./chhapticdynamicparameter.md)
   A value that you send to a haptic pattern player to alter a property value during playback.
-- [class CHHapticParameterCurve](chhapticparametercurve.md)
+- [class CHHapticParameterCurve](./chhapticparametercurve.md)
   A curve that you send to a haptic pattern player to alter a property value gradually during playback.
 
 

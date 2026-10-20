@@ -1,7 +1,8 @@
 # MLDataTable.PackType
 
 **Framework**: Create ML  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The storage operations for combining multiple columns into one.
 
@@ -22,22 +23,23 @@ enum PackType
 ## Topics
 
 ### Selecting a packing operation
-- [MLDataTable.PackType.sequence](mldatatable/packtype/sequence.md)
+- [MLDataTable.PackType.sequence](./packtype/sequence.md)
   A packing type that combines the values of several columns into a sequence type.
-- [MLDataTable.PackType.dictionary](mldatatable/packtype/dictionary.md)
+- [MLDataTable.PackType.dictionary](./packtype/dictionary.md)
   A packing type that combines the values of several columns into a dictionary type.
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 ## See Also
 
-- [func pack(columnsNamed: String..., to: String, type: MLDataTable.PackType, filling: MLDataValue) -> MLDataTable](mldatatable/pack(columnsnamed:to:type:filling:).md)
+### Compacting columns
+- [func pack(columnsNamed: String..., to: String, type: MLDataTable.PackType, filling: MLDataValue) -> MLDataTable](./pack%28columnsnamed,to,type,filling%29.md)
   Creates a new data table with an additional column that contains the combined values of the given columns.
 
 

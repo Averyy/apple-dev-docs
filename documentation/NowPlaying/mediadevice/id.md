@@ -1,7 +1,8 @@
 # id
 
 **Framework**: Now Playing  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 The unique identifier for this device.
 

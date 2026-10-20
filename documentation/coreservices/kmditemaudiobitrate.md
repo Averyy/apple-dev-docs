@@ -1,7 +1,8 @@
 # kMDItemAudioBitRate
 
 **Framework**: Core Services  
-**Kind**: data
+**Kind**: data  
+**Role**: Global Variable
 
 The audio bit rate. A CFNumber.
 
@@ -12,6 +13,10 @@ The audio bit rate. A CFNumber.
 
 ```swift
 let kMDItemAudioBitRate: CFString!
+```
+
+```c
+const CFStringRef kMDItemAudioBitRate;
 ```
 
 

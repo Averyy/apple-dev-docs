@@ -1,7 +1,8 @@
 # USDTransformOperation.Precision
 
 **Framework**: USDKit  
-**Kind**: enum
+**Kind**: enum  
+**Role**: Enumeration
 
 The numeric precision of the operation’s value.
 
@@ -22,20 +23,20 @@ enum Precision
 ## Topics
 
 ### Enumeration Cases
-- [USDTransformOperation.Precision.double](usdtransformoperation/precision-swift.enum/double.md)
+- [USDTransformOperation.Precision.double](./precision-swift.enum/double.md)
   Double precision (64-bit).
-- [USDTransformOperation.Precision.float](usdtransformoperation/precision-swift.enum/float.md)
+- [USDTransformOperation.Precision.float](./precision-swift.enum/float.md)
   Single precision (32-bit).
-- [USDTransformOperation.Precision.half](usdtransformoperation/precision-swift.enum/half.md)
+- [USDTransformOperation.Precision.half](./precision-swift.enum/half.md)
   Half precision (16-bit).
 
 ## Relationships
 
 ### Conforms To
-- [Equatable](../swift/equatable.md)
-- [Hashable](../swift/hashable.md)
-- [Sendable](../swift/sendable.md)
-- [SendableMetatype](../swift/sendablemetatype.md)
+- [Equatable](../../Swift/equatable.md)
+- [Hashable](../../Swift/hashable.md)
+- [Sendable](../../Swift/sendable.md)
+- [SendableMetatype](../../Swift/sendablemetatype.md)
 
 
 ---

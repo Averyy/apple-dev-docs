@@ -1,27 +1,29 @@
 # msgh_id
 
 **Framework**: DriverKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 **Availability**:
-- DriverKit ?+
-- iOS ?+
-- iPadOS ?+
-- macOS ?+
+- DriverKit
+- iOS
+- iPadOS
+- macOS
 
 ## Declaration
 
-```swift
+```c
 mach_msg_id_t msgh_id;
 ```
 
 ## See Also
 
-- [msgh_bits](mach_msg_header_t/msgh_bits.md)
-- [msgh_local_port](mach_msg_header_t/msgh_local_port.md)
-- [msgh_remote_port](mach_msg_header_t/msgh_remote_port.md)
-- [msgh_size](mach_msg_header_t/msgh_size.md)
-- [msgh_voucher_port](mach_msg_header_t/msgh_voucher_port.md)
+### Getting the Header Fields
+- [msgh_bits](./msgh_bits.md)
+- [msgh_local_port](./msgh_local_port.md)
+- [msgh_remote_port](./msgh_remote_port.md)
+- [msgh_size](./msgh_size.md)
+- [msgh_voucher_port](./msgh_voucher_port.md)
 
 
 ---

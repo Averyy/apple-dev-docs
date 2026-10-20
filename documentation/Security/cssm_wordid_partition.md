@@ -1,7 +1,8 @@
 # CSSM_WORDID_PARTITION
 
 **Framework**: Security  
-**Kind**: var
+**Kind**: var  
+**Role**: Global Variable
 
 **Availability**:
 - iOS 2.0+
@@ -16,6 +17,10 @@
 
 ```swift
 var CSSM_WORDID_PARTITION: Int { get }
+```
+
+```c
+CSSM_WORDID_PARTITION
 ```
 
 

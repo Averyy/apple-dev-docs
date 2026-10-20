@@ -1,7 +1,8 @@
 # largeTitle
 
 **Framework**: UIKit  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 String to be used as the large title.
 
@@ -16,19 +17,24 @@ String to be used as the large title.
 var largeTitle: String? { get set }
 ```
 
+```objc
+@property (nonatomic, copy, nullable) NSString * largeTitle;
+```
+
 #### Discussion
 
 When `nil`, the navigation bar will use the navigation item’s current title.
 
 ## See Also
 
-- [var title: String?](uinavigationitem/title.md)
+### Configuring the title
+- [var title: String?](./title.md)
   The navigation item’s title that displays in the navigation bar.
-- [var attributedTitle: AttributedString?](uinavigationitem/attributedtitle-25fxb.md)
+- [var attributedTitle: AttributedString?](./attributedtitle-25fxb.md)
   An attributed string that the system renders as the title in the navigation bar.
-- [var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode](uinavigationitem/largetitledisplaymode-swift.property.md)
+- [var largeTitleDisplayMode: UINavigationItem.LargeTitleDisplayMode](./largetitledisplaymode-swift.property.md)
   The mode for displaying the title of the navigation bar.
-- [UINavigationItem.LargeTitleDisplayMode](uinavigationitem/largetitledisplaymode-swift.enum.md)
+- [UINavigationItem.LargeTitleDisplayMode](./largetitledisplaymode-swift.enum.md)
   Constants that indicate how to size the title of this item.
 
 

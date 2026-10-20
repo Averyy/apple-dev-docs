@@ -1,7 +1,8 @@
 # animate(withDuration:animations:)
 
 **Framework**: WatchKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Animates changes to one or more interface objects over the specified duration.
 
@@ -12,6 +13,10 @@ Animates changes to one or more interface objects over the specified duration.
 
 ```swift
 func animate(withDuration duration: TimeInterval, animations: @escaping () -> Void)
+```
+
+```objc
+- (void) animateWithDuration:(NSTimeInterval) duration animations:(void (^)()) animations;
 ```
 
 #### Discussion

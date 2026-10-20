@@ -1,7 +1,8 @@
 # init(destination:label:)
 
 **Framework**: SwiftUI  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a navigation link that presents the destination view.
 
@@ -21,9 +22,16 @@ Creates a navigation link that presents the destination view.
 nonisolated init(@ContentBuilder destination: () -> Destination, @ContentBuilder label: () -> Label)
 ```
 
+**Other overloads**:
+
+```swift
+nonisolated
+init(destination: Destination, @ContentBuilder label: () -> Label)
+```
+
 ## Mentions
 
-- [Understanding the navigation stack](understanding-the-navigation-stack.md)
+- [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 
 ## Parameters
 

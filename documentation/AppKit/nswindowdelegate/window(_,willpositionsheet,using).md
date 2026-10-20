@@ -1,18 +1,23 @@
 # window(_:willPositionSheet:using:)
 
 **Framework**: AppKit  
-**Kind**: method
+**Kind**: method  
+**Role**: Instance Method
 
 Tells the delegate that the window is about to show a sheet at the specified location, giving it the opportunity to return a custom location for the attachment of the sheet to the window.
 
 **Availability**:
-- macOS ?+
+- macOS
 
 ## Declaration
 
 ```swift
 @MainActor
 optional func window(_ window: NSWindow, willPositionSheet sheet: NSWindow, using rect: NSRect) -> NSRect
+```
+
+```objc
+- (NSRect) window:(NSWindow *) window willPositionSheet:(NSWindow *) sheet usingRect:(NSRect) rect;
 ```
 
 #### Return Value
@@ -35,10 +40,12 @@ Neither the `rect` parameter nor the returned `NSRect` value define the boundary
 
 ## See Also
 
-- [Window Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/WinPanel/Introduction.html#//apple_ref/doc/uid/10000031i)
-- [func windowWillBeginSheet(Notification)](nswindowdelegate/windowwillbeginsheet(_:).md)
+### Related Documentation
+- [Window Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/WinPanel/Introduction.html#//apple_ref/doc/uid/10000031i)
+### Managing Sheets
+- [func windowWillBeginSheet(Notification)](./windowwillbeginsheet%28_%29.md)
   Notifies the delegate that the window is about to open a sheet.
-- [func windowDidEndSheet(Notification)](nswindowdelegate/windowdidendsheet(_:).md)
+- [func windowDidEndSheet(Notification)](./windowdidendsheet%28_%29.md)
   Tells the delegate that the window has closed a sheet.
 
 

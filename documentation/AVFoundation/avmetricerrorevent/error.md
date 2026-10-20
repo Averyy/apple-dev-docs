@@ -1,7 +1,8 @@
 # error
 
 **Framework**: AVFoundation  
-**Kind**: property
+**Kind**: property  
+**Role**: Instance Property
 
 Returns the error event.
 
@@ -20,9 +21,14 @@ Returns the error event.
 var error: any Error { get }
 ```
 
+```objc
+@property (readonly) NSError * error;
+```
+
 ## See Also
 
-- [var didRecover: Bool](avmetricerrorevent/didrecover.md)
+### Getting the error
+- [var didRecover: Bool](./didrecover.md)
   A Boolean value that indicates whether the error was recoverable.
 
 

@@ -1,7 +1,8 @@
 # init(upstream:scheduler:)
 
 **Framework**: Combine  
-**Kind**: init
+**Kind**: init  
+**Role**: Initializer
 
 Creates a publisher that measures and emits the time interval between events received from an upstream publisher.
 

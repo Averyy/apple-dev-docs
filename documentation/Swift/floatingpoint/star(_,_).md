@@ -2,6 +2,7 @@
 
 **Framework**: Swift  
 **Kind**: op  
+**Role**: Operator  
 **Required**: Yes
 
 Multiplies two values and produces their product, rounding to a representable value.
@@ -31,7 +32,7 @@ let y = x * 2.25
 // y == 16.875
 ```
 
-The `*` operator implements the multiplication operation defined by the [`IEEE 754 specification`](https://developer.apple.comhttp://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
+The `*` operator implements the multiplication operation defined by the [IEEE 754 specification](http://ieeexplore.ieee.org/servlet/opac?punumber=4610933).
 
 ## Parameters
 
